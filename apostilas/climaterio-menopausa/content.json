@@ -1,1 +1,1383 @@
-{"v":2,"s":"climaterio-menopausa","t":"Climatério e Menopausa","p":"Climatério e Menopausa","o":[["resumo-prova","Em 30 segundos"],["mapa-mental","Mapa mental"],["conceitos","Conceitos e STRAW+10"],["fisiopatologia","Fisiopatologia"],["clinica","Manifestações clínicas"],["diagnostico","Diagnóstico"],["sangramento","Sangramento uterino"],["sangramento-pos-menopausa-2026","Sangramento: ACOG 2026"],["contracepcao","Contracepção"],["avaliacao-global","Avaliação global"],["th","Terapia hormonal"],["esquemas","Esquemas e vias"],["sgm","Síndrome geniturinária"],["nao-hormonal","Tratamento não hormonal"],["situacoes-especiais","Situações especiais"],["osso-cv","Osso e cardiovascular"],["seguimento","Seguimento"],["casos","Casos integradores"],["revisao","Revisão"],["aprofundamento-2026","Aprofundamento: decisão terapêutica e risco individual"],["editorial-depth-2026","Aprofundamento etiológico e decisões clínicas"],["tratado-climaterio-40k","Capítulo 17 — mecanismos e decisões"],["referencias","Referências"]],"h":["Apostila LURIA","Climatério e Menopausa","Transição menopausal · fisiopatologia · diagnóstico · terapia hormonal · síndrome geniturinária · prevenção",["Área: Ginecologia e Obstetrícia","Matéria: Saúde da Mulher","Tema: Climatério e Menopausa"],"apostila-identity"],"q":[["resumo-prova","book-exam-summary",[["2","Em 30 segundos"],["u",["<strong>Menopausa</strong> é a última menstruação espontânea, reconhecida retrospectivamente após 12 meses de amenorreia sem outra causa.","<strong>Transição menopausal</strong> começa quando o padrão menstrual se torna persistentemente variável; no STRAW+10, diferença persistente ≥7 dias entre ciclos marca a fase inicial e amenorreia ≥60 dias marca a fase tardia.","Em mulheres com <strong>≥45 anos</strong> e quadro típico, o diagnóstico é predominantemente clínico; FSH, estradiol, AMH e ultrassonografia não são pedidos para “confirmar” menopausa de rotina.","<strong>IOP</strong> deve ser pensada antes dos 40 anos; menopausa precoce ocorre entre 40–44 anos.","Fogachos decorrem de instabilidade termorregulatória central, com participação dos neurônios <strong>KNDy/NKB</strong>.","A <strong>síndrome geniturinária da menopausa</strong> envolve vulva, vagina, uretra e bexiga; tende a persistir ou progredir sem tratamento, ao contrário de muitos sintomas vasomotores.","A terapia hormonal é o tratamento mais eficaz para sintomas vasomotores e previne perda óssea enquanto usada. O melhor perfil benefício-risco costuma ocorrer em sintomáticas <strong>&lt;60 anos ou &lt;10 anos da menopausa</strong>, sem contraindicações.","Útero presente + estrogênio sistêmico exige <strong>proteção endometrial</strong>. Estrogênio vaginal de baixa dose, em regra, não requer progestagênio rotineiro.","Via transdérmica evita primeira passagem hepática e costuma ser preferida quando há preocupação trombótica, hipertrigliceridemia ou fatores metabólicos.","<strong>Sangramento pós-menopausa sempre merece investigação.</strong>"],"clinical-list"]]],["mapa-mental","mindmap-section",[["x","<div class=\"mindmap-head\"><h2>Mapa mental</h2><p>O raciocínio parte da fase reprodutiva, identifica o sintoma dominante e só então escolhe o tratamento.</p></div>"],["x","<div class=\"mindmap\">\n<div class=\"mind-center\"><span>Climatério</span><strong>Queda da função folicular</strong><small>padrão menstrual + sintomas + risco individual</small></div>\n<div class=\"mind-branch mind-a\"><h3>Transição</h3><ul><li>↓ inibina B/AMH;</li><li>FSH variável;</li><li>anovulação intermitente;</li><li>estradiol oscilante.</li></ul></div>\n<div class=\"mind-branch mind-b\"><h3>Sintomas</h3><ul><li>vasomotores;</li><li>sono/humor;</li><li>SGM;</li><li>sexualidade.</li></ul></div>\n<div class=\"mind-branch mind-c\"><h3>Decisão terapêutica</h3><ul><li>impacto funcional;</li><li>útero presente?</li><li>risco trombótico/CV;</li><li>câncer hormônio-dependente?</li></ul></div>\n<div class=\"mind-branch mind-d\"><h3>Prevenção</h3><ul><li>osso;</li><li>cardiometabólico;</li><li>rastreamentos;</li><li>contracepção até cessar risco gestacional.</li></ul></div>\n</div>"]]],["conceitos",0,[["2","1. Conceitos e estadiamento reprodutivo"],["p","<strong>Climatério</strong> é a transição biológica entre a fase reprodutiva e a não reprodutiva. Não é sinônimo de menopausa e não é doença. A <strong>menopausa</strong> é apenas um marco dentro desse processo: a última menstruação espontânea, reconhecida retrospectivamente após 12 meses consecutivos de amenorreia."],["p","A terminologia importa porque a função ovariana não “desliga” em um único dia. Durante anos há perda progressiva de folículos, alteração de inibina B e AMH, maior estímulo hipofisário por FSH, ciclos anovulatórios e oscilações de estradiol. É justamente essa fase instável que explica sangramentos irregulares e sintomas que aparecem, somem e retornam."],["t",["Conceito","Definição clínica","Ponto-chave"],[["Transição menopausal","período de mudança persistente do padrão menstrual antes da última menstruação","ovulação ainda pode ocorrer"],["Perimenopausa","transição menopausal + fase inicial após a última menstruação","termo clínico mais amplo"],["Menopausa natural","12 meses de amenorreia após a última menstruação espontânea","diagnóstico retrospectivo"],["Menopausa precoce","40–44 anos","aumenta tempo total de hipoestrogenismo"],["Insuficiência ovariana prematura","disfunção ovariana antes dos 40 anos","pode haver atividade ovariana intermitente e gravidez espontânea residual"],["Menopausa induzida","após ooforectomia bilateral, quimioterapia, radioterapia ou supressão ovariana","instalação pode ser abrupta"]],"book-table"],["3","STRAW+10: o que realmente cai"],["p","O STRAW+10 organiza o envelhecimento reprodutivo principalmente pelo <strong>padrão menstrual</strong>, não por um valor isolado de FSH. Na transição inicial, surge diferença persistente de pelo menos 7 dias no comprimento de ciclos consecutivos. Na transição tardia, aparecem intervalos de amenorreia de 60 dias ou mais. A última menstruação é o estágio 0; a pós-menopausa precoce vem depois."],["x","<div class=\"luria-figure\"><div class=\"figure-title\"><strong>Linha temporal STRAW+10 — esquema didático</strong><span>LURIA</span></div>\n<div class=\"flow\"><div class=\"flow-step\"><b>Reprodutiva tardia</b><small>ciclos ainda regulares, reserva em queda</small></div><div class=\"flow-step\"><b>Transição inicial</b><small>diferença persistente ≥7 dias entre ciclos</small></div><div class=\"flow-step\"><b>Transição tardia</b><small>amenorreia ≥60 dias; FSH frequentemente elevado e variável</small></div><div class=\"flow-step\"><b>FMP / estágio 0</b><small>última menstruação</small></div><div class=\"flow-step\"><b>Pós-menopausa</b><small>12 meses de amenorreia confirmam retrospectivamente a menopausa</small></div></div></div>"],["x","<div class=\"book-callout\"><strong>Pulo do gato: menopausa não é “FSH alto”.</strong><p>Em idade típica, a história menstrual e os sintomas são mais úteis. Um FSH normal não exclui transição menopausal; um FSH alto isolado também não transforma qualquer amenorreia em menopausa.</p></div>"]]],["fisiopatologia",0,[["2","2. Fisiopatologia: da reserva folicular aos sintomas"],["3","Envelhecimento folicular e eixo hipotálamo–hipófise–ovário"],["p","O número de folículos ovarianos cai progressivamente ao longo da vida. Com menos folículos funcionais, reduz-se a produção de <strong>inibina B</strong>, retirando parte do freio sobre o FSH. A hipófise responde com maior secreção de FSH, mas o ovário envelhecido responde de maneira irregular. O resultado não é uma queda linear do estradiol: na perimenopausa podem ocorrer picos, ciclos anovulatórios e fases de hipoestrogenismo."],["x","<div class=\"mechanism-chain\"><div class=\"mechanism-step\"><b>↓ reserva folicular</b><small>menos folículos recrutáveis</small></div><div class=\"mechanism-step\"><b>↓ inibina B / AMH</b><small>menor freio folicular</small></div><div class=\"mechanism-step\"><b>↑ FSH variável</b><small>recrutamento irregular</small></div><div class=\"mechanism-step\"><b>anovulação</b><small>progesterona irregular</small></div><div class=\"mechanism-step\"><b>estradiol oscilante → baixo</b><small>sintomas e alterações sistêmicas</small></div></div>"],["3","Fogachos: por que acontecem?"],["p","A deficiência estrogênica altera circuitos hipotalâmicos de termorregulação. Neurônios do núcleo arqueado que expressam <strong>kisspeptina, neuroquinina B e dinorfina (KNDy)</strong> tornam-se hiperativos. A sinalização por neuroquinina B estreita a zona termoneutra: pequenas elevações de temperatura central passam a acionar respostas intensas de dissipação de calor."],["x","<div class=\"book-callout\" role=\"group\" aria-label=\"Esquema autoral LURIA de termorregulação e neurônios KNDy\"><strong>Fluxo fisiopatológico autoral LURIA — fogacho na menopausa</strong><p>↓ Estradiol ovariano → menor retrocontrole estrogênico sobre os neurônios KNDy (kisspeptina, neuroquinina B e dinorfina) → maior atividade do circuito neurocinina B / receptor NK3 → estreitamento da zona termoneutra hipotalâmica → vasodilatação cutânea e sudorese desencadeadas por pequenas oscilações térmicas.</p><p><small>Esquema didático original; não é representação histológica nem cópia de ilustração editorial. Sintomas também dependem de mecanismos autonômicos e características individuais.</small></p></div>"],["p","Clinicamente, a sequência típica é calor súbito em face e tórax, vasodilatação, sudorese, palpitação e, depois, calafrio. Isso explica por que antagonistas do receptor NK3 atuam diretamente em um mecanismo central dos sintomas vasomotores."],["3","Síndrome geniturinária: um processo local e progressivo"],["p","O epitélio vaginal depende de estrogênio para manter espessura, glicogênio, lactobacilos, vascularização e elasticidade. Com o hipoestrogenismo, o epitélio afina, o glicogênio cai, a microbiota muda e o pH aumenta. Uretra e trígono vesical também são estrogênio-responsivos. Por isso a síndrome inclui secura, ardor, fissuras, dispareunia, urgência, disúria e ITU recorrente."],["x","<div class=\"book-callout\"><strong>Pulo do gato: fogacho e SGM têm história natural diferente.</strong><p>Sintomas vasomotores frequentemente diminuem com o tempo; a síndrome geniturinária tende a persistir ou piorar se não for tratada.</p></div>"]]],["clinica",0,[["2","3. Manifestações clínicas"],["3","Sintomas vasomotores"],["p","Fogachos e sudorese noturna são as manifestações mais características. A gravidade deve ser medida pelo <strong>impacto funcional</strong>: despertar noturno, troca de roupa de cama, queda de concentração, prejuízo laboral e redução de qualidade de vida importam mais que um número arbitrário de episódios."],["3","Sangramento e padrão menstrual"],["p","Na transição inicial, os ciclos podem encurtar; depois tornam-se mais variáveis, com anovulação e períodos de amenorreia. A irregularidade fisiológica não autoriza atribuir todo sangramento ao climatério. Sangramento intermenstrual, pós-coital, muito volumoso, prolongado ou acompanhado de anemia requer investigação própria."],["3","Sono, humor e cognição"],["p","Fogachos noturnos fragmentam o sono, mas insônia também pode resultar de depressão, ansiedade, apneia obstrutiva, dor, álcool e medicamentos. “Névoa mental” é relatada por muitas pacientes na transição, mas déficit cognitivo progressivo, perda funcional ou sinais neurológicos não devem ser explicados pela menopausa sem investigação."],["3","Sexualidade"],["p","Libido é biopsicossocial. Dor, SGM, privação de sono, antidepressivos, doenças crônicas, relacionamento e autoimagem podem coexistir. Corrigir apenas o estradiol não resolve automaticamente desejo sexual."],["t",["Domínio","Manifestações","Armadilha"],[["Vasomotor","fogachos, sudorese noturna, palpitação transitória","ignorar causas sistêmicas quando apresentação é atípica"],["Geniturinário","secura, ardor, dispareunia, urgência, disúria, ITU recorrente","tratar toda disúria como ITU"],["Sono/humor","insônia, irritabilidade, labilidade","atribuir depressão maior apenas a hormônios"],["Musculoesquelético","artralgia, perda óssea acelerada","confundir sintoma inespecífico com indicação automática de TH"]],"book-table"]]],["diagnostico",0,[["2","4. Diagnóstico e exames: pedir apenas o que muda a conduta"],["p","Em mulher com <strong>45 anos ou mais</strong>, irregularidade menstrual típica e sintomas compatíveis, a menopausa/perimenopausa é geralmente um diagnóstico clínico. A dosagem hormonal rotineira aumenta ruído porque FSH e estradiol flutuam muito nessa fase."],["3","Quando o FSH pode ajudar"],["u",["suspeita de IOP em paciente &lt;40 anos;","paciente de 40–45 anos com apresentação duvidosa;","amenorreia sem explicação clara, após excluir gestação e outras causas;","situações em que a definição do estado ovariano realmente mudará a estratégia."],"clinical-list"],["p","Na diretriz europeia de 2025, IOP é considerada antes dos 40 anos e pode ser confirmada por FSH &gt;25 IU/L em contexto apropriado; quando há dúvida, a repetição após mais de quatro semanas ajuda. O diagnóstico de IOP exige avaliação etiológica e metabólico-óssea própria."],["3","O que não pedir de rotina para “confirmar menopausa”"],["u",["FSH seriado em mulher ≥45 anos com quadro típico;","estradiol;","AMH;","inibina B;","ultrassonografia ovariana com esse objetivo."],"clinical-list"],["3","Exames dirigidos"],["t",["Problema","Exame","Por quê"],[["amenorreia com possibilidade de gestação","β-hCG","gestação continua possível durante a transição"],["palpitação, perda ponderal, tremor","TSH ± T4 livre","excluir tireotoxicose"],["sangramento volumoso","hemograma/ferritina","quantificar repercussão"],["disúria","EAS/urocultura conforme quadro","diferenciar ITU de SGM"],["risco cardiometabólico","PA, glicemia/HbA1c, lipídios conforme indicação","estratificação basal"]],"book-table"]]],["sangramento",0,[["2","5. Sangramento uterino no climatério e após a menopausa"],["p","Na perimenopausa, anovulação é comum, mas a investigação segue os princípios de sangramento uterino anormal: estabilidade, possibilidade de gestação, exame ginecológico, fatores estruturais e risco endometrial."],["3","Sangramento pós-menopausa"],["p","Qualquer sangramento após 12 meses de amenorreia compatível com menopausa exige avaliação clínica para excluir doença endometrial, cervical, vaginal e outras causas. <strong>Atualização ACOG 2026:</strong> na maioria das pacientes com sangramento pós-menopausa, recomendam-se ultrassonografia transvaginal <em>e</em> amostragem de tecido endometrial como parte da avaliação inicial. A ultrassonografia sem biópsia pode ser considerada inicialmente apenas em casos selecionados de episódio único, endométrio totalmente visualizado com espessura ≤4 mm, sem fatores de alto risco, com acompanhamento acessível e orientação para retornar imediatamente se o sangramento persistir ou reaparecer. Fluxos brasileiros e locais podem diferir e devem ser explicitados. Histeroscopia, sonohisterografia e nova amostragem podem ser necessárias diante de lesão focal, visualização inadequada, amostra insuficiente ou sangramento persistente."],["x","<div class=\"luria-figure\"><div class=\"figure-title\"><strong>Algoritmo prático — sangramento pós-menopausa</strong><span>LURIA</span></div><div class=\"flow\"><div class=\"flow-step\"><b>Sangramento</b><small>confirmar origem genital e estabilidade</small></div><div class=\"flow-step\"><b>Exame ginecológico</b><small>vulva, vagina, colo</small></div><div class=\"flow-step\"><b>USG transvaginal</b><small>avaliar endométrio e lesão focal</small></div><div class=\"flow-step\"><b>Amostragem endometrial</b><small>se indicada por espessura, risco ou recorrência</small></div><div class=\"flow-step\"><b>Histeroscopia</b><small>lesão focal, amostra insuficiente ou persistência</small></div></div></div>"],["x","<div class=\"book-alert book-callout\"><strong>Atenção</strong>Não atribua sangramento pós-menopausa à “atrofia” ou à terapia hormonal sem avaliação adequada.</div>"]]],["sangramento-pos-menopausa-2026",0,[["2","Sangramento pós-menopausa: a atualização ACOG de 2026 aplicada a casos"],["p","O erro didático clássico é aprender apenas a regra 'endométrio ≤4 mm tranquiliza' e aplicá-la em toda paciente. A recomendação anterior da ACOG (2018) permitia mais amplamente ultrassonografia isolada como abordagem inicial quando a espessura fosse fina. O <strong>Clinical Practice Update de 2026</strong> reforça a necessidade de <strong>ultrassonografia transvaginal associada à amostragem endometrial na maioria das pacientes</strong> com sangramento pós-menopausa. A medida em milímetros é um elemento da probabilidade de doença; não equivale a diagnóstico histológico."],["3","Caso 1 — um único episódio, baixo risco e endométrio de 3 mm"],["p","Mulher de 54 anos, 15 meses após última menstruação, teve pequeno sangramento isolado. Não usa estrogênio sistêmico sem oposição, não apresenta obesidade importante, diabetes ou antecedente relevante e a ultrassonografia mostra endométrio claramente visualizado com 3 mm, sem lesão focal. A ACOG 2026 admite, em <strong>pacientes selecionadas</strong> como essa, avaliação inicial apenas por ultrassom, após aconselhamento e confirmação de acesso a retorno rápido se houver nova perda. Essa possibilidade não deve ser ensinada como regra para toda pessoa com 3 mm: a recomendação predominante atual é associar amostragem em grande parte dos cenários."],["3","Caso 2 — sangramento repetido e endométrio de 2,5 mm"],["p","Mulher de 63 anos teve três episódios de sangramento em quatro meses, apesar de ultrassom mostrar espessura de 2,5 mm. A espessura fina <strong>não encerra a investigação</strong>. Algumas neoplasias, especialmente tipos não endometrioides, podem ocorrer sem espessamento expressivo. A persistência ou recorrência exige investigação histológica apropriada e avaliação de possibilidade de lesão focal. Se uma biópsia cega foi insuficiente ou negativa, mas o sintoma continua, considerar histeroscopia e amostragem dirigida conforme avaliação do serviço."],["3","Caso 3 — endométrio não mensurável por miomas e exame limitado"],["p","Mulher de 59 anos apresenta sangramento pós-menopausa, útero miomatoso e imagem endometrial parcialmente obscurecida. Escrever 'endométrio fino' quando não foi possível delineá-lo é incorreto. ACOG recomenda que ausência de visualização completa não seja tratada como medida tranquilizadora. A investigação pode incluir sonohisterografia, histeroscopia e amostragem, considerando estabilidade, fatores de risco e características das imagens. O método adicional busca responder se existe alteração endometrial focal ou difusa que foi ocultada no exame inicial."],["3","Caso 4 — sangramento após iniciar terapia hormonal sistêmica"],["p","Paciente de 56 anos, com útero, inicia estradiol transdérmico com progesterona e apresenta spotting. Sangramento não programado pode acontecer nos primeiros meses de TH, sobretudo em esquemas contínuos; entretanto, não é seguro dizer que todo sangramento nessa situação decorre de adaptação hormonal. Documentar esquema (sequencial ou contínuo), dose e adesão ao progestagênio, intervalo desde o início, fatores de risco, volume e persistência. A decisão de ajustar o esquema, avaliar endométrio ou encaminhar depende de risco, cronologia e recomendações específicas para sangramento sob TH, como o consenso da British Menopause Society de 2024 e orientações NICE atualizadas em 2026."],["3","Exemplo comparativo — achado incidental sem sangramento"],["p","Mulher de 65 anos, sem qualquer sangramento e com endométrio incidentalmente descrito como 5 mm em ultrassom solicitado por outro motivo. A estratégia para <strong>sangramento pós-menopausa</strong> não deve ser transplantada para uma pessoa <strong>assintomática</strong>. Espessamento isolado incidental não obriga automaticamente biópsia pelo corte de 4 mm; a avaliação deve considerar achados focais, risco de neoplasia e contexto clínico. O objetivo é evitar tanto subinvestigação de sangramento quanto biópsia reflexa sem indicação suficiente."],["t",["Cenário","Raciocínio recomendado","Erro a evitar"],[["Sangramento, risco elevado ou persistência","Ultrassonografia + amostragem/histologia apropriada, com complementação conforme achados","Dar alta apenas por endométrio ≤4 mm."],["Episódio único, baixo risco, endométrio integralmente visualizado ≤4 mm","Exceção possível com decisão compartilhada e retorno garantido, conforme ACOG 2026","Transformar exceção em protocolo universal."],["Sangramento + imagem inadequada ou lesão focal","Revisão do método e avaliação cavitária / histológica direcionada","Chamar espessura não mensurada de fina."],["Sem sangramento, achado incidental isolado","Individualizar risco e achados","Aplicar automaticamente limiar usado para sangramento."],["Sangramento durante TH sistêmica","Revisar esquema, adesão, duração, risco e necessidade de investigação","Atribuir automaticamente toda perda à TH."]],"book-table"],["x","<div class=\"book-callout\"><strong>Pulo do Gato</strong><p>Sintoma clínico e risco individual são mais importantes que uma única medida. A atualização da ACOG de 2026 recomenda dupla avaliação na maioria das pacientes com sangramento pós-menopausa, com exceção bem delimitada para primeiro episódio em baixo risco e endométrio ≤4 mm totalmente visível. No Brasil, documente qual diretriz e qual fluxo local orientam a conduta; nunca use ultrassom para substituir avaliação de sangramento recorrente.</p></div>"],["p","Fontes: <a href=\"https://doi.org/10.1097/AOG.0000000000006275\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG, Clinical Practice Update, julho de 2026, DOI 10.1097/AOG.0000000000006275</a>; <a href=\"https://www.nice.org.uk/guidance/ng23/chapter/Recommendations\" target=\"_blank\" rel=\"noopener noreferrer\">NICE NG23, atualização de 2026</a>; <a href=\"https://pubmed.ncbi.nlm.nih.gov/38743767/\" target=\"_blank\" rel=\"noopener noreferrer\">British Menopause Society, sangramento não programado em TH, 2024</a>."]]],["contracepcao",0,[["2","6. Contracepção na transição menopausal"],["p","Fertilidade cai, mas não desaparece de imediato. Ovulação pode ocorrer de modo imprevisível e gravidez espontânea ainda é possível. Portanto, sintomas vasomotores ou ciclos muito espaçados <strong>não equivalem a esterilidade</strong>."],["p","Contraceptivos hormonais podem mascarar o padrão menstrual e modificar FSH, dificultando o uso de amenorreia como marcador. A decisão de suspender contracepção depende da idade, método utilizado e tempo de amenorreia sem hormônios. Em geral, quanto mais próxima dos 50 anos, mais individualizada deve ser a transição entre contracepção e eventual TH."],["x","<div class=\"book-callout\"><strong>Pulo do gato: anticoncepcional combinado não é terapia hormonal da menopausa.</strong><p>A dose estrogênica, o objetivo terapêutico e o perfil de risco são diferentes. Não “troque o nome” do tratamento sem reavaliar indicação contraceptiva e riscos.</p></div>"]]],["avaliacao-global",0,[["2","7. Consulta global: além do fogacho"],["p","A consulta do climatério é uma oportunidade para revisar risco cardiovascular, osso, câncer, saúde mental, sexualidade, sono e hábitos. Antes de TH sistêmica, documente pelo menos pressão arterial, tabagismo, história pessoal e familiar de trombose e câncer, doença cardiovascular, doença hepática, medicamentos e padrão de sangramento."],["x","<div class=\"book-grid-2\">\n<div class=\"book-mini\"><strong>Cardiometabólico</strong><ul><li>PA e adiposidade central;</li><li>tabagismo;</li><li>glicemia/HbA1c conforme risco;</li><li>perfil lipídico conforme indicação.</li></ul></div>\n<div class=\"book-mini\"><strong>Osso</strong><ul><li>fratura por fragilidade;</li><li>corticoide;</li><li>menopausa precoce/IOP;</li><li>baixo peso e quedas.</li></ul></div>\n<div class=\"book-mini\"><strong>Prevenção</strong><ul><li>rastreamento cervical e mamário;</li><li>vacinação;</li><li>atividade física;</li><li>álcool e tabaco.</li></ul></div>\n<div class=\"book-mini\"><strong>Qualidade de vida</strong><ul><li>sono;</li><li>humor;</li><li>sexualidade;</li><li>violência e vulnerabilidades.</li></ul></div>\n</div>"]]],["th",0,[["2","8. Terapia hormonal da menopausa: quando e por quê"],["p","A terapia hormonal (TH) é o tratamento mais eficaz para sintomas vasomotores e também trata SGM quando utilizada sistemicamente. Além disso, reduz perda óssea e risco de fratura enquanto está em uso. A indicação, porém, é clínica: <strong>tratar sintomas e condições específicas</strong>, não “rejuvenescer” nem prevenir rotineiramente infarto, demência ou envelhecimento."],["3","Janela de oportunidade"],["p","Para mulheres sintomáticas, saudáveis, sem contraindicações, o perfil benefício-risco é geralmente mais favorável quando a TH é iniciada antes dos 60 anos ou dentro de 10 anos da menopausa. Isso não é autorização automática: risco trombótico, cardiovascular, mamário, hepático e endometrial continuam relevantes."],["3","Útero define a necessidade de proteção endometrial"],["t",["Situação","Estratégia","Racional"],[["histerectomia total","estrogênio isolado pode ser usado","não há endométrio a proteger"],["útero presente","estrogênio + progestagênio/progesterona ou estratégia endometrial adequada","estrogênio sem oposição aumenta hiperplasia/câncer endometrial"],["apenas SGM","preferir tratamento local","evita exposição sistêmica desnecessária"]],"book-table"],["3","Quando não iniciar TH sistêmica sem avaliação especializada"],["u",["sangramento genital inexplicado;","câncer de mama ativo ou história relevante de neoplasia hormônio-dependente;","AVC, IAM ou doença coronariana estabelecida;","TEV ativo ou história de alto risco, conforme contexto;","doença hepática ativa grave;","gestação."],"clinical-list"],["p","Essas situações não devem ser tratadas como uma lista cega: o tipo de câncer, tempo desde o evento, via, dose e indicação importam. Casos complexos pedem decisão compartilhada com especialista."]]],["esquemas",0,[["2","9. Esquemas, vias e escolha prática da TH"],["3","Oral x transdérmica"],["t",["Característica","Oral","Transdérmica"],[["primeira passagem hepática","sim","evita"],["efeito em triglicerídeos","pode elevar","menor impacto"],["coagulação","maior estímulo hepático","perfil trombótico geralmente mais favorável"],["adesão","comprimido diário","adesivo/gel conforme formulação"]],"book-table"],["p","A via transdérmica costuma ser atraente em mulheres com obesidade, hipertrigliceridemia, enxaqueca, maior risco trombótico ou outros fatores metabólicos. Isso <strong>não</strong> torna a TH isenta de risco."],["3","Contínuo x sequencial"],["p","Em esquemas combinados, o progestagênio pode ser administrado continuamente ou de forma cíclica. Regimes sequenciais costumam gerar sangramento de privação previsível; regimes contínuos buscam amenorreia, embora spotting seja comum nos primeiros meses. A escolha depende do tempo desde a menopausa, preferência e tolerabilidade."],["3","Progesterona micronizada e outros progestagênios"],["p","A proteção endometrial exige dose e duração adequadas. Diferentes progestagênios têm perfis distintos de efeitos metabólicos, mamários e de tolerabilidade. Não se deve reduzir a dose de progesterona apenas para “evitar efeitos” sem garantir proteção do endométrio."],["3","SIU-LNG"],["p","Em situações selecionadas, um sistema intrauterino liberador de levonorgestrel pode fornecer proteção endometrial enquanto o estrogênio é administrado por outra via, além de oferecer contracepção. A adequação depende da formulação disponível, tempo de uso e indicação individual."],["3","Tibolona"],["p","A tibolona possui metabólitos com atividade estrogênica, progestagênica e androgênica. Pode melhorar sintomas vasomotores e sexuais em algumas mulheres pós-menopáusicas, mas tem contraindicações e perfil de risco próprios; não deve ser apresentada como “hormônio mais natural” ou universalmente mais seguro."],["x","<div class=\"book-callout\"><strong>Pulo do gato: menor dose eficaz ≠ dose insuficiente.</strong><p>Use a menor dose que controle sintomas, mas mantenha proteção endometrial adequada e reavalie resposta. A lógica é individualizar, não subtratar.</p></div>"],["html","<h3>Esquemas de referência: dose, via e endométrio</h3><p>Os exemplos abaixo são pontos de partida para uma mulher sintomática elegível à terapia, após investigação de sangramento anormal e avaliação de riscos. Ajuste a menor dose eficaz à resposta. Não equivalem à dose de reposição necessária em toda paciente jovem com IOP.</p><div class=\"table-wrap\"><table class=\"book-table\"><thead><tr><th>Componente</th><th>Exemplo usual</th><th>Como escolher</th></tr></thead><tbody><tr><td>Estradiol oral</td><td>0,5–1 mg/dia inicialmente; pode exigir 2 mg/dia</td><td>Rever sintomas, efeitos adversos e risco da via oral antes de aumentar.</td></tr><tr><td>Estradiol transdérmico</td><td>Adesivo com liberação de 25–50 microgramas/dia</td><td>Troca conforme apresentação; microgramas/dia não são a quantidade total do adesivo. Não converter gel em “número de medidas” sem conferir o produto.</td></tr><tr><td>Progesterona micronizada, útero presente</td><td>100 mg oral à noite, diariamente, ou 200 mg à noite por 12–14 dias/mês</td><td>Contínuo tende a amenorreia após adaptação; sequencial produz sangramento de privação. Doses altas de estrogênio podem exigir ajuste da proteção.</td></tr></tbody></table></div><p>Sem útero, em geral utiliza-se estrogênio isolado; condições como endometriose residual exigem avaliação específica. Com útero, não omitir progestagênio em terapia estrogênica sistêmica. A via transdérmica evita primeira passagem hepática, mas não transforma uma contraindicação em indicação automática.</p><p>Fontes: <a href=\"https://www.febrasgo.org.br/images/pec/posicionamentos-febrasgo/DIRETRIZ-CLIMATERIO-e-MENOPAUSA_portugues_10052024.pdf\">Diretriz brasileira cardiovascular no climatério, 2024</a>; <a href=\"https://www.febrasgo.org.br/media/k2/attachments/06-PAPEL_DOS_PROGESTAGENIOS_NA_TERAPIA_HORMONAL_DO_CLIMATERIO.pdf\">FEBRASGO — proteção endometrial</a>.</p>"]]],["sgm",0,[["2","10. Síndrome geniturinária da menopausa"],["p","Quando a queixa é exclusivamente vulvovaginal/urinária, tratamento local costuma ser melhor que TH sistêmica. Lubrificantes aliviam atrito durante relação; hidratantes vaginais são usados regularmente e melhoram conforto basal. Persistência de sintomas pode justificar estrogênio vaginal em baixa dose."],["3","Estrogênio vaginal"],["p","Formulações de baixa dose produzem absorção sistêmica pequena e, em geral, <strong>não exigem progestagênio rotineiro</strong>. Sangramento inexplicado precisa ser investigado. Em história de câncer de mama, a decisão deve ser compartilhada e considerar falha de medidas não hormonais e contexto oncológico."],["3","ITU recorrente e sintomas urinários"],["p","O hipoestrogenismo altera epitélio uretral e microbiota vaginal. Estrogênio vaginal pode reduzir recorrência de ITU em mulheres pós-menopáusicas selecionadas, além de melhorar urgência e disúria relacionadas à SGM."]]],["nao-hormonal",0,[["2","11. Tratamento não hormonal"],["p","É indicado quando a paciente prefere evitar hormônios, há contraindicação, risco desfavorável ou sintomas que respondem melhor a outra estratégia."],["3","Sintomas vasomotores"],["u",["terapia cognitivo-comportamental específica para menopausa;","ISRS/IRSN selecionados;","gabapentina, especialmente quando sintomas noturnos e sono são relevantes;","antagonistas do receptor NK3, como fezolinetanto, quando disponíveis e apropriados;","hipnose clínica em contextos com expertise."],"clinical-list"],["p","O NICE atualizado em 2026 recomenda fezolinetanto como opção para sintomas vasomotores moderados a graves quando TH é inadequada. A escolha farmacológica deve considerar interações, função hepática/renal, depressão, ansiedade, dor e medicamentos concomitantes."],["3","Fitoterápicos e manipulados"],["p","“Natural” não significa eficaz ou seguro. Produtos variam em concentração, pureza e interações. Preparações manipuladas chamadas de “bioidênticas” não têm superioridade comprovada sobre formulações farmacêuticas padronizadas. O problema não é o estradiol ou a progesterona serem estruturalmente idênticos aos humanos; é usar formulações sem padronização e alegações de segurança não demonstradas."],["html","<h3>Escolha e monitoramento das alternativas</h3><p>Para fogachos, opções incluem venlafaxina, escitalopram e gabapentina; a indicação pode ser fora de bula conforme país/produto. Um exemplo com venlafaxina é iniciar 37,5 mg/dia e avaliar aumento para 75 mg/dia; monitorar pressão, náusea e sintomas de retirada, evitando suspensão abrupta. Gabapentina pode começar com 300 mg à noite e ser titulada conforme tolerância, frequentemente até 300 mg três vezes/dia; sonolência e tontura limitam uso e a dose requer ajuste renal. A escolha depende de sono, comorbidades, interações e preferência, não apenas da intensidade do fogacho.</p><p><strong>Fezolinetante:</strong> a bula norte-americana descreve 45 mg oral uma vez/dia e exige testes hepáticos antes de iniciar, mensalmente nos três primeiros meses e aos 6 e 9 meses. Cirrose, insuficiência renal grave e uso concomitante de inibidores de CYP1A2 são contraindicações nessa bula. Não iniciar com transaminases ou bilirrubina total ≥2 vezes o limite superior. Icterícia, urina escura, prurido ou sintomas de lesão hepática exigem interrupção e avaliação. Confirmar disponibilidade e bula aprovada localmente; não apresentar como opção universal sem monitoramento.</p><p>Fontes: <a href=\"https://www.febrasgo.org.br/images/pdfs/Diretriz_Saude_da_Mulher_na_Menopausa_Feito_Para_Ela_aprovado.pdf\">FEBRASGO — saúde na menopausa</a>; <a href=\"https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=cae9f798-24f9-4580-a4fc-e6c710cbda3c\">bula de fezolinetante</a>; <a href=\"https://www.fda.gov/drugs/drug-safety-communications/fda-adds-warning-about-rare-occurrence-serious-liver-injury-use-veozah-fezolinetant-hot-flashes-due\">FDA — monitoramento hepático</a>.</p>"]]],["situacoes-especiais",0,[["2","12. Situações especiais"],["3","Insuficiência ovariana prematura"],["p","IOP ocorre antes dos 40 anos e não é simplesmente “menopausa adiantada”. Pode existir atividade folicular intermitente. Além de sintomas, há consequências ósseas, cardiovasculares, sexuais e reprodutivas. Depois de confirmar o diagnóstico, avaliar causas genéticas, autoimunes e iatrogênicas conforme história, além de osso e risco cardiovascular."],["p","Na ausência de contraindicação, reposição hormonal é geralmente indicada até aproximadamente a idade habitual da menopausa, porque aqui o objetivo inclui <strong>repor exposição hormonal que fisiologicamente deveria existir</strong>, e não apenas tratar fogachos."],["3","História de câncer de mama"],["p","Priorizar opções não hormonais e tratamento local não hormonal. Para SGM refratária, estrogênio vaginal de baixa dose pode ser discutido em situações selecionadas com decisão compartilhada e participação da oncologia, considerando o tipo de tumor e terapia endócrina em uso."],["3","Testosterona"],["p","Não usar de rotina para “baixa libido”, energia ou composição corporal. A indicação com melhor evidência é transtorno do desejo sexual hipoativo em mulheres pós-menopáusicas cuidadosamente avaliadas, após excluir dor, SGM, depressão, medicamentos e fatores relacionais. Formulações supranormais e implantes sem controle aumentam risco de acne, hirsutismo, alopecia e virilização."],["3","Enxaqueca, obesidade e risco trombótico"],["p","Esses cenários não significam automaticamente proibição de toda TH, mas frequentemente favorecem via transdérmica e avaliação mais cuidadosa de risco. História pessoal de TEV ou trombofilia relevante exige abordagem especializada."]]],["osso-cv",0,[["2","13. Saúde óssea e cardiovascular"],["3","Osso"],["p","A queda estrogênica acelera remodelação e reabsorção óssea. A USPSTF 2025 recomenda rastrear mulheres ≥65 anos com DXA e mulheres pós-menopáusicas &lt;65 anos que apresentem fatores de risco e risco aumentado em ferramenta clínica. Fratura por fragilidade, corticoide crônico e condições de osteoporose secundária já deslocam a paciente para avaliação diagnóstica, não mero “rastreamento”."],["p","Exercício resistido, atividade com impacto quando segura, proteína adequada, cálcio preferencialmente pela alimentação, vitamina D conforme necessidade, cessação de tabaco e prevenção de quedas compõem o cuidado."],["3","Cardiovascular"],["p","A menopausa coincide com piora de composição corporal, pressão, resistência insulínica e perfil lipídico. TH <strong>não deve ser iniciada com finalidade primária de prevenir doença cardiovascular</strong>. A diretriz brasileira de 2024 enfatiza melhor perfil quando iniciada na janela de oportunidade e maior risco absoluto quando se inicia tardiamente, especialmente após 60 anos ou mais de 10 anos da menopausa."]]],["seguimento",0,[["2","14. Seguimento"],["p","Após iniciar TH, reavaliar resposta, sangramento, PA, efeitos adversos, adesão e aparecimento de novos fatores de risco. O NICE recomenda revisão inicial em torno de 3 meses e depois periodicamente. Sangramento inesperado é comum nos primeiros meses ou após mudança de esquema, mas persistência além da janela esperada exige avaliação."],["p","Não existe idade universal de suspensão. Algumas mulheres podem manter TH após 60–65 anos por sintomas persistentes ou prevenção óssea selecionada, desde que o benefício continue superando riscos. Suspensão pode ser gradual ou abrupta; reduzir gradualmente pode diminuir recorrência no curto prazo, mas não muda o resultado sintomático em longo prazo."],["html","<h3>O que avaliar no retorno</h3><p>Programe uma primeira revisão em aproximadamente 8–12 semanas para verificar melhora dos sintomas, adesão, sangramento e efeitos adversos; depois, reavalie periodicamente, em geral ao menos anualmente. Não é preciso dosar estradiol de rotina para perseguir um “nível ideal”. Falha aparente exige conferir uso, absorção, objetivo do tratamento e outras causas dos sintomas antes de aumentar a dose.</p><p>Sangramento volumoso, persistente ou novo após período de amenorreia não deve ser simplesmente atribuído à adaptação. Investigue conforme o padrão, o regime e os fatores de risco. A consulta também revê rastreamentos indicados, saúde óssea, exercício e risco cardiovascular. A continuidade não depende de um prazo máximo igual para todas, mas de indicação persistente e reavaliação documentada.</p><details class=\"clinical-case\"><summary>Caso resolvido — fogachos com útero presente</summary><p>Mulher de 52 anos, menopausa há dois anos, fogachos importantes e útero presente, sem contraindicação após avaliação. Se escolher estradiol sistêmico, é necessário planejar proteção endometrial desde o primeiro dia. Se a queixa fosse apenas secura vaginal, tratamento local poderia responder melhor ao objetivo sem justificar automaticamente terapia sistêmica. A presença de sangramento inexplicado mudaria a sequência: investigar antes de iniciar.</p></details>"]]],["casos",0,[["2","15. Casos integradores"],["3","Caso 1 — 49 anos, ciclos irregulares e fogachos"],["p","Quadro típico de transição menopausal. FSH de rotina não acrescenta. Avaliar impacto, necessidade contraceptiva e riscos antes de decidir tratamento."],["3","Caso 2 — 52 anos, 2 anos de menopausa, fogachos intensos e útero presente"],["p","Está dentro da janela de oportunidade e, sem contraindicações, pode discutir TH sistêmica. Como há útero, o estrogênio precisa de proteção endometrial adequada."],["3","Caso 3 — 64 anos, apenas secura e dispareunia"],["p","Não há motivo para iniciar TH sistêmica apenas por SGM. Lubrificante/hidratante e, se insuficientes, estrogênio vaginal de baixa dose são mais direcionados."],["3","Caso 4 — 57 anos, sangramento 5 anos após menopausa"],["p","Investigar antes de atribuir à atrofia ou iniciar estrogênio vaginal. Exame ginecológico e avaliação endometrial são necessários."],["3","Caso 5 — 38 anos, amenorreia e fogachos"],["p","Não chamar simplesmente de menopausa. Pensar em IOP, excluir gestação e causas secundárias, confirmar bioquimicamente e investigar etiologia e repercussões."],["3","Caso 6 — 61 anos, menopausa há 12 anos, quer iniciar TH “para o coração”"],["p","Não indicar TH para prevenção cardiovascular primária. Início tardio tem perfil benefício-risco menos favorável e exige indicação sintomática clara e avaliação individual."]]],["revisao",0,[["2","16. Revisão de alto rendimento"],["t",["Armadilha","Correção"],[["“FSH normal exclui perimenopausa”","FSH oscila; em ≥45 anos a clínica domina"],["“IOP = esterilidade definitiva”","atividade ovariana pode ser intermitente"],["“Toda mulher com fogacho precisa de TH”","tratamento depende de impacto, preferência e risco"],["“Via transdérmica não tem risco”","perfil trombótico pode ser melhor, mas não é risco zero"],["“Estrogênio vaginal sempre exige progesterona”","baixa dose local, em regra, não exige proteção endometrial rotineira"],["“TH previne infarto e demência”","não usar para prevenção primária dessas condições"],["“Sangramento pós-menopausa é atrofia até prova em contrário”","é sintoma de alerta e deve ser investigado"],["“Bioidêntico manipulado é mais seguro”","não há superioridade; preferir formulações padronizadas"],["“Parar TH obrigatoriamente aos 60/65”","continuidade pode ser individualizada"]],"book-table"]]],["aprofundamento-2026",0,[["2","Aprofundamento: decisão terapêutica e risco individual"],["x","<p>O manejo do climatério não deve ser organizado em torno da pergunta “pode ou não pode usar hormônio?”. A decisão real é <strong>qual sintoma precisa ser tratado, qual risco basal a paciente possui e qual via/regime oferece melhor relação benefício-risco</strong>.</p>\n<h3>Janela de oportunidade não é autorização automática</h3>\n<p>Em mulheres sintomáticas, saudáveis, com menos de 60 anos ou até cerca de 10 anos do início da menopausa, a relação benefício-risco da terapia hormonal costuma ser mais favorável. Isso não elimina avaliação de tromboembolismo, doença cardiovascular, câncer de mama, sangramento uterino inexplicado, doença hepática e preferências da paciente. Da mesma forma, idade acima desses limites não cria uma proibição universal; exige individualização mais cuidadosa.</p>\n<h3>Via oral versus transdérmica</h3>\n<p>Estrogênio oral passa pelo fígado em primeira passagem e modifica síntese de proteínas hepáticas, triglicerídeos e fatores de coagulação. A via transdérmica produz menor efeito hepático e pode ser preferível quando há maior preocupação tromboembólica, hipertrigliceridemia ou outros fatores metabólicos. A escolha da via é uma decisão clínica, não apenas de conveniência.</p>\n<h3>Progestagênio: proteção endometrial é dose e tempo dependentes</h3>\n<p>Em mulher com útero, estrogênio sistêmico sem oposição aumenta risco de hiperplasia/câncer endometrial. O progestagênio precisa ser usado em dose e duração suficientes para proteção. Regimes contínuos tendem a induzir amenorreia após período inicial de adaptação; regimes cíclicos produzem sangramento de privação esperado. Sangramento persistente ou novo após estabilidade do regime precisa ser investigado, não apenas atribuído ao hormônio.</p>\n<h3>Síndrome geniturinária não é apenas “secura”</h3>\n<p>Hipoestrogenismo modifica epitélio vulvovaginal, microbiota, pH, vascularização e trato urinário inferior. Dor, fissuras, urgência, disúria e infecções urinárias recorrentes podem coexistir. Tratamento local de baixa dose tem absorção sistêmica muito menor que terapia sistêmica e, em geral, não exige progestagênio de rotina. Em sobreviventes de câncer hormônio-dependente, a decisão deve ser compartilhada e individualizada após medidas não hormonais.</p>\n<h3>Osso, músculo e risco de quedas</h3>\n<p>Menopausa acelera perda óssea, mas prevenção de fratura não depende apenas de densitometria. História de fratura, idade, quedas, sarcopenia, tabagismo, álcool, vitamina D/cálcio dietético e uso de fármacos também importam. Terapia hormonal previne perda óssea enquanto utilizada, mas não é automaticamente a melhor opção para tratamento de osteoporose estabelecida em todas as pacientes.</p>\n<h3>Risco cardiovascular</h3>\n<p>A menopausa marca transição metabólica relevante, mas terapia hormonal não deve ser iniciada com objetivo primário de prevenir infarto. Pressão arterial, lipídios, diabetes, tabagismo, composição corporal e atividade física devem ser tratados diretamente. A avaliação cardiovascular faz parte do cuidado climatérico mesmo quando a principal queixa são fogachos.</p>\n<div class=\"book-callout\"><strong>Raciocínio prático</strong>Sintoma dominante → risco basal → útero presente? → necessidade sistêmica ou apenas local? → escolher via/regime → monitorar resposta e sangramento → reavaliar periodicamente, sem prazo fixo universal para suspender.</div>"]]],["editorial-depth-2026","book-section",[["2","Aprofundamento etiológico e decisões clínicas"],["3","Terapia hormonal por cenários"],["p","Distinguir sintomas vasomotores de síndrome geniturinária isolada. A via transdérmica pode ser preferível em contextos de risco tromboembólico, enquanto estrogênio sistêmico requer progestagênio para proteção endometrial em quem possui útero. Revisar doença cardiovascular, histórico de trombose, neoplasia hormonossensível, hepatopatia e sangramento inexplicado antes da prescrição. Decidir com base em idade, tempo desde menopausa, sintomas e preferências."],["3","Sangramento pós-menopausa"],["p","Não atribuir automaticamente sangramento à atrofia nem à terapia hormonal: considerar câncer endometrial e doença focal. Ultrassonografia transvaginal e amostragem endometrial dependem de contexto, espessura, recorrência e fatores de risco; sangramento persistente necessita investigação mesmo após exame inicialmente tranquilizador."],["3","IOP não é menopausa natural"],["p","Em insuficiência ovariana antes dos 40 anos, objetivo terapêutico inclui substituição hormonal até idade aproximada da menopausa natural, saúde óssea e cardiovascular e orientação de fertilidade. Não aplicar sem ajustes o mesmo cálculo benefício-risco usado para iniciar terapia hormonal aos 60 anos."]]],["tratado-climaterio-40k",0,[["2","17. Integração fisiopatológica e terapêutica da transição menopausal"],["p","O climatério não representa uma interrupção instantânea da função ovariana. Ao longo da transição, a população de folículos recrutáveis diminui e muda a relação entre produção ovariana de esteroides, inibinas e o estímulo hipofisário. A regularidade ovulatória torna-se menos previsível; períodos de produção estrogênica ainda significativa alternam-se com ciclos de menor resposta, e a exposição progestagênica pode faltar quando não ocorre ovulação. Isso explica por que sintomas vasomotores, irregularidade menstrual e alterações endometriais não surgem obrigatoriamente ao mesmo tempo nem seguem evolução idêntica em todas as mulheres."],["3","17.1 Como a perda folicular modifica FSH, estradiol e progesterona"],["p","Durante a vida reprodutiva, o FSH estimula o desenvolvimento de folículos, enquanto estradiol e inibinas exercem efeitos de retroalimentação sobre a hipófise. Com a redução progressiva da reserva folicular, a produção de inibina B pode diminuir, contribuindo para elevação mais precoce do FSH em partes do ciclo. Entretanto, o estradiol não cai de maneira linear desde os primeiros sintomas: oscilações e episódios de produção elevada ainda podem ocorrer na transição. Uma dosagem isolada de FSH elevada ou estradiol baixo pode não refletir de modo confiável o padrão de vários meses."],["p","A anovulação intermitente reduz formação do corpo lúteo e altera a exposição cíclica à progesterona. O endométrio pode receber estímulo estrogênico sem transformação secretora suficientemente organizada, produzindo sangramento irregular ou prolongado. Esse mecanismo é comum na transição, mas não permite atribuir automaticamente todo sangramento à menopausa. Hiperplasia, pólipos, miomas, gestação e malignidade continuam no diagnóstico diferencial conforme idade, fatores de risco e características da perda sanguínea. A conduta segura começa por caracterizar o sangramento e avaliar necessidade de investigação."],["3","17.2 Fogachos: a diferença entre temperatura corporal e percepção térmica"],["p","Os sintomas vasomotores não decorrem simplesmente de uma temperatura central constantemente elevada. A alteração hormonal interfere em circuitos hipotalâmicos de termorregulação, incluindo neurônios que expressam neurocinina B e outros mediadores. A faixa de temperatura na qual o organismo tolera variações sem ativar respostas de dissipação de calor pode tornar-se mais estreita. Pequenas flutuações da temperatura central passam a desencadear vasodilatação cutânea e sudorese desproporcionais, produzindo a experiência subjetiva de onda súbita de calor."],["p","O fogacho pode vir acompanhado de palpitações, rubor, despertar noturno e sensação de mal-estar. Esses sintomas podem fragmentar o sono e, de forma secundária, afetar concentração, humor, desempenho diário e qualidade de vida. A cronologia e a intensidade variam; a presença de insônia não implica que todo o problema seja causado exclusivamente por hipoestrogenismo. Apneia do sono, transtornos de humor, hábitos, fármacos e outras condições podem coexistir, razão pela qual uma consulta de climatério precisa ser ampla e não apenas um checklist de hormônios."],["3","17.3 Síndrome geniturinária: uma condição anatômica e funcional"],["p","A redução da estimulação estrogênica afeta epitélio vaginal, tecido vulvar, estruturas uretrais e componentes de sustentação e lubrificação local. Pode ocorrer diminuição da maturação epitelial, alteração do pH e da microbiota, maior fragilidade de mucosas e sintomas como ressecamento, ardor, dispareunia e desconforto urinário. O termo síndrome geniturinária da menopausa é mais abrangente que atrofia vaginal porque inclui manifestações sexuais e urinárias que podem coexistir."],["p","Diferentemente de muitos fogachos, que podem melhorar com a passagem do tempo, sintomas geniturinários frequentemente persistem ou progridem sem intervenção. Por isso, a ausência de ondas de calor não exclui necessidade de tratamento. Lubrificantes e hidratantes vaginais podem oferecer benefício sintomático; quando indicados, estrogênios vaginais de baixa dose agem predominantemente sobre tecidos locais. A decisão depende de diagnóstico correto, contraindicações e história oncológica, com avaliação especializada em situações complexas. Tratamento sistêmico para fogachos e tratamento local para sintomas geniturinários têm objetivos distintos."],["3","17.4 Por que o útero muda a escolha da terapia hormonal"],["p","O estrogênio sistêmico estimula o endométrio, promovendo proliferação glandular e estromal. Em uma mulher com útero, exposição estrogênica prolongada sem oposição progestagênica adequada pode elevar risco de hiperplasia e carcinoma endometrial. O progestagênio exerce efeito de transformação e proteção endometrial em esquemas apropriados. Portanto, associar proteção progestagênica ao estrogênio sistêmico em mulheres com útero não é detalhe cosmético da prescrição: decorre diretamente do mecanismo da carcinogênese endometrial relacionada à estimulação estrogênica sem oposição."],["p","Depois de histerectomia total por causa benigna, geralmente não existe endométrio a proteger, e o esquema pode ser diferente. Contudo, o contexto cirúrgico, presença de doença residual e outras condições precisam ser considerados. Também é necessário distinguir proteção endometrial da terapia estrogênica sistêmica do uso de formulações vaginais de baixa dose, que geralmente não exigem progestagênio rotineiro quando usadas de acordo com recomendações e condições adequadas. Esquemas, doses e vias devem ser escolhidos individualmente, com explicação de benefícios, riscos e necessidade de reavaliação."],["3","17.5 Via oral versus transdérmica: por que o fígado importa"],["p","Estrogênios administrados por via oral chegam inicialmente ao fígado pela circulação porta após absorção intestinal, produzindo efeito de primeira passagem. Essa exposição hepática pode modificar síntese de proteínas envolvidas em coagulação, metabolismo lipídico e outros sistemas. Pela via transdérmica, grande parte desse primeiro contato hepático é evitada, produzindo perfil farmacológico diferente. Isso ajuda a explicar por que formulações transdérmicas frequentemente são preferidas quando existem preocupações trombóticas ou determinadas condições cardiometabólicas, embora a via não elimine todos os riscos da terapia."],["p","O balanço benefício-risco depende de idade, tempo desde a menopausa, intensidade de sintomas, antecedentes cardiovasculares, trombose, câncer hormônio-dependente, doença hepática e preferências. A chamada janela de oportunidade, frequentemente descrita como início antes dos 60 anos ou nos primeiros dez anos após a menopausa, reflete diferenças no risco absoluto de desfechos em populações estudadas. Não significa que toda mulher nessa faixa deva receber hormônios, nem que uma data de aniversário seja limite absoluto para qualquer decisão. O objetivo do tratamento é aliviar sintomas e abordar indicações específicas, não usar hormônios indiscriminadamente para prevenção cardiovascular primária."],["3","17.6 Saúde óssea: como o estrogênio participa da remodelação"],["p","O tecido ósseo sofre remodelação contínua pela ação coordenada de osteoclastos, que reabsorvem matriz mineralizada, e osteoblastos, que participam da formação. Estrogênios contribuem para limitar a reabsorção e modular a atividade de mediadores envolvidos na diferenciação osteoclástica. Na deficiência estrogênica, pode ocorrer aumento relativo da reabsorção em relação à formação, acelerando perda de massa óssea, especialmente no início da pós-menopausa. O resultado clínico depende também de idade, nutrição, exercício, medicações, comorbidades e história de fraturas."],["p","A terapia hormonal pode reduzir perda óssea durante o uso e contribuir para prevenção de fraturas em pacientes adequadamente selecionadas, mas não substitui automaticamente a avaliação de risco de osteoporose ou medicamentos específicos em todas as circunstâncias. A decisão de densitometria e tratamento deve integrar idade, fraturas por fragilidade, fatores secundários e calculadoras clínicas quando apropriadas. Cálcio alimentar adequado, vitamina D conforme necessidade, atividade física com carga e prevenção de quedas têm papéis complementares. O cuidado de climatério deve acompanhar saúde musculoesquelética, não apenas exames hormonais."],["3","17.7 Terapia não hormonal e decisão informada"],["p","Quando a paciente apresenta contraindicação à terapia hormonal ou prefere não utilizá-la, opções não hormonais podem ser discutidas para sintomas vasomotores e outras queixas. Alguns medicamentos que atuam em sistemas serotoninérgicos ou noradrenérgicos podem reduzir fogachos em indicações apropriadas; estratégias específicas relacionadas à sinalização neurocinina também ampliaram possibilidades em determinados mercados. Contudo, eficácia, disponibilidade, efeitos adversos e interações variam, e não é seguro descrever todas como equivalentes. Medidas comportamentais e manejo de sono podem melhorar qualidade de vida, mas não devem ser apresentadas como cura obrigatória de sintomas intensos."],["p","A consulta precisa esclarecer objetivos terapêuticos da paciente. Uma mulher pode procurar alívio de fogachos, enquanto outra sofre principalmente com dispareunia, infecções urinárias recorrentes ou medo de osteoporose. Esses problemas requerem avaliações e intervenções diferentes. O histórico de câncer de mama, por exemplo, pode modificar fortemente opções sistêmicas e tornar necessária decisão compartilhada com oncologia em certas abordagens locais. A escolha adequada combina diagnóstico e preferências informadas, reavaliação periódica e explicação honesta das incertezas."],["3","17.8 Caso clínico integrador"],["p","Uma mulher de 51 anos apresenta onze meses sem menstruar, fogachos noturnos frequentes e dificuldade de dormir. O raciocínio começa por reconhecer transição menopausal provável, avaliar a cronologia da última menstruação e considerar causas alternativas de sintomas. Como ainda não completou doze meses de amenorreia, não se deve assumir que não existe risco de gravidez sem avaliar contexto contraceptivo. Se houver história de sangramento uterino novo ou suspeito, o problema precisa de investigação própria, não ser tratado apenas como um sintoma esperado."],["p","Após caracterização de sintomas, história clínica e contraindicações, a escolha terapêutica pode incluir opções hormonais ou não hormonais conforme preferência e risco. Se o útero está presente e se opta por estrogênio sistêmico, proteção endometrial é ponto obrigatório. Em caso de queixa isolada de ressecamento vaginal com ausência de fogachos relevantes, tratamento local pode ser mais apropriado que terapia sistêmica. O cuidado também deve avaliar rastreamentos apropriados, saúde óssea, riscos cardiovasculares e qualidade de vida ao longo do tempo."],["p","<strong>Referências de atualização:</strong> Diretriz Brasileira sobre a Saúde Cardiovascular no Climatério e na Menopausa (2024), disponível em https://www.febrasgo.org.br/images/pec/posicionamentos-febrasgo/DIRETRIZ-CLIMATERIO-e-MENOPAUSA_portugues_10052024.pdf; The Menopause Society. The 2022 hormone therapy position statement (DOI 10.1097/gme.0000000000002028)."]]],["referencias",0,[["2","Referências essenciais"],["o",["SOBRAC. <strong>Consenso Brasileiro de Terapêutica Hormonal do Climatério 2024</strong>.","FEBRASGO / SBC / SOBRAC. <strong>Diretriz Brasileira sobre a Saúde Cardiovascular no Climatério e na Menopausa</strong>. 2024.","Ministério da Saúde. <strong>Manual de Atenção à Mulher no Climatério/Menopausa</strong>.","European Society of Endocrinology. <strong>Clinical practice guideline for evaluation and management of menopause and the perimenopause</strong>. 2025.","NICE. <strong>Menopause: identification and management (NG23)</strong>. Atualização 2026.","The Menopause Society. <strong>2022 Hormone Therapy Position Statement</strong>.","The Menopause Society. <strong>2023 Nonhormone Therapy Position Statement</strong>.","USPSTF. <strong>Osteoporosis to Prevent Fractures: Screening</strong>. 2025.","Harlow SD et al. <strong>STRAW+10</strong>. Menopause / JCEM, 2012."],"references"],["p","Material educacional. Condutas devem ser individualizadas conforme história, contraindicações, preferências e protocolos locais."]]]]}
+{
+  "v": 2,
+  "s": "climaterio-menopausa",
+  "t": "Climatério e Menopausa",
+  "p": "Climatério e Menopausa — Livro-Texto LURIA",
+  "d": "Fisiologia da Transição Menopáusica e Critérios STRAW+10 · Diagnóstico Clínico e Síndrome Geniturinária · Terapia Hormonal e Janela de Oportunidade · Vias, Esquemas e Opções Não Hormonais",
+  "a": "Ginecologia e Obstetrícia",
+  "m": "Endocrinologia Ginecológica e Climatério",
+  "h": [
+    "Apostila LURIA",
+    "Climatério e Menopausa",
+    "Fisiologia da Transição Menopáusica e Critérios STRAW+10 · Diagnóstico Clínico e Síndrome Geniturinária · Terapia Hormonal e Janela de Oportunidade · Vias, Esquemas e Opções Não Hormonais",
+    [
+      "Área: Ginecologia e Obstetrícia",
+      "Matéria: Endocrinologia Ginecológica e Climatério",
+      "Tema: Climatério e Menopausa"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "resumo-executivo-30-segundos",
+      "Em 30 Segundos: Pontos Cruciais para a Prática e Provas"
+    ],
+    [
+      "fisiologia-transicao-straw-esgotamento-folicular",
+      "1. Fisiologia da Transição Menopáusica e Esgotamento Folicular Ovariano"
+    ],
+    [
+      "diagnostico-clinico-laboratorial-menopausa",
+      "2. Diagnóstico Clínico da Menopausa e Quando Solicitar Exames"
+    ],
+    [
+      "manifestacoes-clinicas-fogachos-sgm-osteoporose",
+      "3. Manifestações Clínicas: Sintomas Vasomotores, Síndrome Geniturinária e Osteoporose"
+    ],
+    [
+      "terapia-hormonal-janela-de-oportunidade-e-esquemas",
+      "4. Terapia Hormonal (TH): Janela de Oportunidade, Vias e Esquemas Terapêuticos"
+    ],
+    [
+      "contraindicacoes-absolutas-e-relativas-th",
+      "5. Contraindicações da Terapia Hormonal e Avaliação Pré-Prescrição"
+    ],
+    [
+      "opcoes-nao-hormonais-e-manejo-da-sgm-local",
+      "6. Terapêutica Não Hormonal dos Fogachos e Tratamento Específico da SGM"
+    ],
+    [
+      "casos-clinicos-e-questoes-comentadas-climaterio",
+      "7. Casos Clínicos Integradores e Questões de Provas de Residência Médica Comentadas"
+    ],
+    [
+      "aprofundamento-fisiologia-molecular-esteroidogenese",
+      "8. Aprofundamento: Esteroidogênese Ovariana e Adrenal, SHBG e Aromatização Periférica"
+    ],
+    [
+      "cardiovascular-metabolismo-e-saude-cerebral",
+      "9. Risco Cardiovascular, Síndrome Metabólica e Função Cognitiva no Climatério"
+    ],
+    [
+      "osteoporose-rastreamento-diagnostico-tratamento-completo",
+      "10. Osteoporose Pós-Menopáusica: Densitometria, FRAX Brasil e Terapêutica Específica"
+    ],
+    [
+      "progestagenios-e-risco-mamario-detalhado",
+      "11. Progestagênios na TH: Diferenciação Molecular e Risco de Câncer de Mama"
+    ],
+    [
+      "situacoes-especiais-e-casos-avancados",
+      "12. Situações Especiais: Miomatose, Endometriose, Tabagismo, Enxaqueca e Doença da Tireoide"
+    ],
+    [
+      "guia-pratico-prescricao-seguimento-e-suspensao",
+      "13. Guia de Bolso: Passo a Passo da Prescrição, Monitoramento e Descontinuação"
+    ],
+    [
+      "androgenios-libido-tibolona-e-fitoestrogenios",
+      "14. Androgênios no Climatério, Tibolona, SERMs e Fitoterápicos Baseados em Evidências"
+    ],
+    [
+      "matriz-diferencial-e-banco-questoes-residencia-th",
+      "15. Matriz Comparativa Definitiva e Banco de Questões de Alto Rendimento Comentadas"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "resumo-executivo-30-segundos",
+      0,
+      [
+        [
+          "2",
+          "Em 30 Segundos: Pontos Cruciais para a Prática e Provas"
+        ],
+        [
+          "p",
+          "O climatério compreende o período biológico de transição entre a fase reprodutiva da mulher e o término da capacidade reprodutiva, culminando na menopausa. Dominar os critérios diagnósticos, os conceitos do STRAW+10, a janela de oportunidade da terapia hormonal e o manejo não hormonal é essencial:"
+        ],
+        [
+          "4",
+          "Regras de Ouro do Climatério e Menopausa:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Menopausa é Diagnóstico Retrospectivo e Clínico:</strong> Definida após <strong>12 meses consecutivos de amenorreia</strong> em mulheres de meia-idade sem outras causas biológicas ou patológicas evidentes. Não é necessária dosagem rotineira de FSH para firmar o diagnóstico em mulheres com mais de 45 anos com quadro clínico típico;",
+            "<strong>Critérios STRAW+10 (Stages of Reproductive Aging Workshop):</strong> Padrão-ouro científico que divide a transição menopáusica em <em>Precoce (-2)</em>, caracterizada por ciclos com variação no intervalo de 7 dias ou mais em relação ao padrão habitual, e <em>Tardia (-1)</em>, definida por intervalo de amenorreia &ge; 60 dias;",
+            "<strong>Síndrome Geniturinária da Menopausa (SGM):</strong> Anteriormente chamada de atrofia vulvovaginal. Apresenta ressecamento vaginal, dispareunia, disúria e infecções urinárias de repetição decorrentes da perda de estrogênio. Ao contrário dos fogachos, a SGM é progressiva e <strong>não melhora espontaneamente com o tempo</strong>;",
+            "<strong>Janela de Oportunidade da Terapia Hormonal (TH):</strong> O benefício cardiovascular e a segurança da TH concentram-se no início em mulheres com <strong>menos de 60 anos de idade</strong> ou <strong>menos de 10 anos decorridos desde a menopausa</strong>. O início tardio (> 60 anos ou > 10 anos de pós-menopausa) eleva substancialmente o risco de desfechos cardiovasculares adversos (IAM, AVC e tromboembolismo venoso);",
+            "<strong>Proteção Endometrial Obrigatória:</strong> Mulheres com útero preservado que utilizam estrogênio sistêmico <strong>devem obrigatoriamente receber progestagênio concomitante</strong> para prevenir hiperplasia e adenocarcinoma de endométrio. Mulheres histerectomizadas devem usar estrogênio isolado;",
+            "<strong>Via Transdérmica:</strong> Preferencial em mulheres hipertensas, dislipidêmicas (hipertrigliceridemia), diabéticas, obesas, fumantes ou com alto risco cardiovascular/trombótico, pois não passa pelo metabolismo de primeira passagem hepática e não eleva fatores de coagulação nem proteína C-reativa;",
+            "<strong>Contraindicações Absolutas da TH:</strong> Câncer de mama atual ou prévio, neoplasia estrogênio-dependente (câncer de endométrio), sangramento vaginal anormal inexplicado, tromboembolismo venoso (TEV/EP) atual ou prévio, infarto agudo do miocárdio ou AVC prévio/ativo, hepatopatia ativa ou grave, porfiria e meningioma (para progestagênios)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "fisiologia-transicao-straw-esgotamento-folicular",
+      0,
+      [
+        [
+          "2",
+          "1. Fisiologia da Transição Menopáusica e Esgotamento Folicular Ovariano"
+        ],
+        [
+          "3",
+          "O Esgotamento Folicular e a Queda da Reserva Ovariana"
+        ],
+        [
+          "p",
+          "A vida reprodutiva da mulher é determinada por um patrimônio folicular finito, estabelecido durante a embriogênese intrauterina. Por volta da 20ª semana de gestação, o feto feminino atinge seu pico de aproximadamente 6 a 7 milhões de folículos primordiais. Ao nascimento, esse número declina para 1 a 2 milhões devido a processos intensos de atresia folicular contínua. Na menarca, restam cerca de 300.000 a 400.000 folículos, dos quais apenas cerca de 400 a 500 chegarão à ovulação ao longo de toda a vida fértil."
+        ],
+        [
+          "p",
+          "À medida que a idade materna avança, particularmente a partir dos 37 a 38 anos, observa-se uma aceleração exponencial na taxa de atresia folicular. Os primeiros marcadores bioquímicos a declinarem significativamente são o <strong>Hormônio Antimülleriano (AMH)</strong>, produzido pelas células da granulosa de folículos pré-antrais e antrais pequenos, e a <strong>Inibina B</strong>, produzida na fase folicular precoce. A redução da inibina B diminui o feedback negativo sobre a adenoipófise, resultando em uma elevação seletiva e compensatória do <strong>Hormônio Folículo-Estimulante (FSH)</strong> antes mesmo de qualquer alteração relevante nos níveis séricos de estradiol."
+        ],
+        [
+          "4",
+          "A Paradoja Hormonal da Perimenopausa"
+        ],
+        [
+          "p",
+          "Durante a transição menopáusica precoce, os níveis de estradiol <em>não caem linearmente</em>. Pelo contrário: estimulados por níveis elevados e pulsáteis de FSH, os folículos remanescentes podem secretar quantidades abundantes de estradiol, provocando picos hiperestrogênicos erráticos e imprevisíveis. Isso explica os episódios frequentes de mastalgia, cólicas, retenção hídrica e sangramento uterino anormal anovulatório (decorrente da proliferação endometrial desordenada sem oposição progesterônica) característicos da perimenopausa."
+        ],
+        [
+          "3",
+          "Classificação STRAW+10 (Stages of Reproductive Aging Workshop)"
+        ],
+        [
+          "p",
+          "A classificação internacional STRAW+10 divide a vida reprodutiva e o envelhecimento reprodutivo feminino em três grandes períodos — <em>Reprodutivo</em>, <em>Transição Menopáusica</em> e <em>Pós-menopausa</em> —, englobando sete estágios numerados de -5 a +2, tendo o evento da Menopausa (estágio 0) como marco central de referência."
+        ],
+        [
+          "t",
+          [
+            "Estágio STRAW+10",
+            "Denominação",
+            "Critérios Menstruais Clínicos",
+            "Parâmetros Laboratoriais Característicos"
+          ],
+          [
+            [
+              "<strong>-3b e -3a</strong>",
+              "Fase Reprodutiva Tardia",
+              "Ciclos menstruais regulares, podendo apresentar discreto encurtamento do intervalo (fase folicular mais curta).",
+              "AMH baixo, contagem de folículos antrais (CFA) reduzida; FSH normal ou sutilmente elevado no início do ciclo."
+            ],
+            [
+              "<strong>-2</strong>",
+              "Transição Menopáusica Precoce",
+              "Início de irregularidade menstrual com <strong>diferença &ge; 7 dias</strong> na duração de ciclos consecutivos recorrentes.",
+              "FSH variável (frequentemente elevado na fase folicular precoce), AMH e Inibina B muito baixos."
+            ],
+            [
+              "<strong>-1</strong>",
+              "Transição Menopáusica Tardia",
+              "Intervalos de amenorreia de <strong>60 dias ou mais</strong> (ciclos anovulatórios prolongados alternados com sangramentos irregulares).",
+              "FSH persistentemente elevado (> 25-30 mUI/mL), estradiol baixo ou com oscilações bruscas. Fogachos frequentes."
+            ],
+            [
+              "<strong>0</strong>",
+              "Menopausa (FMP)",
+              "Última menstruação espontânea da vida (reconhecida retrospectivamente após 12 meses de amenorreia).",
+              "Cessação da foliculogênese ovariana e da produção cíclica de estradiol e progesterona."
+            ],
+            [
+              "<strong>+1a / +1b / +1c</strong>",
+              "Pós-menopausa Inicial",
+              "Primeiros 5 a 6 anos após a menopausa. Amenorreia definitiva. Sintomas vasomotores atingem o pico de intensidade.",
+              "FSH elevado (> 30-40 mUI/mL), estradiol sérico basal muito baixo (< 20-30 pg/mL). Rápida perda de massa óssea."
+            ],
+            [
+              "<strong>+2</strong>",
+              "Pós-menopausa Tardia",
+              "Período que se estende até o final da vida da mulher. Sintomas vasomotores tendem a diminuir; sintomas de SGM aumentam.",
+              "Quiescência ovariana completa. Estrona (sintetizada na gordura periférica por aromatização da androstenediona) torna-se o estrogênio circulante predominante."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "diagnostico-clinico-laboratorial-menopausa",
+      0,
+      [
+        [
+          "2",
+          "2. Diagnóstico Clínico da Menopausa e Quando Solicitar Exames"
+        ],
+        [
+          "3",
+          "O Diagnóstico Clínico Retrospectivo"
+        ],
+        [
+          "p",
+          "Em mulheres com idade superior a 45 anos que apresentam sintomas vasomotores típicos e padrão menstrual compatível (amenorreia persistente há 12 meses consecutivos), o diagnóstico de menopausa é <strong>puramente clínico</strong>. Nenhuma dosagem hormonal (FSH, estradiol, LH ou progesterona) é necessária para confirmar o diagnóstico ou para autorizar o início da terapia hormonal quando indicada."
+        ],
+        [
+          "4",
+          "Por que Evitar a Dosagem Rotineira de FSH em Mulheres > 45 Anos?"
+        ],
+        [
+          "p",
+          "Durante a transição menopáusica, os níveis séricos de gonadotrofinas (FSH e LH) flutuam intensamente de uma semana para a outra. Um valor isolado de FSH dentro da faixa reprodutiva pode induzir a falso julgamento de fertilidade ou afastar equivocadamente a perimenopausa, enquanto um valor muito alto não descarta episódios ovulatórios tardios com risco residual de gestação indesejada. Além disso, em mulheres em uso de contraceptivos hormonais combinados, o eixo gonadotrófico encontra-se suprimido, invalidando qualquer interpretação laboratorial de FSH."
+        ],
+        [
+          "3",
+          "Situações Especiais em que Exames Laboratoriais São Mandatórios"
+        ],
+        [
+          "p",
+          "A dosagem sérica seriada de FSH (com intervalo de 4 a 6 semanas) e estradiol está formalmente indicada nas seguintes situações clínicas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Suspeita de Insuficiência Ovariana Prematura (IOP) / Menopausa Precoce:</strong> Mulheres com idade < 40 anos que desenvolvem amenorreia &ge; 4 meses e sintomas de hipoestrogenismo. O diagnóstico requer dois valores de FSH na faixa da menopausa (> 25 a 40 mUI/mL) colhidos com intervalo mínimo de 4 a 6 semanas;",
+            "<strong>Mulheres Histerectomizadas com Ovários Preservados:</strong> A ausência de fluxo menstrual impede a aplicação do critério de 12 meses de amenorreia. A investigação laboratorial com dosagem de FSH e estradiol correlacionada à presença de sintomas clínicos (fogachos, ressecamento vaginal) auxilia no diagnóstico do término da função ovariana;",
+            "<strong>Usuárias de Dispositivo Intrauterino liberador de Levonorgestrel (DIU-LNG) ou Progestagênio Isolado:</strong> Frequentemente evoluem com amenorreia secundária ao efeito atrófico local do progestagênio no endométrio. Se apresentarem sintomas vasomotores severos aos 48-52 anos, a dosagem de FSH e estradiol sérico auxilia na distinção entre efeito progestagênico local e falência gonadal;",
+            "<strong>Mulheres Submetidas a Procedimentos Cirúrgicos de Ablação Endometrial:</strong> Pacientes sem endométrio funcionante necessitam de avaliação hormonal caso necessitem estratificar o status ovariano."
+          ]
+        ]
+      ]
+    ],
+    [
+      "manifestacoes-clinicas-fogachos-sgm-osteoporose",
+      0,
+      [
+        [
+          "2",
+          "3. Manifestações Clínicas: Sintomas Vasomotores, Síndrome Geniturinária e Osteoporose"
+        ],
+        [
+          "3",
+          "Sintomas Vasomotores (Fogachos e Sudorese Noturna)"
+        ],
+        [
+          "p",
+          "Os fogachos ou ondas de calor representam a queixa mais prevalente da transição menopáusica e pós-menopausa precoce, afetando cerca de 75% a 85% das mulheres. Caracterizam-se por sensação súbita de calor intenso com epicentro no tórax e face, que ascende para o pescoço e couro cabeludo, acompanhada de rubor cutâneo visível, taquicardia reflexa e profusa sudorese, frequentemente seguida de sensação de calafrio, ansiedade e palpitações."
+        ],
+        [
+          "4",
+          "Mecanismo Neuroendócrino Central: O Circuito KNDy"
+        ],
+        [
+          "p",
+          "A fisiopatologia dos fogachos foi desvendada com a identificação dos <strong>neurônios KNDy</strong> (que coexpressam <em>Kisspeptina</em>, <em>Neurocinina B</em> e <em>Dinorfina</em>) localizados no núcleo arqueado do hipotálamo medial. Na presença de níveis normais de estrogênio na vida reprodutiva, o estradiol exerce retroalimentação inibitória tônica sobre esses neurônios através do receptor estrogênico alfa (ER&alpha;)."
+        ],
+        [
+          "p",
+          "Com a perda da produção ovariana de estrogênio na menopausa, cessa essa inibição. Os neurônios KNDy tornam-se hipertrofiados e hiperativos, liberando quantidades excessivas de Neurocinina B (NKB). A neurocinina B estimula os receptores de neurocinina 3 (NK3R) no <strong>centro termorregulador hipotalâmico</strong> (área pré-óptica). Esse estímulo contínuo <em>estreita dramaticamente a zona de conforto térmico hipotalâmica</em>. Pequeníssimas oscilações da temperatura corporal central (que antes não disparavam qualquer resposta) passam a ser interpretadas pelo encéfalo como hipertermia extrema, disparando reflexos vasodilatadores autonômicos exuberantes para dissipação periférica de calor."
+        ],
+        [
+          "4",
+          "Impacto Sistêmico dos Fogachos"
+        ],
+        [
+          "p",
+          "Os episódios noturnos causam microdespertares repetidos, insônia crônica, fadiga diurna, irritabilidade, labilidade emocional e declínio cognitivo percebido. Ademais, estudos epidemiológicos e cardiovasculares contemporâneos demonstram que sintomas vasomotores moderados a severos e prolongados são <strong>biomarcadores independentes de disfunção endotelial</strong>, maior rigidez arterial e risco cardiovascular aumentado na pós-menopausa."
+        ],
+        [
+          "3",
+          "Síndrome Geniturinária da Menopausa (SGM)"
+        ],
+        [
+          "p",
+          "O termo <em>Síndrome Geniturinária da Menopausa (SGM)</em> substituiu formalmente as expressões \"atrofia vulvovaginal\" e \"vaginite atrófica\" por decisão consensual da North American Menopause Society (NAMS) e da International Society for the Study of Women's Sexual Health (ISSWSH). A nova denominação reflete de maneira mais acurada e abrangente o envolvimento sincrônico e compartilhado do trato genital e do trato urinário inferior, ambos derivados da mesma origem embriológica do seio urogenital e repletos de receptores estrogênicos (&alpha; e &beta;) e androgênicos."
+        ],
+        [
+          "4",
+          "Fisiopatologia e Alterações Teciduais"
+        ],
+        [
+          "u",
+          [
+            "<strong>Redução da Proliferação Epitelial:</strong> Na carência de estrogênio, o epitélio estratificado vaginal perde suas camadas superficial e intermediária, reduzindo sua espessura de mais de 30-40 camadas celulares para escassas 3 a 5 camadas de células basais e parabasais;",
+            "<strong>Depleção do Glicogênio e Queda de Lactobacilos:</strong> As células superficiais ricas em glicogênio desaparecem. Sem glicogênio disponível como substrato fermentativo, as populações comensais de <em>Lactobacillus spp.</em> (bacilos de Döderlein) sofrem colapso;",
+            "<strong>Alcalinização do pH Vaginal:</strong> O pH vaginal, que na menacme situa-se entre 3,8 e 4,5, sobe progressivamente para a faixa de 5,5 a 7,0. Esse meio alcalino favorece a proliferação de bactérias patogênicas entéricas e anaeróbias (ex.: <em>Escherichia coli</em>, <em>Streptococcus</em>, <em>Staphylococcus</em>);",
+            "<strong>Quadro Clínico Típico:</strong> Secura vaginal acentuada, sensação de queimação, prurido vulvar, dispareunia de intróito e de profundidade (frequentemente com sangramento de contato decorrente da friabilidade e petéquias da mucosa), sinusorragia, perda de elasticidade e estenose do canal vaginal;",
+            "<strong>Sintomas Urinários Associados:</strong> Disúria com uroculturas negativas (uretrite atrófica), polaciúria, noctúria, urgência miccional e infecções do trato urinário (ITU) de repetição. A perda de tônus do assoalho pélvico e o adelgaçamento da mucosa uretral facilitam a colonização ascendente por uropatógenos entéricos."
+          ]
+        ],
+        [
+          "4",
+          "Evolução Natural Distinta da SGM vs Fogachos"
+        ],
+        [
+          "p",
+          "Enquanto os sintomas vasomotores tendem a apresentar melhora progressiva e remissão espontânea após 4 a 7 anos na maioria das mulheres, <strong>a Síndrome Geniturinária da Menopausa é crônica, cumulativa e progressiva</strong>. Sem intervenção terapêutica (lubrificantes, hidratantes e/ou estrogênio local), os sintomas geniturinários invariavelmente agravam-se ao longo dos anos de pós-menopausa."
+        ],
+        [
+          "3",
+          "Perda de Massa Óssea e Osteoporose Pós-Menopáusica"
+        ],
+        [
+          "p",
+          "O estrogênio é o principal regulador hormonal da remodelação óssea fisiológica. Em nível molecular, o estradiol exerce duas ações fundamentais através de receptores em osteoblastos e osteócitos:\n      (1) Estimula a secreção de <strong>Osteoprotegerina (OPG)</strong>, uma proteína solúvel que atua como receptor-isca (decoy receptor), ligando-se ao RANKL (Receptor Activator of Nuclear Factor &kappa;B Ligand);\n      (2) Inibe a expressão e a liberação de <strong>RANKL</strong> pelos osteoblastos, impedindo sua ligação ao receptor RANK na membrana dos precursores de osteoclastos."
+        ],
+        [
+          "p",
+          "Com o hipoestrogenismo menopáusico agudo, a relação RANKL/OPG eleva-se dramaticamente. Ocorre um estímulo descontrolado da proliferação, diferenciação e ativação dos osteoclastos, enquanto sua apoptose é suprimida. A reabsorção óssea supera de forma desbalanceada a capacidade de aposição da matriz osteoide pelos osteoblastos. Nos primeiros 5 a 8 anos pós-menopausa, a mulher perde de 2% a 5% de massa óssea ao ano, afetando primordialmente o <strong>osso trabecular</strong> (vértebras e rádio distal), predispondo a fraturas por fragilidade vertebral e do colo do fêmur."
+        ]
+      ]
+    ],
+    [
+      "terapia-hormonal-janela-de-oportunidade-e-esquemas",
+      0,
+      [
+        [
+          "2",
+          "4. Terapia Hormonal (TH): Janela de Oportunidade, Vias e Esquemas Terapêuticos"
+        ],
+        [
+          "3",
+          "O Conceito Crucial da \"Janela de Oportunidade\" (Window of Opportunity)"
+        ],
+        [
+          "p",
+          "A decisão de iniciar a Terapia Hormonal da Menopausa (THM) é regida primordialmente pelo tempo transcorrido desde a menopausa e pela idade cronológica da paciente. O conceito consolidado da <strong>Janela de Oportunidade</strong> (sustentado pela International Menopause Society, NAMS e FEBRASGO) define que:"
+        ],
+        [
+          "4",
+          "Definição da Janela de Oportunidade:"
+        ],
+        [
+          "p",
+          "A TH apresenta perfil favorável de <strong>benefício sobre o risco</strong> quando iniciada em mulheres com:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Idade menor que 60 anos</strong>; <em>OU</em>",
+            "<strong>Tempo de menopausa inferior a 10 anos</strong>."
+          ]
+        ],
+        [
+          "p",
+          "Nessa janela biológica temporal, o endotélio vascular ainda se encontra preservado e responsivo ao estrogênio. O estrogênio promove vasodilatação mediada por óxido nítrico, melhora o perfil lipídico (aumenta HDL e reduz LDL), reduz a aterogênese e confere proteção cardiovascular potencial, além de estabilizar a massa óssea e eliminar os sintomas vasomotores."
+        ],
+        [
+          "4",
+          "O Perigo do Início Tardio (> 60 anos ou > 10 anos de pós-menopausa)"
+        ],
+        [
+          "p",
+          "Em mulheres que iniciam a TH muitos anos após a menopausa, a parede vascular arterial já possui placas ateroscleróticas fibrocalcificadas e inflamatórias estabelecidas. Sob a ação do estrogênio, ocorre um estímulo à ativação de metaloproteinases de matriz nas placas ateroscleróticas preexistentes e ativação da cascata de coagulação, predispondo à <strong>instabilização da placa fibrosa, trombose vascular e eventos isquêmicos coronarianos e encefálicos agudos (IAM e AVC)</strong>, como evidenciado historicamente nos braços tardios do estudo WHI (Women's Health Initiative)."
+        ],
+        [
+          "3",
+          "Princípio Mandatório de Proteção Endometrial: Estrogênio + Progestagênio vs Estrogênio Isolado"
+        ],
+        [
+          "p",
+          "A regra de ouro da prescrição hormonal no climatério fundamenta-se na anatomia uterina da paciente:"
+        ],
+        [
+          "t",
+          [
+            "Status Uterino",
+            "Terapia Hormonal Sistêmica Obrigatória",
+            "Racional Farmacológico e Fisiopatológico"
+          ],
+          [
+            [
+              "<strong>Mulher com Útero Preservado</strong>",
+              "<strong>Estrogênio + Progestagênio</strong> (Terapia Combinada)",
+              "O uso de estrogênio sistêmico isolado estimula continuamente a proliferação mitótica do endométrio. Sem oposição progesterônica, o risco relativo de <strong>hiperplasia endometrial atípica e adenocarcinoma de endométrio</strong> aumenta de 8 a 15 vezes. A adição de um progestagênio em dose e duração adequadas neutraliza totalmente esse risco neoplásico."
+            ],
+            [
+              "<strong>Mulher Histerectomizada</strong>",
+              "<strong>Estrogênio Isolado</strong> (Monoterapia Estrogênica)",
+              "Na ausência de endométrio, o uso de progestagênios é completamente desnecessário e prejudicial. Estudos randomizados robustos demonstraram que é a fração progestagênica sintética da TH que confere o pequeno aumento no risco relativo de câncer de mama e eventos tromboembólicos. O estrogênio isolado em histerectomizadas demonstrou, no estudo WHI, ausência de aumento de câncer de mama (com tendência a redução em longo prazo). <em>Exceção:</em> mulheres histerectomizadas por <strong>endometriose grave extensa</strong> mantêm indicação de associação com progestagênio para evitar a reativação de focos ectópicos residuais."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Regimes Terapêuticos em Mulheres com Útero"
+        ],
+        [
+          "u",
+          [
+            "<strong>Regime Combinado Contínuo:</strong> Estrogênio + progestagênio administrados todos os dias sem pausas. É o esquema de escolha para a <strong>pós-menopausa tardia</strong>, pois promove atrofia endometrial sustentada e amenorreia na imensa maioria das pacientes após os primeiros meses de adaptação (onde podem ocorrer sangramentos de escape autolimitados);",
+            "<strong>Regime Combinado Sequencial:</strong> Estrogênio contínuo (ou cíclico nos dias 1 a 21-25) com progestagênio associado durante <strong>12 a 14 dias por mês</strong>. Provoca sangramento menstrual por privação hormonal previsível ao final de cada ciclo progestagênico. Indicado preferencialmente na <strong>perimenopausa</strong> ou na transição para menopausa recente, quando esquemas contínuos causariam sangramentos de escape irregulares frequentes;",
+            "<strong>Associação com DIU de Levonorgestrel (DIU-LNG):</strong> Excelente estratégia clínica que fornece proteção endometrial potente por ação direta intrauterina tópica com absorção sistêmica mínima, associada a estrogênio sistêmico por via transdérmica ou oral."
+          ]
+        ],
+        [
+          "3",
+          "Vias de Administração: Transdérmica vs Oral"
+        ],
+        [
+          "p",
+          "A via de administração do estrogênio modifica radicalmente sua farmacocinética, metabolização hepática e perfil de segurança clínica:"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro",
+            "Via Transdérmica (Gel ou Adesivo)",
+            "Via Oral (Comprimidos)"
+          ],
+          [
+            [
+              "<strong>Passagem Hepática</strong>",
+              "<strong>Sem primeira passagem hepática</strong> (absorção direta pelos vasos dérmicos na circulação sistêmica). Níveis plasmáticos estáveis de 17&beta;-estradiol fisiológico.",
+              "<strong>Primeira passagem hepática obrigatória</strong> através do sistema porta. Sofre conversão massiva em estrona (E1)."
+            ],
+            [
+              "<strong>Efeito Hemostático e Trombótico</strong>",
+              "Não estimula a síntese hepática de fatores pró-coagulantes (fatores VII, IX, X e protrombina) nem reduz a proteína S. <strong>Não eleva o risco de Tromboembolismo Venoso (TEV) e AVC isquêmico</strong>.",
+              "Estimula síntese de fatores de coagulação no fígado e induz resistência à proteína C ativada. <strong>Eleva o risco relativo de TEV em 2 a 3 vezes</strong>."
+            ],
+            [
+              "<strong>Perfil Lipídico e Inflamatório</strong>",
+              "Efeito neutro sobre os triglicerídeos séricos. Não eleva os níveis de Proteína C-Reativa ultrassensível (PCR-us).",
+              "Aumenta significativamente os triglicerídeos séricos (risco de pancreatite se triglicerídeos basais elevados). Aumenta PCR-us (marcador de inflamação vascular)."
+            ],
+            [
+              "<strong>Indicações Clínicas Preferenciais</strong>",
+              "<strong>Indicação absoluta / mandatória</strong> em pacientes com: Hipertensão arterial sistêmica, dislipidemia (hipertrigliceridemia > 150-200 mg/dL), diabetes mellitus, obesidade (IMC > 30 kg/m²), tabagismo ativo, risco cardiovascular intermediário e risco aumentado de trombose venosa.",
+              "Mulheres jovens (< 55 anos), com peso normal, normotensas, sem fatores de risco cardiovascular, com triglicerídeos baixos e que preferem a comodidade posológica do comprimido oral diário."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "contraindicacoes-absolutas-e-relativas-th",
+      0,
+      [
+        [
+          "2",
+          "5. Contraindicações da Terapia Hormonal e Avaliação Pré-Prescrição"
+        ],
+        [
+          "3",
+          "Contraindicações Absolutas da Terapia Hormonal Sistêmica"
+        ],
+        [
+          "p",
+          "A identificação de contraindicações absolutas é um dos temas mais repetidos em exames de título de especialista e concursos médicos. A presença de qualquer uma das condições abaixo <strong>veda sumariamente o uso de TH sistêmica</strong>:"
+        ],
+        [
+          "4",
+          "Lista Clássica e Consensual de Contraindicações Absolutas (FEBRASGO / NAMS / IMS):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Câncer de Mama Vigente ou Prévio:</strong> O estímulo hormonal (estrogênico e especialmente progestagênico) pode deflagrar proliferação clonal de células neoplásicas mamárias residuais ou latentes;",
+            "<strong>Neoplasias Malignas Hormônio-Dependentes / Câncer de Endométrio:</strong> História de adenocarcinoma de endométrio ou tumores estrogênio-dependentes;",
+            "<strong>Sangramento Vaginal Anormal de Origem Inexplicada:</strong> Todo sangramento uterino na pós-menopausa deve ser exaustivamente investigado antes de qualquer conduta terapêutica para excluir pólipos endometriais, hiperplasia atípica e câncer de endométrio. Iniciar hormônio sem diagnóstico etiológico mascara neoplasias invasivas;",
+            "<strong>Tromboembolismo Venoso (TEV) Ativo ou Pregresso:</strong> História pessoal documentada de Trombose Venosa Profunda (TVP) ou Embolia Pulmonar (TEP), bem como trombofilias hereditárias de alto risco comprovadas (fator V de Leiden homozigoto, mutação da protrombina homozigota, deficiência de antitrombina, síndrome antifosfolípide);",
+            "<strong>Doença Arterial Coronariana ou Cerebrovascular Aguda ou Prévia:</strong> História de Infarto Agudo do Miocárdio (IAM), Acidente Vascular Cerebral (AVC) isquêmico ou hemorrágico, ataque isquêmico transitório (AIT) e angina instável;",
+            "<strong>Doença Hepática Ativa e Grave:</strong> Hepatite aguda viral ou medicamentosa, cirrose hepática descompensada ou insuficiência hepática aguda (o fígado é o sítio primário de metabolização esteroidiana e síntese de proteínas carreadoras);",
+            "<strong>Porfiria Cutânea Tardia:</strong> Os hormônios sexuais esteroides podem precipitar crises porfíricas graves com fotossensibilidade e dano hepático;",
+            "<strong>Meningioma Diagnosticado:</strong> Contraindica expressamente o uso de <strong>progestagênios</strong>, uma vez que a grande maioria dos meningiomas expressa altos níveis de receptores de progesterona funcionais que estimulam seu crescimento acelerado."
+          ]
+        ],
+        [
+          "3",
+          "Avaliação Clínica e Exames Pré-Prescrição da TH"
+        ],
+        [
+          "p",
+          "Antes de iniciar a terapia hormonal, a paciente deve passar por estratificação rigorosa de risco individual:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Anamnese e Exame Físico Detalhado:</strong> Aferição da pressão arterial sistêmica, cálculo do Índice de Massa Corporal (IMC) e circunferência abdominal, palpação detalhada das mamas e cadeias linfonodais, e exame ginecológico especular e bimanual completo;",
+            "<strong>Mamografia Bilateral Recente:</strong> Obrigatória nos últimos 12 meses, classificada como BI-RADS 1 ou 2. Se houver lesão suspeita (BI-RADS 4 ou 5), a investigação histológica é prioritária antes de cogitar TH;",
+            "<strong>Ultrassonografia Transvaginal:</strong> Em mulheres na pós-menopausa com sangramento, a espessura endometrial &ge; 4-5 mm (ou &ge; 3 mm dependendo do protocolo) exige amostragem histeroscópica ou biópsia endometrial. Em mulheres assintomáticas sem sangramento, a USG transvaginal auxilia no rastreamento de alterações miometriais ou anexiais;",
+            "<strong>Perfil Lipídico e Glicemia de Jejum:</strong> Avaliação de triglicerídeos séricos para determinação da via preferencial (transdérmica se triglicerídeos > 150-200 mg/dL)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "opcoes-nao-hormonais-e-manejo-da-sgm-local",
+      0,
+      [
+        [
+          "2",
+          "6. Terapêutica Não Hormonal dos Fogachos e Tratamento Específico da SGM"
+        ],
+        [
+          "3",
+          "Opções Farmacológicas Não Hormonais para Sintomas Vasomotores"
+        ],
+        [
+          "p",
+          "Para mulheres que possuem contraindicações absolutas à terapia hormonal sistêmica (ex.: sobreviventes de câncer de mama, histórico de TEV) ou que optam por não utilizar esteroides sexuais, dispomos de classes farmacológicas com eficácia clínica comprovada para redução da intensidade e frequência dos fogachos:"
+        ],
+        [
+          "t",
+          [
+            "Classe Farmacológica",
+            "Princípio Ativo e Posologia Típica",
+            "Mecanismo e Particularidades Clínicas"
+          ],
+          [
+            [
+              "<strong>ISRS / ISRN (Inibidores da Recaptação de Serotonina e Noradrenalina)</strong>",
+              "• <strong>Paroxetina</strong> (7,5 mg a 20 mg/dia);<br>\n              • <strong>Venlafaxina</strong> (37,5 mg a 75 mg/dia);<br>\n              • <strong>Desvenlafaxina</strong> (50 mg a 100 mg/dia);<br>\n              • <strong>Citalopram / Escitalopram</strong> (10 mg a 20 mg/dia).",
+              "Modulam os níveis sinápticos de serotonina e noradrenalina no centro termorregulador hipotalâmico, ampliando a zona neutra de termorregulação. Reduzem os fogachos em cerca de 50% a 60%.<br>\n              <strong>ALERTA DE PROVA CRÍTICO:</strong> A <em>Paroxetina e a Fluoxetina são inibidores potentes da enzima CYP2D6</em>. São <strong>estritamente contraindicadas em mulheres em uso de Tamoxifeno</strong> para câncer de mama, pois impedem a conversão do tamoxifeno em seu metabólito ativo (endoxifeno), elevando o risco de recidiva tumoral. Nessas pacientes, os antidepressivos de escolha são a <strong>Venlafaxina</strong> ou o <strong>Citalopram</strong>."
+            ],
+            [
+              "<strong>Gabapentinoides</strong>",
+              "<strong>Gabapentina</strong> (300 mg a 900 mg/dia, administrada preferencialmente à noite)",
+              "Liga-se à subunidade &alpha;2&delta; dos canais de cálcio dependentes de voltagem neuronais. Excelente opção para mulheres com fogachos de predomínio noturno associados à insônia grave, devido ao seu efeito sedativo benéfico."
+            ],
+            [
+              "<strong>Agonista Alfa-2 Adrenérgico Central</strong>",
+              "<strong>Clonidina</strong> (0,05 mg a 0,1 mg VO 12/12h ou adesivo transdérmico)",
+              "Reduz o tônus adrenérgico central no hipotálamo anterior. Eficácia clínica moderada. Pode ser útil em pacientes hipertensas, mas limitada por efeitos colaterais como boca seca, tontura, hipotensão postural e sedação."
+            ],
+            [
+              "<strong>Antagonistas do Receptor de Neurocinina 3 (NK3R)</strong>",
+              "<strong>Fezolinetant</strong> (45 mg VO uma vez ao dia)",
+              "Nova classe terapêutica revolucionária que bloqueia diretamente a ligação da Neurocinina B nos neurônios KNDy da área pré-óptica. Reduz os fogachos rapidamente sem qualquer atividade hormonal estrogênica. Exige monitorização periódica de transaminases hepáticas basais e trimestrais no primeiro ano."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Manejo Específico da Síndrome Geniturinária da Menopausa (SGM)"
+        ],
+        [
+          "p",
+          "A abordagem terapêutica da SGM é escalonada de acordo com a intensidade das manifestações e as características da paciente:"
+        ],
+        [
+          "4",
+          "1. Medidas Não Hormonais Locais (Primeira Linha em Quadros Leves / Opção no Câncer de Mama):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Hidratantes Vaginais (Moisturizers):</strong> Produtos à base de ácido hialurônico ou polímeros de policarbofila aplicados na cavidade vaginal 2 a 3 vezes por semana em regime regular contínuo. Mantêm a hidratação tecidual tecidual e o pH ácido por capilaridade;",
+            "<strong>Lubrificantes Vaginais:</strong> Produtos hidrossolúveis ou à base de silicone aplicados imediatamente antes da relação sexual para diminuir o atrito mecânico."
+          ]
+        ],
+        [
+          "4",
+          "2. Terapia Estrogênica Local em Baixas Doses (Padrão-Ouro para Sintomas Moderados a Graves):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Estriol ou Promestrieno Tópico (Creme ou Óvulos vaginais):</strong> O estriol é um estrogênio de baixa potência com tempo de ligação nuclear curto (menos de 6 horas), e o promestrieno possui absorção sistêmica desprezível (&le; 1%). Promovem proliferação celular rápida do epitélio vaginal, restauração dos lactobacilos e redução do pH;",
+            "<strong>Estradiol Vaginal em Baixa Dose (Comprimidos vaginais de 10 mcg):</strong> Excelente comodidade posológica. Nos primeiros 14 dias faz-se aplicação diária, seguida de manutenção com apenas 2 aplicações semanais;",
+            "<strong>Dispensa Progestagênio:</strong> Como os níveis séricos circulantes de estradiol permanecem dentro da faixa basal da pós-menopausa com doses locais baixas ultra-purificadas, <strong>não há estímulo endometrial e não é necessário associar progestagênio protetor</strong> em mulheres com útero usando exclusivamente estrogênio tópico vaginal."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-e-questoes-comentadas-climaterio",
+      0,
+      [
+        [
+          "2",
+          "7. Casos Clínicos Integradores e Questões de Provas de Residência Médica Comentadas"
+        ],
+        [
+          "3",
+          "Caso Clínico Integrador 1: A Janela de Oportunidade e a Escolha da Via"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Paciente de 51 anos, menopausa há 2 anos (12 meses de amenorreia confirmados aos 49 anos), comparece à consulta com queixa de fogachos severos (mais de 12 episódios diários), sudorese noturna profusa e insônia secundária. Traz mamografia recente BI-RADS 2 e preventivo de colo uterino sem atipias. Não é histerectomizada. Antecedentes pessoais: hipertensa bem controlada com Losartana 50 mg/dia, dislipidemia com Triglicerídeos de 280 mg/dL e LDL de 135 mg/dL. Não tem história pessoal ou familiar de trombose ou neoplasias. Qual é a melhor conduta para o manejo dos sintomas climatéricos desta paciente?"
+        ],
+        [
+          "p",
+          "<strong>Discussão e Conduta:</strong> A paciente encontra-se perfeitamente inserida na <strong>janela de oportunidade</strong>: tem 51 anos de idade (< 60 anos) e apenas 2 anos de menopausa (< 10 anos), com perfil de benefício cardiovascular e de alívio sintomático amplamente favorável. Como tem <strong>útero preservado</strong>, é mandatório associar um <strong>progestagênio</strong> para proteção endometrial. Por apresentar hipertensão arterial e triglicerídeos elevados (280 mg/dL), a via de administração do estrogênio deve ser <strong>obrigatoriamente transdérmica</strong> (gel de 17&beta;-estradiol ou adesivo transdérmico), pois não sofre primeira passagem hepática, não eleva triglicerídeos e não estimula fatores de coagulação. O progestagênio pode ser micronizado oral (100 mg/dia contínuo) ou associado a DIU de Levonorgestrel."
+        ],
+        [
+          "3",
+          "Caso Clínico Integrador 2: Câncer de Mama e Síndrome Geniturinária Grave"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Mulher de 56 anos, submetida a mastectomia e esvaziamento axilar por adenocarcinoma de mama luminal A há 3 anos, atualmente em uso de Tamoxifeno. Procura o ginecologista com queixa de ressecamento vaginal incapacitante, queimação contínua e dispareunia que inviabiliza qualquer atividade sexual conjugal. Refere também fogachos intensos diários. Ao exame: mucosa vaginal extremamente pálida, descorada, com petéquias de atrito e ausência completa de rugosidades epiteliais. Qual a conduta indicada para os sintomas vasomotores e geniturinários?"
+        ],
+        [
+          "p",
+          "<strong>Discussão e Conduta:</strong> O câncer de mama prévio é <strong>contraindicação absoluta para terapia hormonal sistêmica</strong>. Para o controle dos fogachos, opta-se por medicamento não hormonal. Como a paciente está em uso de Tamoxifeno, são formalmente contraindicados a Paroxetina e a Fluoxetina (pelo bloqueio da CYP2D6). A escolha correta é <strong>Venlafaxina</strong> (37,5 a 75 mg/dia) ou Desvenlafaxina ou Gabapentina. Para a Síndrome Geniturinária, a primeira abordagem deve ser com <strong>hidratantes vaginais à base de ácido hialurônico</strong> de uso contínuo associados a lubrificantes. Caso não haja resposta após uso prolongado, o uso de estriol em ultra-baixa dose local pode ser avaliado em conjunto e com anuência expressa do mastologista/oncologista assistente."
+        ],
+        [
+          "3",
+          "Questão Comentada 1: Indicação de Progestagênio e Esquema Terapêutico (USP / ENARE)"
+        ],
+        [
+          "p",
+          "<em>(Banca de Residência Médica)</em> Mulher de 53 anos, histerectomizada por miomatose uterina volumosa há 4 anos com preservação de ambos os ovários, queixa-se de episódios intensos de calor no rosto e tórax, seguidos de sudorese noturna e despertares frequentes há 10 meses. Exame físico sem anormalidades, PA 120x80 mmHg, IMC 23 kg/m², mamografia BI-RADS 1. Diante da ausência de contraindicações e do desejo da paciente de iniciar terapia hormonal, o esquema farmacológico mais adequado é:"
+        ],
+        [
+          "u",
+          [
+            "A) Estrogênio associado obrigatoriamente a Progestagênio contínuo para prevenção de trombose.",
+            "B) Estrogênio isolado em baixas doses, dispensando o uso de progestagênio.",
+            "C) Progestagênio isolado, uma vez que o estrogênio isolado causa câncer de mama em todas as pacientes.",
+            "D) Tibolona associada obrigatoriamente a progestagênio micronizado."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong> <em>Comentário detalhado:</em> O único papel formal do progestagênio na terapia hormonal é a <strong>proteção endometrial</strong> contra o risco de hiperplasia e câncer decorrentes do estímulo estrogênico desoposto. Em mulheres que não possuem útero (histerectomizadas), o progestagênio é totalmente dispensável. A prescrição de estrogênio isolado elimina o risco de hiperplasia (que já não existe pela ausência do órgão) e evita o risco adicional atribuído aos progestagênios sintéticos na mama."
+        ],
+        [
+          "3",
+          "Questão Comentada 2: Contraindicações da Terapia Hormonal (Revalida INEP)"
+        ],
+        [
+          "p",
+          "<em>(Revalida INEP)</em> Mulher de 54 anos comparece à UBS desejando iniciar reposição hormonal para alívio de sintomas de fogacho que prejudicam seu desempenho no trabalho. Na anamnese dirigida, relata história de trombose venosa profunda em membro inferior esquerdo há 5 anos, ocorrida espontaneamente, tratada com anticoagulação oral por 6 meses com resolução completa. Qual é a conduta médica correta?"
+        ],
+        [
+          "u",
+          [
+            "A) Prescrever terapia hormonal combinada com estrogênio oral e progesterona natural.",
+            "B) Prescrever estrogênio transdérmico em baixas doses associado a AAS 100 mg ao dia.",
+            "C) Contraindicar a terapia hormonal sistêmica e propor opções não hormonais como venlafaxina, paroxetina ou gabapentina.",
+            "D) Solicitar ultrassonografia com Doppler venoso de membros inferiores e, se normal, iniciar estrogênio transdérmico."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: C.</strong> <em>Comentário detalhado:</em> O histórico de Tromboembolismo Venoso prévio (TVP ou embolia pulmonar) é uma <strong>contraindicação absoluta e definitiva</strong> à terapia hormonal sistêmica, independentemente da via ser oral ou transdérmica e independentemente do tempo transcorrido desde o evento agudo. A paciente deve ser acolhida e tratada com medidas farmacológicas não hormonais de comprovada eficácia central no hipotálamo, tais como antidepressivos inibidores da recaptação (venlafaxina, desvenlafaxina) ou gabapentina."
+        ]
+      ]
+    ],
+    [
+      "aprofundamento-fisiologia-molecular-esteroidogenese",
+      0,
+      [
+        [
+          "2",
+          "8. Aprofundamento: Esteroidogênese Ovariana e Adrenal, SHBG e Aromatização Periférica"
+        ],
+        [
+          "3",
+          "A Transição da Síntese Esteroidiana na Pós-Menopausa"
+        ],
+        [
+          "p",
+          "Com a cessação da foliculogênese ovariana, encerra-se a produção cíclica dos esteroides sexuais pelas células da granulosa (estradiol e inibinas). No entanto, o ovário pós-menopáusico não se torna subitamente um órgão inerte. Sob a estimulação contínua e crônica de níveis séricos suprafisiológicos de <strong>Hormônio Luteinizante (LH)</strong>, as células do estroma ovariano e da teca sofrem hiperplasia e continuam a secretar quantidades apreciáveis de <strong>androgênios</strong> — principalmente <strong>androstenediona</strong> e <strong>testosterona</strong> — por muitos anos após o evento da menopausa."
+        ],
+        [
+          "4",
+          "O Papel da Glândula Adrenal e da Adrenopausa"
+        ],
+        [
+          "p",
+          "Simultaneamente às alterações gonadais, ocorre o fenômeno da <em>adrenopausa</em>, caracterizado pelo declínio progressivo da produção dos esteroides adrenais da zona reticular: o <strong>Sulfato de Desidroepiandrosterona (DHEA-S)</strong> e a <strong>Desidroepiandrosterona (DHEA)</strong>. Aos 70 anos de idade, os níveis séricos circulantes de DHEA-S representam apenas cerca de 10% a 20% do pico observado aos 20-25 anos. Como a DHEA atua como pré-hormônio intracrino para a conversão local de estrogênios e androgênios em tecidos periféricos (cérebro, ossos, pele e trato geniturinário), esse declínio acentua as manifestações clínicas do envelhecimento tecidual feminino."
+        ],
+        [
+          "4",
+          "Aromatização Periférica e a Predominância da Estrona"
+        ],
+        [
+          "p",
+          "Na mulher na pós-menopausa, o estrogênio circulante biologicamente mais abundante não é mais o 17&beta;-estradiol (E2), mas sim a <strong>estrona (E1)</strong>. A produção de estrona ocorre fundamentalmente fora do ovário, por meio da enzima <strong>citocromo P450 aromatase (CYP19A1)</strong>, expressa densamente no tecido adiposo subcutâneo e visceral, bem como no estroma fibroblástico tecidual:"
+        ],
+        [
+          "u",
+          [
+            "A <strong>androstenediona</strong> (de origem ovariana e adrenal) é convertida em <strong>estrona</strong> pela aromatase periférica;",
+            "A <strong>testosterona</strong> pode ser convertida diretamente em <strong>17&beta;-estradiol</strong> pela mesma enzima, porém em proporções consideravelmente menores."
+          ]
+        ],
+        [
+          "4",
+          "O Paradoxo da Mulher Obesa na Pós-Menopausa"
+        ],
+        [
+          "p",
+          "Mulheres com sobrepeso ou obesidade possuem maior massa de tecido adiposo e, consequentemente, expressam taxas significativamente mais elevadas de aromatase periférica. Apresentam níveis séricos mais altos de estrona circulante. Por um lado, esse hiperestrogenismo relativo confere uma discreta atenuação da perda de massa óssea trabecular e menor intensidade de fogachos. Por outro lado, <strong>aumenta drasticamente o risco de hiperplasia endometrial e adenocarcinoma de endométrio</strong>, decorrente da exposição crônica e desoposta ao estrogênio periférico sem a contraposição lútea da progesterona."
+        ],
+        [
+          "3",
+          "Dinâmica da Globulina Ligadora de Hormônios Sexuais (SHBG)"
+        ],
+        [
+          "p",
+          "A SHBG é uma glicoproteína carreadora sintetizada primariamente pelos hepatócitos, responsável pelo transporte plasmático de alta afinidade da testosterona e do estradiol. Apenas as frações hormonais livres (não ligadas à SHBG nem à albumina) são biologicamente ativas e capazes de transpor a membrana lipídica celular para interagir com seus receptores nucleares específicos."
+        ],
+        [
+          "t",
+          [
+            "Fator Modulador",
+            "Impacto na Síntese Hepática de SHBG",
+            "Repercussão Clínica na Pós-Menopausa"
+          ],
+          [
+            [
+              "<strong>Estrogênio por Via Oral</strong>",
+              "<strong>Aumento expressivo</strong> (estímulo direto no metabolismo de primeira passagem hepática).",
+              "Redução marcante dos níveis de testosterona livre e biodisponível. Pode agravar queixas de diminuição do desejo sexual hipoativo (queda da libido) e fadiga muscular em algumas mulheres."
+            ],
+            [
+              "<strong>Estrogênio por Via Transdérmica</strong>",
+              "<strong>Efeito neutro</strong> (sem passagem hepática inicial).",
+              "Preserva os níveis fisiológicos de SHBG e a fração livre de androgênios, minimizando interferências indesejadas na função sexual e na composição corporal."
+            ],
+            [
+              "<strong>Resistência à Insulina e Obesidade</strong>",
+              "<strong>Supressão acentuada</strong> da síntese de SHBG.",
+              "Elevação relativa das frações livres de androgênios e estrogênios. Favorece o aparecimento de sinais de hiperandrogenismo relativo (hirsutismo facial, alopecia de padrão feminino e acne de início tardio) associados à síndrome metabólica."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "cardiovascular-metabolismo-e-saude-cerebral",
+      0,
+      [
+        [
+          "2",
+          "9. Risco Cardiovascular, Síndrome Metabólica e Função Cognitiva no Climatério"
+        ],
+        [
+          "3",
+          "O Ponto de Inflexão Cardiovascular Feminino"
+        ],
+        [
+          "p",
+          "Durante os anos reprodutivos, as mulheres apresentam incidência de infarto agudo do miocárdio e acidentes vasculares encefálicos significativamente inferior à dos homens da mesma faixa etária — uma proteção atribuída às ações endoteliais, vasculares e metabólicas benéficas dos estrogênios endógenos. No entanto, após a menopausa, essa disparidade progressivamente se dissipa. A partir dos 60 a 65 anos, <strong>as doenças cardiovasculares tornam-se a principal causa de mortalidade feminina</strong> em todo o mundo, superando a mortalidade de todas as neoplasias ginecológicas e mamárias combinadas."
+        ],
+        [
+          "4",
+          "Alterações Metabólicas Desencadeadas pelo Hipoestrogenismo"
+        ],
+        [
+          "u",
+          [
+            "<strong>Redistribuição do Tecido Adiposo:</strong> Ocorre transição do padrão ginoide (deposição subcutânea preferencial em quadris e coxas) para o padrão androide (acúmulo de gordura visceral intra-abdominal). A gordura visceral é metabolicamente ativa e altamente lipolítica, liberando ácidos graxos livres diretamente no sistema porta e secretando adipocinas pró-inflamatórias (TNF-&alpha;, IL-6, resistina);",
+            "<strong>Disfunção Endotelial Progressiva:</strong> A carência de estradiol reduz a atividade da óxido nítrico sintase endotelial (eNOS), diminuindo a síntese basal de óxido nítrico (potente vasodilatador e antiagregante plaquetário) e aumentando a produção de endotelina-1, elevando a rigidez arterial e a resistência vascular periférica;",
+            "<strong>Deterioração do Perfil Lipídico:</strong> Elevação dos níveis séricos de colesterol total, LDL-colesterol (com aumento da proporção de partículas pequenas e densas, altamente aterogênicas) e triglicerídeos, acompanhada de queda nos níveis de HDL-colesterol protetor;",
+            "<strong>Resistência à Insulina e Risco de Diabetes Mellitus Tipo 2:</strong> O estrogênio facilita a captação periférica de glicose mediada pelo transportador GLUT4 no tecido muscular e adiposo. Sua queda favorece a glicemia de jejum alterada e acelera o desenvolvimento de síndrome metabólica."
+          ]
+        ],
+        [
+          "3",
+          "Saúde Cerebral, Humor e Transtornos Neurocognitivos"
+        ],
+        [
+          "p",
+          "Os receptores de estrogênio (&alpha; e &beta;) são expressos em alta densidade no hipocampo, córtex pré-frontal e amígdala — regiões centrais envolvidas na regulação do humor, na memória de trabalho e na plasticidade sináptica. A flutuação brusca e a subsequente privação crônica de estrogênio durante o climatério manifestam-se frequentemente por queixas neurológicas e psiquiátricas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Brain Fog (\"Névoa Mental\"):</strong> Dificuldade momentânea de evocação lexical, lapsos mnêmicos para tarefas recentes e redução da capacidade de concentração multitarefa, que geram extrema ansiedade nas pacientes com receio de demência precoce. O esclarecimento de que esse fenômeno é funcional e frequentemente reversível com a estabilização hormonal é terapêutico;",
+            "<strong>Vulnerabilidade a Episódios Depressivos Maiores:</strong> A perimenopausa constitui uma \"janela de vulnerabilidade\" neurobiológica para o primeiro episódio de depressão maior ou para a recidiva de transtornos afetivos prévios. Mulheres com histórico de transtorno disfórico pré-menstrual (TDPM) ou depressão pós-parto apresentam suscetibilidade substancialmente ampliada;",
+            "<strong>Estudo WHIMS e Prevenção de Demências:</strong> O braço WHIMS (Women's Health Initiative Memory Study) demonstrou de forma inequívoca que a terapia hormonal iniciada tardiamente em mulheres com mais de 65 anos <em>não previne a doença de Alzheimer e esteve associada a aumento de demência vascular</em>. Em contrapartida, o início da TH precoce durante a janela de oportunidade parece exercer efeito neuroprotetor ou neutro, jamais devendo a TH ser prescrita com o objetivo exclusivo de prevenir demências em mulheres assintomáticas."
+          ]
+        ]
+      ]
+    ],
+    [
+      "osteoporose-rastreamento-diagnostico-tratamento-completo",
+      0,
+      [
+        [
+          "2",
+          "10. Osteoporose Pós-Menopáusica: Densitometria, FRAX Brasil e Terapêutica Específica"
+        ],
+        [
+          "3",
+          "Indicações Formais de Densitometria Mineral Óssea (DMO)"
+        ],
+        [
+          "p",
+          "A Densitometria Óssea com dupla emissão de raios X (DXA) é o exame padrão-ouro para o diagnóstico de osteopenia e osteoporose, bem como para o monitoramento da resposta terapêutica. A Sociedade Brasileira de Densitometria Clínica (ABRASSO) e as diretrizes internacionais recomendam a realização de DMO nas seguintes circunstâncias:"
+        ],
+        [
+          "4",
+          "Critérios para Solicitação de DXA (Coluna Lombar e Fêmur Proximal):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Todas as mulheres com idade &ge; 65 anos</strong>, independentemente da presença de fatores de risco adicionais;",
+            "<strong>Mulheres na pós-menopausa com idade < 65 anos</strong> que apresentem pelo menos <strong>um fator de risco maior</strong> para perda de massa óssea ou fratura: baixo peso corporal (IMC < 19 kg/m²), tabagismo ativo atual, história prévia de fratura por fragilidade após os 40 anos, história parental de fratura do colo de fêmur, artrite reumatoide ou uso prolongado de glicocorticoides (&ge; 5 mg/dia de prednisona ou equivalente por mais de 3 meses);",
+            "<strong>Mulheres na transição menopáusica</strong> que apresentem alto risco de fratura ou causas secundárias de osteoporose (hiperparatireoidismo primário, hipertireoidismo não tratado, síndrome de má absorção, doença celíaca, gastrectomia prévia);",
+            "<strong>Avaliação de eficácia terapêutica</strong> em pacientes que já recebem medicamentos específicos para osteoporose (geralmente repetida a cada 1 a 2 anos)."
+          ]
+        ],
+        [
+          "3",
+          "Critérios Diagnósticos da Organização Mundial da Saúde (OMS)"
+        ],
+        [
+          "p",
+          "Em mulheres na pós-menopausa e homens com &ge; 50 anos, o diagnóstico densitométrico baseia-se exclusivamente no <strong>T-score</strong> (número de desvios-padrão em relação à densidade mineral óssea média de uma população jovem de referência do mesmo sexo):"
+        ],
+        [
+          "t",
+          [
+            "Classificação da OMS",
+            "Critério de T-score (Menor valor entre L1-L4, Colo Fêmur ou Fêmur Total)",
+            "Implicação Clínica e Decisão"
+          ],
+          [
+            [
+              "<strong>Normal</strong>",
+              "T-score &ge; -1,0 DP",
+              "Manter hábitos de vida saudáveis, aporte dietético de cálcio e vitamina D e exercícios com carga. Repetir DXA a cada 3 a 5 anos."
+            ],
+            [
+              "<strong>Osteopenia (Baixa Massa Óssea)</strong>",
+              "T-score entre -1,1 DP e -2,4 DP",
+              "Calcular risco absoluto de fratura pelo algoritmo FRAX Brasil. Se alto risco ou fratura prévia associada, iniciar tratamento medicamentoso."
+            ],
+            [
+              "<strong>Osteoporose</strong>",
+              "T-score &le; -2,5 DP",
+              "Diagnóstico densitométrico de osteoporose firmado. Indicação formal de intervenção farmacológica antirreabsortiva ou anabólica."
+            ],
+            [
+              "<strong>Osteoporose Grave (Estabelecida)</strong>",
+              "T-score &le; -2,5 DP associado à presença de <strong>fratura por fragilidade óssea prévia</strong> (ex.: vértebra, rádio, quadril).",
+              "Risco iminente de novas fraturas. Priorizar agentes osteoanabólicos (ex.: Teriparatida ou Romosozumabe) seguidos de antirreabsortivos potentes."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "O Algoritmo FRAX Brasil (Fracture Risk Assessment Tool)"
+        ],
+        [
+          "p",
+          "O FRAX é uma ferramenta computadorizada validada que calcula a probabilidade matemática individual de uma pessoa sofrer uma <em>fratura osteoporótica maior</em> (coluna vertebral clínica, quadril, antebraço ou úmero proximal) ou uma <em>fratura isolada de quadril</em> nos próximos 10 anos, com base em fatores de risco clínicos combinados ou não com o valor da DMO do colo femoral. O FRAX Brasil estabelece limiares de intervenção que orientam o início de tratamento medicamentoso mesmo em pacientes com densitometria revelando apenas osteopenia, caso o risco calculado ultrapasse os limiares de custo-efetividade para a faixa etária."
+        ],
+        [
+          "3",
+          "Manejo Terapêutico Farmacológico da Osteoporose"
+        ],
+        [
+          "4",
+          "1. Suplementação Basal e Medidas Não Farmacológicas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Aporte de Cálcio Elementar:</strong> Meta diária de 1.000 mg a 1.200 mg ao dia, preferencialmente por meio de fontes alimentares lácteas (leite, queijos, iogurtes). A suplementação medicamentosa (carbonato ou citrato de cálcio) deve ser restrita à complementação da fração não atingida pela dieta, administrada fracionadamente junto às refeições;",
+            "<strong>Vitamina D (Colecalciferol):</strong> Manter níveis séricos de 25-hidroxivitamina D [25(OH)D] acima de 30 ng/mL em populações de alto risco e com osteoporose documentada;",
+            "<strong>Exercício Físico com Impacto e Sobrecarga Muscular:</strong> Estimula a mecanotransdução nos osteócitos via via Wnt/&beta;-catenina, reduzindo a reabsorção e melhorando o equilíbrio e a massa muscular (prevenção de sarcopenia e quedas)."
+          ]
+        ],
+        [
+          "4",
+          "2. Fármacos Antirreabsortivos de Primeira Linha (Bisfosfonatos):"
+        ],
+        [
+          "p",
+          "Os bisfosfonatos (Alendronato de sódio 70 mg VO semanal, Risedronato 35 mg VO semanal ou 150 mg mensal, e Ácido Zoledrônico 5 mg IV em infusão anual) ligam-se avidamente à hidroxiapatita óssea e são internalizados pelos osteoclastos durante a reabsorção, inibindo a enzima farnesil pirofosfato sintase e deflagrando apoptose osteoclástica:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Instruções de Tomada do Alendronato/Risedronato:</strong> Em jejum absoluto matinal, com copo cheio de água pura (200 mL), aguardando pelo menos 30 minutos em posição ereta (sentada ou em pé) antes de ingerir qualquer alimento, café ou outro medicamento, a fim de evitar esofagite erosiva grave;",
+            "<strong>Efeitos Adversos Raros de Longo Prazo:</strong> Osteonecrose de mandíbula (especialmente após procedimentos odontológicos invasivos) e fraturas atípicas de fêmur subtrocantérico/diafisário. Recomenda-se reavaliação criteriosa (\"férias medicamentosas\" ou drug holiday) após 5 anos de uso oral ou 3 doses anuais do ácido zoledrônico em pacientes que atingiram estabilidade densitométrica e sem fraturas recentes."
+          ]
+        ],
+        [
+          "4",
+          "3. Anticorpo Monoclonal Antirreabsortivo (Denosumabe):"
+        ],
+        [
+          "p",
+          "O <strong>Denosumabe</strong> (60 mg subcutâneo a cada 6 meses) é um anticorpo monoclonal humano que se liga com altíssima afinidade ao <strong>RANKL</strong>, mimetizando a ação biológica da osteoprotegerina. Não é retido na matriz óssea mineralizada. <strong>Alerta de suspensão:</strong> a descontinuação súbita do denosumabe provoca um efeito rebote agudo de remodelação óssea com perda acelerada de DMO e fraturas vertebrais múltiplas em cascata; caso seja suspenso, deve ser imediatamente seguido por um bisfosfonato potente (ex.: ácido zoledrônico)."
+        ]
+      ]
+    ],
+    [
+      "progestagenios-e-risco-mamario-detalhado",
+      0,
+      [
+        [
+          "2",
+          "11. Progestagênios na TH: Diferenciação Molecular e Risco de Câncer de Mama"
+        ],
+        [
+          "3",
+          "Nem Todos os Progestagênios São Iguais: A Heterogeneidade Farmacológica"
+        ],
+        [
+          "p",
+          "Na literatura contemporânea de climatério, a escolha da molécula progestagênica é tão determinante quanto a via de administração do estrogênio. Os progestagênios diferem amplamente em sua estrutura química, afinidade por receptores esteroides adicionais (androgênicos, glicocorticoides e mineralocorticoides) e impactos no parênquima mamário e metabólico:"
+        ],
+        [
+          "t",
+          [
+            "Progestagênio",
+            "Origem Estrutural",
+            "Afinidade Receptores Adicionais",
+            "Perfil Clínico e Impacto Mamário"
+          ],
+          [
+            [
+              "<strong>Progesterona Natural Micronizada</strong>",
+              "Quimicamente idêntica à progesterona lútea humana",
+              "Antimineralocorticoide; metabólitos ativos (alopregnanolona) modulam positivamente receptores GABA-A.",
+              "<strong>Perfil de segurança ótimo</strong>. Não interfere negativamente no perfil lipídico nem na sensibilidade insulínica. O metabólito alopregnanolona confere excelente efeito sedativo e ansiolítico (ótimo para administração noturna). Estudos observacionais de grande escala (ex.: coorte francesa E3N) demonstraram que a associação de estrogênio com progesterona natural micronizada por até 5 anos apresentou <em>menor ou nulo aumento no risco de câncer de mama</em> em comparação aos progestagênios sintéticos."
+            ],
+            [
+              "<strong>Didrogesterona</strong>",
+              "Retroprogesterona (isômero estéreo da progesterona)",
+              "Alta seletividade pelo receptor de progesterona; quase nula afinidade por receptores androgênicos ou glicocorticoides.",
+              "Excelente tolerabilidade gástrica e metabólica. O estudo E3N e dados de segurança europeus apontam perfil de segurança mamária muito próximo ao da progesterona micronizada, superior aos progestagênios sintéticos clássicos."
+            ],
+            [
+              "<strong>Acetato de Medroxiprogesterona (AMP)</strong>",
+              "Derivado da 17&alpha;-hidroxiprogesterona (progestina sintética clássica)",
+              "Afinidade parcial por receptores glicocorticoides e androgênicos.",
+              "Foi o progestagênio utilizado no estudo clássico WHI. Associa-se a maior atenuação dos benefícios vasculares do estrogênio, leve piora da resistência à insulina e aumento documentado no risco de câncer de mama após 4 a 5 anos de uso contínuo quando combinado a estrogênios conjugados equinos (ECE). Hoje possui uso menos prioritário na prática privada moderna, dando lugar à progesterona micronizada ou didrogesterona."
+            ],
+            [
+              "<strong>Levonorgestrel (DIU-LNG)</strong>",
+              "Derivado da 19-nortestosterona administrado por via intrauterina",
+              "Ação tópica no endométrio com concentrações endometriais até 1.000 vezes maiores que as plasmáticas.",
+              "Fornece a mais potente proteção endometrial conhecida com baixíssimos níveis séricos sistêmicos, mantendo o endométrio totalmente atrófico e minimizando eventos adversos mamários sistêmicos."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "O Estudo WHI em Perspectiva Histórica e Crítica Científica"
+        ],
+        [
+          "p",
+          "Em 2002, a publicação inicial do Women's Health Initiative (WHI) gerou repercussão mundial e pânico generalizado ao reportar um aumento no risco de câncer de mama, AVC e eventos cardiovasculares no grupo de mulheres tratadas com a combinação de Estrogênios Conjugados Equinos (ECE 0,625 mg) e Acetato de Medroxiprogesterona (AMP 2,5 mg). Todavia, reanálises aprofundadas e estratificadas demonstraram falhas metodológicas essenciais:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Idade Inadequada da Coorte:</strong> A idade média das participantes do WHI era de <strong>63,3 anos</strong>, com muitas mulheres iniciando hormônios entre 70 e 79 anos (muito além da janela de oportunidade de 10 anos pós-menopausa), muitas já portadoras de placas de ateroma calcificadas;",
+            "<strong>O Braço de Estrogênio Isolado em Histerectomizadas:</strong> As mulheres histerectomizadas que utilizaram apenas ECE isolado <em>não apresentaram elevação no risco de câncer de mama</em> durante todo o período de intervenção de 7 anos e, no seguimento de longo prazo (publicado no JAMA em 2020), demonstraram <strong>redução estatisticamente significante de 23% na incidência de câncer de mama e de 44% na mortalidade por essa neoplasia</strong>;",
+            "<strong>Risco Absoluto Real no Grupo Combinado:</strong> O aumento atribuído à associação ECE + AMP foi de magnitude pequena: aproximadamente 8 casos adicionais de câncer de mama por 10.000 mulheres/ano de uso após 5 anos de terapia (classificado como risco \"raro\" pelos critérios da OMS). Esse risco é numericamente comparável ou inferior ao risco decorrente do sedentarismo, obesidade ou consumo regular de duas doses de bebida alcoólica ao dia."
+          ]
+        ]
+      ]
+    ],
+    [
+      "situacoes-especiais-e-casos-avancados",
+      0,
+      [
+        [
+          "2",
+          "12. Situações Especiais: Miomatose, Endometriose, Tabagismo, Enxaqueca e Doença da Tireoide"
+        ],
+        [
+          "3",
+          "Manejo Clínico Personalizado em Cenários Complexos"
+        ],
+        [
+          "p",
+          "A prescrição da terapia hormonal da menopausa frequentemente depara-se com comorbidades ginecológicas e clínicas que geram dúvidas frequentes na prática médica:"
+        ],
+        [
+          "4",
+          "1. Miomatose Uterina Prévia"
+        ],
+        [
+          "p",
+          "Os leiomiomas uterinos expressam receptores para estrogênio e progesterona e habitualmente sofrem regressão dimensional gradual e progressiva após a menopausa em decorrência do hipoestrogenismo. A terapia hormonal em doses baixas fisiológicas padrão <strong>não é contraindicada</strong> em mulheres com miomas uterinos assintomáticos. No entanto, recomenda-se:"
+        ],
+        [
+          "u",
+          [
+            "Monitoramento ultrassonográfico periódico da morfologia uterina;",
+            "Preferência por esquemas com <strong>progesterona micronizada ou DIU-LNG</strong>, que exercem forte efeito atrófico local sobre o miométrio e endométrio;",
+            "Caso ocorra crescimento anormal acelerado de um nódulo na vigência da TH, deve-se suspender o estrogênio e investigar para afastar leiomiossarcoma uterino."
+          ]
+        ],
+        [
+          "4",
+          "2. Antecedente Cirúrgico de Endometriose Profunda"
+        ],
+        [
+          "p",
+          "Em pacientes que foram submetidas à ooforectomia bilateral e histerectomia por endometriose infiltrativa grave, a conduta hormonal é uma importante <em>exceção à regra geral</em>:"
+        ],
+        [
+          "4",
+          "Atenção: Progestagênio Obrigatório Mesmo Sem Útero na Endometriose"
+        ],
+        [
+          "p",
+          "A administração de estrogênio isolado pode estimular e reativar implantes remanescentes microscópicos de endometriose presentes no peritônio pélvico, septo retovaginal ou alças intestinais, com risco de dor incapacitante, obstrução ureteral ou transformação maligna em carcinoma endometrioide/células claras de ovário. Portanto, nessas mulheres, <strong>é obrigatório associar um progestagênio protetor contínuo</strong> (ou prescrever Tibolona) mesmo após a histerectomia total."
+        ],
+        [
+          "4",
+          "3. Tabagismo Ativo"
+        ],
+        [
+          "p",
+          "O tabagismo altera de maneira profunda a farmacocinética dos hormônios administrados por via oral. Os hidrocarbonetos aromáticos da fumaça do cigarro induzem fortemente as enzimas do citocromo P450 hepático (CYP1A2), acelerando a hidroxilação hepática e a inativação do estradiol oral, ao mesmo tempo em que a nicotina estimula a agregação plaquetária e eleva os níveis séricos de fibrinogênio. Logo, em mulheres fumantes, a <strong>via transdérmica é estritamente mandatória</strong> para contornar a perda de eficácia metabólica e não potencializar o risco trombótico vascular."
+        ],
+        [
+          "4",
+          "4. Enxaqueca com e sem Aura no Climatério"
+        ],
+        [
+          "p",
+          "A enxaqueca com aura durante a menacme constitui contraindicação absoluta para o uso de contraceptivos hormonais combinados em altas doses devido ao risco elevado de AVC isquêmico. No climatério, no entanto, a THM utiliza doses fisiológicas muito inferiores (cerca de 1/4 a 1/6 da dose de um anticoncepcional oral). Recomenda-se:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Enxaqueca sem aura desencadeada por oscilação hormonal:</strong> A estabilização dos níveis séricos com <strong>17&beta;-estradiol transdérmico contínuo</strong> em gel ou adesivo melhora expressivamente a frequência das crises cefalálgicas, evitando o \"gatilho\" da queda abrupta de estrogênio;",
+            "<strong>Enxaqueca com aura:</strong> A via transdérmica contínua em dose mínima eficaz pode ser utilizada sob vigilância neurológica rigorosa, sendo contraindicada a via oral em qualquer circunstância."
+          ]
+        ],
+        [
+          "4",
+          "5. Doenças da Tireoide e Ajuste da Levotiroxina"
+        ],
+        [
+          "p",
+          "A administração de <strong>estrogênios por via oral estimula intensamente a síntese hepática da Globulina Ligadora de Tiroxina (TBG)</strong>. Com mais TBG circulante, uma fração maior dos hormônios tireoidianos livres liga-se a essa proteína, resultando em queda transitória da T4 livre circulante e elevação reflexa do TSH. Em pacientes com hipotireoidismo primário estável que iniciam estrogênio oral, é imperativo dosar o TSH 6 a 8 semanas após o início da TH e frequentemente <strong>aumentar a dose da levotiroxina em 15% a 30%</strong>. Esse fenômeno não é observado com o uso de estrogênio transdérmico, que não altera a TBG sérica."
+        ]
+      ]
+    ],
+    [
+      "guia-pratico-prescricao-seguimento-e-suspensao",
+      0,
+      [
+        [
+          "2",
+          "13. Guia de Bolso: Passo a Passo da Prescrição, Monitoramento e Descontinuação"
+        ],
+        [
+          "3",
+          "Roteiro de Prescrição no Consultório em 5 Passos Estruturados"
+        ],
+        [
+          "4",
+          "Passo 1: Confirmação da Indicação e Enquadramento na Janela"
+        ],
+        [
+          "p",
+          "A paciente apresenta sintomas vasomotores moderados/severos com impacto na qualidade de vida, ou prevenção de perda óssea com alto risco de fratura? Idade < 60 anos ou tempo de menopausa < 10 anos? Ausência de contraindicações absolutas?"
+        ],
+        [
+          "4",
+          "Passo 2: Definição da Necessidade de Progestagênio"
+        ],
+        [
+          "u",
+          [
+            "<strong>Possui útero:</strong> Necessita obrigatoriamente de progestagênio para proteção endometrial;",
+            "<strong>Histerectomizada:</strong> Estrogênio isolado (salvo histórico de endometriose profunda)."
+          ]
+        ],
+        [
+          "4",
+          "Passo 3: Seleção Criteriosa da Via e dos Fármacos"
+        ],
+        [
+          "u",
+          [
+            "<strong>Via Transdérmica (Gel ou Adesivo):</strong> Primeira escolha sempre em hipertensas, fumantes, diabéticas, obesas ou dislipidêmicas. Posologia inicial típica: <em>17&beta;-Estradiol gel 0,06%</em> (1 pump ao dia = 0,75 mg de estradiol) aplicado em pele limpa e seca dos braços, ombros ou abdome (nunca nas mamas);",
+            "<strong>Progestagênio:</strong> Primeira escolha: <em>Progesterona natural micronizada</em> 100 mg/dia por via oral contínua (à noite) ou 200 mg/dia por 12 a 14 dias ao mês (regime sequencial), ou <em>Didrogesterona</em> 5 a 10 mg/dia, ou <em>DIU-LNG 52 mg</em>."
+          ]
+        ],
+        [
+          "4",
+          "Passo 4: Calendário de Consultas e Monitoramento Clínico"
+        ],
+        [
+          "u",
+          [
+            "<strong>Retorno em 6 a 8 semanas:</strong> Avaliar alívio dos sintomas vasomotores, adaptação à via de administração e efeitos colaterais comuns (mastalgia transitória, retenção de líquido, sangramento de escape);",
+            "<strong>Avaliação aos 6 e 12 meses:</strong> Aferir pressão arterial, conferir regularidade do sangramento ou presença de amenorreia, e solicitar mamografia de controle anual;",
+            "<strong>Sangramento Uterino Inesperado:</strong> Na vigência de regime contínuo, sangramentos escassos (spotting) são toleráveis nos primeiros 6 meses. Sangramentos intensos, com coágulos ou persistentes após 6 meses de uso exigem investigação imediata com ultrassonografia transvaginal e histeroscopia com biópsia."
+          ]
+        ],
+        [
+          "4",
+          "Passo 5: Duração da Terapia e Descontinuação Segura"
+        ],
+        [
+          "p",
+          "As diretrizes internacionais abandonaram o conceito de um prazo arbitrário de término (antigamente estipulado em 5 anos). A continuidade da TH deve ser revisada anualmente, ponderando benefícios e riscos individuais da paciente. Quando a paciente e o médico decidirem pela descontinuação, <strong>recomenda-se o desmame gradual da dose</strong> ao longo de 3 a 6 meses (reduzindo a quantidade de gel ou espaçando as administrações) para minimizar o risco de rebote severo dos sintomas vasomotores."
+        ]
+      ]
+    ],
+    [
+      "androgenios-libido-tibolona-e-fitoestrogenios",
+      0,
+      [
+        [
+          "2",
+          "14. Androgênios no Climatério, Tibolona, SERMs e Fitoterápicos Baseados em Evidências"
+        ],
+        [
+          "3",
+          "O Papel da Terapia com Androgênios: Transtorno do Desejo Sexual Hipoativo (TDSH)"
+        ],
+        [
+          "p",
+          "Embora o estrogênio seja o hormônio central na reposição do climatério, muitas mulheres referem persistência de perda significativa de libido, diminuição da resposta ao estímulo erótico, anorgasmia e sensação de redução de energia vital, mesmo após a otimização da terapia estrogênica e resolução dos sintomas vasomotores. O <strong>Consenso Global sobre a Terapia com Testosterona para Mulheres (2019/2024)</strong> estabelece balizas rígidas para a prescrição androgênica:"
+        ],
+        [
+          "4",
+          "Critérios para Prescrição de Testosterona Feminina:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Única Indicação Formal com Evidência Classe A:</strong> Mulheres na pós-menopausa com diagnóstico estabelecido de <strong>Transtorno do Desejo Sexual Hipoativo (TDSH)</strong> que apresentem sofrimento pessoal ou interpessoal clinicamente relevante;",
+            "<strong>Dose e Formulação:</strong> A dose recomendada deve reproduzir exclusivamente os <em>níveis séricos fisiológicos femininos da pré-menopausa</em> (aproximadamente 1/10 da dose masculina adulta). Deve-se utilizar gel ou creme de testosterona transdérmica formulado especificamente sem causar níveis suprafisiológicos;",
+            "<strong>Monitorização Laboratorial Obrigatória:</strong> Deve-se dosar a testosterona total sérica basal antes do início e após 3 a 6 semanas de tratamento. O objetivo da dosagem não é diagnosticar deficiência (uma vez que os kits laboratoriais convencionais possuem baixa precisão em faixas femininas baixas), mas sim <strong>evitar níveis androgênicos suprafisiológicos</strong>;",
+            "<strong>Sinais de Sobredose / Virilização:</strong> Caso surjam acne grave, hirsutismo novo, engrossamento da voz ou clitoromegalia, a dose deve ser reduzida ou o medicamento suspenso de imediato;",
+            "<strong>Implantes Pellets e Formulações Não Aprovadas:</strong> As principais sociedades médicas internacionais (Endocrine Society, IMS, NAMS, FEBRASGO) <strong>contraindicam expressamente o uso de implantes subcutâneos (pellets de testosterona)</strong>, popularmente chamados de \"chips da beleza\", devido à liberação hormonal descontrolada, picos suprafisiológicos imprevisíveis e impossibilidade de remoção emergencial em caso de complicações graves."
+          ]
+        ],
+        [
+          "3",
+          "Tibolona: Um Regulador Seletivo da Atividade Estrogênica Tecidual (STEAR)"
+        ],
+        [
+          "p",
+          "A <strong>Tibolona</strong> é um esteroide sintético administrado por via oral (2,5 mg ao dia) que, após ingestão, é metabolizado no fígado e no trato digestivo em três metabólitos ativos principais: o 3&alpha;-hidroxi-tibolona e o 3&beta;-hidroxi-tibolona (que possuem atividade primariamente estrogênica) e o isômero &Delta;4-tibolona (com atividade progestagênica e androgênica seletiva):"
+        ],
+        [
+          "t",
+          [
+            "Tecido Alvo",
+            "Metabolismo Local e Ação da Tibolona",
+            "Desfecho Clínico Prático"
+          ],
+          [
+            [
+              "<strong>SNC e Termorregulação</strong>",
+              "Ação nos receptores estrogênicos e androgênicos hipotalâmicos.",
+              "Eficácia comprovada no alívio de fogachos e melhora do humor e do sono."
+            ],
+            [
+              "<strong>Endométrio Uterino</strong>",
+              "No estroma endometrial, predomina a conversão em &Delta;4-tibolona com potente efeito progestagênico local. Inibe a enzima sulfatase que sintetizaria estrogênios livres.",
+              "<strong>Não provoca proliferação endometrial</strong>. Mantém o endométrio totalmente atrófico e induz amenorreia na vasta maioria das mulheres, dispensando a adição de outro progestagênio."
+            ],
+            [
+              "<strong>Tecido Ósseo</strong>",
+              "Ativação de receptores estrogênicos ósseos.",
+              "Previne a perda de massa óssea e reduz comprovadamente o risco de fraturas vertebrais e não vertebrais (evidenciado no estudo LIFT)."
+            ],
+            [
+              "<strong>Parênquima Mamário</strong>",
+              "Inibe localmente as enzimas sulfatase e 17&beta;-HSD tipo 1, impedindo a síntese local de estradiol ativo. Estimula a sulfotransferase (inativação).",
+              "Não aumenta a densidade mamográfica nem causa dor mamária (mastalgia). <em>Porém</em>, no estudo LIBERATE, demonstrou aumento no risco de recorrência em mulheres com histórico prévio de câncer de mama, sendo contraindicada nessa população."
+            ],
+            [
+              "<strong>Desejo Sexual</strong>",
+              "Ação androgênica direta do metabólito &Delta;4 associada à redução marcante da SHBG hepática.",
+              "Eleva a testosterona livre circulante, promovendo melhora expressiva da libido e da satisfação sexual superior aos estrogênios convencionais."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Moduladores Seletivos dos Receptores de Estrogênio (SERMs)"
+        ],
+        [
+          "p",
+          "Os SERMs são moléculas não esteroidais sintéticas que se ligam competitivamente aos receptores estrogênicos (&alpha; e &beta;), induzindo conformações espaciais específicas que recrutam correpressores ou coativadores transcricionais dependendo do tecido:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Raloxifeno (60 mg/dia VO):</strong> Apresenta ação <strong>agonista estrogênica no osso</strong> (reduz o turnover ósseo e diminui o risco de fraturas vertebrais em até 30-50%) e <strong>antagonista potente na mama e no endométrio</strong> (reduz o risco de câncer de mama invasivo receptor-positivo em cerca de 65-70% sem estimular o endométrio). <em>Limitação clínica fundamental:</em> Como atua como antagonista no hipotálamo, o raloxifeno <strong>piora ou deflagra fogachos</strong> em muitas mulheres e eleva o risco de trombose venosa profunda;",
+            "<strong>TSEC (Complexo Estrogênico Tecido-Específico):</strong> Associação inovadora de Estrogênios Conjugados com um SERM (Bazedoxifeno). O bazedoxifeno neutraliza o estímulo proliferativo estrogênico no endométrio e na mama, permitindo o alívio potente dos fogachos sem a necessidade de prescrever nenhum progestagênio."
+          ]
+        ],
+        [
+          "3",
+          "Fitoterápicos, Isoflavonas e Acupuntura: O que Diz a Medicina Baseada em Evidências"
+        ],
+        [
+          "p",
+          "A busca por \"terapias naturais\" é extremamente comum no consultório. O médico deve orientar a paciente de forma transparente e acolhedora quanto aos dados científicos reais:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Isoflavonas de Soja e Trevo Vermelho (Fitoestrogênios):</strong> Compostos fenólicos com fraca afinidade por receptores estrogênicos (afinidade preferencial por ER&beta;). Em metanálises de ensaios clínicos duplo-cegos randomizados, as isoflavonas demonstraram <em>efeito modesto sobre os fogachos</em>, com magnitude frequentemente indistinguível do expressivo efeito placebo (que chega a 30-40% no climatério). Não conferem proteção comprovada contra perda óssea nem proteção endometrial;",
+            "<strong>Cimicifuga racemosa (Black Cohosh):</strong> Extrato vegetal com ação dopaminérgica e serotonérgica central. Pode oferecer alívio sintomático leve a moderado em algumas mulheres, mas exige cautela com relatos raros de hepatotoxicidade aguda idiopática;",
+            "<strong>Modificações Comportamentais com Evidência Sólida:</strong> Prática regular de exercícios aeróbicos e treinamento de força, redução da temperatura do quarto de dormir, vestimenta em camadas (cebola), cessação do tabagismo, moderação no consumo de café, álcool e alimentos apimentados, e prática de <em>Terapia Cognitivo-Comportamental (TCC)</em>, que demonstrou reduzir de forma consistente o incômodo percebido e o impacto emocional dos fogachos."
+          ]
+        ]
+      ]
+    ],
+    [
+      "matriz-diferencial-e-banco-questoes-residencia-th",
+      0,
+      [
+        [
+          "2",
+          "15. Matriz Comparativa Definitiva e Banco de Questões de Alto Rendimento Comentadas"
+        ],
+        [
+          "3",
+          "Matriz de Decisão Clínica Rápida: TH no Climatério"
+        ],
+        [
+          "t",
+          [
+            "Perfil Clínico da Paciente",
+            "Esquema Recomendado",
+            "Via Preferencial",
+            "Justificativa Fisiológica e Farmacológica"
+          ],
+          [
+            [
+              "<strong>Mulher de 49 anos, fogachos intensos, útero intacto, normotensa e não fumante</strong>",
+              "17&beta;-Estradiol + Progesterona natural micronizada contínua ou cíclica",
+              "Oral ou Transdérmica",
+              "Dentro da janela (< 60 anos). O progestagênio é obrigatório para evitar hiperplasia endometrial. Ambas as vias são seguras no baixo risco cardiovascular."
+            ],
+            [
+              "<strong>Mulher de 52 anos, fogachos graves, hipertensa, IMC 32 kg/m², triglicerídeos 260 mg/dL, com útero</strong>",
+              "17&beta;-Estradiol em gel + Progesterona natural micronizada (ou DIU-LNG)",
+              "<strong>Transdérmica Obrigatória</strong>",
+              "A via transdérmica não tem primeira passagem hepática, não estimula fatores pró-coagulantes nem PCR-us, e não eleva triglicerídeos. Proteção endometrial assegurada."
+            ],
+            [
+              "<strong>Mulher de 54 anos, histerectomizada por mioma aos 48 anos, sem outras comorbidades</strong>",
+              "17&beta;-Estradiol isolado em monoterapia",
+              "Oral ou Transdérmica",
+              "Sem endométrio, não há necessidade de progestagênio. Evita-se o risco progestagênico associado à mama."
+            ],
+            [
+              "<strong>Mulher de 50 anos, histerectomizada por endometriose ovariana e pélvica extensa</strong>",
+              "17&beta;-Estradiol + Progestagênio contínuo (ou Tibolona)",
+              "Transdérmica ou Oral",
+              "<strong>Exceção crucial:</strong> Necessita de progestagênio mesmo sem útero para prevenir reativação dolorosa ou malignização de focos ectópicos residuais."
+            ],
+            [
+              "<strong>Mulher de 55 anos, história prévia de câncer de mama receptor de estrogênio positivo</strong>",
+              "<strong>Contraindicação absoluta à TH sistêmica</strong>. Prescrever Venlafaxina (ou Desvenlafaxina/Gabapentina) + Hidratante vaginal local.",
+              "Não hormonal",
+              "Risco de recidiva tumoral. Contraindicadas paroxetina e fluoxetina se a paciente estiver em uso adjuvante de tamoxifeno."
+            ],
+            [
+              "<strong>Mulher de 66 anos, menopausa há 16 anos, assintomática, solicita TH \"para proteger o coração e rejuvenescer\"</strong>",
+              "<strong>Contraindicação formal</strong> ao início da TH (fora da janela de oportunidade).",
+              "Não prescrever TH",
+              "Início após 60 anos ou > 10 anos pós-menopausa aumenta o risco de IAM, AVC isquêmico, demência vascular e trombose venosa. Indicar atividade física e controle metabólico."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Banco de Questões de Residência Médica Comentadas"
+        ],
+        [
+          "4",
+          "Questão 1 (USP-SP / Residência Médica):"
+        ],
+        [
+          "p",
+          "<em>Enunciado:</em> Mulher de 52 anos, com última menstruação há 18 meses, refere ondas de calor recorrentes que atrapalham seu sono e concentração profissional. Não possui histórico de cirurgias prévias. Ao exame físico: PA 110x70 mmHg, IMC 22 kg/m², mamas sem achados anormais, exame ginecológico com colo atrófico e sem sangramento. Mamografia realizada há 2 meses com laudo BI-RADS 2. Não possui fatores de risco cardiovasculares conhecidos. Deseja iniciar terapia hormonal. Assinale a melhor opção terapêutica para esta paciente:"
+        ],
+        [
+          "u",
+          [
+            "A) Estrogênio isolado por via oral em baixa dose para evitar sobrecarga hormonal.",
+            "B) Estrogênio transdérmico isolado associado a mamografia semestral.",
+            "C) Estrogênio associado obrigatoriamente a um progestagênio contínuo ou sequencial.",
+            "D) Progestagênio isolado em alta dose por via oral."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: C.</strong> <em>Comentário:</em> A paciente tem 52 anos, menopausa há 18 meses (plenamente dentro da janela de oportunidade), com queixas vasomotoras típicas e sem contraindicações. Como ela tem <strong>útero preservado</strong> (não foi histerectomizada), é uma regra universal da ginecologia a <strong>obrigatoriedade de associar um progestagênio ao estrogênio</strong> para evitar o desenvolvimento de hiperplasia e adenocarcinoma de endométrio. O estrogênio isolado causaria estímulo proliferativo descontrolado no tecido endometrial."
+        ],
+        [
+          "4",
+          "Questão 2 (SUS-SP / Residência Médica):"
+        ],
+        [
+          "p",
+          "<em>Enunciado:</em> Mulher de 55 anos, hipertensa em uso de enalapril, diabética tipo 2 compensada e dislipidêmica com triglicerídeos de 290 mg/dL, procura atendimento médico devido a fogachos incapacitantes há 1 ano. Encontra-se na pós-menopausa há 2 anos. Histerectomizada há 5 anos por sangramento uterino anormal secundário a miomatose. Não tem antecedentes oncológicos nem histórico de trombose. Diante das comorbidades metabólicas da paciente, qual a conduta hormonal mais adequada?"
+        ],
+        [
+          "u",
+          [
+            "A) Estrogênio conjugado equino 0,625 mg via oral associado a acetato de medroxiprogesterona.",
+            "B) 17&beta;-estradiol transdérmico isolado em monoterapia.",
+            "C) Tibolona oral 2,5 mg ao dia associada a AAS profilático.",
+            "D) A terapia hormonal é contraindicada pelo diabetes e hipertensão; deve usar apenas fitoterápicos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong> <em>Comentário:</em> A paciente é histerectomizada por mioma (patologia benigna), logo <strong>não precisa de progestagênio</strong> (elimina-se a alternativa A). Hipertensão e diabetes compensados não são contraindicações à TH; todavia, a presença de hipertrigliceridemia (290 mg/dL), diabetes e hipertensão determina a <strong>escolha mandatória da via transdérmica</strong> para o estrogênio. A via transdérmica contorna a circulação entero-hepática, não piora a resistência à insulina, não eleva os triglicerídeos e não estimula a cascata de coagulação."
+        ],
+        [
+          "4",
+          "Questão 3 (ENARE / Exame Nacional de Residência):"
+        ],
+        [
+          "p",
+          "<em>Enunciado:</em> Paciente de 48 anos, portadora de neoplasia maligna de mama tratada cirurgicamente há 2 anos, em uso atual de Tamoxifeno 20 mg/dia, queixa-se de intensos episódios de fogachos e sudorese profusa que comprometem seu sono e vida social. O médico deseja prescrever um inibidor seletivo da recaptação para controle dos sintomas vasomotores. Qual das seguintes drogas NÃO deve ser prescrita devido a interação farmacológica grave com o tamoxifeno?"
+        ],
+        [
+          "u",
+          [
+            "A) Venlafaxina.",
+            "B) Paroxetina.",
+            "C) Desvenlafaxina.",
+            "D) Clonidina."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong> <em>Comentário:</em> O tamoxifeno é uma pró-droga que precisa ser metabolizada no fígado pela enzima <strong>CYP2D6</strong> em seu metabólito ativo mais potente, o endoxifeno. A <strong>Paroxetina</strong> e a <strong>Fluoxetina</strong> são inibidores fortíssimos da CYP2D6. O uso concomitante reduz drasticamente as concentrações séricas de endoxifeno, prejudicando a ação oncológica do tamoxifeno e aumentando o risco de recidiva do câncer de mama. Em usuárias de tamoxifeno, os antidepressivos preferenciais para fogachos são a Venlafaxina, a Desvenlafaxina ou o Citalopram."
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.febrasgo.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO) — Manual de Climatério e Menopausa</a>",
+            "<a href=\"https://www.menopause.org\" target=\"_blank\" rel=\"noopener noreferrer\">The 2022 Hormone Therapy Position Statement of The North American Menopause Society (NAMS)</a>",
+            "<a href=\"https://www.imsociety.org\" target=\"_blank\" rel=\"noopener noreferrer\">International Menopause Society (IMS) Recommendations on Women's Midlife Health and Menopause Hormone Therapy</a>",
+            "<a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3580996/\" target=\"_blank\" rel=\"noopener noreferrer\">Stages of Reproductive Aging Workshop + 10 (STRAW+10): Addressing the Unfinished Agenda of Staging Reproductive Aging</a>",
+            "<a href=\"https://www.endocrino.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Diretrizes Brasileiras de Climatério da Sociedade Brasileira de Endocrinologia e Metabologia (SBEM)</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

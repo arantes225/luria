@@ -1,0 +1,1143 @@
+{
+  "v": 2,
+  "s": "cancer-colorretal",
+  "t": "Câncer Colorretal: Da Carcinogênese à TME e TNT",
+  "p": "Câncer Colorretal: Da Carcinogênese à TME e TNT — Livro-Texto LURIA",
+  "d": "Vias moleculares, pólipos, síndromes hereditárias (PAF e Lynch), ressecção oncológica de cólon e manejo multimodal do reto",
+  "a": "Cirurgia Geral",
+  "m": "Coloproctologia e Cirurgia Oncológica",
+  "h": [
+    "Apostila LURIA",
+    "Câncer Colorretal: Da Carcinogênese à TME e TNT",
+    "Vias moleculares, pólipos, síndromes hereditárias (PAF e Lynch), ressecção oncológica de cólon e manejo multimodal do reto",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Coloproctologia e Cirurgia Oncológica",
+      "Tema: Câncer Colorretal: Da Carcinogênese à TME e TNT"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introducao-epidemiologia-e-rastreamento",
+      "1. Introdução, Epidemiologia Global e Diretrizes de Rastreamento Populacional"
+    ],
+    [
+      "fatores-protetores-e-dieta-metabolismo-epitelial",
+      "1.1 Fatores Protetores, Eixo Metabólico dos Ácidos Graxos de Cadeia Curta e Papel Quimiopreventivo do AAS"
+    ],
+    [
+      "carcinogenese-molecular-duas-vias-principais",
+      "2. Carcinogênese Molecular: A Via Clássica do Adenoma-Carcinoma versus Via da Instabilidade de Microssatélites (MMR)"
+    ],
+    [
+      "polipos-colorretais-classificacao-e-potencial-maligno",
+      "3. Morfologia dos Pólipos Colorretais: Adenomas Tubulares, Vilosos e Pólipos Sésseis Serrilhados"
+    ],
+    [
+      "sindromes-hereditarias-paf-e-lynch",
+      "4. Síndromes Hereditárias de Câncer Colorretal: Polipose Adenomatosa Familiar (PAF) e Síndrome de Lynch (HNPCC)"
+    ],
+    [
+      "polipose-hamartomatosa-peutz-jeghers-e-cowden",
+      "4.1 Outras Síndromes de Polipose Hereditária: Síndrome de Peutz-Jeghers e Síndrome de Cowden"
+    ],
+    [
+      "quadro-clinico-direito-versus-esquerdo-e-estadiamento",
+      "5. Quadro Clínico: Cólon Direito versus Cólon Esquerdo, Estadiamento e o Papel do CEA"
+    ],
+    [
+      "tratamento-cirurgico-do-colon-resseccao-oncologica",
+      "6. Tratamento Cirúrgico do Câncer de Cólon: Princípios Oncológicos, Margens e Linfadenectomia"
+    ],
+    [
+      "quimioterapia-adjuvante-estadios-ii-e-iii",
+      "6.1 Terapia Sistêmica Adjuvante no Câncer de Cólon: Decisões no Estádio II de Alto Risco e Estádio III"
+    ],
+    [
+      "urgencias-obstrucao-perfuracao-stents-hartmann",
+      "6.2 Condutas de Urgência no Câncer Colorretal Complicado: Hartmann versus Ressecção com Anastomose e Stents Metálicos Autoexpansíveis (SEMS)"
+    ],
+    [
+      "manejo-do-cancer-de-reto-tme-e-tnt",
+      "7. Manejo Moderno do Câncer de Reto: Excisão Total do Mesorreto (TME), Quimiorradioterapia e TNT"
+    ],
+    [
+      "manejo-de-metastases-hepaticas-colorretais",
+      "7.1 Manejo Multidisciplinar das Metástases Hepáticas Colorretais: Ressecabilidade, Quimioterapia de Conversão e Two-Stage Hepatectomy"
+    ],
+    [
+      "biomarcadores-avancados-metastatico-kras-nras-braf-msi",
+      "7.2 Biomarcadores Moleculares no Câncer Colorretal Metastático: Painel RAS (KRAS/NRAS), BRAF, HER2 e Imunoterapia"
+    ],
+    [
+      "casos-clinicos-e-questoes-comentadas",
+      "8. Casos Clínicos Desafiadores e Questões Comentadas de Alto Rendimento"
+    ],
+    [
+      "fisiopatologia-da-reproducao-e-preservacao-esfincteriana",
+      "7.3 Anatomia Cirúrgica do Espaço Retal: Fáscia de Denonvilliers, Fáscia de Waldeyer e Nervos Autonômicos"
+    ],
+    [
+      "sindrome-de-resseccao-anterior-baixa-lars",
+      "7.4 Síndrome da Ressecção Anterior Baixa do Reto (LARS): Fisiopatologia, Escore LARS e Reabilitação Pélvica"
+    ],
+    [
+      "casos-discursivos-e-condutas-avancadas-cancer-colorretal",
+      "8.1 Casos Clínicos Discursivos Avançados e Discussão de Padrão de Resposta LURIA"
+    ],
+    [
+      "perolas-praticas-e-armadilhas-cancer-colorretal",
+      "8.2 Pérolas Cirúrgicas e Armadilhas Clássicas em Provas de Câncer Colorretal (LURIA High Yield)"
+    ],
+    [
+      "sintese-pratica-e-referencias",
+      "9. Síntese Prática, Fluxograma de Conduta e Referências Bibliográficas"
+    ]
+  ],
+  "q": [
+    [
+      "introducao-epidemiologia-e-rastreamento",
+      0,
+      [
+        [
+          "2",
+          "1. Introdução, Epidemiologia Global e Diretrizes de Rastreamento Populacional"
+        ],
+        [
+          "p",
+          "O Câncer Colorretal (CCR) compreende as neoplasias malignas que acometem o intestino grosso, englobando o cólon (ceco, ascendente, transverso, descendente e sigmoide) e o reto. Representa a terceira neoplasia maligna mais frequentemente diagnosticada em ambos os sexos e a segunda causa de morte relacionada ao câncer no mundo ocidental, com quase 2 milhões de novos casos e cerca de 1 milhão de mortes anuais. No Brasil, o Instituto Nacional de Câncer (INCA) estima aproximadamente 45.000 novos casos anuais, ocupando a segunda posição em incidência tanto em homens (atrás apenas do câncer de próstata) quanto em mulheres (atrás do câncer de mama), com elevadíssima concentração nas regiões Sul e Sudeste."
+        ],
+        [
+          "3",
+          "Diretrizes Contemporâneas de Rastreamento (Screening) na População de Risco Habitual"
+        ],
+        [
+          "p",
+          "O rastreamento do câncer colorretal é um dos mais eficazes e custo-efetivos de toda a oncologia, pois permite não apenas o diagnóstico precoce de carcinomas incipientes, mas a <strong>prevenção primária real através da ressecção endoscópica de pólipos adenomatosos e lesões pré-malignas precursoras</strong>."
+        ],
+        [
+          "t",
+          [
+            "População / Categoria de Risco",
+            "Idade de Início do Rastreamento",
+            "Métodos de Rastreamento Aceitos e Intervalos"
+          ],
+          [
+            [
+              "<strong>Risco Habitual (Média da População Geral)</strong>",
+              "<strong>45 anos</strong> (diretriz global atualizada pela <em>American Cancer Society</em> e USPSTF, reduzindo a idade inicial clássica de 50 para 45 anos devido ao aumento alarmante de CCR em adultos jovens &lt; 50 anos). Mantido até os 75 anos (entre 76 e 85 anos, decisão individualizada).",
+              "• <strong>Colonoscopia Completa a cada 10 anos (Método Padrão-Ouro / Preferencial)</strong>: avalia todo o cólon e íleo terminal com capacidade diagnóstica e terapêutica imediata (polipectomia).<br>• <strong>Pesquisa de Sangue Oculto nas Fezes por Imunoquímica (FIT) anual</strong> (teste quantitativo de anticorpos humanos específicos para globina, não exigindo restrição alimentar de carnes ou ferro). Se o FIT for positivo, <strong>a colonoscopia diagnóstica imediata é mandatória</strong>.<br>• <em>Alternativas:</em> Retossigmoidoscopia flexível a cada 5 anos; Teste de DNA fecal multialvo associado a FIT (sDNA-FIT / Cologuard) a cada 3 anos; Colonografia por Tomografia Computadorizada (Colonoscopia Virtual) a cada 5 anos."
+            ],
+            [
+              "<strong>Histórico Familiar de CCR em Parente de 1º Grau</strong>",
+              "• Se parente de 1º grau com CCR antes dos 60 anos, ou dois parentes de 1º grau em qualquer idade: <strong>Iniciar aos 40 anos OU 10 anos antes da idade do diagnóstico do familiar mais jovem</strong> (o que ocorrer primeiro).",
+              "<strong>Colonoscopia a cada 5 anos</strong> (métodos fecais não são indicados nesta população de alto risco familiar)."
+            ],
+            [
+              "<strong>Portadores de Doença Inflamatória Intestinal (RCU ou Crohn Colônico)</strong>",
+              "<strong>8 a 10 anos após o início dos sintomas</strong> (ou <strong>IMEDIATO se coexistir Colangite Esclerosante Primária - CEP</strong>).",
+              "Colonoscopia com cromoendoscopia e biópsias a cada 1 a 2 anos (ou anual vitalícia na presença de CEP)."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "fatores-protetores-e-dieta-metabolismo-epitelial",
+      0,
+      [
+        [
+          "2",
+          "1.1 Fatores Protetores, Eixo Metabólico dos Ácidos Graxos de Cadeia Curta e Papel Quimiopreventivo do AAS"
+        ],
+        [
+          "p",
+          "O cólon humano hospeda uma das densidades microbianas mais elevadas do organismo, cuja interação com os componentes dietéticos modula de forma direta as taxas de mutagênese e proliferação do epitélio das criptas:"
+        ],
+        [
+          "3",
+          "Fatores Dietéticos e Protetores Comprovados"
+        ],
+        [
+          "t",
+          [
+            "Fator Protetor / Intervenção",
+            "Mecanismo Fisiopatológico e Celular de Proteção",
+            "Evidências Clínicas e Recomendações"
+          ],
+          [
+            [
+              "<strong>Fibras Dietéticas Solúveis e Insolúveis</strong>",
+              "• Aceleração do trânsito colônico, reduzindo o tempo de contato intraluminal entre carcinógenos fecais e o epitélio mucoso.<br>• Fermentação bacteriana anaeróbia no cólon gerando <strong>Ácidos Graxos de Cadeia Curta (AGCC)</strong>, predominantemente o <strong>Butirato</strong>. O butirato atua como inibidor natural de histona desacetilases (HDAC), induzindo parada do ciclo celular em G1 e apoptose de células pré-neoplásicas, além de ser o principal combustível oxidativo dos colonócitos saudáveis.",
+              "Ingestão diária recomendada de <strong>25 a 35 g/dia de fibras</strong> (cereais integrais, legumes, frutas) associa-se a redução dose-dependente de 15% a 25% na incidência de adenomas e CCR."
+            ],
+            [
+              "<strong>Atividade Física Regular e Controle de Peso</strong>",
+              "Redução dos níveis séricos basais de <strong>insulina e IGF-1 (fator de crescimento semelhante à insulina tipo 1)</strong>, citocinas inflamatórias (TNF-alfa, IL-6) e leptina, diminuindo o estímulo proliferativo mediado pelas vias PI3K/Akt/mTOR. Redução do tecido adiposo visceral inflamatório.",
+              "Prática regular de pelo menos 150 a 300 minutos/semana de atividade aeróbica moderada reduz a incidência de câncer de cólon em cerca de 20% a 30%."
+            ],
+            [
+              "<strong>Ácido Acetilsalicílico (AAS) e AINEs</strong>",
+              "Inibição direta da <strong>Ciclo-oxigenase 2 (COX-2)</strong>, enzima superexpressa em mais de 80% dos adenomas e adenocarcinomas colorretais. A COX-2 sintetiza prostaglandina E2 (PGE2), que estimula angiogênese (via VEGF), inibe a apoptose e favorece invasão tecidual e sobrevivência de células-tronco cancerosas.",
+              "O uso continuado de AAS em baixas doses (100 mg/dia) por &gt; 5 a 10 anos reduz a incidência e mortalidade por CCR em até 30% a 40%, sendo formalmente indicado na quimioprevenção de portadores de <strong>Síndrome de Lynch (estudo CAPP2)</strong>."
+            ],
+            [
+              "<strong>Cálcio e Vitamina D</strong>",
+              "O cálcio intraluminal livre quela e precipita os ácidos biliares secundários hidrofóbicos tóxicos (ácido desoxicólico e litocólico) e ácidos graxos livres, formando sabões insolúveis eliminados nas fezes, prevenindo a ação citotóxica e detergente dessas moléculas sobre as membranas das criptas. A vitamina D ativa receptores nucleares VDR, promovendo diferenciação celular epitelial.",
+              "Consumo dietético adequado de cálcio (1.000 a 1.200 mg/dia) confere proteção modesta, porém estatisticamente significativa contra a formação de adenomas recorrentes."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "carcinogenese-molecular-duas-vias-principais",
+      0,
+      [
+        [
+          "2",
+          "2. Carcinogênese Molecular: A Via Clássica do Adenoma-Carcinoma versus Via da Instabilidade de Microssatélites (MMR)"
+        ],
+        [
+          "p",
+          "O desenvolvimento do câncer colorretal não é um evento estocástico repentino, mas uma marcha progressiva de acúmulo sequencial de aberrações genéticas e epigenéticas que transformam o epitélio colônico normal em adenoma benigno, adenoma com displasia de alto grau e, finalmente, adenocarcinoma invasor ao longo de 10 a 15 anos. Essa carcinogênese opera por <strong>duas vias moleculares fundamentais</strong>:"
+        ],
+        [
+          "3",
+          "1. Via Clássica do Adenoma-Carcinoma (Via da Instabilidade Cromossômica - CIN / Supressão Gênica de Fearon e Vogelstein)"
+        ],
+        [
+          "p",
+          "Responsável por <strong>80% a 85% de todos os casos de CCR esporádicos</strong>. Caracteriza-se pelo acúmulo ordenado e sequencial de mutações e perdas alélicas em genes supressores de tumor e proto-oncogenes:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Passo 1 — Mutação Inicial no Gene APC (Cromossomo 5q21):</strong> O gene <em>Adenomatous Polyposis Coli</em> (APC) é o \"porteiro\" (<em>gatekeeper</em>) da proliferação celular da cripta colônica. Em condições normais, a proteína APC forma um complexo de destruição que fosforila e degrada a <strong>beta-catenina citoplasmática</strong>. A mutação inativadora bialélica do APC impede a degradação da beta-catenina, que se acumula no citosol, transloca-se para o núcleo e ativa a transcrição contínua dos fatores TCF/LEF, estimulando oncogenes como <em>c-MYC</em> e <em>Ciclina D1</em>. Isso gera a <strong>cripta aberrante inicial e o adenoma precoce</strong>;",
+            "<strong>Passo 2 — Mutação no Proto-Oncogene KRAS (Cromossomo 12p12):</strong> Ocorre em cerca de 40% a 50% dos adenomas intermediários. O gene KRAS codifica uma proteína G pequena transdutora de sinal intracelular (via MAPK/ERK). Mutações nos códons 12, 13 ou 61 mantêm o KRAS constitutivamente ligado ao GTP (ativo), estimulando proliferação celular autônoma descontrolada e crescimento tumoral volumoso do adenoma;",
+            "<strong>Passo 3 — Perda Alélica no Cromossomo 18q (Gene SMAD4 / DCC):</strong> A inativação de <em>SMAD4</em> interrompe a via inibitória de crescimento mediada pelo TGF-beta, propiciando a transição de adenoma intermediário para adenoma avançado com displasia de alto grau;",
+            "<strong>Passo 4 — Mutação Inativadora no Gene Supressor TP53 (Cromossomo 17p13):</strong> O \"guardião do genoma\". A perda da proteína p53 funcional anula a capacidade da célula de interromper o ciclo celular em G1 para reparo de DNA e bloqueia a apoptose programada. Ocorre a <strong>invasão através da muscular da mucosa, transformando o adenoma em adenocarcinoma invasor definitivo</strong> com potencial angiogênico e metastático."
+          ]
+        ],
+        [
+          "3",
+          "2. Via da Instabilidade de Microssatélites (MSI / Deficiência do Sistema de Reparo - dMMR)"
+        ],
+        [
+          "p",
+          "Responsável por <strong>15% a 20% dos casos de CCR</strong> (englobando a Síndrome de Lynch hereditária e os tumores esporádicos com hipermetilação):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Mecanismo Molecular do Sistema MMR (<em>Mismatch Repair</em>):</strong> As enzimas de reparo do DNA (codificadas pelos genes <strong>MLH1, MSH2, MSH6 e PMS2</strong>) atuam como revisoras de prova que detectam e corrigem erros de pareamento de bases nitrogenadas e pequenas inserções ou deleções geradas pela DNA polimerase durante a replicação celular, particularmente em sequências repetitivas simples do genoma denominadas <strong>microssatélites</strong>;",
+            "<strong>Consequência da Perda de MMR:</strong> A deficiência de reparo provoca o acúmulo de centenas a milhares de mutações ao longo do DNA (instabilidade de microssatélites de alto grau - <strong>MSI-H</strong>). Isso gera uma hipermutação fenotípica (<em>hypermutated tumor</em>) com síntese de uma carga massiva de <strong>neoantígenos peptídicos estranhos</strong>;",
+            "<strong>Via Serrilhada / Fenótipo Metilador de Ilhas CpG (CIMP):</strong> Na via esporádica (responsável por 80% dos tumores MSI-H), a inativação do sistema decorre da <strong>hipermetilação epigenética aberrante do promotor do gene MLH1</strong>, intimamente associada à <strong>mutação ativadora no gene BRAF (V600E)</strong>, originando-se a partir de <strong>pólipos sésseis serrilhados</strong> no cólon direito;",
+            "<strong>Características Clínicas dos Tumores MSI-H:</strong> Predomínio no <strong>cólon direito</strong>, histologia com carcinoma mucinoso ou células em anel de sinete, <strong>infiltrado linfocítico intratumoral denso exuberante (células inflamatórias semelhantes a Crohn)</strong>, melhor prognóstico em estádios precoces e <strong>resposta extraordinária aos inibidores de checkpoint imune anti-PD-1 (Pembrolizumabe / Nivolumabe)</strong>."
+          ]
+        ]
+      ]
+    ],
+    [
+      "polipos-colorretais-classificacao-e-potencial-maligno",
+      0,
+      [
+        [
+          "2",
+          "3. Morfologia dos Pólipos Colorretais: Adenomas Tubulares, Vilosos e Pólipos Sésseis Serrilhados"
+        ],
+        [
+          "p",
+          "Pólipo define-se macroscopicamente como qualquer massa circunscrita de tecido que se projeta da superfície da mucosa para o interior da luz intestinal. A correta classificação histológica e morfológica é a base para a prevenção do câncer colorretal e estratificação dos intervalos de colonoscopia."
+        ],
+        [
+          "t",
+          [
+            "Tipo Histológico de Pólipo",
+            "Arquitetura Microscópica / Histopatológica",
+            "Potencial de Degeneração Maligna",
+            "Características Clínicas e Endoscópicas"
+          ],
+          [
+            [
+              "<strong>Adenoma Tubular</strong>",
+              "Glândulas tubulares ramificadas compactadas revestidas por epitélio displásico cilíndrico, com pelo menos 75% a 80% do componente tubular.",
+              "<strong>Potencial maligno baixo a moderado</strong> (~5% de risco de adenocarcinoma se &lt; 1 cm).",
+              "<strong>É o pólipo neoplásico MAIS COMUM (representa 70% a 80% de todos os adenomas)</strong>. Frequentemente pedunculado (com haste fibrovascular) e &lt; 1 cm."
+            ],
+            [
+              "<strong>Adenoma Viloso</strong>",
+              "Projeções digitiformes longas, delgadas e papilares (semelhantes a vilosidades do intestino delgado) que constituem pelo menos 75% a 80% da massa tumoral.",
+              "<strong>ALTÍSSIMO potencial de malignização (risco de 30% a 50% de conter adenocarcinoma invasor!)</strong>.",
+              "Menos comum (5% a 10%), habitualmente <strong>séssil (sem pedículo, base larga)</strong>, volumoso (&gt; 2 cm) e localizado no <strong>reto e sigmoide</strong>. Pode produzir grandes quantidades de muco rico em potássio, causando diarreia mucorreica volumosa com hipocalemia severa (<strong>Síndrome de McKittrick-Wheelock</strong>)."
+            ],
+            [
+              "<strong>Adenoma Tubuloviloso</strong>",
+              "Arquitetura mista contendo entre 25% e 75% de componente viloso entremeado por glândulas tubulares.",
+              "Potencial maligno intermediário (cerca de 15% a 25%).",
+              "Comportamento e risco proporcionais à porcentagem de componente viloso e tamanho total."
+            ],
+            [
+              "<strong>Pólipo Séssil Serrilhado (SSP / SSL)</strong>",
+              "Criptas basais dilatadas horizontalmente em formato de \"T\" ou \"L\" (aspecto em bota ou âncora), com serrilhamento que atinge a profundidade da base da cripta. Ausência de displasia citológica convencional típica nas fases iniciais.",
+              "<strong>Elevado potencial oncogênico</strong> através da <strong>Via Serrilhada / CIMP / Mutação BRAF V600E</strong>, progredindo rapidamente para adenocarcinoma com instabilidade de microssatélites (MSI-H).",
+              "Lesões planas ou sésseis rasas, recobertas por muco aderente com bordas indistintas, localizadas predominantemente no <strong>CÓLON DIREITO (ceco e ascendente)</strong>. Frequentemente negligenciadas em colonoscopias rápidas ou mal preparadas."
+            ],
+            [
+              "<strong>Pólipo Hiperplásico</strong>",
+              "Serrilhamento restrito ao terço superior / superficial da cripta; base das criptas estreita e arquitetura normal, sem atipias citológicas.",
+              "<strong>Lesão puramente BENIGNA, SEM potencial maligno</strong> intrínseco.",
+              "Comum no <strong>reto e sigmoide distal</strong>, habitualmente diminutos (&lt; 5 mm), com coloração semelhante à mucosa adjacente normal."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Conceito de Adenoma Avançado e Vigilância Pós-Polipectomia"
+        ],
+        [
+          "p",
+          "Define-se como <strong>Adenoma Avançado</strong> a presença de qualquer um dos seguintes critérios: <strong>Tamanho &gt;= 10 mm (1 cm)</strong> OU <strong>Componente viloso presente (&gt; 25%)</strong> OU <strong>Displasia de alto grau</strong>. Pacientes com 1 a 2 adenomas tubulares pequenos (&lt; 10 mm) com displasia de baixo grau repetem colonoscopia em <strong>7 a 10 anos</strong>; pacientes com adenoma avançado ou &gt;= 3 adenomas repetem em <strong>3 anos</strong>; pacientes com &gt; 10 adenomas na mesma colonoscopia repetem em <strong>1 ano</strong> e devem ser investigados para síndromes de polipose hereditária."
+        ]
+      ]
+    ],
+    [
+      "sindromes-hereditarias-paf-e-lynch",
+      0,
+      [
+        [
+          "2",
+          "4. Síndromes Hereditárias de Câncer Colorretal: Polipose Adenomatosa Familiar (PAF) e Síndrome de Lynch (HNPCC)"
+        ],
+        [
+          "p",
+          "Cerca de 5% a 10% de todos os cânceres colorretais originam-se no contexto de síndromes hereditárias autossômicas dominantes bem caracterizadas por mutações germinativas monogênicas."
+        ],
+        [
+          "3",
+          "1. Polipose Adenomatosa Familiar (PAF Clássica e Atenuada)"
+        ],
+        [
+          "p",
+          "A PAF é uma doença hereditária autossômica dominante de penetrância completa (100%) decorrente de mutação germinativa inativadora heterozigota no gene <strong>APC</strong> no cromossomo 5q21:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Quadro Fenotípico Clássico:</strong> Desenvolvimento de <strong>centenas a milhares (&gt; 100 a milhares) de adenomas colorretais</strong> disseminados por todo o cólon e reto a partir da segunda década de vida (adolescência e início da idade adulta);",
+            "<strong>Risco Neoplásico:</strong> <strong>100% de risco cumulativo de câncer colorretal até os 40 a 50 anos de idade</strong> se o cólon não for removido cirurgicamente profilaticamente;",
+            "<strong>Variantes Clínicas Clássicas:</strong>\n    <ul>\n      <li><em>Síndrome de Gardner:</em> Tríade composta por PAF + <strong>Osteomas benignos</strong> (mandíbula, crânio) + <strong>Tumores desmoides</strong> (fibromatose mesentérica/abdominal agressiva mutilante) + Dentes supranumerários inclusos e cistos epidermoides de pele;",
+            "<em>Síndrome de Turcot Tipo 2:</em> Associação de PAF com <strong>Meduloblastoma</strong> do sistema nervoso central (enquanto a Síndrome de Turcot Tipo 1 associa Glioblastoma Multiforme à Síndrome de Lynch);"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Rastreamento:</strong> Retossigmoidoscopia ou colonoscopia anual a partir dos <strong>10 a 12 anos de idade</strong>;</li>\n  <li><strong>Conduta Cirúrgica Curativa Profilática:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Proctocolectomia Total com Bolsa Ileal em J e Anastomose Íleo-Anal (IPAA):</strong> Procedimento de escolha padrão se houver envolvimento retal denso (&gt; 20-30 pólipos retais) ou displasia de alto grau no reto;",
+            "<strong>Colectomia Total com Anastomose Íleo-Retal (IRA):</strong> Opção para pacientes jovens com reto praticamente poupado (&lt; 10-20 pólipos facilmente removíveis por polipectomia endoscópica), exigindo retoscopia de vigilância do reto residual a cada 6 meses por toda a vida."
+          ]
+        ],
+        [
+          "3",
+          "2. Síndrome de Lynch (Câncer Colorretal Hereditário Não Polipose - HNPCC)"
+        ],
+        [
+          "p",
+          "A Síndrome de Lynch é a causa mais frequente de câncer colorretal hereditário (responsável por 3% a 5% de todos os CCRs), causada por mutação germinativa em um dos genes do sistema de reparo de DNA: <strong>MLH1, MSH2 (juntos responsáveis por &gt; 80%-90% dos casos), MSH6, PMS2 ou deleção no gene EPCAM</strong> (que silencia o promotor de MSH2 por hipermetilação epigenética):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Comportamento Oncológico:</strong> Caracteriza-se por <strong>CCR de início precoce (idade média de 40 a 45 anos)</strong>, com nítido <strong>predomínio no cólon direito / proximal (&gt; 70%)</strong>, pólipos raros ou isolados com rápida e acelerada progressão de adenoma para carcinoma (2 a 3 anos em vez dos 10 anos habituais), e alta taxa de <strong>tumores metacrônicos e sincrônicos</strong> (risco de 30% de novo CCR em 10 anos);",
+            "<strong>Tumores Extraintestinais do Espectro de Lynch:</strong> O tumor extraintestinal mais frequente na mulher com Lynch é o <strong>Câncer de Endométrio</strong> (risco cumulativo de 40% a 60%, superando o próprio risco de CCR em portadoras de mutação MSH6!), seguido de <strong>Câncer de Ovário</strong> (10%-12%), tumores do trato urinário urotelial (pelve renal e ureter), adenocarcinoma gástrico, intestino delgado (duodeno/jejuno), árvore biliar e glioblastoma multiforme;",
+            "<strong>Critérios Clínicos Consagrados de Triagem:</strong>\n    <ul>\n      <li><strong>Critérios de Amsterdam II (Regra do 3-2-1-0):</strong> Pelo menos <strong>3 familiares</strong> com câncer associado ao espectro de Lynch (um sendo parente de 1º grau dos outros dois); acometimento de pelo menos <strong>2 gerações sucessivas</strong>; pelo menos <strong>1 caso diagnosticado antes dos 50 anos</strong>; e <strong>0 casos de PAF</strong> excluídos;",
+            "<strong>Critérios de Bethesda Revisados:</strong> Selecionam tumores para teste de instabilidade de microssatélites (MSI) e imuno-histoquímica de MMR. Incluem qualquer indivíduo com CCR diagnosticado antes dos 50 anos, tumores sincrônicos/metacrônicos ou histologia típica com linfócitos intratumorais densos em &lt; 60 anos;"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Rastreamento e Cirurgia Oncológica:</strong> Colonoscopia a cada <strong>1 a 2 anos iniciando aos 20 a 25 anos</strong> (ou 2 a 5 anos antes do caso mais jovem na família). Diante de CCR diagnosticado, a cirurgia recomendada pelas diretrizes mundiais é a <strong>Colectomia Total com Anastomose Íleo-Retal</strong> (em vez de hemicolectomia segmentar) para prevenir o risco proibitivo de tumores metacrônicos subsequentes no cólon remanescente, mantendo vigilância anual do reto. Em mulheres que completaram prole (&gt; 40-45 anos), indica-se histerectomia com salpingo-ooforectomia profilática redutora de risco concomitante.</li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "polipose-hamartomatosa-peutz-jeghers-e-cowden",
+      0,
+      [
+        [
+          "2",
+          "4.1 Outras Síndromes de Polipose Hereditária: Síndrome de Peutz-Jeghers e Síndrome de Cowden"
+        ],
+        [
+          "p",
+          "Além das poliposes adenomatosas (PAF), as poliposes hamartomatosas hereditárias constituem síndromes raras de herança autossômica dominante caracterizadas pelo desenvolvimento de pólipos hamartomatosos (compostos por tecidos maduros nativos da parede intestinal com desorganização arquitetural arquitetural da lâmina própria e feixes de músculo liso):"
+        ],
+        [
+          "3",
+          "1. Síndrome de Peutz-Jeghers (SPJ)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Genética:</strong> Mutação germinativa no gene supressor de tumor <strong>STK11 / LKB1</strong> (cromossomo 19p13.3), que codifica uma serina/treonina quinase reguladora da via de sinalização energética celular AMPK/mTOR;",
+            "<strong>Características Fenotípicas Clássicas:</strong>\n    <ul>\n      <li><strong>Pólipos Hamartomatosos Gastrointestinais:</strong> Localizados preferencialmente no <strong>intestino delgado (jejuno e íleo)</strong>, estômago e cólon. A histologia revela a clássica arborização ramificada de feixes musculares lisos (árvore da vida / <em>tree-like branching</em>) que se estendem da muscular da mucosa para o estroma;",
+            "<strong>Hiperpigmentação Mucocutânea Característica:</strong> Máculas melânicas escuras (lentiginoses marrom-escuras ou pretas) de 1 a 5 mm localizadas nos lábios, mucosa jugal oral perioral, leito ungueal e dedos das mãos, presentes desde a infância;"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Complicações Agudas e Risco Oncológico:</strong> Pólipos volumosos do delgado frequentemente causam <strong>intussuscepção / invaginação intestinal aguda</strong> com necrose de alça e hemorragia digestiva crônica. Alto risco de neoplasias malignas gastrointestinais (cólon, estômago, pâncreas - risco de 30% a 40%) e extraintestinais (<strong>câncer de mama</strong> em até 50%, <strong>tumores dos cordões sexuais ovarianos com túbulos anulares - SCTAT</strong> e adenoma maligno do colo uterino);</li>\n  <li><strong>Vigilância:</strong> Enteroscopia por cápsula endoscópica a cada 2 a 3 anos a partir dos 8 a 10 anos de idade para remoção profilática de pólipos &gt; 1,5 a 2 cm para prevenir intussuscepção.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "2. Síndrome de Cowden (Síndrome dos Múltiplos Hamartomas)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Genética:</strong> Mutações germinativas inativadoras no gene supressor de tumor <strong>PTEN</strong> (cromossomo 10q23), que atua como fosfatase inibidora da via oncogênica PI3K/Akt/mTOR;",
+            "<strong>Manifestações Clínicas:</strong> Múltiplos <strong>tricolemomas faciais</strong>, papilomas orais verrucosos, ceratoses acrais palmoplantares, macrocefalia (&gt; percentil 97) e múltiplos pólipos hamartomatosos, adenomatosos e hiperplásicos em todo o trato digestivo;",
+            "<strong>Risco Oncológico Severo:</strong> Risco cumulativo de até 85% de <strong>Câncer de Mama</strong> na mulher, 35% de <strong>Câncer de Tireoide (carcinoma folicular não medular)</strong>, 30% de <strong>Câncer de Endométrio</strong> e cerca de 10% de câncer colorretal."
+          ]
+        ]
+      ]
+    ],
+    [
+      "quadro-clinico-direito-versus-esquerdo-e-estadiamento",
+      0,
+      [
+        [
+          "2",
+          "5. Quadro Clínico: Cólon Direito versus Cólon Esquerdo, Estadiamento e o Papel do CEA"
+        ],
+        [
+          "p",
+          "O quadro clínico do adenocarcinoma colorretal varia drasticamente em função da topografia anatômica da lesão primária, refletindo as diferenças no diâmetro do lúmen intestinal, consistência do bolo fecal e biologia tumoral."
+        ],
+        [
+          "3",
+          "Diferenças Clínicas: Cólon Direito versus Cólon Esquerdo e Reto"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro Semiológico",
+            "Cólon Direito (Ceco e Ascendente)",
+            "Cólon Esquerdo (Descendente e Sigmoide)",
+            "Reto (Médio e Inferior)"
+          ],
+          [
+            [
+              "<strong>Características Anatômicas Locais</strong>",
+              "Lúmen colônico amplo e complacente; conteúdo fecal <strong>líquido a semilíquido</strong>; tumores morfologicamente polipoides, vegetantes e ulcerados friáveis.",
+              "Lúmen estreito e inelástico; conteúdo fecal <strong>sólido e moldado</strong>; tumores morfologicamente <strong>estenosantes, anulares circunferenciais (\"em mordida de maçã\")</strong>.",
+              "Ampola retal expansível delimitada pelo assoalho pélvico e esfíncteres anais."
+            ],
+            [
+              "<strong>Sintoma Clínico Dominante</strong>",
+              "<strong>Sangramento Oculto Crônico e Anemia Ferropriva Inexplicável:</strong> Fadiga, astenia, palidez cutânea, perda de peso insidiosa e massa palpável indolor na fossa ilíaca direita. Raramente obstrui.",
+              "<strong>Alteração do Hábito Intestinal e Obstrução Mecânica:</strong> Constipação progressiva alternada com diarreia falsa de escape, dor abdominal em cólica, distensão gasosa e <strong>fezes em fita (fezes afiladas de pequeno calibre)</strong>. Principal causa de obstrução colônica aguda.",
+              "<strong>Síndrome Retal Típica:</strong> <strong>Hematoquezia / Retorragia</strong> (sangue vivo rutilante misturado ou recobrindo as fezes), <strong>Tenesmo retal</strong> contínuo, sensação de evacuação incompleta dolorosa e urgência evacuatória."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Regra de Ouro Semiológica para Concursos e Pronto-Socorro"
+        ],
+        [
+          "p",
+          "<strong>Todo paciente idoso (&gt; 50 anos) com ANEMIA FERROPRIVA DE INÍCIO RECENTE SEM CAUSA APARENTE tem CÂNCER DE CÓLON DIREITO até que se prove o contrário por colonoscopia completa!</strong> NUNCA atribuir sangramento digestivo baixo à doença hemorroidária em indivíduos &gt; 45-50 anos sem realizar colonoscopia prévia."
+        ],
+        [
+          "3",
+          "Estadiamento Locorregional e Sistêmico"
+        ],
+        [
+          "o",
+          [
+            "<strong>Colonoscopia Completa com Biópsia:</strong> Confirmação anatomopatológica e avaliação de tumores sincrônicos (presentes em 3% a 5% dos pacientes no momento do diagnóstico). Se houver tumor estenosante intransponível, a colonoscopia virtual por TC ou nova colonoscopia precoce pós-operatória é mandatória;",
+            "<strong>Tomografia Computadorizada de Tórax, Abdome e Pelve com Contraste:</strong> Estadiamento sistêmico obrigatório para pesquisa de metástases hepáticas viscerais (principal sítio hematogênico devido à drenagem portal mesentérica), metástases pulmonares e linfonodomegalias retroperitoneais;",
+            "<strong>Estadiamento Específico do Câncer de Reto:</strong> A TC é insuficiente para o reto. É <strong>MANDATÓRIO realizar Ressonância Magnética de Alta Resolução da Pelve (ou Ecoendoscopia Retal tridimensional)</strong> para avaliar três parâmetros anatômicos cruciais:\n    <ul>\n      <li>Profundidade da invasão na gordura mesorretal (estádio T);",
+            "Comprometimento dos linfonodos mesorretais (estádio N);",
+            "Relação milimétrica do tumor com a <strong>Fáscia Mesorretal / Margem de Ressecção Circunferencial (CRM)</strong> e invasão venosa extramural (EMVI)."
+          ]
+        ],
+        [
+          "3",
+          "O Papel do Antígeno Carcinoembrionário (CEA)"
+        ],
+        [
+          "p",
+          "O CEA é uma glicoproteína oncofetal amplamente utilizada na prática clínica:"
+        ],
+        [
+          "u",
+          [
+            "<strong>O CEA NÃO SERVE PARA DIAGNÓSTICO NEM PARA RASTREAMENTO POPULACIONAL</strong>, devido à baixa sensibilidade em lesões iniciais e falsos-positivos frequentes em tabagistas, hepatopatas, cirróticos e pacientes com doença inflamatória intestinal ativa;",
+            "<strong>Utilidade Clínica Formal:</strong>\n    <ul>\n      <li><strong>Dosagem Pré-Operatória Basal:</strong> Estabelece um valor de referência prognóstico e auxilia na detecção de doença metastática oculta inicial (níveis pré-operatórios &gt; 5-10 ng/mL associam-se a pior prognóstico);",
+            "<strong>Monitorização de Recidiva no Seguimento Pós-Operatório:</strong> É o método mais sensível para detectar recidiva precoce. Dosado a cada 3 a 6 meses nos primeiros 3 a 5 anos pós-ressecção. Uma ascensão progressiva e confirmada do CEA antecede a documentação radiológica da metástase em vários meses, deflagrando investigação por TC multidetectores ou PET/CT para resgate cirúrgico curativo de metástases hepáticas ou pulmonares isoladas."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tratamento-cirurgico-do-colon-resseccao-oncologica",
+      0,
+      [
+        [
+          "2",
+          "6. Tratamento Cirúrgico do Câncer de Cólon: Princípios Oncológicos, Margens e Linfadenectomia"
+        ],
+        [
+          "p",
+          "A cirurgia curativa do adenocarcinoma colônico exige a aplicação rigorosa de três princípios oncológicos universais:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Margens Cirúrgicas Longitudinais Adequadas:</strong> Ressecção de no mínimo <strong>5 cm de margem longitudinal proximal e distal</strong> da parede colônica sadia a partir da borda macroscópica do tumor;",
+            "<strong>Ligadura Vascular Alta na Origem dos Troncos Mesentéricos:</strong> A dissecção e ligadura dos pedículos vasculares arteriais e venosos primários deve ser realizada na sua emergência anatômica junto à aorta ou veia mesentérica superior (ligadura alta central), garantindo a remoção em monobloco dos linfonodos apicais e intermediários;",
+            "<strong>Excisão Completa do Mesocólon (CME - <em>Complete Mesocolic Excision</em>):</strong> Dissecar a fáscia de Toldt intacta com a fáscia mesocólica íntegra, removendo o mesocólon revestido por seu invólucro peritoneal intacto sem rupturas da lâmina adiposa contendo os vasos linfáticos e linfonodos regionais;",
+            "<strong>Contagem Linfonodal Mínima Obrigatória:</strong> A AJCC, CAP e NCCN determinam que <strong>pelo menos 12 LINFONODOS REGIONAIS devem ser isolados e histologicamente analisados</strong> na peça cirúrgica para que o estadiamento seja considerado oncológica e patologicamente adequado. Amostragens com menos de 12 linfonodos configuram fator de alto risco para subestadiamento, indicando quimioterapia adjuvante mesmo em tumores classificados preliminarmente como estádio II."
+          ]
+        ],
+        [
+          "3",
+          "Táticas Cirúrgicas Padronizadas Conforme a Topografia Tumoral"
+        ],
+        [
+          "t",
+          [
+            "Topografia do Tumor Primário",
+            "Procedimento Cirúrgico Oncológico Padrão",
+            "Vasos Ligados na Raiz e Extensão da Ressecção"
+          ],
+          [
+            [
+              "<strong>Ceco e Cólon Ascendente</strong>",
+              "<strong>Hemicolectomia Direita Oncológica</strong> com anastomose íleo-transversa (terminoterminal ou látero-lateral).",
+              "Ligadura alta da <strong>artéria ileocólica</strong>, <strong>artéria cólica direita</strong> e ramo direito da <strong>artéria cólica média</strong>. Ressecção dos últimos 10 a 15 cm de íleo terminal, ceco, ascendente, ângulo hepático e terço proximal do cólon transverso."
+            ],
+            [
+              "<strong>Flexura Hepática e Cólon Transverso Proximal/Médio</strong>",
+              "<strong>Hemicolectomia Direita Ampliada (ou Colectomia Transversa)</strong>.",
+              "Ligadura da artéria ileocólica, cólica direita e <strong>ligadura no tronco da artéria cólica média na borda inferior do pâncreas</strong>, ressecando desde o íleo terminal até a flexura esplênica."
+            ],
+            [
+              "<strong>Flexura Esplênica e Cólon Descendente</strong>",
+              "<strong>Hemicolectomia Esquerda Oncológica</strong> com anastomose colo-retal ou colo-sigmoide.",
+              "Ligadura da <strong>artéria cólica esquerda</strong> na sua origem da artéria mesentérica inferior (AMI) e ramos esquerdos da cólica média, com mobilização completa do ângulo esplênico."
+            ],
+            [
+              "<strong>Cólon Sigmoide</strong>",
+              "<strong>Sigmoidectomia Oncológica / Colectomia Esquerda Baixa</strong>.",
+              "Ligadura alta da <strong>artéria mesentérica inferior (AMI)</strong> na emergência aórtica (ou preservando a artéria cólica esquerda com ligadura das artérias sigmoideas) associada à ligadura da <strong>veia mesentérica inferior (VMI)</strong> na borda inferior do pâncreas. Margem distal no reto superior (abaixo da junção retossigmoide) para garantir segurança oncológica."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "quimioterapia-adjuvante-estadios-ii-e-iii",
+      0,
+      [
+        [
+          "2",
+          "6.1 Terapia Sistêmica Adjuvante no Câncer de Cólon: Decisões no Estádio II de Alto Risco e Estádio III"
+        ],
+        [
+          "p",
+          "O benefício oncológico da quimioterapia adjuvante baseia-se na eliminação de micrometástases circulantes ocultas, diminuindo drasticamente as taxas de recidiva à distância após a ressecção cirúrgica curativa (R0):"
+        ],
+        [
+          "3",
+          "1. Estádio I (T1-T2 N0 M0) e Estádio II Habitual"
+        ],
+        [
+          "u",
+          [
+            "<strong>Estádio I:</strong> Taxa de cura cirúrgica superior a 95%. <strong>A quimioterapia adjuvante é FORMALMENTE CONTRAINDICADA</strong> por não trazer nenhum benefício e expor o paciente a toxicidades desnecessárias;",
+            "<strong>Estádio II (T3-T4 N0 M0):</strong> A quimioterapia adjuvante de rotina não é recomendada universalmente. Ela é reservada estritamente para o subgrupo classificado como <strong>Estádio II de Alto Risco de Recidiva</strong>."
+          ]
+        ],
+        [
+          "4",
+          "Critérios Patológicos de Alto Risco no Estádio II de Cólon (NCCN / ESMO)"
+        ],
+        [
+          "p",
+          "A presença de <strong>pelo menos UM</strong> dos seguintes fatores indica quimioterapia adjuvante com fluoropirimidinas (Capecitabina oral ou 5-FU/LV), com ou sem oxaliplatina:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Amostragem Linfonodal Inadequada:</strong> Ressecção e exame de <strong>menos de 12 linfonodos regionais</strong> na peça cirúrgica (subestadiamento potencial);",
+            "<strong>Tumor T4 (T4a ou T4b):</strong> Perfuração da serosa visceral ou invasão de órgãos adjacentes;",
+            "<strong>Apresentação Clínica Inicial de Emergência:</strong> Obstrução intestinal mecânica aguda ou perfuração tumoral livre com peritonite;",
+            "<strong>Invasão Linfovascular ou Invasão Venosa Extramural (EMVI);</strong>",
+            "<strong>Invasão Perineural (PNI);</strong>",
+            "<strong>Histologia Indiferenciada / Alto Grau (Grau 3 ou 4 / células em anel de sinete);</strong>",
+            "<strong>Margens Cirúrgicas Comprometidas ou Próximas (R1 / margem &lt; 1 mm).</strong>"
+          ]
+        ],
+        [
+          "p",
+          "<em>Papel Fundamental do Teste de MMR/MSI no Estádio II:</em> Tumores Estádio II portadores de <strong>Instabilidade de Microssatélites (MSI-H / dMMR)</strong> possuem excelente prognóstico espontâneo e <strong>NÃO SE BENEFICIAM DE MONOTERAPIA COM 5-FU/CAPECITABINA</strong> (o 5-FU isolado pode inclusive piorar os desfechos). Se não houver fatores de altíssimo risco (como T4b), esses pacientes são manejados exclusivamente com observação clínica!"
+        ],
+        [
+          "3",
+          "2. Estádio III (Qualquer T, N1-N2 M0 - Linfonodos Positivos)"
+        ],
+        [
+          "p",
+          "Todos os pacientes com linfonodos metastáticos comprometidos no exame anatomopatológico (Estádio III) possuem indicação formal de <strong>Quimioterapia Adjuvante Dupla com Fluoropirimidina + Oxaliplatina</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Regimes Consagrados:</strong> <strong>FOLFOX</strong> (5-FU em infusão contínua + Leucovorina + Oxaliplatina) OU <strong>CAPOX / XELOX</strong> (Capecitabina oral 1.000 mg/m² 12/12h por 14 dias + Oxaliplatina 130 mg/m² D1 a cada 3 semanas);",
+            "<strong>Duração do Tratamento Adjuvante (O Estudo Histórico IDEA Collaboration):</strong> Avaliou mais de 12.000 pacientes para comparar 3 meses versus 6 meses de quimioterapia adjuvante:\n    <ul>\n      <li><em>Grupo de Baixo Risco (T1-T3 e N1 - até 3 linfonodos acometidos):</em> <strong>O tratamento com CAPOX por apenas 3 MESES é equivalente e não inferior a 6 meses</strong>, com a imensa vantagem de reduzir em mais de 70% a temida <strong>neuropatia periférica sensitiva cumulativa e irreversível induzida pela oxaliplatina</strong>;",
+            "<em>Grupo de Alto Risco (T4 e/ou N2 - 4 ou mais linfonodos acometidos):</em> Recomenda-se manter o tratamento pleno por <strong>6 meses com FOLFOX ou 3 a 6 meses com CAPOX</strong>."
+          ]
+        ]
+      ]
+    ],
+    [
+      "urgencias-obstrucao-perfuracao-stents-hartmann",
+      0,
+      [
+        [
+          "2",
+          "6.2 Condutas de Urgência no Câncer Colorretal Complicado: Hartmann versus Ressecção com Anastomose e Stents Metálicos Autoexpansíveis (SEMS)"
+        ],
+        [
+          "p",
+          "Cerca de 15% a 20% dos pacientes com câncer colorretal têm sua primeira manifestação clínica no pronto-socorro como uma catástrofe de abdome agudo, predominantemente por <strong>obstrução intestinal mecânica aguda</strong> ou <strong>perfuração tumoral livre com peritonite fecal</strong>."
+        ],
+        [
+          "3",
+          "Fisiopatologia da Obstrução em Alça Fechada e Lei de Laplace"
+        ],
+        [
+          "p",
+          "No câncer obstrutivo de cólon esquerdo (ângulo esplênico, descendente e sigmoide), a válvula ileocecal determina o padrão fisiopatológico:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Válvula Ileocecal Competente (em ~75% dos indivíduos):</strong> O tumor obstrui distalmente e a válvula impede o refluxo retrógrado do conteúdo para o íleo, transformando todo o cólon em uma <strong>alça fechada</strong>. O gás bacteriano e as fezes líquidas acumulam-se continuamente sob alta pressão;",
+            "<strong>A Lei de Laplace (( T = P \times r )):</strong> A tensão na parede intestinal ((T)) é diretamente proporcional à pressão intraluminal ((P)) multiplicada pelo raio do órgão ((r)). Como o <strong>ceco possui o maior diâmetro / raio de todo o trato gastrointestinal (fisiologicamente 7 a 8 cm)</strong>, a tensão exercida sobre sua parede é a maior de todo o cólon. Quando o diâmetro cecal atinge <strong>9 a 10 cm</strong>, ocorre isquemia microvascular transmural (isquemia de distensão) com gangrena e <strong>perfuração diastática do ceco</strong> (perfuração à distância em tecido cecal não neoplásico sadio), deflagrando peritonite fecal generalizada hiperaguda com choque séptico;",
+            "<strong>Válvula Ileocecal Incompetente (em ~25% dos indivíduos):</strong> A pressão descomprime-se retrogradamente para o intestino delgado, cursando com vômitos fecaloideos precoces e distensão difusa de alças delgadas, com menor risco de ruptura diastática imediata do ceco."
+          ]
+        ],
+        [
+          "3",
+          "Estratégias Cirúrgicas e Intervencionistas na Obstrução Neoplásica"
+        ],
+        [
+          "t",
+          [
+            "Abordagem Terapêutica",
+            "Indicações Clínicas e Critérios",
+            "Vantagens e Desvantagens Técnicas"
+          ],
+          [
+            [
+              "<strong>Cirurgia de Hartmann (Ressecção Oncológica com Colostomia Terminal)</strong>",
+              "<strong>Procedimento padrão clássico de escolha no paciente grave</strong>: instabilidade hemodinâmica, choque séptico, peritonite purulenta/fecal difusa, desnutrição severa, acidose e hipotermia (\"tríade da morte\") ou cirurgião não especialista em plantão noturno.",
+              "<em>Vantagens:</em> Rápida, segura, remove a lesão neoplásica imediatamente e elimina completamente o risco de deiscência anastomótica pélvica fatal.<br><em>Desvantagens:</em> Necessidade de bolsa de colostomia; cerca de 40% a 50% dos pacientes nunca revertem a colostomia devido à idade avançada ou fibrose pélvica densa."
+            ],
+            [
+              "<strong>Ressecção com Anastomose Primária com ou sem Ileostomia de Proteção</strong>",
+              "Paciente hemodinamicamente estável, sem choque, sem peritonite difusa, cólon sadio sem isquemia transmural grave, conduzido por equipe cirúrgica coloproctológica experiente.",
+              "Requer lavagem colônica intraoperatória anterógrada (<em>on-table colonic irrigation</em>) ou uso de colectomia subtotal/total com anastomose íleo-retal se houver sofrimento isquêmico do ceco a montante. Evita estoma definitivo em longo prazo."
+            ],
+            [
+              "<strong>Prótese Metálica Autoexpansível Colônica (SEMS - Stent Endoscópico)</strong>",
+              "• <strong>Como Ponte para a Cirurgia Eletiva (<em>Bridge-to-Surgery</em>):</strong> Desobstrução mecânica imediata sem cirurgia de urgência em centros terciários com endoscopia avançada.<br>• <strong>Paliativa Definitiva:</strong> Pacientes com metástases disseminadas irressecáveis ou contraindicação clínica formal para anestesia geral.",
+              "<em>Vantagens:</em> Transforma uma cirurgia de urgência de alta morbidade em uma <strong>cirurgia eletiva estagiada por videolaparoscopia com preparo de cólon e anastomose primária</strong> após 2 a 3 semanas de estabilização nutricional e clínica do paciente.<br><em>Risco:</em> Perfuração tumoral durante a colocação do stent (~5%), que dissemina células tumorais no peritônio."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "manejo-do-cancer-de-reto-tme-e-tnt",
+      0,
+      [
+        [
+          "2",
+          "7. Manejo Moderno do Câncer de Reto: Excisão Total do Mesorreto (TME), Quimiorradioterapia e TNT"
+        ],
+        [
+          "p",
+          "O câncer de reto (definido anatomicamente como a neoplasia cujo bordo inferior localiza-se <strong>a até 15 cm da margem anal</strong> pela retossigmoidoscopia rígida) diverge fundamentalmente do câncer de cólon devido ao confinamento anatômico no estreito espaço ósseo da pelve verdadeira, adjacência com estruturas vitais (nervos autonômicos da ereção e continência urinária, vasos ilíacos, vagina e próstata) e ausência de revestimento peritoneal na porção subperitoneal (reto médio e inferior), o que predispõe a altas taxas de recidiva locorregional se os princípios cirúrgicos e neoadjuvantes modernos não forem seguidos."
+        ],
+        [
+          "3",
+          "1. O Padrão-Ouro Cirúrgico: Excisão Total do Mesorreto (TME - Heald, 1982)"
+        ],
+        [
+          "p",
+          "O mesorreto é o coxim adiposo circunferencial que envolve a parede retal, contido pela fáscia própria do reto (fáscia mesorretal). Ele contém a totalidade da drenagem vascular e linfonodal regional do reto:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A Técnica do Plano Sagrado:</strong> A cirurgia da TME consiste na dissecção anatômica minuciosa, afiada e precisa no <strong>\"plano sagrado\" avascular</strong> situado entre a fáscia própria do reto e a fáscia pré-sacral parietal anterior à concavidade sacral;",
+            "<strong>Integridade do Espécime:</strong> O mesorreto deve ser removido com sua cápsula fascial perfeitamente lisa, cilíndrica e intacta (\"como um charuto embrulhado\"), sem desgarros ou conificações que exponham o tecido tumoral;",
+            "<strong>Preservação dos Nervos Autonômicos Pélvicos:</strong> A dissecção cuidadosa no plano da TME identifica e preserva os <strong>nervos hipogástricos simpáticos</strong> (responsáveis pela ejaculação no homem e continência fecal voluntária) e os <strong>nervos esplâncnicos pélvicos parassimpáticos / plexo pélvico (nervi erigentes)</strong> (responsáveis pela ereção peniana, lubrificação vaginal e contração detrusora vesical), prevenindo disfunções urinárias e sexuais graves;",
+            "<strong>Margens Cirúrgicas Críticas:</strong>\n    <ul>\n      <li><strong>Margem de Ressecção Circunferencial (CRM):</strong> É a distância entre a célula tumoral mais profunda (ou linfonodo acometido) e a fáscia mesorretal dissecada. A presença de <strong>CRM &lt;= 1 mm é considerada MARGEM POSITIVA</strong>, elevando em quatro vezes o risco de recidiva pélvica fatal;",
+            "<strong>Margem Longitudinal Distal:</strong> No reto, uma margem distal intramural de <strong>no mínimo 1 a 2 cm</strong> de parede retal livre abaixo do polo inferior do tumor é oncologicamente segura (em tumores ultra-baixos do reto inferior, tolera-se margem distal de 1 cm ou até 0,5 cm se houver congelação intraoperatória negativa)."
+          ]
+        ],
+        [
+          "3",
+          "2. Escolha entre Preservação Esfincteriana e Amputação Abdominoperineal"
+        ],
+        [
+          "t",
+          [
+            "Procedimento Cirúrgico",
+            "Indicações Anatômicas Precisas",
+            "Aspectos Técnicos e Consequências Funcionais"
+          ],
+          [
+            [
+              "<strong>Ressecção Anterior Baixa do Reto (LAR / RAR) com TME</strong>",
+              "Tumores do <strong>terço superior (&gt; 10 a 15 cm da margem anal)</strong> e <strong>terço médio (5 a 10 cm da margem anal)</strong>, ou reto inferior onde seja possível obter margem distal &gt;= 1 cm livre do anel anorretal e complexo esfincteriano.",
+              "<strong>Preservação esfincteriana com anastomose coloanal ou colorretal mecânica ultrabaixa</strong> com grampeador duplo (técnica de duplo grampeamento). Obrigatoriamente acompanhada de <strong>ileostomia de proteção em alça temporária</strong> (fechada após 8 a 12 semanas) para mitigar as consequências catastróficas de deiscência da anastomose ultrabaixa na pelve."
+            ],
+            [
+              "<strong>Amputação Abdominoperineal do Reto (Cirurgia de Miles) com TME Cilíndrica Extranevadora</strong>",
+              "Tumores do <strong>terço inferior do reto (&lt; 5 cm da margem anal)</strong> que <strong>invadem diretamente o complexo esfincteriano anal (esfíncter interno e externo) ou músculo elevador do ânus</strong>, ou na impossibilidade anatômica de obter margem distal livre mantendo continência fecal.",
+              "Ressecção em monobloco por via combinada abdominal e perineal de todo o reto, aparelho esfincteriano anal e pele perianal, associada a <strong>COLOSTOMIA TERMINAL DEFINITIVA E VITALÍCIA na fossa ilíaca esquerda</strong>."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "3. A Revolução do Tratamento Neoadjuvante: Terapia Neoadjuvante Total (TNT) e Watch-and-Wait"
+        ],
+        [
+          "p",
+          "Tradicionalmente, pacientes com câncer de reto localmente avançado (cT3-T4 ou cN+) recebiam Quimiorradioterapia Neoadjuvante Longa convencional (50,4 Gy em 28 frações com 5-FU ou Capecitabina), seguida de cirurgia após 8 semanas e quimioterapia adjuvante. Entretanto, a aderência à quimioterapia adjuvante pós-operatória era inferior a 50% devido às complicações e estomas."
+        ],
+        [
+          "4",
+          "A Estratégia Contemporânea de TNT (Total Neoadjuvant Therapy)"
+        ],
+        [
+          "p",
+          "Consolidada pelos grandes ensaios clínicos multicêntricos <strong>RAPIDO</strong> (Lancet Oncol 2021) e <strong>PRODIGE 23</strong> (Lancet Oncol 2021), a TNT tornou-se o novo padrão-ouro internacional:"
+        ],
+        [
+          "u",
+          [
+            "Consiste na <strong>administração de TODA a terapia sistêmica (quimioterapia em dose plena com regimes como FOLFIRINOX ou FOLFOX/CAPOX) associada à radioterapia (longa ou de curso curto 5x5 Gy) ANTES da intervenção cirúrgica</strong>;",
+            "<em>Resultados Extraordinários:</em> Dobra as taxas de <strong>Resposta Patológica Completa (pCR de até 28% a 30%)</strong>, reduz drasticamente a taxa de metástases sistêmicas à distância e melhora a sobrevida livre de doença."
+          ]
+        ],
+        [
+          "4",
+          "A Abordagem \"Watch-and-Wait\" (Protocolo de Angelita Habr-Gama)"
+        ],
+        [
+          "p",
+          "Pioneirizada no Brasil pela Profa. Dra. Angelita Habr-Gama no Hospital das Clínicas da USP e consagrada mundialmente, a estratégia <strong>Watch-and-Wait (Observar e Esperar)</strong> revolucionou o manejo do câncer de reto:"
+        ],
+        [
+          "u",
+          [
+            "Se após o término da quimiorradioterapia/TNT o paciente apresentar <strong>Resposta Clínica Completa (cCR)</strong> — definida por ausência total de tumor palpável ao toque retal digital minucioso, apenas cicatriz esbranquiçada plana sem ulceração à retossigmoidoscopia de alta definição e ausência de lesão tumoral ou linfonodal suspeita na RM de pelve de alta resolução;",
+            "O paciente pode ser <strong>poupado da ressecção cirúrgica mutilante (inclusive evitando a amputação de Miles e o colostoma permanente)</strong>, sendo incluído em um programa rigoroso de acompanhamento estrito mensal/trimestral nos primeiros 2 anos;",
+            "Cerca de 70% a 75% dos pacientes com cCR sustentam a resposta livre de tumor por toda a vida; os 25% restantes que apresentam recidiva local luminal precoce (<em>regrowth</em>) podem ser resgatados com cirurgia oncológica preservando as taxas de sobrevida global."
+          ]
+        ]
+      ]
+    ],
+    [
+      "manejo-de-metastases-hepaticas-colorretais",
+      0,
+      [
+        [
+          "2",
+          "7.1 Manejo Multidisciplinar das Metástases Hepáticas Colorretais: Ressecabilidade, Quimioterapia de Conversão e Two-Stage Hepatectomy"
+        ],
+        [
+          "p",
+          "O fígado representa o sítio anatômico primário e dominante de metástases hematogênicas no câncer colorretal, decorrente da drenagem venosa de todo o cólon e reto superior diretamente para a veia porta. Cerca de 20% a 25% dos pacientes apresentam metástases hepáticas sincrônicas no momento do diagnóstico inicial, e outros 20% a 25% desenvolverão metástases metacrônicas ao longo do seguimento."
+        ],
+        [
+          "p",
+          "Ao contrário da quase totalidade dos outros tumores epiteliais viscerais, <strong>no câncer colorretal a presença de metástases hepáticas NÃO significa doença incurável!</strong> A abordagem cirúrgica agressiva e integrada proporciona taxas de sobrevida global em 5 anos de 40% a 55% e cura definitiva em cerca de 20% a 25% dos pacientes ressecados."
+        ],
+        [
+          "3",
+          "Critérios Modernos de Ressecabilidade Hepática"
+        ],
+        [
+          "p",
+          "Historicamente, critérios rígidos contraindicavam a cirurgia (como número &gt; 3 a 4 lesões, acometimento bilobar ou margem &lt; 1 cm). Na oncologia cirúrgica contemporânea, <strong>os critérios de ressecabilidade baseiam-se naquilo que permanece saudável no fígado (o Remanescente Hepático Futuro - FHL)</strong>, e não no que é removido:"
+        ],
+        [
+          "o",
+          [
+            "Possibilidade técnica de ressecção completa de todas as lesões tumorais com <strong>margens cirúrgicas microscópicas negativas (R0)</strong>, mesmo que a margem seja submilimétrica (&gt; 0 mm);",
+            "Preservação de pelo menos <strong>dois segmentos hepáticos contíguos vascularizados</strong> com influxo arterial e portal e drenagem venosa e biliar preservados;",
+            "Preservação de um <strong>Volume do Remanescente Hepático Futuro (FLR)</strong> adequado para evitar insuficiência hepática pós-hepatectomia fatal:\n    <ul>\n      <li>Pelo menos <strong>20% a 25% do volume hepático total</strong> em fígados previamente sadios;",
+            "Pelo menos <strong>30% a 40% do volume hepático total</strong> em pacientes submetidos à quimioterapia prolongada prévia (esteato-hepatite associada à quimioterapia por oxaliplatina/irinotecano - síndrome sinusoidal / <em>blue liver</em>) ou esteatose hepática;",
+            "Controle da doença extra-hepática (ausência de carcinomatose peritoneal difusa incontrolável)."
+          ]
+        ],
+        [
+          "3",
+          "Estratégias de Ressecção em Dois Tempos (Two-Stage Hepatectomy) e ALPPS"
+        ],
+        [
+          "t",
+          [
+            "Estratégia Cirúrgica Avançada",
+            "Indicação Específica",
+            "Mecanismo Técnico e Sequência Operatória"
+          ],
+          [
+            [
+              "<strong>Embolização Portal / Ligadura Portal Associada à Hepatectomia em Dois Tempos</strong>",
+              "Metástases hepáticas bilobares extensas com volume do remanescente hepático futuro insuficiente (&lt; 20%-30%).",
+              "<strong>1º Tempo:</strong> Ressecção de todas as metástases do lobo hepático esquerdo (remanescente futuro) associada à <strong>Embolização da Veia Porta Direita</strong> por radiologia intervencionista. Isso desvia todo o fluxo portal para o lobo esquerdo, induzindo hipertrofia compensatória rápida (aumento de 40% a 60% do volume em 4 a 6 semanas).<br><strong>2º Tempo:</strong> Hepatectomia direita alargada curativa com o lobo esquerdo hipertrofiado e sadio."
+            ],
+            [
+              "<strong>ALPPS (Associating Liver Partition and Portal Vein Ligation for Staged Hepatectomy)</strong>",
+              "Pacientes com metástases volumosas que demandam hipertrofia ultrarrápida do remanescente.",
+              "Ligadura portal associada à <strong>transecção cirúrgica completa do parênquima hepático</strong> no primeiro tempo cirúrgico. Induz hipertrofia massiva do remanescente hepático em apenas 7 a 14 dias, permitindo a hepatectomia de resgate no segundo tempo em intervalo curtíssimo."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "biomarcadores-avancados-metastatico-kras-nras-braf-msi",
+      0,
+      [
+        [
+          "2",
+          "7.2 Biomarcadores Moleculares no Câncer Colorretal Metastático: Painel RAS (KRAS/NRAS), BRAF, HER2 e Imunoterapia"
+        ],
+        [
+          "p",
+          "Na doença metastática (Estádio IV), a conduta oncológica é guiada obrigatoriamente pela determinação do perfil mutacional somático no tecido tumoral para seleção das terapias biológicas direcionadas:"
+        ],
+        [
+          "t",
+          [
+            "Biomarcador Molecular",
+            "Incidência no CCR",
+            "Significado Biológico e Preditivo",
+            "Conduta Farmacológica Específica"
+          ],
+          [
+            [
+              "<strong>Família RAS (KRAS e NRAS nos éxons 2, 3 e 4)</strong>",
+              "~50% dos tumores apresentam mutação",
+              "Mutações ativadoras constitutivas em KRAS/NRAS ativam a cascata intracelular downstream MAPK independentemente do receptor de membrana EGFR.",
+              "• Se <strong>RAS Selvagem (Wild-Type):</strong> Elegível para uso de <strong>Anticorpos Monoclonais Anti-EGFR (Cetuximabe ou Panitumumabe)</strong> associados à quimioterapia (FOLFOX/FOLFIRI), propiciando excelente resposta, <strong>particularmente em tumores originados no CÓLON ESQUERDO</strong>.<br>• Se <strong>RAS Mutado:</strong> <strong>Os anti-EGFR são FORMALMENTE CONTRAINDICADOS</strong> (não trazem benefício e aceleram a progressão tumoral). A terapia biológica de escolha é o <strong>Bevacizumabe (anti-VEGF)</strong>."
+            ],
+            [
+              "<strong>Mutação BRAF (V600E)</strong>",
+              "~8% a 10% dos tumores",
+              "Ativação constitutiva da quinase BRAF; correlaciona-se com fenótipo CIMP, pólipos serrilhados, localização no cólon direito, disseminação peritoneal agressiva e <strong>prognóstico sombrio</strong>.",
+              "Resistência aos anti-EGFR convencionais em monoterapia. O tratamento de segunda linha aprovado mundialmente (estudo <strong>BEACON CRC</strong>) é a combinação de <strong>Encorafenibe (inibidor de BRAF) + Cetuximabe (anti-EGFR)</strong>."
+            ],
+            [
+              "<strong>Instabilidade de Microssatélites (MSI-H / dMMR)</strong>",
+              "~5% no estádio IV",
+              "Alta carga mutacional tumoral com neoantígenos imunogênicos abundantes e infiltração de linfócitos T citotóxicos.",
+              "<strong>Imunoterapia de Primeira Linha com Pembrolizumabe ou Nivolumabe + Ipilimumabe (estudo KEYNOTE-177 e CheckMate-8HW)</strong>: superou categoricamente a quimioterapia padrão, tornando-se o tratamento preferencial com sobrevida livre de progressão prolongada e respostas duradouras."
+            ],
+            [
+              "<strong>Lateralidade Tumoral (Cólon Direito vs Esquerdo)</strong>",
+              "—",
+              "• <em>Cólon Esquerdo (Origem no intestino embrionário posterior):</em> Maior prevalência de RAS wild-type, instabilidade cromossômica (CIN), <strong>excelente resposta ao Cetuximabe/Panitumumabe</strong>.<br>• <em>Cólon Direito (Intestino embrionário médio):</em> Maior taxa de mutação BRAF, MSI-H e resistência intrínseca aos anti-EGFR.",
+              "Em pacientes RAS wild-type: <strong>Anti-EGFR é preferido no cólon esquerdo; Anti-VEGF (Bevacizumabe) é preferido no cólon direito</strong> como primeira linha associado à quimioterapia."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-e-questoes-comentadas",
+      0,
+      [
+        [
+          "2",
+          "8. Casos Clínicos Desafiadores e Questões Comentadas de Alto Rendimento"
+        ],
+        [
+          "4",
+          "Caso Clínico 1: Câncer de Cólon Obstrutivo e Conduta de Emergência"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> Homem de 62 anos dá entrada no pronto-socorro com parada de eliminação de gases e fezes há 4 dias, distensão abdominal progressiva acentuada, vômitos biliosos e dor em cólica difusa. Relata que nos últimos 3 meses vinha apresentando afilamento das fezes (\"fezes em fita\") e episódios de sangramento escuro intermitente nas fezes."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> REG, desidratado ++/4+, taquicárdico (FC: 104 bpm), afebril, PA: 130x85 mmHg. Abdome francamente distendido, hipertimpânico difusamente, doloroso sem descompressão dolorosa positiva. Toque retal com ampola vazia, sem massas palpáveis a até 8 cm da margem anal."
+        ],
+        [
+          "p",
+          "<strong>Propedêutica de Imagem:</strong> Tomografia de abdome e pelve com contraste evidenciando lesão estenosante anular circunferencial obstrutiva no cólon sigmoide médio, com dilatação marcante de todo o cólon a montante (diâmetro cecal medindo 8,5 cm com paredes finas, sem pneumoperitônio). Ausência de metástases hepáticas grosseiras à TC."
+        ],
+        [
+          "p",
+          "<strong>Discussão e Conduta Cirúrgica de Emergência:</strong>\n  1. Trata-se de abdome agudo obstrutivo mecânico baixo por adenocarcinoma estenosante de cólon sigmoide, com dilatação cecal iminente de rotura (&gt; 8-9 cm - Lei de Laplace).<br>\n  2. Conduta pré-operatória: ressuscitação com Ringer Lactato, passagem de sonda nasogástrica descompressiva e antibioticoterapia de amplo espectro.<br>\n  3. <strong>Opção Cirúrgica Padrão na Urgência:</strong> <strong>Cirurgia de Hartmann (Sigmoidectomia oncológica com ligadura alta da artéria mesentérica inferior e ressecção em monobloco do mesocólon com &gt; 12 linfonodos, sepultamento do coto retal e colostomia terminal na fossa ilíaca esquerda)</strong>. A confecção de anastomose primária imediata com preparo de cólon intraoperatório pode ser considerada apenas por cirurgiões experientes em pacientes perfeitamente estáveis sem peritonite; caso contrário, o procedimento de Hartmann é a conduta mais segura para salvar a vida do paciente, com reconstrução eletiva do trânsito após 3 a 6 meses."
+        ],
+        [
+          "4",
+          "Questão de Concurso 1 (USP / Cirurgia Geral)"
+        ],
+        [
+          "p",
+          "Mulher de 56 anos realiza colonoscopia após teste de sangue oculto nas fezes positivo (FIT+). O exame revelou lesão ulcerada e vegetante de 4 cm localizada no ceco, a 3 cm da válvula ileocecal. A biópsia confirmou adenocarcinoma moderadamente diferenciado invasor. A tomografia computadorizada de tórax, abdome e pelve com contraste não demonstrou metástases à distância (cT3 cN0 cM0). Assinale a alternativa que descreve a conduta cirúrgica oncológica padrão para esta paciente:"
+        ],
+        [
+          "p",
+          "A) Colectomia segmentar restrita ao ceco com margem de 2 cm e dissecção exclusiva dos linfonodos contíguos da parede cecal.<br>\n  B) Hemicolectomia direita oncológica com ligadura na raiz dos vasos ileocólicos, cólicos direitos e ramo direito dos cólicos médios, remoção de no mínimo 12 linfonodos e anastomose íleo-transversa.<br>\n  C) Proctocolectomia total com anastomose íleo-anal e confecção de bolsa ileal em J devido ao risco de pólipos sincrônicos no cólon esquerdo.<br>\n  D) Ressecção endoscópica por dissecção da submucosa (ESD) seguida de radioterapia conformacional pélvica complementar.<br>\n  E) Hemicolectomia esquerda com ligadura alta da artéria mesentérica inferior e colostomia terminal protetora."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong> <strong>Alternativa B</strong>. Para adenocarcinoma localizado no ceco, a cirurgia padrão-ouro é a <strong>hemicolectomia direita com linfadenectomia oncológica central</strong> (ligadura na raiz dos vasos tributários) e análise de pelo menos 12 linfonodos regionais (elimina A). Proctocolectomia total é restrita a síndromes hereditárias como PAF ou Lynch (elimina C). Lesão T3 invasora não é passível de ESD e radioterapia não tem indicação primária em câncer de cólon intraperitoneal (elimina D). A lesão é no cólon direito, tornando hemicolectomia esquerda um erro grosseiro de topografia (elimina E)."
+        ],
+        [
+          "4",
+          "Questão de Concurso 2 (ENARE / Coloproctologia)"
+        ],
+        [
+          "p",
+          "Paciente masculino de 48 anos é diagnosticado com adenocarcinoma de reto médio localizado a 7 cm da margem anal. O estadiamento por Ressonância Magnética de alta resolução da pelve demonstrou tumor invadindo a gordura mesorretal além da muscular própria por 4 mm (cT3b), com 3 linfonodos suspeitos no mesorreto (cN1), fáscia mesorretal livre com margem circunferencial prevista de 5 mm e ausência de invasão do esfíncter anal. As tomografias de tórax e abdome não revelaram metástases à distância (cM0). Considerando as diretrizes contemporâneas para o câncer de reto localmente avançado, a melhor estratégia terapêutica é:"
+        ],
+        [
+          "p",
+          "A) Amputação abdominoperineal do reto imediata (cirurgia de Miles) sem qualquer tratamento pré-operatório para evitar disseminação linfática.<br>\n  B) Ressecção anterior baixa do reto imediata com preservação esfincteriana sem neoadjuvância, indicando radioterapia apenas se a margem cirúrgica for positiva.<br>\n  C) Terapia Neoadjuvante Total (TNT) com quimioterapia sistêmica e quimiorradioterapia pélvica, seguida de reavaliação clínica e por RM de pelve para planejar cirurgia com Excisão Total do Mesorreto (TME) ou acompanhamento estrito com Watch-and-Wait se resposta clínica completa.<br>\n  D) Colostomia em alça definitiva de desvio sem ressecção tumoral associada a cuidados paliativos exclusivos.<br>\n  E) Eletrocoagulação endoscópica com plasma de argônio associada a quimioterapia oral com capecitabina isolada."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong> <strong>Alternativa C</strong>. Para tumores de reto localmente avançados (cT3 e/ou N+), a abordagem moderna padrão é a <strong>Terapia Neoadjuvante Total (TNT)</strong>, demonstrada pelos estudos RAPIDO e PRODIGE 23 por elevar a resposta patológica completa e sobrevida livre de metástases. Se houver resposta clínica completa, pode-se poupar a cirurgia via protocolo de <em>Watch-and-Wait</em>; se houver lesão residual, procede-se à cirurgia com Excisão Total do Mesorreto (TME). Como o tumor está a 7 cm e não invade esfíncteres, a cirurgia de Miles imediata é conduta errônea e mutilante (elimina A)."
+        ],
+        [
+          "4",
+          "Questão de Concurso 3 (UNICAMP / Cirurgia Geral)"
+        ],
+        [
+          "p",
+          "Sobre as síndromes de polipose e câncer colorretal hereditário, assinale a assertiva correta:"
+        ],
+        [
+          "p",
+          "A) A Síndrome de Lynch caracteriza-se pelo desenvolvimento de mais de 1.000 adenomas colorretais na infância e mutação no gene APC.<br>\n  B) Na Polipose Adenomatosa Familiar (PAF), o risco cumulativo de câncer colorretal ao longo da vida aproxima-se de 100% até os 40 a 50 anos, sendo a mutação no gene APC o evento patogênico central.<br>\n  C) A Síndrome de Gardner associa a polipose colônica clássica a glioblastomas multiformes de alta malignidade no sistema nervoso central.<br>\n  D) O câncer de ovário seroso é a neoplasia extraintestinal mais frequente nas mulheres portadoras de Síndrome de Lynch.<br>\n  E) Pacientes com Síndrome de Lynch apresentam mutações ativadoras constitutivas no oncogene KRAS transmitidas de forma autossômica recessiva."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong> <strong>Alternativa B</strong>. A PAF decorre de mutação autossômica dominante no gene <em>APC</em> e confere 100% de risco de câncer colorretal se não tratada com proctocolectomia profilática (assertiva perfeita). Lynch tem poucos pólipos e decorre de genes de reparo MMR, não APC (elimina A). Gardner tem osteomas e tumores desmoides; quem tem tumor do SNC é Turcot (elimina C). O tumor extraintestinal mais comum na mulher com Lynch é o <strong>câncer de endométrio</strong> (elimina D). Lynch é autossômica dominante nos genes de reparo MMR (MLH1, MSH2, MSH6, PMS2), e não KRAS recessiva (elimina E)."
+        ]
+      ]
+    ],
+    [
+      "fisiopatologia-da-reproducao-e-preservacao-esfincteriana",
+      0,
+      [
+        [
+          "2",
+          "7.3 Anatomia Cirúrgica do Espaço Retal: Fáscia de Denonvilliers, Fáscia de Waldeyer e Nervos Autonômicos"
+        ],
+        [
+          "p",
+          "A precisão da cirurgia oncológica de reto repousa no respeito estrito aos limites fasciais embriológicos da pelve:"
+        ],
+        [
+          "3",
+          "Compartimentos Fasciais da Pelve e Marcos Cirúrgicos"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fáscia Própria do Reto (Fáscia Mesorretal):</strong> Envoltório conjuntivo fibroso fino que circunscreve todo o mesorreto e seus linfonodos. É a fronteira externa que define a margem de ressecção circunferencial (CRM);",
+            "<strong>Fáscia Pré-Sacral e Fáscia de Waldeyer (Fáscia Retossacral):</strong> A fáscia pré-sacral reveste os corpos vertebrais sacrais, veias sacrais médias e nervos espinhais sacrais. Na altura de S4/S5, condensa-se formando a <strong>fáscia de Waldeyer</strong>, uma ponte fibrosa espessa que conecta o sacro anterior à face posterior da fáscia mesorretal retal. Sua secção cirúrgica transversal precisa sob visão direta é o tempo indispensável para penetrar no espaço retroanal avascular e alcançar o plano interesfincteriano sem lacerar os plexos venosos pré-sacrais de Batson (prevenindo hemorragias pélvicas volumosas de difícil controle);",
+            "<strong>Fáscia de Denonvilliers (Septo Retovaginal / Fáscia Retovesical):</strong> Lâmina conjuntiva fibrosa brilhante situada na face anterior do mesorreto. No homem, separa o reto da próstata e vesículas seminais; na mulher, separa o reto da parede posterior da vagina. Em tumores de parede anterior do reto médio/baixo (especialmente T3 ou T4), a fáscia de Denonvilliers deve ser ressecada em monobloco junto com a peça cirúrgica para garantir margem anterior livre de tumor (R0)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "sindrome-de-resseccao-anterior-baixa-lars",
+      0,
+      [
+        [
+          "2",
+          "7.4 Síndrome da Ressecção Anterior Baixa do Reto (LARS): Fisiopatologia, Escore LARS e Reabilitação Pélvica"
+        ],
+        [
+          "p",
+          "A preservação do esfíncter anal e a confecção de anastomoses colorretais ultrabaixas ou coloanais poupam o paciente da colostomia definitiva, mas frequentemente resultam em alterações funcionais crônicas debilitantes da evacuação, denominadas coletivamente <strong>Síndrome da Ressecção Anterior Baixa (LARS - <em>Low Anterior Resection Syndrome</em>)</strong>:"
+        ],
+        [
+          "3",
+          "Fisiopatologia da Disfunção Evacuatória Pós-TME"
+        ],
+        [
+          "u",
+          [
+            "<strong>Perda do Reservatório Retal:</strong> A ressecção completa da ampola retal capacitiva abole o reservatório elástico de fezes. O cólon descendente/sigmoide anastomosado ao canal anal não possui complacência fisiológica equivalente, disparando o reflexo evacuatório com volumes fecais mínimos;",
+            "<strong>Dano Esfincteriano e Neuropatia Autonômica:</strong> O estiramento mecânico intraoperatório pelo grampeador circular ou afastadores de Lone-Star e a irradiação pélvica prévia (quimiorradioterapia neoadjuvante) induzem fibrose e atrofia do músculo esfíncter anal interno (perda do tônus basal de repouso com incontinência para gases e fezes líquidas) e lesão dos nervos sensitivos anorretais (perda da discriminação entre fezes e gases);",
+            "<strong>Quadro Clínico Típico:</strong> Fragmentação das evacuações (o paciente evacua pequenas alíquotas de fezes 8 a 15 vezes ao dia, comumente concentradas nas primeiras horas da manhã), urgência evacuatória incontrolável, episódios de incontinência fecal e sensação contínua de evacuação incompleta;",
+            "<strong>Manejo Clínico e Reabilitação:</strong> Modificações dietéticas (antidiarreicas), uso criterioso de loperamida e fibras solúveis (Plantago ovata / Psyllium), <strong>fisioterapia do assoalho pélvico com biofeedback anorretal</strong>, irrigação transanal retrógrada e, nos casos refratários graves (<em>Major LARS</em>), neuromodulação sacral ou confecção de estoma de proteção definitivo a pedido do paciente para resgate da qualidade de vida."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-discursivos-e-condutas-avancadas-cancer-colorretal",
+      0,
+      [
+        [
+          "2",
+          "8.1 Casos Clínicos Discursivos Avançados e Discussão de Padrão de Resposta LURIA"
+        ],
+        [
+          "4",
+          "Caso Discursivo 2: Câncer de Reto Médio Localmente Avançado e Estratégia de Preservação de Órgão"
+        ],
+        [
+          "p",
+          "<strong>Cenário Clínico:</strong> Homem de 51 anos apresenta história de hematoquezia indolor intermitente e sensação de evacuação incompleta há 5 meses. Ao toque retal, palpa-se lesão vegetante e ulcerada na parede lateral esquerda do reto médio, cujo bordo inferior localiza-se a 6 cm da margem anal. A colonoscopia com biópsias confirmou adenocarcinoma moderadamente diferenciado. A Ressonância Magnética de alta resolução da pelve descreveu: lesão circunferencial invadindo a gordura mesorretal por 6 mm (cT3c), presença de 4 linfonodos mesorretais espiculados e arredondados com sinal heterogêneo (cN2), fáscia mesorretal livre com a menor distância entre o tumor e a fáscia de 3 mm (CRM negativa / não ameaçada) e ausência de invasão do esfíncter anal interno ou externo. TC de tórax e abdome sem metástases à distância (cM0)."
+        ],
+        [
+          "p",
+          "<strong>Perguntas Formuladas pela Banca Examinadora:</strong>"
+        ],
+        [
+          "o",
+          [
+            "Qual é a classificação estadiatória locorregional completa deste tumor e por que a cirurgia imediata isolada está contraindicada?",
+            "Qual a conduta terapêutica contemporânea recomendada pelas diretrizes mundiais (RAPIDO e PRODIGE 23) antes de qualquer ato cirúrgico? Descreva os componentes deste protocolo.",
+            "Se após 8 a 12 semanas do término do tratamento neoadjuvante completo o paciente for reavaliado e apresentar ausência total de lesão tumoral ao toque retal, apenas cicatriz esbranquiçada plana sem ulceração à retoscopia e ausência de tumor ou linfonodos na RM de pelve, qual estratégia de conduta conservadora pode ser proposta? Descreva seus fundamentos.",
+            "Caso o paciente opte pela ressecção cirúrgica clássica ou apresente tumor residual de 1,5 cm, qual é o procedimento cirúrgico oncológico padrão, qual a margem cirúrgica circunferencial almejada e qual o papel do estoma de proteção?"
+          ]
+        ],
+        [
+          "p",
+          "<strong>Padrão de Resposta Esperado (LURIA):</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Estadiamento e Contraindicação de Cirurgia Direta:</strong> Tumor classificado como <strong>cT3c cN2 cM0 (Estádio III de Reto Médio)</strong>. A ressecção cirúrgica direta isolada está contraindicada porque tumores cT3/cT4 e/ou N+ apresentam taxas inaceitáveis de recidiva locorregional na pelve (25% a 35%) e metástases à distância se operados sem tratamento neoadjuvante multimodal.",
+            "<strong>Tratamento Padrão: Terapia Neoadjuvante Total (TNT):</strong> A conduta de escolha é a <strong>TNT</strong>, que integra <strong>Quimioterapia Sistêmica em dose plena (regimes como FOLFIRINOX ou FOLFOX/CAPOX por 3 a 4 meses) associada à Radioterapia pélvica</strong> (quimiorradioterapia longa fracionada de 50,4 Gy ou radioterapia de curso curto 5x5 Gy com quimioterapia de consolidação) <strong>administradas integralmente ANTES da intervenção cirúrgica</strong>. Esse protocolo eleva as taxas de resposta patológica completa (pCR de até 28%-30%) e reduz significativamente as metástases à distância.",
+            "<strong>Estratégia Conservadora (Watch-and-Wait de Angelita Habr-Gama):</strong> Perante a constatação de <strong>Resposta Clínica Completa (cCR)</strong>, o paciente é elegível para a estratégia de <strong>Watch-and-Wait (Observar e Esperar)</strong>. Essa conduta consiste em <strong>poupar o paciente da ressecção cirúrgica radical imediata</strong>, evitando a disfunção esfincteriana, sexual e urinária ou a necessidade de estomas, submetendo-o a um acompanhamento estrito e intensivo (toque retal, retossigmoidoscopia rígida/flexível e dosagem de CEA a cada 1 a 2 meses no primeiro ano, e RM de pelve a cada 3 a 6 meses). Se houver recidiva luminal local nos primeiros 2 anos (cerca de 25% a 30% dos casos), a cirurgia radical de resgate é realizada sem comprometer a sobrevida global.",
+            "<strong>Procedimento Cirúrgico se Houver Lesão Residual:</strong> Realiza-se <strong>Ressecção Anterior Baixa do Reto (LAR) com Excisão Total do Mesorreto (TME) no plano sagrado anatômico avascular e preservação dos plexos nervosos autonômicos hipogástricos e pélvicos</strong>. A margem circunferencial (CRM) deve ser &gt; 1 mm (livre) e a margem distal intramural de pelo menos 1 a 2 cm. Procede-se à confecção de anastomose colorretal mecânica ultrabaixa por duplo grampeamento protegida obrigatoriamente por <strong>Ileostomia em Alça Temporária</strong>, que desvia o trânsito fecal e previne a peritonite fecal pélvica em caso de deiscência da anastomose na pelve profunda."
+          ]
+        ]
+      ]
+    ],
+    [
+      "perolas-praticas-e-armadilhas-cancer-colorretal",
+      0,
+      [
+        [
+          "2",
+          "8.2 Pérolas Cirúrgicas e Armadilhas Clássicas em Provas de Câncer Colorretal (LURIA High Yield)"
+        ],
+        [
+          "4",
+          "Checklist de Alto Rendimento Editorial LURIA"
+        ],
+        [
+          "u",
+          [
+            "<strong>Armadilha 1 (Contagem Linfonodal no Cólon):</strong> No câncer de cólon, a ressecção cirúrgica curativa exige a análise microscópica de <strong>NO MÍNIMO 12 LINFONODOS</strong> na peça anatômica. Amostras com &lt; 12 linfonodos em tumores T3N0 configuram Estádio II de Alto Risco por subestadiamento, indicando quimioterapia adjuvante.",
+            "<strong>Armadilha 2 (CEA não faz Rastreamento):</strong> O Antígeno Carcinoembrionário (CEA) NUNCA deve ser solicitado para diagnóstico primário ou rastreamento populacional de CCR. Seu papel é estritamente prognóstico basal pré-operatório e seguimento periódico a cada 3 a 6 meses para detecção de recidiva precoce.",
+            "<strong>Armadilha 3 (Idade de Rastreamento 2026):</strong> Em indivíduos de risco habitual (média da população sem história familiar), o rastreamento inicia-se aos <strong>45 ANOS</strong> (e não mais aos 50 anos).",
+            "<strong>Armadilha 4 (Anti-EGFR e Mutação RAS):</strong> Em pacientes com CCR metastático, os anticorpos anti-EGFR (Cetuximabe e Panitumumabe) <strong>SÓ TÊM EFICÁCIA COMPROVADA EM TUMORES RAS SELVAGEM (WILD-TYPE) E PREFERENCIALMENTE DE CÓLON ESQUERDO</strong>. Se houver qualquer mutação em KRAS ou NRAS, o uso de anti-EGFR é contraindicado, devendo-se utilizar anti-VEGF (Bevacizumabe).",
+            "<strong>Armadilha 5 (Margem Distal no Reto):</strong> No cólon exige-se margem longitudinal de 5 cm. No reto, a margem longitudinal distal necessária é de <strong>apenas 1 a 2 cm</strong> de parede retal livre abaixo do tumor (devido à anatomia pélvica restrita e preservação do complexo esfincteriano). A margem mais crítica e determinante de recidiva no reto é a <strong>Margem de Ressecção Circunferencial (CRM)</strong> da gordura mesorretal (&gt; 1 mm = livre)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "sintese-pratica-e-referencias",
+      0,
+      [
+        [
+          "2",
+          "9. Síntese Prática, Fluxograma de Conduta e Referências Bibliográficas"
+        ],
+        [
+          "4",
+          "Guia de Conduta Rápida no Câncer Colorretal"
+        ],
+        [
+          "u",
+          [
+            "<strong>Rastreamento Populacional (Risco Habitual):</strong> Início aos <strong>45 anos</strong>. Colonoscopia a cada 10 anos ou FIT anual. Se parente de 1º grau com CCR &lt; 60 anos: iniciar aos 40 anos ou 10 anos antes do familiar mais jovem, repetindo a cada 5 anos.",
+            "<strong>Carcinogênese:</strong>\n      <ul>\n        <li><em>Via do Adenoma-Carcinoma (80%-85%):</em> Mutação no <em>APC</em> (porteiro da beta-catenina) -> <em>KRAS</em> -> <em>SMAD4</em> (18q) -> <em>TP53</em>.",
+            "<em>Via da Instabilidade de Microssatélites (15%-20%):</em> Perda das enzimas de reparo MMR (MLH1, MSH2, MSH6, PMS2) -> MSI-H. Predomínio no cólon direito, resposta a anti-PD-1 (imunoterapia)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n    <li><strong>Pólipos:</strong> Adenomas Tubulares (mais comuns, baixo risco), Adenomas Vilosos (alto risco de malignidade: 30%-50%, mucorreia/hipocalemia), Pólipos Sésseis Serrilhados (cólon direito, mutação BRAF V600E).</li>\n    <li><strong>Síndromes Hereditárias:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>PAF:</em> &gt; 100 adenomas, mutação no gene APC (5q21), risco de CCR de 100%. Cirurgia profilática: proctocolectomia total com bolsa ileal (IPAA) ou colectomia com IRA. Variantes: Gardner (osteomas, desmoides) e Turcot tipo 2 (meduloblastoma).",
+            "<em>Síndrome de Lynch (HNPCC):</em> Mutação em MMR, cólon direito predominante, poucos pólipos, início jovem (&lt; 50 anos). Critérios de Amsterdam II (3-2-1-0). Risco alto de câncer de endométrio em mulheres. Cirurgia: colectomia total com IRA."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n    <li><strong>Quadro Clínico:</strong> Cólon Direito (sangramento oculto, anemia ferropriva crônica, massa); Cólon Esquerdo (alteração do hábito, obstrução, fezes em fita, \"mordida de maçã\"); Reto (hematoquezia viva, tenesmo, urgência fecal).</li>\n    <li><strong>Cirurgia de Cólon:</strong> Margem de segurança de 5 cm longitudinal + ligadura alta dos troncos vasculares na raiz + <strong>no mínimo 12 linfonodos ressecados</strong>.</li>\n    <li><strong>Câncer de Reto (&lt; 15 cm da margem anal):</strong>"
+        ],
+        [
+          "u",
+          [
+            "RM de pelve de alta resolução mandatória para avaliar estádio T, N e Fáscia Mesorretal / CRM (&gt; 1 mm = livre).",
+            "Padrão-ouro: <strong>Excisão Total do Mesorreto (TME)</strong> no plano sagrado com preservação dos nervos autonômicos.",
+            "Lesões localmente avançadas (cT3-T4 ou N+): <strong>Terapia Neoadjuvante Total (TNT)</strong> com quimioterapia plena e radioterapia prévias. Se Resposta Clínica Completa (cCR): elegível para protocolo de <strong>Watch-and-Wait (Observar e Esperar) de Angelita Habr-Gama</strong>.",
+            "Cirurgia de Miles (amputação abdominoperineal com colostomia definitiva) indicada apenas se invasão direta do complexo esfincteriano."
+          ]
+        ],
+        [
+          "3",
+          "Referências Bibliográficas Fundamentais"
+        ],
+        [
+          "o",
+          [
+            "Benson AB, Venook AP, Al-Hawary MM, et al. Colon Cancer, Version 2.2023, NCCN Clinical Practice Guidelines in Oncology. <em>J Natl Compr Canc Netw</em>. 2023;21(3):289-315.",
+            "Benson AB, Venook AP, Al-Hawary MM, et al. Rectal Cancer, Version 3.2023, NCCN Clinical Practice Guidelines in Oncology. <em>J Natl Compr Canc Netw</em>. 2023;21(4):393-420.",
+            "Bahadoer RR, Dijkstra EA, van Etten B, et al. Short-course radiotherapy followed by chemotherapy before total mesorectal excision (TME) versus preoperative chemoradiotherapy, TME, and optional adjuvant chemotherapy for locally advanced rectal cancer (RAPIDO): a randomised, open-label, phase 3 trial. <em>Lancet Oncol</em>. 2021;22(1):29-42.",
+            "Conroy T, Bosset JF, Etienne PL, et al. Neoadjuvant chemotherapy with FOLFIRINOX and preoperative chemoradiotherapy for patients with locally advanced rectal cancer (PRODIGE 23): a multicentre, randomised, open-label, phase 3 trial. <em>Lancet Oncol</em>. 2021;22(5):702-715.",
+            "Habr-Gama A, Perez RO, Nadalin W, et al. Operative versus nonoperative treatment for stage 0 distal rectal cancer following chemoradiation therapy: long-term results. <em>Ann Surg</em>. 2004;240(4):711-717."
+          ]
+        ]
+      ]
+    ]
+  ]
+}

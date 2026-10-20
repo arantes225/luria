@@ -1,0 +1,1087 @@
+{
+  "v": 2,
+  "s": "saude-de-populacoes-vulnerabilizadas-e-cuidado-equitativo",
+  "t": "Saúde de Populações Vulnerabilizadas e Cuidado Equitativo",
+  "p": "Saúde de Populações Vulnerabilizadas e Cuidado Equitativo — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "a": "Medicina de Família e Comunidade",
+  "m": "Medicina de Família e Comunidade",
+  "h": [
+    "Apostila LURIA",
+    "Saúde de Populações Vulnerabilizadas e Cuidado Equitativo",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+    [
+      "Área: Medicina de Família e Comunidade",
+      "Matéria: Medicina de Família e Comunidade",
+      "Tema: Saúde de Populações Vulnerabilizadas e Cuidado Equitativo"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "competencia-cultural-humildade-cultural-equidade",
+      "1. Competência Cultural, Humildade Cultural e o Princípio da Equidade na APS"
+    ],
+    [
+      "populacao-em-situacao-de-rua-consultorio-na-rua",
+      "2. Saúde da População em Situação de Rua e Equipes de Consultório na Rua (eCR)"
+    ],
+    [
+      "saude-da-populacao-negra-pnsipn-racismo-institucional",
+      "3. Saúde da População Negra (PNSIPN), Racismo Institucional e Agravos Prevalentes"
+    ],
+    [
+      "saude-populacao-lgbtqiapn-processo-transexualizador-nome-social",
+      "4. Saúde da População LGBTQIAPN+, Nome Social e Processo Transexualizador no SUS"
+    ],
+    [
+      "saude-indigena-sasi-sus-dsei-casai",
+      "5. Saúde dos Povos Indígenas: SASI-SUS, DSEI, Polos-Base e CASAI"
+    ],
+    [
+      "populacao-privada-de-liberdade-pnaisp-campo-floresta-aguas",
+      "6. População Privada de Liberdade (PNAISP) e Populações do Campo, da Floresta e das Águas"
+    ],
+    [
+      "casos-clinicos-resolvidos-aula-221",
+      "7. Casos Clínicos Resolvidos e Raciocínio Diagnóstico-Terapêutico"
+    ],
+    [
+      "questoes-comentadas-residencia-revalida-aula-221",
+      "8. Questões Comentadas de Provas de Residência Médica, Revalida e ENAMED"
+    ],
+    [
+      "tabela-sintese-high-yield-aula-221",
+      "9. Síntese High-Yield das Políticas de Equidade no SUS para Revisão de Véspera"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "competencia-cultural-humildade-cultural-equidade",
+      0,
+      [
+        [
+          "2",
+          "1. Competência Cultural, Humildade Cultural e o Princípio da Equidade na APS"
+        ],
+        [
+          "p",
+          "A <strong>Equidade</strong> — um dos três princípios doutrinários/éticos fundamentais do Sistema Único de Saúde (SUS), ao lado da Universalidade e da Integralidade — postula que a justiça social em saúde não se alcança tratando todos exatamente da mesma maneira (igualdade formal ou aritmética), mas sim <strong>tratando desigualmente os desiguais na exata medida de suas desigualdades e necessidades</strong> (<em>\"ofertando mais a quem precisa de mais, e com barreiras reduzidas a quem enfrenta maior exclusão histórica\"</em>). Ao passo que a Universalidade garante que todo cidadão tenha direito de acesso, a Equidade reconhece que determinantes sociais, raciais, de gênero, geográficos e econômicos produzem vulnerabilizações estruturais profundas que exigem políticas públicas focalizadas e práticas clínicas diferenciadas."
+        ],
+        [
+          "3",
+          "1.1 Vulnerabilidade vs. Vulnerabilização e a Lei dos Cuidados Inversos (Julian Tudor Hart)"
+        ],
+        [
+          "p",
+          "Na Medicina de Família e Comunidade (MFC) e na Saúde Coletiva contemporânea, substitui-se o termo passivo \"populações vulneráveis\" (que parece sugerir uma fragilidade biológica intrínseca ou natural daqueles indivíduos) pelo conceito ativo de <strong>Populações Vulnerabilizadas</strong>. A vulnerabilização é um <em>processo histórico, político e socialmente produzido</em> de privação de direitos, estigmatização e exclusão territorial."
+        ],
+        [
+          "p",
+          "Segundo o marco teórico de <strong>José Ricardo Ayres</strong> (1999/2003), a vulnerabilidade em saúde deve ser analisada em três dimensões interdependentes e sinérgicas (muito cobradas em provas da USP, UNICAMP e ENARE):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Dimensão Individual:</strong> Grau e qualidade da informação de que os indivíduos dispõem sobre o problema de saúde, capacidade cognitiva e emocional de elaborá-la e transformá-la em práticas cotidianas de autoproteção (fortemente atravessada pelas relações de poder e autoestima).",
+            "<strong>Dimensão Social:</strong> O contexto material, econômico, cultural, racial, religioso e jurídico no qual o indivíduo está inserido — acesso à educação, renda, moradia, trabalho digno, segurança alimentar e ausência de violência estatal, homofobia, transfobia ou racismo.",
+            "<strong>Dimensão Programática (Institucional):</strong> O modo como os serviços de saúde e as instituições sociais estão organizados para responder (ou falhar em responder) às necessidades da população. Quando uma Unidade Básica de Saúde (UBS) exige comprovante de residência física para cadastrar uma pessoa em situação de rua, recusa-se a usar o Nome Social de uma mulher trans, funciona apenas em horário comercial incompatível com trabalhadores rurais ou não dispõe de intérpretes/mediadores para populações indígenas, estamos diante de uma grave <strong>vulnerabilidade programática</strong> gerada pelo próprio sistema de saúde!"
+          ]
+        ],
+        [
+          "p",
+          "<strong>A Lei dos Cuidados Inversos (<em>Inverse Care Law</em> — Julian Tudor Hart, <em>The Lancet</em>, 1971):</strong> Enuncia que <em>\"a disponibilidade de bons cuidados médicos tende a variar inversamente com a necessidade da população assistida; isso se opera de forma mais completa onde os cuidados médicos estão mais expostos às forças de mercado, e menos onde tal exposição é reduzida\"</em>. As Políticas Nacionais de Promoção da Equidade no SUS existem justamente para quebrar a Lei dos Cuidados Inversos, alocando equipes específicas (Consultório na Rua, Equipes de Saúde da Família Ribeirinhas, Equipes de Atenção Primária Prisional, Subsistema de Saúde Indígena) exatamente onde a necessidade epidemiológica e social é máxima."
+        ],
+        [
+          "3",
+          "1.2 Competência Cultural vs. Humildade Cultural vs. Segurança Cultural"
+        ],
+        [
+          "p",
+          "De acordo com Barbara Starfield, a <strong>Competência Cultural</strong> é um dos três atributos derivados essenciais da Atenção Primária à Saúde (junto à Orientação Familiar e à Orientação Comunitária). Contudo, a evolução epistemológica da medicina centrada na pessoa exige distinguir três conceitos fundamentais:"
+        ],
+        [
+          "t",
+          [
+            "Conceito",
+            "Autores de Referência",
+            "Definição Epistemológica e Aplicação Clínica na APS"
+          ],
+          [
+            [
+              "<strong>Competência Cultural</strong><br>(<em>Cultural Competence</em>)",
+              "Barbara Starfield; Cross et al.; Arthur Kleinman",
+              "Capacidade do profissional e do sistema de saúde de reconhecer, respeitar e adaptar o cuidado às diferentes características culturais, crenças explicativas de saúde-doença (<em>Illness vs. Disease</em>), idiomas, práticas tradicionais e valores de grupos étnicos e sociais diversos. <em>Risco quando mal compreendida:</em> reduzir a cultura a um \"manual fixo de estereótipos\" (achar que basta decorar uma lista de costumes de um grupo para \"dominar\" sua cultura)."
+            ],
+            [
+              "<strong>Humildade Cultural</strong><br>(<em>Cultural Humility</em>)",
+              "Melanie Tervalon &amp; Jann Murray-García (1998)",
+              "Processo contínuo (ao longo de toda a vida profissional) de <strong>autorreflexão crítica e autocrítica</strong> sobre os próprios vieses implícitos, privilégios e preconceitos do médico, aliado à disposição de <strong>corrigir o desequilíbrio de poder</strong> na relação médico-paciente e aprender genuinamente com o paciente (reconhecendo o paciente como o verdadeiro especialista em sua própria história e vivência cultural). Não é um \"ponto de chegada\" (como a competência), mas uma postura ética permanente de abertura."
+            ],
+            [
+              "<strong>Segurança Cultural</strong><br>(<em>Cultural Safety</em>)",
+              "Irihapeti Ramsden (Enfermeira Maori, Nova Zelândia)",
+              "Desloca o julgamento do profissional para o <strong>usuário</strong>: um atendimento só é culturalmente seguro quando o próprio paciente vulnerabilizado (indígena, negro, trans, pessoa em situação de rua) sente que sua identidade cultural não foi diminuída, agredida, exótica ou deslegitimada pelo serviço de saúde, examinando criticamente o racismo e o colonialismo institucional."
+            ],
+            [
+              "<strong>Competência Estrutural</strong><br>(<em>Structural Competency</em>)",
+              "Jonathan Metzl &amp; Helena Hansen (2014)",
+              "Capacidade clínica de discernir como sintomas clínicos, não-adesão terapêutica e doenças são produzidos por <strong>estruturas a montante</strong> (leis de zoneamento urbano, encarceramento em massa, racismo estrutural, precarização do trabalho, desertos alimentares), evitando culpabilizar a vítima (\"o paciente não controla o diabetes porque é desleixado\")."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "1.3 O Conceito de Interseccionalidade na Prática Médica"
+        ],
+        [
+          "p",
+          "Cunhado pela jurista e teórica crítica racial norte-americana <strong>Kimberlé Crenshaw</strong> (1989) e amplamente articulado no Brasil por pensadoras como Lélia Gonzalez e Carla Akotirene, o conceito de <strong>Interseccionalidade</strong> demonstra que os eixos de subordinação e opressão social — <strong>raça/cor, classe social, identidade de gênero, orientação sexual, território geográfico, idade e deficiência (capacitismo)</strong> — não atuam de forma isolada ou meramente somatória, mas se <strong>entrecruzam (interseccionam)</strong> produzindo experiências qualitativamente específicas de vulnerabilização e adoecimento. Por exemplo, o risco de mortalidade materna, violência obstétrica ou dificuldade de acesso ao diagnóstico precoce de câncer de mama/colo uterino em uma mulher negra, periférica, lésbica ou trans e trabalhadora informal resulta da intersecção sinérgica do racismo institucional, do sexismo/lesbofobia/transfobia e da desigualdade de classe."
+        ]
+      ]
+    ],
+    [
+      "populacao-em-situacao-de-rua-consultorio-na-rua",
+      0,
+      [
+        [
+          "2",
+          "2. Saúde da População em Situação de Rua e Equipes de Consultório na Rua (eCR)"
+        ],
+        [
+          "p",
+          "A <strong>Política Nacional para a População em Situação de Rua (Decreto Presidencial nº 7.053/2009)</strong> define esse grupo populacional como um grupo heterogêneo que possui em comum a pobreza extrema, os vínculos familiares interrompidos ou fragilizados e a <strong>inexistência de moradia convencional regular</strong>, e que utiliza os logradouros públicos (ruas, praças, marquises, viadutos) e as áreas degradadas como espaço de moradia e de sustento, de forma temporária ou permanente, bem como as unidades de acolhimento para pernoite temporário ou como moradia provisória."
+        ],
+        [
+          "3",
+          "2.1 Garantia de Acesso à APS e Proibição de Exigência de Comprovante de Residência"
+        ],
+        [
+          "p",
+          "Uma das questões mais cobradas em provas de Residência Médica, Revalida e ENAMED refere-se às barreiras burocráticas de acesso. A <strong>Portaria MS nº 940/2011</strong> (e a Política Nacional de Atenção Básica — PNAB) estabelece de forma taxativa e inegociável:"
+        ],
+        [
+          "u",
+          [
+            "<strong>É ESTRITAMENTE VEDADA a exigência de comprovante de residência física ou de documento de identificação civil (RG/CPF)</strong> para o cadastramento no Cartão Nacional de Saúde (Cartão SUS) e para o atendimento integral da População em Situação de Rua, ciganos, nômades e itinerantes em qualquer Unidade Básica de Saúde ou ponto da Rede de Atenção à Saúde!",
+            "Para fins de cadastro no e-SUS APS, utiliza-se o endereço do próprio equipamento público de referência (como o endereço da UBS, do Centro POP ou do Abrigo/Albergue) ou o logradouro público onde a pessoa costuma permanecer. Toda UBS tem obrigação sanitária sobre as pessoas em situação de rua que circulam em seu território, independentemente da existência ou não de equipe de Consultório na Rua no município."
+          ]
+        ],
+        [
+          "3",
+          "2.2 Equipes de Consultório na Rua (eCR): Composição e Modalidades I, II e III"
+        ],
+        [
+          "p",
+          "Regulamentadas pela <strong>Portaria GM/MS nº 122/2011</strong> (atualizada pela Portaria nº 1.255/2021 e PNAB), as <strong>Equipes de Consultório na Rua (eCR)</strong> são equipes multiprofissionais da <strong>Atenção Primária à Saúde (APS)</strong> que desenvolvem ações <em>in loco</em>, de forma itinerante, utilizando unidades móveis e articulando-se com as UBS, CAPS (Centros de Atenção Psicossocial), UPA 24h e serviços da Assistência Social (Centro POP e CREAS)."
+        ],
+        [
+          "p",
+          "<strong>As Categorias Profissionais que compõem as eCR:</strong> As equipes são formadas por profissionais escolhidos dentre dois grandes grupos (com a particularidade importantíssima de que, nas Modalidades I e II, <strong>o médico não é obrigatório</strong>, sendo obrigatório apenas na Modalidade III!):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Profissionais de Nível Superior / Médio da Equipe:</strong> Enfermeiro, Psicólogo, Assistente Social, Terapeuta Ocupacional, Médico, Cirurgião-Dentista, Profissional/Professor de Educação Física, Farmacêutico e Musicoterapeuta/Arte-educador.",
+            "<strong>Profissionais de Nível Médio / Técnico:</strong> Agente Social, Técnico ou Auxiliar de Enfermagem, Técnico em Saúde Bucal (TSB) e Auxiliar em Saúde Bucal (ASB)."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Modalidade de eCR",
+            "Composição Mínima Obrigatória",
+            "Presença de Médico?",
+            "Regra de Limite por Categoria Profissional"
+          ],
+          [
+            [
+              "<strong>Modalidade I</strong>",
+              "<strong>4 profissionais:</strong><br>- <strong>2</strong> profissionais de nível superior;<br>- <strong>2</strong> profissionais de nível médio.",
+              "Não obrigatório (excluído na composição mínima de I e II, que prioriza enfermeiro, psicólogo, assistente social e TO)",
+              "Máximo de 2 profissionais da mesma profissão (nível superior ou médio)."
+            ],
+            [
+              "<strong>Modalidade II</strong>",
+              "<strong>6 profissionais:</strong><br>- <strong>3</strong> profissionais de nível superior;<br>- <strong>3</strong> profissionais de nível médio.",
+              "Não obrigatório",
+              "Máximo de 2 profissionais da mesma profissão (nível superior ou médio)."
+            ],
+            [
+              "<strong>Modalidade III</strong>",
+              "<strong>6 profissionais da Modalidade II + 1 MÉDICO:</strong><br>Total de <strong>7 profissionais</strong> (3 de nível superior + 3 de nível médio + <strong>1 Médico</strong> de 40h ou dois médicos somando 40h).",
+              "<strong>SIM! Obrigatório!</strong> (É o diferencial exclusivo da Modalidade III em provas!)",
+              "Todas as modalidades podem agregar Agentes Comunitários de Saúde (ACS) e equipe de Saúde Bucal."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Atribuições do Agente Social na eCR:</strong> Profissional de nível médio (exigência mínima de ensino médio completo e preferencialmente experiência/vivência prévia com população de rua e trajetória de superação ou trabalho em redução de danos) responsável por mediar o vínculo na rua, identificar cenas de uso, realizar busca ativa de faltosos (ex.: tratamento diretamente observado da tuberculose), acompanhar usuários em consultas e exames na rede e realizar atividades educativas e culturais."
+        ],
+        [
+          "3",
+          "2.3 Clínica Ampliada, Redução de Danos e Agravos Prevalentes na População em Situação de Rua"
+        ],
+        [
+          "p",
+          "O cuidado médico à pessoa em situação de rua apoia-se no paradigma ético-clínico da <strong>Redução de Danos (RD)</strong>. Diferentemente dos modelos proibicionistas ou morais que exigem a \"abstinência imediata e total de álcool, crack e outras drogas\" como pré-requisito para cuidar do indivíduo, a Redução de Danos reconhece que muitos usuários não conseguem ou não desejam interromper o uso de substâncias naquele momento, focando em <strong>minimizar as consequências adversas biológicas, infecciosas e psicossociais do uso sem exigir a abstinência como condição para o cuidado</strong> (ex.: oferta de hidratação, proteção labial e não compartilhamento de cachimbos/insumos para prevenir hepatites e tuberculose, alimentação, anticoncepção de longa duração se desejada, tratamento de feridas nos pés e cuidado em liberdade nos CAPS AD)."
+        ],
+        [
+          "4",
+          "Principais Agravos Clínicos e Condutas Específicas na População em Situação de Rua (Foco em Provas)"
+        ],
+        [
+          "o",
+          [
+            "<strong>Tuberculose Pulmonar e Extrapulmonar (Risco 56 vezes maior que na população geral!):</strong>\n    <ul>\n      <li><strong>Regra de Rastreamento (Mudança Crítica de Sintomático Respiratório!):</strong> Na população geral, investiga-se tuberculose em quem apresenta tosse por &ge; 3 semanas (ou &ge; 2 semanas na busca ativa em UBS). Porém, na <strong>População em Situação de Rua</strong> (assim como em pessoas vivendo com HIV, privados de liberdade e indígenas), o Ministério da Saúde determina que se investigue tuberculose diante de <strong>TOSSE DE QUALQUER DURAÇÃO (independentemente do tempo de tosse!)</strong>!",
+            "<strong>Diagnóstico de Eleição:</strong> Solicitar imediatamente o <strong>Teste Rápido Molecular para Tuberculose (TRM-TB / GeneXpert MTB/RIF Ultra)</strong> no escarro (que detecta o DNA do <em>Mycobacterium tuberculosis</em> em 2 horas e já informa se há resistência à Rifampicina!), associado obrigatoriamente à <strong>Cultura para micobactérias com Teste de Sensibilidade (TSA)</strong> em todos os casos de população em situação de rua (pelo altíssimo risco de tuberculose drogarresistente - TB-DR e retratamento por interrupção prévia) e testagem rápida para HIV.",
+            "<strong>Estratégia Terapêutica:</strong> Esquema básico <strong>RIPE (Rifampicina + Isoniazida + Pirazinamida + Etambutol por 2 meses, seguido de Rifampicina + Isoniazida por 4 meses)</strong> sob regime obrigatório de <strong>Tratamento Diretamente Observado (TDO) flexível e itinerante</strong> (realizado na própria calçada/praça pelo Agente Social/ACS da eCR ou articulado com o Centro POP e restaurante popular, somado a incentivos sociais como auxílio-alimentação e abrigo sanitário).",
+            "<strong>Sífilis, HIV e Hepatites Virais (ISTs) e o Conceito de <em>Point-of-Care / Test and Treat</em>:</strong>\n    <ul>\n      <li>A janela de oportunidade na rua é curta: se você solicitar uma sorologia venosa convencional de laboratório cujo resultado demora 15 dias para ficar pronto, o paciente já terá mudado de território. Portanto, utiliza-se maciçamente a <strong>Testagem Rápida por punção digital in loco (HIV, Sífilis, Hepatite B e Hepatite C)</strong>.",
+            "Se o <strong>Teste Rápido Treponêmico para Sífilis for reagente</strong> em pessoa em situação de rua (ou gestante na rua) sem registro comprovado de tratamento adequado prévio, <strong>inicia-se IMEDIATAMENTE a 1ª dose de Penicilina G Benzatina intramuscular no próprio atendimento</strong> (coletando sangue venoso para VDRL no mesmo ato para seguimento sorológico, sem aguardar o VDRL para aplicar a penicilina!).",
+            "<strong>Gestação em Situação de Rua e Direitos Reprodutivos:</strong>\n    <ul>\n      <li>Configura gestação de alta vulnerabilidade social e clínica, devendo o pré-natal ser iniciado imediatamente no momento da captação (com testes rápidos, ultrassonografia prioritária, ácido fólico/sulfato ferroso e vacinação).",
+            "<strong>Atenção Ética e Legal Crítica (Combate ao Abuso Institucional):</strong> A situação de rua ou o uso de substâncias psicoativas pela gestante/puérpera <strong>NÃO autoriza a separação compulsória imediata do recém-nascido na maternidade sem o devido processo legal e sem antes esgotar todas as alternativas de acolhimento conjunto (Unidades de Acolhimento para mães e bebês) ou inserção na família extensa</strong> (Nota Técnica Conjunta MDS/MS e diretrizes do CNJ/ECA).",
+            "<strong>Afecções dos Pés, Dermatoses e Ectoparasitoses:</strong>\n    <ul>\n      <li>Devido às longas caminhadas diárias, exposição à chuva/frio e impossibilidade de retirar os calçados à noite por medo de furto, são extremamente prevalentes o <strong>pé de imersão (pé de trincheira)</strong>, úlceras venosas e arteriais infectadas, celulites/erisipelas de repetição, tungíase, miíase, pediculose do corpo (<em>Pediculus humanus corporis</em>, vetor de <em>Bartonella quintana</em>) e escabiose crostosa. O tratamento sistêmico com <strong>Ivermectina oral (200 mcg/kg em dose única na calçada, repetida em 7 a 14 dias)</strong> tem enorme vantagem prática na situação de rua em comparação às loções tópicas de permetrina, que exigem banho de corpo inteiro e fervura de roupas de cama inexistentes na rua!"
+          ]
+        ]
+      ]
+    ],
+    [
+      "saude-da-populacao-negra-pnsipn-racismo-institucional",
+      0,
+      [
+        [
+          "2",
+          "3. Saúde da População Negra (PNSIPN), Racismo Institucional e Agravos Prevalentes"
+        ],
+        [
+          "p",
+          "A população negra brasileira — definida pelo Instituto Brasileiro de Geografia e Estatística (IBGE) e pelo Sistema Único de Saúde como o somatório dos indivíduos que se autodeclaram <strong>pretos e pardos</strong> — representa mais de 56% da população do país e mais de 75% dos usuários dependentes exclusivamente do SUS. Instituída pela <strong>Portaria GM/MS nº 992, de 13 de maio de 2009</strong> (e respaldada pelo Estatuto da Igualdade Racial — Lei nº 12.288/2010), a <strong>Política Nacional de Saúde Integral da População Negra (PNSIPN)</strong> constitui um marco histórico ao reconhecer formalmente que o <strong>racismo, as desigualdades étnico-raciais e o racismo institucional são determinantes sociais das condições de saúde</strong>, com vistas à promoção da equidade em saúde."
+        ],
+        [
+          "3",
+          "3.1 As Três Dimensões do Racismo (Individual/Interpessoal, Institucional e Estrutural)"
+        ],
+        [
+          "p",
+          "Para as provas de Residência Médica, Revalida e ENAMED, é fundamental distinguir conceitualmente as três manifestações do racismo e como elas operam diretamente nos desfechos clínicos e epidemiológicos:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Racismo Individual ou Interpessoal:</strong> Manifesta-se por meio de atos diretos, conscientes ou intencionais de discriminação, injúria racial, agressão verbal/física ou recusa explícita de atendimento cometidos por um indivíduo contra outro em razão de sua raça/cor ou fenótipo.",
+            "<strong>Racismo Institucional (ou Sistêmico/Programático):</strong> Conceito central da PNSIPN! Define-se como o <strong>fracasso coletivo de uma organização ou instituição (como o sistema de saúde, um hospital ou uma UBS) em prover um serviço apropriado e profissional às pessoas por causa de sua cor, cultura ou origem étnica</strong>. Ele não depende de um \"indivíduo racista mal-intencionado\" gritando ofensas; ele opera de forma silenciosa, rotineira e naturalizada nas normas, rotinas assistenciais, subfinanciamento territorial e vieses implícitos das equipes, resultando em <strong>menor acesso, pior qualidade técnica do cuidado e piores desfechos de morbimortalidade para pacientes negros</strong>.",
+            "<strong>Racismo Estrutural (Sílvio Almeida):</strong> Compreende o racismo como a matriz histórica, econômica, política e jurídica fundante sobre a qual toda a sociedade brasileira foi edificada após mais de três séculos de escravização e abolição sem reparação social, determinando a segregação espacial urbana (periferias sem saneamento), a precarização do trabalho, a violência letal contra a juventude negra e a sub-representação nos espaços de poder."
+          ]
+        ],
+        [
+          "4",
+          "Evidências Epidemiológicas Clássicas do Racismo Institucional na Saúde Brasileira (Cobrado em Provas!)"
+        ],
+        [
+          "p",
+          "Inúmeros estudos epidemiológicos nacionais (como a pesquisa <em>Nascer no Brasil</em> da Fiocruz, liderada por Maria do Carmo Leal, e os Boletins Epidemiológicos do Ministério da Saúde) documentam como o racismo institucional se traduz na prática clínica:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Saúde Materna e Violência Obstétrica:</strong> Mulheres negras (pretas e pardas) apresentam razão de <strong>mortalidade materna até 2 a 3 vezes superior</strong> à de mulheres brancas (especialmente por síndromes hipertensivas da gestação — pré-eclâmpsia/eclâmpsia — e hemorragia pós-parto). Mesmo após ajuste estatístico para renda e escolaridade, mulheres pretas: (a) realizam menos consultas de pré-natal; (b) recebem menos orientações sobre sinais de trabalho de parto e complicações; (c) sofrem maior peregrinação anteparto em busca de vaga em maternidade; e (d) <strong>recebem significativamente MENOS analgesia e anestesia farmacológica durante o trabalho de parto e procedimentos obstétricos</strong> do que mulheres brancas! Essa disparidade na analgesia decorre do mito racista pseudocientífico colonial de que <em>\"corpos negros seriam mais resistentes à dor ou mais fortes fisicamente\"</em> (viés racial implícito no manejo da dor).",
+            "<strong>Manejo Álgico na Doença Falciforme nas Emergências:</strong> Pacientes negros jovens que procuram prontos-socorros com crise vaso-oclusiva álgica lancinante da Doença Falciforme têm sua dor frequentemente subestimada ou invalidada pelas equipes de plantão, sendo injustamente rotulados como \"viciados em morfina / simuladores\" (<em>drug-seeking behavior</em>), sofrendo atrasos inaceitáveis na administração de opioides parenterais.",
+            "<strong>Oncologia:</strong> Mulheres negras recebem diagnóstico de câncer de mama e câncer do colo do útero em estágios clínicos significativamente mais avançados (III e IV) e enfrentam maior tempo de espera entre o diagnóstico histopatológico e o início do tratamento cirúrgico/quimioterápico (Lei dos 60 dias)."
+          ]
+        ],
+        [
+          "3",
+          "3.2 Obrigatoriedade do Quesito Raça/Cor nos Sistemas de Informação do SUS (Portaria MS nº 344/2017)"
+        ],
+        [
+          "p",
+          "Como medida concreta para visibilizar as iniquidades raciais e combater o racismo institucional, a <strong>Portaria GM/MS nº 344, de 1º de fevereiro de 2017</strong>, tornou <strong>OBRIGATÓRIO o preenchimento do campo denominado \"Raça/Cor\"</strong> em todos os sistemas de informação em saúde do SUS (SIM, SINASC, SINAN, SIH, SIA, e-SUS APS, Cartão SUS):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Regra de Ouro da Autodeclaração:</strong> A coleta do quesito raça/cor deve respeitar estritamente o critério da <strong>autodeclaração do próprio usuário</strong>, dentro das 5 categorias oficiais do IBGE: <strong>(1) Branca; (2) Preta; (3) Amarela (origem asiática/oriental); (4) Parda; ou (5) Indígena</strong>.",
+            "<strong>Exceções para Heteroidentificação:</strong> Apenas nos casos de recém-nascidos, óbitos ou situações em que o usuário esteja inconsciente/incapacitado de se manifestar, o preenchimento caberá aos familiares ou responsáveis (ou, na ausência absoluta destes em óbitos, ao médico/profissional que preenche a Declaração de Óbito)."
+          ]
+        ],
+        [
+          "3",
+          "3.3 Especificidades Clínicas e Genético-Epidemiológicas na População Negra"
+        ],
+        [
+          "p",
+          "A PNSIPN destaca agravos cuja prevalência ou gravidade é acentuada na população negra, seja por fatores genéticos/evolutivos, seja pela interação com determinantes sociais adversos (estresse alostático crônico do racismo — hipótese do <em>weathering</em> de Arline Geronimus):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Doença Falciforme e Traço Falciforme:</strong>\n    <ul>\n      <li>Mutação de ponto no códon 6 do gene da cadeia beta da globina (cromossomo 11), substituindo o ácido glutâmico hidrofílico pela valina hidrofóbica, gerando a <strong>Hemoglobina S (HbS)</strong>. Sob desoxigenação, acidose ou desidratação, a HbS polimeriza e afoiça a hemácia, causando hemólise crônica e vaso-oclusão microvascular.",
+            "<strong>Diferença Crítica entre Doença Falciforme (Homozigose SS, SC, S-Beta-Talassemia) e Traço Falciforme (Heterozigose AS):</strong> O <em>Traço Falciforme (HbAS)</em> está presente em 4% a 8% da população negra brasileira; o indivíduo portador de traço falciforme <strong>NÃO é doente, NÃO tem anemia, tem hemograma normal e expectativa de vida normal</strong>! Ele não precisa de tratamento médico nem de ácido fólico contínuo, mas tem direito fundamental à <strong>orientação genética reprodutiva (aconselhamento genético não diretivo)</strong> na APS, pois se tiver filhos com outro portador de traço (AS x AS), há 25% de chance em cada gestação de nascer uma criança com Anemia Falciforme (SS).",
+            "<strong>Cuidado Integral à Doença Falciforme (HbSS) na APS:</strong> Diagnóstico precoce pelo Teste do Pezinho (Programa Nacional de Triagem Neonatal — Fase II); início de <strong>Penicilina V oral ou Penicilina G Benzatina profilática dos 3 meses até os 5 anos de idade</strong> (para prevenir sepse fulminante por germes encapsulados devido à asplenia funcional precoce por autoesplenectomia!); calendário vacinal ampliado nos CRIE (antipneumocócica conjugada e polissacarídica 23V, antimeningocócicas ACWY e B, <em>Haemophilus influenzae</em> b, Influenza); suplementação contínua de <strong>Ácido Fólico</strong>; uso de <strong>Hidroxiureia</strong> (aumenta a síntese de Hemoglobina Fetal — HbF, que inibe a polimerização da HbS, reduzindo crises álgicas, síndrome torácica aguda e mortalidade!); e rastreamento anual de risco de AVC isquêmico com <strong>Doppler Transcraniano (DTC)</strong> em crianças de 2 a 16 anos (se velocidade de fluxo nas artérias cerebrais médias/carótida interna &ge; 200 cm/s, indica-se regime de transfusão crônica profilática!).",
+            "<strong>Hipertensão Arterial Sistêmica (HAS) na População Negra:</strong>\n    <ul>\n      <li>Apresenta início mais precoce, maior prevalência (até 2 vezes maior), evolução mais grave e maior repercussão em órgãos-alvo (maior incidência de <strong>Acidente Vascular Cerebral hemorrágico e isquêmico</strong>, hipertrofia ventricular esquerda concêntrica e <strong>Doença Renal Crônica hipertensiva / glomeruloesclerose focal e segmentar associada a variantes do gene APOL1</strong>).",
+            "<strong>Fisiopatologia e Farmacologia de Primeira Linha (Pegadinha Clássica de Prova!):</strong> Pacientes negros hipertensos apresentam, com maior frequência, fenótipo de <strong>hipertensão sensível ao sal com atividade plasmática de renina baixa (hiporreninêmica) e expansão volêmica</strong>. Por essa razão fisiopatológica, quando utilizados em <em>monoterapia isolada</em>, os Inibidores da ECA (enalapril, captopril) e os BRAs (losartana) apresentam menor eficácia redutora pressórica e menor proteção contra AVC em pacientes negros do que os <strong>Diuréticos Tiazídicos (Clortalidona, Hidroclorotiazida, Indapamida)</strong> e os <strong>Bloqueadores dos Canais de Cálcio di-hidropiridínicos (Anlodipino)</strong>!",
+            "Portanto, as Diretrizes Brasileiras de Hipertensão Arterial e o JNC-8 preconizam que, na população negra sem doença renal crônica proteinúrica ou insuficiência cardíaca com FEVE reduzida, os fármacos de 1ª escolha preferenciais para início de tratamento são os <strong>Diuréticos Tiazídicos e/ou Bloqueadores dos Canais de Cálcio (BCC)</strong>! (Naturalmente, se o paciente negro tiver nefropatia diabética com albuminúria ou ICFEr, ou quando se utiliza combinação dupla, associa-se IECA ou BRA normalmente, lembrando que a incidência de <em>angioedema bradicinérgico induzido por IECA</em> é 3 a 4 vezes maior em pessoas negras).",
+            "<strong>Deficiência de Glicose-6-Fosfato Desidrogenase (G6PD):</strong> Enzimopatia ligada ao cromossomo X mais prevalente em afrodescendentes, causando crises de <strong>anemia hemolítica intravascular aguda não imune (com corpúsculos de Heinz e hemácias mordidas — <em>bite cells</em>)</strong> após exposição a estresse oxidativo por medicamentos como <strong>Primaquina, Tafenoquina, Dapsona, Nitrofurantoína, Sulfonamidas e Rasburicase</strong>.",
+            "<strong>Miomatose Uterina:</strong> Mulheres negras apresentam incidência 3 vezes maior de leiomiomas uterinos, com surgimento em idade mais jovem, tumores múltiplos e mais volumosos e maior taxa de anemia ferropriva severa por sangramento uterino anormal (menorragia/hipermenorreia)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "saude-populacao-lgbtqiapn-processo-transexualizador-nome-social",
+      0,
+      [
+        [
+          "2",
+          "4. Saúde da População LGBTQIAPN+, Nome Social e Processo Transexualizador no SUS"
+        ],
+        [
+          "p",
+          "A <strong>Política Nacional de Saúde Integral de Lésbicas, Gays, Bissexuais, Travestis e Transexuais (Política Nacional de Saúde Integral LGBT — Portaria GM/MS nº 2.836, de 1º de dezembro de 2011)</strong> foi instituída para enfrentar a discriminação por orientação sexual e identidade de gênero (LGBTfobia institucional) nos serviços de saúde, reconhecendo que o preconceito afasta essas pessoas da Atenção Primária, agrava o sofrimento mental (Modelo do Estresse de Minorias de Ilan Meyer) e produz barreiras severas ao cuidado preventivo."
+        ],
+        [
+          "3",
+          "4.1 Distinção Conceitual Obrigatória: Sexo Biológico, Identidade de Gênero e Orientação Sexual"
+        ],
+        [
+          "p",
+          "Para não cometer erros conceituais em questões de prova ou na prática clínica, domine os quatro eixos independentes da diversidade humana:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Sexo Biológico (ou Sexo Designado ao Nascer):</strong> Conjunto de características cromossômicas (XX, XY, variações), gonadais (ovários, testículos), hormonais e anatômicas genitais externas/internas com as quais o indivíduo nasce (fêmea, macho ou <strong>pessoa intersexo</strong> — quando há variações congênitas das características sexuais que não se encaixam nas definições típicas binárias de masculino ou feminino).",
+            "<strong>Identidade de Gênero:</strong> A experiência interna, profunda e individual que cada pessoa tem em relação ao gênero com o qual se identifica (que pode ou não corresponder ao sexo designado ao nascer):\n    <ul>\n      <li><strong>Pessoa Cisgênero (Cis):</strong> Identifica-se com o gênero que lhe foi designado ao nascer (ex.: nasceu com vulva/XX, foi registrada como menina e identifica-se como mulher).",
+            "<strong>Pessoa Transgênero (Trans — inclui Mulheres Trans, Travestis, Homens Trans e Pessoas Não-Binárias):</strong> Identifica-se com um gênero diferente daquele que lhe foi atribuído ao nascer.\n        <ul>\n          <li><strong>Mulher Transexual (Mulher Trans) e Travesti:</strong> Pessoa que foi designada do sexo masculino ao nascer (AMAB - <em>assigned male at birth</em>), mas possui identidade de gênero <strong>feminina</strong>. (O termo <em>Travesti</em> possui forte construção histórica, política e identitária latino-americana e brasileira, devendo ser sempre tratado no pronome feminino: <em>\"a travesti\"</em>!).",
+            "<strong>Homem Transexual (Homem Trans) e Pessoa Transmasculina:</strong> Pessoa que foi designada do sexo feminino ao nascer (AFAB - <em>assigned female at birth</em>), mas possui identidade de gênero <strong>masculina</strong>.",
+            "<strong>Pessoa Não-Binária:</strong> Pessoa cuja identidade de gênero não se restringe exclusivamente ao binário homem/mulher (podendo fluir entre gêneros, agênero, gênero-fluido)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n    </ul>\n  </li>\n  <li><strong>Expressão de Gênero:</strong> A forma como a pessoa manifesta socialmente seu gênero por meio de vestimentas, corte de cabelo, voz, gestos e corporeidade, independentemente de sua orientação sexual.</li>\n  <li><strong>Orientação Sexual (Afetivo-Sexual):</strong> A direção da atração afetiva, emocional e/ou sexual que uma pessoa sente por outras: <strong>Heterossexual</strong> (atração pelo gênero oposto ao seu), <strong>Homossexual</strong> (<em>Gays</em> e <em>Lésbicas</em> — atração pelo mesmo gênero), <strong>Bissexual / Pansexual</strong> (atração por mais de um gênero ou independentemente do gênero) e <strong>Assexual</strong> (ausência total ou parcial de atração sexual por outras pessoas, embora possa haver atração romântica)."
+        ],
+        [
+          "u",
+          [
+            "<em>Atenção para Provas:</em> Identidade de gênero não determina orientação sexual! Um <strong>Homem Trans</strong> (que nasceu com útero/ovários e se identifica como homem) pode ser heterossexual (se sente atração por mulheres), gay (se sente atração por outros homens), bissexual ou assexual! Da mesma forma, uma Mulher Trans pode ser heterossexual, lésbica ou bissexual."
+          ]
+        ],
+        [
+          "3",
+          "4.2 Direito ao Uso do Nome Social no SUS (Carta dos Direitos dos Usuários da Saúde)"
+        ],
+        [
+          "p",
+          "O respeito ao <strong>Nome Social</strong> e ao pronome correspondente à identidade de gênero autodeterminada é a porta de entrada do acolhimento equitativo no SUS. O <strong>Nome Social</strong> é a designação pela qual a pessoa travesti ou transexual se identifica e é socialmente reconhecida em sua comunidade, em contraste com o nome civil original de registro de nascimento (quando este ainda não foi retificado em cartório)."
+        ],
+        [
+          "u",
+          [
+            "<strong>Base Legal no SUS (Portaria GM/MS nº 1.820/2009 — Carta dos Direitos dos Usuários da Saúde e Decreto Federal nº 8.727/2016):</strong> Todo usuário do SUS tem o <strong>direito líquido e certo ao uso do Nome Social</strong> em todos os serviços de saúde (públicos e privados conveniados), no Cartão Nacional de Saúde (Cartão SUS), nos prontuários médicos e de enfermagem, nas receitas médicas, nos pedidos de exames, nas pulseiras de identificação hospitalar e na chamada oral na sala de espera!",
+            "<strong>Pegadinhas Clássicas de Provas sobre Nome Social e Retificação Civil:</strong>\n    <ol>\n      <li><strong>NÃO é necessário ter realizado cirurgia de redesignação sexual, hormonioterapia, laudo psiquiátrico/psicológico nem autorização judicial</strong> para ter o Nome Social incluído no Cartão SUS e respeitado na unidade de saúde! Basta a simples solicitação verbal da própria pessoa no balcão de recepção.",
+            "<strong>Menor de 18 anos (Adolescente Trans):</strong> O adolescente tem direito de solicitar a inclusão do Nome Social no Cartão SUS e no prontuário eletrônico (e-SUS APS) e de ser chamado pelo Nome Social e pronome correto pela equipe de saúde, independentemente de retificação judicial!",
+            "<strong>Retificação do Registro Civil em Cartório (Provimento CNJ nº 73/2018 e Decisão do STF na ADI 4.275):</strong> Desde 2018, o Supremo Tribunal Federal (STF) e o Conselho Nacional de Justiça (CNJ) garantem que qualquer pessoa trans maior de 18 anos pode alterar diretamente seu prenome e seu sexo/gênero na Certidão de Nascimento e no RG em qualquer Cartório de Registro Civil, <strong>sem necessidade de cirurgia transgenitalizadora, sem necessidade de tratamento hormonal, sem laudo médico/psicológico e sem ação judicial</strong>!"
+          ]
+        ],
+        [
+          "3",
+          "4.3 Processo Transexualizador no SUS e Resolução CFM nº 2.265/2019"
+        ],
+        [
+          "p",
+          "O <strong>Processo Transexualizador no SUS</strong> (regulamentado historicamente pela <strong>Portaria GM/MS nº 2.803/2013</strong>, que redefiniu e ampliou a Portaria nº 1.707/2008 para incluir também os Homens Trans e as Travestis!) organiza-se nas modalidades Ambulatorial (acompanhamento multiprofissional e hormonioterapia) e Hospitalar (cirurgias de afirmação de gênero e acompanhamento pré e pós-operatório). Em paralelo, a <strong>Resolução CFM nº 2.265/2019</strong> estabelece os critérios ético-normativos do Conselho Federal de Medicina para o cuidado às pessoas com incongruência de gênero no Brasil:"
+        ],
+        [
+          "t",
+          [
+            "Procedimento / Intervenção",
+            "Idade Mínima pela Portaria MS nº 2.803/2013 (Regras de Financiamento no SUS)",
+            "Idade Mínima pela Resolução CFM nº 2.265/2019 (Norma Ética Médica Vigente)"
+          ],
+          [
+            [
+              "<strong>Acompanhamento Multiprofissional e Psicossocial</strong>",
+              "Qualquer idade (acolhimento integral na APS e serviços habilitados)",
+              "Qualquer idade (crianças, adolescentes e adultos com equipe multiprofissional)"
+            ],
+            [
+              "<strong>Bloqueio Hormonal da Puberdade (Análogos de GnRH — ex.: Leuprorrelina)</strong>",
+              "Previsto em centros universitários/protocolos de pesquisa",
+              "A partir do estágio puberal <strong>Tanner II</strong> (exclusivamente em caráter experimental em protocolos de pesquisa em hospitais universitários, com anuência dos pais e assentimento do adolescente)"
+            ],
+            [
+              "<strong>Hormonioterapia Cruzada (Terapia Hormonal de Afirmação de Gênero)</strong>",
+              "<strong>18 anos</strong> (pelo texto original da Portaria MS 2.803/2013)",
+              "<strong>16 anos</strong> (pela Resolução CFM nº 2.265/2019!)*"
+            ],
+            [
+              "<strong>Procedimentos Cirúrgicos de Afirmação de Gênero (Mastectomia masculinizadora, Neocolpoplastia/Redesignação genital, Histerectomia, Tireoplastia)</strong>",
+              "<strong>21 anos</strong> (pelo texto original da Portaria MS 2.803/2013, após mínimo de 2 anos de acompanhamento multiprofissional)",
+              "<strong>18 anos</strong> (pela Resolução CFM nº 2.265/2019, após mínimo de <strong>1 ano</strong> de acompanhamento por equipe multiprofissional!)"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>*Nota importante para provas:</em> Caso a questão pergunte explicitamente \"segundo a Portaria MS nº 2.803/2013 do Processo Transexualizador no SUS\", as idades são <strong>18 anos para hormonioterapia</strong> e <strong>21 anos para cirurgia</strong> (com 2 anos de acompanhamento). Caso a questão pergunte \"segundo a Resolução CFM nº 2.265/2019\", as idades foram reduzidas para <strong>16 anos para hormonioterapia cruzada</strong> e <strong>18 anos para cirurgias</strong> (com 1 ano de acompanhamento multiprofissional, sendo vedadas cirurgias de afirmação de gênero em menores de 18 anos)."
+        ],
+        [
+          "3",
+          "4.4 Manejo Clínico da Hormonioterapia de Afirmação de Gênero e Rastreamentos na APS"
+        ],
+        [
+          "4",
+          "1. Hormonioterapia Feminilizante (Mulheres Trans e Travestis)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Regime Farmacológico Padrão:</strong> Combinação de <strong>Estrogênio</strong> (para induzir caracteres secundários femininos: desenvolvimento mamário/telarca, redistribuição ginecoide da gordura corporal para quadris e coxas, suavização da pele e redução da oleosidade) + <strong>Bloqueador Androgênico (Antiandrogênio)</strong> (para suprimir a testosterona endógena testicular a níveis femininos &lt; 50 ng/dL, reduzindo ereções espontâneas, libido masculina e velocidade de crescimento de pelos faciais/corporais).\n    <ul>\n      <li><strong>Estrogênios de Escolha:</strong> <strong>17-beta-estradiol oral</strong> (Valerato de estradiol 2 a 6 mg/dia) ou <strong>Estradiol transdérmico</strong> (gel ou adesivo) ou <strong>Cipionato/Valerato de estradiol injetável</strong>.\n        <ul>\n          <li><em>Regra de Segurança Crítica em Provas:</em> <strong>JAMAIS prescrever Etinilestradiol</strong> (presente na maioria dos anticoncepcionais combinados orais vendidos em farmácia e muito usado na automedicação por travestis e mulheres trans)! O <strong>etinilestradiol</strong> é um estrogênio sintético com potente passagem hepática que estimula maciçamente a síntese de fatores pró-coagulantes (fatores VII, VIII, X, fibrinogênio) e resistência à proteína C ativada, aumentando em até <strong>20 vezes o risco de Tromboembolismo Venoso (TVP/TEP), AVC isquêmico e IAM</strong>! Em mulheres trans com idade &gt; 40–45 anos, tabagistas, obesas ou com fatores de risco cardiovasculares, a via de escolha absoluta é o <strong>Estradiol Transdérmico (gel/adesivo)</strong>, pois evita o metabolismo de primeira passagem hepática e tem o menor risco trombogênico!"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n      <li><strong>Antiandrogênios de Escolha no Brasil:</strong> <strong>Espironolactona</strong> (100 a 200 mg/dia — antagonista do receptor androgênico e inibidor fraco da esteroidogênese; exige monitorização do <strong>Potássio sérico e função renal</strong> pelo risco de hipercalemia!) ou <strong>Acetato de Ciproterona</strong> (12,5 a 50 mg/dia — progestágeno antiandrogênico potente; exige monitorização de enzimas hepáticas, <strong>prolactina</strong> e atenção ao risco dose-dependente de meningioma em uso prolongado de altas doses). (Nota: caso a paciente realize cirurgia de orquiectomia bilateral/redesignação genital, suspende-se imediatamente o antiandrogênio, mantendo-se apenas o estradiol para proteção óssea e sintomática).</li>\n    </ul>\n  </li>\n  <li><strong>Efeitos Irreversíveis vs. Reversíveis e Silicone Industrial:</strong> Na mulher trans, o desenvolvimento mamário é <em>irreversível</em> (não desaparece se parar o hormônio), mas a voz grave masculina (já espessada na puberdade) <strong>NÃO afina com o uso de estrogênio</strong> (exigindo fonoterapia e/ou tireoplastia redutora do pomo-de-Adão/glotoplastia). Na APS, deve-se investigar ativamente e acolher sem julgamentos o histórico de aplicação clandestina de <strong>silicone líquido industrial (SLI)</strong> (que pode causar embolia pulmonar aguda por silicone ou siliconomas inflamatórios crônicos, migração gravitacional, úlceras cutâneas e hipercalcemia mediada por calcitriol produzido por macrófagos nos granulomas de corpo estranho).</li>\n</ul>"
+        ],
+        [
+          "4",
+          "2. Hormonioterapia Masculinizante (Homens Trans e Pessoas Transmasculinas)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Regime Farmacológico Padrão:</strong> Administração parenteral ou transdérmica de <strong>Testosterona</strong>:\n    <ul>\n      <li><strong>Cipionato de Testosterona</strong> (ex.: Deposteron 200 mg IM a cada 14 a 21 dias) ou <strong>Undecilato de Testosterona</strong> de longa ação (1.000 mg IM a cada 10 a 12 semanas) ou <strong>Testosterona gel transdérmico 1%</strong> diário."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Efeitos Esperados:</strong> Cessação da menstruação (amenorreia ocorre geralmente em 1 a 6 meses), <strong>engrossamento irreversível da voz</strong> (hipertrofia das pregas vocais), <strong>aumento irreversível do clitóris (clitoromegalia)</strong>, surgimento de barba e pelos corporais (hirsutismo desejado), aumento da massa muscular magra, redistribuição androgênica da gordura e possível alopecia androgenética e acne.</li>\n  <li><strong>Principal Risco / Monitorização Laboratorial Obrigatória da Testosterona (Muito Cobrado em Provas!):</strong> A testosterona estimula a síntese renal de eritropoietina e suprime a hepcidina na medula óssea, tendo como principal efeito adverso dose-limitante a <strong>ERITROCITOSE / POLICITEMIA SECUNDÁRIA (elevação do Hematócrito &gt; 50% a 54%)</strong>, que aumenta a viscosidade sanguínea e o risco trombótico! Além disso, monitoram-se perfil lipídico (pode reduzir HDL e elevar LDL/triglicerídeos), enzimas hepáticas, pressão arterial e níveis séricos de testosterona total (alvo: faixa fisiológica masculina de 300 a 700–800 ng/dL).</li>\n</ul>"
+        ],
+        [
+          "4",
+          "3. Rastreamento Oncológico e Saúde Sexual/Reprodutiva Baseada em Órgãos (Organ-Based Screening)"
+        ],
+        [
+          "p",
+          "Na Medicina de Família e Comunidade, vale a regra de ouro: <strong>\"Rastreia-se o órgão que a pessoa possui anatomicamente!\"</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Rastreamento do Câncer do Colo do Útero (Citopatológico / Papanicolaou ou Teste DNA-HPV):</strong>\n    <ul>\n      <li><strong>Homens Trans que não realizaram histerectomia total (possuem colo uterino):</strong> Devem realizar o rastreamento do câncer de colo uterino exatamente nas mesmas faixas etárias e periodicidade recomendadas pelo Ministério da Saúde (dos <strong>25 aos 64 anos</strong>, a cada 3 anos após dois exames anuais consecutivos normais, se já tiveram prática sexual com penetração/contato genital)! Importante lembrar que a testosterona causa <em>atrofia do epitélio vaginal/cervical</em>, tornando o exame especular potencialmente doloroso e aumentando a taxa de amostras \"insatisfatórias por celularidade escassa\" (podendo-se usar estriol tópico vaginal por 1 a 2 semanas antes da coleta ou autocoleta de DNA-HPV, com abordagem extremamente acolhedora e especulo pequeno/virginal).",
+            "<strong>Mulheres Lésbicas (Mulheres Cis que fazem sexo exclusivamente com mulheres):</strong> <strong>TAMBÉM DEVEM realizar o rastreamento de câncer do colo do útero normalmente (25 a 64 anos)!</strong> É um erro médico gravíssimo (e uma pegadinha clássica de prova!) dispensar mulheres lésbicas do Papanicolaou: o HPV é facilmente transmitido no sexo entre mulheres por contato mucosa-mucosa (vulvovaginal, oral-genital), dedos e compartilhamento de acessórios sexuais (<em>dildos</em>/vibradores)!"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Anticoncepção no Homem Trans:</strong> <strong>A TESTOSTERONA NÃO É MÉTODO ANTICONCEPCIONAL!</strong> Embora a testosterona induza amenorreia na maioria dos homens trans, pode ocorrer ovulação esporádica. Se o homem trans possui útero/ovários e mantém relações sexuais com penetração peniana (ex.: parceiro homem cis ou mulher trans sem orquiectomia), deve-se ofertar método contraceptivo eficaz (preferencialmente métodos sem estrogênio, como <strong>DIU de cobre, DIU de levonorgestrel, implante subdérmico de etonogestrel ou acetato de medroxiprogesterona trimestral</strong>). Além disso, a testosterona é <strong>teratogênica (Categoria X na gestação — causa virilização de feto XX)</strong>, devendo ser suspensa imediatamente caso ocorra gravidez planejada ou acidental!</li>\n  <li><strong>Rastreamento em Mulheres Trans:</strong> Mulheres trans mantêm a <strong>próstata</strong> (mesmo quando submetidas à cirurgia de redesignação genital / neocolpoplastia, a próstata <em>não</em> é retirada para evitar incontinência urinária grave!). Além disso, mulheres trans em uso prolongado de hormonioterapia estrogênica (&ge; 5 anos) a partir dos 50 anos têm indicação de rastreamento mamográfico de câncer de mama.</li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "saude-indigena-sasi-sus-dsei-casai",
+      0,
+      [
+        [
+          "2",
+          "5. Saúde dos Povos Indígenas: SASI-SUS, DSEI, Polos-Base e CASAI"
+        ],
+        [
+          "p",
+          "O Brasil abriga mais de 305 etnias indígenas distintas, falantes de mais de 274 línguas, com cosmovisões, medicinas tradicionais e perfis epidemiológicos extremamente diversos. Para garantir o direito constitucional à atenção diferenciada, foi instituído pela <strong>Lei Federal nº 9.836, de 23 de setembro de 1999 (conhecida como \"Lei Arouca\", que acrescentou o Capítulo V — artigos 19-A a 19-H — à Lei Orgânica da Saúde nº 8.080/1990)</strong> o <strong>Subsistema de Atenção à Saúde Indígena (SASI-SUS)</strong>, articulado à <strong>Política Nacional de Atenção à Saúde dos Povos Indígenas (PNASPI — Portaria MS nº 254/2002)</strong> e gerido no âmbito do Ministério da Saúde pela <strong>SESAI (Secretaria de Saúde Indígena)</strong>."
+        ],
+        [
+          "3",
+          "5.1 Princípios da Lei Arouca (Lei nº 9.836/1999) — Pontos Mais Cobrados em Provas!"
+        ],
+        [
+          "p",
+          "As bancas de Residência Médica, Revalida e ENAMED adoram cobrar os artigos 19-A a 19-H da Lei 8.080/1990 introduzidos pela Lei Arouca. Memorize os quatro pilares jurídicos e financeiros:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Financiamento Primário pela União (Art. 19-C e 19-E):</strong> Caberá à <strong>União (Governo Federal / Ministério da Saúde)</strong>, com seus recursos próprios, financiar o Subsistema de Atenção à Saúde Indígena! Estados, municípios e outras instituições governamentais e não-governamentais poderão atuar de forma <em>complementar</em> no custeio e execução das ações.",
+            "<strong>Organização Territorial em Distritos Sanitários Especiais Indígenas — DSEIs (Art. 19-G):</strong> O SASI-SUS é descentralizado, hierarquizado e regionalizado, tendo como base territorial e operacional os <strong>Distritos Sanitários Especiais Indígenas (DSEIs)</strong>.\n    <ul>\n      <li><em>Pegadinha Clássica de Prova sobre o Território do DSEI:</em> <strong>A delimitação territorial de um DSEI NÃO obedece aos limites geográficos de um município ou de um estado da federação!</strong> O DSEI é definido a partir de critérios <strong>etno-epidemiológicos, antropológicos, socioculturais, demográficos e geográficos (bacias hidrográficas, terras indígenas tradicionais e caminhos de circulação daquela etnia)</strong>! Por isso, um único DSEI (como o DSEI Yanomami ou o DSEI Litoral Sul) frequentemente abrange terras localizadas em vários municípios e em mais de um Estado simultaneamente! Atualmente, o Brasil conta com <strong>34 DSEIs</strong>.",
+            "<strong>Abordagem Diferenciada, Global e Respeito à Medicina Tradicional Indígena (Art. 19-F):</strong> Dever-se-á obrigatoriamente levar em consideração a realidade local e as especificidades da cultura dos povos indígenas, promovendo a <strong>articulação entre os saberes biomédicos ocidentais e os sistemas tradicionais indígenas de cura (pajés, xamãs, rezadores, raizeiros e parteiras tradicionais)</strong>, sem jamais substituir ou proibir os rituais de cura tradicionais quando não nocivos.",
+            "<strong>Controle Social Indígena:</strong> Exerce-se por meio dos <strong>Conselhos Locais de Saúde Indígena</strong> (nas aldeias/polos-base, compostos exclusivamente por representantes indígenas!), dos <strong>Conselhos Distritais de Saúde Indígena (CONDISI)</strong> (paritários: 50% usuários indígenas, 25% trabalhadores e 25% gestores/prestadores) e do Fórum de Presidentes de CONDISI (FPCONDISI)."
+          ]
+        ],
+        [
+          "3",
+          "5.2 A Rede de Serviços do SASI-SUS: Da Aldeia à Alta Complexidade"
+        ],
+        [
+          "p",
+          "O fluxo assistencial do SASI-SUS organiza-se de forma escalonada e articulada com a rede do SUS municipal/estadual:"
+        ],
+        [
+          "t",
+          [
+            "Nível / Estrutura do SASI-SUS",
+            "Composição e Localização",
+            "Função Assistencial e Operacional"
+          ],
+          [
+            [
+              "<strong>1. Postos de Saúde nas Aldeias e Equipes Multidisciplinares de Saúde Indígena (EMSI)</strong>",
+              "Dentro das aldeias indígenas. Composta por Médico, Enfermeiro, Cirurgião-Dentista, Técnicos de Enfermagem, <strong>Agente Indígena de Saúde (AIS)</strong> e <strong>Agente Indígena de Saneamento (AISAN)</strong>.",
+              "Atenção primária <em>in loco</em>, visitas domiciliares/aldeias, vacinação, pré-natal, acompanhamento de crescimento/nutrição infantil, vigilância de malária/tuberculose/diarreias e primeiros socorros. O <strong>AIS</strong> e o <strong>AISAN</strong> são obrigatoriamente moradores indígenas da própria comunidade, atuando como mediadores interculturais e bilíngues!"
+            ],
+            [
+              "<strong>2. Polo-Base (Tipo I ou Tipo II)</strong>",
+              "Localizado em uma aldeia estratégica central (Tipo I) ou no município de referência mais próximo (Tipo II).",
+              "Primeira instância de referência para os AIS/AISAN das aldeias; sede administrativa e técnica da EMSI, onde são realizados atendimentos clínicos de maior complexidade primária, exames básicos, estabilização de urgências e capacitação."
+            ],
+            [
+              "<strong>3. Casa de Saúde Indígena (CASAI)</strong>",
+              "Localizada nos municípios de referência onde estão situados os ambulatórios especializados e hospitais do SUS.",
+              "<strong>Atenção à Pegadinha de Prova: A CASAI NÃO é um hospital!</strong> A CASAI é uma unidade de <strong>apoio, acolhimento, alojamento e assistência de enfermagem 24h</strong> destinada a receber, alojar e alimentar o paciente indígena e seu acompanhante quando encaminhados da aldeia para a cidade para realizar consultas especializadas, exames diagnósticos, tratamentos prolongados (ex.: quimioterapia, hemodiálise, TB) ou convalescença pós-alta hospitalar antes do retorno à aldeia!"
+            ],
+            [
+              "<strong>4. Rede Hospitalar e Ambulatorial Especializada do SUS</strong>",
+              "Hospitais municipais, estaduais, federais e universitários pactuados.",
+              "Atendimento de média e alta complexidade (cirurgias, UTI, partos de alto risco), com incentivo financeiro federal específico (IAE-PI) para hospitais que adaptam suas enfermarias à cultura indígena (ex.: instalação de ganchos para redes de dormir, dieta culturalmente adaptada, presença de intérpretes e permissão para visita do pajé)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "5.3 Perfil Epidemiológico dos Povos Indígenas (Dupla / Tripla Carga de Doenças)"
+        ],
+        [
+          "p",
+          "Os povos indígenas brasileiros vivenciam uma transição epidemiológica incompleta e polarizada:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Altíssima carga de doenças infecciosas, parasitárias e carenciais na infância:</strong> A taxa de mortalidade infantil indígena chega a ser 2 a 3 vezes superior à média nacional, puxada por <strong>pneumonias/infecções respiratórias agudas (principal causa de óbito em crianças indígenas!), diarreias agudas e desidratação, desnutrição energético-proteica grave (baixa estatura para a idade e déficit ponderal), anemia ferropriva severa, malária (<em>Plasmodium vivax</em> e <em>Plasmodium falciparum</em> na Amazônia Legal), tuberculose, geo-helmintíases, tracoma e oncocercose</strong>.",
+            "<strong>Crescimento explosivo de Doenças Crônicas Não Transmissíveis (DCNT):</strong> Nas aldeias com maior contato interétnico, perda territorial e substituição da dieta tradicional (caça, pesca, mandioca) por alimentos ultraprocessados industrializados e refrigerantes, observa-se epidemia acelerada de <strong>obesidade, diabetes mellitus tipo 2, hipertensão arterial sistêmica e dislipidemia</strong>.",
+            "<strong>Agravos Psicossociais e Causas Externas:</strong> Elevadíssimas taxas de <strong>suicídio em jovens e adolescentes indígenas</strong> (que chegam a ser 3 a 6 vezes maiores que na população não-indígena brasileira, associadas ao sofrimento de perda territorial, conflitos fundiários, desestruturação cultural e uso prejudicial de álcool) e intoxicação crônica por <strong>mercúrio (metilmercúrio)</strong> decorrente do garimpo ilegal em rios amazônicos, causando síndrome neurológica de Minamata (ataxia cerebelar, constrição concêntrica do campo visual, parestesias periorais/extremidades e paralisia cerebral congênita em fetos expostos)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "populacao-privada-de-liberdade-pnaisp-campo-floresta-aguas",
+      0,
+      [
+        [
+          "2",
+          "6. População Privada de Liberdade (PNAISP) e Populações do Campo, da Floresta e das Águas"
+        ],
+        [
+          "p",
+          "Para completar o domínio integral das Políticas Nacionais de Promoção da Equidade no SUS cobradas nas provas de Medicina de Família e Comunidade e Saúde Coletiva, analisaremos as diretrizes normativas e clínicas da <strong>Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional (PNAISP)</strong> e da <strong>Política Nacional de Saúde Integral das Populações do Campo, da Floresta e das Águas (PNSIPCFA)</strong>."
+        ],
+        [
+          "3",
+          "6.1 Saúde Prisional: PNAISP (Portaria Interministerial MS/MJ nº 1/2014)"
+        ],
+        [
+          "p",
+          "Antes de 2014, vigorava o antigo Plano Nacional de Saúde no Sistema Penitenciário (PNSSP, de 2003), que possuía uma grave limitação: atendia apenas os presos já <em>condenados</em> (excluindo os presos provisórios em delegacias e cadeias públicas) e funcionava de forma isolada da Rede de Atenção à Saúde. Para corrigir essa distorção e cumprir a <strong>Lei de Execução Penal (Lei nº 7.210/1984)</strong>, foi instituída em 2014 a <strong>PNAISP (Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional)</strong>."
+        ],
+        [
+          "4",
+          "Diretrizes Estruturantes da PNAISP para as Provas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Unidade Básica de Saúde Prisional como Ponto da RAS:</strong> O grande salto conceitual da PNAISP é determinar que <strong>cada unidade prisional passe a ser visualizada e habilitada como um ponto de atenção da Rede de Atenção à Saúde (RAS) do SUS, equivalente a uma Unidade Básica de Saúde (UBS) intramuros</strong>, ofertando ações de Atenção Primária à Saúde por meio das <strong>Equipes de Atenção Primária Prisional (eAPP)</strong>!",
+            "<strong>Ampliação do Público-Alvo (Integralidade):</strong> A PNAISP garante o acesso a <strong>TODAS as pessoas privadas de liberdade sob custódia do Estado</strong> — incluindo presos provisórios (sem condenação definitiva), presos condenados em regime fechado, semiaberto e aberto, além de pacientes submetidos a medida de segurança em Hospitais de Custódia e Tratamento Psiquiátrico (HCTP). Além disso, as ações de promoção da saúde e prevenção de agravos (ex.: vacinação, rastreamento de tuberculose e saúde do trabalhador) estendem-se também aos <strong>trabalhadores do sistema prisional (policiais penais / agentes penitenciários)</strong> e aos familiares/visitantes!",
+            "<strong>Modalidades de Equipes de Atenção Primária Prisional (eAPP — atualização Portaria GM/MS nº 2.298/2021):</strong> As equipes são dimensionadas conforme o número de pessoas custodiadas e o perfil epidemiológico, contando com equipe multiprofissional nuclear (Médico, Enfermeiro, Técnico/Auxiliar de Enfermagem, Cirurgião-Dentista e Auxiliar/Técnico em Saúde Bucal) e podendo ser acrescida de <strong>Equipe Complementar Psicossocial</strong> (Psicólogo, Assistente Social, Farmacêutico, Fisioterapeuta ou Terapeuta Ocupacional), com cargas horárias que variam de 6h a 30h semanais (eAPP Essencial ou eAPP Ampliada)."
+          ]
+        ],
+        [
+          "4",
+          "Clínica e Epidemiologia no Sistema Prisional Brasileiro (Foco Absoluto em Provas!)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Tuberculose nas Prisões (Emergência Sanitária Nacional):</strong> A incidência de Tuberculose na população privada de liberdade no Brasil é cerca de <strong>30 a 35 vezes maior</strong> que na população geral livre (~1.000 a 1.500 casos por 100.000 presos!), impulsionada pela superlotação carcerária extrema, celas úmidas, escuras e sem ventilação cruzada (ausência de radiação ultravioleta solar que inativa o bacilo de Koch) e desnutrição.\n    <ul>\n      <li><strong>Triagem na Porta de Entrada (Admissão Prisional):</strong> Toda pessoa que ingressa no sistema prisional deve passar por avaliação de saúde em até 7 dias, realizando testagem rápida para HIV, Sífilis, Hepatites B e C e <strong>busca ativa sistemática de Tuberculose</strong>!",
+            "<strong>Definição de Sintomático Respiratório no Presídio:</strong> Tal como na população de rua, investiga-se tuberculose em qualquer pessoa privada de liberdade com <strong>TOSSE DE QUALQUER DURAÇÃO</strong> (ou ainda por rastreamento radiológico de tórax em massa independentemente de sintomas, quando disponível)!",
+            "<strong>Diagnóstico e Tratamento Obrigatório:</strong> Solicitar <strong>TRM-TB (GeneXpert) + Cultura com Teste de Sensibilidade (TSA) OBRIGATÓRIA em 100% dos casos prisionais</strong> (devido à elevada circulação de cepas resistentes à isoniazida e rifampicina!). O tratamento deve ser realizado em 100% dos casos sob <strong>Tratamento Diretamente Observado (TDO)</strong> diário pela equipe de enfermagem prisional.",
+            "<strong>Isolamento Respiratório na Prisão:</strong> O preso diagnosticado com tuberculose pulmonar bacilífera deve permanecer em isolamento respiratório (cela ventilada separada ou enfermaria) durante os <strong>primeiros 15 dias de tratamento efetivo</strong> (período após o qual a infectividade cai drasticamente), não devendo sofrer transferência de unidade prisional sem comunicação prévia e garantia de continuidade imediata dos comprimidos!"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Saúde Materno-Infantil nas Prisões Femininas (Regras de Bangkok e Marco Legal da Primeira Infância):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Garantia de pré-natal integral, parto humanizado e <strong>PROIBIÇÃO ABSOLUTA DO USO DE ALGEMAS em mulheres presas durante o trabalho de parto, durante o parto e no período de puerpério imediato</strong> (Lei Federal nº 13.434/2017 e Súmula Vinculante nº 11 do STF)!",
+            "Direito à permanência do bebê com a mãe em berçário/ala materno-infantil por no mínimo 6 meses para aleitamento materno exclusivo, e direito à substituição da prisão preventiva por <strong>prisão domiciliar</strong> para gestantes e mães de crianças de até 12 anos de idade ou com deficiência (salvo crimes cometidos com violência ou grave ameaça ou contra os próprios descendentes — Art. 318-A do Código de Processo Penal)."
+          ]
+        ],
+        [
+          "3",
+          "6.2 Populações do Campo, da Floresta e das Águas (PNSIPCFA — Portaria MS nº 2.866/2011)"
+        ],
+        [
+          "p",
+          "Compreende camponeses, agricultores familiares, trabalhadores rurais assentados ou acampados da reforma agrária, comunidades <strong>quilombolas</strong>, populações <strong>ribeirinhas</strong>, pescadores artesanais, marisqueiras, seringueiros, castanheiros e quebradeiras de coco babaçu."
+        ],
+        [
+          "u",
+          [
+            "<strong>Arranjos Organizativos Específicos na APS (PNAB):</strong>\n    <ol>\n      <li><strong>Equipes de Saúde da Família Ribeirinhas (eSFR):</strong> Desenvolvem suas ações na Amazônia Legal e no Pantanal Sul-Mato-Grossense, utilizando embarcações de pequeno porte para acessar comunidades dispersas às margens de rios e igarapés, contando com pontos de apoio terrestre e horário/escala diferenciados (ex.: até 14 dias consecutivos embarcado na área, seguidos de folga proporcional).",
+            "<strong>Unidades Básicas de Saúde Fluviais (UBSF):</strong> São <strong>embarcações (navios/barcos-hospital de atenção primária)</strong> que comportam dentro de sua estrutura física toda uma Equipe de Saúde da Família Fluvial (eSFF), consultório médico, de enfermagem, odontológico, sala de vacinas, farmácia e <strong>laboratório de análises clínicas a bordo</strong>, percorrendo as calhas dos rios para atender comunidades ribeirinhas isoladas!",
+            "<strong>Agravos Ocupacionais e Ambientais Específicos (Altíssimo Rendimento em Provas!):</strong>\n    <ol>\n      <li><strong>Intoxicação Aguda e Crônica por Agrotóxicos (Defensivos Agrícolas):</strong> O Brasil é um dos maiores consumidores mundiais de agrotóxicos. Na agricultura familiar e monoculturas, destacam-se:\n        <ul>\n          <li><strong>Inibidores da Colinesterase — Organofosforados (ex.: Malation, Clorpirifós, Metamidofós — ligação irreversível à acetilcolinesterase) e Carbamatos (ex.: Aldicarbe/\"Chumbinho\", Carbofurano — ligação reversível):</strong> Causam a clássica <strong>Síndrome Colinérgica Aguda (DUMBELS)</strong>: <em>Diarreia, Urinação (incontinência), Miose puntiforme, Broncorreia/Broncoespasmo (\"pulmão cheio/molhado\"), Êmese, Lacrimejamento, Sialorreia, Sudorese profusa, Bradicardia (efeitos muscarínicos)</em> + <em>Fasciculações musculares, cãibras e fraqueza/paralisia diafragmática (efeitos nicotínicos)</em> + <em>Convulsões e coma (SNC)</em>. <strong>Tratamento de Emergência:</strong> Descontaminação cutânea (retirar roupas contaminadas e lavar pele com água e sabão com equipe paramentada com EPI!) + <strong>Atropina EV em doses dobradas a cada 5 minutos</strong> até <em>atropinização</em> (critério de sucesso: <strong>secagem das secreções brônquicas / ausculta pulmonar limpa</strong>, e NÃO a midríase!) + <strong>Pralidoxima (Contrathion)</strong> nos casos graves por organofosforados para reativar a acetilcolinesterase antes do fenômeno de <em>aging</em> (envelhecimento da ligação). <strong>Notificação Compulsória no SINAN:</strong> Toda suspeita de intoxicação exógena por agrotóxico é de <strong>Notificação Compulsória Semanal</strong> (e se for acidente de trabalho grave/fatal ou tentativa de suicídio, notificação <strong>Imediata em 24h</strong>)!",
+            "<strong>Herbicidas Dipiridílicos — Paraquat:</strong> Altamente letal; acumula-se seletivamente nos pneumócitos tipo I e II, gerando radicais livres superóxidos que causam <strong>fibrose pulmonar aguda irreversível</strong>, além de necrose tubular aguda e hepatotoxicidade. <strong>Pegadinha Crítica de Prova:</strong> Na intoxicação por Paraquat, <strong>O OXIGÊNIO SUPLEMENTAR É CONTRAINDICADO</strong> (salvo hipoxemia extrema &lt; 50 mmHg), pois o $O_2$ serve de substrato para multiplicar a formação de espécies reativas de oxigênio e acelera fulminantemente a fibrose pulmonar!",
+            "<strong>Herbicidas Derivados do Ácido Fenoxiacético (2,4-D) e Glifosato:</strong> Associados a dermatites de contato, neuropatia periférica, desregulação endócrina e aumento do risco de Linfoma Não-Hodgkin e mieloma múltiplo na exposição ocupacional crônica."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n      <li><strong>Doença da Folha Verde do Tabaco (<em>Green Tobacco Sickness</em>):</strong> Intoxicação aguda ocupacional por <strong>nicotina absorvida por via transdérmica</strong> (pele das mãos e antebraços) em agricultores familiares que colhem folhas de fumo molhadas pelo orvalho da manhã ou chuva sem luvas impermeáveis. Quadro clínico: náuseas, vômitos intensos, tontura, palidez, sialorreia, sudorese fria, cefaleia e oscilação pressórica/bradicardia. Tratamento: lavar imediatamente a pele com água e sabão (não usar álcool, pois aumenta a absorção cutânea!), hidratação venosa, antieméticos (ondansetrona/dimenidrinato) e afastamento das folhas úmidas / uso de EPI impermeável.</li>\n      <li><strong>Acidentes por Animais Peçonhentos (Ofidismo — <em>Bothrops, Crotalus, Lachesis, Micrurus</em> — e Escorpionismo) e Doença dos Pescadores/Marisqueiras:</strong> Lesões por esforço repetitivo (LER/DORT), dermatofitoses/candidíase interdigital crônica pela imersão na água, acidentes por arraias, bagres e peixe-escorpião (venenos termolábeis cujo alívio álgico imediato na APS ribeirinha é a <strong>imersão do membro afetado em água morna/quente tolerável a 40–45°C por 30 a 90 minutos</strong> para desnaturar a toxina proteica!).</li>\n    </ol>\n  </li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-resolvidos-aula-221",
+      0,
+      [
+        [
+          "2",
+          "7. Casos Clínicos Resolvidos e Raciocínio Diagnóstico-Terapêutico"
+        ],
+        [
+          "p",
+          "A seguir, apresentamos 4 casos clínicos detalhados que articulam as Políticas Nacionais de Equidade no SUS, o manejo clínico-epidemiológico na População em Situação de Rua, a Saúde da População Negra, o Cuidado à População Trans na APS e a Saúde Indígena/Populações do Campo."
+        ],
+        [
+          "3",
+          "Caso Clínico 1: População em Situação de Rua, Consultório na Rua, Tuberculose e Redução de Danos"
+        ],
+        [
+          "p",
+          "<strong>Apresentação do Caso:</strong> Carlos, 38 anos, homem negro em situação de rua há 4 anos, usuário de álcool e crack, é abordado em uma praça pública por uma Equipe de Consultório na Rua (eCR Modalidade III). Ele relata tosse produtiva com laivos de sangue há 6 dias, febre vespertina não aferida, sudorese noturna profusa e emagrecimento acentuado nas últimas semanas, além de apresentar múltiplas escoriações pruriginosas em espaços interdigitais das mãos, punhos e axilas, e uma úlcera superficial dolorosa mas de fundo limpo e bordas endurecidas na glande peniana (surgida há 10 dias e indolor à palpação). Ele não possui documento de identidade (RG perdido em ação de remoção urbana) nem comprovante de residência. Ao ser levado à Unidade Básica de Saúde (UBS) de referência do território para coleta de exames, um funcionário da recepção recusa-se a abrir o prontuário alegando que <em>\"sem RG, sem comprovante de endereço fixo e sem parar de usar crack por pelo menos 30 dias, o sistema não permite cadastrar nem iniciar tratamento\"</em>."
+        ],
+        [
+          "4",
+          "Análise Clínica, Normativa e Conduta Passo a Passo:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Ilegalidade da Recusa na Recepção (Portaria MS nº 940/2011 e PNAB):</strong>\n    <ul>\n      <li>A recusa de atendimento configura grave violação ética e legal (vulnerabilidade programática e racismo/aporofobia institucional). A Portaria MS nº 940/2011 <strong>proíbe expressamente exigir comprovante de residência ou documento de identidade</strong> para cadastro no Cartão SUS e atendimento da população em situação de rua! O cadastro deve ser feito imediatamente utilizando o endereço da própria UBS ou do Centro POP.",
+            "Da mesma forma, exigir abstinência de crack/álcool como pré-requisito para tratar tuberculose ou sífilis viola frontalmente a diretriz da <strong>Redução de Danos</strong> e o princípio da Universalidade e Equidade do SUS.",
+            "<strong>Investigação e Manejo da Tuberculose Pulmonar (Tosse de 6 dias na Rua):</strong>\n    <ul>\n      <li>Embora na população geral o sintomático respiratório seja definido por tosse &ge; 3 semanas (ou &ge; 2 semanas na busca ativa), na <strong>População em Situação de Rua (assim como em PVHIV, privados de liberdade e indígenas)</strong>, investiga-se tuberculose diante de <strong>TOSSE DE QUALQUER DURAÇÃO</strong>! Portanto, com 6 dias de tosse produtiva, febre e emagrecimento, Carlos é um sintomático respiratório prioritário.",
+            "<strong>Exames Obrigatórios Imediatos:</strong> Coletar escarro no ato da abordagem (<em>spot sputum</em>) para <strong>Teste Rápido Molecular para Tuberculose (TRM-TB / GeneXpert MTB/RIF)</strong> + <strong>Cultura para micobactérias com Teste de Sensibilidade (TSA)</strong> (obrigatória em 100% dos casos de população em situação de rua pelo alto risco de TB drogarresistente!), além de Radiografia de Tórax.",
+            "Confirmado TRM-TB positivo (sensível à rifampicina), inicia-se o esquema <strong>RIPE (2RHZE / 4RH)</strong> sob <strong>Tratamento Diretamente Observado (TDO) diário itinerante</strong> pela equipe da eCR (Agente Social / Técnico de Enfermagem), associado a suporte nutricional (Piridoxina — Vitamina B6 50 mg/dia para prevenir neuropatia periférica pela isoniazida em paciente etilista/desnutrido!) e articulação com o Centro POP e Consultório na Rua/CAPS AD.",
+            "<strong>Manejo Imediato da Úlcera Genital (Cancro Duro / Sífilis Primária) e Escabiose na Rua:</strong>\n    <ul>\n      <li>Realizar imediatamente os 4 Testes Rápidos por punção digital (HIV, Sífilis, Hepatite B e Hepatite C). A presença de úlcera genital única, indolor, de fundo limpo e base infiltrada (cancro duro) com Teste Rápido de Sífilis reagente (ou mesmo se o teste rápido ainda estiver na janela imunológica da sífilis primária precoce!) indica tratamento imediato na mesma visita com <strong>Penicilina G Benzatina 2.400.000 UI intramuscular em dose única (1.200.000 UI em cada glúteo)</strong> para sífilis recente, coletando VDRL quantitativo para controle de cura.",
+            "Para a escabiose (sarna) em pessoa em situação de rua sem acesso a banheiro e sem roupas de cama para ferver, a conduta de escolha de alta efetividade prática é a <strong>Ivermectina oral (200 mcg/kg em dose única observada, ex.: 2 comprimidos de 6 mg para 60 kg, repetida em 7 a 14 dias)</strong>!"
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Saúde Integral da População LGBTQIAPN+ — Homem Trans e Mulher Trans na APS"
+        ],
+        [
+          "p",
+          "<strong>Apresentação do Caso:</strong> Na agenda da manhã de uma médica de família e comunidade, são atendidos dois pacientes transgêneros:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Atendimento A (Lucas, 28 anos, Homem Trans):</strong> Designado do sexo feminino ao nascer, identifica-se como homem trans. Realizou mastectomia masculinizadora bilateral há 2 anos, mas manteve útero, ovários e canal vaginal (não deseja histerectomia). Está em uso regular de Cipionato de Testosterona 200 mg IM a cada 14 dias há 3 anos, encontrando-se em amenorreia há 2 anos e meio. Comparece para exames de rotina e relata que iniciou relacionamento afetivo-sexual há 3 meses com um homem cisgênero (praticando sexo vaginal receptivo sem preservativo), dizendo estar tranquilo quanto a gravidez porque <em>\"como uso testosterona e não menstruo há anos, sou estéril\"</em>. Nunca colheu exame citopatológico do colo do útero (Papanicolaou). Seus exames trazem: Hemoglobina = 18,4 g/dL; Hematócrito = 55,8%; Testosterona total = 920 ng/dL; PA = 138/88 mmHg.",
+            "<strong>Atendimento B (Bruna, 44 anos, Mulher Trans):</strong> Designada do sexo masculino ao nascer, identifica-se como mulher trans. Ainda não retificou o registro civil em cartório. Ao chegar à recepção, pediu a inclusão do Nome Social \"Bruna\" no Cartão SUS. É tabagista (20 maços-ano), sedentária, obesa grau I (IMC 32 kg/m²) e relata que, por conta própria (orientada por amigas), compra na farmácia e toma diariamente 3 comprimidos de um anticoncepcional oral combinado contendo <strong>Etinilestradiol 35 mcg + Acetato de Ciproterona 2 mg</strong> há 1 ano para feminilização corporal."
+          ]
+        ],
+        [
+          "4",
+          "Análise Clínica e Conduta Baseada em Evidências para Ambos os Pacientes:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Conduta no Atendimento A (Lucas — Homem Trans):</strong>\n    <ul>\n      <li><strong>Manejo da Policitemia / Eritrocitose Induzida por Testosterona:</strong> O Hematócrito de Lucas está em <strong>55,8% (&gt; 54%!)</strong> com testosterona supraterapêutica (920 ng/dL). A eritrocitose secundária é o principal efeito adverso grave da hormonioterapia masculinizante, elevando o risco de eventos tromboembólicos. Conduta: <strong>reduzir a dose ou espaçar o intervalo da aplicação intramuscular de Cipionato de Testosterona</strong> (ex.: passar de 14/14 dias para 21/21 dias, ou substituir por testosterona gel transdérmico diário, que produz menos picos séricos e menor estímulo eritropoiético!), mantendo o alvo de testosterona entre 300 e 700 ng/dL e hematócrito &lt; 50–52%.",
+            "<strong>Anticoncepção e Prevenção de ISTs:</strong> Esclarecer imediatamente que <strong>a testosterona NÃO é método anticoncepcional seguro</strong> (mesmo em amenorreia, pode haver ovulação escape) e que a testosterona é <strong>altamente teratogênica (Categoria X)</strong>! Após descartar gestação atual com beta-hCG, ofertar contracepção eficaz de longa duração livre de estrogênio (como <strong>DIU de Cobre, DIU de Levonorgestrel ou Implante subdérmico de Etonogestrel</strong>, que não interferem na masculinização!), além de testagem rápida para ISTs, preservativos e oferta de <strong>PrEP (Profilaxia Pré-Exposição ao HIV com Tenofovir + Entricitabina)</strong> caso mantenha exposição desprotegida.",
+            "<strong>Rastreamento do Câncer do Colo do Útero:</strong> Como Lucas tem 28 anos (faixa de 25 a 64 anos), possui colo uterino (não fez histerectomia total) e tem prática sexual com penetração, <strong>tem indicação formal de coleta de Citopatológico Cervical (Papanicolaou) ou Teste DNA-HPV</strong>! Para evitar dor e sangramento no exame especular devido à atrofia vaginal hipoestrogênica induzida pela testosterona, pode-se prescrever creme vaginal de estriol em baixa dose por 7 a 14 noites antes da coleta, usar espéculo de tamanho pequeno (nº 1 ou virginal) com lubrificação aquosa na lâmina externa e garantir ambiência acolhedora.",
+            "<strong>Conduta no Atendimento B (Bruna — Mulher Trans):</strong>\n    <ul>\n      <li><strong>Garantia do Nome Social:</strong> Incluir imediatamente o Nome Social \"Bruna\" no Cartão SUS e no prontuário eletrônico e chamá-la exclusivamente por Bruna (Portaria MS nº 1.820/2009), sem exigir retificação cartorial prévia (orientando-a também que, pelo Provimento CNJ nº 73/2018 e decisão do STF, ela pode retificar gratuitamente seu nome e gênero diretamente no cartório civil sem precisar de cirurgia ou processo judicial).",
+            "<strong>Suspensão Imediata do Etinilestradiol e Transição Segura (Redução de Risco Tromboembólico):</strong> Bruna tem 44 anos, é tabagista, obesa e está tomando 105 mcg/dia de <strong>Etinilestradiol</strong>! O risco de Trombose Venosa Profunda (TVP), Tromboembolismo Pulmonar (TEP) e AVC nessa paciente é altíssimo. Conduta: <strong>suspender imediatamente o anticoncepcional com etinilestradiol</strong>, ofertar tratamento para cessação do tabagismo na UBS e realizar transição para <strong>17-beta-estradiol por via TRANSDÉRMICA (gel ou adesivo)</strong> (que evita a primeira passagem hepática pró-coagulante!) associado a um antiandrogênio em dose segura (ex.: Espironolactona 100 mg/dia com monitorização de potássio, ou Ciproterona 12,5 a 25 mg/dia)."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Saúde da População Negra — Doença Falciforme vs. Traço Falciforme e Hipertensão Arterial"
+        ],
+        [
+          "p",
+          "<strong>Apresentação do Caso:</strong> Dona Tereza, 52 anos, mulher preta, comparece à consulta na Unidade Básica de Saúde acompanhada de sua filha, Juliana, de 24 anos (gestante de 10 semanas na primeira consulta de pré-natal), e de seu neto, Pedro, de 8 meses de vida. Dona Tereza traz medidas residenciais de pressão arterial consistentemente em torno de 156/98 mmHg (confirmando Hipertensão Arterial Estágio 1 sem lesão de órgão-alvo; TFG = 85 mL/min, relação albumina/creatinina urinária normal = 8 mg/g, glicemia = 92 mg/dL). Juliana traz o resultado de sua Eletroforese de Hemoglobina solicitada na abertura do pré-natal: <strong>HbA = 58%, HbS = 40%, HbA2 = 2,0%</strong>; Hemoglobina = 12,6 g/dL, VCM = 86 fL, reticulócitos normais, totalmente assintomática. Já o bebê Pedro (filho da irmã de Juliana) teve diagnóstico no Teste do Pezinho de <strong>HbFS (Anemia Falciforme homozigótica HbSS)</strong>. Um estudante de medicina sugere: <em>\"Iniciar Enalapril em monoterapia como 1ª escolha para Dona Tereza; encaminhar a gestante Juliana urgente para o hematologista de alto risco para iniciar Hidroxiureia e transfusões por ter Doença Falciforme; e suspender a penicilina do bebê Pedro porque ele não está com infecção no momento\"</em>."
+        ],
+        [
+          "4",
+          "Análise Crítica e Correção Integral das Três Condutas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Manejo da Hipertensão Arterial em Dona Tereza (População Negra):</strong>\n    <ul>\n      <li>De acordo com as Diretrizes Brasileiras de Hipertensão Arterial e o JNC-8, em pacientes negros hipertensos sem doença renal crônica proteinúrica e sem insuficiência cardíaca com fração de ejeção reduzida, a <strong>monoterapia isolada com IECA (Enalapril) ou BRA possui menor eficácia anti-hipertensiva e menor redução de desfechos cerebrovasculares (AVC)</strong> devido ao predomínio fisiopatológico de hipertensão volume-dependente com renina baixa.",
+            "A conduta farmacológica de primeira escolha para Dona Tereza deve incluir um <strong>Diurético Tiazídico (Hidroclorotiazida ou Clortalidona) e/ou um Bloqueador dos Canais de Cálcio di-hidropiridínico (Anlodipino)</strong>!",
+            "<strong>Interpretação da Eletroforese de Hemoglobina da Gestante Juliana (HbAS = Traço Falciforme!):</strong>\n    <ul>\n      <li>O padrão <strong>HbA predominante (58%) + HbS menor que 50% (40%) com hemograma normal</strong> define o <strong>Traço Falciforme (Heterozigose HbAS)</strong>, e <strong>NÃO</strong> Doença Falciforme!",
+            "A portadora de Traço Falciforme é <strong>saudável, não tem anemia hemolítica e não desenvolve crises vaso-oclusivas</strong> (exceto em situações extremas de hipóxia severa/altitude extrema). Portanto, Juliana deve manter seu pré-natal de risco habitual na própria UBS, <strong>jamais devendo usar Hidroxiureia</strong> (que, além de não ter indicação no traço, é teratogênica na gestação!).",
+            "<strong>Aconselhamento Genético Reprodutivo Obrigatório:</strong> Como Juliana é HbAS, deve-se solicitar a <strong>Eletroforese de Hemoglobina do parceiro (pai do bebê)</strong>! Se o parceiro for HbAA (normal), o risco de o bebê ter Doença Falciforme é 0% (50% de chance de ser AA e 50% de ser AS). Porém, se o parceiro também for portador de traço falciforme (HbAS) ou HbAC, o casal terá <strong>25% de risco em cada gestação de ter um filho com Doença Falciforme (HbSS ou HbSC)</strong>, devendo receber aconselhamento genético e garantir a coleta rigorosa do Teste do Pezinho do recém-nascido entre o 3º e o 5º dia de vida! (Nota adicional: gestantes com traço falciforme têm risco discretamente aumentado de bacteriúria assintomática/infecção urinária e hematúria isostenúrica, devendo realizar urocultura trimestral no pré-natal).",
+            "<strong>Cuidado ao Lactente Pedro (8 meses — Anemia Falciforme Homozigótica HbSS):</strong>\n    <ul>\n      <li>Seria um erro potencialmente fatal suspender a penicilina do bebê! Na Anemia Falciforme (HbSS), ocorre <strong>asplenia funcional precoce</strong> já a partir dos 3 a 6 meses de vida devido a microinfartos esplênicos repetidos, tornando o lactente extremamente vulnerável a <strong>sepse fulminante e meningite por bactérias encapsuladas (especialmente <em>Streptococcus pneumoniae</em> e <em>Haemophilus influenzae</em> tipo b)</strong>.",
+            "Portanto, é <strong>obrigatória a manutenção da antibioticoprofilaxia diária com Penicilina V oral (ou Penicilina G Benzatina IM a cada 21 dias) de forma contínua dos 3 meses até os 5 anos de idade</strong>, associada à suplementação de Ácido Fólico, calendário vacinal especial no CRIE e educação dos pais para palpação diária do baço (reconhecimento precoce do <strong>Sequestro Esplênico Agudo</strong> — palidez súbita + aumento rápido do baço, que é emergência transfusional!) e ida imediata ao hospital se febre &ge; 38,0°C."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Saúde Indígena (SASI-SUS / CASAI) e Intoxicação por Agrotóxico no Trabalhador do Campo"
+        ],
+        [
+          "p",
+          "<strong>Apresentação do Caso:</strong> Dois cenários ocorrem simultaneamente em uma região da Amazônia Legal:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Cenário 1 (Saúde Indígena):</strong> Uma liderança indígena de 62 anos, moradora de uma aldeia pertencente ao DSEI Xingu, apresenta quadro de obstrução urinária baixa crônica por Hiperplasia Prostática Benigna refratária ao tratamento medicamentoso iniciado pelo médico da Equipe Multidisciplinar de Saúde Indígena (EMSI) no Polo-Base. Ele é referenciado para realizar Ressecção Transuretral de Próstata (RTU) eletiva no Hospital Regional do município vizinho, precisando permanecer na cidade por 5 dias antes da cirurgia para exames pré-operatórios e por 7 dias após a alta hospitalar para retirada da sonda vesical e revisão cirúrgica antes de viajar 8 horas de barco de volta para a aldeia.",
+            "<strong>Cenário 2 (População do Campo):</strong> No mesmo hospital regional, dá entrada na emergência um trabalhador rural de 34 anos que estava pulverizando lavoura com inseticida agrícola (\"Malation\") sem Equipamento de Proteção Individual (EPI) sob sol forte. Apresenta confusão mental, sudorese profusa, sialorreia intensa (\"espumando pela boca\"), lacrimejamento, incontinência urinária e fecal, bradicardia sinusal (FC = 42 bpm), pupilas puntiformes (miose bilateral extrema) e ausculta pulmonar repleta de roncos e estertores bolhosos difusos bilaterais (\"pulmão afogado em secreção\", SpO2 = 84%), além de fasciculações musculares na língua e panturrilhas."
+          ]
+        ],
+        [
+          "4",
+          "Análise Clínica, Organizacional e Conduta Passo a Passo:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Fluxo Organizacional no Cenário 1 (Papel da CASAI no SASI-SUS):</strong>\n    <ul>\n      <li>Durante os dias de realização de exames pré-operatórios ambulatoriais e no período de convalescença pós-alta hospitalar na cidade, o paciente indígena e seu acompanhante familiar devem ficar acolhidos e alojados na <strong>CASAI (Casa de Saúde Indígena)</strong>!",
+            "A CASAI articulará o agendamento com o Hospital Regional, fornecerá alojamento culturalmente adaptado (redes, alimentação tradicional), cuidados de enfermagem 24 horas (cuidados com a sonda vesical pós-RTU), intérprete/mediador se necessário e transporte sanitário de retorno ao Polo-Base/Aldeia, garantindo a integralidade do <strong>SASI-SUS (Lei Arouca nº 9.836/1999)</strong>, cujo financiamento primário é de responsabilidade da <strong>União</strong>.",
+            "<strong>Manejo de Emergência e Vigilância no Cenário 2 (Síndrome Colinérgica Aguda por Organofosforado):</strong>\n    <ul>\n      <li><strong>Diagnóstico Sindrômico e Etiológico:</strong> O trabalhador apresenta a clássica <strong>Toxíndrome Colinérgica Aguda (DUMBELS + fasciculações nicotínicas)</strong> secundária à inibição da acetilcolinesterase pelo agrotóxico organofosforado (Malation) absorvido pela pele e vias aéreas. A causa imediata de morte nessa intoxicação é a <strong>insuficiência respiratória aguda por broncorreia maciça, broncoespasmo e paralisia diafragmática</strong>!",
+            "<strong>Conduta Médica Imediata de Emergência:</strong>\n        <ol>\n          <li><strong>Proteção da Equipe e Descontaminação Corporal:</strong> Equipe paramentada com luvas nitrílicas e avental impermeável retira imediatamente todas as roupas do paciente e lava exaustivamente a pele e o couro cabeludo com água corrente e sabão neutro (para interromper a absorção transdérmica contínua do veneno lipofílico!).",
+            "<strong>Suporte Ventilatório e Antídoto de 1ª Linha — ATROPINA EV:</strong> Ofertar oxigênio / intubação orotraqueal se necessário e administrar <strong>Sulfato de Atropina 2 mg a 5 mg EV em bolus</strong>, dobrando a dose a cada 5 a 10 minutos até atingir a <strong>Atropinização Plena</strong>! <em>Atenção máxima à pergunta clássica de prova:</em> O parâmetro clínico que define que o paciente atingiu a atropinização adequada e guia a titulação da atropina <strong>NÃO é a dilatação da pupila (midríase) nem a taquicardia isolada, mas sim a SECAGEM COMPLETA DAS SECREÇÕES BRÔNQUICAS (ausculta pulmonar limpa sem estertores/broncorreia) e a melhora da oxigenação</strong>!",
+            "<strong>Reativador da Colinesterase — PRALIDOXIMA (Contrathion):</strong> Administrar Pralidoxima EV (1 a 2 g em infusão de 30 min) para clivar a ligação do organofosforado com a acetilcolinesterase e reverter a fraqueza muscular nicotínica/diafragmática (que a atropina não reverte, pois a atropina só age no receptor muscarínico!)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n      <li><strong>Conduta Médico-Legal e de Vigilância em Saúde do Trabalhador:</strong> Realizar <strong>Notificação Compulsória no SINAN</strong> (Intoxicação Exógena por Agrotóxico e Acidente de Trabalho Grave — notificação imediata em até 24h por ser acidente de trabalho grave com risco de morte/internação!) e emitir a <strong>CAT (Comunicação de Acidente de Trabalho)</strong> caso seja trabalhador segurado, acionando o CEREST (Centro de Referência em Saúde do Trabalhador).</li>\n    </ul>\n  </li>\n</ol>"
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-residencia-revalida-aula-221",
+      0,
+      [
+        [
+          "2",
+          "8. Questões Comentadas de Provas de Residência Médica, Revalida e ENAMED"
+        ],
+        [
+          "p",
+          "Resolva a seguir 8 questões inéditas elaboradas com o rigor técnico das principais bancas de Residência Médica, Revalida (INEP) e ENAMED, abordando todas as Políticas Nacionais de Equidade no SUS."
+        ],
+        [
+          "4",
+          "Questão 1 — Equipes de Consultório na Rua e População em Situação de Rua (Padrão ENARE / INEP Revalida)"
+        ],
+        [
+          "p",
+          "Um município de grande porte decide ampliar a cobertura de Atenção Primária à Saúde para a população em situação de rua por meio da habilitação de novas Equipes de Consultório na Rua (eCR), regulamentadas pela Portaria GM/MS nº 122/2011 e pela Política Nacional de Atenção Básica (PNAB). Paralelamente, a coordenação municipal realiza uma oficina com os recepcionistas e profissionais das Unidades Básicas de Saúde (UBS) convencionais sobre o acolhimento dessa população. Com base no arcabouço normativo e clínico vigente no SUS, assinale a alternativa CORRETA:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> As Equipes de Consultório na Rua estruturam-se em três modalidades (I, II e III), sendo a presença do profissional médico obrigatória na composição mínima de todas as três modalidades.<br>\n  <strong>B)</strong> Para que uma pessoa em situação de rua possa ser cadastrada no e-SUS APS e retirar medicamentos na farmácia de uma UBS convencional, exige-se a apresentação de declaração de residência emitida pela Secretaria de Segurança Pública ou albergue municipal.<br>\n  <strong>C)</strong> A Modalidade III de Equipe de Consultório na Rua caracteriza-se pela composição da Modalidade II (6 profissionais, sendo 3 de nível superior e 3 de nível médio) acrescida obrigatoriamente de 1 (um) profissional médico.<br>\n  <strong>D)</strong> Na população em situação de rua, a definição operacional de Sintomático Respiratório para investigação de tuberculose pulmonar exige a presença de tosse produtiva persistente por período igual ou superior a 3 semanas.<br>\n  <strong>E)</strong> As Equipes de Consultório na Rua pertencem à rede de Atenção Especializada Hospitalar de Urgência, funcionando de forma independente da Atenção Básica e condicionando o tratamento de infecções sexualmente transmissíveis à internação prévia em comunidade terapêutica."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está correta:</strong> De acordo com a Portaria GM/MS nº 122/2011 (e atualizações na PNAB), as eCR dividem-se em: <strong>Modalidade I</strong> (4 profissionais: 2 de nível superior e 2 de nível médio), <strong>Modalidade II</strong> (6 profissionais: 3 de nível superior e 3 de nível médio) e <strong>Modalidade III</strong> (equipe da Modalidade II acrescida obrigatoriamente de <strong>1 profissional Médico</strong>, totalizando no mínimo 7 profissionais).",
+            "<strong>Refutação dos distratores:</strong> A alternativa A está incorreta porque o médico <strong>só é obrigatório na Modalidade III</strong> (sendo facultativo/não exigido nas Modalidades I e II). A alternativa B está incorreta porque a Portaria MS nº 940/2011 <strong>veda expressamente exigir comprovante de residência</strong> para o cadastramento no Cartão SUS e atendimento da população em situação de rua. A alternativa D está incorreta porque, na população em situação de rua (bem como em PVHIV, privados de liberdade e indígenas), investiga-se tuberculose diante de <strong>tosse de QUALQUER duração</strong> (não se aguarda 2 ou 3 semanas!). A alternativa E está incorreta porque o Consultório na Rua é componente da <strong>Atenção Primária à Saúde (APS)</strong> e pauta-se pela <strong>Redução de Danos</strong>, jamais condicionando o cuidado à abstinência ou internação asilar."
+          ]
+        ],
+        [
+          "4",
+          "Questão 2 — Saúde da População LGBTQIAPN+, Nome Social e Hormonioterapia (Padrão USP-SP / UNICAMP)"
+        ],
+        [
+          "p",
+          "Camila, mulher transexual de 36 anos (designada do sexo masculino ao nascer), comparece pela primeira vez à Unidade Básica de Saúde do seu bairro. Ela ainda não realizou retificação do registro civil em cartório e não foi submetida a cirurgia de redesignação genital. Na recepção, solicita ser identificada pelo seu Nome Social (\"Camila\"). Na consulta médica, relata ser tabagista (25 cigarros/dia), hipertensa e estar fazendo uso por conta própria de comprimidos diários de Etinilestradiol 50 mcg + Levonorgestrel comprados sem receita há 2 anos. Nesse mesmo turno, o médico também atende Rafael, homem transexual de 31 anos (designado do sexo feminino ao nascer), em uso de Cipionato de Testosterona intramuscular a cada 14 dias há 4 anos, que nunca realizou histerectomia e tem relações sexuais vaginais com homens cisgêneros. Sobre o cuidado integral a Camila e Rafael na APS, assinale a alternativa CORRETA:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> A inclusão do Nome Social \"Camila\" no Cartão SUS e no prontuário médico depende da apresentação de laudo psiquiátrico atestando incongruência de gênero ou de decisão judicial liminar.<br>\n  <strong>B)</strong> Para Camila, deve-se manter o Etinilestradiol oral, pois é o estrogênio de primeira escolha nos protocolos nacionais devido à sua baixa trombogenicidade e ausência de passagem hepática.<br>\n  <strong>C)</strong> Para Rafael, o uso regular de testosterona com manutenção de amenorreia garante contracepção plena de 100%, além de dispensá-lo definitivamente do rastreamento de câncer do colo do útero pelo exame citopatológico.<br>\n  <strong>D)</strong> Para Camila, o direito ao Nome Social deve ser garantido imediatamente por simples autodeclaração (Portaria MS nº 1.820/2009), devendo-se suspender o Etinilestradiol pelo altíssimo risco tromboembólico e transicionar preferencialmente para 17-beta-estradiol transdérmico associado a antiandrogênio (como espironolactona ou ciproterona), enquanto Rafael tem indicação de rastreamento cervical (Papanicolaou) e oferta de contracepção eficaz.<br>\n  <strong>E)</strong> Caso Rafael apresente Hematócrito de 57% nos exames de rotina, trata-se de variação fisiológica benigna que exige dobrar a dose de testosterona para evitar sangramento uterino de escape."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa D.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa D está correta:</strong> Sintetiza com perfeição técnica todos os pilares do cuidado à saúde de pessoas trans na APS: (1) O <strong>Nome Social</strong> é direito imediato garantido pela Carta dos Direitos dos Usuários da Saúde (Portaria MS nº 1.820/2009), bastando a solicitação verbal da usuária; (2) O <strong>Etinilestradiol é proscrito</strong> nos protocolos de hormonioterapia feminilizante pelo risco até 20 vezes maior de TVP/TEP e eventos cardiovasculares, devendo ser substituído por <strong>17-beta-estradiol (preferencialmente por via transdérmica em tabagistas/hipertensas/&gt;40 anos)</strong> associado a espironolactona ou acetato de ciproterona; e (3) Homens trans que mantêm o colo uterino (não histerectomizados) devem realizar <strong>rastreamento de câncer de colo uterino (25 a 64 anos)</strong> e receber orientação de que <strong>a testosterona não é anticoncepcional e é teratogênica</strong>.",
+            "<strong>Refutação dos distratores:</strong> A alternativa A exige laudo/decisão judicial ilegais. A alternativa B recomenda etinilestradiol (erro grave de segurança farmacológica). A alternativa C erra duplamente sobre anticoncepção e rastreamento cervical no homem trans. A alternativa E ignora a <strong>eritrocitose/policitemia secundária (Ht &gt; 54%)</strong> induzida pela testosterona, que exige redução de dose/espaçamento de intervalo ou troca para gel transdérmico pelo risco de trombose."
+          ]
+        ],
+        [
+          "4",
+          "Questão 3 — Subsistema de Atenção à Saúde Indígena (SASI-SUS) e Lei Arouca (Padrão Revalida INEP / UFMT)"
+        ],
+        [
+          "p",
+          "O Subsistema de Atenção à Saúde Indígena (SASI-SUS), criado pela Lei Federal nº 9.836/1999 (Lei Arouca, que alterou a Lei nº 8.080/1990), possui diretrizes organizativas, territoriais e financeiras próprias para assegurar atenção diferenciada aos povos originários no Brasil. A respeito do funcionamento do SASI-SUS, dos Distritos Sanitários Especiais Indígenas (DSEIs) e das Casas de Saúde Indígena (CASAIs), assinale a alternativa CORRETA:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> O financiamento do Subsistema de Atenção à Saúde Indígena é de responsabilidade exclusiva dos municípios onde as aldeias estão localizadas, sendo vedada a alocação de recursos próprios da União.<br>\n  <strong>B)</strong> A delimitação geográfica de cada um dos 34 Distritos Sanitários Especiais Indígenas (DSEIs) deve coincidir obrigatoriamente com os limites político-administrativos de um único município ou Estado da Federação.<br>\n  <strong>C)</strong> A Casa de Saúde Indígena (CASAI) é um hospital cirúrgico de alta complexidade construído dentro das terras indígenas para realizar transplantes e neurocirurgias sem que o indígena precise ir à cidade.<br>\n  <strong>D)</strong> Cabe à União, com seus recursos próprios, financiar o SASI-SUS (podendo Estados e Municípios atuar complementarmente), sendo os DSEIs delimitados por critérios etno-epidemiológicos, socioculturais e geográficos que podem abranger vários municípios e mais de um Estado.<br>\n  <strong>E)</strong> A Política Nacional de Atenção à Saúde dos Povos Indígenas determina a proibição das práticas de pajelança, xamanismo e uso de plantas medicinais tradicionais nas aldeias assistidas pelas Equipes Multidisciplinares de Saúde Indígena (EMSI)."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa D.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa D está correta:</strong> Reproduz fielmente os artigos 19-C, 19-E e 19-G da Lei nº 8.080/1990 (incluídos pela Lei Arouca nº 9.836/1999): o financiamento primário do SASI-SUS cabe à <strong>União</strong> (com participação complementar de estados e municípios), e a base territorial é o <strong>DSEI</strong>, cuja delimitação obedece à ocupação tradicional indígena, bacias hidrográficas e critérios etno-epidemiológicos, extrapolando fronteiras municipais e estaduais.",
+            "<strong>Refutação dos distratores:</strong> A alternativa A inverte a responsabilidade financeira (que é da União). A alternativa B traz a pegadinha clássica sobre o território do DSEI. A alternativa C deturpa a função da <strong>CASAI</strong> (que <em>não</em> é um hospital cirúrgico na aldeia, mas sim uma casa de apoio, acolhimento, alojamento e enfermagem localizada nos municípios de referência para receber indígenas encaminhados para consultas/exames/internações na rede do SUS). A alternativa E viola o artigo 19-F da Lei 8.080/90 e a PNASPI, que determinam o respeito e a articulação com os sistemas tradicionais indígenas de cura."
+          ]
+        ],
+        [
+          "4",
+          "Questão 4 — Saúde da População Negra (PNSIPN) e Racismo Institucional (Padrão SUS-SP / UERJ)"
+        ],
+        [
+          "p",
+          "A Política Nacional de Saúde Integral da População Negra (PNSIPN — Portaria GM/MS nº 992/2009) e a Portaria GM/MS nº 344/2017 estabelecem diretrizes fundamentais para o enfrentamento das iniquidades étnico-raciais no SUS. Considerando os conceitos de racismo institucional, os indicadores epidemiológicos brasileiros e o manejo clínico dos agravos prevalentes na população negra, assinale a alternativa CORRETA:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> O preenchimento do quesito \"Raça/Cor\" nos formulários e sistemas de informação do SUS é facultativo e deve ser definido exclusivamente pela observação visual do recepcionista (heteroidentificação), sendo proibida a pergunta direta ao paciente.<br>\n  <strong>B)</strong> Estudos epidemiológicos nacionais demonstram que, no atendimento ao parto, mulheres pretas recebem significativamente menos analgesia farmacológica do que mulheres brancas, fenômeno que exemplifica o racismo institucional e vieses implícitos na assistência à saúde.<br>\n  <strong>C)</strong> Indivíduos diagnosticados com Traço Falciforme (heterozigose HbAS) apresentam anemia hemolítica crônica moderada, esplenomegalia e crises vaso-oclusivas ósseas, devendo fazer uso contínuo de Hidroxiureia e Penicilina profilática.<br>\n  <strong>D)</strong> Na Hipertensão Arterial Sistêmica em pacientes negros sem doença renal crônica proteinúrica ou insuficiência cardíaca, a monoterapia inicial com Inibidores da Enzima Conversora de Angiotensina (IECA) apresenta eficácia anti-hipertensiva e proteção contra AVC muito superiores às dos diuréticos tiazídicos e bloqueadores dos canais de cálcio.<br>\n  <strong>E)</strong> O conceito de racismo institucional restringe-se aos casos em que um profissional de saúde profere ofensas verbais racistas explícitas contra um paciente negro dentro do consultório."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> Documentada de forma contundente pelo inquérito nacional <em>Nascer no Brasil</em> (Fiocruz), a menor oferta de analgesia de parto, o menor tempo de consulta pré-natal e a maior razão de mortalidade materna em mulheres negras (mesmo controlando variáveis socioeconômicas) constituem exemplos clássicos de <strong>racismo institucional</strong> e viés racial implícito no SUS.",
+            "<strong>Refutação dos distratores:</strong> A alternativa A está incorreta porque a Portaria MS nº 344/2017 tornou o quesito Raça/Cor <strong>obrigatório</strong> e baseado na <strong>autodeclaração</strong> do usuário. A alternativa C está incorreta porque o portador de <strong>Traço Falciforme (HbAS)</strong> é <strong>assintomático, não é doente, não tem anemia e não usa hidroxiureia nem penicilina</strong> (necessitando apenas de orientação genética reprodutiva). A alternativa D inverte a farmacologia: em negros hipertensos (predomínio de hipertensão sensível ao sal e renina baixa), <strong>os Diuréticos Tiazídicos e os Bloqueadores dos Canais de Cálcio (Anlodipino) são mais eficazes em monoterapia</strong> que os IECA/BRA. A alternativa E confunde racismo institucional (falha sistêmica e estrutural da instituição em prover cuidado equitativo) com racismo interpessoal/injúria racial."
+          ]
+        ],
+        [
+          "4",
+          "Questão 5 — Saúde Prisional (PNAISP) e Controle da Tuberculose nas Prisões (Padrão ENAMED / UNIFESP)"
+        ],
+        [
+          "p",
+          "A Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional (PNAISP), instituída pela Portaria Interministerial MS/MJ nº 1/2014, reformulou a assistência à saúde nas unidades prisionais brasileiras. Acerca das diretrizes da PNAISP e do manejo clínico-epidemiológico da tuberculose e da gestação no ambiente carcerário, assinale a alternativa CORRETA:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> A PNAISP restringe o atendimento das Equipes de Atenção Primária Prisional (eAPP) exclusivamente aos presos já julgados e condenados com trânsito em julgado em regime fechado, excluindo os presos provisórios.<br>\n  <strong>B)</strong> Pela PNAISP, cada unidade prisional habilitada passa a funcionar como um ponto de atenção da Rede de Atenção à Saúde (RAS) do SUS, ofertando ações de Atenção Primária equivalentes a uma Unidade Básica de Saúde intramuros.<br>\n  <strong>C)</strong> No sistema prisional, a realização de Cultura para micobactérias com Teste de Sensibilidade Antimicrobiana (TSA) é dispensável nos casos novos de tuberculose pulmonar confirmados por baciloscopia.<br>\n  <strong>D)</strong> De acordo com a legislação brasileira vigente, o uso de algemas nos punhos e tornozelos de mulheres privadas de liberdade é obrigatório durante o período expulsivo do trabalho de parto em hospitais públicos para evitar fugas.<br>\n  <strong>E)</strong> O paciente privado de liberdade com tuberculose pulmonar bacilífera deve permanecer em isolamento respiratório solitário durante todos os 6 meses do tratamento com o esquema RIPE."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> O princípio organizativo central da PNAISP é integrar o sistema prisional à Rede de Atenção à Saúde (RAS), transformando cada unidade prisional em ponto de Atenção Básica (com Equipe de Atenção Primária Prisional — eAPP) articulado à rede municipal e estadual.",
+            "<strong>Refutação dos distratores:</strong> A alternativa A descreve o antigo PNSSP de 2003; a PNAISP de 2014 ampliou a cobertura para <strong>todas as pessoas privadas de liberdade (incluindo presos provisórios!)</strong>. A alternativa C está incorreta porque, nas populações vulnerabilizadas (privados de liberdade, situação de rua, indígenas, PVHIV), a <strong>Cultura com Teste de Sensibilidade (TSA) é OBRIGATÓRIA em 100% dos casos</strong> (mesmo nos casos novos com TRM-TB sensível) devido à altíssima taxa de resistência primária e adquirida. A alternativa D viola a <strong>Lei Federal nº 13.434/2017</strong>, que <strong>proíbe terminantemente o uso de algemas em parturientes</strong> durante o trabalho de parto, parto e puerpério imediato. A alternativa E está incorreta porque o isolamento respiratório de casos bacilíferos sensíveis dura apenas os <strong>primeiros 15 dias</strong> de tratamento efetivo."
+          ]
+        ],
+        [
+          "4",
+          "Questão 6 — Saúde das Populações do Campo, da Floresta e das Águas e Agrotóxicos (Padrão UFPR / AMRIGS)"
+        ],
+        [
+          "p",
+          "Um agricultor familiar de 29 anos é trazido à Unidade de Pronto Atendimento (UPA) de um município agrícola após desmaiar enquanto aplicava agrotóxico organofosforado em plantação de tomates sem equipamentos de proteção individual. Ao exame físico: glasgow 12, pele úmida com forte odor aliáceo nas roupas, sudorese profusa, sialorreia abundante, miose puntiforme bilateral, frequência cardíaca de 44 bpm, pressão arterial de 95/60 mmHg, fasciculações musculares difusas em membros e tórax, e ausculta pulmonar com roncos e estertores bolhosos disseminados em ambos os hemitóraces (SpO2 = 82%). Sobre o manejo clínico de emergência e a vigilância epidemiológica desse caso, assinale a alternativa CORRETA:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Trata-se de uma síndrome anticolinérgica aguda; o antídoto específico de primeira linha é a Fisostigmina endovenosa associada ao Biperideno.<br>\n  <strong>B)</strong> Trata-se de uma síndrome colinérgica aguda por inibição da acetilcolinesterase; após descontaminação cutânea e suporte ventilatório, deve-se administrar Atropina endovenosa titulada até que ocorra a secagem completa das secreções brônquicas (ausculta pulmonar limpa), associando Pralidoxima.<br>\n  <strong>C)</strong> A dose de Atropina deve ser imediatamente suspensa assim que as pupilas do paciente deixarem de estar mióticas, mesmo que o paciente continue com broncorreia intensa e hipoxemia.<br>\n  <strong>D)</strong> Caso a intoxicação tivesse sido causada pelo herbicida Paraquat, a conduta prioritária seria ofertar oxigenoterapia suplementar em alto fluxo (FiO2 100%) desde o primeiro minuto, independentemente da saturação.<br>\n  <strong>E)</strong> As intoxicações exógenas por agrotóxicos em trabalhadores rurais informais não fazem parte da Lista Nacional de Notificação Compulsória do SINAN."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> Os inseticidas organofosforados e carbamatos inibem a enzima acetilcolinesterase, provocando acúmulo maciço de acetilcolina nas fendas sinápticas muscarínicas (miose, bradicardia, broncorreia, sialorreia, diarreia) e na placa motora nicotínica (fasciculações e paralisia muscular/diafragmática). O manejo exige retirada das roupas e banho com água e sabão + <strong>Atropina EV em doses repetidas até secar a árvore brônquica (atropinização respiratória)</strong> + <strong>Pralidoxima (Contrathion)</strong> para reativar a colinesterase nas placas motoras nicotínicas.",
+            "<strong>Refutação dos distratores:</strong> A alternativa A inverte a toxíndrome (é colinérgica, e não anticolinérgica; dar fisostigmina mataria o paciente!). A alternativa C traz a pegadinha clássica de prova: <strong>a pupila (midríase) NÃO é o parâmetro para suspender a atropina</strong>; o parâmetro vital é a <strong>secagem das secreções pulmonares (ausculta limpa)</strong>! A alternativa D está incorreta porque na intoxicação por <strong>Paraquat o oxigênio suplementar é contraindicado</strong> (salvo hipoxemia crítica), pois multiplica a formação de radicais livres superóxidos e acelera a fibrose pulmonar letal. A alternativa E está incorreta porque toda suspeita de intoxicação exógena (inclusive por agrotóxicos, independentemente de vínculo formal CLT ou informal) é de <strong>Notificação Compulsória no SINAN</strong>."
+          ]
+        ],
+        [
+          "4",
+          "Questão 7 — Resolução CFM nº 2.265/2019 e Atenção a Pessoas Trans (Padrão Santa Casa SP / IAMSPE)"
+        ],
+        [
+          "p",
+          "A Resolução do Conselho Federal de Medicina (CFM) nº 2.265/2019 atualizou os parâmetros éticos e técnicos para o cuidado específico à pessoa com incongruência de gênero ou transgênero no Brasil. De acordo com o texto estrito dessa Resolução do CFM, assinale a alternativa CORRETA quanto às faixas etárias mínimas permitidas:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> A hormonioterapia cruzada (terapia hormonal de afirmação de gênero com estrogênios ou testosterona) pode ser iniciada a partir dos 16 anos de idade, enquanto os procedimentos cirúrgicos de afirmação de gênero só podem ser realizados a partir dos 18 anos de idade (após acompanhamento mínimo de 1 ano por equipe multiprofissional).<br>\n  <strong>B)</strong> As cirurgias de redesignação genital (neocolpoplastia e faloplastia) estão liberadas a partir dos 14 anos de idade, desde que haja autorização assinada por um dos genitores.<br>\n  <strong>C)</strong> O bloqueio hormonal da puberdade com análogos de GnRH é permitido a partir dos 6 anos de idade (estágio pré-puberal Tanner I) em qualquer consultório privado.<br>\n  <strong>D)</strong> Tanto a hormonioterapia cruzada quanto as cirurgias de afirmação de gênero só podem ser iniciadas após os 25 anos de idade completos.<br>\n  <strong>E)</strong> Mulheres cisgênero homossexuais (lésbicas) que nunca tiveram relações sexuais com homens cisgêneros estão dispensadas pela Resolução do rastreamento do câncer do colo do útero."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa A.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa A está correta:</strong> Pela <strong>Resolução CFM nº 2.265/2019</strong> (Art. 9º, § 2º e Art. 11): (1) O bloqueio puberal só pode ocorrer a partir do estágio puberal <strong>Tanner II</strong> e exclusivamente em caráter experimental em protocolos de pesquisa de hospitais universitários; (2) A <strong>hormonioterapia cruzada</strong> só pode ser iniciada a partir dos <strong>16 anos de idade</strong>; e (3) Os <strong>procedimentos cirúrgicos de afirmação de gênero</strong> são vedados antes dos <strong>18 anos de idade</strong> e exigem no mínimo <strong>1 ano de acompanhamento prévio por equipe multiprofissional e interdisciplinar</strong>.",
+            "<strong>Refutação dos distratores:</strong> As alternativas B, C e D trazem idades incorretas (vedadas pelo CFM). A alternativa E traz um erro clássico de ginecologia/APS: <strong>mulheres lésbicas devem realizar o exame citopatológico do colo do útero (Papanicolaou) exatamente igual às mulheres heterossexuais (dos 25 aos 64 anos)</strong>, pois o HPV é transmitido no sexo entre mulheres."
+          ]
+        ],
+        [
+          "4",
+          "Questão 8 — Competência Cultural, Humildade Cultural e Vulnerabilidade de Ayres (Padrão USP-RP / UNICAMP)"
+        ],
+        [
+          "p",
+          "Na formação em Medicina de Família e Comunidade, os referenciais teóricos de Melanie Tervalon e Jann Murray-García sobre <em>Humildade Cultural</em> e de José Ricardo Ayres sobre as <em>Três Dimensões da Vulnerabilidade</em> são fundamentais para o cuidado a populações vulnerabilizadas. Assinale a alternativa que interpreta CORRETAMENTE esses referenciais teóricos na prática clínica da Atenção Primária:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> A Humildade Cultural diferencia-se da visão estática de Competência Cultural por exigir do médico um compromisso vitalício com a autorreflexão e autocrítica sobre seus próprios vieses implícitos, buscando mitigar a assimetria de poder na relação clínica e reconhecendo o paciente como especialista em sua própria vivência.<br>\n  <strong>B)</strong> Quando uma Unidade Básica de Saúde funciona exclusivamente das 8h às 16h sem agendamento flexível, exige comprovante de endereço fixo e não dispõe de materiais educativos acessíveis a analfabetos, configura-se o que José Ricardo Ayres denomina \"Vulnerabilidade Estritamente Individual e Genética\".<br>\n  <strong>C)</strong> A Lei dos Cuidados Inversos, formulada por Julian Tudor Hart (1971), demonstra que nos sistemas de saúde regidos pelas forças de mercado, as populações mais pobres e com maior carga de doenças recebem espontaneamente a maior quantidade e a melhor qualidade de cuidados médicos.<br>\n  <strong>D)</strong> A abordagem de Redução de Danos na Atenção Primária consiste em denunciar criminalmente os usuários de substâncias ilícitas que procuram a UBS para que sejam internados compulsoriamente.<br>\n  <strong>E)</strong> O princípio da Equidade no SUS determina que uma Unidade Básica de Saúde localizada em área rural quilombola de extrema pobreza deve receber exatamente os mesmos insumos padronizados e o mesmo modelo de equipe de um bairro urbano de classe alta, proibindo adaptações territoriais como UBS Fluviais ou Consultório na Rua."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa A.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa A está correta:</strong> Define com exatidão o conceito seminal de <strong>Humildade Cultural</strong> (Tervalon &amp; Murray-García, 1998): enquanto a \"competência\" muitas vezes sugere um domínio técnico finito e corre o risco de estereotipar grupos minoritários, a <em>humildade cultural</em> é um processo contínuo de autorreflexão crítica sobre privilégios e vieses, horizontalização do poder médico e aprendizado conjunto com a comunidade.",
+            "<strong>Refutação dos distratores:</strong> Na alternativa B, barreiras geradas pela organização dos próprios serviços de saúde configuram <strong>Vulnerabilidade Programática (ou Institucional)</strong> na tríade de Ayres (Individual, Social e Programática). A alternativa C inverte a <strong>Lei dos Cuidados Inversos de Tudor Hart</strong> (a disponibilidade de bons cuidados médicos varia <em>inversamente</em> com a necessidade da população assistida, especialmente onde imperam as forças de mercado). A alternativa D viola o sigilo médico e a Redução de Danos. A alternativa E confunde Equidade com igualdade formal rígida; a Equidade exige justamente arranjos diferenciados (eCR, eSFR, UBSF, SASI-SUS, PNAISP) para populações com necessidades desiguais."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tabela-sintese-high-yield-aula-221",
+      0,
+      [
+        [
+          "2",
+          "9. Síntese High-Yield das Políticas de Equidade no SUS para Revisão de Véspera"
+        ],
+        [
+          "p",
+          "Domine todos os marcos legais, arranjos de equipes e pérolas clínicas das Políticas de Equidade do SUS neste quadro comparativo definitivo:"
+        ],
+        [
+          "t",
+          [
+            "População / Política de Equidade",
+            "Marco Normativo e Estrutura das Equipes",
+            "Pérolas Clínicas e Pegadinhas de Prova"
+          ],
+          [
+            [
+              "<strong>População em Situação de Rua</strong><br>(Consultório na Rua — eCR)",
+              "Decreto nº 7.053/2009; Portaria MS nº 122/2011; Portaria nº 940/2011.<br><strong>Modalidade I:</strong> 4 prof. (2 sup + 2 méd) — <em>sem médico</em>.<br><strong>Modalidade II:</strong> 6 prof. (3 sup + 3 méd) — <em>sem médico</em>.<br><strong>Modalidade III:</strong> Mod. II + <strong>1 MÉDICO (7 prof.)</strong>.",
+              "1) <strong>PROIBIDO exigir comprovante de residência ou RG</strong> para Cartão SUS e atendimento.<br>2) Investigar <strong>Tuberculose em TOSSE DE QUALQUER DURAÇÃO</strong> (TRM-TB + Cultura com TSA obrigatória + TDO).<br>3) Paradigma da <strong>Redução de Danos</strong> (não exige abstinência prévia)."
+            ],
+            [
+              "<strong>População Negra</strong><br>(PNSIPN — Preta + Parda)",
+              "Portaria GM/MS nº 992/2009; Estatuto da Igualdade Racial (Lei 12.288/2010); <strong>Portaria MS nº 344/2017</strong> (Quesito Raça/Cor obrigatório por <strong>autodeclaração</strong>).",
+              "1) <strong>Racismo Institucional:</strong> menor analgesia de parto e maior mortalidade materna em mulheres negras.<br>2) <strong>HAS em Negros:</strong> 1ª linha preferencial = <strong>Tiazídico e/ou BCC (Anlodipino)</strong> (hipertensão sensível ao sal / renina baixa).<br>3) <strong>Traço Falciforme (HbAS):</strong> assintomático (não é doença; fazer aconselhamento genético). <strong>Anemia Falciforme (HbSS):</strong> Penicilina profilática (3m–5a), ácido fólico, hidroxiureia, Doppler transcraniano (2–16a)."
+            ],
+            [
+              "<strong>População LGBTQIAPN+</strong><br>(PNSI-LGBT e Processo Transexualizador)",
+              "Portaria MS nº 2.836/2011; Portaria MS nº 1.820/2009 (Nome Social); Portaria MS nº 2.803/2013; <strong>Resolução CFM nº 2.265/2019</strong> (Hormônio &ge; 16 anos; Cirurgia &ge; 18 anos com 1 ano de acomp.; Bloqueio puberal Tanner II em pesquisa).",
+              "1) <strong>Nome Social:</strong> direito imediato sem cirurgia, laudo ou juiz (inclusive adolescentes).<br>2) <strong>Mulher Trans:</strong> usar <strong>17-beta-estradiol</strong> (transdérmico se &gt;40a/tabagista) + espironolactona ou ciproterona. <strong>PROIBIDO Etinilestradiol</strong> (trombose!).<br>3) <strong>Homem Trans:</strong> Testosterona causa <strong>eritrocitose/policitemia (Ht &gt; 54%)</strong>, <strong>NÃO é anticoncepcional</strong> (é teratogênica!) e deve colher <strong>Papanicolaou (25–64a)</strong> se tiver colo uterino (assim como <strong>mulheres lésbicas</strong>!)."
+            ],
+            [
+              "<strong>Povos Indígenas</strong><br>(SASI-SUS e PNASPI)",
+              "<strong>Lei Arouca nº 9.836/1999</strong> (Cap. V da Lei 8.080/90); Portaria MS nº 254/2002; SESAI.<br>Estruturas: Posto na Aldeia (EMSI com AIS e AISAN) &rarr; Polo-Base &rarr; <strong>CASAI</strong> &rarr; Hospital SUS.",
+              "1) <strong>Financiamento primário pela UNIÃO</strong> (estados e municípios de forma complementar).<br>2) <strong>34 DSEIs:</strong> território definido por critérios <strong>etno-epidemiológicos</strong> (NÃO obedece a limites de municípios ou estados!).<br>3) <strong>CASAI:</strong> casa de acolhimento/apoio/enfermagem nos municípios de referência (não é hospital cirúrgico)."
+            ],
+            [
+              "<strong>População Privada de Liberdade</strong><br>(PNAISP)",
+              "Portaria Interministerial MS/MJ nº 1/2014.<br>Cada unidade prisional é uma <strong>UBS intramuros ponto da RAS</strong> (Equipe de Atenção Primária Prisional — <strong>eAPP</strong>). Atende condenados E <strong>provisórios</strong>!",
+              "1) <strong>TB prisional (risco 35x maior):</strong> investigar tosse de qualquer duração, TRM-TB + <strong>Cultura com TSA em 100% dos casos</strong>, TDO e isolamento por 15 dias.<br>2) <strong>Lei nº 13.434/2017:</strong> <strong>PROIBIDO uso de algemas</strong> em gestantes no trabalho de parto, parto e puerpério imediato!"
+            ],
+            [
+              "<strong>Populações do Campo, da Floresta e das Águas</strong><br>(PNSIPCFA)",
+              "Portaria MS nº 2.866/2011.<br>Equipes de Saúde da Família Ribeirinhas (<strong>eSFR</strong>) e <strong>Unidades Básicas de Saúde Fluviais (UBSF)</strong> (barco com consultórios e laboratório).",
+              "1) <strong>Organofosforados/Carbamatos:</strong> Síndrome Colinérgica (miose, broncorreia, bradicardia, fasciculações) &rarr; <strong>Atropina EV até secar secreção pulmonar</strong> + Pralidoxima.<br>2) <strong>Paraquat:</strong> Fibrose pulmonar &rarr; <strong>O2 suplementar é contraindicado!</strong><br>3) <strong>Doença da Folha Verde do Tabaco:</strong> intoxicação dérmica por nicotina no orvalho."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (Brasil) — Políticas de Promoção da Equidade em Saúde (PNSIPN, PNSI-LGBT, PNAISP, PNSIPCFA e Consultório na Rua)</a>",
+            "<a href=\"https://www.planalto.gov.br\" target=\"_blank\" rel=\"noopener noreferrer\">Brasil — Lei Federal nº 9.836/1999 (Lei Arouca - Subsistema de Atenção à Saúde Indígena SASI-SUS) e Portaria MS nº 254/2002 (PNASPI)</a>",
+            "<a href=\"https://sistemas.cfm.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Conselho Federal de Medicina (CFM) — Resolução CFM nº 2.265/2019 (Cuidado específico à pessoa com incongruência de gênero ou transgênero)</a>",
+            "<a href=\"https://www.sbmfc.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Gusso G, Lopes JMC, Dias LC — Tratado de Medicina de Família e Comunidade: Princípios, Formação e Prática (SBMFC / Artmed)</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

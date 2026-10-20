@@ -1,0 +1,36 @@
+name: Daily Marketing Video Publish & Storage Auto-Cleanup
+
+on:
+  schedule:
+    # Executa todos os dias às 15:00 UTC (12:00 Horário de Brasília - Horário de Pico Médico)
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+    inputs:
+      target_post_id:
+        description: 'ID opcional da peça (ex: p02) para publicar e limpar imediatamente'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+
+jobs:
+  publish-and-clean:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Publish scheduled video to Meta Ads and auto-delete from site storage
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL || 'https://sxdsfklllilhdyuamvvg.supabase.co' }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
+          TARGET_POST_ID: ${{ github.event.inputs.target_post_id }}
+        run: node scripts/publish-and-clean-videos.cjs

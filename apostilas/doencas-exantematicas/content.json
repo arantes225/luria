@@ -1,0 +1,1065 @@
+{
+  "v": 2,
+  "s": "doencas-exantematicas",
+  "t": "Doenças Exantemáticas na Infância",
+  "p": "Doenças Exantemáticas na Infância — Livro-Texto LURIA",
+  "d": "Tratado Completo de Infectologia e Dermatologia Pediátrica: Diagnóstico Diferencial Semiológico, Sarampo (Koplik e Vitamina A), Rubéola (Linfonodos e SRC), Eritema Infeccioso (Parvovírus B19 e Crise Aplásica), Exantema Súbito (HHV-6), Escarlatina (Filatov, Pastia e Penicilina), Varicela (Polimorfismo e Bloqueio Pós-Exposição), Mão-Pé-Boca, Doença de Kawasaki, Mononucleose por EBV, Farmacodermias Graves (SSJ, NET, DRESS), Tabela Mestre LURIA e Calendário Vacinal do PNI",
+  "a": "Pediatria",
+  "m": "Pediatria",
+  "h": [
+    "Apostila LURIA",
+    "Doenças Exantemáticas na Infância",
+    "Tratado Completo de Infectologia e Dermatologia Pediátrica: Diagnóstico Diferencial Semiológico, Sarampo (Koplik e Vitamina A), Rubéola (Linfonodos e SRC), Eritema Infeccioso (Parvovírus B19 e Crise Aplásica), Exantema Súbito (HHV-6), Escarlatina (Filatov, Pastia e Penicilina), Varicela (Polimorfismo e Bloqueio Pós-Exposição), Mão-Pé-Boca, Doença de Kawasaki, Mononucleose por EBV, Farmacodermias Graves (SSJ, NET, DRESS), Tabela Mestre LURIA e Calendário Vacinal do PNI",
+    [
+      "Área: Pediatria",
+      "Matéria: Pediatria",
+      "Tema: Doenças Exantemáticas na Infância"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "fundamentos-e-diagnostico-diferencial-das-doencas-exantematicas",
+      "1. Fundamentos Propedêuticos e Diagnóstico Diferencial Estruturado das Doenças Exantemáticas na Infância"
+    ],
+    [
+      "sarampo-e-rubeola-diagnostico-e-enantemas",
+      "2. Sarampo versus Rubéola: Fisiopatologia, Sinais Patognomônicos e Complicações"
+    ],
+    [
+      "eritema-infeccioso-e-exantema-subito",
+      "3. Eritema Infeccioso (Parvovírus B19) versus Exantema Súbito (Roséola Infantil / HHV-6)"
+    ],
+    [
+      "escarlatina-e-varicela-semiologia-e-profilaxias",
+      "4. Escarlatina versus Varicela: Semiologia Específica, Sinais Clássicos e Profilaxia Pós-Exposição"
+    ],
+    [
+      "doenca-mao-pe-boca-e-doenca-de-kawasaki",
+      "5. Doença Mão-Pé-Boca (Enterovírus) e Doença de Kawasaki: Diagnóstico Clínico e Prevenção de Aneurismas Coronarianos"
+    ],
+    [
+      "casos-clinicos-e-questoes-exantematicas",
+      "6. Casos Clínicos Estruturados e Questões Comentadas Padrão Residência Médica"
+    ],
+    [
+      "outras-etiologias-infecciosas-mononucleose-ebv-cmv-e-arboviroses",
+      "7. Outras Causas Exantemáticas Relevantes: Mononucleose Infecciosa (EBV e CMV), Arboviroses Pediátricas e Meningococcemia"
+    ],
+    [
+      "tabela-comparativa-mestre-e-checklist-luria-exantematicas",
+      "8. Tabela Sinóptica Mestre e Checklist de Alta Retenção das Doenças Exantemáticas"
+    ],
+    [
+      "farmacodermias-pediatricas-steven-johnson-dress-e-urticaria",
+      "9. Farmacodermias Graves na Infância: Síndrome de Stevens-Johnson (SSJ), NET, Síndrome DRESS e Urticária Aguda"
+    ],
+    [
+      "protocolo-vacinal-e-vigilancia-epidemiologica-sarampo-rubeola",
+      "10. Calendário Vacinal do PNI, Bloqueio de Surtos e Notificação Compulsória Imediata"
+    ]
+  ],
+  "q": [
+    [
+      "fundamentos-e-diagnostico-diferencial-das-doencas-exantematicas",
+      0,
+      [
+        [
+          "2",
+          "1. Fundamentos Propedêuticos e Diagnóstico Diferencial Estruturado das Doenças Exantemáticas na Infância"
+        ],
+        [
+          "p",
+          "As doenças exantemáticas constituem um dos motivos mais frequentes de consulta na Atenção Primária à Saúde e nos serviços de urgência e emergência pediátrica. Um <strong>exantema</strong> define-se como uma erupção cutânea de aparecimento agudo, disseminada pela superfície corporal, frequentemente acompanhada de manifestações sistêmicas (febre, pródromos respiratórios ou gastrointestinais). Quando lesões semelhantes acometem as membranas mucosas (orofaringe, conjuntiva, genitália), recebem a denominação de <strong>enantema</strong>."
+        ],
+        [
+          "p",
+          "<strong>A Sistematização Semiológica do Exantema Pediátrico:</strong> Para o médico assistente, a identificação etiológica precisa não depende de exames laboratoriais sofisticados de rotina, mas sim de uma anamnese minuciosa associada à análise semiográfica rigorosa de seis variáveis fundamentais:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Tipo Morfológico da Lesão Elementar:</strong>\n    <ul>\n      <li><em>Maculopapular:</em> Lesões planas avermelhadas (máculas) associadas a pequenas elevações sólidas palpáveis &lt; 5 mm (pápulas), que clareiam à digitopressão. Subdivide-se em <strong>Morbiliforme</strong> (lesões avermelhadas com áreas de pele sã entremeadas, com tendência à confluência, típico do Sarampo), <strong>Rubeoliforme</strong> (máculas róseas, delicadas, não confluentes, típico da Rubéola e Roséola) e <strong>Escarlatiniforme</strong> (micropápulas confluentes puntiformes eritematosas que conferem sensação tátil de \"lixa áspera\", típico da Escarlatina).",
+            "<em>Vesicobolhoso / Polimórfico:</em> Lesões de conteúdo líquido claro (vesículas) ou purulento (pústulas) que evoluem para crostas (típico da Varicela e da Doença Mão-Pé-Boca).",
+            "<em>Purpúrico / Petequial:</em> Lesões hemorrágicas que <strong>NÃO clareiam à digitopressão</strong> (sinal de alerta máximo para meningococcemia, sepse bacteriana e púrpuras vasculares).",
+            "<strong>Relação Cronológica com a Febre e Pródromos:</strong>\n    <ul>\n      <li>Febre alta e persistente com exantema surgindo no pico febril associado a pródromos catarrais exuberantes -> <em>Sarampo</em>.",
+            "Febre alta que dura 3 a 5 dias e <strong>DESAPARECE SUBITAMENTE EM CRISE, surgindo o exantema imediatamente após o término da febre</strong> -> <em>Exantema Súbito (Roséola Infantil)</em>.",
+            "Febre moderada associada a faringoamigdalite bacteriana exsudativa com exantema surgindo 24 a 48 horas depois -> <em>Escarlatina</em>.",
+            "Exantema que surge sem febre ou com febre baixa/subfebril em criança com excelente estado geral -> <em>Eritema Infeccioso</em>.",
+            "<strong>Padrão de Distribuição e Progressão Corporal:</strong>\n    <ul>\n      <li>Progressão <strong>Craniocaudal com início na linha de implantação dos cabelos/região retroauricular</strong> e disseminação centrífuga lenta ao longo de 3 dias -> <em>Sarampo</em>.",
+            "Progressão <strong>Craniocaudal de evolução ultra-rápida (surge e some em 24 a 48 horas)</strong> -> <em>Rubéola</em>.",
+            "Distribuição <strong>Centrípeta com polimorfismo regional simultâneo</strong> (couro cabeludo, tronco e face) -> <em>Varicela</em>.",
+            "Início na face com aspecto de \"bochechas esbofeteadas\" seguido de padrão reticulado rendilhado nos membros -> <em>Eritema Infeccioso</em>.",
+            "<strong>Evolução e Tipo de Descamação Cutânea Residual:</strong>\n    <ul>\n      <li>Descamação <strong>Furfurácea (fina, pulverulenta, \"em farelo de trigo\")</strong> -> <em>Sarampo</em>.",
+            "Descamação <strong>Lamelar / Foliácea em lâminas escamosas (especialmente nas polpas digitais das mãos e pés, \"em luva e bota\")</strong> -> <em>Escarlatina</em> e <em>Doença de Kawasaki</em>.",
+            "Ausência de descamação residual -> <em>Rubéola</em>, <em>Exantema Súbito</em> e <em>Eritema Infeccioso</em>.",
+            "<strong>Presença de Enantemas Patognomônicos na Cavidade Oral:</strong>\n    <ul>\n      <li><em>Manchas de Koplik</em> (pontos esbranquiçados como grãos de areia na mucosa jugal) -> <em>Sarampo</em>.",
+            "<em>Manchas de Forchheimer</em> (petéquias róseas no palato mole) -> <em>Rubéola</em>.",
+            "<em>Língua em Framboesa</em> (hipertrofia de papilas gustativas fungiformes) -> <em>Escarlatina</em> e <em>Doença de Kawasaki</em>.",
+            "<em>Vesículas ulceradas dolorosas em palato, pilares amigdalianos e mucosa jugal</em> -> <em>Doença Mão-Pé-Boca e Herpangina</em>.",
+            "<strong>História Vacinal Prévia e Contatos Epidemiológicos:</strong> Estado de imunização no Cartão de Vacinas contra Tríplice Viral (Sarampo, Caxumba e Rubéola) e Varicela."
+          ]
+        ]
+      ]
+    ],
+    [
+      "sarampo-e-rubeola-diagnostico-e-enantemas",
+      0,
+      [
+        [
+          "2",
+          "2. Sarampo versus Rubéola: Fisiopatologia, Sinais Patognomônicos e Complicações"
+        ],
+        [
+          "3",
+          "2.1. Sarampo (O Vírus do Sarampo e a Imunossupressão Pós-Infecciosa)"
+        ],
+        [
+          "p",
+          "O Sarampo é uma das infecções virais humanas mais contagiosas conhecidas na medicina, causada por um vírus de RNA fita simples de polaridade negativa pertencente à família <em>Paramyxoviridae</em>, gênero <em>Morbillivirus</em>. O seu número básico de reprodução (R0) varia de 12 a 18 (um único indivíduo infectado transmite a doença para 12 a 18 pessoas suscetíveis em uma comunidade não vacinada). A transmissão ocorre por <strong>aerossóis de partículas finas que permanecem suspensas no ar por até 2 horas</strong> em ambientes fechados após a saída do doente."
+        ],
+        [
+          "p",
+          "<strong>Amnésia Imunológica Induzida pelo Sarampo:</strong> O vírus do sarampo possui tropismo específico pelo receptor CD150 (SLAM) expresso na superfície de linfócitos T e B de memória e células dendríticas. A infecção maciça dessas células induz apoptose generalizada dos clones de memória, resultando em uma profunda <strong>\"amnésia imunológica\" que dura de 2 a 3 anos após o sarampo</strong>, apagando a imunidade celular e humoral previamente adquirida contra dezenas de outros patógenos e multiplicando a mortalidade infantil tardia por pneumonias e diarreias bacterianas secundárias."
+        ],
+        [
+          "p",
+          "<strong>Fases Clínicas do Sarampo:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Período de Incubação:</strong> Dura habitualmente de 10 a 14 dias (completamente assintomático).",
+            "<strong>Período Prodrômico / Catarral (Dura de 3 a 5 dias):</strong> Caracteriza-se por <strong>febre alta (39 a 40 ºC) associada à exuberante tríade dos 3 \"C\"s: Tosse seca metálica (Cough), Coriza hialina profusa (Coryza) e Conjuntivite com fotofobia intensa e lacrimejamento (Conjunctivitis)</strong>. A criança apresenta fácies de sofrimento (\"fácies sarampionosa\"), prostração intensa e edema palpebral.",
+            "<strong>O Enantema Patognomônico — As Manchas de Koplik:</strong> Surgem cerca de <strong>24 a 48 horas ANTES do aparecimento do exantema cutâneo</strong> (no final do período prodrômico). Apresentam-se como micropápulas pontiformes esbranquiçadas ou branco-azuladas, com halo eritematoso fino ao redor, semelhantes a \"pequenos grãos de areia ou sal grosso polvilhados sobre fundo vermelho\", localizadas na <strong>mucosa jugal oral na altura do 2º molar inferior</strong>. Desaparecem 24 a 48 horas após a eclosão do exantema. <em>Sua presença é patognomônica de Sarampo!</em>",
+            "<strong>Período Exantemático:</strong> Ocorre a erupção de um <strong>exantema maculopapular morbiliforme avermelhado</strong>. Tem início na linha de implantação do couro cabeludo, atrás das orelhas e na fronte (região retroauricular). Dissemina-se em <strong>progressão craniocaudal lenta ao longo de 3 dias</strong> (atinge pescoço e tórax no 1º dia, abdome e membros superiores no 2º dia e membros inferiores no 3º dia). As lesões confluem amplamente no tronco, deixando pequenas ilhas de pele sã entremeadas. <em>Importante:</em> A febre atinge seu pico máximo exatamente no momento da erupção exantemática!",
+            "<strong>Período de Convalescença:</strong> Após cerca de 5 a 6 dias de evolução, o exantema empalidece e cede na mesma ordem em que surgiu (craniocaudal), evoluindo com a clássica <strong>descamação furfurácea (fina e pulverulenta)</strong> associada a manchas acastanhadas residuais hiperpigmentadas transitórias."
+          ]
+        ],
+        [
+          "4",
+          "A Suplementação Terapêutica Obrigatória de Vitamina A"
+        ],
+        [
+          "p",
+          "O vírus do sarampo induz uma depleção aguda e catastrófica dos estoques hepáticos de retinol (Vitamina A), mesmo em crianças previamente bem nutridas. A hipovitaminose A secundária agrava a destruição do epitélio respiratório e corneal, multiplicando o risco de cegueira (xeroftalmia) e morte por pneumonia. <strong>A OMS e o Ministério da Saúde recomendam a administração IMEDIATA de VITAMINA A por via oral em 2 doses consecutivas (no dia do diagnóstico e no dia seguinte) para TODOS os casos confirmados de Sarampo, independentemente do estado nutricional prévio!</strong>\n  <br>• Crianças &lt; 6 meses: 50.000 UI por dose.\n  <br>• Crianças de 6 a 11 meses: 100.000 UI por dose.\n  <br>• Crianças &gt;= 12 meses: 200.000 UI por dose."
+        ],
+        [
+          "p",
+          "<strong>Complicações do Sarampo:</strong> A complicação mais frequente é a <strong>Otite Média Aguda bacteriana</strong>. A principal causa de óbito por sarampo na infância é a <strong>Pneumonia</strong> (que pode ser primária de células gigantes pelo próprio vírus do sarampo — Pneumonia de Hecht, ou secundária a superinfecção bacteriana por <em>Streptococcus pneumoniae</em> e <em>Staphylococcus aureus</em>). Uma complicação neurológica tardia devastadora e 100% fatal é a <strong>Panencefalite Esclerosante Subaguda (PEES)</strong>, que surge 6 a 10 anos após a infecção primária por persistência mutante do vírus no sistema nervoso central, manifestando-se por demência progressiva, mioclonias e coma."
+        ],
+        [
+          "3",
+          "2.2. Rubéola (O \"Sarampo Alemão\" e a Síndrome da Rubéola Congênita)"
+        ],
+        [
+          "p",
+          "A Rubéola é causada por um vírus de RNA da família <em>Matonaviridae</em> (antiga <em>Togaviridae</em>), gênero <em>Rubivirus</em>. No pós-natal, é uma doença benigna e autolimitada (\"sarampo de três dias\"), caracterizada por:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Pródromos Leves:</strong> Febre baixa ou subfebril, mal-estar discreto e sintomas respiratórios superiores discretos.",
+            "<strong>A Linfadenopatia Retroauricular e Suboccipital Dolorosa:</strong> É a marca clínica e semiológica da Rubéola. Ocorre o aumento doloroso e fibroelástico de gânglios linfáticos nas cadeias <strong>retroauriculares, suboccipitais e cervicais posteriores</strong>, que surge precocemente cerca de 24 a 48 horas antes do exantema e persiste por semanas.",
+            "<strong>O Exantema Rubeoliforme:</strong> Máculas róseas, pequenas, delicadas, <strong>não confluentes</strong>, que também possuem progressão craniocaudal, porém de <strong>evolução e disseminação ultra-rápida (surge, dissemina-se pelo corpo e desaparece em menos de 2 a 3 dias)</strong>, sem descamação residual.",
+            "<strong>As Manchas de Forchheimer:</strong> Enantema caracterizado por pequenas lesões petequiais ou maculares avermelhadas situadas no <strong>palato mole</strong> (presente em 20% dos casos; não é patognomônico, podendo ocorrer na escarlatina e mononucleose).",
+            "<strong>Artrite / Artralgias:</strong> Complicação frequente em mulheres adolescentes e adultas jovens acometendo punhos e pequenas articulações das mãos de forma transitória."
+          ]
+        ],
+        [
+          "4",
+          "O Perigo Real da Rubéola: A Síndrome da Rubéola Congênita (SRC)"
+        ],
+        [
+          "p",
+          "A verdadeira relevância da vigilância epidemiológica e da vacinação contra a rubéola é proteger as <strong>mulheres gestantes suscetíveis contra a infecção primária durante o primeiro trimestre gestacional</strong>. O vírus atravessa a placenta e infecta o embrião, induzindo apoptose e inibição da divisão celular nos órgãos em organogênese ativa. A <strong>Síndrome da Rubéola Congênita clássica</strong> manifesta-se pela tétrade de Gregg:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Surdez Neurossensorial Bilateral</strong> (a sequela mais comum, presente em &gt; 80% dos casos);",
+            "<strong>Cardiopatia Congênita:</strong> Com destaque absoluto para a <strong>Persistência do Canal Arterial (PCA)</strong> e a <strong>Estenose Supravalvar ou dos Ramos da Artéria Pulmonar</strong>;",
+            "<strong>Catarata Congênita Bilateral com Microftalmia</strong> (opacificação nuclear do cristalino com perda do reflexo vermelho ocular);",
+            "<strong>Lesões Encefálicas:</strong> Microcefalia, meningoencefalite crônica e atraso grave do desenvolvimento neuropsicomotor, associada ao exantema purpúrico neonatal em \"muffin de mirtilo\" (<em>blueberry muffin baby</em> por hematopoiese dérmica extramedular)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "eritema-infeccioso-e-exantema-subito",
+      0,
+      [
+        [
+          "2",
+          "3. Eritema Infeccioso (Parvovírus B19) versus Exantema Súbito (Roséola Infantil / HHV-6)"
+        ],
+        [
+          "p",
+          "O Eritema Infeccioso e o Exantema Súbito são duas enfermidades virais comuns da infância com comportamentos cronológicos e padrões exantemáticos totalmente distintos, cuja diferenciação clínica é clássica em provas de residência e no cotidiano pediátrico."
+        ],
+        [
+          "3",
+          "3.1. Eritema Infeccioso (Quinta Doença / Megaloeritema)"
+        ],
+        [
+          "p",
+          "O Eritema Infeccioso é causado pelo <strong>Parvovírus B19</strong>, um vírus de DNA fita simples, não envelopado, extremamente estável no meio ambiente. Acomete predominantemente escolares e adolescentes em idade entre 5 e 15 anos. A transmissão ocorre por gotículas de secreções respiratórias aéreas."
+        ],
+        [
+          "p",
+          "<strong>Tropismo Celular e o Receptor do Antígeno P:</strong> O Parvovírus B19 possui tropismo celular exclusivo e altamente específico pelas <strong>células progenitoras da linhagem eritroide da medula óssea (proeritroblastos e normoblastos)</strong>. O vírus utiliza como ligante de adesão celular o <strong>antígeno P (globosídeo eritrocitário)</strong> expresso na membrana das células precursoras vermelhas. A invasão viral é citolítica direta, provocando a lise celular e paralisando temporariamente a produção de novas hemácias na medula óssea por 7 a 10 dias."
+        ],
+        [
+          "u",
+          [
+            "Em indivíduos hígidos (com sobrevida normal das hemácias de 120 dias), essa parada temporária na eritropoiese é clinicamente imperceptível, pois a queda transitória de reticulócitos não é suficiente para reduzir significativamente a hemoglobina.",
+            "Contudo, em indivíduos portadores de <strong>anemias hemolíticas crônicas com alta taxa de renovação de eritrócitos</strong> (como Anemia Falciforme, Esferocitose Hereditária, Talassemia Maior e Deficiência de G6PD), a lise dos precursores eritroides pelo Parvovírus B19 desencadeia a temida <strong>Crise Aplásica Transitória</strong>: queda abrupta e dramática da hemoglobina (ex.: Hb caindo para 2 a 4 g/dL) com <em>reticulocitopenia profunda (reticulócitos próximos de 0%)</em>, exigindo suporte transfusional de emergência.",
+            "Na gestante suscetível, a infecção transplacentária ataca a hematopoiese fetal hepática e o miocárdio embrionário, culminando em anemia fetal severa, insuficiência cardíaca congestiva fetal de alto débito e <strong>Hidropsia Fetal Não Imune</strong> com óbito intrauterino (especialmente quando contraída antes da 20ª semana gestacional)."
+          ]
+        ],
+        [
+          "4",
+          "A Evolução Clássica do Exantema em Três Fases Sucessivas"
+        ],
+        [
+          "p",
+          "O Eritema Infeccioso não possui pródromos febris intensos; a criança apresenta-se habitualmente em excelente estado geral, com febre baixa ou ausente. O exantema manifesta-se em três etapas bem demarcadas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>1ª Fase — A \"Face Esbofeteada\" (Slapped-Cheek Appearance):</strong> Instala-se subitamente um eritema vermelho-vivo e brilhante nas duas bochechas (malar bilateral), com aspecto de queimadura solar ou bofetada, associado a palidez perioral circum-oral bem demarcada. As bochechas ficam quentes e discretamente edemaciadas. Dura de 1 a 4 dias.",
+            "<strong>2ª Fase — O Padrão Rendilhado / Reticulado:</strong> Cerca de 1 a 4 dias após a fase facial, o eritema dissemina-se pelo tronco e pelas superfícies extensoras dos membros superiores e coxas. As lesões assumem uma conformação macular e papular eritematosa com clareamento central e bordas serpiginosas entrelaçadas, desenhando um aspecto de <strong>renda fina, rede ou padrão rendilhado (exantema reticulado)</strong>. POUPA as palmas das mãos e plantas dos pés. Não há descamação residual.",
+            "<strong>3ª Fase — A Recidiva Térmica e Sob Estresse (Fase Evancescente):</strong> É a marca registrada do eritema infeccioso. O exantema desaparece espontaneamente após 1 a 2 semanas, porém <strong>REAPARECE PERIODICAMENTE ao longo de várias semanas ou meses</strong> sob a ação de estímulos térmicos, físicos ou emocionais: <em>exposição à luz solar, banho quente, choro vigoroso, exercícios físicos ou estresse emocional</em>. A recidiva NÃO significa reinfecção ou piora clínica."
+          ]
+        ],
+        [
+          "p",
+          "<em>Artropatia do Parvovírus B19 em Adultos:</em> Em mulheres adultas que cuidam de crianças acometidas, a infecção pelo B19 manifesta-se frequentemente como uma poliartrite aguda e simétrica de pequenas articulações das mãos (interfalangeanas proximais e metacarpofalangeanas) e punhos, mimetizando perfeitamente uma abertura de Artrite Reumatoide soronegativa, com duração autolimitada de 2 a 4 semanas."
+        ],
+        [
+          "3",
+          "3.2. Exantema Súbito (Roséola Infantil / Sexta Doença)"
+        ],
+        [
+          "p",
+          "O Exantema Súbito é uma enfermidade infecciosa aguda febril e benigna da primeira infância, causada primariamente pelo <strong>Herpes-vírus Humano Tipo 6 (HHV-6 variante B)</strong> e, menos frequentemente, pelo HHV-7, ambos pertencentes à subfamília <em>Betaherpesvirinae</em>. É uma infecção extremamente prevalente, acometendo tipicamente <strong>lactentes na faixa etária estrita entre os 6 e os 18 meses de vida</strong> (praticamente 100% da população já se infectou até os 2 a 3 anos de idade)."
+        ],
+        [
+          "p",
+          "<strong>A Cronologia Inconfundível: A Febre que Cede em Crise:</strong>"
+        ],
+        [
+          "4",
+          "O Padrão Temporal Patognomônico do Exantema Súbito"
+        ],
+        [
+          "p",
+          "1. <strong>Fase Febril Aguda (Duração de 3 a 5 Dias):</strong> A doença abre subitamente com <strong>febre muito alta (39,5 ºC a 40,5 ºC)</strong>, contínua ou intermitente, de difícil controle antitérmico. Surpreendentemente, apesar da temperatura corporal nas alturas, o lactente mantém-se em <strong>bom estado geral entre os picos febris</strong>, brincando ativamente e sem sinais de toxemia séptica. Podem ocorrer hiperemia conjuntival leve, faringite discreta e as <strong>Manchas de Nagayama</strong> (enantema com pápulas eritematosas na úvula e palato mole)."
+        ],
+        [
+          "p",
+          "2. <strong>A Crise Convulsiva Febril:</strong> Em virtude da elevação térmica ultra-rápida e do neurotropismo do HHV-6, o exantema súbito é a <strong>causa isolada mais comum de Crise Convulsiva Febril Simples na infância</strong>, ocorrendo em até 10% a 15% das crianças infectadas."
+        ],
+        [
+          "p",
+          "3. <strong>O Desaparecimento da Febre e a Eclosão Exantemática:</strong> No 3º ao 5º dia de doença, <strong>A FEBRE DESAPARECE SUBITAMENTE EM CRISE (de um momento para o outro)</strong>. Concomitantemente, ou poucas horas após o término definitivo da febre, <strong>SURGE SUBITAMENTE O EXANTEMA</strong> cutâneo!"
+        ],
+        [
+          "p",
+          "<strong>Morfologia e Disseminação do Exantema:</strong> Trata-se de um exantema maculopapular avermelhado ou róseo pálido, composto por máculas e pápulas pequeninas e discretas (2 a 3 mm), que clareiam à digitopressão e raramente confluem. A sua distribuição é tipicamente <strong>centrífuga: tem início no TRONCO e pescoço</strong>, progredindo discretamente para a face e porção proximal dos membros. POUPA a porção distal dos membros inferiores e superiores. É assintomático, não pruriginoso e <strong>desaparece rapidamente em 24 a 48 horas sem descamação residual</strong>."
+        ]
+      ]
+    ],
+    [
+      "escarlatina-e-varicela-semiologia-e-profilaxias",
+      0,
+      [
+        [
+          "2",
+          "4. Escarlatina versus Varicela: Semiologia Específica, Sinais Clássicos e Profilaxia Pós-Exposição"
+        ],
+        [
+          "p",
+          "Nesta seção contrastamos a principal doença exantemática de etiologia bacteriana (Escarlatina) com a doença viral vesicobolhosa clássica (Varicela), destacando os sinais semiológicos com epônimos e as condutas terapêuticas mandatórias."
+        ],
+        [
+          "3",
+          "4.1. Escarlatina (Streptococcus pyogenes e as Exotoxinas Pirogênicas)"
+        ],
+        [
+          "p",
+          "A Escarlatina é uma doença exantemática infecciosa bacteriana aguda desencadeada pelo <strong>Streptococcus pyogenes (Estreptococo do Grupo A de Lancefield - EGA)</strong> produtor de <strong>Exotoxinas Pirogênicas Estreptocócicas (SpeA, SpeB e SpeC / toxinas eritrogênicas)</strong>. As exotoxinas atuam como <em>superantígenos</em> que provocam dilatação inflamatória maciça e aumento da permeabilidade dos capilares dérmicos superficiais em indivíduos que não possuem anticorpos antitoxina prévios. Acomete primariamente escolares entre 5 e 15 anos de idade, sendo excepcional em lactentes menores de 2 anos."
+        ],
+        [
+          "p",
+          "<strong>Quadro Clínico e o Enantema em Framboesa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Faringoamigdalite Exsudativa Aguda:</strong> A doença inicia-se com febre alta de início súbito, dor de garganta intensa (odinofagia), calafrios, vômitos e amígdalas hiperemiadas e aumentadas com placas purulentas exsudativas esbranquiçadas, associada a linfonodomegalia submandibular dolorosa.",
+            "<strong>A Evolução da Língua em Framboesa:</strong> Nos primeiros 1 a 2 dias de doença, a superfície lingual encontra-se recoberta por uma espessa camada branca acinzentada através da qual projetam-se as papilas gustativas fungiformes inflamadas e hiperemiadas, conformando o aspecto de <strong>Língua em Framboesa Branca (Língua Saburrosa)</strong>. A partir do 3º ou 4º dia, essa camada descama-se completamente, expondo uma mucosa lingual de coloração vermelho-brilhante intensa com papilas proeminentes e hipertrofiadas, constituindo a patognomônica <strong>Língua em Framboesa Vermelha (Língua em Amora)</strong>."
+          ]
+        ],
+        [
+          "4",
+          "Os Três Sinais Semiológicos Clássicos da Escarlatina"
+        ],
+        [
+          "o",
+          [
+            "<strong>Exantema Escarlatiniforme Micropapular em \"Lixa Áspera\":</strong> Surge 24 a 48 horas após a febre. É composto por micropápulas puntiformes eritematosas extremamente densas e avermelhadas sobre base hiperemiada difusa, com <strong>sensação tátil inconfundível de \"lixa áspera de madeira\" ou \"pele de ganso\"</strong>. Empalidece sob digitopressão intensa.",
+            "<strong>Sinal de Filatov (Máscara de Filatov):</strong> O exantema acomete as bochechas e a fronte com rubor intenso, mas <strong>POUPA RIGOROSAMENTE A REGIÃO PERIORAL (ao redor da boca) e o nariz</strong>, desenhando uma palidez peribucal lívida que contrasta com a face vermelha.",
+            "<strong>Sinal de Pastia (Linhas de Pastia):</strong> Nas áreas de dobras cutâneas submetidas a atrito constante e flexão articular (especialmente nas <strong>fossas antecubitais dos cotovelos, pregas axilares e pregas inguinais</strong>), as lesões exantemáticas tornam-se hipercoradas, confluentes e lineares, adquirindo um aspecto de <strong>linhas petequiais hemorrágicas transversais que NÃO clareiam à digitopressão</strong> e persistem mesmo após o clareamento do restante do exantema."
+          ]
+        ],
+        [
+          "p",
+          "<strong>A Descamação Lamelar Tardia e o Tratamento Antibacteriano:</strong>"
+        ],
+        [
+          "p",
+          "Após 7 a 10 dias de evolução, o exantema empalidece e a pele entra em um processo de <strong>Descamação Lamelar / Foliácea em lâminas escamosas</strong>. Essa descamação atinge seu ápice entre a 2ª e a 3ª semana de doença, ocorrendo caracteristicamente nas <strong>extremidades distais dos dedos das mãos e dos pés (polpas digitais descamando em luva e bota)</strong>."
+        ],
+        [
+          "p",
+          "<em>Tratamento Obrigatório:</em> O tratamento de escolha absoluta é a <strong>Penicilina G Benzatina em dose única por via intramuscular profunda (600.000 UI se &lt;= 27 kg; 1.200.000 UI se &gt; 27 kg)</strong>, ou Amoxicilina oral por 10 dias inteiros. O objetivo do tratamento é erradicar o estreptococo da orofaringe, cessar a transmissão comunitária após 24 horas do antibiótico e realizar a <strong>Profilaxia Primária da Febre Reumática</strong>."
+        ],
+        [
+          "3",
+          "4.2. Varicela (Catapora / Vírus Varicela-Zóster)"
+        ],
+        [
+          "p",
+          "A Varicela é uma infecção primária altamente contagiosa causada pelo <strong>Vírus Varicela-Zóster (VVZ / Herpes-vírus Humano Tipo 3)</strong>, transmitida por gotículas orofaríngeas, aerossóis e pelo contato direto com o líquido vesicular infectado das lesões cutâneas. O período de transmissibilidade inicia-se <strong>1 a 2 dias ANTES da eclosão do exantema e persiste até que TODAS as lesões cutâneas tenham evoluído para a fase de CROSTA SECA</strong> (enquanto houver vesículas ativas ou úmidas, o paciente continua transmitindo o vírus!)."
+        ],
+        [
+          "4",
+          "A Marca Registrada da Varicela: O Polimorfismo Regional Típico"
+        ],
+        [
+          "p",
+          "Ao contrário de quase todas as outras doenças exantemáticas (que exibem apenas um tipo de lesão elementar em cada fase), a Varicela caracteriza-se por lesões que surgem em <strong>surtos sucessivos (ondas de erupção ao longo de 3 a 5 dias)</strong>. Em consequência, ao examinar um mesmo segmento anatômico da pele do paciente (ex.: o tórax), o médico observa a <strong>coexistência simultânea de todos os estágios evolutivos da lesão elementar</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Mácula eritematosa pequena</strong>;",
+            "<strong>Pápula avermelhada</strong>;",
+            "<strong>Vesícula de conteúdo líquido límpido claro sobre base eritematosa</strong> (\"gota de orvalho sobre pétala de rosa\");",
+            "<strong>Pústula umbilicada de conteúdo turvo</strong>;",
+            "<strong>Crosta seca cicatricial hemática</strong>."
+          ]
+        ],
+        [
+          "p",
+          "<em>Distribuição e Prurido:</em> A distribuição é tipicamente <strong>Centrípeta</strong>, concentrando-se no couro cabeludo, face e tronco, poupando relativamente as extremidades distais dos membros. <strong>O prurido é extremamente intenso e angustiante</strong>, levando ao ato compulsivo de coçar."
+        ],
+        [
+          "p",
+          "<strong>Complicações da Varicela:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Superinfecção Bacteriana Secundária da Pele (A Complicação Mais Comum):</strong> As escoriações provocadas pelo ato de coçar rompem a barreira cutânea, permitindo a invasão secundária por <em>Staphylococcus aureus</em> e <em>Streptococcus pyogenes</em>. Manifesta-se como impetigo bolhoso, celulite, erisipela, abscessos subcutâneos e, nas formas graves, <strong>Fasceíte Necrosante e Choque Tóxico Estreptocócico</strong>. <em>Aviso Farmacológico:</em> <strong>O uso de anti-inflamatórios não esteroidais (AINEs como Ibuprofeno) durante a varicela está proscrito</strong>, pois estudos associam seu uso a risco aumentado de infecções bacterianas invasivas de partes moles e fasceíte necrosante! O antitérmico de escolha é a Dipirona ou o Paracetamol.",
+            "<strong>Síndrome de Reye:</strong> Encefalopatia aguda não inflamatória e degeneração gordurosa hepática grave desencadeada pelo uso de <strong>Ácido Acetilsalicílico (AAS / Salicilatos)</strong> durante o curso da varicela ou influenza. O uso de AAS é formalmente contraindicado.",
+            "<strong>Ataxia Cerebelar Aguda:</strong> Inflamação benigna e autolimitada do cerebelo pós-varicela, manifestando-se por marcha atáxica cambaleante, dismetria e nistagmo cerca de 1 a 3 semanas após o exantema."
+          ]
+        ],
+        [
+          "4",
+          "Profilaxia Pós-Exposição da Varicela (Protocolo Oficial do Ministério da Saúde)"
+        ],
+        [
+          "p",
+          "Diante do contato domiciliar ou hospitalar íntimo de um indivíduo suscetível (não vacinado e sem histórico prévio de catapora) com um caso índice de varicela:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Vacina Contra Varicela (Atenuada):</strong>\n      <br>• Indicada para indivíduos suscetíveis <strong>hígidos e imunocompetentes com idade &gt;= 9 meses</strong>;\n      <br>• Deve ser administrada no prazo máximo de <strong>até 120 HORAS (5 DIAS) após o contato</strong> (sendo ideal nas primeiras 72 horas).",
+            "<strong>2. Imunoglobulina Humana Antivaricela-Zóster (IGHAVZ):</strong>\n      <br>• Indicada para indivíduos suscetíveis que possuam <strong>alto risco de varicela grave com contraindicação formal à vacina atenuada</strong>:\n        <ol>\n          <li><strong>Imunodeprimidos graves</strong> (portadores de neoplasias hematológicas, imunodeficiências primárias, transplantados ou em uso de quimioterapia/corticoide em altas doses);",
+            "<strong>Gestantes suscetíveis</strong>;",
+            "<strong>Recém-nascidos prematuros</strong>: internados com IG &lt; 28 semanas (independentemente do histórico materno) OU recém-nascidos &gt;= 28 semanas cuja mãe seja suscetível;",
+            "<strong>Recém-nascidos de mães cuja varicela eclodiu de 5 dias ANTES do parto até 48 horas APÓS o parto</strong> (período de viremia materna sem tempo hábil para transferência transplacentária de anticorpos protetores IgG)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "doenca-mao-pe-boca-e-doenca-de-kawasaki",
+      0,
+      [
+        [
+          "2",
+          "5. Doença Mão-Pé-Boca (Enterovírus) e Doença de Kawasaki: Diagnóstico Clínico e Prevenção de Aneurismas Coronarianos"
+        ],
+        [
+          "p",
+          "Nesta seção abordamos duas afecções de imensa relevância pediátrica: a Doença Mão-Pé-Boca (uma enterovirose vesicular contagiosa altamente prevalente) e a Doença de Kawasaki (a principal vasculite sistêmica da infância e causa primária de doença coronariana adquirida em crianças)."
+        ],
+        [
+          "3",
+          "5.1. Doença Mão-Pé-Boca (DMPB / Síndrome Mão-Pé-Boca)"
+        ],
+        [
+          "p",
+          "A Doença Mão-Pé-Boca é uma infecção viral altamente contagiosa causada por vírus pertencentes ao gênero <em>Enterovirus</em> da família <em>Picornaviridae</em>. O agente etiológico clássico e mais comum é o <strong>Coxsackievírus A16</strong>. Contudo, surtos contemporâneos e formas atípicas mais graves associam-se ao <strong>Enterovírus A71 (EV71)</strong> — que possui acentuado neurotropismo, podendo induzir rombencefalite, edema pulmonar neurogênico de rápida evolução e choque — e ao <strong>Coxsackievírus A6</strong> (responsável pelo exantema vesicular atípico disseminado e onicomadese tardia)."
+        ],
+        [
+          "p",
+          "<strong>Apresentação Clínica e Topografia das Lesões:</strong> Acomete preferencialmente lactentes e pré-escolares menores de 5 anos de idade em creches e escolas, transmitida por via fecal-oral e por secreções respiratórias. O quadro abre com febre moderada a alta, dor de garganta, salivação excessiva (sialorreia) e recusa alimentar completa pela intensa dor oral."
+        ],
+        [
+          "4",
+          "A Tétrade Topográfica da Doença Mão-Pé-Boca"
+        ],
+        [
+          "o",
+          [
+            "<strong>Lesões Ulceradas Orais (Enantema):</strong> Pequenas pápulas eritematosas que evoluem rapidamente para vesículas delicadas que se rompem com facilidade, transformando-se em <strong>úlceras rasas dolorosas com halo eritematoso fino</strong>, localizadas na mucosa jugal, língua, gengivas, palato duro e mole e pilares amigdalianos.",
+            "<strong>Vesículas Palmares (Mãos):</strong> Pápulas eritematosas e <strong>vesículas ovais ou elípticas de conteúdo líquido claro, circundadas por um halo eritematoso vermelho-vivo</strong>, com o seu maior eixo alinhado paralelamente às linhas de força da pele. Localizam-se nas palmas das mãos, dobras interfalangeanas e dorsos dos dedos.",
+            "<strong>Vesículas Plantares (Pés):</strong> Lesões idênticas distribuídas nas plantas dos pés, calcanhares e dorsos dos artelhos. As lesões são habitualmente pouco pruriginosas ou indolores na pele íntegra, contrastando com a intensa dor oral.",
+            "<strong>Acometimento de Glúteos e Períneo:</strong> Frequentemente observa-se uma erupção maculopapular eritematosa confluente (às vezes sem vesículas óbvias) nas <strong>nádegas, sulco interglúteo e região perianal</strong>."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Manifestações Tardias Autolimitadas:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Onicomadese (Desprendimento da Lâmina Ungueal):</strong> Cerca de 3 a 8 semanas após a resolução do quadro agudo de DMPB (especialmente associada ao Coxsackie A6), os pais procuram aflitos o pediatra porque as unhas das mãos e pés da criança começam a soltar-se pela base e cair espontaneamente. Trata-se de uma interrupção temporária transitória da matriz ungueal durante a fase febril aguda. O quadro é totalmente benigno e a unha regenera-se perfeitamente sem sequelas.",
+            "<strong>Linhas de Beau:</strong> Sulcos transversais rasos na superfície das unhas que crescem distalmente."
+          ]
+        ],
+        [
+          "3",
+          "5.2. Doença de Kawasaki (Síndrome dos Linfonodos Mucocutâneos)"
+        ],
+        [
+          "p",
+          "A Doença de Kawasaki é uma <strong>vasculite necrotizante sistêmica aguda de artérias de médio calibre</strong>, com tropismo acentuado e perigoso pelas <strong>Artérias Coronárias</strong>. É a principal causa de cardiopatia adquirida na infância em todos os países desenvolvidos, superando a Febre Reumática. Acomete quase que exclusivamente crianças menores de 5 anos de idade (cerca de 80% dos casos ocorrem entre os 6 meses e os 5 anos, com pico de incidência em torno dos 18 a 24 meses), com discreto predomínio no sexo masculino e incidência dez vezes superior em populações de ascendência asiática (japoneses e coreanos)."
+        ],
+        [
+          "p",
+          "<strong>Fisiopatologia da Panvasculite Coronariana:</strong> Uma resposta inflamatória imunológica desregulada (mediada por imunoglobulinas IgA secretoras, macrófagos, citocinas inflamatórias TNF-alfa, IL-1 e IL-6 e metaloproteinases de matriz) invade a túnica média e íntima das artérias coronárias. Ocorre necrose da lâmina elástica interna da parede arterial entre o 7º e o 14º dia de doença. A perda da sustentação estrutural combinada à pressão sistólica intracoronariana induz a dilatação progressiva e a formação de <strong>Aneurismas de Artérias Coronárias (saculares, fusiformes ou gigantes com diâmetro &gt; 8 mm)</strong>. Nos aneurismas, o fluxo turbulento e a lesão endotelial propiciam trombose aguda, oclusão vascular e <strong>Infarto Agudo do Miocárdio (IAM) na infância</strong>, além de risco de rotura arterial coronariana catastrófica."
+        ],
+        [
+          "4",
+          "Critérios Diagnósticos Clássicos da Doença de Kawasaki (AHA)"
+        ],
+        [
+          "p",
+          "O diagnóstico é clínico e exige obrigatoriamente:"
+        ],
+        [
+          "p",
+          "<strong>FEBRE ALTA PERSISTENTE POR NO MÍNIMO 5 DIAS CONSECUTIVOS</strong> (habitualmente &gt; 38,5 a 40 ºC, que não cede com antitérmicos e não responde a cursos de antibióticos empíricos)<br>\n  <strong>+</strong><br>\n  <strong>PELO MENOS 4 DOS SEGUINTES 5 CRITÉRIOS CLÍNICOS:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Conjuntivite Bulbar Bilateral Não Exsudativa:</strong> Hiperemia conjuntival intensa que acomete a conjuntiva bulbar, <strong>POUPANDO caracteristicamente o limbo corneal (halo perilímbico claro ao redor da íris)</strong>, sem secreção purulenta e indolor.",
+            "<strong>Alterações Labiais e da Cavidade Oral:</strong> Lábios intensamente eritematosos, secos, fissurados e sangrantes; eritema difuso da mucosa orofaríngea; e <strong>Língua em Framboesa Vermelha viva</strong> com papilas hipertrofiadas (semelhante à da escarlatina).",
+            "<strong>Alterações das Extremidades:</strong>\n      <ul>\n        <li><em>Na fase aguda:</em> Eritema palmar e plantar doloroso associado a edema endurecido em dorso das mãos e pés;",
+            "<em>Na fase subaguda (2ª à 3ª semana):</em> <strong>Descamação periungueal lamelar típica em lâminas</strong>, iniciando-se na junção entre a unha e a polpa digital dos dedos das mãos e pés.",
+            "<strong>Exantema Polimórfico Cutâneo:</strong> Pode assumir aspecto maculopapular morbiliforme, escarlatiniforme ou em alvo. Acomete primariamente tronco e períneo (com acentuação eritematosa na região das fraldas). <em>Regra de Exclusão:</em> NÃO PODE ser vesicobolhoso (se houver vesículas, afasta Kawasaki e sugere varicela ou enterovirose).",
+            "<strong>Linfadenopatia Cervical Aguda:</strong> Aumento linfonodal cervical habitualmente <strong>unilateral, medindo &gt;= 1,5 cm de diâmetro</strong>, doloroso, não flutuante e sem supuração. É o critério menos frequente dos cinco (presente em cerca de 50-70% dos casos)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>O Conceito Fundamental de Kawasaki Incompleto / Atípico:</strong> Crianças com menos de 6 meses ou maiores de 5 anos de idade frequentemente não preenchem os 4 critérios clássicos, apresentando apenas febre prolongada &gt;= 5 dias associada a 2 ou 3 critérios clínicos. Nesses pacientes, o risco de aneurisma coronariano é paradoxalmente MAIOR pelo atraso diagnóstico. A presença de provas inflamatórias extremamente elevadas (<strong>PCR &gt;= 3,0 mg/dL e VHS &gt;= 40 mm/h</strong>) associada a alterações laboratoriais de suporte (anemia normocítica, plaquetose &gt; 450.000 após o 7º dia, leucocitose com desvio à esquerda, hipoalbuminemia &lt; 3,0 g/dL, elevação de transaminases TGO/TGP e <em>piúria estéril no sedimento urinário com urocultura negativa</em>) autoriza o fechamento diagnóstico e a indicação de <strong>Ecocardiograma Transtorácico com urgência</strong>."
+        ],
+        [
+          "4",
+          "Tratamento de Emergência da Doença de Kawasaki: A Janela dos 10 Dias"
+        ],
+        [
+          "p",
+          "O objetivo primário absoluto da terapia é abortar o processo inflamatório vascular e <strong>prevenir a formação de aneurismas das artérias coronárias</strong> (reduzindo a incidência de dilatações coronarianas de 25% para menos de 3% a 5%). O tratamento DEVE ser instituído idealmente dentro dos <strong>primeiros 10 dias a contar do início da febre</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>IMUNOGLOBULINA HUMANA INTRAVENOSA (IGIV):</strong> Dose única de <strong>2 g/kg por via intravenosa</strong> administrada em infusão contínua lenta ao longo de 10 a 12 horas. Se o paciente mantiver febre persistente ou recrudescente 36 horas após o término da infusão (Kawasaki refratário), indica-se uma segunda dose de IGIV 2 g/kg ou pulsoterapia com metilprednisolona venosa ou infliximabe (anti-TNF).",
+            "<strong>ÁCIDO ACETILSALICÍLICO (AAS):</strong>\n      <ul>\n        <li><em>Fase Aguda Anti-Inflamatória:</em> Dose de <strong>30 a 50 mg/kg/dia</strong> (diretrizes norte-americanas) ou <strong>80 a 100 mg/kg/dia</strong> fracionada em 4 tomadas diárias, mantida até que a criança permaneça afebril por 48 a 72 horas.",
+            "<em>Fase Subaguda / Antiagregante Plaquetária:</em> Reduzir a dose do AAS para <strong>3 a 5 mg/kg/dia em tomada matinal única</strong> (ação puramente antiagregante plaquetária para prevenir trombose intracoronariana durante a fase de trombocitose reativa intensa). Essa dose baixa é mantida por <strong>6 a 8 semanas</strong>, momento em que um novo ecocardiograma é realizado; se as artérias coronárias forem estritamente normais (Z-score &lt; 2,0), o AAS pode ser suspenso. Se houver aneurismas persistentes, o AAS é mantido indefinidamente."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-e-questoes-exantematicas",
+      0,
+      [
+        [
+          "2",
+          "6. Casos Clínicos Estruturados e Questões Comentadas Padrão Residência Médica"
+        ],
+        [
+          "p",
+          "Consolidação do diagnóstico diferencial das doenças exantemáticas através de casos clínicos interativos e resolução de questões representativas de bancas de Residência Médica."
+        ],
+        [
+          "3",
+          "Caso Clínico 1 — A Criança com Febre que Sumiu e Exantema que Surgiu"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Lactente de 10 meses de vida, sexo masculino, previamente hígido, vacinação em dia de acordo com o PNI, é levado à consulta pediátrica ambulatorial. A mãe relata com alívio que \"finalmente a febre passou hoje pela manhã\", mas que há cerca de 4 horas notou o aparecimento de várias manchinhas avermelhadas na barriga e nas costas do bebê."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> A mãe relata que a criança apresentou febre alta súbita (39,8 ºC a 40,2 ºC) durante os últimos 4 dias, exigindo doses alternadas de dipirona e paracetamol. Apesar da febre alta, o lactente mantinha-se ativo e mamando bem nos intervalos entre os picos. Não houve tosse, coriza, diarreia ou vômitos. Hoje cedo, a temperatura normalizou completamente (36,6 ºC) e não retornou mais; logo em seguida, surgiram as manchas cutâneas."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Lactente ativo, sorridente, afebril no momento (Tax 36,7 ºC), hidratado, eupnéico, corado. Presença de exantema maculopapular róseo delicado, composto por pequenas máculas de 2 a 3 mm não confluentes, concentradas no tronco e pescoço, poupando a face e extremidades distais dos membros. As lesões clareiam totalmente à digitopressão, não são pruriginosas e não há vesículas. Orofaringe sem alterações exsudativas; otoscopia bilateral normal; ausência de linfonodomegalias palpáveis."
+        ],
+        [
+          "p",
+          "<strong>Discussão Diagnóstica e Conduta:</strong>"
+        ],
+        [
+          "p",
+          "O quadro clínico e a cronologia temporal são absolutamente patognomônicos de <strong>Exantema Súbito (Roséola Infantil)</strong>, causado pelo <em>Herpes-vírus Humano Tipo 6 (HHV-6)</em>: lactente no primeiro ano de vida com febre alta e bom estado geral durante 3 a 5 dias que <strong>cessa abruptamente em crise, coincidindo com o aparecimento súbito do exantema maculopapular de distribuição centrífuga no tronco</strong>."
+        ],
+        [
+          "p",
+          "<strong>Conduta Pediátrica:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Orientação e Acalento Familiar:</strong> Tranquilizar a mãe explicando que a doença é totalmente benigna, autolimitada e que o aparecimento do exantema marca exatamente o <em>final da doença e o início da cura</em>.",
+            "<strong>Não Prescrever Antibióticos nem Corticoides:</strong> Conduta estritamente expectante; o exantema desaparecerá espontaneamente em 24 a 48 horas sem descamação e sem deixar marcas ou manchas residuais. Manter hidratação oral habitual."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2 — O Escolar com Dor de Garganta e Pele em Lixa"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Menino de 7 anos de idade é trazido ao pronto-atendimento com febre alta (39,0 ºC) há 2 dias associada a dor intensa para engolir (odinofagia), cefaleia e um episódio de vômito alimentar. Há 24 horas a mãe notou o surgimento de manchinhas vermelhas no corpo que \"parecem uma lixa\"."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Criança prostrada, febril. Orofaringe com amígdalas palatinas hipertrofiadas, intensamente hiperemiadas com placas de exsudato purulento esbranquiçado; <strong>língua com papilas gustativas proeminentes e hipertrofiadas de coloração vermelho-vivo sobre fundo avermelhado (Língua em Framboesa Vermelha)</strong>. Linfonodos submandibulares aumentados e dolorosos bilateralmente. Pele: exantema micropapular eritematoso difuso no tronco e membros que confere <strong>sensação tátil de lixa áspera</strong>. Bochechas e fronte marcadamente hiperemiadas com nítida <strong>palidez perioral ao redor da boca (Sinal de Filatov presente)</strong>. Nas dobras dos cotovelos (fossas antecubitais), observam-se <strong>linhas hemorrágicas transversais hipercoradas que não clareiam à digitopressão (Sinal de Pastia presente)</strong>."
+        ],
+        [
+          "p",
+          "<strong>Discussão Propedêutica e Conduta:</strong>"
+        ],
+        [
+          "p",
+          "Estamos diante do protótipo clássico da <strong>Escarlatina</strong> causada pelo <em>Streptococcus pyogenes</em> produtor de exotoxinas pirogênicas (Spe): faringoamigdalite purulenta associada a exantema micropapular em lixa áspera, língua em framboesa, sinal de Filatov e sinal de Pastia."
+        ],
+        [
+          "p",
+          "<strong>Tratamento e Conduta Epidemiológica:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Prescrição de Penicilina G Benzatina por Via Intramuscular Profunda:</strong> Paciente pesa 24 kg (&lt;= 27 kg): prescrever dose única de <strong>600.000 UI IM profunda</strong> (ou Amoxicilina oral 50 mg/kg/dia por 10 dias inteiros).",
+            "<strong>Afastamento Escolar Temporário:</strong> O paciente deve permanecer em isolamento domiciliar e afastado da escola por <strong>24 horas após a primeira dose do antibiótico</strong>, momento em que a transmissão comunitária cessa.",
+            "<strong>Orientação sobre Descamação Tardia:</strong> Avisar aos pais que entre a 2ª e a 3ª semana de evolução ocorrerá descamação lamelar nas pontas dos dedos das mãos e pés, processo benigno esperado da doença."
+          ]
+        ],
+        [
+          "3",
+          "Banco de Questões Comentadas Padrão Residência Médica"
+        ],
+        [
+          "4",
+          "Questão 1 (USP / Revalida INEP)"
+        ],
+        [
+          "p",
+          "Menina de 4 anos de idade, não vacinada por opção dos pais, é admitida na enfermaria com história de febre de 39,5 ºC há 4 dias associada a tosse seca contínua, coriza hialina abundante e conjuntivite bilateral com intensa fotofobia. Ao exame físico de admissão, a médica nota pequenas lesões puntiformes esbranquiçadas com halo avermelhado localizadas na mucosa jugal na altura dos molares inferiores. Horas depois, surge um exantema maculopapular avermelhado com tendência à confluência, iniciando-se na região retroauricular e linha de implantação dos cabelos com disseminação craniocaudal. Considerando o agente etiológico provável e as diretrizes oficiais do Ministério da Saúde e da OMS, assinale a afirmativa correta:"
+        ],
+        [
+          "p",
+          "A) Trata-se de Rubéola; o enantema descrito corresponde às manchas de Forchheimer; deve-se prescrever Aciclovir intravenoso.<br>\nB) Trata-se de Sarampo; as lesões orais são as manchas de Koplik; deve-se administrar Vitamina A por via oral imediatamente em duas doses diárias consecutivas.<br>\nC) Trata-se de Escarlatina; deve-se prescrever Penicilina Benzatina intramuscular e isolamento por gotículas por 14 dias.<br>\nD) O quadro é compatível com Doença de Kawasaki; deve-se iniciar Imunoglobulina venosa em dose única e AAS em altas doses.<br>\nE) Trata-se de Eritema Infeccioso; o uso de corticosteroides sistêmicos está formalmente indicado para acelerar a resolução exantemática."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Letra B.</strong><br>\n<strong>Comentário Detalhado:</strong> O quadro clínico reúne a descrição clássica e magistral do <strong>Sarampo</strong> em uma criança não vacinada: pródromos catarrais exuberantes com tosse, coriza e conjuntivite com fotofobia (os três \"C\"s), enantema patognomônico de <strong>Manchas de Koplik</strong> na mucosa jugal e exantema morbiliforme com progressão craniocaudal lenta iniciando-se atrás das orelhas. Conduta mandatória: conforme preconizado pela OMS e Ministério da Saúde, toda criança com sarampo deve receber <strong>suplementação imediata de Vitamina A oral em 2 doses consecutivas</strong> (dose diária conforme a faixa etária) para proteger a integridade do epitélio respiratório e ocular e reduzir as taxas de pneumonia bacteriana grave e mortalidade. Alternativa B rigorosamente exata."
+        ],
+        [
+          "4",
+          "Questão 2 (ENARE / Residência Médica)"
+        ],
+        [
+          "p",
+          "Lactente de 11 meses de idade, institucionalizado em creche pública, teve contato íntimo e desprotegido há 3 dias com um colega de sala que desenvolveu quadro florido de Varicela (catapora). O lactente nunca foi vacinado contra a varicela (sua primeira dose da vacina tetra viral estava programada para os 15 meses de vida), encontra-se clinicamente assintomático, eutrófico e sem quaisquer comorbidades ou uso de medicamentos imunossupressores. De acordo com as normas de profilaxia pós-exposição do Ministério da Saúde, qual a conduta recomendada para este lactente contactante?"
+        ],
+        [
+          "p",
+          "A) Administrar a Vacina contra Varicela (atenuada) imediatamente, pois o paciente é imunocompetente, tem mais de 9 meses de idade e está dentro da janela de até 120 horas (5 dias) pós-exposição.<br>\nB) Prescrever Imunoglobulina Humana Antivaricela-Zóster (IGHAVZ) por via intramuscular, pois toda criança menor de 1 ano tem indicação mandatória de imunoglobulina.<br>\nC) Iniciar profilaxia com Aciclovir oral na dose de 80 mg/kg/dia por 7 dias para abortar a fase de viremia secundária.<br>\nD) Apenas isolamento respiratório domiciliar preventivo; a vacina é contraindicada em menores de 12 meses sob qualquer circunstância.<br>\nE) Não realizar nenhuma intervenção profilática, pois o período de proteção pós-exposição encerra-se com 48 horas após o contato."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Letra A.</strong><br>\n<strong>Comentário Detalhado:</strong> O protocolo do Ministério da Saúde para profilaxia pós-exposição da varicela estabelece que <strong>indivíduos suscetíveis hígidos (imunocompetentes) com idade igual ou superior a 9 meses têm indicação de receber a VACINA CONTRA VARICELA (monovalente) em até 120 horas (5 dias) após o contato</strong> com o caso índice. Como o lactente tem 11 meses, é imunocompetente e o contato ocorreu há 3 dias (72 horas), ele é o candidato perfeito para o bloqueio vacinal profilático (a vacina é autorizada pelo PNI a partir dos 9 meses especificamente em situações de surto e bloqueio pós-exposição). A Imunoglobulina (IGHAVZ) estaria indicada apenas se o paciente fosse imunodeprimido grave, gestante suscetível, prematuro de alto risco ou recém-nascido de mãe que contraiu varicela no periparto. Alternativa A impecável."
+        ],
+        [
+          "4",
+          "Questão 3 (SURCE / UNICAMP)"
+        ],
+        [
+          "p",
+          "Menino de 2 anos de idade é levado ao pronto-socorro com história de febre diária elevada (39,0 ºC a 40,0 ºC) há 6 dias consecutivos. Durante a triagem médica, o pediatra identifica conjuntivite bulbar bilateral intensa sem exsudato purulento poupando o limbo corneal, lábios avermelhados, secos e com fissuras sangrantes, exantema maculopapular eritematoso confluente no tronco e na região perineal, além de edema endurecido doloroso no dorso dos pés com eritema palmar. Na cadeia cervical esquerda, palpa-se um linfonodo único de 2,0 cm de diâmetro, fibroelástico e doloroso. O exame otoscópico e a ausculta pulmonar são normais. Diante deste quadro clínico, qual é o diagnóstico provável, o exame complementar cardiológico prioritário e a terapia medicamentosa capaz de prevenir a principal complicação vascular?"
+        ],
+        [
+          "p",
+          "A) Escarlatina; Dosagem de ASLO; Penicilina G Benzatina em dose única.<br>\nB) Doença de Kawasaki; Ecocardiograma Transtorácico; Imunoglobulina Humana Intravenosa (2 g/kg) associada ao Ácido Acetilsalicílico.<br>\nC) Mononucleose Infecciosa; Sorologia para Epstein-Barr; Corticoterapia com Prednisona.<br>\nD) Sarampo complicado; Radiografia de tórax; Vitamina A em altas doses e Ceftriaxona venosa.<br>\nE) Artrite Idiopática Juvenil de início sistêmico; Ferritina sérica; Pulsoterapia com Metilprednisolona venosa."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Letra B.</strong><br>\n<strong>Comentário Detalhado:</strong> A criança preenche todos os critérios diagnósticos clássicos da <strong>Doença de Kawasaki</strong>: febre alta persistente há 6 dias (&gt;= 5 dias) associada a 5 dos 5 critérios clínicos adicionais (conjuntivite não exsudativa perilímbica, alterações orais labiais, exantema polimórfico, alterações de extremidades com edema/eritema e linfonodomegalia cervical unilateral &gt;= 1,5 cm). O exame prioritário mandatório é o <strong>Ecocardiograma Transtorácico</strong> para avaliação do calibre das artérias coronárias (pesquisa de ectasias e aneurismas coronarianos). A terapia de urgência padrão-ouro para abortar a vasculite e prevenir a formação de aneurismas é a <strong>Imunoglobulina Humana Intravenosa (IGIV) na dose única de 2 g/kg infundida em 10 a 12 horas associada ao Ácido Acetilsalicílico (AAS)</strong>. Alternativa B é perfeita."
+        ]
+      ]
+    ],
+    [
+      "outras-etiologias-infecciosas-mononucleose-ebv-cmv-e-arboviroses",
+      0,
+      [
+        [
+          "2",
+          "7. Outras Causas Exantemáticas Relevantes: Mononucleose Infecciosa (EBV e CMV), Arboviroses Pediátricas e Meningococcemia"
+        ],
+        [
+          "p",
+          "O diagnóstico diferencial dos exantemas infantis exige a ampliação do olhar clínico para abranger infecções virais sistêmicas frequentes e emergências infecciosas bacterianas fulminantes que cursam com manifestações cutâneas características."
+        ],
+        [
+          "3",
+          "7.1. Mononucleose Infecciosa (Vírus Epstein-Barr - EBV)"
+        ],
+        [
+          "p",
+          "A Mononucleose Infecciosa (\"doença do beijo\") é causada pelo <strong>Vírus Epstein-Barr (EBV / Herpes-vírus Humano Tipo 4)</strong>, um vírus de DNA com tropismo seletivo pelos linfócitos B através do receptor CD21 (CR2). Em lactentes e pré-escolares, a primo-infecção é frequentemente assintomática ou cursa com faringite inespecífica. Em escolares maiores e adolescentes, manifesta-se pela clássica tríade:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Faringoamigdalite Exsudativa Grave:</strong> Amígdalas palatinas aumentadas com placas espessas acinzentadas pseudomembranosas que mimetizam a difteria e a faringite estreptocócica;",
+            "<strong>Poliadenomegalia Generalizada Simétrica:</strong> Acomete com grande intensidade as cadeias <strong>cervicais posteriores</strong>, occipitais, axilares e inguinais;",
+            "<strong>Esplenomegalia e Hepatomegalia:</strong> Presente em mais de 50% dos casos. <em>Aviso Clínico:</em> Risco de rotura esplênica traumática, sendo mandatória a proibição de esportes de contato por pelo menos 3 a 4 semanas."
+          ]
+        ],
+        [
+          "4",
+          "O Exantema Induzido por Aminopenicilinas (Amoxicilina / Ampicilina)"
+        ],
+        [
+          "p",
+          "Na infecção natural não complicada por EBV, o exantema cutâneo ocorre em apenas 5% a 10% dos pacientes. Contudo, se a criança com mononucleose for erroneamente diagnosticada como portadora de faringoamigdalite bacteriana estreptocócica e tratada com <strong>Amoxicilina ou Ampicilina, cerca de 90% a 95% dos pacientes desenvolvem um EXANTEMA MACULOPAPULAR MORBILIFORME FLORIDO, INTENSAMENTE PRURIGINOSO E CONFLUENTE</strong> cerca de 7 a 10 dias após a primeira dose do antibiótico. <em>Conceito de Prova:</em> Esse exantema NÃO representa alergia verdadeira (hipersensibilidade tipo I IgE-mediada) à penicilina, mas sim uma reação imunomediada transitória mediada por células T ativadas pelo EBV em contato com o anel beta-lactâmico. Não contraindica o uso futuro de penicilinas ao longo da vida!"
+        ],
+        [
+          "p",
+          "<strong>Laboratório Típico da Mononucleose:</strong> O hemograma revela leucocitose com predomínio linfocitário e a presença patognomônica de <strong>Linfocitose Atípica &gt; 10% a 20%</strong> (linfócitos T CD8+ reativos que se tornam volumosos, com citoplasma basofílico abundante que se amolda às hemácias vizinhas — células de Downey). Sorologia: pesquisa de <strong>Anticorpos Heterófilos</strong> (reação de Paul-Bunnell ou teste em lâmina com hemácias de carneiro/cavalo — Mono-Spot) positiva em adolescentes; em menores de 4 anos, a resposta de anticorpos heterófilos é fraca, exigindo a dosagem de anticorpos específicos contra o capsídeo viral: <strong>Anti-VCA IgM (positivo na fase aguda)</strong> e Anti-EBNA (positivo na fase de convalescença tardia)."
+        ],
+        [
+          "p",
+          "<em>A Síndrome Mononucleose-Símile pelo Citomegalovírus (CMV):</em> Cursa com quadro clínico superponível de febre prolongada e linfocitose atípica, porém <strong>com faringite mínima ou ausente e ausência de linfadenopatia cervical exuberante</strong> (\"mononucleose sem dor de garganta\"), com teste de anticorpos heterófilos sempre negativo."
+        ],
+        [
+          "3",
+          "7.2. Arboviroses Pediátricas: Dengue, Chikungunya e Zika"
+        ],
+        [
+          "p",
+          "No cenário epidemiológico brasileiro, as arboviroses transmitidas pelo mosquito <em>Aedes aegypti</em> devem compor o diagnóstico diferencial imediato de qualquer exantema febril:"
+        ],
+        [
+          "t",
+          [
+            "Arbovirose",
+            "Características do Exantema",
+            "Sintomas Cardeais Associados"
+          ],
+          [
+            [
+              "<strong>Dengue</strong>",
+              "Exantema maculopapular avermelhado que surge tipicamente entre o 3º e o 6º dia de doença, com a clássica imagem de <strong>\"mar vermelho com ilhas brancas de pele sã\"</strong> (exantema confluente com pequenas áreas circulares normais preservadas), associado a prurido palmar e plantar na fase de convalescença.",
+              "Febre alta súbita, cefaleia retro-orbitária intensa, mialgia difusa e prostração. Sinal de alarme na defervescência da febre: dor abdominal contínua, vômitos persistentes e queda de plaquetas com hemoconcentração (aumento do hematócrito)."
+            ],
+            [
+              "<strong>Chikungunya</strong>",
+              "Exantema maculopapular em até 50% dos casos, frequentemente acompanhado de <strong>hiperpigmentação cutânea macular facial</strong> e lesões bolhosas extensas em lactentes menores de 1 ano.",
+              "<strong>Poliartrite e poliartralgia inflamatória bilateral simétrica incapacitante</strong> que acomete intensamente pequenas articulações das mãos, punhos e tornozelos, podendo cronificar por meses ou anos."
+            ],
+            [
+              "<strong>Zika Vírus</strong>",
+              "Exantema maculopapular pruriginoso fino de <strong>início precoce (nas primeiras 24 a 48 horas de doença)</strong>, que se dissemina rapidamente pelo corpo com febre muito baixa ou ausente.",
+              "<strong>Hiperemia conjuntival bilateral não purulenta intensa</strong> com fotofobia leve, cefaleia e poliartralgia leve. Risco máximo de microcefalia e Síndrome Congênita do Zika se contraída na gestação."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "7.3. A Emergência Máxima: Meningococcemia (Neisseria meningitidis)"
+        ],
+        [
+          "4",
+          "Atenção Crítica: O Reconhecimento do Exantema Purpúrico / Petequial"
+        ],
+        [
+          "p",
+          "Qualquer criança febril que apresente <strong>lesões petequiais, púrpuras ou equimoses cutâneas que NÃO clareiam à digitopressão</strong> deve ser considerada portadora de <strong>Meningococcemia ou Sepse Bacteriana Fulminante</strong> até que se prove o contrário! O quadro inicia-se com pequenas petéquias no tronco e membros inferiores que evoluem em poucas horas para púrpuras extensas palpáveis e lesões necróticas fulminantes de centro cinzento (<em>Purpura Fulminans</em>), associadas a choque séptico distributivo hiperlactatêmico, Coagulação Intravascular Disseminada (CIVD) e necrose hemorrágica maciça das glândulas suprarrenais (<strong>Síndrome de Waterhouse-Friderichsen</strong>). A conduta mandatória é: <strong>Acesso vascular imediato, expansão volêmica agressiva e administração da primeira dose de Ceftriaxona venosa (100 mg/kg) IMEDIATAMENTE antes de qualquer transferência ou exame!</strong>"
+        ]
+      ]
+    ],
+    [
+      "tabela-comparativa-mestre-e-checklist-luria-exantematicas",
+      0,
+      [
+        [
+          "2",
+          "8. Tabela Sinóptica Mestre e Checklist de Alta Retenção das Doenças Exantemáticas"
+        ],
+        [
+          "p",
+          "Para consolidar definitivamente o domínio sobre todas as doenças exantemáticas pediátricas e garantir o acerto imediato de qualquer questão de prova de Residência Médica ou Revalida, apresentamos a <strong>Tabela Sinóptica Mestre LURIA</strong> confrontando todas as variáveis essenciais lado a lado:"
+        ],
+        [
+          "t",
+          [
+            "Doença",
+            "Agente Etiológico",
+            "Pródromos e Relação com Febre",
+            "Morfologia e Progressão",
+            "Enantema Oral",
+            "Descamação",
+            "Conduta e Tratamento Específico"
+          ],
+          [
+            [
+              "<strong>Sarampo</strong>",
+              "Vírus do Sarampo (Morbillivirus)",
+              "Febre alta + Tosse, coriza, conjuntivite (3 \"C\"s); febre atinge pico junto com o exantema",
+              "Maculopapular morbiliforme avermelhado confluente; craniocaudal lenta (3 dias)",
+              "<strong>Manchas de Koplik</strong> (grãos de areia na mucosa jugal)",
+              "<strong>Furfurácea</strong> (fina, em farelo de trigo)",
+              "<strong>Vitamina A oral</strong> em 2 doses consecutivas; notificação compulsória imediata; vacina tríplice viral aos contactantes em até 72h."
+            ],
+            [
+              "<strong>Rubéola</strong>",
+              "Vírus da Rubéola (Rubivirus)",
+              "Febre baixa ou subfebril + <strong>Linfadenopatia retroauricular e suboccipital dolorosa</strong>",
+              "Maculopapular rubeoliforme róseo não confluente; craniocaudal rápida (some em 2-3 dias)",
+              "<strong>Manchas de Forchheimer</strong> (petéquias no palato mole)",
+              "<strong>Ausente</strong>",
+              "Sintomáticos e isolamento; vigilância rigorosa para prevenir Síndrome da Rubéola Congênita em gestantes."
+            ],
+            [
+              "<strong>Eritema Infeccioso</strong>",
+              "Parvovírus B19",
+              "Pródromos ausentes ou mínimos; sem febre ou febre baixa; bom estado geral",
+              "1ª fase: <strong>Face esbofeteada</strong> com palidez perioral; 2ª fase: <strong>Padrão rendilhado / reticulado</strong>; 3ª fase: <strong>Recidiva ao calor/sol</strong>",
+              "Ausente",
+              "<strong>Ausente</strong>",
+              "Orientar que a recidiva com sol/banho quente é benigna; vigiar crise aplásica em falcêmicos e esferocitose; risco de hidropsia fetal na gestante."
+            ],
+            [
+              "<strong>Exantema Súbito</strong> (Roséola)",
+              "Herpes-vírus Humano 6 (HHV-6)",
+              "<strong>Febre muito alta (39-40 ºC) por 3 a 5 dias que DESAPARECE EM CRISE; exantema surge IMEDIATAMENTE após</strong>",
+              "Maculopapular róseo delicado não pruriginoso; distribuição centrífuga (tronco -> membros)",
+              "Manchas de Nagayama (úvula/palato)",
+              "<strong>Ausente</strong>",
+              "Benigna e autolimitada; controle térmico; principal causa de convulsão febril simples em lactentes de 6 a 18 meses."
+            ],
+            [
+              "<strong>Escarlatina</strong>",
+              "<em>Streptococcus pyogenes</em> (EGA / Spe)",
+              "Febre alta + Faringite bacteriana purulenta; exantema surge 24-48h após",
+              "Micropapular eritematoso em <strong>lixa áspera</strong>; <strong>Sinal de Filatov</strong> (palidez perioral) e <strong>Sinal de Pastia</strong> (linhas nas dobras)",
+              "<strong>Língua em Framboesa Branca -> Vermelha</strong>",
+              "<strong>Lamelar / Foliácea</strong> nas polpas digitais das mãos e pés (em luva e bota)",
+              "<strong>Penicilina G Benzatina IM dose única</strong> (ou Amoxicilina oral 10 dias) para profilaxia primária de febre reumática; afastamento escolar por 24h."
+            ],
+            [
+              "<strong>Varicela</strong> (Catapora)",
+              "Vírus Varicela-Zóster (VVZ)",
+              "Febre moderada, cefaleia e mal-estar surgindo 24h antes do exantema",
+              "<strong>Polimorfismo regional típico</strong> (mácula -> pápula -> vesícula -> pústula -> crosta simultâneas); distribuição centrípeta; <strong>muito pruriginoso</strong>",
+              "Vesículas e úlceras na mucosa oral",
+              "Ausente (crostas secas cicatriciais)",
+              "Evitar AAS (Reye) e Ibuprofeno (fasceíte necrosante); anti-histamínicos; isolamento até TODAS as lesões virarem crostas; profilaxia pós-exposição com vacina até 5 dias ou IGHAVZ até 4 dias."
+            ],
+            [
+              "<strong>Doença Mão-Pé-Boca</strong>",
+              "Coxsackie A16 / Enterovírus A71",
+              "Febre moderada, dor de garganta intensa, recusa alimentar e sialorreia",
+              "Pápulas e <strong>vesículas ovais elípticas com halo eritematoso nas palmas das mãos e plantas dos pés</strong>; lesões maculares nos glúteos",
+              "Úlceras orais dolorosas rasas (língua, palato, bochechas)",
+              "Ausente; <strong>Onicomadese</strong> tardia após 4-8 semanas",
+              "Tratamento sintomático com analgésicos e hidratação; alimentos pastosos frios; vigilância neurológica no EV71."
+            ],
+            [
+              "<strong>Doença de Kawasaki</strong>",
+              "Vasculite Sistêmica de Artérias Médias",
+              "<strong>Febre alta persistente por &gt;= 5 dias</strong> sem foco bacteriano",
+              "Exantema polimórfico no tronco e períneo (sem vesículas); eritema palmar/plantar com edema",
+              "Lábios secos, fissurados e vermelhos; <strong>Língua em framboesa</strong>",
+              "<strong>Descamação periungueal lamelar</strong> na fase subaguda",
+              "<strong>Imunoglobulina Venosa (IGIV 2 g/kg) + AAS</strong> nos primeiros 10 dias de febre para prevenir <strong>Aneurismas Coronarianos</strong>; ecocardiograma obrigatório."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Checklist Mnemônico LURIA: Os Sinais Patognomônicos em uma Linha"
+        ],
+        [
+          "u",
+          [
+            "<strong>Manchas de Koplik:</strong> Grãos de areia na boca -> SARAMPO.",
+            "<strong>Linfadenopatia retroauricular/occipital dolorosa:</strong> RUBÉOLA.",
+            "<strong>Face esbofeteada + exantema rendilhado + recidiva ao sol:</strong> ERITEMA INFECCIOSO (Parvovírus B19).",
+            "<strong>Febre alta que some e exantema que aparece logo em seguida:</strong> EXANTEMA SÚBITO (HHV-6).",
+            "<strong>Pele em lixa áspera + Sinal de Filatov + Sinal de Pastia + Língua em framboesa:</strong> ESCARLATINA (Penicilina Benzatina!).",
+            "<strong>Vesículas em \"gota de orvalho\" com polimorfismo regional simultâneo:</strong> VARICELA.",
+            "<strong>Vesículas elípticas em palmas e plantas com úlceras orais:</strong> DOENÇA MÃO-PÉ-BOCA.",
+            "<strong>Febre por &gt;= 5 dias + Olhos vermelhos sem pus + Lábios vermelhos rachados:</strong> DOENÇA DE KAWASAKI (IGIV + AAS já!).",
+            "<strong>Amoxicilina dada para faringite que gera rash morbiliforme avermelhado:</strong> MONONUCLEOSE (Vírus Epstein-Barr).",
+            "<strong>Petéquias e púrpuras que não clareiam com febre e toxemia:</strong> MENINGOグレー / MENINGOCOCEMIA (Ceftriaxona venosa imediata!)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "farmacodermias-pediatricas-steven-johnson-dress-e-urticaria",
+      0,
+      [
+        [
+          "2",
+          "9. Farmacodermias Graves na Infância: Síndrome de Stevens-Johnson (SSJ), NET, Síndrome DRESS e Urticária Aguda"
+        ],
+        [
+          "p",
+          "No diagnóstico diferencial das doenças exantemáticas pediátricas febris, o médico assistente deve obrigatoriamente reconhecer as reações adversas cutâneas graves a medicamentos (denominadas coletivamente <strong>Farmacodermias Graves / SCARs — Severe Cutaneous Adverse Reactions</strong>). A confusão frequente entre exantemas virais benignos e farmacodermias potencialmente fatais é causa recorrente de iatrogenias e atrasos diagnósticos nos prontos-socorros."
+        ],
+        [
+          "3",
+          "9.1. Síndrome de Stevens-Johnson (SSJ) e Necrólise Epidérmica Tóxica (NET)"
+        ],
+        [
+          "p",
+          "A Síndrome de Stevens-Johnson e a Necrólise Epidérmica Tóxica representam variantes de gravidade de uma mesma entidade fisiopatológica: uma <strong>reação de hipersensibilidade imunológica tardia do Tipo IVb mediada por Linfócitos T Citotóxicos (CD8+) e células Natural Killer (NK)</strong>. Essas células liberam quantidades maciças de <strong>Granulisina e Perforina/Granzima B</strong>, além de ativarem a via de apoptose do receptor Fas-FasL, provocando <strong>necrose apoptótica maciça e disseminada dos queratinócitos da epiderme e do epitélio das mucosas</strong>."
+        ],
+        [
+          "p",
+          "<strong>A Fisiopatologia da Clivagem Dermoepidérmica:</strong> Ocorre a morte das células da camada basal da epiderme, gerando o descolamento mecânico completo da epiderme sobre a derme superficial (clivagem dermoepidérmica subepidérmica com desnudamento cutâneo extenso, transformando a criança em um \"grande queimado biológico\")."
+        ],
+        [
+          "p",
+          "<strong>Classificação por Porcentagem de Superfície Corporal Descolada (SC):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Síndrome de Stevens-Johnson (SSJ):</strong> Descolamento epidérmico acometendo <strong>menos de 10% da superfície corporal total</strong>.",
+            "<strong>Superposição SSJ / NET:</strong> Descolamento epidérmico entre <strong>10% e 30% da superfície corporal total</strong>.",
+            "<strong>Necrólise Epidérmica Tóxica (NET / Síndrome de Lyell):</strong> Descolamento epidérmico acometendo <strong>mais de 30% da superfície corporal total</strong> (associada a choque séptico, perda hidroeletrolítica maciça e mortalidade superior a 30% a 50%)."
+          ]
+        ],
+        [
+          "4",
+          "Quadro Clínico e o Sinal Patognomônico de Nikolsky"
+        ],
+        [
+          "p",
+          "<p>1. <strong>Pródromos Gripais (1 a 3 semanas após a introdução do medicamento):</strong> Febre alta persistente, mal-estar profundo, dor de garganta, queimação ocular e odinofagia intensa que antecedem o exantema em 1 a 3 dias.<br>\n  2. <strong>Lesões Cutâneas em Alvo Atípicas:</strong> Máculas purpúricas, escuras, arredondadas, mal delimitadas (\"lesões em alvo atípicas com apenas 2 zonas concêntricas\"), que coalescem formando grandes bolhas flácidas de conteúdo seroso ou hemático.<br>\n  3. <strong>O SINAL DE NIKOLSKY POSITIVO:</strong> Ao aplicar uma <strong>fricção ou pressão tangencial suave com o dedo sobre a pele aparentemente sã ou nas bordas das lesões, a epiderme desliza e descola-se com facilidade</strong>, deixando uma área avermelhada, denudada e exsudativa exposta. <em>Sinal patognomônico de descolamento intraepidérmico/dermoepidérmico!</em><br>\n  4. <strong>Acometimento Grave de Mucosas (Presente em &gt; 90% a 100% dos Casos):</strong> Acomete obrigatoriamente <strong>pelo menos 2 superfícies mucosas distintas</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<em>Mucosa Oral:</em> Erosões hemorrágicas dolorosas extensas nos lábios com crostas hemáticas espessas e necrose da mucosa jugal e língua, impedindo a ingestão de líquidos;",
+            "<em>Mucosa Ocular:</em> Conjuntivite pseudomembranosa bilateral grave com risco iminente de sinéquias oculares (simbléfaro), entrópio, úlceras de córnea e cegueira permanente;",
+            "<em>Mucosa Geniturinária:</em> Erosões vulvares, prepuciais e uretrais dolorosas com risco de estenose cicatricial;",
+            "<em>Mucosa Respiratória:</em> Desnudamento do epitélio brônquico com insuficiência respiratória aguda e atelectasias."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Os Principais Fármacos Gatilhos (Medicamentos de Alto Risco):</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Anticonvulsivantes Aromáticos:</strong> Carbamazepina, Fenitoína, Fenobarbital e Lamotrigina (especialmente nos primeiros 2 meses de uso ou titulação rápida);",
+            "<strong>Alopurinol</strong> (inibidor da xantina oxidase);",
+            "<strong>Antimicrobianos Sulfonamídicos:</strong> Sulfametoxazol-Trimetoprima (Bactrim) e Sulfadiazina;",
+            "<strong>Anti-inflamatórios Não Esteroidais (AINEs) Oxicans:</strong> Piroxicam e Meloxicam;",
+            "<strong>Nevirapina</strong> (antirretroviral inibidor não nucleosídeo da transcriptase reversa)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Manejo de Emergência da SSJ / NET:</strong>"
+        ],
+        [
+          "p",
+          "1. <strong>INTERRUPÇÃO IMEDIATA E DEFINITIVA DO MEDICAMENTO SUSPEITO:</strong> É a medida mais importante para reduzir a mortalidade (cada dia de atraso na suspensão do fármaco dobra a mortalidade!).<br>\n2. <strong>Internação Imediata em Unidade de Terapia Intensiva ou Unidade de Tratamento de Queimados (UTQ):</strong> Ambiente com temperatura controlada (30-32 ºC para evitar hipotermia por perda da barreira cutânea) e técnica estéril estrita.<br>\n3. <strong>Suporte Hidroeletrolítico e Nutricional:</strong> Reposição volêmica cautelosa com cristaloides balanceados guiada pela diurese (semelhante ao manejo de grandes queimados, porém com volumes cerca de 25-30% menores para evitar sobrecarga pulmonar). Nutrição enteral precoce por sonda nasogástrica/enteral.<br>\n4. <strong>Cuidados Tópicos Especializados:</strong> Curativos não aderentes (ex.: malhas impregnadas com petrolato ou curativos de silicone/prata nanocristalina); <em>desbridamento cirúrgico agressivo é formalmente contraindicado</em>.<br>\n5. <strong>Avaliação Oftalmológica Diária Obrigatória:</strong> Instilação regular de colírios lubrificantes sem conservantes a cada 1-2 horas e uso de lentes esclerais para prevenir simbléfaro e cegueira.<br>\n6. <strong>Terapias Imunomoduladoras Específicas:</strong> Uso de <strong>Ciclosporina A oral/venosa (3 a 5 mg/kg/dia)</strong> ou <strong>Imunoglobulina Humana Intravenosa (IGIV 2 a 3 g/kg dividida em 3 a 4 dias)</strong> e anticorpos anti-TNF (Infliximabe ou Etanercept) nas fases iniciais em progressão ativa."
+        ],
+        [
+          "3",
+          "9.2. Síndrome DRESS (Reação a Drogas com Eosinofilia e Sintomas Sistêmicos)"
+        ],
+        [
+          "p",
+          "A Síndrome DRESS (<em>Drug Reaction with Eosinophilia and Systemic Symptoms</em> / também denominada Síndrome de Hipersensibilidade Induzida por Drogas — DIHS) é uma farmacodermia grave com comportamento clínico multissistêmico peculiar e início insidioso."
+        ],
+        [
+          "p",
+          "<strong>Características Distintivas da Síndrome DRESS:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Período de Latência Extraordinariamente Longo:</strong> O quadro surge tipicamente <strong>2 a 8 SEMANAS (1 a 2 meses) após o início do medicamento causal</strong> (enquanto na SSJ/NET a latência é de 1 a 3 semanas e nas urticárias imediatas é de poucas horas).",
+            "<strong>A Tríade Clínica Fundamental:</strong>\n    <ol>\n      <li><strong>Febre Alta Persistente (&gt;= 38,5 ºC);</strong>",
+            "<strong>Exantema Maculopapular Morbiliforme Difuso Grave:</strong> Acomete mais de 50% da superfície corporal, com <strong>acentuado edema facial (edema periorbital e de bochechas que deforma a fácies da criança)</strong>, progredindo para dermatite esfoliativa eritrodérmica;",
+            "<strong>Linfadenopatia Generalizada:</strong> Gânglios aumentados e dolorosos em pelo menos duas cadeias distintas.",
+            "<strong>Anormalidades Hematológicas Típicas:</strong>\n    <ul>\n      <li><strong>Eosinofilia Acentuada:</strong> Contagem absoluta de eosinófilos &gt; <strong>700 a 1.500/mm³</strong> (presente em mais de 90% dos casos);",
+            "<strong>Linfocitose Atípica com células mononucleares reativas.</strong>"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Acometimento de Órgãos Internos (O Fator Prognóstico de Mortalidade):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Hepatite Medicamentosa Aguda (Acometimento Mais Frequente — 70-80% dos casos):</strong> Elevação exuberante de transaminases (TGO/TGP &gt; 3 a 10 vezes o limite da normalidade) com colestase e risco de insuficiência hepática aguda fulminante;",
+            "<strong>Nefrite Intersticial Aguda:</strong> Elevação de creatinina, proteinúria e hematúria microscópica;",
+            "<strong>Miocardite Eosinofílica Aguda:</strong> Cursa com insuficiência cardíaca congestiva súbita, arritmias ventriculares e choque cardiogênico, sendo a principal causa de morte súbita tardia na Síndrome DRESS;",
+            "<strong>Pneumonite Intersticial e Tireoidite Autoimune tardia.</strong>"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Fisiopatologia da Reativação Viral Herpética:</strong> A síndrome DRESS associa-se à <strong>reativação maciça de vírus da família Herpesviridae latentes no organismo</strong>, com destaque absoluto para o <strong>HHV-6 (Herpes-vírus Humano Tipo 6)</strong>, além de EBV, CMV e HHV-7, o que explica as recidivas inflamatórias cíclicas que persistem por semanas mesmo após a suspensão completa do medicamento!</li>\n</ul>"
+        ],
+        [
+          "p",
+          "<em>Fármacos Causais Típicos do DRESS:</em> Anticonvulsivantes (Carbamazepina, Fenitoína, Lamotrigina), Alopurinol, Sulfametoxazol-Trimetoprima, Dapsona, Sulfassalazina, Vancomicina e Minociclina."
+        ],
+        [
+          "p",
+          "<em>Tratamento de Escolha:</em> Suspensão imediata do fármaco causal associada a <strong>Corticoterapia Sistêmica Prolongada com Prednisona oral (1 a 1,5 mg/kg/dia)</strong> ou pulsoterapia com Metilprednisolona venosa nas formas graves com disfunção hepática, renal ou miocárdica. O desmame do corticoide deve ser feito com extrema lentidão ao longo de <strong>2 a 3 meses</strong> para prevenir o temido rebote inflamatório induzido pela reativação viral persistente."
+        ],
+        [
+          "3",
+          "9.3. Urticária Aguda e Anafilaxia"
+        ],
+        [
+          "p",
+          "A Urticária Aguda caracteriza-se pelo aparecimento súbito de <strong>Urticas (Pápulas e Placas Eritematosas e Edematosas, Elevadas, com Centro Pálido e Bordas Serpiginosas Hipercoradas)</strong>. A sua marca clínica inegociável é o <strong>caráter intensamente pruriginoso e EVANESCENTE das lesões: cada lesão individual dura menos de 24 horas no mesmo local anatômico</strong>, desaparecendo completamente sem deixar pigmentação residual enquanto novas lesões surgem em outros segmentos corporais."
+        ],
+        [
+          "p",
+          "Pode associar-se ao <strong>Angioedema</strong> (edema assimétrico da derme profunda e tecido subcutâneo acometendo pálpebras, lábios, língua e genitália). <em>Alerta Vermelho de Emergência:</em> Se a urticária vier acompanhada de sintomas respiratórios (estridor laríngeo, broncoespasmo com sibilos, dispneia), gastrointestinais (vômitos agudos, cólicas abdominais intensas) ou colapso cardiovascular (hipotensão arterial, síncope, hipotonia em lactentes), o diagnóstico é <strong>ANAFILAXIA</strong>, exigindo a administração IMEDIATA de <strong>ADRENALINA (Epinefrina) 1:1.000 por via INTRAMUSCULAR PROFUNDA no terço anterolateral da coxa (vasto lateral) na dose de 0,01 mg/kg (máximo de 0,3 a 0,5 mg)</strong>!"
+        ]
+      ]
+    ],
+    [
+      "protocolo-vacinal-e-vigilancia-epidemiologica-sarampo-rubeola",
+      0,
+      [
+        [
+          "2",
+          "10. Calendário Vacinal do PNI, Bloqueio de Surtos e Notificação Compulsória Imediata"
+        ],
+        [
+          "p",
+          "A erradicação e o controle sustentado das doenças exantemáticas imunopreveníveis — com destaque absoluto para o Sarampo, a Rubéola e a Varicela — dependem da manutenção de coberturas vacinais homogêneas superiores a 95% em todos os municípios brasileiros, associada a um sistema de vigilância epidemiológica ágil e sensível."
+        ],
+        [
+          "3",
+          "10.1. O Esquema Vacinal Oficial do Programa Nacional de Imunizações (PNI)"
+        ],
+        [
+          "p",
+          "O Ministério da Saúde do Brasil adota o seguinte calendário vacinal básico de rotina para a proteção contra as viroses exantemáticas clássicas na infância:"
+        ],
+        [
+          "t",
+          [
+            "Idade da Criança",
+            "Vacina Padronizada pelo PNI",
+            "Composição Antigênica",
+            "Via e Volume de Administração"
+          ],
+          [
+            [
+              "<strong>12 Meses de Vida</strong> (1 ano completo)",
+              "<strong>Tríplice Viral (SCR)</strong><br>(1ª Dose de rotina)",
+              "Vírus vivos atenuados do <strong>Sarampo, Caxumba e Rubéola</strong>",
+              "Via Subcutânea (SC), dose de 0,5 mL (deltoide ou face anterolateral da coxa)"
+            ],
+            [
+              "<strong>15 Meses de Vida</strong> (1 ano e 3 meses)",
+              "<strong>Tetra Viral (SCRV)</strong> OU<br>Tríplice Viral + Vacina Varicela",
+              "Vírus vivos atenuados do <strong>Sarampo, Caxumba, Rubéola e Varicela</strong>",
+              "Via Subcutânea (SC), dose de 0,5 mL"
+            ],
+            [
+              "<strong>Dose Zero de Sarampo</strong><br>(Em Situação de Surto Ativo)",
+              "<strong>Tríplice Viral (SCR)</strong> administrada dos <strong>6 aos 11 meses e 29 dias</strong>",
+              "Vírus vivos atenuados do Sarampo, Caxumba e Rubéola",
+              "Dose de proteção temporária em lactentes durante epidemias ativas. <em>Regra de Ouro:</em> <strong>A \"Dose Zero\" NÃO SUBSTITUI e NÃO É COMPUTADA como dose válida do calendário básico!</strong> A criança vacinada na dose zero aos 6-11 meses DEVERÁ OBRIGATORIAMENTE receber as duas doses de rotina aos 12 e 15 meses de vida normalmente."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Contraindicações Formais Absolutas às Vacinas de Vírus Vivos (Tríplice e Tetra Viral)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Imunodeficiências Congênitas ou Adquiridas Graves:</strong> Crianças com imunodeficiência combinada grave (SCID), infecção avançada pelo HIV com imunossupressão grave (contagem de linfócitos T CD4+ &lt; 15% em menores de 5 anos ou &lt; 200 células/mm³ em maiores de 5 anos), leucemias, linfomas ou neoplasias sólidas em quimioterapia ativa;",
+            "<strong>Uso de Corticoterapia Sistêmica Imunossupressora:</strong> Pacientes em uso de Prednisona na dose &gt;= 2 mg/kg/dia (ou &gt;= 20 mg/dia para crianças &gt; 10 kg) por um período superior a <strong>14 dias consecutivos</strong>. A vacinação só pode ser realizada após um intervalo mínimo de <strong>30 dias (1 mês) após a suspensão completa do corticoide</strong>;",
+            "<strong>Mulheres Gestantes:</strong> Risco teórico de teratogênese pelo componente atenuado da rubéola (evitar gestação por pelo menos 30 dias após receber a vacina tríplice viral inadvertidamente);",
+            "<strong>Histórico de Anafilaxia Severa Comprovada a Doses Anteriores ou a Componentes da Vacina</strong> (como neomicina ou gelatina); <em>Atenção para Mito de Prova:</em> A alergia à proteína do ovo de galinha (mesmo com manifestações graves como anafilaxia) <strong>NÃO É MAIS CONTRAINDICAÇÃO À VACINA TRÍPLICE VIRAL</strong>, pois o vírus vacinal do sarampo e caxumba é cultivado em cultura de fibroblastos de embrião de galinha e contém quantidades absolutamente microscópicas de ovalbumina, podendo ser administrada com segurança na sala de vacina habitual!"
+          ]
+        ],
+        [
+          "3",
+          "10.2. Ação de Bloqueio Vacinal Imediato em Caso Suspeito de Sarampo"
+        ],
+        [
+          "p",
+          "Diante da notificação de um <strong>único caso suspeito de Sarampo</strong> (criança febril com tosse/coriza/conjuntivite e exantema morbiliforme):"
+        ],
+        [
+          "o",
+          [
+            "<strong>NOTIFICAÇÃO COMPULSÓRIA IMEDIATA (em até 24 Horas):</strong> O Sarampo e a Rubéola são agravos de notificação compulsória imediata para as três esferas de gestão do SUS (Municipal, Estadual e Federal / Ministério da Saúde). O médico NÃO deve aguardar o resultado de sorologias ou PCR para notificar!",
+            "<strong>Coleta Oportuna de Espécimes Clínicos:</strong> Coletar sangue para sorologia (dosagem de <strong>IgM específica para sarampo</strong> por ELISA, idealmente colhida entre o 1º e o 28º dia após o início do exantema) e swab combinado de nasofaringe e orofaringe e amostra de urina para isolamento viral e <strong>RT-PCR molecular</strong> (idealmente nos primeiros 7 dias de exantema).",
+            "<strong>ISOLAMENTO RESPIRATÓRIO POR AEROSSÓIS:</strong> O paciente suspeito deve ser mantido em quarto privativo com pressão negativa e filtro HEPA, e todos os profissionais de saúde devem utilizar <strong>Máscara de Proteção Respiratória N95 (PFF2)</strong>. O isolamento deve ser mantido até <strong>4 dias completos após o aparecimento do exantema</strong> (em pacientes imunodeprimidos, manter o isolamento durante toda a internação hospitalar).",
+            "<strong>BLOQUEIO VACINAL SELETIVO EM ATÉ 72 HORAS:</strong> A equipe de vigilância epidemiológica deve desencadear a busca ativa de todos os contatos domiciliares, escolares e hospitalares suscetíveis no prazo máximo de <strong>até 72 HORAS após a exposição ao caso índice</strong>, administrando a <strong>Vacina Tríplice Viral</strong> em todos os contactantes não vacinados ou com esquema vacinal incompleto a partir dos 6 meses de idade.",
+            "<strong>Uso de Imunoglobulina Humana Normal (Padrão) Pós-Exposição ao Sarampo:</strong> Indicada para contactantes suscetíveis com contraindicação absoluta à vacina atenuada:\n    <ul>\n      <li>Gestantes suscetíveis;",
+            "Imunodeprimidos graves suscetíveis;",
+            "Lactentes com menos de 6 meses de idade filhos de mães não vacinadas ou suscetíveis.",
+            "Deve ser administrada por via intramuscular na dose de <strong>0,5 mL/kg (máximo de 15 mL) no prazo máximo de até 6 DIAS após o contato</strong>."
+          ]
+        ]
+      ]
+    ]
+  ]
+}

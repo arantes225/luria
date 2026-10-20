@@ -1,0 +1,694 @@
+{
+  "v": 2,
+  "s": "trauma-ortopedico-fraturas-luxacoes-e-avaliacao-inicial",
+  "t": "Trauma Ortopédico: Fraturas, Luxações e Avaliação Inicial",
+  "p": "Trauma Ortopédico: Fraturas, Luxações e Avaliação Inicial — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance: Princípios ATLS, Gustilo, Salter-Harris, Síndrome Compartimental e Luxações",
+  "a": "Cirurgia Geral",
+  "m": "Cirurgia Geral",
+  "h": [
+    "Apostila LURIA",
+    "Trauma Ortopédico: Fraturas, Luxações e Avaliação Inicial",
+    "Tratado de Alta Performance: Princípios ATLS, Gustilo, Salter-Harris, Síndrome Compartimental e Luxações",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Cirurgia Geral",
+      "Tema: Trauma Ortopédico: Fraturas, Luxações e Avaliação Inicial"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introducao-e-fundamentos",
+      "Introdução e Fundamentos"
+    ],
+    [
+      "1-principios-do-atendimento-inicial-ao-politraumatizado-com-lesoes-ortopedicas",
+      "1. Princípios do Atendimento Inicial ao Politraumatizado com Lesões Ortopédicas"
+    ],
+    [
+      "2-classificacoes-fundamentais-de-fraturas-e-luxacoes",
+      "2. Classificações Fundamentais de Fraturas e Luxações"
+    ],
+    [
+      "3-sindrome-compartimental-aguda-fisiopatologia-diagnostico-e-fasciotomia",
+      "3. Síndrome Compartimental Aguda: Fisiopatologia, Diagnóstico e Fasciotomia"
+    ],
+    [
+      "4-luxacoes-articulares-traumaticas-emergencias-ortopedicas",
+      "4. Luxações Articulares Traumáticas: Emergências Ortopédicas"
+    ],
+    [
+      "5-fraturas-expostas-protocolo-sistematizado-de-urgencia",
+      "5. Fraturas Expostas: Protocolo Sistematizado de Urgência"
+    ],
+    [
+      "6-fraturas-especificas-de-alta-cobranca-em-concursos-medicos",
+      "6. Fraturas Específicas de Alta Cobrança em Concursos Médicos"
+    ],
+    [
+      "7-complicacoes-sistemicas-graves-do-trauma-ortopedico",
+      "7. Complicações Sistêmicas Graves do Trauma Ortopédico"
+    ],
+    [
+      "8-casos-clinicos-estruturados-e-resolvidos-de-trauma-ortopedico",
+      "8. Casos Clínicos Estruturados e Resolvidos de Trauma Ortopédico"
+    ],
+    [
+      "9-questoes-de-residencia-medica-comentadas-na-integra",
+      "9. Questões de Residência Médica Comentadas na Íntegra"
+    ],
+    [
+      "10-tabela-comparativa-resumida-e-perolas-de-alta-performance",
+      "10. Tabela Comparativa Resumida e Pérolas de Alta Performance"
+    ]
+  ],
+  "q": [
+    [
+      "introducao-e-fundamentos",
+      0,
+      [
+        [
+          "2",
+          "Introdução e Fundamentos"
+        ],
+        [
+          "p",
+          "<h1>LURIA · Apostila 194 — Trauma Ortopédico: Fraturas, Luxações e Avaliação Inicial</h1>"
+        ],
+        [
+          "p",
+          "> <strong>Estado:</strong> PRODUÇÃO EDITORIAL LURIA · OURO. <strong>Lote 09 · 2026.</strong> Texto autoral e exaustivo para Residência Médica, Revalida e ENAMED. Diretrizes primárias: Advanced Trauma Life Support (ATLS - 10ª Edição), Arbeitsgemeinschaft für Osteosynthesefragen (AO/OTA) e Sociedade Brasileira de Ortopedia e Traumatologia (SBOT)."
+        ]
+      ]
+    ],
+    [
+      "1-principios-do-atendimento-inicial-ao-politraumatizado-com-lesoes-ortopedicas",
+      0,
+      [
+        [
+          "2",
+          "1. Princípios do Atendimento Inicial ao Politraumatizado com Lesões Ortopédicas"
+        ],
+        [
+          "p",
+          "O atendimento ao paciente vítima de trauma musculoesquelético grave no contexto da emergência cirúrgica rege-se imperativamente pelas diretrizes sistematizadas do <strong>Advanced Trauma Life Support (ATLS)</strong>. A regra basilar indiscutível é que <strong>a vida tem prioridade absoluta sobre o membro</strong> (\"life over limb\"). Fraturas abertas exuberantes, deformidades ósseas grosseiras ou amputações traumáticas parciais são lesões visualmente dramáticas que podem distrair a equipe de plantão; contudo, a abordagem deve seguir com disciplina rigorosa a sequência mnemônica padronizada da avaliação primária <strong>XABCDE</strong>:"
+        ],
+        [
+          "p",
+          "1. <strong>X - Exsanguinating External Hemorrhage (Hemorragia Exsanguinante Externa):</strong> Controle imediato de sangramentos externos catastróficos que ameacem a vida em segundos. Em lesões ortopédicas de extremidades (lacerações de grandes artérias femorais, poplíteas ou braquiais associadas a fraturas expostas), a <strong>compressão manual direta</strong> com curativo estéril espesso é a primeira medida. Se ineficaz em extremidades, indica-se o uso imediato de <strong>torniquete tático arterial</strong> colocado cerca de 5 a 7 cm proximal ao sítio do sangramento (nunca sobre articulações), registrando-se o horário exato de aposição (limite de segurança de 120 a 150 minutos para evitar isquemia muscular irreversível).<br>2. <strong>A - Airway with Cervical Spine Protection (Vias Aéreas e Controle da Coluna Cervical):</strong> Garantia de via aérea pérvia e imobilização alinhada da coluna cervical com colar cervical rígido e blocos laterais (<em>head blocks</em>). Toda vítima de trauma multissistêmico contuso de alta energia é portadora de fratura instável da coluna cervical até prova em contrário por exames de imagem adequados.<br>3. <strong>B - Breathing and Ventilation (Respiração e Ventilação):</strong> Diagnóstico e manejo imediato de lesões torácicas que ameaçam a vida a curto prazo: pneumotórax hipertensivo (descompressão torácica imediata com agulha no 4º ou 5º espaço intercostal na linha axilar anterior no adulto, seguida de drenagem em selo d'água), pneumotórax aberto e hemotórax maciço.<br>4. <strong>C - Circulation and Hemorrhage Control (Circulação e Choque Hemodinâmico):</strong> Avaliação de pulsos centrais e periféricos, tempo de enchimento capilar, cor e temperatura da pele, pressão arterial e nível de consciência.<br><li><em>Grandes Sítios de Sangramento Oculto:</em> Tórax, abdome/pelve, retroperitônio, ossos longos (fêmur) e sangramento externo.</li><br><li><em>Perdas Volumétricas Estimadas por Fratura:</em></li><br><li>Uma fratura de diáfise femoral fechada pode sequestrar de <strong>1.000 a 1.500 mL</strong> de sangue no compartimento muscular da coxa;</li><br><li>Uma fratura fechada de tíbia pode sequestrar de <strong>500 a 1.000 mL</strong>;</li><br><li>Uma fratura instável do anel pélvico (\"livro aberto\") pode sangrar de <strong>2.000 a 4.000 mL ou mais</strong>, levando ao choque hemorrágico exanguinante fulminante!</li><br><li><em>Estabilização Pélvica Imediata:</em> Na suspeita clínica de fratura de pelve com instabilidade hemodinâmica, a palpação pélvica deve ser executada com extrema delicadeza <strong>uma única vez</strong> (pesquisa de instabilidade do anel pélvico por compressão anteroposterior e laterolateral). Se houver mobilidade anormal, o exame é interrompido imediatamente e realiza-se o <strong>fechamento circunferencial da pelve com lençol cirúrgico amarrado ao nível dos grandes trocanteres dos fêmures</strong> (ou cinta pélvica comercial - <em>pelvic binder</em>), reduzindo o volume da pelve verdadeira e promovendo tamponamento mecânico do plexo venoso pré-sacral e ramos da artéria ilíaca interna.</li><br>5. <strong>D - Disability (Avaliação Neurológica Breve):</strong> Escala de Coma de Glasgow (ECG), reatividade pupilar e simetria motora antes da administração de sedativos.<br>6. <strong>E - Exposure and Environmental Control (Exposição Completa com Prevenção da Hipotermia):</strong> Despir completamente o paciente com corte de roupas para inspecionar todas as extremidades e dorso (manobra de rolamento em bloco - <em>log roll</em> com controle cervical), seguida imediatamente por aquecimento ativo com mantas térmicas e infusão de fluidos aquecidos a 39 °C para evitar a letal <strong>tríade da morte</strong> (hipotermia, acidose metabólica e coagulopatia)."
+        ],
+        [
+          "3",
+          "A Avaliação Secundária Musculoesquelética: \"Olhar, Tocar e Mover\""
+        ],
+        [
+          "p",
+          "Uma vez estabilizadas as funções vitais no XABCDE e realizada a ressuscitação volêmica adequada, procede-se ao exame musculoesquelético minucioso da cabeça aos pés:\n<li><strong>Inspeção:</strong> Deformidades anatômicas grosseiras, encurtamento ou rotação anormal do membro, equimoses, flictenas (bolhas traumáticas indicativas de grave sofrimento de partes moles), feridas com exposição óssea ou sangramento ativo.</li>\n<li><strong>Palpação e Exame Neurovascular Detalhado (Mandatório antes e após qualquer imobilização ou manipulação!):</strong></li>\n<li><em>Palpação dos pulsos arteriais periféricos:</em> Pulso radial e ulnar no membro superior; pulso femoral, poplíteo, tibial posterior e pedioso dorsal no membro inferior.</li>\n<li><em>Teste de Perfusão:</em> Tempo de enchimento capilar periférico (normal < 2 segundos).</li>\n<li><em>Avaliação Sensitiva e Motora Focada por Nervo:</em></li>\n<li><strong>Nervo Radial:</strong> Extensão do punho e dos dedos (articulações metacarpofalângicas); sensibilidade do dorso do primeiro espaço interdigital dorsal da mão. Comumente lesado em <strong>fraturas do terço médio/distal da diáfise umeral (fratura de Holstein-Lewis)</strong>.</li>\n<li><strong>Nervo Mediano:</strong> Flexão das falanges distais dos dedos indicador e médio (\"fazer o sinal de OK\"); sensibilidade da polpa digital do dedo indicador. Comumente lesado na síndrome do túnel do carpo aguda e <strong>fraturas supracondilianas do úmero em crianças</strong>.</li>\n<li><strong>Nervo Ulnar:</strong> Abdução e adução dos dedos da mão (músculos interósseos); sensibilidade da polpa digital do 5º dedo (dedo mínimo).</li>\n<li><strong>Nervo Fibular Comum (Peroneal):</strong> Dorsiflexão do tornozelo (\"pé para cima\") e extensão do hálux; sensibilidade do primeiro espaço interdigital dorsal do pé. É o nervo periférico mais vulnerável do membro inferior, correndo superficialmente ao redor do colo da fíbula; lesado tipicamente em <strong>luxações do joelho</strong> e fraturas do colo fibular, resultando no clássico \"pé caído\" (<em>drop foot</em>).</li>\n<li><strong>Nervo Tibial:</strong> Flexão plantar do tornozelo (\"pisar no acelerador\") e flexão dos pododáctilos; sensibilidade de toda a planta do pé.</li>\n<li><strong>Nervo Ciático:</strong> Flexão da perna sobre a coxa; vulnerável a estiramento e compressão em <strong>luxações posteriores do quadril</strong>.</li>\n<li><strong>Nervo Axilar (Circunflexo):</strong> Abdução do braço (músculo deltoide); sensibilidade na face lateral superior do ombro (\"área do distintivo militar\"). Comumente lesado em <strong>luxações anteriores do ombro</strong> e fraturas do colo cirúrgico do úmero.</li>"
+        ]
+      ]
+    ],
+    [
+      "2-classificacoes-fundamentais-de-fraturas-e-luxacoes",
+      0,
+      [
+        [
+          "2",
+          "2. Classificações Fundamentais de Fraturas e Luxações"
+        ],
+        [
+          "3",
+          "2.1 Classificação de Gustilo-Anderson para Fraturas Expostas"
+        ],
+        [
+          "p",
+          "A classificação de Gustilo, Mendoza e Anderson (1984) é a mais universal e exigida em 100% dos exames de Residência Médica para estadiamento de <strong>fraturas expostas</strong>. Baseia-se primariamente na <strong>energia do trauma, extensão do dano às partes moles musculocutâneas, grau de contaminação e presença de lesão arterial</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Grau Gustilo",
+            "Tamanho da Ferida Cutânea",
+            "Energia do Trauma e Lesão de Partes Moles",
+            "Nível de Contaminação",
+            "Padrão da Fratura Óssea",
+            "Risco de Infecção / Osteomielite"
+          ],
+          [
+            [
+              "<strong>Tipo I</strong>",
+              "<strong>< 1 cm</strong> de extensão",
+              "Baixa energia; ferida puntiforme de dentro para fora pelo fragmento ósseo afiado",
+              "Limpa, mínima contaminação",
+              "Traço simples (transverso, oblíquo curto), sem cominuição",
+              "Muito baixo (0% a 2%)"
+            ],
+            [
+              "<strong>Tipo II</strong>",
+              "<strong>1 a 10 cm</strong> de extensão",
+              "Moderada energia; dano moderado de partes moles; sem perda muscular nem descolamento periosteal extenso",
+              "Moderada",
+              "Cominuição moderada ou oblíqua longa",
+              "Baixo (2% a 7%)"
+            ],
+            [
+              "<strong>Tipo III</strong>",
+              "<strong>> 10 cm</strong> (ou qualquer fratura de alta energia)",
+              "Alta energia com destruição extensa de pele, fáscia e músculos desvitalizados",
+              "Severa contaminação bacteriana",
+              "Cominuição severa, esmagamento ou perda óssea",
+              "Alto a catastrófico (10% a 50%)"
+            ],
+            [
+              "<strong>Tipo III-A</strong>",
+              "Geralmente > 10 cm",
+              "Cobertura de partes moles <strong>ADEQUADA</strong>: o osso fraturado pode ser completamente coberto por tecidos moles locais após desbridamento, sem necessidade de retalhos",
+              "Severa",
+              "Fratura cominutiva de alta energia",
+              "7% a 12%"
+            ],
+            [
+              "<strong>Tipo III-B</strong>",
+              "Extensa",
+              "Cobertura de partes moles <strong>INADEQUADA</strong>: extensa perda tecidual com exposição óssea e descolamento periosteal maciço. <strong>Exige retalho microcirúrgico vascularizado ou rotacional</strong> para cobertura do osso",
+              "Muito severa",
+              "Cominuição severa com osso desnudo",
+              "25% a 50%"
+            ],
+            [
+              "<strong>Tipo III-C</strong>",
+              "Qualquer extensão",
+              "<strong>LESÃO ARTERIAL QUE EXIGE REPARO VASCULAR PARA SALVAMENTO DO MEMBRO</strong>, independentemente da extensão da ferida cutânea!",
+              "Máxima",
+              "Qualquer",
+              "Risco altíssimo de amputação secundária (> 50%)"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>Cenários Especiais Classificados AUTOMATICAMENTE como Tipo III de Gustilo:</em><br>Independentemente do tamanho da ferida cutânea (mesmo feridas minúsculas com menos de 1 cm), os seguintes traumas são classificados como <strong>Tipo III</strong> pelas diretrizes da SBOT e AO:<br><li>Fraturas ocorridas em ambiente altamente contaminado (zona rural com estrume/fezes de animais, esgoto ou água parada lamacenta);</li><br><li>Fraturas por projétil de arma de fogo de alta velocidade (fuzil) ou disparo de espingarda a queima-roupa;</li><br><li>Fraturas com esmagamento maciço de membros (<em>crush injury</em>);</li><br><li>Fraturas expostas com mais de 8 horas de evolução sem atendimento inicial;</li><br><li>Fraturas expostas associadas a desastre natural ou acidentes em fazendas agrícolas.</li>"
+        ],
+        [
+          "3",
+          "2.2 Classificação de Salter-Harris para Fraturas Fisiárias Pediátricas"
+        ],
+        [
+          "p",
+          "Em crianças e adolescentes com esqueleto imaturo, a <strong>placa de crescimento cartilaginosa (fise ou cartilagem epifisária)</strong> é a estrutura histologicamente mais frágil do osso longo, sendo menos resistente a forças de torção e cisalhamento do que os ligamentos articulares adjacentes. As fraturas que cruzam ou envolvem a fise são categorizadas pela clássica classificação de <strong>Salter-Harris (Tipos I a V)</strong>:\n<li><strong>Tipo I (Separação Pura da Fise):</strong></li>\n<li>O traço de fratura percorre longitudinalmente toda a extensão da zona hipertrófica da placa de crescimento, separando a epífise da metáfise sem nenhuma fratura óssea verdadeira visível.</li>\n<li>Radiografia: Pode parecer normal ou mostrar apenas alargamento sutil da linha fisiária e tumefação de partes moles adjacente. Diagnóstico essencialmente clínico (dor pontual requintada sobre a fise da criança traumatizada).</li>\n<li>Prognóstico de Crescimento: Excelente (raro distúrbio de crescimento longitudinal se reduzida incruentamente com gentileza).</li>\n<li><strong>Tipo II (Fise + Fragmento Metafisário):</strong></li>\n<li><strong>É O TIPO MAIS FREQUENTE DE TODAS AS FRATURAS FISIÁRIAS (75% dos casos)!</strong></li>\n<li>O traço corre ao longo da fise e desvia-se para fora em direção à metáfise, destacando um fragmento ósseo triangular metafisário característico conhecido pelo epônimo clássico de <strong>Sinal de Thurston-Holland</strong>.</li>\n<li>Prognóstico: Muito bom a excelente; o suprimento sanguíneo epifisário germinativo permanece intacto.</li>\n<li><strong>Tipo III (Fise + Epífise Intra-articular):</strong></li>\n<li>O traço corre ao longo da fise e dobra-se perpendicularmente cruzando a epífise e adentrando a cavidade articular.</li>\n<li><strong>É UMA FRATURA INTRA-ARTICULAR VERDADEIRA!</strong> Exige redução anatômica milimétrica perfeita para evitar incongruência articular e formação de ponte óssea fiseal prematura. Frequentemente necessita de redução aberta e fixação interna (RAFI).</li>\n<li><strong>Tipo IV (Metáfise + Fise + Epífise Intra-articular):</strong></li>\n<li>O traço de fratura vertical cruza todas as camadas: metáfise, placa fisiária completa e epífise, atingindo o espaço articular.</li>\n<li>Alto risco de fechamento fiseal assimétrico e deformidade angular grave progressiva ou discrepância de comprimento de membros se a redução não for microscopicamente anatômica.</li>\n<li><strong>Tipo V (Compressão / Esmagamento da Fise):</strong></li>\n<li>Força axial de esmagamento compressivo severo direto sobre a cartilagem fiseal, destruindo a camada germinativa de condrócitos em proliferação.</li>\n<li>Radiografia Inicial: Extremamente sutil ou aparentemente normal; o diagnóstico costuma ser retrospectivo quando a criança desenvolve parada prematura definitiva do crescimento longitudinal ósseo meses depois (<em>fiseal arrest</em>).</li>\n<li>Prognóstico: Pior prognóstico de todas (invariavelmente resulta em deformidade grave ou encurtamento do membro).</li>"
+        ],
+        [
+          "p",
+          "<em>Mnemônico Universal Americano para Salter-Harris (SALTR):</em><br><li><strong>S</strong> = <em>Straight across</em> (Tipo I: reta através da fise);</li><br><li><strong>A</strong> = <em>Above</em> (Tipo II: acima da fise, na metáfise — Thurston-Holland);</li><br><li><strong>L</strong> = <em>Lower</em> (Tipo III: abaixo da fise, na epífise intra-articular);</li><br><li><strong>T</strong> = <em>Through</em> (Tipo IV: através de tudo — metáfise, fise e epífise);</li><br><li><strong>R</strong> = <em>Rammed / cRush</em> (Tipo V: esmagamento fiseal por compressão axial).</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "2.3 Classificação AO/OTA: O Padrão Universal da Cirurgia Ortopédica"
+        ],
+        [
+          "p",
+          "O sistema alfanumérico da fundação suíça AO/OTA (<em>Arbeitsgemeinschaft für Osteosynthesefragen / Orthopaedic Trauma Association</em>) é a linguagem científica global padronizada para codificação de qualquer fratura no esqueleto humano:\n1. <strong>Primeiro Dígito (Identificação do Osso):</strong>\n<li>1 = Úmero; 2 = Rádio e Ulna; 3 = Fêmur; 4 = Tíbia e Fíbula; 5 = Coluna; 6 = Pelve; 7 = Mão; 8 = Pé.</li>\n2. <strong>Segundo Dígito (Localização Anatômica no Osso):</strong>\n<li>1 = Epífise/Metáfise Proximal;</li>\n<li>2 = Diáfise (segmento intermediário);</li>\n<li>3 = Epífise/Metáfise Distal;</li>\n<li>(4 = Maléolos, específico da tíbia/fíbula distal).</li>\n3. <strong>Letra (Tipo Morfológico do Traço de Fratura):</strong>\n<li><em>Para Fraturas Diafisárias (Segmento 2):</em></li>\n<li><strong>Tipo A:</strong> Fratura simples (2 fragmentos principais; A1 = espiral, A2 = oblíqua, A3 = transversa);</li>\n<li><strong>Tipo B:</strong> Fratura em cunha (<em>wedge</em>) com fragmento intermediário em \"asa de borboleta\" (ainda mantém contato ósseo cortical entre os topos fraturados após redução);</li>\n<li><strong>Tipo C:</strong> Fratura complexa cominutiva segmentar (múltiplos fragmentos sem contato cortical direto).</li>\n<li><em>Para Fraturas Articulares / Extremidades (Segmentos 1 e 3):</em></li>\n<li><strong>Tipo A:</strong> Fratura extra-articular (poupa a superfície articular);</li>\n<li><strong>Tipo B:</strong> Fratura articular parcial (parte da superfície articular permanece unida à diáfise);</li>\n<li><strong>Tipo C:</strong> Fratura articular completa (a superfície articular é dissociada da diáfise com cominuição articular).</li>"
+        ]
+      ]
+    ],
+    [
+      "3-sindrome-compartimental-aguda-fisiopatologia-diagnostico-e-fasciotomia",
+      0,
+      [
+        [
+          "2",
+          "3. Síndrome Compartimental Aguda: Fisiopatologia, Diagnóstico e Fasciotomia"
+        ],
+        [
+          "p",
+          "A <strong>Síndrome Compartimental Aguda (SCA)</strong> é uma das emergências cirúrgicas ortopédicas mais temidas e agressivas, decorrente da elevação patológica da pressão hidrostática no interior de um compartimento osteofascial inextensível, resultando em colapso da microcirculação capilar, isquemia neuromuscular e necrose tecidual irreversível em poucas horas se não descomprimida cirurgicamente."
+        ],
+        [
+          "3",
+          "Fisiopatologia e a Cascata de Isquemia"
+        ],
+        [
+          "p",
+          "1. Os grupos musculares dos membros superiores e inferiores são envolvidos por fáscias aponeuróticas conjuntivas extremamente densas e inextensíveis.\n2. Após uma fratura (especialmente <strong>fratura de diáfise de tíbia</strong> — o sítio mais comum no adulto, responsável por mais de 35% a 40% de todos os casos de SCA —, fraturas de antebraço ou fratura supracondiliana de úmero na criança), sangramento intra-hematoma e edema inflamatório progressivo aumentam o volume tecidual dentro do espaço confinado.\n3. A pressão intracompartimental (PIC), que em condições fisiológicas normais é de <strong>0 a 8 mmHg</strong>, começa a elevar-se vertiginosamente.\n4. Quando a PIC ultrapassa a pressão venosa capilar de drenagem (cerca de 20 a 30 mmHg), ocorre oclusão do leito venular com parada de drenagem venosa e estase maciça.\n5. Ocorre transudação de líquido para o interstício, aumentando ainda mais a pressão (círculo vicioso expansivo).\n6. Quando a PIC atinge níveis próximos à pressão diastólica arterial, o gradiente arteriolar capilar zera e a perfusão nutricional tecidual cessa por completo!\n7. <strong>O Músculo e o Nervo:</strong> O tecido nervoso é extremamente vulnerável à anóxia: alterações sensitivas e parestesias surgem em menos de <strong>30 a 60 minutos</strong> de isquemia. O tecido muscular tolera cerca de <strong>4 horas</strong> de isquemia antes de iniciar degeneração celular e, após <strong>6 a 8 horas</strong> de isquemia contínua sustentada, a necrose do músculo estriado esquelético torna-se <strong>irreversível</strong>, evoluindo para a catastrófica <strong>Contratura Isquêmica de Volkmann</strong> (mão em garra rígida pós-fratura de antebraço/úmero) ou pé equinovaro rígido insensível."
+        ],
+        [
+          "3",
+          "Apresentação Clínica: Os Clássicos \"6 Ps\""
+        ],
+        [
+          "p",
+          "A semiologia médica consagrou os \"6 Ps\" da síndrome compartimental aguda, mas o médico emergencista deve saber a <strong>ordem cronológica exata de aparecimento</strong> para não intervir tarde demais:"
+        ],
+        [
+          "p",
+          "1. <strong>PAIN (Dor fora de proporção à lesão inicial):</strong> É O SINAL MAIS PRECOCE, SENSÍVEL E MAIS IMPORTANTE! Uma dor intolerável, progressiva, em queimação profunda ou aperto, que <strong>NÃO responde a doses plenas e repetidas de opioides intravenosos</strong> (como morfina).<br>2. <strong>PAIN ON PASSIVE STRETCH (Dor à dorsiflexão e ao estiramento passivo dos músculos do compartimento):</strong> É o teste físico mais fidedigno à beira do leito! Ao estirar passivamente os tendões musculares correspondentes ao compartimento sob tensão, as fibras isquêmicas deflagram dor lancinante intolerável. Por exemplo, no compartimento anterior da perna (o mais comumente afetado na perna), a flexão plantar passiva dos dedos do pé e tornozelo estira os músculos tibial anterior e extensores dos dedos, provocando dor excruciante.<br>3. <strong>PARESTHESIA (Parestesia / Hipoestesia precoce):</strong> Perda sutil de sensibilidade tátil e formigamento no território cutâneo inervado pelo nervo que cruza o compartimento (ex.: hipoestesia no primeiro espaço interdigital dorsal do pé por isquemia do nervo fibular profundo no compartimento anterior da perna).<br>4. <strong>PRESSURE (Tensão e rigidez pétrea à palpação):</strong> O membro apresenta aspecto de \"membro de pau\", brilhante, com consistência pétrea e tensa à palpação bimanual dos compartimentos musculares.<br>5. <strong>PARALYSIS (Paralisia / Fraqueza motora avançada):</strong> Sinal tardio decorrente de dano isquêmico irreversível das junções neuromusculares e necrose de fibras contráteis.<br>6. <strong>PULSELESSNESS (Ausência de pulsos arteriais periféricos):</strong> <strong>ATENÇÃO MÁXIMA PARA A MAIOR PEGADINHA DE PROVA DE RESIDÊNCIA DE TODAS!</strong> <strong>A PRESENÇA DE PULSOS DISTAIS PALPÁVEIS E NORMAIS NÃO EXCLUI SÍNDROME COMPARTIMENTAL!</strong> A pressão intracompartimental necessária para interromper a microcirculação capilar muscular é de 30 a 40 mmHg; contudo, a pressão arterial sistólica que impulsiona o pulso radial ou pedioso é de 120 mmHg. Portanto, o sangue continuará a passar pelas grandes artérias axiais principais para a periferia, mantendo o pulso periférico perfeitamente palpável! O desaparecimento do pulso é um evento pré-terminal ou indicativo de lesão arterial associada primária. Esperar o pulso sumir para indicar cirurgia equivale a indicar fasciotomia em um membro já necrosado!"
+        ],
+        [
+          "3",
+          "Monitorização da Pressão Intracompartimental e Indicação Cirúrgica"
+        ],
+        [
+          "p",
+          "<li>Em pacientes inconscientes, politraumatizados graves intubados em ventilação mecânica ou em casos limítrofes/duvidosos, a pressão intracompartimental (PIC) deve ser aferida objetivamente por punção direta com cateter tipo agulha acoplado a manômetro de pressão (aparelho de Stryker) ou sistema conectado a transdutor de pressão arterial invasiva convencional.</li>\n<li><strong>Critérios Diagnósticos Formais:</strong></li>\n<li><em>Critério Absoluto Histórico:</em> Pressão intracompartimental absoluta <strong>$\\ge$ 30 a 35 mmHg</strong>.</li>\n<li><em>Critério Relativo Moderno (Pressão Delta - Whitesides / McQueen):</em> <strong>$\\Delta P = \\text{Pressão Arterial Diastólica (PAD)} - \\text{Pressão Intracompartimental (PIC)}$</strong>.</li>\n<li>Se <strong>$\\Delta P \\le 30\\text{ mmHg}$</strong>, a pressão de perfusão capilar efetiva é insuficiente para oxigenar o músculo! <strong>É INDICAÇÃO FORMAL E MANDATÓRIA DE FASCIOTOMIA CIRÚRGICA DE URGÊNCIA!</strong></li>\n<li>Este conceito é vital: um paciente jovem com pressão arterial de 140/90 mmHg tolera uma PIC de 35 mmHg melhor do que um paciente politraumatizado em choque hemorrágico com PAD de 45 mmHg (onde uma PIC de apenas 20 mmHg já zera o gradiente de perfusão tecidual e causa necrose isquêmica).</li>"
+        ],
+        [
+          "3",
+          "Conduta de Emergência: A Fasciotomia Descompressiva Ampla"
+        ],
+        [
+          "p",
+          "1. <strong>Medidas Imediatas à Beira do Leito:</strong>\n<li><strong>Remover imediatamente qualquer gesso circular, tala ou enfaixamento compressivo!</strong> A bivalvação e abertura completa de um gesso circular rígido reduz a pressão intracompartimental em até 50% a 70% em minutos.</li>\n<li><strong>Manter o membro no nível do coração (posição neutra):</strong> <strong>NUNCA elevar o membro acima do tórax!</strong> A elevação do membro acima do coração diminui a pressão arterial hidrostática de entrada, reduzindo ainda mais o gradiente de perfusão arteriolar e agravando a isquemia muscular. Também não se deve colocar em posição pendente extrema (piora o edema venoso).</li>\n<li>Otimizar a pressão arterial média com ressuscitação volêmica (evitar hipotensão).</li>\n2. <strong>Tratamento Cirúrgico Definitivo — A Fasciotomia:</strong>\n<li>Na perna (o sítio anatômico clássico), deve-se realizar a <strong>fasciotomia por dupla incisão com abertura de TODOS OS 4 COMPARTIMENTOS MUSCULARES DA PERNA</strong>:</li>\n<li><em>Incisão Ântero-lateral:</em> Acesso aos compartimentos <strong>anterior</strong> (músculos tibial anterior e extensores) e <strong>lateral</strong> (músculos fibulares longo e curto), cuidando para identificar e poupar o nervo fibular superficial.</li>\n<li><em>Incisão Póstero-medial:</em> Acesso aos compartimentos <strong>posterior superficial</strong> (gastrocnêmio e sóleo) e <strong>posterior profundo</strong> (tibial posterior, flexor longo dos dedos e flexor longo do hálux, desinserindo a fáscia do sóleo da face posterior da tíbia).</li>\n<li><em>Fechamento:</em> As incisões cutâneas e fasciais amplas são deixadas <strong>completamente abertas</strong> para permitir a expansão tecidual espontânea, recobertas com curativo úmido estéril ou terapia por pressão negativa (vácuo - VAC). O fechamento primário por sutura é formalmente proibido na urgência; realiza-se síntese tardia secundária ou enxerto de pele parcial após 5 a 7 dias, quando o edema houver regredido.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "4-luxacoes-articulares-traumaticas-emergencias-ortopedicas",
+      0,
+      [
+        [
+          "2",
+          "4. Luxações Articulares Traumáticas: Emergências Ortopédicas"
+        ],
+        [
+          "p",
+          "Uma articulação luxada representa uma perda completa da congruência anatômica entre duas superfícies articulares ósseas. Constitui uma <strong>emergência ortopédica verdadeira</strong> devido ao risco iminente de compressão vasculonervosa associada, sofrimento de cartilagem articular por anóxia sinovial e necrose avascular da cabeça articular (ex.: cabeça femoral ou umeral)."
+        ],
+        [
+          "3",
+          "4.1 Luxação Traumática do Quadril (Articulação Coxofemoral)"
+        ],
+        [
+          "p",
+          "<li>Exige trauma de alta energia, como colisões automobilísticas frontais de alta velocidade onde o joelho do passageiro ou motorista colide violentamente contra o painel do veículo (\"lesão do painel\" ou <em>dashboard injury</em>) com o quadril fletido.</li>\n<li><strong>Luxação Posterior do Quadril (90% dos casos):</strong></li>\n<li>Mecanismo: Força axial transmitida ao longo da diáfise femoral com o quadril em flexão e adução. A cabeça femoral rompe a cápsula articular posterior e apoia-se sobre a asa do osso ilíaco/ísquio.</li>\n<li><em>Postura Típica Patognomônica:</em> Membro inferior acometido encontra-se com <strong>FLEXÃO, ADUÇÃO e ROTAÇÃO INTERNA</strong> com encurtamento aparente do membro (\"posição de banhista tímido\" ou <em>pudic posture</em>).</li>\n<li><em>Complicação Neurológica Típica:</em> <strong>Lesão por estiramento ou compressão do Nervo Ciático</strong> (presente em 10% a 20% dos casos, manifestando-se por fraqueza à dorsiflexão do tornozelo e hipoestesia do pé).</li>\n<li><strong>Luxação Anterior do Quadril (10% dos casos):</strong></li>\n<li>Mecanismo: Abdução forçada e rotação externa com extensão do quadril.</li>\n<li><em>Postura Típica:</em> Membro inferior encontra-se em <strong>ABDUÇÃO, ROTAÇÃO EXTERNA e LEVE FLEXÃO</strong>.</li>\n<li>Risco de compressão vascular femoral direta (artéria e veia femorais).</li>\n<li><strong>A Janela Crítica de Redução da Luxação do Quadril:</strong></li>\n<li><strong>A redução fechada incruenta do quadril deve ser realizada em regime de emergência, idealmente em MENOS DE 6 HORAS após o trauma!</strong></li>\n<li><em>Justificativa Biológica:</em> A cabeça femoral depende do suprimento arterial retrógrado proporcionado pelos ramos retinaculares da artéria circunflexa femoral medial. Quando a cabeça desloca-se da fossa acetabular, esses delicados vasos retinaculares são estirados, dobrados ou ocluídos. O atraso na redução além de 6 horas eleva exponencialmente o risco de <strong>Necrose Avascular da Cabeça Femoral (Osteonecrose)</strong> de 5% para mais de 50%, culminando em colapso ósseo e osteoartrite severa precoce exigindo prótese total de quadril em adultos jovens.</li>\n<li><em>Manobra de Redução:</em> Manobra de Allis (paciente em decúbito dorsal na maca ou chão, tração vertical axial do fêmur fletido a 90° com um assistente estabilizando firmemente a pelve contra a maca) sob sedação profunda e relaxamento muscular no centro cirúrgico ou sala de emergência.</li>"
+        ],
+        [
+          "3",
+          "4.2 Luxação do Joelho (Articulação Femorotibial)"
+        ],
+        [
+          "p",
+          "<li><strong>Não confundir luxação do joelho (femorotibial) com luxação da patela (patelofemoral)!</strong> A luxação femorotibial é uma lesão ligamentar e capsular catastrófica que envolve a ruptura simultânea de pelo menos três dos quatro grandes ligamentos estabilizadores do joelho (ligamento cruzado anterior - LCA, cruzado posterior - LCP, colateral medial - LCM e/ou complexo posterolateral).</li>\n<li><strong>A Ameaça Vascular Máxima: Lesão da Artéria Poplítea!</strong></li>\n<li>A artéria poplítea encontra-se firmemente ancorada à face posterior do fêmur proximalmente no hiato dos adutores e distalmente no arco tendíneo do músculo sóleo. Em luxações anteriores (onde a tíbia é hiperestendida) ou posteriores (choque direto na tíbia proximal), a artéria poplítea sofre estiramento mecânico violento contra o platô tibial posterior, sofrendo <strong>dissecção da íntima, trombose aguda ou transecção vascular completa em 20% a 40% das luxações de joelho!</strong></li>\n<li><em>Armadilha Clínica Mortal de Prova:</em> A luxação do joelho pode sofrer <strong>redução espontânea</strong> no local do acidente antes da chegada ao hospital. O médico encontra um joelho instável com edema moderado, mas sem deformidade grosseira óbvia. <strong>TODA LUXAÇÃO OU SUSPEITA DE LUXAÇÃO DE JOELHO EXIGE INVESTIGAÇÃO VASCULAR RIGOROSA!</strong></li>\n<li><em>Protocolo Vascular:</em></li>\n    1. Palpação cuidadosa dos pulsos distais (tibial posterior e pedioso);\n    2. Medição do <strong>Índice Tornozelo-Braquial (ITB)</strong>: razão entre a pressão sistólica no tornozelo e no braço. Se <strong>ITB < 0,90</strong> ou se houver assimetria de pulsos, o paciente deve ser submetido IMEDIATAMENTE a <strong>Angiotomografia Computadorizada</strong> ou exploração cirúrgica vascular.\n    3. Se o membro apresentar sinais de isquemia crítica aguda (membro frio, pálido, sem pulso e com tempo de isquemia superior a 6 horas), o paciente vai diretamente para o centro cirúrgico para reconstrução da artéria poplítea com enxerto de veia safena reversa e fixação externa da articulação do joelho, associada a fasciotomia profilática da perna!"
+        ],
+        [
+          "3",
+          "4.3 Luxação Traumática do Ombro (Glenoumeral)"
+        ],
+        [
+          "p",
+          "<li>É a luxação articular mais comum de todo o corpo humano, em virtude da grande amplitude de movimento da articulação e da relativa desproporção anatômica entre a volumosa cabeça umeral e a rasa cavidade glenoide da escápula.</li>\n<li><strong>Luxação Anterior (95% dos casos):</strong></li>\n<li>Mecanismo: Queda com o braço em abdução forçada, extensão e rotação externa.</li>\n<li>Sinais Clínicos Patognomônicos:</li>\n<li><strong>Sinal da Dragona (ou Ombro em Cabide):</strong> Perda do contorno arredondado habitual do ombro decorrente do vazio subacromial deixado pela cabeça umeral deslocada anteriormente, tornando o acrômio proeminente como a dragona de uma farda militar.</li>\n<li>O paciente sustenta o membro afetado em leve abdução e rotação externa apoiado pelo membro contralateral (\"posição antálgica\").</li>\n<li><em>Lesão Neurológica Típica:</em> <strong>Nervo Axilar (Circunflexo)</strong> — testar sempre a sensibilidade da pele na face lateral do deltoide e o tônus contrátil do deltoide antes e após a redução.</li>\n<li><em>Lesões Ósseas Associadas Clássicas:</em></li>\n<li><strong>Lesão de Hill-Sachs:</strong> Fratura por impacção cortical posterolateral da cabeça umeral contra a borda anterior e inferior da glenoide durante a luxação;</li>\n<li><strong>Lesão de Bankart:</strong> Avulsão do lábio cartilaginoso glenoidal anteroinferior (labrum glenoideo), principal causa de luxação recidivante / instabilidade crônica anterior do ombro.</li>\n<li><em>Manobras de Redução Incruenta:</em> Manobra de tração-contratração (com lençol axilar), técnica de Milch (abdução progressiva com rotação externa e pressão manual sobre a cabeça umeral) ou técnica de Stimson (paciente em decúbito ventral com peso de 2 a 5 kg suspenso no punho). Todas devem ser executadas com analgesia e relaxamento adequados, evitando trações intempestivas que fraturem o colo umeral.</li>"
+        ]
+      ]
+    ],
+    [
+      "5-fraturas-expostas-protocolo-sistematizado-de-urgencia",
+      0,
+      [
+        [
+          "2",
+          "5. Fraturas Expostas: Protocolo Sistematizado de Urgência"
+        ],
+        [
+          "p",
+          "A abordagem da <strong>fratura exposta</strong> no pronto-socorro cirúrgico é guiada por uma cronologia estrita de intervenções para prevenir osteomielite crônica, pseudartrose infectada e perda do membro. O tratamento divide-se em medidas imediatas de pronto-socorro e intervenção cirúrgica formal no centro cirúrgico."
+        ],
+        [
+          "3",
+          "Medidas Imediatas no Pronto-Socorro (Primeira Hora de Atendimento):"
+        ],
+        [
+          "p",
+          "1. <strong>Curativo Estéril e Não Manipulação:</strong> A ferida traumática exposta deve ser coberta imediatamente com <strong>gaze estéril embebida em soro fisiológico 0,9% estéril</strong> e mantida ocluída. <strong>NUNCA tentar reduzir ou empurrar fragmentos ósseos contaminados de volta para dentro da ferida na sala de emergência!</strong> Reduzir um osso exposto contaminado antes da lavagem cirúrgica puxa bactérias e sujeira externa diretamente para o interior do canal medular estéril do osso, multiplicando o risco de osteomielite.\n2. <strong>Fotografia e Registro Digital Único:</strong> Recomenda-se registrar fotograficamente a lesão no momento do desnudamento para evitar que múltiplos profissionais abram repetidamente o curativo na emergência, diminuindo a taxa de infecção cruzada nosocomial hospitalar.\n3. <strong>Imobilização Provisória Alinhada:</strong> O membro fraturado deve ser alinhado suavemente no eixo longitudinal e imobilizado com tala gessada ou tala moldável, estabilizando as articulações acima e abaixo da fratura para diminuir a dor, conter o sangramento e evitar novas lesões vasculonervosas pelas espículas ósseas móveis.\n4. <strong>Antibioticoterapia Intravenosa Profilática Imediata:</strong> <strong>DEVE SER INICIADA NA PRIMEIRA HORA DE ADMISSÃO HOSPITALAR!</strong> Estudos clássicos demonstram que o atraso de mais de 3 horas no início do antibiótico é o fator isolado mais determinante para o surgimento de infecção bacteriana profunda.\n<li><em>Protocolo Antimicrobiano Padrão da SBOT / AO / EAST:</em></li>\n<li><strong>Gustilo Tipo I e Tipo II:</strong> Cefalosporina de 1ª geração com excelente cobertura contra <em>Staphylococcus aureus</em> meticilina-sensível e estreptococos: <strong>Cefazolina 2 g IV a cada 8 horas</strong> (ou Cefalotina 1 a 2 g IV 6/6h). Duração total: 24 a 48 horas após a cirurgia.</li>\n<li><strong>Gustilo Tipo III (A, B e C):</strong> Cobertura expandida para cocos gram-positivos + bacilos gram-negativos entéricos e ambientais: <strong>Cefazolina 2 g IV 8/8h + Aminoglicosídeo (Gentamicina 5 mg/kg IV uma vez ao dia ou Amicacina 15 mg/kg IV 1x/dia)</strong>. Como alternativa moderna amplamente adotada nos grandes centros de trauma, utiliza-se monoterapia com Cefalosporina de 4ª geração (<strong>Cefepima 2 g IV 8/8h</strong>) ou Ciprofloxacino para evitar a nefrotoxicidade e ototoxicidade dos aminoglicosídeos em pacientes instáveis. Duração total: 48 a 72 horas após o fechamento da ferida.</li>\n<li><strong>Contaminação Rural / Fecal / Terra ou Esgoto:</strong> Adicionar obrigatoriamente cobertura contra anaeróbios esporulados (<em>Clostridium tetani</em>, <em>Clostridium perfringens</em>): <strong>Penicilina Cristalina 4 milhões de UI IV a cada 4 horas</strong> ou <strong>Metronidazol 500 mg IV a cada 8 horas</strong>.</li>\n5. <strong>Profilaxia do Tétano (Mandatória):</strong> Toda fratura exposta é classificada como <strong>ferimento tetanogênico grave de alto risco</strong>. A conduta baseia-se no histórico vacinal:\n<li>Paciente com esquema básico completo (3 doses de toxoide tetânico) e última dose há < 5 anos: Não requer nenhuma dose adicional.</li>\n<li>Paciente com esquema completo e última dose há mais de 5 anos: Aplicar <strong>1 dose de reforço da vacina (dT / dupla adulto)</strong>.</li>\n<li>Paciente com histórico vacinal incerto, incompleto (< 3 doses) ou desconhecido: Aplicar <strong>1 dose da vacina (dT) associada obrigatoriamente a Imunoglobulina Humana Antitetânica (IGHAT 250 a 500 UI IM) ou Soro Antitetânico (SAT 5.000 UI IM)</strong> aplicados em sítios anatômicos diferentes com seringas separadas.</li>"
+        ],
+        [
+          "3",
+          "Intervenção Cirúrgica Formal no Centro Cirúrgico:"
+        ],
+        [
+          "p",
+          "1. <strong>Tempo de Lavagem Cirúrgica (\"A Regra das 6 Horas\"):</strong> Historicamente, considerava-se obrigatório operar em até 6 horas. O grande estudo clínico multicêntrico randomizado <strong>FLOW Trial (Fluid Lavage of Open Wounds)</strong> demonstrou que a lavagem cirúrgica precoce (idealmente nas primeiras 12 a 24 horas) sob técnica asséptica e antibioticoterapia parenteral precoce é segura, mas lesões de alta energia e contaminação massiva devem ir ao centro cirúrgico com a máxima celeridade possível.\n2. <strong>Qual Solução e Pressão Usar na Irrigação?</strong>\n<li>O FLOW Trial estabeleceu que a <strong>Solução Fisiológica Normal pura (Soro Fisiológico 0,9%)</strong> é tão eficaz quanto soluções enriquecidas com antissépticos (como clorexidina ou sabão de cloreto de benzalcônio, que são citotóxicos aos osteoblastos e macrófagos) e que a <strong>baixa pressão gravitacional</strong> é superior à alta pressão pulsátil (que pode empurrar bactérias e detritos para o interior da medular óssea).</li>\n<li>Volumes recomendados de irrigação: 3 litros para Gustilo I; 6 litros para Gustilo II; 9 a 12 litros para Gustilo III.</li>\n3. <strong>Desbridamento Radical dos Tecidos Desvitalizados:</strong> Ressecção agressiva de pele necrótica, gordura desvascularizada, tecido muscular que não sangra, não contrai à pinça e perdeu consistência elástica (os 4 Cs da viabilidade muscular: Cor, Consistência, Contratilidade e Circulação). Fragmentos ósseos completamente soltos e desprovidos de inserção de periósteo devem ser removidos e descartados, pois funcionam como sequestros ósseos bacterianos.\n4. <strong>Estabilização Óssea: Fixador Externo vs Síntese Interna:</strong>\n<li>Em fraturas expostas graves de alta energia (Gustilo III-B e III-C) ou em pacientes politraumatizados graves instáveis hemodinamicamente, a conduta padrão é o <strong>Controle de Danos Ortopédico (Damage Control Orthopaedics - DCO)</strong> com <strong>Fixação Externa Transarticular Provisória rápida</strong> (pontagem com pinos de Schanz e barras metálicas/carbono em menos de 30-40 minutos). A haste intramedular bloqueada definitiva ou placas só são implantadas 1 a 2 semanas após, quando as partes moles cicatrizaram e a resposta inflamatória sistêmica regrediu.</li>\n<li>Em fraturas Gustilo I e II selecionadas com partes moles viáveis, a fixação interna primária imediata com haste intramedular fresada ou placa já é rotineiramente praticada com excelentes taxas de consolidação.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "6-fraturas-especificas-de-alta-cobranca-em-concursos-medicos",
+      0,
+      [
+        [
+          "2",
+          "6. Fraturas Específicas de Alta Cobrança em Concursos Médicos"
+        ],
+        [
+          "3",
+          "6.1 Fraturas do Fêmur Proximal no Idoso (Colo Femoral vs Transtrocanteriana)"
+        ],
+        [
+          "p",
+          "Representa um dos temas cirúrgicos mais prevalentes nas provas de Residência Médica e ENAMED:"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro Comparativo",
+            "Fratura do Colo Femoral (Intracapsular)",
+            "Fratura Transtrocanteriana (Extracapsular)"
+          ],
+          [
+            [
+              "<strong>Localização Anatômica</strong>",
+              "<strong>Intracapsular</strong> (entre a cabeça e a base do colo femoral)",
+              "<strong>Extracapsular</strong> (entre o grande e o pequeno trocanter)"
+            ],
+            [
+              "<strong>Vascularização da Cabeça</strong>",
+              "<strong>COMPROMETIDA</strong>: rompe as artérias retinaculares da artéria circunflexa femoral medial",
+              "<strong>PRESERVADA</strong>: rica rede esponjosa peritrocanteriana muito vascularizada"
+            ],
+            [
+              "<strong>Risco de Necrose Avascular</strong>",
+              "<strong>MUITO ALTO (20% a 40%)</strong> e alto risco de pseudartrose (não consolidação)",
+              "Raro / praticamente nulo"
+            ],
+            [
+              "<strong>Consolidação Óssea</strong>",
+              "Pobre (líquido sinovial lava o hematoma fraturário; ausência de periósteo espesso)",
+              "Excelente (osso esponjoso trabecular que consolida avidamente)"
+            ],
+            [
+              "<strong>Perda Sanguínea / Hematoma</strong>",
+              "Limitada pela cápsula articular fechada (tamponamento intracapsular)",
+              "Significativa (hematoma volumoso dissecando a coxa; equimose tardia)"
+            ],
+            [
+              "<strong>Tratamento de Escolha no Idoso</strong>",
+              "<strong>Artroplastia (Prótese de Quadril)</strong>: Prótese parcial ou total de quadril",
+              "<strong>Osteossíntese com Fixação Interna</strong>: Haste Cefalomedular (PFN) ou Placa DHS"
+            ],
+            [
+              "<strong>Classificação Radiológica</strong>",
+              "<strong>Classificação de Garden (Tipos I a IV)</strong>",
+              "Classificação AO/OTA ou Tronzo"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>Classificação de Garden para Fraturas do Colo Femoral:</em><br><li><strong>Garden I:</strong> Fratura incompleta impactada em valgo (trabéculas da cabeça inclinadas para cima).</li><br><li><strong>Garden II:</strong> Fratura completa não desviada (trabéculas ósseas interrompidas, mas alinhadas).</li><br><li><strong>Garden III:</strong> Fratura completa com desvio parcial em varo (trabéculas desalinhadas, mantendo algum contato).</li><br><li><strong>Garden IV:</strong> Fratura completa com desvio total e perda completa de contato entre os fragmentos.</li><br><li><em>Conduta Cirúrgica Baseada em Garden e Idade:</em></li><br><li>No paciente <strong>jovem (< 60-65 anos)</strong>: Sempre tentar preservar a cabeça biológica femoral! Urgência cirúrgica para redução anatômica urgente e osteossíntese com parafusos canulados ou DHS para tentar revascularização.</li><br><li>No paciente <strong>idoso com fratura desviada (Garden III ou IV)</strong>: O tratamento padrão é a <strong>ARTROPLASTIA DE QUADRIL</strong> (prótese parcial bipolar em pacientes frágeis e pouco ativos, ou prótese total de quadril em idosos lúcidos e ativos), permitindo apoio e deambulação precoce no 1º dia de pós-operatório para evitar complicações da imobilidade no leito (trombose venosa profunda, pneumonia e úlceras por pressão).</li>"
+        ],
+        [
+          "3",
+          "6.2 Fraturas da Diáfise Umeral e a Lesão do Nervo Radial"
+        ],
+        [
+          "p",
+          "<li>As fraturas do terço médio para distal da diáfise do úmero (especialmente a <strong>fratura com traço oblíquo em espiral conhecida como Fratura de Holstein-Lewis</strong>) associam-se classicamente à <strong>Paralisia do Nervo Radial</strong> em até 10% a 18% dos casos.</li>\n<li>Fisiopatologia: O nervo radial corre intimamente colado ao osso no sulco do nervo radial na face posterior da diáfise umeral, antes de perfurar o septo intermuscular lateral. O fragmento ósseo distal pontiagudo fraturado pode aprisionar, lacerar ou contundir diretamente o nervo.</li>\n<li>Exame Semiológico: Paciente apresenta a clássica <strong>\"Mão Caída\" (<em>Wrist Drop</em>)</strong> — incapacidade total de estender o punho e os dedos nas articulações metacarpofalângicas, associada à perda sensitiva no dorso do primeiro espaço interdigital entre o polegar e o indicador.</li>\n<li>Conduta: Na imensa maioria dos casos de fratura fechada, trata-se de uma <strong>neuropraxia</strong> (lesão fisiológica por contusão sem transecção do epineuro). A conduta inicial é expectante com imobilização e observação por 3 a 4 meses, havendo recuperação motora e sensitiva espontânea em mais de 80% a 90% dos pacientes. A exploração cirúrgica primária do nervo é reservada para fraturas expostas, lesão vascular associada ou paralisia que surge subitamente <em>após</em> uma manobra intempestiva de redução fechada (indicando aprisionamento do nervo entre os topos ósseos).</li>"
+        ],
+        [
+          "3",
+          "6.3 Fraturas e Lesões de Antebraço com Epônimos Clássicos"
+        ],
+        [
+          "p",
+          "<li><strong>Fratura-Luxação de Monteggia:</strong> Fratura da diáfise da <strong>ulna</strong> (geralmente proximal) associada à <strong>luxação da cabeça do rádio</strong> na articulação radiocapitular do cotovelo. (Mnemônico: <strong>M</strong>onteggia = Fratura da <strong>U</strong>lna — <em>M-U</em>).</li>\n<li><strong>Fratura-Luxação de Galeazzi:</strong> Fratura do terço distal da diáfise do <strong>rádio</strong> associada à <strong>luxação da articulação radioulnar distal (ARUD)</strong> no punho. (Mnemônico: <strong>G</strong>aleazzi = Fratura do <strong>R</strong>ádio — <em>G-R</em>).</li>\n<li><strong>Fratura de Colles:</strong> Fratura extra-articular da metáfise distal do rádio com <strong>desvio dorsal do fragmento distal</strong>, conferindo a clássica deformidade em <strong>\"dorso de garfo\"</strong>. Ocorre por queda sobre a mão espalmada em dorsiflexão (extensão).</li>\n<li><strong>Fratura de Smith (Colles Invertida):</strong> Fratura da metáfise distal do rádio com <strong>desvio volar (palmar)</strong> do fragmento distal, conferindo deformidade em <strong>\"faca de jardineiro\"</strong>. Ocorre por queda sobre o dorso da mão fletida.</li>"
+        ]
+      ]
+    ],
+    [
+      "7-complicacoes-sistemicas-graves-do-trauma-ortopedico",
+      0,
+      [
+        [
+          "2",
+          "7. Complicações Sistêmicas Graves do Trauma Ortopédico"
+        ],
+        [
+          "p",
+          "O trauma musculoesquelético de alta energia não se limita à perda mecânica da função óssea, deflagrando respostas inflamatórias e trombóticas sistêmicas potencialmente fatais que exigem vigilância intensiva contínua:"
+        ],
+        [
+          "3",
+          "7.1 Síndrome da Embolia Gordurosa (SEG)"
+        ],
+        [
+          "p",
+          "<li><strong>Fisiopatologia:</strong> Ocorre caracteristicamente após <strong>fraturas de ossos longos (fêmur e tíbia)</strong> ou fraturas pélvicas instáveis cominutivas. Duas teorias complementares explicam a afecção:</li>\n  1. <em>Teoria Mecânica:</em> O trauma rompe sinusoides venosos intramedulares e o estroma gorduroso da medula óssea amarela. A elevação da pressão intramedular força a entrada de microêmbolos de gordura neutra para o interior da circulação venosa, que viajam até o leito capilar pulmonar, causando oclusão mecânica microvascular.\n  2. <em>Teoria Bioquímica:</em> A lípase pulmonar hidrolisa os triglicerídeos aprisionados nos capilares em <strong>ácidos graxos livres (AGL)</strong> altamente tóxicos. Os AGL deflagram lesão endotelial alveolar difusa, destruição do surfactante pulmonar, aumento da permeabilidade capilar e tempestade inflamatória exuberante com síndrome do desconforto respiratório agudo (SDRA). Além disso, microêmbolos de gordura com diâmetro < 7-10 micrômetros conseguem atravessar os capilares pulmonares (ou através de forame oval patente) e disseminam-se para a circulação sistêmica, impactando capilares cerebrais, dérmicos e glomerulares.\n<li><strong>Janela Temporal e Tríade Clínica Clássica (Critérios de Gurd e Wilson):</strong></li>\n<li>Ocorre tipicamente após um <strong>intervalo lúcido assintomático de 24 a 72 horas</strong> após a fratura!</li>\n<li><strong>Tríade Clássica de Apresentação:</strong></li>\n    1. <strong>Insuficiência Respiratória Aguda:</strong> Hipoxemia grave, taquipneia, dispneia e infiltrado pulmonar alveolar bilateral difuso em \"asa de borboleta\" na radiografia de tórax (quadro indistinguível de SDRA);\n    2. <strong>Disfunção Neurológica / Rebaixamento do Nível de Consciência:</strong> Confusão mental aguda, agitação psicomotora, sonolência, torpor, convulsões ou coma, sem sinais de localização focal e desproporcional ao trauma craniano inicial;\n    3. <strong>Erupção Petequial Cutânea (Patognomônica!):</strong> Presente em 30% a 50% dos casos. Petéquias que se distribuem caracteristicamente na <strong>face anterior do tórax, axilas, base do pescoço e conjuntivas bulbares</strong>, decorrentes da oclusão capilar dérmica por gordura e plaquetopenia de consumo.\n<li><strong>Tratamento e Prevenção:</strong> Não existe tratamento farmacológico específico curativo (corticoides em altas doses ou heparinização plena não demonstraram eficácia comprovada). O pilar do tratamento é o <strong>suporte intensivo de suporte orgânico</strong>: ventilação mecânica protetora com PEEP e controle hemodinâmico.</li>\n<li><em>Medida Preventiva Mais Eficaz de Todas:</em> <strong>Fixação e estabilização óssea precoce e estável das fraturas de fêmur e bacia (nas primeiras 24 horas)!</strong> A imobilização precoce do foco fraturário diminui drasticamente a liberação de novos êmbolos de gordura e reduz a tempestade inflamatória sistêmica.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "7.2 Rabdomiólise Traumática e Lesão Renal Aguda"
+        ],
+        [
+          "p",
+          "<li>Decorre de esmagamento muscular prolongado (<em>Crush Syndrome</em>), permanência no solo por horas após queda no idoso ou síndrome compartimental não tratada.</li>\n<li>Ocorre necrose de miócitos com liberação maciça de componentes intracelulares para a corrente sanguínea: <strong>Mioglobina</strong>, potássio (hipercalemia arritmogênica súbita), fósforo, ácido úrico e Creatina Fosfoquinase (CPK).</li>\n<li>A <strong>mioglobina</strong> monomérica é livremente filtrada pelo glomérulo. Em meio ao pH urinário ácido e sob desidratação, a mioglobina precipita nos túbulos coletores formando cilindros pigmentares obstrutivos (síndrome de Tamm-Horsfall) e dissocia-se em ferro livre (<em>ferrihemato</em>), que deflagra estresse oxidativo severo, vasoconstrição arteriolar renal profunda e <strong>Necrose Tubular Aguda tóxico-isquêmica</strong>.</li>\n<li><strong>Diagnóstico Laboratorial:</strong> Urina com coloração castanho-escura (\"urina em cor de refrigerante de cola\"), fita reagente de urina francamente positiva para sangue/hemoglobina com <strong>ausência de hemácias no sedimento urinário à microscopia</strong> (a mioglobina reage com a ortotolidina da fita simulando hemoglobina); elevação sérica marcante de <strong>CPK (> 5.000 a 10.000 UI/L)</strong>, hipercalemia e acidose metabólica.</li>\n<li><strong>Tratamento Mandatório:</strong> <strong>Hiper-hidratação venosa vigorosa imediata com Cristaloides Isotônicos (Solução Salina 0,9% ou Ringer)</strong> a uma taxa de 200 a 300 mL/hora, com meta estrita de <strong>débito urinário de 200 a 300 mL/hora (cerca de 2 a 3 mL/kg/h)</strong> para lavar os túbulos renais e prevenir a deposição intratubular de mioglobina. Pode-se associar bicarbonato de sódio para alcalinizar a urina (meta de pH urinário > 6,5) se não houver hipocalcemia.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "8-casos-clinicos-estruturados-e-resolvidos-de-trauma-ortopedico",
+      0,
+      [
+        [
+          "2",
+          "8. Casos Clínicos Estruturados e Resolvidos de Trauma Ortopédico"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Politraumatizado com Fratura Exposta de Tíbia e Síndrome Compartimental"
+        ],
+        [
+          "p",
+          "<li><strong>Identificação e História:</strong> Homem, 26 anos, motociclista, colidiu contra poste em alta velocidade, admitido na sala de trauma do hospital terciário trazido pelo SAMU em prancha rígida com colar cervical.</li>\n<li><strong>Avaliação Primária (XABCDE):</strong></li>\n<li>X: Sem sangramentos exsanguinantes externos volumosos no momento.</li>\n<li>A: Via aérea pérvia, responsivo, colar cervical rígido mantido.</li>\n<li>B: Tórax simétrico, murmúrio vesicular universalmente audível, SatO2 97% com máscara de O2.</li>\n<li>C: PA 110/70 mmHg, FC 102 bpm, pelve estável e indolor à compressão única, pulsos femorais amplos.</li>\n<li>D: Glasgow 15, pupilas isocóricas e fotorreagentes.</li>\n<li>E: Exposição completa: deformidade angulada evidente na perna direita com ferida de 4 cm na face anteromedial do terço médio da perna, com visualização de espícula óssea cortical desnuda e sangramento moderado ativo.</li>\n<li><strong>Exame Neurovascular Inicial do Membro:</strong></li>\n<li>Pulso pedioso e tibial posterior direitos palpáveis e cheios, perfusão periférica < 2 segundos. Sensibilidade tátil do pé preservada.</li>\n<li><strong>Classificação e Condutas Imediatas no PS:</strong></li>\n<li>Classificação da Fratura: <strong>Fratura Exposta de Tíbia Gustilo-Anderson Tipo II</strong> (ferida de 4 cm com trauma de energia moderada/alta, sem perda muscular extensa).</li>\n<li><em>Medidas Farmacológicas:</em> Cefazolina 2 g IV prescrita e infundida imediatamente na primeira hora. Reforço de vacina antitetânica (dT) administrado (última dose da infância ignorada, associada a IGHAT 250 UI IM).</li>\n<li><em>Manejo Local da Ferida:</em> Ferida lavada superficialmente com soro estéril, recoberta com compressas estéreis embebidas em soro e imobilizada com tala gessada inguino-podálica aberta. O paciente foi colocado em jejum e encaminhado para radiografias e centro cirúrgico.</li>\n<li><strong>Evolução nas Horas Seguintes no PS (Surgimento de Emergência):</strong></li>\n<li>Cerca de 3 horas após a admissão, enquanto aguardava sala cirúrgica, o paciente começou a apresentar <strong>dor insuportável e progressiva na perna direita, refratária a duas doses de 5 mg de morfina intravenosa</strong>.</li>\n<li>O médico plantonista retirou a tala gessada e realizou novo exame físico:</li>\n<li>Compartimentos musculares anterior e lateral da perna direita encontravam-se extremamente <strong>tensos, brilhantes e endurecidos à palpação (rigidez pétrea)</strong>;</li>\n<li>A <strong>dorsiflexão e a flexão plantar passiva dos dedos do pé provocavam dor lancinante e gritos do paciente (dor ao estiramento passivo positiva)</strong>;</li>\n<li>Parestesia no primeiro espaço interdigital dorsal do pé direito;</li>\n<li><strong>Pulsos pedioso e tibial posterior permaneciam PALPÁVEIS e cheios!</strong></li>\n<li><strong>Raciocínio Clínico e Ação Cirúrgica de Emergência:</strong></li>\n<li>Trata-se do desenvolvimento clássico de uma <strong>Síndrome Compartimental Aguda</strong> secundária à fratura diafisária de tíbia! A presença de pulso distal não exclui a síndrome e decorre da pressão arterial sistólica superar a pressão intracompartimental.</li>\n<li>O paciente foi levado imediatamente ao centro cirúrgico em regime de urgência absoluta:</li>\n<li>Procedimento: <strong>Fasciotomia ampla por dupla incisão descompressiva de todos os 4 compartimentos da perna direita</strong> (incisão anterolateral e posteromedial). Imediatamente após a incisão da fáscia muscular profunda, os músculos herniaram-se para fora da ferida com alívio instantâneo da tensão. Os tecidos musculares encontravam-se hiperemiados, contráteis e viáveis.</li>\n<li>Realizada lavagem exaustiva da ferida exposta com 6 litros de soro fisiológico sob baixa pressão e alinhamento da fratura com <strong>Fixador Externo Transarticular provisório</strong> (Damage Control). As incisões de fasciotomia foram mantidas abertas sob curativo com sistema a vácuo (VAC). O paciente evoluiu sem déficit neurológico motor tardio.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Luxação Posterior Traumática do Quadril"
+        ],
+        [
+          "p",
+          "<li><strong>Identificação e História:</strong> Homem, 31 anos, motorista sem cinto de segurança, colidiu o automóvel frontalmente contra barreira de concreto a 80 km/h. No impacto, seu joelho direito chocou-se violentamente contra o painel do veículo.</li>\n<li><strong>Exame Físico Focado do Quadril:</strong></li>\n<li>Paciente estável no XABCDE. Queixa-se de dor excruciante na região glútea e quadril direito, sendo incapaz de mobilizar o membro inferior direito.</li>\n<li>Posição Típica Patognomônica: O membro inferior direito encontra-se fixo em <strong>FLEXÃO, ADUÇÃO e ROTAÇÃO INTERNA</strong> com encurtamento aparente em relação ao contralateral (clássica \"posição de banhista tímido\").</li>\n<li>Exame Neurológico: Fraqueza moderada à dorsiflexão do hálux direito e discreta diminuição da sensibilidade na face lateral da perna e dorso do pé (comprometimento por estiramento mecânico agudo do <strong>nervo ciático</strong>). Pulso femoral e poplíteo normais.</li>\n<li><strong>Propedêutica Radiológica:</strong></li>\n<li>Radiografia de Bacia em incidência Anteroposterior (AP): A cabeça femoral direita encontra-se deslocada superior e lateralmente em relação ao teto do acetábulo, parecendo menor do que a cabeça contralateral devido à sua posição posterior mais distante do chassi radiográfico.</li>\n<li>Diagnóstico: <strong>Luxação Posterior Pura do Quadril Direito com neuropraxia do nervo ciático</strong>.</li>\n<li><strong>Conduta Imediata:</strong></li>\n<li>O paciente foi encaminhado imediatamente à sala de emergência/centro cirúrgico sob anestesia geral e bloqueio neuromuscular (relaxamento muscular completo é pré-requisito mandatório para vencer a potente contratura dos músculos glúteos e pelvitrocanterianos).</li>\n<li>Executada a <strong>Manobra de Allis</strong>: tração axial contínua no fêmur fletido a 90° com contra-tração pélvica estável, associada a leve adução e posterior rotação externa, ouvindo-se e sentindo-se o estalido característico (<em>clunk</em>) da cabeça reentrando na cavidade acetabular.</li>\n<li>O tempo total entre o trauma e a redução foi de <strong>2 horas e 40 minutos (dentro da janela de segurança de 6 horas)</strong>.</li>\n<li>Radiografia de controle em AP e Tomografia Computadorizada de bacia pós-redução confirmaram redução anatômica concêntrica perfeita e ausência de fragmentos ósseos ou labrais incarcerados no interior da fossa acetabular (ausência de interposição intra-articular). A função sensitivo-motora do nervo ciático recuperou-se plenamente nas 48 horas seguintes.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Idosa com Fratura do Colo Femoral Desviada (Garden IV)"
+        ],
+        [
+          "p",
+          "<li><strong>Identificação e História:</strong> Mulher, 79 anos, previamente ativa, lúcida e independente para atividades instrumentais de vida diária, portadora de osteoporose e hipertensão, sofreu queda da própria altura da cama em seu domicílio, batendo a região trocanteriana direita no chão. Não conseguiu se levantar por dor intensa no quadril direito.</li>\n<li><strong>Exame Físico Ortopédico:</strong></li>\n<li>Membro inferior direito repousa em atitude viciosa de <strong>ENCURTAMENTO e ROTAÇÃO EXTERNA marcante</strong> (a borda lateral do pé direito encosta na maca).</li>\n<li>Incapacidade funcional absoluta para elevar ativamente a perna estendida do plano do leito.</li>\n<li>Ausência de equimose importante na coxa nas primeiras horas (sangramento restrito à cápsula articular). Pulsos e perfusão periférica preservados.</li>\n<li><strong>Avaliação Radiológica:</strong></li>\n<li>Radiografia de Bacia AP e Quadril Direito em perfil axial (raio cruzado): Fratura completa da porção média do colo femoral direito com desvio angular e translacional total e descontinuidade completa de todas as trabéculas ósseas compressivas e tênseis (<strong>Fratura do Colo Femoral Desviada - Garden Tipo IV / AO 31-B3</strong>).</li>\n<li><strong>Raciocínio Clínico e Planejamento Cirúrgico:</strong></li>\n<li>Trata-se de fratura intracapsular desviada no idoso. Em fraturas Garden III e IV em idosos, o risco de necrose avascular da cabeça femoral por lesão dos vasos retinaculares ultrapassa 35% a 50%, e a taxa de pseudartrose com osteossíntese ultrapassa 30%.</li>\n<li>Tentar fixar a fratura com parafusos canulados ou haste nessa idade cursa com alta taxa de falha de fixação por osso osteoporótico e necessidade de reoperação precoce.</li>\n<li>Por outro lado, como a paciente é idosa previamente ativa, lúcida e deambula na comunidade, a indicação padrão-ouro internacional é a <strong>ARTROPLASTIA TOTAL DE QUADRIL</strong> (com componente cotiloide e haste femoral) ou Artroplastia Parcial Bipolar em pacientes frágeis.</li>\n<li>A cirurgia foi realizada em 24 horas após compensação clínica, permitindo que a paciente deambulasse com andador com carga total já no primeiro dia de pós-operatório, recebendo alta hospitalar em 48 horas e prevenindo as complicações letais da imobilidade no leito.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Síndrome da Embolia Gordurosa Pós-Fratura Diafisária de Fêmur"
+        ],
+        [
+          "p",
+          "<li><strong>Identificação e História:</strong> Homem, 22 anos, vítima de atropelamento, admitido com fratura fechada cominutiva de diáfise femoral direita e fratura de rádio esquerdo. Inicialmente estável no PS, foi colocado em tração esquelética transtibial aguardando leito cirúrgico.</li>\n<li><strong>Evolução nas 48 Horas Seguintes:</strong></li>\n<li>Cerca de 36 horas após o trauma, o paciente desenvolve subitamente agitação psicomotora, confusão mental desorientada, seguida por sonolência e taquipneia progressiva (FR 32 irpm).</li>\n<li>Sinais Vitais: PA 100/60 mmHg, FC 128 bpm, SatO2 84% em ar ambiente. A gasometria arterial demonstra hipoxemia severa (PaO2 52 mmHg, relação PaO2/FiO2 de 180).</li>\n<li>Exame Físico: Paciente torporoso, sudoreico. À ectoscopia detalhada sob iluminação adequada, observa-se o aparecimento recente de <strong>múltiplas petéquias pontiformes avermelhadas agrupadas nas regiões axilares bilaterais, base anterior do pescoço e conjuntiva palpebral inferior</strong>.</li>\n<li>Exames Laboratoriais: Queda súbita da contagem plaquetária de 280.000 para 75.000/mm³ (plaquetopenia de consumo); hemoglobina caiu 3 g/dL sem novo sangramento evidente.</li>\n<li>Radiografia de Tórax no Leito: Infiltrado intersticial e alveolar bilateral difuso em \"tempestade de neve\" / padrão em asas de borboleta.</li>\n<li><strong>Diagnóstico e Manejo:</strong></li>\n<li>Diagnóstico: <strong>Síndrome da Embolia Gordurosa (SEG)</strong> clássica preenchendo todos os critérios maiores de Gurd (hipoxemia grave, disfunção do SNC e rash petequial axilar/conjuntival característico).</li>\n<li>Conduta: Transferência imediata para UTI, intubação orotraqueal e ventilação mecânica protetora com baixos volumes correntes (6 mL/kg) e PEEP titulada. Não há indicação de corticoterapia tardia.</li>\n<li>Tão logo o paciente estabilizou parâmetros de oxigenação em 24 horas, foi submetido à <strong>fixação intramedular definitiva do fêmur direito</strong>, cessando a liberação de novos microêmbolos e mediadores inflamatórios. O paciente evoluiu com desmame ventilatório bem-sucedido no 6º dia de internação.</li>"
+        ]
+      ]
+    ],
+    [
+      "9-questoes-de-residencia-medica-comentadas-na-integra",
+      0,
+      [
+        [
+          "2",
+          "9. Questões de Residência Médica Comentadas na Íntegra"
+        ],
+        [
+          "3",
+          "Questão 1 (USP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Homem de 24 anos, vítima de acidente de trânsito moto versus anteparo fixo, dá entrada na sala de emergência imobilizado em prancha longa e colar cervical. Apresenta dor intensa e deformidade na perna esquerda. Avaliação primária (ABCDE) sem alterações de vias aéreas, respiração ou circulação. Ao exame da extremidade acometida, nota-se fratura de diáfise de tíbia esquerda associada a ferimento puntiforme de 0,8 cm na face anterior da perna, com discreto sangramento venoso e sem protrusão de fragmentos ósseos. Não há perda de substância cutânea ou contaminação grosseira visível. Pulsos distais e sensibilidade preservados.\nDe acordo com a classificação de Gustilo-Anderson e as diretrizes de trauma ortopédico, qual é a classificação correta e a conduta antimicrobiana inicial recomendada?\n<li>A) Grau II; iniciar ampicilina com sulbactam por 7 dias.</li>\n<li>B) Grau I; iniciar cefazolina intravenosa precocemente na primeira hora.</li>\n<li>C) Grau III-A; iniciar ceftriaxona associada a gentamicina imediatamente.</li>\n<li>D) Grau I; não há necessidade de antibioticoterapia profilática para feridas menores que 1 cm.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong><br><li><strong>Comentário Detalhado:</strong> A classificação de Gustilo-Anderson estratifica as fraturas expostas com base no mecanismo de energia, tamanho da ferida, dano às partes moles e contaminação. O <strong>Grau I de Gustilo</strong> é definido por ferida cutânea <strong>menor que 1 cm de extensão</strong>, resultante habitualmente de mecanismo de baixa energia onde a ponta óssea perfura a pele \"de dentro para fora\", com mínima contaminação e sem lesão muscular extensa. Para as fraturas expostas Grau I e II, o protocolo de antibioticoprofilaxia de escolha estabelecido pela SBOT, AO e diretrizes internacionais da EAST consiste na administração intravenosa precoce (na primeira hora de admissão) de uma cefalosporina de 1ª geração com excelente espectro antiestafilocócico, sendo a <strong>Cefazolina (2 g IV)</strong> a droga padrão-ouro, mantida por 24 horas.</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>A alternativa A erra a classificação (Grau II exige ferida entre 1 e 10 cm) e o antimicrobiano empírico.</li><br><li>A alternativa C superestima a lesão como Grau III-A (reservado para alta energia ou feridas > 10 cm).</li><br><li>A alternativa D é um erro perigoso: <strong>TODA fratura exposta, independentemente de quão pequena seja a ferida cutânea (mesmo < 1 cm), exige antibioticoterapia profilática imediata!</strong> A taxa de infecção sem antibiótico atinge até 15-20%, caindo para menos de 2% com profilaxia adequada.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 2 (ENAMED / Cirurgia Geral)"
+        ],
+        [
+          "p",
+          "Mulher de 32 anos foi vítima de atropelamento por automóvel há 12 horas, sofrendo fratura fechada de diáfise de tíbia e fíbula direitas. Foi imobilizada no hospital de origem com aparelho gessado circular suropodálico e transferida para hospital terciário. Na admissão, queixa-se de dor insuportável na perna direita, que se agravou progressivamente e não melhorou após administração de duas ampolas de tramadol e 5 mg de morfina. Ao exame físico: paciente sudoreica e taquicárdica; a perna direita encontra-se extremamente edemaciada e endurecida; a dorsiflexão passiva do hálux e dos dedos do pé provoca dor lancinante intolerável. Os pulsos pedioso e tibial posterior estão cheios e simétricos em relação ao membro contralateral.\nQual é o diagnóstico mais provável e a conduta de emergência a ser adotada?\n<li>A) Trombose venosa profunda aguda; solicitar ultrassom Doppler vascular e iniciar anticoagulação plena com enoxaparina.</li>\n<li>B) Síndrome compartimental aguda; abrir e retirar imediatamente o aparelho gessado e realizar fasciotomia descompressiva de urgência dos 4 compartimentos da perna.</li>\n<li>C) Isquemia arterial aguda por espasmo; prescrever vasodilatador intravenoso e elevar a perna em 45 graus.</li>\n<li>D) Síndrome dolorosa complexa regional; indicar bloqueio simpático com bupivacaína.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong><br><li><strong>Comentário Detalhado:</strong> O quadro clínico é a descrição clássica e inconfundível de uma <strong>Síndrome Compartimental Aguda (SCA)</strong>: dor desproporcional à lesão, refratária a doses elevadas de opioides, associada à dor excruciante ao <strong>estiramento passivo da musculatura do compartimento</strong>. A <strong>fratura de tíbia</strong> é a principal causa óssea de síndrome compartimental. A clássica \"pegadinha\" da presença de pulsos periféricos normais deve ser imediatamente reconhecida: a pressão intracompartimental necessária para interromper a microcirculação capilar (30 a 40 mmHg) é bem inferior à pressão arterial sistólica sistêmica, mantendo os pulsos arteriais axiais perfeitamente palpáveis. A conduta imediata consiste na <strong>abertura e remoção imediata de qualquer gesso ou atadura constritiva</strong> e no encaminhamento urgente ao centro cirúrgico para <strong>FASCIOTOMIA DESCOMPRESSIVA AMPLA DE TODOS OS QUATRO COMPARTIMENTOS DA PERNA</strong> (dupla incisão: anterolateral e posteromedial).</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>A alternativa A confunde SCA com TVP; adiar a cirurgia para solicitar Doppler e anticoagular um paciente com SCA levaria à necrose muscular e hemorragia.</li><br><li>A alternativa C é desastrosa: elevar a perna acima do nível cardíaco reduz a pressão de perfusão arteriolar e acelera a necrose muscular.</li><br><li>A alternativa D confunde uma afecção crônica neuropática com uma catástrofe isquêmica aguda de horas de evolução.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 3 (UNICAMP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Homem de 28 anos é admitido após colisão de trânsito em alta velocidade. No impacto, o joelho colidiu contra o painel do carro. Ao exame físico, o membro inferior direito encontra-se fixo na atitude de flexão, adução e rotação interna, com encurtamento evidente em relação ao lado contralateral. Não há feridas cutâneas. O exame neurológico revela diminuição da sensibilidade no dorso do pé e fraqueza na extensão do hálux ipsilateral.\nEm relação a este caso clínico, assinale a opção CORRETA:\n<li>A) O quadro corresponde a luxação anterior do quadril e o nervo mais frequentemente lesado é o femoral.</li>\n<li>B) O paciente apresenta luxação posterior do quadril; a redução incruenta deve ser tentada em até 6 horas para diminuir o risco de necrose avascular da cabeça femoral.</li>\n<li>C) O paciente apresenta fratura do colo femoral Garden I e deve ser tratado com imobilização gessada e marcha precoce.</li>\n<li>D) A atitude descrita é patognomônica de fratura transtrocanteriana e o tratamento de escolha é a prótese parcial de quadril.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong><br><li><strong>Comentário Detalhado:</strong> A tríade postural clássica de <strong>flexão, adução e rotação interna</strong> do membro inferior (\"posição de banhista tímido\"), associada ao mecanismo do painel de automóvel (<em>dashboard injury</em>), é patognomônica de <strong>Luxação Posterior do Quadril</strong>. O nervo ciático corre diretamente atrás do acetábulo e da cabeça femoral, sofrendo compressão ou estiramento mecânico em até 10% a 20% das luxações posteriores, manifestando-se por déficit sensitivo-motor no território do nervo fibular (dorso do pé e dorsiflexão). <strong>A redução articular é uma emergência ortopédica e deve ser realizada idealmente em MENOS DE 6 HORAS!</strong> Atrasos além de 6 horas interrompem a perfusão da cabeça femoral pelos ramos retinaculares da artéria circunflexa medial, elevando vertiginosamente a incidência de <strong>necrose avascular da cabeça femoral (osteonecrose)</strong> de 5% para mais de 50%.</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>A alternativa A erra a direção da luxação: a luxação anterior do quadril cursa com o membro em abdução e rotação externa.</li><br><li>As alternativas C e D erram grosseiramente o diagnóstico: fraturas de fêmur proximal (colo ou transtrocanterianas) cursam com encurtamento e <strong>rotação EXTERNA</strong> acentuada do membro.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 4 (SURCE / Residência Médica)"
+        ],
+        [
+          "p",
+          "Uma criança de 8 anos sofreu queda de brinquedo no parque da escola, apoiando a mão em hiperextensão. Apresenta dor intensa e edema importante na região metafisária distal do rádio esquerdo. A radiografia simples do punho evidencia uma linha de fratura que percorre transversalmente a cartilagem de crescimento (fise) e desvia-se para a metáfise, destacando um pequeno fragmento ósseo triangular metafisário. A epífise e a superfície articular radiocárpica encontram-se completamente poupadas e íntegras.\nDe acordo com a classificação de Salter-Harris, qual é o tipo da fratura e o respectivo epônimo do sinal radiológico descrito?\n<li>A) Salter-Harris Tipo I; sinal de Crescent.</li>\n<li>B) Salter-Harris Tipo II; sinal de Thurston-Holland.</li>\n<li>C) Salter-Harris Tipo III; lesão de Bankart.</li>\n<li>D) Salter-Harris Tipo IV; fratura de Monteggia.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong><br><li><strong>Comentário Detalhado:</strong> A classificação de Salter-Harris estratifica as fraturas fiseais pediátricas. O <strong>Tipo II de Salter-Harris</strong> é o padrão mais comum em toda a traumatologia pediátrica (respondendo por cerca de 75% dos casos). Caracteriza-se por um traço de fratura que corre pela placa cartilaginosa de crescimento e desvia-se para a metáfise óssea, separando um fragmento ósseo metafisário triangular patognomônico conhecido internacionalmente pelo epônimo de <strong>Sinal de Thurston-Holland</strong>. Como o traço poupa as camadas germinativas epifisárias e não invade o espaço articular, o prognóstico de crescimento longitudinal ósseo geralmente é excelente após redução anatômica incruenta e gesso.</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>A alternativa A está incorreta: o Tipo I de Salter-Harris envolve apenas separação fiseal pura, sem nenhum fragmento ósseo metafisário destacado.</li><br><li>A alternativa C está incorreta: o Tipo III envolve a fise e cruza a epífise intra-articular.</li><br><li>A alternativa D está incorreta: o Tipo IV cruza verticalmente todas as camadas (metáfise, fise e epífise articular).</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 5 (UNESP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Homem de 21 anos, vítima de atropelamento, deu entrada com fratura diafisária fechada e cominutiva de fêmur esquerdo. Devido à indisponibilidade de leito de centro cirúrgico nas primeiras 24 horas, o paciente foi mantido em tração esquelética no leito da enfermaria. Cerca de 40 horas após a admissão, o paciente evolui subitamente com agitação psicomotora, desorientação temporal e sonolência, associada a taquipneia progressiva (FR 34 irpm) e hipoxemia severa (SatO2 83% em ar ambiente). Ao exame clínico detalhado, observam-se petéquias na face anterior do tórax, regiões axilares bilaterais e conjuntivas palpebrais. O hemograma revela queda inexplicada de plaquetas de 240.000 para 65.000/mm³.\nQual é o diagnóstico sindrômico e a principal medida preventiva reconhecida na literatura?\n<li>A) Tromboembolismo pulmonar maciço; profilaxia com meias elásticas de compressão.</li>\n<li>B) Síndrome da embolia gordurosa; fixação e estabilização cirúrgica precoce da fratura de fêmur nas primeiras 24 horas.</li>\n<li>C) Choque cardiogênico por contusão miocárdica; monitorização com cateter de artéria pulmonar.</li>\n<li>D) Pneumonia associada a broncoaspiração; cabeceira elevada a 45 graus.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong><br><li><strong>Comentário Detalhado:</strong> O caso reúne a clássica <strong>tríade patognomônica da Síndrome da Embolia Gordurosa (SEG)</strong>, preenchendo com rigor os critérios clínicos maiores de Gurd e Wilson: <strong>insuficiência respiratória aguda hipoxêmica</strong>, <strong>alteração do estado mental neurológico</strong> e o clássico <strong>rash petequial cutâneo axilar e conjuntival</strong>, surgindo tipicamente após um intervalo lúcido assintomático de 24 a 72 horas pós-fratura de osso longo (fêmur). A plaquetopenia decorre do sequestro de plaquetas nos microêmbolos de gordura circulantes. A literatura ortopédica e de terapia intensiva mundial consagrou que a <strong>fixação óssea e estabilização cirúrgica precoce das fraturas de ossos longos (nas primeiras 24 horas)</strong> é a medida preventiva mais importante e eficaz para reduzir a incidência e mortalidade da embolia gordurosa.</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>A alternativa A está incorreta: o TEP isolado não causa a erupção petequial característica na axila e pescoço, que é marca registrada da embolia gordurosa por oclusão de capilares dérmicos.</li><br><li>As alternativas C e D não explicam o quadro multissistêmico completo nem o rash petequial típico.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 6 (USP-RP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Idosa de 82 anos, hipertensa e com declínio cognitivo leve, sofreu queda da própria altura e foi admitida no pronto-socorro com dor no quadril esquerdo e incapacidade funcional para deambular. A radiografia de bacia evidenciou fratura transtrocanteriana cominutiva instável do fêmur proximal esquerdo (AO 31-A2).\nEm relação a este tipo de fratura em comparação com as fraturas do colo femoral, assinale a afirmativa CORRETA:\n<li>A) As fraturas transtrocanterianas são intracapsulares e apresentam elevado risco de necrose avascular da cabeça femoral, sendo tratadas rotineiramente com artroplastia total.</li>\n<li>B) As fraturas transtrocanterianas são extracapsulares, ocorrem em osso esponjoso amplamente vascularizado com excelente potencial de consolidação, sendo o tratamento de escolha a osteossíntese interna (como haste cefalomedular ou placa DHS).</li>\n<li>C) O tratamento conservador com gesso pelvipodálico por 12 semanas é a conduta padrão ouro em idosos acima de 80 anos para evitar riscos anestésicos.</li>\n<li>D) Por serem lesões de baixa energia, não há sangramento relevante no foco fraturário e a deambulação deve ser desencorajada nos primeiros 3 meses.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong><br><li><strong>Comentário Detalhado:</strong> As fraturas da região trocanteriana (entre o grande e o pequeno trocanter) são <strong>extracapsulares</strong>. Ao contrário do colo femoral (que é intracapsular e cuja vascularização arterial retinacular é rompida na fratura), a região trocanteriana é formada por osso esponjoso trabecular ricamente vascularizado por múltiplos vasos periosteais e musculares. Por essa razão, a necrose avascular da cabeça femoral é extremamente rara e o <strong>potencial biológico de consolidação óssea é excelente</strong>. Portanto, o tratamento de escolha na imensa maioria dos casos NÃO é a substituição protética (artroplastia), mas sim a <strong>osteossíntese com fixação interna</strong>, utilizando-se preferencialmente implantes intramedulares como a <strong>Haste Cefalomedular (PFN - Proximal Femoral Nail)</strong> ou sistemas extramedulares como a Placa Parafuso Deslizante de Quadril (<strong>DHS - Dynamic Hip Screw</strong>).</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>A alternativa A inverte a anatomia: a fratura do colo femoral é a intracapsular com alto risco de necrose que exige artroplastia no idoso.</li><br><li>A alternativa C é um erro fatal: o tratamento conservador em idosos com imobilização prolongada no leito causa pneumonia, tromboembolismo e escaras, cursando com mortalidade superior a 60-80% em 1 ano.</li><br><li>A alternativa D está errada: o sangramento na região trocanteriana é significativo (500 a 1.000 mL) e a meta cirúrgica é justamente permitir apoio e deambulação o mais rápido possível (1º a 2º dia pós-operatório).</li>"
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "10-tabela-comparativa-resumida-e-perolas-de-alta-performance",
+      0,
+      [
+        [
+          "2",
+          "10. Tabela Comparativa Resumida e Pérolas de Alta Performance"
+        ],
+        [
+          "t",
+          [
+            "Condição Ortopédica",
+            "Mecanismo e Fisiopatologia",
+            "Sinais Semiológicos Patognomônicos",
+            "Conduta Crítica Imediata"
+          ],
+          [
+            [
+              "<strong>Fratura Exposta (Gustilo)</strong>",
+              "Comunicação óssea com o meio externo; risco de osteomielite",
+              "Exposição óssea, sangramento externo, contaminação",
+              "<strong>Antibiótico na 1ª hora</strong> (Cefazolina +/- Aminoglicosídeo) + Lavagem e estabilização"
+            ],
+            [
+              "<strong>Síndrome Compartimental</strong>",
+              "Elevação da pressão em espaço osteofascial; $\\Delta P \\le 30\\text{ mmHg}$",
+              "<strong>Dor desproporcional</strong>, <strong>dor ao estiramento passivo</strong>, pulso presente",
+              "<strong>Abrir gesso imediatamente</strong> + <strong>Fasciotomia ampla dos 4 compartimentos</strong>"
+            ],
+            [
+              "<strong>Luxação Posterior de Quadril</strong>",
+              "Trauma de alta energia no painel do carro (<em>dashboard</em>)",
+              "<strong>Flexão, adução e rotação interna</strong> (\"banhista tímido\"); risco ciático",
+              "<strong>Redução incruenta de urgência (< 6h)</strong> para prevenir osteonecrose de cabeça"
+            ],
+            [
+              "<strong>Luxação Anterior de Ombro</strong>",
+              "Abdução forçada e rotação externa",
+              "<strong>Sinal da Dragona</strong>, vazio subacromial; lesão do nervo axilar",
+              "Redução incruenta com analgesia (Milch, Allis ou Stimson)"
+            ],
+            [
+              "<strong>Luxação do Joelho</strong>",
+              "Ruptura de $\\ge 3$ ligamentos maiores do joelho",
+              "Joelho instável, deformidade grosseira ou redução prévia espontânea",
+              "<strong>Avaliação vascular obrigatória (ITB)</strong>; risco de rotura da artéria poplítea"
+            ],
+            [
+              "<strong>Embolia Gordurosa (SEG)</strong>",
+              "Fratura de ossos longos (fêmur); 24 a 72h de intervalo lúcido",
+              "<strong>Hipoxemia grave (SDRA)</strong>, confusão mental, <strong>rash petequial axilar</strong>",
+              "Suporte intensivo ventilatório + <strong>Fixação precoce da fratura (< 24h)</strong>"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Pérolas de Alta Performance (High-Yield Pearls):"
+        ],
+        [
+          "p",
+          "1. <strong>Fratura exposta NÃO se lava com antisséptico no centro cirúrgico:</strong> Lavagem com Soro Fisiológico 0,9% puro sob baixa pressão (FLOW Trial). Antibiótico na primeira hora é mandatório.\n2. <strong>Síndrome Compartimental NÃO espera o pulso sumir:</strong> O pulso distal persiste palpável porque a PAS é de 120 mmHg e a pressão no compartimento é de 35 mmHg. O sinal mais sensível é dor ao estiramento passivo.\n3. <strong>Luxação do Quadril:</strong> Janela de 6 horas para reduzir! Cada hora de atraso destrói a microcirculação da cabeça femoral e gera artrose precoce.\n4. <strong>Idoso com fratura do colo femoral desviada (Garden III/IV):</strong> Tratamento = <strong>Artroplastia (prótese de quadril)</strong>. Se for transtrocanteriana = <strong>Fixação interna com haste cefalomedular</strong>.\n5. <strong>Luxação do joelho:</strong> Sempre suspeitar de lesão da <strong>artéria poplítea</strong>, mesmo se o joelho já tiver reduzido espontaneamente na cena do trauma. Medir o ITB!"
+        ]
+      ]
+    ]
+  ]
+}

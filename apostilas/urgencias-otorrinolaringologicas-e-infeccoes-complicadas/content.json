@@ -1,0 +1,1361 @@
+{
+  "v": 2,
+  "s": "urgencias-otorrinolaringologicas-e-infeccoes-complicadas",
+  "t": "Urgências Otorrinolaringológicas e Infecções Complicadas",
+  "p": "Urgências Otorrinolaringológicas e Infecções Complicadas — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance em Emergências Cervicais, Infecções Profundas, Via Aérea Difícil e Hemorragias Faciais",
+  "a": "Cirurgia Geral",
+  "m": "Cirurgia Geral",
+  "h": [
+    "Apostila LURIA",
+    "Urgências Otorrinolaringológicas e Infecções Complicadas",
+    "Tratado de Alta Performance em Emergências Cervicais, Infecções Profundas, Via Aérea Difícil e Hemorragias Faciais",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Cirurgia Geral",
+      "Tema: Urgências Otorrinolaringológicas e Infecções Complicadas"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "epidemiologia-e-fisiopatologia-das-urgencias-orl",
+      "1. Epidemiologia, Anatomia Topográfica e Fisiopatologia das Urgências Otorrinolaringológicas"
+    ],
+    [
+      "classificacao-e-criterios-diagnosticos-das-emergencias-orl",
+      "2. Classificação, Critérios Diagnósticos e Estratificação de Risco"
+    ],
+    [
+      "apresentacao-clinica-e-semiologia-minuciosa",
+      "3. Apresentação Clínica e Semiologia Minuciosa"
+    ],
+    [
+      "diagnostico-diferencial-nas-emergencias-orl",
+      "4. Diagnóstico Diferencial Estruturado e Armadilhas Diagnósticas"
+    ],
+    [
+      "investigacao-propedeutica-e-exames-complementares",
+      "5. Investigação Propedêutica Laboratorial e Imaginológica"
+    ],
+    [
+      "abordagem-terapeutica-farmacologica-e-cirurgica",
+      "6. Abordagem Terapêutica Integrada: Manejo da Via Aérea, Farmacoterapia e Cirurgia"
+    ],
+    [
+      "complicacoes-graves-e-manejo-em-uti",
+      "7. Complicações Sistêmicas Graves e Manejo do Paciente Crítico"
+    ],
+    [
+      "populacoes-especiais-e-cenarios-desafiadores",
+      "8. Particularidades em Populações Especiais e Cenários Desafiadores"
+    ],
+    [
+      "protocolos-clinicos-e-fluxogramas-decisorios",
+      "9. Protocolos Clínicos e Fluxogramas Decisórios"
+    ],
+    [
+      "casos-clinicos-estruturados-e-resolvidos",
+      "10. Casos Clínicos Estruturados e Resolvidos com Raciocínio Clínico Completo"
+    ],
+    [
+      "questoes-de-concurso-e-residencia-comentadas",
+      "11. Questões de Concurso e Residência Médica Comentadas na Íntegra"
+    ],
+    [
+      "tabela-resumo-e-high-yield-exam-pearls",
+      "12. Tabela Resumo e High-Yield Exam Pearls"
+    ]
+  ],
+  "q": [
+    [
+      "epidemiologia-e-fisiopatologia-das-urgencias-orl",
+      0,
+      [
+        [
+          "2",
+          "1. Epidemiologia, Anatomia Topográfica e Fisiopatologia das Urgências Otorrinolaringológicas"
+        ],
+        [
+          "3",
+          "Introdução e Panorama Epidemiológico"
+        ],
+        [
+          "p",
+          "As afecções agudas de cabeça e pescoço e as urgências otorrinolaringológicas representam uma das principais causas de procura aos serviços de pronto atendimento e emergência cirúrgica em todo o mundo, respondendo por aproximadamente 8% a 12% de todos os atendimentos gerais não traumáticos e por uma parcela substancial de intervenções de via aérea emergencial. No contexto brasileiro, o Sistema Único de Saúde (SUS) e os hospitais de média e alta complexidade enfrentam uma sobrecarga contínua por complicações graves decorrentes de afecções comuns da via aerodigestiva superior, tais como faringoamigdalites bacterianas subtratadas, infecções odontogênicas periapicais negligenciadas, corpos estranhos aerodigestivos em extremos de idade e epistaxes volumosas em pacientes hipertensos e idosos com fragilidade vascular."
+        ],
+        [
+          "p",
+          "A gravidade intrínseca dessas patologias decorre diretamente da extrema densidade anátomo-funcional da região cervical e facial. Em um espaço volumétrico rígido e restrito, circundado por fáscias inextensíveis, coexistem vasos axiais calibrosos vitais (artérias carótidas comum, interna e externa, bem como veias jugulares internas), eixos nervosos somáticos e autonômicos cruciais (nervos cranianos IX, X, XI, XII, troncos simpáticos cervicais e plexo braquial), o segmento proximal do trato digestivo (faringe e esôfago cervical) e o conduto primordial de ventilação mecânica pulmonar (laringe, epiglote, cartilagens cricoide e tireoide e traqueia). Qualquer processo expansivo inflamatório, infeccioso, hemorrágico ou infiltrativo pode converter-se, em questão de minutos a poucas horas, em obstrução respiratória asfíxica catastrófica, hemorragia exsanguinante por rotura vascular ou disseminação infecciosa descendente fulminante para o mediastino posterior e cavidades pleurais."
+        ],
+        [
+          "3",
+          "Anatomia Fascial do Pescoço e Espaços Cervicais Profundos"
+        ],
+        [
+          "p",
+          "A compreensão tridimensional e topográfica das fáscias cervicais é o alicerce fundamental para antecipar a propagação das infecções profundas do pescoço, da angina de Ludwig e da mediastinite necrotizante descendente. A fáscia cervical divide-se classicamente em:"
+        ],
+        [
+          "t",
+          [
+            "Camada Fascial",
+            "Limites Anatômicos e Inserções Ósseas",
+            "Conteúdo Anatômico Envolvido",
+            "Relevância Clínica e Vias de Propagação Infecciosa"
+          ],
+          [
+            [
+              "<strong>Fáscia Cervical Superficial</strong>",
+              "Camada fibroareolar subcutânea que se estende do bordo mandibular e base do crânio superiormente até a clavícula e esterno inferiormente. Abriga em seu folheto o músculo platisma.",
+              "Músculo platisma, veias jugulares superficiais (anterior e externa), ramos dos nervos sensitivos do plexo cervical superficial e tecido adiposo subcutâneo.",
+              "Barreira externa flexível; não delimita nem confina o pus de abscessos profundos, mas reflete edema, eritema e empastamento cutâneo nos estágios avançados."
+            ],
+            [
+              "<strong>Fáscia Cervical Profunda - Lâmina Superficial (Envoltória)</strong>",
+              "Insere-se superiormente na mandíbula, zigoma, processo mastóideo e linha nucal; inferiormente na clavícula, acrômio e esterno. Desdobra-se para englobar músculos e vísceras glandulares.",
+              "Envolve os músculos esternocleidomastoideo (ECM) e trapézio, além das glândulas salivares submandibular e parótida.",
+              "Forma um envelope inextensível. Processos infecciosos e hematomas retidos sob esta lâmina geram alta pressão tecidual interna, desviando estruturas nobres e promovendo compressão laringotraqueal precoce."
+            ],
+            [
+              "<strong>Fáscia Cervical Profunda - Lâmina Média (Pré-traqueal / Visceral)</strong>",
+              "Subdivide-se em porção muscular (envolve os músculos infra-hióideos) e porção visceral (circunda a tireoide, paratireoides, laringe, traqueia, hipofaringe e esôfago cervical). Estende-se do hioide e cartilagem tireoide até a cavidade pericárdica no mediastino médio.",
+              "Glândula tireoide, paratireoides, laringe, traqueia, esôfago cervical e fáscia bucofaríngea.",
+              "Constitui via anatômica expressa de continuidade com o mediastino anterior e médio. Infecções pré-traqueais descem ao longo dos eixos viscerais e alcançam o pericárdio parietal e a adventícia dos grandes vasos da base."
+            ],
+            [
+              "<strong>Fáscia Cervical Profunda - Lâmina Profunda (Pré-vertebral e Alar)</strong>",
+              "Apresenta duas subcamadas separadas por tecido areolar laxo: a <strong>Lâmina Alar</strong> anterior (estende-se da base do crânio até fundir-se com a fáscia visceral/pré-traqueal ao nível de T1-T2) e a <strong>Lâmina Pré-vertebral</strong> posterior (adere rigidamente à face anterior dos corpos vertebrais e estende-se longitudinalmente até o cóccix).",
+              "Corpos vertebrais cervicais, músculos pré-vertebrais (longo do pescoço e longo da cabeça), troncos nervosos do plexo braquial e artérias vertebrais.",
+              "Entre a fáscia bucofaríngea (visceral) e a fáscia alar localiza-se o <em>Espaço Retrofaríngeo</em>. Imediatamente dorsal à fáscia alar e ventral à lâmina pré-vertebral encontra-se o temido <strong>Danger Space (Espaço Perigoso / Espaço 4)</strong>, que desce ininterruptamente até o diafragma posterior (T11-T12)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Fisiopatologia dos Espaços Cervicais Específicos e Rotas de Disseminação"
+        ],
+        [
+          "p",
+          "Os espaços cervicais profundos são lojas virtuais preenchidas por tecido areolar que, quando infectadas ou preenchidas por ar extravasado de perfurações esofágicas ou laringotraqueais, tornam-se cavidades purulentas sob tensão. As rotas anatômicas obedecem rigorosamente à gravidade, às linhas de menor resistência tecidual e ao gradiente aspirativo gerado pela pressão intratorácica negativa durante a inspiração:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Espaço Submandibular e Sublingual (Complexo de Ludwig):</strong> O músculo milo-hióideo funciona como septo oblíquo no soalho da boca. O espaço submandibular (inferior ao milo-hióideo) comunica-se em ferradura posteriormente à borda livre do músculo com o espaço sublingual (superior ao milo-hióideo). As raízes dos segundos e terceiros molares inferiores projetam-se anatomicamente abaixo da linha de inserção do milo-hióideo na mandíbula. Por esse motivo, infecções periapicais molares penetram diretamente no espaço submandibular e contornam para o espaço sublingual, elevando e protruindo a língua contra o palato duro, ocluindo a orofaringe em questão de horas;",
+            "<strong>Espaço Parafaríngeo (Faringomaxilar / Látero-faríngeo):</strong> Pirâmide invertida cujo ápice repousa no grande corno do osso hioide e cuja base apoia-se na base do crânio. É delimitado medialmente pela fáscia periamigdalina e músculo constritor superior da faringe, lateralmente pelo músculo pterigoideo medial e parótida, e posteriormente pela fáscia pré-vertebral. O processo estiloide e a fáscia estilofaringea dividem esse espaço em dois compartimentos:\n    <ul>\n      <li><em>Compartimento Pré-estiloide:</em> Contém gordura, linfonodos regionais e ramos do nervo alveolar inferior e lingual. Não contém grandes vasos. Sua supuração abaúla a parede lateral da orofaringe e desloca a loja amigdalina medialmente;",
+            "<em>Compartimento Pós-estiloide (Neurovascular):</em> Espaço carotídeo verdadeiro, contendo a artéria carótida interna, veia jugular interna, troncos da cadeia simpática cervical e nervos cranianos IX (glossofaringeo), X (vago), XI (acessório) e XII (hipoglosso). A supuração local pode provocar tromboflebite séptica da veia jugular interna (Síndrome de Lemierre com êmbolos sépticos pulmonares), erosão e rotura carotídea cataclísmica ou paralisias de nervos cranianos baixos (síndrome de Collet-Sicard ou síndrome de Vernet)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Espaço Retrofaríngeo e o \"Danger Space\":</strong> O espaço retrofaríngeo propriamente dito é limitado anteriormente pela fáscia bucofaríngea e posteriormente pela lâmina alar da fáscia profunda. Contém os nódulos linfáticos retrofaríngeos de Gilette, que recebem linfa da rinofaringe, tuba auditiva, seios paranasais e tonsilas. Esses nódulos sofrem involução fisiológica e atrofia progressiva a partir dos 4 a 6 anos de vida; dessa forma, abscessos retrofaríngeos puramente linfonodais são afecções infantis típicas. No adulto, os abscessos retrofaríngeos decorrem quase invariavelmente de trauma penetrante por espinha de peixe, ossos de ave, instrumentação endoscópica digestiva agressiva ou intubação orotraqueal difícil traumática. Se a fáscia alar se romper ou for perfurada, a infecção invade o <em>Danger Space</em>, ganhando livre acesso ao mediastino posterior ao nível do hiato diafragmático, gerando mediastinite fulminante com mortalidade superior a 40%;</li>\n  <li><strong>Espaço Periamigdalino (Peritonsilar):</strong> Loja virtual entre a cápsula fibrosa da amígdala palatina e as fibras do músculo constritor superior da faringe. É a infecção cervical profunda mais incidente no adulto jovem (20 a 40 anos). Origina-se habitualmente por complicação de tonsilite bacteriana aguda ou por bloqueio e supuração das glândulas salivares menores de Weber na cripta superior da amígdala. A progressão lateral sem drenagem ultrapassa as fibras musculares e penetra no espaço parafaríngeo.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "Microbiologia e Mecanismos Patogênicos Moleculares"
+        ],
+        [
+          "p",
+          "As infecções do pescoço caracterizam-se por <strong>polimicrobianismo sinérgico de alta agressividade</strong>. O consórcio patogênico envolve estreptococos aeróbios e bactérias anaeróbias estritas residentes no biofilme dentário subgengival e na superfície mucosa orofaríngea. As bactérias aeróbias facultativas (especialmente estreptococos do grupo <em>viridans</em> e <em>Streptococcus pyogenes</em>) utilizam o oxigênio tecidual livre inicial, diminuindo o potencial redox tecidual e liberando hialuronidase e estreptoquinase, as quais digerem o estroma conjuntivo interfascial. Sob essas condições de anóxia e lise tecidual, os anaeróbios estritos (como <em>Fusobacterium necrophorum</em>, <em>Prevotella melaninogenica</em>, <em>Porphyromonas</em> e <em>Peptostreptococcus</em>) proliferam intensamente, secretando colagenases, heparitinases, endotoxinas LPS e enzimas fibrinolíticas que provocam necrose liquifativa tecidual, trombose vascular séptica e desprendimento de microembolos sépticos bacterianos."
+        ],
+        [
+          "p",
+          "Em pacientes com imunossupressão, nefropatia terminal, etilismo pesado ou Diabetes Mellitus mal controlado, bactérias gram-negativas entéricas oportunistas (como <em>Klebsiella pneumoniae</em> hipervirulenta com cápsula mucosa K1/K2, <em>Pseudomonas aeruginosa</em> e <em>Escherichia coli</em>) associam-se com frequência, respondendo por necrose tecidual acelerada e desenvolvimento de coleções gasosas difusas com rápida evolução para choque séptico refratário e disfunção de múltiplos órgãos."
+        ],
+        [
+          "3",
+          "Fisiopatologia da Epistaxe Grave e Topografia Vascular do Nariz"
+        ],
+        [
+          "p",
+          "A epistaxe é a mais comum das emergências otorrinolaringológicas, afetando cerca de 60% da população geral ao longo da vida, dos quais 6% a 10% requerem assistência médica ativa imediata. O suporte sanguíneo da cavidade nasal deriva de um sistema anastomótico duplo originado tanto do sistema carotídeo interno quanto externo:"
+        ],
+        [
+          "t",
+          [
+            "Região Topográfica",
+            "Fontes Arteriais e Confluências",
+            "Características Clínicas e Hemodinâmicas",
+            "Abordagem Terapêutica Fundamental"
+          ],
+          [
+            [
+              "<strong>Epistaxe Anterior (Plexo de Kiesselbach / Área de Little)</strong>",
+              "Confluência septal anteroinferior formada por 5 artérias:\n        <br>1. Ramo septal da artéria labial superior (da carótida externa via artéria facial);\n        <br>2. Artéria etmoidal anterior (da carótida interna via artéria oftálmica);\n        <br>3. Artéria etmoidal posterior (da carótida interna via artéria oftálmica);\n        <br>4. Ramo septal da artéria esfenopalatina (da carótida externa via maxilar);\n        <br>5. Artéria palatina maior (da carótida externa via maxilar).",
+              "Corresponde a mais de 90% dos casos de epistaxe. Ocorre tipicamente em crianças e adultos jovens associada a trauma digital, ar seco ou rinite alérgica. Sangramento de baixo fluxo, compressível, raramente desestabiliza a hemodinâmica.",
+              "Compressão digital direta da porção cartilaginosa por 10 a 15 minutos, aplicação de vasoconstritor tópico, cauterização química com nitrato de prata 75% ou tamponamento anterior com gaze vaselinada/merocel."
+            ],
+            [
+              "<strong>Epistaxe Posterior (Plexo de Woodruff e Artéria Esfenopalatina)</strong>",
+              "Parede lateral póstero-inferior da cavidade nasal, caudal ao corneto inferior e proximidades da coana. Formado predominantemente por ramos terminais calibrosos da <strong>artéria esfenopalatina</strong> e ramos da <strong>artéria faríngea ascendente</strong> (sistema carotídeo externo).",
+              "Responde por 5% a 10% das epistaxes. Incide quase que exclusivamente em indivíduos idosos, ateroscleróticos, portadores de hipertensão arterial descontrolada, coagulopatias ou usuários de antiagregantes plaquetários e anticoagulantes orais. Sangramento de alto débito que drena predominantemente para a orofaringe posterior, não cessa com compressão externa, pode provocar aspiração brônquica e levar a choque hipovolêmico rápido.",
+              "Tamponamento nasal posterior (balão de duplo lúmen ou gaze ancorada por sonda de Foley no cavum), hidratação venosa vigorosa, correção de coagulopatia, estabilização pressórica, internação com monitorização e ligadura arterial cirúrgica endoscópica da artéria esfenopalatina ou embolização vascular seletiva."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "classificacao-e-criterios-diagnosticos-das-emergencias-orl",
+      0,
+      [
+        [
+          "2",
+          "2. Classificação, Critérios Diagnósticos e Estratificação de Risco"
+        ],
+        [
+          "3",
+          "Taxonomia das Emergências Otorrinolaringológicas"
+        ],
+        [
+          "p",
+          "As urgências e emergências em otorrinolaringologia e cirurgia de cabeça e pescoço são subdivididas em quatro grandes categorias de acordo com a fisiopatologia e a premência de intervenção invasiva:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Infecções Cervicais Profundas e Fasciites Necrotizantes:</strong> Angina de Ludwig, abscesso periamigdalino, abscesso parafaríngeo, abscesso retrofaríngeo, tromboflebite da veia jugular interna (Síndrome de Lemierre) e mediastinite necrotizante descendente;",
+            "<strong>Obstruções Mecânicas Agudas e Edemas de Via Aérea Superior:</strong> Epiglotite aguda do adulto e da criança, abscesso de prega vocal/laríngeo, angioedema histaminérgico versus bradicinérgico (induzido por IECA ou angioedema hereditário) e aspiração de corpo estranho em árvore traqueobrônquica;",
+            "<strong>Hemorragias Agudas Otorrinolaringológicas:</strong> Epistaxe anterior refratária, epistaxe posterior com repercussão hemodinâmica, hemorragia pós-amigdalectomia tardia (dia 5 ao dia 10 de pós-operatório por queda de escara fibrino-leucocitária) e rotura arterial vascular cervical carotídea;",
+            "<strong>Urgências Otológicas e Traumas Específicos:</strong> Otite média aguda complicada com mastoidite coalescente aguda, abscesso subperiosteal retroauricular de Bezold (extensão para o músculo ECM), otite externa maligna/necrotizante de base de crânio no diabético e hematoma septal nasal pós-traumático."
+          ]
+        ],
+        [
+          "3",
+          "Critérios Diagnósticos das Infecções Cervicais Profundas"
+        ],
+        [
+          "p",
+          "Para sistematizar a abordagem na sala de emergência e prevenir atrasos diagnósticos funestos, utilizam-se critérios clínicos, anatômicos e imaginológicos consolidados:"
+        ],
+        [
+          "4",
+          "Critérios Diagnósticos Formais de Angina de Ludwig (Critérios de Grodinsky e Holyoke)"
+        ],
+        [
+          "p",
+          "A angina de Ludwig clássica não é um abscesso circunscrito, mas sim uma <strong>celulite difusa, indurada, flegmonosa, gangrenosa e sem supuração purulenta precoce</strong> que envolve bilateralmente múltiplos compartimentos fasciais contíguos:"
+        ],
+        [
+          "t",
+          [
+            "Critério Anatômico / Clínico",
+            "Descrição Semiológica e Fisiopatológica",
+            "Implicação Terapêutica Imediata"
+          ],
+          [
+            [
+              "<strong>1. Acometimento Bilateral Obrigatório</strong>",
+              "Infiltração flegmonosa em ferradura de ambos os lados da mandíbula. Infecção estritamente unilateral não preenche o critério diagnóstico formal de angina de Ludwig (trata-se de celulite ou abscesso submandibular unilocular isolado).",
+              "Gera elevação simétrica e circunferencial do diafragma milo-hióideo, acelerando a asfixia."
+            ],
+            [
+              "<strong>2. Envolvimento Concomitante dos Três Espaços</strong>",
+              "Acomete simultaneamente o <strong>Espaço Sublingual</strong> (acima do milo-hióideo), o <strong>Espaço Submandibular</strong> bilateral (abaixo do milo-hióideo) e o <strong>Espaço Submentoniano</strong>.",
+              "A integridade funcional do soalho bucal é completamente perdida; o assoalho torna-se pétreo (\"pescoço em touro\" ou \"brawny neck\")."
+            ],
+            [
+              "<strong>3. Celulite Flegmonosa com Ausência Inicial de Abscesso Franco</strong>",
+              "O processo é uma necrose gangrenosa tecidual difusa com escasso pus livre nas primeiras 24 a 48 horas. A drenagem cirúrgica obtém tipicamente líquido serossanguinolento fétido acastanhado e debris necróticos (\"pus sujo de serosa\").",
+              "Não se deve postergar a descompressão cirúrgica esperando que o exame de imagem identifique coleções purulentas uniloculadas fluidas evidentes."
+            ],
+            [
+              "<strong>4. Invasão Fascial sem Linfadenopatia Primária</strong>",
+              "A infecção dissemina-se por contiguidade através dos folhetos fasciais e planos areolares frouxos, e não por disseminação primária via vasos linfáticos ganglionares.",
+              "Rápida velocidade de propagação (horas) sem retenção nos linfonodos regionais do pescoço."
+            ],
+            [
+              "<strong>5. Origem Dentária Predominante</strong>",
+              "Presente em mais de 80% a 90% dos casos, decorrente de periodontite, pericoronarite ou extração traumática recente do 2º ou 3º dentes molares inferiores.",
+              "Exige extração cirúrgica imediata dos dentes causadores do foco séptico durante a mesma intervenção cirúrgica de drenagem fascial."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Critérios Diagnósticos da Síndrome de Lemierre (Sepse Pós-anginosa)"
+        ],
+        [
+          "p",
+          "Descrita originalmente por André Lemierre em 1936, é uma afecção tromboflebítica séptica potencialmente letal que afeta jovens previamente hígidos:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Critério 1:</strong> Infecção orofaríngea ou amigdalina recente documentada (faringoamigdalite aguda antecedendo o quadro em 3 a 14 dias);",
+            "<strong>Critério 2:</strong> Tromboflebite séptica da veia jugular interna (demonstrada por angiotomografia computadorizada cervical com contraste ou eco-Doppler vascular venoso revelando falha de enchimento luminal e espessamento inflamatório da bainha carotídea);",
+            "<strong>Critério 3:</strong> Presença de êmbolos sépticos metastáticos à distância (predominantemente nódulos pulmonares periféricos escavados, pneumotórax secundário a fístulas broncopleurais, artrite séptica de grandes articulações, choque séptico ou abscesso hepático/cerebral);",
+            "<strong>Critério 4:</strong> Isolamento em hemoculturas de bactérias anaeróbias orais, sendo o <strong>Fusobacterium necrophorum</strong> o agente etiológico clássico isolado em mais de 80% dos casos confirmados."
+          ]
+        ],
+        [
+          "4",
+          "Critérios Diagnósticos e Gravidade da Mastoidite Aguda Coalescente"
+        ],
+        [
+          "p",
+          "A mastoidite coalescente representa a invasão purulenta do antro e das células aéreas do osso temporal com destruição osteolítica dos septos ósseos intercelulares trabeculares. Seus critérios diagnósticos compreendem:"
+        ],
+        [
+          "u",
+          [
+            "História prévia imediata de Otite Média Aguda (OMA) tratada de modo insuficiente ou em evolução recente (menos de 2 a 3 semanas);",
+            "Sinais flogísticos retroauriculares intensos: hiperemia, edema inflamatório doloroso sobre o processo mastóideo e apagamento do sulco retroauricular;",
+            "Deslocamento anterior e inferior do pavilhão auricular (\"orelha em abano\" ipsilateral acentuada);",
+            "Otoscopia mostrando membrana timpânica perfurada com otorréia mucopurulenta pulsátil contínua ou membrana timpânica hiperemiada abaulada com rebaixamento e colapso da parede póstero-superior do meato acústico externo (\"sinal da queda da parede\");",
+            "Tomografia computadorizada de ossos temporais em cortes finos sem contraste: opacificação de todas as células da mastoide associada à reabsorção e lise dos septos ósseos trabeculares (coalescência verdadeira) e eventual erosão da cortical óssea externa (formando o Abscesso Subperiosteal de Luc ou Abscesso de Bezold) ou da tábua óssea interna (gerando empiema extradural ou trombose de seio sigmoide/transverso)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "apresentacao-clinica-e-semiologia-minuciosa",
+      0,
+      [
+        [
+          "2",
+          "3. Apresentação Clínica e Semiologia Minuciosa"
+        ],
+        [
+          "3",
+          "Semiologia das Afecções Cervicais Profundas e Sinais Precoces de Asfixia"
+        ],
+        [
+          "p",
+          "O exame físico do paciente admitido com urgência de cabeça e pescoço deve priorizar imediatamente a estabilidade da via respiratória superior e o estado hemodinâmico sistêmico antes de qualquer tentativa de manobras orofaríngeas invasivas. A inspeção minuciosa e a palpação metódica revelam achados patognomônicos que definem o nível anatômico da lesão:"
+        ],
+        [
+          "4",
+          "Angina de Ludwig: Achados Clínicos Típicos"
+        ],
+        [
+          "t",
+          [
+            "Sinal Semiológico",
+            "Mecanismo Fisiopatológico",
+            "Significado Clínico na Tomada de Decisão"
+          ],
+          [
+            [
+              "<strong>\"Pescoço em Touro\" (Brawny Neck)</strong>",
+              "Induração lenhosa e difusa bilateral dos compartimentos submandibulares e submentonianos sob a lâmina superficial da fáscia cervical profunda. Pele tensa, brilhante, eritematosa, quente e hipersensível à dígito-pressão, sem áreas francas de flutuação.",
+              "Presença de celulite flegmonosa profunda em expansão sob alta pressão compartimental. Descarte precoce de tentativa de aspiração por agulha simples; indica descompressão cirúrgica aberta."
+            ],
+            [
+              "<strong>Elevação e Protrusão da Língua</strong>",
+              "O edema inflamatório intenso no espaço sublingual empurra o corpo da língua póstero-superiormente contra o palato duro, projetando sua ponta para fora das arcadas dentárias (\"língua em madeira\").",
+              "<strong>Sinal iminente de obstrução total de via aérea!</strong> O paciente não consegue fechar a cavidade bucal, apresenta sialorreia volumosa constante pela incapacidade de deglutição salivar e fala abafada em \"batata quente\" (hot-potato voice)."
+            ],
+            [
+              "<strong>Trismo Moderado a Intenso</strong>",
+              "Contratura reflexa espástica dolorosa e infiltração inflamatória direta dos músculos mastigatórios adjacentes, notadamente o pterigoideo medial e o masseter.",
+              "Impossibilita a abertura bucal adequada para visualização direta por laringoscópio rígido convencional de Macintosh. <em>Tentativa de intubação com laringoscopia direta sob sedação padrão é contraindicada pelo alto risco de laringoespasmo e perda definitiva da via aérea</em>."
+            ],
+            [
+              "<strong>Postura em Tripé e \"Sniffing Position\"</strong>",
+              "O paciente mantém-se sentado no leito, com o tronco inclinado para a frente, membros superiores apoiados sobre os joelhos e a cabeça estendida no pescoço para maximizar a abertura do lúmen faríngeo hipofaríngeo.",
+              "<strong>Sinal de falência respiratória mecânica grave!</strong> O paciente não tolera a posição supina em decúbito dorsal de forma alguma (a queda da língua sobre a parede faríngea posterior geraria asfixia imediata). Qualquer imposição de decúbito dorsal pode precipitar parada cardiorrespiratória."
+            ],
+            [
+              "<strong>Estridor Laríngeo Inspiratório</strong>",
+              "O edema e a compressão extrínseca estendem-se caudalmente ao longo dos ligamentos glossoepiglóticos para a valécula, epiglote e pregas ariepiglóticas, reduzindo criticamente a área de secção transversa do vestíbulo laríngeo.",
+              "Achado tardio e ominous. Indica obstrução superior a 75% da luz aérea; o tempo disponível para intervenção cirúrgica de emergência (traqueostomia/cricotireoidostomia) é de poucos minutos."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Abscesso Periamigdalino (Peritonsilar) versus Abscesso Parafaríngeo"
+        ],
+        [
+          "p",
+          "A diferenciação clínica à beira do leito é crítica para o direcionamento entre aspiração/drenagem intraoral versus abordagem transcervical externa no centro cirúrgico:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Abscesso Periamigdalino:</strong> Paciente jovem com antecedente de dor de garganta que evolui com piora unilateral intensa, odinofagia severa, dor referida no ouvido ipsilateral (otalgia reflexa mediada pelo ramo timpânico do nervo glossofaríngeo - nervo de Jacobson), trismo intenso devido ao espasmo do músculo pterigoideo medial contíguo, febre elevada e sialorreia. À oroscopia, evidencia-se <strong>abaulamento acentuado do pilar amigdalino anterior ipsilateral e palato mole superior</strong>, com <strong>desvio medial e inferior da amígdala afetada</strong> e <strong>desvio contralateral nítido da úvula</strong> em relação à linha média;",
+            "<strong>Abscesso Parafaríngeo:</strong> Além do trismo e odinofagia, o paciente apresenta <strong>empastamento e tumefação dolorosa cervical profunda externa</strong> localizada abaixo do ângulo da mandíbula (região infraparotídea e ao longo da borda anterior do músculo esternocleidomastoideo). À inspeção oral, observa-se <strong>abaulamento de toda a parede lateral da faringe</strong>, empurrando o corpo da amígdala medialmente em bloco com o pilar posterior, mas frequentemente preservando a mobilidade do pilar anterior e palato mole. O trismo no abscesso parafaríngeo pré-estiloide costuma ser ainda mais marcante do que no periamigdalino devido à infiltração direta do ventre do pterigoideo interno."
+          ]
+        ],
+        [
+          "4",
+          "Semiologia do Abscesso Retrofaríngeo"
+        ],
+        [
+          "p",
+          "O quadro clínico do abscesso retrofaríngeo varia conforme a faixa etária:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Em Lactentes e Pré-escolares (< 5 anos):</strong> História de infecção prévia de vias aéreas superiores seguida de febre alta, recusa alimentar completa (disfagia/odinofagia), irritabilidade intensa, hiperextensão cervical reflexa (torcicolo meningiforme para proteger o espaço aéreo retrofaríngeo), estridor inspiratório de tom baixo (ronco faríngeo), choro com tom abafado (\"duck-quack voice\") e sialorreia profusa. À inspeção oral cuidadosa, pode ser observado abaulamento circunscrito e assimétrico da parede posterior da orofaringe (nunca palpado com dedo desprotegido pelo risco iminente de ruptura da coleção purulenta para a árvore respiratória com aspiração maciça e asfixia imediata);",
+            "<strong>Em Adultos:</strong> Geralmente secundário a trauma mecânico (espinha de peixe, ossos de galinha, corpo estranho engolido) ou iatrogenia (endoscopia digestiva alta traumática, intubação difícil). Manifesta-se com dor cervical posterior intensa que piora dramaticamente à extensão ou rotação do pescoço, disfagia e odinofagia graves, enfisema subcutâneo palpável na base cervical se houver perfuração esofágica com saída de ar e crepitação à palpação profunda anterior aos processos transversos vertebrais."
+          ]
+        ],
+        [
+          "4",
+          "Semiologia das Urgências Otológicas e Epiglotite"
+        ],
+        [
+          "u",
+          [
+            "<strong>Mastoidite Aguda Coalescente:</strong> Febre, irritabilidade, otorreia purulenta pulsátil, dor retroauricular espontânea e à palpação profunda do processo mastóideo (sinal de Griesinger se houver tromboflebite do seio transverso/sigmoide com estase venosa mastóidea superficial). O pavilhão auricular é projetado lateralmente e para a frente com apagamento do sulco retroauricular. O exame neurológico detalhado com pesquisa de rigidez de nuca, ataxia, dismetria e paresia de nervo abducente (VI par - Síndrome de Gradenigo com petrosite apical associada a dor retro-orbitária e paralisia do reto lateral) é mandatório para excluir complicações intracranianas;",
+            "<strong>Otite Externa Necrotizante (Maligna):</strong> Paciente idoso com Diabetes Mellitus descompensado de longa data ou imunossuprimido referindo otalgia excruciante e intratável que piora durante a noite e irradia para a articulação temporomandibular e hemiface. À otoscopia, presença de <strong>tecido de granulação avermelhado na junção ósteo-cartilaginosa do assoalho do meato acústico externo</strong> com secreção purulenta escassa e fétida. A invasão progressiva dos forames da base do crânio (especialmente o forame estilomastóideo e forame jugular) leva a paralisias periféricas de nervos cranianos: paralisia facial periférica (VII par - sinal de pior prognóstico e invasão óssea avançada), disfagia e disfonia por acometimento dos pares IX, X e XI;",
+            "<strong>Epiglotite Aguda no Adulto:</strong> Apresenta-se tipicamente com os chamados \"4 Ds\": <em>Disfagia</em> (dificuldade de engolir), <em>Disfonia</em> (fala abafada em batata quente, mas sem rouquidão verdadeira, pois as cordas vocais estão intactas), <em>Dispneia</em> (progressiva, com estridor inspiratório tardio) e <em>Drooling</em> (sialorreia por impossibilidade total de deglutir saliva). A dor de garganta é desproporcional aos achados oroscópicos normais (faringe posterior sem hiperemia exuberante), o que deve acender o alarme imediato para inflamação supraglótica infecciosa grave."
+          ]
+        ]
+      ]
+    ],
+    [
+      "diagnostico-diferencial-nas-emergencias-orl",
+      0,
+      [
+        [
+          "2",
+          "4. Diagnóstico Diferencial Estruturado e Armadilhas Diagnósticas"
+        ],
+        [
+          "3",
+          "Diagnóstico Diferencial das Infecções e Massas Cervicais Agudas"
+        ],
+        [
+          "p",
+          "O reconhecimento rápido das entidades clínicas que mimetizam ou complicam urgências de cabeça e pescoço previne desfechos catastróficos decorrentes de terapias empíricas inadequadas. A tabela comparativa a seguir consolida os diagnósticos diferenciais fundamentais exigidos em provas de residência e na prática médica avançada:"
+        ],
+        [
+          "t",
+          [
+            "Entidade Clínica",
+            "Faixa Etária e Antecedentes",
+            "Quadro Clínico e Semiológico Diferencial",
+            "Achados de Imagem / Laboratório Distintivos",
+            "Conduta Imediata Chave"
+          ],
+          [
+            [
+              "<strong>Angina de Ludwig</strong>",
+              "Adultos jovens a idosos; cárie dentária, extração de molar inferior ou má higiene bucal em diabéticos.",
+              "Acometimento bilateral, empastamento pétreo submandibular (\"pescoço em touro\"), língua projetada contra o palato, trismo e sialorreia. Sem flutuação circunscrita inicial.",
+              "TC com contraste: infiltração difusa flegmonosa com densificação dos planos gordurosos nos espaços submandibular e sublingual bilaterais, com ou sem microbolhas gasosas.",
+              "Garantia de via aérea avançada (broncoscopia flexível ou traqueostomia acordado) + antibioticoterapia venosa ampla + cervicotomia ampla descompressiva."
+            ],
+            [
+              "<strong>Abscesso Periamigdalino</strong>",
+              "Adolescentes e adultos jovens (15 a 40 anos); tonsilite bacteriana recente tratada de forma inadequada.",
+              "Dor unilateral intensa, trismo, otalgia reflexa ipsilateral, desvio contralateral da úvula e abaulamento acentuado do pilar anterior e palato mole superior.",
+              "Diagnóstico predominantemente clínico. Ultrassonografia intraoral ou TC mostrando coleção uniloculada periférica na cápsula tonsilar com realce anelar.",
+              "Aspiração com agulha calibrosa (18G) ou punção/drenagem com lâmina 11 do pilar anterior + antibioticoterapia sistêmica venosa (ampicilina-sulbactam)."
+            ],
+            [
+              "<strong>Abscesso Retrofaríngeo</strong>",
+              "Crianças < 5 anos (linfadenite supurativa) ou adultos pós-corpo estranho perfurante / EDA traumática.",
+              "Hiperextensão cervical, torcicolo doloroso, febre alta, ronco respiratório (\"duck-quack\"), disfagia e abaulamento da parede faríngea posterior.",
+              "RX de coluna cervical em perfil em inspiração: alargamento do espaço pré-vertebral (> 7 mm em C2 e > 14 mm em C6 em crianças; > 22 mm em C6 em adultos) e retificação da lordose. TC confirma limites.",
+              "Drenagem cirúrgica (intraoral em coleções estritamente retrofaríngeas pequenas na criança ou transcervical externa) + proteção de via aérea + antibioticoterapia."
+            ],
+            [
+              "<strong>Angioedema Hereditário ou por IECA</strong>",
+              "Uso recente ou crônico de IECA (enalapril, ramipril) ou história familiar de crises de edema recorrentes sem urticária.",
+              "Edema súbito não pruriginoso de lábios, língua, úvula e glote sem febre, sem placas urticariformes, sem broncoespasmo sistêmico. Mecanismo bradicinérgico puro.",
+              "Não responde a adrenalina, anti-histamínicos ou corticosteroides! Dosagem de C4 (baixo) e dosagem/função de C1-INH (no angioedema hereditário).",
+              "Proteção de via aérea precoce! No induzido por IECA: suspensão imediata e suporte intensivo (icantibanto e concentrado de C1-INH podem ser tentados em protocolos de resgate). No hereditário: Icatibanto (antagonista B2) ou concentrado de C1 esterase humano."
+            ],
+            [
+              "<strong>Fascite Necrotizante Cervical</strong>",
+              "Diabéticos descompensados, imunossuprimidos e etilistas crônicos pós-foco dentário ou cirurgia cervical.",
+              "Dor desproporcional ao aspecto cutâneo inicial, rápida evolução para crepitação palpável de gás subcutâneo, vesículas e flictenas hemorrágicas, anestesia cutânea focal e choque séptico precoce.",
+              "TC cervical e torácica: gás exuberante dissecando planos fasciais profundos e musculares, espessamento fascial difuso sem coleções purulentas delimitadas. Presença de hemoculturas polimicrobianas positivas.",
+              "Emergência cirúrgica extrema! Desbridamento cirúrgico agressivo imediato de todos os tecidos desvitalizados + reexploração em 24-48h (\"second look\") + vancomicina + meropenem + clindamicina (inibição ribossômica de toxinas)."
+            ],
+            [
+              "<strong>Epiglotite Aguda do Adulto</strong>",
+              "Adultos jovens a idosos; sem história vacinal infantil obrigatória; agentes: <em>H. influenzae</em>, <em>S. pneumoniae</em> e <em>S. aureus</em>.",
+              "Odinofagia excruciante com exame orofaríngeo frustro e normal. Postura em tripé, estridor inspiratório tardio, sinal dos \"4 Ds\" (disfagia, disfonia, dispneia, drooling).",
+              "Nasofibrolaringoscopia à beira do leito (em ambiente de UTI ou centro cirúrgico com material de via aérea difícil pronto): epiglote edemaciada, em \"cereja madura\". RX perfil: \"sinal do polegar\" (thumb sign).",
+              "Monitorização contínua em leito intensivo, não manipular a cavidade oral com espátulas desnecessárias, antibioticoterapia venosa com ceftriaxona + oxacilina/vancomicina + corticoterapia venosa (dexametasona)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Diagnóstico Diferencial da Epistaxe Volumosa"
+        ],
+        [
+          "p",
+          "Frente a uma hemorragia nasal com instabilidade ou drenagem orofaríngea contínua, o médico emergencista deve distinguir:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Epistaxe Posterior Espontânea do Idoso Hipertenso:</strong> Ocorre por rotura de ramos arteriolares escleróticos da artéria esfenopalatina no plexo de Woodruff. Não há sangramento visível pelo septo anterior; o sangue flui pela nasofaringe em jato escuro ou rubro vivo mesmo com as duas narinas comprimidas externamente;",
+            "<strong>Rotura de Pseudoaneurisma Carotídeo Pós-traumático:</strong> Paciente com antecedente de fratura complexa de base de crânio ou cirurgia endoscópica endonasal prévia recente (dias a semanas antes) que apresenta epistaxe maciça súbita, pulsátil, em jatos arteriais violentos, muitas vezes acompanhada de sopro auscultável na hemiface ou proptose ocular pulsátil. Requer angiografia cerebral imediata para embolização endovascular emergencial por espirais metálicas (coils) ou stent recoberto;",
+            "<strong>Tumores Nasossinusais Hipervasculares (ex: Nasoangiofibroma Juvenil):</strong> Menino adolescente ou adulto jovem com epistaxes recorrentes unilaterais indolores associadas à obstrução nasal progressiva unilateral. <em>Nunca deve ser biopsiado às cegas na emergência devido ao risco de hemorragia exsanguinante incontrolável no consultório!</em> Requer RM/TC e embolização pré-operatória seguida de ressecção cirúrgica;",
+            "<strong>Coagulopatias Sistêmicas e Uso de Novos Anticoagulantes (DOACs / AVK):</strong> Sangramentos mucosos múltiplos (gengivorragia, petéquias cutâneas, hematúria macroscópica). Rastreio obrigatório com RNI, TTPa, contagem de plaquetas e testes de função renal (para depuração de DOACs). Requer administração rápida de antídotos específicos (como plasma fresco congelado, complexo protrombínico de 4 fatores para varfarina, idarucizumabe para dabigatrana ou andexanet alfa para inibidores do fator Xa)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "investigacao-propedeutica-e-exames-complementares",
+      0,
+      [
+        [
+          "2",
+          "5. Investigação Propedêutica Laboratorial e Imaginológica"
+        ],
+        [
+          "3",
+          "Estratégia Diagnóstica e Segurança na Sala de Emergência"
+        ],
+        [
+          "p",
+          "O princípio basilar na condução das urgências otorrinolaringológicas é: <strong>a estabilização da via respiratória precede e sobrepõe-se a qualquer exame complementar</strong>. Jamais se deve encaminhar um paciente com sinais de desconforto respiratório, estridor, taquipneia com uso de musculatura acessória ou postura em tripé desacompanhado e sem via aérea assegurada para a sala de tomografia computadorizada. No tomógrafo, a posição supina obrigatória anula os mecanismos compensatórios musculares e pode precipitar o colapso asfíxico fatal em ambiente desprovido de recursos cirúrgicos imediatos."
+        ],
+        [
+          "3",
+          "Exames Laboratoriais Críticos e Monitorização"
+        ],
+        [
+          "u",
+          [
+            "<strong>Hemograma Completo com Leucograma:</strong> Revela habitualmente leucocitose acentuada (> 15.000 a 25.000/mm³) com desvio escalonado à esquerda (presença de bastonetes > 10%, metamielócitos e mielócitos), além de granulações tóxicas nos neutrófilos, denotando resposta inflamatória sistêmica grave. Em casos de fascite necrotizante ou sepse grave, pode surgir plaquetopenia por consumo e coagulação intravascular disseminada (CIVD);",
+            "<strong>Marcadores Inflamatórios Sistêmicos:</strong> Proteína C-Reativa (PCR quantitativa) e Procalcitonina (PCT) séricas. A procalcitonina > 2 ng/mL correlaciona-se estreitamente com infecção bacteriana invasiva e choque séptico iminente;",
+            "<strong>Função Renal e Eletrólitos:</strong> Ureia, creatinina, sódio, potássio e equilíbrio ácido-básico por gasometria arterial. A acidose metabólica com hiperlactatemia (> 2 mmol/L ou > 18 mg/dL) é marcador sensível de hipoperfusão tecidual e gravidade da sepse;",
+            "<strong>Coagulograma Completo:</strong> Tempo de Protrombina (TP com RNI), Tempo de Tromboplastina Parcial Ativada (TTPa) e Fibrinogênio sérico. Indispensável para elucidação de epistaxes graves e como triagem pré-operatória imediata antes de cervicotomias ou traqueostomias;",
+            "<strong>Culturas Microbiológicas com Antibiograma:</strong> Devem ser colhidas pelo menos 2 amostras de <strong>hemoculturas</strong> periféricas em sítios anatômicos distintos antes do início dos antimicrobianos sistêmicos. Durante procedimentos de drenagem cirúrgica ou punção aspirativa com agulha, o espécime purulento obtido deve ser enviado imediatamente em frasco estéril para baciloscopia direta por coloração de Gram, cultura para aeróbios e anaeróbios estritos (frascos com atmosfera redutora anaeróbia) e teste de sensibilidade a antimicrobianos (TSA)."
+          ]
+        ],
+        [
+          "3",
+          "Propedêutica Imaginológica Estruturada"
+        ],
+        [
+          "t",
+          [
+            "Método de Imagem",
+            "Indicações Principais e Papel Clínico",
+            "Sinais Imaginológicos Característicos",
+            "Vantagens, Limitações e Cuidados Críticos"
+          ],
+          [
+            [
+              "<strong>Tomografia Computadorizada (TC) de Pescoço e Tórax com Contraste Venoso</strong>",
+              "<strong>Padrão-ouro absoluto</strong> para mapeamento cirúrgico de infecções cervicais profundas, angina de Ludwig, abscessos parafaríngeos/retrofaríngeos e suspeita de mediastinite necrotizante.",
+              "Coleções hipodensas com <strong>realce anelar ou periférico pelo contraste iodado</strong> na parede da cavidade; espessamento e densificação dos planos gordurosos fasciais; <strong>presença de bolhas de gás tecidual livre</strong> (sinal patognomônico de bactérias produtoras de gás); trombose de veia jugular com falha de enchimento luminal e espessamento inflamatório de sua parede (Lemierre).",
+              "<em>Cuidados vitais:</em> Exige estabilização prévia absoluta da via aérea. O contraste iodado venoso é indispensável para diferenciar vasos normais colabados de coleções purulentas e para flagrar tromboflebite jugular ou erosões carotídeas. O protocolo deve obrigatoriamente estender-se até a carina ou nível diafragmático para excluir mediastinite assintomática inicial."
+            ],
+            [
+              "<strong>Radiografia Simples de Tecidos Moles Cervicais (Perfil)</strong>",
+              "Triagem rápida à beira do leito em crianças com suspeita de abscesso retrofaríngeo ou quando a TC for inacessível no momento agudo inicial; avaliação de epiglotite aguda e de corpos estranhos radiopacos.",
+              "<strong>Alargamento da coluna aérea e partes moles pré-vertebrais:</strong> fisiologicamente o espaço retrofaríngeo ao nível de C2 mede até 7 mm, e o espaço retrotraqueal ao nível de C6 mede até 14 mm em crianças e 22 mm em adultos. Alargamentos superiores associados à retificação ou inversão da lordose cervical fisiológica indicam coleção retrofaríngea. Na epiglotite: espessamento maciço da epiglote com aspecto arredondado (\"sinal do polegar\" ou <em>thumb sign</em>). Presença de enfisema de partes moles (gás retrofaríngeo ou cervical anterior).",
+              "Exame de rápida execução que não afasta o doente da sala de emergência. <em>Limitação:</em> Em crianças chorando e com flexão voluntária do pescoço, o espaço pré-vertebral falso-alarga; a radiografia deve ser obtida idealmente no pico da inspiração com o pescoço mantido em extensão neutra."
+            ],
+            [
+              "<strong>Ultrassonografia Cervical de Alta Resolução</strong>",
+              "Avaliação complementar à beira do leito de linfadenites supurativas superficiais, sialoadenites litiásicas e punção guiada de abscessos periamigdalinos ou cervicais anteriores superficiais.",
+              "Massa cística ou hipoecóica com debris internos móveis à compressão acústica (sinal da \"turbulência purulenta\") e reforço acústico posterior. Doppler colorido mostra avascularidade central e hipervascularização reacional periférica.",
+              "Excelente para guiar punção percutânea com agulha. <em>Limitação crítica:</em> A sombra acústica gerada pela mandíbula, clavículas, hioide e o próprio gás no enfisema subcutâneo impede a avaliação dos espaços parafaríngeo, retrofaríngeo e mediastinal profundo."
+            ],
+            [
+              "<strong>Nasofibrolaringoscopia Flexível</strong>",
+              "Avaliação dinâmica direta e minuciosa da mucosa nasal, rinofaringe, palato mole, base da língua, valécula, epiglote, pregas ariepiglóticas, seios piriformes e mobilidade das pregas vocais.",
+              "Visualização direta do edema supraglótico \"em cereja madura\" na epiglotite; presença de corpo estranho impactado em valécula ou seio piriforme; identificação de sítio ativo de sangramento nasal posterior no recesso esfenoetmoidal; desvio medial da parede faríngea lateral.",
+              "Deve ser realizada com o paciente em posição ortostática ou fowler alto, preferencialmente por especialista treinado, com material para intubação orotraqueal e traqueostomia imediatamente acessível na sala."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "abordagem-terapeutica-farmacologica-e-cirurgica",
+      0,
+      [
+        [
+          "2",
+          "6. Abordagem Terapêutica Integrada: Manejo da Via Aérea, Farmacoterapia e Cirurgia"
+        ],
+        [
+          "3",
+          "O Triângulo Dourado do Manejo: Via Aérea, Cirurgia e Antibioticoterapia"
+        ],
+        [
+          "p",
+          "O sucesso terapêutico nas infecções cervicais complicadas e urgências ORL repousa sobre a sincronia imediata de três intervenções inegociáveis: garantia precoce de uma via aérea permeável e segura, drenagem cirúrgica descompressiva com desbridamento de tecidos necróticos e instituição célere de antibioticoterapia venosa empírica de amplo espectro com ação anti-anaeróbia."
+        ],
+        [
+          "3",
+          "Manejo Estratégico da Via Aérea Difícil nas Urgências Cervicais"
+        ],
+        [
+          "p",
+          "A falência respiratória nas infecções cervicais e na epiglotite aguda ocorre por compressão mecânica extrínseca, protrusão da base da língua, edema supraglótico acentuado e distorção grotesca das referências anatômicas laríngeas normais. As seguintes regras axiomáticas devem orientar o médico emergencista e o cirurgião:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Intubação Orotraqueal sob Laringoscopia Direta Convencional:</strong> É <strong>altamente arriscada e frequentemente contraindicada</strong> na angina de Ludwig moderada a grave e na epiglotite aguda com desconforto. A indução anestésica com bloqueador neuromuscular desfaz o tônus muscular faríngeo compensatório protetor, precipitando o colapso absoluto da hipofaringe (\"cannot intubate, cannot oxygenate\" - CICO). Além disso, a lâmina rígida do laringoscópio pode romper coleções flegmonosas friáveis, precipitando inundação da traqueia com pus séptico, ou causar laringoespasmo reflexo e edema fatal na epiglotite;",
+            "<strong>Intubação com Broncoscópio Flexível no Paciente Acordado (Awake Fiberoptic Intubation):</strong> É o <strong>método não cirúrgico de escolha</strong> para assegurar a via aérea em pacientes com angina de Ludwig e infecções profundas quando há cooperação, estabilidade hemodinâmica relativa e operador altamente experiente. Requer anestesia tópica cuidadosa com lidocaína sem vasoconstritor, preservação da respiração espontânea e sedação consciente mínima (ex: dexmedetomidina ou doses tituladas de remifentanil);",
+            "<strong>Via Aérea Cirúrgica Imediata:</strong>\n    <ul>\n      <li><em>Traqueostomia Cirúrgica sob Anestesia Local:</em> É o método definitivo de maior segurança na presença de trismo grave irredutível, edema massivo do assoalho bucal e distorção laríngea anatômica prévia. Deve ser conduzida com o paciente mantido na posição semi-sentada (fowler alto), com infiltração local cuidadosa de anestésico e hemostasia meticulosa das lojas venosas congestas da base cervical;",
+            "<em>Cricotireoidostomia Cirúrgica:</em> Reservada para o cenário emergencial catastrófico de perda iminente da via respiratória quando todos os métodos alternativos falharam. <em>Ressalva anatômica crítica:</em> Na presença de celulite flegmonosa submandibular e cervical anterior extensa (como na angina de Ludwig), a membrana cricotireóidea pode estar sepultada sob tecidos profundamente infiltrados, hipervascularizados e irreconhecíveis à palpação palpável de linha média, tornando a cricotireoidostomia tecnicamente desafiadora e sangrante. Nesses casos, o cirurgião deve estar apto a realizar uma cervicotomia descompressiva imediata que atinja a traqueia sob visualização cirúrgica direta."
+          ]
+        ],
+        [
+          "3",
+          "Esquemas Farmacológicos e Antimicrobianos Atualizados"
+        ],
+        [
+          "p",
+          "A antibioticoterapia sistêmica venosa deve ser iniciada <strong>na primeira hora da admissão hospitalar</strong> (dentro do pacote de ressuscitação da Sepse), logo após a coleta ágil de hemoculturas:"
+        ],
+        [
+          "t",
+          [
+            "Cenário Clínico / Patologia",
+            "Regime de Primeira Escolha (Doses em Adultos)",
+            "Regime Alternativo / Alergia a Penicilina / Alto Risco",
+            "Duração Típica e Ajustes Críticos"
+          ],
+          [
+            [
+              "<strong>Angina de Ludwig e Abscessos Cervicais Profundos</strong>",
+              "<strong>Ampicilina-Sulbactam</strong> 3 g IV de 6/6 horas (ou Piperacilina-Tazobactam 4,5 g IV de 6/6 horas).",
+              "<strong>Ceftriaxona</strong> 2 g IV 1x/dia + <strong>Metronidazol</strong> 500 mg IV de 8/8 horas + <strong>Vancomicina</strong> 15 a 20 mg/kg IV de 12/12 horas (com monitorização da vancocinemia entre 15-20 mcg/mL para cobertura de CA-MRSA).<br>Em alergia grave anafilática: <strong>Clindamicina</strong> 600 a 900 mg IV de 8/8 horas + <strong>Levofloxacino</strong> 750 mg IV 1x/dia + Vancomicina.",
+              "Duração de 14 a 21 dias guiada por melhora clínica, normalização de marcadores (PCR) e documentação tomográfica de resolução das coleções fasciais."
+            ],
+            [
+              "<strong>Síndrome de Lemierre (Tromboflebite da VJI)</strong>",
+              "<strong>Ceftriaxona</strong> 2 g IV 1x/dia + <strong>Metronidazol</strong> 500 mg IV de 8/8h (o metronidazol atinge concentrações bactericidas excepcionais contra o <em>Fusobacterium necrophorum</em> e penetra com excelência no interior de trombos sépticos infectados).",
+              "<strong>Ampicilina-Sulbactam</strong> 3 g IV de 6/6 horas ou <strong>Meropenem</strong> 1 g IV de 8/8 horas (se sepse com falência orgânica ou neutropenia).",
+              "Duração prolongada de <strong>3 a 6 semanas</strong> de antibioticoterapia venosa para esterilização de trombos intravasculares e reabsorção de metástases sépticas pulmonares. Anticoagulação plena é controversa, reservada para trombos progressivos que avançam para o seio sigmoide/cavernoso ou febre séptica persistente após 48-72h de antibióticos apropriados."
+            ],
+            [
+              "<strong>Otite Externa Necrotizante (Maligna) de Base de Crânio</strong>",
+              "<strong>Ciprofloxacino</strong> 400 mg IV de 8/8 horas (alta penetração óssea contra <em>Pseudomonas aeruginosa</em>).",
+              "Se resistência documentada a fluoroquinolonas ou em choque séptico: <strong>Ceftazidima</strong> 2 g IV de 8/8h ou <strong>Cefepima</strong> 2 g IV de 8/8h ou <strong>Meropenem</strong> 1 g IV de 8/8 horas.",
+              "Tratamento extremamente prolongado: <strong>mínimo de 6 a 8 semanas</strong> (podendo atingir 3 a 6 meses), guiado por marcadores inflamatórios (VHS e PCR) e cintilografia com gálio-67 ou SPECT/TC para certificar a inativação da osteomielite de base de crânio."
+            ],
+            [
+              "<strong>Mastoidite Aguda Coalescente</strong>",
+              "<strong>Ceftriaxona</strong> 2 g IV 1x/dia (ou 100 mg/kg/dia em crianças) + <strong>Oxacilina</strong> 2 g IV de 4/4h (ou Vancomicina se prevalência alta de MRSA).",
+              "<strong>Levofloxacino</strong> 750 mg IV 1x/dia + <strong>Clindamicina</strong> 600 mg IV de 8/8 horas.",
+              "14 a 21 dias de antibioticoterapia parenteral associada a miringotomia com tubo de ventilação +/- mastoidectomia cortical se falha clínica após 48h."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Corticoterapia Coadjuvante: Indicações Precisas e Controvérsias"
+        ],
+        [
+          "p",
+          "O papel dos corticosteroides sistêmicos nas urgências de vias aéreas e cervicais baseia-se em evidências clínicas bem delineadas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Epiglotite Aguda do Adulto e da Criança:</strong> A <strong>Dexametasona</strong> (0,15 a 0,3 mg/kg/dose em crianças; 8 a 10 mg IV em adultos na dose inicial, seguida de 4 mg IV a cada 6 ou 8 horas por 24 a 48 horas) reduz expressivamente a permeabilidade capilar na mucosa supraglótica frouxa, acelera a regressão do estridor laríngeo e encurta o tempo necessário de ventilação mecânica ou observação intensiva;",
+            "<strong>Angina de Ludwig Precoce:</strong> O uso adjuvante de dexametasona venosa (10 mg IV em bolus seguido de 4 mg IV de 6/6 horas por 48 horas) tem sido recomendado como medida de resgate para reduzir o edema no espaço sublingual e facilitar a visualização laringoscópica antes da broncoscopia flexível no paciente acordado. <em>Alerta: o corticoide nunca substitui a vigilância armada da via aérea nem a indicação da drenagem cirúrgica</em>;",
+            "<strong>Abscesso Periamigdalino:</strong> Uma dose única de <strong>Dexametasona 10 mg IV</strong> associada à punção ou aspiração com agulha proporciona alívio dramático da dor em repouso e da odinofagia em menos de 12 horas, acelera a resolução do trismo muscular e permite uma transição mais rápida e segura para hidratação oral."
+          ]
+        ],
+        [
+          "3",
+          "Técnicas Cirúrgicas e Princípios Operatórios"
+        ],
+        [
+          "4",
+          "Drenagem Cirúrgica da Angina de Ludwig (Cervicotomia Submandibular Descompressiva)"
+        ],
+        [
+          "o",
+          [
+            "<strong>Incisão Transversa Submandibular Ampla:</strong> Incisão cervical curva horizontal realizada de 2 a 3 cm abaixo do bordo inferior da mandíbula, estendendo-se de um ângulo mandibular ao outro através da linha média submentoniana (incisão em \"colar\" ou colar submandibular bilateral);",
+            "<strong>Disseção Anatômica por Planos:</strong> Secção do tecido subcutâneo e do músculo platisma. Identificação e preservação cuidadosa do ramo marginal mandibular do nervo facial e dos vasos faciais;",
+            "<strong>Abertura da Fáscia Envoltória e Miotomia do Milo-hióideo:</strong> Incisão da lâmina superficial da fáscia cervical profunda nos compartimentos submandibulares bilaterais. Disseção romba penetrando no espaço sublingual através da <strong>miotomia e desinserção parcial das fibras do músculo milo-hióideo</strong>, descomprimindo integralmente tanto a loja submandibular quanto a loja sublingual;",
+            "<strong>Lavagem Copiosa e Drenagem Ampla:</strong> Obtenção de espécime purulento para microbiologia imediata; lavagem exaustiva de todas as lojas cervicais com solução salina isotônica a 0,9%; posicionamento obrigatório de <strong>drenos túbulo-laminares ou drenos de Penrose calibrosos siliconados múltiplos</strong> exteriorizados por contra-abertura e mantidos sob capilaridade ou sucção contínua;",
+            "<strong>Extração Dentária Focada:</strong> Durante o mesmo ato anestésico, extração cirúrgica meticulosa dos molares inferiores necróticos que serviram como foco odontogênico deflagrador, curetagem alveolar e toalete óssea local."
+          ]
+        ],
+        [
+          "4",
+          "Manejo Cirúrgico do Abscesso Periamigdalino"
+        ],
+        [
+          "u",
+          [
+            "<strong>Aspiração por Agulha Calibrosa (Needle Aspiration):</strong> Realizada com o paciente sentado, sob anestesia tópica com spray de lidocaína 10% na orofaringe e infiltração submucosa com lidocaína 1% com vasoconstritor. Utiliza-se uma agulha 18G ou 19G montada em seringa de 10 mL, introduzida no ponto de maior abaulamento do pilar amigdalino anterior (geralmente no polo superior). <em>Regra de ouro de segurança de prova e plantão:</em> <strong>limitar a profundidade de inserção da agulha em no máximo 1,0 a 1,5 cm</strong> (revestindo os dois terços proximais da agulha com a própria capa plástica protetora cortada ou bainha protetora) para evitar a perfuração iatrogênica e secção inadvertida da <strong>artéria carótida interna</strong>, que trafega imediatamente póstero-lateral ao músculo constritor superior da faringe (a meros 15 a 25 mm da loja tonsilar);",
+            "<strong>Incisão e Drenagem com Lâmina 11:</strong> Se a aspiração obtiver pus franco ou o paciente persistir toxêmico, realiza-se uma incisão mucosa rasa de 0,5 a 1 cm com lâmina de bisturi número 11 no terço superior do pilar anterior, seguida de dissecção e divulsão com pinça hemostática delicada de curvas suaves (pinça de Kelly ou péan) para romper septações fibrosas internas e esvaziar totalmente a cavidade purulenta."
+          ]
+        ],
+        [
+          "4",
+          "Manejo Intervencionista e Endoscópico da Epistaxe Refratária"
+        ],
+        [
+          "o",
+          [
+            "<strong>Tamponamento Nasal Posterior:</strong>\n    <ul>\n      <li><em>Técnica com Cateter de Foley e Gaze Anterior:</em> Introdução de sonda de Foley número 12 ou 14 Fr através da narina sangrante até a visualização de sua extremidade no cavum orofaríngeo; insuflação do balão com 8 a 12 mL de água destilada (nunca usar ar ou solução salina hipertônica que possa precipitar cristais no balonete); tração anterior suave e contínua do cateter até o impacto firme do balão nas coanas posteriores; fixação anterior rigorosa da sonda sem apoio direto na cartilagem da columela ou asa nasal (evitando necrose isquêmica tecidual cutânea) associada a tamponamento nasal anterior firme bilateral;",
+            "<em>Cateteres Balonados Duplos Específicos (ex: Rapid-Rhino / Epistat):</em> Dispositivos dotados de dois balonetes (posterior para coana e anterior para septo nasal) pré-revestidos de hidrogel hemostático carboximetilcelulose. O balonete posterior é inflado com 8 a 10 mL de ar/água e o anterior com 15 a 20 mL, gerando hemostasia uniforme com menor desconforto tecidual. Todo paciente submetido a tamponamento posterior deve ser hospitalizado sob monitorização oximétrica contínua (pelo risco de hipoventilação reflexa nasopulmonar) e mantido com cobertura antimicrobiana sistêmica (ex: amoxicilina-clavulanato) para prevenir a Síndrome do Choque Tóxico Estafilocócico.",
+            "<strong>Ligadura Cirúrgica Endoscópica da Artéria Esfenopalatina (LEAES):</strong> Realizada sob anestesia geral por cirurgia endoscópica endonasal com óptica rígida de 0 ou 30 graus. Identifica-se a crista etmoidal na parede lateral nasal posterior logo acima do forame esfenopalatino; eleva-se o retalho mucoperiósteo e clipam-se com clipes de titânio ou eletrocauterizam-se bipolarmente os ramos arteriais da esfenopalatina. Apresenta taxa de sucesso hemostático superior a 95%, eliminando o desconforto e o risco de necrose associados ao tamponamento nasal prolongado;",
+            "<strong>Embolização Angiográfica Endovascular Seletiva:</strong> Realizada por radiologia intervencionista sob cateterismo da artéria carótida externa. Indicada em pacientes com contraindicações formais para anestesia geral, sangramentos pós-traumáticos extensos com fratura de ossos da face ou falha prévia da ligadura cirúrgica endoscópica."
+          ]
+        ]
+      ]
+    ],
+    [
+      "complicacoes-graves-e-manejo-em-uti",
+      0,
+      [
+        [
+          "2",
+          "7. Complicações Sistêmicas Graves e Manejo do Paciente Crítico"
+        ],
+        [
+          "3",
+          "Mediastinite Necrotizante Descendente (MND)"
+        ],
+        [
+          "p",
+          "A mediastinite necrotizante descendente é a complicação mais letal das infecções odontogênicas e cervicais profundas, com índices históricos de mortalidade que oscilam entre 30% e 50%, mesmo em centros terciários de terapia intensiva. A infecção ganha o tórax propagando-se preferencialmente através do <strong>Danger Space</strong> (espaço retroesofágico pré-vertebral) e da bainha vascular carotídea, alcançando o mediastino posterior, espaço paravertebral, pericárdio parietal e cavidades pleurais."
+        ],
+        [
+          "4",
+          "Critérios Diagnósticos de Estrasburgo para Mediastinite Descendente (Critérios de Estrera)"
+        ],
+        [
+          "o",
+          [
+            "Evidência clínica e microbiológica documentada de infecção orofaríngea ou cervical profunda grave primária;",
+            "Achados radiológicos tomográficos inequívocos de mediastinite aguda: espessamento e infiltração dos planos gordurosos mediastinais, coleções purulentas periaórticas ou peri-esofágicas, pneumomediastino (presença de gás livre mediastinal) e derrames pleurais/pericárdicos associados;",
+            "Documentação intraoperatória de infecção mediastinal necrotizante durante cervicotomia ou toracotomia ampla;",
+            "Estabelecimento da correlação temporal direta entre o foco cervical inicial e o acometimento mediastinal torácico."
+          ]
+        ],
+        [
+          "4",
+          "Manejo Cirúrgico Escalonado da MND"
+        ],
+        [
+          "u",
+          [
+            "<strong>MND Tipo I (Mediastino Superior - acima da carina traqueal ao nível de T4):</strong> Pode ser adequadamente abordada e lavada através de uma <strong>cervicotomia ampla exploradora anterior e lateral</strong> com abertura completa dos espaços retrofaríngeo e pré-traqueal, dissecção digital cuidadosa comunicando com o mediastino superior, lavagem exaustiva com soro aquecido e instalação de drenos mediastinais colocados por via transcervical mantidos sob irrigação contínua;",
+            "<strong>MND Tipo II (Mediastino Inferior e Posterior - abaixo da carina traqueal ao nível de T4):</strong> A abordagem transcervical isolada é absolutamente insuficiente e associada a falência multissistêmica. Exige <strong>toracotomia póstero-lateral ampla ou videotoracoscopia (VATS) precoce</strong> com desbridamento pleural, decorticação de lojas purulentas, mediastinotomia posterior e drenagem torácica tubular bilateral com múltiplos drenos calibrosos siliconados."
+          ]
+        ],
+        [
+          "3",
+          "Trombose de Seio Cavernoso e Complicações Intracranianas"
+        ],
+        [
+          "p",
+          "Originada frequentemente a partir de furúnculos e infecções bacterianas estafilocócicas na chamada <strong>\"área de perigo da face\" (triângulo de Filatov)</strong>, delimitada pela comissura labial bilateral e a raiz nasal entre as órbitas. As veias faciais e angulares não possuem válvulas venosas internas unidirecionais, permitindo fluxo sanguíneo retrógrado através da veia oftálmica superior e inferior diretamente para o interior do seio cavernoso dural na fossa craniana média."
+        ],
+        [
+          "p",
+          "O quadro clínico instala-se com cefaleia retro-orbitária intensa, quemose conjuntival exuberante, proptose ocular pulsátil dolorosa, edema palpebral violáceo bilateral (a trombose cruza para o seio cavernoso contralateral via seio intercavernoso circular em 24 a 48h) e <strong>oftalmoplegia completa</strong> por paralisia dos nervos cranianos que trafegam na parede e no interior do seio cavernoso: pares III (oculomotor), IV (troclear), VI (abducente - geralmente o primeiro a ser paralisado pela sua posição intracavernosa livre adjacente à carótida) e os ramos V1 (oftálmico) e V2 (maxilar) do nervo trigêmeo, provocando hipoestesia na hemiface correspondente. O tratamento requer antibioticoterapia venosa com cobertura para <em>Staphylococcus aureus</em> resistente a meticilina (MRSA) com Vancomicina + Ceftriaxona + Metronidazol em doses meningíticas plenas, associada a heparinização anticoagulante e avaliação neurocirúrgica urgente."
+        ]
+      ]
+    ],
+    [
+      "populacoes-especiais-e-cenarios-desafiadores",
+      0,
+      [
+        [
+          "2",
+          "8. Particularidades em Populações Especiais e Cenários Desafiadores"
+        ],
+        [
+          "3",
+          "O Paciente Diabético e Imunossuprimido"
+        ],
+        [
+          "p",
+          "Em pacientes com Diabetes Mellitus descompensado (especialmente com HbA1c > 8,5% e microangiopatia estabelecida), a resposta imune celular, a quimiotaxia e a opsonização neutrofílica encontram-se profundamente deprimidas. Esse perfil metabólico imprime alterações dramáticas no comportamento das urgências otorrinolaringológicas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fasceíte Necrotizante Cervical com Bactérias Produtoras de Gás:</strong> No hospedeiro diabético, as infecções do pescoço evoluem com necrose fulminante de fáscias musculares e trombose extensa de microvasos, produzindo coleções gasosas difusas decorrentes da fermentação de glicose por <em>Klebsiella pneumoniae</em> hipervirulenta e anaeróbios estritos. A dor inicial é frequentemente mascarada por neuropatia periférica autonômica diabética, levando o paciente a buscar atendimento tardiamente já com sepse e acidose metabólica grave;",
+            "<strong>Otite Externa Necrotizante (Maligna):</strong> Quase 95% dos casos ocorrem em pacientes idosos diabéticos. O microambiente do conduto auditivo externo com cerume de pH mais alcalino e a microangiopatia da base do crânio favorecem a invasão agressiva por <em>Pseudomonas aeruginosa</em> através das incisuras de Santorini na cartilagem auricular, disseminando-se para o forame estilomastóideo e forame jugular com osteomielite do osso temporal. O controle glicêmico estrito por insulinoterapia contínua em bomba de infusão é um pilar tão determinante quanto a antibioticoterapia venosa prolongada para reverter o prognóstico clínico."
+          ]
+        ],
+        [
+          "3",
+          "Emergências Pediátricas: Aspiração de Corpo Estranho e Abscesso Retrofaríngeo"
+        ],
+        [
+          "p",
+          "A anatomia laríngea e traqueal da criança pequena apresenta especificidades que tornam qualquer afecção obstrutiva potencialmente asfixiante:"
+        ],
+        [
+          "t",
+          [
+            "Característica Anatômica Pediátrica",
+            "Diferença em Relação ao Adulto",
+            "Impacto Fisiopatológico na Emergência"
+          ],
+          [
+            [
+              "<strong>Local de Menor Calibre da Via Aérea</strong>",
+              "Na criança menor de 8 anos, a região mais estreita é a <strong>cartilagem cricoide (subglote)</strong>, que possui um anel cartilaginoso circunferencialmente fechado completo (no adulto é a rima glótica).",
+              "Qualquer edema de apenas 1 mm na mucosa subglótica reduz a área de secção transversa da via respiratória em 50% a 75% e quadruplica a resistência ao fluxo aéreo (segundo a Lei de Poiseuille: $R \\propto 1/r^4$), desencadeando estridor e insuficiência respiratória súbita."
+            ],
+            [
+              "<strong>Morfologia e Posição da Epiglote</strong>",
+              "Epiglote em forma de ômega ($Omega$), estreita, flácida e projetada posteriormente; laringe posicionada mais alta no pescoço (nível de C3-C4, versus C5-C6 no adulto).",
+              "Dificulta a laringoscopia direta sob visão convencional e predispõe a colapso dinâmico supraglótico durante esforços inspiratórios intensos."
+            ],
+            [
+              "<strong>Aspiração de Corpo Estranho Orgânico (Amendoim, Grãos, Sementes)</strong>",
+              "Incidência máxima entre 1 e 3 anos de idade (fase de exploração oral motora sem molares trituradores funcionais).",
+              "O corpo estranho orgânico absorve água das secreções brônquicas, incha progressivamente e libera óleos vegetais graxos irritativos, gerando bronquite química inflamatória violenta. Manifesta-se com a tríade clássica: <em>tosse paroxística súbita com engasgo, sibilância unilateral fixa e murmúrio vesicular diminuído focal</em>. A radiografia de tórax revela habitualmente hiperinsuflação obstrutiva unilateral por mecanismo de válvula (aprisionamento de ar expiratório com desvio do mediastino para o lado são). O diagnóstico e remoção exigem <strong>Broncoscopia Rígida sob anestesia geral</strong> em caráter de urgência."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Gestante com Complicação Infecciosa Cervical ou Epistaxe"
+        ],
+        [
+          "p",
+          "Durante a gestação, a mucosa nasal e orofaríngea sofre intensa congestão vascular, estase e hipertrofia tecidual por estímulo estrogênico e progesterônico sustentado, predispondo a episódios recorrentes de epistaxe (rinite gestacional e granuloma piogênico septal). O manejo farmacológico de infecções graves exige seleção criteriosa de antibióticos com segurança fetal comprovada (como ampicilina-sulbactam, cefalosporinas de 3ª geração e metronidazol, evitando fluoroquinolonas pelo risco de artropatias de cartilagem e aminoglicosídeos pela nefro/ototoxicidade fetal). A via aérea na gestante a termo é considerada classicamente via aérea difícil anatômica e fisiológica devido ao ganho de peso, edema de mucosa laringotraqueal e redução expressiva da capacidade residual funcional pulmonar, exigindo pré-oxigenação criteriosa e intubação por especialista sênior."
+        ]
+      ]
+    ],
+    [
+      "protocolos-clinicos-e-fluxogramas-decisorios",
+      0,
+      [
+        [
+          "2",
+          "9. Protocolos Clínicos e Fluxogramas Decisórios"
+        ],
+        [
+          "3",
+          "Algoritmo de Decisão de Via Aérea na Angina de Ludwig"
+        ],
+        [
+          "p",
+          "A conduta sequencial padronizada baseia-se na presença de estridor, trismo e saturação arterial de oxigênio:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Avaliação Imediata de Sinais de Ameaça Iminente:</strong>\n    <ul>\n      <li>Presença de estridor inspiratório audível em repouso, postura em tripé, cianose, tiragem supraclavicular ou saturação de oxigênio em ar ambiente < 90%;",
+            "<em>Conduta:</em> Sala Vermelha ou Centro Cirúrgico com equipe multidisciplinar (Cirurgião de Cabeça e Pescoço, Otorrinolaringologista e Anestesiologista). Manter oxigênio suplementar em máscara não reinalante com reservatório sem forçar decúbito dorsal. Não administrar bloqueadores neuromusculares!",
+            "<strong>Definição da Via Aérea Artificial de Resgate:</strong>\n    <ul>\n      <li><em>Se Trismo Ausente/Leve e Paciente Estável:</em> Realizar intubação orotraqueal guiada por videolaringoscópio ou broncoscópio flexível com o paciente vigil (acordado), mantendo anestesia tópica de mucosa e respiração espontânea ativa;",
+            "<em>Se Trismo Moderado a Severo, Protrusão Lingual Maciça ou Distorção Anatômica:</em> Encaminhamento imediato para <strong>Traqueostomia Cirúrgica sob Anestesia Local</strong> ou Cervicotomia Descompressiva com Traqueostomia Aberta antes de qualquer indução sedativa geral.",
+            "<strong>Drenagem Cirúrgica e Toalete Fascial:</strong>\n    <ul>\n      <li>Cervicotomia submandibular ampla em colar bilateral, incisão da fáscia superficial profunda, miotomia bilateral do milo-hióideo, descompressão dos espaços submandibulares e sublinguais, coleta de secreção para culturas e colocação de drenos de sucção contínua ou Penrose calibrosos múltiplos. Extração dos dentes molares focais culpados.",
+            "<strong>Antibioticoterapia Venosa Imediata de Amplo Espectro:</strong>\n    <ul>\n      <li>Ampicilina-Sulbactam 3 g IV de 6/6h + Vancomicina 15-20 mg/kg IV de 12/12h (se risco de MRSA) ou Piperacilina-Tazobactam 4,5 g IV de 6/6h, associada a hidratação volêmica guiada por metas de perfusão tecidual."
+          ]
+        ],
+        [
+          "3",
+          "Algoritmo Sistematizado de Conduta na Epistaxe Aguda"
+        ],
+        [
+          "t",
+          [
+            "Passo Sequencial",
+            "Ação Clínica / Técnica Médica",
+            "Objetivo e Critério de Sucesso"
+          ],
+          [
+            [
+              "<strong>Etapa 1: Avaliação do ABC e Estabilidade Hemodinâmica</strong>",
+              "Aferição de pressão arterial, frequência cardíaca, oximetria de pulso; obtenção de 2 acessos venosos periféricos calibrosos (16G ou 18G) e coleta de tipagem sanguínea, hematócrito, plaquetas e coagulograma.",
+              "Identificar choque hipovolêmico precoce; iniciar ressuscitação com cristaloides aquecidos se taquicardia ou hipotensão ortostática."
+            ],
+            [
+              "<strong>Etapa 2: Remoção de Coágulos e Compressão Mecânica Externa</strong>",
+              "Orientar o paciente a assoar suavemente as narinas para expulsar coágulos retidos; posicionar o tronco ereto e ligeiramente fletido para a frente (evitando deglutição de sangue); aplicar compressão digital contínua e firme em ambas as asas cartilaginosas nasais por <strong>10 a 15 minutos ininterruptos cronometrados no relógio</strong>.",
+              "Colaba o plexo veno-arterial de Kiesselbach no septo anterior. Resolve mais de 80% das epistaxes anteriores não complicadas."
+            ],
+            [
+              "<strong>Etapa 3: Rinoscopia Anterior com Vasoconstritor e Cauterização</strong>",
+              "Se o sangramento persistir: introduzir mechas de algodão embebidas em vasoconstritor tópico (nafazolina, oximetazolina ou adrenalina 1:100.000) e anestésico tópico (lidocaína 2%) por 5 a 10 minutos. Examinar o septo nasal com espéculo de Hartmann e foco de luz. Se identificado o vaso sangrante puntiforme anterior: realizar <strong>cauterização química com bastonete de nitrato de prata a 75%</strong> (em movimento concêntrico da periferia para o centro do vaso). <em>Atenção de prova: nunca cauterizar simultaneamente os dois lados da cartilagem septal no mesmo nível sob pena de perfuração isquêmica do septo nasal</em>.",
+              "Hemostasia química seletiva de vaso anterior com interrupção definitiva da hemorragia."
+            ],
+            [
+              "<strong>Etapa 4: Tamponamento Nasal Anterior</strong>",
+              "Se sangramento difuso anterior persistir ou vaso não visualizado: inserir esponja expansível hidrofílica de polivinilacetato (Merocel) lubrificada com pomada antibiótica ou empacotamento com fita de gaze vaselinada dobrada em \"sanfona\" de baixo para cima ao longo de todo o assoalho nasal.",
+              "Compressão mecânica direta de toda a cavidade nasal anterior. Manter por 48 a 72 horas com prescrição de antibiótico oral profilático (cefalexina ou amoxicilina-clavulanato) para evitar choque tóxico."
+            ],
+            [
+              "<strong>Etapa 5: Tamponamento Nasal Posterior ou Abordagem Cirúrgica</strong>",
+              "Se houver escorrimento persistente de sangue rubro vivo pela retrofaringe após tamponamento anterior eficaz ou se sangramento volumoso posterior primário: realizar <strong>tamponamento posterior com cateter balonado duplo ou sonda de Foley</strong> (8-12 mL no balão no cavum) tracionada e associada a tamponamento anterior. Internação hospitalar obrigatória em leito de monitorização. Se falha ou sangramento recorrente: indicar cirurgia endoscópica para ligadura da artéria esfenopalatina (LEAES) ou embolização angiográfica percutânea.",
+              "Controle definitivo de sangramento do plexo de Woodruff e ramos arteriais da carótida externa."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-estruturados-e-resolvidos",
+      0,
+      [
+        [
+          "2",
+          "10. Casos Clínicos Estruturados e Resolvidos com Raciocínio Clínico Completo"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Angina de Ludwig com Obstrução Iminente de Via Aérea"
+        ],
+        [
+          "4",
+          "Identificação e História Clínica"
+        ],
+        [
+          "p",
+          "Paciente do sexo masculino, 42 anos, pedreiro, portador de Diabetes Mellitus tipo 2 em uso irregular de metformina, dá entrada no pronto-socorro cirúrgico trazido pelo SAMU com queixa de dor intensa em região submandibular, febre alta e dificuldade progressiva para respirar e engolir com início há 4 dias. Refere dor de dente molar inferior direito há cerca de duas semanas, tendo feito uso por conta própria de anti-inflamatórios não esteroidais (ibuprofeno). Há 24 horas evoluiu com inchaço volumoso sob a mandíbula que se estendeu rapidamente para todo o pescoço e para o lado esquerdo."
+        ],
+        [
+          "4",
+          "Exame Físico na Admissão"
+        ],
+        [
+          "u",
+          [
+            "<strong>Sinais Vitais:</strong> PA 138/86 mmHg, FC 118 bpm, FR 28 irpm, Temp 38,9 ºC, SpO2 91% em ar ambiente;",
+            "<strong>Ectoscopia:</strong> Paciente taquipneico, sudoreico, sentado no leito com o tronco inclinado para a frente (postura em tripé). Recusa-se terminantemente a deitar em decúbito dorsal. Fala com tom extremamente abafado (\"voz em batata quente\") e sialorreia profusa escorrendo pelas comissuras labiais;",
+            "<strong>Exame Cervical e Facial:</strong> Tumefação volumosa, difusa, bilateral, empastada e com consistência lenhosa (\"em madeira\") comprometendo as regiões submandibulares direita e esquerda e a região submentoniana (\"pescoço em touro\"). A pele sobrejacente está hiperemiada, brilhante e quente, sem pontos de flutuação circunscrita perceptíveis;",
+            "<strong>Exame Orofaringolaríngeo:</strong> Abertura bucal limitada a apenas 1,2 cm devido a trismo doloroso intenso. Assoalho da boca francamente edemaciado, avermelhado e endurecido; a língua encontra-se elevada e deslocada posteriormente contra o palato duro, com sua ponta protusa para fora dos incisivos; visualização da orofaringe e epiglote impossibilitada pelo trismo e protrusão lingual. Estridor inspiratório leve audível à ausculta cervical. Restante do exame cárdio-pulmonar sem estertores crepitantes pulmonares, ausência de crepitação enfisematosa subcutânea infraclavicular."
+          ]
+        ],
+        [
+          "4",
+          "Exames Laboratoriais Iniciais"
+        ],
+        [
+          "p",
+          "Hemoglobina 13,2 g/dL, Leucócitos 22.400/mm³ (bastonetes 14%, segmentados 76%, linfócitos 7%), Plaquetas 240.000/mm³, Glicemia 284 mg/dL, Ureia 48 mg/dL, Creatinina 1,1 mg/dL, Proteína C-Reativa 215 mg/L, Lactato arterial 2,2 mmol/L, Gasometria arterial (FiO2 0,21): pH 7,34, pO2 62 mmHg, pCO2 36 mmHg, HCO3 19 mEq/L, SatO2 90%."
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Tomada de Decisão Passo a Passo"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Sindrômico e Topográfico:</strong> Trata-se de uma infecção flegmonosa necrotizante profunda de etiologia odontogênica (molar inferior) acometendo simultânea e bilateralmente os espaços submandibulares, sublinguais e submentonianos, preenchendo os critérios estritos de <strong>Angina de Ludwig complicada com insuficiência respiratória obstrutiva alta iminente</strong>;",
+            "<strong>Manejo da Via Aérea (Decisão Crítica Primordial):</strong> O paciente apresenta postura em tripé, trismo severo, elevação maciça da língua e estridor. A tentativa de intubação orotraqueal por laringoscopia direta sob sedação venosa e curarização é estritamente contraindicada, pois provocará relaxamento muscular com colapso hipofaríngeo total e impossibilidade de intubação e ventilação manual (\"cannot intubate, cannot oxygenate\"). O cirurgião de cabeça e pescoço e o anestesiologista encaminharam o paciente imediatamente à sala cirúrgica para realização de <strong>Traqueostomia Cirúrgica de Urgência sob anestesia local e sedação mínima consciente</strong> com o paciente mantido em fowler a 60 graus;",
+            "<strong>Conduta Terapêutica Cirúrgica:</strong> Imediatamente após a fixação da cânula de traqueostomia com balonete insuflado e confirmação de ventilação mecânica pulmonar eficaz, o paciente foi submetido à anestesia geral para <strong>Cervicotomia Submandibular Ampla em Colar Bilateral</strong>, incisão da lâmina superficial da fáscia profunda e <strong>miotomia ampla do músculo milo-hióideo bilateral</strong>. Não havia loja purulenta única circunscrita, mas saída de abundante secreção fétida serossanguinolenta necrótica. Foi realizada lavagem exaustiva com soro fisiológico a 0,9%, instalação de 4 drenos túbulo-laminares de silicone exteriorizados por contra-abertura e extração cirúrgica do 2º e 3º molares inferiores direitos necróticos;",
+            "<strong>Antibioticoterapia e Suporte Intensivo:</strong> Instituído <strong>Ampicilina-Sulbactam 3 g IV de 6/6 horas</strong> associado a <strong>Vancomicina 1 g IV de 12/12 horas</strong> e hidratação guiada por metas em leito de Terapia Intensiva com insulinoterapia em bomba contínua. As culturas intraoperatórias isolaram <em>Streptococcus constellatus</em> e <em>Prevotella melaninogenica</em> resistentes a clindamicina, confirmando a adequação do esquema antibiótico. O paciente apresentou melhora clínica contínua, retirada dos drenos no 6º dia pós-operatório e decanulação com sucesso no 10º dia."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Abscesso Periamigdalino com Odino-fagia Unilateral e Trismo"
+        ],
+        [
+          "4",
+          "Identificação e História Clínica"
+        ],
+        [
+          "p",
+          "Mulher, 24 anos, estudante universitária, previamente hígida, procura o pronto-atendimento queixando-se de dor de garganta intensa que piorou substancialmente nos últimos 3 dias, tornando-se restrita ao lado esquerdo. Refere ter sido atendida em posto de saúde 5 dias antes por quadro de faringoamigdalite, tendo recebido prescrição de amoxicilina oral 500 mg de 8/8h, a qual suspendeu por conta própria no 3º dia por náuseas. Refere febre alta diária, incapacidade quase total de deglutir qualquer alimento líquido ou pastoso, sensação de \"aperto na garganta\" e dor forte que irradia para o ouvido esquerdo."
+        ],
+        [
+          "4",
+          "Exame Físico"
+        ],
+        [
+          "u",
+          [
+            "<strong>Sinais Vitais:</strong> PA 115/70 mmHg, FC 94 bpm, FR 16 irpm, Temp 38,4 ºC, SpO2 99% em ar ambiente;",
+            "<strong>Oroscopia:</strong> Trismo moderado (abertura bucal de cerca de 2 cm dolorosa). Presença de <strong>abaulamento acentuado e tenso do pilar amigdalino anterior esquerdo e do palato mole ipsilateral</strong>, que se projeta em direção à linha média, recobrindo parcialmente a amígdala esquerda. <strong>A úvula encontra-se edematosa e francamente desviada para a direita</strong> (lado contralateral são). Observa-se drenagem de secreção purulenta escassa pela cripta superior. Voz abafada típica; ausência de estridor respiratório; tireoide e traqueia na linha média sem desvios; linfonodomegalia submandibular e jugulodigástrica esquerda dolorosa à palpação de 2,5 cm móvel;",
+            "<strong>Otoscopia Bilateral:</strong> Membranas timpânicas íntegras, translúcidas e de coloração nacarada normal bilateralmente, sem abaulamentos ou perfurações."
+          ]
+        ],
+        [
+          "4",
+          "Interpretação e Plano Terapêutico Resolvido"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Clínico:</strong> O quadro clínico clássico de piora assimétrica unilateral, desvio contralateral da úvula, trismo, otalgia reflexa (nervo glossofaríngeo) e abaulamento do pilar anterior confirma o diagnóstico de <strong>Abscesso Periamigdalino (Peritonsilar) Esquerdo</strong> secundário a amigdalite bacteriana tratada inadequadamente;",
+            "<strong>Procedimento Intervencionista de Urgência:</strong> O tratamento resolutivo exige drenagem do espaço periamigdalino. O procedimento foi realizado na própria sala de procedimentos do pronto atendimento com a paciente na posição sentada:\n      <ul>\n        <li>Anestesia tópica com spray de lidocaína 10% seguida de infiltração submucosa com 2 mL de lidocaína 1% com vasoconstritor no ponto de maior abaulamento;",
+            "<strong>Punção aspirativa diagnóstica e descompressiva</strong> utilizando agulha 18G com a capa protetora plástica encurtada deixando apenas 1,5 cm de ponta metálica exposta (evitando lesão inadvertida da artéria carótida interna). A aspiração obteve 6,5 mL de secreção purulenta amarelada franca e espessa com alívio imediato do trismo e da dor;",
+            "Em seguida, procedeu-se a uma pequena incisão de 8 mm com bisturi lâmina 11 no sítio da punção e divulsão delicada com pinça hemostática de curva suave, permitindo drenagem de mais 3 mL de pus residual e debris fibrinosos.",
+            "<strong>Conduta Farmacológica:</strong> Administração de dose única venosa de <strong>Dexametasona 10 mg IV</strong> associada à reposição hidroeletrolítica e início de <strong>Ampicilina-Sulbactam 1,5 g IV de 6/6 horas</strong>. A paciente foi mantida em observação clínica por 24 horas, evoluindo com aceitação de dieta líquida fria e defervescência completa. Teve alta hospitalar no 2º dia com prescrição de <strong>Amoxicilina-Clavulanato 875/125 mg por via oral de 12/12 horas</strong> para completar 14 dias de tratamento ambulatorial."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Epistaxe Posterior Grave em Idoso Hipertenso"
+        ],
+        [
+          "4",
+          "Identificação e História Clínica"
+        ],
+        [
+          "p",
+          "Homem, 68 anos, aposentado, com diagnóstico prévio de hipertensão arterial sistêmica grave há 20 anos e insuficiência cardíaca crônica de fração de ejeção preservada, em uso irregular de anlodipino 10 mg/dia, enalapril 20 mg 2x/dia e ácido acetilsalicílico (AAS) 100 mg/dia. É admitido na sala vermelha da emergência por sangramento nasal volumoso pela narina esquerda e eliminação de grande quantidade de sangue pela boca iniciado há 2 horas em repouso. O paciente tentou compressão com gelo em casa sem sucesso e vomitou aproximadamente 300 mL de sangue escuro com coágulos na chegada ao hospital."
+        ],
+        [
+          "4",
+          "Exame Físico na Admissão"
+        ],
+        [
+          "u",
+          [
+            "<strong>Sinais Vitais:</strong> PA 210/120 mmHg, FC 106 bpm, FR 22 irpm, SpO2 96% com cateter nasal 2 L/min;",
+            "<strong>Ectoscopia:</strong> Paciente pálido (++/4+), diaforético, ansioso, tossindo sangue e com sangramento contínuo vermelho vivo pela narina esquerda e escorrimento profuso e ininterrupto pela orofaringe posterior mesmo com a compressão digital bilateral das asas nasais mantida pela enfermagem;",
+            "<strong>Rinoscopia e Oroscopia:</strong> Remoção de volumosos coágulos da cavidade nasal e faringe com aspirador rígido de Yankauer. O septo nasal anterior (área de Kiesselbach) não exibe pontos ativos de sangramento. À oroscopia, visualiza-se \"cascata\" espessa de sangue arterial escorrendo da rinofaringe descendo pela parede faríngea posterior."
+          ]
+        ],
+        [
+          "4",
+          "Exames Laboratoriais"
+        ],
+        [
+          "p",
+          "Hb 9,8 g/dL, Ht 29%, Leucócitos 8.900/mm³, Plaquetas 210.000/mm³, TP (RNI) 1,05, TTPa 28 segundos, Ureia 52 mg/dL, Creatinina 1,3 mg/dL, Troponina I ultrassensível negativa, ECG mostrando sobrecarga ventricular esquerda sem corrente de lesão isquêmica aguda."
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Conduta Terapêutica Estruturada"
+        ],
+        [
+          "o",
+          [
+            "<strong>Classificação e Topografia:</strong> Trata-se de uma <strong>Epistaxe Posterior Grave</strong> originada no plexo de Woodruff / território da artéria esfenopalatina na parede lateral nasal póstero-inferior, deflagrada por crise hipertensiva severa e agravada por antiagregação com AAS em paciente idoso;",
+            "<strong>Manejo das Emergências Vitais (ABC):</strong>\n      <ul>\n        <li>Obtenção de 2 acessos venosos periféricos 16G, reserva de concentrado de hemácias e infusão comedida de cristaloide isotônico;",
+            "Controle pressórico urgente com <strong>Nitroprussiato de Sódio IV em infusão contínua titulada</strong> em bomba, visando redução gradual de 20% a 25% da pressão arterial média nas primeiras 2 horas, evitando hipotensão abrupta que comprometa a perfusão coronariana ou cerebral;",
+            "<strong>Hemostasia Mecânica de Urgência:</strong>\n      <ul>\n        <li>Realização imediata de <strong>Tamponamento Nasal Posterior</strong>: introdução de sonda de Foley calibre 14 Fr lubrificada pela narina esquerda até visibilização da ponta no cavum, insuflação do balonete com 10 mL de água destilada estéril e tração anterior firme contra as coanas posteriores;",
+            "Fixação anterior da sonda utilizando clamp plástico com proteção estofada sem pressão sobre a columela nasal;",
+            "Realização concomitante de tamponamento nasal anterior com fita de gaze vaselinada estéril dobrada em sanfona bilateral. O sangramento cessou completamente tanto pelas narinas quanto pela orofaringe posterior após a tração do balão;",
+            "<strong>Seguimento e Abordagem Definitiva:</strong> Paciente internado em Unidade de Terapia Intensiva com monitorização hemodinâmica contínua e oximetria de pulso, recebendo amoxicilina-clavulanato venoso profilático contra síndrome do choque tóxico. Devido ao sangramento posterior volumoso e uso crônico de antiagregante, no 2º dia de internação o paciente foi submetido a <strong>Cirurgia Endoscópica Endonasal com Ligadura e Eletrocauterização Bipolar dos Ramos da Artéria Esfenopalatina Esquerda</strong> sob anestesia geral. O tamponamento posterior foi removido no mesmo ato operatório, sem nenhuma recidiva hemorrágica, recebendo alta hospitalar no 4º dia pós-operatório com pressão arterial rigorosamente controlada."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Mastoidite Coalescente Aguda com Abscesso Subperiosteal em Criança"
+        ],
+        [
+          "4",
+          "Identificação e História Clínica"
+        ],
+        [
+          "p",
+          "Menino, 4 anos e 8 meses de idade, previamente hígido, vacinação atualizada pelo PNI, é levado à emergência pediátrica pela mãe com história de dor de ouvido direita e febre há 10 dias. Foi atendido em serviço ambulatorial no 3º dia de doença com diagnóstico de otite média aguda, tendo recebido prescrição de amoxicilina oral (50 mg/kg/dia), a qual foi administrada de forma irregular pelos pais durante apenas 4 dias e suspensa após melhora inicial transitória. Há 48 horas a criança voltou a apresentar picos febris diários de 39 °C, recusa alimentar, choro inconsolável e inchaço avermelhado atrás da orelha direita que vem empurrando a orelha para a frente."
+        ],
+        [
+          "4",
+          "Exame Físico Pediátrico"
+        ],
+        [
+          "u",
+          [
+            "<strong>Sinais Vitais:</strong> FC 132 bpm, FR 24 irpm, Temp axilar 38,8 ºC, SpO2 98% em ar ambiente;",
+            "<strong>Exame Regional da Cabeça e Orelha Direita:</strong> Presença de tumefação volumosa, hiperemiada, quente e intensamente dolorosa na região retroauricular direita, sobre o processo mastóideo, com <strong>apagamento do sulco retroauricular</strong>. <strong>O pavilhão auricular direito encontra-se projetado anteriormente e inferiormente</strong> (\"orelha em abano\" pronunciada unilateral). Palpação delicada revela área central com clara flutuação de coleção líquida sob a pele retroauricular;",
+            "<strong>Otoscopia Direita:</strong> Visualização do meato acústico externo revela estreitamento importante por abaulamento e colapso da parede póstero-superior do meato (queda de parede); membrana timpânica espessada, hiperemiada e abaulada com perfuração puntiforme central drenando secreção mucopurulenta pulsátil contínua;",
+            "<strong>Exame Neurológico:</strong> Criança lúcida, sem sinais meníngeos (rigidez de nuca ausente, sinais de Kernig e Brudzinski negativos), sem paralisia facial periférica (motricidade da mímica facial simétrica), sem estrabismo convergente ou nistagmo espontâneo."
+          ]
+        ],
+        [
+          "4",
+          "Exames Complementares"
+        ],
+        [
+          "p",
+          "Leucograma com 19.800 leucócitos/mm³ (10% bastonetes, 72% segmentados), PCR 148 mg/L. Foi realizada <strong>Tomografia Computadorizada de Ossos Temporais em cortes finos axiais e coronais</strong> que demonstrou opacificação total do antro e das células mastóideas direitas, destruição lítica com reabsorção dos septos ósseos trabeculares intercelulares (coalescência verdadeira) e <strong>solução de continuidade por osteólise da cortical óssea externa mastóidea</strong> comunicando com coleção fluida subperiosteal retroauricular de 2,2 x 1,5 cm compatível com <strong>Abscesso Subperiosteal de Luc</strong>. Não havia sinais de erosão da tábua óssea interna nem acometimento do sulco do seio sigmoide ou fossa craniana posterior."
+        ],
+        [
+          "4",
+          "Conduta Terapêutica Resolvida Passo a Passo"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Conclusivo:</strong> Mastoidite Coalescente Aguda Direita complicada com Abscesso Subperiosteal Retroauricular pós-Otite Média Aguda subtratada;",
+            "<strong>Internação e Terapia Antimicrobiana:</strong> Internação hospitalar imediata em enfermaria cirúrgica pediátrica e início de <strong>Ceftriaxona venosa na dose de 100 mg/kg/dia</strong> (cobertura otimizada para <em>Streptococcus pneumoniae</em> e <em>Haemophilus influenzae</em>) associada a <strong>Oxacilina 100 mg/kg/dia IV</strong>;",
+            "<strong>Tratamento Cirúrgico Imediato:</strong>\n      <ul>\n        <li>Encaminhamento ao centro cirúrgico sob anestesia geral;",
+            "<strong>Drenagem cirúrgica do abscesso subperiosteal</strong> através de incisão retroauricular curvilínea, curetagem da cortical óssea fístulo-necrótica e coleta de pus para culturas bacteriológicas com antibiograma;",
+            "<strong>Miringotomia ampla no quadrante ântero-inferior</strong> da membrana timpânica direita associada à inserção de <strong>Tubo de Ventilação Carretel (Shepard)</strong> para descompressão e drenagem contínua da orelha média;",
+            "Instalação de dreno laminar retroauricular mantido por 48 horas;",
+            "<strong>Desfecho Clínico:</strong> As culturas do abscesso revelaram crescimento de <em>Streptococcus pneumoniae</em> sensível à ceftriaxona. A criança evoluiu com defervescência térmica em 24 horas, regressão completa do edema e retorno da orelha à posição anatômica. Completou 14 dias de ceftriaxona venosa seguidos de alta com excelente recuperação funcional auditiva e tubo de ventilação normoposicionado."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-de-concurso-e-residencia-comentadas",
+      0,
+      [
+        [
+          "2",
+          "11. Questões de Concurso e Residência Médica Comentadas na Íntegra"
+        ],
+        [
+          "3",
+          "Questão 1 (USP - Cirurgia Geral / Emergência)"
+        ],
+        [
+          "p",
+          "Homem de 38 anos, etilista, procura o pronto-socorro com história de dor de dente há 10 dias e, há 48 horas, dor de garganta, febre e inchaço no pescoço. Ao exame físico: paciente taquipneico, sentado no leito com o pescoço estendido, sialorreia importante, trismo com abertura bucal de 1,5 cm e fala anasalada/abafada. À palpação cervical: tumefação endurecida e dolorosa ocupando as regiões submandibulares bilateralmente e submentoniana, sem áreas nítidas de flutuação. À oroscopia rápida: soalho da boca avermelhado e endurecido, com elevação da língua contra o palato. Oximetria em ar ambiente de 92%. Diante deste quadro clínico, a prioridade absoluta e a conduta imediata mais segura para assegurar a ventilação é:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Realizar laringoscopia direta sob sedação venosa rápida com midazolam e succinilcolina para intubação orotraqueal imediata com tubo de menor calibre.<br>\n<strong>B)</strong> Proceder à traqueostomia cirúrgica sob anestesia local em sala cirúrgica ou intubação com broncoscópio flexível com o paciente acordado.<br>\n<strong>C)</strong> Puncionar com agulha calibrosa 14G o espaço submandibular direito e aguardar a drenagem purulenta antes de qualquer intervenção de via aérea.<br>\n<strong>D)</strong> Administrar hidrocortisona 500 mg IV e nebulização com adrenalina, mantendo o paciente em decúbito dorsal horizontal na sala de emergência para aguardar a tomografia de pescoço."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado do Especialista:</strong> O quadro clínico descreve classicamente a <strong>Angina de Ludwig</strong>, uma celulite flegmonosa bilateral rápida dos espaços submandibular, sublingual e submentoniano com elevação do soalho da boca e protrusão da língua. A postura em tripé, trismo, sialorreia e desaturação indicam <strong>risco crítico de obstrução aguda da via aérea</strong>."
+        ],
+        [
+          "u",
+          [
+            "<em>Por que a alternativa B está correta?</em> Em pacientes com trismo e distorção acentuada da via aérea superior por angina de Ludwig, o padrão-ouro de segurança para evitar o colapso respiratório fatal é a <strong>traqueostomia sob anestesia local</strong> ou a <strong>intubação por broncoscopia flexível no paciente vigil (acordado)</strong> com preservação do drive respiratório espontâneo;",
+            "<em>Por que a alternativa A está incorreta?</em> A laringoscopia direta com indução em sequência rápida (sedação profunda e bloqueador neuromuscular como succinilcolina) é proscrita e catastrófica: o relaxamento muscular elimina o tônus compensatório faríngeo, levando ao colapso total da hipofaringe (\"cannot intubate, cannot oxygenate\") e parada respiratória imediata;",
+            "<em>Por que a alternativa C está incorreta?</em> A angina de Ludwig é inicialmente uma celulite gangrenosa flegmonosa difusa sob alta pressão fascial, e não um abscesso purulento uniloculado. A punção por agulha não descomprime a via aérea nem esvazia coleções adequadamente, sendo perda de tempo precioso;",
+            "<em>Por que a alternativa D está incorreta?</em> Corticoides e adrenalina inalatória não revertem a obstrução mecânica fascial. Colocar esse paciente em decúbito dorsal é fatal, pois a língua tomba para trás, obstruindo completamente a via aérea em segundos."
+          ]
+        ],
+        [
+          "3",
+          "Questão 2 (UNICAMP - Emergências Médicas / Otorrinolaringologia)"
+        ],
+        [
+          "p",
+          "Mulher de 22 anos apresenta dor de garganta intensa há 5 dias, com piora expressiva à esquerda há 24 horas. Relata odinofagia grave, febre de 38,8 °C e dor no ouvido esquerdo. Ao exame: trismo moderado, voz pastosa (\"em batata quente\"), abaulamento do pilar amigdalino anterior esquerdo e do palato mole superior, com desvio da úvula para a direita e amígdala esquerda deslocada medialmente. A conduta imediata indicada é:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Amigdalectomia bilateral de urgência sob anestesia geral nas primeiras 2 horas.<br>\n<strong>B)</strong> Aspiração com agulha ou incisão e drenagem do espaço periamigdalino esquerdo associada a antibioticoterapia venosa.<br>\n<strong>C)</strong> Solicitação prévia obrigatória de ressonância magnética de crânio e pescoço antes de qualquer intervenção.<br>\n<strong>D)</strong> Apenas troca do antibiótico oral para ciprofloxacino ambulatorial, já que a presença de trismo contraindica drenagem."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado do Especialista:</strong> Trata-se da apresentação clássica de <strong>Abscesso Periamigdalino (Peritonsilar)</strong>: acometimento unilateral, trismo, otalgia reflexa (nervo glossofaríngeo) e desvio contralateral da úvula."
+        ],
+        [
+          "u",
+          [
+            "<em>Por que a alternativa B está correta?</em> O tratamento de escolha na fase supurativa é o esvaziamento mecânico da coleção através de <strong>aspiração com agulha calibrosa (18G) ou incisão e drenagem do pilar anterior</strong> com lâmina 11, associada a antibioticoterapia venosa cobrindo flora estreptocócica e anaeróbia (ex: ampicilina-sulbactam);",
+            "<em>Por que a alternativa A está incorreta?</em> A amigdalectomia bilateral \"a quente\" (quinsy tonsillectomy) é reservada para raros casos de falha de múltiplas drenagens, obstrução de via aérea refratária ou episódios prévios de abscesso periamigdalino de repetição; não é a conduta primária;",
+            "<em>Por que a alternativa C está incorreta?</em> O diagnóstico do abscesso periamigdalino típico é essencialmente clínico. Postergar a drenagem para aguardar exames de imagem demorados como RM expõe a paciente ao risco de extensão para o espaço parafaríngeo;",
+            "<em>Por que a alternativa D está incorreta?</em> Prescrição de ciprofloxacino isolado é inadequada microbiologicamente (má cobertura para estreptococos e anaeróbios) e coleções purulentas requerem descompressão cirúrgica mandatória."
+          ]
+        ],
+        [
+          "3",
+          "Questão 3 (ENAMED / Revalida Nacional)"
+        ],
+        [
+          "p",
+          "Idoso de 72 anos, hipertenso crônico em uso de enalapril e ácido acetilsalicílico, é admitido com sangramento nasal volumoso. À avaliação, o paciente encontra-se ansioso, com PA 190/110 mmHg e FC 102 bpm. Foi realizada compressão digital contínua das asas nasais por 15 minutos com expulsão prévia de coágulos, sem interrupção do sangramento. À oroscopia, observa-se escorrimento ativo e copioso de sangue vivo descendo pela parede posterior da orofaringe, sem lesão visível no septo nasal anterior à rinoscopia anterior. A melhor conduta sequencial imediata é:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Cauterização química com nitrato de prata do plexo de Kiesselbach bilateralmente.<br>\n<strong>B)</strong> Encaminhamento imediato para ressonância magnética nuclear de face sem procedimentos hemostáticos.<br>\n<strong>C)</strong> Tamponamento nasal posterior (com balão duplo ou sonda de Foley associada a tamponamento anterior), controle pressórico e internação hospitalar.<br>\n<strong>D)</strong> Transfusão imediata de 4 unidades de concentrado de hemácias e alta com orientações posturais."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: C</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado do Especialista:</strong> O quadro clínico caracteriza uma <strong>Epistaxe Posterior</strong>: paciente idoso, hipertenso, em uso de antiagregante plaquetário, ausência de ponto sangrante no septo anterior e sangramento que continua fluindo copiosamente pela parede posterior da faringe mesmo sob compressão digital externa."
+        ],
+        [
+          "u",
+          [
+            "<em>Por que a alternativa C está correta?</em> Na epistaxe posterior, o sangramento origina-se no plexo de Woodruff / artéria esfenopalatina. A compressão externa e a cauterização anterior são ineficazes. Deve-se realizar o <strong>tamponamento nasal posterior imediato</strong> (com sonda de Foley ou cateter de duplo balão) acoplado ao tamponamento anterior, controle pressórico e internação obrigatória com monitorização;",
+            "<em>Por que a alternativa A está incorreta?</em> O sangramento não é anterior (Kiesselbach); cauterizar o septo anterior é inútil e cauterização septal bilateral no mesmo nível causa perfuração isquêmica;",
+            "<em>Por que a alternativa B está incorreta?</em> Hemorragias ativas graves exigem hemostasia física imediata antes de qualquer estudo imaginológico;",
+            "<em>Por que a alternativa D está incorreta?</em> Transfusão sem estancar o sítio hemorrágico não soluciona a perda volêmica contínua, e o paciente tem indicação formal de internação hospitalar."
+          ]
+        ],
+        [
+          "3",
+          "Questão 4 (SURCE / PSU-MG - Pediatria e Cirurgia)"
+        ],
+        [
+          "p",
+          "Lactente de 18 meses é levado ao pronto-socorro com tosse súbita com engasgo ocorrida há cerca de 4 horas enquanto comia amendoim com os irmãos mais velhos. No momento do atendimento, a criança encontra-se afebril, com taquipneia moderada e tiragem subcostal leve. À ausculta respiratória: murmúrio vesicular acentuadamente diminuído em hemitórax direito, com sibilos expiratórios localizados no mesmo lado. A radiografia de tórax revela hiperinsuflação do pulmão direito com rebaixamento da cúpula diafragmática ipsilateral e desvio do mediastino para o lado esquerdo durante a expiração. A conduta diagnóstica e terapêutica definitiva é:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Nebulização contínua com salbutamol e ipratrópio por 4 horas e reavaliação radiográfica ambulatorial.<br>\n<strong>B)</strong> Broncoscopia rígida de urgência sob anestesia geral para remoção do corpo estranho.<br>\n<strong>C)</strong> Toracotomia exploradora imediata para ressecção de lobo pulmonar direito atelectasiado.<br>\n<strong>D)</strong> Manobra de Heimlich repetida 10 vezes no leito e observação clínica domiciliar."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado do Especialista:</strong> O quadro é patognomônico de <strong>aspiração de corpo estranho em árvore traqueobrônquica</strong> em criança na faixa de maior risco (1 a 3 anos). O mecanismo valvular do corpo estranho no brônquio principal direito gera aprisionamento de ar expiratório (hiperinsuflação com desvio contralateral do mediastino)."
+        ],
+        [
+          "u",
+          [
+            "<em>Por que a alternativa B está correta?</em> A <strong>broncoscopia rígida sob anestesia geral</strong> é o padrão-ouro e método definitivo tanto para a confirmação diagnóstica quanto para a extração segura do corpo estranho da via aérea na faixa pediátrica;",
+            "<em>Por que a alternativa A está incorreta?</em> Broncodilatadores inalatórios não removem a obstrução mecânica e podem acelerar o deslocamento do objeto;",
+            "<em>Por que a alternativa C está incorreta?</em> Toracotomia cirúrgica é medida invasiva de exceção, absolutamente desproporcional antes da broncoscopia;",
+            "<em>Por que a alternativa D está incorreta?</em> As manobras de desobstrução (Heimlich / golpes dorsais) são indicadas exclusivamente na asfixia aguda com obstrução total da via aérea superior (criança que não chora, não tosse e não respira). Na criança estável que respira e tosse, tais manobras podem mobilizar o corpo estranho brônquico para a traqueia ou glote, provocando asfixia total súbita."
+          ]
+        ],
+        [
+          "3",
+          "Questão 5 (USP-RP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Paciente jovem de 19 anos comparece com quadro de febre há 7 dias que teve início após episódio de amigdalite aguda. Ao exame físico: paciente séptico, com dor e empastamento ao longo do trajeto do músculo esternocleidomastoideo direito e tosse com escarro hemoptoico. A tomografia computadorizada cervical com contraste demonstra falha de enchimento luminal na veia jugular interna direita com espessamento de sua parede. A tomografia de tórax evidencia múltiplos nódulos periféricos com escavação central e derrame pleural bilateral. As hemoculturas revelaram bacilos gram-negativos anaeróbios estritos. O diagnóstico correto e o agente etiológico mais frequente são:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Angina de Ludwig / <em>Streptococcus viridans</em>.<br>\n<strong>B)</strong> Síndrome de Lemierre / <em>Fusobacterium necrophorum</em>.<br>\n<strong>C)</strong> Tuberculose ganglionar cervical / <em>Mycobacterium tuberculosis</em>.<br>\n<strong>D)</strong> Abscesso retrofaríngeo / <em>Staphylococcus aureus</em>."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado do Especialista:</strong> A combinação de infecção orofaríngea precedente, tromboflebite séptica da veia jugular interna e êmbolos sépticos metastáticos para os pulmões (nódulos escavados) define a <strong>Síndrome de Lemierre</strong> (sepse pós-anginosa)."
+        ],
+        [
+          "u",
+          [
+            "<em>Por que a alternativa B está correta?</em> O agente etiológico clássico isolado em mais de 80% dos casos de Síndrome de Lemierre é o <strong>Fusobacterium necrophorum</strong>, um bacilo gram-negativo anaeróbio obrigatório da flora comensal oral com alta capacidade trombogênica e invasiva;",
+            "<em>Por que as demais alternativas estão incorretas?</em> A angina de Ludwig acomete o assoalho bucal bilateralmente e não gera classicamente tromboflebite jugular com êmbolos pulmonares cavitados; a tuberculose e o abscesso retrofaríngeo não apresentam essa fisiopatologia tromboflebítica séptica pós-tonsilar descrita."
+          ]
+        ],
+        [
+          "3",
+          "Questão 6 (IAMSPE - Cirurgia Geral)"
+        ],
+        [
+          "p",
+          "Criança de 3 anos de idade, com história de otite média aguda há 12 dias tratada de forma irregular com amoxicilina por 3 dias, é admitida com febre alta persistente, irritabilidade, dor retroauricular direita e deslocamento anterior e inferior do pavilhão auricular ipsilateral (\"orelha em abano\"). À palpação, há dor intensa e flutuação na cortical mastóidea. A tomografia computadorizada de ossos temporais confirma opacificação mastóidea com desmineralização das trabéculas ósseas (coalescência) e erosão da cortical externa com abscesso subperiosteal. Assinale a conduta terapêutica completa recomendada:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Manter tratamento estritamente clínico domiciliar com amoxicilina em dose dobrada por mais 10 dias.<br>\n<strong>B)</strong> Internação hospitalar, antibioticoterapia parenteral com cobertura para pneumococo e germes de vias aéreas, drenagem cirúrgica do abscesso subperiosteal e miringotomia com tubo de ventilação.<br>\n<strong>C)</strong> Punção lombar imediata como primeira medida terapêutica para descompressão liquórica intracraniana.<br>\n<strong>D)</strong> Lavagem otológica com jato de soro fisiológico sob pressão e fechamento cirúrgico da membrana timpânica."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado do Especialista:</strong> O quadro define <strong>Mastoidite Aguda Coalescente com Abscesso Subperiosteal</strong>."
+        ],
+        [
+          "u",
+          [
+            "<em>Por que a alternativa B está correta?</em> A presença de abscesso subperiosteal retroauricular e lise óssea trabecular indica falência do tratamento clínico isolado. Exige <strong>internação hospitalar imediata, antibioticoterapia venosa</strong> (ceftriaxona +/- oxacilina/vancomicina) e <strong>intervenção cirúrgica combinada: drenagem do abscesso subperiosteal associada a miringotomia ampla com colocação de tubo de ventilação</strong> (e mastoidectomia cortical se não houver resposta clínica favorável em 24 a 48h);",
+            "<em>Por que as demais estão incorretas?</em> O tratamento ambulatorial é negligência e expõe a criança a complicações intracranianas fatais (meningite, trombose de seio sigmoide); lavagem otológica com pressão na vigência de mastoidite é contraindicada; punção lombar não é tratamento de abscesso mastóideo."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tabela-resumo-e-high-yield-exam-pearls",
+      0,
+      [
+        [
+          "2",
+          "12. Tabela Resumo e High-Yield Exam Pearls"
+        ],
+        [
+          "3",
+          "Tabela Comparativa Sintética das Urgências Otorrinolaringológicas"
+        ],
+        [
+          "t",
+          [
+            "Urgência ORL",
+            "Localização e Espaço Anatômico",
+            "Etiologia Microbiológica Típica",
+            "Tríade / Achado Semiológico Chave",
+            "Tratamento Padrão-Ouro"
+          ],
+          [
+            [
+              "<strong>Angina de Ludwig</strong>",
+              "Espaços Submandibular, Sublingual e Submentoniano (Bilateral).",
+              "Polimicrobiana (<em>Streptococcus viridans</em>, <em>Prevotella</em>, <em>Peptostreptococcus</em>). Odontogênica (2º/3º molares).",
+              "\"Pescoço em touro\" lenhoso, protrusão e elevação da língua contra o palato, trismo e postura em tripé.",
+              "Via aérea protegida (traqueostomia acordado) + Cervicotomia descompressiva ampla com miotomia do milo-hióideo + Ampicilina-Sulbactam IV."
+            ],
+            [
+              "<strong>Abscesso Periamigdalino</strong>",
+              "Espaço virtual entre a cápsula tonsilar e o músculo constritor superior da faringe.",
+              "<em>Streptococcus pyogenes</em>, <em>S. aureus</em>, anaeróbios orais. Complicação de amigdalite bacteriana.",
+              "Abaulamento do pilar anterior e palato mole superior, desvio contralateral da úvula, trismo e otalgia reflexa.",
+              "Aspiração com agulha 18G ou incisão e drenagem com lâmina 11 (cuidado: artéria carótida interna a 1,5 cm) + Dexametasona IV + Antibioticoterapia venosa."
+            ],
+            [
+              "<strong>Síndrome de Lemierre</strong>",
+              "Espaço Parafaríngeo pós-estiloide / Bainha Carotídea (Veia Jugular Interna).",
+              "<em>Fusobacterium necrophorum</em> (anaeróbio gram-negativo).",
+              "Tromboflebite séptica da VJI pós-amigdalite associada a êmbolos sépticos pulmonares escavados.",
+              "Ceftriaxona + Metronidazol em doses plenas por 3 a 6 semanas; anticoagulação se extensão intracraniana."
+            ],
+            [
+              "<strong>Abscesso Retrofaríngeo</strong>",
+              "Espaço Retrofaríngeo (entre fáscia bucofaríngea e lâmina alar).",
+              "Linfadenite supurativa em < 5 anos; trauma perfurante (espinha/EDA) em adultos.",
+              "Dor cervical à extensão, torcicolo reflexo, choro em \"duck-quack\", alargamento do espaço pré-vertebral ao RX de perfil.",
+              "Proteção de via aérea + Drenagem cirúrgica (intraoral ou transcervical externa) + Ampicilina-Sulbactam ou Ceftriaxona + Metronidazol."
+            ],
+            [
+              "<strong>Epistaxe Posterior</strong>",
+              "Parede lateral nasal posterior / Plexo de Woodruff (Artéria Esfenopalatina).",
+              "Rotura arteriolosclerótica em idosos hipertensos, coagulopatias e uso de antiagregantes.",
+              "Sangramento incontrolável por compressão nasal externa fluindo ativamente pela orofaringe posterior.",
+              "Tamponamento nasal posterior (balão duplo ou sonda de Foley no cavum) + controle pressórico + Ligadura cirúrgica endoscópica da artéria esfenopalatina."
+            ],
+            [
+              "<strong>Mastoidite Coalescente</strong>",
+              "Antro e células aéreas da mastoide (Osso Temporal).",
+              "<em>Streptococcus pneumoniae</em>, <em>Haemophilus influenzae</em>, <em>S. pyogenes</em> pós-OMA subtratada.",
+              "Apagamento do sulco retroauricular com projeção anterior da orelha (\"abano\") e lise óssea trabecular na TC.",
+              "Internação hospitalar + Ceftriaxona venosa + Drenagem de abscesso subperiosteal e miringotomia com tubo de ventilação."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "High-Yield Exam Pearls (Pérolas de Prova e Prática Médica)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Pérola 1 (Via Aérea na Angina de Ludwig):</strong> <em>Jamais tente indução anestésica com sedação profunda e curarização padrão para laringoscopia direta no paciente com Ludwig moderado a grave!</em> O relaxamento dos músculos suspensores do hioide e faríngeos precipita o colapso asfíxico total instantâneo. A regra é: via aérea cirúrgica (traqueostomia sob anestesia local) ou intubação flexível com fibra óptica com o paciente acordado e respirando espontaneamente;",
+            "<strong>Pérola 2 (Posicionamento do Paciente na Suspeita de Obstrução Alta):</strong> <em>Nunca force um paciente com estridor, Ludwig ou epiglotite a deitar na maca em decúbito dorsal!</em> A postura em tripé é um mecanismo voluntário reflexo vital de desobstrução da faringe. Deitar o paciente pode deflagrar parada cardiorrespiratória imediata;",
+            "<strong>Pérola 3 (Margem de Segurança na Drenagem Periamigdalina):</strong> A artéria carótida interna situa-se a meros 15 a 25 mm póstero-lateralmente à cápsula tonsilar. Para evitar pseudoaneurisma ou lesão exsanguinante carotídea durante a aspiração com agulha do abscesso periamigdalino, corte a bainha plástica protetora da agulha de modo que <strong>apenas 1,0 a 1,5 cm de agulha metálica fiquem expostos</strong>;",
+            "<strong>Pérola 4 (Cauterização Septal na Epistaxe Anterior):</strong> Frente a um sangramento septal anterior do plexo de Kiesselbach, a cauterização química com nitrato de prata 75% <em>nunca deve ser executada simultaneamente nas duas faces septais na mesma altura anatômica</em>. A isquemia bilateral da cartilagem septal avascular conduz inexoravelmente à necrose de cartilagem e perfuração septal permanente;",
+            "<strong>Pérola 5 (Corpo Estranho em Via Aérea Pediátrica):</strong> A presença de sibilos expiratórios unilaterais fixos associados a hiperinsuflação radiográfica em criança pequena de 1 a 3 anos indica <strong>aspiração de corpo estranho com efeito de válvula expiratória</strong>. O exame definitivo padrão-ouro é a <strong>Broncoscopia Rígida sob anestesia geral</strong>. <em>Nunca realize manobra de Heimlich em crianças conscientes que estejam respirando e tossindo</em>, pois a manobra pode desviar o corpo estranho brônquico para a traqueia ou fenda glótica, gerando asfixia total;",
+            "<strong>Pérola 6 (Danger Space e Mediastinite):</strong> O \"Danger Space\" (Espaço 4) situa-se entre a lâmina alar e a lâmina pré-vertebral da fáscia cervical profunda, estendendo-se livremente da base do crânio até o diafragma posterior (T11-T12). É a via anatômica de disseminação da temida mediastinite necrotizante descendente;",
+            "<strong>Pérola 7 (Lemierre e Metronidazol):</strong> A Síndrome de Lemierre é a tromboflebite séptica da veia jugular interna associada a êmbolos sépticos pulmonares escavados, causada classicamente por <em>Fusobacterium necrophorum</em>. O metronidazol é o antibiótico de escolha pela penetração ímpar no interior de trombos vasculares infectados."
+          ]
+        ]
+      ]
+    ]
+  ]
+}

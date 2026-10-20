@@ -1,0 +1,1471 @@
+{
+  "v": 2,
+  "s": "atencao-domiciliar-multimorbidade-e-desprescricao",
+  "t": "Atenção Domiciliar, Multimorbidade e Desprescrição",
+  "p": "Atenção Domiciliar, Multimorbidade e Desprescrição — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "a": "Medicina de Família e Comunidade",
+  "m": "Medicina de Família e Comunidade",
+  "h": [
+    "Apostila LURIA",
+    "Atenção Domiciliar, Multimorbidade e Desprescrição",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+    [
+      "Área: Medicina de Família e Comunidade",
+      "Matéria: Medicina de Família e Comunidade",
+      "Tema: Atenção Domiciliar, Multimorbidade e Desprescrição"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "programa-melhor-em-casa-e-modalidades-ad",
+      "1. Programa Melhor em Casa e Modalidades de Atenção Domiciliar no SUS"
+    ],
+    [
+      "visita-domiciliar-avaliacao-funcional-sobrecarga-cuidador",
+      "2. Visita Domiciliar, Avaliação Funcional Geriátrica e Sobrecarga do Cuidador"
+    ],
+    [
+      "multimorbidade-vs-comorbidade-carga-tratamento",
+      "3. Multimorbidade vs. Comorbidade e o Modelo da Carga do Tratamento (Treatment Burden)"
+    ],
+    [
+      "polifarmacia-cascata-iatrogenica-beers-stopp-start",
+      "4. Polifarmácia, Cascata Iatrogênica Prescritiva e Critérios de Beers e STOPP/START"
+    ],
+    [
+      "protocolos-sistematicos-desprescricao",
+      "5. Protocolos Sistemáticos de Desprescrição (Deprescribing) na Prática Clínica"
+    ],
+    [
+      "cuidados-paliativos-domiciliares-hipodermoclise",
+      "6. Cuidados Paliativos Domiciliares, Controle de Sintomas e Hipodermóclise"
+    ],
+    [
+      "casos-clinicos-resolvidos-aula-220",
+      "7. Casos Clínicos Resolvidos e Raciocínio Diagnóstico-Terapêutico"
+    ],
+    [
+      "questoes-comentadas-residencia-revalida-aula-220",
+      "8. Questões Comentadas de Provas de Residência Médica, Revalida e ENAMED"
+    ],
+    [
+      "tabela-sintese-high-yield-aula-220",
+      "9. Síntese High-Yield e Pontos-Chave para Revisão Final de Véspera"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "programa-melhor-em-casa-e-modalidades-ad",
+      0,
+      [
+        [
+          "2",
+          "1. Programa Melhor em Casa e Modalidades de Atenção Domiciliar no SUS"
+        ],
+        [
+          "p",
+          "A Atenção Domiciliar (AD) no âmbito do Sistema Único de Saúde (SUS) representa um eixo estratégico de desospitalização segura, humanização do cuidado, racionalização da ocupação de leitos hospitalares de alta densidade tecnológica e longitudinalidade assistencial. Regulamentada pela <strong>Portaria de Consolidação GM/MS nº 5/2017</strong> (que incorporou e atualizou as diretrizes históricas da Portaria GM/MS nº 825/2016), a Atenção Domiciliar é definida como uma modalidade de atenção à saúde integrada às Redes de Atenção à Saúde (RAS), caracterizada por um conjunto de ações de prevenção e tratamento de doenças, reabilitação, paliação e promoção à saúde, prestadas em domicílio, garantindo continuidade de cuidados."
+        ],
+        [
+          "p",
+          "Para as provas de Residência Médica, Revalida e ENAMED, é fundamental distinguir com precisão cirúrgica os conceitos operacionais que regem o <strong>Programa Melhor em Casa</strong>, a divisão de responsabilidades entre as equipes de Atenção Primária à Saúde (APS) e o Serviço de Atenção Domiciliar (SAD), a composição mínima das equipes multiprofissionais (EMAD e EMAP) e os critérios estritos de elegibilidade, admissão em cada modalidade (AD1, AD2 e AD3) e alta/desligamento."
+        ],
+        [
+          "3",
+          "1.1 Conceitos Fundamentais e Princípios Diretivos na RAS"
+        ],
+        [
+          "p",
+          "A organização da Atenção Domiciliar no SUS não substitui a internação hospitalar quando há instabilidade hemodinâmica aguda que exija monitorização intensiva contínua ou suporte cirúrgico imediato, mas atua como um potente dispositivo substitutivo ou complementar à hospitalização para pacientes clinicamente estáveis que demandam cuidados intensivos ou intermediários no ambiente domiciliar. A AD articula-se diretamente com todos os pontos da Rede de Atenção às Urgências (RAU), incluindo Unidades de Pronto Atendimento (UPA 24h), SAMU 192 e hospitais gerais, tendo a Atenção Básica como ordenadora do cuidado e centro de comunicação da rede."
+        ],
+        [
+          "u",
+          [
+            "<strong>Serviço de Atenção Domiciliar (SAD):</strong> Serviço complementar aos cuidados realizados na atenção básica e em serviços de urgência, substitutivo ou complementar à internação hospitalar, responsável pelo gerenciamento e operacionalização das Equipes Multiprofissionais de Atenção Domiciliar (EMAD) e Equipes Multiprofissionais de Apoio (EMAP).",
+            "<strong>Cuidador:</strong> Pessoa(s), com ou sem vínculo familiar com o usuário, apta(s) para auxiliá-lo em suas necessidades e atividades da vida cotidiana e que, dependendo da condição funcional e clínica do usuário, deverá(ão) estar presente(s) no atendimento domiciliar. O cuidador não precisa ser um profissional de saúde, mas é figura obrigatória para as modalidades de maior complexidade (AD2 e AD3) sempre que o paciente for funcionalmente dependente.",
+            "<strong>Desospitalização Segura e Transição do Cuidado:</strong> Processo estruturado em que a equipe hospitalar aciona precocemente a equipe da APS ou o SAD para planejamento conjunto da alta, adequação da ambiência domiciliar, treinamento de cuidadores à beira-leito (ex.: aspiração traqueal, manejo de gastrostomia, administração de dieta enteral) e provisão de insumos, oxigenoterapia domiciliar prolongada (ODP) ou ventilação mecânica domiciliar."
+          ]
+        ],
+        [
+          "3",
+          "1.2 As Três Modalidades de Atenção Domiciliar (AD1, AD2 e AD3)"
+        ],
+        [
+          "p",
+          "A estratificação do paciente em AD1, AD2 ou AD3 é o tema mais recorrente em provas de Medicina de Família e Comunidade e Saúde Coletiva. Essa divisão baseia-se na <strong>intensidade do cuidado</strong>, na <strong>frequência mínima de visitas exigida</strong>, na <strong>densidade tecnológica dos procedimentos</strong> e na <strong>equipe responsável</strong> pela condução primária do caso."
+        ],
+        [
+          "4",
+          "Modalidade AD1: Responsabilidade Primária da Atenção Básica (eSF / eAP)"
+        ],
+        [
+          "p",
+          "A modalidade AD1 destina-se aos usuários que possuam problemas de saúde <strong>controlados ou compensados</strong> e com dificuldade ou impossibilidade física de locomoção até uma unidade básica de saúde, <strong>E</strong> que necessitem de cuidados com menor frequência e com menor necessidade de recursos de saúde."
+        ],
+        [
+          "u",
+          [
+            "<strong>Equipe Responsável:</strong> Equipes de Atenção Primária à Saúde — Equipes de Saúde da Família (eSF) ou Equipes de Atenção Primária (eAP), apoiadas, quando disponível, pelas Equipes Multiprofissionais na APS (eMulti, antigo NASF-AB).",
+            "<strong>Frequência de Visitas:</strong> Cuidados com menor frequência, geralmente <strong>mensais</strong> ou conforme necessidade clínica pactuada no Projeto Terapêutico Singular (PTS), não exigindo visitas semanais médicas/de enfermagem por agravamento subagudo.",
+            "<strong>Perfil Clínico Clássico em Provas:</strong> Idoso restrito ao domicílio ou acamado por sequela motora crônica estabilizada de Acidente Vascular Cerebral (AVC) ocorrido há anos, osteoartrose grave de joelhos/quadris que impede deambulação até a UBS, demência de Alzheimer avançada mas clinicamente estável (sem úlceras infectadas complexas ou descompensações agudas), necessidade de renovação de receitas de uso contínuo, acompanhamento de hipertensão arterial e diabetes mellitus compensados em paciente restrito ao leito, ou troca simples e esporádica de sonda vesical de demora/curativos simples de baixa complexidade."
+          ]
+        ],
+        [
+          "4",
+          "Modalidade AD2: Responsabilidade do SAD (EMAD e EMAP) — Cuidado Intensivo e Sequencial"
+        ],
+        [
+          "p",
+          "A modalidade AD2 destina-se aos usuários que possuam problemas de saúde e dificuldade ou impossibilidade física de locomoção até uma unidade de saúde <strong>E</strong> que necessitem de <strong>maior frequência de cuidado</strong>, recursos de saúde e acompanhamento contínuos, podendo ser oriundos de diferentes serviços da rede de atenção (hospitais, UPAs ou própria APS). A inclusão em AD2 requer a necessidade de, no mínimo, <strong>visitas semanais</strong> da equipe e se aplica às seguintes situações clínicas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Afecções agudas ou crônicas agudizadas</strong>, com necessidade de tratamentos parenterais (endovenoso, intramuscular ou subcutâneo/hipodermóclise) ou reabilitação intensiva. Exemplo: pielonefrite, erisipela extensa ou osteomielite em antibioticoterapia parenteral domiciliar (OPAT - <em>Outpatient Parenteral Antimicrobial Therapy</em>).",
+            "<strong>Afecções crônico-degenerativas</strong>, considerando o grau de comprometimento causado pela doença, que demande atendimento no mínimo semanal.",
+            "<strong>Necessidade de cuidados paliativos</strong> com acompanhamento clínico no mínimo semanal, com o fim de controlar a dor e o sofrimento do usuário (ex.: neoplasia metastática em progressão com ajuste frequente de opioides ou manejo de dispneia/delirium).",
+            "<strong>Prematuridade e baixo peso</strong> em bebês com necessidade de ganho ponderal e acompanhamento intensivo pós-alta da unidade neonatal.",
+            "<strong>Curativos complexos</strong> (ex.: lesões por pressão estágio III ou IV extensas, deiscências cirúrgicas complexas) ou adaptação inicial ao uso de órteses/próteses, sondas enterais, gastrostomias ou traqueostomias recentes que demandem treinamento intensivo e monitoramento ao menos semanal."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Característica Evolutiva da AD2:</strong> É eminentemente <em>transitória</em>. Espera-se que, após a resolução do quadro agudo/subagudo (fim do ciclo de antibiótico venoso, cicatrização da úlcera complexa, estabilização clínica e capacitação plena do cuidador), o paciente receba alta do SAD e retorne para a modalidade <strong>AD1</strong> (sob responsabilidade da eSF), ou evolua para alta completa da atenção domiciliar se recuperar a capacidade de deambulação."
+        ],
+        [
+          "4",
+          "Modalidade AD3: Responsabilidade do SAD (EMAD e EMAP) — Suporte Ventilatório e Procedimentos de Alta Complexidade Contínua"
+        ],
+        [
+          "p",
+          "A modalidade AD3 destina-se aos usuários que possuam problemas de saúde e dificuldade ou impossibilidade física de locomoção até uma unidade de saúde, com necessidade de maior frequência de cuidado, recursos de saúde, acompanhamento contínuos <strong>E uso de, no mínimo, 1 (um) equipamento(s) ou procedimento(s) especiais de forma contínua ou prolongada</strong>."
+        ],
+        [
+          "u",
+          [
+            "<strong>Critérios Específicos para AD3:</strong> Existência de pelo menos uma das situações admitidas em AD2, somada à necessidade de visitas no mínimo semanais <strong>E</strong> utilização de suporte avançado ou procedimentos complexos, tais como:\n    <ol>\n      <li><strong>Suporte Ventilatório Não Invasivo (VNI):</strong> Uso de CPAP (<em>Continuous Positive Airway Pressure</em>) ou BiPAP (<em>Bilevel Positive Airway Pressure</em>) por insuficiência respiratória crônica hipercápnica ou neuromuscular.",
+            "<strong>Ventilação Mecânica Invasiva (VMI) Domiciliar:</strong> Pacientes traqueostomizados acoplados a ventiladores mecânicos portáteis (ex.: Esclerose Lateral Amiotrófica - ELA avançada, distrofia muscular de Duchenne, trauma raquimedular cervical alto C1-C3).",
+            "<strong>Diálise Peritoneal Domiciliar</strong> (Diálise Peritoneal Ambulatorial Contínua - DPAC ou Diálise Peritoneal Automatizada - DPA) quando associada a dependência funcional e necessidade de acompanhamento multiprofissional semanal pelo SAD.",
+            "<strong>Paracentese de alívio domiciliar frequente</strong> (em pacientes cirróticos refratários ou com carcinomatose peritoneal em cuidados paliativos) ou <strong>nutrição parenteral domiciliar</strong>.",
+            "<strong>Transfusão sanguínea domiciliar</strong> (em serviços habilitados e regulamentados para hemoterapia domiciliar).",
+            "<strong>Atenção à Pegadinha de Prova sobre Oxigenoterapia (ODP):</strong> O uso isolado de <em>Oxigenoterapia Domiciliar Prolongada (ODP)</em> por cateter nasal de baixo fluxo (ex.: paciente com DPOC GOLD 4 estável usando concentrador de O2 a 1–2 L/min por 15h/dia), quando clinicamente estável e sem necessidade de visitas semanais multiprofissionais, <strong>NÃO</strong> classifica obrigatoriamente o paciente como AD3! Se o paciente estiver estável e necessitar apenas de acompanhamento longitudinal mensal, ele pode permanecer em <strong>AD1</strong> acompanhado pela eSF. Para ser AD3, exige-se suporte ventilatório pressórico (CPAP, BiPAP, VMI) ou procedimentos complexos aliados à demanda de acompanhamento no mínimo semanal pelo SAD."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Parâmetro Comparativo",
+            "Modalidade AD1",
+            "Modalidade AD2",
+            "Modalidade AD3"
+          ],
+          [
+            [
+              "<strong>Equipe Responsável</strong>",
+              "Equipes de APS (eSF / eAP) com apoio da eMulti",
+              "Serviço de Atenção Domiciliar (SAD: EMAD + EMAP)",
+              "Serviço de Atenção Domiciliar (SAD: EMAD + EMAP)"
+            ],
+            [
+              "<strong>Estabilidade e Complexidade</strong>",
+              "Doenças crônicas compensadas / estáveis; menor densidade tecnológica",
+              "Quadros agudos, crônicos agudizados ou paliativos sem suporte ventilatório mecânico",
+              "Alta complexidade; uso contínuo de equipamentos de suporte à vida ou procedimentos especiais"
+            ],
+            [
+              "<strong>Frequência Mínima de Visitas</strong>",
+              "Mensal (ou conforme necessidade definida pela eSF)",
+              "No mínimo semanal (1x/semana ou mais)",
+              "No mínimo semanal (1x/semana ou mais)"
+            ],
+            [
+              "<strong>Permanência Estimada</strong>",
+              "Longitudinal / Contínua (enquanto restrito ao domicílio)",
+              "Transitória / Sequencial (até estabilização e transição para AD1)",
+              "Permanente / Prolongada (dada a dependência contínua de suporte avançado)"
+            ],
+            [
+              "<strong>Exemplos Clínicos Típicos</strong>",
+              "Sequela crônica de AVC estável, osteoartrose grave, demência estável",
+              "Antibioticoterapia venosa domiciliar, úlcera estágio IV infectada, paliativo em ajuste álgico",
+              "ELA em BiPAP ou ventilação mecânica invasiva, paracentese domiciliar de repetição"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "1.3 Estrutura e Composição das Equipes do SAD: EMAD (Tipo 1 e Tipo 2) e EMAP"
+        ],
+        [
+          "p",
+          "O Serviço de Atenção Domiciliar (SAD) organiza-se a partir de duas estruturas operacionais indissociáveis: a <strong>EMAD</strong> (Equipe Multiprofissional de Atenção Domiciliar), que constitui o núcleo assistencial obrigatório de linha de frente, e a <strong>EMAP</strong> (Equipe Multiprofissional de Apoio), que oferece retaguarda especializada matricial e complementar. Um município ou consórcio intermunicipal <strong>não pode</strong> habilitar uma EMAP sem possuir pelo menos uma EMAD ativa."
+        ],
+        [
+          "u",
+          [
+            "<strong>EMAD Tipo 1 (Municípios com população &ge; 40.000 habitantes):</strong>\n    <ul>\n      <li><strong>Médico(s):</strong> Somatório de carga horária mínima de <strong>40 horas semanais</strong> (pode ser 1 médico de 40h ou 2 médicos de 20h cada).",
+            "<strong>Enfermeiro(s):</strong> Somatório de carga horária mínima de <strong>40 horas semanais</strong>.",
+            "<strong>Fisioterapeuta(s) OU Assistente(s) Social(is):</strong> Somatório de carga horária mínima de <strong>30 horas semanais</strong>.",
+            "<strong>Auxiliares ou Técnicos de Enfermagem:</strong> Somatório de carga horária mínima de <strong>120 horas semanais</strong> (ex.: 3 técnicos de 40h ou 4 técnicos de 30h).",
+            "<strong>Capacidade Operacional Estimada:</strong> Acompanhamento simultâneo de aproximadamente <strong>60 usuários</strong> (em modalidades AD2 e AD3)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>EMAD Tipo 2 (Municípios com população entre 20.000 e 39.999 habitantes, ou agrupamento por consórcio):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Médico:</strong> Carga horária mínima de <strong>20 horas semanais</strong>.",
+            "<strong>Enfermeiro:</strong> Carga horária mínima de <strong>30 horas semanais</strong>.",
+            "<strong>Fisioterapeuta OU Assistente Social:</strong> Carga horária mínima de <strong>30 horas semanais</strong>.",
+            "<strong>Auxiliares ou Técnicos de Enfermagem:</strong> Somatório de carga horária mínima de <strong>120 horas semanais</strong>.",
+            "<strong>Capacidade Operacional Estimada:</strong> Acompanhamento simultâneo de aproximadamente <strong>30 usuários</strong>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>EMAP (Equipe Multiprofissional de Apoio):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Composta por, no mínimo, <strong>3 (três) profissionais de nível superior</strong>, escolhidos dentre as seguintes categorias de acordo com a necessidade epidemiológica local: <em>Assistente Social, Fisioterapeuta, Fonoaudiólogo, Nutricionista, Odontólogo, Psicólogo, Farmacêutico ou Terapeuta Ocupacional</em>.",
+            "<strong>Carga Horária da EMAP:</strong> Somatório mínimo de <strong>90 horas semanais</strong> de trabalho, sendo que nenhum profissional componente poderá ter carga horária inferior a 20 horas semanais."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Funcionamento e Horário de Cobertura do SAD:</strong> A EMAD deve ofertar cuidado em dias úteis (segunda a sexta-feira, em regime de 12 horas diárias) e garantir organização de escala para atendimentos programados ou intercorrências em <strong>finais de semana e feriados</strong> (para pacientes em antibioticoterapia parenteral diária ou curativos inadiáveis), articulando-se com o SAMU 192 para urgências no período noturno."
+        ],
+        [
+          "3",
+          "1.4 Critérios de Inelegibilidade (Exclusão) e Desligamento (Alta) do SAD"
+        ],
+        [
+          "p",
+          "De acordo com a Portaria GM/MS nº 825/2016 (consolidada na Portaria de Consolidação nº 5/2017), existem condições clínicas nas quais a inclusão direta na Atenção Domiciliar é vedada por insegurança clínica ou inadequação do modelo assistencial:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Necessidade de monitorização contínua</strong> (ex.: paciente instável hemodinamicamente em uso de drogas vasoativas tituláveis como noradrenalina, arritmias ventriculares malignas agudas).",
+            "<strong>Necessidade de assistência contínua de enfermagem</strong> (24 horas ininterruptas à beira-leito). Importante destacar que o SAD do SUS realiza <em>visitas domiciliares pontuais e programadas</em> (diárias ou semanais), <strong>não configurando regime de internação domiciliar privada tipo \"plantão 24h de técnico de enfermagem no quarto\"</strong>. Por isso, a presença do <em>cuidador</em> familiar ou contratado pela família é indispensável quando o paciente é dependente.",
+            "<strong>Necessidade de propedêutica complementar</strong> com demanda potencial para a realização de vários procedimentos diagnósticos, em sequência, com urgência, que exijam ambiente hospitalar.",
+            "<strong>Necessidade de tratamento cirúrgico em caráter de urgência</strong>.",
+            "<strong>Necessidade de uso de ventilação mecânica invasiva, nos casos em que a equipe NÃO estiver apta</strong> a realizar tal procedimento ou quando não houver infraestrutura domiciliar elétrica e logística segura."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Critérios de Desligamento (Alta) do SAD (AD2/AD3):</strong> Ocorre por: (a) cura ou resolução completa do agravo agudo; (b) estabilização clínica que permita a transição segura para a modalidade <strong>AD1</strong> (contrarreferência estruturada para a eSF com resumo de alta e PTS compartilhado); (c) recuperação da capacidade funcional de locomoção, permitindo atendimento ambulatorial na UBS; (d) internação hospitalar prolongada por instabilização grave; (e) mudança de endereço para fora da área de abrangência do município/SAD; ou (f) óbito no domicílio."
+        ],
+        [
+          "p",
+          "<strong>Declaração de Óbito (DO) na Atenção Domiciliar:</strong> Se o paciente acompanhado regularmente pelo SAD (AD2/AD3) ou pela eSF (AD1), com diagnóstico conhecido (ex.: câncer metastático em cuidados paliativos, insuficiência cardíaca terminal, demência avançada), falecer em domicílio de causas naturais decorrentes de sua patologia de base (sem sinais de violência ou causa externa suspeita), <strong>compete ao médico do SAD ou ao médico da eSF emitir a Declaração de Óbito (DO)</strong> após constatação presencial do óbito no domicílio, evitando o encaminhamento desnecessário do corpo ao Serviço de Verificação de Óbito (SVO) ou ao Instituto Médico Legal (IML)."
+        ]
+      ]
+    ],
+    [
+      "visita-domiciliar-avaliacao-funcional-sobrecarga-cuidador",
+      0,
+      [
+        [
+          "2",
+          "2. Visita Domiciliar, Avaliação Funcional Geriátrica e Sobrecarga do Cuidador"
+        ],
+        [
+          "p",
+          "A <strong>Visita Domiciliar (VD)</strong> não é meramente uma consulta médica transportada do consultório para a sala ou quarto do paciente; trata-se de uma tecnologia leve-dura de cuidado de altíssima potência diagnóstica e terapêutica na Medicina de Família e Comunidade. Ao adentrar o território vivo da família, o médico de família avalia determinantes invisíveis no consultório: a arquitetura física da moradia, barreiras arquitetônicas e risco ambiental de quedas, condições de armazenamento e real adesão aos medicamentos (\"teste da sacola de remédios\"), higiene, segurança alimentar, dinâmica relacional intrafamiliar e a saúde física e mental do cuidador principal."
+        ],
+        [
+          "3",
+          "2.1 Sistematização da Visita Domiciliar: As 5 Etapas Operacionais"
+        ],
+        [
+          "p",
+          "A execução técnica de uma Visita Domiciliar de excelência obedece a cinco fases sequenciais:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Planejamento e Seleção (Pré-visita):</strong> Definição clara do objetivo da visita (busca ativa, acompanhamento programado AD1, avaliação pós-alta hospitalar, óbito, abordagem familiar em crise), revisão prévia do prontuário eletrônico (e-SUS APS), separação de materiais e insumos necessários (esfigmomanômetro, estetoscópio, oxímetro, otoscópio, glicosímetro, formulários de escalas geriátricas, receituários de controle especial, Declaração de Óbito se aplicável) e pactuação prévia de horário com a família.",
+            "<strong>Deslocamento e Observação do Microterritório:</strong> Avaliação da acessibilidade geográfica da rua (ladeiras íngremes, escadarias em comunidades, pavimentação, saneamento básico, rede de apoio da vizinhança).",
+            "<strong>Execução no Domicílio (Abordagem Clínica, Funcional e Ambiental):</strong> Apresentação respeitosa (pedir permissão para entrar e para inspecionar cômodos), anamnese centrada na pessoa e no cuidador, exame físico dirigido ao leito (incluindo inspeção sistemática de proeminências ósneas — região sacral, trocantérica, calcâneos — em busca de lesões por pressão estágio I a IV), revisão in loco das caixas de medicamentos, avaliação funcional padronizada e inspeção de riscos domiciliares (tapetes soltos, iluminação noturna precária, ausência de barras de apoio no banheiro, fios desencapados).",
+            "<strong>Pactuação do Plano de Cuidados:</strong> Construção compartilhada de condutas exequíveis com a família e o cuidador, evitando prescrições posológicas complexas ou incompatíveis com a rotina familiar, treinamento prático de procedimentos e identificação de sinais de alarme que indiquem acionamento do SAMU 192 ou retorno à UBS.",
+            "<strong>Registro Clínico (SOAP) e Avaliação Pós-visita:</strong> Registro estruturado no Prontuário Clínico Orientado por Problemas (Método SOAP), discussão do caso em reunião de equipe (eSF/eMulti) e agendamento do próximo monitoramento."
+          ]
+        ],
+        [
+          "3",
+          "2.2 Avaliação Funcional Geriátrica: Escalas de Katz, Lawton e PPS"
+        ],
+        [
+          "p",
+          "Na Atenção Domiciliar e na Geriatria, o principal preditor de mortalidade, institucionalização e necessidade de cuidados não é o número isolado de diagnósticos na CID-10, mas sim a <strong>Capacidade Funcional</strong> (autonomia decisória + independência física de execução). A perda funcional segue classicamente uma hierarquia inversa à aquisição de habilidades na infância (<em>hierarquia de perda funcional</em>): primeiro perdem-se as Atividades Avançadas da Vida Diária (AAVD - trabalho, lazer comunitário), depois as Atividades Instrumentais da Vida Diária (AIVD - Escala de Lawton) e, por último, as Atividades Básicas da Vida Diária (ABVD - Escala de Katz)."
+        ],
+        [
+          "4",
+          "Escala de Katz — Atividades Básicas da Vida Diária (ABVD / Autocuidado)"
+        ],
+        [
+          "p",
+          "Desenvolvida por Sidney Katz (1963), avalia a independência biológica e de autocuidado elementar no próprio corpo e ambiente imediato. Compõe-se de <strong>6 funções hierárquicas</strong> (que costumam ser perdidas exatamente nesta ordem e recuperadas na ordem inversa durante a reabilitação):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Banhar-se</strong> (higiene corporal no chuveiro ou leito): É invariavelmente a <em>primeira ABVD a ser perdida</em> no declínio funcional geriátrico.",
+            "<strong>Vestir-se</strong> (pegar roupas no armário e vesti-las, abotoar, calçar sapatos).",
+            "<strong>Ir ao banheiro / Uso do vaso sanitário</strong> (higienizar-se após eliminações e arrumar as roupas).",
+            "<strong>Transferência</strong> (passar da cama para a cadeira e vice-versa, sem ajuda).",
+            "<strong>Continência</strong> (controle esfincteriano vesical e fecal completo).",
+            "<strong>Alimentação</strong> (levar a comida do prato à boca sem auxílio — preparar a refeição é AIVD!). É a <em>última ABVD a ser perdida</em> nos quadros demenciais e degenerativos graves."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Classificação de Katz:</strong> Pontua-se de 0 a 6 (ou letras de A a G, onde <strong>A</strong> representa independência para todas as 6 atividades e <strong>G</strong> representa dependência total para todas as 6 funções). Todo paciente com dependência em uma ou mais ABVDs (especialmente transferência, continência e alimentação) necessita obrigatoriamente de um cuidador presencial."
+        ],
+        [
+          "4",
+          "Escala de Lawton e Brody — Atividades Instrumentais da Vida Diária (AIVD)"
+        ],
+        [
+          "p",
+          "Avalia a capacidade do indivíduo de gerir uma vida independente na comunidade e administrar o próprio domicílio, exigindo funções executivas frontais preservadas. Inclui <strong>7 a 9 domínios clássicos</strong>:"
+        ],
+        [
+          "u",
+          [
+            "Usar o telefone (procurar números, discar e atender).",
+            "Fazer compras (selecionar itens e pagar corretamente).",
+            "Preparar refeições (planejar, cozinhar e servir).",
+            "Realizar tarefas domésticas (arrumar a casa, lavar louça).",
+            "Lavar e passar a própria roupa.",
+            "Utilizar meios de transporte (viajar de ônibus, táxi ou dirigir carro próprio).",
+            "<strong>Responsabilizar-se pela própria medicação</strong> (tomar os fármacos nas doses e horários corretos).",
+            "<strong>Controlar as próprias finanças</strong> (pagar contas, gerir aposentadoria, ir ao banco)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Pérola Clínica para Provas:</strong> O comprometimento precoce da capacidade de gerenciar finanças e administrar os próprios medicamentos na Escala de Lawton (com preservação inicial das ABVDs de Katz) é o marco funcional clássico da transição entre o <em>Comprometimento Cognitivo Leve (CCL)</em> e o estágio inicial da <em>Demência (Transtorno Neurocognitivo Maior)</em>."
+        ],
+        [
+          "4",
+          "Palliative Performance Scale (PPS) — Escala de Performance Paliativa"
+        ],
+        [
+          "p",
+          "Adaptada da Escala de Karnofsky pela <em>Victoria Hospice Society</em>, a PPS é a ferramenta padrão-ouro na Atenção Domiciliar e nos Cuidados Paliativos para estimar prognóstico de sobrevida, indicar elegibilidade para cuidados de fim de vida e guiar a desprescrição terapêutica. Avalia <strong>5 dimensões</strong> simultâneas graduadas de <strong>100% (fisiologicamente normal) a 0% (óbito)</strong>, em intervalos de 10%:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Deambulação</strong> (completa &rarr; reduzida &rarr; maior parte do tempo sentado/deitado &rarr; totalmente restrito ao leito).",
+            "<strong>Atividade e Evidência da Doença</strong> (atividade normal sem doença &rarr; incapaz para o trabalho &rarr; incapaz para hobbies/tarefas domésticas &rarr; incapaz para qualquer atividade, doença extensa).",
+            "<strong>Autocuidado</strong> (completo &rarr; assistência ocasional &rarr; assistência considerável &rarr; assistência total).",
+            "<strong>Ingesta Alimentar/Hídrica</strong> (normal &rarr; normal ou reduzida &rarr; mínima a pequenos goles &rarr; apenas cuidados com a boca).",
+            "<strong>Nível de Consciência</strong> (alerta &rarr; alerta ou sonolento/confuso &rarr; sonolento ou coma)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Marcos Clínicos do PPS em Provas:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>PPS &le; 50%:</strong> Paciente passa a maior parte do tempo sentado ou deitado, requer assistência considerável para autocuidado e é incapaz de realizar qualquer trabalho. Marca o aumento expressivo da dependência domiciliar (elegibilidade frequente para AD2).",
+            "<strong>PPS &le; 30%:</strong> Paciente <strong>totalmente restrito ao leito (acamado)</strong>, necessita de assistência total para o autocuidado. Em pacientes oncológicos, correlaciona-se com sobrevida mediana estimada em poucas semanas.",
+            "<strong>PPS 10% a 20%:</strong> Fase ativa de morte / últimos dias de vida (acamado, ingesta reduzida a mínimos goles ou apenas higiene oral, sonolência profunda ou coma)."
+          ]
+        ],
+        [
+          "3",
+          "2.3 O Cuidador Familiar e a Avaliação da Sobrecarga (Escala de Zarit)"
+        ],
+        [
+          "p",
+          "Na Atenção Domiciliar, o binômio <strong>paciente-cuidador</strong> constitui a unidade indivisível de cuidado. O perfil epidemiológico brasileiro demonstra que mais de 80% dos cuidadores informais são mulheres (esposas, filhas ou noras), frequentemente idosas cuidando de outros idosos mais frágeis, sem remuneração, sem revezamento familiar e com alto índice de abandono do mercado de trabalho formal."
+        ],
+        [
+          "p",
+          "O <strong>Estresse ou Sobrecarga do Cuidador (<em>Caregiver Burden</em>)</strong> compreende o impacto multidimensional (físico, psicológico, emocional, social e financeiro) decorrente do ato contínuo de cuidar. A sobrecarga não diagnosticada associa-se diretamente a: (1) maior incidência de depressão maior, transtornos de ansiedade, insônia e síndrome metabólica no cuidador; (2) aumento da mortalidade cardiovascular do cuidador em até 60%; (3) institucionalização precoce do paciente; e (4) surgimento de <strong>violência contra a pessoa idosa</strong> (especialmente negligência passiva ou ativa, abuso psicológico e contenção física/química inadequada)."
+        ],
+        [
+          "4",
+          "Escala de Sobrecarga de Zarit (Zarit Burden Interview — ZBI)"
+        ],
+        [
+          "p",
+          "É o instrumento psicométrico mais utilizado e cobrado nas provas brasileiras para rastreamento e quantificação da sobrecarga do cuidador. Na sua versão clássica validada para o Brasil (22 itens), cada pergunta avalia a frequência com que o cuidador se sente sobrecarregado em diferentes esferas (saúde, vida social, finanças, relação com o paciente, sentimento de aprisionamento no papel), pontuando de 0 (nunca) a 4 (sempre), gerando um escore total de <strong>0 a 88 pontos</strong> (existindo também a versão reduzida de 12 itens):"
+        ],
+        [
+          "u",
+          [
+            "<strong>&lt; 21 pontos:</strong> Ausência de sobrecarga ou sobrecarga mínima.",
+            "<strong>21 a 40 pontos:</strong> Sobrecarga leve a moderada (sinal de alerta precoce; requer orientação, divisão de tarefas familiares e grupos de apoio).",
+            "<strong>41 a 60 pontos:</strong> Sobrecarga moderada a severa (intervenção multiprofissional imediata, avaliação psiquiátrica/psicológica do cuidador, acionamento do serviço social e rede intersetorial/CRAS).",
+            "<strong>61 a 88 pontos:</strong> Sobrecarga severa / exaustão do cuidador (alto risco de colapso familiar, negligência involuntária por exaustão ou maus-tratos; exige reorganização urgente da rede de cuidado, busca de cuidadores secundários ou centros-dia/cuidados de respiro - <em>respite care</em>)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Intervenções da Equipe de Saúde frente à Sobrecarga do Cuidador:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Conferência Familiar (Reunião de Família):</strong> Convocar outros membros da família nuclear e extensa (que muitas vezes delegam 100% da carga a uma única irmã solteira ou esposa) para pactuar divisão equitativa de turnos, finais de semana de folga e suporte financeiro.",
+            "<strong>Descomplexificação do Regime Terapêutico:</strong> Reduzir tomadas de medicamentos de 6 vezes ao dia para 1 ou 2 vezes ao dia (alinhadas às refeições), suspender aferições fúteis (ex.: glicemia capilar 4x/dia em idoso frágil paliativo).",
+            "<strong>Cuidado Individualizado ao Cuidador:</strong> Agendar consulta médica e de enfermagem específica para o cuidador na UBS (pois ele frequentemente negligencia os próprios exames, controle pressórico e saúde mental).",
+            "<strong>Grupos de Cuidadores e Articulação Intersetorial:</strong> Inserção em grupos operativos da eMulti/SAD e articulação com a Assistência Social (BPC/LOAS — Benefício de Prestação Continuada, acréscimo de 25% na aposentadoria por invalidez quando aplicável, Centros-Dia para Idosos)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "multimorbidade-vs-comorbidade-carga-tratamento",
+      0,
+      [
+        [
+          "2",
+          "3. Multimorbidade vs. Comorbidade e o Modelo da Carga do Tratamento (Treatment Burden)"
+        ],
+        [
+          "p",
+          "A transição demográfica e epidemiológica acelerada transformou a <strong>multimorbidade</strong> na regra — e não mais na exceção — nos consultórios da Atenção Primária à Saúde (APS) e na Atenção Domiciliar. Compreender a distinção epistemológica e clínica entre <em>comorbidade</em> e <em>multimorbidade</em> é indispensável para evitar a fragmentação iatrogênica do cuidado e aplicar a Prevenção Quaternária."
+        ],
+        [
+          "3",
+          "3.1 Distinção Conceitual: Comorbidade vs. Multimorbidade"
+        ],
+        [
+          "u",
+          [
+            "<strong>Comorbidade (Conceito de Feinstein, 1970):</strong> Define a presença de uma ou mais condições clínicas adicionais que coexistem com uma <strong>doença-índice (doença central ou protagonista)</strong> sob investigação ou tratamento. É um modelo <em>centrado na doença</em> (biomédico/especialista focal). Exemplo: um cardiologista acompanha um paciente cuja doença-índice é a Insuficiência Cardíaca com Fração de Ejeção Reduzida (ICFEr), encarando a depressão, a osteoartrose e o diabetes mellitus como \"comorbidades\" secundárias que modulam o prognóstico da insuficiência cardíaca.",
+            "<strong>Multimorbidade (Conceito da OMS e Medicina Centrada na Pessoa):</strong> Define a coexistência de <strong>duas ou mais condições crônicas de saúde</strong> (físicas, infecciosas de longa duração ou mentais) no mesmo indivíduo, <strong>sem que nenhuma delas seja considerada central, hierarquicamente superior ou doença-índice</strong>. O foco desloca-se da doença isolada para a <em>pessoa em sua integralidade</em>, na interação complexa entre os múltiplos agravos, na preservação da funcionalidade global e nas prioridades biográficas do paciente. Alguns autores utilizam ainda o corte de &ge; 3 condições crônicas atingindo diferentes sistemas orgânicos para definir a <em>multimorbidade complexa</em>."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Dimensão Analítica",
+            "Paradigma da Comorbidade",
+            "Paradigma da Multimorbidade"
+          ],
+          [
+            [
+              "<strong>Foco Epistemológico</strong>",
+              "Centrado em uma Doença-Índice (hierárquico)",
+              "Centrado na Pessoa (horizontal / sistêmico)"
+            ],
+            [
+              "<strong>Desfecho Primário Almejado</strong>",
+              "Parâmetros biomédicos específicos da doença-índice (ex.: HbA1c, LDL-c, FEVE)",
+              "Capacidade funcional, qualidade de vida, alívio de sintomas e autonomia"
+            ],
+            [
+              "<strong>Modelo Assistencial Predominante</strong>",
+              "Ambulatórios de subespecialidades focais fragmentados",
+              "Atenção Primária à Saúde (eSF) e Atenção Domiciliar (coordenação e longitudinalidade)"
+            ],
+            [
+              "<strong>Risco da Aplicação de Diretrizes Isoladas</strong>",
+              "Soma cumulativa de protocolos de cada doença gerando polifarmácia extrema",
+              "Integração crítica, priorização de metas pactuadas e desprescrição ativa"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "3.2 O Paradoxo das Diretrizes Clínicas Isoladas (O Clássico Estudo de Cynthia Boyd)"
+        ],
+        [
+          "p",
+          "Em uma publicação seminal no <em>JAMA</em> (Boyd et al., 2005), demonstrou-se o perigo de aplicar cegamente diretrizes clínicas focadas em doenças únicas (<em>Single-Disease Clinical Practice Guidelines</em>) a pacientes idosos com multimorbidade. Ao simular o caso de uma paciente idosa hipotética de 79 anos portadora de 5 condições crônicas comuns e moderadas (Hipertensão Arterial, Diabetes Mellitus tipo 2, Osteoartrose, Osteoporose e DPOC), a aplicação estrita de todas as diretrizes vigentes à época resultaria na prescrição obrigatória de <strong>12 medicamentos diferentes</strong>, distribuídos em <strong>19 doses diárias</strong> tomadas em <strong>5 horários distintos</strong> do dia, além de 14 recomendações não farmacológicas conflitantes e dezenas de interações droga-droga e droga-doença (ex.: uso de AINE para osteoartrose descompensando a hipertensão e a função renal; uso de corticoide sistêmico na exacerbação do DPOC descompensando o diabetes e agravando a osteoporose)."
+        ],
+        [
+          "p",
+          "Portanto, no paciente com multimorbidade e fragilidade, a soma aritmética de \"boas práticas baseadas em evidências para doenças isoladas\" converte-se em uma <strong>má prática clínica global</strong>, violando o princípio da não-maleficência (<em>primum non nocere</em>) e exigindo o exercício permanente da <strong>Prevenção Quaternária (P4)</strong> — conceito cunhado por Marc Jamoulle que define a ação de identificar pacientes em risco de sobremedicalização, protegê-los de novas intervenções médicas invasivas/excessivas e sugerir-lhes alternativas eticamente aceitáveis."
+        ],
+        [
+          "3",
+          "3.3 Carga do Tratamento (Treatment Burden) e Medicina Minimamente Disruptiva"
+        ],
+        [
+          "p",
+          "Desenvolvido por Victor Montori, Carl May e colaboradores (2009/2012), o modelo da <strong>Medicina Minimamente Disruptiva (<em>Minimally Disruptive Medicine — MDM</em>)</strong> introduz uma equação fisiopatológica e psicossocial brilhante para explicar a falha terapêutica em pacientes complexos: o balanço entre a <strong>Carga da Doença (<em>Illness Burden</em>)</strong>, a <strong>Carga do Tratamento (<em>Treatment Burden</em>)</strong> e a <strong>Capacidade do Paciente/Rede (<em>Patient Capacity</em>)</strong>."
+        ],
+        [
+          "u",
+          [
+            "<strong>Carga da Doença (<em>Illness Burden</em>):</strong> O sofrimento direto imposto pelos sintomas biológicos e limitações físicas das patologias (dispneia, dor articular, fadiga, parestesias, declínio cognitivo).",
+            "<strong>Carga do Tratamento (<em>Treatment Burden</em>):</strong> Todo o \"trabalho de ser paciente\" delegado pelo sistema de saúde ao indivíduo e à sua família. Inclui:\n    <ol>\n      <li>Organizar, comprar, fracionar e ingerir dezenas de comprimidos diariamente em horários rígidos (em jejum, pós-prandial, à noite).",
+            "Realizar automonitoramentos invasivos múltiplos (glicemia capilar 4x/dia, aferição de PA, pesagem diária, controle de diurese).",
+            "Comparecer a múltiplas consultas médicas em diferentes pontos da rede (cardiologista na segunda, endocrinologista na quarta, nefrologista na sexta, laboratório no sábado), enfrentando filas de regulação e transporte público precário.",
+            "Seguir restrições dietéticas severas e frequentemente contraditórias (dieta hipossódica, restrita em carboidratos, restrita em potássio, restrita em fósforo e restrita em líquidos simultaneamente, tornando a comida intragável e levando à sarcopenia e desnutrição no idoso).",
+            "Custos financeiros catastróficos com medicamentos não padronizados no SUS, fraldas geriátricas e suplementos nutricionais.",
+            "<strong>Capacidade do Paciente (<em>Patient Capacity</em>):</strong> O conjunto de recursos físicos, cognitivos, emocionais, socioeconômicos, letramento em saúde e suporte social/familiar de que o indivíduo dispõe para enfrentar tanto a doença quanto o tratamento."
+          ]
+        ],
+        [
+          "p",
+          "<strong>O Ciclo Vicioso da Descompensação Iatrogênica:</strong> Quando a <em>Carga do Tratamento</em> ultrapassa a <em>Capacidade do Paciente</em>, instala-se a sobrecarga estrutural. O paciente passa a apresentar <strong>não-adesão estrutural involuntária</strong> (esquece doses, abandona medicamentos por efeitos adversos ou falta de dinheiro, falta às consultas). Quando retorna ao médico com exames alterados (ex.: HbA1c de 9,5% ou PA de 165/95 mmHg), o profissional desavisado interpreta a falha biológica como \"insuficiência farmacológica\" e <strong>intensifica o tratamento</strong> (adiciona uma quarta droga anti-hipertensiva ou inicia esquema basal-bolus de insulina). Essa intensificação <strong>aumenta ainda mais a Carga do Tratamento</strong>, acelerando o colapso da capacidade do paciente e do cuidador. A solução da Medicina Minimamente Disruptiva é exatamente a oposta: <strong>reduzir a carga do tratamento (desprescrição, simplificação posológica, unificação do cuidado na APS/AD) e ampliar a capacidade do paciente</strong>."
+        ],
+        [
+          "3",
+          "3.4 Abordagem Ariadne Labs / Diretrizes NICE para Multimorbidade"
+        ],
+        [
+          "p",
+          "Os princípios de Ariadne e do <em>National Institute for Health and Care Excellence</em> (NICE NG56) estabelecem 5 passos práticos na consulta de multimorbidade e atenção domiciliar:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Avaliar a interação de doenças e tratamentos:</strong> Identificar interações fármaco-doença, fármaco-fármaco e calcular a carga anticolinérgica e sedativa total.",
+            "<strong>Explorar preferências, valores e prioridades biográficas:</strong> Perguntar ativamente: <em>\"O que é mais importante para o(a) senhor(a) neste momento da sua vida? É viver o máximo de tempo possível, manter sua independência para morar sozinho, ou ficar livre de dores e tonturas?\"</em>",
+            "<strong>Estimar o prognóstico individual e o Tempo até o Benefício (<em>Time-to-Benefit — TTB</em>):</strong> Contrastar a expectativa de vida estimada do paciente (pela idade biológica, fragilidade clínico-funcional e PPS) com o tempo necessário para que uma intervenção preventiva demonstre redução de desfechos clínicos (TTB). Se a expectativa de vida do paciente é de 1 a 2 anos e o TTB de uma estatina na prevenção primária ou do controle glicêmico estrito (HbA1c &lt; 7,0%) para prevenir nefropatia/retinopatia é de 5 a 10 anos, manter essa intervenção expõe o paciente a 100% dos riscos imediatos (mialgia, hipoglicemia, quedas) com 0% de chance de colher o benefício tardio.",
+            "<strong>Otimizar e individualizar metas terapêuticas:</strong> Flexibilizar alvos de HbA1c (ex.: 8,0% a 8,5% em idosos frágeis ou com demência avançada, visando apenas evitar sintomas de hiperglicemia osmótica &gt; 200–250 mg/dL e hipoglicemias) e alvos pressóricos (evitando hipotensão ortostática e hipoperfusão cerebral).",
+            "<strong>Reavaliação longitudinal e coordenação unificada:</strong> Centralizar a lista mestra de medicamentos no médico de família e comunidade ou médico do SAD."
+          ]
+        ]
+      ]
+    ],
+    [
+      "polifarmacia-cascata-iatrogenica-beers-stopp-start",
+      0,
+      [
+        [
+          "2",
+          "4. Polifarmácia, Cascata Iatrogênica Prescritiva e Critérios de Beers e STOPP/START"
+        ],
+        [
+          "p",
+          "A farmacoterapia no idoso e no paciente restrito ao domicílio exige conhecimento profundo das alterações farmacocinéticas e farmacodinâmicas próprias do envelhecimento (senescência) e da fragilidade (senilidade), bem como o domínio das ferramentas validadas para detecção de <strong>Medicamentos Potencialmente Inapropriados (MPI)</strong>."
+        ],
+        [
+          "3",
+          "4.1 Alterações Farmacocinéticas e Farmacodinâmicas no Envelhecimento"
+        ],
+        [
+          "u",
+          [
+            "<strong>Absorção:</strong> Embora o pH gástrico tenda a elevar-se discretamente (hipocloridria atrófica) e o esvaziamento gástrico e motilidade intestinal sejam mais lentos, a biodisponibilidade oral global da maioria dos fármacos altera-se pouco, exceto naqueles que dependem de meio fortemente ácido para dissolução (ex.: cetoconazol, carbonato de cálcio, sulfato ferroso) ou que sofrem intenso metabolismo de primeira passagem.",
+            "<strong>Distribuição (Mudança Crítica de Composição Corporal):</strong> Com o envelhecimento, ocorre <strong>redução de 10% a 15% da água corporal total</strong>, redução da massa muscular magra (sarcopenia) e <strong>aumento de 20% a 40% da proporção de tecido adiposo corporal</strong>, além de queda da albumina sérica em idosos frágeis/desnutridos:\n    <ul>\n      <li><strong>Fármacos Hidrofílicos</strong> (ex.: <em>digoxina, lítio, aminoglicosídeos, etanol, morfina</em>): Têm seu volume de distribuição ($V_d$) <strong>reduzido</strong>, o que provoca concentrações plasmáticas de pico muito mais elevadas e tóxicas após doses habituais!",
+            "<strong>Fármacos Lipofílicos</strong> (ex.: <em>diazepam, clonazepam, clordiazepóxido, amiodarona, haloperidol, trazodona</em>): Têm seu volume de distribuição ($V_d$) <strong>aumentado</strong> no tecido adiposo, funcionando como um reservatório de liberação lenta. Isso prolonga drasticamente a meia-vida de eliminação ($t_{1/2}$), fazendo com que o diazepam tenha meia-vida superior a 90–100 horas no idoso, gerando acúmulo insidioso, ataxia, sonolência diurna e quedas semanas após o início do uso.",
+            "<strong>Ligação Proteica:</strong> A hipoalbuminemia aumenta a fração livre (farmacologicamente ativa e potencialmente tóxica) de fármacos ácidos fortemente ligados à albumina, como <em>varfarina, fenitoína, ácido valproico e sulfonilureias</em>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Metabolismo Hepático:</strong> Há redução de 20% a 40% da massa hepática e do fluxo sanguíneo hepático, prejudicando as reações de <strong>Fase I (oxidação, redução e hidrólise mediadas pelo sistema citocromo P450 — CYP450)</strong>. Em contrapartida, as reações de <strong>Fase II (conjugação/glicuronidação)</strong> permanecem relativamente preservadas no idoso!"
+        ],
+        [
+          "u",
+          [
+            "<em>Consequência prática para provas:</em> Caso seja estritamente necessário utilizar um benzodiazepínico no idoso (ex.: abstinência alcoólica), prefere-se o <strong>lorazepam</strong> (que sofre apenas glicuronidação direta de Fase II, sem gerar metabólitos ativos) em vez do diazepam ou clordiazepóxido (que dependem de oxidação de Fase I e geram metabólitos ativos de meia-vida ultralonga como o desmetildiazepam)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Excreção Renal:</strong> É a alteração farmacocinética mais previsível e clinicamente impactante. A Taxa de Filtração Glomerular (TFG) declina cerca de 0,8 a 1,0 mL/min/1,73m² ao ano após os 40 anos. Como o idoso sarcopênico produz pouca creatinina muscular, uma <strong>creatinina sérica \"normal\" (ex.: 1,0 mg/dL) em uma idosa de 85 anos e 45 kg oculta uma TFG gravemente reduzida (&lt; 35 mL/min)</strong> quando estimada pelas fórmulas de Cockcroft-Gault ou CKD-EPI, exigindo ajuste mandatório de dose de anticoagulantes diretos (DOACs), gabapentinoides, antibióticos e contraindicação de metformina se TFG &lt; 30 mL/min.</li>\n  <li><strong>Farmacodinâmica:</strong> Maior permeabilidade da barreira hematoencefálica, redução da densidade de neurônios colinérgicos centrais (hipersensibilidade extrema a fármacos anticolinérgicos, precipitando <em>delirium</em>) e menor sensibilidade dos barorreceptores carotídeos (predispondo à hipotensão postural grave com alfa-bloqueadores, anti-hipertensivos e neurolépticos).</li>\n</ul>"
+        ],
+        [
+          "3",
+          "4.2 Polifarmácia e Hiperpolifarmácia"
+        ],
+        [
+          "p",
+          "Na literatura médica e nas provas de residência, adota-se a definição quantitativa padrão da OMS:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Polifarmácia:</strong> Uso concomitante e contínuo de <strong>&ge; 5 medicamentos</strong> pelo mesmo paciente.",
+            "<strong>Hiperpolifarmácia (ou Polifarmácia Excessiva/Severa):</strong> Uso concomitante de <strong>&ge; 10 medicamentos</strong>.",
+            "<strong>Polifarmácia Apropriada vs. Inapropriada:</strong> A definição qualitativa moderna reconhece que um paciente com ICFEr pós-infarto pode usar legitimamente 5 fármacos modificadores de mortalidade (IECA/INRA, betabloqueador, antagonista mineralocorticoide, inibidor de SGLT2 e estatina) configurando <em>polifarmácia apropriada</em>. A polifarmácia torna-se <em>inapropriada</em> quando há prescrição de medicamentos sem indicação clínica baseada em evidências, duplicidade terapêutica, doses excessivas, duração prolongada injustificada ou quando o risco de eventos adversos supera o benefício clínico."
+          ]
+        ],
+        [
+          "3",
+          "4.3 A Cascata Iatrogênica Prescritiva (Prescribing Cascade)"
+        ],
+        [
+          "p",
+          "Conceito formulado por Paula Rochon e Jerry Gurwitz (1995/1997) que constitui <strong>questão clássica e recorrente em provas de Residência Médica, Revalida e ENAMED</strong>. A cascata prescritiva ocorre quando um <strong>efeito adverso induzido por um primeiro medicamento (Fármaco 1) é erroneamente interpretado pelo médico como o surgimento de uma \"nova doença ou condição clínica espontânea\"</strong>, levando à prescrição de um <strong>segundo medicamento (Fármaco 2)</strong> para tratar o efeito colateral do primeiro, expondo o paciente a novos eventos adversos em efeito dominó."
+        ],
+        [
+          "t",
+          [
+            "Fármaco 1 (Causador Inicial)",
+            "Efeito Adverso Mal Interpretado como \"Nova Doença\"",
+            "Fármaco 2 Prescrito Inadequadamente (Cascata)",
+            "Desfecho / Terceiro Elo da Cascata"
+          ],
+          [
+            [
+              "<strong>Anlodipino / Nifedipino</strong> (Bloqueador de Canal de Cálcio di-hidropiridínico)",
+              "Edema maleolar bilateral (por vasodilatação arteriolar pré-capilar seletiva, sem hipervolemia sistêmica) interpretado como \"Insuficiência Cardíaca ou Venosa\"",
+              "<strong>Furosemida</strong> (Diurético de alça)",
+              "Depleção intravascular, hipocalemia, tontura, incontinência urinária de urgência, quedas e insuficiência renal pré-renal"
+            ],
+            [
+              "<strong>Metoclopramida, Flunarizina, Cinazarina, Risperidona ou Haloperidol</strong> (Antagonistas dopaminérgicos D2)",
+              "Parkinsonismo farmacológico secundário (bradicinesia, rigidez em roda denteada, tremor simétrico) interpretado como \"Doença de Parkinson idiopática\"",
+              "<strong>Levodopa + Benserazida</strong> ou <strong>Biperideno</strong>",
+              "Delirium, alucinações visuais, hipotensão ortostática grave, discinesias e retenção urinária"
+            ],
+            [
+              "<strong>Donepezila, Rivastigmina ou Galantamina</strong> (Inibidores da Acetilcolinesterase usados na Doença de Alzheimer)",
+              "Hiperatividade colinérgica periférica no músculo detrusor causando urgência miccional / incontinência urinária",
+              "<strong>Oxibutinina, Tolterodina ou Solifenacina</strong> (Antimuscarínicos / Anticolinérgicos vesicais)",
+              "Antagonismo farmacológico direto! A oxibutinina atravessa a barreira hematoencefálica, anula o efeito da donepezila e precipita <em>delirium</em> e piora cognitiva aguda"
+            ],
+            [
+              "<strong>AINEs</strong> (Diclofenaco, Ibuprofeno, Meloxicam, Celecoxibe)",
+              "Retenção hidrossalina renal e inibição de prostaglandinas vasodilatadoras causando elevação da Pressão Arterial",
+              "<strong>Início ou escalonamento de Anti-hipertensivos</strong> (ou adição de IBP por epigastralgia induzida pelo AINE)",
+              "Hipotensão, lesão renal aguda (\"Triple Whammy\" se somado a IECA/BRA + Diurético)"
+            ],
+            [
+              "<strong>Inibidores da ECA</strong> (Captopril, Enalapril)",
+              "Tosse seca persistente (por acúmulo de bradicinina e substância P na árvore brônquica) interpretada como \"traqueobronquite ou asma\"",
+              "<strong>Xaropes antitussígenos (Codeína), Corticoides inalatórios ou Antibióticos</strong>",
+              "Constipação intestinal grave pela codeína &rarr; prescrição de laxativos irritativos"
+            ],
+            [
+              "<strong>Hidroclorotiazida / Clortalidona</strong> (Diuréticos tiazídicos)",
+              "Hiperuricemia secundária (competição na secreção tubular de urato) precipitando crise de gota aguda",
+              "<strong>Alopurinol, Colchicina ou AINEs</strong>",
+              "Diarreia por colchicina, nefrotoxicidade por AINE ou síndrome de hipersensibilidade ao alopurinol"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Regra de Ouro Clínica na APS e Geriatria:</strong> <em>\"Qualquer sintoma novo em um paciente idoso ou polimedicado deve ser considerado efeito adverso medicamentoso até que se prove o contrário.\"</em> Antes de adicionar um novo fármaco à prescrição, revise exaustivamente se o sintoma não foi deflagrado por algum medicamento já em uso."
+        ],
+        [
+          "3",
+          "4.4 Critérios de Beers (AGS — American Geriatrics Society)"
+        ],
+        [
+          "p",
+          "Criados por Mark Beers em 1991 e atualizados periodicamente pela <em>American Geriatrics Society</em> (última atualização AGS Beers Criteria 2023), os <strong>Critérios de Beers</strong> constituem a lista mais famosa de <strong>Medicamentos Potencialmente Inapropriados (MPI) para idosos (&ge; 65 anos)</strong>, aplicáveis em todos os cenários ambulatoriais, domiciliares e institucionais (exceto cuidados paliativos exclusivos de fim de vida). Os critérios organizam-se em 5 grandes tabelas operacionais:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Tabela 1 — Medicamentos Potencialmente Inapropriados para a maioria dos idosos (independentemente do diagnóstico):</strong>\n    <ul>\n      <li><strong>Anti-histamínicos de 1ª geração</strong> (<em>dexclorfeniramina, prometazina, hidroxizina, difenidramina, dimenidrinato</em>): Fortíssima ação anticolinérgica central; causam sedação, confusão mental, xerostomia, constipação e retenção urinária.",
+            "<strong>Antidepressivos Tricíclicos (ADTs)</strong> (<em>amitriptilina, nortriptilina, imipramina, clomipramina</em>): Altamente anticolinérgicos, anti-alfa-1-adrenérgicos (hipotensão ortostática severa) e cardiotóxicos (efeito quinidina-símile pró-arrítmico).",
+            "<strong> ISRS específico — Paroxetina e Fluoxetina:</strong> A <em>paroxetina</em> possui a maior ação anticolinérgica e sedativa dentre todos os ISRS (devendo ser evitada no idoso); a <em>fluoxetina</em> possui meia-vida extremamente longa (norfluoxetina dura semanas) e alto potencial de interações via CYP2D6.",
+            "<strong>Benzodiazepínicos de curta, intermediária ou longa ação</strong> (<em>alprazolam, lorazepam, clonazepam, diazepam, bromazepam</em>) e <strong>Hipnóticos \"Drogas Z\"</strong> (<em>zolpidem, zopiclona, eszopiclona</em>): Aumentam drasticamente o risco de quedas, fratura de fêmur, <em>delirium</em>, declínio cognitivo e acidentes automobilísticos.",
+            "<strong>Relaxantes musculares esqueléticos</strong> (<em>ciclobenzaprina, carisoprodol, orfenadrina</em>): Intensa ação anticolinérgica e sedativa, com eficácia mínima nas dores crônicas.",
+            "<strong>Sulfonilureias de longa duração ou alto risco hipoglicêmico</strong> (<em>clorpropamida, glibenclamida e glimepirida</em>): Causam hipoglicemia grave e prolongada no idoso (a clorpropamida causa ainda SIADH e hiponatremia). Na atualização 2023 da AGS, todas as sulfonilureias passaram a ser desencorajadas como 1ª ou 2ª linha pelo risco de hipoglicemia e eventos cardiovasculares.",
+            "<strong>Inibidores da Bomba de Prótons (IBPs)</strong> (<em>omeprazol, pantoprazol, esomeprazol</em>) por período <strong>&gt; 8 semanas</strong> (exceto em esofagite erosiva grave de Los Angeles C/D, Esôfago de Barrett, estados hipersecretórios como Zollinger-Ellison ou uso crônico indispensável de AINEs/dupla antiagregação em alto risco de sangramento): Uso prolongado associa-se a infecção por <em>Clostridioides difficile</em>, pneumonia comunitária, perda óssea/fraturas de quadril, hipomagnesemia, deficiência de vitamina B12 e nefrite intersticial crônica.",
+            "<strong>Alfa-1 bloqueadores periféricos para hipertensão</strong> (<em>doxazosina, prazosina, terazosina</em>) e <strong>Alfa-2 agonistas centrais</strong> (<em>metildopa, clonidina</em>): Risco proibitivo de hipotensão ortostática, síncope, bradicardia e depressão do SNC.",
+            "<strong>Antipsicóticos típicos e atípicos</strong> (<em>haloperidol, risperidona, quetiapina, olanzapina</em>) para problemas comportamentais da demência ou insônia: Aumentam o risco de Acidente Vascular Cerebral (AVC) e a mortalidade global em pacientes com demência (<em>Black Box Warning</em> do FDA), devendo ser reservados apenas para agitação psicomotora ou psicose grave refratária a medidas não farmacológicas quando o paciente oferece risco iminente a si ou a terceiros.",
+            "<strong>AINEs não seletivos e seletivos da COX-2</strong> em uso crônico: Risco de úlcera péptica hemorrágica, perfuração gastrointestinal, lesão renal aguda e descompensação de insuficiência cardíaca.",
+            "<strong>Ácido Acetilsalicílico (AAS) para prevenção cardiovascular PRIMÁRIA:</strong> Na atualização de 2023 dos Critérios de Beers (em consonância com os ensaios ASPREE, ARRIVE e ASCEND), o AAS não deve mais ser iniciado para prevenção primária em idosos, e deve-se considerar sua desprescrição naqueles que já o utilizam sem histórico de evento aterotrombótico prévio (IAM, AVC isquêmico, revascularização), dado o risco elevado de sangramento gastrointestinal e intracraniano sem benefício líquido em mortalidade.",
+            "<strong>Tabela 2 — Medicamentos Potencialmente Inapropriados devido a Interações Droga-Doença ou Droga-Síndrome:</strong> Ex.: Anticolinérgicos em pacientes com demência ou hiperplasia prostática benigna (HPB); tiazolidinedionas (pioglitazona), cilostazol ou diltiazem/verapamil na Insuficiência Cardíaca com FEVE reduzida; antipsicóticos (exceto quetiapina, clozapina e pimavanserina) na Doença de Parkinson.",
+            "<strong>Tabela 3 — Medicamentos a serem usados com extrema cautela em idosos:</strong> Ex.: Diuréticos, ISRS, IRSN (duloxetina, venlafaxina), carbamazepina/oxcarbazepina e mirtazapina pelo risco de <strong>SIADH (Síndrome da Secreção Inapropriada de Hormônio Antidiurético) e hiponatremia</strong>; SGLT2i pelo risco de infecção micótica urogenital e cetoacidose euglicêmica/depleção volêmica em muito frágeis.",
+            "<strong>Tabela 4 — Interações Medicamentosas Potencialmente Clinicamente Importantes a serem evitadas:</strong> Ex.: Uso concomitante de &ge; 3 fármacos ativos no Sistema Nervoso Central (antidepressivos + antipsicóticos + benzodiazepínicos/Z-drugs + anticonvulsivantes + opioides) pelo risco sinérgico de quedas e depressão respiratória; associação de opioides com gabapentinoides (pregabalina/gabapentina) ou benzodiazepínicos; associação de varfarina com sulfametoxazol-trimetoprima, ciprofloxacino ou macrolídeos (elevação explosiva do RNI); associação de IECA/BRA com espironolactona ou amicacina/sulfametoxazol-trimetoprima precipitando hipercalemia fatal.",
+            "<strong>Tabela 5 — Medicamentos que devem ser evitados ou ter dose reduzida de acordo com a Função Renal (TFG):</strong> Ex.: Ciprofloxacino (risco de tendinite/ruptura de tendão de Aquiles e neurotoxicidade/convulsões se TFG &lt; 30), nitrofurantoína (ineficaz na urina e risco de neuropatia periférica e fibrose pulmonar se TFG &lt; 30 mL/min), colchicina, dabigatrana, rivaroxabana, apixabana, baclofeno (encefalopatia grave se TFG &lt; 30) e gabapentina/pregabalina."
+          ]
+        ],
+        [
+          "3",
+          "4.5 Critérios STOPP / START (Versão 3 — European Geriatric Medicine Society)"
+        ],
+        [
+          "p",
+          "Criados na Irlanda (O'Mahony et al.) como uma alternativa europeia fisiologicamente estruturada por sistemas orgânicos aos Critérios de Beers, os critérios <strong>STOPP/START</strong> possuem uma vantagem conceitual brilhante cobrada em provas: eles avaliam simultaneamente o <strong>sobretratamento / prescrição inapropriada (STOPP)</strong> e o <strong>subtratamento / omissão de prescrição benéfica (START)</strong>!"
+        ],
+        [
+          "u",
+          [
+            "<strong>STOPP (<em>Screening Tool of Older Persons' Prescriptions</em>):</strong> Identifica medicamentos potencialmente inapropriados que devem ser interrompidos. Exemplos clássicos:\n    <ul>\n      <li>Qualquer medicamento prescrito sem indicação clínica baseada em evidências ou além da duração recomendada.",
+            "Qualquer prescrição concomitante de dois fármacos da mesma classe (duplicidade terapêutica, como dois AINEs, dois ISRS ou dois diuréticos de alça) antes de otimizar a monoterapia.",
+            "Digoxina em dose &gt; 125 mcg/dia em idosos com TFG &lt; 30 mL/min (alto risco de intoxicação digitálica).",
+            "Diurético de alça (furosemida) para edema maleolar isolado sem evidência clínica, bioquímica ou ecocardiográfica de insuficiência cardíaca, síndrome nefrótica ou cirrose hepática (ou seja, para edema gravitacional/insuficiência venosa crônica, cujo tratamento correto é elevação de membros e elastocompressão!)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>START (<em>Screening Tool to Alert to Right Treatment</em>):</strong> Identifica <strong>Omissões Potenciais de Prescrição (PPOs)</strong> — ou seja, medicamentos claramente indicados que deixaram de ser prescritos apenas pelo preconceito etário (idadismo/<em>ageism</em>) ou negligência clínica, em idosos que possuem expectativa de vida compatível com o benefício. Exemplos clássicos:"
+        ],
+        [
+          "u",
+          [
+            "Anticoagulação oral (preferencialmente DOACs ou varfarina se estenose mitral moderada-grave/prótese mecânica) em idoso com Fibrilação Atrial crônica ou paroxística e CHA2DS2-VASc elevado, salvo contraindicação formal por sangramento ativo.",
+            "IECA (ou BRA/INRA) e betabloqueador cardiosseletivo na Insuficiência Cardíaca Sistólica (FEVE &le; 40%) documentada.",
+            "Bisfosfonatos associados à suplementação de Vitamina D e Cálcio em pacientes com osteoporose documentada por densitometria (T-score &le; -2,5), fratura por fragilidade prévia ou em uso crônico de corticoterapia sistêmica.",
+            "Laxativos osmóticos regulares (ex.: lactulose ou polietilenoglicol - PEG) em qualquer paciente que receba prescrição de opioides de uso contínuo (prevenção obrigatória da constipação induzida por opioides).",
+            "Vacinação anual contra Influenza e atualização vacinal antipneumocócica e contra Herpes Zóster."
+          ]
+        ]
+      ]
+    ],
+    [
+      "protocolos-sistematicos-desprescricao",
+      0,
+      [
+        [
+          "2",
+          "5. Protocolos Sistemáticos de Desprescrição (Deprescribing) na Prática Clínica"
+        ],
+        [
+          "p",
+          "A <strong>Desprescrição (<em>Deprescribing</em>)</strong> não é a mera suspensão abrupta, descuidada ou niilista de medicamentos; define-se como o <strong>processo sistemático, planejado e supervisionado por um profissional de saúde de identificação e redução de dose, substituição ou interrupção de medicamentos</strong> nos quais os danos atuais ou potenciais superam os benefícios, considerando o estado clínico atual, a capacidade funcional, a expectativa de vida, a carga do tratamento e os valores e preferências do paciente."
+        ],
+        [
+          "3",
+          "5.1 O Algoritmo em 5 Passos de Ian Scott para Desprescrição Segura"
+        ],
+        [
+          "p",
+          "O protocolo clássico publicado no <em>JAMA Internal Medicine</em> (Scott et al., 2015) estrutura a desprescrição em cinco etapas sequenciais obrigatórias:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Passo 1 — Reconciliação Medicamentosa Completa (\"Teste da Sacola Castanha\" / <em>Brown Bag Review</em>):</strong> Solicitar ao paciente e ao cuidador que tragam à consulta (ou inspecionar diretamente na visita domiciliar) absolutamente <strong>todos</strong> os medicamentos em uso real: prescrições de diferentes especialistas, fármacos comprados por conta própria (OTC - <em>over-the-counter</em>, como AINEs, laxativos, antiácidos, antigripais descongestionantes), fitoterápicos (ex.: <em>Ginkgo biloba</em> que aumenta risco hemorrágico), suplementos vitamínicos e colírios (ex.: colírio de timolol absorvido pela mucosa nasolacrimal causando bradicardia sinusal e bloqueio atrioventricular no idoso!). Confrontar cada caixa com a indicação clínica original e verificar a adesão real.",
+            "<strong>Passo 2 — Avaliação do Risco Global de Dano Induzido por Medicamentos:</strong> Estimar a vulnerabilidade do paciente considerando o número total de fármacos, idade avançada, fragilidade (Escala Clínica de Fragilidade de Rockwood &ge; 5), declínio cognitivo, insuficiência renal ou hepática, histórico de quedas recentes, hipotensão ortostática e a <strong>Carga Anticolinérgica Total</strong>.",
+            "<strong>Passo 3 — Avaliação da Elegibilidade de Cada Fármaco para Desprescrição:</strong> Questionar para cada item da lista:\n    <ul>\n      <li>Há indicação clínica válida e atual documentada?",
+            "O medicamento faz parte de uma <em>cascata iatrogênica prescritiva</em>?",
+            "Os danos atuais (efeitos adversos reais ou subclínicos) ou futuros superam os benefícios?",
+            "É um medicamento puramente sintomático para um sintoma que já desapareceu há meses/anos?",
+            "É um medicamento preventivo cujo <strong>Tempo até o Benefício (TTB)</strong> excede a expectativa de vida estimada do paciente?",
+            "O medicamento impõe uma carga de administração ou custo financeiro inaceitável?",
+            "<strong>Passo 4 — Priorização da Ordem de Retirada:</strong> Nunca suspender 4 ou 5 medicamentos simultaneamente no mesmo dia (exceto em intoxicação aguda ameaçadora à vida), pois caso surja um sintoma de abstinência ou retorno da doença de base, será impossível identificar qual fármaco foi o responsável! Retirar <strong>um medicamento por vez</strong>, começando por aqueles que: (a) causam dano tóxico evidente no momento; (b) possuem maior relação risco/benefício desfavorável; e (c) o paciente tem maior desejo e prontidão em suspender.",
+            "<strong>Passo 5 — Implementação do Regime de Desmame (<em>Tapering</em>) e Monitoramento de Eventos Adversos de Retirada (ADWE):</strong> Distinguir os fármacos que podem ser suspensos abruptamente daqueles que exigem desmame lento e gradual para prevenir <strong>Síndrome de Abstinência / Retirada Fisiológica</strong> ou <strong>Efeito Rebote</strong>, pactuando plano de monitoramento nas semanas subsequentes."
+          ]
+        ],
+        [
+          "3",
+          "5.2 Fenômenos Farmacodinâmicos na Retirada: Rebote vs. Abstinência vs. Recorrência"
+        ],
+        [
+          "p",
+          "Em provas de residência, é essencial diferenciar os três fenômenos que podem ocorrer após a suspensão de um fármaco:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Efeito Rebote (<em>Rebound</em>):</strong> Retorno transitório e <strong>exacerbado</strong> (em intensidade superior ao basal pré-tratamento) do próprio sintoma que o medicamento controlava, decorrente de <em>up-regulation</em> (suprarregulação) ou hipersensibilidade adaptativa dos receptores durante o bloqueio crônico. Exemplos clássicos:\n    <ul>\n      <li><strong>Suspensão abrupta de Betabloqueadores</strong> (propranolol, atenolol, metoprolol): A suprarregulação de receptores beta-1 cardíacos expostos às catecolaminas endógenas causa <em>taquicardia rebote grave, crise hipertensiva, angina instável e infarto agudo do miocárdio</em>.",
+            "<strong>Suspensão abrupta de Clonidina:</strong> A hiperatividade simpática rebote causa crise hipertensiva adrenérgica grave e encefalopatia.",
+            "<strong>Suspensão abrupta de Inibidores da Bomba de Prótons (IBPs):</strong> A hipocloridria crônica induzida pelo omeprazol estimula hiperplasia compensatória das células G antrais (hipergastrinemia secundária) e hipertrofia das células enterocromafins-símile (ECL) produtoras de histamina. Ao parar o omeprazol de repente, ocorre <strong>hipersecreção ácida rebote maciça</strong> por 2 a 4 semanas, fazendo o paciente acreditar que \"não consegue viver sem o omeprazol\".",
+            "<strong>Suspensão de Descongestionantes Nasais Tópicos Alfa-agonistas</strong> (nafazolina, oximetazolina): Causa vasodilatação mucosa intensa e obstrução nasal grave (<em>rinite medicamentosa</em>)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Síndrome de Abstinência / Descontinuação Fisiológica (<em>Withdrawal</em>):</strong> Surgimento de um conjunto de sinais e sintomas neurovegetativos e psíquicos novos (muitas vezes distintos da doença original) devido à adaptação neuroquímica central. Exemplo: ansiedade paroxística, tremores, sudorese, insônia rebote, mioclonias e convulsões tônico-clônicas generalizadas na retirada abrupta de <strong>benzodiazepínicos</strong> ou barbitúricos; ou tontura, parestesias em \"choque elétrico\" (<em>brain zaps</em>), náuseas e irritabilidade na parada abrupta de ISRS/IRSN de meia-vida curta (especialmente <strong>paroxetina e venlafaxina</strong>).</li>\n  <li><strong>Recorrência / Recaída da Doença de Base (<em>Relapse / Recurrence</em>):</strong> Retorno gradual (geralmente após semanas ou meses) dos sinais e sintomas originais da patologia subjacente, demonstrando que o tratamento farmacológico ainda era clinicamente necessário.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "5.3 Protocolos Específicos de Desprescrição Baseados em Evidências (Bruyère Research Institute / Deprescribing.org)"
+        ],
+        [
+          "4",
+          "1. Desprescrição de Inibidores da Bomba de Prótons (IBPs — Omeprazol, Pantoprazol)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Quem DEVE manter o IBP continuamente (NÃO desprescrever):</strong> Pacientes com Esofagite Erosiva Grave documentada (Grau C ou D de Los Angeles), Esôfago de Barrett, estenose péptica esofágica, Síndrome de Zollinger-Ellison, histórico de úlcera péptica sangrante não erradicada, ou usuários crônicos obrigatórios de AINEs / corticoides em dose alta / dupla antiagregação plaquetária (AAS + clopidogrel) ou anticoagulação oral associada a antiagregante com alto risco de sangramento digestivo.",
+            "<strong>Quem DEVE ter o IBP desprescrito:</strong> Pacientes com DRGE leve a moderada (não erosiva ou Los Angeles A/B) já tratada por 4 a 8 semanas com remissão completa dos sintomas; úlcera péptica já cicatrizada e com <em>Helicobacter pylori</em> erradicado; dispepsia funcional assintomática há mais de 8 semanas; profilaxia de úlcera de estresse iniciada na UTI/enfermaria e mantida inadvertidamente na alta hospitalar; e o clássico erro brasileiro de prescrever omeprazol \"para proteger o estômago porque o paciente toma muitos remédios\" (anti-hipertensivos, estatinas e antidiabéticos não causam úlcera péptica!).",
+            "<strong>Como Desprescrever (Evitando a Hipersecreção Ácida Rebote):</strong>\n    <ol>\n      <li>Reduzir a dose pela metade (ex.: de 40 mg para 20 mg/dia, ou de 20 mg/dia para 20 mg em dias alternados) durante <strong>2 a 4 semanas</strong>, suspendendo a seguir; <strong>OU</strong>",
+            "Suspender o IBP e instituir terapia \"sob demanda\" (<em>on-demand</em>) para sintomas ocasionais utilizando antiácidos de barreira (alginato, hidróxido de alumínio/magnésio) ou antagonista H2 em baixa dose por curto período, associando medidas comportamentais (evitar deitar-se nas 2–3 horas após o jantar, elevar a cabeceira da cama em 15 cm, reduzir café, álcool, chocolate e refeições gordurosas noturnas)."
+          ]
+        ],
+        [
+          "4",
+          "2. Desprescrição de Benzodiazepínicos (BZD) e Hipnóticos Z (Zolpidem)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Indicação de Desprescrição:</strong> Praticamente <strong>todos os idosos (&ge; 65 anos)</strong> que utilizam BZD ou drogas Z para insônia, ansiedade leve ou agitação (independentemente do tempo de uso), e adultos de qualquer idade em uso contínuo por período <strong>&gt; 4 semanas</strong> para insônia. O uso crônico induz tolerância ao efeito hipnótico em poucas semanas, mas mantém integralmente os efeitos adversos psicomotores (ataxia, queda da própria altura, fratura de colo de fêmur, amnésia anterógrada e sonolência diurna).",
+            "<strong>Regra de Segurança no Desmame de BZD:</strong> Quando o uso ocorre há mais de 4 a 8 semanas, a suspensão <strong>JAMAIS deve ser abrupta</strong> pelo risco de síndrome de abstinência grave, <em>delirium</em> e crise epiléptica generalizada!",
+            "<strong>Protocolo de Desmame Gradual (<em>Tapering</em>):</strong>\n    <ol>\n      <li><strong>Redução Lenta de Dose:</strong> Reduzir cerca de <strong>25% da dose original a cada 2 semanas</strong> (e, na reta final do desmame, desacelerar para reduções de <strong>12,5% a cada 2 semanas</strong> ou instituir dias livres de medicação), totalizando um processo de 8 a 16 semanas (ou até mais lento em usuários crônicos de décadas).",
+            "<strong>Estratégia de Substituição (<em>Switching</em>) em casos selecionados:</strong> Em pacientes com dificuldade extrema de fracionar comprimidos de benzodiazepínicos de meia-vida curta/intermediária e alta potência (como o alprazolam ou lorazepam), alguns protocolos psiquiátricos utilizam a transição para dose equivalente em gotas (ex.: clonazepam gotas, onde 1 gota = 0,1 mg, permitindo redução milimétrica de 1 gota por semana) ou diazepam em adultos jovens (evitando-se iniciar diazepam de novo em idosos muito frágeis pelo acúmulo lipofílico, preferindo-se no idoso reduzir gradualmente o próprio fármaco em uso ou usar formulação líquida em gotas para titulação decrescente).",
+            "<strong>Suporte Não Farmacológico Obrigatório:</strong> Associar <strong>Terapia Cognitivo-Comportamental para Insônia (TCC-I)</strong> e higiene do sono (exposição à luz solar matinal, restrição de tempo na cama apenas ao período de sono, eliminação de cochilos diurnos prolongados, suspensão de cafeína após as 14h e de telas luminosas à noite). Evitar substituir o BZD por trazodona, quetiapina, amitriptilina ou anti-histamínicos no idoso, pois também elevam o risco de quedas!"
+          ]
+        ],
+        [
+          "4",
+          "3. Desprescrição de Estatinas e Antidiabéticos (Sulfonilureias / Insulina) no Idoso Frágil"
+        ],
+        [
+          "u",
+          [
+            "<strong>Estatinas:</strong>\n    <ul>\n      <li><em>Prevenção Primária em Idosos Frágeis ou Muito Idosos (&gt; 80–85 anos):</em> O Tempo até o Benefício (TTB) de uma estatina na prevenção primária (pessoa que nunca teve IAM, AVC ou doença arterial periférica) é de <strong>2 a 5 anos</strong>. Em pacientes com fragilidade severa, demência avançada (FAST 7) ou expectativa de vida &lt; 1–2 anos (PPS &le; 50%), a estatina não reduz mortalidade, aumenta a polifarmácia e pode causar miopatia/sarcopenia e fadiga. A <strong>suspensão pode ser feita de forma imediata (abrupta)</strong>, pois estatinas não causam síndrome de abstinência fisiológica! Um ensaio clínico randomizado clássico (Kutner et al., <em>JAMA Intern Med</em> 2015) demonstrou que suspender estatinas em pacientes com expectativa de vida &lt; 1 ano é totalmente seguro, não aumenta mortalidade em 60 dias e <strong>melhora significativamente a qualidade de vida</strong>.",
+            "<em>Prevenção Secundária:</em> Em idosos robustos ou pré-frágeis com doença cardiovascular aterosclerótica estabelecida (pós-IAM ou pós-AVC), o benefício da estatina se mantém e ela deve ser preservada (salvo em cuidados paliativos de fim de vida ou intolerância muscular grave)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Sulfonilureias e Insulina no Diabetes Mellitus Tipo 2 do Idoso Frágil:</strong>"
+        ],
+        [
+          "u",
+          [
+            "No idoso com multimorbidade e fragilidade, a <strong>hipoglicemia é muito mais letal e incapacitante no curto prazo do que a hiperglicemia leve a moderada</strong>. Episódios de hipoglicemia (&lt; 70 mg/dL) desencadeiam descarga adrenérgica aguda (arritmias ventriculares, isquemia miocárdica silenciosa), neuroglicopenia (confusão mental, síncope, quedas com fratura de fêmur) e aceleram a demência.",
+            "<strong>Indicação de Desprescrição:</strong> Idosos frágeis com <strong>HbA1c &lt; 7,0% ou &lt; 6,5% (sobretratamento glicêmico / <em>overtreatment</em>!)</strong> em uso de sulfonilureias (especialmente glibenclamida ou glimepirida) ou insulina; pacientes com episódios documentados de hipoglicemia ou perda ponderal/anorexia senil.",
+            "<strong>Conduta:</strong> Suspender imediatamente a glibenclamida/glimepirida (ou reduzir em 50% a dose de insulina basal NPH/Glargina, passando a NPH noturna para a manhã se houver hipoglicemia na madrugada), flexibilizando o alvo de HbA1c para <strong>7,5% a 8,5%</strong> e glicemia de jejum entre 110 e 160 mg/dL."
+          ]
+        ],
+        [
+          "4",
+          "4. Carga Anticolinérgica e Desprescrição de Anticolinérgicos (Escala ACB)"
+        ],
+        [
+          "p",
+          "O bloqueio cumulativo dos receptores muscarínicos ($M_1$ a $M_5$) no Sistema Nervoso Central e periférico por múltiplos medicamentos usados simultaneamente denomina-se <strong>Carga Anticolinérgica (<em>Anticholinergic Burden</em>)</strong>. Mesmo que um paciente não tome um anticolinérgico potente isolado (escore ACB 3), a soma de três medicamentos com efeito anticolinérgico leve (escore ACB 1 cada, como furosemida + digoxina + ranitidina/prednisona) atinge um <strong>escore ACB total &ge; 3</strong>, que triplica o risco de <em>delirium</em>, demência incidente, quedas e mortalidade!"
+        ],
+        [
+          "t",
+          [
+            "Escore ACB (Anticholinergic Cognitive Burden)",
+            "Potência Anticolinérgica",
+            "Principais Fármacos Representantes (Foco em Provas)"
+          ],
+          [
+            [
+              "<strong>ACB = 1 (Leve / Possível)</strong>",
+              "Afinidade muscarínica in vitro ou efeito clínico discreto",
+              "Furosemida, Hidroclorotiazida, Digoxina, Captopril, Nifedipino, Varfarina, Prednisona, Hidrocortisona, Codeína, Morfina, Fentanil, Haloperidol, Risperidona, Trazodona, Venlafaxina, Alprazolam, Diazepam, Metoclopramida, Loperamida, Cetirizina, Loratadina"
+            ],
+            [
+              "<strong>ACB = 2 (Moderado)</strong>",
+              "Efeito anticolinérgico clínico moderado",
+              "Carbamazepina, Oxcarbazepina, Ciclobenzaprina, Amantadina, Meperidina (Petidina), Baclofeno, Loxapina, Cimetidina"
+            ],
+            [
+              "<strong>ACB = 3 (Forte / Definitivo)</strong>",
+              "Alta penetração na BHE e bloqueio M1 potente (causa direta de <em>delirium</em> e demência)",
+              "<strong>Tricíclicos:</strong> Amitriptilina, Nortriptilina, Imipramina, Clomipramina<br><strong>ISRS:</strong> Paroxetina<br><strong>Anti-histamínicos 1ª ger.:</strong> Dexclorfeniramina, Prometazina, Hidroxizina, Difenidramina, Dimenidrinato<br><strong>Antiespasmódicos/Urológicos:</strong> Oxibutinina, Tolterodina, Solifenacina, Escopolamina (Hioscina), Atropina<br><strong>Relaxantes musculares:</strong> Orfenadrina, Carisoprodol<br><strong>Antipsicóticos/Antiparkinsonianos:</strong> Clorpromazina, Levomepromazina, Olanzapina, Clozapina, Quetiapina, Biperideno, Triexifenidil"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>A Toxíndrome Anticolinérgica Clássica no Idoso:</strong> Memorize o aforismo semiológico clássico traduzido para a clínica: <em>\"Louco como um chapeleiro\"</em> (delirium hiperativo ou hipoativo, alucinações visuais, agitação, amnésia), <em>\"Seco como um osso\"</em> (xerostomia extrema que impede a deglutição e causa perda dentária, anidrose mucosa), <em>\"Cego como um morcego\"</em> (midríase paralítica, cicloplegia com turvação visual para perto e precipitação de <strong>glaucoma agudo de ângulo fechado</strong>), <em>\"Vermelho como uma beterraba e Quente como uma lebre\"</em> (vasodilatação cutânea compensatória e hipertermia por bloqueio da sudorese écrina colinérgica) e <em>\"Cheio como um cantil / Intestino parado\"</em> (retenção urinária aguda / bexigoma e íleo paralítico / constipação severa com fecaloma). A desprescrição de tricíclicos e antimuscarínicos deve ser feita com redução gradual (25–50% a cada 1–2 semanas) para evitar sintomas de rebote colinérgico (náuseas, diarreia, sudorese, pesadelos vívidos)."
+        ]
+      ]
+    ],
+    [
+      "cuidados-paliativos-domiciliares-hipodermoclise",
+      0,
+      [
+        [
+          "2",
+          "6. Cuidados Paliativos Domiciliares, Controle de Sintomas e Hipodermóclise"
+        ],
+        [
+          "p",
+          "A integração entre a Atenção Domiciliar (AD1, AD2 e AD3) e os <strong>Cuidados Paliativos</strong> representa um dos pilares éticos e técnicos mais nobres da Medicina de Família e Comunidade. Segundo a definição atualizada da Organização Mundial da Saúde (OMS) e da <em>International Association for Hospice and Palliative Care</em> (IAHPC), Cuidados Paliativos consistem na assistência holística ativa voltada a indivíduos de todas as idades com sofrimento grave relacionado à saúde decorrente de doença ameaçadora da vida, especialmente aqueles próximos ao fim da vida, visando melhorar a qualidade de vida dos pacientes, de suas famílias e de seus cuidadores."
+        ],
+        [
+          "p",
+          "Para que o paciente possa permanecer no conforto do seu domicílio (e, caso seja seu desejo e da família, vivenciar o processo de morte em casa com dignidade e sem sofrimento), a equipe de saúde deve dominar a <strong>via subcutânea (hipodermóclise)</strong> e o manejo farmacológico rigoroso dos quatro grandes sintomas de fim de vida: <strong>dor, dispneia, delirium/agitação terminal e hipersecreção respiratória (\"sororoca\")</strong>."
+        ],
+        [
+          "3",
+          "6.1 Hipodermóclise (Terapia Subcutânea para Hidratação e Administração de Fármacos)"
+        ],
+        [
+          "p",
+          "A <strong>hipodermóclise</strong> consiste na infusão de fluidos isotônicos e/ou medicamentos diretamente no tecido celular subcutâneo (hipoderme), cuja rica rede capilar linfática e sanguínea permite absorção sistêmica eficaz, previsível e com biodisponibilidade semelhante à via intramuscular ou endovenosa contínua (sem o efeito de primeira passagem hepática da via oral)."
+        ],
+        [
+          "4",
+          "Indicações Clínicas da Hipodermóclise na Atenção Domiciliar"
+        ],
+        [
+          "u",
+          [
+            "Impossibilidade de utilização da via oral (disfagia grave, odinofagia, rebaixamento do nível de consciência, coma, fase ativa de morte com PPS 10–20%).",
+            "Náuseas e vômitos incoercíveis ou obstrução intestinal maligna inoperável.",
+            "Falência ou fragilidade extrema da rede venosa periférica em idosos ou pacientes oncológicos caquéticos, nos quais punções venosas repetidas causam dor e sofrimento desproporcionais.",
+            "Necessidade de hidratação parenteral leve a moderada em desidratação isotônica e controle contínuo ou intermitente (em <em>bolus</em>) de sintomas no domicílio, facilmente manejável pelo cuidador treinado."
+          ]
+        ],
+        [
+          "4",
+          "Contraindicações Absolutas e Relativas da Hipodermóclise"
+        ],
+        [
+          "u",
+          [
+            "<strong>Contraindicações Absolutas (Situações de Emergência / Choque):</strong> Choque hipovolêmico ou séptico que exija expansão volêmica rápida em minutos (a absorção subcutânea é limitada pela difusão tecidual); <strong>anasarca</strong> ou edema generalizado grave; distúrbios graves da coagulação / trombocitopenia severa com risco de hematoma dissecante no subcutâneo; infecção de pele (celulite/erisipela) ou lesão tumoral/radiodermite no sítio de punção escolhido.",
+            "<strong>Contraindicações Relativas:</strong> Caquexia extrema com ausência quase completa de panículo adiposo (exige escolha criteriosa do sítio, como região infraclavicular ou interescapular, e angulação de 30° da agulha), insuficiência cardíaca descompensada ou sobrecarga hídrica (contraindica infusão de grandes volumes de soro, mas permite o uso da via subcutânea apenas para infusão de medicamentos em pequeno volume!)."
+          ]
+        ],
+        [
+          "4",
+          "Técnica de Punção, Sítios Anatômicos e Volumes Máximos"
+        ],
+        [
+          "u",
+          [
+            "<strong>Sítios Anatômicos de Escolha (e seus limites de volume):</strong>\n    <ol>\n      <li><strong>Região Deltoidea:</strong> Face lateral do terço médio do braço (suporta volumes menores, até 250–500 mL/24h; excelente para administração intermitente de fármacos em <em>bolus</em>).",
+            "<strong>Região Infraclavicular / Torácica Superior (Anterior):</strong> Excelente opção em pacientes caquéticos (onde ainda resta tecido subcutâneo) e agitados, mas suporta volumes moderados.",
+            "<strong>Região Abdominal (Flancos / Parede Abdominal Lateral):</strong> Respeitando distância mínima de 5 cm da cicatriz umbilical; possui a maior capacidade de absorção para hidratação (até <strong>1.000 a 1.500 mL/24h por sítio</strong>).",
+            "<strong>Face Anterolateral da Coxa:</strong> Alta capacidade volumétrica (até <strong>1.000 a 1.500 mL/24h</strong>), muito prática no domicílio.",
+            "<strong>Região Interescapular (Subescapular / Dorso Superior):</strong> <em>Sítio de eleição em pacientes com delirium hiperativo ou demência avançada que arrancam os dispositivos</em>, pois o paciente não alcança as próprias costas!",
+            "<strong>Volume Máximo Diário na Hipodermóclise:</strong> O limite fisiológico clássico de absorção do tecido subcutâneo é de até <strong>1.500 mL em 24 horas por sítio de punção</strong> (com velocidade máxima de infusão de 60 a 125 mL/hora). Caso o paciente necessite de 3.000 mL em 24 horas, utilizam-se <strong>dois sítios distintos simultâneos</strong> (1.500 mL/24h em cada sítio).",
+            "<strong>Soluções Permitidas para Hidratação:</strong> Soro Fisiológico 0,9% (SF 0,9%) ou Soro Glicosado 5% (SG 5%) ou solução glicofisiológica (nunca utilizar soluções hipertônicas como glicose a 10% ou 50%, nem água destilada pura em grande volume por risco de necrose tecidual!).",
+            "<strong>Dispositivo e Tempo de Permanência:</strong> Prefere-se o <strong>cateter agulhado flexível de teflon/poliuretano (Jelco/Abocath calibres 22G ou 24G)</strong> em relação ao escalpe metálico (butterfly), inserido em ângulo de 45° (ou 30° em muito magros) na prega subcutânea. O sítio de punção exclusivo para medicamentos pode permanecer por <strong>até 7 dias</strong> (ou até 3 a 5 dias se usado para hidratação contínua), devendo ser trocado imediatamente se houver hiperemia, calor, endurecimento local, dor ou extravasamento."
+          ]
+        ],
+        [
+          "4",
+          "Compatibilidade Farmacológica na Hipodermóclise (O que PODE e o que é PROIBIDO)"
+        ],
+        [
+          "p",
+          "Esta é uma das questões mais cobradas em provas de Residência Médica, Revalida e concursos de Medicina de Família e Geriatria:"
+        ],
+        [
+          "t",
+          [
+            "Categoria",
+            "Fármacos PERMITIDOS na Hipodermóclise",
+            "Fármacos ESTRITAMENTE PROIBIDOS na Hipodermóclise (Causam Necrose / Abscesso Estéril!)"
+          ],
+          [
+            [
+              "<strong>Analgésicos e Opioides</strong>",
+              "<strong>Morfina, Metadona, Fentanil, Tramadol</strong>, Dipirona (com cautela/diluída em sítio exclusivo)",
+              "<strong>AINEs em geral (Cetoprofeno, Tenoxicam, Diclofenaco)</strong> e Meperidina/Petidina"
+            ],
+            [
+              "<strong>Sedativos, Antipsicóticos e Anticonvulsivantes</strong>",
+              "<strong>Midazolam</strong> (benzodiazepínico hidrossolúvel de escolha!), <strong>Haloperidol, Levomepromazina, Clorpromazina</strong> (com cautela por irritação local), <strong>Fenobarbital, Levetiracetam</strong>",
+              "<strong>DIAZEPAM</strong> (veículo propilenoglicol oleoso causa necrose química grave!), <strong>FENITOÍNA</strong> (pH alcalino ~12 causa \"síndrome da luva roxa\" e necrose tecidual maciça!)"
+            ],
+            [
+              "<strong>Antieméticos, Antissecretórios e Corticoides</strong>",
+              "<strong>Metoclopramida, Ondansetrona, Dimenidrinato, Escopolamina (Hioscina), Octreotida, Dexametasona</strong> (em sítio exclusivo pois precipita com outros fármacos), <strong>Ranitidina, Omeprazol</strong> (sítio exclusivo)",
+              "<strong>Prometazina</strong> (altamente vesicante e necrosante no tecido subcutâneo!)"
+            ],
+            [
+              "<strong>Antibióticos e Diuréticos</strong>",
+              "<strong>Ceftriaxona, Cefepima, Ertapenem, Ampicilina, Tobramicina, Furosemida</strong>",
+              "<strong>Eletrólitos concentrados sem diluição</strong> (KCl 19,1% puro, NaCl 20%, Bicarbonato de Sódio 8,4%, Gluconato de Cálcio)"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Regra Mnemônica para Provas sobre Proibições na Hipodermóclise:</strong> Jamais infundir no subcutâneo: <strong>Diazepam, Fenitoína, Diclofenaco/Cetoprofeno e Prometazina</strong>! Se o paciente em cuidados paliativos domiciliares apresentar crise convulsiva ou agitação/dispneia terminal e precisar de um benzodiazepínico pela hipodermóclise, a droga de escolha absoluta é o <strong>Midazolam</strong> (hidrossolúvel em pH ácido, rapidamente absorvido no subcutâneo)."
+        ],
+        [
+          "3",
+          "6.2 Manejo de Sintomas Prevalentes no Fim de Vida no Domicílio"
+        ],
+        [
+          "o",
+          [
+            "<strong>Dor Nociceptiva e Oncológica Moderada a Intensa:</strong> Seguir a Escada Analgésica da OMS. O opioide forte padrão-ouro é a <strong>Morfina</strong> (disponível no SUS em comprimidos de ação rápida 10 mg e 30 mg, solução oral 10 mg/mL e ampolas 10 mg/mL).\n    <ul>\n      <li><em>Conversão Via Oral &rarr; Via Subcutânea/Endovenosa:</em> A potência parenteral da morfina é <strong>2 a 3 vezes maior</strong> que a oral (relação <strong>VO : SC/EV = 2:1 ou 3:1</strong>). Portanto, um paciente que tomava 60 mg/dia de morfina oral passará a receber <strong>20 mg a 30 mg/dia de morfina subcutânea</strong> (ex.: 3 a 5 mg SC de 4/4h + doses de resgate de 1/6 da dose diária total se dor episódica/<em>breakthrough pain</em>).",
+            "<em>Insuficiência Renal na Paliação:</em> Na doença renal crônica avançada (TFG &lt; 30 mL/min), a morfina acumula seus metabólitos ativos excretados pelo rim — especialmente a <strong>morfina-6-glicuronídeo (M6G)</strong> e a <strong>morfina-3-glicuronídeo (M3G)</strong> — causando <strong>neurotoxicidade induzida por opioides (mioclonias multifocais, hiperalgesia paradoxal, delirium e depressão respiratória)</strong>. Nesses casos, os opioides mais seguros são o <strong>Fentanil</strong> e a <strong>Metadona</strong> (excreção predominantemente fecal/biliar, sem metabólitos renais ativos).",
+            "<strong>Dispneia Refratária no Fim de Vida:</strong> O fármaco de primeira linha com maior nível de evidência científica para alívio da percepção central de dispneia (\"fome de ar\") é a <strong>Morfina em baixa dose</strong> (ex.: 2,5 a 5 mg VO de 4/4h ou 1 a 2 mg SC de 4/4h em virgens de opioides). A morfina reduz a sensibilidade do centro respiratório bulbar à hipercapnia/hipóxia, diminui o consumo de oxigênio ventilatório e reduz a pré-carga cardíaca sem causar depressão respiratória clinicamente significativa quando titulada corretamente. Se houver componente ansioso intenso (\"pânico respiratório\"), associa-se <strong>Midazolam</strong> em baixa dose (2,5 a 5 mg SC).Medidas não farmacológicas: <strong>ventilador de mão ou de mesa direcionado à face</strong> (estimula receptores mecanorreceptores do ramo V2/V3 do nervo trigêmeo, reduzindo a sensação central de dispneia em minutos!). O oxigênio suplementar só alivia a dispneia se houver hipoxemia documentada; em pacientes normoxêmicos, o ventilador facial é tão eficaz quanto o cateter de O2.",
+            "<strong>Delirium Terminal / Agitação de Fim de Vida:</strong> Descartar causas reversíveis imediatas à beira-leito (especialmente <strong>retenção urinária aguda / bexigoma</strong> e <strong>impactação fecal / fecaloma</strong>, além de dor não controlada!). O fármaco de primeira linha para o delirium hiperativo é o <strong>Haloperidol</strong> (0,5 a 2,5 mg VO ou SC de 8/8h ou 12/12h), podendo associar-se <strong>Clorpromazina ou Levomepromazina</strong> se for necessária sedação adicional. Evitar benzodiazepínicos isolados no delirium não terminal, pois agravam a confusão paradoxal (usando-se o Midazolam apenas quando se indica <strong>Sedação Paliativa</strong> para sintomas refratários intoleráveis nos últimos dias/horas de vida).",
+            "<strong>Hipersecreção Respiratória Terminal (\"Sororoca\" ou Estertores da Morte / <em>Death Rattle</em>):</strong> Ruído gorgolejante produzido pela oscilação de secreções salivares e brônquicas acumuladas na hipofaringe e traqueia em pacientes com rebaixamento de consciência que perderam o reflexo de deglutição e tosse (PPS 10%).\n    <ul>\n      <li><em>Conduta:</em> O paciente comatoso não sente sufocamento pelo ruído, mas o som causa imensa angústia aos familiares no domicílio. A conduta baseia-se em: (1) explicar empaticamente à família que o ruído é apenas ar passando pela saliva e que o paciente não está \"se afogando\"; (2) posicionamento em <strong>decúbito lateral com cabeceira levemente elevada</strong> para drenagem postural; (3) suspensão ou redução drástica da hidratação parenteral (que só aumenta a congestão pulmonar e salivar); (4) <strong>evitar aspiração traqueal/orofaríngea profunda de repetição</strong>, pois é dolorosa, traumática e estimula mais secreção reflexa; e (5) administração de <strong>anticolinérgicos antissecretórios</strong> por hipodermóclise: <strong>Butilbrometo de Escopolamina (Hioscina)</strong> 20 mg SC de 6/6h ou 8/8h (ou Atropina colírio 1% sublingual 1 a 2 gotas de 6/6h)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-resolvidos-aula-220",
+      0,
+      [
+        [
+          "2",
+          "7. Casos Clínicos Resolvidos e Raciocínio Diagnóstico-Terapêutico"
+        ],
+        [
+          "p",
+          "A seguir, apresentamos 4 casos clínicos complexos e realistas que integram a classificação de modalidades de Atenção Domiciliar (AD1, AD2 e AD3), a detecção de Cascatas Iatrogênicas Prescritivas, os Critérios de Beers/STOPP-START, os algoritmos de Desprescrição e o manejo de Cuidados Paliativos Domiciliares via Hipodermóclise."
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Estratificação em Atenção Domiciliar (AD1 vs. AD2 vs. AD3) e Sobrecarga do Cuidador"
+        ],
+        [
+          "p",
+          "<strong>Apresentação do Caso:</strong> Sr. Antônio, 78 anos, aposentado, recebe alta hospitalar após 18 dias de internação por Acidente Vascular Cerebral (AVC) isquêmico extenso em território de artéria cerebral média direita, complicado por pneumonia broncoaspirativa nosocomial e desenvolvimento de uma Lesão por Pressão (LPP) sacral Estágio IV (com exposição de fáscia muscular, exsudato purulento moderado após desbridamento cirúrgico e cultura de tecido profundo positiva para <em>Pseudomonas aeruginosa</em> sensível a cefepima e ertapenem, e <em>Staphylococcus aureus</em> sensível a ceftriaxona). Ele retorna para casa hemodinamicamente estável, afebril há 48 horas, respirando em ar ambiente (SpO2 95%), alimentando-se exclusivamente por Sonda Nasoenteral (SNE) recém-instalada devido a disfagia orofaríngea grave documentada em videoendoscopia da deglutição, e necessitando completar mais 10 dias de antibioticoterapia parenteral (Ceftriaxona 2 g/dia) além de curativos complexos diários e fonoterapia intensiva para reabilitação da deglutição. Sua única cuidadora é sua esposa, Dona Maria, de 74 anos, hipertensa e diabética, que chora durante a visita domiciliar conjunta de transição, relatando insônia, dores lombares intensas ao tentar mobilizar o marido no leito e medo de manejar a sonda enteral. Na avaliação funcional do Sr. Antônio: restrito ao leito, dependente para banho, vestir-se, uso do vaso sanitário, transferência, incontinente urinário/fecal e dependente de administração de dieta por sonda. Dona Maria pontua 64 pontos na Escala de Zarit."
+        ],
+        [
+          "4",
+          "Análise Clínica e Raciocínio Passo a Passo:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Avaliação Funcional do Paciente (Katz, Lawton e PPS):</strong>\n    <ul>\n      <li><strong>Escala de Katz:</strong> Dependente nas 6 Atividades Básicas da Vida Diária (Banho, Vestir-se, Banheiro, Transferência, Continência e Alimentação) = <strong>Katz G (ou 0/6 de independência — dependência total)</strong>.",
+            "<strong>Escala de Lawton:</strong> Totalmente dependente para todas as Atividades Instrumentais da Vida Diária (AIVDs).",
+            "<strong>Escala PPS:</strong> Totalmente restrito ao leito, incapaz para qualquer atividade, assistência total para autocuidado, alimentação por sonda = <strong>PPS 30%</strong>.",
+            "<strong>Classificação na Modalidade de Atenção Domiciliar (Portaria GM/MS nº 825/2016):</strong>\n    <ul>\n      <li>O paciente está restrito ao leito, clinicamente estável para desospitalização, mas necessita de <strong>acompanhamento multiprofissional no mínimo semanal (médico, enfermeiro, fonoaudiólogo, fisioterapeuta, nutricionista)</strong>, <strong>antibioticoterapia parenteral domiciliar</strong>, <strong>curativos complexos (LPP estágio IV)</strong> e adaptação/reabilitação de <strong>sonda nasoenteral</strong>.",
+            "Ele <strong>não</strong> utiliza suporte ventilatório mecânico (CPAP, BiPAP ou VMI) nem procedimentos de AD3. Portanto, sua classificação exata no momento da alta hospitalar é <strong>Modalidade AD2</strong>, sob responsabilidade primária do <strong>Serviço de Atenção Domiciliar (SAD — EMAD + EMAP)</strong>, mantendo vínculo longitudinal compartilhado com a Equipe de Saúde da Família (eSF) do território.",
+            "<em>Transição Futura:</em> Após o término do antibiótico parenteral, cicatrização/estabilização da lesão sacral e capacitação segura da família (ou retirada da sonda após reabilitação fonoaudiológica), quando o quadro tornar-se crônico estável exigindo apenas visitas mensais, o SAD dará alta da AD2 e fará a transição para a <strong>Modalidade AD1</strong> (sob responsabilidade exclusiva da eSF/eMulti).",
+            "<strong>Abordagem da Cuidadora (Dona Maria — Zarit = 64 pontos):</strong>\n    <ul>\n      <li>O escore de <strong>64 pontos na Escala de Zarit (0–88)</strong> configura <strong>Sobrecarga Severa do Cuidador</strong>, com altíssimo risco de adoecimento físico/psíquico de Dona Maria e colapso da assistência domiciliar.",
+            "<strong>Plano de Ação Imediato:</strong> (a) Acionar o Assistente Social e Psicólogo da EMAD/EMAP para realizar uma <strong>Conferência Familiar</strong> urgente, convocando os filhos do casal para dividir os turnos de cuidado e assumir as mobilizações pesadas no leito (transferência e mudança de decúbito de 2/2h); (b) Utilizar a via subcutânea (hipodermóclise) caso o acesso venoso periférico seja difícil, facilitando a administração diária de Ceftriaxona pela equipe da EMAD; (c) Agendar consulta para Dona Maria na UBS com sua eSF para ajuste pressórico, glicêmico e suporte em saúde mental."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Cascata Iatrogênica Prescritiva, Polifarmácia e Desprescrição Sistemática"
+        ],
+        [
+          "p",
+          "<strong>Apresentação do Caso:</strong> Dona Lourdes, 82 anos, viúva, portadora de Hipertensão Arterial Sistêmica, Diabetes Mellitus tipo 2, Osteoartrose de joelhos e Doença de Alzheimer leve a moderada (MEEM 18/30), é levada à Unidade Básica de Saúde pela filha devido a <em>\"piora rápida da memória, confusão mental noturna (delirium intermitente), boca muito seca, constipação intestinal severa, tontura ao levantar da cama e duas quedas da própria altura no último mês\"</em>. Ao realizar a Reconciliação Medicamentosa (\"Teste da Sacola\"), o Médico de Família e Comunidade identifica 11 medicamentos em uso diário (Hiperpolifarmácia):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Enalapril 20 mg</strong> 12/12h (iniciado há 10 anos para HAS).",
+            "<strong>Anlodipino 10 mg/dia</strong> (adicionado há 8 meses pelo cardiologista para otimizar controle pressórico).",
+            "<strong>Furosemida 40 mg pela manhã</strong> (iniciada há 6 meses em pronto-socorro porque a paciente desenvolveu edema maleolar bilateral simétrico 6 semanas após o início do anlodipino; ecocardiograma normal com FEVE 68% e função renal normal).",
+            "<strong>Donepezila 10 mg à noite</strong> (iniciada há 1 ano pelo neurologista para Doença de Alzheimer).",
+            "<strong>Oxibutinina 5 mg 12/12h</strong> (iniciada há 4 meses pelo urologista porque a paciente passou a apresentar urgência miccional e escapes urinários após o aumento da dose da donepezila e início da furosemida).",
+            "<strong>Glibenclamida 5 mg</strong> antes do café da manhã e antes do jantar (para DM2; última HbA1c = 6,1% e glicemias capilares matinais entre 58 e 68 mg/dL!).",
+            "<strong>Metformina 850 mg</strong> 2x/dia (TFG estimada por CKD-EPI = 52 mL/min/1,73m²).",
+            "<strong>Omeprazol 20 mg em jejum</strong> (em uso contínuo há 6 anos \"para proteger o estômago dos outros remédios\", nunca teve úlcera ou esofagite).",
+            "<strong>Clonazepam 2 mg à noite</strong> (em uso há 3 anos para insônia).",
+            "<strong>Amitriptilina 25 mg à noite</strong> (adicionada há 2 meses por dor crônica nos joelhos e insônia).",
+            "<strong>Sinvastatina 40 mg à noite</strong> (prevenção primária; nunca teve IAM ou AVC)."
+          ]
+        ],
+        [
+          "p",
+          "Ao exame físico: PA deitada = 112/68 mmHg; PA em pé após 3 minutos = 88/54 mmHg (queda de 24 mmHg na PAS e 14 mmHg na PAD — <strong>hipotensão ortostática franca</strong>). FC = 64 bpm. Palpação abdominal revela massa fecal endurecida em fossa ilíaca esquerda e bexiga palpável e dolorosa no hipogástrio pós-micção (resíduo pós-miccional elevado)."
+        ],
+        [
+          "4",
+          "Análise Clínica e Plano Sistemático de Desprescrição:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Identificação das Duas Cascatas Iatrogênicas Prescritivas Clássicas:</strong>\n    <ul>\n      <li><strong>Cascata 1 (Anlodipino &rarr; Edema Maleolar &rarr; Furosemida):</strong> O edema de membros inferiores foi causado pela vasodilatação arteriolar pré-capilar do <em>anlodipino 10 mg</em> (e não por insuficiência cardíaca!). A prescrição inadequada de <em>furosemida</em> gerou depleção volêmica, agravou a hipotensão ortostática (causando tontura e quedas) e induziu poliúria/urgência miccional.",
+            "<strong>Cascata 2 (Donepezila + Furosemida &rarr; Urgência Urinária &rarr; Oxibutinina &rarr; Delirium):</strong> A ação colinérgica periférica da <em>donepezila</em> no músculo detrusor (somada à diurese da furosemida) causou incontinência de urgência. A prescrição de <em>oxibutinina</em> (potente antimuscarínico ACB = 3) gerou antagonismo farmacológico direto com a donepezila no cérebro e, somada à <em>amitriptilina</em> (outro anticolinérgico ACB = 3), desencadeou uma <strong>Toxíndrome Anticolinérgica Grave</strong> (delirium, piora cognitiva, xerostomia, constipação e retenção urinária).",
+            "<strong>Identificação do Sobretratamento Glicêmico (<em>Overtreatment</em>):</strong>\n    <ul>\n      <li>A paciente de 82 anos com demência apresenta <strong>HbA1c de 6,1%</strong> e hipoglicemias matinais documentadas (&lt; 70 mg/dL) causadas pela <strong>Glibenclamida</strong> (sulfonilureia de longa ação — Critério de Beers). As quedas da própria altura estão sendo precipitadas pela tríade: <em>hipoglicemia pela glibenclamida + hipotensão ortostática pela furosemida/amitriptilina + ataxia/sedação pelo clonazepam</em>!",
+            "<strong>Plano Escalonado de Desprescrição (Ordem de Prioridade):</strong>\n    <ul>\n      <li><strong>Intervenção Imediata (Dia 1 — Suspensão dos Fármacos Causadores de Dano Agudo Ameaçador):</strong>\n        <ol>\n          <li><strong>Suspender Glibenclamida 5 mg imediatamente:</strong> Elimina o risco imediato de hipoglicemia neuroglicopênica. Manter apenas a Metformina (segura com TFG de 52 mL/min), buscando alvo seguro de HbA1c entre 7,5% e 8,0%.",
+            "<strong>Suspender Oxibutinina e Amitriptilina:</strong> Retirar a carga anticolinérgica pesada (ACB total cairá de 7 para 0!), revertendo o <em>delirium</em>, a retenção urinária e a constipação. Para a dor osteoarticular do joelho, substituir a amitriptilina por analgesia segura (Dipirona ou Paracetamol em horários fixos + fisioterapia/compressas mornas).",
+            "<strong>Suspender Furosemida e reduzir/suspender Anlodipino:</strong> Como a PA já está baixa (112/68 mmHg com hipotensão postural de 88/54 mmHg), suspender o anlodipino e a furosemida resolverá simultaneamente o edema maleolar e a hipotensão ortostática, mantendo apenas o Enalapril em dose ajustada (ex.: 10 mg 12/12h) conforme curva pressórica."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n      <li><strong>Intervenção de Curto Prazo (Semanas 2 a 4):</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Desprescrever Omeprazol 20 mg:</strong> Sem indicação clínica (uso profilático infundado). Reduzir para 20 mg em dias alternados por 2 semanas e suspender.",
+            "<strong>Avaliar Desprescrição da Sinvastatina:</strong> Em paciente de 82 anos com Doença de Alzheimer e polifarmácia em prevenção primária, a suspensão da estatina reduz a carga de comprimidos e o risco de mialgia/sarcopenia."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n      <li><strong>Intervenção de Médio Prazo (Semanas 4 a 16 — Desmame Lento e Supervisionado):</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Desmame Gradual do Clonazepam:</strong> Como a paciente usa 2 mg/noite há 3 anos, <strong>NÃO suspender abruptamente</strong>! Converter para Clonazepam solução oral em gotas (2,5 mg/mL, onde 1 gota = 0,1 mg; 2 mg = 20 gotas) e reduzir <strong>25% da dose a cada 2 semanas</strong> (ex.: 15 gotas por 2 semanas &rarr; 12 gotas por 2 semanas &rarr; 9 gotas &rarr; 6 gotas &rarr; 4 gotas &rarr; 2 gotas &rarr; suspender), instituindo higiene do sono com a cuidadora."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Cuidados Paliativos Domiciliares, Hipodermóclise e Manejo de Sintomas de Fim de Vida"
+        ],
+        [
+          "p",
+          "<strong>Apresentação do Caso:</strong> Dona Helena, 69 anos, portadora de Adenocarcinoma de Pâncreas metastático para fígado e peritônio (fora de possibilidades terapêuticas modificadoras da doença), está em acompanhamento domiciliar pela equipe da EMAD (Modalidade AD2) em conjunto com sua eSF. Nas últimas 48 horas, evoluiu com piora funcional acentuada: encontra-se restrita ao leito, incapaz de deglutir comprimidos ou líquidos (ingesta limitada a pequenos cuidados de umidificação oral), sonolenta mas despertável ao chamado, com gemência e fácies de dor intensa (escala PAINAD 8/10), dispneia em repouso (FR = 28 irpm, SpO2 = 91% em ar ambiente) e náuseas frequentes. Até 2 dias atrás, quando ainda engolia, fazia uso de Morfina 30 mg VO de 4/4h (dose diária total de 180 mg/dia de morfina oral) e Metamizol (Dipirona). Sua rede venosa periférica é totalmente inexistente devido a múltiplos ciclos prévios de quimioterapia. Exames laboratoriais recentes colhidos há 5 dias mostravam Creatinina = 0,9 mg/dL (TFG = 68 mL/min). Durante a visita domiciliar, um médico recém-formado sugere puncionar uma hipodermóclise e prescrever: <em>\"Morfina 30 mg SC de 4/4h, Diazepam 10 mg SC se agitação ou dispneia, Prometazina 25 mg SC para náusea e Diclofenaco 75 mg SC para dor\"</em>."
+        ],
+        [
+          "4",
+          "Análise Crítica e Correção da Conduta Médica:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Avaliação Funcional (PPS):</strong> Paciente totalmente restrita ao leito, assistência total para autocuidado, ingesta reduzida a cuidados orais e sonolenta = <strong>PPS 20%</strong> (entrando na fase de últimos dias de vida).",
+            "<strong>Erros Graves na Prescrição Sugerida pelo Médico Recém-Formado (Proibições na Hipodermóclise):</strong>\n    <ul>\n      <li><strong>Erro 1 (Diazepam, Prometazina e Diclofenaco no Subcutâneo):</strong> O <em>Diazepam</em> (veículo propilenoglicol), a <em>Prometazina</em> e os <em>AINEs (Diclofenaco/Cetoprofeno)</em> são <strong>estritamente proibidos por via subcutânea (hipodermóclise)</strong>, pois causam necrose química tecidual grave, dor lancinante e abscessos estéreis!",
+            "<strong>Erro 2 (Erro de Conversão Equianalgésica da Morfina VO &rarr; SC):</strong> A paciente usava 30 mg VO de 4/4h (180 mg/dia VO). Como a morfina subcutânea é <strong>2 a 3 vezes mais potente</strong> que a via oral (relação 3:1 ou 2:1), prescrever a mesma dose nominal (30 mg SC de 4/4h = 180 mg SC/dia) equivaleria a dar 360 a 540 mg de morfina oral, provocando <strong>intoxicação opioide aguda e depressão respiratória iatrogênica</strong>!",
+            "<strong>Prescrição Correta e Segura por Hipodermóclise (Padrão-Ouro):</strong>\n    <ul>\n      <li><strong>Sítio de Punção:</strong> Puncionar hipodermóclise em região infraclavicular, parede abdominal lateral ou face anterolateral da coxa com cateter flexível de teflon (Abocath 22G ou 24G) em ângulo de 45°.",
+            "<strong>Conversão e Titulação da Morfina (Dor + Dispneia):</strong> Dose oral prévia = 180 mg/dia. Dividindo por 3 (relação 3:1) = <strong>60 mg/dia SC</strong> (ou seja, 10 mg SC de 4/4h). Como a paciente está com dor não controlada (PAINAD 8/10) e dispneia, aplica-se um <strong>acréscimo de 25% a 30%</strong> na dose total diária para controle álgico e da dispneia: prescrever <strong>Morfina 12 a 15 mg SC de 4/4h em horário fixo</strong> + doses de resgate (<em>bolus</em> de 1/6 da dose diária total = 12 mg SC) se dor ou dispneia episódica.",
+            "<strong>Benzodiazepínico Seguro na Hipodermóclise (Componente Ansioso da Dispneia / Agitação):</strong> Substituir o diazepam por <strong>Midazolam</strong> (2,5 mg a 5 mg SC de 6/6h ou de resgate).",
+            "<strong>Antiemético Seguro na Hipodermóclise:</strong> Substituir a prometazina por <strong>Ondansetrona</strong> (4 a 8 mg SC de 8/8h), <strong>Metoclopramida</strong> (10 mg SC de 8/8h, caso não haja obstrução intestinal mecânica completa) ou <strong>Haloperidol</strong> (1 a 2 mg SC de 12/12h, excelente para náusea induzida por opioides e prevenção de delirium!).",
+            "<strong>Manejo da Fase Final (Sororoca):</strong> Caso evolua nas próximas horas com PPS 10% e estertores terminais (\"sororoca\"), suspender infusão de soro fisiológico para evitar congestão, posicionar em decúbito lateral e prescrever <strong>Butilbrometo de Escopolamina (Hioscina) 20 mg SC de 6/6h</strong>."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Demência Avançada, Disfagia Terminal e Tomada de Decisão Compartilhada (Alimentação Conforto vs. Sonda Enteral)"
+        ],
+        [
+          "p",
+          "<strong>Apresentação do Caso:</strong> Sr. Joaquim, 89 anos, portador de Doença de Alzheimer em estágio muito avançado há 9 anos (escala <strong>FAST 7c</strong> — restrito ao leito, perda total da capacidade de deambular e de sentar sem apoio, vocabulário restrito a uma palavra ininteligível, incontinência dupla), é acompanhado em modalidade AD1 pela Equipe de Saúde da Família. Nos últimos 3 meses, apresentou perda ponderal progressiva de 8% do peso corporal, sarcopenia severa e recusa alimentar frequente (fecha a boca quando a colher se aproxima ou demora vários minutos para engolir pequenas porções pastosas, apresentando tosse ocasional com líquidos finos). Não teve internações por pneumonia no último ano, mas a família está angustiada achando que <em>\"ele vai morrer de fome\"</em> e solicita ao médico de família o encaminhamento hospitalar para passagem de Sonda Nasoenteral (SNE) ou confecção de Gastrostomia Endoscópica Percutânea (GTT), além de manter em uso: Memantina 20 mg/dia, Rivaroxabana (por FA paroxística), Atorvastatina 40 mg, Omeprazol 20 mg e Alendronato de sódio 70 mg/semana."
+        ],
+        [
+          "4",
+          "Análise Clínica Baseada em Evidências e Conduta Ética:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Evidência Científica sobre Sonda Enteral (SNE/GTT) na Demência Avançada (FAST 7):</strong>\n    <ul>\n      <li>De acordo com as diretrizes da <em>American Geriatrics Society (AGS)</em>, da <em>Choosing Wisely</em> e da Sociedade Brasileira de Geriatria e Gerontologia (SBGG), a passagem de Sonda Nasoenteral ou Gastrostomia em pacientes com <strong>Demência Avançada (FAST 7)</strong> é formalmente <strong>contraindicada / desencorajada</strong>!",
+            "Revisões sistemáticas da Cochrane demonstram de forma inequívoca que a nutrição enteral por sonda na demência avançada: (1) <strong>NÃO aumenta a sobrevida</strong>; (2) <strong>NÃO melhora o estado nutricional nem cicatriza lesões por pressão</strong>; (3) <strong>NÃO reduz o risco de pneumonia aspirativa</strong> (pelo contrário, aumenta a aspiração de refluxo gastroesofágico colonizado e secreções orofaríngeas); e (4) <strong>aumenta o sofrimento</strong>, exigindo contenção mecânica das mãos no leito (luvas/amarras) para impedir que o paciente confuso arranque a sonda, além de gerar idas frequentes ao pronto-socorro por obstrução ou deslocamento do dispositivo.",
+            "<strong>Conduta Padrão-Ouro: Alimentação de Conforto por Via Oral Assistida (<em>Comfort Feeding Only</em>):</strong> Oferecer pequenas porções fracionadas de alimentos pastosos/espessados na temperatura e sabor que o paciente mais apreciava ao longo da vida, respeitando o ritmo lento de deglutição, com cabeceira elevada a 90°, interrompendo a oferta assim que o paciente demonstrar sinais de saciedade ou desconforto, associada a rigorosa higiene oral. Explicar com empatia à família que a hiporexia/anorexia faz parte da fisiologia natural da fase avançada da demência e que o metabolismo basal do paciente acamado é extremamente reduzido, não havendo sensação dolorosa de fome.",
+            "<strong>Desprescrição Ampla na Demência Terminal (FAST 7c / PPS 30%):</strong>\n    <ul>\n      <li><strong>Suspender Alendronato de Sódio 70 mg:</strong> Além de fútil em paciente permanentemente restrito ao leito (o alendronato exige permanecer sentado/em pé por 30 minutos após a ingesta com copo cheio de água), apresenta altíssimo risco de causar <strong>esofagite química ulcerativa grave e perfuração esofágica</strong> em paciente disfágico e acamado!",
+            "<strong>Suspender Atorvastatina 40 mg e Omeprazol 20 mg:</strong> Fúteis no estágio FAST 7c; dificultam a deglutição quando triturados na comida (deixando o alimento amargo e piorando a recusa alimentar!).",
+            "<strong>Avaliar desprescrição gradual da Memantina:</strong> No estágio FAST 7c (incapz de falar e interagir, totalmente dependente), os anticolinesterásicos e a memantina perdem benefício clínico funcional, podendo ser descontinuados gradualmente (observando se há qualquer surgimento de agitação na retirada; se não houver, suspende-se em definitivo)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-residencia-revalida-aula-220",
+      0,
+      [
+        [
+          "2",
+          "8. Questões Comentadas de Provas de Residência Médica, Revalida e ENAMED"
+        ],
+        [
+          "p",
+          "Treine seu raciocínio clínico e normativo com 8 questões inéditas no exato padrão das bancas mais exigentes do país (USP, UNICAMP, ENARE, SUS-SP, INEP/Revalida e ENAMED), acompanhadas de análise exaustiva de todas as alternativas."
+        ],
+        [
+          "4",
+          "Questão 1 — Modalidades de Atenção Domiciliar no SUS (Padrão ENARE / INEP Revalida)"
+        ],
+        [
+          "p",
+          "Durante a reunião semanal de uma Equipe de Saúde da Família (eSF) em um município de 120.000 habitantes que conta com Serviço de Atenção Domiciliar (SAD) habilitado no Programa Melhor em Casa, o médico de família e a enfermeira discutem o plano de cuidado de três pacientes restritos ao domicílio no território:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Paciente I:</strong> Mulher de 81 anos, restrita ao leito há 3 anos por sequela motora de acidente vascular cerebral isquêmico, hipertensa e diabética controlada (PA 130/80 mmHg, HbA1c 7,4%), sem lesões por pressão, alimentando-se por via oral pastosa assistida pelo filho cuidador.",
+            "<strong>Paciente II:</strong> Homem de 54 anos, portador de Esclerose Lateral Amiotrófica (ELA) avançada, tetraparético, gastrostomizado e em uso contínuo (20 horas/dia) de ventilação não invasiva por pressão positiva em dois níveis (BiPAP), demandando acompanhamento multiprofissional semanal e fisioterapia respiratória frequente.",
+            "<strong>Paciente III:</strong> Mulher de 67 anos, recém-desospitalizada após desbridamento cirúrgico de celulite necrosante extensa em membro inferior direito, necessitando de curativos complexos e antibioticoterapia endovenosa diária por mais 14 dias, além de visitas médicas e de enfermagem semanais até a estabilização da ferida."
+          ]
+        ],
+        [
+          "p",
+          "De acordo com a Portaria GM/MS nº 825/2016 (consolidada na Portaria de Consolidação nº 5/2017), assinale a alternativa que classifica corretamente a modalidade de Atenção Domiciliar e a equipe responsável pelo cuidado primário de cada paciente:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Paciente I: AD1 (SAD/EMAD); Paciente II: AD3 (Unidade de Terapia Intensiva Hospitalar); Paciente III: AD2 (eSF/eMulti).<br>\n  <strong>B)</strong> Paciente I: AD1 (eSF); Paciente II: AD3 (SAD/EMAD); Paciente III: AD2 (SAD/EMAD).<br>\n  <strong>C)</strong> Paciente I: AD2 (eSF); Paciente II: AD3 (SAD/EMAD); Paciente III: AD1 (SAD/EMAD).<br>\n  <strong>D)</strong> Paciente I: AD1 (eSF); Paciente II: AD2 (SAD/EMAD); Paciente III: AD3 (SAD/EMAD).<br>\n  <strong>E)</strong> Paciente I: AD1 (eSF); Paciente II: Inelegível para atenção domiciliar pelo uso de suporte ventilatório; Paciente III: AD2 (SAD/EMAD)."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> A <strong>Paciente I</strong> apresenta condições crônicas compensadas/estáveis e restrição física ao leito sem necessidade de visitas semanais ou procedimentos de alta densidade tecnológica, enquadrando-se perfeitamente na modalidade <strong>AD1</strong>, cuja responsabilidade primária é das equipes de Atenção Básica (<strong>eSF/eAP</strong>) com apoio da eMulti. O <strong>Paciente II</strong> necessita de acompanhamento multiprofissional no mínimo semanal <em>somado</em> ao uso contínuo de equipamento de suporte ventilatório pressórico (BiPAP) e gastrostomia, preenchendo os critérios estritos da modalidade <strong>AD3</strong>, sob responsabilidade do <strong>SAD (EMAD + EMAP)</strong>. A <strong>Paciente III</strong> apresenta quadro agudo/subagudo em desospitalização que exige antibioticoterapia parenteral diária, curativos complexos e acompanhamento semanal transitório (sem uso de suporte ventilatório mecânico), classificando-se na modalidade <strong>AD2</strong>, também sob responsabilidade do <strong>SAD (EMAD + EMAP)</strong>.",
+            "<strong>Refutação dos distratores:</strong> A alternativa A erra ao atribuir AD1 ao SAD e AD2 à eSF, além de negar assistência domiciliar ao paciente em BiPAP. A alternativa C inverte AD1 e AD2 entre os pacientes I e III. A alternativa D inverte AD2 e AD3 entre os pacientes II e III (antibioticoterapia parenteral e curativo complexo sem suporte ventilatório é AD2, e não AD3!). A alternativa E erra pois o uso de VNI (BiPAP) ou mesmo ventilação mecânica invasiva domiciliar (quando a EMAD é apta e há estrutura domiciliar segura) é exatamente o critério definidor de AD3, e não critério de exclusão."
+          ]
+        ],
+        [
+          "4",
+          "Questão 2 — Cascata Iatrogênica Prescritiva (Padrão USP-SP / UNICAMP)"
+        ],
+        [
+          "p",
+          "Homem de 79 anos, portador de hipertensão arterial sistêmica e doença do refluxo gastroesofágico, comparece à consulta na Unidade Básica de Saúde acompanhado da filha. Ela relata que, há 4 meses, o paciente iniciou quadro de tremor de repouso e postural bilateral nas mãos, lentidão importante dos movimentos (bradicinesia), marcha em pequenos passos arrastados e rigidez muscular simétrica nos membros superiores. Há 1 mês, foi avaliado em um pronto-atendimento, onde recebeu o diagnóstico de \"Doença de Parkinson\" e iniciou uso de Levodopa + Benserazida (200/50 mg 3x/dia). Desde a introdução da levodopa, o paciente passou a apresentar alucinações visuais noturnas (\"vê pessoas estranhas no quarto\"), agitação psicomotora e tontura intensa ao se levantar. Ao revisar as receitas antigas, o médico de família verifica que o paciente faz uso contínuo há 8 meses de: Losartana 50 mg 12/12h, Hidroclorotiazida 25 mg/dia, Omeprazol 20 mg em jejum e Metoclopramida 10 mg de 8/8h (prescrita por náuseas e plenitude pós-prandial). Diante desse quadro clínico, o fenômeno farmacológico ocorrido e a conduta médica correta são, respectivamente:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Evolução natural de Demência por Corpos de Lewy; manter a levodopa, manter a metoclopramida e iniciar Haloperidol 5 mg à noite para controlar as alucinações visuais.<br>\n  <strong>B)</strong> Cascata iatrogênica prescritiva desencadeada pelo omeprazol; suspender o omeprazol e associar Biperideno 2 mg de 8/8h para tratar o tremor.<br>\n  <strong>C)</strong> Cascata iatrogênica prescritiva desencadeada pela metoclopramida (parkinsonismo farmacológico secundário); suspender imediatamente a metoclopramida e realizar retirada gradual da levodopa.<br>\n  <strong>D)</strong> Interação farmacocinética competitiva entre losartana e levodopa no citocromo CYP3A4; substituir a losartana por metildopa.<br>\n  <strong>E)</strong> Síndrome serotoninérgica subaguda induzida pela associação de metoclopramida e levodopa; internar o paciente e prescrever ciproeptadina."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está correta:</strong> O caso ilustra de forma cristalina a <strong>Cascata Iatrogênica Prescritiva</strong> mais cobrada nas provas brasileiras de Clínica Médica, Geriatria e MFC! A <strong>Metoclopramida</strong> é um procinético que atravessa livremente a barreira hematoencefálica e atua como potente <strong>antagonista dos receptores dopaminérgicos D2 na via nigroestriatal</strong>. Seu uso contínuo em idosos provoca <strong>Parkinsonismo Farmacológico Secundário</strong> (tipicamente simétrico e subagudo). O médico do pronto-atendimento falhou em reconhecer o efeito adverso da metoclopramida, rotulou o quadro como \"Doença de Parkinson idiopática\" e prescreveu um segundo fármaco (<strong>Levodopa</strong>), que por sua vez desencadeou um terceiro elo iatrogênico: <strong>psicose dopaminérgica (alucinações visuais) e hipotensão ortostática</strong>! A conduta correta é suspender imediatamente o agente causador (metoclopramida) e desmamar a levodopa.",
+            "<strong>Refutação dos distratores:</strong> A alternativa A é gravemente iatrogênica, pois prescrever haloperidol (outro bloqueador D2 potente) agravaria brutalmente o parkinsonismo. Na alternativa B, o omeprazol não causa parkinsonismo, e o biperideno (anticolinérgico forte, ACB = 3) agravaria as alucinações e causaria <em>delirium</em> no idoso. As alternativas D e E trazem conceitos farmacológicos incorretos para o caso."
+          ]
+        ],
+        [
+          "4",
+          "Questão 3 — Critérios de Beers, Carga Anticolinérgica e Desprescrição (Padrão SUS-SP / UNIFESP)"
+        ],
+        [
+          "p",
+          "Mulher de 76 anos, independente para atividades básicas da vida diária (Katz A) e parcialmente dependente para instrumentais (Lawton), procura o médico de família queixando-se de insônia terminal, dor lombar mecânica crônica e incontinência urinária de urgência. Ela solicita \"um remédio forte para dormir e parar de perder urina\". Ao avaliar as opções terapêuticas abaixo à luz dos Critérios de Beers da <em>American Geriatrics Society</em> (AGS 2023) e da Escala de Carga Cognitiva Anticolinérgica (ACB), assinale a afirmativa CORRETA:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> A prescrição de Amitriptilina 25 mg à noite é a estratégia de primeira escolha no idoso por tratar simultaneamente a dor lombar, a insônia e a incontinência urinária com segurança cognitiva.<br>\n  <strong>B)</strong> Caso a paciente já faça uso contínuo de Diazepam 10 mg à noite há 5 anos, a desprescrição deve ser realizada por suspensão abrupta imediata no dia da consulta, visto que a meia-vida longa do fármaco impede qualquer sintoma de abstinência.<br>\n  <strong>C)</strong> A Paroxetina é o inibidor seletivo da recaptação de serotonina (ISRS) mais seguro para idosos com queixas ansiosas e depressivas, pois apresenta escore ACB igual a zero e ausência de interações no citocromo P450.<br>\n  <strong>D)</strong> Medicamentos como Oxibutinina, Ciclobenzaprina, Prometazina e Amitriptilina possuem forte atividade anticolinérgica (ACB = 2 ou 3), sendo classificados como Medicamentos Potencialmente Inapropriados para idosos pelo alto risco de <em>delirium</em>, declínio cognitivo, xerostomia, retenção urinária e quedas.<br>\n  <strong>E)</strong> O Zolpidem, por ser um hipnótico não-benzodiazepínico (\"droga Z\") seletivo para a subunidade alfa-1 do receptor GABA-A, está isento do risco de quedas, fraturas de quadril ou amnésia no idoso, sendo livremente recomendado para uso contínuo nos Critérios de Beers."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa D.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa D está correta:</strong> Oxibutinina (antimuscarínico vesical), Ciclobenzaprina (relaxante muscular estruturalmente idêntico aos tricíclicos), Prometazina (anti-histamínico de 1ª geração) e Amitriptilina (antidepressivo tricíclico terciário) figuram no topo da Tabela 1 dos Critérios de Beers e possuem elevada pontuação na escala ACB (ACB 2 e 3), devendo ser rigorosamente evitados em idosos.",
+            "<strong>Refutação dos distratores:</strong> A alternativa A está incorreta porque a amitriptilina é altamente inapropriada no idoso (causa hipotensão ortostática severa, bloqueio de condução cardíaca, retenção urinária e <em>delirium</em>). A alternativa B está incorreta porque o uso crônico de benzodiazepínicos (há 5 anos) <strong>jamais deve ser interrompido abruptamente</strong> pelo risco de síndrome de abstinência, insônia rebote grave, ansiedade e convulsões; exige desmame gradual de 25% a cada 2 semanas. A alternativa C está incorreta porque a <strong>Paroxetina</strong> é justamente o único ISRS fortemente anticolinérgico (ACB = 3) e potente inibidor da CYP2D6, figurando nos Critérios de Beers como ISRS a ser evitado no idoso (preferindo-se sertralina, citalopram ou escitalopram). A alternativa E está incorreta porque as \"drogas Z\" (zolpidem, zopiclona) constam explicitamente nos Critérios de Beers como inapropriadas em idosos, causando taxas de quedas, fraturas de fêmur, sonambulismo e <em>delirium</em> equivalentes às dos benzodiazepínicos."
+          ]
+        ],
+        [
+          "4",
+          "Questão 4 — Cuidados Paliativos Domiciliares e Hipodermóclise (Padrão Revalida INEP / UERJ)"
+        ],
+        [
+          "p",
+          "Paciente de 72 anos, em acompanhamento domiciliar pela Equipe Multiprofissional de Atenção Domiciliar (EMAD — Modalidade AD2) devido a carcinoma epidermoide de esôfago metastático em cuidados paliativos exclusivos, evolui com disfagia completa para sólidos e líquidos, caquexia, dor torácica intensa, náuseas e agitação psicomotora noturna. Diante da falência de acesso venoso periférico e da impossibilidade da via oral, a equipe opta pela instalação de hipodermóclise (via subcutânea). Sobre a técnica, os limites fisiológicos e os medicamentos compatíveis ou contraindicados na hipodermóclise, assinale a alternativa CORRETA:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> O volume máximo de hidratação permitido na hipodermóclise é de 3.000 mL por sítio de punção em 24 horas, utilizando-se preferencialmente Soro Glicosado hipertônico a 10%.<br>\n  <strong>B)</strong> São fármacos seguros e amplamente recomendados para infusão por hipodermóclise: Morfina, Midazolam, Haloperidol, Ondansetrona, Metoclopramida e Butilbrometo de Escopolamina.<br>\n  <strong>C)</strong> Em caso de crise convulsiva ou agitação intensa no domicílio, o Diazepam e a Fenitoína devem ser administrados em <em>bolus</em> diretamente no cateter de hipodermóclise.<br>\n  <strong>D)</strong> Em pacientes com demência avançada ou <em>delirium</em> hiperativo que tentam arrancar os dispositivos, o sítio anatômico de escolha para a punção da hipodermóclise é a face anterior do antebraço distal.<br>\n  <strong>E)</strong> Ao converter a Morfina da via oral para a via subcutânea na hipodermóclise, deve-se triplicar a dose diária nominal, visto que a absorção no tecido subcutâneo é inferior a 30%."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> Morfina, Fentanil, Metadona, Midazolam, Haloperidol, Ondansetrona, Metoclopramida, Escopolamina (Hioscina), Dexametasona (em sítio exclusivo) e Ceftriaxona/Cefepima possuem excelente absorção, pH e osmolaridade compatíveis com o tecido celular subcutâneo, constituindo o arsenal padrão-ouro dos Cuidados Paliativos Domiciliares.",
+            "<strong>Refutação dos distratores:</strong> A alternativa A está incorreta porque o volume máximo por sítio é de <strong>1.500 mL em 24 horas</strong> (podendo chegar a 3.000 mL/24h apenas se divididos em 2 sítios distintos!), e soluções hipertônicas (glicose 10% ou 50%) são proibidas por causarem sofrimento osmótico e necrose tecidual. A alternativa C está incorreta porque <strong>Diazepam, Fenitoína, Diclofenaco e Prometazina são estritamente PROIBIDOS na hipodermóclise</strong> por provocarem necrose química grave da pele e subcutâneo. A alternativa D está incorreta porque o antebraço não é sítio padrão de hipodermóclise e é facilmente arrancado pelo paciente agitado; o sítio de eleição em pacientes agitados/confusos que arrancam cateteres é a <strong>região interescapular (subescapular / dorso superior)</strong>. A alternativa E inverte a relação equianalgésica: a via subcutânea é 2 a 3 vezes mais potente que a via oral, logo a dose deve ser <strong>dividida por 2 ou por 3</strong> (relação VO:SC = 2:1 ou 3:1)."
+          ]
+        ],
+        [
+          "4",
+          "Questão 5 — Avaliação Funcional Geriátrica: Escalas de Katz, Lawton e Zarit (Padrão ENAMED / AMRIGS)"
+        ],
+        [
+          "p",
+          "Durante uma visita domiciliar programada da Estratégia Saúde da Família a um idoso de 84 anos com diagnóstico recente de Doença de Alzheimer inicial, o médico aplica os instrumentos padronizados da Avaliação Geriátrica Ampla (AGA). O paciente é capaz de tomar banho sozinho, vestir-se, ir ao banheiro, transferir-se da cama para a cadeira, mantém continência esfincteriana e alimenta-se sem ajuda. Contudo, nos últimos 6 meses, deixou de conseguir pagar suas contas no aplicativo do banco, esquece de tomar seus medicamentos anti-hipertensivos se não for supervisionado e perdeu-se ao tentar pegar um ônibus para ir à feira. Sua filha única, que trabalha em período integral e passou a dormir na casa do pai, apresenta choro fácil, exaustão física e pontua 56 pontos na Escala de Zarit. Com base nos dados apresentados, assinale a alternativa CORRETA:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> O paciente é classificado como dependente nas Atividades Básicas da Vida Diária pela Escala de Katz, sendo a capacidade de gerenciar finanças e tomar medicamentos itens integrantes dessa escala.<br>\n  <strong>B)</strong> Na hierarquia fisiológica do declínio funcional geriátrico, a perda da capacidade de alimentar-se sozinho precede a perda da capacidade de banhar-se e de realizar compras.<br>\n  <strong>C)</strong> O paciente preserva independência total nas Atividades Básicas da Vida Diária (Escala de Katz = A), mas apresenta dependência parcial nas Atividades Instrumentais da Vida Diária (Escala de Lawton e Brody), enquanto sua cuidadora apresenta sobrecarga moderada a severa.<br>\n  <strong>D)</strong> A Escala de Zarit avalia o grau de performance paliativa e estimativa de sobrevida do idoso demenciado, indicando que o paciente possui expectativa de vida inferior a 30 dias.<br>\n  <strong>E)</strong> Por apresentar comprometimento em três itens da Escala de Lawton, o paciente deve ser imediatamente transferido da modalidade AD1 para a modalidade AD3 do Serviço de Atenção Domiciliar."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está correta:</strong> As 6 funções preservadas (banho, vestir-se, uso do vaso sanitário, transferência, continência e alimentação) compõem a <strong>Escala de Katz (ABVDs)</strong>, na qual o paciente é totalmente independente (Katz A). Já a incapacidade de gerir finanças, responsabilizar-se pela própria medicação e usar transporte público compõe a <strong>Escala de Lawton e Brody (AIVDs)</strong>, tipicamente afetada precocemente na fase inicial da demência de Alzheimer. A filha cuidadora, com 56 pontos na <strong>Escala de Zarit</strong>, encontra-se na faixa de sobrecarga moderada a severa (41–60 pontos).",
+            "<strong>Refutação dos distratores:</strong> A alternativa A confunde Katz com Lawton. A alternativa B inverte a hierarquia de perda funcional: primeiro perdem-se as AIVDs (compras, finanças, remédios); dentro das ABVDs de Katz, a <em>primeira</em> a ser perdida é o <strong>banho</strong> e a <em>última</em> a ser perdida é a <strong>alimentação</strong>. A alternativa D confunde a Escala de Zarit (sobrecarga do cuidador) com a Escala PPS (<em>Palliative Performance Scale</em>). A alternativa E está incorreta porque o paciente deambula e tem condições crônicas que não exigem suporte ventilatório ou procedimentos complexos de AD3, sendo acompanhado pela eSF."
+          ]
+        ],
+        [
+          "4",
+          "Questão 6 — Protocolos de Desprescrição de IBPs e Antidiabéticos no Idoso Frágil (Padrão UNICAMP / Santa Casa SP)"
+        ],
+        [
+          "p",
+          "Homem de 86 anos, portador de fragilidade clínico-funcional moderada a grave (Índice Vulnerabilidade Clínico-Funcional IVCF-20 = 24 pontos; Escala Clínica de Fragilidade de Rockwood = 6), doença renal crônica estágio 3b (TFG = 36 mL/min/1,73m²), hipertensão arterial e diabetes mellitus tipo 2 há 20 anos, passa em consulta na UBS após episódio de tontura e suor frio às 11h da manhã, revertido após ingestão de água com açúcar oferecida pela cuidadora. Faz uso de: Glibenclamida 5 mg no café da manhã e 5 mg no jantar, Metformina XR 500 mg no almoço, Enalapril 10 mg 12/12h, Ácido Acetilsalicílico (AAS) 100 mg/dia (nunca apresentou infarto, angina ou AVC) e Omeprazol 20 mg em jejum (iniciado há 4 anos após episódio isolado de dispepsia, com endoscopia digestiva alta da época mostrando apenas gastrite enantematosa leve antral, sem úlcera e sem esofagite). Exames atuais: HbA1c = 6,2%; Glicemia de jejum = 72 mg/dL. Assinale a conduta de desprescrição mais adequada e baseada em evidências para este paciente:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Manter a Glibenclamida na mesma dose, pois a HbA1c de 6,2% demonstra controle metabólico excelente que previne complicações microvasculares nos próximos 6 meses, e dobrar a dose do Omeprazol para 40 mg/dia.<br>\n  <strong>B)</strong> Suspender imediatamente a Glibenclamida (pelo sobretratamento glicêmico e alto risco de hipoglicemia grave), suspender o AAS 100 mg (ausência de benefício e alto risco hemorrágico na prevenção primária em idosos) e realizar desprescrição gradual ou sob demanda do Omeprazol.<br>\n  <strong>C)</strong> Suspender a Metformina e substituir a Glibenclamida por Clorpropamida 250 mg/dia, mantendo o AAS e o Omeprazol por tempo indeterminado.<br>\n  <strong>D)</strong> Manter a Glibenclamida, iniciar Insulina NPH 10 UI ao deitar para estabilizar a curva glicêmica e suspender abruptamente o Enalapril.<br>\n  <strong>E)</strong> Suspender o Omeprazol apenas se o paciente realizar nova endoscopia digestiva alta com biópsia seriada a cada 3 meses, e manter o AAS para prevenção de demência vascular."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> O paciente de 86 anos frágil está sofrendo <strong>sobretratamento glicêmico (HbA1c 6,2%)</strong> com episódios claros de hipoglicemia sintomática induzidos pela <strong>Glibenclamida</strong> (sulfonilureia de longa ação contraindicada pelos Critérios de Beers). No idoso frágil (Rockwood 6), o alvo seguro de HbA1c é de <strong>7,5% a 8,5%</strong>; portanto, a glibenclamida deve ser suspensa imediatamente, mantendo-se apenas a Metformina 500 mg (que é segura até TFG de 30 mL/min em dose reduzida de até 500–1.000 mg/dia e não causa hipoglicemia). Além disso, o <strong>AAS na prevenção primária</strong> em idosos (Estudo ASPREE e Beers 2023) não reduz eventos cardiovasculares nem demência e aumenta significativamente o sangramento maior, devendo ser desprescrito. Por fim, o <strong>Omeprazol</strong> sem indicação formal (gastrite leve há 4 anos, sem uso de AINEs e após a retirada do AAS) deve ser desprescrito com redução gradual em 2–4 semanas ou esquema sob demanda para evitar hipersecreção ácida rebote.",
+            "<strong>Refutação dos distratores:</strong> A alternativa A perpetua hipoglicemias potencialmente fatais. Na alternativa C, a clorpropamida é ainda pior que a glibenclamida (meia-vida ultralonga e causa SIADH/hiponatremia). A alternativa D causaria hipoglicemia noturna letal ao adicionar NPH em paciente com HbA1c de 6,2%. A alternativa E exige endoscopias desnecessárias e mantém o AAS sem indicação (o estudo ASPREE provou que o AAS não previne demência)."
+          ]
+        ],
+        [
+          "4",
+          "Questão 7 — Critérios STOPP/START e Omissão de Prescrição (Padrão USP-RP / SURCE)"
+        ],
+        [
+          "p",
+          "Diferentemente dos Critérios de Beers, a ferramenta europeia STOPP/START (<em>Screening Tool of Older Persons' Prescriptions / Screening Tool to Alert to Right Treatment</em>) avalia tanto medicamentos potencialmente inapropriados que devem ser suspensos (STOPP) quanto omissões de prescrição benéfica que devem ser iniciadas (START). Assinale a alternativa que representa corretamente uma recomendação <strong>START</strong> (início de tratamento omitido) em um paciente de 75 anos funcionalmente independente (Katz A, Lawton independente) e com expectativa de vida estimada superior a 10 anos:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Iniciar Furosemida 40 mg/dia para edema maleolar vespertino bilateral decorrente de insuficiência venosa crônica periférica, na ausência de insuficiência cardíaca ou renal.<br>\n  <strong>B)</strong> Iniciar Anticoagulação Oral (com anticoagulante oral direto — DOAC, como apixabana, ou varfarina) em paciente portador de Fibrilação Atrial permanente documentada e escore CHA2DS2-VASc = 4, sem contraindicações hemorrágicas.<br>\n  <strong>C)</strong> Iniciar Benzodiazepínico de meia-vida longa (Clordiazepóxido ou Diazepam) para prevenção primária de insônia relacionada ao envelhecimento.<br>\n  <strong>D)</strong> Iniciar Oxibutinina associada a Donepezila em paciente com queixa subjetiva de esquecimento benigno.<br>\n  <strong>E)</strong> Iniciar Ácido Acetilsalicílico (AAS) associado a Clopidogrel e Diclofenaco sódico para tratamento de osteoartrose de mãos."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> Um dos maiores erros no cuidado ao idoso robusto é o <em>subtratamento por idadismo</em> (deixar de anticoagular um idoso funcional com Fibrilação Atrial apenas pela idade cronológica). Os critérios <strong>START</strong> determinam expressamente o início de anticoagulação oral na Fibrilação Atrial crônica ou paroxística com alto risco cardioembólico, pois no idoso o benefício absoluto na prevenção de AVC isquêmico cardioembólico devastador supera amplamente o risco de sangramento.",
+            "<strong>Refutação dos distratores:</strong> A alternativa A é um critério <strong>STOPP</strong> clássico (não se usa diurético de alça para edema venoso postural/insuficiência venosa crônica!). As alternativas C, D e E descrevem prescrições gravemente inapropriadas (critérios STOPP e Beers)."
+          ]
+        ],
+        [
+          "4",
+          "Questão 8 — Estrutura Operacional do SAD (EMAD e EMAP) e Declaração de Óbito Domiciliar (Padrão ENARE / SES-PE)"
+        ],
+        [
+          "p",
+          "Sobre a regulamentação do Serviço de Atenção Domiciliar (SAD) no Sistema Único de Saúde (Portaria GM/MS nº 825/2016 / Portaria de Consolidação nº 5/2017) e as responsabilidades médicas perante o óbito domiciliar de pacientes acompanhados na rede, assinale a alternativa CORRETA:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Um município de 25.000 habitantes pode habilitar isoladamente uma Equipe Multiprofissional de Apoio (EMAP) sem possuir uma Equipe Multiprofissional de Atenção Domiciliar (EMAD), desde que conte com hospital regional.<br>\n  <strong>B)</strong> A EMAD Tipo 1 exige carga horária mínima semanal de 40 horas de médico, 40 horas de enfermeiro, 30 horas de fisioterapeuta ou assistente social e 120 horas de auxiliares/técnicos de enfermagem.<br>\n  <strong>C)</strong> Pacientes em uso de Oxigenoterapia Domiciliar Prolongada (ODP) por cateter nasal de baixo fluxo (1,5 L/min) devido a DPOC estável, que demandam apenas acompanhamento clínico mensal, são obrigatoriamente classificados na modalidade AD3.<br>\n  <strong>D)</strong> Caso um paciente oncológico em cuidados paliativos exclusivos, acompanhado regularmente pela EMAD (modalidade AD2), evolua para óbito natural esperado em seu domicílio em uma terça-feira às 14h, o médico da EMAD está proibido de emitir a Declaração de Óbito (DO), devendo acionar a polícia técnica e encaminhar o corpo ao Instituto Médico Legal (IML).<br>\n  <strong>E)</strong> A modalidade AD2 caracteriza-se pelo fornecimento de 1 (um) técnico de enfermagem do SUS fixo dentro da residência do paciente em regime de plantão presencial ininterrupto de 24 horas por dia."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> Descreve com exatidão literal a composição e a carga horária mínima semanal da <strong>EMAD Tipo 1</strong> (destinada a municípios com &ge; 40.000 habitantes): médico (40h), enfermeiro (40h), fisioterapeuta ou assistente social (30h) e técnicos/auxiliares de enfermagem (120h).",
+            "<strong>Refutação dos distratores:</strong> A alternativa A está incorreta porque nenhuma EMAP pode existir sem uma EMAD de referência (a EMAD é o pré-requisito obrigatório do SAD). A alternativa C está incorreta porque o uso isolado de ODP de baixo fluxo em paciente clinicamente estável que não demanda visitas semanais pode ser acompanhado na modalidade <strong>AD1</strong> pela eSF. A alternativa D está incorreta porque, no óbito domiciliar natural de causa conhecida em paciente acompanhado pelo SAD ou pela eSF (sem suspeita de causa externa/violenta), <strong>é dever ético e legal do médico do SAD ou da eSF emitir a Declaração de Óbito (DO)</strong> após constatar pessoalmente o óbito. A alternativa E está incorreta porque o SAD do SUS realiza visitas multiprofissionais programadas e pontuais, sendo a necessidade de enfermagem contínua 24h critério de inelegibilidade para o SAD (exigindo a presença de cuidador familiar para os cuidados cotidianos)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tabela-sintese-high-yield-aula-220",
+      0,
+      [
+        [
+          "2",
+          "9. Síntese High-Yield e Pontos-Chave para Revisão Final de Véspera"
+        ],
+        [
+          "p",
+          "Utilize este quadro sinóptico de altíssimo rendimento para revisão rápida antes das provas de Residência Médica, Revalida e ENAMED:"
+        ],
+        [
+          "t",
+          [
+            "Eixo Temático",
+            "Conceito / Regra de Ouro para a Prova",
+            "Pegadinha Clássica de Banca Examinadora"
+          ],
+          [
+            [
+              "<strong>Modalidade AD1</strong>",
+              "Pacientes restritos ao leito/domicílio com agravos <strong>compensados/estáveis</strong>, exigindo menor frequência de visitas (mensal). Responsabilidade: <strong>eSF / eAP (Atenção Básica)</strong>.",
+              "Dizer que todo paciente acamado ou em uso de oxigênio nasal (ODP) estável pertence ao SAD (AD2/AD3). Se estável e sem demanda semanal, é <strong>AD1 (eSF)</strong>!"
+            ],
+            [
+              "<strong>Modalidade AD2</strong>",
+              "Agravos agudos/subagudos ou paliativos que exigem <strong>visitas no mínimo semanais</strong> do <strong>SAD (EMAD/EMAP)</strong>: ATB venoso/SC domiciliar, curativos complexos (LPP grau III/IV), adaptação de sondas/TQT, ganho ponderal de prematuros.",
+              "Achar que AD2 é definitiva. A AD2 é eminentemente <strong>transitória</strong>; após estabilização, o paciente recebe alta para a <strong>AD1 (eSF)</strong>."
+            ],
+            [
+              "<strong>Modalidade AD3</strong>",
+              "Critérios de AD2 + uso contínuo de <strong>equipamentos de suporte ventilatório (CPAP, BiPAP, VMI)</strong> ou procedimentos complexos (diálise peritoneal, paracentese domiciliar de repetição, nutrição parenteral). Responsabilidade: <strong>SAD</strong>.",
+              "Confundir AD3 com internação de UTI ou achar que paciente em BiPAP/VMI é inelegível para o Programa Melhor em Casa."
+            ],
+            [
+              "<strong>Escalas Funcionais (Katz vs. Lawton vs. PPS vs. Zarit)</strong>",
+              "<strong>Katz (ABVD - 6 itens):</strong> Banho (1ª perdida), Vestir, Banheiro, Transferência, Continência, Alimentação (última perdida).<br><strong>Lawton (AIVD):</strong> Telefone, Compras, Finanças, Medicação, Transporte (perdidas primeiro na demência inicial).<br><strong>PPS:</strong> Prognóstico paliativo (&le; 30% = restrito ao leito).<br><strong>Zarit:</strong> Sobrecarga do cuidador (0–88 pts).",
+              "Inverter a ordem de perda de Katz (achar que alimentação é perdida antes do banho) ou achar que \"tomar remédios sozinho\" faz parte de Katz (é Lawton!)."
+            ],
+            [
+              "<strong>Cascata Iatrogênica Prescritiva</strong>",
+              "Efeito adverso do Fármaco 1 tratado erroneamente com Fármaco 2.<br>1) <strong>Anlodipino</strong> &rarr; edema maleolar &rarr; <strong>Furosemida</strong>.<br>2) <strong>Metoclopramida/Flunarizina</strong> &rarr; parkinsonismo &rarr; <strong>Levodopa</strong>.<br>3) <strong>Donepezila</strong> &rarr; incontinência urinária &rarr; <strong>Oxibutinina</strong>.",
+              "Tratar o edema do anlodipino com furosemida ou diagnosticar Doença de Parkinson idiopática em usuário crônico de metoclopramida/cinarizina/flunarizina."
+            ],
+            [
+              "<strong>Desprescrição Segura (IBP, BZD, Estatina, Sulfonilureia)</strong>",
+              "<strong>BZD/Zolpidem:</strong> Desmame lento (reduzir 25% a cada 2 semanas) para evitar abstinência/convulsão.<br><strong>IBP (&gt; 8 sem sem indicação):</strong> Reduzir 50% por 2–4 sem ou sob demanda (evita hipersecreção ácida rebote).<br><strong>Sulfonilureia (Glibenclamida) e Estatina (prev. primária em frágil):</strong> Podem ser suspensas imediatamente.",
+              "Suspender benzodiazepínico de uso crônico de forma abrupta no idoso, ou manter glibenclamida em idoso frágil com HbA1c &lt; 7,0% (\"sobretratamento\")."
+            ],
+            [
+              "<strong>Hipodermóclise nos Cuidados Paliativos</strong>",
+              "Até <strong>1.500 mL/24h por sítio</strong>. Conversão Morfina <strong>VO : SC = 2:1 ou 3:1</strong>.<br><strong>PERMITIDOS:</strong> Morfina, Fentanil, Metadona, Midazolam, Haloperidol, Ondansetrona, Metoclopramida, Escopolamina, Ceftriaxona.<br><strong>PROIBIDOS:</strong> <strong>Diazepam, Fenitoína, Diclofenaco/AINEs e Prometazina</strong>.",
+              "Prescrever Diazepam, Fenitoína ou Prometazina no subcutâneo (causam necrose tecidual grave!). Para sedação/crise convulsiva na hipodermóclise, usar sempre <strong>Midazolam</strong>!"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://bvsms.saude.gov.br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (Brasil) — Portaria GM/MS nº 825/2016 e Portaria de Consolidação nº 5/2017 (Programa Melhor em Casa e Atenção Domiciliar no SUS)</a>",
+            "<a href=\"https://www.americangeriatrics.org\" target=\"_blank\" rel=\"noopener noreferrer\">American Geriatrics Society (AGS) — 2023 Updated AGS Beers Criteria for Potentially Inappropriate Medication Use in Older Adults</a>",
+            "<a href=\"https://www.eugms.org\" target=\"_blank\" rel=\"noopener noreferrer\">O’Mahony D et al. — STOPP/START criteria for potentially inappropriate prescribing in older people: version 3 (European Geriatric Medicine 2023)</a>",
+            "<a href=\"https://paliativo.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Academia Nacional de Cuidados Paliativos (ANCP) / Sociedade Brasileira de Geriatria e Gerontologia (SBGG) — Guia de Uso da Via Subcutânea / Hipodermóclise</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

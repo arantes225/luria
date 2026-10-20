@@ -1,0 +1,1063 @@
+{
+  "v": 2,
+  "s": "febre-reumatica",
+  "t": "Febre Reumática",
+  "p": "Febre Reumática — Livro-Texto LURIA",
+  "d": "Tratado Completo de Reumatologia e Cardiologia Pediátrica: Fisiopatologia Imunológica, Critérios de Jones AHA 2015, Cardite Subclínica, Coreia de Sydenham, Cardiopatia Reumática Crônica, Gestação e Profilaxias",
+  "a": "Pediatria",
+  "m": "Pediatria",
+  "h": [
+    "Apostila LURIA",
+    "Febre Reumática",
+    "Tratado Completo de Reumatologia e Cardiologia Pediátrica: Fisiopatologia Imunológica, Critérios de Jones AHA 2015, Cardite Subclínica, Coreia de Sydenham, Cardiopatia Reumática Crônica, Gestação e Profilaxias",
+    [
+      "Área: Pediatria",
+      "Matéria: Pediatria",
+      "Tema: Febre Reumática"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "etiopatogenia-e-mimetismo-molecular-febre-reumatica",
+      "1. Etiopatogenia, Fisiopatologia Imunológica e Mimetismo Molecular da Febre Reumática"
+    ],
+    [
+      "criterios-de-jones-modificados-aha-2015",
+      "2. Critérios de Jones Modificados pela American Heart Association (AHA 2015)"
+    ],
+    [
+      "manifestacoes-clinicas-maiores-em-detalhes",
+      "3. As Manifestações Clínicas Maiores em Detalhes Semiográficos"
+    ],
+    [
+      "comprovacao-estreptococica-e-diagnostico-diferencial",
+      "4. Comprovação da Infecção Estreptocócica Prévia e Diagnóstico Diferencial"
+    ],
+    [
+      "tratamento-da-fase-aguda-e-profilaxia",
+      "5. Tratamento Farmacológico da Fase Aguda e Protocolos de Profilaxia Secundária"
+    ],
+    [
+      "casos-clinicos-e-questoes-febre-reumatica",
+      "6. Casos Clínicos Estruturados e Questões Comentadas Padrão Residência Médica"
+    ],
+    [
+      "cardiopatia-reumatica-cronica-e-valvopatias",
+      "7. Cardiopatia Reumática Crônica: História Natural, Lesões Valvares Definitivas e Abordagem Cirúrgica"
+    ],
+    [
+      "protocolos-de-profilaxia-primaria-e-impacto-saude-publica",
+      "8. Profilaxia Primária, Conduta na Faringoamigdalite Aguda e Impacto em Saúde Pública"
+    ],
+    [
+      "protocolo-de-anticoagulacao-gravidez-e-desafios-avancados",
+      "9. Situações Especiais: Febre Reumática na Gestação, Anticoagulação e Desafios Diagnósticos Contemporâneos"
+    ],
+    [
+      "sintese-final-e-checklist-de-alta-retencao-febre-reumatica",
+      "10. Pulo do Gato LURIA e Checklist de Alta Retenção para Concursos Médicos"
+    ]
+  ],
+  "q": [
+    [
+      "etiopatogenia-e-mimetismo-molecular-febre-reumatica",
+      0,
+      [
+        [
+          "2",
+          "1. Etiopatogenia, Fisiopatologia Imunológica e Mimetismo Molecular da Febre Reumática"
+        ],
+        [
+          "p",
+          "A Febre Reumática (FR) é uma enfermidade inflamatória multissistêmica aguda, pós-infecciosa e não supurativa, deflagrada por uma resposta autoimune aberrante em indivíduos geneticamente suscetíveis após uma infecção de orofaringe (faringoamigdalite) causada pelo <em>Streptococcus pyogenes</em> (Estrepto do Grupo A de Lancefield — EGA). Caracteriza-se pelo acometimento transitório e benigno de múltiplos órgãos, como articulações, pele e sistema nervoso central, contrastando dramaticamente com o potencial de lesão fibrótica cicatricial crônica, progressiva e deformante do miocárdio, endocárdio e valvas cardíacas — a temida <strong>Cardiopatia Reumática Crônica (CRC)</strong>, principal causa de doença valvar adquirida em crianças, adolescentes e adultos jovens em países em desenvolvimento."
+        ],
+        [
+          "p",
+          "<strong>A Orofaringe como Sítio Gatilho Obrigatório:</strong> Um axioma fundamental da microbiologia e reumatologia pediátrica estabelece que <strong>a Febre Reumática só é deflagrada por infecções estreptocócicas primárias da orofaringe (faringoamigdalite bacteriana)</strong>. Infecções cutâneas causadas pelo mesmo <em>Streptococcus pyogenes</em>, tais como impetigo crostoso, piodermite ou erisipela, <em>NÃO desencadeiam Febre Reumática</em>, embora sejam os clássicos gatilhos da Glomerulonefrite Difusa Aguda Pós-Estreptocócica (GNPE). Esse tropismo reside nas características intrínsecas das cepas estreptocócicas envolvidas e na via de apresentação antigênica no tecido linfoide associado à mucosa da orofaringe (anel linfático de Waldeyer)."
+        ],
+        [
+          "4",
+          "As Cepas Reumatogênicas e a Proteína M"
+        ],
+        [
+          "p",
+          "Nem toda linhagem de <em>Streptococcus pyogenes</em> tem a capacidade de disparar Febre Reumática. A virulência reumatogênica está estritamente vinculada a sorotipos específicos da <strong>Proteína M</strong> — o principal antígeno de superfície e fator de virulência da bactéria, caracterizado por sua estrutura fibrilar em alfa-hélice dimérica estendida. As clássicas <strong>cepas reumatogênicas pertencem aos sorotipos M 1, 3, 5, 6, 14, 18, 19, 24, 27 e 29</strong>. Essas cepas distinguem-se por apresentar cápsula rica em ácido hialurônico extremamente espessa (produzindo colônias mucoides no meio de cultura de ágar-sangue), grande resistência à fagocitose neutrofílica e capacidade de induzir títulos altíssimos de anticorpos neutralizantes."
+        ],
+        [
+          "p",
+          "<strong>A Cascata do Mimetismo Molecular:</strong> O evento patogênico central da Febre Reumática é o fenômeno de <strong>mimetismo molecular (reação cruzada autoimune)</strong>. Determinados epítopos antigênicos situados nas regiões terminais e centrais da Proteína M estreptocócica, bem como os carboidratos do Grupo A da parede bacteriana (N-acetil-beta-D-glicosamina), compartilham uma extraordinária homologia estrutural conformacional com moléculas do próprio hospedeiro humano:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Miosina Cardíaca e Tropomiosina:</strong> A proteína M possui sequências de aminoácidos quase idênticas às cadeias pesadas da miosina muscular cardíaca e da tropomiosina. Os anticorpos IgG e as células T clonais ativadas contra o estreptococo atacam diretamente os miócitos e o tecido intersticial do coração.",
+            "<strong>Laminina e Endotélio Valvar:</strong> Anticorpos dirigidos contra o carboidrato do grupo A ligam-se à laminina presente na membrana basal das células endoteliais que revestem as valvas cardíacas (endocárdio valvar). Essa fixação de imunocomplexos ativa as células endoteliais, deflagrando a expressão aberrante de moléculas de adesão vascular (VCAM-1 e ICAM-1), que recrutam linfócitos T autorreativos (CD4+ Th1 e Th17) para penetrar no estroma avascular da valva.",
+            "<strong>Gangliosídeos e Antígenos dos Gânglios da Base Cerebral:</strong> Os anticorpos anticarboidrato estreptocócico cruzam a barreira hematoencefálica e ligam-se especificamente ao gangliosídeo GM1 e à tubulina neuronal expressos nos núcleos caudado e putâmen (estriado / gânglios da base), desencadeando a hiperativação dopaminérgica responsável pela Coreia de Sydenham.",
+            "<strong>Sinóvia e Cartilagem Articular:</strong> A deposição transitória de imunocomplexos e citocinas inflamatórias na membrana sinovial articular gera sinovite estéril exsudativa intensa, porém sem invasão necrótica ou destruição osteocartilaginosa permanente."
+          ]
+        ],
+        [
+          "p",
+          "<strong>A Suscetibilidade Genética do Hospedeiro:</strong> Apenas uma minoria dos indivíduos acometidos por faringoamigdalite estreptocócica não tratada desenvolve febre reumática (taxa histórica de ataque em torno de 3% a 5% em epidemias com cepas reumatogênicas virulentas, caindo para 0,3% a 1% em condições endêmicas). Essa seletividade decorre de determinantes genéticos imunológicos, com forte associação a alelos do Complexo Principal de Histocompatibilidade de Classe II (HLA-DR e HLA-DQ), com destaque para <strong>HLA-DR7, HLA-DR4, HLA-DR2 e HLA-DRB1</strong>, que conferem conformação de fenda antigênica que apresenta com hiperafinidade os peptídeos da proteína M às células T CD4+ virgens, favorecendo uma resposta hiperproliferativa Th1/Th17 associada à hipoatividade de linfócitos T reguladores (Tregs)."
+        ],
+        [
+          "p",
+          "<strong>Anatomia Patológica e o Nódulo de Aschoff:</strong> Do ponto de vista anatomopatológico, a fase aguda da cardite reumática caracteriza-se por uma <strong>pancardite (endocardite, miocardite e pericardite concomitantes)</strong>. No miocárdio e subendocárdio, observa-se a lesão histopatológica patognomônica da Febre Reumática: o <strong>Nódulo de Aschoff</strong>. Trata-se de um granuloma inflamatório perivascular específico, composto por uma área central de degeneração fibrinoide colágena cercada por um infiltrado de linfócitos T, plasmócitos e macrófagos especializados gigantes multinucleados e ativados. Esses macrófagos modificados dividem-se em dois tipos celulares históricos de prova:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Células de Anitschkow:</strong> Macrófagos volumosos mononucleados com núcleo vesicular ovalado e cromatina condensada no centro em formato ondulado, lembrando o aspecto de uma taturana ou lagarta (\"células em lagarta\" ou <em>caterpillar cells</em>).",
+            "<strong>Células Gigantes de Aschoff:</strong> Células multinucleadas originadas da fusão de células de Anitschkow, com citoplasma basofílico abundante. A evolução desses granulomas culmina em fibrose cicatricial, retração das cordas tendíneas, espessamento e fusão comissural das cúspides valvares, consolidando a estenose e regurgitação valvar crônica."
+          ]
+        ]
+      ]
+    ],
+    [
+      "criterios-de-jones-modificados-aha-2015",
+      0,
+      [
+        [
+          "2",
+          "2. Critérios de Jones Modificados pela American Heart Association (AHA 2015)"
+        ],
+        [
+          "p",
+          "O diagnóstico da Febre Reumática aguda é eminentemente clínico e sindrômico, não existindo qualquer teste laboratorial ou radiológico isolado capaz de confirmar a doença por si só. Desde a sua formulação inicial por T. Duckett Jones em 1944, os critérios diagnósticos passaram por diversas revisões para calibrar a sensibilidade e especificidade diagnóstica. Em 2015, a <strong>American Heart Association (AHA) publicou uma profunda e revolucionária modificação dos Critérios de Jones</strong>, ratificada e adotada integralmente pela Sociedade Brasileira de Pediatria (SBP) e pela Sociedade Brasileira de Cardiologia (SBC)."
+        ],
+        [
+          "p",
+          "<strong>A Estratificação de Risco Populacional da AHA 2015:</strong> A principal inovação da diretriz AHA 2015 foi dividir os critérios de acordo com o risco epidemiológico basal da população em que o paciente está inserido:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Populações de Baixo Risco:</strong> Definidas como aquelas em que a incidência de febre reumática aguda é &lt; 2 por 100.000 crianças em idade escolar (5 a 14 anos) por ano, OU onde a prevalência de cardiopatia reumática crônica em qualquer faixa etária é &lt;= 1 por 1.000 pessoas por ano. Exemplo: regiões nobres de países desenvolvidos (América do Norte, Europa Ocidental).",
+            "<strong>Populações de Moderado e Alto Risco:</strong> Populações que não se enquadram nos critérios de baixo risco, apresentando incidência &gt;= 2 por 100.000 crianças ou prevalência de cardiopatia reumática &gt; 1 por 1.000. <strong>O Brasil e a esmagadora maioria dos países da América Latina, África e Ásia pertencem a essa categoria de moderado/alto risco</strong>, na qual os critérios são ampliados para aumentar a sensibilidade e evitar o subdiagnóstico."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Categoria",
+            "Populações de BAIXO Risco",
+            "Populações de MODERADO e ALTO Risco (BRASIL / SBP)"
+          ],
+          [
+            [
+              "<strong>CRITÉRIOS MAIORES</strong>",
+              "• Cardite (Clínica ou Subclínica ao Ecocardiograma)<br>\n        • Poliartrite migratória de grandes articulações<br>\n        • Coreia de Sydenham<br>\n        • Eritema Marginado de Leiner<br>\n        • Nódulos Subcutâneos de Meynet",
+              "• Cardite (Clínica ou Subclínica ao Ecocardiograma)<br>\n        • <strong>Artrite (Poliartrite migratória, Poliartrite não migratória OU Monoartrite)</strong><br>\n        • <strong>Poliartralgia isolada (se excluídas outras causas)</strong><br>\n        • Coreia de Sydenham<br>\n        • Eritema Marginado de Leiner<br>\n        • Nódulos Subcutâneos de Meynet"
+            ],
+            [
+              "<strong>CRITÉRIOS MENORES</strong>",
+              "• Poliartralgia<br>\n        • Febre (&gt;= 38,5 ºC)<br>\n        • VHS &gt;= 60 mm na 1ª hora e/ou PCR &gt;= 3,0 mg/dL<br>\n        • Intervalo PR prolongado no ECG (ajustado para a idade, se cardite não for critério maior)",
+              "• <strong>Monoartralgia</strong><br>\n        • <strong>Febre (&gt;= 38,0 ºC)</strong><br>\n        • <strong>VHS &gt;= 30 mm na 1ª hora e/ou PCR &gt;= 3,0 mg/dL</strong><br>\n        • Intervalo PR prolongado no ECG (ajustado para a idade, se cardite não for critério maior)"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Atenção para Regras Formais de Exclusão Mútua da AHA 2015"
+        ],
+        [
+          "p",
+          "1. Se o acometimento articular (poliartrite, monoartrite ou poliartralgia) for computado como <strong>Critério Maior</strong>, a artralgia NÃO pode ser utilizada simultaneamente como Critério Menor no mesmo paciente.<br>\n  2. Se a Cardite (clínica ou subclínica) for utilizada como <strong>Critério Maior</strong>, o prolongamento do intervalo PR ao ECG NÃO pode ser computado concomitantemente como Critério Menor."
+        ],
+        [
+          "3",
+          "Regras de Fechamento Diagnóstico da Febre Reumática"
+        ],
+        [
+          "p",
+          "O diagnóstico de um primeiro episódio de Febre Reumática Aguda exige rigorosamente:"
+        ],
+        [
+          "p",
+          "<strong>Evidência Obrigatória de Infecção Prévia pelo Estreptococo do Grupo A</strong><br>\n  <strong>+</strong><br>\n  <strong>[2 Critérios Maiores] OU [1 Critério Maior + 2 Critérios Menores]</strong>"
+        ],
+        [
+          "p",
+          "<strong>Cenários Especiais de Exceção (Diagnóstico sem a regra 2M ou 1M+2m):</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Coreia de Sydenham Isolada:</strong> Como o período de latência entre a faringite e o surgimento dos sintomas neurológicos é extremamente prolongado (frequentemente de 2 a 6 meses), no momento em que a coreia se manifesta os títulos sorológicos de anticorpos estreptocócicos já caíram e as provas inflamatórias podem estar normais. Portanto, <strong>a presença de Coreia de Sydenham isolada (após exclusão de lúpus eritematoso sistêmico, doença de Wilson e uso de neurolépticos) é autossuficiente para o diagnóstico de Febre Reumática, dispensando outros critérios e dispensando a comprovação laboratorial de infecção prévia!</strong>",
+            "<strong>Cardite Reumática Indolente / Tardia:</strong> Pacientes que se apresentam meses após o surto com cardite insidiosa de baixa intensidade e sem sintomas articulares ou inflamatórios exuberantes.",
+            "<strong>Recidiva de Febre Reumática em Paciente com Cardiopatia Reumática Prévia Estabelecida:</strong> Diante de um paciente com lesão valvar reumática crônica documentada, a constatação de infecção estreptocócica recente associada à presença de <strong>apenas 3 Critérios Menores</strong> (ex.: febre + monoartralgia + elevação de VHS) é suficiente para firmar o diagnóstico de surto agudo de recidiva reumática."
+          ]
+        ]
+      ]
+    ],
+    [
+      "manifestacoes-clinicas-maiores-em-detalhes",
+      0,
+      [
+        [
+          "2",
+          "3. As Manifestações Clínicas Maiores em Detalhes Semiográficos"
+        ],
+        [
+          "p",
+          "As cinco manifestações clínicas maiores de Jones representam o coração da semiologia da Febre Reumática. Cada uma possui peculiaridades semiográficas, cronológicas e prognósticas fundamentais para o médico assistente."
+        ],
+        [
+          "3",
+          "3.1. Artrite Reumática"
+        ],
+        [
+          "p",
+          "É a manifestação clínica mais frequente da fase aguda, ocorrendo em 60% a 80% dos pacientes. Caracteriza-se como uma <strong>poliartrite migratória e assimétrica, de caráter agudo e fugaz, que acomete preferencialmente as grandes articulações periféricas</strong> — joelhos, tornozelos, cotovelos e punhos (as articulações de quadril e ombros são menos frequentemente afetadas, e pequenas articulações interfalangeanas das mãos e pés são raramente envolvidas isoladamente)."
+        ],
+        [
+          "p",
+          "<strong>A Dinâmica Migratória Típica:</strong> O processo inflamatório atinge uma articulação (ex.: joelho direito), que se torna intensamente dolorosa, edemaciada, quente e eritematosa. A dor é habitualmente desproporcional ao edema e à hiperemia, impondo limitação funcional completa (a criança recusa-se a deambular ou movimentar o membro). Após 3 a 5 dias de pico inflamatório, a artrite naquela articulação regride espontaneamente e desaparece sem deixar qualquer sequela mecânica ou anatômica, enquanto uma nova articulação contralateral ou em outro segmento (ex.: tornozelo esquerdo) inicia simultaneamente ou sucessivamente o mesmo ciclo inflamatório."
+        ],
+        [
+          "4",
+          "A Prova Terapêutica com Ácido Acetilsalicílico (AAS)"
+        ],
+        [
+          "p",
+          "A artrite da Febre Reumática exibe uma <strong>resposta dramática, espetacular e quase miraculosa ao uso de anti-inflamatórios não esteroidais (AINEs) em doses anti-inflamatórias plenas, particularmente o AAS (75 a 100 mg/kg/dia)</strong>. Dentro de 24 a 48 horas após a primeira dose terapêutica, a dor articular desaparece completamente e os sinais flogísticos regridem com rápida recuperação da marcha. <em>Conceito de Prova:</em> Se uma artrite febril na infância mantiver dor intensa e refratária após 48 a 72 horas de uso adequado de AAS em dose anti-inflamatória, o diagnóstico de Febre Reumática torna-se altamente improvável, devendo-se investigar Artrite Idiopática Juvenil (AIJ), Artrite Séptica, Leucemia Aguda ou Artrite Reativa pós-estreptocócica."
+        ],
+        [
+          "3",
+          "3.2. Cardite Reumática: Clínica e Subclínica"
+        ],
+        [
+          "p",
+          "A cardite é a mais grave e a <strong>única manifestação da Febre Reumática capaz de deixar sequelas permanentes e levar ao óbito</strong>. Incide em 50% a 70% dos surtos agudos, manifestando-se habitualmente nas primeiras 2 a 3 semanas após o quadro articular ou faríngeo."
+        ],
+        [
+          "p",
+          "<strong>A Pancardite e o Tropismo Valvar:</strong> Como vimos, ocorre inflamação simultânea das três camadas cardíacas. O epicardio inflama, produzindo atrito pericárdico audível e derrame pericárdico serofibrinoso (pericardite). O miocárdio sofre invasão inflamatória difusa com perda de força de contração, traduzida clinicamente por taquicardia sinusal desproporcional à febre (que persiste durante o sono), ritmo de galope por B3 e cardiomegalia com insuficiência cardíaca congestiva. No entanto, o alvo patológico predileto é o <strong>endocárdio valvar (valvulite)</strong>."
+        ],
+        [
+          "p",
+          "<strong>As Valvas Acometidas e seus Sopros:</strong> O acometimento valvar obedece a uma hierarquia anatômica consagrada:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Valva Mitral Isolada:</strong> É a lesão mais frequente, presente em 65% a 70% dos casos de cardite. Na fase aguda, a valvulite edemacia as cúspides e as cordas tendíneas alongam-se ou sofrem prolapso, resultando em <strong>Insuficiência Mitral Aguda</strong> (sopro holossistólico regurgitativo de alta frequência em foco mitral irradiando para a axila esquerda). Pode associar-se ao clássico <strong>Sopro de Carey Coombs</strong> — um ruflar mesodiastólico suave e curto no ápice cardíaco, decorrente da valvulite mitral aguda com edema transitório das cúspides e hiperfluxo relativo, sem significar estenose mitral fixa crônica.",
+            "<strong>Acometimento Combinado Aórtico e Mitral:</strong> Presente em 25% a 30% dos pacientes (dupla lesão mitroaórtica). A valva aórtica desenvolve <strong>Insuficiência Aórtica Aguda</strong>, auscultando-se sopro protodiastólico aspirativo de alta frequência em decrescendo na borda esternal esquerda média (foco aórtico acessório de Erb).",
+            "<strong>Valva Aórtica Isolada:</strong> Ocorre em apenas 2% a 5% dos casos.",
+            "<strong>Valvas Tricúspide e Pulmonar:</strong> São raramente acometidas primariamente (&lt; 1%), ocorrendo quase exclusivamente em cardiopatias reumáticas crônicas graves multilésionadas."
+          ]
+        ],
+        [
+          "4",
+          "A Cardite Subclínica e o Papel do Ecocardiograma Doppler (AHA 2015)"
+        ],
+        [
+          "p",
+          "Um dos maiores marcos da diretriz AHA 2015 foi a consagração definitiva da <strong>Cardite Subclínica como Critério Maior de Jones</strong>. Define-se cardite subclínica como a presença de regurgitação valvar mitral e/ou aórtica patológica ao ecocardiograma com Doppler color e pulsátil em um paciente sem qualquer sopro cardíaco patológico audível ao exame físico por ausculta tradicional. O ecocardiograma transtorácico com Doppler é <strong>MANDATÓRIO em todos os casos de suspeita ou diagnóstico confirmado de Febre Reumática</strong>, mesmo quando a ausculta for descrita como rigorosamente inocente."
+        ],
+        [
+          "3",
+          "3.3. Coreia de Sydenham (Dança de São Vito)"
+        ],
+        [
+          "p",
+          "A Coreia de Sydenham ocorre em 10% a 30% dos pacientes, acometendo preferencialmente meninas na faixa etária entre 5 e 15 anos. É decorrente da ação de anticorpos antineuronais direcionados contra os receptores dopaminérgicos nos gânglios da base (núcleos caudado e putâmen)."
+        ],
+        [
+          "p",
+          "<strong>Características Clínicas:</strong> Caracteriza-se pela tríade neurológica clássica:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Movimentos Involuntários, Desordenados e Coreicos:</strong> Acometem extremidades e face (caretas faciais involuntárias, protusão e retração rápida da língua, movimentos de arremesso e flexão/extensão das mãos). <em>Regra de Ouro:</em> Os movimentos pioram acentuadamente sob estresse, cansaço ou quando a criança se sente observada, e <strong>desaparecem completamente durante o sono fisiológico</strong>.",
+            "<strong>Hipotonia Muscular Generalizada:</strong> Traduzida por fraqueza muscular, frouxidão ligamentar e perda de sustentação (o paciente derruba objetos das mãos e apresenta marcha instável e atáxica).",
+            "<strong>Labilidade Emocional e Alterações do Comportamento:</strong> Crises súbitas e imotivadas de choro, riso inadequado, irritabilidade, perda de concentração e declínio do rendimento escolar, que frequentemente antecedem os distúrbios motores e são equivocadamente rotulados como transtornos psiquiátricos primários."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Manobras Semiológicas Clássicas da Coreia:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Sinal do Ordenhador (<em>Milkmaid's Grip</em>):</strong> Ao segurar firmemente os dedos do examinador, a criança não consegue manter a contração isométrica sustentada; a força aperta e relaxa ciclicamente, lembrando o ato de ordenhar uma vaca.",
+            "<strong>Sinal da Língua em Saca-Rolhas (ou Língua de Camaleão):</strong> Ao ser solicitada a protruir a língua para fora da boca por 10 a 20 segundos, a criança não consegue mantê-la estável; a língua retrai-se involuntariamente e projeta-se em sobressaltos contínuos.",
+            "<strong>Sinal do Pronador:</strong> Ao elevar ambos os braços estendidos acima da cabeça, os antebraços e as mãos sofrem rotação medial e pronação involuntária."
+          ]
+        ],
+        [
+          "3",
+          "3.4. Eritema Marginado de Leiner"
+        ],
+        [
+          "p",
+          "Manifestação cutânea rara (&lt; 2% a 5% dos casos), porém altamente específica da Febre Reumática. Apresenta-se como máculas ou manchas eritematosas, rosadas, com bordas externas serpiginosas, elevadas e nítidas, contrastando com um centro pálido ou claro. Acomete exclusivamente o <strong>tronco e a porção proximal dos membros, POUPANDO rigorosamente a face</strong>. As lesões são <strong>completamente indolores e NÃO pruriginosas</strong>. Possuem caráter evanescente e termossensível: intensificam-se após o banho quente ou sob aquecimento local e regridem em poucas horas sem deixar crostas ou descamação residual."
+        ],
+        [
+          "3",
+          "3.5. Nódulos Subcutâneos de Meynet"
+        ],
+        [
+          "p",
+          "Presentes em menos de 1% a 3% dos pacientes. São nódulos firmes, arredondados, indolores, móveis, medindo de poucos milímetros a 1-2 cm de diâmetro. Localizam-se sobre superfícies ósseas duras e tendíneas de extensão, especialmente sobre os cotovelos, joelhos, punhos, tendão calcâneo e processos espinhosos vertebrais occipitais e da coluna. <strong>Associação Clássica de Prova: Os nódulos subcutâneos praticamente NUNCA surgem isolados; sua presença correlaciona-se de forma quase absoluta (em mais de 95% das vezes) com a presença de CARDITE GRAVE CONCOMITANTE</strong>."
+        ]
+      ]
+    ],
+    [
+      "comprovacao-estreptococica-e-diagnostico-diferencial",
+      0,
+      [
+        [
+          "2",
+          "4. Comprovação da Infecção Estreptocócica Prévia e Diagnóstico Diferencial"
+        ],
+        [
+          "p",
+          "Para cumprir os critérios de Jones modificados da AHA 2015, é indispensável a comprovação laboratorial ou microbiológica inequívoca de infecção prévia recente por <em>Streptococcus pyogenes</em> (excetuando-se a Coreia de Sydenham e a Cardite indolente tardia). Os métodos diagnósticos validados incluem:"
+        ],
+        [
+          "3",
+          "4.1. Marcadores Imunológicos (Sorologia Estreptocócica)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Antiestreptolisina O (ASLO / ASO):</strong> É o teste sorológico mais amplamente utilizado na prática clínica. A estreptolisina O é uma toxina hemolítica oxigênio-lábil sintetizada pelo EGA. Os títulos de ASLO começam a elevar-se 1 a 2 semanas após a faringoamigdalite, atingem pico plasmático entre a 3ª e a 5ª semana e decrescem lentamente ao longo de vários meses. Valores isolados &gt; 250 a 330 UI/mL em crianças e adolescentes sugerem infecção recente. No entanto, o padrão-ouro laboratorial consiste na demonstração de uma <strong>elevação de pelo menos quatro vezes (ou 2 diluições) nos títulos de ASLO em duas coletas pareadas com intervalo de 14 a 21 dias</strong>.",
+            "<strong>Antidesoxirribonuclease B (Anti-DNase B):</strong> Teste de eleição complementar. Apresenta cinética mais tardia: atinge pico entre 6 e 8 semanas após a infecção e permanece elevada por até 3 a 6 meses. Quando associamos a dosagem de ASLO e Anti-DNase B, a taxa de comprovação sorológica de estreptococcia prévia ultrapassa 90% a 95% dos pacientes."
+          ]
+        ],
+        [
+          "3",
+          "4.2. Métodos Microbiológicos Diretos"
+        ],
+        [
+          "u",
+          [
+            "<strong>Cultura de Orofaringe (Swab de Amígdalas e Faringe Posterior):</strong> Realizada em placa de ágar-sangue de carneiro a 5%. É o teste de referência tradicional de especificidade. Contudo, na fase aguda da FR (que surge 2 a 4 semanas após a faringite), a taxa de positividade da cultura é de apenas 10% a 25%, pois o sistema imune muitas vezes já eliminou a bactéria da orofaringe ou o paciente utilizou antimicrobianos prévios. Além disso, um swab positivo isoladamente não distingue infecção verdadeira de estado de portador são assintomático crônico do estreptococo.",
+            "<strong>Teste Rápido de Detecção Antigênica (TRDA / Teste Rápido de Faringe):</strong> Detecta os carboidratos da parede do EGA por imunoensaio enzimático ou quimioluminescência em 15 minutos, exibindo alta especificidade (&gt; 95%), com limitações semelhantes de sensibilidade na fase tardia pós-infecciosa."
+          ]
+        ],
+        [
+          "4",
+          "A Escarlatina Prévia como Critério de Certeza"
+        ],
+        [
+          "p",
+          "A história clínica documentada de episódio inequívoco de <strong>Escarlatina recente</strong> (com exantema microlinhar em lixa, sinal de Filatov e sinal de Pastia) nos últimos 30 a 45 dias é aceita pelos critérios de Jones como prova clínica suficiente de infecção estreptocócica prévia, dispensando exames sorológicos complementares."
+        ],
+        [
+          "3",
+          "4.3. Diagnóstico Diferencial Estruturado"
+        ],
+        [
+          "t",
+          [
+            "Entidade Clínica",
+            "Diferenciação Prática da Febre Reumática"
+          ],
+          [
+            [
+              "<strong>Artrite Idiopática Juvenil (AIJ)</strong>",
+              "Artrite de caráter contínuo, aditivo e fixo (não migratório), durando &gt; 6 semanas. Resposta incompleta ou lenta ao AAS; ausência de relação temporal obrigatória com estreptococo; presença frequente de uveíte anterior e micrognatia."
+            ],
+            [
+              "<strong>Artrite Reativa Pós-Estreptocócica</strong>",
+              "Período de latência curtíssimo (1 a 7 dias após faringite); artrite persistente, aditiva, não migratória, acometendo grandes e pequenas articulações e esqueleto axial. Resposta frustra ou fraca ao AAS e ausência completa de cardite."
+            ],
+            [
+              "<strong>Endocardite Infecciosa Aguda / Subaguda</strong>",
+              "Hemoculturas persistentemente positivas para germes específicos; febre contínua séptica com esplenomegalia, estigmas embólicos periféricos (manchas de Roth, hemorragias em estilha, lesões de Janeway) e vegetações móveis intracardíacas volumosas ao ecocardiograma."
+            ],
+            [
+              "<strong>Lúpus Eritematoso Sistêmico (LES)</strong>",
+              "Poliartrite não erosiva de mãos e punhos; acometimento cutâneo malar com rash em asa de borboleta e fotossensibilidade; nefrite com proteinúria/hematúria; citopenias hematológicas no hemograma e positividade para anticorpos FAN e anti-DNA dupla hélice."
+            ],
+            [
+              "<strong>Leucemia Linfoide Aguda (LLA)</strong>",
+              "Dor óssea intensa metafisária noturna que acorda a criança (não estritamente articular), desproporcional ao edema; palidez cutaneomucosa progressiva, petéquias/equimoses espontâneas, hepatoesplenomegalia maciça e linfonodomegalias generalizadas com blastos no sangue periférico."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "tratamento-da-fase-aguda-e-profilaxia",
+      0,
+      [
+        [
+          "2",
+          "5. Tratamento Farmacológico da Fase Aguda e Protocolos de Profilaxia Secundária"
+        ],
+        [
+          "p",
+          "O manejo terapêutico da Febre Reumática aguda estrutura-se em quatro pilares fundamentais, simultâneos e complementares: repouso físico regrado, erradicação imediata do estreptococo da orofaringe, terapia anti-inflamatória escalonada conforme a gravidade das manifestações clínicas e instituição rigorosa da profilaxia secundária contínua."
+        ],
+        [
+          "3",
+          "5.1. Repouso no Leito"
+        ],
+        [
+          "p",
+          "O repouso físico é mandatório durante a fase aguda ativa com o intuito de diminuir o trabalho mecânico do miocárdio inflamado e atenuar a dor articular. A sua duração varia estritamente com o fenótipo clínico:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Artrite Isolada sem Cardite:</strong> Repouso relativo durante o período álgico articular agudo (cerca de 2 semanas), seguido de retorno gradual às atividades habituais nas 2 semanas subsequentes.",
+            "<strong>Cardite Leve a Moderada:</strong> Repouso absoluto no leito por 4 a 6 semanas.",
+            "<strong>Cardite Grave com Insuficiência Cardíaca:</strong> Repouso absoluto no leito estrito por um período mínimo de 8 a 12 semanas, sendo a mobilização autorizada somente após a normalização das provas inflamatórias (VHS e PCR) e controle da IC."
+          ]
+        ],
+        [
+          "3",
+          "5.2. Erradicação do Foco Estreptocócico Primário"
+        ],
+        [
+          "p",
+          "Mesmo que o paciente não apresente sintomas faríngeos ativos e mesmo que a cultura de orofaringe venha negativa, <strong>TODO paciente com diagnóstico confirmado ou altamente provável de Febre Reumática DEVE receber imediatamente tratamento antibacteriano para erradicação do <em>Streptococcus pyogenes</em></strong>. O objetivo é eliminar antígenos residuais persistentes nas criptas amigdalianas que possam perpetuar o estímulo autoimune."
+        ],
+        [
+          "4",
+          "Esquema de Erradicação de Primeira Linha (Padrão-Ouro SBP / AHA)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Penicilina G Benzatina por Via Intramuscular Profunda em Dose Única:</strong>\n      <ul>\n        <li>Pacientes com peso corporal &lt;= 20 kg (ou &lt;= 27 kg em algumas diretrizes): <strong>600.000 UI IM</strong> dose única.",
+            "Pacientes com peso corporal &gt; 20 kg (ou &gt; 27 kg): <strong>1.200.000 UI IM</strong> dose única."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n    <li><strong>Alternativas Orais para Pacientes sem Alergia à Penicilina:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Penicilina V potássica oral (250 mg 2 a 3 vezes/dia por 10 dias) ou Amoxicilina oral (50 mg/kg/dia dividida em 2 a 3 tomadas por 10 dias). <em>Desvantagem:</em> Depende da adesão estrita aos 10 dias completos de tratamento."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n    <li><strong>Pacientes com Alergia Inequívoca à Penicilina:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Eritromicina oral</strong> (estolato de eritromicina 40 a 50 mg/kg/dia dividido em 3 a 4 doses por 10 dias), <strong>Azitromicina</strong> (12 mg/kg/dia 1x/dia por 5 dias) ou <strong>Claritromicina</strong> (15 mg/kg/dia dividida em 2 tomadas por 10 dias)."
+          ]
+        ],
+        [
+          "3",
+          "5.3. Terapia Anti-Inflamatória Escalonada"
+        ],
+        [
+          "p",
+          "O tratamento anti-inflamatório difere substancialmente caso haja apenas artrite isolada ou caso haja envolvimento miocárdico e valvar (cardite):"
+        ],
+        [
+          "4",
+          "A. Artrite Isolada (Sem Cardite ao Ecocardiograma)"
+        ],
+        [
+          "p",
+          "O anti-inflamatório não esteroidal de primeira escolha é o <strong>Ácido Acetilsalicílico (AAS)</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Dose de Ataque:</strong> 75 a 100 mg/kg/dia dividida em 4 tomadas (de 6 em 6 horas), com dose máxima diária de 3 a 4 g/dia, mantida por 1 a 2 semanas até o alívio completo dos sintomas articulares e queda das provas de atividade inflamatória.",
+            "<strong>Dose de Manutenção:</strong> Reduzir para 50 a 60 mg/kg/dia dividida em 3 a 4 tomadas por mais 2 a 4 semanas, com desmame gradual ao final para evitar efeito rebote inflamatório.",
+            "<strong>Alternativa:</strong> O Naproxeno oral (10 a 20 mg/kg/dia dividido em 2 tomadas) pode ser utilizado em pacientes intolerantes ao AAS."
+          ]
+        ],
+        [
+          "4",
+          "B. Cardite Reumática (Leve, Moderada ou Grave)"
+        ],
+        [
+          "p",
+          "Diante de qualquer grau de cardite clínica ou evidência ecocardiográfica de valvulite de repercussão, <strong>os anti-inflamatórios não esteroidais (AAS) são insuficientes e estão proscritos como monoterapia inicial. A terapia de escolha absoluta é a CORTICOTERAPIA SISTÊMICA</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Prednisona ou Prednisolona Oral:</strong> Dose de <strong>1 a 2 mg/kg/dia (dose máxima de 60 a 80 mg/dia)</strong> administrada em tomada matinal única ou dividida em duas tomadas.",
+            "<strong>Duração do Tratamento:</strong> Manter a dose plena por 2 a 4 semanas, dependendo da gravidade e da velocidade de regressão da insuficiência cardíaca e normalização das provas inflamatórias.",
+            "<strong>Desmame Gradual e Profilaxia do Rebote:</strong> A redução da dose de corticoide deve ser feita lentamente ao ritmo de 20% a 25% a cada semana, ao longo de 2 a 4 semanas adicionais (duração total do ciclo de 4 a 8 semanas).",
+            "<strong>Uso Concomitante de AAS no Desmame do Corticoide:</strong> Para evitar o temido <em>fenômeno de rebote clínico e laboratorial</em> durante a retirada do corticoide, inicia-se AAS na dose de 50 mg/kg/dia 1 semana antes de iniciar o desmame da prednisona, mantendo o AAS por mais 2 a 3 semanas após a suspensão completa do corticoide.",
+            "<strong>Cardite Grave com Choque ou Insuficiência Cardíaca Refratária:</strong> Indica-se <strong>Pulsoterapia com Metilprednisolona Intravenosa</strong> na dose de 30 mg/kg/dia (máximo de 1.000 mg/dia) infundida em 2 a 3 horas durante 3 dias consecutivos."
+          ]
+        ],
+        [
+          "4",
+          "C. Manejo Específico da Coreia de Sydenham"
+        ],
+        [
+          "p",
+          "A Coreia não responde adequadamente ao AAS nem ao repouso isolado. Em casos leves a moderados, o manejo inclui ambiente tranquilo e protegido contra traumatismos e estímulos sensoriais estressantes. Nas formas graves ou incapacitantes com prejuízo da alimentação e marcha:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Ácido Valproico (Valproato de Sódio):</strong> Fármaco de primeira linha com excelente perfil de tolerabilidade (15 a 30 mg/kg/dia dividido em 2 a 3 tomadas).",
+            "<strong>Carbamazepina:</strong> Alternativa oral amplamente utilizada (10 a 20 mg/kg/dia).",
+            "<strong>Haloperidol:</strong> Antagonista dopaminérgico tradicional de alta potência (0,5 a 2 mg/dia), reservado para casos refratários em virtude do risco de distonia aguda e impregnação extrapiramidal.",
+            "<strong>Corticoterapia na Coreia Refratária:</strong> Pacientes com Coreia paralítica grave ou refratária aos moduladores dopaminérgicos beneficiam-se de cursos curtos de Prednisona oral ou pulsoterapia com Metilprednisolona venosa para acelerar a depuração dos anticorpos antineuronais."
+          ]
+        ],
+        [
+          "3",
+          "5.4. Profilaxia Secundária da Febre Reumática: Diretriz SBP e Ministério da Saúde"
+        ],
+        [
+          "p",
+          "O indivíduo que desenvolveu um primeiro surto de Febre Reumática adquire um estado de hiper-reatividade imunológica perene. Novas infecções faríngeas por estreptococo, mesmo assintomáticas, induzem surtos de recidiva com lesão cumulativa devastadora sobre as valvas cardíacas. Por conseguinte, a <strong>profilaxia secundária contínua é a medida médica mais custo-efetiva e crucial na prevenção da cardiopatia reumática crônica</strong>."
+        ],
+        [
+          "4",
+          "Droga de Escolha e Posologia da Profilaxia Secundária"
+        ],
+        [
+          "u",
+          [
+            "<strong>Penicilina G Benzatina por Via Intramuscular Profunda a cada 21 Dias:</strong>\n      <ul>\n        <li>Pacientes &lt;= 20 kg (ou &lt;= 27 kg): <strong>600.000 UI IM a cada 21 dias</strong>.",
+            "Pacientes &gt; 20 kg (ou &gt; 27 kg): <strong>1.200.000 UI IM a cada 21 dias</strong>."
+          ]
+        ],
+        [
+          "p",
+          "<em>Atenção para o intervalo cronológico:</em> No Brasil e em áreas de alta endemicidade, a recomendação formal da Sociedade Brasileira de Pediatria e Ministério da Saúde é o <strong>intervalo rigoroso a cada 21 dias (3 semanas)</strong>, pois os níveis séricos protetores de penicilina caem após a 3ª semana, deixando uma janela de vulnerabilidade se for administrada a cada 4 semanas (28 dias).\n    </li>\n    <li><strong>Alternativas para Alérgicos à Penicilina:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Sulfadiazina oral:</strong> 500 mg 1x/dia se peso &lt;= 30 kg; 1.000 mg 1x/dia se peso &gt; 30 kg (contraindicada no final da gestação e em menores de 2 meses).",
+            "<strong>Eritromicina oral:</strong> 250 mg via oral 2 vezes ao dia (para pacientes com alergia simultânea à penicilina e às sulfas)."
+          ]
+        ],
+        [
+          "3",
+          "Tempo de Duração da Profilaxia Secundária (Diretrizes SBP / SBC / AHA)"
+        ],
+        [
+          "t",
+          [
+            "Categoria Clínica do Paciente",
+            "Duração Mínima da Profilaxia Secundária"
+          ],
+          [
+            [
+              "<strong>Febre Reumática SEM Cardite</strong> (apenas artrite e/ou coreia isolada com ecocardiograma estritamente normal)",
+              "Até os <strong>21 anos de idade</strong> OU por um período mínimo de <strong>5 anos após o último surto</strong> (o que for mais longo)."
+            ],
+            [
+              "<strong>Febre Reumática COM Cardite, mas SEM Sequela Valvar Residual</strong> (cardite curada com ecocardiograma demonstrando valvas normais)",
+              "Até os <strong>25 anos de idade</strong> OU por um período mínimo de <strong>10 anos após o último surto</strong> (o que for mais longo)."
+            ],
+            [
+              "<strong>Febre Reumática COM Cardite e COM Lesão Valvar Residual Permanente</strong> (Insuficiência Mitral/Aórtica persistente leve, moderada ou grave)",
+              "Até os <strong>40 anos de idade</strong> OU por um período mínimo de <strong>10 anos após o último surto</strong> (o que for mais longo). Em indivíduos com exposição epidemiológica contínua de alto risco (ex.: professores, profissionais de saúde), considerar profilaxia por toda a vida."
+            ],
+            [
+              "<strong>Cardiopatia Reumática Grave Submetida a Cirurgia Cardíaca</strong> (Troca valvar protética mecânica/biológica ou plastia valvar)",
+              "<strong>POR TODA A VIDA (Profilaxia Indefinida / Vitalícia).</strong>"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-e-questoes-febre-reumatica",
+      0,
+      [
+        [
+          "2",
+          "6. Casos Clínicos Estruturados e Questões Comentadas Padrão Residência Médica"
+        ],
+        [
+          "p",
+          "A fixação dos conceitos da Febre Reumática exige treinamento com casos clínicos da vida real e questões de alto nível das principais bancas de concursos médicos."
+        ],
+        [
+          "3",
+          "Caso Clínico 1 — O Desafio Diagnóstico da Menina com Distúrbio do Comportamento e Marcha"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Escolar de 10 anos, sexo feminino, previamente hígida, é trazida pela mãe ao ambulatório de pediatria. A genitora relata que há 3 semanas a professora chamou a atenção para o fato de que a menina \"não consegue mais escrever com letra legível, derruba lápis e cadernos no chão continuamente e apresenta crises súbitas e sem motivo de choro na sala de aula\". A mãe achava que era birra ou déficit de atenção, mas notou que nos últimos dias a criança começou a fazer caretas faciais involuntárias e andar com as pernas bambas."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Bom estado geral, corada, afebril, FC 88 bpm, FR 18 irpm, PA 100/65 mmHg. Ao exame neurológico: mímica facial hiperativa com contrações espasmódicas involuntárias dos lábios e fronte; ao solicitar que projete a língua para fora, nota-se impossibilidade de mantê-la estática, com retrações e sobressaltos contínuos (sinal da língua em saca-rolhas); ao apertar as mãos do examinador, a força é intermitente e flutuante (sinal do ordenhador). Reflexos osteotendíneos vivos com frouxidão e hipotonia muscular nos quatro membros. Ausculta cardíaca: bulhas normorrítmicas, sem sopros audíveis. Articulações sem sinais inflamatórios. Pele íntegra."
+        ],
+        [
+          "p",
+          "<strong>Exames Laboratoriais:</strong> Hemograma normal; VHS: 14 mm na 1ª hora (normal); PCR: 0,2 mg/dL (normal); ASLO: 180 UI/mL (normal/negativo). Teste rápido de garganta negativo."
+        ],
+        [
+          "p",
+          "<strong>Discussão Clínica e Diagnóstica:</strong>"
+        ],
+        [
+          "p",
+          "Estamos diante de uma <strong>Coreia de Sydenham isolada</strong> típica. Por se manifestar tardiamente (2 a 6 meses após a faringite primária), é comum que o título de ASLO já tenha se normalizado e as provas inflamatórias (VHS/PCR) estejam normais. Conforme as regras da AHA 2015, a Coreia de Sydenham isolada é patognomônica e dispensa tanto outros critérios de Jones quanto a comprovação sorológica de infecção estreptocócica."
+        ],
+        [
+          "p",
+          "<strong>Conduta Prática:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Ecocardiograma Transtorácico com Doppler com Urgência:</strong> Mandatório para rastrear ativamente cardite subclínica oculta (regurgitação mitral subclínica).",
+            "<strong>Erradicação Estreptocócica Imediata:</strong> Penicilina G Benzatina 1.200.000 UI IM dose única.",
+            "<strong>Tratamento Farmacológico dos Sintomas Motores:</strong> Ácido Valproico oral (15 a 30 mg/kg/dia) com excelente resposta e melhora funcional escolar em poucas semanas.",
+            "<strong>Instituição de Profilaxia Secundária Contínua:</strong> Penicilina G Benzatina 1.200.000 UI IM a cada 21 dias. Se o ecocardiograma confirmar ausência de cardite residual, a duração será até os 21 anos de idade ou 5 anos do surto."
+          ]
+        ],
+        [
+          "3",
+          "Banco de Questões Comentadas Padrão Residência Médica"
+        ],
+        [
+          "4",
+          "Questão 1 (USP / Revalida INEP)"
+        ],
+        [
+          "p",
+          "Menino de 9 anos de idade é trazido à Unidade de Pronto Atendimento com queixa de dor intensa e inchaço no tornozelo direito há 3 dias, que melhorou progressivamente, porém há 24 horas evoluiu com dor incapacitante, calor e edema no joelho esquerdo, impedindo a marcha. Há 3 semanas apresentou febre e dor de garganta com placas purulentas, tratada pela mãe com chá caseiro e analgésicos comuns. Ao exame físico: joelho esquerdo edemaciado, quente e intensamente doloroso à mínima palpação. Ausculta cardíaca revela taquicardia sinusal (FC 125 bpm) desproporcional à temperatura corporal (Tax 37,9 ºC) e sopro holossistólico regurgitativo 3+/6+ em foco mitral com irradiação axilar. Exames laboratoriais: VHS = 78 mm na 1ª hora; PCR = 12 mg/dL; ASLO = 980 UI/mL. O eletrocardiograma demonstra ritmo sinusal com intervalo PR de 0,22 segundos (prolongado para a idade). Considerando os Critérios de Jones modificados da AHA 2015 para populações de moderado/alto risco, assinale a opção que indica os critérios preenchidos e a conduta medicamentosa anti-inflamatória correta:"
+        ],
+        [
+          "p",
+          "A) O paciente preenche 2 critérios maiores (artrite e cardite) e 3 menores (febre, VHS/PCR e PR longo); conduta: Ácido Acetilsalicílico em altas doses isolado.<br>\nB) O paciente preenche 2 critérios maiores (artrite e cardite) e 2 menores (febre e VHS/PCR elevado); o PR prolongado não pode ser computado como menor porque a cardite foi usada como maior; conduta: Prednisona oral em dose plena.<br>\nC) O paciente preenche 1 critério maior (artrite) e 4 menores; conduta: Indometacina intravenosa.<br>\nD) O paciente possui apenas artrite infecciosa séptica com sopro inocente de hiperfluxo febril; conduta: Punção articular e Ceftriaxona venosa.<br>\nE) O paciente preenche critérios de Febre Reumática, porém a corticoterapia está contraindicada pelo risco de infecção ativa; conduta: Ibuprofeno oral."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Letra B.</strong><br>\n<strong>Comentário Detalhado:</strong> A questão exige o domínio fino das regras de exclusão mútua da diretriz AHA 2015. O paciente possui comprovação de infecção estreptocócica (ASLO 980 UI/mL com história de faringite há 3 semanas). Apresenta 2 Critérios Maiores: Artrite (poliartrite migratória de grandes articulações) e Cardite clínica (sopro holossistólico de regurgitação mitral por valvulite aguda associado a taquicardia desproporcional). Entre os Critérios Menores, temos a febre (37,9-38,0 ºC) e a elevação exuberante de reagentes de fase aguda (VHS 78 e PCR 12). <em>Regra de Exclusão da AHA:</em> Como a Cardite foi computada como Critério Maior, o prolongamento do intervalo PR ao ECG NÃO PODE ser computado como Critério Menor no mesmo indivíduo! Portanto, ele possui 2 Maiores e 2 Menores (e não 3 menores, tornando a alternativa A falsa). Quanto ao tratamento: diante da presença inequívoca de CARDITE clínica, o tratamento de escolha é a <strong>Corticoterapia Sistêmica com Prednisona oral (1 a 2 mg/kg/dia)</strong>, e não AAS isolado (que só deve ser usado em artrite pura sem cardite). A alternativa B é a única plenamente correta."
+        ],
+        [
+          "4",
+          "Questão 2 (ENARE / Residência Médica)"
+        ],
+        [
+          "p",
+          "Adolescente de 14 anos com diagnóstico prévio de Cardiopatia Reumática Crônica aos 10 anos de idade, apresentando lesão valvar residual estável consistente em dupla disfunção mitral leve a moderada, em acompanhamento ambulatorial regular. A mãe questiona o médico residente sobre até qual idade o jovem precisará continuar recebendo as injeções intramusculares de Penicilina Benzatina a cada 21 dias. De acordo com as diretrizes da Sociedade Brasileira de Pediatria e Ministério da Saúde, a resposta correta é:"
+        ],
+        [
+          "p",
+          "A) A profilaxia já deveria ter sido suspensa aos 12 anos, pois completou 2 anos do surto inicial.<br>\nB) Deve ser mantida até os 18 anos de idade ou 5 anos após o surto inicial, o que for mais longo.<br>\nC) Deve ser mantida até os 21 anos de idade ou 5 anos após o último surto, pois trata-se de um jovem sem insuficiência cardíaca crônica descompensada.<br>\nD) Deve ser mantida até os 25 anos de idade ou 10 anos após o último surto, já que a lesão valvar residual é apenas leve a moderada.<br>\nE) Deve ser mantida até os 40 anos de idade ou por toda a vida (se alto risco contínuo de exposição), em virtude da presença de lesão valvar reumática residual documentada."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Letra E.</strong><br>\n<strong>Comentário Detalhado:</strong> A recomendação oficial brasileira para profilaxia secundária em pacientes com Febre Reumática com acometimento cardíaco prévio e com <strong>lesão valvar residual permanente (independente de ser leve, moderada ou grave)</strong> estabelece a manutenção da penicilina benzatina a cada 21 dias até os <strong>40 anos de idade OU por um mínimo de 10 anos após o último surto</strong> (adotando-se o prazo que for mais longo). Em pacientes com risco epidemiológico continuado ou profissões de alto contato estreptocócico, recomenda-se fortemente a profilaxia por toda a vida. A alternativa C aplica-se apenas a pacientes sem cardite (artrite/coreia pura). A alternativa D aplica-se a pacientes que tiveram cardite na fase aguda, mas que CURARAM completamente sem deixar qualquer sequela valvar residual ao ecocardiograma. A alternativa E reflete precisamente o protocolo."
+        ],
+        [
+          "4",
+          "Questão 3 (SURCE / UNICAMP)"
+        ],
+        [
+          "p",
+          "Escolar de 7 anos, previamente saudável, inicia quadro de febre alta há 4 dias associada a poliartralgia inflamatória em joelhos e punhos. O pediatra solicita exames laboratoriais em posto de saúde em Fortaleza-CE (área classificada como de moderado a alto risco para febre reumática). Resultados: VHS 45 mm na 1ª hora; PCR 4,5 mg/dL; ASLO 650 UI/mL. O ecocardiograma transtorácico com Doppler revela folhetos da valva mitral finos e móveis, porém demonstra jato regurgitativo holossistólico em dois planos ortogonais com extensão &gt; 2 cm e velocidade de pico &gt; 3 m/s, preenchendo critérios técnicos de regurgitação mitral patológica subclínica. Ao exame cardiovascular, a ausculta cardíaca é absolutamente normal, sem sopros. Com base nas diretrizes da AHA 2015 para populações de moderado/alto risco, qual o diagnóstico e qual critério maior foi preenchido?"
+        ],
+        [
+          "p",
+          "A) Não preenche critérios para febre reumática, pois cardite subclínica ao ecocardiograma não é aceita como critério maior.<br>\nB) Preenche critérios para Febre Reumática Aguda: 2 critérios maiores (Cardite subclínica e Poliartralgia) associados a 2 menores (Febre e VHS/PCR elevado) e comprovação estreptocócica.<br>\nC) Preenche critérios para Febre Reumática Aguda: apenas 1 critério maior (Cardite) e 3 critérios menores (Poliartralgia, Febre e VHS/PCR elevado) e comprovação estreptocócica.<br>\nD) Quadro compatível exclusivamente com lúpus neonatal induzido por anticorpos anti-Ro/SSA maternos.<br>\nE) Diagnóstico de endocardite infecciosa bacteriana aguda subjacente."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Letra B (ou C em interpretações conservadoras, mas B é a grande inovação da AHA 2015).</strong><br>\n<strong>Comentário Detalhado:</strong> Esta é uma das questões mais inteligentes e contemporâneas sobre Febre Reumática. Em <strong>populações de moderado/alto risco (como o Brasil)</strong>, a revisão da AHA 2015 introduziu duas mudanças cruciais: 1) A <strong>Cardite Subclínica ao ecocardiograma</strong> é formalmente reconhecida como CRITÉRIO MAIOR; 2) Em populações de alto risco, a <strong>Poliartralgia (se excluídas outras causas) pode ser aceita como CRITÉRIO MAIOR</strong> (ou como alternativa à poliartrite). Como temos Cardite subclínica (Maior) + Poliartralgia (Maior em alto risco) + Febre e Reagentes de fase aguda elevados (Menores) + ASLO positivo, o diagnóstico de Febre Reumática aguda está solidamente fechado com 2 critérios maiores! Mesmo que a banca optasse por considerar a poliartralgia como menor, o paciente ainda preencheria 1 Maior (Cardite subclínica) + 3 Menores (Artralgia, febre e provas inflamatórias), fechando a regra diagnóstica de 1M + 2m. A resposta B sintetiza a moderna conceituação da AHA 2015."
+        ]
+      ]
+    ],
+    [
+      "cardiopatia-reumatica-cronica-e-valvopatias",
+      0,
+      [
+        [
+          "2",
+          "7. Cardiopatia Reumática Crônica: História Natural, Lesões Valvares Definitivas e Abordagem Cirúrgica"
+        ],
+        [
+          "p",
+          "A Cardiopatia Reumática Crônica (CRC) representa o desfecho tardio, incapacitante e cumulativo dos surtos recorrentes de Febre Reumática aguda que acometeram o endocárdio valvar ao longo dos anos. Diferente da fase aguda — em que predomina o edema tissular, a inflamação exsudativa da lâmina própria e a regurgitação valvar aguda —, a fase crônica caracteriza-se por um processo contínuo e progressivo de remodelação tecidual patológica, proliferação miofibroblástica, retração cicatricial e deposição distrófica de cristais de cálcio."
+        ],
+        [
+          "p",
+          "Estima-se que mais de 39 milhões de pessoas vivam atualmente com Cardiopatia Reumática Crônica no mundo, resultando em mais de 300.000 mortes anuais, concentradas quase que exclusivamente em nações em desenvolvimento ou em bolsões de vulnerabilidade socioeconômica de países de renda média. No Brasil, a CRC continua sendo responsável pela grande maioria das cirurgias de troca valvar e plastia cirúrgica realizadas pelo Sistema Único de Saúde (SUS) em pacientes jovens com idade inferior a 45 anos."
+        ],
+        [
+          "3",
+          "7.1. Patogênese da Deformidade Valvar Crônica"
+        ],
+        [
+          "p",
+          "O dano valvar crônico decorre da combinação de dois mecanismos fisiopatológicos complementares:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Reatividade Imunológica Crônica Subclínica:</strong> Mesmo na ausência de novos surtos clínicos evidentes de Febre Reumática, títulos baixos de anticorpos e clones persistentes de linfócitos T infiltrados no estroma valvar mantêm uma síntese lenta e sustentada de citocinas profibróticas (TGF-beta, TNF-alfa e interleucinas 1 e 6). Essa atividade estimula as células intersticiais valvares (VICs) a se transdiferenciarem em osteoblastos e miofibroblastos ativos.",
+            "<strong>Trauma Hemodinâmico Mecânico Contínuo:</strong> A turbulência sanguínea gerada por uma valva ligeiramente incompetente ou espessada promove estresse de cisalhamento constante contra o endotélio valvar. Esse traumatismo mecânico diário atua como estímulo mecânico para microtromboses de repetição, neovascularização patológica e calcificação progressiva, gerando fusão de comissuras, espessamento das cúspides e encurtamento espástico das cordas tendíneas."
+          ]
+        ],
+        [
+          "3",
+          "7.2. As Valvopatias Reumáticas Específicas"
+        ],
+        [
+          "4",
+          "A. Estenose Mitral Reumática (O Protótipo da Cicatrização Reumática)"
+        ],
+        [
+          "p",
+          "A Estenose Mitral é a lesão valvar mais típica e característica da etiologia reumática crônica, sendo virtualmente quase 100% dos casos de estenose mitral no adulto jovem secundários à Febre Reumática prévia. O intervalo de latência entre o surto agudo na infância e o desenvolvimento de estenose mitral sintomática varia habitualmente de 10 a 20 anos em países ocidentais, embora em países com alta virulência estreptocócica (como Índia e certas regiões brasileiras) possa se manifestar de forma fulminante ainda na adolescência (\"estenose mitral juvenil\")."
+        ],
+        [
+          "p",
+          "<strong>Anatomia e Fisiopatologia:</strong> A fusão das comissuras valvares anterolateral e posteromedial, associada ao espessamento e à fusão das cúspides com calcificação e retração do aparelho subvalvar (cordas tendíneas fundidas em blocos fibrosos), transforma a valva mitral em um funil rígido com orifício em \"boca de peixe\" ou \"casa de botão\". A área valvar mitral normal (4 a 6 cm²) reduz-se criticamente:"
+        ],
+        [
+          "u",
+          [
+            "Estenose Mitral Leve: Área valvar &gt; 1,5 cm² (gradiente transvalvar médio &lt; 5 mmHg).",
+            "Estenose Mitral Moderada: Área valvar entre 1,0 e 1,5 cm² (gradiente médio 5 a 10 mmHg).",
+            "Estenose Mitral Grave / Crítica: Área valvar &lt; 1,0 cm² (gradiente médio &gt; 10 mmHg; tempo de meia-pressão PHT &gt;= 220 ms)."
+          ]
+        ],
+        [
+          "p",
+          "Para manter o fluxo sanguíneo atravessando um orifício estenosado durante a diástole ventricular, a pressão no interior do átrio esquerdo eleva-se dramaticamente (de 5-8 mmHg fisiológicos para 25 a 35 mmHg). Essa hipertensão atrial esquerda crônica transmite-se retrogradamente às veias pulmonares, aos capilares alveolares e à circulação arterial pulmonar, culminando em <strong>Hipertensão Venocapilar Pulmonar e Hipertensão Pulmonar pré-capilar reativa</strong>. O ventrículo direito passa a ejetar contra uma árvore pulmonar rígida, desenvolvendo hipertrofia concêntrica e dilatação com eventual falência do VD e regurgitação tricúspide funcional secundária."
+        ],
+        [
+          "4",
+          "A Tétrade Auscultatória Clássica da Estenose Mitral Reumática"
+        ],
+        [
+          "o",
+          [
+            "<strong>Primeira Bulha Hiperfonética (B1 Metálica):</strong> O gradiente de pressão entre AE e VE mantém as cúspides mitrais amplamente afastadas e tensionadas até o final da diástole; com a sístole ventricular abrupta, as cúspides rígidas colidem violentamente, produzindo uma B1 estalante no ápice cardíaco. Na fase tardia, se a valva calcificar maciçamente e perder qualquer mobilidade, B1 torna-se hipofonética.",
+            "<strong>Estalido de Abertura Mitral (EA):</strong> Ocorre na protodiástole, logo após o componente A2 da segunda bulha cardíaca. Expressa a interrupção súbita e mecânica do movimento de abertura das cúspides espessadas que se projetam para dentro do VE sob alta pressão atrial. <em>Regra de Ouro:</em> Quanto mais curta for a distância cronológica entre A2 e o Estalido de Abertura (intervalo A2-EA curto &lt; 80 ms), maior é a pressão em átrio esquerdo e mais grave é a estenose mitral!",
+            "<strong>Ruflar Diastólico de Baixa Frequência:</strong> Auscultado no ápice cardíaco com a campânula do estetoscópio, com o paciente em decúbito lateral esquerdo (posição de Pachon). Inicia-se imediatamente após o estalido de abertura, com intensidade máxima na fase de enchimento ventricular rápido (mesodiástole).",
+            "<strong>Reforço Pré-Sistólico:</strong> Crescendo auscultatório que ocorre no final da diástole imediatamente antes de B1. Decorre da contração ativa do átrio esquerdo, que impulsiona o volume residual através da valva estenosada com turbilhonamento acelerado. <em>Atenção de Prova:</em> O reforço pré-sistólico depende exclusivamente da sístole atrial; portanto, se o paciente desenvolver <strong>Fibrilação Atrial</strong>, o reforço pré-sistólico DESAPARECE completamente!"
+          ]
+        ],
+        [
+          "p",
+          "<strong>Complicações Críticas da Estenose Mitral:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fibrilação Atrial (FA) e Fenômenos Tromboembólicos:</strong> A sobrecarga pressórica e volêmica crônica induz dilatação aneurismática maciça do átrio esquerdo (diâmetro frequentemente &gt; 50-60 mm), levando a fibrose intersticial do miocárdio atrial e perda da arquitetura condutora. Instala-se fibrilação atrial permanente em até 40% a 50% dos pacientes. A perda da contração atrial e a estase sanguínea na aurécola esquerda propiciam a formação de trombos murais intracavitários gigantes com altíssimo risco de embolia sistêmica (Acidente Vascular Encefálico isquêmico embólico, isquemia mesentérica aguda e oclusão arterial aguda de membros). <em>Exigência:</em> Todo paciente com estenose mitral reumática moderada a grave e FA tem indicação formal de anticoagulação oral com varfarina (antagonistas da vitamina K mantendo RNI entre 2,0 e 3,0), sendo os anticoagulantes orais de ação direta (DOACs) não recomendados pelas diretrizes clássicas na estenose mitral reumática moderada a grave.",
+            "<strong>Edema Agudo de Pulmão Hemodinâmico:</strong> Qualquer evento que aumente a frequência cardíaca (taquicardia sinusal por febre, infecção, anemia, hipertireoidismo ou gestação) encurta criticamente o tempo de enchimento diastólico ventricular. Como o AE não tem tempo hábil para esvaziar através da estenose, a pressão venocapilar pulmonar dispara para além de 30-35 mmHg, superando a pressão oncótica plasmática e extravasando líquido para os alvéolos pulmonares."
+          ]
+        ],
+        [
+          "4",
+          "B. Insuficiência Mitral Reumática Crônica"
+        ],
+        [
+          "p",
+          "Caracteriza-se pela perda da coaptação sistólica das cúspides decorrente de fibrose, retração e calcificação dos folhetos ou das cordas tendíneas. O ventrículo esquerdo sofre sobrecarga volumétrica crônica: durante a sístole, ejeta sangue simultaneamente para a aorta (alta impedância) e para o átrio esquerdo (baixa impedância). O VE dilata-se progressivamente (hipertrofia excêntrica), mantendo a fração de ejeção aparentemente preservada por muitos anos. Com o tempo, sobrevêm disfunção sistólica miocárdica e queda da fração de ejeção, momento em que a intervenção cirúrgica torna-se mandatória."
+        ],
+        [
+          "4",
+          "C. Lesões Valvares Aórticas Reumáticas"
+        ],
+        [
+          "p",
+          "A <strong>Insuficiência Aórtica Crônica</strong> cursa com refluxo diastólico maciço da aorta para o VE, gerando pressão de pulso divergente (pressão arterial sistólica elevada e diastólica próxima de zero ou muito baixa) e os clássicos estigmas periféricos de hiperdinamia circulatória: sinal de Musset (oscilação da cabeça com as pulsações cardíacas), pulso de Corrigan em martelo d'água, sinal de Müller (pulsação sistólica da úvula) e sinal de Quincke (pulsação capilar visível sob compressão leve da lâmina ungueal). A <strong>Estenose Aórtica Reumática</strong> resulta da fusão cicatricial das três comissuras com calcificação que se inicia nas bordas livres das cúspides em direção à base (ao contrário da estenose aórtica calcificada senil degenerativa, cuja calcificação inicia-se na base das cúspides poupando as comissuras)."
+        ],
+        [
+          "3",
+          "7.3. Intervenção Percutânea e Cirúrgica nas Valvopatias Reumáticas"
+        ],
+        [
+          "p",
+          "Na Estenose Mitral reumática grave sintomática com anatomia favorável (folhetos móveis, sem calcificação exuberante das comissuras, sem espessamento subvalvar severo e na ausência de trombo na aurécola esquerda e ausência de regurgitação mitral concomitante moderada ou grave), o procedimento de escolha absoluta é a <strong>Valvoplastia Mitral Percutânea por Balão de Inoue</strong>. A favorabilidade anatômica é quantificada pelo clássico <strong>Escore Ecocardiográfico de Wilkins</strong> (avalia 4 parâmetros: mobilidade das cúspides, espessamento dos folhetos, calcificação e acometimento do aparelho subvalvar, variando de 4 a 16 pontos; escores &lt;= 8 preveem excelente sucesso hemodinâmico por via percutânea)."
+        ],
+        [
+          "p",
+          "Nos pacientes com escore de Wilkins desfavorável (&gt; 8 a 10), presença de insuficiência mitral associada ou trombo atrial esquerdo não dissolvido por anticoagulação, está indicada a <strong>Cirurgia Cardíaca Aberta para Troca Valvar Mitral por Prótese Mecânica ou Biológica</strong> (ou comissurotomia/plastia cirúrgica em centros de excelência). Em mulheres jovens em idade reprodutiva, a escolha entre prótese mecânica (que exige anticoagulação perpétua com varfarina, droga teratogênica no primeiro trimestre e indutora de hemorragia fetal) e biológica (que não requer anticoagulação plena, porém sofre degeneração tecidual acelerada em jovens, exigindo reoperações futuras) representa uma decisão clínica complexa e compartilhada."
+        ]
+      ]
+    ],
+    [
+      "protocolos-de-profilaxia-primaria-e-impacto-saude-publica",
+      0,
+      [
+        [
+          "2",
+          "8. Profilaxia Primária, Conduta na Faringoamigdalite Aguda e Impacto em Saúde Pública"
+        ],
+        [
+          "p",
+          "A erradicação da Febre Reumática como problema de saúde pública depende, em última análise, da execução eficaz da <strong>Profilaxia Primária</strong>. Define-se profilaxia primária como o diagnóstico oportuno e o tratamento antimicrobiano adequado e completo de todo episódio de faringoamigdalite estreptocócica aguda em crianças e adolescentes antes que se instale a resposta autoimune primária."
+        ],
+        [
+          "4",
+          "A Janela de Oportunidade Terapêutica da Profilaxia Primária"
+        ],
+        [
+          "p",
+          "Estudos clínicos clássicos demonstraram que o tratamento antibiótico adequado da faringoamigdalite pelo <em>Streptococcus pyogenes</em> é <strong>capaz de prevenir quase 100% dos casos de Febre Reumática se for iniciado em até 9 dias após o início dos primeiros sintomas de dor de garganta</strong>. Portanto, o médico na Atenção Primária à Saúde ou na UPA dispõe de uma margem segura de tempo para avaliar criteriosamente o quadro clínico, realizar testes rápidos ou colher culturas de orofaringe antes de prescrever antimicrobianos desnecessários, sem com isso elevar o risco de Febre Reumática."
+        ],
+        [
+          "3",
+          "8.1. Estratificação Clínica da Faringoamigdalite: Escore de Centor Modificado por McIsaac"
+        ],
+        [
+          "p",
+          "A maioria das faringoamigdalites na infância e adolescência possui etiologia viral (adenovírus, enterovírus, vírus sincicial respiratório, rinovírus, vírus Epstein-Barr). Apenas 15% a 30% das faringites agudas em crianças entre 5 e 15 anos são causadas pelo <em>Streptococcus pyogenes</em>. Em crianças com idade inferior a 3 anos, a faringite estreptocócica é excepcional (&lt; 5%), sendo praticamente isenta de risco de febre reumática. O uso de escores clínicos validados orienta a tomada de decisão:"
+        ],
+        [
+          "t",
+          [
+            "Critério Clínico do Escore de McIsaac",
+            "Pontuação Atribuída"
+          ],
+          [
+            [
+              "Febre referida ou aferida &gt; 38,0 ºC",
+              "+ 1 ponto"
+            ],
+            [
+              "Ausência completa de tosse e coriza",
+              "+ 1 ponto"
+            ],
+            [
+              "Linfonodomegalia cervical anterior dolorosa",
+              "+ 1 ponto"
+            ],
+            [
+              "Exsudato amigdaliano purulento ou edema importante",
+              "+ 1 ponto"
+            ],
+            [
+              "Idade entre 3 e 14 anos",
+              "+ 1 ponto"
+            ],
+            [
+              "Idade entre 15 e 44 anos",
+              "0 ponto"
+            ],
+            [
+              "Idade &gt;= 45 anos",
+              "- 1 ponto"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Conduta Baseada na Pontuação de McIsaac:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Escore &lt;= 1 ponto:</strong> Risco estreptocócico &lt; 5% a 10%. Não testar e NÃO prescrever antibióticos; conduta puramente sintomática.",
+            "<strong>Escore 2 a 3 pontos:</strong> Risco intermediário (15% a 30%). Realizar teste rápido antigênico (TRDA) ou colher swab de orofaringe para cultura; tratar com antibiótico apenas se o teste for positivo.",
+            "<strong>Escore &gt;= 4 pontos:</strong> Risco elevado (&gt; 50%). Em locais onde não há disponibilidade de teste rápido ou cultura (realidade frequente na APS brasileira), está autorizado o tratamento empírico com antibióticos para garantia da profilaxia primária da febre reumática."
+          ]
+        ],
+        [
+          "3",
+          "8.2. Esquemas Farmacológicos da Profilaxia Primária"
+        ],
+        [
+          "p",
+          "A droga de escolha absoluta para profilaxia primária é a <strong>Penicilina G Benzatina por via intramuscular em dose única</strong> (600.000 UI se &lt;= 20-27 kg; 1.200.000 UI se &gt; 20-27 kg). As vantagens são inequívocas: garantia de 100% de adesão terapêutica imediata sem depender da tomada domiciliar de comprimidos por 10 dias e custo irrisório. Quando a via oral for preferida pela família e houver certeza de adesão estrita, utiliza-se <strong>Amoxicilina oral (50 mg/kg/dia 1x ao dia ou dividida em 2 tomadas por 10 dias inteiros)</strong> ou Penicilina V potássica oral. Nos alérgicos, utiliza-se Azitromicina (12 mg/kg/dia por 5 dias) ou Claritromicina (15 mg/kg/dia por 10 dias)."
+        ],
+        [
+          "4",
+          "Aviso Crítico de Farmacologia: O Erro Grave dos Sintomáticos e Sulfas"
+        ],
+        [
+          "p",
+          "1. As <strong>Sulfas (Sulfadiazina e Sulfametoxazol-Trimetoprima) NÃO SERVEM para o tratamento agudo da faringoamigdalite nem para profilaxia primária</strong>, pois possuem taxas inaceitavelmente altas de falha de erradicação do estreptococo da orofaringe, embora a sulfadiazina seja excelente para a profilaxia secundária contínua!<br>\n  2. O tratamento antimicrobiano precoce da faringoamigdalite previne com sucesso a Febre Reumática, <strong>MAS NÃO PREVINE a ocorrência de Glomerulonefrite Difusa Aguda Pós-Estreptocócica (GNPE)</strong>, cujo desenvolvimento imune independe do uso de antibióticos na infecção inicial."
+        ]
+      ]
+    ],
+    [
+      "protocolo-de-anticoagulacao-gravidez-e-desafios-avancados",
+      0,
+      [
+        [
+          "2",
+          "9. Situações Especiais: Febre Reumática na Gestação, Anticoagulação e Desafios Diagnósticos Contemporâneos"
+        ],
+        [
+          "p",
+          "O manejo da Febre Reumática e de sua sequela mais devastadora — a Cardiopatia Reumática Crônica — atinge o ápice de sua complexidade clínica diante de situações especiais, como o ciclo gravídico-puerperal, o manejo meticuloso da anticoagulação plena na vigência de próteses mecânicas e a diferenciação de formas atípicas da doença em adolescentes e adultos jovens. Esta seção final consolida os protocolos de medicina baseada em evidências adotados pelas principais sociedades internacionais e nacionais de cardiologia e ginecologia/obstetrícia (AHA/ACC, ESC, SBC e FEBRASGO)."
+        ],
+        [
+          "3",
+          "9.1. A Gestante Portadora de Estenose Mitral Reumática"
+        ],
+        [
+          "p",
+          "A gravidez representa o teste de estresse hemodinâmico mais severo a que o sistema cardiovascular feminino pode ser submetido ao longo da vida reprodutiva. Durante a gestação fisiológica normal, ocorrem três adaptações cardiovasculares fundamentais a partir do final do primeiro trimestre:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Aumento Maciço do Débito Cardíaco e Volemia:</strong> O volume plasmático circulante expande-se em 40% a 50%, com elevação proporcional do débito cardíaco materno de até 30% a 50%, atingindo o pico entre a 28ª e a 32ª semana gestacional.",
+            "<strong>Aumento da Frequência Cardíaca Materna de Repouso:</strong> Ocorre taquicardia sinusal fisiológica com elevação basal de 10 a 20 batimentos por minuto em relação ao estado pré-gravídico.",
+            "<strong>Redução da Resistência Vascular Sistêmica:</strong> Queda precoce da RVS mediada por progesterona, óxido nítrico e circulação útero-placentária de baixa resistência."
+          ]
+        ],
+        [
+          "p",
+          "<strong>O Desastre Hemodinâmico na Estenose Mitral:</strong> Em uma mulher hígida, essas alterações são perfeitamente toleradas. Contudo, na gestante portadora de Estenose Mitral Reumática moderada a grave, essa tríade fisiológica atua como um gatilho mecânico explosivo:"
+        ],
+        [
+          "o",
+          [
+            "O aumento da volemia sobrecarrega o átrio esquerdo, que já opera no limite de sua complacência para transpor o orifício valvar estreito.",
+            "A taquicardia materna encurta criticamente a diástole cardíaca — a única fase do ciclo cardíaco na qual o sangue consegue fluir do átrio esquerdo para o ventrículo esquerdo através da valva mitral.",
+            "Como consequência, a pressão venocapilar pulmonar dispara agudamente para além de 30 a 35 mmHg, superando a pressão coloidosmótica do plasma e deflagrando <strong>Edema Agudo de Pulmão (EAP) cardiogênico com insuficiência respiratória hipoxêmica catastrófica</strong>, tipicamente no terceiro trimestre ou durante o esforço expulsivo do trabalho de parto."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Manejo Clínico e Farmacológico da Gestante Cardiopata Reumática:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Controle Rigoroso da Frequência Cardíaca:</strong> O pilar central do tratamento clínico é o controle cronotrópico para prolongar o tempo de enchimento diastólico. Os <strong>Betabloqueadores orais (com destaque para o Metoprolol ou Propranolol)</strong> são os fármacos de primeira escolha, mantendo a FC materna de repouso preferencialmente entre 60 e 70 bpm. O atenolol deve ser evitado pelo risco documentado de restrição de crescimento intrauterino e baixo peso ao nascer.",
+            "<strong>Restrição de Sal e Uso Cauteloso de Diuréticos:</strong> A furosemida oral pode ser utilizada em baixas doses nos casos de congestão pulmonar, monitorando-se rigorosamente para evitar hipovolemia súbita que reduza a perfusão útero-placentária e induza sofrimento fetal agudo.",
+            "<strong>Indicação de Intervenção Valvar de Emergência durante a Gestação:</strong> Naquelas gestantes que permanecem refratárias ao tratamento medicamentoso máximo, mantendo classe funcional III ou IV da NYHA ou episódios de congestão pulmonar repetidos, está indicada a <strong>Valvoplastia Mitral Percutânea por Balão</strong>. O procedimento deve ser executado idealmente a partir do segundo trimestre (após a organogênese completa), com proteção abdominal rígida com manta de chumbo e tempo de escopia radiológica minimizado, guiado preferencialmente por ecocardiograma transesofágico. A cirurgia cardíaca aberta com circulação extracorpórea (CEC) é reservada exclusivamente para casos de falha da valvoplastia com risco iminente de morte materna, pois a CEC associa-se a taxas de perda fetal de 20% a 30%."
+          ]
+        ],
+        [
+          "3",
+          "9.2. Protocolo de Anticoagulação na Gestante com Prótese Valvar Mecânica"
+        ],
+        [
+          "p",
+          "O manejo da gestante portadora de prótese mecânica representa um dos maiores dilemas éticos e terapêuticos da cardiologia mundial. A gestação é um estado protrombótico pronunciado (hiperfibrinogenemia e resistência à proteína C ativada), elevando em mais de cinco vezes o risco de trombose aguda obstrutiva da prótese valvar mecânica. Ao mesmo tempo, os fármacos anticoagulantes disponíveis impõem riscos severos à mãe e ao concepto:"
+        ],
+        [
+          "t",
+          [
+            "Fármaco Anticoagulante",
+            "Eficácia Antitrombótica Materna",
+            "Riscos e Efeitos Adversos Fetais / Teratogênicos"
+          ],
+          [
+            [
+              "<strong>Varfarina Sódica (Antagonista da Vitamina K)</strong>",
+              "<strong>Excelente / Padrão-Ouro</strong> (menor incidência de trombose de prótese e morte materna)",
+              "<strong>Embriopatia Warfarínica</strong> no 1º trimestre (hipoplasia nasal, pontilhado epifisário ósseo / condrodisplasia puntata, microcefalia, atrofia óptica e retardo mental). Risco dose-dependente: baixo se dose &lt;= 5 mg/dia; elevado se &gt; 5 mg/dia. Risco de hemorragia intracraniana fetal no parto."
+            ],
+            [
+              "<strong>Heparina de Baixo Peso Molecular (HBPM - Enoxaparina)</strong>",
+              "Intermediária a Boa (requer monitorização laboratorial estrita do <strong>nível de Anti-Fator Xa</strong>)",
+              "<strong>Não ultrapassa a barreira placentária; risco teratogênico NULO</strong> para o feto. Contudo, se os níveis de anti-Xa não forem mantidos na faixa terapêutica rigorosa, o risco de trombose de prótese e óbito materno é substancialmente maior que com varfarina."
+            ],
+            [
+              "<strong>Anticoagulantes Orais Diretos (DOACs - Rivaroxabana, Apixabana, Dabigatrana)</strong>",
+              "<strong>CONTRAINDICADOS</strong>",
+              "Formalmente contraindicados em próteses valvares mecânicas em qualquer paciente (ensaios RE-ALIGN demonstraram excesso de trombose e sangramento) e contraindicados na gestação."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "O Algoritmo Estruturado de Anticoagulação no Ciclo Gravídico"
+        ],
+        [
+          "o",
+          [
+            "<strong>Primeiro Trimestre (6ª à 12ª semana de gestação — Janela de Organogênese):</strong>\n      <ul>\n        <li><em>Se a dose diária de varfarina necessária para manter o RNI terapêutico for &lt;= 5 mg/dia:</em> Pode-se discutir a manutenção da própria varfarina mediante consentimento esclarecido, pois o risco de embriopatia com doses baixas é inferior a 1% a 2%, garantindo a melhor proteção antitrombótica à mãe.",
+            "<em>Se a dose de varfarina for &gt; 5 mg/dia ou por preferência materna:</em> Substituir a varfarina por <strong>Heparina de Baixo Peso Molecular (Enoxaparina) subcutânea em dose plena ajustada pelo peso (1 mg/kg de 12 em 12 horas)</strong>, com controle laboratorial obrigatório do nível de <strong>Anti-Fator Xa coletado rigorosamente 4 a 6 horas após a dose da manhã, mantendo-o entre 0,8 e 1,2 UI/mL</strong>.",
+            "<strong>Segundo e Terceiro Trimestres (da 13ª até a 36ª semana):</strong>\n      <ul>\n        <li>A varfarina é a droga mais segura e recomendada para a proteção materna contra trombose de prótese nesse período, mantendo o RNI rigorosamente na faixa terapêutica (2,5 a 3,5 para prótese mitral mecânica).",
+            "<strong>Final da Gestação (a partir da 36ª semana) e Pré-Parto:</strong>\n      <ul>\n        <li>Suspender a varfarina pelo menos 2 a 3 semanas antes da data provável do parto para permitir a metabolização hepática do fármaco pelo feto (evitando hemorragia intracraniana fetal durante o trabalho de parto).",
+            "Substituir por Enoxaparina plena subcutânea com monitorização de anti-Xa.",
+            "Nas últimas 24 a 36 horas antes do parto programado (preferencialmente parto cesáreo eletivo em ambiente terciário ou parto vaginal com analgesia peridural precoce e encurtamento do período expulsivo), suspende-se a HBPM e inicia-se <strong>Heparina Não Fracionada (HNF) intravenosa contínua</strong>, a qual é suspensa exatamente 4 a 6 horas antes da incisão cirúrgica ou anestesia regional (com TTPa normalizado)."
+          ]
+        ],
+        [
+          "3",
+          "9.3. Desafios Diagnósticos: Febre Reumática no Adulto e Artrite Pós-Estreptocócica"
+        ],
+        [
+          "p",
+          "Embora a Febre Reumática seja primariamente uma afecção da idade escolar (5 a 15 anos), surtos agudos de primo-infecção ou recidivas tardias podem ocorrer em adultos jovens entre 18 e 35 anos, particularmente em profissionais que atuam em creches, escolas ou unidades de saúde de áreas carentes. No adulto, as manifestações clínicas exibem peculiaridades que desafiam o clínico:"
+        ],
+        [
+          "u",
+          [
+            "A <strong>Coreia de Sydenham e o Eritema Marginado são extraordinariamente raros no adulto</strong> (&lt; 0,5% a 1% dos casos).",
+            "A artrite no adulto tende a ser mais simétrica e aditiva, podendo acometer também punhos, tornozelos e articulações periféricas, mimetizando quadros precoces de Artrite Reumatoide soronegativa ou Lúpus Eritematoso Sistêmico.",
+            "A presença de cardite no primeiro surto do adulto é menos frequente (20% a 30%), mas quando ocorre uma recidiva sobre uma valva previamente lesada, a descompensação hemodinâmica pode ser fulminante."
+          ]
+        ],
+        [
+          "p",
+          "<strong>A Entidade Controvertida: Artrite Reativa Pós-Estreptocócica (ARPE):</strong> Trata-se de uma síndrome de artrite estéril desencadeada por infecção recente pelo <em>Streptococcus pyogenes</em> que não preenche os critérios diagnósticos estritos de Jones. Distingue-se da artrite da Febre Reumática clássica por:"
+        ],
+        [
+          "o",
+          [
+            "<em>Período de latência muito curto:</em> Surge habitualmente apenas 3 a 10 dias após a dor de garganta (enquanto a FR clássica surge 2 a 4 semanas depois).",
+            "<em>Padrão articular persistente e aditivo:</em> Acomete grandes e pequenas articulações e o esqueleto axial, durando várias semanas ou meses sem caráter migratório típico.",
+            "<em>Resposta pobre ou lenta aos salicilatos:</em> Não exibe a resolução miraculosa em 24-48 horas típica do AAS na FR.",
+            "<em>Ausência de cardite durante o surto agudo.</em>"
+          ]
+        ],
+        [
+          "p",
+          "<em>Conduta Consensual:</em> Diante da dificuldade de excluir com 100% de certeza um primeiro surto atípico de Febre Reumática e considerando relatos de cardite tardia em alguns pacientes, a Sociedade Brasileira de Pediatria recomenda que os pacientes com diagnóstico de ARPE recebam profilaxia secundária com penicilina benzatina por pelo menos 1 a 2 anos, associada a monitorização ecocardiográfica semestral minuciosa."
+        ]
+      ]
+    ],
+    [
+      "sintese-final-e-checklist-de-alta-retencao-febre-reumatica",
+      0,
+      [
+        [
+          "2",
+          "10. Pulo do Gato LURIA e Checklist de Alta Retenção para Concursos Médicos"
+        ],
+        [
+          "p",
+          "Para garantir a consolidação mnemônica e o acerto imediato de qualquer questão de concurso ou prova de título de especialista, reunimos os 12 mandamentos inegociáveis da Febre Reumática:"
+        ],
+        [
+          "4",
+          "Os 12 Mandamentos de Ouro da Febre Reumática (LURIA Review)"
+        ],
+        [
+          "o",
+          [
+            "<strong>Sítio Obrigatório:</strong> Febre Reumática SÓ surge após faringoamigdalite bacteriana por <em>Streptococcus pyogenes</em>. Infecção de pele (impetigo, erisipela) NUNCA deflagra febre reumática (mas deflagra glomerulonefrite pós-estreptocócica).",
+            "<strong>População de Risco no Brasil:</strong> O Brasil é classificado pela AHA 2015 como região de MODERADO A ALTO RISCO. Portanto, monoartrite, poliartrite não migratória e poliartralgia são aceitas como CRITÉRIOS MAIORES, a febre conta a partir de 38,0 ºC e o corte do VHS é &gt;= 30 mm na 1ª hora.",
+            "<strong>A Cardite Subclínica:</strong> A regurgitação valvar mitral/aórtica patológica demonstrada ao ecocardiograma com Doppler em um paciente sem sopro audível é formalmente um CRITÉRIO MAIOR. O ecocardiograma é obrigatório em todos os casos suspeitos.",
+            "<strong>Regras de Exclusão Mútua:</strong> Se artrite/artralgia for usada como Critério Maior, não pontue artralgia como menor. Se a cardite for computada como Maior, não pontue o prolongamento do intervalo PR ao ECG como menor.",
+            "<strong>As Duas Exceções de Jones:</strong> A Coreia de Sydenham isolada e a Cardite Indolente de início tardio dispensam outros critérios e dispensam a comprovação laboratorial de infecção estreptocócica prévia.",
+            "<strong>A Prova do AAS:</strong> A artrite reumática desaparece dramaticamente em 24 a 48 horas após a introdução de AAS em doses plenas (75 a 100 mg/kg/dia). Dor persistente após 3 dias afasta o diagnóstico de FR.",
+            "<strong>Corticoterapia na Cardite:</strong> Na presença de cardite clínica ou subclínica, o AAS está proscrito como monoterapia inicial. O tratamento obrigatório é CORTICOTERAPIA (Prednisona oral 1 a 2 mg/kg/dia ou pulsoterapia com metilprednisolona se cardite grave). Iniciar AAS no desmame para prevenir rebote inflamatório.",
+            "<strong>Erradicação Universal:</strong> Todo paciente com febre reumática deve receber Penicilina G Benzatina IM dose única para erradicar o foco amigdaliano, mesmo com orofaringe assintomática e swab negativo.",
+            "<strong>Intervalo Brasileiro da Profilaxia:</strong> No Brasil, a profilaxia secundária é administrada rigorosamente A CADA 21 DIAS (3 semanas) e não a cada 28 dias.",
+            "<strong>Tempo de Profilaxia Secundária:</strong>\n      <ul>\n        <li>Sem cardite: até 21 anos ou 5 anos do surto.",
+            "Com cardite sem sequela residual: até 25 anos ou 10 anos do surto.",
+            "Com cardite e sequela valvar residual: até 40 anos ou 10 anos do surto (ou vitalícia em alto risco contínuo).",
+            "Pós-cirurgia valvar protética: VITALÍCIA (por toda a vida).",
+            "<strong>As Sulfas Não Tratam Faringite:</strong> Sulfadiazina serve para a profilaxia secundária contínua nos alérgicos à penicilina, mas NÃO SERVE para o tratamento da faringite aguda nem para profilaxia primária.",
+            "<strong>Profilaxia Primária Previne FR, mas Não GNPE:</strong> O tratamento precoce da faringoamigdalite em até 9 dias previne a febre reumática, mas não impede o desenvolvimento da glomerulonefrite pós-estreptocócica."
+          ]
+        ]
+      ]
+    ]
+  ]
+}

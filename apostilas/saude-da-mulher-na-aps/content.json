@@ -1,0 +1,1013 @@
+{
+  "v": 2,
+  "s": "saude-da-mulher-na-aps",
+  "t": "Saúde da Mulher na Atenção Primária à Saúde",
+  "p": "Saúde da Mulher na Atenção Primária à Saúde — Livro-Texto LURIA",
+  "d": "Tratado de Saúde da Mulher na Atenção Básica: Diretrizes da PNAISM, Método Clínico Centrado na Pessoa, rastreamento de câncer de colo de útero e mama (MS/INCA), critérios médicos de elegibilidade contraceptiva da OMS e nova Lei de Planejamento Familiar (Lei 14.443/2022), rotina de pré-natal compartilhado, abordagem da violência doméstica e sexual segundo a Lei Maria da Penha com profilaxia de ISTs e notificação compulsória, manejo do climatério e atenção à saúde da mulher negra, indígena e LGBTQIA+.",
+  "a": "Medicina Preventiva",
+  "m": "Medicina de Família e Comunidade / Ginecologia e Obstetrícia na APS",
+  "h": [
+    "Apostila LURIA",
+    "Saúde da Mulher na Atenção Primária à Saúde",
+    "Tratado de Saúde da Mulher na Atenção Básica: Diretrizes da PNAISM, Método Clínico Centrado na Pessoa, rastreamento de câncer de colo de útero e mama (MS/INCA), critérios médicos de elegibilidade contraceptiva da OMS e nova Lei de Planejamento Familiar (Lei 14.443/2022), rotina de pré-natal compartilhado, abordagem da violência doméstica e sexual segundo a Lei Maria da Penha com profilaxia de ISTs e notificação compulsória, manejo do climatério e atenção à saúde da mulher negra, indígena e LGBTQIA+.",
+    [
+      "Área: Medicina Preventiva",
+      "Matéria: Medicina de Família e Comunidade / Ginecologia e Obstetrícia na APS",
+      "Tema: Saúde da Mulher na Atenção Primária à Saúde"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "fundamentos-e-evolucao-historica-pnaism",
+      "1. Fundamentos Históricos, Diretrizes e Marcos Políticos da PNAISM na Atenção Primária"
+    ],
+    [
+      "acolhimento-escuta-qualificada-mfc",
+      "2. Acolhimento, Escuta Qualificada e o Método Clínico Centrado na Pessoa Aplicado à Saúde da Mulher"
+    ],
+    [
+      "rastreamento-mamografico-e-colo-uterino-ms-inca",
+      "3. Rastreamento Oncológico de Colo Uterino e Mama nas Diretrizes Brasileiras (MS / INCA)"
+    ],
+    [
+      "planejamento-reprodutivo-criterios-elegibilidade-oms",
+      "4. Planejamento Reprodutivo na APS: Cidadania, Critérios Médicos de Elegibilidade da OMS e Lei do Planejamento Familiar Atualizada"
+    ],
+    [
+      "pre-natal-compartilhado-e-puerperio-na-aps",
+      "5. Pré-Natal Compartilhado na Atenção Básica e Cuidado Puerperal Integral"
+    ],
+    [
+      "violencia-domestica-sexual-maria-da-penha-notificacao",
+      "6. Abordagem da Violência Doméstica e Sexual na APS: Lei Maria da Penha, Notificação Compulsória e Protocolo de Profilaxia Pós-Exposição"
+    ],
+    [
+      "climaterio-sexualidade-e-diversidade-na-aps",
+      "7. Climatério, Sexualidade Feminina e Atenção Integral às Mulheres Negras, Indígenas e LGBTQIA+"
+    ],
+    [
+      "casos-clinicos-e-questoes-comentadas",
+      "8. Casos Clínicos Estruturados e Questões Comentadas de Concursos Médicos"
+    ]
+  ],
+  "q": [
+    [
+      "fundamentos-e-evolucao-historica-pnaism",
+      0,
+      [
+        [
+          "2",
+          "1. Fundamentos Históricos, Diretrizes e Marcos Políticos da PNAISM na Atenção Primária"
+        ],
+        [
+          "3",
+          "1.1 Da Visão Materno-Infantil ao Cuidado Integral: A Gênese da PNAISM"
+        ],
+        [
+          "p",
+          "Durante grande parte do século XX, as políticas públicas brasileiras de saúde direcionadas às mulheres caracterizavam-se por uma ótica estritamente biológica e reducionista: o chamado <strong>binômio materno-infantil</strong>. O corpo feminino era percebido pelo Estado quase que exclusivamente sob a função reprodutiva e de maternagem, estruturando programas higienistas voltados ao ciclo gravídico-puerperal e à redução da mortalidade perinatal. Questões essenciais como sexualidade desvinculada da procriação, morbidades ginecológicas não obstétricas, climatério, saúde ocupacional e mental, violência de gênero e vulnerabilidades específicas das mulheres negras, indígenas e lésbicas/bissexuais permaneciam completamente invisibilizadas nas ações de saúde coletiva."
+        ],
+        [
+          "p",
+          "A ruptura desse paradigma iniciou-se no início da década de 1980 com a emergência do Movimento Sanitário e a articulação vigorosa do Movimento Feminista brasileiro, resultando na formulação pioneira do <strong>PAISM (Programa de Assistência Integral à Saúde da Mulher)</strong> em 1984. O PAISM introduziu formalmente o princípio da <em>integralidade</em>, concebendo a mulher como sujeito autônomo de direitos e demandando ações que contemplassem a totalidade do seu ciclo vital."
+        ],
+        [
+          "p",
+          "Com a promulgação da Constituição Cidadã de 1988, a criação do Sistema Único de Saúde (SUS) e a realização das Conferências Nacionais de Saúde e dos Direitos da Mulher, esse arcabouço culminou, em 2004, no lançamento oficial da <strong>Política Nacional de Atenção Integral à Saúde da Mulher (PNAISM) — Princípios e Diretrizes</strong> pelo Ministério da Saúde. A PNAISM tornou-se um divisor de águas político-assistencial, estabelecendo a transversalidade das ações e assumindo o compromisso de enfrentar as desigualdades étnico-raciais, geracionais e de orientação sexual."
+        ],
+        [
+          "4",
+          "Diretrizes Estruturantes da PNAISM"
+        ],
+        [
+          "u",
+          [
+            "<strong>Integralidade do Cuidado:</strong> Abordagem holística da mulher ao longo de todas as fases da vida (infância, adolescência, idade fértil, perimenopausa, senescência e velhice avançada), superando a fragmentação que priorizava apenas a gestação e o puerpério.",
+            "<strong>Equidade e Justiça Social:</strong> Reconhecimento de que os determinantes sociais da saúde (raça/cor, escolaridade, classe socioeconômica, inserção no mundo do trabalho, território geográfico e identidade de gênero) produzem perfis epidemiológicos distintos e exigem alocação diferenciada de recursos e estratégias prioritárias.",
+            "<strong>Autonomia e Direitos Sexuais e Reprodutivos:</strong> Garantia constitucional e bioética de que a mulher possui soberania sobre seu próprio corpo, decidindo livremente sobre o exercício da sua sexualidade, a contracepção, a concepção e o número e espaçamento de filhos, sem coerção estatal, familiar ou médica.",
+            "<strong>Intersetorialidade e Transversalidade:</strong> Integração das ações da Atenção Primária à Saúde (APS) com redes de assistência social (CRAS/CREAS), segurança pública (DEAM), judiciário, educação e movimentos comunitários organizados."
+          ]
+        ],
+        [
+          "3",
+          "1.2 A Atenção Primária como Centro de Comunicação e Ordenadora do Cuidado Feminino"
+        ],
+        [
+          "p",
+          "A Estratégia Saúde da Família (ESF) atua como a porta de entrada preferencial e a coordenadora do itinerário terapêutico da mulher no SUS. Em conformidade com a Política Nacional de Atenção Básica (PNAB), a equipe multidisciplinar — composta por médica(o) de família e comunidade, enfermeira(o), técnicas(os) de enfermagem e agentes comunitárias(os) de saúde (ACS) — deve desenvolver práticas baseadas no <em>Acesso de Primeiro Contato, Longitudinalidade, Integralidade e Coordenação do Cuidado</em>, além de competência cultural e orientação comunitária."
+        ],
+        [
+          "p",
+          "A territorialização e a visita domiciliar periódica desempenham papel indispensável no mapeamento das vulnerabilidades: mulheres cuidadoras sobrecarregadas, arranjos monoparentais femininos com extrema pobreza, trabalhadoras informais sem cobertura previdenciária e vítimas de violência doméstica velada. A APS eficiente substitui a espera passiva por consultas programadas por uma busca ativa rigorosa e acolhimento com classificação de risco."
+        ],
+        [
+          "t",
+          [
+            "Eixo de Atenção da PNAISM",
+            "Ação Estratégica na APS / ESF",
+            "Impacto Epidemiológico Esperado"
+          ],
+          [
+            [
+              "<strong>Saúde Sexual e Reprodutiva</strong>",
+              "Oferta universal de métodos contraceptivos reversíveis de longa e curta duração (LARC e SARC), aconselhamento reprodutivo não coercitivo, testagem rápida de ISTs.",
+              "Redução de gestações não planejadas, menor incidência de abortamentos inseguros, queda na transmissão vertical de HIV e sífilis."
+            ],
+            [
+              "<strong>Pré-Natal e Puerpério Qualificados</strong>",
+              "Captação precoce (até 12ª semana), estratificação dinâmica de risco gestacional, pré-natal compartilhado com enfermagem e eMulti, visita puerperal na 1ª semana.",
+              "Queda drástica na Razão de Mortalidade Materna (RMM) evitável (síndromes hipertensivas, hemorragia pós-parto e infecção puerperal)."
+            ],
+            [
+              "<strong>Oncologia Ginecológica</strong>",
+              "Rastreamento organizado e baseado em evidências do câncer do colo do útero (25-64 anos) e mamografia bienal (50-69 anos), garantia de biópsias em até 30 dias.",
+              "Diagnóstico precoce de lesões pré-invasoras e carcinomas iniciais, com aumento da sobrevida e redução de intervenções mutiladoras."
+            ],
+            [
+              "<strong>Enfrentamento à Violência</strong>",
+              "Identificação de sinais indiretos de violência, escuta empática e sigilosa, notificação compulsória no SINAN, articulação intersetorial em rede.",
+              "Ruptura do ciclo de violência, profilaxia de ISTs e gravidez pós-estupro, prevenção de homicídios e suicídios associados ao feminicídio."
+            ],
+            [
+              "<strong>Climatério e Envelhecimento</strong>",
+              "Manejo de sintomas vasomotores, promoção de saúde osteometabólica e cardiovascular, rastreio de incontinência urinária e transtornos de humor.",
+              "Preservação da capacidade funcional, redução de fraturas osteoporóticas e melhora substancial da qualidade de vida na pós-menopausa."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "acolhimento-escuta-qualificada-mfc",
+      0,
+      [
+        [
+          "2",
+          "2. Acolhimento, Escuta Qualificada e o Método Clínico Centrado na Pessoa Aplicado à Saúde da Mulher"
+        ],
+        [
+          "3",
+          "2.1 Acolhimento na APS e a Superação das Barreiras de Gênero"
+        ],
+        [
+          "p",
+          "O acolhimento não se restringe a uma triagem administrativa de balcão ou a uma sala específica na Unidade Básica de Saúde; constitui uma <strong>postura ética, relacional e clínica</strong> que deve perpassar todos os contatos da usuária com a equipe. Na consulta à mulher, o acolhimento exige desconstruir estereótipos moralizantes frequentemente atribuídos às queixas femininas, historicamente rotuladas de 'histeria', 'somatização' ou 'falta de paciência'."
+        ],
+        [
+          "p",
+          "A mulher frequentemente chega à unidade carregando uma sobrecarga desproporcional de trabalho doméstico, cuidado de filhos e idosos enfermos (a chamada <em>economia do cuidado</em>), além de vivenciar jornadas duplas ou triplas de trabalho. O profissional de saúde deve oferecer um ambiente seguro, com privacidade acústica e visual inviolável, pontualidade, linguagem clara e ausência de julgamentos morais sobre escolhas sexuais, práticas eróticas, número de parceiros, métodos contraceptivos ou interrupções de gestação prévias."
+        ],
+        [
+          "4",
+          "Os Quatro Componentes do Método Clínico Centrado na Pessoa (MCCP) na Saúde da Mulher"
+        ],
+        [
+          "o",
+          [
+            "<strong>1. Explorando a Doença e a Experiência da Pessoa com a Doença:</strong>\n      <ul>\n        <li><em>Doença (Disease):</em> A dimensão biomédica — ex.: sangramento uterino anormal, citopatológico com lesão intraepitelial, corrimento vaginal, cefaleia perimenstrual.",
+            "<em>Experiência da Doença (Illness - SIFP):</em> Sentimentos (o que a paciente sente sobre a queixa?), Ideias (o que ela acredita estar causando aquilo?), Funcionalidade (como isso afeta o trabalho, sono e convívio sexual?), Expectativas (o que ela espera do atendimento hoje?). <em>Exemplo clínico:</em> uma mulher com dor pélvica crônica pode não apenas sofrer fisicamente, mas temer estar com um câncer terminal como sua mãe ou carregar culpa por não conseguir manter relações sexuais prazerosas com a parceria.",
+            "<strong>2. Entendendo a Pessoa como um Todo:</strong>\n      <ul>\n        <li>Apreender o contexto individual, familiar e comunitário. Utilização prática do <strong>Genograma</strong> (mapeamento de doenças hereditárias, padrões relacionais e arranjos familiares em 3 gerações) e do <strong>Ecomapa</strong> (redes de apoio social, suporte religioso, vínculos comunitários e fontes de estresse).",
+            "Avaliação da etapa do ciclo de vida: a adolescência e o medo do estigma de ISTs; a maternidade e a depressão pós-parto; a perimenopausa e a perda de viço corporal/autoestima em uma sociedade etarista.",
+            "<strong>3. Elaborando um Plano Conjunto de Manejo:</strong>\n      <ul>\n        <li>Definição compartilhada de prioridades e metas terapêuticas. Não impor condutas; construir alternativas negociadas em tomada de decisão compartilhada (<em>Shared Decision Making</em>). A paciente escolhe o método contraceptivo após ser elucidada sobre vantagens, efeitos colaterais e contraindicações reais de cada opção.",
+            "<strong>4. Intensificando a Relação Médico-Pessoa:</strong>\n      <ul>\n        <li>Construção de vínculo de confiança longitudinal. Empatia autêntica, confidencialidade explícita e disponibilidade para o cuidado continuado ao longo dos anos."
+          ]
+        ],
+        [
+          "3",
+          "2.2 Exame Ginecológico Respeitoso e Não Traumático"
+        ],
+        [
+          "p",
+          "O exame pélvico e ginecológico é uma das práticas clínicas mais invasivas e carregadas de vulnerabilidade física e emocional da medicina. Uma experiência dolorosa ou desrespeitosa pode afastar a mulher das consultas preventivas por décadas, gerando perdas irreparáveis de diagnósticos precoces de neoplasias."
+        ],
+        [
+          "t",
+          [
+            "Etapa do Exame",
+            "Boas Práticas Centradas na Pessoa",
+            "Armadilhas e Práticas a Evitar"
+          ],
+          [
+            [
+              "<strong>Preparação e Consentimento</strong>",
+              "Explicar detalhadamente cada passo antes de iniciar; solicitar autorização formal verbal; garantir presença de acompanhante se desejado; garantir biombo, roupão ou lençol para cobrir abdome e coxas.",
+              "Iniciar o exame sem avisar previamente; despir a paciente desnecessariamente; deixar a porta do consultório destrancada sem privacidade visual."
+            ],
+            [
+              "<strong>Posicionamento</strong>",
+              "Posição ginecológica confortável; apoiar calcanhares ou fossas poplíteas sem estiramento excessivo; manter contato visual e comunicação constante com a paciente.",
+              "Manter a mulher na posição ginecológica por períodos prolongados enquanto preenche prontuário ou busca materiais esquecidos."
+            ],
+            [
+              "<strong>Exame Especular</strong>",
+              "Escolher o tamanho correto do espéculo (P, M ou G); aquecer o instrumento se metálico; lubrificar com água morna ou soro fisiológico (evitar géis que interfiram na citologia); introduzir o espéculo inclinado a 45º no sentido póstero-inferior respeitando a anatomia vaginal.",
+              "Introdução rápida e forçada do espéculo; bater o espéculo contra a uretra (altamente doloroso); pinçamento da mucosa vaginal ao abrir ou fechar as valvas."
+            ],
+            [
+              "<strong>Toque Bimanual</strong>",
+              "Utilização de lubrificante estéril abundante; toques gentis; explicar a pressão exercida na fossa ilíaca; avaliar mobilidade e sensibilidade uterina e anexial.",
+              "Compressão bimanual súbita e grosseira; interpretar dor à palpação como mera 'frescura' ou ansiedade sem investigar patologia inflamatória ou endometriose."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "rastreamento-mamografico-e-colo-uterino-ms-inca",
+      0,
+      [
+        [
+          "2",
+          "3. Rastreamento Oncológico de Colo Uterino e Mama nas Diretrizes Brasileiras (MS / INCA)"
+        ],
+        [
+          "3",
+          "3.1 Rastreamento do Câncer do Colo do Útero: Diretrizes Nacionais Oficiais"
+        ],
+        [
+          "p",
+          "O câncer do colo do útero permanece como uma das principais causas de mortalidade prematura por neoplasia em mulheres no Brasil, sendo uma doença quase totalmente prevenível quando detectada em suas fases precursoras (NIC II e NIC III / lesões de alto grau). O Ministério da Saúde e o Instituto Nacional de Câncer (INCA) estabelecem diretrizes programáticas rigorosas que diferem substancialmente de protocolos de outros países e frequentemente constituem alvos preferenciais de pegadinhas em provas de residência médica."
+        ],
+        [
+          "4",
+          "Diretriz Oficial do Rastreamento Citopatológico (Papanicolau / Convencional) - MS/INCA"
+        ],
+        [
+          "u",
+          [
+            "<strong>População-Alvo:</strong> Mulheres e pessoas com colo do útero (incluindo homens trans que mantêm a cérvice) na faixa etária estrita de <strong>25 a 64 anos</strong> que já iniciaram atividade sexual.",
+            "<strong>Por que não iniciar antes dos 25 anos?</strong> A infecção pelo HPV é extremamente prevalente em adolescentes e mulheres jovens sob 25 anos (atingindo até 40-50%), porém a história natural demonstra que mais de 90% dessas infecções regridem espontaneamente em 18 a 24 meses devido à robusta resposta imune. Rastrear mulheres jovens antes dos 25 anos leva a diagnósticos de lesões autolimitadas (NIC I/LSIL), gerando ansiedade devastadora, custos desnecessários e procedimentos excisionais iatrogênicos (conizações/CAF) que provocam incompetência istmocervical, estenose cervical e partos prematuros futuros.",
+            "<strong>Periodicidade do Rastreamento:</strong>\n      <ul>\n        <li>Exames anuais nos <strong>dois primeiros anos consecutivos</strong>.",
+            "Se ambos os resultados anuais forem negativos para neoplasia/displasia (normais), o intervalo passa formalmente para <strong>a cada 3 anos</strong>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n    <li><strong>Quando Interromper o Rastreamento:</strong> Aos <strong>64 anos de idade</strong>, desde que a mulher tenha pelo menos <strong>dois exames citopatológicos negativos consecutivos nos últimos 5 anos</strong>. Se a mulher completou 64 anos e nunca realizou colpocitologia ou seu histórico é desconhecido, deve realizar 2 exames anuais normais antes de receber alta do rastreamento.</li>\n    <li><strong>Situações Especiais e Populações Imunossuprimidas:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Mulheres vivendo com HIV (PVHIV) ou imunossuprimidas crônicas (transplantadas, uso de imunossupressores):</em> O rastreamento inicia-se <strong>logo após o início da vida sexual</strong> (independente da idade, mesmo &lt; 25 anos). A periodicidade é <strong>semestral no primeiro ano</strong> (dois exames com intervalo de 6 meses); mantendo-se normais e com contagem de CD4 &gt; 200 céls/mm³, o seguimento prossegue com citologia <strong>anual</strong> (nunca trienal!). Se CD4 &lt; 200 céls/mm³, mantém-se citologia semestral.",
+            "<em>Histerectomizadas:</em> Se histerectomia total por causas comprovadamente benignas (ex.: miomatose) e sem histórico de lesão precursora ou neoplasia cervical, <strong>o rastreamento é suspenso</strong> (não há indicação de citologia de cúpula vaginal). Se histerectomia subtotal (colo preservado), segue rotina padrão. Se histerectomia motivada por NIC II, NIC III ou câncer cervical invasor, o seguimento citológico da cúpula vaginal é mandatório e individualizado.",
+            "<em>Gestantes:</em> Seguem exatamente a mesma rotina de rastreamento de mulheres não grávidas, sem restrições à coleta ecto e endocervical com espátula de Ayre e escova endocervical (a rotação da escova deve ser suave e cuidadosa)."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Resultado da Citopatologia Cervical",
+            "Significado Clínico",
+            "Conduta Imediata na APS (MS/INCA)"
+          ],
+          [
+            [
+              "<strong>Normal / Negativo para Malignidade</strong>",
+              "Células escamosas, glandulares e metaplásicas típicas; ausência de atipias.",
+              "Seguir rotina trienal (ou anual se for o primeiro exame)."
+            ],
+            [
+              "<strong>ASC-US (Atipias de Células Escamosas de Significado Indeterminado, Provavelmente Não Neoplásicas)</strong>",
+              "Alterações celulares limítrofes, frequentemente reativas/inflamatórias ou HPV inicial.",
+              "<strong>Conduta dependente da idade:</strong><br>\n        - Se &lt; 25 anos (coleta indevida): repetir em 3 anos.<br>\n        - Se <strong>25 a 29 anos:</strong> repetir citopatológico em <strong>12 meses</strong>.<br>\n        - Se <strong>&ge; 30 anos:</strong> repetir citopatológico em <strong>6 meses</strong>.<br>\n        <em>Encaminhar para Colposcopia apenas se 2 exames repetidos consecutivos mantiverem ASC-US ou pior.</em>"
+            ],
+            [
+              "<strong>LSIL (Lesão Intraepitelial Escamosa de Baixo Grau / NIC I / Efeito Citopático do HPV)</strong>",
+              "Infecção produtiva transitória por HPV; baixíssimo potencial de progressão neoplásica.",
+              "<strong>Conduta dependente da idade:</strong><br>\n        - Se <strong>&lt; 25 anos:</strong> repetir em 3 anos (alta taxa de clareamento espontâneo).<br>\n        - Se <strong>&ge; 25 anos:</strong> repetir citopatológico em <strong>6 meses</strong> na APS.<br>\n        <em>Encaminhar para Colposcopia apenas se persistência de LSIL em 2 exames consecutivos (intervalo de 6 meses) ou evolução para lesão mais grave.</em>"
+            ],
+            [
+              "<strong>ASC-H (Atipias Escamosas em que Não se Pode Afastar Lesão de Alto Grau)</strong>",
+              "Células atípicas com suspeição real de NIC II/III ou carcinoma invasor.",
+              "<strong>Encaminhamento imediato para Colposcopia</strong> na Atenção Secundária (independente da idade)."
+            ],
+            [
+              "<strong>HSIL (Lesão Intraepitelial Escamosa de Alto Grau / NIC II e NIC III / Carcinoma in situ)</strong>",
+              "Verdadeira lesão pré-maligna precursora do câncer cervical com potencial invasivo.",
+              "<strong>Encaminhamento imediato para Colposcopia</strong> na Atenção Secundária com brevidade."
+            ],
+            [
+              "<strong>AGC / AGUS (Atipias de Células Glandulares de Significado Indeterminado)</strong>",
+              "Células endocervicais ou endometriais atípicas; risco de adenocarcinoma endocervical ou de endométrio.",
+              "<strong>Encaminhamento imediato para Colposcopia</strong> com avaliação do canal endocervical e ultrassonografia pélvica/transvaginal se &ge; 35 anos ou fatores de risco para neoplasia de endométrio."
+            ],
+            [
+              "<strong>Carcinoma Epidermoide / Adenocarcinoma Invasor</strong>",
+              "Neoplasia maligna invasora franca.",
+              "<strong>Encaminhamento de urgência regulada (Sisreg) para Colposcopia / Oncologia</strong> (Lei dos 60 dias)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "3.2 Rastreamento do Câncer de Mama: Diretrizes Nacionais (MS / INCA) vs Sociedades de Especialistas"
+        ],
+        [
+          "p",
+          "O rastreamento mamográfico é objeto de intenso debate e frequentes confusões diagnósticas. Para fins de saúde pública no Brasil, as políticas oficiais do Ministério da Saúde e do INCA fundamentam-se em estudos epidemiológicos de base populacional com análise estrita de custo-efetividade e balanço entre benefícios (redução absoluta de mortalidade) e danos (falsos-positivos, sobrediagnóstico e sobretratamento - <em>overdiagnosis</em> e <em>overtreatment</em>)."
+        ],
+        [
+          "4",
+          "Diretriz Oficial do Rastreamento Mamográfico para População Geral de Risco Habitual (MS/INCA)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Método de Rastreamento:</strong> Mamografia convencional ou digital bilateral (duas incidências: craniocaudal e mediolateral oblíqua).",
+            "<strong>Faixa Etária Alvo:</strong> Mulheres de <strong>50 a 69 anos de idade</strong>.",
+            "<strong>Periodicidade Recomendada:</strong> <strong>Bienal (a cada 2 anos)</strong>.",
+            "<strong>Por que o Ministério da Saúde não recomenda rastreamento de rotina entre 40 e 49 anos?</strong>\n      <ul>\n        <li>O tecido mamário de mulheres abaixo de 50 anos é mais denso, reduzindo expressivamente a sensibilidade da mamografia;",
+            "O número de mulheres que precisam ser rastreadas para salvar uma vida (NNT - <em>Number Needed to Screen</em>) é exponencialmente maior do que na faixa de 50 a 69 anos;",
+            "As taxas de falsos-positivos, biópsias desnecessárias de lesões benignas, ansiedade patológica e sobrediagnóstico de carcinomas ductais <em>in situ</em> (CDIS) que jamais evoluiriam clinicamente superam substancialmente o benefício líquido na população de risco habitual."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n    <li><em>Nota sobre Autoexame e Exame Clínico das Mamas (ECM):</em> O INCA <strong>não recomenda o autoexame sistemático das mamas</strong> como método de rastreamento populacional (pois não reduziu mortalidade em ensaios clínicos e aumentou biópsias benignas). Recomenda-se a conscientização sobre o corpo e mamas (<em>breast awareness</em>), estimulando a mulher a procurar a unidade de saúde diante de qualquer alteração mamária percebida. O Exame Clínico das Mamas deve ser oferecido como parte da consulta ginecológica integral.</li>\n  </ul>\n</div>"
+        ],
+        [
+          "p",
+          "<em>Contraste com as Sociedades Médicas (SBM, Febrasgo e CBR):</em> A Sociedade Brasileira de Mastologia preconiza o rastreamento mamográfico anual iniciando-se aos 40 anos de idade até os 74 anos. Nas provas de Residência Médica, é fundamental verificar se a questão indaga a diretriz do <strong>Ministério da Saúde / SUS / INCA</strong> (50-69 anos, bienal) ou a postura da sociedade de especialidade médica privada."
+        ],
+        [
+          "t",
+          [
+            "População de Alto Risco para Câncer de Mama",
+            "Critérios de Definição (Histórico Familiar e Genético)",
+            "Conduta de Rastreamento Especializado"
+          ],
+          [
+            [
+              "<strong>Risco Hereditário Alto (Mutações BRCA1 / BRCA2)</strong>",
+              "Mulheres com mutação genética comprovada (BRCA1, BRCA2, TP53, PTEN) ou parentes de primeiro grau portadoras.",
+              "Rastreamento individualizado anual a partir dos 25-30 anos com Ressonância Magnética das mamas associada à Mamografia."
+            ],
+            [
+              "<strong>Histórico Familiar de 1º Grau Precoce</strong>",
+              "Parente de primeiro grau com câncer de mama diagnosticado antes dos 50 anos de idade.",
+              "Iniciar mamografia anual 10 anos antes da idade do diagnóstico do parente mais jovem afetado (não antes dos 30 anos)."
+            ],
+            [
+              "<strong>Câncer de Mama Masculino</strong>",
+              "Histórico familiar de parente de 1º grau do sexo masculino com câncer de mama.",
+              "Encaminhamento para aconselhamento genético e rastreamento de alto risco."
+            ],
+            [
+              "<strong>Histórico de Irradiação Torácica</strong>",
+              "Mulheres que receberam radioterapia torácica entre 10 e 30 anos de idade (ex.: Linfoma de Hodgkin).",
+              "Iniciar rastreamento mamográfico e por ressonância magnética 8 anos após a irradiação (mas não antes dos 25 anos)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "3.3 Classificação BI-RADS Mamográfica e Condutas na Atenção Primária"
+        ],
+        [
+          "p",
+          "O sistema BI-RADS (<em>Breast Imaging Reporting and Data System</em>) padroniza os laudos mamográficos, estabelecendo categorias preditivas de malignidade e condutas clínicas inequívocas:"
+        ],
+        [
+          "t",
+          [
+            "Categoria BI-RADS",
+            "Interpretação e Achados Típicos",
+            "Risco de Câncer",
+            "Conduta Clínica Mandatória na APS"
+          ],
+          [
+            [
+              "<strong>BI-RADS 0</strong>",
+              "Exame incompleto; imagem obscurecida por densidade ou sobreposição tecidual.",
+              "Indeterminado",
+              "Solicitar exames adicionais: compressão localizada, magnificação ou Ultrassonografia mamária complementar."
+            ],
+            [
+              "<strong>BI-RADS 1</strong>",
+              "Exame negativo; ausência de qualquer nódulo, calcificação suspeita ou assimetria.",
+              "~0%",
+              "Seguir rastreamento mamográfico de rotina bienal na faixa de 50 a 69 anos."
+            ],
+            [
+              "<strong>BI-RADS 2</strong>",
+              "Achados tipicamente benignos: cistos simples, fibroadenoma calcificado ('pipoca'), calcificações vasculares, linfonodo intramamário normal.",
+              "~0%",
+              "Seguir rastreamento mamográfico de rotina bienal na faixa de 50 a 69 anos (tranquilizar a paciente)."
+            ],
+            [
+              "<strong>BI-RADS 3</strong>",
+              "Achados provavelmente benignos: nódulo oval circunscrito circunscrito, microcalcificações puntiformes monomórficas agrupadas.",
+              "&le; 2%",
+              "<strong>Controle radiológico semestral por 2 a 3 anos:</strong> repetir mamografia em 6 meses da mama afetada; mantendo estabilidade, repetir aos 12, 24 e 36 meses. Se estável por 2-3 anos, reclassificar para BI-RADS 2."
+            ],
+            [
+              "<strong>BI-RADS 4</strong>",
+              "Achados suspeitos de malignidade (subdividido em 4A baixo risco 2-10%, 4B moderado 10-50%, 4C alto 50-95%): nódulos espiculados, calcificações pleomórficas ramificadas.",
+              "2% a 95%",
+              "<strong>Encaminhamento imediato para Biópsia Histopatológica</strong> (Core biopsy ou biópsia assistida a vácuo/mamotomia) na atenção secundária."
+            ],
+            [
+              "<strong>BI-RADS 5</strong>",
+              "Achados altamente sugestivos de malignidade: nódulo espiculado denso, microcalcificações lineares ramificadas finas, retração cutânea associada.",
+              "&gt; 95%",
+              "<strong>Encaminhamento urgente para Biópsia Histopatológica e Avaliação Mastológica/Oncológica</strong> (prioridade regulatória)."
+            ],
+            [
+              "<strong>BI-RADS 6</strong>",
+              "Malignidade já confirmada histologicamente por biópsia prévia (aguardando estadiamento ou cirurgia).",
+              "100% (comprovada)",
+              "Coordenação do cuidado oncológico e suporte psicossocial na APS."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "planejamento-reprodutivo-criterios-elegibilidade-oms",
+      0,
+      [
+        [
+          "2",
+          "4. Planejamento Reprodutivo na APS: Cidadania, Critérios Médicos de Elegibilidade da OMS e Lei do Planejamento Familiar Atualizada"
+        ],
+        [
+          "3",
+          "4.1 Marco Legal Atualizado da Lei do Planejamento Familiar (Lei Federal nº 14.443/2022)"
+        ],
+        [
+          "p",
+          "O planejamento reprodutivo na Atenção Primária à Saúde é regido pelo princípio constitucional da paternidade e maternidade responsáveis e pela livre decisão do casal ou do indivíduo. Em março de 2023, entrou em vigor a fundamental <strong>Lei Federal nº 14.443/2022</strong>, que alterou profundamente a antiga Lei nº 9.263/1996, modernizando o acesso aos métodos contraceptivos cirúrgicos definitivos (esterilização voluntária: laqueadura tubária e vasectomia) no Brasil e encerrando anacronismos históricos."
+        ],
+        [
+          "4",
+          "Principais Alterações da Lei nº 14.443/2022 (Exigência Constante em Concursos)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Redução da Idade Mínima:</strong> A idade mínima para esterilização voluntária (laqueadura ou vasectomia) caiu de 25 para <strong>21 anos de idade</strong> para homens e mulheres com capacidade civil plena.",
+            "<strong>Manutenção do Critério de Prole:</strong> Permanece permitida a esterilização em qualquer idade para indivíduos que possuam <strong>pelo menos 2 (dois) filhos vivos</strong>. Logo, os critérios são alternativos: ter <strong>&ge; 21 anos OU pelo menos 2 filhos vivos</strong>.",
+            "<strong>Fim da Exigência de Consentimento do Cônjuge/Parceiro:</strong> Foi <strong>completamente revogado o dispositivo que exigia a anuência expressa do cônjuge</strong> para a realização de laqueadura ou vasectomia na constância da sociedade conjugal. A decisão agora é <strong>estritamente individual</strong> do cidadão ou cidadã que se submeterá ao procedimento, consagrando sua autonomia corporal.",
+            "<strong>Laqueadura Durante o Período de Parto:</strong> A lei passou a <strong>permitir a realização da laqueadura tubária durante o período de parto</strong> (seja cesariana ou normal), desde que a manifestação da vontade tenha sido expressa pela gestante com <strong>antecedência mínima de 60 (sessenta) dias</strong> entre a manifestação da vontade e o parto, evitando decisões precipitadas sob o estresse do trabalho de parto.",
+            "<strong>Prazo de Reflexão e Aconselhamento:</strong> Mantém-se o prazo legal obrigatório de no mínimo 60 dias entre a manifestação formal da vontade e o ato cirúrgico, período no qual a equipe da APS deve propiciar acesso a aconselhamento multiprofissional sobre métodos reversíveis, eficácia e riscos cirúrgicos."
+          ]
+        ],
+        [
+          "3",
+          "4.2 Critérios Médicos de Elegibilidade da OMS para o Uso de Contraceptivos (MEC / OMS)"
+        ],
+        [
+          "p",
+          "A Organização Mundial da Saúde (OMS) categoriza a segurança de cada método anticoncepcional em quatro classes universais, que norteiam com precisão a prática clínica da médica(o) de família e comunidade e da(o) ginecologista:"
+        ],
+        [
+          "t",
+          [
+            "Categoria OMS",
+            "Definição Operacional",
+            "Conduta Clínica"
+          ],
+          [
+            [
+              "<strong>Categoria 1</strong>",
+              "Condição para a qual não há restrição ao uso do método contraceptivo.",
+              "<strong>Usar o método sem qualquer restrição</strong>."
+            ],
+            [
+              "<strong>Categoria 2</strong>",
+              "Condição em que as vantagens do uso do método superam os riscos teóricos ou comprovados.",
+              "<strong>Geralmente pode usar o método</strong> (acompanhamento habitual)."
+            ],
+            [
+              "<strong>Categoria 3</strong>",
+              "Condição em que os riscos teóricos ou comprovados superam as vantagens do método.",
+              "<strong>O método NÃO é recomendado</strong>, a menos que outros métodos mais adequados não estejam disponíveis ou sejam rejeitados (indicação de exceção estrita)."
+            ],
+            [
+              "<strong>Categoria 4</strong>",
+              "Condição que representa risco inaceitável à saúde se o método for utilizado.",
+              "<strong>Contraindicação absoluta: NÃO USAR o método</strong>."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "4.3 Contraceptivos Combinados Orais e Injetáveis (Estrogênio + Progestágeno): Contraindicações Críticas (Cat. 4 OMS)"
+        ],
+        [
+          "p",
+          "Os métodos combinados (pílulas combinadas, anel vaginal, adesivo transdérmico e injetáveis mensais) contêm derivados estrogênicos (geralmente etinilestradiol ou estradiol). O componente estrogênico hepático eleva a síntese de fatores de coagulação (fatores II, VII, VIII, X e fibrinogênio) e reduz a antitrombina III e proteína S, elevando o risco tromboembólico."
+        ],
+        [
+          "4",
+          "Situações Clínicas Categoria 4 da OMS para Métodos Combinados (Contraindicação Absoluta)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Tabagismo em Mulheres com Idade &ge; 35 Anos:</strong> Tabagistas de &ge; 15 cigarros/dia com 35 anos ou mais (Categoria 4); tabagistas de &lt; 15 cigarros/dia com &ge; 35 anos (Categoria 3). Se idade &lt; 35 anos, tabagismo isolado é Categoria 2.",
+            "<strong>Hipertensão Arterial Sistêmica Grave ou Não Controlada:</strong> Níveis pressóricos com PAS &ge; 160 mmHg ou PAD &ge; 100 mmHg; ou hipertensão com vasculopatia instalada (nefropatia, retinopatia, hipertrofia ventricular). Se HAS moderada controlada (PAS 140-159 ou PAD 90-99), é Categoria 3.",
+            "<strong>Histórico Atual ou Pregresso de Tromboembolismo Venoso (TEV):</strong> Trombose venosa profunda (TVP) ou tromboembolismo pulmonar (TEP); trombofilias hereditárias comprovadas (Fator V de Leiden, mutação da protrombina, deficiência de proteína C/S/antitrombina).",
+            "<strong>Doença Vascular Cerebral ou Cardíaca Isquêmica:</strong> Histórico de AVC isquêmico ou transitório, infarto agudo do miocárdio (IAM), angina pectoris ou cardiopatia valvar complicada (hipertensão pulmonar, risco de fibrilação atrial).",
+            "<strong>Enxaqueca com Aura em Qualquer Idade:</strong> Risco exponencialmente elevado de AVC isquêmico (Categoria 4 absoluta). Enxaqueca sem aura em mulher &lt; 35 anos é Categoria 2; se &ge; 35 anos, enxaqueca sem aura é Categoria 3.",
+            "<strong>Câncer de Mama Atual:</strong> Neoplasia estrogênio-dependente ativa (Categoria 4). Se histórico prévio de câncer de mama sem doença há &gt; 5 anos, Categoria 3.",
+            "<strong>Diabetes Mellitus com Vasculopatia:</strong> Neuropatia, nefropatia, retinopatia diabética ou duração do diabetes &gt; 20 anos.",
+            "<strong>Doença Hepática Aguda Grave:</strong> Hepatite viral ativa grave, cirrose hepática descompensada (Child-Pugh B ou C), adenoma hepatocelular ou hepatocarcinoma.",
+            "<strong>Puerpério Imediato e Amamentação:</strong> Primeiras 6 semanas pós-parto em puérperas em aleitamento materno exclusivo (estrogênio suprime lactogênese e eleva risco tromboembólico puerperal)."
+          ]
+        ],
+        [
+          "3",
+          "4.4 Métodos com Progestágeno Isolado e Contraceptivos Reversíveis de Longa Ação (LARC)"
+        ],
+        [
+          "p",
+          "Os métodos baseados exclusivamente em progestágenos (minipílula de desogestrel ou noretisterona, implante subdérmico de etonogestrel, injetável trimestral de acetato de medroxiprogesterona e DIU de Levonorgestrel) não possuem o impacto trombogênico do estrogênio hepático, sendo seguros para mulheres hipertensas, tabagistas, portadoras de enxaqueca e no pós-parto."
+        ],
+        [
+          "t",
+          [
+            "Método Contraceptivo",
+            "Mecanismo Principal",
+            "Duração / Posologia",
+            "Efeitos Adversos e Particularidades Clínicas"
+          ],
+          [
+            [
+              "<strong>DIU de Cobre (TCu 380A)</strong>",
+              "Reação inflamatória asséptica endometrial citotóxica a espermatozoides e óvulos; não hormonal.",
+              "10 anos de eficácia comprovada (pode durar até 12 anos).",
+              "<strong>Vantagem absoluta:</strong> Método de escolha para mulheres com contraindicação a qualquer hormônio (inclusive histórico de câncer de mama).<br><strong>Efeitos adversos:</strong> Aumento do fluxo menstrual e dismenorreia nos primeiros ciclos. Não indicado se DIP ativa ou cavidade uterina severamente deformada."
+            ],
+            [
+              "<strong>DIU com Levonorgestrel (Mirena / Kyleena)</strong>",
+              "Atrofia endometrial profunda, espessamento maciço do muco cervical (barreira física); efeito hormonal predominantemente local.",
+              "5 a 8 anos (conforme modelo).",
+              "<strong>Vantagem:</strong> Redução drástica do sangramento menstrual (amenorreia em 20-50% das usuárias); tratamento de primeira linha para Sangramento Uterino Anormal (SUA) e dor da endometriose/adenomiose.<br><strong>Contraindicação absoluta:</strong> Câncer de mama atual."
+            ],
+            [
+              "<strong>Implante Subdérmico de Etonogestrel (Implanon)</strong>",
+              "Inibição profunda da ovulação por supressão do pico de LH; espessamento do muco cervical.",
+              "3 anos de eficácia máxima (menor taxa de falha de todos os métodos: índice de Pearl 0,05%).",
+              "Alteração do padrão de sangramento (spotting irregular ou amenorreia); excelente adesão por dispensar intervenção da paciente."
+            ],
+            [
+              "<strong>Injetável Trimestral (Acetato de Medroxiprogesterona de Depósito - AMPD 150 mg IM)</strong>",
+              "Bloqueio potente do eixo hipotálamo-hipófise-ovário (anovulação); atrofia endometrial.",
+              "Aplicação intramuscular a cada 12 semanas (com tolerância de até 2 semanas).",
+              "<strong>Atenção clínica:</strong> Provoca redução transitória e reversível da densidade mineral óssea; pode gerar ganho ponderal (retenção hídrica/apetite); <strong>atraso no retorno da fertilidade</strong> após suspensão (média de 9 a 12 meses para engravidar novamente)."
+            ],
+            [
+              "<strong>Contracepção de Emergência (Levonorgestrel 1,5 mg dose única)</strong>",
+              "Atraso ou inibição do pico de LH e ovulação; espessamento do muco cervical. <strong>Não é abortivo</strong> (não impede nidação se fecundação já ocorreu nem descolará saco gestacional).",
+              "Tomada idealmente nas primeiras 72 horas pós-coito desprotegido (eficácia residual até 120h).",
+              "Não há contraindicações médicas formais na OMS (Categoria 1 para todas as mulheres em emergência); náuseas e cefaleia transitórias; se vomitar em até 2h da tomada, repetir a dose."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "pre-natal-compartilhado-e-puerperio-na-aps",
+      0,
+      [
+        [
+          "2",
+          "5. Pré-Natal Compartilhado na Atenção Básica e Cuidado Puerperal Integral"
+        ],
+        [
+          "3",
+          "5.1 Organização do Pré-Natal na APS e a Estratificação Dinâmica de Risco"
+        ],
+        [
+          "p",
+          "O pré-natal é uma das intervenções em saúde com maior custo-efetividade e impacto epidemiológico na redução da morbimortalidade materna e perinatal. No Brasil, o Ministério da Saúde preconiza a <strong>captação precoce da gestante até a 12ª semana de idade gestacional</strong> e a realização de um número mínimo de <strong>6 consultas de pré-natal</strong> (idealmente mensais até a 28ª semana; quinzenais da 28ª à 36ª semana; e semanais da 36ª semana até o parto)."
+        ],
+        [
+          "p",
+          "Na Estratégia Saúde da Família, o pré-natal de risco habitual é realizado de maneira <strong>compartilhada e colaborativa entre o médico de família e a enfermeira</strong>, conforme amparo legal da Lei do Exercício Profissional da Enfermagem (Lei nº 7.498/1986) e protocolos clínicos do Ministério da Saúde. O modelo de consultas intercaladas potencializa a escuta qualificada, a educação em saúde, as orientações sobre parto humanizado e amamentação, garantindo atenção resolutiva e humanizada."
+        ],
+        [
+          "4",
+          "Critérios Cardinais para Encaminhamento ao Pré-Natal de Alto Risco (PNAR)"
+        ],
+        [
+          "p",
+          "A estratificação de risco gestacional não é um evento estático realizado apenas na primeira consulta; trata-se de um <strong>processo contínuo e dinâmico</strong> a cada encontro clínico. Gestantes de alto risco devem ter o cuidado compartilhado entre a equipe da APS e o serviço especializado de obstetrícia ambulatorial e hospitalar:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Condições Pré-existentes Graves:</strong> Hipertensão arterial crônica moderada a grave, Diabetes mellitus pré-gestacional, cardiopatias congênitas ou adquiridas (Classe funcional II ou superior da NYHA), pneumopatias graves (asma grave não controlada), nefropatias crônicas, lúpus eritematoso sistêmico (LES) ou outras colagenoses, hemoglobinopatias graves (anemia falciforme), epilepsia refratária, infecção pelo HIV, hepatites virais crônicas ativas e transtornos psiquiátricos graves descompensados.",
+            "<strong>Intercorrências Obstétricas Atuais:</strong> Síndromes hipertensivas da gestação (pré-eclâmpsia / eclâmpsia), Diabetes Mellitus Gestacional (DMG) que necessita de insulinoterapia, suspeita de Restrição de Crescimento Intrauterino (RCIU) ou macrossomia fetal, Oligodramnia (ILA &lt; 5 cm) ou Polidramnia (ILA &gt; 24 cm), Gestação gemelar/múltipla, Isoimunização Rh com Coombs indireto positivo, placenta prévia com sangramento, incompetência istmocervical ou colo curto em ultrassom morfológico."
+          ]
+        ],
+        [
+          "3",
+          "5.2 Rotina Padronizada de Exames Laboratoriais no Pré-Natal da APS"
+        ],
+        [
+          "p",
+          "O Ministério da Saúde estabelece um calendário laboratorial rigoroso distribuído ao longo dos trimestres gestacionais:"
+        ],
+        [
+          "t",
+          [
+            "Trimestre Gestacional",
+            "Exames Laboratoriais Mandatórios",
+            "Condutas e Tratamentos Imediatos na APS"
+          ],
+          [
+            [
+              "<strong>1º Trimestre (ou Primeira Consulta)</strong>",
+              "- Tipagem sanguínea e Fator Rh;<br>\n        - Teste de Coombs indireto (se Rh negativo);<br>\n        - Hemograma completo;<br>\n        - Glicemia de jejum;<br>\n        - Testes rápidos para Sífilis e HIV;<br>\n        - Sorologia para Hepatite B (HBsAg);<br>\n        - Sorologia para Toxoplasmose (IgM e IgG);<br>\n        - Urina tipo 1 (EAS) e Urocultura com antibiograma;<br>\n        - Exame parasitológico de fezes (se indicação clínica).",
+              "- <strong>Bacteriúria Assintomática:</strong> Urocultura &ge; 100.000 UFC/mL em gestante EXIGE tratamento imediato (cefalexina, amoxicilina-clavulanato, nitrofurantoína ou fosfomicina) e controle com nova urocultura pós-tratamento para prevenir pielonefrite aguda e prematuridade.<br>\n        - <strong>Sífilis Gestacional:</strong> Teste rápido positivo = iniciar IMEDIATAMENTE Penicilina Benzatina (sem aguardar teste confirmatório ou VDRL). Sífilis primária, secundária ou latente recente: Penicilina Benzatina 2,4 milhões UI IM dose única (1,2 milhão UI em cada glúteo). Sífilis terciária, latente tardia ou duração indeterminada: 2,4 milhões UI IM semanalmente por 3 semanas consecutivas (total de 7,2 milhões UI). Tratar parceria sexual.<br>\n        - <strong>Toxoplasmose IgM e IgG negativos:</strong> Gestante suscetível = orientações higienodietéticas rígidas (evitar carnes cruas, contato com fezes de felinos) e repetir sorologia trimestralmente."
+            ],
+            [
+              "<strong>2º Trimestre</strong>",
+              "- <strong>TOTG 75g (Teste Oral de Tolerância à Glicose entre 24 e 28 semanas):</strong> Jejum, 1h e 2h pós-sobrecarga;<br>\n        - Teste de Coombs indireto mensal (se mãe Rh negativa e parceiro Rh positivo ou desconhecido).",
+              "- <strong>Critérios Diagnósticos de DMG (IADPSG / MS):</strong> Glicemia jejum &ge; 92 mg/dL (ou entre 92 e 125 mg/dL no 1º trimestre); OU 1h pós-dextrose &ge; 180 mg/dL; OU 2h pós-dextrose &ge; 153 mg/dL. Apenas 1 valor alterado firma o diagnóstico de DMG.<br>\n        - <strong>Imunoglobulina Anti-D (300 mcg IM):</strong> Administrar profilaticamente na 28ª semana para todas as gestantes Rh negativas não sensibilizadas (Coombs indireto negativo)."
+            ],
+            [
+              "<strong>3º Trimestre (por volta da 28ª a 30ª semana)</strong>",
+              "- Hemograma completo;<br>\n        - Glicemia de jejum (se TOTG não realizado);<br>\n        - Testes rápidos para Sífilis e HIV repetidos;<br>\n        - Sorologia para Hepatite B (HBsAg) repetida;<br>\n        - Sorologia para Toxoplasmose (se suscetível no 1º tri);<br>\n        - Urina tipo 1 e Urocultura com antibiograma;<br>\n        - <em>Swab vaginorretal para Streptococcus do Grupo B (EGB / S. agalactiae) entre 35 e 37 semanas</em> (conforme disponibilidade municipal/estadual).",
+              "- <strong>Anemia na Gestação:</strong> Hemoglobina &lt; 11 g/dL define anemia gestacional. Se Hb entre 8 e 11 g/dL (leve a moderada): dobrar suplementação com Sulfato Ferroso para 120 a 200 mg de ferro elementar/dia e repetir em 30 a 60 dias. Se Hb &lt; 8 g/dL: encaminhar ao PNAR.<br>\n        - <strong>Profilaxia Intraparto para EGB:</strong> Indicada se cultura positiva, urocultura com EGB em qualquer momento da gestação ou filho anterior com sepse por EGB. Profilaxia intraparto feita com Penicilina Cristalina ou Ampicilina endovenosa a cada 4h até o clampeamento do cordão."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "5.3 Suplementação Nutricional e Imunização Gestacional Recomendadas pelo MS"
+        ],
+        [
+          "u",
+          [
+            "<strong>Ácido Fólico:</strong> 0,4 mg/dia (400 mcg) por via oral iniciando-se preferencialmente <strong>3 meses antes da concepção</strong> e mantendo-se até o final do 1º trimestre (12 semanas) para prevenir Defeitos do Tubo Neural (DTN - anencefalia, espinha bífida). Se histórico prévio de filho com DTN ou uso de anticonvulsivantes antifolato (carbamazepina, ácido valproico), a dose deve ser elevada para <strong>4 a 5 mg/dia</strong>.",
+            "<strong>Sulfato Ferroso:</strong> Suplementação universal de ferro profilático para todas as gestantes a partir da 20ª semana de gestação com <strong>40 mg de ferro elementar por dia</strong> (equivalente a 200 mg de sulfato ferroso), mantendo-se até o 3º mês pós-parto em puérperas lactantes.",
+            "<strong>Calendário Vacinal da Gestante (PNI / SUS):</strong>\n    <ul>\n      <li><em>dTpa (Difteria, Tétano e Coqueluche acelular):</em> Uma dose a cada gestação a partir da <strong>20ª semana</strong> (idealmente entre a 27ª e 36ª semana) para transferência transplacentária de anticorpos protetores contra a coqueluche ao recém-nascido.",
+            "<em>Hepatite B:</em> Completar esquema de 3 doses em qualquer idade gestacional se não imunizada previamente.",
+            "<em>Influenza (Gripe):</em> Dose anual da vacina inativada em qualquer período da gestação.",
+            "<em>Covid-19:</em> Conforme cronograma oficial do Ministério da Saúde com vacinas aprovadas para o ciclo gravídico."
+          ]
+        ]
+      ]
+    ],
+    [
+      "violencia-domestica-sexual-maria-da-penha-notificacao",
+      0,
+      [
+        [
+          "2",
+          "6. Abordagem da Violência Doméstica e Sexual na APS: Lei Maria da Penha, Notificação Compulsória e Protocolo de Profilaxia Pós-Exposição"
+        ],
+        [
+          "3",
+          "6.1 A Violência de Gênero como Fenômeno Complexo de Saúde Pública"
+        ],
+        [
+          "p",
+          "A violência contra a mulher configura uma grave violação de direitos humanos e um dos mais prevalentes determinantes de sofrimento mental e adoecimento físico na Atenção Primária à Saúde. Longe de ser um conflito meramente conjugal ou 'privado', a violência doméstica é fruto de estruturas patriarcais históricas de assimetria de poder e opressão de gênero. No Brasil, os serviços de saúde desempenham papel estratégico na quebra do ciclo de violência, acolhimento integral, atendimento de urgências clínicas e acionamento da rede de proteção intersetorial."
+        ],
+        [
+          "4",
+          "As Cinco Formas de Violência Doméstica e Familiar segundo a Lei Maria da Penha (Lei nº 11.340/2006)"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Violência Física:</strong> Qualquer conduta que ofenda a integridade ou a saúde corporal da mulher (empurrões, tapas, socos, mordidas, queimaduras, espancamento, uso de armas brancas ou de fogo, estrangulamento/esganadura).",
+            "<strong>2. Violência Psicológica:</strong> Qualquer conduta que cause dano emocional, diminuição da autoestima, perturbe o pleno desenvolvimento ou vise a degradar ou controlar suas ações, comportamentos, crenças e decisões (ameaças, humilhações públicas, isolamento de amigos e familiares, vigilância constante de celular e redes sociais, perseguição continuada / <em>stalking</em>, chantagem, insultos, ridicularização, distorção da realidade para fazê-la crer que está louca / <em>gaslighting</em>).",
+            "<strong>3. Violência Sexual:</strong> Qualquer conduta que constranja a mulher a presenciar, a manter ou a participar de relação sexual não desejada, mediante coação, intimidação, força física ou ameaça; que a induza a anular ou diminuir seus direitos sexuais e reprodutivos (forçar relação sem preservativo, impedir o uso de contraceptivos, obrigar ao aborto ou forçar a gravidez, estupro conjugal, comercialização ou exploração sexual).",
+            "<strong>4. Violência Patrimonial:</strong> Qualquer conduta que configure retenção, subtração, destruição parcial ou total de seus objetos, instrumentos de trabalho, documentos pessoais, bens, valores e direitos ou recursos econômicos, incluindo a retenção indevida do salário ou benefício social (ex.: Bolsa Família).",
+            "<strong>5. Violência Moral:</strong> Qualquer conduta que configure <strong>calúnia</strong> (imputar falsamente fato definido como crime), <strong>difamação</strong> (imputar fato desonroso à sua reputação perante terceiros) ou <strong>injúria</strong> (ofender a sua dignidade e decoro com xingamentos e termos pejorativos)."
+          ]
+        ],
+        [
+          "3",
+          "6.2 Identificação e Manejo Clínico na APS: O Ciclo da Violência de Leonor Walker"
+        ],
+        [
+          "p",
+          "Na grande maioria das vezes, a mulher em situação de violência não revela espontaneamente a agressão na primeira consulta. Ela consulta repetidamente na UBS com queixas vagas e somatoformes inespecíficas: cefaleia tensional crônica, dor pélvica sem foco orgânico, gastralgia, insônia refratária, crises de pânico, hematomas com justificativas inverossímeis ('caí da escada', 'bati na porta') e consultas frequentemente acompanhadas por parceiro excessivamente controlador que não permite que ela fale sozinha."
+        ],
+        [
+          "p",
+          "O profissional da ESF deve compreender a dinâmica psicodinâmica do <strong>Ciclo da Violência</strong>, descrito por Leonor Walker em três fases recorrentes:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Fase 1: Construção da Tensão:</strong> O agressor demonstra irritabilidade crescente, agressões verbais veladas, acessos de raiva, ciúme doentio e quebra de objetos. A mulher tenta acalmar o parceiro, assume a culpa e vive em estado de alerta e angústia permanentes.",
+            "<strong>Fase 2: Explosão / Agressão Aguda:</strong> Ocorre a violência física, sexual ou psicológica grave e incontrolável. É o momento de maior risco de lesão corporal grave, tentativa de suicídio ou feminicídio.",
+            "<strong>Fase 3: Lua de Mel / Reconciliação:</strong> O agressor demonstra arrependimento dramático, chora, pede perdão de joelhos, compra presentes e jura que 'nunca mais se repetirá'. A mulher, fragilizada emocionalmente e por vezes dependente financeiramente, acredita na mudança e retoma a convivência. Com o passar do tempo, essa fase torna-se cada vez mais curta e a tensão recomeça, gerando uma espiral de gravidade crescente."
+          ]
+        ],
+        [
+          "3",
+          "6.3 Notificação Compulsória e Aspectos Jurídicos: Sigilo versus Obrigatoriedade Legal"
+        ],
+        [
+          "p",
+          "Este é um dos tópicos mais cobrados em concursos médicos e que mais geram dúvidas éticas e legais na prática clínica:"
+        ],
+        [
+          "4",
+          "Notificação Compulsória no SINAN (Sistema de Informação de Agravos de Notificação)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Obrigatoriedade e Finalidade Epidemiológica:</strong> Toda e qualquer suspeita ou confirmação de violência doméstica, sexual e/ou outras violências interpessoais atendida em serviços de saúde públicos ou privados é de <strong>NOTIFICAÇÃO COMPULSÓRIA IMEDIATA (em até 24 horas para violência sexual e tentativa de suicídio)</strong> mediante o preenchimento da <em>Ficha de Notificação/Investigação Individual de Violência Interpessoal/Autoprovocada</em>.",
+            "<strong>Finalidade Estritamente Sanitária:</strong> A notificação compulsória tem finalidade exclusivamente epidemiológica, de vigilância em saúde e formulação de políticas públicas. <strong>A notificação no SINAN NÃO é denúncia policial</strong>, não aciona a polícia civil e não inicia inquérito criminal.",
+            "<strong>Autorização da Paciente:</strong> Para o envio da ficha epidemiológica do SINAN à Vigilância Epidemiológica municipal, <strong>NÃO é necessária a autorização da mulher adulta capaz</strong>, pois se trata de um dever sanitário funcional do profissional de saúde resguardado por lei federal (Lei nº 10.778/2003). O sigilo dos dados é rigorosamente garantido pelo setor de vigilância.",
+            "<strong>Comunicação Policial Externa (Lei nº 13.931/2019):</strong> A Lei Federal nº 13.931/2019 estabeleceu que os casos de violência contra a mulher atendidos em serviços de saúde devem ser comunicados à autoridade policial em 24 horas para fins estatísticos. Contudo, <strong>o Código de Ética Médica e pareceres do Conselho Federal de Medicina (CFM) e Ministério da Saúde determinam que o médico NÃO deve realizar a denúncia criminal nominal na delegacia de polícia contra a vontade expressa de uma mulher adulta e lúcida</strong>, sob risco de quebrar o sigilo profissional, destruir o vínculo terapêutico e expor a vítima a retaliações violentas e feminicídio imediato pelo agressor.",
+            "<strong>Exceção Absoluta de Proteção Integral:</strong> Se a vítima for <strong>criança, adolescente (menor de 18 anos), idosa incapaz ou pessoa com deficiência intelectual</strong>, o sigilo profissional é expressamente quebrado por força do Estatuto da Criança e do Adolescente (ECA - Art. 13 e 245) e Estatuto da Pessoa Idosa, sendo <strong>mandatória a comunicação imediata ao Conselho Tutelar, Ministério Público e Delegacia de Polícia Especializada</strong>."
+          ]
+        ],
+        [
+          "3",
+          "6.4 Protocolo de Atendimento Clínico de Urgência à Vítima de Violência Sexual (MS)"
+        ],
+        [
+          "p",
+          "A violência sexual constitui uma emergência médica absoluta que deve ser acolhida prioritariamente em qualquer ponto de atenção da rede de saúde, sem a exigência de Boletim de Ocorrência (B.O.), exame pericial no Instituto Médico Legal (IML) ou autorização judicial (amparo na Lei nº 12.845/2013 — Lei do Minuto Seguinte):"
+        ],
+        [
+          "t",
+          [
+            "Eixo Terapêutico",
+            "Janela Temporal",
+            "Medicação / Esquema Terapêutico Padronizado"
+          ],
+          [
+            [
+              "<strong>Contracepção de Emergência</strong>",
+              "<strong>Até 72 horas</strong> pós-estupro (ótima); eficácia residual até 120 horas.",
+              "<strong>Levonorgestrel 1,5 mg VO em dose única</strong> (ou dois comprimidos de 0,75 mg tomados juntos). Se a mulher já estiver usando método de alta eficácia (ex.: DIU ou implante), a contracepção hormonal de emergência pode ser dispensada."
+            ],
+            [
+              "<strong>Profilaxia Pós-Exposição ao HIV (PEP Sexual)</strong>",
+              "<strong>Idealmente nas primeiras 2 horas; limite máximo estrito de até 72 horas</strong> após o contato sexual.",
+              "<strong>Esquema Preferencial Adulto do MS por 28 dias consecutivos:</strong><br>\n        - <strong>Tenofovir (TDF) 300 mg + Lamivudina (3TC) 300 mg</strong> (1 comprimido coformulado 1x ao dia);<br>\n        - ASSOCIADO A <strong>Dolutegravir (DTG) 50 mg</strong> (1 comprimido 1x ao dia).<br>\n        <em>Realizar teste rápido de HIV antes do início da PEP (se teste rápido já for positivo prévio, não é profilaxia, mas manejo de infecção crônica).</em>"
+            ],
+            [
+              "<strong>Profilaxia da Hepatite B</strong>",
+              "<strong>Até 14 dias</strong> pós-exposição (ideal nas primeiras 48-72h).",
+              "- Se vítima <strong>não vacinada ou com esquema incompleto:</strong> iniciar esquema vacinal completo contra Hepatite B (doses nos meses 0, 1 e 6) + administrar <strong>Imunoglobulina Humana Hiperimune contra Hepatite B (IGHAHB) 0,06 mL/kg IM</strong> em sítio anatômico diferente da vacina.<br>\n        - Se vacinada com Anti-HBs comprovadamente &ge; 10 mUI/mL: não necessita profilaxia."
+            ],
+            [
+              "<strong>Profilaxia das ISTs Bacterianas Não Virais (Sífilis, Gonorreia, Clamídia e Tricomoníase)</strong>",
+              "Imediata na admissão (mesmo dia).",
+              "<strong>Tratamento Sindrômico Triplo de Cobertura Ampliada:</strong><br>\n        - <strong>Penicilina Benzatina:</strong> 2,4 milhões UI IM (1,2 milhão UI em cada glúteo) dose única (prevenção de Sífilis);<br>\n        - <strong>Ceftriaxona:</strong> 500 mg IM dose única (prevenção de <em>Neisseria gonorrhoeae</em>);<br>\n        - <strong>Azitromicina:</strong> 1 g (1.000 mg) VO dose única (prevenção de <em>Chlamydia trachomatis</em>);<br>\n        - <strong>Metronidazol:</strong> 2 g (4 comprimidos de 500 mg) VO dose única (prevenção de <em>Trichomonas vaginalis</em>)."
+            ],
+            [
+              "<strong>Profilaxia do Tétano</strong>",
+              "Conforme presença de escoriações ou lesões perfurocortantes.",
+              "Avaliar situação vacinal antitetânica e administrar reforço de dT ou Soro/Imunoglobulina Antitetânica se indicado."
+            ],
+            [
+              "<strong>Coleta de Vestígios Forenses e Suporte Psicológico</strong>",
+              "Imediata (se serviço de referência com protocolo de custódia).",
+              "Orientar a mulher a não tomar banho, não trocar de roupa e não urinar antes da coleta de sêmen/DNA quando possível; atendimento psicológico emergencial imediato e articulação em rede."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "climaterio-sexualidade-e-diversidade-na-aps",
+      0,
+      [
+        [
+          "2",
+          "7. Climatério, Sexualidade Feminina e Atenção Integral às Mulheres Negras, Indígenas e LGBTQIA+"
+        ],
+        [
+          "3",
+          "7.1 Abordagem do Climatério e Menopausa na Atenção Primária"
+        ],
+        [
+          "p",
+          "O <strong>climatério</strong> é a fase biológica de transição entre o período reprodutivo e o não reprodutivo da mulher, iniciando-se habitualmente por volta dos 40 a 45 anos e estendendo-se até os 65 anos. A <strong>menopausa</strong> é um marco retrospectivo, definido clinicamente pela ausência de menstruação (amenorreia) espontânea por <strong>12 meses consecutivos</strong> em mulher na faixa etária correspondente, decorrente da perda definitiva da atividade folicular ovariana (idade média no Brasil: 48 a 51 anos)."
+        ],
+        [
+          "p",
+          "O diagnóstico do climatério e menopausa é <strong>essencialmente clínico</strong> na mulher com idade superior a 45 anos com irregularidade menstrual associada a sintomas vasomotores. A dosagem laboratorial de FSH, LH ou estradiol é desnecessária e contraproducente na grande maioria dos casos de risco habitual (prevenção quaternária), sendo reservada para suspeita de Falência Ovariana Prematura / Insuficiência Ovariana Prematura (IOP) antes dos 40 anos."
+        ],
+        [
+          "4",
+          "Terapia Hormonal da Menopausa (THM): A Janela de Oportunidade e Segurança Clínica"
+        ],
+        [
+          "u",
+          [
+            "<strong>Janela de Oportunidade Terapêutica:</strong> O benefício cardiovascular e global da THM é máximo quando iniciada em mulheres com <strong>menos de 60 anos de idade OU com menos de 10 anos de menopausa</strong>. Iniciar THM após os 60 anos ou após mais de 10 anos de menopausa eleva o risco de eventos tromboembólicos e desestabilização de placas ateroscleróticas pré-existentes.",
+            "<strong>Principal Indicação Clínica:</strong> Sintomas vasomotores moderados a graves (fogachos, sudorese noturna em ondas) que prejudiquem a qualidade de vida e o sono da mulher.",
+            "<strong>Regra de Ouro da Proteção Endometrial:</strong>\n      <ul>\n        <li><strong>Mulher COM ÚTERO:</strong> É MANDATÓRIO associar <strong>Estrogênio + Progestágeno</strong> (ou modulador seletivo de receptor de estrogênio - SERM/bazedoxifeno). O estrogênio isolado sem oposição de progestágeno estimula a proliferação endometrial descontrolada, elevando exponencialmente o risco de hiperplasia atípica e Câncer de Endométrio.",
+            "<strong>Mulher HISTERECTOMIZADA (SEM ÚTERO):</strong> Utiliza <strong>Estrogênio ISOLADO</strong>. Não há necessidade de progestágeno, evitando o pequeno acréscimo no risco de câncer de mama associado ao uso continuado de progestágenos sintéticos."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n    <li><strong>Contraindicações Absolutas à THM:</strong> Câncer de mama atual ou prévio; câncer de endométrio prévio ou lesões precursoras atípicas não tratadas; sangramento uterino anormal de causa desconhecida (investigar antes); evento tromboembólico venoso ativo ou prévio (TVP/TEP); cardiopatia isquêmica ou AVC prévios; doença hepática ativa aguda grave; porfiria cutânea tardia.</li>\n    <li><strong>Manejo da Síndrome Geniturinária da Menopausa (Atrofia Vulvovaginal / Ressecamento / Dispareunia):</strong> O tratamento padrão de escolha é o <strong>Estrogênio Tópico Vaginal em baixas doses</strong> (estriol ou promestrieno em creme ou óvulos), com absorção sistêmica praticamente insignificante, não demandando oposição de progestágeno mesmo em mulheres com útero preservado. Alternativas não hormonais: hidratantes vaginais de base hialurônica de uso contínuo associados a lubrificantes à base de água durante o coito.</li>\n  </ul>\n</div>"
+        ],
+        [
+          "3",
+          "7.2 Sexualidade Feminina na APS: Superando Tabus"
+        ],
+        [
+          "p",
+          "A sexualidade é um aspecto indissociável da saúde integral da mulher, influenciada por fatores biológicos, psicológicos, afetivos e socioculturais. As disfunções sexuais femininas — divididas didaticamente pelo DSM-5 em <em>Transtorno do Desejo Sexual Hipoativo / Excitação Feminina, Transtorno do Orgasmo Feminino e Transtorno da Dor Gênito-Pélvica/Penetração (Dispareunia e Vaginismo)</em> — são extraordinariamente prevalentes na atenção básica, porém raramente investigadas pelos profissionais de saúde."
+        ],
+        [
+          "p",
+          "A abordagem deve ser proativa, acolhedora e desprovida de pré-julgamentos, utilizando instrumentos de facilitação da anamnese como o mnemônico <strong>ALARM</strong> (<em>Activity, Libido, Arousal, Resolution, Medical conditions</em>) ou o modelo <strong>PLISSIT</strong> (<em>Permission, Limited Information, Specific Suggestions, Intensive Therapy</em>), permitindo que a paciente fale abertamente sobre dores no ato sexual, uso de medicamentos inibidores de libido (como antidepressivos inibidores seletivos de recaptação de serotonina - ISRS) e insatisfação no relacionamento."
+        ],
+        [
+          "3",
+          "7.3 Equidade na APS: Mulheres Negras, Indígenas e População LGBTQIA+"
+        ],
+        [
+          "p",
+          "A Política Nacional de Atenção Integral à Saúde da Mulher preconiza o enfrentamento das desigualdades étnico-raciais e de gênero estruturais, demandando competência cultural e clínica da equipe de Saúde da Família:"
+        ],
+        [
+          "t",
+          [
+            "Grupo Populacional",
+            "Vulnerabilidades e Condições Clínicas Prioritárias",
+            "Estratégias de Equidade na APS"
+          ],
+          [
+            [
+              "<strong>Mulheres Negras (Pretas e Pardas)</strong>",
+              "- Maior incidência de <strong>Hipertensão Arterial Sistêmica grave</strong> e de início precoce, Pré-eclâmpsia e Eclâmpsia gestacional;<br>\n        - Alta prevalência de <strong>Anemia Falciforme e Traço Falcêmico</strong> (triagem obrigatória com eletroforese de hemoglobina);<br>\n        - Maior taxa de miomatose uterina volumosa precoce;<br>\n        - <strong>Racismo Institucional na Saúde:</strong> maiores taxas de mortalidade materna evitável, menor recebimento de anestesia em procedimentos obstétricos e menor tempo de consulta registrado em pesquisas nacionais.",
+              "- Busca ativa de gestantes negras para captação precoce no pré-natal;<br>\n        - Monitoramento rigoroso da pressão arterial e rastreio de pré-eclâmpsia com profilaxia com AAS em baixas doses e cálcio na gestação quando indicado;<br>\n        - Desconstrução do mito racista de que 'mulheres negras são biologicamente mais resistentes à dor';<br>\n        - Oferta ativa de eletroforese de hemoglobina no planejamento reprodutivo."
+            ],
+            [
+              "<strong>Mulheres Indígenas</strong>",
+              "- Dificuldades de acesso geográfico às UBS;<br>\n        - Barreiras linguísticas e culturais;<br>\n        - Elevadas taxas de desnutrição materno-infantil, anemia ferropriva, infecções respiratórias e diarreicas;<br>\n        - Aumento da prevalência de obesidade, diabetes mellitus e hipertensão associados a mudanças no padrão alimentar tradicional.",
+              "- Articulação direta da APS com os Distritos Sanitários Especiais Indígenas (DSEI) e Casas de Saúde Indígena (CASAI);<br>\n        - Presença obrigatória de Agentes Indígenas de Saúde (AIS) e intérpretes comunitários;<br>\n        - Respeito irrestrito aos saberes e práticas da medicina tradicional indígena (parto de cócoras, uso de ervas e rituais de reza), integrando-os de forma harmoniosa aos cuidados biomédicos necessários."
+            ],
+            [
+              "<strong>Mulheres Lésbicas e Bissexuais</strong>",
+              "- <strong>Invisibilidade nos serviços de saúde:</strong> presunção universal heteronormativa em anamneses ginecológicas ('Você usa anticoncepcional para não engravidar?');<br>\n        - Mito errôneo de que não transmitem ISTs ou que não necessitam de rastreamento de câncer de colo de útero;<br>\n        - Elevada taxa de evasão de consultas preventivas e sofrimento mental decorrente de discriminação (lesbofobia).",
+              "- Perguntas abertas e inclusivas na anamnese sexual ('Você tem parcerias sexuais com homens, mulheres ou ambos?');<br>\n        - <strong>Garantia de rastreamento de colo de útero:</strong> o HPV é transmitido por contato genital/mucosa entre mulheres (fômites, dedos, sexo oral/vaginal), mantendo-se a mesma indicação formal de citopatológico (25 a 64 anos);<br>\n        - Orientações sobre barreiras de proteção para sexo entre mulheres (preservativos cortados, filme de PVC, luvas de látex)."
+            ],
+            [
+              "<strong>Homens Trans e Pessoas Não Binárias com Útero</strong>",
+              "- Discriminação transfóbica intensa nos serviços de saúde, desrespeito ao nome social;<br>\n        - Evasão completa de exames ginecológicos preventivos;<br>\n        - Efeitos da terapia de hormonização cruzada com testosterona (atrofia endometrial e vaginal intensa, amenorreia, mas persistência potencial de ovulação e risco de gestação não planejada).",
+              "- Respeito irrestrito e obrigatório ao <strong>Nome Social</strong> no prontuário, ficha de acolhimento e chamadas de sala (Portaria MS nº 1.820/2009);<br>\n        - <strong>Manutenção do rastreamento de colo de útero:</strong> enquanto mantiver cérvice uterina, deve realizar citopatológico convencional na faixa de 25 a 64 anos;<br>\n        - Cuidados na coleta: a atrofia induzida pela testosterona torna o colo estenótico e doloroso; o uso prévio de estrogênio tópico vaginal por 10-14 dias antes da coleta pode ser discutido para viabilizar o exame sem sangramento excessivo;<br>\n        - Oferta de contracepção livre de estrogênio (DIU de cobre, DIU com levonorgestrel) se mantiver relações com pessoas produtoras de espermatozoides."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-e-questoes-comentadas",
+      0,
+      [
+        [
+          "2",
+          "8. Casos Clínicos Estruturados e Questões Comentadas de Concursos Médicos"
+        ],
+        [
+          "3",
+          "8.1 Casos Clínicos da Prática na Atenção Primária à Saúde"
+        ],
+        [
+          "4",
+          "Caso Clínico 1: Rastreamento Citopatológico e Conduta diante de ASC-US"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Mariana, 26 anos, primigesta prévia com um parto cesáreo, procura a UBS do seu bairro para consulta de rotina ginecológica. Encontra-se assintomática, em uso de preservativo masculino irregular com parceiro fixo há 2 anos. Nega comorbidades ou uso de medicações."
+        ],
+        [
+          "p",
+          "<strong>Histórico Citológico:</strong> Realizou citopatológico de colo uterino no ano anterior, com resultado negativo para neoplasia (normal). Coletou novo exame há 20 dias na UBS. O laudo recebido hoje relata: 'Amostra satisfatória com representação de epitélios escamoso e glandular. Conclusão: Atipias de Células Escamosas de Significado Indeterminado, Possivelmente Não Neoplásicas (ASC-US)'."
+        ],
+        [
+          "p",
+          "<strong>Dúvida da Paciente:</strong> Mariana entra na sala em pranto convulsivo, afirmando que está com câncer e perguntando se precisará retirar o útero."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta na APS:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<em>Acolhimento e Educação em Saúde:</em> O médico acolhe a angústia da paciente, explicando que ASC-US não é câncer. Trata-se de uma alteração celular branda e inespecífica que pode decorrer de inflamação local, regeneração tecidual ou efeito transitório do HPV.",
+            "<em>Aplicação da Diretriz do MS/INCA:</em> Mariana tem 26 anos (faixa etária de 25 a 29 anos). Segundo a diretriz oficial do Ministério da Saúde/INCA, a conduta para mulheres de 25 a 29 anos com laudo de ASC-US é <strong>REPETIR A CITOPATOLOGIA CERVICAL EM 12 MESES na própria Unidade Básica de Saúde</strong>. Não está indicado encaminhamento imediato para colposcopia. Se ela tivesse &ge; 30 anos, o prazo para repetição seria de 6 meses.",
+            "<em>Plano Conjunto:</em> Orientações sobre hábitos de vida saudáveis, uso consistente de preservativo, reafirmação da consulta em 12 meses e tranquilização da paciente."
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 2: Acolhimento de Violência Doméstica Velada e Construção do Vínculo"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Valéria, 38 anos, do lar, casada há 15 anos, mãe de três filhos, comparece pela 4ª vez no mesmo semestre à UBS referindo queixa de 'dores no corpo inteiro', insônia refratária e palpitações súbitas. Já passou por avaliações prévias com exames laboratoriais normais e prescrições de analgésicos."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Lúcida, afetuosa, porém com olhar esquivo e choro fácil. Durante o exame físico segmentar, o médico nota duas equimoses arroxeadas de 3 cm em face interna do braço esquerdo em estágios distintos de resolução. Ao ser questionada gentilmente sobre as lesões, ela hesita, baixa a cabeça e diz que 'esbarrou com força no batente da porta da cozinha'. O marido encontra-se na sala de espera exigindo entrar."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Multiprofissional na APS:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<em>Garantia de Privacidade:</em> O médico mantém o atendimento individual da paciente, orientando a equipe de recepção a manter o esposo na sala de espera de forma cortês.",
+            "<em>Escuta Empática Não Inquisitória:</em> O profissional valida o sofrimento da paciente: 'Valéria, vejo que você tem carregado um peso enorme e essas dores podem ter relação com o que você está vivenciando em casa. Sei que muitas mulheres passam por situações de agressão ou controle excessivo. Você se sente segura em sua casa?'.",
+            "<em>Revelação e Segurança:</em> A paciente revela que o esposo a insulta diariamente, controla seu dinheiro, quebrou seu telefone e a agrediu fisicamente na noite anterior ao chegar alcoolizado. O médico avalia o risco iminente de morte (ele possui armas? ameaçou matá-la?). Valéria afirma que ele não tem armas, mas ela teme pela integridade dos filhos.",
+            "<em>Conduta Ético-Legal e Articulação em Rede:</em>\n      <ul>\n        <li>O médico <strong>NÃO realiza denúncia policial à revelia da paciente</strong>, respeitando a sua autonomia e prevenindo retaliações violentas do agressor;",
+            "Preenche a <strong>Ficha de Notificação Compulsória de Violência Interpessoal no SINAN</strong> (dever sanitário epidemiológico confidencial);",
+            "Articula suporte conjunto e sigiloso com a Assistente Social e Psicóloga do eMulti/NASF e apresenta os serviços de apoio da rede municipal (Centro de Referência de Atendimento à Mulher - CRAM e CRAS);",
+            "Disponibiliza os canais emergenciais de denúncia (Ligue 180 - Central de Atendimento à Mulher e Disque 190);",
+            "Constrói um plano de contingência de emergência (onde ela e os filhos podem se abrigar se houver nova crise?) e agenda retorno médico breve em 7 dias com o ACS alertado sobre a vulnerabilidade do domicílio."
+          ]
+        ],
+        [
+          "3",
+          "8.2 Questões de Provas de Residência Médica Comentadas"
+        ],
+        [
+          "4",
+          "Questão 1 (Revalida / Enare)"
+        ],
+        [
+          "p",
+          "Mulher de 52 anos, assintomática, sem antecedentes familiares de câncer de mama ou ovário em parentes de primeiro grau, comparece à Unidade Básica de Saúde para consulta de rotina da mulher. Refere que sua última menstruação ocorreu há 1 ano e 8 meses. Nunca realizou mamografia. No exame físico, as mamas são simétricas, sem retrações cutâneas, sem secreções papilares e sem nódulos palpáveis; axilas livres. De acordo com as diretrizes do Ministério da Saúde e do Instituto Nacional de Câncer (INCA), qual é a conduta correta em relação ao rastreamento mamográfico para esta paciente?"
+        ],
+        [
+          "p",
+          "A) Solicitar ultrassonografia mamária bilateral como exame inicial de escolha devido à idade climatérica.<br>\n  B) Solicitar mamografia bilateral com periodicidade bienal (a cada 2 anos).<br>\n  C) Solicitar mamografia bilateral associada à ressonância magnética das mamas anualmente.<br>\n  D) Não indicar mamografia de rastreamento, pois o Ministério da Saúde recomenda apenas o exame clínico anual das mamas.<br>\n  E) Solicitar mamografia anual até os 75 anos de idade."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial Comentado: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Comentário Didático:</em> De acordo com a Diretriz Brasileira para o Rastreamento do Câncer de Mama do Ministério da Saúde e INCA, a população-alvo para o rastreamento mamográfico de rotina compreende as mulheres na faixa etária de <strong>50 a 69 anos de idade</strong>, com periodicidade <strong>bienal (a cada 2 anos)</strong>. A paciente tem 52 anos e risco habitual (sem familiares de primeiro grau afetados), encaixando-se perfeitamente no protocolo ministerial. A alternativa A está errada, pois a ultrassonografia não é método de rastreamento populacional de escolha. A alternativa C é restrita a populações de altíssimo risco hereditário genético (mutações BRCA). A alternativa D é incorreta, pois a mamografia bienal é a recomendação oficial. A alternativa E reflete a diretriz de sociedades de especialidades privadas (SBM/Febrasgo), mas não a política pública do SUS/MS."
+        ],
+        [
+          "4",
+          "Questão 2 (SUS-SP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Mulher de 32 anos comparece à UBS desejando iniciar método contraceptivo hormonal oral. Durante a anamnese dirigida, relata histórico de enxaqueca com escotomas cintilantes e hemianopsia transitória precedendo crises intensas de dor pulsátil hemicraniana desde a adolescência. É tabagista moderada (10 cigarros/dia). Nega histórico de trombose, hipertensão ou diabetes. De acordo com os Critérios Médicos de Elegibilidade da Organização Mundial da Saúde (OMS), o uso de contraceptivo oral combinado de baixa dose para esta paciente é classificado como:"
+        ],
+        [
+          "p",
+          "A) Categoria 1 (Uso sem qualquer restrição).<br>\n  B) Categoria 2 (Vantagens superam os riscos).<br>\n  C) Categoria 3 (Riscos superam as vantagens).<br>\n  D) Categoria 4 (Contraindicação absoluta / Risco inaceitável à saúde).<br>\n  E) Categoria 2 se o tabagismo for inferior a 15 cigarros por dia."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial Comentado: Alternativa D.</strong>"
+        ],
+        [
+          "p",
+          "<em>Comentário Didático:</em> A paciente apresenta <strong>enxaqueca com aura</strong> (escotomas cintilantes e hemianopsia transitória antes da cefaleia). Nos Critérios Médicos de Elegibilidade da OMS e Ministério da Saúde, a presença de enxaqueca com aura em qualquer idade configura <strong>CATEGORIA 4 (Contraindicação Absoluta)</strong> para qualquer método contraceptivo contendo estrogênio (combinados orais, injetáveis mensais, adesivos ou anel vaginal), devido ao risco exponencial de Acidente Vascular Cerebral Isquêmico (AVCi). Além disso, a combinação de tabagismo agrava ainda mais o perfil endotelial. Para esta paciente, métodos seguros incluem progestágenos isolados (DIU de levonorgestrel, implante de etonogestrel, pílula de desogestrel) ou métodos não hormonais (DIU de cobre), todos classificados como Categoria 1 ou 2."
+        ],
+        [
+          "4",
+          "Questão 3 (USP-RP / Residência em Medicina de Família e Comunidade)"
+        ],
+        [
+          "p",
+          "Mulher de 23 anos, mãe de dois filhos vivos hígidos, casada civilmente, comparece à consulta com o médico de família manifestando desejo irrevogável de realizar esterilização cirúrgica definitiva (laqueadura tubária bilateral). Seu marido recusa-se a comparecer à unidade e já declarou expressamente que não concorda com o procedimento cirúrgico. Considerando as alterações introduzidas pela Lei Federal nº 14.443/2022 no planejamento familiar no Brasil, qual é a conduta jurídica e médica correta?"
+        ],
+        [
+          "p",
+          "A) A laqueadura não pode ser realizada, pois exige idade mínima de 25 anos ou três filhos vivos.<br>\n  B) O médico não pode realizar o encaminhamento para a cirurgia sem a expressa assinatura do cônjuge na constância do casamento.<br>\n  C) A paciente preenche os requisitos legais vigentes (possui dois filhos vivos e tem mais de 21 anos), sendo expressamente desnecessário o consentimento ou concordância do cônjuge.<br>\n  D) A laqueadura só poderá ser autorizada se houver autorização prévia por via de alvará judicial suprimindo o consentimento do marido.<br>\n  E) A paciente pode realizar o procedimento apenas se optar por método reversível de longa ação durante o prazo obrigatório de 180 dias de reflexão."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial Comentado: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<em>Comentário Didático:</em> A Lei Federal nº 14.443/2022 revolucionou a esterilização voluntária no Brasil em dois pontos cardinais: 1) Reduziu a idade mínima para 21 anos de idade (mantendo a alternativa de ter pelo menos 2 filhos vivos em qualquer idade — a paciente preenche ambos os critérios!); 2) <strong>Revogou integralmente a exigência do consentimento de cônjuge ou companheiro</strong> na constância da sociedade conjugal. A decisão pela laqueadura ou vasectomia é estritamente pessoal e autônoma do indivíduo. Exige-se apenas a manifestação formal de vontade e o decurso do prazo mínimo legal de 60 dias entre a manifestação e a cirurgia com aconselhamento sobre reversibilidade e métodos alternativos."
+        ]
+      ]
+    ]
+  ]
+}

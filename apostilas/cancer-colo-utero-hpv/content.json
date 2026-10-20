@@ -1,1 +1,1436 @@
-{"v":2,"s":"cancer-colo-utero-hpv","t":"Câncer do colo do útero e HPV","p":"Câncer do colo do útero e HPV","o":[["resumo","Em 30 segundos"],["anatomia","Anatomia e zona de transformação"],["hpv","HPV e carcinogênese"],["prevencao","Vacinação e prevenção"],["rastreamento","Rastreamento brasileiro"],["hpv-algoritmo-aplicado","Algoritmo comentado de rastreamento"],["citologia","Citologia e histologia"],["colposcopia","Colposcopia"],["colposcopia-lesoes-avancado","Colposcopia avançada"],["clinica","Clínica e diagnóstico"],["estadiamento","FIGO 2018"],["tratamento","Tratamento"],["figo-conduta-integrada-2026","FIGO e decisões oncológicas"],["especiais","Situações especiais"],["seguimento-situacoes-especiais-casos","Especialidades e exceções comentadas"],["seguimento","Seguimento"],["casos","Casos clínicos"],["integracao-clinica-lote09","Integração clínica e linha de cuidado"],["casos-aprofundados-lote09","Casos clínicos aprofundados"],["questoes-autorais-lote09","Questões comentadas LURIA"],["revisao","Revisão de prova"],["aprofundamento-2026","Aprofundamento: persistência viral, colposcopia e transição do rastreamento para o diagnóstico"],["editorial-depth-2026","Aprofundamento etiológico e decisões clínicas"],["referencias","Referências"]],"h":["Apostila LURIA","Câncer do colo do útero e HPV","Da infecção pelo HPV à prevenção, rastreamento, lesões precursoras, diagnóstico, FIGO e tratamento",["Área: Ginecologia e Obstetrícia","Matéria: Oncoginecologia","Tema: Colo uterino e HPV"],0],"q":[["resumo",0,[["2","Em 30 segundos"],["u",["A quase totalidade dos cânceres cervicais está relacionada à <strong>persistência de HPV oncogênico</strong>; HPV 16 e 18 concentram grande parte do risco.","A sequência-chave é <strong>infecção transitória → persistência → lesão precursora → invasão</strong>. A maioria das infecções regride espontaneamente.","O Brasil adotou rastreamento primário com <strong>DNA-HPV oncogênico</strong>, com implementação progressiva desde 2025, para pessoas com colo uterino de 25 a 64 anos que já tiveram atividade sexual.","DNA-HPV negativo: novo teste em <strong>5 anos</strong>. HPV 16/18 detectável: <strong>colposcopia</strong>. Outros tipos oncogênicos: <strong>citologia reflexa</strong>.","Se outros HPV oncogênicos persistirem por 24 meses, a indicação é colposcopia mesmo com citologia reflexa negativa.","Em HIV/imunodepressão/imunossupressão: iniciar após atividade sexual, DNA-HPV negativo a cada 3 anos e qualquer HPV oncogênico positivo leva à colposcopia.","Sintoma de alarme ou lesão visível <strong>não é cenário de rastreamento</strong>: exige investigação diagnóstica.","Câncer invasivo só é confirmado por <strong>histopatologia</strong>. Citologia e HPV não estadiam câncer.","FIGO IIIC1 = linfonodos pélvicos; FIGO IIIC2 = para-aórticos. Sufixo r = imagem; p = patologia.","Doença localmente avançada costuma ser tratada com <strong>quimiorradioterapia concomitante + braquiterapia</strong>."],0],["x","<div class=\"book-callout\"><strong>Pulo do Gato</strong>Vacina = prevenção primária. Rastreamento = prevenção secundária. Biópsia = confirmação diagnóstica. FIGO = extensão da doença. Não misture essas quatro etapas.</div>"]]],["anatomia",0,[["2","1. Anatomia funcional do colo e zona de transformação"],["p","O colo uterino é revestido externamente por epitélio escamoso e, no canal endocervical, por epitélio glandular colunar. A junção entre esses epitélios é a <strong>junção escamocolunar</strong>. Ao longo da vida, influência hormonal, pH vaginal e metaplasia deslocam essa junção, criando a <strong>zona de transformação</strong>, região onde se originam a maioria das lesões precursoras escamosas."],["x","<div class=\"book-grid-3\">\n              <div class=\"book-mini\"><strong>Zona de transformação tipo 1</strong><p>Totalmente ectocervical e completamente visível.</p></div>\n              <div class=\"book-mini\"><strong>Tipo 2</strong><p>Tem componente endocervical, mas é completamente visível.</p></div>\n              <div class=\"book-mini\"><strong>Tipo 3</strong><p>Tem componente endocervical que não é totalmente visível; é comum após a menopausa.</p></div>\n            </div>"],["3","Por que isso importa?"],["p","Porque a visibilidade da zona de transformação determina a qualidade da colposcopia e influencia se uma estratégia ablativa é apropriada ou se é necessária excisão diagnóstica/terapêutica. Lesões glandulares podem estar mais altas no canal e escapar de uma inspeção ectocervical aparentemente normal."]]],["hpv",0,[["2","2. HPV: biologia, persistência e carcinogênese"],["p","HPV é um vírus DNA com tropismo por epitélio escamoso. A infecção ocorre por contato sexual pele-mucosa; penetração completa não é necessária. Preservativos reduzem a transmissão, mas não eliminam o risco porque áreas não cobertas também podem participar do contato."],["3","2.1 Tipos de maior relevância"],["p","Os tipos de alto risco incluem, entre outros, 16, 18, 31, 33, 35, 39, 45, 51, 52, 56, 58 e 59. Os tipos 16 e 18 têm especial importância por concentrarem parcela expressiva dos cânceres cervicais."],["x","<div class=\"flow\">\n              <div class=\"flow-step\"><b>Exposição</b><small>microabrasões permitem acesso às células basais</small></div>\n              <div class=\"flow-step\"><b>Infecção</b><small>replicação viral geralmente transitória</small></div>\n              <div class=\"flow-step\"><b>Persistência</b><small>HPV oncogênico não é eliminado</small></div>\n              <div class=\"flow-step\"><b>HSIL/AIS</b><small>instabilidade genômica e displasia</small></div>\n              <div class=\"flow-step\"><b>Invasão</b><small>ruptura da membrana basal</small></div>\n            </div>"],["3","2.2 E6 e E7"],["p","<strong>E6</strong> favorece degradação funcional de p53 e reduz apoptose/resposta ao dano genético. <strong>E7</strong> inativa pRb e libera fatores de transcrição E2F, favorecendo progressão do ciclo celular. A expressão persistente dessas oncoproteínas cria ambiente de proliferação, instabilidade cromossômica e seleção clonal."],["3","2.3 Integração viral"],["p","Em muitas lesões associadas a HPV de alto risco, a integração do DNA viral ao genoma da célula hospedeira contribui para desregulação de E6/E7. Entretanto, integração não é requisito absoluto em todos os tumores HPV-associados, e o ponto clínico permanece: <strong>persistência de HPV oncogênico</strong> é o marcador de risco mais importante no rastreamento."],["3","2.4 Cofatores"],["t",["Fator","Impacto"],[["Imunossupressão/HIV","Menor depuração viral, maior persistência, recorrência e progressão."],["Tabagismo","Associação consistente com persistência e carcinogênese escamosa."],["Maior exposição sexual","Aumenta probabilidade de adquirir HPV, mas não define comportamento individual."],["Rastreamento inadequado","Permite que lesões precursoras permaneçam sem diagnóstico/tratamento."],["Condições sociais desfavoráveis","Aumentam barreiras de vacinação, rastreamento, diagnóstico e tratamento."]],"book-table"]]],["prevencao",0,[["2","3. Prevenção primária: vacinação contra HPV"],["p","No calendário brasileiro de 2026, a vacinação de rotina contra HPV é recomendada para meninas e meninos de <strong>9 a 14 anos</strong> em esquema de dose única. O país também mantém estratégia de resgate para jovens de 15 a 19 anos sem histórico vacinal, conforme organização vigente do PNI."],["3","3.1 Grupos especiais"],["p","Pessoas vivendo com HIV, transplantados, pacientes oncológicos, usuários de PrEP em faixas definidas e vítimas de violência sexual podem ter esquemas específicos. A decisão deve seguir o calendário vigente e as orientações do CRIE/PNI."],["3","3.2 Pós-tratamento de lesão de alto grau"],["p","A <strong>Nota Técnica nº 32/2026 do Ministério da Saúde</strong> recomenda priorizar vacinação contra HPV para pessoas tratadas por <strong>NIC2, NIC3 ou adenocarcinoma in situ</strong> mediante procedimento excisional, independentemente da idade, com três doses nos meses 0, 2 e 6. A Nota define momento perioperatório ou até 12 meses após o tratamento e orienta prescrição médica e registro do diagnóstico. A aplicação prática depende da organização local da estratégia do PNI e da disponibilidade do imunobiológico; a nota não autoriza afirmar que toda paciente terá acesso imediato em qualquer serviço."],["x","<div class=\"book-callout\"><strong>Pulo do Gato</strong>A vacina reduz risco futuro, mas não trata uma infecção já estabelecida e não substitui o seguimento de quem já teve lesão de alto grau.</div>"]]],["rastreamento",0,[["2","4. Rastreamento brasileiro com DNA-HPV"],["p","O rastreamento é destinado a pessoas <strong>assintomáticas</strong>. A diretriz nacional aprovada em 2025 estabelece o teste molecular para DNA-HPV oncogênico como método primário, com implantação progressiva no SUS."],["3","4.1 Quem rastrear?"],["u",["Risco padrão: pessoas com colo uterino, 25 a 64 anos, após início da atividade sexual.","Não se recomenda rastreamento antes dos 25 anos em risco padrão.","Pessoas sem história de atividade sexual não devem ser submetidas ao rastreamento de rotina."],0],["3","4.2 Algoritmo após o primeiro teste"],["x","<div class=\"algo\">\n              <div class=\"algo-row\"><div class=\"algo-key\">DNA-HPV negativo</div><div class=\"algo-val\">Retornar ao rastreamento em <strong>5 anos</strong>.</div></div>\n              <div class=\"algo-row\"><div class=\"algo-key\">HPV 16 e/ou 18</div><div class=\"algo-val\"><strong>Colposcopia</strong>. Se a colposcopia não identificar lesão relevante, repetir DNA-HPV em 12 meses.</div></div>\n              <div class=\"algo-row\"><div class=\"algo-key\">Outros HPV oncogênicos</div><div class=\"algo-val\">Realizar <strong>citologia reflexa</strong>, preferencialmente na mesma amostra.</div></div>\n              <div class=\"algo-row\"><div class=\"algo-key\">Citologia ASC-US ou pior</div><div class=\"algo-val\">Encaminhar para <strong>colposcopia</strong>.</div></div>\n              <div class=\"algo-row\"><div class=\"algo-key\">Citologia negativa</div><div class=\"algo-val\">Repetir DNA-HPV em 12 meses.</div></div>\n            </div>"],["3","4.3 Persistência em 12 e 24 meses"],["u",["Se em 12 meses surgir HPV 16/18: colposcopia.","Se outro HPV oncogênico persistir e a nova citologia reflexa vier ASC-US ou pior: colposcopia.","Se outro HPV persistir em 12 meses, mas a citologia continuar negativa: repetir DNA-HPV em mais 12 meses.","Se aos <strong>24 meses</strong> qualquer HPV oncogênico continuar detectável: colposcopia, independentemente da nova citologia.","Se qualquer repetição se tornar DNA-HPV negativa: retornar ao intervalo de 5 anos."],0],["3","4.4 Quando encerrar?"],["p","Na população de risco padrão, um teste DNA-HPV negativo realizado <strong>acima dos 60 anos</strong> permite encerrar o rastreamento. Pessoas com história prévia de NIC2, NIC3 ou AIS devem manter acompanhamento por até 25 anos após o tratamento quando possível e aceitável."],["3","4.5 Onde DNA-HPV ainda não está disponível"],["p","Mantém-se a citologia convencional: iniciar aos 25 anos após atividade sexual; fazer dois exames anuais consecutivos e, se ambos normais, seguir com intervalo de três anos, até transição local para a nova estratégia."],["x","<div class=\"book-alert\"><strong>Atenção:</strong> sangramento pós-coito, pós-menopausa, corrimento sanguinolento/fétido ou lesão cervical visível tiram a paciente do rastreamento de rotina. O caminho passa a ser diagnóstico.</div>"]]],["hpv-algoritmo-aplicado",0,[["2","Rastreamento em 2026: algoritmo comentado da diretriz brasileira"],["p","A Portaria Conjunta SAES/SECTICS nº 13/2025 reorganiza o rastreamento brasileiro em torno do teste molecular para DNA-HPV oncogênico. Isso muda a ordem da decisão: primeiro perguntar se a pessoa está na população-alvo assintomática, depois identificar a genotipagem e, por último, escolher citologia reflexa, colposcopia ou retorno programado. DNA-HPV positivo identifica risco virológico; não diagnostica carcinoma. Um teste negativo não substitui investigação de sintomas nem vigilância após NIC2+."],["3","Passo 1 — verificar se a pessoa realmente está em rastreamento"],["p","Na população de risco padrão, o programa abrange pessoas com colo do útero entre 25 e 64 anos que já iniciaram atividade sexual. A diretriz recomenda não rastrear antes dos 25 anos, inclusive quando houve início sexual precoce, pela alta frequência de infecção transitória e risco de intervenções desnecessárias. Após os 60 anos, é possível encerrar após teste molecular negativo nessa faixa; se não houve teste anterior, realizar pelo menos um exame para orientar o encerramento. Histórico de tratamento de NIC2, NIC3 ou AIS muda essa regra e exige acompanhamento prolongado, por até 25 anos conforme diretriz. Quando há sangramento pós-coital persistente ou massa cervical, não usar a rotina de rastreamento como substituta de investigação diagnóstica."],["t",["Situação clínica","Exame ou ação","Por que não usar a mesma regra para todos"],[["Assintomática, 25–64 anos, risco padrão","DNA-HPV oncogênico validado; periodicidade guiada pelo resultado","A maior sensibilidade permite intervalo quinquenal após teste negativo."],["22 anos, assintomática, sem condição especial","Não iniciar rastreamento de rotina","HPV transitório e lesões regressivas são comuns nessa faixa."],["63 anos, último DNA-HPV negativo após 60","Pode encerrar rastreamento em risco padrão","O critério depende da história de exames e da ausência de lesão de alto grau."],["65 anos, nunca rastreada","Oferecer teste DNA-HPV; manejar positividade","Idade isolada não dispensa quem nunca teve rastreamento."],["História de NIC2+ tratada","Vigilância específica prolongada","Não retornar diretamente ao intervalo de 5 anos após excisão."],["Sangramento pós-coital e lesão visível","Exame ginecológico e biópsia indicada","É cenário diagnóstico, não rastreamento em pessoa assintomática."]],"book-table"],["3","Passo 2 — classificar o resultado molecular e usar a triagem adequada"],["p","Resultado não detectável em risco padrão autoriza retorno em 5 anos. A detecção de HPV16 e/ou HPV18 direciona à colposcopia sem aguardar citologia reflexa. Se apenas outros tipos oncogênicos forem detectados, a citologia reflexa é preferencialmente realizada na amostra já coletada. Citologia com ASC-US ou alteração mais grave exige colposcopia; citologia negativa permite novo teste molecular em 12 meses. Uma citologia reflexa insatisfatória também demanda colposcopia, e não deve ser tratada como resultado normal. Resultado molecular inválido para todos os tipos exige nova coleta por profissional de saúde."],["t",["DNA-HPV primário","Triagem","Próxima etapa"],[["Não detectado","Não necessária","Repetir em 5 anos (risco padrão)."],["HPV16 e/ou HPV18 detectado","Genotipagem já estratifica alto risco","Colposcopia, mesmo se a citologia for negativa."],["Apenas outro HPV oncogênico","Citologia reflexa","ASC-US ou maior, ou amostra insatisfatória: colposcopia."],["Outro HPV oncogênico + citologia reflexa negativa","Triagem negativa","Repetir DNA-HPV em 12 meses."],["DNA-HPV inconclusivo/inválido para todos os tipos","Não é resultado negativo","Nova coleta profissional; resolver o problema pré-analítico."]],"book-table"],["3","Passo 3 — entender o seguimento de 12 e 24 meses"],["p","Após colposcopia negativa feita por HPV16/18 ou citologia reflexa negativa após detecção de outro HPV oncogênico, a orientação do Ministério da Saúde é repetir DNA-HPV em 12 meses. Se a repetição ficar negativa, retorno em 5 anos. Se houver HPV16/18, nova colposcopia. Persistindo outros tipos oncogênicos aos 12 meses com citologia ainda negativa, repetir DNA-HPV em mais 12 meses. Persistência de DNA-HPV oncogênico aos 24 meses ou depois leva à colposcopia independentemente de nova citologia. É crucial registrar a data da primeira amostra: os 24 meses dizem respeito à persistência da detecção, não à idade da paciente."],["x","<div class=\"book-callout\"><strong>Armadilha de prova: o exame inválido e a citologia insatisfatória não são equivalentes</strong><p>DNA-HPV inválido em toda a genotipagem: repetir coleta. Já DNA-HPV <em>positivo para outros tipos</em> com citologia reflexa insatisfatória: encaminhar à colposcopia. Se a paciente já tinha citologia anterior que indicava colposcopia, não solicitar DNA-HPV para desfazer essa indicação durante a transição do programa.</p></div>"],["3","Passo 4 — não confundir os dois programas durante a transição"],["p","Na unidade que ainda não oferece DNA-HPV validado, a citologia continua como rastreamento, com dois exames anuais normais seguidos de intervalo trienal. Quando o rastreamento organizado molecular estiver implantado, o novo método substitui a citologia na próxima rodada; não se recomenda usar os dois como dois exames primários independentes. A citologia <em>reflexa</em> após DNA-HPV positivo, ao contrário, integra o algoritmo molecular e não caracteriza duplicação inadequada. Exames citológicos antigos com indicação de colposcopia continuam exigindo investigação."],["3","Treino de aplicação independente"],["p","Paciente de 35 anos, assintomática, faz DNA-HPV e recebe resultado positivo para outro tipo oncogênico; citologia reflexa negativa. Um ano depois, novo DNA-HPV positivo para outro tipo de alto risco, nova citologia normal. Qual a decisão? Repetir DNA-HPV após mais 12 meses, desde que se mantenha em risco padrão, assintomática, sem indicação clínica que modifique o fluxo. Se permanecer positivo aos 24 meses, encaminhar à colposcopia independentemente da citologia. O erro seria dar alta quinquenal por citologia negativa ou encaminhar toda positividade isolada diretamente à excisão."],["p","Fonte principal: Ministério da Saúde, Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, Parte I, Portaria Conjunta nº 13/2025, recomendações 11–14 e 18–30. Critérios aqui apresentados destinam-se ao risco padrão; situações especiais são discutidas adiante."]]],["citologia",0,[["2","5. Citologia, Bethesda e histologia"],["3","5.1 Citologia: linguagem Bethesda"],["t",["Categoria","Significado prático"],[["ASC-US","Atipias escamosas de significado indeterminado."],["LSIL","Lesão intraepitelial escamosa de baixo grau, relacionada em geral a efeito HPV/NIC1."],["ASC-H","Atipias escamosas em que não se pode excluir HSIL."],["HSIL","Lesão escamosa de alto grau, correlacionando-se principalmente com NIC2/NIC3."],["AGC","Atipias glandulares; exigem investigação adequada do canal e, conforme contexto, endométrio."],["AIS","Adenocarcinoma in situ, precursor glandular de alto risco."]],"book-table"],["3","5.2 Histologia"],["x","<div class=\"book-grid-3\">\n              <div class=\"book-mini\"><strong>NIC 1</strong><p>Displasia predominantemente no terço basal. Alta taxa de regressão; costuma corresponder a LSIL.</p></div>\n              <div class=\"book-mini\"><strong>NIC 2</strong><p>Atipia mais extensa. É biologicamente heterogênea e integra HSIL.</p></div>\n              <div class=\"book-mini\"><strong>NIC 3</strong><p>Atipia de espessura extensa/quase total; alto risco de progressão sem tratamento.</p></div>\n            </div>"],["p","<strong>Carcinoma invasivo</strong> é definido pela invasão através da membrana basal para o estroma. Portanto, NIC1/2/3 não são “câncer invasivo”."],["3","5.3 p16 e Ki-67"],["p","Na patologia, imunomarcação em bloco para p16 pode apoiar classificação de lesões associadas a HPV transformante, especialmente em situações morfologicamente limítrofes. Ki-67 demonstra atividade proliferativa. Esses marcadores auxiliam interpretação histológica; não substituem o contexto morfológico."],["html","<h3>Quando a citologia muda a pergunta clínica</h3><p>ASC-H significa que não é possível excluir lesão de alto grau; AGC indica atipia glandular. Nenhum dos dois equivale a uma infecção simples por HPV a ser apenas observada. A investigação deve esclarecer a origem e a gravidade, com avaliação colposcópica e do canal quando pertinente; atipia glandular pode exigir avaliação endometrial conforme idade, sangramento e fatores de risco. AIS é lesão glandular precursora, não carcinoma invasivo confirmado. Antes de decidir tratamento conservador, é essencial excluir invasão e avaliar margens, além de discutir desejo reprodutivo e capacidade de seguimento. Sangramento pós-coito persistente ou lesão visível deve ser investigado mesmo quando o rastreamento anterior foi negativo.</p>"]]],["colposcopia",0,[["2","6. Colposcopia: como raciocinar"],["p","A colposcopia é exame de aumento após inspeção do colo, aplicação de ácido acético e, em muitos serviços, solução de Lugol. O objetivo é identificar a área mais suspeita para biópsia e avaliar extensão e visibilidade da zona de transformação."],["t",["Achado","Interpretação"],[["Epitélio acetobranco tênue","Pode ocorrer em lesões de baixo grau ou metaplasia; contexto importa."],["Acetobranco denso","Aumenta suspeita de lesão de alto grau."],["Pontilhado/mosaico grosseiro","Arquitetura vascular mais suspeita."],["Vasos atípicos","Devem levantar forte suspeita de invasão."],["Área iodo-negativa","Ausência de glicogênio; não é específica isoladamente."],["Lesão que entra no canal","Pode exigir amostragem endocervical ou procedimento excisional conforme cenário."]],"book-table"],["x","<div class=\"book-callout\"><strong>Pulo do Gato</strong>Colposcopia não “dá o diagnóstico final de câncer”. Ela localiza a área suspeita. A confirmação de invasão é histopatológica.</div>"]]],["colposcopia-lesoes-avancado",0,[["2","Colposcopia avançada: da observação à prova histológica"],["p","A colposcopia não substitui citologia, teste molecular nem histopatologia; sua função é localizar lesões suspeitas, definir sua extensão visual e orientar coleta. O exame começa antes do ácido acético: revisar idade, motivo do encaminhamento, HPV e citologia, gestação, história de tratamento e disponibilidade de seguimento. Uma impressão aparentemente tranquila não apaga um resultado citológico de alto grau ou um sintoma sugestivo de invasão."],["3","Anatomia aplicada: junção escamocolunar e zona de transformação"],["p","A junção escamocolunar (JEC) atual marca o encontro entre epitélio escamoso e glandular, ao passo que a zona de transformação engloba a área metaplásica entre JEC original e atual. A JEC pode mudar de posição com idade, hormônios, gravidez e menopausa. Portanto, o colposcopista deve registrar separadamente a visualização da JEC, os limites de eventual lesão e o tipo de zona de transformação."],["t",["Tipo de zona de transformação","O que é visualizado","Consequência clínica"],[["TZ1","Toda a zona ectocervical está visível.","Permite avaliação direta completa da área de transformação externa."],["TZ2","Há componente endocervical, mas toda a JEC e zona estão visíveis.","A inspeção endocervical requer cuidado, mas o exame pode ser completo."],["TZ3","Parte endocervical não é inteiramente visível.","A área crítica pode permanecer oculta; decisão por investigação endocervical ou excisão depende de risco, resultado prévio e condições clínicas."]],"book-table"],["3","Acetobranco, mosaico e vasos: por que aparência não basta"],["p","O ácido acético promove coagulação reversível de proteínas nucleares: epitélios com maior densidade nuclear podem ficar acetobrancos. O achado é sensível a alterações HPV, metaplasia e inflamação, mas não específico de HSIL. Áreas densamente acetobrancas, bordas abruptas, mosaico e pontilhado grosseiros ou vasos atípicos elevam suspeita. A solução de Lugol avalia presença de glicogênio: região iodo-negativa também pode refletir atrofia ou metaplasia e não confirma malignidade por si só."],["p","A inspeção deve descrever quadrante ou horário, distância do orifício externo, tamanho relativo da lesão, limites endocervicais, presença de epitélio acetobranco, pontilhado, mosaico, vasos e suspeita de invasão. Registrar imagens pode ajudar quando há consentimento, segurança de dados e política institucional. O laudo precisa permitir entender por que a biópsia foi realizada naquele ponto."],["3","Quando biopsiar e o que a amostra pode responder"],["p","Diante de lesões visíveis, biópsias dirigidas devem abranger as regiões colposcopicamente mais suspeitas, considerando risco pré-teste e número de áreas distintas. Como parâmetro internacional de qualidade, o padrão ASCCP frequentemente recomenda 2 a 4 biópsias dirigidas em alterações acetobrancas de pacientes que não pertencem ao grupo de risco muito baixo. Isso não é norma brasileira universal de quantidade de fragmentos: o procedimento deve respeitar protocolo nacional, anatomia, hemostasia e contexto. Uma biópsia superficial que não inclui estroma pode confirmar lesão intraepitelial, mas pode ser insuficiente para demonstrar ou excluir microinvasão."],["p","Em citologia ASC-H ou HSIL, lesão que entra no canal ou JEC parcialmente invisível, o risco de doença não observada é maior. A avaliação endocervical tem papel em contextos selecionados, especialmente conforme risco, idade e visibilidade. Amostragem endocervical por curetagem <strong>não deve ser realizada na gestação</strong>; nessa situação, o diagnóstico é individualizado, e a suspeita de invasão exige colposcopista experiente."],["3","Dois relatórios que não são sinônimos: Bethesda e histologia"],["t",["Rótulo","O que realmente significa","Erro de interpretação a evitar"],[["ASC-US, LSIL, ASC-H, HSIL, AGC","Resultados citológicos; expressam probabilidade de lesão a investigar.","Declarar NIC3 ou invasão apenas pela citologia."],["NIC1 / LSIL histológica","Efeito e alterações de baixo grau; regressão frequente.","Tratar todas como câncer ou indicar excisão por um único achado isolado."],["NIC2 / NIC3 ou HSIL histológica","Doença intraepitelial de alto grau, com risco de persistência e progressão.","Ignorar necessidade de estratégia terapêutica e vigilância apropriadas."],["AIS histológico","Lesão glandular pré-invasiva com possível extensão endocervical e focos descontínuos.","Achar que uma única biópsia pequena exclui doença mais extensa."],["Carcinoma invasivo","Células neoplásicas infiltram o estroma cervical.","Confundir com NIC3, que por definição não atravessa a membrana basal."]],"book-table"],["3","p16, Ki-67 e diagnósticos morfologicamente duvidosos"],["p","O marcador p16 com padrão forte e difuso em bloco pode apoiar classificação de lesões transformantes relacionadas a HPV e ajudar a resolver discrepâncias morfológicas, mas não deve ser usado para promover automaticamente qualquer NIC1 a HSIL. Ki-67 evidencia proliferação e é recurso adjunto. Quando biópsia, citologia, HPV e colposcopia discordam, revisar a qualidade da amostra, a identificação da área biopsiada, eventual interpretação anatomopatológica e a necessidade de nova investigação antes de uma intervenção irreversível."],["3","NIC2, NIC3 e AIS: escolhas não são intercambiáveis"],["p","NIC1 isolada geralmente comporta observação, pois há alta regressão. NIC3 exige tratamento adequado, já que o risco de progressão não permite considerá-la simplesmente uma infecção passageira. NIC2 ocupa zona intermediária: em jovens selecionadas, com desejo reprodutivo, colposcopia satisfatória e segurança de seguimento, pode haver discussão de observação sob protocolo; idade, imunossupressão, HPV persistente e limitações do acompanhamento influenciam a decisão. Excisão transforma a zona de transformação em peça histológica capaz de analisar extensão e margens, mas aumenta riscos cervicais futuros e não deve ser usada indiscriminadamente."],["p","AIS requer avaliar arquitetura glandular, extensão endocervical e margens e excluir doença invasiva antes de planejar preservação de fertilidade. Não equiparar AIS à HSIL escamosa: a possibilidade de focos descontínuos altera a confiança da amostragem e o seguimento. Em quem concluiu o planejamento reprodutivo, o tratamento definitivo costuma envolver histerectomia depois da excisão diagnóstica apropriada. Toda conduta deve ser individualizada em serviço habilitado."],["3","Gestação: o que pode, o que não pode e por quê"],["p","Gestação não deve ser confundida com contraindicação absoluta à colposcopia ou biópsia dirigida quando há suspeita relevante. O colo apresenta ectopia, vascularização e alterações deciduais que podem dificultar interpretação; a avaliação deve ser feita por profissional experiente. Curetagem endocervical é contraindicada na gravidez; excisão por lesão precursora sem suspeita de invasão costuma ser postergada. Lesão macroscópica preocupante ou forte suspeita de carcinoma invasivo não deve aguardar o rastreamento puerperal e requer investigação especializada imediata. Para uma gestante assintomática apenas atrasada no rastreamento, a diretriz brasileira admite coleta de DNA-HPV com segurança, mas permite programar o exame no pós-parto em programas organizados."],["x","<div class=\"book-callout\"><strong>Caso comentado — lesão acetobranca e citologia normal</strong><p>Paciente de 41 anos, encaminhada por HPV16 positivo, tem JEC totalmente visível e pequena área acetobranca densa no quadrante posterior, apesar de citologia sem atipias. O erro é tranquilizá-la porque a citologia foi negativa: HPV16 já indicou colposcopia e a alteração visual orienta avaliação dirigida. A histologia pode revelar metaplasia, lesão intraepitelial ou invasão, conforme a amostra; a aparência não permite conclusão definitiva. Se não houver lesão relevante, respeite a recomendação de repetir DNA-HPV em 12 meses, no contexto da diretriz brasileira.</p></div>"],["p","Referência técnica: ASCCP, padrões de colposcopia e prática baseada em risco, 2017/2019/2023; Ministério da Saúde, Diretrizes Brasileiras de Rastreamento, Parte I, 2025. A ASCCP complementa a técnica, mas não substitui os encaminhamentos previstos para a rede brasileira."]]],["clinica",0,[["2","7. Manifestações clínicas e diagnóstico do câncer invasivo"],["p","O câncer inicial pode ser assintomático. Quando sintomático, os sinais clássicos são sangramento pós-coito, sangramento intermenstrual, sangramento pós-menopausa, corrimento sanguinolento ou fétido e dor pélvica."],["3","7.1 Red flags"],["u",["massa exofítica, ulcerada ou colo friável;","sangramento ao toque;","sangramento pós-coito recorrente;","corrimento fétido ou sanguinolento persistente;","dor pélvica/lombar progressiva;","edema unilateral ou bilateral de membros inferiores;","hidronefrose, piora renal ou sintomas urinários/retal em massa pélvica."],0],["3","7.2 Confirmação e extensão"],["p","O diagnóstico exige <strong>biópsia</strong>. Após confirmação, avaliam-se tamanho tumoral, vagina, paramétrios, parede pélvica, bexiga/reto quando suspeitos e linfonodos. A ressonância magnética de pelve é particularmente útil para extensão local; TC e PET-CT podem contribuir para doença nodal e metastática conforme disponibilidade e estágio."],["3","7.3 Principais histologias"],["u",["carcinoma escamoso/espinocelular — mais frequente;","adenocarcinoma;","adenoescamoso;","neuroendócrino e outros subtipos raros, com comportamento e manejo específicos."],0]]],["estadiamento",0,[["2","8. Estadiamento FIGO 2018"],["p","O FIGO 2018 incorporou formalmente imagem e patologia ao estadiamento e criou o estágio IIIC para doença linfonodal. A invasão horizontal deixou de ser usada para subdividir estágio IA; a <strong>profundidade de invasão estromal</strong> é o elemento central."],["t",["Estágio","Definição de alto rendimento"],[["IA1","Invasão estromal ≤ 3 mm."],["IA2","Invasão > 3 mm e ≤ 5 mm."],["IB1","Limitado ao colo, invasão >5 mm e maior dimensão ≤2 cm."],["IB2",">2 cm e ≤4 cm."],["IB3",">4 cm, ainda limitado ao colo."],["IIA1","Compromete 2/3 superiores da vagina, sem paramétrio, ≤4 cm."],["IIA2","Mesma extensão vaginal, >4 cm."],["IIB","Invasão parametrial sem atingir parede pélvica."],["IIIA","Comprometimento do terço inferior da vagina, sem parede pélvica."],["IIIB","Parede pélvica e/ou hidronefrose/rim não funcionante atribuível ao tumor."],["IIIC1","Metástase para linfonodos pélvicos."],["IIIC2","Metástase para linfonodos para-aórticos."],["IVA","Invasão da mucosa da bexiga ou reto / extensão a órgãos pélvicos adjacentes."],["IVB","Metástase à distância."]],"book-table"],["p","Quando o comprometimento nodal é definido por imagem, usa-se sufixo <strong>r</strong>; quando comprovado por patologia, <strong>p</strong>. Ex.: IIIC1r ou IIIC1p."],["x","<div class=\"book-callout\"><strong>Pulo do Gato</strong>Invasão linfovascular tem importância prognóstica e muda decisões terapêuticas, mas <strong>não altera isoladamente o estágio FIGO</strong>.</div>"]]],["tratamento",0,[["2","9. Tratamento: da lesão precursora à doença metastática"],["3","9.1 Lesões precursoras"],["p","NIC1 pode ser acompanhada em muitos cenários, pois a regressão é frequente. Lesões HSIL/NIC2-3 geralmente exigem tratamento excisional, escolhendo técnica conforme idade, desejo reprodutivo, visibilidade da zona de transformação, extensão endocervical e possibilidade de seguimento."],["p","O <strong>AIS</strong> requer atenção especial porque pode ser multifocal e apresentar lesões “skip” no canal. Quando preservação de fertilidade é desejada, excisão com margens adequadas e seguimento rigoroso podem ser considerados em pacientes selecionadas; caso contrário, histerectomia frequentemente integra o tratamento definitivo."],["3","9.2 Microinvasão e doença inicial"],["p","Estágios IA e alguns tumores pequenos podem ser tratados cirurgicamente. Conização pode ser suficiente em situações selecionadas de IA1 com margens adequadas e desejo reprodutivo. IA2 e tumores maiores exigem avaliação nodal e cirurgia mais ampla ou estratégia radioterápica conforme perfil."],["3","9.3 Preservação de fertilidade"],["p","Traquelectomia radical com avaliação linfonodal pode ser considerada para tumores pequenos em pacientes cuidadosamente selecionadas. Preservação de fertilidade não é indicada apenas por “ser jovem”: tamanho, histologia, invasão, LVSI, margens e linfonodos são determinantes."],["3","9.4 Doença localmente avançada"],["p","Para doença como IIB, III e IVA — e tumores volumosos em situações apropriadas — o padrão é <strong>radioterapia externa + quimioterapia radiossensibilizante, geralmente baseada em cisplatina, seguida/complementada por braquiterapia</strong>. A braquiterapia é componente essencial do tratamento definitivo porque entrega dose elevada e conformada ao tumor cervical preservando melhor órgãos adjacentes."],["3","9.5 Após cirurgia: fatores de risco"],["p","Achados anatomopatológicos pós-operatórios podem indicar radioterapia ou quimiorradioterapia adjuvante. Entre os fatores de alto risco clássicos estão margens comprometidas, paramétrio positivo e linfonodos metastáticos. Combinações de fatores intermediários — tamanho tumoral, profundidade de invasão e LVSI — também influenciam decisão adjuvante."],["3","9.6 Doença recorrente ou metastática"],["p","O tratamento é individualizado com quimioterapia, imunoterapia e terapia antiangiogênica conforme histologia, biomarcadores, tratamentos prévios, função renal, performance status e disponibilidade. Radioterapia pode ter objetivo paliativo. Recidivas centrais pélvicas selecionadas podem ser avaliadas para terapias locais de resgate em centros especializados."]]],["figo-conduta-integrada-2026",0,[["2","Estadiamento e escolha terapêutica: raciocínio oncológico por extensão"],["p","Confirmar câncer invasivo exige tecido histológico. Só depois se identifica a extensão da doença e se define abordagem. O estágio FIGO descreve até onde o câncer se disseminou; não é uma prescrição automática. Para decidir tratamento, a equipe considera tamanho do tumor, histologia, invasão linfovascular, margens, imagem, linfonodos, condições clínicas, desejo reprodutivo e acesso a radioterapia externa e braquiterapia. Lesões pré-invasivas NIC e AIS não recebem estadiamento FIGO de câncer invasivo."],["3","Primeiro eixo: diferenciar microinvasão, tumor restrito ao colo e extensão parametrial"],["t",["Situação","Categoria FIGO 2018","Raciocínio clínico"],[["Invasão estromal microscópica de 2 mm","IA1","Exige avaliação de profundidade, margens e LVSI na peça adequada. Em casos selecionados, conização pode preservar fertilidade."],["Invasão microscópica de 4 mm","IA2","Maior potencial de disseminação; considerar avaliação linfonodal e estratégia cirúrgica conforme risco e diretriz."],["Tumor limitado ao colo de 1,8 cm, invasão >5 mm","IB1","Tamanho pequeno pode favorecer cirurgia em cenário apropriado e avaliação nodal."],["Tumor limitado ao colo de 3,2 cm","IB2","Entre >2 e ≤4 cm, a escolha entre cirurgia e tratamento radioterápico depende da avaliação multidisciplinar."],["Tumor limitado ao colo de 4,7 cm","IB3","Tumor >4 cm: estratégia frequentemente baseada em quimiorradioterapia; não subestimar pelo colo aparentemente limitado."],["Extensão parametrial sem atingir parede pélvica","IIB","Em regra, doença localmente avançada com indicação de quimiorradioterapia definitiva."],["Extensão ao terço inferior da vagina, sem parede pélvica","IIIA","Definida pela extensão vaginal, não pelo tamanho tumoral isolado."],["Parede pélvica ou hidronefrose tumoral","IIIB","É necessário excluir outras causas de obstrução urinária antes de atribuir ao tumor."],["Linfonodo pélvico metastático","IIIC1 (r ou p)","Acometimento nodal modifica estágio independentemente de tumor primário pequeno."],["Linfonodo para-aórtico metastático","IIIC2 (r ou p)","Padrão nodal distinto com implicações para planejamento de radioterapia."],["Invasão confirmada da mucosa vesical ou retal","IVA","Não basta edema bolhoso; requer confirmação adequada."],["Metástase à distância","IVB","Manejo sistêmico e/ou paliativo individualizado, conforme biomarcadores e objetivos de cuidado."]],"book-table"],["3","O sufixo IIIC1r não equivale a IIIC1p"],["p","O sufixo <strong>r</strong> identifica estadiamento nodal por imagem e <strong>p</strong> por patologia. Uma imagem suspeita não é idêntica à confirmação histológica e deve ser interpretada com a sensibilidade, especificidade e probabilidade clínica do método. O relatório também deve preservar descrição de tamanho e extensão do tumor primário; escrever apenas 'IIIC1' apaga dados cruciais para radioterapia, prognóstico e discussão de ressecabilidade. Linfonodo pélvico positivo e para-aórtico positivo não são categorias intercambiáveis."],["3","Segundo eixo: quando cirurgia poupadora de fertilidade faz sentido?"],["p","Em mulheres com desejo reprodutivo, a principal pergunta é se existe um tumor pequeno, com histologia elegível, margens avaliáveis e risco linfonodal suficientemente baixo para cirurgia conservadora segura. Conização com margens livres pode ter papel em IA1 bem selecionado sem fatores desfavoráveis. Traquelectomia com avaliação nodal é opção em um subconjunto de tumores pequenos, conforme critérios do serviço. O desejo de gestar é importante, mas não supera risco de doença residual, linfonodo positivo ou invasão parametrial. A retirada do colo uterino também traz riscos reprodutivos posteriores, incluindo prematuridade e perda gestacional, que precisam ser discutidos."],["p","A cirurgia radical retira mais tecido parametrial e aumenta potencial de complicações urinárias, intestinais e sexuais. Estudos recentes de seleção de pacientes com tumor inicial de baixo risco permitem discutir procedimentos menos radicais em centros especializados; essa possibilidade não autoriza simplificar todas as cirurgias de câncer do colo nem extrapolar para tumores volumosos, LVSI relevante ou linfonodos positivos. A decisão se baseia em histologia, tamanho, profundidade, margens, testes por imagem e equipe oncológica."],["3","Terceiro eixo: quimiorradioterapia e braquiterapia não são itens opcionais de lista"],["p","Em doença cervical localmente avançada, o tratamento curativo usual associa <strong>radioterapia externa pélvica, quimioterapia radiossensibilizante e braquiterapia</strong>. Radioterapia externa trata tumor, tecidos e cadeias selecionadas; a braquiterapia leva dose intensa ao colo e à região tumoral com distribuição espacial apropriada. O componente sistêmico mais utilizado como radiossensibilizante é a cisplatina em regime definido pelo serviço, avaliando função renal, audição, estado clínico e contraindicações. Não reduzir o tratamento a 'quimioterapia e radioterapia' sem discutir braquiterapia e planejamento por imagem."],["p","O sequenciamento, a dose e a extensão dos campos de irradiação dependem de estadiamento e planejamento especializado. Em doença com metástase para-aórtica, a avaliação pode exigir campos estendidos. Tumores grandes ou anatomia desfavorável podem requerer braquiterapia intracavitária associada a técnica intersticial. A ausência de acesso local à braquiterapia é motivo para discutir encaminhamento, não para considerá-la substituível por qualquer dose de radioterapia externa."],["3","Quarto eixo: interpretar fatores anatomopatológicos depois da cirurgia"],["p","Após cirurgia para doença inicial, o laudo deve informar tamanho tumoral, profundidade de invasão, margens, invasão linfovascular, paramétrios, linfonodos e histologia. Margens comprometidas, linfonodos metastáticos e acometimento parametrial integram fatores de alto risco para recidiva e podem indicar quimiorradioterapia adjuvante. Combinações de fatores intermediários exigem avaliação individualizada, pois radioterapia adicional reduz alguns riscos mas aumenta morbidade. A melhor estratégia busca evitar duas modalidades radicais combinadas sem necessidade, preservando controle oncológico."],["3","Quinto eixo: recidiva e doença metastática"],["p","Em doença recorrente, distinguir falha central local, comprometimento linfonodal e disseminação sistêmica. Uma recidiva restrita à pelve depois de tratamento completo pode motivar avaliação para cirurgia de resgate altamente selecionada, inclusive exenteração, mas é necessário excluir doença à distância e considerar possibilidade de margens livres, funcionalidade e qualidade de vida. Em metástase, tratamento sistêmico depende de biomarcadores, tratamentos anteriores, funções orgânicas e protocolos atualizados de oncologia; imunoterapia e agentes antiangiogênicos podem ter indicação em subgrupos. Tratamento paliativo também inclui controle de hemorragia, dor, obstrução urinária, infecção, nutrição e apoio psicossocial."],["3","Três vinhetas para aplicar o estadiamento"],["p","<strong>Vinheta A:</strong> peça de cone com invasão estromal de 2,5 mm, margens livres, ausência de LVSI e sem tumor visível. O raciocínio começa em IA1 e avalia adequação da peça e vigilância; não classifique como IB com base apenas na positividade anterior do HPV. A conduta conservadora pode ser discutida segundo o desejo gestacional."],["p","<strong>Vinheta B:</strong> tumor cervical de 3 cm e biópsia de linfonodo pélvico positiva. Apesar de tamanho compatível com IB2 se isolado, o acometimento nodal classifica o caso como IIIC1p. A decisão terapêutica precisa de imagem completa e planejamento oncológico."],["p","<strong>Vinheta C:</strong> tumor cervical com invasão parametrial e hidronefrose comprovadamente causada por compressão tumoral. O sinal de hidronefrose pode elevar a classificação a IIIB, conforme extensão e avaliação; radioterapia com quimioterapia e braquiterapia é o eixo terapêutico curativo em cenário elegível. Não operar radicalmente de rotina um paramétrio comprometido sem discussão multidisciplinar."],["x","<div class=\"book-callout\"><strong>Pulo do Gato — achado positivo tem consequências diferentes dependendo da etapa</strong><p>HPV16 positivo → colposcopia no rastreamento; biópsia NIC3 → tratamento de lesão pré-invasiva; carcinoma confirmado → estadiamento; linfonodo pélvico positivo → IIIC1; doença IIB–IVA elegível → quimiorradioterapia definitiva com braquiterapia. O aluno deve conseguir justificar a transição de cada etapa antes de decorar um procedimento.</p></div>"],["p","Referências: INCA, Tratamento do Câncer do Colo do Útero; Bhatla e colaboradores, classificação FIGO revisada, 2019; National Cancer Institute, Cervical Cancer Treatment PDQ (versão profissional). O texto descreve princípios de seleção e não constitui protocolo prescritivo."]]],["especiais",0,[["2","10. Situações especiais"],["3","10.1 HIV e imunossupressão"],["u",["Iniciar rastreamento com DNA-HPV após o início da atividade sexual.","Não há recomendação de encerramento automático do rastreamento.","DNA-HPV negativo: repetir em 3 anos.","Qualquer HPV oncogênico positivo: colposcopia, independentemente da citologia reflexa."],0],["3","10.2 Gestação"],["p","Se houver necessidade de regularizar rastreamento, a coleta de DNA-HPV é considerada segura inclusive na endocérvice. Entretanto, em programas organizados, a gestação não é o momento preferencial para rastrear porque há aumento de positividade transitória. O pré-natal deve incluir inspeção clínica do colo para excluir lesão macroscópica. Suspeita de câncer exige avaliação especializada; tratamento depende de estágio, idade gestacional e preferências da paciente."],["3","10.3 Pós-menopausa"],["p","Aplicam-se, em geral, as mesmas recomendações de risco padrão. Se houver HPV não-16/18 e citologia reflexa insatisfatória por atrofia, a diretriz brasileira prevê encaminhamento para colposcopia com preparo estrogênico tópico prévio em situações apropriadas."],["3","10.4 Histerectomia"],["p","Histerectomia total por doença benigna, sem antecedente de lesão cervical de alto grau e com exames prévios adequados, permite excluir do rastreamento. Após histerectomia por lesão precursora, recomenda-se coleta vaginal por pelo menos 25 anos; após câncer cervical, o acompanhamento pode ser indefinido conforme contexto oncológico."]]],["seguimento-situacoes-especiais-casos",0,[["2","Situações especiais comentadas: gestação, HIV, menopausa e pós-tratamento"],["p","A maior parte das perguntas de residência fica difícil não por desconhecimento do HPV, mas porque se aplica a regra do risco padrão a quem não pertence a ela. A diretriz de rastreamento molecular do Ministério da Saúde distingue gestantes, pessoas com imunossupressão, pós-menopausa, histerectomia e antecedentes de lesões tratadas. Todos os exemplos são fictícios para estudo; a escolha deve incorporar protocolo local, possibilidade de seguimento e suspeita clínica de invasão."],["3","Gestante assintomática atrasada no rastreamento"],["p","Mulher com 28 semanas de gestação, sem sangramento ou lesão visível, não realiza teste de rastreamento há cinco anos. A coleta de DNA-HPV durante a gravidez, inclusive na endocérvice, é considerada segura e pode ser feita para regularizar o rastreamento. Entretanto, em programas organizados, pode ser preferível programá-la na revisão puerperal, pois aumentam resultados transitórios de HPV positivo durante a gestação. Não é correto dizer que gravidez proíbe a coleta nem que toda gestante deve fazer imediatamente DNA-HPV sem considerar a organização da rede. Exame ginecológico e inspeção do colo permanecem importantes para identificar doença macroscópica."],["p","Se a mesma paciente apresentar massa cervical friável ou sangramento persistente, a situação deixa de ser rastreamento. O encaminhamento deve priorizar avaliação diagnóstica, colposcopia especializada e biópsia apropriada, sem aguardar o puerpério para investigar possível câncer. A gestação modifica procedimentos disponíveis, não transforma sinais de invasão em achados fisiológicos."],["3","Pessoa vivendo com HIV em terapia antirretroviral"],["p","Paciente de 23 anos vivendo com HIV, sexualmente ativa, sem câncer cervical conhecido. Não se deve aplicar automaticamente a idade mínima de 25 anos prevista para população de risco padrão: em HIV e outras situações relevantes de imunodepressão ou imunossupressão, a diretriz nacional recomenda iniciar a testagem molecular após o início da atividade sexual. Resultado DNA-HPV negativo prevê repetição em <strong>três anos</strong>, não cinco. Se for detectado qualquer HPV oncogênico, a recomendação é <strong>colposcopia independentemente da citologia reflexa</strong>. Não há regra universal de encerramento aos 60 anos para esse grupo."],["p","A intensidade da imunossupressão, adesão à terapia antirretroviral, comorbidades, histórico prévio de NIC e acesso a consultas também afetam o risco e a capacidade de acompanhamento. O rastreamento não substitui cuidado longitudinal, vacinação quando elegível e manejo das demais infecções sexualmente transmissíveis."],["3","Pós-menopausa com citologia reflexa dificultada pela atrofia"],["p","Paciente de 59 anos, DNA-HPV positivo para tipos oncogênicos diferentes de 16/18, tem citologia reflexa descrita como insatisfatória pela atrofia importante. A conduta não é etiquetar a amostra como negativa e remarcar DNA-HPV em cinco anos. A diretriz brasileira recomenda colposcopia e admite preparo com estrógeno tópico prévio em situações apropriadas. A decisão sobre estrogenização exige análise de contraindicações, história de câncer hormônio-dependente e contexto clínico. O objetivo é melhorar a visualização e qualidade da avaliação, não tratar o HPV com estrogênio."],["3","Histerectomia total por mioma versus histerectomia subtotal"],["p","Paciente de 56 anos com histerectomia total por miomas, sem histórico de NIC2+ e com exames prévios normais pode ser excluída do rastreamento de câncer cervical. Em histerectomia <em>subtotal</em>, o colo permanece e a lógica de rastreamento conforme idade e risco ainda se aplica. Se a cirurgia total ocorreu por NIC de alto grau ou câncer do colo, a ausência anatômica do colo não elimina o risco de doença vaginal relacionada a HPV; a diretriz recomenda vigilância com coleta vaginal por pelo menos 25 anos ou indefinidamente conforme contexto."],["p","A diferença não está na palavra 'histerectomia' escrita no prontuário, e sim em <strong>qual porção foi removida, por qual indicação, com qual anatomopatológico e com qual histórico de exames</strong>. Confira relatório operatório, histopatologia e histórico de lesões antes de decidir interromper vigilância."],["3","Idade acima de 60 e um exame negativo"],["p","Em risco padrão, um DNA-HPV oncogênico negativo realizado após os 60 anos pode permitir encerrar o rastreamento. Entretanto, uma paciente de 67 anos nunca testada deve ser convidada a realizar pelo menos um DNA-HPV: se negativo, o rastreamento pode ser encerrado; se positivo, aplicar o algoritmo de risco padrão. História de NIC2, NIC3 ou AIS previamente tratada constitui exceção importante, com seguimento prolongado, e mulheres imunossuprimidas também não entram automaticamente na regra de encerramento."],["3","Seguimento após conização por NIC3"],["p","Paciente de 34 anos com NIC3 retirada por excisão e margens livres pergunta se pode retornar ao teste de HPV a cada cinco anos. Não: a história de lesão cervical de alto grau mantém risco de persistência ou recidiva por muitos anos, mesmo com margens livres e vacinação prévia. Recomendações de vigilância pós-tratamento não são idênticas às do rastreamento primário. A ASCCP, como comparação internacional, sugere avaliações baseadas em HPV em 6, 18 e 30 meses antes do intervalo de três anos, com vigilância por pelo menos 25 anos, mas a implementação deve considerar o protocolo brasileiro e os exames disponíveis."],["p","A vacinação contra HPV após tratamento excisional de NIC2+/AIS integra recomendação técnica do PNI de 2026, mas não é tratamento da lesão removida e não dispensa o acompanhamento. A elegibilidade operacional depende da organização da estratégia especial; documentar exame histológico, data do procedimento, vacinação prévia e plano de retorno evita perda de seguimento."],["3","Teste sua autonomia: seis perguntas difíceis"],["t",["Pergunta","Resposta explicada"],[["HPV16 positivo, citologia normal: repetir só a citologia?","Não. HPV16 direciona à colposcopia mesmo que a citologia seja negativa."],["Outro HPV oncogênico, citologia reflexa insatisfatória: basta aguardar um ano?","Não. A diretriz nacional encaminha à colposcopia diante de citologia insatisfatória após HPV-outros positivo."],["Mulher de 22 anos, risco padrão, HPV positivo após exame indevido: iniciar bateria de rastreamento?","Não pela rotina de rastreamento; a diretriz aconselha orientá-la sobre infecção transitória e iniciar aos 25, salvo avaliação de lesão ou outra situação especial."],["Paciente com HIV e DNA-HPV negativo: cinco anos de intervalo?","Não. No protocolo nacional para imunossupressão, o intervalo é de três anos."],["Gestante com massa ulcerada no colo: aguardar coleta de rotina no pós-parto?","Não. Suspeita de neoplasia invasiva requer investigação clínica especializada."],["Histerectomia total por NIC3 tratada: dispensar todo seguimento?","Não. É indicada vigilância vaginal prolongada; a ausência do colo não elimina o risco residual."]],"book-table"],["x","<div class=\"book-callout\"><strong>Sequência mental obrigatória</strong><p>Primeiro defina se há sintomas ou lesão visível. Depois identifique colo presente/ausente, idade, gestação, imunossupressão e lesão previamente tratada. Somente então aplique o resultado de DNA-HPV, a citologia reflexa, a colposcopia ou a vigilância. Esse roteiro evita o erro de transportar o intervalo quinquenal para quem precisa de investigação diagnóstica ou seguimento pós-tratamento.</p></div>"],["p","Fonte principal: Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, Parte I, 2025, recomendações 12–14 e 31–40; Ministério da Saúde, Nota Técnica nº 32/2026; ASCCP 2023, calendário pós-tratamento como comparação internacional."]]],["seguimento",0,[["2","11. Seguimento e prevenção de recorrência"],["p","Depois do tratamento de lesão precursora, o risco não retorna imediatamente ao da população geral. O seguimento deve ser organizado conforme histologia, margens, resultados de DNA-HPV e protocolos vigentes. Após câncer invasivo, o acompanhamento inclui história e exame físico direcionados a sintomas de recidiva, efeitos tardios de tratamento, função urinária/intestinais, sexualidade, menopausa induzida quando aplicável e saúde psicossocial."],["p","Em pacientes tratadas com radioterapia pélvica, efeitos tardios podem incluir estenose vaginal, cistite e proctite actínicas, disfunção sexual e insuficiência ovariana. Reabilitação e cuidado multidisciplinar fazem parte do tratamento oncológico, não são acessórios."],["html","<h3>Seguimento depois de tratar NIC 2 ou lesão mais grave</h3><p>O tratamento remove a lesão, mas não zera imediatamente o risco de persistência ou recorrência. Por isso, não devolver automaticamente a paciente ao rastreamento de risco habitual. Como referência internacional explicitamente identificada, a atualização ASCCP de 2023 recomenda três testes de HPV ou cotestes negativos em 6, 18 e 30 meses após tratamento de NIC 2+, antes de espaçar para três anos. A vigilância prolongada é de pelo menos 25 anos, podendo ultrapassar 65 anos. Resultado positivo exige reavaliação orientada por risco e colposcopia conforme indicação. Adaptar ao protocolo assistencial brasileiro e à disponibilidade do teste, sem confundir esse seguimento com o intervalo de cinco anos do rastreamento primário habitual.</p><p>Fonte: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10755815/\">ASCCP — atualização de 2023, correção do calendário pós-tratamento</a>.</p>"]]],["casos",0,[["2","12. Casos clínicos integradores"],["3","Caso 1 — HPV 16 em assintomática"],["p","Paciente de 31 anos, sem sintomas, DNA-HPV detectável para HPV16. <strong>Conduta:</strong> colposcopia, sem necessidade de esperar citologia para decidir o encaminhamento."],["3","Caso 2 — HPV não-16/18 e citologia negativa"],["p","Paciente de 38 anos, outro HPV oncogênico detectado e citologia reflexa negativa. <strong>Conduta:</strong> repetir DNA-HPV em 12 meses. Persistência com citologia negativa aos 12 meses permite novo teste em 12 meses; persistência aos 24 meses indica colposcopia."],["3","Caso 3 — Sangramento pós-coito"],["p","Paciente de 44 anos com sangramento pós-coito recorrente e colo friável. <strong>Conduta:</strong> investigação diagnóstica com avaliação ginecológica e biópsia direcionada. Papanicolau prévio normal não encerra o caso."],["3","Caso 4 — Linfonodo pélvico"],["p","Massa cervical de 3,5 cm com linfonodo pélvico metastático confirmado por imagem. Mesmo que o tumor primário pareça limitado localmente, o acometimento nodal enquadra a doença em <strong>FIGO IIIC1r</strong>."],["3","Caso 5 — Pós-conização por NIC3"],["p","A paciente pergunta se pode “parar de rastrear”. <strong>Resposta:</strong> não. Antecedente de NIC3 exige seguimento prolongado; vacinação pós-tratamento pode estar indicada segundo os critérios atuais do SUS."]]],["integracao-clinica-lote09",0,[["2","Integração clínica: decisões que mudam o percurso da paciente"],["p","O primeiro divisor de águas é distinguir <strong>rastreamento da pessoa assintomática</strong> de <strong>investigação de paciente sintomática ou com lesão visível</strong>. No SUS, a incorporação progressiva do DNA-HPV como teste primário mudou o caminho do rastreamento organizado, mas não mudou o princípio clínico: sangramento pós-coito persistente, lesão cervical friável, secreção sanguinolenta ou suspeita de invasão exigem avaliação ginecológica dirigida, com biópsia quando indicada. Resultado prévio negativo de HPV ou citologia não substitui investigação diagnóstica desses achados."],["t",["Situação","Erro frequente","Conduta e raciocínio"],[["Assintomática de risco padrão em idade recomendada","Solicitar citologia e DNA-HPV sem observar o protocolo de rede","Aplicar a modalidade de rastreamento disponível no serviço: DNA-HPV primário na rede organizada; citologia onde ainda não implantado."],["Sangramento pós-coito com colo friável","Repetir apenas o rastreamento e aguardar cinco anos se negativo","Examinar, tratar causas concomitantes e investigar lesão suspeita com colposcopia/biópsia conforme avaliação."],["HPV16/18 detectável","Aguardar citologia reflexa para decidir colposcopia","Encaminhar para colposcopia pelo risco associado ao genótipo na diretriz brasileira de 2025."],["Outro HPV oncogênico e citologia reflexa negativa","Chamar de exame normal e dar alta","Repetir DNA-HPV em 12 meses; persistência e citologia subsequente orientam a nova decisão."],["Lesão histológica de alto grau","Tratar como carcinoma invasivo sem verificar membrana basal","Interpretar laudo de NIC/HSIL versus carcinoma e definir excisão ou tratamento conforme contexto."],["Biópsia com invasão confirmada","Escolher terapia apenas pelo resultado do HPV","Estadiar a doença, estimar extensão/nódulos e discutir em serviço oncológico especializado."]],"book-table"],["3","Risco biológico não é sinônimo de diagnóstico"],["p","O DNA-HPV identifica infecção por genótipos oncogênicos e melhora a triagem do risco; o Papanicolau descreve alterações citológicas; a colposcopia permite avaliação dirigida; a histopatologia estabelece a natureza da lesão e comprova invasão. A diferença entre <strong>HPV positivo</strong>, <strong>HSIL na citologia</strong>, <strong>NIC3 na histologia</strong> e <strong>carcinoma invasivo</strong> é essencial para não supertratar nem perder uma neoplasia."],["3","Comunicação para a pessoa que recebe resultado positivo"],["p","Explicar que HPV é comum, que a transmissão pode anteceder o resultado por muitos anos e que o teste isolado não determina quando ocorreu exposição nem atribui infidelidade a parceiro. Evitar frases como “você está com câncer” diante de resultado molecular isolado. Indicar por escrito o próximo passo e prazo, conferir capacidade de retorno e garantir acesso à colposcopia quando indicada. A prevenção combina vacinação elegível, rastreamento organizado, investigação de sintomas, tratamento de lesões precursoras e busca ativa de quem faltou ao encaminhamento."],["3","Quando o raciocínio precisa sair do ambulatório de rotina"],["p","Tumor visível, hemorragia importante, dor intensa, obstrução urinária, sinais de lesão parametrial ou piora rápida exigem avaliação de prioridade adequada. Uma paciente pode estar hemodinamicamente estável e ainda assim precisar de encaminhamento oncológico célere. Em suspeita de câncer invasivo, o objetivo é <strong>não transformar rastreamento em etapa obrigatória antes da biópsia</strong>. Encaminhar à referência ginecológica/oncológica da rede, com história, exame, laudo histológico, exames já realizados, sintomas e barreiras de acesso."],["3","Estadiamento, tratamento e desejo reprodutivo"],["p","Confirmada invasão, estágio e risco patológico devem preceder decisão definitiva. Em doença microinvasiva cuidadosamente selecionada, pode haver espaço para tratamento conservador; tumores maiores ou com comprometimento de paramétrios/linfonodos alteram substancialmente a estratégia. A decisão de preservação de fertilidade requer histologia adequada, critérios oncológicos e avaliação especializada — não apenas idade jovem. Para doença localmente avançada, quimiorradioterapia e braquiterapia são componentes fundamentais quando indicados. O acompanhamento deve integrar toxicidades tardias, sexualidade, fertilidade e saúde mental."],["3","Vacinação e populações especiais"],["p","O calendário do SUS prevê <strong>dose única de HPV para a rotina de 9 a 14 anos</strong>, mas indica esquemas específicos em condições como imunodepressão e violência sexual, conforme norma vigente. Não aplicar a dose única indiscriminadamente a todas as pessoas de qualquer faixa ou risco. A vacinação não trata infecção estabelecida nem dispensa rastreamento posterior. Pessoas vivendo com HIV/imunossuprimidas e aquelas tratadas por NIC2+/AIS seguem percursos específicos: usar protocolo correspondente em vez de aplicar automaticamente o intervalo quinquenal da população de risco padrão."],["p","Fontes prioritárias: <a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view\" target=\"_blank\" rel=\"noopener\">Ministério da Saúde, Diretriz DNA-HPV 2025</a>; <a href=\"https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/colo-do-utero/versao-para-profissionais-de-saude\" target=\"_blank\" rel=\"noopener\">INCA, profissionais de saúde</a>; <a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hpv\" target=\"_blank\" rel=\"noopener\">Ministério da Saúde, vacinação HPV</a>."]]],["casos-aprofundados-lote09",0,[["2","Casos clínicos aprofundados: raciocínio completo da suspeita à conduta"],["p","Os casos abaixo complementam os cinco casos resumidos anteriores; são fictícios e destinados a ensinar decisões de prova e de assistência. Em todos, a condução deve respeitar os protocolos vigentes do SUS e a avaliação especializada."],["3","Caso 6 — Sangramento pós-coito e teste anterior negativo"],["p","<strong>Apresentação e dados relevantes:</strong> Paciente de 43 anos procura UBS após três meses de sangramento pós-coito. Uma citologia de rotina anterior fora informada como negativa. No exame especular, há pequena área friável e sangrante no colo."],["p","<strong>Hipóteses e diagnósticos diferenciais:</strong> Cervicite, pólipo cervical, ectopia, trauma local e neoplasia cervical; a presença de infecção concomitante não autoriza descartar lesão tumoral."],["p","<strong>Raciocínio passo a passo:</strong> Trata-se de investigação diagnóstica em paciente sintomática, não de repetição automática de rastreamento. Citologia ou DNA-HPV anterior negativo reduz risco em alguns contextos, mas não explica ou exclui a lesão clínica."],["p","<strong>Exames e interpretação:</strong> Avaliação ginecológica direcionada, testes para cervicite se clinicamente indicados, colposcopia e biópsia da área suspeita. Hemograma se perda sanguínea relevante."],["p","<strong>Conduta inicial:</strong> Referenciar com prioridade conforme aspecto da lesão e sintomas. Tratar intercorrências sem postergar avaliação histológica da alteração cervical."],["p","<strong>Seguimento:</strong> Assegurar recebimento de laudo e retorno programado. Se carcinoma confirmado, estadiar em serviço especializado."],["p","<strong>Por que este caso importa:</strong> Evita o erro de utilizar exame de rastreamento normal como desculpa para não investigar um sinal de alarme."],["3","Caso 7 — Persistência de HPV oncogênico não 16/18"],["p","<strong>Apresentação e dados relevantes:</strong> Pessoa de 38 anos, assintomática, com colo uterino, teve DNA-HPV positivo para outro tipo oncogênico e citologia reflexa negativa. Em 12 meses, segue HPV positivo sem alteração citológica. Aos 24 meses permanece com DNA-HPV oncogênico detectável."],["p","<strong>Hipóteses e diagnósticos diferenciais:</strong> Infecção transitória em resolução versus persistência de infecção de alto risco, eventualmente associada a lesão precursora."],["p","<strong>Raciocínio passo a passo:</strong> O primeiro resultado não determina câncer nem exige excisão. Persistência em 12 meses com citologia negativa permite nova avaliação em 12 meses no algoritmo nacional; persistência aos 24 meses muda a indicação."],["p","<strong>Exames e interpretação:</strong> Colposcopia quando preenchido o critério de persistência do protocolo; biópsia das áreas suspeitas, se encontradas."],["p","<strong>Conduta inicial:</strong> Encaminhar colposcopia aos 24 meses apesar de citologia reflexa negativa, com registro dos três momentos e resultados prévios."],["p","<strong>Seguimento:</strong> A conduta posterior depende dos achados colposcópicos/histológicos e protocolo; não perpetuar testagem anual sem decisão."],["p","<strong>Por que este caso importa:</strong> Ensina que o tempo de persistência da infecção é informação clínica importante, não um detalhe administrativo."],["3","Caso 8 — Vacinação prévia e HPV de alto risco"],["p","<strong>Apresentação e dados relevantes:</strong> Mulher de 29 anos, vacinada na adolescência, procura orientação após receber DNA-HPV detectável para HPV16. Não apresenta sintomas e teme que a vacina “tenha falhado” ou que o exame represente câncer."],["p","<strong>Hipóteses e diagnósticos diferenciais:</strong> Infecção oncogênica detectada, sem diagnóstico de lesão precursora ou invasiva até o momento."],["p","<strong>Raciocínio passo a passo:</strong> As vacinas são preventivas e não eliminam todas as possibilidades de infecção; vacinação não anula a necessidade de seguimento dos achados. Genotipagem 16/18 direciona à colposcopia na diretriz nacional."],["p","<strong>Exames e interpretação:</strong> Colposcopia e investigação histológica somente quando houver indicação pelos achados; não solicitar marcadores tumorais inespecíficos."],["p","<strong>Conduta inicial:</strong> Acolher, esclarecer limites da vacina e encaminhar à colposcopia. Evitar inferências sobre origem, data ou responsabilidade pela infecção."],["p","<strong>Seguimento:</strong> Registrar resultado e assegurar retorno para laudo e conduta; manter orientações preventivas."],["p","<strong>Por que este caso importa:</strong> Combina comunicação livre de estigma com decisão apropriada de rastreamento."],["3","Caso 9 — NIC3 histológica com desejo de gestação"],["p","<strong>Apresentação e dados relevantes:</strong> Paciente de 32 anos com colposcopia suspeita e biópsia confirmando NIC3 informa desejo de engravidar no próximo ano e pergunta se pode apenas repetir Papanicolau."],["p","<strong>Hipóteses e diagnósticos diferenciais:</strong> Lesão intraepitelial de alto grau confirmada; excluir invasão antes de considerar opções definitivas."],["p","<strong>Raciocínio passo a passo:</strong> NIC3 não equivale a carcinoma invasivo, mas tem risco relevante e não deve ser banalizada. Tratamento geralmente é excisional, orientado por visualização da zona de transformação, extensão da lesão, canal endocervical e suspeita de invasão."],["p","<strong>Exames e interpretação:</strong> Revisão do anatomopatológico e avaliação colposcópica detalhada; avaliação da necessidade e tipo de excisão em serviço capacitado."],["p","<strong>Conduta inicial:</strong> Discutir tratamento excisional adequado, riscos obstétricos relacionados ao procedimento e necessidade de margens avaliáveis. Não omitir tratamento apenas pelo desejo reprodutivo."],["p","<strong>Seguimento:</strong> Programar vigilância pós-tratamento conforme grau histológico, margens, teste molecular e protocolo. O retorno não é automaticamente ao rastreamento de risco padrão."],["p","<strong>Por que este caso importa:</strong> Mostra como preservar o futuro reprodutivo sem desconsiderar a prevenção de câncer."],["3","Caso 10 — Lesão glandular e adenocarcinoma in situ"],["p","<strong>Apresentação e dados relevantes:</strong> Mulher de 36 anos, com alteração citológica glandular, é submetida a avaliação especializada. A peça excisional demonstra adenocarcinoma in situ (AIS), sem invasão demonstrada, e a paciente deseja preservar fertilidade."],["p","<strong>Hipóteses e diagnósticos diferenciais:</strong> AIS sem invasão comprovada versus doença glandular invasiva ou doença residual no canal endocervical."],["p","<strong>Raciocínio passo a passo:</strong> AIS pode estender-se no canal e apresentar focos descontínuos; colposcopia aparentemente limitada não exclui doença residual. Margens, avaliação endocervical e revisão da histologia importam para discutir tratamento conservador."],["p","<strong>Exames e interpretação:</strong> Revisão por anatomopatologia experiente, avaliação de margens e investigação endocervical conforme serviço especializado."],["p","<strong>Conduta inicial:</strong> Encaminhar a oncoginecologia para decisão compartilhada entre preservação reprodutiva com vigilância rigorosa, quando tecnicamente segura, e cirurgia definitiva conforme contexto. Não propor histerectomia por simples citologia alterada sem definição histológica."],["p","<strong>Seguimento:</strong> Plano explícito de seguimento de alto risco e conduta após eventual gestação. Não usar calendário da população geral."],["p","<strong>Por que este caso importa:</strong> Lembra que lesões glandulares têm limitações diagnósticas distintas das lesões escamosas."],["3","Caso 11 — Doença cervical invasiva com acometimento parametrial"],["p","<strong>Apresentação e dados relevantes:</strong> Paciente de 51 anos, com sangramento irregular e dor pélvica, apresenta lesão cervical volumosa; biópsia confirma carcinoma escamoso invasivo. Exame e imagem especializada apontam invasão parametrial, sem invasão documentada da parede pélvica."],["p","<strong>Hipóteses e diagnósticos diferenciais:</strong> Câncer cervical localmente avançado versus extensão de tumor vaginal/endometrial ou outras causas de massa cervical; histologia confirmou a origem."],["p","<strong>Raciocínio passo a passo:</strong> A invasão parametrial é compatível com FIGO IIB, desde que não haja informação que determine estágio mais elevado, como metástase linfonodal. Avaliar linfonodos e trato urinário antes da definição final."],["p","<strong>Exames e interpretação:</strong> Estadiamento clínico por equipe especializada e imagem conforme disponibilidade, avaliação renal e condições para tratamento."],["p","<strong>Conduta inicial:</strong> Encaminhar à UNACON/CACON para planejamento; em doença localmente avançada, tratamento definitivo frequentemente combina radioterapia externa, quimioterapia radiossensibilizante e braquiterapia. Não indicar cirurgia conservadora por desejo isolado."],["p","<strong>Seguimento:</strong> Monitorar resposta, toxicidades urinárias/intestinais, sexualidade, sintomas de recidiva e reabilitação."],["p","<strong>Por que este caso importa:</strong> Conecta achado anatômico, FIGO e necessidade de tratamento multimodal."],["3","Caso 12 — História de NIC3 após os 60 anos"],["p","<strong>Apresentação e dados relevantes:</strong> Mulher de 63 anos pergunta se pode encerrar rastreamento depois de resultado atual negativo. Foi tratada por NIC3 há sete anos e compareceu irregularmente às revisões."],["p","<strong>Hipóteses e diagnósticos diferenciais:</strong> Risco padrão após teste negativo versus vigilância pós-tratamento de lesão de alto grau."],["p","<strong>Raciocínio passo a passo:</strong> A regra de encerramento após teste negativo em idade adequada pertence à população de risco padrão. Antecedente de NIC3 modifica a estratificação de risco e exige seguimento específico prolongado."],["p","<strong>Exames e interpretação:</strong> Revisar laudo de tratamento, margens, testes prévios, modalidade de seguimento e diretriz aplicável."],["p","<strong>Conduta inicial:</strong> Não encerrar automaticamente; organizar acompanhamento conforme histórico, prognóstico, condições clínicas e protocolos atualizados."],["p","<strong>Seguimento:</strong> Estabelecer calendário e responsabilidade pelo resultado, evitando perda de seguimento."],["p","<strong>Por que este caso importa:</strong> A exceção ao rastreamento geral é mais importante que decorar o intervalo de cinco anos."]]],["questoes-autorais-lote09",0,[["2","Questões autorais LURIA: prova e raciocínio por alternativa"],["p","Questões originais, elaboradas a partir das diretrizes brasileiras e de referências oncológicas. As alternativas foram construídas para testar a decisão clínica e não apenas memorização de nomenclatura."],["3","Questão 1 — Triagem/diagnóstico"],["p","<strong>Enunciado:</strong> Uma pessoa de 41 anos apresenta sangramento pós-coito persistente e área cervical friável, embora a citologia de rastreamento do ano anterior tenha sido negativa. Qual a melhor abordagem?"],["u",["A) Repetir apenas a citologia após cinco anos.","B) Encaminhar para avaliação ginecológica dirigida, com biópsia da lesão suspeita conforme exame.","C) Tranquilizar porque a citologia exclui câncer invasivo.","D) Tratar empiricamente HPV sem investigar."],0],["p","<strong>Gabarito: B. Justificativa da correta:</strong> Sintomas e lesão visível mudam a finalidade do atendimento: a investigação é diagnóstica, não rastreamento. Colposcopia/biópsia são orientadas pelos achados."],["p","<strong>Por que as demais estão incorretas:</strong> A ignora sintomas e lesão; C atribui valor de exclusão inexistente ao exame; D não esclarece nem trata uma possível neoplasia."],["p","<strong>Mini revisão:</strong> Rastreamento normal não anula sinais de alarme."],["3","Questão 2 — Triagem/diagnóstico"],["p","<strong>Enunciado:</strong> No rastreamento organizado com DNA-HPV no SUS, mulher de 34 anos, assintomática, apresenta HPV16 detectável. Qual é a conduta de triagem indicada?"],["u",["A) Colposcopia.","B) Histerectomia.","C) Repetir teste molecular em cinco anos.","D) Aguardar obrigatoriamente citologia reflexa negativa para encaminhar."],0],["p","<strong>Gabarito: A. Justificativa da correta:</strong> Genótipos HPV16/18 determinam encaminhamento para colposcopia no algoritmo nacional."],["p","<strong>Por que as demais estão incorretas:</strong> B seria cirurgia sem diagnóstico histológico; C usa intervalo de resultado negativo; D confunde fluxo HPV16/18 com o de outros genótipos."],["p","<strong>Mini revisão:</strong> Genotipagem muda a triagem, mas não equivale a diagnóstico de câncer."],["3","Questão 3 — Triagem/diagnóstico"],["p","<strong>Enunciado:</strong> Paciente com outro HPV oncogênico detectável e citologia reflexa negativa persiste com DNA-HPV detectável por 24 meses. A conduta mais adequada é:"],["u",["A) Encerrar rastreamento.","B) Repetir citologia somente após cinco anos.","C) Colposcopia.","D) Conização imediata sem avaliação."],0],["p","<strong>Gabarito: C. Justificativa da correta:</strong> Persistência aos 24 meses satisfaz critério de encaminhamento colposcópico no fluxograma nacional citado."],["p","<strong>Por que as demais estão incorretas:</strong> A e B deixam de considerar risco persistente; D antecipa procedimento excisional sem avaliação colposcópica/histológica."],["p","<strong>Mini revisão:</strong> Persistência virológica e citologia negativa não são conceitos equivalentes."],["3","Questão 4 — Lesões precursoras"],["p","<strong>Enunciado:</strong> Biópsia cervical revela NIC3, sem descrição de invasão. Qual afirmação é correta?"],["u",["A) O laudo equivale a FIGO IA1.","B) Trata-se de lesão precursora de alto grau, geralmente candidata a tratamento excisional com avaliação individual.","C) A NIC3 é sempre lesão que regride sem intervenção.","D) É necessário iniciar quimiorradioterapia."],0],["p","<strong>Gabarito: B. Justificativa da correta:</strong> NIC3 é lesão intraepitelial de alto grau, sem comprovação de invasão estromal."],["p","<strong>Por que as demais estão incorretas:</strong> A atribui estágio invasivo sem critério; C banaliza risco; D aplica tratamento de câncer invasivo localmente avançado a lesão pré-invasiva."],["p","<strong>Mini revisão:</strong> Citologia, histologia de NIC e estadiamento FIGO representam níveis diagnósticos diferentes."],["3","Questão 5 — Lesões precursoras"],["p","<strong>Enunciado:</strong> A peça excisional revela adenocarcinoma in situ cervical, e a paciente deseja preservar fertilidade. Qual postura é mais apropriada?"],["u",["A) Ignorar margens porque AIS nunca apresenta focos descontínuos.","B) Encaminhar para avaliação especializada, considerando margens, endocérvice, invasão e possibilidade de seguimento rigoroso.","C) Fazer cauterização simples sem histologia adicional.","D) Classificar automaticamente como câncer disseminado."],0],["p","<strong>Gabarito: B. Justificativa da correta:</strong> AIS demanda cautela por extensão endocervical e possíveis focos descontínuos; estratégias conservadoras dependem de seleção cuidadosa."],["p","<strong>Por que as demais estão incorretas:</strong> A ignora propriedades da lesão glandular; C compromete avaliação histológica; D confunde lesão in situ com disseminação."],["p","<strong>Mini revisão:</strong> Desejo reprodutivo orienta decisão, mas não elimina critérios oncológicos."],["3","Questão 6 — Oncologia e prevenção"],["p","<strong>Enunciado:</strong> Carcinoma escamoso invasivo compromete o paramétrio sem atingir a parede pélvica; ainda não há confirmação de comprometimento nodal. Qual correspondência é mais adequada?"],["u",["A) FIGO IIB no componente locorregional, a confirmar com estadiamento completo.","B) FIGO IA1.","C) NIC2.","D) FIGO IVB obrigatoriamente."],0],["p","<strong>Gabarito: A. Justificativa da correta:</strong> Invasão parametrial sem atingir a parede pélvica enquadra-se em IIB, ressalvada a informação completa de estadiamento e eventuais linfonodos."],["p","<strong>Por que as demais estão incorretas:</strong> B é microinvasão; C é lesão intraepitelial; D exige doença distante, não demonstrada."],["p","<strong>Mini revisão:</strong> FIGO integra extensão anatômica e achados de imagem/patologia."],["3","Questão 7 — Oncologia e prevenção"],["p","<strong>Enunciado:</strong> Mulher de 63 anos com teste DNA-HPV atual negativo foi tratada por NIC3 há sete anos. Qual afirmação é correta?"],["u",["A) Um resultado negativo elimina qualquer necessidade de seguimento.","B) A regra de encerramento populacional exige revisão, pois antecedente NIC3 demanda vigilância específica prolongada.","C) Todas as pacientes com NIC3 precisam de quimioterapia.","D) Apenas repetir exame quando houver sangramento, sem rever histórico."],0],["p","<strong>Gabarito: B. Justificativa da correta:</strong> Risco após lesão de alto grau tratada não retorna imediatamente ao de rastreamento habitual."],["p","<strong>Por que as demais estão incorretas:</strong> A e D desconsideram o histórico; C confunde lesão precursora com tratamento sistêmico de câncer invasivo."],["p","<strong>Mini revisão:</strong> Antes de encerrar rastreamento, verificar lesão precursora de alto grau e tratamento anterior."],["3","Questão 8 — Oncologia e prevenção"],["p","<strong>Enunciado:</strong> Qual afirmação sobre vacinação contra HPV e prevenção do câncer cervical no SUS é adequada?"],["u",["A) A vacina elimina infecção estabelecida e dispensa rastreamento.","B) Todos os imunossuprimidos recebem sempre uma dose única, como a rotina de 9 a 14 anos.","C) Vacinação preventiva e rastreamento se complementam; grupos especiais podem exigir esquemas diferentes.","D) O teste DNA-HPV informa o momento exato da aquisição do vírus."],0],["p","<strong>Gabarito: C. Justificativa da correta:</strong> Vacinação previne infecções de tipos cobertos, mas não substitui rastreamento; a normativa contempla esquemas próprios em imunodeprimidos e outras situações."],["p","<strong>Por que as demais estão incorretas:</strong> A atribui efeito terapêutico e dispensa indevida de rastreamento; B ignora esquemas especiais; D presume cronologia impossível de deduzir pelo exame."],["p","<strong>Mini revisão:</strong> Prevenção primária, secundária e seguimento pós-tratamento são intervenções distintas."]]],["revisao",0,[["2","13. Revisão de alto rendimento"],["t",["Armadilha","Correção"],[["HPV positivo = câncer","HPV positivo identifica infecção oncogênica; câncer invasivo exige histologia."],["Vacina elimina rastreamento","Não. Vacinação e rastreamento são complementares."],["Todo HPV 16/18 precisa de citologia antes da colposcopia","Não. Na diretriz brasileira, HPV16/18 detectável encaminha para colposcopia."],["Outros HPV + citologia negativa = alta","Não. Repetir DNA-HPV em 12 meses."],["Persistência não-16/18 por 24 meses pode continuar observando indefinidamente","Não. Persistência por 24 meses indica colposcopia."],["Papanicolau normal exclui câncer","Não, especialmente diante de sintomas ou lesão visível."],["NIC3 é carcinoma invasivo","Não. Invasão exige ruptura da membrana basal."],["LVSI aumenta o estágio FIGO","Não isoladamente; influencia prognóstico e tratamento."],["IIIC1 = para-aórtico","Errado: IIIC1 é pélvico; IIIC2 é para-aórtico."],["Braquiterapia é opcional na doença localmente avançada","Ela é componente essencial do tratamento definitivo quando indicada."]],"book-table"],["x","<div class=\"book-callout\"><strong>Frase-chave</strong>HPV persistente cria o risco; o rastreamento identifica quem precisa investigar; a biópsia confirma; o FIGO mede extensão; o estágio e os fatores patológicos definem o tratamento.</div>"]]],["aprofundamento-2026",0,[["2","Aprofundamento: persistência viral, colposcopia e transição do rastreamento para o diagnóstico"],["x","<p>HPV é extremamente frequente; câncer cervical é relativamente raro. O evento decisivo não é adquirir HPV, mas a <strong>persistência de infecção oncogênica em um epitélio susceptível, com progressão molecular e escape imune</strong>. Essa diferença explica por que rastreamento deve identificar risco de lesão precursora sem transformar toda infecção transitória em doença.</p>\n<h3>Zona de transformação e metaplasia</h3>\n<p>A junção escamocolunar migra ao longo da vida. Durante metaplasia escamosa, células imaturas da zona de transformação são particularmente vulneráveis à infecção transformante. Com idade e menopausa, a junção pode se retrair para o canal endocervical, tornando avaliação colposcópica mais difícil e alterando estratégia de amostragem.</p>\n<h3>Persistência e oncogênese</h3>\n<p>Nas infecções transformantes, proteínas virais como E6 e E7 interferem em vias de supressão tumoral, incluindo p53 e pRb, favorecendo proliferação e instabilidade genômica. Isso ocorre ao longo de anos. Infecção detectada hoje não equivale a câncer, e um teste HPV positivo isolado não define grau histológico.</p>\n<h3>Rastreamento com DNA-HPV: por que o intervalo pode ser maior?</h3>\n<p>O teste molecular tem alta sensibilidade para risco futuro de lesão de alto grau. Um resultado negativo oferece proteção mais prolongada que citologia negativa isolada, permitindo intervalo de cinco anos na população de risco padrão nas diretrizes brasileiras atuais. O ganho vem da sensibilidade; a contrapartida é necessidade de boa triagem dos resultados positivos para evitar colposcopias e tratamentos desnecessários.</p>\n<h3>Genótipo muda a próxima etapa</h3>\n<p>HPV 16/18 carrega risco maior e leva a colposcopia mesmo quando citologia reflexa não mostra alteração. Para outros tipos oncogênicos, a citologia reflexa ajuda a definir urgência e seguimento. Persistência viral ao longo do tempo é um marcador adicional de risco, por isso “positivo, mas citologia normal” não deve ser interpretado como “não tem nada” nem como indicação automática de excisão.</p>\n<h3>Colposcopia: exame de localização, não confirmação final</h3>\n<p>Ácido acético e Lugol realçam padrões epiteliais e vasculares que orientam biópsia. Colposcopia adequada precisa visualizar a zona de transformação e a junção escamocolunar de forma suficiente. Achado colposcópico sugestivo não substitui histologia; lesão invasiva suspeita deve ser biopsiada antes de tratamento definitivo sempre que clinicamente possível.</p>\n<h3>Citologia, histologia e tratamento excisional</h3>\n<p>HSIL citológica representa risco elevado, mas o diagnóstico histológico organiza o grau da lesão. CIN2 possui possibilidade de regressão em pacientes jovens e situações selecionadas, enquanto CIN3 é lesão precursora de maior risco. Decisão por excisão deve equilibrar prevenção do câncer e dano reprodutivo, especialmente risco obstétrico associado a excisões cervicais profundas/repetidas.</p>\n<h3>Quando deixa de ser rastreamento?</h3>\n<p>Sangramento pós-coital persistente, sangramento pós-menopausa, lesão visível, corrimento fétido inexplicado ou sintomas suspeitos exigem investigação diagnóstica. Nessa situação, “estar fora da idade do rastreamento” não autoriza ignorar o colo. Rastreamento é para assintomáticos; sintomas mudam a pergunta clínica.</p>\n<div class=\"book-callout\"><strong>Pulo do Gato</strong>HPV detecta risco; citologia estratifica alteração celular; colposcopia localiza; biópsia confirma; FIGO descreve extensão do câncer. Misturar essas funções é uma das principais fontes de erro em prova e prática.</div>"]]],["editorial-depth-2026","book-section",[["2","Aprofundamento etiológico e decisões clínicas"],["3","Persistência viral até NIC"],["p","Infecção HPV oncogênica frequentemente regrede. Persistência do vírus em epitélio de transformação promove alterações celulares progressivas; NIC 1, 2 e 3 não têm prognóstico idêntico. Distinguir alterações citológicas de confirmação histológica e evitar tratar HPV positivo isolado como câncer."],["3","Rastreamento e colposcopia"],["p","No Brasil, a implementação de DNA-HPV como teste primário é progressiva. Resultado molecular, genotipagem, citologia reflexa e histórico orientam repetição, colposcopia ou tratamento segundo algoritmo vigente. Colposcopia é etapa diagnóstica dirigida, com biópsia quando indicada; a zona de transformação pode não estar totalmente visível."],["3","Câncer invasivo: tratamento por estágio"],["p","Câncer inicial pode ter tratamento cirúrgico conforme extensão e desejo reprodutivo; doença localmente avançada costuma envolver quimiorradioterapia e braquiterapia. Estadiamento FIGO, tamanho tumoral, linfonodos e condição clínica definem o plano, não o resultado do rastreamento isoladamente."]]],["referencias",0,[["2","Referências principais"],["o",["<a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view\" target=\"_blank\" rel=\"noopener\">Ministério da Saúde. Diretrizes Brasileiras para o Rastreamento do Câncer de Colo do Útero — Parte I. 2025.</a>","<a href=\"https://www.gov.br/conitec/pt-br/midias/relatorios/2025/relatorio-de-recomendacao-no-977-diretrizes-rastreamento-colo-de-utero\" target=\"_blank\" rel=\"noopener\">CONITEC. Relatório de Recomendação nº 977 — Rastreamento do câncer do colo do útero.</a>","<a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-32-2026-cgici-dpni-svsa-ms.pdf/view\" target=\"_blank\" rel=\"noopener\">Ministério da Saúde. Nota Técnica nº 32/2026 — vacinação após NIC2+/AIS.</a>","<a href=\"https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero\" target=\"_blank\" rel=\"noopener\">INCA. Controle do câncer do colo do útero.</a>","<a href=\"https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/tratamento\" target=\"_blank\" rel=\"noopener\">INCA. Tratamento do câncer do colo do útero.</a>","<a href=\"https://www.who.int/publications/i/item/9789240121744\" target=\"_blank\" rel=\"noopener\">WHO. Guideline for screening and treatment of cervical pre-cancer lesions: HPV DNA genotyping. 2026.</a>","<a href=\"https://www.who.int/publications/i/item/9789240124172\" target=\"_blank\" rel=\"noopener\">WHO. Evidence-informed guidance for implementation of HPV-based screening programmes. 2026.</a>","<a href=\"https://www.cancer.gov/types/cervical/hp/cervical-treatment-pdq\" target=\"_blank\" rel=\"noopener\">NCI. Cervical Cancer Treatment (PDQ).</a>","Bhatla N, et al. Revised FIGO staging for carcinoma of the cervix uteri. Int J Gynaecol Obstet. 2019.","International Federation for Cervical Pathology and Colposcopy. Colposcopic terminology and transformation zone concepts.","<a href=\"https://screening.iarc.fr/atlascolpoindex10.php\" target=\"_blank\" rel=\"noopener\">IARC. Atlas of Colposcopy: tipos de zona de transformação.</a>","<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hpv\" target=\"_blank\" rel=\"noopener\">Ministério da Saúde. HPV — prevenção e grupos especiais de vacinação.</a>"],"reference-list"]]]]}
+{
+  "v": 2,
+  "s": "cancer-colo-utero-hpv",
+  "t": "Rastreamento e Lesões Precursoras do Câncer do Colo Uterino",
+  "p": "Rastreamento e Lesões Precursoras do Câncer do Colo Uterino — Livro-Texto LURIA",
+  "d": "Diretrizes Brasileiras MS / INCA 2026 · Oncogênese Viral do HPV (E6/E7) · Condutas no ASC-US, LSIL, ASC-H, HSIL e AGC · Colposcopia, CAF e Conização a Frio",
+  "a": "Ginecologia e Obstetrícia",
+  "m": "Patologia do Trato Genital Inferior e Colposcopia",
+  "h": [
+    "Apostila LURIA",
+    "Rastreamento e Lesões Precursoras do Câncer do Colo Uterino",
+    "Diretrizes Brasileiras MS / INCA 2026 · Oncogênese Viral do HPV (E6/E7) · Condutas no ASC-US, LSIL, ASC-H, HSIL e AGC · Colposcopia, CAF e Conização a Frio",
+    [
+      "Área: Ginecologia e Obstetrícia",
+      "Matéria: Patologia do Trato Genital Inferior e Colposcopia",
+      "Tema: Rastreamento e Lesões Precursoras do Câncer do Colo Uterino"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "resumo-executivo-30-segundos-colo",
+      "Em 30 Segundos: Pontos Vitais para a Prática e Provas (Diretrizes MS/INCA 2026)"
+    ],
+    [
+      "historia-natural-hpv-oncoprotes-e6-e7",
+      "1. História Natural da Infecção pelo HPV e Mecanismos Oncogenéticos das Oncoproteínas E6 e E7"
+    ],
+    [
+      "diretrizes-rastreamento-inca-faixa-etaria-periodicidade",
+      "2. Diretrizes Brasileiras de Rastreamento (Ministério da Saúde / INCA 2026)"
+    ],
+    [
+      "condutas-citopatologia-alterada-asc-us-lsil-asc-h-hsil-agc",
+      "3. Condutas Clínicas Frente aos Laudos Citopatológicos Alterados (Sistema Bethesda)"
+    ],
+    [
+      "colposcopia-testes-solucoes-e-achados-anormais",
+      "4. Colposcopia: Testes do Ácido Acético e Solução de Schiller, Classificação da ZT e Achados Anormais"
+    ],
+    [
+      "biopsia-conizacao-caf-ezpec-e-cone-a-frio",
+      "5. Diagnóstico Histopatológico e Tratamento Excisional: Biópsia Dirigida, CAF/EZPEC vs Cone a Frio"
+    ],
+    [
+      "vacina-hpv-pni-e-prevencao-primaria",
+      "6. Vacinação contra o HPV no PNI: Esquemas, Eficácia e Prevenção Primária"
+    ],
+    [
+      "casos-clinicos-e-questoes-comentadas-colo",
+      "7. Casos Clínicos Estruturados e Questões de Provas de Residência Médica Comentadas"
+    ],
+    [
+      "fisiopatologia-molecular-estadiamento-figo-histologia",
+      "8. Aprofundamento: Histopatologia do Carcinoma Cervical, Variantes Raras e Estadiamento Clínico-Radiológico FIGO 2018/2026"
+    ],
+    [
+      "testes-dna-hpv-biologia-molecular-futuro-do-rastreamento",
+      "9. Testes Moleculares de DNA-HPV: A Transição Mundial e o Projeto Piloto no SUS"
+    ],
+    [
+      "conizacao-tecnicas-margens-e-risco-obstetrico",
+      "10. Procedimentos Cirúrgicos do Colo Uterino: Aspectos Técnicos e Preservação da Fertilidade"
+    ],
+    [
+      "quimiorradioterapia-e-tratamento-avancado-cervical",
+      "11. Manejo do Câncer Cervical Localmente Avançado e Metastático: Quimiorradioterapia Concomitante, Braquiterapia e Imunoterapia"
+    ],
+    [
+      "matriz-sintese-condutas-rastreamento-e-residencia-completa",
+      "12. Guia de Bolso: Algoritmo Decisório Completo de Rastreamento e Banco Expandido de Provas"
+    ],
+    [
+      "situacoes-especiais-gestacao-hiv-transgenero",
+      "13. Condutas Especiais: Gestação, Vivendo com HIV/Imunossuprimidas e Homens Transgênero"
+    ],
+    [
+      "sintese-final-e-revisao-rapida-para-concursos",
+      "14. Revisão Sistemática de Alto Rendimento: Tabelas de Memorização Rápida"
+    ],
+    [
+      "diagnostico-diferencial-e-lesoes-nao-neoplasicas-cervicais",
+      "15. Diagnósticos Diferenciais Citopatológicos e Colposcópicos: Cervicites, Ectopia, Pólipos e Metaplasia"
+    ],
+    [
+      "banco-final-de-casos-e-questoes-dissertativas-colo",
+      "16. Casos Clínicos Dissertativos Avançados de Provas Práticas e Título de Especialista (TEGO)"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "resumo-executivo-30-segundos-colo",
+      0,
+      [
+        [
+          "2",
+          "Em 30 Segundos: Pontos Vitais para a Prática e Provas (Diretrizes MS/INCA 2026)"
+        ],
+        [
+          "p",
+          "O rastreamento do câncer do colo do útero e o manejo das lesões intraepiteliais precursoras representam um dos temas com maior regularidade de cobrança em provas de residência médica e concursos no Brasil. O conhecimento estrito das <strong>Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero do Ministério da Saúde / INCA</strong> é mandatória:"
+        ],
+        [
+          "4",
+          "Regras de Ouro do Rastreamento do Câncer do Colo Uterino:"
+        ],
+        [
+          "u",
+          [
+            "<strong>População-Alvo do Rastreamento:</strong> Mulheres (ou pessoas com colo do útero) na faixa etária de <strong>25 aos 64 anos</strong> que já iniciaram atividade sexual;",
+            "<strong>Periodicidade do Exame Citopatológico (Papanicolau):</strong> Exame <strong>anual</strong>. Após <strong>dois exames anuais consecutivos normais/negativos</strong>, a periodicidade passa a ser <strong>trienal (a cada 3 anos)</strong>;",
+            "<strong>Conduta no ASC-US (Atipias de Células Escamosas de Significado Indeterminado, possivelmente não neoplásicas):</strong>\n            <ul>\n              <li>Mulheres &ge; 30 anos: repetir citopatologia em <strong>6 meses</strong>;",
+            "Mulheres de 25 a 29 anos: repetir citopatologia em <strong>12 meses</strong>;",
+            "Mulheres < 25 anos (caso realizado indevidamente): manter rotina de rastreamento iniciando apenas aos <strong>25 anos</strong>;",
+            "Se na repetição houver qualquer resultado alterado (&ge; ASC-US): encaminhar para <strong>colposcopia</strong>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n          <li><strong>Conduta na LSIL / Lesão Intraepitelial de Baixo Grau (NIC I / Efeito Citopático do HPV):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Mulheres &ge; 30 anos: repetir citopatologia em <strong>6 meses</strong>;",
+            "Mulheres de 25 a 29 anos: repetir citopatologia em <strong>12 meses</strong>;",
+            "Mulheres < 25 anos: não encaminhar para colposcopia imediata; alta taxa de clareamento espontâneo (> 80-90%);",
+            "Se duas citologias consecutivas com LSIL: encaminhar para <strong>colposcopia</strong>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n          <li><strong>Conduta no ASC-H (Atipias de Células Escamosas não sendo possível afastar Lesão de Alto Grau):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Colposcopia imediata</strong>, independentemente da faixa etária. Não se repete citopatologia!"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n          <li><strong>Conduta no HSIL / Lesão Intraepitelial de Alto Grau (NIC II / NIC III):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Colposcopia imediata</strong> para todas as pacientes;",
+            "Possibilidade de estratégia \"Ver e Tratar\" (excisão tipo 1/2 com CAF/EZPEC ambulatorial imediata se lesão de alto grau totalmente visível no ectocolo em mulher &ge; 25 anos sem suspeita de invasão)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n          <li><strong>Conduta no AGC (Células Glandulares Atípicas / antigas AGUS):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Colposcopia imediata com avaliação criteriosa do canal endocervical</strong> (escovado endocervical ou curetagem endocervical);",
+            "Em mulheres com <strong>idade &ge; 35 anos</strong> ou com sangramento uterino anormal ou fatores de risco para neoplasia de endométrio: realizar obrigatoriamente <strong>ultrassonografia transvaginal e amostragem endometrial (histeroscopia com biópsia de endométrio)</strong>."
+          ]
+        ]
+      ]
+    ],
+    [
+      "historia-natural-hpv-oncoprotes-e6-e7",
+      0,
+      [
+        [
+          "2",
+          "1. História Natural da Infecção pelo HPV e Mecanismos Oncogenéticos das Oncoproteínas E6 e E7"
+        ],
+        [
+          "3",
+          "O Papilomavírus Humano (HPV) como Agente Etiológico Necessário"
+        ],
+        [
+          "p",
+          "O Papilomavírus Humano (HPV) é um vírus de DNA de fita dupla circular, não envelopado, pertencente à família <em>Papillomaviridae</em>. O DNA do HPV é identificado em mais de 99% de todos os casos de carcinomas invasores do colo uterino no mundo, sendo formalmente reconhecido pela Organização Mundial da Saúde (OMS) como um <strong>fator etiológico necessário, porém não suficiente por si só</strong>, para o desenvolvimento da neoplasia maligna cervical."
+        ],
+        [
+          "4",
+          "Classificação dos Tipos de HPV e Potencial Oncogênico"
+        ],
+        [
+          "u",
+          [
+            "<strong>HPVs de Alto Risco Oncogênico:</strong> Tipos <strong>16, 18</strong>, 31, 33, 35, 39, 45, 51, 52, 56, 58, 59 e 68. Os subtipos <strong>16 e 18</strong> são responsáveis por aproximadamente <strong>70% a 75%</strong> de todos os carcinomas cervicais invasores globalmente, com o tipo 16 apresentando predileção por carcinoma epidermoide/escamoso e o tipo 18 apresentando forte associação com <em>adenocarcinomas endocervicais</em>;",
+            "<strong>HPVs de Baixo Risco Oncogênico:</strong> Tipos <strong>6 e 11</strong>. Não causam câncer cervical, sendo responsáveis por mais de 90% dos <strong>condilomas acuminados</strong> (verrugas anogenitais benignas) e papilomatose respiratória recorrente."
+          ]
+        ],
+        [
+          "3",
+          "A Zona de Transformação e a Junção Escamocolunar (JEC)"
+        ],
+        [
+          "p",
+          "O colo uterino é revestido externamente pelo epitélio estratificado pavimentoso não queratinizado da ectocérvice e internamente pelo epitélio colunar simples mucíparo da endocérvice. A linha de encontro entre esses dois tecidos denomina-se <strong>Junção Escamocolunar (JEC)</strong>. Ao longo da vida reprodutiva, influenciada pela acidez vaginal e pelos hormônios esteroides, a ectopia colunar sofre um processo fisiológico de diferenciação denominado <em>metaplasia escamosa</em>, originando a <strong>Zona de Transformação (ZT)</strong>. As células metaplásicas jovens e as células basais imaturas da ZT encontram-se em alta atividade proliferativa e são as células-alvo primárias para a infecção e integração viral do HPV."
+        ],
+        [
+          "3",
+          "Mecanismos Moleculares Oncogenéticos: O Papel das Oncoproteínas E6 e E7"
+        ],
+        [
+          "p",
+          "Na infecção produtiva benigna (episomal), o DNA viral replica-se no núcleo celular de forma circular e independente do genoma da célula hospedeira, expressando as proteínas de capsídeo tardias (L1 e L2) e gerando o efeito citopático típico visto na citopatologia (a <strong>coilocitose</strong>: halo perinuclear claro com atipia nuclear). Todavia, na progressão neoplásica para neoplasia intraepitelial de alto grau (NIC II/III) e câncer invasor, ocorre a <strong>integração física do genoma do HPV ao DNA genômico celular</strong> do hospedeiro, interrompendo o gene viral regulador <em>E2</em>. A perda do freio exercido por E2 resulta na superexpressão desregulada e contínua de duas oncoproteínas virais precoces cruciais:"
+        ],
+        [
+          "t",
+          [
+            "Oncoproteína Viral",
+            "Proteína Celular Alvo",
+            "Mecanismo Molecular Subjacente",
+            "Consequência Celular Oncogenética"
+          ],
+          [
+            [
+              "<strong>Oncoproteína E6</strong>",
+              "<strong>Proteína p53</strong> (o \"guardião do genoma\")",
+              "E6 recruta a ubiquitina ligase celular E6AP (E6-Associated Protein), promovendo a marcação por ubiquitinação e subsequente <strong>degradação proteassomal da p53</strong>.",
+              "Sem p53 funcional, a célula perde a capacidade de paralisar o ciclo celular na fase G1 para reparo de DNA danificado e torna-se incapaz de deflagrar apoptose em resposta a mutações genéticas, acumulando instabilidade cromossômica acelerada."
+            ],
+            [
+              "<strong>Oncoproteína E7</strong>",
+              "<strong>Proteína do Retinoblastoma (pRb)</strong>",
+              "E7 liga-se avidamente à forma hipofosforilada da proteína pRb, provocando sua dissociação e consequente <strong>liberação constitutiva do fator de transcrição E2F</strong>.",
+              "O fator E2F livre estimula a transcrição de genes essenciais para a transição descontrolada da fase G1 para a fase S do ciclo celular (síntese de DNA celular), permitindo divisão mitótica autônoma perpétua, independente de fatores de crescimento externos."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "História Natural: Clareamento Viral vs Persistência"
+        ],
+        [
+          "p",
+          "A infecção genital pelo HPV é extremamente prevalente, atingindo até 80% das mulheres sexualmente ativas em algum momento da vida. Contudo, na grande maioria (cerca de 85% a 90% dos casos), o sistema imunológico competente é capaz de promover o <strong>clareamento viral espontâneo</strong> em um período médio de 12 a 24 meses sem deixar sequelas citológicas. Apenas uma minoria de mulheres desenvolve <strong>infecção viral persistente por HPV oncogênico</strong> (especialmente tipos 16 e 18), sendo esta persistência ao longo de anos o verdadeiro pré-requisito biológico para a evolução gradual: Infecção transitória &rarr; NIC I &rarr; NIC II &rarr; NIC III &rarr; Carcinoma invasor, um processo biológico lento que costuma demandar de 10 a 20 anos."
+        ]
+      ]
+    ],
+    [
+      "diretrizes-rastreamento-inca-faixa-etaria-periodicidade",
+      0,
+      [
+        [
+          "2",
+          "2. Diretrizes Brasileiras de Rastreamento (Ministério da Saúde / INCA 2026)"
+        ],
+        [
+          "3",
+          "População-Alvo e Limites Etários"
+        ],
+        [
+          "p",
+          "As Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero estabelecem critérios epidemiológicos sólidos fundamentados na história natural da neoplasia e na melhor evidência de custo-efetividade para a saúde pública:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Início do Rastreamento aos 25 Anos:</strong> Em mulheres com menos de 25 anos, a infecção pelo HPV e as lesões precursoras de baixo grau (NIC I) são altamente frequentes, porém apresentam taxa espontânea de regressão imunológica superior a 90%. Realizar exames citopatológicos nessa faixa etária gera diagnósticos falso-positivos, sobrediagnóstico, ansiedade psicológica e procedimentos excisionais iatrogênicos desnecessários no colo uterino (que aumentam o risco obstétrico futuro de incompetência istmocervical e prematuridade). Portanto, <strong>o rastreamento é formalmente desaconselhado antes dos 25 anos</strong>, mesmo em mulheres com atividade sexual precoce;",
+            "<strong>Término do Rastreamento aos 64 Anos:</strong> Aos 64 anos de idade, o rastreamento deve ser <strong>interrompido definitivamente</strong> caso a mulher apresente pelo menos <strong>dois exames citopatológicos negativos consecutivos realizados nos últimos 5 anos</strong>. A história natural de desenvolvimento de lesão invasora demanda mais de uma década; em mulheres com histórico rastreador negativo regular, o surgimento de novo câncer invasor em idade senil é evento raríssimo. Se a mulher nunca realizou preventivo ou tem histórico desconhecido aos 64 anos, realizam-se dois exames com intervalo de 1 ano; se ambos normais, cessa-se o seguimento."
+          ]
+        ],
+        [
+          "3",
+          "Periodicidade e Intervalo Entre os Exames"
+        ],
+        [
+          "p",
+          "O intervalo entre os exames citopatológicos deve seguir rigorosamente a regra dos exames anuais seguida de espaçamento trienal:"
+        ],
+        [
+          "4",
+          "Cronograma Oficial do Ministério da Saúde:"
+        ],
+        [
+          "o",
+          [
+            "A mulher deve realizar o exame citopatológico (Papanicolau) <strong>anualmente</strong>;",
+            "Após <strong>dois exames anuais consecutivos negativos</strong> para displasia ou neoplasia maligna, o intervalo entre os exames passa a ser de <strong>3 em 3 anos (trienal)</strong>;",
+            "Se a paciente apresentar novo preventivo alterado ou quebra de acompanhamento prolongado, o protocolo de investigação específico deve ser acionado."
+          ]
+        ],
+        [
+          "3",
+          "Populações Especiais e Adaptações de Conduta"
+        ],
+        [
+          "t",
+          [
+            "População Especial",
+            "Regra de Rastreamento Especificada",
+            "Justificativa Clínica"
+          ],
+          [
+            [
+              "<strong>Mulheres Imunossuprimidas / Vivendo com HIV</strong>",
+              "Iniciar o rastreamento <strong>logo após o início da atividade sexual</strong> (independentemente de ter 25 anos). Rastreamento <strong>semestral no primeiro ano</strong>; após dois resultados semestrais normais, manter seguimento <strong>anual contínuo</strong> enquanto durar a imunossupressão. Se contagem de LT-CD4+ < 200 céls/mm³, manter periodicidade semestral.",
+              "Imunocomprometimento grave reduz a taxa de clareamento do HPV e acelera a progressão para lesões de alto grau e câncer invasor."
+            ],
+            [
+              "<strong>Gestantes</strong>",
+              "Seguir rigorosamente a <strong>mesma rotina e periodicidade</strong> das mulheres não gestantes (não há contraindicação para coleta citopatológica ectocervical com espátula de Ayre e endocervical cuidadosa com escova).",
+              "O diagnóstico de lesões invasoras não deve ser postergado pelo ciclo gravídico."
+            ],
+            [
+              "<strong>Mulheres Histerectomizadas</strong>",
+              "Se histerectomia total por <strong>causa benigna</strong> (ex.: miomatose) e sem histórico de NIC II/III ou câncer prévio: <strong>dispensa o rastreamento citopatológico de cúpula vaginal</strong>.<br>Se histerectomia por NIC II/III prévia: manter citopatologia anual da cúpula vaginal por 5 anos antes de espaçar ou descontinuar. Se histerectomia subtotal (colo preservado): manter rotina normal dos 25 aos 64 anos.",
+              "A cúpula vaginal de mulher sem colo e sem antecedente prévio de lesão neoplásica possui risco virtualmente desprezível de carcinoma de vagina."
+            ],
+            [
+              "<strong>Mulheres Virgens (Sem Atividade Sexual Pregressa)</strong>",
+              "<strong>Não devem ser submetidas ao rastreamento citopatológico</strong>.",
+              "Como a transmissão do HPV ocorre quase que exclusivamente por contato sexual, o risco de câncer de colo de útero em mulheres sem coito vaginal é infundado."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "condutas-citopatologia-alterada-asc-us-lsil-asc-h-hsil-agc",
+      0,
+      [
+        [
+          "2",
+          "3. Condutas Clínicas Frente aos Laudos Citopatológicos Alterados (Sistema Bethesda)"
+        ],
+        [
+          "3",
+          "O Fluxograma Decisório das Diretrizes Brasileiras"
+        ],
+        [
+          "p",
+          "O Sistema Bethesda de classificação citológica cervical estratifica as anormalidades epiteliais escamosas e glandulares. A conduta subsequente é rigorosamente modulada pela <strong>idade da mulher</strong> e pelo <strong>potencial oncogênico</strong> estimado do laudo:"
+        ],
+        [
+          "t",
+          [
+            "Laudo Citopatológico",
+            "Idade da Paciente",
+            "Conduta Imediata Recomendada",
+            "Conduta Subsequente e Seguimento"
+          ],
+          [
+            [
+              "<strong>ASC-US</strong><br>(Atipias de células escamosas de significado indeterminado, possivelmente não neoplásicas)",
+              "<strong>&ge; 30 anos</strong>",
+              "<strong>Repetir citopatologia em 6 meses</strong>",
+              "Se o exame repetido for negativo em duas ocasiões semestrais: retornar à rotina trienal.<br>Se qualquer resultado na repetição for <strong>&ge; ASC-US</strong>: encaminhar para <strong>Colposcopia</strong>."
+            ],
+            [
+              "<strong>25 a 29 anos</strong>",
+              "<strong>Repetir citopatologia em 12 meses</strong>",
+              "Se negativo: retornar à rotina trienal.<br>Se alterado (&ge; ASC-US): encaminhar para <strong>Colposcopia</strong>."
+            ],
+            [
+              "<strong>< 25 anos</strong> (coletado indevidamente)",
+              "<strong>Manter rotina aos 25 anos</strong>",
+              "Não realizar colposcopia nem repetir em 6 meses. Aguardar completar 25 anos para reiniciar o rastreamento formal."
+            ],
+            [
+              "<strong>LSIL / NIC I</strong><br>(Lesão intraepitelial escamosa de baixo grau / efeito citopático HPV)",
+              "<strong>&ge; 30 anos</strong>",
+              "<strong>Repetir citopatologia em 6 meses</strong>",
+              "Se dois exames semestrais negativos: retorno à rotina trienal.<br>Se na repetição mantiver LSIL ou piorar (&ge; ASC-US): encaminhar para <strong>Colposcopia</strong>."
+            ],
+            [
+              "<strong>25 a 29 anos</strong>",
+              "<strong>Repetir citopatologia em 12 meses</strong>",
+              "Se negativo: retorno à rotina trienal.<br>Se na repetição mantiver LSIL ou piorar: encaminhar para <strong>Colposcopia</strong>."
+            ],
+            [
+              "<strong>< 25 anos</strong>",
+              "<strong>Repetir aos 25 anos</strong>",
+              "Alta probabilidade de regressão espontânea (> 85-90%). Não realizar colposcopia."
+            ],
+            [
+              "<strong>ASC-H</strong><br>(Atipias escamosas não sendo possível afastar lesão de alto grau)",
+              "<strong>Qualquer idade (&ge; 25 anos)</strong>",
+              "<strong>COLPOSCOPIA IMEDIATA</strong>",
+              "Risco de 30% a 50% de abrigar NIC II/III subjacente. Não se repete citopatologia; a avaliação colposcópica com biópsia dirigida é obrigatória."
+            ],
+            [
+              "<strong>HSIL / NIC II/III</strong><br>(Lesão intraepitelial escamosa de alto grau)",
+              "<strong>Qualquer idade (&ge; 25 anos)</strong>",
+              "<strong>COLPOSCOPIA IMEDIATA</strong>",
+              "Avaliar Zona de Transformação. Se critérios preenchidos (idade &ge; 25 anos, lesão ectocervical com limites visíveis, sem suspeita de invasão), é permitido o método <strong>\"Ver e Tratar\"</strong> com excisão tipo 1 ou 2 por CAF/EZPEC no mesmo ato colposcópico."
+            ],
+            [
+              "<strong>AGC</strong><br>(Células glandulares atípicas / antigas AGUS)",
+              "<strong>Qualquer idade (&ge; 25 anos)</strong>",
+              "<strong>COLPOSCOPIA IMEDIATA + Avaliação do Canal Endocervical</strong>",
+              "Realizar escovado endocervical ou curetagem endocervical. <strong>Se idade &ge; 35 anos</strong>, sangramento uterino anormal ou fatores de risco para adenocarcinoma endometrial: realizar <strong>ultrassonografia transvaginal e biópsia endometrial obrigatória</strong>."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Alerta Crítico: Conduta no Laudo Citológico Insatisfatório"
+        ],
+        [
+          "p",
+          "A amostra citológica classificada como <strong>insatisfatória para avaliação oncótica</strong> (por celularidade escassa, dessecação, hemorragia excessiva ou sobreposição maciça de leucócitos) <strong>deve ser repetida em 6 a 12 semanas (cerca de 2 a 3 meses)</strong>, orientando a paciente a tratar previamente eventuais vaginites purulentas e evitando duchas vaginais ou relações sexuais nas 48h anteriores à nova coleta."
+        ]
+      ]
+    ],
+    [
+      "colposcopia-testes-solucoes-e-achados-anormais",
+      0,
+      [
+        [
+          "2",
+          "4. Colposcopia: Testes do Ácido Acético e Solução de Schiller, Classificação da ZT e Achados Anormais"
+        ],
+        [
+          "3",
+          "Fundamentos da Avaliação Colposcópica"
+        ],
+        [
+          "p",
+          "A colposcopia consiste no exame microscópico estereoscópico detalhado do colo uterino e da vagina sob magnificação óptica (6x a 40x), permitindo identificar lesões intraepiteliais e guiar biópsias dirigidas das áreas de maior atipia estrutural e vascular."
+        ],
+        [
+          "3",
+          "Classificação Anatômica da Zona de Transformação (IFCPC 2011/2026)"
+        ],
+        [
+          "p",
+          "A avaliação da Junção Escamocolunar (JEC) e da Zona de Transformação (ZT) determina a adequabilidade técnica da colposcopia e a conduta terapêutica:"
+        ],
+        [
+          "u",
+          [
+            "<strong>ZT Tipo 1:</strong> A JEC e toda a extensão da zona de transformação são <strong>completamente visíveis e situam-se 100% na ectocérvice</strong> (colo \"aberto\", comum em mulheres jovens e nuligestas);",
+            "<strong>ZT Tipo 2:</strong> A JEC e a zona de transformação possuem um componente endocervical, porém <strong>ainda são 100% visíveis</strong> à manipulação delicada com pinça de Chéron ou espéculo endocervical de Kogan;",
+            "<strong>ZT Tipo 3:</strong> A JEC <strong>não é completamente visível</strong>, adentrando o canal endocervical de forma que seu limite superior distal não pode ser determinado pela colposcopia (exame colposcópico insatisfatório/incompleto, comum na pós-menopausa tardia pela retração fisiológica da JEC). Exige amostragem do canal endocervical e contraindica ablação superficial."
+          ]
+        ],
+        [
+          "3",
+          "Os Dois Testes Diagnósticos Fundamentais da Colposcopia"
+        ],
+        [
+          "4",
+          "1. Teste do Ácido Acético (3% a 5%):"
+        ],
+        [
+          "p",
+          "O ácido acético desidrata reversivelmente as células e provoca a <strong>coagulação transitória das proteínas nucleares</strong>. Em tecidos com alta densidade celular e núcleos aumentados hipercorados (como nas lesões induzidas pelo HPV e nas neoplasias intraepiteliais de alto grau), o ácido acético impede a penetração da luz através do estroma subjacente e reflete a luz incidente, gerando uma área de coloração esbranquiçada denominada <strong>epitélio acetobranco</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Acetobranquidão Tênue e Translúcida:</strong> Sugestiva de metaplasia escamosa imatura ou lesão de baixo grau (NIC I);",
+            "<strong>Acetobranquidão Espessa, Opaca e de Rápido Aparecimento:</strong> Sugestiva de lesão intraepitelial de alto grau (NIC II/III) ou carcinoma invasor. A presença de bordas nítidas, relevo elevado, orifícios glandulares espessados (cuffing) e desprendimento epitelial (\"peeling\") aumenta a probabilidade de neoplasia grave."
+          ]
+        ],
+        [
+          "4",
+          "2. Teste de Schiller (Aplicação da Solução Aquosa de Lugol a 2%):"
+        ],
+        [
+          "p",
+          "A solução de Lugol (iodo) fundamenta-se na afinidade do iodo pelo <strong>glicogênio citoplasmático</strong> presente nas células escamosas maduras diferenciadas da ectocérvice:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Epitélio Normal (Iodopositivo / Schiller Negativo):</strong> As células escamosas maduras ricas em glicogênio absorvem o iodo e adquirem uma coloração <strong>castanho-escura homogênea (preto-mogno)</strong>. O teste de Schiller é dito <em>negativo</em> porque o tecido é saudável;",
+            "<strong>Epitélio Neoplásico / Atípico (Iodonegativo / Schiller Positivo):</strong> As células displásicas da NIC II/III e do câncer invasor encontram-se desdiferenciadas, imaturas e em intensa proliferação mitótica, carecendo de glicogênio citoplasmático. Não fixam o iodo e destacam-se como uma <strong>área amarelo-clara brilhante ou cor de mostarda</strong>. O teste de Schiller é dito <em>positivo</em> para lesão."
+          ]
+        ],
+        [
+          "3",
+          "Achados Colposcópicos Anormais Menores e Maiores (Classificação IFCPC)"
+        ],
+        [
+          "t",
+          [
+            "Categoria Colposcópica",
+            "Achados Morfológicos e Vasculares",
+            "Correlação Histopatológica Habitual"
+          ],
+          [
+            [
+              "<strong>Achados Anormais Menores (Grau 1)</strong>",
+              "• Epitélio acetobranco fino e translúcido, de surgimento lento e desaparecimento rápido;<br>\n              • Bordas geográficas ou irregulares tênues;<br>\n              • Pontilhado fino e mosaico fino (vasos capilares finos e homogêneos, uniformemente espaçados).",
+              "Metaplasia escamosa imatura, cervicite inflamatória ou Neoplasia Intraepitelial Cervical de Baixo Grau (NIC I)."
+            ],
+            [
+              "<strong>Achados Anormais Maiores (Grau 2)</strong>",
+              "• Epitélio acetobranco denso, opaco (\"giz\" ou \"madrepérola\"), de rápido aparecimento e lenta regressão;<br>\n              • Bordas demarcadas e nítidas com elevação da superfície;<br>\n              • <strong>Pontilhado grosseiro</strong> (alças capilares calibrosas e dilatadas);<br>\n              • <strong>Mosaico grosseiro</strong> (blocos de epitélio separados por vasos dilatados exuberantes);<br>\n              • Sinal da borda interna (inner border sign: lesão de alto grau no interior de área acetobranca tênue);<br>\n              • Sinal da crista (ridge sign: epitélio espesso proeminente na JEC).",
+              "Neoplasia Intraepitelial Cervical de Alto Grau (<strong>NIC II e NIC III / Carcinoma in situ</strong>). Indicação formal de biópsia dirigida ou excisão imediata."
+            ],
+            [
+              "<strong>Suspeita de Invasão Neoplásica</strong>",
+              "• <strong>Vasos atípicos</strong> (vasos tortuosos, em saca-rolhas, em grampo ou vírgula, com curso bizarro e calibres anárquicos);<br>\n              • Superfície tumoral irregular nodular, friabilidade exuberante com sangramento ao toque, ulceração e necrose.",
+              "<strong>Carcinoma Invasor do Colo Uterino</strong>. Contraindica procedimentos ambulatoriais de conização CAF; exige biópsia profunda para estadiamento oncológico formal."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "biopsia-conizacao-caf-ezpec-e-cone-a-frio",
+      0,
+      [
+        [
+          "2",
+          "5. Diagnóstico Histopatológico e Tratamento Excisional: Biópsia Dirigida, CAF/EZPEC vs Cone a Frio"
+        ],
+        [
+          "3",
+          "O Padrão-Ouro Diagnóstico: Biópsia Dirigida por Colposcopia"
+        ],
+        [
+          "p",
+          "A citopatologia é exclusivamente um método de <em>rastreamento populacional</em>, enquanto a colposcopia é um método de <em>localização topográfica</em>. O diagnóstico definitivo de confirmação de uma lesão intraepitelial cervical (NIC I, NIC II ou NIC III) e a exclusão cabal de microinvasão estromal exigem <strong>exame histopatológico formal obtido por biópsia dirigida</strong> das áreas com achados colposcópicos mais graves (utilizando pinça de Gaylor-Medina ou Tischler-Morgan)."
+        ],
+        [
+          "3",
+          "Manejo Clínico Estratificado por Histopatologia (NIC I vs NIC II vs NIC III)"
+        ],
+        [
+          "u",
+          [
+            "<strong>NIC I (Lesão Intraepitelial de Baixo Grau Histológica):</strong>\n          <ul>\n            <li>Acompanhamento clínico expectante com citopatologia e colposcopia semestral por até 2 anos;",
+            "A taxa de regressão espontânea sem intervenção em mulheres jovens atinge 60% a 80%. A destruição destrutiva/ablativa só é indicada se a lesão persistir por mais de 24 meses em mulher com prole definida ou sob forte angústia;"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n        <li><strong>NIC II e NIC III (Lesão Intraepitelial de Alto Grau / Carcinoma in Situ Histológico):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Exigem <strong>tratamento ativo de erradicação</strong> pelo risco significativo de progressão para carcinoma invasor (o risco cumulativo de invasão na NIC III não tratada varia de 30% a 50% em 10 a 20 anos);",
+            "O tratamento de escolha é o <strong>procedimento excisional da zona de transformação</strong>, preferencialmente por métodos conservadores que preservem o órgão e a função reprodutiva."
+          ]
+        ],
+        [
+          "3",
+          "Modalidades Excisionais: CAF (EZPEC / LEEP) vs Conização a Frio"
+        ],
+        [
+          "p",
+          "A seleção da técnica cirúrgica para a retirada da lesão depende criticamente do tipo de Zona de Transformação (ZT), da extensão endocervical e da suspeita clínica de invasão:"
+        ],
+        [
+          "t",
+          [
+            "Procedimento Cirúrgico",
+            "Indicações Principais",
+            "Vantagens e Ambiente",
+            "Desvantagens e Limitações"
+          ],
+          [
+            [
+              "<strong>Cirurgia de Alta Frequência (CAF / EZPEC / LEEP / Excisão da ZT com Alça Diatérmica)</strong>",
+              "• NIC II e NIC III com ZT Tipo 1 ou Tipo 2 totalmente visíveis;<br>\n              • Método \"Ver e Tratar\" em mulher &ge; 25 anos com suspeita citológica de HSIL e achado colposcópico maior coincidente ectocervical;<br>\n              • Lesões restritas ao ectocolo sem invasão estromal suspeita.",
+              "• Realizado em nível ambulatorial sob anestesia local com vasoconstritor;<br>\n              • Baixo custo, rapidez, excelente hemostasia por eletrocoagulação imediata;<br>\n              • Menor taxa de complicações obstétricas futuras (menor índice de estenose cervical e prematuridade).",
+              "• Pode causar artefatos térmicos nas margens da peça cirúrgica se a velocidade de passagem da alça for inadequada;<br>\n              • Inadequado para lesões que se aprofundam profundamente pelo canal endocervical (ZT 3)."
+            ],
+            [
+              "<strong>Conização a Frio Clássica (Bisturi de Lâmina Fria)</strong>",
+              "• Lesões de alto grau com <strong>Zona de Transformação Tipo 3</strong> (que adentram o canal endocervical sem limite superior visível);<br>\n              • Suspeita histológica ou citológica de <strong>microinvasão</strong> estromal (estadiamento preciso da profundidade de invasão);<br>\n              • Citologia compatível com <strong>AGC (células glandulares atípicas)</strong> ou suspeita de adenocarcinoma <em>in situ</em> (AIS);<br>\n              • Discrepância citológica/colposcópica persistente (citologia repetida de alto grau com colposcopia negativa ou insatisfatória).",
+              "• <strong>Ausência completa de artefato térmico</strong> nas margens cirúrgicas da peça, permitindo avaliação histopatológica perfeita do estroma e das margens endocervical e ectocervical.",
+              "• Exige ambiente de centro cirúrgico sob anestesia regional (bloqueio raquidiano) ou geral;<br>\n              • Maior risco de sangramento intra e pós-operatório (exige suturas hemostáticas como a manobra de Sturmdorf);<br>\n              • Maior taxa de sequelas tardias: estenose cicatricial do canal cervical e risco aumentado de incompetência istmocervical e parto prematuro em gestações subsequentes."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Conduta Perante as Margens Cirúrgicas Comprometidas"
+        ],
+        [
+          "p",
+          "Após a conização (CAF ou cone a frio), a análise histopatológica do espécime cirúrgico define os passos seguintes:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Margens Livres:</strong> Seguimento citológico e colposcópico aos 6 e 12 meses. Se ambos normais, retorno à rotina periódica;",
+            "<strong>Margem Ectocervical Comprometida por NIC II/III:</strong> Não exige reconização imediata na grande maioria dos casos. Realiza-se controle colposcópico rigoroso aos 6 meses, pois a taxa de cura com reepitelização atinge mais de 80%;",
+            "<strong>Margem Endocervical Comprometida por NIC II/III:</strong> Maior risco de doença residual no canal. Em mulheres na pós-menopausa ou com prole constituída, pode-se indicar <em>reconização</em> ou histerectomia se houver outras indicações ginecológicas. Em mulheres jovens que desejam gestar, pode-se realizar seguimento citológico e escovado endocervical semestral rigoroso;",
+            "<strong>Presença de Carcinoma Invasor na Peça:</strong> Encaminhamento oncológico imediato para estadiamento cirúrgico formal de acordo com a profundidade de invasão (FIGO 2018/2026)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "vacina-hpv-pni-e-prevencao-primaria",
+      0,
+      [
+        [
+          "2",
+          "6. Vacinação contra o HPV no PNI: Esquemas, Eficácia e Prevenção Primária"
+        ],
+        [
+          "3",
+          "O Programa Nacional de Imunizações (PNI) e a Atualização para Dose Única"
+        ],
+        [
+          "p",
+          "A vacinação contra o HPV constitui a estratégia de <strong>prevenção primária mais custo-efetiva e impactante</strong> na erradicação global do câncer do colo do útero. No Brasil, o Ministério da Saúde disponibiliza a <strong>Vacina HPV Quadrivalente Recombinante</strong> (que confere proteção contra os tipos de alto risco <strong>16 e 18</strong> e contra os tipos de baixo risco <strong>6 e 11</strong>):"
+        ],
+        [
+          "4",
+          "Esquema Vacinal Atualizado no PNI do Ministério da Saúde:"
+        ],
+        [
+          "u",
+          [
+            "<strong>População-Alvo Geral:</strong> Meninas e meninos na faixa etária de <strong>9 a 14 anos</strong> (14 anos, 11 meses e 29 dias);",
+            "<strong>Esquema Posológico Recomendado:</strong> Adoção do esquema de <strong>DOSE ÚNICA (0,5 mL intramuscular)</strong>. Estudos observacionais e ensaios clínicos internacionais de longo prazo demonstraram que uma única dose da vacina profilática induz resposta imunológica robusta e sustentada, não inferior ao esquema anterior de duas doses para prevenção da infecção persistente e lesões pré-cancerosas nessa faixa etária imatura;",
+            "<strong>Pessoas com Imunossupressão (Vivendo com HIV/AIDS, Transplantados de Órgãos Sólidos e Medula Óssea, Pacientes Oncológicos em Quimioterapia):</strong> Faixa etária estendida de <strong>9 a 45 anos de idade</strong>. O esquema posológico para imunossuprimidos permanece rigorosamente com <strong>TRÊS DOSES (0, 2 e 6 meses)</strong>, independentemente da idade;",
+            "<strong>Vítimas de Violência Sexual:</strong> Mulheres e homens de 9 a 45 anos que sofreram violência sexual e não foram previamente vacinados têm direito ao esquema de 3 doses gratuitas no SUS."
+          ]
+        ],
+        [
+          "4",
+          "A Vacina HPV Nonavalente (Gardasil 9) na Rede Privada"
+        ],
+        [
+          "p",
+          "A vacina nonavalente expande a cobertura profilática ao adicionar proteção contra mais 5 tipos oncogênicos adicionais (tipos 31, 33, 45, 52 e 58), elevando a proteção teórica contra carcinomas cervicais invasores de 70% para mais de 90%. Aprovada para indivíduos de 9 a 45 anos, pode ser administrada em esquema de duas doses (0 e 6 meses) entre 9 e 14 anos ou em três doses (0, 2 e 6 meses) a partir dos 15 anos."
+        ],
+        [
+          "4",
+          "Regra Áurea de Saúde Coletiva para Provas de Concurso"
+        ],
+        [
+          "p",
+          "<strong>A vacinação contra o HPV NÃO substitui nem elimina a necessidade do rastreamento citopatológico periódico!</strong> As mulheres vacinadas na adolescência <strong>devem realizar exatamente o mesmo protocolo de rastreamento com Papanicolau dos 25 aos 64 anos</strong>, uma vez que a vacina quadrivalente não confere proteção cruzada total contra os demais 30% dos tipos de HPV oncogênicos (como 31, 33, 45, 52 e 58) e muitas mulheres já haviam sido expostas previamente ao vírus antes da imunização."
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-e-questoes-comentadas-colo",
+      0,
+      [
+        [
+          "2",
+          "7. Casos Clínicos Estruturados e Questões de Provas de Residência Médica Comentadas"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Conduta no ASC-US Conforme a Faixa Etária"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Duas pacientes comparecem à Unidade Básica de Saúde para receber os resultados de seus exames preventivos de rotina (Papanicolau):<br>\n      • <em>Paciente A:</em> 26 anos, nuligesta, sem queixas ginecológicas. Laudo citopatológico: \"Atipias de células escamosas de significado indeterminado, possivelmente não neoplásicas (ASC-US)\". Microbiologia: bacilos de Döderlein normais.<br>\n      • <em>Paciente B:</em> 38 anos, multípara (G2P2), assintomática. Laudo citopatológico: \"Atipias de células escamosas de significado indeterminado, possivelmente não neoplásicas (ASC-US)\". Colo uterino macroscopicamente normal ao exame especular.<br>\n      Qual é a conduta preconizada pelas Diretrizes Brasileiras do Ministério da Saúde / INCA para cada uma das pacientes?"
+        ],
+        [
+          "p",
+          "<strong>Discussão e Conduta:</strong> O manejo do ASC-US é rigidamente estratificado pelo limiar dos 30 anos de idade:<br>\n      1. Para a <strong>Paciente A (26 anos)</strong>, que se encontra na faixa de 25 a 29 anos, a conduta correta é <strong>repetir a citopatologia em 12 meses</strong> na própria UBS. Nessa faixa etária, a prevalência de alterações reativas transitórias é altíssima e o tempo para progressão neoplásica é longo, sendo desnecessário e prejudicial antecipar exames invasivos;<br>\n      2. Para a <strong>Paciente B (38 anos)</strong>, que tem &ge; 30 anos de idade, o risco de lesão precursora persistente é comparativamente maior; logo, a conduta é <strong>repetir a citopatologia em 6 meses</strong>. Caso qualquer uma das pacientes apresente novo exame com resultado alterado (&ge; ASC-US) na repetição, deverá ser encaminhada para colposcopia imediata."
+        ],
+        [
+          "3",
+          "Caso Clínico 2: A Armadilha do Laudo de Células Glandulares Atípicas (AGC)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Mulher de 44 anos, usuária de laqueadura tubária há 10 anos, comparece ao ambulatório com resultado de citopatologia cervical revelando \"Células Glandulares Atípicas de Significado Indeterminado, não sendo possível excluir lesão neoplásica (AGC)\". Ao exame especular: colo epitelizado sem lesões vegetantes ou ulceradas, com muco claro no orifício externo. Toque bimanual sem massas ou dores anexiais. Qual deve ser o plano propedêutico imediato?"
+        ],
+        [
+          "p",
+          "<strong>Discussão e Conduta:</strong> O laudo de AGC (antigo AGUS) é de alto risco oncogênico, pois pode se originar tanto do epitélio glandular da endocérvice (adenocarcinoma <em>in situ</em> ou invasor de colo) quanto do revestimento endometrial (adenocarcinoma de endométrio) ou até tubário/ovariano. A conduta imediata para esta paciente envolve:\n      (1) <strong>Colposcopia imediata com avaliação minuciosa do canal endocervical</strong> (por escovado ou curetagem endocervical); \n      (2) Como a paciente possui <strong>mais de 35 anos de idade (44 anos)</strong>, é mandatório realizar também <strong>avaliação endometrial completa</strong> com Ultrassonografia Transvaginal e Biópsia de Endométrio (por histeroscopia com biópsia dirigida ou cureta de Pipelle), a fim de excluir neoplasia endometrial oculta."
+        ],
+        [
+          "3",
+          "Questões Comentadas de Provas de Residência Médica"
+        ],
+        [
+          "4",
+          "Questão 1 (USP-SP / Residência Médica):"
+        ],
+        [
+          "p",
+          "<em>Enunciado:</em> Mulher de 23 anos, sexualmente ativa desde os 17 anos, realizou exame citopatológico do colo uterino por solicitação em consulta médica geral, com resultado revelando \"Lesão intraepitelial escamosa de baixo grau (LSIL)\". O colo não apresenta alterações ao exame com espéculo. De acordo com as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero do Ministério da Saúde / INCA, a conduta correta é:"
+        ],
+        [
+          "u",
+          [
+            "A) Encaminhar imediatamente para colposcopia com biópsia dirigida.",
+            "B) Repetir o exame citopatológico em 6 meses.",
+            "C) Realizar conização com alça diatérmica (CAF) ambulatorial.",
+            "D) Orientar a paciente que o rastreamento deve ser iniciado apenas aos 25 anos, agendando novo preventivo para quando atingir essa idade."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: D.</strong> <em>Comentário:</em> Segundo as diretrizes oficiais do INCA/MS, a faixa etária para início do rastreamento é aos <strong>25 anos</strong>. Mulheres com menos de 25 anos não devem realizar preventivo, pois a prevalência de infecção por HPV e lesões de baixo grau (LSIL/NIC I) é altíssima e mais de 90% dos casos regridem espontaneamente. Quando o exame é coletado de forma inadvertida e resulta em LSIL ou ASC-US em mulher < 25 anos, a recomendação é <strong>não intervir e manter a rotina a partir dos 25 anos</strong>, evitando iatrogenias e intervenções excisionais que causam sequelas no colo uterino."
+        ],
+        [
+          "4",
+          "Questão 2 (ENARE / Residência Médica):"
+        ],
+        [
+          "p",
+          "<em>Enunciado:</em> Paciente de 34 anos comparece à UBS trazendo laudo de preventivo com \"Atipias de células escamosas não sendo possível afastar lesão de alto grau (ASC-H)\". Assinale a conduta recomendada:"
+        ],
+        [
+          "u",
+          [
+            "A) Repetir a citopatologia em 6 meses na UBS.",
+            "B) Repetir a citopatologia em 12 meses na UBS.",
+            "C) Encaminhar para colposcopia imediata.",
+            "D) Prescrever creme vaginal de estriol e repetir a citologia em 3 meses."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: C.</strong> <em>Comentário:</em> O laudo citológico de <strong>ASC-H</strong> nunca deve ser apenas acompanhado com repetição citológica. O ASC-H carrega uma probabilidade considerável (30% a 50%) de abrigar uma lesão intraepitelial de alto grau (NIC II ou NIC III) subjacente na Zona de Transformação. Portanto, a conduta mandatória e imediata para ASC-H, independentemente da idade (desde que &ge; 25 anos), é o <strong>encaminhamento imediato para colposcopia</strong> com biópsia dirigida das áreas atípicas."
+        ],
+        [
+          "4",
+          "Questão 3 (Revalida INEP):"
+        ],
+        [
+          "p",
+          "<em>Enunciado:</em> Durante o exame colposcópico de uma paciente de 31 anos com resultado prévio de HSIL no preventivo, o ginecologista aplica ácido acético a 5% no colo uterino e observa o surgimento rápido de uma área densamente acetobranca, espessa e com bordas nítidas na zona de transformação ectocervical, acompanhada de pontilhado grosseiro e mosaico grosseiro. A JEC é inteiramente visível na ectocérvice (ZT Tipo 1). A aplicação da solução de Lugol revela que essa mesma área é iodonegativa (cor amarelo-mostarda). Sobre este exame, é correto afirmar:"
+        ],
+        [
+          "u",
+          [
+            "A) Os achados colposcópicos descritos correspondem a achados anormais menores (grau 1).",
+            "B) A área iodonegativa ao lugol indica teste de Schiller positivo, compatível com células atípicas desprovidas de glicogênio.",
+            "C) A paciente apresenta teste de Schiller negativo, descartando a necessidade de biópsia.",
+            "D) A presença de pontilhado grosseiro indica obrigatoriamente adenocarcinoma metastático."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong> <em>Comentário:</em> A solução de Lugol impregna o glicogênio citoplasmático das células maduras escamosas normais (iodopositivas = Schiller negativo). Células displásicas desdiferenciadas de alto grau perdem o glicogênio e não se coram pelo iodo (iodonegativas = <strong>Schiller positivo</strong>). Ademais, epitélio acetobranco denso, pontilhado grosseiro e mosaico grosseiro são classificados como <strong>achados anormais maiores (grau 2)</strong> da colposcopia, altamente correlacionados com NIC II e NIC III."
+        ]
+      ]
+    ],
+    [
+      "fisiopatologia-molecular-estadiamento-figo-histologia",
+      0,
+      [
+        [
+          "2",
+          "8. Aprofundamento: Histopatologia do Carcinoma Cervical, Variantes Raras e Estadiamento Clínico-Radiológico FIGO 2018/2026"
+        ],
+        [
+          "3",
+          "Tipos Histológicos Primários do Câncer de Colo Uterino"
+        ],
+        [
+          "p",
+          "O câncer invasor do colo uterino compreende um espectro heterogêneo de linhagens celulares com comportamento biológico, prognóstico e resposta à quimiorradioterapia distintos:"
+        ],
+        [
+          "t",
+          [
+            "Tipo Histológico",
+            "Proporção Global",
+            "Origem Epitelial e Associação com HPV",
+            "Particularidades Clínicas e Prognósticas"
+          ],
+          [
+            [
+              "<strong>Carcinoma Epidermoide (Escamoso / Espinocelular)</strong>",
+              "Cerca de <strong>75% a 80%</strong> dos casos invasores",
+              "Origina-se do epitélio pavimentoso da zona de transformação ectocervical. Fortemente associado ao <strong>HPV 16</strong> (e em menor grau tipos 18, 31, 33, 45).",
+              "Apresenta progressão típica e sequencial a partir de NIC I &rarr; NIC II &rarr; NIC III. Apresenta padrão exofítico vegetante (\"couve-flor\"), infiltrativo ulcerado ou endofítico nodular. Alta sensibilidade à radioterapia pélvica e quimioterapia baseada em cisplatina."
+            ],
+            [
+              "<strong>Adenocarcinoma Cervical (Mucinoso e Não Mucinoso)</strong>",
+              "Cerca de <strong>15% a 20%</strong> (incidência relativa crescente)",
+              "Origina-se das células glandulares secretoras de muco do canal endocervical. Primordialmente associado ao <strong>HPV 18</strong> (e tipo 45).",
+              "Surge a partir do <strong>Adenocarcinoma <em>in situ</em> (AIS)</strong>. Frequentemente oculto no interior do canal endocervical, com ectocolo macroscopicamente normal, tornando a citopatologia convencional menos sensível (alta taxa de falsos-negativos no raspado ectocervical comum). Tende a ter comportamento mais agressivo, maior propensão a metástases linfonodais pélvicas precoces e menor radiossensibilidade que o carcinoma epidermoide."
+            ],
+            [
+              "<strong>Carcinoma Adenoescamoso</strong>",
+              "3% a 5% dos casos",
+              "Exibe diferenciação mista escamosa e glandular no mesmo tumor.",
+              "Prognóstico historicamente mais reservado em comparação aos carcinomas epidermoides puros do mesmo estádio anatômico."
+            ],
+            [
+              "<strong>Carcinoma Neuroendócrino de Pequenas Células (Small Cell)</strong>",
+              "Menos de 1% a 2% (raro)",
+              "Origina-se de células neuroendócrinas basais endocervicais.",
+              "Extremamente agressivo e de alto grau mitótico, com disseminação hematogênica sistêmica precoce (fígado, pulmão, cérebro). Tratamento exige esquemas sistêmicos agressivos combinados semelhantes aos do câncer de pulmão pequenas células (platina + etoposídeo)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Estadiamento Clínico, Radiológico e Patológico FIGO 2018/2026"
+        ],
+        [
+          "p",
+          "Historicamente, o câncer de colo de útero era a única neoplasia ginecológica estadiada exclusivamente por métodos clínicos (exame físico bimanual sob anestesia, toque retal, cistoscopia, retossigmoidoscopia e radiografia de tórax), para viabilizar sua aplicação uniforme em países de baixa renda. A partir da atualização da <strong>FIGO 2018 (revisada em 2026)</strong>, foi formalmente autorizada a incorporação de <strong>métodos de imagem seccionais avançados (Ressonância Magnética de pelve e PET-CT)</strong> e achados anátomo-patológicos cirúrgicos para refinar a classificação dos estádios:"
+        ],
+        [
+          "t",
+          [
+            "Estádio FIGO",
+            "Definição Anatômica e Critérios de Extensão",
+            "Conduta Terapêutica Primária"
+          ],
+          [
+            [
+              "<strong>Estádio I</strong>",
+              "<strong>Carcinoma estritamente confinado ao colo uterino</strong> (sem extensão corporal ou parametrial).",
+              "Cirúrgica em fases iniciais; preservação da fertilidade possível em IA e IB1 selecionados."
+            ],
+            [
+              "• <strong>IA1</strong>",
+              "Invasão estromal microscópica máxima <strong>&le; 3 mm em profundidade</strong>.",
+              "Conização a frio com margens livres (se desejo reprodutivo) ou Histerectomia Total Simples (tipo A de Piver). Dispensa linfadenectomia."
+            ],
+            [
+              "• <strong>IA2</strong>",
+              "Invasão estromal microscópica <strong>> 3 mm e &le; 5 mm em profundidade</strong>.",
+              "Histerectomia radical modificada + Linfadenectomia pélvica bilateral (ou traquelectomia radical se desejo reprodutivo)."
+            ],
+            [
+              "• <strong>IB1</strong>",
+              "Lesão invasora clinicamente visível ou > 5 mm profundidade, com maior diâmetro <strong>&le; 2 cm</strong>.",
+              "Histerectomia Radical com Wertheim-Meigs (tipo C) ou Traquelectomia Radical + Linfadenectomia pélvica."
+            ],
+            [
+              "• <strong>IB2</strong>",
+              "Lesão invasora com maior diâmetro <strong>> 2 cm e &le; 4 cm</strong>.",
+              "Cirurgia de Wertheim-Meigs (Histerectomia Radical + Linfadenectomia Pélvica) ou Quimiorradioterapia primária."
+            ],
+            [
+              "• <strong>IB3</strong>",
+              "Lesão invasora com maior diâmetro <strong>> 4 cm</strong> restrita ao colo.",
+              "<strong>Quimiorradioterapia concomitante definitiva</strong> (Cisplatina semanal + Teleterapia externa + Braquiterapia de alta taxa de dose)."
+            ],
+            [
+              "<strong>Estádio II</strong>",
+              "Tumor invade além do útero, mas <strong>não atinge o terço inferior da vagina nem a parede pélvica</strong>.",
+              "Quimiorradioterapia primária (exceto IIA1 inicial que pode ser cirúrgico)."
+            ],
+            [
+              "• <strong>IIA1 e IIA2</strong>",
+              "Invasão dos dois terços superiores da vagina <strong>sem invasão parametrial</strong> (&le; 4 cm no IIA1; > 4 cm no IIA2).",
+              "IIA1 pode operar (Wertheim-Meigs); IIA2 é tratado com Quimiorradioterapia definitiva."
+            ],
+            [
+              "• <strong>IIB</strong>",
+              "<strong>Invasão evidente do paramétrio</strong> (parametrite neoplásica nodular ao toque retal), mas sem atingir a parede óssea pélvica.",
+              "<strong>QUIMIORRADIOTERAPIA DEFINITIVA</strong>. A cirurgia de Wertheim-Meigs é contraindicada pelo comprometimento parametrial (não atinge margens livres)."
+            ],
+            [
+              "<strong>Estádio III</strong>",
+              "Tumor envolve o <strong>terço inferior da vagina</strong>, estende-se até a <strong>parede óssea pélvica</strong>, causa <strong>hidronefrose / rim não funcionante</strong> OU apresenta <strong>metástases linfonodais confirmadas</strong>.",
+              "Quimiorradioterapia definitiva."
+            ],
+            [
+              "• <strong>IIIA</strong>",
+              "Invasão do terço inferior da vagina, sem extensão à parede pélvica.",
+              "Quimiorradioterapia definitiva."
+            ],
+            [
+              "• <strong>IIIB</strong>",
+              "Extensão até a parede óssea pélvica e/ou hidronefrose ou exclusão funcional renal.",
+              "Quimiorradioterapia definitiva."
+            ],
+            [
+              "• <strong>IIIC1 e IIIC2</strong>",
+              "<strong>Metástases Linfonodais</strong> documentadas por imagem ou patologia (IIIC1: linfonodos pélvicos; IIIC2: linfonodos para-aórticos).",
+              "Quimiorradioterapia definitiva (com extensão de campo para-aórtico se IIIC2)."
+            ],
+            [
+              "<strong>Estádio IV</strong>",
+              "Tumor invade a <strong>mucosa da bexiga urinária ou reto</strong> (confirmado por biópsia) OU <strong>metástases à distância</strong>.",
+              "Paliativo / Quimioterapia sistêmica com imunoterapia (Anti-PD-1: Pembrolizumabe) + Terapia antiangiogênica (Bevacizumabe)."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "testes-dna-hpv-biologia-molecular-futuro-do-rastreamento",
+      0,
+      [
+        [
+          "2",
+          "9. Testes Moleculares de DNA-HPV: A Transição Mundial e o Projeto Piloto no SUS"
+        ],
+        [
+          "3",
+          "O Esgotamento da Citopatologia e a Superioridade dos Testes Moleculares"
+        ],
+        [
+          "p",
+          "Embora a citopatologia convencional pelo método de Papanicolau tenha reduzido historicamente a mortalidade por câncer de colo uterino em países desenvolvidos com alta cobertura populacional organizada, o exame apresenta limitações inerentes de desempenho diagnóstico. Em condições reais de atenção primária, a sensibilidade da citologia para detecção de lesões precursoras de alto grau (NIC II/III) situa-se entre <strong>50% e 60%</strong>, decorrente de fatores de amostragem no raspado, sobreposição celular, processos inflamatórios e subjetividade interobservador na leitura microscópica."
+        ],
+        [
+          "p",
+          "Em contrapartida, os <strong>Testes de Biologia Molecular para Detecção de DNA de HPV de Alto Risco Oncogênico (testes de PCR ou captura híbrida)</strong> apresentam <strong>sensibilidade superior a 95%</strong> e altíssimo <strong>Valor Preditivo Negativo (VPN > 99%)</strong>. Uma mulher com teste molecular negativo para HPV oncogênico apresenta risco virtualmente nulo de desenvolver câncer invasor do colo uterino nos 5 a 10 anos subsequentes."
+        ],
+        [
+          "3",
+          "Recomendações da Organização Mundial da Saúde (OMS) e o Futuro no Brasil"
+        ],
+        [
+          "u",
+          [
+            "<strong>Diretriz Global da OMS (2021/2026):</strong> Recomenda enfaticamente a substituição da citopatologia pelo <strong>teste de DNA-HPV como método primário de rastreamento</strong> populacional, iniciando aos <strong>30 anos de idade</strong>, com intervalo seguro de <strong>5 a 10 anos</strong> entre os testes negativos;",
+            "<strong>Genotipagem Parcial para Tipos 16 e 18:</strong> Os testes modernos realizam a genotipagem seletiva imediata para os subtipos 16 e 18. Mulheres com teste positivo para HPV 16 ou 18 são encaminhadas <strong>diretamente para colposcopia</strong> devido ao risco imediato de lesão grave;",
+            "<strong>Triagem (Triage) Citológica ou por Biomarcadores:</strong> Caso o teste de DNA-HPV seja positivo para o pool dos demais tipos de alto risco (não-16/18), realiza-se a triagem citológica (em base líquida na mesma amostra coletada) ou teste de imunocitoquímica dupla para <strong>p16/Ki-67</strong>: se a citologia ou p16/Ki-67 for alterada, encaminha-se para colposcopia; se normal, repete-se o teste em 12 meses;",
+            "<strong>Implementação no Sistema Único de Saúde (SUS):</strong> A Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde (CONITEC) aprovou a incorporação progressiva do teste de DNA-HPV para rastreamento cervical no SUS. Até que a transição nacional e a infraestrutura logística estejam universalmente estabelecidas em todos os municípios brasileiros, <strong>permanecem vigentes e plenamente exigidas em provas as Diretrizes Brasileiras com Citopatologia Convencional</strong> (dos 25 aos 64 anos, com intervalo anual e trienal)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "conizacao-tecnicas-margens-e-risco-obstetrico",
+      0,
+      [
+        [
+          "2",
+          "10. Procedimentos Cirúrgicos do Colo Uterino: Aspectos Técnicos e Preservação da Fertilidade"
+        ],
+        [
+          "3",
+          "Detalhes Operatórios da Cirurgia de Alta Frequência (CAF / EZPEC / LEEP)"
+        ],
+        [
+          "p",
+          "A Cirurgia de Alta Frequência revolucionou o tratamento das neoplasias intraepiteliais cervicais ao transformar um procedimento cirúrgico que exigia internação em um ato ambulatorial rápido e de alta resolubilidade:"
+        ],
+        [
+          "4",
+          "Passo a Passo Técnico:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Inspeção Colposcópica Imediata Pré-Operatória:</strong> Confirmação topográfica dos limites externos da lesão acetobranca após aplicação de ácido acético a 5% e demarcação da área iodonegativa pelo teste de Schiller com Lugol;",
+            "<strong>Anestesia Local Infiltrativa com Vasoconstritor:</strong> Infiltração paracervical ou estromal do colo uterino nas posições horárias de 3, 6, 9 e 12 horas utilizando lidocaína a 1% ou 2% associada a epinefrina (1:100.000 ou 1:200.000), garantindo analgesia completa e expressiva vasoconstrição estromal temporária para minimizar o sangramento operatório;",
+            "<strong>Seleção Adequada da Alça Diatérmica:</strong>\n          <ul>\n            <li><strong>Excisão Tipo 1 (ZT 1):</strong> Alça circular rasa (1,5 a 2,0 cm de largura por 0,5 a 0,8 cm de profundidade);",
+            "<strong>Excisão Tipo 2 (ZT 2):</strong> Alça de maior curvatura, retirando de 1,0 a 1,5 cm de profundidade para alcançar a JEC;",
+            "<strong>Excisão Tipo 3:</strong> Excisão profunda que avança de 1,5 a 2,5 cm no canal endocervical (indicada somente se conização a frio não estiver disponível);",
+            "<strong>Passagem Contínua da Alça:</strong> A alça de tungstênio deve ser acionada no modo de corte puro ou corte misto (blend) e transpassar o colo em <em>movimento único, suave e perpendicular</em>, evitando paradas mecânicas que causam queima excessiva e carbonização das margens anatômicas da peça;",
+            "<strong>Hemostasia do Leito Cirúrgico:</strong> Eletrocoagulação pontual com eletrodo esférico (ball electrode) e aplicação tópica de pasta de Monsel (solução de subsulfato férrico), que exerce efeito hemostático químico estrogênico por precipitação proteica."
+          ]
+        ],
+        [
+          "3",
+          "Manejo das Complicações Obstétricas Pós-Tratamento Excisional"
+        ],
+        [
+          "p",
+          "Mulheres submetidas a conizações excisionais cervicais (especialmente conizações a frio clássicas ou CAFs com profundidade de ressecção > 1,5-2,0 cm) apresentam risco aumentado nas gestações subsequentes de:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Insuficiência Istmocervical (IIC):</strong> Dilatação cervical indolor no segundo trimestre com herniação das membranas e perda fetal;",
+            "<strong>Parto Prematuro Espontâneo e Ruptura Prematura de Membranas Ovulares (RPMO):</strong> Secundários ao encurtamento anatômico do comprimento cervical e à perda da barreira mecânica do muco cervical antibacteriano;",
+            "<strong>Conduta Obstétrica Preventiva:</strong> Toda gestante com histórico de conização cervical prévia deve ser monitorizada com <strong>ultrassonografia transvaginal seriada para medida do comprimento cervical</strong> entre 16 e 24 semanas de gestação. Se o comprimento cervical for <strong>&le; 25 mm</strong> antes de 24 semanas, está formalmente indicado o tratamento com <strong>Progesterona Natural Micronizada vaginal (200 mg/dia ao deitar)</strong> até 36 semanas, associada ou não à realização de <em>cerclagem cervical</em> (técnica de McDonald) se houver histórico de perdas gestacionais prévias no segundo trimestre."
+          ]
+        ]
+      ]
+    ],
+    [
+      "quimiorradioterapia-e-tratamento-avancado-cervical",
+      0,
+      [
+        [
+          "2",
+          "11. Manejo do Câncer Cervical Localmente Avançado e Metastático: Quimiorradioterapia Concomitante, Braquiterapia e Imunoterapia"
+        ],
+        [
+          "3",
+          "O Papel Central da Quimiorradioterapia Concomitante Definitiva"
+        ],
+        [
+          "p",
+          "A partir do estádio IB3 (> 4 cm) e em todos os tumores localmente avançados dos estádios II, III e IVA (com invasão de paramétrios, terço inferior de vagina, parede pélvica, hidronefrose ou invasão vesical/retal), o tratamento de escolha com melhor taxa de sobrevida global não é a cirurgia, mas sim a <strong>Quimiorradioterapia Concomitante Definitiva</strong>:"
+        ],
+        [
+          "4",
+          "Pilares do Tratamento Quimiorradioterápico Padrão:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Teleterapia Externa (Radioterapia Conformada / IMRT):</strong> Irradiação de toda a pelve verdadeira (colo uterino, corpo uterino, paramétrios, terço superior ou total da vagina e cadeias linfonodais pélvicas ilíacas comuns, internas, externas e obturatórias) até a dose total de 45 a 50 Gy fracionada em 25 a 28 sessões diárias;",
+            "<strong>Quimioterapia Radiossensibilizante:</strong> Administração semanal de <strong>Cisplatina (40 mg/m² IV)</strong> durante as semanas de teleterapia. A cisplatina atua inibindo os mecanismos celulares de reparo de quebras de fita dupla de DNA induzidas pela radiação ionizante, sinergizando a destruição tumoral;",
+            "<strong>Braquiterapia Ginecológica de Alta Taxa de Dose (HDR):</strong> Etapa <em>absolutamente indispensável e insubstituível</em> do tratamento curativo. Consiste na inserção intracavitária de aplicadores (anel e tandem ou cilindros vaginais) diretamente no canal uterino e fundos de saco vaginais, fornecendo doses extremamente altas de radiação (dose biológica equivalente total &ge; 80 a 85 Gy no ponto A) com rápida queda de dose milimétrica, poupando a mucosa sadia da bexiga urinária e do reto anterior;",
+            "<strong>Efeitos Adversos e Manejo Clínico:</strong> Retite actínica (sangramento retal, tenesmo), cistite actínica (hematúria, disúria), estenose e encurtamento do canal vaginal com perda de elasticidade (prevenida com uso precoce de dilatadores vaginais de silicone e hidratantes tópicos) e falência ovariana prematura precoce induzida pela radiação pélvica."
+          ]
+        ],
+        [
+          "3",
+          "Avanços na Doença Metastática ou Recidivante (Estádio IVB)"
+        ],
+        [
+          "p",
+          "Em pacientes que se apresentam com metástases à distância hematogênicas (metástases pulmonares, hepáticas, ósseas ou peritoneais) ou com recidivas pélvicas não passíveis de resgate cirúrgico por exenteração pélvica, o tratamento sistêmico moderno baseia-se em:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Quimioterapia Combinada Dupla:</strong> Cisplatina (ou Carboplatina) associada a Paclitaxel;",
+            "<strong>Terapia Antiangiogênica (Bevacizumabe):</strong> Anticorpo monoclonal anti-VEGF que, adicionado à quimioterapia no estudo pivotal GOG 240, demonstrou ganho estatisticamente significativo de sobrevida global em comparação à quimioterapia isolada;",
+            "<strong>Imunoterapia com Inibidores de Checkpoint Imunológico (Pembrolizumabe):</strong> O estudo de fase 3 KEYNOTE-826 demonstrou que a adição de <strong>Pembrolizumabe (anti-PD-1)</strong> à quimioterapia com ou sem bevacizumabe aumentou substancialmente a sobrevida livre de progressão e a sobrevida global em tumores que expressam PD-L1 (com Combined Positive Score - CPS &ge; 1), tornando-se o novo padrão de primeira linha mundial."
+          ]
+        ]
+      ]
+    ],
+    [
+      "matriz-sintese-condutas-rastreamento-e-residencia-completa",
+      0,
+      [
+        [
+          "2",
+          "12. Guia de Bolso: Algoritmo Decisório Completo de Rastreamento e Banco Expandido de Provas"
+        ],
+        [
+          "3",
+          "Algoritmo de Rastreamento do Colo Uterino em 4 Perguntas Práticas"
+        ],
+        [
+          "4",
+          "1. Qual a idade e o histórico prévio da paciente?"
+        ],
+        [
+          "p",
+          "• Idade < 25 anos: <strong>Não rastrear</strong>. Iniciar somente aos 25 anos;<br>\n        • Idade entre 25 e 64 anos com atividade sexual prévia: <strong>Rastrear</strong>. Periodicidade anual e, após 2 normais consecutivos, trienal;<br>\n        • Idade &ge; 64 anos: <strong>Interromper</strong> o rastreamento se tiver pelo menos 2 exames negativos nos últimos 5 anos."
+        ],
+        [
+          "4",
+          "2. Qual é a gravidade da atipia celular no laudo citopatológico?"
+        ],
+        [
+          "u",
+          [
+            "<strong>Baixo Risco de Lesão Grave (ASC-US ou LSIL):</strong>\n            <ul>\n              <li>Se &ge; 30 anos: repetir citopatologia em <strong>6 meses</strong>;",
+            "Se 25 a 29 anos: repetir citopatologia em <strong>12 meses</strong>;",
+            "Se repetir e vier &ge; ASC-US: <strong>Colposcopia</strong>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n          <li><strong>Alto Risco Imediato (ASC-H ou HSIL):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>COLPOSCOPIA IMEDIATA</strong> em todos os casos (&ge; 25 anos). Nunca postergar com repetição de preventivo!"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n          <li><strong>Células Glandulares Atípicas (AGC):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>COLPOSCOPIA IMEDIATA + Avaliação de Canal Endocervical</strong>;<br>\n              • Se &ge; 35 anos ou com sangramento anormal: <strong>Ultrassonografia Transvaginal + Biópsia Endometrial</strong>."
+          ]
+        ],
+        [
+          "4",
+          "3. Como interpretar e conduzir a colposcopia?"
+        ],
+        [
+          "p",
+          "• ZT tipo 1 e 2: Colposcopia satisfatória / completamente visível;<br>\n        • ZT tipo 3: Colposcopia insatisfatória / limite endocervical não visível (exige amostragem do canal);<br>\n        • Ácido Acético: induz epitélio acetobranco por coagulação de proteínas nucleares;<br>\n        • Teste de Schiller (Lugol): Iodopositivo = Schiller Negativo (tecido normal rico em glicogênio); Iodonegativo = <strong>Schiller Positivo</strong> (tecido displásico sem glicogênio);<br>\n        • Achados anormais maiores (pontilhado grosseiro, mosaico grosseiro, acetobranquidão densa): indicam <strong>biópsia dirigida</strong> ou conização."
+        ],
+        [
+          "3",
+          "Banco Avançado de Questões de Provas de Residência Médica Comentadas"
+        ],
+        [
+          "4",
+          "Questão 4 (UNIFESP / Residência Médica):"
+        ],
+        [
+          "p",
+          "<em>Enunciado:</em> Paciente de 28 anos, comparece ao ambulatório da UBS trazendo resultado de preventivo coletado há 2 meses com laudo citopatológico de \"Lesão intraepitelial escamosa de baixo grau (LSIL)\". A paciente está assustada e solicita a realização imediata de conização do colo uterino. Não apresenta queixas e o exame físico especular mostra ectocérvice sem lesões vegetantes. Assinale a orientação e conduta corretas segundo o Ministério da Saúde:"
+        ],
+        [
+          "u",
+          [
+            "A) Indicar colposcopia com biópsia e, se confirmado NIC I, proceder à conização ambulatorial.",
+            "B) Repetir o exame citopatológico na própria UBS em 12 meses, tranquilizando a paciente sobre a alta taxa de regressão espontânea da lesão.",
+            "C) Repetir o exame citopatológico em 6 meses, devido ao risco elevado de progressão para câncer invasor.",
+            "D) Solicitar ressonância magnética da pelve para avaliação de invasão estromal oculta."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong> <em>Comentário detalhado:</em> Nas mulheres na faixa etária de <strong>25 a 29 anos</strong> com laudo citopatológico de <strong>LSIL (ou ASC-US)</strong>, a conduta ministerial recomendada é a <strong>repetição do exame citopatológico em 12 meses</strong>. O sistema imune de mulheres jovens nessa faixa promove o clareamento espontâneo do HPV e a regressão da NIC I em mais de 80% dos casos. A conização é totalmente contraindicada no baixo grau, pois não altera a sobrevida e acrescenta riscos de estenose cervical e partos prematuros futuros."
+        ],
+        [
+          "4",
+          "Questão 5 (Hospital das Clínicas da USP / HCFMUSP):"
+        ],
+        [
+          "p",
+          "<em>Enunciado:</em> Mulher de 58 anos, na menopausa há 8 anos sem uso de terapia hormonal, comparece à consulta com laudo de citopatologia cervical revelando \"Células escamosas atípicas de significado indeterminado, não sendo possível excluir lesão intraepitelial de alto grau (ASC-H)\". O ginecologista encaminha a paciente para colposcopia. Ao exame colposcópico, a junção escamocolunar (JEC) adentra profundamente o orifício externo do colo e seu limite superior não pode ser visualizado, mesmo com uso de espéculo endocervical de Kogan. O ectocolo apresenta-se pálido, com teste de Schiller homogêneo. Diante desse quadro de Zona de Transformação Tipo 3 e colposcopia insatisfatória, qual a melhor conduta diagnóstica subsequente?"
+        ],
+        [
+          "u",
+          [
+            "A) Dar alta à paciente com orientação de retorno em 3 anos, pois o ectocolo não tem lesões acetobrancas.",
+            "B) Realizar avaliação do canal endocervical por meio de escovado endocervical ou curetagem endocervical ou conização diagnóstica a frio.",
+            "C) Prescrever estrogênio oral por 3 anos consecutivos e repetir preventivo.",
+            "D) Realizar histerectomia radical com linfadenectomia de emergência."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong> <em>Comentário detalhado:</em> O laudo prévio é de <strong>ASC-H</strong> (alto risco de NIC II/III latente) e a colposcopia revelou <strong>Zona de Transformação Tipo 3 (colposcopia insatisfatória)</strong>, na qual a lesão pode estar alojada no canal endocervical, oculta da visão colposcópica. É erro grave assumir que o exame é normal apenas porque a ectocérvice não tem lesão. É mandatório investigar o canal endocervical através de escovado/curetagem endocervical ou proceder diretamente à <strong>conização diagnóstica a frio</strong> para amostragem histológica adequada do canal."
+        ],
+        [
+          "4",
+          "Questão 6 (Secretaria Estadual de Saúde do RJ / SES-RJ):"
+        ],
+        [
+          "p",
+          "<em>Enunciado:</em> Mulher de 42 anos, submetida a conização com alça diatérmica (CAF) por NIC III, recebe o laudo histopatológico definitivo com a seguinte descrição: \"Neoplasia intraepitelial cervical grau III com margem ectocervical livre de lesão e margem endocervical com presença focal de NIC III. Ausência de invasão estromal ou microinvasão.\" Em consulta pós-operatória de revisão, assinale a conduta recomendada para esta paciente:"
+        ],
+        [
+          "u",
+          [
+            "A) Histerectomia total abdominal imediata com ooforectomia bilateral.",
+            "B) Radioterapia pélvica complementar com braquiterapia.",
+            "C) Seguimento rigoroso com exame citopatológico e colposcopia com avaliação de canal endocervical aos 6 meses.",
+            "D) Quimioterapia com cisplatina semanal por 6 semanas."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: C.</strong> <em>Comentário detalhado:</em> O achado de margem endocervical comprometida por NIC III sem invasão não é indicação mandatória nem imediata de histerectomia. O próprio processo de cicatrização e hemostasia por eletrocoagulação no leito da conização frequentemente erradica os restos celulares residuais. A conduta preconizada é o <strong>seguimento semestral aos 6 meses com colposcopia, citopatologia e avaliação endocervical</strong>. A reconização ou histerectomia só será considerada se for comprovada a persistência de lesão de alto grau no seguimento ou na presença de outras patologias ginecológicas coexistentes."
+        ]
+      ]
+    ],
+    [
+      "situacoes-especiais-gestacao-hiv-transgenero",
+      0,
+      [
+        [
+          "2",
+          "13. Condutas Especiais: Gestação, Vivendo com HIV/Imunossuprimidas e Homens Transgênero"
+        ],
+        [
+          "3",
+          "Manejo de Lesões Precursoras na Gestação"
+        ],
+        [
+          "p",
+          "A gestação induz alterações morfológicas e anatômicas marcantes no colo uterino: aumento do fluxo sanguíneo vascular estromal, hipertrofia tecidual, eversão fisiológica acentuada da junção escamocolunar (ectopia e ZT tipo 1 proeminente) e reação decidual do estroma ectocervical (que pode simular macroscopicamente neoplasias invasoras). A conduta deve ser cautelosa:"
+        ],
+        [
+          "4",
+          "Princípios Fundamentais na Gestante:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A Citopatologia é Segura e Mantida:</strong> A coleta da amostra com espátula de Ayre e escova endocervical cuidadosa (girando suavemente sem aprofundar bruscamente) é totalmente segura e permitida em qualquer idade gestacional;",
+            "<strong>Objetivo Primário da Colposcopia na Gestação:</strong> O único objetivo formal é <strong>excluir a presença de carcinoma invasor</strong>. Se a citopatologia demonstrar ASC-H, HSIL ou AGC, a colposcopia imediata é mandatória;",
+            "<strong>Biópsia Cervical Restrita à Suspeita de Invasão:</strong> A biópsia é estritamente contraindicada para lesões de baixo grau ou suspeita de NIC intraepitelial pura, devido ao risco elevado de hemorragia estromal incoercível. A biópsia dirigida só é realizada se houver suspeita inequívoca de carcinoma microinvasor ou francamente invasor;",
+            "<strong>Contraindicação Absoluta de Avaliação do Canal e Procedimentos Excisionais:</strong> A <strong>curetagem endocervical e a conização por alça diatérmica (CAF) são formalmente proibidas durante a gravidez</strong>, pelo risco iminente de rotura de membranas, abortamento séptico, hemorragia e perda gestacional. Se confirmada NIC II ou NIC III na gestante, <strong>a conduta é puramente expectante</strong> com reavaliação colposcópica trimestral, postergando o tratamento excisional definitivo para 6 a 12 semanas após o parto."
+          ]
+        ],
+        [
+          "3",
+          "Rastreamento e Condutas em Mulheres Vivendo com HIV e Imunossuprimidas"
+        ],
+        [
+          "p",
+          "Mulheres vivendo com HIV, transplantadas de órgãos sólidos ou usuárias crônicas de imunobiológicos/imunossupressores apresentam prevalência até 5 a 10 vezes maior de infecção persistente por múltiplos subtipos de HPV de alto risco e progressão acelerada para neoplasias invasoras:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Cronograma Especial de Rastreamento:</strong> Iniciar logo após a primeira relação sexual (mesmo antes dos 25 anos). No primeiro ano, realizar <strong>citopatologia a cada 6 meses</strong>. Se ambos os exames forem normais, manter o rastreamento <strong>anual para o resto da vida</strong> (nunca espaçar para trienal);",
+            "<strong>Contagem de Linfócitos T-CD4+ < 200 céls/mm³:</strong> Se houver imunodeficiência grave, a periodicidade semestral deve ser mantida indefinidamente;",
+            "<strong>Limiar Reduzido para Colposcopia:</strong> Diante de <strong>qualquer resultado alterado (&ge; ASC-US)</strong> em mulher vivendo com HIV, o encaminhamento para <strong>colposcopia imediata é mandatório</strong> (não se aguarda repetição em 6 ou 12 meses);",
+            "<strong>Taxas de Recidiva Pós-Tratamento:</strong> As taxas de persistência e recidiva de NIC II/III após conização em mulheres vivendo com HIV situam-se entre 30% e 50%. Exigem vigilância semestral prolongada com citopatologia e colposcopia."
+          ]
+        ],
+        [
+          "3",
+          "Atenção Integral e Rastreamento em Homens Transgênero"
+        ],
+        [
+          "p",
+          "Homens transgênero (indivíduos designados mulher ao nascer que se identificam com o gênero masculino) que mantêm o colo do útero <strong>têm exatamente o mesmo risco biológico de câncer cervical</strong> e necessitam ser incluídos nos programas de rastreamento:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Barreiras de Acesso e Disforia:</strong> Dificuldades no atendimento e disforia de gênero durante o exame ginecológico levam a altas taxas de abandono do preventivo;",
+            "<strong>Impacto da Terapia com Testosterona:</strong> A androgenoterapia induz atrofia epitelial acentuada na mucosa vaginal e cervical, simulando atrofia pós-menopáusica grave. Isso frequentemente gera laudos citopatológicos falso-positivos para ASC-US ou amostras insatisfatórias por escassez celular. O uso prévio de estrogênio tópico em creme por 7 a 14 dias antes da coleta pode ser considerado para melhorar a celularidade do esfregaço;",
+            "<strong>Autoamostragem Molecular (Self-sampling):</strong> A oferta de autocoleta de swab vaginal para teste molecular de DNA-HPV é uma estratégia de ponta amplamente aceita que aumenta substancialmente a adesão dessa população."
+          ]
+        ]
+      ]
+    ],
+    [
+      "sintese-final-e-revisao-rapida-para-concursos",
+      0,
+      [
+        [
+          "2",
+          "14. Revisão Sistemática de Alto Rendimento: Tabelas de Memorização Rápida"
+        ],
+        [
+          "3",
+          "Tabela Resumo: O que Fazer Frente a Cada Laudo do Papanicolau"
+        ],
+        [
+          "t",
+          [
+            "Resultado do Papanicolau",
+            "Faixa Etária",
+            "Conduta Imediata",
+            "Próximo Passo / Regra Decisória"
+          ],
+          [
+            [
+              "<strong>ASC-US</strong>",
+              "&ge; 30 anos",
+              "Repetir citologia em 6 meses",
+              "Se mantiver &ge; ASC-US &rarr; Colposcopia. Se 2 normais &rarr; Rotina trienal."
+            ],
+            [
+              "25 a 29 anos",
+              "Repetir citologia em 12 meses",
+              "Se alterado &rarr; Colposcopia. Se normal &rarr; Rotina trienal."
+            ],
+            [
+              "<strong>LSIL / NIC I</strong>",
+              "&ge; 30 anos",
+              "Repetir citologia em 6 meses",
+              "Se mantiver &ge; ASC-US &rarr; Colposcopia. Se 2 normais &rarr; Rotina trienal."
+            ],
+            [
+              "25 a 29 anos",
+              "Repetir citologia em 12 meses",
+              "Se persistir alterado &rarr; Colposcopia. Se normal &rarr; Rotina trienal."
+            ],
+            [
+              "<strong>ASC-H</strong>",
+              "&ge; 25 anos",
+              "<strong>COLPOSCOPIA IMEDIATA</strong>",
+              "Biópsia dirigida das áreas atípicas maiores ou conização diagnóstica."
+            ],
+            [
+              "<strong>HSIL / NIC II/III</strong>",
+              "&ge; 25 anos",
+              "<strong>COLPOSCOPIA IMEDIATA</strong>",
+              "Biópsia dirigida OU \"Ver e Tratar\" com CAF/EZPEC se ZT tipo 1/2 ectocervical."
+            ],
+            [
+              "<strong>AGC</strong>",
+              "&ge; 25 anos",
+              "<strong>COLPOSCOPIA IMEDIATA + Canal</strong>",
+              "Escovado endocervical. Se &ge; 35 anos ou sangramento: USG-TV + Biópsia Endometrial."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Mnemônicos e Pegadinhas Clássicas de Prova"
+        ],
+        [
+          "4",
+          "As 4 Pegadinhas Mais Frequentes nas Bancas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>\"Paciente de 21 anos com LSIL no preventivo\":</strong> A conduta JAMAIS é colposcopia nem CAF. A conduta correta é <em>orientar e manter rastreamento aos 25 anos</em>;",
+            "<strong>\"ASC-US em mulher de 32 anos\":</strong> A resposta NÃO é colposcopia imediata. Repete-se em 6 meses. Apenas se repetir alterado é que vai para colposcopia;",
+            "<strong>\"ASC-H em mulher de 26 anos\":</strong> A conduta NÃO é repetir em 12 meses. O \"H\" significa \"não exclui alto grau\", logo exige <em>colposcopia imediata</em> sempre;",
+            "<strong>\"Mulher vacinada contra HPV\":</strong> Não muda NADA no rastreamento! Continua fazendo Papanicolau dos 25 aos 64 anos com a mesma periodicidade trienal."
+          ]
+        ]
+      ]
+    ],
+    [
+      "diagnostico-diferencial-e-lesoes-nao-neoplasicas-cervicais",
+      0,
+      [
+        [
+          "2",
+          "15. Diagnósticos Diferenciais Citopatológicos e Colposcópicos: Cervicites, Ectopia, Pólipos e Metaplasia"
+        ],
+        [
+          "3",
+          "Reconhecendo Alterações Benignas e Reativas no Colo Uterino"
+        ],
+        [
+          "p",
+          "Um dos desafios mais frequentes tanto na atenção primária quanto no consultório ginecológico é diferenciar processos reativos inflamatórios e variações anatômicas benignas de verdadeiras lesões intraepiteliais precursoras do câncer:"
+        ],
+        [
+          "4",
+          "1. Ectopia Cervical (Ectrópio / Eversão Glandular)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fisiopatologia:</strong> Exteriorização do epitélio colunar simples mucíparo da endocérvice para a superfície anatômica da ectocérvice. É um fenômeno fisiológico comum em adolescentes, mulheres jovens, gestantes e usuárias de contraceptivos hormonais combinados orais (efeito estrogênico);",
+            "<strong>Aspecto Clínico e Colposcópico:</strong> Apresenta aspecto vermelho vivo, aveludado ou papilar ao exame com espéculo, sangrando facilmente ao toque (sinusorragia ou sangramento pós-coito). Ao ácido acético, assume aspecto em cachos de uva (vilosidades colunares). À solução de Lugol (Schiller), é <strong>iodonegativa (amarelo)</strong> porque o epitélio colunar não produz glicogênio;",
+            "<strong>Conduta Clínica:</strong> <strong>Não é lesão pré-maligna</strong>. A conduta em mulheres assintomáticas é expectante e tranquilizadora. Se houver sangramento de contato incômodo ou corrimento mucoso profuso, pode-se realizar cauterização química ou eletrocoagulação térmica ambulatorial, sempre após confirmação prévia de citopatologia normal."
+          ]
+        ],
+        [
+          "4",
+          "2. Metaplasia Escamosa Imatura"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fisiopatologia:</strong> Substituição fisiológica do epitélio colunar evertido por células escamosas basais e intermediárias que proliferam sob a influência da acidez vaginal;",
+            "<strong>Aspecto Colposcópico:</strong> Apresenta tênue acetobranquidão ao ácido acético de bordas mal delimitadas e capilares finos homogêneos, que pode ser facilmente confundida por colposcopistas inexperientes com NIC I;",
+            "<strong>Distinção Histopatológica:</strong> A metaplasia escamosa apresenta maturação ordenada sem atipias nucleares, pleomorfismo ou figuras de mitose atípicas nas camadas basais, ao contrário das neoplasias intraepiteliais."
+          ]
+        ],
+        [
+          "4",
+          "3. Pólipos Endocervicais"
+        ],
+        [
+          "u",
+          [
+            "<strong>Aspecto Clínico:</strong> Formações polipoides pediculadas ou sésseis que se projetam pelo orifício externo do colo uterino, de coloração avermelhada brilhante e consistência macia. Causam queixas comuns de sangramento intermenstrual ou pós-coito;",
+            "<strong>Conduta:</strong> Polipectomia por torção em nível ambulatorial sob visualização direta, associada à eletrocoagulação da base pedicular. O espécime deve ser obrigatoriamente encaminhado para análise histopatológica para descartar focos raros de atipia ou malignidade (risco de malignidade < 0,5% a 1%)."
+          ]
+        ],
+        [
+          "4",
+          "4. Cervicite Folicular e Processos Reparativos Reativos"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fisiopatologia:</strong> Reação inflamatória crônica exuberante com infiltrado linfoide denso associada a infecções por <em>Chlamydia trachomatis</em> ou outros patógenos genitais crônicos;",
+            "<strong>Impacto Citológico:</strong> Pode induzir alterações nucleares reativas com aumento volumétrico nuclear e bi-nucleação que simulam laudos de ASC-US ou LSIL. O tratamento antimicrobiano adequado do agente infeccioso seguido de repetição do preventivo resulta na normalização completa do padrão citológico."
+          ]
+        ]
+      ]
+    ],
+    [
+      "banco-final-de-casos-e-questoes-dissertativas-colo",
+      0,
+      [
+        [
+          "2",
+          "16. Casos Clínicos Dissertativos Avançados de Provas Práticas e Título de Especialista (TEGO)"
+        ],
+        [
+          "3",
+          "Caso Dissertativo 1: Conização com Margem Comprometida e Desejo Reprodutivo"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> Primigesta de 30 anos, nulípara com desejo de gestar no futuro próximo, foi submetida a CAF (exérese de zona de transformação) após biópsia prévia demonstrar NIC III em Zona de Transformação Tipo 2. O laudo histopatológico definitivo da peça cirúrgica demonstrou: <em>\"Fragmento de colo uterino medindo 2,2 x 1,8 x 0,8 cm, evidenciando neoplasia intraepitelial cervical grau III com margens cirúrgicas laterais (ectocervicais) livres de lesão, porém margem endocervical com comprometimento focal por NIC III. Não há sinais de microinvasão estromal (estroma subjacente íntegro e membrana basal preservada).\"</em>"
+        ],
+        [
+          "4",
+          "Questões Avaliativas:"
+        ],
+        [
+          "p",
+          "<strong>1. Qual a conduta imediata indicada para esta paciente?</strong><br>\n      <em>Resposta comentada:</em> A conduta imediata para esta paciente jovem e nulípara é o <strong>seguimento clínico rigoroso</strong> com citopatologia e colposcopia com avaliação do canal endocervical (por escovado ou curetagem endocervical) aos <strong>6 meses de pós-operatório</strong>. Não está indicada a reconização imediata nem a histerectomia total. A própria reação inflamatória cicatricial com eletrocoagulação das bordas promove a destruição térmica de eventuais ninhos displásicos residuais na maioria das pacientes (mais de 75-80% de cura microbiológica). A reconização a frio só será cogitada se houver persistência comprovada de lesão de alto grau no canal nos controles semestrais."
+        ],
+        [
+          "p",
+          "<strong>2. Quais cuidados obstétricos deverão ser implementados quando a paciente engravidar?</strong><br>\n      <em>Resposta comentada:</em> Como a paciente foi submetida a procedimento excisional cervical, apresenta risco aumentado de insuficiência istmocervical e prematuridade. Na futura gestação, deve ser submetida ao rastreamento ultrassonográfico transvaginal seriado com <strong>mensuração do comprimento do colo uterino a cada 2 semanas entre 16 e 24 semanas</strong> de gestação. Caso seja detectado colo curto (&le; 25 mm), deverá iniciar progesterona micronizada vaginal diária (200 mg à noite) e avaliar necessidade de cerclagem."
+        ],
+        [
+          "3",
+          "Caso Dissertativo 2: Conduta Perante Sangramento Vaginal na Pós-Menopausa e Colo Suspeito"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> Mulher de 62 anos, menopausa há 12 anos, comparece à consulta ginecológica referindo sangramento vaginal contínuo com odor fétido há 3 meses. Ao exame especular: observa-se colo uterino completamente desestruturado por lesão tumoral exofítica, friável e sangrante ao toque, medindo aproximadamente 3,5 cm de maior diâmetro. O toque retovaginal revela que o tumor invade o terço superior da vagina e infiltra o paramétrio esquerdo até a sua metade medial, sem atingir a parede óssea pélvica. O paramétrio direito encontra-se livre."
+        ],
+        [
+          "4",
+          "Questões Avaliativas:"
+        ],
+        [
+          "p",
+          "<strong>1. Qual a conduta diagnóstica inicial obrigatória?</strong><br>\n      <em>Resposta comentada:</em> Realizar <strong>biópsia direta da lesão tumoral cervical</strong> no próprio consultório com pinça de biópsia. Não se solicita preventivo citológico nesta fase, pois a lesão tumoral é clinicamente evidente e a citopatologia apresentará celularidade obscurecida por necrose e hemorragia. O exame histopatológico é indispensável para confirmar o tipo tumoral (carcinoma epidermoide vs adenocarcinoma)."
+        ],
+        [
+          "p",
+          "<strong>2. Qual é o estadiamento clínico FIGO mais provável e a proposta terapêutica de escolha?</strong><br>\n      <em>Resposta comentada:</em> A presença de infiltração evidente do paramétrio sem atingir a parede óssea classifica a paciente no <strong>Estádio IIB da FIGO</strong>. Neste estádio, a cirurgia radical de Wertheim-Meigs é <strong>formalmente contraindicada</strong>, pois a dissecção nos paramétrios infiltrados resultaria em margens cirúrgicas macroscopicamente positivas e alta morbidade com mortalidade precoce. O tratamento curativo padrão-ouro é a <strong>Quimiorradioterapia Concomitante Definitiva</strong>: Teleterapia pélvica externa fracionada associada a Cisplatina semanal como radiossensibilizante, seguida obrigatoriamente de <strong>Braquiterapia Ginecológica de Alta Taxa de Dose (HDR)</strong>."
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.inca.gov.br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde / Instituto Nacional de Câncer (INCA) — Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero</a>",
+            "<a href=\"https://www.febrasgo.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO) — Manual de Trato Genital Inferior e Colposcopia</a>",
+            "<a href=\"https://www.who.int\" target=\"_blank\" rel=\"noopener noreferrer\">World Health Organization (WHO) — Comprehensive Cervical Cancer Control: A Guide to Essential Practice</a>",
+            "<a href=\"https://ifcpc.org\" target=\"_blank\" rel=\"noopener noreferrer\">International Federation of Cervical Pathology and Colposcopy (IFCPC) — 2011 Colposcopic Terminology</a>",
+            "<a href=\"https://link.springer.com\" target=\"_blank\" rel=\"noopener noreferrer\">The 2014 Bethesda System for Reporting Cervical Cytology — Definitions, Criteria, and Explanatory Notes (Springer)</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,1321 @@
+{
+  "v": 2,
+  "s": "dermatoses-frequentes-eczema-urticaria-acne-e-micoses",
+  "t": "Dermatoses Frequentes: Eczema, Urticária, Acne e Micoses Superficiais",
+  "p": "Dermatoses Frequentes: Eczema, Urticária, Acne e Micoses Superficiais — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "a": "Clínica Médica",
+  "m": "Clínica Médica",
+  "h": [
+    "Apostila LURIA",
+    "Dermatoses Frequentes: Eczema, Urticária, Acne e Micoses Superficiais",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+    [
+      "Área: Clínica Médica",
+      "Matéria: Clínica Médica",
+      "Tema: Dermatoses Frequentes: Eczema, Urticária, Acne e Micoses Superficiais"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "epidemiologia-fisiopatologia",
+      "1. Epidemiologia e Fisiopatologia Celular e Imunológica das Dermatoses Frequentes"
+    ],
+    [
+      "classificacao-criterios",
+      "2. Classificação Morfológica, Estadiamento e Critérios Diagnósticos"
+    ],
+    [
+      "quadro-clinico-exame-fisico",
+      "3. Quadro Clínico e Exame Físico Dermatológico Detalhado"
+    ],
+    [
+      "diagnostico-diferencial",
+      "4. Diagnóstico Diferencial Minucioso"
+    ],
+    [
+      "propedeutica-laboratorial-imagem",
+      "5. Propedêutica Complementar, Laboratorial e Exames Especiais"
+    ],
+    [
+      "abordagem-terapeutica",
+      "6. Abordagem Terapêutica Farmacológica e Não Farmacológica Detalhada"
+    ],
+    [
+      "complicacoes-crises-agudas",
+      "7. Complicações e Manejo de Crises Agudas"
+    ],
+    [
+      "populacoes-especiais",
+      "8. Particularidades em Populações Especiais"
+    ],
+    [
+      "protocolos-fluxogramas",
+      "9. Protocolos Clínicos e Fluxogramas Decisórios Estruturados"
+    ],
+    [
+      "casos-clinicos-resolvidos",
+      "10. Casos Clínicos Estruturados e Resolvidos com Raciocínio Diagnóstico"
+    ],
+    [
+      "questoes-comentadas",
+      "11. Questões de Concursos Médicos e Revalida Comentadas em Profundidade"
+    ],
+    [
+      "tabela-sinoptica-perolas",
+      "12. Tabela Sinóptica e Pérolas Clínicas de Prova (High-Yield)"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "epidemiologia-fisiopatologia",
+      0,
+      [
+        [
+          "2",
+          "1. Epidemiologia e Fisiopatologia Celular e Imunológica das Dermatoses Frequentes"
+        ],
+        [
+          "p",
+          "As dermatoses ambulatoriais e de pronto atendimento representam entre 15% e 25% de todas as queixas em Atenção Primária à Saúde (APS) e unidades de emergência no Brasil, figurando entre as principais causas de absenteísmo laboral e impacto na qualidade de vida relacionada à saúde (DLQI). O domínio fisiopatológico e imunocelular dos quatro grandes pilares dermatológicos cotidianos — dermatite/eczema, urticária, acne vulgar e micoses superficiais — constitui competência obrigatória para as provas de Residência Médica, Revalida e ENAMED."
+        ],
+        [
+          "3",
+          "1.1 Eczemas: Imunopatologia da Barreira Cutânea e Polarização Th2 vs. Th1"
+        ],
+        [
+          "p",
+          "O espectro dos eczemas abrange a Dermatite Atópica (DA), a Dermatite de Contato por Irritante Primário (DCIP) e a Dermatite de Contato Alérgica (DCA), além do Eczema Numular, Eczema Disidrótico e Eczema de Estase. A patogênese do eczema assenta-se no binômio disfunção da barreira epidérmica e desregulação da imunidade inata e adaptativa:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Dermatite Atópica e o Eixo FLG-Th2:</strong> Mutações de perda de função no gene da <em>filagrina</em> (FLG, localizado no complexo de diferenciação epidérmica no cromossomo 1q21.3) levam à deficiência de filagrina e seus metabólitos hidrofílicos (fator de hidratação natural - NMF), provocando desorganização dos queratinócitos no estrato córneo, redução da síntese de ceramidas e aumento exponencial da perda de água transepidérmica (TEWL). A ruptura da barreira expõe queratinócitos a alérgenos e proteases, estimulando a liberação maciça de alarminas epiteliais: Linfopoietina Estromal Tímica (TSLP), Interleucina-33 (IL-33) e Interleucina-25 (IL-25). Essas alarminas ativam células linfoides inatas do grupo 2 (ILC2) e células dendríticas mieloides (mDC), as quais migram para os linfonodos e promovem a polarização naive CD4+ em linfócitos efetores Th2.",
+            "<strong>Citocinas Th2 e o Prurido Neuropático/Inflamatório:</strong> A expansão Th2 secreta IL-4 e IL-13, citocinas essenciais para a troca de classe de imunoglobulinas por linfócitos B para IgE. Crucialmente, a IL-4 e a IL-13 compartilham a subunidade receptora IL-4R-alfa e ativam as vias intracelulares JAK1 e JAK3 com fosforilação de STAT6, retroalimentando negativamente a expressão gênica de filagrina, loricrina e involucrina, perpetuando o ciclo de dano de barreira. Adicionalmente, a IL-31 — sintetizada por células Th2 sob estímulo de TSLP — atua diretamente nos receptores neuronais cutâneos IL-31RA acoplados a TRPV1/TRPA1 nos neurônios sensoriais de pequenas fibras C amielínicas, gerando a sensação intratável de prurido crônico. O ato mecânico de coçar (ciclo prurido-escoriação) libera mais substância P e peptídeo relacionado ao gene da calcitonina (CGRP), destruindo queratinócitos adicionais e facilitando a translocação de antígenos do <em>Staphylococcus aureus</em>.",
+            "<strong>Dermatite de Contato por Irritante Primário (DCIP) vs. Alérgica (DCA):</strong> A DCIP é uma resposta estritamente inata, dose-dependente, sem memória imunológica prévia. Solventes, detergentes aniônicos e substâncias alcalinas dissolvem a bicamada lipídica intercelular, desnaturando queratinas e liberando mediadores pró-inflamatórios como TNF-alfa, IL-1alfa e CXCL8. Em contrapartida, a DCA é uma reação de hipersensibilidade do tipo IV (celular retardada), mediada por linfócitos T. Pequenas moléculas haptenos (níquel, dicromato de potássio, fragrâncias, bálsamo do Peru) ligam-se a proteínas carreadoras epidérmicas. As células de Langerhans capturam esses antígenos, migram aos linfonodos e realizam a apresentação via MHC classe I e II para linfócitos CD8+ e CD4+ Th1 e Th17 (fase de sensibilização, que dura de 10 a 14 dias). Na reexposição (fase de elicitação ou desafio), os linfócitos T de memória de residência tecidual (TRM) reconhecem os complexos antígeno-MHC e desencadeiam necrose de queratinócitos, espongiose intercelular e infiltrado perivascular em 24 a 72 horas."
+          ]
+        ],
+        [
+          "3",
+          "1.2 Urticária: Biologia do Mastócito, Sinalização FcεRI e Degranulação Não-Imunológica"
+        ],
+        [
+          "p",
+          "A urticária é caracterizada pelo aparecimento súbito de vergões (urticas) eritematosos e pruriginosos, de caráter efêmero (evanescentes em menos de 24 horas no mesmo local anatômico), com ou sem angioedema associado (que afeta derme profunda e subcutâneo e pode levar até 72 horas para involuir). Sua patogenia central envolve o mastócito cutâneo:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Mastócito Cutâneo (MC_TC):</strong> Os mastócitos da pele contêm grânulos com triptase e quimase. Na Urticária Aguda mediada por hipersensibilidade tipo I, alérgenos bivalentes ou multivalentes cruzam pontes entre moléculas vizinhas de IgE ligadas ao receptor de alta afinidade FcεRI na membrana mastocitária. Isso desencadeia a fosforilação de tirosina-quinases intracelulares (Syk e Lyn), ativação da fosfolipase C gama (PLC-gama), clivagem de PIP2 em IP3 e DAG, influxo citoplasmático maciço de íons cálcio (Ca²+) e exocitose instantânea de mediadores pré-formados: histamina, heparina, fator ativador de plaquetas (PAF) e triptase.",
+            "<strong>Ação da Histamina e Vasodilatação Microvascular:</strong> A histamina liberada atua nos receptores H1 acoplados à proteína Gq/11 expressos no endotélio pós-capilar, deflagrando a síntese de óxido nítrico e a fosforilação de caderinas do endotélio, causando fendas interendoteliais transitórias com extravasamento de plasma rico em proteínas (edema dérmico = urtica). A estimulação concomitante de receptores H1 em terminações nervosas livres do tipo C provoca reflexo de axônio antidrômico com liberação de CGRP e taquicininas, gerando o halo eritematoso reflexo e o prurido intenso. Em receptores H2 (G_s), a histamina reforça a vasodilatação arteriolar prolongada.",
+            "<strong>Urticária Crônica Espontânea (UCE) e Mecanismos Autoimunes:</strong> Na UCE (sintomas recorrentes por período igual ou superior a 6 semanas sem desencadeante externo evidente), a fisiopatologia divide-se em Tipo I (autoalérgica) e Tipo IIb (autoimune clássica). No Tipo I, há presença de anticorpos IgE autólogos direcionados contra autoantígenos cutâneos, incluindo peroxidase tireoidiana (anti-TPO) e interleucina-24. No Tipo IIb, encontram-se autoanticorpos IgG funcionais dirigidos contra a cadeia alfa do próprio FcεRI (anti-FcεRI-alfa) ou contra o domínio Fc da molécula de IgE (anti-IgE), ativando o sistema complemento e fixando C5a, o qual por sua vez estimula o receptor C5aR nos mastócitos, mantendo degranulação contínua e persistente.",
+            "<strong>Ativação Não-Imunológica (Pseudoalergia e Receptores MRGPRX2):</strong> Diversos fármacos (como opioides, vancomicina, quinolonas, meios de contraste iodados) e certas aminas ativam diretamente o receptor acoplado à proteína G denominado MRGPRX2 (Mas-related G protein-coupled receptor member X2), localizado exclusivamente nos mastócitos periféricos, disparando liberação histamínica independente de IgE. Anti-inflamatórios não esteroidais (AINEs) inibem a ciclo-oxigenase 1 (COX-1), desviando o metabolismo do ácido araquidônico para a via da 5-lipoxigenase com hiperprodução de cisteinil-leucotrienos (LTC4, LTD4, LTE4), que aumentam a permeabilidade vascular e precipitam urticária/angioedema em pacientes predispostos."
+          ]
+        ],
+        [
+          "3",
+          "1.3 Acne Vulgar: O Tetradismo Patogênico Pilosebáceo"
+        ],
+        [
+          "p",
+          "A acne vulgar é uma dermatose inflamatória crônica do folículo pilosebáceo. Sua gênese obedece a uma cascata orquestrada por quatro elementos fundamentais intimamente conectados:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Hiperprodução Sebácea Andrógeno-Dependente:</strong> Durante a adrenarca e puberdade, o aumento da produção de desidroepiandrosterona (DHEA-S) e testosterona converte-se em di-hidrotestosterona (DHT) no sebócito através da enzima 5-alfa-redutase do tipo 1. A DHT liga-se aos receptores androgênicos nucleares, ativando a via do mTORC1 e o fator de transcrição SREBP-1c, culminando em lipogênese exacerbada. O sebo produzido não é apenas volumoso, mas quimicamente alterado (disseborreia), apresentando depleção relativa de ácido linoleico e aumento de esqualeno peroxisado e ácidos graxos livres oxidantes.",
+            "<strong>Hiperqueratinização e Oclusão Infundibular:</strong> A carência local de ácido linoleico e o estresse oxidativo desestabilizam o desmossomo queratinocitário no ducto folicular. Os queratinócitos acumulam-se e não descamam, tornando-se coesos e hiperplásicos. Essa rolha de queratina e lípidos oclui o óstio folicular, formando o <em>microcomedão</em>, a lesão precursora subclínica de toda a acne. Quando o orifício folicular se dilata e a melanina oxidada pelo oxigênio atmosférico enegrece a queratina apical, surge o comedão aberto (cravo preto); se o orifício permanece estenosado e puntiforme sob epitélio fino, tem-se o comedão fechado (cravo branco).",
+            "<strong>Proliferação e Modificação Filotípica de <em>Cutibacterium acnes</em>:</strong> O acúmulo de sebo em ambiente anóxico do folículo ocluído cria o nicho ecológico ideal para a proliferação do <em>Cutibacterium acnes</em> (anteriormente <em>Propionibacterium acnes</em>). Mais do que mera contagem bacteriana quantitativa, a patogenicidade reside na predominância de filotipos pró-inflamatórios (como o filotipo IA1 e IA2) capazes de secretar biofilme polissacarídico aderente, lipases, hialuronidases e proteases teciduais.",
+            "<strong>Inflamação Estéril Precoce e Resposta Imune Inata via TLR-2:</strong> O <em>C. acnes</em> expressa padrões moleculares associados a patógenos (PAMPs) que ativam receptores do tipo Toll 2 (TLR-2) em macrófagos peri-infundibulares e queratinócitos. A via NF-kappaB e o inflamassoma NLRP3 são ativados, disparando secreção maciça de IL-1beta, TNF-alfa, IL-8 e IL-12. A IL-8 recruta ondas massivas de neutrófilos, cujas enzimas lisossômicas digerem a frágil parede folicular do comedão fechado. A ruptura extravasa queratina, lípidos e fragmentos bacterianos diretamente para a derme papilar e reticular, convertendo a lesão retenção simples em pápula eritematosa, pústula, nódulo inflamatório ou abscesso fistulizante (acne nódulo-cística)."
+          ]
+        ],
+        [
+          "3",
+          "1.4 Micoses Superficiais: Dermatofitose, Pitiríase Versicolor e Candidíase Cutânea"
+        ],
+        [
+          "p",
+          "As micoses cutâneas superficiais limitam-se ao estrato córneo, unhas e pelos, sendo divididas taxonomicamente e fisiopatologicamente em dermatófitos, leveduras lipofílicas e leveduras oportunistas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Dermatofitoses (Tíneas):</strong> Causadas por fungos filamentosos dos gêneros <em>Trichophyton</em> (ex: <em>T. rubrum</em>, <em>T. mentagrophytes</em>, <em>T. tonsurans</em>), <em>Microsporum</em> (ex: <em>M. canis</em>) e <em>Epidermophyton</em> (<em>E. floccosum</em>). Os dermatófitos são fungos queratinofílicos obrigatórios que expressam enzimas queratinolíticas especializadas (endoproteases subtilisinas, metaloproteases e sulfito-redutases) capazes de degradar pontes dissulfeto e matriz queratínica densa. As hifas invadem radialmente o estrato córneo a partir do ponto central de inoculação, enquanto a resposta inflamatória mediada pelo hospedeiro (imunidade celular Th1 via IFN-gama) tenta eliminar os fungos no centro da lesão, gerando o aspecto anular patognomônico com bordas elevadas, ativas e descamativas, e clareamento central típico das tíneas de pele glabra (<em>tinea corporis</em>, <em>tinea cruris</em>, <em>tinea faciei</em>). O <em>T. rubrum</em> produz manana na parede celular celular, substância que inibe a resposta proliferativa de linfócitos T, explicando sua extraordinária capacidade de causar infecções crônicas, persistentes e recalcitrantes (tinea pedis crônica em mocassim e onicomicose subungueal distal e lateral).",
+            "<strong>Pitiríase Versicolor:</strong> Micose causada por leveduras comensais dimórficas do gênero <em>Malassezia</em> (principalmente <em>M. globosa</em> e <em>M. furfur</em>). Em condições propícias de calor, sudorese, hiperlipídese e oclusão, as formas blastoconidiais esferoidais transformam-se em hifas filamentosas invasivas e micélios curtos (aspecto microscópico em 'espaguete com almôndegas'). O fungo metaboliza triglicerídeos do sebo cutâneo, liberando ácidos graxos livres insaturados e sintetizando <em>ácido azelaico</em> e <em>pitiriacitrina</em>. O ácido azelaico inibe competitivamente a enzima tirosinase nos melanócitos, bloqueando a síntese de eumelanina e produzindo as clássicas máculas hipocrômicas descamativas. Por outro lado, a formação de pigmentos como pitiriarubinas e a indução de leve resposta inflamatória dérmica podem condicionar lesões eritematosas ou acastanhadas em indivíduos de pele clara, conferindo o caráter 'versicolor' (mudança de cor).",
+            "<strong>Candidíase Cutânea e Mucocutânea:</strong> Decorrente da proliferação de <em>Candida albicans</em> (e espécies não-albicans como <em>C. parapsilosis</em> e <em>C. tropicalis</em>). A transição morfológica de blastoconídios de levedura para pseudo-hifas e hifas verdadeiras permite a penetração invasiva no epitélio, auxiliada pela secreção de aspartil-proteinases (Saps) e fosfolipases. A infecção ocorre preferencialmente em áreas de maceração, fricção mecânica e umidade estagnada (dobras cutâneas intertriginosas: submamárias, axilares, inguinais e perianais), sendo amplificada por imunossupressão celular, antibioticoterapia de largo espectro prévia e descompensação hiperglicêmica em pacientes diabéticos."
+          ]
+        ]
+      ]
+    ],
+    [
+      "classificacao-criterios",
+      0,
+      [
+        [
+          "2",
+          "2. Classificação Morfológica, Estadiamento e Critérios Diagnósticos"
+        ],
+        [
+          "p",
+          "O rigor taxonômico e a aplicação de critérios validados internacionalmente são essenciais para o diagnóstico dermatológico de precisão e para a resolução de questões de alta complexidade em concursos médicos."
+        ],
+        [
+          "3",
+          "2.1 Critérios Diagnósticos da Dermatite Atópica (Hanifin & Rajka e UK Working Party)"
+        ],
+        [
+          "p",
+          "A Dermatite Atópica possui critérios clínicos consolidados. Os critérios de Hanifin e Rajka exigem a presença de pelo menos 3 critérios maiores e pelo menos 3 critérios menores:"
+        ],
+        [
+          "t",
+          [
+            "Critérios Maiores (3 de 4 obrigatórios)",
+            "Critérios Menores (pelo menos 3 necessários)"
+          ],
+          [
+            [
+              "1. <strong>Prurido intenso</strong> (sintoma cardeal)",
+              "Xerose cutânea generalizada; Ictiose vulgar ou hiperlinearidade palmar; Queratose pilar"
+            ],
+            [
+              "2. <strong>Morfologia e distribuição tópica típica:</strong><br>- Lactentes: face (poupando maciço central), couro cabeludo, superfícies extensoras de membros.<br>- Crianças e adultos: dobras flexurais (fossas anticubitais e poplíteas), pescoço, mãos e pés.",
+              "Reatividade imediata a testes cutâneos (prick-test); IgE sérica elevada; Idade precoce de início (&lt; 2 anos); Tendência a infecções cutâneas repetidas (S. aureus, HSV); Eczema de mamilo; Queilite angular"
+            ],
+            [
+              "3. <strong>Dermatite cronicamente recidivante</strong>",
+              "Prega infraorbital de Dennie-Morgan; Ceratocone; Catarata subcapsular anterior; Olheiras perioculares"
+            ],
+            [
+              "4. <strong>História pessoal ou familiar de atopia</strong> (asma brônquica, rinite alérgica ou dermatite atópica)",
+              "Palidez facial / eritema malar; Pitiríase alba; Prurido induzido por sudorese; Intolerância a lã e solventes; Dermografismo branco"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Pelos critérios refinados do <em>UK Working Party</em> (altamente cobrados em provas pelo seu viés epidemiológico objetivo), exige-se <strong>condição obrigatória: pele pruriginosa</strong> nos últimos 12 meses, associada a pelo menos 3 dos seguintes achados:"
+        ],
+        [
+          "u",
+          [
+            "História de envolvimento das dobras cutâneas (fossas antecubitais, poplíteas, tornozelos, pescoço ou periocular).",
+            "História pessoal de asma ou rinite alérgica (ou história em parente de primeiro grau se o paciente tiver &lt; 4 anos).",
+            "História geral de pele seca (xerose) no último ano.",
+            "Eczema flexural visível ao exame clínico dermatológico (ou eczema de bochechas/extensoras em menores de 4 anos).",
+            "Início dos sintomas antes dos 2 anos de idade (não aplicável se a criança tiver menos de 4 anos no momento da avaliação)."
+          ]
+        ],
+        [
+          "3",
+          "2.2 Classificação das Urticárias (Diretriz Internacional EAACI/GA²LEN/EuroGuiDerm/APAAACI)"
+        ],
+        [
+          "p",
+          "A classificação oficial das urticárias fundamenta-se estritamente na <strong>duração temporal</strong> e no <strong>modo de indução</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Classificação Temporal:</strong>\n    <ul>\n      <li><strong>Urticária Aguda:</strong> Ocorrência contínua ou recorrente de urticas e/ou angioedema por período <em>inferior a 6 semanas</em>. É predominantemente associada a infecções virais agudas (especialmente em crianças), reações adversas a medicamentos (AINEs, antibióticos beta-lactâmicos) ou alimentos alergênicos.",
+            "<strong>Urticária Crônica:</strong> Ocorrência de lesões diárias ou quase diárias por período <em>igual ou superior a 6 semanas</em>. Subdivide-se em:\n        <ul>\n          <li><strong>Urticária Crônica Espontânea (UCE):</strong> Ausência de gatilho ambiental externo reprodutível; decorre de autoimunidade/autoalergia mastocitária.",
+            "<strong>Urticária Crônica Induzível (CIndU):</strong> Desencadeada exclusivamente por estímulos físicos e ambientais reprodutíveis, incluindo dermografismo sintomático (fricção mecânica), urticária por frio (contato com ar/líquidos frios, teste do cubo de gelo positivo), urticária por pressão tardia (pressão mecânica sustentada por horas), urticária solar (radiação UV/visível), urticária ao calor localizado, urticária colinérgica (aumento da temperatura corporal central por exercício, banho quente ou estresse emocional), angioedema vibratório e urticária de contato.",
+            "<strong>Escore de Atividade UAS7 (Urticaria Activity Score over 7 days):</strong> Instrumento padrão-ouro para estadiamento e monitorização terapêutica da UCE. Pontua diariamente por 7 dias consecutivos o número de urticas (0 = nenhuma; 1 = leve [&lt; 20 urticas/24h]; 2 = moderada [20-50 urticas/24h]; 3 = intensa [&gt; 50 urticas ou confluentes]) somado à intensidade do prurido (0 = ausente; 1 = leve; 2 = moderado; 3 = intenso). O escore total varia de 0 a 42 pontos por semana, estratificando os pacientes em UCE bem controlada (UAS7 &le; 6), atividade moderada (7-27) e atividade grave refratária (28-42)."
+          ]
+        ],
+        [
+          "3",
+          "2.3 Estadiamento da Acne Vulgar: Classificação de Plewig e Kligman / SBD"
+        ],
+        [
+          "p",
+          "O estadiamento da acne dita rigorosamente a escolha terapêutica tópica ou sistêmica:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Grau I (Acne Comedoniana):</strong> Predomínio exclusivo de lesões não inflamatórias: comedões abertos (pontos pretos por depósito de queratina oxidada) e comedões fechados (pontos esbranquiçados milimétricos). Ausência de pústulas ou nódulos.",
+            "<strong>Grau II (Acne Pápulo-Pustulosa):</strong> Presença concomitante de comedões e lesões inflamatórias superficiais (pápulas eritematosas menores que 5 mm e pústulas com conteúdo purulento central). Pode ser subdividida em leve, moderada ou intensa a depender da contagem lesional.",
+            "<strong>Grau III (Acne Nódulo-Cística):</strong> Presença marcante de lesões inflamatórias profundas: nódulos eritematosos e dolorosos (&gt; 5 mm), com consistência fibroelástica ou flutuação, além de cistos que podem sofrer coalescência na derme média e profunda. Elevado risco de cicatrizes atróficas ou hipertróficas.",
+            "<strong>Grau IV (Acne Conglobata):</strong> Forma inflamatória crônica grave caracterizada por múltiplos nódulos coalescentes, abscessos fistulizados, drenagem purulenta fétida e contínua, pontes fibrosas e cicatrizes irregulares exuberantes (queloidianas e tipo 'ice-pick'). Predomina no sexo masculino no dorso, tórax anterior e face.",
+            "<strong>Grau V (Acne Fulminans):</strong> Emergência dermatológica rara e gravíssima. Trata-se do surgimento abrupto e explosivo de lesões ulceradas, necróticas e hemorrágicas sobre lesões prévias de acne no tronco e face, associado a manifestações sistêmicas graves: febre alta, calafrios, astenia, perda ponderal, poliartrite inflamatória migratória (quadris, joelhos, tornozelos), mialgias, lesões osteolíticas radiológicas (sacroileíte, esterno) e leucocitose neutrofílica importante com elevação expressiva de PCR e VHS. Pode ser desencadeada pelo uso inadvertido de isotretinoína oral em altas doses de indução sem cobertura corticoterápica prévia."
+          ]
+        ],
+        [
+          "3",
+          "2.4 Classificação Topográfica das Micoses Superficiais"
+        ],
+        [
+          "p",
+          "A classificação das dermatofitoses é estritamente topográfica:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Tinea Capitis:</strong> Acometimento do couro cabeludo e fios de cabelo, prevalente na infância. Divide-se pelo padrão de invasão pilosa em <em>endothrix</em> (artroconídios dentro do córtex do pelo sem destruir a cutícula; ex: <em>T. tonsurans</em>, fluorescência negativa à lâmpada de Wood) e <em>ectothrix</em> (artroconídios revestindo externamente a haste pilosa com destruição cuticular; ex: <em>M. canis</em>, fluorescência verde-brilhante à lâmpada de Wood). A forma inflamatória tumoral dolorosa e supurativa com alopecia cicatrizante temporária é denominada <strong>Kérion Celsi</strong> (reação imune exuberante a dermatófitos zoofílicos).",
+            "<strong>Tinea Barbae:</strong> Acomete pelos terminais da barba e bigode em homens adultos, simulando foliculite bacteriana profunda.",
+            "<strong>Tinea Corporis:</strong> Placas anulares eritemato-descamativas em tronco e membros, com expansão centrífuga, bordas circinadas micropápulo-vesiculosas ativas e clareamento central.",
+            "<strong>Tinea Cruris:</strong> Placas eritematosas bem delimitadas na região inguinocrural com borda descamativa avançando para as coxas, poupando caracteristicamente a bolsa escrotal (diferencial crucial com candidíase).",
+            "<strong>Tinea Pedis:</strong> Apresenta-se em três variantes morfológicas: interdigital (frieira ou pé de atleta, macerada e pruriginosa no 4º espaço interdigital), crônica descamativa hiperceratósica (padrão em mocassim, bilateral e simétrica, associada a <em>T. rubrum</em>) e vesicobolhosa aguda (eczematoide, pruriginosa no cavo plantar medial).",
+            "<strong>Tinea Unguium (Onicomicose):</strong> Infecção da lâmina ungueal. Divide-se em: subungueal distal e lateral (mais comum), subungueal proximal (marcador clássico de imunossupressão grave pelo HIV com CD4 &lt; 200/mm³), superficial branca e distrófica total."
+          ]
+        ]
+      ]
+    ],
+    [
+      "quadro-clinico-exame-fisico",
+      0,
+      [
+        [
+          "2",
+          "3. Quadro Clínico e Exame Físico Dermatológico Detalhado"
+        ],
+        [
+          "p",
+          "O diagnóstico das dermatoses prevalentes é eminentemente clínico e morfológico, alicerçado no reconhecimento preciso da lesão elementar primária, lesão secundária e padrões semióticos específicos."
+        ],
+        [
+          "3",
+          "3.1 Semiótica Dermatológica dos Eczemas: As Fases Evolutivas"
+        ],
+        [
+          "p",
+          "O processo eczematoso é dinâmico e evolui classicamente em três fases temporais e morfológicas distintas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Fase Aguda (Eczema Agudo):</strong> Caracterizada microscopicamente por espongiose intensa (edema intercelular na epiderme que estica e rompe as pontes intercelulares de desmossomos). Clinicamente manifesta-se por máculas e placas intensamente eritematosas, edematosas, sobre as quais surgem vesículas puntiformes agrupadas de conteúdo seroso claro. Há prurido excruciante e queimação. O rompimento das vesículas determina exsudação serosa abundante (lesão 'úmida' ou secretante) e formação subsequente de crostas melicéricas ou hemáticas finas.",
+            "<strong>Fase Subaguda:</strong> Diminuição progressiva da espongiose e início de hiperceratose e acantose discreta. O eritema torna-se menos vivo, a exsudação cessa e predominam pápulas eritematosas, descamação furfurácea e crostas secas aderentes.",
+            "<strong>Fase Crônica (Liquenificação):</strong> Decorrente do atrito e escoriação mecânica crônica perpetuada pelo ato de coçar. Histologicamente há acantose epidérmica exuberante, hiperceratose e infiltrado inflamatório dérmico perivascular. Clinicamente, observa-se espessamento marcante da pele, com acentuação patológica dos sulcos e linhas normais da pele ('quadriculado cutâneo' ou aspecto em couro), hiperpigmentação pós-inflamatória cinzenta ou acastanhada e xerose grave."
+          ]
+        ],
+        [
+          "p",
+          "Na <em>Dermatite Atópica</em>, a distribuição anatômica varia estritamente com a faixa etária do paciente:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fase do Lactente (2 meses a 2 anos):</strong> Predomínio da fase aguda/subaguda com placas eritemato-vesico-crostosas localizadas bilateralmente nas bochechas (com característico poupar da região perioral e maciço nasal central, denominado 'sinal do palhaço'), couro cabeludo, fronte, pescoço e superfícies extensoras dos membros inferiores e superiores. A área coberta pelas fraldas costuma ser tipicamente poupada devido à alta umidade local que mitiga a perda transepidérmica de água.",
+            "<strong>Fase Infantil (2 a 12 anos):</strong> Transição para fase subaguda e crônica. Localização preferencial nas dobras flexurais: fossas antecubitais, cavidades poplíteas, punhos, tornozelos e prega retroauricular. O prurido noturno leva a distúrbios graves do sono e déficit atencional.",
+            "<strong>Fase do Adolescente e Adulto (&gt; 12 anos):</strong> Predomínio de liquenificação extensa e xerose difusa. Acomete dobras de flexão, pescoço (pescoço atópico com pigmentação rendilhada), dorso das mãos (eczema crônico das mãos), região periorbitária e mamelonar."
+          ]
+        ],
+        [
+          "3",
+          "3.2 Exame Clínico da Urticária e Angioedema"
+        ],
+        [
+          "p",
+          "A lesão elementar obrigatória é a <strong>urtica</strong>: pápula ou placa eritemato-edematosa, com centro tipicamente pálido e bordos circinados hiperêmicos, de consistência elástica à palpação, invariavelmente pruriginosa. As características semiológicas definidoras que devem ser pesquisadas ativamente são:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Evanescência (&lt; 24 horas):</strong> Cada lesão individual dura minutos a algumas horas, desaparecendo sem deixar mácula residual, hiperpigmentação ou descamação no mesmo sítio anatômico. Para demonstrar esse achado clinicamente, desenha-se um círculo com caneta esferográfica ao redor de uma urtica; ao reexaminar o paciente após 12-24 horas, aquela lesão delimitada deve ter desaparecido por completo ou migrado de localização.",
+            "<strong>Pesquisa de Dermografismo (Sinal de Darier Físico):</strong> Realiza-se fricção mecânica firme na pele sã do antebraço ou dorso com a extremidade romba de uma espátula de madeira ou haste flexível. O surgimento de eritema linear seguido de urtica edematosa palpável e pruriginosa em 5 a 10 minutos (padrão de resposta tripla de Lewis completa) confirma dermografismo sintomático.",
+            "<strong>Angioedema Concomitante:</strong> Presente em até 40-50% dos pacientes com UCE. Trata-se de tumefação assimétrica, mal delimitada, localizada na derme reticular profunda e no tecido celular subcutâneo ou submucoso. Acomete preferencialmente tecidos conjuntivos frouxos: pálpebras, lábios, língua, úvula, genitália externa e extremidades distais. Caracteriza-se por sensação de dor, queimação, aperto ou tensão local, com prurido menos proeminente que na urtica. Demora entre 48 a 72 horas para completa resolução espontânea.",
+            "<strong>Bandeiras Vermelhas na Urticária:</strong> Urticas que permanecem fixas no mesmo local por mais de 24 a 48 horas, dolorosas mais que pruriginosas, associadas a púrpura palpável central, petéquias residuais, hiperpigmentação hemossiderótica pós-inflamatória persistente ou sintomas sistêmicos (febre, artralgias/artrite, dor abdominal) sugerem fortemente <em>Urticária Vasculite</em> (vasculite leucocitoclástica), exigindo biópsia cutânea urgente."
+          ]
+        ],
+        [
+          "3",
+          "3.3 Exame Físico da Acne: Diferenciação Lesional Fina"
+        ],
+        [
+          "p",
+          "O exame detalhado da face, decote, ombros e dorso deve quantificar e qualificar os diferentes tipos de lesões elementares:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Comedão Aberto (Ponto Negro):</strong> Dilatação infundibular preenchida por corneócitos compactados e lípidos, cujo pigmento enegrecido apical resulta da oxidação de melanina pelo oxigênio do ar ambiente (não se trata de sujidade acumulada).",
+            "<strong>Comedão Fechado (Ponto Branco):</strong> Pápula puntiforme sem orifício folicular visível, medindo de 1 a 3 mm, de tonalidade esbranquiçada ou cor da pele normal, melhor evidenciada pelo estiramento digital tangencial da pele sob iluminação inclinada. É o principal precursor da acne inflamatória.",
+            "<strong>Pápulas e Pústulas:</strong> Lesões eritematosas inflamatórias elevadas de 2 a 5 mm de diâmetro. A pústula apresenta cúpula amarelada repleta de exsudato purulento estéril composto por polimorfonucleares e restos de <em>C. acnes</em>.",
+            "<strong>Nódulos e Cistos:</strong> Lesões maiores que 5 mm, infiltradas, situadas na derme profunda e hipoderme, hiperemiadas, quentes e intensamente dolorosas à compressão. Podem coalescer formando cordões inflamatórios flutuantes e sinus drenantes de pus espesso sanguinolento.",
+            "<strong>Cicatrizes Sequelares:</strong> Dividem-se em cicatrizes atróficas — que por sua vez se subdividem em <em>ice-pick</em> (fendas profundas e pontiagudas infundibulares com &lt; 2 mm de diâmetro), <em>boxcar</em> (depressões ovais ou retangulares com bordas nítidas verticais de 1,5 a 4 mm) e <em>rolling</em> (ondulações amplas com &gt; 4-5 mm de diâmetro fixadas por fibrose à fáscia profunda) — e cicatrizes hipertróficas / queloides, frequentes na região esternal e mandibular."
+          ]
+        ],
+        [
+          "3",
+          "3.4 Exame Físico das Micoses Superficiais: Manobras Semióticas"
+        ],
+        [
+          "u",
+          [
+            "<strong>Tíneas de Pele Glabra (Corporis e Cruris):</strong> Placa circular ou policíclica bem delimitada, com borda marginal ativa em crista elevada contendo micropápulas, microvesículas e escamas colarete, enquanto o centro da lesão apresenta-se atrófico ou com involução clínica e hipocromia ou hipercromia leve residual. Na <em>tinea cruris</em>, a placa situa-se na prega inguinal e desce para a face interna da coxa, com bordo circinado bem traçado, poupando a bolsa escrotal (ao contrário da candidíase que causa lesões satélites pustulosas e atinge o escroto).",
+            "<strong>Pitiríase Versicolor:</strong> Máculas múltiplas de coloração variável (hipocrômicas, hipercrômicas acastanhadas ou eritematosas), redondas a ovais, que podem confluir em grandes placas geográficas no tronco superior, dorso, ombros, pescoço e face. As duas manobras semiológicas clássicas de exame físico são:\n    <ul>\n      <li><strong>Sinal de Zileri (Sinal da Unhada):</strong> Ao raspar firmemente com a unha ou com a borda de uma espátula de madeira a superfície de uma mácula aparentemente plana, observa-se a soltura imediata de escamas furfuráceas finíssimas e secas (descolamento do estrato córneo parasitado).",
+            "<strong>Sinal de Besnier (Sinal do Estiramento):</strong> Ao estirar a pele lesada entre os dedos polegar e indicador, as escamas furfuráceas se tornam imediatamente evidentes e descamam.",
+            "<strong>Fluorescência pela Lâmpada de Wood:</strong> Quando submetidas à radiação ultravioleta de onda longa (365 nm), as lesões de pitiríase versicolor exibem fluorescência amarelo-ouro ou amarelo-esverdeada brilhante devida à presença de pitiriacitrina e alcaloides derivados de triptofano sintetizados pela <em>Malassezia</em>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Intertrigo Candidiasico:</strong> Eritema vivo, brilhante, macerado e exsudativo localizado no fundo das grandes pregas corporais (inframamária, inguinal, interglútea, axilar). O achado semiológico patognomônico é a presença de <strong>lesões satélites</strong> compostas por pequenas pápulas eritematosas periféricas e pústulas milimétricas com colarete descamativo além da borda principal confluente.</li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "diagnostico-diferencial",
+      0,
+      [
+        [
+          "2",
+          "4. Diagnóstico Diferencial Minucioso"
+        ],
+        [
+          "p",
+          "O diagnóstico diferencial minucioso é a chave de diferenciação para responder às pegadinhas conceituais de provas de alta concorrência."
+        ],
+        [
+          "3",
+          "4.1 Diagnóstico Diferencial dos Eczemas"
+        ],
+        [
+          "u",
+          [
+            "<strong>Psoríase em Placas vs. Eczema Numular:</strong> A psoríase clássica exibe placas eritematosas bem delimitadas, com escamas brancas prateadas espessas e micáceas, localizadas preferencialmente nas superfícies extensoras (cotovelos e joelhos), associada ao Sinal do Orvalho Sangrento (Sinal de Auspitz) e fenômeno de Koebner. O eczema numular exibe placas em formato de moeda ('moeda de dez centavos'), porém com bordas pouco nítidas, vesículas e crostas melicéricas exsudativas na fase ativa, prurido desproporcional e ausência de escamas micáceas prateadas.",
+            "<strong>Escabiose (Sarna) vs. Dermatite Atópica:</strong> A escabiose apresenta prurido predominantemente noturno e lesões pápulo-vesiculosas com túneis acarianos sinuosos nos espaços interdigitais das mãos, punhos, aréolas, axilas, linha da cintura e genitália masculina (nódulos escabióticos intensamente pruriginosos no pênis e escroto). Na escabiose de lactentes há acometimento palmar e plantar com vesico-pústulas, enquanto a DA poupa essas áreas em lactentes. Em caso de dúvida, a pesquisa direta de <em>Sarcoptes scabiei</em> var. <em>hominis</em> com raspado ou dermatoscopia (sinal da asa-delta / sinal do caça a jato) confirma o parasita.",
+            "<strong>Dermatite Seborreica:</strong> Caracteriza-se por placas eritematosas recobertas por escamas graxas e amareladas, distribuídas na zona T da face (sulco nasogeniano, glabela, sobrancelhas), couro cabeludo e tórax anterior pré-esternal. Raramente apresenta o prurido intratável da DA e poupa as superfícies extensoras e flexurais de membros.",
+            "<strong>Líquen Simples Crônico (Neurodermite):</strong> Placa isolada ou poucas placas de liquenificação bem delimitada, induzida por ato contínuo e repetitivo de coçar em áreas de fácil alcance (tornozelo, nuca, face lateral do antebraço), sem o contexto multissistêmico e a distribuição bilateral simétrica da DA."
+          ]
+        ],
+        [
+          "3",
+          "4.2 Diagnóstico Diferencial da Urticária"
+        ],
+        [
+          "u",
+          [
+            "<strong>Urticária Vasculite:</strong> Diferencial crítico! As lesões persistem fixas por mais de 24 a 48 horas, o paciente relata queimação e dor local em vez de prurido puro, e ao regredirem deixam equimose, hiperpigmentação pós-inflamatória hemossiderótica residual ou púrpura palpável central. O exame anatomopatológico revela vasculite leucocitoclástica com degeneração fibrinoide das paredes dos vênulas pós-capilares e extravasamento de hemácias. Pode associar-se a lúpus eritematoso sistêmico (LES) e hipocomplementemia (Síndrome de McDuffie).",
+            "<strong>Angioedema Hereditário (AEH) por Deficiência de C1-INH:</strong> Decorre de mutações no gene SERPING1 (tipo I com níveis baixos de C1-INH; tipo II com C1-INH não funcionante) ou formas com C1-INH normal. Clinicamente caracteriza-se por episódios recorrentes de angioedema cutâneo e mucoso <em>SEM urticária concomitante e SEM prurido</em>, com forte acometimento da orofaringe/laringe (asfixia fatal) e edema da parede de alças intestinais gerando quadros de abdome agudo cirúrgico simulado (dor abdominal paroxística, náuseas e ascite transitória). <strong>Não responde a anti-histamínicos, corticosteroides nem epinefrina</strong>, pois é mediado por acúmulo de bradicinina, e não histamina. Trata-se com concentrado de C1-INH intravenoso humano purificado, icatibanto (antagonista seletivo do receptor B2 de bradicinina) ou ecallantida.",
+            "<strong>Eritema Polimorfo Menor:</strong> Lesões em alvo ou em íris típicas (três zonas concêntricas: centro hemorrágico ou vesicular escuro, halo intermediário pálido edematoso e anel externo eritematoso bem demarcado), fixas por vários dias, com predileção acral (palmas, plantas, antebraços), comumente disparadas por infecção prévia por Herpes Simplex Virus (HSV) ou <em>Mycoplasma pneumoniae</em>.",
+            "<strong>Anafilaxia:</strong> Emergência médica sistêmica aguda. O envolvimento de urticária/angioedema acompanha-se obrigatoriamente de disfunção respiratória (estridor, broncoespasmo, taquipneia, dessaturação) e/ou colapso cardiovascular (hipotensão arterial, síncope, choque distributivo) e/ou sintomas gastrintestinais graves e explosivos (vômitos repetidos, cólicas abdominais intensas) surgindo minutos após contato com o alérgeno."
+          ]
+        ],
+        [
+          "3",
+          "4.3 Diagnóstico Diferencial da Acne Vulgar"
+        ],
+        [
+          "u",
+          [
+            "<strong>Rosácea Pápulo-Pustulosa:</strong> Apresenta-se em mulheres adultas de meia-idade (30 a 50 anos) com pápulas e pústulas centrofaciais inflamatórias sobre base eritematosa contínua com telangiectasias exuberantes e história de flushing desencadeado por alimentos quentes, condimentos, álcool, estresse e exposição térmica. <strong>Diferencial definitivo: ausência absoluta de comedões!</strong> Na rosácea não há comedões.",
+            "<strong>Foliculite por Pityrosporum (Foliculite por <em>Malassezia</em>):</strong> Erupção monomórfica de micropápulas e pústulas foliculares intensamente pruriginosas no dorso, ombros e peito de adultos jovens, frequentemente exacerbada após cursos prolongados de antibióticos orais ou exposição solar em climas tropicais. Não há comedões e o exame micológico revela aglomerados de leveduras de <em>Malassezia</em>.",
+            "<strong>Dermatite Perioral:</strong> Micro-pápulo-pústulas eritematosas agrupadas nas regiões perioral, perinasal e periocular, poupando uma estreita orla livre ao redor do vermelhão labial. Fator causal clássico: uso tópico inadvertido prolongado de corticosteroides de média/alta potência na face.",
+            "<strong>Acne Medicamentosa:</strong> Erupção de início súbito, monomórfica (todas as lesões encontram-se exatamente no mesmo estágio evolutivo, sem a típica polimorfia da acne vulgar), com distribuição atípica no tronco e membros, sem comedões verdadeiros. Principais classes farmacológicas causadoras: corticosteroides sistêmicos ('acne esteroidea'), lítio, isoniazida, fenitoína, andrógenos/esteroides anabolizantes exógenos, complexo vitamínico B (B12 e B6) e inibidores de EGFR (erlotinibe, cetuximabe)."
+          ]
+        ],
+        [
+          "3",
+          "4.4 Diagnóstico Diferencial das Micoses Superficiais"
+        ],
+        [
+          "u",
+          [
+            "<strong>Eritrasma vs. Tinea Cruris:</strong> Infecção bacteriana superficial crônica intertriginosa causada por <em>Corynebacterium minutissimum</em>. Apresenta-se como placa eritemato-acastanhada com limites nítidos, uniforme, sem bordas elevadas ou vesiculosas ativas. Ao exame sob a lâmpada de Wood, exibe <strong>fluorescência vermelho-coral patognomônica</strong> devido à coproporfirina III sintetizada pela bactéria (a tinea cruris não tem fluorescência vermelha).",
+            "<strong>Intertrigo por <em>Candida</em> vs. Dermatofitose:</strong> A candidíase de dobras atinge o fundo do sulco com maceração úmida, fissuração central e pequenas lesões satélites periféricas pustulosas, com acometimento frequente do escroto. A tinea cruris apresenta borda nítida de expansão em direção à coxa, centro seco e poupa a bolsa escrotal.",
+            "<strong>Pitiríase Rósea de Gilbert vs. Pitiríase Versicolor e Tinea Corporis:</strong> A pitiríase rósea inicia-se com uma placa ovalada solitária de 2 a 10 cm, com colarete descamativo interno periférico fino, denominada <strong>medalhão-mãe (placa heráldica)</strong>. Após 7 a 14 dias, surgem erupções eruptivas de placas menores que se distribuem paralelamente às linhas de clivagem da pele de Langer no dorso, formando o padrão típico em 'árvore de natal'. É autolimitada (resolução em 4 a 8 semanas) e tem etiologia relacionada à reativação viral de HHV-6 e HHV-7.",
+            "<strong>Tinea Incognito:</strong> Situação gravíssima e muito frequente em provas. Ocorre quando uma dermatofitose é tratada equivocadamente com corticoide tópico de alta potência. A inflamação e a descamação diminuem temporariamente, mas a imunidade local é suprimida: os fungos proliferam descontroladamente na profundidade da pele, apagando a borda anular típica e tornando a lesão bizarra, pustulosa, eritemato-violácea difusa e de difícil reconhecimento."
+          ]
+        ]
+      ]
+    ],
+    [
+      "propedeutica-laboratorial-imagem",
+      0,
+      [
+        [
+          "2",
+          "5. Propedêutica Complementar, Laboratorial e Exames Especiais"
+        ],
+        [
+          "p",
+          "Embora a maioria das dermatoses ambulatoriais tenha diagnóstico predominantemente clínico, o uso criterioso da propedêutica complementar garante a elucidação etiológica nos casos atípicos, recalcitrantes ou de relevância pericial e ocupacional."
+        ],
+        [
+          "3",
+          "5.1 Exame Micológico Direto e Cultura para Fungos"
+        ],
+        [
+          "p",
+          "O exame micológico direto é o teste diagnóstico de escolha para todas as suspeitas de infecção fúngica cutânea superficial, rápido, de baixo custo e com alta sensibilidade:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Técnica de Coleta:</strong> Deve-se desinfetar previamente a área com álcool 70% para eliminar bactérias contaminantes. Nas lesões de pele glabra, raspa-se a <em>borda ativa periférica</em> com bisturi de lâmina cega (nº 15) mantida a 45 graus, onde a concentração de hifas viáveis é máxima; raspar o centro da lesão produz falsos negativos. Nas unhas, remove-se a queratina friável do leito ungueal mais proximal possível à cutícula no bordo livre ou realiza-se raspado dorsal na leuconíquia. Nos pelos, colhem-se os cotos pilosos quebradiços com pinça de depilação.",
+            "<strong>Clarificação com KOH (Hidróxido de Potássio a 10%-20%):</strong> O material ceratínico é colocado em lâmina de microscopia, acrescentando-se uma gota de KOH a 10% ou 20% (pode-se adicionar dimetilsulfóxido - DMSO a 40% para acelerar a digestão a frio, ou proceder ao aquecimento suave e breve da lâmina sem ferver). O hidróxido de potássio dissolve o cimento de queratina e as células córneas humanas enquanto preserva a parede fúngica rica em quitina e glucanas.",
+            "<strong>Interpretação Microscópica:</strong>\n    <ul>\n      <li><strong>Dermatofitoses:</strong> Visualizam-se <em>hifas hialinas verdadeiras, septadas, delgadas e ramificadas</em>, por vezes fragmentando-se em cadeias de artroconídios retangulares ou arredondados.",
+            "<strong>Pitiríase Versicolor:</strong> Padrão clássico e inconfundível de <em>hifas curtas e grossas, sinuosas e fragmentadas, entremeadas por volumosos aglomerados esféricos de blastoconídios arredondados com dupla parede</em>, imagem descrita tradicionalmente na literatura como aspecto em 'espaguete com almôndegas' ou 'charutos com uvas'.",
+            "<strong>Candidíase:</strong> Observam-se <em>pseudo-hifas associadas a abundantes blastoconídios ovais brotantes</em>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Cultura Micológica:</strong> Realizada em Ágar Sabouraud dextrose com cloranfenicol e ciclo-heximida (Ágar Mycosel). O crescimento de dermatófitos demora de 2 a 4 semanas a 25-30 °C. É indispensável para identificação da espécie exata em onicomicoses que serão submetidas a tratamento sistêmico com antifúngicos orais e em tinea capitis para rastreio epidemiológico da fonte de contaminação (antropofílico vs. zoofílico).</li>\n</ul>"
+        ],
+        [
+          "3",
+          "5.2 Testes de Contato (Patch Tests) nas Dermatites de Contato"
+        ],
+        [
+          "p",
+          "O teste de contato epicutâneo é o padrão-ouro exclusivo para o diagnóstico etiológico da Dermatite de Contato Alérgica (DCA), capaz de diferenciar a sensibilização imunológica tipo IV da mera irritação física da DCIP:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Padronização Nacional e Internacional:</strong> No Brasil, utiliza-se a Bateria Padrão Brasileira estabelecida pelo Grupo Brasileiro de Estudos em Dermatite de Contato (GBEDC), composta por 30 substâncias alergênicas mais frequentes no país, incluindo sulfato de níquel (bijuterias, fivelas), dicromato de potássio (cimento na construção civil, couro curtido), cloreto de cobalto, parafenilenodiamina (tinturas capilares pretas, tatuagens de hena adulteradas), mistura de fragrâncias, bálsamo do Peru, resina epóxi, formaldeído e timerosal.",
+            "<strong>Protocolo de Aplicação e Leitura:</strong> As câmaras com os alérgenos são fixadas com fita hipoalergênica na pele íntegra e sem pelos do dorso do paciente. Os adesivos permanecem no local por 48 horas ininterruptas, período no qual o paciente não pode molhar as costas nem realizar esforços que causem sudorese excessiva. A primeira leitura é realizada 48 horas após a aplicação, imediatamente após a remoção das câmaras. A <strong>segunda leitura, mandatória e decisiva</strong>, é feita às 72 ou 96 horas (quando as reações irritativas inespecíficas já regrediram e as verdadeiras reações alérgicas imunológicas de hipersensibilidade celular retardada atingem seu ápice inflamatório ou se intensificam).",
+            "<strong>Graduação Internacional da Reação (ICDRG):</strong>\n    <ul>\n      <li>? = Reação duvidosa (eritema macular tênue sem infiltração).",
+            "+ = Reação alérgica fraca (eritema e pápulas infiltradas palpáveis).",
+            "++ = Reação alérgica forte (eritema pronunciado, pápulas, edema e vesículas).",
+            "+++ = Reação alérgica extrema (confluência de vesículas volumosas, bolhas e ulceração).",
+            "IR = Reação irritativa pura (aspecto em queimação, bolhas isoladas sem eritema difuso circunjacente, aspecto encerado ou pustuloso localizado, que regride da leitura de 48h para a de 72h)."
+          ]
+        ],
+        [
+          "3",
+          "5.3 Investigação Laboratorial na Urticária Crônica Espontânea (UCE)"
+        ],
+        [
+          "p",
+          "O guideline internacional EAACI/GA²LEN 2022/2024 contraindica expressamente baterias extensas, cegas e indiscriminadas de exames laboratoriais na UCE, pois aumentam custos e geram diagnósticos falso-positivos de 'alergia' que atrasam a conduta correta. A propedêutica laboratorial básica recomendada limita-se a:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Hemograma Completo com Leucograma:</strong> Avaliação de eosinofilia (sugere parasitoses intestinais em regiões endêmicas ou síndrome hipereosinofílica) e contagem de basófilos. A basopenia periférica acentuada (&lt; 10/microL) associa-se a formas graves e refratárias de UCE autoimune tipo IIb.",
+            "<strong>Provas de Atividade Inflamatória (PCR e VHS):</strong> Marcadores de prognóstico e diagnóstico diferencial. VHS ou PCR muito elevados obrigam o rastreio imediato de Urticária Vasculite e doenças autoimunes sistêmicas (LES, Doença de Still do Adulto, Síndrome de Schnitzler).",
+            "<strong>Função Tireoidiana e Autoanticorpos (TSH, T4 livre, Anti-TPO e Anti-Tireoglobulina):</strong> Pesquisa de tireoidite autoimune de Hashimoto concomitante, presente em até 25-30% dos pacientes com UCE. A presença de anti-TPO positivo é marcador sorológico indireto de UCE autoalérgica Tipo I.",
+            "<strong>Teste do Soro Autólogo (ASST):</strong> Teste intradérmico funcional que injeta 0,05 mL de soro autólogo do paciente no antebraço e compara com solução salina (controle negativo) e histamina (controle positivo) após 30 minutos. Uma pápula urticariforme com diâmetro &ge; 1,5 mm maior que o controle salino indica a presença de anticorpos funcionais degranuladores circulantes (anti-FcεRI ou anti-IgE), auxiliando na confirmação da UCE autoimune.",
+            "<strong>Exames Específicos para Urticárias Induzíveis:</strong> Fricção mecânica por dermografômetro (dermografismo); Teste do cubo de gelo aplicado por 5 minutos no antebraço (urticária pelo frio); Teste de esforço físico monitorado ou imersão em água a 42 °C (urticária colinérgica)."
+          ]
+        ],
+        [
+          "3",
+          "5.4 Avaliação Laboratorial na Acne Vulgar e Hiperandrogenismo"
+        ],
+        [
+          "p",
+          "A investigação hormonal laboratorial na acne vulgar é formalmente reservada para pacientes do sexo feminino que apresentem sinais clínicos evidentes de hiperandrogenismo ou virilização: acne de início tardio (após os 25 anos), acne recalcitrante ao tratamento convencional com isotretinoína oral, oligomenorreia ou amenorreia secundária, hirsutismo significativo (escore de Ferriman-Gallwey &ge; 8), alopecia androgenética de padrão feminino, acantose nigricans e infertilidade anovulatória. O painel deve ser dosado no início da fase folicular precoce (entre o 2º e o 5º dia do ciclo menstrual) e inclui:"
+        ],
+        [
+          "u",
+          [
+            "Testosterona total e testosterona livre (ou cálculo do índice de andrógenos livres com SHBG).",
+            "Sulfato de desidroepiandrosterona (DHEA-S): marcador preferencial de produção androgênica de origem adrenal. Níveis extremamente elevados (&gt; 700-800 mcg/dL) acendem alerta para tumores adrenocorticais produtores de andrógenos.",
+            "17-hidroxiprogesterona (17-OHP) basal: rastreamento de Hiperplasia Adrenal Congênita de início tardio (não clássica) por deficiência da enzima 21-hidroxilase. Valores basais &gt; 200 ng/dL exigem teste de estímulo com ACTH sintético (cortrosina).",
+            "Relação LH / FSH e perfil glicêmico com insulina basal (HOMA-IR): avaliação de Síndrome dos Ovários Policísticos (SOP) e resistência insulínica.",
+            "Ultrassonografia pélvica/transvaginal: presença de ovários policísticos (critérios de Rotterdam revisados)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "abordagem-terapeutica",
+      0,
+      [
+        [
+          "2",
+          "6. Abordagem Terapêutica Farmacológica e Não Farmacológica Detalhada"
+        ],
+        [
+          "p",
+          "O manejo das dermatoses frequentes requer o conhecimento exato de posologias, mecanismos de ação molecular, farmacocinética e esquemas de escalonamento terapêutico embasados nas mais recentes diretrizes internacionais."
+        ],
+        [
+          "3",
+          "6.1 Manejo Farmacológico e Não Farmacológico dos Eczemas"
+        ],
+        [
+          "o",
+          [
+            "<strong>Terapia Básica de Barreira e Cuidados Gerais:</strong> O pilar universal para toda dermatite é a restauração mecânica e lipídica do estrato córneo. Prescrevem-se banhos rápidos (5 a 10 minutos), com água morna (nunca quente), sem uso de buchas abrasivas e com sabonetes sem detergente aniônico agressivo (syndets com pH fisiológico 5.5). Aplicação generosa e imediata de hidratantes e emolientes ricos em ceramidas, colesterol, ácidos graxos livres e glicerol dentro de 3 minutos após o término do banho ('regra dos três minutos'), sobre a pele ainda discretamente úmida, 2 a 3 vezes ao dia. Evitar contato direto com roupas de lã, tecidos sintéticos rugosos, solventes e amaciantes aromáticos.",
+            "<strong>Corticosteroides Tópicos (CST):</strong> Fármacos de primeira linha para o controle dos episódios de exacerbação aguda. A escolha da molécula e do veículo depende da localização anatômica e do estágio da lesão:\n    <ul>\n      <li><em>Áreas de pele espessa ou lesões hiperceratósicas/liquenificadas (tronco, membros):</em> Corticoides de alta potência (propionato de clobetasol 0,05% ou dipropionato de betametasona 0,05%) em pomada (veículo oclusivo que potencializa a penetração), aplicados 1 a 2 vezes ao dia por ciclos curtos (7 a 14 dias).",
+            "<em>Áreas de pele fina, dobras e face:</em> Corticoides de baixa a média potência (acetato de hidrocortisona 1%, desonida 0,05% ou furoato de mometasona 0,1%) em creme ou loção fluida, para evitar atrofia cutânea irreversível, estrias atróficas, telangiectasias, rosácea esteroidea e glaucoma/catarata se aplicado periocular.",
+            "<em>Terapia Proativa de Manutenção:</em> Em casos moderados a graves com recidivas frequentes, adota-se a aplicação proativa de corticosteroide tópico de média potência ou inibidor de calcineurina 2 vezes por semana (ex: sábados e domingos) nas áreas anatômicas previamente acometidas já cicatrizadas, reduzindo em mais de 70% as crises agudas anuais.",
+            "<strong>Inibidores Tópicos da Calcineurina (ITC):</strong> Tacrolimo (pomada a 0,03% para crianças de 2 a 15 anos e 0,1% para adultos) e Pimecrolimo (creme a 1%). Ligam-se à imunofilina intracelular FKBP-12, inibindo a fosfatase calcineurina e bloqueando a desfosforilação do fator nuclear de células T ativadas (NFAT), suprimindo a transcrição de IL-2, IL-4 e IFN-gama. <strong>Vantagem decisiva: não causam atrofia cutânea nem telangiectasias</strong>, sendo os agentes de escolha para face, pálpebras, pescoço e dobras axilares/inguinais. Efeito adverso mais comum: sensação transitória de queimação local nos primeiros dias de uso.",
+            "<strong>Anti-histamínicos Orais na Dermatite Atópica:</strong> Ponto crucial para provas! <em>Anti-histamínicos de 2ª geração não sedantes NÃO têm eficácia comprovada no controle do prurido da DA</em>, pois o prurido atópico é mediado predominantemente por IL-31, TSLP e neuropeptídeos, e não por histamina. Anti-histamínicos de 1ª geração sedantes (hidroxizina 25 a 50 mg/noite; dexclorfeniramina 2 mg) são utilizados estritamente pelo seu efeito sedativo central auxiliar para melhorar a qualidade do sono e reduzir o ato inconsciente de coçar durante a noite.",
+            "<strong>Terapia Sistêmica em Casos Refratários:</strong>\n    <ul>\n      <li><em>Fototerapia:</em> Radiação ultravioleta B de banda estreita (UVB-NB 311 nm) 2 a 3 vezes por semana.",
+            "<em>Imunobiológicos:</em> <strong>Dupilumabe</strong> — anticorpo monoclonal humano recombinante direcionado contra a subunidade alfa do receptor de IL-4 (IL-4R-alfa), bloqueando a cascata combinada da sinalização de IL-4 e IL-13. Dose em adultos: dose de ataque de 600 mg por via subcutânea (duas injeções de 300 mg), seguida por 300 mg subcutâneo a cada 2 semanas. Revolucionou o tratamento da DA moderada a grave.",
+            "<em>Inibidores Pequenas Moléculas de JAK (Janus Kinases):</em> Upadacitinibe (15-30 mg/dia via oral), Abrocitinibe e Baricitinibe, agentes orais com rápido início de alívio do prurido."
+          ]
+        ],
+        [
+          "3",
+          "6.2 Algoritmo Escalonado da Urticária Crônica Espontânea (Diretrizes EAACI/GA²LEN)"
+        ],
+        [
+          "p",
+          "O guideline internacional estabelece uma abordagem terapêutica estritamente em quatro passos sequenciais baseados na resposta clínica medida pelo UAS7:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1º Passo (Primeira Linha):</strong> Anti-histamínico H1 de 2ª geração (não sedante) em <em>dose padrão convencional diária</em> em monoterapia:\n    <ul>\n      <li>Fexofenadina 180 mg via oral 1 vez ao dia; OU",
+            "Cetirizina 10 mg via oral 1 vez ao dia; OU",
+            "Levocetirizina 5 mg via oral 1 vez ao dia; OU",
+            "Desloratadina 5 mg via oral 1 vez ao dia; OU",
+            "Bilastina 20 mg via oral 1 vez ao dia (em jejum de 1h antes ou 2h após alimentos)."
+          ]
+        ],
+        [
+          "p",
+          "<em>Nota de Prática e de Prova:</em> Os anti-histamínicos H1 de 1ª geração (clorfeniramina, hidroxizina, difenidramina, prometazina) são formalmente desaconselhados pelo guideline devido ao risco de sonolência diurna residual, efeito anticolinérgico potente (boca seca, retenção urinária, glaucoma de ângulo fechado) e interferência profunda na arquitetura do sono REM e desempenho psicomotor.\n  </li>\n  <li><strong>2º Passo (Reavaliação em 2 a 4 semanas com sintomas não controlados):</strong> <em>Aumento da dose do anti-histamínico H1 de 2ª geração em até 4 vezes (4x) a dose de bula padrão!</em>"
+        ],
+        [
+          "u",
+          [
+            "Exemplos: Bilastina 40 mg a 80 mg/dia; Fexofenadina até 360 mg a 540 mg/dia; Cetirizina 20 mg a 40 mg/dia.",
+            "Essa conduta é preferida internacionalmente em detrimento da associação promíscua de múltiplos anti-histamínicos diferentes de 1ª ou 2ª geração."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>3º Passo (Reavaliação em 2 a 4 semanas com UAS7 ainda &ge; 16 sob dose quadruplicada):</strong> Adição de <strong>Omalizumabe</strong> à terapia com anti-histamínico H1 em dose otimizada."
+        ],
+        [
+          "u",
+          [
+            "Mecanismo de Ação: Omalizumabe é um anticorpo monoclonal humanizado anti-IgE livre circulante. Ele se liga seletivamente ao domínio C-épsilon-3 da IgE livre, impedindo sua ligação aos receptores FcεRI nos mastócitos e basófilos. Isso induz a rápida internalização e queda da densidade de expressão de FcεRI na superfície celular, cessando a hiper-reatividade mastocitária.",
+            "Posologia Padronizada: 300 mg por via subcutânea a cada 4 semanas (independente do nível de IgE total basal ou peso corporal do paciente, ao contrário da posologia utilizada na asma brônquica)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>4º Passo (Refratariedade ao Omalizumabe após pelo menos 6 meses de tratamento pleno):</strong> Adição de <strong>Ciclosporina A</strong> por via oral."
+        ],
+        [
+          "u",
+          [
+            "Dose: 3,5 a 5 mg/kg/dia dividida em duas tomadas diárias.",
+            "Mecanismo: Inibe a calcineurina e a liberação de mediadores por basófilos e mastócitos.",
+            "Monitorização Obrigatória: Aferição regular da pressão arterial e controle quinzenal/mensal de ureia, creatinina plasmática e depuração renal devido ao risco conhecido de nefrotoxicidade e hipertensão arterial secundária."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Resgate em Crises Agudas Graves:</strong> Permite-se um ciclo curto de corticosteroide oral (prednisona 20 a 50 mg/dia via oral por no máximo 5 a 10 dias seguidos), estritamente para quebrar o ciclo inflamatório agudo, sendo proscrito seu uso crônico contínuo.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "6.3 Manejo Clínico da Acne Vulgar por Graus de Severidade"
+        ],
+        [
+          "t",
+          [
+            "Grau Clínico",
+            "Terapia de 1ª Linha Recomendada",
+            "Alternativas Terapêuticas e Cuidados"
+          ],
+          [
+            [
+              "<strong>Grau I (Comedoniana)</strong>",
+              "<strong>Retinoide tópico em monoterapia:</strong><br>- Adapaleno a 0,1% ou 0,3% gel à noite; OU<br>- Tretinoína a 0,025% ou 0,05% creme/gel à noite.<br>Associar peróxido de benzoíla 2,5% a 5% pela manhã se necessário.",
+              "Ácido azelaico a 15% ou 20% (excelente opção para gestantes e pacientes com eritema/hiperpigmentação pós-inflamatória). Iniciar em dias alternados para reduzir dermatite de contato por retinoide."
+            ],
+            [
+              "<strong>Grau II (Pápulo-Pustulosa Leve a Moderada)</strong>",
+              "<strong>Terapia combinada tópica fixa:</strong><br>- Peróxido de Benzoíla (2,5% ou 5%) + Adapaleno (0,1% ou 0,3%) à noite; OU<br>- Peróxido de Benzoíla + Clindamicina a 1% gel.",
+              "<em>Atenção Fundamental:</em> <strong>NUNCA utilizar antibiótico tópico em monoterapia</strong> (risco imediato de induzir cepas bacterianas resistentes de <em>C. acnes</em> e <em>S. aureus</em>). O peróxido de benzoíla é um bactericida oxidante sem risco de indução de resistência bacteriana."
+            ],
+            [
+              "<strong>Grau II (Moderada a Severa Extensa com acometimento de tronco)</strong>",
+              "<strong>Antibioticoterapia sistêmica oral + Tópico:</strong><br>- Doxiciclina 100 mg via oral 1 vez ao dia por no máximo 8 a 12 semanas; OU<br>- Limeciclina 300 mg via oral 1 vez ao dia.<br><em>SEMPRE associada a Peróxido de Benzoíla tópico.</em>",
+              "Evitar tetraciclina com derivados lácteos (quelação de cálcio). Contraindicada em gestantes e crianças &lt; 8 anos (manchamento dentário e hipoplasia de esmalte). Não manter por &gt; 3 meses. Em mulheres: associar contraceptivo oral combinado antiandrogênico (drospirenona ou ciproterona) ou espironolactona (50 a 100 mg/dia)."
+            ],
+            [
+              "<strong>Grau III (Nódulo-Cística) e Grau IV (Conglobata)</strong>",
+              "<strong>Isotretinoína Oral (Ácido 13-cis-retinoico):</strong><br>- Dose diária: 0,5 a 1,0 mg/kg/dia por via oral (tomada com refeição rica em gorduras para absorção ideal).<br>- Meta terapêutica cumulativa: atingir <strong>120 a 150 mg/kg no total do tratamento</strong> (reduz a taxa de recidiva para menos de 15-20%).",
+              "Fármaco que atua simultaneamente nos 4 pilares fisiopatológicos da acne: reduz o tamanho da glândula sebácea em &gt; 90%, normaliza a queratinização, diminui <em>C. acnes</em> indiretamente e possui ação anti-inflamatória direta."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Protocolo Rigoroso de Segurança da Isotretinoína Oral:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Teratogenicidade Absoluta:</strong> Causa embriopatia grave por ácido retinoico em quase 100% das gestações expostas (microtia, anotia, agenesia do canal auditivo, cardiopatias congênitas conotruncais, hidrocefalia, hipoplasia cerebelar, fendas palatinas e defeitos timicos). Exige assinatura de termo de consentimento livre e esclarecido, teste de beta-hCG sérico negativo antes do início e mensal durante todo o uso e até 30 dias após a suspensão, além da adoção concomitante de <em>dois métodos contraceptivos complementares eficazes</em> (ex: implante subdérmico ou DIU associado a preservativo de barreira).",
+            "<strong>Monitorização Laboratorial:</strong> Dosagem sérica de enzimas hepáticas (TGO e TGP) e perfil lipídico completo (triglicerídeos e colesterol total/frações) em nível basal antes de iniciar a medicação, com 30 dias após o início e posteriormente a cada 3 meses se estáveis. Se elevação de triglicerídeos &gt; 400-500 mg/dL, risco de pancreatite aguda (exige redução da dose diária ou suspensão).",
+            "<strong>Efeitos Adversos Universais:</strong> Queilite descamativa (presente em 100% dos pacientes aderentes, serve como marcador clínico biológico de absorção da droga), xerose cutânea difusa, epistaxe por fragilidade da mucosa nasal, xeroftalmia com intolerância ao uso de lentes de contato, mialgias transitórias com elevação de CPK após atividade física intensa."
+          ]
+        ],
+        [
+          "3",
+          "6.4 Terapêutica Antifúngica Tópica e Sistêmica das Micoses"
+        ],
+        [
+          "u",
+          [
+            "<strong>Tópica (Tinea Corporis, Tinea Cruris, Tinea Pedis leve, Pitiríase Versicolor e Candidíase):</strong>\n    <ul>\n      <li><em>Tíneas e Candidíase:</em> Alilaminas tópicas (Terbinafina creme a 1%, aplicada 1 vez ao dia por 1 a 2 semanas — fármaco fungicida que inibe a esqualeno-epoxidase com baixíssima taxa de recidiva) ou Imidazólicos tópicos (Cetoconazol 2%, Miconazol 2%, Clotrimazol 1%, aplicados 2 vezes ao dia por 2 a 4 semanas — fungistáticos que inibem a 14-alfa-desmetilase dependente do citocromo P450, bloqueando a síntese de ergosterol da membrana fúngica).",
+            "<em>Pitiríase Versicolor:</em> Xampu de sulfeto de selênio a 2,5% ou xampu de cetoconazol a 2%, aplicados no couro cabeludo, tronco e braços durante o banho, deixando agir por 10 minutos antes de enxaguar, diariamente por 14 dias seguidos; ou creme de cetoconazol/terbinafina por 2 semanas."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Sistêmica Obrigatória:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Tinea Capitis (Cabelo e Couro Cabeludo):</em> <strong>O tratamento tópico é ineficaz e formalmente insuficiente! O tratamento exige impreterivelmente droga antifúngica oral!</strong> A droga de escolha clássica em pediatria é a <strong>Griseofulvina oral</strong> (20 a 25 mg/kg/dia na forma microcristalina tomada com alimentos gordurosos para favorecer a absorção, por 6 a 8 semanas). Alternativa de primeira linha moderna: <strong>Terbinafina oral</strong> (62,5 mg/dia se &lt; 20 kg; 125 mg/dia se 20 a 40 kg; 250 mg/dia se &gt; 40 kg por 4 a 6 semanas). No <em>Kérion Celsi</em> inflamatório, adiciona-se corticoterapia oral concomitante (prednisolona 0,5 a 1 mg/kg/dia por 7 a 14 dias) para cessar o dano inflamatório tecidual e prevenir alopecia cicatricial definitiva.",
+            "<em>Onicomicose (Tinea Unguium):</em> Indicada se acometimento &gt; 50% da lâmina ungueal, envolvimento da matriz ungueal ou mais de 3 unhas afetadas. A droga de primeira escolha é a <strong>Terbinafina oral</strong> na dose contínua de 250 mg ao dia por via oral (duração: 6 semanas para unhas das mãos; 12 a 16 semanas para unhas dos pés). Apresenta taxas de cura micológica superiores a 75-80%. Segunda escolha: <strong>Itraconazol</strong> em pulsoterapia (400 mg/dia dividido em duas doses de 200 mg durante 1 semana por mês; 2 pulsos para unhas das mãos e 3 a 4 pulsos para unhas dos pés)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "complicacoes-crises-agudas",
+      0,
+      [
+        [
+          "2",
+          "7. Complicações e Manejo de Crises Agudas"
+        ],
+        [
+          "p",
+          "As complicações dermatológicas podem evoluir rapidamente para emergências com risco de óbito ou sequelas estéticas e funcionais irreversíveis se não reconhecidas e tratadas prontamente."
+        ],
+        [
+          "3",
+          "7.1 Eczema Herpético (Erupção Variceliforme de Kaposi)"
+        ],
+        [
+          "p",
+          "Complicação infecciosa viral aguda potencialmente letal que acomete pacientes com dermatite atópica prévia (ou outras dermatoses com ruptura extensa da barreira cutânea). Ocorre por disseminação sistêmica e cutânea rápida do vírus do herpes simples (HSV-1 ou HSV-2) sobre a pele atópica desprovida de peptídeos antimicrobianos (catelicidinas e beta-defensinas):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Apresentação Clínica:</strong> Piora súbita do eczema pré-existente com febre alta (39 a 40 °C), prostração, linfoadenopatia regional dolorosa volumosa e erupção em salvas de incontáveis microvesículas umbilicadas monomórficas cupuliformes em 'cacho de uva'. As vesículas rompem-se rapidamente, dando origem a erosões 'em saca-bocado' (punch-out) circulares milimétricas recobertas por crostas hemáticas, com rápida disseminação para face, pescoço e tronco.",
+            "<strong>Complicações Ameaçadoras:</strong> Ceratoconjuntivite herpética com perfuração corneana e cegueira, meningoencefalite herpética e viremia fulminante com sepse bacteriana secundária por <em>Staphylococcus aureus</em>.",
+            "<strong>Conduta Imediata:</strong> <strong>Emergência dermatológica!</strong> Não aguardar resultado de PCR ou citologia de Tzanck. Iniciar imediatamente <strong>Aciclovir intravenoso</strong> na dose de 5 a 10 mg/kg a cada 8 horas (ou Aciclovir oral em casos precoces e estáveis: 400 a 800 mg 5 vezes ao dia em adultos; 20 mg/kg 4 vezes ao dia em crianças) por 7 a 14 dias. Cobertura empírica para estafilococo associada (Cefalexina ou Oxacilina) e avaliação oftalmológica mandatória se houver lesões periorbitárias. <em>Suspender temporariamente corticosteroides tópicos e inibidores de calcineurina</em> nas áreas afetadas."
+          ]
+        ],
+        [
+          "3",
+          "7.2 Eritrodermia Esfoliativa (Dermatite Esfoliativa Universal)"
+        ],
+        [
+          "p",
+          "Definida como eritema inflamatório e descamação que acomete mais de 90% da superfície corporal total (SCT). Pode ser o desfecho evolutivo de dermatite atópica grave, psoríase descompensada (pelo uso inadvertido e suspensão abrupta de corticoterapia oral), reações adversas a medicamentos graves (síndrome de DRESS) ou linfoma cutâneo de células T (Síndrome de Sézary):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fisiopatologia da Gravidade Sistêmica:</strong> A vasodilatação microvascular generalizada de mais de 90% da pele provoca perda maciça de calor com hipotermia severa, calafrios incontroláveis e hipermetabolismo compensatório. A perda proteica transepidérmica diária através das escamas descamativas (até 20-30 g de proteína/dia) condiciona hipoalbuminemia profunda com anasarca e choque de alto débito cardiovascular. Ocorre ainda desidratação hipernatrêmica por evaporação transepidérmica e elevado risco de translocação bacteriana com bacteriemia estafilocócica.",
+            "<strong>Manejo em Terapia Intensiva ou Enfermaria:</strong> Internação hospitalar com controle térmico ambiental (quarto aquecido a 28-30 °C), hidratação venosa criteriosa com cristaloides para evitar sobrecarga volêmica em corações descompensados, reposição proteica nutricional hipercalórica e hiperproteica, curativos úmidos com vaselina sólida pura (evitar corticoides tópicos potentes em áreas extensas para mitigar absorção sistêmica tóxica e supressão do eixo HPA) e antibióticos sistêmicos venosos se houver suspeita de sepse."
+          ]
+        ],
+        [
+          "3",
+          "7.3 Choque Anafilático e Angioedema Laríngeo com Asfixia"
+        ],
+        [
+          "p",
+          "O angioedema de vias aéreas superiores é a complicação fatal mais temida nos quadros anafiláticos e de hipersensibilidade aguda:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Reconhecimento Imediato:</strong> Surgimento de rouquidão, estridor laríngeo inspiratório, sensação de sufocamento, disfonia ou disfagia e edema visível de úvula e palato mole.",
+            "<strong>Droga de Primeira Linha Insubstituível:</strong> <strong>ADRENALINA (EPINEFRINA) 1:1.000 (1 mg/mL) INTRAMUSCULAR</strong> na face anterolateral da coxa (músculo vasto lateral). Dose no adulto: 0,3 a 0,5 mg (0,3 a 0,5 mL). Dose na criança: 0,01 mg/kg (máximo de 0,3 mg). Pode ser repetida a cada 5 a 15 minutos em caso de resposta insatisfatória. <em>Erros crônicos de prova: prescrever corticoide ou anti-histamínico IV como primeira escolha na anafilaxia — o atraso na administração de adrenalina IM é o principal determinante isolado de morte por anafilaxia!</em>"
+          ]
+        ]
+      ]
+    ],
+    [
+      "populacoes-especiais",
+      0,
+      [
+        [
+          "2",
+          "8. Particularidades em Populações Especiais"
+        ],
+        [
+          "p",
+          "O manejo das dermatoses na gestação, infância, senescência e imunossupressão requer adaptações farmacológicas cruciais:"
+        ],
+        [
+          "3",
+          "8.1 Gestantes e Lactantes"
+        ],
+        [
+          "u",
+          [
+            "<strong>Acne Vulgar na Gestação:</strong> Fármacos absolutamente <strong>contraindicados: isotretinoína oral (categoria X - teratogenia devastadora)</strong>, tretinoína e adapaleno tópicos, tetraciclinas orais (doxiciclina e minociclina - provocam descoloração óssea e dentária amarelada/acastanhada fetal permanente e hipoplasia do esmalte dentário), espironolactona (risco de feminilização do feto masculino). <em>Tratamento seguro permitido:</em> <strong>Ácido Azelaico tópico a 15% ou 20%</strong> (categoria B da FDA, clareia e desinflama com absorção sistêmica desprezível), peróxido de benzoíla em baixas concentrações (2,5% a 5%), eritromicina tópica ou clindamicina tópica. Casos graves e inflamatórios que exigem antibiótico oral: Cefalexina ou Eritromicina (evitar estolato de eritromicina pelo risco de colestase materna).",
+            "<strong>Eczemas na Gestante:</strong> Hidratação emoliente intensiva e corticosteroides tópicos de baixa a média potência (hidrocortisona, desonida) são considerados seguros em áreas restritas. Evitar corticoides de ultra-alta potência em grandes superfícies (risco de restrição de crescimento intrauterino e baixo peso ao nascer). Inibidores de calcineurina tópicos (tacrolimo) devem ser evitados como rotina, reservados para casos de exceção. Anti-histamínicos seguros: cetirizina e loratadina (categoria B).",
+            "<strong>Micoses na Gestante:</strong> Antifúngicos orais (terbinafina e itraconazol) são <em>contraindicados</em> durante a gestação e lactação; o tratamento de onicomicoses e micoses cutâneas deve ser estritamente tópico (ciclopiroxolamina, miconazol, clotrimazol) ou postergado para após o término do aleitamento materno."
+          ]
+        ],
+        [
+          "3",
+          "8.2 População Pediátrica e Neonatal"
+        ],
+        [
+          "u",
+          [
+            "<strong>Relação Superfície Corporal / Peso:</strong> Crianças e lactentes possuem estrato córneo significativamente mais delgado e uma relação entre a área de superfície cutânea e o peso corporal até 3 vezes superior à do adulto. Portanto, a absorção sistêmica de qualquer fármaco tópico é maciça, com risco elevado de <em>Síndrome de Cushing iatrogênica e supressão do eixo hipotálamo-hipófise-adrenal (HPA)</em> pelo uso inadvertido de corticosteroides fluorados potentes ou ácido salicílico (risco de salicilismo sistêmico tóxico).",
+            "<strong>Tinea Capitis:</strong> É quase exclusiva da faixa pediátrica (3 a 10 anos) devido à ausência de ácidos graxos antifúngicos sebáceos que só aparecem após a puberdade. Lembrar que o tratamento <em>exige terapia oral com Griseofulvina ou Terbinafina</em> e avaliação dos contactantes domiciliares e animais domésticos (cães e gatos para <em>M. canis</em>)."
+          ]
+        ],
+        [
+          "3",
+          "8.3 Pacientes Idosos (Senescência Cutânea)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Prurido Senil e Xerose:</strong> A atrofia das glândulas sebáceas e sudoríparas apócrinas e a desaceleração da renovação epidérmica tornam a pele senil extremamente ressecada e frágil (dermatoporose). O eczema asteatósico (eczema craquelê, com aspecto de porcelana rachada nas pernas) é muito comum em idosos que tomam banhos quentes e demorados com sabonetes alcalinos.",
+            "<strong>Urticária no Idoso:</strong> Exige extrema cautela com anti-histamínicos de 1ª geração (risco iminente de quedas da própria altura por sonolência e ataxia, delirium anticolinérgico, piora de demência e retenção urinária aguda em portadores de hiperplasia prostática benigna). Priorizar sempre anti-histamínicos de 2ª geração sem toxicidade cardíaca (bilastina, fexofenadina)."
+          ]
+        ],
+        [
+          "3",
+          "8.4 Pacientes Imunossuprimidos (HIV / Neoplasias / Pós-Transplante)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Marcadores Cutâneos de Doença Avançada pelo HIV:</strong> O surgimento de <em>onicomicose subungueal proximal</em> (início da infecção fúngica junto à lúnula e cutícula, progredindo distalmente) é marcador semiótico consagrado de imunossupressão celular grave (contagem de linfócitos T CD4+ &lt; 200/microL). Erupções atípicas de tinea corporis extensa, dermatite seborreica fulminante e foliculite eosinofílica também correlacionam-se com imunodeficiência avançada."
+          ]
+        ]
+      ]
+    ],
+    [
+      "protocolos-fluxogramas",
+      0,
+      [
+        [
+          "2",
+          "9. Protocolos Clínicos e Fluxogramas Decisórios Estruturados"
+        ],
+        [
+          "p",
+          "Os fluxogramas decisórios a seguir sintetizam as etapas práticas de conduta médica imediata e ambulatorial segundo as diretrizes de 2026."
+        ],
+        [
+          "t",
+          [
+            "Etapa Decisória",
+            "Ação Clínica Padronizada",
+            "Critério de Transição / Próximo Passo"
+          ],
+          [
+            [
+              "<strong>UCE Passo 1</strong>",
+              "Anti-H1 de 2ª geração em dose padrão (ex: Bilastina 20 mg/dia ou Fexofenadina 180 mg/dia). Avaliar diário de sintomas (UAS7).",
+              "Reavaliar em 2 a 4 semanas. Se UAS7 &le; 6 (controle ótimo), manter. Se UAS7 &ge; 7, avançar para o Passo 2."
+            ],
+            [
+              "<strong>UCE Passo 2</strong>",
+              "Aumentar o mesmo Anti-H1 de 2ª geração até 4 vezes (4x) a dose de bula diária (ex: Bilastina 80 mg/dia ou Fexofenadina 360-540 mg/dia).",
+              "Reavaliar em 2 a 4 semanas. Se refratário ou UAS7 &ge; 16, avançar para o Passo 3."
+            ],
+            [
+              "<strong>UCE Passo 3</strong>",
+              "Adicionar Omalizumabe 300 mg por via subcutânea a cada 4 semanas, mantendo anti-H1 em dose alta.",
+              "Avaliar resposta após 3 a 6 meses de injeções regulares. Se refratário com UAS7 descontrolado, avançar para o Passo 4."
+            ],
+            [
+              "<strong>UCE Passo 4</strong>",
+              "Adicionar Ciclosporina A oral 3,5 a 5 mg/kg/dia dividida em 2 tomadas, monitorando estritamente pressão arterial e função renal.",
+              "Atingindo controle clínico duradouro por &gt; 6 meses, proceder ao desmame regressivo gradual."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "t",
+          [
+            "Grau de Acne",
+            "Conduta Terapêutica Inicial",
+            "Critério de Escalonamento / Falha"
+          ],
+          [
+            [
+              "<strong>Grau I</strong>",
+              "Retinoide tópico (Adapaleno 0,1% ou Tretinoína 0,025%) à noite. Higienização facial com sabonete seboderivador suave.",
+              "Se surgimento de lesões inflamatórias após 6-8 semanas, associar Peróxido de Benzoíla 2,5-5%."
+            ],
+            [
+              "<strong>Grau II Leve/Mod.</strong>",
+              "Associação tópica fixa: Adapaleno + Peróxido de Benzoíla à noite. Se eritema intenso, usar Ácido Azelaico 15%.",
+              "Se acometimento extenso no dorso ou ausência de melhora após 8 semanas, indicar antibiótico oral."
+            ],
+            [
+              "<strong>Grau II Extenso</strong>",
+              "Doxiciclina oral 100 mg/dia (ou Limeciclina 300 mg/dia) por no máximo 8 a 12 semanas + Peróxido de Benzoíla tópico.",
+              "Se recidiva rápida pós-antibiótico ou formação de cicatrizes, indicar Isotretinoína oral."
+            ],
+            [
+              "<strong>Grau III e IV</strong>",
+              "Isotretinoína oral 0,5 a 1,0 mg/kg/dia até dose cumulativa de 120-150 mg/kg, sob contracepção dupla e exames mensais.",
+              "Se surto inflamatório no início do tratamento (risco de acne fulminans induzida), associar Prednisona oral temporária."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-resolvidos",
+      0,
+      [
+        [
+          "2",
+          "10. Casos Clínicos Estruturados e Resolvidos com Raciocínio Diagnóstico"
+        ],
+        [
+          "p",
+          "Os quatro casos clínicos a seguir simulam cenários clássicos de provas práticas e teóricas de Residência Médica, Revalida e ENAMED, detalhando passo a passo a anamnese semiótica, interpretação laboratorial e plano terapêutico fundamentado."
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Lactente com Eczema Recidivante e Complicação Infecciosa Aguda"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa Principal:</strong> Menino de 8 meses de vida é trazido pela mãe à Unidade de Pronto Atendimento com queixa de febre alta, choro inconsolável e 'piora súbita da pele com feridinhas espalhadas' há 24 horas."
+        ],
+        [
+          "p",
+          "<strong>História da Doença Atual (HDA):</strong> Paciente possui diagnóstico de Dermatite Atópica desde os 3 meses de vida, com placas eritematosas pruriginosas e exsudativas nas bochechas e superfícies extensoras de braços e pernas, em uso irregular de hidratante e pomada de hidrocortisona. Há 2 dias a mãe notou surgimento de pequenas bolhinhas na face que rapidamente se romperam, acompanhadas de recusa alimentar e temperatura axilar de 39,2 °C. A mãe refere que o pai tem crises frequentes de 'aftas e bolhas na boca' (herpes labial) e beijou a criança na face há 4 dias."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Lactente irritado, febril (Tax: 39,0 °C), taquicárdico (FC: 148 bpm), FR: 28 irpm, SpO₂: 98% em ar ambiente. Exame dermatológico: sobre as placas prévias de eczema em ambas as bochechas, fronte e pescoço, observam-se dezenas de vesículas monomórficas, circulares, cupuliformes e com umbilicação central evidente, além de múltiplas erosões em saca-bocado (punch-out) milimétricas com fundo eritematoso brilhante e algumas crostas hemáticas. Ausência de lesões oculares periorbitárias. Linfonodomegalia submandibular e cervical anterior dolorosa bilateral com linfonodos fibroelásticos móveis de até 1,5 cm."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Diagnóstico Diferencial:</strong>"
+        ],
+        [
+          "u",
+          [
+            "A eclosão abrupta de vesículas umbilicadas monomórficas e erosões punctatas sobre uma pele cronicamente lesada por dermatite atópica, acompanhada de febre alta e toxemia, é a apresentação clássica do <strong>Eczema Herpético (Erupção Variceliforme de Kaposi)</strong>, secundário à disseminação do vírus Herpes Simplex (HSV-1) transmitido pelo contato íntimo com a lesão ativa do genitor.",
+            "<em>Diagnósticos Diferenciais:</em> O impetigo bolhoso estafilocócico cursa com bolhas flácidas heterogêneas de conteúdo purulento e crostas melicéricas espessas amareladas, sem vesículas umbilicadas monomórficas difusas; a varicela primaria apresenta lesões pleomórficas em diferentes estágios (mácula, pápula, vesícula em gota de orvalho e crosta) de distribuição centrípeta no tronco e couro cabeludo; a síndrome mão-pé-boca apresenta vesículas elípticas de eixo longo nas palmas, plantas e cavidade oral."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Plano Diagnóstico e Conduta Imediata:</strong>"
+        ],
+        [
+          "o",
+          [
+            "Internação hospitalar imediata em leito de isolamento de contato.",
+            "Início urgente de <strong>Aciclovir intravenoso</strong> na dose de 10 mg/kg a cada 8 horas (30 mg/kg/dia) em infusão lenta de 1 hora, sem aguardar testes virológicos confirmatórios.",
+            "Coleta de PCR para HSV-1/HSV-2 das vesículas íntegras ou raspado da base da erosão para citologia de Tzanck (evidenciando queratinócitos multinucleados gigantes com inclusões nucleares e balonização).",
+            "Antibioticoterapia profilática/terapêutica associada com Cefazolina ou Oxacilina IV devido ao altíssimo risco de superinfecção bacteriana secundária por <em>S. aureus</em>.",
+            "Suspensão formal e imediata de qualquer corticoide tópico ou inibidor de calcineurina nas áreas ativas de infecção viral.",
+            "Avaliação formal por médico oftalmologista para descartar ceratite herpética subclínica."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Paciente Jovem com Urticária Crônica e Falha Terapêutica Inicial"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa Principal:</strong> Mulher de 32 anos, advogada, procura atendimento ambulatorial de alergologia e dermatologia relatando que 'vive cheia de placas vermelhas que coçam desesperadamente há 3 meses'."
+        ],
+        [
+          "p",
+          "<strong>HDA:</strong> Relata episódios praticamente diários de vergões avermelhados com inchaço que surgem em qualquer parte do corpo, duram de 4 a 8 horas no mesmo local e desaparecem completamente sem deixar manchas. Em duas ocasiões apresentou inchaço doloroso nos lábios e pálpebras que demorou cerca de 48 horas para desinchar. Já retirou corantes, glúten, leite e frutos do mar da alimentação por conta própria, sem qualquer melhora. Procurou posto de saúde há 4 semanas, onde foi prescrita Loratadina 10 mg 1 vez ao dia, que a paciente tomou rigorosamente sem qualquer controle dos sintomas (calculou UAS7 = 34 pontos na última semana)."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Bom estado geral, corada, eupneica. No tronco e membros superiores há múltiplas placas eritemato-edematosas circinadas com centro mais claro e bordos avermelhados bem demarcados, medindo de 1 a 6 cm de diâmetro. Não há púrpura, petéquias ou descamação. Dermografismo mecânico pesquisado no antebraço é negativo. Sem estridor laríngeo ou dispneia."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Diagnóstico e Propedêutica:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Trata-se de <strong>Urticária Crônica Espontânea (UCE) associada a episódios de Angioedema</strong>, dado o caráter diário das lesões por tempo superior a 6 semanas, a efemeridade das urticas (&lt; 24h) e a ausência de desencadeante físico reproduzível.",
+            "A exclusão dietética empírica ampla foi inútil e errônea, visto que menos de 1-2% das UCE têm relação com alergia alimentar verdadeira IgE-mediada. A falha da dose convencional de anti-H1 de 2ª geração (Loratadina 10 mg) é evento frequente, ocorrendo em até 40-50% dos pacientes.",
+            "<em>Exames Complementares Básicos:</em> Hemograma normal, VHS e PCR normais (afastando Urticária Vasculite e doenças inflamatórias sistêmicas), TSH normal e anticorpo Anti-TPO positivo em títulos elevados (marcador de autoimunidade tireoidiana associada à UCE Tipo I autoalérgica)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Planejamento Terapêutico Escalonado:</strong>"
+        ],
+        [
+          "o",
+          [
+            "Explicar a natureza autoimune e benigna da doença, desmistificando a culpa alimentar e suspendendo as restrições nutricionais inadequadas.",
+            "<strong>Avançar para o Passo 2 da Diretriz EAACI/GA²LEN:</strong> Substituir a loratadina e prescrever um anti-histamínico H1 de 2ª geração moderno em <strong>dose quadruplicada (4x)</strong>: Bilastina 20 mg (2 comprimidos pela manhã em jejum e 2 comprimidos à noite, totalizando 80 mg/dia) ou Fexofenadina 180 mg (1 comprimido a cada 12 horas ou 360-540 mg/dia).",
+            "Orientar preenchimento rigoroso do diário de sintomas UAS7 e retorno em 2 a 4 semanas.",
+            "Informar à paciente que, caso o UAS7 permaneça &ge; 16 após 4 semanas com dose máxima do anti-H1, o próximo passo imediato (Passo 3) consistirá na adição do imunobiológico <strong>Omalizumabe 300 mg subcutâneo a cada 4 semanas</strong>."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Adolescente com Acne Grave e Risco de Cicatrizes Definitivas"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa Principal:</strong> Homem de 17 anos é trazido pelos pais à consulta especializada por apresentar 'espinhas enormes, dolorosas e com secreção purulenta no rosto e nas costas há 1 ano'."
+        ],
+        [
+          "p",
+          "<strong>HDA:</strong> O paciente relata que as lesões iniciaram aos 15 anos e pioraram progressivamente no último ano. Refere isolamento social e sintomas depressivos reativos à aparência da pele. Já utilizou sabonetes secativos comerciais, peróxido de benzoíla em gel e realizou dois ciclos de 30 dias de sulfametoxazol-trimetoprima e cefalexina oral prescritos em prontos-socorros, sempre com recidiva explosiva logo após a suspensão."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Na face (especialmente região malar e mandibular), região esternal e em todo o dorso superior, observam-se numerosos comedões abertos e fechados, pápulas eritematosas, dezenas de pústulas foliculares e múltiplos <strong>nódulos inflamatórios profundos, dolorosos e flutuantes (&gt; 1 cm)</strong>, alguns confluindo em cordões fistulosos que drenam secreção purulenta e sanguinolenta. Presença visível de cicatrizes deprimidas do tipo <em>ice-pick</em> e cicatrizes fibróticas hipertróficas na região esternal."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Estadiamento:</strong>"
+        ],
+        [
+          "u",
+          [
+            "O quadro caracteriza <strong>Acne Vulgar Nódulo-Cística Severa (Grau III avançado a Grau IV/Acne Conglobata incipiente)</strong>, com lesões destrutivas profundas, fístulas e cicatrizes permanentes em formação.",
+            "A conduta médica anterior com cursos curtos e erráticos de antibióticos orais inadequados foi incorreta, fomentando falhas e resistência bacteriana sem atingir a raiz fisiopatológica sebácea."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Conduta Terapêutica Definitiva:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Indicação Padrão-Ouro Absoluta:</strong> <strong>Isotretinoína Oral (Ácido 13-cis-retinoico)</strong> sistêmica. Trata-se da única droga modificadora do curso da doença capaz de induzir remissão prolongada definitiva.",
+            "<em>Exames Laboratoriais Pré-Tratamento:</em> Hemograma completo, TGO, TGP, Gama-GT, fosfatase alcalina, ureia, creatinina, colesterol total, HDL, LDL e triglicerídeos basais.",
+            "<em>Prevenção de Piora Paradoxal Inicial (Pseudo-Acne Fulminans):</em> Devido à altíssima carga inflamatória nodular inicial, o início direto de isotretinoína em dose cheia pode induzir necrose e ruptura maciça de folículos sebáceos. Portanto, prescreve-se <strong>Prednisona oral 0,5 mg/kg/dia por 2 a 4 semanas</strong> em conjunto com uma dose baixa introdutória de isotretinoína (0,2 a 0,3 mg/kg/dia), escalonando-se a isotretinoína para 0,5 a 1,0 mg/kg/dia conforme o desmame progressivo do corticoide.",
+            "<em>Meta Terapêutica Cumulativa:</em> Planejar o tratamento para atingir a dose cumulativa total de <strong>120 a 150 mg/kg</strong> de peso corporal (para 60 kg, dose total de 7.200 a 9.000 mg ao longo de 6 a 9 meses), assegurando a prevenção de recidivas a longo prazo."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Lesão Anular Descigrada em Adulto com Tratamento Inadequado (Tinea Incognito)"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa Principal:</strong> Homem de 38 anos, motorista rodoviário, procura a clínica da família referindo 'alergia na virilha e na perna que não melhora e está aumentando há 6 semanas'."
+        ],
+        [
+          "p",
+          "<strong>HDA:</strong> Relata que há 2 meses notou uma 'coceira avermelhada' na dobra inguinal direita que descia para a coxa. Foi à farmácia onde o balconista indicou uma pomada de associação tripla contendo dipropionato de betametasona, sulfato de gentamicina e tolnaftato. O paciente relata que a coceira aliviou nos primeiros dias, mas após 3 semanas a lesão espalhou-se pela coxa, abdome inferior e nádega, ficando com manchas escuras, pústulas e pele 'fina e estriada'."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Na raiz da coxa direita estendendo-se para a região perineal e nádega, há uma extensa placa eritemato-violácea mal delimitada, com perda da borda circinada nítida habitual, exibindo pústulas foliculares dispersas no centro da lesão, áreas de atrofia cutânea epidérmica e estrias purpúreas lineares atróficas marcantes. A bolsa escrotal está poupada."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Diagnóstico:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Trata-se de um caso paradigmático de <strong>Tinea Incognito (Tinea Acarretada por Corticoterapia Inadvertida)</strong> sobreposta a uma <em>Tinea Cruris</em> prévia causada por dermatófito (provavelmente <em>Trichophyton rubrum</em>).",
+            "O uso de corticoide tópico potente (betametasona) causou imunossupressão local profunda: inibiu a resposta imune Th1 do hospedeiro, aliviou temporariamente o prurido, mas permitiu a invasão fúngica desregrada das camadas profundas da pele e folículos pilosos (granuloma de Majocchi secundário), apagando a borda anular típica e causando os efeitos adversos clássicos do corticoide: atrofia cutânea e estrias atróficas permanentes."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Conduta Médica Estruturada:</strong>"
+        ],
+        [
+          "o",
+          [
+            "Interromper imediatamente a pomada combinada com corticoide. Explicar ao paciente que nos primeiros dias após a suspensão haverá um rebote com eritema e prurido intenso ('efeito rebote de retirada de esteroide').",
+            "Realizar <strong>Exame Micológico Direto</strong> com raspado das escamas e pústulas clarificado com KOH a 20%, o qual confirmará abundantes hifas hialinas septadas e artroconídios fúngicos. Semear em Ágar Sabouraud para identificação da espécie.",
+            "Devido à grande extensão das lesões, invasão folicular profunda e presença de atrofia cutânea tópica que contraindica atrito com cremes irritantes, indicar <strong>Antifúngico Sistêmico Oral: Terbinafina 250 mg via oral 1 vez ao dia durante 2 a 4 semanas</strong>.",
+            "Prescrever cuidados locais: manter a área seca e arejada, evitar roupas íntimas sintéticas apertadas (usar cuecas boxer de algodão soltas) e tratar simultaneamente eventual foco fúngico nos pés (tinea pedis/interdigital) para prevenir auto-reinfeção cruzada ao vestir calças e roupas íntimas."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas",
+      0,
+      [
+        [
+          "2",
+          "11. Questões de Concursos Médicos e Revalida Comentadas em Profundidade"
+        ],
+        [
+          "p",
+          "As questões a seguir foram rigorosamente elaboradas e selecionadas segundo o padrão dos maiores concursos de Residência Médica do país (USP, UNICAMP, ENARE, SUS-SP) e do Revalida INEP, com resolução detalhada fundamentada nas diretrizes oficiais."
+        ],
+        [
+          "3",
+          "Questão 1 (Residência Médica / ENARE)"
+        ],
+        [
+          "p",
+          "Mulher de 28 anos, sem comorbidades prévias, comparece à consulta com queixa de lesões eritematosas pruriginosas disseminadas que surgem diariamente há 8 semanas. As lesões consistem em placas eritemato-edematosas circinadas com centro pálido, que desaparecem completamente em menos de 12 horas sem deixar manchas ou cicatrizes residuais. Refere ainda dois episódios de inchaço nos lábios que duraram cerca de 40 horas. Nega febre, artralgias ou perda de peso. Não faz uso de medicamentos contínuos e não identifica fator desencadeante alimentar ou ambiental. O hemograma e as provas inflamatórias (VHS e PCR) encontram-se dentro da normalidade. Considerando a principal hipótese diagnóstica e as diretrizes internacionais da EAACI/GA²LEN vigentes, qual é a conduta inicial farmacológica mais adequada?"
+        ],
+        [
+          "p",
+          "A) Prednisona oral na dose de 40 mg ao dia por 4 semanas com desmame progressivo.<br>\nB) Anti-histamínico H1 de 2ª geração em dose padrão diária, como a bilastina 20 mg/dia ou fexofenadina 180 mg/dia.<br>\nC) Associação imediata de anti-histamínico H1 de 1ª geração sedante à noite (hidroxizina 25 mg) com anti-histamínico H2 (ranitidina 150 mg 12/12h).<br>\nD) Omalizumabe 300 mg por via subcutânea a cada 4 semanas como terapia biológica de indução precoce.<br>\nE) Dieta hipoalergênica rigorosa com exclusão de glúten, lactose, frutos do mar e corantes alimentares artificiais."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado e Análise Minuciosa:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa B está CORRETA:</strong> O quadro clínico caracteriza a Urticária Crônica Espontânea (UCE), definida pelo surgimento de urticas evanescentes (&lt; 24h) com ou sem angioedema por período &ge; 6 semanas sem gatilho externo evidente. Segundo o guideline internacional EAACI/GA²LEN 2022/2024, o primeiro passo do algoritmo terapêutico (Passo 1) consiste obrigatoriamente no uso de um anti-histamínico H1 de 2ª geração não sedante em dose convencional padrão diária em monoterapia (ex: bilastina 20 mg/dia, fexofenadina 180 mg/dia, desloratadina 5 mg/dia ou cetirizina 10 mg/dia). A eficácia deve ser avaliada após 2 a 4 semanas pelo escore UAS7."
+        ],
+        [
+          "p",
+          "<em>Refutação dos Distratores:</em><br>\n<strong>A está incorreta:</strong> Corticosteroides sistêmicos não são indicados como tratamento contínuo ou inicial de manutenção na UCE devido aos gravíssimos efeitos adversos da corticoterapia crônica (osteoporose, hipertensão, diabetes, síndrome de Cushing, catarata, supressão adrenal) e ao frequente efeito rebote com exacerbação grave dos sintomas após sua suspensão. Cursos curtos (5 a 10 dias) são tolerados exclusivamente como resgate em crises hiperagudas graves.<br>\n<strong>C está incorreta:</strong> Anti-histamínicos de 1ª geração (sedantes) são formalmente desaconselhados pelo guideline devido ao prejuízo na arquitetura do sono e cognição diurna; ademais, a associação de anti-H2 deixou de ser recomendada pelas diretrizes por falta de evidência científica robusta e baixo benefício clínico.<br>\n<strong>D está incorreta:</strong> O omalizumabe (anti-IgE) é um imunobiológico altamente eficaz, porém posicionado no Passo 3 do algoritmo, reservado exclusivamente para pacientes que mantêm doença não controlada após o escalonamento do anti-H1 de 2ª geração para até 4 vezes a dose de bula (Passo 2).<br>\n<strong>E está incorreta:</strong> A UCE é uma doença primariamente autoimune/autoalérgica intrínseca dos mastócitos; dietas de exclusão cegas e empíricas não possuem eficácia comprovada, causam desnutrição e angústia psicológica desnecessária ao paciente."
+        ],
+        [
+          "3",
+          "Questão 2 (Residência Médica / USP)"
+        ],
+        [
+          "p",
+          "Menino de 6 anos de idade é levado à Unidade Básica de Saúde pela mãe devido ao aparecimento de duas placas circulares no couro cabeludo há cerca de 3 semanas. As lesões são discretamente pruriginosas e caracterizam-se por áreas de alopecia parcial com presença de cotos pilosos quebradiços a poucos milímetros da superfície e fina descamação cinzenta superficial. Ao exame com a lâmpada de Wood na sala escura, as placas exibem fluorescência verde-brilhante nítida. A mãe relata que a família adotou um filhote de gato de rua recentemente. Diante do quadro clínico e da confirmação diagnóstica, qual é a conduta terapêutica padrão-ouro recomendada?"
+        ],
+        [
+          "p",
+          "A) Cetoconazol xampu a 2% aplicado 3 vezes por semana por 4 semanas como monoterapia.<br>\nB) Propionato de clobetasol loção capilar a 0,05% aplicado 1 vez ao dia por 14 dias.<br>\nC) Griseofulvina oral na dose de 20 a 25 mg/kg/dia por 6 a 8 semanas, tomada com alimentos gordurosos.<br>\nD) Mupirocina pomada a 2% aplicada 2 vezes ao dia por 10 dias.<br>\nE) Terbinafina tópica em creme a 1% aplicada 2 vezes ao dia por 3 semanas."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado e Análise Minuciosa:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa C está CORRETA:</strong> Trata-se de <em>Tinea Capitis</em> (tinha do couro cabeludo) ectothrix, microspórica, causada por <em>Microsporum canis</em> (fungo zoofílico transmitido por cães e gatos, responsável pela clássica fluorescência verde-brilhante à lâmpada de Wood). A regra de ouro dermatológica cobrada com extrema frequência em concursos é que <strong>a Tinea Capitis NÃO responde à terapêutica tópica isolada</strong>, pois as hifas e conídios fúngicos penetram profundamente no folículo e na matriz da haste pilosa, onde os fármacos tópicos não alcançam concentrações fungicidas eficazes. O tratamento exige obrigatoriamente <strong>antifúngico sistêmico por via oral</strong>. A Griseofulvina (20 a 25 mg/kg/dia na forma microcristalina por 6 a 8 semanas, administrada com leite ou refeições lipídicas para potencializar a absorção gastrointestinal) permanece como a terapia padrão clássica de primeira linha em pediatria, tendo como alternativa consagrada a Terbinafina oral."
+        ],
+        [
+          "p",
+          "<em>Refutação dos Distratores:</em><br>\n<strong>A e E estão incorretas:</strong> Xampus de cetoconazol ou cremes de terbinafina podem ser usados unicamente como terapia adjuvante nas primeiras semanas para reduzir a eliminação de esporos viáveis no ambiente escolar e domiciliar, mas falham categoricamente se usados como monoterapia, perpetuando a infecção profunda e a transmissão.<br>\n<strong>B está incorreta:</strong> O uso de corticosteroides tópicos de alta potência em micoses é um erro médico grave que transforma a infecção em <em>Tinea Incognito</em>, mascarando os sintomas e amplificando a proliferação fúngica descontrolada.<br>\n<strong>D está incorreta:</strong> Mupirocina é um antibacteriano tópico para impetigo ou foliculite estafilocócica superficial, sem qualquer ação sobre fungos dermatófitos."
+        ],
+        [
+          "3",
+          "Questão 3 (Revalida INEP)"
+        ],
+        [
+          "p",
+          "Homem de 19 anos, estudante universitário, busca atendimento com queixa de acne inflamatória grave no rosto e dorso. O exame dermatológico revela dezenas de comedões, pápulas, pústulas e múltiplos nódulos inflamatórios profundos, dolorosos e flutuantes, alguns drenando secreção seropurulenta, com formação de fístulas e cicatrizes deprimidas atróficas nos malares. O médico indica o início de tratamento com isotretinoína oral (ácido 13-cis-retinoico). Em relação aos efeitos adversos, farmacologia e protocolo clínico obrigatório da isotretinoína oral, assinale a afirmativa CORRETA:"
+        ],
+        [
+          "p",
+          "A) A isotretinoína atua exclusivamente inibindo a colonização folicular por <em>Cutibacterium acnes</em>, sem alterar a taxa de excreção sebácea.<br>\nB) A queilite descamativa é um efeito colateral raro (&lt; 5% dos casos), cuja presença indica hipersensibilidade individual e exige a imediata interrupção do medicamento.<br>\nC) Por ser eliminada predominantemente por filtração glomerular, a monitorização de rotina exige apenas dosagem seriada de creatinina plasmática e sedimento urinário.<br>\nD) A dose terapêutica preconizada visa atingir uma dose cumulativa total de 120 a 150 mg/kg de peso corporal ao final do tratamento para reduzir as taxas de recidiva a longo prazo.<br>\nE) Em mulheres em idade fértil, o método contraceptivo de barreira isolado (preservativo masculino) é considerado formalmente suficiente pelo Ministério da Saúde."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado e Análise Minuciosa:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa D está CORRETA:</strong> A isotretinoína oral é o único fármaco capaz de induzir remissão prolongada e eventual cura da acne vulgar. Para alcançar taxas de recidiva inferiores a 15-20%, as diretrizes da Sociedade Brasileira de Dermatologia (SBD) e da Academia Americana de Dermatologia (AAD) preconizam que o tratamento seja continuado até que o paciente atinja a <strong>dose cumulativa total de 120 a 150 mg/kg</strong> de peso corporal (geralmente distribuída na posologia diária de 0,5 a 1,0 mg/kg/dia durante 6 a 9 meses)."
+        ],
+        [
+          "p",
+          "<em>Refutação dos Distratores:</em><br>\n<strong>A está incorreta:</strong> A isotretinoína atua de forma abrangente nos quatro pilares patogênicos da acne: induz apoptose dos sebócitos e atrofia acentuada das glândulas sebáceas (reduzindo a produção de sebo em até 90%), normaliza a hiperqueratinização folicular diminuindo os microcomedões, reduz indiretamente a população de <em>C. acnes</em> pela remoção do seu substrato lipídico anóxico e exerce ação anti-inflamatória dérmica potente.<br>\n<strong>B está incorreta:</strong> A queilite descamativa e o ressecamento labial ocorrem em praticamente 100% dos pacientes aderentes ao tratamento, sendo considerada um marcador biológico fidedigno da absorção sistêmica do fármaco, facilmente manejada com protetores labiais umectantes (vaselina, manteiga de cacau), nunca exigindo suspensão.<br>\n<strong>C está incorreta:</strong> A isotretinoína é metabolizada intensamente pelo fígado (citocromo P450) e afeta o metabolismo lipídico. O protocolo obrigatório de segurança exige monitorização de transaminases hepáticas (TGO e TGP) e perfil lipídico sérico (triglicerídeos e colesterol total/frações), pois elevações marcantes de triglicerídeos (&gt; 400-500 mg/dL) implicam risco de pancreatite aguda.<br>\n<strong>E está incorreta:</strong> Devido à teratogenicidade extrema (categoria X da FDA), o protocolo exige <em>dupla contracepção complementar</em> obrigatória (ex: DIU de cobre/hormonal ou implante subdérmico associado a preservativo masculino), mantida por pelo menos 1 mês antes, durante todo o tratamento e por pelo menos 30 dias após a interrupção definitiva da droga."
+        ],
+        [
+          "3",
+          "Questão 4 (Residência Médica / SUS-SP)"
+        ],
+        [
+          "p",
+          "Homem de 45 anos, trabalhador da construção civil há 15 anos, apresenta erupção eczematosa pruriginosa crônica nas mãos e punhos que piora progressivamente durante a semana de trabalho e melhora discretamente durante as férias de fim de ano. Ao exame clínico, observa-se espessamento cutâneo difuso no dorso e palmas das mãos, com acentuação dos sulcos normais da pele, descamação acentuada, fissuras dolorosas nas polpas digitais e ausência de vesículas agudas. O teste de contato (patch test) com a Bateria Padrão Brasileira revelou reação fortemente positiva (+++) com eritema pronunciado, edema e pápulo-vesículas na leitura de 96 horas para o <strong>Dicromato de Potássio</strong>. Com base no mecanismo imunopatológico e no achado pericial, qual é a substância ocupacional diretamente implicada e a classificação fisiopatológica da reação?"
+        ],
+        [
+          "p",
+          "A) Cimento da construção civil; Reação de hipersensibilidade do tipo IV (celular mediada por linfócitos T).<br>\nB) Borracha das luvas de proteção; Reação de hipersensibilidade imediata do tipo I mediada por IgE.<br>\nC) Solventes de tintas; Dermatite de contato por irritante primário pura não imunológica.<br>\nD) Níquel presente em ferramentas metálicas; Reação de hipersensibilidade do tipo II mediada por citotoxicidade.<br>\nE) Resina epóxi de impermeabilização; Reação mediada por imunocomplexos do tipo III."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado e Análise Minuciosa:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa A está CORRETA:</strong> O dicromato de potássio (cromo hexavalente) é o alérgeno ocupacional clássico e prototípico presente no <strong>cimento da construção civil</strong> e no couro curtido. A Dermatite de Contato Alérgica (DCA) é uma reação clássica de <strong>hipersensibilidade do tipo IV (tardia ou celular)</strong> de Coombs e Gell, mediada por linfócitos T sensibilizados (Th1/Th17 e CD8+ citotóxicos). A leitura do teste de contato às 72-96 horas é o padrão-ouro confirmatório da resposta celular imunológica de memória, distinguindo-a das reações irritativas puras que regridem nesse intervalo."
+        ],
+        [
+          "p",
+          "<em>Refutação dos Distratores:</em><br>\n<strong>B está incorreta:</strong> A alergia à borracha de luvas costuma ser provocada por aceleradores de vulcanização (tiuranos, carbamatos) e também cursa como hipersensibilidade tipo IV (eczema), enquanto a alergia ao látex natural é que pode mediar resposta tipo I (urticária de contato/anafilaxia).<br>\n<strong>C está incorreta:</strong> A dermatite irritativa primária não apresenta positividade específica no teste de contato nem depende de sensibilização celular com memória imunológica antígeno-específica.<br>\n<strong>D e E estão incorretas:</strong> A DCA não é mediada por citotoxicidade mediada por anticorpos (tipo II) nem por deposição intravascular de imunocomplexos (tipo III), mas estritamente por imunidade celular tardia mediada por células T efetoras (tipo IV)."
+        ],
+        [
+          "3",
+          "Questão 5 (Residência Médica / UNICAMP)"
+        ],
+        [
+          "p",
+          "Jovem de 21 anos, sem sintomas constitucionais, queixa-se de manchas brancas no peito e nas costas que surgiram após retornar de uma viagem ao litoral há 1 mês. Relata que 'quanto mais toma sol, mais as manchas ficam visíveis e claras'. Ao exame físico dermatológico, notam-se múltiplas máculas hipocrômicas, arredondadas e confluentes no tronco anterior e dorso superior. Ao realizar o raspado com a unha sobre as lesões, observa-se a soltura imediata de escamas furfuráceas finas. À lâmpada de Wood, constata-se fluorescência amarelo-dourada tênue. Em relação à semiologia, etiologia e tratamento da afecção apresentada, assinale a opção correta:"
+        ],
+        [
+          "p",
+          "A) O achado de descamação furfurácea à fricção ungueal denomina-se Sinal do Orvalho Sangrento de Auspitz.<br>\nB) A etiologia é fúngica, decorrente da infecção primária exógena pelo dermatófito filamentoso <em>Trichophyton rubrum</em>.<br>\nC) A hipocromia lesional decorre da síntese de ácido azelaico pela levedura <em>Malassezia</em>, o qual inibe a enzima tirosinase melanocítica.<br>\nD) A biópsia cutânea com coloração por Ziehl-Neelsen é o exame de escolha para afastar hanseníase tuberculoide.<br>\nE) O tratamento exige impreterivelmente o uso de terbinafina por via oral na dose de 250 mg ao dia por 6 semanas."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado e Análise Minuciosa:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa C está CORRETA:</strong> Trata-se de <em>Pitiríase Versicolor</em> causada por leveduras do gênero <em>Malassezia</em> (como <em>M. globosa</em> e <em>M. furfur</em>). A levedura produz metabólitos lipídicos, destacando-se o <strong>ácido azelaico</strong>, que atua como inibidor competitivo direto da enzima <strong>tirosinase</strong> nos melanócitos funcionais da camada basal epidérmica. Isso bloqueia a conversão da tirosina em melanina, impedindo a pigmentação da pele acometida e gerando máculas hipocrômicas que contrastam fortemente com a pele sã bronzeada após exposição solar."
+        ],
+        [
+          "p",
+          "<em>Refutação dos Distratores:</em><br>\n<strong>A está incorreta:</strong> O desprendimento de escamas furfuráceas à raspagem ungueal é o <strong>Sinal de Zileri (Sinal da Unhada)</strong> ou Sinal de Besnier (ao estiramento da pele). O Sinal de Auspitz (orvalho sangrento) consiste no sangramento pontilhado após a curetagem metódica de Brocq em placas de psoríase.<br>\n<strong>B está incorreta:</strong> A <em>Malassezia</em> é uma levedura comensal lipofílica pertencente à microbiota cutânea normal humana, e não um dermatófito filamentoso exógeno.<br>\n<strong>D está incorreta:</strong> Embora a hanseníase indeterminada ou tuberculoide figure no diagnóstico diferencial de máculas hipocrômicas, a hanseníase cursa obrigatoriamente com alteração de sensibilidade (térmica, dolorosa e tátil), ausência de descamação furfurácea ao sinal de Zileri e fluorescência negativa na lâmpada de Wood.<br>\n<strong>E está incorreta:</strong> A pitiríase versicolor tem indicação preferencial de tratamento tópico (xampu de cetoconazol 2%, sulfeto de selênio a 2,5% ou imidazólicos tópicos). Quando se opta por tratamento sistêmico em casos extensos, o fármaco de escolha oral é o fluconazol ou itraconazol; <strong>a terbinafina oral é ineficaz na pitiríase versicolor</strong>, pois não atinge níveis terapêuticos suficientes no estrato córneo lipofílico para eliminar a <em>Malassezia</em>."
+        ],
+        [
+          "3",
+          "Questão 6 (Revalida INEP)"
+        ],
+        [
+          "p",
+          "Uma mulher de 35 anos procura atendimento médico ambulatorial com queixa de lesões no rosto há 6 meses. O exame dermatológico evidencia pápulas inflamatórias eritematosas e pequenas pústulas localizadas no dorso nasal, bochechas e queixo, sobrepostas a uma base com eritema telangiectásico difuso persistente. A paciente refere piora marcante do eritema e sensação de queimação facial após ingestão de café quente, vinho tinto ou banhos quentes. O médico examina detalhadamente a pele e não constata a presença de nenhum comedão aberto ou fechado. Qual é o diagnóstico mais provável para o caso descrito?"
+        ],
+        [
+          "p",
+          "A) Acne vulgar inflamatória grau II.<br>\nB) Rosácea pápulo-pustulosa.<br>\nC) Lúpus eritematoso cutâneo subagudo.<br>\nD) Dermatite perioral por corticoide.<br>\nE) Eczema seborreico centrofacial."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado e Análise Minuciosa:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa B está CORRETA:</strong> Trata-se de <strong>Rosácea Pápulo-Pustulosa</strong>. Acomete caracteristicamente mulheres adultas de 30 a 50 anos, exibindo pápulas e pústulas sobre eritema centrofacial associado a telangiectasias e crises paroxísticas de rubor (flushing) desencadeadas por alimentos quentes, álcool, estresse e variações de temperatura. <strong>O ponto de corte semiótico absoluto para prova é a AUSÊNCIA COMPLETA DE COMEDÕES!</strong> A presença de comedões define acne vulgar; sua ausência diante de pápulo-pústulas centrofaciais com eritema telangiectásico sela o diagnóstico de rosácea."
+        ],
+        [
+          "p",
+          "<em>Refutação dos Distratores:</em><br>\n<strong>A está incorreta:</strong> A acne vulgar grau II apresenta obrigatoriamente comedões (abertos e/ou fechados) que dão origem às lesões inflamatórias e acomete mais comumente adolescentes e adultos jovens.<br>\n<strong>C está incorreta:</strong> O lúpus eritematoso discoide ou subagudo cursa com placas anulares ou psoriasiformes, atrofia, cicatrizes cicatriciais e fotossensibilidade, sem surtos de pústulas foliculares típicos.<br>\n<strong>D está incorreta:</strong> A dermatite perioral concentra-se ao redor da boca poupando a borda do vermelhão labial e associa-se classicamente ao uso prévio de corticoide tópico.<br>\n<strong>E está incorreta:</strong> O eczema seborreico exibe escamas graxas amareladas no sulco nasogeniano e sobrancelhas, sem telangiectasias exuberantes ou pústulas difusas com flushing térmico."
+        ]
+      ]
+    ],
+    [
+      "tabela-sinoptica-perolas",
+      0,
+      [
+        [
+          "2",
+          "12. Tabela Sinóptica e Pérolas Clínicas de Prova (High-Yield)"
+        ],
+        [
+          "p",
+          "Esta seção compila os pontos de maior incidência em provas e os macetes conceituais de memorização rápida para gabaritar questões sobre dermatoses prevalentes."
+        ],
+        [
+          "t",
+          [
+            "Entidade Clínica",
+            "Lesão Elementar Primária",
+            "Distribuição Típica",
+            "Conduta Farmacológica Padrão",
+            "Pérola de Ouro de Prova"
+          ],
+          [
+            [
+              "<strong>Dermatite Atópica</strong>",
+              "Eritema, vesículas/crostas (agudo) &rarr; Liquenificação (crônico)",
+              "Lactentes: bochechas/extensoras.<br>Crianças/adultos: dobras flexurais.",
+              "Emolientes + Corticoide tópico (crise) / Tacrolimo (face/dobras). Dupilumabe nos refratários.",
+              "Prurido não responde a anti-H1 de 2ª geração! Anti-H1 sedativo só para sono. Risco de Eczema Herpético (Aciclovir IV urgente)."
+            ],
+            [
+              "<strong>Dermatite de Contato Alérgica</strong>",
+              "Eczema agudo a crônico delimitado à área de contato",
+              "Mãos, punhos, lobo da orelha, região periumbilical (botão de calça).",
+              "Afastamento do antígeno + Corticoide tópico potente por ciclo curto.",
+              "Hipersensibilidade tipo IV (celular retardada). Padrão-ouro confirmatório: Teste de Contato (Patch test) lido em 48h e 72-96h. Níquel e Cromo (cimento)."
+            ],
+            [
+              "<strong>Urticária Crônica Espontânea</strong>",
+              "Urtica (placa eritemato-edematosa evanescente &lt; 24h) +/- Angioedema",
+              "Disseminada, migratória, sem predileção anatômica fixa.",
+              "Passo 1: Anti-H1 2ª ger dose padrão.<br>Passo 2: Aumentar Anti-H1 2ª ger até 4x.<br>Passo 3: Omalizumabe 300 mg SC 4/4 sem.",
+              "Lesão fixa &gt; 24-48h com queimação/dor e púrpura residual = Urticária Vasculite (fazer biópsia!). Angioedema isolado sem urtica = pensar em AEH ou IECA."
+            ],
+            [
+              "<strong>Acne Vulgar</strong>",
+              "Comedão (aberto/fechado), pápula, pústula, nódulo, cisto",
+              "Face, dorso superior e tórax anterior (áreas seborreicas).",
+              "Grau I: Retinoide tópico.<br>Grau II: Retinoide + PBz +/- Doxiciclina.<br>Grau III/IV: Isotretinoína oral (120-150 mg/kg cumulativo).",
+              "NUNCA usar antibiótico tópico isolado (sempre associar Peróxido de Benzoíla). Isotretinoína é teratogênica absoluta (categoria X) e causa queilite em 100%."
+            ],
+            [
+              "<strong>Tinea Capitis</strong>",
+              "Placas de alopecia descamativa com tocos pilosos partidos",
+              "Couro cabeludo (quase exclusiva em crianças).",
+              "Antifúngico ORAL OBRIGATÓRIO (Griseofulvina ou Terbinafina). Tópico é ineficaz!",
+              "Kérion Celsi: lesão inflamatória tumoral dolorosa (associar corticoide oral curto para evitar alopecia definitiva)."
+            ],
+            [
+              "<strong>Pitiríase Versicolor</strong>",
+              "Máculas hipo ou hipercrômicas com descamação furfurácea",
+              "Tronco superior, dorso, ombros, pescoço.",
+              "Cetoconazol xampu 2% ou sulfeto de selênio a 2,5%. Fluconazol/Itraconazol oral se extenso.",
+              "Sinal de Zileri (unhada) e Besnier positivos. Ácido azelaico inibe tirosinase. Terbinafina oral NÃO funciona para Malassezia!"
+            ],
+            [
+              "<strong>Tinea Pedis / Cruris</strong>",
+              "Placa anular com borda ativa circinada e clareamento central",
+              "Interdigital nos pés; virilha descendo para coxa (poupa bolsa escrotal).",
+              "Terbinafina tópica 1% ou Imidazólicos tópicos por 2 a 4 semanas.",
+              "Tinea Incognito: causada pelo uso de corticoide tópico em micose (apaga borda anular e piora infecção). Exame direto com KOH mostra hifas hialinas septadas."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Pérolas Clínicas de Prova (High-Yield): As 'Pegadinhas' Mais Frequentes"
+        ],
+        [
+          "u",
+          [
+            "<strong>Pegadinha 1:</strong> 'Paciente com lesões de urticária há 2 meses e dor articular; as urticas permanecem no mesmo lugar por 36 horas e deixam manchas acastanhadas.' &rarr; <em>Não é UCE! Trata-se de Urticária Vasculite. A conduta exige biópsia de pele com imunofluorescência e dosagem de complemento (C3, C4, CH50).</em>",
+            "<strong>Pegadinha 2:</strong> 'Mulher com acne inflamatória no rosto tratada com adapaleno que engravidou.' &rarr; <em>Suspender imediatamente o retinoide tópico e orientar que o tratamento seguro na gestação é o Ácido Azelaico tópico a 15-20%.</em>",
+            "<strong>Pegadinha 3:</strong> 'Criança com placa descamativa no couro cabeludo com pelos quebrados.' &rarr; <em>Jamais assinalar tratamento com xampu antifúngico isolado! Tinea capitis exige impreterivelmente droga oral (Griseofulvina ou Terbinafina).</em>",
+            "<strong>Pegadinha 4:</strong> 'Paciente em tratamento de acne com isotretinoína apresenta triglicerídeos de 650 mg/dL.' &rarr; <em>Risco iminente de pancreatite aguda! Reduzir a dose diária, instituir dieta hipolipídica rigorosa ou suspender temporariamente o retinoide.</em>",
+            "<strong>Pegadinha 5:</strong> 'Diferenciação rápida entre Tinea Cruris e Candidíase da virilha.' &rarr; <em>Tinea cruris tem borda circinada nítida e poupa o escroto; candidíase acomete o fundo da dobra com maceração, fissura, atinge o escroto e exibe pústulas satélites periféricas.</em>",
+            "<strong>Pegadinha 6:</strong> 'Dermatite atópica com erupção repentina de vesículas umbilicadas febris.' &rarr; <em>Eczema Herpético (Erupção Variceliforme de Kaposi). Emergência que exige Aciclovir intravenoso imediato e suspensão de imunossupressores tópicos.</em>"
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.sbd.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Dermatologia (SBD) — Consenso Brasileiro de Dermatite Atópica e Acne Vulgar 2025/2026</a>",
+            "<a href=\"https://eaaci.org\" target=\"_blank\" rel=\"noopener noreferrer\">EAACI/GA²LEN/EuroGuiDerm/APAAACI Guideline for the Definition, Classification, Diagnosis and Management of Urticaria 2022/2024</a>",
+            "<a href=\"https://www.aad.org\" target=\"_blank\" rel=\"noopener noreferrer\">American Academy of Dermatology (AAD) — Guidelines of care for the management of acne vulgaris, atopic dermatitis and superficial fungal infections 2024/2026</a>",
+            "<a href=\"https://asbai.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Diretrizes da Associação Brasileira de Alergia e Imunologia (ASBAI) — Urticária Crônica e Angioedema</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,1823 @@
+{
+  "v": 2,
+  "s": "planejamento-reprodutivo-contracepcao",
+  "t": "Planejamento Reprodutivo e Contracepção",
+  "p": "Planejamento Reprodutivo e Contracepção — Livro-Texto LURIA",
+  "d": "Critérios de elegibilidade da OMS/FEBRASGO 2026 · LARC · emergência · combinados e segurança cardiovascular",
+  "a": "Ginecologia e Obstetrícia",
+  "m": "Planejamento Familiar e Endocrinologia Ginecológica",
+  "h": [
+    "Apostila LURIA",
+    "Planejamento Reprodutivo e Contracepção",
+    "Critérios de elegibilidade da OMS/FEBRASGO 2026 · LARC · emergência · combinados e segurança cardiovascular",
+    [
+      "Área: Ginecologia e Obstetrícia",
+      "Matéria: Planejamento Familiar e Endocrinologia Ginecológica",
+      "Tema: Planejamento Reprodutivo e Contracepção"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "resumo-prova",
+      "Em 30 segundos"
+    ],
+    [
+      "mapa-mental",
+      "Mapa mental"
+    ],
+    [
+      "principios",
+      "1. Princípios do planejamento reprodutivo"
+    ],
+    [
+      "eficacia",
+      "2. Eficácia, uso típico e mecanismo"
+    ],
+    [
+      "mec",
+      "3. Critérios Médicos de Elegibilidade — OMS 2025"
+    ],
+    [
+      "combinados",
+      "4. Pílula anticoncepcional combinada"
+    ],
+    [
+      "adesivo",
+      "5. Adesivo contraceptivo combinado"
+    ],
+    [
+      "anel",
+      "6. Anel vaginal combinado"
+    ],
+    [
+      "injetavel-combinado",
+      "7. Anticoncepcional injetável combinado"
+    ],
+    [
+      "pop",
+      "8. Pílula apenas de progestagênio (minipílula)"
+    ],
+    [
+      "dmpa",
+      "9. Injetável trimestral de medroxiprogesterona (DMPA)"
+    ],
+    [
+      "implante",
+      "10. Implante subdérmico de etonogestrel"
+    ],
+    [
+      "diu-cobre",
+      "11. DIU de cobre: dispositivo, ação e acompanhamento"
+    ],
+    [
+      "siu-lng",
+      "12. SIU com levonorgestrel: diferenças em relação ao DIU de cobre"
+    ],
+    [
+      "preservativos",
+      "13. Preservativos externo e interno"
+    ],
+    [
+      "barreira",
+      "14. Diafragma e espermicidas"
+    ],
+    [
+      "comportamentais",
+      "15. Métodos comportamentais e reconhecimento da fertilidade"
+    ],
+    [
+      "definitivos",
+      "16. Métodos definitivos: laqueadura e vasectomia"
+    ],
+    [
+      "emergencia",
+      "7. Contracepção de emergência"
+    ],
+    [
+      "inicio",
+      "8. Início rápido, troca e razoável certeza de não gravidez"
+    ],
+    [
+      "puerperio",
+      "9. Puerpério, lactação e pós-aborto"
+    ],
+    [
+      "situacoes",
+      "10. Situações especiais"
+    ],
+    [
+      "esterilizacao",
+      "11. Esterilização voluntária no Brasil"
+    ],
+    [
+      "falhas",
+      "12. Falhas, sangramento, efeitos adversos e interações"
+    ],
+    [
+      "decisoes-avancadas-contracepcao-2026",
+      "15. Decisões integradas: emergência, início, DIU e segurança"
+    ],
+    [
+      "casos",
+      "13. Casos clínicos integradores"
+    ],
+    [
+      "revisao",
+      "14. Revisão de alto rendimento"
+    ],
+    [
+      "editorial-depth-planejamento-reprodutivo-contracepcao",
+      "Aprofundamento: mecanismos, diferenciais e conduta"
+    ],
+    [
+      "anticoncepcionais-hormonais-combinados-risco-tromboembolico",
+      "Métodos Hormonais Combinados e Trombose: Fisiopatologia, Gerações de Progestagênios e Risco Vascular"
+    ],
+    [
+      "criterios-elegibilidade-oms-febrasgo-2026-detalhado",
+      "Critérios Médicos de Elegibilidade da OMS e FEBRASGO 2026: Análise por Sistemas e Comorbidades"
+    ],
+    [
+      "larc-avancados-implante-diu-cobre-siu-lng",
+      "LARC em Foco: Implante de Etonogestrel vs DIU de Cobre vs SIU-Levonorgestrel (Mirena vs Kyleena)"
+    ],
+    [
+      "anticoncepcao-emergencia-mecanismos-janelas-reinicio",
+      "Contracepção de Emergência: Levonorgestrel vs Acetato de Ulipristal vs DIU de Cobre"
+    ],
+    [
+      "casos-clinicos-questoes-aprofundo-contracepcao",
+      "Casos Clínicos Integradores e Questões de Concursos Comentadas — Contracepção 2026"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ],
+    [
+      "clinica-etiologia-2026-planejamento-reprodutivo-contracepcao",
+      "Raciocínio clínico aprofundado: situações que mudam a conduta"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "resumo-prova",
+      0,
+      [
+        [
+          "2",
+          "Em 30 segundos"
+        ],
+        [
+          "u",
+          [
+            "<strong>Planejamento reprodutivo</strong> é cuidado centrado na autonomia: decidir se, quando e em que condições engravidar, com acesso a contracepção, prevenção de IST, aconselhamento e cuidado pré-concepcional.",
+            "Na prática, escolha contraceptiva combina <strong>eficácia, segurança, reversibilidade, padrão de sangramento, preferência, comorbidades, interações, desejo reprodutivo e proteção contra IST</strong>.",
+            "Os LARC — <strong>DIU de cobre, SIU-LNG e implante de etonogestrel</strong> — têm menos de 1 gestação por 100 usuárias/ano no uso típico e independem da adesão diária.",
+            "O DIU de cobre atua predominantemente <strong>antes da fecundação</strong>, por resposta inflamatória local tóxica a espermatozoides. Não é método abortivo.",
+            "Os Critérios Médicos de Elegibilidade da OMS usam categorias 1–4. A referência atual é a <strong>6ª edição, publicada em 2025</strong>.",
+            "Combinados com estrogênio exigem atenção especial a <strong>TEV, enxaqueca com aura, tabagismo ≥35 anos, hipertensão, puerpério precoce e doença cardiovascular</strong>.",
+            "Contracepção de emergência deve ser oferecida o mais cedo possível. <strong>DIU de cobre até 120 h</strong> é a opção mais eficaz e mantém contracepção contínua.",
+            "Após ulipristal, deve-se evitar início imediato de método hormonal por alguns dias; após levonorgestrel, o método regular pode ser iniciado imediatamente, com barreira conforme o método.",
+            "No SUS, o implante de <strong>etonogestrel 68 mg</strong> foi ampliado em 2025 para adolescentes de 14–17 anos e mulheres de 18–49 anos, com implementação nacional em curso em 2026.",
+            "Na esterilização voluntária, a Lei 14.443/2022 reduziu a idade mínima para <strong>21 anos ou pelo menos 2 filhos vivos</strong>, retirou a exigência de autorização conjugal e manteve intervalo mínimo de 60 dias entre manifestação da vontade e procedimento."
+          ]
+        ]
+      ]
+    ],
+    [
+      "mapa-mental",
+      0,
+      [
+        [
+          "2",
+          "Mapa mental"
+        ],
+        [
+          "p",
+          "Escolha contraceptiva é uma decisão clínica compartilhada, não um ranking universal."
+        ],
+        [
+          "p",
+          "</div>\r\n<div class=\"book-grid-2\">\r\n<div class=\"book-mini\"><strong>1. A paciente pode usar?</strong>"
+        ],
+        [
+          "p",
+          "Aplicar MEC: risco cardiovascular, câncer de mama, doença hepática, puerpério, interações e outras condições."
+        ],
+        [
+          "p",
+          "</div>\r\n<div class=\"book-mini\"><strong>2. O método combina com a vida dela?</strong>"
+        ],
+        [
+          "p",
+          "Rotina, privacidade, desejo de amenorreia, tolerância a sangramento irregular e necessidade de discrição importam."
+        ],
+        [
+          "p",
+          "</div>\r\n<div class=\"book-mini\"><strong>3. Qual eficácia ela deseja?</strong>"
+        ],
+        [
+          "p",
+          "LARC minimizam falha relacionada à adesão; métodos de curta duração dependem mais do uso correto e consistente."
+        ],
+        [
+          "p",
+          "</div>\r\n<div class=\"book-mini\"><strong>4. Há risco de IST?</strong>"
+        ],
+        [
+          "p",
+          "Contracepção e prevenção de IST são eixos diferentes. Preservativos continuam relevantes mesmo com LARC."
+        ]
+      ]
+    ],
+    [
+      "principios",
+      0,
+      [
+        [
+          "2",
+          "1. Princípios do planejamento reprodutivo"
+        ],
+        [
+          "p",
+          "O aconselhamento deve ser <strong>não coercitivo, informado e centrado na pessoa</strong>. O objetivo não é convencer a usar o método mais eficaz, mas garantir que a escolha seja compatível com prioridades, risco clínico e projeto reprodutivo. Uma adolescente nulípara, uma puérpera lactante, uma paciente com enxaqueca com aura e uma mulher que deseja amenorreia podem chegar a escolhas diferentes mesmo quando todas desejam evitar gestação."
+        ],
+        [
+          "p",
+          "Antes de prescrever, responda a quatro perguntas: há contraindicação? qual eficácia é desejada? qual padrão de uso e sangramento é aceitável? existe necessidade de proteção contra IST? Exames laboratoriais rotineiros, ultrassom, coagulograma e “painel hormonal” não são pré-requisitos universais."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Regra prática</strong>Contracepção segura depende mais de boa anamnese, pressão arterial quando houver estrogênio e exclusão razoável de gravidez do que de uma bateria de exames.</div>"
+        ]
+      ]
+    ],
+    [
+      "eficacia",
+      0,
+      [
+        [
+          "2",
+          "2. Eficácia, uso típico e mecanismo"
+        ],
+        [
+          "p",
+          "<strong>Uso perfeito</strong> mede o que ocorre quando o método é usado exatamente como orientado; <strong>uso típico</strong> inclui atrasos, esquecimentos e uso inconsistente. Essa diferença é pequena para LARC e grande para pílulas, preservativos e métodos comportamentais."
+        ],
+        [
+          "t",
+          [
+            "Método",
+            "Gestações/100 usuárias-ano — uso típico",
+            "Mecanismo dominante",
+            "Ponto clínico"
+          ],
+          [
+            [
+              "Implante",
+              "≈0,1",
+              "Inibição da ovulação + muco espesso",
+              "Altíssima eficácia; sangramento irregular é comum."
+            ],
+            [
+              "DIU de cobre",
+              "≈0,8",
+              "Efeito espermicida/inflamatório local",
+              "Não hormonal; pode aumentar fluxo e cólicas."
+            ],
+            [
+              "SIU-LNG",
+              "&lt;1",
+              "Muco espesso + supressão endometrial",
+              "Reduz sangramento e cólica."
+            ],
+            [
+              "Injetável de progestagênio",
+              "≈4",
+              "Inibição da ovulação",
+              "Falha típica decorre principalmente de atraso na reaplicação."
+            ],
+            [
+              "Injetável combinado mensal",
+              "≈3",
+              "Inibição da ovulação",
+              "Tem estrogênio: compartilhar contraindicações dos combinados."
+            ],
+            [
+              "Pílulas/anel/adesivo",
+              "≈7",
+              "Inibição da ovulação",
+              "Adesão diária/semanal/mensal influencia eficácia."
+            ],
+            [
+              "Preservativo externo",
+              "≈13",
+              "Barreira",
+              "Também reduz risco de IST."
+            ],
+            [
+              "Vasectomia",
+              "≈0,15 após confirmação",
+              "Interrupção dos deferentes",
+              "Não é imediatamente eficaz."
+            ],
+            [
+              "Laqueadura",
+              "≈0,5",
+              "Interrupção tubária",
+              "Método permanente; falha pode cursar com ectópica."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Um erro frequente é explicar DIU hormonal ou cobre como método que “impede nidação”. Essa formulação é inadequada. O DIU de cobre age predominantemente <strong>antes da fecundação</strong>; o SIU-LNG altera sobretudo muco cervical e endométrio, com efeito contraceptivo principal também anterior à implantação."
+        ]
+      ]
+    ],
+    [
+      "mec",
+      0,
+      [
+        [
+          "2",
+          "3. Critérios Médicos de Elegibilidade — OMS 2025"
+        ],
+        [
+          "p",
+          "O MEC não diz qual método é “melhor”; ele estima a <strong>segurança</strong> de cada método diante de uma condição clínica. Categoria 1 significa sem restrição; 2, vantagens geralmente superam riscos; 3, riscos geralmente superam vantagens; 4, risco inaceitável."
+        ],
+        [
+          "t",
+          [
+            "Condição",
+            "Mensagem de prova"
+          ],
+          [
+            [
+              "Enxaqueca com aura",
+              "Evitar contraceptivos combinados com estrogênio — risco arterial torna o método categoria 4."
+            ],
+            [
+              "Hipertensão controlada",
+              "Combinados geralmente são categoria 3; PA ≥160/100 mmHg torna a restrição ainda maior."
+            ],
+            [
+              "Tabagismo ≥35 anos",
+              "Combinados passam a categoria 3 ou 4 conforme intensidade do tabagismo."
+            ],
+            [
+              "TEV atual/alto risco de recorrência",
+              "Evitar estrogênio; DMPA pode ter classificação mais restritiva que outros progestagênios em alguns cenários."
+            ],
+            [
+              "Câncer de mama atual",
+              "Métodos hormonais são contraindicados; DIU de cobre é a principal opção altamente eficaz não hormonal."
+            ],
+            [
+              "Puerpério precoce",
+              "Combinados são fortemente restringidos pelo risco trombótico, especialmente nas primeiras semanas."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<div class=\"book-callout book-alert\"><strong>Armadilha</strong>Não transforme “progestagênio” em um grupo homogêneo. DMPA, implante, POP e SIU-LNG têm perfis e categorias diferentes em algumas condições.</div>"
+        ]
+      ]
+    ],
+    [
+      "combinados",
+      0,
+      [
+        [
+          "2",
+          "4. Pílula anticoncepcional combinada"
+        ],
+        [
+          "3",
+          "O que é e como funciona"
+        ],
+        [
+          "p",
+          "A pílula combinada contém estrogênio e progestagênio. Seu efeito principal é inibir o pico de LH e a ovulação; também espessa o muco cervical e modifica o endométrio. A eficácia depende da tomada regular, por isso é essencial perguntar se a paciente consegue manter uma rotina diária. Existem esquemas 21/7, 24/4 e contínuos: a pausa e o padrão de sangramento dependem da formulação, e não se deve presumir que toda cartela tenha sete dias sem hormônio."
+        ],
+        [
+          "3",
+          "Uso real, vantagens, limitações e segurança"
+        ],
+        [
+          "p",
+          "Antes de prescrever, pesquisar enxaqueca com aura, tabagismo a partir de 35 anos, hipertensão, tromboembolismo, história de AVC, câncer de mama atual, hepatopatias relevantes e uso de medicamentos que interagem. Aferir pressão arterial; exames laboratoriais de rotina não são exigidos para todas as pessoas saudáveis. Náusea, mastalgia, cefaleia e sangramento de escape podem ocorrer, especialmente no início. Benefícios não contraceptivos podem incluir melhora de dismenorreia, acne e sangramento menstrual intenso. Esquecimento de comprimidos requer orientação específica conforme número de doses, semana da cartela e formulação, com contracepção de emergência quando indicada."
+        ]
+      ]
+    ],
+    [
+      "adesivo",
+      0,
+      [
+        [
+          "2",
+          "5. Adesivo contraceptivo combinado"
+        ],
+        [
+          "3",
+          "O que é e como funciona"
+        ],
+        [
+          "p",
+          "O adesivo transdérmico libera estrogênio e progestagênio pela pele. Ele impede a ovulação como a pílula combinada, mas não exige tomar comprimidos todos os dias. Em esquemas comuns, troca-se semanalmente durante três semanas, com intervalo na quarta; regimes e apresentações podem variar por país e produto."
+        ],
+        [
+          "3",
+          "Uso real, vantagens, limitações e segurança"
+        ],
+        [
+          "p",
+          "A aplicação deve ocorrer em pele íntegra e limpa, nos locais recomendados pelo fabricante, evitando as mamas. Verificar aderência e o tempo em que ficou descolado; o manejo depende da duração do descolamento. É necessário avaliar as mesmas contraindicações ao estrogênio da pílula combinada. Algumas formulações podem ter eficácia reduzida em determinadas faixas de peso ou IMC: conferir a bula específica. Efeitos adversos incluem irritação local, náusea, mastalgia e sangramento irregular."
+        ]
+      ]
+    ],
+    [
+      "anel",
+      0,
+      [
+        [
+          "2",
+          "6. Anel vaginal combinado"
+        ],
+        [
+          "3",
+          "O que é e como funciona"
+        ],
+        [
+          "p",
+          "O anel é um dispositivo flexível inserido na vagina que libera estrogênio e progestagênio de maneira contínua. Seu principal mecanismo é o bloqueio da ovulação. Na apresentação mensal clássica, fica por três semanas e é retirado por uma semana; há produtos com orientações diferentes."
+        ],
+        [
+          "3",
+          "Uso real, vantagens, limitações e segurança"
+        ],
+        [
+          "p",
+          "Ensinar a inserção e a retirada, o que fazer diante de expulsão, esquecimento de reinserção ou atraso na troca, seguindo a bula. Não é método de barreira e não protege de IST. Compartilha as contraindicações ao estrogênio e os riscos tromboembólicos dos demais combinados; dúvidas sobre uso durante relações, corrimento ou desconforto devem ser abordadas de forma prática."
+        ]
+      ]
+    ],
+    [
+      "injetavel-combinado",
+      0,
+      [
+        [
+          "2",
+          "7. Anticoncepcional injetável combinado"
+        ],
+        [
+          "3",
+          "O que é e como funciona"
+        ],
+        [
+          "p",
+          "O injetável combinado contém estrogênio e progestagênio e é administrado em intervalos regulares, frequentemente mensais, conforme o produto. Inibe a ovulação; não é equivalente ao depósito trimestral de medroxiprogesterona, que contém somente progestagênio."
+        ],
+        [
+          "3",
+          "Uso real, vantagens, limitações e segurança"
+        ],
+        [
+          "p",
+          "Antes da aplicação, identificar o nome da formulação, a janela correta entre doses, as restrições ao estrogênio e a possibilidade de gravidez. Explicar que atrasos podem diminuir a eficácia e exigir proteção adicional; o plano de retorno deve ser entregue por escrito. Podem surgir irregularidades menstruais, mastalgia, cefaleia e efeitos relacionados ao estrogênio."
+        ]
+      ]
+    ],
+    [
+      "pop",
+      0,
+      [
+        [
+          "2",
+          "8. Pílula apenas de progestagênio (minipílula)"
+        ],
+        [
+          "3",
+          "O que é e como funciona"
+        ],
+        [
+          "p",
+          "A pílula apenas de progestagênio não contém estrogênio. Algumas formulações atuam predominantemente espessando o muco cervical; outras, como determinadas preparações de desogestrel e drospirenona, também suprimem ovulação de maneira consistente. Não se deve ensinar uma janela universal de atraso: ela varia por princípio ativo."
+        ],
+        [
+          "3",
+          "Uso real, vantagens, limitações e segurança"
+        ],
+        [
+          "p",
+          "É opção importante para quem tem contraindicação ao estrogênio e para muitos cenários de lactação, considerando elegibilidade e momento pós-parto. Explicar horários, atrasos, vômitos e diarreia prolongada, além de possível sangramento irregular ou amenorreia. Interações com indutores enzimáticos podem comprometer eficácia; avaliar medicações concomitantes e método alternativo."
+        ]
+      ]
+    ],
+    [
+      "dmpa",
+      0,
+      [
+        [
+          "2",
+          "9. Injetável trimestral de medroxiprogesterona (DMPA)"
+        ],
+        [
+          "3",
+          "O que é e como funciona"
+        ],
+        [
+          "p",
+          "O DMPA é um progestagênio de depósito que inibe a ovulação por várias semanas; formulações intramusculares e subcutâneas têm esquemas próprios, geralmente com reaplicação aproximadamente a cada 13 semanas. Ao contrário de um DIU ou implante, atrasos na aplicação podem abrir uma janela de falha."
+        ],
+        [
+          "3",
+          "Uso real, vantagens, limitações e segurança"
+        ],
+        [
+          "p",
+          "Durante os primeiros meses é comum sangramento irregular, e posteriormente amenorreia pode ocorrer. Discutir possível aumento de peso, redução reversível da densidade mineral óssea e retorno da fertilidade mais lento após a última dose, que não significa esterilidade. Avaliar individualmente fatores de risco para osteoporose e aconselhar sobre proteção adicional em atrasos, segundo protocolo."
+        ]
+      ]
+    ],
+    [
+      "implante",
+      0,
+      [
+        [
+          "2",
+          "10. Implante subdérmico de etonogestrel"
+        ],
+        [
+          "3",
+          "O que é e como funciona"
+        ],
+        [
+          "p",
+          "É uma pequena haste flexível, colocada no tecido subdérmico do braço por profissional capacitado, que libera progestagênio continuamente. Atua principalmente suprimindo a ovulação e espessando o muco cervical; tem eficácia muito alta e não depende de adesão diária. O prazo aprovado de uso depende da apresentação e da regulamentação aplicável."
+        ],
+        [
+          "3",
+          "Uso real, vantagens, limitações e segurança"
+        ],
+        [
+          "p",
+          "Antes da inserção, confirmar razoável certeza de ausência de gravidez e verificar interações com indutores enzimáticos. Explicar e mostrar a localização da haste, o procedimento de inserção e retirada e sinais de alerta como dor intensa, parestesia, infecção ou haste não palpável. Sangramento imprevisível é a principal causa de insatisfação: pode haver spotting frequente, amenorreia ou sangramento prolongado. Aconselhamento antecipado e investigação de causas concorrentes reduzem retiradas desnecessárias."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Ponto visual para revisão editorial: 10. Implante subdérmico de etonogestrel</strong>Inserir fotografia real do dispositivo, com identificação das partes e fonte autorizada. Evitar substituir por imagem que apenas reproduza o texto.</div>"
+        ]
+      ]
+    ],
+    [
+      "diu-cobre",
+      0,
+      [
+        [
+          "2",
+          "11. DIU de cobre: dispositivo, ação e acompanhamento"
+        ],
+        [
+          "3",
+          "O que é e como funciona"
+        ],
+        [
+          "p",
+          "O DIU de cobre é um pequeno dispositivo, geralmente em formato de T, inserido dentro da cavidade uterina. O cobre desencadeia um ambiente local desfavorável à função dos espermatozoides e à fecundação; o mecanismo contraceptivo principal ocorre antes da fertilização. É não hormonal, de longa duração e pode ser utilizado como contracepção de emergência em situações elegíveis."
+        ],
+        [
+          "3",
+          "Uso real, vantagens, limitações e segurança"
+        ],
+        [
+          "p",
+          "O profissional confirma elegibilidade, avalia possibilidade de gravidez, sintomas de cervicite e situação de IST, explica o procedimento e oferece analgesia apropriada. Após a inserção podem ocorrer cólicas e sangramento, habitualmente autolimitados. Pode intensificar fluxo menstrual e dismenorreia, especialmente nos primeiros meses, o que pesa na decisão de quem já tem anemia ou menorragia. Dor pélvica persistente, febre, sangramento intenso, suspeita de expulsão e teste de gravidez positivo requerem avaliação."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Ponto visual para revisão editorial: 11. DIU de cobre: dispositivo, ação e acompanhamento</strong>Inserir fotografia real do dispositivo, com identificação das partes e fonte autorizada. Evitar substituir por imagem que apenas reproduza o texto.</div>"
+        ]
+      ]
+    ],
+    [
+      "siu-lng",
+      0,
+      [
+        [
+          "2",
+          "12. SIU com levonorgestrel: diferenças em relação ao DIU de cobre"
+        ],
+        [
+          "3",
+          "O que é e como funciona"
+        ],
+        [
+          "p",
+          "O sistema intrauterino com levonorgestrel é um dispositivo que libera progestagênio localmente no útero. Espessa o muco cervical, altera o endométrio e dificulta a passagem espermática; a maioria das usuárias continua ovulando. Existem sistemas com diferentes quantidades de hormônio e períodos aprovados de eficácia, portanto não atribua a todos a mesma duração."
+        ],
+        [
+          "3",
+          "Uso real, vantagens, limitações e segurança"
+        ],
+        [
+          "p",
+          "Costuma reduzir sangramento e cólicas, sendo especialmente interessante em pacientes que também precisam tratar sangramento menstrual aumentado, conforme indicação. Nos primeiros meses pode ocorrer spotting irregular e, depois, redução importante do fluxo ou amenorreia. É imprescindível discutir inserção, desconforto, raros eventos de perfuração e expulsão, sinais de infecção, retorno rápido da fertilidade após retirada e diferença entre efeito local predominante e ausência absoluta de efeitos sistêmicos."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Ponto visual para revisão editorial: 12. SIU com levonorgestrel: diferenças em relação ao DIU de cobre</strong>Inserir fotografia real do dispositivo, com identificação das partes e fonte autorizada. Evitar substituir por imagem que apenas reproduza o texto.</div>"
+        ]
+      ]
+    ],
+    [
+      "preservativos",
+      0,
+      [
+        [
+          "2",
+          "13. Preservativos externo e interno"
+        ],
+        [
+          "3",
+          "O que é e como funciona"
+        ],
+        [
+          "p",
+          "O preservativo externo recobre o pênis e o interno reveste o canal vaginal, criando barreira física à passagem de espermatozoides. São os métodos contraceptivos que também contribuem diretamente para reduzir transmissão de muitas IST, especialmente quando usados correta e consistentemente. O uso típico é menos eficaz para evitar gravidez do que o uso perfeito porque ruptura, escape, colocação tardia e uso inconsistente são frequentes."
+        ],
+        [
+          "3",
+          "Uso real, vantagens, limitações e segurança"
+        ],
+        [
+          "p",
+          "Orientar a verificar validade e integridade da embalagem; colocar antes do contato genital com risco, usar lubrificante compatível com o material, evitar dois preservativos simultaneamente e descartar após cada relação. A demonstração com modelos anatômicos costuma ser muito mais didática do que uma tabela isolada. Preservativo interno e externo não devem ser utilizados um dentro do outro."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Ponto visual para revisão editorial: 13. Preservativos externo e interno</strong>Inserir fotografia real do dispositivo, com identificação das partes e fonte autorizada. Evitar substituir por imagem que apenas reproduza o texto.</div>"
+        ]
+      ]
+    ],
+    [
+      "barreira",
+      0,
+      [
+        [
+          "2",
+          "14. Diafragma e espermicidas"
+        ],
+        [
+          "3",
+          "O que é e como funciona"
+        ],
+        [
+          "p",
+          "O diafragma é uma cúpula flexível colocada na vagina para cobrir o colo uterino, geralmente utilizado com espermicida conforme o produto e a recomendação local. O espermicida reduz a motilidade ou viabilidade dos espermatozoides; quando usado isoladamente, apresenta maior taxa de falha que LARC e métodos hormonais."
+        ],
+        [
+          "3",
+          "Uso real, vantagens, limitações e segurança"
+        ],
+        [
+          "p",
+          "Exige aprendizado da colocação, planejamento antes da relação e respeito ao tempo mínimo de permanência após o sexo e ao limite máximo previsto para o produto. Espermicidas com nonoxinol-9 podem causar irritação e não devem ser vistos como proteção contra HIV. Disponibilidade e orientações práticas variam conforme o mercado brasileiro."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Ponto visual para revisão editorial: 14. Diafragma e espermicidas</strong>Inserir fotografia real do dispositivo, com identificação das partes e fonte autorizada. Evitar substituir por imagem que apenas reproduza o texto.</div>"
+        ]
+      ]
+    ],
+    [
+      "comportamentais",
+      0,
+      [
+        [
+          "2",
+          "15. Métodos comportamentais e reconhecimento da fertilidade"
+        ],
+        [
+          "3",
+          "O que é e como funciona"
+        ],
+        [
+          "p",
+          "Métodos de reconhecimento da fertilidade usam registros de ciclo, muco cervical e/ou temperatura basal para identificar dias de maior probabilidade de concepção. A interpretação depende de aprendizado, regularidade dos registros e adaptação a ciclos irregulares, puerpério, lactação e perimenopausa. Aplicativos de calendário sem validação não equivalem automaticamente a métodos de reconhecimento da fertilidade bem ensinados."
+        ],
+        [
+          "3",
+          "Uso real, vantagens, limitações e segurança"
+        ],
+        [
+          "p",
+          "No período fértil é preciso evitar relações vaginais sem proteção ou usar método de barreira, de acordo com o protocolo escolhido. Coito interrompido depende de retirada completa antes da ejaculação e tem falhas de uso frequentes; não protege contra IST. A amenorreia lactacional (LAM) tem eficácia contraceptiva apenas se forem atendidos simultaneamente os critérios: até seis meses pós-parto, ausência de retorno da menstruação e amamentação exclusiva ou quase exclusiva."
+        ]
+      ]
+    ],
+    [
+      "definitivos",
+      0,
+      [
+        [
+          "2",
+          "16. Métodos definitivos: laqueadura e vasectomia"
+        ],
+        [
+          "3",
+          "O que é e como funciona"
+        ],
+        [
+          "p",
+          "A laqueadura tubária impede o encontro entre óvulo e espermatozoides por oclusão ou remoção das tubas. A vasectomia interrompe o trânsito de espermatozoides pelos canais deferentes. Ambos exigem aconselhamento sobre caráter pretendidamente permanente, alternativas reversíveis, riscos cirúrgicos e possibilidade de arrependimento."
+        ],
+        [
+          "3",
+          "Uso real, vantagens, limitações e segurança"
+        ],
+        [
+          "p",
+          "Vasectomia não produz esterilidade imediata: até a confirmação pelo espermograma pós-procedimento deve ser mantido outro método. Laqueadura não exige retirada de útero ou ovários, e normalmente não altera diretamente a produção hormonal ovariana. No Brasil, observar a legislação vigente sobre idade, número de filhos, consentimento e prazo mínimo entre manifestação da vontade e procedimento."
+        ]
+      ]
+    ],
+    [
+      "emergencia",
+      0,
+      [
+        [
+          "2",
+          "7. Contracepção de emergência"
+        ],
+        [
+          "p",
+          "Indica-se após relação desprotegida, falha de método ou violência sexual. Quanto mais cedo, melhor. A contracepção de emergência <strong>não interrompe uma gestação já implantada</strong>."
+        ],
+        [
+          "t",
+          [
+            "Opção",
+            "Janela",
+            "Observação"
+          ],
+          [
+            [
+              "DIU de cobre",
+              "Até 120 h após relação desprotegida",
+              "Mais eficaz; mantém contracepção contínua."
+            ],
+            [
+              "Levonorgestrel 1,5 mg",
+              "Idealmente o mais cedo possível; pode ser usado até 120 h",
+              "Eficácia cai com o tempo e pode ser menor em obesidade."
+            ],
+            [
+              "Ulipristal 30 mg",
+              "Até 120 h",
+              "Mais eficaz que LNG próximo do limite da janela; interage com início imediato de progestagênio."
+            ],
+            [
+              "Yuzpe",
+              "Alternativa",
+              "Menos eficaz e mais nauseante; usar quando opções preferenciais não estão disponíveis."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Após <strong>levonorgestrel</strong>, método hormonal regular pode ser iniciado imediatamente. Após <strong>ulipristal</strong>, iniciar progestagênio imediatamente pode reduzir o efeito antiprogestagênico do UPA; por isso, deve-se seguir o intervalo recomendado pela diretriz e usar barreira nesse período."
+        ]
+      ]
+    ],
+    [
+      "inicio",
+      0,
+      [
+        [
+          "2",
+          "8. Início rápido, troca e razoável certeza de não gravidez"
+        ],
+        [
+          "p",
+          "Esperar a próxima menstruação muitas vezes cria uma janela desnecessária de risco. Quando há <strong>razoável certeza de ausência de gestação</strong>, a maioria dos métodos pode ser iniciada no mesmo dia. Teste negativo isolado não exclui uma gestação muito precoce após exposição recente."
+        ],
+        [
+          "p",
+          "A necessidade de barreira após início depende do método e do momento do ciclo. DIU de cobre é imediatamente contraceptivo. Para muitos métodos hormonais iniciados fora da janela inicial do ciclo, orienta-se barreira por 7 dias; algumas pílulas de progestagênio têm recomendações próprias."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Quick start</strong>O princípio é reduzir barreiras sem perder segurança: iniciar quando possível, orientar backup quando necessário e programar teste de gravidez de controle se houve possibilidade residual de concepção.</div>"
+        ],
+        [
+          "3",
+          "Início rápido e proteção adicional: transforme a tabela em decisão"
+        ],
+        [
+          "p",
+          "Quando for razoavelmente certo que não há gestação, muitos métodos podem ser iniciados no mesmo dia. O tempo de proteção adicional varia: DIU de cobre não precisa de método de apoio; DIU com levonorgestrel, implante, injetável e método combinado podem exigir sete dias conforme o momento do ciclo; pílulas de progestagênio têm janela própria, de dois ou sete dias conforme a formulação. Não copiar a regra de uma pílula para outra."
+        ],
+        [
+          "p",
+          "Na dúvida sobre gravidez, alguns métodos podem ser iniciados com teste de seguimento em 2–4 semanas, desde que a avaliação clínica e a diretriz permitam. Registrar data de início, método de apoio, contracepção de emergência quando pertinente e o que fazer se houver esquecimento. Fonte: <a href=\"https://www.cdc.gov/contraception/hcp/usspr/when-contraceptive-methods.html\">CDC U.S. SPR 2024</a>."
+        ]
+      ]
+    ],
+    [
+      "puerperio",
+      0,
+      [
+        [
+          "2",
+          "9. Puerpério, lactação e pós-aborto"
+        ],
+        [
+          "p",
+          "No puerpério, o raciocínio combina retorno da fertilidade, risco trombótico e amamentação. Combinados são inadequados nas primeiras semanas, especialmente em lactantes. Progestagênios e LARC têm papel central, mas a classificação varia com o tempo pós-parto e o método específico."
+        ],
+        [
+          "p",
+          "DIU pode ser inserido <strong>imediatamente após a placenta</strong> em cenários apropriados ou mais tarde; entre 48 horas e 4 semanas há maior restrição em diretrizes tradicionais. Inserção pós-parto imediata aumenta risco de expulsão, mas melhora acesso."
+        ],
+        [
+          "p",
+          "Após aborto, ovulação pode retornar rapidamente. Métodos hormonais e LARC podem, em geral, ser iniciados imediatamente se clinicamente apropriado e sem infecção uterina ativa."
+        ]
+      ]
+    ],
+    [
+      "situacoes",
+      0,
+      [
+        [
+          "2",
+          "10. Situações especiais"
+        ],
+        [
+          "3",
+          "Adolescência"
+        ],
+        [
+          "p",
+          "LARC são opções de primeira linha e não exigem paridade prévia. Deve-se preservar confidencialidade dentro dos limites legais e sempre abordar IST e violência."
+        ],
+        [
+          "3",
+          "Obesidade"
+        ],
+        [
+          "p",
+          "Obesidade aumenta risco basal de TEV e pode alterar risco-benefício dos combinados. LARC mantém alta eficácia. Contracepção de emergência oral pode ter eficácia reduzida com maior peso/IMC; DIU de cobre não perde eficácia por esse mecanismo."
+        ],
+        [
+          "3",
+          "Enxaqueca"
+        ],
+        [
+          "p",
+          "Com aura, evitar estrogênio por risco de AVC isquêmico. Sem aura, a análise depende de outros fatores vasculares."
+        ],
+        [
+          "3",
+          "Epilepsia e indutores enzimáticos"
+        ],
+        [
+          "p",
+          "Carbamazepina, fenitoína, fenobarbital, primidona e outros indutores podem reduzir eficácia de alguns hormonais sistêmicos. DIU não sofre essa interação."
+        ],
+        [
+          "3",
+          "Câncer de mama"
+        ],
+        [
+          "p",
+          "Doença atual contraindica métodos hormonais. DIU de cobre é método reversível altamente eficaz não hormonal."
+        ],
+        [
+          "3",
+          "Endometriose/adenomiose/sangramento intenso"
+        ],
+        [
+          "p",
+          "SIU-LNG e supressão hormonal podem oferecer benefício terapêutico além da contracepção."
+        ]
+      ]
+    ],
+    [
+      "esterilizacao",
+      0,
+      [
+        [
+          "2",
+          "11. Esterilização voluntária no Brasil"
+        ],
+        [
+          "p",
+          "A Lei 14.443/2022 modificou a Lei 9.263/1996. Para esterilização voluntária, basta ter <strong>21 anos ou mais</strong> ou <strong>pelo menos dois filhos vivos</strong>. Não é necessária autorização do cônjuge. Deve existir manifestação expressa da vontade e intervalo mínimo de 60 dias, período destinado a aconselhamento e possibilidade de reconsideração."
+        ],
+        [
+          "p",
+          "A lei também permitiu que a esterilização feminina seja realizada no período do parto quando observados os requisitos legais e as condições médico-assistenciais. Isso não deve ser descrito como uma exceção reservada apenas a “indicação médica grave”."
+        ],
+        [
+          "3",
+          "Vasectomia"
+        ],
+        [
+          "p",
+          "É menos invasiva que laqueadura, mas não produz azoospermia imediata. É necessário método contraceptivo adicional até confirmação pós-procedimento conforme protocolo do serviço."
+        ],
+        [
+          "3",
+          "Laqueadura"
+        ],
+        [
+          "p",
+          "É considerada permanente. Toda decisão deve incluir possibilidade de arrependimento, alternativas reversíveis altamente eficazes e informação de que reversão não é garantida."
+        ]
+      ]
+    ],
+    [
+      "falhas",
+      0,
+      [
+        [
+          "2",
+          "12. Falhas, sangramento, efeitos adversos e interações"
+        ],
+        [
+          "3",
+          "Sangramento irregular"
+        ],
+        [
+          "p",
+          "É especialmente comum com implante, POP, DMPA e no início do SIU-LNG. Antes de atribuir tudo ao método, considerar gravidez, cervicite/IST, doença estrutural e outras causas conforme idade e sintomas."
+        ],
+        [
+          "3",
+          "Dor com DIU"
+        ],
+        [
+          "p",
+          "Cólica inicial é comum, mas dor intensa persistente, febre, sangramento importante, atraso menstrual ou fios ausentes exigem avaliação de gravidez, expulsão, malposição, perfuração e infecção."
+        ],
+        [
+          "3",
+          "Interações"
+        ],
+        [
+          "p",
+          "Indutores de CYP3A podem reduzir concentrações de alguns contraceptivos hormonais sistêmicos. Rifampicina/rifabutina e certos anticonvulsivantes são exemplos clássicos. DIUs não perdem eficácia por indução enzimática."
+        ],
+        [
+          "3",
+          "ACHES"
+        ],
+        [
+          "p",
+          "Dor abdominal intensa, dor torácica/dispneia, cefaleia neurológica nova, alterações visuais e dor/edema unilateral de perna são sinais de alerta em usuárias de combinados, mas o seguimento deve ser guiado pelo quadro clínico e não por mnemônicos isolados."
+        ],
+        [
+          "3",
+          "Como corrigir a repetição genérica"
+        ],
+        [
+          "p",
+          "O aconselhamento deve responder ao método específico: qual dose foi atrasada, quantas horas se passaram, em que parte do ciclo, se é necessária barreira e se há indicação de emergência. Em DIU, orientar sinais de expulsão/perfuração e retorno; no implante, confirmar palpabilidade e medicamentos indutores enzimáticos; no injetável, calcular atraso e risco de gravidez. A taxa de eficácia não substitui instruções de uso."
+        ]
+      ]
+    ],
+    [
+      "decisoes-avancadas-contracepcao-2026",
+      0,
+      [
+        [
+          "2",
+          "15. Decisões integradas: emergência, início, DIU e segurança"
+        ],
+        [
+          "p",
+          "Escolher contracepção exige responder a quatro perguntas na ordem certa: existe exposição com possibilidade de gestação? Qual método é seguro com as comorbidades presentes? Quando a proteção começa? Qual acompanhamento ou mudança de plano será necessária? A elegibilidade da OMS (MEC, 6ª edição, 2025) e as recomendações de prática (SPR, 4ª edição, 2025) respondem a perguntas diferentes. O MEC classifica segurança clínica; o SPR explica início, continuidade e situações de uso. A comparação a seguir ensina a aplicar os dois, sem confundir disponibilidade de produtos nos Estados Unidos com registro e oferta no Brasil."
+        ],
+        [
+          "3",
+          "15.1 Ulipristal versus levonorgestrel: o anticoncepcional do dia seguinte muda o início do método regular"
+        ],
+        [
+          "p",
+          "Paciente de 22 anos relata relação sem proteção há quatro dias e quer começar pílula combinada hoje. Após avaliar risco de gestação já existente, elegibilidade e disponibilidade, a decisão sobre início depende da estratégia de contracepção de emergência. <strong>Levonorgestrel de emergência</strong> permite iniciar ou retomar método hormonal imediatamente, com método de apoio conforme a apresentação, em geral preservativo por sete dias. <strong>Ulipristal</strong> atua como modulador do receptor de progesterona e pode ter a ação comprometida quando um progestagênio é iniciado muito cedo: a recomendação CDC 2024 é aguardar <strong>ao menos cinco dias</strong> para iniciar o método hormonal após ulipristal; usar proteção de barreira durante a espera e por sete dias após iniciar o método (ou até a menstruação, conforme orientado)."
+        ],
+        [
+          "p",
+          "O DIU de cobre inserido até <strong>120 horas</strong> após a relação desprotegida, quando não há contraindicação, é uma das opções de emergência mais eficazes e pode permanecer como contraceptivo regular. Se for possível estimar a ovulação com confiabilidade, recomendações da OMS/CDC admitem inserção também em cenário temporal específico além de cinco dias da relação, desde que não ultrapasse cinco dias após a ovulação; isso exige avaliação especializada, nunca cálculo por aplicativo isolado. Contracepção de emergência oral não trata nem interrompe gestação implantada e não protege relações futuras sem método contínuo."
+        ],
+        [
+          "t",
+          [
+            "Escolha de emergência",
+            "Quando iniciar método hormonal regular?",
+            "Orientação de segurança"
+          ],
+          [
+            [
+              "Levonorgestrel oral",
+              "Imediatamente, se clinicamente elegível",
+              "Proteção adicional conforme método, em geral por sete dias; teste de gravidez se não houver sangramento em até três semanas."
+            ],
+            [
+              "Ulipristal oral",
+              "Preferencialmente <strong>não antes de cinco dias</strong> após o comprimido",
+              "Preservativo/abstinência na espera e por sete dias após o método hormonal; teste de gravidez se não houver sangramento em três semanas. Exceções requerem avaliação do risco de perder seguimento."
+            ],
+            [
+              "DIU de cobre como emergência",
+              "Não depende de iniciar hormônio",
+              "Exige avaliação de elegibilidade para inserção, exclusão de gravidez prévia e ausência de infecção cervical ativa impeditiva."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "15.2 Um DIU na mesma consulta com teste para IST: quando é seguro?"
+        ],
+        [
+          "p",
+          "Paciente de 24 anos, nulípara, deseja DIU de cobre; tem novo parceiro e ainda não fez rastreio recente para clamídia e gonococo. Na ausência de sintomas, cervicite purulenta ou infecção conhecida, o exame para IST pode ser coletado <strong>no mesmo dia da inserção</strong>, sem atrasar automaticamente o procedimento (CDC U.S. SPR 2024). Adiar todo DIU até receber resultado de testes em pessoa assintomática pode criar risco evitável de gravidez e não demonstrou melhoria relevante de segurança em estudos avaliados pela diretriz."
+        ],
+        [
+          "p",
+          "Agora mude um dado: no exame especular há secreção mucopurulenta cervical ou há diagnóstico atual de gonorreia/clamídia. Nesse cenário, <strong>não iniciar novo DIU</strong> enquanto a infecção ativa não for tratada; avaliar alternativa contraceptiva temporária, tratamento de IST e parceiros conforme protocolo e retorno. Isso não significa retirar automaticamente um DIU que já está colocado em qualquer quadro de infecção: a continuação é outra pergunta do MEC, decidida individualmente. A paciente continua precisando de preservativos para prevenção de IST, pois o DIU não confere essa proteção."
+        ],
+        [
+          "3",
+          "15.3 Enxaqueca com aura e desejo de amenorreia"
+        ],
+        [
+          "p",
+          "Paciente de 29 anos refere escotomas cintilantes antes de cefaleias e pede anticoncepcional contínuo para não menstruar. A presença de aura é relevante pelo risco vascular com <strong>métodos combinados contendo estrogênio</strong>; não se deve prescrever pílula, adesivo ou anel combinado apenas porque a dose hormonal é baixa. O correto é discutir opções sem estrogênio: SIU-LNG, implante, pílula apenas de progestagênio ou outros métodos segundo elegibilidade, padrão de sangramento esperado e preferência. DIU de cobre é alternativa não hormonal, mas pode aumentar fluxo e dismenorreia, tornando-se menos alinhado ao desejo de amenorreia."
+        ],
+        [
+          "p",
+          "É importante explicar expectativas: SIU-LNG pode reduzir substancialmente o sangramento, mas a ausência de menstruação não é garantida imediatamente; implante e pílulas apenas de progestagênio podem gerar sangramento irregular. Se houver hipertensão importante, trombose, doença hepática ou câncer de mama, a elegibilidade de cada progestagênio ainda deve ser reavaliada. Não confunda “não tem estrogênio” com “é seguro em toda condição”."
+        ],
+        [
+          "3",
+          "15.4 Pós-parto imediato: momento do DIU e risco de expulsão"
+        ],
+        [
+          "p",
+          "Puérpera lactante após parto vaginal, interessada em DIU, tem alta programada em 24 horas. A inserção intrauterina pós-placentária ou nas primeiras 48 horas pode ser considerada em serviços capacitados, com aconselhamento sobre <strong>maior risco de expulsão</strong> em comparação à colocação intervalar. Entre 48 horas e menos de quatro semanas pós-parto, as categorias de elegibilidade são mais restritivas em diretrizes internacionais e a conduta requer conferência do método e contexto local; a partir de quatro semanas, em geral a inserção torna-se mais favorável. <strong>Sepse puerperal é contraindicação à inserção do DIU</strong>. Informar sinais de expulsão, infecção ou dor intensa e a necessidade de método de apoio quando indicado."
+        ],
+        [
+          "p",
+          "A lactação e o pós-parto recente também aumentam relevância do risco tromboembólico para métodos contendo estrogênio. A OMS MEC 2025 classifica contraceptivos combinados como categoria 4 em lactantes com menos de seis semanas, e recomenda avaliação temporal criteriosa depois disso. Progestagênios isolados e LARC podem ser opções, mas não se deve aplicar a mesma categoria a todas as formulações ou todos os momentos puerperais."
+        ],
+        [
+          "3",
+          "15.5 Pedido de laqueadura durante o pré-natal"
+        ],
+        [
+          "p",
+          "Gestante de 27 anos, sem filhos vivos, solicita esterilização voluntária durante o parto. Na legislação brasileira vigente após a Lei 14.443/2022, a idade mínima é <strong>21 anos com capacidade civil plena OU pelo menos dois filhos vivos</strong>, não ambos. Não é necessária autorização do cônjuge. Há necessidade de manifestação da vontade e de intervalo de <strong>60 dias</strong> entre a solicitação formal e o procedimento, com aconselhamento. A esterilização durante o parto pode ser realizada quando respeitados esse prazo e as condições médicas, sem exigir cesárea apenas para fazer laqueadura."
+        ],
+        [
+          "p",
+          "O aconselhamento deve abordar reversibilidade limitada, alternativas de longa ação, eficácia comparativa e risco cirúrgico; não deve ser coercitivo nem converter o prazo legal em obstáculo administrativo indevido. Se a solicitação ocorreu após o prazo permitido para aquele parto, organizar opção reversível imediata e planejamento do procedimento posterior. O documento de referência não exige consentimento do companheiro; apostilas antigas que solicitam assinatura de ambos os cônjuges estão desatualizadas."
+        ],
+        [
+          "3",
+          "15.6 Método regular esquecido ou iniciando no meio do ciclo"
+        ],
+        [
+          "p",
+          "Paciente de 34 anos interrompeu a pílula há três semanas, teve relação desprotegida há quatro dias e apresenta teste urinário de gravidez negativo hoje. O resultado negativo não descarta concepção extremamente recente. Investigar o momento da última menstruação, exposições e critérios de razoável certeza de não gestação; oferecer contracepção de emergência quando indicada e discutir início rápido de método elegível com aconselhamento sobre teste de gravidez de seguimento, frequentemente em duas a quatro semanas conforme cenário. Não transformar o teste negativo em garantia de ausência absoluta de gestação."
+        ],
+        [
+          "p",
+          "Também não usar uma única regra de “esqueceu uma pílula” para todas as apresentações: pílula combinada, pílula de noretisterona/norgestrel, desogestrel e drospirenona podem ter margens distintas de atraso e exigem orientação pelo produto e diretriz de prática. Escolher método que dependa menos de adesão pode atender melhor uma paciente com esquecimentos recorrentes, sem impor LARC contra a vontade dela."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Autoteste final: quatro perguntas antes de prescrever</strong>"
+        ],
+        [
+          "p",
+          "1. Ulipristal foi usado ontem: posso começar progestagênio agora sem discutir interação? <strong>Não, a orientação habitual é aguardar cinco dias.</strong> 2. DIU pode ser inserido em pessoa assintomática no dia da coleta para IST? <strong>Sim, se não houver infecção conhecida ou cervicite ativa.</strong> 3. Lactante com três semanas pós-parto e enxaqueca com aura deve receber anel combinado? <strong>Não, há restrições independentes ao estrogênio.</strong> 4. Pessoa de 23 anos com capacidade civil solicita esterilização e não tem filhos: é exigido consentimento do cônjuge? <strong>Não, mas devem ser observados requisitos de decisão informada e prazo legal.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Fontes para conferência:</strong> <a href=\"https://www.who.int/publications/i/item/9789240115583\" target=\"_blank\" rel=\"noopener noreferrer\">OMS, MEC 6ª ed., 2025</a>; <a href=\"https://www.who.int/publications/i/item/9789240115606\" target=\"_blank\" rel=\"noopener noreferrer\">OMS, SPR 4ª ed., 2025</a>; <a href=\"https://www.cdc.gov/contraception/hcp/usspr/emergency-contraception.html\" target=\"_blank\" rel=\"noopener noreferrer\">CDC, contracepção de emergência, 2024</a>; <a href=\"https://www.cdc.gov/contraception/hcp/usspr/intrauterine-contraception.html\" target=\"_blank\" rel=\"noopener noreferrer\">CDC, DIU e IST, 2024</a>; <a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2023/sei_ms-0033574409-nota-tecnica-laqueadura-vasectomia.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde, aplicação da Lei 14.443/2022</a>."
+        ]
+      ]
+    ],
+    [
+      "casos",
+      0,
+      [
+        [
+          "2",
+          "13. Casos clínicos integradores"
+        ],
+        [
+          "3",
+          "Caso 1 — enxaqueca com aura"
+        ],
+        [
+          "p",
+          "Mulher de 27 anos pede pílula combinada e relata escotomas cintilantes antes das crises. A presença de aura muda a escolha: evitar estrogênio e oferecer progestagênio isolado ou método não hormonal, conforme preferência."
+        ],
+        [
+          "3",
+          "Caso 2 — puérpera lactante"
+        ],
+        [
+          "p",
+          "Puérpera de 20 dias, amamentando, deseja método de alta eficácia. Combinado não é boa escolha. Implante e DIU entram no aconselhamento conforme momento pós-parto, elegibilidade e disponibilidade."
+        ],
+        [
+          "3",
+          "Caso 3 — relação desprotegida há 96 horas"
+        ],
+        [
+          "p",
+          "DIU de cobre permanece opção de maior eficácia e oferece contracepção contínua. AE oral ainda pode ser considerada dentro da janela, lembrando diferenças entre LNG e ulipristal."
+        ],
+        [
+          "3",
+          "Caso 4 — sangramento no implante"
+        ],
+        [
+          "p",
+          "Adolescente com spotting frequente três meses após implante, sem dor ou risco gestacional importante. Primeiro, explicar que alteração de sangramento é esperada; depois avaliar sinais de outra causa e discutir manejo se o incômodo for relevante."
+        ],
+        [
+          "3",
+          "Caso 5 — esterilização no parto"
+        ],
+        [
+          "p",
+          "Gestante de 34 anos, três filhos, solicita laqueadura com antecedência adequada durante pré-natal. Não precisa de anuência do cônjuge. O planejamento deve ocorrer ainda no pré-natal para cumprir o intervalo legal e organizar o serviço."
+        ]
+      ]
+    ],
+    [
+      "revisao",
+      0,
+      [
+        [
+          "2",
+          "14. Revisão de alto rendimento"
+        ],
+        [
+          "u",
+          [
+            "LARC: eficácia alta, reversíveis, adequados também para adolescentes e nulíparas.",
+            "DIU de cobre age antes da fecundação e não é abortivo.",
+            "Uso típico de injetável é menos eficaz que a tabela original sugeria.",
+            "DMPA é trimestral; enantato de noretisterona tem esquema diferente.",
+            "Migraine com aura + estrogênio = contraindicação importante.",
+            "Hipertensão controlada não torna combinado automaticamente seguro.",
+            "Contracepção de emergência não interrompe gravidez implantada.",
+            "Após UPA, cuidado com início imediato de progestagênio.",
+            "Implante de etonogestrel está em expansão no SUS desde 2025.",
+            "Esterilização: 21 anos ou 2 filhos vivos; sem consentimento conjugal; intervalo mínimo de 60 dias."
+          ]
+        ],
+        [
+          "u",
+          [
+            "<div class=\"fixation-question\"><strong>1.</strong> Qual método de emergência é mais eficaz até 120 horas?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden><strong>DIU de cobre</strong>, se elegível e disponível.</div>",
+            "<div class=\"fixation-question\"><strong>2.</strong> Enxaqueca com aura permite pílula combinada?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden><strong>Não.</strong> O estrogênio é contraindicado pelo aumento de risco arterial.</div>",
+            "<div class=\"fixation-question\"><strong>3.</strong> DIU de cobre funciona principalmente impedindo nidação?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden><strong>Não.</strong> O efeito predominante é pré-fecundação, por ação espermicida/inflamatória local.</div>",
+            "<div class=\"fixation-question\"><strong>4.</strong> Mulher de 22 anos sem filhos precisa autorização do cônjuge para laqueadura?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden><strong>Não.</strong> A autorização conjugal deixou de ser exigida; os demais critérios legais e o aconselhamento permanecem.</div>"
+          ]
+        ]
+      ]
+    ],
+    [
+      "editorial-depth-planejamento-reprodutivo-contracepcao",
+      0,
+      [
+        [
+          "2",
+          "Aprofundamento: mecanismos, diferenciais e conduta"
+        ],
+        [
+          "3",
+          "Métodos combinados: segurança antes da prescrição"
+        ],
+        [
+          "p",
+          "Pílula, adesivo, anel e injetáveis combinados não devem ser apresentados como equivalentes em adesão. Avaliar hipertensão, tabagismo com idade, tromboembolismo e enxaqueca com aura pelo MEC atualizado. Descrever uso típico, manejo de esquecimentos específico do produto e retorno da fertilidade."
+        ],
+        [
+          "3",
+          "DIU de cobre, SIU-LNG e implante"
+        ],
+        [
+          "p",
+          "DIU de cobre atua predominantemente antes da fecundação e pode intensificar fluxo; SIU-LNG induz atrofia endometrial e reduz sangramento; implante suprime ovulação e pode gerar escape. Diferenciar sangramento esperado de dor, infecção, expulsão e gravidez. Revisar sinais de alerta e contraindicações antes da inserção."
+        ],
+        [
+          "3",
+          "Emergência, puerpério e esterilização"
+        ],
+        [
+          "p",
+          "Diferenciar levonorgestrel, ulipristal e DIU de cobre por tempo, eficácia e reinício de hormonal. Após parto, elegibilidade varia com lactação e risco trombótico. Esterilização exige decisão autônoma, critérios legais brasileiros e aconselhamento sem coerção."
+        ],
+        [
+          "p",
+          "<strong>Revisão:</strong> aplicar protocolos FEBRASGO, Ministério da Saúde e diretrizes específicas atuais ao cenário clínico."
+        ]
+      ]
+    ],
+    [
+      "anticoncepcionais-hormonais-combinados-risco-tromboembolico",
+      0,
+      [
+        [
+          "2",
+          "Métodos Hormonais Combinados e Trombose: Fisiopatologia, Gerações de Progestagênios e Risco Vascular"
+        ],
+        [
+          "3",
+          "Fisiopatologia do Efeito Pró-Trombótico do Estrogênio"
+        ],
+        [
+          "p",
+          "O componente estrogênico dos contraceptivos hormonais combinados (representado pelo <strong>etinilestradiol</strong> na vasta maioria das pílulas, anéis e adesivos, ou pelo <strong>valerato de estradiol e 17-beta-estradiol</strong> em formulações mais recentes) induz uma profunda reprogramação do perfil hemostático hepático. Durante a primeira passagem hepática, o etinilestradiol estimula a transcrição gênica de múltiplos fatores pró-coagulantes, aumentando significativamente os níveis plasmáticos de <strong>fibrinogênio (fator I), protrombina (fator II), fator VII, fator VIII e fator X</strong>."
+        ],
+        [
+          "p",
+          "Simultaneamente, o estrogênio reduz a concentração e a atividade biológica de anticoagulantes naturais endógenos vitais, promovendo a <strong>queda da proteína S livre e da antitrombina III</strong>, além de induzir um estado adquirido de <strong>Resistência à Proteína C Ativada (APCr)</strong>. O resultado hemostático final é a perda do equilíbrio dinâmico e o deslocamento para um estado pró-trombótico sistêmico."
+        ],
+        [
+          "3",
+          "O Papel Crítico das Gerações de Progestagênios no Risco Tromboembólico Relativo"
+        ],
+        [
+          "p",
+          "Embora o estrogênio seja o motor biológico primário da trombofilia induzida por contraceptivos, o tipo de progestagênio associado modula intensamente esse risco através de sua atividade androgênica intrínseca:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Progestagênios de 2ª Geração (Levonorgestrel):</strong>\n    <p>O levonorgestrel é derivado da 19-nortestosterona e possui <strong>marcada atividade androgênica residual</strong>. Essa ação androgênica contrapõe-se parcialmente aos efeitos estrogênicos hepáticos, atenuando a síntese exagerada de fatores de coagulação. Por este motivo, as combinações de <strong>Etinilestradiol + Levonorgestrel apresentam o MENOR RISCO RELATIVO DE TROMBOEMBOLISMO VENOSO (TEV)</strong> entre todos os contraceptivos combinados orais (risco basal de cerca de 5 a 7 casos de TEV por 10.000 mulheres-ano, comparado a 2 casos em não usuárias);</p>",
+            "<strong>Progestagênios de 3ª Geração (Gestodeno e Desogestrel) e 4ª Geração (Drospirenona):</strong>\n    <p>Desenvolvidos para minimizar os efeitos androgênicos desfavoráveis (como acne, oleosidade da pele e hirsutismo), o gestodeno e o desogestrel apresentam atividade androgênica mínima, enquanto a <strong>drospirenona (análoga da espironolactona)</strong> possui potente efeito <strong>antiandrogênico e antimineralocorticoide</strong>. Como não contrapõem o efeito hepático do etinilestradiol, essas formulações conferem um risco relativo de TEV discretamente superior ao do levonorgestrel (cerca de <strong>9 a 12 casos de TEV por 10.000 mulheres-ano</strong>, ou seja, um risco relativo cerca de 1,5 a 2 vezes maior em relação ao levonorgestrel);</p>",
+            "<strong>Perspectiva Epidemiológica Real:</strong>\n    <p>É fundamental ressaltar que, mesmo para os contraceptivos de 3ª e 4ª gerações, <strong>o risco absoluto de TEV em usuárias (9 a 12 por 10.000) permanece infinitamente menor do que o risco de trombose durante a GESTAÇÃO (cerca de 10 a 20 por 10.000) e no PUERPÉRIO IMEDIATO (cerca de 40 a 50 por 10.000 mulheres-ano)</strong>. A escolha do progestagênio deve equilibrar benefícios dermatológicos e metabólicos individuais com a segurança vascular.</p>"
+          ]
+        ]
+      ]
+    ],
+    [
+      "criterios-elegibilidade-oms-febrasgo-2026-detalhado",
+      0,
+      [
+        [
+          "2",
+          "Critérios Médicos de Elegibilidade da OMS e FEBRASGO 2026: Análise por Sistemas e Comorbidades"
+        ],
+        [
+          "3",
+          "Estrutura das Categorias de Elegibilidade Médica (MEC 1 a 4)"
+        ],
+        [
+          "p",
+          "Os <strong>Critérios Médicos de Elegibilidade para Uso de Métodos Anticoncepcionais</strong>, estabelecidos pela Organização Mundial da Saúde (OMS - 6ª Edição, 2025/2026) e validados no Brasil pela Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO), constituem a espinha dorsal da segurança na prescrição contraceptiva. Seu objetivo precípuo é eliminar barreiras infundadas ao acesso a métodos eficazes, ao mesmo tempo em que protege usuárias contra riscos graves iatrogênicos (em especial eventos tromboembólicos, cardiovasculares e neoplásicos)."
+        ],
+        [
+          "p",
+          "O sistema classifica a adequação de cada método frente a uma condição clínica ou comorbidade individual em quatro categorias universais:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Categoria 1:</strong> Não há qualquer restrição clínica ao uso do método. O método pode ser usado livremente sem ressalvas;",
+            "<strong>Categoria 2:</strong> As vantagens do método superam amplamente quaisquer riscos teóricos ou comprovados. O método geralmente pode ser usado;",
+            "<strong>Categoria 3:</strong> Os riscos teóricos ou comprovados superam habitualmente as vantagens do método. O método <strong>NÃO É RECOMENDADO</strong>, a menos que outros métodos mais adequados não estejam disponíveis ou sejam expressamente recusados pela paciente. O uso exige rigorosa avaliação de especialistas e vigilância clínica estrita;",
+            "<strong>Categoria 4:</strong> A condição clínica representa um <strong>RISCO INACEITÁVEL À SAÚDE</strong> da usuária se o método for utilizado. <strong>CONTRAINDICAÇÃO ABSOLUTA E CATEGÓRICA</strong>."
+          ]
+        ],
+        [
+          "3",
+          "Matriz Crítica de Elegibilidade: Métodos Combinados vs Progestagênios Isolados vs DIU"
+        ],
+        [
+          "t",
+          [
+            "Condição Clínica / Comorbidade Materna",
+            "Contraceptivos Combinados (ACO, Adesivo, Anel, Injetável Mensal)",
+            "Progestagênio Isolado (Minipílula, Implante, Depo-Provera)",
+            "DIU de Cobre",
+            "SIU de Levonorgestrel (Mirena / Kyleena)"
+          ],
+          [
+            [
+              "<strong>Enxaqueca com Aura (em qualquer idade)</strong>",
+              "<strong>Categoria 4</strong> (Risco de AVC isquêmico multiplicado por 4 a 8 vezes)",
+              "<strong>Categoria 2</strong> (Seguro)",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 2</strong>"
+            ],
+            [
+              "<strong>Enxaqueca sem Aura (< 35 anos)</strong>",
+              "<strong>Categoria 2</strong> (Pode usar)",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 1</strong>"
+            ],
+            [
+              "<strong>Enxaqueca sem Aura (&ge; 35 anos)</strong>",
+              "<strong>Categoria 3 / 4</strong>",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 1</strong>"
+            ],
+            [
+              "<strong>Tabagismo com idade &ge; 35 anos (&ge; 15 cigarros/dia)</strong>",
+              "<strong>Categoria 4</strong> (Risco tromboembólico e infarto inaceitável)",
+              "<strong>Categoria 1</strong> (Implante/POP: Cat 1; DMPA: Cat 1)",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 1</strong>"
+            ],
+            [
+              "<strong>Tabagismo com idade &ge; 35 anos (&lt; 15 cigarros/dia)</strong>",
+              "<strong>Categoria 3</strong>",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 1</strong>"
+            ],
+            [
+              "<strong>Histórico Prévio de TVP/TEP (não anticoagulada)</strong>",
+              "<strong>Categoria 4</strong>",
+              "<strong>Categoria 2</strong>",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 2</strong>"
+            ],
+            [
+              "<strong>Trombofilias Hereditárias Conhecidas (Fator V Leiden, etc.)</strong>",
+              "<strong>Categoria 4</strong>",
+              "<strong>Categoria 2</strong>",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 2</strong>"
+            ],
+            [
+              "<strong>Hipertensão Arterial Sistêmica Grave (&ge; 160/100 mmHg)</strong>",
+              "<strong>Categoria 4</strong>",
+              "<strong>Categoria 2</strong> (DMPA: Cat 3)",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 2</strong>"
+            ],
+            [
+              "<strong>Hipertensão Arterial Adequadamente Controlada</strong>",
+              "<strong>Categoria 3</strong>",
+              "<strong>Categoria 1</strong> (DMPA: Cat 2)",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 1</strong>"
+            ],
+            [
+              "<strong>Câncer de Mama Atual</strong>",
+              "<strong>Categoria 4</strong>",
+              "<strong>Categoria 4</strong>",
+              "<strong>Categoria 1</strong> (Método de Escolha)",
+              "<strong>Categoria 4</strong>"
+            ],
+            [
+              "<strong>Lúpus Eritematoso Sistêmico com Anticorpo Antifosfolípide Positivo</strong>",
+              "<strong>Categoria 4</strong>",
+              "<strong>Categoria 3</strong>",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 3</strong>"
+            ],
+            [
+              "<strong>Puerpério &lt; 21 dias (sem lactação e sem fatores de risco para TEV)</strong>",
+              "<strong>Categoria 3</strong>",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 1</strong> (se inserido nas primeiras 48h)",
+              "<strong>Categoria 1</strong> (se inserido nas primeiras 48h)"
+            ],
+            [
+              "<strong>Puerpério &lt; 6 semanas em Lactante Exclusiva</strong>",
+              "<strong>Categoria 4</strong> (Inibe prolactina e produção de leite)",
+              "<strong>Categoria 1 / 2</strong> (Não afeta quantidade/qualidade)",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 1</strong>"
+            ],
+            [
+              "<strong>Doença Inflamatória Pélvica (DIP) Ativa / Cervicite Purulenta</strong>",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 1</strong>",
+              "<strong>Categoria 4 para inserção</strong> (Cat 2 para continuação se já inserido)",
+              "<strong>Categoria 4 para inserção</strong> (Cat 2 para continuação)"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "larc-avancados-implante-diu-cobre-siu-lng",
+      0,
+      [
+        [
+          "2",
+          "LARC em Foco: Implante de Etonogestrel vs DIU de Cobre vs SIU-Levonorgestrel (Mirena vs Kyleena)"
+        ],
+        [
+          "3",
+          "O Papel Revolucionário dos LARC na Redução de Gestações Não Planejadas"
+        ],
+        [
+          "p",
+          "Os métodos contraceptivos reversíveis de longa duração (LARC - <em>Long-Acting Reversible Contraception</em>) representam o padrão-ouro de eficácia contraceptiva na atualidade. Sua superioridade em relação aos métodos dependentes de tomada diária (como a pílula) reside na <strong>independência absoluta da adesão comportamental diária ou coital da usuária</strong>. No uso típico no \"mundo real\", a taxa de falha dos métodos combinados orais atinge cerca de 7% a 9% no primeiro ano de uso (devido a esquecimentos, atrasos, diarreia e vômitos), enquanto para os LARC a taxa de gravidez situa-se invariavelmente <strong>abaixo de 0,1% a 0,5% por ano</strong>, equiparando-se ou superando os métodos de esterilização cirúrgica definitiva (laqueadura tubária e vasectomia)."
+        ],
+        [
+          "3",
+          "1. Implante Subdérmico de Etonogestrel (Implanon NXT - 68 mg)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Mecanismo Primário de Ação:</strong> Liberação contínua e constante de etonogestrel (o metabólito ativo do desogestrel). Atinge níveis séricos suficientes para <strong>suprimir o pico de LH e inibir a ovulação em mais de 99% dos ciclos</strong> ao longo de todo o período de uso, associada ao espessamento vigoroso do muco cervical (impedindo a ascensão espermática) e indução de atrofia endometrial;",
+            "<strong>Duração Aprovada e Eficácia:</strong> Registrado para <strong>3 anos</strong> (com estudos robustos demonstrando eficácia mantida até o 4º e 5º anos de uso contínuo em mulheres com peso normal). É o <strong>método contraceptivo isolado mais eficaz existente na medicina moderna</strong>, com Índice de Pearl de apenas 0,05 gestações por 100 mulheres-ano;",
+            "<strong>Padrão de Sangramento e Manejo de Efeitos Adversos:</strong> O efeito adverso mais frequente e principal causa de descontinuação prematura é o <strong>sangramento uterino irregular (escape ou spotting)</strong>. Cerca de 20% das mulheres evoluem com amenorreia desejada, 50% mantêm sangramentos esporádicos e infrequentes toleráveis, e cerca de 20% a 25% apresentam sangramentos prolongados ou frequentes. O manejo do sangramento incômodo nos primeiros meses inclui aconselhamento empático pré-inserção, uso de anti-inflamatórios não esteroidais (Mefenâmico ou Ibuprofeno por 5 a 7 dias) ou cursos curtos de estrogênio conjugado / ACO em pacientes elegíveis;",
+            "<strong>Ampliação Histórica no SUS (Portarias SECTICS/MS 2025/2026):</strong> Anteriormente restrito a populações específicas de alta vulnerabilidade, o implante de etonogestrel foi incorporado universalmente no SUS em 2025/2026 para adolescentes de 14 a 17 anos e ampliado para mulheres em idade reprodutiva (18 a 49 anos) em vulnerabilidade, representando um marco sanitário brasileiro."
+          ]
+        ],
+        [
+          "3",
+          "2. DIU de Cobre (TCu380A): Fisiopatologia, Benefícios e Acompanhamento"
+        ],
+        [
+          "u",
+          [
+            "<strong>Mecanismo de Ação Pré-Fecundação (Desmistificação do Abortamento):</strong> O DIU de cobre atua primariamente <strong>ANTES DA FERTILIZAÇÃO</strong>. A liberação contínua de íons de cobre (Cu2+) na cavidade endometrial gera uma reação inflamatória estéril local com afluxo de macrófagos e liberação de citocinas e prostaglandinas, que possuem efeito citotóxico e espermicida direto sobre os espermatozoides, imobilizando-os, alterando a reação acrossômica e impedindo a sua ascensão pela trompa até o óvulo. O DIU de cobre NÃO é método abortivo!;",
+            "<strong>Vantagens Únicas:</strong> Isenção total de hormônios (método de escolha absoluta em pacientes com câncer de mama ativo, história de TEV, cardiopatias isquêmicas ou comorbidades hepáticas graves), <strong>duração de até 10 a 12 anos</strong> com custo mínimo e retorno imediato da fertilidade após a remoção;",
+            "<strong>Efeitos Colaterais Esperados:</strong> Aumento do volume do sangramento menstrual e agravamento de cólicas menstruais (dismenorreia), que tendem a ser mais pronunciados nos primeiros 3 a 6 meses pós-inserção e podem ser manejados com AINEs ou ácido tranexâmico;",
+            "<strong>Procedimento de Inserção e Rastreio de Fios:</strong> Pode ser inserido em qualquer momento do ciclo desde que haja razoável certeza de ausência de gravidez (inclusive pós-parto imediato até 48 horas ou pós-aborto imediato). O corte do fio deve ser realizado a cerca de 2 a 3 cm do orifício externo do colo."
+          ]
+        ],
+        [
+          "3",
+          "3. Sistemas Intrauterinos Liberadores de Levonorgestrel: Mirena (52 mg) vs Kyleena (19,5 mg)"
+        ],
+        [
+          "t",
+          [
+            "Característica Farmacotécnica e Clínica",
+            "SIU-Levonorgestrel 52 mg (Mirena)",
+            "SIU-Levonorgestrel 19,5 mg (Kyleena)"
+          ],
+          [
+            [
+              "<strong>Carga Total de Hormônio</strong>",
+              "52 mg de Levonorgestrel",
+              "19,5 mg de Levonorgestrel"
+            ],
+            [
+              "<strong>Taxa de Liberação Inicial</strong>",
+              "~20 mcg/dia (decrescendo para ~10 mcg/dia ao fim de 5 a 8 anos)",
+              "~17,5 mcg/dia (decrescendo para ~9 mcg/dia em 1 ano e ~7 mcg/dia em 5 anos)"
+            ],
+            [
+              "<strong>Duração Registrada de Uso</strong>",
+              "<strong>Até 8 anos</strong> para contracepção (FDA/ANVISA)",
+              "<strong>Até 5 anos</strong>"
+            ],
+            [
+              "<strong>Dimensões do Dispositivo e Inserção</strong>",
+              "Armação T medindo 32 x 32 mm; diâmetro do tubo aplicador de 4,4 mm.",
+              "Armação T menor (28 x 30 mm); diâmetro do aplicador de <strong>3,8 mm</strong> (facilita inserção em nulíparas com colo estreito)."
+            ],
+            [
+              "<strong>Anel de Prata Radiopaco</strong>",
+              "Não possui (visível ao USG pela haste e sombra acústica).",
+              "<strong>Possui anel de prata</strong> na junção em T (visibilidade ultrassonográfica e radiológica imediata)."
+            ],
+            [
+              "<strong>Impacto no Sangramento Endometrial</strong>",
+              "Intensa atrofia e decidualização endometrial. Taxa de <strong>amenorreia de cerca de 20% em 1 ano e até 50% em 5 anos</strong>. Tratamento de escolha para SUA e adenomiose.",
+              "Menor concentração tecidual relativa. Menor taxa de amenorreia (cerca de 12% a 20% em 5 anos); preserva mais ciclos eufuncionais escassos."
+            ],
+            [
+              "<strong>Indicações Clínicas Além da Contracepção</strong>",
+              "Aprovado para <strong>Sangramento Uterino Anormal (SUA) idiopático</strong>, hiperplasia endometrial sem atipias e proteção endometrial na Terapia Hormonal da Menopausa.",
+              "Aprovado <strong>exclusivamente para Contracepção</strong> (excelente opção para adolescentes e mulheres com úteros menores que não desejam amenorreia obrigatória)."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "anticoncepcao-emergencia-mecanismos-janelas-reinicio",
+      0,
+      [
+        [
+          "2",
+          "Contracepção de Emergência: Levonorgestrel vs Acetato de Ulipristal vs DIU de Cobre"
+        ],
+        [
+          "3",
+          "Janelas Temporais, Farmacologia e Mecanismos da Anticoncepção de Emergência"
+        ],
+        [
+          "p",
+          "A <strong>Contracepção de Emergência (CE)</strong> destina-se a prevenir uma gravidez não planejada após relação sexual desprotegida, falha do método habitual (rompimento ou escape de preservativo, esquecimento consecutivo de pílulas) ou em situações de violência sexual. O princípio fundamental da eficácia da CE medicamentosa oral reside na sua <strong>capacidade biológica de impedir ou adiar a ovulação por tempo suficiente para que os espermatozoides presentes no trato genital feminino percam sua viabilidade biológica (tempo de sobrevida espermática média de 3 a 5 dias)</strong>."
+        ],
+        [
+          "p",
+          "<strong>Atenção Conceitual e Bioética de Prova:</strong> A contracepção de emergência oral atua estritamente <strong>ANTES DA OVULAÇÃO</strong>. Se a ovulação já tiver ocorrido e a fertilização do óvulo se completou, a medicação hormonal de emergência <strong>NÃO TEM NENHUM EFEITO SOBRE O PROCESSO DE NIDAÇÃO E NÃO PROVOCA ABORTAMENTO</strong> de uma gravidez já instalada!"
+        ],
+        [
+          "3",
+          "1. Levonorgestrel Oral (1,5 mg em Dose Única)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Mecanismo de Ação:</strong> Progestagênio sintético de alta afinidade que bloqueia ou retarda a liberação do <strong>pico ovulatório de LH</strong> se administrado antes do início da onda pré-ovulatória. Se o pico de LH já tiver se iniciado, o levonorgestrel perde drasticamente sua eficácia protetora;",
+            "<strong>Janela de Eficácia e Posologia:</strong> Deve ser tomado <strong>o mais rápido possível dentro de até 72 horas (3 dias)</strong> após o coito desprotegido. A eficácia é inversamente proporcional ao tempo de atraso (taxa de prevenção de 95% se usado nas primeiras 24h, caindo para 85% em 24-48h e 58% em 48-72h). Pode ser estendido até 120 horas (5 dias) com eficácia reduzida se outro método não estiver disponível;",
+            "<strong>Regime Posológico:</strong> Preferencialmente <strong>dose única de 1,5 mg VO</strong> (ou dois comprimidos de 0,75 mg tomados juntos). Esquemas fracionados de 12/12h estão obsoletos por induzirem mais esquecimentos;",
+            "<strong>Impacto do Peso Corporal / Obesidade:</strong> Em mulheres com sobrepeso (IMC &ge; 25-30 kg/m²) ou peso > 70-80 kg, a taxa de falha do levonorgestrel é até três vezes maior. Nestes casos, recomenda-se <strong>dobrar a dose de Levonorgestrel (3,0 mg VO)</strong> ou preferir o Acetato de Ulipristal ou o DIU de cobre;",
+            "<strong>Reinício Imediato da Contracepção Regular (\"Quick-Start pós-CE\"):</strong> Após o levonorgestrel, a paciente <strong>PODE E DEVE INICIAR OU REINICIAR SEU MÉTODO CONTRACEPTIVO REGULAR IMEDIATAMENTE (no mesmo dia)</strong>, utilizando preservativo de barreira adicional pelos primeiros 7 dias consecutivos."
+          ]
+        ],
+        [
+          "3",
+          "2. Acetato de Ulipristal Oral (30 mg em Dose Única)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Mecanismo Farmacológico Superior:</strong> É um Modulador Seletivo dos Receptores de Progesterona (SPRM). Sua imensa superioridade biológica decorre do fato de que <strong>consegue impedir ou retardar a ruptura folicular e a ovulação MESMO QUANDO A ONDA DE LH JÁ SE INICIOU</strong> (desde que não tenha atingido o pico máximo pré-ovulatório), momento em que o levonorgestrel já é completamente ineficaz;",
+            "<strong>Janela de Uso:</strong> Mantém alta eficácia constante durante toda a janela de <strong>até 120 horas (5 dias)</strong> após a relação desprotegida;",
+            "<strong>Menor Perda de Eficácia na Obesidade:</strong> Mantém taxa de proteção significativamente superior ao levonorgestrel em mulheres com sobrepeso e IMC elevado;",
+            "<strong>Atenção Crítica no Reinício Contraceptivo (Pegadinha de Concurso):</strong>\n    <p>Como o ulipristal é um antagonista/modulador do receptor de progesterona, a introdução imediata de um anticoncepcional hormonal contendo progestagênio pode <strong>competir pelos mesmos receptores, inativar o ulipristal e neutralizar a eficácia da contracepção de emergência</strong>. Portanto, as diretrizes da OMS e FEBRASGO determinam:</p>\n    <div class=\"formula-box\">\n      <p><strong>Regra de Ouro Pós-Ulipristal:</strong></p>\n      <p>Aguardar <strong>5 DIAS</strong> após o uso do acetato de ulipristal antes de iniciar ou retomar qualquer contraceptivo hormonal (pílula, injeção, anel, adesivo). Durante esses 5 dias e pelos 7 a 14 dias seguintes à introdução do hormonal, deve-se usar rigorosamente preservativo de barreira!</p>\n    </div>"
+          ]
+        ],
+        [
+          "3",
+          "3. O DIU de Cobre como o Método de Emergência Mais Eficaz de Todos"
+        ],
+        [
+          "p",
+          "A inserção intrauterina de um <strong>DIU de Cobre (TCu380A) realizada em até 120 horas (5 dias) após a relação desprotegida</strong> é a opção de <strong>MÁXIMA EFICÁCIA ISOLADA de contracepção de emergência</strong>, apresentando taxa de falha inferior a <strong>0,1% (eficácia superior a 99,9%)</strong>."
+        ],
+        [
+          "p",
+          "Possui três vantagens estratégicas insuperáveis:"
+        ],
+        [
+          "o",
+          [
+            "Funciona mesmo em mulheres que já ovularam nas últimas horas (a inflamação estéril tóxica do cobre impede fertilização tardia ou implantação anômala precoce);",
+            "<strong>Não perde absolutamente nenhuma eficácia em mulheres obesas</strong> com qualquer faixa de IMC;",
+            "Uma vez inserido, <strong>permanece como contraceptivo LARC contínuo de altíssima eficácia por até 10 a 12 anos</strong>, resolvendo definitivamente a demanda de planejamento reprodutivo da paciente."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-questoes-aprofundo-contracepcao",
+      0,
+      [
+        [
+          "2",
+          "Casos Clínicos Integradores e Questões de Concursos Comentadas — Contracepção 2026"
+        ],
+        [
+          "3",
+          "Caso Clínico Integrador 1: Paciente Jovem com Cefaleia e Demanda Contraceptiva"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Mulher de 26 anos, nulípara, estudante universitária, procura a UBS desejando iniciar contraceptivo hormonal oral para evitar gestação e melhorar acne facial. Nega comorbidades prévias, não fuma, PA aferida de 118x74 mmHg, IMC de 22 kg/m²."
+        ],
+        [
+          "p",
+          "<strong>História Dirigida Cuidadosa:</strong> Ao ser questionada ativamente sobre cefaleia, relata que apresenta episódios recorrentes de dor de cabeça unilateral pulsátil cerca de 1 a 2 vezes por mês. Relata que, cerca de 20 a 30 minutos antes do início da dor, visualiza rotineiramente \"pontos luminosos em ziguezague piscando no campo visual\" e refere sensação transitória de formigamento na mão e lábio esquerdos que dura cerca de 15 minutos e desaparece completamente antes da cefaleia instalar-se."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Neurológico:</strong> O quadro clínico descreve perfeitamente uma <strong>Enxaqueca com Aura Típica (escotomas visuais cintilantes e parestesias sensoriais transitórias unilaterais)</strong>;",
+            "<strong>Classificação MEC OMS / FEBRASGO:</strong> O uso de qualquer método contraceptivo contendo <strong>Estrogênio</strong> (ACO combinado, anel vaginal, adesivo transdérmico ou injetável mensal) é <strong>CATEGORIA 4 DA OMS (Risco Inaceitável à Saúde)</strong>, independentemente da idade ou do número de cigarros fumados! O estrogênio promove hipercoagulabilidade e reatividade vascular endotelial, que associado à vasoespasmo da aura enxaquecosa eleva em mais de 4 a 8 vezes o risco de <strong>Acidente Vascular Cerebral (AVC) Isquêmico</strong>;",
+            "<strong>Conduta e Prescrição Correta:</strong> Contraindicação formal e absoluta a combinados com estrogênio. Prescrição segura de métodos <strong>Livres de Estrogênio (Categoria 1 ou 2 da OMS)</strong>: Implante subdérmico de etonogestrel, DIU de cobre, SIU de levonorgestrel (Mirena/Kyleena) ou minipílula de desogestrel 75 mcg VO. A paciente optou pela inserção de SIU de levonorgestrel com excelente tolerabilidade."
+          ]
+        ],
+        [
+          "3",
+          "Questão Comentada 1 (ENAMED / Revalidação — Inédita Autoral)"
+        ],
+        [
+          "p",
+          "Mulher de 32 anos, casada, sem filhos, procurou a Unidade Básica de Saúde após relação sexual desprotegida ocorrida há cerca de 36 horas devido ao rompimento do preservativo masculino. Refere ciclos menstruais regulares de 28 dias e calcula estar no 13º dia do ciclo (período fértil provável). A paciente apresenta peso corporal de 92 kg e Índice de Massa Corporal (IMC) de 34 kg/m² (Obesidade Grau I). Nega comorbidades ou uso de medicamentos contínuos. Deseja utilizar método de emergência e manifesta grande interesse em adotar a partir de agora um método altamente eficaz e de longa duração. Considerando as diretrizes da OMS e da FEBRASGO para contracepção de emergência e LARC, assinale a conduta que apresenta, simultaneamente, a máxima eficácia imediata e a melhor taxa de prevenção contínua:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Prescrever Levonorgestrel 1,5 mg em dose única oral e agendar retorno ambulatorial em 30 dias para orientação contraceptiva."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Indicar a inserção intrauterina imediata de um DIU de Cobre (TCu380A), que atua como contracepção de emergência com eficácia superior a 99,9% em até 120 horas e permanece como método LARC contínuo por até 10 a 12 anos sem perda de eficácia pela obesidade."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Administrar Levonorgestrel 0,75 mg oral fracionado em 4 doses de 6/6h para compensar o elevado peso corporal da paciente e orientar abstinência sexual por 21 dias."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Prescrever anticoncepcional oral combinado contendo 50 mcg de etinilestradiol em dose duplicada (Método de Yuzpe), pois os métodos progestagênicos são contraindicados em obesas."
+        ],
+        [
+          "p",
+          "<strong>E)</strong> Contraindicar qualquer contracepção de emergência pelo fato de a relação ter ocorrido há mais de 24 horas e a paciente estar no 13º dia do ciclo menstrual."
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Análise das Alternativas:</em>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está CORRETA?</strong> O <strong>DIU de Cobre</strong> inserido em até 120 horas (5 dias) após o coito desprotegido é a forma isolada <strong>mais eficaz de contracepção de emergência existente (taxa de falha &lt; 0,1%)</strong>. Apresenta o imenso diferencial de <strong>não sofrer qualquer interferência ou perda de eficácia associada à obesidade ou peso elevado</strong> (ao contrário do levonorgestrel oral, que perde eficácia em mulheres com IMC > 25-30 kg/m²), conferindo imediatamente proteção contraceptiva de longa duração (LARC) por até 10 a 12 anos;",
+            "<strong>Por que as alternativas A, C, D e E estão INCORRETAS?</strong> O levonorgestrel 1,5 mg isolado tem taxa de falha aumentada na obesidade; fracionamento em 4 doses é inventado e obsoleto; o método de Yuzpe tem baixa eficácia e muitos efeitos colaterais; e a janela de emergência estende-se com segurança por 72 a 120 horas."
+          ]
+        ],
+        [
+          "3",
+          "Questão Comentada 2 (UNICAMP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Em relação às alterações trazidas pela <strong>Lei Federal nº 14.443/2022</strong> (que alterou a Lei do Planejamento Familiar nº 9.263/1996 no Brasil), analise os itens a seguir:"
+        ],
+        [
+          "p",
+          "I. A idade mínima legal para a realização de esterilização cirúrgica voluntária (laqueadura tubária ou vasectomia) no Brasil foi reduzida de 25 para 21 anos de idade em pessoas com capacidade civil plena."
+        ],
+        [
+          "p",
+          "II. A exigência legal de consentimento ou autorização expressa do cônjuge ou companheiro para a realização de laqueadura ou vasectomia foi formalmente revogada e extinta."
+        ],
+        [
+          "p",
+          "III. É permitida a esterilização cirúrgica durante o período de parto ou cesariana, desde que observado o prazo mínimo de 60 dias entre a manifestação da vontade por escrito e o parto, além de condições médicas favoráveis."
+        ],
+        [
+          "p",
+          "IV. Mulheres que já possuem pelo menos 2 filhos vivos continuam precisando atingir a idade de 21 anos completos para realizar a esterilização voluntária."
+        ],
+        [
+          "p",
+          "Assinale a alternativa correta:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Apenas os itens I, II e III estão corretos."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Apenas os itens I e II estão corretos."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Apenas os itens II e IV estão corretos."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Apenas os itens I e III estão corretos."
+        ],
+        [
+          "p",
+          "<strong>E)</strong> Todos os itens I, II, III e IV estão corretos."
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito: A.</strong>"
+        ],
+        [
+          "p",
+          "<em>Análise das Afirmativas:</em>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Item I: CORRETO.</strong> A idade mínima foi reduzida de 25 para <strong>21 anos</strong> para homens e mulheres com capacidade civil plena;",
+            "<strong>Item II: CORRETO.</strong> Foi expressamente revogado o dispositivo que exigia consentimento do cônjuge para a esterilização cirúrgica; a decisão agora é individual e exclusiva da pessoa;",
+            "<strong>Item III: CORRETO.</strong> A lei autorizou expressamente a laqueadura durante o parto (cesariana ou normal), desde que cumprido o prazo mínimo de <strong>60 dias</strong> entre a manifestação formal da vontade e o procedimento cirúrgico;",
+            "<strong>Item IV: INCORRETO.</strong> O critério da lei é alternativo: <strong>21 anos de idade OU pelo menos 2 filhos vivos</strong>. Uma pessoa de 19 ou 20 anos que já tenha 2 filhos vivos tem o direito legal de realizar a esterilização voluntária sem esperar os 21 anos."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências"
+        ],
+        [
+          "o",
+          [
+            "World Health Organization. <strong>Medical eligibility criteria for contraceptive use. 6th ed.</strong> Geneva: WHO; 2025.",
+            "World Health Organization. <strong>Selected practice recommendations for contraceptive use. 4th ed.</strong> Geneva: WHO; 2025.",
+            "World Health Organization. <strong>WHO guidelines on expanding contraceptive options.</strong> Geneva: WHO; 2026.",
+            "World Health Organization. <strong>Intrauterine devices (IUDs): fact sheet.</strong> Atualizado em 2026.",
+            "Ministério da Saúde. <strong>Saúde Sexual e Reprodutiva — Contracepção.</strong> Brasil.",
+            "Ministério da Saúde. <strong>DIU de cobre.</strong> Brasil.",
+            "Ministério da Saúde. <strong>Nota Técnica Conjunta nº 198/2026</strong> — orientações sobre acesso ao implante de etonogestrel no SUS.",
+            "Ministério da Saúde. <strong>Portarias SECTICS/MS nº 47 e 48/2025</strong> — ampliação/incorporação do implante de etonogestrel.",
+            "Brasil. <strong>Lei nº 9.263/1996</strong>, alterada pela <strong>Lei nº 14.443/2022</strong> — planejamento familiar e esterilização voluntária."
+          ]
+        ]
+      ]
+    ],
+    [
+      "clinica-etiologia-2026-planejamento-reprodutivo-contracepcao",
+      0,
+      [
+        [
+          "2",
+          "Raciocínio clínico aprofundado: situações que mudam a conduta"
+        ],
+        [
+          "3",
+          "Elegibilidade não é eficácia: como decidir método"
+        ],
+        [
+          "p",
+          "Antes de sugerir contraceptivo hormonal combinado, pergunte por enxaqueca com aura, tromboembolismo, hipertensão, tabagismo e idade, puerpério/lactação, câncer de mama atual, interações e outros fatores relevantes; classifique pelo MEC da OMS 2025 ou orientação nacional aplicável. Categoria 1 não tem restrição; 2 geralmente permite uso; 3 riscos em geral superam vantagens; 4 constitui risco inaceitável. Em seguida, avalie eficácia típica, capacidade de uso, padrão de sangramento desejado, reversibilidade, acesso e autonomia. Não tratar a categoria MEC como ranking da eficácia."
+        ],
+        [
+          "3",
+          "Contracepção de emergência: a sequência muda a escolha"
+        ],
+        [
+          "p",
+          "Pergunte o momento da relação, possibilidade de ovulação, novas relações sem proteção, uso atual de indutores enzimáticos e elegibilidade a DIU de cobre. Levonorgestrel e ulipristal têm orientações diferentes para iniciar ou retomar contraceptivo com progestagênio; após ulipristal, a introdução precoce de progestagênio pode reduzir eficácia do método de emergência. Explique a necessidade de método de barreira no intervalo apropriado e teste de gravidez caso o sangramento esperado não ocorra. Não afirmar que contracepção de emergência interrompe gravidez implantada."
+        ],
+        [
+          "3",
+          "Pós-parto e LARC: aconselhamento realista"
+        ],
+        [
+          "p",
+          "O DIU de cobre pode aumentar fluxo e cólicas, enquanto o SIU-LNG reduz sangramento menstrual; ambos exigem avaliação de gravidez, infecção atual, anatomia e orientação sobre expulsão. O implante de etonogestrel pode provocar sangramento irregular, inclusive amenorreia, sem que isso indique doença. No pós-parto, elegibilidade do estrogênio depende do intervalo desde parto, lactação e fatores trombóticos. Apresentar métodos reversíveis e definitivos sem direcionar coercitivamente a escolha."
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.who.int\" target=\"_blank\" rel=\"noopener noreferrer\">World Health Organization (WHO) — Medical eligibility criteria for contraceptive use. 6th ed., 2025/2026</a>",
+            "<a href=\"https://www.febrasgo.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO) — Manual de Anticoncepção e Planejamento Reprodutivo 2026</a>",
+            "<a href=\"https://www.gov.br/saude\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde do Brasil — Portarias SECTICS/MS nº 47 e 48/2025 e Nota Técnica Conjunta nº 198/2026 (Implante de Etonogestrel no SUS)</a>",
+            "<a href=\"https://www.planalto.gov.br\" target=\"_blank\" rel=\"noopener noreferrer\">Brasil — Lei Federal nº 9.263/1996 alterada pela Lei nº 14.443/2022 (Esterilização Voluntária)</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

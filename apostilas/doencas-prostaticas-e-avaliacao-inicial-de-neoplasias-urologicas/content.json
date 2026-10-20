@@ -1,0 +1,1269 @@
+{
+  "v": 2,
+  "s": "doencas-prostaticas-e-avaliacao-inicial-de-neoplasias-urologicas",
+  "t": "Doenças Prostáticas e Avaliação Inicial de Neoplasias Urológicas",
+  "p": "Doenças Prostáticas e Avaliação Inicial de Neoplasias Urológicas — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "a": "Cirurgia Geral",
+  "m": "Cirurgia Geral",
+  "h": [
+    "Apostila LURIA",
+    "Doenças Prostáticas e Avaliação Inicial de Neoplasias Urológicas",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Cirurgia Geral",
+      "Tema: Doenças Prostáticas e Avaliação Inicial de Neoplasias Urológicas"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "epidemiologia-fisiopatologia",
+      "1. Epidemiologia e Fisiopatologia Celular, Endócrina e Molecular das Doenças Prostáticas e Neoplasias Urológicas"
+    ],
+    [
+      "classificacao-criterios",
+      "2. Classificação Morfológica, Estadiamento e Critérios Diagnósticos"
+    ],
+    [
+      "quadro-clinico-exame-fisico",
+      "3. Quadro Clínico e Exame Físico Urológico Detalhado"
+    ],
+    [
+      "diagnostico-diferencial",
+      "4. Diagnóstico Diferencial Minucioso"
+    ],
+    [
+      "propedeutica-laboratorial-imagem",
+      "5. Propedêutica Complementar, Biomarcadores, Imagem e Biópsia Guiada"
+    ],
+    [
+      "abordagem-terapeutica",
+      "6. Abordagem Terapêutica Farmacológica e Cirúrgica Detalhada"
+    ],
+    [
+      "complicacoes-crises-agudas",
+      "7. Complicações e Manejo de Crises Agudas Urológicas"
+    ],
+    [
+      "populacoes-especiais",
+      "8. Particularidades em Populações Especiais e Rastreamento Populacional"
+    ],
+    [
+      "protocolos-fluxogramas",
+      "9. Protocolos Clínicos e Fluxogramas Decisórios Estruturados"
+    ],
+    [
+      "casos-clinicos-resolvidos",
+      "10. Casos Clínicos Estruturados e Resolvidos com Raciocínio Diagnóstico"
+    ],
+    [
+      "questoes-comentadas",
+      "11. Questões de Concursos Médicos e Revalida Comentadas em Profundidade"
+    ],
+    [
+      "tabela-sinoptica-perolas",
+      "12. Tabela Sinóptica e Pérolas Clínicas de Prova (High-Yield)"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "epidemiologia-fisiopatologia",
+      0,
+      [
+        [
+          "2",
+          "1. Epidemiologia e Fisiopatologia Celular, Endócrina e Molecular das Doenças Prostáticas e Neoplasias Urológicas"
+        ],
+        [
+          "p",
+          "As afecções do aparelho geniturinário masculino e as neoplasias urológicas figuram entre as causas mais frequentes de morbimortalidade cirúrgica e ambulatorial em adultos e idosos. O Câncer de Próstata é a neoplasia sólida não cutânea mais incidente e a segunda causa de morte por câncer na população masculina brasileira, segundo dados oficiais do Instituto Nacional de Câncer (INCA). Simultaneamente, a Hiperplasia Prostática Benigna (HPB) acomete mais de 50% dos homens aos 60 anos e até 80-90% aos 80 anos, representando uma das maiores fontes de Sintomas do Trato Urinário Inferior (LUTS / STUI) e retenção urinária. Na oncologia urológica, o Carcinoma Urotelial de Bexiga e o Carcinoma de Células Renais (CCR) constituem desafios diagnósticos que exigem propedêutica ágil diante do sinal cardeal: a hematúria macroscópica indolor."
+        ],
+        [
+          "3",
+          "1.1 Anatomia Zonal de McNeal e Ontogenia Prostática"
+        ],
+        [
+          "p",
+          "O domínio da anatomia zonal descrita por John McNeal é a pedra fundamental para compreender a patologia e o comportamento biológico das doenças prostáticas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Zona de Transição (ZT):</strong> Compreende apenas 5% a 10% do parênquima prostático normal no adulto jovem e circunda intimamente a uretra proximal pré-prostática entre o colo vesical e o verumontanum (colículo seminal). <strong>É o sítio anatômico exclusivo de origem da Hiperplasia Prostática Benigna (HPB)</strong>. Devido à sua íntima relação concêntrica com a uretra, o crescimento hiperplásico nodular da ZT comprime a luz uretral precocemente, gerando sintomas urinários obstrutivos mesmo com pequenos aumentos volumétricos da glândula. Apenas cerca de 20% dos adenocarcinomas prostáticos originam-se na ZT.",
+            "<strong>Zona Periférica (ZP):</strong> Constitui aproximadamente 70% a 75% de todo o parênquima prostático normal. Localiza-se na porção posterior e póstero-lateral da próstata, estendendo-se em direção ao ápice e repousando diretamente sobre a fáscia de Denonvilliers e o reto anterior. <strong>É o sítio anatômico de origem de 70% a 80% de todos os Adenocarcinomas de Próstata</strong>. Por ser posterior e periférica, a ZP é perfeitamente acessível à palpação digital através da parede anterior do reto durante o <em>toque retal</em>. Crucialmente, tumores em estágio inicial restritos à ZP NÃO comprimem a uretra, permanecendo <strong>completamente assintomáticos</strong>; portanto, <em>a presença de sintomas obstrutivos urinários NÃO é sinal precoce de câncer de próstata</em>, mas sim de HPB concomitante!",
+            "<strong>Zona Central (ZC):</strong> Representa cerca de 20% a 25% da glândula, circunda os ductos ejaculatórios desde a base prostática até o colículo seminal. Apresenta baixa suscetibilidade a neoplasias (&lt; 2-5% dos tumores).",
+            "<strong>Estroma Fibromuscular Anterior:</strong> Camada não glandular anterior puramente muscular e conjuntiva, que recobre a face anterior da próstata."
+          ]
+        ],
+        [
+          "3",
+          "1.2 Fisiopatologia Endócrina e Celular da Hiperplasia Prostática Benigna (HPB)"
+        ],
+        [
+          "p",
+          "A HPB não é um processo de hipertrofia celular simples, mas sim uma verdadeira hiperplasia nodular mista composta por proliferação desordenada de células estromais (fibroblastos e células musculares lisas) e células epiteliais glandulares na Zona de Transição:"
+        ],
+        [
+          "u",
+          [
+            "<strong>O Eixo da Di-hidrotestosterona (DHT) e a 5-alfa-redutase:</strong> A testosterona circulante (sintetizada pelas células testiculares de Leydig sob controle do LH hipofisário) difunde-se livremente para o interior das células prostáticas. No citoplasma do estroma e do epitélio, a testosterona é convertida irreversivelmente em <strong>Di-hidrotestosterona (DHT)</strong> pela enzima <strong>5-alfa-redutase do tipo 2</strong> (isoforma expressa predominantemente no tecido urogenital humano). A DHT possui afinidade de ligação ao receptor androgênico (AR) nuclear cerca de 5 a 10 vezes superior à testosterona e taxa de dissociação muito mais lenta. O complexo DHT-AR dimeriza-se, migra para o núcleo e liga-se a elementos de resposta a andrógenos (ARE) no DNA, ativando a transcrição de fatores de crescimento parácrinos: Fator de Crescimento de Fibroblastos (FGF-2, FGF-7/KGF), Fator de Crescimento Semelhante à Insulina (IGF-1) e Fator de Crescimento Transformador Beta (TGF-beta). Esses fatores estimulam a mitose celular e inibem a apoptose programada de células epiteliais e estromais, expandindo a massa tecidual.",
+            "<strong>Remodelamento da Bexiga em Resposta à Obstrução Infravesical (BOO):</strong> O aumento mecânico da ZT estreita a uretra prostática (componente estático da obstrução). Adicionalmente, o tônus simpático mediado pela hiperativação de receptores alfa-1A-adrenérgicos no músculo liso do estroma prostático e colo vesical aumenta a resistência uretral funcional (componente dinâmico da obstrução). Diante da obstrução infravesical crônica, o músculo detrusor da bexiga sofre hipertrofia concêntrica compensatória para vencer a pós-carga pressórica. As fibras musculares tornam-se espessadas e trabeculadas, dando origem ao aspecto cistoscópico de 'bexiga de esforço' com trabeculações e pseudodivertículos da mucosa (células e saculações). A bexiga torna-se inicialmente hiper-reflexa e instável (deflagrando sintomas de armazenamento: polaciúria, urgência e noctúria); com o tempo, a deposição de colágeno intersticial entre os miócitos detrusores induz disfunção contrátil miogênica, evoluindo para falência detrusora atônica com retenção urinária crônica, dilatação ureteroidronefrose bilateral e Insuficiência Renal Pós-Renal obstrutiva."
+          ]
+        ],
+        [
+          "3",
+          "1.3 Oncogênese e Biologia Molecular do Câncer de Próstata"
+        ],
+        [
+          "p",
+          "O Adenocarcinoma Acinar Usual de Próstata é uma neoplasia hormônio-dependente impulsionada por aberrações genéticas e epigenéticas sequenciais:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Lesões Precursoras:</strong> A <em>Neoplasia Intraepitelial Prostática de Alto Grau (HGPIN)</em> e a <em>Atrofia Inflamatória Proliferativa (PIA)</em> são alterações arquiteturais e citológicas que antecedem o adenocarcinoma invasivo, caracterizadas por atipia nuclear e perda parcial ou total da camada contínua externa de células basais mioepiteliais (marcador histológico patognomônico de invasão: na neoplasia maligna invasiva há <strong>ausência completa da camada de células basais</strong>, demonstrada pela negatividade imuno-histoquímica para p63 e citoqueratinas de alto peso molecular - 34betaE12, associada à superexpressão de racemase / AMACR / p504s).",
+            "<strong>Fusão Gênica TMPRSS2-ERG:</strong> Ocorre em aproximadamente 50% dos cânceres de próstata. Consiste em uma translocação cromossômica que funde o promotor regulado por andrógenos do gene <em>TMPRSS2</em> com a sequência codificadora do fator de transcrição oncogênico da família ETS (<em>ERG</em>). Como consequência, o estímulo androgênico fisiológico passa a induzir diretamente a superexpressão desgovernada de ERG, acelerando invasão tecidual, angiogênese e transição epitélio-mesênquima.",
+            "<strong>Perda de Supressores Tumorais e Mutações de Reparo do DNA:</strong> Deleção ou inativação do gene <em>PTEN</em> (desregulando a via oncogênica PI3K/Akt/mTOR e associando-se a fenótipos agressivos precoces), mutações no <em>TP53</em> e <em>RB1</em>. Mutações germinativas e somáticas em genes de reparo por recombinação homóloga do DNA, notadamente <strong>BRCA2</strong> (e BRCA1, ATM, CHEK2), aumentam drasticamente o risco de câncer de próstata de alto grau precoce, com padrão histológico intraductal, metástases ósseas precoces e letalidade precoce. Pacientes com mutação em BRCA2 possuem recomendação de iniciar rastreamento prostático aos 40 anos e são candidatos de primeira linha a inibidores de PARP (Olaparibe).",
+            "<strong>Disseminação Metastática Óssea (Tropismo Osteoblástico):</strong> O câncer de próstata dissemina-se preferencialmente por via hematogênica através do <em>Plexo Venoso Vertebral de Batson</em> (plexo venoso avalvulado que comunica diretamente as veias prostáticas e pré-sacrais com os corpos vertebrais lombares e pélvicos). Ao atingir o estroma ósseo, as células tumorais prostáticas secretam endotelina-1 (ET-1), BMPs (bone morphogenetic proteins) e PSA (que cliva a proteína inibidora de osteoblastos), estimulando uma proliferação desordenada e desmineralizada de osso neoformado denso, produzindo as clássicas <strong>metástases ósseas blásticas (osteoescleróticas)</strong> na pelve, coluna lombar, fêmur e arcos costais."
+          ]
+        ],
+        [
+          "3",
+          "1.4 Patogenia do Câncer de Bexiga e Carcinoma de Células Renais (CCR)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Carcinoma Urotelial de Bexiga (Anteriormente Transicional):</strong> Responsável por mais de 90-95% das neoplasias vesicais malignas. O principal fator de risco causal isolado é o <strong>tabagismo (responsável por &gt; 50% dos casos)</strong>, decorrente da excreção urinária crônica de aminas aromáticas (como 4-aminobifenil e 2-naftilamina) e nitrosaminas carcinogênicas que banham continuamente o urotélio. A exposição ocupacional a corantes industriais, tintas, borrachas e derivados de anilina é outro fator clássico. Em regiões endêmicas do Oriente Médio e África, a infecção crônica por <em>Schistosoma haematobium</em> deposita ovos calcificados na parede vesical induzindo inflamação crônica metaplásica que dá origem ao <strong>Carcinoma Espinocelular (CEC) de bexiga</strong>. Molecularmente, os carcinomas uroteliais dividem-se em tumores superficiais não músculo-invasivos (associados a mutações ativadoras em <em>FGFR3</em> e <em>PIK3CA</em>) e tumores infiltrantes músculo-invasivos agressivos (com mutações inativadoras bi-alélicas em <em>TP53</em> e <em>RB1</em>).",
+            "<strong>Carcinoma de Células Renais (CCR):</strong> O subtipo histológico mais comum (75% a 80% dos casos) é o <strong>Carcinoma Renal de Células Claras (ccRCC)</strong>, que se origina no epitélio do túbulo contorcido proximal. A alteração genética definidora (presente em &gt; 90% dos casos esporádicos e na Síndrome de Von Hippel-Lindau - VHL hereditária) é a perda ou mutação do gene supressor tumoral <strong>VHL</strong> no braço curto do cromossomo 3 (3p25-26). A proteína pVHL normal atua como uma ubiquitina-ligase que degrada os Fatores Induzidos por Hipóxia (HIF-1alfa e HIF-2alfa) em ambiente de normóxia. Na ausência de pVHL funcional, o HIF-alfa acumula-se cronicamente no citosol, translocando-se para o núcleo e transativando genes de pseudohipóxia: Fator de Crescimento do Endotélio Vascular (<strong>VEGF</strong>), PDGF e GLUT-1. Isso gera uma extraordinária hipervascularização tumoral anárquica e glicólise anaeróbica contínua, explicando a alta eficácia de terapias antiangiogênicas direcionadas (inibidores de tirosina-quinase anti-VEGFR como Sunitinibe, Pazopanibe e Cabozantinibe) e imunoterapia com anti-PD-1 (Nivolumabe, Pembrolizumabe). Outros subtipos incluem o Carcinoma Papilífero (10-15%, associado a mutações no proto-oncogene MET) e o Carcinoma Cromófobo (5%, derivado do ducto coletor intercalado, com perda cromossômica múltipla e excelente prognóstico)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "classificacao-criterios",
+      0,
+      [
+        [
+          "2",
+          "2. Classificação Morfológica, Estadiamento e Critérios Diagnósticos"
+        ],
+        [
+          "p",
+          "O estadiamento do câncer urológico e a quantificação dos sintomas prostáticos seguem protocolos e sistemas de graduação histopatológica universais de alta cobrança em provas."
+        ],
+        [
+          "3",
+          "2.1 Avaliação Sintomática da HPB: Escore Internacional IPSS"
+        ],
+        [
+          "p",
+          "O <strong>IPSS (International Prostate Symptom Score)</strong> é o instrumento padrão-ouro validado pela Organização Mundial da Saúde (OMS) e Sociedade Brasileira de Urologia (SBU) para estratificar a severidade dos LUTS e monitorar a resposta ao tratamento clínico ou cirúrgico:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Estrutura do Questionário:</strong> Composto por 7 perguntas que avaliam a frequência dos sintomas no último mês, graduadas de 0 (nenhuma vez) a 5 (quase sempre):\n    <ul>\n      <li><em>Sintomas de Esvaziamento / Obstrutivos:</em> Esvaziamento incompleto (sensação de resíduo pós-miccional), intermitência miccional (urina que interrompe e recomeça várias vezes), jato urinário fraco/hesitante e esforço miccional (necessidade de fazer força com o abdome para urinar).",
+            "<em>Sintomas de Armazenamento / Irritativos:</em> Polaciúria (urinar em intervalos menores que 2 horas), urgência miccional (dificuldade de segurar a urina) e noctúria (número de vezes que acorda à noite para urinar)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Estratificação da Gravidade pelo Escore Total (0 a 35 pontos):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Leve (0 a 7 pontos):</strong> Sintomatologia mínima com pouco impacto na rotina; candidatos prioritários a vigilância ativa / mudança de estilo de vida.",
+            "<strong>Moderado (8 a 19 pontos):</strong> Sintomas clinicamente significativos; indicação de terapia farmacológica.",
+            "<strong>Grave (20 a 35 pontos):</strong> Sintomas incapacitantes com elevado risco de retenção aguda; candidatos a terapia combinada ou cirurgia."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Questão Adicional de Qualidade de Vida (QoL):</strong> Avaliada separadamente de 0 ('encantado') a 6 ('muito insatisfeito'), mensurando a percepção pessoal do paciente sobre viver o resto da vida com aquele padrão urinário.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "2.2 Graduação Histopatológica do Câncer de Próstata: Escore de Gleason e Grupos ISUP (2014/2016)"
+        ],
+        [
+          "p",
+          "O clássico sistema de Gleason baseia-se exclusivamente no padrão arquitetural glandular sob microscopia óptica (graus 1 a 5, sendo que na prática contemporânea apenas os graus 3, 4 e 5 são diagnosticados). O escore tradicional soma o padrão histológico primário mais abundante com o padrão secundário mais frequente (ex: 3 + 4 = 7). Devido à confusão prognóstica entre Gleason 3+4=7 (predomínio de padrão favorável 3) e Gleason 4+3=7 (predomínio de padrão adverso 4), a Conferência de Consenso da ISUP (International Society of Urological Pathology) e a OMS oficializaram a classificação em <strong>5 Grupos de Grau (Grade Groups)</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Grupo de Grau ISUP",
+            "Escore de Gleason",
+            "Padrão Arquitetural Histológico Detalhado",
+            "Comportamento Biológico e Prognóstico"
+          ],
+          [
+            [
+              "<strong>ISUP 1</strong>",
+              "<strong>Gleason 3 + 3 = 6</strong>",
+              "Glândulas neoplásicas pequenas, uniformes, discretas, bem individualizadas, sem fusão e sem cribriforme.",
+              "Comportamento indolente; excelente prognóstico; candidato de escolha para <strong>Vigilância Ativa</strong>."
+            ],
+            [
+              "<strong>ISUP 2</strong>",
+              "<strong>Gleason 3 + 4 = 7</strong>",
+              "Predomínio de glândulas bem formadas individuais (padrão 3) com componente menor (&lt; 50%) de glândulas mal formadas ou fusionadas (padrão 4).",
+              "Prognóstico intermediário favorável; baixa taxa de metástase precoce."
+            ],
+            [
+              "<strong>ISUP 3</strong>",
+              "<strong>Gleason 4 + 3 = 7</strong>",
+              "Predomínio (&gt; 50%) de glândulas fusionadas, mal formadas ou padrão cribriforme (padrão 4) com componente menor de padrão 3.",
+              "Prognóstico intermediário desfavorável; taxa de recorrência bioquímica significativamente pior que o Grupo 2."
+            ],
+            [
+              "<strong>ISUP 4</strong>",
+              "<strong>Gleason 4 + 4 = 8</strong><br>(ou 3+5=8 / 5+3=8)",
+              "Glândulas cribriformes exuberantes, massas celulares fusionadas ou padrão 4 exclusivo; ou presença de componente menor de células indiferenciadas (padrão 5).",
+              "Alto risco biológico; elevada probabilidade de extensão extracapsular e invasão de vesículas seminais."
+            ],
+            [
+              "<strong>ISUP 5</strong>",
+              "<strong>Gleason 9 a 10</strong><br>(4+5, 5+4 ou 5+5)",
+              "Ausência completa de lúmen ou diferenciação glandular: lençóis sólidos de células neoplásicas indiferenciadas, comedonecrose central ou células em anel de sinete isoladas.",
+              "Extremamente agressivo; altíssimo risco de metástases ósseas e viscerais e morte por câncer de próstata."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "2.3 Estadiamento TNM e Estratificação de Risco do Câncer de Próstata (NCCN / EAU)"
+        ],
+        [
+          "p",
+          "O estadiamento TNM (AJCC 8ª Edição) estratifica o adenocarcinoma prostático em:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Tumor Primário (T):</strong>\n    <ul>\n      <li><em>T1 (Inaparente clinicamente; não palpável ao toque e não visível em exames de imagem simples):</em>\n        <ul>\n          <li>T1a: Achado incidental em ressecção transuretral (RTU) de próstata por HPB em &le; 5% do tecido ressecado.",
+            "T1b: Achado incidental em RTU de próstata em &gt; 5% do tecido ressecado.",
+            "T1c: Tumor identificado por biópsia transretal/perineal guiada por agulha indicada por elevação isolada do PSA."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n      <li><em>T2 (Confinado à próstata; nódulo palpável ao toque retal ou visível à imagem):</em> T2a (acomete metade ou menos de um lobo); T2b (acomete mais da metade de um lobo, mas apenas unilateralmente); T2c (acomete ambos os lobos prostáticos).</li>\n      <li><em>T3 (Extensão Extraprostática):</em> T3a (extensão extracapsular unilateral ou bilateral); T3b (invasão microscópica ou macroscópica das <strong>vesículas seminais</strong>).</li>\n      <li><em>T4:</em> Tumor fixo ou que invade estruturas adjacentes contíguas além das vesículas seminais (colo vesical externo, esfíncter externo, reto, músculo elevador do ânus ou parede pélvica).</li>\n    </ul>\n  </li>\n  <li><strong>Linfonodos Regionais (N):</strong> N0 (sem metástases linfonodais); N1 (metástase para linfonodos regionais da pelve verdadeira: obturadores, ilíacos internos, ilíacos externos ou pré-sacrais).</li>\n  <li><strong>Metástases à Distância (M):</strong> M0 (sem metástases); M1a (linfonodos não regionais, como retroperitoneais aórticos/cavais ou mediastinais); M1b (metástases ósseas - sítio preferencial); M1c (metástases viscerais: pulmão, fígado, cérebro).</li>\n</ul>"
+        ],
+        [
+          "p",
+          "<strong>Grupos de Risco Clínico do NCCN (Diretriz Decisória Terapêutica):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Muito Baixo Risco:</strong> T1c E ISUP 1 (Gleason 6) E PSA &lt; 10 ng/mL E menos de 3 fragmentos de biópsia positivos com &le; 50% de acometimento tumoral por fragmento E densidade de PSA &lt; 0,15 ng/mL/cm³.",
+            "<strong>Baixo Risco:</strong> T1-T2a E ISUP 1 E PSA &lt; 10 ng/mL.",
+            "<strong>Risco Intermediário Favorável:</strong> Um único fator intermediário (T2b-T2c OU ISUP 2 [Gleason 3+4] OU PSA 10-20 ng/mL) E &lt; 50% dos fragmentos positivos.",
+            "<strong>Risco Intermediário Desfavorável:</strong> ISUP 3 (Gleason 4+3=7) OU &ge; 2 fatores intermediários OU &ge; 50% dos fragmentos positivos.",
+            "<strong>Alto Risco:</strong> T3a OU ISUP 4 ou 5 (Gleason 8 a 10) OU PSA &gt; 20 ng/mL.",
+            "<strong>Muito Alto Risco:</strong> T3b ou T4 OU padrão histológico primário Gleason 5."
+          ]
+        ],
+        [
+          "3",
+          "2.4 Estadiamento e Classificação do Câncer de Bexiga"
+        ],
+        [
+          "p",
+          "O Carcinoma Urotelial de Bexiga é estritamente dividido em dois grupos de prognóstico e tratamento radicalmente distintos:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Câncer de Bexiga Não Músculo-Invasivo (NMIBC - 75% dos casos iniciais):</strong>\n    <ul>\n      <li><em>Ta:</em> Tumor papilar não invasivo restrito ao epitélio urotelial mucoso.",
+            "<em>Tis (Carcinoma in situ - CIS):</em> Lesão plana ('em tapete'), de alto grau nuclear citológico, confinada à mucosa, com altíssimo potencial de progressão invasiva se não tratada adequadamente.",
+            "<em>T1:</em> Tumor urotelial que invade a lâmina própria (tecido conjuntivo subepitelial / córion), mas NÃO invade a camada muscular própria (detrusor).",
+            "<strong>Câncer de Bexiga Músculo-Invasivo (MIBC - 25% dos casos):</strong>\n    <ul>\n      <li><em>T2:</em> Tumor que <strong>invade a camada muscular própria da bexiga (músculo detrusor)</strong>. T2a (invade a metade interna da muscular); T2b (invade a metade externa da muscular própria). <em>Ponto crítico de prova: O divisor de águas prognóstico e cirúrgico no câncer de bexiga é a invasão da camada muscular própria (T2), que retira o paciente do escopo da RTU endoscópica e impõe a indicação de Cistectomia Radical com Linfadenectomia Pélvica!</em>",
+            "<em>T3:</em> Invasão macroscópica ou microscópica do tecido adiposo perivesical.",
+            "<em>T4:</em> Invasão direta de órgãos adjacentes: próstata, vesículas seminais, útero, vagina ou parede abdominal/pélvica."
+          ]
+        ],
+        [
+          "3",
+          "2.5 Classificação e Estadiamento do Carcinoma de Células Renais (CCR)"
+        ],
+        [
+          "p",
+          "O CCR estagia-se pelo sistema TNM (AJCC):"
+        ],
+        [
+          "u",
+          [
+            "<strong>T1:</strong> Tumor confinado ao rim com maior diâmetro &le; 7,0 cm. Subdivide-se em T1a (&le; 4,0 cm — indicação clássica de Nefrectomia Parcial preservadora de néfrons) e T1b (&gt; 4,0 cm e &le; 7,0 cm).",
+            "<strong>T2:</strong> Tumor confinado ao rim com maior diâmetro &gt; 7,0 cm. T2a (&gt; 7,0 cm e &le; 10,0 cm); T2b (&gt; 10,0 cm).",
+            "<strong>T3:</strong> Tumor que se estende para veias principais ou tecidos perinefréticos, <em>sem ultrapassar a fáscia de Gerota</em>. T3a (invade a veia renal principal, seus ramos segmentares ou a gordura perirrenal/seio renal, sem ultrapassar Gerota); T3b (trombo tumoral cavo estendendo-se para o interior da veia cava inferior abaixo do diafragma); T3c (trombo tumoral na veia cava inferior acima do diafragma ou invadindo a parede da cava).",
+            "<strong>T4:</strong> Tumor que ultrapassa macroscopicamente a fáscia renal de Gerota ou invade diretamente a glândula adrenal ipsilateral contígua."
+          ]
+        ]
+      ]
+    ],
+    [
+      "quadro-clinico-exame-fisico",
+      0,
+      [
+        [
+          "2",
+          "3. Quadro Clínico e Exame Físico Urológico Detalhado"
+        ],
+        [
+          "p",
+          "O exame semiológico urológico e a interpretação meticulosa das queixas miccionais constituem o ponto de partida para o diagnóstico diferencial entre afecções benignas e neoplasias agressivas."
+        ],
+        [
+          "3",
+          "3.1 Sintomatologia da HPB: O Binômio Armazenamento vs. Esvaziamento"
+        ],
+        [
+          "p",
+          "Os sintomas do trato urinário inferior (LUTS) dividem-se didática e funcionalmente em:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Sintomas de Esvaziamento (Obstrutivos Mecânicos):</strong>\n    <ul>\n      <li><em>Hesitação Miccional:</em> Intervalo de tempo prolongado entre a vontade voluntária consciente de urinar e a saída efetiva do primeiro jato de urina pelo meato externo (o detrusor necessita de segundos a minutos para gerar pressão intravesical suficiente para vencer a resistência da uretra prostática comprimida).",
+            "<em>Diminuição da Força e Calibre do Jato:</em> Jato fraco, afilado, com perda da parábola miccional normal.",
+            "<em>Intermitência Miccional:</em> Interrupção involuntária do jato durante a mesma micção com reinício subsequente após esforço ('urina aos jatos').",
+            "<em>Sensação de Esvaziamento Incompleto:</em> Impressão clara de que a bexiga continua cheia logo após terminar de urinar (resíduo pós-miccional patológico).",
+            "<em>Gotejamento Terminal e Pós-Miccional:</em> Perda involuntária de urina em gotas logo após guardar o pênis na roupa íntima.",
+            "<strong>Sintomas de Armazenamento (Irritativos / Disfunção do Detrusor):</strong>\n    <ul>\n      <li><em>Polaciúria:</em> Aumento da frequência miccional diurna com micções sucessivas a cada 30 a 90 minutos em pequenos volumes.",
+            "<em>Noctúria:</em> Necessidade de acordar 2 ou mais vezes por noite para urinar, fragmentando o sono REM e associando-se a alto risco de quedas noturnas e fraturas de fêmur em idosos.",
+            "<em>Urgência Miccional e Incontinência por Urgência:</em> Desejo súbito, incontrolável e imperioso de urinar, difícil de postergar, acompanhado ou não de perda urinária antes de atingir o vaso sanitário.",
+            "<strong>Retenção Urinária Crônica e Incontinência Paradoxal (por Transbordamento / Overflow):</strong> Em fases terminais descompensadas de obstrução não tratada, a bexiga torna-se atônica e repleta com volumes de 800 a 1.500 mL (<strong>bexigoma</strong> palpável e doloroso no hipogástrio). Como a pressão intravesical supera passivamente a resistência esfincteriana, a urina extravasa continuamente em pequenas gotas involuntárias ('incontinência por transbordamento'), simulando falsamente uma bexiga vazia para o paciente desavisado."
+          ]
+        ],
+        [
+          "3",
+          "3.2 Semiótica do Toque Retal Prostático (Exame Digital da Próstata)"
+        ],
+        [
+          "p",
+          "O toque retal permanece como componente insubstituível do exame físico urológico. Deve ser realizado com o paciente em decúbito lateral esquerdo com quadris fletidos (posição de Sims), em posição genupeitoral ou em litotomia:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Próstata Normal:</strong> Volume de aproximadamente 15 a 20 gramas (semelhante ao tamanho de uma noz ou castanha), consistência fibroelástica homogênea (semelhante à palpação da eminência tenar da mão contraída ou ponta do nariz), superfície lisa, contornos anatômicos bem definidos, sulco mediano interlobar central perfeitamente palpável, limites laterais nítidos, indolor e móvel à compressão digital.",
+            "<strong>Próstata com Hiperplasia Prostática Benigna (HPB):</strong> Aumento volumétrico simétrico difuso da glândula (frequentemente &gt; 30 a 80 gramas), consistência fibroelástica elástica preservada (semelhante a borracha de pneu ou bola de tênis), superfície lisa regular, desaparecimento ou apagamento do sulco mediano central decorrente da expansão dos lobos laterais e limites laterais bem definidos, sem dor à palpação suave.",
+            "<strong>Próstata com Suspeita de Câncer (Adenocarcinoma):</strong> Presença de <strong>nódulo endurecido (consistência pétrea / 'semelhante a osso ou rocha')</strong> localizado na zona periférica, ou assimetria lobar marcada com lobo endurecido, endurecimento difuso pétreo de todo o lobo ('lobo em madeira'), superfície irregular e rugosa, perda dos contornos anatômicos laterais com infiltração para os tecidos periprostáticos ou fixação às estruturas vizinhas. <em>Pérola Fundamental de Prova: A presença de qualquer alteração suspeita ao toque retal (nódulo endurecido ou consistência pétrea) é INDICAÇÃO FORMAL E ABSOLUTA de Biópsia Prostática, mesmo que o valor do PSA sérico esteja perfeitamente normal (&lt; 2,5 ou &lt; 4,0 ng/mL)! Cerca de 15% a 20% dos cânceres de próstata clinicamente significativos apresentam PSA sérico normal.</em>",
+            "<strong>Prostatite Aguda Bacteriana:</strong> Glândula intensamente tumefeita, amolecida ou tensa, quente e <strong>extremamente dolorosa ao menor toque suave</strong>. O paciente queixa-se de febre alta (39-40 °C), calafrios, disúria intensa e dor perineal e sacral. <strong>Alerta de Contraindicação Absoluta:</strong> <em>É formalmente contraindicado realizar massagem prostática vigorosa ou compressão profunda no toque retal durante uma suspeita de prostatite bacteriana aguda, pelo risco iminente de deflagrar bacteriemia maciça com choque séptico estafilocócico ou por Gram-negativo!</em>"
+          ]
+        ],
+        [
+          "3",
+          "3.3 Apresentação Clínica dos Tumores de Bexiga e Rim"
+        ],
+        [
+          "u",
+          [
+            "<strong>Câncer de Bexiga (Carcinoma Urotelial):</strong> O sinal cardeal presente em mais de 85% dos pacientes é a <strong>hematúria macroscópica total, indolor e intermitente</strong> (com ou sem coágulos amorfos). A intermitência é uma armadilha perigosa, pois o paciente apresenta um episódio de sangramento que cessa espontaneamente após 24-48 horas, levando à falsa impressão de 'cura' e atrasando a investigação por meses. Sintomas de irritação vesical persistente (disúria, polaciúria e urgência miccional refratárias a múltiplos cursos empíricos de antibióticos para 'cistite de repetição') acendem alerta máximo para <em>Carcinoma in situ (CIS)</em> de bexiga em pacientes tabagistas idosos.",
+            "<strong>Carcinoma de Células Renais (CCR):</strong> A histórica <strong>Tríade Clássica de Guyon (Hematúria macroscópica + Dor em flanco lombar + Massa abdominal palpável)</strong> ocorre em menos de 6% a 10% dos casos contemporâneos e indica doença localmente avançada ou metastática. Atualmente, mais de 60% dos tumores renais são <strong>incidentais assintomáticos (incidentalomas renais)</strong>, descobertos durante ultrassonografia ou tomografia computadorizada solicitada para investigação de outras queixas abdominais.",
+            "<strong>Síndromes Paraneoplásicas no Câncer Renal (O 'Tumor do Internista'):</strong> O CCR é clássico pela produção ectópica de substâncias bioativas em até 30% dos pacientes:\n    <ul>\n      <li><em>Hipercalcemia humoral da malignidade:</em> Produção ectópica de Peptídeo Relacionado ao Paratormônio (PTHrP).",
+            "<em>Eritrocitose / Policitemia (Hb &gt; 18 g/dL):</em> Secreção ectópica desregulada de <strong>Eritropoietina (EPO)</strong> pelo parênquima tumoral.",
+            "<em>Hipertensão arterial de início recente:</em> Hipersecreção de Renina tumoral ou isquemia vascular por compressão extrínseca da artéria renal.",
+            "<em>Síndrome de Stauffer:</em> Disfunção hepática não metastática caracterizada por colestase anictérica (elevação expressiva de fosfatase alcalina e gama-GT com bilirrubinas normais ou discretamente aumentadas), hipoalbuminemia e prolongamento do tempo de protrombina na ausência de metástases hepáticas diretas, mediada por hipersecreção tumoral de <strong>Interleucina-6 (IL-6)</strong>. A Síndrome de Stauffer reverte completamente após a nefrectomia curativa do tumor primário.",
+            "<em>Varicocele Esquerda de Surgimento Súbito em Adulto / Idoso:</em> A veia espermática esquerda drena perpendicularmente na veia renal esquerda (enquanto a direita drena diretamente na veia cava inferior). Um tumor renal esquerdo com invasão e trombo na veia renal esquerda obstrui o fluxo da veia testicular, gerando varicocele esquerda súbita que <strong>não se esvazia no decúbito dorsal</strong> (ao contrário da varicocele idiopática do adolescente)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "diagnostico-diferencial",
+      0,
+      [
+        [
+          "2",
+          "4. Diagnóstico Diferencial Minucioso"
+        ],
+        [
+          "p",
+          "O diagnóstico diferencial detalhado entre doenças benignas e malignas do aparelho geniturinário previne iatrogenias e cirurgias desnecessárias."
+        ],
+        [
+          "3",
+          "4.1 HPB vs. Adenocarcinoma de Próstata vs. Prostatite Crônica"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro Clínico",
+            "Hiperplasia Prostática Benigna (HPB)",
+            "Adenocarcinoma de Próstata",
+            "Prostatite Crônica / Síndrome da Dor Pélvica"
+          ],
+          [
+            [
+              "<strong>Zona de Origem</strong>",
+              "<strong>Zona de Transição (ZT)</strong> (periuretral).",
+              "<strong>Zona Periférica (ZP)</strong> (75% dos casos).",
+              "Parênquima glandular e estroma difusos."
+            ],
+            [
+              "<strong>Toque Retal</strong>",
+              "Próstata aumentada difusamente, elástica, lisa, sem nódulos, sulco mediano apagado.",
+              "<strong>Nódulo endurecido pétreo</strong>, assimetria evidente ou endurecimento em placa.",
+              "Próstata normal ou discretamente amolecida/edematosa, dolorosa à palpação moderada."
+            ],
+            [
+              "<strong>Comportamento do PSA</strong>",
+              "Elevação moderada proporcional ao volume (&le; 0,1-0,3 ng/mL por grama de tecido hiperplásico). Relação PSA Livre/Total &gt; 25%.",
+              "Elevação progressiva persistente desproporcional ao volume. Relação PSA Livre/Total &lt; 15% (cai acentuadamente).",
+              "Flutuações bruscas (pode subir para 10-20 ng/mL na crise e despencar após antibiótico)."
+            ],
+            [
+              "<strong>Sintomas Típicos</strong>",
+              "LUTS obstrutivos e irritativos progressivos ao longo de anos.",
+              "<strong>Totalmente assintomático na fase inicial precoce!</strong> Sintomas apenas se avançado.",
+              "Dor perineal, escrotal, suprapúbica ou ejaculatória crônica (&gt; 3 meses) com disúria."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "4.2 Diagnóstico Diferencial da Hematúria: Origem Glomerular vs. Extraglomerular (Urológica)"
+        ],
+        [
+          "p",
+          "O aparecimento de sangue na urina exige a distinção imediata entre nefropatia médica e afecção cirúrgica urológica potencialmente neoplásica:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Hematúria Glomerular (Nefrológica):</strong>\n    <ul>\n      <li>Cor: Castanho-escura, cor de 'chá preto' ou 'refrigerante de cola'.",
+            "Coágulos: <strong>Ausência absoluta de coágulos sanguíneos!</strong> O sangramento glomerular atravessa o néfron e é homogeneizado sem formação de trombos.",
+            "Sedimento Urinário Microscópico: <strong>Dismorfismo eritrocitário positivo</strong> (&gt; 40-50% de hemácias dismórficas ou presença de acantócitos / células G1 em anel com espículas celulares decorrentes da deformação osmótica através da membrana basal glomerular); presença de <strong>cilindros hemáticos patognomônicos</strong>.",
+            "Proteinúria: Frequentemente expressiva e desproporcional (&gt; 0,5 a 1,0 g/24 horas).",
+            "Etiologias Típicas: Glomerulonefrite pós-estreptocócica (GNPE), Nefropatia por IgA (Doença de Berger), Nefrite Lúpica, Síndrome de Goodpasture."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Hematúria Extraglomerular (Urológica Cirúrgica):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Cor: Vermelho vivo brilhante a vermelho escuro, franca.",
+            "Coágulos: <strong>Presença frequente de coágulos sanguíneos formados</strong> (amorfos, filiformes ou globosos).",
+            "Sedimento Microscópico: <strong>Hemácias isomórficas</strong> normais e preservadas (&gt; 80%); ausência de cilindros hemáticos.",
+            "Proteinúria: Ausente ou compatível apenas com o teor proteico do próprio sangue vertido.",
+            "Etiologias Típicas: <strong>Neoplasias urológicas (Câncer de bexiga, Câncer renal, Carcinoma urotelial de trato superior)</strong>, Nefrolitíase, Infecção do trato urinário (ITU / Cistite hemorrágica), Trauma urogenital e HPB com ectasia vascular prostática."
+          ]
+        ],
+        [
+          "3",
+          "4.3 Diagnóstico Diferencial das Massas Renais Císticas e Sólidas (Classificação de Bosniak 2019)"
+        ],
+        [
+          "p",
+          "A tomografia computadorizada multidetectores contrastada trifásica (fase sem contraste, fase corticomedular e fase nefrográfica) estratifica as lesões císticas renais no sistema de Bosniak:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Bosniak I (Cisto Simples Benigno):</strong> Paredes imperceptíveis, homogêneo, densidade de água simples (&lt; 20 UH), sem septações, sem calcificações e <strong>sem nenhum realce após contraste venoso</strong>. Risco de malignidade: ~0%. Conduta: Nenhuma intervenção ou seguimento.",
+            "<strong>Bosniak II (Cisto Minimamente Complexo Benigno):</strong> Poucos septos delgados (&le; 1 mm) com calcificações parietais finas; ou cistos hiperdensos pequenos (&le; 3 cm) sem realce. Risco de malignidade: &lt; 1%. Conduta: Nenhuma intervenção.",
+            "<strong>Bosniak IIF ('F' de Follow-up):</strong> Septos múltiplos delgados com discreto espessamento parietal sem realce mensurável ou cistos hiperdensos volumosos (&gt; 3 cm) intraparênquima. Risco de malignidade: ~5%. Conduta: <strong>Seguimento periódico por imagem (TC ou RM)</strong> aos 6 e 12 meses por 5 anos.",
+            "<strong>Bosniak III (Lesão Indeterminada / Suspeita):</strong> Paredes ou septos irregularmente espessados com <strong>realce evidente e mensurável ao meio de contraste iodado (&gt; 15-20 UH de incremento)</strong>. Risco de malignidade: ~50-60%. Conduta: <strong>Intervenção cirúrgica (Nefrectomia Parcial)</strong> ou termoablação.",
+            "<strong>Bosniak IV (Malignidade Cística Clara):</strong> Apresenta todos os elementos do Bosniak III associados a <strong>componentes nodulares sólidos com realce nítido após contraste</strong> adjacentes às paredes ou septos. Risco de malignidade: &gt; 90%. Conduta: <strong>Resssecção cirúrgica oncológica (Nefrectomia)</strong>."
+          ]
+        ]
+      ]
+    ],
+    [
+      "propedeutica-laboratorial-imagem",
+      0,
+      [
+        [
+          "2",
+          "5. Propedêutica Complementar, Biomarcadores, Imagem e Biópsia Guiada"
+        ],
+        [
+          "p",
+          "A investigação diagnóstica moderna em urologia exige o uso racional de biomarcadores séricos e métodos de imagem avançados com ressonância magnética multiparamétrica."
+        ],
+        [
+          "3",
+          "5.1 O Antígeno Prostático Específico (PSA) e seus Derivados Cinéticos"
+        ],
+        [
+          "p",
+          "O PSA é uma serinoprotease sintetizada pelo epitélio colunar prostático, cuja função fisiológica é a liquefação do coágulo seminal após a ejaculação. <strong>O PSA é órgão-específico, mas NÃO é câncer-específico!</strong> Diversas condições benignas causam elevação sérica do PSA: HPB, prostatite aguda ou crônica, retenção urinária aguda com cateterismo vesical traumático, cistoscopia, biópsia prostática recente (o PSA permanece elevado por até 4 a 6 semanas após biópsia), ejaculação nas 48 horas precedentes e exercícios intensos de bicicleta. O toque retal isolado suave induz elevação mínima e clinicamente desprezível (&lt; 0,2-0,4 ng/mL)."
+        ],
+        [
+          "p",
+          "Na chamada 'zona cinzenta do PSA' (<strong>PSA total entre 4,0 e 10,0 ng/mL</strong> com toque retal normal), o risco empírico de câncer de próstata situa-se entre 20% e 25%. Para refinar a indicação de biópsia e evitar procedimentos invasivos fúteis, utilizam-se os derivados do PSA:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Relação PSA Livre / PSA Total:</strong> No sangue, a maior fração do PSA liga-se a inibidores de protease (alfa-1-antiquimiotripsina e alfa-2-macroglobulina). O câncer de próstata sintetiza isoformas de PSA que se ligam preferencialmente a essas proteínas carreadoras, diminuindo a proporção de PSA livre circulante. Por outro lado, na HPB predomina o PSA livre.\n    <ul>\n      <li><em>Relação PSA Livre/Total &lt; 15% (especialmente &lt; 10%):</em> Altamente suspeito para malignidade (risco de câncer de próstata &gt; 50%); indicação formal de prosseguir com imagem/biópsia.",
+            "<em>Relação PSA Livre/Total &gt; 25%:</em> Sugere fortemente etiologia benigna (HPB), com probabilidade de câncer inferior a 8-10%, permitindo seguimento clínico expectante."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Densidade do PSA (PSAD):</strong> É a razão entre o valor do PSA total (ng/mL) e o volume da próstata em centímetros cúbicos (cm³) aferido por ultrassonografia ou ressonância magnética. Como cada grama de tecido de HPB eleva o PSA em aproximadamente 0,1 a 0,3 ng/mL, próstatas volumosas com PSA elevado mantêm densidade baixa. <strong>Um ponto de corte de PSAD &gt; 0,15 ng/mL/cm³ indica forte suspeita de adenocarcinoma</strong>, justificando biópsia prostática mesmo em glândulas volumosas.</li>\n  <li><strong>Velocidade do PSA (PSAV) e Tempo de Duplicação (PSA-DT):</strong> Avaliação cinética temporal que exige pelo menos 3 dosagens seriadas ao longo de 18 a 24 meses. Um incremento anual de PSA &gt; 0,75 ng/mL/ano (se PSA basal &gt; 4) ou &gt; 0,35 ng/mL/ano (se PSA basal &lt; 4) é altamente suspeito para neoplasia maligna ativa.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "5.2 Ressonância Magnética Multiparamétrica de Próstata (mpMRI) e Sistema PI-RADS v2.1"
+        ],
+        [
+          "p",
+          "A mpMRI revolucionou a propedêutica prostática e é atualmente recomendada pelas diretrizes internacionais (EAU e AUA) antes de qualquer primeira biópsia prostática. Combina três sequências de imagem multiparamétricas: sequências anatômicas ponderadas em T2 de alta resolução, imagens de difusão tecidual (DWI com mapa de ADC - aparente coeficiente de difusão) e estudo dinâmico com contraste venoso paramagnético (DCE):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Interpretação Anatômica Zonal no PI-RADS v2.1:</strong>\n    <ul>\n      <li><em>Na Zona Periférica (ZP - sítio preferencial de câncer):</em> A sequência dominante mandatória é a <strong>DIFUSÃO (DWI/ADC)</strong>. O adenocarcinoma acinar apresenta alta densidade celular estromal que restringe o movimento browniano das moléculas de água livre, aparecendo como sinal hiperintenso brilhante no DWI alto valor b (&ge; 1.400) e sinal francamente hipointenso escuro no mapa de ADC.",
+            "<em>Na Zona de Transição (ZT):</em> A sequência dominante é a <strong>ponderada em T2</strong>, diferenciando os nódulos estromais benignos bem encapsulados (com sinal heterogêneo em anel de cebola) das lesões malignas com aspecto infiltrativo com limites mal definidos em 'tiro de espingarda' (sinal hipointenso homogêneo em carvão)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Categorias de Risco do PI-RADS v2.1 (Prostate Imaging Reporting and Data System):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>PI-RADS 1:</strong> Risco muito baixo; presença de câncer clinicamente significativo altamente improvável.",
+            "<strong>PI-RADS 2:</strong> Risco baixo; achados compatíveis com HPB típica.",
+            "<strong>PI-RADS 3:</strong> Risco intermediário / duvidoso; presença de neoplasia clinicamente significativa indeterminada (~15-20% de risco). Decisão individualizada de biópsia baseada em densidade de PSA e toque retal.",
+            "<strong>PI-RADS 4:</strong> Risco alto; neoplasia clinicamente significativa provável (~60-70% de risco). <strong>Indicação mandatória de Biópsia Prostática!</strong>",
+            "<strong>PI-RADS 5:</strong> Risco muito alto; neoplasia altamente provável (&gt; 85-90% de risco), com lesão volumosa &ge; 1,5 cm ou evidência clara de invasão extraprostática ou de vesícula seminal. <strong>Indicação mandatória de Biópsia Prostática!</strong>"
+          ]
+        ],
+        [
+          "3",
+          "5.3 Biópsia Prostática: Fusão de Imagens e Vias de Acesso"
+        ],
+        [
+          "u",
+          [
+            "<strong>Biópsia por Fusão de Imagem (mpMRI + USG):</strong> Padrão-ouro técnico contemporâneo. Um software acopla a imagem da ressonância magnética prévia com a ultrassonografia transretal ou transperineal realizada em tempo real, permitindo que a agulha de biópsia mire cirurgicamente o centro da lesão PI-RADS 4 ou 5 (biópsia direcionada / targeted biopsy), associada à amostragem sistemática convencional de 12 fragmentos dos lobos prostáticos bilaterais.",
+            "<strong>Via Transperineal vs. Transretal:</strong> A via transperineal (na qual a agulha penetra pela pele esterilizada do períneo sem atravessar a mucosa retal) tornou-se a abordagem preferencial recomendada pela Sociedade Europeia de Urologia, pois <strong>reduz a taxa de sepse bacteriana pós-biópsia a praticamente ZERO por cento (0%)</strong>, além de alcançar com extrema facilidade lesões suspeitas localizadas na porção anterior da próstata. A via transretal exige preparo com antibioticoprofilaxia vigorosa (fluoroquinolona ou amicacina/cefalosporina) devido à flora retal fecal."
+          ]
+        ],
+        [
+          "3",
+          "5.4 Propedêutica da Hematúria e Tumores de Bexiga e Rim"
+        ],
+        [
+          "u",
+          [
+            "<strong>Cistoscopia Flexível:</strong> Exame padrão-ouro absoluto para avaliar a mucosa vesical e a uretra. Deve ser realizada obrigatoriamente em todo paciente com hematúria macroscópica sem causa glomerular comprovada ou em indivíduos &gt; 40 anos com hematúria microscópica persistente e fatores de risco (tabagismo). Permite a visualização direta de lesões papilares exofíticas ('em couve-flor') ou áreas eritematosas aveludadas suspeitas de carcinoma in situ (CIS).",
+            "<strong>Urotomografia Computadorizada (Uro-TC / TC de Vias Urinárias com Fase Excretora):</strong> Padrão-ouro por imagem para o trato urinário superior (cálices renais, pelve renal e ureteres) e parênquima renal. Realizada em 4 fases sequenciais: fase sem contraste (detecta litíase urinária radiopaca e densidade basal), fase corticomedular precoce (25-35s - avalia vascularização arterial e CCR hipervascular), fase nefrográfica (80-100s - detecta massas hipovasculares e infiltração tumoral do parênquima renal) e <strong>fase excretora tardia (10-15 minutos - delineia defeitos de enchimento no urotélio causados por carcinomas uroteliais de pelve e ureter)</strong>.",
+            "<strong>Estudo Urodinâmico Completo (Fluxometria e Cistometria):</strong> Exame funcional invasivo indicado em homens com HPB antes de cirurgia quando há dúvida diagnóstica: diferencia se o jato fraco decorre de <em>Obstrução Infravesical mecânica (BOO)</em> com detrusor funcionante (alta pressão detrusora com baixo fluxo miccional - candidatos ideais à cirurgia) ou de <em>Hipocontratilidade / Atonia do Detrusor</em> (baixa pressão detrusora com baixo fluxo - cirurgia descompressiva não trará benefício satisfatório)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "abordagem-terapeutica",
+      0,
+      [
+        [
+          "2",
+          "6. Abordagem Terapêutica Farmacológica e Cirúrgica Detalhada"
+        ],
+        [
+          "p",
+          "O manejo das doenças prostáticas e neoplasias urológicas abrange desde a terapia farmacológica direcionada por receptores até intervenções cirúrgicas de alta complexidade e imunooncologia."
+        ],
+        [
+          "3",
+          "6.1 Terapia Farmacológica da HPB: Bloqueadores Alfa-1 vs. Inibidores da 5-alfa-Redutase vs. Inibidores da PDE-5"
+        ],
+        [
+          "p",
+          "A escolha farmacológica na HPB é estritamente pautada no <strong>volume prostático</strong> e na <strong>gravidade dos sintomas</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Antagonistas dos Receptores Alfa-1-Adrenérgicos (Alfa-Bloqueadores):</strong>\n    <ul>\n      <li>Fármacos: <strong>Tansulosina 0,4 mg VO 1 vez ao dia</strong> (seletivo alfa-1A), Doxazosina 2 a 8 mg/dia, Alfuzosina 10 mg/dia, Silodosina 8 mg/dia.",
+            "Mecanismo de Ação: Bloqueio competitivo dos receptores adrenérgicos alfa-1A concentrados no músculo liso do estroma prostático, cápsula e colo vesical. Promovem o relaxamento rápido da musculatura lisa periuretral, reduzindo a resistência ao fluxo urinário (alívio do componente dinâmico).",
+            "<em>Cinética Clínica:</em> <strong>Início de ação ultrarrápido (horas a dias)!</strong> O paciente experimenta melhora significativa do jato urinário e queda do IPSS nas primeiras 48 a 72 horas.",
+            "<em>Limitação Fundamental:</em> <strong>NÃO ALTERAM O VOLUME PROSTÁTICO!</strong> Os alfa-bloqueadores não reduzem a massa glandular da próstata e, consequentemente, não diminuem a longo prazo o risco de progressão para retenção urinária aguda (RUA) nem a necessidade futura de cirurgia.",
+            "<em>Efeitos Adversos Típicos:</em> Hipotensão postural e tonturas (menos comum com a tansulosina, mais acentuado com a doxazosina); ejaculação retrógrada (a tansulosina impede o fechamento competente do colo vesical durante o orgasmo, desviando o sêmen para dentro da bexiga sem comprometer a libido); e a <strong>Síndrome da Íris Frouxa Intraoperatória (IFIS)</strong> — pacientes em uso de tansulosina sofrem dilatação pupilar insuficiente e prolapso da íris durante a cirurgia de catarata (o oftalmologista deve ser obrigatoriamente notificado para uso de dilatadores mecânicos).",
+            "<strong>Inibidores da 5-alfa-Redutase (5-ARI):</strong>\n    <ul>\n      <li>Fármacos: <strong>Finasterida 5 mg VO 1 vez ao dia</strong> (inibe seletivamente a 5-AR tipo 2) ou <strong>Dutasterida 0,5 mg VO 1 vez ao dia</strong> (inibe duplamente as isoformas tipo 1 e tipo 2, suprimindo &gt; 95% da DHT tecidual).",
+            "Mecanismo de Ação: Bloqueio da conversão de testosterona em di-hidrotestosterona (DHT), privando o tecido glandular prostático do seu principal estímulo mitogênico.",
+            "<em>Cinética Clínica:</em> <strong>Início de ação lento e progressivo!</strong> A atrofia tecidual glandular demora de <strong>3 a 6 meses de uso contínuo</strong> para manifestar efeito clínico perceptível. Ao final de 6 a 12 meses, induzem uma <strong>redução de 20% a 30% do volume total da próstata</strong>.",
+            "<em>Indicação Precisa de Bula e Diretrizes:</em> Indicados prioritariamente para pacientes com <strong>próstatas comprovadamente aumentadas de volume (&gt; 30 a 40 gramas)</strong> e sintomas moderados a graves. São os únicos fármacos capazes de <strong>reduzir pela metade o risco de retenção urinária aguda (RUA) e a necessidade de cirurgia descompressiva a longo prazo</strong>.",
+            "<em>Efeito Farmacológico Obrigatório sobre o PSA (Pegadinha Universal de Prova):</em> <strong>Os 5-ARIs reduzem os níveis séricos basais de PSA em exatamente 50% após 6 meses de tratamento contínuo!</strong> Portanto, em qualquer paciente que esteja tomando finasterida ou dutasterida há mais de 6 meses, o médico assistente deve <strong>MULTIPLICAR O VALOR DO PSA DO LAUDO POR 2 (DOBRAR O VALOR)</strong> para avaliar adequadamente o risco de câncer de próstata. Se o PSA de um paciente em uso crônico de finasterida passar de 1,5 para 2,5 ng/mL, seu valor real corrigido é de 5,0 ng/mL, indicando elevação patológica e suspeita de neoplasia maligna!",
+            "<em>Efeitos Adversos:</em> Disfunção erétil (5-8%), diminuição da libido e ginecomastia transitória.",
+            "<strong>Terapia Combinada (Alfa-Bloqueador + 5-ARI):</strong>\n    <ul>\n      <li>Associação fixa ou combinada de Tansulosina 0,4 mg + Dutasterida 0,5 mg ao dia. Demonstrou superioridade absoluta no estudo clínico histórico CombAT: combina o alívio sintomático imediato da tansulosina nos primeiros dias com a redução de volume a longo prazo da dutasterida, prevenindo retenção aguda e cirurgia.",
+            "<strong>Inibidores da Fosfodiesterase-5 (iPDE-5):</strong> <strong>Tadalafila 5 mg ao dia em uso contínuo</strong>. Aprovada pela ANVISA e FDA para o tratamento simultâneo de homens que apresentam HPB associada à Disfunção Erétil. Promove aumento de GMPc com relaxamento da musculatura lisa prostática e do colo vesical."
+          ]
+        ],
+        [
+          "3",
+          "6.2 Tratamento Cirúrgico da HPB: Indicações Absolutas e Técnicas"
+        ],
+        [
+          "u",
+          [
+            "<strong>Indicações Formais Absolutas de Cirurgia na HPB:</strong>\n    <ol>\n      <li>Retenção Urinária Aguda (RUA) refratária com falha de pelo menos uma tentativa de desmame do cateter vesical após uso de alfa-bloqueador.",
+            "Insuficiência Renal Pós-Renal obstrutiva decorrente de retenção crônica e hidronefrose bilateral.",
+            "Litíase Vesical secundária à estase urinária e infecções de repetição na bexiga.",
+            "Infecções do Trato Urinário (ITUs) de repetição documentadas.",
+            "Hematúria macroscópica prostática recorrente e persistente refratária a 5-ARI.",
+            "Divertículos vesicais volumosos associados a resíduo pós-miccional elevado.",
+            "<strong>Modalidades Cirúrgicas Baseadas no Volume Prostático:</strong>\n    <ul>\n      <li><em>Ressecção Transuretral da Próstata (RTU de Próstata):</em> Padrão-ouro cirúrgico histórico para próstatas com <strong>volume entre 30 e 80 gramas</strong>. Pode ser monopolar (utiliza líquido de irrigação sem eletrólitos como glicina ou manitol, com risco de <em>Síndrome de RTU</em> por intoxicação hídrica e hiponatremia dilucional grave) ou bipolar (utiliza soro fisiológico a 0,9% para irrigação contínua, eliminando o risco de hiponatremia dilucional).",
+            "<em>Prostatectomia Aberta (Transvesical / Millin) ou Enucleação Endoscópica a Laser (HoLEP / ThuLEP):</em> Indicada para <strong>próstatas volumosas (&gt; 80 a 100 gramas)</strong>. O HoLEP (Enucleação Prostática com Laser Holmium) tornou-se a técnica minimamente invasiva preferencial mundial, permitindo enuclear os lobos hiperplásicos inteiros pelo canal uretral com sangramento mínimo e alta em 24 horas, independentemente do tamanho glandular.",
+            "<em>Incisão Transuretral da Próstata (ITUP):</em> Indicada para próstatas pequenas (&lt; 30 gramas) com sintomas obstrutivos graves decorrentes de colo vesical elevado."
+          ]
+        ],
+        [
+          "3",
+          "6.3 Manejo Oncológico do Câncer de Próstata"
+        ],
+        [
+          "u",
+          [
+            "<strong>Vigilância Ativa (Active Surveillance):</strong> Estratégia de primeira escolha para pacientes com <strong>Câncer de Baixo Risco ou Muito Baixo Risco (ISUP 1 / Gleason 3+3=6, PSA &lt; 10 ng/mL e T1c-T2a)</strong> e expectativa de vida superior a 10 anos. Evita o sobretratamento e as sequelas de incontinência e disfunção erétil causadas pela cirurgia. Consiste em monitoramento estrito com dosagem seriada de PSA a cada 3 a 6 meses, toque retal semestral, mpMRI aos 12 meses e biópsias de reestadiamento periódicas. Se houver progressão histológica para ISUP &ge; 2 ou aumento expressivo do volume tumoral, o paciente é convertido para tratamento curativo imediato sem perda de janela de cura.",
+            "<strong>Tratamento Curativo para Doença Localizada / Localmente Avançada:</strong>\n    <ul>\n      <li><em>Prostatectomia Radical (Aberta, Laparoscópica ou Robô-Assistida):</em> Remoção cirúrgica completa da próstata, cápsula e vesículas seminais, associada a Linfadenectomia Pélvica Estendida em pacientes de risco intermediário desfavorável e alto risco. Principais complicações pós-operatórias: Disfunção erétil (pela lesão dos feixes neurovasculares eretores cavernosos adjacentes) e Incontinência urinária de esforço por lesão do esfíncter estriado distal.",
+            "<em>Radioterapia Externa Conformacional (com IMRT/IGRT) associada à Hormonioterapia de Privação Androgênica (ADT):</em> Eficácia oncológica equivalente à cirurgia em pacientes idosos ou de alto risco cirúrgico. Em tumores de alto risco, a radioterapia é combinada com 18 a 36 meses de bloqueio hormonal androgênico sistêmico.",
+            "<em>Braquiterapia Prostática (Implante de Sementes Radioativas de Iodo-125):</em> Opção curativa para baixo risco ou intermediário favorável."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Manejo da Doença Metastática (Terapia de Privação Androgênica - ADT):</strong>"
+        ],
+        [
+          "p",
+          "O câncer de próstata metastático é incurável, porém altamente responsivo à castração química ou cirúrgica (supressão da testosterona para níveis de castração &lt; 50 ng/dL):"
+        ],
+        [
+          "u",
+          [
+            "<em>Agonistas do GnRH / LHRH (Leuprorrelina, Goserrelina):</em> Estimulam continuamente os receptores hipofisários de GnRH, provocando dessensibilização e downregulation com supressão de LH e FSH. <em>Alerta de Prova:</em> Nas primeiras 1 a 2 semanas, induzem um pico transitório reflexo de testosterona denominado <strong>Flare Tumoral</strong>, que pode agravar dores ósseas e precipitar compressão medular aguda em pacientes com metástases vertebrais. Para bloquear o efeito do flare, é obrigatório administrar um antiandrogênio oral (Bicalutamida) por 7 dias antes e 14 dias após a primeira injeção do agonista.",
+            "<em>Antagonistas do GnRH (Degarelix, Relugolix oral):</em> Bloqueiam diretamente o receptor hipofisário sem causar flare tumoral, alcançando níveis de castração em menos de 24 a 48 horas.",
+            "<em>Intensificação Terapêutica no Câncer de Próstata Metastático Sensível à Castração (mCSPC):</em> A simples ADT isolada em monoterapia é hoje considerada insuficiente pelas diretrizes. A conduta moderna preconiza terapia dupla ou tripla: <strong>ADT associada a Inibidores da Via do Receptor Androgênico de Nova Geração (ARPIs: Enzalutamida, Apalutamida ou Acetato de Abiraterona)</strong>, associados ou não a 6 ciclos de quimioterapia com <strong>Docetaxel</strong> em casos de alto volume de metástases viscerais/ósseas."
+          ]
+        ],
+        [
+          "3",
+          "6.4 Terapêutica do Câncer de Bexiga e Carcinoma Renal"
+        ],
+        [
+          "u",
+          [
+            "<strong>Câncer de Bexiga Não Músculo-Invasivo (Ta, T1, CIS):</strong>\n    <ul>\n      <li>Ressecção Transuretral de Bexiga (RTU-Vesical) completa diagnóstica e terapêutica, ressecando a lesão papilar até atingir o músculo detrusor subjacente para correta avaliação anatomopatológica da invasão da camada muscular.",
+            "Instilação intravesical pós-operatória imediata de dose única de quimioterapia tópica (Mitomicina C ou Epirrubicina) dentro de 24 horas.",
+            "Em tumores de risco intermediário e alto risco (T1 de alto grau ou CIS difuso): Imunoterapia intravesical com <strong>BCG (Bacilo de Calmette-Guérin)</strong> atenuado semanalmente por 6 semanas (indução), seguido de ciclos de manutenção trimestrais por 1 a 3 anos. O BCG ativa uma vigorosa resposta imune local celular Th1 com influxo de macrófagos e citotoxicidade direta contra as células uroteliais neoplásicas."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Câncer de Bexiga Músculo-Invasivo (T2 a T4):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Padrão-ouro curativo: <strong>Quimioterapia Neoadjuvante baseada em Cisplatina</strong> (quatro ciclos de esquema Gemcitabina + Cisplatina ou MVAC dose-densa), seguida por <strong>Cistectomia Radical com Linfadenectomia Pélvica Bilateral Estendida</strong> e derivação urinária (neobexiga ileal ortotópica ou conduto ileal tipo Bricker cutâneo). Em mulheres, a cistectomia radical anterior inclui útero, ovários e parede vaginal anterior; em homens, inclui bexiga, próstata e vesículas seminais."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Carcinoma de Células Renais (CCR):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Doença Localizada T1a (&le; 4 cm):</em> <strong>Nefrectomia Parcial</strong> (cirúrgica aberta, laparoscópica ou robótica) preservadora de parênquima renal saudável, com resultados oncológicos idênticos à cirurgia radical e menor morbidade cardiovascular futura.",
+            "<em>Doença Localizada volumosa T1b, T2 ou T3:</em> <strong>Nefrectomia Radical</strong> (remoção completa do rim, gordura perirrenal e fáscia de Gerota, com ou sem adrenalectomia ipsilateral).",
+            "<em>Doença Metastática (mRCC):</em> O CCR é notoriamente resistente à quimioterapia citotóxica convencional e à radioterapia. A terapia de primeira linha fundamenta-se em combinações de <strong>Imunoterapia com Inibidores de Checkpoint Imunológico (Anti-PD-1: Pembrolizumabe ou Nivolumabe) associada a Inibidores de Tirosina-Quinase anti-VEGF (Axitinibe, Cabozantinibe ou Lenvatinibe)</strong>; ou dupla imunoterapia (Nivolumabe + Ipilimumabe)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "complicacoes-crises-agudas",
+      0,
+      [
+        [
+          "2",
+          "7. Complicações e Manejo de Crises Agudas Urológicas"
+        ],
+        [
+          "p",
+          "As intercorrências agudas do trato urinário inferior e da oncologia urológica exigem intervenções emergenciais para prevenir sequelas irreversíveis e choque séptico."
+        ],
+        [
+          "3",
+          "7.1 Retenção Urinária Aguda (RUA): Descompressão e Síndrome Pós-Desobstrução"
+        ],
+        [
+          "p",
+          "A RUA é a complicação aguda mais frequente da HPB, caracterizada pela incapacidade repentina e dolorosa de urinar, associada a bexiga palpável tensa no hipogástrio (bexigoma com volume habitualmente entre 500 e 1.500 mL):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Conduta de Emergência Imediata:</strong> Descompressão vesical rápida por meio de <strong>Cateterismo Vesical de Demora (Sonda de Foley calibre 16 ou 18 Fr)</strong> sob técnica estéril com gel anestésico lubrificante hidrossolúvel de lidocaína a 2%. Em caso de insucesso ou estenose de uretra intransponível, proceder imediatamente à <strong>Cistostomia Suprapúbica por Punção</strong> (técnica de Seldinger ou punção direta no hipogástrio 2 cm acima da sínfise púbica em bexiga palpável cheia).",
+            "<strong>Mito Histórico do 'Clampeamento Intermitente':</strong> Ponto clássico de prova! A antiga recomendação de fechar o dreno da sonda a cada 300-500 mL para 'evitar hemorragia ex-vacuo' FOI ABANDONADA pelas diretrizes contemporâneas. Ensaios clínicos demonstraram que a descompressão vesical imediata e contínua do volume total é segura e não aumenta o risco de sangramento mucoso vesical (a hematúria ex-vacuo é autolimitada e decorrente da descompressão de capilares da mucosa distendida).",
+            "<strong>Síndrome Poliúrica Pós-Desobstrução:</strong> Ocorre em pacientes que apresentavam retenção crônica prévia com uremia e hidronefrose. Após o alívio da obstrução, os rins entram em fase de diurese osmótica maciça (perda de &gt; 200 mL/h de urina ou &gt; 3 a 5 litros/24h), decorrente do acúmulo de ureia circulante e da insensibilidade transitória dos túbulos coletores ao ADH. Exige monitorização estrita do balanço hídrico, peso corporal e reposição eletrolítica e volêmica intravenosa com solução salina a 0,45% para evitar hipovolemia, choque hipovolêmico, hipocalemia e hiponatremia.",
+            "<strong>Tentativa de Retirada da Sonda (Trial Without Catheter - TWOC):</strong> Prescrever imediatamente um alfa-bloqueador (Tansulosina 0,4 mg/dia) por pelo menos 3 a 7 dias com o cateter inserido. No 3º a 7º dia, retirar a sonda pela manhã e observar a micção espontânea. O uso do alfa-bloqueador dobra as taxas de sucesso no desmame da sonda de Foley. Se houver falha (o paciente retém urina novamente), recateterizar e programar desobstrução cirúrgica eletiva."
+          ]
+        ],
+        [
+          "3",
+          "7.2 Síndrome Pós-RTU de Próstata (Intoxicação Hídrica e Hiponatremia Dilucional)"
+        ],
+        [
+          "p",
+          "Complicação metabólica potencialmente letal que ocorre durante ou logo após uma Ressecção Transuretral de Próstata monopolar tradicional:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fisiopatologia:</strong> Na RTU monopolar, utiliza-se corrente elétrica que exige fluido de irrigação contínua não condutor e sem eletrólitos (solução de Glicina a 1,5% ou Sorbitol/Manitol). Quando a alça de ressecção corta e abre grandes seios venosos prostáticos sob pressão de irrigação elevada (&gt; 60-70 cmH2O), litros de água livre com glicina são absorvidos diretamente para a circulação venosa sistêmica em minutos.",
+            "<strong>Manifestações Clínicas:</strong> Hipervolemia inicial aguda com hipertensão arterial sistêmica transitória e bradicardia reflexa, seguida de <strong>hiponatremia dilucional severa aguda (Sódio sérico &lt; 120-125 mEq/L)</strong>, edema cerebral com cefaleia intensa, náuseas, vômitos em jato, confusão mental, turvação visual transitória e amaurose (efeito inibitório da glicina na retina), evoluindo para crises convulsivas, coma e parada cardiorrespiratória.",
+            "<strong>Tratamento Imediato:</strong> Interromper imediatamente a cirurgia e a irrigação com glicina. Restrição hídrica absoluta, furosemida intravenosa (20 a 40 mg) para promover diurese aquosa e <strong>infusão lenta e controlada de Solução Salina Hipertônica a 3% (NaCl 3%)</strong> para elevar a natremia em no máximo 6 a 8 mEq/L nas primeiras 24 horas, prevenindo a temida <em>Mielinólise Pontina Central (Síndrome de Desmielinização Osmótica)</em>. A adoção da RTU bipolar com soro fisiológico a 0,9% preveniu quase que totalmente essa complicação na urologia contemporânea."
+          ]
+        ],
+        [
+          "3",
+          "7.3 Compressão Medular Neoplásica Aguda Metastática"
+        ],
+        [
+          "p",
+          "Emergência oncológica clássica no câncer de próstata metastático para coluna vertebral. Metástases osteoblásticas comprimem o canal vertebral ou provocam colapso de corpo vertebral sobre a medula espinhal:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Sinais de Alarme:</strong> Dor lombar ou dorsal intensa progressiva que piora no decúbito, fraqueza muscular simétrica nos membros inferiores, nível sensitivo metamérico definido ao exame físico (parestesias/anestesia abaixo de um dermátomo), hiper-reflexia tendínea com sinal de Babinski bilateral e disfunção esfincteriana tardia (retenção urinária ou incontinência fecal e anestesia em sela).",
+            "<strong>Conduta Médica Imediata:</strong> <strong>Ressonância Magnética de Coluna Total em regime de emergência absoluta!</strong> Iniciar imediatamente <strong>Dexametasona intravenosa em alta dose (bolus de 10 a 16 mg IV, seguido de 4 mg IV a cada 6 horas)</strong> para reduzir o edema vasogênico medular. Descompressão neurocirúrgica urgente por laminectomia ou radioterapia conformacional externa descompressiva fracionada de emergência nas primeiras 24 horas para evitar paraplegia definitiva."
+          ]
+        ]
+      ]
+    ],
+    [
+      "populacoes-especiais",
+      0,
+      [
+        [
+          "2",
+          "8. Particularidades em Populações Especiais e Rastreamento Populacional"
+        ],
+        [
+          "p",
+          "O rastreamento do câncer de próstata e as condutas urológicas em idosos e populações de risco genético exigem decisões individualizadas e compartilhadas."
+        ],
+        [
+          "3",
+          "8.1 Rastreamento do Câncer de Próstata: Diretrizes da SBU vs. INCA / Ministério da Saúde"
+        ],
+        [
+          "p",
+          "Este é um dos tópicos mais controversos e frequentemente explorados em questões de Medicina Preventiva, Cirurgia e Clínica Médica:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Posicionamento da Sociedade Brasileira de Urologia (SBU) e AUA/EAU:</strong> Defendem o rastreamento oportunístico anual através da <strong>avaliação combinada de PSA Total e Toque Retal</strong> após decisão compartilhada com o paciente:\n    <ul>\n      <li><em>População Geral de Risco Médio:</em> Iniciar aos <strong>50 anos de idade</strong> para homens com expectativa de vida superior a 10-15 anos.",
+            "<em>Populações de Alto Risco:</em> Iniciar mais precocemente, aos <strong>45 anos de idade</strong>, para <strong>homens da raça negra / afrodescendentes</strong> (que apresentam maior incidência, tumores biologicamente mais agressivos e maior mortalidade) e homens com <strong>histórico familiar de primeiro grau de câncer de próstata</strong> (pai ou irmão diagnosticado antes dos 60-65 anos).",
+            "<em>Portadores de Mutações Germinativas de Alto Risco (BRCA2, BRCA1, Lynch):</em> Iniciar o rastreamento aos <strong>40 anos de idade</strong>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Posicionamento do Ministério da Saúde / INCA e USPSTF:</strong> <em>NÃO recomendam o rastreamento populacional em massa indiscriminado de homens assintomáticos</em>, fundamentando-se nos riscos de sobrediagnóstico (overdiagnosis) e sobretratamento (overtreatment) de tumores indolentes de baixo grau (ISUP 1) que jamais trariam impacto à sobrevida do paciente, expondo-os a sequelas cirúrgicas iatrogênicas de disfunção erétil e incontinência urinária permanente. Recomendam a investigação diagnóstica orientada exclusivamente para homens que procuram atendimento médico espontaneamente com queixas urinárias ou que, após serem informados sobre os prós e contras, manifestam o desejo expresso de realizar os exames (decisão médica compartilhada).</li>\n</ul>"
+        ],
+        [
+          "3",
+          "8.2 O Paciente Idoso Frágil com Câncer de Próstata"
+        ],
+        [
+          "p",
+          "Em pacientes com expectativa de vida inferior a 10 anos (idosos &gt; 75-80 anos com múltiplas comorbidades cardiovasculares graves, demência ou neoplasias secundárias), a conduta preconizada para tumores localizados é o <strong>Watchful Waiting (Conduta Expectante / Observação Sintomática Atenta)</strong>:"
+        ],
+        [
+          "u",
+          [
+            "Diferencia-se fundamentalmente da <em>Vigilância Ativa</em>: no Watchful Waiting não há o objetivo de reestadiar com biópsias ou tratar com intenção curativa se houver progressão. O paciente é apenas acompanhado clinicamente e qualquer intervenção (hormonioterapia com bloqueio androgênico paliativo, RTU de alívio ou radioterapia óssea) só é instituída caso surjam sintomas obstrutivos locais ou dores metastáticas ósseas, priorizando estritamente a qualidade de vida."
+          ]
+        ]
+      ]
+    ],
+    [
+      "protocolos-fluxogramas",
+      0,
+      [
+        [
+          "2",
+          "9. Protocolos Clínicos e Fluxogramas Decisórios Estruturados"
+        ],
+        [
+          "p",
+          "Os fluxogramas decisórios a seguir estruturam o algoritmo diagnóstico e terapêutico para nódulo prostático, elevação de PSA e conduta na HPB."
+        ],
+        [
+          "t",
+          [
+            "Cenário Clínico Inicial",
+            "Investigação Imediata Padronizada",
+            "Conduta Decisória e Escalonamento"
+          ],
+          [
+            [
+              "<strong>Toque Retal com Nódulo Suspeito (Independente do PSA)</strong>",
+              "Encaminhar diretamente para <strong>Ressonância Magnética Multiparamétrica (mpMRI)</strong>.",
+              "<strong>Biópsia Prostática Transperineal/Transretal por Fusão mandatória</strong>, mesmo com PSA &lt; 2,5 ou 4,0 ng/mL!"
+            ],
+            [
+              "<strong>Toque Normal com PSA Total entre 4,0 e 10,0 ng/mL (Zona Cinzenta)</strong>",
+              "Confirmar dosagem após 4 semanas; calcular <strong>Relação PSA Livre/Total e Densidade de PSA</strong>.",
+              "- <em>Se PSA Livre/Total &gt; 25% e Densidade &lt; 0,15:</em> Tratar como HPB; seguimento com PSA em 6 a 12 meses.<br>\n        - <em>Se PSA Livre/Total &lt; 15% ou Densidade &gt; 0,15:</em> Realizar <strong>mpMRI</strong>. Se PI-RADS 3 a 5 &rarr; Biópsia dirigida."
+            ],
+            [
+              "<strong>HPB com Sintomas Moderados/Graves (IPSS &ge; 8)</strong>",
+              "Avaliar volume prostático por USG transabdominal ou transretal com resíduo pós-miccional.",
+              "- <em>Próstata &lt; 30-40 g:</em> Alfa-bloqueador em monoterapia (Tansulosina 0,4 mg/dia).<br>\n        - <em>Próstata &gt; 40 g:</em> Terapia combinada (Tansulosina 0,4 mg + Dutasterida 0,5 mg/dia).<br>\n        - <em>Refratário, litíase vesical ou hidronefrose:</em> Cirurgia (RTU se &le; 80 g; HoLEP ou Aberta se &gt; 80 g)."
+            ],
+            [
+              "<strong>Hematúria Macroscópica Indolor em Adulto &gt; 40 anos</strong>",
+              "Excluir causa infecciosa ou glomerular; programar propedêutica urológica completa.",
+              "<strong>Cistoscopia Flexível + Urotomografia Contrastada com Fase Excretora (Uro-TC)</strong> obrigatórias para investigar câncer de bexiga ou rim."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-resolvidos",
+      0,
+      [
+        [
+          "2",
+          "10. Casos Clínicos Estruturados e Resolvidos com Raciocínio Diagnóstico"
+        ],
+        [
+          "p",
+          "Os quatro casos clínicos a seguir simulam discussões clínicas e cenários clássicos de provas de Residência Médica, Revalida e ENAMED em cirurgia urológica e uro-oncologia."
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Homem Idoso com LUTS Moderados e Elevação de PSA na Zona Cinzenta"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa Principal:</strong> Homem de 64 anos, comerciante, procura o urologista relatando jato urinário fraco, demora para começar a urinar e necessidade de acordar 3 vezes todas as noites para urinar há 1 ano."
+        ],
+        [
+          "p",
+          "<strong>HDA:</strong> Paciente pontuou 16 pontos no questionário IPSS (sintomas moderados). Nega hematúria, disúria ou febre. Refere que o pai faleceu de infarto aos 82 anos e não possui familiares com câncer. Nega cirurgias prévias. Faz uso regular de enalapril 10 mg/dia para hipertensão."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Bom estado geral, corado, abdome sem massas ou bexigoma. Toque retal: esfíncter anal com tônus normal, próstata simetricamente aumentada de volume (estimada em cerca de 45 gramas, duas vezes o tamanho normal), superfície completamente lisa, consistência fibroelástica preservada homogênea (semelhante a borracha), limites laterais nítidos, sulco mediano discretamente apagado e ausência de nódulos endurecidos ou áreas pétreas."
+        ],
+        [
+          "p",
+          "<strong>Exames Complementares Iniciais:</strong>"
+        ],
+        [
+          "u",
+          [
+            "EAS (urina tipo 1) e urocultura normais (ausência de leucocitúria, hematúria ou bactérias). Creatinina sérica: 0,9 mg/dL.",
+            "Ultrassonografia do Aparelho Urinário: Bexiga com paredes espessadas e trabeculadas; resíduo pós-miccional de 90 mL (moderado). Rins com parênquima preservado sem hidronefrose. Próstata com volume estimado em 48 cm³, exibindo nódulos confluentes na zona de transição e discreta protrusão do lobo mediano para o colo vesical.",
+            "<strong>Painel de PSA:</strong> <strong>PSA Total de 6,2 ng/mL</strong> (zona cinzenta: 4,0 a 10,0 ng/mL). PSA Livre de 1,65 ng/mL, resultando em uma <strong>Relação PSA Livre / PSA Total de 26,6%</strong>. A Densidade do PSA calculada foi de 6,2 / 48 = <strong>0,12 ng/mL/cm³</strong>."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Decisão Médica:</strong>"
+        ],
+        [
+          "u",
+          [
+            "O paciente apresenta sintomas de LUTS moderados compatíveis com Hiperplasia Prostática Benigna (HPB).",
+            "A elevação do PSA na zona cinzenta gera ansiedade em relação a câncer de próstata. Contudo, a análise integrada dos biomarcadores revela: toque retal normal sem nódulos, relação PSA Livre/Total &gt; 25% (26,6%) e Densidade do PSA baixa (&lt; 0,15 ng/mL/cm³). Esses parâmetros combinados conferem probabilidade inferior a 8% de adenocarcinoma clinicamente significativo, decorrendo a elevação do PSA puramente do tecido epitelial hiperplásico benigno da ZT.",
+            "Portanto, <strong>a realização de biópsia prostática imediata NÃO está indicada neste momento!</strong> Evita-se uma biópsia desnecessária."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Conduta Farmacológica Estruturada:</strong>"
+        ],
+        [
+          "o",
+          [
+            "Instituir mudanças de estilo de vida: restrição de líquidos à noite (após as 18-19h), redução de café e bebidas alcoólicas diuréticas.",
+            "Tratamento medicamentoso para HPB: como o paciente apresenta sintomas moderados (IPSS 16) e próstata volumosa (&gt; 40 gramas), a conduta de escolha para alívio imediato e prevenção de retenção urinária futura é a <strong>Terapia Combinada</strong>:\n    <ul>\n      <li><strong>Tansulosina 0,4 mg VO 1 vez ao dia</strong> (alfa-bloqueador para alívio rápido da resistência uretral dinâmica).",
+            "<strong>Dutasterida 0,5 mg VO 1 vez ao dia</strong> (5-ARI para reduzir o volume glandular prostático em 25% e prevenir retenção aguda).",
+            "<em>Orientação de Segurança Essencial:</em> Explicar ao paciente que a dutasterida reduzirá o PSA pela metade após 6 meses de uso. Agendar reavaliação clínica com IPSS e novo PSA em 6 meses (lembrando de multiplicar o novo valor de PSA por 2 para monitoramento oncológico)."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Paciente com Nódulo Prostático Pétreo e PSA Normal"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa Principal:</strong> Homem de 68 anos, negro, assintomático do ponto de vista miccional, comparece à consulta de rotina para avaliação prostática preventiva."
+        ],
+        [
+          "p",
+          "<strong>HDA:</strong> Nega quaisquer sintomas obstrutivos ou irritativos (IPSS = 2 pontos). Jato urinário forte e sem noctúria. Refere que o irmão mais velho foi tratado de câncer de próstata aos 60 anos. Traz exame de sangue recente solicitado em check-up por clínico geral: <strong>PSA Total de 2,1 ng/mL</strong> (perfeitamente dentro do valor de referência &lt; 4,0 ng/mL)."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Abdome indolor. Ao <strong>Toque Retal</strong>: próstata com tamanho normal (cerca de 20 gramas), porém na <strong>zona periférica do lobo direito palpa-se um nódulo endurecido, de consistência pétrea ('duro como rocha'), bem delimitado, medindo cerca de 1,2 cm</strong>, fixo, sem nodulações no lobo contralateral."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Diagnóstica (Chave de Prova):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Muitos profissionais cometem o erro grave de considerar o paciente 'liberado e saudável' devido ao PSA normal de 2,1 ng/mL. Todavia, a regra clássica da urologia dita que <strong>O TOQUE RETAL SUPEITO É SOBERANO!</strong> Cerca de 15% a 20% dos tumores malignos de próstata (especialmente adenocarcinomas de alto grau e pouco diferenciados) expressam baixas quantidades de PSA na corrente sanguínea.",
+            "A presença de nódulo pétreo ao toque é <strong>INDICAÇÃO MANDATÓRIA DE INVESTIGAÇÃO ONCOLÓGICA IMEDIATA</strong>, independentemente do PSA."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Sequência de Exames e Resultado Anatomopatológico:</strong>"
+        ],
+        [
+          "o",
+          [
+            "Solicitada <strong>Ressonância Magnética Multiparamétrica de Próstata (mpMRI)</strong>: evidenciou na zona periférica póstero-lateral do lobo direito uma lesão nodular de 14 mm com hipossinal em T2, restrição acentuada à difusão (DWI alto com mapa de ADC marcadamente hipointenso escuro) e realce precoce ao contraste venoso, classificada como <strong>PI-RADS 5</strong> (altíssimo risco de neoplasia maligna clinicamente significativa), sem invasão extracapsular visível (T2a).",
+            "Realizada <strong>Biópsia Prostática Transperineal Guiada por Fusão de Imagem (mpMRI + USG)</strong>: o laudo anatomopatológico revelou <strong>Adenocarcinoma Acinar Usual de Próstata</strong> presente em 4 de 4 fragmentos direcionados da lesão suspeita, com padrão histológico arquitetural exibindo massas cribriformes e fusão glandular (padrão 4) associadas a poucas glândulas individuais (padrão 3), configurando <strong>Escore de Gleason 4 + 3 = 7 (Grupo de Grau ISUP 3)</strong>. Os fragmentos sistemáticos bilaterais foram negativos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Estratificação de Risco e Planejamento Terapêutico Curativo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "O paciente enquadra-se no <strong>Risco Intermediário Desfavorável</strong> pelo NCCN (ISUP 3 / Gleason 4+3=7). Por se tratar de doença intermediária com padrão cribriforme agressivo, <em>não é candidato a Vigilância Ativa</em>.",
+            "Como possui excelente status de desempenho físico e expectativa de vida superior a 15 anos, foi indicada terapia com intenção curativa: <strong>Prostatectomia Radical Robô-Assistida com Linfadenectomia Pélvica Bilateral</strong> (ou Radioterapia Externa Conformacional associada a 6 meses de Hormonioterapia de Privação Androgênica)."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Homem Idoso Tabagista com Hematúria Macroscópica Indolor"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa Principal:</strong> Homem de 67 anos, aposentado, procura o ambulatório de cirurgia geral e urologia relatando que há 1 semana apresentou urina avermelhada escura com saída de pequenos coágulos de sangue durante todo o jato miccional."
+        ],
+        [
+          "p",
+          "<strong>HDA:</strong> O paciente relata que o sangramento durou cerca de 3 dias e depois cessou espontaneamente, voltando a urinar claro. Nega dor lombar, febre, perda ponderal ou disúria. Possui história de tabagismo pesado de 50 maços-ano (fumou 1 a 2 maços ao dia dos 17 aos 67 anos). Nega uso de anticoagulantes."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Paciente corado, PA 120/75 mmHg. Abdome flácido, indolor, sem massas palpáveis ou visceromegalias, punho-percussão de Giordano negativa bilateralmente. Toque retal revela próstata fibroelástica de 30 g sem nódulos suspeitos."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Protocolo de Investigação:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Em qualquer paciente com mais de 40 a 50 anos, especialmente tabagista, o surgimento de <strong>hematúria macroscópica indolor e intermitente é CÂNCER DE BEXIGA até que se prove o contrário por propedêutica armada completa!</strong> O erro fatal comum é atribuir o sangramento a 'infecção urinária' e prescrever antibióticos sem investigar.",
+            "O exame do sedimento urinário confirmou incontáveis hemácias isomórficas (95% isomórficas) com ausência de dismorfismo ou cilindros hemáticos, descartando nefropatia glomerular.",
+            "<em>Investigação Armada Obrigatória (O Duplo Padrão-Ouro):</em>\n    <ol>\n      <li><strong>Cistoscopia Flexível sob Anestesia Tópica:</strong> Visualização na parede lateral esquerda da bexiga de uma <strong>lesão tumoral papilar exofítica friável com aspecto em 'couve-flor' medindo cerca de 2,5 cm de diâmetro</strong>, circundada por mucosa de aspecto normal.",
+            "<strong>Urotomografia Computadorizada (Uro-TC):</strong> Trato urinário superior (rins e ureteres) perfeitamente normais sem cálculos ou tumores na fase excretora; confirmou falha de enchimento na parede lateral esquerda da bexiga sem extensão extravesical e sem linfonodomegalias pélvicas."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Conduta Cirúrgica e Anatomopatológica:</strong>"
+        ],
+        [
+          "o",
+          [
+            "Encaminhado ao centro cirúrgico para <strong>Ressecção Transuretral de Bexiga (RTU-Vesical) completa</strong> com alça diatérmica. A ressecção foi realizada em fatias separando o tumor superficial da sua base profunda para amostragem obrigatória da camada muscular detrusora.",
+            "Instilação pós-operatória precoce de dose única intravesical de Mitomicina C dentro das primeiras 24 horas.",
+            "<em>Laudo Anatomopatológico Decisivo:</em> Carcinoma Urotelial Papilar de Alto Grau que invade a lâmina própria subepitelial, com a <strong>camada muscular própria (músculo detrusor) amplamente representada na amostra e LIVRE de neoplasia (&eacute; estádio T1 de Alto Grau)</strong>.",
+            "<em>Planejamento Terapêutico Adjuvante:</em> Por se tratar de tumor não músculo-invasivo (NMIBC), mas de Alto Risco (T1 de alto grau), o paciente não requer cistectomia radical imediata, mas exige obrigatoriamente <strong>Imunoterapia Intravesical com BCG atenuado</strong> em esquema de indução semanal por 6 semanas, seguido de manutenção periódica por até 3 anos, acompanhado de cistoscopias e citologias urinárias a cada 3 meses para detecção precoce de recidiva."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Massa Renal Incidental em Paciente Assintomático"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa Principal:</strong> Mulher de 56 anos comparece à consulta médica trazendo exames de imagem solicitados durante investigação de esteatose hepática."
+        ],
+        [
+          "p",
+          "<strong>HDA:</strong> Totalmente assintomática. Nega hematúria macroscópica, dores lombares, perda ponderal ou febre. A ultrassonografia de abdome total de rotina identificou um nódulo cortical sólido hipoecogênico no polo inferior do rim direito medindo aproximadamente 3,5 cm."
+        ],
+        [
+          "p",
+          "<strong>Propedêutica Complementar por Imagem:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Solicitada <strong>Tomografia Computadorizada de Abdome Total com Contraste Iodado em Múltiplas Fases (Uro-TC)</strong>: confirmou a presença de uma formação expansiva sólida, exofítica, heterogênea no terço inferior do parênquima renal direito, medindo <strong>3,4 cm em seu maior diâmetro</strong>. A lesão apresentou densidade basal de 32 UH na fase sem contraste e <strong>intenso realce precoce atingindo 135 UH na fase corticomedular precoce (hipervascular)</strong> com rápido clareamento (washout) na fase nefrográfica, padrão patognomônico de <strong>Carcinoma Renal de Células Claras</strong>. Ausência de invasão da gordura perirrenal, ausência de invasão da veia renal ou veia cava, sem adenopatias retroperitoneais e rim contralateral perfeitamente sadio. Classificação TNM: <strong>T1a N0 M0</strong>."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Planejamento Cirúrgico:</strong>"
+        ],
+        [
+          "u",
+          [
+            "A apresentação incidental e precoce reflete a realidade da oncologia urológica contemporânea. Trata-se de um tumor renal localizado de estágio inicial T1a (&le; 4 cm).",
+            "<em>A Biópsia Renal Pré-Operatória é Necessária?</em> <strong>NÃO!</strong> Em massas renais sólidas com realce característico ao contraste em pacientes candidatos a cirurgia, a biópsia percutânea é dispensada, pois o risco cirúrgico é baixo e a biópsia pode apresentar taxas de falso-negativo por amostragem inadequada, procedendo-se diretamente à ressecção cirúrgica com análise patológica definitiva da peça.",
+            "<strong>Conduta Padrão-Ouro de Escolha:</strong> <strong>Nefrectomia Parcial (Nefrectomia Preservadora de Néfrons) Laparoscópica ou Robô-Assistida</strong> com margens cirúrgicas livres. A nefrectomia parcial oferece controle oncológico rigorosamente idêntico ao da nefrectomia radical em tumores T1a, preservando a função renal a longo prazo e reduzindo a mortalidade cardiovascular global da paciente."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas",
+      0,
+      [
+        [
+          "2",
+          "11. Questões de Concursos Médicos e Revalida Comentadas em Profundidade"
+        ],
+        [
+          "p",
+          "As questões a seguir cobrem os aspectos conceituais mais desafiadores e recorrentes em provas de Residência Médica e Revalida em Cirurgia Geral e Urologia."
+        ],
+        [
+          "3",
+          "Questão 1 (Residência Médica / USP)"
+        ],
+        [
+          "p",
+          "Homem de 65 anos, previamente hígido, realiza consulta de rotina com médico da família. Encontra-se completamente assintomático, sem queixas urinárias obstrutivas ou irritativas. Nega história familiar de neoplasias. O exame de sangue de rastreamento revela PSA Total de 1,8 ng/mL (valor de referência: &lt; 4,0 ng/mL). Ao realizar o toque retal, o médico palpa na zona periférica do lobo esquerdo um nódulo endurecido de consistência pétrea, indolor, medindo cerca de 1,0 cm de diâmetro. O restante da glândula apresenta consistência fibroelástica normal. Considerando as diretrizes da Sociedade Brasileira de Urologia (SBU) e a fisiopatologia das doenças prostáticas, qual é a conduta correta a ser adotada?"
+        ],
+        [
+          "p",
+          "A) Tranquilizar o paciente e repetir o PSA em 12 meses, visto que o valor sérico normal de 1,8 ng/mL afasta a hipótese de adenocarcinoma de próstata clinicamente significativo.<br>\nB) Indicar realização de ressonância magnética multiparamétrica da próstata seguida de biópsia prostática guiada, pois o achado de nódulo pétreo ao toque retal é indicação formal de biópsia independentemente do nível de PSA.<br>\nC) Prescrever finasterida 5 mg ao dia por 6 meses para reduzir o volume do nódulo e reavaliar o toque retal após esse período.<br>\nD) Solicitar urocultura e iniciar ciprofloxacino oral empírico por 4 semanas para tratar provável prostatite crônica bacteriana subclínica.<br>\nE) Indicar ressecção transuretral da próstata (RTU de próstata) em regime ambulatorial para enucleação diagnóstica do lobo esquerdo."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado e Análise Minuciosa:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa B está CORRETA:</strong> Esta é uma das regras semiológicas mais cobradas na história dos concursos de Residência Médica: <strong>O TOQUE RETAL É INDEPENDENTE E SOBERANO SOBRE O PSA!</strong> Cerca de 15% a 20% dos tumores prostáticos malignos (especialmente adenocarcinomas de alto grau e pouco diferenciados, que perderam a capacidade funcional de secretar PSA para a corrente sanguínea) cursam com dosagens séricas de PSA rigorosamente normais (&lt; 4,0 ou &lt; 2,5 ng/mL). A presença de um nódulo de consistência pétrea na zona periférica é uma alteração altamente específica para adenocarcinoma invasivo e constitui <strong>indicação formal e mandatória de biópsia prostática guiada</strong> (precedida idealmente por ressonância magnética multiparamétrica - mpMRI), jamais podendo ser ignorada ou contemporizada."
+        ],
+        [
+          "p",
+          "<em>Refutação dos Distratores:</em><br>\n<strong>A está incorreta:</strong> Postergar a investigação por causa de um PSA normal representa erro de conduta clássico que atrasa a detecção de um câncer potencialmente curável.<br>\n<strong>C está incorreta:</strong> A finasterida é indicada para hiperplasia prostática benigna sintomática em próstatas aumentadas e não tem indicação para 'tratar nódulos pétreos isolados'; além disso, retardaria o diagnóstico oncológico.<br>\n<strong>D está incorreta:</strong> O paciente é totalmente assintomático, afebril, e o toque retal na prostatite revela próstata difusamente tumefeita e extremamente dolorosa ao toque suave, e não um nódulo pétreo isolado indolor.<br>\n<strong>E está incorreta:</strong> A RTU de próstata resseca a Zona de Transição periuretral e não tem papel primário no diagnóstico de nódulos da Zona Periférica posterior, além de não ser o procedimento padrão para neoplasia maligna localizada."
+        ],
+        [
+          "3",
+          "Questão 2 (Residência Médica / ENARE)"
+        ],
+        [
+          "p",
+          "Homem de 70 anos em tratamento medicamentoso para Hiperplasia Prostática Benigna há 1 ano comparece para consulta de acompanhamento trazendo exames laboratoriais. O paciente refere uso estrito e contínuo de Tansulosina 0,4 mg ao dia associada à Dutasterida 0,5 mg ao dia. Relata melhora marcante do jato urinário e das queixas de noctúria. O exame de sangue atual revela PSA Total de 3,0 ng/mL. O médico assistente revisa o prontuário e constata que, antes de iniciar a medicação há 1 ano, o PSA Total basal do paciente era de 3,8 ng/mL. Considerando o mecanismo de ação farmacológico dos inibidores da 5-alfa-redutase e a correta interpretação oncológica do biomarcador, qual é o valor real corrigido do PSA atual do paciente e a conduta clínica indicada?"
+        ],
+        [
+          "p",
+          "A) PSA corrigido de 1,5 ng/mL; o PSA caiu satisfatoriamente, indicando regressão completa da doença.<br>\nB) PSA corrigido de 3,0 ng/mL; manter a medicação na mesma posologia sem exames adicionais.<br>\nC) PSA corrigido de 6,0 ng/mL; o PSA real aumentou em relação ao valor basal inicial pré-tratamento, exigindo investigação com mpMRI e eventual biópsia prostática para descartar câncer de próstata.<br>\nD) O valor do PSA não é alterado pela dutasterida, pois o fármaco inibe apenas receptores adrenérgicos da musculatura lisa.<br>\nE) Suspender imediatamente a dutasterida pelo risco de indução de carcinoma urotelial e indicar cirurgia aberta de urgência."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado e Análise Minuciosa:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa C está CORRETA:</strong> Esta questão exige o domínio da farmacocinética dos inibidores da 5-alfa-redutase (dutasterida e finasterida). O bloqueio da síntese de DHT induz atrofia do epitélio glandular prostático, levando a uma <strong>redução esperada de aproximadamente 50% dos níveis séricos de PSA após 6 a 12 meses de tratamento contínuo</strong>. Portanto, para interpretar fidedignamente o PSA de um paciente em uso crônico de 5-ARI, <strong>é obrigatório MULTIPLICAR O VALOR DO LAUDO POR 2 (DOBRAR O VALOR)!</strong> No caso clínico, o valor corrigido atual do PSA é 3,0 x 2 = <strong>6,0 ng/mL</strong>. Como o PSA basal antes da medicação era de 3,8 ng/mL, houve na realidade uma <em>elevação oculta real e patológica do PSA</em> (de 3,8 para 6,0 ng/mL). Qualquer elevação do PSA corrigido durante o uso de um 5-ARI acende alerta máximo para adenocarcinoma de próstata (frequentemente de alto grau), exigindo investigação diagnóstica com ressonância magnética multiparamétrica e biópsia."
+        ],
+        [
+          "p",
+          "<em>Refutação dos Distratores:</em><br>\n<strong>A, B e D estão incorretas:</strong> O médico que não corrige o PSA dobrando o valor é iludido por uma falsa sensação de queda (de 3,8 para 3,0), ignorando a multiplicação obrigatória e atrasando o diagnóstico de neoplasia maligna.<br>\n<strong>E está incorreta:</strong> A dutasterida não causa câncer urotelial de bexiga e sua suspensão abrupta não tem fundamento."
+        ],
+        [
+          "3",
+          "Questão 3 (Revalida INEP)"
+        ],
+        [
+          "p",
+          "Homem de 62 anos, pintor industrial aposentado com histórico de tabagismo ativo de 40 maços-ano, dá entrada no pronto-socorro com queixa de dois episódios de urina vermelho-escura com eliminação de coágulos nos últimos 5 dias. O paciente nega dor lombar, febre, perda ponderal, disúria ou trauma. O exame físico geral e abdominal é completamente normal. O médico assistente solicita exame de urina tipo 1 (EAS), que confirma hematúria macroscópica com hemácias isomórficas, ausência de piúria e ausência de cilindros hemáticos ou proteinúria. Diante da principal suspeita diagnóstica oncológica, qual é a combinação de exames padrão-ouro mandatória para a investigação etiológica completa deste paciente?"
+        ],
+        [
+          "p",
+          "A) Ultrassonografia transretal da próstata e dosagem de antígeno carcinoembrionário (CEA).<br>\nB) Cistoscopia flexível associada à Urotomografia computadorizada com contraste intravenoso (Uro-TC com fase excretora).<br>\nC) Cintilografia óssea com tecnécio-99m e biópsia renal percutânea guiada por ultrassom.<br>\nD) Ressonância magnética da coluna lombossacra e dosagem seriada de PSA livre e total.<br>\nE) Antibioticoterapia empírica com fosfomicina em dose única e repetição do EAS em 30 dias."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado e Análise Minuciosa:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa B está CORRETA:</strong> Em qualquer indivíduo com mais de 40 a 50 anos, especialmente portador de fatores de risco de alta potência como o <strong>tabagismo</strong> e exposição ocupacional a tintas industriais (aminas aromáticas), o surgimento de <strong>hematúria macroscópica urológica (com coágulos e hemácias isomórficas) e indolor é CÂNCER DE BEXIGA (Carcinoma Urotelial) até prova em contrário!</strong> As diretrizes da AUA, EAU e Sociedade Brasileira de Urologia estabelecem que a investigação obrigatória de alta sensibilidade para hematúria urológica exige a avaliação concomitante do trato urinário inferior e superior:\n1. <strong>Cistoscopia Flexível:</strong> Padrão-ouro absoluto para examinar a mucosa vesical e uretra, permitindo visualizar lesões exofíticas papilares ou carcinoma in situ.<br>\n2. <strong>Urotomografia Computadorizada (Uro-TC) com fase excretora tardia:</strong> Padrão-ouro por imagem para avaliar o parênquima renal (descartando carcinoma de células renais) e todo o urotélio do trato urinário superior (cálices, pelve renal e ureteres), detectando eventuais falhas de enchimento causadas por tumores uroteliais sincrônicos."
+        ],
+        [
+          "p",
+          "<em>Refutação dos Distratores:</em><br>\n<strong>A e D estão incorretas:</strong> O CEA não é marcador de tumores urológicos; a ultrassonografia prostática e PSA não esclarecem a causa da hematúria vesical/renal.<br>\n<strong>C está incorreta:</strong> A biópsia renal percutânea é contraindicada na suspeita de tumores uroteliais pelo risco de disseminação tumoral pelo trajeto da agulha e a cintilografia é exame de estadiamento ósseo tardio.<br>\n<strong>E está incorreta:</strong> Tratar hematúria macroscópica em tabagista idoso como 'infecção urinária' sem leucocitúria ou sintomas miccionais é negligência e erro gravíssimo."
+        ],
+        [
+          "3",
+          "Questão 4 (Residência Médica / UNICAMP)"
+        ],
+        [
+          "p",
+          "Homem de 69 anos com sintomas miccionais obstrutivos e PSA de 8,4 ng/mL foi submetido a biópsia de próstata após ressonância magnética demonstrar lesão PI-RADS 4 na zona periférica. O laudo anatomopatológico revelou adenocarcinoma acinar de próstata com escore de Gleason 4 + 3 = 7. Segundo a classificação contemporânea da International Society of Urological Pathology (ISUP) e os consensos internacionais de oncologia urológica, a qual Grupo de Grau (Grade Group) pertence este tumor e qual a sua correlação prognóstica quando comparado ao Gleason 3 + 4 = 7?"
+        ],
+        [
+          "p",
+          "A) Grupo de Grau ISUP 2; apresenta excelente prognóstico, idêntico ao Gleason 3+4=7, com indicação preferencial de vigilância ativa.<br>\nB) Grupo de Grau ISUP 3; apresenta comportamento biológico mais agressivo e maior taxa de recorrência bioquímica do que o Gleason 3+4=7, pois o padrão histológico dominante na amostra é o padrão 4 (glândulas fusionadas/cribriformes).<br>\nC) Grupo de Grau ISUP 1; considerado neoplasia indolente de baixo risco.<br>\nD) Grupo de Grau ISUP 4; classificado automaticamente como câncer de muito alto risco com metástases viscerais obrigatórias.<br>\nE) Grupo de Grau ISUP 5; caracterizado por lençóis sólidos indiferenciados e ausência completa de diferenciação glandular."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado e Análise Minuciosa:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa B está CORRETA:</strong> Esta questão cobra a precisa correspondência entre o Escore de Gleason clássico e os <strong>Grupos de Grau da ISUP (2014/2016)</strong>, incorporados oficialmente pela OMS:\n- <strong>ISUP 1:</strong> Gleason 3 + 3 = 6 (Baixo risco; excelente prognóstico).<br>\n- <strong>ISUP 2:</strong> Gleason 3 + 4 = 7 (Risco intermediário favorável; predomínio de glândulas bem diferenciadas [padrão 3]).<br>\n- <strong>ISUP 3:</strong> <strong>Gleason 4 + 3 = 7</strong> (Risco intermediário desfavorável; <strong>predomínio &gt; 50% de glândulas malformadas, fusionadas ou cribriformes agressivas [padrão 4]</strong>). A distinção entre Gleason 3+4 e Gleason 4+3 foi o principal motivo biológico para a criação do sistema ISUP, pois pacientes com Gleason 4+3=7 (ISUP 3) possuem taxas de recorrência bioquímica pós-prostatectomia e mortalidade significativamente piores do que pacientes com Gleason 3+4=7 (ISUP 2), <em>não sendo candidatos a Vigilância Ativa isolada</em>.<br>\n- <strong>ISUP 4:</strong> Gleason 4 + 4 = 8, 3 + 5 = 8 ou 5 + 3 = 8.<br>\n- <strong>ISUP 5:</strong> Gleason 9 ou 10 (4+5, 5+4, 5+5)."
+        ],
+        [
+          "p",
+          "<em>Refutação dos Distratores:</em><br>\n<strong>A, C, D e E estão incorretas:</strong> Confundem a correspondência exata dos grupos de grau do consenso ISUP/OMS."
+        ],
+        [
+          "3",
+          "Questão 5 (Residência Médica / SUS-SP)"
+        ],
+        [
+          "p",
+          "Um paciente de 72 anos com história de Hiperplasia Prostática Benigna volumosa (próstata estimada em 85 gramas por ultrassom) e sintomas miccionais graves refratários ao tratamento com tansulosina e finasterida é submetido à Ressecção Transuretral da Próstata (RTU monopolar) sob raquianestesia. A cirurgia foi prolongada (duração de 95 minutos) e cursou com abertura de múltiplos seios venosos prostáticos com sangramento moderado, exigindo irrigação contínua vigorosa com solução de glicina a 1,5%. No final do procedimento, o paciente torna-se agitado, sonolento, queixando-se de cefaleia intensa, náuseas e turvação visual bilateral. O monitor anestésico acusa pressão arterial de 180/110 mmHg e frequência cardíaca de 48 bpm (bradicardia sinusal). A gasometria arterial e o painel de eletrólitos de emergência revelam Sódio sérico de 114 mEq/L (hiponatremia severa). Diante do diagnóstico de Síndrome Pós-RTU da Próstata, qual é a medida terapêutica farmacológica emergencial prioritária?"
+        ],
+        [
+          "p",
+          "A) Infundir imediatamente 1.000 mL de soro glicosado a 5% em bolus rápido para restaurar o volume intravascular.<br>\nB) Administrar solução salina hipertônica a 3% (NaCl 3%) em infusão intravenosa lenta e controlada, associada à furosemida intravenosa.<br>\nC) Prescrever desmopressina intranasal para reter água livre e elevar a osmolalidade urinária.<br>\nD) Indicar hemodiálise de urgência com banho de sódio a 150 mEq/L para correção da hiponatremia em menos de 2 horas.<br>\nE) Proceder à intubação orotraqueal e iniciar infusão contínua de manitol a 20% em alta velocidade."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado e Análise Minuciosa:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa B está CORRETA:</strong> O paciente desenvolveu a <strong>Síndrome Pós-RTU da Próstata</strong>, complicação clássica da ressecção endoscópica monopolar com irrigação hipotônica de glicina. A abertura de seios venosos sob pressão hidrostática elevada provocou a absorção sistêmica maciça de litros de água livre sem eletrólitos, gerando sobrecarga volêmica aguda (hipertensão e bradicardia reflexa) e <strong>hiponatremia dilucional aguda grave (&lt; 120 mEq/L)</strong> associada a edema cerebral agudo (cefaleia, náuseas, confusão mental) e toxicidade retiniana pela glicina (turvação visual). O tratamento emergencial consiste em interromper imediatamente o procedimento cirúrgico, administrar diurético de alça (<strong>furosemida IV</strong>) para forçar a excreção renal de água livre e iniciar <strong>infusão intravenosa lenta e estritamente controlada de Solução Salina Hipertônica a 3% (NaCl 3%)</strong> com objetivo de elevar o sódio sérico lentamente (no máximo 6 a 8 mEq/L nas primeiras 24 horas), eliminando o risco letal de edema cerebral sem provocar a temida Síndrome de Desmielinização Osmótica (mielinólise pontina central)."
+        ],
+        [
+          "p",
+          "<em>Refutação dos Distratores:</em><br>\n<strong>A está incorreta:</strong> Infundir soro glicosado a 5% (que equivale a infundir água livre pura) agravaria catastroficamente a hiponatremia dilucional e o edema cerebral, levando a herniação uncal e óbito.<br>\n<strong>C está incorreta:</strong> A desmopressina (análogo do ADH) reteria ainda mais água livre no túbulo coletor, piorando a intoxicação hídrica.<br>\n<strong>D está incorreta:</strong> Correções ultrarrápidas de sódio por hemodiálise com gradientes pressóricos extremos deflagram desmielinização pontina irreversível.<br>\n<strong>E está incorreta:</strong> O manitol não é o eletrólito de escolha e a infusão rápida agravaria a hipervolemia e o edema pulmonar cardiogênico agudo."
+        ]
+      ]
+    ],
+    [
+      "tabela-sinoptica-perolas",
+      0,
+      [
+        [
+          "2",
+          "12. Tabela Sinóptica e Pérolas Clínicas de Prova (High-Yield)"
+        ],
+        [
+          "p",
+          "Esta seção consolida os tópicos mais cobrados em concursos médicos sobre doenças prostáticas e oncologia urológica em sínteses de alto rendimento."
+        ],
+        [
+          "t",
+          [
+            "Entidade Patológica",
+            "Zona / Sítio Predominante",
+            "Fisiopatologia / Mecanismo Central",
+            "Achado Semiológico Cardeal",
+            "Tratamento Padrão-Ouro"
+          ],
+          [
+            [
+              "<strong>Hiperplasia Prostática Benigna (HPB)</strong>",
+              "<strong>Zona de Transição (ZT)</strong> (periuretral).",
+              "Proliferação celular estromal/epitelial dependente de <strong>DHT via 5-alfa-redutase tipo 2</strong>. Componente mecânico + dinâmico (alfa-1A).",
+              "Próstata aumentada difusamente, simétrica, elástica, lisa, sem nódulos pétreos.",
+              "Tansulosina (alfa-bloqueador) +/- Dutasterida (5-ARI para próstata &gt; 40 g). Cirurgia: RTU (&le; 80 g) ou HoLEP/Aberta (&gt; 80 g)."
+            ],
+            [
+              "<strong>Adenocarcinoma de Próstata</strong>",
+              "<strong>Zona Periférica (ZP)</strong> (75% dos casos).",
+              "Neoplasia maligna hormônio-dependente; fusão TMPRSS2-ERG; perda de PTEN; mutações BRCA2. Disseminação blástica óssea.",
+              "<strong>Nódulo endurecido pétreo ('duro como osso')</strong> ao toque retal ou lobo endurecido assimétrico.",
+              "Baixo risco: Vigilância Ativa.<br>Intermediário/Alto: Prostatectomia Radical ou RT + ADT.<br>Metastático: ADT + ARPI (Enzalutamida/Abiraterona)."
+            ],
+            [
+              "<strong>Carcinoma Urotelial de Bexiga</strong>",
+              "Urotélio da parede vesical (trigono, paredes laterais).",
+              "Carcinogênese por aminas aromáticas do <strong>tabagismo (&gt; 50%)</strong>; mutações FGFR3 (não invasivo) e TP53 (invasivo).",
+              "<strong>Hematúria macroscópica total indolor e intermitente</strong> com coágulos em idoso/tabagista.",
+              "Não Músculo-Invasivo (Ta, T1): RTU-Vesical + BCG intravesical.<br>Músculo-Invasivo (T2 a T4): Quimioterapia Neoadjuvante + <strong>Cistectomia Radical</strong>."
+            ],
+            [
+              "<strong>Carcinoma Renal de Células Claras (CCR)</strong>",
+              "Córtex do túbulo contorcido proximal.",
+              "Inativação do gene <strong>VHL (3p25)</strong> com acúmulo de HIF-alfa e hiperexpressão de <strong>VEGF</strong> (hipervascular).",
+              "Incidentaloma assintomático (&gt; 60%); Tríade tardia: hematúria + dor em flanco + massa palpável. Eritrocitose/EPO e Sd. Stauffer.",
+              "T1a (&le; 4 cm): <strong>Nefrectomia Parcial</strong>.<br>T1b-T3: Nefrectomia Radical.<br>Metastático: Imunoterapia (Anti-PD-1) + TKI anti-VEGF (Cabozantinibe/Axitinibe)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Pérolas Clínicas de Prova (High-Yield): As 'Pegadinhas' Mais Frequentes"
+        ],
+        [
+          "u",
+          [
+            "<strong>Pérola 1 (Toque Retal vs. PSA):</strong> <em>Nódulo pétreo ao toque retal exige SEMPRE biópsia prostática (mpMRI + biópsia por fusão), mesmo com PSA sérico normal (&lt; 2,0 ou &lt; 4,0 ng/mL)!</em> Cerca de 15-20% dos cânceres agressivos têm PSA normal.",
+            "<strong>Pérola 2 (O Ajuste do PSA pelo 5-ARI):</strong> <em>Finasterida e Dutasterida reduzem o PSA pela metade (50%) após 6 meses de uso contínuo!</em> Para interpretar o PSA de um paciente em uso de 5-ARI, <strong>multiplique o valor do laudo por 2</strong>. Se o PSA corrigido aumentar durante o tratamento, investigue câncer de próstata imediatamente.",
+            "<strong>Pérola 3 (Tansulosina e Catarata):</strong> <em>A Tansulosina causa Síndrome da Íris Frouxa Intraoperatória (IFIS) durante a facoemulsificação de catarata.</em> O oftalmologista deve ser avisado previamente para usar anéis expansores pupilares mecânicos.",
+            "<strong>Pérola 4 (O Divisor de Águas no Câncer de Bexiga):</strong> <em>A invasão da camada muscular própria (músculo detrusor - Estádio T2)</em> é o divisor absoluto que transforma o caso de uma doença tratável endoscopicamente por RTU para uma cirurgia de grande porte oncológica: Cistectomia Radical com Neoadjuvância de Cisplatina.",
+            "<strong>Pérola 5 (Hematúria em Tabagista):</strong> <em>Hematúria macroscópica indolor em paciente &gt; 40-50 anos tabagista é Câncer de Bexiga até que se realize Cistoscopia e Uro-TC contrastada com fase excretora!</em> Nunca prescreva antibiótico sem investigar.",
+            "<strong>Pérola 6 (Síndrome de Stauffer no Câncer Renal):</strong> <em>Colestase hepática anictérica (aumento de FA e GGT com bilirrubina normal) que reverte completamente após a nefrectomia.</em> É mediada por secreção tumoral paraneoplásica de Interleucina-6 (IL-6), sem indicar metástase hepática anatômica."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://portaldaurologia.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Urologia (SBU) — Diretrizes de Hiperplasia Prostática Benigna e Câncer de Próstata</a>",
+            "<a href=\"https://uroweb.org\" target=\"_blank\" rel=\"noopener noreferrer\">European Association of Urology (EAU) — Guidelines on Prostate Cancer, Non-Neurogenic Male LUTS, Renal Cell Carcinoma and Urothelial Carcinoma</a>",
+            "<a href=\"https://www.auanet.org\" target=\"_blank\" rel=\"noopener noreferrer\">American Urological Association (AUA) — Management of Lower Urinary Tract Symptoms Attributed to Benign Prostatic Hyperplasia & Early Detection of Prostate Cancer</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

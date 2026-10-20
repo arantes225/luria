@@ -1,0 +1,1204 @@
+{
+  "v": 2,
+  "s": "febre-sem-sinais-localizatorios",
+  "t": "Febre sem Sinais Localizatórios (FSSL) na Infância",
+  "p": "Febre sem Sinais Localizatórios (FSSL) na Infância — Livro-Texto LURIA",
+  "d": "Tratado completo de abordagem clínica, diagnóstica e terapêutica da febre sem sinais localizatórios (FSSL) em neonatos (< 28 dias), lactentes jovens (29 a 90 dias) e pré-escolares (3 a 36 meses). Aborda o screening séptico neonatal, critérios de baixo risco, escala comportamental de Yale, busca ativa de ITU oculta, bacteremia e pneumonia silenciosas, casos clínicos e questões comentadas de concursos médicos.",
+  "a": "Pediatria e Emergência Pediátrica",
+  "m": "Pediatria / Infectologia Pediátrica",
+  "h": [
+    "Apostila LURIA",
+    "Febre sem Sinais Localizatórios (FSSL) na Infância",
+    "Tratado completo de abordagem clínica, diagnóstica e terapêutica da febre sem sinais localizatórios (FSSL) em neonatos (< 28 dias), lactentes jovens (29 a 90 dias) e pré-escolares (3 a 36 meses). Aborda o screening séptico neonatal, critérios de baixo risco, escala comportamental de Yale, busca ativa de ITU oculta, bacteremia e pneumonia silenciosas, casos clínicos e questões comentadas de concursos médicos.",
+    [
+      "Área: Pediatria e Emergência Pediátrica",
+      "Matéria: Pediatria / Infectologia Pediátrica",
+      "Tema: Febre sem Sinais Localizatórios (FSSL) na Infância"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "definicao-clinica-e-epidemiologia-pos-vacinal",
+      "1. Definição Clínica, História Epidemiológica e o Impacto das Vacinas Conjugadas"
+    ],
+    [
+      "infeccoes-bacterianas-graves-ibg-e-o-espectro-oculto",
+      "2. O Espectro das Infecções Bacterianas Graves (IBG/IBO): Foco Urinário, Sepse e Bacteremia Oculta"
+    ],
+    [
+      "estratificacao-de-risco-neonatos-ate-28-dias",
+      "3. Estratificação de Risco no Período Neonatal (< 28 dias): A Abordagem de \"Tolerância Zero\""
+    ],
+    [
+      "lactentes-jovens-de-29-a-90-dias-rochester-e-boston",
+      "4. Lactentes Jovens de 29 a 90 Dias: Critérios de Baixo Risco de Rochester, Boston e Philadelphia"
+    ],
+    [
+      "lactentes-3-a-36-meses-escala-yale-itu-oculta",
+      "5. Abordagem Diagnóstica na Criança de 3 a 36 Meses: Escala de Yale e Triagem de ITU Oculta"
+    ],
+    [
+      "sepse-bacteremia-oculta-e-artrite-osteomielite",
+      "6. Sepse Oculta, Bacteremia Pneumocócica e Focos Profundos (Artrite/Osteomielite)"
+    ],
+    [
+      "casos-clinicos-estruturados-fssl",
+      "7. Casos Clínicos Estruturados: Tomada de Decisão na Emergência Pediátrica"
+    ],
+    [
+      "bateria-questoes-comentadas-fssl",
+      "8. Questões de Concursos Médicos Comentadas Passo a Passo"
+    ],
+    [
+      "kawasaki-precoce-e-mis-c-mimetizando-fssl",
+      "9. Diagnósticos Diferenciais Não Infecciosos Críticos: Doença de Kawasaki Precoce e MIS-C"
+    ],
+    [
+      "febre-medicamentosa-e-reacoes-pos-vacinais",
+      "10. Febre Medicamentosa e Reações Pós-Vacinais na Infância"
+    ],
+    [
+      "guia-conduta-rapida-fluxogramas-desospitalizacao",
+      "11. Guia Prático de Conduta Rápida, Fluxogramas por Idade e Desospitalização Segura"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "definicao-clinica-e-epidemiologia-pos-vacinal",
+      0,
+      [
+        [
+          "2",
+          "1. Definição Clínica, História Epidemiológica e o Impacto das Vacinas Conjugadas"
+        ],
+        [
+          "3",
+          "A Angústia Diagnóstica da Febre no Paciente Pediátrico"
+        ],
+        [
+          "p",
+          "A elevação da temperatura corpórea figura como a queixa clínica mais frequente nos serviços de emergência pediátrica e nas unidades básicas de saúde em todo o mundo, respondendo por cerca de 20% a 30% de todos os atendimentos ambulatoriais na infância. Na grande maioria dos casos, o pediatra identifica com facilidade o foco infeccioso na oroscopia (hiperemia de fauces, exsudato amigdaliano), na otoscopia pneumática (otite média aguda com abaulamento e hiperemia da membrana timpânica), no exame respiratório (taquipneia, estertores crepitantes) ou gastrointestinal (diarreia aguda e vômitos)."
+        ],
+        [
+          "p",
+          "Contudo, em aproximadamente 15% a 20% dos lactentes febris, o médico defronta-se com um dos cenários mais desafiadores da pediatria: a <strong>Febre sem Sinais Localizatórios (FSSL)</strong>, também amplamente denominada na literatura internacional como <em>Fever without Source (FWS)</em>."
+        ],
+        [
+          "p",
+          "<strong>Definição Clínica Canônica e Operacional de FSSL (SBP / AAP):</strong>"
+        ],
+        [
+          "p",
+          "<blockquote>\n    \"A Febre sem Sinais Localizatórios (FSSL) é definida rigorosamente pela presença de temperatura corpórea axilar $ge 37,8 - 38,0$ ºC (ou temperatura retal $ge 38,3$ ºC) com <strong>duração máxima de até 7 dias</strong>, na qual <strong>uma anamnese minuciosa associada a um exame físico pediátrico detalhado e completo não foram capazes de identificar qualquer foco evidente de infecção</strong>, acometendo tipicamente crianças <strong>menores de 36 meses (3 anos) de idade</strong>.\"\n  </blockquote>\n</div>"
+        ],
+        [
+          "3",
+          "Distinção Conceitual Crítica: FSSL versus Febre de Origem Indeterminada (FOI)"
+        ],
+        [
+          "p",
+          "Uma pegadinha clássica em provas de residência médica é a confusão deliberada entre FSSL e FOI. Observe o contraste conceitual intransponível:"
+        ],
+        [
+          "t",
+          [
+            "Critério Diferencial",
+            "Febre sem Sinais Localizatórios (FSSL)",
+            "Febre de Origem Indeterminada (FOI Pediátrica)"
+          ],
+          [
+            [
+              "<strong>Duração Temporal da Febre</strong>",
+              "<strong>Curta duração: menos de 7 dias</strong> (tipicamente 24 a 72 horas de evolução no pronto-socorro).",
+              "<strong>Longa duração: febre persistente por $ge 8$ a 14 dias</strong> (segundo a SBP) ou $ge 3$ semanas (critério clássico de Petersdorf)."
+            ],
+            [
+              "<strong>Faixa Etária Típica</strong>",
+              "<strong>Lactentes e crianças menores de 36 meses</strong> (período de extrema vulnerabilidade imunológica).",
+              "Qualquer faixa etária pediátrica (pré-escolares, escolares e adolescentes)."
+            ],
+            [
+              "<strong>Investigação Prévia</strong>",
+              "Nenhum exame prévio realizado; criança recém-chegada à emergência com exame físico normal.",
+              "Paciente submetido a extensa investigação laboratorial e radiológica hospitalar prévia por 1 semana sem diagnóstico."
+            ],
+            [
+              "<strong>Etiologia Mais Frequente</strong>",
+              "<strong>Infecções virais autolimitadas (90%)</strong> ou Infecção Bacteriana Grave Oculta (IBO - 10%).",
+              "Doenças infecciosas atípicas crônicas (tuberculose, bartonelose, CMV, endocardite), <strong>doenças reumatológicas autoimunes</strong> (Doença de Kawasaki, Artrite Idiopática Juvenil) e <strong>neoplasias</strong> (leucemias, linfomas, neuroblastoma)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Revolução Epidemiológica: A Era Pré-Vacinal versus A Era Pós-Vacinas Conjugadas"
+        ],
+        [
+          "p",
+          "A abordagem diagnóstica e a angústia em torno da FSSL sofreram uma transformação radical nas últimas três décadas, dividindo a história da infectologia pediátrica em duas eras distintas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. A Era Pré-Vacinas Conjugadas (Décadas de 1970 a 1990): O Pavor da Bacteremia Oculta por Hib e Pneumococo</strong>\n    <ul>\n      <li>Nesse período histórico, aproximadamente <strong>3% a 5% de todos os lactentes febris sem foco</strong> apresentavam <strong>Bacteremia Oculta (BO)</strong> no sangue periférico;",
+            "O principal agente etiológico era o <em>Streptococcus pneumoniae</em> (responsável por 80% a 85% das bacteremias ocultas), seguido pelo temido <strong><em>Haemophilus influenzae</em> tipo b (Hib)</strong> (responsável por 10% a 15% dos casos);",
+            "A bacteremia oculta por Hib era uma catástrofe clínica silenciosa: até 20% a 30% desses lactentes aparentemente bem evoluíam rapidamente para <strong>Meningite Bacteriana fulminante purulenta, celulite periorbitária, pericardite ou choque séptico</strong>;",
+            "Por essa razão, os protocolos clássicos da época (Protocolo de Boston, Rochester e Philadelphia da década de 1990) adotavam condutas agressivas: internação hospitalar universal e antibioticoterapia empírica maciça em quase todos os lactentes febris."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>2. A Era Pós-Vacinas Conjugadas Contemporânea (PNI Moderno no Brasil e no Mundo):</strong>"
+        ],
+        [
+          "u",
+          [
+            "A introdução e consolidação universal da <strong>Vacina Pentavalente (contendo Hib)</strong> em 1999 e da <strong>Vacina Pneumocócica Conjugada 10-valente (VPC-10)</strong> e 13-valente (VPC-13) em 2010 no Programa Nacional de Imunizações (PNI) provocou uma <strong>queda vertiginosa superior a 95% nas taxas de bacteremia oculta</strong> em crianças vacinadas;",
+            "Hoje, em crianças que receberam pelo menos <strong>duas doses da vacina pneumocócica conjugada e da vacina contra Hib</strong>, a taxa de bacteremia oculta despencou para <strong>menos de 0,2% a 0,5%</strong>!;",
+            "<strong>A Consequência Epidemiológica Soberana:</strong> A <strong>Infecção do Trato Urinário (ITU) Oculta assumiu o posto isolado de INFECÇÃO BACTERIANA GRAVE MAIS COMUM da criança com FSSL</strong> (responsável por mais de 80% a 90% de todas as infecções bacterianas ocultas na era pós-vacinal!)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "infeccoes-bacterianas-graves-ibg-e-o-espectro-oculto",
+      0,
+      [
+        [
+          "2",
+          "2. O Espectro das Infecções Bacterianas Graves (IBG/IBO): Foco Urinário, Sepse e Bacteremia Oculta"
+        ],
+        [
+          "3",
+          "O Conceito de Infecção Bacteriana Oculta (IBO / SBI - Serious Bacterial Infection)"
+        ],
+        [
+          "p",
+          "Embora mais de 85% a 90% dos lactentes que se apresentam com FSSL tenham como agente etiológico uma <strong>infecção viral benigna e autolimitada</strong> (vírus respiratórios sinciciais, enterovírus, adenovírus, herpes-vírus humano tipo 6 causando Exantema Súbito / Roséola, rinovírus, influenza e metapneumovírus), a missão do médico emergencista não é diagnosticar o vírus. Sua responsabilidade vital e indelegável é <strong>identificar os 10% a 15% de lactentes que albergam uma Infecção Bacteriana Grave Oculta (IBO)</strong> antes que ela evolua para choque séptico irreversível ou destruição parenquimatosa permanente."
+        ],
+        [
+          "p",
+          "O espectro clínico das Infecções Bacterianas Ocultas divide-se em quatro entidades patológicas essenciais:"
+        ],
+        [
+          "t",
+          [
+            "Entidade Clínica Oculta",
+            "Etiologia Microbiológica Típica",
+            "Prevalência na Era Vacinal Atual",
+            "Fisiopatologia e Risco Clínico Potencial"
+          ],
+          [
+            [
+              "<strong>1. Infecção do Trato Urinário Oculta (ITU)</strong><br>(Pielonefrite Aguda)",
+              "<strong><em>Escherichia coli</em> Uropatogênica (UPEC)</strong> (> 80%), <em>Klebsiella pneumoniae</em>, <em>Proteus mirabilis</em>, <em>Enterococcus faecalis</em>.",
+              "<strong>A Mais Frequente de Todas: 5% a 10%</strong> de todos os lactentes com FSSL (chega a 15% em meninas < 1 ano e 10% em meninos não circuncidados).",
+              "Ascensão bacteriana imperceptível pela uretra até o parênquima renal. Apresenta-se com febre isolada sem nenhum sintoma urinário verbalizável. Risco temido de cicatrizes renais parenquimatosas crônicas e hipertensão arterial secundária."
+            ],
+            [
+              "<strong>2. Bacteremia Oculta (BO)</strong>",
+              "<em>Streptococcus pneumoniae</em> (sorotipos não vacinais residuais), <em>Neisseria meningitidis</em>, <em>Staphylococcus aureus</em>, <em>Salmonella enterica</em> não tifóide.",
+              "<strong>Rara na era vacinal atual: < 0,5%</strong> em crianças imunizadas com 2+ doses de VPC-10/13.",
+              "Presença temporária e silenciosa de bactérias viáveis proliferando na corrente sanguínea de um lactente febril que <strong>não aparenta toxemia nem foco clínico inicial</strong>. Risco de \"semeadura hematogênica metastática\" para meninges, articulações e ossos."
+            ],
+            [
+              "<strong>3. Pneumonia Oculta (Bacteriana Sem Taquipneia Inicial)</strong>",
+              "<em>Streptococcus pneumoniae</em>, <em>Staphylococcus aureus</em>.",
+              "<strong>1% a 3%</strong> dos lactentes com leucocitose expressiva no sangue.",
+              "Consolidação alveolar lobar ou segmentar profunda em lobos inferiores ou retrocardíacos que não produz estertores auscultatórios audíveis nem tiragem precoce. Clássica em lactentes com leucocitose $> 20.000/\text{mm}^3$ e febre $> 39,0$ ºC."
+            ],
+            [
+              "<strong>4. Osteomielite Aguda e Artrite Séptica Oculta</strong>",
+              "<em>Staphylococcus aureus</em> (incluindo CA-MRSA), <em>Kingella kingae</em> (em lactentes < 2 anos), <em>Streptococcus pyogenes</em>.",
+              "$< 1%$ dos casos de FSSL.",
+              "Instalação insidiosa na metáfise de ossos longos (fêmur, tíbia) ou articulações profundas (quadril, joelho). O lactente manifesta febre e irritabilidade difusa ao ser manipulado na troca de fraldas (pseudoparalisia antálgica do membro), sem calor ou rubor óbvio inicial."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "A Definição de Ouro da Bacteremia Oculta (BO):"
+        ],
+        [
+          "p",
+          "<em>\"A Bacteremia Oculta é a presença confirmada de hemocultura positiva em uma criança com febre sem foco, com idade entre 3 e 36 meses, que <strong>apresenta BOM ESTADO GERAL e aparência clínica não toxêmica à inspeção médica inicial</strong>.\"</em>"
+        ],
+        [
+          "p",
+          "Se a criança febril com hemocultura positiva apresentar letargia, palidez terrosa, má perfusão periférica, cianose ou hipotensão, o quadro <strong>NÃO É BACTEREMIA OCULTA, MAS SIM SEPSE / CHOQUE SÉPTICO DECLARADO</strong>, exigindo ressuscitação volêmica imediata e antibioticoterapia venosa na primeira hora (Golden Hour)!"
+        ]
+      ]
+    ],
+    [
+      "estratificacao-de-risco-neonatos-ate-28-dias",
+      0,
+      [
+        [
+          "2",
+          "3. Estratificação de Risco no Período Neonatal (< 28 dias): A Abordagem de \"Tolerância Zero\""
+        ],
+        [
+          "3",
+          "O Princípio Biológico da \"Tolerância Zero\" no Recém-Nascido Febril"
+        ],
+        [
+          "p",
+          "No atendimento pediátrico, a presença de febre confirmada ($ge 38,0$ ºC) em um recém-nascido com menos de 28 dias de vida é considerada uma <strong>EMERGÊNCIA MÉDICA GRAVE</strong>. Nessa faixa etária, não existe o conceito de \"baixo risco clínico\" que autorize a alta domiciliar ou a observação ambulatorial sem exames invasivos."
+        ],
+        [
+          "p",
+          "As razões fisiopatológicas para essa conduta categórica decorrem da profunda <strong>imaturidade imunológica do neonato</strong>:"
+        ],
+        [
+          "u",
+          [
+            "Imaturidade da barreira hematoencefálica (altíssima permeabilidade para a passagem de bactérias periféricas diretamente para o líquor cefalorraquidiano);",
+            "Diminuição fisiológica do sistema do complemento sérico e dos níveis de fibronectina (deprimindo a opsonização bacteriana);",
+            "Quimiotaxia de neutrófilos e atividade bactericida fagocítica amplamente deficitárias;",
+            "Incapacidade fisiológica de restringir infecções bacterianas a focos anatômicos localizados: qualquer foco menor evolui rapidamente para bacteremia generalizada e sepse neonatal;",
+            "Quadro clínico frustro: o neonato séptico não apresenta rigidez de nuca clássica (a fontanela pode estar normotensa ou discretamente abaulada apenas nas fases finais), manifestando-se apenas com instabilidade térmica (frequentemente hipotermia em vez de febre!), letargia, sucção débil no seio materno, vômitos, icterícia tardia e gemência expiratória intermitente."
+          ]
+        ],
+        [
+          "3",
+          "A Investigação Laboratorial Obrigatória: O \"Screening Séptico Completo\""
+        ],
+        [
+          "p",
+          "Todo recém-nascido com $< 28$ dias com febre sem foco identificável deve ser <strong>obrigatoriamente INTERNADO EM LEITO HOSPITALAR</strong> e submetido imediatamente ao rastreamento laboratorial e liquórico exaustivo (Sepse Workup):"
+        ],
+        [
+          "p",
+          "<strong>Protocolo Mandatório do Screening Séptico Neonatal:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Hemograma Completo com Contagem de Plaquetas:</strong> Avaliação do índice neutrofílico (relação I/T - Imaturos/Totais $ge 0,20$ sugere fortemente infecção bacteriana);",
+            "<strong>Provas de Fase Aguda Inflamatórias:</strong> Proteína C-Reativa (PCR) quantitativa e Procalcitonina sérica;",
+            "<strong>Hemocultura em Duas Amostras:</strong> Coleta com antissepsia rigorosa de sítios periféricos distintos antes de qualquer dose de antibiótico;",
+            "<strong>Urina Tipo 1 (EAS) e Urocultura Quantitativa:</strong> <strong>OBRIGATORIAMENTE COLETADA POR PUNÇÃO SUPRAPÚBICA (PSP) OU CATETERISMO VESICAL ALIVIADOR ESTÉRIL</strong>. <em>É terminantemente proibido o uso de saco coletor autoadesivo em neonatos!</em>;",
+            "<strong>Punção Lombar (PL) Diagnóstica com Análise Completa do Líquor:</strong> Citometria total e específica (pleocitose), bioquímica (glicorraquia pareada com glicemia sérica e proteinorraquia), bacterioscopia pelo Gram e cultura bacteriana quantitativa com antibiograma;",
+            "<strong>Radiografia de Tórax em Duas Projeções:</strong> Mesmo na ausência de sintomas respiratórios expressivos, para descartar pneumonia neonatal subclínica precoce."
+          ]
+        ],
+        [
+          "3",
+          "Esquema Antimicrobiano Empírico Parenteral de Escolha no Neonato"
+        ],
+        [
+          "p",
+          "Imediatamente após a conclusão das coletas de culturas biológicas (sangue, urina e líquor), <strong>inicia-se antibioticoterapia venosa empírica de amplo espectro na primeira hora</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Esquema Antimicrobiano Parenteral de Primeira Linha",
+            "Doses e Posologias Neonatais Padronizadas",
+            "Espectro Microbiológico Coberto no Período Neonatal"
+          ],
+          [
+            [
+              "<strong>Ampicilina IV + Gentamicina IV</strong><br>(ou Ampicilina IV + Cefotaxima IV)",
+              "<strong>Ampicilina:</strong> $100$ a $200$ mg/kg/dia divididos de 6/6h ou 8/8h (na meningite neonatal, eleva-se para $200-300$ mg/kg/dia).<br><strong>Gentamicina:</strong> $4$ a $5$ mg/kg/dia em dose única diária a cada 24 horas.<br><em>(Ou Cefotaxima: $100-150$ mg/kg/dia divididos de 8/8h).</em>",
+              "<ul>\n          <li><strong><em>Streptococcus agalactiae</em> (Strepto do Grupo B - GBS):</strong> Principal causador de sepse precoce e meningite, coberto pela Ampicilina;</li>\n          <li><strong><em>Listeria monocytogenes</em>:</strong> Bastonete gram-positivo transmitido por via transplacentária ou canal de parto, coberto soberanamente pela Ampicilina (cefalosporinas NÃO Cobrem Listeria!);</li>\n          <li><strong><em>Escherichia coli</em> e Bacilos Gram-Negativos Entéricos:</strong> Cobertos pela Gentamicina ou pela Cefotaxima.</li>\n        </ul>"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Atenção Máxima para a Pegadinha Fatal da Ceftriaxona no Período Neonatal:"
+        ],
+        [
+          "p",
+          "<strong>Por que a Ceftriaxona é FORMALMENTE CONTRAINDICADA em Recém-Nascidos (< 28 dias)?</strong>"
+        ],
+        [
+          "p",
+          "<em>Portanto, se a banca de prova colocar como alternativa \"Ceftriaxona para recém-nascido de 15 dias de vida\", descarte a opção imediatamente! A cefalosporina de 3ª geração indicada no neonato é a <strong>Cefotaxima</strong>.</em>"
+        ]
+      ]
+    ],
+    [
+      "lactentes-jovens-de-29-a-90-dias-rochester-e-boston",
+      0,
+      [
+        [
+          "2",
+          "4. Lactentes Jovens de 29 a 90 Dias: Critérios de Baixo Risco de Rochester, Boston e Philadelphia"
+        ],
+        [
+          "3",
+          "O Dilema dos Lactentes de 1 a 3 Meses de Vida"
+        ],
+        [
+          "p",
+          "No intervalo etário de <strong>29 a 90 dias de vida</strong>, a fisiologia imunológica da criança encontra-se em uma fase de transição complexa: os anticorpos maternos transferidos por via transplacentária (IgG) sofrem catabolismo progressivo, enquanto a produção de imunoglobulinas endógenas e a resposta linfocitária do lactente ainda estão amadurecendo. Embora alguns desses lactentes possam apresentar infecções bacterianas graves e fulminantes, muitos apresentam apenas viroses respiratórias autolimitadas."
+        ],
+        [
+          "p",
+          "Para evitar a internação hospitalar indiscriminada e procedimentos invasivos dolorosos em crianças saudáveis, a literatura pediátrica mundial desenvolveu os consagrados <strong>Critérios de Baixo Risco</strong> (destacando-se os Critérios de Rochester, Boston e Philadelphia):"
+        ],
+        [
+          "3",
+          "Os Critérios Clássicos de Baixo Risco de Rochester (Rochester Criteria)"
+        ],
+        [
+          "p",
+          "Formulados pela Universidade de Rochester (Nova York) por Dagan e Powell, são os critérios laboratoriais e clínicos mais cobrados em concursos:"
+        ],
+        [
+          "t",
+          [
+            "Eixo de Avaliação",
+            "Critérios Obrigatórios para Ser Classificado como \"BAIXO RISCO\""
+          ],
+          [
+            [
+              "<strong>1. Critérios Clínicos de História</strong>",
+              "<ul>\n          <li>Nascido a termo ($ge 37$ semanas gestacionais) e sem complicações no parto;</li>\n          <li>Sem histórico de hospitalização ou internação prévia;</li>\n          <li>Sem tratamento prévio com antibióticos;</li>\n          <li>Sem doenças crônicas ou de base (sem cardiopatias, neuropatias ou malformações).</li>\n        </ul>"
+            ],
+            [
+              "<strong>2. Critérios de Exame Físico</strong>",
+              "<ul>\n          <li><strong>Bom estado geral preservado</strong>: criança ativa, alerta, corada, hidratada e responsiva;</li>\n          <li>Sem qualquer sinal de toxemia sistêmica ou letargia;</li>\n          <li>Ausência de qualquer foco infeccioso localizatório (ouvidos normais, tórax limpo, pele e partes moles sem celulite ou artrite).</li>\n        </ul>"
+            ],
+            [
+              "<strong>3. Critérios Laboratoriais Rigorosos</strong>",
+              "<ul>\n          <li><strong>Leucócitos no sangue periférico:</strong> entre <strong>$5.000$ e $15.000/\text{mm}^3$</strong>;</li>\n          <li><strong>Contagem de neutrófilos bastonetes (formas jovens imaturas):</strong> $< 1.500/\text{mm}^3$ (ou relação I/T $< 0,15$ a $0,20$);</li>\n          <li><strong>Exame de Urina Tipo 1 (EAS):</strong> normal ($< 10$ leucócitos por campo de 400x);</li>\n          <li><strong>Leucócitos fecais:</strong> $< 5$ leucócitos por campo (caso haja diarreia associada).</li>\n        </ul>"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>O Poder dos Critérios de Rochester:</strong>"
+        ],
+        [
+          "p",
+          "O <strong>Valor Preditivo Negativo (VPN)</strong> dos Critérios de Rochester preenchidos na sua totalidade é de impressionantes <strong>$98,5%$ a $99%$</strong>! Isso significa que um lactente de 29 a 90 dias que satisfaça rigorosamente a TODOS os critérios de Rochester tem menos de 1% a 1,5% de probabilidade de apresentar uma Infecção Bacteriana Oculta."
+        ],
+        [
+          "3",
+          "Conduta Prática e Manejo nos Lactentes de 29 a 90 Dias"
+        ],
+        [
+          "u",
+          [
+            "<strong>Se a Criança Preenche TODOS os Critérios de Baixo Risco de Rochester:</strong>\n    <ul>\n      <li>Pode ser manejada <strong>ambulatorialmente em domicílio SEM ANTIBIÓTICO</strong>, desde que: (1) Os pais sejam esclarecidos e tenham telefone de contato; (2) Tenham condições de retornar imediatamente ao hospital em caso de piora; e (3) Haja <strong>retorno presencial obrigatório agendado em 24 a 48 horas</strong> para reavaliação clínica e leitura das culturas;",
+            "<em>Alternativa clássica de Boston:</em> Administrar uma dose profilática intramuscular de Ceftriaxona ($50$ mg/kg) no momento da alta ambulatorial e reavaliar no dia seguinte (conduta menos adotada hoje na era pós-vacinas conjugadas)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Se a Criança NÃO PREENCHE qualquer um dos critérios de baixo risco (ALTO RISCO):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Internação hospitalar obrigatória</strong>;",
+            "Coleta de <strong>Líquor por Punção Lombar</strong>, hemoculturas e urocultura por cateterismo;",
+            "Início imediato de <strong>Ceftriaxona IV ($50-75$ mg/kg/dia)</strong> ou Cefotaxima IV (associada a Ampicilina se houver suspeita de meningite por <em>Listeria</em>)."
+          ]
+        ],
+        [
+          "3",
+          "A Moderna Diretriz da Academia Americana de Pediatria (AAP 2021) para 8 a 60 Dias"
+        ],
+        [
+          "p",
+          "Em diretriz histórica publicada em 2021, a AAP refinou a abordagem dos lactentes de 29 a 60 dias incorporando novos <strong>Biomarcadores Inflamatórios de Alta Sensibilidade</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Procalcitonina Sérica:</strong> Considerada de baixo risco quando <strong>$< 0,5$ ng/mL</strong>;",
+            "<strong>Proteína C-Reativa (PCR) Quantitativa:</strong> Considerada de baixo risco quando <strong>$< 20$ mg/L</strong>;",
+            "<strong>Contagem Absoluta de Neutrófilos (ANC):</strong> Considerada de baixo risco quando <strong>$< 4.000/\text{mm}^3$</strong> (ou leucócitos $< 15.000/\text{mm}^3$)."
+          ]
+        ],
+        [
+          "p",
+          "Na vigência de bom estado geral, urina normal e biomarcadores baixos (procalcitonina $< 0,5$ e PCR $< 20$), a diretriz da AAP autoriza a <strong>DISPENSA DA PUNÇÃO LOMBAR em lactentes entre 29 e 60 dias</strong>, mantendo apenas acompanhamento clínico vigilante ambulatorial."
+        ]
+      ]
+    ],
+    [
+      "lactentes-3-a-36-meses-escala-yale-itu-oculta",
+      0,
+      [
+        [
+          "2",
+          "5. Abordagem Diagnóstica na Criança de 3 a 36 Meses: Escala de Yale e Triagem de ITU Oculta"
+        ],
+        [
+          "3",
+          "O Cenário Epidemiológico e Clínico dos Lactentes e Pré-Escolares (3 a 36 Meses)"
+        ],
+        [
+          "p",
+          "A faixa etária de 3 a 36 meses compreende a vasta maioria das consultas de pronto-atendimento pediátrico por febre sem sinais localizatórios (FSSL). Nesse grupo etário, o sistema imunológico encontra-se em fase ativa de maturação: a imunidade passiva transmitida pelos anticorpos maternos transplacentários (IgG) sofreu declínio acentuado por volta dos 3 a 6 meses de vida, enquanto a produção endógena de anticorpos polissacarídicos ainda é parcial."
+        ],
+        [
+          "p",
+          "Contudo, nas crianças com o esquema vacinal atualizado — contendo ao menos duas doses da vacina pneumocócica conjugada (VPC-10 ou VPC-13) e da vacina conjugada contra o <em>Haemophilus influenzae</em> tipo b (Hib) —, o risco de bacteremia oculta despencou de valores históricos de $3-5%$ para taxas inferiores a $0,5%$. Em contrapartida, a <strong>Infecção do Trato Urinário (ITU) Oculta</strong> ascendeu para o posto incontestável de infecção bacteriana grave (IBG) mais frequente nessa faixa de idade, acometendo entre $3%$ e $8%$ de todos os lactentes febris sem foco aparente."
+        ],
+        [
+          "3",
+          "A Escala de Observação de Yale (Yale Observation Scale - YOS)"
+        ],
+        [
+          "p",
+          "Desenvolvida pioneiramente por McCarthy e colaboradores em 1982, a Escala de Observação de Yale (YOS) permanece como o instrumento semiológico clássico e padronizado para discriminar objetivamente a \"toxicidade clínica\" e o risco de sepse ou bacteremia em crianças de 3 a 36 meses com febre aguda. A escala avalia <strong>6 variáveis comportamentais e físicas fundamentais</strong>, pontuando cada item em três níveis de gravidade: <strong>1 ponto</strong> (normal/ótimo), <strong>3 pontos</strong> (anormalidade moderada) ou <strong>5 pontos</strong> (anormalidade severa/tóxico):"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro Semiológico Avaliado",
+            "Escore 1 (Normal / Bom Estado Geral)",
+            "Escore 3 (Comprometimento Moderado)",
+            "Escore 5 (Gravemente Comprometido / Tóxico)"
+          ],
+          [
+            [
+              "<strong>1. Qualidade do Choro</strong>",
+              "Choro forte com tonalidade habitual, ou não está chorando (tranquilo).",
+              "Gemência intermitente ou choro choroso / lamentoso.",
+              "Choro fraco, gemência expiratória contínua ou choro agudo e estridente."
+            ],
+            [
+              "<strong>2. Reação ao Estímulo dos Pais</strong>",
+              "Para de chorar rapidamente quando acolhido, consolado ou amamentado no colo.",
+              "Chora e para de forma intermitente; consolo difícil e transitório.",
+              "Choro inconsolável e persistente, ou indiferença total à presença materna/paterna."
+            ],
+            [
+              "<strong>3. Estado de Alerta e Vigília</strong>",
+              "Se acordado, permanece alerta e vigil; se dormindo, desperta prontamente ao estímulo verbal ou táctil leve.",
+              "Fecha os olhos rapidamente se deixado quieto; desperta apenas após estímulo moderado repetido.",
+              "Não desperta ou quase não responde a estímulos dolorosos/mecânicos; letargia e estupor."
+            ],
+            [
+              "<strong>4. Coloração Cutânea</strong>",
+              "Rósea, coloração habitual em extremidades e mucosas.",
+              "Extremidades pálidas ou acrocianose discreta sem hipotermia central.",
+              "Palidez cutânea generalizada, cianose labial/facial ou pele mosqueada e rendilhada (livedo reticular)."
+            ],
+            [
+              "<strong>5. Estado de Hidratação</strong>",
+              "Pele turgente, mucosas orais úmidas, presença de lágrimas ativas ao choro.",
+              "Mucosas orais secas, olhos discretamente encovados, saliva escassa.",
+              "Pele pastosa, mucosas ressequidas, ausência absoluta de lágrimas, olhos encovados com fontanela deprimida."
+            ],
+            [
+              "<strong>6. Resposta Social e Interação Ambiental</strong>",
+              "Sorri espontaneamente ou responde com contato visual e interesse ativo pelo examinador e brinquedos.",
+              "Breve sorriso hesitante, contato visual fugaz, pouco interesse no ambiente circundante.",
+              "Fácies inexpressiva (\"olhar parado\"), ausência de contato visual e sem sorriso, indiferença absoluta ao meio."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Interpretação Clínica e Pontuação Total da Escala de Yale (YOS):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Escore Total $le 10$ pontos:</strong> Criança em <strong>BOM ESTADO GERAL</strong>. A probabilidade de Infecção Bacteriana Grave é inferior a $1,5-2,7%$. Condução orientada pelo perfil vacinal e busca ativa de ITU oculta.",
+            "<strong>Escore Total de 11 a 15 pontos:</strong> Estado geral <strong>DUBIO / MODERADAMENTE COMPROMETIDO</strong>. Risco intermediário de IBG (cerca de $26%$). Exige investigação laboratorial pormenorizada e período de observação clínica monitorada em pronto-socorro.",
+            "<strong>Escore Total $ge 16$ pontos:</strong> Criança <strong>TÓXICA / GRAVEMENTE COMPROMETIDA</strong>. Risco de Infecção Bacteriana Grave superior a $92%$. Conduta imediata: estabilização hemodinâmica (protocolo de sepse PALS), expansão volêmica, coleta integral de exames (sangue, urina e líquor se hemodinamicamente estável) e início precoce de antibioticoterapia venosa parenteral de amplo espectro na primeira hora."
+          ]
+        ],
+        [
+          "3",
+          "Algoritmo Decisório na Criança de 3 a 36 Meses em Bom Estado Geral"
+        ],
+        [
+          "p",
+          "Quando a criança entre 3 e 36 meses apresenta escore de Yale $le 10$ (sem toxemia) e o exame físico detalhado não revela nenhum foco infeccioso aparente (oroscopia sem placas, otoscopia bilateral límpida, ausculta pulmonar simétrica e sem estertores, abdome flácido, ausência de petéquias ou exantemas), o raciocínio clínico bifurca-se rigorosamente com base em dois pilares:"
+        ],
+        [
+          "o",
+          [
+            "<strong>O Status Vacinal da Criança:</strong>\n    <ul>\n      <li><em>Criança Totalmente Vacinada:</em> Recebeu ao menos 2 doses da vacina pneumocócica conjugada (VPC-10 ou VPC-13) e da vacina pentavalente (com componente anti-Hib). Nessa condição, o risco residual de bacteremia oculta é irrisório ($< 0,5%$). Não há indicação de coleta rotineira de hemograma ou hemocultura em crianças sem toxemia!",
+            "<em>Criança Não Vacinada ou com Esquema Vacinal Atrasado (< 2 doses de VPC/Hib):</em> Risco de bacteremia oculta por <em>Streptococcus pneumoniae</em> e <em>Haemophilus influenzae</em> tipo b permanece significativo ($3-5%$). Requer solicitação de Hemograma Completo com Leucograma e Hemocultura se febre $ge 39,0$ ºC axilar.",
+            "<strong>A Triagem Estratificada de Infecção do Trato Urinário (ITU) Oculta:</strong>\n    <p>A ITU é a principal armadilha diagnóstica no lactente febril, pois em menores de 2 anos a pielonefrite aguda manifesta-se unicamente com febre isolada, sem disúria, polaciúria ou dor lombar perceptíveis. A Academia Americana de Pediatria (AAP) e a Sociedade Brasileira de Pediatria (SBP) estabelecem fatores de risco clínicos bem definidos para indicar a coleta de urina:</p>"
+          ]
+        ],
+        [
+          "4",
+          "Critérios Mandatórios para Coleta de Urina na Febre sem Foco (3 a 24 meses):"
+        ],
+        [
+          "p",
+          "<strong>1. Meninos:</strong>"
+        ],
+        [
+          "p",
+          "<strong>2. Meninas:</strong>"
+        ],
+        [
+          "3",
+          "Método de Coleta de Urina: O Erro Crasso do Saco Coletor Autoadesivo"
+        ],
+        [
+          "p",
+          "Um dos pontos mais frequentemente cobrados em concursos médicos de residência e revalidação de diplomas diz respeito ao método de amostragem urinária no lactente sem controle esfincteriano:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Saco Coletor de Urina Autoadesivo:</strong> Apresenta uma taxa de <strong>falso-positivo para cultura bacteriana superior a $85%$</strong> devido à contaminação obrigatória pela flora perineal e fecal. Seu valor reside unicamente no seu <em>alto valor preditivo negativo (VPN)</em>: se a fita reagente e o sedimento urinário forem rigorosamente límpidos (esterase leucocitária negativa e nitrito negativo), a ITU pode ser temporariamente descartada. Todavia, <strong>JAMAIS SE INICIA TRATAMENTO OU SE FECHA DIAGNÓSTICO DE ITU COM UROCULTURA DE SACO COLETOR!</strong> Se o exame de triagem vier positivo ou alterado, é compulsória a recoleta por método estéril;",
+            "<strong>Cateterismo Vesical Aliviador Estéril (Sondagem Vesical):</strong> É o método preferencial de rotina na pediatria de urgência. Sensibilidade e especificidade elevadíssimas ($> 95%$). Considera-se urocultura positiva o crescimento de <strong>$ge 50.000$ UFC/mL</strong> de um único patógeno bacteriano uropatogênico (ou $ge 10.000$ UFC/mL se fita reagente com piúria franca);",
+            "<strong>Punção Suprapúbica (PSP):</strong> Padrão-ouro histórico absoluto. Indicada especialmente quando há fimose cerrada intratável, aderência labial severa ou necessidade urgente antes de início de antibióticos. Por se tratar de amostra estéril colhida diretamente da bexiga, <strong>qualquer crescimento bacteriano (mesmo $ge 1$ única colônia de bacilo gram-negativo) é diagnóstico confirmatório de ITU</strong>."
+          ]
+        ]
+      ]
+    ],
+    [
+      "sepse-bacteremia-oculta-e-artrite-osteomielite",
+      0,
+      [
+        [
+          "2",
+          "6. Sepse Oculta, Bacteremia Pneumocócica e Focos Profundos (Artrite/Osteomielite)"
+        ],
+        [
+          "3",
+          "Fisiopatologia da Bacteremia Oculta"
+        ],
+        [
+          "p",
+          "Define-se <strong>Bacteremia Oculta (BO)</strong> como a presença de microrganismos bacterianos viáveis circulando na corrente sanguínea de uma criança febril que aparenta bom estado geral (escore de Yale $le 10$) e na qual a anamnese detalhada e o exame físico minucioso não identificam qualquer foco infeccioso localizatório. Trata-se, portanto, de um diagnóstico laboratorial e microbiológico retrospectivo, firmado pelo isolamento bacteriano em hemocultura."
+        ],
+        [
+          "p",
+          "Na era pré-vacinal, o agente etiológico dominante de bacteremia oculta era o <em>Streptococcus pneumoniae</em> (responsável por mais de $85%$ dos casos), seguido em menor proporção pelo <em>Haemophilus influenzae</em> tipo b ($10%$) e <em>Neisseria meningitidis</em> ($1-3%$). A relevância da identificação precoce da bacteremia oculta residia no risco de disseminação metastática hematogênica: sem intervenção antimicrobiana, cerca de $5-10%$ dos pacientes com bacteremia pneumocócica e até $30-50%$ daqueles com bacteremia por <em>H. influenzae</em> b ou meningococo evoluíam para <strong>meningite purulenta</strong>, choque séptico, osteomielite, artrite séptica ou celulite fulminante."
+        ],
+        [
+          "3",
+          "A Pneumonia Oculta: Quando Indicar a Radiografia de Tórax?"
+        ],
+        [
+          "p",
+          "Outra grande armadilha clínica na febre sem sinais localizatórios em crianças pequenas é a chamada <strong>Pneumonia Oculta (ou Pneumonia Silenciosa)</strong>. Lactentes e crianças com menos de 2 anos de idade com condensação alveolar subpleural ou lobar podem, não raramente, não apresentar tiragem intercostal evidente, taquipneia ou estertoração audível à ausculta em estágios iniciais, exibindo apenas febre elevada isolada e prostração branda."
+        ],
+        [
+          "p",
+          "<strong>Critérios Clássicos para Solicitação de Radiografia de Tórax em Crianças com FSSL (Bachar et al. / AAP):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Criança com febre de magnitude elevada: <strong>Temperatura axilar $ge 39,0$ ºC</strong> (ou retal $ge 39,5$ ºC);",
+            "Associada a <strong>Leucocitose importante no hemograma: Leucócitos totais $ge 20.000/\text{mm}^3$</strong>;",
+            "E/ou <strong>Neutrofilia absoluta acentuada: Contagem total de neutrófilos $ge 10.000/\text{mm}^3$</strong>;",
+            "Qualquer sinal respiratório sutil, como taquipneia limítrofe (definida pela OMS como FR $> 50$ irpm em lactentes de 2 a 11 meses e $> 40$ irpm em crianças de 12 a 59 meses) ou discreto batimento de asa de nariz intermitente."
+          ]
+        ],
+        [
+          "p",
+          "<em>Racional Clínico:</em> Em estudos de coorte prospectivos, até $20-25%$ das crianças febris sem sinais auscultatórios que preenchiam esses critérios de febre elevada e leucocitose $> 20.000/\text{mm}^3$ exibiam consolidação pneumônica radiológica nítida na radiografia de tórax."
+        ],
+        [
+          "3",
+          "Conduta Frente à \"Hemocultura Positiva que Retorna em 24 a 48 Horas\""
+        ],
+        [
+          "p",
+          "Um dos cenários mais emblemáticos e recorrentes em provas de residência médica de grande concorrência (como ENARE, USP, UNIFESP, UNICAMP) é o manejo da criança atendida no dia anterior com febre sem foco, da qual foi colhida hemocultura ambulatorial, e cujo laboratório de microbiologia telefona 24 a 48 horas depois avisando que o frasco <strong>\"positivou para cocos gram-positivos em pares e cadeias\"</strong> (compatível com <em>Streptococcus pneumoniae</em>) ou <strong>\"bastonetes gram-negativos\"</strong>."
+        ],
+        [
+          "p",
+          "O médico plantonista deve convocar a família <strong>IMEDIATAMENTE</strong> para reavaliação presencial no serviço de urgência, aplicando o algoritmo clássico de conduta baseado no estado clínico atual da criança:"
+        ],
+        [
+          "t",
+          [
+            "Estado Clínico no Retorno Presencial",
+            "Patógeno Identificado na Hemocultura",
+            "Conduta Terapêutica Imediata Obrigatória"
+          ],
+          [
+            [
+              "<strong>Criança Afebril e em Excelente Estado Geral</strong><br>(Yale $le 10$, brincando, alimentando-se bem)",
+              "<strong><em>Streptococcus pneumoniae</em></strong><br>(Bacteremia pneumocócica autolimitada ou transitória)",
+              "<ol>\n          <li>Exame físico minucioso de cabo a rabo (descartar otite média aguda, focos osteoarticulares, petéquias);</li>\n          <li>Coletar <strong>nova hemocultura de controle</strong> para verificar clareamento bacterêmico;</li>\n          <li>Iniciar <strong>Amoxicilina em altas doses ($80-90$ mg/kg/dia VO)</strong> por 7 a 10 dias para erradicar colonização e prevenir recaída;</li>\n          <li>Se a nova hemocultura vier negativa e a criança permanecer assintomática, seguimento ambulatorial com segurança.</li>\n        </ol>"
+            ],
+            [
+              "<strong>Criança Permanece Febril ou com Piora do Estado Geral</strong><br>(Yale $> 10$, prostrada, irritada, inapetente)",
+              "<strong>Qualquer Bactéria</strong><br>(<em>S. pneumoniae</em>, <em>H. influenzae</em>, <em>N. meningitidis</em>, <em>S. aureus</em>)",
+              "<ol>\n          <li><strong>INTERNAÇÃO HOSPITALAR IMEDIATA</strong>;</li>\n          <li><strong>Realizar Punção Lombar diagnóstica compulsória</strong> (altíssimo risco de meningite purulenta secundária à bacteremia persistente);</li>\n          <li>Coletar nova hemocultura pareada, urina estéril e radiografia de tórax;</li>\n          <li>Instalar <strong>Ceftriaxona IV ($100$ mg/kg/dia)</strong> em dose meningítica imediatamente.</li>\n        </ol>"
+            ],
+            [
+              "<strong>Criança em Qualquer Estado (Mesmo afebril)</strong>",
+              "<strong><em>Neisseria meningitidis</em></strong> ou <strong><em>Haemophilus influenzae</em> tipo b</strong>",
+              "<ol>\n          <li><strong>INTERNAÇÃO HOSPITALAR OBRIGATÓRIA</strong> independente do aspecto clínico momentâneo;</li>\n          <li>Screening completo com <strong>Punção Lombar</strong> imediata;</li>\n          <li>Ceftriaxona parenteral IV;</li>\n          <li>Notificação epidemiológica compulsória imediata e quimioprofilaxia de contatos domiciliares próximos com Rifampicina ou Ceftriaxona dose única.</li>\n        </ol>"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Focos Profundos Ocultos: A Armadilha da Artrite Séptica e Osteomielite Aguda"
+        ],
+        [
+          "p",
+          "Em lactentes com menos de 1 ano de vida, os vasos sanguíneos da metáfise óssea atravessam livremente a placa epifisária de crescimento (fise cartilaginosa), comunicando a medula óssea diretamente com o espaço articular sinovial. Em razão dessa anatomia vascular vascular particular do lactente, uma bacteremia transitória por <em>Staphylococcus aureus</em>, <em>Streptococcus pyogenes</em> ou <em>Kingella kingae</em> pode se alojar silenciosamente na metáfise fêmuro-tibial e romper para dentro da cápsula articular em questão de horas."
+        ],
+        [
+          "p",
+          "O quadro inicial é enganoso e frequentemente rotulado como febre sem sinais localizatórios até que o examinador atento perceba a <strong>pseudoparalisia antálgica do membro</strong>:"
+        ],
+        [
+          "u",
+          [
+            "O lactente recusa-se a movimentar a perna ou o braço acometido, mantendo o membro fletido e em rotação externa (posição que maximiza o volume capsular e minimiza a dor intracapsular da articulação coxofemoral);",
+            "Choro intenso e inconsolável à simples troca de fraldas ou durante a palpação gentil dos trocanteres e joelhos;",
+            "A elevação da proteína C-reativa (PCR $> 20$ mg/L) e da VHS ($> 30$ mm/h) são marcadores precoces que antecedem em até 10 a 14 dias o aparecimento de lesões osteolíticas na radiografia simples;",
+            "A ultrassonografia articular é o exame de imagem inicial de eleição na suspeita clínica, demonstrando prontamente espessamento sinovial e derrame articular purulento, exigindo artrocentese diagnóstica e descompressão cirúrgica de emergência."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-estruturados-fssl",
+      0,
+      [
+        [
+          "2",
+          "7. Casos Clínicos Estruturados: Tomada de Decisão na Emergência Pediátrica"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: O Neonato Febril de 18 Dias e a Armadilha da Falsa Tranquilidade"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História Clínica:</strong> Recém-nascido do sexo masculino, 18 dias de vida, nascido de parto vaginal a termo (39 semanas), sem intercorrências no pré-natal ou parto (cultura materna para <em>Streptococcus agalactiae</em> negativa com 36 semanas). É trazido ao pronto-socorro infantil pelos pais devido a episódio único de febre aferida em domicílio com termômetro digital axilar de $38,2$ ºC há 3 horas. Os pais relatam que deram banho morno e a temperatura baixou para $37,1$ ºC, mas notaram que a criança \"mamou um pouco menos na última mamada\"."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico na Admissão:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Dilema Clínico e Conduta Médica Discutida:</strong>"
+        ],
+        [
+          "p",
+          "O médico residente questiona se, estando a criança afebril e ativa no momento da consulta física, seria possível apenas orientar os pais e dar alta hospitalar com retorno em 24 horas."
+        ],
+        [
+          "p",
+          "<strong>Resposta e Justificativa Baseada em Evidências:</strong> <em>CONDUTA TOTALMENTE INADEQUADA E DE ALTO RISCO DE MORTE!</em> Em neonatos com menos de 28 dias de vida, <strong>NÃO EXISTE \"BAIXO RISCO\"</strong>. A febre relatada em domicílio por método confiável ($ge 38,0$ ºC) tem o mesmo valor prognóstico que a febre aferida no hospital. O exame físico no neonato é notadamente insensível para descartar sepse precoce ou tardia e meningite."
+        ],
+        [
+          "p",
+          "<strong>Conduta Executada:</strong>"
+        ],
+        [
+          "3",
+          "Caso Clínico 2: A Lactente de 11 Meses e a Febre Elevada sem Foco com Convulsão Febril"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História Clínica:</strong> Lactente de 11 meses de idade, sexo feminino, previamente hígida, com caderneta de vacinação rigorosamente em dia (incluindo 3 doses de vacina pentavalente e 2 doses de vacina pneumocócica 10-valente). Dá entrada na sala de emergência após episódio de abalos tônico-clônicos generalizados durando cerca de 2 minutos, acompanhados de desvio do olhar para cima e liberação esfincteriana fecal, cessando espontaneamente. No momento do atendimento, apresenta febre de $39,6$ ºC."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico Imediato (Pós-Ictal Imediato):</strong>"
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico Estruturado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Conduta Tomada:</strong> Realizado cateterismo vesical aliviador estéril na sala de observação. A fita urinária revelou: densidade 1.020, pH 6.0, esterase leucocitária positiva ($+++/4+$), nitrito positivo ($+$) e sedimento com $85.000$ leucócitos/mL. Coletada urocultura quantitativa. Iniciado tratamento ambulatorial com Cefixima ou Cefuroxima axetil por via oral, com retorno agendado em 48 horas para checagem do resultado da cultura e evolução térmica."
+        ]
+      ]
+    ],
+    [
+      "bateria-questoes-comentadas-fssl",
+      0,
+      [
+        [
+          "2",
+          "8. Questões de Concursos Médicos Comentadas Passo a Passo"
+        ],
+        [
+          "3",
+          "Questão 1 (ENARE / Residência Médica)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Um recém-nascido com 14 dias de vida é levado à Unidade de Pronto Atendimento com queixa de febre aferida em domicílio de $38,4$ ºC há 4 horas. O exame físico revela lactente em bom estado geral aparente, ativo, eupnéico, corado, acianótico, fontanela plana e normotensa, ausculta cardiopulmonar normal e abdome sem visceromegalias. Considerando as diretrizes atuais de atendimento ao recém-nascido febril sem sinais localizatórios, assinale a conduta mais adequada:"
+        ],
+        [
+          "p",
+          "<strong>Alternativas:</strong><br>\n  A) Prescrever antitérmico (paracetamol), tranquilizar a mãe e orientar retorno ambulatorial caso a febre persista por mais de 48 horas.<br>\n  B) Coletar hemograma, proteína C-reativa e urina por saco coletor; se normais, liberar a criança com reavaliação em 24 horas.<br>\n  C) Internar a criança, realizar screening séptico completo (sangue, urina por punção suprapúbica ou cateterismo, e líquor) e iniciar ampicilina associada a gentamicina parenteral.<br>\n  D) Internar a criança, colher hemograma e iniciar ceftriaxona intramuscular em dose única diária, dispensando a punção lombar devido ao excelente estado geral.<br>\n  E) Solicitar sorologias para vírus respiratórios e indicar amoxicilina por via oral em regime ambulatorial."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Análise dos Distratores:</strong>"
+        ],
+        [
+          "3",
+          "Questão 2 (USP / Concurso de Residência Médica)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Menina de 45 dias de vida é trazida ao pronto-socorro com história de febre de $38,5$ ºC iniciada há 12 horas. Nascida a termo, sem antecedentes mórbidos. Ao exame: ativa, corada, hidratada, ausculta pulmonar e cardíaca limpas, abdome flácido, fontanela anterior normotensa. De acordo com os Critérios de Rochester e as Recomendações da AAP (2021) para lactentes de 29 a 60 dias, para que essa criança seja classificada como de \"BAIXO RISCO\" para infecção bacteriana grave, quais critérios laboratoriais devem estar rigorosamente preenchidos?"
+        ],
+        [
+          "p",
+          "<strong>Alternativas:</strong><br>\n  A) Leucócitos séricos entre $5.000$ e $15.000/\text{mm}^3$, formas imaturas $< 1.500/\text{mm}^3$, urina com $< 10$ leucócitos por campo e PCR normal.<br>\n  B) Leucócitos séricos entre $4.000$ e $20.000/\text{mm}^3$, líquor com $< 30$ células $/ \text{mm}^3$ e hemocultura negativa em 12 horas.<br>\n  C) PCR $< 100$ mg/L, procalcitonina $< 2,0$ ng/mL e urina de saco coletor negativa.<br>\n  D) Bastonetes ausentes no sangue periférico, VHS $< 50$ mm/h e glicorraquia igual a $100%$ da glicemia.<br>\n  E) Leucócitos totais $< 10.000/\text{mm}^3$ com plaquetas normais, independentemente do exame de urina."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa A.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Análise dos Distratores:</strong>"
+        ],
+        [
+          "3",
+          "Questão 3 (UNICAMP / Revalidação e Residência Médica)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Menino de 10 meses de vida, não circuncidado, é trazido ao serviço de emergência com febre de $39,2$ ºC há 36 horas. O exame físico demonstra Escala de Observação de Yale de 8 pontos (sorri, brinca, corado, hidratação preservada). Não há queixas respiratórias ou gastrointestinais, e o exame físico segmentar é rigorosamente inocente. O cartão de vacinas mostra atraso vacinal: tomou apenas as vacinas de 2 e 4 meses, não tendo recebido o reforço pneumocócico e meningocócico. Qual a conduta clínica mais adequada no momento?"
+        ],
+        [
+          "p",
+          "<strong>Alternativas:</strong><br>\n  A) Alta médica imediata apenas com antitérmico, pois a escala de Yale $le 10$ descarta infecções graves em qualquer cenário.<br>\n  B) Solicitar hemograma, hemocultura, fita urinária e urocultura por cateterismo vesical aliviador, considerando o atraso vacinal e o alto risco de ITU oculta em menino não circuncidado.<br>\n  C) Realizar punção lombar imediata, devido à febre elevada acima de $39,0$ ºC com esquema vacinal incompleto.<br>\n  D) Prescrever amoxicilina empírica por via oral por 10 dias sem necessidade de qualquer exame laboratorial complementar.<br>\n  E) Coletar urina por saco coletor autoadesivo e liberar a criança com encaminhamento para o posto de saúde."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Análise dos Distratores:</strong>"
+        ],
+        [
+          "3",
+          "Questão 4 (UNIFESP / Residência Médica Pediátrica)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Um lactente de 18 meses, previamente saudável e com esquema vacinal completo para a idade (incluindo 3 doses de pentavalente e reforço de pneumo-10), é atendido no pronto-socorro com febre de $39,4$ ºC há 1 dia. Ao exame físico, apresenta escore de Yale de 6 pontos (sorri, interage ativamente com brinquedos, chora forte apenas durante o exame da garganta e acalma-se imediatamente no colo da mãe). A oroscopia, otoscopia e ausculta cardiopulmonar são normais. Não há lesões de pele. O médico assistente solicita hemograma que revela: 22.400 leucócitos/mm³ ($72%$ neutrófilos segmentados, $6%$ bastões, $18%$ linfócitos) e contagem absoluta de neutrófilos de $17.472/\text{mm}^3$. Diante desses achados laboratoriais em lactente com febre sem sinais localizatórios, qual é o próximo passo propedêutico mandatório?"
+        ],
+        [
+          "p",
+          "<strong>Alternativas:</strong><br>\n  A) Indicar punção lombar imediata para descartar meningite asséptica ou bacteriana subclínica.<br>\n  B) Solicitar radiografia de tórax para investigar pneumonia oculta (silenciosa), mesmo sem alterações auscultatórias ou desconforto respiratório.<br>\n  C) Prescrever ceftriaxona intramuscular e internar em UTI pediátrica devido à leucocitose extrema com risco iminente de choque séptico.<br>\n  D) Dar alta hospitalar apenas com sintomáticos, pois a criança é vacinada e está em bom estado geral.<br>\n  E) Prescrever amoxicilina empírica oral ambulatorial e dispensar exames adicionais."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Análise dos Distratores:</strong>"
+        ],
+        [
+          "3",
+          "Questão 5 (SURCE / PSU-MG / Seleção Médica)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Lactente de 14 meses, sexo feminino, foi avaliada no pronto-atendimento há 36 horas por febre isolada de $39,1$ ºC sem foco clínico, tendo sido colhida hemocultura na ocasião devido a quadro febril sem localização. A família retorna hoje convocada pelo plantonista porque o frasco de hemocultura positivou para <em>Streptococcus pneumoniae</em> sensível à penicilina. No reexame físico atual, a criança encontra-se <strong>completamente afebril há 24 horas</strong>, ativa, brincando na sala de espera, corada, hidratada, alimentando-se avidamente e com exame segmentar rigorosamente inocente (Yale = 6). De acordo com os consensos internacionais de bacteremia oculta, qual a melhor conduta a ser adotada?"
+        ],
+        [
+          "p",
+          "<strong>Alternativas:</strong><br>\n  A) Internação hospitalar mandatória, punção lombar diagnóstica e ceftriaxona intravenosa em dose para meningite por 14 dias.<br>\n  B) Reavaliação clínica completa, coleta de nova hemocultura de controle e introdução de amoxicilina em dose alta por via oral em regime ambulatorial com seguimento próximo.<br>\n  C) Nenhuma intervenção ou antibiótico é necessário, considerando que a criança clareou a bacteremia espontaneamente e está afebril.<br>\n  D) Internação hospitalar em isolamento respiratório para profilaxia de meningococcemia com rifampicina oral.<br>\n  E) Solicitar tomografia de crânio e ecocardiograma de urgência para afastar endocardite bacteriana aguda."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Análise dos Distratores:</strong>"
+        ],
+        [
+          "3",
+          "Questão 6 (Revalida INEP / Medicina Pediátrica)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Menina de 2 anos de idade é levada ao centro de saúde com febre diária de $39,0$ ºC há 6 dias consecutivos. A mãe relata que a criança recebeu amoxicilina prescrita em outro serviço por suspeita de virose/faringite, sem melhora. Ao exame físico: irritabilidade extrema, hiperemia conjuntival bulbar bilateral intensa sem secreção purulenta, lábios secos, fissurados e intensamente avermelhados com língua exibindo papilas proeminentes e hiperemiadas, exantema máculo-papular eritematoso difuso no tronco e períneo, além de edema endurecido doloroso no dorso dos pés e um linfonodo cervical anterior palpável à direita medindo $1,8$ cm de diâmetro, doloroso e fibroelástico. Não há sopros cardíacos audíveis. Diante do quadro clínico apresentado, assinale a opção que indica o diagnóstico mais provável, a principal complicação temida e o tratamento farmacológico inicial indicado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativas:</strong><br>\n  A) Escarlatina; Glomerulonefrite Difusa Aguda; Penicilina Benzatina intramuscular.<br>\n  B) Mononucleose Infecciosa; Ruptura esplênica; Corticoterapia oral.<br>\n  C) Doença de Kawasaki; Aneurisma de artéria coronária; Imunoglobulina venosa humana associada a Ácido Acetilsalicílico.<br>\n  D) Síndrome do Choque Tóxico Estafilocócico; Insuficiência renal aguda; Oxacilina venosa.<br>\n  E) Febre Reumática Aguda; Cardite reumática valvar; Prednisona oral associada a repouso absoluto no leito."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Análise dos Distratores:</strong>"
+        ],
+        [
+          "3",
+          "Questão 7 (AMRIGS / Concurso de Residência Médica)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Lactente com 35 dias de vida é levado à emergência pediátrica com quadro febril agudo de $38,2$ ºC axilar com 8 horas de duração. Os pais negam tosse, coriza, vômitos ou alterações evacuatórias. No exame físico: alerta, corado, hidratado, bom estado geral aparente, sem retrações torácicas, pulsos cheios e boa perfusão periférica. Foi realizada coleta de urina por cateterismo vesical aliviador que demonstrou: ausência de leucocitúria ($< 5$ leuco/campo), esterase leucocitária negativa e nitrito negativo. O hemograma revelou 9.800 leucócitos/mm³ ($42%$ segmentados, $2%$ bastões), PCR quantitativa de $6$ mg/L e procalcitonina sérica de $0,15$ ng/mL. Com base nas diretrizes da Academia Americana de Pediatria (AAP 2021) para lactentes bem-aparentados de 29 a 60 dias classificados como de baixo risco inflamatório e urinário, qual a recomendação em relação à punção lombar (PL)?"
+        ],
+        [
+          "p",
+          "<strong>Alternativas:</strong><br>\n  A) A punção lombar permanece estritamente obrigatória em todos os lactentes febris com menos de 90 dias, sem qualquer exceção clínica ou laboratorial.<br>\n  B) A punção lombar pode ser seguramente dispensada se o lactente preencher critérios clínicos e marcadores inflamatórios de baixo risco e tiver seguimento garantido.<br>\n  C) A punção lombar só pode ser dispensada caso a radiografia de tórax e a ultrassonografia transfontanelar sejam absolutamente normais.<br>\n  D) A punção lombar deve ser substituída rotineiramente por ressonância magnética de crânio com contraste para evitar trauma liquórico.<br>\n  E) A punção lombar deve ser realizada somente se a hemocultura positivada em 24 horas evidenciar bacilos gram-negativos."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Análise dos Distratores:</strong>"
+        ]
+      ]
+    ],
+    [
+      "kawasaki-precoce-e-mis-c-mimetizando-fssl",
+      0,
+      [
+        [
+          "2",
+          "9. Diagnósticos Diferenciais Não Infecciosos Críticos: Doença de Kawasaki Precoce e MIS-C"
+        ],
+        [
+          "3",
+          "A Febre Prolongada sem Foco: O Mimetizador Arterítico da Doença de Kawasaki"
+        ],
+        [
+          "p",
+          "Em pediatria, quando um quadro inicial rotulado como febre sem sinais localizatórios (FSSL) ultrapassa o quinto dia consecutivo de febre diária elevada ($ge 38,5 - 39,0$ ºC), o clínico deve obrigatoriamente abandonar a hipótese exclusiva de virose autolimitada banal e rastrear ativamente a <strong>Doença de Kawasaki (DK)</strong>. A Doença de Kawasaki é uma vasculite necrosante sistêmica de vasos de médio calibre com predileção fulminante pelas <strong>artérias coronárias</strong>, constituindo atualmente a principal causa de cardiopatia adquirida na infância nos países desenvolvidos e em desenvolvimento."
+        ],
+        [
+          "p",
+          "Mais de $80-85%$ dos casos incidem em crianças menores de 5 anos de idade, com pico dramático entre os 12 e 24 meses. Em lactentes menores de 6 meses de vida, a doença é particularmente traiçoeira: apresenta manifestações clínicas incompletas e frustras, mas confere o maior risco isolado de desenvolvimento precoce de <strong>aneurismas coronarianos gigantes</strong> ($ge 8$ mm de diâmetro interno) se não tratada precocemente com imunoglobulina venosa humana."
+        ],
+        [
+          "3",
+          "Critérios Diagnósticos Clássicos da American Heart Association (AHA)"
+        ],
+        [
+          "p",
+          "O diagnóstico da Doença de Kawasaki clássica permanece eminentemente clínico e requer a presença de <strong>FEBRE POR PELO MENOS 5 DIAS CONSECUTIVOS</strong> (aferida e documentada), associada obrigatoriamente a pelo menos <strong>4 dos 5 critérios clínicos cardinais</strong> listados a seguir:"
+        ],
+        [
+          "t",
+          [
+            "Critério Clínico Cardinal da AHA",
+            "Descrição Semiológica Pormenorizada",
+            "Características Diferenciais Chave"
+          ],
+          [
+            [
+              "<strong>1. Conjuntivite Bulbar Bilateral Não Exsudativa</strong>",
+              "Hiperemia conjuntival difusa afetando principalmente a conjuntiva bulbar dos dois olhos, poupando caracteristicamente a conjuntiva tarsal e o limbo corneano (halo perilímbico preservado).",
+              "<strong>Sem exsudato purulento!</strong> Não há secreção mucopurulenta ou crostas matinais aderidas aos cílios (diferenciando da conjuntivite bacteriana clássica e adenoviral com exsudato)."
+            ],
+            [
+              "<strong>2. Alterações das Extremidades (Agudas e Subagudas)</strong>",
+              "<em>Fase Aguda (dias 1 a 10):</em> Eritema palmar e plantar endurecido e doloroso, com edema volumoso do dorso de mãos e pés (a criança recusa-se a apoiar os pés no chão ou deambular).<br><em>Fase Subaguda (dias 10 a 20):</em> <strong>Descamação periungueal laminar (\"em lâminas\" ou \"em dedo de luva\")</strong> que se inicia na transição entre o leito ungueal e a polpa digital.",
+              "A descamação periungueal em lâminas é um estigma quase patognomônico que surge tipicamente quando a febre começa a ceder na segunda semana."
+            ],
+            [
+              "<strong>3. Alterações da Cavidade Oral e Lábios</strong>",
+              "Eritema labial intenso, ressecamento labial com fissuras sangrantes, enantema difuso da mucosa jugal e orofaringe, e a clássica <strong>\"Língua em Framboesa\" (ou em morango)</strong> — papilas gustativas fungiformes proeminentes e hiperemiadas sobre um fundo eritematoso.",
+              "Ausência de úlceras orais, aftas vesiculares ou exsudato amigdaliano purulento (o que descartaria herpes e estreptococo)."
+            ],
+            [
+              "<strong>4. Exantema Polimorfo Cutâneo</strong>",
+              "Erupção eritematosa difusa, predominantemente no tronco, abdome e região perineal/glútea. Pode ser maculopapular, escarlatiniforme ou semelhante ao eritema multiforme.",
+              "<strong>Nunca é vesicular ou bolhoso!</strong> Acentuação perianal com eritema e descamação precoce da fralda na primeira semana é uma pista clínica valiosa."
+            ],
+            [
+              "<strong>5. Linfonodomegalia Cervical Aguda Não Supurativa</strong>",
+              "Linfonodomegalia tipicamente <strong>unilateral</strong>, localizada na cadeia cervical anterior, com pelo menos um linfonodo medindo <strong>$ge 1,5$ cm de diâmetro</strong>.",
+              "É o critério menos comum (presente em apenas cerca de $50-70%$ dos casos). O nódulo é doloroso, endurecido, mas sem flutuação e sem hiperemia cutânea supraposta (não drena pus)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Armadilha do \"Kawasaki Incompleto\" ou Atípico em Lactentes Pequenos"
+        ],
+        [
+          "p",
+          "O <strong>Kawasaki Incompleto</strong> ocorre quando a criança apresenta febre por $ge 5$ dias, mas preenche apenas 2 ou 3 critérios clínicos clássicos. É especialmente prevalente em <strong>lactentes com $< 6$ meses de idade</strong>, faixa etária em que a doença pode se apresentar com febre inexplicada associada apenas a irritabilidade extrema e piúria estéril no exame de urina."
+        ],
+        [
+          "p",
+          "<strong>Algoritmo da AHA para Avaliação de Suspeita de Kawasaki Incompleto:</strong>"
+        ],
+        [
+          "p",
+          "Em qualquer criança com febre $ge 5$ dias e 2 ou 3 critérios compatíveis (ou lactente $< 6$ meses com febre $ge 7$ dias sem causa explicável):"
+        ],
+        [
+          "o",
+          [
+            "Avaliar Provas Inflamatórias: <strong>Proteína C-Reativa (PCR) $ge 30$ mg/L</strong> e/ou <strong>Velocidade de Hemossedimentação (VHS) $ge 40$ mm/h</strong>;",
+            "Se PCR ou VHS estiverem elevadas, checar os <strong>Critérios Laboratoriais Suplementares</strong> (necessários ao menos 3):\n      <ul>\n        <li>Anemia normocítica e normocrômica desproporcional para a idade;",
+            "<strong>Plaquetose acentuada: Contagem de plaquetas $ge 450.000/\text{mm}^3$</strong> após o 7º dia de evolução da febre;",
+            "Hipoalbuminemia sérica: Albumina $le 3,0$ g/dL;",
+            "Elevação de Transaminases: ALT/TGP elevada no soro;",
+            "Leucocitose sérica total $ge 15.000/\text{mm}^3$;",
+            "<strong>Piúria Estéril no sedimento urinário: Leucocitúria $ge 10$ leucócitos por campo</strong> com urocultura estéril (devido à uretrite inflamatória asséptica distal).",
+            "Se $ge 3$ critérios laboratoriais preenchidos OU ecocardiograma evidenciando ectasia coronariana (escore Z da artéria coronária descendente anterior ou coronária direita $ge 2,5$): <strong>FECHAR O DIAGNÓSTICO E TRATAR IMEDIATAMENTE!</strong>"
+          ]
+        ],
+        [
+          "3",
+          "Terapia Padrão-Ouro da Doença de Kawasaki: A Janela dos 10 Dias"
+        ],
+        [
+          "p",
+          "O objetivo fundamental da terapia medicamentosa precoce é suprimir a inflamação vascular transmural nas artérias coronárias e <strong>evitar a formação de aneurismas coronários</strong>, complicação que ocorre em até $25%$ das crianças não tratadas e cai para menos de $2-4%$ quando a terapia é instituída precocemente até o 10º dia de febre:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Imunoglobulina Humana Endovenosa (IVIG):</strong> Administrada na dose única de <strong>$2$ g/kg em infusão contínua lenta ao longo de 10 a 12 horas</strong>. É a terapia que altera drasticamente a história natural da vasculite;",
+            "<strong>Ácido Acetilsalicílico (AAS):</strong>\n    <ul>\n      <li><em>Fase Aguda (Ação Anti-inflamatória):</em> Dose de <strong>$30$ a $50$ mg/kg/dia</strong> (no Brasil/Europa) ou $80-100$ mg/kg/dia (nos EUA) divididos de 6/6h por via oral, mantida até a criança permanecer afebril por 48 a 72 horas;",
+            "<em>Fase Subaguda (Ação Antiagregante Plaquetária):</em> Reduzir a dose para <strong>$3$ a $5$ mg/kg/dia em dose única diária</strong>, mantendo por 6 a 8 semanas até novo ecocardiograma de controle comprovar normalidade coronariana luminal."
+          ]
+        ],
+        [
+          "3",
+          "Síndrome Inflamatória Multissistêmica Pediátrica (MIS-C / SIM-P)"
+        ],
+        [
+          "p",
+          "Reconhecida a partir de 2020 associada temporalmente à infecção prévia pelo SARS-CoV-2 (ocorrendo tipicamente 2 a 6 semanas após infecção primária assintomática ou leve), a MIS-C compartilha traços fenotípicos com a Doença de Kawasaki e com o choque séptico bacteriano com Síndrome do Choque Tóxico. Diferencia-se de Kawasaki por acometer crianças com média de idade mais avançada (8 a 11 anos), por exibir <strong>acometimento miocárdico e choque cardiogênico fulminante</strong> com elevação estratosférica de troponina e BNP, dor abdominal lancinante mimetizando abdome agudo cirúrgico, diarreia profusa e marcadores de hiperinflamação e coagulopatia exuberantes (Ferritina $> 1.000$ ng/mL e D-Dímero muito elevado). O manejo requer terapia combinada com IVIG ($2$ g/kg) associada a pulsoterapia com metilprednisolona e suporte em UTI pediátrica."
+        ]
+      ]
+    ],
+    [
+      "febre-medicamentosa-e-reacoes-pos-vacinais",
+      0,
+      [
+        [
+          "2",
+          "10. Febre Medicamentosa e Reações Pós-Vacinais na Infância"
+        ],
+        [
+          "3",
+          "Febre Induzida por Vacinas: Como Discriminar Reação Vacinal de Infecção Bacteriana Grave?"
+        ],
+        [
+          "p",
+          "Uma das causas mais prevalentes de febre sem sinais localizatórios nos primeiros meses de vida coincide exatamente com o calendário de imunizações da infância. A administração concomitante no 2º e 4º meses de vida da vacina Pentavalente (DTP-Hib-HB), Vacina Pneumocócica 10-valente conjugada (VPC-10) e Vacina Inativada Poliomielite (VIP) induz resposta pirogênica fisiológica esperada em mais de $40-60%$ dos lactentes."
+        ],
+        [
+          "p",
+          "O desafio pericial no pronto-atendimento é não negligenciar uma bacteremia oculta ou sepse bacteriana coincidente sob o rótulo equivocado de \"reação da vacina\":"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro Clínico Comparativo",
+            "Reação Pós-Vacinal Fisiológica Típica (Pentavalente / Pneumo-10)",
+            "Alerta Vermelho para Infecção Bacteriana Grave Concomitante"
+          ],
+          [
+            [
+              "<strong>Janela Temporal de Início da Febre</strong>",
+              "Início típico nas <strong>primeiras 6 a 24 horas</strong> após a aplicação intramuscular da vacina.",
+              "Febre que se inicia após 48 a 72 horas da aplicação vacinal (a febre vacinal clássica não se inicia após 48h!)."
+            ],
+            [
+              "<strong>Duração do Período Febril</strong>",
+              "Duração curta e autolimitada, <strong>desaparecendo em 24 a 48 horas</strong> no máximo.",
+              "Febre que persiste por <strong>mais de 48 a 72 horas consecutivas</strong>."
+            ],
+            [
+              "<strong>Magnitude Térmica Habitual</strong>",
+              "Geralmente moderada (entre $37,8$ e $38,8$ ºC axilar). Responde bem a antitérmicos simples.",
+              "Picos febris elevados recorrentes ($ge 39,5 - 40,0$ ºC), com resposta refratária a antitérmicos."
+            ],
+            [
+              "<strong>Comportamento e Estado Geral (Yale)</strong>",
+              "Irritabilidade leve a moderada no local da injeção que cessa no colo; <strong>Yale $le 10$</strong> nos períodos afebris (a criança mama bem e sorri).",
+              "<strong>Yale $ge 11$</strong>: Letargia acentuada, hipotonia, gemência contínua, sucção ineficaz, palidez cutânea e má perfusão periférica."
+            ],
+            [
+              "<strong>Exame Físico Específico</strong>",
+              "Apenas dor e discreto edema e calor no sítio de injeção (vasto lateral da coxa). Restante do exame rigorosamente límpido.",
+              "Surgimento de petéquias cutâneas, desconforto respiratório (tiragem, taquipneia), fontanela abaulada ou recusa alimentar absoluta."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>A Particularidade Temporal da Vacina Tríplice Viral (Sarampo, Caxumba, Rubéola - SCR):</strong>"
+        ],
+        [
+          "p",
+          "Ao contrário das vacinas acelulares ou inativadas (que contêm adjuvantes pirogênicos como sais de alumínio e lipopolissacarídeos bacterianos e provocam febre nas primeiras 24-48 horas), a Tríplice Viral contém <strong>vírus vivos atenuados</strong>. A replicação viral atenuada in vivo exige um período de incubação biológica:"
+        ],
+        [
+          "u",
+          [
+            "A febre pós-vacinal do sarampo ocorre <strong>tipicamente entre o 5º e o 12º dia após a vacinação</strong> (pico no 7º a 10º dia);",
+            "Pode acompanhar-se de discreto exantema máculo-papular róseo não pruriginoso que dura 2 a 3 dias;",
+            "A criança mantém bom estado geral; não há necessidade de investigação laboratorial invasiva se a cronologia coincidir perfeitamente e o estado geral for excelente."
+          ]
+        ],
+        [
+          "3",
+          "Febre Medicamentosa (Drug Fever)"
+        ],
+        [
+          "p",
+          "A febre medicamentosa é um diagnóstico de exclusão frequentemente esquecido em enfermarias pediátricas em pacientes internados sob múltiplos esquemas terapêuticos prolongados. Resulta de mecanismos de hipersensibilidade imunológica (tipo III ou IV), liberação de pirógenos endógenos por lise celular ou alteração na termorregulação central:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Classes Farmacológicas Habitualmente Implicadas:</strong> Antimicrobianos beta-lactâmicos (penicilinas e cefalosporinas), sulfonamidas (cotrimoxazol), anticonvulsivantes (carbamazepina, fenitoína, lamotrigina), vancomicina e anfotericina B;",
+            "<strong>Pistas Diagnósticas no Paciente Hospitalizado:</strong> A febre reaparece ou se eleva após vários dias de uso do fármaco (\"febre no 7º a 10º dia de antibiótico\"), o paciente encontra-se surpreendentemente bem-disposto e eupnéico a despeito do pico febril de $39,0$ ºC (\"dissociação térmico-clínica\"), e o hemograma revela <strong>eosinofilia sérica</strong> com provas inflamatórias que não normalizam;",
+            "<strong>Conduta Definitiva:</strong> Suspensão guiada do medicamento suspeito. A defervescência completa da temperatura corporal ocorre tipicamente dentro de 48 a 72 horas após a retirada do fármaco causal."
+          ]
+        ]
+      ]
+    ],
+    [
+      "guia-conduta-rapida-fluxogramas-desospitalizacao",
+      0,
+      [
+        [
+          "2",
+          "11. Guia Prático de Conduta Rápida, Fluxogramas por Idade e Desospitalização Segura"
+        ],
+        [
+          "3",
+          "Fluxograma Mestre Consolidado de Abordagem da Febre sem Sinais Localizatórios"
+        ],
+        [
+          "p",
+          "Para assegurar a tomada de decisão ágil, segura e reprodutível na sala de emergência e no ambulatório pediátrico, estruturamos a conduta médica baseada nas três faixas etárias biológicas consensuais estabelecidas pelas diretrizes da Academia Americana de Pediatria (AAP), Sociedade Brasileira de Pediatria (SBP) e National Institute for Health and Care Excellence (NICE):"
+        ],
+        [
+          "t",
+          [
+            "Faixa Etária Pediátrica",
+            "Estratificação de Risco e Ferramentas",
+            "Investigação Laboratorial Mínima Exigida",
+            "Local de Cuidado e Terapia Antimicrobiana Empírica"
+          ],
+          [
+            [
+              "<strong>Recém-Nascido<br>(0 a 28 dias de vida)</strong>",
+              "<strong>\"TOLERÂNCIA ZERO\"</strong><br>Não existe baixo risco clínico nessa idade.",
+              "<strong>Screening Séptico Completo Mandatório:</strong>\n        <ul>\n          <li>Hemograma + Plaquetas + I/T;</li>\n          <li>PCR quantitativa + Procalcitonina;</li>\n          <li>Hemoculturas periféricas (2 amostras);</li>\n          <li>Urina por Cateterismo ou Punção Suprapúbica + Urocultura;</li>\n          <li><strong>Punção Lombar diagnóstica compulsória</strong> (citologia, bioquímica, Gram e cultura);</li>\n          <li>Radiografia de tórax.</li>\n        </ul>",
+              "<strong>INTERNAÇÃO HOSPITALAR OBRIGATÓRIA</strong>.<br>\n        <strong>Antibioticoterapia IV de Amplo Espectro Imediata:</strong><br>\n        <strong>Ampicilina IV</strong> ($150-200$ mg/kg/dia) + <strong>Gentamicina IV</strong> ($4-5$ mg/kg/dia 1x/dia)<br>\n        <em>(ou Cefotaxima IV se suspeita de meningite).</em><br>\n        <span style=\"color:red; font-weight:bold;\">CONTRAINDICAÇÃO FORMAL À CEFTRIAXONA!</span>"
+            ],
+            [
+              "<strong>Lactente Jovem<br>(29 a 90 dias de vida)</strong>",
+              "<strong>Critérios de Rochester / AAP 2021:</strong><br>\n        Dividir em <em>Baixo Risco</em> vs <em>Alto Risco</em>.",
+              "<strong>Lactente de Baixo Risco:</strong>\n        <ul>\n          <li>Hemograma (Leucócitos 5.000 a 15.000, bastões $< 1.500$);</li>\n          <li>PCR $< 20$ mg/L e Procalcitonina $< 0,5$ ng/mL;</li>\n          <li>Urina por cateterismo: $< 10$ leucócitos/campo e nitrito neg;</li>\n          <li><em>Punção lombar pode ser dispensada</em> se critérios rigorosos de baixo risco preenchidos (Rochester / AAP 2021).</li>\n        </ul>\n        <strong>Se Alto Risco:</strong> Rastreio completo incluindo líquor.",
+              "<strong>Baixo Risco:</strong> Opção de seguimento ambulatorial com reavaliação médica presencial mandatória em 24h (com ou sem dose de Ceftriaxona $50$ mg/kg IM), ou observação hospitalar sem antibióticos aguardando culturas.<br>\n        <strong>Alto Risco:</strong> Internação hospitalar + <strong>Ceftriaxona IV ($50-100$ mg/kg/dia)</strong>."
+            ],
+            [
+              "<strong>Lactente e Pré-Escolar<br>(3 a 36 meses de idade)</strong>",
+              "<strong>Escala de Observação de Yale (YOS):</strong><br>\n        $le 10$ (Bom estado), $11-15$ (Dúbio), $ge 16$ (Tóxico).<br>\n        Verificar <strong>Carteira de Vacinação</strong> (VPC e Hib $ge 2$ doses).",
+              "<strong>1. Criança em Bom Estado Geral (Yale $le 10$) Vacinada:</strong>\n        <ul>\n          <li>Não coletar hemograma ou hemocultura de rotina;</li>\n          <li><strong>Rastrear ITU Oculta:</strong> Meninas $< 24$m com febre $ge 39$ ºC $> 48$h ou meninos não circuncidados $< 12$m com febre $> 24$h colhem urina por cateterismo estéril;</li>\n          <li>Radiografia de tórax se febre $ge 39$ ºC e Leucócitos $> 20.000$ (suspeita de pneumonia oculta).</li>\n        </ul>\n        <strong>2. Se Não Vacinada com Febre $ge 39$ ºC:</strong> Hemograma + Hemocultura + Urina.<br>\n        <strong>3. Se Yale $ge 16$ (Tóxico):</strong> Sepse workup completo com líquor.",
+              "<strong>Bom Estado Geral:</strong> Tratamento ambulatorial e sintomáticos. Se ITU confirmada: antibiótico oral (Cefixima, Cefuroxima, Amoxicilina-clavulanato).<br>\n        <strong>Estado Tóxico:</strong> Sala de ressuscitação / UTI Pediátrica, ressuscitação volêmica (bolus de cristalóide $20$ mL/kg) e <strong>Ceftriaxona IV ($100$ mg/kg/dia)</strong> na 1ª hora."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Critérios Rígidos de Desospitalização e Alta Domiciliar Segura"
+        ],
+        [
+          "p",
+          "A decisão de conceder alta domiciliar com seguimento ambulatorial em uma criança que se apresentou com febre sem sinais localizatórios não depende exclusivamente da temperatura aferida no momento ou dos números do hemograma. O médico deve garantir o cumprimento integral de <strong>critérios sociais, logísticos e parentais inegociáveis</strong>:"
+        ],
+        [
+          "4",
+          "Checklist Obrigatório de Segurança para Alta Ambulatorial da FSSL:"
+        ],
+        [
+          "3",
+          "Sinais de Alarme Vermelhos (Red Flags) para Retorno Imediato de Emergência"
+        ],
+        [
+          "p",
+          "Os responsáveis devem ser orientados a procurar atendimento médico imediato e sem hesitação se a criança apresentar qualquer um dos seguintes sinais de toxicidade:"
+        ],
+        [
+          "p",
+          "<strong>Sinais Vermelhos que Exigem Retorno Hospitalar Imediato:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Alteração Importante da Consciência ou Comportamento:</strong> A criança torna-se difícil de acordar, apresenta sonolência excessiva, olhar fixo, desinteresse pelo ambiente, ausência de sorriso ou choro inconsolável e irritabilidade intensa mesmo após a febre ter cedido com antitérmico;",
+            "<strong>Surgimento de Lesões Cutâneas que Não Desaparecem à Vitropressão:</strong> Aparecimento de petéquias (pequenos pontos avermelhados/violáceos na pele semelhantes a picadas de pulga) ou manchas arroxeadas (púrpura e sufusões hemorrágicas), que sugerem meningococcemia ou púrpura fulminante;",
+            "<strong>Desconforto Respiratório Agudo:</strong> Respiração muito acelerada (taquipneia), afundamento entre as costelas (tiragem intercostal ou subcostal), batimento das asas do nariz ou gemência expiratória audível sem estetoscópio;",
+            "<strong>Sinais de Má Perfusão Tecidual e Desidratação Grave:</strong> Extremidades frias e pálidas, coloração arroxeada ou mosqueada da pele (livedo), tempo de enchimento capilar lento ($> 3$ segundos), olhos encovados, ausência de lágrimas ao chorar e ausência de fraldas molhadas (diurese nula) por mais de 6 a 8 horas;",
+            "<strong>Rigidez de Nuca ou Abaulamento de Fontanela:</strong> Resistência ou dor ao fletir o queixo contra o peito, ou fontanela anterior (\"moleira\") tensa e abaulada com a criança calma e sentada;",
+            "<strong>Recusa Alimentar Total ou Vômitos Repetidos:</strong> Incapacidade de ingerir e reter qualquer líquido ou leite, levando a risco iminente de desidratação e hipoglicemia;",
+            "<strong>Convulsões ou Abalos Musculares Anormais:</strong> Qualquer episódio de perda de consciência acompanhado de abalos de membros ou contrações faciais."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "American Academy of Pediatrics (AAP). Clinical Practice Guideline: Evaluation and Management of Well-Appearing Febrile Infants 8 to 60 Days Old. Pediatrics, v. 148, n. 2, e2021052228, 2021.",
+            "Baraff LJ, et al. Practice guideline for the management of infants and children 0 to 36 months of age with fever without source. Pediatrics, v. 92, n. 1, p. 1-12, 1993.",
+            "Sociedade Brasileira de Pediatria (SBP). Febre sem sinais de localização em lactentes e crianças pequenas: Guia Prático de Atualização do Departamento Científico de Pediatria Ambulatorial e Emergência. Rio de Janeiro: SBP, 2022.",
+            "McCarthy PL, et al. Observation scales to identify serious illness in febrile children. Pediatrics, v. 70, n. 5, p. 802-809, 1982.",
+            "Pantell RH, et al. Management of Febrile Infants: An Historical Perspective and 2021 AAP Guidelines. Current Opinion in Pediatrics, v. 34, n. 2, p. 210-217, 2022.",
+            "National Institute for Health and Care Excellence (NICE). Fever in under 5s: assessment and initial management (NICE Guideline NG143). London: NICE, 2019 (updated 2021).",
+            "Jaskiewicz JA, et al. Febrile infants at low risk for serious bacterial infection--an appraisal of the Boston, Rochester, and Philadelphia criteria. Collaborative Febrile Infant Study Group. Pediatrics, v. 94, n. 3, p. 390-396, 1994.",
+            "McCracken GH Jr. Diagnosis and management of pneumonia in children. The Pediatric Infectious Disease Journal, v. 19, n. 9, p. 924-928, 2000.",
+            "Bachar G, et al. Occult bacteremia in the era of conjugate pneumococcal vaccines. Pediatric Emergency Care, v. 23, n. 11, p. 777-781, 2007.",
+            "McCrindle BW, et al. Diagnosis, Treatment, and Long-Term Management of Kawasaki Disease: A Scientific Statement for Health Professionals From the American Heart Association. Circulation, v. 135, n. 17, p. e927-e999, 2017.",
+            "Feldman HA, et al. Pediatric multisystem inflammatory syndrome temporally associated with SARS-CoV-2 (MIS-C): A systematic review. JAMA Pediatrics, v. 175, n. 8, p. 834-845, 2021.",
+            "World Health Organization (WHO). Pocket Book of Hospital Care for Children: Guidelines for the Management of Common Childhood Illnesses. 2. ed. Geneva: WHO, 2013.",
+            "Subcommittee on Urinary Tract Infection. Reaffirmation: Urinary Tract Infection: Clinical Practice Guideline for the Diagnosis and Management of the Initial UTI in Febrile Infants and Young Children 2 to 24 Months. Pediatrics, v. 138, n. 6, e20163026, 2016."
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

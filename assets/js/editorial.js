@@ -14,10 +14,128 @@
     currentView: "weekly", // "weekly" | "monthly" | "kanban" | "stories" | "crm" | "meta_ads" | "organic_growth"
     selectedMonth: "2026-10",
     leadsList: [],
-    organicTips: []
+    organicTips: [],
+    postAssetsMap: {},
+    activeModalPostId: null
   };
 
   const DRIVE_FOLDER = "https://drive.google.com/drive/folders/1gd2hhVmwGzKibBwLuvEUcXPdGa_B0FRi?usp=drive_link";
+  const STORAGE_BUCKET = "marketing_videos_temp";
+
+  // ==============================================================
+  // REGRA OFICIAL PERMANENTE: MOTOR GERADOR DE PROMPTS ULTRADETALHADOS
+  // ESTÉTICA @MENTORIS · ZERO ROSTOS DE IA · MOTION 3D · ALTA RETENÇÃO MÉDICA
+  // ==============================================================
+  const ULTRA_DETAILED_SPECS = {
+    p01: {
+      hook: "90% DO ESTUDO PASSIVO É ESQUECIDO EM 7 DIAS",
+      uiFocus: "Gráfico interativo 3D da Curva do Esquecimento de Ebbinghaus (queda abrupta em vermelho neon #EF4444 vs curva de retenção sustentada em verde esmeralda #10B981 com picos de Active Recall no Dia 1, Dia 3, Dia 7 e Dia 21) dentro do Dashboard Analítico da LURIA",
+      clinicalContext: "Estudante no internato lendo PDF passivamente vs resolvendo flashcard ativo de Insuficiência Cardíaca",
+      keywords: ["CURVA DE EBBINGHAUS", "REPETIÇÃO ESPAÇADA", "MEMÓRIA DE LONGO PRAZO", "ACTIVE RECALL"],
+      narrationText: "Você estuda 6 horas hoje, acha que dominou a matéria, e na semana seguinte erra uma questão básica sobre o mesmo tema no simulado. Sabe por quê? Curva do Esquecimento de Ebbinghaus. O cérebro humano descarta até 80% do que você lê de forma passiva em menos de 7 dias se não houver esforço ativo de recuperação. Sublinhar apostila e reler resumo pronto dá sensação de estudo, mas não consolida sinapse. Na LURIA, cada questão que você resolve alimenta um algoritmo de repetição espaçada que reativa o tema exatamente no ponto crítico antes de você esquecer. Pare de estudar para esquecer. Salve esse post para revisar sua rotina e ative seus 15 dias gratuitos pelo link da bio."
+    },
+    p02: {
+      hook: "HGT vs TC DE CRÂNIO: OS 60 SEGUNDOS QUE SALVAM UM CÉREBRO",
+      uiFocus: "Tela dividida 3D em vidro escuro: à esquerda um glicosímetro digital piscando '32 mg/dL' em alerta vermelho crítico; à direita uma Tomografia de Crânio sem contraste com artéria cerebral média hiperdensa e o protocolo de código AVC na LURIA",
+      clinicalContext: "Paciente de 68 anos no Pronto-Socorro com hemiparesia direita súbita, afasia e desvio de rima labial há 40 minutos",
+      keywords: ["DÉFICIT FOCAL SÚBITO", "HGT IMEDIATO", "NEUROGLICOPENIA", "CÓDIGO AVC"],
+      narrationText: "Você tá no plantão do PS. Chega um paciente de 68 anos com hemiparesia súbita e desvio de rima. A primeira coisa que você pensa é correr pro tomógrafo, certo? Errado! Antes de qualquer contraste ou TC de crânio, a primeira conduta obrigatória é uma fita de HGT na ponta do dedo. Hipoglicemia severa mimetiza perfeitamente um AVC isquêmico. Se você mandar esse paciente pra tomografia com 30 de glicemia, ele entra em coma na maca. Trate a glicose primeiro. Se o déficit persistir, aí sim você abre o protocolo de AVC. Não perca questão de residência e não erre conduta no PS. Compartilhe com a sua equipe de plantão e entre no teste grátis da LURIA pelo link da bio."
+    },
+    p03: {
+      hook: "A PEGADINHA QUE ELIMINA 78% DOS CANDIDATOS NA PROVA",
+      uiFocus: "Interface de Resolução de Questões da LURIA em 3D isométrico destacando uma questão clínica do ENARE/USP, onde a alternativa B (distrator clássico) recebe um carimbo neon 'DISTRATOR DA BANCA' e a alternativa D acende em verde esmeralda com o fluxograma da diretriz",
+      clinicalContext: "Dissecção cirúrgica de enunciado longo de prova de residência: identificando palavras-chave e armadilhas de conduta expectante vs imediata",
+      keywords: ["DISTRATOR CLÁSSICO", "LEITURA CIRÚRGICA", "COMANDO DA QUESTÃO", "GABARITO BLINDADO"],
+      narrationText: "As bancas de residência não criam alternativas erradas por acaso: elas desenham distratores milimetricamente calculados para pegar quem decorou palavra-chave sem entender fisiopatologia. Olha a anatomia dessa questão: o enunciado te dá três dados normais para esconder um único sinal de alarme no final da segunda linha. Quem lê no automático marca a conduta ambulatorial e perde o ponto. Na LURIA, cada alternativa incorreta é dissecada linha por linha para você enxergar a malícia da banca em menos de 10 segundos. Responda nos comentários qual alternativa você marcaria antes de ver o gabarito!"
+    },
+    p04: {
+      hook: "DO ERRO NA QUESTÃO AO FLASHCARD EM 3 SEGUNDOS",
+      uiFocus: "Transição hiper-rápida em câmera contínua: tela de erro em uma questão de Emergência na LURIA -> feixe de luz verde esmeralda conectando direto ao 'Caderno de Erros Automático' -> card 3D girando em 180 graus revelando pergunta ativa na frente e conduta objetiva no verso",
+      clinicalContext: "Automação cognitiva: transformando uma questão errada de Cetoacidose Diabética (potássio sérico < 3,3 mEq/L antes da insulina) em flashcard instantâneo",
+      keywords: ["CADERNO DE ERROS", "FLASHCARD AUTOMÁTICO", "ZERO DIGITAÇÃO MANUAL", "FIXAÇÃO IMEDIATA"],
+      narrationText: "Sabe por que a maioria dos alunos desiste de manter um Caderno de Erros? Porque copiar enunciado e digitar resumo no meio da bateria de questões leva 15 minutos por erro. Você perde o ritmo e abandona no terceiro dia. Olha como o fluxo funciona dentro da LURIA: você errou o detalhe do potássio na Cetoacidose Diabética? Em um clique, a plataforma extrai o conceito central do seu erro e gera o flashcard de revisão ativa pronto na sua fila espaçada. Zero planilha, zero trabalho braçal, 100% retenção médica. Conheça o fluxo pelo link da bio!"
+    },
+    p05: {
+      hook: "CHECKLIST DE PREPARAÇÃO PARA AS PROVAS DE 2027",
+      uiFocus: "Painel de Cronograma Inteligente da LURIA em perspectiva 3D mostrando distribuição semanal de blocos (Clínica Médica, Cirurgia, Pediatria, GO e Preventiva) com barras de progresso luminosas e alerta 'ZERO SOBRECARGA COGNITIVA'",
+      clinicalContext: "Planejamento estratégico de longo prazo conciliando rodízios pesados de internato e plantões com metas semanais de 150 a 250 questões comentadas",
+      keywords: ["META REALISTA", "PARETO 80/20", "INTERNATO + PROVA", "CONSISTÊNCIA 2027"],
+      narrationText: "Quem começa a estudar para a residência tentando cumprir 8 horas líquidas por dia logo depois do plantão do internato quebra na terceira semana. Aprovação em 2027 não é sprint desesperado, é engenharia de consistência. Passo 1: mapear os 20% de temas que concentram 80% das provas. Passo 2: metas diárias baseadas em questões ativas e não em horas de vídeo passivo. Passo 3: blindar o domingo para revisar apenas os erros da semana. Salve esse checklist para consultar o ano inteiro e estruture seu ciclo na LURIA!"
+    },
+    p06: {
+      hook: "PLANTÃO RELÂMPAGO: 10 SEGUNDOS PARA DECIDIR A CONDUTA",
+      uiFocus: "Monitor multiparamétrico de Sala Vermelha piscando PA 78x42 mmHg, FC 134 bpm, SpO2 88%, lactato 4,8 mmol/L, acompanhado de um cronômetro regressivo de 10 segundos em neon âmbar e 3 opções de conduta flutuando em vidro 3D",
+      clinicalContext: "Desafio interativo de Choque Séptico refratário na primeira hora: expansão volêmica cristalóide 30 mL/kg + Noradrenalina precoce + hemoculturas + antibiótico na 1ª hora",
+      keywords: ["SALA VERMELHA", "HORA DE OURO", "NORADRENALINA", "QUAL SUA CONDUTA?"],
+      narrationText: "Plantão relâmpago na Sala Vermelha! Paciente admitido hipotenso, PA 78 por 42, frequência cardíaca de 134, lactato de 4.8 e foco pulmonar evidente. Você já iniciou o primeiro cristalóide e coletou culturas, mas a pressão arterial média continua em 52. Relógio correndo: você faz mais dois litros de soro rápido, aguarda o efeito do antibiótico ou já entra com Noradrenalina agora? Dez segundos! Comente aqui embaixo qual é a sua conduta imediata e veja a explicação fundamentada no comentário fixado!"
+    },
+    p07: {
+      hook: "5 ERROS SILENCIOSOS QUE CUSTAM A APROVAÇÃO NA RESIDÊNCIA",
+      uiFocus: "Sequência cinética de 5 cards holográficos escuros sendo estilhaçados um a um por feixes de laser esmeralda, substituídos pelas métricas reais de evolução do Dashboard LURIA",
+      clinicalContext: "Diagnóstico dos 5 vícios fatais: 1) Assistir aula em 2x sem fazer questão; 2) Usar resumo de terceiros; 3) Ignorar Preventiva/SUS; 4) Não metrificar taxa de acerto por subespecialidade; 5) Deixar revisão para o último mês",
+      keywords: ["ESTUDO PASSIVO", "FALSAFLUÊNCIA", "MÉTRICA REAL", "CADERNO DE ERROS"],
+      narrationText: "Cinco erros silenciosos que tiram candidatos brilhantes da lista de aprovados todos os anos. Primeiro: achar que assistir aula em velocidade 2x equivale a aprender. Segundo: estudar por resumo alheio sem construir raciocínio próprio. Terceiro: desprezar Medicina Preventiva, que vale exatamente os mesmos 20% de Clínica Médica. Quarto: resolver questões sem catalogar por que errou. Quinto: estudar no escuro, sem saber sua taxa real de acerto em cada banca. Envie esse vídeo para o seu colega de internato não cair nessa armadilha!"
+    }
+  };
+
+  function getDefaultPromptsForPost(post) {
+    const custom = ULTRA_DETAILED_SPECS[post.id];
+    const isVideo = post.format.toLowerCase().includes("reels") || post.format.toLowerCase().includes("motion");
+    const hookText = custom ? custom.hook : post.title.toUpperCase();
+    const uiFocus = custom
+      ? custom.uiFocus
+      : `Interface dark-mode da plataforma médica LURIA (#0A2342 & #059669 verde esmeralda) em perspectiva isométrica 3D, exibindo fluxogramas clínicos interativos, resolução de questões comentadas e métricas de retenção sobre "${post.title}"`;
+    const clinicalContext = custom ? custom.clinicalContext : post.script;
+    const keywords = custom ? custom.keywords : [post.pilar.toUpperCase(), "RACIOCÍNIO CLÍNICO", "LURIA MED", "ALTA RETENÇÃO"];
+    const narrationBody = custom
+      ? custom.narrationText
+      : `Presta muita atenção nesse ponto que separa quem acerta sob pressão no plantão e na residência de quem cai em pegadinha de prova: ${post.title}. ${post.script} Quando você estrutura esse raciocínio de forma ativa dentro da LURIA, cada erro vira um degrau de memorização permanente no seu Caderno de Erros. ${post.cta} e acesse o link da bio para liberar 15 dias gratuitos sem cartão!`;
+
+    const videoPrompt = `[REGRA OBRIGATÓRIA DE GERAÇÃO: Prompt Ultradetalhado · Estética @mentoris / Apple Keynote Dark · PROIBIDO rostos humanos ou avatares de IA · 100% Motion Graphics 3D, Tipografia Cinética & UI Médica Realista]
+
+Format & Technical Specs:
+- Aspect Ratio: ${isVideo ? "9:16 Vertical (1080x1920px Reels/TikTok)" : "4:5 Vertical Feed (1080x1350px High-Impact Motion/Carousel)"}
+- Frame Rate: 60fps ultra-smooth kinetic motion with realistic optical motion blur (shutter angle 180°).
+- Render Engine Style: Octane Render / Unreal Engine 5 UI glassmorphism, deep obsidian background (#050B14 to #0A2342), electric emerald-green (#059669 / #10B981) and medical cyan (#38BDF8) volumetric neon accents, crimson alert highlights (#EF4444).
+- STRICT CONSTRAINT: ZERO human faces, ZERO synthetic AI people, ZERO stock actors. Focus 100% on futuristic medical interfaces, 3D diagnostic data, clinical monitors, and kinetic typography.
+
+Scene-by-Scene Cinematography & Motion Choreography:
+• [00:00 - 00:03 | PATTERN INTERRUPT HOOK]:
+  Camera performs an aggressive Whip-Pan + rapid Dolly-In through dark volumetric hospital/studio space with subtle floating dust particles and digital scanlines.
+  A bold, razor-sharp 3D kinetic typography headline snaps onto the center screen letter-by-letter with an emerald-and-amber chromatic aberration glow:
+  "${hookText}".
+  Subtle red/cyan emergency strobe rim-light pulses on the edges of the frame.
+
+• [00:03 - 00:10 | 3D ISOMETRIC PLATFORM UI REVEAL]:
+  Camera tilts into a 15-degree Dutch angle with shallow depth-of-field (f/1.8 bokeh on background grid).
+  A sleek, frameless dark-glass tablet/desktop interface of the LURIA medical platform floats in 3D space with realistic specular reflections:
+  ${uiFocus}.
+  Clinical Context Visualized: ${clinicalContext}.
+
+• [00:10 - 00:18 | KINETIC DATA EXPLOSION & ACTIVE RECALL]:
+  High-velocity Z-axis camera push-through into the UI layer. Modular glass cards detach in 3D parallax layers.
+  Neon medical keywords flash and lock into grid alignment synchronized with the narration rhythm:
+  ${keywords.map(k => `"${k}"`).join("  ➔  ")}.
+  Animated laser-green progress bars, ECG waveform vectors, and diagnostic decision trees draw themselves in real time.
+
+• [00:18 - End | AUTHORITY & CTA LOCKUP]:
+  Smooth orbital camera pull-back revealing the complete LURIA ecosystem ("Questões Comentadas + Caderno de Erros + Simulador de Plantão") glowing in emerald green.
+  Final clean glass badge snaps into the lower third: "${post.cta.toUpperCase()} · 15 DIAS GRÁTIS NO LINK DA BIO".`;
+
+    const audioPrompt = `[REGRA OBRIGATÓRIA DE ÁUDIO: Locução Humana Ultradetalhada · PT-BR Nativo · Ritmo @mentoris · Zero Voz Robótica]
+
+Direção Vocal & Acústica (Para Gemini Audio / Studio Voice):
+- Perfil de Voz: Voz masculina ou feminina jovem-adulta (26 a 32 anos), médico(a) preceptor(a) ou residente-chefe, dicção cristalina, timbre quente e firme.
+- Entonação & Cadência: 155 a 165 palavras por minuto (ritmo dinâmico de Reels de alta retenção). Início nos primeiros 2 segundos com ataque incisivo de quebra de padrão; pausas respiratórias curtas e naturais de 0.25s entre frases-chave; ênfase tônica nas palavras técnicas médicas.
+- Sound Design Sugerido (Submix): Sub-bass drop discreto em 00:00, cliques mecânicos suaves de interface nas transições de palavras, batida lo-fi dark synth médica instrumental em -18dB.
+
+Texto Exato da Locução (Copiar para síntese):
+"${narrationBody}"`;
+
+    const captionPrompt = `🚨 ${post.title}\n\n${post.script}\n\n⚡ Destaques de Prova e Plantão:\n${keywords.map(k => `• ${k}`).join("\n")}\n\n💡 Na LURIA, você transforma cada questão resolvida e cada detalhe clínico em memória de longo prazo com repetição espaçada e Caderno de Erros automatizado.\n\n🎯 ${post.cta}!\n🔗 Acesse o link da bio e libere 15 dias gratuitos na LURIA (sem cartão de crédito).\n\n#medicina #residenciamedica #internato #plantao #emergenciamedica #enare #uspsp #luria`;
+
+    return { videoPrompt, audioPrompt, captionPrompt };
+  }
 
   // ==============================================================
   // OS 27 POSTS OFICIAIS DO DOSSIÊ COM DATAS POR EXTENSO
@@ -155,7 +273,7 @@
     return data?.has_pin === true;
   }
 
-  function unlockEditorialPage() {
+  async function unlockEditorialPage() {
     state.pinUnlocked = true;
     const gate = $("admin-pin-gate");
     const app = $("editorial-app");
@@ -163,6 +281,7 @@
     document.body.classList.add("admin-unlocked");
     if (gate) gate.hidden = true;
     if (app) app.hidden = false;
+    await loadPostAssetsFromDb();
     renderCurrentView();
   }
 
@@ -216,6 +335,363 @@
   }
 
   // ==============================================================
+  // GESTÃO DE PROMPTS E STAGING DE VÍDEO (FLUXO ZERO CUSTO / AUTO-LIMPEZA)
+  // ==============================================================
+  async function loadPostAssetsFromDb() {
+    try {
+      const sb = window.supabaseClient || window.sb;
+      if (!sb) return;
+      const { data, error } = await sb.from("marketing_post_assets").select("*");
+      if (!error && Array.isArray(data)) {
+        const map = {};
+        data.forEach(row => { map[row.post_id] = row; });
+        state.postAssetsMap = map;
+      }
+    } catch (_) {}
+  }
+
+  function getPostAssetState(post) {
+    const dbRow = state.postAssetsMap[post.id] || {};
+    let localOverride = {};
+    try {
+      localOverride = JSON.parse(localStorage.getItem(`luria_post_asset_${post.id}`) || "{}");
+    } catch (_) {}
+
+    const defaults = getDefaultPromptsForPost(post);
+    return {
+      post_id: post.id,
+      title: post.title,
+      scheduled_date: post.date,
+      video_prompt: dbRow.video_prompt || localOverride.video_prompt || defaults.videoPrompt,
+      audio_prompt: dbRow.audio_prompt || localOverride.audio_prompt || defaults.audioPrompt,
+      caption_prompt: dbRow.caption_prompt || localOverride.caption_prompt || defaults.captionPrompt,
+      video_storage_path: dbRow.video_storage_path || localOverride.video_storage_path || null,
+      video_public_url: dbRow.video_public_url || localOverride.video_public_url || null,
+      video_filename: dbRow.video_filename || localOverride.video_filename || null,
+      meta_ads_status: dbRow.meta_ads_status || localOverride.meta_ads_status || "aguardando_video",
+      cleaned_at: dbRow.cleaned_at || localOverride.cleaned_at || null
+    };
+  }
+
+  function renderPostStagingBadge(post) {
+    const asset = getPostAssetState(post);
+    if (asset.meta_ads_status === "publicado_e_limpo") {
+      return `<div style="font-size:0.74rem; padding:0.35rem 0.6rem; border-radius:6px; background:rgba(56,189,248,0.12); color:#38bdf8; border:1px solid rgba(56,189,248,0.3);">🧹 Postado no Meta Ads · Vídeo apagado do site (0 MB)</div>`;
+    }
+    if (asset.video_public_url) {
+      return `<div style="font-size:0.74rem; padding:0.35rem 0.6rem; border-radius:6px; background:rgba(52,211,153,0.15); color:#34d399; border:1px solid rgba(52,211,153,0.4);">🎬 Vídeo pronto carregado (${asset.video_filename || 'MP4'}) · Aguardando dia de postar</div>`;
+    }
+    return `<div style="font-size:0.74rem; padding:0.35rem 0.6rem; border-radius:6px; background:rgba(255,255,255,0.05); color:#94a3b8; border:1px solid rgba(255,255,255,0.08);">✨ Prompts Gemini prontos · Sem vídeo anexado</div>`;
+  }
+
+  function openPostStudioModal(postId) {
+    const post = OFFICIAL_POSTS.find(p => p.id === postId);
+    if (!post) return;
+    state.activeModalPostId = post.id;
+
+    const asset = getPostAssetState(post);
+    const overlay = $("post-studio-modal-overlay");
+    if (!overlay) return;
+
+    $("studio-modal-meta").textContent = `${post.date} · ${post.format}`;
+    $("studio-modal-title").textContent = post.title;
+    $("studio-video-prompt").value = asset.video_prompt;
+    $("studio-audio-prompt").value = asset.audio_prompt;
+    $("studio-caption-prompt").value = asset.caption_prompt;
+
+    updateModalVideoUI(asset);
+    overlay.hidden = false;
+  }
+
+  function updateModalVideoUI(asset) {
+    const badge = $("studio-video-status-badge");
+    const previewContainer = $("studio-video-preview-container");
+    const player = $("studio-video-player");
+    const info = $("studio-video-info");
+    const downloadBtn = $("btn-download-staged-video");
+
+    if (!badge || !previewContainer) return;
+
+    if (asset.meta_ads_status === "publicado_e_limpo") {
+      badge.className = "video-status-pill cleaned";
+      badge.textContent = "Publicado no Meta Ads & Limpo (0 MB)";
+      previewContainer.hidden = true;
+      player.removeAttribute("src");
+    } else if (asset.video_public_url) {
+      badge.className = "video-status-pill ready";
+      badge.textContent = "Vídeo Carregado · Pronto p/ Postar";
+      previewContainer.hidden = false;
+      player.src = asset.video_public_url;
+      if (info) info.textContent = `Arquivo ativo no site: ${asset.video_filename || "video.mp4"}`;
+      if (downloadBtn) downloadBtn.href = asset.video_public_url;
+    } else {
+      badge.className = "video-status-pill waiting";
+      badge.textContent = "Aguardando Upload do Vídeo";
+      previewContainer.hidden = true;
+      player.removeAttribute("src");
+    }
+  }
+
+  async function saveCurrentModalPrompts() {
+    const postId = state.activeModalPostId;
+    const post = OFFICIAL_POSTS.find(p => p.id === postId);
+    if (!post) return;
+
+    const current = getPostAssetState(post);
+    const updated = {
+      ...current,
+      video_prompt: $("studio-video-prompt")?.value || "",
+      audio_prompt: $("studio-audio-prompt")?.value || "",
+      caption_prompt: $("studio-caption-prompt")?.value || "",
+      updated_at: new Date().toISOString()
+    };
+
+    state.postAssetsMap[postId] = updated;
+    try {
+      localStorage.setItem(`luria_post_asset_${postId}`, JSON.stringify(updated));
+    } catch (_) {}
+
+    const btn = $("btn-save-prompts");
+    if (btn) btn.textContent = "Salvando...";
+
+    try {
+      const sb = window.supabaseClient || window.sb;
+      if (sb) {
+        await sb.from("marketing_post_assets").upsert(updated, { onConflict: "post_id" });
+      }
+      if (btn) {
+        btn.textContent = "✅ Prompts Salvos!";
+        setTimeout(() => { btn.textContent = "💾 Salvar Edições dos Prompts"; }, 2000);
+      }
+    } catch (_) {
+      if (btn) btn.textContent = "✅ Salvo Localmente";
+    }
+  }
+
+  async function uploadVideoForActivePost() {
+    const postId = state.activeModalPostId;
+    const post = OFFICIAL_POSTS.find(p => p.id === postId);
+    const fileInput = $("studio-video-file-input");
+    const btn = $("btn-upload-video");
+
+    if (!post || !fileInput || !fileInput.files || fileInput.files.length === 0) {
+      alert("Selecione o arquivo de vídeo (.mp4 / .mov) gerado no Gemini primeiro.");
+      return;
+    }
+
+    const file = fileInput.files[0];
+    const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, "_");
+    const storagePath = `${postId}/${Date.now()}_${safeName}`;
+
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = "⏳ Enviando vídeo pro site...";
+    }
+
+    try {
+      const sb = window.supabaseClient || window.sb;
+      let publicUrl = "";
+
+      if (sb && sb.storage) {
+        // Se já havia um vídeo antigo para este post, remove antes para não acumular espaço
+        const prev = getPostAssetState(post);
+        if (prev.video_storage_path) {
+          await sb.storage.from(STORAGE_BUCKET).remove([prev.video_storage_path]);
+        }
+
+        const { error: upErr } = await sb.storage.from(STORAGE_BUCKET).upload(storagePath, file, {
+          cacheControl: "3600",
+          upsert: true
+        });
+        if (upErr) throw upErr;
+
+        const { data: pubData } = sb.storage.from(STORAGE_BUCKET).getPublicUrl(storagePath);
+        publicUrl = pubData?.publicUrl || "";
+      } else {
+        publicUrl = URL.createObjectURL(file);
+      }
+
+      const current = getPostAssetState(post);
+      const updated = {
+        ...current,
+        video_prompt: $("studio-video-prompt")?.value || current.video_prompt,
+        audio_prompt: $("studio-audio-prompt")?.value || current.audio_prompt,
+        caption_prompt: $("studio-caption-prompt")?.value || current.caption_prompt,
+        video_storage_path: storagePath,
+        video_public_url: publicUrl,
+        video_filename: file.name,
+        video_uploaded_at: new Date().toISOString(),
+        meta_ads_status: "pronto_para_postar",
+        updated_at: new Date().toISOString()
+      };
+
+      state.postAssetsMap[postId] = updated;
+      try {
+        localStorage.setItem(`luria_post_asset_${postId}`, JSON.stringify(updated));
+      } catch (_) {}
+
+      if (sb) {
+        await sb.from("marketing_post_assets").upsert(updated, { onConflict: "post_id" });
+      }
+
+      updateModalVideoUI(updated);
+      renderCurrentView();
+      fileInput.value = "";
+    } catch (err) {
+      console.error("[Upload Video Error]", err);
+      alert("Erro ao enviar o vídeo: " + (err.message || "Tente novamente."));
+    } finally {
+      if (btn) {
+        btn.disabled = false;
+        btn.textContent = "⬆️ Subir Vídeo para Este Post";
+      }
+    }
+  }
+
+  async function publishToMetaAndCleanVideo(isManualDeleteOnly = false) {
+    const postId = state.activeModalPostId;
+    const post = OFFICIAL_POSTS.find(p => p.id === postId);
+    if (!post) return;
+
+    const current = getPostAssetState(post);
+    const btnPub = $("btn-publish-and-clean");
+    const btnDel = $("btn-delete-staged-video");
+
+    if (btnPub) btnPub.disabled = true;
+    if (btnDel) btnDel.disabled = true;
+
+    try {
+      const sb = window.supabaseClient || window.sb;
+
+      // 1. Apagar o arquivo físico do bucket do site para liberar 100% do espaço
+      if (sb && sb.storage && current.video_storage_path) {
+        await sb.storage.from(STORAGE_BUCKET).remove([current.video_storage_path]);
+      }
+
+      // 2. Atualizar status no banco e na interface
+      const updated = {
+        ...current,
+        video_storage_path: null,
+        video_public_url: null,
+        video_filename: null,
+        meta_ads_status: isManualDeleteOnly ? "aguardando_video" : "publicado_e_limpo",
+        published_at: isManualDeleteOnly ? current.published_at : new Date().toISOString(),
+        cleaned_at: new Date().toISOString(),
+        updated_at: new Date().toISOString()
+      };
+
+      if (!isManualDeleteOnly) {
+        post.status = "publicado";
+        post.kanban = "publicado";
+      }
+
+      state.postAssetsMap[postId] = updated;
+      try {
+        localStorage.setItem(`luria_post_asset_${postId}`, JSON.stringify(updated));
+      } catch (_) {}
+
+      if (sb) {
+        await sb.from("marketing_post_assets").upsert(updated, { onConflict: "post_id" });
+      }
+
+      updateModalVideoUI(updated);
+      renderCurrentView();
+    } catch (err) {
+      console.error("[Clean Video Error]", err);
+    } finally {
+      if (btnPub) btnPub.disabled = false;
+      if (btnDel) btnDel.disabled = false;
+    }
+  }
+
+  function copyTextareaWithFeedback(textareaId, buttonId) {
+    const el = $(textareaId);
+    const btn = $(buttonId);
+    if (!el) return;
+    navigator.clipboard.writeText(el.value || "");
+    if (btn) {
+      const original = btn.textContent;
+      btn.textContent = "✅ Copiado!";
+      setTimeout(() => { btn.textContent = original; }, 1800);
+    }
+  }
+
+  function setupPostStudioModalListeners() {
+    $("studio-modal-close")?.addEventListener("click", () => {
+      const overlay = $("post-studio-modal-overlay");
+      const player = $("studio-video-player");
+      if (player) player.pause();
+      if (overlay) overlay.hidden = true;
+    });
+
+    $("btn-copy-video-prompt")?.addEventListener("click", () => copyTextareaWithFeedback("studio-video-prompt", "btn-copy-video-prompt"));
+    $("btn-copy-audio-prompt")?.addEventListener("click", () => copyTextareaWithFeedback("studio-audio-prompt", "btn-copy-audio-prompt"));
+    $("btn-copy-caption-prompt")?.addEventListener("click", () => copyTextareaWithFeedback("studio-caption-prompt", "btn-copy-caption-prompt"));
+
+    $("btn-regenerate-ultra-prompt")?.addEventListener("click", () => {
+      const post = OFFICIAL_POSTS.find(p => p.id === state.activeModalPostId);
+      if (!post) return;
+      const ultra = getDefaultPromptsForPost(post);
+      if ($("studio-video-prompt")) $("studio-video-prompt").value = ultra.videoPrompt;
+      if ($("studio-audio-prompt")) $("studio-audio-prompt").value = ultra.audioPrompt;
+      if ($("studio-caption-prompt")) $("studio-caption-prompt").value = ultra.captionPrompt;
+      saveCurrentModalPrompts();
+    });
+
+    $("btn-save-prompts")?.addEventListener("click", saveCurrentModalPrompts);
+    $("btn-upload-video")?.addEventListener("click", uploadVideoForActivePost);
+    $("btn-publish-and-clean")?.addEventListener("click", () => publishToMetaAndCleanVideo(false));
+    $("btn-delete-staged-video")?.addEventListener("click", () => publishToMetaAndCleanVideo(true));
+
+    // Delegação global para botões "Prompts & Subir Vídeo" e "Copiar Prompt" direto nos cards
+    document.addEventListener("click", (e) => {
+      const copyDirectBtn = e.target.closest("[data-copy-prompt-post]");
+      if (copyDirectBtn) {
+        e.preventDefault();
+        e.stopPropagation();
+        const postId = copyDirectBtn.getAttribute("data-copy-prompt-post");
+        const promptType = copyDirectBtn.getAttribute("data-prompt-type") || "all";
+        const post = OFFICIAL_POSTS.find(p => p.id === postId);
+        if (!post) return;
+        const asset = getPostAssetState(post);
+        let textToCopy = asset.video_prompt;
+        if (promptType === "audio") textToCopy = asset.audio_prompt;
+        else if (promptType === "all") {
+          textToCopy = `${asset.video_prompt}\n\n========================================\n\n${asset.audio_prompt}\n\n========================================\n\nLEGENDA INSTAGRAM:\n${asset.caption_prompt}`;
+        }
+        navigator.clipboard.writeText(textToCopy);
+        const origText = copyDirectBtn.innerHTML;
+        copyDirectBtn.innerHTML = "✅ Prompt Ultradetalhado Copiado!";
+        setTimeout(() => { copyDirectBtn.innerHTML = origText; }, 2000);
+        return;
+      }
+
+      const copyStoryBtn = e.target.closest("[data-copy-story-prompt]");
+      if (copyStoryBtn) {
+        e.preventDefault();
+        e.stopPropagation();
+        const day = copyStoryBtn.getAttribute("data-copy-story-prompt");
+        const story = STORIES_30_DAYS.find(s => s.day === day);
+        if (!story) return;
+        const storyUltraPrompt = `[REGRA OBRIGATÓRIA: Prompt Ultradetalhado de Story 9:16 (1080x1920px) · Estilo @mentoris · Zero Rostos de IA]\n- Dia: ${story.day} | Recurso Nativo: ${story.resource}\n- Ideia Central: "${story.idea}"\n- Visual Direction: Fundo dark-mode obsidiana (#0A2342) com iluminação volumétrica verde esmeralda (#10B981), card de vidro fosco flutuante em perspectiva 3D da plataforma LURIA no topo, tipografia cinética neon centralizada e espaço reservado no terço inferior para o sticker interativo de ${story.resource}.`;
+        navigator.clipboard.writeText(storyUltraPrompt);
+        const origText = copyStoryBtn.innerHTML;
+        copyStoryBtn.innerHTML = "✅ Prompt Copiado!";
+        setTimeout(() => { copyStoryBtn.innerHTML = origText; }, 1800);
+        return;
+      }
+
+      const trigger = e.target.closest("[data-open-studio-post]");
+      if (trigger) {
+        e.preventDefault();
+        e.stopPropagation();
+        const postId = trigger.getAttribute("data-open-studio-post");
+        openPostStudioModal(postId);
+      }
+    });
+  }
+
+  // ==============================================================
   // TELAS DE RENDERIZAÇÃO
   // ==============================================================
 
@@ -228,6 +704,10 @@
     const currentWeekPosts = OFFICIAL_POSTS.slice(0, 7);
 
     container.innerHTML = `
+      <div style="margin-bottom:1rem; padding:0.75rem 1rem; border-radius:10px; background:rgba(56,189,248,0.08); border:1px solid rgba(56,189,248,0.25); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+        <span style="font-size:0.82rem; color:#e2e8f0;">⚡ <strong>Regra Ativa:</strong> Todos os posts geram automaticamente <strong>Prompts Ultradetalhados</strong> (60fps, estética @mentoris, 3D UI LURIA, zero rostos de IA).</span>
+        <span style="font-size:0.75rem; color:#38bdf8; font-weight:700;">Clique em "📋 Copiar Prompt" em qualquer card ou abra o Estúdio do post</span>
+      </div>
       <div id="editorial-planner-board" class="editorial-planner-board">
         ${currentWeekPosts.map(post => `
           <div class="editorial-day-col has-post">
@@ -253,9 +733,18 @@
                   <strong>📝 Briefing & Roteiro:</strong>
                   <p>${post.script}</p>
                 </div>
-                <a href="${DRIVE_FOLDER}" target="_blank" rel="noopener noreferrer" class="button primary planner-card-btn">
-                  📂 Ver no Drive
-                </a>
+                ${renderPostStagingBadge(post)}
+                <div style="display:flex; flex-direction:column; gap:0.45rem; margin-top:0.25rem;">
+                  <button type="button" data-copy-prompt-post="${post.id}" data-prompt-type="all" class="prompt-btn-copy" style="width:100%; padding:0.5rem; font-size:0.78rem; text-align:center;">
+                    📋 Copiar Prompt Ultradetalhado
+                  </button>
+                  <button type="button" data-open-studio-post="${post.id}" class="button primary planner-card-btn" style="width:100%; justify-content:center;">
+                    🎬 Editar Prompt & Subir Vídeo
+                  </button>
+                  <a href="${DRIVE_FOLDER}" target="_blank" rel="noopener noreferrer" class="button secondary planner-card-btn" style="width:100%; justify-content:center;">
+                    📂 Ver no Drive
+                  </a>
+                </div>
               </article>
             </div>
           </div>
@@ -275,7 +764,7 @@
       <div class="editorial-month-meta-bar">
         <div class="month-headline">
           <strong>${state.selectedMonth === "2026-10" ? "Outubro 2026 (Aquecimento & Pré-lista)" : state.selectedMonth === "2026-11" ? "Novembro 2026 (Black Week Oficial & 15 Dias)" : "Dezembro 2026 (Retenção 2027)"}</strong>
-          <span>${filtered.length} publicações programadas com validação científica e conformidade ética.</span>
+          <span>${filtered.length} publicações com Regra de Prompt Ultradetalhado (@mentoris 3D UI), botão de cópia rápida, upload de vídeo e auto-limpeza pós-Meta Ads.</span>
         </div>
         <div class="month-kpis">
           <div class="month-kpi-item">
@@ -283,8 +772,8 @@
             <strong>${filtered.length}</strong>
           </div>
           <div class="month-kpi-item">
-            <small>Repositório</small>
-            <strong style="color: #38bdf8;">Google Drive</strong>
+            <small>Fluxo de Mídia</small>
+            <strong style="color: #34d399;">Auto-Clean 0 MB</strong>
           </div>
         </div>
       </div>
@@ -311,10 +800,25 @@
               <p>${post.script}</p>
             </div>
 
-            <div class="month-week-footer">
-              <a href="${DRIVE_FOLDER}" target="_blank" rel="noopener noreferrer" class="button secondary planner-card-btn">
-                📂 Acessar Arquivo no Drive
-              </a>
+            ${renderPostStagingBadge(post)}
+
+            <div class="month-week-footer" style="display:flex; flex-direction:column; gap:0.45rem;">
+              <div style="display:flex; gap:0.4rem; width:100%;">
+                <button type="button" data-copy-prompt-post="${post.id}" data-prompt-type="video" class="prompt-btn-copy" style="flex:1; padding:0.45rem; font-size:0.75rem;">
+                  📋 Copiar Prompt Vídeo
+                </button>
+                <button type="button" data-copy-prompt-post="${post.id}" data-prompt-type="audio" class="prompt-btn-copy" style="flex:1; padding:0.45rem; font-size:0.75rem;">
+                  🎙️ Copiar Áudio
+                </button>
+              </div>
+              <div style="display:flex; gap:0.4rem; width:100%;">
+                <button type="button" data-open-studio-post="${post.id}" class="button primary planner-card-btn" style="flex:1; justify-content:center;">
+                  🎬 Editar Prompt & Subir Vídeo
+                </button>
+                <a href="${DRIVE_FOLDER}" target="_blank" rel="noopener noreferrer" class="button secondary planner-card-btn">
+                  📂 Drive
+                </a>
+              </div>
             </div>
           </article>
         `).join("")}
@@ -347,13 +851,22 @@
                 <span class="kanban-badge">${items.length}</span>
               </div>
               ${items.map(item => `
-                <div class="kanban-card" onclick="window.open('${DRIVE_FOLDER}', '_blank')">
+                <div class="kanban-card" data-open-studio-post="${item.id}">
                   <div class="kanban-card-meta">
                     <span>${item.date}</span>
                     <span style="color:#38bdf8;">${item.format}</span>
                   </div>
                   <div class="kanban-card-title">${item.title}</div>
-                  <small style="color:#94a3b8;">CTA: ${item.cta}</small>
+                  <small style="color:#94a3b8; display:block; margin-bottom:0.35rem;">CTA: ${item.cta}</small>
+                  ${renderPostStagingBadge(item)}
+                  <div style="display:flex; gap:0.35rem; margin-top:0.45rem;">
+                    <button type="button" data-copy-prompt-post="${item.id}" data-prompt-type="all" class="prompt-btn-copy" style="flex:1; font-size:0.7rem; padding:0.3rem;">
+                      📋 Copiar Prompt
+                    </button>
+                    <button type="button" data-open-studio-post="${item.id}" class="prompt-btn-copy" style="background:rgba(16,185,129,0.18); border-color:rgba(16,185,129,0.45); color:#34d399; font-size:0.7rem; padding:0.3rem;">
+                      ⬆️ Vídeo
+                    </button>
+                  </div>
                 </div>
               `).join("")}
             </div>
@@ -371,17 +884,22 @@
     container.innerHTML = `
       <div style="margin-bottom: 1.5rem;">
         <h3 style="color:#fff; margin:0 0 0.5rem 0;">Pauta Completa de Stories · Todos os 30 Dias de Novembro</h3>
-        <p style="color:#94a3b8; font-size:0.92rem; margin:0;">Rotina diária de engajamento baseada no Dossiê LURIA (Enquetes, Quizzes, Caixas de Dúvidas e Tours).</p>
+        <p style="color:#94a3b8; font-size:0.92rem; margin:0;">Rotina diária de engajamento baseada no Dossiê LURIA com botão de cópia de Prompt Ultradetalhado em cada Story.</p>
       </div>
 
       <div class="stories-grid-container">
         ${STORIES_30_DAYS.map(s => `
-          <div class="stories-day-card">
-            <div class="stories-day-top">
-              <span>Dia ${s.day}</span>
-              <span class="stories-tag">${s.resource}</span>
+          <div class="stories-day-card" style="display:flex; flex-direction:column; justify-content:space-between; gap:0.65rem;">
+            <div>
+              <div class="stories-day-top">
+                <span>Dia ${s.day}</span>
+                <span class="stories-tag">${s.resource}</span>
+              </div>
+              <p class="stories-idea" style="margin-top:0.5rem;">${s.idea}</p>
             </div>
-            <p class="stories-idea">${s.idea}</p>
+            <button type="button" data-copy-story-prompt="${s.day}" class="prompt-btn-copy" style="width:100%; font-size:0.72rem; padding:0.35rem;">
+              📋 Copiar Prompt Ultradetalhado
+            </button>
           </div>
         `).join("")}
       </div>
@@ -685,6 +1203,7 @@
 
   async function init() {
     setupViewToggle();
+    setupPostStudioModalListeners();
     $("admin-pin-form")?.addEventListener("submit", submitEditorialPin);
 
     const pinInput = $("admin-pin");

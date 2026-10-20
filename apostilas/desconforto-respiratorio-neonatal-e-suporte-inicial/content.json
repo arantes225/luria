@@ -1,0 +1,1064 @@
+{
+  "v": 2,
+  "s": "desconforto-respiratorio-neonatal-e-suporte-inicial",
+  "t": "Desconforto Respiratório Neonatal e Suporte Inicial",
+  "p": "Desconforto Respiratório Neonatal e Suporte Inicial — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance: Fisiologia da Transição, Doença da Membrana Hialina, TTRN, SAM, Pneumonia e HPPN",
+  "a": "Pediatria",
+  "m": "Pediatria",
+  "h": [
+    "Apostila LURIA",
+    "Desconforto Respiratório Neonatal e Suporte Inicial",
+    "Tratado de Alta Performance: Fisiologia da Transição, Doença da Membrana Hialina, TTRN, SAM, Pneumonia e HPPN",
+    [
+      "Área: Pediatria",
+      "Matéria: Pediatria",
+      "Tema: Desconforto Respiratório Neonatal e Suporte Inicial"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introducao-e-fundamentos",
+      "Introdução e Fundamentos"
+    ],
+    [
+      "sumario-pedagogico-e-objetivos-de-aprendizagem",
+      "Sumário Pedagógico e Objetivos de Aprendizagem"
+    ],
+    [
+      "1-fisiologia-e-transicao-respiratoria-perinatal",
+      "1. Fisiologia e Transição Respiratória Perinatal"
+    ],
+    [
+      "2-avaliacao-semiologica-e-o-boletim-de-silverman-andersen",
+      "2. Avaliação Semiológica e o Boletim de Silverman-Andersen"
+    ],
+    [
+      "3-classificacao-e-diagnostico-diferencial-extensivo",
+      "3. Classificação e Diagnóstico Diferencial Extensivo"
+    ],
+    [
+      "4-sindrome-do-desconforto-respiratorio-doenca-da-membrana-hialina",
+      "4. Síndrome do Desconforto Respiratório (Doença da Membrana Hialina)"
+    ],
+    [
+      "5-taquipneia-transitoria-do-recem-nascido-ttrn",
+      "5. Taquipneia Transitória do Recém-Nascido (TTRN)"
+    ],
+    [
+      "6-sindrome-de-aspiracao-de-meconio-sam",
+      "6. Síndrome de Aspiração de Mecônio (SAM)"
+    ],
+    [
+      "7-pneumonia-neonatal-e-sepse-precoce",
+      "7. Pneumonia Neonatal e Sepse Precoce"
+    ],
+    [
+      "8-hipertensao-pulmonar-persistente-neonatal-hppn",
+      "8. Hipertensão Pulmonar Persistente Neonatal (HPPN)"
+    ],
+    [
+      "9-suporte-ventilatorio-inicial-e-manejo-do-surfactante",
+      "9. Suporte Ventilatório Inicial e Manejo do Surfactante"
+    ],
+    [
+      "10-casos-clinicos-estruturados-e-resolvidos-com-raciocinio-passo-a-passo",
+      "10. Casos Clínicos Estruturados e Resolvidos com Raciocínio Passo a Passo"
+    ],
+    [
+      "11-questoes-de-prova-comentadas-na-integra",
+      "11. Questões de Prova Comentadas na Íntegra"
+    ],
+    [
+      "12-tabela-resumo-e-high-yield-exam-pearls",
+      "12. Tabela Resumo e High-Yield Exam Pearls"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "introducao-e-fundamentos",
+      0,
+      [
+        [
+          "2",
+          "Introdução e Fundamentos"
+        ],
+        [
+          "p",
+          "<h1>LURIA · Apostila 201 — Desconforto Respiratório Neonatal e Suporte Inicial</h1>"
+        ],
+        [
+          "p",
+          "> <strong>Área:</strong> Pediatria  <br>> <strong>Subespecialidade:</strong> Neonatologia e Terapia Intensiva Neonatal  <br>> <strong>Público-alvo:</strong> Médicos Residentes, Candidatos ao Revalida e ENAMED  <br>> <strong>Diretrizes de Referência:</strong> Sociedade Brasileira de Pediatria (SBP - Diretrizes de Reanimação Neonatal 2022/2024), American Academy of Pediatrics (AAP/NRP 8th Edition), European Consensus Guidelines on the Management of Respiratory Distress Syndrome (Revisão 2023/2026), Ministério da Saúde do Brasil."
+        ]
+      ]
+    ],
+    [
+      "sumario-pedagogico-e-objetivos-de-aprendizagem",
+      0,
+      [
+        [
+          "2",
+          "Sumário Pedagógico e Objetivos de Aprendizagem"
+        ],
+        [
+          "p",
+          "O período de transição da vida aquática intrauterina para a respiração aérea extrauterina representa a maior e mais rápida adaptação fisiológica pela qual o ser humano passa em toda a sua existência. Em questão de segundos a minutos após o clampeamento do cordão umbilical e as primeiras incursões respiratórias, os pulmões fetais — até então preenchidos por fluido pulmonar secretado ativamente pelo epitélio alveolar e sem função de troca gasosa — devem ser esvaziados desse líquido, preenchidos por ar ambiente, estabelecer uma Capacidade Residual Funcional (CRF) estável e promover uma drástica e abrupta queda da Resistência Vascular Pulmonar (RVP)."
+        ],
+        [
+          "p",
+          "Quando essa transição crítica falha ou sofre interferências adversas — seja por imaturidade bioquímica e estrutural dos pneumócitos tipo II, por deficiência de absorção mecânica e ativa do líquido pulmonar, por aspiração intraparto de líquido meconial espesso, por processos infecciosos congênitos e perinatais, ou por persistência anormal da vasoconstrição arterial pulmonar —, instala-se a síndrome do <strong>Desconforto Respiratório Neonatal (DRN)</strong>. O DRN é uma das causas mais prevalentes de admissão em Unidades de Terapia Intensiva Neonatal (UTIN) em todo o mundo e constitui causa primária de morbimortalidade perinatal e neonatal precoce."
+        ],
+        [
+          "p",
+          "Ao concluir o estudo aprofundado desta apostila padrão-ouro, o médico e candidato aos exames de alta performance deverá ser capaz de:"
+        ],
+        [
+          "p",
+          "1. <strong>Dominar a fisiologia da transição respiratória perinatal:</strong> compreender os mecanismos celulares de secreção de cloreto e absorção ativa de sódio via canais epiteliais de sódio (ENaC) ativados por catecolaminas e glicocorticoides; os efeitos da pressão oncótica e linfática; e a dinâmica do tônus vascular pulmonar mediada por oxigênio, óxido nítrico e prostaciclina endoteliais.<br>2. <strong>Avaliar semiologicamente a gravidade do desconforto:</strong> calcular e interpretar com precisão o Boletim de Silverman-Andersen (BSA), identificando os cinco parâmetros clássicos (movimentos toracoabdominais, tiragem intercostal, retração xifoide, batimento de asas nasais e gemido expiratório), além de diferenciar taquipneia isolada de fadiga diafragmática iminente.<br>3. <strong>Estabelecer o diagnóstico diferencial exaustivo das patologias respiratórias do recém-nascido:</strong> correlacionar idade gestacional (prematuro vs. termo/pós-termo), tipo de parto (cesárea eletiva sem trabalho de parto vs. parto vaginal com estresse fisiológico), fatores de risco materno-fetais (diabetes mellitus, corioamnionite, rotura prematura de membranas, asfixia perinatal), cronologia de início e achados radiográficos característicos entre a Síndrome do Desconforto Respiratório (Doença da Membrana Hialina - DMH), Taquipneia Transitória do Recém-Nascido (TTRN), Síndrome de Aspiração de Mecônio (SAM), Pneumonia Neonatal / Sepse Precoce, Hipertensão Pulmonar Persistente Neonatal (HPPN), Pneumotórax espontâneo ou barotrauma, e malformações congênitas estruturais (Hérnia Diafragmática Congênita, Atresia de Coanas, Hipoplasia Pulmonar).<br>4. <strong>Indicar e executar as condutas terapêuticas atualizadas em sala de parto e UTIN:</strong> aplicar as diretrizes contemporâneas de reanimação neonatal da SBP/AAP para recém-nascidos maiores ou iguais a 34 semanas e menores de 34 semanas, com ênfase na estabilização térmica, no clampeamento oportuno do cordão umbilical, na titulação prudente de fração inspirada de oxigênio (FiO2) com oxímetro de pulso pré-ductal, no uso imediato de Pressão Positiva Contínua nas Vias Aéreas (CPAP nasal) em sala de parto com peça em T, evitando a intubação orotraqueal inadvertida.<br>5. <strong>Manejar a reposição exógena de surfactante pulmonar:</strong> reconhecer as indicações precisas baseadas na FiO2 e PEEP, dominar os métodos minimamente invasivos (LISA/MIST) versus método clássico (INSURE), calcular dosagens (200 mg/kg na dose de ataque de poractanto alfa) e identificar falhas terapêuticas precoces.<br>6. <strong>Manejar complicações críticas e o suporte ventilatório invasivo e não invasivo:</strong> titular parâmetros ventilatórios mecânicos evitando volutrauma, barotrauma, atelectrauma e biotrauma; reconhecer e drenar pneumotórax hipertensivo; conduzir a HPPN com suporte hemodinâmico, alcalinização controlada e óxido nítrico inalatório (iNO); e planejar a prevenção da Displasia Broncopulmonar (DBP) e da Retinopatia da Prematuridade (ROP)."
+        ]
+      ]
+    ],
+    [
+      "1-fisiologia-e-transicao-respiratoria-perinatal",
+      0,
+      [
+        [
+          "2",
+          "1. Fisiologia e Transição Respiratória Perinatal"
+        ],
+        [
+          "3",
+          "1.1 O Pulmão Fetal e o Fluido Pulmonar"
+        ],
+        [
+          "p",
+          "Durante toda a vida intrauterina, as trocas gasosas fetais dependem exclusivamente da placenta. Os pulmões fetais não são órgãos de hematose, mas encontram-se em contínuo e sofisticado desenvolvimento estrutural e bioquímico. Os alvéolos e futuros espaços aéreos estão completamente preenchidos por fluido pulmonar fetal (FPF), cuja produção atinge cerca de 4 a 5 mL/kg/hora no terceiro trimestre de gestação, com volume intrapulmonar estacionário de aproximadamente 25 a 30 mL/kg (volume correspondente à futura Capacidade Residual Funcional pós-natal)."
+        ],
+        [
+          "p",
+          "O fluido pulmonar fetal não é líquido amniótico aspirado, mas sim um ultrafiltrado plasmático ativamente modificado pelo epitélio respiratório. As células epiteliais pulmonares fetais transportam ativamente íons cloreto do interstício para a luz alveolar através de canais de cloreto apicais (incluindo o regulador de condutância transmembrana da fibrose cística - CFTR). O gradiente eletroquímico gerado atrai íons sódio e, por força osmótica, grandes volumes de água são carreados para a luz das vias aéreas. Esse fluido exerce um papel biológico indispensável: atua como um molde hidráulico expansor com pressão positiva interna de cerca de 2 a 4 cmH2O, mantendo as vias aéreas e ácinos distendidos, o que estimula a proliferação celular, a morfogênese brônquica e a diferenciação dos septos alveolares. Sem essa distensão hídrica sustentada (como observado nos casos de oligoâmnio grave e prolongado secundário a rotura prematura de membranas ou agenesia renal bilateral / Síndrome de Potter), desenvolve-se hipoplasia pulmonar grave e letal."
+        ],
+        [
+          "3",
+          "1.2 A Absorção do Fluido Pulmonar e a Ativação dos Canais ENaC"
+        ],
+        [
+          "p",
+          "Para que o recém-nascido respire ar atmosférico eficazmente logo após o parto, esses 25 a 30 mL/kg de fluido devem ser removidos e reabsorvidos com extrema rapidez. Esse processo de depuração não tem início no parto, mas sim dias a horas antes do nascimento, dependendo crucialmente do estresse fisiológico materno e fetal que caracteriza o trabalho de parto espontâneo:"
+        ],
+        [
+          "p",
+          "1. <strong>Alteração Fenotípica do Epitélio Pulmonar:</strong> Sob o influxo crescente de esteroides adrenais fetais e tireoidianos nas últimas semanas de gestação, o epitélio pulmonar sofre uma reprogramação transcricional, transitando de um fenótipo predominantemente secretor de cloreto para um fenótipo predominantemente absortivo de sódio.<br>2. <strong>O Papel do Trabalho de Parto e das Catecolaminas:</strong> Durante as contrações uterinas e a descida no canal de parto, o feto experimenta uma elevação maciça nos níveis circulantes de adrenalina e noradrenalina. As catecolaminas ligam-se aos receptores beta-2 adrenérgicos basolaterais dos pneumócitos alveolares tipo II, ativando a adenilil ciclase e elevando o AMP cíclico (AMPc) intracelular.<br>3. <strong>Canais Epiteliais de Sódio (ENaC):</strong> O AMPc estimula a inserção rápida e a abertura dos canais epiteliais de sódio (ENaC) na membrana apical voltada para o lúmen alveolar. O sódio passa a ser transportado passivamente da luz alveolar para o interior dos pneumócitos tipo II a favor do gradiente de concentração mantido pela bomba Na+/K+-ATPase localizada na membrana basolateral, que bombeia ativamente 3 íons sódio para o interstício perialveolar em troca de 2 íons potássio.<br>4. <strong>Gradiente Osmótico e Drenagem Linfática:</strong> O movimento massivo de sódio da luz para o interstício inverte a força osmótica: a água e o cloreto deixam o lúmen alveolar e penetram no interstício pulmonar. A partir do interstício, esse grande volume de fluido é drenado para a circulação sistêmica e para a rica rede de vasos linfáticos pulmonares, sendo gradualmente depurado nas primeiras horas de vida.<br>5. <strong>Expressão Torácica Mecânica:</strong> A compressão física da caixa torácica fetal durante a passagem pelo canal de parto vaginal expele pela orofaringe e narinas apenas cerca de 5 a 15 mL/kg de líquido (cerca de um terço do total). Os dois terços restantes dependem estritamente da absorção epitelial ativa mediada por ENaC e da circulação linfática. Quando a criança nasce de parto cesáreo eletivo sem trabalho de parto prévio, faltam o pico de catecolaminas e a compressão mecânica torácica, resultando no acúmulo patológico de líquido no interstício e nas cissuras interlobares — base fisiopatológica da Taquipneia Transitória do Recém-Nascido (TTRN)."
+        ],
+        [
+          "3",
+          "1.3 O Sistema Surfactante Alveolar: Bioquímica e Biofísica"
+        ],
+        [
+          "p",
+          "A manutenção da estabilidade alveolar e a formação da Capacidade Residual Funcional após a expulsão do fluido pulmonar dependem imperativamente da presença de surfactante pulmonar alveolar."
+        ],
+        [
+          "p",
+          "O surfactante é um complexo lipoproteico sintetizado e secretado exclusivamente pelos pneumócitos tipo II (que representam cerca de 60% das células epiteliais alveolares, mas cobrem apenas 5% da superfície alveolar, enquanto os pneumócitos tipo I, finos e delgados, recobrem os outros 95% e realizam a difusão gasosa)."
+        ],
+        [
+          "p",
+          "* <strong>Composição Química:</strong><br>  * <strong>Lipídios (85% a 90% do peso total):</strong> O principal componente biofísico ativo é a <strong>dipalmitoilfosfatidilcolina (DPPC)</strong>, também chamada de lecitina saturada, correspondendo a cerca de 50% dos fosfolipídios totais. A DPPC possui duas caudas de ácidos graxos saturados (ácido palmítico) que se alinham paralelamente de maneira extremamente densa na interface ar-líquido alveolar. Outros lipídios essenciais incluem o fosfatidilglicerol (PG, cerca de 8% a 12%, cuja presença no líquido amniótico é o marcador definitivo de maturidade pulmonar fetal, surgindo apenas após a 35ª semana), fosfatidiletanolamina, fosfatidilinositol e colesterol neutro (cerca de 5% a 8%).<br>  * <strong>Proteínas Específicas do Surfactante (10% do peso total):</strong><br>    * <strong>SP-A e SP-D:</strong> Proteínas hidrofílicas pertencentes à família das coletinas. Possuem domínio lectina dependente de cálcio e atuam primariamente na imunidade inata alveolar, opsonizando patógenos bacterianos, fúngicos e virais, modulando a fagocitose por macrófagos alveolares e controlando o turnover e a recaptação do surfactante.<br>    * <strong>SP-B e SP-C:</strong> Proteínas hidrofóbicas de baixo peso molecular, vitais para as propriedades biofísicas do surfactante. A <strong>SP-B</strong> é indispensável à vida; atua como catalisadora facilitando a inserção ultrarrápida dos fosfolipídios na interface ar-líquido alveolar durante a inspiração e promovendo a transição da mielina tubular para o filme monomolecular tensoativo. Mutações recessivas no gene da SP-B causam proteinose alveolar congênita letal e refratária a surfactante exógeno. A <strong>SP-C</strong> estabiliza o filme fosfolipídico sob altas pressões superficiais ao final da expiração, prevenindo o colapso alveolar."
+        ],
+        [
+          "p",
+          "* <strong>Física da Tensão Superficial e Lei de Laplace:</strong><br>  A interface entre o ar inalado e a fina camada de água que reveste os alvéolos gera forças coesivas intermoleculares de atração entre as moléculas de água — a chamada tensão superficial. Essa força tende a reduzir a área de superfície alveolar ao menor valor possível, promovendo o colapso dos alvéolos e forçando a saída de ar dos mesmos."
+        ],
+        [
+          "p",
+          "Pela <strong>Lei de Laplace</strong>, a pressão de colapso interno ($P$) necessária para manter aberta uma estrutura esférica elástica é dada por $P = 2T / r$, onde $T$ representa a tensão superficial da interface ar-líquido e $r$ é o raio do alvéolo."
+        ],
+        [
+          "p",
+          "Se a tensão superficial fosse constante e uniforme em todos os alvéolos pulmonares (como ocorreria na ausência de surfactante, onde $T$ é mantida alta pela água, em torno de 70 dinas/cm):<br>  1. Quanto menor o raio alveolar, maior a pressão interna exercida para colapsá-lo.<br>  2. Em um pulmão desprovido de surfactante, os alvéolos menores gerariam pressões muito maiores do que os alvéolos maiores comunicantes, esvaziando seu conteúdo gasoso para dentro dos alvéolos vizinhos maiores (fenômeno de hiperdistensão de alvéolos grandes e colapso/atelectasia completa de alvéolos pequenos).<br>  3. Ao final de cada expiração, quando os alvéolos reduzem de diâmetro, a pressão crítica de fechamento seria atingida em toda a árvore respiratória, resultando em atelectasia difusa e esvaziamento total dos alvéolos. Para reinflar o pulmão a cada nova inspiração, o recém-nascido teria que despender pressões inspiratórias negativas gigantescas (> 25 a 30 cmH2O), gerando fadiga muscular rápida, fratura de gradil costal complacente e asfixia."
+        ],
+        [
+          "p",
+          "O surfactante pulmonar resolve perfeitamente esse desafio biofísico:<br>  * À medida que o alvéolo encolhe durante a expiração (o raio diminui), as moléculas anfipáticas de DPPC e as proteínas SP-B e SP-C são comprimidas na superfície, expulsando a água da interface e reduzindo a tensão superficial para valores próximos de zero (< 2 a 5 dinas/cm).<br>  * Essa queda drástica compensa a diminuição do raio na equação de Laplace, equalizando as pressões transmurais entre alvéolos de diferentes tamanhos, impedindo o esvaziamento recíproco e garantindo que o alvéolo permaneça aberto mesmo ao término da expiração, estabelecendo a <strong>Capacidade Residual Funcional (CRF)</strong>.<br>  * Além de estabilizar o volume pulmonar, a redução da tensão superficial impede a transudação de líquido dos capilares pulmonares para dentro do espaço alveolar por sucção hidrostática (prevenindo o edema pulmonar alveolar)."
+        ],
+        [
+          "p",
+          "* <strong>Desenvolvimento Ontogenético da Síntese de Surfactante:</strong><br>  Os pneumócitos tipo II iniciam a produção rudimentar de surfactante por volta da 20ª a 24ª semana de gestação (fase canalicular), mas esse surfactante inicial é armazenado nos corpúsculos lamelares em pequenas quantidades e apresenta baixa concentração de DPPC e ausência de fosfatidilglicerol. Entre a 32ª e a 35ª semana (fase sacular/alveolar inicial), ocorre um aumento exponencial na transcrição enzimática mediado por hormônios fetais (glicocorticoides, hormônio tireoidiano, prolactina), atingindo maturidade biológica plena por volta da 35ª à 36ª semana. Prematuros nascidos antes de 34 semanas — e particularmente aqueles abaixo de 30 a 32 semanas — apresentam deficiência primária quantitativa e qualitativa severa de surfactante, desencadeando a Síndrome do Desconforto Respiratório clássica."
+        ],
+        [
+          "3",
+          "1.4 A Queda da Resistência Vascular Pulmonar e Fechamento de Shunts"
+        ],
+        [
+          "p",
+          "Na vida intrauterina, os pulmões recebem apenas cerca de 8% a 10% do débito cardíaco biventricular combinado, devido à elevadíssima Resistência Vascular Pulmonar (RVP). A placenta é o órgão de baixíssima resistência vascular que recebe a maior parte do débito cardíaco fetal. A hipóxia alveolar fisiológica intrauterina (PaO2 fetal em torno de 20 a 25 mmHg) e o colapso mecânico das arteríolas pulmonares pelo fluido circundante mantêm a musculatura lisa vascular pulmonar em estado tônico de vasoconstrição profunda."
+        ],
+        [
+          "p",
+          "Nesse cenário de RVP pulmonar mais alta do que a resistência vascular sistêmica (RVS), o sangue que chega ao ventrículo direito é desviado em grande parte para fora dos pulmões:<br>1. <strong>Forame Oval:</strong> Desvia o sangue oxigenado vindo da veia cava inferior diretamente do átrio direito para o átrio esquerdo.<br>2. <strong>Canal Arterial (Ductus Arteriosus):</strong> Conecta a artéria pulmonar principal à aorta descendente, desviando o sangue ejetado pelo ventrículo direito diretamente para a circulação sistêmica e placentária."
+        ],
+        [
+          "p",
+          "No momento do nascimento, ocorrem simultaneamente três eventos mecânicos e hemodinâmicos fundamentais:<br>1. <strong>Remoção da Placenta:</strong> O clampeamento do cordão umbilical elimina a circulação placentária de baixa resistência, provocando elevação imediata e substancial da Resistência Vascular Sistêmica (RVS) e da pós-carga do ventrículo esquerdo.<br>2. <strong>Primeira Ventilação e Aeração Pulmonar:</strong> A expansão alveolar com ar atmosférico substitui o fluido por oxigênio gasoso. O aumento abrupto da PaO2 alveolar (de ~25 para > 60-80 mmHg) atua como o mais potente vasodilatador arterial pulmonar fisiológico conhecido. O oxigênio estimula diretamente a síntese de óxido nítrico sintase endotelial (eNOS) nos vasos pulmonares, liberando óxido nítrico (NO), que se difunde para as células musculares lisas vasculares, ativando a guanilil ciclase solúvel e elevando o monofosfato cíclico de guanosina (GMPc). Paralelamente, ocorre liberação endotelial de prostaciclina (PGI2), que ativa a via do AMPc.<br>3. <strong>Queda da RVP e Reversão dos Shunts:</strong> Com a vasodilatação pulmonar arteriolar em massa, a RVP despenca para menos de um quinto de seus valores intrauterinos, permitindo que praticamente 100% do débito cardíaco atravesse o leito vascular pulmonar. O maciço retorno venoso pulmonar ao átrio esquerdo eleva sua pressão acima da pressão do átrio direito, promovendo o fechamento mecânico funcional da válvula do forame oval. Concomitantemente, o aumento da PaO2 arterial sistêmica e a queda dos níveis circulantes de prostaglandinas maternas (PGE2) induzem a contração constritiva da parede muscular lisa do canal arterial, culminando em seu fechamento funcional nas primeiras 12 a 24 horas de vida."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "2-avaliacao-semiologica-e-o-boletim-de-silverman-andersen",
+      0,
+      [
+        [
+          "2",
+          "2. Avaliação Semiológica e o Boletim de Silverman-Andersen"
+        ],
+        [
+          "3",
+          "2.1 Semiologia do Desconforto Respiratório no Neonato"
+        ],
+        [
+          "p",
+          "O recém-nascido possui características anatômicas e mecânicas toracopulmonares muito peculiares que o tornam altamente vulnerável à fadiga respiratória precoce:\n* <strong>Caixa Torácica Excessivamente Complacente:</strong> A estrutura osteocartilaginosa costal do neonato é extremamente maleável e elástica. As costelas têm inserção horizontalizada, limitando o mecanismo de alça de balde que amplia o diâmetro torácico no adulto. Diante de qualquer queda na complacência pulmonar (pulmão \"duro\" ou atelectásico), as pressões pleurais negativas geradas pela contração diafragmática colapsam a parede torácica para dentro, provocando tiragens visíveis e desperdício maciço de energia.\n* <strong>Diafragma com Menor Proporção de Fibras Resistentes:</strong> Apenas cerca de 25% a 30% das fibras diafragmáticas do recém-nascido a termo (e menos de 10% no prematuro extremo) são fibras do tipo I (oxidativas lentas, resistentes à fadiga), em comparação a 55% no adulto. Dessa forma, o neonato esgota rapidamente suas reservas glicogênicas musculares, evoluindo de taquipneia inicial para apneia secundária e colapso respiratório.\n* <strong>Vias Aéreas de Pequeno Calibre:</strong> De acordo com a Lei de Poiseuille, a resistência ao fluxo aéreo é inversamente proporcional à quarta potência do raio ($R \\propto 1/r^4$). Qualquer milímetro de edema de mucosa, secreção meconial ou colapso reduz drasticamente a luz traqueobrônquica, multiplicando exponencialmente o trabalho respiratório."
+        ],
+        [
+          "3",
+          "2.2 Os Sinais Cardinais do Desconforto"
+        ],
+        [
+          "p",
+          "1. <strong>Taquipneia:</strong> Frequência respiratória sustentada acima de 60 incursões por minuto (irpm), contada obrigatoriamente durante um minuto inteiro com o recém-nascido calmo e em repouso térmico. É a resposta compensatória inicial mais precoce e universal para manter o volume-minuto alveolar ($VM = VC \\times FR$) diante de um volume corrente ($VC$) reduzido.\n2. <strong>Batimento de Asas Nasais (BAN):</strong> Dilatação reflexa das narinas durante a inspiração mediada pela contração dos músculos alares faciais. Reduz a resistência da via aérea superior em até 30% a 40%, funcionando como mecanismo adaptativo primário.\n3. <strong>Tiragem Intercostal e Retração Subcostal:</strong> Depressão dos espaços intercostais e da margem costal inferior durante o esforço inspiratório, reflexo direto da complacência da parede torácica puxada para dentro pelas fortes pressões negativas intratorácicas.\n4. <strong>Retração Xifoide:</strong> Depressão acentuada do apêndice xifoide na linha média epigástrica, indicando tração diafragmática vigorosa.\n5. <strong>Gemido Expiratório:</strong> Sinal de extrema gravidade e alta especificidade. É um som audível produzido pelo fechamento parcial das cordas vocais durante a fase inicial e média da expiração. Funciona fisiologicamente como uma manobra autônoma de <strong>PEEP intrínseca (CPAP fisiológico)</strong>: ao retardar e restringir o fluxo expiratório, o neonato eleva a pressão alveolar expiratória, mantendo os alvéolos abertos, impedindo a perda da CRF e preservando a área de troca gasosa. A abolição súbita do gemido em um prematuro que vinha gemendo não significa melhora, mas sim exaustão muscular terminal.\n6. <strong>Respiração Paradoxal (Balanço Toracoabdominal):</strong> Movimento dessincronizado no qual o tórax afunda enquanto o abdome expande durante a inspiração, sinal inequívoco de fadiga diafragmática severa.\n7. <strong>Cianose Central:</strong> Coloração azulada ou arroxeada da língua, leito sublingual e mucosas orais, indicando concentração de hemoglobina desoxigenada superior a 3 a 5 g/dL no sangue capilar/arterial (geralmente correlacionada a uma saturação arterial de oxigênio abaixo de 80% a 85%). Deve ser rigidamente diferenciada da acrocianose (cianose isolada de extremidades periféricas), que é um fenômeno vasomotor benigno comum nas primeiras 24 a 48 horas de vida decorrente da instabilidade térmica."
+        ],
+        [
+          "3",
+          "2.3 O Boletim de Silverman-Andersen (BSA)"
+        ],
+        [
+          "p",
+          "O Boletim de Silverman-Andersen é a ferramenta clínica padronizada, universalmente adotada e cobrada em provas de residência médica para quantificação objetiva da gravidade da insuficiência respiratória neonatal."
+        ],
+        [
+          "p",
+          "Atenção à regra de ouro para não confundir com a Escala de Apgar:<br>* <strong>Na Escala de Apgar:</strong> Pontuação alta é favorável (nota 10 é perfeita, 0 é parada cardiorrespiratória).<br>* <strong>No Boletim de Silverman-Andersen:</strong> <strong>A pontuação é inversamente proporcional à saúde pulmonar.</strong> Nota 0 indica ausência total de desconforto (exame normal), enquanto a nota máxima 10 representa desconforto respiratório extremo e iminência de parada respiratória."
+        ],
+        [
+          "t",
+          [
+            "Parâmetro Clínico Avaliado",
+            "Grau 0 (Zero)",
+            "Grau 1 (Um)",
+            "Grau 2 (Dois)"
+          ],
+          [
+            [
+              "<strong>Movimentos Toracoabdominais</strong>",
+              "Síncronos (tórax e abdome expandem juntos)",
+              "Tórax imóvel, abdome expande na inspiração",
+              "Balanço toracoabdominal discordante (respiração paradoxal tipo \"gangorra\")"
+            ],
+            [
+              "<strong>Tiragem Intercostal</strong>",
+              "Ausente",
+              "Discreta / Apenas visível",
+              "Acentuada, profunda e generalizada"
+            ],
+            [
+              "<strong>Retração Xifoide</strong>",
+              "Ausente",
+              "Discreta / Pouco perceptível",
+              "Acentuada, proeminente e nítida"
+            ],
+            [
+              "<strong>Batimento de Asas Nasais (BAN)</strong>",
+              "Ausente",
+              "Discreto / Intermitente",
+              "Acentuado, constante e evidente"
+            ],
+            [
+              "<strong>Gemido Expiratório</strong>",
+              "Ausente",
+              "Audível apenas com estetoscópio",
+              "Audível a distância sem estetoscópio"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "* <strong>Interpretação Clínica e Conduta Estratificada:</strong><br>  * <strong>BSA 0:</strong> Pulmões adaptados, sem sinais de desconforto. Manter observação e alojamento conjunto.<br>  * <strong>BSA 1 a 3 (Desconforto Leve):</strong> Monitorização contínua de oximetria e sinais vitais, posicionamento cervical em leve extensão, manutenção da neutralidade térmica, suporte com halo/cateter nasal de O2 ou CPAP nasal precoce se prematuro.<br>  * <strong>BSA 4 a 6 (Desconforto Moderado):</strong> Instalação mandatória e imediata de suporte com CPAP nasal com PEEP de 5 a 7 cmH2O, gasometria arterial seriada, radiografia de tórax e jejum oral com hidratação venosa.<br>  * <strong>BSA 7 a 10 (Desconforto Grave):</strong> Falência respiratória iminente. Avaliar intubação orotraqueal e ventilação pulmonar mecânica invasiva se não houver resposta imediata ao CPAP otimizado, reposição precoce de surfactante exógeno e investigação intensiva de choque ou pneumotórax."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "3-classificacao-e-diagnostico-diferencial-extensivo",
+      0,
+      [
+        [
+          "2",
+          "3. Classificação e Diagnóstico Diferencial Extensivo"
+        ],
+        [
+          "p",
+          "O diagnóstico diferencial das doenças respiratórias neonatais exige uma análise metódica que cruza: (a) a idade gestacional, (b) o tipo de parto e antecedentes perinatais, (c) o tempo cronológico de aparecimento dos sintomas e (d) o padrão radiográfico pulmonar."
+        ],
+        [
+          "t",
+          [
+            "Parâmetro de Comparação",
+            "Síndrome do Desconforto Respiratório (DMH)",
+            "Taquipneia Transitória do Recém-Nascido (TTRN)",
+            "Síndrome de Aspiração de Mecônio (SAM)",
+            "Pneumonia Neonatal / Sepse Precoce"
+          ],
+          [
+            [
+              "<strong>População Alvo Típica</strong>",
+              "Prematuros (< 34 sem; principalmente < 30-32 sem)",
+              "Termo e prematuro tardio (34 a 37 semanas)",
+              "Termo e pós-termo (> 41-42 semanas) e PIG",
+              "Qualquer idade gestacional (prematuro ou termo)"
+            ],
+            [
+              "<strong>Fatores de Risco Clássicos</strong>",
+              "Prematuridade, mãe diabética, sexo masculino, asfixia perinatal, ausência de corticoide antenatal",
+              "Cesárea eletiva sem trabalho de parto, mãe diabética, asma materna, macrossomia",
+              "Líquido amniótico meconial espesso, sofrimento fetal agudo, pós-datismo, oligoidramnio",
+              "Bolsa rota prolongada (> 18h), corioamnionite, febre materna, colonização por GBS sem profilaxia"
+            ],
+            [
+              "<strong>Fisiopatologia Central</strong>",
+              "Deficiência primária quantitativa e qualitativa de surfactante alveolar",
+              "Retardo na absorção e depuração do fluido pulmonar pelos canais ENaC",
+              "Obstrução química e mecânica por mecônio, inativação do surfactante e pneumonite química",
+              "Infecciosa (transplacentária, canal de parto ou ascendente), inflamação alveolar difusa"
+            ],
+            [
+              "<strong>Início dos Sintomas</strong>",
+              "Primeiros minutos a poucas horas de vida (< 2 a 4 horas)",
+              "Primeiras horas de vida (< 2 a 6 horas)",
+              "Imediato na sala de parto (primeiros minutos)",
+              "Primeiras horas até 48-72h de vida (pode iniciar na sala de parto)"
+            ],
+            [
+              "<strong>Curso Clínico e Duração</strong>",
+              "Progressão rápida e piora em 24 a 48h; pico de gravidade em 72h; melhora gradual pós-surfactante",
+              "Benigno e autolimitado; resolução espontânea habitual em 24 a 72 horas",
+              "Curso arrastado, grave, instável; alta incidência de HPPN e escape aéreo",
+              "Variável; risco de choque séptico, instabilidade térmica, apneia e disfunção de múltiplos órgãos"
+            ],
+            [
+              "<strong>Achado Radiológico Típico</strong>",
+              "Hipoinsuflação (< 8 espaços intercostais), infiltrado reticulogranular difuso (\"vidro moído\") com broncogramas aéreos",
+              "Volume pulmonar normal ou hiperinsuflado, congestão perihilar (\"coração peludo\"), espessamento de cissuras interlobares e líquido na cissura",
+              "Hiperinsuflação com retificação diafragmática, infiltrado grosseiro nodular assimétrico (\"flocos de algodão\"), áreas de atelectasia alternadas com enfisema",
+              "Infiltrado heterogêneo broncopneumônico difuso, consolidações lobares ou padrão indistinguível de DMH; pode haver derrame pleural associado"
+            ],
+            [
+              "<strong>Terapêutica Específica</strong>",
+              "CPAP nasal precoce, surfactante exógeno intratraqueal (LISA/INSURE), suporte térmico e cafeína",
+              "Suporte com O2 em baixos fluxos, CPAP nasal temporário se desconforto moderado; restrição e NÃO usar diuréticos",
+              "Suporte ventilatório protetor, surfactante (altas doses ou lavado se grave), óxido nítrico inalatório (iNO) se HPPN",
+              "Antibioticoterapia parenteral empírica precoce (Ampicilina + Gentamicina), suporte ventilatório e hemodinâmico"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "4-sindrome-do-desconforto-respiratorio-doenca-da-membrana-hialina",
+      0,
+      [
+        [
+          "2",
+          "4. Síndrome do Desconforto Respiratório (Doença da Membrana Hialina)"
+        ],
+        [
+          "3",
+          "4.1 Fisiopatologia Celular e a Cascata da Lesão"
+        ],
+        [
+          "p",
+          "A Síndrome do Desconforto Respiratório (SDR), historicamente denominada Doença da Membrana Hialina (DMH), decorre primariamente da <strong>deficiência de surfactante pulmonar</strong> associada à imaturidade estrutural do parênquima pulmonar."
+        ],
+        [
+          "p",
+          "A cascata fisiopatológica da SDR segue uma sequência autoagravante que, se não interrompida, culmina em falência respiratória catastrófica:<br>1. <strong>Deficiência de Surfactante:</strong> Com a escassez de DPPC e proteínas SP-B/SP-C, a tensão superficial alveolar permanece extremamente alta ao longo de todo o ciclo respiratório.<br>2. <strong>Atelectasia Progressiva e Perda da Capacidade Residual Funcional:</strong> Ao final de cada expiração, ocorre colapso maciço dos alvéolos e bronquíolos terminais. O volume pulmonar cai drasticamente abaixo da CRF. A complacência pulmonar desaba (o pulmão torna-se rígido e pouco distensível).<br>3. <strong>Aumento do Trabalho Respiratório e Fadiga Muscular:</strong> Para vencer a alta tensão superficial e expandir alvéolos colapsados a cada ciclo inspiratório, o neonato precisa gerar pressões intratorácicas negativas extremas. Como a parede torácica cartilaginosa é hipercomplacente, o esforço muscular inspiratório diafragmático deforma a caixa torácica para dentro (tiragens graves), dissipando grande parte da energia mecânica. Instala-se fadiga muscular diafragmática rápida com retenção de CO2 (hipercapnia).<br>4. <strong>Desequilíbrio Ventilação-Perfusão (V/Q) e Shunt Intrapulmonar:</strong> Alvéolos colapsados continuam sendo perfundidos pelo sangue venoso da artéria pulmonar, gerando extensas áreas com relação V/Q igual a zero (shunt intrapulmonar direita-esquerda). O sangue passa pelos pulmões sem ser oxigenado, levando à hipoxemia arterial severa refratária ao aumento de oxigênio ambiental isolado.<br>5. <strong>Vasoconstrição Hipóxica e Shunts Extrapulmonares:</strong> A hipoxemia alveolar profunda e a acidose mista (hipercapnia respiratória somada à acidose lática por anaerobiose tecidual) atuam sobre a vasculatura pulmonar como potentes estímulos vasoconstritores. A Resistência Vascular Pulmonar (RVP) eleva-se rapidamente, superando a Resistência Vascular Sistêmica. Isso reabre e perpetua o fluxo de sangue não oxigenado da direita para a esquerda através do Forame Oval e do Canal Arterial, amplificando ainda mais a hipoxemia sistêmica.<br>6. <strong>Lesão Endotelial, Isquemia e Formação das Membranas Hialinas:</strong> A hipoperfusão alveolar e a asfixia local lesam gravemente as células endoteliais dos capilares pulmonares e os pneumócitos tipo I. Ocorre quebra da barreira alvéolo-capilar com transudação e exsudação de plasma rico em proteínas de alto peso molecular (especialmente fibrinogênio) para o interior dos alvéolos. O fibrinogênio polimeriza-se em fibrina insolúvel e, misturado aos restos celulares de pneumócitos necróticos descamados, coagula sob a forma de películas acelulares eosinofílicas homogêneas que revestem as paredes alveolares e ductos alveolares — as <strong>membranas hialinas histológicas</strong> (que levam de 6 a 12 horas para se formar completamente).<br>7. <strong>Inativação Secundária do Pouco Surfactante Restante:</strong> O plasma extravasado contém albumina, hemoglobina e globulinas que atuam como potentes inibidores químicos competitivos da função tensoativa do surfactante, inativando até mesmo a pequena reserva endógena que o prematuro ainda possuía, fechando um ciclo vicioso de atelectasia, isquemia e destruição pulmonar."
+        ],
+        [
+          "3",
+          "4.2 Fatores de Risco e Fatores de Proteção"
+        ],
+        [
+          "p",
+          "O risco de SDR é inversamente proporcional à idade gestacional: acomete cerca de 60% dos recém-nascidos com menos de 28 semanas, 30% entre 28 e 34 semanas e menos de 5% acima de 34 semanas."
+        ],
+        [
+          "p",
+          "* <strong>Fatores que AUMENTAM o risco de SDR:</strong><br>  * <strong>Prematuridade Extrema e Tardia:</strong> Quanto menor a idade gestacional, menor o número de pneumócitos II diferenciados e corpúsculos lamelares.<br>  * <strong>Filho de Mãe Diabética (FMD):</strong> A hiperglicemia materna crônica atravessa a placenta livremente, induzindo hiperplasia das ilhotas pancreáticas fetais e <strong>hiperinsulinismo fetal</strong>. A insulina é o mais potente inibidor hormonal antagônico à síntese de surfactante, inibindo transcricionalmente a ação maturadora do cortisol fetal e bloqueando a produção das proteínas SP-A e SP-B. Por essa razão, filhos de mães diabéticas podem desenvolver SDR mesmo quando nascem a termo (37 a 38 semanas).<br>  * <strong>Sexo Masculino:</strong> Os androgênios retardam a maturação dos pneumócitos tipo II em comparação ao estrogênio fetal, conferindo aos meninos maior suscetibilidade e evolução clínica mais arrastada.<br>  * <strong>Ausência de Trabalho de Parto (Cesárea Eletiva):</strong> Priva o concepto do estresse fisiológico e do pico de catecolaminas e glicocorticoides endógenos.<br>  * <strong>Asfixia Perinatal / Sofrimento Fetal Agudo:</strong> A hipóxia e a acidose lesam diretamente os pneumócitos tipo II, bloqueando a síntese enzimática de surfactante e esgotando as reservas de ATP.<br>  * <strong>Gestação Múltipla (especialmente o segundo gemelar):</strong> Frequentemente associada a maior taxa de prematuridade e maior risco de hipóxia intraparto no segundo gemelar.<br>  * <strong>Isoimunização Rh Grave (Eritroblastose Fetal):</strong> Curva com anasarca e hiperinsulinismo reflexo secundário à hipertrofia das ilhotas pancreáticas."
+        ],
+        [
+          "p",
+          "* <strong>Fatores que DIMINUEM o risco de SDR (Aceleração da Maturidade Pulmonar Fetal):</strong><br>  * Qualquer condição que submeta o feto a um estresse intrauterino crônico e prolongado eleva os níveis basais de cortisol endógeno fetal, acelerando a diferenciação dos pneumócitos tipo II:<br>    * <strong>Hipertensão Arterial Materna Crônica e Pré-eclâmpsia.</strong><br>    * <strong>Restrição de Crescimento Intrauterino (RCIU) / Insuficiência Placentária Crônica.</strong><br>    * <strong>Rotura Prematura de Membranas Ovulares Prolongada (RPMO > 24 a 48 horas).</strong><br>    * <strong>Uso Materno de Corticosteroide Antenatal:</strong> Reduz a incidência de SDR em até 50%, a mortalidade neonatal em 30% e a hemorragia peri-intraventricular em 40%."
+        ],
+        [
+          "3",
+          "4.3 Prevenção com Corticoide Antenatal"
+        ],
+        [
+          "p",
+          "A administração antenatal de corticosteroide à gestante é a intervenção isolada de maior impacto na redução da morbimortalidade perinatal por prematuridade:\n* <strong>Indicação Padronizada:</strong> Todas as gestantes entre <strong>24 semanas e 0 dias e 33 semanas e 6 dias</strong> com risco iminente de parto prematuro nos próximos 7 dias (trabalho de parto prematuro, RPMO, indicação de interrupção eletiva por pré-eclâmpsia grave, descolamento de placenta crônico ou sofrimento fetal).\n* <strong>Esquemas Farmacológicos Recomendados (cruzar a barreira placentária sem metabolização hepática materna substancial):</strong>\n  * <strong>Betametasona:</strong> 12 mg por via intramuscular (IM) a cada 24 horas, totalizando 2 doses (esquema preferencial de primeira linha devido à menor incidência de leucomalácia periventricular).\n  * <strong>Dexametasona:</strong> 6 mg por via intramuscular (IM) a cada 12 horas, totalizando 4 doses.\n* <strong>Ciclo de Resgate (Rescue Dose):</strong> Se o parto não ocorreu dentro de 7 a 14 dias após o primeiro ciclo e a gestante permanece com risco iminente de parto prematuro abaixo de 34 semanas, pode-se realizar um único ciclo adicional de resgate. Ciclos múltiplos e repetitivos rotineiros são contraindicados devido ao risco de restrição de crescimento fetal e redução do perímetro cefálico."
+        ],
+        [
+          "3",
+          "4.4 Quadro Clínico Típico da SDR"
+        ],
+        [
+          "p",
+          "O quadro clínico instala-se precocemente, comumente nos primeiros minutos de vida em sala de parto ou nas primeiras 2 a 4 horas pós-parto:\n* <strong>Taquipneia progressiva</strong> (FR > 60-80 irpm), associada a sinais marcantes de esforço respiratório (tiragem intercostal profunda, retração esternal e batimento de asas nasais).\n* <strong>Gemido expiratório precoce</strong>, constante e audível a distância.\n* <strong>Cianose central progressiva</strong> que não se resolve com oxigênio inalatório em baixos fluxos (necessitando de FiO2 progressivamente maior devido ao shunt intrapulmonar).\n* <strong>Ausculta Pulmonar:</strong> Murmúrio vesicular globalmente diminuído, rude, com estertores crepitantes finos bilaterais ao final da inspiração (som de velcro decorrente da abertura forçada de alvéolos atelectásicos).\n* <strong>Evolução Cronológica Clássica:</strong> Piora progressiva nas primeiras 48 a 72 horas de vida. Por volta de 72 horas, ocorre a fase de recuperação espontânea nos casos não complicados: os pneumócitos tipo II sobreviventes iniciam a síntese autóctone vigorosa de surfactante, acompanhada de diurese espontânea marcante e melhora súbita da complacência pulmonar e das trocas gasosas."
+        ],
+        [
+          "3",
+          "4.5 Achados Radiográficos e Estadiamento da SDR"
+        ],
+        [
+          "p",
+          "A radiografia de tórax em incidência anteroposterior (AP) no leito é o exame confirmatório de escolha. Caracteriza-se fundamentalmente por <strong>volume pulmonar reduzido (hipoinsuflação torácica)</strong>, visualizando-se menos de 8 arcos costais posteriores projetados acima das cúpulas diafragmáticas."
+        ],
+        [
+          "p",
+          "* <strong>Estágio I (Leve):</strong> Discreto infiltrado reticulogranular difuso e simétrico (\"fina granulação\"), com aeração pulmonar relativamente preservada.<br>* <strong>Estágio II (Moderado):</strong> Padrão reticulogranular difuso e homogêneo bem definido, com aspecto clássico de <strong>\"vidro moído\" ou \"vidro fosco\"</strong>, acompanhado de <strong>broncogramas aéreos</strong> nítidos que se estendem além da silhueta cardíaca (visibilização das vias aéreas pérvias contrastadas contra alvéolos periféricos colapsados).<br>* <strong>Estágio III (Grave):</strong> Padrão reticulogranular denso e confluente, broncogramas aéreos profusos e perda da nitidez dos bordos cardíacos e diafragmáticos.<br>* <strong>Estágio IV (Gravíssimo / \"Pulmão Branco\"):</strong> Opacificação bilateral total e homogênea de ambos os campos pleuropulmonares, com desaparecimento completo da silhueta da área cardíaca e das cúpulas diafragmáticas (\"hepatização pulmonar\")."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "5-taquipneia-transitoria-do-recem-nascido-ttrn",
+      0,
+      [
+        [
+          "2",
+          "5. Taquipneia Transitória do Recém-Nascido (TTRN)"
+        ],
+        [
+          "3",
+          "5.1 Fisiopatologia: O Edema Pulmonar Intersticial Transitório"
+        ],
+        [
+          "p",
+          "A Taquipneia Transitória do Recém-Nascido (TTRN), também conhecida como <strong>Pulmão Úmido</strong> ou Síndrome do Desconforto Respiratório Tipo II, é uma afecção pulmonar benigna e autolimitada causada pelo <strong>retardo na depuração e reabsorção do fluido pulmonar fetal</strong>."
+        ],
+        [
+          "p",
+          "* <strong>Mecanismo Celular e Fisiopatológico:</strong><br>  * Em condições normais, o trabalho de parto desencadeia uma descarga adrenérgica massiva que ativa os canais ENaC nos pneumócitos, transportando ativamente o sódio e a água da luz alveolar para o interstício e circulação linfática.<br>  * Na ausência de trabalho de parto (como ocorre na <strong>cesariana eletiva agendada</strong>), os canais ENaC permanecem inativos e o feto é privado da expressão mecânica torácica. O fluido permanece represado no espaço alveolar e, quando o neonato respira, o líquido é forçado para o interstício peribroncovascular e septos interlobulares.<br>  * O acúmulo de líquido no interstício comprime a luz bronquiolar e reduz a complacência pulmonar, gerando taquipneia reflexa por ativação de receptores pulmonares mecânicos (reflexo de Hering-Breuer) e retenção gasosa distal transitória."
+        ],
+        [
+          "3",
+          "5.2 Fatores de Risco"
+        ],
+        [
+          "p",
+          "* <strong>Cesárea eletiva sem trabalho de parto</strong> (o fator de risco isolado mais importante).\n* <strong>Prematuridade tardia (34 a 36 semanas) e recém-nascido a termo precoce (37 a 38 semanas).</strong>\n* <strong>Mãe com Diabetes Gestacional ou Pré-gestacional</strong> (o hiperinsulinismo também lentifica o clareamento do fluido pulmonar).\n* <strong>Asma Brônquica Materna.</strong>\n* <strong>Macrossomia Fetal e Sexo Masculino.</strong>\n* <strong>Clampeamento excessivamente tardio do cordão umbilical</strong> com hipervolemia/policitemia associada."
+        ],
+        [
+          "3",
+          "5.3 Quadro Clínico e Evolução"
+        ],
+        [
+          "p",
+          "* <strong>Início:</strong> Nas primeiras 2 a 6 horas de vida (frequentemente logo na primeira hora).\n* <strong>Sintoma Prevalente:</strong> <strong>Taquipneia exuberante e isolada</strong>, com frequência respiratória que frequentemente atinge 80 a 120 irpm.\n* <strong>Desconforto:</strong> Geralmente leve a moderado (BSA entre 1 e 4). O neonato apresenta tiragens subcostais discretas e batimento de asas nasais, mas raramente apresenta gemido expiratório mantido além das primeiras 2 horas.\n* <strong>Demanda de Oxigênio:</strong> Baixa necessidade suplementar de oxigênio (quase invariavelmente controlada com FiO2 < 30% a 40%).\n* <strong>Evolução:</strong> Espetacularmente benigna. A reabsorção linfática progressiva do fluido leva à resolução completa dos sintomas em 24 a 72 horas (raramente ultrapassa 96 horas), sem deixar quaisquer sequelas pulmonares ou estruturais."
+        ],
+        [
+          "3",
+          "5.4 Achados Radiológicos Característicos"
+        ],
+        [
+          "p",
+          "Ao contrário da SDR, na TTRN os pulmões encontram-se com <strong>volume pulmonar normal ou hiperinsuflado</strong> (visualizam-se mais de 8 a 9 arcos costais posteriores):\n* <strong>Congestão Peri-hilar e Trama Vascular Proeminente:</strong> Estrias radiopacas densas que irradiam dos hilos pulmonares para a periferia, configurando o clássico aspecto de <strong>\"coração peludo\"</strong>.\n* <strong>Espessamento de Cissuras Interlobares e Cissurite:</strong> Visualização nítida de líquido acumulado nas fissuras interlobares (especialmente a cissura horizontal do pulmão direito).\n* <strong>Derrame Pleural Discreto:</strong> Pequeno velamento dos seios costofrênicos bilaterais ou laminar.\n* <strong>Cardiomegalia Leve Transitória:</strong> Secundária à sobrecarga volêmica de fluido pulmonar reabsorvido para a circulação central."
+        ],
+        [
+          "3",
+          "5.5 Tratamento e Erros que Não Devem Ser Cometidos"
+        ],
+        [
+          "p",
+          "* <strong>Suporte Clínico:</strong> Neutralidade térmica em incubadora aquecida, monitorização contínua de saturação pré-ductal e suporte mínimo de oxigênio para manter SpO2 entre 91% e 95%.\n* <strong>Suporte Pressórico Não Invasivo:</strong> Em casos com desconforto moderado e FR muito elevada, o uso de CPAP nasal temporário com baixas pressões (PEEP 4 a 5 cmH2O) acelera a drenagem linfática do fluido e previne o colapso por fadiga.\n* <strong>Nutrição e Jejum:</strong> Se a FR estiver acima de 70 a 80 irpm, suspender a dieta enteral por via oral e manter o recém-nascido em jejum transitório com hidratação venosa (soro de manutenção a 60-70 mL/kg/dia com taxa de infusão de glicose de 4 a 6 mg/kg/min) para evitar a aspiração brônquica durante as mamadas. Retomar a dieta oral gradualmente assim que a FR cair abaixo de 60 irpm.\n* <strong>ARMADILHA CLÁSSICA DE PROVA — O que NÃO prescrever:</strong>\n  * <strong>É expressamente PROIBIDO e contraindicado o uso de diuréticos (como a Furosemida):</strong> Ensaios clínicos randomizados comprovaram que a furosemida não acelera a resolução da TTRN, não diminui o tempo de internação e introduz riscos de hipovolemia, distúrbios hidroeletrolíticos e persistência do canal arterial.\n  * <strong>Não usar broncodilatadores (salbutamol) ou corticosteroides sistêmicos:</strong> Sem benefício clínico comprovado.\n  * <strong>Não prescrever antibioticoterapia de forma cega e prolongada:</strong> Se os fatores de risco maternos forem negativos e o quadro clínico e radiológico forem típicos de TTRN, não há indicação de antimicrobianos. Se houver dúvida diagnóstica com pneumonia precoce, coletar hemoculturas e suspender o antibiótico em 48 horas se as culturas forem negativas e o RN evoluir bem."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "6-sindrome-de-aspiracao-de-meconio-sam",
+      0,
+      [
+        [
+          "2",
+          "6. Síndrome de Aspiração de Mecônio (SAM)"
+        ],
+        [
+          "3",
+          "6.1 Fisiopatologia Multifatorial"
+        ],
+        [
+          "p",
+          "A Síndrome de Aspiração de Mecônio (SAM) é uma afecção pulmonar gravíssima que acomete predominantemente <strong>recém-nascidos a termo e pós-termo (idade gestacional &ge; 41 a 42 semanas)</strong> ou recém-nascidos com <strong>Restrição de Crescimento Intrauterino (PIG)</strong>, que vivenciaram episódios de asfixia perinatal aguda ou subaguda."
+        ],
+        [
+          "p",
+          "* <strong>A Eliminação Intrauterina de Mecônio e o Gasping Fetal:</strong><br>  * Em condições fisiológicas normais, a eliminação de mecônio não ocorre antes de 34 a 37 semanas de gestação, pois o trato gastrointestinal fetal imaturo apresenta peristaltismo fraco e o esfíncter anal mantém-se tonicamente contraído.<br>  * Com a maturidade pós-termo (> 40-41 semanas), o peristaltismo fetal fisiológico é estimulado pela motilina. Diante de um estresse hipóxico agudo intrauterino (asfixia perinatal), ocorre vasoconstrição esplâncnica reflexa com hipermotilidade intestinal, relaxamento do esfíncter anal e eliminação maciça de mecônio na cavidade amniótica.<br>  * Concomitantemente, a hipóxia e a hipercapnia centrais estimulam os centros respiratórios no tronco cerebral fetal, induzindo movimentos respiratórios vigorosos do tipo <strong>gasping intraútero</strong>, fazendo com que o feto aspire grandes quantidades de líquido amniótico meconial espesso para dentro da traqueia e árvores brônquicas distais antes mesmo do nascimento."
+        ],
+        [
+          "p",
+          "* <strong>Os Quatro Mecanismos Destrutivos da SAM:</strong><br>  1. <strong>Obstrução Mecânica das Vias Aéreas:</strong> O mecônio é uma substância densa, viscosa e particulada composta por água (85%), células epiteliais intestinais descamadas, bile, bilirrubina, colesterol e restos enzimáticos pancreáticos. Ao atingir a árvore traqueobrônquica, as partículas maiores causam <strong>obstrução completa</strong> de brônquios segmentares (gerando atelectasias obstrutivas maciças distais), enquanto as partículas menores provocam <strong>obstrução parcial</strong> com mecanismo clássico de <strong>válvula unidirecional (efeito bola de válvula)</strong>: durante a inspiração, as vias aéreas dilatam-se fisiologicamente, permitindo a entrada do ar; na expiração, as vias aéreas estreitam-se, aprisionando o ar distalmente ao tampão meconial. Isso leva a <strong>hiperinsuflação alveolar acentuada</strong>, enfisema intersticial e altíssimo risco de rotura alveolar com escape aéreo (<strong>pneumotórax e pneumomediastino</strong> em até 20% a 40% dos casos graves).<br>  2. <strong>Pneumonite Química Inflamatória:</strong> Os sais biliares, ácidos biliares e enzimas proteolíticas presentes no mecônio são extremamente irritantes para a mucosa brônquica e epitélio alveolar. Em poucas horas, desencadeiam uma reação inflamatória estéril violenta, liberando citocinas pró-inflamatórias (IL-1, IL-6, IL-8, TNF-alfa), infiltração maciça de neutrófilos, necrose epitelial, denudação de vias aéreas e edema pulmonar exsudativo rico em proteínas plasmáticas.<br>  3. <strong>Inativação Secundária do Surfactante:</strong> Os ácidos graxos livres, a bilirrubina e o colesterol contidos no mecônio alteram diretamente a conformação espacial da DPPC, deslocando o surfactante da interface ar-líquido alveolar e inibindo a função tensoativa das apoproteínas SP-A e SP-B. Instala-se uma deficiência secundária severa de surfactante com colapso alveolar adicional.<br>  4. <strong>Hipertensão Pulmonar Persistente Neonatal (HPPN):</strong> A SAM é a principal etiologia subjacente ao desenvolvimento de HPPN na prática clínica (presente em 30% a 50% dos casos graves). A asfixia perinatal prévia induz hipertrofia patológica da camada muscular média das arteríolas pulmonares fetais; após o parto, a hipoxemia profunda, a acidose e a liberação de endotelina-1 e tromboxano A2 causam vasoespasmo pulmonar sustentado, impedindo a queda da RVP e perpetuando shunts direita-esquerda catastróficos."
+        ],
+        [
+          "3",
+          "6.2 Quadro Clínico e Achados Físicos"
+        ],
+        [
+          "p",
+          "* <strong>Inspeção Geral:</strong> Recém-nascido a termo ou pós-termo, com sinais nítidos de pós-maturidade (pele enrugada, descamativa, unhas compridas, escassez de vérnix e panículo adiposo reduzido). Impregnação meconial intensa e amarelada da pele, do coto umbilical e das unhas.\n* <strong>Instalação Imediata:</strong> O desconforto respiratório instala-se <strong>imediatamente na sala de parto</strong>, com taquipneia precoce, batimento de asas nasais, tiragens torácicas profundas, retração xifoide e gemido audível a distância.\n* <strong>Tórax em Tonel:</strong> Em virtude do aprisionamento aéreo severo gerado pelo mecanismo de válvula, o tórax adquire conformação enfisematosa, globosa, hiperinsuflada com aumento do diâmetro anteroposterior.\n* <strong>Ausculta Pulmonar:</strong> Murmúrio vesicular intensamente heterogêneo, com estertores crepitantes bolhosos grosseiros e sibilos expiratórios disseminados decorrentes do edema de mucosa e tampões meconiais.\n* <strong>Hipoxemia Refratária e Labilidade Hemodinâmica:</strong> Quedas súbitas da saturação pré e pós-ductal desproporcionais às variações de FiO2, sinalizando a presença de crise de HPPN associada."
+        ],
+        [
+          "3",
+          "6.3 Radiografia de Tórax"
+        ],
+        [
+          "p",
+          "A radiografia de tórax na SAM é dramática e inconfundível:\n* <strong>Hiperinsuflação Pulmonar Acentuada:</strong> Visualização de mais de 9 a 10 arcos costais posteriores, retificação e rebaixamento das cúpulas diafragmáticas e aumento dos espaços intercostais.\n* <strong>Infiltrado Nodular Grosseiro Assimétrico:</strong> Opacidades densas, lineares e em cordão que alternam com áreas focais de hipertransparência e enfisema compensatório, conferindo o aspecto clássico de <strong>\"pulmão em flocos de algodão\"</strong> ou infiltrado \"em manchas\".\n* <strong>Sinais de Escape Aéreo:</strong> Presença frequente de pneumotórax (hipertransparência periférica avascular com colapso pulmonar) e pneumomediastino (faixa radiotransparente contornando a silhueta cardíaca e o timo - sinal da vela de barco / anjo).\n* <strong>Cardiomegalia Moderada:</strong> Frequentemente presente devido à sobrecarga de pressão e dilatação do ventrículo direito pela hipertensão pulmonar associada."
+        ],
+        [
+          "3",
+          "6.4 Conduta na Sala de Parto: O Fim da Intubação Traqueal Rotineira"
+        ],
+        [
+          "p",
+          "Durante décadas, preconizou-se a intubação orotraqueal e a aspiração traqueal rotineira de todo recém-nascido nascido em líquido meconial espesso antes de qualquer outra medida. Ensaios clínicos multicêntricos internacionais comprovaram categoricamente que essa prática invasiva não reduz a incidência de SAM, não melhora a sobrevida e causa traumas de via aérea, atraso injustificável no início da ventilação com pressão positiva (VPP) e bradicardia severa."
+        ],
+        [
+          "p",
+          "* <strong>Diretriz Atual SBP (2022/2024) e AAP/NRP (8ª Edição) — REGRA DE OURO PARA PROVAS:</strong><br>  1. A presença de líquido amniótico meconial (seja ele fluido ou espesso com grumos) <strong>NÃO altera mais a sequência padrão da reanimação neonatal</strong>.<br>  2. Ao nascimento, avaliam-se imediatamente as três perguntas fundamentais:<br>     * O recém-nascido é a termo?<br>     * Está respirando ou chorando?<br>     * Apresenta tônus muscular em flexão (ativo)?<br>  3. <strong>Se o RN estiver vigoroso (respirando/chorando e com bom tônus):</strong><br>     * O neonato deve ser colocado em contato pele a pele com a mãe, coberto com campos aquecidos e secado gentilmente.<br>     * <strong>NÃO se realiza aspiração de vias aéreas</strong> (apenas limpar delicadamente a boca e o nariz com compressa de pano se houver excesso de secreção). Iniciar amamentação na primeira hora.<br>  4. <strong>Se o RN estiver NÃO vigoroso (em apneia, respiração irregular/gasping ou hipotônico):</strong><br>     * Clampeamento imediato do cordão umbilical e transporte rápido para a mesa de reanimação sob calor radiante.<br>     * Posicionar a cabeça em leve extensão (\"posição de cheirar\").<br>     * Aspirar delicadamente a boca e, em seguida, as narinas com sonda traqueal rígida ou flexível conectada a vácuo (pressão máxima de sucção de 80 a 100 mmHg).<br>     * Secar e remover campos úmidos, reposicionar a cabeça.<br>     * Avaliar frequência cardíaca e respiração em no máximo 30 segundos de vida (o \"Minuto de Ouro\").<br>     * Se a FC estiver < 100 bpm ou em apneia/gasping: <strong>iniciar imediatamente Ventilação com Pressão Positiva (VPP) com máscara facial e balão autoinflável ou peça em T em ar ambiente (FiO2 21%)</strong>, monitorizando com oxímetro de pulso pré-ductal e monitor cardíaco de 3 vias.<br>     * <strong>A intubação orotraqueal em sala de parto é reservada estritamente para falha da VPP com máscara facial ou indicação de massagem cardíaca</strong>, e NÃO para aspiração traqueal profilática isolada."
+        ],
+        [
+          "3",
+          "6.5 Manejo Avançado na UTIN"
+        ],
+        [
+          "p",
+          "* <strong>Estratégia Ventilatória Protetora:</strong> A SAM combina alvéolos hiperinsuflados (com alta complacência) com alvéolos colapsados (baixa complacência). A ventilação mecânica convencional apresenta altíssimo risco de barotrauma. Utiliza-se estratégia de <strong>ventilação com volume garantido (VG)</strong> com volumes correntes baixos (4 a 5 mL/kg), tempos inspiratórios adequados para permitir o esvaziamento expiratório e evitar auto-PEEP (tempo expiratório suficiente), tolerando <strong>hipercapnia permissiva</strong> (PaCO2 entre 45 e 55 mmHg, mantendo pH &ge; 7,25). Nos casos refratários com retenção extrema de CO2 ou escape aéreo, a Ventilação de Alta Frequência Oscilatória (HFOV) é a modalidade de escolha.\n* <strong>Reposição de Surfactante Pulmonar Exógeno:</strong> Como o mecônio inativa o surfactante endógeno, a reposição com surfactante exógeno (em doses terapêuticas de 100 a 200 mg/kg ou por meio de técnicas de lavado broncoalveolar diluído com surfactante em centros especializados) remove os inibidores plasmáticos e reduz a necessidade de oxigenação por membrana extracorpórea (ECMO).\n* <strong>Antibioticoterapia Empírica:</strong> Como o líquido amniótico meconial com frequência decorre de sofrimento fetal infeccioso (corioamnionite) e o mecônio inibe a atividade antibacteriana fisiológica do fluido pulmonar, recomenda-se iniciar Ampicilina associada a Gentamicina parenteral, reavaliando o descalonamento após 48 a 72 horas com culturas."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "7-pneumonia-neonatal-e-sepse-precoce",
+      0,
+      [
+        [
+          "2",
+          "7. Pneumonia Neonatal e Sepse Precoce"
+        ],
+        [
+          "3",
+          "7.1 Etiopatogenia e Vias de Infecção"
+        ],
+        [
+          "p",
+          "A Pneumonia Neonatal é uma das manifestações mais frequentes e letais da Sepse Neonatal Precoce (definida como infecção sistêmica que se manifesta nas primeiras 48 a 72 horas de vida):\n* <strong>Via Ascendente (Mais Frequente):</strong> Microrganismos presentes na microbiota vaginal e perineal materna ascendem pelo canal endocervical após a rotura das membranas ovulares (ou mesmo com membranas íntegras em infecções invasivas), colonizando o líquido amniótico (corioamnionite). O feto aspira o líquido amniótico infectado, desencadeando alveolite difusa e bacteremia antes mesmo do nascimento.\n* <strong>Via Intraparto (Passagem pelo Canal de Parto):</strong> O recém-nascido aspira secreções genitais maternas contaminadas durante o trabalho de parto e expulsivo.\n<em> <strong>Via Transplacentária (Hematogênica):</strong> Menos comum na sepse bacteriana clássica, mas característica de patógenos intracelulares como </em>Listeria monocytogenes*, sífilis congênita, toxoplasmose e citomegalovírus."
+        ],
+        [
+          "3",
+          "7.2 Principais Agentes Etiológicos"
+        ],
+        [
+          "p",
+          "1. <strong>Streptococcus agalactiae (Streptococcus do Grupo B - EGB ou GBS):</strong> Permanece como o agente bacteriano mais prevalente e temido em todo o mundo ocidental. É um coco gram-positivo encapsulado que coloniza o trato gastrointestinal e geniturinário de 15% a 30% das gestantes hígidas. Provoca pneumonia fulminante com colapso circulatório precoce e hipertensão pulmonar reativa.\n2. <strong>Escherichia coli e outros Bacilos Gram-Negativos Entéricos (<em>Klebsiella pneumoniae</em>, <em>Enterobacter</em> spp.):</strong> Segunda causa mais comum de sepse precoce geral e a causa <strong>número um em recém-nascidos prematuros de muito baixo peso (< 1.500 g)</strong>. Apresentam elevada taxa de virulência endotóxica e risco de choque séptico refratário.\n3. <strong>Listeria monocytogenes:</strong> Bacilo gram-positivo intracelular facultativo transmitido transplacentariamente a partir de alimentos contaminados (queijos não pasteurizados, embutidos). Causa corioamnionite clínica, líquido amniótico com aspecto de \"purê de ervilha\" esverdeado e granulomatose infantisséptica no neonato."
+        ],
+        [
+          "3",
+          "7.3 Fatores de Risco Maternos e Perinatais (Critérios do CDC e Ministério da Saúde)"
+        ],
+        [
+          "p",
+          "* <strong>Colonização materna por EGB</strong> na gestação atual (rastreamento positivo por swab anovaginal entre 35 e 37 semanas) sem quimioprofilaxia intraparto adequada.\n* <strong>Bacteriúria por EGB</strong> em qualquer fase da gestação atual (indicador de alta colonização genital, dispensando novo swab e exigindo profilaxia no parto).\n* <strong>Filho anterior com doença invasiva por EGB</strong> (indicação mandatória de quimioprofilaxia intraparto em todas as gestações subsequentes).\n* <strong>Bolsa Rota Prolongada:</strong> Tempo de rotura de membranas amnióticas <strong>&ge; 18 horas</strong> antes do nascimento.\n* <strong>Corioamnionite Materna Clínica:</strong> Presença de febre materna intraparto (&ge; 38,0 °C) associada a pelo menos dois dos seguintes critérios: taquicardia materna (> 100 bpm), taquicardia fetal mantida (> 160 bpm), dor à palpação uterina, líquido amniótico purulento ou fétido, ou leucocitose materna (> 15.000/mm³).\n* <strong>Trabalho de Parto Prematuro Espontâneo (< 37 semanas)</strong> sem causa aparente determinada."
+        ],
+        [
+          "p",
+          "* <strong>Quimioprofilaxia Intraparto Adequada para Prevenção do EGB:</strong><br>  * <strong>Droga de Primeira Linha:</strong> <strong>Penicilina G Cristalina</strong> (dose de ataque de 5 milhões de UI intravenosa, seguida por 2,5 a 3,0 milhões de UI a cada 4 horas até o clampeamento do cordão) OU <strong>Ampicilina</strong> (2 g IV de ataque, seguida por 1 g IV a cada 4 horas).<br>  * <strong>Critério de Adequação:</strong> A profilaxia só é considerada <strong>COMPLETA e EFICAZ</strong> se a primeira dose tiver sido administrada <strong>pelo menos 4 horas antes do desprendimento fetal</strong>. Se administrada com menos de 4 horas do parto, a profilaxia é considerada incompleta.<br>  * <strong>Em Alérgicas à Penicilina:</strong> Cefazolina (se baixo risco de anafilaxia); se alto risco de anafilaxia, Clindamicina (apenas se o antibiograma demonstrar sensibilidade) ou Vancomicina."
+        ],
+        [
+          "3",
+          "7.4 Manifestações Clínicas da Pneumonia e Sepse"
+        ],
+        [
+          "p",
+          "A apresentação da pneumonia neonatal precoce é muitas vezes sutil, inespecífica e insidiosa nos estágios iniciais, evoluindo catastroficamente em poucas horas:\n* <strong>Instabilidade Térmica:</strong> Hipotermia (< 36,0 °C, extremamente comum em prematuros e altamente sugestiva de sepse) ou febre (> 37,5 °C).\n* <strong>Sinais Respiratórios:</strong> Desconforto respiratório de início variável, gemido expiratório, taquipneia, episódios repetidos de <strong>apneia inexplicada</strong> (pausa respiratória > 20 segundos ou associada a bradicardia e dessaturação).\n* <strong>Alterações Hemodinâmicas e Perfusionais:</strong> Palidez cutânea, pele marmórea (\"livedo reticular\"), tempo de enchimento capilar (TEC) lentificado (> 3 segundos), pulsos periféricos finos ou filiformes, taquicardia (> 160-180 bpm) ou bradicardia de mau prognóstico, e hipotensão arterial tardia.\n* <strong>Sinais Neurológicos e Digestivos:</strong> Hipoatividade marcante, hipotonia generalizada (\"bebê largado\"), recusa alimentar, estase gástrica, resíduo bilioso e distensão abdominal."
+        ],
+        [
+          "3",
+          "7.5 Radiografia e Diagnóstico Laboratorial"
+        ],
+        [
+          "p",
+          "* <strong>Radiografia de Tórax:</strong> Extremamente variável. Pode exibir opacidades alveolares heterogêneas lobares ou segmentares, infiltrado broncopneumônico difuso bilateral, broncogramas aéreos e, com grande frequência, <strong>um padrão radiográfico idêntico e indistinguível da Síndrome do Desconforto Respiratório (DMH)</strong> com hipoinsuflação e vidro fosco. A presença de <strong>derrame pleural associado</strong> é um achado que favorece fortemente pneumonia infecciosa sobre a DMH isolada.\n* <strong>Avaliação Laboratorial:</strong>\n  * <strong>Hemoculturas (2 sítios periféricos):</strong> O padrão-ouro diagnóstico definitivo. Deve ser colhida antes do início dos antibióticos, com volume mínimo de 1 mL de sangue por frasco.\n  * <strong>Hemograma Completo:</strong> Avaliação do escore hematológico de Rodwell: leucopenia (< 5.000/mm³) tem altíssimo valor preditivo positivo para sepse; leucocitose (> 25.000 a 30.000/mm³); contagem total de neutrófilos imaturos (bastonetes, metamielócitos, mielócitos) elevada; e a <strong>relação neutrófilos imaturos / neutrófilos totais (relação I/T) &ge; 0,20</strong>, que é o marcador hematológico isolado mais fidedigno de infecção bacteriana bacterêmica aguda.\n  * <strong>Proteína C Reativa (PCR) e Procalcitonina:</strong> Marcadores de fase aguda. A PCR eleva-se após 12 a 24 horas do estímulo infeccioso; dosagens seriadas com 24 e 48 horas de vida possuem altíssimo valor preditivo negativo (duas dosagens normais seriadas em 48h permitem suspender o esquema antimicrobiano com segurança).\n  * <strong>Punção Lombar (Líquor):</strong> Indicada obrigatoriamente se houver hemocultura positiva, clínica neurológica franca (convulsões, fontanela abaulada) ou sepse clínica com instabilidade que não responde ao tratamento inicial."
+        ],
+        [
+          "3",
+          "7.6 Tratamento Antimicrobiano Empírico"
+        ],
+        [
+          "p",
+          "* <strong>Esquema Padrão-Ouro de Primeira Linha para Sepse Precoce:</strong>\n  <em> <strong>Ampicilina</strong> (cobre </em>Streptococcus agalactiae<em>, </em>Listeria monocytogenes<em> e cepas suscetíveis de enterococos) associada a um <strong>Aminoglicosídeo (Gentamicina ou Amicacina)</strong> (cobertura sinérgica para bacilos gram-negativos entéricos como </em>E. coli* e enterococos).\n  * <strong>Doses e Ajustes:</strong> Ampicilina 100 mg/kg/dia IV dividida de 12/12h na primeira semana de vida; Gentamicina 4 a 5 mg/kg/dose IV a cada 24 ou 36 horas dependendo da idade gestacional.\n  * <strong>Atenção:</strong> As cefalosporinas de 3ª geração (ex.: Cefotaxima) NÃO devem ser usadas como rotina empírica de primeira linha na sepse precoce sem meningite confirmada, pois induzem rápida emergência de cepas multirresistentes (ESBL) e aumentam a mortalidade neonatal e o risco de enterocolite necrosante. Além disso, a <strong>Ceftriaxona é formalmente contraindicada no período neonatal</strong>, pois compete com a bilirrubina pelos sítios de ligação da albumina sérica (elevando a fração livre de bilirrubina indireta e o risco de kernicterus) e pode precipitar-se na circulação e vias biliares ao se ligar ao cálcio venoso."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "8-hipertensao-pulmonar-persistente-neonatal-hppn",
+      0,
+      [
+        [
+          "2",
+          "8. Hipertensão Pulmonar Persistente Neonatal (HPPN)"
+        ],
+        [
+          "3",
+          "8.1 Fisiopatologia e Mecanismos da Vasoconstrição Pulmonar Sustentada"
+        ],
+        [
+          "p",
+          "A Hipertensão Pulmonar Persistente Neonatal (HPPN), historicamente referida como Síndrome da Circulação Fetal Persistente, é caracterizada pela <strong>falha na queda fisiológica da Resistência Vascular Pulmonar (RVP)</strong> no momento do nascimento. A pressão na artéria pulmonar permanece igual ou superior à pressão arterial sistêmica, perpetuando o desvio massivo de sangue desoxigenado da direita para a esquerda através do Forame Oval e do Canal Arterial pérvios."
+        ],
+        [
+          "p",
+          "A etiopatogenia divide-se classicamente em três grandes mecanismos anatômicos e funcionais:<br>1. <strong>Vasculatura Pulmonar Anormalmente Reativa (Vasoconstrição Funcional com Estrutura Normal):</strong><br>   * O leito vascular é anatomicamente preservado, mas sofre vasoespasmo intenso desencadeado por hipóxia alveolar aguda, hipercapnia grave, acidose mista e liberação massiva de endotelina-1 e tromboxano A2.<br>   * Causas principais: Asfixia perinatal aguda, Síndrome de Aspiração de Mecônio (SAM), Pneumonia neonatal por EGB e hipotermia severa.<br>2. <strong>Remodelamento Muscular Hipertrófico com Vasculatura Estruturalmente Alterada:</strong><br>   * Ocorre muscularização patológica e exuberante de arteríolas intra-acinares distais (que normalmente são não muscularizadas), com espessamento acentuado da camada média e proliferação intimal decorrente de estresse hipóxico crônico intrauterino.<br>   * Causas: Hipóxia intrauterina crônica, restrição de crescimento intrauterino (RCIU), uso materno de Anti-inflamatórios Não Esteroides (AINEs) no terceiro trimestre da gestação (induzindo constrição intraútero prematura do canal arterial) ou uso materno crônico de Inibidores Seletivos da Recaptação de Serotonina (ISRS - como a Fluoxetina e Sertralina).<br>3. <strong>Hipoplasia do Leito Vascular Pulmonar (Subdesenvolvimento Numérico de Vasos):</strong><br>   * Redução drástica e congênita no número total de ramificações arteriolares e alvéolos por unidade de parênquima pulmonar.<br>   * Causas: Hérnia Diafragmática Congênita (HDC), agenesia/displasia renal bilateral com oligoidramnio precoce severo (Sequência de Potter) e rotura prematura de membranas amnióticas antes de 22 a 24 semanas de gestação."
+        ],
+        [
+          "3",
+          "8.2 Quadro Clínico e o Sinal Clínico Patognomônico: Gradiente Pré e Pós-Ductal"
+        ],
+        [
+          "p",
+          "A HPPN acomete quase que exclusivamente recém-nascidos a termo ou pós-termo:\n* <strong>Hipoxemia Crítica e Labilidade Respiratória Extrema:</strong> O neonato exibe cianose central profunda e hipoxemia severa que não responde ao aumento da fração inspirada de oxigênio (mesmo com FiO2 a 100%). Pequenos estímulos táteis, sonoros ou punções venosas desencadeiam <strong>crises agudas de hipertensão pulmonar</strong> com dessaturação catastrófica e bradicardia.\n* <strong>O Gradiente de Oxigenação Pré e Pós-Ductal (SINAL PATOGNOMÔNICO):</strong>\n  * O canal arterial conecta a artéria pulmonar à aorta descendente, inserindo-se distalmente à emergência da artéria subclávia esquerda.\n  * O membro superior direito (artéria radial direita) recebe sangue ejetado pelo ventrículo esquerdo através do tronco braquiocefálico, representando a circulação <strong>PRÉ-DUCTAL</strong>.\n  * Os membros inferiores e o abdome recebem sangue após a mistura com o fluxo derivado do canal arterial na aorta descendente, representando a circulação <strong>PÓS-DUCTAL</strong>.\n  * Na vigência de HPPN com shunt direita-esquerda pelo canal arterial, o sangue hipoxêmico desoxigenado que sai da artéria pulmonar entra na aorta descendente e irriga os membros inferiores. Portanto, a oxigenação dos membros inferiores será significativamente menor do que a da mão direita.\n  * <strong>Critério Diagnóstico:</strong> Uma diferença na saturação de oxigênio (SpO2) <strong>> 5% a 10%</strong> OU uma diferença na pressão parcial de oxigênio arterial (PaO2) <strong>> 15 a 20 mmHg</strong> entre o membro superior direito (pré-ductal) e qualquer membro inferior (pós-ductal) confirma com elevada acurácia a presença de shunt direita-esquerda através do canal arterial.\n  <em> </em>Observação de Prova:* Se o shunt for predominantemente ou exclusivamente a nível atrial (através do forame oval), a dessaturação será uniforme em todo o corpo, e o gradiente pré e pós-ductal pode estar ausente!"
+        ],
+        [
+          "3",
+          "8.3 Métodos Diagnósticos"
+        ],
+        [
+          "p",
+          "* <strong>Teste da Hiperóxia (Diferenciação com Cardiopatias Congênitas Cianogênicas):</strong>\n  * Administra-se oxigênio a 100% (FiO2 1,0) por 10 a 15 minutos e coleta-se gasometria arterial na artéria radial direita (sangue pré-ductal).\n  * Em doenças pulmonares parenquimatosas puras (como TTRN ou DMH leve): a PaO2 sobe rapidamente para valores > 150 a 200 mmHg.\n  * Em cardiopatias congênitas cianogênicas com shunt fixo anatômico obrigatório (ex.: Transposição das Grandes Artérias, Atresia Pulmonar, Drenagem Anômala Total de Veias Pulmonares): a PaO2 permanece fixamente < 100 mmHg e a SpO2 praticamente não se altera.\n  * Na HPPN grave com shunts massivos: a PaO2 também pode permanecer < 100 mmHg, mimetizando cardiopatia congênita cianogênica.\n* <strong>Ecocardiograma com Doppler (Padrão-Ouro Definitivo):</strong>\n  * É o exame confirmatório de escolha mandatória. Permite: (1) excluir cardiopatia congênita estrutural cianogênica com circulação dependente de canal; (2) documentar e quantificar o shunt da direita para a esquerda ou bidirecional através do forame oval e/ou canal arterial; (3) estimar a pressão sistólica da artéria pulmonar através da velocidade do jato de regurgitação tricúspide pela equação modificada de Bernoulli ($P = 4v^2 + PAD$); (4) evidenciar sinais indiretos de sobrecarga pressórica direita (retificação ou abaulamento do septo interventricular para o interior do ventrículo esquerdo em \"D-shaped\", dilatação do ventrículo direito e disfunção ventricular)."
+        ],
+        [
+          "3",
+          "8.4 Tratamento Escalonado da HPPN"
+        ],
+        [
+          "p",
+          "O objetivo terapêutico na HPPN consiste em reduzir a Resistência Vascular Pulmonar, manter a pressão arterial sistêmica ligeiramente superior à pressão pulmonar (para fechar ou inverter o shunt para esquerda-direita), garantir débito cardíaco adequado e otimizar o recrutamento alveolar sem provocar hiperdistensão."
+        ],
+        [
+          "p",
+          "1. <strong>Cuidados Gerais e Minimização de Estímulos:</strong><br>   * Sedação adequada (fentanil em infusão contínua) e controle da dor. Evitar aspirações traqueais frequentes ou manuseio desnecessário, que deflagram crises de vasoespasmo.<br>   * Neutralidade térmica rigorosa e correção imediata de hipoglicemia e hipocalcemia.<br>2. <strong>Otimização do Recrutamento Alveolar:</strong><br>   * Ventilação mecânica convencional ou ventilação de alta frequência (HFOV) visando aeração adequada (8 a 9 arcos costais na radiografia). A hipoinsuflação causa vasoconstrição pulmonar por hipóxia alveolar focal; a hiperinsuflação comprime os capilares alveolares e aumenta mecanicamente a RVP!<br>   * Metas gasométricas: PaO2 mantida entre 60 e 80 mmHg (SpO2 pré-ductal entre 91% e 95%); PaCO2 controlada entre 40 e 45 mmHg com pH entre 7,35 e 7,45. A hiperventilação agressiva com alcalose forçada (pH > 7,55 e PaCO2 < 30 mmHg), amplamente utilizada no passado, foi formalmente proscrita e abandonada por causar isquemia cerebral por vasoconstrição carotídea e surdez neurosensorial.<br>3. <strong>Suporte Hemodinâmico Sistêmico:</strong><br>   * Manter a Pressão Arterial Média (PAM) sistêmica em níveis normais a altos para a idade gestacional (geralmente entre 45 e 55 mmHg em RN a termo), utilizando cristaloides isotônicos cautelosos (bolus de 10 mL/kg de SF 0,9%) se houver hipovolemia, seguidos por inotrópicos e vasopressores:<br>   * <strong>Dopamina e Dobutamina:</strong> Melhoram a contratilidade miocárdica e o débito sistêmico.<br>   * <strong>Noradrenalina:</strong> Seletivamente indicada para elevar a RVS e reverter o shunt através do canal arterial quando a PAM estiver baixa.<br>   * <strong>Milrinona:</strong> Inibidor da fosfodiesterase III com efeito inotrópico positivo e vasodilatador pulmonar e sistêmico, excelente droga adjuvante especialmente quando há disfunção sistólica do ventrículo esquerdo associada.<br>4. <strong>Óxido Nítrico Inalatório (iNO - Vasodilatador Pulmonar Seletivo):</strong><br>   * <strong>Mecanismo:</strong> Administrado diretamente no circuito do ventilador mecânico. Como é um gás inalado, ele atinge seletivamente apenas os alvéolos bem ventilados, difundindo-se para a musculatura lisa das arteríolas pulmonares adjacentes, onde ativa a guanilil ciclase e eleva o GMPc, provocando vasodilatação pulmonar potente e imediata. Ao atingir a luz dos capilares e entrar em contato com a corrente sanguínea, o NO liga-se instantaneamente com altíssima afinidade à hemoglobina, transformando-se em metemoglobina e sendo inativado. Por isso, ele <strong>não provoca vasodilatação sistêmica nem hipotensão arterial</strong> (vasodilatador pulmonar verdadeiramente seletivo!). Além disso, ao dilatar preferencialmente os vasos dos alvéolos ventilados, desvia o fluxo sanguíneo para áreas de boa aeração, corrigindo o descompasso V/Q.<br>   * <strong>Indicação Padronizada:</strong> Recém-nascidos com idade gestacional &ge; 34 semanas em ventilação mecânica com HPPN documentada e falha respiratória hipoxêmica refratária com <strong>Índice de Oxigenação (IO) &ge; 15 a 20</strong>:<br>     $$IO = \\\\frac{MAP \\\\times FiO2 \\\\times 100}{PaO2}$$<br>     (onde $MAP$ é a pressão média de vias aéreas em cmH2O, $FiO2$ é a fração inspirada expressa de 0,21 a 1,0 e $PaO2$ é a pressão arterial de oxigênio pré-ductal em mmHg).<br>   * <strong>Dose Inicial Recomendada:</strong> Iniciar com <strong>20 partes por milhão (ppm)</strong>. Titular a dose após melhora da PaO2, desmamando gradativamente para 5 a 10 ppm, evitando descontinuação súbita para não desencadear crise de hipertensão pulmonar rebote.<br>   * <strong>Toxicidade a Monitorar:</strong> Monitorar níveis séricos de <strong>metemoglobina</strong> (devem ser mantidos < 2% a 2,5%) e dióxido de nitrogênio (NO2) no circuito (< 0,5 ppm).<br>5. <strong>Vasodilatadores Pulmonares Coadjuvantes Orais:</strong><br>   * <strong>Sildenafil:</strong> Inibidor potente e seletivo da fosfodiesterase tipo 5 (PDE-5), enzima que degrada o GMPc na musculatura lisa pulmonar. O sildenafil impede a quebra do GMPc, potencializando a via do óxido nítrico endógeno. Indicado especialmente no desmame do iNO para prevenir rebote ou em hospitais que não dispõem de óxido nítrico inalatório.<br>6. <strong>Oxigenação por Membrana Extracorpórea (ECMO):</strong><br>   * Terapia de resgate extremo para recém-nascidos com HPPN gravíssima refratária a iNO, HFOV e suporte hemodinâmico máximo, que apresentam <strong>Índice de Oxigenação persistentemente &ge; 40</strong> ou choque cardiogênico refratário."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "9-suporte-ventilatorio-inicial-e-manejo-do-surfactante",
+      0,
+      [
+        [
+          "2",
+          "9. Suporte Ventilatório Inicial e Manejo do Surfactante"
+        ],
+        [
+          "3",
+          "9.1 A Transição para o Suporte Não Invasivo: Por que Evitar a Intubação Orotraqueal?"
+        ],
+        [
+          "p",
+          "Durante muitos anos, a abordagem tradicional do prematuro com desconforto respiratório consistia na intubação orotraqueal imediata na sala de parto, administração profilática de surfactante e conexão à ventilação mecânica convencional. Grandes ensaios clínicos controlados e randomizados (como os estudos multicêntricos COIN, SUPPORT e CURPAP) revolucionaram a neonatologia moderna ao demonstrar que:\n* A ventilação mecânica com pressão positiva através de tubo traqueal induz volutrauma e biotrauma imediatos (liberação de citocinas inflamatórias que destroem o parênquima pulmonar imaturo em questão de minutos).\n* A intubação precoce está diretamente associada a um aumento substancial nas taxas de <strong>Displasia Broncopulmonar (DBP)</strong>, estenose subglótica, pneumonia associada à ventilação mecânica e infecções de corrente sanguínea.\n* O uso de <strong>CPAP nasal precoce instituído imediatamente em sala de parto</strong> em recém-nascidos prematuros em respiração espontânea estabiliza a CRF, previne o colapso alveolar e reduz pela metade a necessidade de intubação endotraqueal, sem aumentar o risco de mortalidade ou complicações graves."
+        ],
+        [
+          "3",
+          "9.2 O CPAP Nasal em Sala de Parto e na UTIN"
+        ],
+        [
+          "p",
+          "* <strong>Indicação:</strong> Todo recém-nascido prematuro com idade gestacional < 32 a 34 semanas que apresente respiração espontânea e frequência cardíaca &ge; 100 bpm ao nascimento, independentemente da presença de desconforto respiratório perceptível.\n* <strong>Equipamento de Escolha:</strong> O CPAP em sala de parto deve ser aplicado preferencialmente com <strong>ressuscitador infantil em T (peça em T / Neopuff)</strong> conectado a uma máscara facial anatômica redonda ou pronga nasal curta binasal, acoplado a um misturador de gases (blender de oxigênio e ar comprimido) e fluxômetro.\n* <strong>Parâmetros Iniciais de Sala de Parto:</strong>\n  * <strong>Pressão Expiratória Final (PEEP):</strong> Iniciar com <strong>5 a 6 cmH2O</strong> (fluxo de gases em torno de 8 a 10 L/min).\n  * <strong>Fração Inspirada de Oxigênio (FiO2) Inicial Conforme Idade Gestacional (Diretriz SBP 2022/2024 e AAP/NRP):</strong>\n    * <strong>Idade gestacional &ge; 34 semanas:</strong> Iniciar a reanimação/estabilização em <strong>ar ambiente (FiO2 21%)</strong>.\n    * <strong>Idade gestacional de 28 semanas e 0 dias a 33 semanas e 6 dias:</strong> Iniciar com <strong>FiO2 entre 21% e 30%</strong>.\n    * <strong>Idade gestacional < 28 semanas (Prematuro Extremo):</strong> Iniciar com <strong>FiO2 a 30%</strong>.\n* <strong>Titulação Guiada por Oxímetro de Pulso Pré-Ductal:</strong> O oxímetro deve ser instalado obrigatoriamente no <strong>pulso ou na palma da mão direita</strong> antes de ligar o aparelho. A FiO2 deve ser titulada dinamicamente para manter a SpO2 dentro das metas estritas dos primeiros minutos de vida da SBP/AAP:"
+        ],
+        [
+          "t",
+          [
+            "Tempo de Vida Pós-Parto",
+            "Meta de Saturação de Oxigênio Pré-Ductal (SpO2)"
+          ],
+          [
+            [
+              "<strong>Até 5 minutos de vida</strong>",
+              "70% a 80%"
+            ],
+            [
+              "<strong>Entre 5 e 10 minutos de vida</strong>",
+              "80% a 90%"
+            ],
+            [
+              "<strong>Após 10 minutos de vida</strong>",
+              "85% a 95% (manter entre 91% e 95% na UTIN)"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>Atenção de Prova:</em> O recém-nascido saudável não nasce com saturação de 95% a 100%! Exigir ou forçar uma saturação de 95% nos primeiros 3 a 5 minutos com hiperóxia causa lesão por radicais livres de oxigênio, vasoconstrição miocárdica e cerebral e eleva o risco de retinopatia da prematuridade."
+        ],
+        [
+          "3",
+          "9.3 Terapia com Surfactante Exógeno: Indicações e Métodos de Administração"
+        ],
+        [
+          "p",
+          "* <strong>Indicação Contemporânea (Diretrizes Europeias de SDR 2023/2026 e SBP):</strong>\n  * O surfactante deve ser administrado precocemente em prematuros com SDR em uso de CPAP nasal otimizado (PEEP &ge; 6 cmH2O) que apresentem sinais clínicos de falha ou necessidade crescente de oxigênio:\n    * <strong>Prematuros < 30 a 32 semanas de gestação:</strong> Administrar se a <strong>FiO2 for &ge; 0,30 (30%)</strong>.\n    * <strong>Prematuros > 32 semanas de gestação:</strong> Administrar se a <strong>FiO2 for &ge; 0,35 a 0,40 (35% a 40%)</strong>.\n  * A administração precoce (dentro das primeiras 2 a 3 horas de vida) é amplamente superior à administração tardia.\n* <strong>Preparações Disponíveis e Posologia:</strong>\n  * <strong>Poractanto alfa (Curosurf - extrato suíno purificado):</strong> Dose inicial recomendada de <strong>200 mg/kg (2,5 mL/kg)</strong> em bolus intratraqueal único. Ensaios clínicos demonstraram que a dose de ataque de 200 mg/kg é significativamente superior à dose de 100 mg/kg, reduzindo a mortalidade e a necessidade de retratamento. Doses subsequentes de resgate: 100 mg/kg após 6 a 12 horas se persistirem critérios de gravidade.\n  * <strong>Beractanto (Survanta - extrato bovino modificado):</strong> Dose de <strong>100 mg/kg (4 mL/kg)</strong> dividida em alíquotas."
+        ],
+        [
+          "p",
+          "* <strong>Modalidades de Administração: O Paradigma Não Invasivo (LISA / MIST):</strong><br>  1. <strong>Método Clássico INSURE (INtubate - SURfactant - Extubate):</strong> O prematuro é intubado com tubo orotraqueal, recebe o surfactante em alíquotas com ventilação manual por alguns minutos e é extubado para CPAP nasal assim que estável. Embora tenha sido o padrão por anos, ainda exige intubação com tubo de diâmetro largo e VPP com pressão positiva descontrolada.<br>  2. <strong>Métodos Minimamente Invasivos (LISA - <em>Less Invasive Surfactant Administration</em> / MIST - <em>Minimally Invasive Surfactant Therapy</em>):</strong><br>     * <strong>É o padrão-ouro atual recomendado pelas diretrizes internacionais para prematuros em respiração espontânea em CPAP.</strong><br>     * <strong>Técnica:</strong> O neonato é mantido confortavelmente em respiração espontânea em CPAP nasal. Sob visualização direta da laringe com laringoscópio ou videolaringoscópio, uma fina sonda vascular gástrica maleável ou cateter angiográfico fino (cateter de 4 ou 5 French) é introduzido através das cordas vocais até o terço médio da traqueia.<br>     * O surfactante (poractanto alfa 200 mg/kg) é infundido lentamente em 1 a 3 minutos através do cateter fino enquanto a criança continua respirando espontaneamente no CPAP nasal.<br>     * Ao término da infusão, o cateter fino é imediatamente retirado.<br>     * <strong>Vantagens Comprovadas:</strong> Não há intubação traqueal nem necessidade de ventilação mecânica com pressão positiva. As forças mecânicas da respiração espontânea geradas pelo diafragma da própria criança promovem uma distribuição homogênea e uniforme do surfactante em ambos os pulmões, reduzindo drasticamente o risco de DBP e óbito."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "10-casos-clinicos-estruturados-e-resolvidos-com-raciocinio-passo-a-passo",
+      0,
+      [
+        [
+          "2",
+          "10. Casos Clínicos Estruturados e Resolvidos com Raciocínio Passo a Passo"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Prematuridade Extrema e Abordagem Moderna da Doença da Membrana Hialina"
+        ],
+        [
+          "p",
+          "* <strong>História Clínica e Exame Inicial:</strong> Primigesta de 24 anos, sem comorbidades prévias, com pré-natal irregular (apenas 2 consultas), dá entrada na maternidade terciária em trabalho de parto prematuro avançado (dilatação total, apresentação cefálica no plano +2 de De Lee) com idade gestacional estimada por ultrassonografia de primeiro trimestre em 28 semanas e 2 dias. Não houve tempo para administração de corticoide antenatal. Parto vaginal espontâneo e desimpedido 20 minutos após a admissão. O recém-nascido nasce em apneia primária, hipotônico e bradicárdico (FC = 80 bpm).\n* <strong>Conduta em Sala de Parto (Passo a Passo):</strong>\n  1. <em>Etapa de Estabilização Térmica Imediata:</em> Sendo um prematuro com < 34 semanas (especialmente < 32 semanas), o recém-nascido <strong>NÃO deve ser enxugado com panos ou compressas</strong>. Deve ser imediatamente envolvido em <strong>saco plástico de polietileno transparente estéril</strong> até o pescoço e colocado sob fonte de calor radiante, aplicando-se touca de dupla camada (plástica e de lã) para prevenção de hipotermia grave.\n  2. <em>Avaliação dos Primeiros 30 Segundos:</em> Como o neonato está em apneia e com FC < 100 bpm, o cordão umbilical é clampeado imediatamente e ele é conduzido à mesa de reanimação. É posicionado com a cabeça em leve extensão (\"posição de cheirar\"). Como não há secreções obstrutivas, evita-se a aspiração das vias aéreas.\n  3. <em>Início da Ventilação com Pressão Positiva (VPP):</em> Como a FC permanece em 80 bpm aos 30 segundos de vida, indica-se formalmente o início de VPP com ressuscitador em T acoplado a máscara facial anatômica redonda.\n  4. <em>Concentração de Oxigênio:</em> Tratando-se de prematuro de 28 semanas (faixa de 28 a 33 semanas e 6 dias), a VPP deve ser iniciada com <strong>FiO2 entre 21% e 30%</strong> (seleciona-se FiO2 30% no blender) e PEEP de 5 cmH2O com pressão de pico (PIP) de 20 a 25 cmH2O a uma frequência de 40 a 60 movimentos por minuto. Instala-se simultaneamente o sensor de oxímetro de pulso pré-ductal na mão direita e os eletrodos de monitor cardíaco de 3 vias no tórax.\n  5. <em>Resposta Terapêutica:</em> Após 30 segundos de VPP eficaz (ao completar 1 minuto de vida), a FC eleva-se para 135 bpm e o recém-nascido assume respiração espontânea rítmica, embora com esforço respiratório moderado.\n  6. <em>Transição para CPAP Nasal:</em> Interrompe-se a VPP e acopla-se o prematuro a pronga binasal com <strong>CPAP nasal contínuo com PEEP de 6 cmH2O</strong>, titulando a FiO2 para atingir as metas pré-ductais de SpO2 (70-80% em 5 min; 80-90% em 10 min).\n* <strong>Evolução na UTIN e Terapia com Surfactante:</strong>\n  * O RN é admitido na UTIN em incubadora aquecida e umidificada, mantido em CPAP nasal com PEEP de 6 cmH2O.\n  * Com 90 minutos de vida, apresenta piora progressiva do padrão respiratório: Boletim de Silverman-Andersen sobe de 3 para 6 (tiragem intercostal moderada, retração xifoide nítida, batimento de asas nasais e gemido expiratório discreto), com necessidade crescente de FiO2 atingindo 0,40 (40%) para manter SpO2 pré-ductal entre 91% e 94%.\n  * A gasometria arterial demonstra acidose respiratória e hipoxemia: pH 7,24, PaCO2 58 mmHg, PaO2 52 mmHg, HCO3- 23 mEq/L, BE -3,5 mEq/L. A radiografia de tórax evidencia hipoinsuflação acentuada (6 arcos costais posteriores) e padrão difuso em \"vidro fosco\" com broncogramas aéreos típicos de SDR Grau II-III.\n  <em> </em>Indicação Precisa:* Prematuro < 32 semanas em CPAP com PEEP de 6 cmH2O necessitando de FiO2 &ge; 0,30 preenche indicação formal e urgente de <strong>surfactante pulmonar exógeno</strong>.\n  <em> </em>Execução da Técnica LISA:* Como o neonato mantém respiração espontânea regular e estável, opta-se pela técnica minimamente invasiva (LISA). Mantendo o CPAP nasal a 6 cmH2O, realiza-se laringoscopia direta suave, visualizam-se as cordas vocais e introduz-se um cateter vascular flexível fino de 4 French até a traqueia. Administra-se <strong>Poractanto alfa na dose de 200 mg/kg</strong> (peso de 1.100 g = 220 mg = 2,75 mL) em bolus lento ao longo de 2 minutos. O cateter é imediatamente removido.\n  <em> </em>Desfecho:* Em 30 minutos após o surfactante, a complacência pulmonar melhora espetacularmente, o gemido desaparece, o BSA cai para 1 e a necessidade de FiO2 é desmamada com sucesso para 0,23 (23%), evitando-se totalmente a intubação orotraqueal e a ventilação mecânica invasiva."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Parto Cesáreo Eletivo e Taquipneia Transitória do Recém-Nascido (TTRN)"
+        ],
+        [
+          "p",
+          "* <strong>História Clínica e Exame Inicial:</strong> Recém-nascido do sexo masculino, com 37 semanas e 1 dia de idade gestacional por ultrassom precoce, nascido de mãe secundigesta de 32 anos com diagnóstico de Diabetes Mellitus Gestacional controlado com dieta. A gestante foi submetida a parto cesáreo eletivo agendado sem trabalho de parto prévio a pedido materno. Ao nascimento, o RN apresentou-se vigoroso, chorando forte e com bom tônus muscular (Apgar 9 no 1º minuto e 10 no 5º minuto). Foi encaminhado ao alojamento conjunto após os cuidados imediatos.\n* <strong>Evolução e Manifestação Clínica:</strong>\n  * Com 2 horas de vida, a equipe de enfermagem do alojamento conjunto convoca a avaliação médica devido à presença de respiração acelerada.\n  * Ao exame físico minucioso: o recém-nascido encontra-se corado, hidratado, afebril (temperatura axilar 36,7 °C), porém intensamente taquipneico, com frequência respiratória mantida entre 88 e 96 incursões por minuto. Apresenta batimento de asas nasais intermitente e tiragem subcostal discreta, sem retração xifoide ou respiração paradoxal. Não há gemido expiratório. Boletim de Silverman-Andersen calculado em 2 (leve).\n  * Ausculta pulmonar: murmúrio vesicular universalmente audível, simétrico, sem ruídos adventícios. Ausculta cardíaca normal: ritmo regular em 2 tempos, sem sopros, bulhas normofonéticas, pulsos periféricos amplos e simétricos nos quatro membros com tempo de enchimento capilar de 2 segundos. Glicemia capilar normal (56 mg/dL). Oximetria de pulso em ar ambiente: SpO2 pré-ductal de 89%.\n* <strong>Raciocínio Clínico e Diagnóstico Diferencial:</strong>\n  * Estamos diante de um recém-nascido a termo precoce (37 semanas), filho de mãe diabética, nascido de cesariana eletiva sem trabalho de parto, que abre quadro precoce de taquipneia exuberante (> 80 irpm) com desconforto leve e necessidade discreta de oxigênio suplementar.\n  * As principais hipóteses diagnósticas são: (1) Taquipneia Transitória do Recém-Nascido (TTRN) — hipótese de altíssima probabilidade pelos fatores de risco clássicos; (2) Pneumonia Neonatal Precoce — embora não haja febre materna, bolsa rota prolongada ou corioamnionite, deve ser lembrada; (3) Cardiopatia congênita acianogênica com hiperfluxo pulmonar ou desconforto transitório.\n* <strong>Workup Diagnóstico e Radiografia:</strong>\n  * Oferece-se oxigênio sob cateter nasal de baixo fluxo (0,5 L/min), com elevação imediata da SpO2 para 94-96% (resposta rápida a baixas frações inspiradas).\n  * A radiografia de tórax no leito demonstra: volume pulmonar discretamente aumentado (9 espaços intercostais posteriores visíveis), trama vascular e brônquica peri-hilar acentuada e simétrica (\"coração peludo\"), espessamento e impregnação líquida na cissura horizontal do pulmão direito (cissurite interlobar) e área cardíaca no limite superior da normalidade. Ausência de infiltrado reticulogranular em vidro fosco, broncogramas aéreos periféricos ou áreas de consolidação.\n* <strong>Conduta Terapêutica e Decisões Críticas:</strong>\n  1. <em>Ambiente e Monitorização:</em> Transferência para leito de observação semi-intensiva neonatal, manutenção em berço aquecido neutro e oximetria contínua.\n  2. <em>Manejo Nutricional e Jejum:</em> Como a FR do paciente encontra-se persistentemente acima de 80 irpm, a tentativa de alimentação por via oral ao seio materno ou copinho é formalmente suspensa devido ao elevadíssimo risco de incoordenação entre sucção-deglutição-respiração e broncoaspiração de leite para os pulmões. O RN é colocado em <strong>jejum oral transitório</strong> e inicia-se hidratação venosa de manutenção com glicose a 10% com Taxa de Infusão de Glicose (TIG) de 5 mg/kg/min (volume total de 60 mL/kg/dia).\n  3. <em>Proscrição de Intervenções Nocivas:</em> Não se prescreve Furosemida (diurético sem benefício na TTRN), não se administra antibióticos (ausência de fatores de risco infecciosos e clínica/radiologia clássicas) e não se realiza punção lombar.\n* <strong>Desfecho:</strong> O paciente mantém melhora progressiva. Com 24 horas de vida, o fluxo de oxigênio é completamente desmamado para ar ambiente. Com 36 horas de vida, a FR estabiliza-se em 48 irpm, o desconforto é zero (BSA = 0) e a dieta por via oral é reiniciada ao seio materno com excelente sucção e tolerância. O neonato recebe alta hospitalar no 3º dia de vida em aleitamento materno exclusivo."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Pós-Datismo, Aspiração Meconial e Crise de Hipertensão Pulmonar Persistente (HPPN)"
+        ],
+        [
+          "p",
+          "* <strong>História Clínica e Exame Inicial:</strong> Gestante de 28 anos, primigesta, dá entrada no centro obstétrico com idade gestacional de 41 semanas e 5 dias em trabalho de parto ativo. A cardiotocografia intraparto evidencia desacelerações tardias repetidas e graves (Dip tipo II) associadas a perda da variabilidade batimento a batimento (Traçado Categoria III - sofrimento fetal agudo). Realiza-se amniotomia com saída imediata de <strong>líquido amniótico verde-escuro, purulento e espesso em \"purê de ervilha\" com grumos meconiais abundantes</strong>. Indica-se cesariana de emergência imediata.\n* <strong>Conduta na Sala de Parto:</strong>\n  * O concepto nasce do sexo feminino, pesando 3.400 g. Ao nascimento, encontra-se totalmente flácido, em apneia absoluta, sem esforço respiratório espontâneo, completamente impregnado por mecônio viscoso da cabeça aos pés e com palidez acinzentada.\n  * O cordão umbilical é clampeado sem demora e o neonato é transportado para a mesa de calor radiante.\n  * O neonatologista posiciona a cabeça em leve extensão e realiza a aspiração cuidadosa da orofaringe e narinas sob vácuo de 80 mmHg, retirando grande quantidade de mecônio espesso. Seca e troca os campos aquecidos.\n  * Na avaliação aos 30 segundos: a frequência cardíaca auscultada é de 60 bpm e o neonato permanece em apneia.\n  <em> </em>Decisão Crítica da Diretriz SBP 2022/2024:* Não se perde tempo com intubação orotraqueal às cegas para aspiração traqueal mecânica profilática! <strong>Inicia-se imediatamente a Ventilação com Pressão Positiva (VPP) com máscara facial e peça em T em ar ambiente (FiO2 21%)</strong>.\n  * Após 30 segundos de VPP bem executada (com expansão torácica visível), a FC sobe para 120 bpm, mas a respiração espontânea é gasping ineficaz. O neonato é então intubado com tubo traqueal nº 3,5, acoplado ao ventilador mecânico e transferido imediatamente para a UTIN com hipótese diagnóstica de Síndrome de Aspiração de Mecônio (SAM) grave.\n* <strong>Evolução na UTIN e Instalação de HPPN:</strong>\n  * Na UTIN, o paciente desenvolve hipoxemia severa e progressiva em ventilação mecânica convencional.\n  * Ao exame físico: tórax enfisematoso hiperinsuflado em tonel; ausculta com estertores crepitantes bilaterais e roncos grosseiros. Ausculta cardíaca com segunda bulha hiperfonética e desdobrada em foco pulmonar e sopro sistólico de regurgitação tricúspide.\n  * Nota-se extrema labilidade oxigenatória: à menor manipulação ou ruído ambiental, a saturação de oxigênio despenca de 88% para 60%.\n  <em> </em>Detecção do Gradiente Pré e Pós-Ductal:* Instalam-se dois sensores de oximetria de pulso simultâneos:\n    * <strong>Sensor 1 (Mão direita - Pré-ductal):</strong> SpO2 de 89%.\n    * <strong>Sensor 2 (Membro inferior esquerdo - Pós-ductal):</strong> SpO2 de 74%.\n    * O gradiente de saturação pré-pós ductal é de <strong>15%</strong> (claramente > 10%), confirmando a presença de hipertensão pulmonar supra-sistêmica com shunt maciço direita-esquerda através do canal arterial.\n  * A radiografia de tórax demonstra hiperinsuflação torácica extrema (10 arcos costais posteriores), diafragmas retificados, áreas focais de atelectasia entremeadas por infiltrados algodonosos grosseiros confluentes e ausência de pneumotórax.\n  * A gasometria arterial coletada na artéria radial direita com FiO2 de 1,0 (100%) revela: pH 7,22, PaCO2 48 mmHg, PaO2 46 mmHg (mesmo com FiO2 100%!), HCO3- 19 mEq/L, BE -7 mEq/L, lactato 4,8 mmol/L.\n  <em> </em>Cálculo do Índice de Oxigenação (IO):* Com MAP de 15 cmH2O no ventilador mecânico:\n    $$IO = \\\\frac{15 \\\\times 1,0 \\\\times 100}{46} = 32,6$$\n    Um $IO > 20$ em paciente com idade gestacional &ge; 34 semanas define falência respiratória hipoxêmica severa por HPPN com indicação mandatória de Óxido Nítrico Inalatório.\n* <strong>Ecocardiograma e Conduta Intensiva Integrada:</strong>\n  * O ecocardiograma à beira do leito confirma ausência de cardiopatia estrutural congênita, evidencia ventrículo direito dilatado com hipocinesia, retificação diastólica acentuada do septo interventricular (\"D-shaped\"), jato de regurgitação tricúspide com gradiente de pressão sistólica de artéria pulmonar estimado em 65 mmHg (pressão arterial sistêmica média de 42 mmHg - hipertensão pulmonar supra-sistêmica) e shunt da direita para a esquerda pelo canal arterial e forame oval.\n  * <strong>Intervenções Farmacológicas e Ventilatórias Imediatas:</strong>\n    1. <em>Óxido Nítrico Inalatório (iNO):</em> Conectado ao circuito ventilatório na dose de <strong>20 partes por milhão (ppm)</strong>.\n    2. <em>Otimização Hemodinâmica Sistêmica:</em> Inicia-se infusão de Noradrenalina (0,1 a 0,3 mcg/kg/min) para elevar a pressão arterial média sistêmica para valores entre 50 e 55 mmHg, superando a pressão pulmonar e favorecendo o fechamento do shunt. Inicia-se Milrinona (0,33 mcg/kg/min) para relaxamento vascular pulmonar e melhora do desempenho ventricular.\n    3. <em>Sedação e Analgesia Profunda:</em> Infusão contínua de Fentanil e Midazolam para abolição completa da resposta a estímulos externos.\n    4. <em>Surfactante Exógeno de Resgate:</em> Administra-se Poractanto alfa (100 mg/kg) via tubo traqueal para neutralizar a inativação pelo mecônio.\n* <strong>Evolução:</strong> Em 2 horas de iNO a 20 ppm, o gradiente pré-pós ductal cai para menos de 3%, a PaO2 pré-ductal sobe para 95 mmHg e o Índice de Oxigenação desce para 9,5. O iNO é gradualmente desmamado ao longo de 5 dias até a extubação traqueal bem-sucedida no 8º dia de vida."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Corioamnionite Materna, Rotura Prematura de Membranas e Sepse Precoce por GBS"
+        ],
+        [
+          "p",
+          "* <strong>História Clínica e Exame Inicial:</strong> Secundigesta de 29 anos com gestação de 35 semanas e 4 dias dá entrada no pronto-atendimento obstétrico relatando perda abundante de líquido claro pela vagina com odor semelhante a água sanitária há 26 horas. Durante a triagem de admissão, a gestante queixa-se de calafrios; a temperatura axilar é de 38,4 °C, FC de 118 bpm e PA de 110x70 mmHg. Ao exame obstétrico: dinâmica uterina com 3 contrações moderadas em 10 minutos, colo dilatado 5 cm, esvaecido 80%, bolsa rota confirmada com saída de líquido amniótico turvo e fétido. A ausculta dos batimentos cardiofetais revela taquicardia fetal sustentada (172 bpm). O cartão de pré-natal registra cultura de swab anovaginal para EGB positiva colhida com 35 semanas, sem realização prévia de antibioticoprofilaxia. Inicia-se Ampicilina 2 g IV de ataque, mas o parto vaginal ocorre 45 minutos após a primeira dose de antibiótico (portanto, quimioprofilaxia materna intraparto <strong>incompleta</strong>, pois durou menos de 4 horas).\n* <strong>Avaliação Inicial do Neonato:</strong>\n  * Recém-nascido do sexo feminino, 35 semanas, peso 2.350 g. Nasce com respiração espontânea, FC 140 bpm, Apgar 7 no 1º minuto e 8 no 5º minuto.\n  * Logo nos primeiros 40 minutos de vida na sala de transição da maternidade, o neonato desenvolve desconforto respiratório rapidamente progressivo: taquipneia (FR = 78 irpm), gemido expiratório constante e audível sem estetoscópio, tiragem intercostal profunda e batimento de asas nasais acentuado. Boletim de Silverman-Andersen = 7 (Grave).\n  * Além do desconforto, a criança encontra-se hipotérmica (temperatura axilar 35,4 °C), sonolenta, hipotônica, com pulsos femorais finos e tempo de enchimento capilar periférico lentificado em 4 segundos.\n* <strong>Diagnóstico Sindrômico e Conduta Imediata:</strong>\n  <em> O quadro clínico é de sepse neonatal precoce provável manifestando-se como choque séptico inicial e pneumonia neonatal congênita grave por </em>Streptococcus agalactiae* (EGB), diante de corioamnionite materna clínica evidente (febre materna + taquicardia fetal + líquido fétido + bolsa rota > 18 horas) associada a profilaxia intraparto sabidamente incompleta.\n* <strong>Workup Laboratorial e Estabilização Intensiva:</strong>\n  * Instalação imediata de CPAP nasal com PEEP de 6 cmH2O e FiO2 de 40%, sob calor radiante.\n  * Cateterismo de veia e artéria umbilicais para monitorização invasiva e infusões.\n  * Coleta imediata de exames laboratoriais: duas amostras de hemocultura em sítios periféricos distintos, hemograma completo, gasometria arterial e proteína C reativa (PCR).\n  <em> </em>Resultados Laboratoriais:*\n    * Hemograma: Leucócitos totais de 3.800/mm³ (leucopenia severa); neutrófilos totais: 1.900/mm³; bastonetes: 650/mm³; metamielócitos: 150/mm³.\n    <em> </em>Cálculo da Relação I/T (Imaturos / Totais):*\n      $$Neutr\\\\acute{o}filos\\\\ Imaturos = 650 + 150 = 800$$\n      $$Neutr\\\\acute{o}filos\\\\ Totais = 1.900$$\n      $$Rela\\\\c{c}\\\\tilde{a}o\\\\ I/T = \\\\frac{800}{1.900} = 0,42$$\n      Uma relação I/T de 0,42 (largamente superior ao ponto de corte de &ge; 0,20) somada à leucopenia profunda (< 5.000) confirma invasão bacteriana maciça no compartimento hematológico com desvio acentuado para a esquerda (escore hematológico de Rodwell altamente positivo).\n    * PCR: 18 mg/L (elevada, valor normal < 5 mg/L).\n    * Gasometria arterial: acidose metabólica importante com hiperlactatemia (pH 7,18, PaCO2 36 mmHg, PaO2 62 mmHg, HCO3- 14 mEq/L, BE -11 mEq/L, lactato 5,2 mmol/L).\n  <em> </em>Radiografia de Tórax:* Infiltrado reticulonodular broncopneumônico heterogêneo bilateral, com áreas confluentes de condensação alveolar no lobo inferior direito e presença de pequeno <strong>derrame pleural laminar à direita</strong> (achado fundamental que sela o diagnóstico de pneumonia infecciosa associada à sepse precoce).\n* <strong>Tratamento Antimicrobiano e Hemodinâmico:</strong>\n  1. <em>Antibioticoterapia Imediata:</em> Inicia-se prontamente <strong>Ampicilina</strong> (100 mg/kg/dia IV dividida de 12/12h) associada a <strong>Gentamicina</strong> (4 mg/kg/dose IV a cada 24 horas), administrada nos primeiros 60 minutos de vida.\n  2. <em>Expansão Volêmica e Inotrópico:</em> Como o neonato apresenta choque séptico com TEC de 4 segundos e hipotensão arterial média (PAM = 26 mmHg), realiza-se expansão volêmica cautelosa com <strong>Soro Fisiológico a 0,9% (10 mL/kg em 20 minutos)</strong>. Diante da persistência de hipoperfusão após a expansão, inicia-se prontamente infusão contínua de <strong>Dobutamina (10 mcg/kg/min)</strong> associada a <strong>Noradrenalina</strong>.\n  3. <em>Surfactante Exógeno Adjuvante:</em> Como a alveolite infecciosa difusa por EGB provoca inativação secundária violenta do surfactante, administra-se surfactante exógeno (poractanto alfa 100 mg/kg), com melhora rápida da aeração pulmonar.\n<em> <strong>Desfecho e Seguimento:</strong> A hemocultura positivou em 18 horas para </em>Streptococcus agalactiae* suscetível à ampicilina e penicilina. A punção lombar colhida após estabilização hemodinâmica revelou líquor límpido e com cultura estéril (afastando meningite bacteriana). A ampicilina e a gentamicina foram mantidas por 10 dias de tratamento parenteral completo, com remissão total da sepse, normalização dos parâmetros laboratoriais e alta hospitalar sem sequelas neurológicas ou respiratórias."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "11-questoes-de-prova-comentadas-na-integra",
+      0,
+      [
+        [
+          "2",
+          "11. Questões de Prova Comentadas na Íntegra"
+        ],
+        [
+          "3",
+          "Questão 1 (Revalida / Residência Médica — ENARE)"
+        ],
+        [
+          "p",
+          "Recém-nascido pré-termo de 29 semanas e 4 dias de idade gestacional nasce de parto cesáreo por descolamento prematuro de placenta. A mãe não recebeu corticoterapia antenatal. Ao nascimento, o neonato foi estabilizado em sala de parto com CPAP nasal e transportado para a Unidade de Terapia Intensiva Neonatal. Com 2 horas de vida, apresenta frequência respiratória de 74 irpm, batimento de asas nasais constante, tiragem intercostal moderada, retração xifoide visível e gemido expiratório contínuo audível com estetoscópio. Está acoplado a CPAP nasal com PEEP de 6 cmH2O e a fração inspirada de oxigênio (FiO2) necessária para manter a SpO2 entre 91% e 94% subiu gradualmente para 0,38 (38%). A radiografia de tórax revela volume pulmonar diminuído e infiltrado reticulogranular difuso bilateral com broncogramas aéreos. Considerando as diretrizes contemporâneas de neonatologia (Diretrizes Europeias de SDR e SBP), a conduta médica mais adequada no momento é:"
+        ],
+        [
+          "p",
+          "A) Aumentar a PEEP do CPAP para 9 cmH2O e aguardar até 6 horas de vida para avaliar a necessidade de intubação endotraqueal.  <br>B) Administrar surfactante exógeno preferencialmente por técnica minimamente invasiva (LISA/MIST), mantendo o paciente em respiração espontânea no CPAP.  <br>C) Indicar imediatamente intubação orotraqueal, sedação profunda e bloqueio neuromuscular para acoplamento à ventilação mecânica sincronizada.  <br>D) Prescrever antibioticoterapia com Ampicilina e Gentamicina e iniciar nebulização com alfadornase e broncodilatador inalatório.  <br>E) Manter os parâmetros atuais de CPAP, prescrever infusão contínua de aminofilina e suspender qualquer suplementação de oxigênio."
+        ],
+        [
+          "p",
+          "* <strong>Gabarito Oficial:</strong> <strong>B</strong><br>* <strong>Comentário Detalhado:</strong><br>  * O quadro clínico e radiológico é clássico de Síndrome do Desconforto Respiratório (Doença da Membrana Hialina) em prematuro de 29 semanas sem corticoide antenatal prévio: hipoinsuflação pulmonar, padrão reticulogranular difuso em vidro fosco e broncogramas aéreos.<br>  * O paciente encontra-se em uso de CPAP nasal com PEEP de 6 cmH2O, mas apresenta piora do desconforto e necessidade de FiO2 de 0,38 (38%). O limiar internacional consensual para indicação de reposição de surfactante pulmonar exógeno em prematuros com menos de 30 a 32 semanas em CPAP é uma <strong>FiO2 &ge; 0,30 (30%)</strong> associada a PEEP de pelo menos 6 cmH2O.<br>  * Como o recém-nascido mantém esforço respiratório espontâneo regular, a abordagem moderna padrão-ouro consiste na administração de surfactante por <strong>métodos minimamente invasivos (LISA ou MIST)</strong> através de um cateter traqueal fino introduzido sob laringoscopia, preservando a respiração espontânea no CPAP nasal, o que reduz substancialmente o risco de displasia broncopulmonar em comparação à intubação clássica.<br>* <strong>Refutação dos Distratores:</strong><br>  <em> </em>A está incorreta:* PEEPs excessivas acima de 7 a 8 cmH2O em CPAP não devem ser usadas como substituto do surfactante, pois causam hiperdistensão alveolar, compressão vascular capilar, aumento da RVP e retenção de CO2. Postergar o surfactante para 6 horas de vida piora o prognóstico pulmonar.<br>  <em> </em>C está incorreta:* A intubação com ventilação mecânica invasiva e bloqueio neuromuscular é uma abordagem retrógrada e lesiva para este momento, devendo ser reservada estritamente para falha do CPAP/surfactante ou apneias graves intratáveis.<br>  <em> </em>D está incorreta:* Não há qualquer papel para broncodilatadores inalatórios ou alfadornase (mucolítico usado em fibrose cística) na fase aguda da DMH.<br>  <em> </em>E está incorreta:* Aminofilina em infusão foi superada pela Cafeína no manejo da apneia da prematuridade e não substitui o surfactante; suspender o oxigênio causaria hipóxia severa com shunt direita-esquerda."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 2 (USP-SP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Recém-nascido a termo (38 semanas e 4 dias), peso de 3.650 g, nascido de parto cesáreo eletivo sem trabalho de parto de mãe com diabetes gestacional controlada. Ao nascimento apresentou Apgar de 8 e 9, sendo encaminhado ao alojamento conjunto. Com 3 horas de vida, desenvolve taquipneia súbita e acentuada (FR = 92 irpm), acompanhada de batimento de asas nasais discreto e tiragem subcostal leve. Não apresenta gemido expiratório. Ausculta pulmonar limpa e sem ruídos adventícios. A oximetria de pulso em ar ambiente revela SpO2 de 88%, subindo prontamente para 95% com cateter nasal de oxigênio a 0,5 L/min. A radiografia de tórax evidencia pulmões bem expandidos (9 arcos costais posteriores), congestão da trama vascular peri-hilar, líquido espessado na cissura interlobar horizontal e silhueta cardíaca discretamente aumentada. Diante desse quadro clínico e radiológico, a conduta mais adequada é:"
+        ],
+        [
+          "p",
+          "A) Administrar Furosemida 1 mg/kg IV para rápida depuração do fluido pulmonar e iniciar ampicilina venosa.  <br>B) Manter em suporte mínimo de oxigênio para manter SpO2 entre 91-95%, deixar em jejum oral com hidratação venosa enquanto a FR estiver > 80 irpm e observar a evolução nas próximas 24 a 48 horas.  <br>C) Realizar intubação orotraqueal imediata e administrar surfactante exógeno na dose de 200 mg/kg.  <br>D) Indicar ecocardiograma de emergência para punção de tamponamento pericárdico devido à cardiomegalia radiológica.  <br>E) Iniciar antibioticoterapia profilática para sepse precoce com Vancomicina e Cefepima e solicitar tomografia de tórax de alta resolução."
+        ],
+        [
+          "p",
+          "* <strong>Gabarito Oficial:</strong> <strong>B</strong><br>* <strong>Comentário Detalhado:</strong><br>  * O cenário clínico reúne os fatores de risco epidemiológicos e a semiologia patognomônica da <strong>Taquipneia Transitória do Recém-Nascido (TTRN / Pulmão Úmido)</strong>: concepto a termo precoce, filho de mãe diabética, nascido de cesárea eletiva sem trabalho de parto, que abre taquipneia exuberante precoce com desconforto leve (sem gemido) e resposta imediata a baixas frações inspiradas de O2.<br>  * A radiografia é clássica: pulmões hiperinsuflados, congestão peri-hilar (\"coração peludo\") e líquido na cissura horizontal (cissurite).<br>  * A conduta na TTRN é puramente de suporte clínico e vigilância: oxigenoterapia mínima titulada e <strong>jejum oral protetor com hidratação venosa</strong> devido à frequência respiratória superior a 80 irpm, prevenindo broncoaspiração de leite durante a amamentação. A resolução espontânea ocorre em 24 a 72 horas.<br>* <strong>Refutação dos Distratores:</strong><br>  <em> </em>A está incorreta:* O uso de diuréticos (furosemida) é uma das armadilhas mais clássicas de prova de residência. Ensaios clínicos demonstraram que diuréticos não aceleram o clareamento do líquido pulmonar na TTRN e são contraindicados.<br>  <em> </em>C está incorreta:* TTRN não decorre de deficiência primária de surfactante alveolar, dispensando totalmente a reposição de surfactante ou intubação traqueal.<br>  <em> </em>D está incorreta:* A discreta cardiomegalia radiológica na TTRN é um achado transitório benigno secundário à sobrecarga do fluido pulmonar absorvido para a circulação central, sem relação com derrame pericárdico ou tamponamento.<br>  <em> </em>E está incorreta:* Antibioticoterapia com esquema de amplo espectro (vancomicina e cefepima) é irracional e desnecessária em um quadro típico de TTRN sem fatores de risco infecciosos; tomografia computadorizada expõe o neonato a radiação ionizante inútil."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 3 (Revalida INEP)"
+        ],
+        [
+          "p",
+          "Durante o plantão em centro obstétrico terciário, o médico assiste ao parto de uma primigesta com gestação pós-termo de 42 semanas e 1 dia. Após amniotomia intraparto, constata-se a saída de líquido amniótico meconial espesso e abundante. O recém-nascido é extraído por via vaginal, apresenta-se cianótico, hipotônico, completamente coberto por mecônio viscoso e em apneia. De acordo com as Diretrizes Atuais de Reanimação Neonatal da Sociedade Brasileira de Pediatria (SBP) e da Academia Americana de Pediatria (AAP/NRP), a conduta médica correta e imediata para este recém-nascido é:"
+        ],
+        [
+          "p",
+          "A) Realizar laringoscopia direta sob calor radiante e intubação orotraqueal imediata para aspiração traqueal mecânica antes de iniciar qualquer estímulo ou ventilação.  <br>B) Clampear o cordão umbilical, conduzir o recém-nascido à mesa de calor radiante, secar o corpo vigorosamente para estimular a respiração espontânea e aspirar o estômago com sonda de grosso calibre.  <br>C) Clampear o cordão umbilical, levar o recém-nascido à mesa de calor radiante, posicionar a cabeça, aspirar delicadamente a boca e as narinas e, se mantiver apneia ou FC < 100 bpm aos 30 segundos de vida, iniciar Ventilação com Pressão Positiva (VPP) em ar ambiente (FiO2 21%).  <br>D) Iniciar imediatamente massagem cardíaca externa sincronizada com ventilação na proporção de 3:1 com oxigênio a 100%.  <br>E) Colocar o recém-nascido diretamente em contato pele a pele com o tórax da mãe, cobrir com campos aquecidos e iniciar a amamentação na primeira hora."
+        ],
+        [
+          "p",
+          "* <strong>Gabarito Oficial:</strong> <strong>C</strong><br>* <strong>Comentário Detalhado:</strong><br>  * As diretrizes internacionais e nacionais contemporâneas de reanimação neonatal (SBP 2022/2024 e AAP 8ª Edição) aboliram definitivamente a prática de intubação e aspiração traqueal rotineira de conceptos nascidos sob mecônio não vigorosos.<br>  * A presença de líquido meconial (mesmo espesso) não altera a sequência padronizada do algoritmo de reanimação: o neonato não vigoroso deve ser conduzido à mesa de calor radiante, posicionado com o pescoço em leve extensão, ter suas vias aéreas superiores (boca e nariz) delicadamente aspiradas com sonda conectada a vácuo para desobstrução, ser seco e reavaliado em até 30 segundos (\"o Minuto de Ouro\").<br>  * Se persistir em apneia ou com frequência cardíaca < 100 bpm aos 30 segundos, a prioridade absoluta e salvadora é <strong>iniciar imediatamente a Ventilação com Pressão Positiva (VPP) com máscara facial e balão autoinflável ou peça em T em ar ambiente (FiO2 21%)</strong> para recém-nascidos &ge; 34 semanas.<br>* <strong>Refutação dos Distratores:</strong><br>  <em> </em>A está incorreta:* A intubação traqueal de rotina para aspiração meconial antes da VPP foi abandonada porque provoca atraso crítico no início da aeração pulmonar e gera bradicardia reflexa e trauma de laringe sem qualquer benefício na redução de SAM.<br>  <em> </em>B está incorreta:* A aspiração gástrica precoce é desnecessária e contraindicada na fase de estabilização inicial imediata, além de induzir reflexo vagal com bradicardia acentuada.<br>  <em> </em>D está incorreta:* A massagem cardíaca externa só é indicada na reanimação neonatal se a frequência cardíaca permanecer < 60 bpm <strong>após 30 segundos de VPP efetiva através de via aérea avançada (tubo traqueal)</strong> com oxigênio a 100%, nunca no primeiro minuto de vida antes da ventilação.<br>  <em> </em>E está incorreta:* O contato pele a pele e clampeamento tardio do cordão umbilical são reservados para o recém-nascido vigoroso (que nasce chorando ou respirando e com bom tônus). O neonato em apneia e hipotônico exige reanimação imediata na mesa aquecida."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 4 (UNICAMP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Recém-nascido a termo (39 semanas de idade gestacional), nascido de parto vaginal sem intercorrências, apresenta desconforto respiratório grave logo nos primeiros 30 minutos de vida. À monitorização contínua na UTIN, a equipe observa hipoxemia severa que não responde ao aumento da fração inspirada de oxigênio de 0,21 para 1,0 (FiO2 100%). Ao exame físico, nota-se cianose central importante e labilidade extrema da oximetria com qualquer estímulo do leito. A verificação da oximetria de pulso simultânea revela: SpO2 no membro superior direito = 94% e SpO2 no membro inferior esquerdo = 80%. A ausculta cardíaca demonstra segunda bulha hiperfonética em foco pulmonar. A radiografia de tórax evidencia aeração pulmonar normal e discreta cardiomegalia. O diagnóstico mais provável para a discrepância de saturação observada e o mecanismo fisiopatológico subjacente são:"
+        ],
+        [
+          "p",
+          "A) Coarctação de Aorta crítica com fechamento ductal agudo e choque cardiogênico.  <br>B) Hipertensão Pulmonar Persistente Neonatal (HPPN) com desvio de sangue desoxigenado da direita para a esquerda através do canal arterial.  <br>C) Transposição das Grandes Artérias simples sem comunicação interventricular e septo íntegro.  <br>D) Síndrome do Desconforto Respiratório do prematuro com shunt esquerda-direita pelo forame oval.  <br>E) Estenose congênita unilateral da artéria subclávia direita associada a pneumotórax hipertensivo à esquerda."
+        ],
+        [
+          "p",
+          "* <strong>Gabarito Oficial:</strong> <strong>B</strong><br>* <strong>Comentário Detalhado:</strong><br>  * O achado de uma diferença de saturação de oxigênio (SpO2) <strong>> 5% a 10%</strong> entre o membro superior direito (circulação <strong>pré-ductal</strong>) e os membros inferiores (circulação <strong>pós-ductal</strong>) é o sinal clínico clássico e patognomônico de <strong>shunt da direita para a esquerda através do canal arterial</strong>, decorrente de <strong>Hipertensão Pulmonar Persistente Neonatal (HPPN)</strong>.<br>  * O canal arterial conecta a artéria pulmonar à aorta após a emergência do tronco braquiocefálico (que irriga o braço direito). Quando a pressão na artéria pulmonar supera a pressão aórtica sistêmica, o sangue venoso desoxigenado que sai do ventrículo direito é ejetado pela aorta descendente para o abdome e membros inferiores, rebaixando a saturação pós-ductal em relação à pré-ductal.<br>  * A labilidade clínica com manipulação e a hipoxemia refratária a oxigênio a 100% completam o fenótipo típico de HPPN.<br>* <strong>Refutação dos Distratores:</strong><br>  <em> </em>A está incorreta:* Na coarctação crítica de aorta, pode haver gradiente pressórico e perfusional, mas o quadro clínico clássico com canal patente é de choque com pulsos femorais impalpáveis e colapso circulatório sistêmico; a HPPN é a causa primária de gradiente pré e pós-ductal hipoxêmico com campos pulmonares normais.<br>  <em> </em>C está incorreta:* Na Transposição das Grandes Artérias isolada, o sangue oxigenado pulmonar entra no átrio esquerdo, ventrículo esquerdo e vai para a artéria pulmonar, enquanto o sangue desoxigenado sistêmico vai da aorta para o corpo; quando há canal arterial com fluxo cruzado na TGA com HPPN, pode ocorrer o chamado \"gradiente pré e pós-ductal reverso\" (membros inferiores mais saturados que o braço direito), exatamente o oposto do caso apresentado.<br>  <em> </em>D está incorreta:* A SDR acomete prematuros e cursa com infiltrado reticulogranular em vidro fosco na radiografia, não apresentando aeração pulmonar normal em neonato a termo.<br>  <em> </em>E está incorreta:* Hipótese anatômica bizarra e sem correlação com a clínica de HPPN e radiografia sem pneumotórax."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 5 (Hospital Israelita Albert Einstein / Residência Médica)"
+        ],
+        [
+          "p",
+          "Em relação às características biofísicas, bioquímicas e fisiológicas do surfactante pulmonar alveolar e da transição respiratória neonatal, assinale a alternativa cientificamente CORRETA:"
+        ],
+        [
+          "p",
+          "A) A principal molécula lipídica responsável pela diminuição da tensão superficial na interface ar-líquido alveolar é o fosfatidilglicerol, enquanto a dipalmitoilfosfatidilcolina atua apenas na imunidade inata alveolar.  <br>B) As apoproteínas do surfactante SP-B e SP-C são hidrofílicas e pertencem à família das coletinas, exercendo função primária na fagocitose mediada por macrófagos e opsonização bacteriana.  <br>C) De acordo com a Lei de Laplace ($P = 2T / r$), à medida que o alvéolo diminui de raio durante a expiração, o surfactante reduz drasticamente a tensão superficial ($T$), impedindo o aumento da pressão de colapso interno e prevenindo a atelectasia expiratória difusa.  <br>D) O fluido pulmonar fetal é removido no momento do parto exclusivamente através da compressão mecânica torácica exercida pelo canal vaginal sobre as costelas do concepto.  <br>E) A presença de insulina em concentrações elevadas no feto atua como um potente agonista transcricional dos pneumócitos tipo II, antecipando a maturação pulmonar em filhos de mães diabéticas."
+        ],
+        [
+          "p",
+          "* <strong>Gabarito Oficial:</strong> <strong>C</strong><br>* <strong>Comentário Detalhado:</strong><br>  * Pela Lei de Laplace aplicada a esferas elásticas alveolares ($P = 2T / r$), se a tensão superficial ($T$) fosse constante, a pressão de colapso ($P$) aumentaria enormemente à medida que o raio ($r$) diminuísse na expiração, colapsando os alvéolos menores para dentro dos maiores.<br>  * As moléculas de surfactante pulmonar resolvem essa instabilidade biofísica: ao se concentrarem densamente na interface ar-líquido alveolar durante a expiração, reduzem a tensão superficial para níveis próximos de zero (< 2 a 5 dinas/cm), impedindo o colapso alveolar, estabilizando a Capacidade Residual Funcional e reduzindo o trabalho elástico inspiratório.<br>* <strong>Refutação dos Distratores:</strong><br>  <em> </em>A está incorreta:* O principal lipídio tensoativo é a <strong>dipalmitoilfosfatidilcolina (DPPC)</strong>, que compõe cerca de 50% dos fosfolipídios totais. O fosfatidilglicerol é um marcador de maturidade tardia (surge após 35 semanas).<br>  <em> </em>B está incorreta:* As proteínas SP-B e SP-C são <strong>hidrofóbicas</strong> e de baixo peso molecular, vitais para a biofísica e estabilização do filme tensoativo. As proteínas hidrofílicas opsonizantes pertencentes à família das coletinas são a <strong>SP-A e a SP-D</strong>.<br>  <em> </em>D está incorreta:* A compressão mecânica do canal de parto remove apenas cerca de um terço do fluido pulmonar. Os dois terços restantes dependem estritamente da absorção epitelial ativa de sódio via canais ENaC e da drenagem linfática pulmonar.<br>  <em> </em>E está incorreta:* A insulina fetal é o mais potente <strong>inibidor hormonal antagônico</strong> à síntese de surfactante, bloqueando a transcrição de SP-A e SP-B mediada por glicocorticoides, razão pela qual filhos de mães diabéticas têm alto risco de Doença da Membrana Hialina."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 6 (Santa Casa de São Paulo / Residência Médica)"
+        ],
+        [
+          "p",
+          "Recém-nascido pré-termo de 32 semanas de gestação, pesando 1.600 g, em uso de CPAP nasal desde o nascimento por desconforto respiratório moderado, apresenta piora súbita e catastrófica do padrão respiratório com 14 horas de vida. Desenvolve hipotensão arterial aguda (PAM = 22 mmHg), bradicardia extrema (FC = 65 bpm), cianose generalizada e abaulamento assimétrico do hemitórax direito com hipomobilidade homolateral. À ausculta respiratória, constata-se abolição total do murmúrio vesicular no hemitórax direito e desvio do ictus cardíaco para a linha axilar anterior esquerda. A conduta médica IMEDIATA que deve ser realizada antes de qualquer exame de imagem é:"
+        ],
+        [
+          "p",
+          "A) Solicitar radiografia de tórax em leito em caráter de urgência máxima para confirmação diagnóstica.  <br>B) Realizar toracocentese de alívio por punção com cateter vascular no 2º espaço intercostal direito na linha hemiclavicular.  <br>C) Proceder à intubação orotraqueal e iniciar ventilação com pressão de pico elevada a 35 cmH2O.  <br>D) Administrar expansão volêmica rápida com concentrado de hemácias O negativo 20 mL/kg em bolus.  <br>E) Instalar dreno de tórax tubular em selo d'água no 5º espaço intercostal sob dissecção cirúrgica clássica como primeiro passo."
+        ],
+        [
+          "p",
+          "* <strong>Gabarito Oficial:</strong> <strong>B</strong><br>* <strong>Comentário Detalhado:</strong><br>  * O quadro clínico é uma emergência médica hiperaguda: <strong>Pneumotórax Hipertensivo à direita com choque obstrutivo</strong> secundário ao colapso do retorno venoso sistêmico (compressão de veias cavas e desvio do mediastino para a esquerda).<br>  * Em prematuros em suporte pressórico (CPAP ou ventilação mecânica), o escape aéreo sob tensão é uma complicação grave. Os sinais clínicos patognomônicos são: deterioração hemodinâmica súbita, abolição do murmúrio vesicular unilateral, abaulamento torácico e desvio do ictus/mediastino contralateral.<br>  * <strong>Diante de pneumotórax hipertensivo com instabilidade hemodinâmica e choque, o diagnóstico é ESTRITAMENTE CLÍNICO e a descompressão é IMEDIATA, sendo formalmente PROIBIDO aguardar radiografia de tórax!</strong><br>  * A conduta imediata de resgate é a <strong>toracocentese de alívio</strong> com punção descompressiva no 2º espaço intercostal na linha hemiclavicular direita (ou 4º/5º espaço na linha axilar anterior) com cateter sobre agulha (Jelco 18-20G) conectado a uma torneira de três vias e seringa com água destilada/soro (observando saída borbulhante de ar sob pressão e descompressão imediata), seguida subsequentemente por drenagem torácica tubular em selo d'água.<br>* <strong>Refutação dos Distratores:</strong><br>  <em> </em>A está incorreta:* Aguardar radiografia de tórax em paciente com choque obstrutivo por pneumotórax hipertensivo leva à parada cardiorrespiratória em assistolia em questão de minutos.<br>  <em> </em>C está incorreta:* Aumentar a pressão de ventilação mecânica piora drasticamente o escape de ar pelo orifício pleural, acelerando a morte do neonato.<br>  <em> </em>D está incorreta:* O choque é obstrutivo por compressão mecânica mediastinal, e não hipovolêmico ou hemorrágico.<br>  <em> </em>E está incorreta:* A drenagem tubular cirúrgica definitiva em selo d'água é o passo subsequente; o primeiro gesto que salva a vida de imediato em segundos é a punção descompressiva com agulha."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "12-tabela-resumo-e-high-yield-exam-pearls",
+      0,
+      [
+        [
+          "2",
+          "12. Tabela Resumo e High-Yield Exam Pearls"
+        ],
+        [
+          "3",
+          "12.1 Tabela Comparativa de Alta Performance para Provas"
+        ],
+        [
+          "t",
+          [
+            "Patologia Respiratória",
+            "Idade Gestacional Típica",
+            "Mecanismo Fisiopatológico Central",
+            "Achado Clínico Diferencial",
+            "Padrão Radiográfico Típico",
+            "Tratamento de Escolha"
+          ],
+          [
+            [
+              "<strong>Síndrome do Desconforto Respiratório (DMH)</strong>",
+              "Prematuro (< 34 sem; principalmente < 30-32 sem)",
+              "Deficiência primária e qualitativa de surfactante alveolar",
+              "Piora progressiva nas primeiras 48-72h; gemido precoce",
+              "Hipoinsuflação (< 8 arcos), reticulogranular difuso (\"vidro moído\") e broncogramas aéreos",
+              "CPAP nasal precoce em sala de parto + Surfactante (LISA/MIST) se FiO2 &ge; 30-35%"
+            ],
+            [
+              "<strong>Taquipneia Transitória do RN (TTRN / Pulmão Úmido)</strong>",
+              "Termo precoce (37-38 sem) e prematuro tardio",
+              "Retardo na absorção do fluido pulmonar por inatividade de ENaC",
+              "Taquipneia isolada exuberante (FR > 80-100) com desconforto leve; resolução em 24-72h",
+              "Hiperinsuflação, congestão peri-hilar (\"coração peludo\"), cissurite e líquido na cissura",
+              "Suporte de O2 em baixo fluxo, jejum oral se FR > 80 irpm; NÃO usar diuréticos"
+            ],
+            [
+              "<strong>Síndrome de Aspiração de Mecônio (SAM)</strong>",
+              "Termo e pós-termo (&ge; 41-42 sem) com asfixia",
+              "Obstrução química/mecânica em válvula, pneumonite química e inativação de surfactante",
+              "Desconforto imediato em sala de parto, tórax em tonel, impregnação meconial",
+              "Hiperinsuflação maciça, infiltrado grosseiro nodular assimétrico (\"algodão\") e escape aéreo",
+              "VPP em ar ambiente se não vigoroso; suporte protetor, surfactante e iNO se HPPN"
+            ],
+            [
+              "<strong>Pneumonia Neonatal / Sepse Precoce</strong>",
+              "Prematuro ou termo com fatores de risco maternos",
+              "Infecção bacteriana congênita (EGB, <em>E. coli</em>) e alveolite inflamatória difusa",
+              "Instabilidade térmica (hipotermia), letargia, apneia, choque e relação I/T &ge; 0,20",
+              "Infiltrado broncopneumônico difuso, condensação lobar ou padrão em vidro fosco com derrame pleural",
+              "Ampicilina + Gentamicina IV precoce (NÃO usar ceftriaxona no período neonatal)"
+            ],
+            [
+              "<strong>Hipertensão Pulmonar Persistente (HPPN)</strong>",
+              "Recém-nascido a termo ou pós-termo",
+              "Falha na queda da Resistência Vascular Pulmonar; shunts D-E pelo CA e FO",
+              "Labilidade extrema; Gradiente de SpO2 pré e pós-ductal > 5-10% (membro sup. D > inf.)",
+              "Aeração normal ou doença de base; cardiomegalia com hipofluxo pulmonar",
+              "Sedação, O2, manter PAM sistêmica, Óxido Nítrico Inalatório (iNO 20 ppm) se IO &ge; 15-20"
+            ],
+            [
+              "<strong>Pneumotórax Hipertensivo</strong>",
+              "Qualquer RN em CPAP ou Ventilação Mecânica / SAM",
+              "Barotrauma com rotura alveolar e escape aéreo sob tensão para a pleura",
+              "Deterioração hemodinâmica súbita, bradicardia, assimetria torácica e choque obstrutivo",
+              "Hipertransparência unilateral avascular com colapso pulmonar e desvio do mediastino",
+              "Toracocentese descompressiva de alívio IMEDIATA no 2º EIC na linha hemiclavicular"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "12.2 High-Yield Exam Pearls (Pulos do Gato para Concursos)"
+        ],
+        [
+          "p",
+          "1. <strong>O Boletim de Silverman-Andersen é INVERTIDO em relação ao Apgar:</strong> Nota zero é o paciente saudável sem desconforto; nota 10 é a falência respiratória máxima. São 5 parâmetros com notas de 0 a 2: movimentos toracoabdominais, tiragem intercostal, retração xifoide, batimento de asas nasais e gemido expiratório.\n2. <strong>Gemido Expiratório é manobra fisiológica protetora:</strong> O neonato fecha parcialmente a glote para criar PEEP intrínseca e evitar a perda da CRF. A cessação súbita do gemido com piora da gasometria indica exaustão muscular e falência iminente!\n3. <strong>Cesárea eletiva sem trabalho de parto é o gatilho da TTRN:</strong> Falta o pico de catecolaminas materno-fetais que ativa os canais ENaC nos pneumócitos tipo II para reabsorver o fluido pulmonar. Furosemida é formalmente PROIBIDA.\n4. <strong>Filho de Mãe Diabética (FMD) desenvolve SDR mesmo a termo:</strong> O hiperinsulinismo fetal antagoniza a ação do cortisol e bloqueia a síntese das apoproteínas SP-A e SP-B do surfactante.\n5. <strong>A Presença de Mecônio NÃO autoriza intubação rotineira:</strong> Segundo as diretrizes da SBP/AAP, se o neonato com líquido meconial nascer não vigoroso, leva-se à mesa de calor radiante, aspira-se boca e nariz e, se FC < 100 ou apneia aos 30 segundos, inicia-se VPP com máscara facial em ar ambiente (FiO2 21%). A intubação traqueal profilática para aspiração meconial foi totalmente extinta!\n6. <strong>Alvo de Oxigenação em Sala de Parto:</strong> Nos primeiros 5 minutos de vida, a saturação pré-ductal fisiológica normal é de apenas <strong>70% a 80%</strong>. Não use FiO2 100% para tentar elevar a SpO2 para 95% no primeiro minuto de vida. Em RN &ge; 34 semanas, inicie a reanimação com FiO2 21% (ar ambiente).\n7. <strong>LISA/MIST é a técnica contemporânea de escolha para Surfactante:</strong> Administra-se surfactante através de um cateter vascular fino posicionado na traqueia mantendo o prematuro em respiração espontânea em CPAP nasal, evitando a intubação orotraqueal e a ventilação mecânica.\n8. <strong>Diferença Pré e Pós-Ductal define HPPN:</strong> O oxímetro pré-ductal DEVE ser posicionado no membro superior direito (artéria radial direita). Um gradiente de saturação > 5% a 10% em relação aos membros inferiores confirma shunt direita-esquerda pelo canal arterial.\n9. <strong>Ceftriaxona é PROIBIDA no período neonatal:</strong> Desloca a bilirrubina da albumina (risco de encefalopatia bilirrubínica / kernicterus) e forma precipitados de ceftriaxona-cálcio nas vias biliares e rins. O esquema padrão para sepse precoce é Ampicilina + Gentamicina.\n10. <strong>Suspeita de Pneumotórax Hipertensivo exige punção IMEDIATA:</strong> Não perca tempo solicitando radiografia de tórax se houver descompensação hemodinâmica súbita e abolição unilateral do murmúrio vesicular em RN sob pressão positiva. Realize punção de alívio no 2º espaço intercostal na linha hemiclavicular."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.sbp.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria (SBP) — Diretrizes de Reanimação do Recém-Nascido &ge; 34 Semanas e &lt; 34 Semanas em Sala de Parto (2022/2024)</a>",
+            "<a href=\"https://www.aap.org\" target=\"_blank\" rel=\"noopener noreferrer\">American Academy of Pediatrics (AAP) / American Heart Association (AHA) — Neonatal Resuscitation Program (NRP) 8th Edition</a>",
+            "<a href=\"https://karger.com/neo\" target=\"_blank\" rel=\"noopener noreferrer\">Sweet DG, et al. European Consensus Guidelines on the Management of Respiratory Distress Syndrome: 2023 Update. Neonatology 2023;120:3-23</a>",
+            "<a href=\"https://www.gov.br/saude\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde do Brasil — Atenção à Saúde do Recém-Nascido: Guia para os Profissionais de Saúde (Volume 3 - Problemas Respiratórios e Cardiovasculares)</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

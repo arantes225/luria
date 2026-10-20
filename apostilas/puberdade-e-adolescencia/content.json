@@ -1,0 +1,2371 @@
+{
+  "v": 2,
+  "s": "puberdade-e-adolescencia",
+  "t": "Puberdade e Adolescência",
+  "p": "Puberdade e Adolescência — Livro-Texto LURIA",
+  "d": "Tratado Completo LURIA: Fisiopatologia, Diagnóstico, Condutas Atualizadas e Questões Comentadas",
+  "a": "Pediatria",
+  "m": "Pediatria",
+  "h": [
+    "Apostila LURIA",
+    "Puberdade e Adolescência",
+    "Tratado Completo LURIA: Fisiopatologia, Diagnóstico, Condutas Atualizadas e Questões Comentadas",
+    [
+      "Área: Pediatria",
+      "Matéria: Pediatria",
+      "Tema: Puberdade e Adolescência"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introdu-o-e-fundamentos",
+      "Introdução e Fundamentos"
+    ],
+    [
+      "1-objetivos-de-aprendizagem",
+      "1. Objetivos de aprendizagem"
+    ],
+    [
+      "2-conceitos-e-recortes-et-rios",
+      "2. Conceitos e recortes etários"
+    ],
+    [
+      "3-eixo-hipot-lamo-hip-fise-g-nadas-e-crescimento",
+      "3. Eixo hipotálamo–hipófise–gônadas e crescimento"
+    ],
+    [
+      "4-idades-e-sequ-ncia-fisiol-gica-dos-marcos",
+      "4. Idades e sequência fisiológica dos marcos"
+    ],
+    [
+      "5-estadiamento-de-tanner-exame-com-t-cnica-e-respeito",
+      "5. Estadiamento de Tanner — exame com técnica e respeito"
+    ],
+    [
+      "6-crescimento-e-idade-ssea",
+      "6. Crescimento e idade óssea"
+    ],
+    [
+      "7-puberdade-precoce-reconhecer-sem-superdiagnosticar",
+      "7. Puberdade precoce — reconhecer sem superdiagnosticar"
+    ],
+    [
+      "8-diagn-stico-da-puberdade-precoce-algoritmo-aplicado",
+      "8. Diagnóstico da puberdade precoce — algoritmo aplicado"
+    ],
+    [
+      "9-tratamento-da-puberdade-precoce-central",
+      "9. Tratamento da puberdade precoce central"
+    ],
+    [
+      "10-puberdade-atrasada-quando-investigar",
+      "10. Puberdade atrasada: quando investigar"
+    ],
+    [
+      "11-compara-o-puberdade-precoce-versus-tardia",
+      "11. Comparação: puberdade precoce versus tardia"
+    ],
+    [
+      "12-consulta-integral-do-adolescente-m-todo-e-v-nculo",
+      "12. Consulta integral do adolescente: método e vínculo"
+    ],
+    [
+      "13-crescimento-composi-o-corporal-alimenta-o-e-exerc-cio",
+      "13. Crescimento, composição corporal, alimentação e exercício"
+    ],
+    [
+      "14-sa-de-menstrual-menarca-irregularidade-e-sangramento",
+      "14. Saúde menstrual: menarca, irregularidade e sangramento"
+    ],
+    [
+      "15-acne-pele-e-imagem-corporal",
+      "15. Acne, pele e imagem corporal"
+    ],
+    [
+      "16-ginecomastia-puberal-e-queixas-genitais-masculinas",
+      "16. Ginecomastia puberal e queixas genitais masculinas"
+    ],
+    [
+      "17-sa-de-sexual-e-reprodutiva-sem-julgamento",
+      "17. Saúde sexual e reprodutiva sem julgamento"
+    ],
+    [
+      "18-vacina-o-sono-e-preven-o",
+      "18. Vacinação, sono e prevenção"
+    ],
+    [
+      "19-sa-de-mental-autoles-o-e-viol-ncia",
+      "19. Saúde mental, autolesão e violência"
+    ],
+    [
+      "20-situa-es-que-exigem-a-o-urgente",
+      "20. Situações que exigem ação urgente"
+    ],
+    [
+      "21-algoritmos-de-conduta-luria",
+      "21. Algoritmos de conduta LURIA"
+    ],
+    [
+      "22-resumo-comparativo-de-sinais-versus-diagn-sticos",
+      "22. Resumo comparativo de sinais versus diagnósticos"
+    ],
+    [
+      "23-refer-ncias-principais-e-hierarquia-cient-fica",
+      "23. Referências principais e hierarquia científica"
+    ],
+    [
+      "24-pend-ncias-e-controle-editorial",
+      "24. Pendências e controle editorial"
+    ],
+    [
+      "25-casos-cl-nicos-integradores-hip-teses-exames-interpreta-o-e-conduta",
+      "25. Casos clínicos integradores — hipóteses, exames, interpretação e conduta"
+    ],
+    [
+      "26-quest-es-autorais-18-quest-es-comentadas-alternativa-por-alternativa",
+      "26. Questões autorais — 18 questões comentadas alternativa por alternativa"
+    ],
+    [
+      "27-curadoria-de-imagens-m-dicas-e-diagramas-14-candidatas",
+      "27. Curadoria de imagens médicas e diagramas — 14 candidatas"
+    ],
+    [
+      "28-auditoria-cient-fica-e-editorial-desta-fase",
+      "28. Auditoria científica e editorial desta fase"
+    ]
+  ],
+  "q": [
+    [
+      "introdu-o-e-fundamentos",
+      0,
+      [
+        [
+          "2",
+          "Introdução e Fundamentos"
+        ],
+        [
+          "p",
+          "<h1>LURIA | Aula 168 — Puberdade e adolescência: desenvolvimento, endocrinologia e atenção integral</h1>"
+        ],
+        [
+          "p",
+          "<strong>Área:</strong> Pediatria — Endocrinologia pediátrica e Medicina do Adolescente  <br><strong>Lote 09 • Tema 168/180 • Versão editorial de 14/10/2026</strong>  <br><strong>Estado:</strong> rascunho substancial ainda não revisado clinicamente, não publicado no catálogo LURIA.  <br><strong>Escopo:</strong> adolescência como fase biopsicossocial e puberdade como processo biológico de maturação sexual e aceleração do crescimento. Dados clínicos apresentados por anatomia e processo fisiológico; acolhimento individual e respeito à diversidade."
+        ],
+        [
+          "p",
+          "> <strong>Pulo do Gato LURIA:</strong> Em puberdade, <strong>idade + velocidade de crescimento + estágio de Tanner + sequência dos sinais + idade óssea</strong> frequentemente esclarecem mais que um hormônio isolado. Na consulta do adolescente, <strong>vínculo, confidencialidade e avaliação de segurança</strong> são tão importantes quanto o exame físico."
+        ]
+      ]
+    ],
+    [
+      "1-objetivos-de-aprendizagem",
+      0,
+      [
+        [
+          "2",
+          "1. Objetivos de aprendizagem"
+        ],
+        [
+          "p",
+          "Ao terminar a leitura, o estudante deverá:<br>1. Explicar a reativação do eixo hipotálamo–hipófise–gônadas, a adrenarca e o estirão puberal sem confundir hormônios adrenais com gonadais.<br>2. Reconhecer a sequência esperada de telarca, aumento testicular, pubarca, pico de velocidade de crescimento e menarca, com suas variações fisiológicas.<br>3. Realizar avaliação de crescimento usando estatura, velocidade, alvo familiar, curvas por idade e sexo, exame de Tanner e idade óssea quando indicada.<br>4. Distinguir puberdade precoce central (PPC), periférica (PPP) e variantes benignas, escolhendo corretamente investigação hormonal e imagem.<br>5. Investigar atraso puberal e hipogonadismo por insuficiência gonadal primária, causa central, doença sistêmica e atraso constitucional.<br>6. Identificar alterações menstruais, acne, ginecomastia, queixas genitais e transtornos nutricionais relevantes.<br>7. Atender adolescentes com privacidade, abordagem de riscos e fatores protetores, educação sexual, saúde mental, atualização vacinal e ações contra violência.<br>8. Encaminhar situações de emergência e construir seguimento clínico sem medicalizar variações normais.<br>9. Resolver casos e questões com foco ENAMED/residência e prática do SUS."
+        ]
+      ]
+    ],
+    [
+      "2-conceitos-e-recortes-et-rios",
+      0,
+      [
+        [
+          "2",
+          "2. Conceitos e recortes etários"
+        ],
+        [
+          "p",
+          "A <strong>adolescência</strong>, segundo o recorte programático do Ministério da Saúde/OMS, costuma compreender dos <strong>10 aos 19 anos</strong>. O Estatuto da Criança e do Adolescente (ECA) define <strong>adolescente como pessoa entre 12 e 18 anos incompletos</strong>, e criança como pessoa com menos de 12 anos. Esses recortes têm funções diferentes: epidemiologia e organização da atenção versus aplicação de garantias legais. Não se deve confundir o limite do ECA com o início biológico da puberdade."
+        ],
+        [
+          "p",
+          "A <strong>puberdade</strong> é o conjunto de modificações neuroendócrinas, somáticas e reprodutivas que conduz à maturidade sexual. Pode começar antes dos 10 anos em parte das crianças e prosseguir na adolescência. O início da capacidade reprodutiva não equivale à maturidade psicossocial; decisões e aconselhamento devem respeitar desenvolvimento e contexto."
+        ],
+        [
+          "p",
+          "Os marcos:<br><li><strong>Gonadarca:</strong> ativação gonadal dependente de GnRH, LH e FSH; nas meninas, estrogênios levam à telarca; nos meninos, crescimento testicular marca ativação.</li><br><li><strong>Adrenarca:</strong> aumento de andrógenos adrenais (como DHEA/DHEAS) que pode produzir odor axilar, acne e pelos pubianos; é processo parcialmente independente do início da gonadarca.</li><br><li><strong>Menarca:</strong> primeira menstruação, geralmente cerca de dois anos após telarca, com variação individual. Ciclos iniciais podem ser anovulatórios.</li><br><li><strong>Espermarca:</strong> aparecimento de espermatozoides no sêmen, com variabilidade individual; não é marco utilizado isoladamente na avaliação ambulatorial.</li><br><li><strong>Estirão puberal:</strong> aceleração da velocidade de crescimento, modulada por GH/IGF-1, esteroides sexuais, nutrição e saúde global.</li><br><li><strong>Maturação óssea:</strong> avaliação da progressão esquelética; pode avançar rapidamente com exposição precoce a esteroides sexuais, reduzindo tempo restante de crescimento.</li>"
+        ]
+      ]
+    ],
+    [
+      "3-eixo-hipot-lamo-hip-fise-g-nadas-e-crescimento",
+      0,
+      [
+        [
+          "2",
+          "3. Eixo hipotálamo–hipófise–gônadas e crescimento"
+        ],
+        [
+          "p",
+          "Na infância, a atividade pulsátil do GnRH encontra-se relativamente inibida. A puberdade inicia-se com aumento da pulsatilidade hipotalâmica de <strong>GnRH</strong>, sobretudo noturna nas fases iniciais. A hipófise libera <strong>LH e FSH</strong>, que estimulam células gonadais e esteroidogênese. O padrão hormonal, sua evolução e a sensibilidade dos órgãos-alvo produzem sinais corporais progressivos."
+        ],
+        [
+          "p",
+          "<strong>Meninas:</strong> FSH promove recrutamento folicular e produção de estrogênios; estradiol estimula broto mamário, crescimento uterino/endometrial e maturação óssea. A aquisição da ovulação regular pode levar tempo após a menarca. Pubarca não exige necessariamente ativação ovariana, podendo ser manifestação de adrenarca."
+        ],
+        [
+          "p",
+          "<strong>Meninos:</strong> LH age nas células de Leydig (testosterona) e FSH participa da função das células de Sertoli e espermatogênese. O primeiro sinal clínico habitual da gonadarca é o aumento <strong>bilateral do volume testicular para cerca de 4 mL ou mais</strong>. O crescimento peniano e aparecimento de pelos ocorrem em sequência posterior, com variabilidade."
+        ],
+        [
+          "p",
+          "A <strong>placa epifisária</strong> responde a esteroides sexuais. O estrógeno é mediador essencial de maturação e fusão epifisária em ambos os sexos, mesmo quando a testosterona é o hormônio gonadal predominante. Daí a associação entre puberdade muito precoce/progressiva, idade óssea avançada e risco de redução da altura adulta."
+        ],
+        [
+          "3",
+          "3.1. Distinção muito cobrada"
+        ],
+        [
+          "p",
+          "<strong>Pelos pubianos isolados não significam que a puberdade central começou.</strong> A criança pode ter adrenarca precoce com DHEAS aumentado e gônadas pré-púberes. Da mesma forma, <strong>telarca isolada não confirma automaticamente PPC progressiva</strong>. O conjunto de crescimento e progressão muda a interpretação."
+        ],
+        [
+          "3",
+          "3.2. GH/IGF-1, nutrição e saúde"
+        ],
+        [
+          "p",
+          "O estirão decorre também de mudanças no GH/IGF-1 e no metabolismo ósseo. Desnutrição, excesso de exercício com disponibilidade energética insuficiente, doença inflamatória, doenças endócrinas e uso crônico de glicocorticoides podem atrasar crescimento e desenvolvimento sexual. Obesidade infantil pode associar-se a maturação sexual mais precoce em meninas, mas não substitui investigação quando critérios de alerta existem."
+        ]
+      ]
+    ],
+    [
+      "4-idades-e-sequ-ncia-fisiol-gica-dos-marcos",
+      0,
+      [
+        [
+          "2",
+          "4. Idades e sequência fisiológica dos marcos"
+        ],
+        [
+          "p",
+          "A Sociedade Brasileira de Pediatria aponta faixa usual de início puberal de <strong>8–13 anos em meninas</strong> e <strong>9–14 anos em meninos</strong>. Na menina, primeiro sinal é <strong>telarca</strong>; no menino, <strong>aumento testicular</strong>. Não confundir esses limiares com idade da menarca ou com a presença de pelos pubianos."
+        ],
+        [
+          "t",
+          [
+            "Elemento",
+            "Meninas",
+            "Meninos",
+            "Observação prática"
+          ],
+          [
+            [
+              "Primeiro sinal gonadal habitual",
+              "Telarca (M2)",
+              "Testículos ≥4 mL/G2",
+              "Pubarca pode decorrer de adrenarca isolada"
+            ],
+            [
+              "Faixa de início",
+              "8–13 anos",
+              "9–14 anos",
+              "Varia conforme fatores familiares, nutricionais e populacionais"
+            ],
+            [
+              "Estirão mais intenso",
+              "Em geral mais cedo no processo, antes da menarca",
+              "Mais tarde, frequentemente G3–G4",
+              "Velocidade exige medidas seriadas"
+            ],
+            [
+              "Menarca",
+              "Normalmente cerca de dois anos após telarca",
+              "Não se aplica",
+              "Ausência aos 15 anos ou >3 anos após telarca merece investigar"
+            ],
+            [
+              "Progressão de Tanner",
+              "Gerações de estágios M1–M5 e P1–P5",
+              "G1–G5 e P1–P5",
+              "Um único estágio não permite predizer todo o crescimento"
+            ],
+            [
+              "Finalização",
+              "Variável",
+              "Variável",
+              "Importam idade óssea e velocidade de crescimento"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "A sequência não é rígida em todos os indivíduos. Pode haver assimetria inicial do broto mamário, sem doença, ou desenvolvimento de odor e pelos antes de maturação gonadal. O que preocupa é <strong>início muito precoce, progressão excessivamente rápida, velocidade de crescimento desproporcional, virilização ou sintomas neurológicos</strong>."
+        ],
+        [
+          "3",
+          "4.1. Anamnese puberal focalizada"
+        ],
+        [
+          "p",
+          "<li>Em que idade o primeiro sinal apareceu? Quem notou? Houve registro em fotos ou consultas anteriores?</li>\n<li>Mudanças evoluíram rapidamente em meses ou permaneceram estáveis?</li>\n<li>Qual velocidade de crescimento registrada na caderneta?</li>\n<li>Quando familiares iniciaram puberdade/menarca? Existe história de atraso constitucional?</li>\n<li>Há dor de cabeça persistente, alterações visuais, convulsões ou sinais neurológicos?</li>\n<li>Existem fármacos ou hormônios usados na residência, suplementos ou exposição exógena?</li>\n<li>Há sintomas de doenças crônicas, perda ponderal, exercício intenso ou comportamento alimentar restritivo?</li>\n<li>Como o paciente e família vivenciam o desenvolvimento? Existe sofrimento com comparação corporal ou bullying?</li>"
+        ]
+      ]
+    ],
+    [
+      "5-estadiamento-de-tanner-exame-com-t-cnica-e-respeito",
+      0,
+      [
+        [
+          "2",
+          "5. Estadiamento de Tanner — exame com técnica e respeito"
+        ],
+        [
+          "p",
+          "Tanner descreve cinco estágios para desenvolvimento de <strong>mamas (M1–M5)</strong>, <strong>genitais masculinos (G1–G5)</strong> e <strong>pelos pubianos (P1–P5)</strong>, com nomenclaturas por sexo/anatomia na literatura tradicional. O exame deve ser apropriado à indicação clínica, com consentimento/assentimento, privacidade, profissional de apoio quando necessário e explicação de cada etapa. Não é justificável fotografar genitais de menores para “documentar Tanner” quando desenho e anotação são suficientes."
+        ],
+        [
+          "t",
+          [
+            "Estágio",
+            "Desenvolvimento mamário",
+            "Desenvolvimento genital masculino",
+            "Pelos pubianos"
+          ],
+          [
+            [
+              "1",
+              "Pré-puberal, sem tecido glandular palpável",
+              "Pré-puberal",
+              "Ausentes, padrão infantil"
+            ],
+            [
+              "2",
+              "Broto mamário palpável sob aréola, aumento inicial",
+              "Aumento do volume testicular, escroto começa a mudar",
+              "Poucos pelos finos, discretos"
+            ],
+            [
+              "3",
+              "Crescimento maior da mama sem contorno secundário definido",
+              "Pênis alonga e testículos aumentam",
+              "Pelos mais grossos e pigmentados"
+            ],
+            [
+              "4",
+              "Aréola pode formar elevação secundária (variável)",
+              "Maior crescimento peniano e glandular, escroto pigmentado",
+              "Pelos de padrão mais adulto, ainda não distribuição final"
+            ],
+            [
+              "5",
+              "Contorno mamário adulto",
+              "Genitais adultos",
+              "Distribuição madura segundo padrão individual"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Limites:</strong> mamas com tecido adiposo podem parecer telarca sem broto glandular; pubarca não equivale a gonadarca; volume testicular com orquidômetro é mais relevante que pelos para gonadarca masculina. Tanner mede características físicas, <strong>não</strong> orientação sexual, fertilidade, identidade de gênero nem maturidade emocional."
+        ],
+        [
+          "3",
+          "5.1. Como descrever no prontuário"
+        ],
+        [
+          "p",
+          "Exemplo: “M2P1 à direita e M2P1 à esquerda, broto glandular bilateral, sem secreção, velocidade de crescimento em avaliação.” Outro: “G2P1, testículos estimados em cerca de 4 mL bilateralmente, sem sinais de massa.” Registrar data, examinador e que o exame foi feito quando clinicamente necessário; seguir preferência e conforto."
+        ]
+      ]
+    ],
+    [
+      "6-crescimento-e-idade-ssea",
+      0,
+      [
+        [
+          "2",
+          "6. Crescimento e idade óssea"
+        ],
+        [
+          "p",
+          "A medida isolada de altura não responde à pergunta se o crescimento é adequado. Registrar altura com estadiômetro, peso e IMC conforme curvas, comparar medidas anteriores e calcular <strong>velocidade de crescimento em cm/ano</strong> usando intervalos adequados. Cruzamento de percentis, aceleração precoce ou queda da velocidade podem sinalizar distúrbios."
+        ],
+        [
+          "p",
+          "<strong>Alvo familiar:</strong> a altura dos pais ajuda a estimar intervalo genético de crescimento; uso de fórmula e interpretação exigem cuidado com sexo biológico relevante ao crescimento e referências da população. Não usar altura-alvo como sentença e não ignorar doenças crônicas porque uma criança é semelhante a seus familiares."
+        ],
+        [
+          "p",
+          "<strong>Idade óssea:</strong> radiografia de mão e punho, habitualmente esquerdos, comparada ao atlas de Greulich–Pyle ou outro método validado. Idade óssea <strong>avançada</strong> pode acompanhar exposição precoce a esteroides sexuais, hiperandrogenismo e PPC; <strong>atrasada</strong> pode acompanhar atraso constitucional, deficiência hormonal e doença crônica. Não há ponto de corte isolado que separe perfeitamente todas as etiologias, e métodos têm variabilidade."
+        ],
+        [
+          "3",
+          "6.1. Padrões orientadores"
+        ],
+        [
+          "t",
+          [
+            "Achado",
+            "Hipóteses e ação"
+          ],
+          [
+            [
+              "Crescimento acelerado + Tanner precoce progressivo + idade óssea avançada",
+              "Investigar PPC/PPP"
+            ],
+            [
+              "Criança pequena com baixo ganho estatural e puberdade atrasada",
+              "Doença crônica, deficiência hormonal, desnutrição, atraso constitucional"
+            ],
+            [
+              "Pelos/odor isolados + velocidade estável + ausência de gonadarca",
+              "Considerar adrenarca precoce, mas investigar virilização ou evolução atípica"
+            ],
+            [
+              "Menina com mama aparentemente aumentada e IMC alto",
+              "Diferenciar adipomastia de tecido glandular por exame"
+            ],
+            [
+              "Menino sem crescimento testicular aos 14 anos",
+              "Atraso puberal: exame/testes dirigidos e avaliação de etiologia"
+            ],
+            [
+              "Progressão rápida e altura atual elevada para idade",
+              "Risco de maturação óssea precoce e perda de potencial de altura final"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "7-puberdade-precoce-reconhecer-sem-superdiagnosticar",
+      0,
+      [
+        [
+          "2",
+          "7. Puberdade precoce — reconhecer sem superdiagnosticar"
+        ],
+        [
+          "p",
+          "<strong>Definição:</strong> caracteres sexuais secundários antes de <strong>8 anos nas meninas</strong> ou <strong>9 anos nos meninos</strong>. A definição é ponto de partida, não indicação automática de tratamento farmacológico. Investigar se há ativação do eixo GnRH (PPC), produção gonadal/adrenal independente de GnRH (PPP), hormônio externo ou variante isolada."
+        ],
+        [
+          "3",
+          "7.1. PPC: GnRH-dependente"
+        ],
+        [
+          "p",
+          "O eixo hipotálamo–hipófise–gônadas se ativa precocemente. Há progressão gonadal coerente com sequência fisiológica, porém em idade inadequada. História, Tanner, crescimento, idade óssea, LH/FSH por método sensível e resposta a teste de estímulo quando necessário integram diagnóstico."
+        ],
+        [
+          "p",
+          "<strong>Etiologias:</strong> frequentemente idiopática em meninas, mas é essencial considerar lesões centrais, alterações estruturais, tumores (incluindo hamartomas hipotalâmicos), sequelas neurológicas, predisposição genética e causas raras. Em meninos, a probabilidade de etiologia orgânica historicamente é maior que em meninas, justificando investigação cuidadosa."
+        ],
+        [
+          "3",
+          "7.2. PPP: GnRH-independente"
+        ],
+        [
+          "p",
+          "Há produção/exposição de esteroides sexuais sem ativação gonadotrófica central inicial. Exemplos:<br><li>Hiperplasia adrenal congênita, sobretudo formas clássicas e não clássicas em apresentações selecionadas;</li><br><li>Tumores ovarianos, testiculares ou adrenais produtores de hormônios;</li><br><li>Síndrome de McCune–Albright e cistos ovarianos funcionais com produção estrogênica;</li><br><li>Exposição a andrógenos ou estrogênios exógenos;</li><br><li>Puberdade precoce masculina familiar independente de gonadotrofinas;</li><br><li>Hipotireoidismo primário grave de apresentação peculiar (síndrome Van Wyk–Grumbach), às vezes com sangramento/telarca e idade óssea não avançada.</li>"
+        ],
+        [
+          "p",
+          "<strong>Pista:</strong> virilização rápida e desproporcional, sinais puberais discordantes e testículos que não aumentam conforme testosterona elevada podem orientar causa periférica. É necessário investigação especializada para não mascarar tumor ou deficiência adrenal."
+        ],
+        [
+          "3",
+          "7.3. Variantes sem progressão gonadal central significativa"
+        ],
+        [
+          "p",
+          "<strong>Telarca precoce isolada:</strong> broto mamário antes da idade de corte, sem aceleração importante de crescimento, sem outros sinais e com evolução estável/regressiva em alguns casos. Pode requerer observação seriada, não agonista GnRH automático."
+        ],
+        [
+          "p",
+          "<strong>Adrenarca/pubarca precoce isolada:</strong> pelos, odor axilar, acne leve e possível DHEAS adrenarcal, com testículos infantis ou sem telarca progressiva. A avaliação deve excluir hiperplasia adrenal congênita e hiperandrogenismo patológico quando há crescimento acelerado, virilização ou quadro atípico."
+        ],
+        [
+          "p",
+          "<strong>Sangramento vaginal isolado:</strong> exige investigação de trauma, corpo estranho, vulvovaginite, exposição a hormônios e outras causas; não assumir menarca sem avaliar maturação."
+        ],
+        [
+          "3",
+          "7.4. Tabela diferencial de puberdade precoce"
+        ],
+        [
+          "t",
+          [
+            "Aspecto",
+            "PPC",
+            "PPP",
+            "Telarca/adrenarca isoladas"
+          ],
+          [
+            [
+              "Origem",
+              "Ativação de GnRH",
+              "Esteroides independentes de GnRH",
+              "Evento glandular/local sem gonadarca progressiva"
+            ],
+            [
+              "Sequência de sinais",
+              "Usualmente fisiológica, mas prematura",
+              "Pode ser discordante/atípica",
+              "Um sinal predomina"
+            ],
+            [
+              "Crescimento",
+              "Pode acelerar",
+              "Pode acelerar",
+              "Em geral preservado; exceções exigem investigação"
+            ],
+            [
+              "Idade óssea",
+              "Frequentemente avançada se progressiva",
+              "Pode estar avançada",
+              "Frequentemente pouco alterada"
+            ],
+            [
+              "LH por teste sensível/estimulação",
+              "Padrão puberal conforme método",
+              "Geralmente suprimido/baixo inicialmente",
+              "Pré-púberes"
+            ],
+            [
+              "Conduta",
+              "Investigar causa e progressão; agonista GnRH em casos elegíveis",
+              "Tratar origem (adrenal/gonadal/exógena)",
+              "Seguimento ou investigação se progressivo"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "8-diagn-stico-da-puberdade-precoce-algoritmo-aplicado",
+      0,
+      [
+        [
+          "2",
+          "8. Diagnóstico da puberdade precoce — algoritmo aplicado"
+        ],
+        [
+          "p",
+          "<strong>Passo 1: confirmar idade e sinal.</strong> Telarca verdadeira? Testículo de ≥4 mL? Pelos isolados? Há exposição hormonal exógena? Conferir idade corrigida nos muito prematuros quando pertinente ao crescimento precoce, sem alterar arbitrariamente critérios cronológicos de puberdade."
+        ],
+        [
+          "p",
+          "<strong>Passo 2: reconstruir crescimento e progressão.</strong> Ver curva e velocidade. Sinais de progressão rápida, sangramento vaginal, virilização, cefaleia, alteração visual ou convulsão exigem maior prioridade."
+        ],
+        [
+          "p",
+          "<strong>Passo 3: dosagem dirigida.</strong> LH basal por método ultrassensível, FSH e estradiol/testosterona conforme anatomia, idade e suspeita. Em alguns pacientes, teste com GnRH/análogo permite demonstrar resposta puberal de LH, observando ponto de corte específico do laboratório e protocolo. Valor único de LH basal baixo <strong>não exclui</strong> PPC muito inicial."
+        ],
+        [
+          "p",
+          "<strong>Passo 4: idade óssea.</strong> RX de mão/punho para avaliar maturação acelerada e potencial de altura adulta. Interpretar junto à velocidade, ao Tanner e ao método."
+        ],
+        [
+          "p",
+          "<strong>Passo 5: imagem e etiologia.</strong> US pélvica em meninas selecionadas ajuda a avaliar útero, ovários e massas; não comprova PPC isoladamente. RM de encéfalo/hipotálamo–hipófise está indicada em contextos de maior risco, especialmente meninos com PPC, meninas muito jovens e quaisquer crianças com sintomas neurológicos ou evolução atípica; em meninas de 6–8 anos sem sinais neurológicos a decisão pode ser individualizada conforme PCDT e endocrinologia pediátrica. Exames adrenais/17-OH-progesterona/DHEAS/andrógenos conforme suspeita periférica."
+        ],
+        [
+          "p",
+          "<strong>Passo 6: decidir seguimento versus tratamento.</strong> Nem toda criança com telarca antes de 8 anos precisa de bloqueio. A indicação considera confirmação de PPC, ritmo de progressão, idade, idade óssea, prognóstico estatural, impacto psicossocial e critérios de elegibilidade do PCDT."
+        ],
+        [
+          "3",
+          "Quando encaminhar com prioridade"
+        ],
+        [
+          "p",
+          "<li>Menino <9 anos com aumento testicular e progressão puberal.</li>\n<li>Menina <6 anos com telarca rapidamente progressiva.</li>\n<li>Alterações neurológicas ou visuais, convulsões, cefaleia persistente com sinais de alarme.</li>\n<li>Virilização rápida, crescimento acelerado intenso, clitoromegalia, massa gonadal/adrenal suspeita.</li>\n<li>Sangramento vaginal antes do desenvolvimento puberal sem explicação.</li>\n<li>Evidência de doença orgânica com comprometimento da saúde ou risco de perda importante de estatura final.</li>"
+        ]
+      ]
+    ],
+    [
+      "9-tratamento-da-puberdade-precoce-central",
+      0,
+      [
+        [
+          "2",
+          "9. Tratamento da puberdade precoce central"
+        ],
+        [
+          "p",
+          "O tratamento de escolha em PPC confirmada e elegível é <strong>agonista de GnRH de ação prolongada</strong>, como <strong>leuprorrelina</strong> ou <strong>triptorrelina</strong>, em formulações disponíveis no SUS segundo PCDT. A administração contínua reduz resposta hipofisária e suprime LH/FSH após estimulação inicial, desacelerando maturação óssea e progressão de caracteres sexuais."
+        ],
+        [
+          "p",
+          "<strong>Não confundir agonista GnRH pulsátil fisiológico com agonista de depósito contínuo usado para bloqueio.</strong> Os efeitos dependem de regime; prescrição deve seguir apresentação, periodicidade, peso/idade quando exigidos e protocolo vigente."
+        ],
+        [
+          "p",
+          "A Conitec incorporou formulações de <strong>leuprorrelina 45 mg</strong> e <strong>triptorrelina 22,5 mg</strong> em esquemas semestrais, além de outras apresentações. Esses números identificam apresentações específicas e <strong>não</strong> são uma dose que deva ser convertida livremente em mg/kg ou aplicada a qualquer criança. Não prescrever sem confirmar elegibilidade, disponibilidade atual e orientação de endocrinologia pediátrica."
+        ],
+        [
+          "p",
+          "<strong>Benefícios possíveis:</strong> proteger potencial de estatura em casos selecionados, reduzir aceleração de maturação e aliviar sofrimento relacionado à progressão puberal excessivamente precoce. O ganho de altura depende de idade de início, maturação óssea, progressão e resposta; não prometer altura adulta predeterminada."
+        ],
+        [
+          "p",
+          "<strong>Monitoramento:</strong> Tanner, velocidade de crescimento, idade óssea quando indicada, tolerância ao medicamento, sinais de supressão insuficiente e saúde psicossocial. Exames hormonais de controle dependem de protocolo e quadro; não repetir testes sem propósito. Planejar momento de suspensão segundo resposta, idade biológica, altura projetada e decisão compartilhada."
+        ],
+        [
+          "p",
+          "<strong>Eventos adversos/atenção:</strong> reações no local, cefaleia, alterações transitórias no início, efeitos psicossociais, questões de densidade mineral óssea e outras condições conforme produto. A informação clínica deve evitar assustar famílias e explicitar riscos e incertezas reais."
+        ],
+        [
+          "p",
+          "<strong>PPP:</strong> bloquear GnRH não corrige fonte periférica independente. Tratar etiologia específica (por exemplo, hiperplasia adrenal congênita, tumor, hormônio exógeno). Situações mistas e conversão secundária para PPC podem exigir avaliação adicional."
+        ]
+      ]
+    ],
+    [
+      "10-puberdade-atrasada-quando-investigar",
+      0,
+      [
+        [
+          "2",
+          "10. Puberdade atrasada: quando investigar"
+        ],
+        [
+          "p",
+          "Atraso puberal é usualmente definido por <strong>ausência de telarca até os 13 anos nas meninas</strong> ou <strong>ausência de aumento testicular para >4 mL até os 14 anos nos meninos</strong>. Avaliar também <strong>ausência de menarca até os 15 anos</strong> ou após mais de <strong>três anos desde telarca</strong> e lentidão excessiva da progressão. Um adolescente em Tanner 2 pode ainda ter desenvolvimento lento normal, mas permanência prolongada sem progressão demanda avaliação."
+        ],
+        [
+          "3",
+          "10.1. Três mecanismos etiológicos"
+        ],
+        [
+          "p",
+          "1. <strong>Atraso constitucional do crescimento e da puberdade:</strong> variante do desenvolvimento, especialmente em meninos, com história familiar e idade óssea frequentemente atrasada. É diagnóstico após avaliação e exclusão de outras causas, não rótulo automático.<br>2. <strong>Hipogonadismo hipogonadotrófico (central):</strong> baixa estimulação de LH/FSH por causas funcionais (restrição energética, exercício excessivo, doença crônica, estresse fisiológico) ou orgânicas (lesões hipotálamo-hipofisárias, deficiência congênita de GnRH, doenças infiltrativas). Hiposmia/anosmia sugere síndrome de Kallmann em contexto compatível.<br>3. <strong>Hipogonadismo hipergonadotrófico (primário):</strong> falência gonadal, com LH/FSH elevados e produção insuficiente de esteroides. Considerar síndrome de Turner, disgenesias gonadais, síndrome de Klinefelter, tratamento oncológico e outras causas."
+        ],
+        [
+          "3",
+          "10.2. Exames por hipótese"
+        ],
+        [
+          "p",
+          "Curvas de crescimento, desenvolvimento familiar, dieta, atividade física, uso de fármacos, doenças crônicas e exame completo vêm primeiro. Exames podem incluir <strong>LH/FSH, estradiol ou testosterona, TSH/T4 livre, hemograma, marcadores de doença inflamatória, avaliação nutricional, triagem celíaca ou prolactina</strong> segundo sinais. Idade óssea ajuda a estimar maturação, mas não separa sozinha atraso constitucional de causa central."
+        ],
+        [
+          "p",
+          "<strong>LH/FSH altos com esteroides baixos</strong> favorecem falência gonadal primária; <strong>LH/FSH baixos ou inapropriadamente normais</strong> podem ocorrer no atraso constitucional e no hipogonadismo central, exigindo avaliação longitudinal e especialistas. RM hipofisária/encéfalo é reservada a suspeitas específicas e sinais clínicos."
+        ],
+        [
+          "3",
+          "10.3. Conduta"
+        ],
+        [
+          "p",
+          "Tratamento depende da causa: corrigir doença crônica/insuficiência nutricional, acompanhar atraso constitucional, manejar doença genética e, quando indicado, fazer <strong>indução puberal hormonal gradual</strong> por endocrinologia pediátrica, com seguimento de crescimento, maturação óssea e saúde emocional. Não prescrever testosterona/estrogênio indiscriminadamente apenas pela idade cronológica ou ansiedade familiar."
+        ],
+        [
+          "3",
+          "10.4. Situações específicas"
+        ],
+        [
+          "p",
+          "<strong>Turner:</strong> baixa estatura, disgenesia gonadal, variabilidade fenotípica e risco cardiovascular. Considerar cariótipo em adolescente com ausência de telarca e baixa estatura ou sinais sugestivos, e acompanhamento especializado de coração, rim, crescimento e indução puberal."
+        ],
+        [
+          "p",
+          "<strong>Klinefelter:</strong> em meninos com puberdade alterada, testículos pequenos/firmes, ginecomastia e dificuldades de aprendizagem ou fertilidade, considerar hipótese, sem esperar todos os achados clássicos."
+        ],
+        [
+          "p",
+          "<strong>Deficiência congênita de GnRH:</strong> ausência de progressão puberal associada a anosmia/hiposmia, história de micropênis ou criptorquidia em alguns casos, entre outros sinais. A avaliação de fertilidade e necessidade hormonal é especializada."
+        ],
+        [
+          "p",
+          "<strong>Restrição energética/treinamento intenso:</strong> atraso puberal e disfunção menstrual podem ser manifestação de baixa disponibilidade energética ou transtorno alimentar, inclusive sem baixo peso extremo. É preciso tratar saúde global, não simplesmente prescrever hormônio."
+        ]
+      ]
+    ],
+    [
+      "11-compara-o-puberdade-precoce-versus-tardia",
+      0,
+      [
+        [
+          "2",
+          "11. Comparação: puberdade precoce versus tardia"
+        ],
+        [
+          "t",
+          [
+            "Pergunta",
+            "Precoce",
+            "Atrasada"
+          ],
+          [
+            [
+              "Qual marco etário alerta?",
+              "<8 meninas; <9 meninos",
+              "Sem telarca aos 13; sem testículos >4 mL aos 14"
+            ],
+            [
+              "Qual preocupação principal?",
+              "Progressão acelerada, causa orgânica, maturação óssea precoce",
+              "Falha gonadal/central, doença crônica, saúde óssea e psicossocial"
+            ],
+            [
+              "Idade óssea",
+              "Frequentemente avançada em formas progressivas",
+              "Frequentemente atrasada em constitucional/central"
+            ],
+            [
+              "Hormonais",
+              "Distinguir ativação de LH central e fontes periféricas",
+              "Distinguir falência primária e estimulação central insuficiente"
+            ],
+            [
+              "Tratamento",
+              "Não tratar todo sinal isolado; agonista GnRH na PPC elegível",
+              "Corrigir causa, vigiar variante constitucional ou indução hormonal especializada"
+            ],
+            [
+              "Encaminhamento",
+              "Progressão rápida, meninos, sintomas neurológicos/virilização",
+              "Ausência completa nos limiares, desaceleração crescimento, doença sistêmica"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "12-consulta-integral-do-adolescente-m-todo-e-v-nculo",
+      0,
+      [
+        [
+          "2",
+          "12. Consulta integral do adolescente: método e vínculo"
+        ],
+        [
+          "p",
+          "A consulta ao adolescente deve ser planejada para que a pessoa compreenda a finalidade da avaliação, tenha espaço para fazer perguntas e participe das decisões. O Ministério da Saúde recomenda oferecer momento de atendimento <strong>sem acompanhantes</strong>, ainda que a pessoa tenha chegado com responsável, respeitando capacidade de compreensão, segurança e normas éticas."
+        ],
+        [
+          "p",
+          "<strong>Abertura útil:</strong> explicar a estrutura (parte com familiares, parte individual quando apropriado), o que ficará em sigilo e os limites: risco grave à vida/segurança ou imposição legal de comunicação podem exigir partilha proporcional de informação com a rede necessária. Não prometer “tudo será segredo” e depois quebrar confiança sem contextualização."
+        ],
+        [
+          "p",
+          "A procura <strong>desacompanhada</strong> não justifica recusa automática; avaliar urgência, compreensão, necessidade de rede protetiva e registrar o plano, conforme orientações do Ministério da Saúde."
+        ],
+        [
+          "3",
+          "12.1. Entrevista psicossocial estruturada — HEEADSSS/HEADSS"
+        ],
+        [
+          "p",
+          "Usar ferramenta mnemônica como apoio, não interrogatório:<br><li><strong>Home / casa:</strong> com quem vive, relações e segurança, responsáveis confiáveis.</li><br><li><strong>Education/employment:</strong> escola, aprendizagem, faltas, bullying, trabalho e aspirações.</li><br><li><strong>Eating / alimentação:</strong> refeições, insegurança alimentar, percepção corporal, métodos de perda de peso, sinais de transtorno alimentar.</li><br><li><strong>Activities:</strong> amigos, movimento, lazer, uso de telas, atividade física e redes digitais.</li><br><li><strong>Drugs:</strong> álcool, nicotina, cigarros eletrônicos, outras drogas; prevenção e redução de danos.</li><br><li><strong>Sexuality:</strong> relacionamentos, consentimento, dúvidas, proteção, IST, contracepção, experiências de coerção; perguntar sem pressupor orientação ou atividade sexual.</li><br><li><strong>Suicide/depression:</strong> humor, ansiedade, sono, autolesão, ideação e planos suicidas; ações imediatas conforme risco.</li><br><li><strong>Safety:</strong> violência no domicílio, escola, relacionamentos, trânsito, internet e armas em casa.</li>"
+        ],
+        [
+          "p",
+          "Reforçar <strong>fatores de proteção</strong>: adulto confiável, vínculo com escola, rotina de sono, atividade física prazerosa, espaço de pertencimento, alimentação adequada e acesso a cuidado. Não restringir consulta a comportamentos de risco."
+        ],
+        [
+          "3",
+          "12.2. Exame físico proporcional"
+        ],
+        [
+          "p",
+          "Avaliar sinais vitais, crescimento, IMC por curvas, pressão arterial com manguito adequado, acne, pele, tireoide e demais sistemas conforme queixa. Exame puberal íntimo só com indicação clínica e explicação, privacidade, assentimento, consentimento aplicável e chaperone/apoio apropriado. O adolescente deve poder fazer perguntas e participar do plano."
+        ]
+      ]
+    ],
+    [
+      "13-crescimento-composi-o-corporal-alimenta-o-e-exerc-cio",
+      0,
+      [
+        [
+          "2",
+          "13. Crescimento, composição corporal, alimentação e exercício"
+        ],
+        [
+          "p",
+          "A fase puberal exige aumento de necessidades energéticas e de nutrientes; o crescimento não ocorre de modo linear nem igual entre adolescentes. Avaliar curvas de altura, peso e IMC por idade, tendências, saúde alimentar, puberdade e funcionalidade. <strong>Uma medida isolada de IMC não diagnostica transtorno alimentar nem define valor moral ou adesão.</strong>"
+        ],
+        [
+          "p",
+          "Questões úteis:<br><li>houve alteração rápida de peso e altura ou queda importante de percentil?</li><br><li>existe restrição alimentar, vômito autoprovocado, uso de laxantes ou exercícios compulsivos?</li><br><li>há tontura ao levantar, síncope, amenorreia, intolerância ao frio, bradicardia ou fragilidade óssea?</li><br><li>a família tem acesso regular a alimentos?</li><br><li>existem queixas de imagem corporal, pressão por aparência ou bullying?</li>"
+        ],
+        [
+          "p",
+          "Em suspeita de transtorno alimentar, monitorar estabilidade hemodinâmica, bradicardia, eletrólitos, estado mental e risco de suicídio. <strong>Perda ponderal rápida e instabilidade podem ocorrer mesmo com IMC ainda na faixa usual</strong>. Reposição nutricional após restrição grave pode exigir monitoramento pelo risco de síndrome de realimentação."
+        ],
+        [
+          "p",
+          "<strong>Atividade física:</strong> recomendar movimento seguro, prazeroso e adaptado, não prescrever exercício como punição pelo peso. Avaliar sinais de alarme esportivos (síncope ao esforço, dor torácica, história familiar de morte súbita, palpitações importantes) antes de liberação irrestrita, com investigação cardiovascular apropriada quando indicado."
+        ]
+      ]
+    ],
+    [
+      "14-sa-de-menstrual-menarca-irregularidade-e-sangramento",
+      0,
+      [
+        [
+          "2",
+          "14. Saúde menstrual: menarca, irregularidade e sangramento"
+        ],
+        [
+          "p",
+          "Após menarca, ciclos anovulatórios são comuns durante maturação do eixo, especialmente no primeiro ano. Isso <strong>não significa</strong> que todo atraso ou sangramento intenso seja fisiológico. Na consulta perguntar data da menarca, intervalos, duração, intensidade, impacto escolar e anemia. O ciclo se mede <strong>do primeiro dia de uma menstruação ao primeiro da seguinte</strong>."
+        ],
+        [
+          "3",
+          "14.1. Quando irregularidade deve ser investigada?"
+        ],
+        [
+          "p",
+          "A diretriz internacional de SOP/PCOS 2023 utiliza:<br><li><strong>Primeiro ano pós-menarca:</strong> irregularidade pode acompanhar transição puberal.</li><br><li><strong>1 a menos de 3 anos pós-menarca:</strong> intervalos <21 ou >45 dias sugerem anormalidade.</li><br><li><strong>A partir de 3 anos:</strong> intervalos <21 ou >35 dias ou menos de oito ciclos/ano exigem avaliação.</li><br><li><strong>Mais de 90 dias entre menstruações</strong>, após um ano de menarca, merece investigação.</li><br><li><strong>Amenorreia primária:</strong> ausência de menarca aos 15 anos ou mais de três anos após telarca.</li>"
+        ],
+        [
+          "p",
+          "A ACOG recomenda investigar intervalo de <strong>90 dias</strong> mesmo que ocasional e qualquer sangramento excessivo. Os cortes têm usos clínicos parcialmente distintos, mas ambos alertam que não se deve tranquilizar indiscriminadamente após três meses sem sangrar."
+        ],
+        [
+          "3",
+          "14.2. Sangramento intenso"
+        ],
+        [
+          "p",
+          "Sinais de gravidade: taquicardia, hipotensão, síncope, palidez, fraqueza acentuada, dispneia, sangramento muito volumoso ou persistente. Primeiro estabilizar; avaliar gestação se biologicamente possível, hemograma/ferritina, coagulopatia (inclusive doença de von Willebrand em história sugestiva), disfunção ovulatória, alterações tireoidianas e causas estruturais conforme contexto. Investigação e terapia hormonal/antifibrinolítica dependem de gravidade, contraindicações e protocolo. Não inserir exame pélvico invasivo de rotina sem indicação e consentimento."
+        ],
+        [
+          "3",
+          "14.3. Dismenorreia"
+        ],
+        [
+          "p",
+          "A dismenorreia primária é frequente em ciclos ovulatórios e pode responder a medidas de conforto e anti-inflamatórios quando não contraindicados, iniciados no período apropriado. Dor refratária, progressiva, associada a sintomas intestinais/urinários cíclicos ou incapacitante levanta suspeita de <strong>endometriose</strong>, inclusive na adolescência. Tratamento e eventual investigação especializada devem ser individualizados sem banalizar ausência escolar."
+        ],
+        [
+          "3",
+          "14.4. Síndrome dos ovários policísticos na adolescência"
+        ],
+        [
+          "p",
+          "Evitar diagnóstico pela combinação simplista “ciclo irregular + ultrassom multifolicular”. Na adolescência, a diretriz internacional de 2023 recomenda considerar <strong>irregularidade persistente segundo anos desde menarca + hiperandrogenismo clínico ou bioquímico</strong>, após excluir outras causas. <strong>A ultrassonografia de ovários policísticos não é recomendada como critério diagnóstico em adolescentes</strong> por baixa especificidade. Acne leve isolada pode ser normal; hirsutismo progressivo, acne grave e virilização exigem avaliação."
+        ],
+        [
+          "p",
+          "Exames podem incluir gravidez quando possível, TSH, prolactina, andrógenos e 17-hidroxiprogesterona conforme suspeita; avaliar hiperplasia adrenal congênita não clássica, tumores secretores de andrógenos e outras causas."
+        ]
+      ]
+    ],
+    [
+      "15-acne-pele-e-imagem-corporal",
+      0,
+      [
+        [
+          "2",
+          "15. Acne, pele e imagem corporal"
+        ],
+        [
+          "p",
+          "A acne surge da interação entre produção sebácea estimulada por andrógenos, obstrução folicular, Cutibacterium acnes e inflamação. Manifesta-se por comedões, pápulas/pústulas e nódulos. A gravidade deve considerar risco de cicatriz, extensão e impacto psicológico, não apenas número de lesões."
+        ],
+        [
+          "p",
+          "<strong>Acne comedoniana leve:</strong> higiene gentil, tratamento tópico como retinoide/benzoperóxido segundo tolerância, proteção solar e orientação de expectativas. <strong>Acne inflamatória moderada:</strong> combinações tópicas e eventual antibiótico sistêmico por prazo limitado conforme protocolo e gravidade; evitar antibiótico isolado prolongado para reduzir resistência. <strong>Acne nodulocística, cicatricial ou refratária:</strong> dermatologia, podendo considerar isotretinoína oral com cuidados estritos e prevenção de exposição gestacional pela teratogenicidade."
+        ],
+        [
+          "p",
+          "Virilização de instalação rápida, hirsutismo intenso e alteração menstrual relevante não devem ser atribuídos automaticamente à acne comum. Avaliar impacto sobre autoestima, isolamento e bullying, mantendo linguagem não estigmatizante."
+        ]
+      ]
+    ],
+    [
+      "16-ginecomastia-puberal-e-queixas-genitais-masculinas",
+      0,
+      [
+        [
+          "2",
+          "16. Ginecomastia puberal e queixas genitais masculinas"
+        ],
+        [
+          "p",
+          "A <strong>ginecomastia puberal</strong> é proliferação glandular mamária transitória em meninos, frequentemente em fases intermediárias de desenvolvimento. Pode ser unilateral e dolorosa inicialmente. Diferenciar de pseudoginecomastia adiposa e massa excêntrica suspeita. Em apresentações típicas, sem sinais de alarme, observação e orientação podem ser suficientes."
+        ],
+        [
+          "p",
+          "<strong>Investigar</strong> início pré-puberal, crescimento rápido, massa dura fixa, descarga sanguinolenta, sintomas sistêmicos, uso de anabolizantes/medicamentos ou sinais de hipogonadismo. Avaliar testículos, sinais de doença hepática/renal/tireoidiana e fármacos conforme contexto. Cirurgia não é tratamento inicial universal."
+        ],
+        [
+          "p",
+          "<strong>Varicocele:</strong> pode surgir na adolescência; a avaliação envolve lado, volume testicular, sintomas e possível impacto no desenvolvimento. Conduta é individualizada pela urologia. Massa escrotal suspeita não deve ser atribuída a varicocele sem exame."
+        ],
+        [
+          "p",
+          "<strong>Dor testicular súbita intensa:</strong> considerar <strong>torção testicular</strong>, emergência urológica em que a avaliação cirúrgica não deve ser retardada por exames se a suspeita é alta. Náuseas, vômitos, testículo elevado/horizontalizado e reflexo cremastérico ausente podem estar presentes; achados clássicos podem faltar. US Doppler só quando não atrasa a exploração indicada."
+        ]
+      ]
+    ],
+    [
+      "17-sa-de-sexual-e-reprodutiva-sem-julgamento",
+      0,
+      [
+        [
+          "2",
+          "17. Saúde sexual e reprodutiva sem julgamento"
+        ],
+        [
+          "p",
+          "Adolescência é fase de dúvidas, experiências e desenvolvimento de autonomia. Informar sobre anatomia, consentimento, relacionamentos, prevenção de IST, contracepção, gravidez e acesso a serviços, adaptando linguagem à capacidade e às preferências da pessoa. Perguntar sobre atividade sexual sem pressupor por idade, identidade ou orientação."
+        ],
+        [
+          "p",
+          "<strong>Contracepção:</strong> apresentar métodos de barreira, contraceptivos hormonais e de longa duração quando apropriados, elegibilidade e contraindicações, efetividade, adesão e direito à decisão informada. <strong>Dupla proteção:</strong> preservativo reduz IST, mesmo quando outro método contraceptivo previne gestação. Não impor método nem negar assistência a quem comparece sem responsáveis, observando legislação aplicável, segurança e capacidade."
+        ],
+        [
+          "p",
+          "<strong>IST:</strong> avaliar necessidade de testagem HIV, sífilis, gonorreia, clamídia, hepatites e vacinação de acordo com histórico de exposição e diretrizes brasileiras. PEP e PrEP ao HIV têm protocolos específicos; PEP pós-exposição sexual de risco deve ser considerada o mais cedo possível, até 72 horas quando indicada. Atender violência sexual mesmo após perda dessa janela, com proteção, avaliação de outras infecções, gravidez, suporte psicológico e comunicação legal conforme situação."
+        ],
+        [
+          "p",
+          "<strong>Gravidez na adolescência:</strong> oferecer confirmação e acompanhamento pré-natal sem julgamento; verificar vulnerabilidades, possível coerção, barreiras sociais e segurança, respeitando direitos e protocolos obstétricos. Não reproduzir estereótipos."
+        ],
+        [
+          "3",
+          "17.1. Sexualidade, identidade de gênero e corpo"
+        ],
+        [
+          "p",
+          "A consulta deve acolher identidades, orientação e características sexuais sem pressuposições. Questões relacionadas ao desenvolvimento puberal e eventual necessidade de cuidado especializado devem ser abordadas individualmente. Não prescrever hormônios por conta própria e não confundir diversidade de gênero com doença; avaliar sofrimento, segurança e acesso a atendimento qualificado quando a pessoa desejar. O exame íntimo deve permanecer justificado e respeitoso."
+        ]
+      ]
+    ],
+    [
+      "18-vacina-o-sono-e-preven-o",
+      0,
+      [
+        [
+          "2",
+          "18. Vacinação, sono e prevenção"
+        ],
+        [
+          "p",
+          "Conferir a <strong>Caderneta de Saúde do Adolescente</strong> e o calendário do Programa Nacional de Imunizações vigente na data da consulta, incluindo HPV, meningocócicas e vacinas de atualização de rotina/campanhas. O calendário pode mudar conforme ano, grupos prioritários e disponibilidade. Vacinação contra HPV reduz risco de infecção pelos tipos cobertos e cânceres relacionados, mas não trata infecção preexistente e não dispensa medidas preventivas posteriores."
+        ],
+        [
+          "p",
+          "<strong>Sono:</strong> alterações circadianas da adolescência tendem a favorecer horários mais tardios, mas privação de sono prejudica aprendizagem, regulação emocional, segurança e saúde metabólica. Investigar rotina, telas, cafeína/estimulantes, turnos escolares, violência e distúrbios do sono. Recomendar práticas viáveis à realidade e avaliar apneia em adolescentes com ronco significativo e sonolência diurna."
+        ],
+        [
+          "p",
+          "<strong>Segurança:</strong> orientar transporte seguro, capacete, cinto, prevenção de direção sob efeito de álcool/drogas, saúde digital, proteção contra exposição/chantagem online e fontes de apoio. Jovens com doenças crônicas podem requerer plano de transição do seguimento pediátrico ao adulto."
+        ]
+      ]
+    ],
+    [
+      "19-sa-de-mental-autoles-o-e-viol-ncia",
+      0,
+      [
+        [
+          "2",
+          "19. Saúde mental, autolesão e violência"
+        ],
+        [
+          "p",
+          "A consulta deve rastrear sofrimento emocional de forma apropriada, especialmente em presença de isolamento, mudanças bruscas no sono/escola, queda funcional, consumo problemático de substâncias, bullying, violência, alterações alimentares ou conflitos intensos. Não transformar tristeza transitória em diagnóstico automaticamente, mas também não banalizar sinais de depressão, transtorno de ansiedade ou risco suicida."
+        ],
+        [
+          "3",
+          "19.1. Avaliação de risco suicida"
+        ],
+        [
+          "p",
+          "Perguntar diretamente e com calma sobre ideação, intenção, planejamento, meios disponíveis, tentativas anteriores, impulsividade, intoxicação, suporte e proteção. A gravidade de lesão superficial de autolesão <strong>não define por si</strong> o risco suicida. Se risco agudo, não deixar paciente sem supervisão apropriada e acionar avaliação emergencial e rede de proteção."
+        ],
+        [
+          "p",
+          "<strong>Autolesão e tentativa de suicídio:</strong> distinguir fenômenos e cumprir notificação sanitária compulsória conforme tipificação e prazos vigentes. A comunicação protetiva e compartilhamento de informações seguem normas e deveres relativos à segurança, privacidade e Estatuto da Criança e do Adolescente."
+        ],
+        [
+          "3",
+          "19.2. Violência e abuso"
+        ],
+        [
+          "p",
+          "Suspeitar quando houver lesões incompatíveis com mecanismo, revelação espontânea, alterações abruptas de comportamento e situação de risco atual, sem usar marcador isolado para definir autoria. Acolher relato, registrar fatos objetivamente, evitar entrevistas repetidas e encaminhar à rede protetiva. O atendimento clínico não depende de prova policial ou boletim de ocorrência."
+        ],
+        [
+          "p",
+          "A <strong>Aula 163 da LURIA (Violência e maus-tratos contra crianças e adolescentes)</strong> aprofunda investigação, comunicação ao Conselho Tutelar, notificação SINAN e cuidado de vítimas; não duplicar aqui o conteúdo pericial. O foco desta aula é reconhecer a necessidade de proteção durante a consulta integral."
+        ]
+      ]
+    ],
+    [
+      "20-situa-es-que-exigem-a-o-urgente",
+      0,
+      [
+        [
+          "2",
+          "20. Situações que exigem ação urgente"
+        ],
+        [
+          "t",
+          [
+            "Alerta",
+            "Diagnósticos a considerar",
+            "Prioridade"
+          ],
+          [
+            [
+              "Dor testicular súbita intensa",
+              "Torção testicular, epididimite, trauma",
+              "Urologia/cirurgia urgente; não atrasar intervenção se alta suspeita"
+            ],
+            [
+              "Hemorragia menstrual volumosa com instabilidade",
+              "Sangramento uterino anormal, gravidez, coagulopatia",
+              "ABCDE, acesso, reposição conforme necessidade, exames dirigidos e ginecologia"
+            ],
+            [
+              "Cefaleia intensa progressiva + alterações visuais em puberdade muito precoce",
+              "Lesão do SNC, distúrbio endocrinológico",
+              "Avaliação neurológica/endócrina e imagem indicada"
+            ],
+            [
+              "Virilização rápida, massa ou dor abdominal",
+              "Tumor adrenal/ovariano/testicular, hiperandrogenismo severo",
+              "Avaliação especializada prioritária e exames dirigidos"
+            ],
+            [
+              "Bradicardia significativa, desmaios e restrição alimentar",
+              "Desnutrição, transtorno alimentar, distúrbios eletrolíticos",
+              "Estabilização/avaliação hospitalar e saúde mental"
+            ],
+            [
+              "Ideação suicida com plano/meios/risco atual",
+              "Crise psiquiátrica, intoxicação, violência",
+              "Atendimento emergencial, supervisão e segurança"
+            ],
+            [
+              "Dor torácica ou síncope ao exercício",
+              "Arritmia, cardiomiopatia, causa estrutural",
+              "Suspender exercício competitivo até avaliação clínica indicada"
+            ],
+            [
+              "Suspeita de violência sexual recente",
+              "Trauma, IST, gravidez, risco de reexposição",
+              "Acolhimento e cuidados tempo-dependentes, rede de proteção"
+            ],
+            [
+              "Atraso puberal e perda ponderal importante",
+              "Doença crônica, transtorno alimentar, doença endócrina",
+              "Avaliar gravidade, nutrição e endocrinologia, sem banalização"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "21-algoritmos-de-conduta-luria",
+      0,
+      [
+        [
+          "2",
+          "21. Algoritmos de conduta LURIA"
+        ],
+        [
+          "3",
+          "Fluxo A — Desenvolvimento puberal antes da faixa esperada"
+        ],
+        [
+          "p",
+          "Sinal antes de 8 anos em meninas / 9 em meninos → confirmar <strong>telarca ou volume testicular</strong>; diferenciar pelos isolados → curva de crescimento e Tanner seriado → avaliar progressão, idade óssea e hormônios dirigidos → <strong>LH puberal / padrão GnRH-dependente?</strong> investigar PPC e imagem conforme risco → <strong>LH baixo com esteroide elevado/virilização?</strong> investigar fonte periférica → <strong>sinal isolado estável sem aceleração?</strong> seguimento e orientação → tratar apenas quando diagnóstico e critérios estiverem estabelecidos."
+        ],
+        [
+          "3",
+          "Fluxo B — Ausência de puberdade"
+        ],
+        [
+          "p",
+          "Menina aos 13 anos sem telarca / menino aos 14 sem volume testicular >4 mL → avaliar crescimento, história familiar, nutrição e doença sistêmica → LH/FSH + esteroides e exames guiados → <strong>gonadotrofinas elevadas:</strong> insuficiência gonadal primária / genética → <strong>gonadotrofinas baixas/inapropriadas:</strong> atraso constitucional, doença funcional ou causa central → seguimento especializado, tratar causa e considerar indução gradual quando indicada."
+        ],
+        [
+          "3",
+          "Fluxo C — Consulta integral"
+        ],
+        [
+          "p",
+          "Vínculo e explicação de confidencialidade → queixa e motivo do adolescente → crescimento, sinais vitais, vacinação e sono → entrevista psicossocial HEEADSSS em ambiente seguro → exame conforme indicação e consentimento → identificar risco atual → plano individual com participação da pessoa → retorno e referências concretas, com informações protegidas."
+        ],
+        [
+          "3",
+          "Fluxo D — Alteração menstrual"
+        ],
+        [
+          "p",
+          "Verificar gravidez quando biologicamente possível + avaliar instabilidade e anemia → mapear tempo desde menarca e intervalo entre ciclos → <strong>sangramento excessivo ou ≥90 dias sem menstruar?</strong> investigar → analisar hiperandrogenismo, tireoide, prolactina, coagulação e doença sistêmica conforme apresentação → decidir medidas clínicas/encaminhamento → tratar sem impor ultrassom ovariano como critério de SOP adolescente."
+        ]
+      ]
+    ],
+    [
+      "22-resumo-comparativo-de-sinais-versus-diagn-sticos",
+      0,
+      [
+        [
+          "2",
+          "22. Resumo comparativo de sinais versus diagnósticos"
+        ],
+        [
+          "t",
+          [
+            "Apresentação",
+            "Primeira hipótese útil",
+            "O que não esquecer"
+          ],
+          [
+            [
+              "Broto mamário aos 7 anos com crescimento acelerado",
+              "PPC possível",
+              "LH sensível, idade óssea, progressão, imagem conforme risco"
+            ],
+            [
+              "Pelos pubianos aos 7 anos, sem telarca, crescimento estável",
+              "Adrenarca precoce isolada",
+              "Excluir virilização, HAC e crescimento muito rápido"
+            ],
+            [
+              "Testículos pequenos aos 14 anos com história familiar semelhante",
+              "Atraso constitucional possível",
+              "Hipogonadismo central/primário e doença crônica no diferencial"
+            ],
+            [
+              "Sem menarca aos 15 anos",
+              "Amenorreia primária",
+              "Tanner, gravidez quando possível, anatomia, eixo hormonal"
+            ],
+            [
+              "Acne grave + hirsutismo + ciclos persistentemente longos após menarca",
+              "Hiperandrogenismo / SOP possível",
+              "Critérios por anos pós-menarca e diferenciais; não usar US isolado"
+            ],
+            [
+              "Aumento subareolar doloroso em menino puberal",
+              "Ginecomastia fisiológica possível",
+              "Massa excêntrica, fármacos, tumores e sinais sistêmicos"
+            ],
+            [
+              "Dor escrotal abrupta em adolescente",
+              "Torção até prova em contrário",
+              "Emergência cirúrgica, sem esperar exame se forte suspeita"
+            ],
+            [
+              "Alteração escolar + privação de sono + ansiedade",
+              "Sofrimento biopsicossocial",
+              "Segurança, violência, substâncias, saúde mental, fatores protetores"
+            ],
+            [
+              "Restrição alimentar + bradicardia + amenorreia",
+              "Transtorno alimentar / baixa disponibilidade energética",
+              "Instabilidade pode existir com peso não extremamente baixo"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "23-refer-ncias-principais-e-hierarquia-cient-fica",
+      0,
+      [
+        [
+          "2",
+          "23. Referências principais e hierarquia científica"
+        ],
+        [
+          "p",
+          "<strong>[R1] Ministério da Saúde / CONITEC.</strong> PCDT Puberdade Precoce Central. Portaria Conjunta SAES/SCTIE/MS nº 13, de 27/07/2022; página atualizada em 21/01/2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/p/puberdade-precoce-central/view"
+        ],
+        [
+          "p",
+          "<strong>[R2] Sociedade Brasileira de Pediatria (SBP).</strong> Departamento Científico de Endocrinologia. Puberdade precoce: explicações e parâmetros clínicos. Março/2023. https://www.sbp.com.br/pediatria-para-familias/doencas/puberdade-precoce/"
+        ],
+        [
+          "p",
+          "<strong>[R3] Sociedade Brasileira de Pediatria.</strong> Puberdade atrasada: avaliação e tratamento. Março/2023. https://www.sbp.com.br/pediatria-para-familias/doencas/puberdade-atrasada/"
+        ],
+        [
+          "p",
+          "<strong>[R4] Sociedade Brasileira de Pediatria.</strong> Documento Científico: Puberdade Precoce. Departamento Científico de Endocrinologia, gestão 2022–2024. https://www.sbp.com.br/fileadmin/user_upload/23953c-DC_-_Puberdade_Precoce.pdf"
+        ],
+        [
+          "p",
+          "<strong>[R5] Ministério da Saúde.</strong> Saúde do Adolescente e Jovens — orientações de atendimento, privacidade e consulta individual. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-do-adolescente"
+        ],
+        [
+          "p",
+          "<strong>[R6] Ministério da Saúde.</strong> Caderneta de Saúde do Adolescente, serviço oficial modificado em 29/07/2026. https://www.gov.br/pt-br/servicos/ofertar-a-caderneta-de-saude-da-adolescente-caderneta-de-saude-do-adolescente"
+        ],
+        [
+          "p",
+          "<strong>[R7] Ministério da Saúde.</strong> Proteger e cuidar da saúde de adolescentes na Atenção Básica, 2ª edição. https://bvsms.saude.gov.br/bvs/publicacoes/proteger_cuidar_adolescentes_atencao_basica_2ed.pdf"
+        ],
+        [
+          "p",
+          "<strong>[R8] Brasil.</strong> Lei nº 8.069/1990 — Estatuto da Criança e do Adolescente, texto compilado, inclusive alterações subsequentes. https://www.planalto.gov.br/ccivil_03/leis/l8069compilado.htm"
+        ],
+        [
+          "p",
+          "<strong>[R9] Sociedade Brasileira de Pediatria.</strong> A importância da avaliação clínica da puberdade atrasada, anúncio do Documento Científico, janeiro/2022. https://www.sbp.com.br/sbp-publica-documento-sobre-importancia-da-avaliacao-clinica-da-puberdade-atrasada/"
+        ],
+        [
+          "p",
+          "<strong>[R10] ACOG.</strong> Menstruation in Girls and Adolescents: Using the Menstrual Cycle as a Vital Sign. Committee Opinion 651, 2015 — referência internacional identificada para saúde menstrual. https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2015/12/menstruation-in-girls-and-adolescents-using-the-menstrual-cycle-as-a-vital-sign"
+        ],
+        [
+          "p",
+          "<strong>[R11] International Evidence-based Guideline for the Assessment and Management of PCOS (2023).</strong> Recomendações específicas para critérios de irregularidade menstrual e diagnóstico em adolescentes, não substituindo protocolos brasileiros aplicáveis. https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/"
+        ],
+        [
+          "p",
+          "<strong>[R12] Ministério da Saúde / Conitec.</strong> Incorporação de leuprorrelina 45 mg e triptorrelina 22,5 mg no SUS (2022). https://www.gov.br/conitec/pt-br/assuntos/noticias/2022/agosto/protocolos-para-puberdade-precoce-central-e-tdah-sao-atualizados-no-sus"
+        ],
+        [
+          "p",
+          "<strong>[R13] Ministério da Saúde.</strong> Página principal do PNI e documentos técnicos vigentes de imunização, consultar calendário aplicável à data. https://www.gov.br/saude/pt-br/vacinacao"
+        ],
+        [
+          "p",
+          "<strong>[R14] Ministério da Saúde.</strong> Diretrizes de cuidado integral à saúde do adolescente, seção de atenção básica da página oficial. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-do-adolescente"
+        ],
+        [
+          "3",
+          "Controle de fontes"
+        ],
+        [
+          "p",
+          "Priorizar <strong>MS/PCDT e SBP</strong> para definições, investigação e tratamento de PPC, crescimento e atendimento no Brasil. Usar ACOG e diretriz internacional de SOP com identificação explícita para cortes menstruais e diferencial. Não atribuir esquemas de tratamento endocrinológico não descritos no PCDT à prática universal do SUS."
+        ]
+      ]
+    ],
+    [
+      "24-pend-ncias-e-controle-editorial",
+      0,
+      [
+        [
+          "2",
+          "24. Pendências e controle editorial"
+        ],
+        [
+          "p",
+          "<li>[x] Fundamentos, fisiopatologia, marcos, Tanner, crescimento e idade óssea.</li>\n<li>[x] PPC/PPP/variantes, investigação e tratamento de PPC segundo PCDT.</li>\n<li>[x] Atraso puberal, hipogonadismos e encaminhamento.</li>\n<li>[x] Atendimento integral, privacidade e entrevista HEEADSSS.</li>\n<li>[x] Saúde menstrual, SOP adolescente, acne, ginecomastia, saúde sexual, nutrição e saúde mental.</li>\n<li>[x] Algoritmos e diagnósticos diferenciais.</li>\n<li>[x] Casos clínicos completos, incluindo emergência e distúrbios puberais (seção 25).</li>\n<li>[x] Questões de residência com comentário por alternativa (seção 26).</li>\n<li>[x] Planejamento de 14 imagens candidatas; seleção/licenças ainda pendentes (seção 27).</li>\n<li>[ ] Revisão científica por endocrinologista pediátrico e especialista em Medicina do Adolescente.</li>\n<li>[ ] Teste de acessibilidade e integração com a versão web/PWA do renderizador.</li>\n<li>[ ] Revisão de dados temporais, PNI e normas antes da publicação.</li>"
+        ],
+        [
+          "p",
+          "<strong>Status editorial:</strong> material principal concluído em primeira versão, com pendências de aprofundamento e aprovação. Não declarar apostila premium publicada."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "25-casos-cl-nicos-integradores-hip-teses-exames-interpreta-o-e-conduta",
+      0,
+      [
+        [
+          "2",
+          "25. Casos clínicos integradores — hipóteses, exames, interpretação e conduta"
+        ],
+        [
+          "p",
+          "Todos os cenários são fictícios, elaborados para ensino. Informações anatômicas e puberais são apresentadas em linguagem clínica, respeitando privacidade. Os casos não substituem assistência médica ou avaliação especializada quando indicada."
+        ],
+        [
+          "3",
+          "Caso 1 — Telarca antes dos oito anos e crescimento acelerado"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> Menina de 7 anos e 2 meses apresenta broto mamário bilateral surgido seis meses antes; a família relata crescimento de 9 cm em um ano e necessidade de trocar numeração de calçados. Tanner M3P2, sem sangramento. Idade óssea interpretada por radiologia é 9 anos."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> Puberdade precoce progressiva, com suspeita de ativação central do eixo GnRH; causas periféricas ainda não estão excluídas."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio clínico e diferenciais:</strong> Os critérios não dependem apenas de telarca <8 anos. Progressão Tanner, estirão e idade óssea avançada aumentam a probabilidade de puberdade verdadeira. A ausência de pubarca não excluiria PPC; pubarca presente não a confirma. Procurar cefaleia, sintomas neurológicos, exposições hormonais e antecedentes familiares."
+        ],
+        [
+          "p",
+          "<strong>Exames e interpretação:</strong> Curva seriada de crescimento, LH basal por ensaio sensível, FSH e estradiol, eventual teste de estímulo se basal inconclusivo, US pélvica como apoio e RM de SNC segundo idade/risco e avaliação do PCDT. Avaliar função tireoidiana e outros hormônios quando clínica indicar."
+        ],
+        [
+          "p",
+          "<strong>Conduta e seguimento:</strong> Encaminhar endocrinologia pediátrica para confirmar PPC e discutir critérios de agonista GnRH, prognóstico estatural, acompanhamento de maturação e efeitos psicossociais. Não iniciar bloqueio apenas pelo valor isolado de estradiol."
+        ],
+        [
+          "p",
+          "<strong>Por que este caso importa:</strong> Combina limiar etário com velocidade de crescimento e maturação óssea; ensina que o tratamento depende de progressão e elegibilidade, não só da aparência."
+        ],
+        [
+          "3",
+          "Caso 2 — Pubarca isolada aos sete anos"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> Menina de 7 anos apresenta odor axilar e pelos pubianos finos há quatro meses. Sem broto mamário palpável, sem estirão e com crescimento mantido na mesma curva. Tanner M1P2 e bom estado geral."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> Adrenarca/pubarca precoce isolada, mas hiperplasia adrenal congênita não clássica e exposição androgênica são diferenciais quando evolução não é típica."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio clínico e diferenciais:</strong> Pelos são controlados principalmente por andrógenos adrenais, que podem aumentar sem ativação gonadal central. A ausência de telarca e de aceleração da velocidade sugere variante isolada, não PPC progressiva; virilização, clitoromegalia, progressão acelerada e idade óssea muito avançada mudariam o risco."
+        ],
+        [
+          "p",
+          "<strong>Exames e interpretação:</strong> Revisar medidas anteriores e sinais clínicos. Em apresentação atípica ou de progressão, considerar DHEAS, testosterona, 17-OH-progesterona, idade óssea e avaliação endócrina conforme indicação; não solicitar painel extenso universal em todos os quadros estáveis."
+        ],
+        [
+          "p",
+          "<strong>Conduta e seguimento:</strong> Explicar mecanismo, registrar Tanner e velocidade, acompanhar progressão e orientar retorno se houver telarca, aceleração de crescimento, virilização ou sangramento. Não usar agonista GnRH de rotina."
+        ],
+        [
+          "p",
+          "<strong>Por que este caso importa:</strong> Evita tratar adrenarca como gonadarca e mostra indicação seletiva de investigação."
+        ],
+        [
+          "3",
+          "Caso 3 — Puberdade precoce em menino de oito anos"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> Menino de 8 anos e 4 meses apresenta testículos de 6 mL bilateralmente, aceleração da estatura e aumento peniano há poucos meses. Sem uso conhecido de hormônios. A mãe relata episódios de cefaleia, sem avaliação neurológica prévia."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> Puberdade precoce verdadeira com suspeita de PPC; lesão do SNC precisa ser avaliada."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio clínico e diferenciais:</strong> Testículos ≥4 mL indicam ativação gonadal; em menino antes dos nove anos, PPC demanda investigação de etiologia orgânica, sobretudo com cefaleia. Testosterona isolada elevada não basta para distinguir causa central de periferia."
+        ],
+        [
+          "p",
+          "<strong>Exames e interpretação:</strong> Exame neurológico, crescimento e Tanner, LH/FSH sensíveis, testosterona, idade óssea e RM de encéfalo/hipotálamo-hipófise segundo PCDT. Se padrão hormonal for GnRH-independente, avaliar origem adrenal/testicular e exposição exógena."
+        ],
+        [
+          "p",
+          "<strong>Conduta e seguimento:</strong> Encaminhamento prioritário a endocrinologia pediátrica e avaliação neurológica/imagem indicada. Terapia de supressão apenas após confirmação e critério de risco/prognóstico."
+        ],
+        [
+          "p",
+          "<strong>Por que este caso importa:</strong> Ensina que PPC em menino e sinais neurológicos são critérios de investigação mais intensa."
+        ],
+        [
+          "3",
+          "Caso 4 — Atraso puberal masculino com história familiar"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> Adolescente de 14 anos e 5 meses mede 151 cm, apresenta G1P1, volume testicular 2–3 mL e relata não ter mudado a voz. Pai refere que 'cresceu muito aos 17'. O adolescente tem velocidade de crescimento baixa-moderada mas contínua e sem sintomas sistêmicos."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> Atraso constitucional do crescimento e puberdade é possibilidade; diferenciar hipogonadismo central e doença crônica."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio clínico e diferenciais:</strong> Sem aumento testicular aos 14 anos atende critério de atraso. História familiar e idade óssea atrasada podem favorecer constitucional, mas nunca comprovar etiologia. A hiposmia, doenças crônicas, restrição energética, corticoide crônico ou antecedente de criptorquidia poderiam reorientar o diagnóstico."
+        ],
+        [
+          "p",
+          "<strong>Exames e interpretação:</strong> Curvas seriadas, altura-alvo, Tanner/testículos, idade óssea, LH/FSH e testosterona, TSH/T4 livre, hemograma e exames para doença crônica/nutrição conforme história. RM se houver sinais centrais ou hipótese orgânica."
+        ],
+        [
+          "p",
+          "<strong>Conduta e seguimento:</strong> Encaminhar para avaliação endócrina, explicar o diagnóstico diferencial e oferecer apoio psicossocial diante de bullying; acompanhar progressão e considerar indução hormonal somente após confirmação e discussão especializada."
+        ],
+        [
+          "p",
+          "<strong>Por que este caso importa:</strong> Atraso constitucional é diagnóstico clínico longitudinal, não desculpa para ignorar um menino G1 após 14 anos."
+        ],
+        [
+          "3",
+          "Caso 5 — Baixa estatura e ausência de telarca aos 14 anos"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> Menina de 14 anos, altura 139 cm, sem telarca, com histórico de crescimento lento. Exame mostra pescoço alado discreto e Tanner M1P1. Não há menarca."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> Insuficiência gonadal primária, incluindo síndrome de Turner, no diferencial; causas centrais e crônicas também devem ser avaliadas."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio clínico e diferenciais:</strong> A ausência de broto mamário aos 13 já justificava investigação. A combinação com baixa estatura aumenta suspeita de condição cromossômica, embora o fenótipo de Turner possa ser sutil e algumas pacientes tenham desenvolvimento espontâneo parcial."
+        ],
+        [
+          "p",
+          "<strong>Exames e interpretação:</strong> Estatura e curvas, idade óssea, LH/FSH, estradiol, TSH/T4 livre, avaliação de doença crônica e cariótipo quando suspeita clínica; se Turner, ecocardiografia/avaliação cardiovascular, renal e endocrinologia especializada."
+        ],
+        [
+          "p",
+          "<strong>Conduta e seguimento:</strong> Encaminhar endocrinologia pediátrica; discutir tratamento da causa, saúde óssea, possível indução estrogênica gradual e orientação reprodutiva apropriada, sem prescrever contraceptivo como substituto genérico de indução puberal."
+        ],
+        [
+          "p",
+          "<strong>Por que este caso importa:</strong> Atraso puberal e baixa estatura podem revelar diagnóstico sindrômico e riscos extraendócrinos importantes."
+        ],
+        [
+          "3",
+          "Caso 6 — Ausência de menarca com desenvolvimento mamário preservado"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> Adolescente de 16 anos apresenta desenvolvimento mamário M4, sem menarca. Relata cólica pélvica cíclica e aumento de volume abdominal baixo. Nega doenças crônicas."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> Amenorreia primária com possível obstrução anatômica de via de saída, como hímen imperfurado; outras anomalias müllerianas e gestação conforme contexto precisam ser consideradas."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio clínico e diferenciais:</strong> Telarca presente e sintomas cíclicos sugerem produção de estrogênio e endométrio funcional com possível retenção de fluxo. É necessário diferenciar ausência de útero, obstrução vaginal, distúrbios hormonais e gestação se possível. Exame íntimo deve ser indicado e consentido, sem constrangimento."
+        ],
+        [
+          "p",
+          "<strong>Exames e interpretação:</strong> História puberal e sexual privada, exame abdominal, ultrassonografia pélvica, exames hormonais/gestação conforme indicações; exame genital externo por profissional capacitado quando clinicamente necessário."
+        ],
+        [
+          "p",
+          "<strong>Conduta e seguimento:</strong> Avaliação ginecológica de adolescente e tratamento da causa confirmada, com atenção à dor e preservação anatômica/reprodutiva. Não atribuir automaticamente a atraso constitucional com M4 e dor cíclica."
+        ],
+        [
+          "p",
+          "<strong>Por que este caso importa:</strong> Mostra que amenorreia primária não é sempre deficiência hormonal e que anatomia importa."
+        ],
+        [
+          "3",
+          "Caso 7 — Ciclos irregulares e acne na adolescência"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> Adolescente de 15 anos, menarca aos 12, passou a menstruar a cada 50–70 dias, com acne inflamatória importante e hirsutismo progressivo. US transabdominal mostra 'ovários multifoliculares'. Não há sinais de virilização rápida."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> Hiperandrogenismo com disfunção ovulatória persistente; síndrome dos ovários policísticos é hipótese, mas outras etiologias devem ser excluídas."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio clínico e diferenciais:</strong> Mais de três anos após a menarca, ciclos >35 dias são anormais segundo a diretriz internacional. SOP na adolescência depende de irregularidade ovulatória e hiperandrogenismo; imagem multifolicular não confirma nem é critério recomendado nesta fase. Considerar hiperplasia adrenal não clássica, distúrbio tireoidiano, hiperprolactinemia e outras causas."
+        ],
+        [
+          "p",
+          "<strong>Exames e interpretação:</strong> Revisar história menstrual e eventual risco de gravidez, avaliar hirsutismo/acne, IMC e pressão, TSH, prolactina, testosterona/andrógenos e 17-OH-progesterona quando indicado; avaliar fatores metabólicos sem estigmatizar peso."
+        ],
+        [
+          "p",
+          "<strong>Conduta e seguimento:</strong> Oferecer manejo de sintomas e saúde metabólica conforme elegibilidade/contraindicações, orientação e seguimento especializado quando necessário. Evitar rótulo definitivo baseado exclusivamente em ultrassom."
+        ],
+        [
+          "p",
+          "<strong>Por que este caso importa:</strong> Alta frequência em provas: transpor critérios ultrassonográficos de SOP adulta para adolescente produz sobrediagnóstico."
+        ],
+        [
+          "3",
+          "Caso 8 — Sangramento menstrual intenso e instabilidade"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> Adolescente de 13 anos, menarca há sete meses, relata sangramento há nove dias, troca absorvente a cada hora e apresentou lipotimia. FC 126 bpm, palidez importante e pressão limítrofe."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> Sangramento uterino anormal agudo com potencial comprometimento hemodinâmico; anovulação puberal é possível, mas coagulopatia e gravidez quando biologicamente possível devem ser investigadas."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio clínico e diferenciais:</strong> O fato de ser primeiro ano pós-menarca não torna hemorragia volumosa normal. A prioridade é ABC, circulação, avaliação de anemia grave e acesso ao tratamento. História de epistaxes/equimoses ou sangramento desde menarca pode sugerir coagulopatia, incluindo doença de von Willebrand."
+        ],
+        [
+          "p",
+          "<strong>Exames e interpretação:</strong> Hemograma, ferritina conforme quadro, grupo/prova de compatibilidade se transfusão possível, teste de gestação quando aplicável, avaliação de coagulação e demais exames conforme gravidade. Ultrassom conforme indicação, não como pré-requisito para reanimar."
+        ],
+        [
+          "p",
+          "<strong>Conduta e seguimento:</strong> Avaliação emergencial, estabilização, fluidos/hemocomponentes quando indicados, hemostasia medicamentosa conforme protocolos e especialistas. Planejar tratamento de ferro e seguimento após fase aguda."
+        ],
+        [
+          "p",
+          "<strong>Por que este caso importa:</strong> Sangramento importante requer abordagem de urgência, não tranquilização por 'ciclo imaturo'."
+        ],
+        [
+          "3",
+          "Caso 9 — Restrição alimentar e bradicardia sem baixo IMC extremo"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> Atleta adolescente de 16 anos perdeu 12 kg em quatro meses por dieta rígida e aumento de exercícios. Apresenta cansaço, amenorreia de quatro meses, FC de 43 bpm e hipotensão ortostática. IMC atual está próximo da faixa habitual para idade."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> Transtorno alimentar ou baixa disponibilidade energética com instabilidade cardiovascular; amenorreia hipotalâmica funcional possível."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio clínico e diferenciais:</strong> IMC relativamente preservado não afasta desnutrição funcional ou risco médico. Perda rápida, bradicardia, hipotensão e distúrbios eletrolíticos potenciais podem ser graves, com risco de arritmia e síndrome de realimentação. Evitar abordagem de culpa sobre corpo ou esporte."
+        ],
+        [
+          "p",
+          "<strong>Exames e interpretação:</strong> Sinais vitais seriados e ortostáticos, ECG, eletrólitos incluindo fósforo e magnésio, glicemia, avaliação de hidratação, crescimento e saúde mental, com protocolo de risco de realimentação."
+        ],
+        [
+          "p",
+          "<strong>Conduta e seguimento:</strong> Avaliação hospitalar prioritária pela instabilidade, equipe interdisciplinar de nutrição/saúde mental/medicina; reconstruir oferta alimentar com monitorização adequada; suspensão temporária de exercício intenso e acompanhamento da recuperação menstrual."
+        ],
+        [
+          "p",
+          "<strong>Por que este caso importa:</strong> Não usar peso isolado para decidir gravidade de transtorno alimentar."
+        ],
+        [
+          "3",
+          "Caso 10 — Dor escrotal súbita durante esporte"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> Adolescente de 15 anos apresenta dor testicular unilateral abrupta há duas horas, vômitos e testículo elevado no exame, sensível e com eixo alterado. Não apresenta febre."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> Torção testicular até prova em contrário, diagnóstico de urgência cirúrgica."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio clínico e diferenciais:</strong> História e exame são altamente sugestivos. Epididimite, torção de apêndice testicular e trauma são diferenciais, mas nenhum deve atrasar avaliação urológica. O salvamento depende do tempo e perfusão; US Doppler pode ajudar em casos incertos, porém não pode atrasar exploração quando a suspeita clínica é alta."
+        ],
+        [
+          "p",
+          "<strong>Exames e interpretação:</strong> Avaliação clínica e cirúrgica imediata; ultrassonografia Doppler somente se não retardar conduta urgente, conforme equipe."
+        ],
+        [
+          "p",
+          "<strong>Conduta e seguimento:</strong> Jejum e analgesia apropriados, contato imediato com urologia/cirurgia para destorção/exploração e fixação segundo protocolo. Não esperar 'ver se melhora' ou usar anti-inflamatório como teste diagnóstico."
+        ],
+        [
+          "p",
+          "<strong>Por que este caso importa:</strong> Emergência prática de prova com risco de perda testicular, transversal à saúde do adolescente."
+        ],
+        [
+          "3",
+          "Caso 11 — Consulta desacompanhada e relato de violência digital"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> Adolescente de 14 anos procura UBS sem responsável, relata ansiedade e faltas escolares após ameaças de divulgação de imagem íntima. Pede sigilo e afirma ter pensado em se machucar, mas não detalha plano inicialmente."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> Sofrimento mental em contexto de coerção/violência digital, com necessidade de avaliação de risco suicida e proteção."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio clínico e diferenciais:</strong> O atendimento não deve ser negado pela ausência de responsável. Explicar privacidade e limites de sigilo, ouvir sem exigir visualização/cópia de material íntimo, investigar intenção suicida, meios, risco atual e ambiente protetor. A classificação de violência e obrigações de comunicação dependem dos fatos e legislação, sem investigação policial improvisada no consultório."
+        ],
+        [
+          "p",
+          "<strong>Exames e interpretação:</strong> Entrevista psicossocial, exame físico conforme queixas, avaliação estruturada de risco e necessidade de encaminhamento emergencial. Registrar frases espontâneas e achados sem juízos de autoria."
+        ],
+        [
+          "p",
+          "<strong>Conduta e seguimento:</strong> Garantir segurança imediata se risco significativo, articular profissional de saúde mental/rede de proteção e adulto confiável de modo proporcional, evitando exposição indevida; documentar medidas e planejar seguimento real."
+        ],
+        [
+          "p",
+          "<strong>Por que este caso importa:</strong> Mostra que confidencialidade não é abandono, e proteção não é autorização para divulgar intimidade indiscriminadamente."
+        ],
+        [
+          "3",
+          "Caso 12 — Ginecomastia puberal e uso de suplementos"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> Menino de 13 anos apresenta aumento subareolar bilateral discreto e dor à palpação, Tanner G3P3. Iniciou treinamento em academia e usa suplemento de origem incerta recomendado por colega."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> Ginecomastia puberal fisiológica provável; avaliar exposição a esteroides exógenos e outras etiologias diante do suplemento."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio clínico e diferenciais:</strong> Desenvolvimento glandular em fase puberal pode ser transitório. A distinção entre tecido glandular e adiposo, crescimento rápido, massa unilateral dura excêntrica, secreção e alterações testiculares orienta necessidade de investigação. Produtos não regulamentados podem conter substâncias hormonais."
+        ],
+        [
+          "p",
+          "<strong>Exames e interpretação:</strong> Exame mamário e testicular com privacidade/consentimento, revisão de todos os produtos e fármacos, crescimento e Tanner. Testes hormonais e imagem apenas se apresentação atípica ou persistente relevante."
+        ],
+        [
+          "p",
+          "<strong>Conduta e seguimento:</strong> Orientar suspensão de produto suspeito, explicar curso usual e acompanhar se quadro típico; encaminhar se sinais de alarme, repercussão funcional importante ou persistência que exija outra estratégia."
+        ],
+        [
+          "p",
+          "<strong>Por que este caso importa:</strong> Nem toda ginecomastia exige cirurgia ou painel hormonal amplo; exposições exógenas precisam ser consideradas."
+        ]
+      ]
+    ],
+    [
+      "26-quest-es-autorais-18-quest-es-comentadas-alternativa-por-alternativa",
+      0,
+      [
+        [
+          "2",
+          "26. Questões autorais — 18 questões comentadas alternativa por alternativa"
+        ],
+        [
+          "p",
+          "As questões são inéditas e foram criadas para consolidar o capítulo. Comentários explicitam a interpretação clínica e os erros de cada alternativa. Não são transcrições de prova."
+        ],
+        [
+          "3",
+          "Questão 1 — Primeiro sinal de puberdade nas meninas"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Menina de 10 anos inicia desenvolvimento puberal. Qual é geralmente o primeiro sinal de gonadarca?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Pubarca isolada."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Broto mamário (telarca)."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Menarca."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Mudança da voz."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong><br><li><strong>Alternativa A:</strong> Pelos podem surgir pela adrenarca sem ativação gonadal.</li><br><li><strong>Alternativa B:</strong> Telarca é a manifestação usual do início puberal nas meninas.</li><br><li><strong>Alternativa C:</strong> Menarca costuma ocorrer mais tarde, cerca de dois anos após telarca.</li><br><li><strong>Alternativa D:</strong> Não é o marco feminino habitual do início puberal.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> Pelos, odor e acne são majoritariamente sinais de adrenarca; mama indica estrogênio gonadal."
+        ],
+        [
+          "3",
+          "Questão 2 — Primeiro sinal de puberdade nos meninos"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Menino de 11 anos está iniciando puberdade. Qual dado do exame é mais útil para confirmar gonadarca?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Pelos axilares isolados."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Crescimento testicular bilateral para cerca de ≥4 mL."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Acne com odor axilar."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Presença de barba completa."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong><br><li><strong>Alternativa A:</strong> Pode refletir adrenarca.</li><br><li><strong>Alternativa B:</strong> Aumento testicular é o sinal usual de início de gonadarca masculina.</li><br><li><strong>Alternativa C:</strong> Não define ativação testicular.</li><br><li><strong>Alternativa D:</strong> É evento tardio e muito variável.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> Testículos ≥4 mL, não pubarca, definem primeiro marco puberal masculino."
+        ],
+        [
+          "3",
+          "Questão 3 — Definição de puberdade precoce"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Segundo SBP/PCDT, qual situação preenche critério etário de suspeita de puberdade precoce?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Telarca progressiva aos 7 anos."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Telarca aos 11 anos."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Aumento testicular aos 12 anos."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Menarca aos 13 anos após telarca aos 11."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: A.</strong><br><li><strong>Alternativa A:</strong> Caracteres sexuais antes de oito anos em meninas exigem avaliação.</li><br><li><strong>Alternativa B:</strong> Dentro da faixa de início usual.</li><br><li><strong>Alternativa C:</strong> Dentro da faixa de início usual.</li><br><li><strong>Alternativa D:</strong> Sequência cronológica compatível com fisiologia em muitos casos.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> Suspeita não significa indicação automática de agonista GnRH."
+        ],
+        [
+          "3",
+          "Questão 4 — Pubarca isolada versus puberdade central"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Menina de 7 anos tem odor axilar e P2, porém M1, crescimento normal e idade óssea sem avanço relevante. Qual hipótese inicial é mais coerente?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> PPC progressiva comprovada."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Adrenarca precoce isolada; observar e investigar atipias."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Falência ovariana primária."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Menarca iminente obrigatoriamente."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong><br><li><strong>Alternativa A:</strong> Faltam sinais de gonadarca e progressão.</li><br><li><strong>Alternativa B:</strong> Pelos/odor podem surgir por andrógenos adrenais, exigindo vigilância apropriada.</li><br><li><strong>Alternativa C:</strong> Geralmente se manifesta por ausência/atraso de desenvolvimento.</li><br><li><strong>Alternativa D:</strong> P1/P2 sem telarca não prediz menarca próxima.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> A idade de aparecimento de pelos não é igual ao início gonadal da puberdade."
+        ],
+        [
+          "3",
+          "Questão 5 — PPC ou PPP"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Criança com virilização intensa e rápida, esteroides sexuais elevados e gonadotrofinas suprimidas. Qual mecanismo deve ser considerado?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Ativação central obrigatória do GnRH."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Fonte periférica de esteroides sexuais ou exposição exógena."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Telarca fisiológica."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Insuficiência gonadal primária."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong><br><li><strong>Alternativa A:</strong> O padrão de gonadotrofinas não sustenta necessariamente PPC.</li><br><li><strong>Alternativa B:</strong> PPP pode ocorrer por adrenal, gônadas ou hormônios externos.</li><br><li><strong>Alternativa C:</strong> Virilização não corresponde a telarca fisiológica.</li><br><li><strong>Alternativa D:</strong> Falência gonadal tende a esteroides baixos e gonadotrofinas altas.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> LH suprimido com esteroide alto sugere produção independente do eixo."
+        ],
+        [
+          "3",
+          "Questão 6 — Idade óssea na puberdade precoce"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Menina com puberdade precoce progressiva e estirão tem idade óssea dois anos adiantada. Qual interpretação é adequada?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Idade óssea avançada pode sinalizar maturação epifisária precoce e menor tempo restante de crescimento."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Idade óssea avançada prova malignidade."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Idade óssea dispensa história clínica."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Idade óssea torna impossível tratar PPC."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: A.</strong><br><li><strong>Alternativa A:</strong> Esteroides aceleram maturação óssea e podem reduzir potencial de altura adulta.</li><br><li><strong>Alternativa B:</strong> É inespecífica para etiologia tumoral.</li><br><li><strong>Alternativa C:</strong> Exige interpretação com crescimento, Tanner e hormônios.</li><br><li><strong>Alternativa D:</strong> Ainda é preciso decidir elegibilidade com especialista.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> O risco de perda estatural depende de maturação óssea, idade, progressão e resposta ao tratamento."
+        ],
+        [
+          "3",
+          "Questão 7 — Tratamento de PPC"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Qual tratamento é padrão para PPC confirmada e com indicação terapêutica segundo o PCDT brasileiro?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Antibioticoterapia prolongada."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Agonista GnRH de depósito sob protocolo especializado."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Hormônio do crescimento obrigatório para todos."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Cirurgia ovariana em toda menina."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong><br><li><strong>Alternativa A:</strong> Não atua na origem neuroendócrina.</li><br><li><strong>Alternativa B:</strong> Leuprorrelina/triptorrelina são opções conforme elegibilidade e apresentações.</li><br><li><strong>Alternativa C:</strong> GH não é rotina em toda PPC.</li><br><li><strong>Alternativa D:</strong> Cirurgia só quando existe causa cirúrgica apropriada.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> Agonista em exposição contínua suprime LH/FSH após fase inicial."
+        ],
+        [
+          "3",
+          "Questão 8 — Atraso puberal masculino"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Menino de 14 anos e 6 meses apresenta testículos de 2 mL bilateralmente e ausência de progressão puberal. Qual conduta é mais adequada?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Esperar até os 18 sem avaliação."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Investigar atraso puberal, incluindo causas constitucionais, centrais e gonadais."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Aplicar dose fixa de testosterona sem diagnóstico."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Considerar Tanner P2 como prova suficiente de gonadarca."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong><br><li><strong>Alternativa A:</strong> Já superou limiar habitual de investigação.</li><br><li><strong>Alternativa B:</strong> Falta de crescimento testicular aos 14 caracteriza atraso.</li><br><li><strong>Alternativa C:</strong> Reposição precisa de diagnóstico e plano especializado.</li><br><li><strong>Alternativa D:</strong> Pelos podem surgir por andrógenos adrenais sem gonadarca.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> Atraso constitucional pode ocorrer, mas é diagnóstico de avaliação e seguimento."
+        ],
+        [
+          "3",
+          "Questão 9 — Hipergonadotrófico versus hipogonadotrófico"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Adolescente com ausência de desenvolvimento gonadal, estradiol muito baixo e FSH/LH altos sugere:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Falência gonadal primária."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Puberdade precoce central."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Atraso constitucional obrigatório."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Adrenarca fisiológica."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: A.</strong><br><li><strong>Alternativa A:</strong> Falta de resposta gonadal causa elevação de gonadotrofinas por ausência de feedback.</li><br><li><strong>Alternativa B:</strong> PPC envolve ativação e desenvolvimento precoce, não ausência puberal.</li><br><li><strong>Alternativa C:</strong> Atraso constitucional usualmente não apresenta gonadotrofinas claramente elevadas por falência gonadal.</li><br><li><strong>Alternativa D:</strong> Não explica hormônios gonadais baixos com FSH/LH elevados.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> FSH/LH altos + esteroides baixos = pensar em hipogonadismo primário."
+        ],
+        [
+          "3",
+          "Questão 10 — Amenorreia primária"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Adolescente com telarca há mais de três anos e sem menarca deve:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Receber alta sem perguntas."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Ser investigada para amenorreia primária, considerando gestação quando possível, causas hormonais e anatômicas."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Receber apenas analgesia por seis meses."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Ser diagnosticada com SOP obrigatoriamente."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong><br><li><strong>Alternativa A:</strong> Superou marco de investigação.</li><br><li><strong>Alternativa B:</strong> Amenorreia primária pode envolver causas do eixo ou obstrução do fluxo, além de outros diagnósticos.</li><br><li><strong>Alternativa C:</strong> Não aborda etiologia.</li><br><li><strong>Alternativa D:</strong> Ausência de menarca não diagnostica SOP.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> Outro limiar importante é ausência de menarca aos 15 anos."
+        ],
+        [
+          "3",
+          "Questão 11 — SOP na adolescência"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Adolescente tem irregularidade menstrual persistente, acne e US descrevendo ovários multifoliculares. Qual é a postura correta?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> SOP confirmada apenas pela imagem."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Diagnóstico exige considerar anos pós-menarca e hiperandrogenismo, excluindo diferenciais; US não é critério recomendado nessa fase."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Todo ciclo irregular no primeiro ano indica SOP."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> A ausência de US impede diagnóstico de SOP."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong><br><li><strong>Alternativa A:</strong> Morfologia multifolicular é frequente no desenvolvimento puberal.</li><br><li><strong>Alternativa B:</strong> Diretriz internacional 2023 distingue adolescência do diagnóstico adulto.</li><br><li><strong>Alternativa C:</strong> Anovulação inicial pode ser fisiológica.</li><br><li><strong>Alternativa D:</strong> US não é exigido e não é recomendado como critério nessa fase.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> Não confundir 'ovário multifolicular' fisiológico com síndrome dos ovários policísticos."
+        ],
+        [
+          "3",
+          "Questão 12 — Menstruação com intervalo de 90 dias"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Adolescente pós-menarca há dois anos fica 95 dias sem menstruar. Qual conduta é mais adequada?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Afirmar que qualquer intervalo é normal até os 20 anos."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Avaliar causas de amenorreia/oligomenorreia, incluindo gravidez quando biologicamente possível."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Iniciar quimioterapia."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Realizar cirurgia de ovários imediatamente."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong><br><li><strong>Alternativa A:</strong> Intervalos prolongados merecem investigação, mesmo na adolescência.</li><br><li><strong>Alternativa B:</strong> Há indicações para avaliação após >90 dias, incluindo doenças endócrinas e gravidez.</li><br><li><strong>Alternativa C:</strong> Não se relaciona ao cenário.</li><br><li><strong>Alternativa D:</strong> Não existe indicação cirúrgica pelo intervalo isolado.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> Tempo desde menarca modifica interpretação, mas não elimina sinais de alerta."
+        ],
+        [
+          "3",
+          "Questão 13 — Ginecomastia puberal"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Menino em Tanner G3 tem aumento glandular subareolar doloroso bilateral discreto, sem outros achados. Qual é a orientação inicial?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Mastectomia obrigatória."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Explicar possibilidade de ginecomastia fisiológica, revisar fármacos e acompanhar, investigando sinais atípicos."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Diagnóstico imediato de câncer de mama."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Suspender puberdade com agonista GnRH."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong><br><li><strong>Alternativa A:</strong> Não é tratamento inicial rotineiro.</li><br><li><strong>Alternativa B:</strong> É apresentação clássica e abordagem prudente.</li><br><li><strong>Alternativa C:</strong> Massa subareolar dolorosa em fase puberal usualmente não é câncer.</li><br><li><strong>Alternativa D:</strong> Bloqueio não é tratamento padrão de ginecomastia puberal.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> Investigar massa dura excêntrica, secreção sanguinolenta, crescimento excessivo e exposição hormonal."
+        ],
+        [
+          "3",
+          "Questão 14 — Dor testicular súbita"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Adolescente chega com dor escrotal súbita intensa, vômitos, testículo alto e exame sugestivo de torção. A melhor conduta é:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Aguardar 24 h e reexaminar."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Acionar avaliação urológica/cirúrgica emergente; Doppler não pode retardar exploração se suspeita é alta."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Tratar apenas com anti-inflamatório."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Atribuir necessariamente à epididimite sexualmente transmissível."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong><br><li><strong>Alternativa A:</strong> A demora reduz chance de salvamento.</li><br><li><strong>Alternativa B:</strong> Torção é urgência tempo-dependente.</li><br><li><strong>Alternativa C:</strong> Analgesia não substitui tratamento.</li><br><li><strong>Alternativa D:</strong> Epididimite é diferencial, não conclusão obrigatória.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> Na torção testicular, clínica sugestiva deve acelerar intervenção."
+        ],
+        [
+          "3",
+          "Questão 15 — Consulta desacompanhada"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Adolescente procura UBS sem acompanhante para conversar sobre sexualidade e saúde emocional. Qual conduta corresponde às orientações do Ministério da Saúde?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Negar qualquer atendimento até chegada de responsável."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Acolher, avaliar compreensão/segurança, oferecer privacidade e explicar limites de confidencialidade."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Divulgar toda fala imediatamente à escola."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Fazer exame íntimo em toda consulta."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong><br><li><strong>Alternativa A:</strong> Recusa automática pode impedir direito à saúde.</li><br><li><strong>Alternativa B:</strong> A orientação brasileira reconhece atendimento individual e confidencialidade com limites legais.</li><br><li><strong>Alternativa C:</strong> Compartilhar informações sem justificativa prejudica privacidade.</li><br><li><strong>Alternativa D:</strong> Exame íntimo precisa de indicação e consentimento apropriado.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> Autonomia, sigilo e proteção devem ser articulados, não tratados como opostos absolutos."
+        ],
+        [
+          "3",
+          "Questão 16 — Transtorno alimentar e instabilidade"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Adolescente com perda rápida de peso, FC 43 bpm, hipotensão ortostática e amenorreia apresenta IMC não extremamente baixo. Qual afirmação é adequada?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> IMC exclui risco médico."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> A estabilidade deve ser avaliada urgentemente; perda rápida e bradicardia podem ser graves independentemente do IMC."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Deve continuar exercício intenso para melhorar autoestima."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Não são necessários eletrólitos nem ECG."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong><br><li><strong>Alternativa A:</strong> IMC isolado não exclui desnutrição ou instabilidade.</li><br><li><strong>Alternativa B:</strong> Há risco cardiometabólico e necessidade de avaliação emergente.</li><br><li><strong>Alternativa C:</strong> Exercício intenso pode agravar quadro.</li><br><li><strong>Alternativa D:</strong> Exames são indicados conforme avaliação da gravidade.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> Avaliar velocidade de perda, sinais vitais, eletrólitos, saúde mental e risco de realimentação."
+        ],
+        [
+          "3",
+          "Questão 17 — Puberdade precoce e RM"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Qual situação mais fortemente sustenta investigar SNC por RM no contexto de PPC?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Telarca estável aos 7 anos sem progressão ou sintomas, isoladamente."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Menino menor de nove anos com PPC e cefaleia progressiva."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Acne leve aos 13 anos."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Menarca fisiológica aos 12 anos."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong><br><li><strong>Alternativa A:</strong> Pode exigir avaliação e seguimento, mas não tem automaticamente o mesmo risco orgânico.</li><br><li><strong>Alternativa B:</strong> Sexo masculino, PPC e sinais neurológicos tornam avaliação de SNC importante.</li><br><li><strong>Alternativa C:</strong> Não corresponde a PPC.</li><br><li><strong>Alternativa D:</strong> Está dentro de faixa fisiológica frequente.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> Decisão de imagem integra idade, sexo, sintomas e diretrizes; não pedir RM a toda telarca isolada."
+        ],
+        [
+          "3",
+          "Questão 18 — Acolhimento de violência digital"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Adolescente relata ameaça de divulgação de imagem íntima e pensamento de autolesão. Qual prioridade?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Exigir envio do material íntimo ao telefone pessoal do profissional."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Avaliar segurança e risco suicida, acolher sem julgamento, registrar fatos e acionar proteção conforme risco e normas."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Prometer segredo absoluto em qualquer circunstância."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Encerrar atendimento porque não há lesão física."
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong><br><li><strong>Alternativa A:</strong> Reproduzir material íntimo causa risco e revitimização.</li><br><li><strong>Alternativa B:</strong> Proteção, avaliação mental e confidencialidade proporcional são centrais.</li><br><li><strong>Alternativa C:</strong> Risco grave e imposição legal podem exigir compartilhamento limitado de informações.</li><br><li><strong>Alternativa D:</strong> Violência digital pode causar risco grave sem lesão corporal.</li>"
+        ],
+        [
+          "p",
+          "<strong>Mini-revisão:</strong> O cuidado deve ser protetivo, sem interrogatório nem cópia desnecessária de imagens."
+        ]
+      ]
+    ],
+    [
+      "27-curadoria-de-imagens-m-dicas-e-diagramas-14-candidatas",
+      0,
+      [
+        [
+          "2",
+          "27. Curadoria de imagens médicas e diagramas — 14 candidatas"
+        ],
+        [
+          "p",
+          "A imagem só entra se trouxer ganho didático verificável. As propostas abaixo são <strong>candidatas</strong>, não provas de que a LURIA já tenha obtido licenças ou inserido os arquivos. Em tema que envolve menores, priorizar curvas, RX, RM, US e desenhos clínicos sem conteúdo íntimo identificável."
+        ],
+        [
+          "t",
+          [
+            "Nº",
+            "Candidata",
+            "Legenda/função didática",
+            "Origem e licença"
+          ],
+          [
+            [
+              "1",
+              "Curvas de estatura por idade 5–19 anos",
+              "Gráfico oficial OMS, com dois exemplos de trajetória longitudinal.",
+              "Site OMS / Ministério da Saúde / Caderneta do Adolescente; licença a conferir."
+            ],
+            [
+              "2",
+              "Velocidade de crescimento no período puberal",
+              "Curvas por idade e marco puberal, mostrando pico mais cedo em meninas e mais tarde em meninos.",
+              "Diagrama original LURIA baseado em referências de endocrinologia pediátrica."
+            ],
+            [
+              "3",
+              "Eixo hipotálamo–hipófise–gônadas",
+              "Fluxograma GnRH–LH/FSH–gônadas e feedback de esteroides, com adrenarca em ramo independente.",
+              "Ilustração autoral; evitar copiar gráficos com direitos reservados."
+            ],
+            [
+              "4",
+              "Tanner feminino educativo",
+              "Cinco esquemas clínicos de maturação mamária, sem fotos reais nem nudez de menores.",
+              "Diagrama médico esquemático de fonte acadêmica licenciada; revisão pediátrica."
+            ],
+            [
+              "5",
+              "Tanner masculino educativo",
+              "Cinco estágios representados em desenho não erotizado, orientado por volume testicular e pelos.",
+              "Diagrama original de desenvolvimento anatômico não explícito para público universitário."
+            ],
+            [
+              "6",
+              "Orquidômetro",
+              "Foto ou diagrama de instrumento para estimar volume testicular.",
+              "Fonte universitária/institucional com direito de reutilização."
+            ],
+            [
+              "7",
+              "Idade óssea radiográfica",
+              "RX mão/punho esquerdo real com epífises e metáfises identificadas; legenda das limitações.",
+              "Artigo acadêmico com imagem de licença verificada ou imagem institucional autorizada."
+            ],
+            [
+              "8",
+              "RM de hamartoma hipotalâmico",
+              "RM real de lesão central associada a PPC, com localização anatômica.",
+              "Artigo científico de acesso e permissão verificáveis; não usar como representação universal."
+            ],
+            [
+              "9",
+              "Ultrassonografia pélvica puberal",
+              "US do útero/ovário, comparação de órgãos pré-púberes e puberais, em casos didáticos.",
+              "Banco acadêmico com licença, sem inferir diagnóstico apenas de US."
+            ],
+            [
+              "10",
+              "Fluxograma PPC versus PPP",
+              "Entrada idade/sinal/velocidade → LH e idade óssea → imagens/etiologia → seguimento/tratamento.",
+              "Arte original LURIA baseada no PCDT nacional."
+            ],
+            [
+              "11",
+              "Fluxograma atraso puberal",
+              "Sem telarca/testículo ≥4mL → diferenciais constitucionais, centrais e primários.",
+              "Diagrama autoral para leitura de provas."
+            ],
+            [
+              "12",
+              "Saúde menstrual pós-menarca",
+              "Linha do tempo de irregularidades admissíveis vs indicadores de investigação.",
+              "Infográfico original baseado em ACOG e diretriz SOP 2023."
+            ],
+            [
+              "13",
+              "HEEADSSS/consulta confidencial",
+              "Mapa de domínios psicossociais e fatores protetores.",
+              "Diagrama original sem fotos de adolescentes identificáveis."
+            ],
+            [
+              "14",
+              "Ações urgentes na adolescência",
+              "Matriz de urgências (torção, sangramento, risco suicida, transtorno alimentar) e priorização.",
+              "Arte original, revisada por pediatria/urgência."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Requisitos de aprovação"
+        ],
+        [
+          "p",
+          "1. Priorizar imagens de exame com procedência confiável e licença verificável, por exemplo, radiografia de idade óssea de publicação científica de acesso aberto; <strong>não</strong> basta o site ser gratuito.<br>2. Garantir legenda clínica com principais sinais, limitações da imagem e diagnóstico diferencial; evitar usar um exame fictício como se fosse de paciente real.<br>3. Converter para WebP mantendo qualidade de linhas epifisárias, dados de crescimento e achados ultrassonográficos, respeitando limites de peso da LURIA.<br>4. Incluir alt text, fonte, responsável pela revisão, licença e contexto do capítulo.<br>5. Não inserir fotos reais de desenvolvimento genital ou mamário de menores se um esquema didático atende ao objetivo.<br>6. No PWA, assegurar carregamento progressivo e possibilidade de ampliar exames relevantes sem deformações.<br>7. Submeter as imagens à aprovação editorial antes de incorporá-las e retirar quaisquer itens com licença incerta."
+        ],
+        [
+          "p",
+          "<strong>Referências úteis para curadoria e comparação, sem licença presumida:</strong> OMS padrões de crescimento 5–19 anos; Ministério da Saúde, Caderneta de Saúde do Adolescente; Greulich–Pyle/atlas acadêmico de idade óssea; estudo de 2026 sobre comparação Greulich–Pyle/Tanner–Whitehouse em <em>BMC Medical Imaging</em>, DOI 10.1186/s12880-026-02350-y (verificar condições de reprodução da figura)."
+        ]
+      ]
+    ],
+    [
+      "28-auditoria-cient-fica-e-editorial-desta-fase",
+      0,
+      [
+        [
+          "2",
+          "28. Auditoria científica e editorial desta fase"
+        ],
+        [
+          "p",
+          "<strong>Cobertura efetuada:</strong> fisiopatologia endócrina, avaliação do desenvolvimento, Tanner, crescimento, idade óssea, formas precoces e atrasadas, condições ginecológicas comuns, saúde mental, sexualidade, vacinas, consulta do adolescente, urgências, <strong>12 casos clínicos</strong> e <strong>18 questões com explicação de todas as alternativas</strong>."
+        ],
+        [
+          "3",
+          "Verificação das armadilhas de prova"
+        ],
+        [
+          "p",
+          "<li>[x] Meninos: gonadarca definida por crescimento testicular, não aparecimento de pelos.</li>\n<li>[x] Meninas: telarca como primeiro sinal habitual.</li>\n<li>[x] Pubarca/adrenarca precoce não equivale necessariamente a PPC.</li>\n<li>[x] Critérios de precocidade e atraso separados por idades.</li>\n<li>[x] LH basal pode ser inconclusivo nas fases iniciais.</li>\n<li>[x] Agonistas GnRH são tratamento de PPC elegível, não de toda variante puberal.</li>\n<li>[x] Idade óssea é contextual, não exame confirmatório único.</li>\n<li>[x] SOP adolescente não deve usar morfologia ovariana ao US como critério.</li>\n<li>[x] Sangramento menstrual excessivo e amenorreia prolongada não podem ser banalizados.</li>\n<li>[x] Confidencialidade da consulta tem limites explícitos diante de risco ou norma legal.</li>\n<li>[x] Instabilidade por transtorno alimentar não depende de baixo IMC extremo.</li>\n<li>[x] Torção testicular é emergência tempo-dependente.</li>"
+        ],
+        [
+          "3",
+          "Pendências antes de publicação"
+        ],
+        [
+          "p",
+          "<li>[ ] Revisão independente de Endocrinologia Pediátrica e Medicina do Adolescente, com verificação do PCDT e regulamentações aplicáveis.</li>\n<li>[ ] Revisar testes hormonais e doses de agonistas conforme apresentações/critério CEAF atual, sem transcrever doses de forma genérica.</li>\n<li>[ ] Atualizar calendário de imunizações vigente na data de publicação e conferir elegibilidades.</li>\n<li>[ ] Validar limites legais e sigilo de adolescentes segundo orientações CFM/MS, com revisão institucional.</li>\n<li>[ ] Selecionar, licenciar, comprimir e inserir 10+ imagens que acrescentem valor real; diagrama de Tanner deve ser apropriado e não conter fotografias íntimas de menores.</li>\n<li>[ ] Revisar medicamentos ginecológicos/dermatológicos por contraindicações e dosagens antes de tornar prescricional.</li>\n<li>[ ] Verificar coerência entre esta aula e a de violências (163), mantendo referência cruzada sem duplicação.</li>\n<li>[ ] Converter para formato nativo da LURIA (HTML/content.json conforme padrão) e testar desktop/PWA, índice, links e desempenho.</li>\n<li>[ ] Realizar revisão de língua, precisão do risco e linguagem inclusiva.</li>\n<li>[ ] Confirmar contagem e extensão útil sem repetição artificial e arquivar registro de revisão.</li>"
+        ],
+        [
+          "p",
+          "<strong>Conclusão da etapa:</strong> apostila editorialmente aprofundada, mas <strong>ainda não validada para publicação</strong>; os casos não devem ser confundidos com recomendações individuais sem avaliação clínica."
+        ]
+      ]
+    ]
+  ]
+}

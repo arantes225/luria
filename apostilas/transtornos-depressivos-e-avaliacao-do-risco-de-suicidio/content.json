@@ -1,0 +1,1507 @@
+{
+  "v": 2,
+  "s": "transtornos-depressivos-e-avaliacao-do-risco-de-suicidio",
+  "t": "Transtornos Depressivos e Avaliação do Risco de Suicídio",
+  "p": "Transtornos Depressivos e Avaliação do Risco de Suicídio — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "a": "Saúde Mental",
+  "m": "Saúde Mental",
+  "h": [
+    "Apostila LURIA",
+    "Transtornos Depressivos e Avaliação do Risco de Suicídio",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+    [
+      "Área: Saúde Mental",
+      "Matéria: Saúde Mental",
+      "Tema: Transtornos Depressivos e Avaliação do Risco de Suicídio"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introducao-e-fundamentos",
+      "Introdução e Fundamentos"
+    ],
+    [
+      "0-auditoria-de-nao-duplicacao-benchmark-e-procedencia",
+      "0. Auditoria de não duplicação, benchmark e procedência"
+    ],
+    [
+      "1-epidemiologia-e-carga-de-doenca-um-problema-funcional-nao-so-emocional",
+      "1. Epidemiologia e carga de doença: um problema funcional, não só emocional"
+    ],
+    [
+      "2-fisiopatologia-da-neurotransmissao-a-plasticidade-e-ao-estresse",
+      "2. Fisiopatologia: da neurotransmissão à plasticidade e ao estresse"
+    ],
+    [
+      "3-conceitos-diagnosticos-sintoma-episodio-e-transtorno",
+      "3. Conceitos diagnósticos: sintoma, episódio e transtorno"
+    ],
+    [
+      "4-anamnese-perguntas-que-evitam-os-grandes-erros",
+      "4. Anamnese: perguntas que evitam os grandes erros"
+    ],
+    [
+      "5-exame-fisico-mental-e-exames-complementares-direcionados",
+      "5. Exame físico, mental e exames complementares direcionados"
+    ],
+    [
+      "6-diagnostico-diferencial-que-realmente-muda-o-tratamento",
+      "6. Diagnóstico diferencial que realmente muda o tratamento"
+    ],
+    [
+      "7-gravidade-e-formulacao-clinica-alem-de-sintomas-contados",
+      "7. Gravidade e formulação clínica: além de sintomas contados"
+    ],
+    [
+      "8-terapias-nao-farmacologicas-e-modelo-de-decisao-compartilhada",
+      "8. Terapias não farmacológicas e modelo de decisão compartilhada"
+    ],
+    [
+      "9-tratamento-farmacologico-por-que-quando-qual-e-como-monitorar",
+      "9. Tratamento farmacológico: por que, quando, qual e como monitorar"
+    ],
+    [
+      "10-avaliacao-do-risco-de-suicidio-competencia-transversal-e-prioridade-de-seguranca",
+      "10. Avaliação do risco de suicídio: competência transversal e prioridade de segurança"
+    ],
+    [
+      "11-depressao-grave-psicose-catatonia-e-terapias-especializadas",
+      "11. Depressão grave, psicose, catatonia e terapias especializadas"
+    ],
+    [
+      "12-casos-clinicos-autorais-comentados",
+      "12. Casos clínicos autorais comentados"
+    ],
+    [
+      "13-questoes-originais-de-residencia-alternativas-comentadas",
+      "13. Questões originais de residência — alternativas comentadas"
+    ],
+    [
+      "14-camada-visual-imagens-e-esquemas-previstos-sem-licenca-presumida",
+      "14. Camada visual: imagens e esquemas previstos, sem licença presumida"
+    ],
+    [
+      "15-referencias-verificaveis-data-e-aplicabilidade",
+      "15. Referências verificáveis, data e aplicabilidade"
+    ],
+    [
+      "16-quadro-final-de-memorizacao-clinica",
+      "16. Quadro final de memorização clínica"
+    ],
+    [
+      "17-autoauditoria-e-pendencias",
+      "17. Autoauditoria e pendências"
+    ]
+  ],
+  "q": [
+    [
+      "introducao-e-fundamentos",
+      0,
+      [
+        [
+          "2",
+          "Introdução e Fundamentos"
+        ],
+        [
+          "p",
+          "<h1>LURIA — Apostila 211 — Transtornos depressivos e avaliação do risco de suicídio</h1>"
+        ],
+        [
+          "p",
+          "<strong>Lote 10 · Saúde Mental · Data editorial: 15/10/2026 · Versão:</strong> 0.1 de produção autoral.  \r<br><strong>Status:</strong> RASCUNHO EDITORIAL, NÃO PUBLICADO, NÃO VALIDADO POR REVISÃO CLÍNICA INDEPENDENTE."
+        ],
+        [
+          "p",
+          "> <strong>EM 30 SEGUNDOS — PULO DO GATO LURIA</strong>\r<br>> Depressão <strong>não é apenas tristeza</strong>: é alteração persistente de humor e/ou prazer, associada a mudanças cognitivas, corporais e funcionais, cujo diagnóstico exige <strong>curso temporal, sofrimento/prejuízo, diagnóstico diferencial e exclusão de causas médicas/substâncias</strong>. <strong>Antes de prescrever antidepressivo, procure história de mania/hipomania</strong> para não tratar depressão bipolar como unipolar. Em todo paciente com depressão, <strong>pergunte diretamente sobre pensamentos de morte e possibilidade atual de se ferir</strong>, avalie necessidades de segurança e estabeleça acesso real ao cuidado. Escalas como PHQ-9 ajudam a medir sintomas; <strong>não determinam alta nem predizem sozinhas suicídio</strong>."
+        ]
+      ]
+    ],
+    [
+      "0-auditoria-de-nao-duplicacao-benchmark-e-procedencia",
+      0,
+      [
+        [
+          "2",
+          "0. Auditoria de não duplicação, benchmark e procedência"
+        ],
+        [
+          "p",
+          "<strong>Identificação curricular:</strong> a planilha/catálogo LURIA \\`assets/js/apostilas-lotes-225.js\\` reserva a aula 211 a depressão e avaliação do risco de suicídio; a 210, já produzida como rascunho separado, contém <strong>entrevista e exame do estado mental (EEM)</strong>. Aqui a ênfase é <strong>reconhecer síndrome depressiva, diferenciar episódio unipolar de bipolar, selecionar tratamento e estruturar segurança e acompanhamento</strong>; não reproduz integralmente semiótica geral da aula 210. As aulas 212 e 215 ficam reservadas à bipolaridade e às emergências/psicofarmacologia."
+        ],
+        [
+          "p",
+          "<strong>Inventário do repositório:</strong> a inspeção da árvore de \\`apostilas/\\` na \\`main\\` não identificou por nome uma apostila publicada específica de depressão, transtorno bipolar ou suicídio. Isso não prova ausência de qualquer menção interna nos demais arquivos. Nenhuma página atual foi alterada."
+        ],
+        [
+          "p",
+          "<strong>Google Drive — leitura efetiva:</strong> consultas pelos termos depressão, transtornos depressivos, suicídio, bipolar, antidepressivos e psiquiatria <strong>não encontraram apostila integral equivalente</strong>. Foi aberto e lido \\`Síndromes cognitivas.pdf\\` (~2.061 caracteres extraídos), que cita <strong>depressão como diferencial de queixas cognitivas</strong>, e \\`Vigilância epidemiológica.pdf\\` (~2.732 caracteres), que inclui <strong>tentativa de suicídio na vigilância de violência autoprovocada</strong>. São <strong>benchmark parcial de tópicos relacionados, não base suficiente para a aula</strong>, e nenhuma autoria Estratégia MED foi comprovada. É vedado declarar a etapa zero integral concluída."
+        ],
+        [
+          "p",
+          "<strong>Pesquisa externa — distinguida das fontes do Drive:</strong> Ministério da Saúde/Linha de Cuidado da Depressão no Adulto (orientação SUS com publicação de 2022); NICE <strong>NG222</strong> (depressão em adultos, publicada 2022, recomendações online consultadas em 2026); NICE <strong>NG225</strong> (autoagressão e planejamento de segurança, 2022); OMS <strong>mhGAP 3ª edição 2023</strong>; CANMAT <em>2023 Update</em> para depressão maior, página CANMAT consultada; revisão de manejo em transtorno bipolar NICE <strong>CG185</strong> e CANMAT/ISBD (2023) para evitar confundir polaridade. O conteúdo aqui é elaboração original, não transcrição/derivação editorial dessas publicações. Procedimentos e produtos de outros países exigem contextualização e checagem de disponibilidade no Brasil."
+        ],
+        [
+          "3",
+          "Roteiro de aprendizagem"
+        ],
+        [
+          "p",
+          "1. Explicar mecanismo biopsicossocial da síndrome depressiva sem reduzi-la a “falta de serotonina”.\r<br>2. Diferenciar tristeza, luto, transtorno de adaptação, episódio depressivo, distimia/transtorno depressivo persistente, depressão bipolar, delirium e condições clínicas.\r<br>3. Aplicar lógica diagnóstica de <strong>episódio depressivo maior</strong> (cinco ou mais sintomas por duas semanas no DSM-5-TR, incluindo humor deprimido e/ou anedonia, com prejuízo e exclusões) sem confundir a descrição simplificada com todo o manual diagnóstico.\r<br>4. Reconhecer especificadores: melancólicos, atípicos, ansiosos, com características psicóticas, padrão sazonal e início periparto quando aplicável, com cautela ao misturar sistemas.\r<br>5. Entender os domínios do PHQ-9 e a função dos escores sem transformar rastreamento em diagnóstico.\r<br>6. Escolher intervenção conforme gravidade, necessidades, acesso, preferência e evidência.\r<br>7. Compreender classes de antidepressivos, efeito, segurança, interações, titulação e suspensão gradual.\r<br>8. Reconhecer risco clínico imediato, realizar avaliação de segurança e articular rede sem escalas como prognóstico.\r<br>9. Planejar resposta parcial, não resposta, recaída, manutenção, encaminhamento e tratamento especializado.\r<br>10. Aplicar diagnóstico e condutas em casos de APS, internação, puerpério, geriatria e adolescência."
+        ]
+      ]
+    ],
+    [
+      "1-epidemiologia-e-carga-de-doenca-um-problema-funcional-nao-so-emocional",
+      0,
+      [
+        [
+          "2",
+          "1. Epidemiologia e carga de doença: um problema funcional, não só emocional"
+        ],
+        [
+          "p",
+          "Transtornos depressivos estão entre os principais responsáveis por incapacidade e perda de qualidade de vida, com sintomas frequentemente iniciados em idades produtivas e repercussão em escola, trabalho, cuidado dos filhos e relações. A prevalência depende de país, período, método de diagnóstico e população estudada; não confundir prevalência de <strong>sintomas depressivos</strong> em questionário com a de <strong>transtorno depressivo diagnosticado</strong>. Comorbidade com ansiedade, condições dolorosas, doenças cardiovasculares, diabetes, uso de substâncias e transtornos do sono complica avaliação e tratamento."
+        ],
+        [
+          "p",
+          "<strong>Determinantes sociais não são meros cofatores decorativos:</strong> insegurança alimentar, desemprego, sobrecarga de trabalho/cuidado, violência, racismo, exclusão, deslocamento e falta de acesso a serviços influenciam adoecimento, adesão e recaída. Uma pessoa com depressão pode ter dificuldade em comparecer semanalmente a psicoterapia por transporte/custo; o plano precisa refletir acesso real."
+        ],
+        [
+          "p",
+          "Pessoas de qualquer gênero e idade podem adoecer; sintomas podem ser comunicados mais por queixas somáticas (dor, fadiga, insônia) ou irritabilidade em certos contextos. <strong>Não utilizar um único estereótipo de “paciente chorando”</strong> como critério clínico."
+        ]
+      ]
+    ],
+    [
+      "2-fisiopatologia-da-neurotransmissao-a-plasticidade-e-ao-estresse",
+      0,
+      [
+        [
+          "2",
+          "2. Fisiopatologia: da neurotransmissão à plasticidade e ao estresse"
+        ],
+        [
+          "3",
+          "2.1 Modelo biopsicossocial integrado"
+        ],
+        [
+          "p",
+          "O cérebro regula humor, motivação, atenção, sono, recompensa, estresse e controle de impulsos por circuitos interconectados. A depressão pode envolver alteração da comunicação entre regiões pré-frontais, amígdala, hipocampo e circuitos mesolímbicos de recompensa. <strong>Anedonia</strong> relaciona-se à menor experiência antecipatória/consumatória de prazer e alterações de motivação; <strong>ruminação</strong> e autoavaliações negativas podem manter atenção voltada a ameaça/perda."
+        ],
+        [
+          "p",
+          "Monoaminas <strong>serotonina, noradrenalina e dopamina</strong> participam desses circuitos, mas a doença <strong>não é explicada por deficiência única, diretamente mensurável de serotonina</strong>. Antidepressivos podem alterar neurotransmissão precocemente, enquanto benefício clínico leva semanas e envolve adaptação de circuitos, aprendizagem, sono, regulação emocional e outros fatores. O modelo de plasticidade sináptica e fatores neurotróficos é útil para entender latência terapêutica, sem ser apresentado como biomarcador diagnóstico validado."
+        ],
+        [
+          "3",
+          "2.2 Eixo de estresse e inflamação"
+        ],
+        [
+          "p",
+          "Experiências adversas, privação crônica de sono e estresse podem alterar resposta do eixo hipotálamo–hipófise–adrenal, padrões de cortisol e regulação de sistemas imunes/inflamatórios em subgrupos. <strong>Não solicitar cortisol ou citocinas como exame diagnóstico rotineiro de depressão</strong>: são mecanismos estudados, não testes clínicos de confirmação."
+        ],
+        [
+          "3",
+          "2.3 Genes, temperamento e ambiente"
+        ],
+        [
+          "p",
+          "Há contribuição hereditária poligênica, combinada com exposição ambiental e história de desenvolvimento. História familiar aumenta suspeição, inclusive de transtorno bipolar em apresentação depressiva; não há “gene da depressão” clinicamente rastreado por exame padrão na APS. Mudanças hormonais, doenças clínicas e medicamentos também modulam vulnerabilidade e expressão."
+        ],
+        [
+          "3",
+          "2.4 Por que o corpo apresenta sintomas?"
+        ],
+        [
+          "p",
+          "Sono, apetite, libido, dor, cognição, trânsito intestinal, velocidade psicomotora e energia respondem a vias autonômicas, endócrinas e neurológicas compartilhadas. O paciente pode procurar serviço por palpitação, cefaleia ou fadiga, sobretudo quando o ambiente torna difícil nomear sofrimento mental. É preciso investigar explicações clínicas <strong>e</strong> estado emocional, evitando atribuição automática de todos os sintomas à depressão."
+        ]
+      ]
+    ],
+    [
+      "3-conceitos-diagnosticos-sintoma-episodio-e-transtorno",
+      0,
+      [
+        [
+          "2",
+          "3. Conceitos diagnósticos: sintoma, episódio e transtorno"
+        ],
+        [
+          "3",
+          "3.1 Humor deprimido e anedonia"
+        ],
+        [
+          "p",
+          "<strong>Humor deprimido</strong> envolve tristeza persistente, vazio ou irritabilidade em certos grupos; <strong>anedonia</strong> é redução marcada da capacidade/interesse de vivenciar prazer em atividades antes apreciadas. Pessoas podem apresentar um sem verbalizar claramente o outro. Pergunte por funcionamento concreto: “Você ainda sente interesse em encontrar amigos, cozinhar, estudar?” e “O que mudou em relação a seis meses atrás?”."
+        ],
+        [
+          "p",
+          "<strong>Fadiga</strong>, alteração de sono, apetite, culpa excessiva, dificuldade de concentração, lentificação/agitação, desesperança e pensamentos de morte se integram à síndrome, mas também aparecem em numerosas outras condições."
+        ],
+        [
+          "3",
+          "3.2 Episódio depressivo maior segundo lógica DSM-5-TR"
+        ],
+        [
+          "p",
+          "Em adulto, a estrutura frequentemente cobrada envolve <strong>ao menos cinco sintomas</strong> durante o <strong>mesmo período de duas semanas</strong>, representando mudança do funcionamento prévio; é obrigatório ter <strong>humor deprimido e/ou perda de interesse/prazer</strong>. Os demais domínios incluem: mudança relevante de peso/apetite; insônia ou hipersonia; agitação ou lentificação psicomotora observável; fadiga/perda de energia; desvalia/culpa excessiva ou inadequada; redução de concentração/indecisão; pensamentos recorrentes de morte ou suicídio."
+        ],
+        [
+          "p",
+          "O conjunto deve causar <strong>sofrimento clinicamente significativo ou prejuízo funcional</strong>, não ser atribuível de modo mais adequado a substância/condição médica e ser interpretado no contexto completo. Diagnóstico de <strong>transtorno depressivo maior</strong> requer também avaliar história de mania/hipomania; histórico de episódio maníaco verdadeiro direciona para transtorno bipolar, não para depressão unipolar."
+        ],
+        [
+          "p",
+          "<strong>Não memorizar sintomas de modo mecânico:</strong> concentração ruim porque a pessoa dorme duas horas em turnos noturnos, isoladamente, não confirma episódio depressivo. A gravidade também não se mede apenas pelo número de critérios; psicoses congruentes com humor, catatonia, restrição grave da alimentação ou incapacidade de se proteger podem exigir cuidado especializado imediato."
+        ],
+        [
+          "3",
+          "3.3 CID-11 versus DSM: convergência sem fusão artificial"
+        ],
+        [
+          "p",
+          "A CID-11 inclui categorias de transtornos depressivos com descrição clínica e requisitos próprios; o DSM-5-TR apresenta critérios operacionais em estrutura específica. A redação desta apostila utiliza <strong>o limiar de cinco sintomas/duas semanas como regra DSM de ensino</strong>, não o atribui à CID-11 como cópia literal. Para codificação clínica brasileira, conferir sistema formal em uso na rede e exigências do serviço."
+        ],
+        [
+          "3",
+          "3.4 Transtorno depressivo persistente e curso"
+        ],
+        [
+          "p",
+          "O transtorno depressivo persistente (distimia em classificações históricas) envolve humor deprimido prolongado, frequentemente por <strong>dois anos ou mais em adultos</strong> no DSM, com sintomas persistentes e flutuações. A distinção de episódios recorrentes e sintomas crônicos importa para resposta, adesão e plano de prevenção de recaída. <strong>Não confundir “depressão persistente” com a ideia de que nunca pode melhorar</strong>."
+        ],
+        [
+          "p",
+          "Um episódio pode ser único ou recorrente; melhora parcial deixa sintomas residuais que aumentam risco de recaída. <strong>Remissão</strong> é redução suficiente para não preencher síndrome, com recuperação funcional desejável; <strong>resposta</strong> costuma referir melhora percentual em instrumentos, mas deve ser correlacionada com experiência da pessoa."
+        ],
+        [
+          "3",
+          "3.5 Especificadores clinicamente relevantes"
+        ],
+        [
+          "p",
+          "<li><strong>Com ansiedade importante:</strong> tensão, preocupação, inquietação e medo de piora podem afetar prognóstico e escolha terapêutica.</li>\r<li><strong>Características melancólicas:</strong> perda marcante de prazer, pouca reatividade e alterações psicomotoras/neurovegetativas típicas, quando critérios preenchidos.</li>\r<li><strong>Características atípicas:</strong> reatividade do humor e padrão de hipersonia, aumento de apetite/peso, sensibilidade à rejeição e sensação de peso em membros em apresentações compatíveis.</li>\r<li><strong>Características psicóticas:</strong> delírios e/ou alucinações durante episódio depressivo, congruentes ou incongruentes com humor. Exigem maior gravidade de cuidado, não dispensam investigar doença clínica.</li>\r<li><strong>Padrão sazonal:</strong> repetição coerente com estação do ano ao longo de ciclos, não simplesmente “fica triste em dia chuvoso”.</li>\r<li><strong>Periparto:</strong> início na gravidez ou após nascimento conforme sistema utilizado; distinguir baby blues transitório, depressão clínica e psicose pós-parto emergencial.</li>"
+        ]
+      ]
+    ],
+    [
+      "4-anamnese-perguntas-que-evitam-os-grandes-erros",
+      0,
+      [
+        [
+          "2",
+          "4. Anamnese: perguntas que evitam os grandes erros"
+        ],
+        [
+          "3",
+          "4.1 Começar pela história longitudinal"
+        ],
+        [
+          "p",
+          "“Quando começou?” → “Houve períodos de recuperação?” → “Qual era seu padrão de funcionamento?” → “O que piorou e o que ajuda?” → “Já aconteceu algo semelhante?”. Conheça impacto em autocuidado, alimentação, estudo, trabalho, relacionamentos, rotina do sono e rede de apoio."
+        ],
+        [
+          "p",
+          "Uma queixa vaga de “cansaço” precisa ser acompanhada de investigação de apneia do sono, anemia, tireoide, diabetes, uso de substâncias e outros diferenciais conforme clínica. Uma pessoa pode ter <strong>depressão e doença clínica ao mesmo tempo</strong>; escolher uma hipótese não cancela a outra."
+        ],
+        [
+          "3",
+          "4.2 A pergunta obrigatória antes de antidepressivo: mania/hipomania"
+        ],
+        [
+          "p",
+          "Perguntar por <strong>épocas distintas</strong> de humor anormalmente elevado/irritável ou energia intensamente aumentada, com diminuição de necessidade de sono (acordar descansado após poucas horas), fala acelerada, projetos grandiosos, gastos incompatíveis e mudanças marcadas de funcionamento. Procurar relatos de familiares quando adequado, internações por agitação e episódios após antidepressivos/estimulantes."
+        ],
+        [
+          "p",
+          "<strong>Mania não é simplesmente “estar feliz”</strong>; envolve alteração relevante, duração, prejuízo ou gravidade, podendo ter psicose. <strong>Hipomania</strong> é mudança clara observável sem a gravidade típica de mania. O diagnóstico completo da aula 212 deverá validar duração e exclusões. Se bipolaridade é plausível, <strong>não tratar automaticamente como depressão unipolar com antidepressivo isolado</strong>."
+        ],
+        [
+          "3",
+          "4.3 História psiquiátrica e tratamentos prévios"
+        ],
+        [
+          "p",
+          "Documentar psicoterapia, fármacos com tempo/dose, adesão, resposta, efeitos adversos, interrupções, internações, tentativa prévia de autoagressão e contatos de serviço. <strong>\"Já tentou um antidepressivo\" não significa tratamento adequado</strong> se a medicação foi tomada uma semana ou em dose subterapêutica. Mas a gravidade do quadro pode exigir mudança antes de completar um ensaio prolongado, especialmente se segurança está ameaçada."
+        ],
+        [
+          "3",
+          "4.4 Substâncias, sono e contexto"
+        ],
+        [
+          "p",
+          "Álcool, estimulantes, cannabis, sedativos, opioides e uso de medicação prescrita ou interrompida podem precipitar/piorar sintomas, assim como isolamento, violência e excesso de trabalho. A entrevista deve ser <strong>não julgadora</strong>. Indagar tabagismo, cafeína, apneia, dor e doenças de base, contexto obstétrico e mudanças hormonais, sem gerar exames indiscriminados."
+        ],
+        [
+          "3",
+          "4.5 Investigar segurança em toda consulta"
+        ],
+        [
+          "p",
+          "A Linha de Cuidado brasileira orienta avaliação de risco de suicídio <strong>em todas as consultas de pessoas com depressão</strong>. Perguntar diretamente, de forma respeitosa e gradual, sobre desesperança e pensamentos de morte, assim como necessidade imediata de proteção. O objetivo não é obter uma declaração isolada “nega ideação” como autorização de alta, mas formular plano compatível com a situação atual e acesso ao cuidado."
+        ]
+      ]
+    ],
+    [
+      "5-exame-fisico-mental-e-exames-complementares-direcionados",
+      0,
+      [
+        [
+          "2",
+          "5. Exame físico, mental e exames complementares direcionados"
+        ],
+        [
+          "p",
+          "<strong>Exame do estado mental:</strong> observar aparência, comportamento, consciência/atenção, psicomotricidade, fala, humor referido, afeto observado, curso e conteúdo do pensamento, fenômenos perceptivos, orientação/cognição, insight e julgamento, além de segurança. A apostila <strong>210</strong> ensina os domínios completos; nesta aula destacar culpa, autodesvalia, ruminação, lentificação, anedonia e sintomas de risco."
+        ],
+        [
+          "p",
+          "<strong>Exame físico:</strong> sinais vitais, estado nutricional, hidratação, peso, sinais de tireopatia, anemia, doença neurológica, infecção ou intoxicação quando suspeitos. Investigações laboratoriais dependem de sintomas e comorbidades: hemograma, TSH, função renal/hepática, glicemia, B12, gravidez e outros <strong>somente quando indicados</strong> por história, achados clínicos ou planejamento de medicação. <strong>Não existe painel laboratorial que confirme depressão maior</strong>, e solicitar todos os exames disponíveis para cada paciente pode atrasar cuidado."
+        ],
+        [
+          "3",
+          "5.1 PHQ-2, PHQ-9 e avaliação estruturada"
+        ],
+        [
+          "p",
+          "O <strong>PHQ-2</strong> contém dois sintomas nucleares para rastreio; <strong>PHQ-9</strong> abrange nove domínios e pode apoiar estimativa de carga sintomática e monitorização de evolução. O item de pensamentos de morte/autoagressão <strong>não substitui entrevista de segurança</strong>. Um PHQ-9 elevado não estabelece automaticamente transtorno depressivo maior, nem suas faixas devem substituir avaliação funcional e diferencial; instrumentos podem ter limites por escolaridade, idioma, contexto e doença clínica."
+        ],
+        [
+          "p",
+          "<strong>Uso prático:</strong> aplicar instrumento no início e após intervenções quando aceitável, acompanhar <strong>mudança</strong> e desfechos concretos (sono, energia, retorno a atividades). Se perguntas capturam sintomas explicáveis por doença clínica, correlacionar em vez de “somar pontos e concluir”. A Linha de Cuidado MS também usa PHQ-9 no cuidado compartilhado e remissão, mas não autoriza tomar decisão de alta unicamente por escore."
+        ]
+      ]
+    ],
+    [
+      "6-diagnostico-diferencial-que-realmente-muda-o-tratamento",
+      0,
+      [
+        [
+          "2",
+          "6. Diagnóstico diferencial que realmente muda o tratamento"
+        ],
+        [
+          "t",
+          [
+            "Hipótese",
+            "Pistas que ajudam",
+            "Erro comum"
+          ],
+          [
+            [
+              "<strong>Transtorno bipolar em fase depressiva</strong>",
+              "Episódios prévios de energia aumentada, menor necessidade de sono, impulsividade/mania/hipomania; história familiar; alternância de humor",
+              "Prescrever antidepressivo isolado sem investigar polaridade"
+            ],
+            [
+              "<strong>Luto/reação à perda</strong>",
+              "Relação temporal e conteúdo da perda, oscilação com lembranças, possibilidades de sentido; pode coexistir com depressão",
+              "Dizer que luto “nunca é depressão” ou patologizar toda tristeza"
+            ],
+            [
+              "<strong>Transtorno de adaptação</strong>",
+              "Resposta a estressor identificável com sintomas sem preencher quadro depressivo maior em certo contexto",
+              "Usar diagnóstico para desvalorizar sofrimento"
+            ],
+            [
+              "<strong>Delirium</strong>",
+              "Início agudo, flutuação de consciência/atenção, doença clínica",
+              "Chamar alteração cognitiva aguda de depressão"
+            ],
+            [
+              "<strong>Transtorno neurocognitivo</strong>",
+              "Declínio progressivo funcional/cognitivo; déficit persistente, história corroborada",
+              "Chamar toda queixa cognitiva de demência ou “pseudodemência”"
+            ],
+            [
+              "<strong>Hipotireoidismo, anemia, deficiência nutricional</strong>",
+              "Sintomas físicos/achados e história compatíveis, exame/laboratório dirigido",
+              "Negligenciar doença clínica ou solicitar painel indiscriminado"
+            ],
+            [
+              "<strong>Apneia do sono e transtornos do sono</strong>",
+              "Ronco, sonolência diurna, sono fragmentado, trabalho em turnos",
+              "Confundir insônia/fadiga isolada com episódio depressivo"
+            ],
+            [
+              "<strong>Uso/retirada de substâncias ou fármacos</strong>",
+              "Relação temporal com medicação, álcool/estimulantes/corticoide etc.",
+              "Fechar depressão primária sem cronologia"
+            ],
+            [
+              "<strong>Transtorno de ansiedade/PTSD/TOC</strong>",
+              "Medo, hipervigilância, pensamentos intrusivos, trauma e evitação predominantes",
+              "Negar coexistência de depressão e ansiedade"
+            ],
+            [
+              "<strong>Depressão com psicose</strong>",
+              "Delírios/vozes em episódio depressivo grave",
+              "Prescrever apenas ISRS sem avaliação especializada"
+            ],
+            [
+              "<strong>Psicose pós-parto</strong>",
+              "Instalação abrupta, desorganização, mania/psicose e risco materno-infantil",
+              "Confundir com “baby blues” e dispensar"
+            ],
+            [
+              "<strong>Catatonia</strong>",
+              "Mutismo, posturas, estupor/excitação desorganizada, alterações de alimentação",
+              "Chamar ausência de movimento de preguiça ou falta de colaboração"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "6.1 Luto e depressão: sobreposição sem falsa oposição"
+        ],
+        [
+          "p",
+          "O luto pode envolver tristeza intensa, insônia, perda de interesse e pensamentos relacionados à pessoa falecida. Uma pessoa enlutada pode ter <strong>episódio depressivo coexistente</strong>; um episódio depressivo pode ser desencadeado por perda significativa. A avaliação considera persistência generalizada, autodesvalia, prejuízo, incapacidade de experimentar momentos de alívio, sinais de risco e curso. O clínico deve reconhecer contexto cultural e apoiar o luto sem negar tratamento quando depressão clinicamente relevante está presente."
+        ],
+        [
+          "3",
+          "6.2 Depressão e cognição no idoso"
+        ],
+        [
+          "p",
+          "Idosos podem apresentar queixas cognitivas marcantes, lentificação, isolamento, fadiga e perda funcional; depressão é diferencial e pode coexistir com transtorno neurocognitivo. O termo histórico “pseudodemência depressiva” é insuficiente como diagnóstico definitivo: um paciente pode melhorar atenção após tratar humor e ainda ter déficit persistente. Investigar cronologia, atenção, medicamentos anticolinérgicos, privação de sono, sintomas de delirium e funcionalidade prévia. Não excluir risco de autoagressão em idoso que não verbaliza tristeza."
+        ]
+      ]
+    ],
+    [
+      "7-gravidade-e-formulacao-clinica-alem-de-sintomas-contados",
+      0,
+      [
+        [
+          "2",
+          "7. Gravidade e formulação clínica: além de sintomas contados"
+        ],
+        [
+          "p",
+          "A gravidade integra <strong>intensidade sintomática, sofrimento, autonomia para autocuidado, prejuízo funcional, sinais psicóticos, alimentação/hidratação, catatonia, comorbidades e segurança</strong>. Um paciente com poucos sintomas numericamente, mas incapaz de manter hidratação por síndrome grave ou em perigo imediato, merece cuidado urgente. A expressão “depressão leve/moderada/grave” é útil para organizar opções, mas <strong>não deve ser confundida com categoria fixa de risco de suicídio</strong>.\r<li><strong>Menos grave:</strong> sintomas com prejuízo limitado, capacidade preservada para autocuidado, plano de acompanhamento viável. Intervenções psicológicas e comportamentais costumam ser prioritárias, conforme preferência.</li>\r<li><strong>Mais grave:</strong> perda funcional significativa, sinais persistentes/intensos, necessidade de combinação terapêutica e suporte próximo. Avaliação de especialidade pode ser apropriada.</li>\r<li><strong>Gravidade complexa/urgente:</strong> risco imediato, psicose, catatonia, incapacidade de alimentação/hidratação ou graves condições associadas requerem avaliação urgente e, quando apropriado, cuidado hospitalar.</li>"
+        ],
+        [
+          "p",
+          "<strong>Importante:</strong> pacientes com sintomas aparentemente leves podem ter risco relevante de autoagressão por outras razões; a avaliação de segurança é uma dimensão paralela, não consequência automática do grau de depressão."
+        ]
+      ]
+    ],
+    [
+      "8-terapias-nao-farmacologicas-e-modelo-de-decisao-compartilhada",
+      0,
+      [
+        [
+          "2",
+          "8. Terapias não farmacológicas e modelo de decisão compartilhada"
+        ],
+        [
+          "3",
+          "8.1 O que o tratamento deve alcançar?"
+        ],
+        [
+          "p",
+          "Não basta reduzir pontuação de questionário. Acordar metas relevantes: dormir de modo restaurador, retomar autocuidado, recuperar participação social, reduzir sofrimento, retomar estudo/trabalho, tratar comorbidades e construir segurança. Definir como medir melhora e em qual intervalo reavaliar."
+        ],
+        [
+          "p",
+          "<strong>Depressão menos grave:</strong> NICE NG222 recomenda não oferecer antidepressivo <strong>rotineiramente como primeira linha</strong>, salvo preferência informada; opções incluem <strong>autoajuda guiada, terapia cognitivo-comportamental (TCC), ativação comportamental, exercício estruturado, intervenção de resolução de problemas e psicoterapia</strong> conforme recursos/necessidades. Não interpretar como “proibição de antidepressivo em sintomas leves”, nem negar medicação a quem a escolhe após discussão apropriada."
+        ],
+        [
+          "p",
+          "<strong>Depressão mais grave:</strong> TCC individual associada a antidepressivo ou outras opções recomendadas pode oferecer benefício, dependendo de escolha clínica e acesso. Uma pessoa com barreira material a sessões semanais pode precisar de estratégia híbrida e apoio da APS; a indisponibilidade temporária de psicoterapia não autoriza abandono."
+        ],
+        [
+          "3",
+          "8.2 Ativação comportamental"
+        ],
+        [
+          "p",
+          "Depressão reduz iniciativa e reforça afastamento de atividades recompensadoras; quanto menos atividades significativas a pessoa realiza, menos oportunidade de prazer/pertencimento experimenta. A <strong>ativação comportamental</strong> estrutura retomada progressiva e realista de atividades, com metas negociadas, monitorização de humor e cuidado para não impor sobrecarga moralizante."
+        ],
+        [
+          "p",
+          "Exemplo clínico: em vez de “volte a se exercitar todos os dias”, combinar caminhada curta supervisionada/tolerada ou tarefa doméstica simples duas vezes na semana, com revisão de dificuldades. A atividade serve ao processo de recuperação, não como julgamento de esforço pessoal."
+        ],
+        [
+          "3",
+          "8.3 TCC, terapia interpessoal e outras abordagens"
+        ],
+        [
+          "p",
+          "A <strong>TCC</strong> trabalha pensamentos automáticos, comportamentos de evitação e padrões de manutenção do sofrimento, em sessões estruturadas, conforme formação profissional. A <strong>terapia interpessoal (TIP/IPT)</strong> explora mudanças de papéis, conflitos e perdas no contexto das relações. Outras abordagens com evidência e preferência da pessoa podem ser indicadas; o serviço deve explicar duração provável, disponibilidade, custos/filas e planos de acesso."
+        ],
+        [
+          "p",
+          "A psicoterapia isolada pode ser apropriada em muitos quadros menos graves; combinação farmacológica e psicoterapia ganha valor em quadros mais graves, recorrentes ou com resposta parcial. <strong>Nunca apresentar “procurar terapia” como único plano de uma pessoa em situação de risco imediato</strong>."
+        ],
+        [
+          "3",
+          "8.4 Sono, exercício, substâncias e rede"
+        ],
+        [
+          "p",
+          "Regularidade de horários, redução de álcool quando pertinente, atividade física adaptada, alimentação e fortalecimento de vínculos ajudam a recuperação, mas não são “cura universal por força de vontade”. Abordar doença clínica coexistente, violência, insegurança de moradia, trabalho exaustivo e barreiras de transporte é parte do projeto terapêutico. Ações podem envolver ACS/equipe da APS, CAPS, assistência social e familiares, com consentimento e respeito ao sigilo."
+        ]
+      ]
+    ],
+    [
+      "9-tratamento-farmacologico-por-que-quando-qual-e-como-monitorar",
+      0,
+      [
+        [
+          "2",
+          "9. Tratamento farmacológico: por que, quando, qual e como monitorar"
+        ],
+        [
+          "3",
+          "9.1 Quando considerar antidepressivo"
+        ],
+        [
+          "p",
+          "Antidepressivos são tratamento efetivo em depressão moderada/grave ou outros cenários selecionados, idealmente integrados a psicoterapia, seguimento e manejo de condições associadas. A decisão precisa ponderar <strong>sintomas, funcionamento, preferência, histórico de resposta, segurança, interações, gravidez, risco de descontinuação e custo/acesso</strong>, sem apresentar uma classe como “a melhor para todos”."
+        ],
+        [
+          "p",
+          "<strong>Antes de iniciar:</strong> descartar/tratar mania/hipomania, buscar interação medicamentosa e uso de substâncias, discutir tempo provável de resposta (benefício perceptível geralmente após algumas semanas), efeitos adversos iniciais e plano de retorno. A introdução de tratamento não garante melhora imediata, por isso uma pessoa em risco precisa de <strong>suporte desde o primeiro dia</strong>."
+        ],
+        [
+          "p",
+          "<strong>Escolha geral:</strong> ISRS (inibidores seletivos da recaptação da serotonina) são frequentemente primeira opção pela relação eficácia, tolerabilidade e segurança em sobredose relativa a tricíclicos, mas precisam de avaliação individual. IRSN/SNRI (serotonina e noradrenalina), mirtazapina, bupropiona e outras classes podem servir melhor a determinados perfis. Os medicamentos não substituem medidas de segurança em crise, e nenhum é tratamento isolado específico para prevenir autoagressão."
+        ],
+        [
+          "3",
+          "9.2 ISRS: mecanismo, diferenças e cuidados"
+        ],
+        [
+          "p",
+          "Ao inibir transportador de serotonina, ISRS aumentam sinalização serotoninérgica sináptica. Possíveis efeitos colaterais incluem <strong>náusea, desconforto gastrointestinal, cefaleia, distúrbios do sono, agitação inicial, disfunção sexual, alterações de sangramento e hiponatremia</strong>, especialmente em pessoas idosas suscetíveis. Podem aumentar risco de sangramento quando combinados a AINEs/antiagregantes/anticoagulantes; interações e riscos devem ser avaliados. O risco de <strong>síndrome serotoninérgica</strong> cresce com combinações de agentes serotoninérgicos, particularmente IMAO e outras interações; identificar confusão, hiperatividade autonômica e hiperreflexia/clônus em situações suspeitas."
+        ],
+        [
+          "p",
+          "<strong>Fluoxetina:</strong> meia-vida longa, com persistência de efeitos e interações após suspensão; pode ser ativadora em alguns perfis e inibe CYP2D6. <strong>Sertralina:</strong> opção amplamente utilizada, efeitos gastrointestinais relativamente comuns. <strong>Escitalopram/citalopram:</strong> atenção ao risco de prolongamento de QT em determinados pacientes, dose, interações e comorbidades. <strong>Paroxetina:</strong> pode produzir sintomas de retirada mais pronunciados, efeito anticolinérgico relativo e interações; cautela adicional em idosos e gestação."
+        ],
+        [
+          "p",
+          "A escolha deve ser centrada na pessoa. Uma paciente com insônia importante pode não tolerar medicação excessivamente ativadora; outra com sonolência diurna intensa pode não desejar sedação. <strong>Não usar efeitos colaterais como “regra fixa” sem considerar variabilidade individual</strong>."
+        ],
+        [
+          "3",
+          "9.3 IRSN, mirtazapina, bupropiona e tricíclicos"
+        ],
+        [
+          "p",
+          "<strong>Venlafaxina/desvenlafaxina/duloxetina:</strong> efeito serotoninérgico e noradrenérgico; podem ser úteis em depressão com certas queixas dolorosas, dependendo da molécula e indicação, mas precisam de avaliação de <strong>pressão arterial</strong>, interações, alterações sexuais e sintomas de retirada, especialmente com venlafaxina. Duloxetina exige atenção à função hepática e ao uso de álcool em contextos de risco."
+        ],
+        [
+          "p",
+          "<strong>Mirtazapina:</strong> antagonismo de receptores adrenérgicos/serotoninérgicos específicos, muitas vezes associada a <strong>sedação e aumento de apetite/peso</strong>; pode ser útil quando esses efeitos seriam aceitáveis/desejáveis, mas não é opção universal. <strong>Bupropiona:</strong> mecanismo noradrenérgico/dopaminérgico e menor incidência de determinados efeitos sexuais que muitos ISRS, porém é relativamente ativadora e possui <strong>risco de convulsão</strong> em pessoas predispostas, com contraindicações importantes como transtornos convulsivos e alguns transtornos alimentares, além de cautelas com álcool/abstinência e medicamentos que diminuam limiar convulsivo."
+        ],
+        [
+          "p",
+          "<strong>Tricíclicos (ex.: amitriptilina, nortriptilina):</strong> podem ser eficazes, mas têm efeitos anticolinérgicos, cardiovasculares, risco de hipotensão ortostática e <strong>maior toxicidade em sobredose</strong>, razão para atenção especial se há risco de autoagressão. O estudante não deve concluir que “antidepressivo barato é automaticamente melhor” sem discutir contraindicações e contexto."
+        ],
+        [
+          "p",
+          "<strong>Inibidores da monoamina oxidase (IMAO):</strong> indicação especializada em casos selecionados, com interações farmacológicas/alimentares e cuidados com troca de medicamentos; não são primeira opção rotineira de APS em depressão comum. Combinar IMAO com ISRS/IRSN ou certos outros fármacos pode causar reações graves; intervalos de suspensão e troca devem seguir bula/serviço especializado."
+        ],
+        [
+          "3",
+          "9.4 Exemplos de posologia inicial para estudo — NÃO constituem prescrição individual"
+        ],
+        [
+          "p",
+          "Os exemplos a seguir são <strong>doses iniciais adultas de apresentações orais comuns</strong> utilizadas em alguns mercados e guias, com referências de bula; necessidade de ajuste por idade, gestação, função renal/hepática, outras medicações e disponibilidade brasileira <strong>deve ser avaliada caso a caso</strong>."
+        ],
+        [
+          "t",
+          [
+            "Fármaco / via",
+            "Referência de início adulto para depressão",
+            "Atenção ao seguimento"
+          ],
+          [
+            [
+              "<strong>Fluoxetina VO</strong>",
+              "<strong>20 mg 1×/dia</strong>, geralmente pela manhã",
+              "Em pessoas sensíveis, iniciar menor pode ser opção clínica; meia-vida longa, interações, sintomas ativadores; bula DailyMed confirma 20 mg como dose inicial de referência em adultos."
+            ],
+            [
+              "<strong>Sertralina VO</strong>",
+              "<strong>50 mg 1×/dia</strong> em depressão maior, conforme bula padrão",
+              "Efeitos gastrointestinais, interações e necessidade de incremento gradual."
+            ],
+            [
+              "<strong>Escitalopram VO</strong>",
+              "<strong>10 mg 1×/dia</strong> em adultos, conforme bula",
+              "Cautela em QT prolongado, interações e ajustes na insuficiência hepática/idosos conforme bula."
+            ],
+            [
+              "<strong>Venlafaxina XR VO</strong>",
+              "<strong>75 mg 1×/dia</strong>, podendo iniciar em <strong>37,5 mg por 4–7 dias</strong> em determinados pacientes",
+              "Monitorar pressão arterial, tolerabilidade e retirada; bula consultada usa máximo <strong>225 mg/dia</strong> para a formulação XR específica."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Não generalizar máximos:</strong> a dose máxima de um fabricante/formulação pode diferir de outra. Por exemplo, a fluoxetina possui em uma bula norte-americana limite de <strong>80 mg/dia</strong>, mas muitos pacientes obtêm resposta em 20 mg e doses altas não devem ser escolhidas sem justificativa. <strong>Não aumentar porque “a depressão é forte” em uma consulta única</strong>; avaliar resposta após intervalo razoável, efeitos colaterais, adesão, transtorno bipolar e segurança."
+        ],
+        [
+          "p",
+          "<strong>Dose não substitui avaliação psiquiátrica:</strong> sintomas psicóticos, história de mania/hipomania, ideação de autoagressão com risco imediato, catatonia, comorbidades complexas e gestação exigem individualização/especialista."
+        ],
+        [
+          "3",
+          "9.5 Início, revisão e tempo para resposta"
+        ],
+        [
+          "p",
+          "A NICE NG222 orienta revisar efetividade, efeitos adversos, concordância e segurança <strong>entre duas e quatro semanas após início</strong> de tratamento para depressão; em <strong>18–25 anos</strong> ou quando há preocupação de suicídio, após prescrever ou aumentar dose de antidepressivo, revisar <strong>em uma semana</strong> e novamente tão frequentemente quanto necessário, sem ultrapassar quatro semanas para revisão subsequente. Uma pessoa com risco imediato não deve receber receita e retorno tardio; organizar suporte e encaminhamento/avaliação imediata conforme gravidade."
+        ],
+        [
+          "p",
+          "<strong>Primeiras semanas:</strong> náusea, ansiedade ou agitação podem aparecer antes do benefício sustentado. O retorno deve explorar pensamentos de autoagressão, piora, efeitos adversos, adesão e eventual <strong>virada para mania/hipomania</strong>. Ausência de benefício em dois dias não é prova de falha; piora importante ou intolerância exige revisão antes de completar prazo padrão."
+        ],
+        [
+          "p",
+          "<strong>Resposta em 4–6 semanas:</strong> se não há melhora após uso adequado e dose terapêutica, revisar diagnóstico, aderência, substâncias, condições clínicas, fatores sociais e acesso à psicoterapia. Considerar mudança/escalonamento em decisão compartilhada, evitando polifarmácia prematura."
+        ],
+        [
+          "3",
+          "9.6 Continuação, manutenção e prevenção de recaída"
+        ],
+        [
+          "p",
+          "Após melhora/remissão, <strong>não suspender automaticamente o antidepressivo no primeiro dia sem sintomas</strong>. NICE descreve uso por <strong>pelo menos seis meses, incluindo período após remissão</strong>, com avaliações regulares; em recorrência, gravidade passada e alto risco de recaída, a manutenção pode ser prolongada com revisão periódica. A continuidade de psicoterapia e estratégias de prevenção de recaída também tem benefício."
+        ],
+        [
+          "p",
+          "<strong>Sinais de recaída a ensinar:</strong> insônia ou hipersonia novamente, abandono de autocuidado, isolamento, autocrítica intensa, perda de interesse e retorno de pensamentos de morte. A paciente deve ter plano de contato e retorno antes de novos prejuízos graves."
+        ],
+        [
+          "3",
+          "9.7 Suspensão gradual e diferenciação da síndrome de retirada"
+        ],
+        [
+          "p",
+          "Parar abruptamente pode causar <strong>tontura, sintomas gripais, alterações sensoriais, agitação, ansiedade, insônia, sonhos vívidos e desconforto gastrointestinal</strong>, sobretudo após uso prolongado de medicações de meia-vida curta. Venlafaxina e paroxetina requerem particular cuidado; fluoxetina tem meia-vida prolongada, mas isso <strong>não autoriza suspensão arbitrária em toda situação</strong>."
+        ],
+        [
+          "p",
+          "Planejar redução progressiva, muitas vezes por <strong>semanas ou meses</strong>, ajustando velocidade a dose, duração, sintomas e preferência, sobretudo nas fases finais de redução. Se sinais de retirada surgem rapidamente após mudança, diferenciar de recaída, reavaliar e adequar plano. O processo deve ser <strong>compartilhado</strong> com quem prescreve; não sugerir retirada sem acompanhamento quando risco clínico é alto."
+        ],
+        [
+          "3",
+          "9.8 Hiponatremia, QT, interações e populações especiais"
+        ],
+        [
+          "p",
+          "Idosos, usuários de diuréticos e pessoas com risco de distúrbio hidroeletrolítico podem desenvolver <strong>hiponatremia por SIADH</strong> associada a certos antidepressivos, especialmente após início/ajustes. Sintomas incluem confusão, fraqueza, quedas e convulsão em casos graves; checar eletrólitos quando risco/sintomas justificam. Alguns fármacos prolongam QT ou interagem por CYP; revisar ECG e medicamentos em perfis de risco, sem prescrever exames de rotina desnecessários a todos."
+        ],
+        [
+          "p",
+          "<strong>Gestação e lactação:</strong> pesar risco da depressão não tratada (incluindo piora funcional e segurança) e exposição medicamentosa. Não orientar suspensão abrupta porque a pessoa descobriu gravidez; discutir com pré-natal/psiquiatria e bula atual. <strong>Adolescentes:</strong> intervenções psicológicas e seguimento especializado costumam ter centralidade; seleção de fármaco e dose requer critérios próprios, não copiar tabela adulta. <strong>Pessoas idosas:</strong> iniciar com estratégia cautelosa, avaliar queda, medicamentos, hiponatremia e função renal/hepática."
+        ]
+      ]
+    ],
+    [
+      "10-avaliacao-do-risco-de-suicidio-competencia-transversal-e-prioridade-de-seguranca",
+      0,
+      [
+        [
+          "2",
+          "10. Avaliação do risco de suicídio: competência transversal e prioridade de segurança"
+        ],
+        [
+          "3",
+          "10.1 Por que perguntar em toda consulta?"
+        ],
+        [
+          "p",
+          "O Ministério da Saúde orienta abordar diretamente ideias de suicídio em pessoas com depressão ao longo do seguimento. A pergunta não deve ser evitada por receio de “dar ideia”. O objetivo é <strong>entender sofrimento e possibilidade atual de dano, criar vínculo, mobilizar ajuda e decidir cuidado proporcional</strong>. A conversa precisa ser respeitosa e livre de julgamento, não um interrogatório moral."
+        ],
+        [
+          "p",
+          "<strong>Etapas clínicas:</strong>\r<br>1. <strong>Acolher</strong> e entender o que precipitou ou intensificou sofrimento.\r<br>2. <strong>Investigar</strong> pensamentos de morte, autoagressão, intenção de agir e urgência percebida; explorar contexto e mudanças recentes de comportamento.\r<br>3. <strong>Levantar histórico</strong> de episódios prévios de autoagressão, atendimentos por crise, internações, tentativas anteriores e outros fatores clínicos relevantes.\r<br>4. <strong>Reconhecer estado atual:</strong> intoxicação, agitação, psicose, impulsividade intensa, desesperança, incapacidade de autocuidado, doença médica aguda e condições que reduzem capacidade de se manter seguro.\r<br>5. <strong>Mobilizar apoio</strong> consentido e identificar pessoas/serviços confiáveis, barreiras de acesso, violência/isolamento e rede disponível.\r<br>6. <strong>Construir plano de segurança</strong> e determinar necessidade de avaliação emergencial ou acompanhamento intensivo, documentando responsáveis e transição."
+        ],
+        [
+          "p",
+          "<strong>Importante:</strong> essas etapas não são escala com pontuação, nem garantem previsão de comportamento futuro. A mesma pessoa pode mudar de necessidade ao longo de horas ou dias; avaliação e plano precisam ser revistos."
+        ],
+        [
+          "3",
+          "10.2 “Baixo, médio, alto risco”: por que o estudante precisa atualizar a linguagem?"
+        ],
+        [
+          "p",
+          "A NICE <strong>NG225</strong> recomenda <strong>não usar ferramentas/escalas de avaliação para prever suicídio</strong>, nem para decidir quem receberá tratamento/alta, e <strong>não utilizar estratificação global em baixo/médio/alto risco</strong> como preditor. O raciocínio atual enfatiza <strong>formulação de risco</strong>, necessidades, mudanças do estado mental, proteção imediata e continuidade do cuidado."
+        ],
+        [
+          "p",
+          "Isso não quer dizer ignorar gravidade: a equipe deve reconhecer <strong>perigo imediato concreto</strong> e organizar intervenção urgente. A diferença é entre descrever fatos — “pessoa em sofrimento agudo, relata intenção atual de se ferir, está sem suporte e incapaz de seguir plano seguro” — e resumir a situação a “alto risco” sem registrar o que precisa ser feito."
+        ],
+        [
+          "p",
+          "<strong>Atenção a exemplos de prova antigos:</strong> escalas podem aparecer como ferramentas de triagem/registro de sintomas, mas uma classificação numérica <strong>não autoriza alta</strong>, sobretudo após episódio de autoagressão, quando NICE demanda avaliação psicossocial e plano."
+        ],
+        [
+          "3",
+          "10.3 Manejo do paciente com perigo imediato"
+        ],
+        [
+          "p",
+          "Quando há preocupação significativa quanto à segurança atual, realizar <strong>avaliação urgente por equipe habilitada</strong>, em ambiente protegido, com observação/acolhimento proporcional. Priorizar tratamento de lesão, intoxicação ou doença clínica aguda <strong>simultaneamente</strong> à avaliação psicossocial. Articular UPA/pronto-socorro/hospital geral ou SAMU 192 conforme quadro, com transferência confirmada e passagem de informações. Não deixar a pessoa sozinha durante deslocamentos/espera se há necessidade imediata de supervisão."
+        ],
+        [
+          "p",
+          "No SUS, a Linha de Cuidado da Depressão enfatiza explicar o encaminhamento, chamar suporte adequado, manter acompanhamento até transferência quando necessário, mobilizar rede e <strong>garantir atendimento real</strong>, não apenas entregar papel. Informações a familiares/contatos exigem cuidado com sigilo e justificativa ética; em risco de vida podem existir fundamentos para compartilhamento mínimo necessário."
+        ],
+        [
+          "p",
+          "<strong>Não confundir internação com punição:</strong> ela pode ser necessária quando não há como manter proteção e tratamento de modo ambulatorial seguro, mas deve ser proporcional, legalmente fundamentada e reavaliada. A avaliação de capacidade decisória é específica ao momento/decisão."
+        ],
+        [
+          "3",
+          "10.4 Plano colaborativo de segurança"
+        ],
+        [
+          "p",
+          "O plano inclui sinais pessoais de piora; estratégias de enfrentamento possíveis em crise; contatos de pessoas confiáveis; locais/serviços de ajuda; formas concretas de <strong>tornar o ambiente mais seguro e diminuir acesso a meios perigosos</strong> de modo colaborativo, sem instruções operacionais de autoagressão; e quem buscar em horário não comercial. Deve ser compreensível à pessoa, revisado com ela e adaptado a sua realidade."
+        ],
+        [
+          "p",
+          "<strong>Não é “contrato de não suicídio”</strong>: pedir promessa verbal ou assinatura de que “não fará nada” não substitui avaliação, acompanhamento e proteção. Quando há risco imediato, plano escrito sozinho não basta. Se a pessoa relata não ter contatos de confiança, o serviço precisa oferecer vias institucionais e seguimento mais próximo, não registrar “orientada a procurar familiar” como se isso tivesse sido possível."
+        ],
+        [
+          "3",
+          "10.5 Após episódio de autoagressão"
+        ],
+        [
+          "p",
+          "O atendimento deve começar com <strong>cuidado físico</strong> apropriado, avaliação da consciência/intoxicação e de complicações, junto a avaliação psicossocial tão logo a pessoa possa participar. NICE NG225 orienta não atrasar sistematicamente avaliação apenas por nível de álcool, mantendo revisões caso a pessoa ainda não possa participar. Após alta, deve haver plano de cuidado e <strong>pontos de contato efetivos</strong>, com reavaliação precoce conforme gravidade e contexto."
+        ],
+        [
+          "p",
+          "No Brasil, as Linhas de Cuidado do MS lembram <strong>notificação compulsória imediata de violência autoprovocada, inclusive tentativa de suicídio e automutilação</strong>, conforme regulamentação vigente. É responsabilidade institucional consultar formulários/fluxos SINAN aplicáveis em 2026. Notificação <strong>não substitui assistência</strong>, e é distinta de comunicação pública ou divulgação de dados pessoais."
+        ],
+        [
+          "3",
+          "10.6 Antidepressivos em pessoas com risco de autoagressão"
+        ],
+        [
+          "p",
+          "<strong>Não negar tratamento para depressão por risco de suicídio</strong>, mas adaptar segurança: acompanhar mais de perto, considerar a toxicidade dos medicamentos em sobredose, limitar quantidade dispensada quando indicado, envolver equipe e rede e manter acesso rápido à reavaliação. Tricíclicos têm risco cardiovascular significativamente maior em sobredose do que muitos ISRS; isso é fator de escolha e dispensação."
+        ],
+        [
+          "p",
+          "Em pessoas jovens <strong>18–25 anos</strong> e naquelas com preocupação de autoagressão, reavaliação <strong>em uma semana</strong> após iniciar/aumentar antidepressivo conforme NICE é um ponto de prova e prática. A piora de agitação, inquietação e pensamentos de autoagressão exige contato e revisão, não “esperar mais um mês porque todo ISRS demora”."
+        ],
+        [
+          "3",
+          "10.7 Diferenças entre risco e transtorno depressivo"
+        ],
+        [
+          "p",
+          "Nem toda pessoa com ideação suicida tem depressão maior; crises podem surgir com intoxicação/abstinência, transtornos psicóticos, trauma, sofrimento agudo e contextos de violência, entre outras situações. Nem toda pessoa com depressão tem ideação suicida. Logo, <strong>diagnóstico psiquiátrico e segurança precisam de avaliação paralela</strong>, sem a falácia “se o PHQ-9 não mostrou depressão grave, não precisa perguntar”."
+        ]
+      ]
+    ],
+    [
+      "11-depressao-grave-psicose-catatonia-e-terapias-especializadas",
+      0,
+      [
+        [
+          "2",
+          "11. Depressão grave, psicose, catatonia e terapias especializadas"
+        ],
+        [
+          "3",
+          "11.1 Depressão com características psicóticas"
+        ],
+        [
+          "p",
+          "Quando ideias delirantes de culpa, ruína, niilismo ou vozes ocorrerem junto com episódio depressivo, avaliar condição como <strong>potencialmente grave</strong>, distinguindo psicose primária, bipolaridade, delirium e efeitos de substâncias. NICE NG222 considera, em serviço especializado, <strong>combinação de antidepressivo e antipsicótico</strong>, como em exemplos com olanzapina/quetiapina, conforme avaliação, e considera psicoterapia e outras intervenções. <strong>Antidepressivo isolado sem revisão especializada pode ser insuficiente</strong>; encaminhar principalmente se prejuízo de alimentação/segurança."
+        ],
+        [
+          "p",
+          "A distinção de crença religiosa/cultural é fundamental: não diagnosticar delírio apenas porque conteúdo parece incomum para o examinador. A atitude clínica é analisar convicção, contexto, impacto e sinais associados."
+        ],
+        [
+          "3",
+          "11.2 Catatonia ou recusa alimentar grave"
+        ],
+        [
+          "p",
+          "Imobilidade, mutismo, posturas anormais e incapacidade de alimentar-se requerem <strong>avaliação de catatonia e condições médicas</strong>; não tratar como “preguiça depressiva”. Desidratação, trombose, desnutrição e infecção podem ameaçar vida. A decisão sobre tratamento específico pertence a equipe capacitada e rede hospitalar quando necessário."
+        ],
+        [
+          "3",
+          "11.3 Eletroconvulsoterapia (ECT)"
+        ],
+        [
+          "p",
+          "ECT tem <strong>indicação legítima</strong>, sobretudo em depressão grave com necessidade de resposta rápida (ex.: vida ameaçada por incapacidade de comer/beber), resistência terapêutica ou preferência informada após resposta anterior. É procedimento especializado sob anestesia, com avaliação clínica, consentimento e atenção a possíveis efeitos <strong>cognitivos</strong>, anestésicos e cardiovasculares. <strong>Não é punição nem substituto de consentimento</strong>, e não deve ser apresentada como primeira opção indiscriminada de APS."
+        ],
+        [
+          "3",
+          "11.4 Tratamentos avançados"
+        ],
+        [
+          "p",
+          "Para depressão resistente, estratégias podem envolver troca por outro antidepressivo, combinação com psicoterapia, potencialização com antipsicótico de segunda geração ou lítio, ECT e tratamentos neuromodulatórios em centros habilitados. Protocolos estrangeiros incluem outras tecnologias como estimulação magnética transcraniana repetitiva e esketamina intranasal em indicações específicas. <strong>Registro, acesso no SUS, requisitos de monitorização e protocolos da Anvisa devem ser verificados separadamente em 2026.</strong> Não prometer disponibilidade universal nem apresentar tratamento avançado como alternativa automática após falha de uma semana."
+        ]
+      ]
+    ],
+    [
+      "12-casos-clinicos-autorais-comentados",
+      0,
+      [
+        [
+          "2",
+          "12. Casos clínicos autorais comentados"
+        ],
+        [
+          "3",
+          "Caso 1 — A pessoa que procura a UBS por dor e fadiga"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> mulher de 42 anos trabalha em turnos, refere dores difusas, cansaço e falta de concentração há um mês. Passou a faltar ao trabalho e deixou de participar de atividades que antes apreciava. Dorme mal e sente tristeza diária; relata dificuldade de cuidar da rotina. Não refere mania/hipomania em perguntas dirigidas, mas há suspeita de anemia por menstruações intensas."
+        ],
+        [
+          "p",
+          "<strong>Hipóteses:</strong> episódio depressivo a confirmar pelos critérios completos, com possível anemia e privação de sono concomitantes."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> sintomas afetivos e de interesse, duração e prejuízo justificam avaliação de depressão; anemia/sono podem contribuir e coexistir. É errado dizer que “tudo é psicológico” sem examinar o organismo, assim como concluir que anemia explicaria anedonia/desesperança sem entrevista. Avaliar segurança em toda consulta, ainda que procura inicial tenha sido “dor”."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> EEM, sintomas e exame físico, hemograma/ferritina pela história ginecológica, outros exames direcionados; PHQ-9 pode monitorar, não diagnosticar isoladamente."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> combinar cuidado da síndrome depressiva conforme gravidade e preferência, tratar deficiência de ferro se confirmada, melhorar acesso a psicoterapia/ativação comportamental, estabelecer retorno e sinais de piora."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> a apresentação somática é comum e exige <strong>raciocínio integrador</strong>, não escolha excludente entre corpo e mente."
+        ],
+        [
+          "3",
+          "Caso 2 — “Só depressão”, mas há períodos de energia extraordinária"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> homem de 26 anos refere tristeza, apatia, culpa e isolamento há três semanas. Durante anamnese, conta dois períodos anteriores de vários dias com necessidade de sono muito reduzida, aumento marcante de energia, gastos e comportamento fora do habitual, testemunhados pela companheira. Não havia uso de estimulantes nesses períodos."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> episódio depressivo atual com suspeita de <strong>transtorno bipolar</strong>; investigar duração, gravidade e sinais de mania/hipomania."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> um episódio depressivo atual pode cumprir critérios sindrômicos, mas transtorno longitudinal não é necessariamente depressivo unipolar. Histórico de elevação patológica de energia pode reclassificar polaridade, e antidepressivo isolado pode produzir virada/instabilidade em subgrupos."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> EEM, história longitudinal e informante com consentimento, avaliação de substâncias, antecedentes familiares e funções clínicas."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> avaliação especializada de bipolaridade, evitar prescrição reflexa de antidepressivo em monoterapia antes de esclarecer; plano de segurança e seguimento."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> <strong>perguntar por hipomania antes de prescrever</strong> evita erro frequente de prova e iatrogenia."
+        ],
+        [
+          "3",
+          "Caso 3 — Sintomas menos graves e preferência por psicoterapia"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> mulher de 30 anos, duas semanas de humor deprimido e anedonia leves após estressor ocupacional, mantendo alimentação, higiene e trabalho com dificuldade moderada. Sem sintomas psicóticos nem problema atual de segurança; ela prefere não iniciar medicamento e tem acesso a psicoterapia."
+        ],
+        [
+          "p",
+          "<strong>Hipóteses:</strong> síndrome depressiva menos grave ou transtorno de adaptação, conforme critérios e evolução."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> a gravidade funcional e os critérios ainda precisam ser analisados; intervenção de menor intensidade pode atender necessidade. NICE NG222 não recomenda antidepressivo como primeira linha rotineira para depressão menos grave, mas respeita preferência informada. Não é correto dizer que “só medicação funciona” nem que “caso leve não merece cuidado”."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> entrevista, PHQ-9 para monitorar evolução se apropriado, avaliação clínica contextual, segurança e fatores de acesso."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> autoajuda guiada, TCC/ativação comportamental ou outra modalidade disponível, agenda de reavaliação em 2–4 semanas ou antes se houver piora."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> decisão compartilhada evita medicalização automática e negligência simultaneamente."
+        ],
+        [
+          "3",
+          "Caso 4 — Jovem no início do ISRS, agora mais agitado"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> estudante de 20 anos recebeu antidepressivo após diagnóstico clínico de depressão. Quatro dias após iniciar relata inquietação intensa, piora de ansiedade e reaparecimento de pensamentos de morte. Não tem consulta marcada no curto prazo e mora sozinho."
+        ],
+        [
+          "p",
+          "<strong>Hipóteses:</strong> efeito adverso ativador/acatisia, piora da síndrome ou outra causa, com <strong>necessidade imediata de reavaliar segurança</strong>."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> antidepressivo não reduz necessidade de suporte nas primeiras semanas. NICE NG222 enfatiza retorno em <strong>uma semana para 18–25 anos</strong> ou preocupação de suicídio após iniciar/aumentar dose, e reavaliação antes se surgirem sinais importantes. A presença de agitação/ideação torna inadequado dizer “espere quatro semanas até a medicação fazer efeito”."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> avaliação clínica de segurança, EEM, sinais de ativação/maniformes, uso de substâncias e análise de medicamentos/dose."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> facilitar avaliação clínica rápida no mesmo dia conforme necessidade, não deixá-lo sem apoio diante de perigo atual, discutir modificação da prescrição com profissional e garantir contatos/seguimento. Se situação ameaçar segurança imediata, encaminhar urgentemente com supervisão apropriada."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> ensina a diferença entre latência do efeito antidepressivo e <strong>urgência de segurança</strong>."
+        ],
+        [
+          "3",
+          "Caso 5 — Tratamento “resistente” que nunca foi tomado adequadamente"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> homem de 48 anos rotulado como “depressão resistente” por não melhorar após três “tentativas de antidepressivo”. A revisão identifica que interrompeu cada medicamento em cinco a sete dias por náusea ou medo de dependência, sem comunicação com serviço. Tem álcool em uso excessivo e sono insuficiente."
+        ],
+        [
+          "p",
+          "<strong>Hipóteses:</strong> depressão com <strong>ensaios inadequados</strong>, barreiras de adesão, efeitos adversos e substâncias contribuintes; resistência farmacológica verdadeira ainda não demonstrada."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> não resposta exige dose, duração, adesão, diagnóstico e tratamento adequados para ser interpretada. Acolher receios, explicar efeitos iniciais e manejo, escolher tolerabilidade, tratar álcool e sono, retomar psicoterapia/suporte. Não rotular “refratário” nem combinar quatro fármacos sem revisar causas corrigíveis."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> história detalhada dos tratamentos, segurança, sintomas atuais, comorbidades e exames clínicos direcionados."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> plano compartilhado de novo ensaio adequado ou psicoterapia conforme indicação, estratégias de tolerabilidade, reavaliação precoce e cuidado de uso de substâncias."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> o diagnóstico de resistência não é contagem de caixas prescritas."
+        ],
+        [
+          "3",
+          "Caso 6 — Idosa com isolamento, queda e hiponatremia"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> mulher de 76 anos inicia ISRS por depressão recorrente. Após dez dias apresenta confusão, tontura e queda. Usa diurético tiazídico e ingeriu pouca água por doença gastrointestinal. Familiares relatam alteração aguda do comportamento."
+        ],
+        [
+          "p",
+          "<strong>Hipóteses:</strong> <strong>hiponatremia</strong> e possível delirium, relacionados a condição clínica/medicamentos, além da depressão de base."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> confusão aguda exige avaliação médica, não conclusão de “depressão piorou” ou “demência súbita”. ISRS podem contribuir para SIADH/hiponatremia, especialmente em idosos e em associação a certos diuréticos; outras causas precisam de avaliação."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> sinais vitais, sódio/eletrólitos, função renal, glicemia, exame de atenção e revisão medicamentosa; investigações adicionais conforme quadro."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> atendimento médico urgente conforme gravidade, correção segura da alteração eletrolítica por equipe habilitada, revisão do tratamento e seguimento psiquiátrico após estabilização."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> vigilância de efeitos adversos pode prevenir queda, lesão e delirium."
+        ],
+        [
+          "3",
+          "Caso 7 — Depressão grave com incapacidade de alimentar-se"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> homem de 55 anos apresenta depressão grave com lentificação intensa, culpa delirante e recusa persistente de alimentação e hidratação. Está desidratado, perdeu peso e não consegue participar adequadamente de cuidados cotidianos. A família está exausta e sem capacidade de manter cuidado em casa."
+        ],
+        [
+          "p",
+          "<strong>Hipóteses:</strong> episódio depressivo grave com características psicóticas e ameaça clínica; avaliar também catatonia e causas médicas."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> prioridade é a segurança e estabilização clínica. Não basta um ISRS com retorno em seis semanas; há perda do autocuidado com ameaça à vida. NICE NG222 admite <strong>ECT</strong> quando resposta rápida é necessária (por exemplo, não comer/beber) e também estratégias especializadas para depressão psicótica."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> estado de hidratação/nutrição, eletrólitos, avaliação psiquiátrica e clínica hospitalar, diferencial de catatonia e consentimento/capacidade."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> encaminhamento hospitalar/especializado, estabilização e decisão compartilhada/fundamentada sobre terapias eficazes e rápidas, incluindo ECT quando indicada."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> gravidade é medida pela consequência clínica, não somente pela soma de critérios."
+        ],
+        [
+          "3",
+          "Caso 8 — Autoagressão com pedido de alta imediata"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> mulher de 39 anos procurou emergência após episódio recente de autoagressão e tratamento físico inicial. Relata desesperança, conflito conjugal, isolamento e dificuldade de garantir segurança ao voltar para casa. Diz que prefere “não incomodar ninguém”. Uma escala local produziu resultado descrito como “baixo risco”."
+        ],
+        [
+          "p",
+          "<strong>Hipóteses:</strong> crise de sofrimento/autoagressão que exige <strong>avaliação psicossocial e plano de proteção</strong>, independentemente do rótulo numérico."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> NICE NG225 proíbe usar escala de risco isoladamente para prever novos episódios ou decidir alta. Avaliação deve abranger necessidades atuais, capacidade de se manter segura, apoio, violência, fatores precipitantes e acesso efetivo ao cuidado. Tratamento físico e psicossocial são concomitantes."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> EEM, avaliação de intoxicação/lesões e comorbidades, história psicossocial e rede com consentimento."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> reavaliar segurança e necessidades, garantir atendimento especializado conforme caso, construir plano colaborativo e definir seguimento antes de alta, não liberar unicamente por “baixa pontuação”; seguir obrigação de notificação de violência autoprovocada no Brasil conforme fluxo vigente."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> o indicador decisivo é <strong>cuidado seguro e efetivamente acessível</strong>, não classificação simplista."
+        ],
+        [
+          "3",
+          "Caso 9 — Recidiva após suspensão abrupta"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> mulher de 45 anos vinha em remissão de depressão recorrente por nove meses com tratamento e psicoterapia. Decide interromper venlafaxina XR de um dia para o outro por sentir-se bem. Em poucos dias passa a sentir tontura, sensação elétrica intermitente, náusea e irritabilidade; teme “depressão voltando”."
+        ],
+        [
+          "p",
+          "<strong>Hipóteses:</strong> sintomas de <strong>retirada de antidepressivo</strong> relacionados a suspensão abrupta; avaliar também outros problemas e histórico de recaída."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> aparecimento logo após interrupção e sintomas sensoriais/vestibulares sugerem retirada mais que recaída depressiva plena. NICE NG222 destaca risco com venlafaxina/paroxetina e recomenda redução individual, às vezes longa. A retirada não é prova de “dependência no sentido aditivo” nem sinal de falha moral."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> anamnese temporal, EEM, sintomas somáticos, segurança, revisão das doses e medicamentos."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> reavaliar com prescritor e estabelecer plano apropriado de redução gradual/ajuste sob acompanhamento; também organizar prevenção de recaída de depressão recorrente."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> mostra por que suspender bruscamente pode causar sofrimento evitável."
+        ]
+      ]
+    ],
+    [
+      "13-questoes-originais-de-residencia-alternativas-comentadas",
+      0,
+      [
+        [
+          "2",
+          "13. Questões originais de residência — alternativas comentadas"
+        ],
+        [
+          "3",
+          "Questão 1 — Critérios de episódio depressivo maior"
+        ],
+        [
+          "p",
+          "Qual afirmação corresponde à lógica DSM-5-TR para episódio depressivo maior em adultos?"
+        ],
+        [
+          "p",
+          "A. Um dia de tristeza basta para diagnóstico.  \r<br>B. Ao menos cinco sintomas no mesmo período de duas semanas, incluindo humor deprimido e/ou anedonia, com prejuízo/exclusões pertinentes.  \r<br>C. Qualquer PHQ-9 positivo confirma transtorno bipolar.  \r<br>D. Alucinação é obrigatória.  \r<br>E. Somente ideação suicida define gravidade."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A ignora duração; C confunde rastreio e diagnóstico; D não é requisito; E reduz gravidade a um único sintoma. <strong>Revisão:</strong> critérios quantitativos são necessários no DSM, mas contexto e exclusões também."
+        ],
+        [
+          "3",
+          "Questão 2 — Diferencial com bipolaridade"
+        ],
+        [
+          "p",
+          "Paciente depressivo teve períodos prévios de pouca necessidade de sono, energia anormalmente aumentada, gastos e prejuízo funcional. Melhor passo antes de antidepressivo?"
+        ],
+        [
+          "p",
+          "A. Ignorar história porque hoje está triste.  \r<br>B. Investigar mania/hipomania e classificar polaridade, evitando monoterapia antidepressiva automática.  \r<br>C. Prescrever estimulante para recuperar energia.  \r<br>D. Diagnosticar delirium sem avaliar atenção.  \r<br>E. Administrar antidepressivo e nunca revisar humor."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A/E perdem informação longitudinal; C pode piorar quadro; D não corresponde ao dado central. <strong>Revisão:</strong> depressão bipolar precisa de estratégia distinta de unipolar."
+        ],
+        [
+          "3",
+          "Questão 3 — PHQ-9"
+        ],
+        [
+          "p",
+          "Qual é o papel correto do PHQ-9?"
+        ],
+        [
+          "p",
+          "A. Diagnóstico definitivo de qualquer transtorno com escore acima de zero.  \r<br>B. Instrumento de rastreio/quantificação sintomática e monitorização, com avaliação clínica complementar.  \r<br>C. Preditor suficiente de suicídio e critério único para alta.  \r<br>D. Substituto de anamnese de mania.  \r<br>E. Teste de função tireoidiana."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A extrapola escore; C contradiz NG225; D ignora polaridade; E não corresponde ao instrumento. <strong>Revisão:</strong> escore não substitui diagnóstico ou segurança."
+        ],
+        [
+          "3",
+          "Questão 4 — Menos grave e preferência"
+        ],
+        [
+          "p",
+          "Paciente com depressão menos grave deseja psicoterapia e está funcionalmente estável, sem perigo imediato. Segundo NICE NG222:"
+        ],
+        [
+          "p",
+          "A. Antidepressivo deve ser prescrito obrigatoriamente a todos.  \r<br>B. Psicoterapia/autoajuda guiada e intervenções apropriadas são opções de primeira linha; medicação não é rotina obrigatória, respeitando preferência.  \r<br>C. Nunca deve retornar à consulta.  \r<br>D. ECT imediata é padrão.  \r<br>E. Não é doença real."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A ignora preferência/evidência; C negligencia seguimento; D desproporcional; E estigmatiza. <strong>Revisão:</strong> cuidado escalonado deve ser efetivo e escolhido com a pessoa."
+        ],
+        [
+          "3",
+          "Questão 5 — Início do ISRS"
+        ],
+        [
+          "p",
+          "Mulher de 23 anos inicia antidepressivo com preocupação de suicídio. Qual planejamento é correto?"
+        ],
+        [
+          "p",
+          "A. Retorno obrigatório apenas em três meses.  \r<br>B. Revisão de segurança, efeitos adversos e sintomas aproximadamente <strong>uma semana</strong> após início ou aumento de dose, com acesso antes se piorar.  \r<br>C. Não perguntar sobre ideias de morte para evitar influenciar.  \r<br>D. Não considerar agitação inicial como sinal de alerta.  \r<br>E. Prometer melhora total em 24 horas."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A atrasa; C/E são incorretos; D omite risco. <strong>Revisão:</strong> NICE NG222 recomenda reavaliação precoce em 18–25 anos ou preocupação de suicídio."
+        ],
+        [
+          "3",
+          "Questão 6 — Classe e efeito adverso"
+        ],
+        [
+          "p",
+          "Qual associação está correta?"
+        ],
+        [
+          "p",
+          "A. Mirtazapina costuma ser opção sem qualquer sedação ou aumento de apetite.  \r<br>B. Bupropiona é obrigatoriamente segura em epilepsia ativa.  \r<br>C. Tricíclicos podem ter maior toxicidade cardíaca em sobredose, importante ao avaliar segurança.  \r<br>D. Venlafaxina nunca exige redução gradual.  \r<br>E. Fluoxetina tem meia-vida ultracurta."
+        ],
+        [
+          "p",
+          "<strong>Gabarito C.</strong> A ignora sedação/apetite; B omite contraindicações convulsivas; D ignora retirada; E inverte farmacocinética. <strong>Revisão:</strong> escolher medicação envolve interações e riscos, não só eficácia média."
+        ],
+        [
+          "3",
+          "Questão 7 — Ausência de resposta"
+        ],
+        [
+          "p",
+          "Pessoa não melhorou após “três antidepressivos”, tomados por apenas cinco dias cada. O melhor raciocínio:"
+        ],
+        [
+          "p",
+          "A. Diagnosticar depressão resistente definitiva.  \r<br>B. Revisar duração, dose, tolerância, adesão, substâncias e diagnóstico antes de afirmar resistência e escalar combinações.  \r<br>C. Indicar sempre quatro antidepressivos simultâneos.  \r<br>D. Concluir que psicoterapia é inútil.  \r<br>E. Excluir depressão por falta de resposta em cinco dias."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A/C são atalhos inadequados; D/E não seguem evidências. <strong>Revisão:</strong> ensaio adequado é pré-requisito para interpretar não resposta."
+        ],
+        [
+          "3",
+          "Questão 8 — Retirada da venlafaxina"
+        ],
+        [
+          "p",
+          "Após interrupção brusca de venlafaxina, surgem tonturas e sintomas sensoriais em poucos dias. Qual hipótese?"
+        ],
+        [
+          "p",
+          "A. Retirada/descontinuação relacionada ao medicamento, exigindo revisão do plano de redução.  \r<br>B. Comprovação definitiva de dependência química.  \r<br>C. Efeito obrigatório de hipertireoidismo.  \r<br>D. Prova de esquizofrenia.  \r<br>E. Não há possibilidade de sintomas por suspensão."
+        ],
+        [
+          "p",
+          "<strong>Gabarito A.</strong> B estigmatiza/inferência errada; C/D não decorrem do curso; E contraria farmacologia. <strong>Revisão:</strong> redução precisa ser individualizada, por vezes por meses."
+        ],
+        [
+          "3",
+          "Questão 9 — Segurança e escalas"
+        ],
+        [
+          "p",
+          "Qual uso de escalas é compatível com NICE NG225?"
+        ],
+        [
+          "p",
+          "A. Escore isolado como critério para liberar todo paciente.  \r<br>B. Categoria “baixo risco” garante que não haverá suicídio.  \r<br>C. Avaliar necessidades de segurança e formular plano clínico; escalas não predizem nem decidem alta sozinhas.  \r<br>D. Nunca realizar avaliação de autoagressão após atendimento físico.  \r<br>E. Hospitalizar toda pessoa com qualquer pensamento intrusivo sem avaliação."
+        ],
+        [
+          "p",
+          "<strong>Gabarito C.</strong> A/B contrariam diretriz; D omite cuidado psicossocial; E ignora individualização. <strong>Revisão:</strong> descrição concreta de necessidades é mais útil que rótulo preditivo."
+        ],
+        [
+          "3",
+          "Questão 10 — Início do cuidado em urgência"
+        ],
+        [
+          "p",
+          "Pessoa em depressão grave, sem conseguir alimentar-se e com delírios de culpa e desidratação. Melhor princípio:"
+        ],
+        [
+          "p",
+          "A. Apenas autoajuda guiada e retorno em três meses.  \r<br>B. Tratamento urgente em serviço especializado e estabilização clínica; considerar ECT em cenário grave que exige resposta rápida.  \r<br>C. Desconsiderar sinais clínicos se PHQ-9 estiver baixo.  \r<br>D. Prescrever antidepressivo e ignorar incapacidade de autocuidado.  \r<br>E. Esperar que a pessoa concorde com todo quadro antes de pedir avaliação."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A/D postergam urgência; C confunde escala; E desconsidera necessidade de avaliação e capacidade decisória. <strong>Revisão:</strong> ECT pode ser legítima em depressão com ameaça vital, conforme NICE NG222."
+        ],
+        [
+          "3",
+          "Questão 11 — Notificação no SUS"
+        ],
+        [
+          "p",
+          "Após atendimento por tentativa de suicídio no Brasil, qual atitude é correta?"
+        ],
+        [
+          "p",
+          "A. Não notificar porque é evento privado.  \r<br>B. Considerar notificação compulsória imediata de violência autoprovocada conforme fluxo normativo e manter cuidado clínico e sigilo adequado.  \r<br>C. Substituir atendimento por formulário.  \r<br>D. Publicar detalhes no grupo de comunidade.  \r<br>E. Só notificar quando houver óbito."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A/E ignoram vigilância; C deixa pessoa sem cuidado; D viola privacidade. <strong>Revisão:</strong> notificação é obrigação de saúde pública e <strong>não substitui assistência</strong>."
+        ],
+        [
+          "3",
+          "Questão 12 — Depressão e tireoide"
+        ],
+        [
+          "p",
+          "Paciente apresenta humor deprimido, fadiga e constipação. Exame sugere hipotireoidismo. Melhor conduta:"
+        ],
+        [
+          "p",
+          "A. Ignorar tireoide porque depressão é sempre exclusivamente psíquica.  \r<br>B. Investigar clinicamente TSH conforme história, avaliar possibilidade de coexistência e tratar cada condição apropriada.  \r<br>C. Dosar todas as citocinas para confirmar depressão.  \r<br>D. Fechar bipolaridade sem história de hipomania.  \r<br>E. Considerar toda fadiga sinal de câncer."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A não reconhece diferencial; C não é diagnóstico rotineiro; D/E não seguem evidência. <strong>Revisão:</strong> transtornos de humor e doenças clínicas podem coexistir."
+        ],
+        [
+          "3",
+          "Questão 13 — PHQ-9 e alta"
+        ],
+        [
+          "p",
+          "Pessoa tem PHQ-9 com sintomas melhorados mas relata preocupação imediata de não conseguir manter segurança no domicílio. Qual interpretação?"
+        ],
+        [
+          "p",
+          "A. Remissão numérica autoriza alta automática.  \r<br>B. Situação exige avaliação de segurança e plano real de apoio/encaminhamento, independentemente da pontuação.  \r<br>C. A pergunta de segurança não precisa ser feita em remissão.  \r<br>D. Escore sozinho prediz meses seguintes.  \r<br>E. A pessoa deve assinar promessa de segurança como única medida."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A/C/D substituem avaliação por número; E usa contrato como falso substituto de cuidado. <strong>Revisão:</strong> dimensão clínica de segurança é paralela à gravidade dos sintomas."
+        ],
+        [
+          "3",
+          "Questão 14 — Continuação do antidepressivo"
+        ],
+        [
+          "p",
+          "Após remissão de primeiro episódio depressivo em uso de ISRS bem tolerado, qual atitude é mais adequada em linhas gerais?"
+        ],
+        [
+          "p",
+          "A. Suspender no dia seguinte à primeira melhora.  \r<br>B. Discutir manutenção após remissão e reavaliar, em geral por pelo menos seis meses conforme NICE, considerando recorrência e preferência.  \r<br>C. Manter vitaliciamente em todos sem revisão.  \r<br>D. Trocar automaticamente para IMAO.  \r<br>E. Não acompanhar efeitos adversos se humor melhorou."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A aumenta riscos; C não individualiza; D é incorreto; E ignora segurança. <strong>Revisão:</strong> continuação e prevenção de recaída são fases do tratamento."
+        ]
+      ]
+    ],
+    [
+      "14-camada-visual-imagens-e-esquemas-previstos-sem-licenca-presumida",
+      0,
+      [
+        [
+          "2",
+          "14. Camada visual: imagens e esquemas previstos, sem licença presumida"
+        ],
+        [
+          "p",
+          "A temática envolve comunicação e segurança: <strong>não usar fotografias estigmatizantes de pessoas chorando, braços feridos ou cenas de autoagressão para decorar material</strong>. Priorizar esquemas autorais e materiais clínicos de valor real, evitando gatilhos visuais desnecessários. Todos os itens são <strong>candidatos</strong>, não mídias já encontradas, licenciadas ou aprovadas."
+        ],
+        [
+          "t",
+          [
+            "Candidato de imagem / infográfico",
+            "Onde inserir",
+            "Legenda/função"
+          ],
+          [
+            [
+              "Diagrama original de episódio depressivo por domínios",
+              "3",
+              "Humor/anedonia mais sono, energia, cognição, psicomotricidade, segurança"
+            ],
+            [
+              "Esquema de fisiopatologia multifatorial",
+              "2",
+              "Estresse, circuito de recompensa, sono, plasticidade e ambiente"
+            ],
+            [
+              "Fluxo original de diagnóstico depressão × bipolaridade",
+              "4/6",
+              "Busca ativa de história de mania/hipomania antes de prescrever"
+            ],
+            [
+              "Quadro visual luto versus episódio depressivo",
+              "6",
+              "Sobreposição, diferenciais, coexistência"
+            ],
+            [
+              "Fluxo APS de cuidado escalonado adaptado de conceitos, não copiado de figura MS",
+              "7/8",
+              "Menos grave, mais grave, critérios de encaminhamento"
+            ],
+            [
+              "Guia comparativo autoral de classes antidepressivas",
+              "9",
+              "Mecanismos, efeitos e cautelas"
+            ],
+            [
+              "Linha do tempo de início, revisão e manutenção",
+              "9",
+              "Reavaliação precoce, resposta, remissão, manutenção"
+            ],
+            [
+              "Quadro original de sintomas de retirada versus recaída",
+              "9",
+              "Tempo, sintomas somáticos e prevenção"
+            ],
+            [
+              "Algoritmo clínico de avaliação de segurança",
+              "10",
+              "Sofrimento → necessidades imediatas → apoio → plano → seguimento"
+            ],
+            [
+              "Modelo não sensacionalista de plano de segurança",
+              "10",
+              "Sinais pessoais, rede, acesso a serviços e ambiente protegido"
+            ],
+            [
+              "Fluxo clínico de quadro grave com psicose/catatonia",
+              "11",
+              "Urgência e encaminhamento especializado"
+            ],
+            [
+              "Tabela visual de metas funcionais",
+              "8/9",
+              "Além de escore: sono, autocuidado, retorno a atividades"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Direitos autorais e administração:</strong> elaboração gráfica original pela LURIA é preferível. Se buscar imagens externas, verificar licença compatível com uso comercial, créditos, contexto, acessibilidade, consentimento e adequação ética; nenhuma imagem foi inserida em HTML/Admin nesta etapa."
+        ]
+      ]
+    ],
+    [
+      "15-referencias-verificaveis-data-e-aplicabilidade",
+      0,
+      [
+        [
+          "2",
+          "15. Referências verificáveis, data e aplicabilidade"
+        ],
+        [
+          "p",
+          "1. <strong>Brasil — Ministério da Saúde.</strong> <em>Linha de Cuidado da Depressão no Adulto: manejo inicial/conduta (APS)</em>. Página com recomendações para avaliação de risco de suicídio, acolhimento, família/rede, referência e notificação de violência autoprovocada. Disponível em: <https://linhasdecuidado.saude.gov.br/portal/depressao/unidade-de-atencao-primaria/manejo-inicial-conduta/>. <strong>Linha publicada em 2022; confirmar normas de notificação e protocolos locais vigentes em 2026</strong>.\r<br>2. <strong>Brasil — Ministério da Saúde.</strong> <em>Depressão no adulto — planejamento terapêutico na atenção especializada</em>. <https://linhasdecuidado.saude.gov.br/portal/depressao/atencao-especializada/planejamento-terapeutico/>. Interação APS–CAPS e PHQ-9 no acompanhamento.\r<br>3. <strong>NICE.</strong> <em>Depression in adults: treatment and management</em>. <strong>NG222</strong>, 2022. <https://www.nice.org.uk/guidance/ng222/chapter/recommendations>. Fonte principal de cuidado escalonado, tratamento, retorno, segurança ao iniciar medicação, manutenção, retirada e ECT.\r<br>4. <strong>NICE.</strong> <em>Self-harm: assessment, management and preventing recurrence</em>. <strong>NG225</strong>, 2022. <https://www.nice.org.uk/guidance/ng225/chapter/recommendations>. Fonte para <strong>não usar escalas ou classificação baixo/médio/alto como preditores/critério de alta</strong> e para plano colaborativo de segurança.\r<br>5. <strong>Organização Mundial da Saúde.</strong> <em>Mental Health Gap Action Programme (mhGAP) guideline for mental, neurological and substance use disorders</em>, <strong>3ª ed. 2023</strong>. <https://www.who.int/publications/i/item/9789240084278>. Manejo em serviços não especializados. A licença da obra é CC BY-NC-SA 3.0 IGO; o texto aqui é original e não reproduz o manual.\r<br>6. <strong>Canadian Network for Mood and Anxiety Treatments (CANMAT).</strong> <em>2023 Update to CANMAT Clinical Guidelines for Adults with Major Depressive Disorder</em>, recursos oficiais em <https://www.canmat.org/2025/04/29/major-depressive-disorder-guidelines-related-resources/>. Conferir sempre a referência primária da atualização para detalhes de hierarquia de tratamento.\r<br>7. <strong>DailyMed/NLM.</strong> <em>Fluoxetine — oral capsule, prescribing information</em>, seção 2.1 Major Depressive Disorder. <https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b1409772-e719-67f5-e053-2995a90ab5b6>. Confirma início de <strong>20 mg/dia em adulto</strong> para a apresentação indicada, com teto de 80 mg/dia; não implica disponibilidade/formulação brasileiras equivalentes.\r<br>8. <strong>DailyMed/NLM.</strong> <em>Venlafaxine hydrochloride extended-release tablets, prescribing information</em>. <https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fdaed1c2-dd0a-4bf3-975a-86fe3e7f0c97>. Confirma início de <strong>75 mg/dia</strong> (37,5 mg temporário em alguns pacientes) e dose máxima de <strong>225 mg/dia para aquela apresentação</strong>.\r<br>9. <strong>DailyMed/NLM.</strong> <em>Sertraline hydrochloride tablets — Major Depressive Disorder</em>. Bula com início adulto de <strong>50 mg uma vez ao dia</strong>. <https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=40be43b2-649b-0928-e063-6394a90a3b48>.\r<br>10. <strong>DailyMed/NLM.</strong> <em>Escitalopram oxalate tablets — Major Depressive Disorder</em>. Bula com início adulto de <strong>10 mg uma vez ao dia</strong>, limite usual <strong>20 mg/dia</strong> para apresentação descrita. <https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d5fbc8ce-bd41-4bd0-b413-0dea97e596c3>."
+        ],
+        [
+          "p",
+          "11. <strong>NICE.</strong> <em>Bipolar disorder: assessment and management</em>. <strong>CG185</strong> (2014, com atualizações subsequentes inclusive 2023/2025). <https://www.nice.org.uk/guidance/cg185/chapter/recommendations>. Fonte para diferenciar depressão bipolar antes de monoterapia antidepressiva.\r<br>12. <strong>Yatham LN et al.</strong> <em>CANMAT and ISBD Guidelines for the Treatment of Bipolar Disorder: Summary and a 2023 Update of Evidence</em>, texto integral em <https://pmc.ncbi.nlm.nih.gov/articles/PMC11058959/>. Fonte de precaução com monoterapia antidepressiva na bipolaridade I, aprofundada na aula 212."
+        ],
+        [
+          "p",
+          "<strong>Checagem futura:</strong> confirmar bula Anvisa/Rename e tabelas de apresentação/doses brasileiras específicas antes de incorporar a um sistema de prescrição. O quadro posológico é de referência acadêmica para adultos, não prescrição individualizada."
+        ]
+      ]
+    ],
+    [
+      "16-quadro-final-de-memorizacao-clinica",
+      0,
+      [
+        [
+          "2",
+          "16. Quadro final de memorização clínica"
+        ],
+        [
+          "p",
+          "<strong>Suspeita de depressão:</strong> humor deprimido ou anedonia persistentes, outros domínios afetivos/biológicos, prejuízo e duração → avaliar segurança → procurar histórico de hipomania/mania e causas médicas → classificar gravidade e preferências → escolher cuidado escalonado → reavaliar precocemente → monitorar resposta/remissão e planejar manutenção."
+        ],
+        [
+          "p",
+          "<strong>Se há risco atual significativo:</strong> apoiar/acolher, avaliar segurança, condições clínicas e capacidade de autocuidado, envolver equipe/rede apropriada, garantir transferência e seguimento reais. <strong>Nunca dar alta só por escala.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Se antidepressivo está em uso:</strong> conferir adesão, dose/tempo, tolerabilidade, alterações do humor, agitação e pensamentos de autoagressão; reavaliar por necessidade, não apenas por calendário fixo. <strong>Não suspender abruptamente</strong> sem considerar síndrome de retirada."
+        ],
+        [
+          "p",
+          "<strong>Se há psicose/catatonia/risco vital:</strong> cuidado especializado urgente; ECT pode ser considerada em depressão grave que exige resposta rápida."
+        ]
+      ]
+    ],
+    [
+      "17-autoauditoria-e-pendencias",
+      0,
+      [
+        [
+          "2",
+          "17. Autoauditoria e pendências"
+        ],
+        [
+          "p",
+          "<li><strong>Estrutura:</strong> conceitos, fisiopatologia, diagnóstico com temporalidade/criteriologia, diferenciais, gravidade, psicoterapia, fármacos, segurança, cuidado especializado, <strong>9 casos</strong> e <strong>14 questões originais comentadas</strong>.</li>\r<li><strong>Fonte do Drive:</strong> somente resumos de <strong>síndromes cognitivas</strong> e <strong>vigilância epidemiológica</strong> com conteúdos correlatos, não há obra equivalente integral confirmada; logo, etapa zero comparativa <strong>NÃO CERTIFICADA</strong>.</li>\r<li><strong>Ciência:</strong> houve confronto externo com Ministério da Saúde, NICE, OMS, CANMAT e bulas norte-americanas de duas apresentações. Requer <strong>revisão clínica independente por psiquiatra</strong>, conferência de critérios CID-11/DSM, atos normativos de notificação em 2026, disponibilidade/formulações de fármacos e ética em pronto-atendimento.</li>\r<li><strong>Imagens:</strong> 12 itens candidatos previstos, <strong>nenhuma</strong> imagem médica aprovada/licenciada/inserida.</li>\r<li><strong>Contagem:</strong> número bruto de caracteres Markdown não equivale a “60 mil caracteres úteis” após excluir referências/controles, tabelas repetitivas ou elementos não didáticos.</li>\r<li><strong>Integridade do site:</strong> nenhuma página HTML/JS, catálogo, Supabase, branch \\`main\\` ou deploy foram alterados. <strong>Rascunho isolado</strong>, sem conclusão clínica certificada.</li>\r<li><strong>Próximo tema oficial do lote:</strong> <strong>212 — Transtorno bipolar e episódios do humor</strong>, após checar fontes e ausência de livro equivalente no Drive. Foco próprio: mania, hipomania, depressão bipolar, mistos, estabilização, lítio, anticonvulsivantes, antipsicóticos e vigilância.</li>"
+        ]
+      ]
+    ]
+  ]
+}

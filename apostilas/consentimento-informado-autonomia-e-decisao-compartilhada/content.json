@@ -1,0 +1,1408 @@
+{
+  "v": 2,
+  "s": "consentimento-informado-autonomia-e-decisao-compartilhada",
+  "t": "Consentimento Informado, Autonomia e Decisão Compartilhada",
+  "p": "Consentimento Informado, Autonomia e Decisão Compartilhada — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance em Bioética Principialista, Processo de Consentimento Livre e Esclarecido, Recusa Terapêutica, Diretivas Antecipadas de Vontade e Shared Decision Making",
+  "a": "Saúde Coletiva",
+  "m": "Saúde Coletiva",
+  "h": [
+    "Apostila LURIA",
+    "Consentimento Informado, Autonomia e Decisão Compartilhada",
+    "Tratado de Alta Performance em Bioética Principialista, Processo de Consentimento Livre e Esclarecido, Recusa Terapêutica, Diretivas Antecipadas de Vontade e Shared Decision Making",
+    [
+      "Área: Saúde Coletiva",
+      "Matéria: Saúde Coletiva",
+      "Tema: Consentimento Informado, Autonomia e Decisão Compartilhada"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "fundamentos-filosoficos-e-bioetica-principialista",
+      "1. Fundamentos Filosóficos e a Bioética Principialista de Beauchamp e Childress"
+    ],
+    [
+      "paternalismo-medico-modelos-de-relacao-e-autonomia-relacional",
+      "2. Paternalismo Médico, Modelos da Relação Médico-Paciente e Autonomia Relacional"
+    ],
+    [
+      "processo-de-consentimento-livre-e-esclarecido-e-requisitos-de-validade",
+      "3. O Processo de Consentimento Livre e Esclarecido (PCLE) e Requisitos de Validade"
+    ],
+    [
+      "excecoes-ao-consentimento-e-recusa-terapeutica-testemunhas-de-jeova",
+      "4. Exceções ao Consentimento, Privilégio Terapêutico e Recusa Terapêutica (Testemunhas de Jeová — STF Temas 952 e 1069)"
+    ],
+    [
+      "capacidade-decisoria-em-criancas-e-adolescentes-assentimento-e-menor-maduro",
+      "5. Capacidade Decisória em Crianças e Adolescentes: Assentimento Informado e Doutrina do Menor Maduro"
+    ],
+    [
+      "diretivas-antecipadas-de-vontade-testamento-vital-e-mandato-duradouro",
+      "6. Diretivas Antecipadas de Vontade (DAV): Testamento Vital e Mandato Duradouro (Resolução CFM nº 1.995/2012)"
+    ],
+    [
+      "decisao-compartilhada-shared-decision-making-e-comunicacao-de-riscos",
+      "7. Decisão Compartilhada (Shared Decision Making), Decision Aids e Comunicação de Riscos (RRA, RRR, NNT e NNH)"
+    ],
+    [
+      "comunicacao-de-mas-noticias-protocolo-spikes-e-conspiracao-do-silencio",
+      "8. Comunicação de Más Notícias (Protocolo SPIKES), Conspiração do Silêncio e Objeção de Consciência Médica"
+    ],
+    [
+      "casos-clinicos-resolvidos-consentimento-autonomia-e-decisao-compartilhada",
+      "9. Casos Clínicos Resolvidos passo a passo (Raciocínio Ético, Jurídico e Clínico)"
+    ],
+    [
+      "questoes-comentadas-residencia-revalida-enamed-aula-223",
+      "10. Questões Comentadas de Alta Performance (Residência Médica, Revalida e ENAMED)"
+    ],
+    [
+      "tabela-resumo-high-yield-e-pontos-chave-aula-223",
+      "11. Síntese High-Yield e Tabela de Revisão Rápida para Véspera de Prova"
+    ]
+  ],
+  "q": [
+    [
+      "fundamentos-filosoficos-e-bioetica-principialista",
+      0,
+      [
+        [
+          "2",
+          "1. Fundamentos Filosóficos e a Bioética Principialista de Beauchamp e Childress"
+        ],
+        [
+          "3",
+          "A Génese Histórica da Bioética Moderna e a Superação do Paternalismo Hipocrático"
+        ],
+        [
+          "p",
+          "Durante mais de vinte e quatro séculos, a ética médica ocidental permaneceu ancorada nos preceitos hipocráticos clássicos, estruturados sob uma matriz profundamente assimétrica, vertical e paternalista. No Juramento de Hipócrates e nos textos do <em>Corpus Hippocraticum</em>, o médico era concebido como o único detentor do saber técnico e moral acerca do que constituía o \"bem\" do enfermo, cabendo ao paciente um papel estritamente passivo de obediência, submissão e confiança irrestrita (o princípio da beneficência paternalista sintetizado no aforismo <em>\"tudo pelo doente, mas nada através do doente\"</em>). Nesse paradigma, ocultar diagnósticos sombrios, manipular informações prognósticas ou impor intervenções sem anuência não apenas eram condutas toleradas, como frequentemente recomendadas para preservar a serenidade anímica do enfermo."
+        ],
+        [
+          "p",
+          "A ruptura epistemológica e normativa com o paternalismo médico tradicional consolidou-se na segunda metade do século XX, impulsionada por três grandes vetores históricos: (1) a revelação das atrocidades cometidas por médicos nazistas em campos de concentração durante a Segunda Guerra Mundial, julgadas no Tribunal Militar Internacional de Nuremberg (1946–1947), que culminou na promulgação do <strong>Código de Nuremberg (1947)</strong> — o primeiro documento normativo internacional a declarar, em seu Artigo 1º, que <em>\"o consentimento voluntário do ser humano é absolutamente essencial\"</em>; (2) a exposição de escândalos éticos em pesquisas biomédicas realizadas em democracias ocidentais no pós-guerra, notadamente o artigo seminal de Henry Beecher no <em>New England Journal of Medicine</em> (1966) denunciando 22 experimentos antiéticos nos Estados Unidos, o estudo de hepatite na escola de crianças com deficiência intelectual de Willowbrook (Nova York) e, de modo paradigmático, o <strong>Estudo de Sífilis Não Tratada de Tuskegee (1932–1972)</strong>, conduzido pelo Serviço Público de Saúde norte-americano com 600 homens afro-americanos no Alabama, aos quais foi deliberadamente negada a penicilina mesmo décadas após sua descoberta como tratamento curativo eficaz; e (3) a revolução biotecnológica das décadas de 1960 e 1970 (advento da hemodiálise crônica, ventilação mecânica invasiva, unidades de terapia intensiva e transplantes de órgãos) aliada aos movimentos civis pelos direitos dos pacientes e dos consumidores nos tribunais norte-americanos."
+        ],
+        [
+          "p",
+          "O clamor público diante do escândalo de Tuskegee levou o Congresso dos Estados Unidos a instituir a Comissão Nacional para a Proteção de Sujeitos Humanos na Pesquisa Biomédica e Comportamental, cujos trabalhos resultaram no <strong>Relatório Belmont (1978/1979)</strong>. Esse documento estabeleceu três princípios éticos básicos para a pesquisa envolvendo seres humanos: o <strong>Respeito pelas Pessoas</strong> (tutela da autodeterminação de indivíduos autônomos e proteção especial àqueles com autonomia diminuída), a <strong>Beneficência</strong> (maximizar benefícios possíveis e minimizar danos) e a <strong>Justiça</strong> (distribuição equitativa dos encargos e benefícios da pesquisa). Em 1979, o filósofo Tom L. Beauchamp e o teólogo e filósofo James F. Childress publicaram a obra <em>Principles of Biomedical Ethics</em>, expandindo a matriz do Relatório Belmont para toda a prática clínica assistencial e desmembrando a Beneficência e a Não Maleficência em dois princípios distintos. Nascia assim a <strong>Bioética Principialista</strong> (ou Principialismo da Escola de Georgetown), o referencial teórico-prático hegemônico na medicina contemporânea e nas provas de Residência Médica, Revalida e ENAMED."
+        ],
+        [
+          "3",
+          "Os Quatro Princípios Prima Facie de Beauchamp e Childress"
+        ],
+        [
+          "p",
+          "Na arquitetura filosófica de Beauchamp e Childress, os quatro princípios — <strong>Autonomia, Beneficência, Não Maleficência e Justiça</strong> — não são regras absolutas nem possuem uma hierarquia rígida e imutável estabelecida a priori. Eles operam sob o conceito ético de <strong>deveres <em>prima facie</em></strong> (formulado originalmente pelo filósofo britânico W. D. Ross): um princípio <em>prima facie</em> é vinculante e obrigatório em todas as circunstâncias, a menos que entre em conflito direto, em uma situação concreta específica, com outro princípio de igual ou maior peso moral. Quando dois princípios colidem na beira do leito (por exemplo, o respeito à autonomia de um paciente que recusa uma intervenção versus o dever de beneficência do médico em preservar sua saúde), o profissional deve realizar um exercício estruturado de <strong>especificação</strong> (delimitação contextual do escopo das normas) e <strong>ponderação ou sopesamento</strong> (<em>balancing</em>), buscando a alternativa que produza a menor infringência possível aos princípios envolvidos, respeitando as balizas de proporcionalidade e necessidade."
+        ],
+        [
+          "4",
+          "1. Princípio do Respeito à Autonomia"
+        ],
+        [
+          "p",
+          "Etimologicamente derivado do grego <em>autos</em> (próprio, si mesmo) e <em>nomos</em> (lei, regra, governo), o conceito de autonomia designava originalmente a autogovernação política das cidades-estado helênicas, sendo posteriormente transposto para a esfera moral individual pela filosofia iluminista, especialmente na <strong>ética deontológica de Immanuel Kant</strong> (segundo a qual a pessoa racional possui dignidade intrínseca e deve ser tratada sempre como um fim em si mesma, e jamais meramente como um meio para os fins de outrem) e no <strong>liberalismo utilitarista de John Stuart Mill</strong> (na obra <em>On Liberty</em>, que postula que sobre si mesmo, sobre seu próprio corpo e mente, o indivíduo é soberano, não cabendo ao Estado ou à coletividade interferir em suas escolhas desde que estas não causem dano direto a terceiros)."
+        ],
+        [
+          "p",
+          "Na bioética clínica, a autonomia traduz-se na capacidade de o indivíduo autogovernar-se, deliberar racionalmente sobre seus objetivos pessoais e agir livremente de acordo com um plano de vida próprio e um sistema de valores, crenças e preferências autênticas, livre de limitações internas (como distúrbios cognitivos ou psiquiátricos graves) e de coerções externas. O respeito à autonomia impõe ao médico uma <strong>obrigação negativa</strong> (não submeter ações autônomas a controles coercitivos, manipulações ou fraudes) e uma <strong>obrigação positiva</strong> (revelar informações de forma clara e compreensível, assegurar o entendimento, remover barreiras comunicacionais e fomentar ativamente a capacidade de decisão independente do paciente). No Código de Ética Médica brasileiro (Resolução CFM nº 2.217/2018), a autonomia está consagrada no Capítulo I (Princípios Fundamentais, inciso XXI) e nos artigos 22, 24 e 31, que vedam ao médico deixar de obter consentimento ou desrespeitar o direito do paciente de decidir livremente sobre a execução de práticas diagnósticas ou terapêuticas, salvo em caso de iminente risco de morte."
+        ],
+        [
+          "4",
+          "2. Princípio da Não Maleficência"
+        ],
+        [
+          "p",
+          "Ancorado na máxima latina <em>primum non nocere</em> (\"em primeiro lugar, não causar dano\"), o princípio da não maleficência determina a obrigação ética estrita de não infligir dano intencional ao paciente e de não expô-lo a riscos desnecessários, desproporcionais ou destituídos de benefício clínico comprovado. Trata-se de um dever predominantemente negativo (abstenção de lesar), que abrange não apenas a proibição de atos dolosos contra a vida e a integridade física ou psíquica, mas também a prevenção das três modalidades clássicas de culpa médica previstas na responsabilidade civil e ética (Art. 1º do Código de Ética Médica):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Imperícia:</strong> falta de aptidão técnica, teórica ou prática para o exercício de determinado ato médico (o profissional realiza um procedimento sem possuir o treinamento, a qualificação ou o domínio técnico exigidos);",
+            "<strong>Imprudência:</strong> ação comissiva precipitada, intempestiva ou realizada sem a cautela necessária, assumindo riscos injustificáveis que poderiam ser evitados (agir além dos limites da segurança clínica);",
+            "<strong>Negligência:</strong> omissão, passividade, desleixo, indolência ou falta de diligência e cuidado no cumprimento de um dever assistencial (deixar de fazer o que a boa prática médica determina, como omitir monitorização pós-operatória, não checar exames críticos ou abandonar o plantão)."
+          ]
+        ],
+        [
+          "p",
+          "Contemporaneamente, a não maleficência desdobra-se ainda na <strong>Prevenção Quaternária</strong> (conceito cunhado por Marc Jamoulle na Medicina de Família e Comunidade), definida como o conjunto de ações voltadas a identificar pacientes em risco de <strong>sobremedicalização</strong> ou intervencionismo excessivo (<em>overdiagnosis</em> e <em>overtreatment</em>), protegendo-os de novas intervenções médicas invasivas e iatrogênicas, bem como na recusa da <strong>obstinação terapêutica (distanásia)</strong> em pacientes em fase final de doença incurável e irreversível."
+        ],
+        [
+          "4",
+          "3. Princípio da Beneficência"
+        ],
+        [
+          "p",
+          "Enquanto a não maleficência exige que o médico se abstenha de causar mal, a beneficência impõe uma <strong>obrigação positiva de agir em benefício do paciente</strong>: promover ativamente a saúde, prevenir e remover danos, aliviar o sofrimento álgico e existencial e maximizar os benefícios clínicos ponderando-os criteriosamente frente aos riscos e custos inerentes a qualquer intervenção diagnóstica ou terapêutica. Na prática clínica diária, a não maleficência e a beneficência operam de modo indissociável na equação risco-benefício: ao prescrever uma quimioterapia citotóxica ou realizar uma cirurgia de grande porte, o médico inevitavelmente causa danos teciduais e efeitos adversos (aparente tensão com a não maleficência), mas tal conduta é plenamente justificada pela beneficência, desde que o benefício esperado (cura oncológica, aumento da sobrevida ou alívio sintomático) supere substancialmente os riscos assumidos e conte com o consentimento esclarecido do paciente."
+        ],
+        [
+          "4",
+          "4. Princípio da Justiça"
+        ],
+        [
+          "p",
+          "Na esfera biomédica, a justiça refere-se primordialmente à <strong>justiça distributiva</strong>, isto é, à distribuição equitativa, imparcial e apropriada dos direitos, encargos, responsabilidades e recursos escassos de saúde na sociedade. O princípio formal da justiça, atribuído a Aristóteles, estabelece que <em>\"os iguais devem ser tratados de forma igual, e os desiguais devem ser tratados de forma desigual, na exata medida de suas desigualdades\"</em>. No contexto do Sistema Único de Saúde (SUS) e da saúde coletiva, esse preceito fundamenta a distinção essencial entre <strong>igualdade</strong> (oferta uniforme de serviços a todos, indistintamente) e <strong>equidade</strong> (alocação diferenciada e prioritária de atenção, tecnologia e recursos financeiros para os indivíduos e grupos populacionais com maior vulnerabilidade biológica ou social, reduzindo disparidades injustas e evitáveis). Na microalocação clínica (como na triagem de leitos de UTI ou nas listas únicas de transplantes de órgãos), a justiça veda qualquer discriminação baseada em posição socioeconômica, etnia, gênero, religião, orientação sexual ou julgamento moral sobre o estilo de vida do paciente, exigindo critérios estritamente técnicos, epidemiológicos e transparentes de gravidade, urgência e probabilidade de benefício clínico."
+        ],
+        [
+          "t",
+          [
+            "Princípio Bioético",
+            "Natureza da Obrigação Moral",
+            "Essência Conceitual e Filosófica",
+            "Aplicações Práticas e Expressões no Código de Ética Médica (CEM)"
+          ],
+          [
+            [
+              "<strong>Autonomia</strong>",
+              "Negativa (não coagir/manipular) e Positiva (informar, esclarecer e capacitar para a escolha)",
+              "Autodeterminação racional e liberdade moral do indivíduo competente para decidir sobre seu próprio corpo, saúde e plano de vida (Kant e J. S. Mill).",
+              "Processo de Consentimento Livre e Esclarecido (TCLE), Direito à Recusa Terapêutica informada, Diretivas Antecipadas de Vontade (Testamento Vital), Sigilo e Privacidade (Arts. 22, 24, 31 e 73 do CEM)."
+            ],
+            [
+              "<strong>Não Maleficência</strong>",
+              "Negativa e contínua (abster-se de lesar ou impor risco injustificado)",
+              "<em>Primum non nocere</em>: proibição estrita de causar dano intencional ou expor o paciente a iatrogenia evitável.",
+              "Prevenção de imperícia, imprudência e negligência (Art. 1º do CEM); Prevenção Quaternária; vedação à distanásia/obstinação terapêutica e ao abandono de paciente (Arts. 36 e 41 do CEM)."
+            ],
+            [
+              "<strong>Beneficência</strong>",
+              "Positiva (dever de agir ativamente para promover o bem e restaurar a saúde)",
+              "Maximizar benefícios clínicos, prevenir agravos, curar quando possível e aliviar o sofrimento físico e psíquico sempre.",
+              "Uso da melhor evidência científica disponível em prol do paciente; cuidados paliativos e ortotanásia; dever de socorro em urgências e emergências médicas (Cap. I, incisos II e V; Art. 33 do CEM)."
+            ],
+            [
+              "<strong>Justiça</strong>",
+              "Social, Institucional e Distributiva",
+              "Equidade na alocação de recursos em saúde; tratamento imparcial sem discriminação e priorização conforme necessidade e vulnerabilidade.",
+              "Universalidade e Equidade no SUS (Lei 8.080/90); critérios técnicos de regulação de vagas e fila de transplantes; atendimento sem discriminação de qualquer natureza (Cap. I, inciso I; Art. 23 do CEM)."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "paternalismo-medico-modelos-de-relacao-e-autonomia-relacional",
+      0,
+      [
+        [
+          "2",
+          "2. Paternalismo Médico, Modelos da Relação Médico-Paciente e Autonomia Relacional"
+        ],
+        [
+          "3",
+          "Paternalismo Médico: Conceito, Tipologia (Forte vs. Fraco) e Limites Éticos"
+        ],
+        [
+          "p",
+          "Define-se <strong>paternalismo médico</strong> (ou parentalismo) como a interferência intencional do profissional de saúde nas preferências, desejos ou ações de um paciente, ou a omissão deliberada de informações relevantes, justificada exclusivamente pela alegação de promover o bem-estar, a saúde ou a proteção daquele próprio indivíduo contra danos autoinfligidos. No paternalismo, o princípio da beneficência (sob a ótica unilateral do médico) sobrepõe-se e anula o princípio do respeito à autonomia do paciente."
+        ],
+        [
+          "p",
+          "A filosofia moral e a bioética estabelecem uma distinção analítica crucial entre duas formas de paternalismo:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Paternalismo Fraco (ou Paternalismo Brando / <em>Soft Paternalism</em>):</strong> Ocorre quando o médico intervém para proteger um paciente de um dano grave em circunstâncias nas quais a ação ou escolha do indivíduo é <strong>substancialmente não autônoma</strong> (ou quando é necessário intervir temporariamente para averiguar se a pessoa está agindo de forma autônoma). São exemplos clássicos: conter fisicamente ou sedar um paciente em estado de <em>delirium</em> hiperativo agudo que tenta arrancar um cateter venoso central ou se jogar do leito; realizar lavagem gástrica ou administrar antídoto em um paciente que ingeriu dose letal de medicamentos durante um episódio depressivo maior com ideação suicida aguda; ou intervir em emergência médica em paciente inconsciente ou com rebaixamento do nível de consciência (Escala de Coma de Glasgow rebaixada, intoxicação exógena severa, choque hipovolêmico). O paternalismo fraco é <strong>eticamente e juridicamente legítimo</strong>, pois não há verdadeira violação da autonomia onde a capacidade cognitiva e volitiva encontra-se abolida ou severamente comprometida.",
+            "<strong>Paternalismo Forte (ou Paternalismo Duro / <em>Hard Paternalism</em>):</strong> Ocorre quando o médico intervém para impedir ou sobrepujar a decisão livre, consciente e devidamente informada de um paciente <strong>plenamente capaz e competente</strong>, ou oculta informações diagnósticas/terapêuticas desse paciente, sob o pretexto de que a escolha do indivíduo é contrária aos seus melhores interesses médicos. Exemplos incluem: realizar uma transfusão sanguínea forçada em um paciente adulto, lúcido e capaz que a recusou expressamente por convicção religiosa fora de situação de incapacidade; ocultar de um paciente adulto e lúcido o diagnóstico de neoplasia maligna avançada a pedido dos familiares (\"conspiração do silêncio\"); ou substituir furtivamente um tratamento conservador escolhido pelo paciente por um procedimento radical sem seu conhecimento. No ordenamento ético e jurídico brasileiro contemporâneo, o paternalismo forte é <strong>inaceitável e ilícito</strong>, configurando infração ética aos artigos 22, 24 e 31 do Código de Ética Médica e violação aos direitos da personalidade (Art. 15 do Código Civil)."
+          ]
+        ],
+        [
+          "3",
+          "Os Quatro Modelos da Relação Médico-Paciente de Ezekiel e Linda Emanuel (1992)"
+        ],
+        [
+          "p",
+          "Em um artigo clássico publicado no <em>JAMA</em> em 1992, os bioeticistas Ezekiel J. Emanuel e Linda L. Emanuel sistematizaram quatro modelos ideais de interação entre o médico e o paciente, diferenciados conforme quem detém a primazia na definição dos objetivos do tratamento, como os valores do paciente são incorporados e qual é a concepção subjacente de autonomia:"
+        ],
+        [
+          "t",
+          [
+            "Modelo da Relação",
+            "Concepção dos Valores do Paciente",
+            "Obrigação e Papel do Médico",
+            "Concepção da Autonomia do Paciente",
+            "Metáfora do Papel Médico e Crítica Ética"
+          ],
+          [
+            [
+              "<strong>1. Modelo Paternalista</strong><br><em>(Sacerdotal / Parental)</em>",
+              "Objetivos, fixos e compartilhados universalmente pelo médico e pelo paciente (a saúde física e a sobrevida biológica acima de tudo).",
+              "Promover o bem-estar do paciente independentemente de suas preferências atuais; decidir unilateralmente o melhor tratamento e apresentar apenas informações selecionadas que estimulem o paciente a consentir.",
+              "Reduzida ao mero <strong>assentimento passivo</strong> (concordância com os valores objetivos determinados pelo médico, no momento ou posteriormente).",
+              "<strong>Guardião / Pai protetor.</strong><br><em>Crítica:</em> Anula a autodeterminação moral; ignora que pacientes diferentes atribuem pesos distintos à qualidade de vida versus tempo de sobrevida. Incompatível com a bioética moderna (exceto urgências sem capacidade)."
+            ],
+            [
+              "<strong>2. Modelo Informativo</strong><br><em>(Científico / Consumidor / Engenharia)</em>",
+              "Definidos, fixos e plenamente conhecidos pelo próprio paciente, não cabendo ao médico discuti-los ou questioná-los.",
+              "Fornecer todos os dados fatuais e estatísticos (diagnóstico, opções, probabilidades de sucesso e riscos) de maneira neutra e executar tecnicamente a intervenção selecionada pelo paciente.",
+              "<strong>Controle e escolha do consumidor</strong> sobre o cuidado médico; separação absoluta entre fatos científicos (médico) e valores pessoais (paciente).",
+              "<strong>Especialista técnico / Engenheiro fornecedor.</strong><br><em>Crítica:</em> Frio, desumanizado e reducionista; transfere todo o fardo psicológico da decisão de forma solitária ao paciente vulnerável, reduzindo o médico a um mero \"cardápio técnico\" ou executor burocrático."
+            ],
+            [
+              "<strong>3. Modelo Interpretativo</strong>",
+              "Incompletos, incipientes e frequentemente conflitantes; o paciente necessita de auxílio para compreendê-los e articulá-los na situação inédita da doença.",
+              "Fornecer informações clínicas e, sobretudo, atuar como conselheiro para <strong>elucidar e interpretar os valores do próprio paciente</strong>, ajudando-o a identificar qual curso terapêutico melhor se alinha à sua identidade e história de vida.",
+              "<strong>Autocompreensão moral:</strong> o paciente passa a conhecer mais claramente quem ele é e como as diversas opções médicas afetam sua identidade e objetivos.",
+              "<strong>Conselheiro / Consultor.</strong><br><em>Crítica:</em> Embora superior ao modelo informativo, abstém-se de julgar ou debater se os valores do paciente são os mais adequados à saúde, podendo recair em um direcionamento sutil sob a veste de interpretação."
+            ],
+            [
+              "<strong>4. Modelo Deliberativo</strong><br><em>(Padrão-Ouro Atual)</em>",
+              "Abertos ao desenvolvimento, à reflexão crítica e à revisão por meio do diálogo moral intersubjetivo.",
+              "Fornecer informações, ajudar a elucidar os valores ligados às opções e <strong>deliberar conjuntamente</strong> com o paciente sobre quais valores relacionados à saúde são mais dignos de serem buscados naquela situação clínica, fazendo recomendações fundamentadas sem jamais impor ou coagir.",
+              "<strong>Autodesenvolvimento moral:</strong> o paciente é empoderado para avaliar criticamente, discutir e escolher, por meio do diálogo transparente, os valores e o tratamento que deseja adotar.",
+              "<strong>Amigo ou Professor cuidadoso.</strong><br><em>Vantagem:</em> Constitui a base filosófica da <strong>Decisão Compartilhada (Shared Decision Making)</strong>; une competência técnica, empatia, recomendação clínica responsável e respeito integral à escolha final do paciente."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Crítica ao Individualismo Atomístico e o Conceito de Autonomia Relacional"
+        ],
+        [
+          "p",
+          "A formulação original da autonomia no principialismo norte-americano sofreu importantes críticas provenientes da bioética europeia, latino-americana (Bioética de Intervenção e Bioética de Proteção) e das correntes feministas e comunitaristas do cuidado (como Carol Gilligan, Susan Sherwin e Catriona Mackenzie). Essas vertentes apontaram que o modelo liberal clássico frequentemente concebe o paciente como um <em>\"indivíduo atomístico, autossuficiente, isolado, puramente racional e desconectado de seu meio social\"</em> — uma abstração filosófica distante da realidade clínica de pessoas fragilizadas pelo sofrimento, pela dor, pelo medo da morte e pela desigualdade socioeconômica."
+        ],
+        [
+          "p",
+          "Desenvolveu-se, assim, o conceito contemporâneo de <strong>Autonomia Relacional</strong>. Essa perspectiva reconhece que os seres humanos são intrinsecamente seres sociais, cuja identidade, capacidade de reflexão e exercício de autodeterminação são constituídos, moldados e sustentados no interior de uma <strong>rede de relações interpessoais, familiares, comunitárias, culturais e institucionais</strong>. Sob a ótica da autonomia relacional:"
+        ],
+        [
+          "o",
+          [
+            "A vulnerabilidade provocada pelo adoecimento grave não extingue a autonomia, mas exige que o ambiente assistencial e a equipe multiprofissional atuem ativamente como <strong>suporte relacional promotor de autonomia</strong>, acolhendo angústias, mitigando assimetrias de poder e traduzindo a linguagem biomédica hermética para o universo cultural do paciente;",
+            "A participação da família ou da rede de apoio afetivo no processo decisório não deve ser vista automaticamente como uma ameaça à autonomia individual, desde que seja <strong>desejada e autorizada pelo paciente</strong>. Muitos pacientes, especialmente idosos ou pertencentes a culturas com forte coesão familiar, exercem sua autodeterminação decidindo dialogar com seus cônjuges e filhos antes de tomar uma decisão clínica. Contudo, a autonomia relacional exige vigilância ética atenta para distinguir o <strong>apoio familiar solidário</strong> da <strong>coerção familiar opressiva</strong> (como na \"conspiração do silêncio\", em que familiares tentam sequestrar o direito do paciente lúcido de saber seu diagnóstico e decidir sobre seu corpo);",
+            "Determinantes estruturais — como analfabetismo funcional, pobreza extrema, racismo institucional, violência de gênero e barreiras linguísticas — restringem severamente o leque de escolhas reais de um indivíduo. Portanto, respeitar a autonomia no Sistema Único de Saúde exige letramento em saúde (<em>health literacy</em>), escuta qualificada e competência cultural para garantir que o consentimento não seja uma mera assinatura formal em um papel incompreensível, mas sim um ato substancial de compreensão e liberdade."
+          ]
+        ]
+      ]
+    ],
+    [
+      "processo-de-consentimento-livre-e-esclarecido-e-requisitos-de-validade",
+      0,
+      [
+        [
+          "2",
+          "3. O Processo de Consentimento Livre e Esclarecido (PCLE) e Requisitos de Validade"
+        ],
+        [
+          "3",
+          "Do \"Termo\" Burocrático ao \"Processo\" Comunicacional Contínuo"
+        ],
+        [
+          "p",
+          "Um dos erros mais graves e recorrentes na prática médico-hospitalar brasileira consiste em confundir o <strong>Processo de Consentimento Livre e Esclarecido (PCLE)</strong> com o mero ato burocrático de coletar a assinatura do paciente em um formulário impresso padronizado — o Termo de Consentimento Livre e Esclarecido (TCLE) — minutos antes da entrada no centro cirúrgico ou da realização de um exame contrastado. Sob a ótica da Bioética Clínica, da Recomendação CFM nº 1/2016 e da jurisprudência consolidada do Superior Tribunal de Justiça (STJ), o consentimento informado <strong>não é um evento isolado nem um contrato de adesão de isenção de responsabilidade médica</strong>; trata-se de um <strong>processo dialógico, pedagógico, dinâmico e contínuo</strong> que se estende por toda a relação médico-paciente."
+        ],
+        [
+          "p",
+          "O documento escrito (TCLE) é apenas a materialização documental probatória de que o processo comunicacional ocorreu. Se o paciente assinou um TCLE genérico (\"termo em branco\" ou padronizado com jargões técnicos ininteligíveis), sem que tenha havido explicação verbal individualizada, tempo hábil para reflexão e oportunidade de formular perguntas, o consentimento é considerado <strong>jurídica e eticamente nulo por vício de informação</strong>, ensejando responsabilização civil do médico e do hospital por violação do dever de informar (Art. 14 do Código de Defesa do Consumidor e Art. 22 do Código de Ética Médica), ainda que o procedimento cirúrgico tenha sido executado com irrepreensível perfeição técnica (sem imperícia)."
+        ],
+        [
+          "3",
+          "Os Cinco Elementos Estruturais do Consentimento Válido (Beauchamp e Childress)"
+        ],
+        [
+          "p",
+          "Para que uma decisão clínica seja considerada ética e juridicamente válida como um verdadeiro Consentimento Livre e Esclarecido, Beauchamp e Childress estruturam cinco componentes analíticos sequenciais, agrupados em três grandes pilares (Pré-condições, Elementos da Informação e Elementos do Consentimento):"
+        ],
+        [
+          "o",
+          [
+            "<strong>I. Pré-condições de Validade Subjetiva:</strong>\n    <ul>\n      <li><strong>1. Competência (Capacidade Decisória Clínica) e Capacidade Civil:</strong> aptidão cognitiva, psíquica e legal do indivíduo para compreender informações, deliberar e decidir;",
+            "<strong>2. Voluntariedade:</strong> liberdade de agir e escolher sem estar submetido a coerção, coação, manipulação ou persuasão indevida por parte de terceiros.",
+            "<strong>II. Elementos da Informação e Esclarecimento:</strong>\n    <ul>\n      <li><strong>3. Revelação (<em>Disclosure</em>):</strong> exposição clara, honesta e estruturada dos fatos clínicos relevantes pelo médico;",
+            "<strong>4. Recomendação de um Plano:</strong> proposição fundamentada da conduta considerada mais benéfica pela evidência científica, incluindo as alternativas viáveis;",
+            "<strong>5. Compreensão (<em>Understanding</em>):</strong> assimilação real e substantiva pelo paciente do que lhe foi revelado e recomendado.",
+            "<strong>III. Elementos de Efetivação do Consentimento:</strong>\n    <ul>\n      <li><strong>6. Decisão:</strong> escolha ativa do paciente em favor (consentimento) ou contra (recusa) o plano proposto;",
+            "<strong>7. Autorização:</strong> ato formal (verbal ou escrito) pelo qual o paciente autoriza a equipe médica a executar o plano escolhido, mantendo-se sempre o direito de <strong>revogação (retratação) a qualquer tempo</strong> antes ou durante o tratamento, desde que a interrupção imediata não gere risco iminente de morte no ato operatório."
+          ]
+        ],
+        [
+          "3",
+          "Análise Profunda dos Requisitos de Validade"
+        ],
+        [
+          "4",
+          "1. Capacidade Civil (Jurídica) vs. Competência / Capacidade Decisória (Clínica)"
+        ],
+        [
+          "p",
+          "É fundamental distinguir dois conceitos frequentemente confundidos em provas e na prática forense:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Capacidade Civil (ou Capacidade de Fato/Exercício):</strong> é um conceito estritamente jurídico-formal, definido pelo Código Civil Brasileiro (Lei nº 10.406/2002, alterada pelo Estatuto da Pessoa com Deficiência — Lei nº 13.146/2015). É a aptidão legal presumida para exercer pessoalmente os atos da vida civil. No Brasil, a capacidade civil plena inicia-se aos <strong>18 anos completos</strong> (ou antes, a partir dos 16 anos, mediante emancipação legal, voluntária ou judicial — casamento, exercício de emprego público efetivo, colação de grau em ensino superior ou estabelecimento civil/comercial com economia própria). São <strong>absolutamente incapazes</strong> (Art. 3º do Código Civil) apenas os <strong>menores de 16 anos</strong> (representados por seus pais ou tutores). São <strong>relativamente incapazes</strong> (Art. 4º do Código Civil) os maiores de 16 e menores de 18 anos, os ébrios habituais, os viciados em tóxico, os pródigos e aqueles que, por causa transitória ou permanente, não puderem exprimir sua vontade (assistidos por seus curadores ou responsáveis legais). <em>Atenção:</em> Desde a vigência do Estatuto da Pessoa com Deficiência (2015), a deficiência mental ou intelectual, por si só, <strong>não torna mais a pessoa absolutamente incapaz</strong>; a regra geral é a plena capacidade civil da pessoa com deficiência, e eventual curatela judicial restringe-se apenas aos atos de natureza patrimonial e negocial (Art. 85 da Lei 13.146/2015), não alcançando automaticamente o direito ao próprio corpo, à sexualidade, ao matrimônio e à saúde, salvo decisão judicial específica;",
+            "<strong>Competência ou Capacidade Decisória Clínica (<em>Decision-Making Capacity</em>):</strong> é um conceito clínico-funcional, avaliado pelo médico assistente no momento do atendimento em relação a uma <strong>tarefa decisória específica</strong> (<em>task-specific</em>) e variável no tempo (pode flutuar ao longo do dia, como no <em>delirium</em> ou na encefalopatia metabólica). Um indivíduo civilmente capaz (maior de 18 anos e não interditado) pode estar <strong>clinicamente incompetente</strong> no momento da consulta (ex.: paciente em choque séptico, traumatismo cranioencefálico moderado/grave, intoxicação alcoólica aguda, psicose aguda descompensada com delírios persecutórios envolvendo a equipe médica, ou demência de Alzheimer avançada). Inversamente, um indivíduo civilmente incapaz (como um adolescente de 15 a 17 anos) pode apresentar plena competência cognitiva e maturidade emocional para compreender e decidir sobre diversas questões de sua saúde."
+          ]
+        ],
+        [
+          "4",
+          "Os Quatro Critérios de Appelbaum e Grisso para Avaliação da Competência Decisória"
+        ],
+        [
+          "p",
+          "De acordo com o modelo padrão-ouro internacional formulado por Paul S. Appelbaum e Thomas Grisso (publicado no <em>New England Journal of Medicine</em> e operacionalizado na ferramenta validada <strong>MacCAT-T — <em>MacArthur Competence Assessment Tool for Treatment</em></strong>), um paciente possui capacidade decisória clínica se demonstrar quatro habilidades funcionais cumulativas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Comunicar uma escolha (<em>Expressing a choice</em>):</strong> habilidade de manifestar verbalmente, por escrito ou por gestos consistentes uma preferência estável quanto ao tratamento (pacientes em coma, afasia global sem comunicação alternativa ou ambivalência patológica extrema que mudam de decisão a cada minuto falham neste primeiro degrau);",
+            "<strong>Compreender as informações relevantes (<em>Understanding</em>):</strong> habilidade de reter e parafrasear com suas próprias palavras a natureza de sua condição médica, o que consiste o procedimento proposto, seus benefícios esperados, seus riscos principais e o que acontecerá se nada for feito;",
+            "<strong>Apreciar a situação e suas consequências (<em>Appreciation</em>):</strong> habilidade cognitiva e afetiva de aplicar aquelas informações abstratas à sua própria realidade pessoal. Diferencia-se da mera compreensão: um paciente esquizofrênico ou com anosognosia grave pode \"compreender\" teoricamente que uma amputação de membro gangrenado salva a vida de quem tem gangrena gasosa (compreensão preservada), mas negar delirantemente que a perna necrosada seja a sua ou acreditar que é imortal e imune à sepse (falha grave de apreciação);",
+            "<strong>Raciocinar / Manipular racionalmente a informação (<em>Reasoning</em>):</strong> habilidade de comparar logicamente as opções disponíveis, sopesar riscos e benefícios à luz de seus próprios valores e extrair conclusões internamente coerentes a partir de suas premissas (ainda que a conclusão final divirja da opinião pessoal do médico)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>A Escala Móvel de Competência (<em>Sliding-Scale Strategy</em> de Drane e Buchanan & Brock):</strong> O rigor exigido pelo médico na avaliação da capacidade decisória deve ser diretamente proporcional ao perfil de risco-benefício da decisão do paciente. Quando o paciente consente com um procedimento de eficácia altíssima e risco mínimo (ex.: antibiótico venoso para meningite bacteriana aguda), exige-se um limiar baixo de competência. Contudo, quando o paciente <strong>recusa</strong> uma intervenção salvadora de baixo risco e alto benefício (ou solicita um procedimento de altíssimo risco e benefício incerto), o médico deve aplicar o <strong>limiar máximo de exigência de capacidade decisória</strong>, realizando avaliação minuciosa (e, se necessário, interconsulta psiquiátrica) para descartar depressão maior, <em>delirium</em> subclínico ou incompreensão antes de validar a recusa."
+        ],
+        [
+          "4",
+          "2. Voluntariedade: Ausência de Coerção, Manipulação e Persuasão Indevida"
+        ],
+        [
+          "p",
+          "Uma decisão só é autônoma se for livre de controles externos que anulem a vontade do agente. Beauchamp e Childress distinguem três formas de influência interpessoal:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Coerção (<em>Coercion</em>):</strong> ocorre quando uma pessoa utiliza uma ameaça severa, crível e intencional de dano ou privação de direito para forçar outra a aceitar uma conduta (ex.: médico que ameaça dar alta administrativa punitiva ou negar analgesia e cuidados paliativos caso o paciente não aceite participar de um protocolo cirúrgico ou de pesquisa; ou familiar que ameaça abandonar o idoso caso ele não assine o termo). A coerção destrói completamente a voluntariedade e invalida o consentimento;",
+            "<strong>Manipulação Informacional ou Psicológica (<em>Manipulation</em>):</strong> influência não coercitiva que altera intencionalmente a percepção das escolhas disponíveis sem recorrer ao diálogo racional — por exemplo, mentir sobre estatísticas de mortalidade, omitir efeitos colaterais graves (como impotência sexual ou incontinência urinária após prostatectomia radical) para induzir a aceitação, ou explorar o pânico agudo do paciente com linguagem alarmista e chantagem emocional. Também invalida o consentimento;",
+            "<strong>Persuasão Racional (<em>Persuasion</em>):</strong> apresentação transparente de argumentos lógicos, dados científicos e razões clínicas pelos quais o médico acredita que determinada opção é a mais segura e eficaz, deixando o paciente inteiramente livre para aceitar ou rejeitar tais razões. A persuasão racional <strong>é eticamente legítima</strong> e faz parte do modelo deliberativo da relação médico-paciente."
+          ]
+        ],
+        [
+          "4",
+          "3. Revelação da Informação (Disclosure) e os Padrões de Informação"
+        ],
+        [
+          "p",
+          "O que exatamente o médico é obrigado a informar ao paciente durante o Processo de Consentimento Livre e Esclarecido? De acordo com a Recomendação CFM nº 1/2016, toda revelação deve conter obrigatoriamente: (a) diagnóstico e prognóstico da condição; (b) natureza, objetivos e justificativa do procedimento proposto; (c) benefícios esperados e probabilidades reais de sucesso; (d) <strong>riscos, complicações frequentes e riscos raros porém graves</strong> (como morte, sequela neurológica ou perda de órgão); (e) <strong>alternativas terapêuticas ou diagnósticas existentes</strong> (incluindo o tratamento conservador) com seus respectivos riscos e benefícios; (f) consequências previsíveis da não realização do tratamento; e (g) duração estimada da recuperação e impacto na qualidade de vida e nas atividades laborais."
+        ],
+        [
+          "p",
+          "Na evolução da jurisprudência e da bioética, consolidaram-se três padrões para julgar a suficiência da informação revelada:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Padrão da Prática Profissional (ou Padrão do Médico Razoável):</strong> define que o dever de informar é determinado pelo costume da comunidade médica local (o que um médico prudente revelaria naquelas circunstâncias). É criticado por perpetuar o paternalismo corporativo;",
+            "<strong>Padrão da Pessoa Razoável (ou Paciente Médio — consagrado no caso histórico <em>Canterbury v. Spence</em>, 1972):</strong> define que a informação relevante é aquela que uma pessoa hipotética razoável, colocada na posição do paciente, consideraria material e decisiva para tomar sua decisão;",
+            "<strong>Padrão Subjetivo (Individualizado):</strong> exige que a informação seja adaptada às necessidades informacionais, peculiaridades profissionais, valores e temores específicos daquele <strong>paciente concreto e singular</strong> (por exemplo, um risco de 1% de disfonia discreta ou parestesia na ponta do dedo indicador pode ser irrelevante para um paciente médio, mas é absolutamente crucial e decisivo para um cantor lírico profissional ou para um violinista/cirurgião). O ideal contemporâneo combina o <strong>Padrão da Pessoa Razoável com o Padrão Subjetivo</strong>, utilizando técnicas de comunicação como o <strong><em>Teach-Back</em></strong> (pedir gentilmente que o paciente explique com suas próprias palavras o que entendeu sobre o procedimento proposto, permitindo ao médico corrigir falhas de assimilação em tempo real)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "excecoes-ao-consentimento-e-recusa-terapeutica-testemunhas-de-jeova",
+      0,
+      [
+        [
+          "2",
+          "4. Exceções ao Consentimento, Privilégio Terapêutico e Recusa Terapêutica (Testemunhas de Jeová — STF Temas 952 e 1069)"
+        ],
+        [
+          "3",
+          "As Cinco Exceções Clássicas ao Dever de Obter o Consentimento Informado"
+        ],
+        [
+          "p",
+          "Embora o Consentimento Livre e Esclarecido seja a regra áurea da prática médica, existem situações excepcionais estritamente delimitadas pela ética médica e pelo ordenamento jurídico nas quais a intervenção pode — ou deve — ocorrer sem o consentimento prévio ou sem a revelação plena de informações:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Emergência Médica com Risco Iminente de Morte (Estado de Necessidade):</strong> Quando o paciente dá entrada em situação crítica de urgência ou emergência com risco imediato à vida ou de lesão orgânica grave e irreversível, encontrando-se inconsciente, incapacitado de se comunicar ou clinicamente incompetente (ex.: choque hipovolêmico traumático, parada cardiorrespiratória, acidente vascular cerebral agudo com afasia/coma, infarto agudo do miocárdio complicado com choque cardiogênico), e não há representante legal disponível em tempo hábil nem diretiva antecipada de vontade válida conhecida. Nessa hipótese, aplica-se a doutrina do <strong>Consentimento Presumido</strong> e a excludente de ilicitude do <strong>Estado de Necessidade</strong> (Art. 24 do Código Penal e Art. 146, § 3º, inciso I do Código Penal, que dispõe expressamente não constituir crime de constrangimento ilegal <em>\"a intervenção médica ou cirúrgica, sem o consentimento do paciente ou de seu representante legal, se justificada por iminente perigo de vida\"</em>, em consonância com os Arts. 22, 24 e 31 do Código de Ética Médica);",
+            "<strong>Incapacidade Decisória (Consentimento Substituto / Por Representação):</strong> Quando o paciente é civilmente incapaz (criança) ou clinicamente incompetente de forma aguda ou crônica (demência avançada, coma, retardo mental profundo), o dever de consentimento não desaparece, mas é transferido para o seu <strong>representante legal ou decisor substituto</strong> (pais, tutor, curador ou familiar mais próximo), que deve decidir pautado pelo <em>Padrão do Julgamento Substituto</em> (o que o paciente escolheria se estivesse lúcido, com base em sua biografia e valores conhecidos) ou pelo <em>Padrão do Melhor Interesse</em> (proteção máxima da vida e do bem-estar do incapaz);",
+            "<strong>Renúncia Voluntária ao Direito de Ser Informado (<em>Waiver</em> / Direito de Não Saber):</strong> A autonomia compreende não apenas o direito de saber e decidir, mas também o direito autônomo de <strong>não querer saber</strong> detalhes técnicos ou prognósticos ou de delegar voluntariamente a decisão ao médico de confiança ou a um familiar. Se um paciente lúcido e capaz declara livremente: <em>\"Doutor, confio plenamente no senhor; não quero saber os detalhes estatísticos nem o passo a passo da cirurgia, faça o que julgar melhor para mim\"</em>, forçá-lo a ouvir descrições cruas de complicações operatórias configuraria uma agressão paternalista à sua vontade. O médico deve registrar detalhadamente em prontuário essa renúncia informada e obter a autorização geral para o tratamento;",
+            "<strong>Medidas Compulsórias de Saúde Pública Determinadas por Lei:</strong> Situações excepcionais em que a liberdade individual sofre restrição proporcional em prol da proteção da saúde coletiva e de terceiros (princípio do dano de Mill e poder de polícia sanitária do Estado), tais como a <strong>notificação compulsória de doenças e agravos</strong> (Lei nº 6.259/1975), o isolamento quarentenário sanitário estrito em epidemias regulado por lei (Lei nº 13.979/2020) e a internação psiquiátrica involuntária ou compulsória em casos de risco iminente de auto ou heteroagressividade (Lei nº 10.216/2001);",
+            "<strong>Privilégio Terapêutico (Exceção Terapêutica):</strong> Analisado em profundidade a seguir."
+          ]
+        ],
+        [
+          "3",
+          "O Privilégio Terapêutico: Conceito, Limites Estritos e o Art. 34 do CEM"
+        ],
+        [
+          "p",
+          "O <strong>Privilégio Terapêutico</strong> consiste na retenção ou omissão temporária e cautelosa, pelo médico, de determinadas informações diagnósticas ou prognósticas diretamente ao paciente, quando houver <strong>evidência clínica robusta e concreta</strong> de que a revelação imediata daquela informação desencadeará um dano psicológico ou fisiológico grave, agudo e descompensador ao próprio enfermo (por exemplo, precipitar uma tentativa imediata de suicídio em paciente com depressão psicótica grave, ou desencadear arritmia maligna/extensão de infarto em paciente no pico de uma síndrome coronariana aguda instável)."
+        ],
+        [
+          "p",
+          "No Código de Ética Médica (Resolução CFM nº 2.217/2018), o privilégio terapêutico encontra-se positivado na parte final do <strong>Artigo 34</strong>:"
+        ],
+        [
+          "p",
+          "<blockquote>\n  <em>\"É vedado ao médico: Art. 34. Deixar de informar ao paciente o diagnóstico, o prognóstico, os riscos e os objetivos do tratamento, <strong>salvo quando a comunicação direta possa lhe provocar dano, devendo, nesse caso, fazer a comunicação a seu representante legal</strong>.\"</em>\n</blockquote>"
+        ],
+        [
+          "p",
+          "<strong>Atenção máxima para as provas de Residência e Revalida:</strong> O privilégio terapêutico é uma exceção <strong>extremamente restrita</strong> e jamais pode ser invocado de forma leviana para justificar a \"conspiração do silêncio\" a pedido de familiares ou para poupar o médico do desconforto emocional de comunicar más notícias. O mero fato de que o paciente ficará triste, choroso ou ansioso ao descobrir um câncer <strong>NÃO autoriza</strong> o uso do privilégio terapêutico (tristeza é uma reação humana normal e esperada diante de uma doença grave, devendo ser manejada com protocolos empáticos como o SPIKES). Além disso, sempre que o médico aplicar legitimamente o privilégio terapêutico, ele tem a obrigação ética inafastável de: (1) <strong>comunicar integralmente a verdade ao representante legal ou familiar responsável</strong>; (2) registrar de forma fundamentada no prontuário médico os motivos clínicos precisos da retenção temporária; e (3) revelar a informação ao próprio paciente tão logo sua condição psíquica ou clínica se estabilize."
+        ],
+        [
+          "3",
+          "Recusa Terapêutica, Resolução CFM nº 2.232/2019 e o Caso das Testemunhas de Jeová"
+        ],
+        [
+          "p",
+          "O direito à recusa de tratamento médico é o corolário lógico e indissociável do consentimento informado: se o paciente não possui a liberdade real de dizer \"não\", o seu \"sim\" deixa de ser um consentimento livre e passa a ser uma submissão obrigatória. No Brasil, a <strong>Resolução CFM nº 2.232/2019</strong> regulamentou normas éticas para a recusa terapêutica por pacientes e a objeção de consciência médica. Segundo essa resolução, a recusa terapêutica é um direito do paciente <strong>maior de idade, capaz, lúcido, orientado e consciente no momento da decisão</strong>, em tratamentos eletivos, desde que devidamente informado sobre os riscos e as consequências previsíveis de sua decisão, devendo a recusa ser registrada em termo escrito (preferencialmente com duas testemunhas caso o paciente se recuse a assinar) ou gravada em áudio/vídeo e anexada ao prontuário."
+        ],
+        [
+          "p",
+          "Contudo, a Resolução CFM nº 2.232/2019 estabeleceu que a recusa terapêutica <strong>não deve ser aceita pelo médico</strong> quando envolver: (a) <strong>crianças, adolescentes ou adultos incapazes</strong> quando a recusa pelos pais/representantes colocar em risco a saúde ou a vida do incapaz; (b) doenças transmissíveis ou situações que caracterizem abuso de direito com <strong>risco à saúde de terceiros / saúde pública</strong>; e (c) situações de <strong>urgência e emergência que caracterizem iminente perigo de morte</strong> (Art. 11 da Res. CFM 2.232/2019 e Art. 31 do CEM)."
+        ],
+        [
+          "4",
+          "A Virada Jurisprudencial Histórica do STF sobre Testemunhas de Jeová (Temas 952 e 1069 — Julgamento de 2024)"
+        ],
+        [
+          "p",
+          "O dilema ético-jurídico clássico mais cobrado em provas de Residência Médica no Brasil envolve pacientes adeptos da confissão religiosa <strong>Testemunhas de Jeová</strong>, que recusam a transfusão de sangue alogênico total e de seus quatro hemocomponentes principais (concentrado de hemácias, concentrado de plaquetas, plasma fresco congelado e leucócitos/granulócitos), fundamentados em interpretação literal de passagens bíblicas (Gênesis 9:4, Levítico 17:10-14 e Atos 15:28-29), embora aceitem expansores volêmicos cristaloides, eritropoetina humana recombinante, ferro parenteral, ácido tranexâmico, recuperação intraoperatória de células (<em>Cell Saver</em> em circuito fechado contínuo) e, conforme consciência individual, frações menores do plasma."
+        ],
+        [
+          "p",
+          "Historicamente, havia uma tensão aguda entre a posição tradicional do Conselho Federal de Medicina (Resolução CFM nº 1.021/1980 — hoje revogada — e Art. 31 do CEM, que determinavam ao médico realizar a transfusão independentemente da vontade do paciente se houvesse risco iminente de morte) e a evolução constitucional dos direitos fundamentais à dignidade da pessoa humana, à autodeterminação corporal e à liberdade de consciência e de crença (Arts. 1º, III e 5º, VI e VIII da Constituição Federal de 1988). Em setembro de 2024, o Plenário do <strong>Supremo Tribunal Federal (STF)</strong> julgou conjuntamente, em sede de Repercussão Geral (efeito vinculante nacional), os <strong>Recursos Extraordinários RE 1.212.272 (Tema 1069) e RE 979.742 (Tema 952)</strong>, pacificando definitivamente a matéria com as seguintes teses jurídicas vinculantes que todo médico candidato à residência precisa dominar em detalhes:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Direito de Recusa em Pacientes Adultos e Capazes (STF — Tema 1069):</strong> <em>\"As Testemunhas de Jeová, quando <strong>maiores e capazes</strong>, têm o direito de recusar procedimento médico que envolva transfusão de sangue, com base na autonomia individual e na liberdade religiosa\"</em>. O STF determinou que essa recusa é válida e deve ser respeitada pela equipe médica <strong>inclusive quando a situação evoluir para risco de morte</strong>, desde que a manifestação de vontade do paciente tenha sido expressa de forma <strong>livre, consciente, inequívoca, informada e esclarecida</strong> (seja no momento do atendimento, se estiver lúcido, seja previamente por meio de <strong>Diretiva Antecipada de Vontade / Testamento Vital válido</strong>, caso o paciente já chegue inconsciente). Nessas condições, o médico que respeita a recusa válida do adulto capaz e emprega todos os métodos alternativos disponíveis (<em>Patient Blood Management</em>) <strong>NÃO comete crime de omissão de socorro nem homicídio</strong>, estando amparado pelo exercício regular de um direito constitucional do paciente;",
+            "<strong>Direito a Tratamentos Alternativos no SUS (STF — Temas 952 e 1069):</strong> Como consequência da liberdade religiosa e do princípio da equidade, o paciente Testemunha de Jeová tem direito ao acesso a procedimentos médicos alternativos à transfusão sanguínea disponíveis no Sistema Único de Saúde (como eritropoetina, ferro endovenoso, <em>Cell Saver</em> e técnicas cirúrgicas <em>bloodless</em>), podendo inclusive, se necessário, ser encaminhado para tratamento fora de domicílio (TFD) em centro de referência habilitado, desde que não gere ônus desproporcional ou inviável ao sistema público;",
+            "<strong>Proibição Absoluta de Recusa pelos Pais em Crianças e Adolescentes (Proteção Integral do Menor):</strong> O STF reafirmou categoricamente que o direito de recusa por motivo religioso é <strong>personalíssimo e intransferível</strong>: os pais ou responsáveis legais <strong>NÃO têm o direito de recusar transfusão de sangue essencial à manutenção da vida ou da saúde de seus filhos menores de 18 anos</strong> (crianças e adolescentes) ou de tutelados/curatelados incapazes. Em pacientes pediátricos sob risco de morte ou de dano grave à saúde, o princípio da <strong>Proteção Integral e do Melhor Interesse da Criança e do Adolescente</strong> (Art. 227 da Constituição Federal e Estatuto da Criança e do Adolescente — Lei nº 8.069/1990) prevalece de forma absoluta sobre a liberdade religiosa dos genitores. Nessa situação, o médico <strong>DEVE realizar a transfusão sanguínea imediatamente</strong> para salvar a vida da criança, independentemente da oposição dos pais, comunicando o fato à direção clínica e ao Ministério Público/Vara da Infância e Juventude se houver tentativa de obstrução física."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Cenário Clínico na Emergência / Cirurgia",
+            "Status de Capacidade e Manifestação de Vontade",
+            "Conduta Ética e Jurídica Correta (CEM + Jurisprudência STF Temas 952/1069)"
+          ],
+          [
+            [
+              "<strong>1. Adulto ($ge$ 18 anos), lúcido e capaz em cirurgia eletiva ou urgência</strong>",
+              "Recusa de forma livre, consciente e informada a transfusão de hemocomponentes (ou possui Diretiva Antecipada de Vontade / Testamento Vital inequívoco).",
+              "<strong>Respeitar a autonomia do paciente.</strong> Não realizar transfusão forçada; instituir protocolo de gerenciamento de sangue do paciente (<em>Patient Blood Management</em>: cristaloides, ácido tranexâmico, eritropoetina, ferro IV, <em>Cell Saver</em>). Registrar recusa esclarecida em prontuário. (Em casos eletivos, o médico que sentir conflito moral pode exercer <strong>objeção de consciência</strong> e encaminhar o paciente a outro profissional da equipe)."
+            ],
+            [
+              "<strong>2. Criança ou Adolescente (< 18 anos) em risco de morte / anemia aguda crítica</strong>",
+              "Pais (Testemunhas de Jeová) recusam veementemente a transfusão de sangue para o filho menor.",
+              "<strong>NÃO acatar a recusa dos pais. Realizar a transfusão sanguínea imediatamente!</strong> O direito à vida do menor (Art. 227 da CF/88 e ECA) é indisponível pelos pais. Aguardar liminar judicial quando há risco iminente de morte configura omissão de socorro."
+            ],
+            [
+              "<strong>3. Adulto inconsciente na emergência com risco iminente de morte, SEM diretiva prévia conhecida</strong>",
+              "Paciente dá entrada em coma/choque hemorrágico sem documento de Diretiva Antecipada de Vontade válido e sem possibilidade de confirmar vontade prévia inequívoca.",
+              "<strong>Intervir imediatamente e transfundir conforme indicação clínica</strong> (Estado de Necessidade / Consentimento Presumido em favor da vida — Art. 31 do CEM e Art. 146, § 3º, I do CP). Na dúvida razoável sem prova inequívoca de recusa prévia, prevalece a proteção da vida."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "capacidade-decisoria-em-criancas-e-adolescentes-assentimento-e-menor-maduro",
+      0,
+      [
+        [
+          "2",
+          "5. Capacidade Decisória em Crianças e Adolescentes: Assentimento Informado e Doutrina do Menor Maduro"
+        ],
+        [
+          "3",
+          "A Evolução Progressiva da Autonomia na Infância e Adolescência"
+        ],
+        [
+          "p",
+          "Enquanto o Direito Civil opera com cortes cronológicos binários e objetivos para definir a capacidade de exercício (absolutamente incapaz abaixo dos 16 anos; relativamente incapaz entre 16 e 18 anos incompletos; plenamente capaz a partir dos 18 anos completos), a psicologia do desenvolvimento cognitivo e moral (Jean Piaget e Lawrence Kohlberg) e a neurobiologia da maturação cortical pré-frontal demonstram que a aquisição da competência decisória em seres humanos é um <strong>processo contínuo, gradual e progressivo</strong>. A Convenção sobre os Direitos da Criança da ONU (Art. 12) e o Estatuto da Criança e do Adolescente brasileiro (ECA — Lei nº 8.069/1990, Art. 16 e Art. 28, § 1º) consagram o princípio da <strong>Capacidade Progressiva</strong>: à medida que a criança e o adolescente crescem e amadurecem, suas opiniões e desejos devem receber peso crescente nas decisões que afetam sua saúde, seu corpo e sua vida."
+        ],
+        [
+          "p",
+          "De acordo com a clássica \"Regra dos 7\" (<em>Rule of Sevens</em>) aplicada à bioética pediátrica e aos estudos de Weithorn e Campbell sobre competência decisória infantojuvenil:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Menores de 7 anos (Primeira Infância / Estágio Pré-operatório):</strong> Não possuem capacidade cognitiva abstrata para compreender relações complexas de causa e efeito médico ou probabilidades de risco futuro. A decisão cabe integralmente aos pais ou representantes legais (sob o padrão do melhor interesse da criança), mas a equipe médica deve sempre explicar à criança, de modo lúdico e adaptado, o que será feito (ex.: <em>\"vamos colocar um remedinho no braço que dá uma picadinha rápida para você melhorar\"</em>), evitando mentiras que quebrem a confiança;",
+            "<strong>De 7 a 12–14 anos (Segunda Infância e Início da Adolescência / Operações Concretas):</strong> A criança já compreende a natureza concreta de sua doença, a finalidade dos tratamentos e o impacto imediato em sua rotina escolar e corporal, embora ainda possa ter dificuldade em ponderar consequências abstratas de longo prazo. Nessa faixa etária, torna-se eticamente obrigatório buscar o <strong>Assentimento Livre e Esclarecido</strong> da criança paralelamente ao consentimento legal dos pais;",
+            "<strong>Acima de 14 anos (Adolescência Média e Tardia / Operações Formais):</strong> Estudos empíricos demonstram que adolescentes a partir de 14 a 15 anos sem déficit intelectual apresentam performance cognitiva de compreensão, apreciação e raciocínio lógico sobre dilemas médicos <strong>estatisticamente equivalente à de adultos jovens</strong>, fundamentando a aplicação da <strong>Doutrina do Menor Maduro</strong>."
+          ]
+        ],
+        [
+          "3",
+          "Consentimento por Representação vs. Assentimento Livre e Esclarecido (TALE)"
+        ],
+        [
+          "p",
+          "É imperativo dominar a diferença conceitual, ética e normativa entre Consentimento e Assentimento, amplamente cobrada em provas de Pediatria, Saúde Coletiva e Bioética:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Consentimento Livre e Esclarecido (TCLE por Representação):</strong> É o ato jurídico e ético firmado pelos <strong>pais ou representantes legais</strong> detentores do poder familiar ou tutela (visto que o menor de 18 anos não emancipado não possui capacidade civil plena para consentir isoladamente em procedimentos invasivos ou de grande porte). Contudo, o poder familiar <strong>não é um direito de propriedade absoluta sobre o filho</strong>, mas sim um múnus público exercido estritamente no melhor interesse do menor;",
+            "<strong>Assentimento Livre e Esclarecido (formalizado no TALE — Termo de Assentimento Livre e Esclarecido):</strong> É a anuência positiva, ativa e livre manifestada pela própria <strong>criança (geralmente a partir de 7 anos) ou adolescente</strong> (ou adulto legalmente incapaz porém com discernimento preservado), após receber explicações pedagógicas, ilustradas e acessíveis ao seu grau de desenvolvimento cognitivo e maturidade emocional. No Brasil, a <strong>Resolução CNS nº 466/2012</strong> e a <strong>Resolução CNS nº 510/2016</strong> (bem como a Lei de Pesquisa Clínica nº 14.874/2024) exigem obrigatoriamente a obtenção do TALE assinado pela criança/adolescente em conjunto com o TCLE assinado pelos pais em qualquer protocolo de pesquisa clínica. Na prática clínica assistencial (Sociedade Brasileira de Pediatria e Academia Americana de Pediatria), o assentimento significa envolver o paciente pediátrico no cuidado, ouvir seus medos, permitir escolhas naquilo que for negociável (ex.: escolher em qual braço prefere a punção venosa, qual horário tomar a medicação oral, participar da discussão sobre cirurgia eletiva estética ou ortopédica não urgente) e respeitar sua recusa (dissenso) quando o procedimento não for estritamente essencial ou urgente (como pesquisas clínicas sem benefício direto ao menor, nas quais o dissenso da criança <strong>tem poder de veto absoluto</strong>, mesmo que os pais queiram que ela participe!)."
+          ]
+        ],
+        [
+          "3",
+          "A Doutrina do Menor Maduro (Mature Minor Doctrine) e a Competência de Gillick"
+        ],
+        [
+          "p",
+          "A <strong>Doutrina do Menor Maduro</strong> teve seu marco histórico mais célebre no julgamento britânico da Câmara dos Lordes no caso <strong><em>Gillick v. West Norfolk and Wisbech Area Health Authority</em> (1985)</strong>. Nesse processo, a Sra. Victoria Gillick tentou proibir judicialmente que médicos do serviço público britânico (NHS) prescrevessem anticoncepcionais para suas filhas menores de 16 anos sem o conhecimento e consentimento prévio dos pais. A Corte Suprema do Reino Unido rejeitou o pedido materno e formulou o famoso princípio da <strong>Competência de Gillick (<em>Gillick Competence</em>)</strong>, sintetizado pelo Lorde Scarman: <em>\"O direito parental de determinar se um filho menor abaixo de 16 anos receberá tratamento médico cede lugar à medida que a criança atinge inteligência e compreensão suficientes para tomar a decisão por si mesma\"</em>."
+        ],
+        [
+          "p",
+          "De acordo com a Doutrina do Menor Maduro e as diretrizes éticas do Conselho Federal de Medicina (Art. 74 do CEM) e da Sociedade Brasileira de Pediatria (SBP) / Ministério da Saúde para a consulta do adolescente (10 a 19 anos pela OMS; 12 a 18 anos pelo ECA):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Direito à Consulta Individualizada e ao Sigilo do Adolescente (Art. 74 do CEM):</strong> O adolescente tem direito de ser atendido sozinho (sem a presença dos pais na sala durante a anamnese e o exame físico, ressalvada a presença de profissional de saúde acompanhante no exame físico íntimo) e tem direito ao <strong>sigilo médico sobre sua vida íntima, atividade sexual, orientação sexual, uso experimental de substâncias e conflitos familiares</strong>, desde que possua capacidade de discernimento (menor maduro);",
+            "<strong>Autonomia em Saúde Sexual e Reprodutiva:</strong> O adolescente maduro tem pleno direito de buscar atendimento médico espontaneamente, receber orientações de prevenção, realizar testes rápidos de ISTs/HIV e receber <strong>prescrição de métodos anticoncepcionais</strong> (incluindo pílula anticoncepcional, injetáveis, implante subdérmico de etonogestrel, DIU e contracepção de emergência / levonorgestrel) <strong>sem necessidade de autorização ou comunicação aos pais</strong> (salvo em menores de 14 anos quando houver suspeita ou confirmação de violência sexual / estupro de vulnerável — Art. 217-A do Código Penal, situação que exige notificação obrigatória ao SINAN e ao Conselho Tutelar para proteção da vítima, mantendo-se o acolhimento e a profilaxia);",
+            "<strong>Quando Quebrar o Sigilo e Exigir a Participação dos Pais no Adolescente (Art. 74 do CEM):</strong> O sigilo do adolescente não é absoluto; ele <strong>DEVE ser quebrado</strong> (com comunicação prévia e acolhedora ao próprio jovem) quando a não revelação acarretar <strong>dano grave ou risco iminente à vida do adolescente ou de terceiros</strong>. São exemplos clássicos que exigem comunicação imediata aos responsáveis legais: (a) <strong>ideação, plano ou tentativa de suicídio</strong> e automutilação grave; (b) <strong>violência sexual, abuso físico ou psicológico grave / maus-tratos</strong>; (c) <strong>dependência química grave</strong> com risco à integridade física; (d) <strong>diagnóstico de doenças graves que exijam internação, cirurgias, quimioterapia ou tratamentos complexos</strong>; (e) <strong>gestação na adolescência</strong> (embora o médico deva estimular e apoiar a adolescente a contar pessoalmente à família, o acompanhamento pré-natal de menor incapaz e a assistência obstétrica/parto exigem o envolvimento de um responsável adulto; e a interrupção legal da gestação em adolescente vítima de estupro exige o consentimento do representante legal além da vontade da adolescente)."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Situação Clínica Pediátrica / Hebiátrica",
+            "Papel do Paciente Menor (< 18 anos)",
+            "Papel dos Pais / Representantes Legais",
+            "Conduta Ética e Legal Preconizada (CEM / ECA / SBP)"
+          ],
+          [
+            [
+              "<strong>Prescrição de anticoncepcional oral/injetável ou preservativos para adolescente de 15 anos lúcida</strong>",
+              "Autonomia plena (Doutrina do Menor Maduro / Competência de Gillick).",
+              "Dispensada autorização ou comunicação aos pais (protegido pelo Art. 74 do CEM).",
+              "Prescrever o método contraceptivo, orientar dupla proteção (ISTs) e manter sigilo absoluto perante os pais."
+            ],
+            [
+              "<strong>Adolescente de 16 anos revela plano estruturado de suicídio ou automutilação severa e pede \"segredo\" ao médico</strong>",
+              "Risco iminente de morte e perda de capacidade de autoproteção.",
+              "Devem ser obrigatoriamente comunicados e envolvidos na proteção e internação/vigilância.",
+              "<strong>Quebrar o sigilo por justo motivo / proteção à vida (Art. 74 do CEM).</strong> Explicar com empatia ao adolescente que sua vida corre perigo e que os pais precisam ser acionados para protegê-lo."
+            ],
+            [
+              "<strong>Pesquisa clínica experimental sem benefício terapêutico direto em criança de 9 anos</strong>",
+              "Deve fornecer <strong>Assentimento (TALE)</strong>. Se a criança recusar (dissenso), não pode ser incluída.",
+              "Devem fornecer <strong>Consentimento (TCLE)</strong> por escrito.",
+              "Exige-se <strong>dupla concordância (TCLE dos pais + TALE da criança)</strong>. A recusa da criança veta sua participação na pesquisa, mesmo que os pais autorizem."
+            ],
+            [
+              "<strong>Quimioterapia curativa ou transfusão salvadora em criança de 10 anos ou adolescente de 16 anos</strong>",
+              "Deve ser informado, acolhido e ouvido (busca-se o assentimento pedagógico), mas sua recusa ou a dos pais não impede o tratamento salvador.",
+              "Têm o dever legal de consentir. Se recusarem tratamento essencial à vida, configuram negligência grave.",
+              "<strong>Princípio do Melhor Interesse e Proteção Integral (Art. 227 CF/88 e ECA).</strong> Realizar o tratamento salvador imediatamente; acionar Conselho Tutelar/Vara da Infância se os pais tentarem impedir."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "diretivas-antecipadas-de-vontade-testamento-vital-e-mandato-duradouro",
+      0,
+      [
+        [
+          "2",
+          "6. Diretivas Antecipadas de Vontade (DAV): Testamento Vital e Mandato Duradouro (Resolução CFM nº 1.995/2012)"
+        ],
+        [
+          "3",
+          "Conceito e Fundamento Ético das Diretivas Antecipadas de Vontade (DAV)"
+        ],
+        [
+          "p",
+          "Enquanto o Consentimento Livre e Esclarecido clássico opera no tempo presente (o paciente lúcido decide <em>aqui e agora</em> sobre uma intervenção imediata), as <strong>Diretivas Antecipadas de Vontade (DAV)</strong> — conhecidas internacionalmente como <em>Advance Directives</em> ou <em>Living Wills</em> (conceito idealizado originalmente pelo advogado norte-americano Luis Kutner em 1969) — projetam a autonomia do indivíduo para o <strong>futuro</strong>. De acordo com o Art. 1º da <strong>Resolução CFM nº 1.995/2012</strong>, definem-se Diretivas Antecipadas de Vontade como <em>\"o conjunto de desejos, prévia e expressamente manifestados pelo paciente, sobre cuidados e tratamentos que quer, ou não quer, receber no momento em que estiver incapacitado de expressar, livre e autonomamente, sua vontade\"</em>."
+        ],
+        [
+          "p",
+          "O fundamento bioético das DAV reside na <strong>autonomia prospectiva (ou precedente)</strong> e na prevenção da <strong>distanásia (obstinação terapêutica)</strong>: assegurar que um cidadão, enquanto dotado de plena capacidade cognitiva e discernimento, possa traçar limites morais contra intervenções invasivas fúteis ou desproporcionais (como intubação orotraqueal, ventilação mecânica invasiva prolongada, reanimação cardiopulmonar, hemodiálise ou nutrição/hidratação artificial invasiva) caso venha a se encontrar no futuro em <strong>estado terminal de doença incurável e irreversível, estado vegetativo persistente ou demência avançada terminal</strong>, sem condições de se comunicar."
+        ],
+        [
+          "3",
+          "As Duas Espécies de Diretivas Antecipadas de Vontade"
+        ],
+        [
+          "p",
+          "O gênero \"Diretivas Antecipadas de Vontade (DAV)\" subdivide-se doutrinariamente em duas modalidades distintas e complementares, que frequentemente são combinadas em um único documento:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Testamento Vital (<em>Living Will</em>):</strong> É o documento ou declaração de conteúdo <strong>substantivo</strong> no qual o próprio indivíduo especifica antecipadamente quais tratamentos e procedimentos médicos <strong>deseja ou recusa receber</strong> em cenários clínicos futuros de terminalidade da vida e incapacidade cognitiva irreversível. Apesar do nome histórico \"testamento\", <strong>não se trata de um testamento sucessório civil</strong>: enquanto o testamento civil produz efeitos apenas após a morte (<em>post mortem</em>) e dispõe sobre bens patrimoniais, o Testamento Vital produz efeitos <strong>em vida (<em>inter vivos</em>)</strong> e dispõe exclusivamente sobre cuidados existenciais de saúde e fim de vida;",
+            "<strong>Mandato Duradouro (ou Procuração para Cuidados de Saúde / <em>Durable Power of Attorney for Health Care</em>):</strong> É o instrumento de conteúdo <strong>procedimental e relacional</strong> pelo qual o paciente nomeia formalmente um ou mais <strong>representantes ou procuradores de saúde de sua estrita confiança</strong> (que pode ser um familiar, amigo íntimo ou companheiro) para tomar decisões clínicas em seu nome (decisor substituto) sempre que ele estiver temporária ou definitivamente incapaz de manifestar sua vontade. O Mandato Duradouro possui a grande vantagem clínica da <strong>flexibilidade</strong>: como é impossível prever no Testamento Vital todas as nuances tecnológicas e intercorrências médicas futuras, o procurador de saúde atua na beira do leito dialogando em tempo real com a equipe médica e aplicando os valores biográficos do paciente à situação concreta."
+          ]
+        ],
+        [
+          "3",
+          "Análise Sistemática da Resolução CFM nº 1.995/2012 (Alta Incidência em Provas!)"
+        ],
+        [
+          "p",
+          "Todo candidato às provas de Residência Médica, Revalida e ENAMED deve conhecer com exatidão cirúrgica as regras estabelecidas nos artigos 1º e 2º da <strong>Resolução CFM nº 1.995/2012</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Prevalência da Vontade do Paciente sobre o Parecer dos Familiares (Art. 2º, § 3º):</strong> <em>\"As diretivas antecipadas do paciente <strong>prevalecerão sobre qualquer outro parecer não médico, inclusive sobre os desejos dos familiares</strong>\"</em>. Este é o ponto mais cobrado em todas as bancas examinadoras! Se um paciente com câncer metastático refratário em fase final de vida deixou registrado em prontuário (quando estava lúcido) que não desejava ser intubado nem submetido a reanimação cardiopulmonar, e ao evoluir para rebaixamento do nível de consciência seus filhos exigem que a equipe médica o intube e leve para a UTI a qualquer custo, o médico <strong>DEVE respeitar a Diretiva Antecipada do paciente e NÃO realizar a intubação fútil</strong>, acolhendo o sofrimento da família, explicando o dever ético de respeitar a vontade soberana do paciente e mantendo medidas plenas de conforto e alívio sintomático (Cuidados Paliativos / Ortotanásia);",
+            "<strong>Limites Éticos e Legais — Quando o Médico NÃO Deve Seguir as DAV (Art. 2º, § 2º):</strong> O médico <strong>deixará de levar em consideração</strong> as diretivas antecipadas de vontade do paciente ou representante que:\n    <ol>\n      <li>Estiverem em <strong>desacordo com os preceitos ditados pelo Código de Ética Médica</strong> — por exemplo, se o paciente solicitar no documento a prática de <strong>eutanásia ativa</strong> (administração de dose letal de fármaco para abreviar a vida, vedada pelo Art. 41 do CEM e tipificada como homicídio no Código Penal brasileiro) ou <strong>suicídio assistido</strong>, ou ainda se recusar cuidados paliativos básicos de higiene e analgesia;",
+            "Ou se os dados clínicos atuais demonstrarem que o paciente <strong>NÃO se encontra em situação de terminalidade/irreversibilidade</strong> prevista na diretiva (ex.: paciente hígido ou com doença plenamente reversível e curável que sofre uma intercorrência aguda tratável).",
+            "<strong>Formalização e Registro das DAV — É Obrigatório Cartório? (Art. 2º, § 4º):</strong> <strong>NÃO!</strong> A Resolução CFM nº 1.995/2012 não exige escritura pública em cartório de notas nem presença de testemunhas para que as diretivas antecipadas tenham validade ética perante o médico. Basta que o paciente comunique seus desejos diretamente ao seu médico assistente, cabendo ao médico <strong>registrar fielmente as Diretivas Antecipadas de Vontade no prontuário médico do paciente</strong>. Caso o paciente deseje lavrar escritura pública em cartório para maior segurança documental externa, é plenamente facultado, mas o registro em prontuário médico possui <strong>idêntica força vinculante ética</strong>;",
+            "<strong>Ausência de DAV Conhecidas (Art. 2º, § 5º):</strong> Não sendo conhecidas as diretivas antecipadas de vontade do paciente, nem havendo representante designado, familiares disponíveis ou falta de consenso entre estes, o médico recorrerá ao <strong>Comitê de Bioética da instituição</strong>, caso exista, ou, na sua falta, à <strong>Comissão de Ética Médica do hospital</strong> ou ao Conselho Regional e Federal de Medicina para fundamentar sua decisão sobre conflitos éticos, quando entender esta medida necessária e conveniente."
+          ]
+        ],
+        [
+          "3",
+          "Distinção Conceitual Essencial no Fim de Vida: Eutanásia, Distanásia, Ortotanásia, Mistanásia e Kalotanásia"
+        ],
+        [
+          "p",
+          "As questões de Bioética frequentemente articulam as Diretivas Antecipadas de Vontade com a terminologia tanatológica ética regolada pelo Art. 41 do Código de Ética Médica e pela Resolução CFM nº 1.805/2006:"
+        ],
+        [
+          "t",
+          [
+            "Conceito Tanatológico",
+            "Definição Clínica e Bioética",
+            "Status Ético (CFM) e Jurídico no Brasil"
+          ],
+          [
+            [
+              "<strong>Ortotanásia</strong><br><em>(do grego orthos = correto + thanatos = morte)</em>",
+              "Morte no seu tempo natural e certo, sem abreviação ativa da vida e sem prolongamento artificial fútil do processo de morrer. Baseia-se nos <strong>Cuidados Paliativos</strong>, controle rigoroso da dor/dispneia (incluindo sedação paliativa quando indicada) e na limitação/suspensão de suporte artificial fútil em doenças incuráveis e terminais.",
+              "<strong>Eticamente OBRIGATÓRIA e juridicamente LÍCITA</strong> (Art. 41, parágrafo único do CEM; Res. CFM nº 1.805/2006 e Res. CFM nº 1.995/2012). É o objetivo central do Testamento Vital válido."
+            ],
+            [
+              "<strong>Distanásia</strong><br><em>(do grego dys = ato defeituoso / sofrimento + thanatos)</em>",
+              "<strong>Obstinação terapêutica ou futilidade médica:</strong> prolongamento artificial, penoso e inútil do processo biológico de morte em paciente terminal irreversível, causando sofrimento adicional sem perspectiva de cura ou benefício real.",
+              "<strong>Eticamente VEDADA / PROIBIDA</strong> (Cap. I, inciso XXII e Art. 41, parágrafo único do CEM: o médico não deve empreender ações diagnósticas ou terapêuticas inúteis ou obstinadas)."
+            ],
+            [
+              "<strong>Eutanásia</strong><br><em>(do grego eu = boa/suave + thanatos)</em>",
+              "Ato intencional de <strong>abreviar a vida</strong> de um enfermo incurável (seja por ação direta letal — eutanásia ativa —, seja pela omissão deliberada de suporte básico necessário em paciente não terminal com o propósito específico de causar a morte), movido por compaixão.",
+              "<strong>Eticamente PROIBIDA (Art. 41, caput do CEM) e CRIME no Brasil</strong> (Homicídio privilegiado por relevante valor moral — Art. 121, § 1º do Código Penal). <em>Jamais pode ser atendida mesmo que conste em Testamento Vital!</em>"
+            ],
+            [
+              "<strong>Suicídio Assistido</strong>",
+              "O próprio paciente realiza o ato letal contra si mesmo (ex.: ingestão de dose letal de barbitúrico), mas com o auxílio material, prescrição ou orientação fornecida pelo médico.",
+              "<strong>Eticamente PROIBIDO e CRIME no Brasil</strong> (Induzimento, instigação ou auxílio a suicídio — Art. 122 do Código Penal)."
+            ],
+            [
+              "<strong>Mistanásia</strong><br><em>(ou Eutanásia Social — conceito de Márcio Fabri dos Anjos)</em>",
+              "Morte miserável, precoce e evitável fora e antes da hora, provocada pela <strong>injustiça social, omissão do Estado, falta de acesso à saúde básica, filas desumanas, negligência estrutural ou erro médico grosseiro</strong>.",
+              "Grave violação dos Direitos Humanos, do princípio bioético da <strong>Justiça</strong> e do direito constitucional à saúde (Art. 196 da CF/88)."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "decisao-compartilhada-shared-decision-making-e-comunicacao-de-riscos",
+      0,
+      [
+        [
+          "2",
+          "7. Decisão Compartilhada (Shared Decision Making), Decision Aids e Comunicação de Riscos (RRA, RRR, NNT e NNH)"
+        ],
+        [
+          "3",
+          "A Epistemologia da Decisão Compartilhada (Shared Decision Making — SDM)"
+        ],
+        [
+          "p",
+          "Cunhada originalmente no Relatório da Comissão Presidencial Norte-Americana para o Estudo de Problemas Éticos na Medicina (1982) e sistematizada por pesquisadores como Cathy Charles, Glyn Elwyn e Victor Montori, a <strong>Decisão Compartilhada (<em>Shared Decision Making — SDM</em>)</strong> representa o ápice prático do <strong>Modelo Deliberativo</strong> da relação médico-paciente e a síntese orgânica entre a <strong>Medicina Baseada em Evidências (MBE)</strong> e o <strong>Método Clínico Centrado na Pessoa (MCCP)</strong>. Como já advertia David Sackett, pai da Medicina Baseada em Evidências, a verdadeira MBE jamais consistiu na aplicação mecânica e ditatorial de diretrizes estatísticas populacionais (\"tirania das evidências\"), mas sim na <em>\"integração conscienciosa da melhor evidência científica disponível com a expertise clínica individual do médico e com os valores, expectativas e preferências singulares do paciente\"</em>."
+        ],
+        [
+          "p",
+          "Na Decisão Compartilhada, reconhece-se que no encontro clínico coexistem <strong>dois especialistas complementares e indispensáveis</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>O Médico é o especialista no conhecimento biomédico e epidemiológico:</strong> domina a fisiopatologia, a acurácia diagnóstica, a história natural da doença, as opções farmacológicas/cirúrgicas disponíveis e as probabilidades estatísticas de benefícios e danos;",
+            "<strong>O Paciente é o especialista em si mesmo:</strong> domina sua própria biografia, sua rotina familiar e ocupacional, sua tolerância ao risco, seu medo de determinados efeitos colaterais, suas crenças espirituais e o significado subjetivo que atribui à qualidade de vida."
+          ]
+        ],
+        [
+          "3",
+          "Quando a Decisão Compartilhada é Mais Crucial? Decisões Efetivas vs. Decisões Sensíveis às Preferências"
+        ],
+        [
+          "p",
+          "O pesquisador John Wennberg classificou as intervenções médicas em duas grandes categorias, fundamentais para orientar a postura do clínico:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Cuidados Efetivos (<em>Effective Care</em> / Alto Grau de Certeza e Benefício Líquido Inequívoco):</strong> Situações nas quais a evidência científica demonstra uma superioridade esmagadora dos benefícios sobre os riscos e praticamente não há alternativa razoável (ex.: antibioticoterapia imediata na sepse bacteriana, aspirina e reperfusão coronariana no IAM com supra de ST, redução de fratura exposta, insulina no diabetes tipo 1). Nesses casos, cabe ao médico fazer uma recomendação clínica firme e clara e obter o consentimento informado padrão;",
+            "<strong>Decisões Sensíveis às Preferências (<em>Preference-Sensitive Decisions</em> / Zona de Equilíbrio Clínico ou <em>Clinical Equipoise</em>):</strong> Situações clínicas nas quais existem <strong>duas ou mais opções legítimas (incluindo a vigilância ativa ou o não rastreamento)</strong>, ou nas quais o balanço entre benefícios e danos potenciais é estreito, incerto ou envolve <em>trade-offs</em> profundos de qualidade de vida que só o próprio paciente pode valorar. É exatamente neste território que a <strong>Decisão Compartilhada estruturada é obrigatória</strong>! Exemplos clássicos cobrados em provas de Medicina Preventiva, Clínica Médica e Saúde da Família:\n    <ul>\n      <li><strong>Rastreamento do Câncer de Próstata com PSA em homens assintomáticos de 55 a 69 anos:</strong> Diretrizes da USPSTF (Grau C), INCA e SBMFC preconizam que o PSA não deve ser solicitado de forma rotineira sem discussão prévia, pois a pequena redução absoluta de mortalidade específica (cerca de 1 morte evitada a cada 1.000 homens rastreados por 13 anos no estudo europeu ERSPC) acompanha-se de elevadas taxas de falso-positivos, complicações de biópsias prostáticas (sepse, hematúria), <strong>sobrediagnóstico (<em>overdiagnosis</em> de tumores indolentes que jamais causariam sintomas em vida)</strong> e sequelas definitivas do sobretratamento (incontinência urinária e disfunção erétil pós-prostatectomia ou radioterapia);",
+            "<strong>Escolha entre Cirurgia Conservadora da Mama (Setorectomia/Quadrantectomia + Radioterapia) vs. Mastectomia Total no Câncer de Mama Inicial (Estádios I e II):</strong> Ambas as estratégias apresentam sobrevida global idêntica a longo prazo, cabendo à mulher decidir com base em seus valores estéticos, aversão à radiação ou medo de recidiva local;",
+            "<strong>Anticoagulação Oral em Fibrilação Atrial com escore CHA2DS2-VASc limítrofe:</strong> Sopesamento entre a redução do risco de AVC cardioembólico e o aumento do risco de sangramento maior e custo/adesão medicamentosa;",
+            "<strong>Manejo de Hiperplasia Prostática Benigna moderada, Miomatose Uterina sintomática ou Hérnia de Disco Lombar sem déficit motor progressivo:</strong> Escolha entre tratamento medicamentoso conservador e intervenção cirúrgica;",
+            "<strong>Via de Parto em Gestante com Uma Cesariana Prévia (VBAC vs. Cesariana Eletiva de Repetição) e Plano de Parto.</strong>"
+          ]
+        ],
+        [
+          "3",
+          "O Modelo das Três Etapas de Glyn Elwyn (Three-Talk Model) e o Protocolo SHARE da AHRQ"
+        ],
+        [
+          "p",
+          "Para operacionalizar a Decisão Compartilhada na consulta ambulatorial ou hospitalar, o modelo internacional mais consagrado é o <strong>Modelo das Três Conversas de Glyn Elwyn (<em>Three-Talk Model</em>)</strong>, que se alinha perfeitamente aos 5 passos da estratégia <strong>SHARE</strong> da <em>Agency for Healthcare Research and Quality (AHRQ)</em>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>1ª Etapa — Conversa de Equipe / Convite à Escolha (<em>Team Talk / Choice Talk</em>):</strong>\n    <ul>\n      <li>O médico recua da postura prescritiva imediata, comunica explicitamente ao paciente que <strong>existe uma decisão a ser tomada</strong> (há mais de um caminho razoável, incluindo não intervir ou vigiar) e estabelece uma aliança de parceria (<em>\"Vamos analisar juntos as opções para descobrir o que faz mais sentido para a sua vida\"</em>), tranquilizando o paciente de que ele não será abandonado à própria sorte;",
+            "<strong>2ª Etapa — Conversa sobre as Opções (<em>Option Talk</em>):</strong>\n    <ul>\n      <li>Descrição estruturada, imparcial e comparativa de todas as alternativas viáveis (Opção A, Opção B, Conduta Expectante), detalhando os prós, os contras, a magnitude real dos benefícios e a probabilidade dos efeitos adversos de cada caminho, utilizando linguagem acessível e, idealmente, <strong>Ferramentas de Apoio à Decisão (<em>Patient Decision Aids</em>)</strong>;",
+            "<strong>3ª Etapa — Conversa de Decisão (<em>Decision Talk</em>):</strong>\n    <ul>\n      <li>Exploração empática das preferências, medos, prioridades e valores do paciente (<em>\"O que é mais importante para você neste momento? Qual desses efeitos colaterais seria mais difícil de lidar na sua rotina?\"</em>) e deliberação conjunta rumo à escolha final (ou agendamento de retorno caso o paciente precise de tempo para conversar com a família)."
+          ]
+        ],
+        [
+          "3",
+          "Ferramentas de Apoio à Decisão (Patient Decision Aids) e Comunicação Epidemiológica Transparente de Riscos"
+        ],
+        [
+          "p",
+          "As <strong>Ferramentas de Apoio à Decisão para Pacientes (<em>Patient Decision Aids — PDAs</em>)</strong> são instrumentos baseados em evidências (impressos ilustrados, matrizes de ícones visuais / <em>icon arrays</em> de 100 ou 1.000 carinhas coloridas, vídeos interativos ou plataformas digitais certificadas pelos critérios internacionais <strong>IPDAS — <em>International Patient Decision Aid Standards</em></strong>) desenhados para ajudar os pacientes a visualizar numericamente e graficamente as probabilidades de desfechos e clarificar seus próprios valores. Revisões sistemáticas da Colaboração Cochrane demonstram com alto grau de evidência que o uso de <em>Decision Aids</em>: (a) aumenta significativamente o conhecimento objetivo do paciente; (b) torna a percepção de risco muito mais realista e acurada; (c) reduz o <strong>conflito decisório</strong> (incerteza e arrependimento pós-decisão); (d) reduz a passividade do paciente sem aumentar a ansiedade; e (e) diminui a taxa de cirurgias eletivas invasivas desnecessárias quando existem opções conservadoras seguras."
+        ],
+        [
+          "4",
+          "Armadilhas Cognitivas na Comunicação de Riscos: Risco Relativo vs. Risco Absoluto, NNT e NNH"
+        ],
+        [
+          "p",
+          "Um dos pilares técnicos mais exigidos nas provas de Saúde Coletiva, Epidemiologia Clínica e Medicina Preventiva no contexto da decisão compartilhada é a forma como a informação estatística é apresentada ao paciente (o fenômeno do <strong>Efeito de Enquadramento / <em>Framing Effect</em></strong>, descrito pelos ganhadores do Prêmio Nobel Daniel Kahneman e Amos Tversky)."
+        ],
+        [
+          "p",
+          "Comunicar benefícios de rastreamentos ou medicamentos utilizando exclusivamente a <strong>Redução do Risco Relativo (RRR)</strong> configura uma grave <strong>manipulação informacional (ilusão de eficácia inflada)</strong>, pois induz tanto médicos quanto pacientes a superestimarem drasticamente o benefício real da intervenção. Veja a demonstração matemática clássica:"
+        ],
+        [
+          "u",
+          [
+            "Suponha um ensaio clínico randomizado de uma estatina ou de um exame de rastreamento oncológico acompanhado por 10 anos, no qual a mortalidade no grupo controle (sem intervenção) foi de <strong>2,0% (20 mortes em 1.000 pessoas, ou $I_{0} = 0,02$)</strong> e a mortalidade no grupo intervenção caiu para <strong>1,5% (15 mortes em 1.000 pessoas, ou $I_{E} = 0,015$)</strong>;",
+            "Se o médico utilizar a <strong>Redução do Risco Relativo ($RRR = \frac{I_{0} - I_{E}}{I_{0}}$)</strong>, ele dirá ao paciente: <em>\"Este tratamento reduz o seu risco de morrer em <strong>25%</strong>!\"</em> ($[0,020 - 0,015] / 0,020 = 0,25 = 25%$). Ao ouvir \"redução de 25%\", o paciente leigo acredita intuitivamente que, a cada 100 pessoas tratadas, 25 vidas serão salvas;",
+            "Contudo, quando analisamos a <strong>Redução Absoluta do Risco ($RAR = I_{0} - I_{E}$)</strong>, constatamos que a diferença real entre os dois grupos é de apenas <strong>0,5% ($2,0% - 1,5% = 0,5%$, ou 0,005)</strong> — isto é, apenas <strong>5 vidas salvas a cada 1.000 pessoas submetidas à intervenção durante 10 anos</strong>, enquanto as outras 995 pessoas não obtiveram benefício de mortalidade (sendo que 15 morreram apesar do tratamento e 980 sobreviveram independentemente dele!);",
+            "A partir da Redução Absoluta do Risco, calcula-se o <strong>Número Necessário para Tratar ou Rastrear ($NNT = \frac{1}{RAR}$)</strong>:\n    <p>$$NNT = \frac{1}{0,005} = \frac{100}{0,5} = 200 \text{ pacientes}$$</p>\n    Isso significa que é necessário tratar (ou rastrear) <strong>200 indivíduos por 10 anos</strong> para evitar <strong>1 único desfecho desfavorável adicional</strong>;",
+            "Paralelamente, deve-se sempre calcular o <strong>Aumento Absoluto do Risco de Dano ($AAR = I_{dano_tratados} - I_{dano_controle}$)</strong> e o seu inverso, o <strong>Número Necessário para Causar Dano ($NNH = \frac{1}{AAR}$, do inglês <em>Number Needed to Harm</em>)</strong>. Se o tratamento causa um efeito adverso grave (ex.: sangramento maior ou diabetes induzido por fármaco) em 3,0% dos tratados contra 1,0% do grupo placebo ($AAR = 2,0% = 0,02$), então $NNH = \frac{1}{0,02} = 50$. Ou seja, a cada 50 pacientes tratados, 1 sofrerá um dano grave ($NNH = 50$), enquanto são necessários 200 pacientes tratados para evitar 1 evento cardiovascular ($NNT = 200$)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Regras de Ouro de Gigerenzer para a Comunicação Transparente de Riscos na Decisão Compartilhada:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Jamais comunique apenas Riscos Relativos (RRR):</strong> Apresente sempre os <strong>Riscos Absolutos (RAR)</strong> e o <strong>NNT / NNH</strong> pareados;",
+            "<strong>Use Frequências Naturais com Denominador Comum Fixo em vez de Porcentagens Isoladas:</strong> Pacientes compreendem muito melhor afirmações como <em>\"De cada 1.000 homens que fazem este exame por 10 anos, 4 deixam de morrer da doença, mas 100 recebem um alarme falso e 20 ficam com incontinência urinária\"</em> do que porcentagens decimais abstratas como \"0,4% vs. 2%\";",
+            "<strong>Utilize Enquadramento Duplo (Positivo e Negativo / Ganho e Perda):</strong> Para evitar o viés do efeito de enquadramento (<em>framing effect</em>), diga simultaneamente quantos pacientes complicam e quantos ficam livres de complicação (ex.: <em>\"Em cada 100 cirurgias como esta, 5 pacientes apresentam complicação infecciosa, o que significa que 95 pacientes evoluem sem qualquer infecção\"</em>);",
+            "<strong>Especifique sempre o Horizonte Temporal:</strong> Deixe claro a qual período de tempo o risco se refere (ex.: \"nos próximos 5 anos\" ou \"em 10 anos de uso contínuo\")."
+          ]
+        ]
+      ]
+    ],
+    [
+      "comunicacao-de-mas-noticias-protocolo-spikes-e-conspiracao-do-silencio",
+      0,
+      [
+        [
+          "2",
+          "8. Comunicação de Más Notícias (Protocolo SPIKES), Conspiração do Silêncio e Objeção de Consciência Médica"
+        ],
+        [
+          "3",
+          "A Comunicação de Más Notícias e o Direito à Verdade"
+        ],
+        [
+          "p",
+          "Para que o paciente possa exercer sua autonomia, participar da decisão compartilhada ou elaborar suas Diretivas Antecipadas de Vontade, é premissa indispensável que ele conheça a verdade sobre o seu estado de saúde. Define-se <strong>\"má notícia\"</strong> na medicina (segundo Robert Buckman) como qualquer informação clínica que afete de forma radical e negativa a perspectiva que o indivíduo tem sobre o seu próprio futuro (diagnóstico de câncer, infecção pelo HIV, doença neurodegenerativa como Esclerose Lateral Amiotrófica ou Alzheimer inicial, infertilidade irreversível, óbito fetal intraútero, recidiva tumoral ou esgotamento de terapias modificadoras de doença)."
+        ],
+        [
+          "p",
+          "A ferramenta estruturada mais validada mundialmente e amplamente cobrada em provas teóricas e práticas (OSCE) de Residência Médica e Revalida é o <strong>Protocolo SPIKES</strong>, desenvolvido pelo oncologista Walter Baile e colaboradores no <em>MD Anderson Cancer Center</em> (2000), organizado em seis etapas sequenciais mnemônicas:"
+        ],
+        [
+          "t",
+          [
+            "Etapa do Protocolo SPIKES",
+            "Significado Original e Conceito",
+            "Ações Práticas e Habilidades Comunicacionais na Consulta"
+          ],
+          [
+            [
+              "<strong>S — Setting up</strong><br><em>(Preparando o Ambiente)</em>",
+              "Preparação prévia do médico, do espaço físico e da privacidade.",
+              "Revisar todo o prontuário e laudos antes de chamar o paciente; garantir um consultório ou sala reservada (nunca dar má notícia no corredor ou em pé); sentar-se na mesma altura do paciente sem barreiras físicas; desligar/silenciar celulares; perguntar se o paciente deseja a presença de um familiar de confiança; ter lenços de papel à disposição."
+            ],
+            [
+              "<strong>P — Perception</strong><br><em>(Avaliando a Percepção)</em>",
+              "Princípio <em>\"antes de contar, pergunte\"</em>: descobrir o que o paciente já sabe ou suspeita sobre seu quadro.",
+              "Fazer perguntas abertas: <em>\"O que outros médicos já lhe explicaram sobre seus sintomas? Quando você fez essa biópsia, o que você imaginou que pudesse estar acontecendo?\"</em>. Isso permite avaliar o nível de vocabulário, expectativas e eventual negação psicológica."
+            ],
+            [
+              "<strong>I — Invitation</strong><br><em>(Obtendo o Convite)</em>",
+              "Identificar até que ponto e com qual nível de detalhe o paciente deseja receber a informação naquele momento.",
+              "Perguntar: <em>\"Você é do tipo de pessoa que gosta de saber todos os detalhes dos resultados dos exames, ou prefere que conversemos sobre o quadro geral e o plano de cuidado?\"</em>. Respeita o ritmo psíquico do paciente e verifica eventual desejo de delegar detalhes técnicos."
+            ],
+            [
+              "<strong>K — Knowledge</strong><br><em>(Transmitindo o Conhecimento)</em>",
+              "Revelação honesta, graduada e clara da notícia propriamente dita.",
+              "Iniciar com um <strong>\"tiro de aviso\" (<em>warning shot</em>)</strong> que prepara o cérebro para o impacto: <em>\"Infelizmente, os resultados da biópsia não vieram tão bons quanto nós esperávamos...\"</em> (pausa breve). Em seguida, dar a informação em <strong>pequenos blocos (\"pedacinhos\")</strong>, sem jargões técnicos incompreensíveis e sem frases cruéis como <em>\"não há mais nada a fazer\"</em> (há sempre muito a fazer para controlar sintomas e cuidar da pessoa!)."
+            ],
+            [
+              "<strong>E — Emotions</strong><br><em>(Acolhendo as Emoções)</em>",
+              "Abordagem empática das reações emocionais do paciente (choro, silêncio, choque, raiva, incredulidade).",
+              "<strong>Sustentar o silêncio terapêutico</strong> enquanto o paciente chora ou processa o choque (não tentar preencher o silêncio imediatamente com explicações técnicas sobre quimioterapia, pois um paciente em choque emocional agudo não retém informações cognitivas!). Nomear e validar a emoção usando o acrônimo <strong>NURSE</strong> (<em>Naming, Understanding, Respecting, Supporting, Exploring</em>): <em>\"Imagino o quão assustador e difícil é ouvir essa notícia agora. Estamos aqui com você.\"</em>"
+            ],
+            [
+              "<strong>S — Strategy and Summary</strong><br><em>(Estratégia e Síntese)</em>",
+              "Construção compartilhada dos próximos passos e encerramento com segurança.",
+              "Somente após a redução da tempestade emocional aguda, traçar um plano claro para o futuro próximo (exames de estadiamento, encaminhamento, controle imediato da dor), checar a compreensão (<em>teach-back</em>), reafirmar o compromisso de <strong>não abandono</strong> e agendar retorno breve."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "O Manejo Ético da \"Conspiração do Silêncio\" (Pacto de Silêncio Familiar)"
+        ],
+        [
+          "p",
+          "Chama-se <strong>Conspiração do Silêncio (ou Pacto de Silêncio)</strong> o fenômeno muito frequente na prática clínica em que os familiares de um paciente (especialmente idoso ou oncológico) abordam o médico fora do consultório antes da consulta e imploram: <em>\"Doutor, pelo amor de Deus, não conte ao meu pai que ele está com câncer maligno! Se ele souber, vai entrar em depressão profunda, desistir de lutar e morrer mais rápido. Diga a ele que é apenas uma gastrite ou uma inflamação benigna!\"</em>."
+        ],
+        [
+          "p",
+          "<strong>Qual é a conduta médica correta exigida pelas bancas de Residência e pelo Código de Ética Médica (Art. 34)?</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Compreender que a família não age por maldade, mas por medo e amor protetor distorcido (sofrimento vicário):</strong> O médico <strong>jamais deve confrontar a família com hostilidade ou rispidez</strong> (ex.: <em>\"Quem manda aqui sou eu e vou contar tudo na lata agora mesmo!\"</em>), pois isso destrói o vínculo com os cuidadores;",
+            "<strong>Acolher a angústia familiar e explorar os medos da família:</strong> Perguntar aos familiares por que eles têm tanto receio da reação do paciente, como o paciente enfrentou outras crises graves no passado e validar o desejo deles de proteger o ente querido;",
+            "<strong>Explicar com firmeza ética e serenidade que o paciente lúcido é o titular do direito à informação (Art. 34 do CEM) e que a mentira causa isolamento emocional e perda de confiança:</strong> Na imensa maioria das vezes, o paciente que perde peso, sente dor e passa por tomografias e biópsias <strong>já desconfia que tem uma doença grave</strong>; quando todos ao redor fingem que não é nada, o paciente sofre calado e solitário para \"não entristecer a família\" (duplo pacto de silêncio);",
+            "<strong>Negociar com a família uma abordagem gradual centrada no desejo do próprio paciente (Etapas P e I do SPIKES):</strong> O médico propõe à família: <em>\"Vamos fazer o seguinte: não vou entrar no quarto despejando um diagnóstico brusco. Vou conversar com o seu pai com toda a delicadeza e perguntar a ele o que ele acha que está acontecendo e o que ele deseja saber sobre os exames. Se ele me perguntar diretamente ou demonstrar que quer saber a verdade, eu tenho o dever ético e humano de responder com honestidade e acolhimento, sem tirar a esperança dele. Se ele me disser que prefere que vocês cuidem de tudo e não quer saber detalhes, eu respeitarei a vontade dele.\"</em> Essa postura resolve mais de 95% dos pactos de silêncio sem violar a autonomia do paciente e mantendo a aliança com a família."
+          ]
+        ],
+        [
+          "3",
+          "Objeção de Consciência Médica vs. Autonomia do Paciente"
+        ],
+        [
+          "p",
+          "Assim como o paciente possui autonomia moral, o médico também é um agente moral dotado de integridade ética e liberdade de consciência. O direito à <strong>Objeção de Consciência</strong> está consagrado no Capítulo I (inciso VII) e no Capítulo II (inciso IX) do Código de Ética Médica, permitindo ao médico <strong>recusar-se a realizar atos médicos que, embora autorizados por lei, sejam contrários aos ditames de sua consciência moral, filosófica ou religiosa</strong> (exemplos clássicos: interrupção legal da gestação resultante de estupro; cirurgia eletiva de grande porte sem cobertura transfusional em Testemunha de Jeová; esterilização cirúrgica voluntária)."
+        ],
+        [
+          "p",
+          "Entretanto, o direito à objeção de consciência médica <strong>NÃO é absoluto</strong> e possui quatro travas éticas e legais intransponíveis (Art. 33 do CEM e Resolução CFM nº 2.232/2019) que caem exaustivamente em provas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Situações de Urgência e Emergência com Risco Iminente de Morte ou Dano Grave Irreversível:</strong> O médico <strong>NÃO PODE</strong> alegar objeção de consciência em situações de urgência/emergência! Se a paciente chega com hemorragia grave, choque ou risco de morte, o dever de salvar a vida é inafastável;",
+            "<strong>Ausência de Outro Médico para Realizar o Atendimento:</strong> O médico <strong>NÃO PODE</strong> exercer objeção de consciência se for o <strong>único médico disponível na unidade ou no município</strong> capaz de realizar o procedimento legalmente garantido ao paciente;",
+            "<strong>Dever de Encaminhamento e Continuidade do Cuidado (Não Abandono):</strong> Ao exercer legitimamente a objeção de consciência em situação eletiva, o médico tem a obrigação estrita de <strong>comunicar tempestivamente ao paciente e à direção técnica da instituição</strong>, garantindo o encaminhamento imediato do paciente para outro profissional não objetor, sem jamais emitir julgamentos morais depreciativos, sermões religiosos ou obstáculos burocráticos contra o paciente;",
+            "<strong>Vedação à Objeção de Consciência por Discriminação (Art. 23 do CEM):</strong> A objeção de consciência refere-se exclusivamente a um <strong>procedimento específico</strong>, e <strong>JAMAIS a uma categoria de pessoas</strong>. Recusar-se a atender um paciente por sua raça, religião, orientação sexual, identidade de gênero, condição sorológica (HIV+) ou histórico criminal não é objeção de consciência, mas sim <strong>discriminação ilícita e infração ética gravíssima</strong>."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-resolvidos-consentimento-autonomia-e-decisao-compartilhada",
+      0,
+      [
+        [
+          "2",
+          "9. Casos Clínicos Resolvidos passo a passo (Raciocínio Ético, Jurídico e Clínico)"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Recusa de Hemotransfusão em Adulto vs. Criança (Testemunhas de Jeová — STF Temas 952 e 1069)"
+        ],
+        [
+          "p",
+          "<strong>Apresentação do Cenário Clínico:</strong> Um acidente automobilístico de alta energia traz ao Pronto-Socorro de um hospital terciário do SUS dois pacientes da mesma família, ambos adeptos convictos da religião Testemunhas de Jeová: (1) o pai, Sr. Marcos, de 42 anos, engenheiro civil, que dá entrada consciente, lúcido, orientado no tempo e no espaço (Escala de Coma de Glasgow 15), com fratura fechada de fêmur direito e trauma esplênico grau III contido, apresentando PA 96x62 mmHg, FC 108 bpm e hemoglobina de 7,4 g/dL. Ele porta em sua carteira uma Diretiva Antecipada de Vontade (Testamento Vital) atualizada e declara verbalmente, de forma serena, firme e inequívoca após ouvir todas as explicações da equipe cirúrgica, que aceita cirurgia, cristaloides, ácido tranexâmico, eritropoetina, ferro endovenoso e uso de máquina de recuperação intraoperatória de sangue (<em>Cell Saver</em>), mas <strong>recusa categoricamente a infusão de sangue alogênico ou hemocomponentes</strong>, mesmo que isso represente risco à sua vida; e (2) o filho dele, Lucas, de 6 anos de idade, que dá entrada pálido, taquicárdico (FC 165 bpm), hipotenso, letárgico, com hemoperitônio maciço por laceração hepática grau IV e hemoglobina de 4,8 g/dL em choque hipovolêmico descompensado. Tanto o pai (Sr. Marcos) quanto a mãe (Sra. Helena, recém-chegada ao hospital) proíbem veementemente a equipe médica de transfundir concentrado de hemácias no menino de 6 anos, alegando liberdade religiosa familiar e ameaçando processar os médicos caso o sangue seja infundido na criança."
+        ],
+        [
+          "4",
+          "1. Raciocínio Diagnóstico e Estratificação Ético-Jurídica"
+        ],
+        [
+          "p",
+          "Estamos diante de um duplo dilema clássico de colisão entre princípios bioéticos (Respeito à Autonomia vs. Beneficência/Não Maleficência) e direitos fundamentais constitucionais (Liberdade Religiosa e Autodeterminação Corporal vs. Direito à Vida e Proteção Integral da Criança), envolvendo dois sujeitos com <strong>status jurídico-cognitivos radicalmente distintos</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Paciente 1 (Sr. Marcos, 42 anos):</strong> É um indivíduo <strong>maior de idade, civilmente capaz e clinicamente competente</strong> (preenche integralmente os 4 critérios de Appelbaum e Grisso: comunica escolha estável, compreende os fatos clínicos, aprecia o risco real à própria vida e raciocina de modo coerente com seu sistema de crenças religiosas estruturado), além de possuir Diretiva Antecipada de Vontade expressa. Aplica-se aqui a tese vinculante do <strong>Supremo Tribunal Federal nos Temas 952 e 1069 de Repercussão Geral (RE 979.742 e RE 1.212.272)</strong>;",
+            "<strong>Paciente 2 (Lucas, 6 anos):</strong> É uma <strong>criança absolutamente incapaz</strong> (Art. 3º do Código Civil), sem maturidade cognitiva nem autonomia formada, em choque hemorrágico grau IV com risco iminente de morte. Aplica-se aqui o princípio constitucional da <strong>Proteção Integral e Prioridade Absoluta do Direito à Vida e à Saúde da Criança</strong> (Art. 227 da Constituição Federal e Arts. 4º e 7º do Estatuto da Criança e do Adolescente — ECA), ratificado pelo próprio STF no julgamento dos Temas 952/1069 e pela Resolução CFM nº 2.232/2019 (Art. 3º)."
+          ]
+        ],
+        [
+          "4",
+          "2. Conduta Médica e Planejamento Terapêutico Passo a Passo"
+        ],
+        [
+          "o",
+          [
+            "<strong>Conduta para a Criança (Lucas, 6 anos) — Transfusão Imediata e Incondicional:</strong>\n    <ul>\n      <li>O médico emergencista e o cirurgião pediátrico <strong>NÃO devem acatar a recusa dos pais</strong> e <strong>NÃO devem perder tempo aguardando alvará judicial</strong>, pois a demora causaria a morte da criança por choque hipovolêmico refratário;",
+            "Deve-se acionar imediatamente o protocolo de transfusão maciça pediátrica (infusão de concentrado de hemácias O negativo / tipo-específico, plasma fresco congelado, plaquetas e ácido tranexâmico) e encaminhar a criança ao centro cirúrgico para laparotomia exploradora de controle de danos;",
+            "Os pais não possuem direito de disposição sobre a vida do filho menor: a liberdade religiosa é um direito personalíssimo que não autoriza os genitores a exporem terceiros incapazes à morte evitável. O médico atua amparado pelo <strong>estrito cumprimento do dever legal e estado de necessidade de terceiro</strong> (Art. 146, § 3º, I do Código Penal e Art. 31 do CEM). Caso os pais tentem impedir fisicamente o procedimento, aciona-se a segurança hospitalar, a Direção Técnica, o Conselho Tutelar e a Promotoria da Infância e Juventude, mantendo-se uma comunicação respeitosa e sem hostilidade com a família.",
+            "<strong>Conduta para o Adulto Capaz (Sr. Marcos, 42 anos) — Respeito à Autonomia e Manejo <em>Bloodless</em>:</strong>\n    <ul>\n      <li>Em conformidade com a decisão vinculante do STF (Temas 952 e 1069), a recusa livre, consciente, inequívoca e esclarecida do paciente adulto e capaz à transfusão alogênica <strong>deve ser respeitada pela equipe médica</strong>;",
+            "Institui-se imediatamente o protocolo de <strong>Gerenciamento de Sangue do Paciente (<em>Patient Blood Management — PBM</em>)</strong>: administração de ácido tranexâmico endovenoso (1 g em 10 minutos seguido de 1 g em 8 horas), reposição volêmica criteriosa com cristaloides balanceados aquecidos evitando hemodiluição excessiva, controle rigoroso da hipotermia e da acidose, hemostasia cirúrgica meticulosa com bisturi harmônico/argônio e selantes de fibrina, utilização de <strong>recuperação intraoperatória de células (<em>Cell Saver</em>)</strong> configurada em circuito fechado contínuo (aceita pelo paciente) e, no pós-operatório imediato, reposição de ferro carboximaltose endovenoso, folato, vitamina B12 e eritropoetina humana recombinante em doses otimizadas para acelerar a eritropoiese medular;",
+            "Registra-se detalhadamente em prontuário médico todo o processo de esclarecimento e o Termo de Recusa Terapêutica Esclarecida assinado pelo paciente, garantindo segurança jurídica completa à equipe assistencial."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Diretivas Antecipadas de Vontade (Testamento Vital) vs. Conflito Familiar na Terminalidade"
+        ],
+        [
+          "p",
+          "<strong>Apresentação do Cenário Clínico:</strong> Dona Beatriz, 74 anos, professora universitária aposentada, portadora de adenocarcinoma pancreático metastático para fígado e peritônio (Estádio IV), diagnosticado há 14 meses, com progressão tumoral franca apesar de três linhas de quimioterapia paliativa. Há 3 meses, enquanto plenamente lúcida, orientada e acompanhada em conjunto pela Oncologia Clínica e pela equipe de Cuidados Paliativos, Dona Beatriz manifestou expressamente o desejo de não ser submetida a intubação orotraqueal, ventilação mecânica invasiva, hemodiálise, reanimação cardiopulmonar ou internação em UTI quando a doença chegasse à fase final irreversível, solicitando apenas controle rigoroso da dor e da falta de ar para falecer em paz no quarto da enfermaria. O médico assistente registrou detalhadamente essas <strong>Diretivas Antecipadas de Vontade (DAV)</strong> no prontuário eletrônico da paciente, e ela também nomeou sua irmã mais nova, Sra. Clara, como sua procuradora de saúde (Mandato Duradouro). Hoje, Dona Beatriz encontra-se restrita ao leito (<em>Performance Status</em> ECOG 4 / Escala de Performance Paliativa PPS de 20%), caquética, anictérica para ictérica progressiva, sonolenta e não responsiva verbalmente por encefalopatia hepática/urêmica terminal, apresentando padrão respiratório irregular e queda de saturação. Nesse momento, chega ao hospital o filho mais velho da paciente, que morava no exterior e estava afastado há anos; tomado por sentimento de culpa e desespero, ele grita no posto de enfermagem exigindo que o médico plantonista realize imediatamente a intubação orotraqueal da mãe, inicie noradrenalina em altas doses e a transfira para a UTI, ameaçando denunciar o médico ao CRM caso \"deixem sua mãe morrer sem tubo\"."
+        ],
+        [
+          "4",
+          "1. Análise Bioética e Enquadramento na Resolução CFM nº 1.995/2012"
+        ],
+        [
+          "u",
+          [
+            "A paciente encontra-se comprovadamente na fase final e irreversível de uma doença incurável (terminalidade oncológica com falência orgânica múltipla secundária à progressão tumoral, sem qualquer perspectiva de reversão ou cura);",
+            "Intubar, acoplar à ventilação mecânica invasiva e realizar compressões torácicas nesse cenário configuraria <strong>distanásia (obstinação terapêutica / futilidade médica)</strong>, violando simultaneamente o princípio da <strong>Não Maleficência</strong> (infligir sofrimento físico inútil ao corpo moribundo), o princípio do <strong>Respeito à Autonomia Prospectiva</strong> da paciente e o <strong>Art. 41, parágrafo único do Código de Ética Médica</strong>;",
+            "Mais ainda: a paciente elaborou previamente, quando lúcida e capaz, suas <strong>Diretivas Antecipadas de Vontade (DAV)</strong> registradas em prontuário e designou sua irmã como procuradora (Mandato Duradouro). Conforme o <strong>Art. 2º, § 3º da Resolução CFM nº 1.995/2012</strong>, <em>\"as diretivas antecipadas do paciente prevalecerão sobre qualquer outro parecer não médico, inclusive sobre os desejos dos familiares\"</em>. Além disso, o <strong>Art. 2º, § 4º</strong> estabelece que o registro em prontuário pelo médico é plenamente válido e suficiente, não exigindo escritura em cartório."
+          ]
+        ],
+        [
+          "4",
+          "2. Conduta Médica e Manejo Comunicacional do \"Filho da Última Hora\""
+        ],
+        [
+          "o",
+          [
+            "<strong>Manutenção da Decisão Ética de Ortotanásia e Respeito às DAV:</strong> O médico plantonista <strong>NÃO deve realizar a intubação orotraqueal nem medidas invasivas fúteis</strong>, respeitando estritamente a Diretiva Antecipada de Vontade de Dona Beatriz e o parecer da procuradora designada (Sra. Clara);",
+            "<strong>Otimização Plena das Medidas de Conforto (Cuidados Paliativos Exclusivos):</strong> Prescrever e titular morfina endovenosa/subcutânea em infusão contínua ou horários fixos para controle impecável da dispneia e da dor, anticolinérgicos (escopolamina) para controle da \"ororoca\" (hipersecreção de vias aéreas superiores do fim de vida), posicionamento confortável no leito, higiene oral e permissão de permanência contínua da família no quarto;",
+            "<strong>Reunião Familiar Empática de Emergência (Manejo da Síndrome do Parente Distante / \"Filho da Califórnia\"):</strong> Convidar o filho recém-chegado e a tia (procuradora) para uma sala reservada; acolher com profunda empatia o choque emocional, a dor da perda iminente e a culpa do filho por ter estado longe (etapa <em>Emotions</em> do SPIKES); mostrar-lhe com serenidade os registros do prontuário onde sua própria mãe, quando lúcida, expressou de modo refletido seu desejo de partir sem sofrimento mecânico; explicar que <strong>não intubar não significa abandonar</strong>, mas sim oferecer o cuidado mais intensivo possível contra a dor e a falta de ar, honrando a biografia e a dignidade da mãe dele até o último suspiro."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Consulta do Adolescente, Doutrina do Menor Maduro e Limites do Sigilo"
+        ],
+        [
+          "p",
+          "<strong>Apresentação do Cenário Clínico:</strong> Na Unidade Básica de Saúde (Estratégia Saúde da Família), você atende dois adolescentes no mesmo turno da tarde: (A) <strong>Mariana, 15 anos</strong>, estudante do 1º ano do ensino médio, que comparece desacompanhada dos pais solicitando orientação anticoncepcional e prescrição de anticoncepcional hormonal injetável ou implante, pois iniciou vida sexual há 2 meses com o namorado de 16 anos (relação consensual). Ela demonstra maturidade cognitiva, compreende perfeitamente o funcionamento dos métodos e pede expressamente que o médico não conte à sua mãe, que é muito rígida; e (B) <strong>Gabriel, 16 anos</strong>, trazido pela mãe devido a queda do rendimento escolar e isolamento social. Ao solicitar educadamente que a mãe aguarde na recepção para o segundo momento da consulta a sós com o adolescente, Gabriel mostra cicatrizes recentes de cortes profundos nos antebraços e revela ao médico que planeja tirar a própria vida nesta noite ingerindo todos os comprimidos de antidepressivo tricíclico (amitriptilina) do armário do avô, implorando ao médico: <em>\"Doutor, o senhor prometeu que o que conversássemos aqui ficaria em segredo! Não conte nada para a minha mãe!\"</em>."
+        ],
+        [
+          "4",
+          "1. Raciocínio Bioético e Normativo Comparativo (Art. 74 do CEM e ECA)"
+        ],
+        [
+          "p",
+          "O <strong>Artigo 74 do Código de Ética Médica</strong> estabelece a regra de ouro: <em>\"É vedado ao médico: Revelar sigilo profissional relacionado a paciente criança ou adolescente, <strong>desde que estes tenham capacidade de discernimento, inclusive a seus pais ou representantes legais, salvo quando a não revelação possa acarretar dano ao paciente</strong>\"</em>."
+        ],
+        [
+          "u",
+          [
+            "<strong>No Caso A (Mariana, 15 anos):</strong> A adolescente tem 15 anos (idade igual ou superior a 14 anos, não configurando presunção legal de estupro de vulnerável do Art. 217-A do CP), a relação é consensual, ela possui plena capacidade de discernimento (<strong>Doutrina do Menor Maduro / Competência de Gillick</strong>) e busca uma conduta de proteção à sua saúde sexual e reprodutiva. Manter o sigilo protege a adolescente; quebrá-lo afastaria a jovem do serviço de saúde e a exporia ao risco de gravidez não planejada e ISTs;",
+            "<strong>No Caso B (Gabriel, 16 anos):</strong> O adolescente apresenta um <strong>episódio depressivo grave com ideação e plano suicida estruturado e letal para as próximas horas</strong> (ingestão de antidepressivo tricíclico, que possui altíssima letalidade cardiovascular por arritmias ventriculares). Aqui incide diretamente a cláusula final de exceção do Art. 74 do CEM: <strong>a não revelação acarretará dano gravíssimo e risco iminente de morte ao paciente!</strong> A proteção da vida sobrepõe-se ao dever de sigilo."
+          ]
+        ],
+        [
+          "4",
+          "2. Conduta Prática em Ambos os Casos"
+        ],
+        [
+          "o",
+          [
+            "<strong>Para Mariana (15 anos):</strong> Realizar o atendimento integral sozinha, avaliar critérios de elegibilidade médica da OMS para métodos anticoncepcionais, prescrever o método contraceptivo escolhido, fornecer preservativos (orientando dupla proteção contra HIV/sífilis/clamídia/HPV), ofertar testes rápidos na UBS e <strong>manter sigilo absoluto perante os pais</strong>;",
+            "<strong>Para Gabriel (16 anos):</strong> Jamais deixá-lo sozinho no consultório nem liberá-lo sem proteção. Explicar com imensa empatia e acolhimento ao próprio Gabriel: <em>\"Gabriel, eu me importo profundamente com você e com a sua vida. O sigilo médico existe para proteger você, mas quando a sua vida corre perigo imediato, meu dever ético e humano é proteger você acima de tudo. Eu não preciso contar detalhes íntimos que você não queira, mas preciso chamar sua mãe agora para que juntos possamos cuidar da sua segurança e iniciar seu tratamento hoje mesmo.\"</em> Chamar a mãe à sala, comunicar o risco agudo de suicídio, orientar a remoção imediata de medicamentos letais/armas do domicílio e encaminhar o paciente em caráter de urgência (com transferência segura / regulação médica) para avaliação psiquiátrica de emergência / CAPS IJ ou internação hospitalar protetora."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Decisão Compartilhada e Comunicação Epidemiológica de Risco no Rastreamento do Câncer de Próstata"
+        ],
+        [
+          "p",
+          "<strong>Apresentação do Cenário Clínico:</strong> Sr. Antônio, 60 anos, branco, bancário aposentado, assintomático do ponto de vista urinário (sem noctúria, sem jato fraco e sem hematúria) e sem história familiar de câncer de próstata ou mama, comparece à consulta de rotina na Unidade de Saúde da Família dizendo: <em>\"Doutor, vi na televisão uma campanha dizendo que todo homem acima de 50 anos tem obrigação de fazer o exame de sangue PSA e o toque retal todo ano, porque reduz em 20% a 25% a chance de morrer de câncer de próstata. Quero que o senhor peça o meu PSA hoje!\"</em>. Você sabe que, segundo os grandes ensaios clínicos randomizados (como o estudo europeu ERSPC em 13 a 16 anos de seguimento), a mortalidade por câncer de próstata no grupo não rastreado foi de aproximadamente <strong>5,0 por 1.000 homens (0,5%)</strong> e no grupo rastreado foi de <strong>4,0 por 1.000 homens (0,4%)</strong>, mas que a cada 1.000 homens rastreados, cerca de <strong>240 recebem um resultado de PSA falso-positivo</strong> (levando a biópsias prostáticas com risco de infecção/sangramento) e cerca de <strong>30 a 40 homens sofrem sobrediagnóstico (<em>overdiagnosis</em>)</strong> de tumores indolentes que jamais causariam sintomas, resultando em cirurgias ou radioterapias que deixam cerca de <strong>15 a 20 homens com disfunção erétil ou incontinência urinária definitiva</strong> a cada 1.000 rastreados."
+        ],
+        [
+          "4",
+          "1. Cálculos Epidemiológicos (RRR, RAR e NNT/NNRS) para Fundamentar a Comunicação"
+        ],
+        [
+          "u",
+          [
+            "<strong>Incidência de morte por câncer de próstata nos não expostos ao rastreamento ($I_{0}$):</strong> $5 / 1.000 = 0,005$ ($0,5%$);",
+            "<strong>Incidência de morte por câncer de próstata nos expostos ao rastreamento ($I_{E}$):</strong> $4 / 1.000 = 0,004$ ($0,4%$);",
+            "<strong>Redução do Risco Relativo ($RRR$):</strong>\n    <p>$$RRR = \frac{I_{0} - I_{E}}{I_{0}} = \frac{0,005 - 0,004}{0,005} = \frac{0,001}{0,005} = 0,20 = 20%$$</p>\n    (É daqui que sai a propaganda televisiva de \"reduz em 20% o risco de morrer\", que cria a ilusão de um benefício gigantesco!);",
+            "<strong>Redução Absoluta do Risco ($RAR$):</strong>\n    <p>$$RAR = I_{0} - I_{E} = 0,005 - 0,004 = 0,001 \text{ (ou } 0,1%, \text{ isto é, 1 morte evitada a cada 1.000 homens rastreados)}$$</p>",
+            "<strong>Número Necessário para Rastrear ($NNR / NNT$):</strong>\n    <p>$$NNR = \frac{1}{RAR} = \frac{1}{0,001} = 1.000 \text{ homens rastreados por mais de uma década para evitar 1 único óbito específico!}$$</p>"
+          ]
+        ],
+        [
+          "4",
+          "2. Aplicação do Modelo das Três Conversas de Elwyn (Decisão Compartilhada e Prevenção Quaternária)"
+        ],
+        [
+          "o",
+          [
+            "<strong>Não recusar autoritariamente o exame nem solicitá-lo de forma automática e acrítica:</strong> A conduta recomendada pelo Ministério da Saúde / INCA, SBMFC e USPSTF (Grau C) para homens de 55 a 69 anos que solicitam o rastreamento é a <strong>Decisão Compartilhada</strong>;",
+            "<strong>Comunicação Transparente com Frequências Naturais e Auxílio Visual (<em>Decision Aid</em> de 1.000 homens):</strong> Explicar ao Sr. Antônio em linguagem clara: <em>\"Sr. Antônio, é ótimo que o senhor esteja cuidando da sua saúde. Antes de pedir o PSA, quero lhe mostrar o que a ciência descobriu acompanhando milhares de homens como o senhor durante 13 anos. Aquele número de 20% da TV é um cálculo relativo. Na prática real, se pegarmos 1.000 homens sem sintomas que fazem o PSA regularmente por 13 anos: <strong>1 homem entre esses 1.000</strong> será salvo de morrer de câncer de próstata graças ao exame. Porém, o exame não consegue diferenciar bem tumores agressivos de pequenos nódulos muito lentos que nunca fariam mal na vida do homem (sobrediagnóstico). Por causa disso, entre esses mesmos 1.000 homens, cerca de 240 passarão pelo susto e pelo desconforto de uma biópia por alarme falso, cerca de 30 a 40 receberão diagnóstico e tratamento de um câncer que nunca lhes causaria sintomas, e cerca de 15 a 20 homens acabarão ficando com impotência sexual ou perda involuntária de urina pela cirurgia de um tumor que não precisava ter sido mexido.\"</em>;",
+            "<strong>Exploração de Valores e Deliberação (<em>Decision Talk</em>):</strong> Perguntar ao paciente: <em>\"Sabendo desses dois lados da moeda — a chance pequena de evitar 1 morte em 1.000 contra o risco maior de alarmes falsos, biópsias e sequelas urinárias ou sexuais —, o que pesa mais para o senhor? O senhor prefere não fazer o PSA de rotina e nos avisar apenas se surgir algum sintoma urinário, ou mesmo conhecendo esses riscos o senhor se sente mais seguro fazendo o exame?\"</em>. Qualquer que seja a escolha final do Sr. Antônio após compreender de verdade os riscos absolutos, ela será uma decisão autônoma, esclarecida e integralmente respeitada pelo médico."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-residencia-revalida-enamed-aula-223",
+      0,
+      [
+        [
+          "2",
+          "10. Questões Comentadas de Alta Performance (Residência Médica, Revalida e ENAMED)"
+        ],
+        [
+          "3",
+          "Questão 1 — (Padrão USP / ENARE — Diretivas Antecipadas de Vontade e Resolução CFM nº 1.995/2012)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Homem de 68 anos, portador de Esclerose Lateral Amiotrófica (ELA) diagnosticada há 4 anos, evoluindo com tetraparesia espástica progressiva e disfagia acentuada, porém com funções cognitivas e capacidade de comunicação verbal preservadas, elaborou, em conjunto com seu médico neurologista assistente há 6 meses, suas Diretivas Antecipadas de Vontade (DAV), registrando detalhadamente em seu prontuário médico que, ao atingir a fase de insuficiência respiratória terminal da doença, recusava traqueostomia e ventilação mecânica invasiva permanente, desejando exclusivamente medidas farmacológicas de conforto e sedação paliativa se apresentasse dispneia refratária. O documento não foi registrado em cartório de notas. Hoje, o paciente dá entrada no pronto-socorro em insuficiência respiratória hipercápnica terminal, com rebaixamento do nível de consciência por narcose carbônica (Glasgow 7). Sua esposa confirma e apoia a vontade do marido, mas os dois filhos adultos exigem que o médico emergencista realize intubação orotraqueal imediata, alegando que a anotação no prontuário não tem validade jurídica por não ter firma reconhecida em cartório. Diante da Resolução CFM nº 1.995/2012 e do Código de Ética Médica, assinale a conduta CORRETA do médico plantonista:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Realizar a intubação orotraqueal imediatamente, pois em situações de rebaixamento do nível de consciência a opinião da maioria dos familiares presentes prevalece sobre o registro em prontuário.",
+            "<strong>B)</strong> Acatar a exigência dos filhos, visto que as Diretivas Antecipadas de Vontade só possuem validade ético-legal no Brasil quando lavradas por escritura pública em Tabelionato de Notas com duas testemunhas.",
+            "<strong>C)</strong> Respeitar as Diretivas Antecipadas de Vontade registradas no prontuário médico, abster-se de realizar intubação orotraqueal e instituir imediatamente cuidados paliativos proporcionais (incluindo opioides e sedação paliativa tituladas para alívio da dispneia), acolhendo e esclarecendo os filhos.",
+            "<strong>D)</strong> Administrar dose letal de cloreto de potássio ou bloqueador neuromuscular sem ventilação para atender rapidamente ao desejo do paciente de não sofrer com a insuficiência respiratória.",
+            "<strong>E)</strong> Transferir a decisão exclusivamente para o Poder Judiciário de plantão, mantendo o paciente em ventilação mecânica invasiva até a sentença judicial definitiva."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Profundo Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está CORRETA?</strong> De acordo com a <strong>Resolução CFM nº 1.995/2012 (Art. 2º, §§ 3º e 4º)</strong>, as Diretivas Antecipadas de Vontade (DAV) do paciente <strong>prevalecem sobre qualquer outro parecer não médico, inclusive sobre os desejos dos familiares</strong>. Ademais, a resolução determina expressamente que basta o médico registrar as DAV diretamente no <strong>prontuário médico</strong> para que elas tenham plena validade ética vinculante, não sendo exigido registro em cartório. Instituir opioides e sedação paliativa proporcional para controle de sintoma refratário (dispneia terminal) sem intubação configura <strong>ortotanásia</strong>, prática ética e legalmente respaldada pelo Art. 41, parágrafo único do CEM e pela Resolução CFM nº 1.805/2006.",
+            "<strong>Por que a alternativa A está INCORRETA?</strong> A vontade prévia, livre e esclarecida do paciente capaz registrada em prontuário é soberana em relação à vontade dos filhos (Art. 2º, § 3º da Res. CFM 1.995/2012). Intubar esse paciente configuraria <strong>distanásia (obstinação terapêutica)</strong>.",
+            "<strong>Por que a alternativa B está INCORRETA?</strong> É uma pegadinha clássica de prova: no Brasil, <strong>NÃO é necessário cartório</strong> para validade das DAV; o registro em prontuário pelo médico assistente é o meio oficial preconizado pelo CFM (Art. 2º, § 4º).",
+            "<strong>Por que a alternativa D está INCORRETA?</strong> Administrar cloreto de potássio em bolus ou bloqueador neuromuscular com o intuito deliberado de provocar parada cardíaca/respiratória imediata é <strong>eutanásia ativa</strong> (homicídio pelo Código Penal e infração gravíssima ao Art. 41, <em>caput</em> do CEM). Na sedação paliativa legítima, utilizam-se benzodiazepínicos (midazolam) e opioides (morfina) titulados exclusivamente para aliviar o sofrimento refratário (princípio do duplo efeito), jamais bloqueadores neuromusculares ou cloreto de potássio.",
+            "<strong>Por que a alternativa E está INCORRETA?</strong> Judicializar uma decisão clínica amparada em diretiva válida e submeter o paciente exatamente à intervenção invasiva que ele recusou viola frontalmente sua autonomia e o submete à distanásia."
+          ]
+        ],
+        [
+          "3",
+          "Questão 2 — (Padrão UNICAMP / SUS-SP — Recusa de Hemotransfusão e Jurisprudência do STF Temas 952 e 1069)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Considere dois casos atendidos simultaneamente em um hospital público de referência: <strong>Caso 1:</strong> Mulher de 34 anos, Testemunha de Jeová, lúcida, orientada e civilmente capaz, internada para tratamento cirúrgico de neoplasia de cólon, declara de forma livre, consciente e inequívoca (verbalmente e por documento assinado) que recusa transfusão de sangue alogênico, solicitando uso de estratégias alternativas (ferro endovenoso, eritropoetina, ácido tranexâmico e recuperação intraoperatória de células). <strong>Caso 2:</strong> Menino de 4 anos, filho de pais Testemunhas de Jeová, dá entrada na emergência pediátrica com choque hipovolêmico descompensado e hemoglobina de 4,2 g/dL após atropelamento, com risco iminente de morte; os pais proíbem a equipe de transfundir hemácias na criança. Com base no ordenamento constitucional brasileiro, no Estatuto da Criança e do Adolescente (ECA) e nas teses vinculantes fixadas pelo Supremo Tribunal Federal (STF — Temas 952 e 1069 de Repercussão Geral), assinale a alternativa CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Em ambos os casos, a equipe médica deve realizar a transfusão sanguínea à força, pois o direito à vida biológica sobrepõe-se de maneira absoluta à autonomia individual e à liberdade religiosa em qualquer faixa etária.",
+            "<strong>B)</strong> Em ambos os casos, a equipe médica está proibida de transfundir sangue, pois o poder familiar garante aos pais o direito absoluto de decidir pela morte do filho menor em nome de sua fé religiosa.",
+            "<strong>C)</strong> No Caso 1, deve-se respeitar a recusa livre e esclarecida da paciente adulta e capaz e garantir o acesso às terapias alternativas disponíveis no SUS; no Caso 2, a recusa dos pais não tem validade jurídica e o médico deve realizar a transfusão sanguínea imediatamente na criança para salvar sua vida.",
+            "<strong>D)</strong> No Caso 2, o médico pediatra deve abster-se de transfundir a criança até que o juiz da Vara da Infância e Juventude expeça um alvará judicial por escrito, mesmo que a criança venha a óbito durante a espera.",
+            "<strong>E)</strong> O Sistema Único de Saúde (SUS) está desobrigado de fornecer tratamentos alternativos à transfusão (como eritropoetina ou recuperação intraoperatória de sangue), mesmo quando já incorporados e disponíveis na rede pública."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Profundo Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está CORRETA?</strong> Ela sintetiza com perfeição cirúrgica as teses fixadas pelo Plenário do STF nos <strong>Temas 952 e 1069 de Repercussão Geral (2024)</strong>: (1) o paciente <strong>maior e capaz</strong> tem o direito fundamental (autonomia + liberdade religiosa) de recusar transfusão de sangue mediante manifestação livre, consciente e esclarecida, bem como o direito a procedimentos alternativos disponíveis no SUS; (2) contudo, os pais <strong>NÃO podem recusar transfusão salvadora para seus filhos menores de 18 anos</strong>, prevalecendo de forma absoluta o princípio da Proteção Integral e o Direito à Vida da criança e do adolescente (Art. 227 da CF/88 e ECA).",
+            "<strong>Por que a alternativa A está INCORRETA?</strong> Transfundir à força uma paciente adulta, lúcida e capaz que manifestou recusa livre e informada viola sua dignidade humana, autodeterminação corporal e liberdade de crença segundo a jurisprudência vinculante do STF.",
+            "<strong>Por que a alternativa B está INCORRETA?</strong> A liberdade religiosa é personalíssima e não confere aos pais o direito de vida e morte sobre filhos menores incapazes.",
+            "<strong>Por que a alternativa D está INCORRETA?</strong> Em emergência médica com risco iminente de morte de criança, o médico tem o dever ético e penal imediato de agir (Art. 31 do CEM e Art. 146, § 3º, I do CP). Esperar decisão judicial deixando a criança morrer em choque hemorrágico configura omissão de socorro / homicídio culposo por negligência.",
+            "<strong>Por que a alternativa E está INCORRETA?</strong> O Tema 952 do STF estabeleceu expressamente que é legítimo o custeio pelo SUS de procedimentos alternativos à transfusão disponíveis no sistema público para assegurar a equidade e a liberdade religiosa."
+          ]
+        ],
+        [
+          "3",
+          "Questão 3 — (Padrão Revalida INEP / ENAMED — Doutrina do Menor Maduro e Sigilo na Adolescência)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Adolescente de 15 anos de idade comparece sozinha a uma consulta médica programada na Unidade Básica de Saúde (UBS). Durante a anamnese, relata que iniciou atividade sexual consensual há três meses com seu namorado de 16 anos, colega de escola, e solicita prescrição de método anticoncepcional hormonal, além de informações sobre prevenção de infecções sexualmente transmissíveis (ISTs). Ao exame clínico e conversa, a jovem mostra-se lúcida, madura, compreende perfeitamente os riscos e benefícios dos métodos e pede que o médico mantenha sigilo sobre a consulta em relação aos seus pais. De acordo com o Código de Ética Médica (Art. 74), o Estatuto da Criança e do Adolescente e as diretrizes do Ministério da Saúde, qual é a conduta CORRETA do médico de família?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Recusar o atendimento da adolescente, pois menores de 16 anos são absolutamente incapazes pelo Código Civil e não podem entrar no consultório médico sem a presença física do pai ou da mãe.",
+            "<strong>B)</strong> Realizar a consulta, mas condicionar a entrega da receita do anticoncepcional à assinatura de um termo de autorização presencial pelos pais da adolescente.",
+            "<strong>C)</strong> Atender a adolescente integralmente, realizar o aconselhamento em saúde sexual e reprodutiva, prescrever o método anticoncepcional adequado, fornecer preservativos e manter o sigilo médico perante os pais, visto que a paciente tem capacidade de discernimento e não há situação de risco de dano grave.",
+            "<strong>D)</strong> Atender a adolescente e prescrever o método, mas convocar imediatamente os pais e o Conselho Tutelar por configurar crime de estupro de vulnerável, já que ela tem menos de 18 anos.",
+            "<strong>E)</strong> Prescrever apenas métodos comportamentais (tabelinha), pois é proibido por lei prescrever hormônios para menores de 18 anos no Brasil."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Profundo Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está CORRETA?</strong> Pelo <strong>Art. 74 do Código de Ética Médica</strong> e pela <strong>Doutrina do Menor Maduro</strong> (incorporada nas diretrizes do Ministério da Saúde e da Sociedade Brasileira de Pediatria), o adolescente com capacidade de discernimento tem direito à consulta desacompanhada, ao sigilo médico sobre sua vida sexual e à prescrição de métodos contraceptivos sem necessidade de anuência dos pais, visto que a conduta visa proteger sua saúde e não há risco de dano grave.",
+            "<strong>Por que as alternativas A e B estão INCORRETAS?</strong> Exigir a presença dos pais ou condicionar a prescrição de anticoncepcional à autorização materna/paterna viola o Art. 74 do CEM e os direitos sexuais e reprodutivos do adolescente, criando barreira de acesso que resulta em gravidez não planejada na adolescência.",
+            "<strong>Por que a alternativa D está INCORRETA?</strong> No Direito Penal brasileiro (Art. 217-A do CP), a presunção absoluta de estupro de vulnerável por critério etário aplica-se aos <strong>menores de 14 anos</strong> (< 14 anos). Como a adolescente tem 15 anos completos e a relação com o namorado de 16 anos é plenamente consensual e livre de violência, não há crime a notificar.",
+            "<strong>Por que a alternativa E está INCORRETA?</strong> Não existe qualquer proibição legal à prescrição de anticoncepcionais hormonais (orais, injetáveis, implantes) ou DIU para adolescentes; pelo contrário, os métodos reversíveis de longa duração (LARCs) são altamente recomendados pela OMS e SBP para adolescentes."
+          ]
+        ],
+        [
+          "3",
+          "Questão 4 — (Padrão UNIFESP / Santa Casa SP — Comunicação de Riscos, RRR vs. RAR e NNT na Decisão Compartilhada)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Durante uma consulta voltada à Decisão Compartilhada na Atenção Primária, um paciente de 62 anos questiona o médico sobre o benefício real de um novo medicamento preventivo cardiovascular divulgado na imprensa. O médico consulta o ensaio clínico randomizado original de 5 anos de duração e verifica que a incidência cumulativa de infarto agudo do miocárdio foi de <strong>4,0% no grupo placebo</strong> e de <strong>3,0% no grupo tratado com o novo fármaco</strong>.Paralelamente, a incidência de sangramento gastrointestinal grave foi de <strong>0,5% no grupo placebo</strong> e de <strong>2,5% no grupo tratado</strong>. Com base nos preceitos éticos e epidemiológicos da comunicação transparente de riscos, assinale a alternativa que apresenta os valores CORRETOS de Redução do Risco Relativo (RRR), Redução Absoluta do Risco (RAR), Número Necessário para Tratar (NNT) e Número Necessário para Causar Dano (NNH), respectivamente:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> RRR = 1,0%; RAR = 25%; NNT = 4; NNH = 50.",
+            "<strong>B)</strong> RRR = 25%; RAR = 1,0%; NNT = 100; NNH = 50.",
+            "<strong>C)</strong> RRR = 25%; RAR = 1,0%; NNT = 10; NNH = 200.",
+            "<strong>D)</strong> RRR = 75%; RAR = 3,0%; NNT = 100; NNH = 40.",
+            "<strong>E)</strong> RRR = 1,0%; RAR = 1,0%; NNT = 1.000; NNH = 500."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Profundo Passo a Passo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Cálculo da Redução Absoluta do Risco ($RAR$):</strong>\n    <p>$$RAR = I_{\text{placebo}} - I_{\text{tratado}} = 4,0% - 3,0% = 1,0% \text{ (ou } 0,01\text{)}$$</p>",
+            "<strong>2. Cálculo da Redução do Risco Relativo ($RRR$):</strong>\n    <p>$$RRR = \frac{I_{\text{placebo}} - I_{\text{tratado}}}{I_{\text{placebo}}} = \frac{4,0% - 3,0%}{4,0%} = \frac{1,0%}{4,0%} = 0,25 = 25%$$</p>",
+            "<strong>3. Cálculo do Número Necessário para Tratar ($NNT$):</strong>\n    <p>$$NNT = \frac{1}{RAR} = \frac{1}{0,01} = \frac{100%}{1,0%} = 100 \text{ pacientes tratados por 5 anos para evitar 1 IAM.}$$</p>",
+            "<strong>4. Cálculo do Aumento Absoluto do Risco de Dano ($AAR$) e do Número Necessário para Causar Dano ($NNH$):</strong>\n    <p>$$AAR = I_{\text{dano_tratado}} - I_{\text{dano_placebo}} = 2,5% - 0,5% = 2,0% \text{ (ou } 0,02\text{)}$$</p>\n    <p>$$NNH = \frac{1}{AAR} = \frac{1}{0,02} = \frac{100%}{2,0%} = 50 \text{ pacientes tratados para causar 1 sangramento grave.}$$</p>",
+            "<strong>Interpretação Clínica na Decisão Compartilhada:</strong> Observe que este fármaco possui $NNT = 100$ e $NNH = 50$: para cada 100 pacientes tratados por 5 anos, evita-se 1 infarto ($NNT = 100$), mas provocam-se 2 sangramentos gastrointestinais graves ($NNH = 50$)! Se o médico comunicasse apenas a $RRR = 25%$, enganaria o paciente. Portanto, a alternativa <strong>B</strong> é a única correta."
+          ]
+        ],
+        [
+          "3",
+          "Questão 5 — (Padrão UERJ / AMRIGS — Modelos da Relação Médico-Paciente de Emanuel & Emanuel)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Um homem de 58 anos recebe o diagnóstico de câncer de laringe localmente avançado. Durante a consulta, o cirurgião de cabeça e pescoço apresenta de maneira estritamente técnica uma planilha contendo as taxas de sobrevida em 5 anos da laringectomia total (com traqueostomia definitiva e perda da voz laríngea) versus o protocolo de preservação de órgão com quimiorradioterapia concomitante, dizendo ao final: <em>\"Estes são todos os dados estatísticos da literatura científica. Como o corpo é seu e eu não devo interferir nos seus valores pessoais, escolha qual dos dois tratamentos você quer e me avise na recepção para eu agendar\"</em>. Segundo a classificação clássica de Ezekiel e Linda Emanuel (1992), essa postura médica caracteriza o modelo:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Paternalista.",
+            "<strong>B)</strong> Deliberativo.",
+            "<strong>C)</strong> Interpretativo.",
+            "<strong>D)</strong> Informativo (ou do Consumidor / Científico).",
+            "<strong>E)</strong> Fiduciário Relacional."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa D.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Profundo Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa D está CORRETA?</strong> No <strong>Modelo Informativo (ou Científico/Consumidor)</strong>, o médico atua como um mero fornecedor de fatos técnicos e estatísticos neutros, abstendo-se de explorar os valores do paciente, de acolher sua angústia decisória ou de emitir uma recomendação deliberativa conjunta, transferindo solitariamente todo o peso da escolha para o paciente.",
+            "<strong>Por que as demais estão INCORRETAS?</strong> No modelo <strong>Paternalista (A)</strong>, o médico decide sozinho sem dar escolha ao paciente; no modelo <strong>Interpretativo (C)</strong>, o médico atua como conselheiro ajudando o paciente a elucidar e compreender seus próprios valores incompletos; e no modelo <strong>Deliberativo (B — padrão-ouro)</strong>, médico e paciente dialogam ativamente sobre os valores ligados à saúde e constroem a decisão compartilhada com recomendação clínica fundamentada e empática."
+          ]
+        ],
+        [
+          "3",
+          "Questão 6 — (Padrão PSU-MG / UFPR — Privilégio Terapêutico, Conspiração do Silêncio e Art. 34 do CEM)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Mulher de 64 anos, viúva, professora aposentada, plenamente lúcida, orientada e independente para as atividades da vida diária (KPS 90%), realiza colonoscopia com biópsia que confirma adenocarcinoma de cólon sigmoide estenosante. Antes de a paciente entrar no consultório para receber o resultado, sua filha aborda o médico no corredor e solicita que o diagnóstico de câncer seja omitido da mãe, pedindo que o médico diga apenas que se trata de \"um pólipo inflamatório benigno que precisa ser operado\", sob o argumento de que a mãe é uma pessoa sensível e ficará muito abalada se souber que tem câncer. À luz do Código de Ética Médica (Art. 34) e dos princípios da Bioética, assinale a alternativa CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> O médico deve acatar o pedido da filha, configurando exercício legítimo do Privilégio Terapêutico previsto no Art. 34 do Código de Ética Médica.",
+            "<strong>B)</strong> O Privilégio Terapêutico aplica-se sempre que os familiares assinarem um termo assumindo a responsabilidade por ocultar o diagnóstico do paciente idoso.",
+            "<strong>C)</strong> O médico não deve aderir à \"conspiração do silêncio\"; deve acolher o receio da filha, explicar que a paciente lúcida e capaz tem o direito ético de ser informada sobre seu diagnóstico e prognóstico (Art. 34 do CEM) e comunicar a verdade à paciente de forma empática e graduada (Protocolo SPIKES), respeitando os limites do que ela desejar saber.",
+            "<strong>D)</strong> O médico deve expulsar a filha do consultório e revelar imediatamente à paciente não apenas o diagnóstico, mas todas as estatísticas letais da doença de uma só vez, sem rodeios.",
+            "<strong>E)</strong> Como a paciente tem mais de 60 anos, o Estatuto da Pessoa Idosa transfere automaticamente a titularidade do consentimento informado para os filhos adultos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Profundo Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está CORRETA?</strong> Pelo <strong>Art. 34 do CEM</strong>, é direito fundamental do paciente lúcido e capaz conhecer seu diagnóstico, prognóstico, riscos e objetivos do tratamento. A \"conspiração do silêncio\" proposta pela família deve ser manejada com acolhimento familiar seguido de comunicação honesta, empática e centrada na paciente por meio do <strong>Protocolo SPIKES</strong>.",
+            "<strong>Por que as alternativas A e B estão INCORRETAS?</strong> O <strong>Privilégio Terapêutico</strong> (exceção final do Art. 34) só se aplica quando há evidência clínica grave de que a comunicação direta causará descompensação psiquiátrica/fisiológica aguda severa ao paciente — jamais por mero receio familiar de tristeza normal ou mediante \"termo familiar de omissão\".",
+            "<strong>Por que a alternativa D está INCORRETA?</strong> A verdade nunca deve ser dita com brutalidade (\"sincericídio\" ou iatrogenia comunicacional), mas sim com empatia, preparo do ambiente, tiro de aviso e respeito ao ritmo emocional do paciente.",
+            "<strong>Por que a alternativa E está INCORRETA?</strong> O envelhecimento (idade $ge 60$ anos) <strong>NÃO reduz a capacidade civil nem a autonomia</strong>! Pelo Estatuto da Pessoa Idosa (Lei nº 10.741/2003, Art. 17), ao idoso que esteja no domínio de suas faculdades mentais é assegurado o direito de optar pelo tratamento de saúde que lhe for reputado mais favorável."
+          ]
+        ],
+        [
+          "3",
+          "Questão 7 — (Padrão HCPA / UFRGS — Avaliação da Competência Decisória Clínica: Critérios de Appelbaum e Grisso)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Homem de 71 anos, internado na enfermaria vascular com gangrena úmida infectada do pé direito secundária a doença arterial obstrutiva periférica crítica e sepse inicial, recusa a amputação transtibial de urgência indicada pela equipe. O médico solicita avaliação de capacidade decisória utilizando os quatro critérios clássicos de Appelbaum e Grisso. Durante a entrevista, o paciente está vigíl, fala claramente que não quer a cirurgia (comunica escolha), repete corretamente a explicação do médico de que \"uma gangrena infectada não operada leva à morte por infecção generalizada\" (compreende a informação abstrata), mas afirma com convicção inabalável que \"o meu pé não tem gangrena nenhuma, essa mancha preta é apenas tinta que os enfermeiros pintaram na minha pele para roubar minha aposentadoria\". Qual dos quatro critérios de Appelbaum e Grisso encontra-se primariamente abolido neste paciente, tornando sua recusa clinicamente inválida?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Expressão de uma escolha (<em>Communicating a choice</em>).",
+            "<strong>B)</strong> Compreensão factual abstrata (<em>Understanding</em>).",
+            "<strong>C)</strong> Apreciação da situação e de suas consequências pessoais (<em>Appreciation</em>).",
+            "<strong>D)</strong> Capacidade civil etária plena.",
+            "<strong>E)</strong> Objeção de consciência religiosa."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Profundo Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está CORRETA?</strong> O critério de <strong>Apreciação (<em>Appreciation</em>)</strong> de Appelbaum e Grisso refere-se à capacidade cognitiva de aplicar a informação médica abstrata à sua <strong>própria condição clínica real</strong>. Neste caso, o paciente compreende abstratamente o que é gangrena e que ela mata (Compreensão preservada) e consegue dizer \"não\" (Comunicação de escolha preservada), mas apresenta um delírio persecutório/anosognosia (provável <em>delirium</em> séptico ou transtorno psicótico) que o impede de reconhecer que ele próprio está doente e que o pé gangrenado é o seu. Portanto, ele é <strong>clinicamente incompetente</strong> para recusar a cirurgia salvadora, devendo o médico obter o consentimento substituto da família e realizar o procedimento para salvar sua vida.",
+            "<strong>Por que as demais estão INCORRETAS?</strong> Ele comunica uma escolha verbal (A incorreta), compreende o conceito teórico quando repetido (B incorreta), possui maioridade civil formal embora esteja clinicamente incompetente (D incorreta) e o quadro é delirante, não religioso (E incorreta)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tabela-resumo-high-yield-e-pontos-chave-aula-223",
+      0,
+      [
+        [
+          "2",
+          "11. Síntese High-Yield e Tabela de Revisão Rápida para Véspera de Prova"
+        ],
+        [
+          "3",
+          "Tabela Master High-Yield: Consentimento, Autonomia, DAV e Decisão Compartilhada"
+        ],
+        [
+          "t",
+          [
+            "Eixo Temático / Instituto Ético-Legal",
+            "Base Normativa / Referencial Teórico",
+            "Regra de Ouro para a Prova (O que a Banca Cobra!)",
+            "Pegadinha Clássica a Evitar!"
+          ],
+          [
+            [
+              "<strong>Principialismo Bioético</strong>",
+              "Relatório Belmont (1978) + Beauchamp & Childress (1979)",
+              "4 princípios <em>prima facie</em> (não absolutos, sem hierarquia prévia fixa): <strong>Autonomia, Beneficência, Não Maleficência e Justiça</strong>. Conflitos resolvem-se por ponderação contextual.",
+              "Achar que a Autonomia ou a Beneficência é um princípio absoluto que sempre vence todos os outros em qualquer situação."
+            ],
+            [
+              "<strong>Modelos de Emanuel & Emanuel (1992)</strong>",
+              "Paternalista, Informativo, Interpretativo e Deliberativo",
+              "O padrão-ouro contemporâneo é o <strong>Modelo Deliberativo</strong> (médico como professor/amigo que dialoga sobre valores e recomenda sem coagir), base da Decisão Compartilhada.",
+              "Confundir o Modelo Informativo (médico frio que só joga estatísticas e se omite) com o Modelo Deliberativo."
+            ],
+            [
+              "<strong>Competência Decisória Clínica</strong>",
+              "Critérios de Appelbaum & Grisso (Ferramenta MacCAT-T)",
+              "4 habilidades: <strong>(1) Comunicar escolha; (2) Compreender fatos; (3) Apreciar a própria situação; (4) Raciocinar logicamente</strong>. É tarefa-específica e usa escala móvel (<em>sliding scale</em>).",
+              "Confundir Capacidade Civil (jurídica, $ge 18$ anos) com Competência Clínica (funcional, avaliada na consulta pelo médico)."
+            ],
+            [
+              "<strong>Testemunhas de Jeová e Recusa de Transfusão</strong>",
+              "STF — Repercussão Geral <strong>Temas 952 e 1069</strong> (2024) + ECA (Lei 8.069/90)",
+              "<strong>Adulto ($ge 18$ anos) capaz:</strong> tem direito de recusar transfusão (autonomia + liberdade religiosa) e direito a terapias alternativas no SUS.<br><strong>Criança/Adolescente (< 18 anos) em risco:</strong> pais <strong>NÃO podem recusar</strong>; médico <strong>transfunde imediatamente!</strong>",
+              "Esperar alvará judicial para transfundir criança em choque hemorrágico ou transfundir à força adulto lúcido com recusa válida."
+            ],
+            [
+              "<strong>Crianças, Adolescentes e Menor Maduro</strong>",
+              "Art. 74 do CEM + ECA + Resol. CNS 466/2012 (TALE)",
+              "Criança/adolescente assina <strong>Assentimento (TALE)</strong>; pais assinam <strong>Consentimento (TCLE)</strong>. Adolescente com discernimento (Menor Maduro) tem direito a <strong>sigilo e anticoncepção sem pais</strong>, salvo risco grave (suicídio, abuso, risco de morte).",
+              "Achar que adolescente de 15 anos precisa de autorização dos pais para receber anticoncepcional na UBS ou que o médico deve guardar segredo de plano suicida."
+            ],
+            [
+              "<strong>Diretivas Antecipadas de Vontade (DAV)</strong>",
+              "<strong>Resolução CFM nº 1.995/2012</strong> (Testamento Vital + Mandato Duradouro)",
+              "As DAV do paciente <strong>prevalecem sobre a vontade dos familiares</strong> (Art. 2º, § 3º). <strong>Não precisa de cartório:</strong> basta o registro pelo médico no <strong>prontuário</strong> (Art. 2º, § 4º).",
+              "Marcar que as DAV exigem escritura pública em cartório ou que a família pode vetar o Testamento Vital quando o paciente fica inconsciente."
+            ],
+            [
+              "<strong>Privilégio Terapêutico e Conspiração do Silêncio</strong>",
+              "<strong>Art. 34 do CEM</strong> + Protocolo SPIKES (Baile et al., 2000)",
+              "Paciente lúcido tem direito à verdade. Privilégio terapêutico só vale se a comunicação direta causar dano grave agudo (comunicar representante). Na conspiração do silêncio, acolher família e usar <strong>SPIKES</strong> com o paciente.",
+              "Aceitar pedido da família para mentir ao idoso lúcido com câncer dizendo que é \"apenas uma gastrite\"."
+            ],
+            [
+              "<strong>Comunicação de Riscos na Decisão Compartilhada</strong>",
+              "Modelo de 3 Etapas de Elwyn + Epidemiologia Clínica (RAR, RRR, NNT, NNH)",
+              "Nunca usar só $RRR = \frac{I_0 - I_E}{I_0}$ (infla percepção). Usar sempre <strong>Risco Absoluto ($RAR = I_0 - I_E$)</strong>, <strong>$NNT = \frac{1}{RAR}$</strong>, <strong>$NNH = \frac{1}{AAR}$</strong> e frequências naturais (ex.: por 1.000 pessoas) com <em>Decision Aids</em>.",
+              "Confundir Redução do Risco Relativo com Redução Absoluta do Risco no cálculo do NNT."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Checklist Final de Pontos-Chave Imprescindíveis"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fórmula rápida do NNT:</strong> Se a redução absoluta do risco ($RAR$) é dada em porcentagem ($%$), basta dividir <strong>$100 div RAR(%)$</strong> (ex.: $RAR = 2% Rightarrow NNT = 100 div 2 = 50$). Se dada em proporção decimal, divida <strong>$1 div RAR$</strong> (ex.: $RAR = 0,005 Rightarrow NNT = 1 div 0,005 = 200$).",
+            "<strong>Estatuto da Pessoa com Deficiência (Lei nº 13.146/2015):</strong> Pessoas com deficiência mental ou intelectual possuem, como regra, capacidade civil plena. Mesmo quando submetidas a curatela, esta restringe-se aos atos patrimoniais e negociais, devendo o médico buscar sempre o consentimento livre e esclarecido da pessoa com deficiência com os apoios necessários (Art. 11 e 12 do Estatuto).",
+            "<strong>Objeção de Consciência Médica:</strong> É direito do médico em procedimentos eletivos, mas é <strong>estritamente proibida</strong> em (1) urgências e emergências, (2) quando não houver outro médico disponível no serviço ou (3) quando motivada por preconceito/discriminação contra a pessoa do paciente."
+          ]
+        ]
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,1427 @@
+{
+  "v": 2,
+  "s": "abordagem-familiar-genograma-e-ecomapa",
+  "t": "Abordagem Familiar, Genograma e Ecomapa",
+  "p": "Abordagem Familiar, Genograma e Ecomapa — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "a": "Medicina de Família e Comunidade",
+  "m": "Medicina de Família e Comunidade",
+  "h": [
+    "Apostila LURIA",
+    "Abordagem Familiar, Genograma e Ecomapa",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+    [
+      "Área: Medicina de Família e Comunidade",
+      "Matéria: Medicina de Família e Comunidade",
+      "Tema: Abordagem Familiar, Genograma e Ecomapa"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "teoria-sistemica-familiar-tipologias",
+      "1. Teoria Geral dos Sistemas, Modelo Estrutural de Minuchin e Tipologias Familiares Contemporâneas"
+    ],
+    [
+      "ciclo-vida-familiar-carter-mcgoldrick",
+      "2. Ciclo de Vida Familiar de Carter & McGoldrick, Adaptação Brasileira e Crises Normativas vs. Paranormativas"
+    ],
+    [
+      "genograma-simbologia-linhas-relacionamento",
+      "3. Genograma Familiar (McGoldrick, Gerson & Petry): Simbologia Gráfica Padronizada e Linhas de Relacionamento"
+    ],
+    [
+      "ecomapa-avaliacao-redes-apoio",
+      "4. Ecomapa (Ann Hartman): Avaliação Ecológica das Redes de Apoio, Fluxo de Energia e Integração com o Território"
+    ],
+    [
+      "ferramentas-avaliacao-familiar-apgar-practice-firo",
+      "5. Ferramentas de Avaliação Funcional e Estratificação Familiar: APGAR de Smilkstein, PRACTICE, FIRO e Escala de Coelho-Savassi"
+    ],
+    [
+      "niveis-doherty-baird-conferencia-familiar-cuidador",
+      "6. Níveis de Envolvimento Familiar de Doherty & Baird, Conferência Familiar e Abordagem da Sobrecarga do Cuidador"
+    ],
+    [
+      "visita-domiciliar-atencao-domiciliar-ad1-ad2-ad3",
+      "7. Visita Domiciliar na APS e Organização da Atenção Domiciliar no SUS (Modalidades AD1, AD2 e AD3)"
+    ],
+    [
+      "casos-clinicos-resolvidos-abordagem-familiar",
+      "8. Quatro Casos Clínicos Resolvidos e Comentados (Genograma, Ecomapa, Ciclo de Vida e Ferramentas Familiares)"
+    ],
+    [
+      "questoes-comentadas-residencia-abordagem-familiar",
+      "9. Questões Comentadas de Residência Médica, Revalida e ENAMED (Genograma, Ecomapa e Abordagem Familiar)"
+    ],
+    [
+      "tabela-high-yield-abordagem-familiar",
+      "10. Síntese High-Yield e Quadro Sinóptico para Revisão Rápida (Abordagem Familiar, Genograma e Ecomapa)"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "teoria-sistemica-familiar-tipologias",
+      0,
+      [
+        [
+          "2",
+          "1. Teoria Geral dos Sistemas, Modelo Estrutural de Minuchin e Tipologias Familiares Contemporâneas"
+        ],
+        [
+          "p",
+          "Na Medicina de Família e Comunidade (MFC) e na Atenção Primária à Saúde (APS), o indivíduo nunca é compreendido como uma mônada biológica isolada, mas como parte integrante de um sistema relacional vivo: a <strong>família</strong>. Conforme demonstrado pelo Segundo Componente do Método Clínico Centrado na Pessoa (MCCP), a família constitui o contexto proximal mais poderoso na determinação da saúde, na gênese de sintomas psicossomáticos, na adesão a tratamentos crônicos e na reabilitação funcional. Para avaliar e intervir tecnicamente nas famílias, o médico de família apoia-se na <strong>Teoria Geral dos Sistemas</strong> (Ludwig von Bertalanffy), na <strong>Cibernética</strong> (Gregory Bateson) e na <strong>Terapia Familiar Estrutural</strong> (Salvador Minuchin e Murray Bowen)."
+        ],
+        [
+          "3",
+          "1.1 Princípios da Teoria Sistêmica Aplicados à Família"
+        ],
+        [
+          "p",
+          "Transpondo a Teoria Geral dos Sistemas de Bertalanffy para a clínica de família, compreende-se a família como um <strong>sistema sociocultural aberto em transformação contínua</strong>, regido por seis propriedades fundamentais recorrentemente cobradas em provas de Residência Médica:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Totalidade (Não-Somatividade):</strong> <em>\"O todo é maior e qualitativamente diferente da simples soma de suas partes.\"</em> Não é possível compreender a dinâmica de uma família apenas somando os diagnósticos individuais de cada morador; o que define o sistema é a <strong>rede de interações e relações</strong> entre eles. Consequentemente, qualquer alteração significativa na saúde de um único membro (ex: um AVC incapacitante no pai ou o diagnóstico de leucemia em um filho) reverbera inevitavelmente sobre todos os demais membros do sistema.",
+            "<strong>2. Causalidade Circular (vs. Causalidade Linear Cartesiana):</strong> O pensamento biomédico tradicional opera por causalidade linear unidirecional (<em>A causa B</em>: \"o marido bebe porque a esposa reclama\" ou \"a esposa reclama porque o marido bebe\"). Na Teoria Sistêmica, os comportamentos familiares retroalimentam-se em <strong>circuitos de causalidade circular</strong>: quanto mais a esposa controla e critica (A), mais o marido se sente inadequado e bebe no bar (B), o que por sua vez intensifica a crítica e o controle da esposa (A), perpetuando uma dança relacional sem um único \"culpado\" linear.",
+            "<strong>3. Homeostase (Morfostase) vs. Morfogênese (Capacidade Adaptativa):</strong> Todo sistema familiar possui dois vetores dinâmicos complementares: a <strong>Homeostase (ou Morfostase)</strong>, que opera por <em>retroalimentação negativa (feedback negativo)</em> para manter a estabilidade, a identidade e o equilíbrio habitual da família diante de perturbações externas; e a <strong>Morfogênese</strong>, que opera por <em>retroalimentação positiva (feedback positivo)</em> para promover a mudança estrutural, o crescimento e a criação de novas regras quando a família avança de estágio no ciclo de vida ou enfrenta crises. Famílias saudáveis equilibram estabilidade (morfostase) com flexibilidade para mudar (morfogênese); famílias disfuncionais tornam-se rigidamente congeladas na homeostase antiga quando precisariam mudar.",
+            "<strong>4. Equifinalidade:</strong> Nos sistemas abertos, diferentes condições iniciais e diferentes trajetórias podem conduzir a um mesmo estado final organizacional (e, inversamente, condições iniciais idênticas podem levar a desfechos familiares distintos — <em>multifinalidade</em>).",
+            "<strong>5. O Conceito de \"Paciente Identificado\" (PI) ou \"Bode Expiatório\":</strong> Conceito sistêmico clássico! Frequentemente, uma família em intenso conflito conjugal ou crise estrutural inconsciente \"elege\" um de seus membros — quase sempre uma criança, um adolescente ou um idoso vulnerável — para manifestar sintomas físicos ou comportamentais (ex: crises de asma refratárias, enurese noturna secundária, dor abdominal recorrente, agitação escolar). Esse indivíduo trazido à UBS como \"o problema a ser consertado pelo médico\" é o <strong>Paciente Identificado (PI)</strong>: o sintoma do PI funciona homeostaticamente como uma \"válvula de escape\" ou \"para-raios\" que desvia a atenção dos pais de seu próprio conflito conjugal iminente, mantendo a família unida em torno da doença da criança!"
+          ]
+        ],
+        [
+          "3",
+          "1.2 Modelo Estrutural de Salvador Minuchin: Subsistemas e Fronteiras Familiares"
+        ],
+        [
+          "p",
+          "Salvador Minuchin demonstrou que o sistema familiar diferencia-se e executa suas funções por meio de <strong>Subsistemas</strong> organizados por geração, gênero, interesse ou função, separados por <strong>Fronteiras (Limites)</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Os 3 Subsistemas Clássicos:</strong>\n    <ol>\n      <li><strong>Subsistema Conjugal (Marital):</strong> Formado pelo casal adulto; requer fronteiras que protejam a intimidade afetiva e sexual da intrusão de filhos e sogros.",
+            "<strong>Subsistema Parental (Executivo):</strong> Formado pelos adultos no exercício das funções de criação, proteção, nutrição, afeto e estabelecimento de limites e autoridade sobre os filhos. (Nota: um mesmo casal compõe tanto o subsistema conjugal quanto o parental, mas com funções distintas!).",
+            "<strong>Subsistema Fraternal (Fratria):</strong> Formado pelos irmãos; é o primeiro laboratório social horizontal onde as crianças aprendem a negociar, cooperar, competir e lidar com pares sem a interferência constante dos pais.",
+            "<strong>Os 3 Tipos de Fronteiras (Limites) Familiares e o Continuum de Funcionalidade:</strong> As fronteiras são as regras invisíveis que definem <em>quem participa e como participa</em> de cada subsistema. Elas classificam-se em três padrões (altamente cobrados em provas):"
+          ]
+        ],
+        [
+          "t",
+          [
+            "Tipo de Fronteira (Minuchin)",
+            "Representação Gráfica",
+            "Dinâmica Sistêmica e Características",
+            "Repercussão Clínica na APS"
+          ],
+          [
+            [
+              "<strong>1. Fronteiras Nítidas (Claras)</strong><br><em>[Padrão Funcional / Saudável]</em>",
+              "<code>— — — — —</code><br>(Linha tracejada equilibrada)",
+              "Permitem contato afetivo, apoio mútuo e comunicação aberta entre os membros, mas preservam a individualidade, a privacidade e a hierarquia entre gerações.",
+              "Equilíbrio ótimo entre pertencimento familiar e autonomia pessoal (diferenciação do <em>self</em> de Bowen)."
+            ],
+            [
+              "<strong>2. Fronteiras Difusas (Permeáveis)</strong><br><em>[Famílias Emaranhadas / Aglutinadas]</em>",
+              "<code>. . . . . . . . .</code><br>(Linha pontilhada)",
+              "Fusão emocional extrema (<strong>emaranhamento</strong>): não há espaço privado nem autonomia; todos sabem e se intrometem em tudo; o estresse de um membro contamina instantaneamente todos os outros.",
+              "Superproteção paralisante, somatização intensa, dificuldade de emancipação dos jovens, acompanhante que responde todas as perguntas pelo paciente na consulta."
+            ],
+            [
+              "<strong>3. Fronteiras Rígidas (Impermeáveis)</strong><br><em>[Famílias Desengajadas / Desligadas]</em>",
+              "<code>—————————</code><br>(Linha contínua grossa)",
+              "Distanciamento emocional extremo (<strong>desengajamento</strong>): comunicação mínima, isolamento afetivo; cada membro funciona como uma ilha isolada.",
+              "Falta de suporte social e familiar; o membro precisa adoecer gravemente ou tentar suicídio para conseguir mobilizar alguma resposta de cuidado da família."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Parentalização (Filho Parental):</strong> Ocorre quando há violação da fronteira intergeracional e uma criança ou adolescente é alçado inadequadamente ao subsistema parental (ex: uma menina de 10 anos obrigada a assumir a criação dos irmãos menores, cozinhar e cuidar da mãe deprimida ou do pai alcoolista, perdendo sua própria infância). Quando temporária e supervisionada em famílias numerosas, a delegação de pequenas tarefas pode ser adaptativa, mas quando rígida e substitutiva dos pais, gera grave sofrimento psíquico e somatização."
+        ],
+        [
+          "3",
+          "1.3 Tipologias e Arranjos Familiares Contemporâneas no Brasil"
+        ],
+        [
+          "p",
+          "Na prática do SUS e nas provas de Residência, o conceito de família jamais se restringe à \"família nuclear burguesa tradicional\". Para a Medicina de Família, <em>\"família é qualquer grupo de pessoas unidas por laços biológicos, afetivos, legais ou de convivência que se reconhecem como tal e compartilham um projeto de vida e cuidado mútuo\"</em>. As principais configurações demográficas incluem:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Família Nuclear (Simples / Tradicional):</strong> Composta pelo casal (com ou sem vínculo formal de casamento) e seus filhos biológicos ou adotivos vivendo sob o mesmo teto.",
+            "<strong>Família Monoparental:</strong> Composta por apenas um dos genitores — na imensa maioria das vezes no Brasil, a mulher (<strong>monoparental feminina</strong>) — arcando com a responsabilidade dos filhos. Associa-se frequentemente a sobrecarga materna, dupla/tripla jornada e maior vulnerabilidade socioeconômica.",
+            "<strong>Família Reconstituída (Recasada / Mosaico / Pluriparental / \"Tentacular\"):</strong> Formada após divórcio ou viuvez quando um ou ambos os cônjuges trazem filhos de uniões anteriores e frequentemente têm novos filhos comuns (\"os meus, os seus e os nossos\"). Exige alta flexibilidade de fronteiras para integrar padrastos/madrastas sem usurpar o lugar dos pais biológicos externos.",
+            "<strong>Família Extensa (Ampliada / Trigerecional):</strong> Coabitação de três ou mais gerações no mesmo domicílio ou terreno (avós, pais, filhos, tios, netos). Muito prevalente nas periferias brasileiras como estratégia de sobrevivência econômica e rede de apoio no cuidado infantil e de idosos.",
+            "<strong>Família Homoafetiva (Homoparental):</strong> Casais do mesmo sexo/gênero, com ou sem filhos (por adoção, reprodução assistida ou uniões prévias).",
+            "<strong>Família Anaparental:</strong> Arranjo familiar constituído por pessoas com vínculo de parentesco ou afeto (ex: dois irmãos órfãos ou duas primas idosas que moram juntas) <strong>sem a presença de figura de ascendente vertical (pais/mães) nem vínculo conjugal</strong>.",
+            "<strong>Família Unipessoal:</strong> Domicílio composto por uma única pessoa que vive sozinha (jovem solteiro, divorciado ou idoso viúvo). Importante: <em>morar sozinho (arranjo domiciliar unipessoal) não significa não ter família!</em> O genograma e o ecomapa continuam fundamentais para mapear a rede familiar externa.",
+            "<strong>Família Comunitária ou Eudemonista:</strong> Pessoas sem laços consanguíneos nem conjugais que decidem coabitar pelo vínculo afetivo e solidariedade mútua (ex: repúblicas de idosos ou amigos que compartilham o cuidado)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "ciclo-vida-familiar-carter-mcgoldrick",
+      0,
+      [
+        [
+          "2",
+          "2. Ciclo de Vida Familiar de Carter & McGoldrick, Adaptação Brasileira e Crises Normativas vs. Paranormativas"
+        ],
+        [
+          "p",
+          "A família não é uma estrutura estática, mas um organismo que se move através do tempo. Assim como o indivíduo atravessa fases do desenvolvimento biológico e psicológico, a família percorre estágios previsíveis de evolução denominados <strong>Ciclo de Vida Familiar (CVF)</strong>. A transição de um estágio para o seguinte exige uma profunda reorganização estrutural do sistema (mudança de 2ª ordem): entrada ou saída de membros, redefinição de papéis e renegociação de fronteiras."
+        ],
+        [
+          "p",
+          "Por que o Ciclo de Vida Familiar é um dos temas mais cobrados em provas de Medicina de Família? Porque <strong>o pico de surgimento de sintomas físicos, descompensação de doenças crônicas, depressão e crises familiares ocorre exatamente nos pontos de transição entre um estágio e outro do Ciclo de Vida Familiar!</strong> Quando uma família não consegue realizar as tarefas evolutivas de transição para o novo estágio, um de seus membros frequentemente adoece como sinalizador da estagnação sistêmica."
+        ],
+        [
+          "3",
+          "2.1 Os 6 Estágios Clássicos de Betty Carter & Monica McGoldrick (1989)"
+        ],
+        [
+          "p",
+          "O modelo internacional padrão-ouro proposto por <strong>Betty Carter e Monica McGoldrick</strong> divide o Ciclo de Vida Familiar (para famílias de classe média norte-americana/ocidental intactas) em <strong>6 estágios evolutivos</strong>, definindo para cada um a mudança emocional de 2ª ordem e as tarefas de desenvolvimento:"
+        ],
+        [
+          "t",
+          [
+            "Estágio do Ciclo de Vida Familiar (Carter & McGoldrick)",
+            "Processo Emocional de Transição (Princípio-Chave)",
+            "Mudanças de Segunda Ordem Necessárias (Tarefas Evolutivas)",
+            "Problemas Clínicos e Conflitos Típicos na APS"
+          ],
+          [
+            [
+              "<strong>1. Saindo de Casa: Jovens Solteiros</strong><br>(<em>Launching the single young adult</em>)",
+              "Aceitar a separação emocional e financeira entre pais e filhos (responsabilidade emocional e financeira por si mesmo).",
+              "• Diferenciação do <em>self</em> em relação à família de origem (relação adulto-adulto com os pais);<br>• Desenvolvimento de relacionamentos íntimos com pares;<br>• Estabelecimento de identidade profissional e independência financeira.",
+              "Ansiedade de desempenho, ISTs, gestação não planejada, abuso episódico de álcool/drogas, dificuldade de emancipação em famílias emaranhadas."
+            ],
+            [
+              "<strong>2. A União de Famílias no Casamento: O Novo Casal</strong><br>(<em>The joining of families through marriage</em>)",
+              "Comprometimento com um novo sistema (união não de duas pessoas, mas de <strong>dois sistemas familiares inteiros</strong> com suas culturas e mitos!).",
+              "• Formação do <strong>subsistema conjugal</strong>;<br>• Realinhamento dos relacionamentos com as famílias extensas (pais/sogros) e amigos para incluir o cônjuge;<br>• Negociação de regras domésticas, finanças, sexualidade e planejamento reprodutivo.",
+              "Conflitos de lealdade com a família de origem (triangulação com sogra/mãe), disfunções sexuais adaptativas, queixas somáticas de ajustamento, infertilidade."
+            ],
+            [
+              "<strong>3. Famílias com Filhos Pequenos</strong><br>(<em>Families with young children</em>)",
+              "Aceitar novos membros no sistema (passagem da díade conjugal para o triângulo familiar).",
+              "• Ajustar o sistema conjugal para criar espaço físico e emocional para os filhos;<br>• Unir-se nas tarefas de educação, cuidado infantil e divisão doméstica (criação do <strong>subsistema parental</strong>);<br>• Realinhamento com a família extensa para incluir os papéis de <strong>avós</strong> e tios.",
+              "Exaustão parental, depressão pós-parto, queda brusca da intimidade/libido conjugal (mãe fundida com o bebê e pai periférico/excluído), disputas com avós sobre a criação, infecções respiratórias de repetição na creche."
+            ],
+            [
+              "<strong>4. Famílias com Adolescentes</strong><br>(<em>Families with adolescents</em>)",
+              "Aumentar a <strong>flexibilidade das fronteiras familiares</strong> para incluir a independência crescente dos filhos e a fragilidade dos avós.",
+              "• Modificar as relações pais-filhos para permitir que o adolescente entre e saia do sistema (exercício de autonomia com proteção);<br>• Retomar o foco nas questões conjugais e profissionais do meio da vida (crise da meia-idade);<br>• Começar a mudança no sentido de cuidar da geração mais velha (avós envelhecendo).",
+              "<strong>Geração Sanduíche</strong> (pais pressionados simultaneamente pela rebeldia dos filhos adolescentes e pela dependência dos pais idosos), conflitos de autoridade, experimentação de drogas, transtornos alimentares, crise conjugal."
+            ],
+            [
+              "<strong>5. Lançando os Filhos e Seguindo em Frente</strong><br>(<em>Launching children and moving on</em>)",
+              "Aceitar uma multiplicidade de saídas e entradas no sistema familiar.",
+              "• Renegociar o sistema conjugal como uma <strong>díade novamente (\"Ninho Vazio\")</strong>;<br>• Desenvolver relacionamentos de adulto para adulto entre os filhos crescidos e seus pais;<br>• Realinhar os relacionamentos para incluir genros, noras e netos;<br>• Lidar com incapacidades e morte dos pais (avós).",
+              "<strong>Síndrome do Ninho Vazio</strong> (depressão, somatização ou divórcio tardio de casais que só permaneciam juntos em função dos filhos), luto pela perda dos pais idosos, descompensação de doenças crônicas (HAS, DM2, climatério)."
+            ],
+            [
+              "<strong>6. Famílias no Estágio Tardio da Vida</strong><br>(<em>Families in later life</em>)",
+              "Aceitar a mudança dos papéis geracionais.",
+              "• Manter o funcionamento e os interesses próprios e/ou do casal em face do declínio fisiológico;<br>• Apoiar um papel mais central para a geração do meio (filhos adultos), sem perder a sabedoria e dignidade da geração mais velha;<br>• Lidar com a perda do cônjuge (viuvez), de irmãos e amigos e preparar-se para a própria finitude (revisão integrada da vida).",
+              "Luto por viuvez (altíssimo risco de mortalidade e depressão nos primeiros 6-12 meses após a morte do cônjuge), perda de autonomia, inversão dolorosa de papéis (filhos cuidando de pais com demência), sobrecarga do cuidador."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "2.2 Adaptação Brasileira do Ciclo de Vida Familiar (Ceneide Maria de Oliveira Cerveny)"
+        ],
+        [
+          "p",
+          "Nas provas brasileiras de Residência em MFC e Psicologia Médica, é importante conhecer também a adaptação nacional proposta por <strong>Ceneide Cerveny e Berthoud</strong> para a realidade sociocultural das famílias brasileiras (onde os jovens frequentemente saem de casa mais tarde por questões econômicas e culturais e a família extensa tem forte presença). Cerveny sintetiza o ciclo em <strong>4 grandes fases</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Fase de Aquisição:</strong> Da união do casal até o nascimento e criação dos filhos pequenos e escolares (marcada pela aquisição do modelo próprio de família, de bens materiais, moradia e consolidação profissional).",
+            "<strong>Fase Adolescente:</strong> Quando os filhos entram na adolescência (todo o sistema familiar \"adolesce\" junto, questionando regras, valores e revivendo a juventude enquanto os pais enfrentam o climatério/meia-idade).",
+            "<strong>Fase Madura:</strong> Saída tardia dos filhos (fenômeno do \"ninho cheio\" ou geração canguru no Brasil), entrada de agregados (genros, noras, netos), aposentadoria e cuidado dos pais idosos.",
+            "<strong>Fase Última:</strong> Envelhecimento avançado do casal original, viuvez e balanço geracional da vida."
+          ]
+        ],
+        [
+          "3",
+          "2.3 Crises Familiares: Crises Normativas (Evolutivas) vs. Crises Paranormativas (Acidentais / Imprevisíveis)"
+        ],
+        [
+          "p",
+          "Diferenciar os dois grandes tipos de crise familiar é questão clássica e obrigatória em todas as bancas de Medicina de Família:"
+        ],
+        [
+          "t",
+          [
+            "Dimensão Comparativa",
+            "Crises Normativas (Evolutivas / Desenvolvimentais / Previsíveis)",
+            "Crises Paranormativas (Acidentais / Não-Evolutivas / Imprevisíveis)"
+          ],
+          [
+            [
+              "<strong>Definição Conceitual</strong>",
+              "Transições naturais, universais e esperadas ao longo da linha do tempo do Ciclo de Vida Familiar normal.",
+              "Eventos estressores abruptos, inesperados, traumáticos ou fora do tempo esperado (<em>off-time</em>) que atingem a família sem aviso prévio."
+            ],
+            [
+              "<strong>Exemplos Clássicos de Prova</strong>",
+              "• Casamento / união estável;<br>• Nascimento do primeiro filho;<br>• Entrada da criança na escola;<br>• Adolescência dos filhos;<br>• Saída dos filhos adultos de casa (ninho vazio);<br>• Aposentadoria por tempo de serviço;<br>• Envelhecimento e morte natural de um idoso longevo no estágio tardio.",
+              "• Morte precoce/súbita de um filho, criança ou cônjuge jovem;<br>• Desemprego abrupto, falência ou perda da casa em enchente/incêndio;<br>• Divórcio / separação conjugal litigiosa ou traição descoberta;<br>• Gravidez na adolescência precoce;<br>• Diagnóstico súbito de doença grave incapacitante ou câncer em adulto jovem;<br>• Nascimento de criança com malformação congênita grave."
+            ],
+            [
+              "<strong>Potencial de Disfunção e Manejo na APS</strong>",
+              "Permitem <strong>Orientação Antecipatória</strong> pelo médico de família (preparar o casal antes do parto sobre a queda do sono e o papel do pai; preparar para a aposentadoria).",
+              "Causam choque sistêmico agudo e alto risco de desestruturação familiar, exigindo intervenção de crise imediata, conferência familiar e mobilização da rede de apoio (Ecomapa)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Nota Clínica de Ouro:</strong> O impacto patogênico máximo ocorre quando há <strong>sobreposição simultânea de uma Crise Normativa com uma Crise Paranormativa</strong> (cruzamento de estressores verticais/transgeracionais e horizontais no diagrama de Carter & McGoldrick) — por exemplo, uma família que está atravessando a transição normativa do nascimento do primeiro bebê e, na mesma semana, o marido sofre um acidente de moto grave ficando paraplégico ou é demitido (crise paranormativa)."
+        ]
+      ]
+    ],
+    [
+      "genograma-simbologia-linhas-relacionamento",
+      0,
+      [
+        [
+          "2",
+          "3. Genograma Familiar (McGoldrick, Gerson & Petry): Simbologia Gráfica Padronizada e Linhas de Relacionamento"
+        ],
+        [
+          "p",
+          "Criado por Murray Bowen na terapia familiar sistêmica e padronizado internacionalmente em 1985 por <strong>Monica McGoldrick e Randy Gerson</strong> (atualizado com Sueli Petry), o <strong>Genograma</strong> (também chamado de familiograma ou árvore familiar clínica) é uma representação gráfica padronizada da constelação familiar multigeracional que registra a estrutura anatômica da família, sua história biológica/genética, seus eventos críticos de transição e a qualidade emocional das relações entre seus membros."
+        ],
+        [
+          "p",
+          "Na Atenção Primária à Saúde, o Genograma é simultaneamente um <strong>instrumento diagnóstico</strong> (revelando padrões transgeracionais de doenças cardiovasculares, neoplasias, transtornos mentais, alcoolismo, violência e alianças disfuncionais) e um <strong>instrumento terapêutico</strong> (pois o próprio ato de construir o genograma junto com o paciente na folha de papel ajuda a pessoa a visualizar conexões entre seus sintomas atuais e a história de sua família!)."
+        ],
+        [
+          "3",
+          "3.1 Regras Estruturais Obrigatórias de Construção do Genograma"
+        ],
+        [
+          "p",
+          "As bancas de Residência Médica e Revalida cobram com extremo rigor técnico as convenções gráficas de McGoldrick & Gerson:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Número Mínimo de Gerações:</strong> Um genograma clínico completo deve incluir obrigatoriamente <strong>no mínimo 3 (três) gerações</strong> (ex: avós na linha superior, pais/tios na linha intermediária e filhos na linha inferior; ou pessoa-índice, filhos e netos).",
+            "<strong>Gênero e Posição do Casal (Regra Esquerda-Direita):</strong>\n    <ul>\n      <li>O sexo <strong>Masculino</strong> é representado por um <strong>Quadrado (☐)</strong> e deve ser posicionado à <strong>ESQUERDA</strong> na linha conjugal.",
+            "O sexo <strong>Feminino</strong> é representado por um <strong>Círculo (◯)</strong> e deve ser posicionado à <strong>DIREITA</strong> na linha conjugal.",
+            "<em>Mnemônico infalível para a prova:</em> No casal, o <strong>Homem (Quadrado) fica à Esquerda</strong> e a <strong>Mulher (Círculo) fica à Direita</strong>!",
+            "<strong>Pessoa-Índice (Paciente Identificado / Caso-Índice):</strong> A pessoa a partir da qual o genograma está sendo construído é representada com <strong>duplo contorno</strong>: um <strong>Quadrado Duplo</strong> (para homem) ou um <strong>Círculo Duplo</strong> (para mulher) — ou apontada por uma seta destacada.",
+            "<strong>Idade e Datas:</strong> A <strong>idade atual</strong> da pessoa é escrita <strong>dentro</strong> do quadrado ou círculo; o <strong>ano de nascimento</strong> (e o ano do óbito, se falecido, ex: <code>1945 - 2022</code>) é escrito logo <strong>acima</strong> da figura, e o nome/ocupação ou patologia principal é anotado logo abaixo.",
+            "<strong>Óbito (Morte):</strong> Representado por um <strong>\"X\" traçado dentro</strong> do quadrado ou do círculo (com a idade do óbito dentro da figura e o ano/causa da morte anotados adjacentes).",
+            "<strong>Ordem de Nascimento dos Filhos (Fratria):</strong> Os filhos são pendurados por linhas verticais a partir da linha horizontal do casamento dos pais e devem ser ordenados rigorosamente da <strong>ESQUERDA para a DIREITA por ordem cronológica de nascimento</strong> — isto é, o <strong>filho mais velho (primogênito) fica sempre mais à esquerda</strong> e o <strong>filho mais novo (caçula) fica mais à direita</strong>!"
+          ]
+        ],
+        [
+          "3",
+          "3.2 Tabela Completa da Simbologia Estrutural e Reprodutiva do Genograma"
+        ],
+        [
+          "t",
+          [
+            "Elemento Familiar / Condição",
+            "Representação Gráfica Padronizada (McGoldrick & Gerson)",
+            "Detalhes e Pegadinhas de Prova"
+          ],
+          [
+            [
+              "<strong>Homem / Mulher / Pessoa-Índice</strong>",
+              "Homem = <strong>Quadrado (☐)</strong> (à esquerda no casal).<br>Mulher = <strong>Círculo (◯)</strong> (à direita no casal).<br>Pessoa-Índice = <strong>Quadrado Duplo ou Círculo Duplo</strong>.",
+              "Se o sexo for desconhecido ou indeterminado (ex: gestação em curso sem saber o sexo fetal), usa-se um <strong>Triângulo (△)</strong>!"
+            ],
+            [
+              "<strong>Pessoa Transgênero (Homem Trans / Mulher Trans)</strong>",
+              "<strong>Mulher Trans</strong> (sexo biológico masculino ao nascer, identidade feminina) = Quadrado externo com Círculo interno (ou Círculo com quadrado interno conforme convenção atualizada indicando identidade social como contorno principal).",
+              "Registrar sempre o nome social e respeitar a identidade de gênero declarada."
+            ],
+            [
+              "<strong>Gestação Atual (Gravidez em Curso)</strong>",
+              "Um <strong>Triângulo (△)</strong> pendurado na linha de filhos (com as semanas/meses de idade gestacional anotados).",
+              "Jamais confundir o triângulo da gestação com óbito neonatal!"
+            ],
+            [
+              "<strong>Natimorto (Óbito Fetal Tardio)</strong>",
+              "Quadrado ou Círculo pequeno (conforme o sexo) com um <strong>\"X\" dentro</strong>.",
+              "Diferencia-se do aborto pela viabilidade/idade gestacional."
+            ],
+            [
+              "<strong>Aborto Espontâneo vs. Aborto Provocado (Induzido)</strong>",
+              "<strong>Aborto Espontâneo:</strong> Círculo pequeno totalmente preenchido/pintado de preto (<strong>●</strong>).<br><strong>Aborto Provocado (Induzido):</strong> Um <strong>\"X\" isolado</strong> na ponta da linha vertical de gestação (sem quadrado ou círculo ao redor).",
+              "Distinção clássica de prova de Residência em MFC! Bolinha preta cheia = aborto espontâneo; X isolado sem contorno = aborto provocado."
+            ],
+            [
+              "<strong>Gêmeos Fraternos (Dizigóticos) vs. Gêmeos Idênticos (Monozigóticos)</strong>",
+              "<strong>Dizigóticos (Fraternos):</strong> Duas linhas que partem do <strong>mesmo ponto</strong> na linha horizontal dos pais formando um \"V\" invertido (<code>/</code>).<br><strong>Monozigóticos (Idênticos):</strong> As duas linhas convergem no mesmo ponto (\"V\" invertido) <strong>E são conectadas entre si por uma barra horizontal</strong> (formando um \"A\" / triângulo fechado entre os irmãos).",
+              "Se têm barra horizontal ligando os dois gêmeos = Idênticos (monozigóticos); se apenas saem do mesmo vértice sem barra horizontal = Fraternos (dizigóticos)."
+            ],
+            [
+              "<strong>Filho Adotivo vs. Filho de Criação (Foster)</strong>",
+              "A linha vertical que liga o filho à linha dos pais é <strong>tracejada/pontilhada</strong> (ou coloca-se a linha contínua ao lado da tracejada com a letra \"A\").",
+              "Indica vínculo jurídico/afetivo não biológico."
+            ],
+            [
+              "<strong>Casamento Legal vs. União Estável (Coabitação / Amasiamento)</strong>",
+              "<strong>Casamento civil formal:</strong> Linha horizontal <strong>contínua (————)</strong> ligando o quadrado e o círculo.<br><strong>União estável / Coabitação sem casamento formal:</strong> Linha horizontal <strong>tracejada (- - - - - -)</strong> ligando o casal.",
+              "Anota-se \"c. 2010\" (casamento em 2010) ou \"j. 2015\" (juntos desde 2015) sobre a linha."
+            ],
+            [
+              "<strong>Separação Conjugal vs. Divórcio Legal</strong>",
+              "<strong>Separação de fato:</strong> <strong>UMA barra oblíqua (<code>/</code>)</strong> cortando a linha horizontal do casamento.<br><strong>Divórcio legal consumado:</strong> <strong>DUAS barras oblíquas paralelas (<code>//</code>)</strong> cortando a linha horizontal do casamento!",
+              "<strong>Cai em quase toda prova!</strong> 1 barra (<code>/</code>) = Separação; 2 barras (<code>//</code>) = Divórcio! Em uniões estáveis desfeitas (linha tracejada), usa-se 1 barra oblíqua (<code>/</code>)."
+            ],
+            [
+              "<strong>Coabitação Domiciliar (Quem mora na mesma casa hoje?)</strong>",
+              "Uma <strong>linha pontilhada ou tracejada fechada (em forma de \"laço\" ou \"nuvem\") circundando</strong> todos os membros que residem atualmente sob o mesmo teto!",
+              "Como o genograma mostra 3 gerações, nem todos na árvore moram juntos; a linha envoltória delimita exatamente quem coabita no domicílio hoje."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "3.3 Simbologia Funcional do Genograma: As Linhas de Relacionamento Interpessoal e a Triangulação"
+        ],
+        [
+          "p",
+          "Enquanto o traçado básico mostra a anatomia biológica e legal da família (Genograma Estrutural), as <strong>Linhas de Relacionamento</strong> traçadas entre dois membros específicos mostram a dinâmica emocional e psicossocial (Genograma Funcional). Elas devem ser memorizadas com perfeição:"
+        ],
+        [
+          "t",
+          [
+            "Padrão de Relacionamento Emocional",
+            "Representação Gráfica Padronizada",
+            "Significado Clínico e Dinâmica Sistêmica"
+          ],
+          [
+            [
+              "<strong>1. Relacionamento Próximo / Harmonioso (Normal/Estreito)</strong>",
+              "<strong>Duas linhas retas paralelas contínuas (<code>========</code>)</strong> ligando os dois membros.",
+              "Vínculo afetivo forte, saudável, solidário e com fronteiras nítidas."
+            ],
+            [
+              "<strong>2. Relacionamento Fundido / Emaranhado (Muito Próximo / Hiperinclusivo)</strong>",
+              "<strong>Três linhas retas paralelas contínuas (<code>≡≡≡≡≡≡≡≡</code>)</strong> ligando os dois membros.",
+              "Fusão simbiótica e perda de fronteiras individuais (comum entre mãe superprotetora e filho pequeno/adolescente ou cônjuges codependentes)."
+            ],
+            [
+              "<strong>3. Relacionamento Conflituoso / Hostil</strong>",
+              "<strong>Uma linha em zigue-zague / dente de serra (<code>/////</code>)</strong> ligando os dois membros.",
+              "Brigas constantes, tensão aberta, hostilidade verbal ou rivalidade crônica."
+            ],
+            [
+              "<strong>4. Relacionamento Fundido E Conflituoso (Amor e Ódio / Emaranhado-Hostil)</strong>",
+              "<strong>Três linhas paralelas atravessadas por uma linha em zigue-zague no meio</strong>.",
+              "Padrão altamente patogênico: as duas pessoas vivem brigando intensamente, mas são incapazes de se separar emocionalmente (\"não vivem com, nem sem\")."
+            ],
+            [
+              "<strong>5. Relacionamento Distante / Pobre</strong>",
+              "<strong>Uma linha tracejada ou pontilhada simples (<code>- - - - - -</code>)</strong> entre os dois membros.",
+              "Pouco contato afetivo, comunicação superficial ou indiferença emocional."
+            ],
+            [
+              "<strong>6. Corte Emocional / Rompimento (Estrangement / Cutoff)</strong>",
+              "<strong>Uma linha interrompida no meio por duas pequenas barras verticais ou um intervalo aberto (<code>———||———</code>)</strong>.",
+              "Rompimento total de contato (\"não se falam há anos\"). Conceito central de Murray Bowen: o corte emocional não resolve o conflito, apenas o congela sob alta tensão."
+            ],
+            [
+              "<strong>7. Violência / Abuso (Físico, Sexual ou Emocional)</strong>",
+              "Linha em zigue-zague ou ondulada com uma <strong>seta direcionada do agressor para a vítima</strong>.",
+              "Indica unidirecionalidade de agressão ou abuso de poder dentro do sistema."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Aliança vs. Coalizão e o Conceito de Triangulação (Murray Bowen & Salvador Minuchin)"
+        ],
+        [
+          "p",
+          "Compreender a diferença entre <strong>Aliança</strong>, <strong>Coalizão</strong> e <strong>Triangulação</strong> é obrigatório para resolver questões de terapia familiar na APS:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Aliança:</strong> União aberta e funcional entre dois membros da família para compartilhar interesses ou tarefas comuns, <strong>sem o objetivo de prejudicar ou atacar um terceiro</strong> (ex: pai e filho que gostam de pescar juntos; duas irmãs que dividem o cuidado da mãe idosa).",
+            "<strong>Coalizão (Coligação):</strong> União de dois membros (frequentemente transgeracional, violando a hierarquia, como mãe + filho adolescente) <strong>contra um terceiro membro (ex: contra o pai)</strong>! Na coalizão, o vínculo entre A e B existe para desautorizar, excluir ou combater C.",
+            "<strong>Triangulação (<em>Triangulation</em>):</strong> Descrita por Murray Bowen como o \"menor sistema relacional estável\". Uma díade (duas pessoas, como marido e mulher) é intrinsecamente instável quando o nível de ansiedade e conflito sobe; para aliviar a tensão entre os dois, a díade \"puxa\" uma terceira pessoa (quase sempre um filho, a sogra ou até mesmo o próprio médico de família!), formando um <strong>triângulo</strong>. Na triangulação clássica de Minuchin, cada um dos pais em conflito exige que o filho tome partido ao seu lado contra o outro genitor, paralisando a criança em um conflito de lealdade dilacerante!"
+          ]
+        ]
+      ]
+    ],
+    [
+      "ecomapa-avaliacao-redes-apoio",
+      0,
+      [
+        [
+          "2",
+          "4. Ecomapa (Ann Hartman): Avaliação Ecológica das Redes de Apoio, Fluxo de Energia e Integração com o Território"
+        ],
+        [
+          "p",
+          "Enquanto o Genograma olha \"para dentro\" e \"para trás no tempo\" (mapeando a estrutura interna e a árvore multigeracional da família), o <strong>Ecomapa</strong> — desenvolvido em 1975 pela assistente social e terapeuta familiar norte-americana <strong>Ann Hartman</strong> — olha \"para fora\" e \"para o momento presente\": é o diagrama ecológico que avalia as <strong>relações, conexões e trocas de energia entre a família (ou indivíduo) e o seu meio comunitário, social e institucional</strong>."
+        ],
+        [
+          "3",
+          "4.1 Como se Constrói e Interpreta um Ecomapa na Atenção Primária?"
+        ],
+        [
+          "p",
+          "A arquitetura gráfica do Ecomapa segue passos padronizados altamente visuais:"
+        ],
+        [
+          "o",
+          [
+            "<strong>O Círculo Central (A Casa / Família Nuclear Domiciliar):</strong> No centro da folha, desenha-se um <strong>grande círculo (ou retângulo)</strong> dentro do qual é colocado o genograma simplificado apenas dos membros que <strong>coabitam atualmente no domicílio</strong> (o núcleo familiar domiciliar).",
+            "<strong>Os Círculos Periféricos (Sistemas Externos / Suprassistema Comunitário):</strong> Ao redor do círculo central, desenham-se diversos círculos menores representando todas as instituições, grupos sociais e recursos do território com os quais a família interage (ou deveria interagir):\n    <ul>\n      <li><strong>Unidade Básica de Saúde (UBS / Equipe de Saúde da Família)</strong> e outros serviços de saúde (CAPS, ambulatório de especialidades, hospital);",
+            "<strong>Família Extensa</strong> (parentes que não moram na mesma casa: avós, tios, ex-cônjuge);",
+            "<strong>Trabalho / Emprego / Fonte de Renda</strong>;",
+            "<strong>Escola / Creche / Universidade</strong>;",
+            "<strong>Igreja / Comunidade Religiosa / Espiritualidade</strong>;",
+            "<strong>Amigos, Vizinhos e Associações de Bairro</strong>;",
+            "<strong>Lazer, Esporte, Cultura e Assistência Social (CRAS / CREAS / Bolsa Família / INSS)</strong>.",
+            "<strong>As Linhas de Conexão (Qualidade e Força do Vínculo com o Meio):</strong> Traçam-se linhas ligando o círculo central (ou um membro específico dentro do círculo central, quando a relação é individualizada) aos círculos periféricos:\n    <ul>\n      <li><strong>Linha Contínua Grossa (ou Dupla):</strong> Vínculo <strong>forte, nutritivo e de grande suporte</strong> (ex: ligação forte da idosa com o grupo da igreja e com a UBS).",
+            "<strong>Linha Contínua Fina:</strong> Vínculo normal/moderado.",
+            "<strong>Linha Tracejada (<code>- - - - - -</code>):</strong> Vínculo <strong>fraco, tênue ou precário</strong> (ex: contato raro com a família extensa distante).",
+            "<strong>Linha Cortada / Entrecortada por Barras ou Zigue-Zague (<code>////</code>):</strong> Relação <strong>estressante, conflituosa ou hostil</strong> (ex: ambiente de trabalho onde o paciente sofre assédio moral; relação conflituosa com vizinhos ou com o tráfico local).",
+            "<strong>As Setas de Fluxo de Energia e Recursos (Direcionalidade):</strong> Elemento exclusivo e fundamental do Ecomapa! Ao longo das linhas de conexão, desenham-se <strong>pequenas setas (<code>→</code>, <code>←</code> ou <code>↔</code>)</strong> que indicam a direção do fluxo de energia, cuidado, dinheiro ou desgaste:\n    <ul>\n      <li><strong>Setas apontando dos círculos externos para dentro da família (<code>←</code>):</strong> A família recebe apoio, recursos e nutrição daquele equipamento social.",
+            "<strong>Setas apontando de dentro da família para fora (<code>→</code>):</strong> A família (ou aquele membro, como uma mãe cuidadora) gasta e doa sua energia para aquele sistema sem receber retorno equivalente (drenagem de energia!).",
+            "<strong>Setas bidirecionais (<code>↔</code>):</strong> Troca equilibrada e recíproca de recursos e afeto."
+          ]
+        ],
+        [
+          "3",
+          "4.2 Diagnósticos Ecológicos através do Ecomapa e Comparação com o Genograma"
+        ],
+        [
+          "p",
+          "Ao bater o olho em um Ecomapa pronto, o médico de família realiza imediatamente o diagnóstico ecológico da rede de suporte:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Família Socialmente Isolada (Deserto de Rede de Apoio):</strong> Quase todos os círculos externos estão desconectados ou com linhas tracejadas tênues. Essa família não tem vizinhos, amigos, igreja nem família extensa a quem recorrer numa emergência; consequentemente, ela canaliza 100% de suas necessidades vitais e afetivas para o único vínculo existente — a Unidade Básica de Saúde (explicando muitos casos de hiperutilização da APS!).",
+            "<strong>Sobrecarga e Drenagem Unidirecional de Energia:</strong> Múltiplas setas saindo do cuidador principal rumo ao trabalho, aos parentes doentes e à escola dos filhos, com linhas conflituosas (zigue-zague) e nenhuma seta de suporte entrando em sua direção — retrato clássico do esgotamento do cuidador."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Critério Comparativo",
+            "Genograma (McGoldrick & Gerson)",
+            "Ecomapa (Ann Hartman)"
+          ],
+          [
+            [
+              "<strong>Dimensão Avaliada</strong>",
+              "Estrutura <strong>interna</strong> da família, composição biológica/legal, padrões transgeracionais de doenças e relações intrafamiliares.",
+              "Rede de relações <strong>externas</strong> entre a família (domicílio) e a comunidade, instituições sociais, trabalho, saúde e lazer."
+            ],
+            [
+              "<strong>Eixo Temporal Predominante</strong>",
+              "<strong>Histórico, Longitudinal e Multigeracional</strong> (mínimo de 3 gerações através do tempo), embora atualizado no presente.",
+              "<strong>Transversal, Dinâmico e Focado no Momento Presente</strong> (fotografia ecológica atual das conexões e fluxos de energia)."
+            ],
+            [
+              "<strong>Elementos Gráficos Específicos</strong>",
+              "Quadrados, círculos, triângulos, linhas de filiação/casamento, barras de separação (<code>/</code>) e divórcio (<code>//</code>) e linhas de relação interna.",
+              "Grande círculo central (núcleo domiciliar), círculos satélites periféricos (equipamentos sociais) e <strong>setas de fluxo de energia (<code>→</code> / <code>↔</code>)</strong>."
+            ],
+            [
+              "<strong>Complementaridade Clínica</strong>",
+              "Identifica vulnerabilidades genéticas, repetições transgeracionais, lutos e conflitos internos.",
+              "Identifica isolamento social, fontes de estresse ambiental e recursos comunitários mobilizáveis no Plano Terapêutico."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "ferramentas-avaliacao-familiar-apgar-practice-firo",
+      0,
+      [
+        [
+          "2",
+          "5. Ferramentas de Avaliação Funcional e Estratificação Familiar: APGAR de Smilkstein, PRACTICE, FIRO e Escala de Coelho-Savassi"
+        ],
+        [
+          "p",
+          "Além do Genograma e do Ecomapa, a Medicina de Família e Comunidade dispõe de instrumentos psicométricos e modelos qualitativos validados para aferir a funcionalidade familiar, estruturar o manejo de crises e priorizar visitas domiciliares no território. O domínio dos acrônimos <strong>APGAR Familiar</strong>, <strong>PRACTICE</strong>, <strong>FIRO</strong> e da <strong>Escala de Risco Familiar de Coelho-Savassi</strong> é indispensável para as provas de Residência e Revalida."
+        ],
+        [
+          "3",
+          "5.1 APGAR Familiar de Gabriel Smilkstein (1978): Avaliação da Percepção de Funcionalidade Familiar"
+        ],
+        [
+          "p",
+          "Criado pelo médico de família norte-americano <strong>Gabriel Smilkstein</strong> em 1978 (em uma analogia intencional ao escore de Apgar neonatal de Virginia Apgar), o <strong>APGAR Familiar</strong> é um questionário ágil de <strong>5 perguntas</strong> que avalia o grau de <strong>satisfação subjetiva de um membro da família com o funcionamento atual de seu sistema familiar</strong>."
+        ],
+        [
+          "p",
+          "<strong>Atenção para o ponto mais cobrado em prova:</strong> O que significa cada letra do acrônimo <strong>A-P-G-A-R</strong> de Smilkstein e como ele é pontuado?"
+        ],
+        [
+          "t",
+          [
+            "Letra",
+            "Dimensão Avaliada (Inglês / Português)",
+            "Definição Funcional de Smilkstein",
+            "Pergunta Validada Aplicada ao Paciente"
+          ],
+          [
+            [
+              "<strong>A</strong>",
+              "<strong><em>Adaptation</em> (Adaptação)</strong>",
+              "Capacidade da família de utilizar e compartilhar recursos intra e extrafamiliares para resolver problemas quando o equilíbrio é ameaçado por uma crise.",
+              "<em>\"Estou satisfeito(a) com a atenção e a ajuda que recebo da minha família quando algo está me incomodando ou tenho um problema?\"</em>"
+            ],
+            [
+              "<strong>P</strong>",
+              "<strong><em>Partnership</em> (Participação / Companheirismo)</strong>",
+              "Compartilhamento de tomadas de decisão, comunicação recíproca e divisão de responsabilidades entre os membros da família.",
+              "<em>\"Estou satisfeito(a) com a maneira como minha família conversa comigo sobre as questões de interesse comum e compartilha a solução dos problemas?\"</em>"
+            ],
+            [
+              "<strong>G</strong>",
+              "<strong><em>Growth</em> (Crescimento)</strong>",
+              "Apoio mútuo e liberdade concedida pela família para a maturação física, emocional e autorrealização de cada membro (mudanças de rumo ou projetos pessoais).",
+              "<em>\"Estou satisfeito(a) com a maneira como minha família aceita e apoia meus desejos de iniciar novas atividades ou buscar novos caminhos na vida?\"</em>"
+            ],
+            [
+              "<strong>A</strong>",
+              "<strong><em>Affection</em> (Afeição)</strong>",
+              "Demonstração de carinho, amor, intimidade, empatia e resposta às necessidades emocionais (tristeza, raiva, alegria) entre os membros.",
+              "<em>\"Estou satisfeito(a) com a maneira como minha família demonstra afeição e reage às minhas emoções, como tristeza, raiva ou amor?\"</em>"
+            ],
+            [
+              "<strong>R</strong>",
+              "<strong><em>Resolve</em> (Resolução / Compromisso)</strong>",
+              "Compromisso de dedicar <strong>tempo, espaço e recursos financeiros/materiais</strong> para estar junto e nutrir os demais membros da família.",
+              "<em>\"Estou satisfeito(a) com a maneira como minha família e eu compartilhamos o tempo juntos (espaço e dinheiro)?\"</em>"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Sistema de Pontuação e Interpretação do Escore APGAR Familiar (0 a 10 pontos):"
+        ],
+        [
+          "p",
+          "Para cada uma das 5 perguntas acima, o paciente responde escolhendo uma de três opções:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Quase sempre:</strong> <code>2 pontos</code>",
+            "<strong>Algumas vezes:</strong> <code>1 ponto</code>",
+            "<strong>Quase nunca (Raramente):</strong> <code>0 pontos</code>"
+          ]
+        ],
+        [
+          "p",
+          "Somando-se as 5 questões, o escore total varia de <strong>0 a 10 pontos</strong>, classificando a família em três faixas obrigatórias para a prova:"
+        ],
+        [
+          "u",
+          [
+            "<strong>7 a 10 pontos: Família Altamente Funcional (Funcionalidade Normal)</strong>;",
+            "<strong>4 a 6 pontos: Disfunção Familiar Moderada</strong>;",
+            "<strong>0 a 3 pontos: Disfunção Familiar Grave (Acentuada)</strong>."
+          ]
+        ],
+        [
+          "p",
+          "<em>Limitação epistemológica importante do APGAR Familiar:</em> Ele não mede a funcionalidade \"objetiva\" absoluta da família, mas a <strong>percepção subjetiva individual</strong> daquele respondente específico! Dois membros da mesma casa (ex: o pai e a filha adolescente) podem pontuar valores completamente diferentes no APGAR Familiar no mesmo dia."
+        ],
+        [
+          "3",
+          "5.2 Ferramenta P.R.A.C.T.I.C.E. (Walters, 1980): Roteiro para Conferência e Avaliação de Problemas Familiares"
+        ],
+        [
+          "p",
+          "Desenvolvido por Walters (1980) e amplamente utilizado por médicos de família para organizar a avaliação sistêmica de famílias diante de desafios médicos complexos (como cuidados paliativos, demência ou doença crônica infantil), o acrônimo <strong>P.R.A.C.T.I.C.E.</strong> funciona como um roteiro clínico de 8 passos:"
+        ],
+        [
+          "u",
+          [
+            "<strong>P — <em>Presenting problem</em> (Problema apresentado):</strong> Qual é o problema clínico ou crise atual e como cada membro o percebe?",
+            "<strong>R — <em>Roles and structure</em> (Papéis e estrutura):</strong> Como os papéis familiares estão divididos (quem é o provedor, quem é o cuidador principal, quem detém o poder decisório) e como a doença alterou esses papéis?",
+            "<strong>A — <em>Affect</em> (Afeto):</strong> Como os membros expressam sentimentos hoje e como lidaram emocionalmente com crises passadas?",
+            "<strong>C — <em>Communication</em> (Comunicação):</strong> A comunicação verbal e não verbal na família é clara e direta ou mascarada, indireta e cheia de segredos (conspiração do silêncio)?",
+            "<strong>T — <em>Time in life cycle</em> (Tempo no Ciclo de Vida Familiar):</strong> Em qual estágio de Carter & McGoldrick a família se encontra e como a doença colide com as tarefas evolutivas dessa fase?",
+            "<strong>I — <em>Illness in family</em> (Histórico de doenças na família):</strong> Experiências prévias da família com doenças graves, mortes, hospitais e crenças transgeracionais sobre saúde.",
+            "<strong>C — <em>Coping with stress</em> (Enfrentamento do estresse):</strong> Quais são as forças internas, resiliência e mecanismos de <em>coping</em> que a família utiliza nas crises?",
+            "<strong>E — <em>Ecology and environment</em> (Ecologia e rede de apoio):</strong> Quais são os recursos comunitários, culturais, religiosos, econômicos e de saúde disponíveis (síntese do Ecomapa)?"
+          ]
+        ],
+        [
+          "3",
+          "5.3 Modelo FIRO (Fundamental Interpersonal Relations Orientation — Schutz / Doherty & Baird)"
+        ],
+        [
+          "p",
+          "Adaptado da teoria de William Schutz para a terapia familiar médica por <strong>William Doherty e Macaran Baird</strong>, o modelo <strong>FIRO</strong> explica que toda família (ou grupo humano), ao enfrentar uma transição ou crise médica grave, precisa renegociar sequencialmente <strong>três dimensões interpessoais fundamentais</strong> (na exata ordem de prioridade):"
+        ],
+        [
+          "o",
+          [
+            "<strong>1º Inclusão (<em>Inclusion</em> — Estrutura, Pertencimento e Limites):</strong> Define <em>quem está dentro e quem está fora</em> da família ou do núcleo de cuidado, quais são os papéis básicos e a organização estrutural. Quando uma doença grave irrompe (ex: internação em UTI ou nascimento de bebê prematuro), a primeira crise é sempre de Inclusão!",
+            "<strong>2º Controle (<em>Control</em> — Poder, Influência e Tomada de Decisão):</strong> Define <em>quem manda, como as decisões são tomadas e como os conflitos de poder são geridos</em> (interações simétricas de disputa de poder vs. interações complementares ou colaborativas).",
+            "<strong>3º Intimidade (<em>Intimacy</em> — Troca Afetiva Profunda e Vulnerabilidade):</strong> Compartilhamento aberto de sentimentos íntimos, medos, ternura e proximidade emocional. Segundo o modelo FIRO, <strong>uma família não consegue restaurar a Intimidade (passo 3) enquanto houver caos na Inclusão (passo 1) ou guerra não resolvida pelo Controle (passo 2)!</strong>"
+          ]
+        ],
+        [
+          "3",
+          "5.4 Escala de Risco Familiar de Coelho-Savassi (Estratificação Territorial no SUS)"
+        ],
+        [
+          "p",
+          "Desenvolvida no Brasil por <strong>Flávio Lúcio Vasconcelos Coelho e Leonardo Cançado Monteiro Savassi</strong> a partir das fichas da Atenção Básica (antiga Ficha A do SIAB, hoje adaptada às fichas de Cadastro Domiciliar e Individual do e-SUS APS), a <strong>Escala de Risco Familiar de Coelho-Savassi</strong> é o instrumento padrão no Brasil para <strong>estratificar a vulnerabilidade sociofamiliar das famílias de uma microárea</strong>, permitindo priorizar visitas domiciliares e alocação de cuidados pela Equipe de Saúde da Família (princípio da <strong>Equidade</strong> do SUS)."
+        ],
+        [
+          "t",
+          [
+            "Sentinelas de Risco (Coelho-Savassi)",
+            "Pontuação Atribuída",
+            "Classificação Final do Risco Familiar (Soma dos Pontos)"
+          ],
+          [
+            [
+              "• Acamado;<br>• Deficiência física;<br>• Deficiência mental;<br>• Baixas condições de saneamento (esgoto a céu aberto / sem água tratada);<br>• Desnutrição grave.",
+              "<strong>3 pontos</strong> (cada condição presente)",
+              "• <strong>Escore 0 a 4 pontos: Sem risco / Risco Habitual</strong><br><br>\n        • <strong>Escore 5 ou 6 pontos: Risco Menor (R1)</strong><br><br>\n        • <strong>Escore 7 ou 8 pontos: Risco Médio (R2)</strong><br><br>\n        • <strong>Escore &ge; 9 pontos (acima de 9): Risco Máximo (R3)</strong> — Prioridade absoluta para Visita Domiciliar e Projeto Terapêutico Singular!"
+            ],
+            [
+              "• Drogadição (abuso de álcool/drogas);<br>• Desemprego;<br>• Analfabetismo;<br>• Menor de 6 meses de idade;<br>• Maior de 70 anos de idade.",
+              "<strong>2 pontos</strong> (cada condição presente)"
+            ],
+            [
+              "• Hipertensão Arterial Sistêmica;<br>• Diabetes Mellitus;<br>• Relação morador/cômodo:<br>&nbsp;&nbsp;- Maior que 1 morador/cômodo = <strong>3 pontos</strong>;<br>&nbsp;&nbsp;- Igual a 1 morador/cômodo = <strong>2 pontos</strong>;<br>&nbsp;&nbsp;- Menor que 1 morador/cômodo = <strong>0 pontos</strong>.",
+              "<strong>1 ponto</strong> (para HAS e DM) e <strong>0 a 3 pontos</strong> (para aglomeração domiciliar)"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "niveis-doherty-baird-conferencia-familiar-cuidador",
+      0,
+      [
+        [
+          "2",
+          "6. Níveis de Envolvimento Familiar de Doherty & Baird, Conferência Familiar e Abordagem da Sobrecarga do Cuidador"
+        ],
+        [
+          "p",
+          "Um equívoco frequente entre estudantes e médicos recém-formados é imaginar que \"fazer abordagem familiar na APS\" equivale a fazer \"terapia familiar sistêmica especializada\". Os professores norte-americanos <strong>William Doherty e Macaran Baird (1986)</strong> esclareceram definitivamente essa distinção ao estruturarem os <strong>5 Níveis de Envolvimento do Médico com as Famílias</strong>, demonstrando exatamente até onde vai a competência esperada de todo Médico de Família e Comunidade e onde começa a atuação do terapeuta familiar especializado."
+        ],
+        [
+          "3",
+          "6.1 Os 5 Níveis de Envolvimento Familiar de Doherty & Baird"
+        ],
+        [
+          "t",
+          [
+            "Nível de Doherty & Baird",
+            "Denominação Oficial",
+            "Postura e Ações Clínicas do Médico",
+            "Competência Exigida"
+          ],
+          [
+            [
+              "<strong>Nível 1</strong>",
+              "<strong>Mínima ênfase na família</strong>",
+              "O médico foca quase exclusivamente no indivíduo biomédico e só se comunica com a família por exigências médico-legais ou práticas inevitáveis (ex: pedir consentimento cirúrgico aos pais de uma criança ou avisar óbito).",
+              "Prática biomédica hospitalocêntrica básica (insuficiente para a APS)."
+            ],
+            [
+              "<strong>Nível 2</strong>",
+              "<strong>Fornecimento de informações e aconselhamento médico contínuo</strong>",
+              "O médico reconhece a importância da família para o cuidado biológico: solicita informações diagnósticas aos familiares, explica a doença e orienta a família sobre dieta, medicações e plano terapêutico, mas sem abordar as emoções familiares.",
+              "Comunicação informativa colaborativa básica."
+            ],
+            [
+              "<strong>Nível 3</strong>",
+              "<strong>Sentimento e apoio emocional</strong><br><em>(Feeling and Support)</em>",
+              "Além de informar (Nível 2), o médico <strong>explora e acolhe ativamente os sentimentos, medos, luto e estresse dos familiares</strong> diante da doença, oferecendo suporte empático, normalizando reações emocionais à crise e avaliando a sobrecarga do cuidador.",
+              "Domínio pleno do MCCP e da escuta empática com a família na APS."
+            ],
+            [
+              "<strong>Nível 4</strong>",
+              "<strong>Avaliação sistemática e intervenção planejada</strong>",
+              "O médico compreende a Teoria Sistêmica, constrói e interpreta <strong>Genograma e Ecomapa</strong>, identifica triangulações/coalizões e conduz uma <strong>Conferência Familiar</strong> planejada para ajudar a família a renegociar papéis e resolver impasses de cuidado, sem tentar mudar a estrutura profunda de personalidade da família.",
+              "<strong>Padrão-ouro máximo da Residência de Medicina de Família e Comunidade!</strong>"
+            ],
+            [
+              "<strong>Nível 5</strong>",
+              "<strong>Terapia Familiar</strong>",
+              "Intervenção psicoterapêutica intensiva e continuada voltada para reestruturar padrões profundos e crônicos de famílias gravemente disfuncionais e resistentes.",
+              "Exige formação específica em Terapia Familiar Sistêmica (atuação em matriciamento/eMulti ou referência especializada)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "6.2 A Conferência Familiar (Reunião de Família) na Atenção Primária: Indicações e Passo a Passo"
+        ],
+        [
+          "p",
+          "A <strong>Conferência Familiar</strong> (intervenção central dos Níveis 3 e 4 de Doherty & Baird) é uma reunião clínica planejada e estruturada entre o médico de família (frequentemente acompanhado pelo enfermeiro, ACS ou profissional da eMulti), o paciente e os membros significativos de sua família, realizada no consultório da UBS ou em Visita Domiciliar."
+        ],
+        [
+          "p",
+          "<strong>Quando indicar prioritariamente uma Conferência Familiar na APS?</strong>"
+        ],
+        [
+          "u",
+          [
+            "Diagnóstico recente de doença crônica grave, progressiva ou incapacitante (ex: Doença de Alzheimer, sequelado de AVC agudo, insuficiência cardíaca avançada, esclerose lateral amiotrófica);",
+            "Transição para <strong>Cuidados Paliativos domiciliares</strong>, planejamento de diretivas antecipadas de vontade e cuidados de fim de vida;",
+            "<strong>Sobrecarga grave do cuidador principal</strong> ou conflito familiar sobre a divisão de tarefas e custos do cuidado de um idoso dependente;",
+            "Fracasso terapêutico inexplicado, baixa adesão recorrente ou descompensações clínicas repetidas (ex: diabético ou hipertenso que interna todo mês, criança com asma grave refratária onde o sintoma expressa conflito sistêmico);",
+            "Crises paranormativas agudas (óbito traumático na família, diagnóstico de abuso/violência, gravidez na adolescência, tentativa de suicídio ou dependência química)."
+          ]
+        ],
+        [
+          "4",
+          "Etapas Estruturadas para Conduzir uma Conferência Familiar de Sucesso:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Fase 1 — Pré-Conferência (Planejamento e Convite):</strong> Definir claramente o objetivo da reunião; conversar previamente com o paciente lúcido para obter sua concordância e decidir em conjunto <em>quem</em> deve ser convidado (incluindo membros-chave do poder decisório familiar, mesmo aqueles que costumam ficar ausentes das consultas habituais!); revisar o Genograma e o Ecomapa.",
+            "<strong>Fase 2 — Abertura, Acolhimento e Regras de Convivência (<em>Joining</em>):</strong> Dispor as cadeiras em círculo; cumprimentar cada membro individualmente pelo nome (estabelecendo aliança com todos e mantendo <strong>neutralidade multiparcial</strong> — o médico nunca deve tomar partido de um familiar contra o outro!); enunciar o objetivo e o tempo da reunião e pactuar regras básicas (uma pessoa fala de cada vez, respeito mútuo, foco em soluções e não em acusações do passado).",
+            "<strong>Fase 3 — Exploração das Perspectivas e Sentimentos da Família:</strong> Convidar cada membro presente (inclusive os mais calados ou periféricos) a responder com perguntas circulares: <em>\"Na visão de cada um de vocês, qual é a maior dificuldade que a família está enfrentando hoje com o cuidado do Sr. João?\"</em> e <em>\"Como essa situação tem afetado a vida de cada um?\"</em>",
+            "<strong>Fase 4 — Compartilhamento de Informações Clínicas e Negociação de Soluções:</strong> Esclarecer dúvidas médicas sobre o prognóstico e necessidades reais de cuidado; estimular que a própria família proponha divisões justas de tarefas (quem fica no fim de semana, quem leva às consultas, quem contribui financeiramente para as fraldas/medicamentos, quem dá folga à cuidadora principal).",
+            "<strong>Fase 5 — Fechamento, Pactuação Escrita e Seguimento:</strong> Resumir os acordos concretos firmados por cada membro, elogiar a união e as forças da família, registrar no prontuário SOAP/Familiar e agendar data de retorno para avaliar se o plano funcionou."
+          ]
+        ],
+        [
+          "3",
+          "6.3 Abordagem do Cuidador Familiar e Prevenção da Síndrome de Sobrecarga (Escore de Zarit)"
+        ],
+        [
+          "p",
+          "No Brasil, mais de 85% dos cuidados longitudinais a idosos dependentes e acamados são realizados por um único familiar — quase sempre uma mulher (filha, esposa ou nora), muitas vezes também idosa ou hipertensa — que abre mão do trabalho, do lazer e da própria saúde, tornando-se uma <strong>\"paciente oculta\"</strong> para o sistema de saúde."
+        ],
+        [
+          "u",
+          [
+            "<strong>Avaliação Quantitativa da Sobrecarga: Escala de Sobrecarga do Cuidador de Zarit (<em>Zarit Burden Interview</em> — ZBI):</strong> Instrumento validado internacionalmente (versão completa de 22 itens pontuados de 0 a 4, totalizando 0 a 88 pontos, ou versão reduzida de Zarit de 7/12 itens usada na Caderneta da Pessoa Idosa). Na escala clássica de 22 itens: <code>&lt; 21 pontos</code> = ausência de sobrecarga; <code>21 a 40 pontos</code> = sobrecarga leve a moderada; <code>41 a 60 pontos</code> = sobrecarga moderada a severa; <code>61 a 88 pontos</code> = sobrecarga severa/extrema.",
+            "<strong>Consequências Clínicas da Sobrecarga do Cuidador:</strong> Aumento de até 63% na mortalidade do cuidador idoso (estudo clássico de Schulz & Beach), alta prevalência de transtorno depressivo maior, síndrome do pânico, lombalgia crônica mecânica, descompensação cardiovascular, abuso de benzodiazepínicos e — ponto crítico de prova — <strong>aumento drástico do risco de negligência e violência (física, verbal ou medicamentosa) contra a pessoa idosa cuidada!</strong>",
+            "<strong>Intervenções do Médico de Família para Cuidar do Cuidador:</strong> (1) Abrir consulta individual exclusiva para a saúde física e mental da cuidadora; (2) Convocar Conferência Familiar para romper o isolamento e redistribuir tarefas entre os demais filhos/irmãos (\"descentralizar o cuidado\"); (3) Prescrever o <strong>\"descanso do cuidador\" (<em>respite care</em>)</strong> — garantir turnos semanais obrigatórios de folga e lazer para a cuidadora; (4) Articular grupos de cuidadores na UBS, apoio da eMulti (fisioterapia e terapia ocupacional domiciliar para treinar transferências ergonômicas no leito) e centros-dia para idosos no território."
+          ]
+        ]
+      ]
+    ],
+    [
+      "visita-domiciliar-atencao-domiciliar-ad1-ad2-ad3",
+      0,
+      [
+        [
+          "2",
+          "7. Visita Domiciliar na APS e Organização da Atenção Domiciliar no SUS (Modalidades AD1, AD2 e AD3)"
+        ],
+        [
+          "p",
+          "A <strong>Visita Domiciliar (VD)</strong> e a <strong>Atenção Domiciliar (AD)</strong> representam a materialização prática da abordagem familiar e comunitária fora dos muros da Unidade Básica de Saúde. Adentrar o lar de uma família permite ao médico de família observar diretamente determinantes físicos, arquitetônicos, sanitários e relacionais que jamais seriam percebidos no consultório, além de garantir o princípio da <strong>Equidade</strong> e do <strong>Acesso</strong> àqueles que estão restritos ao leito ou ao domicílio."
+        ],
+        [
+          "3",
+          "7.1 As Modalidades de Atenção Domiciliar no SUS: AD1, AD2 e AD3 (Portaria MS nº 825/2016)"
+        ],
+        [
+          "p",
+          "Um tema obrigatório e recorrente nas provas de Residência Médica, Revalida e ENAMED é a classificação do paciente em Atenção Domiciliar segundo a complexidade do cuidado e a equipe responsável (Unidade Básica de Saúde vs. Serviço de Atenção Domiciliar — SAD / Programa Melhor em Casa):"
+        ],
+        [
+          "t",
+          [
+            "Modalidade no SUS",
+            "Equipe Responsável Primária",
+            "Critérios de Elegibilidade Clínica e Frequência de Visitas",
+            "Exemplos Clássicos de Prova"
+          ],
+          [
+            [
+              "<strong>AD1</strong><br>(Baixa Complexidade / Estável)",
+              "<strong>Equipes de Atenção Primária à Saúde (eSF / eAP)</strong> apoiadas pela eMulti (antigo NASF).",
+              "Pacientes que possuem <strong>dificuldade ou impossibilidade física de locomoção até a UBS</strong>, mas que apresentam problemas de saúde <strong>compensados/controlados</strong> e necessitam de cuidados de menor frequência e menor complexidade técnica (geralmente visitas médicas/enfermagem mensais ou conforme necessidade e visitas regulares do ACS).",
+              "• Idoso acamado por sequela crônica estável de AVC ou demência avançada;<br>• Troca de sonda vesical de demora de rotina ou curativo simples;<br>• Puérpera e recém-nascido na 1ª semana de vida."
+            ],
+            [
+              "<strong>AD2</strong><br>(Média Complexidade / Intensivo Transitório)",
+              "<strong>Serviço de Atenção Domiciliar (SAD — EMAD + EMAP / \"Melhor em Casa\")</strong>, em cuidado compartilhado com a APS.",
+              "Pacientes com afecções agudas ou crônicas agudizadas que demandam <strong>cuidados intensivos e sequenciais multiprofissionais no domicílio (no mínimo 1 visita semanal da equipe EMAD)</strong>, para evitar hospitalização ou abreviar internação hospitalar (desospitalização).",
+              "• Antibioticoterapia parenteral domiciliar diária;<br>• Úlcera por pressão extensa grau III/IV com curativos complexos;<br>• Cuidados paliativos oncológicos com ajuste frequente de opioides/hipodermóclise;<br>• Reabilitação motora intensiva pós-AVC agudo."
+            ],
+            [
+              "<strong>AD3</strong><br>(Alta Complexidade / Suporte Tecnológico Contínuo)",
+              "<strong>Serviço de Atenção Domiciliar (SAD — EMAD + EMAP)</strong>, de caráter contínuo.",
+              "Pacientes com qualquer condição do AD2 que necessitem, adicionalmente, do <strong>uso contínuo ou intermitente de equipamentos de suporte à vida</strong> (como ventilação mecânica invasiva ou não invasiva dependente), paracentese de repetição ou procedimentos de maior complexidade.",
+              "• Paciente com Esclerose Lateral Amiotrófica (ELA) ou distrofia muscular em <strong>Ventilação Mecânica Domiciliar</strong> (traqueostomizado em BIPAP/ventilador) e gastrostomia."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Critérios de Inelegibilidade (Quando o paciente NÃO pode ficar em Atenção Domiciliar e precisa de hospitalização):</strong> (1) Instabilidade clínica aguda grave sem condições de manejo seguro no lar (choque, insuficiência respiratória aguda descompensada sem suporte); (2) Necessidade de monitorização médica/enfermagem presencial contínua nas 24 horas; e (3) <strong>Ausência absoluta de cuidador familiar ou responsável identificado no domicílio</strong> quando o paciente for totalmente dependente (exceto em condições em que o paciente lúcido com mobilidade reduzida consiga exercer o autocuidado em AD1)."
+        ],
+        [
+          "3",
+          "7.2 Planejamento e Execução da Visita Domiciliar na Estratégia Saúde da Família"
+        ],
+        [
+          "p",
+          "A visita domiciliar na APS nunca é um \"passeio improvisado\", mas um ato clínico estruturado em quatro etapas: <strong>(1) Planejamento e Estratificação</strong> (revisar prontuário familiar, aplicar Escala de Coelho-Savassi, definir objetivo clínico/familiar e selecionar materiais da maleta de VD); <strong>(2) Abordagem e Execução no Domicílio</strong> (respeitar o território da família — na casa, o médico é um <em>convidado</em>! Pedir licença para entrar e sentar, observar o ambiente físico [degraus, tapetes soltos e iluminação para prevenção de quedas em idosos], acondicionamento real das cartelas de medicamentos na cozinha/quarto, dinâmica entre o cuidador e o paciente, realizar exame físico completo e pactuar condutas); <strong>(3) Registro Clínico</strong> (evoluir no prontuário eletrônico PEC e-SUS APS no formato SOAP especificando o local de atendimento como \"Domicílio\" e atualizar Genograma/Ecomapa); e <strong>(4) Avaliação e Seguimento em Equipe</strong>."
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-resolvidos-abordagem-familiar",
+      0,
+      [
+        [
+          "2",
+          "8. Quatro Casos Clínicos Resolvidos e Comentados (Genograma, Ecomapa, Ciclo de Vida e Ferramentas Familiares)"
+        ],
+        [
+          "p",
+          "A seguir, apresentamos quatro casos clínicos integradores que demonstram como a leitura do Genograma, do Ecomapa, do Ciclo de Vida Familiar de Carter & McGoldrick e das escalas APGAR Familiar e Zarit resolve problemas clínicos complexos na Atenção Primária à Saúde."
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Leitura de Genograma, Emaranhamento, Triangulação e Criança como \"Paciente Identificado\""
+        ],
+        [
+          "p",
+          "<strong>Cenário Clínico:</strong> Pedro, 8 anos, é trazido à UBS pela mãe, Camila (34 anos), pela quarta vez no mês devido a \"crises de dor de barriga e falta de ar\" que surgem invariavelmente aos domingos à noite e segundas-feiras pela manhã. O exame físico pediátrico, a espirometria e todos os exames laboratoriais e parasitológicos de Pedro são normais. O médico de família decide construir o <strong>Genograma</strong> junto com Camila:"
+        ],
+        [
+          "u",
+          [
+            "Camila (34 anos, dona de casa) é casada legalmente há 10 anos com Rodrigo (36 anos, motorista de aplicativo). Eles têm dois filhos: Pedro (8 anos, primogênito, caso-índice) e Sofia (4 anos). Moram no mesmo domicílio Camila, Rodrigo, Pedro, Sofia e a mãe de Camila, Dona Neide (62 anos, viúva há 2 anos de Seu Geraldo, que faleceu aos 65 anos de infarto agudo do miocárdio).",
+            "Ao traçar as linhas de relacionamento: observa-se um vínculo de <strong>três linhas retas paralelas</strong> entre Camila e Pedro, e também três linhas paralelas entre Camila e sua mãe, Dona Neide. Entre Camila e o marido Rodrigo há uma <strong>linha em zigue-zague</strong> (conflituosa), pois Rodrigo trabalha até tarde nos fins de semana e bebe cerveja no domingo; entre Dona Neide e o genro Rodrigo há outra linha em zigue-zague intensa (Dona Neide critica Rodrigo diariamente na frente das crianças). Sempre que Rodrigo e Camila começam a discutir no domingo à noite, Pedro apresenta dor abdominal intensa e falta de ar, fazendo com que Rodrigo pare de beber e leve o menino junto com Camila à UPA, dormindo o menino no meio da cama do casal."
+          ]
+        ],
+        [
+          "4",
+          "Análise Sistêmica e Resolução Passo a Passo:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Interpretação da Simbologia do Genograma:</strong>\n    <ul>\n      <li>Estrutura domiciliar (dentro da linha pontilhada envoltória): <strong>Família Extensa Trigerecional</strong> (avó materna + casal + dois filhos).",
+            "Relacionamentos internos: <strong>Fusão/Emaranhamento</strong> (<code>≡≡≡</code>) entre mãe-filho e mãe-avó; <strong>Conflito aberto</strong> (<code>///</code>) no subsistema conjugal (Camila-Rodrigo) e entre sogra-genro; <strong>Coalizão transgeracional</strong> entre Camila e Dona Neide contra Rodrigo; e <strong>Fronteiras Difusas</strong> (a avó invade o subsistema conjugal e o filho dorme na cama dos pais)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>2. Diagnóstico Sistêmico (Triangulação e Paciente Identificado):</strong> Pedro é o clássico <strong>Paciente Identificado (PI)</strong> em um circuito de <strong>Triangulação</strong>: o sintoma psicossomático do menino no domingo à noite é disparado pela escalada de tensão conjugal e tem a função homeostática inconsciente de interromper a briga dos pais e mantê-los unidos em torno do seu cuidado na UPA.</li>\n  <li><strong>3. Plano de Intervenção Familiar (Nível 4 de Doherty & Baird):</strong> O médico evita medicalizar Pedro com exames invasivos (Prevenção Quaternária) e convoca uma <strong>Conferência Familiar</strong> com o casal (Camila e Rodrigo): ajuda-os a perceberem sem culpa como a tensão de domingo repercute na ansiedade do filho, trabalha o restabelecimento de <strong>fronteiras nítidas</strong> (Pedro voltar a dormir em seu próprio quarto, protegendo a intimidade do subsistema conjugal, e pactuar limites respeitosos com a avó materna) e articula psicoterapia familiar/casal com a psicóloga da eMulti.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Ecomapa, Escala de Zarit, APGAR Familiar e Sobrecarga Extrema da Cuidadora"
+        ],
+        [
+          "p",
+          "<strong>Cenário Clínico:</strong> Durante visita domiciliar (Modalidade AD1) ao Sr. Benedito, 82 anos, acamado há 2 anos por sequela de AVC isquêmico extenso e demência vascular, a médica de família avalia sua filha solteira, Lúcia, 56 anos, que mora sozinha com o pai e é sua única cuidadora. Lúcia queixa-se de lombalgia intensa, insônia, crises de choro diárias e apresenta PA = 164x102 mmHg (apesar do uso de enalapril). Ao aplicar os instrumentos de avaliação familiar em Lúcia:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Genograma:</strong> Sr. Benedito (viúvo) tem 3 filhos vivos: Marcos (60 anos, comerciante, mora no mesmo bairro), Antônio (58 anos, funcionário público, mora a 3 km) e Lúcia (56 anos, caçula, que largou o emprego de costureira para cuidar do pai). Há linha distante (tracejada) entre Lúcia e os dois irmãos homens, que raramente visitam o pai e dizem que \"cuidar de pai idoso é jeito de mulher\".",
+            "<strong>Ecomapa de Lúcia e Sr. Benedito:</strong> Círculo central contendo apenas Benedito e Lúcia. Linhas cortadas/ausentes com Lazer, Trabalho e Amigos (Lúcia não sai de casa nem para ir à igreja há 1 ano); linha tracejada fraca com a Família Extensa (irmãos); <strong>única linha contínua forte de suporte é com a UBS</strong>; e grande seta de drenagem de energia saindo de Lúcia para o cuidado ininterrupto do pai.",
+            "<strong>APGAR Familiar respondido por Lúcia:</strong> Adaptação = 0, Participação = 0, Crescimento = 0, Afeição = 1, Resolução = 1 (<strong>Total = 2 pontos: Disfunção Familiar Grave</strong>).",
+            "<strong>Escala de Zarit (ZBI-22):</strong> <strong>68 pontos (Sobrecarga Severa do Cuidador)</strong>."
+          ]
+        ],
+        [
+          "4",
+          "Análise Sistêmica e Resolução Passo a Passo:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Diagnóstico Integral:</strong> Lúcia é uma \"paciente oculta\" em grave adoecimento biopsicossocial (descompensação hipertensiva, lombalgia mecânica e episódio depressivo associados à <strong>Síndrome de Sobrecarga Severa do Cuidador</strong> — Zarit = 68), inserida em um sistema familiar com <strong>Disfunção Grave no APGAR Familiar (2 pontos)</strong> por falha crítica de <em>Adaptação</em>, <em>Participação</em> e <em>Resolução</em> dos irmãos, e <strong>isolamento social extremo no Ecomapa</strong>.",
+            "<strong>2. Intervenção Sistêmica Planejada:</strong>\n    <ol>\n      <li>Agendar consulta médica individual imediata para Lúcia (ajuste anti-hipertensivo, analgesia, manejo da saúde mental e fisioterapia da eMulti com treino ergonômico de transferência no leito);",
+            "Convocar <strong>Conferência Familiar domiciliar obrigatória com a presença dos três irmãos (Marcos, Antônio e Lúcia)</strong>: utilizando o roteiro PRACTICE e mantendo postura colaborativa e firme, a médica expõe aos irmãos a gravidade clínica tanto de Sr. Benedito quanto do esgotamento de Lúcia, desconstruindo o mito machista de que o cuidado pertence apenas à filha mulher e pactuando uma <strong>escala formal de revezamento</strong> (irmãos assumindo os finais de semana e duas tardes por semana, além de divisão financeira para contratação de cuidador folguista);",
+            "Expandir a rede do <strong>Ecomapa</strong>: reinserir Lúcia no grupo comunitário da igreja e no grupo de cuidadores da UBS, garantindo seu direito ao <em>respite care</em> (descanso semanal)."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Transição do Ciclo de Vida Familiar (Ninho Vazio + Aposentadoria) e Crise Conjugal"
+        ],
+        [
+          "p",
+          "<strong>Cenário Clínico:</strong> Sr. Roberto (63 anos, recém-aposentado há 3 meses como mestre de obras) e Dona Sônia (59 anos, dona de casa) comparecem juntos à UBS. Sônia queixa-se de dores pelo corpo todo, palpitações e irritabilidade intensa, enquanto Roberto queixa-se de disfunção erétil recente e insônia. Durante a anamnese centrada na pessoa e na família, descobre-se que há 4 meses a filha caçula do casal casou-se e mudou-se de cidade (os dois filhos mais velhos já haviam saído de casa anos antes). Sônia diz chorando: <em>\"Doutor, durante 35 anos minha vida foi cuidar das crianças e da casa, enquanto o Roberto passava o dia inteiro na obra. Agora os filhos foram embora e o Roberto fica o dia inteiro sentado no sofá da sala mudando de canal e implicando com o meu almoço! A gente parece dois estranhos dentro de casa!\"</em>"
+        ],
+        [
+          "4",
+          "Análise Sistêmica e Resolução Passo a Passo:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Diagnóstico do Estágio do Ciclo de Vida Familiar (Carter & McGoldrick):</strong> A família encontra-se exatamente na transição crítica para o <strong>Estágio 5 (\"Lançando os filhos e seguindo em frente\")</strong> combinada com a crise normativa da <strong>Aposentadoria</strong>.",
+            "<strong>2. Tarefa Evolutiva Bloqueada:</strong> Durante três décadas, o casamento de Roberto e Sônia manteve-se estável graças ao foco exclusivo no <strong>subsistema parental</strong> (cuidar dos filhos) e à distância física diária proporcionada pelo trabalho externo de Roberto. Com a saída da última filha (<strong>Síndrome do Ninho Vazio</strong>) e a presença de Roberto 24h por dia em casa após a aposentadoria, o casal foi forçado a se reencontrar como uma <strong>díade conjugal pura</strong>, tarefa para a qual não estavam preparados, somatizando a angústia existencial e a perda de papéis.",
+            "<strong>3. Manejo na APS (Nível 3 e 4 de Doherty & Baird):</strong> Normalizar a crise normativa (explicando ao casal que quase todas as famílias enfrentam esse estranhamento após a saída dos filhos e a aposentadoria), evitar medicalizar Sônia com polifarmácia para dor somática, ajudar o casal a renegociar o espaço doméstico (respeitando a autonomia de ambos), estimular projetos individuais fora de casa para Roberto (oficina comunitária, atividade física, trabalho voluntário) e projetos conjuntos que reconstruam a intimidade da díade conjugal (\"redescobrir-se como namorados sem a mediação dos filhos\")."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Aplicação Prática da Escala de Risco Familiar de Coelho-Savassi na Microárea"
+        ],
+        [
+          "p",
+          "<strong>Cenário Clínico:</strong> Durante a reunião semanal da Equipe de Saúde da Família, o Agente Comunitário de Saúde (ACS) apresenta o cadastro de três novas famílias que se mudaram para a microárea e pergunta ao médico e à enfermeira qual delas deve receber a primeira Visita Domiciliar prioritária naquela semana, aplicando a <strong>Escala de Risco Familiar de Coelho-Savassi</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Família Silva (Casa 1):</strong> Casal jovem (28 e 30 anos), ambos empregados e alfabetizados, 1 filho de 4 anos hígido, sem comorbidades, morando em casa de alvenaria com 4 cômodos, água tratada e rede de esgoto.",
+            "<strong>Família Oliveira (Casa 2):</strong> Casal de idosos (68 e 66 anos), ambos alfabetizados e aposentados, ambos portadores de Hipertensão Arterial Sistêmica controlada, morando em casa própria de 5 cômodos com saneamento básico completo.",
+            "<strong>Família Santos (Casa 3):</strong> Composta por 6 moradores vivendo em um barraco de apenas 3 cômodos sem rede de esgoto (esgoto a céu aberto): a avó Dona Josefa (74 anos, analfabeta, hipertensa, diabética e acamada há 3 meses após fratura de fêmur), sua filha Carla (32 anos, desempregada), o genro Marcos (35 anos, dependente químico em uso pesado de álcool e crack) e três filhos menores, sendo um recém-nascido de 2 meses de idade e duas crianças de 3 e 5 anos."
+          ]
+        ],
+        [
+          "4",
+          "Cálculo Exato do Escore de Coelho-Savassi e Estratificação:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Família Silva (Casa 1):</strong> 3 moradores em 4 cômodos (relação &lt; 1 = 0 pt) + sem sentinelas clínicas ou sociais = <strong>0 pontos (Sem risco / Risco Habitual)</strong>.",
+            "<strong>Família Oliveira (Casa 2):</strong> 2 moradores em 5 cômodos (relação &lt; 1 = 0 pt) + Hipertensão Arterial (1 pt) = <strong>1 ponto (Sem risco / Risco Habitual)</strong>.",
+            "<strong>Família Santos (Casa 3):</strong> Calculando cada sentinela presente:\n    <ul>\n      <li>Acamado (Dona Josefa): <code>3 pontos</code>;",
+            "Baixas condições de saneamento (esgoto a céu aberto): <code>3 pontos</code>;",
+            "Relação morador/cômodo maior que 1 (6 moradores / 3 cômodos = 2 moradores/cômodo): <code>3 pontos</code>;",
+            "Maior de 70 anos (74 anos): <code>2 pontos</code>;",
+            "Analfabetismo: <code>2 pontos</code>;",
+            "Desemprego: <code>2 pontos</code>;",
+            "Drogadição (álcool/crack): <code>2 pontos</code>;",
+            "Menor de 6 meses (bebê de 2 meses): <code>2 pontos</code>;",
+            "Hipertensão Arterial: <code>1 ponto</code>;",
+            "Diabetes Mellitus: <code>1 ponto</code>.",
+            "<strong>Soma Total da Família Santos = 21 pontos (&ge; 9 pontos = Risco Máximo — R3)!</strong>"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Conduta da Equipe:</strong> A Família Santos (R3 — Risco Máximo) recebe <strong>prioridade absoluta imediata</strong> para Visita Domiciliar conjunta (médico, enfermeira e ACS), inclusão de Dona Josefa em Atenção Domiciliar (AD1/AD2), puericultura imediata do lactente de 2 meses, articulação intersetorial com o CRAS (vulnerabilidade/saneamento/benefícios) e CAPS-AD (manejo da dependência química de Marcos), construindo um Projeto Terapêutico Singular (PTS) familiar.</li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-residencia-abordagem-familiar",
+      0,
+      [
+        [
+          "2",
+          "9. Questões Comentadas de Residência Médica, Revalida e ENAMED (Genograma, Ecomapa e Abordagem Familiar)"
+        ],
+        [
+          "p",
+          "A seguir, resolvemos e comentamos em profundidade 8 questões de alta complexidade sobre Teoria Sistêmica, Ciclo de Vida Familiar, Genograma, Ecomapa, APGAR Familiar, PRACTICE e Atenção Domiciliar cobradas nas principais bancas examinadoras do Brasil."
+        ],
+        [
+          "3",
+          "Questão 1 — Simbologia Gráfica Padronizada do Genograma (McGoldrick & Gerson)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Durante consulta na Unidade de Saúde da Família, o médico residente constrói o genograma de sua paciente-índice, Mariana (38 anos). Mariana teve um primeiro casamento civil do qual se divorciou legalmente há 6 anos, tendo dessa união dois filhos gêmeos idênticos (monozigóticos) do sexo masculino, hoje com 10 anos. Há 3 anos, Mariana vive em união estável (sem casamento civil formal) com Paulo (42 anos), estando atualmente grávida de 14 semanas (sexo fetal ainda desconhecido), após ter sofrido um abortamento espontâneo no ano passado. De acordo com a padronização internacional de McGoldrick & Gerson para o Genograma, assinale a alternativa CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Mariana deve ser representada por um quadrado duplo posicionado à esquerda de Paulo, e o divórcio do primeiro casamento é representado por uma única barra oblíqua (<code>/</code>).",
+            "<strong>B)</strong> Os gêmeos monozigóticos são representados por dois quadrados cujas linhas verticais partem de pontos separados da linha horizontal dos pais, sem conexão entre si.",
+            "<strong>C)</strong> Mariana é representada por um círculo duplo (à direita na linha do casal); o divórcio do primeiro casamento é representado por duas barras oblíquas paralelas (<code>//</code>) na linha contínua; a união estável atual com Paulo é representada por uma linha horizontal tracejada; a gestação atual em curso é representada por um triângulo (△); o aborto espontâneo prévio por um círculo pequeno preenchido de preto (●); e os gêmeos idênticos têm suas linhas convergentes unidas por uma barra horizontal.",
+            "<strong>D)</strong> A gestação atual é representada por um círculo pontilhado com um ponto de interrogação dentro, e o aborto espontâneo é representado por um \"X\" isolado sem contorno.",
+            "<strong>E)</strong> Para delimitar quem mora atualmente na mesma casa com Mariana e Paulo, deve-se pintar todos os símbolos de vermelho, pois o genograma não utiliza linhas envoltórias."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está correta:</strong> Contempla perfeitamente todas as convenções gráficas de McGoldrick & Gerson: (1) Mulher caso-índice = <strong>círculo duplo</strong> posicionado à <strong>direita</strong> do parceiro masculino (quadrado à esquerda); (2) Divórcio legal = <strong>duas barras oblíquas (<code>//</code>)</strong> sobre a linha horizontal contínua (enquanto separação de fato é apenas uma barra <code>/</code>); (3) União estável/coabitação = <strong>linha horizontal tracejada</strong>; (4) Gravidez atual em curso = <strong>triângulo (△)</strong>; (5) Aborto espontâneo = <strong>círculo pequeno pintado de preto (●)</strong> (enquanto aborto provocado é um \"X\" isolado); e (6) Gêmeos monozigóticos (idênticos) = linhas que partem do mesmo vértice na linha dos pais <strong>conectadas entre si por uma barra horizontal</strong>.",
+            "<strong>Refutação das demais alternativas:</strong> Homem é quadrado à esquerda e mulher é círculo à direita (refutando A); gêmeos têm linhas que partem do mesmo ponto (refutando B); X isolado é aborto provocado (refutando D); e a coabitação domiciliar atual é delimitada por uma <strong>linha pontilhada/tracejada fechada circundando os moradores</strong> (refutando E)."
+          ]
+        ],
+        [
+          "3",
+          "Questão 2 — Linhas de Relacionamento Funcional no Genograma e Triangulação"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Ao analisar o genograma funcional de uma adolescente de 15 anos atendida na UBS por crises de pânico e automutilação, a médica de família observa que o gráfico apresenta: (I) três linhas retas paralelas contínuas (<code>≡≡≡</code>) ligando a mãe à adolescente; (II) uma linha em zigue-zague (<code>///</code>) ligando a mãe ao pai; e (III) uma linha interrompida no meio por duas pequenas barras verticais (<code>—||—</code>) ligando o pai ao avô paterno. Na terminologia sistêmica de Bowen, Minuchin e McGoldrick, os padrões I, II e III correspondem, respectivamente, a:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Relacionamento próximo normal; divórcio legal; e óbito paterno.",
+            "<strong>B)</strong> Relacionamento fundido/emaranhado; relacionamento conflituoso/hostil; e corte emocional (rompimento de contato).",
+            "<strong>C)</strong> Relacionamento distante; relacionamento harmonioso; e coalizão funcional.",
+            "<strong>D)</strong> Fronteira rígida; fronteira nítida; e fronteira difusa.",
+            "<strong>E)</strong> Violência física; união estável; e adoção legal."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> No genograma funcional, <strong>duas linhas paralelas (<code>===</code>)</strong> representam vínculo próximo/harmonioso, enquanto <strong>três linhas paralelas (<code>≡≡≡</code>)</strong> indicam <strong>fusão emocional / emaranhamento</strong> (perda de fronteiras individuais). A <strong>linha em dente de serra / zigue-zague (<code>///</code>)</strong> representa <strong>conflito/hostilidade</strong>. Já a <strong>linha seccionada ao meio por duas barrinhas verticais (<code>—||—</code>)</strong> representa o <strong>Corte Emocional (<em>Emotional Cutoff</em> / Rompimento)</strong>. Note ainda o clássico triângulo familiar: mãe fundida com a filha adolescente e em conflito com o marido!"
+          ]
+        ],
+        [
+          "3",
+          "Questão 3 — Ciclo de Vida Familiar de Carter & McGoldrick e Crises Familiares"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Um casal de 52 e 50 anos comparece à consulta na UBS. Eles têm dois filhos: um jovem de 20 anos que acabou de ingressar na universidade em outra cidade e uma adolescente de 16 anos que reivindica sair à noite com o namorado e questiona todas as regras domésticas. Simultaneamente, o pai da esposa (de 81 anos) sofreu queda com fratura de quadril e precisou vir morar temporariamente com o casal, e o marido recebeu ontem a notícia de que a fábrica onde trabalhava há 20 anos faliu e fechou as portas. Considerando o Ciclo de Vida Familiar de Carter & McGoldrick e a classificação das crises familiares, assinale a alternativa CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> A família encontra-se no Estágio 2 (\"O novo casal\"), vivenciando exclusivamente crises normativas previsíveis.",
+            "<strong>B)</strong> A adolescência da filha de 16 anos e a saída do filho de 20 anos para a faculdade constituem crises paranormativas (acidentais), enquanto a falência da fábrica e o desemprego constituem uma crise normativa do ciclo vital.",
+            "<strong>C)</strong> A família encontra-se na transição entre o estágio de \"Famílias com adolescentes\" (que exige aumentar a flexibilidade das fronteiras para permitir a independência dos filhos e começar a cuidar da geração dos avós — \"geração sanduíche\") e o estágio de \"Lançando os filhos\", sofrendo a sobreposição de crises normativas com uma crise paranormativa aguda (desemprego por falência da empresa).",
+            "<strong>D)</strong> No estágio de famílias com adolescentes, a tarefa evolutiva recomendada por Salvador Minuchin é tornar as fronteiras familiares extremamente rígidas e impermeáveis para impedir o contato da adolescente com grupos de amigos externos.",
+            "<strong>E)</strong> O Ciclo de Vida Familiar aplica-se apenas a famílias nucleares ricas, não tendo utilidade na Estratégia Saúde da Família."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está correta:</strong> Analisa com perfeição o cruzamento de estressores: a família vive as tarefas evolutivas normativas do <strong>Estágio 4 (\"Famílias com adolescentes\")</strong> em transição para o <strong>Estágio 5 (\"Lançando os filhos\")</strong> — caracterizadas pela necessidade de <strong>flexibilizar as fronteiras</strong> para a autonomia adolescente e assumir o cuidado dos avós fragilizados (a chamada <em>Geração Sanduíche</em>) —, agravadas pela colisão com uma <strong>Crise Paranormativa (acidental/imprevisível)</strong>: a demissão abrupta por falência da fábrica e a fratura aguda do avô."
+          ]
+        ],
+        [
+          "3",
+          "Questão 4 — Ecomapa (Ann Hartman) vs. Genograma"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Sobre o Ecomapa, ferramenta clássica de avaliação familiar desenvolvida por Ann Hartman (1975) e amplamente utilizada na Atenção Primária à Saúde em conjunto com o Genograma, assinale a alternativa CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> O Ecomapa é um diagrama histórico que representa no mínimo 4 gerações de antepassados biológicos para rastrear doenças genéticas autossômicas recessivas.",
+            "<strong>B)</strong> No Ecomapa, o núcleo familiar que coabita no domicílio é desenhado no círculo central, cercado por círculos externos que representam os equipamentos sociais e comunitários (UBS, escola, trabalho, igreja, vizinhos, lazer), utilizando linhas para qualificar a força do vínculo e setas para indicar a direção do fluxo de energia e recursos.",
+            "<strong>C)</strong> O Ecomapa é um instrumento estático e imutável que deve ser preenchido uma única vez no nascimento da criança, não sofrendo alterações ao longo da vida.",
+            "<strong>D)</strong> Setas apontando exclusivamente de dentro do círculo familiar para fora em direção a múltiplos círculos conflituosos indicam que a família está recebendo excesso de apoio social da comunidade.",
+            "<strong>E)</strong> O Ecomapa substitui completamente o Genograma, pois ambos avaliam exatamente os mesmos parâmetros genéticos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> Sintetiza a definição e a arquitetura gráfica do Ecomapa de Ann Hartman: foco ecológico transversal e dinâmico nas conexões entre a família (círculo central) e o suprassistema comunitário/institucional (círculos satélites), utilizando linhas (fortes, fracas/tracejadas ou estressantes/conflituosas) e <strong>setas de fluxo de energia</strong> (<code>→</code>, <code>←</code>, <code>↔</code>).",
+            "<strong>Refutação da alternativa D (Incorreta):</strong> Setas apontando de dentro da família para fora (<code>→</code>) indicam que a família/cuidador está <strong>gastando/drenando sua própria energia</strong> para aqueles sistemas sem receber suporte em troca!"
+          ]
+        ],
+        [
+          "3",
+          "Questão 5 — APGAR Familiar de Gabriel Smilkstein"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Durante avaliação domiciliar de um paciente idoso hipertenso e diabético com controle glicêmico precário, o médico de família aplica o questionário <strong>APGAR Familiar de Smilkstein</strong>. O paciente atribui 0 ponto (\"quase nunca\") para três itens e 1 ponto (\"algumas vezes\") para dois itens, totalizando <strong>2 pontos</strong>. Sobre o APGAR Familiar e a interpretação desse resultado, assinale a alternativa CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> As letras do acrônimo APGAR significam: Aparência, Pulso, Gesticulação, Atividade e Respiração da família, sendo pontuado de 0 a 20 pontos.",
+            "<strong>B)</strong> As 5 dimensões avaliadas pelo APGAR Familiar são: <em>Adaptation</em> (Adaptação), <em>Partnership</em> (Participação/Companheirismo), <em>Growth</em> (Crescimento), <em>Affection</em> (Afeição) e <em>Resolve</em> (Resolução/Compromisso de tempo), e o escore de 2 pontos indica <strong>Disfunção Familiar Grave (Acentuada)</strong> na percepção do idoso.",
+            "<strong>C)</strong> Um escore de 2 pontos no APGAR Familiar classifica a família como \"Altamente Funcional\", pois quanto menor a pontuação, menor o nível de conflito doméstico.",
+            "<strong>D)</strong> O resultado de 2 pontos comprova objetivamente que todos os demais moradores da casa também consideram a família disfuncional, sendo desnecessário ouvir os filhos ou a esposa.",
+            "<strong>E)</strong> O APGAR Familiar só pode ser aplicado por psicólogos hospitalares após autorização judicial."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> O <strong>APGAR Familiar de Smilkstein (1978)</strong> avalia exatamente os 5 domínios: <strong>A</strong>daptação, <strong>P</strong>articipação, <strong>G</strong>rowth (Crescimento), <strong>A</strong>feição e <strong>R</strong>esolução (5 perguntas pontuadas com 0 = quase nunca, 1 = algumas vezes, 2 = quase sempre; total de 0 a 10 pontos). Os pontos de corte são: <strong>7 a 10 = Família Funcional</strong>; <strong>4 a 6 = Disfunção Moderada</strong>; e <strong>0 a 3 = Disfunção Familiar Grave</strong>. Lembrando (contra o distrator D) que ele mede a percepção subjetiva de quem respondeu!"
+          ]
+        ],
+        [
+          "3",
+          "Questão 6 — Níveis de Envolvimento Familiar de Doherty & Baird"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Um médico de família percebe que um paciente de 64 anos com insuficiência cardíaca classe funcional III vem apresentando internações repetidas por congestão pulmonar. Ao construir o genograma e o ecomapa, identifica que a esposa (cuidadora) está emocionalmente exausta e em conflito com o filho do casal sobre a restrição hidrossalina e a compra dos medicamentos. O médico organiza e conduz na UBS uma <strong>Conferência Familiar</strong> com o paciente, a esposa e o filho, acolhendo o sofrimento de todos, avaliando sistematicamente a dinâmica dos papéis e pactuando uma nova divisão de responsabilidades no cuidado, sem realizar psicoterapia familiar profunda de longo prazo. Segundo a classificação de <strong>Doherty & Baird (1986)</strong>, em qual nível de envolvimento familiar este médico atuou?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Nível 1 — Mínima ênfase na família.",
+            "<strong>B)</strong> Nível 2 — Fornecimento de informações e aconselhamento médico básico.",
+            "<strong>C)</strong> Nível 3 — Sentimento e apoio emocional exclusivo ao indivíduo.",
+            "<strong>D)</strong> Nível 4 — Avaliação sistemática da família e intervenção planejada.",
+            "<strong>E)</strong> Nível 5 — Terapia familiar sistêmica intensiva especializada."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa D.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa D está correta:</strong> Na escala de 5 níveis de Doherty & Baird: Nível 1 = foco biomédico estrito; Nível 2 = troca de informações técnicas com a família; Nível 3 = acolhimento de sentimentos e suporte empático nas crises; <strong>Nível 4 = Avaliação sistemática (uso de Genograma, Ecomapa, PRACTICE/FIRO) e intervenção planejada (condução de Conferência Familiar para renegociar papéis e resolver impasses)</strong> — que é a competência máxima esperada do especialista em Medicina de Família e Comunidade! Já o Nível 5 (Terapia Familiar) cabe ao terapeuta familiar especializado para famílias disfuncionais resistentes."
+          ]
+        ],
+        [
+          "3",
+          "Questão 7 — Modalidades de Atenção Domiciliar no SUS (AD1, AD2 e AD3)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> De acordo com as diretrizes do Ministério da Saúde para a Atenção Domiciliar no âmbito do SUS (Portaria nº 825/2016), analise os três pacientes abaixo moradores do território de uma Unidade de Saúde da Família:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Paciente I:</strong> Idosa de 86 anos, acamada por sequela de AVC ocorrido há 4 anos, pressão arterial e glicemia controladas, alimentando-se por via oral pastosa, necessitando de visitas médicas periódicas de rotina e renovação de receitas a cada 2 meses.",
+            "<strong>Paciente II:</strong> Homem de 62 anos, recém-desospitalizado após osteomielite tibial pós-fratura, restrito ao leito, necessitando de antibioticoterapia endovenosa diária por 14 dias e curativos complexos com visitas multiprofissionais semanais.",
+            "<strong>Paciente III:</strong> Mulher de 48 anos com Esclerose Lateral Amiotrófica (ELA) avançada, tetraplégica, traqueostomizada em uso contínuo de ventilação mecânica invasiva domiciliar (24h/dia) e gastrostomia."
+          ]
+        ],
+        [
+          "p",
+          "Os Pacientes I, II e III devem ser classificados nas modalidades de Atenção Domiciliar e acompanhados prioritariamente por quais equipes, respectivamente?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> AD1 (Equipe de Saúde da Família) — AD2 (Serviço de Atenção Domiciliar / Melhor em Casa) — AD3 (Serviço de Atenção Domiciliar / Melhor em Casa).",
+            "<strong>B)</strong> AD3 (Hospital) — AD2 (UPA) — AD1 (Equipe de Saúde da Família).",
+            "<strong>C)</strong> Todos os três são classificados como AD1 e acompanhados exclusivamente pelo Agente Comunitário de Saúde.",
+            "<strong>D)</strong> AD2 (Melhor em Casa) — AD1 (Equipe de Saúde da Família) — AD3 (SAMU 192).",
+            "<strong>E)</strong> AD1 (Melhor em Casa) — AD2 (Equipe de Saúde da Família) — AD3 (Equipe de Saúde da Família)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa A.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa A está correta:</strong>\n    <ul>\n      <li><strong>Paciente I = AD1:</strong> Restrito ao leito/domicílio, porém clinicamente estável e com necessidade de cuidados de menor frequência/complexidade → responsabilidade direta da <strong>Equipe de Atenção Primária (eSF)</strong>!",
+            "<strong>Paciente II = AD2:</strong> Necessidade de cuidados intensivos e sequenciais transitórios (antibiótico parenteral diário / curativo complexo / desospitalização) com visitas semanais → responsabilidade do <strong>SAD (EMAD/EMAP — Melhor em Casa)</strong> compartilhada com a APS.",
+            "<strong>Paciente III = AD3:</strong> Necessidade contínua de equipamento de suporte à vida (ventilação mecânica invasiva domiciliar) e procedimentos complexos → responsabilidade contínua do <strong>SAD (EMAD/EMAP)</strong> na modalidade <strong>AD3</strong>."
+          ]
+        ],
+        [
+          "3",
+          "Questão 8 — Escala de Risco Familiar de Coelho-Savassi"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Na Escala de Risco Familiar de Coelho-Savassi, utilizada pelas Equipes de Saúde da Família para estratificar o risco sociofamiliar dos domicílios cadastrados e priorizar visitas domiciliares sob o princípio da equidade, quais das seguintes condições recebem a pontuação unitária máxima de <strong>3 (três) pontos</strong> cada?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Hipertensão arterial sistêmica e diabetes mellitus não complicado.",
+            "<strong>B)</strong> Acamado, deficiência física, deficiência mental, baixas condições de saneamento, desnutrição grave e relação morador/cômodo maior que 1.",
+            "<strong>C)</strong> Idade maior que 70 anos, menor de 6 meses e analfabetismo.",
+            "<strong>D)</strong> Tabagismo leve, sobrepeso e dislipidemia assintomática.",
+            "<strong>E)</strong> Domicílio com menos de 1 morador por cômodo e presença de animal doméstico vacinado."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> Na Escala de Coelho-Savassi:\n    <ul>\n      <li><strong>Valem 3 pontos:</strong> Acamado, Deficiência física, Deficiência mental, Baixas condições de saneamento, Desnutrição grave e Relação morador/cômodo &gt; 1.",
+            "<strong>Valem 2 pontos:</strong> Drogadição, Desemprego, Analfabetismo, Menor de 6 meses, Maior de 70 anos e Relação morador/cômodo = 1 (refutando C).",
+            "<strong>Valem 1 ponto:</strong> Hipertensão Arterial Sistêmica e Diabetes Mellitus (refutando A).",
+            "A soma total classifica a família em: 0 a 4 pts (Sem risco/Habitual); 5 a 6 pts (R1 — Risco Menor); 7 a 8 pts (R2 — Risco Médio); e <strong>&ge; 9 pts (R3 — Risco Máximo)</strong>."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tabela-high-yield-abordagem-familiar",
+      0,
+      [
+        [
+          "2",
+          "10. Síntese High-Yield e Quadro Sinóptico para Revisão Rápida (Abordagem Familiar, Genograma e Ecomapa)"
+        ],
+        [
+          "p",
+          "Para revisão final de altíssimo rendimento antes das provas de Residência Médica, Revalida e ENAMED, domine a matriz comparativa das ferramentas e conceitos da Abordagem Familiar na Atenção Primária:"
+        ],
+        [
+          "t",
+          [
+            "Ferramenta / Conceito",
+            "Autoria de Referência",
+            "Estrutura / Acrônimo e Pontos-Chave",
+            "Dica Matadora de Prova"
+          ],
+          [
+            [
+              "<strong>Modelo Estrutural e Fronteiras</strong>",
+              "Salvador Minuchin / Murray Bowen",
+              "<strong>Subsistemas:</strong> Conjugal, Parental e Fraternal.<br><strong>Fronteiras:</strong> Nítidas (saudáveis), Difusas (famílias <em>emaranhadas</em>) e Rígidas (famílias <em>desengajadas</em>).",
+              "<strong>Coalizão</strong> = união de 2 membros contra um 3º.<br><strong>Triangulação</strong> = díade em conflito puxa um 3º (ex: filho como <em>Paciente Identificado</em>) para aliviar a tensão."
+            ],
+            [
+              "<strong>Ciclo de Vida Familiar (6 Estágios)</strong>",
+              "Betty Carter & Monica McGoldrick (1989)",
+              "<strong>1.</strong> Jovens solteiros saindo de casa;<br><strong>2.</strong> União no casamento (novo casal);<br><strong>3.</strong> Famílias com filhos pequenos;<br><strong>4.</strong> Famílias com adolescentes;<br><strong>5.</strong> Lançando os filhos e seguindo em frente;<br><strong>6.</strong> Famílias no estágio tardio da vida.",
+              "<strong>Crise Normativa:</strong> previsível/evolutiva (casamento, nascimento, adolescência, ninho vazio, aposentadoria).<br><strong>Crise Paranormativa:</strong> imprevisível/acidental (morte precoce, divórcio, desemprego, doença grave súbita)."
+            ],
+            [
+              "<strong>Genograma (Estrutural e Funcional)</strong>",
+              "Monica McGoldrick & Randy Gerson (1985)",
+              "Mínimo de <strong>3 gerações</strong>. Homem = Quadrado (à esquerda); Mulher = Círculo (à direita); Caso-índice = Linha dupla; Filhos = do mais velho (esquerda) para o mais novo (direita).<br><strong>Relacionamentos:</strong> 2 linhas (<code>==</code>) = próximo; 3 linhas (<code>≡≡≡</code>) = fundido/emaranhado; Zigue-zague = conflituoso; <code>—||—</code> = corte emocional.",
+              "<strong>1 barra oblíqua (<code>/</code>)</strong> = Separação;<br><strong>2 barras oblíquas (<code>//</code>)</strong> = Divórcio;<br><strong>Triângulo (△)</strong> = Gestação em curso;<br><strong>Bolinha preta (●)</strong> = Aborto espontâneo;<br><strong>X isolado</strong> = Aborto provocado;<br><strong>Laço pontilhado ao redor</strong> = Moram juntos hoje."
+            ],
+            [
+              "<strong>Ecomapa</strong>",
+              "Ann Hartman (1975)",
+              "Fotografia ecológica atual das redes de apoio externas. Círculo central (família domiciliar) conectado a círculos satélites (UBS, igreja, trabalho, escola, amigos, família extensa).",
+              "Inclui <strong>setas de fluxo de energia (<code>→</code>, <code>←</code>, <code>↔</code>)</strong> mostrando quem nutre e quem drena recursos da família."
+            ],
+            [
+              "<strong>APGAR Familiar</strong>",
+              "Gabriel Smilkstein (1978)",
+              "<strong>A:</strong> <em>Adaptation</em> (Adaptação);<br><strong>P:</strong> <em>Partnership</em> (Participação);<br><strong>G:</strong> <em>Growth</em> (Crescimento);<br><strong>A:</strong> <em>Affection</em> (Afeição);<br><strong>R:</strong> <em>Resolve</em> (Resolução/Tempo).<br>5 perguntas (0, 1 ou 2 pts cada = total 0 a 10).",
+              "• <strong>7 a 10 pts:</strong> Funcional;<br>• <strong>4 a 6 pts:</strong> Disfunção Moderada;<br>• <strong>0 a 3 pts:</strong> Disfunção Grave.<br>Avalia a percepção <em>subjetiva</em> individual."
+            ],
+            [
+              "<strong>Roteiro PRACTICE e Modelo FIRO</strong>",
+              "Walters (1980) / Schutz, Doherty & Baird",
+              "<strong>PRACTICE:</strong> <em>Presenting problem, Roles, Affect, Communication, Time in life cycle, Illness history, Coping, Ecology</em>.<br><strong>FIRO:</strong> 1º Inclusão → 2º Controle → 3º Intimidade.",
+              "No FIRO, diante de crise aguda, trabalha-se primeiro a Inclusão (estrutura) e o Controle (decisões) antes da Intimidade."
+            ],
+            [
+              "<strong>Níveis de Envolvimento Familiar (1 a 5)</strong>",
+              "Doherty & Baird (1986)",
+              "Nível 1: Mínima ênfase;<br>Nível 2: Informação e aconselhamento;<br>Nível 3: Sentimento e apoio emocional;<br><strong>Nível 4: Avaliação sistemática e intervenção planejada (Conferência Familiar)</strong>;<br>Nível 5: Terapia Familiar.",
+              "Todo Médico de Família deve dominar até o <strong>Nível 4</strong>! O Nível 5 é atribuição do terapeuta familiar especializado."
+            ],
+            [
+              "<strong>Escala de Coelho-Savassi e Atenção Domiciliar</strong>",
+              "Coelho & Savassi / Portaria MS 825/2016",
+              "<strong>Coelho-Savassi:</strong> 3 pts (acamado, def. física/mental, saneamento ruim, desnutrição, &gt;1 morador/cômodo); 2 pts (drogadição, desemprego, analfabetismo, &lt;6m, &gt;70a); 1 pt (HAS, DM). R1 (5-6), R2 (7-8), <strong>R3 (&ge;9 pts)</strong>.",
+              "<strong>AD1:</strong> Baixa complexidade/estável (Equipe APS).<br><strong>AD2:</strong> Cuidado intensivo semanal/antibiótico EV (SAD/Melhor em Casa).<br><strong>AD3:</strong> Suporte ventilatório/equipamentos (SAD)."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.sbmfc.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">McGOLDRICK, M.; GERSON, R.; PETRY, S. Genogramas: Avaliação e Intervenção Familiar. 3ª ed. Porto Alegre: Artmed, 2012.</a>",
+            "<a href=\"https://www.sbmfc.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">CARTER, B.; McGOLDRICK, M. As Mudanças no Ciclo de Vida Familiar: Uma Estrutura para a Terapia Familiar. 2ª ed. Porto Alegre: Artmed, 1995.</a>",
+            "<a href=\"https://www.sbmfc.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">GUSSO, G.; LOPES, J. M. C.; DIAS, L. C. Tratado de Medicina de Família e Comunidade: Princípios, Formação e Prática. 2ª ed. Porto Alegre: Artmed, 2019.</a>",
+            "<a href=\"https://bvsms.saude.gov.br\" target=\"_blank\" rel=\"noopener noreferrer\">BRASIL. Ministério da Saúde. Caderno de Atenção Domiciliar e Portaria nº 825/2016 (Redefine a Atenção Domiciliar no SUS). Brasília: MS, 2016/2024.</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,1216 @@
+{
+  "v": 2,
+  "s": "seguranca-do-paciente-e-prevencao-de-eventos-adversos",
+  "t": "Segurança do Paciente e Prevenção de Eventos Adversos",
+  "p": "Segurança do Paciente e Prevenção de Eventos Adversos — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "a": "Saúde Coletiva",
+  "m": "Saúde Coletiva",
+  "h": [
+    "Apostila LURIA",
+    "Segurança do Paciente e Prevenção de Eventos Adversos",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+    [
+      "Área: Saúde Coletiva",
+      "Matéria: Saúde Coletiva",
+      "Tema: Segurança do Paciente e Prevenção de Eventos Adversos"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "programa-nacional-seguranca-do-paciente-taxonomia-oms",
+      "1. Programa Nacional de Segurança do Paciente (PNSP), NSP e Taxonomia da OMS"
+    ],
+    [
+      "modelo-queijo-suico-james-reason-cultura-seguranca",
+      "2. O Modelo do Queijo Suíço de James Reason, Falhas Ativas vs. Latentes e Cultura Justa"
+    ],
+    [
+      "seis-metas-internacionais-seguranca-do-paciente-parte-1",
+      "3. As 6 Metas Internacionais de Segurança do Paciente (Metas 1, 2 e 3)"
+    ],
+    [
+      "seis-metas-internacionais-seguranca-do-paciente-parte-2",
+      "4. As 6 Metas Internacionais de Segurança do Paciente (Metas 4, 5 e 6)"
+    ],
+    [
+      "analise-causa-raiz-ishikawa-londres-disclosure",
+      "5. Análise de Causa Raiz (Ishikawa, Protocolo de Londres), FMEA e Disclosure (Comunicação Aberta)"
+    ],
+    [
+      "casos-clinicos-resolvidos-aula-222",
+      "6. Casos Clínicos Resolvidos e Raciocínio em Segurança do Paciente"
+    ],
+    [
+      "questoes-comentadas-residencia-revalida-aula-222",
+      "7. Questões Comentadas de Provas de Residência Médica, Revalida e ENAMED"
+    ],
+    [
+      "tabela-sintese-high-yield-aula-222",
+      "8. Síntese High-Yield de Segurança do Paciente para Revisão Final de Véspera"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "programa-nacional-seguranca-do-paciente-taxonomia-oms",
+      0,
+      [
+        [
+          "2",
+          "1. Programa Nacional de Segurança do Paciente (PNSP), NSP e Taxonomia da OMS"
+        ],
+        [
+          "p",
+          "A publicação do relatório seminal <em>\"To Err Is Human: Building a Safer Health System\"</em> pelo <em>Institute of Medicine</em> (IOM, EUA) em 1999 inaugurou a era moderna da <strong>Segurança do Paciente</strong> ao demonstrar que entre 44.000 e 98.000 norte-americanos morriam anualmente nos hospitais vítimas de erros assistenciais evitáveis — superando a mortalidade por acidentes automobilísticos, câncer de mama ou HIV/AIDS. No Brasil, estudos conduzidos pela Fiocruz (Mendes et al.) e pelo IESS apontam que mais de 70% dos eventos adversos hospitalares são <strong>evitáveis</strong>, representando uma das principais causas de morbimortalidade intra-hospitalar e prolongamento do tempo de internação."
+        ],
+        [
+          "3",
+          "1.1 O Marco Regulatório Brasileiro: Portaria MS nº 529/2013 e RDC Anvisa nº 36/2013"
+        ],
+        [
+          "p",
+          "No Brasil, a política pública estruturante foi instituída pela <strong>Portaria GM/MS nº 529, de 1º de abril de 2013</strong> (atualmente consolidada na Portaria de Consolidação GM/MS nº 5/2017), que criou o <strong>Programa Nacional de Segurança do Paciente (PNSP)</strong>, complementada operacionalmente pela <strong>Resolução da Diretoria Colegiada — RDC Anvisa nº 36, de 25 de julho de 2013</strong>, que institui ações para a segurança do paciente em serviços de saúde."
+        ],
+        [
+          "u",
+          [
+            "<strong>Abrangência da RDC Anvisa nº 36/2013 (Pegadinha Clássica de Prova!):</strong> As disposições da RDC nº 36/2013 aplicam-se a <strong>TODOS os serviços de saúde do país, sejam eles públicos, privados, filantrópicos, civis ou militares, incluindo aqueles que exercem ações de ensino e pesquisa</strong>!\n    <ul>\n      <li><em>Exceções estritas da RDC 36/2013:</em> Excluem-se do escopo obrigatório de constituir Núcleo de Segurança do Paciente próprio apenas os <strong>consultórios individualizados (isolados), laboratórios clínicos, serviços móveis e serviços de atenção domiciliar</strong> (os quais seguem normas sanitárias específicas e vinculam-se aos núcleos de suas instituições mantenedoras)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Eixos do Programa Nacional de Segurança do Paciente (PNSP):</strong>"
+        ],
+        [
+          "o",
+          [
+            "O estímulo a uma prática assistencial segura (implementação dos 6 Protocolos Básicos de Segurança do Paciente do Ministério da Saúde / Anvisa / Fiocruz / Proqualis).",
+            "O envolvimento do cidadão (paciente e familiares) na sua própria segurança (\"Paciente pela Segurança do Paciente\").",
+            "A inclusão do tema segurança do paciente no ensino técnico, de graduação e pós-graduação em saúde.",
+            "O incremento de pesquisa sobre segurança do paciente."
+          ]
+        ],
+        [
+          "3",
+          "1.2 Núcleo de Segurança do Paciente (NSP) e Plano de Segurança do Paciente (PSP)"
+        ],
+        [
+          "p",
+          "De acordo com a RDC Anvisa nº 36/2013, a direção de todo serviço de saúde abrangido deve constituir obrigatoriamente o <strong>Núcleo de Segurança do Paciente (NSP)</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Definição do NSP:</strong> Instância do serviço de saúde criada para promover e apoiar a implementação de ações voltadas à segurança do paciente, dotada de caráter multiprofissional e diretamente vinculada à alta direção da instituição.",
+            "<strong>Plano de Segurança do Paciente (PSP):</strong> Documento elaborado pelo NSP que aponta situações de risco no serviço e descreve as estratégias e ações definidas para a gestão de risco visando à prevenção e mitigação dos incidentes, desde a admissão até a transferência, a alta ou o óbito do paciente.",
+            "<strong>Notificação de Eventos Adversos ao SNVS (Sistema NOTIVISA) e Prazos Legais (MUITO COBRADO EM PROVAS!):</strong>\n    <ul>\n      <li>Compete ao <strong>Núcleo de Segurança do Paciente (NSP)</strong> realizar a vigilância, o monitoramento e a notificação mensal de todos os incidentes e eventos adversos ocorridos na instituição por meio das ferramentas eletrônicas disponibilizadas pela Anvisa (<strong>NOTIVISA — Módulo Assistência à Saúde</strong>).",
+            "<strong>Prazo Regra Geral (Eventos Adversos Não Fatais):</strong> Devem ser notificados pelo NSP ao Sistema Nacional de Vigilância Sanitária (SNVS/NOTIVISA) <strong>mensalmente, até o 15º (décimo quinto) dia útil do mês subsequente ao mês de vigilância</strong>!",
+            "<strong>Prazo de Exceção — ÓBITO Decorrente de Evento Adverso (Never Event / Evento Sentinela Fatal):</strong> Os eventos adversos que evoluírem para <strong>ÓBITO</strong> devem ser notificados pelo NSP ao SNVS/NOTIVISA em <strong>ATÉ 72 (SETENTA E DUAS) HORAS a partir do ocorrido</strong>! Além disso, o NSP deve conduzir obrigatoriamente a investigação de Análise de Causa Raiz (ACR) de todos os óbitos e <em>never events</em>."
+          ]
+        ],
+        [
+          "3",
+          "1.3 Taxonomia Internacional da Segurança do Paciente (Classificação da OMS — ICPS)"
+        ],
+        [
+          "p",
+          "Sem dominar com precisão cirúrgica as definições da <em>Classificação Internacional para a Segurança do Paciente</em> da OMS (adotadas literalmente pela Portaria MS nº 529/2013 e RDC 36/2013), o candidato cai nas pegadinhas mais frequentes de provas de Residência Médica, Revalida e ENAMED. Todo o raciocínio parte da distinção fundamental: <strong>houve ou não houve DANO ao paciente? E o incidente chegou ou não chegou a atingir o paciente?</strong>"
+        ],
+        [
+          "t",
+          [
+            "Conceito Oficial (OMS / PNSP / Anvisa)",
+            "Atingiu o Paciente?",
+            "Causou Dano ao Paciente?",
+            "Definição Técnica Exata e Exemplo Clínico Clássico de Prova"
+          ],
+          [
+            [
+              "<strong>1. Circunstância Notificável</strong><br>(<em>Reportable Circumstance</em>)",
+              "<strong>NÃO</strong> (Ainda não ocorreu incidente)",
+              "<strong>NÃO</strong>",
+              "Situação em que existe um <strong>potencial significativo para causar dano, mas na qual nenhum incidente ocorreu ainda</strong> (condição latente de risco).<br><em>Exemplo:</em> Um plantão de UTI superlotado com o desfibrilador descarregado no carrinho de parada ou ausência de bomba de infusão para administrar noradrenalina, embora nenhum paciente tenha precisado naquele turno."
+            ],
+            [
+              "<strong>2. Near Miss (Quase-Erro / Quase-Falha / Incidente que não atingiu o paciente)</strong>",
+              "<strong>NÃO!</strong> (Interceptado antes!)",
+              "<strong>NÃO</strong>",
+              "Incidente que <strong>NÃO atingiu o paciente</strong>, porque foi interceptado a tempo (por uma barreira de segurança ou sorte) antes de tocar/ser administrado no paciente.<br><em>Exemplo Clássico:</em> O médico prescreve Penicilina para um paciente alérgico grave (ou o técnico aspira Cloreto de Potássio em vez de água destilada), mas a enfermeira ou o farmacêutico clínico confere a pulseira de alergia / o rótulo na bancada e <strong>impede a administração antes de injetar no paciente</strong>!"
+            ],
+            [
+              "<strong>3. Incidente Sem Dano</strong><br>(<em>No Harm Incident</em>)",
+              "<strong>SIM!</strong> (Atingiu o paciente!)",
+              "<strong>NÃO!</strong> (Nenhum dano detectável)",
+              "Evento ou circunstância que <strong>atingiu o paciente, mas NÃO resultou em dano discernível</strong> (lesão física, fisiológica ou psicológica).<br><em>Exemplo Clássico:</em> Uma bolsa de concentrado de hemácias ou um antibiótico (ex.: Cefazolina) foi infundido no paciente errado (troca de leitos), mas a tipagem sanguínea era compatível (O negativo) ou o paciente não teve qualquer reação alérgica, toxicidade ou alteração clínica/laboratorial! Atingiu o paciente, mas não houve dano = <strong>Incidente sem dano</strong> (e <em>não</em> Near Miss!)."
+            ],
+            [
+              "<strong>4. Evento Adverso (EA)</strong><br>(<em>Adverse Event = Incidente COM Dano</em>)",
+              "<strong>SIM!</strong>",
+              "<strong>SIM! (Obrigatoriamente há DANO!)</strong>",
+              "Incidente que <strong>resulta em dano à saúde do paciente</strong> (comprometimento da estrutura ou função do corpo e/ou qualquer efeito dele oriundo, incluindo doenças, lesão, sofrimento, incapacidade ou morte, decorrente do cuidado prestado e não da evolução natural da doença de base).<br><em>Exemplo:</em> Queda do leito hospitalar resultando em hematoma subdural ou fratura de fêmur; infusão de insulina em dose 10 vezes maior causando coma hipoglicêmico; Infecção Primária de Corrente Sanguínea associada a Cateter Venoso Central."
+            ],
+            [
+              "<strong>5. Evento Sentinela / Never Event (Evento que Nunca Deveria Ocorrer)</strong>",
+              "<strong>SIM!</strong>",
+              "<strong>SIM (Dano Grave, Permanente ou Óbito)</strong>",
+              "Ocorrência inesperada que implica morte ou perda grave e permanente de função (Evento Sentinela) ou eventos adversos gravíssimos e <strong>totalmente evitáveis</strong> caso as barreiras básicas tivessem sido cumpridas (<em>Never Events</em>).<br><em>Exemplos Clássicos:</em> Cirurgia no lado errado (amputar a perna sã, operar o rim contralateral saudável) ou no paciente errado; retenção não intencional de corpo estranho (compressa cirúrgica/gossypiboma ou instrumental) dentro da cavidade após cirurgia; infusão endovenosa em <em>bolus</em> de KCl 19,1% concentrado; suicídio de paciente internado; troca de bebês na maternidade; óbito por reação hemolítica aguda ABO-incompatível; úlcera/lesão por pressão estágio III ou IV adquirida no hospital."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "A Distinção Farmacovigilante: Evento Adverso Medicamentoso (EAM) vs. Reação Adversa a Medicamento (RAM) vs. Erro de Medicação"
+        ],
+        [
+          "p",
+          "Outro ponto adorado pelas bancas examinadoras (USP, UNICAMP, ENARE) é a relação entre <strong>Erro de Medicação</strong> e <strong>Reação Adversa a Medicamento (RAM)</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Reação Adversa a Medicamento (RAM — Conceito da OMS):</strong> Qualquer resposta prejudicial ou indesejável e não intencional a um medicamento, que ocorre nas <strong>doses normalmente utilizadas no ser humano</strong> para profilaxia, diagnóstico ou terapia de doença. A RAM clássica (ex.: paciente que nunca havia usado dipirona ou amoxicilina, sem histórico prévio conhecido de alergia, recebe a dose correta prescrita e desenvolve choque anafilático ou Síndrome de Stevens-Johnson) é um <strong>Evento Adverso NÃO EVITÁVEL</strong> (não houve erro humano na prescrição nem na administração!).",
+            "<strong>Erro de Medicação:</strong> Qualquer evento <strong>evitável</strong> que pode causar ou induzir ao uso inapropriado de medicamento ou prejudicar o paciente (erro de prescrição, dispensação, preparo ou administração). Se um paciente já tem alergia grave à Penicilina registrada no prontuário e na pulseira vermelha, mas mesmo assim recebe Amoxicilina e faz anafilaxia, trata-se de um <strong>Evento Adverso Medicamentoso EVITÁVEL decorrente de Erro de Medicação</strong>!"
+          ]
+        ]
+      ]
+    ],
+    [
+      "modelo-queijo-suico-james-reason-cultura-seguranca",
+      0,
+      [
+        [
+          "2",
+          "2. O Modelo do Queijo Suíço de James Reason, Falhas Ativas vs. Latentes e Cultura Justa"
+        ],
+        [
+          "p",
+          "Durante décadas, a medicina operou sob a <strong>Abordagem Centrada no Indivíduo (Cultura Punitiva ou da Culpa — <em>Name, Blame and Shame</em>)</strong>, que enxergava os erros assistenciais como fruto exclusivo de desatenção moral, preguiça, esquecimento ou incompetência técnica de um único profissional na ponta (\"a maçã podre\"), respondendo ao erro com demissão, punição administrativa e humilhação pública. Essa abordagem fracassou rotundamente porque <strong>esconde os erros debaixo do tapete</strong> (subnotificação por medo de punição) e mantém intactas as armadilhas sistêmicas do hospital, garantindo que outro profissional cometa exatamente o mesmo erro na semana seguinte!"
+        ],
+        [
+          "3",
+          "2.1 O Modelo do Queijo Suíço de Causação de Acidentes (James Reason, 1990/2000)"
+        ],
+        [
+          "p",
+          "O psicólogo cognitivo britânico <strong>James Reason</strong> revolucionou a segurança da aviação, das usinas nucleares e da medicina ao propor a <strong>Abordagem Sistêmica do Erro Humano</strong>, ilustrada pela célebre metáfora do <strong>Modelo do Queijo Suíço (<em>Swiss Cheese Model</em>)</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>As Fatias do Queijo (Barreiras e Defesas do Sistema):</strong> Em um serviço de saúde complexo, existem múltiplas camadas sucessivas de defesa, barreiras tecnológicas, protocolos e checagens projetadas para impedir que um perigo atinja o paciente (ex.: prescrição eletrônica com alerta de dose máxima &rarr; conferência pelo farmacêutico clínico &rarr; dispensação por código de barras unitário &rarr; dupla checagem pela enfermagem &rarr; leitura da pulseira de identificação do paciente).",
+            "<strong>Os Buracos nas Fatias do Queijo (Fragilidades e Falhas nas Barreiras):</strong> No mundo real, nenhuma barreira humana ou tecnológica é 100% impermeável; cada camada possui \"buracos\" (fragilidades que se abrem, fecham e mudam de lugar dinamicamente). A presença de um furo em uma única fatia geralmente não causa tragédia, pois a fatia seguinte intercepta o erro (configurando um <em>Near Miss</em>!).",
+            "<strong>O Alinhamento Momentâneo dos Buracos (O Acidente / Evento Adverso):</strong> O Evento Adverso grave só acontece quando, em uma trajetória fatídica, <strong>os buracos de todas as fatias de defesa se alinham simultaneamente</strong>, permitindo que o perigo atravesse todas as barreiras e atinja o paciente sem ser interceptado!"
+          ]
+        ],
+        [
+          "3",
+          "2.2 Falhas Ativas (Na Ponta / Sharp End) vs. Condições Latentes (No Sistema / Blunt End)"
+        ],
+        [
+          "p",
+          "Segundo James Reason, os buracos nas fatias do queijo suíço surgem por duas razões distintas que precisam ser diferenciadas nas provas:"
+        ],
+        [
+          "t",
+          [
+            "Tipo de Falha (James Reason)",
+            "Onde Ocorre?",
+            "Definição e Mecanismo Cognitivo/Organizacional",
+            "Exemplos Clássicos em Provas"
+          ],
+          [
+            [
+              "<strong>Falhas Ativas</strong><br>(<em>Active Failures</em>)",
+              "Na <strong>\"Ponta Afiada\" (<em>Sharp End</em>)</strong> — profissionais em contato direto com o paciente (médicos, enfermeiros, técnicos, cirurgiões).",
+              "Atos inseguros cometidos pelas pessoas que estão na linha de frente assistencial. Têm impacto imediato e de curta duração. Dividem-se em:<br>- <strong>Deslizes (<em>Slips</em>) e Lapsos (<em>Lapses</em>):</strong> Falhas involuntárias de execução ou memória em tarefas automáticas (por distração ou fadiga).<br>- <strong>Equívocos / Enganos (<em>Mistakes</em>):</strong> Falhas no plano ou julgamento (falta de conhecimento ou aplicação de regra errada).<br>- <strong>Violações (<em>Violations</em>):</strong> Desvios deliberados de normas seguras rotineiras (\"atalhos\").",
+              "Aspirar a ampola errada na gaveta; esquecer de zerar a bomba de infusão; trocar o lado da incisão cirúrgica; não lavar as mãos antes de puncionar acesso central."
+            ],
+            [
+              "<strong>Condições Latentes</strong><br>(<em>Latent Conditions</em>)",
+              "Na <strong>\"Ponta Cega / Base do Sistema\" (<em>Blunt End</em>)</strong> — decisões da alta gestão, arquitetura hospitalar, compras, recursos humanos e diretoria.",
+              "São os <strong>\"patógenos residentes\"</strong> inevitáveis ocultos dentro do sistema organizacional! Podem permanecer adormecidos por anos até se combinarem com gatilhos locais e uma falha ativa para produzir o acidente. Ao contrário das falhas ativas (difíceis de prever), as condições latentes <strong>podem ser identificadas e corrigidas proativamente</strong> antes que o evento adverso ocorra!",
+              "Compras de ampolas de Cloreto de Potássio e Água Destilada exatamente iguais (<em>Look-Alike</em>) guardadas na mesma gaveta; subdimensionamento crônico da equipe de enfermagem (1 técnico para 12 pacientes graves); plantões médicos de 36h sem descanso; ausência de iluminação ou sistema de prescrição confuso."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>A Grande Lição de James Reason:</strong> <em>\"Não podemos mudar a condição humana (todo ser humano falível está sujeito a fadiga, distração e deslizes), mas podemos mudar as condições dos sistemas sob as quais os seres humanos trabalham!\"</em>"
+        ],
+        [
+          "3",
+          "2.3 Cultura de Segurança do Paciente e a Cultura Justa (Just Culture — Sidney Dekker / Marx)"
+        ],
+        [
+          "p",
+          "A RDC Anvisa nº 36/2013 define a <strong>Cultura de Segurança</strong> a partir de 5 atributos essenciais:"
+        ],
+        [
+          "o",
+          [
+            "Cultura na qual todos os trabalhadores (incluindo profissionais envolvidos no cuidado e gestores) assumem responsabilidade pela sua própria segurança, pela segurança de seus colegas, pacientes e familiares.",
+            "Cultura que <strong>prioriza a segurança acima de metas financeiras e operacionais</strong>.",
+            "Cultura que encoraja e recompensa a identificação, a notificação e a resolução dos problemas relacionados à segurança.",
+            "Cultura que, a partir da ocorrência de incidentes, promove o <strong>aprendizado organizacional</strong>.",
+            "Cultura que proporciona recursos, estrutura e responsabilização para a manutenção efetiva da segurança."
+          ]
+        ],
+        [
+          "4",
+          "Cultura Punitiva vs. Cultura Livre de Culpa Irrestrita vs. CULTURA JUSTA (Just Culture)"
+        ],
+        [
+          "p",
+          "Muita atenção: a moderna Segurança do Paciente <strong>NÃO</strong> defende a impunidade para atos criminosos ou imprudência temerária consciente; ela preconiza a <strong>Cultura Justa (<em>Just Culture</em>)</strong>, que equilibra aprendizado sistêmico e responsabilização ética (<em>accountability</em>) ao distinguir três comportamentos humanos distintos:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Erro Humano Involuntário (<em>Human Error</em> — Deslize, Lapso ou Engano não intencional):</strong> O profissional bem-intencionado tentou fazer a coisa certa, mas foi induzido ao erro pelas condições latentes do sistema, fadiga ou falha cognitiva. &rarr; <strong>Conduta na Cultura Justa: CONSOLAR e APOiar o profissional (que é a \"Segunda Vítima\"!)</strong> e redesenhar o processo/barreira sistêmica (sem qualquer punição!).",
+            "<strong>Comportamento de Risco (<em>At-Risk Behavior</em> — \"Atalho\" com percepção de risco ausente ou subestimada):</strong> O profissional pula uma etapa de segurança (ex.: não faz a dupla checagem porque a enfermaria está caótica e todo mundo costuma pular aquela etapa para ganhar tempo), acreditando equivocadamente que não haverá problema. &rarr; <strong>Conduta na Cultura Justa: ORIENTAR / TREINAR (<em>Coaching</em>)</strong> o profissional e remover os incentivos organizacionais que estimulam o atalho perigoso.",
+            "<strong>Comportamento Imprudente / Temerário (<em>Reckless Behavior</em> — Desprezo consciente e injustificável de um risco substancial):</strong> O profissional sabe perfeitamente que sua ação é proibida e coloca o paciente em risco grave sem qualquer justificativa assistencial (ex.: operar embriagado ou sob efeito de substâncias psicoativas, abandonar plantão de UTI sem substituto, falsificar prontuário deliberadamente). &rarr; <strong>Conduta na Cultura Justa: AÇÃO DISCIPLINAR / SANÇÃO ÉTICO-LEGAL</strong>."
+          ]
+        ],
+        [
+          "p",
+          "<strong>O Conceito de \"Segunda Vítima\" (Albert Wu, <em>BMJ</em>, 2000):</strong> Quando ocorre um evento adverso grave ou fatal, a <em>Primeira Vítima</em> é o paciente e sua família. Contudo, o médico, enfermeiro ou farmacêutico envolvido em um erro involuntário sofre um trauma psicológico devastador (culpa paralisante, transtorno de estresse pós-traumático, depressão maior, abandono da medicina e risco elevado de suicídio), tornando-se a <strong>Segunda Vítima</strong> (sendo a própria instituição hospitalar, que perde credibilidade, a \"Terceira Vítima\"). O NSP deve oferecer suporte psicológico estruturado imediato à segunda vítima."
+        ]
+      ]
+    ],
+    [
+      "seis-metas-internacionais-seguranca-do-paciente-parte-1",
+      0,
+      [
+        [
+          "2",
+          "3. As 6 Metas Internacionais de Segurança do Paciente (Metas 1, 2 e 3)"
+        ],
+        [
+          "p",
+          "Formuladas pela Organização Mundial da Saúde (OMS) em parceria com a <em>Joint Commission International</em> (JCI) e incorporadas no Brasil por meio dos <strong>6 Protocolos Básicos de Segurança do Paciente do Ministério da Saúde / Anvisa / Fiocruz</strong> (Portarias MS nº 1.377/2013 e nº 2.095/2013), as <strong>Seis Metas Internacionais de Segurança do Paciente</strong> constituem o coração operacional da prevenção de eventos adversos."
+        ],
+        [
+          "t",
+          [
+            "Meta Internacional (OMS / JCI)",
+            "Protocolo Básico Correspondente no Brasil (MS / Anvisa)"
+          ],
+          [
+            [
+              "<strong>Meta 1:</strong> Identificar corretamente os pacientes",
+              "Protocolo de Identificação do Paciente"
+            ],
+            [
+              "<strong>Meta 2:</strong> Melhorar a eficácia da comunicação entre os profissionais de saúde",
+              "Comunicação Efetiva (Transição do Cuidado — SBAR / I-PASS e Ordens Verbais / Read-back)"
+            ],
+            [
+              "<strong>Meta 3:</strong> Melhorar a segurança dos medicamentos de alta vigilância (MAV)",
+              "Protocolo de Segurança na Prescrição, Uso e Administração de Medicamentos"
+            ],
+            [
+              "<strong>Meta 4:</strong> Assegurar cirurgias com local de intervenção correto, procedimento correto e paciente correto",
+              "Protocolo para Cirurgia Segura (Lista de Verificação / Checklist da OMS)"
+            ],
+            [
+              "<strong>Meta 5:</strong> Reduzir o risco de infecções associadas aos cuidados de saúde (IRAS)",
+              "Protocolo para a Prática de Higiene das Mãos em Serviços de Saúde (5 Momentos da OMS)"
+            ],
+            [
+              "<strong>Meta 6:</strong> Reduzir o risco de danos ao paciente resultantes de quedas e de lesões por pressão",
+              "Protocolo de Prevenção de Quedas e Protocolo para Prevenção de Úlcera/Lesão por Pressão"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "3.1 Meta 1: Identificação Correta do Paciente (Protocolo MS/Anvisa)"
+        ],
+        [
+          "p",
+          "Falhas na identificação do paciente estão na raiz de alguns dos eventos adversos mais catastróficos da medicina: transfusão de sangue ABO-incompatível por troca de pacientes homônimos na enfermaria, administração de quimioterapia ou insulina no paciente do leito vizinho e cirurgias realizadas no paciente errado."
+        ],
+        [
+          "4",
+          "Diretrizes Obrigatórias do Protocolo de Identificação do Paciente do Ministério da Saúde:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Regra dos DOIS Identificadores Obrigatórios:</strong> Para identificar com segurança qualquer paciente na pulseira padronizada (geralmente de cor <strong>branca</strong> para identificação padrão, reservando-se pulseiras coloridas ou sinalizadores específicos para riscos como alergia e risco de queda), devem ser utilizados <strong>NO MÍNIMO DOIS (2) IDENTIFICADORES</strong>:\n    <ol>\n      <li><strong>Nome completo do paciente</strong> (ou Nome Social completo quando solicitado, sem abreviações!).",
+            "<strong>Data de nascimento completa</strong> (ex.: 15/04/1958) e/ou <strong>Nome completo da mãe</strong> e/ou Número de Prontuário Único.",
+            "<strong>PEGADINHA CLÁSSICA DE PROVA — O QUE JAMAIS PODE SER USADO COMO IDENTIFICADOR:</strong>\n    <ul>\n      <li><strong>O NÚMERO DO QUARTO, O NÚMERO DO LEITO / ENFERMARIA OU O DIAGNÓSTICO CLÍNICO JAMAIS PODEM SER USADOS COMO IDENTIFICADORES DO PACIENTE!</strong> (\"O paciente da vesícula do leito 4B\" é a receita clássica para o erro fatal quando dois pacientes mudam de maca ou de leito durante o plantão!)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Identificação de Recém-Nascidos (RN):</strong> A pulseira do recém-nascido na sala de parto deve conter obrigatoriamente o <strong>nome completo da mãe</strong> (ex.: \"RN de Maria da Silva Santos\"), a data/hora de nascimento e o número do prontuário, sendo colocada preferencialmente no <strong>tornozelo</strong> (membro inferior) do bebê imediatamente após o parto, antes de qualquer separação do binômio mãe-filho.</li>\n  <li><strong>Pacientes Inconscientes / Desconhecidos na Emergência:</strong> Enquanto não identificados civilmente, utiliza-se codificação numérica sequencial única da instituição associada a características físicas/gênero e data/hora de entrada, atualizando imediatamente para nome completo + data de nascimento assim que identificados.</li>\n  <li><strong>Quando a Conferência da Pulseira é Obrigatória:</strong> Antes da administração de <strong>qualquer medicamento</strong>, antes da administração de <strong>hemocomponentes/hemoderivados</strong>, antes da <strong>coleta de sangue e amostras biológicas para exames</strong> (rotulando o tubo sempre à beira-leito na frente do paciente, e nunca na bancada do posto de enfermagem!), antes da entrega da <strong>dieta (oral ou enteral)</strong> e antes da realização de <strong>qualquer procedimento invasivo, exame radiológico ou cirurgia</strong>.</li>\n</ul>\n\n<hr>"
+        ],
+        [
+          "3",
+          "3.2 Meta 2: Comunicação Efetiva entre Profissionais de Saúde (SBAR, I-PASS e Read-Back)"
+        ],
+        [
+          "p",
+          "Segundo dados da <em>Joint Commission</em>, as <strong>falhas de comunicação interprofissional</strong> (especialmente durante as passagens de plantão / <em>handovers</em>, transferências entre setores como Centro Cirúrgico &rarr; UTI e comunicação de resultados críticos de exames) são a <strong>principal causa raiz de mais de 60% a 70% dos Eventos Sentinela hospitalares</strong>!"
+        ],
+        [
+          "4",
+          "1. Ferramenta SBAR (Situation, Background, Assessment, Recommendation)"
+        ],
+        [
+          "p",
+          "Desenvolvida originalmente nos submarinos nucleares da Marinha dos EUA e adaptada para a saúde pela Kaiser Permanente (Leonard et al.), a metodologia <strong>SBAR</strong> padroniza a comunicação verbal e escrita nas passagens de plantão e nos acionamentos médicos de urgência:"
+        ],
+        [
+          "u",
+          [
+            "<strong>S — <em>Situation</em> (Situação Atual):</strong> Identificar-se, identificar o paciente (com 2 identificadores) e declarar de forma direta e concisa qual é o problema agudo que motivou o contato. <em>Ex.: \"Dr. João, aqui é a enfermeira Ana da Enfermaria 3. Estou ligando sobre o Sr. Carlos Silva, 68 anos, que acabou de apresentar dispneia súbita, queda da SpO2 para 84% e taquicardia de 128 bpm.\"</em>",
+            "<strong>B — <em>Background</em> (Breve Histórico / Contexto Clínico):</strong> Informar o diagnóstico de admissão, data de internação, procedimentos recentes e comorbidades relevantes. <em>Ex.: \"Ele está no 3º pós-operatório de artroplastia total de quadril direito por fratura de fêmur; ontem a profilaxia com enoxaparina atrasou por sangramento na ferida.\"</em>",
+            "<strong>A — <em>Assessment</em> (Avaliação Clínica Atual):</strong> Apresentar os dados vitais objetivos, achados do exame físico dirigido e a impressão diagnóstica de gravidade. <em>Ex.: \"PA está em 90/60 mmHg, FR 32 irpm, ausculta pulmonar limpa bilateralmente, panturrilha direita empastada. Suspeito fortemente de Tromboembolismo Pulmonar agudo de alto risco.\"</em>",
+            "<strong>R — <em>Recommendation</em> (Recomendação / Ação Solicitada):</strong> Declarar claramente o que se espera que o interlocutor faça e em qual prazo. <em>Ex.: \"Preciso que o senhor venha avaliá-lo presencialmente agora à beira-leito, enquanto já instalo máscara de O2 com reservatório, punciono segundo acesso calibroso e rodo o ECG.\"</em>"
+          ]
+        ],
+        [
+          "p",
+          "<em>Nota complementar:</em> Em programas de residência médica, utiliza-se também o protocolo <strong>I-PASS</strong> (<em><strong>I</strong>llness severity, <strong>P</strong>atient summary, <strong>A</strong>ction list, <strong>S</strong>ituation awareness and contingency planning, <strong>S</strong>ynthesis by receiver</em>), que demonstrou no <em>New England Journal of Medicine</em> (Starmer et al., 2014) reduzir em <strong>30% os eventos adversos evitáveis</strong> nas passagens de plantão!</li>\n\n<h4>2. Regra do Read-Back (Releitura e Confirmação) para Ordens Verbais/Telefônicas e Resultados Críticos</h4>\n<p>Ordens médicas verbais ou telefônicas devem ser <strong>restritas exclusivamente a situações de urgência/emergência</strong> nas quais o médico está fisicamente impossibilitado de prescrever no sistema eletrônico ou papel naquele instante (sendo <strong>terminantemente proibidas ordens verbais para prescrição de quimioterápicos antineoplásicos e medicamentos de alta vigilância fora de parada cardiorrespiratória</strong>!). Quando uma ordem verbal emergencial ou um resultado crítico de laboratório/radiologia (ex.: Potássio de 7,2 mEq/L, Troponina positiva, Pneumotórax hipertensivo) é transmitido por telefone, exige-se o protocolo <strong>Write Down &amp; Read-Back</strong>:"
+        ],
+        [
+          "o",
+          [
+            "Quem recebe a informação <strong>anota por escrito</strong> (<em>Write down</em>) no prontuário o nome do medicamento, dose, via e horário (ou o valor do exame crítico).",
+            "Quem anotou <strong>lê de volta em voz alta</strong> (<em>Read-back</em>) exatamente o que escreveu para o emissor.",
+            "O médico/emissor <strong>confirma verbalmente</strong> se a informação lida está 100% exata (evitando trocas fonéticas como \"Quinze miligramas\" vs. \"Cinquenta miligramas\" ou \"Clorpromazina\" vs. \"Clorpropamida\")."
+          ]
+        ],
+        [
+          "3",
+          "3.3 Meta 3: Segurança na Prescrição, Uso e Administração de Medicamentos (Foco em MAV)"
+        ],
+        [
+          "p",
+          "Os erros de medicação representam o tipo mais comum de erro assistencial evitável. A Meta 3 concentra-se nos <strong>Medicamentos Potencialmente Perigosos (MPP) ou Medicamentos de Alta Vigilância (MAV — <em>High-Alert Medications</em>)</strong> e nos medicamentos com grafia ou som semelhantes (<strong>LASA — <em>Look-Alike, Sound-Alike</em></strong>)."
+        ],
+        [
+          "4",
+          "O que são Medicamentos de Alta Vigilância (MAV / MPP)?"
+        ],
+        [
+          "p",
+          "Segundo o <em>Institute for Safe Medication Practices</em> (ISMP Brasil) e o Ministério da Saúde, Medicamentos de Alta Vigilância são aqueles que <strong>possuem um risco aumentado de provocar danos significativos, permanentes ou morte aos pacientes quando ocorre uma falha no processo de sua utilização</strong>. Os erros com esses medicamentos não são necessariamente mais frequentes, mas suas <strong>consequências são catastróficas</strong>!"
+        ],
+        [
+          "4",
+          "Principais Classes e Exemplos de Medicamentos de Alta Vigilância (MAV) Cobrados em Provas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Eletrólitos Concentrados Injetáveis:</strong> <strong>Cloreto de Potássio (KCl 19,1% ou 10%)</strong>, Fosfato de Potássio, <strong>Cloreto de Sódio hipertônico (NaCl 20%)</strong>, Sulfato de Magnésio (&ge; 10% ou 50%) e Gluconato de Cálcio.\n    <ul>\n      <li><em>Regra de Ouro da Meta 3 (Barreira Física Obrigatória):</em> <strong>Ampolas de Cloreto de Potássio concentrado (KCl 19,1%) JAMAIS devem ser armazenadas livremente nos postos de enfermagem das enfermarias comuns ou carrinhos de medicação!</strong> Elas devem ficar segregadas na Farmácia Central (ou em armários trancados com etiqueta de alerta vermelho intenso: <em>\"DILUIR ANTES DE ADMINISTRAR — LETAL SE INJETADO PURO\"</em>), impedindo que um profissional confunda a ampola de KCl com uma ampola de Água Destilada ou Soro Fisiológico 0,9% para lavar acesso venoso!",
+            "<strong>Insulinas (Todas as apresentações — Regular, NPH, Lispro, Asparte, Glargina, Detemir, Degludeca):</strong> Erros de 10 vezes na dose por confusão entre seringa comum em mL e seringa específica graduada em Unidades Internacionais (UI), ou uso da abreviatura proibida \"U\" ou \"UI\" manuscrita (onde \"4 U\" é lido como \"40\"!).",
+            "<strong>Anticoagulantes e Trombolíticos:</strong> Heparina não fracionada EV/SC, Heparinas de baixo peso molecular (Enoxaparina), Varfarina, Anticoagulantes Orais Diretos (Dabigatrana, Rivaroxabana, Apixabana, Edoxabana), Alteplase (rt-PA) e Tenecteplase.",
+            "<strong>Agonistas Adrenérgicos e Vasoativos Endovenosos:</strong> Epinefrina (Adrenalina), Norepinefrina (Noradrenalina), Dopamina, Dobutamina, Vasopressina, Milrinona e Nitroprussiato de Sódio.",
+            "<strong>Quimioterápicos Antineoplásicos (Parenterais e Orais):</strong> Ex.: Metotrexato oral (erro fatal clássico quando o metotrexato prescrito para artrite reumatoide na dose de 1x por semana é tomado 1x por dia pelo paciente, causando aplasia medular letal!).",
+            "<strong>Opioides (Endovenosos, Transdérmicos e Orais), Sedativos Moderados, Anestésicos Gerais e Bloqueadores Neuromusculares:</strong> Morfina, Fentanil, Metadona, Midazolam, Propofol, Cetamina, Succinilcolina, Rocurônio, Pancurônio e Atracúrio (bloqueadores neuromusculares devem ter alerta vermelho em toda a embalagem: <em>\"CUIDADO: AGENTE PARALISANTE — CAUSA PARADA RESPIRATÓRIA\"</em>)."
+          ]
+        ],
+        [
+          "4",
+          "Estratégias de Barreira para Medicamentos LASA (Look-Alike, Sound-Alike) e Abreviações Proibidas"
+        ],
+        [
+          "u",
+          [
+            "<strong>Grafia em Letras Maiúsculas Destacadas (<em>Tall Man Lettering</em>):</strong> Técnica recomendada pelo ISMP/OMS para diferenciar visualmente no sistema de prescrição e nas etiquetas da farmácia os nomes de fármacos semelhantes, escrevendo em <strong>CAIXA ALTA</strong> a sílaba que os diferencia: ex.: <strong>DOP</strong>amina vs. <strong>DOBUT</strong>amina; <strong>EPINE</strong>frina vs. <strong>EFED</strong>rina; clor<strong>PROMAZINA</strong> vs. clor<strong>PROPAMIDA</strong>; <strong>HIDRA</strong>lazina vs. <strong>HIDROX</strong>izina; <strong>VIM</strong>blastina vs. <strong>VIN</strong>cristina.",
+            "<strong>Lista de Abreviaturas e Símbolos PROIBIDOS na Prescrição Médica (Protocolo MS/Anvisa):</strong>\n    <ul>\n      <li><strong>Proibido usar \"U\" ou \"UI\":</strong> Escrever sempre por extenso <strong>\"Unidades\"</strong> ou <strong>\"Unidades Internacionais\"</strong>.",
+            "<strong>Proibido usar Zero à direita após a vírgula (ex.: \"5,0 mg\"):</strong> Se a vírgula falhar na impressão, \"5,0 mg\" vira \"50 mg\" (erro de 10 vezes!). Escrever sempre <strong>\"5 mg\"</strong>.",
+            "<strong>Proibido omitir o Zero à esquerda antes da vírgula (ex.: \",5 mg\"):</strong> Escrever sempre <strong>\"0,5 mg\"</strong>.",
+            "<strong>Proibido abreviar nomes de medicamentos ou eletrólitos:</strong> Não escrever \"KCl\", \"NaCl\", \"MgSO4\" ou \"HCTZ\" sem o nome por extenso; escrever \"Cloreto de Potássio\", \"Sulfato de Magnésio\".",
+            "<strong>Proibido usar \"µg\":</strong> Confunde-se com \"mg\" (erro de 1.000 vezes!). Escrever <strong>\"mcg\"</strong> ou <strong>\"microgramas\"</strong>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Os 9 Certos da Administração Segura de Medicamentos (Enfermagem e Equipe):</strong> (1) Paciente certo; (2) Medicamento certo; (3) Via certa; (4) Hora certa; (5) Dose certa; (6) Registro certo da administração; (7) Orientação certa ao paciente; (8) Forma farmacêutica certa; e (9) Monitoramento / Resposta certa. (Acompanhados de <strong>Dupla Checagem Independente</strong> obrigatória no preparo e administração de qualquer MAV!).</li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "seis-metas-internacionais-seguranca-do-paciente-parte-2",
+      0,
+      [
+        [
+          "2",
+          "4. As 6 Metas Internacionais de Segurança do Paciente (Metas 4, 5 e 6)"
+        ],
+        [
+          "p",
+          "Dando sequência ao estudo aprofundado das Metas Internacionais de Segurança do Paciente, analisaremos agora os protocolos operacionais das Metas 4 (Cirurgia Segura), 5 (Higienização das Mãos) e 6 (Prevenção de Quedas e de Lesões por Pressão), temas de presença obrigatória em provas de Clínica Cirúrgica, Medicina Preventiva/Saúde Coletiva, Clínica Médica e Revalida."
+        ],
+        [
+          "3",
+          "4.1 Meta 4: Cirurgia Segura e a Lista de Verificação (Checklist) da OMS em 3 Tempos"
+        ],
+        [
+          "p",
+          "Lançado pela Organização Mundial da Saúde sob a liderança do cirurgião Atul Gawande (campanha global <em>\"Safe Surgery Saves Lives\" — Cirurgias Seguras Salvam Vidas</em>) e validado em estudo multicêntrico histórico publicado no <em>New England Journal of Medicine</em> (Haynes et al., 2009), o uso sistemático da <strong>Lista de Verificação de Segurança Cirúrgica (<em>Surgical Safety Checklist</em>)</strong> demonstrou reduzir a <strong>mortalidade perioperatória em quase 50% (de 1,5% para 0,8%)</strong> e as complicações cirúrgicas maiores em mais de um terço (de 11% para 7%)!"
+        ],
+        [
+          "4",
+          "Os 3 Tempos Cirúrgicos Obrigatórios do Checklist da OMS (Cobrado Literalmente nas Provas!)"
+        ],
+        [
+          "p",
+          "As bancas de Residência Médica e Revalida cobram com altíssima frequência <strong>qual item pertence a qual dos 3 momentos</strong> da Lista de Verificação de Cirurgia Segura. O checklist é conduzido por um único profissional coordenador (geralmente o circulante de sala ou enfermeiro do centro cirúrgico), que tem autoridade institucional para impedir o avanço para a etapa seguinte caso algum item crítico não tenha sido verificado:"
+        ],
+        [
+          "t",
+          [
+            "Tempo do Checklist da OMS",
+            "Momento Exato de Execução",
+            "Itens Obrigatórios Verificados nesta Etapa (Foco Absoluto em Provas!)"
+          ],
+          [
+            [
+              "<strong>1º Tempo: SIGN-IN</strong><br>(Identificação / Entrada)",
+              "<strong>ANTES da Indução Anestésica!</strong><br>(Com o paciente ainda acordado e lúcido, quando possível, na sala operatória).",
+              "1) <strong>Confirmação verbal pelo próprio paciente:</strong> Identidade (2 identificadores), local da cirurgia, procedimento a ser realizado e Termo de Consentimento Livre e Esclarecido assinado.<br>2) <strong>Demarcação do Sítio Cirúrgico (Lateralidade):</strong> Verificar se o sítio cirúrgico está devidamente demarcado na pele (com alvo/seta feito pelo cirurgião antes da entrada em sala, em órgãos pares/múltiplos níveis).<br>3) <strong>Verificação de Segurança Anestésica:</strong> Checagem completa do aparelho de anestesia, medicamentos anestésicos e funcionamento do <strong>oxímetro de pulso instalado no paciente</strong>.<br>4) <strong>Alergias conhecidas</strong> do paciente.<br>5) <strong>Avaliação de Via Aérea Difícil / Risco de Broncoaspiração</strong> (e disponibilidade de material de via aérea difícil e aspirador).<br>6) <strong>Risco de Perda Sanguínea &gt; 500 mL</strong> (ou &gt; 7 mL/kg em crianças): se sim, garantir previsão de <strong>2 acessos venosos calibrosos ou cateter central</strong> e reserva de hemocomponentes tipados/cruzados!"
+            ],
+            [
+              "<strong>2º Tempo: TIME-OUT</strong><br>(Pausa Cirúrgica / Pausa de Segurança)",
+              "<strong>ANTES da Incisão Cutânea!</strong><br>(Após a indução anestésica e posicionamento, imediatamente antes de o bisturi tocar a pele).",
+              "1) <strong>Apresentação nominal de TODOS os membros da equipe</strong> na sala pelo nome e função (cirurgiões, anestesiologista, instrumentador, enfermeiro/circulante).<br>2) <strong>Confirmação verbal em voz alta (cirurgião, anestesista e enfermagem):</strong> Nome do paciente, procedimento exato e local da incisão/lateralidade.<br>3) <strong>Antibioticoprofilaxia Cirúrgica:</strong> Foi administrada nos <strong>últimos 60 minutos</strong> antes da incisão cutânea? (Momento crítico do Time-Out!).<br>4) <strong>Eventos Críticos Previstos:</strong><br>- <em>Pelo Cirurgião:</em> Quais são as etapas críticas ou não rotineiras, duração estimada e perda sanguínea prevista?<br>- <em>Pelo Anestesiologista:</em> Há alguma preocupação específica com o paciente (comorbidades, instabilidade)?<br>- <em>Pela Enfermagem:</em> Confirmação da <strong>esterilização dos instrumentais</strong> (indicadores químicos/integradores das caixas) e disponibilidade de equipamentos/implantes.<br>5) <strong>Exames de Imagem Essenciais:</strong> Estão visíveis e disponíveis na sala operatória (negatoscópio/tela PACS)?"
+            ],
+            [
+              "<strong>3º Tempo: SIGN-OUT</strong><br>(Saída da Sala Operatória)",
+              "<strong>ANTES de o Paciente Sair da Sala de Cirurgia!</strong><br>(Durante ou imediatamente após o fechamento da pele, antes de transferir o paciente para a SRPA/UTI).",
+              "1) Confirmação verbal do nome exato do <strong>procedimento efetivamente realizado</strong> e registrado.<br>2) <strong>CONTAGEM COMPLETA E EXATA de compressas, gases, agulhas e instrumentais cirúrgicos!</strong> (Se a contagem estiver discrepante/faltando uma compressa ou agulha, o paciente <em>não sai da sala</em> e realiza-se inspeção cavitária e radiografia intraoperatória para prevenir retenção de corpo estranho / gossypiboma!).<br>3) <strong>Identificação de Peças Anatômicas / Biópsias:</strong> Verificar se o frasco da peça cirúrgica está corretamente rotulado (ler o rótulo em voz alta com o nome do paciente e descrição da peça).<br>4) Registro de qualquer problema com equipamentos que precise ser corrigido.<br>5) <strong>Revisão conjunta (cirurgião, anestesista e enfermagem) das preocupações-chave para a recuperação pós-operatória imediata</strong> e manejo na SRPA/UTI."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Resumo Mnemônico de Ouro para Provas sobre a Meta 4:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Via aérea difícil, alergia, oxímetro, risco de sangramento &gt; 500 mL e demarcação de lateralidade com paciente acordado</strong> &rarr; <strong>1º Tempo (SIGN-IN — antes da anestesia)</strong>!",
+            "<strong>Apresentação da equipe, confirmação do antibiótico profilático nos últimos 60 min, esterilização das caixas e exames de imagem na tela</strong> &rarr; <strong>2º Tempo (TIME-OUT — antes da incisão na pele)</strong>!",
+            "<strong>Contagem de compressas/agulhas/instrumentais e identificação do frasco da peça anatomopatológica</strong> &rarr; <strong>3º Tempo (SIGN-OUT — antes de o paciente sair da sala)</strong>!"
+          ]
+        ],
+        [
+          "3",
+          "4.2 Meta 5: Higienização das Mãos e os 5 Momentos da OMS para Prevenção de IRAS"
+        ],
+        [
+          "p",
+          "Desde a descoberta histórica de <strong>Ignaz Semmelweis</strong> em Viena (1847) — que reduziu a mortalidade materna por febre puerperal de 18% para menos de 2% ao instituir a lavagem das mãos dos médicos e estudantes com solução clorada entre a sala de autópsia e a maternidade —, a <strong>Higienização das Mãos</strong> permanece isoladamente como a <strong>medida simples, mais barata e mais eficaz para prevenir as Infecções Relacionadas à Assistência à Saúde (IRAS)</strong> e a disseminação de microrganismos multirresistentes."
+        ],
+        [
+          "4",
+          "Os 5 Momentos para a Higienização das Mãos (OMS / Anvisa — Ordem Exata!)"
+        ],
+        [
+          "p",
+          "A OMS estabelece <strong>2 momentos ANTES</strong> e <strong>3 momentos APÓS</strong> no cuidado ao paciente (memorize literalmente para as provas):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Momento 1 — ANTES de tocar o paciente:</strong> Ao aproximar-se do paciente (antes de apertar a mão, ajudar a se mover no leito, aferir pressão arterial, pulso ou auscultar o tórax). <em>Objetivo: Proteger o paciente contra germes carreados nas mãos do profissional vindos do ambiente hospitalar externo.</em>",
+            "<strong>Momento 2 — ANTES de realizar procedimento limpo / asséptico:</strong> Imediatamente antes de acessar um sítio crítico com risco infeccioso para o paciente (antes de calçar luvas estéreis ou de procedimento para puncionar acesso venoso, fazer curativo, aspirar secreção traqueal, administrar medicamentos endovenosos, sondagem vesical ou preparar medicação). <em>Objetivo: Proteger o paciente contra germes nocivos, inclusive os da própria microbiota cutânea do paciente que poderiam entrar na corrente sanguínea!</em>",
+            "<strong>Momento 3 — APÓS risco de exposição a fluidos corporais:</strong> Imediatamente após qualquer tarefa com risco de contato com sangue, saliva, secreções respiratórias, urina, fezes, exsudato de feridas (e <strong>imediatamente após a retirada das luvas!</strong>). <em>Objetivo: Proteger o profissional de saúde e o ambiente contra patógenos do paciente.</em>",
+            "<strong>Momento 4 — APÓS tocar o paciente:</strong> Ao afastar-se do paciente, após tê-lo tocado no exame físico ou cuidado geral. <em>Objetivo: Proteger o profissional e o ambiente de assistência à saúde.</em>",
+            "<strong>Momento 5 — APÓS tocar superfícies próximas ao paciente (ambiente do paciente):</strong> Ao sair da área do leito após tocar qualquer objeto ou mobília ao redor do paciente (grades da cama, bomba de infusão, monitor multiparamétrico, mesa de cabeceira, prontuário na beira do leito), <strong>MESMO SEM TER TOCADO NO PACIENTE!</strong> <em>Objetivo: Proteger o profissional e evitar a transmissão cruzada entre leitos vizinhos.</em>"
+          ]
+        ],
+        [
+          "4",
+          "Fricção Antisséptica com Preparação Alcoólica (Álcool Gel 70%) vs. Água e Sabonete: Quando usar cada um?"
+        ],
+        [
+          "p",
+          "Esta é uma questão clássica de Controle de Infecção Hospitalar (CCIH) e Segurança do Paciente:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Preparação Alcoólica a 70% (Gel ou Solução Glicerinada) — Duração de 20 a 30 segundos:</strong> É o <strong>método de ESCOLHA preferencial na rotina assistencial</strong> para todos os 5 momentos quando as mãos <strong>NÃO estiverem visivelmente sujas</strong>! Possui maior eficácia microbicida rápida, menor tempo de execução, melhor tolerabilidade cutânea (causa menos ressecamento que o sabão devido aos emolientes) e está disponível no ponto de assistência à beira-leito.",
+            "<strong>Água e Sabonete (Líquido Neutro ou Antisséptico) — Duração de 40 a 60 segundos:</strong> É <strong>OBRIGATÓRIO</strong> (não podendo ser substituído apenas pelo álcool gel!) nas seguintes situações críticas de prova:\n    <ol>\n      <li>Quando as mãos estiverem <strong>visivelmente sujas ou contaminadas</strong> com sangue, fluidos corporais ou matéria orgânica (o álcool sofre inativação parcial na presença de matéria proteica visível!).",
+            "Após o uso do sanitário pelo profissional.",
+            "<strong>No atendimento a pacientes com suspeita ou confirmação de diarreia infecciosa por <em>Clostridioides difficile</em> (antigo <em>Clostridium difficile</em>) ou outros patógenos formadores de ESPOROS bacterianos (ex.: <em>Bacillus anthracis</em>) e Norovírus!</strong> <em>Explicação fisiopatológica fundamental para a prova:</em> O álcool etílico ou isopropílico a 70% tem excelente ação contra bactérias vegetativas, micobactérias, fungos e vírus envelopados, mas tem <strong>ação NULA contra esporos bacterianos do Clostridioides difficile</strong>! A remoção dos esporos das mãos depende exclusivamente da <strong>ação mecânica de fricção e enxágue com água corrente e sabonete</strong>!",
+            "<strong>Adornos e Uso de Luvas:</strong> A <strong>NR-32</strong> proíbe terminantemente o uso de adornos (anéis, alianças, relógios de pulso, pulseiras) pelos profissionais de saúde nos setores assistenciais, e o uso de luvas <strong>JAMAIS substitui a higienização das mãos</strong> (deve-se higienizar as mãos antes de calçar as luvas e imediatamente após retirá-las!)."
+          ]
+        ],
+        [
+          "3",
+          "4.3 Meta 6: Prevenção de Quedas (Escala de Morse) e Prevenção de Lesão por Pressão (Escala de Braden)"
+        ],
+        [
+          "p",
+          "A Meta 6 engloba dois grandes protocolos nacionais voltados à proteção da integridade física do paciente hospitalizado ou institucionalizado:"
+        ],
+        [
+          "4",
+          "1. Prevenção de Quedas e a Escala de Quedas de Morse (Morse Fall Scale — MFS)"
+        ],
+        [
+          "p",
+          "Todo paciente deve ter seu risco de queda avaliado no momento da <strong>admissão hospitalar</strong>, <strong>diariamente</strong> e sempre que houver mudança clínica (pós-operatório, início de psicotrópicos, episódio de queda ou transferência de setor). A ferramenta validada e recomendada pelo protocolo do Ministério da Saúde para adultos hospitalizados é a <strong>Escala de Morse (MFS)</strong>, que avalia <strong>6 itens</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Histórico de quedas recentes (nos últimos 3 meses):</strong> Não (0 pts) / Sim (25 pts).",
+            "<strong>Diagnóstico secundário (&ge; 2 diagnósticos médicos no prontuário):</strong> Não (0 pts) / Sim (15 pts).",
+            "<strong>Auxílio na deambulação:</strong> Nenhum/Acamado/Auxiliado por profissional (0 pts) / Muletas, bengala ou andador (15 pts) / Apoia-se nos móveis/paredes para andar (30 pts).",
+            "<strong>Terapia endovenosa / Dispositivo venoso salinizado ou heparinizado:</strong> Não (0 pts) / Sim (20 pts).",
+            "<strong>Marcha / Transferência:</strong> Normal/Acamado/Imóvel (0 pts) / Fraca ou debilitada (10 pts) / Comprometida ou cambaleante (20 pts).",
+            "<strong>Estado mental (Autopercepção da própria capacidade funcional):</strong> Orientado quanto à própria capacidade/limitação (0 pts) / Superestima a própria capacidade ou esquece suas limitações — tenta levantar sozinho sem conseguir (15 pts)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Estratificação de Risco na Escala de Morse:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>0 a 24 pontos:</strong> Risco Baixo de Queda.",
+            "<strong>25 a 44 pontos:</strong> Risco Moderado de Queda.",
+            "<strong>&ge; 45 pontos:</strong> <strong>Risco Alto de Queda!</strong> (Exige pulseira/sinalizador visual de risco de queda, cama na posição mais baixa possível com grades elevadas e rodas travadas, campainha ao alcance das mãos, iluminação noturna, calçado antiderrapante, revisão/desprescrição de sedativos e supervisão presencial nas idas ao banheiro)."
+          ]
+        ],
+        [
+          "4",
+          "2. Prevenção de Lesão por Pressão (LPP) e a Escala de Braden"
+        ],
+        [
+          "p",
+          "As <strong>Lesões por Pressão (LPP)</strong> (anteriormente chamadas de úlceras de pressão ou escaras) são danos localizados na pele e/ou tecidos moles subjacentes, geralmente sobre uma proeminência óssea (sacro, calcâneos, trocânteres, ísquio, occipício) ou relacionados ao uso de dispositivo médico (ex.: tubo orotraqueal, máscara de VNI, sonda nasoenteral), resultantes de pressão intensa e/ou prolongada combinada com forças de cisalhamento. Cerca de 95% das LPPs são evitáveis! O instrumento padrão-ouro do protocolo do Ministério da Saúde para avaliar o risco de LPP em adultos é a <strong>Escala de Braden</strong>."
+        ],
+        [
+          "p",
+          "<strong>Os 6 Domínios da Escala de Braden (MUITO COBRADO EM PROVAS!):</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Percepção Sensorial</strong> (capacidade de sentir e reagir significativamente ao desconforto relacionado à pressão — pontuação de 1 a 4).",
+            "<strong>Umidade</strong> (nível de exposição da pele à umidade por suor, incontinência urinária/fecal ou exsudato — pontuação de 1 a 4).",
+            "<strong>Atividade</strong> (grau de atividade física: acamado, restrito à cadeira, deambula ocasionalmente ou frequentemente — pontuação de 1 a 4).",
+            "<strong>Mobilidade</strong> (capacidade de mudar e controlar a posição do próprio corpo no leito — pontuação de 1 a 4).",
+            "<strong>Nutrição</strong> (padrão usual de ingestão alimentar e proteica — pontuação de 1 a 4).",
+            "<strong>Fricção e Cisalhamento</strong> (forças mecânicas quando o paciente desliza nos lençóis ao elevar a cabeceira — único item pontuado de <strong>1 a 3</strong>!)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Atenção à Pegadinha de Prova na Escala de Braden (Pontuação Inversa à de Morse!):</strong> Na Escala de Braden, a pontuação total varia de <strong>6 a 23 pontos</strong>, e <strong>QUANTO MENOR A PONTUAÇÃO, MAIOR É O RISCO DE LESÃO POR PRESSÃO</strong>! (Enquanto na Escala de Morse de quedas quanto maior o ponto maior o risco, na Escala de Braden é o inverso: menor pontuação = pior estado do paciente = maior risco de LPP!):"
+        ],
+        [
+          "u",
+          [
+            "<strong>19 a 23 pontos:</strong> Sem risco.",
+            "<strong>15 a 18 pontos:</strong> Risco leve / baixo.",
+            "<strong>13 a 14 pontos:</strong> Risco moderado.",
+            "<strong>10 a 12 pontos:</strong> Risco alto.",
+            "<strong>&le; 9 pontos (6 a 9 pontos):</strong> <strong>Risco Muito Alto (Altíssimo Risco) de Lesão por Pressão!</strong>"
+          ]
+        ],
+        [
+          "4",
+          "Classificação Internacional em Estágios das Lesões por Pressão (NPUAP / EPUAP)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Estágio 1:</strong> <strong>Pele íntegra com eritema NÃO branqueável</strong> (hiperemia que <em>não</em> empalidece à digitopressão ou vitropressão!). <em>Conduta:</em> Alívio imediato da pressão, mudança de decúbito de 2/2h, colchão piramidal/pneumático, hidratação com ácidos graxos essenciais (AGE) / creme barreira e película transparente ou hidrocoloide extrafino de proteção (<strong>JAMAIS massagear a área hiperemiada do Estágio 1</strong>, pois a massagem rompe os capilares já isquêmicos e precipita necrose!).",
+            "<strong>Estágio 2:</strong> <strong>Perda da pele em sua espessura parcial com exposição da derme</strong> (leito da ferida viável, rosa ou vermelho, úmido, ou flictena/bolha intacta ou rompida preenchida por exsudato seroso; <em>não</em> há exposição de tecido adiposo subcutâneo nem esfacelo/necrose!).",
+            "<strong>Estágio 3:</strong> <strong>Perda da pele em sua espessura total, na qual a gordura (tecido adiposo subcutâneo) é visível</strong> na úlcera e há tecido de granulação e bordas frequentemente epíbole (enroladas). Pode haver esfacelo (amarelado) e/ou escara (necrose preta), mas <strong>NÃO há exposição de fáscia muscular, músculo, tendão, ligamento, cartilagem ou osso</strong>!",
+            "<strong>Estágio 4:</strong> <strong>Perda da pele em sua espessura total e perda tissular com EXPOSIÇÃO OU PALPAÇÃO DIRETA de fáscia, músculo, tendão, ligamento, cartilagem ou osso</strong> no fundo da úlcera (alto risco de osteomielite contígua!).",
+            "<strong>Lesão por Pressão Não Classificável:</strong> Perda da pele em espessura total na qual a base da úlcera está totalmente coberta por <strong>esfacelo espesso e/ou escara (placa necrótica escura/preta)</strong> no leito da ferida; não é possível determinar se é Estágio 3 ou Estágio 4 até que o esfacelo/escara seja desbridado! (<em>Exceção clássica: escara seca, estável, aderida e sem flutuação no calcâneo isquêmico NÃO deve ser desbridada, pois funciona como \"cobertura biológica natural\"!</em>).",
+            "<strong>Lesão por Pressão Tissular Profunda:</strong> Área localizada e persistente de descoloração <strong>vermelho-escura, marrom ou púrpura (arroxeada)</strong> que não embranquece em pele intacta, ou flictena preenchida com sangue (bolha hemorrágica) devido a dano nos tecidos moles subjacentes na interface osso-músculo."
+          ]
+        ]
+      ]
+    ],
+    [
+      "analise-causa-raiz-ishikawa-londres-disclosure",
+      0,
+      [
+        [
+          "2",
+          "5. Análise de Causa Raiz (Ishikawa, Protocolo de Londres), FMEA e Disclosure (Comunicação Aberta)"
+        ],
+        [
+          "p",
+          "Quando um Evento Adverso grave, um Evento Sentinela ou um <em>Never Event</em> ocorre em um serviço de saúde (ou quando um <em>Near Miss</em> de alto risco é interceptado), o Núcleo de Segurança do Paciente (NSP) não deve buscar \"quem culpar\", mas sim conduzir uma investigação estruturada e científica para responder a três perguntas fundamentais: <strong>(1) O que aconteceu? (2) Como aconteceu? (3) Por que aconteceu (quais condições latentes e falhas de barreira permitiram o evento) e o que faremos para impedir que volte a ocorrer?</strong>"
+        ],
+        [
+          "3",
+          "5.1 Ferramentas Reativas (Pós-Incidente) vs. Ferramentas Proativas (Pré-Incidente)"
+        ],
+        [
+          "p",
+          "Em provas de gestão em saúde, administração hospitalar e saúde coletiva, diferencia-se a gestão de risco em duas abordagens complementares:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Análise de Causa Raiz (ACR — <em>Root Cause Analysis</em>):</strong> Abordagem <strong>REATIVA / RETROSPECTIVA</strong> realizada <em>após</em> a ocorrência de um evento adverso grave ou <em>near miss</em>, utilizando ferramentas como os <strong>5 Porquês (<em>5 Whys</em>)</strong>, o <strong>Diagrama de Ishikawa (Espinha de Peixe)</strong> e o <strong>Protocolo de Londres</strong>.",
+            "<strong>FMEA / HFMEA (<em>Healthcare Failure Mode and Effects Analysis</em> — Análise dos Modos de Falha e seus Efeitos):</strong> Abordagem <strong>PROATIVA / PROSPECTIVA</strong> realizada <em>antes</em> que o erro aconteça (ex.: ao implantar um novo centro de oncologia ou um novo sistema de bombas de infusão), mapeando cada etapa do processo para prever onde ele poderia falhar (Modo de Falha), qual seria a gravidade do dano (Severidade), qual a frequência provável (Ocorrência) e a capacidade de detecção prévia (Detecção), calculando o <strong>Índice de Prioridade de Risco ($RPN = Severidade \times Ocorrência \times Detecção$)</strong> para blindar o processo preventivamente."
+          ]
+        ],
+        [
+          "3",
+          "5.2 Diagrama de Ishikawa (Diagrama de Causa e Efeito / Espinha de Peixe — 6M)"
+        ],
+        [
+          "p",
+          "Criado pelo engenheiro japonês Kaoru Ishikawa na década de 1940, o <strong>Diagrama de Espinha de Peixe</strong> coloca na \"cabeça do peixe\" (à direita) o <strong>Problema / Evento Adverso ocorrido</strong>, e nas \"espinhas dorsais\" (ramos convergentes) categoriza todas as causas contribuintes identificadas no <em>brainstorming</em> da equipe, classicamente divididas nos <strong>6 Ms</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Método (Processos e Protocolos):</strong> Ausência de protocolo de dupla checagem, fluxo confuso de prescrição verbal, falta de padronização de diluição.",
+            "<strong>Máquina (Equipamentos e Tecnologia):</strong> Bomba de infusão descalibrada, monitor com alarme inoperante, sistema de prontuário eletrônico travando ou sem alerta de interação.",
+            "<strong>Material (Insumos e Medicamentos):</strong> Ampolas LASA (<em>Look-Alike</em>) de KCl e água destilada idênticas compradas pelo setor de suprimentos, cateteres de má qualidade.",
+            "<strong>Mão de Obra (Fatores Humanos e Pessoas):</strong> Fadiga extrema por dobra de plantão de 36 horas, falta de treinamento do profissional recém-contratado, estresse, falha de comunicação na passagem de plantão.",
+            "<strong>Meio Ambiente (Ambiente Físico de Trabalho):</strong> Iluminação precária no posto de medicação noturno, ruído excessivo, superlotação de macas no corredor da emergência, gavetas desorganizadas.",
+            "<strong>Medida (Indicadores e Supervisão):</strong> Ausência de auditoria de adesão ao checklist cirúrgico, falta de aferição de escala de Braden/Morse na admissão."
+          ]
+        ],
+        [
+          "3",
+          "5.3 O Protocolo de Londres (Charles Vincent, Sally Taylor-Adams — Imperial College London)"
+        ],
+        [
+          "p",
+          "Enquanto o Diagrama de Ishikawa nasceu na indústria automobilística/manufatureira (Toyota), o <strong>Protocolo de Londres</strong> foi desenvolvido especificamente para a área da saúde a partir do Modelo do Queijo Suíço de James Reason, sendo a <strong>metodologia oficial recomendada pela Anvisa e pelo Ministério da Saúde para a investigação de Eventos Adversos graves e óbitos no Brasil</strong>!"
+        ],
+        [
+          "p",
+          "O Protocolo de Londres substitui o termo acusatório \"Erro Humano\" pelo conceito técnico de <strong>\"Ações Inseguras na Entrega do Cuidado\"</strong> (atos ou omissões no atendimento) e investiga sistematicamente a <strong>Hierarquia dos 7 Fatores Contribuintes (Condições Latentes)</strong> que influenciam a prática clínica:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Fatores do Paciente:</strong> Complexidade e gravidade clínica da patologia, comorbidades, barreiras de linguagem/idioma, alterações cognitivas ou de personalidade que dificultam a comunicação.",
+            "<strong>Fatores da Tarefa e Tecnologia:</strong> Desenho da tarefa, disponibilidade e clareza de protocolos clínicos, disponibilidade e confiabilidade de exames complementares e auxílio à tomada de decisão.",
+            "<strong>Fatores Individuais (do Profissional):</strong> Conhecimento técnico, habilidades, experiência prévia, fadiga física/mental e saúde do trabalhador.",
+            "<strong>Fatores da Equipe (Time):</strong> Comunicação verbal e escrita (passagem de plantão), qualidade da supervisão aos residentes/recém-formados, estrutura de liderança e disponibilidade de ajuda entre colegas.",
+            "<strong>Fatores do Ambiente de Trabalho:</strong> Dimensionamento de pessoal (relação pacientes/enfermeiro), carga de trabalho, mistura de competências (<em>skill mix</em>), planta física, iluminação, ruído e manutenção de equipamentos.",
+            "<strong>Fatores Organizacionais e de Gerência (Alta Gestão):</strong> Recursos financeiros, cultura de segurança da diretoria, políticas de prioridades e estrutura gerencial.",
+            "<strong>Fatores do Contexto Institucional Externo:</strong> Contexto econômico, regulatório e políticas do Ministério da Saúde / Secretarias de Saúde."
+          ]
+        ],
+        [
+          "4",
+          "A Hierarquia da Força das Ações Corretivas na Análise de Causa Raiz (Muito Cobrado!)"
+        ],
+        [
+          "p",
+          "Ao concluir uma Análise de Causa Raiz pelo Protocolo de Londres, o NSP deve propor um Plano de Ação (5W2H). Contudo, nem toda ação preventiva tem a mesma eficácia (Hierarquia de Efetividade das Barreiras do <em>Institute for Safe Medication Practices</em> e <em>VA National Center for Patient Safety</em>):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Ações FRACAS (Dependem 100% da memória e vigilância humana):</strong> Emitir memorando pedindo \"mais atenção à equipe\", colocar cartaz na parede, dar advertência ou realizar apenas uma palestra pontual de retreinamento.",
+            "<strong>Ações INTERMEDIÁRIAS (Reduzem a probabilidade do erro, mas ainda permitem desvio):</strong> Implantar checklists, dupla checagem independente por dois profissionais, uso de letras maiúsculas (<em>Tall Man Lettering</em>), padronização de concentrações de diluição e alertas sonoros/visuais no computador.",
+            "<strong>Ações FORTES (Barreiras Físicas e Funções Forçadas de Engenharia — <em>Forcing Functions / Poka-Yoke</em>):</strong> <strong>Redesenhos físicos ou tecnológicos que tornam fisicamente IMPOSSÍVEL cometer o erro!</strong> Exemplos clássicos:\n    <ol>\n      <li><strong>Retirada física total das ampolas de Cloreto de Potássio 19,1%</strong> de todas as enfermarias do hospital (substituindo por bolsas de soro já diluídas prontas para uso vindas da farmácia!).",
+            "<strong>Conectores enterais exclusivos incompatíveis com conexões venosas (Padrão ISO 80369-3 / Conector ENFit):</strong> Seringas e equipos de dieta enteral cuja ponta possui calibre e rosca fisicamente incompatíveis com o canhão <em>Luer-Lock</em> de um cateter venoso central, tornando mecanicamente impossível injetar leite/dieta enteral na veia do paciente!",
+            "<strong>Sistema de pinos indexados e roscas específicas nos cilindros e fluxômetros de gases medicinais:</strong> Impede fisicamente que uma mangueira de Óxido Nitroso ou Ar Comprimido seja encaixada na saída de Oxigênio da parede!",
+            "<strong>Descontinuação da Vincristina em seringa (administrando exclusivamente diluída em minibag de soro de 50 mL):</strong> Impede que a vincristina (quimioterápico exclusivamente endovenoso, mas letal se injetado no líquor!) seja confundida com metotrexato/citarabina e injetada por via intratecal!"
+          ]
+        ],
+        [
+          "3",
+          "5.4 Disclosure: Comunicação Aberta e Honesta de Eventos Adversos ao Paciente e à Família"
+        ],
+        [
+          "p",
+          "Quando um evento adverso com dano ocorre, qual deve ser a postura ética e institucional do médico e do hospital perante o paciente e seus familiares? No passado punitivo, imperava a cultura do <em>\"Negar e Defender\" (Deny and Defend)</em> — ocultar o erro da família por medo de processos judiciais. Hoje, o Código de Ética Médica, a OMS e o PNSP preconizam o <strong>Disclosure (Abertura de Informação / Comunicação Aberta e Honesta sobre Eventos Adversos)</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>O que é o Disclosure:</strong> Processo transparente, empático, oportuno e estruturado pelo qual a equipe de saúde e a instituição comunicam abertamente ao paciente e/ou à sua família a ocorrência de um incidente que resultou (ou pode resultar) em dano durante o cuidado assistencial.",
+            "<strong>Os 5 Elementos Essenciais de um Processo de Disclosure Bem Conduzido:</strong>\n    <ol>\n      <li><strong>Prontidão Temporal (Primeira Conversa em até 24 horas):</strong> Assim que o paciente é estabilizado clinicamente para mitigar o dano imediato, a equipe (liderada pelo médico assistente/coordenador acompanhado de membro do NSP/comunicação, em sala privativa e acolhedora) realiza o primeiro encontro com o paciente/família em até 24 horas, relatando os <strong>fatos objetivos já conhecidos</strong> (sem especular sobre causas ainda não investigadas e sem jogar culpa em colegas ausentes).",
+            "<strong>Pedido Genuíno de Desculpas e Expressão de Pesar/Empatia (<em>Apology</em>):</strong> Expressar sincero lamento pelo sofrimento causado (ex.: <em>\"Sentimos muito pelo que aconteceu e pelo sofrimento que o senhor está passando; assumimos a responsabilidade de cuidar de todas as consequências e investigar profundamente o ocorrido\"</em>). Estudos internacionais (como o programa <em>Communication and Optimal Resolution — CANDOR</em> da Universidade de Michigan) comprovam que <strong>a comunicação aberta e o pedido honesto de desculpas REDUZEM drasticamente a taxa de processos judiciais por erro médico e os custos de litigância</strong>, pois a maioria das famílias processa o hospital quando percebe mentira, acobertamento, arrogância ou abandono!",
+            "<strong>Plano Clínico de Mitigação e Reparação:</strong> Explicar detalhadamente quais tratamentos, exames ou cirurgias estão sendo feitos imediatamente para reverter ou minimizar o dano físico ao paciente (sem cobrança adicional de custos decorrentes do erro).",
+            "<strong>Compromisso com a Investigação (Análise de Causa Raiz) e Retorno Futuro:</strong> Informar à família que o Núcleo de Segurança do Paciente abriu uma investigação rigorosa (Protocolo de Londres) e agendar reuniões subsequentes para compartilhar as conclusões assim que a análise for concluída.",
+            "<strong>Explicação das Mudanças Sistêmicas Implementadas:</strong> Mostrar à família quais barreiras práticas o hospital alterou para garantir que <em>nenhum outro paciente passe pelo mesmo sofrimento no futuro</em> (o que confere sentido ético à dor da família), oferecendo suporte psicológico contínuo tanto à família (Primeira Vítima) quanto ao profissional envolvido (Segunda Vítima)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-resolvidos-aula-222",
+      0,
+      [
+        [
+          "2",
+          "6. Casos Clínicos Resolvidos e Raciocínio em Segurança do Paciente"
+        ],
+        [
+          "p",
+          "A seguir, apresentamos 4 casos clínicos detalhados que integram a Taxonomia da OMS (Near Miss, Incidente sem Dano, Evento Adverso e Evento Sentinela), os Prazos de Notificação da RDC Anvisa nº 36/2013, o Modelo do Queijo Suíço de James Reason, o Checklist de Cirurgia Segura em 3 Tempos, os 5 Momentos de Higienização das Mãos, as Escalas de Morse e Braden, o Protocolo de Londres e o Disclosure."
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Taxonomia da OMS, Medicamento de Alta Vigilância (KCl 19,1%), Protocolo de Londres e Prazos do NSP"
+        ],
+        [
+          "p",
+          "<strong>Apresentação do Caso:</strong> Em uma unidade de internação clínica de um hospital geral, durante o plantão noturno de domingo, três situações distintas ocorrem na Ala B (que contava com apenas 1 técnico de enfermagem para 14 pacientes internados devido ao absenteísmo de dois colegas não substituídos pela chefia, iluminação precária no posto de medicação e armazenamento de ampolas de Cloreto de Potássio 19,1% na mesma gaveta plástica das ampolas de Soro Fisiológico 0,9% de 10 mL, ambas fabricadas em plástico transparente com letras azuis idênticas):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Situação 1 (Leito 1):</strong> O médico prescreve Cefepima 2 g EV para o Sr. José da Silva (leito 1A), que possui alergia grave documentada a cefalosporinas (anafilaxia prévia). Antes de conectar o equipo no paciente, a enfermeira do setor lê a pulseira vermelha de alergia no punho do Sr. José e suspende a infusão na bancada.",
+            "<strong>Situação 2 (Leito 2):</strong> O técnico de enfermagem administra por engano Paracetamol 750 mg VO para o paciente do leito 2B (que não tinha febre nem dor, pois o comprimido era destinado ao leito 2A). O paciente do leito 2B tem função hepática normal, não tem alergia e evolui totalmente assintomático e sem alterações laboratoriais.",
+            "<strong>Situação 3 (Leito 3):</strong> Ao final do plantão de 24 horas, exausto, o técnico vai lavar o cateter venoso central da Sra. Marta (62 anos, internada para controle de celulite em membro inferior) com o que acreditava ser uma ampola de 10 mL de Soro Fisiológico 0,9%. Na verdade, ele aspirou uma ampola de 10 mL de <strong>Cloreto de Potássio (KCl) a 19,1% puro</strong> e injetou em <em>bolus</em> no cateter central. A paciente desenvolve imediatamente fibrilação ventricular/assistolia refratária às manobras de ressuscitação cardiopulmonar e evolui a óbito às 05h30 da manhã. Na manhã seguinte, o diretor administrativo propõe demitir o técnico por justa causa, arquivar o caso internamente sem notificar a Anvisa e informar à família que a paciente teve um \"infarto fulminante natural\"."
+          ]
+        ],
+        [
+          "4",
+          "Análise Técnica Passo a Passo (Taxonomia, Prazos Legais, Queijo Suíço e Disclosure):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Classificação Exata na Taxonomia da OMS (Portaria MS nº 529/2013):</strong>\n    <ul>\n      <li><strong>Situação 1:</strong> O erro de prescrição foi interceptado pela barreira de conferência da pulseira <em>antes</em> de atingir o paciente = <strong>Near Miss (Quase-Erro / Incidente que não atingiu o paciente)</strong>.",
+            "<strong>Situação 2:</strong> O medicamento errado foi efetivamente ingerido pelo paciente (atingiu o paciente!), mas não causou qualquer lesão ou efeito deletério = <strong>Incidente Sem Dano</strong>.",
+            "<strong>Situação 3:</strong> O erro atingiu a paciente e causou óbito evitável por administração endovenosa concentrada de eletrólito de alta vigilância = <strong>Evento Adverso Grave / Evento Sentinela / Never Event</strong>!",
+            "<strong>Prazos Legais de Notificação à Anvisa (RDC nº 36/2013):</strong>\n    <ul>\n      <li>O diretor administrativo cometeria infração sanitária e ética gravíssima ao ocultar o óbito! Pela RDC Anvisa nº 36/2013, enquanto os incidentes e eventos adversos não fatais são notificados pelo Núcleo de Segurança do Paciente (NSP) no sistema NOTIVISA <strong>mensalmente (até o 15º dia útil do mês subsequente)</strong>, todo <strong>Evento Adverso que evolui para ÓBITO deve ser notificado obrigatoriamente em ATÉ 72 HORAS a partir do ocorrido</strong>!",
+            "<strong>Análise pelo Modelo do Queijo Suíço de James Reason e Protocolo de Londres:</strong>\n    <ul>\n      <li><strong>Falha Ativa (Ponta Afiada / <em>Sharp End</em>):</strong> Deslize involuntário de execução do técnico de enfermagem ao aspirar a ampola de KCl sem ler o rótulo e sem dupla checagem.",
+            "<strong>Condições Latentes / Fatores Contribuintes do Sistema (Ponta Cega / <em>Blunt End</em>):</strong> (1) <em>Fator de Material/Organizacional:</em> Presença livre de um Medicamento de Alta Vigilância letal (KCl 19,1%) na gaveta da enfermaria comum, sem segregação física e em ampola LASA (<em>Look-Alike</em>) idêntica à de SF 0,9%; (2) <em>Fator do Ambiente de Trabalho:</em> Subdimensionamento crítico de pessoal (1 técnico para 14 pacientes) e iluminação precária; (3) <em>Fator Individual:</em> Fadiga aguda por jornada de 24 horas.",
+            "<strong>Ação Corretiva de Força Máxima (Barreira Física / <em>Forcing Function</em>):</strong> Não basta demitir o técnico (Cultura Punitiva) ou dar palestra; deve-se <strong>retirar imediatamente todas as ampolas de KCl 19,1% de todas as enfermarias do hospital</strong>, restringindo o KCl concentrado exclusivamente à Farmácia Central para dispensação já diluída em bolsas prontas para infusão em bomba!",
+            "<strong>Conduta Ética perante a Família e o Profissional:</strong> Realizar o <strong>Disclosure</strong> honesto e empático à família da Sra. Marta (jamais mentir na Declaração de Óbito ou prontuário!) e oferecer suporte psicológico ao técnico de enfermagem (<strong>Segunda Vítima</strong>) dentro dos preceitos da <strong>Cultura Justa</strong>."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Meta 4 — Cirurgia Segura e Checklist da OMS em 3 Tempos (Sign-In, Time-Out e Sign-Out)"
+        ],
+        [
+          "p",
+          "<strong>Apresentação do Caso:</strong> Paciente masculino de 58 anos, portador de carcinoma renal de células claras de 6 cm no rim direito, dá entrada no Centro Cirúrgico para realização de Nefrectomia Radical Direita videolaparoscópica. O paciente é obeso (IMC 38 kg/m²), possui pescoço curto e classificação de Mallampati IV, além de alergia prévia a látex. Durante o procedimento, há sangramento venoso importante da veia renal (~800 mL), controlado com clipagem, convertendo-se a cirurgia para via aberta subcostal. Ao final do fechamento da aponeurose, a instrumentadora avisa em voz alta que foram abertas 30 compressas grandes, mas apenas 29 compressas foram recuperadas na contagem final. O cirurgião-chefe, apressado para iniciar a próxima cirurgia eletiva, afirma: <em>\"Tenho certeza absoluta de que tirei todas as compressas da cavidade; pode fechar a pele e encaminhar o paciente para a sala de recuperação pós-anestésica\"</em>."
+        ],
+        [
+          "4",
+          "Análise Clínica e Aplicação Rigorosa do Protocolo de Cirurgia Segura da OMS:"
+        ],
+        [
+          "o",
+          [
+            "<strong>O que deveria ter sido garantido no 1º Tempo — SIGN-IN (ANTES da Indução Anestésica):</strong>\n    <ul>\n      <li>Com o paciente ainda acordado: confirmação verbal de sua identidade, do procedimento (nefrectomia) e da <strong>lateralidade (rim DIREITO)</strong>, conferindo se a pele do flanco direito estava devidamente <strong>demarcada pelo cirurgião</strong> antes da entrada na sala.",
+            "Conferência do alerta de <strong>alergia ao látex</strong> (garantindo sala livre de látex / luvas nitrílicas ou poliisopreno).",
+            "Conferência da <strong>Via Aérea Difícil (Mallampati IV / obeso)</strong>: verificação obrigatória da presença de videolaringoscópio/bougie/máscara laríngea e auxílio anestésico antes de induzir o bloqueio neuromuscular.",
+            "Conferência do <strong>Risco de Perda Sanguínea &gt; 500 mL</strong> (nefrectomia radical oncológica): garantia obrigatória de <strong>2 acessos venosos periféricos calibrosos (ou acesso central)</strong> e confirmação de reserva de concentrado de hemácias tipado no banco de sangue!",
+            "<strong>O que deveria ter sido garantido no 2º Tempo — TIME-OUT (ANTES da Incisão Cutânea):</strong>\n    <ul>\n      <li>Pausa de toda a equipe com apresentação nominal de cada membro, confirmação verbal do lado direito, verificação de que a <strong>tomografia computadorizada de abdome estava visível na tela da sala</strong> (para evitar nefrectomia do lado errado!) e confirmação de que a <strong>antibioticoprofilaxia cirúrgica (Cefazolina) foi infundida nos últimos 60 minutos antes da incisão</strong>.",
+            "<strong>Conduta Obrigatória no 3º Tempo — SIGN-OUT (Discrepância na Contagem de Compressas):</strong>\n    <ul>\n      <li>O cirurgião <strong>NÃO pode</strong> ignorar a discrepância da contagem nem retirar o paciente da sala operatória! A retenção não intencional de corpo estranho (compressa têxtil / <em>gossypiboma</em> ou <em>textiloma</em>) dentro da cavidade abdominal é um <strong>Never Event clássico</strong>!",
+            "<strong>Conduta Padrão-Ouro Imediata no Sign-Out:</strong> (1) Interromper o fechamento cutâneo e impedir a saída do paciente da sala; (2) Realizar recontagem completa no chão, lixeiras, hampers e mesa cirúrgica; (3) Realizar exploração manual e visual meticulosa da cavidade abdominal/retroperitoneal; e (4) Caso a 30ª compressa ainda não seja localizada (ou mesmo para documentar ausência na cavidade), <strong>realizar obrigatoriamente uma Radiografia de Abdome Intraoperatória na própria mesa cirúrgica</strong> (visto que todas as compressas cirúrgicas possuem filamento radiopaco!) antes de despertar e retirar o paciente da sala!"
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Meta 5 (Higienização das Mãos e Clostridioides difficile) e Meta 2 (SBAR e Read-Back)"
+        ],
+        [
+          "p",
+          "<strong>Apresentação do Caso:</strong> Em uma Unidade de Terapia Intensiva (UTI), o médico plantonista examina o paciente do Box 4, um idoso de 77 anos internado há 15 dias em uso de meropenem e vancomicina que iniciou quadro de diarreia líquida fétida volumosa (8 episódios/dia), febre (38,5°C), leucocitose de 24.000/mm³ e pesquisa de toxinas A e B nas fezes positiva para <strong><em>Clostridioides difficile</em></strong>. Ao terminar a palpação abdominal do paciente (usando luvas de procedimento e avental de precaução de contato), o médico retira as luvas, aplica rapidamente <strong>álcool em gel a 70% nas mãos por 15 segundos</strong> (sem lavar na pia com água e sabonete) e dirige-se imediatamente ao Box 5 para examinar um paciente imunossuprimido neutropênico. Poucos minutos depois, o laboratório liga para a enfermeira do Box 5 informando um resultado crítico de potássio sérico de 2,1 mEq/L, e o médico, que já havia descido para o refeitório, ordena por telefone: <em>\"Faça reposição endovenosa de cloreto de potássio agora\"</em>, desligando o telefone sem que a enfermeira anotasse ou repetisse a prescrição."
+        ],
+        [
+          "4",
+          "Análise Crítica das Duas Violacões de Protocolos de Segurança (Metas 5 e 2):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Erro Técnico Grave na Meta 5 (Higienização das Mãos no <em>Clostridioides difficile</em>):</strong>\n    <ul>\n      <li>Embora a fricção das mãos com preparação alcoólica a 70% (por 20 a 30 segundos) seja o método preferencial padrão para os 5 Momentos da OMS quando as mãos estão visivelmente limpas, o <strong><em>Clostridioides difficile</em> é um bacilo Gram-positivo anaeróbio formador de ESPOROS</strong>!",
+            "Os <strong>esporos bacterianos são intrinsecamente resistentes ao álcool etílico e isopropílico</strong>! Ao usar apenas álcool gel após atender o Box 4, o médico manteve os esporos viáveis de <em>C. difficile</em> em suas mãos e os transmitiu diretamente para o paciente neutropênico do Box 5!",
+            "<strong>Conduta Correta Obrigatória:</strong> No atendimento a pacientes com infecção suspeita ou confirmada por <em>Clostridioides difficile</em> (em Precaução de Contato até 48h após cessar a diarreia), após a retirada das luvas (Momentos 3 e 4), é <strong>obrigatória a lavagem das mãos com ÁGUA CORRENTE E SABONETE (líquido ou clorexidina degermante) por 40 a 60 segundos</strong>, pois o atrito mecânico seguido de enxágue em água corrente é o único meio capaz de remover fisicamente os esporos da pele! (Nota adicional: a desinfecção das superfícies do Box 4 também não pode ser feita com álcool 70%, exigindo agentes esporicidas à base de <strong>cloro / hipoclorito de sódio</strong> ou peróxido de hidrogênio acelerado!).",
+            "<strong>Erro Técnico Grave na Meta 2 (Comunicação de Resultado Crítico e Ordem Telefônica sem Read-Back):</strong>\n    <ul>\n      <li>A ordem telefônica genérica (\"faça reposição de KCl\") sem especificação de dose, diluição e velocidade de infusão em bomba, somada à ausência de <strong>Write Down &amp; Read-Back (anotar no prontuário e reler em voz alta para confirmação do médico)</strong>, viola frontalmente a Meta 2 e a Meta 3, criando o cenário perfeito para uma infusão letal de potássio!"
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Meta 6 — Avaliação de Risco de Quedas (Morse) e de Lesão por Pressão (Braden)"
+        ],
+        [
+          "p",
+          "<strong>Apresentação do Caso:</strong> Dois pacientes são admitidos na enfermaria geriátrica de um hospital universitário:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Paciente A (Sr. Geraldo, 79 anos):</strong> Internado por infecção do trato urinário e descompensação de diabetes mellitus. Apresenta histórico de duas quedas em casa nos últimos 2 meses (25 pts), possui 4 diagnósticos médicos ativos (15 pts), caminha pela enfermaria apoiando-se nas paredes e mesas porque recusou usar a bengala (30 pts), está com acesso venoso periférico salinizado no antebraço (20 pts), marcha cambaleante e fraca (20 pts) e apresenta confusão mental leve noturna, esquecendo suas limitações e tentando levantar sozinho da cama sem chamar a enfermagem (15 pts).",
+            "<strong>Paciente B (Dona Carmem, 85 anos):</strong> Internada após AVC hemorrágico talâmico extenso. Encontra-se em coma superficial (Percepção Sensorial = 1 ponto), constantemente úmida por incontinência urinária e diarreia por dieta enteral (Umidade = 1 ponto), totalmente restrita ao leito/acamada (Atividade = 1 ponto), completamente imóvel sem fazer pequenas mudanças de posição (Mobilidade = 1 ponto), com ingesta nutricional precária nos últimos dias por intolerância gástrica (Nutrição = 2 pontos) e espasticidade que exige ser erguida nos lençóis a cada mobilização (Fricção e Cisalhamento = 1 ponto). Na inspeção da região sacral de Dona Carmem, observa-se uma área circular de 4 cm de <strong>pele íntegra, porém com eritema vermelho-vivo persistente que NÃO embranquece (não empalidece) após 5 segundos de digitopressão com lâmina de vidro</strong>. Um estagiário sugere massagear vigorosamente a região sacral vermelha com óleo hidratante a cada 4 horas para \"ativar a circulação local\"."
+          ]
+        ],
+        [
+          "4",
+          "Análise Clínica, Cálculo dos Escores e Conduta Preventiva Baseada em Evidências:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Avaliação do Paciente A pela Escala de Quedas de Morse (MFS):</strong>\n    <ul>\n      <li>Somatório dos 6 itens de Morse: Histórico de queda (25) + Diagnóstico secundário (15) + Apoio nos móveis (30) + Acesso venoso (20) + Marcha comprometida (20) + Superestima capacidade/esquece limitações (15) = <strong>125 pontos (&ge; 45 pontos = ALTÍSSIMO RISCO DE QUEDA!)</strong>.",
+            "<strong>Conduta Preventiva Imediata:</strong> Identificar com pulseira/placa de Alto Risco de Queda, alocar em leito próximo ao posto de enfermagem, manter cama na posição mais baixa com rodas travadas e grades elevadas, fornecer calçado fechado com solado antiderrapante, manter acompanhante familiar em tempo integral, revisar medicamentos sedativos/hipotensores e supervisionar todas as transferências e idas ao banheiro.",
+            "<strong>Avaliação da Paciente B pela Escala de Braden e Manejo da Lesão por Pressão Estágio 1:</strong>\n    <ul>\n      <li>Somatório dos 6 itens de Braden: Percepção sensorial (1) + Umidade (1) + Atividade (1) + Mobilidade (1) + Nutrição (2) + Fricção/Cisalhamento (1) = <strong>7 pontos (na faixa de 6 a 9 pontos = RISCO MUITO ALTO DE LESÃO POR PRESSÃO!)</strong>. Lembre-se sempre: na Escala de Braden, <strong>quanto MENOR a pontuação, MAIOR o risco</strong>!",
+            "<strong>Estadiamento da Lesão Sacral (NPUAP/EPUAP):</strong> Pele intacta com eritema que <strong>não embranquece</strong> à digitopressão = <strong>Lesão por Pressão Estágio 1</strong>!",
+            "<strong>Correção do Erro do Estagiário (Proibição de Massagem!):</strong> A conduta sugerida pelo estagiário (massagear a área hiperemiada do Estágio 1) é <strong>TERMINANTEMENTE PROIBIDA</strong> pelo Protocolo Nacional de Prevenção de Lesão por Pressão! A pele com eritema não branqueável já sofreu dano endotelial microvascular isquêmico; a fricção mecânica da massagem rompe esses capilares fragilizados e cisalha o tecido subcutâneo, acelerando a evolução para necrose (Estágios 2 e 3)!",
+            "<strong>Conduta Padrão-Ouro para Dona Carmem:</strong> (1) Alívio imediato da pressão sacral com <strong>mudança programada de decúbito a cada 2 horas</strong> (usando relógio de reposicionamento e coxins de espuma a 30° de inclinação lateral para não apoiar diretamente sobre o trocânter femoral!); (2) Instalar superfície de suporte dinâmica (<strong>colchão pneumático de pressão alternada</strong> ou espuma viscoelástica de alta densidade) e manter os <strong>calcâneos flutuantes</strong> (apoiando as panturrilhas em travesseiro longitudinal); (3) Manter a cabeceira da cama no menor ângulo seguro (idealmente &le; 30°, salvo no momento da infusão da dieta enteral para prevenir broncoaspiração) e usar lençol móvel (traçado) para erguer a paciente sem arrastá-la no colchão; (4) Controle rigoroso da umidade com limpeza suave, creme barreira de óxido de zinco/dimeticona e aplicação de cobertura protetora de espuma multicamadas de silicone ou película de poliuretano/hidrocoloide extrafino sobre a região sacral Estágio 1."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-residencia-revalida-aula-222",
+      0,
+      [
+        [
+          "2",
+          "7. Questões Comentadas de Provas de Residência Médica, Revalida e ENAMED"
+        ],
+        [
+          "p",
+          "Resolva a seguir 8 questões inéditas elaboradas no rigoroso padrão das bancas USP, UNICAMP, ENARE, SUS-SP, INEP/Revalida e ENAMED, cobrindo todo o conteúdo de Segurança do Paciente e Prevenção de Eventos Adversos."
+        ],
+        [
+          "4",
+          "Questão 1 — Taxonomia Internacional da OMS e PNSP (Padrão ENARE / INEP Revalida)"
+        ],
+        [
+          "p",
+          "Durante a reunião mensal do Núcleo de Segurança do Paciente (NSP) de um hospital terciário, são analisadas três notificações registradas pela equipe multiprofissional na última semana:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Notificação I:</strong> Um médico residente prescreveu Enoxaparina 80 mg SC de 12/12h (dose plena) para um paciente idoso com ClCr de 18 mL/min e peso de 48 kg. Antes que o medicamento saísse da farmácia hospitalar, a farmacêutica clínica identificou a sobredose na triagem eletrônica, entrou em contato com o residente e a prescrição foi corrigida antes de chegar à enfermaria.",
+            "<strong>Notificação II:</strong> Um técnico de enfermagem administrou, por troca de leitos entre pacientes homônimos, 1 comprimido de Losartana 50 mg ao paciente do leito 12B (que era normotenso e internado para herniorrafia inguinal eletiva). O paciente foi monitorizado por 24 horas, manteve pressão arterial de 118/76 mmHg, não apresentou tontura nem qualquer sintoma ou alteração laboratorial, recebendo alta no dia seguinte sem intercorrências.",
+            "<strong>Notificação III:</strong> Uma paciente diabética recebeu infusão endovenosa acidental de 50 UI de Insulina Regular (em vez de 5 UI prescritas), evoluindo com crise convulsiva hipoglicêmica (glicemia capilar de 22 mg/dL), broncoaspiração e necessidade de intubação orotraqueal e transferência para a UTI."
+          ]
+        ],
+        [
+          "p",
+          "De acordo com a Classificação Internacional para a Segurança do Paciente da OMS, adotada pela Portaria GM/MS nº 529/2013 e pela RDC Anvisa nº 36/2013, as Notificações I, II e III são classificadas, respectivamente, como:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Circunstância notificável; Near miss; Incidente sem dano.<br>\n  <strong>B)</strong> Near miss (quase-erro); Incidente sem dano; Evento adverso.<br>\n  <strong>C)</strong> Incidente sem dano; Near miss; Reação adversa inevitável a medicamento.<br>\n  <strong>D)</strong> Near miss; Evento adverso leve; Circunstância notificável.<br>\n  <strong>E)</strong> Evento adverso evitável; Evento adverso sem dano; Evento sentinela inespecífico."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> Na <strong>Notificação I</strong>, o erro ocorreu na prescrição, mas foi interceptado pela barreira da farmácia clínica <em>antes de atingir o paciente</em>, definindo exatamente um <strong>Near Miss (Quase-Erro / Incidente que não atingiu o paciente)</strong>. Na <strong>Notificação II</strong>, o medicamento errado foi efetivamente ingerido pelo paciente (portanto, <em>atingiu o paciente!</em>), mas não provocou qualquer lesão ou alteração clínica/fisiológica, configurando um <strong>Incidente Sem Dano</strong>. Na <strong>Notificação III</strong>, o erro de medicação atingiu a paciente e provocou dano grave (convulsão hipoglicêmica, broncoaspiração e internação em UTI), definindo um <strong>Evento Adverso</strong> (todo incidente que resulta em dano ao paciente!).",
+            "<strong>Refutação dos distratores:</strong> A alternativa A confunde <em>Near Miss</em> com <em>Circunstância Notificável</em> (na circunstância notificável nenhum incidente chegou sequer a se iniciar, há apenas potencial de risco, como um desfibrilador quebrado) e chama a Notificação II de <em>Near Miss</em> (erro clássico: se o comprimido foi engolido pelo paciente, já atingiu o paciente, deixando de ser <em>Near Miss</em> para ser <em>Incidente sem Dano</em>!). A alternativa C inverte I e II e chama um erro grosseiro de dose de insulina (10x a dose) de \"reação adversa inevitável\". Na alternativa E, não existe o termo \"evento adverso sem dano\" na taxonomia da OMS (pois, por definição legal, todo Evento Adverso tem dano!)."
+          ]
+        ],
+        [
+          "4",
+          "Questão 2 — Meta 4: Cirurgia Segura e Checklist da OMS em 3 Tempos (Padrão USP-SP / UNICAMP)"
+        ],
+        [
+          "p",
+          "A Lista de Verificação de Segurança Cirúrgica (<em>Surgical Safety Checklist</em>) da Organização Mundial da Saúde divide-se em três momentos sequenciais obrigatórios: <em>Sign-in</em> (antes da indução anestésica), <em>Time-out</em> (antes da incisão cirúrgica na pele) e <em>Sign-out</em> (antes de o paciente sair da sala de operações). Assinale a alternativa que associa CORRETAMENTE o item de verificação ao seu respectivo momento de aplicação no protocolo da OMS:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> A contagem final de compressas, gases, agulhas e instrumentais cirúrgicos e a conferência da rotulagem das peças anatomopatológicas devem ser realizadas durante o <em>Sign-in</em> (antes da indução anestésica).<br>\n  <strong>B)</strong> A verificação de que a antibioticoprofilaxia cirúrgica foi administrada nos últimos 60 minutos, a confirmação da esterilização dos instrumentais e a verificação da disponibilidade dos exames de imagem essenciais na sala pertencem ao <em>Time-out</em> (antes da incisão cutânea).<br>\n  <strong>C)</strong> A avaliação de risco de via aérea difícil/broncoaspiração e a confirmação verbal do termo de consentimento pelo próprio paciente acordado devem ser feitas exclusivamente durante o <em>Sign-out</em> (após o fechamento da pele).<br>\n  <strong>D)</strong> A demarcação do sítio cirúrgico (lateralidade) em órgãos pares deve ser feita pelo instrumentador com o paciente já anestesiado e intubado durante o <em>Sign-out</em>.<br>\n  <strong>E)</strong> Caso a contagem de compressas no <em>Sign-out</em> revele a falta de uma compressa cirúrgica, o protocolo recomenda liberar o paciente para a enfermaria e solicitar ultrassonografia ambulatorial após 30 dias."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> No <strong>2º Tempo (<em>Time-Out</em> — Pausa Cirúrgica imediatamente antes da incisão na pele)</strong>, toda a equipe faz uma pausa verbal para: apresentar-se nominalmente, confirmar paciente/sítio/procedimento, checar se o <strong>antibiótico profilático foi infundido nos últimos 60 minutos</strong>, revisar eventos críticos previstos (cirurgião, anestesista e confirmação de <strong>esterilização das caixas</strong> pela enfermagem) e checar se os <strong>exames de imagem essenciais estão visíveis na sala</strong>.",
+            "<strong>Refutação dos distratores:</strong> A alternativa A descreve itens exclusivos do <strong>3º Tempo (<em>Sign-Out</em> — antes de o paciente sair da sala)</strong>. A alternativa C descreve itens exclusivos do <strong>1º Tempo (<em>Sign-In</em> — antes da indução anestésica)</strong>. A alternativa D está incorreta porque a demarcação da lateralidade deve ser feita pelo médico cirurgião <em>antes</em> da entrada em sala (com a participação do paciente acordado) e conferida no <em>Sign-In</em>. A alternativa E descreve uma conduta negligente que consuma um <em>Never Event</em> (gossypiboma); se faltar uma compressa no <em>Sign-Out</em>, o paciente não sai da sala, explora-se a cavidade e realiza-se radiografia intraoperatória imediata."
+          ]
+        ],
+        [
+          "4",
+          "Questão 3 — Modelo do Queijo Suíço de James Reason, Cultura Justa e Protocolo de Londres (Padrão SUS-SP / UNIFESP)"
+        ],
+        [
+          "p",
+          "A respeito da teoria sistêmica do erro humano formulada por James Reason (Modelo do Queijo Suíço), da Cultura Justa (<em>Just Culture</em>) e das ferramentas de investigação de eventos adversos (Protocolo de Londres e Diagrama de Ishikawa), assinale a alternativa CORRETA:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> No Modelo do Queijo Suíço, as \"Condições Latentes\" referem-se exclusivamente aos deslizes e lapsos cometidos nos últimos segundos pelo profissional da ponta (<em>sharp end</em>), enquanto as \"Falhas Ativas\" são decisões orçamentárias tomadas anos antes pela diretoria.<br>\n  <strong>B)</strong> A Cultura Justa preconiza a abolição total de qualquer responsabilização ética ou disciplinar nos hospitais, proibindo sanções mesmo nos casos em que um profissional atue deliberadamente alcoolizado ou falsifique registros médicos de forma consciente.<br>\n  <strong>C)</strong> Na hierarquia de efetividade das ações corretivas pós-Análise de Causa Raiz, a emissão de circulares pedindo \"maior atenção aos técnicos\" e a realização de palestras teóricas são classificadas como barreiras fortes (<em>forcing functions</em>), superiores à retirada física de ampolas de KCl 19,1% das enfermarias.<br>\n  <strong>D)</strong> O Protocolo de Londres é uma ferramenta de análise sistemática retrospectiva de incidentes clínicos que investiga as ações inseguras na entrega do cuidado à luz de sete categorias de fatores contribuintes (do paciente, da tarefa/tecnologia, individuais, da equipe, do ambiente de trabalho, organizacionais/gerenciais e do contexto institucional).<br>\n  <strong>E)</strong> O processo de <em>Disclosure</em> (comunicação aberta de eventos adversos) orienta que o hospital oculte a ocorrência do erro até que transcorra o prazo prescricional civil de 5 anos, evitando pedidos de desculpas à família."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa D.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa D está correta:</strong> Descreve com precisão técnica o <strong>Protocolo de Londres</strong> (Charles Vincent et al.), adotado pela Anvisa e pelo Ministério da Saúde para Análise de Causa Raiz (ACR), estruturado na identificação de problemas no cuidado e na análise profunda dos 7 níveis de fatores contribuintes (condições latentes do sistema).",
+            "<strong>Refutação dos distratores:</strong> A alternativa A inverte os conceitos de James Reason: <strong>Falhas Ativas</strong> são os atos inseguros cometidos na ponta (<em>sharp end</em>: deslizes, lapsos, enganos), enquanto <strong>Condições Latentes</strong> são os \"patógenos residentes\" no desenho do sistema gerados pela gestão (<em>blunt end</em>: subdimensionamento de equipe, ampolas LASA, falta de manutenção). A alternativa B confunde Cultura Justa com impunidade irrestrita (<em>blame-free</em> absoluta); na <strong>Cultura Justa</strong>, o erro humano involuntário é consolado (Segunda Vítima) e o comportamento de risco recebe treinamento/redesenho, mas o <strong>comportamento temerário/imprudente consciente (<em>reckless behavior</em>) sofre responsabilização disciplinar e ético-legal</strong>! A alternativa C inverte a força das barreiras: palestras e avisos são barreiras <em>fracas</em>; retirar fisicamente o KCl 19,1% das enfermarias e usar conectores incompatíveis (<em>Poka-Yoke / Forcing Functions</em>) são barreiras <em>fortes</em>! A alternativa E descreve a antiga prática antiética de \"Negar e Defender\", oposta ao <strong>Disclosure</strong> (que exige comunicação aberta em até 24h e pedido genuíno de desculpas)."
+          ]
+        ],
+        [
+          "4",
+          "Questão 4 — RDC Anvisa nº 36/2013, Núcleo de Segurança do Paciente e Prazos de Notificação (Padrão ENAMED / SES-PE)"
+        ],
+        [
+          "p",
+          "A Resolução da Diretoria Colegiada (RDC) da Anvisa nº 36, de 25 de julho de 2013, institui ações para a segurança do paciente em serviços de saúde no Brasil e regulamenta o funcionamento do Núcleo de Segurança do Paciente (NSP) e a notificação de eventos adversos ao Sistema Nacional de Vigilância Sanitária (SNVS / NOTIVISA). De acordo com o texto estrito da RDC Anvisa nº 36/2013, assinale a alternativa CORRETA:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> A obrigatoriedade de constituir Núcleo de Segurança do Paciente restringe-se aos hospitais públicos federais com mais de 200 leitos, estando isentos todos os hospitais privados, filantrópicos e militares.<br>\n  <strong>B)</strong> Os eventos adversos que evoluírem para óbito devem ser notificados pelo Núcleo de Segurança do Paciente ao Sistema Nacional de Vigilância Sanitária (SNVS) em até 72 (setenta e duas) horas a partir do ocorrido.<br>\n  <strong>C)</strong> A notificação regular dos incidentes e eventos adversos não fatais ao SNVS deve ser realizada apenas uma vez a cada dois anos.<br>\n  <strong>D)</strong> Consultórios médicos individualizados (isolados) são obrigados pela RDC 36/2013 a manter uma comissão própria de 5 profissionais exclusivos para o Núcleo de Segurança do Paciente.<br>\n  <strong>E)</strong> A função primordial do Núcleo de Segurança do Paciente, segundo a RDC 36/2013, é instaurar sindicâncias punitivas para demitir os profissionais que notificarem voluntariamente quase-erros (<em>near misses</em>)."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> De acordo com o Artigo 10, Parágrafo Único, da <strong>RDC Anvisa nº 36/2013</strong>: <em>\"Os eventos adversos que evoluírem para óbito devem ser notificados ao SNVS em até <strong>72 (setenta e duas) horas</strong> a partir do ocorrido\"</em>. Já a notificação geral dos demais eventos adversos é feita <strong>mensalmente, até o 15º (décimo quinto) dia útil do mês subsequente ao mês de vigilância</strong> (Art. 10, caput).",
+            "<strong>Refutação dos distratores:</strong> A alternativa A está incorreta porque a RDC 36/2013 aplica-se a todos os serviços de saúde públicos, privados, filantrópicos, civis ou militares, incluindo os de ensino e pesquisa (Art. 2º). A alternativa C erra a periodicidade (que é mensal, até o 15º dia útil). A alternativa D traz exatamente a exceção prevista no Parágrafo Único do Art. 2º da RDC 36/2013: <em>excluem-se do escopo desta Resolução os consultórios individualizados, laboratórios clínicos e os serviços móveis e de atenção domiciliar</em>. A alternativa E contraria frontalmente os princípios de cultura de segurança não punitiva da RDC 36/2013."
+          ]
+        ],
+        [
+          "4",
+          "Questão 5 — Meta 5: Os 5 Momentos para a Higienização das Mãos e Clostridioides difficile (Padrão Revalida INEP / UFRJ)"
+        ],
+        [
+          "p",
+          "O Protocolo para a Prática de Higiene das Mãos em Serviços de Saúde (Meta Internacional nº 5 da OMS / Ministério da Saúde / Anvisa) preconiza os \"5 Momentos para a Higiene das Mãos\" e define as indicações precisas para o uso de preparação alcoólica a 70% versus água corrente e sabonete. Sobre esse protocolo, assinale a alternativa CORRETA:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Os 5 Momentos da OMS são: (1) Antes de entrar no hospital; (2) Antes do almoço; (3) Após ir ao banheiro; (4) Antes de calçar luvas estéreis; e (5) Ao bater o ponto de saída.<br>\n  <strong>B)</strong> Caso um profissional de saúde entre no quarto de um paciente, ajuste a velocidade da bomba de infusão e abaixe a grade da cama, mas não toque diretamente na pele do paciente, ele está dispensado de higienizar as mãos ao sair do quarto.<br>\n  <strong>C)</strong> No atendimento a pacientes em precaução de contato por colite pseudomembranosa causada por <em>Clostridioides difficile</em>, a higienização das mãos após a retirada das luvas deve ser realizada obrigatoriamente com água corrente e sabonete (e não apenas com álcool gel 70%), pois as preparações alcoólicas não possuem atividade esporicida contra os esporos bacterianos.<br>\n  <strong>D)</strong> O uso correto de luvas de procedimento nitrílicas substitui a necessidade de higienização das mãos nos Momentos 1, 2 e 3 da OMS.<br>\n  <strong>E)</strong> Quando as mãos do profissional estiverem visivelmente sujas com sangue após uma punção arterial difícil, o protocolo recomenda aplicar álcool gel 70% por 10 segundos sobre o sangue, sendo contraindicado lavar com água e sabonete."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está correta:</strong> Questão clássica de controle de infecção hospitalar! Embora o álcool 70% seja o agente preferencial quando as mãos estão visivelmente limpas na rotina geral, os <strong>esporos do <em>Clostridioides difficile</em> são altamente resistentes ao álcool</strong>. Por isso, em casos de suspeita ou confirmação de <em>C. difficile</em> (assim como na presença de sujidade visível ou exposição a fluidos corporais), é <strong>obrigatória a lavagem mecânica das mãos com água e sabonete (40 a 60 segundos)</strong> para remover fisicamente os esporos pelo enxágue!",
+            "<strong>Refutação dos distratores:</strong> A alternativa A inventa momentos inexistentes; os <strong>5 Momentos oficiais da OMS</strong> são: <em>(1) Antes de tocar o paciente; (2) Antes de realizar procedimento limpo/asséptico; (3) Após risco de exposição a fluidos corporais; (4) Após tocar o paciente; e (5) Após tocar superfícies próximas ao paciente</em>. A alternativa B viola o <strong>Momento 5 (Após tocar superfícies próximas ao paciente)</strong>: tocar na bomba de infusão ou na grade da cama exige higienização das mãos ao sair, mesmo sem ter encostado no paciente! A alternativa D está incorreta porque luvas jamais substituem a higiene das mãos. A alternativa E está incorreta porque mãos visivelmente sujas com sangue ou matéria orgânica exigem obrigatoriamente água e sabonete!"
+          ]
+        ],
+        [
+          "4",
+          "Questão 6 — Meta 6: Escala de Morse (Quedas) e Escala de Braden (Lesão por Pressão) (Padrão UNICAMP / IAMSPE)"
+        ],
+        [
+          "p",
+          "Na aplicação dos Protocolos Nacionais de Prevenção de Quedas e de Prevenção de Lesão por Pressão (Meta 6 de Segurança do Paciente), utilizam-se rotineiramente a Escala de Morse e a Escala de Braden, além do estadiamento internacional da NPUAP/EPUAP. A respeito dessas escalas e da classificação das lesões por pressão, assinale a alternativa CORRETA:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Na Escala de Braden (que varia de 6 a 23 pontos e avalia percepção sensorial, umidade, atividade, mobilidade, nutrição e fricção/cisalhamento), quanto MENOR for a pontuação total obtida pelo paciente, MAIOR será o seu risco de desenvolver lesão por pressão (sendo um escore &le; 9 classificado como risco muito alto).<br>\n  <strong>B)</strong> Na Escala de Quedas de Morse, uma pontuação igual a zero indica risco máximo iminente de queda, enquanto uma pontuação acima de 60 pontos indica ausência completa de risco.<br>\n  <strong>C)</strong> Uma lesão por pressão sacral caracterizada por pele íntegra com eritema persistente que não embranquece à digitopressão é classificada como Estágio 3, devendo ser tratada com massagem vigorosa local a cada 2 horas.<br>\n  <strong>D)</strong> Uma úlcera sacral profunda cujo leito encontra-se 100% recoberto por uma placa necrótica preta endurecida (escara) aderida, impedindo a visualização da profundidade real nos tecidos subjacentes, é classificada como Lesão por Pressão Estágio 1.<br>\n  <strong>E)</strong> A perda total da espessura da pele com exposição visível e palpação direta de tecido ósseo sacral e tendões define a Lesão por Pressão Estágio 2."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa A.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa A está correta:</strong> Domina a principal diferença psicométrica entre as duas escalas da Meta 6: na <strong>Escala de Braden</strong> (6 domínios, escore de 6 a 23), a relação é inversamente proporcional — <strong>quanto menor o escore, pior a condição clínica/funcional do paciente e MAIOR o risco de Lesão por Pressão</strong> (Sem risco: 19–23; Risco leve: 15–18; Risco moderado: 13–14; Risco alto: 10–12; Risco muito alto: &le; 9 pontos).",
+            "<strong>Refutação dos distratores:</strong> A alternativa B inverte a <strong>Escala de Morse</strong> (em Morse, quanto <em>maior</em> a pontuação, <em>maior</em> o risco de queda: 0–24 baixo; 25–44 moderado; &ge; 45 alto risco!). Na alternativa C, pele íntegra com eritema não branqueável é <strong>Estágio 1</strong> (e não Estágio 3), e <strong>massagear a área hiperemiada é proibido</strong> por agravar a isquemia/necrose microvascular! Na alternativa D, uma ferida cuja base está totalmente encoberta por esfacelo ou escara negra que impede avaliar a profundidade real é classificada como <strong>Lesão por Pressão Não Classificável</strong> (só poderá ser classificada em Estágio 3 ou 4 após o desbridamento da escara). Na alternativa E, exposição de osso, músculo, fáscia ou tendão define o <strong>Estágio 4</strong> (o Estágio 2 restringe-se à perda parcial da pele com exposição apenas da derme ou bolha serosa, sem gordura e sem osso!)."
+          ]
+        ],
+        [
+          "4",
+          "Questão 7 — Meta 1 (Identificação), Meta 2 (SBAR / Read-Back) e Meta 3 (MAV) (Padrão Santa Casa SP / AMRIGS)"
+        ],
+        [
+          "p",
+          "Analise as condutas assistenciais abaixo à luz dos Protocolos Nacionais de Identificação do Paciente (Meta 1), Comunicação Efetiva (Meta 2) e Segurança na Prescrição, Uso e Administração de Medicamentos (Meta 3):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Conduta I:</strong> Para agilizar a rotina da enfermaria cirúrgica, a equipe adota como identificador padrão nas pulseiras e nos tubos de coleta de sangue apenas o primeiro nome do paciente seguido do número do leito (ex.: \"João — Leito 8\").",
+            "<strong>Conduta II:</strong> Ao receber por telefone do laboratório central o aviso de um resultado crítico (Troponina de alta sensibilidade muito elevada e Potássio de 6,8 mEq/L), o profissional que atende a ligação anota os valores no prontuário e realiza o <em>Read-Back</em> (lê de volta em voz alta os dados anotados para que o emissor do laboratório confirme a exatidão).",
+            "<strong>Conduta III:</strong> O hospital adota a técnica de <em>Tall Man Lettering</em> (letras maiúsculas destacadas, como <strong>DOP</strong>amina vs. <strong>DOBUT</strong>amina e clor<strong>PROMAZINA</strong> vs. clor<strong>PROPAMIDA</strong>) para diferenciar medicamentos com nomes semelhantes (LASA) e proíbe o uso de abreviaturas como \"U\", \"UI\" e zero após a vírgula (\"5,0 mg\") nas prescrições médicas."
+          ]
+        ],
+        [
+          "p",
+          "Estão em conformidade com os Protocolos de Segurança do Paciente do Ministério da Saúde e da Anvisa APENAS:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Conduta I.<br>\n  <strong>B)</strong> Conduta II.<br>\n  <strong>C)</strong> Condutas I e III.<br>\n  <strong>D)</strong> Condutas II e III.<br>\n  <strong>E)</strong> Condutas I, II e III."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa D (Condutas II e III estão corretas).</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa D está correta:</strong> A <strong>Conduta II</strong> aplica perfeitamente a regra do <em>Write Down &amp; Read-Back</em> (Meta 2) para comunicação telefônica de exames críticos. A <strong>Conduta III</strong> aplica duas barreiras recomendadas pelo ISMP e pelo Protocolo do MS/Anvisa (Meta 3): o <em>Tall Man Lettering</em> para medicamentos LASA (<em>Look-Alike, Sound-Alike</em>) e a proibição de abreviaturas perigosas (\"U/UI\" e zero à direita após a vírgula, que induzem erros de dose de 10 vezes!).",
+            "<strong>Por que a Conduta I está ERRADA:</strong> Viola frontalmente o Protocolo de Identificação do Paciente (Meta 1)! Exigem-se no mínimo <strong>dois identificadores completos</strong> (Nome completo sem abreviações + Data de nascimento e/ou Nome da mãe / Prontuário), sendo <strong>expressamente proibido utilizar o número do quarto ou do leito como identificador do paciente</strong>!"
+          ]
+        ],
+        [
+          "4",
+          "Questão 8 — FMEA (Proativo) vs. Análise de Causa Raiz (Reativo) e Segunda Vítima (Padrão USP-RP / SURCE)"
+        ],
+        [
+          "p",
+          "Um hospital oncológico decide inaugurar um novo setor de preparo e infusão de quimioterapia intratecal e endovenosa. Antes mesmo de atender o primeiro paciente, o Núcleo de Segurança do Paciente reúne a equipe multiprofissional para mapear todas as etapas do fluxo, identificar onde poderiam ocorrer falhas (como o risco de administrar Vincristina por via intratecal), atribuir escores de Severidade, Probabilidade de Ocorrência e Probabilidade de Detecção a cada falha potencial, e calcular o Índice de Prioridade de Risco (RPN) para redesenhar o processo preventivamente (ex.: proibir vincristina em seringa e fornecê-la apenas diluída em <em>minibag</em> de 50 mL). Essa ferramenta proativa de gestão de risco e o conceito dado na literatura ao profissional de saúde que sofre abalo psicológico após envolver-se involuntariamente em um evento adverso grave denominam-se, respectivamente:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Protocolo de Londres; Primeira Vítima.<br>\n  <strong>B)</strong> FMEA / HFMEA (<em>Failure Mode and Effects Analysis</em>); Segunda Vítima.<br>\n  <strong>C)</strong> Notificação NOTIVISA; Terceira Vítima.<br>\n  <strong>D)</strong> Escala de Braden; Cultura Punitiva.<br>\n  <strong>E)</strong> Checklist de Sign-Out; Negligência Culposa."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado Alternativa por Alternativa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> A ferramenta de gestão de risco <strong>PROATIVA / PROSPECTIVA</strong> realizada <em>antes</em> que qualquer incidente ocorra — calculando o Índice de Prioridade de Risco ($RPN = Severidade \times Ocorrência \times Detecção$) — é o <strong>FMEA / HFMEA (Análise dos Modos de Falha e seus Efeitos)</strong>. E o profissional de saúde que sofre trauma emocional e psíquico após se envolver em um erro assistencial involuntário é consagrado pela literatura (Albert Wu, 2000) como a <strong>Segunda Vítima</strong> (sendo o paciente e a família a Primeira Vítima, e a instituição hospitalar a Terceira Vítima).",
+            "<strong>Refutação dos distratores:</strong> Na alternativa A, o Protocolo de Londres é uma ferramenta <em>reativa/retrospectiva</em> (usada após o evento adverso já ter acontecido). As alternativas C, D e E trazem termos incompatíveis com as definições apresentadas."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tabela-sintese-high-yield-aula-222",
+      0,
+      [
+        [
+          "2",
+          "8. Síntese High-Yield de Segurança do Paciente para Revisão Final de Véspera"
+        ],
+        [
+          "p",
+          "Revise os conceitos mais cobrados em provas de Residência Médica, Revalida e ENAMED neste quadro sinóptico definitivo de Segurança do Paciente:"
+        ],
+        [
+          "t",
+          [
+            "Eixo / Meta de Segurança",
+            "Regra de Ouro / Conceito Chave para a Prova",
+            "Pegadinha Clássica de Banca Examinadora"
+          ],
+          [
+            [
+              "<strong>PNSP e RDC Anvisa nº 36/2013</strong>",
+              "Portaria MS nº 529/2013 e RDC 36/2013.<br><strong>Notificação pelo NSP no NOTIVISA:</strong><br>- Regra geral: <strong>Mensal (até o 15º dia útil do mês subsequente)</strong>.<br>- Evento Adverso com <strong>ÓBITO: em ATÉ 72 HORAS</strong> do ocorrido!",
+              "Dizer que a RDC 36/2013 só vale para hospitais públicos (vale para públicos, privados, filantrópicos e militares; exceto consultórios isolados, laboratórios, serviços móveis e AD)."
+            ],
+            [
+              "<strong>Taxonomia da OMS</strong>",
+              "- <strong>Circunstância Notificável:</strong> Potencial de dano, mas não houve incidente.<br>- <strong>Near Miss (Quase-erro):</strong> Incidente interceptado que <strong>NÃO atingiu o paciente</strong>.<br>- <strong>Incidente Sem Dano:</strong> <strong>Atingiu o paciente</strong>, mas não causou dano.<br>- <strong>Evento Adverso:</strong> Atingiu o paciente e <strong>SEMPRE tem DANO</strong>!<br>- <strong>Never Event / Sentinela:</strong> Dano grave/óbito evitável (lado errado, compressa retida, KCl EV em bolus).",
+              "Chamar de <em>Near Miss</em> um medicamento trocado que foi engolido/injetado no paciente mas não deu sintomas. Se tocou/entrou no paciente e não deu dano, é <strong>Incidente Sem Dano</strong>!"
+            ],
+            [
+              "<strong>Queijo Suíço (James Reason) e Cultura Justa</strong>",
+              "- <strong>Falhas Ativas (Sharp End):</strong> Atos inseguros na ponta (deslizes, lapsos, enganos).<br>- <strong>Condições Latentes (Blunt End):</strong> Patógenos ocultos no sistema/gestão.<br>- <strong>Cultura Justa:</strong> Consola o erro humano involuntário (<strong>2ª Vítima</strong>), treina o comportamento de risco e pune apenas a imprudência temerária consciente.",
+              "Inverter Falha Ativa com Condição Latente, ou achar que Cultura Justa significa impunidade para quem trabalha embriagado ou falsifica prontuário."
+            ],
+            [
+              "<strong>Meta 1 (Identificação) e Meta 2 (Comunicação)</strong>",
+              "- <strong>Meta 1:</strong> Pulseira branca com no mínimo <strong>2 identificadores</strong> (Nome completo + Data de nascimento / Nome da mãe).<br>- <strong>Meta 2:</strong> Passagem de plantão estruturada (<strong>SBAR / I-PASS</strong>) e ordem verbal/exame crítico por telefone com <strong>Write Down &amp; Read-Back</strong>.",
+              "Usar o <strong>número do leito ou quarto</strong> como identificador do paciente (estritamente proibido!)."
+            ],
+            [
+              "<strong>Meta 3 (Medicamentos de Alta Vigilância — MAV)</strong>",
+              "Eletrólitos concentrados (<strong>KCl 19,1%, NaCl 20%</strong>), Insulinas, Anticoagulantes, Vasoativos, Opioides, Quimioterápicos e Bloqueadores Neuromusculares.<br>Usar <strong>Tall Man Lettering</strong> para LASA, dupla checagem e <strong>retirar KCl 19,1% das enfermarias</strong>!",
+              "Prescrever usando abreviaturas proibidas como \"U\", \"UI\", \"µg\" ou zero após a vírgula (\"5,0 mg\")."
+            ],
+            [
+              "<strong>Meta 4 (Cirurgia Segura — Checklist em 3 Tempos)</strong>",
+              "1) <strong>SIGN-IN (Antes da Anestesia):</strong> Identidade/consentimento, demarcação de lateralidade, oxímetro/aparelho, alergia, via aérea difícil e risco de sangramento &gt; 500 mL.<br>2) <strong>TIME-OUT (Antes da Incisão):</strong> Apresentação da equipe, <strong>ATB profilático nos últimos 60 min</strong>, esterilização e exames de imagem.<br>3) <strong>SIGN-OUT (Antes de sair da sala):</strong> <strong>Contagem de compressas/agulhas/instrumentais</strong> e identificação de biópsia.",
+              "Trocar os itens entre os 3 tempos (ex.: dizer que a contagem de compressas é no Time-Out ou que o ATB profilático de 60 min é no Sign-Out)."
+            ],
+            [
+              "<strong>Meta 5 (Higiene das Mãos) e Meta 6 (Morse e Braden)</strong>",
+              "- <strong>Meta 5:</strong> 5 Momentos (2 Antes e 3 Após). Álcool 70% é preferencial (20–30s), mas <strong>Água e Sabonete (40–60s) é OBRIGATÓRIO em sujidade visível e no <em>Clostridioides difficile</em> (esporos!)</strong>.<br>- <strong>Meta 6:</strong> <strong>Morse</strong> = Quedas (&ge; 45 pts = alto risco). <strong>Braden</strong> = Lesão por Pressão (<strong>quanto MENOR o ponto, MAIOR o risco</strong>; &le; 9 pts = risco muito alto!).",
+              "Usar apenas álcool gel após atender diarreia por <em>C. difficile</em>; achar que escore baixo de Braden significa baixo risco; ou <strong>massagear</strong> eritema não branqueável (LPP Estágio 1)."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/anvisa\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde / Anvisa / Fiocruz — Portaria GM/MS nº 529/2013 (Programa Nacional de Segurança do Paciente - PNSP) e RDC Anvisa nº 36/2013</a>",
+            "<a href=\"https://www.who.int\" target=\"_blank\" rel=\"noopener noreferrer\">World Health Organization (WHO) — Global Patient Safety Action Plan 2021–2030 & WHO Surgical Safety Checklist / 5 Moments for Hand Hygiene</a>",
+            "<a href=\"https://proqualis.fiocruz.br\" target=\"_blank\" rel=\"noopener noreferrer\">Reason J — Human Error: Models and Management (BMJ / Swiss Cheese Model) & Vincent C — Protocolo de Londres para Investigação de Incidentes Clínicos (Proqualis/Fiocruz)</a>",
+            "<a href=\"https://www.ismp-brasil.org\" target=\"_blank\" rel=\"noopener noreferrer\">Institute for Safe Medication Practices (ISMP Brasil) — Medicamentos Potencialmente Perigosos de Uso Hospitalar e Ambulatorial</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

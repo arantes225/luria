@@ -1,0 +1,895 @@
+{
+  "v": 2,
+  "s": "cardiopatias-congenitas",
+  "t": "Cardiopatias Congênitas",
+  "p": "Cardiopatias Congênitas — Livro-Texto LURIA",
+  "d": "Tratado Completo de Cardiologia Pediátrica: Fisiologia Fetal, Transição Neonatal, Shunts, Lesões Obstrutivas, Cardiopatias Cianóticas, Teste do Coraçãozinho e Prostaglandinas",
+  "a": "Pediatria",
+  "m": "Pediatria",
+  "h": [
+    "Apostila LURIA",
+    "Cardiopatias Congênitas",
+    "Tratado Completo de Cardiologia Pediátrica: Fisiologia Fetal, Transição Neonatal, Shunts, Lesões Obstrutivas, Cardiopatias Cianóticas, Teste do Coraçãozinho e Prostaglandinas",
+    [
+      "Área: Pediatria",
+      "Matéria: Pediatria",
+      "Tema: Cardiopatias Congênitas"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "fisiologia-da-circulacao-fetal-e-transicao-neonatal",
+      "1. Fisiologia da Circulação Fetal e a Dinâmica de Transição Neonatal"
+    ],
+    [
+      "classificacao-geral-e-semiologia-pediatrica",
+      "2. Classificação Geral das Cardiopatias Congênitas e Semiologia Cardiovascular Pediátrica"
+    ],
+    [
+      "cardiopatias-acianoticas-com-hiperfluxo-pulmonar",
+      "3. Cardiopatias Acianóticas com Hiperfluxo Pulmonar (Shunt Esquerda-Direita)"
+    ],
+    [
+      "cardiopatias-acianoticas-com-fluxo-normal-ou-obstrutivas",
+      "4. Cardiopatias Acianóticas Obstrutivas (Fluxo Pulmonar Normal ou Diminuído)"
+    ],
+    [
+      "cardiopatias-cianoticas-com-hipofluxo-pulmonar",
+      "5. Cardiopatias Congênitas Cianóticas com Hipofluxo Pulmonar"
+    ],
+    [
+      "cardiopatias-cianoticas-com-hiperfluxo-pulmonar",
+      "6. Cardiopatias Congênitas Cianóticas com Hiperfluxo Pulmonar"
+    ],
+    [
+      "teste-do-coracaozinho-e-manejo-canal-dependente",
+      "7. Teste do Coraçãozinho (Oximetria de Pulso) e Manejo das Lesões Canal-Dependentes"
+    ],
+    [
+      "casos-clinicos-e-questoes-comentadas",
+      "8. Casos Clínicos Integradores e Banco de Questões Comentadas Padrão Residência Médica"
+    ]
+  ],
+  "q": [
+    [
+      "fisiologia-da-circulacao-fetal-e-transicao-neonatal",
+      0,
+      [
+        [
+          "2",
+          "1. Fisiologia da Circulação Fetal e a Dinâmica de Transição Neonatal"
+        ],
+        [
+          "p",
+          "O estudo das cardiopatias congênitas exige a compreensão aprofundada da circulação intrauterina e das adaptações mecânicas, bioquímicas e hemodinâmicas que se sucedem nos primeiros minutos, horas e dias após o nascimento. No ambiente fetal, a placenta atua simultaneamente como órgão de hematose, nutrição e excreção, operando como um circuito vascular de baixíssima resistência hidráulica em paralelo com os leitos sistêmicos."
+        ],
+        [
+          "p",
+          "Em contrapartida à baixa resistência placentária, o leito vascular pulmonar fetal apresenta resistência vascular extremamente elevada (RVP alta). Essa hiper-resistência decorre do colapso mecânico dos alvéolos não aerados, da compressão dos capilares pelos septos pulmonares e, fundamentalmente, de uma pronunciada vasoconstrição hipóxica arteriolar decorrente da baixa tensão parcial de oxigênio intrauterina (PaO2 fisiologicamente em torno de 20 a 25 mmHg no sangue venoso pulmonar). Como consequência direta dessa discrepância tensional, menos de 10% a 12% de todo o débito cardíaco biventricular combinado atinge a circulação capilar pulmonar, sendo a quase totalidade do fluxo desviada através de três shunts (curto-circuitos) fisiológicos vitais: o ducto venoso de Arantius, o forame oval e o ducto arterioso (canal arterial)."
+        ],
+        [
+          "4",
+          "Os Três Shunts Fisiológicos da Circulação Fetal"
+        ],
+        [
+          "u",
+          [
+            "<strong>Ducto Venoso de Arantius:</strong> Conecta a veia umbilical à veia cava inferior (VCI). Permite que aproximadamente 50% do sangue ricamente oxigenado vindo da placenta (saturação de cerca de 80-85%) desvie do parênquima hepático, alcançando rapidamente a VCI proximal com mínima perda de conteúdo gasoso.",
+            "<strong>Forame Oval:</strong> Abertura na porção média do septo interatrial provida de uma válvula dependente de gradiente pressórico na face atrial esquerda (válvula da fossa oval). A crista divisória (<em>crista dividens</em>) orienta o jato preferencial de sangue oxigenado da VCI em direção ao átrio esquerdo (AE), de onde segue para o ventrículo esquerdo (VE) e aorta ascendente, garantindo perfusão nobre ao miocárdio coronariano e ao encéfalo em desenvolvimento.",
+            "<strong>Ducto Arterioso (Canal Arterial):</strong> Estrutura muscular especializada que conecta a bifurcação da artéria pulmonar principal à aorta descendente, logo distal à emergência da artéria subclávia esquerda. O sangue menos saturado oriundo da veia cava superior (VCS) entra no átrio direito (AD), é direcionado pela valva tricúspide ao ventrículo direito (VD) e lançado no tronco pulmonar. Devido à alta RVP, cerca de 90% desse volume é ejetado diretamente na aorta descendente através do canal, perfundindo o território esplâncnico, membros inferiores e retornando à placenta pelas artérias umbilicais."
+          ]
+        ],
+        [
+          "p",
+          "No exato momento do clampeamento do cordão umbilical e da primeira incursão respiratória do recém-nascido, desencadeia-se uma revolução hemodinâmica. A interrupção súbita do leito placentário de baixa resistência elimina uma vasta rede vascular de complacência infinita, duplicando a resistência vascular sistêmica (RVS). Simultaneamente, a expansão pulmonar e a introdução de ar alveolar elevam a PaO2 para níveis acima de 60 a 80 mmHg. O oxigênio alveolar estimula diretamente a síntese de óxido nítrico endotelial (eNOS) e prostaciclina (PGI2), enquanto inibe os canais de potássio voltagem-dependentes das células musculares lisas arteriolares, provocando vasodilatação pulmonar maciça e queda vertiginosa da RVP."
+        ],
+        [
+          "p",
+          "Com a queda da RVP e o expressivo aumento do fluxo sanguíneo pelos pulmões, o retorno venoso pulmonar ao átrio esquerdo pelas quatro veias pulmonares decuplica. Esse afluxo eleva subitamente a pressão intracavitária no AE. Concomitantemente, a perda do retorno venoso umbilical reduz a pressão no átrio direito. O gradiente pressórico inverte-se: a pressão de AE passa a superar a pressão de AD (P_AE > P_AD). Essa alteração mecânica empurra a válvula do forame oval (<em>septum primum</em>) contra a borda rígida do <em>septum secundum</em>, promovendo o fechamento funcional imediato do forame oval nas primeiras horas pós-parto. O fechamento anatômico permanente por aposição fibrosa e endotelização ocorre progressivamente ao longo dos primeiros meses de vida em 75-80% dos indivíduos normais, persistindo como forame oval patente (FOP) em 20-25% dos adultos assintomáticos."
+        ],
+        [
+          "p",
+          "O fechamento do ducto arterioso é um evento ativo e bifásico. Durante a vida fetal, o canal arterial mantém-se dilatado em virtude dos níveis elevados de prostaglandina E2 (PGE2) e prostaciclina (PGI2), sintetizadas continuamente pela placenta e pelo endotélio ductal sob relativa hipoxemia. Com o nascimento e a remoção placentária associada ao rápido clearance pulmonar de prostaglandinas (enzima 15-hidroxiprostaglandina desidrogenase), as concentrações circulantes de PGE2 despencam. Paralelamente, o aumento agudo da PaO2 para além de 50 mmHg estimula a contração das células musculares lisas da túnica média do canal por meio do influxo de cálcio via canais tipo L e da ativação da via de Rho-quinase acoplada à endotelina-1."
+        ],
+        [
+          "p",
+          "Em recém-nascidos a termo hígidos, a contração muscular promove o fechamento funcional do ducto arterioso entre 12 e 48 horas de vida. Nas semanas subsequentes, ocorrem proliferação intimal subendotelial, necrose de coagulação celular da lâmina elástica interna e fibrose cicatricial, transformando o canal no cordão fibroso inerte denominado <em>ligamentum arteriosum</em> (ligamento arterioso). No recém-nascido pré-termo, a imaturidade da musculatura lisa ductal, a menor sensibilidade ao oxigênio e a persistência de níveis teciduais de PGE2 elevam substancialmente a incidência de Persistência do Canal Arterial (PCA patológica)."
+        ]
+      ]
+    ],
+    [
+      "classificacao-geral-e-semiologia-pediatrica",
+      0,
+      [
+        [
+          "2",
+          "2. Classificação Geral das Cardiopatias Congênitas e Semiologia Cardiovascular Pediátrica"
+        ],
+        [
+          "p",
+          "As cardiopatias congênitas acometem aproximadamente 8 a 10 por 1.000 nascidos vivos, configurando a principal causa de mortalidade atribuível a malformações estruturais no primeiro ano de vida. Do ponto de vista didático, fisiopatológico e preparatório para concursos de alta exigência, a classificação universal fundamenta-se em duas variáveis mestras: a presença de <strong>cianose central</strong> e o padrão do <strong>fluxo sanguíneo pulmonar</strong> avaliado à radiografia de tórax e ecocardiograma."
+        ],
+        [
+          "t",
+          [
+            "Categoria Fisiopatológica",
+            "Fluxo Pulmonar (Trama Vascular)",
+            "Mecanismo Hemodinâmico Principal",
+            "Exemplos Clássicos Representativos"
+          ],
+          [
+            [
+              "<strong>Acianóticas com Hiperfluxo Pulmonar</strong>",
+              "Aumentado (Pletora Pulmonar)",
+              "Shunt esquerda-direita (E-D); hipervolemia pulmonar; congestão venocapilar e bronquiolar",
+              "Comunicação Interatrial (CIA), Comunicação Interventricular (CIV), Persistência do Canal Arterial (PCA), Defeito do Septo Atrioventricular (DSAV)"
+            ],
+            [
+              "<strong>Acianóticas com Fluxo Normal ou Obstrutivas</strong>",
+              "Normal a Reduzido",
+              "Obstrução mecânica à ejeção ventricular esquerda ou direita sem comunicação com mistura venoarterial",
+              "Coarctação de Aorta (CoAo), Estenose Valvar Aórtica, Estenose Valvar Pulmonar leve a moderada"
+            ],
+            [
+              "<strong>Cianóticas com Hipofluxo Pulmonar</strong>",
+              "Diminuído (Oligemia Pulmonar / Campos Claros)",
+              "Obstrução grave à ejeção de VD associada a desvio de sangue desoxigenado para o circuito sistêmico (shunt D-E)",
+              "Tetralogia de Fallot (T4F), Atresia Tricúspide, Anomalia de Ebstein grave, Atresia Pulmonar com CIV"
+            ],
+            [
+              "<strong>Cianóticas com Hiperfluxo Pulmonar</strong>",
+              "Aumentado (Pletora Pulmonar)",
+              "Mistura obrigatória total de sangues venoso e arterial no mesmo vaso/câmara, sem barreira obstrutiva pulmonar",
+              "Transposição das Grandes Artérias (TGA), Tronco Arterioso Comum (Truncus), Drenagem Anômala Total de Veias Pulmonares (DATVP), Síndrome do Ventrículo Único"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "A semiologia cardiovascular no lactente requer refinamento técnico. Ao contrário do adulto, em que a insuficiência cardíaca congestiva (ICC) cursa predominantemente com edema periférico de membros inferiores e estase jugular a 45 graus, o lactente com ICC manifesta-se através de um padrão neurovegetativo e metabólico exuberante: taquipneia em repouso (frequência respiratória > 60 irpm), tiragem subcostal e intercostal, sudorese profusa (especialmente frontal durante as mamadas decorrente de hiperatividade adrenérgica simpática), cansaço e pausas frequentes durante a sucção, com consequente déficit de ganho ponderoestatural (falha de crescimento / <em>failure to thrive</em>)."
+        ],
+        [
+          "p",
+          "Ao exame físico, a hepatomegalia congestiva (fígado palpável a mais de 2 a 3 cm do rebordo costal direito, com consistência elástica e borda romba) é o marcador clínico mais sensível e precoce de sobrecarga de volume venoso sistêmico no recém-nascido e lactente. O ritmo cardíaco frequentemente revela taquicardia persistente e ritmo de galope por terceira bulha (B3). A palpação de pulsos nas quatro extremidades é mandotória em toda consulta de puericultura ou emergência pediátrica, sendo imperativo confrontar a amplitude e o sincronismo dos pulsos braquiais e radiais com os pulsos femorais para rastreio ativo de Coarctação de Aorta."
+        ],
+        [
+          "4",
+          "Atenção Semiológica: A Falácia da Intensidade do Sopro Cardíaco"
+        ],
+        [
+          "p",
+          "A intensidade de um sopro cardíaco pediátrico não guarda relação direta com a gravidade da cardiopatia estrutural. Defeitos minúsculos com alto gradiente de pressão geram turbilhonamento turbulento com velocidade altíssima, produzindo sopros rudes e intensos (ex.: CIV restritiva tipo Doença de Roger, sopro holossistólico 4+/6+, lesão hemodinamicamente insignificante). Por outro lado, defeitos anatômicos catastróficos, como uma CIV ampla não restritiva ou uma Transposição das Grandes Artérias com septo intacto, cursam com gradientes pressóricos nulos ou mínimos, podendo não gerar qualquer sopro audível nas primeiras semanas de vida, manifestando-se apenas por hipoxemia grave, taquipneia silenciosa ou colapso circulatório súbito."
+        ]
+      ]
+    ],
+    [
+      "cardiopatias-acianoticas-com-hiperfluxo-pulmonar",
+      0,
+      [
+        [
+          "2",
+          "3. Cardiopatias Acianóticas com Hiperfluxo Pulmonar (Shunt Esquerda-Direita)"
+        ],
+        [
+          "p",
+          "As cardiopatias acianóticas com hiperfluxo pulmonar representam o grupo mais prevalente das anomalias congênitas do coração. O evento fisiopatológico comum a todas elas é a presença de uma comunicação anômala entre as câmaras esquerdas (alta pressão) e as câmaras direitas (baixa pressão), estabelecendo um shunt da esquerda para a direita (E-D). A magnitude do desvio volêmico depende primariamente da área do orifício de comunicação e da relação entre a resistência vascular pulmonar e a resistência vascular sistêmica (Relação RVP/RVS)."
+        ],
+        [
+          "3",
+          "3.1. Comunicação Interatrial (CIA)"
+        ],
+        [
+          "p",
+          "A CIA responde por cerca de 7% a 10% de todas as cardiopatias congênitas. Caracteriza-se por uma solução de continuidade no septo interatrial que permite a passagem de sangue oxigenado do átrio esquerdo para o átrio direito. Conforme a topografia anatômica da falha embriológica, divide-se em quatro subtipos:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Ostium Secundum:</strong> Representa 75% a 80% dos casos. Localiza-se na região central da fossa oval. Decorre de reabsorção excessiva do <em>septum primum</em> ou desenvolvimento defeituoso do <em>septum secundum</em>.",
+            "<strong>Ostium Primum:</strong> Corresponde a 15% dos casos. Situa-se na porção mais inferior do septo interatrial, adjacente às valvas atrioventriculares, compondo o espectro dos defeitos do septo atrioventricular parciais. Frequentemente associada à fenda (cleft) no folheto anterior da valva mitral, gerando regurgitação mitral concomitante.",
+            "<strong>Tipo Seio Venoso:</strong> Representa 5% a 10% dos casos. Localiza-se próximo à desembocadura da veia cava superior (mais comum) ou da veia cava inferior. Associa-se fortemente à conexão anômala parcial de veias pulmonares (geralmente das veias pulmonares direitas drenando na VCS ou AD).",
+            "<strong>Tipo Seio Coronário:</strong> Forma mais rara (&lt; 1%), caracterizada pelo desnudamento parcial ou total do teto do seio coronário, criando comunicação entre o AE e o interior da cavidade do seio coronário e AD."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Fisiopatologia e Clínica:</strong> O gradiente pressórico entre os dois átrios é muito baixo (AE: 5-8 mmHg; AD: 2-4 mmHg). No entanto, a complacência do ventrículo direito é substancialmente superior à do ventrículo esquerdo. Assim, durante a diástole, o sangue proveniente do AE encontra menor impedância para encher o AD e o VD do que o próprio VE. Isso determina sobrecarga volêmica exclusiva das câmaras direitas (AD e VD) e da árvore vascular pulmonar. O ventrículo esquerdo e a aorta mantêm dimensões normais ou ligeiramente reduzidas. Como o hiperfluxo pulmonar é de baixa pressão, a maioria das crianças com CIA permanece absolutamente assintomática durante a primeira infância, sendo o diagnóstico motivado por sopro incidental em exame de rotina."
+        ],
+        [
+          "p",
+          "<strong>Semiologia Típica:</strong> Três achados compõem o estigma semiológico clássico da CIA de repercussão:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Desdobramento Amplo e Fixo da Segunda Bulha (B2):</strong> Em indivíduos normais, a inspiração aumenta o retorno venoso às câmaras direitas, retardando o componente pulmonar de B2 (P2), enquanto na expiração os componentes aórtico (A2) e pulmonar (P2) praticamente se fundem. Na CIA, o fluxo aumentado no VD é permanente durante todo o ciclo respiratório, pois o orifício atua como um reservatório compensador. Como o volume ejetado pelo VD é maciço em ambas as fases, P2 permanece invariavelmente atrasado tanto na inspiração quanto na expiração. O intervalo entre A2 e P2 não varia com a respiração.",
+            "<strong>Sopro Sistólico Ejetivo em Foco Pulmonar (2º espaço intercostal esquerdo):</strong> O orifício interatrial em si é silencioso (o sangue passa sem turbilhonamento por falta de gradiente pressórico). O sopro decorre exclusivamente da <em>estenose pulmonar relativa</em> causada pelo esvaziamento de um volume ventricular direito hipertrófico através de uma valva pulmonar anatomicamente normal.",
+            "<strong>Ruflar Diastólico em Foco Tricúspide (borda esternal esquerda baixa):</strong> Em defeitos com shunt volumoso (relação fluxo pulmonar/fluxo sistêmico Qp/Qs &gt; 2:1), o fluxo maciço atravessando a valva tricúspide durante a fase de enchimento rápido ventricular produz um ruflar mesodiastólico de hiperfluxo."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Exames Complementares e Tratamento:</strong> Ao ECG, observa-se desvio do eixo para a direita, sobrecarga de ventrículo direito e bloqueio incompleto de ramo direito (padrão rSR' em V1) na CIA tipo ostium secundum. Na CIA ostium primum, o achado patognomônico é o <em>desvio extremo do eixo para a esquerda</em> (hemibloqueio anterior esquerdo congênito). A radiografia mostra cardiomegalia leve a moderada por dilatação de AD e VD e pletora pulmonar. O ecocardiograma transtorácico confirma o defeito, quantifica as dimensões das câmaras direitas e avalia as bordas anatômicas (rims). A indicação cirúrgica ou percutânea ocorre na presença de sobrecarga de VD (aumento do diâmetro diastólico final de VD ou Qp/Qs &gt; 1,5:1), idealmente entre os 3 e 5 anos de vida. O fechamento percutâneo com prótese oclusora (ex.: Amplatzer) é o método de escolha para defeitos do tipo ostium secundum com bordas de tecido septal superiores a 4-5 mm (com exceção da borda aórtica anterior, que pode ser deficiente)."
+        ],
+        [
+          "3",
+          "3.2. Comunicação Interventricular (CIV)"
+        ],
+        [
+          "p",
+          "A CIV é a cardiopatia congênita mais comum ao nascimento, respondendo por 20% a 30% das malformações cardíacas (excluindo-se a valva aórtica bicúspide). É classificada conforme sua localização no septo interventricular:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Perimembranosa (ou membranosa):</strong> É o tipo mais prevalente (75% a 80%). Localiza-se no septo membranoso fibroso, próxima à valva aórtica e abaixo da cúspide septal da tricúspide. Apresenta alta taxa de fechamento espontâneo por aposição de tecido acessório da tricúspide (formação de aneurisma do septo membranoso).",
+            "<strong>Muscular (ou trabecular):</strong> Responde por 10% a 15% dos casos. Circundada inteiramente por músculo em qualquer porção do septo apical, médio ou marginal (\"queijo suíço\"). Possui altíssima taxa de oclusão espontânea nos primeiros 2 anos.",
+            "<strong>Infundibular (supracristal, subarterial ou duplamente comprometida):</strong> Compreende 5% dos casos (mais frequente em populações asiáticas). Situa-se na via de saída ventricular, imediatamente abaixo das valvas aórtica e pulmonar. Não fecha espontaneamente e cursa frequentemente com prolapso da cúspide coronariana direita aórtica para dentro do defeito com insuficiência aórtica secundária progressiva (Efeito Venturi).",
+            "<strong>De Via de Entrada (ou tipo canal AV):</strong> Fica adjacente ao anel da valva tricúspide, inferiormente, compondo o espectro do DSAV."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Fisiopatologia da Sobrecarga de Câmaras:</strong> Diferente da crença leiga, a CIV com shunt E-D causa <strong>sobrecarga volumétrica das câmaras esquerdas (Átrio Esquerdo e Ventrículo Esquerdo)</strong> e sobrecarga pressórica da circulação pulmonar. O sangue passa do VE (alta pressão sistólica: 80-100 mmHg) para o VD (baixa pressão sistólica: 20-25 mmHg) durante a sístole. Como a resistência oferecida pela árvore pulmonar é muito menor que a sistêmica, o volume ejetado pelo defeito não permanece acumulado no VD; ele atravessa a via de saída de VD e a artéria pulmonar diretamente para os pulmões. Toda essa sobrecarga volêmica retorna pelas quatro veias pulmonares ao átrio esquerdo e ao ventrículo esquerdo. Consequentemente, as câmaras que se dilatam e sofrem hipertrofia excêntrica são o AE e o VE."
+        ],
+        [
+          "p",
+          "<strong>Apresentação Clínica por Tamanho:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Pequena / Restritiva (Doença de Roger):</strong> O orifício é minúsculo (geralmente &lt; 3 mm de diâmetro ou menor que um terço do diâmetro da raiz da aorta). Mantém enorme gradiente de pressão sistólica entre VE e VD. A criança é totalmente assintomática, com crescimento normal e sem congestão pulmonar. À ausculta, revela um <em>sopro holossistólico extremamente ríspido, de alta frequência, 3+ a 5+/6+, em regurgitação, na borda esternal esquerda média e baixa</em>, frequentemente acompanhado de frêmito sistólico palpável. A B2 é normal. Não há sobrecarga de câmaras no ECG e o fechamento espontâneo é a regra em até 70-80% dos casos.",
+            "<strong>Moderada a Ampla / Não Restritiva:</strong> O orifício é volumoso (&gt; 50% do anel aórtico), igualando as pressões sistólicas de VE e VD. O fluxo E-D é maciço. Ao nascimento, a alta RVP fisiológica do neonato restringe temporariamente a magnitude do shunt. Entre a 3ª e a 8ª semana de vida, ocorre a queda fisiológica normal da RVP; nesse instante, o shunt E-D dispara, inundando os pulmões. O lactente abre quadro florido de ICC: taquipneia, sudorese durante as mamadas, retração torácica, hepatomegalia e baixo ganho de peso. À ausculta, o sopro holossistólico pode tornar-se mais suave e menos ríspido (pois o gradiente de pressão diminui), surge B3 de galope e um ruflar diastólico em foco mitral (ponta do coração), expressando estenose mitral relativa por hiperfluxo atrioventricular esquerdo."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Manejo Clínico e Cirúrgico:</strong> Nas CIVs moderadas e amplas com insuficiência cardíaca na primeira infância, institui-se tratamento medicamentoso para alívio congestivo: furosemida (1 a 2 mg/kg/dia), espironolactona (1 a 2 mg/kg/dia) e inibidores da ECA (ex.: captopril ou enalapril para redução da pós-carga sistêmica, o que diminui o shunt E-D). Se o lactente mantiver desnutrição refratária, infecções pulmonares de repetição ou hipertensão arterial pulmonar persistente apesar da terapêutica farmacológica, a cirurgia corretiva (fechamento com retalho de pericárdio bovino ou PTFE por esternotomia mediana) está formalmente indicada, devendo ser executada idealmente entre 3 e 6 meses de vida para prevenir vasculopatia pulmonar obstrutiva irreversível (Síndrome de Eisenmenger)."
+        ],
+        [
+          "3",
+          "3.3. Persistência do Canal Arterial (PCA)"
+        ],
+        [
+          "p",
+          "Consiste na ausência de fechamento do ducto arterioso após o período neonatal imediato. É a cardiopatia congênita mais comum no recém-nascido pré-termo de muito baixo peso (&lt; 1.500 g), acometendo até 60-70% dos prematuros com idade gestacional inferior a 28 semanas em virtude da insensibilidade da parede ductal ao oxigênio e da baixa degradação de PGE2."
+        ],
+        [
+          "p",
+          "<strong>Fisiopatologia e Hemodinâmica:</strong> Após a queda da RVP, instala-se um gradiente contínuo de pressão entre a aorta e o tronco pulmonar. Durante a sístole, a pressão aórtica (ex.: 80 mmHg) supera amplamente a pressão pulmonar (ex.: 25 mmHg); durante a diástole, a pressão aórtica (ex.: 45 mmHg) continua sendo substancialmente superior à pressão diastólica pulmonar (ex.: 10 mmHg). Dessa forma, o shunt E-D ocorre tanto na sístole quanto na diástole de maneira ininterrupta. A circulação pulmonar é hiperperfundida e o retorno venoso aumentado congestiona o átrio esquerdo e o ventrículo esquerdo."
+        ],
+        [
+          "p",
+          "Adicionalmente, o esvaziamento contínuo de sangue da aorta para a artéria pulmonar durante a diástole gera o fenômeno de \"roubo vascular diastólico sistêmico\". A pressão arterial diastólica cai dramaticamente (queda da pós-carga diastólica), resultando em <strong>pressão de pulso extremamente alargada (pressão arterial convergente/divergente com diferencial &gt; 40-50 mmHg)</strong> e pulsos periféricos amplos, saltones e celéricos (<em>pulso de Corrigan</em> ou em martelo d'água). No prematuro, esse roubo diastólico provoca hipoperfusão sistêmica grave nos territórios mesentérico e cerebral, multiplicando os riscos de Enterocolite Necrosante (ECN) e hemorragia peri-intraventricular."
+        ],
+        [
+          "p",
+          "<strong>Semiologia Patognomônica:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Sopro Contínuo Sistodiastólico (Sopro em Maquinaria de Gibson):</strong> Auscultado com maior intensidade na região infraclavicular esquerda e segundo espaço intercostal esquerdo alto. Tem início na sístole precoce, atinge pico de intensidade envolvendo a segunda bulha cardíaca (ocultando-a frequentemente) e decresce gradualmente ao longo da diástole.",
+            "<strong>Ictus hiperdinâmico, taquipneia, precórdio hiperativo e pulsos saltones em todas as 4 extremidades.</strong>"
+          ]
+        ],
+        [
+          "p",
+          "<strong>Abordagem Terapêutica:</strong> No prematuro sintomático com PCA hemodinamicamente significativa (diâmetro ductal interno à ecografia &gt; 1,5 mm com fluxo retrógrado na aorta descendente), o fechamento farmacológico com inibidores da síntese de prostaglandinas é a primeira linha: <strong>Indometacina</strong> endovenosa ou <strong>Ibuprofeno</strong> endovenoso/oral (ou Paracetamol EV como alternativa de menor toxicidade gastrointestinal e plaquetária). No lactente a termo ou na falha terapêutica farmacológica com repercussão volêmica persistente, a intervenção de escolha é a oclusão percutânea com molas (coils) ou próteses vasculares expansoras (ex.: Amplatzer Duct Occluder) por cateterismo cardíaco intervencionista."
+        ],
+        [
+          "3",
+          "3.4. Defeito do Septo Atrioventricular (DSAV) e a Relação com a Síndrome de Down"
+        ],
+        [
+          "p",
+          "O Defeito do Septo Atrioventricular (antigamente denominado Defeito do Coxim Endocárdico) resulta da falha embriológica de fusão dos coxins endocárdicos anterior e posterior na linha média cardíaca. Divide-se anatomicamente em:"
+        ],
+        [
+          "u",
+          [
+            "<strong>DSAV Parcial:</strong> Apresenta dois anéis valvares atrioventriculares distintos e separados, mas coexiste uma CIA do tipo <em>ostium primum</em> associada à fenda (cleft) no folheto anterior da valva mitral, gerando insuficiência mitral. O septo ventricular encontra-se íntegro.",
+            "<strong>DSAV Total (Completo):</strong> Presença de um orifício septal atrioventricular único, contínuo e gigante, abrangendo uma CIA ostium primum e uma CIV de via de entrada, guarnecido por uma <strong>valva atrioventricular única comum</strong> composta por cinco cúspides (folhetos superior, inferior, lateral esquerdo, lateral direito e septal)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>A Ligação com a Trissomia do 21:</strong> O DSAV total é a alteração cardíaca com maior grau de agregação sindrômica da pediatria: <strong>aproximadamente 40% a 50% de todas as crianças com Síndrome de Down (Trissomia do 21) nascem com cardiopatia congênita, sendo o DSAV a anomalia mais incidente nesse grupo (respondendo por mais de 60% das cardiopatias do Down)</strong>. Devido à hipoplasia do leito arteriolar pulmonar e à disfunção endotelial intrínseca da Trissomia do 21, esses lactentes desenvolvem Hipertensão Pulmonar grave e vasculopatia obstrutiva de maneira ultraprecoce (frequentemente antes dos 6 a 9 meses de vida)."
+        ],
+        [
+          "p",
+          "<strong>Manifestações e Diagnóstico:</strong> O DSAV completo manifesta-se nos primeiros 30 a 60 dias de vida por insuficiência cardíaca congestiva explosiva e desnutrição acentuada. O ECG é absolutamente clássico e constitui questão certa de prova: <strong>eixo elétrico do QRS desviado para o quadrante superior esquerdo (entre -30º e -90º, com hemibloqueio anterior esquerdo) associado a sobrecarga biventricular e biatrial</strong>. O tratamento definitivo é cirúrgico (reconstrução do septo atrioventricular com técnica de dois retalhos e divisão da valva única em dois aparelhos valvares competentes), mandatória entre os 3 e 6 meses de vida na Síndrome de Down."
+        ],
+        [
+          "3",
+          "3.5. A Evolução Temida: Síndrome de Eisenmenger"
+        ],
+        [
+          "p",
+          "A Síndrome de Eisenmenger representa o estágio final e devastador de qualquer shunt congênito sistêmico-pulmonar não corrigido (CIV ampla, PCA não operada, DSAV ou mesmo CIA volumosa de longa evolução). A exposição crônica e sustentada do leito vascular pulmonar a altas taxas de fluxo e estresse cisalhante endotelial gera remodelação patológica da árvore arteriolar: proliferação miointimal, hipertrofia da túnica média, hialinização, fibrose perivascular e, por fim, lesões plexiformes obstrutivas irreversíveis (graus IV a VI da classificação de Heath-Edwards)."
+        ],
+        [
+          "p",
+          "Com isso, a Resistência Vascular Pulmonar sobe vertiginosamente até igualar e, subsequentemente, superar a Resistência Vascular Sistêmica (RVP &gt; RVS). <strong>O shunt inverte seu sentido original, tornando-se da Direita para a Esquerda (D-E).</strong>"
+        ],
+        [
+          "u",
+          [
+            "O sangue desoxigenado entra diretamente na circulação sistêmica. O paciente que era acianótico desenvolve <strong>cianose central progressiva, baqueteamento digital (dedos em vidro de relógio) e hipoxemia crônica</strong>.",
+            "O sopro holossistólico da CIV ou o sopro contínuo da PCA desaparecem completamente, pois as pressões entre as cavidades se equiparam, abolindo a turbulência.",
+            "Aparece um estalido de ejeção pulmonar e uma <strong>segunda bulha cardíaca hiperfonética e palpável no foco pulmonar (P2 metálica e estrondosa)</strong>, acompanhada de sopro diastólico de insuficiência pulmonar por dilatação anelar (sopro de Graham-Steell).",
+            "A medula óssea reage à hipoxemia crônica com hipersecreção de eritropoietina, deflagrando <strong>eritrocitose secundária grave (hematócrito frequentemente &gt; 65%)</strong> e hiperviscosidade sanguínea (risco iminente de cefaleia, acidentes vasculares encefálicos isquêmicos e trombose vascular pulmonar in situ)."
+          ]
+        ],
+        [
+          "4",
+          "Atenção Crítica: Inoperabilidade do Defeito Cardíaco Primário"
+        ],
+        [
+          "p",
+          "Uma vez documentada a reversão do shunt para D-E por vasculopatia obstrutiva fixa com hiper-resistência pulmonar irreversível não responsiva a vasodilatadores agudos, a correção cirúrgica do defeito cardíaco anatômico (fechamento da CIV, CIA ou ligadura do ducto) está <strong>FORMALMENTE CONTRAINDICADA</strong>. Se o defeito for cirurgicamente ocluído, o ventrículo direito perderá sua única via de descompressão contra um leito pulmonar intransponível, culminando em choque cardiogênico refratário e morte imediata na mesa cirúrgica. O manejo restringe-se a vasodilatadores pulmonares específicos (antagonistas dos receptores de endotelina como bosentana, inibidores da fosfodiesterase-5 como sildenafila e análogos de prostaciclina) e transplante duplo coração-pulmão."
+        ]
+      ]
+    ],
+    [
+      "cardiopatias-acianoticas-com-fluxo-normal-ou-obstrutivas",
+      0,
+      [
+        [
+          "2",
+          "4. Cardiopatias Acianóticas Obstrutivas (Fluxo Pulmonar Normal ou Diminuído)"
+        ],
+        [
+          "p",
+          "As cardiopatias congênitas acianóticas com fluxo pulmonar normal compreendem lesões estenosantes mecânicas do coração esquerdo ou direito. Nessas afecções, não existe shunt intracardíaco livre com mistura sanguínea nas fases iniciais; a fisiopatologia básica é o aumento súbito ou progressivo da pós-carga contra o ventrículo subjacente, desencadeando hipertrofia concêntrica miocárdica de adaptação e eventual falência de bomba."
+        ],
+        [
+          "3",
+          "4.1. Coarctação de Aorta (CoAo)"
+        ],
+        [
+          "p",
+          "A Coarctação de Aorta consiste em um estreitamento anatômico circunscrito e luminal da aorta torácica, situado de forma praticamente constante na região justaductal — adjacente à inserção da artéria subclávia esquerda e do ligamento arterioso. Responde por cerca de 5% a 8% de todas as cardiopatias congênitas e acomete com maior frequência o sexo masculino (relação 2:1). Destaca-se a forte associação genética com a <strong>Síndrome de Turner (Cariótipo 45,X0)</strong>, em que até 35% das pacientes portadoras exibem coarctação de aorta ou valva aórtica bicúspide."
+        ],
+        [
+          "p",
+          "<strong>A Valva Aórtica Bicúspide Concomitante:</strong> A anomalia congênita associada mais comum é a <strong>valva aórtica bicúspide</strong>, presente em até 70% a 85% de todos os pacientes com Coarctação de Aorta. Essa coocorrência impõe vigilância redobrada ao longo da vida adulta pelo risco de estenose aórtica acelerada, insuficiência valvar, aortopatia dilatadora ascendente e endocardite infecciosa."
+        ],
+        [
+          "p",
+          "<strong>Fisiopatologia e Apresentações Clínicas:</strong> A história natural da Coarctação de Aorta divide-se em duas formas epidemiológicas e clínicas totalmente contrastantes:"
+        ],
+        [
+          "4",
+          "A. Forma Neonatal / Crítica (Dependente de Canal)"
+        ],
+        [
+          "p",
+          "No recém-nascido, a coarctação severa pode envolver hipoplasia tubular associada do arco aórtico transversal. Durante os primeiros dias de vida, enquanto o ducto arterioso permanece amplamente pérvio, o ventrículo direito ejeta sangue através do canal arterial para a aorta descendente, garantindo a perfusão dos órgãos abdominais, rins e membros inferiores (circulação canal-dependente de fluxo sistêmico). A circulação pulmonar recebe sangue normalmente pelo tronco pulmonar."
+        ],
+        [
+          "p",
+          "No momento em que o canal arterial inicia seu fechamento funcional (geralmente entre o 3º e o 14º dia de vida), instala-se uma barreira mecânica intransponível ao fluxo sistêmico pós-ductal. A pós-carga do ventrículo esquerdo dispara agudamente, excedendo a capacidade contrátil do miocárdio neonatal imaturo. O recém-nascido evolui abruptamente com <strong>choque cardiogênico severo, acidose lática metabólica refratária, anúria por necrose tubular aguda isquêmica, extremidades inferiores frias, rendilhadas e sem pulsos</strong>. Se não for prontamente reconhecido e revertido pela reabertura imediata do ducto com infusão contínua de Prostaglandina E1 (Alprostadil), o quadro evolui para falência de múltiplos órgãos e óbito."
+        ],
+        [
+          "4",
+          "B. Forma do Lactente Maior, Criança e Adulto Jovem"
+        ],
+        [
+          "p",
+          "Naqueles pacientes com estreitamento discreto a moderado no período neonatal, o fechamento do canal ocorre sem colapso circulatório imediato. Com o crescimento corporal e o aumento das demandas hemodinâmicas, a constricção torna-se hemodinamicamente significativa. O organismo responde desenvolvendo uma exuberante rede de <strong>circulação colateral vicariante</strong>: as artérias subclávias e torácicas internas (mamárias internas) hipertrofiam-se, desviando sangue para as artérias intercostais anteriores e posteriores, as quais drenam na aorta descendente distal à obstrução, mantendo a viabilidade tecidual da metade inferior do corpo."
+        ],
+        [
+          "4",
+          "A Tétrade Semiológica Clássica da Coarctação da Aorta"
+        ],
+        [
+          "o",
+          [
+            "<strong>Hipertensão Arterial Sistêmica em Membros Superiores:</strong> Medida em ambos os braços, a PA sistólica encontra-se persistentemente elevada, contrastando com hipotensão nos membros inferiores.",
+            "<strong>Gradiente Pressórico Membros Superiores vs Membros Inferiores:</strong> Um diferencial de pressão arterial sistólica superior a 15 a 20 mmHg entre o braço direito e a perna (PAS MSD &gt; PAS MI) é altamente sugestivo e confirmatório de coarctação hemodinamicamente importante.",
+            "<strong>Pulsos Femorais Diminuídos e Retardados:</strong> A palpação simultânea dos pulsos radial (ou braquial) e femoral revela o <em>atraso radial-femoral</em> (retardo cronológico da onda de pulso) associado a amplitude marcadamente reduzida ou abolição total dos pulsos femorais, poplíteos e pediosos.",
+            "<strong>Sopro Sistólico Ejetivo Interescapular:</strong> Auscultado na borda esternal esquerda média/alta, mas caracteristicamente com irradiação dorsal máxima na região interescapular esquerda posterior, refletindo o turbilhonamento através do anel coarctado e dos vasos colaterais intercostais."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Achados Radiológicos Patognomônicos:</strong> Na radiografia simples de tórax da criança maior e do adulto jovem, destacam-se duas alterações clássicas consagradas em bancas examinadoras:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Sinal de Roesler (Corrosão Costal / Notching):</strong> Erosões e entalhes na borda inferior do 3º ao 8º arcos costais posteriores. Decorre da pulsação crônica de alta pressão e dilatação tortuosa das artérias intercostais que formam a rede colateral de desvio. Não acomete o 1º e 2º arcos costais, pois suas artérias intercostais derivam do tronco costocervical (acima da coarctação e sem anastomose reversa).",
+            "<strong>Sinal do \"3\" Aórtico:</strong> Na incidência posteroanterior, a silhueta da aorta no mediastino superior esquerdo desenha a forma de um número 3, moldada pela dilatação pré-estenótica da artéria subclávia/aorta, a reentrância central correspondente ao local da coarctação e a dilatação aneurismática pós-estenótica da aorta descendente. No esofagograma baritado, a mesma impressão indentada no esôfago gera o \"Sinal do E invertido\"."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Complicações e Conduta:</strong> Pacientes não operados correm alto risco de acidente vascular encefálico hemorrágico (decorrente da rotura de aneurismas saculares congênitos do polígono de Willis — <em>aneurismas em amora</em>, presentes em até 10% dos casos), dissecção aórtica aguda, endarterite infecciosa e insuficiência cardíaca esquerda. O tratamento de escolha no neonato sintomático e no lactente é a correção cirúrgica por toracotomia esquerda posterolateral com ressecção ampla do tecido ductal coarctado e anastomose término-terminal estendida (técnica de Crafoord modificada). Na criança maior e no adulto, a angioplastia por balão com implante de stent recoberto intravascular percutâneo consagrou-se como padrão-ouro com baixíssima morbidade."
+        ],
+        [
+          "3",
+          "4.2. Estenose Pulmonar Valvar"
+        ],
+        [
+          "p",
+          "Caracteriza-se pela fusão ou espessamento das cúspides da valva pulmonar, impondo obstrução à via de saída do ventrículo direito. É uma lesão acianótica com fluxo pulmonar normal a ligeiramente diminuído nos casos severos. Frequentemente associada à <strong>Síndrome de Noonan</strong> (mutação no gene PTPN11 da via RAS-MAPK), que cursa com estenose pulmonar displásica, baixa estatura, pescoço alado e hipertelorismo."
+        ],
+        [
+          "p",
+          "Ao exame físico, evidencia-se um sopro sistólico ejetivo rude em crescendo-decrescendo no 2º espaço intercostal esquerdo (foco pulmonar), frequentemente precedido por um <em>clique (estalido) de ejeção sistólico que diminui de intensidade durante a inspiração</em> (fenômeno auscultatório raríssimo, específico da estenose pulmonar móvel, pois a contração atrial direita aumentada pelo retorno inspiratório desloca previamente a valva para cima). Há desdobramento amplo de B2 com P2 hipofonético e atrasado. A radiografia de tórax revela dilatação pós-estenótica proeminente do tronco da artéria pulmonar principal e do ramo esquerdo (por jato de alta velocidade impactando a parede arterial), contrastando com campos pleuropulmonares de trama vascular preservada. O tratamento de escolha para estenoses com gradiente sistólico de pico &gt; 50 mmHg é a <strong>Valvoplastia Pulmonar Percutânea por Balão</strong>, com índices de sucesso curativo superiores a 95%."
+        ],
+        [
+          "3",
+          "4.3. Estenose Aórtica Congênita"
+        ],
+        [
+          "p",
+          "Compreende anomalias obstrutivas da via de saída ventricular esquerda, subdivididas em valvar (mais comum, com cúspides fusionadas ou unicuspidadas), subvalvar (membrana fibrosa ou túnel fibromuscular subaórtico) e supravalvar. A forma supravalvar associa-se intimamente à <strong>Síndrome de Williams-Beuren</strong> (microdeleção no cromossomo 7q11.23 envolvendo o gene da elastina), caracterizada por fáscies de \"duende\", personalidade excessivamente expansiva/amigável e hipercalcemia infantil idiopática."
+        ],
+        [
+          "p",
+          "A estenose aórtica severa impõe sobrecarga pressórica crônica extrema ao ventrículo esquerdo com hipertrofia concêntrica concavular, isquemia subendocárdica e risco de morte súbita durante esforços físicos. A tríade clássica de sintomas na infância avançada/adolescência consiste em <strong>angina de peito ao esforço, síncope e dispneia</strong>. A ausculta revela sopro sistólico ejetivo em foco aórtico com irradiação carotídea bilateral e estalido de ejeção aórtico não influenciado pela respiração. O pulso carotídeo é <em>parvus et tardus</em> (baixa amplitude e ascensão lenta). Em neonatos críticos com fechamento ductal, a lesão comporta-se como canal-dependente de fluxo sistêmico."
+        ]
+      ]
+    ],
+    [
+      "cardiopatias-cianoticas-com-hipofluxo-pulmonar",
+      0,
+      [
+        [
+          "2",
+          "5. Cardiopatias Congênitas Cianóticas com Hipofluxo Pulmonar"
+        ],
+        [
+          "p",
+          "As cardiopatias congênitas cianóticas com hipofluxo pulmonar são patologias graves caracterizadas pela coexistência de dois fatores hemodinâmicos fundamentais: uma obstrução severa ao fluxo de saída do ventrículo direito em direção aos pulmões e uma comunicação intracardíaca que permite o desvio massivo de sangue venoso desoxigenado (pobre em oxigênio) para o lado esquerdo da circulação e a aorta (shunt Direita-Esquerda). Como o sangue tem grande dificuldade de alcançar a microcirculação alveolar para realizar a hematose, a radiografia de tórax exibe campos pulmonares escuros e hipertransparentes (oligemia pulmonar com hipofluxo evidente)."
+        ],
+        [
+          "3",
+          "5.1. Tetralogia de Fallot (T4F)"
+        ],
+        [
+          "p",
+          "A Tetralogia de Fallot é a cardiopatia congênita cianótica mais comum após o primeiro ano de vida, respondendo por cerca de 10% de todas as cardiopatias congênitas. Embriologicamente, todas as quatro anomalias anatômicas descritas por Arthur Fallot em 1888 derivam de um <strong>único defeito embriogênico primitivo: o desvio anterossuperior do septo infundibular (septo conal)</strong>."
+        ],
+        [
+          "4",
+          "Os Quatro Componentes Anatômicos da Tetralogia de Fallot"
+        ],
+        [
+          "o",
+          [
+            "<strong>Estenose Pulmonar Subvalvar (Infundibular):</strong> O deslocamento anterior do septo infundibular estreita o trato de saída do ventrículo direito. Pode haver também estenose valvar pulmonar, anular e hipoplasia dos ramos pulmonares. O grau dessa obstrução é o fator determinante único da gravidade clínica e hemodinâmica da doença.",
+            "<strong>Comunicação Interventricular (CIV) Ampla e Desalinhada:</strong> Localizada no septo perimembranoso, é um defeito volumoso e não restritivo, igualando as pressões sistólicas de ambos os ventrículos.",
+            "<strong>Dextroposição da Aorta (Cavalgamento da Aorta sobre o Septo):</strong> A raiz da aorta encontra-se transladada anteriormente e para a direita, posicionando-se diretamente sobre a CIV e recebendo sangue simultaneamente do VE e do VD (cavalgamento aórtico &lt; 50%).",
+            "<strong>Hipertrofia Concêntrica do Ventrículo Direito:</strong> Não é uma lesão primária, mas sim uma adaptação hemodinâmica secundária do miocárdio de VD à sobrecarga pressórica crônica gerada pela ejeção contra a via de saída estenosada e contra a pressão sistêmica através da CIV."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Fisiopatologia e Espectro Clínico:</strong> A direção do fluxo através da CIV depende do balanço dinâmico entre duas forças opostas: a resistência oferecida pela estenose infundibular pulmonar de VD versus a resistência vascular sistêmica (RVS). Se a estenose infundibular for discreta, o sangue do VE pode passar para o VD e os pulmões (comportamento de CIV acianótica com hiperfluxo, o chamado \"Fallot Rosa\" ou acianótico). À medida que a musculatura do infundíbulo hipertrofia nos primeiros meses de vida, a obstrução pulmonar torna-se muito maior do que a RVS. O sangue venoso sistêmico que entra no VD encontra imensa dificuldade mecânica para atingir o tronco pulmonar; em consequência, <strong>o sangue desoxigenado do VD é ejetado diretamente através da CIV para dentro da aorta cavalgada (shunt D-E)</strong>, induzindo hipoxemia arterial sistêmica e cianose central progressiva visível em mucosas, lábios e leitos ungueais."
+        ],
+        [
+          "p",
+          "<strong>Achados Semiológicos e Radiológicos:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>A Origem do Sopro Cardíaco:</strong> Ao contrário do que muitos imaginam, a CIV ampla da Tetralogia de Fallot é totalmente silenciosa, pois não há gradiente pressórico entre o VD e o VE. <strong>O sopro auscultado no Fallot é exclusivamente o sopro sistólico ejetivo rude em foco pulmonar (2º e 3º espaços intercostais esquerdos), provocado pelo turbilhonamento através da estenose infundibular</strong>. Quanto mais grave e apertada for a estenose, menor será a quantidade de sangue que consegue atravessar a via pulmonar; portanto, <em>paradoxalmente, nas crises graves de hipóxia o sopro diminui de intensidade ou desaparece por completo!</em> A segunda bulha cardíaca é tipicamente única, pois o componente P2 é inaudível.",
+            "<strong>Radiografia de Tórax — O Coração em Sapato Tamanco Holandês (<em>Cœur en sabot</em>):</strong> O ápice cardíaco encontra-se arredondado e elevado acima da cúpula diafragmática em virtude da hipertrofia ventricular direita. Concomitantemente, a escavação na região do tronco da artéria pulmonar hipoplásica desenha uma cintura cardíaca aprofundada, conformando o clássico aspecto de sapato de madeira (\"sapato tamanco holandês\"). Os campos pulmonares revelam trama vascular escassa (oligemia pulmonar com radiotransparência aumentada). Em 25% dos casos, observa-se arco aórtico à direita."
+          ]
+        ],
+        [
+          "4",
+          "As Crises Hipercinéticas de Hipóxia / Crises de Cianose do Fallot (Spells)"
+        ],
+        [
+          "p",
+          "Trata-se de uma emergência médica pediátrica com risco iminente de óbito ou sequelas neurológicas isquêmicas permanentes. Ocorre tipicamente entre os 2 meses e 2 anos de idade, frequentemente deflagrada nas primeiras horas da manhã por fatores estressores que elevam o tônus adrenérgico endógeno: choro vigoroso prolongado, dor da punção venosa, esforço de evacuação, desidratação, febre ou hipovolemia."
+        ],
+        [
+          "p",
+          "<strong>Mecanismo Fisiopatológico da Crise:</strong> Um pico de estimulação simpática adrenérgica causa <strong>espasmo muscular súbito da musculatura do infundíbulo de VD</strong> associado a uma queda reflexa da Resistência Vascular Sistêmica (RVS). O canal de saída pulmonar fecha-se quase totalmente como um esfíncter muscular. O fluxo pulmonar é subitamente abolido; virtualmente 100% de todo o débito venoso do ventrículo direito é desviado através da CIV para a aorta. O lactente entra em hipoxemia crítica profunda (PaO2 &lt; 20-30 mmHg), acidose metabólica lática e hipercapnia. Essa acidose hipóxica atua nos centros respiratórios e receptores periféricos disparando hiperpneia e taquipneia desesperadas. A taquipneia eleva o retorno venoso e a ansiedade, amplificando o disparo adrenérgico e perpetuando um ciclo vicioso fatal."
+        ],
+        [
+          "p",
+          "<strong>Quadro Clínico da Crise:</strong> A criança que apresentava cianose leve torna-se subitamente intensamente cianótica (cinzenta/arroxeada), desenvolve hiperpneia com respiração profunda e rápida, irritabilidade extrema, palidez perioral, evoluindo rapidamente com letargia, convulsões hipóxicas, perda de consciência, coma e parada cardiorrespiratória. <em>À ausculta, o sopro sistólico prévio desaparece abruptamente</em>, atestando o bloqueio mecânico do fluxo pela via pulmonar."
+        ],
+        [
+          "p",
+          "<strong>Mecanismo da Postura de Cócoras (<em>Squatting</em>):</strong> Crianças maiores com Fallot aprendem espontaneamente a agachar-se em posição de cócoras durante episódios de cansaço ou esforço físico. <strong>O mecanismo fisiológico do agachamento consiste na flexão aguda dos joelhos e quadris sobre o abdome, que provoca acotovelamento e compressão mecânica das artérias femorais e ilíacas. Essa manobra eleva subitamente a Resistência Vascular Sistêmica (RVS)</strong>. Com a RVS aumentada na aorta, o gradiente do shunt inverte-se parcialmente: a pressão aórtica elevada supera a resistência infundibular, forçando maior volume de sangue a vencer a estenose e perfundir os capilares pulmonares, promovendo o clareamento da cianose e o alívio imediato da hipóxia."
+        ],
+        [
+          "4",
+          "Manejo Sistematizado da Crise de Cianose do Fallot (Passo a Passo)"
+        ],
+        [
+          "o",
+          [
+            "<strong>Posição Genupeitoral (Joelhos contra o Tórax):</strong> Intervenção inicial imediata e não invasiva. A flexão das coxas sobre o tronco reproduz artificialmente o efeito do agachamento (squatting), aumentando bruscamente a RVS e reduzindo o shunt D-E na CIV.",
+            "<strong>Acalmar a Criança e Oxigenoterapia:</strong> Manter a criança no colo materno com manipulação mínima para cessar o disparo adrenérgico. Administrar oxigênio a 100% sob máscara (embora o benefício direto no shunt seja modesto, o O2 atua reduzindo a vasoconstrição pulmonar).",
+            "<strong>Morfina Subcutânea ou Endovenosa (0,1 a 0,2 mg/kg):</strong> Fármaco de primeira linha. Age deprimindo o centro respiratório, reduzindo a hiperpneia e abolindo a ansiedade, o que cessa o ciclo adrenérgico patológico.",
+            "<strong>Expansão Volêmica com Cristaloides (SF 0,9% 10 a 20 mL/kg):</strong> Aumenta a pré-carga do VD, elevando a pressão telediastólica e ajudando a distender mecanicamente o infundíbulo espasmado.",
+            "<strong>Betabloqueador Intravenoso — Esmolol ou Propranolol:</strong> Diminui a frequência cardíaca e atua relaxando diretamente o espasmo muscular do infundíbulo hipertrófico da via de saída do VD.",
+            "<strong>Correção Agressiva da Acidose com Bicarbonato de Sódio (1 a 2 mEq/kg EV):</strong> Rompe o estímulo central de hiperpneia induzido pelo pH ácido.",
+            "<strong>Vasopressores Puros — Fenilefrina EV (agonista alfa-1 puro):</strong> Eleva potentemente a RVS sem taquicardia associada, forçando o sangue a migrar para os pulmões."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Cirurgia Definitiva e Paliativa:</strong> A cirurgia corretiva primária da Tetralogia de Fallot é realizada rotineiramente entre os 3 e 6 meses de vida, consistindo no fechamento da CIV com retalho de pericárdio e na ressecção muscular ampla da estenose infundibular com ampliação transanular do trato de saída. Quando a anatomia é extremamente desfavorável no neonato (hipoplasia extrema dos ramos pulmonares com crises precoces), realiza-se a cirurgia paliativa de <strong>Shunt de Blalock-Taussig Modificado (anastomose entre a artéria subclávia e o ramo ipsilateral da artéria pulmonar através de um tubo de PTFE / Gore-Tex)</strong>, garantindo fluxo pulmonar temporário até a correção total futura."
+        ],
+        [
+          "3",
+          "5.2. Atresia Tricúspide"
+        ],
+        [
+          "p",
+          "Caracteriza-se pela ausência congênita completa da conexão atrioventricular direita (valva tricúspide imperfurada ou ausente). Não há qualquer fluxo direto do átrio direito para o ventrículo direito. O ventrículo direito é invariavelmente hipoplásico ou rudimentar. Todo o sangue venoso sistêmico que retorna ao AD é forçado a atravessar uma CIA obrigatória (ou forame oval) em direção ao átrio esquerdo, onde se mistura ao sangue venoso pulmonar oxigenado. O ventrículo esquerdo único recebe toda a mistura e ejeta na aorta."
+        ],
+        [
+          "p",
+          "O fluxo de sangue para os pulmões depende da existência de uma CIV associada que alimente o VD rudimentar ou, na ausência de CIV, da persistência do canal arterial. Clinicamente, cursa com cianose central precoce desde as primeiras horas de vida. <strong>O eletrocardiograma é o diferencial mais marcante contra o Fallot em questões de concurso: enquanto o Fallot exibe sobrecarga de VD com desvio de eixo para a direita, a Atresia Tricúspide revela Eixo Elétrico Desviado para a Esquerda (entre 0º e -90º) e Sobrecarga de Ventrículo Esquerdo com ondas R gigantes em V5-V6</strong>. O tratamento exige cirurgias estadiadas de univentricularização (Shunt de Blalock-Taussig no neonato -> Glenn Bidirecional aos 4-6 meses -> Cirurgia de Fontan aos 2-4 anos de idade)."
+        ]
+      ]
+    ],
+    [
+      "cardiopatias-cianoticas-com-hiperfluxo-pulmonar",
+      0,
+      [
+        [
+          "2",
+          "6. Cardiopatias Congênitas Cianóticas com Hiperfluxo Pulmonar"
+        ],
+        [
+          "p",
+          "As cardiopatias congênitas cianóticas com hiperfluxo pulmonar caracterizam-se pela existência de mistura venoarterial anatômica obrigatória associada à ausência de barreiras obstrutivas à circulação pulmonar. Como a árvore vascular pulmonar oferece resistência hidráulica muito inferior à resistência sistêmica, o leito pulmonar recebe uma sobrecarga maciça de volume de sangue sob alta pressão. O paciente manifesta simultaneamente <strong>cianose central e quadro congestivo de insuficiência cardíaca (taquipneia, sudorese, tiragem)</strong>, com radiografia evidenciando cardiomegalia e acentuada pletora pulmonar."
+        ],
+        [
+          "3",
+          "6.1. Transposição das Grandes Artérias (TGA / D-TGA)"
+        ],
+        [
+          "p",
+          "A Transposição Completa das Grandes Artérias (D-TGA) é a cardiopatia congênita cianótica mais frequente no período neonatal imediato (primeiras 24 a 48 horas de vida), respondendo por cerca de 5% a 7% de todas as malformações congênitas cardíacas. Acomete predominantemente recém-nascidos a termo, eutróficos e do sexo masculino (relação 3:1), frequentemente filhos de mães diabéticas."
+        ],
+        [
+          "p",
+          "<strong>A Anatomia da Discordância Ventriculoarterial:</strong> Na D-TGA, a falha de rotação em espiral do septo troncoconal durante a 5ª semana embrionária faz com que os grandes vasos emerjam de ventrículos morfologicamente trocados:"
+        ],
+        [
+          "u",
+          [
+            "A <strong>Aorta emerge anormalmente do Ventrículo Direito morfológico</strong> (posicionando-se anterior e à direita da artéria pulmonar).",
+            "A <strong>Artéria Pulmonar emerge anormalmente do Ventrículo Esquerdo morfológico</strong> (posicionando-se posterior e à esquerda da aorta).",
+            "A concordância atrioventricular está preservada: as veias cavas drenam no AD, que se conecta pela tricúspide ao VD; as veias pulmonares drenam no AE, que se conecta pela mitral ao VE."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Fisiopatologia dos Dois Circuitos Fechados em Paralelo:</strong> O resultado dessa inversão arquitetural é a criação de <strong>dois circuitos vasculares completamente independentes e paralelos que nunca se cruzam</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Circuito Sistêmico:</strong> Sangue venoso sistêmico desoxigenado -> Veias Cavas -> Átrio Direito -> Ventrículo Direito -> Aorta -> Tecidos Sistêmicos -> Veias Cavas. Esse sangue hipóxico recircula indefinidamente pelo corpo sem jamais entrar em contato com os alvéolos pulmonares.",
+            "<strong>Circuito Pulmonar:</strong> Sangue venoso pulmonar oxigenado -> Veias Pulmonares -> Átrio Esquerdo -> Ventrículo Esquerdo -> Artéria Pulmonar -> Capilares Pulmonares -> Veias Pulmonares. Esse sangue ricamente oxigenado recircula indefinidamente pelos pulmões sem jamais atingir a circulação periférica."
+          ]
+        ],
+        [
+          "p",
+          "<strong>A Sobrevivência Dependente de Shunts:</strong> Essa conformação é <em>incompatível com a vida extrauterina</em> a menos que existam comunicações anatômicas que permitam a mistura bidirecional de sangue entre os dois circuitos independentes. Os pontos vitais de mistura são a <strong>Comunicação Interatrial (CIA) ou Forame Oval Patente</strong>, a <strong>Persistência do Canal Arterial (PCA)</strong> e, quando presente, a <strong>Comunicação Interventricular (CIV)</strong>. O nível interatrial é o sítio hemodinâmico mais eficaz para mistura e descompressão volumétrica."
+        ],
+        [
+          "p",
+          "<strong>Quadro Clínico e Apresentação Neonatal:</strong> O recém-nascido nasce vigoroso, corado e com boa pontuação de Apgar, pois a placenta mantinha a hematose. Nas primeiras horas de vida, à medida que o canal arterial inicia sua constrição fisiológica e o forame oval reduz seu orifício funcional, a mistura entre os circuitos cessa abruptamente. Instala-se <strong>cianose central severa, refratária e progressiva (\"azul petróleo\")</strong>, que não responde à administração de oxigênio a 100% (teste da hiperóxia negativo com PaO2 mantendo-se invariavelmente abaixo de 50-60 mmHg). Surpreendentemente, nos casos com septo interventricular íntegro (TGA simples), o exame cardiovascular pode revelar precórdio calmo e <strong>ausência total de sopros cardíacos audíveis</strong>, com B2 única e hiperfonética pelo posicionamento anterior da valva aórtica subesternal."
+        ],
+        [
+          "p",
+          "<strong>Radiografia de Tórax Típica: O Coração em Ovo Deitado (<em>Egg on a String</em>):</strong>"
+        ],
+        [
+          "u",
+          [
+            "A silhueta cardíaca apresenta aspecto ovóide descansando obliquamente sobre o diafragma (\"coração em ovo\").",
+            "O mediastino superior é anormalmente estreito em virtude do alinhamento anteroposterior das grandes artérias (a aorta encobre a artéria pulmonar na projeção radiológica frontal) associado à atrofia tímica induzida pelo estresse hipóxico agudo (\"o cordão do ovo\").",
+            "A trama vascular pulmonar exibe pletora acentuada (hiperfluxo pulmonar volumoso)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Manejo de Emergência Neonatal:</strong> A D-TGA com septo intacto é uma urgência máxima da neonatologia. A conduta imediata consiste em:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Iniciar Infusão Contínua de Prostaglandina E1 (Alprostadil):</strong> Na dose inicial de 0,05 a 0,1 mcg/kg/min em bomba de infusão, reduzindo para doses de manutenção (0,01 a 0,02 mcg/kg/min) assim que houver estabilização. A PGE1 impede o fechamento ou reabre o canal arterial, restabelecendo a passagem de sangue oxigenado para a aorta e aliviando a hipóxia crítica.",
+            "<strong>Atriosseptostomia por Balão de Rashkind:</strong> Se o recém-nascido mantiver hipoxemia grave (SatO2 &lt; 70-75% e acidose lática) apesar da PGE1, devido a um forame oval restritivo com gradiente interatrial, está indicada a realização de urgência do procedimento de Rashkind à beira do leito na UTI neonatal sob orientação ecocardiográfica. Introduz-se um cateter-balão pela veia femoral ou umbilical até o átrio esquerdo através do forame oval; o balão é insuflado com contraste/solução salina e tracionado vigorosamente contra o septo interatrial em direção ao AD, rompendo a lâmina da fossa oval e criando uma CIA ampla não restritiva que viabiliza mistura sanguínea de grande magnitude.",
+            "<strong>Cirurgia Definitiva de Jatene (Troca Arterial Anatômica / <em>Arterial Switch</em>):</strong> Desenvolvida pelo cirurgião brasileiro Adib Jatene em 1975, é a cirurgia de escolha no mundo inteiro. Consiste na transecção da aorta e artéria pulmonar, transpondo a aorta para o VE e a pulmonar para o VD (reconstrução anatômica), associada ao <strong>reimplante meticuloso dos botões coronarianos na neoaorta</strong>. <em>Momento Ideal:</em> Deve ser realizada impreterivelmente entre a 1ª e a 3ª semana de vida. Após a 3ª ou 4ª semana, a RVP cai e o ventrículo esquerdo (que ejeta sangue para a artéria pulmonar) atrofia sua massa miocárdica e perde espessura de parede; se a cirurgia for postergada além de 4 semanas, o VE não suportará assumir a pressão sistêmica, evoluindo com falência ventricular esquerda aguda fatal pós-operatória."
+          ]
+        ],
+        [
+          "3",
+          "6.2. Tronco Arterioso Comum (Persistent Truncus Arteriosus)"
+        ],
+        [
+          "p",
+          "Malformação congênita complexa resultante da ausência completa de septação embriológica do bulbo cardíaco e tronco arterioso primitivos pelas cristas troncoconais. Um <strong>único vaso arterial calibroso comum</strong> emerge da base dos ventrículos, cavalgando sobre uma ampla comunicação interventricular subarterial. Esse vaso único dá origem sequencialmente às artérias coronárias, às artérias pulmonares (de sua parede póstero-lateral) e ao arco aórtico. A valva truncal comum é displásica e polivalvular (3 a 5 folhetos), frequentemente estenótica e insuficiente."
+        ],
+        [
+          "p",
+          "<strong>Associação com Microdeleção 22q11.2:</strong> Até 35% a 40% dos pacientes com Tronco Arterioso Comum e 15% dos Fallots apresentam a <strong>Síndrome de DiGeorge (Síndrome da Deleção 22q11.2 / CATCH-22)</strong>, caracterizada por cardiopatia conotruncal, hipoplasia tímica com imunodeficiência celular por linfopenia T, aplasia de paratireoides com <em>hipocalcemia neonatal grave e convulsões</em>, fenda palatina e anomalias craniofaciais."
+        ],
+        [
+          "p",
+          "<strong>Quadro Clínico e Cirurgia:</strong> Manifesta-se desde o nascimento por cianose discreta associada a insuficiência cardíaca congestiva hiperdinâmica maciça à medida que a RVP despenca nas primeiras semanas. Ausculta-se sopro sistólico ejetivo ríspido, sopro diastólico de insuficiência da valva truncal e pulsos periféricos amplos e saltones (por esvaziamento diastólico para as artérias pulmonares). O tratamento cirúrgico definitivo de Rastelli consiste na desinserção das artérias pulmonares do tronco comum, fechamento da CIV com retalho (direcionando o VE para a neoaorta) e interposição de um conduto valvulado (homoenxerto ou tubo biológico) conectando o VD às artérias pulmonares, devendo ser executado no primeiro mês de vida."
+        ]
+      ]
+    ],
+    [
+      "teste-do-coracaozinho-e-manejo-canal-dependente",
+      0,
+      [
+        [
+          "2",
+          "7. Teste do Coraçãozinho (Oximetria de Pulso) e Manejo das Lesões Canal-Dependentes"
+        ],
+        [
+          "p",
+          "O rastreamento neonatal precoce das cardiopatias congênitas críticas mediante a oximetria de pulso — popularmente conhecido como <strong>Teste do Coraçãozinho</strong> — é uma estratégia de triagem em saúde pública de altíssimo impacto, instituída compulsoriamente no Brasil pelo Ministério da Saúde em 2014 para todas as maternidades públicas e privadas integrantes do Sistema Único de Saúde (SUS) e da rede suplementar."
+        ],
+        [
+          "3",
+          "7.1. Protocolo Oficial do Teste do Coraçãozinho"
+        ],
+        [
+          "p",
+          "O teste foi desenhado para identificar cardiopatias congênitas críticas com hipoxemia subclínica antes da alta hospitalar, impedindo que o neonato entre em colapso hemodinâmico súbito ou óbito no domicílio após o fechamento ductal."
+        ],
+        [
+          "4",
+          "Parâmetros Técnicos Oficiais do Teste do Coraçãozinho"
+        ],
+        [
+          "u",
+          [
+            "<strong>Momento de Realização:</strong> Deve ser realizado impreterivelmente entre <strong>24 e 48 horas de vida</strong>, em recém-nascidos a termo ou pré-termos tardios (&gt;= 35 semanas) clinicamente assintomáticos. <em>Por que não antes de 24 horas?</em> Porque nas primeiras 24 horas a instabilidade vasomotora e a transição hemodinâmica fisiológica pulmonar geram alta taxa de resultados falso-positivos. <em>Por que não após 48 horas?</em> Porque a maioria das altas hospitalares ocorre em torno de 48 horas e o canal arterial pode iniciar seu fechamento crítico nesse intervalo.",
+            "<strong>Locais Anatômicos de Fixação dos Sensores de Oximetria:</strong> A aferição deve ser feita simultaneamente ou sequencialmente em dois pontos obrigatórios:\n      <ol>\n        <li><strong>Membro Superior Direito (MSD):</strong> Localização pré-ductal obrigatória (a artéria subclávia direita emerge do tronco braquiocefálico, antes da inserção aórtica do canal arterial).",
+            "<strong>Um dos Membros Inferiores (MID ou MIE):</strong> Localização pós-ductal obrigatória (a aorta descendente recebe a desembocadura do canal arterial antes de bifurcar-se nas artérias ilíacas)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Interpretação Rigorosa dos Resultados e Algoritmo Decisório:</strong>"
+        ],
+        [
+          "t",
+          [
+            "Classificação do Teste",
+            "Critérios de Oximetria de Pulso",
+            "Conduta Clínica Padronizada"
+          ],
+          [
+            [
+              "<strong>TESTE NEGATIVO (NORMAL)</strong>",
+              "Saturação de O2 &gt;= 95% tanto no MSD quanto no MI <strong>E</strong> diferença de saturação entre MSD e MI &lt;= 3%",
+              "Seguimento neonatal habitual de puericultura; alta da maternidade autorizada"
+            ],
+            [
+              "<strong>TESTE DUVIDOSO / ALTERADO (RETESTE)</strong>",
+              "Saturação de O2 entre 90% e 94% em qualquer um dos membros <strong>OU</strong> diferença de saturação &gt;= 4% entre MSD e MI",
+              "Aguardar exatamente 1 hora em observação clínica e <strong>REPETIR O TESTE</strong> seguindo os mesmos parâmetros"
+            ],
+            [
+              "<strong>TESTE POSITIVO (ANORMAL)</strong>",
+              "a) Saturação de O2 &lt; 90% em qualquer membro na primeira aferição;<br>\n        b) Persistência de saturação entre 90-94% ou diferença &gt;= 4% após o reteste de 1 hora",
+              "<strong>Contraindicar a alta hospitalar imediatamente</strong>; internar em unidade de cuidados intermediários/UTI neonatal; solicitar <strong>Ecocardiograma Transtorácico com urgência</strong> (prazo máximo de 24 horas); manter monitorização contínua e acesso vascular"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "7.2. Fisiopatologia das Cardiopatias Canal-Dependentes"
+        ],
+        [
+          "p",
+          "As cardiopatias congênitas críticas canal-dependentes são malformações cardíacas anatômicas em que a integridade da perfusão de um circuito vascular vital (pulmonar ou sistêmico) ou a mistura sanguínea intracardíaca dependem exclusivamente da patência e do calibre do ducto arterioso (canal arterial). Com a constrição e o fechamento do canal, o paciente evolui catastroficamente em poucos minutos ou horas."
+        ],
+        [
+          "4",
+          "A. Cardiopatias Canal-Dependentes de Fluxo Pulmonar"
+        ],
+        [
+          "p",
+          "O sangue que atinge o ventrículo direito é incapaz de alcançar os capilares pulmonares por obstrução anatômica completa da via de saída pulmonar. <strong>A circulação pulmonar sobrevive unicamente através do fluxo que passa da Aorta para a Artéria Pulmonar através do Canal Arterial</strong>. Exemplos: Atresia Pulmonar com septo intacto ou com CIV, Tetralogia de Fallot extrema com hipoplasia grave, Atresia Tricúspide com estenose pulmonar crítica e Anomalia de Ebstein grave. <em>Clínica ao fechamento ductal:</em> Cianose central súbita, profunda, acidose metabólica hipóxica e choque hipoxêmico."
+        ],
+        [
+          "4",
+          "B. Cardiopatias Canal-Dependentes de Fluxo Sistêmico"
+        ],
+        [
+          "p",
+          "Existe obstrução crítica ou atresia do lado esquerdo do coração. O ventrículo esquerdo é incapaz de perfundir o território sistêmico. <strong>O débito cardíaco sistêmico sobrevive unicamente através do sangue que é ejetado pelo Ventrículo Direito e atravessa o Canal Arterial em direção à Aorta Descendente</strong>. Exemplos: Síndrome da Hipoplasia do Ventrículo Esquerdo (SHVE), Coarctação de Aorta Crítica Neonatal, Interrupção do Arco Aórtico e Estenose Aórtica Crítica do recém-nascido. <em>Clínica ao fechamento ductal:</em> Choque cardiogênico fulminante, extremidades frias e pálidas, pulsos periféricos nulos, oligúria/anúria, acidose lática refratária e falência de múltiplos órgãos."
+        ],
+        [
+          "4",
+          "C. Cardiopatias Canal-Dependentes de Mistura Intracardíaca"
+        ],
+        [
+          "p",
+          "Representada arquetipicamente pela <strong>Transposição das Grandes Artérias (TGA)</strong>. A patência ductal garante que haja troca e mistura volumétrica contínua de sangue oxigenado e desoxigenado entre os circuitos em paralelo, atenuando a hipóxia arterial periférica."
+        ],
+        [
+          "3",
+          "7.3. O Fármaco Salvante: Prostaglandina E1 (Alprostadil)"
+        ],
+        [
+          "p",
+          "Diante da menor suspeita clínica ou gasométrica de cardiopatia canal-dependente no período neonatal (recém-nascido com cianose refratária que não melhora com oxigênio ou recém-nascido com choque inexplicado e pulsos fracos após as primeiras 24-48 horas de vida), o médico não deve aguardar a realização do ecocardiograma para iniciar o tratamento. <strong>A infusão imediata de Prostaglandina E1 (Alprostadil) é a medida terapêutica de maior impacto na sobrevida do neonato cardiopata</strong>."
+        ],
+        [
+          "p",
+          "<strong>Mecanismo Farmacológico e Posologia:</strong> O Alprostadil é um agonista potente dos receptores EP2 e EP4 de prostaglandina situados na membrana das células musculares lisas da túnica média do canal arterial. A ligação do fármaco ativa a adenilato ciclase, elevando os níveis intracelulares de monofosfato cíclico de adenosina (AMPc), o que sequestra o cálcio citosólico e promove o relaxamento ativo e a dilatação imediata do tecido muscular ductal, reabrindo o canal arterial estenosado em minutos."
+        ],
+        [
+          "u",
+          [
+            "<strong>Dose de Ataque / Resgate:</strong> 0,05 a 0,1 mcg/kg/min por via endovenosa contínua em bomba de infusão (acesso venoso periférico calibroso ou cateter venoso central/umbilical).",
+            "<strong>Dose de Manutenção:</strong> Tão logo haja reabertura documentada do ducto (subida da SatO2 &gt; 80-85% ou reaparecimento de pulsos femorais e melhora da perfusão sistêmica), a taxa de infusão deve ser titulada regressivamente para 0,01 a 0,02 mcg/kg/min para minimizar os efeitos adversos sistêmicos."
+          ]
+        ],
+        [
+          "4",
+          "Efeitos Adversos Sistêmicos Críticos do Alprostadil"
+        ],
+        [
+          "u",
+          [
+            "<strong>Apneia Neonatal Central:</strong> É o efeito colateral mais frequente e perigoso da PGE1, ocorrendo em até 10% a 15% dos recém-nascidos, habitualmente na primeira hora após o início da infusão ou em doses superiores a 0,05 mcg/kg/min. <em>Exigência mandotória:</em> O paciente em infusão de PGE1 deve estar continuamente monitorizado com oxímetro e cardioscópio, e a equipe deve estar imediatamente preparada para realizar intubação orotraqueal e ventilação mecânica invasiva. A suspeita de apneia NÃO justifica a suspensão da PGE1; intuba-se o paciente e mantém-se a medicação salvadora!",
+            "<strong>Hipotensão Arterial e Rubor Cutâneo (Flushing):</strong> Secundários à vasodilatação arteriolar sistêmica generalizada. Tratados com alíquotas de cristaloide (SF 0,9% 10 mL/kg).",
+            "<strong>Febre e Hipertermia Central:</strong> Disparo hipotalâmico induzido pela prostaglandina em até 10% dos casos. Não indica sepse bacteriana per si.",
+            "<strong>Hipocalcemia, Trombocitopenia e Efeito Ósseo:</strong> Em infusões prolongadas (semanas), pode ocorrer hiperostose cortical reversível dos ossos longos."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-e-questoes-comentadas",
+      0,
+      [
+        [
+          "2",
+          "8. Casos Clínicos Integradores e Banco de Questões Comentadas Padrão Residência Médica"
+        ],
+        [
+          "p",
+          "Nesta seção, consolidamos a tomada de decisão médica diante de cenários pediátricos de alta complexidade e questões autorais exaustivamente comentadas nos modelos de bancas de Residência Médica (Revalida INEP, USP, UNIFESP, ENARE, SURCE e PSU-MG)."
+        ],
+        [
+          "3",
+          "Caso Clínico 1 — O Colapso Circulatório Pós-Alta na Maternidade"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Recém-nascido a termo, masculino, peso de nascimento 3.250 g, parto vaginal sem intercorrências, Apgar 9/10, alta da maternidade com 40 horas de vida após teste do coraçãozinho registrado como \"normal\" pela equipe de enfermagem. Com 8 dias de vida, a mãe procura a emergência pediátrica referindo que o bebê \"parou de mamar, ficou com as pernas arroxeadas, respiração muito acelerada e gemência contínua\"."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico de Admissão:</strong> Neonato letárgico, pálido, com livedo reticular nos membros inferiores. Tempo de enchimento capilar de 5 segundos nas pernas e 2 segundos nas mãos. FR: 72 irpm, com tiragem subcostal importante. FC: 180 bpm. PA em membro superior direito: 92/58 mmHg; PA em membro inferior direito: inaudível / 42/26 mmHg por Doppler vascular. Pulsos radiais amplos e cheios; pulsos femorais, poplíteos e pediosos impalpáveis bilateralmente. Ausculta cardíaca: taquicardia em galope por B3, sopro sistólico ejetivo 2+/6+ audível na borda esternal esquerda e região interescapular dorsal. Fígado palpável a 4 cm do rebordo costal direito. Gasometria venosa: pH 7,12; pCO2 28 mmHg; HCO3 9 mEq/L; BE -18 mEq/L; Lactato arterial 8,4 mmol/L (acidose metabólica grave com hiperlactatemia)."
+        ],
+        [
+          "p",
+          "<strong>Discussão Diagnóstica e Conduta Imediata:</strong>"
+        ],
+        [
+          "p",
+          "O quadro clínico é o arquetípico colapso circulatório por <strong>Coarctação de Aorta Crítica Neonatal</strong>, que se manifestou clinicamente logo após o fechamento ductal anatômico por volta do 7º ao 8º dia de vida. Enquanto o canal arterial permaneceu aberto nos primeiros dias, o ventrículo direito mantinha a perfusão da metade inferior do corpo, permitindo que o bebê recebesse alta falsamente hígido. Com o fechamento do canal, instalou-se choque obstrutivo de pós-carga e hipoperfusão sistêmica grave."
+        ],
+        [
+          "p",
+          "<strong>Ação Salvadora Imediata:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Garantir Acesso Vascular e Iniciar Alprostadil (PGE1):</strong> Infusão imediata de Prostaglandina E1 na dose de 0,05 a 0,1 mcg/kg/min em bomba contínua. Não atrasar o início do Alprostadil para aguardar a chegada do ecocardiografista. O Alprostadil promoverá o relaxamento da musculatura ductal, reabrindo o canal arterial e restabelecendo o fluxo sanguíneo para a aorta descendente em 10 a 20 minutos, recuperando a perfusão renal e de membros inferiores.",
+            "<strong>Vigilância Rigorosa das Vias Aéreas:</strong> Equipamento de intubação orotraqueal e ventilação mecânica pronto à beira do leito diante do risco elevado de apneia central induzida pela PGE1.",
+            "<strong>Suporte Hemodinâmico e Metabólico:</strong> Correção cautelosa da volemia (alíquota de 10 mL/kg de SF 0,9%), inotrópico se persistir disfunção miocárdica (milrinona ou dobutamina) e agendamento da cirurgia de anastomose término-terminal estendida com cirurgia cardiovascular pediátrica."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2 — A Crise Hipóxica Durante a Consulta de Puericultura"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Lactente de 4 meses de vida, com diagnóstico prévio de sopro cardíaco em investigação, é trazido ao ambulatório de pediatria. A mãe relata que a criança \"fica roxinha quando chora muito forte\". Ao ser despido na maca fria para pesagem, o lactente inicia choro vigoroso e inconsolável."
+        ],
+        [
+          "p",
+          "<strong>Evolução Aguda:</strong> Subitamente, os lábios, a língua e as pontas dos dedos tornam-se de coloração roxo-escura (cianose universal intensa). A criança desenvolve padrão respiratório taquipneico e hiperpneico profundo (FR &gt; 75 irpm), com olhos arregalados, hipotonia progressiva e letargia. O pediatra ausculta o precórdio: <em>o sopro sistólico rude que era audível minutos antes no foco pulmonar desapareceu completamente</em>."
+        ],
+        [
+          "p",
+          "<strong>Discussão e Conduta Sequencial na Emergência:</strong>"
+        ],
+        [
+          "p",
+          "Trata-se de uma clássica <strong>Crise de Cianose / Crise Hipoxêmica da Tetralogia de Fallot</strong> deflagrada pelo estresse e choro do exame físico. O pico adrenérgico deflagrou espasmo agudo do infundíbulo muscular da via de saída do ventrículo direito associado a vasodilatação sistêmica, abolindo o fluxo pulmonar (o que causou o desaparecimento do sopro de estenose pulmonar) e desviando todo o débito venoso do VD para a aorta através da CIV."
+        ],
+        [
+          "p",
+          "<strong>Manejo Imediato em 5 Etapas:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Posição Genupeitoral:</strong> O pediatra deve fletir imediatamente as coxas da criança com firmeza contra o tórax (posição de cócoras passiva). Isso dobra a resistência vascular sistêmica, forçando o sangue a migrar para os pulmões.",
+            "<strong>Acalmar a Criança e Administrar O2 a 100%:</strong> Colocar a criança no colo da mãe para reduzir a ansiedade e oferecer oxigênio úmido sob máscara facial de alto fluxo.",
+            "<strong>Morfina:</strong> Administrar sulfato de morfina 0,1 a 0,2 mg/kg por via subcutânea ou intramuscular (ou EV se acesso venoso rápido disponível, sem perder tempo com punções traumáticas que ampliem o choro). A morfina deprime o centro respiratório, cessa a hiperpneia e corta o feedback simpático.",
+            "<strong>Cristaloide EV:</strong> Expansão com SF 0,9% 10 a 20 mL/kg para aumentar o volume telediastólico de VD e distender o infundíbulo espasmado.",
+            "<strong>Betabloqueador (Esmolol ou Propranolol):</strong> Se a crise persistir, administrar betabloqueador venoso para relaxar diretamente a musculatura infundibular hipertrófica. Encaminhar para programação cirúrgica corretiva definitiva da Tetralogia de Fallot com urgência."
+          ]
+        ],
+        [
+          "3",
+          "Banco de Questões Comentadas Padrão Residência Médica"
+        ],
+        [
+          "4",
+          "Questão 1 (Revalida INEP / USP)"
+        ],
+        [
+          "p",
+          "Recém-nascido a termo, sexo masculino, com 30 horas de vida, clinicamente assintomático, em aleitamento materno exclusivo no alojamento conjunto. A equipe de enfermagem realiza o teste de triagem neonatal por oximetria de pulso (Teste do Coraçãozinho), obtendo os seguintes valores: Saturação de O2 em membro superior direito = 96%; Saturação de O2 em membro inferior direito = 91%. Diante deste achado, assinale a conduta médica correta:"
+        ],
+        [
+          "p",
+          "A) Liberar o paciente para alta hospitalar com orientação de retorno em 7 dias, pois a saturação do membro superior encontra-se acima de 95%.<br>\nB) O teste é considerado duvidoso/alterado devido à diferença &gt;= 4% entre os membros; deve-se manter o recém-nascido em observação e repetir a oximetria em 1 hora.<br>\nC) O teste é imediatamente positivo; deve-se prescrever infusão de Prostaglandina E1 e encaminhar para a UTI neonatal.<br>\nD) O teste é falso-positivo decorrente de hipotermia periférica; deve-se apenas aquecer o neonato e liberar alta sem novo teste.<br>\nE) Solicitar radiografia de tórax e gasometria arterial e, se normais, descartar cardiopatia congênita."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Letra B.</strong><br>\n<strong>Comentário Detalhado:</strong> O protocolo oficial do Ministério da Saúde e da Sociedade Brasileira de Pediatria define que um Teste do Coraçãozinho é considerado DUVIDOSO / ALTERADO quando a saturação em qualquer membro estiver entre 90% e 94% OU quando houver uma diferença de saturação igual ou superior a 4% entre o membro superior direito e o membro inferior. No caso clínico, a saturação no MSD foi de 96%, porém no MID foi de 91% (diferença de 5 pontos percentuais, além do valor isolado de 91% no MI estar na faixa de 90-94%). A conduta mandatória é manter o neonato na maternidade, aguardar exatamente 1 hora e repetir o teste. Caso o reteste mantenha a alteração, o exame será consolidado como POSITIVO, exigindo a solicitação imediata de ecocardiograma transtorácico em até 24 horas antes de qualquer liberação de alta. A alternativa A é incorreta pois ignora a discrepância pré e pós-ductal. A alternativa C é incorreta porque a indicação direta de PGE1 e UTI sem reteste aplica-se apenas quando a saturação for inferior a 90% logo na primeira medição ou quando houver clínica manifesta. Alternativas D e E desrespeitam o protocolo oficial de segurança."
+        ],
+        [
+          "4",
+          "Questão 2 (ENARE / Residência Médica)"
+        ],
+        [
+          "p",
+          "Lactente de 3 anos de idade é submetido à consulta pediátrica de rotina para ingresso em creche. A mãe não refere queixas, cansaço ou episódios de cianose. Ao exame físico: desenvolvimento pôndero-estatural no percentil 50. Ritmo cardíaco regular em dois tempos, com desdobramento amplo e fixo da segunda bulha cardíaca no foco pulmonar e sopro sistólico ejetivo 2+/6+ no segundo espaço intercostal esquerdo. O restante do exame físico é normal. O eletrocardiograma demonstra desvio do eixo elétrico para a direita e padrão rSR' nas derivações V1 e V2 (bloqueio incompleto de ramo direito). O diagnóstico provável e a causa do sopro sistólico são, respectivamente:"
+        ],
+        [
+          "p",
+          "A) Comunicação Interventricular perimembranosa; turbilhonamento através do septo interventricular.<br>\nB) Comunicação Interatrial tipo ostium secundum; estenose pulmonar relativa por hiperfluxo através da valva pulmonar anatomicamente normal.<br>\nC) Tetralogia de Fallot acianótica; turbilhonamento através da estenose infundibular subpulmonar.<br>\nD) Estenose Pulmonar Valvar congênita; fusão anatômica fibrótica das cúspides da valva pulmonar.<br>\nE) Persistência do Canal Arterial; fluxo contínuo sistodiastólico entre a aorta e o tronco pulmonar."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Letra B.</strong><br>\n<strong>Comentário Detalhado:</strong> O quadro semiológico descrito é o estigma clássico patognomônico da <strong>Comunicação Interatrial (CIA) tipo ostium secundum</strong>: criança assintomática, com desdobramento amplo e FIXO da segunda bulha (o intervalo entre A2 e P2 não varia com os ciclos de inspiração e expiração respiratórios) associado a padrão eletrocardiográfico de sobrecarga de ventrículo direito com BIRD (rSR' em V1-V2). Conceito de altíssima cobrança em provas: <em>o orifício da CIA não gera sopro audível</em>, pois o gradiente pressórico entre os átrios é virtualmente insignificante (2 a 4 mmHg). O sopro sistólico ejetivo suave no foco pulmonar decorre exclusivamente da <strong>estenose pulmonar relativa funcional</strong> provocada pelo esvaziamento de uma sobrecarga volumétrica maciça de ventrículo direito através de uma valva pulmonar de anel e cúspides normais. A alternativa A está errada porque a CIV cursa com sopro holossistólico rude em borda esternal esquerda média/baixa. A alternativa C está errada porque o Fallot cursa com cianose e P2 hipofonética/única. A alternativa D está errada pois a estenose valvar pulmonar pura gera desdobramento amplo porém variável com a respiração, clique ejetivo inspiratório e não costuma ser assintomática com B2 fixa. A alternativa E descreve sopro contínuo sistodiastólico em maquinaria, ausente no caso."
+        ],
+        [
+          "4",
+          "Questão 3 (SURCE / UNIFESP)"
+        ],
+        [
+          "p",
+          "Recém-nascido com 12 horas de vida apresenta cianose central generalizada intensa (\"azul arroxeado\") que não sofreu qualquer incremento após a administração de oxigênio a 100% sob campânula durante 10 minutos (PaO2 pós-oxigênio = 38 mmHg). Ao exame físico, o bebê encontra-se taquipneico (FR 68 irpm), afebril, com boa perfusão periférica e pulsos periféricos amplos e simétricos em todas as extremidades. O precórdio é calmo, com ausência de sopros cardíacos audíveis e segunda bulha única e hiperfonética. A radiografia de tórax revela silhueta cardíaca com aspecto ovóide de \"ovo deitado sobre uma corda\" (mediastino superior estreito) e trama vascular pulmonar acentuada (hiperfluxo). Considerando a principal hipótese diagnóstica, assinale a conduta farmacológica prioritária e a cirurgia curativa de escolha:"
+        ],
+        [
+          "p",
+          "A) Indometacina intravenosa para fechamento de canal; Cirurgia de Blalock-Taussig modificado.<br>\nB) Furosemida e Captopril; Fechamento cirúrgico de CIV com retalho de pericárdio bovino.<br>\nC) Infusão contínua de Prostaglandina E1 (Alprostadil); Cirurgia de Troca Arterial de Jatene.<br>\nD) Óxido nítrico inalatório e surfactante exógeno; Correção univentricular pelo princípio de Fontan.<br>\nE) Propranolol intravenoso para alívio de espasmo infundibular; Operação de Rastelli."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Letra C.</strong><br>\n<strong>Comentário Detalhado:</strong> O paciente apresenta o protótipo da <strong>Transposição das Grandes Artérias (TGA) simples com septo íntegro</strong>: recém-nascido no primeiro dia de vida com cianose central gravíssima e refratária ao teste da hiperóxia (confirmando shunt intracardíaco anatômico obrigatório), precórdio sem sopros audíveis e radiografia de tórax clássica com formato de coração em ovo deitado e mediastino estreito com pletora pulmonar. Trata-se de uma cardiopatia com circulação em paralelo dependente de canal e de comunicações interatriais para a mistura gasosa. A conduta medicamentosa prioritária para salvar a vida do neonato é a infusão imediata de <strong>Prostaglandina E1 (Alprostadil)</strong>, mantendo o canal arterial pérvio até que o ecocardiograma confirme a anatomia e permita avaliar a necessidade de atriosseptostomia por balão de Rashkind. O tratamento cirúrgico definitivo padrão-ouro é a <strong>Operação de Troca Arterial Anatômica de Jatene</strong> (transecção e transposição dos grandes vasos com reimplante das artérias coronárias), que deve ser realizada idealmente nas primeiras 2 a 3 semanas de vida antes que o ventrículo esquerdo descondicione e atrofie. A alternativa A está errada porque fechar o canal com indometacina seria letal. A alternativa B é conduta de insuficiência cardíaca congestiva isolada. A alternativa D aborda hipertensão pulmonar persistente neonatal primária. A alternativa E refere-se ao manejo de crise de Fallot."
+        ]
+      ]
+    ]
+  ]
+}

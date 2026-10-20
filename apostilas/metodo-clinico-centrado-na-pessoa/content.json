@@ -1,0 +1,1558 @@
+{
+  "v": 2,
+  "s": "metodo-clinico-centrado-na-pessoa",
+  "t": "Método Clínico Centrado na Pessoa",
+  "p": "Método Clínico Centrado na Pessoa — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "a": "Medicina de Família e Comunidade",
+  "m": "Medicina de Família e Comunidade",
+  "h": [
+    "Apostila LURIA",
+    "Método Clínico Centrado na Pessoa",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+    [
+      "Área: Medicina de Família e Comunidade",
+      "Matéria: Medicina de Família e Comunidade",
+      "Tema: Método Clínico Centrado na Pessoa"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "paradigma-mccp-fundamentos-historicos",
+      "1. Fundamentos Epistemológicos e Evolução do Método Clínico Centrado na Pessoa (MCCP)"
+    ],
+    [
+      "primeiro-componente-mccp-sife",
+      "2. Primeiro Componente do MCCP: Explorando a Saúde, a Doença (Disease) e a Experiência da Doença (Illness)"
+    ],
+    [
+      "segundo-terceiro-quarto-componentes-mccp",
+      "3. Segundo, Terceiro e Quarto Componentes do MCCP: Pessoa como um Todo, Plano Conjunto e Relação Médico-Pessoa"
+    ],
+    [
+      "habilidades-comunicacao-clinica-calgary-cambridge",
+      "4. Habilidades de Comunicação Clínica: Guia de Calgary-Cambridge, Escuta Ativa e Micro-Habilidades"
+    ],
+    [
+      "comunicacao-mas-noticias-protocolo-spikes",
+      "5. Comunicação de Más Notícias: Protocolo SPIKES e Adaptações na Atenção Primária"
+    ],
+    [
+      "entrevista-motivacional-estagios-mudanca",
+      "6. Entrevista Motivacional (Miller & Rollnick) e Modelo Transteórico de Mudança (Prochaska & DiClemente)"
+    ],
+    [
+      "prevencao-quaternaria-demanda-oculta-somatizacao",
+      "7. Demanda Oculta, Somatização, Pacientes Hiperutilizadores e Prevenção Quaternária no MCCP"
+    ],
+    [
+      "decisao-compartilhada-comunicacao-risco",
+      "8. Decisão Compartilhada (Shared Decision-Making), Comunicação de Risco e Letramento em Saúde"
+    ],
+    [
+      "casos-clinicos-resolvidos-mccp",
+      "9. Casos Clínicos Resolvidos e Comentados (Aplicação Prática do MCCP na APS)"
+    ],
+    [
+      "consultas-remotas-barreiras-especiais-entrevista-mccp",
+      "12. Situações Especiais de Comunicação Clínica na APS: Teleconsulta, Consultas Triádicas e Manejo da Raiva"
+    ],
+    [
+      "questoes-comentadas-residencia-mccp",
+      "10. Questões Comentadas de Residência Médica, Revalida e ENAMED (Padrão R1/MFC)"
+    ],
+    [
+      "tabela-high-yield-sintese-mccp",
+      "11. Síntese High-Yield e Quadro Sinóptico para Revisão Rápida de Véspera de Prova"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "paradigma-mccp-fundamentos-historicos",
+      0,
+      [
+        [
+          "2",
+          "1. Fundamentos Epistemológicos e Evolução do Método Clínico Centrado na Pessoa (MCCP)"
+        ],
+        [
+          "p",
+          "O Método Clínico Centrado na Pessoa (MCCP), sistematizado pelo grupo da Universidade de Western Ontario (liderado por Moira Stewart, Ian McWhinney, Judith Belle Brown, Wayne Weston, Carol McWilliam e Thomas Freeman), representa a mais profunda revolução epistemológica da medicina clínica contemporânea. Na Atenção Primária à Saúde (APS) e na Medicina de Família e Comunidade (MFC), o MCCP substitui a hegemonia reducionista do modelo biomédico tradicional (centrado exclusivamente na doença e no médico) por uma abordagem clínica integradora, dialógica e de alta resolutividade, sem jamais abdicar do rigor semiológico e propedêutico."
+        ],
+        [
+          "3",
+          "1.1 Crítica ao Modelo Biomédico Convencional e a Gênese em Western Ontario"
+        ],
+        [
+          "p",
+          "Desde o século XIX, impulsionado pela revolução anatomoclínica de Bichat e Laennec, pela teoria microbiana de Pasteur e Koch e consolidado pelo Relatório Flexner (1910), o modelo biomédico convencional estruturou-se sobre pressupostos mecanicistas e cartesianos. Nesse paradigma tradicional, o corpo humano é concebido como uma máquina biológica complexa, e a doença (<em>disease</em>) é compreendida estritamente como uma avaria físico-química, lesão tecidual ou desvio mensurável de variáveis fisiológicas e laboratoriais. A tarefa primordial do médico sob a ótica biomédica estrita resume-se a decodificar sintomas para localizar a lesão orgânica e aplicar uma intervenção corretiva padronizada."
+        ],
+        [
+          "p",
+          "Todavia, a prática clínica real na Atenção Primária demonstra que o modelo puramente biomédico apresenta falhas estruturais graves quando confrontado com a complexidade do adoecimento humano:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Incapacidade de lidar com sintomas medicamente inexplicados (SMI) e sofrimento indiferenciado:</strong> Até 30% a 50% das consultas na APS envolvem queixas que não se encaixam em categorias nosológicas anatômicas ou laboratoriais precisas no momento da apresentação inicial.",
+            "<strong>Dissociação entre gravidade patológica e impacto funcional:</strong> Pacientes com a mesma alteração anatomopatológica (ex: osteoartrite de joelho Kellgren-Lawrence grau II ou DPOC moderada com VEF1 de 60%) exibem graus radicalmente distintos de incapacidade, dor, absenteísmo e sofrimento psíquico, dependendo de suas crenças, suporte familiar e contexto socioeconômico.",
+            "<strong>Baixa adesão terapêutica e insatisfação mútua:</strong> Quando o médico prescreve um plano terapêutico unilateral sem explorar as ideias, os receios e as expectativas da pessoa, a taxa de não adesão a tratamentos crônicos ultrapassa 50%, gerando frustração profissional e iatrogenia."
+          ]
+        ],
+        [
+          "p",
+          "Diante dessa crise paradigmática, Ian McWhinney — amplamente reconhecido como o pai da Medicina de Família moderna —, em conjunto com Joseph Levenstein (médico sul-africano que trouxe insights pioneiros sobre o registro de expectativas do paciente) e Moira Stewart na Universidade de Western Ontario (Canadá), desenvolveu na década de 1980 o Método Clínico Centrado na Pessoa. Influenciado também pelos grupos Balint (Michael e Enid Balint, na década de 1950, com o conceito do \"médico como o próprio remédio\") e pelo Modelo Biopsicossocial de George Engel (1977), o grupo de Western Ontario operacionalizou a teoria sistêmica em um método clínico prático, reproduzível, ensinável e cientificamente validado."
+        ],
+        [
+          "3",
+          "1.2 A Evolução Histórica dos 6 para os 4 Componentes Atuais (3ª e 4ª Edições)"
+        ],
+        [
+          "p",
+          "Uma das armadilhas mais clássicas em provas de Residência Médica, Revalida e concursos de Medicina de Família e Comunidade reside na atualização estrutural do MCCP ocorrida a partir da 3ª edição do tratado <em>Patient-Centered Medicine: Transforming the Clinical Method</em> (Stewart et al., 2014, mantida na 4ª edição de 2024). Originalmente, nas duas primeiras edições (1995 e 2003), o método era descrito em <strong>6 componentes interativos</strong>:"
+        ],
+        [
+          "o",
+          [
+            "Explorando a doença (<em>disease</em>) e a experiência da doença (<em>illness</em>);",
+            "Entendendo a pessoa como um todo (indivíduo, família e contexto);",
+            "Elaborando um plano conjunto de manejo dos problemas (encontrando um terreno comum);",
+            "Incorporando prevenção e promoção da saúde;",
+            "Intensificando a relação entre a pessoa e o médico;",
+            "Sendo realista (uso adequado do tempo, trabalho em equipe e gestão de recursos)."
+          ]
+        ],
+        [
+          "p",
+          "Na revisão contemporânea (<strong>3ª e 4ª edições de Stewart et al.</strong>), os autores reestruturaram o modelo para <strong>4 componentes nucleares</strong>. Por que os antigos componentes 4 e 6 deixaram de figurar como componentes isolados? Porque a \"incorporação de prevenção e promoção da saúde\" foi absorvida transversalmente no <strong>Componente 1</strong> (que passou a se chamar \"Explorando a <em>saúde</em>, a doença e a experiência da doença\") e no <strong>Componente 3</strong> (como parte intrínseca do plano conjunto de cuidados). Já o antigo componente 6 (\"Sendo realista\") foi reconhecido não como um passo isolado do método, mas como o substrato pragmático e contextual que permeia toda a prática clínica e o trabalho em equipe multiprofissional."
+        ],
+        [
+          "t",
+          [
+            "Estrutura Clássica Antiga (6 Componentes - 1995/2003)",
+            "Estrutura Atual Consolidada (4 Componentes - Stewart et al., 2014/2024)",
+            "Status e Mudança Epistemológica"
+          ],
+          [
+            [
+              "1. Explorando a doença e a experiência da doença",
+              "<strong>1. Explorando a saúde, a doença (<em>disease</em>) e a experiência da doença (<em>illness</em>)</strong>",
+              "Ampliado para incluir a dimensão positiva da <strong>saúde</strong> (<em>health</em>), percepção de bem-estar e forças salutogênicas da pessoa."
+            ],
+            [
+              "2. Entendendo a pessoa como um todo",
+              "<strong>2. Entendendo a pessoa como um todo (indivíduo, família e contexto)</strong>",
+              "Mantido como pilar central: ciclo de vida, personalidade, sistema familiar e determinantes proximais/distais."
+            ],
+            [
+              "3. Elaborando um plano conjunto de manejo dos problemas",
+              "<strong>3. Elaborando um plano conjunto de manejo dos problemas (<em>finding common ground</em>)</strong>",
+              "Mantido como o coração decisório da consulta: definição de problemas, metas e papéis mútuos."
+            ],
+            [
+              "4. Incorporando prevenção e promoção da saúde",
+              "<em>Integrado aos Componentes 1 e 3</em>",
+              "Deixou de ser componente isolado; a prevenção/promoção agora é transversal na exploração da saúde e na pactuação do plano."
+            ],
+            [
+              "5. Intensificando a relação entre a pessoa e o médico",
+              "<strong>4. Intensificando a relação entre a pessoa e o médico</strong>",
+              "Reordenado como o 4º componente atual: aliança terapêutica, empatia, compaixão, transferência, contratransferência e autoconhecimento."
+            ],
+            [
+              "6. Sendo realista",
+              "<em>Pano de fundo contextual e organizacional</em>",
+              "Deixou de ser componente numerado; compreendido como sabedoria prática na gestão do tempo, energia da equipe e recursos do sistema."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "1.3 Evidências Científicas de Desfechos Clínicos do MCCP"
+        ],
+        [
+          "p",
+          "Ao contrário do mito equivocado de que \"ser centrado na pessoa demora mais tempo na consulta\", estudos observacionais e ensaios clínicos conduzidos pelo grupo de Western Ontario e replicados internacionalmente demonstraram que consultas conduzidas sob o MCCP apresentam duração média equivalente às consultas biomédicas tradicionais (cerca de 12 a 15 minutos na APS), especialmente quando o médico domina a escuta ativa inicial sem interrupção precoce. Além disso, a aplicação consistente do MCCP associa-se comprovadamente a:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Melhora estatisticamente significativa da satisfação da pessoa e do médico</strong>, reduzindo o esgotamento profissional (<em>burnout</em>) e o número de queixas recorrentes não resolvidas;",
+            "<strong>Aumento expressivo da adesão terapêutica</strong> farmacológica e não farmacológica em doenças crônicas (hipertensão arterial, diabetes mellitus, asma e depressão);",
+            "<strong>Redução de até 30% a 40% na solicitação de exames complementares desnecessários e encaminhamentos precipitados</strong> a especialistas focais, sendo a principal ferramenta operacional da Prevenção Quaternária;",
+            "<strong>Melhora de desfechos clínicos fisiológicos e funcionais</strong> (controle glicêmico medido por HbA1c, níveis pressóricos, recuperação funcional pós-evento agudo e alívio de sintomas álgicos e somáticos);",
+            "<strong>Redução drástica de processos ético-legais por erro médico</strong>, visto que a imensa maioria dos litígios decorre de falhas de comunicação, expectativas frustradas e ausência de compartilhamento decisório, e não apenas de imperícia técnica isolada."
+          ]
+        ]
+      ]
+    ],
+    [
+      "primeiro-componente-mccp-sife",
+      0,
+      [
+        [
+          "2",
+          "2. Primeiro Componente do MCCP: Explorando a Saúde, a Doença (Disease) e a Experiência da Doença (Illness)"
+        ],
+        [
+          "p",
+          "O Primeiro Componente do Método Clínico Centrado na Pessoa exige que o clínico navegue simultaneamente por duas agendas durante a consulta: a agenda biomédica tradicional (investigação fisiopatológica, semiológica e nosológica da doença) e a agenda da pessoa (sua percepção de saúde e sua vivência subjetiva do adoecer). Compreender a distinção conceitual entre <strong>Saúde (<em>Health</em>)</strong>, <strong>Doença (<em>Disease</em>)</strong> e <strong>Experiência da Doença / Adoecimento (<em>Illness</em>)</strong> — acrescida sociologicamente pelo conceito de <strong><em>Sickness</em></strong> — é requisito obrigatório para a prática clínica de excelência."
+        ],
+        [
+          "3",
+          "2.1 A Tríade Epistemológica: Disease, Illness e Sickness (Mais a Dimensão Health)"
+        ],
+        [
+          "p",
+          "Na língua inglesa e na antropologia médica (Arthur Kleinman, Cecil Helman e Ian McWhinney), os termos para o processo saúde-doença possuem recortes semânticos precisos que não podem ser confundidos:"
+        ],
+        [
+          "u",
+          [
+            "<strong><em>Health</em> (Saúde):</strong> Não é meramente a ausência de patologia, mas a percepção subjetiva e funcional de vitalidade, resiliência, propósito de vida e capacidade de realizar aspirações pessoais. Dois indivíduos com a mesma doença crônica podem ter percepções opostas de sua própria saúde: um paciente paraplégico engajado no esporte e no trabalho pode considerar-se plenamente saudável, enquanto um indivíduo sem patologia orgânica detectável pode sentir-se profundamente desprovido de saúde. Explorar a saúde envolve mapear a salutogênese (conceito de Aaron Antonovsky): quais são os recursos internos, hábitos protetores e fontes de significado que mantêm a pessoa saudável.",
+            "<strong><em>Disease</em> (Doença / Patologia Biomédica):</strong> É a construção teórica e objetiva da medicina científica. Refere-se à alteração estrutural, anatômica, bioquímica, genética ou fisiopatológica nos órgãos e sistemas corporais (ex: estenose coronariana aterosclerótica de 80%, infiltrado inflamatório alveolar por <em>Streptococcus pneumoniae</em>, mutação genética ou hipotiroidismo primário com TSH elevado). A <em>disease</em> é diagnosticada pelo médico por meio da anamnese dirigida, exame físico e propedêutica armada, sendo classificada em taxonomias padronizadas como a CID-10/CID-11.",
+            "<strong><em>Illness</em> (Experiência da Doença / Adoecimento):</strong> É a dimensão estritamente subjetiva, fenomenológica, pessoal e singular de quem sofre. Representa como a pessoa sente, interpreta, teme e vivencia seus sintomas ou seu rótulo diagnóstico no cotidiano. A <em>illness</em> abrange o sofrimento, o medo da morte ou da invalidez, a alteração da autoimagem e a ruptura biográfica causada pelo sintoma.",
+            "<strong><em>Sickness</em> (Enfermidade Social / Papel de Doente):</strong> Dimensão macrossocial e cultural do adoecimento (descrita por Talcott Parsons como <em>sick role</em>). Diz respeito a como a sociedade, a legislação trabalhista, a família e a cultura legitimam (ou estigmatizam) a condição do indivíduo, concedendo-lhe isenção de responsabilidades habituais (ex: atestado médico, auxílio-doença previdenciário) ou impondo-lhe estigma social (ex: hanseníase, HIV, transtornos mentais graves, fibromialgia vista com desconfiança no ambiente laboral)."
+          ]
+        ],
+        [
+          "3",
+          "2.2 A Matriz de Intersecção entre Disease e Illness"
+        ],
+        [
+          "p",
+          "A dissociação ou sobreposição entre <em>disease</em> e <em>illness</em> gera quatro cenários clínicos fundamentais na Atenção Primária:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Ausência de <em>Disease</em> e Ausência de <em>Illness</em>:</strong> O indivíduo assintomático que se sente bem e não possui alterações patológicas ocultas (ex: consulta de rotina para aconselhamento em estilo de vida ou emissão de certificado de aptidão física).",
+            "<strong>Presença de <em>Disease</em> SEM <em>Illness</em> (Doença Assintomática):</strong> Situação extremamente prevalente na APS em que há alteração fisiopatológica comprovada, porém a pessoa sente-se perfeitamente bem e não vivencia qualquer sofrimento ou limitação. Exemplos clássicos: Hipertensão Arterial Sistêmica estágio 1 ou 2 assintomática, Dislipidemia, Diabetes Mellitus tipo 2 inicial, Osteoporose densitométrica sem fraturas ou Neoplasia precoce detectada em rastreamento. <em>Implicação clínica:</em> Como a pessoa não tem <em>illness</em> (não sente nada), quando o médico prescreve um anti-hipertensivo que causa tosse (IECA), edema maleolar (anlodipino) ou disfunção erétil (tiazídico/betabloqueador), o tratamento passa a gerar uma <em>illness</em> iatrogênica! Compreender essa dinâmica explica por que a adesão em condições assintomáticas exige explorar profundamente o entendimento da pessoa.",
+            "<strong>Presença de <em>Illness</em> SEM <em>Disease</em> detectável:</strong> O paciente vivencia dor real, fadiga exaustiva, tontura, palpitações ou angústia intensa, mas toda a investigação clínica, laboratorial e de imagem descarta lesão orgânica estrutural. Exemplos: somatizações, transtorno de sintomas somáticos, luto agudo somatizado, sofrimento existencial e síndromes funcionais. O erro médico clássico aqui é dizer \"você não tem nada, seus exames estão todos normais\", invalidando a <em>illness</em> legítima do paciente.",
+            "<strong>Presença simultânea de <em>Disease</em> e <em>Illness</em>:</strong> O paciente apresenta tanto a alteração anatomofisiológica quanto a vivência subjetiva do sintoma (ex: paciente com insuficiência cardíaca descompensada sentindo dispneia paroxística noturna e pavor de morrer sufocado, ou paciente com crise aguda de gota incapacitado de trabalhar)."
+          ]
+        ],
+        [
+          "3",
+          "2.3 O Acrônimo SIFE (FIFE): As Quatro Dimensões da Experiência da Doença"
+        ],
+        [
+          "p",
+          "Para acessar de maneira sistemática, empática e clínica a experiência da doença (<em>illness</em>), Stewart et al. estruturaram o acrônimo em português <strong>SIFE</strong> (derivado do original em inglês <strong>FIFE</strong> — <em>Feelings, Ideas, Function, Expectations</em>). O SIFE não é um questionário engessado e mecânico a ser disparado em sequência robótica, mas uma bússola comunicacional para explorar o mundo interno da pessoa a partir das pistas verbais e não verbais que ela oferece:"
+        ],
+        [
+          "t",
+          [
+            "Letra (SIFE / FIFE)",
+            "Dimensão Explorada",
+            "Foco Clínico e Psicodinâmico",
+            "Exemplos de Perguntas Abertas Facilitadoras na Prática"
+          ],
+          [
+            [
+              "<strong>S</strong> (<em>Feelings</em>)",
+              "<strong>Sentimentos</strong>",
+              "Medos, receios específicos, ansiedade, culpa, raiva, tristeza ou alívio associados ao sintoma ou ao diagnóstico. Muitas vezes há um temor oculto de doença grave (câncer, infarto, perda de autonomia).",
+              "<em>\"O que mais o(a) preocupa em relação a essa dor de cabeça?\"</em><br><em>\"Como você tem se sentido emocionalmente desde que esse sintoma começou?\"</em><br><em>\"Existe algum receio específico de que isso possa ser algo mais grave?\"</em>"
+            ],
+            [
+              "<strong>I</strong> (<em>Ideas</em>)",
+              "<strong>Ideias</strong>",
+              "Modelos explicativos causais da pessoa, crenças sobre a natureza do problema, atribuições culturais ou familiares sobre o que está acontecendo em seu corpo.",
+              "<em>\"O que você imagina que esteja causando essa falta de ar?\"</em><br><em>\"Quando você conversou com sua família sobre isso, o que vocês pensaram que poderia ser?\"</em><br><em>\"Qual é a sua teoria sobre o porquê de essa dor ter piorado agora?\"</em>"
+            ],
+            [
+              "<strong>F</strong> (<em>Function</em>)",
+              "<strong>Funcionalidade</strong>",
+              "Impacto concreto do sintoma nas atividades básicas e instrumentais de vida diária (ABVD/AIVD), no trabalho, no sono, no lazer, na sexualidade e nos papéis familiares.",
+              "<em>\"De que maneira essa tontura está atrapalhando o seu dia a dia e o seu trabalho?\"</em><br><em>\"O que você deixou de fazer por causa desse cansaço?\"</em><br><em>\"Como esse problema tem afetado o seu sono e a convivência em casa?\"</em>"
+            ],
+            [
+              "<strong>E</strong> (<em>Expectations</em>)",
+              "<strong>Expectativas</strong>",
+              "O que a pessoa espera especificamente do médico e daquela consulta (uma explicação tranquila, um exame de imagem, um encaminhamento, um analgésico potente, um atestado ou apenas ser ouvida).",
+              "<em>\"Como você espera que eu possa te ajudar melhor hoje?\"</em><br><em>\"Você vinha pensando na necessidade de algum exame ou tratamento específico quando marcou esta consulta?\"</em><br><em>\"O que seria um bom resultado para você ao sair daqui hoje?\"</em>"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Pérola Clínica para Provas:</strong> Quando um paciente com cefaleia tensional solicita insistentemente uma Tomografia Computadorizada de Crânio, o médico biomédico defensivo ou cede imediatamente (gerando iatrogenia, radiação desnecessária e achados incidentais — <em>incidentalomas</em>) ou nega de forma autoritária (\"não tem indicação técnica\"). O médico que aplica o MCCP utiliza o <strong>SIFE</strong>: ao perguntar sobre <strong>Sentimentos</strong> e <strong>Ideias</strong>, descobre que o vizinho do paciente faleceu há duas semanas de ruptura de aneurisma cerebral (Ideia/Sentimento: medo de morte súbita por aneurisma) e que a <strong>Expectativa</strong> dele não é necessariamente a tomografia em si, mas ter segurança de que não vai morrer como o vizinho. Após exame neurológico minucioso normal e explicação clara dos sinais de alarme, o paciente sente-se compreendido e seguro, dispensando o exame desnecessário em comum acordo."
+        ]
+      ]
+    ],
+    [
+      "segundo-terceiro-quarto-componentes-mccp",
+      0,
+      [
+        [
+          "2",
+          "3. Segundo, Terceiro e Quarto Componentes do MCCP: Pessoa como um Todo, Plano Conjunto e Relação Médico-Pessoa"
+        ],
+        [
+          "p",
+          "A excelência na aplicação do Método Clínico Centrado na Pessoa requer a articulação fluida entre a exploração da experiência da doença (Componente 1) e os demais três pilares estruturantes do método atualizado de Stewart et al."
+        ],
+        [
+          "3",
+          "3.1 Segundo Componente: Entendendo a Pessoa como um Todo (Indivíduo, Família e Contexto)"
+        ],
+        [
+          "p",
+          "Nenhuma doença ou experiência de adoecimento ocorre no vácuo. O Segundo Componente posiciona a queixa clínica dentro de um sistema ecológico multinível, integrando a história biográfica da pessoa em duas grandes esferas concêntricas: o <strong>Contexto Proximal</strong> e o <strong>Contexto Distal</strong>, atravessados pelo desenvolvimento individual e familiar."
+        ],
+        [
+          "u",
+          [
+            "<strong>A Pessoa (Desenvolvimento Individual e Ciclo de Vida):</strong> Envolve a estrutura de personalidade, os mecanismos psicológicos de enfrentamento (<em>coping</em>), a espiritualidade/religiosidade e o estágio do desenvolvimento do ciclo vital individual (segundo Erik Erikson). Por exemplo, o diagnóstico de diabetes mellitus tipo 1 tem significados psicodinâmicos radicalmente distintos em um adolescente (fase de identidade vs. confusão de papéis, na qual a necessidade de parecer igual ao grupo de pares pode levar à omissão de doses de insulina) em comparação a um idoso aposentado (fase de integridade vs. desespero, focado na preservação da autonomia funcional).",
+            "<strong>Contexto Proximal (Microsistema):</strong> Compreende o ambiente imediato de relações interpessoais diretas da pessoa: a <strong>família</strong> (sua estrutura, dinâmica, estágio do ciclo de vida familiar e padrões transgeracionais de cuidado), a rede de apoio social íntima (amigos, vizinhos), a situação financeira doméstica, as condições físicas de moradia e o ambiente de trabalho imediato (ergonomia, assédio moral, turnos noturnos, segurança laboral).",
+            "<strong>Contexto Distal (Macrossistema e Determinantes Sociais da Saúde):</strong> Refere-se às forças estruturais mais amplas que moldam a vida da comunidade: a cultura, os costumes locais, a economia regional, o acesso ao sistema de saúde (barreiras geográficas ou organizacionais), o saneamento básico, a violência urbana, o racismo estrutural e as políticas públicas de seguridade social."
+          ]
+        ],
+        [
+          "p",
+          "Na Atenção Primária, graças ao atributo essencial da <strong>longitudinalidade</strong>, o médico de família não precisa investigar exaustivamente todo o contexto proximal e distal em uma única consulta de 15 minutos; esse conhecimento é construído cumulativamente ao longo de meses e anos de acompanhamento contínuo da pessoa e de sua família."
+        ],
+        [
+          "3",
+          "3.2 Terceiro Componente: Elaborando um Plano Conjunto de Manejo dos Problemas (Finding Common Ground)"
+        ],
+        [
+          "p",
+          "Considerado por Moira Stewart como o núcleo operacional e o componente mais fortemente preditor de desfechos positivos na consulta, o Terceiro Componente (\"Encontrando um Terreno Comum\") traduz a transição do modelo paternalista (\"o médico decide e o paciente obedece\") e do modelo consumista/informativo (\"o médico apenas joga dados técnicos e o paciente decide sozinho\") para a <strong>Decisão Compartilhada (<em>Shared Decision-Making</em>)</strong>."
+        ],
+        [
+          "p",
+          "A elaboração de um plano conjunto estrutura-se obrigatoriamente em <strong>três áreas de concordância mútua</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Definição conjunta do(s) problema(s) e prioridades:</strong> Médico e paciente precisam chegar a uma síntese compartilhada sobre qual é a natureza do problema. Se um paciente com dor lombar crônica mecânica acredita que tem uma \"coluna fora do lugar que vai deixá-lo paralítico se fizer esforço\" e o médico apenas rotula como \"lombalgia inespecífica\" e manda caminhar, não houve encontro de terreno comum na definição do problema. É preciso alinhar prioridades: muitas vezes a prioridade do médico naquela consulta é ajustar a dose da metformina (HbA1c de 8,8%), mas a prioridade inadiável da paciente é a insônia grave decorrente de violência doméstica sofrida pela filha. Sem acolher e negociar a lista de problemas prioritários, qualquer prescrição será inócua.",
+            "<strong>Estabelecimento dos objetivos e metas do tratamento/manejo:</strong> As metas terapêuticas devem fazer sentido para a vida da pessoa. Mais do que metas puramente laboratoriais ou substitutivas (<em>surrogate endpoints</em>, como reduzir o LDL para menos de 70 mg/dL), é fundamental pactuar metas funcionais e existenciais (ex: \"controlar a dispneia da DPOC para que o Sr. Antônio consiga caminhar dois quarteirões até a padaria e brincar com o neto sem sentir falta de ar\").",
+            "<strong>Definição clara dos papéis do médico e da pessoa (e da equipe multiprofissional):</strong> Quem fará o quê? Qual é a responsabilidade ativa da pessoa no autocuidado apoiado, até onde ela se sente capaz de mudar no momento atual (autoeficácia), e qual será o papel do médico (prescrição, solicitação de exames, coordenação do cuidado, agendamento de retorno programado) e dos demais profissionais da APS (enfermagem, eMulti, agente comunitário de saúde)?"
+          ]
+        ],
+        [
+          "3",
+          "3.3 Quarto Componente: Intensificando a Relação entre a Pessoa e o Médico"
+        ],
+        [
+          "p",
+          "O Quarto Componente reconhece que toda consulta clínica ocorre no interior de uma relação intersubjetiva contínua, dotada de potencial intrinsecamente terapêutico (efeito <em>Balint</em>). Se os três primeiros componentes descrevem a arquitetura de uma consulta específica, o quarto componente constitui o alicerce longitudinal que sustenta todas as consultas ao longo do tempo. Seus elementos estruturantes incluem:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Compaixão, Empatia e Confiança:</strong> Enquanto a <em>simpatia</em> é uma resposta emocional de pena ou identificação afetiva que pode nublar o julgamento clínico, a <strong>empatia clínica</strong> é uma competência cognitiva e afetiva: a capacidade de compreender acuradamente a experiência interna, os sentimentos e a perspectiva da pessoa, <em>e comunicar de volta essa compreensão</em> de forma validante. A <strong>compaixão</strong> vai um passo além da empatia: é a sensibilidade ao sofrimento do outro acoplada ao compromisso ético e genuíno de tentar aliviá-lo.",
+            "<strong>Compartilhamento de Poder (<em>Sharing Power</em>):</strong> Reduzir a assimetria de poder inerente à consulta médica, respeitando a autonomia do sujeito, democratizando a informação técnica em linguagem acessível e reconhecendo que, se o médico é o especialista na biomedicina e na epidemiologia, <strong>a pessoa é a maior especialista em sua própria história, corpo e valores</strong>.",
+            "<strong>Constância e Continuidade (<em>Continuity and Constancy</em>):</strong> O compromisso de \"estar lá\" ao longo do tempo, atravessando episódios agudos, crises familiares, agudizações de doenças crônicas e cuidados paliativos, sem abandonar o paciente quando a cura biológica não é mais possível.",
+            "<strong>Esperança e Cura (<em>Healing</em> vs. <em>Curing</em>):</strong> Na medicina centrada na pessoa, distingue-se nitidamente <em>Curing</em> (curar ou erradicar uma patologia orgânica, como tratar uma sífilis com penicilina benzatina) de <em>Healing</em> (restaurar a integridade, o sentido de coerência, a dignidade e a paz interior da pessoa mesmo diante de uma condição incurável, mutilante ou terminal).",
+            "<strong>Autoconhecimento do Médico, Transferência e Contratransferência:</strong> Conceitos oriundos da psicodinâmica aplicados diariamente na APS:\n    <ul>\n      <li><strong>Transferência:</strong> Fenômeno inconsciente pelo qual o paciente projeta no médico sentimentos, expectativas, desejos ou hostilidades originalmente vivenciados com figuras parentais ou significativas de seu passado (ex: um paciente que vê na médica jovem uma filha negligente e torna-se excessivamente controlador, ou que vê no médico mais velho uma figura paterna punitiva e oculta que não tomou a medicação por medo de \"levar bronca\").",
+            "<strong>Contratransferência:</strong> Conjunto de reações emocionais, afetivas e comportamentais (conscientes e inconscientes) que o paciente desperta no próprio médico, influenciadas pela história pessoal, valores e conflitos não resolvidos do profissional. Por exemplo: sentir raiva ou impaciência desproporcional diante de um paciente etilista crônico porque o próprio médico teve um pai alcoolista; ou sentir necessidade de salvar onipotentemente um paciente, violando limites profissionais. O médico centrado na pessoa não reprime nem atua impulsivamente (<em>acting out</em>) sua contratransferência: ele pratica o <strong>autoconhecimento reflexivo</strong> (<em>mindful practice</em>, descrita por Ronald Epstein), utilizando suas próprias emoções como instrumento diagnóstico para compreender a dinâmica relacional da consulta."
+          ]
+        ]
+      ]
+    ],
+    [
+      "habilidades-comunicacao-clinica-calgary-cambridge",
+      0,
+      [
+        [
+          "2",
+          "4. Habilidades de Comunicação Clínica: Guia de Calgary-Cambridge, Escuta Ativa e Micro-Habilidades"
+        ],
+        [
+          "p",
+          "Enquanto o Método Clínico Centrado na Pessoa (MCCP) estabelece o referencial conceitual e epistemológico do <em>que</em> deve ser alcançado no encontro clínico, os modelos de <strong>Habilidades de Comunicação Clínica</strong> — com destaque mundial para o <strong>Guia de Calgary-Cambridge</strong> (desenvolvido por Suzanne Kurtz, Jonathan Silverman e Juliet Draper) — fornecem as ferramentas comportamentais e técnicas de <em>como</em> conduzir cada etapa da entrevista médica."
+        ],
+        [
+          "3",
+          "4.1 A Arquitetura do Guia de Calgary-Cambridge"
+        ],
+        [
+          "p",
+          "O Guia de Calgary-Cambridge estrutura a consulta clínica em <strong>cinco etapas sequenciais</strong> amparadas por <strong>dois pilares longitudinais contínuos</strong> (que ocorrem do primeiro ao último minuto da consulta):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Etapa 1 — Iniciando a Sessão (<em>Initiating the session</em>):</strong> Preparação prévia do médico (zerar pendências emocionais da consulta anterior, ler o prontuário rapidamente), estabelecimento do <em>rapport</em> inicial (cumprimento acolhedor, contato visual, apresentação pelo nome e função) e identificação de todos os motivos da consulta (rastreamento da agenda completa).",
+            "<strong>Etapa 2 — Coletando Informações (<em>Gathering information</em>):</strong> Exploração dos problemas sob a perspectiva biomédica (história da doença atual, revisão de sistemas focada, antecedentes) e sob a perspectiva da pessoa (SIFE), utilizando a transição fluida de perguntas abertas para perguntas fechadas (técnica do cone ou funil).",
+            "<strong>Etapa 3 — Exame Físico (<em>Physical examination</em>):</strong> Pedido de permissão, explicação prévia das manobras, respeito ao pudor, lavagem das mãos e comunicação empática durante o toque clínico.",
+            "<strong>Etapa 4 — Explicação e Planejamento (<em>Explanation and planning</em>):</strong> Fornecimento da quantidade e do tipo corretos de informação, auxílio na retenção e compreensão (técnica <em>chunk and check</em> e <em>teach-back</em>) e tomada de decisão compartilhada.",
+            "<strong>Etapa 5 — Encerrando a Sessão (<em>Closing the session</em>):</strong> Resumo final do que foi combinado, checagem de dúvidas remanescentes e estabelecimento da <strong>Rede de Segurança (<em>Safety Netting</em>)</strong>.",
+            "<strong>Pilares Longitudinais Contínuos:</strong> (A) <em>Construindo o relacionamento</em> (comunicação não verbal adequada, empatia, ausência de julgamento) e (B) <em>Fornecendo estrutura à consulta</em> (organização lógica do tempo, sinalização de transições — <em>signposting</em> — e sumarizações periódicas)."
+          ]
+        ],
+        [
+          "3",
+          "4.2 Os Primeiros 90 Segundos de Ouro e o Mito da Interrupção Precoce"
+        ],
+        [
+          "p",
+          "Um dos achados mais clássicos e cobrados em provas de Medicina de Família e Comunidade provém dos estudos clássicos de <strong>Beckman e Frankel (1984)</strong> e da replicação de <strong>Marvel et al. (1999)</strong> e <strong>Ospina et al. (2018)</strong> sobre o comportamento médico no início da consulta:"
+        ],
+        [
+          "u",
+          [
+            "Em média, os médicos interrompem a fala inicial espontânea do paciente após apenas <strong>11 a 23 segundos</strong> do início do relato!",
+            "A interrupção precoce ocorre geralmente quando o paciente menciona o primeiro sintoma físico, fazendo com que o médico assuma o controle com uma enxurrada de perguntas fechadas (\"Há quantos dias tem essa dor? Tem febre? Já tomou remédio?\").",
+            "A consequência direta da interrupção precoce é o fracasso em identificar a agenda completa de problemas da pessoa, resultando no temido fenômeno de final de consulta: a <strong>queixa de maçaneta de porta</strong> (<em>\"Ah, doutor, já que estou saindo, tenho sentido uma dor no peito quando subo escada...\"</em>).",
+            "<strong>Quanto tempo dura a fala espontânea ininterrupta do paciente?</strong> Estudos de Beckman, Frankel e Langewitz demonstraram que, quando o médico não interrompe e mantém escuta ativa facilitadora nos primeiros <strong>90 a 120 segundos</strong>, mais de 80% dos pacientes concluem espontaneamente toda a sua narrativa inicial em <strong>menos de 90 segundos (média de 60 a 92 segundos)</strong>!"
+          ]
+        ],
+        [
+          "p",
+          "Para evitar o fetiche pela primeira queixa, após o paciente terminar a exposição do primeiro motivo, o médico deve utilizar a técnica de <strong>rastreamento da agenda (<em>screening</em>)</strong>: antes de aprofundar semiologicamente a primeira queixa, perguntar: <em>\"Além dessa dor no joelho, existe mais alguma coisa que você gostaria de conversar hoje?\"</em> e repetir <em>\"Mais alguma coisa?\"</em> até que a lista de demandas esteja mapeada. Em seguida, negocia-se a agenda caso haja múltiplos problemas complexos."
+        ],
+        [
+          "3",
+          "4.3 A Técnica do Cone (Funil) e o Espectro de Perguntas"
+        ],
+        [
+          "p",
+          "Durante a coleta de informações para cada problema da agenda, o médico utiliza a <strong>Técnica do Cone (ou Funil de Perguntas)</strong>, iniciando com máxima abertura e afunilando progressivamente:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Perguntas Abertas:</strong> Permitem que o paciente responda com suas próprias palavras, organizando sua narrativa e revelando o contexto e o SIFE (ex: <em>\"Conte-me mais sobre como começou essa falta de ar, desde o início.\"</em>).",
+            "<strong>Perguntas Abertas Direcionadas (Focadas):</strong> Delimitam o campo temático sem restringir a resposta a sim/não (ex: <em>\"Como é a característica dessa dor no estômago?\"</em> ou <em>\"O que acontece quando você tenta caminhar rápido?\"</em>).",
+            "<strong>Perguntas Fechadas:</strong> Essenciais na segunda metade da anamnese para testar hipóteses diagnósticas biomédicas específicas e pesquisar sinais de alarme (<em>red flags</em>) (ex: <em>\"As fezes ficaram escuras como borra de café?\"</em>, <em>\"Você teve febre medida no termômetro?\"</em>)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Erros técnicos condenados em provas:</strong> (1) <em>Perguntas indutoras ou tendenciosas</em> (ex: \"Essa dor não vai para o braço esquerdo, vai?\", que induzem o paciente a responder o que ele acha que o médico quer ouvir) e (2) <em>Perguntas múltiplas ou duplas</em> (ex: \"Você tem náusea, vômito, diarreia ou dor ao urinar?\", onde o paciente responde \"não\" apenas para o último item e o médico registra erroneamente a ausência de todos)."
+        ],
+        [
+          "3",
+          "4.4 Micro-Habilidades de Escuta Ativa, Comunicação Não Verbal e Educação em Saúde"
+        ],
+        [
+          "p",
+          "O domínio da entrevista clínica apoia-se em micro-habilidades verbais e não verbais de alta precisão:"
+        ],
+        [
+          "t",
+          [
+            "Micro-Habilidade Clínica",
+            "Definição Técnica e Mecanismo",
+            "Exemplo Prático na Consulta"
+          ],
+          [
+            [
+              "<strong>Facilitação (Encorajamento Mínimo)</strong>",
+              "Sinais verbais curtos, paraverbais ou posturais que indicam atenção plena e estimulam a pessoa a continuar falando sem interromper seu fluxo de pensamento.",
+              "Aceno positivo de cabeça, inclinação leve do tronco à frente, expressões como <em>\"Entendo...\"</em>, <em>\"Uhum...\"</em>, <em>\"Conte-me mais sobre isso...\"</em>."
+            ],
+            [
+              "<strong>Silêncio Terapêutico (Funcional)</strong>",
+              "Pausa intencional e acolhedora mantida pelo médico quando o paciente se emociona, chora ou busca palavras difíceis. O silêncio não deve ser quebrado precipitadamente.",
+              "Permanecer em silêncio atento por 5 a 10 segundos com olhar empático enquanto o paciente elabora um luto ou revela uma dificuldade íntima."
+            ],
+            [
+              "<strong>Eco (Repetição de Palavras-Chave)</strong>",
+              "Repetir com entonação interrogativa suave a última palavra ou expressão carregada de significado dita pelo paciente, convidando-o a aprofundá-la.",
+              "Paciente: <em>\"Desde que me aposentei, sinto um vazio enorme.\"</em><br>Médico: <em>\"Um vazio enorme?\"</em>"
+            ],
+            [
+              "<strong>Espelhamento e Reflexão de Sentimentos</strong>",
+              "Nomear e devolver para a pessoa a emoção subjacente que está sendo expressa verbalmente ou na linguagem corporal (olhar cabisbaixo, voz trêmula, punhos cerrados).",
+              "<em>\"Percebo que seus olhos marejaram quando você falou sobre a doença da sua mãe; parece estar sendo um peso muito solitário para você.\"</em>"
+            ],
+            [
+              "<strong>Clarificação</strong>",
+              "Solicitar gentilmente que o paciente explique o significado exato de termos vagos, jargões médicos ou expressões regionais.",
+              "<em>\"Quando você diz que sente uma 'gastura' ou 'tonteira', você quer dizer que a sala roda ao seu redor ou que sente que vai desmaiar?\"</em>"
+            ],
+            [
+              "<strong>Sumarização (Resumo Interno e Final)</strong>",
+              "Sintetizar periodicamente os dados biomédicos e a perspectiva da pessoa (SIFE), verificando se a compreensão do médico está correta.",
+              "<em>\"Deixe-me ver se compreendi bem: nas últimas três semanas você tem tido essa dor em queimação no peito após o jantar, e sua maior preocupação é que seja um princípio de infarto como o do seu irmão. É isso mesmo?\"</em>"
+            ],
+            [
+              "<strong>Sinalização (<em>Signposting</em>)</strong>",
+              "Enunciar explicitamente as transições de tópico ou etapa da consulta para que o paciente compreenda o rumo da conversa.",
+              "<em>\"Agora que conversamos bastante sobre a sua dor nas costas, gostaria de fazer algumas perguntas sobre os seus hábitos urinários e depois examiná-lo na maca, tudo bem?\"</em>"
+            ],
+            [
+              "<strong>Fracionamento e Checagem (<em>Chunk and Check</em>)</strong>",
+              "Ao fornecer explicações diagnósticas ou terapêuticas, dividir a informação em pequenos blocos (<em>chunks</em>), intercalando pausas para checar a reação e o entendimento antes de prosseguir.",
+              "Explicar o que é o diabetes em 2 frases simples e perguntar: <em>\"Até aqui faz sentido para você? Ficou alguma dúvida sobre essa parte?\"</em>"
+            ],
+            [
+              "<strong>Técnica <em>Teach-Back</em> (Reensino / Fechamento do Ciclo)</strong>",
+              "Padrão-ouro para garantir letramento em saúde e segurança do paciente: pedir que a pessoa explique com suas próprias palavras como fará o tratamento em casa, assumindo a responsabilidade pela clareza da comunicação.",
+              "<em>\"Para eu ter certeza de que me expliquei direitinho e não esqueci de nada, você poderia me contar como vai tomar esses dois comprimidos amanhã cedo?\"</em>"
+            ],
+            [
+              "<strong>Rede de Segurança (<em>Safety Netting</em>)</strong>",
+              "Componente criado por Roger Neighbour (1987) para o manejo da incerteza: explicar a evolução esperada, os sinais de alarme específicos e exatamente como/onde buscar reavaliação caso ocorram.",
+              "<em>\"A febre dessa virose costuma melhorar em até 72 horas. Porém, se surgir falta de ar, manchas roxas na pele ou prostração intensa mesmo sem febre, você deve retornar imediatamente ao acolhimento da UBS ou ir à UPA.\"</em>"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Comunicação Não Verbal (Cinésica, Proxêmica e Paralinguística):</strong> Mais de 60% a 70% da carga afetiva da comunicação interpessoal ocorre no plano não verbal. Na consulta na APS, recomenda-se: (1) <strong>Proxêmica</strong> sem barreiras físicas obstrutivas (posicionar a mesa lateralmente ou em ângulo de 45 a 90 graus, evitando que o monitor do computador fique como um muro entre o médico e a pessoa); (2) <strong>Cinésica</strong> aberta (braços descruzados, postura levemente inclinada para a frente, contato visual sustentado — dividindo o olhar de forma transparente quando precisar digitar no prontuário eletrônico: <em>\"Vou anotar aqui no computador o que você me disse para não perder nenhum detalhe\"</em>); e (3) <strong>Paralinguística</strong> modulada (ritmo, tom, volume e timbre da voz ajustados ao estado emocional da pessoa)."
+        ]
+      ]
+    ],
+    [
+      "comunicacao-mas-noticias-protocolo-spikes",
+      0,
+      [
+        [
+          "2",
+          "5. Comunicação de Más Notícias: Protocolo SPIKES e Adaptações na Atenção Primária"
+        ],
+        [
+          "p",
+          "Define-se <strong>má notícia</strong> na prática médica (Robert Buckman, 1984) como <em>\"qualquer informação que afete drástica e negativamente a visão que o indivíduo tem de seu próprio futuro\"</em>. Um conceito fundamental para as provas de Residência e Revalida é que a gravidade de uma má notícia não é medida apenas pelo estadiamento anatomopatológico objetivo, mas pela <strong>distância entre as expectativas da pessoa e a realidade clínica apresentada</strong>."
+        ],
+        [
+          "p",
+          "Na Atenção Primária à Saúde, comunicar más notícias vai muito além de revelar uma neoplasia maligna metastática: inclui informar o diagnóstico de infecção pelo HIV ou sífilis na gestação, comunicar um óbito fetal ou abortamento retido, revelar o diagnóstico de doença de Alzheimer inicial a um idoso independente, informar a um motorista profissional que ele desenvolveu epilepsia ou retinopatia diabética grave que o impede de dirigir, ou dar a notícia de infertilidade conjugal a um casal que deseja ardentemente ter filhos."
+        ],
+        [
+          "3",
+          "5.1 O Protocolo SPIKES de Baile e Buckman (2000): Os 6 Passos Detalhados"
+        ],
+        [
+          "p",
+          "O protocolo mais validado e universalmente exigido nas provas teóricas e práticas (OSCE) para a transmissão estruturada de más notícias é o <strong>Protocolo SPIKES</strong>, composto por 6 etapas sequenciais:"
+        ],
+        [
+          "4",
+          "Passo 1 — S: Setting up the interview (Preparando o ambiente e a entrevista)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Preparação técnica e mental:</strong> Revisar minuciosamente o prontuário, os laudos histopatológicos ou laboratoriais (confirmando nome e identificação do paciente para evitar trocas catastróficas) e ensaiar mentalmente a conversa.",
+            "<strong>Privacidade física e acústica:</strong> Garantir um consultório fechado, sem interrupções de terceiros, desligando ou silenciando telefones e celulares. Jamais dar más notícias em corredores, em pé ou por telefone (salvo situações excepcionais estruturadas).",
+            "<strong>Envolvimento de acompanhantes significativos:</strong> Perguntar ao paciente se ele deseja a presença de um familiar ou pessoa de confiança (respeitando sua autonomia caso prefira ouvir sozinho primeiro).",
+            "<strong>Linguagem corporal e conexão:</strong> Sentar-se (sentar-se transmite que o médico tem tempo e disponibilidade), remover obstáculos físicos entre médico e paciente, manter contato visual e deixar lenços de papel visíveis e ao alcance."
+          ]
+        ],
+        [
+          "4",
+          "Passo 2 — P: Perception (Avaliando a percepção do paciente — \"Antes de contar, pergunte\")"
+        ],
+        [
+          "u",
+          [
+            "Regra de ouro: <strong><em>\"Before you tell, ask\"</em> (Antes de falar, pergunte)</strong>. Antes de entregar o laudo ou revelar o diagnóstico, o médico deve investigar o que a pessoa já sabe, o que lhe foi dito por outros profissionais e o que ela suspeita sobre seu quadro.",
+            "<strong>Exemplos de perguntas:</strong> <em>\"Antes de olharmos juntos o resultado da biópsia, você poderia me contar o que os médicos lá do hospital já conversaram com você sobre o motivo desse exame?\"</em> ou <em>\"O que você tem pensado sobre o que pode estar causando esse emagrecimento?\"</em>",
+            "<strong>Objetivo clínico:</strong> Avaliar o grau de compreensão, corrigir desinformações prévias, identificar mecanismos de defesa psicológica (como negação extrema ou pensamento mágico) e calibrar o vocabulário que será utilizado no passo 4."
+          ]
+        ],
+        [
+          "4",
+          "Passo 3 — I: Invitation (Obtendo o convite do paciente)"
+        ],
+        [
+          "u",
+          [
+            "Verificar o quanto de informação detalhada a pessoa deseja receber naquele exato momento. Embora a grande maioria dos pacientes deseje saber toda a verdade sobre seu diagnóstico, alguns indivíduos (especialmente idosos de determinadas culturas ou pessoas em negação aguda protetora) podem preferir informações gerais e delegar os detalhes técnicos ou estatísticos a um filho ou cônjuge.",
+            "<strong>Exemplos de formulação:</strong> <em>\"Você é o tipo de pessoa que gosta de saber todos os detalhes médicos do resultado do exame, ou prefere que a gente foque primeiro no que vamos fazer daqui para frente?\"</em> ou <em>\"Gostaria que eu explicasse o resultado agora ou prefere aguardar a chegada da sua filha?\"</em>",
+            "<strong>Privilégio Terapêutico vs. Conspiração do Silêncio:</strong> No Código de Ética Médica brasileiro (Art. 34), é vedado ao médico deixar de informar ao paciente o diagnóstico, o prognóstico, os riscos e os objetivos do tratamento, <em>salvo quando a comunicação direta possa lhe provocar dano comprovado</em>, devendo, nesse caso, comunicar o representante legal. Já a <strong>Conspiração do Silêncio (ou Pacto do Silêncio)</strong> ocorre quando a família intercepta o médico antes da consulta e implora: <em>\"Doutor, pelo amor de Deus, não conte para o meu pai que é câncer, senão ele vai entrar em depressão e morrer!\"</em>. Como manejar a Conspiração do Silêncio nas provas? <strong>Jamais mentir ao paciente e jamais confrontar a família com hostilidade!</strong> O médico deve acolher a angústia da família (reconhecendo que o pedido nasce do amor e do medo de vê-lo sofrer), explicar que ocultar a verdade gera isolamento emocional e desconfiança, e aplicar os passos P e I diretamente com o paciente para descobrir <em>o quanto o próprio paciente já sabe e deseja saber</em>, negociando uma revelação gradual e respeitosa."
+          ]
+        ],
+        [
+          "4",
+          "Passo 4 — K: Knowledge (Transmitindo o conhecimento e a informação médica)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Tiro de Aviso (<em>Warning Shot</em>):</strong> Iniciar com uma frase curta preparatória que sinalize que más notícias virão, permitindo que o cérebro do paciente se prepare para o impacto emocional. Exemplos: <em>\"Infelizmente, os resultados da biópsia não vieram como nós gostaríamos...\"</em> ou <em>\"Sinto muito em dizer, mas tenho notícias difíceis sobre a tomografia.\"</em>",
+            "<strong>Linguagem clara, direta e sem jargões técnicos ou eufemismos confusos:</strong> Evitar termos como \"neoplasia mitoticamente ativa\", \"lesão hipercaptante metastática\" ou \"o tumor progrediu\". Usar palavras claras e compassivas (ex: explicar que foram encontradas células de câncer na mama).",
+            "<strong>Pausas e Fracionamento (<em>Chunk and Check</em>):</strong> Dar a informação principal em uma ou duas frases curtas e <strong>fazer silêncio</strong>! Após ouvir a palavra \"câncer\" ou \"HIV\", o paciente sofre um choque adrenérgico e emocional agudo que bloqueia cognitivamente o córtex pré-frontal — ele não conseguirá processar explicações longas sobre quimioterapia ou contagem de CD4 nos segundos seguintes.",
+            "<strong>Evitar brutalidade prognóstica destrutiva:</strong> Jamais usar frases como <em>\"Não há mais nada que possamos fazer por você\"</em> ou fixar prazos fatais precisos (<em>\"Você tem 3 meses de vida\"</em>). Sempre há muito a fazer no controle impecável de sintomas, alívio da dor e cuidado integral."
+          ]
+        ],
+        [
+          "4",
+          "Passo 5 — E: Emotions / Empathy (Abordando as emoções do paciente com respostas empáticas)"
+        ],
+        [
+          "u",
+          [
+            "Este é frequentemente o passo mais desafiador. Diante da má notícia, o paciente pode reagir com choro intenso, silêncio paralisante, choque, incredulidade, negação ou raiva projetada na equipe de saúde. Antes de passar para o plano terapêutico, é <strong>obrigatório acolher e validar a emoção</strong>.",
+            "Utiliza-se aqui o protocolo <strong>NURSE</strong> de resposta empática às emoções:\n    <ul>\n      <li><strong>N — <em>Naming</em> (Nomear a emoção):</strong> <em>\"Vejo que essa notícia deixou você profundamente assustado e chocado.\"</em>",
+            "<strong>U — <em>Understanding</em> (Compreender e legitimar):</strong> <em>\"É totalmente compreensível que você se sinta assim; ninguém espera receber um resultado desses.\"</em>",
+            "<strong>R — <em>Respecting</em> (Respeitar e reconhecer o esforço):</strong> <em>\"Admiro muito a coragem que você teve de vir buscar esse exame e enfrentar essa situação.\"</em>",
+            "<strong>S — <em>Supporting</em> (Apoiar e garantir presença / não abandono):</strong> <em>\"Quero que você saiba que nós aqui da equipe de Saúde da Família estaremos ao seu lado em cada etapa desse caminho; você não vai passar por isso sozinho.\"</em>",
+            "<strong>E — <em>Exploring</em> (Explorar o foco emocional):</strong> <em>\"Quando você pensa no que acabamos de conversar, o que mais te angustia neste momento?\"</em>"
+          ]
+        ],
+        [
+          "4",
+          "Passo 6 — S: Strategy and Summary (Estratégia de plano conjunto e resumo final)"
+        ],
+        [
+          "u",
+          [
+            "Somente após a tempestade emocional inicial diminuir (Passo 5) é que o médico verifica se o paciente está pronto para discutir os próximos passos práticos (<em>\"Você se sente em condições de conversarmos agora sobre o plano de tratamento, ou prefere tomar uma água e conversar daqui a pouco?\"</em>).",
+            "Elaborar um plano concreto, claro e compartilhado: quais exames adicionais serão solicitados, como será o encaminhamento prioritário à rede especializada (mantendo a coordenação do cuidado na APS), como os sintomas imediatos (dor, insônia, ansiedade) serão aliviados hoje e quando será o retorno precoce programado na UBS (ex: em 3 a 7 dias) para reavaliar dúvidas quando o impacto inicial tiver assentado."
+          ]
+        ]
+      ]
+    ],
+    [
+      "entrevista-motivacional-estagios-mudanca",
+      0,
+      [
+        [
+          "2",
+          "6. Entrevista Motivacional (Miller & Rollnick) e Modelo Transteórico de Mudança (Prochaska & DiClemente)"
+        ],
+        [
+          "p",
+          "Na Atenção Primária à Saúde, mais de 70% da carga global de morbimortalidade está intrinsecamente ligada a comportamentos e hábitos de vida: tabagismo, uso nocivo de álcool e outras drogas, sedentarismo, alimentação ultraprocessada e adesão ao uso diário de medicamentos crônicos. O modelo biomédico tradicional tenta modificar comportamentos por meio do <strong>Reflexo de Consertar (<em>Righting Reflex</em>)</strong> — isto é, sermões prescritivos, ameaças de complicações (\"se você não parar de fumar, vai infartar ou amputar a perna\") e persuasão autoritária. Psicologicamente, o sermão ativa a <strong>reatância psicológica</strong> na pessoa: quanto mais o médico argumenta a favor da mudança, mais o paciente (que está ambivalente) é forçado a defender o <em>status quo</em> e argumentar contra a mudança (\"meu avô fumou até os 90 anos e não morreu disso\")."
+        ],
+        [
+          "p",
+          "Para superar esse impasse, dois referenciais teóricos complementares e altamente cobrados em provas são essenciais: o <strong>Modelo Transteórico dos Estágios de Mudança de Comportamento</strong> (James Prochaska e Carlo DiClemente, 1982) e a <strong>Entrevista Motivacional</strong> (William Miller e Stephen Rollnick, 1991/2013/2023)."
+        ],
+        [
+          "3",
+          "6.1 Os 6 Estágios de Mudança de Comportamento de Prochaska & DiClemente"
+        ],
+        [
+          "p",
+          "Prochaska e DiClemente demonstraram que a mudança comportamental não é um evento binário (\"quer mudar\" vs. \"não quer mudar\"), mas um processo cíclico e espiralado através de seis estágios bem definidos, cada qual exigindo uma postura médica específica:"
+        ],
+        [
+          "t",
+          [
+            "Estágio de Mudança",
+            "Características Cognitivas e Comportamentais da Pessoa",
+            "Fala Típica do Paciente na Consulta",
+            "Estratégia Clínica Adequada do Médico de Família"
+          ],
+          [
+            [
+              "<strong>1. Pré-Contemplação</strong>",
+              "A pessoa não reconhece o comportamento como um problema, não tem intenção de mudar nos próximos 6 meses ou está desmoralizada por fracassos prévios. Os \"prós\" de manter o hábito superam amplamente os \"contras\".",
+              "<em>\"Doutor, vim só renovar a receita da pressão. Fumo meu maço por dia, mas isso é o único prazer que tenho e não pretendo parar.\"</em>",
+              "<strong>Não confrontar nem prescrever plano de ação!</strong> Pedir permissão para informar de forma neutra, levantar dúvidas suaves, conectar o hábito apenas com sintomas atuais (se houver) e manter as portas abertas sem julgamento."
+            ],
+            [
+              "<strong>2. Contemplação</strong>",
+              "Estágio clássico da <strong>ambivalência</strong> (\"quero mudar, mas ao mesmo tempo não quero\"). A pessoa reconhece o problema e cogita mudar nos próximos 6 meses, mas sente-se dividida entre os benefícios da mudança e o custo emocional/físico de abandonar o hábito.",
+              "<em>\"Eu sei que a bebida está prejudicando meu fígado e meu casamento, penso em parar, mas quando chega sexta-feira com os amigos não consigo resistir.\"</em>",
+              "Explorar a ambivalência usando a <strong>Balança Decisória</strong> (pesar prós e contras de mudar vs. não mudar), evocar a \"fala de mudança\" (<em>change talk</em>) e fortalecer os valores pessoais do paciente."
+            ],
+            [
+              "<strong>3. Preparação (Determinação)</strong>",
+              "A balança pendeu para a mudança! A pessoa está decidida a agir no curto prazo (geralmente nos próximos 30 dias) e já começa a dar pequenos passos preparatórios.",
+              "<em>\"Doutor, decidi que quero parar de fumar neste mês do aniversário da minha neta. O que eu preciso fazer para conseguir?\"</em>",
+              "Auxiliar na construção de um <strong>plano de ação concreto e realista</strong>: definir a data-alvo (Dia D), identificar gatilhos, mobilizar rede de apoio familiar e prescrever suporte farmacológico se indicado."
+            ],
+            [
+              "<strong>4. Ação</strong>",
+              "Modificação aberta e efetiva do comportamento há <strong>menos de 6 meses</strong>. Exige alto dispêndio de energia, vigilância constante e enfrentamento de sintomas de abstinência ou fissura (<em>craving</em>).",
+              "<em>\"Estou há 3 semanas sem colocar um cigarro na boca! Às vezes dá uma vontade louca depois do café, mas estou tomando água gelada.\"</em>",
+              "Reforçar positivamente a autoeficácia (afirmação do esforço), manejar efeitos adversos ou fissuras, revisar estratégias de enfrentamento de situações de alto risco."
+            ],
+            [
+              "<strong>5. Manutenção</strong>",
+              "Sustentação do novo comportamento saudável por <strong>mais de 6 meses</strong>. O foco desloca-se para a consolidação do hábito no estilo de vida e prevenção de recaídas.",
+              "<em>\"Já faz 8 meses que parei de fumar e comecei a caminhar 3 vezes por semana. Minha respiração é outra!\"</em>",
+              "Parabenizar a conquista, identificar potenciais armadilhas de longo prazo (estresse agudo, luto, festas) e manter acompanhamento longitudinal."
+            ],
+            [
+              "<strong>6. Recaída (Lapso / Colapso)</strong>",
+              "Retorno ao padrão comportamental anterior. Faz parte natural da espiral de mudança (um tabagista passa em média por 4 a 7 ciclos antes da abstinência definitiva). Diferencia-se o <em>lapso</em> (escorregão isolado) do <em>colapso/recaída plena</em>.",
+              "<em>\"Tive uma briga horrível no trabalho mês passado e voltei a fumar meio maço por dia. Estou me sentindo um fracassado.\"</em>",
+              "<strong>Desculpabilizar e ressignificar a recaída como aprendizado!</strong> Evitar o efeito de violação da abstinência (sentimento de culpa que leva ao abandono total), analisar o gatilho que provocou a recaída e ajudar a reingressar na contemplação/preparação."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "6.2 Entrevista Motivacional (Miller & Rollnick): Espírito, Princípios e Habilidades OARS"
+        ],
+        [
+          "p",
+          "A <strong>Entrevista Motivacional (EM)</strong> é definida por Miller e Rollnick como <em>\"um estilo de comunicação colaborativo e orientado para metas, com atenção especial à linguagem da mudança, projetado para fortalecer a motivação pessoal e o compromisso com um objetivo específico, evocando e explorando as próprias razões da pessoa para mudar dentro de uma atmosfera de aceitação e compaixão\"</em>."
+        ],
+        [
+          "4",
+          "O Espírito da Entrevista Motivacional (Acrônimo PACE)"
+        ],
+        [
+          "u",
+          [
+            "<strong>P — Parceria (<em>Partnership</em> / Colaboração):</strong> A consulta é uma dança cooperativa entre dois especialistas (e não uma luta de braço onde o médico tenta vencer o paciente).",
+            "<strong>A — Aceitação (<em>Acceptance</em>):</strong> Inclui valorização absoluta do valor intrínseco do ser humano, respeito radical à autonomia (reconhecer que, no fim do dia, quem decide mudar ou não é a própria pessoa), empatia acurada e afirmação das forças do sujeito.",
+            "<strong>C — Compaixão (<em>Compassion</em>):</strong> Compromisso ativo em promover o bem-estar da pessoa e priorizar suas necessidades acima de metas burocráticas da instituição.",
+            "<strong>E — Evocação (<em>Evocation</em>):</strong> Em vez de tentar \"instalar\" motivação de fora para dentro (como se o paciente fosse um recipiente vazio), o médico faz emergir (evoca) as motivações, valores e sabedorias que já existem dentro da própria pessoa."
+          ]
+        ],
+        [
+          "4",
+          "Os 4 Processos Fundamentais e os 4 Princípios Clássicos (RULE)"
+        ],
+        [
+          "p",
+          "Na versão atualizada de Miller e Rollnick, a EM desenvolve-se em <strong>4 processos sequenciais e sobrepostos</strong>: (1) <strong>Engajar</strong> (construir vínculo terapêutico seguro); (2) <strong>Focar</strong> (definir conjuntamente a agenda e o comportamento-alvo); (3) <strong>Evocar</strong> (fazer brotar a <em>fala de mudança</em> — <em>change talk</em> — da própria boca do paciente, lembrando o acrônimo <strong>DARN-C</strong>: <em>Desire</em> [Desejo], <em>Ability</em> [Habilidade], <em>Reasons</em> [Razões], <em>Need</em> [Necessidade] e <em>Commitment</em> [Compromisso]); e (4) <strong>Planejar</strong> (construir o plano de ação quando a pessoa estiver pronta)."
+        ],
+        [
+          "p",
+          "Para as provas de Residência, permanece altamente cobrado também o acrônimo clássico <strong>RULE</strong> dos quatro princípios norteadores da EM:"
+        ],
+        [
+          "o",
+          [
+            "<strong>R — <em>Resist the righting reflex</em> (Resistir ao reflexo de consertar):</strong> Conter o impulso de corrigir, dar sermão ou prescrever soluções prematuras.",
+            "<strong>U — <em>Understand the patient's motivations</em> (Compreender as motivações do próprio paciente):</strong> Explorar por que a pessoa mudaria (e não por que o médico acha que ela deve mudar).",
+            "<strong>L — <em>Listen with empathy</em> (Escutar com empatia):</strong> Compreender o dilema da ambivalência sem julgamento moral.",
+            "<strong>E — <em>Empower the patient</em> (Empoderar o paciente / Apoiar a autoeficácia):</strong> Fortalecer a crença da pessoa em sua própria capacidade de executar e sustentar a mudança, além de <strong>desenvolver discrepância</strong> (mostrar suavemente a distância entre o comportamento atual da pessoa e seus valores nucleares mais profundos, como \"quero ver meus filhos crescerem com saúde\") e <strong>acompanhar a resistência (<em>roll with resistance</em>)</strong> sem bater de frente."
+          ]
+        ],
+        [
+          "4",
+          "As 4 Micro-Habilidades Nucleares da Entrevista Motivacional: Acrônimo OARS (PARR)"
+        ],
+        [
+          "u",
+          [
+            "<strong>O — <em>Open-ended questions</em> (Perguntas Abertas):</strong> Perguntas que convidam à reflexão e evocam fala de mudança. Exemplo da <strong>Régua de Prontidão/Importância</strong>: <em>\"Em uma escala de 0 a 10, onde 0 é nada importante e 10 é prioridade máxima, o quão importante é para você reduzir o consumo de álcool hoje?\"</em> Se o paciente responde \"4\", o médico <strong>NÃO</strong> pergunta \"Por que só 4 e não 8?\" (pois isso faria o paciente defender por que não quer mudar!). O médico pergunta o inverso: <strong><em>\"E por que você deu nota 4 e não 0 ou 1?\"</em></strong> — fazendo com que o próprio paciente verbalize suas razões para mudar!",
+            "<strong>A — <em>Affirmations</em> (Afirmações / Valorização):</strong> Reconhecer genuinamente os esforços, forças de caráter e pequenos sucessos da pessoa (ex: <em>\"Mesmo com toda essa sobrecarga no trabalho, você veio à consulta hoje buscando cuidar da sua saúde; isso mostra uma grande determinação sua.\"</em>).",
+            "<strong>R — <em>Reflections</em> (Reflexões / Escuta Reflexiva):</strong> A habilidade mais importante da EM. Consiste em devolver ao paciente o significado do que ele acabou de dizer, por meio de <em>reflexão simples</em> (repetir ou parafrasear), <em>reflexão amplificada</em> ou <em>reflexão de duplo lado</em> (capturar ambos os lados da ambivalência conectando-os com a conjunção \"e\", deixando a fala de mudança por último: <em>\"Por um lado, beber cerveja à noite ajuda você a relaxar da tensão do dia, e, por outro lado, você está preocupado com o impacto que isso está tendo na sua pressão e no relacionamento com sua esposa.\"</em>).",
+            "<strong>S — <em>Summaries</em> (Resumos / Sumarizações):</strong> Reunir como um \"buquê de flores\" todas as falas de mudança emitidas pelo paciente ao longo da conversa e devolvê-las de forma organizada, encerrando com uma pergunta aberta evocativa: <em>\"Diante de tudo isso que você me trouxe, qual você sente que seria o próximo passo possível para você?\"</em>"
+          ]
+        ],
+        [
+          "4",
+          "Técnica EPE para Fornecer Informações e Conselhos: Elicit - Provide - Elicit (Evocar - Fornecer - Evocar)"
+        ],
+        [
+          "p",
+          "Quando o médico precisa fornecer uma orientação técnica na EM, ele nunca despeja o conselho sem preparo. Utiliza-se o ciclo <strong>E-P-E</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong><em>Elicit</em> (Evocar conhecimento prévio e pedir permissão):</strong> <em>\"O que você já ouviu falar sobre a relação entre o cigarro e essa sua tosse matinal? Posso compartilhar com você algumas informações sobre como o pulmão reage?\"</em>",
+            "<strong><em>Provide</em> (Fornecer a informação em linguagem neutra, clara e não coercitiva):</strong> <em>\"Para muitas pessoas, o cigarro paralisa os cílios que limpam os brônquios; quando a pessoa reduz ou para de fumar, esses cílios voltam a funcionar em poucas semanas...\"</em>",
+            "<strong><em>Elicit</em> (Evocar a interpretação da pessoa):</strong> <em>\"Como essa informação soa para você? O que você pensa a respeito disso no seu caso?\"</em>"
+          ]
+        ]
+      ]
+    ],
+    [
+      "prevencao-quaternaria-demanda-oculta-somatizacao",
+      0,
+      [
+        [
+          "2",
+          "7. Demanda Oculta, Somatização, Pacientes Hiperutilizadores e Prevenção Quaternária no MCCP"
+        ],
+        [
+          "p",
+          "A aplicação integrada do Método Clínico Centrado na Pessoa atinge seu ápice de sofisticação clínica no manejo de situações de alta complexidade relacional e diagnóstica na Atenção Primária: a identificação da demanda oculta, o cuidado de pacientes com múltiplos sintomas somáticos (somatizadores), a organização do cuidado de pacientes hiperutilizadores (\"difíceis\") e a prática ética da Prevenção Quaternária."
+        ],
+        [
+          "3",
+          "7.1 Demanda Oculta e o Fenômeno da \"Mão na Maçaneta\""
+        ],
+        [
+          "p",
+          "Na Atenção Primária, o motivo explícito apresentado pelo paciente na triagem ou nos primeiros segundos da consulta (o <strong>\"bilhete de entrada\"</strong> ou queixa de apresentação) frequentemente não corresponde à verdadeira razão que o levou a procurar ajuda médica — a chamada <strong>Demanda Oculta</strong>."
+        ],
+        [
+          "p",
+          "Por que o paciente não declara sua demanda real logo no primeiro minuto? Porque a demanda oculta geralmente envolve temas cercados de vergonha, estigma, medo intenso ou vulnerabilidade íntima: disfunção erétil ou falta de libido, violência doméstica/intrafamiliar, abuso sexual, ideação suicida ou sintomas depressivos graves, medo oculto de estar com câncer ou HIV após exposição de risco, conflitos conjugais ou uso oculto de substâncias. O paciente utiliza uma queixa somática banal e socialmente aceitável (\"vim mostrar um exame de rotina\", \"estou com uma dorzinha nas costas\", \"quero uma vitamina para fraqueza\") para <strong>testar a receptividade, o tempo e a postura de não julgamento do médico</strong>."
+        ],
+        [
+          "p",
+          "<strong>Sinais clínicos de alerta para Demanda Oculta na consulta:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Discrepância entre a banalidade ou cronicidade do sintoma e a urgência da consulta:</strong> Paciente que tem uma verruga plantar ou lombalgia leve há 3 anos e subitamente comparece à demanda espontânea numa terça-feira chuvosa exigindo atendimento no dia. A pergunta-chave de McWhinney é: <strong><em>\"Por que este paciente veio hoje, exatamente neste momento, com esta queixa?\"</em></strong>",
+            "<strong>Incongruência entre comunicação verbal e não verbal:</strong> O paciente relata uma queixa trivial (\"vim só pegar um encaminhamento para o oculista\"), mas apresenta olhar cabisbaixo, suspiros profundos, mãos trêmulas, voz embargada ou tensão corporal extrema.",
+            "<strong>Insatisfação com a resolução rápida do \"bilhete de entrada\":</strong> Quando o médico examina rapidamente a queixa inicial, entrega uma receita e tenta encerrar a consulta, o paciente hesita em se levantar ou lança a clássica <strong>Queixa de Maçaneta de Porta (<em>Doorknob Syndrome</em>)</strong> no último segundo da consulta."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Manejo da Queixa de Maçaneta:</strong> Se a queixa revelada no final representar uma urgência clínica ou psiquiátrica (ex: dor torácica típica aos esforços, ideação suicida estruturada, violência aguda), o médico deve <strong>sentar-se novamente imediatamente</strong> e avaliar o risco naquele mesmo encontro. Se não houver risco agudo imediato e o tempo da consulta estiver esgotado, o médico acolhe e valida a importância da queixa (<em>\"Isso que você acabou de me contar sobre sua tristeza e dificuldade no casamento é muito importante e merece toda a nossa atenção, sem pressa\"</em>), faz uma escuta inicial breve de segurança e agenda um <strong>retorno programado prioritário em poucos dias</strong> exclusivamente para abordar aquela questão como primeiro item da agenda."
+        ],
+        [
+          "3",
+          "7.2 Pacientes Somatizadores (Transtorno de Sintomas Somáticos) e Sintomas Medicamente Inexplicados (SMI)"
+        ],
+        [
+          "p",
+          "Pacientes que apresentam queixas físicas múltiplas, recorrentes e mutáveis (dores difusas, tonturas, parestesias atípicas, fadiga, distúrbios gastrointestinais funcionais) sem substrato anatomopatológico demonstrável representam um dos maiores desafios da APS. O manejo baseado em evidências e no MCCP exige seguir diretrizes rigorosas (frequentemente cobradas em provas):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Legitimar o sofrimento (A dor é real!):</strong> O paciente somatizador <strong>não está fingindo</strong> (diferenciar de <em>Simulação</em>, onde há produção intencional de sintomas para ganho externo/secundário, como dinheiro ou dispensa legal, e de <em>Transtorno Factício / Síndrome de Münchausen</em>, onde há produção intencional para assumir o papel de doente). Na somatização, a transdução neurobiológica da angústia psíquica em dor física é involuntária e real. Jamais dizer \"isso é psicológico\" ou \"você não tem nada\".",
+            "<strong>Realizar exame físico focado a cada consulta:</strong> O toque clínico cuidadoso examina a área queixosa (descartando doenças orgânicas novas, pois somatizadores também adoecem organicamente!), transmite segurança e funciona como ritual terapêutico continente.",
+            "<strong>Agendar consultas regulares e programadas (independentes do surgimento de sintomas!):</strong> Esta é a conduta mais clássica em provas de Residência! Se o médico disser ao paciente somatizador <em>\"volte apenas se sentir dor ou passar mal\"</em>, o inconsciente do paciente aprende que <strong>precisa produzir um novo sintoma físico para merecer a atenção e o cuidado do médico</strong>. Ao agendar retornos fixos programados (ex: a cada 3 ou 4 semanas, faça chuva ou faça sol, com ou sem sintomas novos), desvincula-se o cuidado médico da necessidade de adoecer!",
+            "<strong>Concentrar o cuidado em um único médico de referência (Longitudinalidade e Coordenação):</strong> Evitar o peregrinamento fragmentado por dezenas de prontos-socorros e subespecialistas focais (<em>doctor shopping</em>).",
+            "<strong>Proteger o paciente de exames invasivos e procedimentos cirúrgicos desnecessários:</strong> Estabelecer limites gentis mas firmes contra a repetição infindável de tomografias, endoscopias e laparoscopias diagnósticas, explicando que novos exames sem sinais de alarme trazem mais riscos de complicações do que benefícios.",
+            "<strong>Ampliar gradualmente a agenda (<em>Reatribuição</em>):</strong> Conectar empaticamente as oscilações dos sintomas físicos aos estressores emocionais, familiares e laborais, sem forçar interpretações psicanalíticas precoces que gerem resistência."
+          ]
+        ],
+        [
+          "3",
+          "7.3 O Paciente \"Difícil\" (Heartsink Patient) e Hiperutilizadores da APS"
+        ],
+        [
+          "p",
+          "Cunhado por Tom O'Dowd (1988) na Medicina de Família britânica, o termo <strong><em>Heartsink Patient</em></strong> (paciente que provoca \"aperto no coração\" ou desalento no médico ao ver seu nome na agenda) e a categorização clássica de <strong>James Groves (1978 — <em>Taking Care of the Hateful Patient</em>)</strong> descrevem quatro perfis relacionais desafiadores: (1) <em>Dependentes exigentes (\"Clingers\")</em>, que solicitam atenção inesgotável; (2) <em>Demandantes hostis (\"Entitled demanders\")</em>, que usam intimidação, ameaças de processo ou exigências de exames; (3) <em>Negadores que rejeitam ajuda (\"Manipulative help-rejecters\")</em>, para os quais \"nenhum remédio funciona\" e que derrotam cada plano proposto; e (4) <em>Autodestrutivos (\"Self-destructive deniers\")</em>, que mantêm comportamentos letais apesar de múltiplas internações."
+        ],
+        [
+          "p",
+          "Na visão do MCCP, não existe simplesmente um \"paciente difícil\", mas sim uma <strong>relação médico-pessoa disfuncional</strong> que precisa ser diagnosticada e reconfigurada: reconhecer a própria contratransferência, estabelecer limites claros e não punitivos para a consulta, compartilhar o cuidado com a equipe multiprofissional (interconsulta com psicologia/psiquiatria, discussão em reunião de equipe, elaboração de Projeto Terapêutico Singular — PTS) e investigar transtornos psiquiátricos ocultos ou crises familiares graves."
+        ],
+        [
+          "3",
+          "7.4 Prevenção Quaternária (P4) e o MCCP como Escudo contra a Medicalização"
+        ],
+        [
+          "p",
+          "Conceituada pelo médico de família belga <strong>Marc Jamoulle (1986)</strong> e oficializada pela WONCA (Organização Mundial dos Médicos de Família), a <strong>Prevenção Quaternária (P4)</strong> é definida como a <em>\"ação feita para identificar um paciente ou população em risco de supermedicalização, para protegê-lo de novas intervenções médicas invasivas e sugerir-lhe procedimentos científica e eticamente aceitáveis\"</em>."
+        ],
+        [
+          "t",
+          [
+            "Matriz de Marc Jamoulle",
+            "Médico: Doença (Disease) AUSENTE",
+            "Médico: Doença (Disease) PRESENTE"
+          ],
+          [
+            [
+              "<strong>Paciente: Sente-se BEM (Illness AUSENTE)</strong>",
+              "<strong>Prevenção Primária (P1)</strong><br>Indivíduo saudável sem doença.<br><em>Ação:</em> Vacinação, promoção da saúde, orientação nutricional, redução de fatores de risco antes da doença surgir.",
+              "<strong>Prevenção Secundária (P2)</strong><br>Paciente assintomático com doença oculta precoce.<br><em>Ação:</em> Rastreamento (<em>screening</em>) baseado em evidências (ex: colpocitologia oncótica, mamografia, pesquisa de sangue oculto nas fezes)."
+            ],
+            [
+              "<strong>Paciente: Sente-se DOENTE (Illness PRESENTE)</strong>",
+              "<strong>PREVENÇÃO QUATERNÁRIA (P4)</strong><br>Paciente sente-se mal ou teme estar doente, mas não há <em>disease</em> que explique ou há risco de excesso intervencionista.<br><em>Ação:</em> Proteger contra sobrediagnóstico, sobretratamento, <em>disease mongering</em> e cascatas iatrogênicas (<em>Primum non nocere</em>).",
+              "<strong>Prevenção Terciária (P3)</strong><br>Paciente sintomático com doença estabelecida.<br><em>Ação:</em> Reabilitação, prevenção de sequelas, alívio de complicações crônicas e restauração funcional."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Como o MCCP viabiliza a Prevenção Quaternária na prática clínica diária? Por meio de três mecanismos centrais:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Compreensão da <em>Illness</em> em vez de medicalização reflexa:</strong> Ao explorar o SIFE diante de um luto normal, tristeza reativa ao desemprego ou insônia transitória, o médico oferece escuta empática e suporte psicossocial em vez de rotular precipitadamente o sofrimento humano normal como Transtorno Depressivo Maior e prescrever fluoxetina ou clonazepam (evitando o <em>disease mongering</em> — mercantilização de doenças).",
+            "<strong>Uso do Tempo como Aliado Diagnóstico (<em>Watchful Waiting</em> / Demora Permitida):</strong> Na APS, onde a probabilidade pré-teste de doenças graves em sintomas indiferenciados iniciais é baixa, observar a evolução natural do quadro com uma Rede de Segurança (<em>Safety Netting</em>) bem pactuada evita a cascata iatrogênica de exames laboratoriais e de imagem com resultados falso-positivos.",
+            "<strong>Decisão Compartilhada em Rastreamentos Controversos:</strong> Quando um homem assintomático de 55 anos chega solicitando a dosagem do PSA para rastreamento de câncer de próstata, o médico de família não nega rispidamente nem solicita automaticamente: ele aplica o Componente 3 do MCCP, utilizando ferramentas visuais de apoio à decisão (<em>decision aids</em>) para explicar em linguagem clara os potenciais benefícios e os elevados riscos de sobrediagnóstico (detectar tumores indolentes que nunca causariam sintomas) e sobretratamento (incontinência urinária e disfunção erétil pós-prostatectomia/radioterapia), tomando a decisão em conjunto com o paciente."
+          ]
+        ]
+      ]
+    ],
+    [
+      "decisao-compartilhada-comunicacao-risco",
+      0,
+      [
+        [
+          "2",
+          "8. Decisão Compartilhada (Shared Decision-Making), Comunicação de Risco e Letramento em Saúde"
+        ],
+        [
+          "p",
+          "A <strong>Decisão Compartilhada (<em>Shared Decision-Making</em> — SDM)</strong> constitui a materialização clínica e ética do Terceiro Componente do Método Clínico Centrado na Pessoa. Em contraposição ao paternalismo médico clássico e ao consumismo médico neoliberal, a decisão compartilhada é particularmente indispensável nas chamadas <strong>decisões sensíveis às preferências (<em>preference-sensitive decisions</em>)</strong> — situações clínicas nas quais existe equilíbrio clínico (<em>clinical equipoise</em>) entre duas ou mais opções diagnósticas ou terapêuticas (incluindo a opção de conduta expectante ou não intervenção), ou nas quais a relação entre benefícios potenciais e danos/riscos depende fundamentalmente dos valores subjetivos da pessoa."
+        ],
+        [
+          "3",
+          "8.1 O Modelo dos Três Encontros de Glyn Elwyn (Three-Talk Model)"
+        ],
+        [
+          "p",
+          "Glyn Elwyn e colaboradores sistematizaram o processo prático de Decisão Compartilhada em três etapas conversacionais fluidas durante a consulta na Atenção Primária:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Conversa de Equipe (<em>Team Talk</em> / <em>Choice Talk</em>):</strong> O médico sinaliza explicitamente à pessoa que existe uma escolha a ser feita em conjunto e estabelece uma aliança de parceria: <em>\"Existe mais de uma maneira de lidarmos com essa questão, e cada caminho tem vantagens e desvantagens diferentes. Quero analisar essas opções junto com você para escolhermos a que faz mais sentido para a sua vida.\"</em>",
+            "<strong>Conversa de Opções (<em>Option Talk</em>):</strong> O médico descreve as alternativas disponíveis de forma clara, equilibrada e baseada na melhor evidência científica (frequentemente com o auxílio de <em>Decision Aids</em> — ferramentas gráficas de apoio à decisão), comunicando os riscos e benefícios em números compreensíveis (risco absoluto e NNT/NNH, nunca apenas risco relativo!).",
+            "<strong>Conversa de Decisão (<em>Decision Talk</em>):</strong> O médico explora o que mais importa para a pessoa (seus valores, medos, rotina de vida e preferências) diante das informações apresentadas e apoia a deliberação conjunta rumo a uma decisão compartilhada (ou concede tempo para que o paciente converse com a família antes de decidir)."
+          ]
+        ],
+        [
+          "3",
+          "8.2 A Ciência da Comunicação de Risco: Risco Relativo vs. Risco Absoluto e NNT"
+        ],
+        [
+          "p",
+          "Um dos pilares da Prevenção Quaternária e do MCCP é a honestidade epidemiológica ao comunicar riscos e benefícios de medicamentos preventivos (como estatinas na prevenção primária ou bisfosfonatos) e exames de rastreamento (como mamografia ou PSA). O uso exclusivo da <strong>Redução do Risco Relativo (RRR)</strong> manipula cognitivamente a percepção do paciente e do próprio médico, inflando artificialmente o benefício percebido (fenômeno de <em>framing effect</em> ou efeito de enquadramento)."
+        ],
+        [
+          "p",
+          "Considere um exemplo clássico de prova: um ensaio clínico demonstra que uma estatina em prevenção primária para um paciente de moderado risco cardiovascular reduz a incidência de infarto em 10 anos de <strong>4% (no grupo placebo) para 3% (no grupo estatina)</strong>:"
+        ],
+        [
+          "u",
+          [
+            "Se o médico comunicar a <strong>Redução do Risco Relativo (RRR)</strong>, ele dirá: <em>\"Este remédio reduz em 25% o seu risco de infarto!\"</em> (pois [4% - 3%] / 4% = 25%). Quase 100% dos pacientes aceitarão tomar o medicamento sob essa ilusão matemática.",
+            "Se o médico comunicar com transparência ética a <strong>Redução do Risco Absoluto (RRA)</strong> e a <strong>Frequência Natural</strong>, ele dirá: <em>\"Se 100 pessoas exatamente iguais a você não tomarem este remédio pelos próximos 10 anos, 4 terão um infarto e 96 não terão. Se essas mesmas 100 pessoas tomarem o remédio todos os dias durante 10 anos, 3 terão infarto, 96 continuarão sem infarto de qualquer jeito, e <strong>1 pessoa em 100</strong> será salva de um infarto graças ao remédio (RRA = 1%; Número Necessário para Tratar — NNT = 100).\"</em>"
+          ]
+        ],
+        [
+          "t",
+          [
+            "Diretriz de Comunicação de Risco no MCCP",
+            "Prática Inadequada (Manipulativa / Confusa)",
+            "Prática Padrão-Ouro Centrada na Pessoa"
+          ],
+          [
+            [
+              "<strong>Métrica Epidemiológica</strong>",
+              "Usar apenas Risco Relativo (ex: \"reduz o risco em 30%\" ou \"dobra o risco de efeito adverso\").",
+              "Usar sempre <strong>Risco Absoluto</strong>, NNT (Número Necessário para Tratar) e NNH (Número Necessário para Causar Dano)."
+            ],
+            [
+              "<strong>Formato Numérico</strong>",
+              "Usar porcentagens decimais abstratas (ex: \"risco de 0,15%\") ou probabilidades com denominadores variáveis (1 em 340 vs. 1 em 85).",
+              "Usar <strong>Frequências Naturais com Denominador Fixo</strong> (ex: \"a cada 1.000 pessoas rastreadas durante 10 anos...\")."
+            ],
+            [
+              "<strong>Enquadramento (<em>Framing</em>)</strong>",
+              "Enquadramento unilateral positivo (\"95% de chance de sucesso\") ou apenas negativo (\"5% de chance de complicação\").",
+              "<strong>Enquadramento Duplo Balanceado (Positivo e Negativo)</strong>: \"Em cada 100 pessoas, 95 ficam sem sequelas e 5 apresentam esta complicação\"."
+            ],
+            [
+              "<strong>Apoio Visual</strong>",
+              "Apenas discurso verbal rápido ou gráficos de barras com eixo Y truncado.",
+              "Matrizes pictográficas de ícones (<strong>Gráficos de Paling / <em>Icon Arrays</em></strong> com 100 ou 1.000 bonequinhos coloridos)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "8.3 Letramento Funcional em Saúde (Health Literacy) e Adaptação Cultural"
+        ],
+        [
+          "p",
+          "O <strong>Letramento em Saúde (<em>Health Literacy</em>)</strong> é a capacidade cognitiva e social de um indivíduo obter, processar e compreender informações básicas de saúde para tomar decisões apropriadas sobre seu próprio cuidado. No Brasil, estudos populacionais demonstram que uma parcela expressiva dos usuários do SUS apresenta letramento funcional em saúde limitado, mesmo entre pessoas que sabem assinar o nome ou possuem escolaridade formal básica."
+        ],
+        [
+          "p",
+          "<strong>Sinais clínicos indiretos de baixo letramento em saúde na consulta:</strong> Paciente que entrega a caixa de remédios ao médico dizendo <em>\"trouxe as caixinhas porque esqueci meus óculos de leitura em casa\"</em>; paciente que identifica os comprimidos exclusivamente pela cor ou tamanho (\"tomo o rosinha pequeno de manhã e o branco grande à noite\") e se perde quando a farmácia da UBS muda o laboratório genérico; ou paciente que concorda com a cabeça o tempo todo sem fazer nenhuma pergunta, mas não segue a prescrição corretamente."
+        ],
+        [
+          "p",
+          "<strong>Estratégias de Precaução Universal em Letramento em Saúde:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Limitar cada consulta a no máximo <strong>2 ou 3 mensagens-chave fundamentais</strong> (evitando sobrecarga cognitiva);",
+            "Substituir termos técnicos por linguagem cotidiana sem infantilizar o paciente (ex: dizer \"pressão alta\" em vez de \"hipertensão arterial sistêmica essencial\", \"açúcar no sangue\" em vez de \"hiperglicemia pós-prandial\");",
+            "Utilizar receitas médicas visuais ou organizadores de medicação (desenhando um sol para a manhã, um prato para o almoço e uma lua para a noite nas cartelas, quando necessário);",
+            "Aplicar sistematicamente o método <strong><em>Teach-Back</em></strong> ao final da consulta."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-resolvidos-mccp",
+      0,
+      [
+        [
+          "2",
+          "9. Casos Clínicos Resolvidos e Comentados (Aplicação Prática do MCCP na APS)"
+        ],
+        [
+          "p",
+          "A seguir, apresentamos quatro casos clínicos complexos, estruturados nos moldes das provas práticas (OSCE) e discursivas de Residência Médica em Medicina de Família e Comunidade, Revalida e ENAMED, demonstrando o raciocínio clínico passo a passo sob o Método Clínico Centrado na Pessoa."
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Cefaleia Tensional, Solicitação de Exame Desnecessário e Exploração do SIFE"
+        ],
+        [
+          "p",
+          "<strong>Cenário Clínico:</strong> Roberto, 38 anos, contador, comparece à Unidade Básica de Saúde em consulta de demanda espontânea queixando-se de dor de cabeça há 10 dias. Assim que se senta no consultório, antes mesmo de o médico perguntar detalhes da dor, Roberto afirma em tom tenso e assertivo: <em>\"Doutor, eu vim aqui porque preciso que o senhor me passe uma Ressonância Magnética ou Tomografia de Crânio urgente. Estou com uma dor de cabeça todo fim de tarde há dez dias e quero fazer esse exame para ver o que tem lá dentro.\"</em>"
+        ],
+        [
+          "p",
+          "Na anamnese biomédica e exame físico dirigidos: a dor é holocraniana, em peso/aperto (não pulsátil), de intensidade leve a moderada (4/10), surge no final do expediente no escritório, melhora com dipirona e com o repouso noturno (não o acorda à noite), sem náuseas, vômitos, fotofobia, febre, rigidez de nuca, alteração visual ou déficit focal. Pressão arterial: 122x78 mmHg; fundo de olho e exame neurológico completo rigorosamente normais."
+        ],
+        [
+          "4",
+          "Análise Clínica e Resolução Passo a Passo:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Diagnóstico Biomédico (<em>Disease</em>):</strong> Cefaleia primária do tipo tensional episódica, sem qualquer sinal de alarme (<em>red flags</em> do mnemônico SNOOP4 ausentes). Não há indicação clínica de neuroimagem (solicitar TC/RM aqui violaria a Prevenção Quaternária, expondo o paciente a radiação ou ao risco de encontrar um <em>incidentaloma</em> benigno que geraria ansiedade crônica e cascatas propedêuticas).",
+            "<strong>2. Exploração da Experiência da Doença (<em>Illness</em> — SIFE):</strong> Em vez de negar secamente o exame (\"Você não precisa de tomografia, isso é só estresse\"), o médico valida a preocupação de Roberto e explora o SIFE:\n    <ul>\n      <li><em>Médico:</em> \"Roberto, percebo que essa dor de cabeça está deixando você bastante preocupado a ponto de pensar logo numa tomografia. O que passou pela sua cabeça sobre o que poderia estar causando essa dor?\" (Explorando <strong>Ideias</strong> e <strong>Sentimentos</strong>).",
+            "<em>Roberto (suspira e baixa a guarda):</em> \"É que há três semanas o meu sócio do escritório, que tinha só 41 anos, começou com uma dor de cabeça forte, desmaiou na mesa e morreu no hospital por causa de um aneurisma cerebral rompido. Minha esposa está grávida do nosso primeiro filho e eu fiquei apavorado de ter um aneurisma também e morrer antes de conhecer meu filho.\"",
+            "<em>Funcionalidade (F) e Expectativas (E):</em> Além do luto pelo sócio, Roberto assumiu sozinho toda a contabilidade da empresa (trabalhando 14 horas por dia em frente ao computador, gerando a contratura muscular pericraniana da cefaleia tensional), e sua verdadeira <strong>Expectativa</strong> não é o exame radiológico em si, mas obter <strong>segurança clínica de que não tem um aneurisma prestes a romper</strong>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>3. Terreno Comum e Plano Conjunto (Componente 3):</strong> O médico explica com empatia a diferença entre a cefaleia súbita em trovoada da hemorragia subaracnoidea (que vitimou o sócio) e a cefaleia muscular tensional ligada à sobrecarga laboral e ao estresse do luto. Mostra ao paciente como o exame neurológico completo e o fundo de olho normais afastam hipertensão intracraniana. Pactua-se um plano conjunto sem necessidade de tomografia: pausas ergonômicas no trabalho, atividade física leve, manejo do luto, analgesia racional se necessário e <strong>Rede de Segurança (<em>Safety Netting</em>)</strong> clara sobre quais sinais de alarme exigiriam reavaliação imediata, agendando retorno em 3 semanas. Roberto sai aliviado, satisfeito e confiante no vínculo.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Demanda Oculta, Queixa de Maçaneta e Violência Intrafamiliar"
+        ],
+        [
+          "p",
+          "<strong>Cenário Clínico:</strong> Helena, 34 anos, auxiliar de limpeza, comparece à consulta agendada na UBS. Quando a médica de família inicia com pergunta aberta (<em>\"Bom dia, Helena! Como posso ajudar você hoje?\"</em>), Helena olha para o chão, mexe repetidamente na alça da bolsa, fala em voz muito baixa e diz: <em>\"Ah, doutora, não é nada demais... é só uma manchinha branca que apareceu aqui nas minhas costas faz uns seis meses, queria só uma pomadinha.\"</em> Ao rastrear a agenda (<em>\"Além dessa manchinha, tem mais alguma coisa que você gostaria de ver hoje?\"</em>), Helena hesita por 4 segundos, engole em seco e diz: <em>\"Não, doutora, é só isso mesmo.\"</em>"
+        ],
+        [
+          "p",
+          "Durante o exame físico da pele do dorso (compatível com pitiríase versicolor simples), a médica observa duas equimoses violáceas e esverdeadas (em diferentes estágios de evolução) na face medial do braço esquerdo e na região escapular, em locais atípicos para traumas acidentais."
+        ],
+        [
+          "4",
+          "Análise Clínica e Resolução Passo a Passo:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Reconhecimento das Pistas de Demanda Oculta:</strong> Há clara discrepância entre o \"bilhete de entrada\" (uma lesão dermatológica crônica, assintomática, presente há 6 meses) e a linguagem corporal de intenso sofrimento psíquico (olhar cabisbaixo, voz baixa, hesitação no rastreamento da agenda), somada ao achado físico de equimoses em estágios distintos em áreas de contenção/agressão.",
+            "<strong>2. Habilidade de Comunicação (Reflexão e Abertura Empática sem Confronto Policialesco):</strong> A médica garante privacidade absoluta no consultório, senta-se próxima a Helena e utiliza observação empática combinada à normalização:\n    <ul>\n      <li><em>Médica:</em> \"Helena, já vou te passar o tratamento para a manchinha da pele. Mas, enquanto conversávamos e eu te examinava, notei que você parece bastante triste hoje e vi também essas marcas roxas no seu braço. Muitas vezes, mulheres que passam por situações difíceis ou de agressão em casa têm receio de falar sobre isso. Aqui no consultório você está em um lugar totalmente seguro e sigiloso. Como estão as coisas lá na sua casa?\""
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>3. Revelação e Manejo Centrado na Pessoa:</strong> Diante do acolhimento empático e do silêncio terapêutico da médica, Helena chora e revela que o marido vem chegando alcoolizado e a agrediu fisicamente nas últimas duas semanas, ameaçando-a caso ela procure a polícia. A médica aplica o acolhimento imediato: valida a dor e a coragem de Helena (desculpabilizando-a), avalia o risco agudo de feminicídio (presença de armas em casa, escalada de agressões), constrói em conjunto um <strong>Plano de Segurança Pessoal</strong> (rede de apoio familiar para abrigo seguro, números de emergência, articulação com o CREAS/Centro de Referência da Mulher e psicologia da eMulti), registra detalhadamente as lesões no prontuário e realiza a <strong>notificação compulsória de violência interpessoal contra a mulher no SINAN</strong> (explicando à paciente que a notificação epidemiológica ao SINAN é um instrumento de saúde pública e proteção, distinto de boletim de ocorrência policial, salvo nas hipóteses legais específicas de risco iminente ou lesão grave previstas na legislação atual, sempre priorizando a proteção da vida da mulher).</li>\n</ul>"
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Ambivalência, Tabagismo e Diabetes Descompensado (Entrevista Motivacional)"
+        ],
+        [
+          "p",
+          "<strong>Cenário Clínico:</strong> Sr. Joaquim, 58 anos, caminhoneiro, portador de Diabetes Mellitus tipo 2, Hipertensão Arterial e tabagista (30 anos-maço), comparece para mostrar exames de rotina: HbA1c = 9,4%, microalbuminúria positiva e PA = 148x92 mmHg. Logo ao entrar, diz de forma defensiva: <em>\"Doutor, já vou avisando que minha glicose subiu porque na estrada não dá para comer salada, e nem adianta o senhor mandar eu largar o cigarro como o outro médico fez, porque dirigir à noite sem fumar dá sono e eu preciso trabalhar para sustentar a casa!\"</em>"
+        ],
+        [
+          "4",
+          "Análise Clínica e Resolução Passo a Passo:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Diagnóstico do Estágio de Mudança e Contratransferência:</strong> O paciente encontra-se entre a <strong>Pré-Contemplação e a Contemplação</strong> para o tabagismo e a alimentação, apresentando forte resistência antecipatória (reatância) por ter sofrido \"sermões\" punitivos em consultas anteriores. O médico deve conter seu <em>Reflexo de Consertar (Righting Reflex)</em> e sua contratransferência de frustração.",
+            "<strong>2. Aplicação de OARS e Acompanhamento da Resistência (<em>Roll with Resistance</em>):</strong>\n    <ul>\n      <li><em>Médico (Empatia, Afirmação e Respeito à Autonomia):</em> \"Seu Joaquim, fique tranquilo, minha função aqui não é lhe dar bronca nem mandar o senhor fazer nada à força; quem decide sobre a sua vida e a sua saúde é o senhor. Pelo contrário, fico muito feliz que, mesmo com a rotina dura da estrada, o senhor tirou o dia de folga para fazer os exames e vir cuidar de si. Vejo que sustentar sua família e trabalhar com segurança são coisas muito importantes para o senhor.\"",
+            "<em>Desarmado pela postura não punitiva, Joaquim relaxa:</em> \"Pois é, doutor, na estrada é puxado. Mas confesso que fiquei assustado quando vi essa glicose em 9,4%, porque meu irmão mais velho perdeu a visão e faz hemodiálise por causa do diabetes...\""
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>3. Evocação da Fala de Mudança (<em>Change Talk</em>) e Plano Realista:</strong> O próprio paciente acabou de revelar sua motivação intrínseca (medo de perder a visão/rins como o irmão e ficar incapacitado de dirigir seu caminhão!). O médico faz uma <strong>Reflexão de Duplo Lado</strong> conectando a saúde aos valores de Joaquim: <em>\"Então, por um lado, a rotina na boleia do caminhão torna difícil cuidar da comida e o cigarro parece ajudar a ficar acordado; e, por outro lado, o senhor quer muito proteger seus olhos e seus rins para continuar trabalhando e independente, diferente do que aconteceu com seu irmão.\"</em> Em vez de tentar mudar tudo de uma vez (dieta radical + cessação abrupta do fumo + insulina), médico e paciente negociam o foco prioritário daquele mês: otimizar o tratamento farmacológico (associando inibidor de SGLT2 ou ajustando metformina/IECA para nefroproteção) e pactuar <strong>uma única meta comportamental realista escolhida pelo próprio Joaquim</strong> (substituir o refrigerante comum das paradas de estrada por água com gás/zero e reduzir os cigarros fumados dentro da cabine fechada), agendando retorno em 30 dias.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Comunicação de Má Notícia e Manejo da Conspiração do Silêncio (Protocolo SPIKES)"
+        ],
+        [
+          "p",
+          "<strong>Cenário Clínico:</strong> Dona Conceição, 71 anos, viúva, lúcida, independente para todas as atividades instrumentais de vida diária, realizou colonoscopia com biópsia solicitada pelo médico de família devido a anemia ferropriva e pesquisa de sangue oculto nas fezes positiva. O laudo anatomopatológico acaba de chegar à UBS confirmando <strong>Adenocarcinoma moderadamente diferenciado de cólon ascendente</strong>. Dez minutos antes de Dona Conceição entrar no consultório, sua filha mais velha, Márcia, entra sozinha na sala do médico chorando e implora: <em>\"Doutor, eu abri o envelope na internet e vi que é câncer! Pelo amor de Deus, não fale essa palavra para a minha mãe! Diga que é só uma gastrite ou um pólipo benigno que precisa operar, senão ela vai desistir de viver!\"</em>"
+        ],
+        [
+          "4",
+          "Análise Clínica e Resolução Passo a Passo:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Manejo Ético e Comunicacional da Conspiração do Silêncio:</strong> O médico acolhe o sofrimento de Márcia (Passo E — Empatia com a família: <em>\"Márcia, vejo o quanto você ama sua mãe e quer protegê-la desse sofrimento\"</em>), mas explica com firmeza gentil que mentir para uma paciente lúcida viola sua autonomia ética, destrói a confiança quando ela for encaminhada à cirurgia oncológica e gera solidão emocional. O médico propõe uma aliança com a filha: <em>\"Nós não vamos jogar a notícia de forma brutal para ela. Vamos convidá-la para entrar, e eu vou primeiro perguntar a ela o que ela suspeita e o quanto ela deseja saber hoje, respeitando o ritmo dela. Vamos fazer isso juntos?\"</em>",
+            "<strong>2. Aplicação do Protocolo SPIKES com Dona Conceição:</strong>\n    <ul>\n      <li><strong>S (<em>Setting</em>):</strong> Dona Conceição entra acompanhada da filha; todos sentados em ambiente calmo e privado.",
+            "<strong>P (<em>Perception</em>):</strong> <em>\"Dona Conceição, antes de olharmos o papel do exame do intestino, o que a senhora vinha pensando sobre o motivo daquela anemia e de termos pedido essa colonoscopia?\"</em> Dona Conceição responde: <em>\"Ah, meu filho, a gente não é boba, né? Quando o médico lá da clínica tirou um pedacinho e mandou para biópsia, eu logo pensei que pudesse ser um tumor maligno, mas não quis falar nada para a Márcia não ficar chorando pelos cantos!\"</em> (Observa-se a <strong>dupla proteção</strong>: mãe e filha sabiam/suspeitavam e escondiam uma da outra para se pouparem!).",
+            "<strong>I (<em>Invitation</em>):</strong> Dona Conceição confirma que quer saber a verdade com clareza para organizar sua vida e seu tratamento.",
+            "<strong>K (<em>Knowledge</em>):</strong> O médico emite o <em>Warning Shot</em> (<em>\"Dona Conceição, a senhora teve muita sabedoria na sua intuição; infelizmente o resultado da biópsia trouxe uma notícia séria...\"</em>) e explica em linguagem clara que foi identificado um tumor maligno (câncer) no início do intestino grosso, fazendo pausa imediata.",
+            "<strong>E (<em>Emotions</em> — NURSE):</strong> Mãe e filha se abraçam e choram juntas (agora sem o muro da mentira entre elas). O médico mantém silêncio respeitoso, entrega lenços, valida o sentimento de medo e reafirma o suporte longitudinal incondicional da equipe.",
+            "<strong>S (<em>Strategy and Summary</em>):</strong> Quando ambas se acalmam, o médico explica que o tumor foi descoberto porque a equipe investigou a anemia precocemente, que já está solicitando as tomografias de estadiamento e inserindo o encaminhamento prioritário para a Cirurgia Oncológica via regulação, mantendo o acompanhamento compartilhado na UBS."
+          ]
+        ]
+      ]
+    ],
+    [
+      "consultas-remotas-barreiras-especiais-entrevista-mccp",
+      0,
+      [
+        [
+          "2",
+          "12. Situações Especiais de Comunicação Clínica na APS: Teleconsulta, Consultas Triádicas e Manejo da Raiva"
+        ],
+        [
+          "p",
+          "A prática contemporânea da Medicina de Família e Comunidade exige adaptar o Método Clínico Centrado na Pessoa e as micro-habilidades do Guia de Calgary-Cambridge a cenários comunicacionais de alta complexidade: o atendimento mediado por tecnologias de informação e comunicação (Telemedicina/Teleconsulta), as consultas com presença de terceiros (consultas triádicas com familiares, cuidadores ou intérpretes) e a desescalada verbal de pacientes agudamente hostis ou furiosos."
+        ],
+        [
+          "3",
+          "12.1 O Método Clínico Centrado na Pessoa na Teleconsulta (Telemedicina na APS)"
+        ],
+        [
+          "p",
+          "Regulamentada no Brasil pela Resolução CFM nº 2.314/2022 e amplamente incorporada ao fluxo das equipes de Saúde da Família, a teleconsulta (seja por vídeo ou por áudio/telefone) altera profundamente os canais sensoriais da relação médico-pessoa. A ausência do espaço físico compartilhado e a impossibilidade do toque direto impõem riscos específicos — como a perda de pistas não verbais periféricas (tremor de extremidades, marcha ao entrar na sala, odor cetótico ou etílico) e a tendência de tornar a entrevista excessivamente biomédica e semelhante a um \"telemarketing de triagem\"."
+        ],
+        [
+          "p",
+          "Para preservar a integralidade dos 4 componentes do MCCP na teleconsulta, aplicam-se técnicas específicas de comunicação remota:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Preparação e Segurança Inicial (<em>Webside Manner</em>):</strong> Antes de iniciar a coleta clínica, o médico deve confirmar a identidade completa da pessoa, verificar onde ela se encontra fisicamente (garantindo que tenha privacidade acústica para falar sem constrangimento e anotando o endereço físico caso ocorra uma emergência médica súbita durante a chamada que exija acionamento do SAMU 192) e obter o consentimento para a modalidade remota.",
+            "<strong>Contato Visual no Vídeo (Olhar para a Câmera vs. Tela):</strong> Na videochamada, quando o médico olha para o rosto do paciente no centro do monitor, para o paciente parece que o médico está olhando para baixo. Para transmitir contato visual empático nos momentos de validação emocional (NURSE) ou transmissão de notícias delicadas, o médico deve posicionar a janela de vídeo logo abaixo da lente da webcam e olhar diretamente para a câmera.",
+            "<strong>Compensação Paraverbal no Atendimento por Áudio/Telefone:</strong> Na consulta telefônica pura, na qual 100% da comunicação visual desaparece, o silêncio prolongado pode ser interpretado pelo paciente como queda da ligação ou desatenção. O médico deve aumentar a frequência de <strong>vocalizações facilitadoras empáticas</strong> (<em>\"Estou te ouvindo...\"</em>, <em>\"Compreendo perfeitamente...\"</em>) e explicitar verbalmente suas ações (<em>\"Vou ficar em silêncio por dez segundos apenas porque estou lendo o resultado do seu exame de sangue aqui na minha tela, mas continuo aqui com você\"</em>).",
+            "<strong>Limiar de Conversão para Consulta Presencial e <em>Safety Netting</em> Reforçado:</strong> Toda teleconsulta que identifique sinais de alarme (dor torácica, dispneia, abdome agudo, déficit neurológico, necessidade indispensável de ausculta/palpação ou suspeita de violência doméstica onde o agressor possa estar no mesmo cômodo ouvindo a chamada) deve ser imediatamente convertida em atendimento presencial prioritário na UBS ou serviço de urgência."
+          ]
+        ],
+        [
+          "3",
+          "12.2 Consultas Triádicas: Abordagem do Acompanhante, Intérpretes e Barreiras Sensoriais"
+        ],
+        [
+          "p",
+          "Muito frequentemente na Atenção Primária, a consulta deixa de ser diádica (médico + paciente) e passa a ser <strong>triádica</strong> (médico + paciente + acompanhante familiar ou cuidador), especialmente no cuidado de idosos, crianças, adolescentes e pessoas com deficiência intelectual ou barreira linguística."
+        ],
+        [
+          "u",
+          [
+            "<strong>Evitando a \"Invisibilização\" (<em>Elderspeak</em> e Exclusão do Paciente):</strong> Um erro clássico em provas práticas (OSCE) ao atender um idoso ou adolescente acompanhado é o médico dirigir o olhar e as perguntas exclusivamente ao filho ou à mãe (<em>\"Como ele tem passado? Ele está tomando os remédios direitinho?\"</em>), tratando o paciente lúcido na terceira pessoa como se estivesse ausente. A regra de ouro do MCCP é: <strong>dirigir-se sempre primeiramente ao próprio paciente</strong>, mantendo o contato visual principal com ele, mesmo quando o acompanhante tenta monopolizar a palavra.",
+            "<strong>Manejo do Acompanhante Dominador ou Intrusivo:</strong> Quando o familiar responde todas as perguntas pelo paciente lúcido, o médico deve usar a técnica de <strong>validação seguida de redirecionamento gentil</strong>: <em>\"Dona Maria, a sua visão como esposa é fundamental e já quero ouvir todos os detalhes que a senhora observou em casa; mas, primeiro, deixe-me ouvir do próprio Seu José como ele está sentindo essa dor no peito, tudo bem?\"</em>",
+            "<strong>Garantia de Espaço Privado na Consulta do Adolescente e do Idoso Vulnerável:</strong> Tanto na consulta de adolescentes (estatuto da confidencialidade ética para abordagem de sexualidade, humor e substâncias) quanto em idosos ou mulheres com suspeita de negligência/violência patrimonial ou física, o médico deve estruturar a consulta em dois tempos, solicitando gentilmente que o acompanhante aguarde na recepção durante a etapa do exame físico e da conversa confidencial.",
+            "<strong>Comunicação com Pessoas Surdas (Libras) ou Imigrantes (Barreira Idiomática):</strong> Ao atender com o auxílio de um intérprete de Libras ou tradutor cultural, o médico deve posicionar-se de frente para o paciente e <strong>olhar e falar diretamente para o paciente na segunda pessoa</strong> (\"Como <em>você</em> está se sentindo?\"), e jamais olhar para o intérprete dizendo \"Pergunte a ele como ele está\". Deve-se evitar utilizar crianças pequenas da família como intérpretes de temas médicos sensíveis, pois isso inverte a hierarquia parental e constrange o relato de queixas íntimas."
+          ]
+        ],
+        [
+          "3",
+          "12.3 Desescalada Verbal do Paciente Irritado, Hostil ou Agressivo na APS"
+        ],
+        [
+          "p",
+          "Filas de espera, demora em agendamentos na rede secundária, dor aguda ou transtornos de personalidade podem fazer com que o paciente adentre o consultório bradando queixas hostis contra a unidade ou o médico. O manejo centrado na pessoa para desescalada de raiva segue passos precisos:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Garantir a segurança física e manter a rota de saída livre:</strong> Posicionar-se de modo que tanto o médico quanto o paciente tenham acesso desimpedido à porta (jamais encurralar um paciente agitado nem ficar encurralado no fundo da sala).",
+            "<strong>Autorregulação Emocional e Paralinguística (<em>De-escalation</em>):</strong> Conter a contratransferência defensiva! Não elevar o tom de voz, não cruzar os braços, não apontar o dedo e não retrucar com ironia. Falar em tom de voz calmo, grave, pausado e ligeiramente mais baixo que o habitual.",
+            "<strong>Reconhecimento e Validação da Frustração sem Assumir Culpa Indevida:</strong> Em vez de dizer <em>\"Acalme-se senão não vou te atender!\"</em> (frase que invariavelmente explode a fúria do paciente), utilizar empatia de validação: <em>\"Senhor Carlos, percebo que o senhor está extremamente chateado e frustrado por ter esperado seis meses por esse exame e o sistema ter cancelado. Qualquer pessoa no seu lugar também ficaria muito revoltada com essa situação. Eu estou aqui do seu lado para tentarmos resolver o seu problema de saúde hoje.\"</em>",
+            "<strong>Estabelecimento de Limites Claros e Respeitosos (se houver abuso verbal ou ameaça):</strong> Validar o sentimento de raiva não significa tolerar agressão ou desrespeito: <em>\"Eu compreendo sua revolta com a demora e quero muito ajudá-lo com a sua dor agora, mas para que eu consiga examiná-lo e resolver isso, preciso que o senhor não grite comigo. Podemos conversar sentados para eu te ajudar?\"</em>"
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-residencia-mccp",
+      0,
+      [
+        [
+          "2",
+          "10. Questões Comentadas de Residência Médica, Revalida e ENAMED (Padrão R1/MFC)"
+        ],
+        [
+          "p",
+          "A seguir, resolvemos e comentamos em profundidade 8 questões de alta complexidade representativas das principais bancas examinadoras do país (USP, UNICAMP, UNIFESP, ENARE, SUS-SP, SBMFC e INEP/Revalida), dissecando a alternativa correta e refutando cada distrator."
+        ],
+        [
+          "3",
+          "Questão 1 — Estrutura Atualizada do MCCP (Stewart et al.)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Durante discussão clínica em uma Unidade de Saúde da Família, o preceptor da Residência de Medicina de Família e Comunidade revisa com o médico residente a evolução conceitual do Método Clínico Centrado na Pessoa (MCCP) sistematizado por Moira Stewart e colaboradores na Universidade de Western Ontario (a partir da 3ª e 4ª edições da obra de referência). Sobre a arquitetura atual dos componentes do MCCP, assinale a alternativa CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> O MCCP é atualmente estruturado em 6 componentes independentes e sequenciais, sendo o quinto componente \"Incorporando prevenção e promoção da saúde\" e o sexto componente \"Sendo realista\".",
+            "<strong>B)</strong> O MCCP consolidou-se atualmente em 4 componentes interativos: (1) Explorando a saúde, a doença e a experiência da doença; (2) Entendendo a pessoa como um todo; (3) Elaborando um plano conjunto de manejo dos problemas; e (4) Intensificando a relação entre a pessoa e o médico.",
+            "<strong>C)</strong> A exploração da experiência da doença (<em>illness</em>) por meio do acrônimo SIFE substitui a necessidade de investigação diagnóstica da patologia biomédica (<em>disease</em>) nas queixas indiferenciadas da Atenção Primária.",
+            "<strong>D)</strong> No Terceiro Componente (\"Elaborando um plano conjunto de manejo dos problemas\"), a decisão final cabe exclusivamente ao paciente após o médico expor todas as probabilidades estatísticas de forma neutra e isenta de opinião técnica.",
+            "<strong>E)</strong> O conceito de \"Sendo realista\" foi excluído da obra de Stewart et al. por ter sido considerado incompatível com o idealismo humanista da Medicina Centrada na Pessoa."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> A partir da 3ª edição (2014) e mantida na 4ª edição (2024) de <em>Patient-Centered Medicine: Transforming the Clinical Method</em>, Stewart et al. sintetizaram os antigos 6 componentes em <strong>4 componentes integrados</strong>: (1) Explorando a saúde, a doença (<em>disease</em>) e a experiência da doença (<em>illness</em>); (2) Entendendo a pessoa como um todo (indivíduo, família e contexto proximal/distal); (3) Elaborando um plano conjunto de manejo dos problemas (<em>finding common ground</em>); e (4) Intensificando a relação entre a pessoa e o médico.",
+            "<strong>Refutação da alternativa A (Incorreta):</strong> Descreve a estrutura antiga das duas primeiras edições (1995 e 2003), que possuía 6 componentes. Além disso, os componentes do MCCP nunca foram estritamente lineares ou sequenciais, mas sim interativos e dinâmicos.",
+            "<strong>Refutação da alternativa C (Incorreta):</strong> Erro conceitual gravíssimo! O Primeiro Componente exige a exploração simultânea e sinérgica da <em>disease</em> (semiologia e raciocínio clínico biomédico rigoroso) <strong>e</strong> da <em>illness</em> (SIFE). O MCCP jamais abandona o método clínico tradicional de diagnóstico orgânico; ele o amplia e o integra.",
+            "<strong>Refutação da alternativa D (Incorreta):</strong> Descreve o modelo <em>informativo/consumista</em>, e não a Decisão Compartilhada do Componente 3. No Terceiro Componente, o médico não se omite: ele participa ativamente como parceiro técnico, oferecendo recomendações baseadas nas evidências e alinhadas aos valores da pessoa.",
+            "<strong>Refutação da alternativa E (Incorreta):</strong> \"Sendo realista\" (uso sábio do tempo, trabalho em equipe e alocação de recursos) não foi descartado por incompatibilidade, mas sim reposicionado como o contexto prático transversal que envolve todos os 4 componentes."
+          ]
+        ],
+        [
+          "3",
+          "Questão 2 — Acrônimo SIFE e Distinção entre Disease, Illness e Sickness"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Mulher de 46 anos, professora do ensino fundamental, comparece à consulta na UBS relatando rouquidão intermitente e pigarro há 3 semanas. Durante a entrevista clínica, ela afirma: <em>\"Doutora, desde que minha colega de escola descobriu um tumor na garganta no semestre passado, eu não consigo dormir direito pensando que essa minha rouquidão pode ser um câncer nas cordas vocais. Já não consigo dar aula no último horário porque a voz falha e tenho medo de perder minha função na escola. Eu queria muito que a senhora me encaminhasse hoje mesmo para fazer aquela câmera na garganta.\"</em> Considerando o Primeiro Componente do MCCP e o acrônimo SIFE, assinale a associação CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> O medo de estar com câncer e não conseguir dormir corresponde à dimensão <em>Ideias (I)</em>; o relato de que a voz falha no último horário corresponde à <em>Expectativa (E)</em>.",
+            "<strong>B)</strong> A alteração inflamatória das pregas vocais por abuso vocal corresponde à <em>Illness</em>; a vivência de angústia e medo da professora corresponde à <em>Disease</em>.",
+            "<strong>C)</strong> O temor angustiado de ter câncer representa os <em>Sentimentos (S)</em>; a hipótese causal de que a rouquidão seja um tumor nas cordas vocais representa as <em>Ideias (I)</em>; a limitação para lecionar no último horário representa a <em>Funcionalidade (F)</em>; e o desejo de realizar videolaringoscopia hoje representa as <em>Expectativas (E)</em>.",
+            "<strong>D)</strong> A médica deve encaminhar imediatamente a paciente ao otorrinolaringologista para realização de videolaringoscopia com biópsia, pois atender prontamente à <em>Expectativa (E)</em> do paciente é obrigatório para consolidar o Terceiro Componente do MCCP.",
+            "<strong>E)</strong> O receio de perder a função laboral na escola configura o conceito antropológico de <em>Disease</em>, devendo ser manejado exclusivamente pelo médico perito do INSS."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está correta:</strong> A narrativa da paciente ilustra com perfeição todos os quatro elementos do acrônimo <strong>SIFE</strong> (que compõem a exploração da <em>illness</em>): <strong>S (Sentimentos)</strong> = medo/insônia/angústia diante da possibilidade de câncer e de perder sua função; <strong>I (Ideias)</strong> = seu modelo explicativo de que a rouquidão seja causada por um tumor nas pregas vocais como o da colega; <strong>F (Funcionalidade)</strong> = o impacto direto na sua capacidade laboral de dar aulas no último período; <strong>E (Expectativas)</strong> = o pedido específico de encaminhamento imediato para videolaringoscopia.",
+            "<strong>Refutação das alternativas A e B (Incorretas):</strong> Na alternativa A há inversão entre Sentimentos, Ideias e Funcionalidade; na alternativa B há inversão direta entre os conceitos de <em>Disease</em> (a laringite por fonotrauma/refluxo) e <em>Illness</em> (a vivência subjetiva do adoecimento).",
+            "<strong>Refutação da alternativa D (Incorreta):</strong> Explorar as <em>Expectativas</em> não significa submeter-se acriticamente a qualquer pedido de exame ou encaminhamento (o que violaria a Prevenção Quaternária), mas sim compreender o que motiva o pedido para construir um plano conjunto baseado em evidências (avaliar sinais de alarme como tabagismo, etilismo, dispneia, disfagia ou linfonodomegalia; orientar higiene vocal e reavaliar em 2 semanas, explicando quando a laringoscopia é realmente necessária).",
+            "<strong>Refutação da alternativa E (Incorreta):</strong> A repercussão institucional e trabalhista do papel de doente refere-se à dimensão de <em>Sickness</em> e ao impacto na <em>Funcionalidade</em>, jamais a <em>Disease</em>."
+          ]
+        ],
+        [
+          "3",
+          "Questão 3 — Habilidades de Comunicação, Interrupção Precoce e Rastreamento da Agenda"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> De acordo com o Guia de Calgary-Cambridge de Habilidades de Comunicação Clínica e os estudos clássicos sobre a entrevista médica na Atenção Primária (Beckman & Frankel; Marvel et al.), assinale a alternativa CORRETA sobre a condução do início da consulta:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Se o médico não interromper a fala inicial do paciente, a maioria das consultas torna-se inviável na APS, pois os pacientes falam ininterruptamente por mais de 8 a 10 minutos.",
+            "<strong>B)</strong> Assim que o paciente menciona sua primeira queixa física (ex: \"estou com dor nas costas\"), a conduta mais eficiente é iniciar imediatamente perguntas fechadas sobre a cronologia e irradiação daquela dor antes que o paciente mude de assunto.",
+            "<strong>C)</strong> O rastreamento da agenda (<em>agenda setting / screening</em>) consiste em perguntar reiteradamente <em>\"Mais alguma coisa?\"</em> após o relato inicial, mapeando todos os motivos da consulta antes de aprofundar a investigação de cada um deles, o que reduz significativamente as queixas de \"mão na maçaneta\".",
+            "<strong>D)</strong> A técnica <em>Teach-Back</em> deve ser utilizada nos primeiros 90 segundos da consulta para verificar se o paciente compreendeu o horário de funcionamento da Unidade Básica de Saúde.",
+            "<strong>E)</strong> A Rede de Segurança (<em>Safety Netting</em>) é uma técnica aplicada exclusivamente na etapa de coleta de informações para impedir que o paciente minta sobre o uso de medicamentos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está correta:</strong> O rastreamento e negociação da agenda (<em>screening</em>) logo após a escuta ativa inicial é a ferramenta padrão-ouro do Guia de Calgary-Cambridge para descobrir todas as demandas (incluindo pistas da demanda oculta) no início do encontro, permitindo priorizar o tempo da consulta e prevenindo o surgimento de problemas graves nos segundos finais (\"queixa de maçaneta\").",
+            "<strong>Refutação das alternativas A e B (Incorretas):</strong> Estudos demonstram que médicos interrompem precocemente em 11 a 23 segundos, mas quando permitem a fala livre, os pacientes concluem sua exposição inicial em média em <strong>60 a 90 segundos</strong> (nunca 8 a 10 minutos!). Iniciar perguntas fechadas sobre o primeiro sintoma citado (erro da alternativa B) bloqueia a revelação das demais queixas mais importantes.",
+            "<strong>Refutação das alternativas D e E (Incorretas):</strong> O <em>Teach-Back</em> (pedir que o paciente explique com suas palavras o plano combinado) e o <em>Safety Netting</em> (orientar evolução esperada, sinais de alarme e como buscar reavaliação) são técnicas das etapas finais da consulta (Explicação/Planejamento e Encerramento)."
+          ]
+        ],
+        [
+          "3",
+          "Questão 4 — Protocolo SPIKES e Conspiração do Silêncio"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Homem de 68 anos, aposentado, lúcido e totalmente independente, comparece à UBS acompanhado da esposa para receber o resultado de biópsia prostática que confirmou adenocarcinoma de próstata Gleason 8 (4+4). Antes de o paciente entrar, a esposa aborda o médico de família no corredor e pede: <em>\"Doutor, se deu câncer, por favor diga a ele que é apenas uma inflamação benigna da próstata, pois ele tem problemas do coração e não vai aguentar saber a verdade.\"</em> Com base no Protocolo SPIKES e nos preceitos éticos e comunicacionais da Medicina de Família, qual é a conduta CORRETA?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Acatar integralmente o pedido da esposa, invocando o princípio do privilégio terapêutico, e informar ao paciente que se trata de hiperplasia prostática benigna.",
+            "<strong>B)</strong> Repreender a esposa no corredor, informando que ocultar o diagnóstico é crime previsto no Código Penal, e revelar imediatamente o câncer ao paciente assim que ele cruzar a porta do consultório.",
+            "<strong>C)</strong> Acolher com empatia o medo da esposa, explicar a importância da honestidade na relação médico-paciente e, durante a consulta com o paciente, aplicar os passos <em>Perception (P)</em> e <em>Invitation (I)</em> para avaliar o que o próprio paciente já suspeita e o quanto de informação ele deseja receber naquele momento.",
+            "<strong>D)</strong> Transferir a responsabilidade da comunicação exclusivamente para o urologista ou oncologista da atenção secundária, abstendo-se de abrir o envelope do exame na UBS.",
+            "<strong>E)</strong> Entregar o laudo impresso nas mãos do paciente em silêncio para que ele mesmo leia a conclusão anatomopatológica, evitando que o médico precise verbalizar a palavra \"câncer\"."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está correta:</strong> O quadro ilustra a clássica <strong>Conspiração (ou Pacto) do Silêncio</strong>. A conduta padrão-ouro consiste em validar a intenção protetora da família sem aderir à mentira, construindo uma aliança e utilizando os passos <strong>P (Percepção)</strong> e <strong>I (Convite)</strong> do protocolo SPIKES diretamente com o paciente lúcido, respeitando sua autonomia e seu ritmo emocional.",
+            "<strong>Refutação das demais alternativas:</strong> Mentir ao paciente lúcido (A) viola o Art. 34 do Código de Ética Médica; confrontar rispidamente a família e despejar a notícia sem preparo (B) destrói o vínculo e viola todos os passos do SPIKES; omitir-se de comunicar um exame solicitado na própria APS ou entregar o laudo sem mediação clínica (D e E) configura abandono comunicacional e imperícia relacional."
+          ]
+        ],
+        [
+          "3",
+          "Questão 5 — Entrevista Motivacional e Estágios de Prochaska & DiClemente"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Paciente masculino, 52 anos, hipertenso e obeso, comparece à consulta periódica na UBS. Ao conversar sobre hábitos de vida, ele declara: <em>\"Doutor, eu sei que preciso perder peso e que essa barriga grande faz mal para a minha pressão e para o meu joelho. Penso bastante em começar uma caminhada e diminuir o pão e a cerveja nos próximos meses, mas, para ser sincero, quando chego em casa cansado do serviço, a única coisa que me alivia é comer bem e tomar minha latinha no sofá. Ainda não consigo abrir mão disso agora.\"</em> Segundo o Modelo Transteórico de Prochaska & DiClemente e a Entrevista Motivacional de Miller & Rollnick, em qual estágio de mudança o paciente se encontra e qual é a melhor abordagem médica?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Pré-contemplação; o médico deve alertá-lo enfaticamente sobre o risco iminente de acidente vascular cerebral hemorrágico e infarto agudo do miocárdio caso mantenha o peso atual.",
+            "<strong>B)</strong> Contemplação; o médico deve acolher a ambivalência sem julgamento, utilizar a escuta reflexiva (como a reflexão de duplo lado) e explorar a balança decisória para evocar a fala de mudança do próprio paciente.",
+            "<strong>C)</strong> Preparação; o médico deve prescrever imediatamente dieta hipocalórica restritiva de 1.200 kcal/dia, matrícula em academia 5 vezes por semana e agendar pesagem em 7 dias.",
+            "<strong>D)</strong> Ação; o médico deve reforçar a autoeficácia e prescrever anorexígeno farmacológico para acelerar a perda ponderal.",
+            "<strong>E)</strong> Recaída; o médico deve encaminhar o paciente ao psiquiatra por resistência refratária às orientações médicas."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> O paciente reconhece o problema (\"sei que faz mal para minha pressão e joelho\") e cogita mudar no médio prazo (\"penso em começar nos próximos meses\"), mas encontra-se profundamente dividido entre os benefícios da mudança e o prazer/alívio imediato do hábito atual (\"ainda não consigo abrir mão disso\"). Essa vivência simultânea de querer e não querer mudar define a <strong>ambivalência</strong>, marca registrada do estágio de <strong>Contemplação</strong>. A conduta correta na Entrevista Motivacional é usar habilidades OARS (especialmente reflexões de duplo lado e exploração de valores/balança decisória) para ajudar a pessoa a resolver sua própria ambivalência.",
+            "<strong>Refutação das demais alternativas:</strong> Na pré-contemplação (A) o paciente sequer reconhece o problema (e ameaças geram reatância); na preparação (C) o paciente já está decidido a agir nos próximos 30 dias (prescrever plano rígido a um contemplador gera resistência e fracasso); na ação (D) a mudança já está ocorrendo há menos de 6 meses."
+          ]
+        ],
+        [
+          "3",
+          "Questão 6 — Manejo do Paciente Somatizador na Atenção Primária"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Mulher de 49 anos é conhecida na Unidade de Saúde da Família por comparecer quase semanalmente ao acolhimento com queixas físicas variadas — ora dor abdominal incaracterística, ora formigamento migratório nos braços, ora palpitações e bolo na garganta — há mais de 3 anos. Já realizou três endoscopias, duas tomografias de abdome, ecocardiograma, holter, eletroneuromiografia e dezenas de exames laboratoriais, todos rigorosamente normais. Qual é a estratégia de manejo longitudinal CORRETA para esta paciente segundo os princípios da Medicina de Família e do MCCP?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Confrontar a paciente com os laudos normais, informando-a claramente de que ela não possui nenhuma doença física e proibindo seu atendimento no setor de demanda espontânea da unidade.",
+            "<strong>B)</strong> Solicitar ressonância magnética de corpo inteiro e painel de autoanticorpos raros a cada nova queixa para tranquilizar a paciente pelo efeito placebo dos exames.",
+            "<strong>C)</strong> Orientar a paciente a procurar a UBS exclusivamente quando surgirem sintomas novos muito intensos, evitando consultas agendadas de rotina para não reforçar a dependência médica.",
+            "<strong>D)</strong> Validar que o sofrimento físico da paciente é real, concentrar o cuidado longitudinal em um único médico de família de referência, realizar exame físico focado nas queixas a cada encontro, proteger contra exames invasivos desnecessários e agendar consultas regulares programadas em intervalos fixos (independentemente da presença ou ausência de sintomas).",
+            "<strong>E)</strong> Prescrever benzodiazepínico em altas doses contínuas e encaminhar a paciente definitivamente para acompanhamento exclusivo em hospital psiquiátrico terciário."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa D.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa D está correta:</strong> Sintetiza com exatidão todas as recomendações padrão-ouro para o manejo do Transtorno de Sintomas Somáticos (somatização) na APS: legitimar a dor/sofrimento (que é real e não simulado), manter a coordenação e longitudinalidade com um médico de referência, realizar exame físico dirigido a cada visita, praticar Prevenção Quaternária (evitando cascatas iatrogênicas de exames) e — ponto crucial — <strong>agendar retornos periódicos fixos independentes de sintomas</strong>, para que a paciente não precise \"produzir\" inconscientemente uma crise somática para ser cuidada pelo seu médico.",
+            "<strong>Refutação da alternativa C (Incorreta):</strong> Pegadinha clássica! Dizer ao somatizador \"só volte se passar mal\" condiciona operantemente a somatização como único passaporte para o vínculo médico."
+          ]
+        ],
+        [
+          "3",
+          "Questão 7 — Prevenção Quaternária e Comunicação de Risco (NNT e Risco Absoluto)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Homem de 58 anos, assintomático, sem comorbidades e sem história familiar de neoplasias, comparece à UBS solicitando \"todos os exames de check-up geral, principalmente o PSA e a tomografia de pulmão e abdome, porque vi na televisão que prevenir é sempre melhor que remediar\". Com base na Matriz de Marc Jamoulle (Prevenção Quaternária) e nas boas práticas de Decisão Compartilhada e Comunicação de Risco, assinale a alternativa CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> A Prevenção Quaternária localiza-se no quadrante em que o paciente se sente doente (ou teme adoecer) e o médico constata ausência de doença (<em>disease</em>), visando proteger a pessoa do sobrediagnóstico, do sobretratamento e das cascatas iatrogênicas.",
+            "<strong>B)</strong> Ao explicar os benefícios de um rastreamento ou medicação preventiva na decisão compartilhada, o médico deve utilizar preferencialmente a Redução do Risco Relativo (RRR), pois ela facilita a adesão do paciente ao demonstrar porcentagens mais expressivas.",
+            "<strong>C)</strong> O sobrediagnóstico (<em>overdiagnosis</em>) é definido como um resultado falso-positivo em que o exame laboratorial está alterado, mas a biópsia subsequente mostra tecido normal.",
+            "<strong>D)</strong> Na Prevenção Quaternária, o médico deve recusar-se a conversar sobre o PSA, visto que o paciente assintomático não tem competência técnica para participar de decisões sobre rastreamento.",
+            "<strong>E)</strong> A solicitação de check-up amplo irrestrito em pacientes assintomáticos reduz a mortalidade geral sem acarretar danos psicológicos ou físicos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa A.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa A está correta:</strong> Na matriz 2x2 de Marc Jamoulle, cruzando a visão do médico (<em>Disease</em> ausente) com a vivência do paciente (<em>Illness</em>/medo presente ou vulnerabilidade à medicalização), situa-se a <strong>Prevenção Quaternária (P4)</strong>, cujo foco ético primordial é evitar intervenções médicas excessivas, sobrediagnóstico e iatrogenia.",
+            "<strong>Refutação da alternativa B (Incorreta):</strong> Na comunicação de risco honesta (Componente 3 do MCCP), deve-se utilizar o <strong>Risco Absoluto</strong>, Frequências Naturais com denominador fixo e NNT/NNH, jamais o Risco Relativo isolado (que distorce e exagera a percepção de benefício).",
+            "<strong>Refutação da alternativa C (Incorreta):</strong> Distinção conceitual fundamental para provas! <strong>Falso-positivo</strong> é um teste alterado em quem não tem a doença histológica (confirmado como normal depois). Já o <strong>Sobrediagnóstico (<em>Overdiagnosis</em>)</strong> é o diagnóstico <em>verdadeiramente positivo</em> (histologicamente confirmado, ex: microcarcinoma papilífero de tireoide ou adenocarcinoma de próstata Gleason 6 indolente) de uma condição real que, contudo, <strong>jamais progrediria para causar sintomas ou morte</strong> durante toda a vida da pessoa, mas que acaba submetendo o indivíduo aos danos do tratamento (cirurgia, radioterapia, quimioterapia)."
+          ]
+        ],
+        [
+          "3",
+          "Questão 8 — Transferência, Contratransferência e Grupos Balint"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Uma médica de família de 28 anos percebe que sente intensa irritação, impaciência e vontade de encerrar rapidamente a consulta sempre que atende um determinado paciente de 62 anos, etilista crônico, que costuma fazer comentários irônicos e minimizar suas orientações. Em supervisão, a médica dá-se conta de que o tom de voz e a postura daquele paciente são idênticos aos de seu próprio tio paterno, que causou graves conflitos financeiros e emocionais em sua família durante sua infância. No referencial do Quarto Componente do MCCP, esse fenômeno vivenciado pela médica denomina-se:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Transferência positiva, devendo a médica transferir imediatamente o paciente para outra equipe de Saúde da Família.",
+            "<strong>B)</strong> Contratransferência, que deve ser reconhecida por meio do autoconhecimento reflexivo da médica e utilizada para evitar atuações punitivas (<em>acting out</em>) e compreender melhor a dinâmica da relação médico-pessoa.",
+            "<strong>C)</strong> Empatia clínica cognitiva, caracterizada pela fusão emocional entre a história pessoal do médico e a patologia do paciente.",
+            "<strong>D)</strong> Efeito Hawthorne, decorrente da fadiga de compaixão inerente à Atenção Primária.",
+            "<strong>E)</strong> Distimia contratual, exigindo quebra unilateral imediata do sigilo médico."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> As reações emocionais (conscientes ou inconscientes) despertadas no médico pelo paciente — frequentemente moldadas pelas memórias, feridas e figuras passadas da vida pessoal do próprio médico — constituem a <strong>Contratransferência</strong> (enquanto a projeção do paciente sobre o médico é a <em>Transferência</em>). No Quarto Componente do MCCP, o autoconhecimento (estimulado por práticas reflexivas e Grupos Balint) permite ao médico reconhecer sua contratransferência sem reprimi-la nem descontá-la no paciente, restabelecendo a aliança terapêutica."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tabela-high-yield-sintese-mccp",
+      0,
+      [
+        [
+          "2",
+          "11. Síntese High-Yield e Quadro Sinóptico para Revisão Rápida de Véspera de Prova"
+        ],
+        [
+          "p",
+          "Para consolidação imediata de alto rendimento antes das provas de Residência Médica, Revalida e ENAMED, revise atentamente a matriz integradora de conceitos-chave do Método Clínico Centrado na Pessoa e Habilidades de Comunicação Clínica:"
+        ],
+        [
+          "t",
+          [
+            "Eixo Temático / Conceito",
+            "Autoria / Referência Clássica",
+            "Definição Nuclear e Pontos-Chave Cobrados em Prova",
+            "Armadilhas de Prova (O que NÃO confundir!)"
+          ],
+          [
+            [
+              "<strong>Os 4 Componentes Atuais do MCCP</strong>",
+              "Moira Stewart, Ian McWhinney, Judith Belle Brown et al. (Western Ontario, 3ª e 4ª ed.)",
+              "<strong>1.</strong> Explorando a saúde, a doença (<em>disease</em>) e a experiência da doença (<em>illness</em>);<br><strong>2.</strong> Entendendo a pessoa como um todo (indivíduo, família, contexto proximal/distal);<br><strong>3.</strong> Elaborando um plano conjunto de manejo dos problemas (<em>finding common ground</em>);<br><strong>4.</strong> Intensificando a relação entre a pessoa e o médico.",
+              "Não marcar 6 componentes! Os antigos componentes 4 (prevenção/promoção) e 6 (sendo realista) foram integrados transversalmente aos 4 atuais."
+            ],
+            [
+              "<strong>Disease vs. Illness vs. Sickness</strong>",
+              "Arthur Kleinman / Cecil Helman / Ian McWhinney",
+              "<strong><em>Disease</em>:</strong> Alteração anatomopatológica/fisiopatológica objetiva.<br><strong><em>Illness</em>:</strong> Vivência subjetiva singular do adoecer (explorada pelo <strong>SIFE</strong>).<br><strong><em>Sickness</em>:</strong> Papel social da enfermidade, estigma e legitimação trabalhista/cultural.",
+              "Pacientes com HAS ou dislipidemia têm <em>Disease</em> sem <em>Illness</em>. Pacientes somatizadores têm <em>Illness</em> real sem <em>Disease</em> estrutural."
+            ],
+            [
+              "<strong>Acrônimo SIFE (FIFE)</strong>",
+              "Grupo de Western Ontario",
+              "<strong>S:</strong> Sentimentos (medos, temores específicos);<br><strong>I:</strong> Ideias (modelos explicativos causais da pessoa);<br><strong>F:</strong> Funcionalidade (impacto nas rotinas, trabalho e lazer);<br><strong>E:</strong> Expectativas (o que espera da consulta e do médico).",
+              "Explorar a Expectativa (E) significa compreender o desejo do paciente para negociar o plano conjunto, e <strong>não</strong> ceder acriticamente a exames sem indicação clínica."
+            ],
+            [
+              "<strong>Escuta Inicial e Interrupção Precoce</strong>",
+              "Beckman & Frankel (1984) / Marvel et al. (1999) / Calgary-Cambridge",
+              "Médicos interrompem a fala inicial em média entre <strong>11 e 23 segundos</strong>. Quando não interrompidos, mais de 80% dos pacientes concluem seu relato espontâneo em <strong>menos de 90 segundos</strong>.",
+              "Fazer o rastreamento da agenda (<em>\"Mais alguma coisa?\"</em>) logo no início previne a queixa de \"mão na maçaneta\" no final da consulta."
+            ],
+            [
+              "<strong>Protocolo SPIKES + NURSE</strong>",
+              "Baile & Buckman (2000)",
+              "<strong>S:</strong> <em>Setting</em> (ambiente privado, sentar-se);<br><strong>P:</strong> <em>Perception</em> (\"antes de falar, pergunte\" o que já sabe);<br><strong>I:</strong> <em>Invitation</em> (avaliar quanto quer saber);<br><strong>K:</strong> <em>Knowledge</em> (<em>warning shot</em>, sem jargões, pausas);<br><strong>E:</strong> <em>Emotions</em> (acolher emoções via <strong>NURSE</strong>);<br><strong>S:</strong> <em>Strategy & Summary</em> (plano conjunto e retorno).",
+              "Na <strong>Conspiração do Silêncio</strong> (família pede para esconder o diagnóstico), jamais mentir ao paciente lúcido e jamais brigar com a família: acolher a família e aplicar os passos P e I com o paciente."
+            ],
+            [
+              "<strong>Estágios de Mudança Comportamental</strong>",
+              "Prochaska & DiClemente (1982)",
+              "<strong>1. Pré-contemplação:</strong> não vê problema/não quer mudar;<br><strong>2. Contemplação:</strong> ambivalência clássica (\"quero, mas...\");<br><strong>3. Preparação:</strong> decidido a mudar em breve (~30 dias);<br><strong>4. Ação:</strong> mudou há &lt; 6 meses;<br><strong>5. Manutenção:</strong> mudou há &gt; 6 meses;<br><strong>6. Recaída:</strong> retorno ao hábito (deve ser desculpabilizada).",
+              "Dar sermão ou prescrever plano rígido para paciente em Pré-contemplação ou Contemplação ativa o <em>reflexo de consertar</em> e aumenta a resistência (reatância)."
+            ],
+            [
+              "<strong>Entrevista Motivacional (PACE, RULE, OARS, EPE)</strong>",
+              "Miller & Rollnick",
+              "Espírito <strong>PACE</strong> (Parceria, Aceitação, Compaixão, Evocação). Micro-habilidades <strong>OARS</strong>: Perguntas Abertas, Afirmações, Reflexões (simples, amplificada, duplo lado) e Sumarizações. Informar usando <strong>E-P-E</strong> (Evocar - Fornecer - Evocar).",
+              "Na régua de prontidão (0 a 10), se o paciente diz nota 3, perguntar: <em>\"Por que você deu 3 e não 0?\"</em> (para evocar fala de mudança, e nunca \"por que não deu 8?\")."
+            ],
+            [
+              "<strong>Manejo da Somatização e Prevenção Quaternária</strong>",
+              "Marc Jamoulle (P4) / Diretrizes de SMI na APS",
+              "<strong>P4:</strong> Paciente sente-se doente (<em>Illness</em> +), mas médico vê ausência de <em>Disease</em> (-). No somatizador: legitimar a dor real, exame físico focado, único médico de referência e <strong>consultas agendadas fixas independentes de sintomas</strong>.",
+              "Não confundir <strong>Falso-Positivo</strong> (exame alterado sem doença) com <strong>Sobrediagnóstico</strong> (diagnóstico correto de doença real indolente que nunca causaria sintomas ou morte)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Checklist Final de Ouro para Provas Práticas (OSCE) em Medicina de Família e Comunidade"
+        ],
+        [
+          "o",
+          [
+            "<strong>Prepare o consultório e a si mesmo:</strong> Sente-se sem barreiras físicas, cumprimente a pessoa pelo nome, apresente-se e mantenha contato visual acolhedor.",
+            "<strong>Não interrompa os primeiros 90 segundos:</strong> Ouça com facilitação não verbal e, ao término da primeira queixa, faça o <strong>rastreamento da agenda</strong> (<em>\"Além disso, há mais alguma coisa que você gostaria de conversar hoje?\"</em>).",
+            "<strong>Explore sistematicamente as duas agendas:</strong> Investigue os sinais de alarme biomédicos (<em>Disease</em>) e explore obrigatoriamente o <strong>SIFE</strong> (<em>Sentimentos, Ideias, Funcionalidade e Expectativas</em>).",
+            "<strong>Contextualize a pessoa:</strong> Conecte o sintoma ao estágio do ciclo de vida, à dinâmica familiar e ao trabalho/comunidade (Componente 2).",
+            "<strong>Compartilhe a decisão com linguagem acessível:</strong> Use o ciclo <em>Evocar-Fornecer-Evocar (EPE)</em>, comunique riscos em números absolutos/frequências naturais e elabore metas que façam sentido para a vida da pessoa.",
+            "<strong>Feche com segurança:</strong> Aplique o <strong><em>Teach-Back</em></strong> (\"Como você vai tomar essa medicação em casa para eu ver se me expliquei bem?\") e estabeleça a <strong>Rede de Segurança (<em>Safety Netting</em>)</strong> detalhando os sinais de alarme e a porta aberta para retorno."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.sbmfc.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">STEWART, M. et al. Medicina Centrada na Pessoa: Transformando o Método Clínico. 3ª e 4ª ed. Porto Alegre: Artmed / CRC Press, 2014/2024.</a>",
+            "<a href=\"https://www.sbmfc.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">GUSSO, G.; LOPES, J. M. C.; DIAS, L. C. Tratado de Medicina de Família e Comunidade: Princípios, Formação e Prática. 2ª ed. Porto Alegre: Artmed, 2019.</a>",
+            "<a href=\"https://www.each.international\" target=\"_blank\" rel=\"noopener noreferrer\">SILVERMAN, J.; KURTZ, S.; DRAPER, J. Skills for Communicating with Patients (Calgary-Cambridge Guide). 3rd ed. CRC Press, 2013.</a>",
+            "<a href=\"https://motivationalinterviewing.org\" target=\"_blank\" rel=\"noopener noreferrer\">MILLER, W. R.; ROLLNICK, S. Entrevista Motivacional: Preparando as Pessoas para a Mudança. 3ª/4ª ed. Porto Alegre: Artmed, 2013/2023.</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

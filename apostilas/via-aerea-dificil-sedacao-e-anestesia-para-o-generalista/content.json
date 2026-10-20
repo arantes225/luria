@@ -1,0 +1,1133 @@
+{
+  "v": 2,
+  "s": "via-aerea-dificil-sedacao-e-anestesia-para-o-generalista",
+  "t": "Via Aérea Difícil, Sedação e Anestesia para o Generalista",
+  "p": "Via Aérea Difícil, Sedação e Anestesia para o Generalista — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "a": "Cirurgia Geral",
+  "m": "Cirurgia Geral",
+  "h": [
+    "Apostila LURIA",
+    "Via Aérea Difícil, Sedação e Anestesia para o Generalista",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Cirurgia Geral",
+      "Tema: Via Aérea Difícil, Sedação e Anestesia para o Generalista"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "anatomia-e-fisiopatologia-da-via-aerea",
+      "1. Anatomia Funcional, Fisiologia Respiratória e Fisiopatologia da Via Aérea Difícil"
+    ],
+    [
+      "estratificacao-e-preditores-anatomicos-vad",
+      "2. Estratificação de Risco e Preditores Anatômicos de Via Aérea Difícil"
+    ],
+    [
+      "semiologia-e-monitorizacao-da-via-aerea",
+      "3. Semiologia Médica da Insuficiência Respiratória e Monitorização Avançada"
+    ],
+    [
+      "estrategia-geral-e-planejamento-vad",
+      "4. Estratégia Geral, Princípios do Algoritmo ASA/DAS e Não Intubo Não Oxigênio"
+    ],
+    [
+      "equipamentos-e-dispositivos-na-emergencia",
+      "5. Dispositivos, Equipamentos e Arsenal da Via Aérea na Emergência"
+    ],
+    [
+      "sequencia-rapida-de-intubacao-e-farmacologia",
+      "6. Sequência Rápida de Intubação (SRI) e Farmacologia da Sedação e Bloqueio"
+    ],
+    [
+      "complicacoes-e-prognostico-vad",
+      "7. Complicações Ameaçadoras da Vida, Morbimortalidade e Prognóstico"
+    ],
+    [
+      "populacoes-especiais-vad",
+      "8. Populações Especiais e Peculiaridades Clínicas na Via Aérea"
+    ],
+    [
+      "cricotireoidostomia-e-acesso-cirurgico",
+      "9. Acesso Cirúrgico Infraglótico Emergencial: A Cricotireoidostomia no Cenário CICO"
+    ],
+    [
+      "casos-clinicos-estruturados-resolvidos-vad",
+      "10. Casos Clínicos Estruturados e Resolvidos com Raciocínio Completo"
+    ],
+    [
+      "questoes-de-prova-comentadas-vad",
+      "11. Questões de Concurso e Provas de Residência Médica Comentadas na Íntegra"
+    ],
+    [
+      "sintese-high-yield-e-erros-criticos-vad",
+      "12. Síntese High-Yield e Erros Críticos de Plantão que Custam a Vida"
+    ]
+  ],
+  "q": [
+    [
+      "anatomia-e-fisiopatologia-da-via-aerea",
+      0,
+      [
+        [
+          "2",
+          "1. Anatomia Funcional, Fisiologia Respiratória e Fisiopatologia da Via Aérea Difícil"
+        ],
+        [
+          "3",
+          "Importância Crítica do Manejo da Via Aérea pelo Generalista e Emergencista"
+        ],
+        [
+          "p",
+          "O manejo da via aérea representa a habilidade técnica e decisória mais fundamental e de maior impacto vital na medicina de urgência, terapia intensiva e anestesiologia. A falha no manejo da via aérea, com hipoxemia grave e prolongada decorrente do cenário catastrófico de <em>\"Não Intubo, Não Oxigênio\" (NINO / Cannot Intubate, Cannot Oxygenate - CICO)</em>, é responsável pela maioria dos eventos adversos com morte encefálica anóxica e óbito prevenível no ambiente perioperatório e de emergência. Dados dos relatórios do <em>Fourth National Audit Project (NAP4)</em> do Reino Unido demonstraram que mais de dois terços das catástrofes de via aérea em departamentos de emergência e UTIs resultaram de avaliação prévia inadequada, falta de planejamento estratégico com algoritmos de resgate, falha na identificação precoce da hipóxia e persistência obstinada em tentativas repetidas de laringoscopia direta por profissionais sem proficiência técnica."
+        ],
+        [
+          "3",
+          "Anatomia Topográfica Funcional das Vias Aéreas Superiores"
+        ],
+        [
+          "p",
+          "O domínio minucioso da anatomia das vias aéreas superiores é pré-requisito mandatório para a execução de qualquer técnica de oxigenação ou intubação traqueal:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Cavidade Oral, Orofaringe e Base da Língua:</strong> A língua é a maior estrutura anatômica da orofaringe e a principal causa obstrutiva da via aérea em pacientes inconscientes ou sob sedação profunda (devido ao relaxamento do músculo genioglosso, que permite a queda posterior da língua contra a parede posterior da faringe). Anteriormente, a base da língua liga-se à face anterior da cartilagem epiglote através de três pregas glossoepiglóticas (uma mediana e duas laterais), delimitando as <strong>valéculas epiglóticas</strong>. A valécula é o sítio anatômico exato onde a ponta da lâmina curva de laringoscópio (Macintosh) deve ser alojada: ao exercer tração ântero-superior no ligamento hioepiglótico, a epiglote é tracionada anteriormente \"em báscula\", expondo a fenda glótica sem que a lâmina precise tocar diretamente a face posterior da epiglote.",
+            "<strong>Laringe: Cartilagens e Feixes Vasculonervosos:</strong> A laringe localiza-se entre os níveis vertebrais de C3 a C6 no adulto, sendo composta por três cartilagens ímpares (tireoide, cricoide e epiglote) e três cartilagens pares (aritenoides, corniculadas e cuneiformes):\n    <ul>\n      <li><em>Cartilagem Tireoide:</em> A maior cartilagem laríngea, composta por duas lâminas que se fundem anteriormente na proeminência laríngea (pomo de Adão).",
+            "<em>Cartilagem Cricoide:</em> Único anel cartilaginoso <strong>completamente fechado e circunferencial de toda a via aérea</strong>, em formato de anel de sinete (porção posterior larga e lâmina anterior estreita). Localiza-se no nível de C6, marcando o início da traqueia e do esôfago. A compressão digital anterior da cartilagem cricoide (Manobra de Sellick) foi classicamente proposta para ocluir o lúmen esofágico contra o corpo vertebral de C6 durante a sequência rápida de intubação; contudo, diretrizes contemporâneas (DAS 2015, ASA 2022) demonstram que a Manobra de Sellick não impede a regurgitação maciça em esôfago dilatado, pode deformar a laringe dificultando a visualização laringoscópica e piora a ventilação sob máscara facial, devendo ser <strong>imediatamente aliviada ou abandonada se houver qualquer dificuldade de intubação ou ventilação</strong>!",
+            "<em>Membrana Cricotireóidea (Cricotireoide):</em> Espaço fibroelástico situado entre a borda inferior da cartilagem tireoide e a borda superior do arco da cricoide. Possui em média 9 a 10 mm de altura vertical e 22 a 30 mm de largura transversal no adulto. É o sítio anatômico de eleição para o <strong>acesso cirúrgico emergencial infraglótico (cricotireoidostomia por punção ou cirúrgica)</strong>, devido à sua localização superficial logo abaixo da pele e ausência de vasos calibrosos ou istmo tireoidiano no terço médio.",
+            "<em>Aritenoides e Pregas Vocais (Cordas Vocais):</em> As cartilagens aritenoides repousam sobre a borda posterior superior da cricoide. Os processos vocais das aritenoides dão inserção posterior aos ligamentos vocais (cordas vocais verdadeiras), que se estendem anteriormente até o ângulo interno da tireoide. A fenda glótica (rima glottidis) é o espaço delimitado entre as pregas vocais, constituindo a porção mais estreita da laringe no adulto.",
+            "<strong>Inervação Sensitiva e Reflexos Laríngeos:</strong> A inervação sensorial da laringe provém de dois ramos do nervo vago (nervo craniano X): o <strong>nervo laríngeo superior</strong> (cujo ramo interno perfura a membrana tireo-hioidea e inerva sensitivamente toda a laringe supraglótica até as cordas vocais) e o <strong>nervo laríngeo recorrente</strong> (que inerva sensitivamente a região infraglótica e a traqueia, além de inervar motoramente todos os músculos intrínsecos da laringe, exceto o cricotireóideo, inervado pelo ramo externo do laríngeo superior). O estímulo mecânico das estruturas supraglóticas sob plano anestésico superficial desencadeia o <em>laringoespasmo</em> (fechamento reflexo adutor vigoroso das cordas vocais falsas e verdadeiras) ou reflexos autonômicos vagais intensos (bradicardia, hipotensão ou hipertensão com taquicardia por descarga simpática)."
+          ]
+        ],
+        [
+          "3",
+          "Os Três Eixos da Laringoscopia e a Posição Olfativa de Jackson"
+        ],
+        [
+          "p",
+          "Para visualizar a fenda glótica através da laringoscopia direta com lâmina rígida, o médico precisa alinhar mecanicamente três eixos anatômicos que normalmente formam ângulos agudos entre si:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Eixo Oral (EO):</strong> Traçado ao longo da cavidade oral.",
+            "<strong>Eixo Faríngeo (EF):</strong> Traçado verticalmente ao longo da parede posterior da faringe.",
+            "<strong>Eixo Laríngeo (EL):</strong> Traçado longitudinalmente através do lúmen da laringe e traqueia."
+          ]
+        ],
+        [
+          "p",
+          "Com o paciente em decúbito dorsal plano com a cabeça neutra, os três eixos estão totalmente desalinhados. Para alinhá-los, adota-se a clássica <strong>Posição de Olfativa (Sniffing Position de Jackson)</strong>, obtida por dois movimentos combinados:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Flexão do Pescoço sobre o Tórax (cerca de 35 graus):</strong> Obtida colocando-se um coxim firme de 7 a 10 cm sob o occipício do paciente (em adultos não obesos), o que alinha o Eixo Faríngeo com o Eixo Laríngeo.",
+            "<strong>Extensão da Cabeça sobre o Pescoço na Articulação Atlanto-Occipital (cerca de 85 graus):</strong> A extensão traz o Eixo Oral para a mesma linha de visão do eixo faringolaríngeo combinado."
+          ]
+        ],
+        [
+          "p",
+          "<em>Exceção Fundamental no Trauma:</em> Em vítimas de trauma com suspeita de lesão da coluna cervical, a extensão da cabeça é <strong>terminantemente PROIBIDA</strong>. O alinhamento dos eixos deve ser substituído pela <strong>Estabilização Manual em Linha (MILS - Manual In-Line Stabilization)</strong> executada por um segundo operador que remove o colar cervical e segura firmemente os processos mastoides e occipício, mantendo o pescoço e a cabeça rigorosamente neutros enquanto o operador realiza a intubação (preferencialmente utilizando videolaringoscópio)."
+        ],
+        [
+          "3",
+          "Fisiopatologia da Apneia, Dessaturação e Janela de Sobrevivência"
+        ],
+        [
+          "p",
+          "A taxa de queda da saturação arterial de oxigênio (SpO2) após o início da apneia depende criticamente do consumo metabólico de oxigênio (VO2) e da magnitude da <strong>Capacidade Residual Funcional (CRF)</strong> pulmonar, que atua como o único reservatório biológico de oxigênio durante a apneia:"
+        ],
+        [
+          "u",
+          [
+            "Em um adulto saudável de 70 kg respirando ar ambiente (FiO2 21%), o reservatório alveolar de O2 na CRF é de apenas cerca de 450 mL. Com um consumo basal de VO2 de 250 mL/min, a dessaturação crítica (SpO2 &lt; 90%) instala-se em menos de <strong>1 a 2 minutos</strong> de apneia total.",
+            "Com a <strong>Pré-oxigenação Adequada com O2 a 100%</strong> durante 3 a 5 minutos (ou 8 incursões respiratórias em capacidade vital máxima), ocorre a <em>desnitrogenação alveolar</em>: o nitrogênio que ocupa 79% do espaço alveolar da CRF é lavado e substituído por O2 puro, elevando o reservatório alveolar de O2 para cerca de 3.000 mL. Nesse cenário, o tempo até a queda da SpO2 abaixo de 90% (Tempo de Apneia Segura) prolonga-se para <strong>6 a 8 minutos</strong> no adulto saudável!",
+            "<strong>Populações de Rápida Dessaturação (\"A Linha da Morte Rápida\"):</strong> Em obesos mórbidos, gestantes no terceiro trimestre, pacientes sépticos ou em choque e crianças pequenas, a CRF está fisiologicamente diminuída (por elevação do diafragma) e o consumo de O2 (VO2) está drasticamente aumentado. Nesses pacientes, mesmo sob pré-oxigenação ótima, a SpO2 colapsa de 100% para níveis inferiores a 70% em <strong>menos de 90 a 150 segundos de apneia</strong>!"
+          ]
+        ]
+      ]
+    ],
+    [
+      "estratificacao-e-preditores-anatomicos-vad",
+      0,
+      [
+        [
+          "2",
+          "2. Estratificação de Risco e Preditores Anatômicos de Via Aérea Difícil"
+        ],
+        [
+          "3",
+          "Definições Internacionais de Via Aérea Difícil (Consensos ASA e DAS)"
+        ],
+        [
+          "p",
+          "Uma via aérea é considerada difícil quando um médico experiente e treinado encontra dificuldade técnica não prevista na realização de um ou mais dos seguintes procedimentos fundamentais:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Ventilação Sob Máscara Facial Difícil:</strong> Incapacidade de manter uma saturação de oxigênio &gt; 90% sob ventilação com pressão positiva e O2 a 100%, ou incapacidade de reverter sinais clínicos de ventilação inadequada (ausência de expansão torácica perceptível, ausência de onda de capnografia - EtCO2, sons expiratórios ausentes ou fuga maciça de ar pela máscara).",
+            "<strong>Laringoscopia Difícil:</strong> Impossibilidade de visualizar qualquer porção das cordas vocais verdadeiras após múltiplas tentativas com laringoscopia direta convencional (grau III ou IV de Cormack-Lehane).",
+            "<strong>Intubação Traqueal Difícil:</strong> Necessidade de mais de duas tentativas de intubação pelo mesmo operador, necessidade de troca de lâmina/dispositivo, ou duração superior a 10 minutos.",
+            "<strong>Dispositivo Extraglótico (Máscara Laríngea) Difícil:</strong> Incapacidade de posicionar ou ventilar adequadamente através de uma máscara laríngea de tamanho correto.",
+            "<strong>Via Aérea Cirúrgica (Cricotireoidostomia) Difícil:</strong> Presença de anatomia cervical distorcida (tumores, hematomas, obesidade maciça, radiação prévia) que impede a palpação dos marcos cricotireóideos."
+          ]
+        ],
+        [
+          "3",
+          "A Avaliação Mnemônica Multimodal LEMON para Laringoscopia Difícil"
+        ],
+        [
+          "p",
+          "O mnemônico <strong>LEMON</strong>, amplamente adotado no ATLS (Advanced Trauma Life Support) e em medicina de emergência, sistematiza a identificação de intubação difícil à beira do leito:"
+        ],
+        [
+          "t",
+          [
+            "Letra",
+            "Componente Avaliado",
+            "Parâmetros Normais",
+            "Sinais de Alarme para Via Aérea Difícil"
+          ],
+          [
+            [
+              "<strong>L</strong>",
+              "<strong>Look Externally (Inspecione Externamente)</strong>",
+              "Fácies simétrica, proporções craniofaciais normais.",
+              "Micrognatia/retrognatismo acentuado, obesidade mórbida, pescoço curto e largo (\"pescoço em touro\"), barba volumosa densa (dificulta selamento da máscara), próteses dentárias móveis, incisivos superiores proeminentes (\"dentes de coelho\"), estridor laríngeo audível, trauma maxilofacial extenso."
+            ],
+            [
+              "<strong>E</strong>",
+              "<strong>Evaluate the 3-3-2 Rule (Regra 3-3-2)</strong>",
+              "• Abertura interincisivos &ge; 3 dedos do paciente (&ge; 4 cm).<br>\n        • Distância hioide-mento &ge; 3 dedos do paciente (&ge; 6 cm).<br>\n        • Distância tireoide-hioide &ge; 2 dedos do paciente (&ge; 3-4 cm).",
+              "• <strong>&lt; 3 dedos entre os dentes incisivos:</strong> Trismo ou limitação de abertura bucal impedindo a introdução da lâmina do laringoscópio.<br>\n        • <strong>&lt; 3 dedos hioide-mento:</strong> Espaço mandibular submandibular encurtado; a língua não terá espaço para ser deslocada pela lâmina.<br>\n        • <strong>&lt; 2 dedos tireoide-hioide:</strong> Laringe alta anteriorizada ou colo curto, dificultando o alinhamento visual."
+            ],
+            [
+              "<strong>M</strong>",
+              "<strong>Mallampati Modificado (Samsoon &amp; Young)</strong>",
+              "Classes I e II.",
+              "<strong>Classes III e IV:</strong> Impossibilidade de visualizar os pilares amigdalianos ou a úvula à abertura bucal com a língua protusa sem fonação (forte correlação com laringoscopia grau III/IV de Cormack)."
+            ],
+            [
+              "<strong>O</strong>",
+              "<strong>Obstruction / Obesity (Obstrução / Obesidade)</strong>",
+              "Voz clara, deglutição livre, IMC &lt; 30 kg/m².",
+              "Presença de <strong>estridor inspiratório</strong>, sialorreia involuntária (incapacidade de deglutir secreções), disfonia grave, abscesso periamigdaliano/retrofaríngeo, epiglotite aguda, hematoma expansivo cervical, IMC &gt; 35-40 kg/m²."
+            ],
+            [
+              "<strong>N</strong>",
+              "<strong>Neck Mobility (Mobilidade Cervical)</strong>",
+              "Extensão atlanto-occipital completa &gt; 35 graus (tocar o queixo no esterno e estender olhando para o teto).",
+              "Rigidez cervical, espondilite anquilosante, artrite reumatoide com subluxação atlanto-axial, osteófitos cervicais volumosos, sequela de radioterapia ou <strong>colar cervical rígido pós-trauma</strong>."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Classificação de Mallampati Modificada"
+        ],
+        [
+          "p",
+          "Realizada com o paciente sentado (se consciente e colaborativo), com a cabeça neutra, boca aberta ao máximo e língua protusa para fora <strong>SEM emitir qualquer som fonatório (\"sem dizer Ah\")</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Classe I:</strong> Visualização completa do palato mole, úvula inteira, pilares amigdalianos anteriores e posteriores e parede posterior da faringe.",
+            "<strong>Classe II:</strong> Visualização do palato mole, porção superior dos pilares e porção proximal da úvula (ponta da úvula oculta pela base da língua).",
+            "<strong>Classe III:</strong> Visualização exclusiva do palato mole e da base da úvula. Pilares amigdalianos invisíveis.",
+            "<strong>Classe IV:</strong> Visualização restrita do palato duro. O palato mole é completamente invisível (apenas mucosa palatina visível)."
+          ]
+        ],
+        [
+          "3",
+          "Preditores de Ventilação Sob Máscara Facial Difícil: O Mnemônico MOANS"
+        ],
+        [
+          "p",
+          "A falha em ventilar sob máscara facial com bolsa-válvula-máscara (BVM / Ambu) é muito mais perigosa do que a falha de intubação isolada. O mnemônico <strong>MOANS</strong> prediz a ventilação difícil:"
+        ],
+        [
+          "o",
+          [
+            "<strong>M (Mask Seal - Selamento da Máscara):</strong> Barba cerrada espessa, deformidades maxilofaciais, sangue/secreções faciais ou colapso de tecidos moles impedem a vedação pneumática hermética da máscara sobre a face.",
+            "<strong>O (Obesity / Obstruction - Obesidade ou Obstrução):</strong> IMC &gt; 30 kg/m², circunferência cervical &gt; 43 cm no homem ou 40 cm na mulher, apneia obstrutiva do sono (SAOS), tumores faríngeos, gestação a termo. A resistência inspiratória das vias aéreas superiores é extremamente elevada.",
+            "<strong>A (Age - Idade Avançada):</strong> Pacientes com idade &gt; 55 anos apresentam perda de tônus muscular faríngeo e colapso de partes moles.",
+            "<strong>N (No Teeth - Paciente Desdentado / Edêntulo):</strong> A ausência de dentes provoca o colapso das bochechas e dos lábios para o interior da cavidade oral, tornando praticamente impossível criar um selamento lateral com a máscara facial. <em>Pérola Prática:</em> Mantenha as dentaduras no lugar durante a ventilação sob máscara para estruturar a anatomia facial, removendo-as apenas no momento exato da laringoscopia!",
+            "<strong>S (Stiffness - Rigidez Pulmonar ou da Caixa Torácica):</strong> Resistência aumentada à insuflação torácica por broncoespasmo grave (asma, DPOC), edema agudo de pulmão, síndrome do desconforto respiratório agudo (SDRA), pneumotórax hipertensivo ou rigidez da parede torácica induzida por altas doses de opioides (tórax de fentanil)."
+          ]
+        ],
+        [
+          "3",
+          "Classificação Laringoscópica de Cormack-Lehane e Sistema POGO"
+        ],
+        [
+          "p",
+          "Avalia a visão anatômica obtida no momento culminante da laringoscopia direta:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Grau I de Cormack-Lehane:</strong> Visualização completa de toda a fenda glótica (cordas vocais anteriores e posteriores visíveis). Intubação traqueal fácil e imediata em &gt; 99% das vezes.",
+            "<strong>Grau II de Cormack-Lehane:</strong> Visualização parcial da glote:\n    <ul>\n      <li><em>Grau IIa:</em> Visualização da metade posterior das cordas vocais e cartilagens aritenoides.",
+            "<em>Grau IIb:</em> Visualização exclusiva das cartilagens aritenoides e comissura posterior (nenhuma porção das cordas vocais é visualizada diretamente)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Grau III de Cormack-Lehane:</strong> Visualização restrita da <strong>cartilagem epiglote</strong>. Nenhuma porção da glote, aritenoides ou cordas vocais é visível."
+        ],
+        [
+          "u",
+          [
+            "<em>Grau IIIa:</em> A epiglote pode ser elevada e afastada da parede faríngea posterior.",
+            "<em>Grau IIIb:</em> A epiglote encontra-se colada à parede faríngea posterior, não podendo ser deslocada."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Grau IV de Cormack-Lehane:</strong> Impossibilidade de visualizar até mesmo a epiglote. Apenas o palato mole e a base da língua são observados à laringoscopia. Configura <strong>laringoscopia impossível</strong>.</li>\n  <li><strong>Escore POGO (Percentage of Glottic Opening):</strong> Descreve percentualmente a abertura glótica visível, variando de 100% (comissura anterior até comissura posterior totalmente expostas) até 0% (nenhuma porção das cordas visível).</li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "semiologia-e-monitorizacao-da-via-aerea",
+      0,
+      [
+        [
+          "2",
+          "3. Semiologia Médica da Insuficiência Respiratória e Monitorização Avançada"
+        ],
+        [
+          "3",
+          "Sinais Clínicos de Fadiga Respiratória e Colapso Iminente"
+        ],
+        [
+          "p",
+          "A decisão de instituir uma via aérea invasiva definitiva (intubação orotraqueal) baseia-se fundamentalmente no reconhecimento clínico precoce da exaustão da musculatura respiratória antes da parada cardiorrespiratória:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Padrão Respiratório e Mecânica Toracoabdominal:</strong>\n    <ul>\n      <li><em>Tiragem Intercostal, Fúrcula Esternal e Supraclavicular:</em> Traduzem o recrutamento vigoroso de músculos acessórios (esternocleidomastóideos, escalenos e peitorais) contra resistências elásticas ou obstrutivas pulmonares elevadas.",
+            "<em>Batimento de Asas Nasais:</em> Sinal reflexo primitivo de fome de ar em resposta à hipoxemia e hipercapnia extremas.",
+            "<em>Respiração Paradoxal (Assincronia Toracoabdominal / Padrão em Gangorra):</em> Durante a inspiração, o tórax expande-se enquanto o abdome paradoxalmente se retrai para dentro (ou o abdome projeta-se para fora enquanto o gradil costal inferior colapsa). Esse achado é o <strong>sinal semiológico definitivo de fadiga diafragmática muscular aguda</strong>; a parada respiratória por exaustão é iminente nos próximos minutos se não houver intubação e ventilação invasiva!",
+            "<strong>Alterações do Nível de Consciência:</strong>\n    <ul>\n      <li><em>Fase Inicial de Hipóxia:</em> Ansiedade extrema, agitação psicomotora, desorientação e sudorese profusa induzidas por descarga adrenérgica simpática maciça.",
+            "<em>Fase Tardia de Hipercapnia (Narcose por CO2):</em> Sonolência, lentificação cognitiva, torpor, asterixis (flapping) e coma progressivo conforme o pCO2 arterial ultrapassa 70 a 80 mmHg com acidose respiratória grave.",
+            "<strong>Sons Respiratórios Anormais das Vias Aéreas Superiores:</strong>\n    <ul>\n      <li><em>Estridor:</em> Som áspero, agudo e musical de alta tonalidade gerado pela passagem turbulenta de ar através de um segmento extratorácico estenosado (edema de glote no choque anafilático, epiglotite, corpo estranho laríngeo, laringotraqueobronquite ou estenose subglótica pós-intubação prévia). O estridor inspiratório indica obstrução laringotraqueal alta e constitui sinal de <strong>via aérea potencialmente catastrófica</strong>.",
+            "<em>Ronco / Estertor Faríngeo:</em> Gerado pela oscilação de tecidos moles orofaríngeos e queda da base da língua em pacientes com depressão do sistema nervoso central. Reversível por manobras simples de abertura de via aérea (<em>chin lift</em> ou <em>jaw thrust</em>).",
+            "<em>Gorgolejo (Gurgling):</em> Indica presença de sangue, vômito, secreções purulentas ou saliva retidos na hipofaringe. Exige aspiração traqueofaríngea rígida com cânula de Yankauer antes de qualquer tentativa de ventilação ou intubação."
+          ]
+        ],
+        [
+          "3",
+          "A Tríade de Monitorização Obrigatória na Intubação de Emergência"
+        ],
+        [
+          "p",
+          "Nenhuma tentativa de indução anestésica ou intubação deve ocorrer sem a conexão funcional e checagem de três monitores fundamentais:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Oximetria de Pulso Contínua (SpO2):</strong> Deve emitir sinal sonoro de tom variável com o pulso arterial. <em>Armadilha Crítica:</em> A oximetria de pulso apresenta um retardo fisiológico de 30 a 60 segundos entre a interrupção da oxigenação alveolar e a queda do sinal no sensor digital periférico; quando a curva de saturação começa a cair de 90%, a hipoxemia tecidual cerebral já é profunda! Além disso, vasoconstricção periférica por choque, hipotermia, meta-hemoglobinemia e carboxi-hemoglobina falseiam os valores.",
+            "<strong>Eletrocardiograma Contínuo (ECG):</strong> Permite identificar precocemente bradicardia reflexa vagal induzida por estimulação da laringe pela lâmina do laringoscópio (especialmente em crianças e no uso de succinilcolina), isquemia miocárdica e arritmias ventriculares deflagradas por hipóxia e hipercalemia.",
+            "<strong>Capnografia Quantitativa de Onda Contínua (Forma de Onda de EtCO2):</strong>\n    <ul>\n      <li>É o <strong>PADRÃO-OURO INTERNACIONAL E INEGOCIÁVEL PARA CONFIRMAÇÃO DO POSICIONAMENTO DA CÂNULA TRAQUEAL</strong>! Consagrada pelas diretrizes mundiais (AHA, ASA, ERC, DAS).",
+            "A capnografia quantitativa mede a concentração fracionada de dióxido de carbono exalado ciclo a ciclo. A presença de uma onda retangular típica sustentada por pelo menos <strong>6 ciclos respiratórios consecutivos</strong> confirma com sensibilidade e especificidade de 100% que o tubo encontra-se na traqueia (pois os pulmões perfundidos metabolizam e exalam CO2 continuamente).",
+            "Se a cânula estiver inadvertidamente no esôfago, pode haver uma pequena onda plana ou residual no primeiro ou segundo ciclo (CO2 gástrico residual deglutido), que <strong>desaparece completamente nos ciclos subsequentes (EtCO2 = zero)</strong>! Ausência de onda retangular sustentada na capnografia significa: <strong>O TUBO ESTÁ NO ESÔFAGO ATÉ QUE SE PROVE O CONTRÁRIO! Retire o tubo imediatamente</strong>!",
+            "<em>Exceção Hemodinâmica:</em> Na Parada Cardiorrespiratória (PCR) em assistolia, o tubo pode estar perfeitamente posicionado na traqueia, mas o EtCO2 é muito baixo (&lt; 10 mmHg) devido à ausência de débito cardíaco e perfusão pulmonar. Com manobras de RCP de alta qualidade, o EtCO2 sobe para 15-20 mmHg; um salto súbito do EtCO2 para &gt; 35-40 mmHg é o primeiro e mais sensível sinal de <strong>Retorno da Circulação Espontânea (RCE)</strong> antes mesmo da palpação de pulsos centrais!"
+          ]
+        ]
+      ]
+    ],
+    [
+      "estrategia-geral-e-planejamento-vad",
+      0,
+      [
+        [
+          "2",
+          "4. Estratégia Geral, Princípios do Algoritmo ASA/DAS e Não Intubo Não Oxigênio"
+        ],
+        [
+          "3",
+          "O Algoritmo Universal das Diretrizes da Difficult Airway Society (DAS 2015/2020)"
+        ],
+        [
+          "p",
+          "O algoritmo da DAS estrutura o resgate da via aérea em quatro planos sequenciais lógicos e invioláveis (Planos A, B, C e D), impedindo que o operador fique \"preso em um looping mortal\" de tentativas repetidas de laringoscopia direta:"
+        ],
+        [
+          "t",
+          [
+            "Etapa do Algoritmo",
+            "Objetivo Clínico",
+            "Ações Técnicas e Dispositivos Utilizados",
+            "Critérios de Falha e Transição"
+          ],
+          [
+            [
+              "<strong>Plano A</strong>",
+              "<strong>Intubação Traqueal Primária</strong>",
+              "• Pré-oxigenação com O2 a 100% por 3 a 5 min.<br>\n        • Posicionamento em Sniffing (ou rampa em obesos).<br>\n        • <strong>Laringoscopia Direta ou Videolaringoscopia</strong> com otimização (uso de lâmina de tamanho correto, relaxamento neuromuscular profundo, manipulação laríngea externa bimanual - manobra BURP).<br>\n        • <strong>Uso obrigatório de Guia Introdutor Elástico (Bougie / Frova) ou Estilete Rígido</strong> se visualização Cormack IIb ou IIIa.<br>\n        • <strong>Limite Estrito: MÁXIMO DE 3 TENTATIVAS</strong> (uma tentativa extra permitida apenas se executada por operador mais experiente).",
+              "Se a intubação falhar após 3 tentativas: <strong>DECLARAR FALHA DE INTUBAÇÃO EM VOZ ALTA PARA TODA A EQUIPE</strong> e migrar instantaneamente para o Plano B!"
+            ],
+            [
+              "<strong>Plano B</strong>",
+              "<strong>Manutenção da Oxigenação com Dispositivo Extraglótico (Máscara Laríngea)</strong>",
+              "• Inserção imediata de <strong>Máscara Laríngea (ML) de 2ª geração</strong> (ex.: ProSeal, Supreme, i-gel, Ambu AuraGain) de tamanho adequado ao peso corporal.<br>\n        • Confirmação da ventilação por ausculta torácica simétrica e capnografia com onda sustentada.<br>\n        • As MLs de 2ª geração possuem canal de drenagem gástrica dedicado (para passagem de sonda nasogástrica) e fornecem maior pressão de vedação orofaríngea (&gt; 25-30 cmH2O), reduzindo o risco de aspiração pulmonar.<br>\n        • <strong>Limite: Máximo de 2 a 3 tentativas de inserção de ML</strong> (ajustar tamanho, reposicionar, utilizar tração mandibular).",
+              "Se a ML fornecer oxigenação adequada (SpO2 &gt; 90%, capnografia presente): <strong>Plano B BEM-SUCEDIDO</strong> (acordar o paciente se cirurgia eletiva, ou intubar através da ML guiada por fibrobroncoscópio). Se falhar a oxigenação: migrar para o Plano C!"
+            ],
+            [
+              "<strong>Plano C</strong>",
+              "<strong>Tentativa Final de Resgate com Ventilação Sob Máscara Facial</strong>",
+              "• Remover a máscara laríngea mal-sucedida.<br>\n        • Inserir <strong>Cânula Osofaríngea de Guedel</strong> (ou cânula nasofaríngea) para afastar a língua da parede posterior da faringe.<br>\n        • <strong>Técnica a Duas Pessoas e Quatro Mãos:</strong>\n          - Operador 1: segura a máscara facial com ambas as mãos utilizando a <strong>pegada \"V-E\" bimanual</strong> (polegares e indicadores em \"C\" ou \"V\" pressionando a máscara contra a face, e os outros três dedos de ambas as mãos em \"E\" tracionando o ângulo e ramo da mandíbula para cima - <em>jaw thrust</em>).\n          - Operador 2: comprime suavemente a bolsa autoinsuflável (Ambu) ou circuito de anestesia.<br>\n        • Reverter bloqueio neuromuscular se aplicável (Sugamadex para rocurônio).",
+              "Se a ventilação sob máscara for restaurada: estabilizar a oxigenação e acordar o paciente. Se persistir a hipoxemia progressiva e ausência de expansão torácica e capnografia: <strong>DECLARAR CENÁRIO CICO / NINO EM VOZ ALTA! Chamar ajuda imediata e migrar para o Plano D!</strong>"
+            ],
+            [
+              "<strong>Plano D</strong>",
+              "<strong>Acesso Cirúrgico Emergencial Infraglótico (Resgate Salva-Vidas)</strong>",
+              "• <strong>Cricotireoidostomia Cirúrgica com Técnica \"Bisturi-Bougie-Tubo\" (Scalpel-Bougie-Tube)</strong>.<br>\n        • Extensão máxima do pescoço (colocar coxim sob os ombros).<br>\n        • Palpação e estabilização da cartilagem tireoide e cricoide com a mão não dominante (\"pegada laríngea\").<br>\n        • Incisão transversa na membrana cricotireóidea com lâmina de bisturi nº 10 ou 11.<br>\n        • Rotação da lâmina em 90 graus para afastar as bordas da cartilagem.<br>\n        • Introdução do bougie pela abertura traqueal (sentir os cliques dos anéis traqueais).<br>\n        • Deslizamento de um <strong>tubo traqueal com cuff de calibre pequeno (número 5,0 a 6,0 mm)</strong> sobre o bougie.<br>\n        • Insuflar o cuff, conectar ao circuito, ventilar com O2 a 100% e confirmar capnografia.",
+              "Restauração da oxigenação e reversão da hipóxia cerebral extrema. O paciente está salvo de encefalopatia anóxica e PCR."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "O Conceito do \"Bougie-First\" e a Videolaringoscopia Universal"
+        ],
+        [
+          "p",
+          "As mais recentes evidências científicas de ensaios clínicos randomizados multicêntricos (como o estudo BOUGIE e os estudos de videolaringoscopia no ambiente de emergência e UTI - ensaio DEVICE 2023) transformaram a prática contemporânea:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Videolaringoscopia de Primeira Escolha:</strong> O ensaio clínico randomizado DEVICE (<em>Direct versus Video Laryngoscope in Critically Ill Adults</em>, publicado no New England Journal of Medicine em 2023) demonstrou de forma inequívoca que o uso primário do <strong>videolaringoscópio aumentou a taxa de sucesso de intubação traqueal na primeira tentativa para 85,1%</strong> versus apenas 70,8% com o laringoscópio direto convencional em pacientes criticamente enfermos no PS e UTI. O videolaringoscópio neutraliza a necessidade de alinhamento rígido dos eixos e contorna limitações de mobilidade cervical e retrognatismo.",
+            "<strong>O Uso Sistemático do Bougie:</strong> O estilete introdutor traqueal elástico (Bougie de Eschmann) possui uma ponta distal angulada em 35-40 graus (curva de Coude). Ao ser introduzido às cegas sob a epiglote em visualizações Cormack IIb ou IIIa, o operador percebe sensações táteis características: o <strong>ressalto tátil (\"cliques traqueais\")</strong> quando a ponta angulada raspa nas cristas anteriores dos anéis cartilaginosos da traqueia, seguido pelo <strong>sinal do bloqueio distal (carina)</strong> aos 25-35 cm (se o bougie estivesse no esôfago, ele avançaria livremente até 50-60 cm sem qualquer clique ou resistência!). Uma vez confirmada a traqueia, o tubo orotraqueal é simplesmente deslizado sobre o bougie (\"técnica de Seldinger da via aérea\")."
+          ]
+        ]
+      ]
+    ],
+    [
+      "equipamentos-e-dispositivos-na-emergencia",
+      0,
+      [
+        [
+          "2",
+          "5. Dispositivos, Equipamentos e Arsenal da Via Aérea na Emergência"
+        ],
+        [
+          "3",
+          "Dispositivos Extraglóticos (Máscaras Laríngeas): Primeira versus Segunda Geração"
+        ],
+        [
+          "p",
+          "Os dispositivos extraglóticos (DEGs) são a espinha dorsal do resgate da via aérea difícil no Plano B e constituem alternativa primária viável em procedimentos cirúrgicos curtos eletivos e no suporte avançado de vida básico no pré-hospitalar:"
+        ],
+        [
+          "t",
+          [
+            "Características",
+            "Máscaras Laríngeas de 1ª Geração (ex.: LMA Classic, Unique)",
+            "Máscaras Laríngeas de 2ª Geração (ex.: i-gel, ProSeal, Supreme, AuraGain)"
+          ],
+          [
+            [
+              "<strong>Canal de Drenagem Gástrica</strong>",
+              "<strong>Ausente.</strong> Não permite passagem de sonda gástrica nem descompressão do estômago.",
+              "<strong>PRESENTE E DEDICADO.</strong> Tubo independente paralelo que se abre no esfíncter esofágico superior, permitindo a aspiração de ar e secreções gástricas e a passagem de sonda naso/orogástrica calibrosa (12 a 16 Fr)."
+            ],
+            [
+              "<strong>Pressão de Selamento Orofaríngeo</strong>",
+              "Moderada: cerca de <strong>18 a 20 cmH2O</strong>. Risco de vazamento em pacientes com complacência pulmonar reduzida.",
+              "<strong>Elevada: &gt; 28 a 35 cmH2O.</strong> Permite ventilação mecânica com pressão positiva moderada/alta com risco mínimo de fuga gasosa."
+            ],
+            [
+              "<strong>Proteção Contra Broncoaspiração</strong>",
+              "Baixa. Regurgitação gástrica reflui diretamente para a laringe.",
+              "<strong>Significativamente Maior.</strong> O canal esofágico ventila o refluxo para o meio exterior, separando o trato digestivo do trato respiratório."
+            ],
+            [
+              "<strong>Mecanismo do Coxim / Cuff</strong>",
+              "Cuff inflável com ar (risco de hiperinsuflação e isquemia da mucosa faríngea).",
+              "Cuff inflável de alto volume (ProSeal/Supreme) ou <strong>coxim anatômico de elastômero termoplástico sem necessidade de insuflação (i-gel)</strong>, que se amolda ao calor corporal."
+            ],
+            [
+              "<strong>Conduta na Emergência</strong>",
+              "Obsoleta em emergência hospitalar contemporânea.",
+              "<strong>PADRÃO-OURO OBRIGATÓRIO EM TODA SALA DE EMERGÊNCIA E UTI</strong> (Diretrizes DAS/ASA)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Seleção do Tamanho da Máscara Laríngea por Peso Corporal no Adulto"
+        ],
+        [
+          "u",
+          [
+            "<strong>Número 3:</strong> Crianças grandes e adultos pequenos entre <strong>30 e 50 kg</strong>.",
+            "<strong>Número 4:</strong> Adultos de peso médio entre <strong>50 e 70 kg</strong>.",
+            "<strong>Número 5:</strong> Adultos grandes e obesos entre <strong>70 e 100 kg</strong> (ou &gt; 90-100 kg)."
+          ]
+        ],
+        [
+          "3",
+          "Videolaringoscópios: Lâminas Macintosh versus Lâminas Hiperanguladas"
+        ],
+        [
+          "p",
+          "O advento da videolaringoscopia modificou o paradigma da visão em linha direta:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Videolaringoscópio com Lâmina Mac (Formato Padrão):</strong> Mantém o formato curvo tradicional da lâmina Macintosh (ex.: C-MAC com lâmina 3 ou 4). Permite tanto a visualização direta tradicional com o olho nu quanto a visualização indireta na tela de vídeo. É excelente para o ensino e permite a introdução do tubo com curva habitual ou com auxílio do bougie.",
+            "<strong>Videolaringoscópio com Lâmina Hiperangulada (ex.: GlideScope, King Vision, C-MAC D-Blade):</strong> Possui uma curvatura acentuada de 60 graus que permite \"olhar ao redor da curva anatômica da base da língua\", dispensando o alinhamento dos eixos oral, faríngeo e laríngeo. É insuperável em pacientes com imobilização cervical rígida, micrognatia severa ou Cormack-Lehane III/IV na laringoscopia direta.<br>\n  <em>Regra Técnica Obrigatória:</em> Com a lâmina hiperangulada, <strong>É MANDATÓRIO O USO DE ESTILETE RÍGIDO CONFORMADO (Rigid Stylet)</strong> em formato de \"taco de hóquei\" (reto no corpo com curva de 60-90 graus nos últimos 3 a 5 cm distais). Sem o estilete hiperangulado rígido, o médico enxerga a glote perfeitamente na tela do monitor (\"visão de 100%\"), mas o tubo orotraqueal reto convencional não consegue fazer a curva anatômica para penetrar na laringe, colidindo repetidamente na parede faríngea anterior!"
+          ]
+        ],
+        [
+          "3",
+          "Fibrobroncoscópio Flexível: O Padrão-Ouro na Intubação com o Paciente Acordado"
+        ],
+        [
+          "p",
+          "Na via aérea difícil <strong>reconhecida previamente</strong> (ex.: paciente com tumor orofaríngeo obstrutivo, trismo severo irredutível, artrite reumatoide avançada com instabilidade de coluna cervical ou histórico documentado de falha de intubação prévia), a intubação sob narcose e paralisia muscular pode ser fatal por colapso tecidual completo. A estratégia de escolha nesses cenários é a <strong>Intubação com o Paciente Acordado (Awake Fiberoptic Intubation)</strong>:"
+        ],
+        [
+          "u",
+          [
+            "Preserva a respiração espontânea contínua, o tônus muscular protetor das vias aéreas e os reflexos contra aspiração pulmonar.",
+            "Requer preparo meticuloso: administração prévia de antissialagogo (Glicopirrolato ou Atropina para secar secreções), analgesia e sedação superficial consciente titulada (Dexmedetomidina ou Remifentanil) e <strong>anestesia tópica exhaustiva da via aérea com Lidocaína a 2% e 4%</strong> (por nebulização, spray atomizado na orofaringe e instilação intratraqueal com a técnica \"spray-as-you-go\" através do canal do fibrobroncoscópio).",
+            "O tubo traqueal é montado previamente sobre o fibrobroncoscópio flexível; o operador navega visualmente sob visão direta da mucosa através das cordas vocais até a carina traqueal, e desliza a cânula traqueal suavemente para dentro da traqueia com o paciente respirando confortavelmente."
+          ]
+        ]
+      ]
+    ],
+    [
+      "sequencia-rapida-de-intubacao-e-farmacologia",
+      0,
+      [
+        [
+          "2",
+          "6. Sequência Rápida de Intubação (SRI) e Farmacologia da Sedação e Bloqueio"
+        ],
+        [
+          "3",
+          "Os 7 \"Ps\" da Sequência Rápida de Intubação (SRI)"
+        ],
+        [
+          "p",
+          "A Sequência Rápida de Intubação é a técnica padrão-ouro de emergência para obtenção de uma via aérea invasiva segura no paciente não em jejum (\"estômago cheio\") ou criticamente enfermo, minimizando o intervalo de tempo entre a perda dos reflexos protetores e a insuflação do cuff traqueal:"
+        ],
+        [
+          "o",
+          [
+            "<strong>1. Preparação (Tempo: -10 minutos):</strong>\n    <ul>\n      <li>Checagem mnemônica SOAP ME: <strong>S</strong>uction (aspirador rígido de Yankauer funcionando), <strong>O</strong>xygen (fonte de O2 e ambu com reservatório), <strong>A</strong>irway (laringoscópio testado com luz forte, tubos tamanhos 7,0, 7,5 e 8,0 com cuff testado, bougie, máscara laríngea de resgate e kit de cricotireoidostomia), <strong>P</strong>harmacology (drogas de indução e bloqueadores neuromusculares aspirados e rotulados em seringas, além de drogas vasoativas de resgate como efedrina e noradrenalina), <strong>M</strong>onitoring (ECG, SpO2, PNI a cada 2 min e Capnógrafo de onda contínua), <strong>E</strong>quipment (acesso venoso calibroso pérvio e material de fixação do tubo).",
+            "<strong>2. Pré-oxigenação (Tempo: -5 minutos):</strong>\n    <ul>\n      <li>Administração de O2 a 100% via máscara com reservatório não reinalante a 15 L/min por 3 a 5 minutos, ou 8 incursões em capacidade vital máxima, visando SpO2 o mais próximo de 100% e lavagem do nitrogênio alveolar (desnitrogenação da CRF).",
+            "Se o paciente apresentar hipoxemia refratária prévia por shunt pulmonar (pneumonia grave, EAP, SDRA): utilizar Ventilação Não Invasiva (VNI) ou Cpap com PEEP de 5 a 10 cmH2O durante a pré-oxigenação para recrutar alvéolos colabados.",
+            "<strong>Oxigenação Apneica Contínua (NO DESAT):</strong> Manter uma cânula nasal comum (cateter tipo óculos) com fluxo de oxigênio a 15 L/min durante TODO o período de indução e laringoscopia! Por difusão passiva gerada pelo gradiente alveolocapilar, esse fluxo contínuo prolonga significativamente o tempo até a dessaturação sem induzir hipercapnia significativa.",
+            "<strong>3. Pré-tratamento / Otimização Hemodinâmica (Tempo: -3 minutos):</strong>\n    <ul>\n      <li>Correção de hipotensão prévia antes das drogas sedativas: \"ressuscitar antes de intubar\". Pacientes chocados sofrem colapso cardiovascular imediato ao perder o tônus simpático endógeno após a sedação e com a transição para pressão intratorácica positiva. Infusão de cristaloides e bolus de vasopressor (\"push-dose\" de noradrenalina ou fenilefrina).",
+            "Fentanil (1 a 3 mcg/kg IV lento) pode ser considerado para atenuar o pico hipertensivo e taquicardia reflexa em pacientes com emergência hipertensiva, dissecção aguda de aorta ou hemorragia subaracnóidea grave (evitar em pacientes hipotensos ou instáveis).",
+            "<strong>4. Paralisia com Indução Simultânea (Tempo: Zero):</strong>\n    <ul>\n      <li>Administração intravenosa rápida em bolus do agente hipnótico/sedativo, seguida <strong>imediatamente (em menos de 10 a 15 segundos)</strong> pelo bloqueador neuromuscular (BNM) em dose plena paralisante.",
+            "<strong>5. Proteção e Posicionamento (Tempo: +30 segundos):</strong>\n    <ul>\n      <li>Aguardar o tempo de latência da paralisia muscular completa (45 a 60 segundos).",
+            "<strong>NÃO realizar ventilação sob máscara facial</strong> durante esse intervalo em pacientes sem hipoxemia extrema, para evitar insuflação gástrica e regurgitação de conteúdo alimentar (\"ventilação silenciosa\"). Se a SpO2 cair abaixo de 90% durante o período de latência, ventilações suaves com baixas pressões de pico (&lt; 15-20 cmH2O) com BVM a duas mãos devem ser realizadas.",
+            "<strong>6. Passagem do Tubo Traqueal com Laringoscopia (Tempo: +45 a 60 segundos):</strong>\n    <ul>\n      <li>Laringoscopia com mão esquerda, inserção do tubo com visualização direta da passagem do cuff através das cordas vocais (ou guiado por bougie). Avançar o tubo até a marca de 21 a 23 cm nos dentes incisivos no adulto. Insuflar o cuff imediatamente com pressão de 20 a 30 cmH2O.",
+            "<strong>7. Pós-intubação e Cuidados (Tempo: +1 a 2 minutos):</strong>\n    <ul>\n      <li><strong>Confirmação primária obrigatória com Capnografia de forma de onda contínua (EtCO2 &gt; 6 ciclos sustentados).</strong>",
+            "Ausculta estéreo em 5 pontos: epigástrio (ausência de ruídos), ápice direito, ápice esquerdo, base direita e base esquerda (murmúrio vesicular simétrico).",
+            "Fixação rígida do tubo traqueal; início de sedação e analgesia venosa contínua de manutenção; solicitação de Radiografia de Tórax para checar a altura da ponta do tubo traqueal (posicionada a 3 a 5 cm acima da carina traqueal, na altura dos corpos vertebrais de T2-T4)."
+          ]
+        ],
+        [
+          "3",
+          "Farmacologia Detalhada dos Hipnóticos de Indução na Emergência"
+        ],
+        [
+          "t",
+          [
+            "Fármaco",
+            "Dose IV na SRI",
+            "Latência / Duração",
+            "Vantagens Clínicas e Indicações",
+            "Desvantagens, Riscos e Contraindicações"
+          ],
+          [
+            [
+              "<strong>Etomidato</strong>",
+              "<strong>0,3 mg/kg</strong> IV em bolus",
+              "Latência: 15-30s<br>Duração: 5-10 min",
+              "<strong>Excepcional Estabilidade Hemodinâmica:</strong> Não causa liberação de histamina nem vasodilatação significativa, mantendo a pressão arterial e a frequência cardíaca estáveis. Fármaco de escolha no paciente politraumatizado, em choque séptico, hipovolêmico ou cardiogênico. Reduz a pressão intracraniana (PIC) e a taxa metabólica cerebral de oxigênio.",
+              "<strong>Supressão Adrenocortical Transitória:</strong> Inibe reversivelmente a enzima <em>11-beta-hidroxilase</em> mitocondrial na suprarrenal, bloqueando a síntese de cortisol por 12 a 24 horas. Pode causar mioclonias transitórias na indução. Não utilizar em infusão contínua."
+            ],
+            [
+              "<strong>Cetamina (Ketamina)</strong>",
+              "<strong>1,5 a 2,0 mg/kg</strong> IV (ou 4-5 mg/kg IM)",
+              "Latência: 30-45s<br>Duração: 10-20 min",
+              "<strong>Anestesia Dissociativa e Broncodilatação Potente:</strong> Antagonista dos receptores NMDA com potente efeito analgésico e hipnótico. Estimula o tônus simpático endógeno (aumenta liberação de catecolaminas), mantendo ou elevando a PA e FC em pacientes com reservas adrenérgicas preservadas. Promove relaxamento direto do músculo liso bronquial (<strong>droga de eleição no estado de mal asmático e DPOC descompensado</strong>). Preserva os reflexos respiratórios faríngeos e a respiração espontânea em doses submáximas.",
+              "Pode precipitar choque cardiogênico grave em pacientes com depleção crônica profunda de catecolaminas (choque séptico terminal com miocardiopatia séptica, insuficiência cardíaca terminal). Pode aumentar secreções orofaríngeas (sialorreia). Fenômenos de emergência/alucinações no despertar (atenuados por benzodiazepínicos)."
+            ],
+            [
+              "<strong>Propofol</strong>",
+              "<strong>1,5 a 2,5 mg/kg</strong> IV (reduzir para 0,5-1 mg/kg em idosos/instáveis)",
+              "Latência: 15-30s<br>Duração: 5-8 min",
+              "Ação ultrarrápida com recuperação lúcida rápida. Potente supressor dos reflexos de via aérea superiores (facilita inserção de máscara laríngea). Reduz acentuadamente a PIC e o consumo de oxigênio cerebral. Propriedades anticonvulsivantes (excelente no Estado de Mal Epiléptico).",
+              "<strong>Vasodilatação Sistêmica Severa e Inotropismo Negativo:</strong> Causa queda dramática e abrupta da pressão arterial média (hipotensão grave) por bloqueio simpático e relaxamento vascular direto. <strong>Formalmente contraindicado como primeira linha em pacientes hipotensos, desidratados ou em choque!</strong>"
+            ],
+            [
+              "<strong>Midazolam</strong>",
+              "<strong>0,2 a 0,3 mg/kg</strong> IV (dose de indução)",
+              "Latência: 60-90s<br>Duração: 15-30 min",
+              "Ação anticonvulsivante e amnésica anterógrada potente. Disponibilidade universal. Antídoto específico disponível (Flumazenil).",
+              "Latência prolongada e imprevisível (não ideal para sequência rápida verdadeira). Causa hipotensão por vasodilatação venosa. Depressão respiratória prolongada em idosos e nefropatas/hepatopatas."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Farmacologia dos Bloqueadores Neuromusculares (BNMs): Succinilcolina versus Rocurônio"
+        ],
+        [
+          "p",
+          "A paralisia neuromuscular profunda é essencial na SRI: ela elimina o tônus das cordas vocais, previne tosse e laringoespasmo reflexos, melhora em até duas classes a visualização laringoscópica de Cormack-Lehane e aumenta substancialmente o sucesso da intubação na primeira tentativa:"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro",
+            "Succinilcolina (Quelicin)",
+            "Brometo de Rocurônio (Esmeron)"
+          ],
+          [
+            [
+              "<strong>Mecanismo de Ação</strong>",
+              "<strong>BNM Despolarizante:</strong> Agonista nicotínico da placa motora; liga-se ao receptor induzindo despolarização sustentada persistente (manifestada clinicamente por <strong>fasciculações musculares transitórias</strong> generalizadas), tornando a membrana muscular inexcitável a novos estímulos.",
+              "<strong>BNM Adespolarizante / Competitivo:</strong> Antagonista competitivo puro dos receptores nicotínicos de acetilcolina na placa motora. Bloqueia a transmissão nervosa sem induzir despolarização (ausência de fasciculações)."
+            ],
+            [
+              "<strong>Dose Recomendada na SRI</strong>",
+              "<strong>1,0 a 1,5 mg/kg</strong> IV em bolus rápido (usar 1,5 mg/kg para garantir paralisia em &lt; 45s).",
+              "<strong>1,2 mg/kg</strong> IV em bolus rápido (dose otimizada para SRI que iguala a velocidade de latência da succinilcolina; dose usual eletiva é 0,6 mg/kg)."
+            ],
+            [
+              "<strong>Início de Ação (Latência)</strong>",
+              "<strong>45 a 60 segundos.</strong>",
+              "<strong>45 a 60 segundos</strong> (na dose de 1,2 mg/kg)."
+            ],
+            [
+              "<strong>Duração da Paralisia Clínica</strong>",
+              "<strong>Curta: 6 a 10 minutos.</strong> Hidrolisada rapidamente pela pseudocolinesterase plasmática (butirilcolinesterase).",
+              "<strong>Prolongada: 45 a 60 minutos</strong> (pode estender-se a 90 min na dose de 1,2 mg/kg). Metabolização hepática e eliminação biliar/renal."
+            ],
+            [
+              "<strong>Contraindicações e Riscos Críticos</strong>",
+              "• <strong>Hipercalemia Grave Pré-Existente (&gt; 5,5 mEq/L):</strong> A despolarização induzida pela succinilcolina eleva fisiologicamente o K+ sérico em 0,5 a 1,0 mEq/L em indivíduos normais.<br>\n        • <strong>Condições com Up-Regulation de Receptores Nicotínicos Extrajuncionais (RISCO DE HIPERCALEMIA FULMINANTE E PARADA EM ASSISTOLIA):</strong>\n          - Grandes queimaduras (&gt; 10% de SCQ) após 24 a 48 horas do trauma.<br>\n          - Trauma raquimedular / Paraplegia / Tetraplegia após 24 a 48 horas.<br>\n          - Trauma por esmagamento (Crush injury) e rabdomiólise.<br>\n          - Doenças neuromusculares crônicas (Esclerose Lateral Amiotrófica, Distrofia de Duchenne, Miastenia Gravis, Síndrome de Guillain-Barré).<br>\n          - Imobilização prolongada em UTI (&gt; 3 a 5 dias).<br>\n        • <strong>Antecedente Pessoal ou Familiar de Hipertermia Maligna.</strong><br>\n        • Trauma ocular aberto com perfuração (aumento discreto da pressão intraocular).",
+              "Ausência prática de contraindicações biológicas absolutas; ausência de efeito na liberação de potássio. Requer atenção à duração prolongada da paralisia (se o paciente não puder ser intubado nem ventilado, ele não retomará a respiração espontânea em tempo hábil sem o antídoto específico)."
+            ],
+            [
+              "<strong>Antídoto Específico de Reversão Rápida</strong>",
+              "<strong>NÃO EXISTE.</strong> Requer suporte ventilatório contínuo até a metabolização espontânea pelas colinesterases plasmáticas.",
+              "<strong>SUGAMADEX (Bridion):</strong> Ciclodextrina modificada que encapsula e inativa a molécula de rocurônio na circulação na proporção 1:1. <strong>Dose de Resgate Imediato para Reversão de SRI (Cenário CICO): 16 mg/kg IV em bolus</strong>, que reverte a paralisia neuromuscular completa e restaura a respiração espontânea em menos de <strong>90 a 120 segundos</strong>!"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "complicacoes-e-prognostico-vad",
+      0,
+      [
+        [
+          "2",
+          "7. Complicações Ameaçadoras da Vida, Morbimortalidade e Prognóstico"
+        ],
+        [
+          "3",
+          "Complicações Imediatas da Falha de Manejo da Via Aérea"
+        ],
+        [
+          "p",
+          "As complicações do manejo da via aérea em emergência distribuem-se em dois grandes grupos: mecânico-traumáticas e fisiometabólicas sistêmicas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Intubação Esofágica Não Reconhecida:</strong> É a complicação mais letal e imperdoável na medicina. A insuflação de oxigênio no esôfago leva a distensão gástrica progressiva com regurgitação maciça de conteúdo ácido alimentar para os pulmões (Síndrome de Mendelson com pneumonite química fulminante), atelectasia alveolar total bilateral, hipoxemia anóxica cerebral irreversível e parada cardíaca em atividade elétrica sem pulso (AESP) ou assistolia em 3 a 5 minutos. <em>Prevenção Absoluta:</em> O uso rotineiro da <strong>capnografia de onda contínua</strong> elimina praticamente a zero a intubação esofágica despercebida. Ausência de onda sustentada = retirar a cânula imediatamente!",
+            "<strong>Trauma de Vias Aéreas e Perfuração Faringoesofágica:</strong> Tentativas repetidas, intempestivas e cegas com a lâmina do laringoscópio ou com estiletes rígidos sem visualização direta causam laceração de pregas vocais, avulsão de aritenoides, perfuração da parede posterior da faringe ou do esôfago cervical com consequente <em>mediastinite descendente necrotizante</em>, enfisema subcutâneo cervical exuberante e pneumomediastino. Cada tentativa adicional de laringoscopia após a segunda dobra o risco de sangramento de partes moles e edema, transformando uma via aérea difícil anatômica em uma via aérea impossível de ventilar sob máscara!",
+            "<strong>Colapso Hemodinâmico Pós-Intubação (Hipotensão e Parada Perirressuscitação):</strong>\n    <ul>\n      <li>Ocorre em até 20% a 30% das intubações de emergência em pacientes graves. Os mecanismos fisiopatológicos são múltiplos:\n        - Supressão da descarga simpática endógena protetora pelos sedativos hipnóticos (propofol, midazolam).\n        - Transição abrupta da ventilação espontânea com pressão negativa intratorácica para a <strong>ventilação mecânica com pressão positiva (VPP)</strong>: o aumento da pressão intratorácica diminui criticamente o retorno venoso (pré-carga do ventrículo direito), colapsando o débito cardíaco em pacientes com hipovolemia oculta ou choque distributivo.\n        - Hiperventilação inadvertida pelo operador no ambu (frequências de 25-30 irpm com volumes correntes altos geram auto-PEEP, aprisionamento aéreo e colapso da veia cava inferior).\n      <li><em>Manejo Preventivo:</em> Ressuscitação volêmica vigorosa prévia, uso de drogas cardioestáveis (etomidato ou cetamina em doses ajustadas), vasopressores em \"push-dose\" à beira do leito e ventilação mecânica inicial com volumes correntes baixos (6 mL/kg de peso predito) e frequência moderada (10 a 12 irpm).",
+            "<strong>Pneumotórax Hipertensivo Iatrogênico:</strong> Gerado por barotrauma/volutrauma agudo decorrente de hiperinsuflação manual com ambu em pacientes com doença pulmonar obstrutiva prévia (bolhas de enfisema) ou por laceração traqueal/pleural por estilete ou bougie avançado com força excessiva contra a resistência distal. Manifesta-se por hipotensão súbita pós-intubação, ausência de murmúrio unilateral e hipertimpanismo à percussão torácica, exigindo <strong>toracocentese descompressiva imediata no 4º ou 5º espaço intercostal na linha axilar anterior/média</strong>."
+          ]
+        ]
+      ]
+    ],
+    [
+      "populacoes-especiais-vad",
+      0,
+      [
+        [
+          "2",
+          "8. Populações Especiais e Peculiaridades Clínicas na Via Aérea"
+        ],
+        [
+          "3",
+          "O Paciente Obeso Mórbido: O Posicionamento em Rampa"
+        ],
+        [
+          "p",
+          "A obesidade mórbida (IMC &gt; 40 kg/m²) impõe desafios anatômicos e fisiológicos extremos:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fisiologia Respiratória Prejudicada:</strong> Consumo de oxigênio basal drasticamente aumentado (VO2 elevado) associado a uma Capacidade Residual Funcional (CRF) severamente diminuída devido ao peso da caixa torácica e à pressão do abdome globoso sobre as cúpulas diafragmáticas no decúbito dorsal. A dessaturação ocorre em velocidade relâmpago (&lt; 90 segundos de apneia).",
+            "<strong>Posicionamento Mandatório em Rampa (Ramped Position / Troop Elevation):</strong>\n    <ul>\n      <li>A posição de olfativa tradicional de Jackson (coxim apenas no occipício) é <strong>totalmente ineficaz e prejudicial no obeso</strong>, pois a espessa camada de gordura no dorso e pescoço (\"giba dorsal\") mantém a cabeça fletida e o queixo colado ao tórax.",
+            "O paciente deve ser posicionado com múltiplos coxins ou rampas infláveis sob as costas, ombros, pescoço e cabeça, de forma que o <strong>conduto auditivo externo fique rigorosamente no mesmo plano horizontal que a fúrcula esternal (Alinhamento Orelha-Fúrcula Esternal / Tragus to Sternal Notch)</strong>, com a face do paciente paralela ao teto da sala. Esse posicionamento abre o espaço submandibular, desloca o peso do tórax e mamas anteriormente para longe do laringoscópio e melhora a complacência toracopulmonar para ventilação sob máscara."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Uso Preferencial do Videolaringoscópio com Lâmina Hiperangulada</strong> e manutenção de ventilação não invasiva (CPAP com PEEP de 10 cmH2O) durante toda a pré-oxigenação para prevenir o colapso atelectásico alveolar.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "A Paciente Gestante no Terceiro Trimestre"
+        ],
+        [
+          "p",
+          "Toda gestante a partir de 20 semanas é considerada paciente com <strong>estômago cheio e via aérea potencialmente difícil</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<em>Alterações Anatômicas e Hormonais:</em> Aumento dos níveis de progesterona e estrogênio induz hiperemia capilar, ingurgitamento vascular acentuado e edema difuso da mucosa de toda a via aérea superior (orofaringe, laringe e traqueia). O tecido é extremamente friável e sangra com facilidade ao menor trauma mecânico com a lâmina do laringoscópio. O aumento do volume das mamas interfere no cabo do laringoscópio convencional (necessitando de cabo curto tipo \"stubby\" ou introdução da lâmina em ângulo oblíquo lateral).",
+            "<em>Seleção do Tubo Traqueal:</em> Devido ao edema subglótico estrogênico, o diâmetro da fenda glótica está reduzido. Deve-se selecionar rotineiramente um <strong>tubo orotraqueal de menor calibre: número 6,0 a 6,5 mm com cuff</strong> (evitar tubos 7,5 ou 8,0 pelo alto risco de trauma laríngeo).",
+            "<em>Risco Elevado de Broncoaspiração e Hipóxia Rápida:</em> A progesterona diminui o tônus do esfíncter esofágico inferior e a gastrina placentária aumenta a acidez gástrica; o útero gravídico volumoso comprime o estômago contra o diafragma. Além disso, a elevação diafragmática reduz a CRF em 20% a 30%, enquanto o consumo metabólico de O2 pela unidade feto-placentária aumenta em 30% a 50%, gerando dessaturação precoce durante a apneia.",
+            "<em>Conduta:</em> Pré-oxigenação com O2 a 100%, <strong>deslocamento manual do útero para a esquerda (ou inclinação da maca em 15 graus para a esquerda)</strong> para descomprimir a veia cava inferior e evitar a Síndrome da Hipotensão Supina, e execução de Sequência Rápida de Intubação com succinilcolina ou rocurônio."
+          ]
+        ],
+        [
+          "3",
+          "Vítima de Politraumatismo e Suspeita de Lesão Raquimedular Cervical"
+        ],
+        [
+          "p",
+          "Em pacientes vítimas de acidente automobilístico, queda de altura ou ferimentos contusos na face/crânio, a coluna cervical deve ser considerada instável até avaliação radiológica definitiva:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Estabilização Manual em Linha (MILS):</strong> Um membro da equipe posiciona-se ao lado do paciente ou ajoelhado, abre e remove a parte anterior do colar cervical rígido, e segura firmemente as laterais da cabeça e processos mastoides com as duas mãos, impedindo qualquer movimento de flexão, extensão ou rotação cervical durante a laringoscopia.",
+            "<strong>Laringoscopia:</strong> A laringoscopia direta tradicional sob MILS é tecnicamente desafiadora, elevando a taxa de Cormack-Lehane III e IV em até 3 a 4 vezes. O <strong>Videolaringoscópio é o instrumento de escolha mandatória no trauma cervical</strong>, pois proporciona excelente visão glótica com mobilização cervical virtualmente zero. O uso do Bougie é altamente recomendado.",
+            "Se houver trauma maxilofacial maciço com fratura de mandíbula cominutiva e sangramento abundante em orofaringe (\"via aérea ensanguentada\"), a técnica SALAD (<em>Suction-Assisted Laryngoscopy and Airway Decontamination</em>) utilizando aspiração rígida contínua com Yankauer posicionado no esôfago durante a laringoscopia permite limpar o campo visual para intubação. Se a anatomia estiver totalmente destruída, a conduta é a <strong>Cricotireoidostomia Cirúrgica Imediata</strong>."
+          ]
+        ]
+      ]
+    ],
+    [
+      "cricotireoidostomia-e-acesso-cirurgico",
+      0,
+      [
+        [
+          "2",
+          "9. Acesso Cirúrgico Infraglótico Emergencial: A Cricotireoidostomia no Cenário CICO"
+        ],
+        [
+          "3",
+          "O Cenário Catastrófico de \"Não Intubo, Não Oxigênio\" (CICO / NINO)"
+        ],
+        [
+          "p",
+          "O cenário CICO ocorre quando, após a indução anestésica e paralisia neuromuscular, o médico falha em intubar a traqueia (Plano A), falha em ventilar através de dispositivo extraglótico/máscara laríngea (Plano B) e falha em restabelecer a ventilação sob máscara facial com cânula orofaríngea (Plano C). O paciente encontra-se em apneia com dessaturação profunda (SpO2 &lt; 80% e caindo), bradicardia e risco iminente de parada cardiorrespiratória anóxica. Nesse instante, o único procedimento capaz de salvar a vida do paciente e impedir a morte encefálica é a <strong>abertura cirúrgica infraglótica emergencial da membrana cricotireóidea</strong>."
+        ],
+        [
+          "3",
+          "Por Que a Cricotireoidostomia e NUNCA a Traqueostomia na Emergência?"
+        ],
+        [
+          "p",
+          "Um dos erros conceituais mais clássicos em provas e na prática médica é propor a \"traqueostomia de emergência\" no cenário CICO. A <strong>traqueostomia formal é formalmente contraindicada como procedimento de emergência imediata à beira do leito</strong> pelos seguintes motivos anatômicos e cirúrgicos:"
+        ],
+        [
+          "u",
+          [
+            "A traqueia cervical localiza-se profundamente no pescoço, recoberta pelos músculos pré-tireoidianos, fáscia cervical profunda e pelo <strong>istmo da glândula tireoide</strong> (que cruza o 2º e 3º anéis traqueais e apresenta vascularização arterial e venosa profusa). A dissecção cirúrgica da traqueostomia exige iluminação cirúrgica ideal, afastadores, hemostasia meticulosa e tempo cirúrgico médio de 10 a 20 minutos por cirurgião experiente. Em paciente hipóxico com colapso cardiovascular em minutos, o sangramento profuso do istmo tireoidiano inunda a ferida e o paciente morre por asfixia antes da abertura da traqueia!",
+            "Em contrapartida, a <strong>Membrana Cricotireóidea</strong> localiza-se superficialmente logo abaixo da derme e do tecido celular subcutâneo no plano sagital mediano, sendo circundada pelas cartilagens rígidas tireoide e cricoide (estruturas facilmente palpáveis). O procedimento de cricotireoidostomia é realizado em <strong>menos de 30 a 45 segundos</strong> com sangramento insignificante."
+          ]
+        ],
+        [
+          "3",
+          "A Técnica Cirúrgica \"Bisturi-Bougie-Tubo\" (Scalpel-Bougie-Tube da DAS)"
+        ],
+        [
+          "p",
+          "Padronizada pelas diretrizes internacionais da DAS e do Royal College of Anaesthetists, a técnica <em>Scalpel-Bougie-Tube</em> é o método mais rápido, confiável e com a maior taxa de sucesso de primeira passagem no resgate cirúrgico emergencial:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Passo 1: Posicionamento e Pegada Laríngea (\"Laryngeal Handshake\"):</strong>\n    <ul>\n      <li>Estender o pescoço do paciente (se não houver trauma cervical contraindicando).",
+            "Com a mão não dominante, o operador palpa as cartilagens laríngeas da tireoide e cricoide, estabilizando a laringe entre o polegar e o dedo médio. Com o dedo indicador, localiza-se a depressão macia da <strong>Membrana Cricotireóidea</strong> (situada entre a borda inferior da tireoide e a borda superior da cricoide). O indicador não dominante permanece apoiado sobre a membrana para guiar o bisturi.",
+            "<strong>Passo 2: Incisão com o Bisturi:</strong>\n    <ul>\n      <li>Com uma lâmina de bisturi número 10 ou 11 na mão dominante, realiza-se uma <strong>incisão transversa de 1,5 a 2 cm na pele e na membrana cricotireóidea</strong> simultaneamente (em pacientes obesos com anatomia difícil não palpável, realiza-se primeiramente uma incisão vertical longa na pele de 4 a 5 cm para dissecar o subcutâneo com os dedos e identificar a membrana, seguida pela incisão transversa na membrana).",
+            "A penetração da lâmina no lúmen da traqueia é percebida por uma sensação súbita de perda de resistência (\"plop\") e eventual escape de fluxo gasoso.",
+            "<strong>Passo 3: Rotação da Lâmina e Criação da Fenda:</strong>\n    <ul>\n      <li>Sem retirar a lâmina do orifício, gira-se o bisturi em <strong>90 graus</strong>, de modo que a face plana da lâmina fique orientada no sentido caudal (em direção aos pés do paciente), tracionando a incisão para abrir uma fenda vertical na membrana.",
+            "<strong>Passo 4: Introdução do Bougie:</strong>\n    <ul>\n      <li>Com a mão não dominante, introduz-se a ponta angulada de um <strong>Bougie traqueal (15 Fr)</strong> diretamente na traqueia ao lado da lâmina do bisturi, direcionando o bougie no sentido caudal.",
+            "Avança-se o bougie por 10 a 15 cm no interior da traqueia, confirmando os \"cliques\" dos anéis traqueais e a parada na carina. Retira-se a lâmina de bisturi.",
+            "<strong>Passo 5: Deslizamento do Tubo Traqueal com Cuff:</strong>\n    <ul>\n      <li>Desliza-se uma <strong>cânula orotraqueal com cuff de calibre pequeno (preferencialmente número 5,0 mm ou 6,0 mm)</strong> montada sobre o bougie, avançando suavemente com movimento rotatório através do orifício cricotireóideo até que o cuff passe completamente pela membrana.",
+            "Retira-se o bougie mantendo o tubo firmemente seguro na mão.",
+            "<strong>Passo 6: Insuflação, Ventilação e Confirmação:</strong>\n    <ul>\n      <li>Insufla-se o cuff do tubo com 5 a 10 mL de ar (selando a via aérea para impedir escape gasoso e aspiração de sangue da incisão). Conecta-se o circuito de ventilação ou Ambu com O2 a 100% e confirma-se a ventilação pela <strong>curva de Capnografia de forma de onda contínua</strong> e ausculta simétrica de murmúrios vesiculares. Fixa-se o tubo no pescoço com fita adesiva ou cadarço."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-estruturados-resolvidos-vad",
+      0,
+      [
+        [
+          "2",
+          "10. Casos Clínicos Estruturados e Resolvidos com Raciocínio Completo"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: O Paciente Séptico Obeso com Dessaturação Hiperaguda e Falha de Visualização"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Cenário:</strong> Homem de 58 anos, peso 135 kg, altura 1,68 m (IMC = 47,8 kg/m² - Obesidade Grau III), dá entrada no Pronto-Socorro com quadro de choque séptico secundário a pneumonia comunitária grave bacteriana com hipoxemia refratária. Ao exame: PA 85/50 mmHg sob infusão periférica de noradrenalina a 0,2 mcg/kg/min, FC 122 bpm, FR 36 irpm, SatO2 84% sob máscara de O2 com reservatório a 15 L/min. Gasometria arterial revelando pH 7,22, PaO2 52 mmHg, PaCO2 56 mmHg, Lactato 4,8 mmol/L. Paciente sudorético, torporoso e apresentando tiragem intercostal e fúrcula acentuada com assincronia toracoabdominal (fadiga muscular iminente). Decidido pela intubação orotraqueal de emergência."
+        ],
+        [
+          "p",
+          "<p><strong>Avaliação Prévia da Via Aérea (LEMON e MOANS):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Pescoço muito curto e espesso (circunferência cervical &gt; 48 cm com \"giba dorsal\" acentuada).",
+            "Micrognatia moderada com distância tireomento de 5 cm (encurtada).",
+            "Abertura bucal preservada (4 cm), Mallampati estimado classe III. Ausência de dentes incisivos inferiores (edêntulo parcial). Barba rala.",
+            "Alto risco de ventilação difícil sob máscara (MOANS: O - Obesidade mórbida; S - Rigidez pulmonar por SDRA; M - Dificuldade de selamento por queixo retraído)."
+          ]
+        ],
+        [
+          "p",
+          "</p>\n\n<p><strong>Execução Técnica e Crise Intraoperatória:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Posicionamento Adequado em Rampa:</strong> A equipe posicionou múltiplos lençóis dobrados sob as costas, ombros e cabeça, garantindo o alinhamento horizontal do conduto auditivo externo com a fúrcula esternal (Ramped Position), liberando o espaço submandibular e aliviando a compressão torácica.",
+            "<strong>Pré-oxigenação Otimizada:</strong> Como o paciente mantinha hipoxemia com máscara com reservatório por shunt pulmonar, utilizou-se Ventilação Não Invasiva (CPAP com PEEP de 10 cmH2O e FiO2 100%) por 3 minutos acoplada a cânula nasal com 15 L/min de O2 para oxigenação apneica contínua (NO DESAT). A SpO2 elevou-se para 96%.",
+            "<strong>Drogas de Indução da SRI:</strong> Visando estabilidade hemodinâmica máxima em choque séptico, optou-se por <strong>Etomidato 0,3 mg/kg IV (40 mg)</strong> associado a <strong>Rocurônio 1,2 mg/kg de peso ideal ajustado (120 mg IV)</strong>.",
+            "<strong>Primeira Tentativa de Laringoscopia (Plano A):</strong> O residente utilizou laringoscópio direto convencional com lâmina Macintosh 4. Ao introduzir a lâmina, encontrou grande dificuldade mecânica pela proeminência do tórax anterior e visualizou apenas o palato mole e a base da língua, sem qualquer visualização da epiglote (<strong>Cormack-Lehane Grau IV</strong>). A SpO2 começou a despencar vertiginosamente para 78% em menos de 45 segundos. O preceptor declarou falha da primeira tentativa e assumiu a via aérea.",
+            "<strong>Otimização e Segunda Tentativa:</strong> O preceptor solicitou imediatamente o <strong>Videolaringoscópio com Lâmina Hiperangulada</strong> montado com <strong>Estilete Rígido conformador em formato de taco de hóquei</strong> acoplado ao tubo orotraqueal 7,5 mm. Ao introduzir o videolaringoscópio pela linha média sem necessidade de estender a cabeça, a imagem na tela do monitor revelou com nitidez 100% da abertura glótica (Cormack grau I em vídeo). O tubo com estilete rígido foi guiado pela lateral da orofaringe, ultrapassando as cordas vocais com suavidade sob visão direta na tela; o estilete foi destravado e sacado, e o cuff insuflado a 22 cm dos dentes incisivos.",
+            "<strong>Confirmação Imediata:</strong> Conexão instantânea do circuito ao capnógrafo, com visualização imediata de <strong>ondas retangulares de EtCO2 sustentadas (&gt; 35 mmHg)</strong> e expansão torácica bilateral simétrica. A SpO2 recuperou rapidamente para 98%."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Comentário de Aprendizado:</strong>\nO caso ilustra a superioridade incontestável da <strong>Videolaringoscopia com lâmina hiperangulada</strong> no paciente obeso mórbido, contornando a laringoscopia direta impossível (Cormack IV). O posicionamento em rampa foi determinante para viabilizar a anatomia e a pré-oxigenação com CPAP impediu a parada cardíaca por hipóxia durante a laringoscopia. O uso de BNM adespolarizante (rocurônio) garantiu relaxamento ótimo sem risco de hipercalemia da succinilcolina em paciente séptico com acidose metabólica."
+        ],
+        [
+          "3",
+          "Caso Clínico 2: O Cenário CICO e o Resgate Salva-Vidas por Cricotireoidostomia Cirúrgica"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Homem de 44 anos, vítima de agressão física com múltiplos golpes contusos na face e pescoço anterior. É admitido na sala de trauma do pronto-socorro agitado, com hematoma cervical anterior em expansão, sangramento profuso ativo em orofaringe decorrente de fraturas complexas de mandíbula e maxila, apresentando <strong>estridor inspiratório ruidoso marcante</strong> e tiragem de fúrcula."
+        ],
+        [
+          "p",
+          "<p><strong>Evolução para Catástrofe de Via Aérea (CICO):</strong>\nA equipe decide pela intubação imediata sob Sequência Rápida:"
+        ],
+        [
+          "u",
+          [
+            "Administra-se Cetamina 1,5 mg/kg IV e Succinilcolina 1,5 mg/kg IV.",
+            "<em>Tentativa 1 (Plano A):</em> O médico introduz a lâmina curva 4 de laringoscópio: o campo visual é completamente inundado por coágulos de sangue e secreções escuras que refluem do leito faríngeo fraturado. Mesmo sob aspiração com cateter rígido de Yankauer, há distorção anatômica completa pelo hematoma da parede faríngea; a epiglote está lacerada e edemaciada. Tentativa frustrada com tubo 8,0 às cegas. SpO2 cai para 82%.",
+            "<em>Tentativa 2 (Plano A):</em> Tentativa com videolaringoscópio: a lente da microcâmera é imediatamente borrada e cegada pelo sangue ativo da faringe. Falha da segunda tentativa. SpO2 cai para 68%, paciente bradicárdico (FC 44 bpm).",
+            "<em>Declaração de Falha do Plano A e Migração para o Plano B:</em> Insere-se uma Máscara Laríngea i-gel número 4: ao tentar ventilar com o Ambu, há vazamento maciço de ar com fuga perilaríngea devido à distorção faríngea pelo hematoma expansivo; o tórax não expande, não há onda na capnografia e a SpO2 cai para 52%.",
+            "<em>Migração para o Plano C:</em> Retira-se a máscara laríngea, introduz-se cânula de Guedel e dois operadores tentam ventilação sob máscara a quatro mãos com pegada V-E bimanual: <strong>NÃO HÁ QUALQUER EXPANSÃO TORÁCICA</strong>. O ar escapa pelas fraturas faciais e a resistência laríngea é total pelo hematoma compressivo.",
+            "<strong>DECLARAÇÃO FORMAL EM VOZ ALTA: \"CENÁRIO NÃO INTUBO, NÃO OXIGÊNIO (CICO)! INICIANDO CRICOTIREOIDOSTOMIA CIRÚRGICA IMEDIATAMENTE!\"</strong>"
+          ]
+        ],
+        [
+          "p",
+          "</p>\n\n<p><strong>Execução da Técnica Bisturi-Bougie-Tubo (Plano D da DAS):</strong>"
+        ],
+        [
+          "o",
+          [
+            "O cirurgião de trauma assume o pescoço do paciente, estendendo o pescoço com um coxim sob as escápulas.",
+            "Com a mão esquerda, realiza a <strong>pegada laríngea (\"laryngeal handshake\")</strong>, estabilizando as cartilagens tireoide e cricoide entre o polegar e o dedo médio, e apoiando a polpa do indicador na <strong>Membrana Cricotireóidea</strong>.",
+            "Com lâmina de bisturi nº 11 na mão direita, realiza uma <strong>incisão transversa de 1,5 cm na membrana cricotireóidea</strong>. Percebe-se o estalido de penetração na traqueia e o sopro de gás pressurizado com borbulhamento hemático.",
+            "Gira a lâmina do bisturi em <strong>90 graus no sentido caudal</strong>, abrindo a fenda traqueal verticalmente.",
+            "Introduz a ponta angulada de um <strong>Bougie traqueal de 15 Fr</strong> pela fenda ao lado da lâmina do bisturi, avançando-o suavemente 10 cm na traqueia até sentir os cliques dos anéis traqueais. Retira o bisturi.",
+            "Desliza um <strong>tubo traqueal com cuff número 6,0 mm</strong> montado sobre o bougie com suave movimento rotatório até que o balonete transpasse a membrana cricotireóidea. O bougie é sacado mantendo-se o tubo imóvel.",
+            "Insufla-se o cuff com 7 mL de ar e conecta-se o Ambu com O2 a 100%: <strong>SURGIMENTO IMEDIATO DE ONDA RETANGULAR DE ETCO2 NA CAPNOGRAFIA</strong>, expansão torácica ampla e recuperação progressiva da SpO2 para 99% em 30 segundos! A frequência cardíaca normalizou-se para 90 bpm, revertendo a bradicardia anóxica extrema. O paciente foi conduzido ao centro cirúrgico para hemostasia das fraturas e conversão eletiva para traqueostomia formal."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: O Perigo da Succinilcolina em um Paciente com Paraplegia Subaguda"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Homem de 32 anos, vítima de acidente de motocicleta há 3 semanas, com fratura da coluna torácica (nível T6) e lesão medular completa (paraplegia crônica recente com bexiga neurogênica). É admitido no pronto-socorro com sepse de foco urinário por pielonefrite com choque séptico, taquipneico (FR 38 irpm) e rebaixamento do nível de consciência decorrente de encefalopatia séptica. O médico plantonista indica intubação orotraqueal e decide executar a SRI utilizando Midazolam 15 mg e <strong>Succinilcolina 100 mg IV</strong>."
+        ],
+        [
+          "p",
+          "<strong>Evolução Paroxística durante a Indução:</strong>\nImediatamente após a administração da succinilcolina, o paciente apresenta fasciculações musculares difusas no tronco superior e face. Quarenta segundos após, a intubação orotraqueal é realizada com facilidade e sucesso na primeira tentativa com tubo 8,0 mm e laringoscópio direto (Cormack-Lehane I). O tubo é fixado e a capnografia confirma posição correta. Contudo, <strong>menos de 60 segundos após a passagem do tubo, o monitor cardíaco começa a exibir ondas T apiculadas gigantescas (\"em tenda\"), seguidas rapidamente por alargamento bizarro do complexo QRS que se funde com a onda T (ritmo sinusoidal) e degeneração súbita para Fibrilação Ventricular e Assistolia!</strong>"
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Fisiopatológico e Análise do Erro:</strong>\nO médico cometeu uma <strong>contraindicação farmacológica formal gravíssima</strong>: administrar succinilcolina a um paciente com <strong>lesão medular e denervação motora crônica com mais de 24 a 48 horas de evolução</strong>. Após a transecção medular ou desnervação de neurônios motores inferiores, a musculatura paralisada desenvolve <em>up-regulation</em> maciça de receptores nicotínicos de acetilcolina extrajuncionais (isoforma fetal alfa-7 e gama) que se espalham por toda a membrana sarcolêmica dos membros paralisados. Quando a succinilcolina se liga a esses receptores anômalos hipersensíveis, ocorre abertura prolongada dos canais iônicos com <strong>despejo maciço de potássio intracelular para o plasma</strong>. O potássio sérico do paciente, que era de 4,2 mEq/L na admissão, disparou em menos de 1 minuto para <strong>9,4 mEq/L</strong>, desencadeando parada cardiorrespiratória hipercalêmica fulminante!"
+        ],
+        [
+          "p",
+          "<p><strong>Conduta de Reanimação Emergencial:</strong>"
+        ],
+        [
+          "o",
+          [
+            "Início imediato de manobras de RCP avançada (compressões torácicas contínuas).",
+            "Administração venosa imediata em bólus de <strong>Gluconato de Cálcio a 10% (30 mL IV em 2 minutos)</strong> para estabilizar a membrana dos miócitos e antagonizar o efeito cardiotóxico do potássio.",
+            "Administração de <strong>Bicarbonato de Sódio a 8,4% (100 mEq IV)</strong> e Solução Polarizante (10 UI de Insulina Regular em 50 mL de Glicose a 50% IV).",
+            "Desfibrilação elétrica com 200 J bifásicos para a FV.",
+            "O paciente retornou à circulação espontânea após 6 minutos de reanimação vigorosa. O bloqueador neuromuscular de escolha mandatória para esse paciente era o <strong>Brometo de Rocurônio (1,2 mg/kg)</strong>, que não possui qualquer ação despolarizante nem risco de hipercalemia!"
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: A Sedação com Cetamina na Asma Quase Fatal"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Mulher de 26 anos, portadora de asma brônquica grave com histórico de múltiplas internações em UTI, é admitida na emergência em <strong>Estado de Mal Asmático</strong> com 12 horas de evolução. Ao exame: extremidades cianóticas, sudorese fria profusa, incapaz de pronunciar uma única palavra (\"fala entrecortada ausente\"), FR 40 irpm com respiração em padrão paradoxal toracoabdominal e ausculta pulmonar com <strong>\"tórax silencioso\" (ausência de sibilos audíveis por fluxo aéreo crítico incapaz de gerar vibração sonora)</strong>. Saturação de O2 colapsando para 76% a despeito de máscara não reinalante com O2 a 15 L/min. Gasometria arterial revelando acidose mista severa: pH 7,08, PaCO2 78 mmHg, PaO2 48 mmHg, Lactato 4,2 mmol/L. Paciente evoluindo para torpor e exaustão muscular franca."
+        ],
+        [
+          "p",
+          "<p><strong>Decisão Terapêutica e Execução da SRI:</strong>\nA indicação de intubação traqueal de emergência na asma quase fatal impõe desafios de broncoespasmo intratável e colapso circulatório por aprisionamento aéreo (auto-PEEP):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Seleção Farmacológica Ideal:</strong>\n    <ul>\n      <li>Agente Hipnótico: <strong>Cetamina na dose de 2,0 mg/kg IV (120 mg)</strong>. A cetamina promove analgesia e hipnose dissociativa com preservação hemodinâmica e, criticamente, exerce <strong>potente efeito broncodilatador direto</strong> (por inibição dos receptores muscarínicos brônquicos, inibição da recaptação de noradrenalina e relaxamento direto da musculatura lisa traqueobronquial). O propofol foi evitado pela hipotensão grave que causaria, e o etomidato não possui efeito broncodilatador intrínseco.",
+            "Bloqueador Neuromuscular: <strong>Brometo de Rocurônio na dose de 1,2 mg/kg IV (70 mg)</strong>. O rocurônio garante relaxamento completo das cordas vocais e da caixa torácica sem induzir liberação de histamina (a succinilcolina pode induzir liberação discreta de histamina com risco de agravar o broncoespasmo).",
+            "<strong>Intubação Orotraqueal:</strong> Realizada com videolaringoscópio na primeira passagem com tubo orotraqueal calibroso número <strong>8,0 mm</strong> (tubos calibrosos são mandatórios na asma para reduzir a resistência ao fluxo aéreo expiratório e permitir aspiração de tampões mucosos).",
+            "<strong>Estratégia de Ventilação Protetora para Hipercapnia Permissiva:</strong> Para evitar barotrauma por hiperinsuflação e pneumotórax hipertensivo:\n    <ul>\n      <li>Frequência respiratória baixa: <strong>8 a 10 incursões por minuto</strong>.",
+            "Volume corrente baixo: <strong>6 mL/kg de peso ideal (360 mL)</strong>.",
+            "Fluxo inspiratório alto (&gt; 70 a 80 L/min) para encurtar o tempo inspiratório e proporcionar uma <strong>relação I:E prolongada de 1:4 ou 1:5</strong>, garantindo tempo expiratório longo para o esvaziamento alveolar completo.",
+            "Tolerância de hipercapnia com pH &gt; 7,20 (hipercapnia permissiva)."
+          ]
+        ],
+        [
+          "p",
+          "Com a ação broncodilatadora contínua da cetamina associada a salbutamol e sulfato de magnésio inalatório/venoso, a resistência das vias aéreas caiu progressivamente, com reversão do broncoespasmo e extubação programada bem-sucedida após 48 horas de terapia em UTI.\n</p>"
+        ]
+      ]
+    ],
+    [
+      "questoes-de-prova-comentadas-vad",
+      0,
+      [
+        [
+          "2",
+          "11. Questões de Concurso e Provas de Residência Médica Comentadas na Íntegra"
+        ],
+        [
+          "3",
+          "Questão 1 (Residência Médica - USP / ENARE)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Um homem de 35 anos, vítima de queimadura térmica de segundo e terceiro graus em 40% da superfície corporal há 12 dias, encontra-se internado na Unidade de Terapia Intensiva com choque séptico secundário a infecção de ferida operatória por Pseudomonas aeruginosa. Desenvolve insuficiência respiratória hipoxêmica aguda grave, sendo indicada intubação orotraqueal imediata sob Sequência Rápida de Intubação (SRI). Qual dos seguintes bloqueadores neuromusculares é <strong>FORMALMENTE CONTRAINDICADO</strong> para a realização do procedimento nesse paciente e qual o mecanismo biológico responsável por essa contraindicação?"
+        ],
+        [
+          "p",
+          "A) Rocurônio; por competir com receptores muscarínicos cardíacos deflagrando bloqueio atrioventricular total.<br>\nB) Cisatracúrio; por sofrer degradação de Hofmann espontânea acelerada pelo calor corporal da sepse gerando metabólitos neurotóxicos (laudanosina).<br>\nC) Succinilcolina; por induzir proliferação (up-regulation) de receptores nicotínicos extrajuncionais hipersensíveis na musculatura esquelética desnervada/queimada, com risco de hipercalemia maciça e parada cardiorrespiratória fulminante.<br>\nD) Pancurônio; por induzir bloqueio histaminérgico vascular periférico com colapso hemodinâmico distributivo.<br>\nE) Vecurônio; por necessitar de metabolização hepática exclusiva que se encontra totalmente abolida no choque séptico."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial e Comentário Detalhado:</strong><br>\n<strong>Alternativa CORRETA: C.</strong><br>\n<em>Justificativa Médica:</em> Em pacientes com queimaduras extensas (&gt; 10% da superfície corporal), trauma raquimedular com paraplegia/tetraplegia, lesões graves por esmagamento (crush syndrome) ou doenças neuromusculares desmielinizantes, desenvolve-se a partir de <strong>24 a 48 horas após a lesão primária</strong> um fenômeno biológico de <em>up-regulation</em> maciça de <strong>receptores nicotínicos de acetilcolina extrajuncionais</strong> (isoformas fetais alfa-7 e gama). Esses receptores espalham-se por toda a membrana sarcolêmica dos miócitos e exibem condutância iônica prolongada. A administração do bloqueador despolarizante <strong>Succinilcolina</strong> provoca despolarização prolongada e maciça desses receptores, liberando quantidades gigantescas de potássio intracelular para a circulação sistêmica. O potássio pode subir abruptamente de 4 para 8-10 mEq/L em minutos, deflagrando arritmias ventriculares malignas (fibrilação ventricular) e assistolia refratária. O período de risco da succinilcolina no grande queimado estende-se por <strong>pelo menos 1 a 2 anos</strong> após a cicatrização das lesões!<br>\n<em>Refutação dos Distratores:</em><br>\n• <strong>A está incorreta:</strong> O rocurônio é um BNM adespolarizante puro e seguro; é a droga de ESCOLHA para a SRI nesse paciente (na dose de 1,2 mg/kg).<br>\n• <strong>B, D e E estão incorretas:</strong> O cisatracúrio e vecurônio não são de primeira escolha em SRI por latência mais longa (2-3 min), mas não causam hipercalemia letal."
+        ],
+        [
+          "3",
+          "Questão 2 (Residência Médica - UNIFESP)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Um homem de 52 anos é submetido a indução anestésica com propofol, fentanil e rocurônio para cirurgia abdominal eletiva. O anestesiologista tenta intubação traqueal com laringoscópio direto convencional duas vezes, visualizando apenas a base da língua (Cormack-Lehane IV). Chama o colega de sala, que realiza uma terceira tentativa com videolaringoscópio, também sem sucesso devido a edema progressivo de orofaringe e sangramento local. Imediatamente, a equipe insere uma Máscara Laríngea de 2ª geração tamanho 4, porém nota escape gasoso maciço com pressão de pico de 35 cmH2O, ausência de expansão torácica e ausência de onda na capnografia. Remove-se a máscara laríngea e tenta-se ventilação com bolsa-válvula-máscara a quatro mãos com cânula orofaríngea de Guedel, sem qualquer sucesso ventilatório. A saturação de oxigênio colapsa de 98% para 64% com bradicardia associada (FC 40 bpm). De acordo com o algoritmo da Difficult Airway Society (DAS 2015), qual é a conduta MANDATÓRIA IMEDIATA?"
+        ],
+        [
+          "p",
+          "A) Tentar intubação nasal às cegas com tubo de menor calibre pré-aquecido e lubrificado.<br>\nB) Realizar traqueostomia cirúrgica formal eletiva dissecando o istmo da tireoide no segundo e terceiro anéis traqueais.<br>\nC) Declarar cenário CICO (Cannot Intubate, Cannot Oxygenate) e realizar Cricotireoidostomia Cirúrgica de emergência através da técnica bisturi-bougie-tubo.<br>\nD) Administrar mais uma dose de bloqueador neuromuscular para garantir o relaxamento completo do esfíncter laríngeo.<br>\nE) Instalar cateter percutâneo transtraqueal e ventilar com oxigênio em jato sob alta pressão (manobra de Sanders)."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial e Comentário Detalhado:</strong><br>\n<strong>Alternativa CORRETA: C.</strong><br>\n<em>Justificativa Médica:</em> O paciente evoluiu através dos Planos A (falha de intubação traqueal em 3 tentativas), B (falha de oxigenação por máscara laríngea) e C (falha de ventilação sob máscara facial a duas mãos). Esse quadro define a emergência máxima de via aérea: <strong>Cenário CICO (Não Intubo, Não Oxigênio)</strong>. Com SpO2 em 64% e bradicardia anóxica, a parada cardiorrespiratória ocorrerá em menos de 1 a 2 minutos. A diretriz da DAS e de todos os consensos mundiais determina a migração imediata para o <strong>Plano D: Cricotireoidostomia Cirúrgica com a técnica \"Bisturi-Bougie-Tubo\" (Scalpel-Bougie-Tube)</strong>, utilizando lâmina 10/11 para incisão da membrana cricotireóidea superficial, passagem do bougie e deslizamento de um tubo com cuff número 5,0 a 6,0 mm.<br>\n<em>Refutação dos Distratores:</em><br>\n• <strong>A está incorreta:</strong> A intubação às cegas é proscrita e ineficaz em paciente dessaturando com via aérea destruída.<br>\n• <strong>B está incorreta:</strong> A traqueostomia formal exige dissecção cirúrgica lenta e hemostasia do istmo tireoidiano (10 a 20 minutos), sendo contraindicada na emergência hiperaguda.<br>\n• <strong>D está incorreta:</strong> O paciente já estava paralisado com rocurônio; administrar mais droga só atrasa o procedimento cirúrgico salvador.<br>\n• <strong>E está incorreta:</strong> A cricotireoidostomia por punção com agulha para ventilação a jato possui alta taxa de falha (acima de 60-70% no ambiente não operatório) por acotovelamento e enfisema subcutâneo grave, tendo sido rebaixada em relação à técnica de cricotireoidostomia cirúrgica com bisturi pela DAS."
+        ],
+        [
+          "3",
+          "Questão 3 (Revalida INEP)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Um médico emergencista prepara-se para intubar um paciente de 70 anos em choque hipovolêmico por hemorragia digestiva alta varicosa. Qual dos seguintes agentes hipnóticos de indução é o mais adequado para a Sequência Rápida de Intubação nesse cenário hemodinamicamente instável e qual é a principal preocupação endócrina relacionada ao seu uso?"
+        ],
+        [
+          "p",
+          "A) Propofol; causa vasodilatação renal protetora contra necrose tubular aguda.<br>\nB) Midazolam; causa estimulação dos receptores beta-1 adrenérgicos mantendo o débito cardíaco.<br>\nC) Etomidato; promove excelente estabilidade cardiovascular, mas induz supressão transitória da síntese de cortisol por inibição da enzima 11-beta-hidroxilase na suprarrenal.<br>\nD) Cetamina; suprime a atividade do sistema renina-angiotensina-aldosterona gerando hipercalemia grave.<br>\nE) Tiopental; induz vasoconstrição periférica intensa com aumento da pré-carga miocárdica."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial e Comentário Detalhado:</strong><br>\n<strong>Alternativa CORRETA: C.</strong><br>\n<em>Justificativa Médica:</em> O <strong>Etomidato</strong> (0,3 mg/kg IV) é o agente sedativo de escolha clássico para intubação em pacientes com instabilidade hemodinâmica grave, choque hipovolêmico, séptico ou cardiogênico. Ele não deprime o miocárdio, não altera o tônus simpático periférico e não libera histamina, mantendo a pressão arterial média estável. O seu principal efeito colateral metabólico é a <strong>supressão adrenocortical transitória</strong>: o etomidato bloqueia a enzima <em>11-beta-hidroxilase</em> mitocondrial na suprarrenal, que converte o 11-desoxicortisol em cortisol, reduzindo a resposta do cortisol ao estresse por 12 a 24 horas após uma dose única (efeito autolimitado e clinicamente tolerável frente ao benefício de segurança cardiovascular imediata).<br>\n<em>Refutação dos Distratores:</em><br>\n• <strong>A está incorreta:</strong> O propofol causa vasodilatação periférica intensa e inotropismo negativo grave, precipitando choque refratário e parada cardíaca no paciente hipovolêmico.<br>\n• <strong>B está incorreta:</strong> O midazolam não estimula receptores adrenérgicos e causa vasodilatação venosa com hipotensão.<br>\n• <strong>D está incorreta:</strong> A cetamina estimula o sistema simpático e broncodilata; não tem efeito inibitório primário sobre a aldosterona.<br>\n• <strong>E está incorreta:</strong> O tiopental é um barbitúrico que causa hipotensão severa e colapso cardíaco em choque."
+        ],
+        [
+          "3",
+          "Questão 4 (Residência Médica - SURCE / SUS-CE)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Durante o atendimento de uma vítima de colisão auto versus anteparo com suspeita de lesão da coluna cervical, a equipe prepara a intubação traqueal de emergência. Em relação às particularidades do manejo da via aérea no trauma de coluna cervical, assinale a afirmação CORRETA:"
+        ],
+        [
+          "p",
+          "A) O colar cervical rígido deve permanecer firmemente fechado e posicionado durante toda a laringoscopia para manter o alinhamento da cabeça.<br>\nB) A manobra de Sellick com pressão cricoide de 50 Newtons é obrigatória e deve ser mantida mesmo se houver dificuldade de visualização glótica.<br>\nC) Deve-se abrir a porção anterior do colar cervical e realizar a Estabilização Manual em Linha (MILS) por um segundo assistente, evitando a extensão da cabeça e utilizando preferencialmente videolaringoscópio.<br>\nD) A posição de olfativa de Jackson com flexão do pescoço em 35 graus e extensão atlanto-occipital é o alinhamento de escolha mandatório no trauma.<br>\nE) A intubação traqueal retrógrada é o método de primeira linha em todo trauma cervical contuso."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial e Comentário Detalhado:</strong><br>\n<strong>Alternativa CORRETA: C.</strong><br>\n<em>Justificativa Médica:</em> No trauma com suspeita de lesão cervical, o movimento de extensão da cabeça (típico da posição de olfativa de Jackson) pode provocar subluxação de fraturas cervicais instáveis e secção medular irreversível. O protocolo consagrado do ATLS determina a abertura e retirada da parte anterior do colar cervical (mantendo a placa posterior para apoio) e a execução da <strong>Estabilização Manual em Linha (MILS - Manual In-Line Stabilization)</strong> por um assistente dedicado, que segura firmemente as laterais da cabeça e mastoides impedindo qualquer flexão, extensão ou rotação. O <strong>videolaringoscópio</strong> é o instrumento ideal nesse cenário, pois fornece visualização glótica superior (graus I/II) sem exigir a extensão cervical forçada necessária na laringoscopia direta tradicional.<br>\n<em>Refutação dos Distratores:</em><br>\n• <strong>A está incorreta:</strong> Manter o colar rígido fechado impede a abertura bucal (reduzindo a abertura interincisivos para &lt; 2 cm) e impossibilita a laringoscopia.<br>\n• <strong>B está incorreta:</strong> A manobra de Sellick não é mais obrigatória e deve ser abandonada se houver qualquer dificuldade de visualização.<br>\n• <strong>D está incorreta:</strong> A posição de olfativa de Jackson é contraindicada na suspeita de trauma raquimedular cervical.<br>\n• <strong>E está incorreta:</strong> A intubação retrógrada é técnica de exceção histórica complexa, não sendo primeira linha."
+        ],
+        [
+          "3",
+          "Questão 5 (ENAMED / Prova Nacional de Acesso)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Um anestesiologista administra 1,2 mg/kg de Brometo de Rocurônio para sequência rápida de intubação em um paciente com obesidade e peritonite fecal. Após três tentativas de laringoscopia frustradas, o paciente evolui com via aérea impossível de ventilar sob máscara facial e falha na inserção de máscara laríngea. A saturação arterial de oxigênio cai vertiginosamente. Qual é o antídoto farmacológico específico de ação ultrarrápida capaz de encapsular o rocurônio e reverter a paralisia neuromuscular completa em menos de 2 minutos nesse cenário de crise?"
+        ],
+        [
+          "p",
+          "A) Neostigmina na dose de 0,05 mg/kg IV associada a atropina.<br>\nB) Sugamadex na dose de 16 mg/kg IV em bolus.<br>\nC) Flumazenil na dose de 0,5 mg IV fracionado.<br>\nD) Naloxona na dose de 0,4 mg IV a cada 2 minutos.<br>\nE) Dantrolene sódico na dose de 2,5 mg/kg IV em bólus."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial e Comentário Detalhado:</strong><br>\n<strong>Alternativa CORRETA: B.</strong><br>\n<em>Justificativa Médica:</em> O <strong>Sugamadex (Bridion)</strong> é uma gama-ciclodextrina modificada seletiva que possui alta afinidade e especificidade para encapsular os bloqueadores neuromusculares aminoesteroidais (rocurônio &gt; vecurônio). Ele encapsula as moléculas de rocurônio livre na circulação na proporção 1:1, criando um gradiente de concentração que retira o rocurônio da placa motora neuromuscular. Para a <strong>reversão emergencial imediata após dose plena de rocurônio na SRI (1,2 mg/kg)</strong> no cenário de via aérea difícil, a dose preconizada pelas diretrizes internacionais é de <strong>16 mg/kg IV em bolus</strong>. Essa dose reverte a paralisia profunda e restaura a respiração espontânea e a força muscular em apenas <strong>90 a 120 segundos</strong>, superando a duração prolongada habitual do fármaco (que seria de 45 a 60 minutos sem o antídoto).<br>\n<em>Refutação dos Distratores:</em><br>\n• <strong>A está incorreta:</strong> A neostigmina é um inibidor da acetilcolinesterase incapaz de reverter bloqueio neuromuscular profundo imediato (risco de paralisia paradoxal por bloqueio despolarizante e demora mais de 10 a 15 minutos para agir).<br>\n• <strong>C está incorreta:</strong> Flumazenil é antagonista específico de benzodiazepínicos (midazolam).<br>\n• <strong>D está incorreta:</strong> Naloxona é antagonista de opioides (morfina, fentanil).<br>\n• <strong>E está incorreta:</strong> Dantrolene é o tratamento específico da Hipertermia Maligna."
+        ],
+        [
+          "3",
+          "Questão 6 (Residência Médica - AMRIGS)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Qual dos seguintes métodos de monitorização é considerado o <strong>PADRÃO-OURO absoluto e inegociável</strong> para confirmação imediata do posicionamento traqueal da cânula após a intubação e detecção precoce de intubação esofágica inadvertida durante a parada cardiorrespiratória e no pronto-socorro?"
+        ],
+        [
+          "p",
+          "A) Ausculta pulmonar dos ápices e bases associada à ausculta epigástrica estéreo em 5 pontos.<br>\nB) Visualização do embaçamento ou condensação de vapor de água na parede interna da cânula traqueal durante a expiração.<br>\nC) Capnografia quantitativa de forma de onda contínua (exibição gráfica de ondas retangulares de EtCO2 por mais de 6 ciclos respiratórios consecutivos).<br>\nD) Oximetria de pulso demonstrando elevação da saturação periférica para &gt; 95% nos primeiros 3 minutos pós-intubação.<br>\nE) Radiografia simples de tórax no leito realizada nas primeiras 2 horas pós-intubação."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial e Comentário Detalhado:</strong><br>\n<strong>Alternativa CORRETA: C.</strong><br>\n<em>Justificativa Médica:</em> Todas as diretrizes internacionais contemporâneas (American Heart Association - AHA, European Resuscitation Council - ERC, Difficult Airway Society - DAS, American Society of Anesthesiologists - ASA) consagram a <strong>Capnografia Quantitativa de Forma de Onda Contínua (EtCO2 contínuo) como o PADRÃO-OURO absoluto</strong> para confirmação do tubo na traqueia. A presença de curvas retangulares de EtCO2 sustentadas por pelo menos 6 ciclos respiratórios garante com sensibilidade e especificidade de 100% que a cânula está na via aérea (pois apenas os pulmões perfundidos metabolizam e exalam CO2 de forma contínua). A ausência de onda retangular após o segundo ciclo respiratório define intubação esofágica inadvertida até prova em contrário, exigindo a retirada imediata do tubo!<br>\n<em>Refutação dos Distratores:</em><br>\n• <strong>A está incorreta:</strong> A ausculta pulmonar pode falhar e transmitir sons gástricos ou de ruídos transmitidos da parede torácica, tendo taxa de erro em até 10-15% das intubações esofágicas na emergência ruidosa.<br>\n• <strong>B está incorreta:</strong> O vapor de água pode se condensar na cânula mesmo quando introduzida no esôfago devido à umidade gástrica.<br>\n• <strong>D está incorreta:</strong> A oximetria de pulso tem retardo de 30-60 segundos e não reflete o posicionamento traqueal imediato (a SpO2 pode permanecer em 100% por minutos em um paciente pré-oxigenado com tubo no esôfago antes de despencar fatalmente).<br>\n• <strong>E está incorreta:</strong> O raio-X é útil para avaliar a profundidade (distância da carina), mas é lento e não serve para confirmação imediata à beira do leito."
+        ]
+      ]
+    ],
+    [
+      "sintese-high-yield-e-erros-criticos-vad",
+      0,
+      [
+        [
+          "2",
+          "12. Síntese High-Yield e Erros Críticos de Plantão que Custam a Vida"
+        ],
+        [
+          "3",
+          "Tabela de Farmacologia de Emergência para Sequência Rápida de Intubação"
+        ],
+        [
+          "t",
+          [
+            "Fármaco",
+            "Classe",
+            "Dose IV na SRI",
+            "Indicação Principal",
+            "Contraindicação Crítica / Armadilha"
+          ],
+          [
+            [
+              "<strong>Etomidato</strong>",
+              "Hipnótico Imidazólico",
+              "0,3 mg/kg IV bolus",
+              "Choque séptico, hipovolêmico, politrauma, IAM (estabilidade hemodinâmica exemplar)",
+              "Supressão da 11-beta-hidroxilase adrenal (não usar em infusão contínua)"
+            ],
+            [
+              "<strong>Cetamina</strong>",
+              "Anestésico Dissociativo (NMDA)",
+              "1,5 a 2,0 mg/kg IV",
+              "Estado de mal asmático, DPOC descompensado, choque com preservação de tono simpático",
+              "Choque terminal refratário por depleção catecolaminérgica profunda"
+            ],
+            [
+              "<strong>Propofol</strong>",
+              "Alquifenol Hipnótico",
+              "1,5 a 2,5 mg/kg IV",
+              "Estado de mal epiléptico, paciente hipertenso jovem estável",
+              "Hipotensão grave e choque (vasodilatação venosa e inotropismo negativo)"
+            ],
+            [
+              "<strong>Succinilcolina</strong>",
+              "BNM Despolarizante",
+              "1,0 a 1,5 mg/kg IV",
+              "SRI padrão com anatomia normal e início em &lt; 45s",
+              "Hipercalemia (&gt; 5,5), queimadura &gt; 24h, trauma medular &gt; 24h, doenças neuromusculares, história de Hipertermia Maligna"
+            ],
+            [
+              "<strong>Rocurônio</strong>",
+              "BNM Adespolarizante",
+              "1,2 mg/kg IV (dose otimizada para SRI)",
+              "SRI em qualquer paciente, especialmente com risco ou presença de hipercalemia",
+              "Duração prolongada (45-60 min); requer disponibilidade de Sugamadex (16 mg/kg) para reversão rápida em CICO"
+            ],
+            [
+              "<strong>Sugamadex</strong>",
+              "Ciclodextrina Seletiva Reversora",
+              "16 mg/kg IV bolus",
+              "Reversão imediata de dose de SRI de rocurônio no cenário de via aérea impossível (CICO)",
+              "Incompatibilidade química em via com outros fármacos; interage com anticoncepcionais orais"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Os 10 Mandamentos da Via Aérea de Emergência para o Generalista"
+        ],
+        [
+          "o",
+          [
+            "<strong>NUNCA insistir em mais de 3 tentativas de laringoscopia:</strong> A insistência cega destrói a mucosa, induz sangramento profuso e transforma um paciente ventilável em uma catástrofe de \"Não Intubo, Não Oxigênio\". Após a 3ª tentativa, declare falha e mude para a máscara laríngea (Plano B)!",
+            "<strong>NUNCA confiar apenas na ausculta para confirmar intubação:</strong> O padrão-ouro universal é a <strong>Capnografia de onda contínua (EtCO2 sustentado por &gt; 6 ciclos)</strong>. Ausência de onda retangular = o tubo está no esôfago! Retire a cânula imediatamente!",
+            "<strong>NUNCA administrar succinilcolina em grande queimado ou paraplégico após 48 horas:</strong> A proliferação maciça de receptores nicotínicos extrajuncionais dispara o potássio sérico para &gt; 8-10 mEq/L, causando assistolia e fibrilação ventricular fulminante na mesa. Use rocurônio (1,2 mg/kg).",
+            "<strong>NUNCA usar lâmina de videolaringoscópio hiperangulada sem estilete rígido:</strong> Sem o estilete rígido moldado em formato de taco de hóquei, você terá 100% de visão glótica no monitor, mas o tubo orotraqueal não conseguirá realizar a curva anatômica para entrar na laringe.",
+            "<strong>NUNCA tentar traqueostomia formal no cenário CICO:</strong> A traqueostomia de emergência sangra profusamente, consome de 10 a 20 minutos e o paciente morre por asfixia anóxica. O procedimento correto de resgate salva-vidas em 30 segundos é a <strong>Cricotireoidostomia Cirúrgica com técnica bisturi-bougie-tubo</strong>!",
+            "<strong>NUNCA intubar paciente obeso mórbido sem posicionamento em rampa:</strong> O alinhamento horizontal do meato acústico externo com a fúrcula esternal (\"orelha-esterno\") desobstrui a orofaringe e alivia o peso do tórax, viabilizando a laringoscopia e a ventilação sob máscara.",
+            "<strong>NUNCA hiperventilar o paciente asmático intubado:</strong> Volumes correntes altos e frequências acima de 12-14 irpm impedem o esvaziamento alveolar por tempo expiratório curto, induzindo auto-PEEP maciço, colapso do retorno venoso, choque obstrutivo e pneumotórax hipertensivo. Use frequência de 8-10 irpm e relação I:E de 1:4 ou 1:5.",
+            "<strong>NUNCA omitir a oxigenação apneica contínua (NO DESAT):</strong> Manter cateter nasal simples de oxigênio a 15 L/min durante todo o procedimento de indução e laringoscopia prolonga a janela de apneia segura em até 3 a 5 minutos por difusão passiva.",
+            "<strong>NUNCA intubar paciente em choque descompensado sem otimização prévia:</strong> Sedativos e a ventilação mecânica com pressão positiva suprimem o tônus simpático e reduzem o retorno venoso, precipitando parada cardiorrespiratória pós-intubação. \"Ressuscite hemodinamicamente antes de intubar\"!",
+            "<strong>NUNCA realizar laringoscopia direta com hiperextensão cervical no trauma:</strong> Mantenha sempre a Estabilização Manual em Linha (MILS) executada por um segundo assistente e utilize preferencialmente a videolaringoscopia com Bougie para proteger a medula espinhal."
+          ]
+        ]
+      ]
+    ]
+  ]
+}

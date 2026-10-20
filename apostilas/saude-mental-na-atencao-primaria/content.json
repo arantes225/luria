@@ -1,0 +1,981 @@
+{
+  "v": 2,
+  "s": "saude-mental-na-atencao-primaria",
+  "t": "Saúde Mental na Atenção Primária à Saúde",
+  "p": "Saúde Mental na Atenção Primária à Saúde — Livro-Texto LURIA",
+  "d": "Tratado de Saúde Mental na Atenção Primária: a Rede de Atenção Psicossocial (RAPS) e o papel ordenador da Atenção Básica e dos CAPS, Lei da Reforma Psiquiátrica (internações voluntária, involuntária e compulsória), apoio matricial e o Projeto Terapêutico Singular (PTS), manejo prático dos Transtornos Mentais Comuns (GAD-7, PHQ-9 e higiene do sono/TCC-I), o desafio da desprescrição segura de benzodiazepínicos e manejo de abstinência, rastreamento e conduta estratificada diante do risco de suicídio e ferramentas de intervenção breve e entrevista motivacional (OARS e FRAMES) com casos e questões comentadas.",
+  "a": "Medicina Preventiva",
+  "m": "Medicina de Família e Comunidade / Saúde Coletiva e Psiquiatria Comunitária",
+  "h": [
+    "Apostila LURIA",
+    "Saúde Mental na Atenção Primária à Saúde",
+    "Tratado de Saúde Mental na Atenção Primária: a Rede de Atenção Psicossocial (RAPS) e o papel ordenador da Atenção Básica e dos CAPS, Lei da Reforma Psiquiátrica (internações voluntária, involuntária e compulsória), apoio matricial e o Projeto Terapêutico Singular (PTS), manejo prático dos Transtornos Mentais Comuns (GAD-7, PHQ-9 e higiene do sono/TCC-I), o desafio da desprescrição segura de benzodiazepínicos e manejo de abstinência, rastreamento e conduta estratificada diante do risco de suicídio e ferramentas de intervenção breve e entrevista motivacional (OARS e FRAMES) com casos e questões comentadas.",
+    [
+      "Área: Medicina Preventiva",
+      "Matéria: Medicina de Família e Comunidade / Saúde Coletiva e Psiquiatria Comunitária",
+      "Tema: Saúde Mental na Atenção Primária à Saúde"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "raps-e-papel-ordenador-da-atencao-basica-e-caps",
+      "1. A Rede de Atenção Psicossocial (RAPS) e o Papel Ordenador da Atenção Básica e dos CAPS"
+    ],
+    [
+      "apoio-matricial-nasf-emulti-e-projeto-terapeutico-singular",
+      "2. Apoio Matricial em Saúde Mental: Articulação entre eMulti / NASF e ESF e o Projeto Terapêutico Singular (PTS)"
+    ],
+    [
+      "transtornos-mentais-comuns-ansiedade-depressao-insonia",
+      "3. Abordagem dos Transtornos Mentais Comuns (TMC): Ansiedade, Depressão Leve a Moderada e Insônia na Atenção Básica"
+    ],
+    [
+      "benzodiazepinicos-e-protocolo-de-desprescricao-segura",
+      "4. Uso Abusivo de Benzodiazepínicos na APS e Protocolo Estruturado de Desprescrição Segura"
+    ],
+    [
+      "rastreamento-e-estratificacao-de-risco-de-suicidio-na-aps",
+      "5. Rastreamento e Estratificação de Risco de Suicídio na APS: Acolhimento Multiprofissional e Manejo de Crise"
+    ],
+    [
+      "intervencoes-breves-e-entrevista-motivacional",
+      "6. Intervenções Breves e Técnicas de Entrevista Motivacional na Prática da Atenção Primária"
+    ],
+    [
+      "casos-clinicos-e-questoes-comentadas-saude-mental",
+      "7. Casos Clínicos Estruturados e Questões Comentadas de Concursos Médicos"
+    ]
+  ],
+  "q": [
+    [
+      "raps-e-papel-ordenador-da-atencao-basica-e-caps",
+      0,
+      [
+        [
+          "2",
+          "1. A Rede de Atenção Psicossocial (RAPS) e o Papel Ordenador da Atenção Básica e dos CAPS"
+        ],
+        [
+          "3",
+          "1.1 A Reforma Psiquiátrica Brasileira e a Lei nº 10.216/2001"
+        ],
+        [
+          "p",
+          "A conformação atual da atenção à saúde mental no Sistema Único de Saúde (SUS) é fruto direto do histórico <strong>Movimento da Luta Antimanicomial</strong> e da <strong>Reforma Psiquiátrica Brasileira</strong>, cujo marco jurídico basilar é a <strong>Lei Federal nº 10.216/2001</strong> (Lei da Reforma Psiquiátrica / Lei Paulo Delgado). Essa legislação reorientou radicalmente o modelo assistencial em saúde mental no país:"
+        ],
+        [
+          "4",
+          "Pilares Jurídicos e Conceituais da Lei nº 10.216/2001"
+        ],
+        [
+          "u",
+          [
+            "<strong>Desinstitucionalização e Extinção Gradual dos Manicômios:</strong> Substituição progressiva e definitiva dos hospitais psiquiátricos asilares e segregadores por uma rede territorializada, comunitária e aberta de cuidados psicossociais.",
+            "<strong>Garantia Irrestrita de Cidadania e Direitos:</strong> Assegura à pessoa com sofrimento ou transtorno mental a proteção contra qualquer forma de abuso e exploração, o direito de ser tratada em ambiente menos restritivo possível e a preservação de seus laços familiares, comunitários e laborais.",
+            "<strong>Reordenamento da Internação Psiquiátrica:</strong> A internação hospitalar deixa de ser a regra ou primeira intervenção, passando a ser estritamente <strong>um recurso de exceção</strong>, admitida apenas quando todos os recursos comunitários e extra-hospitalares se mostrarem insuficientes, devendo ter duração estritamente necessária para a compensação clínica.",
+            "<strong>As Três Modalidades Legais de Internação Psiquiátrica no Brasil:</strong>\n      <ul>\n        <li><em>1. Internação Voluntária:</em> Realizada com o consentimento livre e esclarecido do próprio paciente, mediante declaração escrita assinada;",
+            "<em>2. Internação Involuntária:</em> Realizada <strong>sem o consentimento do paciente</strong>, a pedido de um familiar ou representante legal (ou, na sua ausência absoluta, por autoridade pública/médica). Exige laudo médico circunstanciado e <strong>COMUNICAÇÃO OBRIGATÓRIA ao Ministério Público Estadual no prazo máximo de 72 horas</strong> de sua efetivação (assim como a sua alta também deve ser comunicada ao MP em 72h), sob pena de responsabilização civil e criminal por cárcere privado;",
+            "<em>3. Internação Compulsória:</em> Determinada formalmente pelo juiz de direito competente, após apreciação de laudo médico fundamentado que comprove a imperiosa necessidade clínica e a ausência de outras alternativas viáveis."
+          ]
+        ],
+        [
+          "3",
+          "1.2 Estrutura e Componentes da RAPS (Portaria GM/MS nº 3.088/2011)"
+        ],
+        [
+          "p",
+          "Instituída pela <strong>Portaria GM/MS nº 3.088/2011</strong>, a <strong>Rede de Atenção Psicossocial (RAPS)</strong> estabelece os pontos de atenção integrados no território para o cuidado a pessoas com sofrimento ou transtorno mental e com necessidades decorrentes do uso de crack, álcool e outras drogas:"
+        ],
+        [
+          "t",
+          [
+            "Componente da RAPS",
+            "Pontos de Atenção / Dispositivos",
+            "Papel Estratégico no Cuidado em Saúde Mental"
+          ],
+          [
+            [
+              "<strong>1. Atenção Básica em Saúde</strong>",
+              "Unidades Básicas de Saúde (UBS / ESF), Núcleos Ampliados de Saúde da Família e Atenção Básica (NASF / equipes eMulti), Consultórios na Rua e Centros de Convivência e Cultura.",
+              "<strong>Porta de entrada preferencial e ordenadora da rede:</strong> responsável pelo acolhimento universal, identificação precoce, acompanhamento de Transtornos Mentais Comuns (TMC), cuidado compartilhado longitudinal e visitas domiciliares comunitárias."
+            ],
+            [
+              "<strong>2. Atenção Psicossocial Estratégica</strong>",
+              "Centros de Atenção Psicossocial (CAPS) em suas diferentes modalidades territoriais (CAPS I, CAPS II, CAPS III 24h, CAPS i para infância/adolescência e CAPS AD / AD III para álcool e outras drogas).",
+              "<strong>Dispositivo ordenador e articulador do cuidado no território:</strong> atendimento intensivo, semi-intensivo e não intensivo a pessoas com transtornos mentais severos e persistentes (psicoses, esquizofrenia, transtorno bipolar refratário) e vulnerabilidades graves por substâncias psicoativas."
+            ],
+            [
+              "<strong>3. Atenção de Urgência e Emergência</strong>",
+              "SAMU 192, Salas de Estabilização, Unidades de Pronto Atendimento (UPA 24h), Prontos-Socorros Gerais e Unidades Básicas de Saúde.",
+              "Estabilização de crises psiquiátricas agudas com risco iminente de auto ou heteroagressividade, ideação suicida grave em curso, intoxicações agudas e síndromes de abstinência graves."
+            ],
+            [
+              "<strong>4. Atenção Residencial de Caráter Transitório</strong>",
+              "Unidades de Acolhimento Adulto e Infanto-Juvenil (UA), Serviços de Atenção em Regime Residencial Transitório.",
+              "Acolhimento voluntário de curta permanência (até 6 meses) para usuários de álcool e drogas com vulnerabilidade social extrema, sem moradia e com vínculos familiares rompidos."
+            ],
+            [
+              "<strong>5. Atenção Hospitalar</strong>",
+              "Leitos de Saúde Mental em Hospitais Gerais e Enfermarias Especializadas em Hospital Geral.",
+              "Internação de curtíssima permanência para desintoxicação ou manejo de crises refratárias que necessitem de suporte clínico-hospitalar intensivo, evitando o isolamento asilar."
+            ],
+            [
+              "<strong>6. Estratégias de Desinstitucionalização</strong>",
+              "Serviços Residenciais Terapêuticos (SRT - Tipo I e II) e Programa 'De Volta Para Casa'.",
+              "Moradias comunitárias inseridas no espaço urbano para cidadãos egressos de longas internações psiquiátricas manicomiais (com mais de 2 anos ininterruptos de institucionalização)."
+            ],
+            [
+              "<strong>7. Reabilitação Psicossocial</strong>",
+              "Iniciativas de Trabalho e Economia Solidária, Cooperativas Sociais, Oficinas de Geração de Renda e Centros de Convivência.",
+              "Restauração da autonomia financeira, inserção produtiva e reconstrução da cidadania emancipada."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "1.3 O Papel Ordenador dos CAPS e suas Diferentes Modalidades"
+        ],
+        [
+          "p",
+          "Os CAPS atuam com lógica de <strong>portas abertas (acesso livre da demanda espontânea, sem necessidade de encaminhamento prévio)</strong>, formulando o Projeto Terapêutico Singular (PTS) individualizado para cada usuário:"
+        ],
+        [
+          "t",
+          [
+            "Modalidade de CAPS",
+            "Porte Populacional / Cobertura",
+            "Horário de Funcionamento e Características Estruturais"
+          ],
+          [
+            [
+              "<strong>CAPS I</strong>",
+              "Municípios com população a partir de <strong>15.000 a 20.000 habitantes</strong>.",
+              "Funciona em dias úteis, de segunda a sexta-feira, em período diurno (8h às 18h). Atende todas as faixas etárias e agravos psiquiátricos."
+            ],
+            [
+              "<strong>CAPS II</strong>",
+              "Municípios com população acima de <strong>70.000 habitantes</strong>.",
+              "Funciona em dias úteis, em período diurno estendido, com equipe interdisciplinar mais ampla."
+            ],
+            [
+              "<strong>CAPS III</strong>",
+              "Municípios ou regiões com mais de <strong>150.000 a 200.000 habitantes</strong>.",
+              "<strong>Funcionamento contínuo 24 HORAS POR DIA</strong>, todos os dias da semana (inclusive finais de semana e feriados). Dispõe de <strong>leitos de acolhimento noturno</strong> (até 8 a 12 leitos) para permanência transitória em períodos de descompensação e crise (máximo de 7 a 14 dias)."
+            ],
+            [
+              "<strong>CAPS i (Infanto-Juvenil)</strong>",
+              "Municípios com população acima de <strong>70.000 a 150.000 habitantes</strong>.",
+              "Exclusivo para crianças e adolescentes (até 18 anos incompletos) com sofrimento mental severo, transtornos do neurodesenvolvimento (TEA grave) e psicopatologias graves."
+            ],
+            [
+              "<strong>CAPS AD (Álcool e Drogas)</strong>",
+              "Municípios com população acima de <strong>70.000 habitantes</strong>.",
+              "Especializado em transtornos decorrentes do uso abusivo ou dependência de álcool, crack e outras drogas lícitas e ilícitas. Funcionamento diurno."
+            ],
+            [
+              "<strong>CAPS AD III</strong>",
+              "Municípios ou regiões com mais de <strong>150.000 a 200.000 habitantes</strong>.",
+              "Especializado em dependência química com <strong>funcionamento contínuo 24 HORAS</strong> e leitos de desintoxicação e repouso noturno."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "apoio-matricial-nasf-emulti-e-projeto-terapeutico-singular",
+      0,
+      [
+        [
+          "2",
+          "2. Apoio Matricial em Saúde Mental: Articulação entre eMulti / NASF e ESF e o Projeto Terapêutico Singular (PTS)"
+        ],
+        [
+          "3",
+          "2.1 O Modelo do Apoio Matricial em Saúde Mental na APS"
+        ],
+        [
+          "p",
+          "Na organização tradicional dos serviços de saúde, a atenção especializada opera segundo a lógica do <em>encaminhamento burocrático e da referência/contrarreferência passiva</em>: o médico generalista da UBS encaminha o paciente ao psiquiatra no ambulatório, desresponsabilizando-se do caso. A contrarreferência quase nunca retorna, as filas de espera acumulam meses ou anos e o paciente perde o vínculo com a equipe que conhece seu território e sua família."
+        ],
+        [
+          "p",
+          "Para romper com essa fragmentação ineficaz, os sanitaristas brasileiros Gastão Wagner de Sousa Campos e colaboradores formularam a metodologia do <strong>Apoio Matricial (ou Matriciamento)</strong>. O matriciamento assegura retaguarda assistencial e técnico-pedagógica personalizada às equipes de referência da Estratégia Saúde da Família por meio de profissionais especialistas (psiquiatras, psicólogos, assistentes sociais e terapeutas ocupacionais) oriundos das <strong>Equipes Multiprofissionais na Atenção Primária à Saúde (eMulti / antigo NASF)</strong> e dos próprios CAPS do território."
+        ],
+        [
+          "4",
+          "As Duas Dimensões Inseparáveis do Matriciamento"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Dimensão Técnico-Pedagógica (Educação Permanente em Saúde):</strong> O especialista matriciador não substitui a equipe da ESF; ele capacita e qualifica os profissionais da atenção primária. Por meio da discussão reflexiva de casos clínicos complexos, estudos de situação e supervisão compartilhada, a equipe da ESF expande sua competência clínica, aprende a manejar psicofármacos básicos, desmistifica o preconceito contra o sofrimento psíquico e reduz encaminhamentos desnecessários.",
+            "<strong>2. Dimensão Clínico-Assistencial (Cuidado Colaborativo e Longitudinal):</strong> Realização de <strong>interconsultas conjuntas (consultas compartilhadas)</strong>, nas quais médico/enfermeiro da ESF e o psicólogo/psiquiatra matriciador atendem o paciente e sua família simultaneamente na mesma sala; visitas domiciliares conjuntas; intervenções grupais territoriais; e pactuação compartilhada do plano de condutas. A equipe da ESF <strong>mantém a responsabilidade longitudinal pelo usuário</strong> (não há transferência de caso)."
+          ]
+        ],
+        [
+          "3",
+          "2.2 Metodologia da Reunião de Matriciamento e Ferramentas Práticas"
+        ],
+        [
+          "p",
+          "Para que o apoio matricial seja produtivo e não se degenere em mero repasse de receitas ou triagem de encaminhamentos, a reunião periódica de matriciamento (habitualmente quinzenal ou mensal entre a equipe da ESF e os profissionais da eMulti/CAPS) deve seguir um roteiro estruturado:"
+        ],
+        [
+          "o",
+          [
+            "<em>Seleção Prévia e Priorização de Casos pela ESF:</em> A equipe de saúde da família seleciona casos que geram impasses clínicos ou éticos (usuários com queixas somáticas persistentes sem causa orgânica, suspeita de psicose inicial, polifarmácia psiquiátrica iatrogênica, vulnerabilidade grave com risco de suicídio ou negligência familiar);",
+            "<em>Compartilhamento da Narrativa e Contexto Territorial:</em> O Agente Comunitário de Saúde (ACS) e o médico/enfermeiro apresentam não apenas os sintomas biomédicos, mas a história de vida, a dinâmica familiar, o suporte comunitário e a percepção da vizinhança;",
+            "<em>Genograma e Ecomapa Compartilhados:</em> Construção visual dos vínculos familiares em três gerações e das redes de suporte social (igreja, vizinhos, CRAS);",
+            "<em>Pactuação da Estratégia Conjunta:</em> Decide-se se o caso demanda intervenção ambiental, consulta compartilhada imediata, visita domiciliar conjunta, ajuste medicamentoso na própria UBS ou se preenche critérios para inserção no CAPS."
+          ]
+        ],
+        [
+          "3",
+          "2.3 O Projeto Terapêutico Singular (PTS)"
+        ],
+        [
+          "p",
+          "O <strong>Projeto Terapêutico Singular (PTS)</strong> é um dispositivo de cogestão do cuidado voltado a indivíduos, famílias ou grupos em situações de vulnerabilidade psíquica, social ou clínica complexa. O PTS não é um protocolo pré-formatado de computador; é uma <strong>construção dialogada</strong> entre a equipe interdisciplinar, o usuário e sua rede de apoio social. Desenvolve-se estruturadamente em <strong>quatro momentos dinâmicos</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Momento do PTS",
+            "Objetivo Metodológico",
+            "Ações Práticas da Equipe Interdisciplinar na APS"
+          ],
+          [
+            [
+              "<strong>1. Diagnóstico / Avaliação Integral</strong>",
+              "Mapeamento exaustivo e holístico das vulnerabilidades, do sofrimento psíquico, das forças, desejos e recursos do sujeito.",
+              "Avaliação biológica (comorbidades clínicas, uso de substâncias, padrão de sono), psicológica (história de vida, perdas, traumas) e social (moradia, renda, conflitos familiares, inserção territorial). Utilização do <em>Genograma</em> e <em>Ecomapa</em>."
+            ],
+            [
+              "<strong>2. Definição de Metas</strong>",
+              "Pactuação de objetivos de curto, médio e longo prazo construídos em coprodução com o próprio usuário.",
+              "Metas realistas e factíveis: regularizar o sono, reduzir dias de consumo de álcool (redução de danos), reatar convívio com um filho, retomar uma atividade de lazer comunitária, estabilizar alucinações. <em>Evitar a imposição autoritária de metas inalcançáveis</em> (como exigir abstinência total imediata sob pena de cancelamento do atendimento)."
+            ],
+            [
+              "<strong>3. Divisão de Responsabilidades e Tarefas</strong>",
+              "Definição clara do que cada ator da rede fará, estabelecendo prazos e pactos.",
+              "Designação formal do <strong>Profissional de Referência (Técnico de Referência)</strong>: aquele membro da equipe que possui o vínculo afetivo mais forte e confiável com o usuário (pode ser o médico, a enfermeira, a psicóloga ou o próprio agente comunitário de saúde). O profissional de referência centraliza a comunicação, monitora o cumprimento das ações e convoca a equipe quando necessário."
+            ],
+            [
+              "<strong>4. Reavaliação Periódica do Plano</strong>",
+              "Encontros regulares da equipe para avaliar os progressos, identificar impasses e reformular as metas.",
+              "O PTS é um instrumento vivo e mutável: se uma intervenção falhou ou surgiram novos estressores agudos (perda de emprego, recaída no uso de drogas), as ações são ajustadas sem culpabilização do usuário."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "transtornos-mentais-comuns-ansiedade-depressao-insonia",
+      0,
+      [
+        [
+          "2",
+          "3. Abordagem dos Transtornos Mentais Comuns (TMC): Ansiedade, Depressão Leve a Moderada e Insônia na Atenção Básica"
+        ],
+        [
+          "3",
+          "3.1 O Conceito Epidemiológico de Transtornos Mentais Comuns (TMC)"
+        ],
+        [
+          "p",
+          "Formulado originalmente por David Goldberg e Paul Huxley, o conceito de <strong>Transtornos Mentais Comuns (TMC)</strong> engloba um conjunto de sintomas psíquicos altamente prevalentes na população geral — destacando-se manifestações ansiosas, sintomas depressivos, fadiga crônica, insônia, irritabilidade, dificuldade de concentração e queixas somatoformes (dores inespecíficas, cefaleia, desconforto gastrintestinal). No Brasil, estudos epidemiológicos em áreas de cobertura da Estratégia Saúde da Família apontam que <strong>entre 30% e 50% de todos os usuários atendidos na atenção primária apresentam critérios para TMC</strong>."
+        ],
+        [
+          "p",
+          "Na imensa maioria das vezes, esses quadros não atingem o limiar de gravidade para diagnósticos psiquiátricos clássicos graves (como esquizofrenia ou depressão psicótica), refletindo um sofrimento emocional expressivo intimamente vinculado a determinantes sociais da saúde: desemprego, violência urbana e doméstica, pobreza, discriminação e sobrecarga de cuidados familiares. O manejo desses transtornos é de <strong>competência clínica resolutiva prioritária da equipe de Atenção Primária</strong>, não devendo ser encaminhado burocraticamente a serviços especializados de saúde mental."
+        ],
+        [
+          "3",
+          "3.2 Transtornos de Ansiedade na APS: Avaliação e Manejo Escalonado"
+        ],
+        [
+          "p",
+          "O <strong>Transtorno de Ansiedade Generalizada (TAG)</strong> caracteriza-se por ansiedade e preocupação excessivas, desproporcionais e de difícil controle na maioria dos dias por pelo menos <strong>6 meses</strong>, associadas a sintomas físicos de tensão muscular, inquietação ('nervos à flor da pele'), fadiga fácil, dificuldade de concentração ('branco mental'), irritabilidade e alteração do sono (dificuldade de conciliar o sono)."
+        ],
+        [
+          "4",
+          "Instrumento de Triagem Rápida na APS: Escala GAD-7 (Generalized Anxiety Disorder 7)"
+        ],
+        [
+          "p",
+          "Questionário autoaplicável de 7 itens que avalia as últimas duas semanas (pontuação de 0 a 21):"
+        ],
+        [
+          "u",
+          [
+            "<strong>0 a 4 pontos:</strong> Ansiedade mínima (orientação e suporte habitual);",
+            "<strong>5 a 9 pontos:</strong> Ansiedade leve (intervenções não farmacológicas, higiene do sono, psicoeducação e suporte comunitário);",
+            "<strong>10 a 14 pontos:</strong> Ansiedade moderada (psicoterapia estruturada, TCC e considerar farmacoterapia de 1ª linha);",
+            "<strong>15 a 21 pontos:</strong> Ansiedade grave (indicação formal de farmacoterapia com ISRS associada à psicoterapia e reavaliações frequentes na APS)."
+          ]
+        ],
+        [
+          "p",
+          "<em>Diagnóstico Diferencial Clínico e Físico da Ansiedade:</em> Antes de firmar o diagnóstico de transtorno primário de ansiedade, é dever do médico de família afastar condições médicas orgânicas e substâncias que mimetizam ou deflagram crises de pânico e taquicardia: <strong>Hipertireoidismo</strong> (solicitar dosagem de TSH/T4 livre), arritmias cardíacas paroxísticas (eletrocardiograma), feocromocitoma, uso excessivo de cafeína, abuso de estimulantes (cocaína, anfetaminas, moderadores de apetite), asma descompensada e abstinência alcoólica leve a moderada."
+        ],
+        [
+          "3",
+          "3.3 Transtornos Depressivos: Depressão Leve, Moderada e Risco de Cronicidade"
+        ],
+        [
+          "p",
+          "A avaliação da depressão na Atenção Primária utiliza a escala <strong>PHQ-9 (Patient Health Questionnaire-9)</strong>, alinhada aos critérios diagnósticos do DSM-5. A presença de pelo menos um dos dois sintomas cardinais nos últimos 14 dias é mandatória:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Humor deprimido</strong> na maior parte do dia, quase todos os dias;",
+            "<strong>Anedonia (perda acentuada de interesse ou prazer)</strong> em todas ou quase todas as atividades habituais."
+          ]
+        ],
+        [
+          "p",
+          "<em>Sintomas Acessórios:</em> Alterações do sono (insônia terminal ou hipersonia), alterações ponderais (perda ou ganho de peso não intencional), fadiga ou perda de energia diária, agitação ou retardo psicomotor observado por terceiros, sentimentos de culpa excessiva ou inutilidade, diminuição da capacidade de pensar/concentrar-se e <strong>pensamentos recorrentes de morte ou ideação suicida</strong>."
+        ],
+        [
+          "t",
+          [
+            "Gravidade Depressiva (PHQ-9)",
+            "Pontuação",
+            "Estratégia Terapêutica Escalonada na APS (Diretrizes NICE / MS)"
+          ],
+          [
+            [
+              "<strong>Depressão Leve</strong>",
+              "5 a 9 pontos",
+              "- <strong>Conduta Não Farmacológica como Primeira Linha:</strong> Psicoeducação ativa, aconselhamento focado em problemas, estímulo à atividade física regular (caminhada de 150 min/semana tem eficácia equivalente a antidepressivos em depressão leve!), participação em grupos terapêuticos e comunitários da UBS (hortas comunitárias, rodas de conversa);<br>\n        - <em>Evitar a prescrição rotineira de antidepressivos</em> como primeira conduta (reavaliar clinicamente em 2 a 4 semanas)."
+            ],
+            [
+              "<strong>Depressão Moderada</strong>",
+              "10 a 14 pontos",
+              "- Psicoterapia estruturada (Terapia Cognitivo-Comportamental ou Terapia Interpessoal);<br>\n        - <strong>Farmacoterapia de 1ª Linha com Inibidores Seletivos da Recaptação de Serotonina (ISRS)</strong>: Sertralina (50 a 100 mg/dia) ou Escitalopram (10 a 20 mg/dia) ou Fluoxetina (20 a 40 mg/dia);<br>\n        - Acompanhamento quinzenal inicial na APS; orientar que a melhora clínica surge após <strong>2 a 4 semanas</strong> de uso contínuo e que efeitos colaterais iniciais (náuseas, cefaleia, aumento transitório de ansiedade) são autolimitados e cessam em 7 a 10 dias."
+            ],
+            [
+              "<strong>Depressão Grave</strong>",
+              "&ge; 15 pontos",
+              "- Indicação formal e imediata de associação: <strong>Farmacoterapia Plena + Psicoterapia Intensiva</strong>;<br>\n        - Rastreio ativo e aprofundado de risco de suicídio;<br>\n        - Suporte multiprofissional com eMulti e acompanhamento compartilhado ou matriciado com CAPS se refratariedade ou ideação suicida estruturada."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "3.4 Farmacologia Prática dos Antidepressivos de Primeira Linha no SUS"
+        ],
+        [
+          "p",
+          "O médico de família deve dominar a farmacocinética, indicações e perfis de segurança dos antidepressivos disponíveis na RENAME (Relação Nacional de Medicamentos Essenciais):"
+        ],
+        [
+          "t",
+          [
+            "Fármaco / Classe",
+            "Dose Inicial e Faixa Terapêutica",
+            "Vantagens e Perfil de Indicação",
+            "Efeitos Adversos e Contraindicações"
+          ],
+          [
+            [
+              "<strong>Sertralina (ISRS)</strong>",
+              "Inicial: 25 a 50 mg/dia pela manhã;<br>Manutenção: 50 a 200 mg/dia.",
+              "<strong>Perfil de segurança padrão-ouro:</strong> Menor taxa de interações medicamentosas via citocromo P450; <strong>antidepressivo de escolha no cardiopata pós-IAM</strong> (estudo SADHART) e seguro na gestação e lactação.",
+              "Desconforto gastrointestinal transitório (náuseas, diarreia leve), cefaleia nos primeiros dias, disfunção sexual a longo prazo (anorgasmia, retardo ejaculatório)."
+            ],
+            [
+              "<strong>Fluoxetina (ISRS)</strong>",
+              "Inicial: 20 mg/dia pela manhã;<br>Manutenção: 20 a 60 mg/dia.",
+              "Ação mais ativadora e anorexígena discreta; <strong>meia-vida muito longa de seu metabólito ativo (norfluoxetina de 7 a 14 dias)</strong>, tornando-a ideal para pacientes com adesão irregular que esquecem comprimidos esporádicos (não gera síndrome de descontinuação abrupta).",
+              "Pode piorar insônia e ansiedade inicial se tomada à noite; potente inibidor do CYP2D6 (eleva níveis de outros fármacos); evitar em idosos com perda de peso severa."
+            ],
+            [
+              "<strong>Escitalopram / Citalopram (ISRS)</strong>",
+              "Inicial: 10 mg/dia;<br>Manutenção: 10 a 20 mg/dia.",
+              "Inibidor mais seletivo da recaptação de serotonina, excelente tolerabilidade, rápido início de resposta e baixa sedação.",
+              "Risco de <strong>prolongamento do intervalo QTc no ECG</strong> em doses acima de 20 mg/dia de escitalopram ou 40 mg/dia de citalopram (especialmente em idosos com cardiopatia estrutural)."
+            ],
+            [
+              "<strong>Amitriptilina / Nortriptilina (Tricíclicos - ADT)</strong>",
+              "Inicial: 25 mg à noite;<br>Manutenção: 75 a 150 mg/dia.",
+              "Alta eficácia sedativa em insônia associada; excelente efeito adjuvante em dor neuropática crônica, enxaqueca e fibromialgia. Baixo custo.",
+              "<strong>Altíssima carga anticolinérgica:</strong> boca seca, constipação, retenção urinária, ganho de peso; hipotensão postural grave; <strong>cardiotoxicidade com alargamento de QRS e arritmias ventriculares fatais em superdose</strong> (altíssimo risco em pacientes com ideação suicida!); contraindicado em idosos frágeis (Beers)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "3.5 Insônia na Atenção Primária: Higiene do Sono e TCC-I"
+        ],
+        [
+          "p",
+          "A insônia é uma das queixas mais comuns na APS e o principal gatilho para a prescrição iatrogênica de benzodiazepínicos. Define-se insônia crônica pela dificuldade em iniciar ou manter o sono, ou despertar precoce matinal, pelo menos <strong>3 noites por semana por &ge; 3 meses</strong>, gerando prejuízo diurno significativo."
+        ],
+        [
+          "4",
+          "Regras de Ouro da Higiene do Sono e Terapia Cognitivo-Comportamental para Insônia (TCC-I)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Manter Horários Regulares de Despertar:</strong> Levantar-se impreterivelmente no mesmo horário todos os dias (inclusive aos finais de semana e feriados), fortalecendo o ciclo circadiano biológico;",
+            "<strong>Regra do Quarto e da Cama:</strong> A cama deve ser utilizada <strong>exclusivamente para dormir e para atividade sexual</strong>. Não ler, não assistir televisão, não trabalhar no computador e não alimentar-se na cama;",
+            "<strong>A Regra dos 20 Minutos (Controle de Estímulos):</strong> Se não conseguir conciliar o sono após aproximadamente 20 minutos deitado, <strong>levantar-se da cama</strong>, sair do quarto, ir para um ambiente com pouca luz e realizar uma atividade relaxante monótona (ler um livro impresso). Retornar para a cama apenas quando sentir sonolência real;",
+            "<strong>Evitar Telas Emissoras de Luz Azul:</strong> Desligar smartphones, tablets, computadores e televisores no mínimo 60 a 90 minutos antes de deitar (a luz azul suprime a secreção fisiológica de melatonina pela glândula pineal);",
+            "<strong>Restrição de Substâncias Estimulantes:</strong> Não consumir cafeína (café, chás escuros, refrigerantes à base de cola, energéticos, chocolates) após as 14h ou 16h;",
+            "<strong>Mito do Álcool como Sedativo:</strong> Esclarecer que o álcool facilita a indução do sono, porém fragmenta a arquitetura do sono REM e profundo, gerando múltiplos microdespertares e sono não reparador;",
+            "<strong>Exercício Físico Diurno:</strong> Praticar atividades físicas preferencialmente pela manhã ou tarde; evitar exercícios aeróbicos extenuantes nas 2 a 3 horas antes de deitar (a elevação da temperatura corporal e tônus simpático impede a indução do sono)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "benzodiazepinicos-e-protocolo-de-desprescricao-segura",
+      0,
+      [
+        [
+          "2",
+          "4. Uso Abusivo de Benzodiazepínicos na APS e Protocolo Estruturado de Desprescrição Segura"
+        ],
+        [
+          "3",
+          "4.1 A Epidemia Silenciosa dos Benzodiazepínicos na Atenção Básica"
+        ],
+        [
+          "p",
+          "Os <strong>benzodiazepínicos (BZD)</strong> — como clonazepam, diazepam, alprazolam, lorazepam e bromazepam — figuram entre os medicamentos mais prescritos e consumidos cronicamente no Brasil, afetando desproporcionalmente mulheres adultas e pessoas idosas atendidas na rede básica de saúde. Desenvolvidos na década de 1960 como ansiolíticos e hipnóticos com menor risco de letalidade aguda em superdose comparados aos barbitúricos, os BZDs possuem <strong>indicação clínica restrita e legítima apenas para uso em curto prazo (máximo de 2 a 4 semanas)</strong> no controle de crises de ansiedade agudas incapacitantes ou insônia transitória reativa."
+        ],
+        [
+          "p",
+          "Contudo, a rotina dos serviços de saúde perpetuou o chamado 'renovamento mecânico de receitas azuis' sem reavaliação médica continuada, transformando tratamentos agudos em dependências químicas de décadas. Os mecanismos farmacológicos subjacentes explicam essa armadilha:"
+        ],
+        [
+          "u",
+          [
+            "<em>Mecanismo de Ação:</em> Os BZDs são moduladores alostéricos positivos dos receptores GABA-A centrais. Ao se ligarem a sítios específicos entre as subunidades alfa e gama, aumentam a frequência de abertura do canal de cloro induzida pelo GABA, provocando hiperpolarização neuronal generalizada e inibição do SNC.",
+            "<em>Tolerância Farmacológica:</em> O uso contínuo por mais de 2 a 4 semanas promove a <em>dessensibilização e internalização (down-regulation) dos receptores GABA-A</em>, exigindo doses progressivamente maiores para alcançar o mesmo efeito ansiolítico ou hipnótico.",
+            "<em>Dependência Física e Psíquica Profunda:</em> O indivíduo torna-se incapaz de dormir ou relaxar sem o comprimido, desenvolvendo um pavor irracional de ficar sem a receita ('efeito muleta')."
+          ]
+        ],
+        [
+          "4",
+          "Consequências Clínicas Graves do Uso Crônico de Benzodiazepínicos"
+        ],
+        [
+          "u",
+          [
+            "<strong>Declínio Cognitivo e Risco de Demência:</strong> Comprometimento da memória anterógrada, lentificação psicomotora e aumento significativo do risco de desenvolvimento de síndromes demenciais a longo prazo;",
+            "<strong>Instabilidade Postural, Quedas e Fraturas:</strong> Em idosos, o relaxamento muscular central e a sedação residual diurna elevam em até 50% a 70% o risco de quedas domiciliares e fraturas catastróficas de fêmur proximal;",
+            "<strong>Acidentes Automobilísticos e de Trabalho:</strong> Prejuízo grave no tempo de reação reflexa e na vigilância motora;",
+            "<strong>Efeito Paradoxal:</strong> Especialmente em idosos e crianças, os BZDs podem desencadear agitação psicomotora violenta, desinibição comportamental, agressividade e confusão mental aguda (delirium);",
+            "<strong>Supressão Respiratória em Pneumopatas:</strong> Agravamento de apneia obstrutiva do sono e retenção de CO2 em portadores de DPOC crônica."
+          ]
+        ],
+        [
+          "3",
+          "4.2 Síndrome de Abstinência Benzodiazepínica Aguda: Os Perigos da Interrupção Abrupta"
+        ],
+        [
+          "p",
+          "Um dos erros clínicos mais perigosos na Atenção Primária é a suspensão súbita e desavisada do benzodiazepínico em usuários crônicos. A retirada abrupta desencadeia a <strong>Síndrome de Abstinência Benzodiazepínica</strong>, potencialmente fatal:"
+        ],
+        [
+          "t",
+          [
+            "Gravidade da Abstinência",
+            "Manifestações Clínicas e Sinais de Alarme",
+            "Fisiopatologia Central"
+          ],
+          [
+            [
+              "<strong>Sintomas Leves a Moderados</strong>",
+              "Ansiedade rebote intensa ('pior que a inicial'), insônia de rebote grave, tremores finos de extremidades, sudorese, taquicardia, palpitações, cefaleia, hiperacusia e hipersensibilidade à luz e toques.",
+              "Desinibição glutamatérica inicial e perda do tônus gabaérgico exógeno."
+            ],
+            [
+              "<strong>Sintomas Graves e Potencialmente Fatais</strong>",
+              "<strong>Crises convulsivas generalizadas tônico-clônicas</strong> (que podem evoluir para Estado de Mal Epiléptico refratário), <strong>Delirium tremens benzodiazepínico</strong>, alucinações auditivas e táteis, despersonalização, delírios paranoides e instabilidade autonômica com pico hipertensivo e hipertermia.",
+              "Tempestade autonômica e hiperexcitabilidade cortical maciça por supressão abrupta do freio inibitório central."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "4.3 Protocolo Estruturado de Desprescrição Segura (Protocolo de Heather Ashton)"
+        ],
+        [
+          "p",
+          "A desprescrição na Atenção Primária deve ser um processo <strong>planejado, gradual, consentido e pactuado em decisão compartilhada com o paciente</strong>, jamais punitivo ou impositivo:"
+        ],
+        [
+          "4",
+          "Etapas Práticas do Protocolo de Desprescrição Gradual na APS"
+        ],
+        [
+          "o",
+          [
+            "<strong>1. Construção de Aliança Terapêutica e Psicoeducação:</strong>\n      <ul>\n        <li>Explicar com empatia e sem julgamento os riscos do medicamento e a diferença entre dependência farmacológica e vício moral;",
+            "Garantir que a medicação <em>não será retirada abruptamente</em> e que o paciente terá controle sobre o ritmo do desmame;",
+            "Tratar comorbidades psiquiátricas subjacentes: se houver transtorno ansioso ou depressivo ativo, <strong>introduzir previamente um antidepressivo seguro (ex.: Sertralina ou Escitalopram)</strong> e aguardar 4 a 6 semanas de remissão dos sintomas antes de iniciar a redução do benzodiazepínico.",
+            "<strong>2. Conversão para Benzodiazepínico de Meia-Vida Longa (Substituição por Diazepam):</strong>\n      <ul>\n        <li>Pacientes em uso de BZDs de ação curta ou intermediária e alta potência (como <strong>Alprazolam, Lorazepam ou Clonazepam</strong>) apresentam flutuações plasmáticas bruscas que geram picos de ansiedade entre as doses diárias, dificultando o desmame;",
+            "Converte-se a dose total diária para o equivalente em <strong>Diazepam</strong> (que possui meia-vida de eliminação longa de 24 a 48h com metabólitos ativos de até 100h, proporcionando níveis plasmáticos extremamente estáveis sem sintomas de retirada entre as tomadas).",
+            "<em>Tabela de Equivalência de Doses:</em>\n          <br><strong>Diazepam 10 mg &asymp; Clonazepam 0,5 mg &asymp; Alprazolam 0,5 mg &asymp; Lorazepam 1 mg &asymp; Bromazepam 6 mg</strong>.",
+            "<strong>3. Esquema de Redução Gradual de Doses:</strong>\n      <ul>\n        <li>Reduzir cerca de <strong>10% a 25% da dose total a cada 2 a 4 semanas</strong>;",
+            "À medida que a dose diminui, a velocidade de desmame deve ser ainda mais lenta (as últimas etapas são as mais difíceis fisiologicamente);",
+            "A duração total do desmame habitualmente varia de <strong>8 semanas a 6 meses</strong> (ou até 1 ano em dependências de mais de 10-20 anos de duração);",
+            "Utilizar apresentações em gotas (solução oral) para permitir reduções milimétricas fracionadas quando os comprimidos não permitirem partição segura.",
+            "<strong>4. Suporte Psicológico e Manejo de Sintomas Intercorrentes:</strong>\n      <ul>\n        <li>Consultas frequentes de retorno (quinzenais ou mensais) para reforço positivo e validação do progresso;",
+            "Se surgirem sintomas moderados de abstinência, <em>manter a dose atual por mais 2 semanas até estabilização</em>, sem retroceder ou aumentar doses;",
+            "Oferecer suporte com técnicas de relaxamento muscular progressivo e mindfulness pela equipe eMulti."
+          ]
+        ],
+        [
+          "3",
+          "4.4 As Drogas 'Z' (Zolpidem, Zopiclona, Eszopiclona): O Mito da Segurança Absoluta"
+        ],
+        [
+          "p",
+          "Frequentemente promovidos pela indústria farmacêutica e prescritos por médicos como alternativas 'inócuas e não viciantes' aos benzodiazepínicos, os hipnóticos do grupo 'Z' (com destaque absoluto para o <strong>Zolpidem</strong>) tornaram-se uma nova epidemia de dependência na atenção primária. O zolpidem atua seletivamente na subunidade alfa-1 do receptor GABA-A:"
+        ],
+        [
+          "u",
+          [
+            "<em>Riscos Idênticos aos Benzodiazepínicos:</em> Provoca tolerância em poucas semanas de uso contínuo, dependência física profunda, abstinência com insônia de rebote excruciante e risco de convulsões se interrompido subitamente;",
+            "<em>Comportamentos Complexos do Sono e Sonambulismo:</em> Forte propensão a induzir episódios de amnésia anterógrada associada a <strong>comportamentos motores complexos inconscientes</strong> (preparar e comer refeições inteiras durante a noite sem se lembrar, compras compulsivas pela internet, dirigir automóveis sob efeito do remédio e desinibição sexual grave com risco de acidentes e violência);",
+            "<em>Desprescrição do Zolpidem:</em> Segue o mesmo rigor escalonado de desmame lento (redução semanal ou quinzenal de 2,5 mg a 5 mg) acompanhado de psicoterapia TCC-I."
+          ]
+        ]
+      ]
+    ],
+    [
+      "rastreamento-e-estratificacao-de-risco-de-suicidio-na-aps",
+      0,
+      [
+        [
+          "2",
+          "5. Rastreamento e Estratificação de Risco de Suicídio na APS: Acolhimento Multiprofissional e Manejo de Crise"
+        ],
+        [
+          "3",
+          "5.1 O Tabu do Suicídio na Prática Médica e o Mito de que 'Perguntar Induz'"
+        ],
+        [
+          "p",
+          "O suicídio configura um problema grave de saúde pública mundial e nacional, respondendo por mais de 14.000 mortes anuais no Brasil — a imensa maioria em jovens de 15 a 29 anos e em idosos com mais de 70 anos. Estudos epidemiológicos clássicos revelam um dado estarrecedor: <strong>cerca de 50% a 70% das pessoas que cometeram suicídio haviam consultado um médico da Atenção Primária no mês anterior ao óbito</strong>, frequentemente com queixas somáticas inespecíficas (fadiga, insônia, dores difusas), sem que o risco de autoextermínio tivesse sido adequadamente investigado."
+        ],
+        [
+          "4",
+          "Desconstrução dos Mitos Mais Prejudiciais sobre o Suicídio"
+        ],
+        [
+          "u",
+          [
+            "<strong>Mito 1: 'Perguntar sobre pensamentos de suicídio pode induzir ou plantar a ideia na cabeça do paciente':</strong> FALSO e IATROGÊNICO. Evidências científicas sólidas comprovam que perguntar de maneira direta, compassiva e técnica <strong>NÃO induz o ato</strong>; ao contrário, proporciona alívio emocional imenso ao indivíduo, que finalmente encontra um espaço seguro e livre de julgamentos para expressar uma dor psíquica insuportável (<em>psicodinia</em>) mantida em segredo.",
+            "<strong>Mito 2: 'Quem fala que vai se matar só quer chamar a atenção e não tem coragem de fazer':</strong> FALSO. A imensa maioria das pessoas que se suicidam deu sinais explícitos ou implícitos de suas intenções para amigos, familiares ou profissionais de saúde nos dias ou semanas anteriores. Qualquer verbalização de morte deve ser levada com gravidade máxima.",
+            "<strong>Mito 3: 'O suicídio é um ato puramente impulsivo e imprevisível':</strong> Embora haja momentos de impulsividade terminal (frequentemente deflagrados por álcool ou término afetivo), o processo suicida é quase sempre precedido por um período de ambivalência e sofrimento prolongado, no qual a pessoa não deseja morrer, mas anseia desesperadamente por <em>cessar uma dor psíquica insuportável</em>.",
+            "<strong>Mito 4: 'A melhora súbita do humor significa que o perigo passou':</strong> PERIGO IMINENTE. Quando um paciente gravemente deprimido apresenta uma melhora repentina, inexplicável e serena do humor, isso frequentemente indica que ele finalmente tomou a decisão irrevogável de cometer o suicídio e traçou seu plano, sentindo um alívio temporário da angústia. O risco de execução é máximo nesse momento!"
+          ]
+        ],
+        [
+          "3",
+          "5.2 Fatores de Risco e Fatores de Proteção"
+        ],
+        [
+          "p",
+          "A avaliação clínica baseia-se no equilíbrio dinâmico entre fatores de vulnerabilidade e âncoras protetivas de vida:"
+        ],
+        [
+          "t",
+          [
+            "Fatores de Risco Clínicos e Demográficos",
+            "Fatores de Risco Circunstanciais Agudos",
+            "Fatores de Proteção Primordiais"
+          ],
+          [
+            [
+              "- <strong>Tentativa prévia de suicídio:</strong> É o <em>preditor isolado mais poderoso e fidedigno de suicídio consumado</em> (risco 30 a 40 vezes maior);<br>\n        - <strong>Presença de Transtorno Mental Diagnosticado:</strong> Presente em &gt; 90% dos casos consumados (Depressão Maior unipolar, Transtorno Bipolar na fase mista ou depressiva, Dependência de Álcool e outras substâncias, Esquizofrenia e Transtorno de Personalidade Borderline);<br>\n        - <strong>Sexo Masculino:</strong> Homens morrem 3 a 4 vezes mais por suicídio do que mulheres (utilizam métodos de maior letalidade: enforcamento e armas de fogo); mulheres realizam cerca de 3 vezes mais tentativas não fatais (intoxicação exógena medicamentosa);<br>\n        - Idosos (&ge; 70-75 anos) e adultos jovens (15-29 anos);<br>\n        - Populações vulneráveis: indígenas, pessoas LGBTQIA+ marginalizadas.",
+              "- Perda recente aguda e traumática (luto conjugal, separação, divórcio, falência financeira, desemprego súbito);<br>\n        - Desesperança profunda (crença inabalável de que o futuro não trará qualquer alívio);<br>\n        - Doença física crônica incapacitante, dor intratável ou diagnóstico recente de neoplasia maligna terminal;<br>\n        - <strong>Acesso facilitado a métodos letais:</strong> armas de fogo no domicílio, agrotóxicos em áreas rurais, medicamentos sedativos em grandes quantidades estocados em casa;<br>\n        - Impulsividade aumentada sob efeito agudo de álcool ou cocaína.",
+              "- Rede de apoio social e familiar acolhedora e presente (vínculos afetivos sólidos);<br>\n        - Senso de responsabilidade em relação a filhos pequenos dependentes ou familiares vulneráveis;<br>\n        - Crenças religiosas ou espirituais que valorizam a vida e condenam o suicídio;<br>\n        - Capacidade de buscar ajuda profissional e boa aliança terapêutica com a equipe da ESF;<br>\n        - Habilidades consolidadas de resolução de problemas e flexibilidade cognitiva."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "5.3 Estratificação de Risco e Algoritmo de Conduta Clínica na APS"
+        ],
+        [
+          "p",
+          "O Ministério da Saúde e a Organização Mundial da Saúde estruturam a estratificação do risco de suicídio em três níveis operacionais determinantes:"
+        ],
+        [
+          "t",
+          [
+            "Nível de Risco",
+            "Critérios Clínicos e Fenomenológicos",
+            "Conduta Imediata e Fluxo na Rede de Saúde"
+          ],
+          [
+            [
+              "<strong>Risco Baixo</strong>",
+              "- Pensamentos passageiros de morte ('gostaria de sumir', 'queria dormir e não acordar');<br>\n        - <strong>Ausência de planejamento</strong> (não sabe como faria, sem método);<br>\n        - Ausência de intenção ativa de autoextermínio;<br>\n        - Presença de múltiplos fatores de proteção sólidos e bom suporte familiar.",
+              "- Atendimento na própria Atenção Primária pela equipe da ESF e eMulti;<br>\n        - Escuta empática e validação do sofrimento;<br>\n        - Tratar a condição psiquiátrica de base (depressão, ansiedade);<br>\n        - Envolver a família no cuidado com consentimento do paciente;<br>\n        - Agendar retorno médico breve (em 7 a 14 dias) e orientar busca imediata da UBS ou UPA se piora dos pensamentos;<br>\n        - Disponibilizar contatos de apoio emergencial (CVV - Centro de Valorização da Vida: <strong>Ligue 188</strong>)."
+            ],
+            [
+              "<strong>Risco Médio</strong>",
+              "- Ideação suicida frequente e estruturada ('quero me matar');<br>\n        - <strong>Presença de plano mental vago</strong> (já pensou em pular ou tomar remédios), mas sem método de letalidade imediata disponível e sem data definida;<br>\n        - Apresenta ambivalência marcante e aceita ajuda profissional;<br>\n        - Histórico de tentativa prévia distante ou desesperança moderada.",
+              "- <strong>Manejo Compartilhado Prioritário entre APS e CAPS do território</strong> (agendamento em até 24 a 48 horas ou matriciamento imediato);<br>\n        - <strong>Retirada Imediata do Acesso a Métodos Letais:</strong> pactuar com a família o recolhimento e trancamento de armas de fogo, venenos, objetos cortantes e medicamentos (a família deve assumir a administração rigorosa de todos os remédios comprimido a comprimido);<br>\n        - Elaboração conjunta do <strong>Plano de Segurança / Plano de Crise</strong> escrito (lista de sinais de alerta pessoais, estratégias de distração, contatos de amigos de confiança e telefones de emergência);<br>\n        - <em>Evitar o uso de 'Contratos de Não Suicídio' formais</em> (não possuem eficácia comprovada na redução de mortes e geram falsa segurança na equipe)."
+            ],
+            [
+              "<strong>Risco Alto / Iminente</strong>",
+              "- <strong>Plano suicida detalhado, concreto e letal</strong> (já escolheu o local, comprou a corda, tem a arma ou juntou centenas de comprimidos);<br>\n        - Intenção inequívoca de morrer; atos preparatórios em curso (despedidas formais, doação de pertences de estimação, redação de bilhetes de adeus, regularização de testamento);<br>\n        - Agitação psicomotora intensa, desespero incontrolável ou sintomas psicóticos (vozes de comando imperativas ordenando a morte);<br>\n        - Ausência total de rede de apoio e recusa de ajuda.",
+              "- <strong>EMERGÊNCIA MÉDICA ABSOLUTA: NÃO DEIXAR O PACIENTE SOZINHO EM NENHUM MOMENTO</strong> (nem para ir ao banheiro na unidade!);<br>\n        - Permanecer em observação clínica contínua na sala de emergência da UBS acompanhado por membro da equipe;<br>\n        - <strong>Acionar o SAMU 192 para remoção urgente para Unidade de Pronto Atendimento (UPA) ou Emergência Hospitalar / Leito de Saúde Mental</strong>;<br>\n        - Avaliação de indicação de <strong>Internação Psiquiátrica Involuntária de emergência</strong> para resguardo da vida física, com comunicação ao Ministério Público em até 72 horas;<br>\n        - Notificação compulsória imediata de tentativa de suicídio no SINAN (em até 24 horas)."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "intervencoes-breves-e-entrevista-motivacional",
+      0,
+      [
+        [
+          "2",
+          "6. Intervenções Breves e Técnicas de Entrevista Motivacional na Prática da Atenção Primária"
+        ],
+        [
+          "3",
+          "6.1 A Entrevista Motivacional: Filosofia e Princípios de Miller e Rollnick"
+        ],
+        [
+          "p",
+          "Tradicionalmente, a abordagem médica de comportamentos de risco e dependência química era fundamentada na coerção, na confrontação agressiva e na imposição de regras morais ('Você precisa parar de beber imediatamente, senão vai morrer de cirrose'). Estudos psicológicos e neurocientíficos comprovaram que essa postura inquisitória gera <strong>reatância psicológica (resistência defensiva aumentada)</strong>, afastando o paciente dos serviços de saúde."
+        ],
+        [
+          "p",
+          "Desenvolvida por William R. Miller e Stephen Rollnick, a <strong>Entrevista Motivacional (EM)</strong> é um estilo de aconselhamento clínico diretivo e centrado na pessoa, projetado para <strong>explorar e resolver a ambivalência interna</strong>, estimulando a motivação intrínseca para a mudança comportamental positiva."
+        ],
+        [
+          "4",
+          "Os Quatro Princípios Fundamentais da Entrevista Motivacional"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Expressar Empatia:</strong> Escuta reflexiva ativa e respeitosa, aceitando a perspectiva do paciente sem julgar, rotular ou criticar. A ambivalência é compreendida como uma fase natural e previsível de qualquer processo de mudança humana.",
+            "<strong>2. Desenvolver a Discrepância:</strong> Auxiliar o paciente a enxergar com clareza o abismo existente entre o seu comportamento atual de risco e seus valores fundamentais, sonhos e objetivos de vida a longo prazo (ex.: 'Como o uso diário de bebida alcoólica tem impactado o seu sonho de ver seus filhos formados na faculdade?'). Quando o paciente verbaliza a discrepância, a motivação para a mudança parte dele mesmo, e não de um sermão externo.",
+            "<strong>3. Lidar com a Resistência (Acompanhar a Resistência):</strong> Não debater nem confrontar diretamente quando o paciente expressa relutância ou nega problemas. A resistência não é vista como 'falta de caráter', mas como um sinal clínico de que o médico está correndo rápido demais ou impondo soluções antes da hora. Muda-se o foco e utiliza-se a reflexão simples.",
+            "<strong>4. Apoiar a Autoeficácia:</strong> Fortalecer a crença do paciente em sua própria capacidade de realizar mudanças e superar recaídas. Resgatar sucessos passados e reconhecer pequenos avanços cotidianos."
+          ]
+        ],
+        [
+          "3",
+          "6.2 As Habilidades Comunicacionais Cardinais da EM: O Mnemônico OARS"
+        ],
+        [
+          "p",
+          "Para aplicar a Entrevista Motivacional nas consultas cotidianas de 15 a 20 minutos na Atenção Primária, o profissional utiliza o conjunto de microhabilidades representado pelo acrônimo <strong>OARS</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Habilidade (OARS)",
+            "Definição Técnica",
+            "Exemplos Práticos na Consulta da APS"
+          ],
+          [
+            [
+              "<strong>O - Open-ended questions (Perguntas Abertas)</strong>",
+              "Perguntas que não podem ser respondidas com um simples 'sim' ou 'não', incentivando o paciente a elaborar sua narrativa e refletir sobre seus sentimentos.",
+              "'O que você acha do seu hábito de fumar ultimamente?'<br>'Quais são as coisas boas que a bebida lhe traz e quais são as coisas que começaram a lhe incomodar?'<br>'Como você gostaria que sua saúde estivesse daqui a cinco anos?'"
+            ],
+            [
+              "<strong>A - Affirmations (Afirmações e Reconhecimento)</strong>",
+              "Reconhecimento genuíno das forças, qualidades, esforços e sucessos prévios do paciente, fortalecendo sua autoestima e vínculo terapêutico.",
+              "'Percebo que você teve muita coragem em vir hoje à unidade conversar abertamente sobre esse assunto.'<br>'Você conseguiu ficar três semanas sem fumar no ano passado, o que prova que você tem uma determinação impressionante dentro de si.'"
+            ],
+            [
+              "<strong>R - Reflective listening (Escuta Reflexiva)</strong>",
+              "O médico parafraseia ou reflete o que o paciente acabou de dizer, demonstrando que compreendeu não apenas as palavras, mas o sentimento subjacente. É a ferramenta mais poderosa da EM.",
+              "<em>Paciente:</em> 'Eu sei que não devia beber todo dia, mas chego em casa tão estressado do trabalho que parece que só a cerveja me desliga.'<br><em>Médico:</em> 'Parece que o trabalho tem sido muito exaustivo e a bebida tem funcionado como uma válvula de escape para aliviar a tensão.'"
+            ],
+            [
+              "<strong>S - Summaries (Resumos Estruturados)</strong>",
+              "Pequenas sínteses periódicas do que foi discutido, amarrando pontos importantes, destacando a ambivalência e preparando a transição para o plano de ação.",
+              "'Deixe-me ver se compreendi tudo até aqui: de um lado, fumar lhe ajuda a relaxar nas pausas do trabalho; por outro lado, você está preocupado com a tosse matinal, com o dinheiro gasto e quer muito ser um exemplo saudável para sua filha pequena. É isso mesmo? Para onde você gostaria de ir a partir daqui?'"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "6.3 O Modelo Transteórico de Estágios de Mudança de Prochaska e DiClemente"
+        ],
+        [
+          "p",
+          "O indivíduo não decide mudar de estilo de vida em um clique instantâneo; ele percorre etapas dinâmicas e circulares:"
+        ],
+        [
+          "o",
+          [
+            "<strong>1. Pré-contemplação:</strong> O indivíduo <strong>não reconhece que tem um problema</strong> e não pretende mudar o comportamento nos próximos 6 meses. Rejeita orientações ('Eu bebo porque gosto, meu avô bebeu até os 90 anos e não morreu'). <em>Conduta médica:</em> Não insistir em planos de ação; apenas plantar a dúvida de forma empática e manter as portas abertas.",
+            "<strong>2. Contemplação:</strong> O indivíduo <strong>reconhece o problema, mas está profundamente ambivalente</strong> ('Eu sei que preciso parar de fumar, mas não consigo imaginar minha vida sem o cigarro'). Pensa em mudar nos próximos 6 meses, mas hesita. <em>Conduta médica:</em> Balança decisional (pesar prós e contras) e explorar a discrepância.",
+            "<strong>3. Preparação:</strong> O indivíduo <strong>decide que quer mudar no futuro próximo (próximos 30 dias)</strong> e já dá pequenos passos práticos (compra chicletes, pesquisa sobre tratamentos, reduz alguns cigarros). <em>Conduta médica:</em> Fixar a 'Data de Parada' (o 'Dia D'), escolher métodos e antecipar gatilhos.",
+            "<strong>4. Ação:</strong> O indivíduo <strong>interrompe o comportamento de risco há menos de 6 meses</strong>. É a fase de maior vulnerabilidade biológica a sintomas de abstinência e fissura aguda. <em>Conduta médica:</em> Suporte intensivo, farmacoterapia e reforço positivo.",
+            "<strong>5. Manutenção:</strong> O indivíduo <strong>sustenta a mudança por mais de 6 meses</strong>. Consolidação de novos hábitos saudáveis e prevenção ativa de recaídas.",
+            "<em>Recaída:</em> Não é um fracasso moral, mas parte integrante e esperada do processo de aprendizagem comportamental. O paciente retorna a estágios anteriores (geralmente contemplação ou preparação), devendo ser acolhido com compaixão imediata pela equipe."
+          ]
+        ],
+        [
+          "3",
+          "6.4 Intervenção Breve Estruturada: O Protocolo FRAMES e as Técnicas das Réguas de Prontidão"
+        ],
+        [
+          "p",
+          "Para intervenções rápidas (5 a 15 minutos) em tabagismo e álcool na atenção primária, utiliza-se internacionalmente o modelo <strong>FRAMES</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>F - Feedback:</strong> Devolução clara e individualizada dos riscos e resultados de exames (ex.: 'O seu teste AUDIT revelou uma pontuação de 18 pontos, indicando que o seu consumo atual já está sobrecarregando o seu fígado e elevando sua pressão');",
+            "<strong>R - Responsibility:</strong> Enfatizar que a responsabilidade e o poder de mudar pertencem exclusivamente ao paciente (ex.: 'A decisão de reduzir ou parar é totalmente sua; ninguém pode fazer isso por você, mas nós estamos aqui para lhe apoiar no que você escolher');",
+            "<strong>A - Advice:</strong> Conselho médico claro, objetivo e sem julgamentos (ex.: 'Como seu médico, eu recomendo fortemente que você reduza o consumo para proteger seu coração');",
+            "<strong>M - Menu of options:</strong> Oferecer um cardápio variado de alternativas viáveis (redução gradual, parada abrupta, participação em grupos da UBS, tratamento medicamentoso, apoio psicológico);",
+            "<strong>E - Empathy:</strong> Postura calorosa, acolhedora e compreensiva;",
+            "<strong>S - Self-efficacy:</strong> Estímulo otimista à autoconfiança do sujeito em sua capacidade de triunfar."
+          ]
+        ],
+        [
+          "4",
+          "A Ferramenta Prática das Réguas de Importância e Confiança"
+        ],
+        [
+          "p",
+          "Na consulta rápida da APS, as réguas analógicas de 0 a 10 são instrumentos formidáveis para extrair a <em>fala de mudança</em> do próprio paciente:"
+        ],
+        [
+          "u",
+          [
+            "<em>Régua de Importância:</em> 'Em uma escala de 0 a 10, onde 0 é nada importante e 10 é extremamente importante, quão importante é para você parar de fumar hoje?'. Se o paciente responde <strong>5</strong>, o médico pergunta estrategicamente: <em>'Por que você escolheu 5 e não 2 ou 3?'</em>. Essa simples pergunta obriga o paciente a justificar os motivos pelos quais mudar é importante, evocando argumentos internos pró-mudança!",
+            "<em>Régua de Confiança:</em> 'Se você decidisse parar hoje, quão confiante você se sente de que conseguiria, de 0 a 10?'. Se o paciente responde <strong>4</strong>, pergunta-se: <em>'O que seria necessário para que essa nota subisse para 6 ou 7?'</em>, auxiliando-o a identificar barreiras práticas e desenhar soluções viáveis."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-e-questoes-comentadas-saude-mental",
+      0,
+      [
+        [
+          "2",
+          "7. Casos Clínicos Estruturados e Questões Comentadas de Concursos Médicos"
+        ],
+        [
+          "3",
+          "7.1 Casos Clínicos da Prática de Saúde Mental na Atenção Primária"
+        ],
+        [
+          "4",
+          "Caso Clínico 1: Dependência Crônica de Benzodiazepínico e Desprescrição Compartilhada"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Dona Neusa, 64 anos, viúva, costureira, comparece à UBS do seu bairro solicitando uma nova receita azul de clonazepam 2 mg comprimidos. Relata que faz uso de um comprimido todas as noites para dormir há mais de 12 anos, desde o falecimento do marido. Relata que recentemente tem sentido lapsos frequentes de memória para fatos recentes e sofreu uma queda no banheiro há duas semanas durante a madrugada, quebrando uma costela."
+        ],
+        [
+          "p",
+          "<strong>Diálogo Clínico Centrado na Pessoa:</strong> O médico da ESF não se limita a assinar a receita mecanicamente. Convida a paciente a sentar, valida seu sofrimento histórico e pergunta gentilmente: 'Dona Neusa, como tem sido para a senhora tomar o clonazepam por tantos anos?'. A paciente desabafa: 'Doutor, eu tenho pavor de ficar sem ele. Quando viajo e esqueço o vidro, parece que vou enlouquecer, fico tremendo, o coração dispara e não prego o olho a noite inteira. Sei que faz mal, mas sou viciada e não consigo largar'."
+        ],
+        [
+          "p",
+          "<strong>Conduta e Pactuação do Plano de Desprescrição:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<em>Psicoeducação e Desculpabilização:</em> O médico esclarece que a paciente não tem 'culpa' pela dependência; o clonazepam provocou tolerância física nos receptores cerebrais e o que ela sente quando fica sem a medicação é a abstinência física real. Tranquiliza a paciente garantindo que o remédio não será retirado de um dia para o outro.",
+            "<em>Conversão para Equivalência com Diazepam:</em> Clonazepam 2 mg/dia equivale a aproximadamente 40 mg de Diazepam/dia. Devido à dose elevada e ao tempo prolongado de uso (12 anos), o médico pactua um plano de desmame lento ao longo de 4 a 6 meses.",
+            "<em>Estratégia de Redução:</em> Substitui-se o clonazepam comprimido por clonazepam solução oral (gotas) ou converte-se para diazepam. Reduz-se aproximadamente 10% a 15% da dose a cada 3 a 4 semanas.",
+            "<em>Manejo Não Farmacológico da Insônia:</em> Orientações estruturadas de Higiene do Sono (levantar sempre no mesmo horário, sem TV na cama, sem telas à noite); encaminhamento para o grupo de práticas corporais e Lian Gong conduzido pela fisioterapeuta do eMulti na quadra da UBS."
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 2: Acolhimento e Manejo de Ideação Suicida com Risco Alto na UBS"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Lucas, 22 anos, estudante universitário desempregado, procura a Unidade Básica de Saúde sem agendamento prévio (demanda espontânea), solicitando atendimento médico porque 'está com uma dor de cabeça que não passa e uma tristeza infinita'."
+        ],
+        [
+          "p",
+          "<strong>Abordagem Clínica e Investigação de Risco:</strong> O médico da ESF o acolhe com gentileza e explora a experiência do adoecimento. Ao perceber um discurso permeado por desesperança profunda e choro convulsivo, o médico pergunta diretamente: 'Lucas, diante de tanto sofrimento e cansaço, você já teve pensamentos de que a vida não vale mais a pena ou pensamentos de sumir, dormir e não acordar mais?'."
+        ],
+        [
+          "p",
+          "O paciente responde afirmativamente: 'Doutor, eu não aguento mais decepcionar minha mãe. Eu comprei uma corda no depósito semana passada e deixei amarrada no caibro da edícula no fundo da casa. Hoje cedo eu escrevi uma carta de desculpas para a minha mãe e vim aqui só porque estava com muita dor de cabeça antes de fazer isso'."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Imediata de Emergência:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<em>Estratificação de Risco:</em> <strong>RISCO ALTO / IMINENTE DE SUICÍDIO</strong> (Presença de plano concreto detalhado e letal preparado, compra de método letal, carta de despedida redigida e desesperança absoluta).",
+            "<em>Segurança Física Imediata:</em> <strong>NÃO DEIXAR O PACIENTE SOZINHO EM NENHUM MOMENTO</strong>. O médico permanece ao lado do paciente na sala de observação com porta aberta, comunicando discretamente à enfermeira para acionar a rede.",
+            "<em>Acionamento da Rede de Urgência:</em> Acionamento imediato do <strong>SAMU 192</strong> para transferência assistida e monitorada para a <strong>Unidade de Pronto Atendimento (UPA 24h) com leito de saúde mental</strong> para avaliação psiquiátrica de urgência e estabilização de crise aguda.",
+            "<em>Comunicação Familiar e Acolhimento:</em> Com o consentimento do jovem, a equipe entra em contato telefônico com a mãe para que ela compareça à unidade imediatamente, acolhendo a família com sensibilidade e sem julgamentos. Preenchimento da notificação compulsória no SINAN em até 24 horas."
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 3: Primeiro Episódio Psicótico em Jovem e Articulação RAPS / Matriciamento"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Matheus, 19 anos, solteiro, residente em área de abrangência da ESF, é trazido à consulta pelos pais. Os pais relatam que há cerca de 3 meses o filho trancou-se no quarto, abandonou o curso técnico de informática, parou de tomar banho regularmente e cobriu as janelas com papel alumínio. Nos últimos 15 dias, passou a afirmar que seus pensamentos estão sendo transmitidos pela televisão e que vizinhos instalaram câmeras ocultas nas tomadas elétricas para espioná-lo. Ao exame físico e mental: desconfiado, vigilante, afeto embotado, murmura frases ininteligíveis como se respondesse a alucinações auditivas fonêmicas em terceira pessoa. Nega uso de drogas (triagem toxicológica urinária negativa)."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Compartilhada na APS:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<em>Diagnóstico Sindrômico:</em> <strong>Primeiro Episódio Psicótico (FEP)</strong> com sintomas positivos floridos (delírios persecutórios de influência e alucinações auditivas) e sintomas negativos iniciais (isolamento social, avolia, embotamento afetivo), sugerindo início de Transtorno do Espectro da Esquizofrenia.",
+            "<em>Afastamento de Causas Orgânicas:</em> Solicitar exames laboratoriais completos (hemograma, glicemia, função renal e hepática, eletrólitos, sorologias para HIV e Sífilis/VDRL, TSH) e avaliação neurológica com neuroimagem para descartar encefalite autoimune ou neoplasia de SNC.",
+            "<em>Apoio Matricial e Inserção na RAPS:</em> O caso é apresentado imediatamente na reunião de <strong>Apoio Matricial com o psiquiatra do CAPS II do território</strong>. Pactua-se consulta compartilhada (médico da ESF + psiquiatra do CAPS) na própria UBS para não assustar o jovem;",
+            "<em>Início de Antipsicótico de Segunda Geração:</em> Inicia-se <strong>Risperidona 1 mg a 2 mg/dia</strong> (menor risco de efeitos extrapiramidais e excelente controle de delírios/alucinações) e formula-se o <em>Projeto Terapêutico Singular (PTS)</em> com terapeuta ocupacional e assistente social para reinserção comunitária e suporte familiar."
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 4: Transtorno de Pânico Agudo vs Emergência Cardiovascular na UBS"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Roberta, 29 anos, bancária, entra na sala de emergência da UBS amparada por colegas de trabalho, em pânico extremo, gritando que 'está tendo um infarto fulminante e vai morrer agora'. Apresenta sudorese fria profusa, tremores incontroláveis de mãos, sensação de sufocamento com dispneia em suspiros, dor torácica atípica em pontada precordial e parestesia perioral e nas pontas dos dedos."
+        ],
+        [
+          "p",
+          "<strong>Avaliação Imediata na Sala Vermelha/Emergência da UBS:</strong>"
+        ],
+        [
+          "u",
+          [
+            "PA: 148 x 92 mmHg, FC: 122 bpm (taquicardia sinusal), FR: 28 irpm, SatO2: 99% em ar ambiente, Glicemia capilar: 98 mg/dL;",
+            "<strong>Eletrocardiograma de 12 derivações realizado em 5 minutos:</strong> Taquicardia sinusal com intervalos e segmentos rigorosamente normais, ausência de supra ou infradesnivelamento de ST e ondas T normais;",
+            "Exame pulmonar e cardiovascular: Bulhas rítmicas normofonéticas sem sopros, murmúrio vesicular universalmente audível sem ruídos adventícios. Parestesias decorrentes de <em>alcalose respiratória aguda induzida por hiperventilação psicogênica</em>."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Conduta Clínica e Acolhimento na APS:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<em>Manejo da Crise Aguda de Pânico:</em> O médico afasta com segurança a síndrome coronariana aguda pelo ECG normal e quadro epidemiológico. Posiciona-se à frente da paciente, fala em tom calmo, firme e acolhedor: 'Roberta, seu coração está forte e saudável, o eletrocardiograma está normal. Você está tendo uma crise de pânico. Essa sensação é horrível, mas garanto que ela não vai matá-la e vai passar em alguns minutos. Vamos respirar juntos devagar'.",
+            "<em>Técnica de Respiração Diafragmática / Quadrada:</em> Inspirar pelo nariz contando até 4, segurar o ar por 4 segundos e expirar lentamente pela boca em 4 segundos, corrigindo a hipocapnia e eliminando as parestesias periorais em 10 minutos.",
+            "<em>Plano Terapêutico Longitudinal:</em> Encaminhar para acompanhamento ambulatorial na própria ESF; iniciar psicoeducação sobre Transtorno de Pânico, introduzir <strong>Sertralina 25 mg/dia progredindo para 50 mg/dia</strong> e psicoterapia cognitivo-comportamental com psicóloga da eMulti. Evitar a prescrição rotineira de benzodiazepínicos crônicos de resgate para não criar dependência psicológica de 'bolsa'."
+          ]
+        ],
+        [
+          "3",
+          "7.2 Questões de Concursos e Residência Médica Comentadas"
+        ],
+        [
+          "4",
+          "Questão 1 (Enare / Exame Nacional de Residência Médica)"
+        ],
+        [
+          "p",
+          "Homem de 34 anos, portador de esquizofrenia paranoide em tratamento irregular, reside com sua mãe idosa em território coberto pela Estratégia Saúde da Família. A mãe comparece desesperada à UBS relatando que o filho suspendeu os antipsicóticos há duas semanas e iniciou quadro de agitação psicomotora violenta, ameaçando-a de morte com uma faca de cozinha por acreditar que ela foi substituída por um clone alienígena. A mãe recusa-se a voltar para casa sozinha com medo de ser assassinada. A equipe da ESF reúne-se para discutir a conduta legal e assistencial. Considerando os ditames da Lei Federal nº 10.216/2001 (Lei da Reforma Psiquiátrica), qual é a modalidade de internação cabível para este caso e qual é o procedimento formal obrigatório a ser adotado?"
+        ],
+        [
+          "p",
+          "A) Internação voluntária; aguardar o paciente aceitar o tratamento por escrito após visita domiciliar persuasiva.<br>\n  B) Internação compulsória; que só pode ser solicitada pelo delegado de polícia do bairro.<br>\n  C) Internação involuntária; requer laudo médico circunstanciado emitido por profissional competente e comunicação obrigatória ao Ministério Público Estadual no prazo máximo de 72 horas.<br>\n  D) Internação asilar em hospital psiquiátrico judiciário por tempo indeterminado.<br>\n  E) Não há previsão legal para internação sem a concordância expressa do paciente maior de idade no ordenamento jurídico brasileiro."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial Comentado: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<em>Comentário Didático:</em> Trata-se de uma situação clássica de <strong>Internação Psiquiátrica Involuntária</strong> (Artigo 6º, parágrafo único, inciso II e Artigo 8º da Lei nº 10.216/2001). A internação involuntária ocorre sem o consentimento do paciente, solicitada por familiar de primeiro grau (no caso, a mãe), exigindo autorização prévia por laudo médico fundamentado que comprove a falência dos recursos extra-hospitalares e o risco iminente à integridade física de terceiros. A lei determina com rigor absoluto que <strong>a internação e a respectiva alta devem ser comunicadas formalmente ao Ministério Público Estadual no prazo improrrogável de até 72 horas</strong>, como salvaguarda jurídica contra privações ilegais de liberdade. A alternativa A é inviável pelo risco de homicídio. A alternativa B é incorreta porque a internação compulsória é determinada exclusivamente por juiz de direito, e não por delegados. A alternativa D viola a Reforma Psiquiátrica e os direitos humanos."
+        ],
+        [
+          "4",
+          "Questão 2 (SUS-SP / Residência Médica em Medicina de Família e Comunidade)"
+        ],
+        [
+          "p",
+          "Durante uma consulta na Unidade Básica de Saúde, um homem de 48 anos, tabagista e hipertenso, relata que sabe que o fumo está prejudicando sua capacidade física de jogar futebol com os amigos e que tem pensado em parar de fumar nos próximos meses, mas sente muito medo de não conseguir suportar a ansiedade sem o cigarro. De acordo com o Modelo Transteórico de Estágios de Mudança de Prochaska e DiClemente e a Entrevista Motivacional, em qual estágio de mudança o paciente se encontra e qual é a conduta do médico da ESF mais adequada?"
+        ],
+        [
+          "p",
+          "A) Pré-contemplação; confrontar imediatamente o paciente com imagens de câncer de pulmão para induzir o medo.<br>\n  B) Contemplação; explorar e trabalhar a ambivalência do paciente, utilizando a escuta reflexiva para desenvolver a discrepância entre seus valores de vida e o comportamento atual.<br>\n  C) Preparação; prescrever imediatamente vareniclina e fixar o 'Dia D' de parada para os próximos 3 dias.<br>\n  D) Ação; parabenizar o paciente pelo sucesso alcançado e focar na prevenção de recaídas.<br>\n  E) Manutenção; encaminhar o paciente para o grupo de cessação tabágica do CAPS AD."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial Comentado: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Comentário Didático:</em> O paciente encontra-se no estágio de <strong>Contemplação</strong>: ele já reconhece que o comportamento é danoso à sua saúde e pensa em mudar no horizonte dos próximos 6 meses, mas está imerso em profunda <strong>ambivalência</strong> (quer parar de fumar para jogar futebol, mas teme a ansiedade sem o fumo). Na entrevista motivacional, o objetivo essencial no estágio contemplativo é <strong>acolher e explorar a ambivalência</strong> por meio da escuta reflexiva, ajudando o paciente a desenvolver a discrepância interna entre seu sonho (saúde, esporte) e o hábito atual. A alternativa A está errada porque a confrontação agressiva gera resistência. A alternativa C é típica do estágio de Preparação (quando a pessoa já decidiu parar nos próximos 30 dias). As alternativas D e E descrevem estágios onde o paciente já interrompeu o uso do tabaco."
+        ],
+        [
+          "4",
+          "Questão 3 (USP / Secretaria Municipal de Saúde de São Paulo)"
+        ],
+        [
+          "p",
+          "Mulher de 58 anos comparece à UBS para consulta de acolhimento em saúde mental. Ela utiliza Clonazepam 2 mg ao dia há 8 anos, prescrito inicialmente após a morte de sua mãe. Nega sintomas depressivos atuais, mas refere que nos últimos meses tem sentido grande sonolência diurna, prejuízos de memória e medo de sofrer quedas, manifestando desejo espontâneo de interromper o uso do remédio. Considerando as diretrizes de prevenção quaternária e o protocolo seguro de desprescrição de benzodiazepínicos na Atenção Primária à Saúde, assinale a conduta CORRETA:"
+        ],
+        [
+          "p",
+          "A) Suspender imediatamente o clonazepam de um dia para o outro e introduzir amitriptilina 75 mg à noite para controlar a insônia rebote.<br>\n  B) Manter o clonazepam indefinidamente na dose habitual, pois após 8 anos de uso contínuo a dependência é irreversível e o desmame é contraindicado.<br>\n  C) Pactuar com a paciente um plano de desmame gradual, podendo-se converter a dose para o equivalente em diazepam e reduzir cerca de 10% a 25% da dose a cada 2 a 4 semanas, associando medidas de higiene do sono e suporte multiprofissional.<br>\n  D) Substituir o clonazepam por zolpidem 10 mg à noite, pois os hipnóticos 'não benzodiazepínicos' não causam tolerância, dependência ou risco de quedas.<br>\n  E) Prescrever haloperidol 5 mg à noite para sedação durante o desmame rápido do benzodiazepínico em 5 dias."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial Comentado: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<em>Comentário Didático:</em> A desprescrição de benzodiazepínicos de uso prolongado exige planejamento <strong>gradual, consentido e escalonado</strong>. A suspensão abrupta (Alternativa A) é absolutamente contraindicada pelo risco extremo de síndrome de abstinência grave, delirium e convulsões tônico-clônicas. A alternativa B é incorreta porque a idade avançada eleva substancialmente o risco de quedas, fraturas e demência, sendo a desprescrição altamente indicada e viável. A alternativa C descreve com exatidão o protocolo internacional de desprescrição (conversão opcional para diazepam devido à meia-vida longa estável, redução lenta de 10% a 25% da dose quinzenal ou mensal e suporte não farmacológico com higiene do sono). A alternativa D é falsa porque as drogas 'Z' (zolpidem) atuam no mesmo sítio do receptor GABA-A, compartilhando riscos idênticos de dependência, amnésia, quedas e sonambulismo complexo. A alternativa E prescreve antipsicótico típico de alta potência de forma iatrogênica e perigosa."
+        ],
+        [
+          "4",
+          "Questão 4 (Unicamp / Residência Médica em Psiquiatria e Medicina de Família)"
+        ],
+        [
+          "p",
+          "Um homem de 72 anos, viúvo há 6 meses, aposentado, é trazido à consulta na UBS pela filha. A filha relata que o pai passa os dias deitado na cama, recusa-se a sair para caminhar na praça, perdeu 6 kg no último mês e tem afirmado que 'sua vida perdeu todo o sentido e só dá trabalho aos outros'. Durante a anamnese dirigida, ao ser questionado sobre ideação de morte, o paciente revela com olhar vago: 'Doutor, eu já peguei o revólver 38 que guardava no armário, comprei a munição ontem e deixei na gaveta da cabeceira. Só estou esperando a missa de 6 meses da minha esposa passar para acabar com tudo'. Ao exame físico e mental: lúcido, orientado, afeto intensamente deprimido, desesperança profunda. Diante da estratificação de risco de suicídio na Atenção Primária, qual é a conduta prioritária e imediata que deve ser adotada pela equipe de saúde?"
+        ],
+        [
+          "p",
+          "A) Classificar o risco como intermediário, prescrever fluoxetina 20 mg/dia e agendar retorno ambulatorial para reavaliação em 15 dias.<br>\n  B) Classificar como Risco Alto/Iminente de suicídio; não deixar o paciente sozinho em nenhum momento, acionar imediatamente o SAMU 192 para transferência assistida a serviço de urgência/emergência psiquiátrica hospitalar e pactuar a remoção da arma de fogo com a família.<br>\n  C) Solicitar que o paciente assine um 'Contrato de Não Suicídio' de próprio punho e liberá-lo para domicílio sob supervisão da filha.<br>\n  D) Orientar a filha a esconder a arma e prescrever clonazepam 2 mg à noite para sedar o paciente em casa.<br>\n  E) Encaminhar o paciente por guia de referência comum via regulação ambulatorial para primeira consulta no CAPS AD."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial Comentado: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Comentário Didático:</em> O paciente preenche critérios absolutos de <strong>RISCO ALTO E IMINENTE DE SUICÍDIO</strong>: homem idoso, viúvo recente (luto traumático), depressão grave com emagrecimento, plano detalhado e altamente letal estruturado (arma de fogo com munição comprada guardada na cabeceira) e data estipulada para a execução. Trata-se de uma <strong>emergência médica inadiável</strong>. A conduta mandatória consiste em: 1) Manter o paciente sob observação contínua da equipe, sem deixá-lo sozinho sequer por um instante; 2) Acionar o SAMU 192 para transporte seguro para unidade de emergência ou leito hospitalar de saúde mental para proteção física; 3) Orientar a filha e autoridades competentes para apreensão imediata da arma de fogo e munições; 4) Preencher a notificação compulsória no SINAN em até 24 horas. Contratos de não suicídio (Alternativa C) não protegem contra o ato e são contraindicados como medida isolada. Antidepressivos demoram 2 a 4 semanas para agir e benzodiazepínicos (Alternativa D) podem desinibir impulsos e precipitar o disparo da arma."
+        ]
+      ]
+    ]
+  ]
+}

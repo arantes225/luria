@@ -1,0 +1,855 @@
+{
+  "v": 2,
+  "s": "neurodesenvolvimento-tea-tdah-e-dificuldades-de-aprendizagem",
+  "t": "Neurodesenvolvimento: TEA, TDAH e Dificuldades de Aprendizagem",
+  "p": "Neurodesenvolvimento: TEA, TDAH e Dificuldades de Aprendizagem — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance: Critérios DSM-5-TR, M-CHAT-R/F, Escalas SNAP-IV, Psicofarmacologia e Intervenções Baseadas em Evidências",
+  "a": "Pediatria",
+  "m": "Pediatria",
+  "h": [
+    "Apostila LURIA",
+    "Neurodesenvolvimento: TEA, TDAH e Dificuldades de Aprendizagem",
+    "Tratado de Alta Performance: Critérios DSM-5-TR, M-CHAT-R/F, Escalas SNAP-IV, Psicofarmacologia e Intervenções Baseadas em Evidências",
+    [
+      "Área: Pediatria",
+      "Matéria: Pediatria",
+      "Tema: Neurodesenvolvimento: TEA, TDAH e Dificuldades de Aprendizagem"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introducao-e-fundamentos",
+      "Introdução e Fundamentos"
+    ],
+    [
+      "sumario-pedagogico-e-objetivos-de-aprendizagem",
+      "Sumário Pedagógico e Objetivos de Aprendizagem"
+    ],
+    [
+      "1-neurobiologia-e-marcos-do-desenvolvimento-infantil-tipico",
+      "1. Neurobiologia e Marcos do Desenvolvimento Infantil Típico"
+    ],
+    [
+      "2-transtorno-do-espectro-autista-tea-criterios-dsm-5-tr-e-rastreamento",
+      "2. Transtorno do Espectro Autista (TEA): Critérios DSM-5-TR e Rastreamento"
+    ],
+    [
+      "3-transtorno-do-deficit-de-atencao-com-hiperatividade-tdah",
+      "3. Transtorno do Déficit de Atenção com Hiperatividade (TDAH)"
+    ],
+    [
+      "4-dificuldades-de-aprendizagem-e-transtornos-especificos",
+      "4. Dificuldades de Aprendizagem e Transtornos Específicos"
+    ],
+    [
+      "5-investigacao-diagnostica-diagnostico-diferencial-e-comorbidades",
+      "5. Investigação Diagnóstica, Diagnóstico Diferencial e Comorbidades"
+    ],
+    [
+      "6-abordagem-terapeutica-interdisciplinar-e-psicofarmacologia",
+      "6. Abordagem Terapêutica Interdisciplinar e Psicofarmacologia"
+    ],
+    [
+      "7-casos-clinicos-estruturados-e-resolvidos-com-raciocinio-passo-a-passo",
+      "7. Casos Clínicos Estruturados e Resolvidos com Raciocínio Passo a Passo"
+    ],
+    [
+      "8-questoes-de-prova-comentadas-na-integra",
+      "8. Questões de Prova Comentadas na Íntegra"
+    ],
+    [
+      "9-tabela-resumo-e-high-yield-exam-pearls",
+      "9. Tabela Resumo e High-Yield Exam Pearls"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "introducao-e-fundamentos",
+      0,
+      [
+        [
+          "2",
+          "Introdução e Fundamentos"
+        ],
+        [
+          "p",
+          "<h1>LURIA · Apostila 202 — Neurodesenvolvimento: TEA, TDAH e Dificuldades de Aprendizagem</h1>"
+        ],
+        [
+          "p",
+          "> <strong>Área:</strong> Pediatria  <br>> <strong>Subespecialidades:</strong> Neurologia Infantil, Pediatria do Desenvolvimento e Comportamento, Psiquiatria da Infância e da Adolescência  <br>> <strong>Público-alvo:</strong> Médicos Residentes, Candidatos ao Revalida e ENAMED  <br>> <strong>Diretrizes e Manuais de Referência:</strong> Manual Diagnóstico e Estatístico de Transtornos Mentais (DSM-5-TR - American Psychiatric Association, 2022), Classificação Internacional de Doenças (CID-11 - OMS), Sociedade Brasileira de Pediatria (Departamentos Científicos de Pediatria do Desenvolvimento e Comportamento e de Neurologia Infantil - Diretrizes 2022/2025), American Academy of Pediatrics (AAP Clinical Practice Guidelines: ADHD 2019/2024 e ASD 2020), Ministério da Saúde do Brasil (Linha de Cuidado para a Atenção às Pessoas com TEA)."
+        ]
+      ]
+    ],
+    [
+      "sumario-pedagogico-e-objetivos-de-aprendizagem",
+      0,
+      [
+        [
+          "2",
+          "Sumário Pedagógico e Objetivos de Aprendizagem"
+        ],
+        [
+          "p",
+          "O neurodesenvolvimento infantil é um processo dinâmico, contínuo e hierárquico, resultante da interação intrincada e recíproca entre a bagagem genética e as experiências ambientais e relacionais do indivíduo (epigenética). Os primeiros anos de vida representam a janela de maior plasticidade cerebral, período no qual a neurogênese, a migração neuronal, a sinaptogênese e a mielinização ocorrem em taxas sem paralelo. É exatamente durante esse período crítico que desvios e alterações nos circuitos corticais e subcorticais se manifestam clinicamente sob a forma dos <strong>Transtornos do Neurodesenvolvimento</strong>."
+        ],
+        [
+          "p",
+          "Dentre as condições neuropsiquiátricas da infância, o <strong>Transtorno do Espectro Autista (TEA)</strong>, o <strong>Transtorno do Déficit de Atenção com Hiperatividade (TDAH)</strong> e os <strong>Transtornos Específicos de Aprendizagem (como a Dislexia, Discalculia e Disgrafia)</strong> destacam-se não apenas pela elevada prevalência populacional, mas pelo impacto avassalador que exercem sobre a funcionalidade adaptativa, o desempenho acadêmico, as relações interpessoais e a qualidade de vida da criança e de sua família. Adicionalmente, constituem um dos temas de maior crescimento e complexidade nas provas contemporâneas de Residência Médica, Revalida e ENAMED, exigindo do médico generalista e pediatra competências diagnósticas precoces e condutas baseadas em evidências científicas de primeira linha."
+        ],
+        [
+          "p",
+          "Ao concluir este tratado médico aprofundado, o estudante e profissional deverá ser capaz de:"
+        ],
+        [
+          "p",
+          "1. <strong>Dominar a semiologia e os marcos do desenvolvimento infantil típico:</strong> identificar os marcos motores amplos, motores finos-adaptativos, de linguagem e socioemocionais em cada faixa etária (dos 2 meses aos 5 anos de idade), reconhecendo instantaneamente os \"sinais de alerta\" (<em>red flags</em>) que exigem intervenção imediata, sem aguardar a confirmação de laudos nosológicos formais.<br>2. <strong>Aplicar com rigor os critérios diagnósticos contemporâneos do DSM-5-TR e CID-11 para o Transtorno do Espectro Autista (TEA):</strong> compreender os dois domínios nucleares (Déficit persistente na comunicação social e interação social; e Padrões restritos e repetitivos de comportamento, interesses ou atividades), os três níveis de gravidade do suporte adaptativo (Nível 1 - exige apoio; Nível 2 - exige apoio substancial; Nível 3 - exige apoio muito substancial) e os especificadores clínicos associados.<br>3. <strong>Executar o rastreamento universal do TEA na Atenção Primária:</strong> aplicar e pontuar adequadamente a escala <strong>M-CHAT-R/F</strong> (<em>Modified Checklist for Autism in Toddlers, Revised with Follow-Up</em>) aos 18 e 24 meses de vida, estabelecendo o fluxo estratificado de conduta (baixo, moderado e alto risco) e organizando a intervenção precoce interdisciplinar (Análise do Comportamento Aplicada - ABA, fonoaudiologia e terapia ocupacional com integração sensorial).<br>4. <strong>Diagnosticar e subclassificar o TDAH conforme o DSM-5-TR:</strong> diferenciar as três apresentações clínicas (Predominantemente Desatenta, Predominantemente Hiperativa/Impulsiva e Combinada), aplicar os critérios de idade de início (< 12 anos), duração (&ge; 6 meses), número de sintomas (&ge; 6 para crianças/adolescentes e &ge; 5 para &ge; 17 anos), presença obrigatória de comprometimento funcional em múltiplos ambientes (&ge; 2 contextos: escola, casa, social) e utilizar as escalas padronizadas (SNAP-IV).<br>5. <strong>Indicar o tratamento multimodal do TDAH:</strong> balancear intervenções comportamentais parentais e escolares com a psicofarmacologia de primeira linha baseada em psicoestimulantes do sistema nervoso central (Metilfenidato e Lisdexanfetamina), dominando mecanismos celulares dopaminérgicos e noradrenérgicos, titulação posológica, monitorização de efeitos adversos (insônia, perda de apetite, curva de crescimento pondoestatural, pressão arterial) e fármacos não estimulantes de segunda linha (Atomoxetina, Clonidina).<br>6. <strong>Diferenciar e conduzir os Transtornos Específicos de Aprendizagem e comorbidades:</strong> estabelecer o diagnóstico diferencial entre Deficiência Intelectual (Transtorno do Desenvolvimento Intelectual), Dislexia do Desenvolvimento (comprometimento específico da precisão e fluência de leitura e decodificação fonológica), Discalculia (senso numérico e raciocínio matemático), Transtorno Opositor Desafiador (TOD) e Transtorno de Ansiedade Infantil."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "1-neurobiologia-e-marcos-do-desenvolvimento-infantil-tipico",
+      0,
+      [
+        [
+          "2",
+          "1. Neurobiologia e Marcos do Desenvolvimento Infantil Típico"
+        ],
+        [
+          "3",
+          "1.1 Fisiologia dos Circuitos Neurais e Plasticidade Cerebral"
+        ],
+        [
+          "p",
+          "O cérebro infantil não é uma versão miniaturizada do cérebro adulto. O desenvolvimento neural segue uma trajetória cronológica geneticamente orientada, porém fortemente modulada pela estimulação ambiental:\n<em> <strong>Sinaptogênese e Poda Sináptica (</em>Synaptic Pruning*):</strong> Durante os primeiros dois anos de vida, ocorre uma superprodução maciça de sinapses, especialmente nas áreas corticais visuais, auditivas e no córtex pré-frontal. A partir dos 2 a 3 anos de idade e ao longo da adolescência, os circuitos neurais passam pelo processo crítico de <strong>poda sináptica</strong>, mediado por micróglias e astrócitos. As conexões frequentemente ativadas e estimuladas por experiências relacionais enriquecedoras são fortalecidas e mielinizadas, enquanto as conexões redundantes ou inativas sofrem apoptose funcional. No TEA, estudos neuropatológicos demonstram uma falha na poda sináptica fisiológica, resultando em hiperconectividade cortical local desordenada e hipoconectividade em circuitos de longa distância (especialmente entre o córtex pré-frontal e as estruturas límbicas).\n* <strong>Neurotransmissão Dopaminérgica e Noradrenérgica nos Circuitos Corticostriatais:</strong> A atenção sustentada, a memória de trabalho, a autorregulação inibitória e o controle do comportamento dependem do funcionamento ótimo dos circuitos frontoestriatais (alças conectando o córtex pré-frontal dorsolateral, o córtex orbitofrontal, o córtex cingulado anterior, o corpo estriado [caudado e putâmen] e o tálamo). Esses circuitos são modulados criticamente pela <strong>dopamina (DA)</strong> e pela <strong>noradrenalina (NA)</strong>:\n  * A estimulação equilibrada dos receptores adrenérgicos alfa-2A no córtex pré-frontal aumenta a força do sinal relevante da tarefa (foco atencional).\n  * A estimulação dos receptores dopaminérgicos D1 atenua o \"ruído\" de fundo (distratores ambientais) e inibe impulsos motores concorrentes.\n  * No TDAH, postula-se um estado de hipofunção tônica de DA e NA nessas sinapses corticais, o que prejudica a capacidade do córtex pré-frontal de exercer o controle inibitório \"top-down\" sobre as estruturas subcorticais e o sistema límbico."
+        ],
+        [
+          "3",
+          "1.2 Marcos do Desenvolvimento Neuropsicomotor (DNPM) por Faixas Etárias"
+        ],
+        [
+          "p",
+          "A avaliação clínica do neurodesenvolvimento na puericultura exige do pediatra a verificação sistemática de quatro domínios interdependentes: Motor Amplo (Grosseiro), Motor Fino-Adaptativo, Linguagem/Comunicação e Socioemocional/Cognitivo."
+        ],
+        [
+          "t",
+          [
+            "Idade Cronológica",
+            "Motor Amplo (Postural)",
+            "Motor Fino-Adaptativo",
+            "Linguagem e Comunicação",
+            "Socioemocional e Cognitivo"
+          ],
+          [
+            [
+              "<strong>2 Meses</strong>",
+              "Eleva a cabeça a 45° em pronação; membros fletidos",
+              "Abre as mãos involuntariamente; segue objetos até a linha média (90°)",
+              "Vocaliza sons guturais (\"ah\", \"eh\"); assusta-se com barulhos",
+              "<strong>Sorriso social responsivo</strong> diante da face humana"
+            ],
+            [
+              "<strong>4 Meses</strong>",
+              "Sustentação completa e firme da cabeça (sem queda posterior); apoia-se nos antebraços",
+              "Preensão palmar voluntária em linha média; junta as mãos no centro; leva objetos à boca",
+              "Emite gorgolejos; vira a cabeça em direção à fonte sonora",
+              "Ri alto; manifesta entusiasmo com a aproximação de pessoas"
+            ],
+            [
+              "<strong>6 Meses</strong>",
+              "Rola ativamente de prono para supino; <strong>senta com apoio anterior tripé</strong>",
+              "Transfere objetos de uma mão para a outra; preensão radial palmar",
+              "Balbucio monossilábico inicial (\"da\", \"ba\", \"ma\")",
+              "Reconhece familiares; estranha pessoas desconhecidas; olha-se no espelho"
+            ],
+            [
+              "<strong>9 Meses</strong>",
+              "<strong>Senta sem qualquer apoio com tronco ereto</strong>; inicia engatinhar ou arrastar",
+              "<strong>Preensão em pinça inferior / tesoura</strong> (polegar e borda lateral do indicador)",
+              "Balbucio polissilábico (\"dadada\", \"mamama\"); atende quando chamado pelo próprio nome",
+              "<strong>Permanência do objeto</strong> (procura brinquedo coberto por pano); estranhamento social ativo"
+            ],
+            [
+              "<strong>12 Meses (1 Ano)</strong>",
+              "<strong>Fica em pé com apoio</strong>; inicia marcha apoiada nos móveis (cruising) ou passos isolados",
+              "<strong>Pinça digital superior madura</strong> (polpa do polegar com polpa do indicador); solta objetos voluntariamente",
+              "<strong>Fala as primeiras palavras com significado</strong> (\"mamã\", \"papá\", \"dá\"); compreende ordens simples",
+              "<strong>Atenção compartilhada ativa</strong> (aponta com o indicador para mostrar interesse); acena tchau; bate palmas"
+            ],
+            [
+              "<strong>18 Meses</strong>",
+              "<strong>Anda sozinho com firmeza</strong>; corre com passos rígidos; sobe degraus com apoio de uma das mãos",
+              "Constrói torre de 3 cubos; rabisca espontaneamente em papel com giz",
+              "Vocabulário de pelo menos <strong>10 a 20 palavras inteligíveis</strong>; compreende ordens verbais de um passo",
+              "Usa colher e garfo; imita tarefas domésticas simples; fingimento lúdico inicial"
+            ],
+            [
+              "<strong>24 Meses (2 Anos)</strong>",
+              "Sobe e desce escadas colocando os dois pés em cada degrau; chuta bola sem cair",
+              "Constrói torre de 6 cubos; empunha colher sem derramar; imita traço vertical",
+              "<strong>Frases de 2 palavras com sentido</strong> (\"quer água\", \"dá bola\"); vocabulário > 50 palavras",
+              "<strong>Brincadeira simbólica e de faz de conta</strong> (dá comidinha para boneca); paralela com pares"
+            ],
+            [
+              "<strong>36 Meses (3 Anos)</strong>",
+              "Sobe escadas alternando os pés; pedala triciclo; fica em um pé só por alguns segundos",
+              "Constrói torre de 9 cubos; copia um círculo; usa tesoura sem ponta",
+              "<strong>Frases completas de 3 a 4 palavras</strong>; usa pronomes (\"eu\", \"você\"); pergunta \"por quê?\"",
+              "Brincadeira interativa cooperativa com outras crianças; veste roupas simples com ajuda"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "1.3 Os Sinais de Alerta Vermelhos (Red Flags) no Neurodesenvolvimento"
+        ],
+        [
+          "p",
+          "A presença de qualquer um dos seguintes sinais em qualquer idade exige encaminhamento imediato para avaliação neurológica e intervenção precoce interdisciplinar:\n1. <strong>Regressão ou Perda de Qualquer Habilidade Adquirida:</strong> Perda de palavras faladas, do contato visual, da resposta ao nome ou de habilidades motoras em qualquer momento da infância. É um sinal de alarme crítico que exige investigação de TEA, doenças neurodegenerativas metabólicas, epilepsia com crises subclínicas (Síndrome de Landau-Kleffner) ou Síndrome de Rett.\n2. <strong>Aos 6 meses:</strong> Ausência de sorriso social, ausência de contato visual caloroso ou ausência de vocalizações responsivas.\n3. <strong>Aos 9 meses:</strong> Incapacidade de sentar sem apoio; ausência de balbucio; não atende ao próprio nome quando chamado.\n4. <strong>Aos 12 meses:</strong> Ausência de gestos comunicativos sociais (não aponta com o indicador para mostrar algo, não acena tchau, não bate palmas); ausência de balbucio polissilábico; não busca o olhar do cuidador quando diante de novidades.\n5. <strong>Aos 15 meses:</strong> Não anda sozinho; ausência de palavras com significado contextual.\n6. <strong>Aos 18 meses:</strong> Menos de 6 palavras consistentes; ausência de atenção compartilhada (não olha para onde o adulto aponta); não imita ações simples.\n7. <strong>Aos 24 meses:</strong> Ausência de frases espontâneas de duas palavras com sentido próprio (excluindo ecolalias automáticas decoradas de vídeos)."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "2-transtorno-do-espectro-autista-tea-criterios-dsm-5-tr-e-rastreamento",
+      0,
+      [
+        [
+          "2",
+          "2. Transtorno do Espectro Autista (TEA): Critérios DSM-5-TR e Rastreamento"
+        ],
+        [
+          "3",
+          "2.1 Conceito Contemporâneo e a Transição do DSM-IV para o DSM-5-TR"
+        ],
+        [
+          "p",
+          "Historicamente, o DSM-IV classificava os distúrbios da comunicação social sob o termo genérico de \"Transtornos Invasivos do Desenvolvimento\", subdividindo-os artificialmente em categorias como Autismo Clássico de Kanner, Síndrome de Asperger e Transtorno Global do Desenvolvimento Sem Outra Especificação. Com a publicação do DSM-5 e sua recente revisão em texto (DSM-5-TR, 2022), unificaram-se todas essas entidades sob o diagnóstico abrangente de <strong>Transtorno do Espectro Autista (TEA)</strong>."
+        ],
+        [
+          "p",
+          "O conceito de \"Espectro\" reflete a imensa heterogeneidade clínica, cognitiva, linguística e adaptativa entre os indivíduos afetados, variando desde pessoas com inteligência superior e fala fluente que necessitam de suporte mínimo para interação social até indivíduos com deficiência intelectual severa, ausência total de linguagem oral funcional e comportamentos autolesivos graves."
+        ],
+        [
+          "3",
+          "2.2 Os Dois Domínios Nucleares do DSM-5-TR"
+        ],
+        [
+          "p",
+          "Para que o diagnóstico de TEA seja estabelecido de acordo com o DSM-5-TR, o indivíduo deve preencher obrigatoriamente critérios nos dois domínios neuropsiquiátricos fundamentais:"
+        ],
+        [
+          "4",
+          "Domínio A: Déficits Persistentes na Comunicação Social e na Interação Social"
+        ],
+        [
+          "p",
+          "Devem estar presentes <strong>TODOS OS 3 CRITÉRIOS A SEGUIR</strong> (atualmente ou por história prévia):\n1. <strong>Déficits na Reciprocidade Socioemocional:</strong> Variação desde abordagem social anormal e falha em manter uma conversa normal com alternância de turnos; compartilhamento reduzido de interesses, emoções ou afeto; até incapacidade de iniciar ou responder a interações sociais.\n2. <strong>Déficits nos Comportamentos Comunicativos Não Verbais Usados para Interação Social:</strong> Variação desde comunicação verbal e não verbal pouco integrada; anormalidades marcantes no <strong>contato visual</strong> (evitação do olhar, olhar periférico ou olhar vago) e na linguagem corporal; déficits na compreensão e uso de gestos (não aponta, não gesticula); até ausência total de expressões faciais e comunicação não verbal.\n3. <strong>Déficits para Desenvolver, Manter e Compreender Relacionamentos:</strong> Dificuldades para ajustar o comportamento para se adequar a diferentes contextos sociais; dificuldades para compartilhar brincadeiras imaginativas ou fazer amigos; até ausência aparente de interesse por outras crianças ou pares."
+        ],
+        [
+          "4",
+          "Domínio B: Padrões Restritos e Repetitivos de Comportamento, Interesses ou Atividades"
+        ],
+        [
+          "p",
+          "Devem estar presentes <strong>PELO MENOS 2 DOS 4 CRITÉRIOS A SEGUIR</strong> (atualmente ou por história prévia):\n1. <strong>Movimentos Motores, Uso de Objetos ou Fala Estereotipados ou Repetitivos:</strong> Estereotipias motoras simples (como o <em>flapping</em> de mãos - agitar as mãos vigorosamente quando entusiasmado ou ansioso, balanço de tronco [<em>rocking</em>], estalar dedos, marcha em ponta dos pés); alinhamento milimétrico de brinquedos ou empilhamento repetitivo de objetos; girar objetos ou rodas de carrinhos continuamente; <strong>ecolalia</strong> (repetição imediata ou tardia da fala de outras pessoas ou de frases decoradas de desenhos/vídeos sem intenção comunicativa flexível); ou frases idiossincráticas.\n2. <strong>Insistência na Mesmice, Adesão Inflexível a Rotinas ou Padrões Ritualizados de Comportamento Verbal ou Não Verbal:</strong> Extremo estresse e sofrimento diante de pequenas mudanças na rotina (ex.: alterar o trajeto para a escola, trocar a disposição dos móveis, mudar a cor do prato); dificuldades com transições entre atividades; rigidez de pensamento; rituais de saudação inflexíveis; necessidade de comer exatamente os mesmos alimentos preparados da mesma forma (seletividade alimentar extrema baseada em cor, textura ou temperatura).\n3. <strong>Interesses Altamente Restritos e Fixos que são Anormais na Intensidade ou no Foco:</strong> Forte apego ou preocupação excessiva com objetos incomuns (ex.: ventiladores em funcionamento, bueiros, tampas de garrafa, mapas metroviários, tabelas de horários de ônibus); hiperfoco circunscrito ou excessivamente perseverante sobre tópicos específicos (ex.: dinossauros, sistemas planetários, números primos).\n4. <strong>Hiper ou Hiporreatividade a Estímulos Sensoriais ou Interesse Incomum por Aspectos Sensoriais do Ambiente:</strong> Aparente indiferença à dor ou à temperatura extrema; resposta aversiva intensa e desproporcional a sons específicos (ex.: liquidificador, secador de cabelo, aspirador de pó - cobrindo os ouvidos com as mãos em desespero); aversão extrema a texturas táteis (ex.: etiquetas de roupas, tecidos ásperos, pisar na grama ou areia); cheirar ou tocar objetos de maneira excessiva e repetitiva; fascinação visual por luzes brilhantes ou movimentos circulares rotativos."
+        ],
+        [
+          "4",
+          "Critérios Adicionais C, D e E:"
+        ],
+        [
+          "p",
+          "* <strong>Critério C:</strong> Os sintomas devem estar presentes precocemente no período do desenvolvimento (embora possam não se manifestar plenamente até que as demandas sociais excedam as capacidades limitadas, ou possam ser mascarados por estratégias aprendidas na vida adulta).\n* <strong>Critério D:</strong> Os sintomas causam prejuízo clinicamente significativo no funcionamento social, profissional ou em outras áreas importantes da vida atual do indivíduo.\n* <strong>Critério E:</strong> Essas perturbações não são mais bem explicadas por Deficiência Intelectual ou atraso global do desenvolvimento (embora possam coexistir com frequência)."
+        ],
+        [
+          "3",
+          "2.3 Os Três Níveis de Gravidade do Suporte Adaptativo no DSM-5-TR"
+        ],
+        [
+          "p",
+          "A gravidade do TEA não é medida por exames complementares, mas sim pelo <strong>nível de apoio (suporte) necessário</strong> para a funcionalidade do indivíduo nos dois domínios (comunicação social e comportamentos restritos/repetitivos):"
+        ],
+        [
+          "t",
+          [
+            "Nível de Gravidade",
+            "Comunicação Social",
+            "Comportamentos Restritos e Repetitivos"
+          ],
+          [
+            [
+              "<strong>Nível 1 (\"Exige Apoio\")</strong>",
+              "Sem apoio, os déficits na comunicação social causam prejuízos notáveis. Dificuldade para iniciar interações sociais e respostas atípicas ou frustradas a aberturas sociais feitas por outros. Pode falar frases completas, mas falha no fluxo normal da conversação. Tentativas de fazer amigos são atípicas e geralmente mal-sucedidas.",
+              "A inflexibilidade de comportamento causa interferência significativa no funcionamento em um ou mais contextos. Dificuldade para alternar entre atividades. Problemas para organização e planejamento prejudicam a independência."
+            ],
+            [
+              "<strong>Nível 2 (\"Exige Apoio Substancial\")</strong>",
+              "Déficits graves nas habilidades de comunicação social verbal e não verbal; prejuízos sociais aparentes mesmo na presença de apoio; início limitado de interações sociais; e respostas reduzidas ou anormais a aberturas sociais feitas por outros. Fala frases simples, interação limitada a interesses especiais estreitos.",
+              "A inflexibilidade do comportamento, a dificuldade de lidar com a mudança ou outros comportamentos restritos/repetitivos aparecem com frequência suficiente para serem óbvios ao observador casual e interferem no funcionamento em vários contextos. Grande sofrimento para mudar o foco."
+            ],
+            [
+              "<strong>Nível 3 (\"Exige Apoio Muito Substancial\")</strong>",
+              "Graves déficits nas habilidades de comunicação social verbal e não verbal causam prejuízos gravíssimos no funcionamento, início muito limitado de interações sociais e resposta mínima a aberturas sociais de outros. Fala ausente ou reduzida a pouquíssimas palavras inteligíveis sem função de diálogo.",
+              "A inflexibilidade extrema de comportamento, extrema dificuldade em lidar com a mudança ou comportamentos restritos/repetitivos interferem acentuadamente no funcionamento em todas as esferas. Sofrimento extremo para mudar de atividade ou rotina. Estereotipias e comportamentos autolesivos frequentes."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "* <strong>Especificadores Obrigatórios que Devem Constar no Diagnóstico:</strong><br>  * Com ou sem <strong>Deficiência Intelectual</strong> concomitante.<br>  * Com ou sem <strong>Comprometimento da Linguagem Estrutural</strong> concomitante.<br>  * Associado a alguma condição médica ou genética conhecida (ex.: Síndrome do X Frágil, Esclerose Tuberosa, Síndrome de Down) ou fator ambiental (ex.: exposição intraútero ao ácido valproico).<br>  * Associado a outro transtorno do neurodesenvolvimento, mental ou comportamental (ex.: TDAH, Transtorno de Ansiedade, Catatonia)."
+        ],
+        [
+          "3",
+          "2.4 Rastreamento Populacional Universal: O M-CHAT-R/F"
+        ],
+        [
+          "p",
+          "A Sociedade Brasileira de Pediatria (SBP) e a Academia Americana de Pediatria (AAP) recomendam categoricamente o <strong>rastreamento universal para TEA em todas as crianças nas consultas de puericultura aos 18 e 24 meses de vida</strong>, independentemente de queixas trazidas pelos pais."
+        ],
+        [
+          "p",
+          "O instrumento de rastreamento padronizado, validado e de aplicação gratuita mais utilizado em todo o mundo é o <strong>M-CHAT-R/F</strong> (<em>Modified Checklist for Autism in Toddlers, Revised with Follow-Up</em>):<br>* <strong>Estrutura:</strong> Questionário composto por <strong>20 perguntas de resposta objetiva (Sim ou Não)</strong> respondidas pelos pais ou cuidadores principais.<br>* <strong>Perguntas de Alto Valor Preditivo (Itens Críticos):</strong><br>  * Se você aponta para algo no quarto, a criança olha para lá? (Atenção compartilhada).<br>  * Quando você chama a criança pelo nome dela, ela olha para você? (Resposta ao nome).<br>  * A criança aponta com o dedo indicador para pedir algo ou para mostrar algo interessante para você? (Apontar protodeclarativo vs. protoimperativo).<br>  * A criança finge que está alimentando uma boneca ou falando no telefone de brinquedo? (Brincadeira simbólica).<br>  * A criança traz objetos para mostrar para você apenas para compartilhar o interesse?"
+        ],
+        [
+          "p",
+          "* <strong>Estratificação de Risco e Fluxo Decisório Conforme a Pontuação:</strong><br>  * <strong>Baixo Risco (Pontuação 0 a 2 itens de risco):</strong> Se a criança tiver menos de 24 meses, repetir a aplicação do M-CHAT-R aos 24 meses. Se não houver outros sinais de alerta no exame clínico, manter o acompanhamento habitual de puericultura.<br>  * <strong>Moderado Risco (Pontuação 3 a 7 itens de risco):</strong> É mandatória a aplicação da segunda etapa: a <strong>Entrevista de Seguimento do M-CHAT-R/F (Follow-Up)</strong>, aprofundando os itens que falharam. Se após a entrevista de seguimento a pontuação persistir &ge; 2, a criança é classificada como <strong>Positiva no Rastreio</strong> e deve ser imediatamente encaminhada para avaliação médica especializada e intervenção precoce.<br>  * <strong>Alto Risco (Pontuação 8 a 20 itens de risco):</strong> <strong>Dispensa a entrevista de seguimento!</strong> A criança é classificada imediatamente como de Alto Risco para TEA. Deve ser encaminhada com urgência prioritária para avaliação diagnóstica com neuropediatra/psiquiatra infantil e <strong>início imediato de intervenção precoce interdisciplinar</strong>."
+        ],
+        [
+          "p",
+          "* <strong>A REGRA DE OURO DA INTERVENÇÃO PRECOCE NO TEA:</strong><br>  > <strong>A estimulação e intervenção terapêutica (fonoaudiologia, terapia ocupacional e intervenção comportamental) NUNCA devem ser adiadas à espera de laudo definitivo, parecer neurológico formal ou conclusão de exames genéticos!</strong><br>  > Na suspeita de atraso no desenvolvimento da comunicação social, inicia-se prontamente a estimulação precoce para aproveitar a janela biológica de máxima plasticidade cerebral."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "3-transtorno-do-deficit-de-atencao-com-hiperatividade-tdah",
+      0,
+      [
+        [
+          "2",
+          "3. Transtorno do Déficit de Atenção com Hiperatividade (TDAH)"
+        ],
+        [
+          "3",
+          "3.1 Neurobiologia e Etiopatogenia do TDAH"
+        ],
+        [
+          "p",
+          "O Transtorno do Déficit de Atenção com Hiperatividade (TDAH) é uma condição neurobiológica altamente hereditária (herdabilidade estimada em 75% a 80%), resultante de uma arquitetura genética poligênica complexa combinada a fatores de risco ambientais (prematuridade extrema, tabagismo materno na gestação, baixo peso ao nascer, privação psicossocial precoce e exposição ao chumbo)."
+        ],
+        [
+          "p",
+          "* <strong>Neuroanatomia e Circuitos Neurais:</strong><br>  * Estudos de neuroimagem funcional e estrutural demonstram um <strong>atraso médio de 2 a 3 anos na maturação do córtex cerebral</strong> em crianças com TDAH, afetando principalmente as regiões frontais responsáveis pelas <strong>Funções Executivas</strong> (córtex pré-frontal dorsolateral, córtex cingulado anterior e gânglios da base).<br>  * O córtex pré-frontal dorsolateral governa a <strong>memória de trabalho</strong> (capacidade de reter e manipular informações mentalmente em curto prazo), a atenção sustentada, o planejamento e a organização de tarefas.<br>  * O córtex orbitofrontal e os circuitos frontoestriatais controlam a <strong>inibição de respostas impulsivas</strong>, a capacidade de adiar a gratificação e a autorregulação emocional.<br>* <strong>Fisiopatologia Molecular dos Neurotransmissores:</strong><br>  * O cerne bioquímico do TDAH reside na <strong>disfunção da neurotransmissão de Dopamina e Noradrenalina</strong> nas sinapses pré-frontais.<br>  * Ocorre hiperatividade ou densidade excessiva dos transportadores pré-sinápticos de recaptação de dopamina (DAT) e noradrenalina (NET), removendo os neurotransmissores da fenda sináptica antes que possam ativar adequadamente os receptores pós-sinápticos D1 e alfa-2A. Essa hipofunção tônica de sinalização impede a filtragem eficaz de estímulos distratores e a sustentação do esforço mental intrínseco em tarefas que não oferecem recompensas imediatas de alto valor dopaminérgico (como tarefas escolares, leitura de textos longos ou rotinas diárias monótonas)."
+        ],
+        [
+          "3",
+          "3.2 Critérios Diagnósticos do DSM-5-TR para TDAH"
+        ],
+        [
+          "p",
+          "O diagnóstico de TDAH é <strong>eminentemente clínico</strong>, exigindo avaliação abrangente e cuidadosa de múltiplos informantes (pais, professores, cuidadores e o próprio paciente):"
+        ],
+        [
+          "4",
+          "Critério A: Padrão Persistente de Desatenção e/ou Hiperatividade-Impulsividade"
+        ],
+        [
+          "p",
+          "Os sintomas devem ter persistido por <strong>pelo menos 6 meses</strong>, em um grau inconsistente com o nível de desenvolvimento e com impacto negativo direto nas atividades sociais e acadêmicas/profissionais:\n* Para crianças e adolescentes (até 16 anos): presença de <strong>pelo menos 6 sintomas</strong> em pelo menos um dos domínios.\n* Para adolescentes &ge; 17 anos e adultos: presença de <strong>pelo menos 5 sintomas</strong>."
+        ],
+        [
+          "p",
+          "* <strong>Sintomas de Desatenção (9 Itens):</strong><br>  1. Frequentemente deixa de prestar atenção a detalhes ou comete erros por descuido em tarefas escolares, no trabalho ou durante outras atividades.<br>  2. Frequentemente tem dificuldade de manter a atenção em tarefas ou atividades lúdicas.<br>  3. Frequentemente parece não escutar quando alguém lhe dirige a palavra diretamente (parece \"no mundo da lua\").<br>  4. Frequentemente não segue instruções até o fim e não consegue terminar tarefas escolares, afazeres ou deveres no local de trabalho (começa tarefas, mas rapidamente perde o foco e desvia-se facilmente).<br>  5. Frequentemente tem dificuldade para organizar tarefas e atividades (gerenciamento de tempo deficiente, mesa e cadernos desorganizados, perde prazos).<br>  6. Frequentemente evita, não gosta ou reluta em se envolver em tarefas que exijam esforço mental constante (ex.: lições de casa extensas, preenchimento de formulários, relatórios).<br>  7. Frequentemente perde coisas necessárias para tarefas ou atividades (ex.: cadernos, lápis, estojo, casaco, chaves, telefone).<br>  8. É facilmente distraído por estímulos externos (inclusive pensamentos não relacionados em adolescentes e adultos).<br>  9. Frequentemente é esquecido em relação a atividades cotidianas (ex.: esquecer de fazer tarefas de casa, retornar ligações, pagar contas)."
+        ],
+        [
+          "p",
+          "* <strong>Sintomas de Hiperatividade e Impulsividade (9 Itens):</strong><br>  1. Frequentemente remexe ou batuca as mãos ou os pés ou se contorce na cadeira.<br>  2. Frequentemente levanta da cadeira em situações em que se espera que permaneça sentado (na sala de aula, à mesa de refeição).<br>  3. Frequentemente corre ou sobe nas coisas em situações em que isso é inapropriado (em adolescentes ou adultos, pode limitar-se a uma sensação subjetiva de inquietação interna constante).<br>  4. Frequentemente é incapaz de brincar ou se envolver em atividades de lazer calmamente.<br>  5. Frequentemente \"não para\", agindo como se estivesse \"com o motor ligado\" (incapaz de ficar quieto por períodos prolongados).<br>  6. Frequentemente fala demais de forma descontrolada.<br>  7. Frequentemente solta uma resposta antes que a pergunta tenha sido concluída (completa frases dos outros, não espera a sua vez de falar).<br>  8. Frequentemente tem dificuldade para esperar a sua vez (em filas, em jogos).<br>  9. Frequentemente interrompe ou se intromete nas conversas, jogos ou atividades dos outros."
+        ],
+        [
+          "4",
+          "Critérios B, C, D e E:"
+        ],
+        [
+          "p",
+          "* <strong>Critério B (Idade de Início):</strong> Vários sintomas de desatenção ou hiperatividade-impulsividade estavam presentes <strong>antes dos 12 anos de idade</strong> (o DSM-IV exigia início antes dos 7 anos; o DSM-5 ampliou para 12 anos).\n<em> <strong>Critério C (Percursor em Múltiplos Ambientes):</strong> Vários sintomas devem estar presentes em <strong>DOIS OU MAIS AMBIENTES</strong> (ex.: em casa E na escola; no trabalho E com amigos/parentes; em outras atividades). </em>Atenção de Prova:* Se os sintomas ocorrem única e exclusivamente em casa ou exclusivamente na escola, o diagnóstico de TDAH NÃO pode ser estabelecido (deve-se investigar disfunção relacional familiar, problemas pedagógicos ou bullying escolar)!\n* <strong>Critério D:</strong> Há evidências claras de que os sintomas interferem no funcionamento social, acadêmico ou profissional, ou reduzem sua qualidade.\n* <strong>Critério E:</strong> Os sintomas não ocorrem exclusivamente durante o curso de esquizofrenia ou outro transtorno psicótico e não são mais bem explicados por outro transtorno mental."
+        ],
+        [
+          "3",
+          "3.3 As Três Apresentações Clínicas do TDAH"
+        ],
+        [
+          "p",
+          "1. <strong>Apresentação Combinada (TDAH-C):</strong> Preenche os critérios completos tanto para Desatenção (&ge; 6 sintomas) quanto para Hiperatividade-Impulsividade (&ge; 6 sintomas) nos últimos 6 meses. É a forma mais comum em meninos e a mais precocemente identificada nas escolas devido às queixas comportamentais.\n2. <strong>Apresentação Predominantemente Desatenta (TDAH-D):</strong> Preenche &ge; 6 sintomas de desatenção, mas < 6 sintomas de hiperatividade-impulsividade nos últimos 6 meses. É a apresentação clássica que afeta <strong>meninas</strong>, frequentemente subdiagnosticada ou diagnosticada tardiamente na adolescência, pois a aluna não incomoda a sala de aula, mas apresenta rendimento escolar cronicamente aquém do seu potencial cognitivo.\n3. <strong>Apresentação Predominantemente Hiperativa/Impulsiva (TDAH-HI):</strong> Preenche &ge; 6 sintomas de hiperatividade-impulsividade, mas < 6 sintomas de desatenção nos últimos 6 meses. Mais comum em crianças em idade pré-escolar (4 a 5 anos)."
+        ],
+        [
+          "3",
+          "3.4 Instrumentos de Triagem e Avaliação Padronizada: A Escala SNAP-IV"
+        ],
+        [
+          "p",
+          "A escala <strong>SNAP-IV</strong> (versão abreviada dos critérios do DSM-IV/5 composta por 18 itens de TDAH mais 8 itens de Transtorno Opositor Desafiador) é a ferramenta de auxílio clínico mais disseminada no Brasil e no mundo:\n* Deve ser preenchida obrigatoriamente tanto pelos <strong>pais</strong> quanto pelos <strong>professores da escola</strong>.\n* A pontuação avalia a gravidade dos sintomas (0 = Nem um pouco; 1 = Só um pouco; 2 = Bastante; 3 = Demais).\n* A concordância de sintomas em ambos os relatórios (escola e família) fornece o substrato fidedigno para confirmar o critério C de múltiplos ambientes."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "4-dificuldades-de-aprendizagem-e-transtornos-especificos",
+      0,
+      [
+        [
+          "2",
+          "4. Dificuldades de Aprendizagem e Transtornos Específicos"
+        ],
+        [
+          "3",
+          "4.1 Diferenciação Fundamental: Dificuldade Escolar vs. Transtorno Específico de Aprendizagem"
+        ],
+        [
+          "p",
+          "Uma das distinções mais cobradas em provas e mais desafiadoras na clínica neuropediátrica é a separação entre \"Dificuldade Escolar Secundária\" e \"Transtorno Específico de Aprendizagem\":\n* <strong>Dificuldade Escolar (Problema Extrínseco / Secundário):</strong> Condição heterogênea e abrangente na qual o baixo rendimento acadêmico decorre de <strong>fatores externos e ambientais</strong> (ex.: métodos pedagógicos inadequados, evasão escolar, desmotivação, vulnerabilidade social, carência nutricional crônica), <strong>alterações sensoriais não corrigidas</strong> (erros de refração visual não diagnosticados, hipoacusia condutiva ou neurossensorial) ou <strong>transtornos emocionais/psiquiátricos reativos</strong> (conflitos familiares graves, divórcio dos pais, luto, bullying, depressão infantil ou ansiedade de desempenho). Quando esses fatores desencadeantes são corrigidos ou quando se oferece apoio psicopedagógico e reforço escolar individualizado, a criança recupera o ritmo de aprendizado esperado para a sua faixa etária.\n* <strong>Transtorno Específico de Aprendizagem (TEAp - Condição Neurobiológica Intrínseca):</strong> Transtorno do neurodesenvolvimento de base biológica e genética com disfunção em circuitos corticais específicos responsáveis pelo processamento cognitivo de símbolos verbais ou matemáticos. O prejuízo nas habilidades acadêmicas persiste por <strong>pelo menos 6 meses</strong>, apesar do fornecimento de intervenções pedagógicas dirigidas e comprovadamente eficazes. O indivíduo apresenta capacidade intelectual geral normal (QI preservado) e oportunidades educacionais adequadas, mas seu rendimento em leitura, escrita ou matemática situa-se acentuadamente abaixo do esperado para sua idade cronológica e escolaridade."
+        ],
+        [
+          "3",
+          "4.2 Dislexia do Desenvolvimento (Transtorno Específico com Prejuízo na Leitura)"
+        ],
+        [
+          "p",
+          "A Dislexia é o mais comum dos transtornos específicos de aprendizagem, acometendo cerca de 5% a 10% da população escolar mundial. Caracteriza-se por uma <strong>dificuldade persistente e severa no reconhecimento preciso e/ou fluente de palavras escritas e por baixa habilidade de decodificação fonológica e ortografia</strong>."
+        ],
+        [
+          "p",
+          "* <strong>Mecanismo Neurocognitivo Subjacente (Déficit Fonológico Central):</strong><br>  * O cérebro humano não possui circuitos geneticamente programados para a leitura (a escrita é uma invenção cultural recente de cerca de 5.000 anos). Para aprender a ler, o cérebro precisa reciclar circuitos visuais e linguísticos temporoparietais do hemisfério esquerdo.<br>  * O cerne da dislexia reside no <strong>déficit no processamento da Consciência Fonológica</strong>: a incapacidade cognitiva de perceber, isolar e manipular conscientemente os menores sons constituintes da fala humana (os <strong>fonemas</strong>).<br>  * Sem a consciência fonológica bem estabelecida, a criança não consegue fazer a correspondência biunívoca entre os fonemas (sons) e os <strong>grafemas</strong> (letras escritas) — o chamado <strong>Princípio Alfabético</strong>.<br>  * Estudos de ressonância magnética funcional demonstram uma hipoativação marcante nas áreas temporoparietal e occipitotemporal esquerdas (a chamada \"área da forma visual da palavra\" no giro fusiforme esquerdo), com hiperativação compensatória no giro frontal inferior (área de Broca) e no hemisfério direito.<br>* <strong>Manifestações Clínicas e Sinais Precoces:</strong><br>  <em> Na idade pré-escolar: atraso na aquisição da fala; dificuldade crônica para memorizar rimas infantis, cantigas e nomes das letras; dificuldade para nomear cores e objetos rapidamente (</em>Rapid Automatized Naming* - RAN deficitário).<br>  * Na idade escolar: leitura lenta, silabada, hesitante, com esforço extenuante; inversão de letras com simetria espacial semelhante (b/d, p/q); omissão, substituição ou adição de sílabas e palavras; dificuldade para ler pseudopalavras (palavras inventadas sem significado, como \"flurpo\" ou \"branto\", que exigem decodificação fonológica pura e não memorização visual de vocabulário). A compreensão textual é secundariamente comprometida em decorrência da sobrecarga cognitiva exigida para decodificar cada letra, esgotando a memória de trabalho.<br>* <strong>Intervenção Baseada em Evidências:</strong> O tratamento da dislexia NÃO se faz com medicamentos nem com métodos visuais/motores (como exercícios oculares ou óculos de lentes coloridas, que não possuem comprovação científica). A única abordagem terapêutica padrão-ouro com evidência científica sólida de nível A consiste na <strong>intervenção fonoaudiológica e psicopedagógica estruturada através do Método Fônico Multissensorial</strong>, com treino explícito e intensivo da consciência fonológica e da correspondência grafema-fonema."
+        ],
+        [
+          "3",
+          "4.3 Discalculia do Desenvolvimento (Transtorno Específico com Prejuízo na Matemática)"
+        ],
+        [
+          "p",
+          "A Discalculia é um transtorno do neurodesenvolvimento que afeta a aquisição das habilidades aritméticas básicas em crianças com inteligência preservada:\n* <strong>Neurobiologia:</strong> Disfunção estrutural e funcional no <strong>sulco intraparietal bilateral</strong>, região cortical responsável pelo \"senso numérico inato\" (capacidade de estimar magnitudes não verbais e relacionar quantidades).\n* <strong>Manifestações Clínicas:</strong>\n  * Dificuldade severa para compreender o conceito de número, magnitude numérica e valor posicional dos algarismos (ex.: não compreende por que 15 é maior que 8).\n  * Incapacidade crônica de memorizar fatos aritméticos básicos (como a tabuada simples de adição e multiplicação), necessitando recorrer permanentemente à contagem concreta nos dedos mesmo em idades avançadas.\n  * Dificuldade extrema para alinhar contas matemáticas em colunas, compreender sinais operacionais (+, -, x, /) e resolver problemas matemáticos contextuais."
+        ],
+        [
+          "3",
+          "4.4 Disgrafia e Transtorno do Desenvolvimento da Coordenação (TDC)"
+        ],
+        [
+          "p",
+          "* <strong>Disgrafia (Transtorno com Prejuízo na Expressão Escrita):</strong> Dificuldade no traçado caligráfico das letras, resultando em escrita ilegível, letras com formato distorcido, velocidade de escrita extremamente lenta, espaçamento irregular entre palavras e dor muscular na mão ao escrever decorrente de preensão tensional inadequada do lápis.\n* <strong>Transtorno do Desenvolvimento da Coordenação (TDC / \"Criança Desajeitada\"):</strong> Dificuldade acentuada na coordenação motora fina e ampla que interfere significativamente nas atividades cotidianas (amarrar sapatos, abotoar roupas, usar tesoura, andar de bicicleta, praticar esportes). Acomete cerca de 5% das crianças e apresenta altíssima comorbidade com TDAH (presente em até 50% dos casos de TDAH)."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "5-investigacao-diagnostica-diagnostico-diferencial-e-comorbidades",
+      0,
+      [
+        [
+          "2",
+          "5. Investigação Diagnóstica, Diagnóstico Diferencial e Comorbidades"
+        ],
+        [
+          "3",
+          "5.1 O Papel Real dos Exames Complementares no Neurodesenvolvimento"
+        ],
+        [
+          "p",
+          "Uma das regras fundamentais da boa prática médica e dos exames de revalidação de diplomas consiste no reconhecimento de que <strong>o diagnóstico de TEA, TDAH e Transtornos de Aprendizagem é ESTRITAMENTE CLÍNICO</strong>. Não existe nenhum biomarcador sérico, teste genético isolado ou exame de neuroimagem que confirme ou descarte essas condições."
+        ],
+        [
+          "p",
+          "* <strong>Quando Solicitar Exames Complementares no TEA e Atrasos do Neurodesenvolvimento:</strong><br>  1. <strong>Avaliação Auditiva Objetiva (Mandatória em Todo Atraso de Fala):</strong> Antes de fechar qualquer diagnóstico de TEA ou atraso de linguagem, é obrigatória a realização de <strong>Audiometria Tonal e Vocal</strong> (em crianças colaborativas) ou <strong>Potencial Evocado Auditivo de Tronco Encefálico (PEATE / BERA)</strong> com Emissões Otoacústicas (EOA), para afastar categoricamente deficiência auditiva como causa isolada ou comorbidade de atraso de fala e comunicação.<br>  2. <strong>Investigação Genética (Diretriz SBP e ACMG):</strong><br>     * <strong>Painel de Microarray Cromossômico (CMA / Hibridização Genômica Comparativa - CGH-Array):</strong> Exame genético de primeira linha para todas as crianças com TEA associado a deficiência intelectual, dismorfismos faciais, malformações congênitas ou micro/macrocefalia, identificando variações no número de cópias (CNVs) patogênicas em até 10% a 15% dos casos.<br>     * <strong>Pesquisa Molecular para Síndrome do X Frágil (Gene FMR1):</strong> Recomendada em meninos com TEA, atraso global e dismorfismos (orelhas grandes em abano, face alongada, mandíbula proeminente e macroorquidismo pós-puberal).<br>  3. <strong>Eletroencefalograma (EEG) Prolongado ou em Sono:</strong> Indicado formalmente <strong>APENAS se houver história de crises epilépticas clínicas, episódios paroxísticos motores ou perda/regressão rápida de habilidades de linguagem adquiridas</strong> (para investigar a Síndrome de Landau-Kleffner - afasia epiléptica adquirida, e o estado de mal epiléptico no sono lento). O EEG de rotina é contraindicado se a criança não tiver clínica de epilepsia.<br>  4. <strong>Ressonância Magnética de Encéfalo (RM):</strong> Indicada na presença de microcefalia ou macrocefalia progressiva acentuada, assimetria focal no exame neurológico clássico (paresias, hiperreflexia, sinal de Babinski), estigmas neurocutâneos (manchas hipocrômicas na Esclerose Tuberosa, manchas café-com-leite na Neurofibromatose tipo 1) ou regressão neurológica."
+        ],
+        [
+          "3",
+          "5.2 Diagnóstico Diferencial Extensivo"
+        ],
+        [
+          "p",
+          "* <strong>Transtorno de Déficit de Atenção vs. Transtornos de Ansiedade Infantil:</strong> Crianças ansiosas frequentemente parecem desatentas na sala de aula porque sua atenção está sequestrada por ruminações internas de medo, preocupação com o desempenho, antecipação de catástrofes ou fobia social. A criança com ansiedade pura geralmente não exibe história de desatenção ou hiperatividade nos primeiros anos de vida e a desatenção flutua conforme o nível de estresse ambiental.\n* <strong>TDAH vs. Transtorno Opositor Desafiador (TOD):</strong> O TOD caracteriza-se por um padrão recorrente de humor irritável/raivoso, comportamento desafiador/argumentativo e índole vingativa direcionada a figuras de autoridade (pais, professores). O TDAH e o TOD são comórbidos em cerca de 40% a 50% dos pacientes; a criança com TDAH puro desobedece regras por distração, impulsividade ou esquecimento, enquanto a criança com TOD recusa-se ativamente a cumprir regras por desafio deliberado e raiva.\n* <strong>TEA Nível 1 vs. Transtorno de Ansiedade Social (Fobia Social):</strong> Na fobia social, a criança possui capacidade preservada de compreender sinais sociais não verbais, expressões faciais e intenções alheias, mas experimenta medo paralisante de julgamento negativo. No TEA, o déficit reside na compreensão intrínseca e no processamento recíproco da comunicação social, com presença mandatória de interesses restritos e comportamentos repetitivos (ausentes na fobia social).\n* <strong>Deficiência Intelectual (DI / Transtorno do Desenvolvimento Intelectual):</strong> Caracterizada por déficits nas funções intelectuais gerais (raciocínio, resolução de problemas, pensamento abstrato e aprendizagem acadêmica confirmados por avaliação neuropsicológica padronizada com escore de QI < 70) e déficits no funcionamento adaptativo em múltiplos ambientes. No TEA puro sem DI, a criança pode apresentar habilidades cognitivas não verbais totalmente normais ou superiores, contrastando com os prejuízos na comunicação social."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "6-abordagem-terapeutica-interdisciplinar-e-psicofarmacologia",
+      0,
+      [
+        [
+          "2",
+          "6. Abordagem Terapêutica Interdisciplinar e Psicofarmacologia"
+        ],
+        [
+          "3",
+          "6.1 Terapêutica no Transtorno do Espectro Autista (TEA)"
+        ],
+        [
+          "p",
+          "O tratamento do TEA é <strong>eminentemente não farmacológico, interdisciplinar, intensivo e individualizado</strong>:"
+        ],
+        [
+          "p",
+          "1. <strong>Intervenções Comportamentais Baseadas em Evidências:</strong><br>   <em> <strong>Análise do Comportamento Aplicada (ABA - </em>Applied Behavior Analysis*):</strong> É a intervenção comportamental com maior nível de evidência científica e comprovação de eficácia no desenvolvimento de repertórios de comunicação, habilidades sociais, autonomia nas atividades de vida diária (AVDs) e redução de comportamentos desafiadores e autolesivos. Utiliza princípios de aprendizagem operante, reforçamento positivo diferencial e decomposição de tarefas complexas em etapas elementares.<br>   <em> <strong>Modelos Naturalistas de Desenvolvimento Comportamental (NDBI):</strong> Como o Modelo Denver de Intervenção Precoce (ESDM - </em>Early Start Denver Model*), especialmente desenhado para crianças muito jovens (12 a 36 meses), integrando técnicas de ABA em atividades lúdicas e interações cotidianas naturais focadas no afeto e na atenção compartilhada.<br>2. <strong>Fonoaudiologia Especializada:</strong><br>   <em> Focada no desenvolvimento da linguagem funcional, intenção comunicativa e pragmática (o uso social da linguagem). Em crianças não verbais, indica-se a introdução precoce de <strong>Comunicação Aumentativa e Alternativa (CAA)</strong>, como o sistema de troca de figuras (PECS - </em>Picture Exchange Communication System*) ou aplicativos em tablets com sintetizadores de voz, o que estimula (e não inibe!) o surgimento da fala oral.<br>3. <strong>Terapia Ocupacional com Abordagem de Integração Sensorial (Ayres):</strong><br>   * Indicada para a modulação de disfunções do processamento sensorial (hiper ou hiporreatividade tátil, vestibular, proprioceptiva e auditiva), permitindo a regulação do nível de alerta e o desenvolvimento da coordenação motora fina e ampla.<br>4. <strong>Psicofarmacologia no TEA (Quando e Como Indicar):</strong><br>   * <strong>REGRA FUNDAMENTAL DE OURO:</strong> <strong>NÃO existe nenhum medicamento capaz de curar o autismo ou melhorar os sintomas nucleares do TEA (a comunicação social e a reciprocidade).</strong> O uso de psicofármacos é estritamente sintomático e coadjuvante, indicado para o controle de sintomas associados desadaptativos graves que impedem o aprendizado e a convivência familiar (como agressividade extrema, crises de autoagressão, irritabilidade severa e hiperatividade descontrolada).<br>   * <strong>Antipsicóticos Atípicos Aprovados (FDA e Anvisa):</strong><br>     * <strong>Risperidona:</strong> Aprovada a partir dos 5 anos de idade para irritabilidade e agressividade no TEA. Iniciar em doses baixas (0,25 mg a 0,5 mg/dia à noite), titulando quinzenalmente conforme a resposta clínica.<br>     * <strong>Aripiprazol:</strong> Aprovado a partir dos 6 anos para irritabilidade no autismo. Apresenta menor incidência de ganho de peso e hiperprolactinemia em comparação à risperidona por ser um agonista parcial dopaminérgico D2.<br>   * <strong>Monitorização Obrigatória dos Efeitos Adversos dos Antipsicóticos:</strong> Ganho de peso acentuado com risco de síndrome metabólica, dislipidemia, elevação da glicemia de jejum, sedação excessiva, prolongamento do intervalo QTc no eletrocardiograma e <strong>hiperprolactinemia</strong> (que pode causar ginecomastia e galactorreia em meninos e meninas)."
+        ],
+        [
+          "3",
+          "6.2 Tratamento Multimodal do TDAH"
+        ],
+        [
+          "p",
+          "De acordo com as diretrizes da Academia Americana de Pediatria (AAP 2019/2024) e da Sociedade Brasileira de Pediatria, o manejo do TDAH deve ser obrigatoriamente <strong>multimodal</strong>, combinando intervenções psicossociais, adaptações pedagógicas escolares e farmacoterapia:"
+        ],
+        [
+          "p",
+          "* <strong>Estratégia por Faixa Etária:</strong><br>  * <strong>Crianças em Idade Pré-Escolar (4 a 5 anos de idade):</strong> A intervenção de primeira linha recomendada é o <strong>Treinamento Parental em Manejo Comportamental (PTBM)</strong> e intervenções comportamentais na sala de aula. A medicação (Metilfenidato) só deve ser considerada se as intervenções comportamentais falharem após 6 a 9 meses e persistirem prejuízos funcionais graves.<br>  * <strong>Crianças em Idade Escolar (6 a 11 anos) e Adolescentes (12 a 18 anos):</strong> A recomendação padrão-ouro de primeira linha com nível de evidência máxima (Nível A) é a <strong>associação simultânea de Farmacoterapia baseada em Psicoestimulantes com Terapia Cognitivo-Comportamental / Treinamento Parental e Adaptações Escolares</strong>."
+        ],
+        [
+          "4",
+          "Psicofarmacologia do TDAH: Fármacos de Primeira Linha (Psicoestimulantes)"
+        ],
+        [
+          "p",
+          "Os psicoestimulantes são os fármacos mais amplamente estudados e eficazes de toda a psiquiatria da infância, com taxa de resposta clínica superior a 70% a 80%:"
+        ],
+        [
+          "p",
+          "1. <strong>Metilfenidato:</strong><br>   * <strong>Mecanismo de Ação Molecular:</strong> Bloqueador potente e reversível dos transportadores pré-sinápticos de recaptação de Dopamina (DAT) e Noradrenalina (NET). Ao bloquear o DAT e o NET, o metilfenidato impede a recaptação desses neurotransmissores, elevando expressivamente suas concentrações extracelulares na fenda sináptica do córtex pré-frontal e do estriado, restaurando a sinalização inibitória e o foco atencional.<br>   * <strong>Apresentações e Formulações Comerciais no Brasil:</strong><br>     <em> </em>Metilfenidato de Liberação Imediata (Ritalina simples):* Comprimidos de 10 mg. Início de ação rápido (20 a 30 minutos), com pico de efeito em 1 a 2 horas e <strong>duração ultracurta de apenas 3 a 4 horas</strong>. Exige tomadas repetidas ao longo do dia (geralmente após o café da manhã e após o almoço), gerando o indesejável \"efeito rebote\" ao final da tarde e estigmatização da criança na escola.<br>     <em> </em>Metilfenidato de Liberação Prolongada por Sistema Osmótico (Concerta):* Cápsulas de 18 mg, 36 mg e 54 mg. Tecnologia OROS de bomba osmótica com perfil de liberação bifásico: 22% do fármaco é liberado imediatamente no revestimento externo e 78% é liberado de forma contínua e gradual por pressão osmótica interna. <strong>Duração de efeito de 10 a 12 horas</strong>, permitindo tomada única matinal diária, cobrindo todo o período escolar e a realização dos deveres de casa.<br>     <em> </em>Metilfenidato de Liberação Modificada (Ritalina LA):* Cápsulas de 10 mg, 20 mg, 30 mg e 40 mg com esferas com dois tipos de revestimento (50% de liberação imediata e 50% de liberação retardada após 4 horas). Duração de ação de 6 a 8 horas.<br>   * <strong>Doses e Titulação:</strong> Dose inicial habitual de 0,3 a 0,5 mg/kg/dia, titulada a cada 1 a 2 semanas até atingir a dose ótima de eficácia clínica sem efeitos colaterais limitantes (dose máxima recomendada de 2 mg/kg/dia ou 60 mg/dia para formulações convencionais / 72 mg/dia para Concerta)."
+        ],
+        [
+          "p",
+          "2. <strong>Dimesilato de Lisdexanfetamina (Venvanse / Juneve):</strong><br>   * <strong>Mecanismo:</strong> É uma pró-droga inativa composta por D-anfetamina covalentemente ligada ao aminoácido L-lisina. Não é ativada no trato digestivo, necessitando ser absorvida e enzimaticamente hidrolisada pelas hemácias na circulação sistêmica para liberar a D-anfetamina livre ativa. Essa tecnologia farmacocinética impede o abuso por vias alternativas (como inalação ou injeção venosa) e proporciona uma curva plasmática extremamente suave e previsível com <strong>duração terapêutica sustentada de 12 a 14 horas</strong>.<br>   * <strong>Apresentações e Doses:</strong> Cápsulas de 30 mg, 50 mg e 70 mg. Iniciar com 30 mg pela manhã (pode ser dissolvido em água se houver dificuldade de engolir a cápsula), titulando até o máximo de 70 mg/dia."
+        ],
+        [
+          "p",
+          "* <strong>Efeitos Adversos Mais Comuns dos Psicoestimulantes e Conduta Clínica:</strong><br>  <em> <strong>Anorexia e Perda de Apetite (Extremamente Comum):</strong> Ocorre no pico de ação da medicação (durante o almoço). </em>Manejo:* Oferecer um café da manhã hipercalórico e substancial antes de administrar a medicação; oferecer lanches nutritivos ao final da tarde e um jantar reforçado quando o efeito do estimulante estiver cessando.<br>  <em> <strong>Insônia Inicial:</strong> Decorrente da persistência de níveis estimulantes no final da noite. </em>Manejo:* Administrar a medicação o mais cedo possível pela manhã (antes das 8 horas); higiene do sono rigorosa; se necessário, associar Melatonina ou Clonidina noturna.<br>  <em> <strong>Desaceleração Transitória da Curva de Crescimento Pondoestatural:</strong> Estudos de longo prazo demonstram uma discreta lentificação transitória na velocidade de crescimento est决ral nos primeiros 1 a 2 anos de uso, sem impacto significativo na estatura final adulta. </em>Conduta:* Monitoramento antropométrico periódico e rigoroso de peso e estatura a cada 3 a 6 meses plotados nas curvas de crescimento da OMS. Se houver queda acentuada de percentil, programar \"férias medicamentosas\" parciais durante os recessos escolares prolongados.<br>  <em> <strong>Efeitos Cardiovasculares:</strong> Discreta elevação na frequência cardíaca (aumento médio de 3 a 6 bpm) e na pressão arterial média (elevação de 2 a 4 mmHg). </em>Conduta:<em> Aferição periódica da PA e FC em todas as consultas. </em>Atenção de Prova:* O eletrocardiograma (ECG) de rotina NÃO é obrigatório antes de iniciar metilfenidato em crianças hígidas assintomáticas sem histórico pessoal de síncope aos esforços ou histórico familiar de morte súbita precoce inexplicada ou canalopatias (Síndrome do QT Longo, Síndrome de Brugada). Se houver história de cardiopatia congênita ou morte súbita familiar, a avaliação com cardiologista pediátrico e ECG tornam-se mandatórios!<br>  * <strong>Cefaleia e Dor Abdominal Transitórias:</strong> Comuns nos primeiros dias de introdução ou aumento de dose, regredindo espontaneamente em 1 a 2 semanas."
+        ],
+        [
+          "4",
+          "Fármacos Não Estimulantes de Segunda Linha no TDAH"
+        ],
+        [
+          "p",
+          "Indicados na presença de intolerância grave a estimulantes, ausência de resposta terapêutica após teste adequado com duas classes distintas de psicoestimulantes (metilfenidato e anfetamina), presença de comorbidade com tiques severos / Síndrome de Tourette com piora expressiva pelos estimulantes, ou histórico ativo de abuso de substâncias psicoativas:\n* <strong>Atomoxetina:</strong> Inibidor potente e altamente seletivo da recaptação de Noradrenalina (sem ação dopaminérgica estriatal, o que elimina totalmente o risco de dependência ou abuso). Aprovada e lançada recentemente no Brasil. Não é uma substância controlada por receita amarela. Apresenta início de ação gradual (leva de 2 a 6 semanas para atingir o efeito terapêutico máximo).\n* <strong>Agonistas Alfa-2 Adrenérgicos (Clonidina e Guanfacina):</strong> Estimulam os receptores alfa-2A pré-frontais pós-sinápticos. Extremamente úteis em crianças com TDAH associado a hiperatividade motora extrema, agressividade, insônia grave ou tiques múltiplos comórbidos."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "7-casos-clinicos-estruturados-e-resolvidos-com-raciocinio-passo-a-passo",
+      0,
+      [
+        [
+          "2",
+          "7. Casos Clínicos Estruturados e Resolvidos com Raciocínio Passo a Passo"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Rastreamento Positivo com M-CHAT-R/F e Diagnóstico Precoce de TEA Nível 2"
+        ],
+        [
+          "p",
+          "* <strong>Identificação e História:</strong> Menino de 1 ano e 8 meses (20 meses de idade cronológica), filho único, é trazido pela mãe para consulta de puericultura de rotina na Unidade Básica de Saúde da Família (UBSF). A mãe refere que a gravidez e o parto foram a termo e sem intercorrências, com vacinação em dia. Ao ser questionada sobre o desenvolvimento geral, a mãe relata: \"Acho ele um menino muito tranquilo e independente; ele brinca sozinho por horas no quarto sem me procurar. Minha única preocupação é que ele ainda não fala quase nada, só emite uns sons sem sentido, e quando eu o chamo pelo nome, ele não olha, parece surdo\".\n* <strong>Exame Físico Pediátrico e Observação Semiológica do Comportamento:</strong>\n  * Exame físico geral, peso, estatura e perímetro cefálico no percentil 50 da curva da OMS. Sem estigmas dismórficos faciais ou cutâneos. Otoscopia bilateral normal, com membranas timpânicas íntegras e translúcidas.\n  <em> </em>Observação da Interação no Consultório:<em> O médico tenta interagir com a criança chamando-a pelo nome por cinco vezes em volume audível; a criança não interrompe o que está fazendo e não estabelece contato visual. Quando o examinador aponta para um boneco colorido no topo do armário dizendo \"Olha o boneco!\", a criança olha fixamente para o dedo do examinador e não para o objeto apontado (ausência de atenção compartilhada). A criança pega uma caixa de blocos de madeira e, em vez de empilhar ou brincar de construir, alinha os blocos em uma linha reta milimétrica perfeita no chão. Quando o médico retira suavemente um dos blocos para tentar uma brincadeira compartilhada, a criança tem uma crise intensa de choro com agitação psicomotora vigorosa e movimentos rápidos de sacudir as mãos (</em>flapping*).\n* <strong>Aplicação do Instrumento de Rastreamento (M-CHAT-R/F):</strong>\n  * O médico aplica o questionário de 20 itens aos pais.\n  * O M-CHAT-R pontua 9 itens de risco (incluindo: não atende ao nome, não aponta para mostrar interesse, não traz objetos para mostrar, não segue o apontar do adulto, não faz brincadeira de faz-de-conta, não olha nos olhos).\n  <em> </em>Interpretação e Estratificação:* Pontuação de 9 pontos enquadra o paciente na categoria de <strong>ALTO RISCO (escore de 8 a 20)</strong>. Nesta faixa, <strong>NÃO há necessidade de aplicar a entrevista de seguimento</strong>; o teste é considerado categoricamente positivo para alto risco de TEA.\n* <strong>Raciocínio Diagnóstico e Conduta Imediata:</strong>\n  1. <em>Exame Complementar Mandatório:</em> Como a queixa inicial inclui atraso de fala e \"parece surdo\", solicita-se imediatamente <strong>Audiometria e Potencial Evocado Auditivo de Tronco Encefálico (PEATE / BERA)</strong> para excluir formalmente perda auditiva neurossensorial.\n  2. <em>A Conduta Crucial de Atenção Primária:</em> <strong>O médico da UBS NÃO deve aguardar o agendamento de consulta com o neuropediatra (que pode demorar meses na rede pública) para iniciar as intervenções terapêuticas.</strong>\n  3. <em>Encaminhamento Imediato para Estimulação Interdisciplinar:</em> Emissão de guia de encaminhamento para intervenção precoce em Centro Especializado em Reabilitação (CER) / APAE / rede de suporte, indicando Fonoaudiologia com foco em comunicação social e Terapia Ocupacional com Integração Sensorial, além de orientar a família em estratégias domiciliares de estimulação e linguagem baseadas em ABA.\n  4. <em>Encaminhamento Especializado:</em> Agendamento simultâneo com Neuropediatra para avaliação diagnóstica formal segundo os critérios do DSM-5-TR (confirmando TEA Nível 2 de suporte - exige apoio substancial, associado a atraso da linguagem estrutural) e avaliação genética de primeira linha com CGH-Array."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Desatenção e Dificuldade Escolar — TDAH Predominantemente Desatento em Menina"
+        ],
+        [
+          "p",
+          "* <strong>Identificação e História:</strong> Menina de 9 anos e 4 meses, cursando o 4º ano do Ensino Fundamental em escola privada, é encaminhada pela coordenação pedagógica para avaliação neuropediátrica. A queixa da escola relata: \"A aluna é extremamente doce, boazinha e calma, nunca briga com ninguém e não incomoda a aula. No entanto, ela passa as aulas 'no mundo da lua', olhando pela janela. Não copia os conteúdos da lousa a tempo, esquece de anotar as lições de casa na agenda, erra questões banais nas provas por não ler o enunciado até o fim e suas notas caíram drasticamente no último ano\".\n* <strong>Histórico Familiar e Domiciliar:</strong>\n  * Os pais confirmam que em casa a rotina é exaustiva: para fazer a lição de casa de 30 minutos, a menina leva mais de 3 horas, levantando-se a cada instante para pegar água, desenhar ou acariciar o cachorro. O quarto e a mochila são um caos de desorganização; perde casacos, estojos e livros semanalmente. Esquece ordens verbais simples dadas pela mãe (se a mãe pede para escovar os dentes e calçar os sapatos, ela vai ao banheiro e é encontrada minutos depois brincando com a escova de cabelo).\n  * O pai relata que ele próprio sempre foi muito disperso e desorganizado na infância, tendo abandonado duas faculdades por dificuldade de concentração.\n  * O histórico pré, peri e pós-natal é irrelevante; marcos motores e de fala atingidos nas idades esperadas.\n* <strong>Avaliação Semiológica e Escalas Padronizadas:</strong>\n  * Exame físico geral e neurológico convencional normais. Aferição da PA: 100x60 mmHg, FC: 78 bpm. Sem alterações visuais (oftalmologista recente normal).\n  <em> </em>Aplicação da Escala SNAP-IV:*\n    * <strong>Relatório dos Professores:</strong> 8 de 9 itens positivos para Desatenção (marcou \"bastante\" ou \"demais\"); apenas 1 item de hiperatividade motora positivo.\n    * <strong>Relatório dos Pais:</strong> 8 de 9 itens positivos para Desatenção; zero itens de hiperatividade.\n    * Pontuação para Transtorno Opositor Desafiador: zero pontos em ambos os ambientes.\n* <strong>Raciocínio Clínico e Diagnóstico Diferencial:</strong>\n  * A paciente preenche com perfeição os critérios do DSM-5-TR para <strong>TDAH, Apresentação Predominantemente Desatenta</strong>:\n    * Pelo menos 6 sintomas de desatenção mantidos por mais de 6 meses (tem 8 sintomas).\n    * Menos de 6 sintomas de hiperatividade-impulsividade (tem apenas 1).\n    * Início dos sintomas antes dos 12 anos de idade.\n    * Prejuízo funcional nítido documentado em pelo menos dois ambientes distintos (escola e casa).\n    * Impacto acadêmico direto com notas abaixo do potencial cognitivo.\n  * Afasta-se Transtorno de Ansiedade Generalizada (a paciente não tem medos antecipatórios, queixas somáticas ou ruminações de catástrofe) e afasta-se Dislexia (quando ela lê palavras isoladas com atenção, sua decodificação fonológica e velocidade de leitura são normais).\n* <strong>Plano Terapêutico Multimodal:</strong>\n  1. <em>Psicoeducação:</em> Orientação detalhada aos pais e à escola desmistificando o TDAH, explicando que a desatenção é uma disfunção neurobiológica executiva e não \"preguiça\", \"desleixo\" ou \"falta de vontade\".\n  2. <em>Adaptações Pedagógicas Escolares:</em> Posicionar a aluna na primeira carteira da fila central (próxima ao professor e longe da porta e janelas); fragmentar tarefas longas em etapas menores; permitir tempo adicional (30 minutos a mais) para a realização de provas; e uso de um sistema de checagem de agenda diária.\n  3. <em>Farmacoterapia de Primeira Linha:</em> Como a paciente tem mais de 6 anos e apresenta prejuízo acadêmico relevante, indica-se <strong>Metilfenidato de liberação prolongada (sistema OROS - Concerta 18 mg/dia pela manhã)</strong>. A formulação prolongada é preferida para evitar a necessidade de tomar medicação na escola ao meio-dia (evitando constrangimento) e fornecer cobertura sustentada de 10 a 12 horas para as aulas e tarefas da tarde.\n* <strong>Evolução e Seguimento:</strong> Em reavaliação após 30 dias de uso do Concerta 18 mg, os pais e a escola relatam melhora espetacular: o tempo de lição de casa caiu de 3 horas para 40 minutos, as anotações escolares estão completas e as notas nas avaliações subiram de 4,5 para 8,5. Aferição do peso e estatura inalterados, sem queixas de insônia ou cefaleia."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Dislexia do Desenvolvimento vs. TDAH com Comorbidade"
+        ],
+        [
+          "p",
+          "* <strong>Identificação e História:</strong> Menino de 8 anos e 6 meses, cursando o 3º ano do Ensino Fundamental. Os pais procuram atendimento queixando-se de que o filho \"não consegue aprender a ler\". Relatam que desde o primeiro ano a escola queixa-se de lentidão extrema na alfabetização. A professora atual refere que o menino é inteligente para discussões orais, participa ativamente de rodas de conversa e compreende perfeitamente histórias quando são lidas em voz alta para a turma; no entanto, quando solicitado a ler um texto curto individualmente, ele trava, chora, soletra cada letra com sofrimento extenuante e inventa palavras que não estão escritas no papel.\n* <strong>Exame Físico e Avaliação Neurocognitiva:</strong>\n  * Exame neurológico clássico normal. Audiometria e teste de acuidade visual normais.\n  <em> </em>Teste Informal de Leitura de Pseudopalavras:* Ao ser submetido à leitura de palavras inventadas que não existem no dicionário (ex.: \"vraldo\", \"trinpo\", \"bleca\"), a criança é completamente incapaz de decodificar os sons, demonstrando grave falha na rota fonológica de leitura. Ao ler palavras regulares conhecidas, troca letras com simetria visual semelhante (lê \"pato\" no lugar de \"bato\", \"dado\" no lugar de \"bado\") e inverte a ordem das sílabas.\n  * O teste de SNAP-IV preenchido pela escola revela 7 itens de desatenção positivos apenas durante as aulas de Língua Portuguesa e leitura individual, sendo totalmente normal durante as aulas de Educação Física, Artes e Ciências.\n* <strong>Raciocínio Clínico e Diagnóstico Diferencial:</strong>\n  * O paciente NÃO tem TDAH puro: sua desatenção é estritamente situacional e reativa, ocorrendo apenas diante de tarefas de leitura nas quais ele vivencia frustração crônica e exaustão mental (falha no critério de múltiplos ambientes e transversalidade dos sintomas).\n  * O quadro clínico é patognomônico de <strong>Transtorno Específico de Aprendizagem com Prejuízo na Leitura (Dislexia do Desenvolvimento)</strong>:\n    * Inteligência geral e raciocínio verbal preservados (compreende histórias orais perfeitamente).\n    * Déficit nuclear primário na <strong>Consciência Fonológica</strong> e na decodificação grafema-fonema, evidenciado pela incapacidade de ler pseudopalavras.\n    * Prejuízo na precisão, na velocidade e na fluência de leitura com impacto acadêmico direto persistindo por mais de 6 meses apesar do ensino escolar regular.\n* <strong>Conduta Terapêutica Baseada em Evidências:</strong>\n  1. <em>NÃO prescrever metilfenidato ou psicoestimulantes:</em> Medicamentos não tratam déficits de circuitos fonológicos da leitura.\n  2. <em>Encaminhamento Fonoaudiológico e Psicopedagógico Imediato:</em> Início de terapia estruturada baseada no <strong>Método Fônico Multissensorial</strong>, com treino explícito e sistemático de consciência fonológica (rimas, aliterações, segmentação e síntese de fonemas).\n  3. <em>Plano de Adaptação Escolar Individualizado (PEI):</em> Solicitação de adaptações curriculares: realizar avaliações acadêmicas através de leitor externo (o professor lê as questões da prova oralmente para o aluno) ou provas orais; não obrigar a leitura de textos em voz alta na frente da turma (prevenindo humilhação e ansiedade social); e tempo estendido para conclusão de provas escritas."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Caso Clínico 4: TDAH Associado a Transtorno Opositor Desafiador (TOD)"
+        ],
+        [
+          "p",
+          "* <strong>Identificação e História:</strong> Menino de 10 anos e 2 meses, trazido pela mãe após ter sido suspenso da escola pela terceira vez no bimestre. A diretora da escola afirma que a permanência do aluno na instituição tornou-se insustentável. Em sala de aula, o menino não para sentado, conversa o tempo todo, atira papéis nos colegas, responde com grosseria e sarcasmo aos professores e recusa-se ativamente a abrir o livro didático. Na semana anterior, após o professor confiscar seu celular durante uma prova, o menino teve um acesso de raiva violento, chutou a mesa do professor e ameaçou quebrar os vidros da sala.\n* <strong>Histórico e Exame:</strong>\n  * A mãe relata que em casa o comportamento é idêntico há mais de 2 anos: ele não aceita ordens, argumenta agressivamente contra qualquer limite imposto (\"Você não manda em mim!\"), culpa os irmãos por seus próprios erros, guarda rancor e tem explosões de raiva desproporcionais a pequenas frustrações. Além disso, desde os 4 anos de idade sempre foi excessivamente agitado, elétrico, impulsivo e desatento, não conseguindo terminar nenhuma atividade.\n  * Não há história de crueldade contra animais, roubo com violência ou destruição criminosa de patrimônio alheio (afastando Transtorno de Conduta grave).\n* <strong>Raciocínio Clínico e Aplicação de Critérios:</strong>\n  * O paciente preenche critérios completos do DSM-5-TR para <strong>duas condições neuropsiquiátricas comórbidas simultâneas</strong>:\n    1. <strong>TDAH, Apresentação Combinada:</strong> Sintomas graves e antigos de hiperatividade motora, impulsividade verbal e desatenção presentes em múltiplos ambientes antes dos 12 anos.\n    2. <strong>Transtorno Opositor Desafiador (TOD):</strong> Padrão de humor irritável/raivoso (perde a calma facilmente, fica ressentido), comportamento desafiador/argumentativo (discute frequentemente com figuras de autoridade, desafia ativamente regras, perturba deliberadamente os outros) presente por mais de 6 meses em grau clinicamente debilitante.\n* <strong>Plano de Tratamento Integrado:</strong>\n  1. <em>Treinamento de Pais em Manejo Comportamental (Parent Training):</em> É a intervenção psicológica com maior nível de eficácia para o componente TOD. Ensina os pais a estabelecerem regras claras, limites consistentes, rotinas visuais estruturadas, manejo calmo de crises de raiva e reforço positivo para comportamentos adequados (evitando castigos corporais que agravam a agressividade).\n  2. <em>Terapia Cognitivo-Comportamental (TCC) para a Criança:</em> Focada no treino de habilidades sociais, reconhecimento de gatilhos emocionais de raiva e controle inibitório.\n  3. <em>Farmacoterapia Dirigida:</em>\n     * O tratamento medicamentoso do TDAH subjacente é o primeiro passo farmacológico: inicia-se <strong>Metilfenidato de liberação prolongada ou Lisdexanfetamina</strong>. Estudos demonstram que em até 50% dos casos de TDAH + TOD comórbidos, o controle da impulsividade e da desatenção pelo estimulante melhora substancialmente os sintomas opositores.\n     * Se após a otimização da dose do estimulante e da terapia comportamental persistirem crises severas de agressividade e raiva explosiva descontrolada, indica-se a associação coadjuvante de um antipsicótico atípico em baixas doses (<strong>Risperidona 0,5 a 1 mg/dia</strong>) ou um agonista alfa-2 adrenérgico (<strong>Clonidina</strong>)."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "8-questoes-de-prova-comentadas-na-integra",
+      0,
+      [
+        [
+          "2",
+          "8. Questões de Prova Comentadas na Íntegra"
+        ],
+        [
+          "3",
+          "Questão 1 (Revalida INEP)"
+        ],
+        [
+          "p",
+          "Durante uma consulta de puericultura na Unidade Básica de Saúde, a mãe de um menino de 18 meses relata que o filho ainda não fala nenhuma palavra compreensível e que parece \"viver em um mundo próprio\". Relata que ele não olha nos olhos quando amamentado ou quando brincam, não atende ao ser chamado pelo nome e não aponta para os brinquedos que deseja, puxando a mão da mãe até o objeto sem olhar para o rosto dela. Além disso, a criança passa longos períodos girando as rodinhas dos carrinhos de brinquedo e fica extremamente agitada, chorando intensamente, se a mãe altera a disposição dos móveis da sala. A mãe pergunta se deve esperar até os 3 anos de idade para ver se a fala \"deslancha\", como sugerido por familiares. Diante desse quadro clínico, de acordo com as diretrizes da Sociedade Brasileira de Pediatria e do Ministério da Saúde, a conduta correta do médico é:"
+        ],
+        [
+          "p",
+          "A) Tranquilizar a mãe, explicando que variações no ritmo de aquisição da linguagem são normais até os 3 anos de idade em meninos, orientando retorno em 12 meses.  <br>B) Aplicar a escala de rastreamento M-CHAT-R/F, solicitar avaliação auditiva com BERA e iniciar imediatamente o encaminhamento para estimulação precoce multiprofissional, sem aguardar laudo de especialista.  <br>C) Solicitar ressonância magnética de encéfalo e eletroencefalograma prolongado antes de qualquer intervenção e prescrever risperidona em baixas doses para conter as crises de choro.  <br>D) Prescrever metilfenidato para melhorar o foco atencional da criança e agendar retorno trimestral para reavaliar a linguagem.  <br>E) Solicitar cariótipo de alta resolução e painel para erros inatos do metabolismo, orientando os pais a suspenderem qualquer estímulo lúdico para evitar sobrecarga sensorial."
+        ],
+        [
+          "p",
+          "* <strong>Gabarito Oficial:</strong> <strong>B</strong><br>* <strong>Comentário Detalhado:</strong><br>  * O paciente apresenta múltiplos sinais de alerta clássicos e precoces para Transtorno do Espectro Autista (TEA) aos 18 meses de vida: ausência de atenção compartilhada (não aponta com intenção protodeclarativa), falha na reciprocidade socioemocional e no contato visual, ausência de resposta ao nome, uso instrumental do outro (puxa a mão da mãe sem olhar para ela), brincadeira repetitiva estereotipada (girar rodinhas) e inflexibilidade a mudanças de rotina.<br>  * A recomendação oficial contemporânea da SBP e do Ministério da Saúde preconiza a aplicação do questionário <strong>M-CHAT-R/F</strong> aos 18 e 24 meses como rastreamento universal na Atenção Primária, a realização obrigatória de <strong>avaliação auditiva (PEATE / BERA)</strong> para afastar hipoacusia como causa ou comorbidade de atraso de linguagem e o <strong>encaminhamento IMEDIATO para intervenção precoce interdisciplinar (fonoaudiologia, terapia ocupacional e intervenção comportamental)</strong>.<br>  * <strong>Regra de Ouro:</strong> A estimulação precoce NUNCA deve ser adiada à espera de laudos formais de neuropediatras ou psiquiatras, aproveitando a janela biológica de máxima plasticidade cerebral.<br>* <strong>Refutação dos Distratores:</strong><br>  <em> </em>A está incorreta:* A postura de \"esperar até os 3 anos\" é um erro crasso e histórico que atrasa o início da intervenção precoce em um período crítico de plasticidade neural, piorando o prognóstico a longo prazo.<br>  <em> </em>C está incorreta:* Exames de neuroimagem e EEG de rotina não são indicados na ausência de sinais neurológicos focais ou convulsões; risperidona não é droga para diagnóstico de TEA e só tem indicação para agressividade grave em crianças mais velhas.<br>  <em> </em>D está incorreta:* O metilfenidato é contraindicado nessa faixa etária (não aprovado para menores de 6 anos) e não é o tratamento para os sintomas nucleares do TEA.<br>  <em> </em>E está incorreta:* Não há indicação de suspender estímulos lúdicos (a estimulação social estruturada é a base do tratamento); cariótipo foi superado pelo CGH-Array como exame genético de primeira linha."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 2 (ENARE / Residência Médica)"
+        ],
+        [
+          "p",
+          "Um menino de 8 anos é levado ao ambulatório de pediatria pelos pais por queixa de baixo rendimento escolar e problemas comportamentais. A professora relata que o aluno não consegue permanecer sentado na carteira durante as aulas, mexe os pés e tamborila os dedos continuamente, levanta-se para jogar papéis no lixo a todo instante, interrompe as explicações falando excessivamente e não espera a sua vez nos jogos no recreio. Em casa, a mãe relata que ele é incapaz de organizar seu quarto, perde constantemente materiais escolares e casacos, não termina as tarefas de casa e parece \"não escutar\" quando chamado, necessitando que as ordens sejam repetidas várias vezes. Os sintomas ocorrem desde os 5 anos de idade. Não há histórico de crises convulsivas, traumatismo craniano ou alterações do sono. O exame físico e neurológico é estritamente normal. A escala SNAP-IV preenchida pela professora e pelos pais demonstra 8 itens de desatenção e 7 itens de hiperatividade/impulsividade pontuados como \"bastante\" ou \"demais\". Considerando os critérios do DSM-5-TR e as diretrizes de tratamento, o diagnóstico e a conduta de primeira linha mais adequada são:"
+        ],
+        [
+          "p",
+          "A) Transtorno de Ansiedade de Separação; iniciar Sertralina 25 mg/dia e psicoterapia psicodinâmica.  <br>B) Transtorno do Déficit de Atenção com Hiperatividade (TDAH), Apresentação Combinada; iniciar tratamento multimodal com Metilfenidato e intervenções psicoeducacionais e comportamentais.  <br>C) Transtorno Opositor Desafiador isolado; iniciar Risperidona 1 mg/dia e suspender as atividades escolares temporariamente.  <br>D) Transtorno Específico de Aprendizagem com prejuízo na matemática; prescrever Clonidina e indicar reforço escolar em exatas.  <br>E) Deficiência Intelectual Leve; solicitar ressonância magnética de encéfalo e teste genético para Síndrome do X Frágil."
+        ],
+        [
+          "p",
+          "* <strong>Gabarito Oficial:</strong> <strong>B</strong><br>* <strong>Comentário Detalhado:</strong><br>  * O paciente preenche integralmente todos os critérios diagnósticos do DSM-5-TR para <strong>TDAH, Apresentação Combinada</strong>:<br>    * Pelo menos 6 sintomas de desatenção mantidos por mais de 6 meses (tem 8 sintomas).<br>    * Pelo menos 6 sintomas de hiperatividade/impulsividade mantidos por mais de 6 meses (tem 7 sintomas).<br>    * Início dos sintomas na infância precoce (antes dos 12 anos, presente desde os 5 anos).<br>    * Presença obrigatória e documentada de prejuízo funcional em múltiplos ambientes (pelo menos dois: escola E casa, confirmados pelas escalas SNAP-IV de pais e professores).<br>    * Impacto acadêmico e social direto.<br>  * Para crianças em idade escolar (&ge; 6 anos), a recomendação padrão-ouro de primeira linha com maior nível de evidência científica (Nível A) é a <strong>abordagem multimodal</strong>, associando farmacoterapia com <strong>Psicoestimulantes (Metilfenidato ou Lisdexanfetamina)</strong> a intervenções comportamentais parentais e adaptações no ambiente escolar.<br>* <strong>Refutação dos Distratores:</strong><br>  <em> </em>A está incorreta:* Não há queixas de medo excessivo de separação dos pais, pesadelos com separação ou recusa em ir à escola por angústia de separação.<br>  <em> </em>C está incorreta:* O paciente não exibe padrão de rancor, hostilidade vingativa ou desafio deliberado a autoridades que caracterizam o TOD; e mesmo se houvesse TOD comórbido, a droga de primeira linha não seria a risperidona em monoterapia.<br>  <em> </em>D está incorreta:* Os erros escolares decorrem de impulsividade e desatenção difusa, e não de um distúrbio neurobiológico específico do senso numérico parietal (discalculia).<br>  <em> </em>E está incorreta:* O paciente não tem déficit intelectual global adaptativo; seu exame é normal e a cognição é compatível com a idade."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 3 (UNICAMP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Menina de 7 anos e 6 meses, cursando o 2º ano do Ensino Fundamental, é encaminhada pela escola por dificuldade persistente no processo de alfabetização. A coordenadora relata que, enquanto seus colegas de turma já leem palavras e frases simples com fluência, a aluna apresenta leitura extremamente vagarosa, silabada e hesitante, com inversões frequentes de letras com orientação espacial espelhada (lê \"bola\" como \"dola\" ou \"pato\" como \"bato\"). Quando submetida à leitura de pseudopalavras (palavras inventadas sem significado lexical prévio), a criança demonstra total incapacidade de decodificação fonêmica. No entanto, sua capacidade de raciocínio lógico, linguagem oral espontânea, compreensão de histórias orais e sociabilidade são plenamente preservadas. Os testes de acuidade visual e audiometria tonal são normais. Diante desse quadro clínico neuropsicológico, a hipótese diagnóstica principal e a intervenção terapêutica baseada em evidências científicas de primeira linha são:"
+        ],
+        [
+          "p",
+          "A) Transtorno do Espectro Autista Nível 1; terapia comportamental baseada em Análise do Comportamento Aplicada (ABA).  <br>B) Transtorno Específico de Aprendizagem com Prejuízo na Leitura (Dislexia do Desenvolvimento); intervenção fonoaudiológica e psicopedagógica estruturada através do Método Fônico.  <br>C) Transtorno do Déficit de Atenção com Hiperatividade (TDAH) tipo desatento; introdução imediata de Metilfenidato de liberação prolongada.  <br>D) Deficiência Intelectual Moderada; inserção em classe especial exclusiva com currículo adaptado para educação não formal.  <br>E) Síndrome de Irlen; prescrição de óculos com filtros oftálmicos e lâminas coloridas de sobreposição visual."
+        ],
+        [
+          "p",
+          "* <strong>Gabarito Oficial:</strong> <strong>B</strong><br>* <strong>Comentário Detalhado:</strong><br>  * O caso clínico descreve o fenótipo patognomônico do <strong>Transtorno Específico de Aprendizagem com Prejuízo na Leitura (Dislexia do Desenvolvimento)</strong>:<br>    * Dificuldade severa e persistente na precisão, na velocidade e na fluência de leitura e soletração.<br>    * O déficit cognitivo nuclear reside na <strong>Consciência Fonológica</strong> (processamento fonológico e conversão grafema-fonema), documentado pela incapacidade de decodificar pseudopalavras (onde a rota lexical visual decorada é inútil).<br>    * Preservação da inteligência geral, do vocabulário oral e da compreensão de textos ouvidos.<br>  * A única intervenção terapêutica com evidência científica comprovada de Nível A para dislexia é a abordagem fonoaudiológica/psicopedagógica explícita, cumulativa e multissensorial através do <strong>Método Fônico</strong> (treino de consciência fonológica e correspondência entre fonemas e grafemas).<br>* <strong>Refutação dos Distratores:</strong><br>  <em> </em>A está incorreta:* A paciente não tem déficits na comunicação social, não tem interesses restritos e não apresenta comportamentos repetitivos/estereotipias.<br>  <em> </em>C está incorreta:* A dislexia não é tratada com estimulantes; o metilfenidato não melhora os circuitos de decodificação fonológica do giro fusiforme e da área temporoparietal esquerda.<br>  <em> </em>D está incorreta:* O raciocínio e a cognição geral são normais; a segregação em classes especiais é contraindicada e anti-inclusiva.<br>  <em> </em>E está incorreta:* A chamada \"Síndrome de Irlen\" e o uso de lentes coloridas não possuem respaldo nas sociedades de oftalmologia e pediatria (SBP e AAP), sendo considerados pseudocientíficos."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 4 (USP-RP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Em relação à farmacoterapia do Transtorno do Déficit de Atenção com Hiperatividade (TDAH) em crianças e adolescentes e aos efeitos adversos dos psicoestimulantes, assinale a alternativa CORRETA:"
+        ],
+        [
+          "p",
+          "A) O metilfenidato atua primariamente como agonista dos receptores serotoninérgicos 5-HT2A no hipocampo, estimulando a neurogênese na formação reticular ascendente.  <br>B) A lisdexanfetamina é uma pró-droga inativa que necessita de clivagem enzimática pelas hemácias na circulação sistêmica para liberar a D-anfetamina ativa, o que reduz o potencial de abuso por vias não orais.  <br>C) A realização de eletrocardiograma (ECG) é obrigatória para todas as crianças antes do início de qualquer formulação de metilfenidato, mesmo na ausência de sintomas ou antecedentes cardiovasculares pessoais ou familiares.  <br>D) O efeito adverso mais frequente dos psicoestimulantes é a sonolência diurna excessiva, sendo preconizada a administração do metilfenidato preferencialmente ao deitar.  <br>E) A atomoxetina é um psicoestimulante anfetamínico de tarja preta que age bloqueando exclusivamente os receptores dopaminérgicos D2 no corpo estriado."
+        ],
+        [
+          "p",
+          "* <strong>Gabarito Oficial:</strong> <strong>B</strong><br>* <strong>Comentário Detalhado:</strong><br>  * O dimesilato de lisdexanfetamina (Venvanse) é uma pró-droga constituída pela D-anfetamina ligada covalentemente à L-lisina. Ela é terapeuticamente inativa até ser absorvida pelo trato gastrointestinal e sofrer hidrólise enzimática específica por peptidases localizadas na membrana das <strong>hemácias</strong> no sangue periférico, liberando lentamente a D-anfetamina ativa.<br>  * Essa propriedade farmacocinética única impede a liberação rápida do fármaco caso o pó da cápsula seja aspirado por via nasal ou injetado por via intravenosa, minimizando significativamente o potencial de abuso e euforia rápida.<br>* <strong>Refutação dos Distratores:</strong><br>  <em> </em>A está incorreta:* O metilfenidato é um bloqueador seletivo dos transportadores de recaptação de Dopamina (DAT) e Noradrenalina (NET) no córtex pré-frontal e estriado, sem ação primária serotoninérgica.<br>  <em> </em>C está incorreta:* Segundo as diretrizes da Academia Americana de Pediatria e da Associação Americana do Coração (AHA), o ECG de rotina <strong>NÃO é mandatório</strong> em crianças assintomáticas sem histórico pessoal de síncope, palpitações aos esforços ou antecedentes familiares de morte súbita precoce inexplicada ou cardiopatias congênitas.<br>  <em> </em>D está incorreta:* O efeito adverso mais frequente é a <strong>anorexia (perda de apetite) e a insônia</strong>, razão pela qual os estimulantes devem ser administrados pela manhã e nunca ao deitar.<br>  <em> </em>E está incorreta:* A atomoxetina <strong>NÃO é um estimulante</strong> e não é substância de tarja preta; trata-se de um inibidor seletivo da recaptação de noradrenalina (não estimulante) sem risco de abuso."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 5 (Hospital Sírio-Libanês / Residência Médica)"
+        ],
+        [
+          "p",
+          "Um médico pediatra atende uma criança de 4 anos com diagnóstico estabelecido de Transtorno do Espectro Autista (TEA) Nível 3. Os pais relatam que a criança vem apresentando, há cerca de 3 semanas, episódios frequentes e graves de autoagressão (esmurrar a própria cabeça contra a parede até sangrar) e heteroagressão contra a irmã de 2 anos, sem que a família consiga conter o comportamento com as intervenções comportamentais habituais. A criança está perdendo o sono e não consegue participar das terapias de estimulação. Considerando a psicofarmacologia baseada em evidências aprovada para sintomas associados de irritabilidade e agressividade no autismo, a conduta medicamentosa mais indicada é:"
+        ],
+        [
+          "p",
+          "A) Prescrever Diazepam oral em doses fracionadas de 8/8 horas.  <br>B) Iniciar Risperidona em baixas doses com monitoramento antropométrico e metabólico periódico.  <br>C) Prescrever Metilfenidato de liberação imediata como estabilizador do humor.  <br>D) Iniciar Fluoxetina em altas doses para controle dos impulsos obsessivos de agressão.  <br>E) Prescrever Valproato de Sódio associado a Carbonato de Lítio como primeira escolha."
+        ],
+        [
+          "p",
+          "* <strong>Gabarito Oficial:</strong> <strong>B</strong><br>* <strong>Comentário Detalhado:</strong><br>  * No Transtorno do Espectro Autista, os medicamentos não tratam os sintomas nucleares (comunicação e interação social), mas são formalmente indicados para <strong>sintomas associados graves e incapacitantes</strong>, como <strong>irritabilidade severa, crises de autoagressão violenta, agressividade física contra terceiros e acessos de raiva incontroláveis</strong>.<br>  * A <strong>Risperidona</strong> (antipsicótico atípico / de segunda geração) foi o primeiro medicamento aprovado pela FDA e pela Anvisa para o tratamento da irritabilidade associada ao autismo em crianças. Inicia-se em doses baixas (0,25 a 0,5 mg/dia), com titulação cuidadosa e monitoramento obrigatório de peso corporal, circunferência abdominal, glicemia de jejum, perfil lipídico e prolactina sérica (risco de ganho ponderal e hiperprolactinemia).<br>* <strong>Refutação dos Distratores:</strong><br>  <em> </em>A está incorreta:* Os benzodiazepínicos (diazepam) não são indicados para o manejo crônico do comportamento no autismo e frequentemente desencadeiam o chamado \"efeito paradoxal\" em crianças com TEA (desinibição motora, piora da agitação psicomotora e da agressividade), além do risco de tolerância e dependência.<br>  <em> </em>C está incorreta:* O metilfenidato é indicado para sintomas de TDAH; em um paciente em crise de agressividade aguda, os psicoestimulantes podem aumentar a irritabilidade e a ansiedade.<br>  <em> </em>D está incorreta:* Inibidores seletivos da recaptação de serotonina (como a fluoxetina) não são drogas de primeira linha para agressividade e autoagressão no TEA e podem provocar ativação comportamental e insônia.<br>  <em> </em>E está incorreta:* Estabilizadores de humor (lítio/valproato) são opções de terceira linha para transtorno bipolar comórbido refratário, com alto perfil de toxicidade."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 6 (FAMERP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Menino de 6 anos é levado ao pediatra pela mãe, que se mostra angustiada com o relato da nova professora do 1º ano. A professora afirmou que o menino \"certamente tem TDAH\", pois em sala de aula ele se recusa a fazer as tarefas, desafia as instruções da professora dizendo \"você é chata e não manda em mim\", joga os cadernos no chão quando contrariado e culpa deliberadamente os colegas de mesa por suas próprias travessuras. Em casa, a mãe relata que a criança é carinhosa, senta para montar quebra-cabeças complexos de 100 peças por mais de uma hora consecutiva sem se dispersar, obedece aos pais sem confrontos, come e dorme bem, e não apresenta qualquer queixa de desatenção ou hiperatividade na rotina familiar ou com os avós. Diante dos critérios estritos do DSM-5-TR, a afirmação científica correta sobre o caso é:"
+        ],
+        [
+          "p",
+          "A) O diagnóstico de TDAH está confirmado, devendo-se iniciar metilfenidato imediatamente devido ao prejuízo na relação com a professora.  <br>B) O diagnóstico de TDAH está formalmente descartado pela ausência de sintomas em múltiplos ambientes e capacidade preservada de atenção sustentada em atividades lúdicas estruturadas.  <br>C) Trata-se de Transtorno de Conduta grave, devendo ser encaminhado ao Conselho Tutelar e à internação psiquiátrica infantil.  <br>D) O paciente preenche critérios de Transtorno do Espectro Autista Nível 1 associado a Transtorno Desintegrativo da Infância.  <br>E) A criança apresenta Transtorno Opositor Desafiador de grau grave que exige início imediato de Clonazepam."
+        ],
+        [
+          "p",
+          "* <strong>Gabarito Oficial:</strong> <strong>B</strong><br>* <strong>Comentário Detalhado:</strong><br>  * Para o diagnóstico de TDAH segundo o DSM-5-TR, é um <strong>requisito mandatório e inegociável</strong> que os sintomas estejam presentes em <strong>pelo menos dois ambientes distintos (Critério C de múltiplos ambientes)</strong>: por exemplo, na escola E em casa, ou na escola E com os amigos/atividades extracurriculares.<br>  * Uma criança cujas queixas comportamentais ocorrem <strong>única e exclusivamente na escola</strong> (e especificamente com uma professora), enquanto em casa e com os familiares ela demonstra excelente capacidade de autorregulação, atenção sustentada focada (monta quebra-cabeça de 100 peças por uma hora sem dispersão) e obediência, <strong>NÃO tem TDAH!</strong><br>  * O quadro reflete uma disfunção relacional e pedagógica contextual/situacional (incompatibilidade com o método da professora, rigidez da gestão de sala, problemas de adaptação escolar ou questões emocionais reativas), devendo ser abordado com intervenção pedagógica e mediação escolar, e não com medicalização.<br>* <strong>Refutação dos Distratores:</strong><br>  <em> </em>A está incorreta:* Prescrever estimulantes para uma criança sem TDAH por solicitação da escola viola os princípios éticos da boa prática pediátrica e a expõe a efeitos adversos desnecessários.<br>  <em> </em>C está incorreta:* O Transtorno de Conduta exige violação grave de direitos alheios e normas sociais (crueldade com animais, furtos, agressões físicas graves, destruição de propriedade), ausentes no caso.<br>  <em> </em>D está incorreta:* Não há qualquer menção a déficits na comunicação social recíproca ou estereotipias; o Transtorno Desintegrativo da Infância foi absorvido pelo TEA no DSM-5 e envolvia perda catastrófica do desenvolvimento após os 2 anos.<br>  <em> </em>E está incorreta:* Para o diagnóstico de TOD, os sintomas opositores também precisam causar prejuízo significativo e ser persistentes em múltiplos contextos com diferentes pessoas; benzodiazepínicos (clonazepam) são contraindicados."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "9-tabela-resumo-e-high-yield-exam-pearls",
+      0,
+      [
+        [
+          "2",
+          "9. Tabela Resumo e High-Yield Exam Pearls"
+        ],
+        [
+          "3",
+          "9.1 Matriz Comparativa de Alta Performance: TEA, TDAH e Transtornos de Aprendizagem"
+        ],
+        [
+          "t",
+          [
+            "Entidade Clínica",
+            "Critérios Diagnósticos Nucleares (DSM-5-TR)",
+            "Idade de Manifestação Típica / Rastreamento",
+            "Exames Complementares Específicos",
+            "Intervenção Não Farmacológica Padrão-Ouro",
+            "Farmacoterapia Baseada em Evidências"
+          ],
+          [
+            [
+              "<strong>Transtorno do Espectro Autista (TEA)</strong>",
+              "Dois domínios obrigatórios: (A) Déficit persistente na comunicação e interação social (3/3 itens); (B) Padrões restritos e repetitivos de comportamento (pelo menos 2/4 itens). Estadiado em Níveis 1, 2 e 3 de suporte.",
+              "Rastreamento universal aos 18 e 24 meses com <strong>M-CHAT-R/F</strong>; sinais clínicos evidentes entre 12 e 24 meses.",
+              "<strong>Avaliação auditiva (BERA)</strong> mandatória; CGH-Array / Painel Genético se dismorfismos/DI. EEG apenas se epilepsia clínica.",
+              "Intervenção comportamental intensiva precoce baseada em <strong>ABA</strong> ou NDBI (Modelo Denver); Fonoaudiologia e Terapia Ocupacional com Integração Sensorial.",
+              "<strong>Não trata os sintomas nucleares!</strong> Apenas sintomático para irritabilidade/agressividade grave: <strong>Risperidona</strong> (&ge; 5 anos) ou <strong>Aripiprazol</strong> (&ge; 6 anos)."
+            ],
+            [
+              "<strong>Transtorno do Déficit de Atenção com Hiperatividade (TDAH)</strong>",
+              "Pelo menos 6 sintomas de Desatenção e/ou 6 de Hiperatividade-Impulsividade (ou 5 para &ge; 17 anos) por &ge; 6 meses; início antes dos 12 anos; presença mandatória em <strong>&ge; 2 ambientes</strong>. Três tipos: Desatento, Hiperativo/Impulsivo e Combinado.",
+              "Início dos sintomas na infância (< 12 anos); pico de diagnóstico nos primeiros anos escolares (6 a 9 anos) com a escala <strong>SNAP-IV</strong>.",
+              "Diagnóstico puramente clínico! Exames laboratoriais/imagem não diagnósticos; ECG apenas se suspeita/histórico de cardiopatia.",
+              "Treinamento Parental em Manejo Comportamental (PTBM), Terapia Cognitivo-Comportamental e adaptações curriculares/ambientais em sala de aula.",
+              "<strong>Psicoestimulantes são 1ª linha:</strong> <strong>Metilfenidato</strong> (liberação imediata ou prolongada OROS/LA) ou <strong>Lisdexanfetamina</strong>. 2ª linha: <strong>Atomoxetina</strong> ou Clonidina."
+            ],
+            [
+              "<strong>Dislexia do Desenvolvimento (TEAp - Leitura)</strong>",
+              "Prejuízo persistente (&ge; 6 meses) na precisão, fluência e velocidade de leitura e decodificação fonológica, apesar de instrução adequada e QI normal.",
+              "Identificada no período de alfabetização formal (6 a 8 anos de idade).",
+              "Avaliação fonoaudiológica e neuropsicológica da <strong>Consciência Fonológica</strong>; teste de leitura de pseudopalavras; audiometria/oftalmologia normais.",
+              "Intervenção fonoaudiológica e psicopedagógica estruturada através do <strong>Método Fônico Multissensorial</strong>; adaptações de provas escolares (leitor de prova oral).",
+              "<strong>Contraindicada farmacoterapia!</strong> Psicoestimulantes ou nootrópicos não corrigem circuitos fonológicos corticais."
+            ],
+            [
+              "<strong>Discalculia do Desenvolvimento (TEAp - Matemática)</strong>",
+              "Dificuldade persistente na aquisição de conceitos numéricos fundamentais, senso de magnitude e fatos aritméticos básicos em indivíduo com inteligência normal.",
+              "Reconhecida nos primeiros anos escolares com o aprendizado da aritmética básica.",
+              "Avaliação neuropsicológica e psicopedagógica das funções parietais e senso numérico.",
+              "Intervenção psicopedagógica com materiais manipulativos concretos (Blocos Lógicos, Material Dourado de Montessori) e treino de linha numérica.",
+              "Não há tratamento medicamentoso."
+            ],
+            [
+              "<strong>Transtorno Opositor Desafiador (TOD)</strong>",
+              "Padrão recorrente de humor irritável/raivoso, comportamento desafiador/argumentativo e índole vingativa direcionada a autoridades por &ge; 6 meses.",
+              "Frequente na idade pré-escolar e escolar; altíssima comorbidade com TDAH (40% a 50%).",
+              "Avaliação psiquiátrica clínica e diferencial com Transtorno de Conduta (que viola direitos alheios e normas graves).",
+              "Treinamento de Pais em Manejo de Comportamento (Parent Training) e TCC focada em autorregulação e habilidades sociais.",
+              "Tratar o TDAH de base com psicoestimulantes; se persistir agressividade refratária, associar Risperidona em baixas doses."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "9.2 High-Yield Exam Pearls (Pulos do Gato para Concursos Médicos)"
+        ],
+        [
+          "p",
+          "1. <strong>Regra de Ouro da Intervenção no TEA:</strong> A estimulação precoce (fonoaudiologia, terapia ocupacional, intervenção comportamental) <strong>NUNCA deve aguardar a confirmação de laudo definitivo de especialista</strong> ou conclusão de exames genéticos. A intervenção precoce deve ser iniciada imediatamente diante da suspeita clínica para aproveitar a janela de máxima neuroplasticidade cerebral.\n2. <strong>O M-CHAT-R/F é obrigatório na Atenção Primária:</strong> Deve ser aplicado em toda criança aos <strong>18 e 24 meses de vida</strong>. Pontuação de 0 a 2 = Baixo Risco; 3 a 7 = Médio Risco (exige entrevista de seguimento <em>Follow-up</em>); 8 a 20 = Alto Risco (dispensa a entrevista e exige encaminhamento prioritário imediato).\n3. <strong>No DSM-5-TR, o TEA exige critérios em DOIS domínios:</strong> (A) Comunicação Social (exige 3 de 3 critérios) e (B) Comportamentos Restritos e Repetitivos (exige pelo menos 2 de 4 critérios). A gravidade é estadiada pelo nível de apoio necessário: Nível 1 (exige apoio), Nível 2 (exige apoio substancial) e Nível 3 (exige apoio muito substancial).\n4. <strong>Medicamentos NÃO curam os sintomas nucleares do TEA:</strong> O uso de antipsicóticos atípicos (<strong>Risperidona</strong> a partir dos 5 anos e <strong>Aripiprazol</strong> a partir dos 6 anos) é estritamente coadjuvante e sintomático, aprovado para o controle de crises graves de irritabilidade, autoagressão e heteroagressão. Monitorar sempre peso, glicemia, lipídios e prolactina.\n5. <strong>Critério C do TDAH — Múltiplos Ambientes:</strong> É requisito mandatório para o diagnóstico de TDAH que os sintomas estejam presentes em <strong>pelo menos dois ambientes distintos</strong> (escola E casa). Sintomas restritos a apenas um local sugerem disfunção ambiental/pedagógica e afastam o TDAH.\n6. <strong>Idade de Início do TDAH no DSM-5-TR:</strong> Vários sintomas devem ter se manifestado <strong>antes dos 12 anos de idade</strong> (o DSM-IV exigia início antes dos 7 anos). A duração mínima dos sintomas é de <strong>6 meses</strong> com &ge; 6 sintomas para crianças e &ge; 5 para maiores de 17 anos.\n7. <strong>Tratamento de 1ª Linha do TDAH:</strong> Em crianças em idade escolar (&ge; 6 anos), a conduta padrão-ouro é <strong>multimodal</strong>, combinando psicoestimulantes do SNC (<strong>Metilfenidato</strong> ou <strong>Lisdexanfetamina</strong>) com intervenções comportamentais parentais e adaptações escolares. Em pré-escolares (4 a 5 anos), a primeira linha é estritamente não medicamentosa (Treinamento Parental).\n8. <strong>Efeitos Adversos dos Psicoestimulantes:</strong> Os mais comuns são <strong>anorexia (perda de apetite no almoço) e insônia</strong>. A desaceleração da velocidade de crescimento estatural é discreta e transitória, exigindo acompanhamento rigoroso nas curvas de crescimento da OMS. O ECG de rotina NÃO é mandatório antes de iniciar metilfenidato em crianças assintomáticas sem histórico pessoal de síncope ou história familiar de morte súbita precoce inexplicada ou cardiopatias.\n9. <strong>Dislexia é déficit de Consciência Fonológica, NÃO problema visual:</strong> O cérebro disléxico falha em processar os fonemas (menores sons da fala) e convertê-los em grafemas (letras), evidenciado pela incapacidade de ler <strong>pseudopalavras</strong>. O tratamento de escolha é o <strong>Método Fônico Multissensorial</strong>. Lentes coloridas (Síndrome de Irlen) ou exercícios motores oculares não possuem base científica.\n10. <strong>Atraso de Linguagem exige Audiometria Obrigatória:</strong> Toda criança avaliada por atraso na aquisição ou desenvolvimento da fala e linguagem deve realizar exame auditivo objetivo (Audiometria / BERA) para descartar formalmente perda auditiva neurossensorial ou condutiva antes de qualquer outro diagnóstico."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.psychiatry.org\" target=\"_blank\" rel=\"noopener noreferrer\">American Psychiatric Association (APA) — Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision (DSM-5-TR), 2022</a>",
+            "<a href=\"https://www.sbp.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria (SBP) — Manual de Orientação: Transtorno do Espectro do Autismo (Departamentos Científicos de Pediatria do Desenvolvimento e Comportamento e de Neurologia Infantil)</a>",
+            "<a href=\"https://publications.aap.org\" target=\"_blank\" rel=\"noopener noreferrer\">American Academy of Pediatrics (AAP) — Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents (Pediatrics 2019/2024)</a>",
+            "<a href=\"https://www.gov.br/saude\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde do Brasil — Linha de Cuidado para a Atenção às Pessoas com Transtornos do Espectro do Autismo e suas Famílias na Rede de Atenção Psicossocial do SUS</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}
