@@ -1,0 +1,41 @@
+{
+  "name": "luria-marketing-studio",
+  "private": true,
+  "description": "Pipeline local de producao de conteudo (Reels/carrosseis) da LURIA. Isolado do site publicado.",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "doctor": "node scripts/doctor.cjs",
+    "capture": "node capture/run.cjs",
+    "capture:list": "node capture/run.cjs --list",
+    "music": "node scripts/generate-music.cjs",
+    "studio": "remotion studio remotion/index.tsx",
+    "render": "node scripts/render.cjs",
+    "flow:prompts": "node flow/build-prompts.cjs",
+    "flow:import": "node flow/import-clips.cjs",
+    "calendar:import": "node calendar/import.cjs",
+    "calendar:status": "node calendar/status.cjs",
+    "calendar:validate": "node calendar/validate.cjs",
+    "weekly": "node automation/weekly.cjs",
+    "metricool:check": "node metricool/check.cjs",
+    "metricool:plan": "node metricool/plan.cjs",
+    "test": "node --test tests/*.test.cjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.535",
+    "@remotion/cli": "4.0.535",
+    "@remotion/renderer": "4.0.535",
+    "@types/three": "^0.186.0",
+    "playwright-core": "1.64.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.535",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "typescript": "5.8.3"
+  }
+}

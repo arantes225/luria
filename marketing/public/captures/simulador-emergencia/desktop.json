@@ -1,0 +1,107 @@
+{
+  "scene": "simulador-emergencia",
+  "title": "Simulador de Emergência — Caso Clínico com Monitor Ao Vivo",
+  "feature": "plantao",
+  "publicStatus": "public",
+  "format": "desktop",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "deviceScaleFactor": 1.5,
+  "capturedAt": "2026-10-15T23:30:14.554Z",
+  "elapsedSeconds": 39,
+  "ok": true,
+  "error": null,
+  "video": {
+    "frames": 726,
+    "seconds": 24.06,
+    "marks": [
+      {
+        "label": "start",
+        "at": 0
+      },
+      {
+        "label": "simulator-library",
+        "at": 0
+      },
+      {
+        "label": "start-case",
+        "at": 1.6
+      },
+      {
+        "label": "turn-monitor-on",
+        "at": 4.25
+      },
+      {
+        "label": "evaluate-rhythm",
+        "at": 9.75
+      },
+      {
+        "label": "cardioversion",
+        "at": 15.81
+      },
+      {
+        "label": "stabilized",
+        "at": 20.43
+      },
+      {
+        "label": "end",
+        "at": 23.8
+      }
+    ],
+    "file": "public/captures/simulador-emergencia/desktop.mp4"
+  },
+  "report": {
+    "pageErrors": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "failedRequests": [
+      "https://luria.test/assets/img/logos/logo-icone-original.png?v=luria9 net::ERR_ABORTED"
+    ],
+    "blocked": [],
+    "missing": [
+      "/assets/img/plantao/luria-homem-idoso-v7-torax.webp",
+      "/assets/img/plantao/luria-homem-idoso-v7-olhos-fechados.webp"
+    ],
+    "fixtureUnhandled": [
+      {
+        "kind": "rpc",
+        "name": "has_interconsultation_access"
+      }
+    ],
+    "steps": [
+      {
+        "label": "start",
+        "at": "2026-10-15T23:29:36.715Z"
+      },
+      {
+        "label": "simulator-library",
+        "at": "2026-10-15T23:29:36.715Z"
+      },
+      {
+        "label": "start-case",
+        "at": "2026-10-15T23:29:38.314Z"
+      },
+      {
+        "label": "turn-monitor-on",
+        "at": "2026-10-15T23:29:40.966Z"
+      },
+      {
+        "label": "evaluate-rhythm",
+        "at": "2026-10-15T23:29:46.465Z"
+      },
+      {
+        "label": "cardioversion",
+        "at": "2026-10-15T23:29:52.526Z"
+      },
+      {
+        "label": "stabilized",
+        "at": "2026-10-15T23:29:57.146Z"
+      }
+    ]
+  },
+  "dataNotice": "Todos os dados exibidos são fictícios (fixture local). Nenhum dado real de aluno."
+}

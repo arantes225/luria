@@ -1,0 +1,23 @@
+{
+  "dataNotice": "Todos os dados exibidos são fictícios (fixture local). Nenhum dado real.",
+  "summary": {
+    "dashboard": {
+      "ok": true,
+      "report": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "blocked": [],
+        "missing": []
+      }
+    },
+    "aprender": {
+      "ok": true,
+      "report": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "blocked": [],
+        "missing": []
+      }
+    }
+  }
+}

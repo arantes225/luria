@@ -1,0 +1,19 @@
+# Dependências
+node_modules/
+
+# Cache de quadros e temporários
+.cache/
+.tmp/
+tmp/
+
+# Arquivos de mídia pesados (MP4 grandes)
+*.mp4
+!public/captures/**/mobile.mp4
+
+# Credenciais e variáveis de ambiente locais
+.env
+.env.*
+!.env.example
+
+# Logs locais
+logs/*.log

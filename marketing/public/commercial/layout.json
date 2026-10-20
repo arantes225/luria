@@ -1,0 +1,247 @@
+{
+  "viewport": {
+    "width": 430,
+    "height": 932
+  },
+  "dpr": 3,
+  "frame": {
+    "top": 64,
+    "gap": 4,
+    "radius": 18
+  },
+  "dashboard": {
+    "main": {
+      "w": 422,
+      "h": 2327,
+      "top": 64,
+      "left": 4
+    },
+    "items": {
+      "header": [
+        {
+          "x": 16,
+          "y": 24,
+          "w": 390,
+          "h": 299.875,
+          "radius": 0,
+          "text": "SEU PAINEL DE ESTUDOS\n\nDashboard educacional\n\nSeu próximo pa"
+        }
+      ],
+      "streak": [
+        {
+          "x": 16,
+          "y": 142.09375,
+          "w": 384,
+          "h": 181.78125,
+          "radius": 0,
+          "text": "Sua ofensiva\n14\ndias seguidos\nS\nT\nQ\nQ\nS\nS\nD\nAtividade regist"
+        }
+      ],
+      "spotlight": [],
+      "agenda": [
+        {
+          "x": 16,
+          "y": 755.765625,
+          "w": 390,
+          "h": 526,
+          "radius": 22,
+          "text": "Atividades de hoje\nVer mais ›\nApendicite aguda\nAula\nCirurgia"
+        }
+      ],
+      "study": [
+        {
+          "x": 16,
+          "y": 353.875,
+          "w": 390,
+          "h": 381.890625,
+          "radius": 22,
+          "text": "SESSÃO GUIADA\nEstudar agora\n\nEscolha seu tempo. Alex organiz"
+        }
+      ],
+      "summary": [
+        {
+          "x": 37,
+          "y": 1123.765625,
+          "w": 348,
+          "h": 137,
+          "radius": 0,
+          "text": "Resumo do dia\n50%\n5\naulas concluídas\n3\natividades na agenda"
+        }
+      ],
+      "metrics": [
+        {
+          "x": 16,
+          "y": 1301.765625,
+          "w": 390,
+          "h": 255.28125,
+          "radius": 22,
+          "text": "Consulte seus flashcards e os erros registrados para planeja"
+        }
+      ],
+      "metric": [
+        {
+          "x": 16,
+          "y": 1301.765625,
+          "w": 390,
+          "h": 77.09375,
+          "radius": 22,
+          "text": "Flashcards pendentes\n23\nRevisar flashcards\n↗"
+        },
+        {
+          "x": 16,
+          "y": 1390.859375,
+          "w": 390,
+          "h": 77.09375,
+          "radius": 22,
+          "text": "Aulas de hoje concluídas\n5\nVer cronograma\n↗"
+        },
+        {
+          "x": 16,
+          "y": 1479.953125,
+          "w": 390,
+          "h": 77.09375,
+          "radius": 22,
+          "text": "Erros ativos\n12\nAbrir caderno\n↗"
+        }
+      ],
+      "areas": [
+        {
+          "x": 16,
+          "y": 1782.71875,
+          "w": 390,
+          "h": 504.5,
+          "radius": 22,
+          "text": "Progresso por área\nVer mais ›\nClínica Médica\n74%\n14/19 aulas"
+        }
+      ],
+      "cat": [
+        {
+          "x": 16,
+          "y": 1577.046875,
+          "w": 390,
+          "h": 185.671875,
+          "radius": 22,
+          "text": "Pulo do Gato do dia\n\nDor torácica com supra de ST: reperfusã"
+        }
+      ],
+      "ring": [
+        {
+          "x": 37,
+          "y": 1172.765625,
+          "w": 88,
+          "h": 88,
+          "radius": 50,
+          "text": "50%"
+        }
+      ],
+      "activity": [
+        {
+          "x": 37,
+          "y": 836.765625,
+          "w": 348,
+          "h": 85,
+          "radius": 0,
+          "text": "Apendicite aguda\nAula\nCirurgia\n▶"
+        },
+        {
+          "x": 37,
+          "y": 929.765625,
+          "w": 348,
+          "h": 85,
+          "radius": 0,
+          "text": "Pré-natal de risco habitual\nAula\nGinecologia e Obstetrícia\n▶"
+        },
+        {
+          "x": 37,
+          "y": 1022.765625,
+          "w": 348,
+          "h": 85,
+          "radius": 0,
+          "text": "Revisão de flashcards\nFlashcards\nRevisão\n▶"
+        }
+      ],
+      "timeOptions": [
+        {
+          "x": 37,
+          "y": 502.375,
+          "w": 348,
+          "h": 148,
+          "radius": 0,
+          "text": "15 min\n30 min\n1 hora\n1h30\n2 horas\nCompletar o dia"
+        }
+      ]
+    },
+    "extra": {
+      "aprenderLink": {
+        "x": 16,
+        "y": 244,
+        "w": 240,
+        "h": 44,
+        "text": "Aprender"
+      },
+      "hamburger": {
+        "x": 212,
+        "y": 84,
+        "w": 44,
+        "h": 44
+      }
+    }
+  },
+  "aprender": {
+    "main": {
+      "w": 422,
+      "h": 880,
+      "top": 64,
+      "left": 4
+    },
+    "items": {
+      "spotlight": [
+        {
+          "x": 16,
+          "y": 24,
+          "w": 390,
+          "h": 85.59375,
+          "radius": 0,
+          "text": "CENTRAL DE APRENDIZAGEM\nAprender\nEscolha como você quer apre"
+        }
+      ],
+      "alex": [],
+      "tools": [
+        {
+          "x": 16,
+          "y": 133.59375,
+          "w": 390,
+          "h": 664.953125,
+          "radius": 0,
+          "text": "Apostilas\n\nTodo o conteúdo LURIA organizado por área.\n\n1 apo"
+        }
+      ],
+      "tool": [
+        {
+          "x": 16,
+          "y": 133.59375,
+          "w": 390,
+          "h": 210.984375,
+          "radius": 22,
+          "text": "Apostilas\n\nTodo o conteúdo LURIA organizado por área.\n\n1 apo"
+        },
+        {
+          "x": 16,
+          "y": 360.578125,
+          "w": 390,
+          "h": 210.984375,
+          "radius": 22,
+          "text": "Minhas anotações\n\nSeus resumos e materiais pessoais.\n\nAbrir "
+        },
+        {
+          "x": 16,
+          "y": 587.5625,
+          "w": 390,
+          "h": 210.984375,
+          "radius": 22,
+          "text": "LuriaZap\n\nEstudo guiado, passo a passo.\n\nComeçar →"
+        }
+      ]
+    }
+  }
+}

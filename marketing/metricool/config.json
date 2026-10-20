@@ -1,0 +1,14 @@
+{
+  "serverUrl": "https://ai.metricool.com/mcp",
+  "authType": "oauth",
+  "safeMode": true,
+  "defaultAsDraft": true,
+  "requireExplicitApproval": true,
+  "brandId": null,
+  "timezone": "America/Sao_Paulo",
+  "mediaHosting": {
+    "provider": "supabase_storage_or_public_url",
+    "bucket": "marketing-assets",
+    "note": "Metricool requer URLs públicas diretas (.mp4) acessíveis pela internet."
+  }
+}

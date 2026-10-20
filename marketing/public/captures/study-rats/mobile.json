@@ -1,0 +1,84 @@
+{
+  "scene": "study-rats",
+  "title": "Study Rats — corrida de estudos com amigos",
+  "feature": "studyrats",
+  "publicStatus": "public",
+  "format": "mobile",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "deviceScaleFactor": 2,
+  "capturedAt": "2026-10-15T21:38:04.308Z",
+  "elapsedSeconds": 37,
+  "ok": true,
+  "error": null,
+  "video": {
+    "file": "public/captures/study-rats/mobile.mp4",
+    "seconds": 33.766667,
+    "marks": [
+      {
+        "label": "start",
+        "at": 0
+      },
+      {
+        "label": "race",
+        "at": 2.911
+      },
+      {
+        "label": "customize",
+        "at": 7.681
+      },
+      {
+        "label": "create",
+        "at": 15.917
+      },
+      {
+        "label": "new-race",
+        "at": 29.131
+      },
+      {
+        "label": "outro",
+        "at": 32.282
+      }
+    ]
+  },
+  "report": {
+    "pageErrors": [],
+    "consoleErrors": [],
+    "failedRequests": [
+      "https://luria.test/assets/img/logos/logo-icone-original.png?v=luria9 net::ERR_ABORTED",
+      "https://luria.test/assets/img/logos/logo-icone-original.png?v=luria9 net::ERR_ABORTED"
+    ],
+    "blocked": [],
+    "missing": [],
+    "fixtureUnhandled": [],
+    "steps": [
+      {
+        "label": "start",
+        "at": "2026-10-15T21:37:30.559Z"
+      },
+      {
+        "label": "race",
+        "at": "2026-10-15T21:37:33.470Z"
+      },
+      {
+        "label": "customize",
+        "at": "2026-10-15T21:37:38.240Z"
+      },
+      {
+        "label": "create",
+        "at": "2026-10-15T21:37:46.476Z"
+      },
+      {
+        "label": "new-race",
+        "at": "2026-10-15T21:37:59.690Z"
+      },
+      {
+        "label": "outro",
+        "at": "2026-10-15T21:38:02.841Z"
+      }
+    ]
+  },
+  "dataNotice": "Todos os dados exibidos são fictícios (fixture local). Nenhum dado real de aluno."
+}
