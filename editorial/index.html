@@ -177,10 +177,96 @@
     </main>
   </div>
 
+  <!-- MODAL DE PROMPTS, UPLOAD DE VÍDEO E AUTO-CLEAN META ADS -->
+  <div id="post-studio-modal-overlay" class="post-studio-modal-overlay" hidden>
+    <div class="post-studio-modal" role="dialog" aria-modal="true" aria-labelledby="studio-modal-title">
+      <div class="post-studio-header">
+        <div>
+          <span id="studio-modal-meta" class="eyebrow" style="color:#38bdf8;">PEÇA OFICIAL</span>
+          <h3 id="studio-modal-title">Prompts & Estúdio de Vídeo</h3>
+        </div>
+        <button id="studio-modal-close" type="button" class="post-studio-close">✕ Fechar</button>
+      </div>
+
+      <div class="post-studio-body">
+        <!-- 1. PROMPT VISUAL / VEO / GEMINI -->
+        <div class="prompt-editor-box">
+          <div class="prompt-editor-head">
+            <label for="studio-video-prompt">🎬 1. Prompt Visual / Motion (Google Veo / Gemini / @mentoris style)</label>
+            <div style="display:flex; gap:0.4rem;">
+              <button type="button" id="btn-copy-video-prompt" class="prompt-btn-copy">📋 Copiar Prompt de Vídeo</button>
+            </div>
+          </div>
+          <textarea id="studio-video-prompt" class="prompt-textarea" spellcheck="false"></textarea>
+        </div>
+
+        <!-- 2. PROMPT DE LOCUÇÃO / NARRAÇÃO -->
+        <div class="prompt-editor-box">
+          <div class="prompt-editor-head">
+            <label for="studio-audio-prompt">🎙️ 2. Prompt de Locução / Áudio (Voz Humana Dinâmica)</label>
+            <div style="display:flex; gap:0.4rem;">
+              <button type="button" id="btn-copy-audio-prompt" class="prompt-btn-copy">📋 Copiar Prompt de Áudio</button>
+            </div>
+          </div>
+          <textarea id="studio-audio-prompt" class="prompt-textarea" spellcheck="false"></textarea>
+        </div>
+
+        <!-- 3. LEGENDA & ESTRATÉGIA DO POST -->
+        <div class="prompt-editor-box">
+          <div class="prompt-editor-head">
+            <label for="studio-caption-prompt">📝 3. Legenda Pronta + Hashtags + CTA</label>
+            <div style="display:flex; gap:0.4rem;">
+              <button type="button" id="btn-copy-caption-prompt" class="prompt-btn-copy">📋 Copiar Legenda</button>
+            </div>
+          </div>
+          <textarea id="studio-caption-prompt" class="prompt-textarea" style="min-height:90px;" spellcheck="false"></textarea>
+        </div>
+
+        <div style="display:flex; justify-content:flex-end;">
+          <button type="button" id="btn-save-prompts" class="button secondary" style="font-size:0.82rem;">💾 Salvar Edições dos Prompts</button>
+        </div>
+
+        <!-- 4. ZONA DE UPLOAD DO VÍDEO PRONTO E DISPARO COM AUTO-LIMPEZA -->
+        <div class="video-upload-zone">
+          <div class="video-upload-header">
+            <div>
+              <h4>📤 Upload do Vídeo Pronto (.MP4 / .MOV)</h4>
+              <small style="color:#94a3b8; display:block; margin-top:0.2rem;">
+                Suba aqui o vídeo final gerado no Gemini. No dia da postagem, ele será enviado ao Meta Ads/Instagram e <strong>apagado automaticamente do site</strong> para não ocupar espaço.
+              </small>
+            </div>
+            <span id="studio-video-status-badge" class="video-status-pill waiting">Aguardando Vídeo</span>
+          </div>
+
+          <div class="studio-actions-row">
+            <input type="file" id="studio-video-file-input" accept="video/mp4,video/webm,video/quicktime,image/png,image/jpeg" style="font-size:0.82rem; color:#cbd5e1;">
+            <button type="button" id="btn-upload-video" class="button primary" style="font-size:0.82rem;">⬆️ Subir Vídeo para Este Post</button>
+          </div>
+
+          <div id="studio-video-preview-container" class="video-preview-box" hidden>
+            <video id="studio-video-player" controls preload="metadata"></video>
+            <div style="display:flex; flex-wrap:wrap; gap:0.6rem; width:100%; justify-content:space-between; align-items:center;">
+              <small id="studio-video-info" style="color:#4ade80; font-weight:600;"></small>
+              <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+                <a id="btn-download-staged-video" href="#" target="_blank" download class="button secondary" style="font-size:0.76rem; padding:0.35rem 0.7rem;">⬇️ Baixar MP4</a>
+                <button type="button" id="btn-publish-and-clean" class="button primary" style="background:#059669; border-color:#10b981; font-size:0.76rem; padding:0.35rem 0.75rem;">
+                  🚀 Publicar no Meta Ads & Apagar Vídeo do Site
+                </button>
+                <button type="button" id="btn-delete-staged-video" class="button secondary" style="color:#fca5a5; border-color:rgba(239,68,68,0.4); font-size:0.76rem; padding:0.35rem 0.7rem;">
+                  🗑️ Apagar Agora
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=20261019-editorial1"></script>
-  <script src="/assets/js/editorial.js?v=5"></script>
+  <script src="/assets/js/editorial.js?v=6"></script>
   <script defer src="assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>

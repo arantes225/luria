@@ -14,10 +14,31 @@
     currentView: "weekly", // "weekly" | "monthly" | "kanban" | "stories" | "crm" | "meta_ads" | "organic_growth"
     selectedMonth: "2026-10",
     leadsList: [],
-    organicTips: []
+    organicTips: [],
+    postAssetsMap: {},
+    activeModalPostId: null
   };
 
   const DRIVE_FOLDER = "https://drive.google.com/drive/folders/1gd2hhVmwGzKibBwLuvEUcXPdGa_B0FRi?usp=drive_link";
+  const STORAGE_BUCKET = "marketing_videos_temp";
+
+  // GERADOR AUTOMÁTICO DE PROMPTS DETALHADOS (@MENTORIS STYLE, SEM ROSTOS DE IA) PARA CADA POST
+  function getDefaultPromptsForPost(post) {
+    if (post.id === "p02") {
+      return {
+        videoPrompt: `Cinematic 9:16 vertical motion graphics video for medical education. Fast-paced modern aesthetic in the style of @mentoris and Apple Keynote. No human faces, no AI avatars.\n\nScene starts with an ultra-sharp, high-contrast dark emergency room atmosphere: blinking amber and red emergency strobe lights in the background, a medical monitor displaying an erratic ECG waveform. A glowing neon digital sign appears floating in 3D: "HGT vs TC DE CRÂNIO".\n\nCamera dynamic continuous zoom-in with slight tilted Dutch angle onto a futuristic glowing glass tablet screen floating in dark space. The screen is displaying a dark-mode medical study interface (LURIA platform) with emerald-green (#059669) accents, showing a brain CT scan comparison next to a capillary blood glucose meter reading "32 mg/dL" in glowing red digits.\n\nFast kinetic transition: digital scanlines sweep across, particles and kinetic glowing medical keywords flash and snap into place: "DÉFICIT FOCAL", "HEMIPARESIA SÚBITA", "GLICEMIA PRIMEIRO".\n\nCamera pulls back with smooth motion-blur parallax revealing interactive medical flashcards and an error log interface ("Caderno de Erros") rotating in a 3D isometric perspective. Polished studio lighting, subtle volumetric smoke, photorealistic glass reflections, hyper-detailed UI elements, 8k resolution.`,
+        audioPrompt: `Gere uma narração de áudio em Português do Brasil com voz humana jovem, dinâmica, confiante e com tom de urgência médica realista de plantão (estilo Reels de alta retenção, sem pausas robóticas).\n\nTexto da locução:\n"Você tá no plantão do PS. Chega um paciente de 68 anos com hemiparesia súbita e desvio de rima. A primeira coisa que você pensa é correr pro tomógrafo, certo? Errado! Antes de qualquer contraste ou TC de crânio, a primeira conduta obrigatória é uma fita de HGT na ponta do dedo. Hipoglicemia severa mimetiza perfeitamente um AVC isquêmico. Se você mandar esse paciente pra tomografia com 30 de glicemia, ele entra em coma na maca. Trate a glicose primeiro. Se o déficit persistir, aí sim você abre o protocolo de AVC. Não perca questão de residência e não erre conduta no PS. Salve esse post pra consultar no plantão e entre no teste grátis da LURIA pelo link da bio."`,
+        captionPrompt: `🚨 Paciente com hemiparesia súbita no PS: qual o seu PRIMEIRO passo nos primeiros 60 segundos?\n\nA neuroglicopenia grave pode simular perfeitamente um AVC isquêmico agudo (déficit motor focal, afasia, desvio de rima e rebaixamento).\n\n✅ Conduta #1 inegociável: Glicemia Capilar (HGT) imediata à beira-leito ANTES de deslocar o paciente para a Tomografia.\n\n📌 ${post.cta} e acesse o link da bio para liberar 15 dias gratuitos na LURIA.\n\n#medicina #emergenciamedica #plantao #avc #neurologia #residenciamedica #internato #luria`
+      };
+    }
+
+    const isVideo = post.format.toLowerCase().includes("reels") || post.format.toLowerCase().includes("motion");
+    return {
+      videoPrompt: `Cinematic ${isVideo ? '9:16 vertical motion graphics video' : '4:5 high-contrast carousel motion visual'} in the signature style of @mentoris. STRICT RULE: NO human faces, NO AI avatars.\n\nTheme: "${post.title}" (${post.pilar}).\nVisual Direction: Dark-mode futuristic medical UI environment (#0A2342 & #059669 emerald neon highlights). 3D isometric floating glass screens of the LURIA medical platform showing clinical flowcharts, active recall flashcards, and error notebook analytics.\nCamera: Smooth kinetic zoom-ins, parallax depth of field, glowing neon typography snapping on screen with subtle scanlines and volumetric lighting.\nCore Concept Visualized: ${post.script}`,
+      audioPrompt: `Gere uma locução em Português do Brasil com voz natural, ritmo energético e seguro de preceptor médico jovem no plantão (sem entonação robótica).\n\nRoteiro de Narração para "${post.title}":\n"Presta atenção nesse ponto que derruba muita gente no plantão e na prova de residência: ${post.title}. ${post.script} Na LURIA, você treina exatamente esse raciocínio clínico ativo em segundos, direto da questão pro seu Caderno de Erros. ${post.cta} e clique no link da bio para testar 15 dias grátis sem cartão!"`,
+      captionPrompt: `🩺 ${post.title}\n\n${post.script}\n\n💡 Dominar o raciocínio clínico estruturado é o que separa quem decora resumo de quem acerta sob pressão no plantão e na prova de residência.\n\n🎯 ${post.cta}!\n🔗 Link na bio: 15 dias gratuitos na LURIA (sem cartão).\n\n#medicina #residenciamedica #internato #estudomedico #plantao #luria`
+    };
+  }
 
   // ==============================================================
   // OS 27 POSTS OFICIAIS DO DOSSIÊ COM DATAS POR EXTENSO
@@ -155,7 +176,7 @@
     return data?.has_pin === true;
   }
 
-  function unlockEditorialPage() {
+  async function unlockEditorialPage() {
     state.pinUnlocked = true;
     const gate = $("admin-pin-gate");
     const app = $("editorial-app");
@@ -163,6 +184,7 @@
     document.body.classList.add("admin-unlocked");
     if (gate) gate.hidden = true;
     if (app) app.hidden = false;
+    await loadPostAssetsFromDb();
     renderCurrentView();
   }
 
@@ -216,6 +238,317 @@
   }
 
   // ==============================================================
+  // GESTÃO DE PROMPTS E STAGING DE VÍDEO (FLUXO ZERO CUSTO / AUTO-LIMPEZA)
+  // ==============================================================
+  async function loadPostAssetsFromDb() {
+    try {
+      const sb = window.supabaseClient || window.sb;
+      if (!sb) return;
+      const { data, error } = await sb.from("marketing_post_assets").select("*");
+      if (!error && Array.isArray(data)) {
+        const map = {};
+        data.forEach(row => { map[row.post_id] = row; });
+        state.postAssetsMap = map;
+      }
+    } catch (_) {}
+  }
+
+  function getPostAssetState(post) {
+    const dbRow = state.postAssetsMap[post.id] || {};
+    let localOverride = {};
+    try {
+      localOverride = JSON.parse(localStorage.getItem(`luria_post_asset_${post.id}`) || "{}");
+    } catch (_) {}
+
+    const defaults = getDefaultPromptsForPost(post);
+    return {
+      post_id: post.id,
+      title: post.title,
+      scheduled_date: post.date,
+      video_prompt: dbRow.video_prompt || localOverride.video_prompt || defaults.videoPrompt,
+      audio_prompt: dbRow.audio_prompt || localOverride.audio_prompt || defaults.audioPrompt,
+      caption_prompt: dbRow.caption_prompt || localOverride.caption_prompt || defaults.captionPrompt,
+      video_storage_path: dbRow.video_storage_path || localOverride.video_storage_path || null,
+      video_public_url: dbRow.video_public_url || localOverride.video_public_url || null,
+      video_filename: dbRow.video_filename || localOverride.video_filename || null,
+      meta_ads_status: dbRow.meta_ads_status || localOverride.meta_ads_status || "aguardando_video",
+      cleaned_at: dbRow.cleaned_at || localOverride.cleaned_at || null
+    };
+  }
+
+  function renderPostStagingBadge(post) {
+    const asset = getPostAssetState(post);
+    if (asset.meta_ads_status === "publicado_e_limpo") {
+      return `<div style="font-size:0.74rem; padding:0.35rem 0.6rem; border-radius:6px; background:rgba(56,189,248,0.12); color:#38bdf8; border:1px solid rgba(56,189,248,0.3);">🧹 Postado no Meta Ads · Vídeo apagado do site (0 MB)</div>`;
+    }
+    if (asset.video_public_url) {
+      return `<div style="font-size:0.74rem; padding:0.35rem 0.6rem; border-radius:6px; background:rgba(52,211,153,0.15); color:#34d399; border:1px solid rgba(52,211,153,0.4);">🎬 Vídeo pronto carregado (${asset.video_filename || 'MP4'}) · Aguardando dia de postar</div>`;
+    }
+    return `<div style="font-size:0.74rem; padding:0.35rem 0.6rem; border-radius:6px; background:rgba(255,255,255,0.05); color:#94a3b8; border:1px solid rgba(255,255,255,0.08);">✨ Prompts Gemini prontos · Sem vídeo anexado</div>`;
+  }
+
+  function openPostStudioModal(postId) {
+    const post = OFFICIAL_POSTS.find(p => p.id === postId);
+    if (!post) return;
+    state.activeModalPostId = post.id;
+
+    const asset = getPostAssetState(post);
+    const overlay = $("post-studio-modal-overlay");
+    if (!overlay) return;
+
+    $("studio-modal-meta").textContent = `${post.date} · ${post.format}`;
+    $("studio-modal-title").textContent = post.title;
+    $("studio-video-prompt").value = asset.video_prompt;
+    $("studio-audio-prompt").value = asset.audio_prompt;
+    $("studio-caption-prompt").value = asset.caption_prompt;
+
+    updateModalVideoUI(asset);
+    overlay.hidden = false;
+  }
+
+  function updateModalVideoUI(asset) {
+    const badge = $("studio-video-status-badge");
+    const previewContainer = $("studio-video-preview-container");
+    const player = $("studio-video-player");
+    const info = $("studio-video-info");
+    const downloadBtn = $("btn-download-staged-video");
+
+    if (!badge || !previewContainer) return;
+
+    if (asset.meta_ads_status === "publicado_e_limpo") {
+      badge.className = "video-status-pill cleaned";
+      badge.textContent = "Publicado no Meta Ads & Limpo (0 MB)";
+      previewContainer.hidden = true;
+      player.removeAttribute("src");
+    } else if (asset.video_public_url) {
+      badge.className = "video-status-pill ready";
+      badge.textContent = "Vídeo Carregado · Pronto p/ Postar";
+      previewContainer.hidden = false;
+      player.src = asset.video_public_url;
+      if (info) info.textContent = `Arquivo ativo no site: ${asset.video_filename || "video.mp4"}`;
+      if (downloadBtn) downloadBtn.href = asset.video_public_url;
+    } else {
+      badge.className = "video-status-pill waiting";
+      badge.textContent = "Aguardando Upload do Vídeo";
+      previewContainer.hidden = true;
+      player.removeAttribute("src");
+    }
+  }
+
+  async function saveCurrentModalPrompts() {
+    const postId = state.activeModalPostId;
+    const post = OFFICIAL_POSTS.find(p => p.id === postId);
+    if (!post) return;
+
+    const current = getPostAssetState(post);
+    const updated = {
+      ...current,
+      video_prompt: $("studio-video-prompt")?.value || "",
+      audio_prompt: $("studio-audio-prompt")?.value || "",
+      caption_prompt: $("studio-caption-prompt")?.value || "",
+      updated_at: new Date().toISOString()
+    };
+
+    state.postAssetsMap[postId] = updated;
+    try {
+      localStorage.setItem(`luria_post_asset_${postId}`, JSON.stringify(updated));
+    } catch (_) {}
+
+    const btn = $("btn-save-prompts");
+    if (btn) btn.textContent = "Salvando...";
+
+    try {
+      const sb = window.supabaseClient || window.sb;
+      if (sb) {
+        await sb.from("marketing_post_assets").upsert(updated, { onConflict: "post_id" });
+      }
+      if (btn) {
+        btn.textContent = "✅ Prompts Salvos!";
+        setTimeout(() => { btn.textContent = "💾 Salvar Edições dos Prompts"; }, 2000);
+      }
+    } catch (_) {
+      if (btn) btn.textContent = "✅ Salvo Localmente";
+    }
+  }
+
+  async function uploadVideoForActivePost() {
+    const postId = state.activeModalPostId;
+    const post = OFFICIAL_POSTS.find(p => p.id === postId);
+    const fileInput = $("studio-video-file-input");
+    const btn = $("btn-upload-video");
+
+    if (!post || !fileInput || !fileInput.files || fileInput.files.length === 0) {
+      alert("Selecione o arquivo de vídeo (.mp4 / .mov) gerado no Gemini primeiro.");
+      return;
+    }
+
+    const file = fileInput.files[0];
+    const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, "_");
+    const storagePath = `${postId}/${Date.now()}_${safeName}`;
+
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = "⏳ Enviando vídeo pro site...";
+    }
+
+    try {
+      const sb = window.supabaseClient || window.sb;
+      let publicUrl = "";
+
+      if (sb && sb.storage) {
+        // Se já havia um vídeo antigo para este post, remove antes para não acumular espaço
+        const prev = getPostAssetState(post);
+        if (prev.video_storage_path) {
+          await sb.storage.from(STORAGE_BUCKET).remove([prev.video_storage_path]);
+        }
+
+        const { error: upErr } = await sb.storage.from(STORAGE_BUCKET).upload(storagePath, file, {
+          cacheControl: "3600",
+          upsert: true
+        });
+        if (upErr) throw upErr;
+
+        const { data: pubData } = sb.storage.from(STORAGE_BUCKET).getPublicUrl(storagePath);
+        publicUrl = pubData?.publicUrl || "";
+      } else {
+        publicUrl = URL.createObjectURL(file);
+      }
+
+      const current = getPostAssetState(post);
+      const updated = {
+        ...current,
+        video_prompt: $("studio-video-prompt")?.value || current.video_prompt,
+        audio_prompt: $("studio-audio-prompt")?.value || current.audio_prompt,
+        caption_prompt: $("studio-caption-prompt")?.value || current.caption_prompt,
+        video_storage_path: storagePath,
+        video_public_url: publicUrl,
+        video_filename: file.name,
+        video_uploaded_at: new Date().toISOString(),
+        meta_ads_status: "pronto_para_postar",
+        updated_at: new Date().toISOString()
+      };
+
+      state.postAssetsMap[postId] = updated;
+      try {
+        localStorage.setItem(`luria_post_asset_${postId}`, JSON.stringify(updated));
+      } catch (_) {}
+
+      if (sb) {
+        await sb.from("marketing_post_assets").upsert(updated, { onConflict: "post_id" });
+      }
+
+      updateModalVideoUI(updated);
+      renderCurrentView();
+      fileInput.value = "";
+    } catch (err) {
+      console.error("[Upload Video Error]", err);
+      alert("Erro ao enviar o vídeo: " + (err.message || "Tente novamente."));
+    } finally {
+      if (btn) {
+        btn.disabled = false;
+        btn.textContent = "⬆️ Subir Vídeo para Este Post";
+      }
+    }
+  }
+
+  async function publishToMetaAndCleanVideo(isManualDeleteOnly = false) {
+    const postId = state.activeModalPostId;
+    const post = OFFICIAL_POSTS.find(p => p.id === postId);
+    if (!post) return;
+
+    const current = getPostAssetState(post);
+    const btnPub = $("btn-publish-and-clean");
+    const btnDel = $("btn-delete-staged-video");
+
+    if (btnPub) btnPub.disabled = true;
+    if (btnDel) btnDel.disabled = true;
+
+    try {
+      const sb = window.supabaseClient || window.sb;
+
+      // 1. Apagar o arquivo físico do bucket do site para liberar 100% do espaço
+      if (sb && sb.storage && current.video_storage_path) {
+        await sb.storage.from(STORAGE_BUCKET).remove([current.video_storage_path]);
+      }
+
+      // 2. Atualizar status no banco e na interface
+      const updated = {
+        ...current,
+        video_storage_path: null,
+        video_public_url: null,
+        video_filename: null,
+        meta_ads_status: isManualDeleteOnly ? "aguardando_video" : "publicado_e_limpo",
+        published_at: isManualDeleteOnly ? current.published_at : new Date().toISOString(),
+        cleaned_at: new Date().toISOString(),
+        updated_at: new Date().toISOString()
+      };
+
+      if (!isManualDeleteOnly) {
+        post.status = "publicado";
+        post.kanban = "publicado";
+      }
+
+      state.postAssetsMap[postId] = updated;
+      try {
+        localStorage.setItem(`luria_post_asset_${postId}`, JSON.stringify(updated));
+      } catch (_) {}
+
+      if (sb) {
+        await sb.from("marketing_post_assets").upsert(updated, { onConflict: "post_id" });
+      }
+
+      updateModalVideoUI(updated);
+      renderCurrentView();
+    } catch (err) {
+      console.error("[Clean Video Error]", err);
+    } finally {
+      if (btnPub) btnPub.disabled = false;
+      if (btnDel) btnDel.disabled = false;
+    }
+  }
+
+  function copyTextareaWithFeedback(textareaId, buttonId) {
+    const el = $(textareaId);
+    const btn = $(buttonId);
+    if (!el) return;
+    navigator.clipboard.writeText(el.value || "");
+    if (btn) {
+      const original = btn.textContent;
+      btn.textContent = "✅ Copiado!";
+      setTimeout(() => { btn.textContent = original; }, 1800);
+    }
+  }
+
+  function setupPostStudioModalListeners() {
+    $("studio-modal-close")?.addEventListener("click", () => {
+      const overlay = $("post-studio-modal-overlay");
+      const player = $("studio-video-player");
+      if (player) player.pause();
+      if (overlay) overlay.hidden = true;
+    });
+
+    $("btn-copy-video-prompt")?.addEventListener("click", () => copyTextareaWithFeedback("studio-video-prompt", "btn-copy-video-prompt"));
+    $("btn-copy-audio-prompt")?.addEventListener("click", () => copyTextareaWithFeedback("studio-audio-prompt", "btn-copy-audio-prompt"));
+    $("btn-copy-caption-prompt")?.addEventListener("click", () => copyTextareaWithFeedback("studio-caption-prompt", "btn-copy-caption-prompt"));
+
+    $("btn-save-prompts")?.addEventListener("click", saveCurrentModalPrompts);
+    $("btn-upload-video")?.addEventListener("click", uploadVideoForActivePost);
+    $("btn-publish-and-clean")?.addEventListener("click", () => publishToMetaAndCleanVideo(false));
+    $("btn-delete-staged-video")?.addEventListener("click", () => publishToMetaAndCleanVideo(true));
+
+    // Delegação global para botões "Prompts & Subir Vídeo" nos cards
+    document.addEventListener("click", (e) => {
+      const trigger = e.target.closest("[data-open-studio-post]");
+      if (trigger) {
+        e.preventDefault();
+        e.stopPropagation();
+        const postId = trigger.getAttribute("data-open-studio-post");
+        openPostStudioModal(postId);
+      }
+    });
+  }
+
+  // ==============================================================
   // TELAS DE RENDERIZAÇÃO
   // ==============================================================
 
@@ -253,9 +586,15 @@
                   <strong>📝 Briefing & Roteiro:</strong>
                   <p>${post.script}</p>
                 </div>
-                <a href="${DRIVE_FOLDER}" target="_blank" rel="noopener noreferrer" class="button primary planner-card-btn">
-                  📂 Ver no Drive
-                </a>
+                ${renderPostStagingBadge(post)}
+                <div style="display:flex; flex-direction:column; gap:0.45rem; margin-top:0.25rem;">
+                  <button type="button" data-open-studio-post="${post.id}" class="button primary planner-card-btn" style="width:100%; justify-content:center;">
+                    🎬 Prompts & Subir Vídeo
+                  </button>
+                  <a href="${DRIVE_FOLDER}" target="_blank" rel="noopener noreferrer" class="button secondary planner-card-btn" style="width:100%; justify-content:center;">
+                    📂 Ver no Drive
+                  </a>
+                </div>
               </article>
             </div>
           </div>
@@ -275,7 +614,7 @@
       <div class="editorial-month-meta-bar">
         <div class="month-headline">
           <strong>${state.selectedMonth === "2026-10" ? "Outubro 2026 (Aquecimento & Pré-lista)" : state.selectedMonth === "2026-11" ? "Novembro 2026 (Black Week Oficial & 15 Dias)" : "Dezembro 2026 (Retenção 2027)"}</strong>
-          <span>${filtered.length} publicações programadas com validação científica e conformidade ética.</span>
+          <span>${filtered.length} publicações programadas com prompts Gemini prontos, upload temporário e auto-limpeza pós-postagem.</span>
         </div>
         <div class="month-kpis">
           <div class="month-kpi-item">
@@ -283,8 +622,8 @@
             <strong>${filtered.length}</strong>
           </div>
           <div class="month-kpi-item">
-            <small>Repositório</small>
-            <strong style="color: #38bdf8;">Google Drive</strong>
+            <small>Fluxo de Mídia</small>
+            <strong style="color: #34d399;">Auto-Clean 0 MB</strong>
           </div>
         </div>
       </div>
@@ -311,9 +650,14 @@
               <p>${post.script}</p>
             </div>
 
-            <div class="month-week-footer">
+            ${renderPostStagingBadge(post)}
+
+            <div class="month-week-footer" style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+              <button type="button" data-open-studio-post="${post.id}" class="button primary planner-card-btn" style="flex:1;">
+                🎬 Prompts & Subir Vídeo
+              </button>
               <a href="${DRIVE_FOLDER}" target="_blank" rel="noopener noreferrer" class="button secondary planner-card-btn">
-                📂 Acessar Arquivo no Drive
+                📂 Drive
               </a>
             </div>
           </article>
@@ -347,13 +691,14 @@
                 <span class="kanban-badge">${items.length}</span>
               </div>
               ${items.map(item => `
-                <div class="kanban-card" onclick="window.open('${DRIVE_FOLDER}', '_blank')">
+                <div class="kanban-card" data-open-studio-post="${item.id}">
                   <div class="kanban-card-meta">
                     <span>${item.date}</span>
                     <span style="color:#38bdf8;">${item.format}</span>
                   </div>
                   <div class="kanban-card-title">${item.title}</div>
-                  <small style="color:#94a3b8;">CTA: ${item.cta}</small>
+                  <small style="color:#94a3b8; display:block; margin-bottom:0.35rem;">CTA: ${item.cta}</small>
+                  ${renderPostStagingBadge(item)}
                 </div>
               `).join("")}
             </div>
@@ -685,6 +1030,7 @@
 
   async function init() {
     setupViewToggle();
+    setupPostStudioModalListeners();
     $("admin-pin-form")?.addEventListener("submit", submitEditorialPin);
 
     const pinInput = $("admin-pin");
