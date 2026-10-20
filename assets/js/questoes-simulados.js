@@ -5965,6 +5965,68 @@ function chunkArray(array, size) {
   return chunks;
 }
 
+/*
+  O número impresso no PDF não é uma chave única: ele pode reiniciar em
+  novas provas, blocos ou cadernos. A lista pessoal precisa de números
+  internos únicos, sem consultar nem alterar o banco oficial da LURIA.
+  O enunciado bruto mantém a numeração original do documento.
+*/
+function prepareImportedPdfQuestionRecords(questions, images, answerKey) {
+  const sourceNumbers = questions.map((question) => Number(question.question_number));
+  const sourceCounts = new Map();
+
+  for (const number of sourceNumbers) {
+    if (Number.isSafeInteger(number) && number > 0) {
+      sourceCounts.set(number, (sourceCounts.get(number) || 0) + 1);
+    }
+  }
+
+  const uniqueNumbers = new Map();
+  const normalizedQuestions = questions.map((question, index) => {
+    const sourceNumber = sourceNumbers[index];
+    const internalNumber = index + 1;
+
+    if (sourceCounts.get(sourceNumber) === 1) {
+      uniqueNumbers.set(sourceNumber, internalNumber);
+    }
+
+    return {
+      ...question,
+      question_number: internalNumber,
+      order_index: internalNumber,
+      // Importação pessoal: nunca criar vínculo com question_bank.
+      question_bank_id: null
+    };
+  });
+
+  const answers = sourceNumbers.map((number) => {
+    // Gabaritos indexados por números repetidos seriam ambíguos.
+    if (!uniqueNumbers.has(number)) return null;
+    return answerKey?.[number] || null;
+  });
+
+  const safeImages = [];
+  let skippedImages = 0;
+  for (const image of images) {
+    const originalNumber = Number(image.question_number);
+    const internalNumber = uniqueNumbers.get(originalNumber);
+    if (!internalNumber) {
+      // Não vincular imagem à questão errada quando o PDF repetir números.
+      skippedImages += 1;
+      continue;
+    }
+    safeImages.push({ ...image, question_number: internalNumber });
+  }
+
+  return {
+    questions: normalizedQuestions,
+    images: safeImages,
+    answers,
+    repeatedNumbers: [...sourceCounts.values()].filter((count) => count > 1).length,
+    skippedImages
+  };
+}
+
 async function importPdf() {
   const file =
     qsState.file;
@@ -6034,8 +6096,16 @@ async function importPdf() {
       extraction;
 
 
+    const prepared = prepareImportedPdfQuestionRecords(
+      questions,
+      questionImages,
+      answerKey
+    );
+
     setImportStatus(
-      "Questões reconhecidas. Salvando somente os dados extraídos..."
+      prepared.repeatedNumbers
+        ? `Numeração repetida em ${prepared.repeatedNumbers} número(s) do PDF. Ajustando a sequência da lista pessoal antes de salvar...`
+        : "Questões reconhecidas. Salvando somente os dados extraídos..."
     );
 
 
@@ -6049,13 +6119,13 @@ async function importPdf() {
     const imagePaths =
       await uploadExtractedQuestionImages(
         setRecord.id,
-        questionImages
+        prepared.images
       );
 
 
     const payload =
-      questions.map(
-        question => ({
+      prepared.questions.map(
+        (question, index) => ({
           user_id:
             qsState.user.id,
 
@@ -6065,10 +6135,7 @@ async function importPdf() {
           ...question,
 
           official_answer:
-            answerKey[
-              question.question_number
-            ]
-            || null,
+            prepared.answers[index],
 
           image_path:
             imagePaths[
@@ -6141,7 +6208,7 @@ async function importPdf() {
 
 
     setImportStatus(
-      `${questions.length} questões extraídas com sucesso em ${extraction.extractionMode === "quick" ? "Extração rápida" : "Extração detalhada"} · ${sourceProfileLabel(extraction.sourceProfile)}. ${questionImages.length} recorte(s) de imagem preservado(s). O PDF original não foi armazenado.`,
+      `${prepared.questions.length} questões extraídas com sucesso em ${extraction.extractionMode === "quick" ? "Extração rápida" : "Extração detalhada"} · ${sourceProfileLabel(extraction.sourceProfile)}. ${prepared.images.length} recorte(s) de imagem vinculado(s). ${prepared.repeatedNumbers ? `Numeração do PDF repetida em ${prepared.repeatedNumbers} número(s); as questões foram numeradas em sequência e gabaritos ambíguos ficaram para revisão. ` : ""}${prepared.skippedImages ? `${prepared.skippedImages} imagem(ns) sem vínculo seguro precisam ser adicionadas manualmente. ` : ""}O PDF original não foi armazenado.`,
       "success"
     );
 
