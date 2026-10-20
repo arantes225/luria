@@ -181,6 +181,61 @@ body[data-page="professor_alex"] .alex-msg-user .alex-msg-header {
   color: rgba(255, 255, 255, 0.8) !important;
 }
 
+/* Botão de Conversa ao Vivo por Voz */
+body[data-page="professor_alex"] .alex-top-action-bar {
+  display: flex !important;
+  justify-content: center !important;
+  margin-bottom: 8px !important;
+}
+
+body[data-page="professor_alex"] .alex-live-call-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 8px 18px !important;
+  border-radius: 999px !important;
+  border: 1.5px solid rgba(37, 99, 235, 0.4) !important;
+  background: linear-gradient(135deg, rgba(24, 72, 136, 0.95), rgba(37, 99, 235, 0.95)) !important;
+  color: #FFFFFF !important;
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.25) !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+body[data-page="professor_alex"] .alex-live-call-btn:hover {
+  transform: translateY(-1px) scale(1.02) !important;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.38) !important;
+  filter: brightness(1.08) !important;
+}
+
+body[data-page="professor_alex"] .alex-live-call-btn.is-active {
+  background: linear-gradient(135deg, #DC2626, #EF4444) !important;
+  border-color: #F87171 !important;
+  box-shadow: 0 4px 20px rgba(239, 68, 68, 0.4) !important;
+}
+
+body[data-page="professor_alex"] .live-pulse-dot {
+  width: 9px !important;
+  height: 9px !important;
+  border-radius: 50% !important;
+  background: #10B981 !important;
+  box-shadow: 0 0 10px #10B981 !important;
+  animation: alexCallBlink 1.5s infinite ease-in-out !important;
+}
+
+body[data-page="professor_alex"] .alex-live-call-btn.is-active .live-pulse-dot {
+  background: #FFFFFF !important;
+  box-shadow: 0 0 10px #FFFFFF !important;
+  animation: alexCallBlink 0.8s infinite ease-in-out !important;
+}
+
+@keyframes alexCallBlink {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
 body[data-page="professor_alex"] .alex-status-pill {
   display: inline-flex !important;
   align-items: center !important;

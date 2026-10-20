@@ -173,6 +173,37 @@ if (form) {
       if (typeof data?.answer !== "string" || !data.answer.trim()) throw Error("empty_response");
       display(data.answer, "Sua aula com o Professor Alex");
       if (mascot?.playAnimation) mascot.playAnimation("explaining");
+      if (isLiveActive) {
+        speakText(data.answer, () => {
+          if (isLiveActive) {
+            const statusText = document.getElementById("alex-status-text");
+            if (statusText) statusText.textContent = "🎙️ Ouvindo... Pode perguntar mais!";
+            setTimeout(() => {
+              if (isLiveActive && !window.speechSynthesis?.speaking) {
+                const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+                if (SpeechRec && !liveRecognition) {
+                  try {
+                    liveRecognition = new SpeechRec();
+                    liveRecognition.lang = "pt-BR";
+                    liveRecognition.continuous = false;
+                    liveRecognition.interimResults = false;
+                    liveRecognition.onresult = ev => {
+                      const q = ev.results?.[0]?.[0]?.transcript?.trim();
+                      if (q) {
+                        const p = document.getElementById("alex-prompt");
+                        if (p) p.value = q;
+                        form.dispatchEvent(new Event("submit", { cancelable: true }));
+                      }
+                    };
+                    liveRecognition.onend = () => { liveRecognition = null; };
+                    liveRecognition.start();
+                  } catch {}
+                }
+              }
+            }, 500);
+          }
+        });
+      }
     } catch (error) {
       const message = error?.message === "empty_response"
         ? ERROR_MESSAGES.empty_response
@@ -188,3 +219,138 @@ if (form) {
     }
   }, true);
 }
+
+// ==========================================
+// Módulo de Conversa ao Vivo por Voz
+// ==========================================
+let isLiveActive = false;
+let liveRecognition = null;
+const liveCallBtn = document.getElementById("alex-live-call-btn");
+const liveCallText = document.getElementById("alex-live-call-text");
+
+function speakText(text, onComplete) {
+  if (!("speechSynthesis" in window)) {
+    if (onComplete) onComplete();
+    return;
+  }
+  window.speechSynthesis.cancel();
+
+  const plainText = String(text || "")
+    .replace(/\*\*(.*?)\*\*/g, "$1")
+    .replace(/\*(.*?)\*/g, "$1")
+    .replace(/#{1,6}\s+/g, "")
+    .replace(/\[(.*?)\]\(.*?\)/g, "$1")
+    .replace(/<[^>]*>/g, "")
+    .trim();
+
+  if (!plainText) {
+    if (onComplete) onComplete();
+    return;
+  }
+
+  const utterance = new SpeechSynthesisUtterance(plainText);
+  utterance.lang = "pt-BR";
+  utterance.rate = 1.05;
+  utterance.pitch = 1.0;
+
+  const mascot = document.getElementById("alex-mascot");
+  utterance.onstart = () => {
+    if (mascot) {
+      mascot.speaking = true;
+      if (typeof mascot.playAnimation === "function") {
+        mascot.expression = "happy";
+        mascot.playAnimation("explaining");
+      }
+    }
+  };
+
+  const endSpeech = () => {
+    if (mascot) mascot.speaking = false;
+    if (onComplete) onComplete();
+  };
+
+  utterance.onend = endSpeech;
+  utterance.onerror = endSpeech;
+  window.speechSynthesis.speak(utterance);
+}
+
+function initLiveVoiceMode() {
+  if (!liveCallBtn) return;
+  const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SpeechRec) {
+    liveCallBtn.title = "Navegador não suporta reconhecimento de voz contínuo.";
+    liveCallBtn.style.opacity = "0.7";
+    return;
+  }
+
+  liveCallBtn.addEventListener("click", () => {
+    if (isLiveActive) stopLiveMode();
+    else startLiveMode();
+  });
+
+  function startLiveMode() {
+    isLiveActive = true;
+    liveCallBtn.classList.add("is-active");
+    if (liveCallText) liveCallText.textContent = "Encerrar Conversa ao Vivo";
+    const statusText = document.getElementById("alex-status-text");
+    if (statusText) statusText.textContent = "🎙️ Conversa ao vivo ativa! Fale sua dúvida clínica...";
+    const mascot = document.getElementById("alex-mascot");
+    if (mascot && typeof mascot.playAnimation === "function") {
+      mascot.expression = "attentive";
+      mascot.playAnimation("listening");
+    }
+    startListening();
+  }
+
+  function stopLiveMode() {
+    isLiveActive = false;
+    if (liveRecognition) {
+      try { liveRecognition.abort(); } catch {}
+      liveRecognition = null;
+    }
+    window.speechSynthesis?.cancel();
+    const mascot = document.getElementById("alex-mascot");
+    if (mascot) {
+      mascot.speaking = false;
+      if (typeof mascot.playAnimation === "function") {
+        mascot.expression = "happy";
+        mascot.playAnimation("wave");
+      }
+    }
+    liveCallBtn.classList.remove("is-active");
+    if (liveCallText) liveCallText.textContent = "Conversar ao Vivo por Voz";
+    const statusText = document.getElementById("alex-status-text");
+    if (statusText) statusText.textContent = "Professor Alex online e pronto para ensinar";
+  }
+
+  function startListening() {
+    if (!isLiveActive) return;
+    try {
+      liveRecognition = new SpeechRec();
+      liveRecognition.lang = "pt-BR";
+      liveRecognition.continuous = false;
+      liveRecognition.interimResults = false;
+      liveRecognition.onresult = async event => {
+        const query = event.results?.[0]?.[0]?.transcript?.trim();
+        if (query) {
+          const promptInput = document.getElementById("alex-prompt");
+          if (promptInput) promptInput.value = query;
+          if (form) form.dispatchEvent(new Event("submit", { cancelable: true }));
+        }
+      };
+      liveRecognition.onerror = err => {
+        if (isLiveActive && err.error !== "no-speech") console.warn("[Live Alex]", err);
+      };
+      liveRecognition.onend = () => {
+        if (isLiveActive && !window.speechSynthesis?.speaking && !submit?.disabled) {
+          setTimeout(startListening, 600);
+        }
+      };
+      liveRecognition.start();
+    } catch (e) {
+      console.warn("[Live Speech Error]", e);
+    }
+  }
+}
+
+initLiveVoiceMode();
