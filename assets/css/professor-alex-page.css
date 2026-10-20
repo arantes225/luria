@@ -25,7 +25,7 @@ body[data-page="professor_alex"] .alex-mascot-box {
   position: relative !important;
   width: 100% !important;
   box-sizing: border-box !important;
-  padding: 24px 24px 18px !important;
+  padding: 14px 16px 12px !important;
   border: 1px solid var(--color-border, var(--border, #cbd5e1)) !important;
   border-radius: 24px !important;
   background: radial-gradient(circle at 50% 28%, rgba(37, 99, 235, 0.08) 0%, rgba(37, 99, 235, 0.02) 50%, transparent 75%), var(--color-surface, var(--surface, #ffffff)) !important;
@@ -45,14 +45,14 @@ body[data-page="professor_alex"] .alex-mascot-stage-wrap {
   align-items: center !important;
   justify-content: center !important;
   width: 100% !important;
-  min-height: 340px !important;
+  min-height: 180px !important;
   position: relative !important;
 }
 
 body[data-page="professor_alex"] professor-alex-mascot#alex-mascot {
   display: block !important;
-  width: 340px !important;
-  height: 340px !important;
+  width: 180px !important;
+  height: 180px !important;
   max-width: 100% !important;
   margin: 0 auto !important;
   filter: drop-shadow(0 12px 28px rgba(15, 35, 66, 0.12)) !important;
@@ -85,12 +85,100 @@ body[data-page="professor_alex"] .alex-mascot-hint {
     padding: 16px 14px 14px !important;
   }
   body[data-page="professor_alex"] .alex-mascot-stage-wrap {
-    min-height: 270px !important;
+    min-height: 150px !important;
   }
   body[data-page="professor_alex"] professor-alex-mascot#alex-mascot {
-    width: 270px !important;
-    height: 270px !important;
+    width: 150px !important;
+    height: 150px !important;
   }
+}
+
+/* Layout em duas colunas / Chat Feed do Professor Alex */
+body[data-page="professor_alex"] .alex-chat-feed {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 14px !important;
+  width: 100% !important;
+  max-height: 520px !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain !important;
+  padding: 18px !important;
+  box-sizing: border-box !important;
+  border-radius: 20px !important;
+  background: var(--surface-2, #F1F5F9) !important;
+  border: 1px solid var(--border, #D9E2EC) !important;
+  box-shadow: inset 0 2px 6px rgba(16, 36, 62, 0.04) !important;
+  scroll-behavior: smooth !important;
+}
+
+:root[data-theme="dark"] body[data-page="professor_alex"] .alex-chat-feed {
+  background: #091527 !important;
+  border-color: #20344F !important;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+body[data-page="professor_alex"] .alex-msg {
+  display: flex !important;
+  flex-direction: column !important;
+  max-width: 86% !important;
+  box-sizing: border-box !important;
+  animation: alexFadeSlide 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+@keyframes alexFadeSlide {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body[data-page="professor_alex"] .alex-msg-user {
+  align-self: flex-end !important;
+}
+
+body[data-page="professor_alex"] .alex-msg-alex {
+  align-self: flex-start !important;
+}
+
+body[data-page="professor_alex"] .alex-msg-bubble {
+  padding: 14px 18px !important;
+  border-radius: 18px !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  word-break: break-word !important;
+  box-shadow: 0 2px 10px rgba(15, 35, 66, 0.05) !important;
+}
+
+body[data-page="professor_alex"] .alex-msg-user .alex-msg-bubble {
+  background: linear-gradient(135deg, #184888, #2563EB) !important;
+  color: #FFFFFF !important;
+  border-bottom-right-radius: 4px !important;
+}
+
+body[data-page="professor_alex"] .alex-msg-alex .alex-msg-bubble {
+  background: var(--surface, #FFFFFF) !important;
+  color: var(--text, #10243E) !important;
+  border: 1px solid var(--border, #D9E2EC) !important;
+  border-bottom-left-radius: 4px !important;
+}
+
+:root[data-theme="dark"] body[data-page="professor_alex"] .alex-msg-alex .alex-msg-bubble {
+  background: #0D1B30 !important;
+  color: #F4F8FF !important;
+  border-color: #20344F !important;
+}
+
+body[data-page="professor_alex"] .alex-msg-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-bottom: 6px !important;
+  font-size: 11.5px !important;
+  font-weight: 700 !important;
+  color: var(--muted, #5F6F82) !important;
+}
+
+body[data-page="professor_alex"] .alex-msg-user .alex-msg-header {
+  justify-content: flex-end !important;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
 body[data-page="professor_alex"] .alex-status-pill {

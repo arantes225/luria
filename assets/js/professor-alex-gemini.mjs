@@ -30,13 +30,59 @@ const ERROR_MESSAGES = {
   backend_not_configured: "O backend do Professor Alex ainda não está configurado.",
 };
 
+function escapeHtml(str) {
+  return String(str || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+function appendUserMessage(text) {
+  const feed = document.getElementById("alex-chat-feed");
+  if (!feed) return;
+  const msg = document.createElement("div");
+  msg.className = "alex-msg alex-msg-user";
+  msg.innerHTML = '<div class="alex-msg-header"><span>Você</span></div>' +
+    '<div class="alex-msg-bubble">' + escapeHtml(text).replace(/\n/g, '<br>') + '</div>';
+  feed.appendChild(msg);
+  feed.scrollTop = feed.scrollHeight;
+}
+
 function display(message, title = "Professor Alex", isError = false) {
+  const feed = document.getElementById("alex-chat-feed");
+  if (feed) {
+    const existingThinking = document.getElementById("alex-thinking-msg");
+    if (existingThinking) existingThinking.remove();
+
+    if (title === "Professor Alex está pensando") {
+      const thinking = document.createElement("div");
+      thinking.id = "alex-thinking-msg";
+      thinking.className = "alex-msg alex-msg-alex";
+      thinking.innerHTML = '<div class="alex-msg-header"><span class="response-icon">🎓</span><span>Professor Alex</span></div>' +
+        '<div class="alex-msg-bubble" style="opacity:0.85; font-style:italic;">' + escapeHtml(message) + '</div>';
+      feed.appendChild(thinking);
+      feed.scrollTop = feed.scrollHeight;
+      return;
+    }
+
+    const msg = document.createElement("div");
+    msg.className = "alex-msg alex-msg-alex";
+    const headerTitle = isError ? 'Aviso' : 'Professor Alex';
+    const errorStyle = isError ? ' style="border-left: 4px solid var(--danger);"' : '';
+    msg.innerHTML = '<div class="alex-msg-header"><span class="response-icon">🎓</span><span>' + headerTitle + '</span></div>' +
+      '<div class="alex-msg-bubble"' + errorStyle + '>' + escapeHtml(message).replace(/\n/g, '<br>') + '</div>';
+    feed.appendChild(msg);
+    feed.scrollTop = feed.scrollHeight;
+  }
+
   if (outputTitle) outputTitle.textContent = title;
   if (outputCopy) {
     outputCopy.textContent = message;
     outputCopy.style.whiteSpace = "pre-wrap";
     outputCopy.style.overflowWrap = "anywhere";
-    outputCopy.style.color = isError ? "var(--text)" : "var(--text)";
+    outputCopy.style.color = isError ? "var(--danger)" : "var(--text)";
   }
   if (output) output.hidden = false;
   output?.classList.add('is-visible');
@@ -103,6 +149,7 @@ if (form) {
       mode: document.querySelector('[data-alex-mode][aria-pressed="true"]')?.dataset.alexMode || "normal",
     };
 
+    if (prompt) appendUserMessage(prompt);
     const oldText = submit?.textContent || "Começar aula";
     if (submit) {
       submit.disabled = true;

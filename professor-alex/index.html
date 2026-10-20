@@ -83,7 +83,7 @@
                 <span id="alex-status-text">Professor Alex online e pronto para ensinar</span>
               </div>
               <div class="alex-mascot-stage-wrap">
-                <professor-alex-mascot id="alex-mascot" size="340" theme="auto" expression="happy" interactive="true"></professor-alex-mascot>
+                <professor-alex-mascot id="alex-mascot" size="180" theme="auto" expression="happy" interactive="true"></professor-alex-mascot>
               </div>
               <div class="alex-mascot-card-bottom">
                 <span class="alex-mascot-hint">Toque nele para cumprimentar ou envie sua pergunta abaixo para vê-lo gesticular e explicar</span>
@@ -109,6 +109,19 @@
 
             <!-- Chat Conversacional Unificado (Sem matérias nem selects rígidos) -->
             <div class="alex-chat-container">
+              <!-- Feed de Conversa / Chat com o Professor Alex -->
+              <div class="alex-chat-feed" id="alex-chat-feed" aria-live="polite">
+                <div class="alex-msg alex-msg-alex">
+                  <div class="alex-msg-header">
+                    <span class="response-icon">🎓</span>
+                    <span>Professor Alex</span>
+                  </div>
+                  <div class="alex-msg-bubble">
+                    Olá! Eu sou o Professor Alex, seu tutor médico na LURIA. Digite qualquer tema, dúvida clínica ou anexe um material de estudo abaixo para conversarmos!
+                  </div>
+                </div>
+              </div>
+
               <form class="alex-chat-form" id="alex-form">
                 <div class="alex-input-bar">
                   <!-- Botão de Anexo em Clipe de Papel -->
