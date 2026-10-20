@@ -4,10 +4,19 @@
   const rubrics = window.LuriaCurriculoRubricas || [];
   const $ = id => document.getElementById(id);
   const form = $('cv-form');
+  const curriculumPanel = $('cv-curriculum-panel');
+  const curriculumToggle = $('cv-toggle');
   let userId = null;
   let state = { items: [], answers: {} };
   let pending = [];
   let busy = false;
+  curriculumToggle?.addEventListener('click', () => {
+    const willOpen = curriculumPanel.hidden;
+    curriculumPanel.hidden = !willOpen;
+    curriculumToggle.setAttribute('aria-expanded', String(willOpen));
+    curriculumToggle.classList.toggle('is-open', willOpen);
+    if (willOpen) curriculumPanel.querySelector('button, input, select')?.focus();
+  });
   const key = () => `luria:curriculo:v1:${userId}`;
   const status = message => { $('cv-status').textContent = message; };
   function node(tag, text, className) {

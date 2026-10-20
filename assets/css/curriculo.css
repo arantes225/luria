@@ -148,6 +148,32 @@
   background: var(--color-surface-elevated);
 }
 
+.cv-add-curriculum {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 180px;
+  min-height: 48px;
+  border: 1px solid var(--color-border-interactive);
+  border-radius: 999px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cv-add-curriculum > span:first-child {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.cv-add-curriculum:hover,
+.cv-add-curriculum.is-open {
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
 /* Grid Principal e Cards */
 .cv-grid {
   display: grid;
@@ -778,9 +804,7 @@ body[data-ui-appearance="dark"] .cv-group {
   .cv-hero {
     padding: 24px;
   }
-  .cv-emblem {
-    display: none;
-  }
+  .cv-emblem { display: inline-flex; }
 }
 
 @media (max-width: 700px) {
