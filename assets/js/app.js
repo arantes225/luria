@@ -1508,9 +1508,6 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${luriaIcon("simulation")}</span><span>Editais e Provas</span>
         </a>
 
-        <a class="nav-link ${page === "vocacao" ? "active" : ""}" href="/vocacao/">
-          <span class="nav-icon">${luriaIcon("target")}</span><span>Mapa de interesses</span>
-        </a>
         <a class="nav-link ${page === "amigos" ? "active" : ""}" href="/amigos/">
           <span class="nav-icon">${luriaIcon("users")}</span><span>Amigos</span>
         </a>

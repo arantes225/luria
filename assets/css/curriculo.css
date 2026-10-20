@@ -703,9 +703,9 @@
   min-height: 44px;
   padding: 10px 18px;
   border-radius: 12px;
-  background: #ffffff !important;
-  color: var(--color-primary, #155dfc) !important;
-  border: 1.5px solid var(--color-primary, #155dfc) !important;
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
+  color: #ffffff !important;
+  border: 1.5px solid transparent !important;
   font-size: 13.5px;
   font-weight: 700;
   text-decoration: none;
@@ -739,9 +739,9 @@
 
 [data-theme="dark"] .cv-hub-btn,
 [data-ui-appearance="dark"] .cv-hub-btn {
-  background: var(--color-surface, #151e2c) !important;
-  color: var(--color-primary-text, #93bbf0) !important;
-  border: 1.5px solid var(--color-primary, #155dfc) !important;
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
+  color: #ffffff !important;
+  border: 1.5px solid transparent !important;
 }
 
 [data-theme="dark"] .cv-hub-btn:hover,
