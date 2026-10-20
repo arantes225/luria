@@ -2758,3 +2758,10 @@ body[data-page="flashcards"] .flash-home-action > span {
   }
 }
 
+
+
+/* Highlight contrast fix */
+mark[data-qr-highlight] {
+  color: #10243E !important;
+  font-weight: 600 !important;
+}

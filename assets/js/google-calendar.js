@@ -45,9 +45,11 @@
       .google-calendar-copy strong{font-size:12px;font-weight:700;color:var(--text)}
       .google-calendar-copy small{font-size:10px;line-height:1.4;color:var(--muted)}
       .google-calendar-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
-      .google-calendar-actions button{min-height:34px;padding:0 11px;border-radius:9px;font:inherit;font-size:10px;font-weight:750;cursor:pointer}
-      .google-calendar-primary{border:1px solid var(--accent);background:var(--accent);color:#fff}
-      .google-calendar-secondary{border:1px solid var(--border);background:var(--surface);color:var(--text)}
+      .google-calendar-actions button{min-height:36px;padding:0 14px;border-radius:10px;font:inherit;font-size:11px;font-weight:750;cursor:pointer;transition:all 160ms ease}
+      .google-calendar-primary{border:none!important;background:var(--ui-pill-gradient,linear-gradient(135deg,#184888,#2563EB))!important;color:#fff!important;box-shadow:0 3px 10px rgba(24,72,136,0.22)!important}
+      .google-calendar-primary:hover{filter:brightness(1.08)!important;transform:translateY(-1px)!important}
+      .google-calendar-secondary{border:1px solid var(--border)!important;background:var(--surface)!important;color:var(--text)!important}
+      .google-calendar-secondary:hover{border-color:var(--accent)!important;color:var(--accent)!important}
       .google-calendar-mark{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:7px;background:var(--surface);border:1px solid var(--border);font-weight:800}
       .google-calendar-row{display:flex;align-items:center;gap:9px}
       .google-calendar-cronograma-side{margin:0 0 8px}

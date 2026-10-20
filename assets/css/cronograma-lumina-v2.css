@@ -1600,3 +1600,55 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-insight-tabs 
   margin: 10px 0 14px !important;
 }
 
+
+
+/* Google Calendar & Action Buttons theme styling */
+body[data-page="cronograma"]:not(.schedule-settings-embed) .google-calendar-card {
+  background: var(--color-surface) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--ui-radius-card, 16px) !important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .google-calendar-actions button {
+  min-height: 38px !important;
+  border-radius: 10px !important;
+  font-weight: 750 !important;
+  cursor: pointer !important;
+  transition: all 0.16s ease !important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .google-calendar-primary,
+body[data-page="cronograma"]:not(.schedule-settings-embed) button[data-google-calendar-connect] {
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #184888, #2563EB)) !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(24, 72, 136, 0.25) !important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .google-calendar-secondary,
+body[data-page="cronograma"]:not(.schedule-settings-embed) button[data-google-calendar-sync],
+body[data-page="cronograma"]:not(.schedule-settings-embed) button[data-google-calendar-disconnect] {
+  background: var(--color-surface-elevated, var(--color-surface)) !important;
+  color: var(--color-text-primary) !important;
+  border: 1px solid var(--color-border-interactive, var(--color-border)) !important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .google-calendar-secondary:hover {
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #184888, #2563EB)) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+}
+
+/* Force view toggle and filters to follow surface colors on dark mode */
+body[data-page="cronograma"][data-ui-appearance="dark"]:not(.schedule-settings-embed) .month-filter-trigger,
+:is([data-theme="dark"] body, body[data-ui-appearance="dark"])[data-page="cronograma"]:not(.schedule-settings-embed) .month-filter-trigger {
+  background: var(--color-surface, #151e2c) !important;
+  border-color: var(--color-border, #243347) !important;
+  color: var(--color-text-primary, #ffffff) !important;
+}
+
+body[data-page="cronograma"][data-ui-appearance="dark"]:not(.schedule-settings-embed) .planner-view-toggle,
+:is([data-theme="dark"] body, body[data-ui-appearance="dark"])[data-page="cronograma"]:not(.schedule-settings-embed) .planner-view-toggle {
+  background: var(--color-surface, #151e2c) !important;
+  border-color: var(--color-border, #243347) !important;
+}

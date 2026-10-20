@@ -189,7 +189,7 @@
      Padrão estrito: Fundo branco c/ escrita azul -> Azul degradê c/ escrita branca no hover.
      Raio uniforme de 12px, altura mínima de 44px, tipografia 700.
      ========================================================================== */
-  body[data-ui="v2"]:is([data-page="consolidar"],[data-page="jogos"],[data-page="cronograma"],[data-page="estatisticas"]) :is(
+  :not([data-theme="dark"]) > body[data-ui="v2"]:not([data-ui-appearance="dark"]):not([data-theme="dark"]):is([data-page="consolidar"],[data-page="jogos"],[data-page="cronograma"],[data-page="estatisticas"]) :is(
     .learn-cta,
     .games-link,
     .luria-game .g-button,
@@ -283,7 +283,7 @@
   }
 
   /* Modo Escuro */
-  :is([data-theme="dark"] body, body[data-ui-appearance="dark"])[data-ui="v2"]:is([data-page="consolidar"],[data-page="jogos"],[data-page="cronograma"],[data-page="estatisticas"]) :is(
+  :is([data-theme="dark"] body, body[data-ui-appearance="dark"], html[data-theme="dark"] body, :root[data-theme="dark"] body, body[data-theme="dark"])[data-ui="v2"]:is([data-page="consolidar"],[data-page="jogos"],[data-page="cronograma"],[data-page="estatisticas"]) :is(
     .learn-cta,
     .games-link,
     .luria-game .g-button,
@@ -310,7 +310,7 @@
     border-color: var(--color-border, #243347) !important;
   }
 
-  :is([data-theme="dark"] body, body[data-ui-appearance="dark"])[data-ui="v2"]:is([data-page="consolidar"],[data-page="jogos"],[data-page="cronograma"],[data-page="estatisticas"]) :is(
+  :is([data-theme="dark"] body, body[data-ui-appearance="dark"], html[data-theme="dark"] body, :root[data-theme="dark"] body, body[data-theme="dark"])[data-ui="v2"]:is([data-page="consolidar"],[data-page="jogos"],[data-page="cronograma"],[data-page="estatisticas"]) :is(
     .learn-cta,
     .games-link,
     .luria-game .g-button,
