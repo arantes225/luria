@@ -11034,7 +11034,7 @@ html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-side > 
   max-height:var(--dashboard-card-height)!important;
   margin:0!important;
   padding:var(--dashboard-card-padding)!important;
-  overflow:visible!important;
+  overflow:auto!important;
   box-sizing:border-box!important;
 }
 
@@ -11057,17 +11057,17 @@ html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-cat-con
 }
 
 @media(max-width:700px){
-  :root{--dashboard-card-gap:10px;--dashboard-card-padding:18px;--dashboard-card-height:auto;}
+  :root{--dashboard-card-gap:10px;--dashboard-card-padding:18px;--dashboard-card-height:300px;}
   html body[data-page="dashboard"] #dashboard-alternative .dl-grid.dl-layout-1{
     grid-template-columns:minmax(0,1fr)!important;
-    grid-template-rows:auto!important;
+    grid-template-rows:repeat(6,var(--dashboard-card-height))!important;
   }
   html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-card{
     grid-column:1!important;
     grid-row:auto!important;
-    height:auto!important;
-    min-height:0!important;
-    max-height:none!important;
+    height:var(--dashboard-card-height)!important;
+    min-height:var(--dashboard-card-height)!important;
+    max-height:var(--dashboard-card-height)!important;
   }
   html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-areas,
   html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-cat{min-height:0!important;}
