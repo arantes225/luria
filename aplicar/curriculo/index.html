@@ -60,7 +60,10 @@
               <h1>Sua trajetória, pronta para a próxima seleção.</h1>
               <p>Organize suas atividades, importe o Lattes e confira como seu currículo se encaixa nos critérios de cada edital.</p>
             </div>
-            <div class="cv-emblem" aria-hidden="true">▤</div>
+            <button type="button" id="cv-toggle" class="cv-emblem cv-add-curriculum" aria-expanded="false" aria-controls="cv-curriculum-panel">
+              <span aria-hidden="true">＋</span>
+              <span>Adicionar currículo</span>
+            </button>
           </section>
 
           <section class="cv-card cv-institutions">
@@ -78,7 +81,7 @@
           <p class="cv-note">Seu currículo fica salvo neste navegador, separado por conta. A simulação é uma estimativa: a banca confere a documentação e define a nota oficial.</p>
 
           <div class="cv-grid">
-            <div class="cv-card">
+            <div id="cv-curriculum-panel" class="cv-card" hidden>
               <div class="cv-card-header">
                 <h2>Meu currículo</h2>
                 <span class="cv-badge" id="cv-count">0 atividades</span>

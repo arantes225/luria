@@ -1,7 +1,16 @@
 /* Pure helpers shared by the curriculum UI and regression tests. */
 ((root) => {
   'use strict';
-  const categories = { artigo: 'Artigo científico', trabalho: 'Trabalho em evento', curso: 'Curso e certificação', monitoria: 'Monitoria', pesquisa: 'Iniciação científica', extensao: 'Extensão', formacao: 'Formação', outro: 'Outra atividade' };
+  const categories = {
+    artigo: 'Publicação científica (artigo)',
+    trabalho: 'Trabalho ou apresentação em evento',
+    curso: 'Curso ou certificação complementar',
+    monitoria: 'Monitoria acadêmica',
+    pesquisa: 'Iniciação científica / pesquisa',
+    extensao: 'Projeto de extensão',
+    formacao: 'Formação acadêmica (graduação, pós ou residência)',
+    outro: 'Prêmio, representação ou outra atividade avaliada'
+  };
   const identity = item => [item.category, item.title, item.year].map(v => String(v || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim().toLowerCase().replace(/\s+/g, ' ')).join('|');
   function merge(existing, incoming) {
     const seen = new Set(existing.map(identity));
