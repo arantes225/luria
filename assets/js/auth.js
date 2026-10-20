@@ -3,6 +3,9 @@ const sb = window.supabaseClient;
 const form = document.getElementById("login-form");
 const emailInput = document.getElementById("email");
 const senhaInput = document.getElementById("senha");
+const togglePasswordButton = document.getElementById("toggle-password");
+const eyeIcon = document.getElementById("eye-icon");
+const eyeOffIcon = document.getElementById("eye-off-icon");
 const entrarButton = document.getElementById("entrar");
 const criarButton = document.getElementById("criar-conta");
 const passkeyButton = document.getElementById("passkey-login");
@@ -241,6 +244,19 @@ async function entrarComGoogle() {
 
 form.addEventListener("submit", entrar);
 criarButton.addEventListener("click", criarConta);
+
+if (togglePasswordButton && senhaInput) {
+  togglePasswordButton.addEventListener("click", () => {
+    const isPassword = senhaInput.type === "password";
+    senhaInput.type = isPassword ? "text" : "password";
+    togglePasswordButton.setAttribute("aria-label", isPassword ? "Ocultar senha" : "Mostrar senha");
+    togglePasswordButton.setAttribute("aria-pressed", String(isPassword));
+    if (eyeIcon && eyeOffIcon) {
+      eyeIcon.style.display = isPassword ? "none" : "";
+      eyeOffIcon.style.display = isPassword ? "" : "none";
+    }
+  });
+}
 
 const googleButton = document.getElementById("entrar-google");
 if (googleButton) {
