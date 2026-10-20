@@ -10988,3 +10988,87 @@ html body[data-page="dashboard"][data-dashboard-layout="3"] #dashboard-alternati
 html body[data-page="dashboard"][data-dashboard-layout="3"] #dashboard-alternative .dl3-overview .dl-mini-list{flex:1!important;margin:0!important;gap:10px!important;}
 html body[data-page="dashboard"][data-dashboard-layout="3"] #dashboard-alternative .dl3-overview .dl-ring{width:120px!important;height:120px!important;min-height:120px!important;flex-basis:120px!important;}
 }
+
+/* ========================================================================
+   Dashboard — grade final de cards
+   Mantém as seis ações em uma grade legível, sem alturas herdadas ou
+   espaçamentos que variam entre os cartões. Estas regras ficam no fim do
+   arquivo para neutralizar composições legadas acima.
+   ======================================================================== */
+:root{
+  --dashboard-card-gap:10px;
+  --dashboard-card-padding:24px;
+  --dashboard-card-height:320px;
+}
+
+html body[data-page="dashboard"] #dashboard-alternative .dl-grid.dl-layout-1{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) minmax(320px,.88fr)!important;
+  grid-template-rows:repeat(3,var(--dashboard-card-height))!important;
+  gap:var(--dashboard-card-gap)!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  max-height:none!important;
+  align-items:stretch!important;
+}
+
+html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-agenda-study-pair-1,
+html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-side{
+  display:contents!important;
+}
+
+html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-agenda-large{grid-column:1!important;grid-row:1!important;}
+html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-study-now-card-main{grid-column:2!important;grid-row:1!important;}
+html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-day-summary{grid-column:1!important;grid-row:2!important;}
+html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-streak{grid-column:2!important;grid-row:2!important;}
+html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-areas{grid-column:1!important;grid-row:3!important;}
+html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-cat{grid-column:2!important;grid-row:3!important;}
+
+html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 > .dl-card,
+html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-agenda-study-pair-1 > .dl-card,
+html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-side > .dl-card{
+  width:100%!important;
+  height:var(--dashboard-card-height)!important;
+  min-height:var(--dashboard-card-height)!important;
+  max-height:var(--dashboard-card-height)!important;
+  margin:0!important;
+  padding:var(--dashboard-card-padding)!important;
+  overflow:visible!important;
+  box-sizing:border-box!important;
+}
+
+html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-card-heading{
+  margin:0 0 18px!important;
+}
+
+html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-cat-content{
+  flex:1 1 auto!important;
+  align-items:center!important;
+  padding:0!important;
+  margin:0!important;
+}
+
+@media(max-width:1100px){
+  :root{--dashboard-card-gap:10px;--dashboard-card-padding:20px;--dashboard-card-height:300px;}
+  html body[data-page="dashboard"] #dashboard-alternative .dl-grid.dl-layout-1{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+
+@media(max-width:700px){
+  :root{--dashboard-card-gap:10px;--dashboard-card-padding:18px;--dashboard-card-height:auto;}
+  html body[data-page="dashboard"] #dashboard-alternative .dl-grid.dl-layout-1{
+    grid-template-columns:minmax(0,1fr)!important;
+    grid-template-rows:auto!important;
+  }
+  html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-card{
+    grid-column:1!important;
+    grid-row:auto!important;
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+  }
+  html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-areas,
+  html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-cat{min-height:0!important;}
+}

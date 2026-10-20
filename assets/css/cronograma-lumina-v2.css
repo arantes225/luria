@@ -1557,3 +1557,46 @@ body[data-ui-identity="pink"][data-ui-appearance="dark"][data-page="cronograma"]
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
 }
 
+/* A single 10px rhythm for the schedule surface and its controls. */
+body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-stack,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-summary,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-reference-layout {
+  gap: 10px !important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .month-filter-tools {
+  gap: 10px !important;
+  margin: 0 0 10px !important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .month-filter-trigger {
+  min-height: 48px !important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) :is(.planner-view-toggle, .agenda-activity-view-switch, .agenda-insight-tabs) {
+  min-height: 44px !important;
+  height: 44px !important;
+  padding: 3px !important;
+  gap: 3px !important;
+  box-sizing: border-box !important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) :is(.planner-view-toggle, .agenda-activity-view-switch, .agenda-insight-tabs) button,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .planner-today {
+  min-height: 36px !important;
+  height: 36px !important;
+  padding: 0 14px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .planner-tools {
+  gap: 10px !important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-insight-tabs {
+  width: 100% !important;
+  margin: 10px 0 14px !important;
+}
+
