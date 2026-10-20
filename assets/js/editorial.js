@@ -488,14 +488,14 @@
             <small style="color:#4ade80;">R$ 2,85 / dia (1 post vencedor)</small>
           </div>
           <div class="meta-ads-kpi-card">
-            <span>Fase 1 (Novembro 1-15)</span>
+            <span>Fase 1 Prolongada (Novembro todo)</span>
             <strong>Ganhar Seguidores</strong>
-            <small>Validação e Autoridade de Marca</small>
+            <small>Construção de Base e Marca Forte</small>
           </div>
           <div class="meta-ads-kpi-card">
-            <span>Fase 2 (Novembro 16-30)</span>
+            <span>Fase 2 (Black Week Final / Dezembro)</span>
             <strong>Transferir p/ Acessos</strong>
-            <small>Pré-lista VIP e 15 Dias Grátis</small>
+            <small>Público já aquecido e confiante</small>
           </div>
           <div class="meta-ads-kpi-card">
             <span>Critério de Escolha</span>
@@ -505,7 +505,7 @@
         </div>
 
         <div class="meta-campaigns-table-card">
-          <h3>Evolução das Campanhas Meta Ads (Fase 1 & Fase 2)</h3>
+          <h3>Evolução das Campanhas Meta Ads (Fase 1 Estendida & Fase 2 Futura)</h3>
           <table class="meta-table">
             <thead>
               <tr>
@@ -526,23 +526,23 @@
               </tr>
               <tr>
                 <td><strong>Semana 09/11 · Post Técnico Mais Salvo (Sepse / ECG)</strong></td>
-                <td><span class="funnel-tag funnel-top">Fase 1 · Visitas ao Perfil</span></td>
+                <td><span class="funnel-tag funnel-top">Fase 1 · Ganhar Seguidores</span></td>
                 <td>R$ 20,00 / sem</td>
-                <td>Seguidores de Páginas Médicas e Concursos</td>
-                <td><span class="status-dot pending"></span> Aguardando Métricas</td>
+                <td>Visitas ao Perfil · Alunos de Medicina e Recém-formados</td>
+                <td><span class="status-dot pending"></span> Foco em Marca</td>
               </tr>
               <tr>
-                <td><strong>Semana 16/11 · Transição de Verba para Acessos ao Site</strong></td>
-                <td><span class="funnel-tag funnel-mid">Fase 2 · Cliques no Link</span></td>
+                <td><strong>Semana 16/11 · Post de Produto / Caderno de Erros Mais Engajado</strong></td>
+                <td><span class="funnel-tag funnel-top">Fase 1 · Ganhar Seguidores</span></td>
                 <td>R$ 20,00 / sem</td>
-                <td>Engajados com o Perfil nos últimos 30 dias</td>
-                <td><span class="status-dot pending"></span> Planejado</td>
+                <td>Visitas ao Perfil · Comunidade Médica Engajada</td>
+                <td><span class="status-dot pending"></span> Foco em Marca</td>
               </tr>
               <tr>
-                <td><strong>Semana 23/11 · Black Week: Retargeting Pré-Lista VIP</strong></td>
-                <td><span class="funnel-tag funnel-bottom">Fase 2 · Conversão / 15 Dias</span></td>
+                <td><strong>Semana 23/11 · Black Week: Transição Seletiva para Acessos</strong></td>
+                <td><span class="funnel-tag funnel-mid">Fase 2 · Transição p/ Acessos</span></td>
                 <td>R$ 20,00 / sem</td>
-                <td>Visitantes do perfil e do site /black-november/</td>
+                <td>Público que seguiu o perfil em novembro → /black-november/</td>
                 <td><span class="status-dot pending"></span> Planejado</td>
               </tr>
             </tbody>
@@ -602,19 +602,19 @@
 
         <div class="organic-strategy-grid">
           <div class="organic-step-card">
-            <span class="step-badge">Fase 1 · A partir de 26/10</span>
+            <span class="step-badge">Fase 0 · A partir de 26/10</span>
             <h4>Feed Orgânico Impecável</h4>
             <p>Construção da vitrine técnica: 1 post por dia com foco em salvamento e compartilhamento antes de colocar qualquer verba em anúncios.</p>
           </div>
           <div class="organic-step-card">
-            <span class="step-badge">Fase 2 · A partir de 02/11</span>
-            <h4>Micro-Budget R$ 20 / semana</h4>
-            <p>Escolha exclusiva do post orgânico nº 1 da semana anterior para impulsionar Visitas ao Perfil e validar a marca LURIA.</p>
+            <span class="step-badge">Fase 1 Prolongada · Todo o Mês de Novembro</span>
+            <h4>Micro-Budget R$ 20 / semana (Seguidores & Marca)</h4>
+            <p>Manter a verba focada exclusivamente em trazer seguidores qualificados para o perfil. Valida autoridade médica e constrói comunidade sólida.</p>
           </div>
           <div class="organic-step-card">
-            <span class="step-badge">Fase 3 · A partir de 16/11</span>
-            <h4>Transferência para Acessos</h4>
-            <p>Com a marca validada e seguidores adquiridos, o tráfego pago migra para conversão de cadastros na Landing Page /black-november/.</p>
+            <span class="step-badge">Fase 2 Futura · Transição Gradual</span>
+            <h4>Transferência para Acessos ao Site</h4>
+            <p>Com centenas de seguidores médicos engajados, a transição para gerar cliques na landing page /black-november/ e no teste de 15 dias fica muito mais barata e eficiente.</p>
           </div>
         </div>
 
