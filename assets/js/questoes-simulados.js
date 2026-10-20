@@ -484,7 +484,9 @@ function currentExtractionSettings() {
       || "detailed",
     source:
       document.getElementById("qs-source-profile")?.value
-      || "general"
+      || "general",
+    importImages:
+      document.getElementById("qs-import-images")?.checked === true
   };
 }
 
@@ -4443,6 +4445,9 @@ async function extractQuestionsFromPdf(
     options.source
     || "general";
 
+  const importImages =
+    options.importImages === true;
+
   window.pdfjsLib
     .GlobalWorkerOptions
     .workerSrc =
@@ -4534,28 +4539,30 @@ async function extractQuestionsFromPdf(
       ...lines
     );
 
-    try {
-      const pageImages =
-        extractionMode === "quick"
-          ? await extractQuestionImagesQuick(
-              page,
-              content,
-              pageNumber
-            )
-          : await extractQuestionImagesFromPage(
-              page,
-              content,
-              pageNumber
-            );
+    if (importImages) {
+      try {
+        const pageImages =
+          extractionMode === "quick"
+            ? await extractQuestionImagesQuick(
+                page,
+                content,
+                pageNumber
+              )
+            : await extractQuestionImagesFromPage(
+                page,
+                content,
+                pageNumber
+              );
 
-      extractedImageEntries.push(
-        ...pageImages
-      );
-    } catch (imageError) {
-      console.warn(
-        `Não foi possível recortar imagens da página ${pageNumber}:`,
-        imageError
-      );
+        extractedImageEntries.push(
+          ...pageImages
+        );
+      } catch (imageError) {
+        console.warn(
+          `Não foi possível recortar imagens da página ${pageNumber}:`,
+          imageError
+        );
+      }
     }
   }
 

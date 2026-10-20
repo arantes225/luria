@@ -333,6 +333,31 @@
       display: none;
     }
 
+    .qs-image-option {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 12px;
+      color: var(--text);
+      font-size: 11px;
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .qs-image-option input {
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      margin: 0;
+      accent-color: var(--accent);
+    }
+
+    .qs-image-option small {
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 600;
+    }
+
     .qs-drop strong,
     .qs-drop small {
       display: block;
@@ -2689,6 +2714,11 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
                         Escolher arquivo PDF
                       </label>
                       <input id="qs-file" type="file" accept="application/pdf,.pdf">
+                      <label class="qs-image-option" for="qs-import-images">
+                        <input id="qs-import-images" type="checkbox">
+                        <span>Importar imagens</span>
+                        <small>Desmarcado: economiza tempo e armazenamento.</small>
+                      </label>
                     </div>
                   </div>
 
@@ -3055,7 +3085,7 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script src="/assets/js/study-mode.js?v=13.0"></script>
 <script src="/assets/js/luria-lazy-vendors.js?v=1"></script>
-<script src="/assets/js/questoes-simulados.js?v=20261020-pdf-detection-99-v2"></script>
+<script src="/assets/js/questoes-simulados.js?v=20261020-pdf-images-toggle-v1"></script>
 <script src="/assets/js/questoes-builder.js?v=20261020-clean-cta-v3"></script>
 
 <script>
