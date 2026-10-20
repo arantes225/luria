@@ -38,7 +38,8 @@ function display(message, title = "Professor Alex", isError = false) {
     outputCopy.style.overflowWrap = "anywhere";
     outputCopy.style.color = isError ? "var(--text)" : "var(--text)";
   }
-  output?.classList.add("is-visible");
+  if (output) output.hidden = false;
+  output?.classList.add('is-visible');
   output?.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
