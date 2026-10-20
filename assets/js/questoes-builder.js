@@ -149,7 +149,7 @@
     optionsFor(themeEl, aggregate(applyFilters(2), x => x.tema), "Todos os temas");
     optionsFor(subthemeEl, aggregate(applyFilters(3), x => x.subtema), "Todos os subtemas");
     const available = applyFilters(5).length;
-    availableEl.textContent = nf.format(available) + " questões disponíveis";
+    availableEl.textContent = nf.format(available) + (available === 1 ? " questão disponível" : " questões disponíveis");
     const requested = Number(countEl.value) || 0;
     estimatedEl.textContent = "~" + nf.format(Math.max(1, requested) * 2) + " min de resolução";
     countEl.max = String(state.maximum);
@@ -209,6 +209,7 @@
         difficultyEl.title = state.hasDifficulty ? "" : "Filtro disponível após atualização do catálogo.";
         if (!state.hasDifficulty) difficultyEl.value = "all";
       }
+      document.querySelectorAll(".qs-builder-preset").forEach(button => { button.hidden = Number(button.dataset.count) > state.maximum; });
       countEl.value = String(Math.min(20, state.maximum));
       refresh();
       inform("Selecione uma matéria, um tema ou um subtema para estudar.");
