@@ -33,6 +33,7 @@
       order: scene.steps ? G.shuffle(scene.steps.map((_, i) => i)) : [],
       attempts: 0,
       solved: false,
+      ready: false,
       message: null,
     };
     if (scene.steps && run.current.order.every((v, i) => v === i))
@@ -42,7 +43,13 @@
   }
   function map() {
     const current = run.current.scene;
-    return `<aside class="e-map g-panel"><div class="e-map-title"><span class="e-beacon"></span><span>Hospital Aurora</span><small>Planta do turno</small></div><div class="e-floor" aria-label="Salas do hospital">${C.adventure.map((s, i) => `<button type="button" class="e-room ${i === run.index ? "e-room-current" : i < run.index ? "e-room-done" : "e-room-locked"}" data-room="${i}" ${i > run.index ? "disabled" : ""} aria-label="${G.esc(s.room)} · ${i < run.index ? "concluída" : i === run.index ? "sala atual" : "bloqueada"}" ${i === run.index ? 'aria-current="step"' : ""}><span class="e-room-icon" aria-hidden="true">${i < run.index ? "✓" : i === run.index ? "●" : "◇"}</span><span>${G.esc(s.room)}</span><small>${i < run.index ? "Resolvida" : i === run.index ? "Você está aqui" : "A desbloquear"}</small></button>`).join("")}</div><div class="e-corridor"><span class="e-person" style="left:${Math.min(92, (run.index / (C.adventure.length - 1)) * 92)}%" aria-hidden="true">♟</span></div><p class="g-subtle">Capítulo ${current.chapter + 1} de 3</p><h3>${G.esc(C.chapters[current.chapter])}</h3><div class="g-progress"><span style="width:${(run.index / C.adventure.length) * 100}%"></span></div><p class="g-note">Toque em uma sala concluída para consultar seu diário.</p>${G.button("journal", "Abrir diário do turno", true)}</aside>`;
+    return `<aside class="e-map g-panel"><div class="e-map-title"><span class="e-beacon"></span><span>Hospital Aurora</span><small>Planta do turno</small></div><div class="e-floor" aria-label="Salas do hospital">${C.adventure.map((s, i) => `<button type="button" class="e-room ${i === run.index ? "e-room-current" : i < run.index ? "e-room-done" : "e-room-locked"}" data-room="${i}" ${i > run.index ? "disabled" : ""} aria-label="${G.esc(s.room)} · ${i < run.index ? "concluída" : i === run.index ? "sala atual" : "bloqueada"}" ${i === run.index ? 'aria-current="step"' : ""}><span class="e-room-icon" aria-hidden="true">${i < run.index ? "✓" : i === run.index ? "●" : "◇"}</span><span>${G.esc(s.room)}</span><small>${i < run.index ? "Resolvida" : i === run.index ? "Você está aqui" : "A desbloquear"}</small></button>`).join("")}</div><p class="g-subtle">Capítulo ${current.chapter + 1} de 3</p><h3>${G.esc(C.chapters[current.chapter])}</h3><div class="g-progress"><span style="width:${(run.index / C.adventure.length) * 100}%"></span></div><p class="g-note">Toque em uma sala concluída para consultar seu diário.</p>${G.button("journal", "Abrir diário do turno", true)}</aside>`;
+  }
+  function journey(x) {
+    const from = x.scene.room;
+    const to = C.adventure[run.index + 1]?.room || "Fim do plantão";
+    const moving = x.solved;
+    return `<div class="e-journey ${moving ? "e-journey-running" : ""}" role="group" aria-label="Médico no corredor do hospital"><div class="e-journey-wall" aria-hidden="true"><span class="e-journey-window"></span><span class="e-journey-window"></span><span class="e-journey-window"></span></div><div class="e-journey-sign e-journey-from">${G.esc(from)}</div><div class="e-journey-sign e-journey-to">${G.esc(to)}</div><div class="e-journey-route" aria-hidden="true"></div><div class="e-journey-doctor" aria-hidden="true"><svg viewBox="0 0 64 100" focusable="false"><ellipse cx="32" cy="95" rx="20" ry="4" fill="#18304d" opacity=".25"/><g class="e-doctor-leg e-doctor-leg-back"><path d="M35 66 40 88" stroke="#304b68" stroke-width="7" stroke-linecap="round"/><path d="M38 88h10" stroke="#304b68" stroke-width="5" stroke-linecap="round"/></g><g class="e-doctor-leg e-doctor-leg-front"><path d="M28 66 24 88" stroke="#304b68" stroke-width="7" stroke-linecap="round"/><path d="M22 88h10" stroke="#304b68" stroke-width="5" stroke-linecap="round"/></g><path d="M24 36 17 63q15 10 30 0L40 36Z" fill="#fff" stroke="#b9ccdc" stroke-width="2"/><path d="m22 41-10 18m31-18 10 17" stroke="#d6a17f" stroke-width="7" stroke-linecap="round"/><path d="M24 36 32 52 40 36" fill="#6cb4bd"/><path d="M32 52v14" stroke="#4b90a0" stroke-width="3"/><circle cx="32" cy="23" r="12" fill="#d6a17f"/><path d="M20 21q0-17 17-16 11 2 9 17l-7-10-18 8" fill="#344862"/><path d="M27 51q-5 11 5 11 10 0 5-11" fill="none" stroke="#305e70" stroke-width="2"/><circle cx="32" cy="61" r="3" fill="#305e70"/></svg></div><div class="e-journey-floor" aria-hidden="true"></div><p class="e-journey-status" aria-live="polite">${moving ? `Pendência resolvida. O médico corre de ${G.esc(from)} para ${G.esc(to)}.` : `Médico em ${G.esc(from)}. Resolva a pendência para avançar.`}</p></div>`;
   }
   function interaction(x) {
     const s = x.scene;
@@ -56,7 +63,9 @@
       s = x.scene;
     root.innerHTML =
       top() +
-      `<nav class="e-chapters" aria-label="Capítulos">${C.chapters.map((ch, i) => `<span class="${i === s.chapter ? "e-chapter-active" : ""}" ${i === s.chapter ? 'aria-current="step"' : ""}><b>0${i + 1}</b>${G.esc(ch)}</span>`).join("")}</nav><div class="e-layout">${map()}<section class="g-panel e-story"><span class="g-kicker">${G.esc(s.room)} · Cena ${run.index + 1}/${C.adventure.length}</span><h2>${G.esc(s.title)}</h2><div class="e-narrative"><span class="e-narrator" aria-hidden="true">✦</span><p>${G.esc(s.story)}</p></div><h3>${G.esc(s.prompt)}</h3>${interaction(x)}${x.message ? `<div class="g-feedback ${x.solved ? "g-correct g-anim-correct" : "g-wrong g-anim-wrong"}" role="status"><strong>${x.solved ? "✓ Pendência resolvida" : "↻ Reavalie sua decisão"}</strong>${G.esc(x.message)}${x.solved ? G.refs(s.refs) : ""}</div>` : '<p class="g-note">Leia os dados antes de decidir. A seleção só é enviada ao confirmar.</p>'}<div class="g-actions">${G.button(x.solved ? "next" : "confirm", x.solved ? (run.index === C.adventure.length - 1 ? "Encerrar o plantão →" : "Seguir para a próxima sala →") : "Confirmar decisão")}${G.button("restart", "Novo plantão", true)}</div></section></div>${run.journal ? journal() : ""}${G.note}`;
+      `<nav class="e-chapters" aria-label="Capítulos">${C.chapters.map((ch, i) => `<span class="${i === s.chapter ? "e-chapter-active" : ""}" ${i === s.chapter ? 'aria-current="step"' : ""}><b>0${i + 1}</b>${G.esc(ch)}</span>`).join("")}</nav><div class="e-layout">${map()}<section class="g-panel e-story"><span class="g-kicker">${G.esc(s.room)} · Cena ${run.index + 1}/${C.adventure.length}</span><h2>${G.esc(s.title)}</h2><div class="e-narrative"><span class="e-narrator" aria-hidden="true">✦</span><p>${G.esc(s.story)}</p></div><h3>${G.esc(s.prompt)}</h3>${interaction(x)}${journey(x)}${x.message ? `<div class="g-feedback ${x.solved ? "g-correct g-anim-correct" : "g-wrong g-anim-wrong"}" role="status"><strong>${x.solved ? "✓ Pendência resolvida" : "↻ Reavalie sua decisão"}</strong>${G.esc(x.message)}${x.solved ? G.refs(s.refs) : ""}</div>` : '<p class="g-note">Leia os dados antes de decidir. A seleção só é enviada ao confirmar.</p>'}<div class="g-actions">${G.button(x.solved ? "next" : "confirm", x.solved ? (x.ready ? (run.index === C.adventure.length - 1 ? "Encerrar o plantão →" : "Seguir para a próxima sala →") : "Médico a caminho…") : "Confirmar decisão")}${G.button("restart", "Novo plantão", true)}</div></section></div>${run.journal ? journal() : ""}${G.note}`;
+    const nextButton = root.querySelector('[data-action="next"]');
+    if (nextButton && !x.ready) nextButton.disabled = true;
     root.querySelectorAll("[data-option]").forEach(
       (b) =>
         (b.onclick = () => {
@@ -84,7 +93,7 @@
     root
       .querySelector('[data-action="next"]')
       ?.addEventListener("click", () => {
-        if (!run || run.current !== x || !x.solved) return;
+        if (!run || run.current !== x || !x.solved || !x.ready) return;
         run.index++;
         if (run.index === C.adventure.length) finish();
         else newScene();
@@ -127,6 +136,7 @@
           : x.selected.has(s.answer);
     if (good) {
       x.solved = true;
+      x.ready = !!window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
       x.message = s.explanation;
       run.log.push({
         id: s.id,
@@ -140,7 +150,19 @@
           : "Releia o contexto e procure o risco que modifica a decisão. Esta pendência continua aberta; tente novamente.";
     }
     render();
-    root.querySelector('[role="status"]')?.scrollIntoView({ block: "nearest" });
+    if (good && !x.ready)
+      window.setTimeout(() => {
+        if (!run || run.current !== x) return;
+        x.ready = true;
+        const button = root.querySelector('[data-action="next"]');
+        if (button) {
+          button.disabled = false;
+          button.textContent = run.index === C.adventure.length - 1
+            ? "Encerrar o plantão →"
+            : "Seguir para a próxima sala →";
+        }
+      }, 2200);
+    root.querySelector(good ? ".e-journey" : '[role="status"]')?.scrollIntoView({ block: good ? "center" : "nearest" });
   }
   function journal() {
     return `<section class="g-panel g-review" id="e-journal"><h3>Diário do turno</h3>${

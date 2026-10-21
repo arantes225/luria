@@ -191,6 +191,7 @@ test("adventure mixes mechanics, retries failed decisions, unlocks rooms and fin
   g.click('[data-action="confirm"]');
   assert.match(g.d.body.textContent, /pendência continua aberta/);
   assert.ok(!g.d.querySelector('[data-action="next"]'));
+  assert.ok(!g.d.querySelector(".e-journey-running"));
   for (let i = 0; i < 9; i++) {
     const s = g.w.LuriaGameContent.adventure[i];
     if (s.type === "sort") solve(g);
@@ -199,7 +200,17 @@ test("adventure mixes mechanics, retries failed decisions, unlocks rooms and fin
     else g.click(`[data-option="${s.answer}"]`);
     g.click('[data-action="confirm"]');
     assert.equal(g.d.querySelectorAll(".e-room-done").length, i);
+    assert.ok(g.d.querySelector(".e-journey-running"));
+    assert.equal(g.d.querySelector(".e-journey-from").textContent, s.room);
+    assert.equal(
+      g.d.querySelector(".e-journey-to").textContent,
+      g.w.LuriaGameContent.adventure[i + 1]?.room || "Fim do plantão",
+    );
+    assert.equal(g.d.querySelector('[data-action="next"]').disabled, true);
+    g.tick(2200);
+    assert.equal(g.d.querySelector('[data-action="next"]').disabled, false);
     g.click('[data-action="next"]');
+    if (i < 8) assert.ok(!g.d.querySelector(".e-journey-running"));
   }
   assert.match(g.d.body.textContent, /Turno entregue/);
   assert.match(g.d.body.textContent, /8\/9/);
@@ -290,6 +301,7 @@ test("a repeated click on an old next button cannot skip another scene or challe
   e.click('[data-option="1"]');
   e.click('[data-action="confirm"]');
   const next = e.d.querySelector('[data-action="next"]');
+  e.tick(2200);
   next.click();
   next.click();
   assert.match(
