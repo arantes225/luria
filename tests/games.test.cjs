@@ -184,13 +184,14 @@ test("sequence reveals recommended order only after solving or opting into guide
     /0 de 3/,
   );
 });
-test("adventure mixes mechanics, retries failed decisions, unlocks rooms and finishes all chapters", (t) => {
+test("adventure mixes mechanics, retries failed decisions, animates its scene panel and finishes all chapters", (t) => {
   const g = game(t, "escape");
   g.click('[data-action="start"]');
   g.click('[data-option="0"]');
   g.click('[data-action="confirm"]');
   assert.match(g.d.body.textContent, /pendência continua aberta/);
   assert.ok(!g.d.querySelector('[data-action="next"]'));
+  assert.ok(!g.d.querySelector(".e-journey-running"));
   for (let i = 0; i < 9; i++) {
     const s = g.w.LuriaGameContent.adventure[i];
     if (s.type === "sort") solve(g);
@@ -198,8 +199,23 @@ test("adventure mixes mechanics, retries failed decisions, unlocks rooms and fin
       s.answers.forEach((answer) => g.click(`[data-option="${answer}"]`));
     else g.click(`[data-option="${s.answer}"]`);
     g.click('[data-action="confirm"]');
-    assert.equal(g.d.querySelectorAll(".e-room-done").length, i);
+    assert.equal(g.d.querySelector(".e-map"), null);
+    assert.ok(g.d.querySelector(".e-journey-stage"));
+    assert.equal(g.d.querySelector(".e-journey").dataset.scene, s.id);
+    assert.ok(g.d.querySelector(".e-journey-running"));
+    assert.equal(g.d.querySelector(".e-journey-from").textContent, s.room);
+    assert.equal(
+      g.d.querySelector(".e-journey-to").textContent,
+      g.w.LuriaGameContent.adventure[i + 1]?.room || "Fim do plantão",
+    );
+    if (i < 8)
+      assert.match(g.d.querySelector(".e-journey-contact").textContent, /Paciente|Profissional/);
+    else assert.equal(g.d.querySelector(".e-journey-contact"), null);
+    assert.equal(g.d.querySelector('[data-action="next"]').disabled, true);
+    g.tick(2200);
+    assert.equal(g.d.querySelector('[data-action="next"]').disabled, false);
     g.click('[data-action="next"]');
+    if (i < 8) assert.ok(!g.d.querySelector(".e-journey-running"));
   }
   assert.match(g.d.body.textContent, /Turno entregue/);
   assert.match(g.d.body.textContent, /8\/9/);
@@ -290,6 +306,7 @@ test("a repeated click on an old next button cannot skip another scene or challe
   e.click('[data-option="1"]');
   e.click('[data-action="confirm"]');
   const next = e.d.querySelector('[data-action="next"]');
+  e.tick(2200);
   next.click();
   next.click();
   assert.match(
