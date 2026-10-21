@@ -6,7 +6,7 @@
   if (root?.dataset.game !== "escape") return;
   let run = null;
   const top = () =>
-    '<div class="g-top"><a class="g-back luria-back-button" href="/jogos/">← Central de jogos</a><span class="g-edition">03 / Uma aventura de cuidado</span></div>';
+    '<header class="e-page-title-card"><div class="e-page-title-copy"><span>Central de jogos</span><h1>Escapando do Plantão</h1><p>Uma jornada de cuidado entre os setores do Hospital Aurora.</p></div><div class="e-page-title-actions"><span class="g-edition">03 / Uma aventura de cuidado</span><a class="g-button g-secondary e-back-button" href="/jogos/"><b aria-hidden="true">←</b> Voltar à Central de jogos</a></div></header>';
   const illustration =
     '<div class="g-hero-art e-illustration" aria-hidden="true"><svg viewBox="0 0 420 300"><defs><linearGradient id="e-wall" x2="0" y2="1"><stop stop-color="#6f90c2"/><stop offset="1" stop-color="#334e80"/></linearGradient></defs><ellipse cx="210" cy="254" rx="185" ry="24" fill="#0b1c3d" opacity=".15"/><path d="m40 110 166-70 173 76-169 78Z" fill="#e5ecfa"/><path d="m40 110 170 84v68L40 178Z" fill="#718bb6"/><path d="m210 194 169-78v68l-169 78Z" fill="url(#e-wall)"/><path d="m68 108 138-54 143 62-140 61Z" fill="#bacbe8"/><path d="m130 81 80 34 76-30M210 115v63" fill="none" stroke="#fff" stroke-width="6"/><path d="m51 146 150 73m20 0 145-66" stroke="#a1badc" stroke-width="5"/><path d="m243 201 33-15v50l-33 16z" fill="#203c67"/><path d="m302 174 36-16v27l-36 17z" fill="#ade4e6"/><path d="m79 150 40 20v25l-40-20z" fill="#c7e9f2"/><path d="m158 190 25 13v31l-25-13z" fill="#d7e3f5"/><path d="m311 194 13-6v17l-13 6zm-6 8 25-12v6l-25 12z" fill="#fff"/><g transform="translate(210 158)"><ellipse cy="22" rx="16" ry="7" fill="#184888" opacity=".2"/><path d="m-10 4 20 0 3 21h-26z" fill="#fff"/><circle cy="-4" r="9" fill="#dba27d"/><path d="M-9-7q1-12 16-5l3 9-7-6-12 4" fill="#304264"/><path d="M-5 25v10m10-10v10" stroke="#304264" stroke-width="5"/><path d="M-4 6v8h8V6" fill="none" stroke="#368d95" stroke-width="2"/></g></svg><span class="e-hospital-label">HOSPITAL AURORA · 18H → 06H</span></div>';
   function setup() {
@@ -61,6 +61,20 @@
     const moving = x.solved;
     return `<div class="e-journey ${moving ? "e-journey-running" : ""}" role="group" aria-label="Médico no corredor do hospital"><div class="e-journey-wall" aria-hidden="true"><span class="e-journey-window"></span><span class="e-journey-window"></span><span class="e-journey-window"></span></div><div class="e-journey-sign e-journey-from">${G.esc(from)}</div><div class="e-journey-sign e-journey-to">${G.esc(to)}</div><div class="e-journey-route" aria-hidden="true"></div><div class="e-journey-doctor" aria-hidden="true">${doctor}</div>${companion}<div class="e-journey-floor" aria-hidden="true"></div><p class="e-journey-status" aria-live="polite">${moving ? `Pendência resolvida. O médico corre de ${G.esc(from)} para ${G.esc(to)}.` : `Médico em ${G.esc(from)}. Resolva a pendência para avançar.`}</p></div>`;
   }
+  function sceneSet(id) {
+    const props = {
+      arrival: '<span class="e-prop e-clock"></span><span class="e-prop e-reception-chair"></span><span class="e-prop e-reception-screen"></span>',
+      identity: '<span class="e-prop e-iv-stand"></span><span class="e-prop e-pulse-screen"></span><span class="e-prop e-bed-rail"></span>',
+      hands: '<span class="e-prop e-tap"></span><span class="e-prop e-water-drop"></span><span class="e-prop e-towel"></span>',
+      dengue: '<span class="e-prop e-iv-bag"></span><span class="e-prop e-vitals"></span><span class="e-prop e-pillow"></span>',
+      glucose: '<span class="e-prop e-glucometer"></span><span class="e-prop e-chart"></span><span class="e-prop e-cabinet"></span>',
+      "time-out": '<span class="e-prop e-surgical-light"></span><span class="e-prop e-instrument-table"></span><span class="e-prop e-sterile-tray"></span>',
+      recheck: '<span class="e-prop e-vitals"></span><span class="e-prop e-chart"></span><span class="e-prop e-stethoscope"></span>',
+      handoff: '<span class="e-prop e-handoff-notes"></span><span class="e-prop e-coffee"></span><span class="e-prop e-shift-board"></span>',
+      ending: '<span class="e-prop e-exit-sign"></span><span class="e-prop e-plant"></span><span class="e-prop e-sunbeam"></span>',
+    };
+    return `<div class="e-room-set e-set-${id}" aria-hidden="true">${props[id] || ""}</div>`;
+  }
   function interaction(x) {
     const s = x.scene;
     if (s.type === "sort")
@@ -75,7 +89,10 @@
       top() +
       `<nav class="e-chapters" aria-label="Capítulos">${C.chapters.map((ch, i) => `<span class="${i === s.chapter ? "e-chapter-active" : ""}" ${i === s.chapter ? 'aria-current="step"' : ""}><b>0${i + 1}</b>${G.esc(ch)}</span>`).join("")}</nav><div class="e-layout">${map()}<section class="g-panel e-story"><span class="g-kicker">${G.esc(s.room)} · Cena ${run.index + 1}/${C.adventure.length}</span><h2>${G.esc(s.title)}</h2><div class="e-narrative"><span class="e-narrator" aria-hidden="true">✦</span><p>${G.esc(s.story)}</p></div><h3>${G.esc(s.prompt)}</h3>${interaction(x)}${journey(x)}${x.message ? `<div class="g-feedback ${x.solved ? "g-correct g-anim-correct" : "g-wrong g-anim-wrong"}" role="status"><strong>${x.solved ? "✓ Pendência resolvida" : "↻ Reavalie sua decisão"}</strong>${G.esc(x.message)}${x.solved ? G.refs(s.refs) : ""}</div>` : '<p class="g-note">Leia os dados antes de decidir. A seleção só é enviada ao confirmar.</p>'}<div class="g-actions">${G.button(x.solved ? "next" : "confirm", x.solved ? (x.ready ? (run.index === C.adventure.length - 1 ? "Encerrar o plantão →" : "Seguir para a próxima sala →") : "Médico a caminho…") : "Confirmar decisão")}${G.button("restart", "Novo plantão", true)}</div></section></div>${run.journal ? journal() : ""}${G.note}`;
     const journeyScene = root.querySelector(".e-journey");
-    if (journeyScene) journeyScene.dataset.scene = s.id;
+    if (journeyScene) {
+      journeyScene.dataset.scene = s.id;
+      journeyScene.querySelector(".e-journey-wall")?.insertAdjacentHTML("beforeend", sceneSet(s.id));
+    }
     const nextButton = root.querySelector('[data-action="next"]');
     if (nextButton && !x.ready) nextButton.disabled = true;
     root.querySelectorAll("[data-option]").forEach(

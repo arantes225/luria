@@ -2,6 +2,32 @@
   --g-accent: var(--color-accent);
   --g-soft: var(--color-primary-subtle);
 }
+.luria-game .e-page-title-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 0 18px;
+  padding: 20px 22px;
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  background: linear-gradient(125deg, var(--color-surface), var(--color-primary-subtle));
+  box-shadow: var(--ui-shadow);
+}
+.luria-game .e-page-title-copy > span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--color-primary-text);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.luria-game .e-page-title-card h1 { margin: 0; font-size: clamp(23px, 3vw, 34px); letter-spacing: -.04em; }
+.luria-game .e-page-title-card p { margin: 5px 0 0; color: var(--color-text-secondary); font-size: 13px; }
+.luria-game .e-page-title-actions { display: flex; align-items: center; justify-content: flex-end; gap: 12px; flex-wrap: wrap; }
+.luria-game .e-back-button { display: inline-flex; align-items: center; gap: 8px; min-height: 42px; text-decoration: none; white-space: nowrap; }
+.luria-game .e-back-button b { font-size: 18px; line-height: 1; }
 .luria-game .e-hero {
   background: linear-gradient(
     125deg,
@@ -205,6 +231,37 @@
 .luria-game .e-journey[data-scene="ending"] .e-journey-wall { background: linear-gradient(135deg, #ffddaa, #c7e5ed 58%, #edf5f8); }
 .luria-game .e-journey[data-scene="ending"] .e-journey-wall::before { left: 9%; width: 78px; height: 105px; border: 7px solid #59768e; border-bottom: 0; background: #80b8c2; content: "SAÍDA"; }
 .luria-game .e-journey[data-scene="ending"] .e-journey-wall::after { right: 9%; bottom: 45px; width: 35px; height: 35px; border-radius: 50%; background: #ffd36b; box-shadow: 0 0 0 12px #ffd36b55; content: ""; }
+.luria-game .e-room-set { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+.luria-game .e-prop { position: absolute; display: block; }
+.luria-game .e-clock { top: 21px; left: 46%; width: 24px; height: 24px; border: 3px solid #56758f; border-radius: 50%; background: #fff; box-shadow: 8px 8px 0 -7px #56758f; }
+.luria-game .e-reception-chair { right: 22%; bottom: 0; width: 38px; height: 31px; border-radius: 12px 12px 2px 2px; background: #d7ad77; box-shadow: 6px 29px 0 -4px #6f5a50; }
+.luria-game .e-reception-screen { top: 22px; right: 12%; width: 42px; height: 24px; border: 4px solid #546f87; border-radius: 4px; background: #eaf8fb; }
+.luria-game .e-iv-stand { right: 24%; bottom: 0; width: 4px; height: 80px; background: #7d99ad; box-shadow: -8px 78px 0 -6px #7d99ad, 8px 78px 0 -6px #7d99ad; }
+.luria-game .e-iv-stand::before { position: absolute; top: 7px; left: -7px; width: 18px; height: 20px; border-radius: 3px; background: #f7f9fb; box-shadow: inset 0 0 0 1px #85b4c1; content: ""; }
+.luria-game .e-pulse-screen { top: 35px; left: 29%; width: 30px; height: 20px; border: 3px solid #4b627d; border-radius: 3px; background: repeating-linear-gradient(135deg, #143e55 0 4px, #83d4c4 4px 7px, #143e55 7px 10px); }
+.luria-game .e-bed-rail { right: 19%; bottom: 8px; width: 89px; height: 13px; border: 4px solid #607c95; border-bottom: 0; border-radius: 7px 7px 0 0; }
+.luria-game .e-tap { top: 46px; left: 28%; width: 29px; height: 23px; border: 6px solid #5c8497; border-bottom: 0; border-radius: 15px 15px 0 0; }
+.luria-game .e-tap::after { position: absolute; right: -17px; bottom: -9px; width: 27px; height: 6px; border-radius: 9px; background: #5c8497; content: ""; }
+.luria-game .e-water-drop { top: 76px; left: 40%; width: 10px; height: 15px; border-radius: 70% 30% 70% 30%; background: #69c9d7; transform: rotate(45deg); animation: e-water-drop 1.3s ease-in-out infinite; }
+.luria-game .e-towel { right: 19%; bottom: 5px; width: 22px; height: 50px; border-radius: 3px; background: repeating-linear-gradient(90deg, #fff 0 4px, #d9edf1 4px 7px); }
+.luria-game .e-iv-bag { top: 29px; right: 27%; width: 21px; height: 29px; border: 2px solid #80a6b5; border-radius: 4px; background: #d6f1ed; box-shadow: 9px 31px 0 -7px #80a6b5; }
+.luria-game .e-vitals { top: 34px; right: 13%; width: 32px; height: 25px; border: 4px solid #435f7b; border-radius: 4px; background: linear-gradient(145deg, #2c6b68 0 45%, #8de1cd 47% 52%, #2c6b68 54%); }
+.luria-game .e-pillow { right: 37%; bottom: 24px; width: 45px; height: 24px; border-radius: 11px; background: #fff; box-shadow: 7px 18px 0 -8px #adc1cf; }
+.luria-game .e-glucometer { top: 43px; left: 27%; width: 22px; height: 39px; border-radius: 5px; background: #fff; box-shadow: inset 0 0 0 3px #6b7793, inset 0 10px #73c9bd; }
+.luria-game .e-chart { right: 24%; bottom: 14px; width: 31px; height: 41px; border: 2px solid #8fa3b4; border-radius: 3px; background: repeating-linear-gradient(#fff 0 7px, #8fc1ce 7px 9px); transform: rotate(8deg); }
+.luria-game .e-cabinet { top: 28px; right: 9%; width: 32px; height: 73px; border-radius: 4px; background: #9e84b6; box-shadow: inset 0 34px #bfa7ce, inset 15px 0 #8b71a2; }
+.luria-game .e-surgical-light { top: 6px; left: 44%; width: 52px; height: 52px; border: 7px solid #6f91a0; border-radius: 50%; background: radial-gradient(circle, #fff 0 34%, #ffe89c 36% 48%, #fff 50%); box-shadow: 0 0 20px #fff3b0; }
+.luria-game .e-instrument-table { right: 21%; bottom: 3px; width: 78px; height: 27px; border-radius: 5px 5px 0 0; background: #7895a1; box-shadow: 11px 27px 0 -8px #647d89, 58px 27px 0 -8px #647d89; }
+.luria-game .e-sterile-tray { right: 29%; bottom: 29px; width: 45px; height: 7px; border-radius: 9px; background: #e6f7f4; box-shadow: 11px -9px 0 -4px #d3b272, 25px -9px 0 -4px #d3b272; }
+.luria-game .e-stethoscope { left: 27%; bottom: 11px; width: 32px; height: 38px; border: 4px solid #487a8d; border-top: 0; border-radius: 0 0 50% 50%; transform: rotate(-18deg); }
+.luria-game .e-handoff-notes { right: 25%; bottom: 14px; width: 35px; height: 43px; border-radius: 3px; background: repeating-linear-gradient(#fff 0 8px, #8ab8c6 8px 10px); transform: rotate(6deg); }
+.luria-game .e-coffee { right: 17%; bottom: 13px; width: 21px; height: 25px; border-radius: 3px 3px 7px 7px; background: #fff; box-shadow: inset 0 7px #8e6248, 21px 5px 0 -8px #fff; }
+.luria-game .e-shift-board { top: 27px; left: 28%; width: 65px; height: 39px; border: 5px solid #8a715a; border-radius: 3px; background: repeating-linear-gradient(#f9f2dd 0 9px, #c7a783 9px 11px); }
+.luria-game .e-exit-sign { top: 19px; left: 34%; padding: 4px 8px; border-radius: 3px; background: #36845e; color: #fff; font-size: 8px; font-weight: 800; content: ""; }
+.luria-game .e-exit-sign::after { content: "SAÍDA"; }
+.luria-game .e-plant { right: 20%; bottom: 0; width: 9px; height: 40px; background: #91735d; box-shadow: -15px -24px 0 -4px #6eae80, 11px -33px 0 -4px #6eae80, 23px -15px 0 -4px #6eae80; }
+.luria-game .e-sunbeam { top: 28px; right: 35%; width: 65px; height: 88px; background: linear-gradient(120deg, transparent 20%, #fff6ba99 50%, transparent 75%); transform: skewX(-15deg); }
+@keyframes e-water-drop { 0%, 100% { transform: translateY(0) rotate(45deg); opacity: .35; } 50% { transform: translateY(18px) rotate(45deg); opacity: 1; } }
 .luria-game .e-journey-window {
   width: 15%;
   height: 55px;
@@ -235,11 +292,39 @@
 .luria-game .e-journey-to { right: 5%; }
 .luria-game .e-journey-route {
   position: absolute;
+  z-index: 1;
   right: 11%;
-  bottom: 63px;
+  bottom: 54px;
   left: 11%;
-  border-bottom: 3px dashed var(--color-primary);
-  opacity: .6;
+  height: 58px;
+  overflow: hidden;
+  pointer-events: none;
+}
+.luria-game .e-journey-route::before,
+.luria-game .e-journey-route::after {
+  position: absolute;
+  opacity: 0;
+  content: "";
+}
+.luria-game .e-journey-running .e-journey-route::before {
+  right: 0;
+  bottom: 6px;
+  left: 0;
+  height: 34px;
+  opacity: 1;
+  background: radial-gradient(ellipse at center, #ffffffcc 0 16%, transparent 18%) 0 0 / 54px 28px repeat-x;
+  animation: e-footsteps .42s linear infinite;
+}
+.luria-game .e-journey-running .e-journey-route::after {
+  bottom: 4px;
+  left: 5%;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  opacity: .75;
+  background: #fff;
+  box-shadow: 36px -14px 0 -6px #fff, 80px 5px 0 -9px #fff, 125px -18px 0 -11px #fff;
+  animation: e-run-spark 1s linear infinite;
 }
 .luria-game .e-journey-floor {
   position: absolute;
@@ -325,6 +410,8 @@
   from { transform: rotate(-17deg); }
   to { transform: rotate(17deg); }
 }
+@keyframes e-footsteps { from { background-position: 0 0; } to { background-position: 54px 0; } }
+@keyframes e-run-spark { from { transform: translateX(-25px) scale(.5); opacity: 0; } 25% { opacity: .75; } to { transform: translateX(260px) scale(1.7); opacity: 0; } }
 @media (prefers-reduced-motion: reduce) {
   .luria-game .e-journey-running .e-journey-doctor {
     animation: none;
