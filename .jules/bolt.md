@@ -1,0 +1,3 @@
+## 2024-05-18 - Improve scroll performance with passive event listeners
+**Learning:** Certain performance optimization tasks involve adding `{ passive: true }` to `scroll` and `resize` event listeners. To find them, we can use grep effectively on our assets file since there is no build step. We found missed opportunities in `assets/js/caderno-notion-editor-fix.js`, `assets/js/professor-alex-companion.mjs`, and `assets/js/social-rooms.js`.
+**Action:** When evaluating frontend performance opportunities, explicitly search for `addEventListener` calls that handle `scroll`, `resize`, `touchstart`, or `touchmove` events to ensure they include `{ passive: true }` when `preventDefault` is not used.
