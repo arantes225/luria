@@ -1,0 +1,58 @@
+/* APH: enquadramento 16:9 e camadas locais das fotos da prévia aprovada. */
+#plantao-simulator .plantao-scene.aph-active {
+  position:relative!important;
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:16/9!important;
+  overflow:hidden!important;
+  background:#172b37!important;
+}
+#plantao-simulator .plantao-scene.aph-active #plantao-patient-image,
+#plantao-simulator .plantao-scene.aph-active > .aph-thorax,
+#plantao-simulator .plantao-scene.aph-active > .aph-blink {
+  display:block!important;
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  max-height:none!important;
+  aspect-ratio:16/9!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  transform:none;
+  filter:none!important;
+}
+#plantao-simulator .plantao-scene.aph-active > .aph-thorax,
+#plantao-simulator .plantao-scene.aph-active > .aph-blink {
+  pointer-events:none;
+  z-index:1;
+}
+#plantao-simulator .plantao-scene.aph-active > .aph-thorax {
+  transform-origin:50% 59%;
+  -webkit-mask-image:radial-gradient(ellipse 31% 20% at 50% 59%,#000 37%,transparent 80%);
+  mask-image:radial-gradient(ellipse 31% 20% at 50% 59%,#000 37%,transparent 80%);
+  animation:aph-chest-breath var(--aph-breath-duration,4.4s) ease-in-out infinite;
+}
+#plantao-simulator .plantao-scene.aph-active.aph-no-breath > .aph-thorax {animation:none!important}
+#plantao-simulator .plantao-scene.aph-active > .aph-blink {
+  clip-path:var(--aph-eyes-rest);
+  -webkit-mask-image:var(--aph-eye-mask);
+  mask-image:var(--aph-eye-mask);
+  animation:aph-paired-blink 7.6s cubic-bezier(.42,0,.32,1) var(--aph-blink-delay,0s) infinite;
+}
+#plantao-simulator .plantao-scene.aph-active.aph-eyes-closed > .aph-blink {display:none!important}
+#plantao-simulator .plantao-scene.aph-active > .plantao-monitor-dock {z-index:3}
+@keyframes aph-chest-breath {
+  0%,100% {transform:translateY(0) scaleY(1)}
+  48% {transform:translateY(-.35%) scaleY(1.009)}
+  60% {transform:translateY(-.14%) scaleY(1.004)}
+}
+@keyframes aph-paired-blink {
+  0%,89.9%,93.5%,100% {clip-path:var(--aph-eyes-rest)}
+  91.5%,91.75% {clip-path:var(--aph-eyes-closed)}
+}
+@media (prefers-reduced-motion:reduce) {
+  #plantao-simulator .plantao-scene.aph-active > .aph-thorax,
+  #plantao-simulator .plantao-scene.aph-active > .aph-blink {animation:none!important}
+  #plantao-simulator .plantao-scene.aph-active > .aph-blink {clip-path:var(--aph-eyes-rest)}
+}

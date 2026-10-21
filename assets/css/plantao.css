@@ -7557,40 +7557,24 @@ body.plantao-module-entry #plantao-resume-case:disabled{
 }
 
 
-/* v54 — APH: imagens de ambulância como cenário, sem sobras laterais */
-#plantao-simulator #plantao-patient-image[src*="/plantao/ambulancia/"],
-#plantao-simulator #plantao-patient-motion[src*="/plantao/ambulancia/"]{
-  object-fit:cover!important;
-  object-position:50% 48%!important;
+/* APH: cenário dos quatro personagens atuais. */
+#plantao-simulator #plantao-patient-image[src*="/plantao/aph/"],
+#plantao-simulator #plantao-patient-motion[src*="/plantao/aph/"]{
+  object-fit:contain!important;
+  object-position:center!important;
   width:100%!important;
   height:100%!important;
   max-height:none!important;
   background:#0b2947!important;
   transform:none!important;
-  filter:saturate(.96) contrast(1.03) brightness(.94)!important;
+  filter:none!important;
 }
-#plantao-simulator #plantao-patient-image[src*="ambulancia_1.webp"],
-#plantao-simulator #plantao-patient-motion[src*="ambulancia_1.webp"]{
-  object-position:48% 48%!important;
-}
-#plantao-simulator #plantao-patient-image[src*="ambulancia_2.webp"],
-#plantao-simulator #plantao-patient-motion[src*="ambulancia_2.webp"]{
-  object-position:52% 47%!important;
-}
-#plantao-simulator #plantao-patient-image[src*="ambulancia_3.webp"],
-#plantao-simulator #plantao-patient-motion[src*="ambulancia_3.webp"]{
-  object-position:50% 43%!important;
-}
-#plantao-simulator #plantao-patient-image[src*="ambulancia_4.webp"],
-#plantao-simulator #plantao-patient-motion[src*="ambulancia_4.webp"]{
-  object-position:50% 45%!important;
-}
-#plantao-simulator .plantao-scene:has(#plantao-patient-image[src*="/plantao/ambulancia/"]){
+#plantao-simulator .plantao-scene:has(#plantao-patient-image[src*="/plantao/aph/"]){
   position:relative!important;
   overflow:hidden!important;
   background:#0b2947!important;
 }
-#plantao-simulator .plantao-scene:has(#plantao-patient-image[src*="/plantao/ambulancia/"])::after{
+#plantao-simulator .plantao-scene:has(#plantao-patient-image[src*="/plantao/aph/"])::after{
   content:""!important;
   position:absolute!important;
   inset:0!important;
@@ -7601,27 +7585,27 @@ body.plantao-module-entry #plantao-resume-case:disabled{
     linear-gradient(180deg,rgba(4,20,38,.10) 0%,transparent 42%,rgba(4,20,38,.28) 100%)!important;
 }
 @media (min-width:681px){
-  #plantao-simulator .plantao-scene:has(#plantao-patient-image[src*="/plantao/ambulancia/"]){
+  #plantao-simulator .plantao-scene:has(#plantao-patient-image[src*="/plantao/aph/"]){
     min-height:490px!important;
     height:100%!important;
     aspect-ratio:auto!important;
   }
-  #plantao-simulator .plantao-scene:has(#plantao-patient-image[src*="/plantao/ambulancia/"])>img{
+  #plantao-simulator .plantao-scene:has(#plantao-patient-image[src*="/plantao/aph/"])>img{
     width:100%!important;
     height:100%!important;
     aspect-ratio:auto!important;
   }
 }
 @media (max-width:680px){
-  #plantao-simulator .plantao-scene:has(#plantao-patient-image[src*="/plantao/ambulancia/"]){
+  #plantao-simulator .plantao-scene:has(#plantao-patient-image[src*="/plantao/aph/"]){
     min-height:100%!important;
     height:100%!important;
   }
-  #plantao-simulator #plantao-patient-image[src*="/plantao/ambulancia/"],
-  #plantao-simulator #plantao-patient-motion[src*="/plantao/ambulancia/"]{
+  #plantao-simulator #plantao-patient-image[src*="/plantao/aph/"],
+  #plantao-simulator #plantao-patient-motion[src*="/plantao/aph/"]{
     aspect-ratio:auto!important;
     max-height:none!important;
-    object-position:50% 46%!important;
+    object-position:center!important;
   }
 }
 
@@ -7636,11 +7620,11 @@ body[data-page="plantao"]:has(#plantao-simulator:not([hidden])) .topbar .page-he
    APH v55 — botões uniformes + prontuário legível
    Escopo somente para casos com cenário de ambulância.
    ========================================================= */
-#plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-action-tabs{
+#plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-action-tabs{
   align-items:stretch!important;
 }
 
-#plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-action-tab{
+#plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-action-tab{
   box-sizing:border-box!important;
   min-width:0!important;
   height:76px!important;
@@ -7659,7 +7643,7 @@ body[data-page="plantao"]:has(#plantao-simulator:not([hidden])) .topbar .page-he
   white-space:normal!important;
 }
 
-#plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-action-tab>span:first-child{
+#plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-action-tab>span:first-child{
   display:flex!important;
   align-items:center!important;
   justify-content:center!important;
@@ -7672,7 +7656,7 @@ body[data-page="plantao"]:has(#plantao-simulator:not([hidden])) .topbar .page-he
   flex:0 0 24px!important;
 }
 
-#plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-action-tab>span:last-child{
+#plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-action-tab>span:last-child{
   display:flex!important;
   align-items:center!important;
   justify-content:center!important;
@@ -7684,7 +7668,7 @@ body[data-page="plantao"]:has(#plantao-simulator:not([hidden])) .topbar .page-he
 }
 
 /* Uniformiza também os botões internos do drawer do APH. */
-#plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-action{
+#plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-action{
   box-sizing:border-box!important;
   min-height:66px!important;
   padding:9px 10px!important;
@@ -7695,34 +7679,34 @@ body[data-page="plantao"]:has(#plantao-simulator:not([hidden])) .topbar .page-he
   align-items:stretch!important;
 }
 
-#plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-action strong{
+#plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-action strong{
   font-size:13px!important;
   font-weight:800!important;
   line-height:1.25!important;
   text-align:left!important;
 }
 
-#plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-action-dose{
+#plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-action-dose{
   font-size:11px!important;
   line-height:1.25!important;
 }
 
-#plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-action small{
+#plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-action small{
   font-size:10px!important;
   line-height:1.2!important;
 }
 
 /* O gradiente da ambulância fica atrás do monitor/prontuário, não por cima. */
-#plantao-simulator .plantao-scene:has(#plantao-patient-image[src*="/plantao/ambulancia/"])::after{
+#plantao-simulator .plantao-scene:has(#plantao-patient-image[src*="/plantao/aph/"])::after{
   z-index:1!important;
 }
 
-#plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-monitor-dock{
+#plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-monitor-dock{
   position:absolute;
   z-index:4!important;
 }
 
-#plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-monitor-dock>.plantao-feed{
+#plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-monitor-dock>.plantao-feed{
   opacity:1!important;
   filter:none!important;
   backdrop-filter:none!important;
@@ -7733,25 +7717,25 @@ body[data-page="plantao"]:has(#plantao-simulator:not([hidden])) .topbar .page-he
   box-shadow:0 4px 14px rgba(8,44,80,.12)!important;
 }
 
-#plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-monitor-dock .plantao-section-head h2,
-#plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-monitor-dock .plantao-feed-item p{
+#plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-monitor-dock .plantao-section-head h2,
+#plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-monitor-dock .plantao-feed-item p{
   color:var(--text)!important;
   opacity:1!important;
 }
 
-#plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-monitor-dock .plantao-feed-item{
+#plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-monitor-dock .plantao-feed-item{
   background:var(--surface-2)!important;
   opacity:1!important;
   filter:none!important;
 }
 
-#plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-monitor-dock .plantao-feed-item span{
+#plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-monitor-dock .plantao-feed-item span{
   color:var(--muted)!important;
   opacity:1!important;
 }
 
 @media(max-width:680px){
-  #plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-action-tab{
+  #plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-action-tab{
     height:68px!important;
     min-height:68px!important;
     max-height:68px!important;
@@ -7759,12 +7743,12 @@ body[data-page="plantao"]:has(#plantao-simulator:not([hidden])) .topbar .page-he
     font-size:11px!important;
   }
 
-  #plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-action-tab>span:last-child{
+  #plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-action-tab>span:last-child{
     font-size:11px!important;
     min-height:25px!important;
   }
 
-  #plantao-simulator:has(#plantao-patient-image[src*="/plantao/ambulancia/"]) .plantao-monitor-dock{
+  #plantao-simulator:has(#plantao-patient-image[src*="/plantao/aph/"]) .plantao-monitor-dock{
     position:relative!important;
     z-index:4!important;
   }

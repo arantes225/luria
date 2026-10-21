@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-neutral-20261020-review-fixes";
+const CACHE_VERSION = "luria-pwa-20261021-aph-characters-v1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -13,7 +13,9 @@ const APP_SHELL = [
   "/assets/js/plantao-overlays.js?v=20261016-overlays1",
   "/assets/css/plantao-overlays.css?v=20261016-overlays1",
   "/assets/js/luria-personagens-original.js?v=20261016-original1",
-  "/assets/js/plantao-frontal-v1.js?v=20261016-original1",
+  "/assets/js/plantao-frontal-v1.js?v=20261021-aph1",
+  "/assets/js/plantao-aph-characters.js?v=20261021-aph1",
+  "/assets/css/plantao-aph-characters.css?v=20261021-aph1",
   "/assets/js/plantao-monitor.js?v=20261016-overlays1",
   "/assets/css/plantao-patient-original.css?v=20261016-original1",
   "/",

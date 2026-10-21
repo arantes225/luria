@@ -128,7 +128,7 @@ test('Missing legacy resources are removed; monitor selects the actual patient i
   assert.equal(d.getElementById('plantao-patient-image').hasAttribute('src'),false);
   const monitor=read('assets/js/plantao-monitor.js');
   w.eval('let context,enabled,vitals,frame=1;const normalize=v=>String(v).toLowerCase();'+declaration(monitor,'update','  '));
-  const awake='/assets/img/plantao/04-mulher-adulta-acordada.webp',closed='/assets/img/plantao/03-mulher-adulta-olhos-fechados.webp';
+  const awake='/assets/img/plantao/aph/mulher-adulta-aberto.webp',closed='/assets/img/plantao/aph/mulher-adulta-fechado.webp';
   for(const src of [awake,closed])assert(fs.existsSync(path.join(__dirname,'..',src)));
   w.update({mental:'Orientada'},{patient_image:awake,unconscious_image:closed});
   assert.equal(d.getElementById('plantao-patient-image').getAttribute('src'),awake);
