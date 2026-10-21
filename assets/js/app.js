@@ -7718,7 +7718,7 @@ iniciarApp();
 (function loadLuriaCommandCenter(){
   if (document.querySelector('script[data-luria-command-center]')) return;
   const script = document.createElement('script');
-  script.src = '/assets/js/luria-command-center.js?v=20261021-dashboard-no-topbar';
+  script.src = '/assets/js/luria-command-center.js?v=20261021-no-alex-topbar-all-pages';
   script.defer = true;
   script.dataset.luriaCommandCenter = '1';
   document.head.appendChild(script);
