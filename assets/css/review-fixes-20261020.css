@@ -347,13 +347,24 @@ html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-pag
 }
 
 /* ==========================================================================
-   Botoes Globais - Padronizacao de Degradê e Contraste Light / Dark Mode
-   - Modo Claro: Gradiente do tema com escritas BRANCAS (#ffffff).
-   - Modo Escuro: Gradiente do tema com escritas ESCURAS (#08101F / #19091E).
+   BOTOES GLOBAIS - PADRONIZACAO SOBERANA DE DEGRADE E CONTRASTE
+   - Regra Geral: TODAS as escritas em botoes de degrade sao ESCURAS (#08101F / #19091E)
+   - Tema Azul (Light & Dark): Degradê Azul oficial com escrita escura (#08101F)
+   - Tema Rosa (Light & Dark): Degradê Rosa oficial com escrita escura (#19091E)
+   - Botoes de Voltar (.luria-back-button): Seguem o degrade do tema com escrita escura
    ========================================================================== */
 
-/* 1. MODO CLARO (Default / Light) */
-:root:not([data-theme="dark"]) body:not([data-ui-appearance="dark"]):not([data-theme="dark"]) :is(
+:root {
+  --luria-btn-grad-blue-light: linear-gradient(135deg, #7DD3FC, #60A5FA, #93C5FD);
+  --luria-btn-grad-blue-dark: linear-gradient(135deg, #38BDF8, #60A5FA, #818CF8);
+  --luria-btn-grad-pink-light: linear-gradient(135deg, #FBCFE8, #F472B6, #E879F9);
+  --luria-btn-grad-pink-dark: linear-gradient(135deg, #F472B6, #E879F9, #C084FC);
+  --luria-btn-text-blue: #08101F;
+  --luria-btn-text-pink: #19091E;
+}
+
+/* 1. TEMA CLARO - AZUL PADRAO */
+:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) body:not([data-ui-appearance="dark"]):not([data-theme="dark"]):not([data-ui-identity="pink"]) :is(
   .btn.primary,
   .btn-primary,
   button.primary,
@@ -391,14 +402,17 @@ html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-pag
   .primary-action,
   .alex-action.primary,
   .ed-new-exam,
-  .ed-primary-action
+  .ed-primary-action,
+  .luria-back-button
 ) {
-  background: var(--ui-pill-gradient, linear-gradient(135deg, #184888, #2563EB, #0EA5E9)) !important;
-  color: #ffffff !important;
-  border-color: transparent !important;
+  background: var(--luria-btn-grad-blue-light) !important;
+  color: var(--luria-btn-text-blue) !important;
+  border-color: rgba(96, 165, 250, 0.45) !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.18) !important;
+  font-weight: 750 !important;
 }
 
-:root:not([data-theme="dark"]) body:not([data-ui-appearance="dark"]):not([data-theme="dark"]) :is(
+:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) body:not([data-ui-appearance="dark"]):not([data-theme="dark"]):not([data-ui-identity="pink"]) :is(
   .btn.primary,
   .btn-primary,
   button.primary,
@@ -436,13 +450,14 @@ html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-pag
   .primary-action,
   .alex-action.primary,
   .ed-new-exam,
-  .ed-primary-action
+  .ed-primary-action,
+  .luria-back-button
 ) :is(span, strong, b, small, i, svg, svg *) {
-  color: #ffffff !important;
-  stroke: currentColor !important;
+  color: var(--luria-btn-text-blue) !important;
+  stroke: var(--luria-btn-text-blue) !important;
 }
 
-:root:not([data-theme="dark"]) body:not([data-ui-appearance="dark"]):not([data-theme="dark"]) :is(
+:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) body:not([data-ui-appearance="dark"]):not([data-theme="dark"]):not([data-ui-identity="pink"]) :is(
   .btn.primary,
   .btn-primary,
   button.primary,
@@ -472,15 +487,283 @@ html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-pag
   .primary-action,
   .alex-action.primary,
   .ed-new-exam,
-  .ed-primary-action
+  .ed-primary-action,
+  .luria-back-button
+):hover {
+  filter: brightness(1.06) !important;
+  transform: translateY(-1px) !important;
+  color: var(--luria-btn-text-blue) !important;
+}
+
+
+/* 2. TEMA ROSA / LEILA-MOOD (Light Pink) */
+:is([data-theme="leila-mood"], [data-theme="pink"], [data-theme="rosa"], body[data-ui-identity="pink"]:not([data-ui-appearance="dark"])) :is(
+  .btn.primary,
+  .btn-primary,
+  button.primary,
+  a.button.primary,
+  .qr-btn.primary,
+  .primary-nav,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  #reference-new-activity,
+  .g-button,
+  .dl-study-now-start,
+  .dl-primary,
+  .dl5-start,
+  .dl-start,
+  .alex-open-tutoring,
+  .alex-send-button,
+  .luria-daily-review-primary,
+  .qs-daily-review-primary,
+  .qs-start-button,
+  #daily-submit,
+  #start-review-session,
+  #show-answer,
+  .quiz-submit,
+  .google-calendar-primary,
+  .stats-tab.active,
+  .stats-range button.active,
+  .planner-view-toggle button.active,
+  .agenda-activity-view-switch button.active,
+  .agenda-insight-tabs button.active,
+  .qs-mode-tab.active,
+  .error-state-switch button.active,
+  .flash-tab.active,
+  [data-action="primary"],
+  .primary-action,
+  .alex-action.primary,
+  .ed-new-exam,
+  .ed-primary-action,
+  .luria-back-button
+) {
+  background: var(--luria-btn-grad-pink-light) !important;
+  color: var(--luria-btn-text-pink) !important;
+  border-color: rgba(244, 114, 182, 0.45) !important;
+  box-shadow: 0 4px 14px rgba(236, 72, 153, 0.22) !important;
+  font-weight: 750 !important;
+}
+
+:is([data-theme="leila-mood"], [data-theme="pink"], [data-theme="rosa"], body[data-ui-identity="pink"]:not([data-ui-appearance="dark"])) :is(
+  .btn.primary,
+  .btn-primary,
+  button.primary,
+  a.button.primary,
+  .qr-btn.primary,
+  .primary-nav,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  #reference-new-activity,
+  .g-button,
+  .dl-study-now-start,
+  .dl-primary,
+  .dl5-start,
+  .dl-start,
+  .alex-open-tutoring,
+  .alex-send-button,
+  .luria-daily-review-primary,
+  .qs-daily-review-primary,
+  .qs-start-button,
+  #daily-submit,
+  #start-review-session,
+  #show-answer,
+  .quiz-submit,
+  .google-calendar-primary,
+  .stats-tab.active,
+  .stats-range button.active,
+  .planner-view-toggle button.active,
+  .agenda-activity-view-switch button.active,
+  .agenda-insight-tabs button.active,
+  .qs-mode-tab.active,
+  .error-state-switch button.active,
+  .flash-tab.active,
+  [data-action="primary"],
+  .primary-action,
+  .alex-action.primary,
+  .ed-new-exam,
+  .ed-primary-action,
+  .luria-back-button
+) :is(span, strong, b, small, i, svg, svg *) {
+  color: var(--luria-btn-text-pink) !important;
+  stroke: var(--luria-btn-text-pink) !important;
+}
+
+:is([data-theme="leila-mood"], [data-theme="pink"], [data-theme="rosa"], body[data-ui-identity="pink"]:not([data-ui-appearance="dark"])) :is(
+  .btn.primary,
+  .btn-primary,
+  button.primary,
+  a.button.primary,
+  .qr-btn.primary,
+  .primary-nav,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  #reference-new-activity,
+  .g-button,
+  .dl-study-now-start,
+  .dl-primary,
+  .dl5-start,
+  .dl-start,
+  .alex-open-tutoring,
+  .alex-send-button,
+  .luria-daily-review-primary,
+  .qs-daily-review-primary,
+  .qs-start-button,
+  #daily-submit,
+  #start-review-session,
+  #show-answer,
+  .quiz-submit,
+  .google-calendar-primary,
+  [data-action="primary"],
+  .primary-action,
+  .alex-action.primary,
+  .ed-new-exam,
+  .ed-primary-action,
+  .luria-back-button
+):hover {
+  filter: brightness(1.06) !important;
+  transform: translateY(-1px) !important;
+  color: var(--luria-btn-text-pink) !important;
+}
+
+
+/* 3. MODO ESCURO - TEMA AZUL */
+:is([data-theme="dark"] body, body[data-ui-appearance="dark"], html[data-theme="dark"] body, :root[data-theme="dark"] body, body[data-theme="dark"]):not([data-ui-identity="pink"]):not([data-theme="leila-mood"]):not([data-theme="pink"]) :is(
+  .btn.primary,
+  .btn-primary,
+  button.primary,
+  a.button.primary,
+  .qr-btn.primary,
+  .primary-nav,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  #reference-new-activity,
+  .g-button,
+  .dl-study-now-start,
+  .dl-primary,
+  .dl5-start,
+  .dl-start,
+  .alex-open-tutoring,
+  .alex-send-button,
+  .luria-daily-review-primary,
+  .qs-daily-review-primary,
+  .qs-start-button,
+  #daily-submit,
+  #start-review-session,
+  #show-answer,
+  .quiz-submit,
+  .google-calendar-primary,
+  .stats-tab.active,
+  .stats-range button.active,
+  .planner-view-toggle button.active,
+  .agenda-activity-view-switch button.active,
+  .agenda-insight-tabs button.active,
+  .qs-mode-tab.active,
+  .error-state-switch button.active,
+  .flash-tab.active,
+  [data-action="primary"],
+  .primary-action,
+  .alex-action.primary,
+  .ed-new-exam,
+  .ed-primary-action,
+  .luria-back-button
+) {
+  background: var(--luria-btn-grad-blue-dark) !important;
+  color: var(--luria-btn-text-blue) !important;
+  border-color: rgba(96, 165, 250, 0.45) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.38) !important;
+  font-weight: 750 !important;
+}
+
+:is([data-theme="dark"] body, body[data-ui-appearance="dark"], html[data-theme="dark"] body, :root[data-theme="dark"] body, body[data-theme="dark"]):not([data-ui-identity="pink"]):not([data-theme="leila-mood"]):not([data-theme="pink"]) :is(
+  .btn.primary,
+  .btn-primary,
+  button.primary,
+  a.button.primary,
+  .qr-btn.primary,
+  .primary-nav,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  #reference-new-activity,
+  .g-button,
+  .dl-study-now-start,
+  .dl-primary,
+  .dl5-start,
+  .dl-start,
+  .alex-open-tutoring,
+  .alex-send-button,
+  .luria-daily-review-primary,
+  .qs-daily-review-primary,
+  .qs-start-button,
+  #daily-submit,
+  #start-review-session,
+  #show-answer,
+  .quiz-submit,
+  .google-calendar-primary,
+  .stats-tab.active,
+  .stats-range button.active,
+  .planner-view-toggle button.active,
+  .agenda-activity-view-switch button.active,
+  .agenda-insight-tabs button.active,
+  .qs-mode-tab.active,
+  .error-state-switch button.active,
+  .flash-tab.active,
+  [data-action="primary"],
+  .primary-action,
+  .alex-action.primary,
+  .ed-new-exam,
+  .ed-primary-action,
+  .luria-back-button
+) :is(span, strong, b, small, i, svg, svg *) {
+  color: var(--luria-btn-text-blue) !important;
+  stroke: var(--luria-btn-text-blue) !important;
+}
+
+:is([data-theme="dark"] body, body[data-ui-appearance="dark"], html[data-theme="dark"] body, :root[data-theme="dark"] body, body[data-theme="dark"]):not([data-ui-identity="pink"]):not([data-theme="leila-mood"]):not([data-theme="pink"]) :is(
+  .btn.primary,
+  .btn-primary,
+  button.primary,
+  a.button.primary,
+  .qr-btn.primary,
+  .primary-nav,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  #reference-new-activity,
+  .g-button,
+  .dl-study-now-start,
+  .dl-primary,
+  .dl5-start,
+  .dl-start,
+  .alex-open-tutoring,
+  .alex-send-button,
+  .luria-daily-review-primary,
+  .qs-daily-review-primary,
+  .qs-start-button,
+  #daily-submit,
+  #start-review-session,
+  #show-answer,
+  .quiz-submit,
+  .google-calendar-primary,
+  [data-action="primary"],
+  .primary-action,
+  .alex-action.primary,
+  .ed-new-exam,
+  .ed-primary-action,
+  .luria-back-button
 ):hover {
   filter: brightness(1.08) !important;
   transform: translateY(-1px) !important;
-  color: #ffffff !important;
+  color: var(--luria-btn-text-blue) !important;
 }
 
-/* 2. MODO ESCURO (Dark Mode) */
-:is([data-theme="dark"] body, body[data-ui-appearance="dark"], html[data-theme="dark"] body, :root[data-theme="dark"] body, body[data-theme="dark"]) :is(
+
+/* 4. MODO ESCURO - TEMA ROSA */
+:is([data-theme="dark"] body, body[data-ui-appearance="dark"], html[data-theme="dark"] body, :root[data-theme="dark"] body, body[data-theme="dark"]):is([data-ui-identity="pink"], [data-theme="leila-mood"], [data-theme="pink"]) :is(
   .btn.primary,
   .btn-primary,
   button.primary,
@@ -518,15 +801,17 @@ html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-pag
   .primary-action,
   .alex-action.primary,
   .ed-new-exam,
-  .ed-primary-action
+  .ed-primary-action,
+  .luria-back-button
 ) {
-  background: var(--ui-pill-gradient, linear-gradient(135deg, #38BDF8, #60A5FA, #818CF8)) !important;
-  color: var(--color-primary-foreground, #08101F) !important;
-  border-color: transparent !important;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35) !important;
+  background: var(--luria-btn-grad-pink-dark) !important;
+  color: var(--luria-btn-text-pink) !important;
+  border-color: rgba(244, 114, 182, 0.5) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.42) !important;
+  font-weight: 750 !important;
 }
 
-:is([data-theme="dark"] body, body[data-ui-appearance="dark"], html[data-theme="dark"] body, :root[data-theme="dark"] body, body[data-theme="dark"]) :is(
+:is([data-theme="dark"] body, body[data-ui-appearance="dark"], html[data-theme="dark"] body, :root[data-theme="dark"] body, body[data-theme="dark"]):is([data-ui-identity="pink"], [data-theme="leila-mood"], [data-theme="pink"]) :is(
   .btn.primary,
   .btn-primary,
   button.primary,
@@ -564,13 +849,14 @@ html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-pag
   .primary-action,
   .alex-action.primary,
   .ed-new-exam,
-  .ed-primary-action
+  .ed-primary-action,
+  .luria-back-button
 ) :is(span, strong, b, small, i, svg, svg *) {
-  color: var(--color-primary-foreground, #08101F) !important;
-  stroke: currentColor !important;
+  color: var(--luria-btn-text-pink) !important;
+  stroke: var(--luria-btn-text-pink) !important;
 }
 
-:is([data-theme="dark"] body, body[data-ui-appearance="dark"], html[data-theme="dark"] body, :root[data-theme="dark"] body, body[data-theme="dark"]) :is(
+:is([data-theme="dark"] body, body[data-ui-appearance="dark"], html[data-theme="dark"] body, :root[data-theme="dark"] body, body[data-theme="dark"]):is([data-ui-identity="pink"], [data-theme="leila-mood"], [data-theme="pink"]) :is(
   .btn.primary,
   .btn-primary,
   button.primary,
@@ -600,13 +886,13 @@ html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-pag
   .primary-action,
   .alex-action.primary,
   .ed-new-exam,
-  .ed-primary-action
+  .ed-primary-action,
+  .luria-back-button
 ):hover {
   filter: brightness(1.08) !important;
   transform: translateY(-1px) !important;
-  color: var(--color-primary-foreground, #08101F) !important;
+  color: var(--luria-btn-text-pink) !important;
 }
-
 
 
 /* ==========================================================================
@@ -624,24 +910,17 @@ html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-pag
   padding: 0 16px !important;
   margin: 14px 0 16px 0 !important;
   border-radius: 12px !important;
-  border: 1px solid var(--color-border-interactive, var(--border, #cbd5e1)) !important;
-  background: var(--color-surface, var(--surface, #ffffff)) !important;
-  color: var(--color-text-primary, var(--text, #1e293b)) !important;
   font-size: 13px !important;
-  font-weight: 700 !important;
+  font-weight: 750 !important;
   text-decoration: none !important;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
-  transition: all 0.15s ease !important;
   cursor: pointer !important;
   width: fit-content !important;
   white-space: nowrap !important;
   flex-shrink: 0 !important;
+  transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease !important;
 }
 
 .luria-back-button:hover {
-  background: var(--color-surface-elevated, var(--surface-2, #f8fafc)) !important;
-  border-color: var(--color-primary, var(--accent, #0284c7)) !important;
-  color: var(--color-primary, var(--accent, #0284c7)) !important;
   transform: translateX(-2px) !important;
 }
 
@@ -654,16 +933,4 @@ html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-pag
 
 .luria-back-button:hover svg {
   transform: translateX(-2px) !important;
-}
-
-[data-theme="dark"] .luria-back-button {
-  border-color: rgba(255, 255, 255, 0.12) !important;
-  background: rgba(18, 26, 43, 0.85) !important;
-  color: #f1f5f9 !important;
-}
-
-[data-theme="dark"] .luria-back-button:hover {
-  background: rgba(30, 41, 59, 0.95) !important;
-  border-color: #38bdf8 !important;
-  color: #38bdf8 !important;
 }

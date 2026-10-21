@@ -15,7 +15,7 @@
     const reviewCss = document.createElement("link");
     reviewCss.id = "luria-review-fixes";
     reviewCss.rel = "stylesheet";
-    reviewCss.href = "/assets/css/review-fixes-20261020.css?v=20261021-sitewide-buttons-v3";
+    reviewCss.href = "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4";
     document.head.appendChild(reviewCss);
   }
 
