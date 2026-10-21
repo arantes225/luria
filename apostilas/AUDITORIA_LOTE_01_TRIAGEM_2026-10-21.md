@@ -105,3 +105,44 @@ O renderer compartilhado usa fonte de **13,2 px** em parágrafos/listas, **12 px
 - WSES 2020 (Perfuração e sangramento de úlcera péptica): https://pmc.ncbi.nlm.nih.gov/articles/PMC6947898/ 
 - Surviving Sepsis Campaign 2026: https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026
 - Surgical Infection Society 2024: https://journals.sagepub.com/doi/full/10.1089/sur.2024.137
+
+## Execução científica e editorial — Diarreia Aguda na Infância (21/10/2026)
+
+**Arquivo realmente auditado e alterado:** `apostilas/diarreia-aguda/content.json` e piloto de tipografia em `apostilas/diarreia-aguda/index.html`. Benchmark do Google Drive efetivamente aberto: `01 - GASTRO - DIARREIA AGUDA + CLOSTRIDIUM.pdf`. **Limitação:** apostila de gastroenterologia adulta, com condutas de `C. difficile` antigas; não foi usada como fonte de prescrição pediátrica, nem copiada. Um comparador pediátrico especificamente equivalente não foi encontrado no Drive nesta rodada.
+
+### Achados científicos e correções aplicadas
+
+1. **Contradição interna entre capítulos:** texto principal tratava probióticos como uso não rotineiro conforme OMS 2024, enquanto seção adicionada dizia que LGG e `Saccharomyces` eram obrigatórios/nível 1A; a seção extra foi reescrita distinguindo a diretriz OMS e recomendações condicionais por cepa.
+2. **Zinco:** conflito entre OMS 2024 (sugestão condicional 5 mg/dia, evidência de baixa certeza) e cartaz MS 2026 (10 mg/dia até 6 meses, 20 mg/dia acima de 6 meses até menores de 5 anos, 10–14 dias). Foram explicitados origem, aplicabilidade e proibição de misturar doses; conferir formulação em zinco elementar.
+3. **Planos A/B/C:** distinção pela classificação clínica; Plano B realizado na unidade, com referência inicial de 50–100 mL/kg de SRO em 4–6 horas, sem dispensar reavaliação; Plano C quando desidratação grave, não somente choque; atenção a condições especiais.
+4. **Antibióticos pediátricos:** questão antes atribuída à UNICAMP e orientada ao ciprofloxacino passou a **questão autoral simulada**, com alternativa correta de azitromicina nas condições indicadas pelo cartaz MS 2026 e ressalva de STEC, resistência e necessidade de avaliação individual.
+5. **STEC/SHU:** removidos multiplicador universal não rastreado de risco (17 vezes), conclusão causal sem sustentação de que um betalactâmico causou a SHU em caso clínico e regra de restrição hídrica rígida em toda criança oligúrica; priorizados perfusão, função renal e suporte individualizado. A indicação de diálise não é automática.
+6. **Preparo da SRO:** removida a afirmação de que qualquer sachê deve ser diluído em exatos 1.000 mL; cada apresentação deve ser preparada conforme volume do fabricante.
+7. **Nutrição e diarreia persistente:** reforço de que não se suspende aleitamento nem se introduz dieta sem lactose/hipoalergênica indiscriminadamente; retenção de sinais de referência.
+8. **Vacinação:** conferida a janela de rotavírus 2026 (1ª dose de 1 mês e 15 dias até 11 meses e 29 dias; 2ª dose de 3 meses e 15 dias até 23 meses e 29 dias) contra calendário público e instrução normativa. Detalhes de grupos especiais continuam pendentes.
+9. **Inconsistência estrutural relevante:** a seção intitulada “12 questões originais” tinha **somente 12 títulos**. Foram escritas e inseridas **12 questões efetivas com enunciados, quatro alternativas e resposta comentada**, incluindo prova de decisão nos planos A/B/C, SRO, SHU, antibióticos, zinco, probióticos e rotavírus.
+10. **Legibilidade e gráfico:** criados dois quadros nativos legíveis pelo renderer (Plano A/B/C × sinais × ação × reavaliação; decisões de revisão), substituído o pseudofluxograma HTML denso por lista ordenada e tabela. Piloto CSS exclusivamente nesta página aumenta corpo a 15 px, tabelas a 13,6 px e sumário a 12,2 px; nenhuma imagem de terceiro inserida sem aprovação.
+
+### Validação efetuada
+
+- Releitura após gravação com JSON válido; 23 seções com 23 entradas de navegação, âncoras sem duplicatas; 5 tabelas com número de células consistente, 19 listas, 130 parágrafos; 12 enunciados efetivos de questões, 12 blocos de alternativas.
+- Checado que o renderer do repositório reconhece nativamente os blocos `t` (tabela), `u` (lista), `o` (lista ordenada); não houve alteração do JS comum.
+- Estimativa instrumental aproximada: **66.850 caracteres educacionais** somando conteúdo estruturado extraído, **não equivalente à prova rigorosa do mínimo editorial de 60.000 caracteres úteis** (ainda depende do script de auditoria, revisão humana e deduplicação). A triagem anterior assinalou aprox. 56.718 antes destas inserções.
+- O HTML da página foi modificado **somente** dentro do bloco de CSS local do sumário; nenhuma mudança em `main` ou nas imagens aprovadas.
+
+### Pendências / bloqueio de aprovação
+
+- Revisar doses, microbiologia e decisões em todas as tabelas/casos com pediatra; confirmar antibióticos locais e diagnósticos específicos.
+- Testar visualmente desktop, celular e PWA, inclusive acessibilidade do sumário, rolagem de tabelas e responsividade; validar pipeline de build.
+- Conferir originalidade e todas as alternativas das 14 questões agora apresentadas nas duas seções do livro; distinguir banco de questões independente do material didático.
+- Completar revisão bibliográfica das seções históricas e não inferir eficácia clínica de medicamentos de um único estudo. Inserir imagens educacionais apenas mediante direitos verificados e fila Admin aprovada.
+
+### Fontes públicas verificadas
+
+- Ministério da Saúde, cartaz de julho de 2026: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente/view
+- OMS, diarreia infantil (2024): https://www.who.int/publications/i/item/9789240103412
+- Ministério da Saúde, calendário 2026: https://www.gov.br/saude/pt-br/vacinacao/calendario
+- MS, instrução normativa 2026: https://www.gov.br/saude/pt-br/vacinacao/publicacoes/instrucao-normativa-que-instrui-o-calendario-nacional-de-vacinacao-2026.pdf/view
+- IDSA, diretriz diarreias infecciosas: https://www.idsociety.org/practice-guideline/infectious-diarrhea
+
+**Status: EM REVISÃO — atualizações técnicas gravadas, pendente validação clínica integral e visual; não pronto para merge.**
