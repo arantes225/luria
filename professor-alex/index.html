@@ -2,23 +2,23 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-eSI5llbbe9iX/46tgBlQSlon7FHuhgoZO93UygZoZDs='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
-  <base href="/">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-+4TsbU4pLn9Dp5v46odr3rwejM8wrNHm4/qqHdEA0r4='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <base href="./">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Professor Alex · LURIA</title>
-  <link rel="manifest" href="/manifest.webmanifest?v=5">
-  <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
+  <link rel="manifest" href="../manifest.webmanifest?v=5">
+  <link rel="apple-touch-icon" href="../assets/img/logos/pwa-icon-180.png?v=pwa5">
   <meta name="theme-color" content="#0A2342">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="LURIA">
-  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-<script src="/assets/js/ui-routes.js?v=1"></script>
-  <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
-  <link rel="stylesheet" href="/assets/css/style.css?v=16.12-no-legacy-dashboard">
-  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
-<script defer src="/assets/js/luria-brand-v5.js?v=13-review-fixes"></script>
+  <link rel="icon" type="image/png" href="../assets/img/logos/logo-icone-original.png?v=favicon2">
+<script src="../assets/js/ui-routes.js?v=1"></script>
+  <link rel="stylesheet" href="../assets/css/ui-app.css?v=7">
+  <link rel="stylesheet" href="../assets/css/style.css?v=16.12-no-legacy-dashboard">
+  <link rel="stylesheet" href="../assets/css/luria-brand-v5.css?v=20261005-global-v90">
+<script defer src="../assets/js/luria-brand-v5.js?v=13-review-fixes"></script>
   <link rel="canonical" href="/professor-alex/">
   <style>
     .alex-page{display:grid;gap:18px;padding-bottom:36px}
@@ -46,12 +46,40 @@
     @media(max-width:620px){.alex-page{gap:12px}.alex-hero{padding:18px}.alex-title{font-size:25px}.alex-start-card{min-height:120px}.alex-panel-head{padding:14px}.alex-form{padding:14px}.alex-actions{align-items:stretch}.alex-action{flex:1}.alex-action.primary{width:100%;margin-left:0;flex-basis:100%}}
   </style>
 
-  <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
-  <link rel="stylesheet" href="/assets/css/professor-alex-page.css?v=20261013-2">
+  <link rel="stylesheet" href="../assets/css/education-ui-v2.css?v=2">
+  <link rel="stylesheet" href="../assets/css/professor-alex-page.css?v=20261013-2">
+  <style>
+    /* O palco ocupa a viewport: a navegação fica fixa e somente o feed conversa rola. */
+    html, body { height: 100%; overflow: hidden; }
+    body[data-page="professor_alex"] .app-shell,
+    body[data-page="professor_alex"] .main,
+    body[data-page="professor_alex"] .page { min-height: 0; height: 100%; }
+    body[data-page="professor_alex"] .page { overflow: hidden; }
+    body[data-page="professor_alex"] .alex-page { height: 100%; min-height: 0; box-sizing: border-box; grid-template-rows: auto auto minmax(0, 1fr); overflow: hidden; padding-bottom: 0; }
+    body[data-page="professor_alex"] .alex-central-stage { display: grid; grid-template-columns: minmax(220px, 30%) minmax(0, 70%); grid-template-rows: minmax(0, 1fr) auto; gap: 14px 18px; min-height: 0; height: 100%; }
+    body[data-page="professor_alex"] .alex-mascot-card { grid-column: 1; grid-row: 1; min-height: 0; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; }
+    body[data-page="professor_alex"] .alex-mode-card { grid-column: 1; grid-row: 2; flex-direction: column; align-items: stretch; gap: 10px; }
+    body[data-page="professor_alex"] .alex-depth-toggle { order: -1; display: grid; grid-template-columns: 1fr 1fr; }
+    body[data-page="professor_alex"] .alex-depth-toggle button { min-width: 0; padding-inline: 8px; }
+    body[data-page="professor_alex"] .alex-mode-switch { align-self: flex-end; }
+    body[data-page="professor_alex"] .alex-mode-description { margin: 0; color: var(--muted, #64748b); font-size: 11px; line-height: 1.45; }
+    body[data-page="professor_alex"] .alex-chat-container { grid-column: 2; grid-row: 1 / span 2; display: grid; grid-template-rows: minmax(0, 1fr) auto; min-height: 0; gap: 12px; }
+    body[data-page="professor_alex"] .alex-chat-feed { min-height: 0; max-height: none; height: auto; }
+    body[data-page="professor_alex"] .alex-response-stream { display: none !important; }
+    @media (max-width: 900px) {
+      html, body { overflow: auto; }
+      body[data-page="professor_alex"] .page, body[data-page="professor_alex"] .alex-page { height: auto; overflow: visible; }
+      body[data-page="professor_alex"] .alex-central-stage { height: auto; grid-template-columns: 1fr; grid-template-rows: auto auto minmax(420px, 1fr); }
+      body[data-page="professor_alex"] .alex-mascot-card, body[data-page="professor_alex"] .alex-mode-card, body[data-page="professor_alex"] .alex-chat-container { grid-column: 1; }
+      body[data-page="professor_alex"] .alex-mascot-card { grid-row: 1; }
+      body[data-page="professor_alex"] .alex-mode-card { grid-row: 2; }
+      body[data-page="professor_alex"] .alex-chat-container { grid-row: 3; }
+    }
+  </style>
 </head>
 <body data-ui-heading="provided" data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="professor_alex">
-<script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
-<script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
+<script src="../assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
+<script defer src="../assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
@@ -104,6 +132,7 @@
                   <span class="alex-mode-badge">Modo Normal</span>
                   <span class="alex-mode-tag" id="alex-mode-tag">Normal</span>
                 </div>
+                <p class="alex-mode-description">Estourado aprofunda a fisiopatologia, os diferenciais e as pegadinhas da prova.</p>
               </div>
               <button type="button" class="alex-mode-switch" id="alex-mode-toggle" role="switch" aria-checked="false" aria-pressed="false" data-alex-mode="estourado" aria-label="Ativar ou desativar Modo Estourado">
                 <span class="switch-handle"></span>
@@ -139,7 +168,7 @@
                     </svg>
                   </button>
 
-                  <textarea id="alex-prompt" class="alex-chat-input" rows="1" placeholder="O que você quer entender hoje? (Ex.: Quero entender do zero o raciocínio da estenose aórtica...)" aria-label="Pergunta para o Professor Alex"></textarea>
+                  <textarea id="alex-prompt" class="alex-chat-input" rows="1" placeholder="Digite aqui" aria-label="Pergunta para o Professor Alex"></textarea>
 
                   <button class="alex-voice-button" type="button" id="alex-voice-button" title="Ditado por voz" aria-label="Falar por voz">
                     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -163,66 +192,15 @@
                 </div>
               </form>
 
-              <!-- Painel de Resposta Estruturada com as Skills do Alex -->
-              <div class="alex-response-stream" id="alex-output" aria-live="polite" hidden>
-                <div class="alex-response-card">
-                  <div class="alex-response-header">
-                    <div class="alex-response-badge">
-                      <span class="response-icon">🎓</span>
-                      <strong>Resposta do Professor Alex</strong>
-                    </div>
-                    <span class="alex-mode-pill-tag" id="alex-response-mode-pill">Modo Normal</span>
-                  </div>
-
-                  <div class="alex-output-card" style="margin-bottom: 16px;">
-                    <h3 style="margin: 0 0 8px; font-size: 15px; font-weight: 600; color: var(--color-text-primary, #1e293b);">Professor Alex</h3>
-                    <p id="alex-output-copy" style="margin: 0; line-height: 1.6; font-size: 14px; color: var(--color-text-secondary, #334155);">Escolha um tema ou digite sua pergunta para começar a aula.</p>
-                  </div>
-
-                  <div class="alex-skills-blocks">
-                    <div class="skill-block concept-block">
-                      <div class="skill-head">
-                        <span class="skill-icon">💡</span>
-                        <h4>Conceito & Raciocínio Clínico</h4>
-                      </div>
-                      <p id="alex-res-concept">Apresentação estruturada do conceito essencial, explicando o que está acontecendo no paciente e a cadeia de causa e efeito.</p>
-                    </div>
-
-                    <div class="skill-block diff-block">
-                      <div class="skill-head">
-                        <span class="skill-icon">📊</span>
-                        <h4>Mecanismo & Diferenciais</h4>
-                      </div>
-                      <p id="alex-res-diff">Fisiopatologia aplicada e pontos de contraste com os principais diagnósticos diferenciais para nunca se confundir.</p>
-                    </div>
-
-                    <div class="skill-block exam-block">
-                      <div class="skill-head">
-                        <span class="skill-icon">🎯</span>
-                        <h4>Como Cai na Residência</h4>
-                      </div>
-                      <p id="alex-res-exam">O padrão de cobrança típico nas provas (ENARE, USP, SUS-SP), os enunciados clássicos e onde as bancas costumam colocar pegadinhas.</p>
-                    </div>
-
-                    <div class="skill-block trick-block">
-                      <div class="skill-head">
-                        <span class="skill-icon">⚡</span>
-                        <h4>Pulo do Gato</h4>
-                      </div>
-                      <p id="alex-res-trick"><strong>A frase decisiva:</strong> O discriminador rápido e memorável que, se você lembrar na hora da prova, garante a questão.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
       </div>
     </main>
   </div>
-<script src="/assets/vendor/supabase-2.110.6.js"></script>
-<script src="/assets/js/supabase.js?v=auth4"></script>
-<script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
+<script src="../assets/vendor/supabase-2.110.6.js"></script>
+<script src="../assets/js/supabase.js?v=auth4"></script>
+<script src="../assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script>
     (() => {
       const state = { mode: "normal", depth: "rapida", file: null };
@@ -257,7 +235,6 @@
         document.querySelector(".alex-mode-badge").textContent = nextState ? "Modo Estourado" : "Modo Normal";
         modeTag.classList.toggle("active", nextState);
         document.getElementById("alex-mode-card").classList.toggle("estourado-active", nextState);
-        document.getElementById("alex-response-mode-pill").textContent = nextState ? "💥 Modo Estourado" : "Modo Normal";
 
         if (mascot && typeof mascot.playAnimation === "function") {
           if (nextState) {
@@ -345,6 +322,14 @@
         voiceButton.title = "Ditado por voz não suportado neste navegador.";
       }
 
+      // Enter envia; Shift+Enter continua permitindo uma nova linha.
+      prompt.addEventListener("keydown", event => {
+        if (event.key === "Enter" && !event.shiftKey) {
+          event.preventDefault();
+          if (!sendButton.disabled) form.requestSubmit(sendButton);
+        }
+      });
+
       // Envio da pergunta / Conversação com Skills
       form.addEventListener("submit", event => {
         event.preventDefault();
@@ -353,6 +338,8 @@
           prompt.focus();
           return;
         }
+        prompt.value = "";
+        prompt.style.height = "auto";
 
         // Animação do Alex: Pensando
         if (mascot && typeof mascot.playAnimation === "function") {
@@ -363,35 +350,23 @@
         sendButton.disabled = true;
 
         setTimeout(() => {
-          // Renderiza a resposta estruturada com as Skills do Alex
+          // Renderiza a resposta estruturada dentro do fluxo do chat.
           const topicName = question ? question.substring(0, 50) + (question.length > 50 ? "..." : "") : (state.file ? state.file.name : "sua dúvida");
           const isEst = state.mode === "estourado";
-
-          document.getElementById("alex-res-concept").innerHTML = isEst
-            ? `Análise aprofundada de <strong>${escapeHtml(topicName)}</strong>: Na fisiopatologia molecular e hemodinâmica, a cascata primária decorre da alteração estrutural progressiva, provocando elevação imediata da pós-carga e remodelamento concêntrico miocárdico com hipertrofia adaptativa.`
-            : `Raciocínio inicial sobre <strong>${escapeHtml(topicName)}</strong>: O ponto central é identificar qual mecanismo primário foi quebrado e como o organismo tenta compensar essa disfunção antes da descompensação clínica.`;
-
-          document.getElementById("alex-res-diff").innerHTML = isEst
-            ? `<strong>Diagnóstico Diferencial e Contrastes:</strong> O sinal cardinal para diferenciar esta condição reside na curva de pulso e na ausculta dinâmica. Enquanto a insuficiência cursa com pulso amplo e divergente (Martelo d'água), aqui o pulso é <em>parvus et tardus</em> com desdobramento paradoxal de B2.`
-            : `<strong>Diferenciação Prática:</strong> Separe sempre os achados agudos dos crônicos. Em provas, quando o paciente é jovem ou assintomático, pense em etiologias congênitas ou bicuspidia; em idosos, calcificação degenerativa senil.`;
-
-          document.getElementById("alex-res-exam").innerHTML = isEst
-            ? `<strong>Armadilhas de Residência (ENARE / USP / SUS-SP):</strong> A banca costuma colocar uma questão de dispneia aos esforços ou síncope sem déficit neurológico focal. O erro mais frequente é indicar vasodilatadores ou nitratos que precipitam choque hemodinâmico por queda drástica de pré-carga em câmara estenosada.`
-            : `<strong>Padrão de Cobrança:</strong> As provas cobram a tríade clássica (dispneia, angina e síncope), a indicação cirúrgica precoce ao início dos sintomas e os exames confirmatórios de primeira linha (ecocardiograma transtorácico com gradiente médio > 40 mmHg).`;
-
-          document.getElementById("alex-res-trick").innerHTML = isEst
-            ? `<strong>Pulo do Gato Estourado:</strong> <em>"Paciente com estenose grave que desenvolve sintomas entra em contagem regressiva cirúrgica: angina = 5 anos, síncope = 3 anos, dispneia = 2 anos de sobrevida média se não operado."</em>`
-            : `<strong>Pulo do Gato:</strong> <em>"Sintoma apareceu, hora de operar! Nunca prescreva vasodilatador potente na estenose aórtica importante com síncope."</em>`;
-
-          output.hidden = false;
-          output.scrollIntoView({ behavior: "smooth", block: "start" });
+          const feed = document.getElementById("alex-chat-feed");
+          if (feed) {
+            const response = document.createElement("div");
+            response.className = "alex-msg alex-msg-alex alex-msg-structured";
+            response.innerHTML = `<div class="alex-msg-header"><span class="response-icon">🎓</span><span>Professor Alex · ${isEst ? "Modo Estourado" : "Modo Normal"}</span></div><div class="alex-msg-bubble"><strong>Conceito e raciocínio</strong><br>${isEst ? `Análise aprofundada de <strong>${escapeHtml(topicName)}</strong>: na fisiopatologia molecular e hemodinâmica, a cascata primária decorre da alteração estrutural progressiva, provocando elevação da pós-carga e remodelamento concêntrico.` : `Raciocínio inicial sobre <strong>${escapeHtml(topicName)}</strong>: identifique o mecanismo primário quebrado e como o organismo tenta compensar antes da descompensação clínica.`}<br><br><strong>Mecanismos e diferenciais</strong><br>${isEst ? `O contraste principal está na curva de pulso e na ausculta dinâmica: insuficiência cursa com pulso amplo, enquanto aqui aparece pulso <em>parvus et tardus</em>.` : `Separe achados agudos dos crônicos e contraste etiologias congênitas, bicuspidia e calcificação degenerativa conforme o contexto.`}<br><br><strong>Como cai na residência</strong><br>${isEst ? `As bancas exploram dispneia aos esforços ou síncope e pegadinhas de conduta com vasodilatadores ou nitratos.` : `A cobrança costuma combinar a tríade dispneia, angina e síncope, indicação cirúrgica ao início dos sintomas e ecocardiograma como exame inicial.`}<br><br><strong>Pulo do gato</strong><br>${isEst ? `<em>Sintoma em estenose grave exige raciocínio cirúrgico urgente.</em>` : `<em>Sintoma apareceu: reavalie indicação de intervenção e evite vasodilatação imprudente.</em>`}</div>`;
+            feed.appendChild(response);
+            feed.scrollTop = feed.scrollHeight;
+          }
 
           // Alex gesticulando ativamente na resposta
           if (mascot && typeof mascot.playAnimation === "function") {
             mascot.expression = isEst ? "angry" : "attentive";
             mascot.playAnimation("explaining");
             statusText.textContent = isEst ? "💥 Professor Alex dissecando a fisiopatologia..." : "Professor Alex gesticulando e explicando o raciocínio...";
-            
             setTimeout(() => {
               if (typeof mascot.playAnimation === "function") {
                 mascot.playAnimation("point");
@@ -435,8 +410,9 @@
       }
     })();
   </script>
-  <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
-  <script type="module" src="/assets/js/professor-alex-gemini.mjs?v=20261018-google1"></script>
-  <script type="module" src="/assets/js/professor-alex-page.mjs?v=20261014-ready2"></script>
+  <script defer src="../assets/js/pwa.js?v=20261013-width2"></script>
+  <script src="../assets/js/professor-alex-voice.js?v=1"></script>
+  <script type="module" src="../assets/js/professor-alex-gemini.mjs?v=20261018-google1"></script>
+  <script type="module" src="../assets/js/professor-alex-page.mjs?v=20261014-ready2"></script>
 </body>
 </html>
