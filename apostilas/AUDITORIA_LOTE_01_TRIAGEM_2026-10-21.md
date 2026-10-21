@@ -49,6 +49,10 @@ Data: 21/10/2026. Lote 1: 28 caminhos (27 catalogados + 1 HTML extra). **Triagem
 3. **FA:** a apostila contém referência à Diretriz Brasileira 2025 e ao CHA₂DS₂-VA, e reconhece anticoagulação após cardioversão e diferenças de limiar segundo diretrizes; positivo na triagem, **sem certificação** de doses/condutas. Checagem aprofundada de energia, anticoagulação e contraindicações ainda requerida.
 4. **IST:** texto aborda o PCDT e a incorporação da DoxiPEP no SUS em 2026. Precisam ser checadas elegibilidade, doses e definição de população, além da posição e licença das oito imagens presentes no HTML. Material externo do Drive foi usado apenas como referência pedagógica.
 
+## Achado objetivo de legibilidade no CSS
+
+O renderer compartilhado usa fonte de **13,2 px** em parágrafos/listas, **12 px** em tabelas e **9,6 px** nos links da navegação lateral. A apostila compactada de Perfuração reduz a navegação para **8,7 px** e o subtítulo para **7 px**. Esses tamanhos são candidatos prioritários a melhoria porque obrigam maior esforço de leitura, especialmente em notebooks e dispositivos móveis. Proposta para teste responsivo (não aplicada ao CSS global ainda): corpo 15–16 px com comprimento de linha controlado, tabelas a partir de 13–14 px e sumário legível com agrupamentos/recolhimento para evitar scroll excessivo. Validar impacto no PWA e no menu lateral antes de publicar.
+
 ## Diretrizes de reescrita para uma leitura prazerosa (sem reduzir rigor)
 
 - Em abertura de capítulo, estabelecer uma pergunta clínica concreta seguida de explicação causal, evitando longa enumeração antes de dar contexto.
