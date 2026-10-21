@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261021-darktext-grad-v4";
+const CACHE_VERSION = "luria-pwa-20261021-darktext-grad-v4-study-rats-v1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -38,6 +38,10 @@ const APP_SHELL = [
   "/manifest.webmanifest?v=5",
   "/mini-osce/",
   "/jogos/",
+  "/jogos/study-rats/",
+  "/jogos/study-rats/hall.css?v=20261021-hall1",
+  "/jogos/study-rats/hall.js?v=20261021-hall1",
+  "/jogos/study-rats/game.js?v=20261021-hall1",
   "/jogos/plantao-relampago/",
   "/jogos/sequencia-salvadora/",
   "/jogos/escapando-do-plantao/",
