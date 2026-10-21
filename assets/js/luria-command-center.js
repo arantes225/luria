@@ -32,6 +32,7 @@ function topbar(){return $(".topbar")}
 function modal(id,title,body){let o=d.getElementById(id);if(o)o.remove();o=d.createElement("div");o.id=id;o.className="luria-intel-overlay";o.innerHTML='<section class="luria-intel-modal" role="dialog" aria-modal="true"><header class="luria-intel-head"><h2>'+esc(title)+'</h2><button class="luria-intel-close" type="button" aria-label="Fechar">×</button></header>'+body+'</section>';d.body.appendChild(o);o.querySelector(".luria-intel-close").onclick=()=>o.remove();o.onclick=e=>{if(e.target===o)o.remove()};return o}
 function installSearch(){
  const bar=topbar();if(!bar)return;
+ if(document.body?.dataset.page === 'dashboard'){document.getElementById('luria-alex-topbar')?.remove();return;}
  const controls=bar.querySelector(".luria-notifications");
  if(!controls){setTimeout(installSearch,120);return}
  if(!d.getElementById("luria-alex-topbar")){
