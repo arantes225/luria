@@ -184,7 +184,7 @@ test("sequence reveals recommended order only after solving or opting into guide
     /0 de 3/,
   );
 });
-test("adventure mixes mechanics, retries failed decisions, unlocks rooms and finishes all chapters", (t) => {
+test("adventure mixes mechanics, retries failed decisions, animates its scene panel and finishes all chapters", (t) => {
   const g = game(t, "escape");
   g.click('[data-action="start"]');
   g.click('[data-option="0"]');
@@ -199,7 +199,9 @@ test("adventure mixes mechanics, retries failed decisions, unlocks rooms and fin
       s.answers.forEach((answer) => g.click(`[data-option="${answer}"]`));
     else g.click(`[data-option="${s.answer}"]`);
     g.click('[data-action="confirm"]');
-    assert.equal(g.d.querySelectorAll(".e-room-done").length, i);
+    assert.equal(g.d.querySelector(".e-map"), null);
+    assert.ok(g.d.querySelector(".e-journey-stage"));
+    assert.equal(g.d.querySelector(".e-journey").dataset.scene, s.id);
     assert.ok(g.d.querySelector(".e-journey-running"));
     assert.equal(g.d.querySelector(".e-journey-from").textContent, s.room);
     assert.equal(
