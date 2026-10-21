@@ -1,6 +1,6 @@
-# LURIA — Auditoria científica e editorial em 10 lotes
+# LURIA — Auditoria científica e editorial: 275 caminhos em 10 lotes
 
-Data: 21/10/2026. Base: produção, tabela public.apostilas. 264 registros publicados. Publicação não é aprovação científica.
+Data: 21/10/2026. Base: produção, tabela public.apostilas. 264 registros publicados no banco e 11 páginas HTML adicionais fora do catálogo, total de 275 caminhos revisáveis (algumas podem ser aliases/versões). Publicação não é aprovação científica.
 
 ## Regras para aprovação
 
@@ -20,9 +20,9 @@ Data: 21/10/2026. Base: produção, tabela public.apostilas. 264 registros publi
 
 ## Inventário por lote
 
-Critério: distribuição cíclica por especialidade com compensação dos excedentes, ordem por matéria, tema, título e ID. Lotes 1–4 com 27; lotes 5–10 com 26.
+Critério: 264 registros distribuídos ciclicamente por especialidade (27 nos lotes 1–4, 26 nos 5–10), mais 11 páginas de GitHub ainda não catalogadas. Resultado: 28 caminhos nos lotes 1–5 e 27 nos lotes 6–10. As 15 pastas de rascunhos e 4 pastas auxiliares não foram contadas como apostilas publicadas. Itens extras precisam de reconciliação de conteúdo e rotas, não publicação automática.
 
-### Lote 1 (27)
+### Lote 1 (28)
 
 | Nº | Área atual | Apostila | Caminho | Status |
 |---:|---|---|---|---|
@@ -53,8 +53,10 @@ Critério: distribuição cíclica por especialidade com compensação dos exced
 | 25 | Pediatria | Vasculites Pediátricas e Doença de Kawasaki | /apostilas/vasculites-pediatricas-e-doenca-de-kawasaki/ | Pendente |
 | 26 | Saúde Coletiva | Segurança do Paciente e Prevenção de Eventos Adversos | /apostilas/seguranca-do-paciente-e-prevencao-de-eventos-adversos/ | Pendente |
 | 27 | Saúde Mental | Transtornos Ansiosos, TOC e Transtornos Relacionados ao Trauma | /apostilas/transtornos-ansiosos-toc-e-transtornos-relacionados-ao-trauma/ | Pendente |
+| 28 | Fora do catálogo do banco | Assistência ao Parto, Vigilância Intraparto e Partograma | /apostilas/assistencia-ao-parto/ | Reconciliar versão/alias |
 
-### Lote 2 (27)
+
+### Lote 2 (28)
 
 | Nº | Área atual | Apostila | Caminho | Status |
 |---:|---|---|---|---|
@@ -85,8 +87,10 @@ Critério: distribuição cíclica por especialidade com compensação dos exced
 | 25 | Pediatria | Violência e Maus-Tratos contra Crianças e Adolescentes | /apostilas/violencia-e-maus-tratos-contra-criancas-e-adolescentes/ | Pendente |
 | 26 | Saúde Coletiva | sistemas-de-informacao-em-saude-e-qualidade-dos-dados | /apostilas/sistemas-de-informacao-em-saude-e-qualidade-dos-dados/ | Pendente |
 | 27 | Saúde Mental | transtornos-de-personalidade-e-autolesao | /apostilas/transtornos-de-personalidade-e-autolesao/ | Pendente |
+| 28 | Fora do catálogo do banco | Câncer de mama (página alternativa) | /apostilas/cancer-de-mama/ | Reconciliar versão/alias |
 
-### Lote 3 (27)
+
+### Lote 3 (28)
 
 | Nº | Área atual | Apostila | Caminho | Status |
 |---:|---|---|---|---|
@@ -117,8 +121,10 @@ Critério: distribuição cíclica por especialidade com compensação dos exced
 | 25 | Pediatria | Bronquiolite Viral Aguda | /apostilas/bronquiolite-viral-aguda/ | Pendente |
 | 26 | Saúde Mental | Emergências Psiquiátricas e Fundamentos de Psicofarmacologia | /apostilas/emergencias-psiquiatricas-e-fundamentos-de-psicofarmacologia/ | Pendente |
 | 27 | Saúde Mental | Transtornos Depressivos e Avaliação do Risco de Suicídio | /apostilas/transtornos-depressivos-e-avaliacao-do-risco-de-suicidio/ | Pendente |
+| 28 | Fora do catálogo do banco | Choque Circulatório | /apostilas/choque-circulatorio/ | Reconciliar versão/alias |
 
-### Lote 4 (27)
+
+### Lote 4 (28)
 
 | Nº | Área atual | Apostila | Caminho | Status |
 |---:|---|---|---|---|
@@ -149,8 +155,10 @@ Critério: distribuição cíclica por especialidade com compensação dos exced
 | 25 | Pediatria e Emergência Pediátrica | Febre sem Sinais Localizatórios (FSSL) na Infância | /apostilas/febre-sem-sinais-localizatorios/ | Pendente |
 | 26 | Saúde Mental | Esquizofrenia e Outros Transtornos Psicóticos | /apostilas/esquizofrenia-e-outros-transtornos-psicoticos/ | Pendente |
 | 27 | Saúde Mental | Transtornos Relacionados ao Álcool e Outras Substâncias | /apostilas/transtornos-relacionados-ao-alcool-e-outras-substancias/ | Pendente |
+| 28 | Fora do catálogo do banco | Doenças benignas e câncer de mama (página alternativa) | /apostilas/doencas-benignas-e-cancer-de-mama/ | Reconciliar versão/alias |
 
-### Lote 5 (26)
+
+### Lote 5 (28)
 
 | Nº | Área atual | Apostila | Caminho | Status |
 |---:|---|---|---|---|
@@ -180,8 +188,11 @@ Critério: distribuição cíclica por especialidade com compensação dos exced
 | 24 | Pediatria | Puberdade e Adolescência | /apostilas/puberdade-e-adolescencia/ | Pendente |
 | 25 | Saúde Coletiva | avaliacao-de-tecnologias-em-saude-e-custo-efetividade | /apostilas/avaliacao-de-tecnologias-em-saude-e-custo-efetividade/ | Pendente |
 | 26 | Saúde Mental | luto-crises-e-transtornos-de-adaptacao | /apostilas/luto-crises-e-transtornos-de-adaptacao/ | Pendente |
+| 27 | Fora do catálogo do banco | Patologias benignas e câncer de mama (página alternativa) | /apostilas/patologias-benignas-e-cancer-de-mama/ | Reconciliar versão/alias |
+| 28 | Fora do catálogo do banco | Princípios de Técnica Cirúrgica | /apostilas/principios-de-tecnica-cirurgica/ | Reconciliar versão/alias |
 
-### Lote 6 (26)
+
+### Lote 6 (27)
 
 | Nº | Área atual | Apostila | Caminho | Status |
 |---:|---|---|---|---|
@@ -211,8 +222,10 @@ Critério: distribuição cíclica por especialidade com compensação dos exced
 | 24 | Pediatria | puberdade-precoce-e-atrasada | /apostilas/puberdade-precoce-e-atrasada/ | Pendente |
 | 25 | Saúde Coletiva | biosseguranca-e-prevencao-de-infeccoes-relacionadas-a-assistencia | /apostilas/biosseguranca-e-prevencao-de-infeccoes-relacionadas-a-assistencia/ | Pendente |
 | 26 | Saúde Mental | Psicopatologia, Entrevista e Exame do Estado Mental | /apostilas/psicopatologia-entrevista-e-exame-do-estado-mental/ | Pendente |
+| 27 | Fora do catálogo do banco | Sangramento na primeira metade da gestação (aparente alias) | /apostilas/sangramento-na-primeira-metade-da-gestacao/ | Reconciliar versão/alias |
 
-### Lote 7 (26)
+
+### Lote 7 (27)
 
 | Nº | Área atual | Apostila | Caminho | Status |
 |---:|---|---|---|---|
@@ -242,8 +255,10 @@ Critério: distribuição cíclica por especialidade com compensação dos exced
 | 24 | Pediatria | purpuras-coagulopatias-e-hemoglobinopatias-pediatricas | /apostilas/purpuras-coagulopatias-e-hemoglobinopatias-pediatricas/ | Pendente |
 | 25 | Saúde Coletiva | Consentimento Informado, Autonomia e Decisão Compartilhada | /apostilas/consentimento-informado-autonomia-e-decisao-compartilhada/ | Pendente |
 | 26 | Saúde Mental | saude-mental-do-adolescente-avaliacao-e-manejo-inicial | /apostilas/saude-mental-do-adolescente-avaliacao-e-manejo-inicial/ | Pendente |
+| 27 | Fora do catálogo do banco | Sexualidade Masculina | /apostilas/sexualidade-masculina/ | Reconciliar versão/alias |
 
-### Lote 8 (26)
+
+### Lote 8 (27)
 
 | Nº | Área atual | Apostila | Caminho | Status |
 |---:|---|---|---|---|
@@ -273,8 +288,10 @@ Critério: distribuição cíclica por especialidade com compensação dos exced
 | 24 | Pediatria | Sepse e Choque Séptico Pediátrico | /apostilas/sepse-e-choque-septico-pediatrico/ | Pendente |
 | 25 | Saúde Coletiva | Determinantes Sociais, Equidade e Direitos Humanos | /apostilas/determinantes-sociais-equidade-e-direitos-humanos/ | Pendente |
 | 26 | Saúde Mental | saude-mental-no-ciclo-gravidico-puerperal | /apostilas/saude-mental-no-ciclo-gravidico-puerperal/ | Pendente |
+| 27 | Fora do catálogo do banco | Sexualidade Feminina | /apostilas/sexualidade/ | Reconciliar versão/alias |
 
-### Lote 9 (26)
+
+### Lote 9 (27)
 
 | Nº | Área atual | Apostila | Caminho | Status |
 |---:|---|---|---|---|
@@ -304,8 +321,10 @@ Critério: distribuição cíclica por especialidade com compensação dos exced
 | 24 | Pediatria | Triagens Neonatais e Interpretação dos Rastreamentos | /apostilas/triagens-neonatais-e-interpretacao-dos-rastreamentos/ | Pendente |
 | 25 | Saúde Coletiva | LGPD, Sigilo, Telemedicina e Saúde Digital | /apostilas/lgpd-sigilo-telemedicina-e-saude-digital/ | Pendente |
 | 26 | Saúde Mental | Transtorno Bipolar e Episódios do Humor | /apostilas/transtorno-bipolar-e-episodios-do-humor/ | Pendente |
+| 27 | Fora do catálogo do banco | Síndrome Ovariana Metabólica Poliendócrina | /apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/ | Reconciliar versão/alias |
 
-### Lote 10 (26)
+
+### Lote 10 (27)
 
 | Nº | Área atual | Apostila | Caminho | Status |
 |---:|---|---|---|---|
@@ -335,6 +354,8 @@ Critério: distribuição cíclica por especialidade com compensação dos exced
 | 24 | Pediatria | Urgências Pediátricas e Suporte Básico e Avançado | /apostilas/urgencias-pediatricas-e-suporte-basico-avancado/ | Pendente |
 | 25 | Saúde Coletiva | planejamento-avaliacao-e-gestao-de-servicos-de-saude | /apostilas/planejamento-avaliacao-e-gestao-de-servicos-de-saude/ | Pendente |
 | 26 | Saúde Mental | transtornos-alimentares | /apostilas/transtornos-alimentares/ | Pendente |
+| 27 | Fora do catálogo do banco | Técnica Cirúrgica (página alternativa) | /apostilas/tecnica-cirurgica/ | Reconciliar versão/alias |
+
 
 ## Referências públicas da triagem
 
