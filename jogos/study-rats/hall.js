@@ -71,6 +71,8 @@
   function setWaiting(match) {
     currentMatch = match;
     $('sr-waiting').hidden = false;
+    $('sr-find-random').disabled = true;
+    $('sr-show-friends').disabled = true;
     $('sr-waiting-heading').textContent = match.mode === 'friends' ? 'Convite enviado' : 'Buscando jogador';
     $('sr-waiting-copy').textContent = match.mode === 'friends'
       ? 'A partida começa quando seu amigo abrir o Study Rats e aceitar o convite.'
@@ -141,10 +143,14 @@
       const matches = await rpc('study_rats_board_lobby');
       const rows = Array.isArray(matches) ? matches : [];
       renderMatches(rows);
+      if (!currentMatch) {
+        const waiting = rows.find(match => match.status === 'waiting' && match.host_id === userId);
+        if (waiting) setWaiting(waiting);
+      }
       if (currentMatch) {
         const next = rows.find(match => match.id === currentMatch.id);
         if (next?.status === 'playing') return launchGame(next);
-        if (!next || next.status !== 'waiting') { currentMatch = null; $('sr-waiting').hidden = true; }
+        if (!next || next.status !== 'waiting') { currentMatch = null; $('sr-waiting').hidden = true; $('sr-find-random').disabled = false; $('sr-show-friends').disabled = false; }
       }
       if (requestedMatch) {
         const invited = rows.find(match => match.id === requestedMatch && match.invited_id === userId);
@@ -165,7 +171,7 @@
       await refreshLobby();
       if (!launching && currentMatch) { setWaiting(currentMatch); status('Conexão preparada. Aguardando a outra pessoa.'); }
     } catch (error) { status(error.message || 'Não foi possível iniciar a partida online.', true); }
-    finally { button.disabled = false; }
+    finally { button.disabled = !!currentMatch; }
   }
   async function showFriends() {
     if (!onlineReady()) return;
@@ -200,7 +206,7 @@
   });
   $('sr-cancel').addEventListener('click', async () => {
     if (!currentMatch) return;
-    try { await rpc('study_rats_board_leave', {p_match_id: currentMatch.id}); currentMatch = null; $('sr-waiting').hidden = true; status('Busca cancelada.'); await refreshLobby(); }
+    try { await rpc('study_rats_board_leave', {p_match_id: currentMatch.id}); currentMatch = null; $('sr-waiting').hidden = true; $('sr-find-random').disabled = false; $('sr-show-friends').disabled = false; status('Busca cancelada.'); await refreshLobby(); }
     catch (error) { status(error.message || 'Não foi possível cancelar a busca.', true); }
   });
 
