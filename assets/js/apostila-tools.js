@@ -31,11 +31,12 @@
     body.apostila-reading-layout-v2 .book-toc-link:hover,body.apostila-reading-layout-v2 .book-toc-link.is-active{background:var(--accent-soft)!important;color:var(--accent)!important;border-color:color-mix(in srgb,var(--accent) 35%,var(--border))!important}
     body.apostila-reading-layout-v2 .book-postit{z-index:40!important}
     @media(max-width:900px){
-      body.apostila-reading-layout-v2 .book-page{grid-template-columns:1fr!important;gap:12px!important}
-      body.apostila-reading-layout-v2 .book-main{grid-column:1!important;grid-row:1!important}
-      body.apostila-reading-layout-v2 .book-outline{grid-column:1!important;grid-row:2!important;position:relative!important;top:auto!important;display:block!important}
-      body.apostila-reading-layout-v2 .book-tools{grid-template-columns:repeat(2,minmax(0,1fr))!important}
-      body.apostila-reading-layout-v2 .book-highlight-palette,body.apostila-reading-layout-v2 .book-postit-palette{grid-column:1/-1!important;justify-content:flex-start!important}
+      body.apostila-reading-layout-v2 .book-page{display:flex!important;flex-direction:column!important;grid-template-columns:none!important;gap:12px!important;width:100%!important;max-width:100%!important;overflow:visible!important}
+      body.apostila-reading-layout-v2 .book-main{order:1!important;width:100%!important;max-width:100%!important;min-width:0!important}
+      body.apostila-reading-layout-v2 .book-outline{order:2!important;width:100%!important;max-width:100%!important;box-sizing:border-box!important;position:relative!important;top:auto!important;display:block!important;padding:8px!important;overflow:visible!important}
+      body.apostila-reading-layout-v2 .book-tools{grid-template-columns:repeat(2,minmax(0,1fr))!important;width:100%!important;max-width:100%!important;box-sizing:border-box!important}
+      body.apostila-reading-layout-v2 .book-tool-btn{width:100%!important;min-width:0!important;box-sizing:border-box!important}
+      body.apostila-reading-layout-v2 .book-highlight-palette,body.apostila-reading-layout-v2 .book-postit-palette{grid-column:1/-1!important;justify-content:flex-start!important;flex-wrap:wrap!important;width:100%!important;box-sizing:border-box!important}
       body.apostila-reading-layout-v2 .book-toc-block{padding:18px 16px!important}
       body.apostila-reading-layout-v2 .book-toc-nav{grid-template-columns:1fr!important}
     }

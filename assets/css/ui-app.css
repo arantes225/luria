@@ -154,6 +154,10 @@ body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
 /* Transitional shared popup/control styles extracted from runtime injection.
    Loaded once by ui-app.css. Layout belongs to ui-navigation-v2.css. */
 
+/* Professor Alex is no longer a global shell action. */
+#luria-alex-topbar,
+.luria-alex-topbar { display:none!important; }
+
 /* luria-unified-mobile-sidebar */
 
     @media (max-width: 980px) {
