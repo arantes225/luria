@@ -1,10 +1,16 @@
 /* Home presentation only. Review sessions and all review data remain owned by the existing controllers.
    This layer precedes education in the two entry points to replace legacy important home sizing. */
 @layer luria-ui-flashcards {
-  body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-section[data-flash-section="review"].active {display:grid!important;grid-template-columns:minmax(0,1fr) 360px!important;grid-template-rows:auto auto!important;gap:1.5rem!important;align-items:start!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;}
+  /* The workspace owns the columns; the panel and section are wrappers. */
+  body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-section[data-flash-section="review"].active {display:block!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;}
+  body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .qs-home-workspace {display:grid!important;grid-template-columns:minmax(0,1.48fr) minmax(0,.88fr)!important;gap:1.5rem!important;width:100%!important;height:auto!important;max-height:none!important;align-items:start!important;overflow:visible!important;}
+  body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-home-actions {grid-area:auto!important;}
   body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main :is(#review-launcher,.flash-home-summary,.flash-home-decks,.flash-home-actions) {position:static!important;inset:auto!important;min-width:0!important;width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;margin:0!important;overflow:visible!important;transform:none!important;}
   body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main :is(#review-launcher,.flash-home-summary,.flash-home-decks) {padding:1.5rem!important;background:var(--color-surface)!important;border:1px solid var(--color-border)!important;border-radius:var(--ui-radius-card)!important;box-shadow:var(--ui-shadow)!important;backdrop-filter:blur(18px)!important;-webkit-backdrop-filter:blur(18px)!important;}
-  body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main #review-launcher {grid-area:1/1!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:center!important;gap:1.5rem!important;text-align:left!important;}
+  body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main #review-launcher {grid-area:1/1!important;display:flex!important;flex:none!important;flex-direction:column!important;align-items:stretch!important;justify-content:center!important;gap:1.5rem!important;text-align:left!important;}
+  body[data-ui="v2"][data-page="flashcards"] .main .qs-home-lists-filter-bar {min-width:0!important;max-width:100%!important;}
+  body[data-ui="v2"][data-page="flashcards"] .main .qs-search-input-wrap {min-width:0!important;max-width:100%!important;}
+  body[data-ui="v2"][data-page="flashcards"] .main .qs-search-input {min-width:0!important;width:100%!important;padding-inline-start:2.5rem!important;}
   body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main #review-launcher::before, body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main #review-launcher::after {content:none!important;display:none!important;}
   body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .review-launcher-copy :is(p,.eyebrow) {text-align:left!important;justify-self:start!important;}
   body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .review-launcher-copy {text-align:left!important;position:static!important;display:grid!important;gap:.75rem!important;margin:0!important;padding:0!important;}
@@ -66,7 +72,7 @@
   body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-home-action b {position:static!important;color:var(--color-primary-text)!important;}
   body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-home-action:hover {background:var(--color-surface-elevated)!important;}
   @media(max-width:1199px) {
-    body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-section[data-flash-section="review"].active {grid-template-columns:minmax(0,1fr)!important;}
+    body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .qs-home-workspace {grid-template-columns:minmax(0,1fr)!important;}
     body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main #review-launcher {grid-area:auto!important;}
     body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main :is(.flash-home-summary,.flash-home-decks,.flash-home-actions) {grid-area:auto!important;}
     body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-home-summary {grid-row:2!important;}

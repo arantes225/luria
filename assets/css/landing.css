@@ -34,7 +34,7 @@ html {
 
 body {
   margin: 0;
-  min-width: 320px;
+  min-width: 0;
   color: var(--landing-text);
   background:
     radial-gradient(circle at 12% 10%, rgba(56, 189, 248, 0.22), transparent 36%),
@@ -1115,11 +1115,12 @@ img { max-width: 100%; }
 
 @media (max-width: 1050px) {
   .hero-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 50px;
   }
 
   .hero-copy {
+    min-width: 0;
     max-width: 760px;
   }
 
