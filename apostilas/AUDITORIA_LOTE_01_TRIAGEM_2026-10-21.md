@@ -76,3 +76,32 @@ O renderer compartilhado usa fonte de **13,2 px** em parágrafos/listas, **12 px
 - Diretriz Brasileira de FA 2025: https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt
 - PCDT-IST Ministério da Saúde: https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view
 - Ministério da Saúde DoxiPEP 2026: https://www.gov.br/aids/pt-br/assuntos/noticias/2026/marco/ministerio-da-saude-oferece-nova-estrategia-para-a-prevencao-de-clamidia-e-sifilis
+
+## Execução clínica e editorial — primeira rodada (21/10/2026)
+
+**Apostila trabalhada:** Perfuração de Víscera Oca e Peritonite Aguda (`/apostilas/perfuracao-de-viscera-oca/`). Comparador `13 - ABDOME AGUDO PERFURATIVO.pdf` do Drive efetivamente reaberto e lido; utilizado para inventário de tópicos (sem reprodução). Fonte LURIA conferida diretamente no `content.json`, que alimenta a página.
+
+### Mudanças gravadas na branch de auditoria
+
+- Reorganizadas explicações sobre irritação química e contaminação bacteriana, retirando limites temporais rígidos e reforçando que não se deve postergar antibiótico ou controle do foco à espera de 12–24 horas.
+- Acrescentado quadro visual autoral, acessível como tabela no renderer, **Situação clínica × Mecanismo × Decisão prática**, integrando quatro cenários clínicos.
+- Atualizada ressuscitação conforme SSC 2026 (cristaloide em hipoperfusão séptica, recomendação condicional e reavaliação de volume); antibióticos precoces e controle do foco em paralelo. Evitou-se confundir tratamento de úlcera perfurada e esquema de infusão de IBP para úlcera sangrante.
+- Removida recomendação de antifúngico empírico **mandatório** em toda peritonite terciária com choque; seleção conforme risco de candidíase invasiva e contexto.
+- Corrigida a classificação de suturas: Vicryl (poliglactina 910) é absorvível, seda é não absorvível.
+- Manejo não operatório revisado: exceção para pacientes selecionados, sem peritonite/sepse, vazamento selado documentado, monitorização e prontidão operatória; piora clínica leva à reavaliação imediata, não a espera fixa.
+- Corrigidas formulações absolutas sobre biópsia gástrica, alinhando investigação da neoplasia à viabilidade clínica, amostragem intraoperatória ou endoscopia de seguimento.
+- Seis questões com atribuições não comprovadas a bancas passaram a ser identificadas como **simuladas**; o rótulo de gabarito foi alterado para **resposta comentada**. Ainda requer revisão de originalidade e consistência de enunciados.
+- Treze seções principais renumeradas em ordem lógica e suas âncoras preservadas. Referências de WSES e SSC 2026 e SIS 2024 atualizadas/acrescentadas.
+- CSS **local desta apostila** modificado como piloto: texto de 15 px, tabela 13,6 px e navegação 12,2 px, com adaptações para telas menores. CSS global não foi modificado.
+
+### Status de verificação
+
+- `content.json` reimportado e analisado com parse de JSON válido; preservadas 14 seções do esquema, âncoras e 13 itens de navegação principais. HTML de entrada preservado fora do `<style>` local.
+- GitHub confirmou gravação e releitura dos arquivos na branch; nenhum merge em `main`.
+- **Pendências bloqueantes:** validação médica integral das outras subseções e casos, conferência de todos os números e técnicas operatórias, testes automatizados do renderer, análise visual com navegador desktop/PWA, validação de todas as referências e imagens. A apostila não está certificada como aprovada.
+
+### Referências oficiais usadas nesta rodada
+
+- WSES 2020 (Perfuração e sangramento de úlcera péptica): https://pmc.ncbi.nlm.nih.gov/articles/PMC6947898/ 
+- Surviving Sepsis Campaign 2026: https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026
+- Surgical Infection Society 2024: https://journals.sagepub.com/doi/full/10.1089/sur.2024.137
