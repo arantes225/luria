@@ -303,18 +303,24 @@ if (form) {
         }
       } else {
         const statusText = document.getElementById("alex-status-text");
-        if (statusText) statusText.textContent = "🔊 Professor Alex respondendo por voz...";
-        speakText(data.answer, () => {
+        if (statusText) statusText.textContent = "🔊 Professor Alex respondendo por voz (Puck)...";
+        const onFinishedSpeaking = () => {
           if (isLiveActive) {
             const currentStatus = document.getElementById("alex-status-text");
             if (currentStatus) currentStatus.textContent = "🎙️ Ouvindo... Pode perguntar mais!";
             setTimeout(() => {
-              if (isLiveActive && !window.speechSynthesis?.speaking) {
+              if (isLiveActive && !window.speechSynthesis?.speaking && !currentPuckAudio) {
                 if (typeof startLiveListening === "function") startLiveListening();
               }
             }, 400);
           }
-        });
+        };
+
+        if (data?.audio) {
+          playGeminiPuckAudio(data.audio, data.audioMimeType || "audio/wav", onFinishedSpeaking);
+        } else {
+          speakText(data.answer, onFinishedSpeaking);
+        }
       }
     } catch (error) {
       const message = error?.message === "empty_response"
@@ -345,6 +351,69 @@ if (form) {
 // ==========================================
 const liveCallBtn = document.getElementById("alex-live-call-btn");
 const liveCallText = document.getElementById("alex-live-call-text");
+
+let currentPuckAudio = null;
+
+function playGeminiPuckAudio(base64Audio, mimeType, onComplete) {
+  if (currentPuckAudio) {
+    try {
+      currentPuckAudio.pause();
+      currentPuckAudio.currentTime = 0;
+    } catch {}
+    currentPuckAudio = null;
+  }
+  window.speechSynthesis?.cancel();
+    if (currentPuckAudio) {
+      try {
+        currentPuckAudio.pause();
+        currentPuckAudio.currentTime = 0;
+      } catch {}
+      currentPuckAudio = null;
+    }
+
+  const modeToggle = document.getElementById("alex-mode-toggle");
+  const isEstourado = (modeToggle?.getAttribute("aria-checked") === "true") ||
+    (modeToggle?.getAttribute("aria-pressed") === "true") ||
+    (document.querySelector('[data-alex-mode="estourado"]')?.getAttribute("aria-pressed") === "true");
+
+  const mascot = document.getElementById("alex-mascot");
+  try {
+    const audioUrl = "data:" + (mimeType || "audio/wav") + ";base64," + base64Audio;
+    const audio = new Audio(audioUrl);
+    currentPuckAudio = audio;
+
+    audio.onplay = () => {
+      if (mascot) {
+        mascot.speaking = true;
+        if (typeof mascot.playAnimation === "function") {
+          mascot.expression = isEstourado ? "angry" : "happy";
+          mascot.playAnimation(isEstourado ? "angry" : "explaining");
+        }
+      }
+    };
+
+    const cleanup = () => {
+      if (mascot) mascot.speaking = false;
+      if (currentPuckAudio === audio) currentPuckAudio = null;
+      if (typeof onComplete === "function") onComplete();
+    };
+
+    audio.onended = cleanup;
+    audio.onerror = () => {
+      cleanup();
+    };
+
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        cleanup();
+      });
+    }
+  } catch (err) {
+    if (mascot) mascot.speaking = false;
+    if (typeof onComplete === "function") onComplete();
+  }
+}
 
 function speakText(text, onComplete) {
   if (!("speechSynthesis" in window)) {
