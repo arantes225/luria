@@ -7,6 +7,11 @@ const outputTitle = output?.querySelector("h3");
 const submit = form?.querySelector('button[type="submit"]');
 const fileInput = document.getElementById("alex-file");
 
+// Estado da Conversa ao Vivo por Voz
+let isLiveActive = false;
+let liveRecognition = null;
+let startLiveListening = null;
+
 const ERROR_MESSAGES = {
   unauthorized: "Entre na sua conta da LURIA para conversar com o Professor Alex.",
   empty_prompt: "Digite uma pergunta ou informe o tema que deseja estudar.",
@@ -154,13 +159,19 @@ if (form) {
       mode: isEstourado ? "estourado" : "normal",
     };
 
-    if (prompt) appendUserMessage(prompt);
     const oldText = submit?.textContent || "Começar aula";
     if (submit) {
       submit.disabled = true;
-      submit.textContent = "Preparando aula…";
+      submit.textContent = isLiveActive ? "Pensando…" : "Preparando aula…";
     }
-    display("Analisando sua pergunta e preparando a explicação…", "Professor Alex está pensando");
+
+    if (isLiveActive) {
+      const statusText = document.getElementById("alex-status-text");
+      if (statusText) statusText.textContent = "🤔 Professor Alex pensando na resposta...";
+    } else {
+      if (prompt) appendUserMessage(prompt);
+      display("Analisando sua pergunta e preparando a explicação…", "Professor Alex está pensando");
+    }
 
     const mascot = document.getElementById("alex-mascot");
     if (mascot?.playAnimation) {
@@ -183,43 +194,28 @@ if (form) {
       const { data, error } = await client.functions.invoke("professor-alex-gemini", { body: payload });
       if (error) throw error;
       if (typeof data?.answer !== "string" || !data.answer.trim()) throw Error("empty_response");
-      display(data.answer, "Sua aula com o Professor Alex");
-      if (mascot?.playAnimation) {
-        if (isEstourado) {
-          mascot.expression = "angry";
-          mascot.playAnimation("explaining");
-        } else {
-          mascot.playAnimation("explaining");
+      if (!isLiveActive) {
+        display(data.answer, "Sua aula com o Professor Alex");
+        if (mascot?.playAnimation) {
+          if (isEstourado) {
+            mascot.expression = "angry";
+            mascot.playAnimation("explaining");
+          } else {
+            mascot.playAnimation("explaining");
+          }
         }
-      }
-      if (isLiveActive) {
+      } else {
+        const statusText = document.getElementById("alex-status-text");
+        if (statusText) statusText.textContent = "🔊 Professor Alex respondendo por voz...";
         speakText(data.answer, () => {
           if (isLiveActive) {
-            const statusText = document.getElementById("alex-status-text");
-            if (statusText) statusText.textContent = "🎙️ Ouvindo... Pode perguntar mais!";
+            const currentStatus = document.getElementById("alex-status-text");
+            if (currentStatus) currentStatus.textContent = "🎙️ Ouvindo... Pode perguntar mais!";
             setTimeout(() => {
               if (isLiveActive && !window.speechSynthesis?.speaking) {
-                const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
-                if (SpeechRec && !liveRecognition) {
-                  try {
-                    liveRecognition = new SpeechRec();
-                    liveRecognition.lang = "pt-BR";
-                    liveRecognition.continuous = false;
-                    liveRecognition.interimResults = false;
-                    liveRecognition.onresult = ev => {
-                      const q = ev.results?.[0]?.[0]?.transcript?.trim();
-                      if (q) {
-                        const p = document.getElementById("alex-prompt");
-                        if (p) p.value = q;
-                        form.dispatchEvent(new Event("submit", { cancelable: true }));
-                      }
-                    };
-                    liveRecognition.onend = () => { liveRecognition = null; };
-                    liveRecognition.start();
-                  } catch {}
-                }
+                if (typeof startLiveListening === "function") startLiveListening();
               }
-            }, 500);
+            }, 400);
           }
         });
       }
@@ -228,7 +224,15 @@ if (form) {
         ? ERROR_MESSAGES.empty_response
         : (error instanceof Error && /PDF acima|arquivo de texto|anexe um PDF/.test(error.message)
           ? error.message : await errorMessage(error));
-      display(message, "Não foi possível concluir a aula", true);
+      if (isLiveActive) {
+        const statusText = document.getElementById("alex-status-text");
+        if (statusText) statusText.textContent = "⚠️ " + message;
+        speakText(message, () => {
+          if (isLiveActive && typeof startLiveListening === "function") startLiveListening();
+        });
+      } else {
+        display(message, "Não foi possível concluir a aula", true);
+      }
       if (mascot?.playAnimation) mascot.playAnimation("confused");
     } finally {
       if (submit) {
@@ -242,8 +246,6 @@ if (form) {
 // ==========================================
 // Módulo de Conversa ao Vivo por Voz
 // ==========================================
-let isLiveActive = false;
-let liveRecognition = null;
 const liveCallBtn = document.getElementById("alex-live-call-btn");
 const liveCallText = document.getElementById("alex-live-call-text");
 
@@ -272,13 +274,24 @@ function speakText(text, onComplete) {
   utterance.rate = 1.05;
   utterance.pitch = 1.0;
 
+  try {
+    const voices = window.speechSynthesis.getVoices?.() || [];
+    const ptVoice = voices.find(v => v.lang === "pt-BR" || v.lang?.startsWith("pt"));
+    if (ptVoice) utterance.voice = ptVoice;
+  } catch {}
+
+  const modeToggle = document.getElementById("alex-mode-toggle");
+  const isEstourado = (modeToggle?.getAttribute("aria-checked") === "true") ||
+    (modeToggle?.getAttribute("aria-pressed") === "true") ||
+    (document.querySelector('[data-alex-mode="estourado"]')?.getAttribute("aria-pressed") === "true");
+
   const mascot = document.getElementById("alex-mascot");
   utterance.onstart = () => {
     if (mascot) {
       mascot.speaking = true;
       if (typeof mascot.playAnimation === "function") {
-        mascot.expression = "happy";
-        mascot.playAnimation("explaining");
+        mascot.expression = isEstourado ? "angry" : "happy";
+        mascot.playAnimation(isEstourado ? "angry" : "explaining");
       }
     }
   };
@@ -342,6 +355,7 @@ function initLiveVoiceMode() {
     if (statusText) statusText.textContent = "Professor Alex online e pronto para ensinar";
   }
 
+  startLiveListening = startListening;
   function startListening() {
     if (!isLiveActive) return;
     try {
