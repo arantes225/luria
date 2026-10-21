@@ -85,7 +85,7 @@ function ensureUsageUI() {
 function renderUsage(usage) {
   const widget = ensureUsageUI();
   if (!widget) return;
-  const limit = Math.max(1, Number(usage?.daily_token_budget) || 30000);
+  const limit = Math.max(1, Number(usage?.daily_token_budget) || 100000);
   const remaining = Math.max(0, Math.min(limit, Number(usage?.remaining_tokens) || 0));
   const count = document.getElementById("alex-token-count");
   const renewal = document.getElementById("alex-token-renewal");
