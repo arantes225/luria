@@ -1,20 +1,27 @@
 (()=>{"use strict";
 const body=document.body,source=body.dataset.apostilaContent;if(!source)return;
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const plain=s=>String(s??"").replace(/<[^>]*>/g," ").replace(/\s+/g," ").trim();
+const isEditorialResidue=b=>{
+  if(!Array.isArray(b)||b[0]!=="p")return false;
+  const t=plain(b[1]);
+  const hits=(t.match(/rascunho|em desenvolvimento|não certificado|não publicado|benchmark|etapa zero|pend[eê]ncia|não publicar|status do arquivo|nota editorial|lote oficial|versão editorial|merge|deploy|PWA/gi)||[]).length;
+  return hits>=2||/^(?:status|estado|situação|lote|versão|etapa|benchmark|parecer preliminar|pendências|nota editorial|controle|registro obrigatório|relação com acervo)/i.test(t);
+};
 const loadScript=src=>new Promise((ok,no)=>{const e=document.createElement("script");e.src=src;e.onload=ok;e.onerror=no;document.body.appendChild(e)});
 const block=b=>{
   const k=b[0];
   if(k==="p")return"<p>"+b[1]+"</p>";
   if(k==="2"||k==="3"||k==="4")return"<h"+k+">"+b[1]+"</h"+k+">";
   if(k==="u"||k==="o"){const tag=k==="u"?"ul":"ol",cl=b[2]?' class="'+b[2]+'"':"";return"<"+tag+cl+">"+b[1].map(x=>"<li>"+x+"</li>").join("")+"</"+tag+">"}
-  if(k==="t"){const cl=b[3]||"book-table";return'<table class="'+cl+'">'+(b[1]?.length?"<thead><tr>"+b[1].map(x=>"<th>"+x+"</th>").join("")+"</tr></thead>":"")+(b[2]?.length?"<tbody>"+b[2].map(r=>"<tr>"+r.map(x=>"<td>"+x+"</td>").join("")+"</tr>").join("")+"</tbody>":"")+"</table>"}
+  if(k==="t"){const cl=b[3]||"book-table";return'<div class="luria-table-scroll" role="region" tabindex="0" aria-label="Tabela de apoio"><table class="'+cl+'">'+(b[1]?.length?"<thead><tr>"+b[1].map(x=>"<th>"+x+"</th>").join("")+"</tr></thead>":"")+(b[2]?.length?"<tbody>"+b[2].map(r=>"<tr>"+r.map(x=>"<td>"+x+"</td>").join("")+"</tr>").join("")+"</tbody>":"")+"</table></div>"}
   return b[1]||"";
 };
 const article=data=>{
   if(data.article_html)return data.article_html;
   const h=data.h||[], heroClass=h[4]?" "+h[4]:"";
-  let out='<section class="book-hero'+heroClass+'" aria-label="Identificação da apostila"><span class="book-badge">'+(h[0]||"Apostila LURIA")+"</span><h1>"+(h[1]||data.t||"")+"</h1><p>"+(h[2]||"")+'</p><div class="book-meta-row">'+(h[3]||[]).map(x=>"<span>"+x+"</span>").join("")+"</div></section>";
-  for(const s of data.q||[]){out+='<section id="'+s[0]+'" class="book-section'+(s[1]?" "+s[1]:"")+'">'+(s[2]||[]).map(block).join("")+"</section>"}
+  let out='<section class="book-hero'+heroClass+'" aria-label="Identificação da apostila"><span class="book-badge">'+(h[0]||"Apostila LURIA")+"</span><h1>"+(h[1]||data.t||"")+"</h1><p>"+(h[2]||"")+'</p><div class="book-meta-row">'+(h[3]||[]).map(x=>"<span>"+x+"</span>").join("")+'</div></section><aside class="book-safety-note" role="note"><strong>Nota de estudo</strong><span>Conteúdo educacional para revisão. Critérios, doses e condutas devem ser conferidos na diretriz vigente e no protocolo institucional aplicável.</span></aside>';
+  for(const s of data.q||[]){out+='<section id="'+s[0]+'" class="book-section'+(s[1]?" "+s[1]:"")+'">'+(s[2]||[]).filter(b=>!isEditorialResidue(b)).map(block).join("")+"</section>"}
   return out;
 };
 const outline=data=>data.outline_html||((data.o||[]).map(x=>'<a class="book-outline-link" href="#'+x[0]+'">'+x[1]+"</a>").join(""));
