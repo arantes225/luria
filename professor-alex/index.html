@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-Iyc/TfC9VShi4o0riVdFzq8SbmjvUuVw8bB1zWFoJlI='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-eSI5llbbe9iX/46tgBlQSlon7FHuhgoZO93UygZoZDs='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -105,7 +105,7 @@
                   <span class="alex-mode-tag" id="alex-mode-tag">Normal</span>
                 </div>
               </div>
-              <button type="button" class="alex-mode-switch" id="alex-mode-toggle" role="switch" aria-checked="false" aria-label="Ativar ou desativar Modo Estourado">
+              <button type="button" class="alex-mode-switch" id="alex-mode-toggle" role="switch" aria-checked="false" aria-pressed="false" data-alex-mode="estourado" aria-label="Ativar ou desativar Modo Estourado">
                 <span class="switch-handle"></span>
               </button>
               <div class="alex-depth-toggle" role="group" aria-label="Formato da resposta">
@@ -251,6 +251,7 @@
         const isEstourado = modeToggle.getAttribute("aria-checked") === "true";
         const nextState = !isEstourado;
         modeToggle.setAttribute("aria-checked", String(nextState));
+        modeToggle.setAttribute("aria-pressed", String(nextState));
         state.mode = nextState ? "estourado" : "normal";
         modeTag.textContent = nextState ? "Estourado" : "Normal";
         document.querySelector(".alex-mode-badge").textContent = nextState ? "Modo Estourado" : "Modo Normal";

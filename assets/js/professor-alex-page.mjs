@@ -7,7 +7,11 @@ if (alex) {
   const integration=bindAlex(alex);
   const modes = [...document.querySelectorAll('[data-alex-mode]')];
   const cards = [...document.querySelectorAll('[data-alex-intent]')];
-  const isAngry = () => modes.some(button => button.dataset.alexMode === 'estourado' && button.getAttribute('aria-pressed') === 'true');
+  const isAngry = () => {
+    const toggle = document.getElementById('alex-mode-toggle');
+    if (toggle && (toggle.getAttribute('aria-checked') === 'true' || toggle.getAttribute('aria-pressed') === 'true')) return true;
+    return modes.some(button => button.dataset.alexMode === 'estourado' && button.getAttribute('aria-pressed') === 'true');
+  };
   const intentFace = () => ({learn:'happy',question:'thoughtful',material:'attentive'}[document.querySelector('[data-alex-intent].is-active')?.dataset.alexIntent] || 'happy');
   const react = (gesture, face = intentFace()) => {
     alex.expression = isAngry() ? 'angry' : face;

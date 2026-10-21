@@ -141,12 +141,17 @@ if (form) {
       return;
     }
 
+    const modeToggle = document.getElementById("alex-mode-toggle");
+    const isEstourado = (modeToggle?.getAttribute("aria-checked") === "true") ||
+      (modeToggle?.getAttribute("aria-pressed") === "true") ||
+      (document.querySelector('[data-alex-mode="estourado"]')?.getAttribute("aria-pressed") === "true");
+
     const payload = {
       area,
       topic,
       prompt,
       intent: document.querySelector("[data-alex-intent].is-active")?.dataset.alexIntent || "learn",
-      mode: document.querySelector('[data-alex-mode][aria-pressed="true"]')?.dataset.alexMode || "normal",
+      mode: isEstourado ? "estourado" : "normal",
     };
 
     if (prompt) appendUserMessage(prompt);
@@ -158,7 +163,14 @@ if (form) {
     display("Analisando sua pergunta e preparando a explicação…", "Professor Alex está pensando");
 
     const mascot = document.getElementById("alex-mascot");
-    if (mascot?.playAnimation) mascot.playAnimation("thinking");
+    if (mascot?.playAnimation) {
+      if (isEstourado) {
+        mascot.expression = "angry";
+        mascot.playAnimation("angry");
+      } else {
+        mascot.playAnimation("thinking");
+      }
+    }
 
     try {
       const { data: { session }, error: sessionError } = await client.auth.getSession();
@@ -172,7 +184,14 @@ if (form) {
       if (error) throw error;
       if (typeof data?.answer !== "string" || !data.answer.trim()) throw Error("empty_response");
       display(data.answer, "Sua aula com o Professor Alex");
-      if (mascot?.playAnimation) mascot.playAnimation("explaining");
+      if (mascot?.playAnimation) {
+        if (isEstourado) {
+          mascot.expression = "angry";
+          mascot.playAnimation("explaining");
+        } else {
+          mascot.playAnimation("explaining");
+        }
+      }
       if (isLiveActive) {
         speakText(data.answer, () => {
           if (isLiveActive) {
