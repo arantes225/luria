@@ -56,17 +56,17 @@
     body[data-page="professor_alex"] .page { min-height: 0; height: 100%; }
     body[data-page="professor_alex"] .page { overflow: hidden; }
     body[data-page="professor_alex"] .alex-page { height: 100%; min-height: 0; box-sizing: border-box; grid-template-rows: auto auto minmax(0, 1fr); overflow: hidden; padding-bottom: 0; }
-    body[data-page="professor_alex"] .alex-central-stage { display: grid; grid-template-columns: minmax(220px, 30%) minmax(0, 70%); grid-template-rows: minmax(0, 1fr) auto; gap: 14px 18px; min-height: 0; height: 100%; }
+    body[data-page="professor_alex"] .alex-central-stage { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto; gap: 14px 18px; min-height: 0; height: 100%; }
     body[data-page="professor_alex"] .alex-mascot-card { grid-column: 1; grid-row: 1; min-height: 0; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; }
-    body[data-page="professor_alex"] .alex-mode-card { grid-column: 1; grid-row: 2; flex-direction: column; align-items: stretch; gap: 10px; }
+    body[data-page="professor_alex"] .alex-mode-card { grid-column: 1 / -1; grid-row: 2; flex-direction: row; align-items: center; gap: 16px; }
     body[data-page="professor_alex"] .alex-depth-toggle { order: -1; display: grid; grid-template-columns: 1fr 1fr; }
     body[data-page="professor_alex"] .alex-depth-toggle button { min-width: 0; padding-inline: 8px; }
     body[data-page="professor_alex"] .alex-mode-switch { align-self: flex-end; }
     body[data-page="professor_alex"] .alex-mode-description { margin: 0; color: var(--muted, #64748b); font-size: 11px; line-height: 1.45; }
-    body[data-page="professor_alex"] .alex-chat-container { grid-column: 2; grid-row: 1 / span 2; display: grid; grid-template-rows: minmax(0, 1fr) auto; min-height: 0; gap: 12px; }
+    body[data-page="professor_alex"] .alex-chat-container { grid-column: 2; grid-row: 1; display: grid; grid-template-rows: minmax(0, 1fr) auto; min-height: 0; gap: 12px; }
     body[data-page="professor_alex"] .alex-chat-feed { min-height: 0; max-height: none; height: auto; }
     body[data-page="professor_alex"] .alex-response-stream { display: none !important; }
-    @media (max-width: 900px) {
+    @media (max-width: 700px) {
       html, body { overflow: auto; }
       body[data-page="professor_alex"] .page, body[data-page="professor_alex"] .alex-page { height: auto; overflow: visible; }
       body[data-page="professor_alex"] .alex-central-stage { height: auto; grid-template-columns: 1fr; grid-template-rows: auto auto minmax(420px, 1fr); }
