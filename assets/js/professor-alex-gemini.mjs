@@ -72,7 +72,7 @@ function ensureUsageUI() {
     widget.setAttribute("aria-live", "polite");
     widget.innerHTML = '<span class="alex-token-battery" aria-hidden="true">' +
       '<span></span><span></span><span></span><span></span><span></span>' +
-      '</span><span class="alex-token-copy"><strong id="alex-token-count">Uso de IA: —</strong>' +
+      '</span><span class="alex-token-copy"><strong id="alex-token-count">Bateria: —</strong>' +
       '<small id="alex-token-renewal">Renova em 24h</small></span>';
     controls.insertBefore(widget, controls.firstElementChild);
   } else {
@@ -87,9 +87,10 @@ function renderUsage(usage) {
   if (!widget) return;
   const limit = Math.max(1, Number(usage?.daily_token_budget) || 100000);
   const remaining = Math.max(0, Math.min(limit, Number(usage?.remaining_tokens) || 0));
+  const percentage = Math.max(0, Math.min(100, Math.round((remaining / limit) * 100)));
   const count = document.getElementById("alex-token-count");
   const renewal = document.getElementById("alex-token-renewal");
-  if (count) count.textContent = `Uso de IA: ${remaining.toLocaleString("pt-BR")}`;
+  if (count) count.textContent = `Disponível: ${percentage}%`;
   if (renewal) {
     const renewsAt = Date.parse(String(usage?.renews_at || ""));
     const hours = Number.isFinite(renewsAt) ? Math.max(1, Math.ceil((renewsAt - Date.now()) / 3600000)) : 24;
@@ -97,9 +98,9 @@ function renderUsage(usage) {
   }
   widget.classList.toggle("is-empty", remaining === 0);
   const voiceMultiplier = Number(usage?.voice_multiplier) || 3;
-  widget.title = `${remaining.toLocaleString("pt-BR")} de uso de IA ponderado restante hoje. Voz consome ${voiceMultiplier}x. Renovação diária em até 24 horas.`;
+  widget.title = `${percentage}% de cota diária restante (${remaining.toLocaleString("pt-BR")} tokens de ${limit.toLocaleString("pt-BR")}). Renovação diária em até 24 horas.`;
   widget.querySelectorAll(".alex-token-battery span").forEach((bar, index) => {
-    bar.classList.toggle("is-filled", index < Math.ceil((remaining / limit) * 5));
+    bar.classList.toggle("is-filled", index < Math.ceil((percentage / 100) * 5));
   });
 }
 
