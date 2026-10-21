@@ -32,7 +32,7 @@ Critério: 264 registros distribuídos ciclicamente por especialidade (27 nos lo
 | 4 | Cirurgia Geral | Queimaduras | /apostilas/queimaduras/ | Pendente |
 | 5 | Clínica Médica | Arritmias e Fibrilação Atrial | /apostilas/arritmias-fibrilacao-atrial/ | Triagem iniciada |
 | 6 | Clínica Médica | Cirrose e suas Complicações | /apostilas/cirrose-e-suas-complicacoes/ | Pendente |
-| 7 | Clínica Médica | Diarreia Aguda na Infância | /apostilas/diarreia-aguda/ | Pendente |
+| 7 | Clínica Médica | Diarreia Aguda na Infância | /apostilas/diarreia-aguda/ | Em revisão científica/editorial; correções na branch, QA visual pendente |
 | 8 | Clínica Médica | Doenças Anorretais: Cirurgia e Coloproctologia Essencial | /apostilas/doencas-anorretais/ | Pendente |
 | 9 | Clínica Médica | Hepatites Virais | /apostilas/hepatites-virais/ | Pendente |
 | 10 | Clínica Médica | neuropatias-perifericas-e-doencas-neuromusculares | /apostilas/neuropatias-perifericas-e-doencas-neuromusculares/ | Pendente |
