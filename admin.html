@@ -134,21 +134,85 @@
             Plantão
           </button>
           <button class="admin-view-tab" type="button" data-admin-view-tab="images" aria-selected="false">
-            Imagens das apostilas
+            Imagens
+            <span id="admin-images-pending-badge" class="admin-tab-badge" hidden>0</span>
           </button>
         </nav>
 
-        <section class="admin-section admin-apostila-curation-section" data-admin-view="images" hidden aria-labelledby="admin-apostila-curation-title">
+        <section class="admin-section admin-image-review-section" data-admin-view="images" hidden>
           <div class="admin-section-head">
             <div>
-              <span class="eyebrow">Revisão administrativa</span>
-              <h2 id="admin-apostila-curation-title">Curadoria visual dos blocos 1–3</h2>
-              <p>Revise as prévias, fontes e licenças antes de decidir quais imagens podem entrar nas apostilas.</p>
+              <span class="eyebrow">Revisão clínica</span>
+              <h2>Imagens para aprovação</h2>
+              <p>Exames, lesões de pele e outros achados visuais de fonte não confiável ficam bloqueados aqui até sua aprovação.</p>
             </div>
-            <a class="button secondary" href="/apostilas/curadoria-imagens-v2/" target="_blank" rel="noopener">Abrir em nova aba</a>
+            <button id="admin-images-refresh" class="button secondary" type="button">Atualizar</button>
           </div>
-          <div class="admin-apostila-curation-notice">A galeria é uma fila de prévia. Nenhuma imagem é aprovada automaticamente; a decisão editorial continua sendo sua.</div>
-          <iframe class="admin-apostila-curation-frame" title="Curadoria visual das imagens dos blocos 1 a 3" src="/apostilas/curadoria-imagens-v2/"></iframe>
+          <div class="admin-image-review-rule">
+            <strong>Imagens existentes</strong>
+            <span>Compacta imagens de conteúdo acima de 80 KiB e mantém o caminho usado pelo site. Imagens funcionais e de documentação ficam preservadas.</span>
+            <button id="admin-image-cap-backfill" class="button secondary" type="button">Aplicar limite às imagens existentes</button>
+            <div id="admin-image-cap-backfill-status" class="admin-status" aria-live="polite"></div>
+          </div>
+          <div class="admin-image-review-rule">
+            <strong>Regra editorial</strong>
+            <span>Imagem decorativa pode entrar sem revisão. ECG, RX, TC, RM, USG, endoscopia, lâmina e lesão clínica sem fonte confiável exigem aprovação humana.</span>
+          </div>
+
+          <div class="admin-image-review-rule">
+            <strong>Referências de imagens</strong>
+            <span>
+              Priorizar fontes confiáveis e com licença compatível com uso no LURIA:
+              <br><strong>CDC / PHIL</strong> — fotografias clínicas e doenças infecciosas; verificar a atribuição indicada em cada item.
+              <br><strong>NIH / NCI</strong> — imagens médicas e oncológicas; verificar os termos específicos do arquivo.
+              <br><strong>Wikimedia Commons</strong> — usar apenas arquivos com licença comercial compatível (ex.: CC0, CC BY, CC BY-SA), preservando autoria/licença.
+              <br><strong>PhysioNet / PTB-XL</strong> — referência principal para ECG. Dataset aberto, CC BY 4.0; preferir gerar o traçado LURIA a partir do sinal bruto em vez de copiar imagens de terceiros.
+            </span>
+          </div>
+
+          <div id="admin-images-status" class="admin-status" aria-live="polite">Carregando fila de imagens...</div>
+          <div id="admin-images-list" class="admin-image-review-list">
+            <div class="admin-table-empty">Nenhuma imagem pendente.</div>
+          </div>
+          <div class="admin-image-review-rule">
+            <strong>Baixa resolução</strong>
+            <span>Imagens com menos de 600 px no lado menor ficam sinalizadas e disponíveis apenas para revisão administrativa.</span>
+          </div>
+          <div id="admin-low-resolution-status" class="admin-status" aria-live="polite">Carregando imagens sinalizadas...</div>
+          <div id="admin-low-resolution-list" class="admin-image-review-list">
+            <div class="admin-table-empty">Nenhuma imagem sinalizada.</div>
+          </div>
+          <div class="admin-image-review-rule">
+            <strong>Apostilas</strong>
+            <span>As imagens candidatas das apostilas também aparecem aqui antes de entrarem no texto.</span>
+          </div>
+          <div class="admin-apostila-review-toolbar">
+            <label for="admin-apostila-image-filter">Filtrar apostila
+              <select id="admin-apostila-image-filter"><option value="">Todas as apostilas</option></select>
+            </label>
+            <div class="admin-apostila-review-buttons">
+              <button class="button secondary" type="button" id="admin-apostila-select-visible">Selecionar visíveis</button>
+              <button class="button secondary" type="button" id="admin-apostila-clear-selection">Limpar seleção</button>
+              <button class="button primary" type="button" id="admin-apostila-approve-selected" disabled>Aprovar selecionadas</button>
+              <button class="button secondary" type="button" id="admin-apostila-reject-selected" disabled>Rejeitar selecionadas</button>
+              <button class="button secondary" type="button" id="admin-apostila-images-refresh">Atualizar fila</button>
+            </div>
+          </div>
+          <div id="admin-apostila-images-status" class="admin-status" aria-live="polite">Carregando imagens de apostilas...</div>
+          <div id="admin-apostila-images-list" class="admin-image-review-list">
+            <div class="admin-table-empty">Nenhuma imagem de apostila pendente.</div>
+          </div>
+          <div class="admin-apostila-batch-import">
+            <div>
+              <strong>Receber imagens de várias apostilas</strong>
+              <p>Importe um JSON de candidatas de diferentes temas. Todas entram na fila como pendentes; nenhuma é aprovada na importação.</p>
+            </div>
+            <label for="admin-apostila-images-json">Arquivo JSON de candidatas
+              <input id="admin-apostila-images-json" type="file" accept=".json,application/json">
+            </label>
+            <button id="admin-apostila-images-import" type="button" class="button primary" disabled>Enviar candidatas ao Admin</button>
+            <div id="admin-apostila-images-import-status" class="admin-status" aria-live="polite">Selecione um arquivo JSON.</div>
+          </div>
         </section>
 
         <section class="admin-section admin-beta-section" data-admin-view="beta" hidden>
@@ -1814,7 +1878,7 @@ Após as três aprovações da versão atual, aguardar aprovação humana final 
   <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
   <script src="assets/js/admin-editais.js?v=3"></script>
   <script src="assets/js/question-factory-prompts.js?v=4.1-fast-gt86-clinical"></script>
-  <script src="assets/js/admin.js?v=20261019-curadoria-datauri-v2"></script>
+  <script src="assets/js/admin.js?v=20261020-admin-images-approval-v1"></script>
   <script src="assets/js/question-factory-initial-package-fix.js?v=1"></script>
   <script defer src="assets/js/pwa.js?v=20261013-width2"></script>
 </body>
