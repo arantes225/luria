@@ -220,11 +220,6 @@
       if (!link.hasAttribute("aria-label")) set(link, "aria-label", label);
       if (link.classList.contains("active")) set(link, "aria-current", "page");
     });
-    const alex = document.getElementById("luria-alex-topbar");
-    if (alex && !alex.dataset.uiIcon) {
-      const visual = document.createElement("span"); visual.className = "ui-alex-icon"; visual.innerHTML = sparkles;
-      alex.prepend(visual); alex.dataset.uiIcon = "true";
-    }
     if (body.dataset.uiWork === "v2") {
       const title = document.querySelector("main .luria-page-spotlight-copy strong[data-page-title]");
       set(title, "role", "heading"); set(title, "aria-level", "1");
