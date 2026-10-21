@@ -529,20 +529,20 @@ body[data-page="questoes"] .qs-home-my-lists-head h2 {
 }
 
 /* Real-time search & filter bar for Minhas Listas */
-body[data-page="questoes"] .qs-home-lists-filter-bar {
+body:is([data-page="questoes"],[data-page="flashcards"]) .qs-home-lists-filter-bar {
   display: flex !important;
   align-items: center !important;
   gap: 8px !important;
   flex-wrap: wrap !important;
 }
 
-body[data-page="questoes"] .qs-search-input-wrap {
+body:is([data-page="questoes"],[data-page="flashcards"]) .qs-search-input-wrap {
   position: relative !important;
   flex: 1 1 200px !important;
   min-width: 160px !important;
 }
 
-body[data-page="questoes"] .qs-search-input-wrap .qs-search-icon {
+body:is([data-page="questoes"],[data-page="flashcards"]) .qs-search-input-wrap .qs-search-icon {
   position: absolute !important;
   left: 12px !important;
   top: 50% !important;
@@ -551,7 +551,7 @@ body[data-page="questoes"] .qs-search-input-wrap .qs-search-icon {
   pointer-events: none !important;
 }
 
-body[data-page="questoes"] .qs-search-input {
+body:is([data-page="questoes"],[data-page="flashcards"]) .qs-search-input {
   width: 100% !important;
   min-height: 38px !important;
   height: 38px !important;
@@ -565,7 +565,7 @@ body[data-page="questoes"] .qs-search-input {
   transition: var(--qs-transition) !important;
 }
 
-body[data-page="questoes"] .qs-search-input:focus {
+body:is([data-page="questoes"],[data-page="flashcards"]) .qs-search-input:focus {
   border-color: var(--accent) !important;
   background: var(--surface) !important;
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent) !important;

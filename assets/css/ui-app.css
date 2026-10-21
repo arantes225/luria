@@ -2615,8 +2615,9 @@ body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
     body[data-ui-work-navigation="hub"] {--ui-nav-height:120px!important;}
     body[data-ui-work-navigation="hub"] .topbar {flex-wrap:wrap!important;align-content:center!important;column-gap:.5rem!important;row-gap:.25rem!important;}
     body[data-ui-work-navigation="hub"] .luria-notifications {margin-left:auto!important;order:0;}
-    body[data-ui-work-navigation="hub"] .work-hub-navigation {flex:0 0 100%;justify-content:space-between;margin:0;}
-    body[data-ui-work-navigation="hub"] .work-hub-pcr {margin-left:auto;}
+    body[data-ui-work-navigation="hub"] .work-hub-navigation {flex:0 0 100%;min-width:0;justify-content:space-between;margin:0;}
+    body[data-ui-work-navigation="hub"] .work-hub-return {flex:1 1 auto;min-width:0;white-space:normal;}
+    body[data-ui-work-navigation="hub"] .work-hub-pcr {flex:none;margin-left:auto;}
   }
 }
 

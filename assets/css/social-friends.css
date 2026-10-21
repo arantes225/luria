@@ -117,9 +117,9 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
  #community-friends-panel .social-side :is(#social-requests,#social-suggestions,#friends-inbox)>.friends-empty {border:0!important;background:transparent!important;padding:0!important;}
  #community-friends-panel .social-side .friends-empty::before {display:none;}
  @media(min-width:761px) {#community-friends .sf-person-card:only-child .friends-actions {position:static;width:auto!important;max-width:none;}}
- @media(max-width:1000px) {#community-friends-panel .social-grid {grid-template-columns:minmax(0,1fr) 235px;gap:12px;}}
- @media(max-width:760px) {#community-friends-panel .social-grid {grid-template-columns:1fr;}#community-friends-panel .social-side {grid-column:1;grid-row:3;grid-template-columns:1fr 1fr;}.sc-community-note {grid-row:2;}#community-friends #friends-list {grid-template-columns:repeat(2,minmax(0,1fr))!important;}.community-nav a {flex:1;}}
- @media(max-width:480px) {#community-friends #friends-list {grid-template-columns:1fr!important;}#community-friends-panel .social-side {grid-template-columns:1fr;}.sc-community-note {padding:18px;}.sc-community-note>div {max-width:72%;}.sc-community-note h2 {font-size:19px!important;}#community-friends #friends-ref-add-toggle {grid-column:3;grid-row:1;margin:0;font-size:12px;}.sc-scene {opacity:.65;}}
+ @media(max-width:1000px) {#community-friends-panel .social-grid {grid-template-columns:minmax(0,1fr) 235px!important;gap:12px!important;}}
+ @media(max-width:760px) {#community-friends-panel .social-grid {grid-template-columns:minmax(0,1fr)!important;}#community-friends-panel .social-side {grid-column:1;grid-row:3;grid-template-columns:1fr 1fr;}.sc-community-note {grid-row:2;}#community-friends #friends-list {grid-template-columns:repeat(2,minmax(0,1fr))!important;}.community-nav a {flex:1;}}
+ @media(max-width:480px) {.community-nav {display:flex!important;width:100%;box-sizing:border-box;}.community-nav a {min-width:0;padding-inline:.5rem!important;}#community-friends .social-card-head {flex-wrap:wrap!important;gap:12px!important;}#community-friends .sf-section-copy {flex-basis:100%;}#community-friends #friends-list {grid-template-columns:1fr!important;}#community-friends-panel .social-side {grid-template-columns:1fr;}.sc-community-note {padding:18px;}.sc-community-note>div {max-width:72%;}.sc-community-note h2 {font-size:19px!important;}#community-friends #friends-ref-add-toggle {grid-column:3;grid-row:1;margin:0;font-size:12px;}.sc-scene {opacity:.65;}}
 
 }
 }
