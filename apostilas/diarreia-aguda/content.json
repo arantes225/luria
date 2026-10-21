@@ -867,48 +867,252 @@
           "Questão 1 — Classificação temporal"
         ],
         [
+          "p",
+          "<strong>Enunciado:</strong> Lactente de 18 meses apresenta evacuações amolecidas há 15 dias e perda ponderal. Qual classificação temporal e investigação inicial?"
+        ],
+        [
+          "o",
+          [
+            "A) Diarreia aguda; alta automática.",
+            "B) Diarreia persistente; investigar nutrição, exposição, etiologias infecciosas e não infecciosas.",
+            "C) Constipação com escape; suspender alimentação.",
+            "D) Diarreia crônica por definição; iniciar corticoide."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> Persistente é o episódio diarreico que alcança 14 dias. Peso e hidratação orientam gravidade; Giardia, má absorção e dieta podem ser investigadas conforme o contexto."
+        ],
+        [
           "4",
           "Questão 2 — Síndrome diarreica sem desidratação"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Criança de 2 anos está ativa, consegue beber, sem olhos fundos nem alteração do pulso, com diarreia aquosa. Qual plano inicial?"
+        ],
+        [
+          "o",
+          [
+            "A) Plano C com expansão venosa.",
+            "B) Plano B obrigatoriamente com acesso IV.",
+            "C) Plano A, SRO após perdas, alimentação e sinais de retorno.",
+            "D) Antibiótico empírico."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa C.</strong> Sem sinais de desidratação, aplicar Plano A e ensinar sinais de piora. Quantidade de evacuações isolada não define desidratação."
         ],
         [
           "4",
           "Questão 3 — Mecanismo SRO"
         ],
         [
+          "p",
+          "<strong>Enunciado:</strong> Por que a SRO continua eficaz mesmo com diarreia secretória por enterotoxina?"
+        ],
+        [
+          "o",
+          [
+            "A) Mata o patógeno.",
+            "B) Bloqueia todos os canais de cloro.",
+            "C) Mantém absorção intestinal acoplada de sódio e glicose, favorecendo entrada de água.",
+            "D) Substitui qualquer necessidade de reavaliação."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa C.</strong> O cotransporte Na+-glicose permanece funcional em grande parte das diarreias secretórias, justificando SRO de baixa osmolaridade."
+        ],
+        [
           "4",
           "Questão 4 — Etiologia em surto institucional"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Quatro crianças de uma creche desenvolvem abruptamente vômitos e diarreia aquosa em 24–48 horas. Qual interpretação mais útil inicialmente?"
+        ],
+        [
+          "o",
+          [
+            "A) Norovírus é possibilidade, e a prioridade é hidratação e controle de transmissão.",
+            "B) Shigella confirmada, sem testar.",
+            "C) Toda criança precisa de metronidazol.",
+            "D) Excluir gastroenterite se não houver sangue."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa A.</strong> Quadro agregado com vômitos sugere virose e possível surto. Medidas de higiene, comunicação à vigilância quando indicada e avaliação do grau de hidratação vêm antes da identificação exata do agente."
         ],
         [
           "4",
           "Questão 5 — Antibiótico na diarreia aquosa"
         ],
         [
+          "p",
+          "<strong>Enunciado:</strong> Menino de 3 anos com fezes aquosas por 48 horas, boa perfusão, sem sangue, imunocompetente. Qual decisão antimicrobiana?"
+        ],
+        [
+          "o",
+          [
+            "A) Ceftriaxona IV por rotina.",
+            "B) Antibiótico não é indicado rotineiramente; focar em SRO.",
+            "C) Ciprofloxacino em dose adulta.",
+            "D) Metronidazol para todos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> A OMS 2024 sugere contra antibiótico em diarreia aquosa aguda não complicada. Exceções requerem justificativa clínica."
+        ],
+        [
           "4",
           "Questão 6 — SHU"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Após diarreia sanguinolenta, menina apresenta palidez, oligúria, plaquetas baixas e creatinina elevada. Qual complicação reconhecer?"
+        ],
+        [
+          "o",
+          [
+            "A) Síndrome nefrótica isolada.",
+            "B) Pancreatite biliar.",
+            "C) Síndrome hemolítico-urêmica.",
+            "D) Alergia à lactose."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa C.</strong> SHU é microangiopatia trombótica caracterizada por anemia hemolítica, trombocitopenia e lesão renal; é urgência para avaliação pediátrica e nefrológica."
         ],
         [
           "4",
           "Questão 7 — Antibióticos quando STEC é suspeita"
         ],
         [
+          "p",
+          "<strong>Enunciado:</strong> Diarreia sanguinolenta, teste positivo para STEC O157 com toxina Stx2. Qual cuidado com antibióticos?"
+        ],
+        [
+          "o",
+          [
+            "A) Dar qualquer antibiótico para evitar SHU.",
+            "B) Evitar antimicrobianos potencialmente prejudiciais, avaliar volume e função renal, e acompanhar estreitamente.",
+            "C) Prescrever loperamida.",
+            "D) Ignorar testes, pois sangue confirma Shigella."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> Para STEC O157 ou Stx2 a IDSA recomenda evitar antibióticos, pois há potencial de dano. Monitorização de SHU é essencial; antibiótico para disenteria não é universal."
+        ],
+        [
           "4",
           "Questão 8 — Zinco segundo OMS 2024"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Qual frase diferencia corretamente zinco segundo diretrizes publicadas até 2026?"
+        ],
+        [
+          "o",
+          [
+            "A) A OMS 2024 e o MS 2026 determinam 5 mg/dia sem exceções.",
+            "B) O MS 2026 apresenta 10/20 mg por faixa etária; a OMS 2024 sugere condicionalmente 5 mg/dia por até 14 dias.",
+            "C) Zinco substitui SRO.",
+            "D) Zinco só serve para disenteria bacteriana."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> O cartaz brasileiro recomenda 10 mg/dia até 6 meses e 20 mg/dia acima de 6 meses até menores de 5 anos por 10–14 dias. A sugestão OMS 2024 de 5 mg/dia possui baixa certeza e não substituiu automaticamente o protocolo nacional."
         ],
         [
           "4",
           "Questão 9 — Probióticos"
         ],
         [
+          "p",
+          "<strong>Enunciado:</strong> Sobre probióticos na diarreia aquosa aguda infantil, qual é a afirmação fiel à OMS 2024?"
+        ],
+        [
+          "o",
+          [
+            "A) Toda criança deve receber Lactobacillus em qualquer formulação.",
+            "B) Probiótico substitui hidratação oral.",
+            "C) A OMS sugere contra uso rotineiro; cepas específicas são objeto de recomendações distintas em algumas sociedades.",
+            "D) Probióticos são sempre isentos de risco em imunossuprimidos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa C.</strong> A recomendação da OMS é condicional contra uso rotineiro, com baixa certeza; a evidência não permite generalizar uma cepa ou fabricante para toda a classe."
+        ],
+        [
           "4",
           "Questão 10 — Diarreia persistente"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Lactente de 5 meses com diarreia há mais de 14 dias apresenta perda ponderal e desidratação. O que priorizar?"
+        ],
+        [
+          "o",
+          [
+            "A) Dieta caseira isolada por mais uma semana.",
+            "B) Plano de reidratação e encaminhamento hospitalar para investigação, pela idade e gravidade.",
+            "C) Antibiótico em todas as hipóteses.",
+            "D) Suspender aleitamento materno."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> O cartaz brasileiro orienta encaminhar diarreia persistente de menores de 6 meses e pacientes desidratados, após iniciar reidratação, para estabelecimento hospitalar."
         ],
         [
           "4",
           "Questão 11 — Diagnóstico alternativo à gastroenterite"
         ],
         [
+          "p",
+          "<strong>Enunciado:</strong> Criança de 16 meses tem crises intermitentes de dor intensa, palidez, vômitos, letargia entre crises e fezes com sangue/muco. Que hipótese não pode ser perdida?"
+        ],
+        [
+          "o",
+          [
+            "A) Intussuscepção intestinal, exigindo avaliação cirúrgica e imagem apropriada.",
+            "B) Apenas intolerância primária à lactose.",
+            "C) Gastroenterite viral sem outros diferenciais.",
+            "D) Constipação funcional isolada."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa A.</strong> Dor cólica episódica, letargia e sangue nas fezes levantam suspeita de invaginação; ultrassom e avaliação urgente são indicados, sem atrasar abordagem pelo rótulo de gastroenterite."
+        ],
+        [
           "4",
           "Questão 12 — Rotavírus em 2026"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Criança com 12 meses completos nunca recebeu a primeira dose de vacina oral contra rotavírus. O que diz o calendário brasileiro de 2026?"
+        ],
+        [
+          "o",
+          [
+            "A) Iniciar imediatamente, porque primeira dose pode ocorrer até 23 meses e 29 dias.",
+            "B) Não iniciar a primeira dose após 11 meses e 29 dias; avaliar esquema conforme PNI e registrar oportunidade perdida.",
+            "C) Aplicar duas doses no mesmo dia.",
+            "D) Não vacinar ninguém após 4 meses."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> A primeira dose vai de 1 mês e 15 dias até 11 meses e 29 dias; a segunda, de 3 meses e 15 dias a 23 meses e 29 dias, respeitado o intervalo e a primeira dose. Aos 12 meses sem primeira dose, a janela para início foi ultrapassada."
         ]
       ]
     ],
