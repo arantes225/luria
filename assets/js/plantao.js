@@ -386,6 +386,8 @@
     }else{
       setPlantaoMode("emergency");
     }
+    // Opening the activity inside its admitted room is an explicit case selection.
+    if(await openRoomCase())return;
     // Nunca reabrir um atendimento automaticamente ao acessar a Sala de Emergência.
     // O usuário decide explicitamente se quer retomá-lo pelo botão de continuar.
     if(ENTRY_MODE!=="emergency" && savedView.clinicalSessionId && ["plantao-simulator","plantao-debrief"].includes(savedView.section)){
@@ -402,6 +404,18 @@
 
     show("plantao-library",{persist:false});
     savePlantaoView({mode:"emergency",section:"plantao-library",clinicalSessionId:null,clinicalCaseId:null});
+  }
+
+  async function openRoomCase() {
+    const embed=window.LuriaRoomEmbed;
+    if(embed?.kind!=="simulator"||!embed.caseId)return false;
+    if(!state.cases.some(item=>String(item.id)===embed.caseId))return false;
+    if(state.activeSession?.case_id===embed.caseId){
+      const restored=await restoreClinicalSession(state.activeSession,"plantao-simulator");
+      if(restored)return true;
+    }
+    await startCase(embed.caseId);
+    return true;
   }
 
   function bestScore(caseId) {
@@ -5179,6 +5193,7 @@
     $("plantao-action-drawer").hidden=true;
     $("plantao-action-tabs").inert=false;
     show("plantao-library");
+    if(window.LuriaRoomEmbed?.kind==="simulator")window.dispatchEvent(new Event("luria:clinical-exit"));
   }
 
   document.addEventListener("click",async event=>{

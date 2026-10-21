@@ -502,7 +502,7 @@ body[data-page="questoes"] .qs-home-my-lists {
   gap: 10px !important;
 }
 
-body[data-page="questoes"] .qs-home-my-lists-head {
+body:is([data-page="questoes"],[data-page="erros"]) .qs-home-my-lists-head {
   display: flex !important;
   align-items: flex-start !important;
   justify-content: space-between !important;
@@ -529,20 +529,20 @@ body[data-page="questoes"] .qs-home-my-lists-head h2 {
 }
 
 /* Real-time search & filter bar for Minhas Listas */
-body:is([data-page="questoes"],[data-page="flashcards"]) .qs-home-lists-filter-bar {
+body:is([data-page="questoes"],[data-page="flashcards"],[data-page="erros"]) .qs-home-lists-filter-bar {
   display: flex !important;
   align-items: center !important;
   gap: 8px !important;
   flex-wrap: wrap !important;
 }
 
-body:is([data-page="questoes"],[data-page="flashcards"]) .qs-search-input-wrap {
+body:is([data-page="questoes"],[data-page="flashcards"],[data-page="erros"]) .qs-search-input-wrap {
   position: relative !important;
   flex: 1 1 200px !important;
   min-width: 160px !important;
 }
 
-body:is([data-page="questoes"],[data-page="flashcards"]) .qs-search-input-wrap .qs-search-icon {
+body:is([data-page="questoes"],[data-page="flashcards"],[data-page="erros"]) .qs-search-input-wrap .qs-search-icon {
   position: absolute !important;
   left: 12px !important;
   top: 50% !important;
@@ -551,7 +551,7 @@ body:is([data-page="questoes"],[data-page="flashcards"]) .qs-search-input-wrap .
   pointer-events: none !important;
 }
 
-body:is([data-page="questoes"],[data-page="flashcards"]) .qs-search-input {
+body:is([data-page="questoes"],[data-page="flashcards"],[data-page="erros"]) .qs-search-input {
   width: 100% !important;
   min-height: 38px !important;
   height: 38px !important;

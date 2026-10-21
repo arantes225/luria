@@ -8,6 +8,27 @@
   --luria-page-card-gap:14px;
 }
 
+/* The games also use the heading relocated from the shell, not only spotlights. */
+@layer luria-ui-education {
+  body[data-ui="v2"][data-ui-context="study"]:is([data-page="jogos"],[data-page="study-rats"]) .main .page > :is(.ui-page-heading,.games-spotlight) {
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    justify-content:center!important;
+    gap:6px!important;
+    min-height:110px!important;
+    height:auto!important;
+    padding:20px 24px!important;
+    box-sizing:border-box!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"]:is([data-page="jogos"],[data-page="study-rats"]) .main .page > .ui-page-heading :is(h1,.eyebrow) {margin:0!important;}
+  body[data-ui="v2"][data-ui-context="study"] .books-page .luria-page-spotlight .library-book-link {color:#fff!important;text-decoration:underline!important;text-underline-offset:3px;}
+  body[data-ui="v2"][data-page="professor_alex"] .luria-page-spotlight-copy :is(strong,small,.luria-page-spotlight-helper) {color:#fff!important;}
+  @media(max-width:680px) {
+    body[data-ui="v2"][data-ui-context="study"]:is([data-page="jogos"],[data-page="study-rats"]) .main .page > :is(.ui-page-heading,.games-spotlight) {padding:18px 20px!important;}
+  }
+}
+
 body:not(.schedule-settings-embed) .luria-page-spotlight{
   position:relative!important;
   display:flex!important;

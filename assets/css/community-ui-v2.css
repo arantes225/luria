@@ -9,8 +9,7 @@
   body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .community-nav {display:inline-flex;flex-wrap:wrap;gap:4px;margin-bottom:1.5rem;padding:4px;border:1px solid var(--color-border);border-radius:var(--ui-radius-pill, 999px);background:var(--color-surface);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);}
   body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .main .community-nav a {display:inline-flex!important;align-items:center!important;justify-content:center!important;padding:.5rem 1.25rem!important;min-height:40px!important;background:transparent!important;color:var(--color-text-secondary)!important;border:1px solid transparent!important;border-radius:var(--ui-radius-pill, 999px)!important;font-size:.875rem!important;font-weight:600!important;text-decoration:none!important;transition:all 180ms ease!important;}
   body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .main .community-nav a:hover {background:var(--color-surface-elevated)!important;color:var(--color-text-primary)!important;}
-  body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .main .community-nav a:is(.active, [aria-selected="true"]),
-  body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .main .community-nav a:is(.active, [aria-selected="true"]) * {
+  body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .main .community-nav a:is(.active, [aria-selected="true"]) {
     background: var(--ui-pill-gradient, var(--color-primary)) !important;
     color: #ffffff !important;
     border-color: transparent !important;
