@@ -11,6 +11,7 @@ const outputTitle = output?.querySelector("h3");
 const submit = form?.querySelector('button[type="submit"]');
 const fileInput = document.getElementById("alex-file");
 let alexUsageTimer = null;
+const sessionHistory = [];
 
 // Estado da Conversa ao Vivo por Voz
 let isLiveActive = false;
@@ -254,6 +255,7 @@ if (form) {
       intent: document.querySelector("[data-alex-intent].is-active")?.dataset.alexIntent || "learn",
       mode: isEstourado ? "estourado" : "normal",
       channel: isLiveActive ? "voice" : "chat",
+      history: sessionHistory.slice(-8),
     };
 
     const oldText = submit?.textContent || "Começar aula";
@@ -292,6 +294,11 @@ if (form) {
       if (error) throw error;
       if (data?.usage) renderUsage(data.usage);
       if (typeof data?.answer !== "string" || !data.answer.trim()) throw Error("empty_response");
+      if (prompt) {
+        sessionHistory.push({ role: "user", text: prompt });
+        sessionHistory.push({ role: "model", text: data.answer });
+        if (sessionHistory.length > 20) sessionHistory.splice(0, sessionHistory.length - 20);
+      }
       if (!isLiveActive) {
         display(data.answer, "Sua aula com o Professor Alex");
         if (mascot?.playAnimation) {
@@ -436,21 +443,22 @@ function speakText(text, onComplete) {
     return;
   }
 
+  const modeToggle = document.getElementById("alex-mode-toggle");
+  const isEstourado = (modeToggle?.getAttribute("aria-checked") === "true") ||
+    (modeToggle?.getAttribute("aria-pressed") === "true") ||
+    (document.querySelector('[data-alex-mode="estourado"]')?.getAttribute("aria-pressed") === "true");
+
   const utterance = new SpeechSynthesisUtterance(plainText);
   utterance.lang = "pt-BR";
-  utterance.rate = 1.05;
-  utterance.pitch = 1.0;
+  // Cadência e tom calibrados conforme especificação do AI Studio:
+  utterance.rate = isEstourado ? 1.25 : 1.04;
+  utterance.pitch = isEstourado ? 0.82 : 1.0;
 
   try {
     const voices = window.speechSynthesis.getVoices?.() || [];
     const ptVoice = voices.find(v => v.lang === "pt-BR" || v.lang?.startsWith("pt"));
     if (ptVoice) utterance.voice = ptVoice;
   } catch {}
-
-  const modeToggle = document.getElementById("alex-mode-toggle");
-  const isEstourado = (modeToggle?.getAttribute("aria-checked") === "true") ||
-    (modeToggle?.getAttribute("aria-pressed") === "true") ||
-    (document.querySelector('[data-alex-mode="estourado"]')?.getAttribute("aria-pressed") === "true");
 
   const mascot = document.getElementById("alex-mascot");
   utterance.onstart = () => {
