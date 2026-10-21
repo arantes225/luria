@@ -6,13 +6,16 @@
   // rules cannot reintroduce the documented spacing and contrast regressions.
   const reviewPages = new Set([
     "dashboard", "cronograma", "professor_alex", "aprender", "plantao",
-    "questoes", "flashcards", "erros", "jogos", "study-rats", "aplicar"
+    "questoes", "flashcards", "erros", "jogos", "study-rats", "aplicar",
+    "caderno", "editais", "curriculo", "radar", "vocacao", "consolidar",
+    "estatisticas", "desafio", "sessao_estudo", "amigos", "admin", "editorial",
+    "ambientacao", "configuracoes", "configuracoes-cronograma", "configuracoes-flashcards"
   ]);
   if (reviewPages.has(document.body?.dataset.page) && !document.getElementById("luria-review-fixes")) {
     const reviewCss = document.createElement("link");
     reviewCss.id = "luria-review-fixes";
     reviewCss.rel = "stylesheet";
-    reviewCss.href = "/assets/css/review-fixes-20261020.css?v=20261021-dashboard-layout2";
+    reviewCss.href = "/assets/css/review-fixes-20261020.css?v=20261021-sitewide-buttons-v3";
     document.head.appendChild(reviewCss);
   }
 
