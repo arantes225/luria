@@ -1,0 +1,52 @@
+body[data-page="study-rats"] #study-rats-hall {
+  --sr-surface: var(--color-surface-solid, #fff);
+  --sr-elevated: var(--color-surface-elevated, #eef4ff);
+  --sr-text: var(--color-text-primary, #10243e);
+  --sr-muted: var(--color-text-secondary, #4e6178);
+  --sr-border: var(--color-border, #d9e2ec);
+  --sr-accent: var(--color-primary, #184888);
+  --sr-focus: var(--color-focus-ring, #184888);
+  color: var(--sr-text);
+  max-width: 1100px;
+  margin: 18px auto 32px;
+}
+body[data-page="study-rats"] #study-rats-hall[hidden],
+body[data-page="study-rats"] #study-rats-host[hidden] { display: none !important; }
+.sr-hall-hero, .sr-hall-card, .sr-hall-waiting {
+  border: 1px solid var(--sr-border);
+  border-radius: 20px;
+  background: var(--sr-surface);
+  box-shadow: var(--ui-shadow, 0 10px 28px rgba(16, 36, 62, .08));
+}
+.sr-hall-hero { padding: clamp(22px, 4vw, 40px); background: var(--sr-elevated); }
+.sr-hall-eyebrow { color: var(--sr-accent); font-size: .8rem; font-weight: 800; text-transform: uppercase; letter-spacing: .09em; }
+.sr-hall-hero h2 { color: var(--sr-text); margin: 8px 0; font-size: clamp(1.7rem, 3vw, 2.5rem); line-height: 1.15; }
+.sr-hall-hero p, .sr-hall-card p, .sr-hall-help { color: var(--sr-muted); line-height: 1.55; }
+.sr-hall-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
+.sr-hall-card { padding: 22px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.sr-hall-card h3 { color: var(--sr-text); margin: 0; font-size: 1.15rem; }
+.sr-hall-card p { margin: 0 0 10px; flex: 1; }
+.sr-hall-icon { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 14px; background: var(--sr-elevated); color: var(--sr-accent); font-size: 1.4rem; }
+.sr-hall-button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 9px 16px; border-radius: 11px; border: 1px solid var(--sr-accent); background: var(--sr-accent); color: var(--color-primary-foreground, #fff); font: inherit; font-weight: 750; text-decoration: none; cursor: pointer; }
+.sr-hall-button:hover:not(:disabled) { filter: brightness(1.08); }
+.sr-hall-button:disabled { opacity: .58; cursor: wait; }
+.sr-hall-button--secondary { background: var(--sr-surface); color: var(--sr-accent); }
+.sr-hall-button:focus-visible, .sr-friend-choice:focus-visible { outline: 3px solid var(--sr-focus); outline-offset: 3px; }
+.sr-hall-detail { margin-top: 18px; padding: 22px; border: 1px solid var(--sr-border); border-radius: 18px; background: var(--sr-surface); }
+.sr-hall-detail[hidden], .sr-hall-waiting[hidden] { display: none !important; }
+.sr-hall-detail h3, .sr-hall-waiting h3 { color: var(--sr-text); margin: 0 0 8px; }
+.sr-friends { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 14px; }
+.sr-friend-choice { width: 100%; min-height: 58px; display: flex; align-items: center; gap: 10px; padding: 10px 13px; border: 1px solid var(--sr-border); border-radius: 12px; background: var(--sr-elevated); color: var(--sr-text); text-align: left; font: inherit; cursor: pointer; }
+.sr-friend-choice:hover { border-color: var(--sr-accent); }
+.sr-friend-choice small { display: block; color: var(--sr-muted); }
+.sr-hall-waiting { margin-top: 18px; padding: 22px; }
+.sr-hall-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 15px; }
+.sr-hall-status { min-height: 1.5em; color: var(--sr-muted); margin: 14px 0 0; }
+.sr-hall-status[data-error="true"] { color: var(--color-danger, #be123c); }
+.sr-hall-invites { margin-top: 18px; }
+.sr-hall-invites:empty { display: none; }
+.sr-hall-invite { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--sr-border); }
+.sr-hall-invite strong, .sr-hall-invite small { display: block; }
+.sr-hall-invite small { color: var(--sr-muted); }
+@media (max-width: 760px) { .sr-hall-grid { grid-template-columns: 1fr; } .sr-hall-card { min-height: 0; } .sr-hall-invite { align-items: flex-start; flex-direction: column; } }
+
