@@ -139,3 +139,20 @@
 @media(max-width:900px){.book-grid-3{grid-template-columns:1fr 1fr}.algo-row{grid-template-columns:1fr}}
 @media(max-width:620px){.book-grid-3{grid-template-columns:1fr}}
 
+/* Padrão editorial de referência: resumo destacado, barras de capítulo,
+   leitura em duas colunas e tabelas acessíveis/roláveis. */
+.book-safety-note{display:flex;align-items:baseline;gap:8px;margin:0;padding:10px 14px;border-left:4px solid var(--accent);border-radius:0 10px 10px 0;background:color-mix(in srgb,var(--accent) 5%,var(--surface));color:var(--muted);font-size:11px;line-height:1.5}
+.book-safety-note strong{color:var(--accent);font-size:11px;white-space:nowrap}
+.book-section>h2{display:flex;align-items:center;gap:12px}
+.book-section>h2::after{content:"";height:10px;flex:1;min-width:30px;background:var(--accent);opacity:.92}
+.book-section>p:first-of-type{padding:12px 14px;border-left:4px solid var(--accent);border-radius:0 10px 10px 0;background:color-mix(in srgb,var(--accent) 4%,var(--surface-2))}
+.luria-table-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;scrollbar-width:thin;margin:14px 0 18px}
+.luria-table-scroll .book-table{min-width:590px;margin:0}
+.book-section>h2,.book-section>table,.book-section>.luria-table-scroll,.book-section>figure,.book-section>.luria-figure,.book-section>.book-callout,.book-section>.clinical-cards,.book-section>.book-grid-2,.book-section>.book-grid-3,.book-section>.flowchart{break-inside:avoid}
+@media(min-width:1100px){
+  .book-section:not(#referencias){column-count:2;column-gap:26px;column-fill:balance}
+  .book-section:not(#referencias)>h2,.book-section:not(#referencias)>p:first-of-type,.book-section:not(#referencias)>table,.book-section:not(#referencias)>.luria-table-scroll,.book-section:not(#referencias)>figure,.book-section:not(#referencias)>.luria-figure,.book-section:not(#referencias)>.book-callout,.book-section:not(#referencias)>.clinical-cards,.book-section:not(#referencias)>.book-grid-2,.book-section:not(#referencias)>.book-grid-3,.book-section:not(#referencias)>.flowchart{column-span:all}
+  .book-section:not(#referencias)>p,.book-section:not(#referencias)>ul,.book-section:not(#referencias)>ol,.book-section:not(#referencias)>h3,.book-section:not(#referencias)>h4{break-inside:avoid}
+}
+@media(max-width:760px){.book-safety-note{display:block}.book-safety-note strong{display:block;margin-bottom:3px}.book-section>h2::after{min-width:16px;height:7px}.book-section>p:first-of-type{padding:10px 12px}}
+
