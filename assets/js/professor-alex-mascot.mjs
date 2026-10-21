@@ -84,7 +84,7 @@ export class ProfessorAlexMascot extends HTMLElement {
     this._themes=new MutationObserver(()=>{this._syncTheme();this._schedule();});
     this._themes.observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
     if(document.body)this._themes.observe(document.body,{attributes:true,attributeFilter:['data-ui-appearance','data-ui-identity']});
-    this._resizeObserver=new ResizeObserver(()=>{this._resize();this._schedule();});this._resizeObserver.observe(this);
+    this._resizeObserver=new ResizeObserver(()=>{this._resize();this._schedule();});this._resizeObserver.observe(this);this._resizeObserver.observe(this.button);
     this._intersection=new IntersectionObserver(([entry])=>{this._visible=entry.isIntersecting;this._last=0;this._schedule();});this._intersection.observe(this);
     try {this._createScene();this._syncProps();this._resize();this._schedule();this.message.hidden=true;this.dispatchEvent(new CustomEvent('alex-ready',{bubbles:true}));}
     catch(error) {this._dispose();this.message.hidden=false;this.message.textContent='O modo 3D requer WebGL 2. Tente um navegador compatível.';this.button.disabled=true;this.dispatchEvent(new CustomEvent('alex-error',{detail:error,bubbles:true}));}

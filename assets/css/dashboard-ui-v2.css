@@ -175,7 +175,7 @@ html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-pag
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-streak-value {padding:0!important;min-height:0!important;justify-content:flex-start!important;}
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-streak-visual {width:2.5rem!important;height:2.5rem!important;flex:0 0 2.5rem!important;}
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-streak-visual svg {width:100%!important;height:100%!important;}
-html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-card {align-self:start!important;}
+html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-card {align-self:stretch!important;}
 
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-weekdays {grid-template-rows:auto!important;grid-auto-flow:row!important;align-self:auto!important;}
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-summary-body > div:not(.dl-ring) {display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:.25rem!important;}
@@ -284,17 +284,17 @@ html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-pag
 
 /* Etapa 1.2 — neutral surfaces, compact metrics and honest weekly presentation. */
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-heading-icon svg, html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl5-title svg {color:var(--color-text-secondary)!important;stroke:currentColor!important;}
-html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-card, html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl5-card, html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl5-metric {padding:1.25rem!important;box-shadow:none!important;}
+html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-card, html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl5-card, html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl5-metric {padding:1rem!important;box-shadow:none!important;}
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-study-now-card {border:1px solid var(--color-border)!important;}
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-card-heading, html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl5-title {margin-bottom:1rem!important;}
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-heading-icon, html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl5-title svg, html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl5-title-flame {color:var(--color-text-secondary)!important;background:transparent!important;}
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-study-now-head {gap:.75rem!important;}
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-study-now-head small {color:var(--color-text-secondary)!important;letter-spacing:.03em!important;}
-html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-study-now {gap:1rem!important;}
+html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-study-now {gap:.75rem!important;}
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-study-time-options button {border:1px solid transparent!important;background:var(--color-surface-elevated)!important;}
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-study-time-options button.active {border-color:var(--color-primary-text,var(--color-primary))!important;background:var(--color-surface)!important;}
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-empty, html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl5-next-empty {padding:.75rem 0!important;background:transparent!important;font-size:var(--ui-secondary)!important;}
-html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-grid {gap:1.25rem!important;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)!important;}
+html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-grid {grid-template-rows:none!important;grid-auto-rows:auto!important;gap:.75rem!important;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)!important;}
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-grid .dl-progress, html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-grid .dl-areas {grid-column:1!important;grid-row:3!important;}
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-layout-2 .dl-areas {grid-column:1/-1!important;grid-row:4!important;}
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .dl-grid .dl-streak {grid-column:2!important;grid-row:3!important;}

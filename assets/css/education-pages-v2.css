@@ -270,7 +270,9 @@
   ) {
     background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
     color: #ffffff !important;
-    border: 1.5px solid transparent !important;
+    border: 0 !important;
+    appearance: none !important;
+    background-clip: padding-box !important;
     border-radius: 12px !important;
     min-height: 44px !important;
     padding: 0.625rem 1.35rem !important;

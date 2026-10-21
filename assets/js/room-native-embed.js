@@ -16,4 +16,7 @@
   const data=event.detail;if(kind!=='simulator'||!uuid.test(data?.id||'')||data?.case_id!==caseId)return;
   window.parent.postMessage({type:'luria:room-clinical-session',room_id:room,case_id:caseId,session_id:data.id,status:data.status},location.origin);
  });
+ window.addEventListener('luria:clinical-exit',()=>{
+  if(kind==='simulator')window.parent.postMessage({type:'luria:room-simulator-close',room_id:room,case_id:caseId},location.origin);
+ });
 })();

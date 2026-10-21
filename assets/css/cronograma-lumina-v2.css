@@ -696,10 +696,12 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-today-head {
   align-items: center !important;
   justify-content: space-between !important;
   gap: 1rem !important;
+  flex-wrap: wrap !important;
   border-bottom: 1px solid var(--color-border) !important;
 }
 
 body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-today-title-wrap {
+  flex: 1 1 18rem;
   display: flex !important;
   align-items: center !important;
   gap: 0.75rem !important;
@@ -707,6 +709,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-today-title-w
 }
 
 body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-today-icon {
+  flex: none;
   width: 36px !important;
   height: 36px !important;
   border-radius: 10px !important;
@@ -1575,7 +1578,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .month-filter-trigger
 
 body[data-page="cronograma"]:not(.schedule-settings-embed) :is(.planner-view-toggle, .agenda-activity-view-switch, .agenda-insight-tabs) {
   min-height: 44px !important;
-  height: 44px !important;
+  height: auto !important;
   padding: 3px !important;
   gap: 3px !important;
   box-sizing: border-box !important;
@@ -1583,12 +1586,27 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) :is(.planner-view-tog
 
 body[data-page="cronograma"]:not(.schedule-settings-embed) :is(.planner-view-toggle, .agenda-activity-view-switch, .agenda-insight-tabs) button,
 body[data-page="cronograma"]:not(.schedule-settings-embed) .planner-today {
-  min-height: 36px !important;
-  height: 36px !important;
-  padding: 0 14px !important;
+  min-height: 44px !important;
+  height: auto !important;
+  padding: 8px 14px !important;
+  margin: 0 !important;
   font-size: 14px !important;
   font-weight: 700 !important;
-  line-height: 1 !important;
+  line-height: 1.25 !important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-today-head .agenda-activity-view-switch {
+  flex: 1 1 16rem;
+  width: auto !important;
+  max-width: 28rem;
+  min-width: 0;
+}
+
+@media(max-width:680px) {
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-today-head > :is(.agenda-today-title-wrap,.agenda-activity-view-switch) {flex:none;max-width:100%;}
+  @layer luria-ui-education {
+    body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight {flex-wrap:nowrap!important;height:auto!important;}
+  }
 }
 
 body[data-page="cronograma"]:not(.schedule-settings-embed) .planner-tools {
