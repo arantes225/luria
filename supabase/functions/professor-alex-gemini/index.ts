@@ -12,7 +12,6 @@ const ALLOWED_ORIGINS = new Set([
 const MODEL = "gemini-3.5-flash-lite";
 const MAX_PDF_BASE64 = 6_000_000; // ~4.5MB of raw PDF
 const MAX_BODY_BYTES = 6_500_000;
-const REQUESTS_PER_DAY = 15;
 
 function corsHeaders(origin: string | null) {
   return {
@@ -70,10 +69,7 @@ Deno.serve(async (req: Request) => {
 
   const admin = createClient(url, serviceRole, { auth: { persistSession: false, autoRefreshToken: false } });
   if (data.action === "usage") {
-    const { data: usage, error: usageError } = await admin.rpc("get_professor_alex_daily_usage", {
-      p_user_id: user.id,
-      p_limit: REQUESTS_PER_DAY,
-    });
+    const { data: usage, error: usageError } = await admin.rpc("professor_alex_token_usage", { p_user_id: user.id });
     if (usageError || !usage || typeof usage !== "object") {
       return json({ error: "usage_limit_unavailable" }, 503, headers);
     }
@@ -82,11 +78,20 @@ Deno.serve(async (req: Request) => {
 
   const intent = ["learn", "question", "material"].includes(String(data.intent)) ? String(data.intent) : "learn";
   const mode = data.mode === "estourado" ? "estourado" : "normal";
+  const channel = data.channel === "voice" ? "voice" : "chat";
   const area = String(data.area || "").trim().slice(0, 120);
   const topic = String(data.topic || "").trim().slice(0, 180);
   const prompt = String(data.prompt || "").trim().slice(0, 4000);
   if (!topic && !prompt) return json({ error: "empty_prompt" }, 400, headers);
   if (!Deno.env.get("CLIENT_GEMINI")) return json({ error: "gemini_secret_missing" }, 503, headers);
+
+  const { data: initialUsage, error: initialUsageError } = await admin.rpc("professor_alex_token_usage", { p_user_id: user.id });
+  if (initialUsageError || !initialUsage || typeof initialUsage !== "object") {
+    return json({ error: "usage_limit_unavailable" }, 503, headers);
+  }
+  if (Number(initialUsage.remaining_tokens || 0) <= 0) {
+    return json({ error: "token_budget_reached", usage: initialUsage }, 429, headers);
+  }
 
   const contents: Array<Record<string, unknown>> = [
     { text: [
@@ -117,14 +122,6 @@ Deno.serve(async (req: Request) => {
       return json({ error: "unsupported_file" }, 415, headers);
     }
   }
-
-  // This RPC performs an atomic increment and rejects requests over the daily limit.
-  const { data: reserved, error: reserveError } = await admin.rpc("reserve_professor_alex_daily_request", {
-    p_user_id: user.id,
-    p_limit: REQUESTS_PER_DAY,
-  });
-  if (reserveError) return json({ error: "usage_limit_unavailable" }, 503, headers);
-  if (reserved !== true) return json({ error: "daily_limit_reached" }, 429, headers);
 
   const system = [
     "Você é o Professor Alex, tutor de medicina da plataforma brasileira LURIA.",
@@ -193,5 +190,21 @@ Deno.serve(async (req: Request) => {
     ?.map((part: { text?: string }) => part.text || "")
     .filter(Boolean).join("\n").trim();
   if (!answer) return json({ error: "empty_response" }, 502, headers);
-  return json({ answer, model: MODEL }, 200, headers);
+
+  const metadata = result?.usageMetadata || {};
+  const inputTokens = Number(metadata.promptTokenCount || 0);
+  const outputTokens = Number(metadata.candidatesTokenCount || 0);
+  const totalTokens = Number(metadata.totalTokenCount || (inputTokens + outputTokens));
+  const { data: usage, error: usageError } = await admin.rpc("record_professor_alex_token_usage", {
+    p_user_id: user.id,
+    p_channel: channel,
+    p_input_tokens: Number.isFinite(inputTokens) ? inputTokens : 0,
+    p_output_tokens: Number.isFinite(outputTokens) ? outputTokens : 0,
+    p_total_tokens: Number.isFinite(totalTokens) ? totalTokens : 0,
+  });
+  if (usageError || !usage || typeof usage !== "object") {
+    console.error("[alex-gemini] token_accounting_failure");
+    return json({ answer, model: MODEL, usage: initialUsage, accounting_pending: true }, 200, headers);
+  }
+  return json({ answer, model: MODEL, usage }, 200, headers);
 });

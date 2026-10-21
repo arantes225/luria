@@ -6,7 +6,6 @@ const outputCopy = document.getElementById("alex-output-copy");
 const outputTitle = output?.querySelector("h3");
 const submit = form?.querySelector('button[type="submit"]');
 const fileInput = document.getElementById("alex-file");
-const ALEX_DAILY_LIMIT = 15;
 let alexUsageTimer = null;
 
 // Estado da Conversa ao Vivo por Voz
@@ -21,7 +20,7 @@ const ERROR_MESSAGES = {
   payload_too_large: "O material é muito grande. Utilize um PDF menor.",
   invalid_file: "O arquivo não pôde ser lido. Envie um PDF, TXT ou MD válido.",
   unsupported_file: "Formato não suportado. Converta o material para PDF, TXT ou MD.",
-  daily_limit_reached: "Você atingiu o limite provisório de 15 solicitações hoje. Volte amanhã.",
+  token_budget_reached: "Seu orçamento diário de tokens do Professor Alex terminou. Ele será renovado em até 24h.",
   gemini_secret_missing: "A chave CLIENT_GEMINI ainda não está configurada neste projeto Supabase.",
   gemini_key_rejected: "O Google recusou o acesso à API. No AI Studio, confira a chave CLIENT_GEMINI, as permissões e as restrições da chave.",
   gemini_key_invalid: "A chave do Gemini é inválida, bloqueada ou expirou. Crie uma nova chave de autenticação no Google AI Studio e atualize CLIENT_GEMINI no Supabase.",
@@ -69,7 +68,7 @@ function ensureUsageUI() {
     widget.setAttribute("aria-live", "polite");
     widget.innerHTML = '<span class="alex-token-battery" aria-hidden="true">' +
       '<span></span><span></span><span></span><span></span><span></span>' +
-      '</span><span class="alex-token-copy"><strong id="alex-token-count">—/15</strong>' +
+      '</span><span class="alex-token-copy"><strong id="alex-token-count">— tokens</strong>' +
       '<small id="alex-token-renewal">Renova em 24h</small></span>';
     controls.insertBefore(widget, controls.firstElementChild);
   }
@@ -79,18 +78,19 @@ function ensureUsageUI() {
 function renderUsage(usage) {
   const widget = ensureUsageUI();
   if (!widget) return;
-  const limit = Number(usage?.limit) || ALEX_DAILY_LIMIT;
-  const remaining = Math.max(0, Math.min(limit, Number(usage?.remaining)));
+  const limit = Math.max(1, Number(usage?.daily_token_budget) || 30000);
+  const remaining = Math.max(0, Math.min(limit, Number(usage?.remaining_tokens) || 0));
   const count = document.getElementById("alex-token-count");
   const renewal = document.getElementById("alex-token-renewal");
-  if (count) count.textContent = `${remaining}/${limit} solicitações`;
+  if (count) count.textContent = `${remaining.toLocaleString("pt-BR")} tokens`;
   if (renewal) {
     const renewsAt = Date.parse(String(usage?.renews_at || ""));
     const hours = Number.isFinite(renewsAt) ? Math.max(1, Math.ceil((renewsAt - Date.now()) / 3600000)) : 24;
     renewal.textContent = `Renova em ${hours}h`;
   }
   widget.classList.toggle("is-empty", remaining === 0);
-  widget.title = `${remaining} de ${limit} solicitações restantes hoje. Renovação diária em até 24 horas.`;
+  const voiceMultiplier = Number(usage?.voice_multiplier) || 3;
+  widget.title = `${remaining.toLocaleString("pt-BR")} tokens ponderados restantes hoje. Voz consome ${voiceMultiplier}x. Renovação diária em até 24 horas.`;
   widget.querySelectorAll(".alex-token-battery span").forEach((bar, index) => {
     bar.classList.toggle("is-filled", index < Math.ceil((remaining / limit) * 5));
   });
@@ -245,6 +245,7 @@ if (form) {
       prompt,
       intent: document.querySelector("[data-alex-intent].is-active")?.dataset.alexIntent || "learn",
       mode: isEstourado ? "estourado" : "normal",
+      channel: isLiveActive ? "voice" : "chat",
     };
 
     const oldText = submit?.textContent || "Começar aula";

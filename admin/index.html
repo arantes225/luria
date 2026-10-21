@@ -133,6 +133,9 @@
           <button class="admin-view-tab" type="button" data-admin-view-tab="plans" aria-selected="false">
             Planos
           </button>
+          <button class="admin-view-tab" type="button" data-admin-view-tab="alex" aria-selected="false">
+            Alex / IA
+          </button>
           <button class="admin-view-tab" type="button" data-admin-view-tab="plantao" aria-selected="false">
             Plantão
           </button>
@@ -252,6 +255,38 @@
               <div class="admin-plan-features-loading">Carregando permissões...</div>
             </div>
           </div>
+        </section>
+
+        <section class="admin-section admin-alex-token-settings" data-admin-view="alex" hidden>
+          <div class="admin-section-head">
+            <div>
+              <span class="eyebrow">Professor Alex</span>
+              <h2>Orçamento de tokens da IA</h2>
+              <p>O saldo do aluno é calculado pelos tokens reais devolvidos pelo Gemini. Voz usa um multiplicador maior porque custa mais que o chat.</p>
+            </div>
+            <button id="admin-load-alex-token-settings" class="button secondary" type="button">Atualizar</button>
+          </div>
+
+          <div id="admin-alex-token-settings-status" class="admin-status" aria-live="polite">Carregando configuração...</div>
+          <div class="admin-plan-features-grid">
+            <label class="admin-pin-field">
+              <span>Tokens ponderados por dia</span>
+              <input id="admin-alex-token-budget" type="number" min="1000" max="100000000" step="100" inputmode="numeric">
+              <small>O saldo diário de cada usuário renova em 24h.</small>
+            </label>
+            <label class="admin-pin-field">
+              <span>Multiplicador da voz</span>
+              <input id="admin-alex-voice-multiplier" type="number" min="1" max="10" step="0.1" inputmode="decimal">
+              <small>Ex.: 3 significa que a mesma quantidade de tokens na voz consome 3x.</small>
+            </label>
+            <label class="admin-pin-field">
+              <span>PIN do Admin para salvar</span>
+              <input id="admin-alex-admin-pin" type="password" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="current-password" placeholder="Digite novamente o PIN">
+              <small>Obrigatório em toda alteração. O PIN não é armazenado nesta página.</small>
+            </label>
+          </div>
+          <div id="admin-alex-token-today" class="admin-status" aria-live="polite"></div>
+          <button id="admin-save-alex-token-settings" class="button primary" type="button">Salvar orçamento protegido</button>
         </section>
 
         <section class="admin-section admin-editais-section" data-admin-view="editais" hidden>
@@ -1855,7 +1890,7 @@ Após as três aprovações da versão atual, aguardar aprovação humana final 
   <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
   <script src="assets/js/admin-editais.js?v=3"></script>
   <script src="assets/js/question-factory-prompts.js?v=4.1-fast-gt86-clinical"></script>
-  <script src="assets/js/admin.js?v=20261020-admin-images-approval-v1"></script>
+  <script src="assets/js/admin.js?v=20261021-alex-token-budget-v1"></script>
   <script src="assets/js/question-factory-initial-package-fix.js?v=1"></script>
   <script defer src="assets/js/pwa.js?v=20261013-width2"></script>
 </body>

@@ -1119,6 +1119,76 @@
     setPlanFeaturesStatus("");
   }
 
+  function setAlexTokenStatus(text, type = "") {
+    const node = $("admin-alex-token-settings-status");
+    if (!node) return;
+    node.textContent = text;
+    node.className = `admin-status ${type}`.trim();
+  }
+
+  function renderAlexTokenSettings(data) {
+    const settings = data?.settings || {};
+    const today = data?.today || {};
+    const budget = $("admin-alex-token-budget");
+    const multiplier = $("admin-alex-voice-multiplier");
+    if (budget) budget.value = String(settings.daily_token_budget || "");
+    if (multiplier) multiplier.value = String(settings.voice_multiplier || "");
+    const todayNode = $("admin-alex-token-today");
+    if (todayNode) {
+      todayNode.textContent = `Hoje nesta conta administrativa: ${Number(today.used_tokens || 0).toLocaleString("pt-BR")} tokens ponderados usados · ${Number(today.remaining_tokens || 0).toLocaleString("pt-BR")} restantes.`;
+    }
+  }
+
+  async function loadAlexTokenSettings() {
+    setAlexTokenStatus("Carregando configuração...");
+    const { data, error } = await sb.rpc("professor_alex_admin", {
+      p_action: "snapshot",
+      p_payload: {},
+      p_pin: null
+    });
+    if (error) throw error;
+    renderAlexTokenSettings(data);
+    setAlexTokenStatus("Configuração carregada.", "success");
+  }
+
+  async function saveAlexTokenSettings() {
+    const button = $("admin-save-alex-token-settings");
+    const pinInput = $("admin-alex-admin-pin");
+    const pin = String(pinInput?.value || "").replace(/\D/g, "").slice(0, 6);
+    const budget = Number($("admin-alex-token-budget")?.value || 0);
+    const voiceMultiplier = Number($("admin-alex-voice-multiplier")?.value || 0);
+    if (!/^\d{6}$/.test(pin)) {
+      setAlexTokenStatus("Digite novamente o PIN de 6 dígitos para confirmar a alteração.", "error");
+      pinInput?.focus();
+      return;
+    }
+    if (!Number.isInteger(budget) || budget < 1000 || budget > 100000000 || !Number.isFinite(voiceMultiplier) || voiceMultiplier < 1 || voiceMultiplier > 10) {
+      setAlexTokenStatus("Confira o orçamento e o multiplicador de voz.", "error");
+      return;
+    }
+    if (button) { button.disabled = true; button.textContent = "Validando PIN..."; }
+    try {
+      const { data, error } = await sb.rpc("professor_alex_admin", {
+        p_action: "update",
+        p_payload: { daily_token_budget: budget, voice_multiplier: voiceMultiplier },
+        p_pin: pin
+      });
+      if (error) throw error;
+      if (data?.ok !== true) {
+        setAlexTokenStatus(data?.reason === "locked" ? "PIN temporariamente bloqueado por tentativas inválidas." : "PIN incorreto. A alteração não foi salva.", "error");
+        return;
+      }
+      if (pinInput) pinInput.value = "";
+      renderAlexTokenSettings(data);
+      setAlexTokenStatus("Orçamento salvo. O PIN foi validado novamente no servidor.", "success");
+    } catch (error) {
+      console.error(error);
+      setAlexTokenStatus("Não foi possível salvar o orçamento protegido.", "error");
+    } finally {
+      if (button) { button.disabled = false; button.textContent = "Salvar orçamento protegido"; }
+    }
+  }
+
   async function savePlanFeatures() {
     const button = $("admin-save-plan-features");
     const cells =
@@ -2061,7 +2131,7 @@
 
   function setAdminView(view) {
     const next =
-      ["metrics", "factory", "editais", "plans", "plantao", "images", "beta"].includes(view)
+      ["metrics", "factory", "editais", "plans", "alex", "plantao", "images", "beta"].includes(view)
         ? view
         : "metrics";
 
@@ -2110,6 +2180,13 @@
       );
     }
 
+    if (next === "alex") {
+      loadAlexTokenSettings().catch(error => {
+        console.error(error);
+        setAlexTokenStatus("Não foi possível carregar a configuração do Professor Alex.", "error");
+      });
+    }
+
     if (next === "images") {
       Promise.all([
         loadClinicalImageReviewQueue(),
@@ -2154,7 +2231,7 @@
     let initial = location.hash === "#beta" ? "beta" : "metrics";
     try {
       const saved = sessionStorage.getItem("luria-admin-view");
-      if (location.hash !== "#beta" && ["metrics", "factory", "editais", "plans", "plantao", "images"].includes(saved)) {
+      if (location.hash !== "#beta" && ["metrics", "factory", "editais", "plans", "alex", "plantao", "images"].includes(saved)) {
         initial = saved;
       }
     } catch (_) {}
@@ -5214,6 +5291,14 @@
         "click",
         savePlanFeatures
       );
+
+    $("admin-load-alex-token-settings")?.addEventListener("click", () => {
+      loadAlexTokenSettings().catch(error => {
+        console.error(error);
+        setAlexTokenStatus("Não foi possível carregar a configuração do Professor Alex.", "error");
+      });
+    });
+    $("admin-save-alex-token-settings")?.addEventListener("click", saveAlexTokenSettings);
 
     $("admin-save-plan-prices")?.addEventListener("click", async () => {
       const button=$("admin-save-plan-prices");
