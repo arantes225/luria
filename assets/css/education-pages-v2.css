@@ -173,7 +173,7 @@
   body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-cta {display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:.4rem 1.1rem;margin-top:auto;border-radius:12px;background:#ffffff!important;border:1px solid var(--color-border-interactive,#c8dcfa)!important;color:var(--color-primary,#155dfc)!important;font-size:.8125rem;font-weight:650;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,0.03);transition:all 180ms ease;}
   body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-card:hover .tool-cta, body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-cta:hover {background:var(--ui-pill-gradient,linear-gradient(135deg,#1d72fe 0%,#155dfc 100%))!important;color:#ffffff!important;border-color:transparent!important;box-shadow:0 4px 14px color-mix(in srgb,var(--color-primary) 30%,transparent)!important;transform:translateY(-1px)!important;}
   :is([data-theme="dark"] body, body[data-ui-appearance="dark"])[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-cta {background:var(--color-surface,#151e2c)!important;color:var(--color-primary-text,#93bbf0)!important;border-color:var(--color-border,#243347)!important;}
-  :is([data-theme="dark"] body, body[data-ui-appearance="dark"])[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-card:hover .tool-cta, :is([data-theme="dark"] body, body[data-ui-appearance="dark"])[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-cta:hover {background:var(--ui-pill-gradient,linear-gradient(135deg,#1d72fe 0%,#155dfc 100%))!important;color:#ffffff!important;}
+  :is([data-theme="dark"] body, body[data-ui-appearance="dark"])[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-card:hover .tool-cta, :is([data-theme="dark"] body, body[data-ui-appearance="dark"])[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-cta:hover {background:var(--ui-pill-gradient,linear-gradient(135deg,#38BDF8,#60A5FA,#818CF8))!important;color:var(--color-primary-foreground,#08101F)!important;}
   body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-icon, body[data-ui="v2"][data-page="consolidar"] .learn-icon {display:grid;place-items:center;width:42px;height:42px;flex:none;border:1px solid var(--color-border);border-radius:12px;background:var(--color-primary-subtle);color:var(--color-primary-text);}
   body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-icon svg, body[data-ui="v2"][data-page="consolidar"] .learn-icon svg {width:24px;height:24px;stroke:currentColor;stroke-width:1.8;fill:none;}
   body[data-ui="v2"][data-page="consolidar"] .learn-grid {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:none!important;gap:1.25rem!important;align-items:stretch!important;height:auto!important;min-height:0!important;overflow:visible!important;}
@@ -334,8 +334,8 @@
   ):hover,
   :is([data-theme="dark"] body, body[data-ui-appearance="dark"])[data-ui="v2"][data-page="consolidar"] .learn-card:hover .learn-cta,
   :is([data-theme="dark"] body, body[data-ui-appearance="dark"])[data-ui="v2"][data-page="jogos"] .game-card:hover .games-link {
-    background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
-    color: #ffffff !important;
+    background: var(--ui-pill-gradient, linear-gradient(135deg, #38BDF8, #60A5FA, #818CF8)) !important;
+    color: var(--color-primary-foreground, #08101F) !important;
     border-color: transparent !important;
   }
 

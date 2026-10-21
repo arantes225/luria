@@ -345,3 +345,265 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .topbar #luria-alex-topbar {
   display: none !important;
 }
+
+/* ==========================================================================
+   Botoes Globais - Padronizacao de Degradê e Contraste Light / Dark Mode
+   - Modo Claro: Gradiente do tema com escritas BRANCAS (#ffffff).
+   - Modo Escuro: Gradiente do tema com escritas ESCURAS (#08101F / #19091E).
+   ========================================================================== */
+
+/* 1. MODO CLARO (Default / Light) */
+:root:not([data-theme="dark"]) body:not([data-ui-appearance="dark"]):not([data-theme="dark"]) :is(
+  .btn.primary,
+  .btn-primary,
+  button.primary,
+  a.button.primary,
+  .qr-btn.primary,
+  .primary-nav,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  #reference-new-activity,
+  .g-button,
+  .dl-study-now-start,
+  .dl-primary,
+  .dl5-start,
+  .dl-start,
+  .alex-open-tutoring,
+  .alex-send-button,
+  .luria-daily-review-primary,
+  .qs-daily-review-primary,
+  .qs-start-button,
+  #daily-submit,
+  #start-review-session,
+  #show-answer,
+  .quiz-submit,
+  .google-calendar-primary,
+  .stats-tab.active,
+  .stats-range button.active,
+  .planner-view-toggle button.active,
+  .agenda-activity-view-switch button.active,
+  .agenda-insight-tabs button.active,
+  .qs-mode-tab.active,
+  .error-state-switch button.active,
+  .flash-tab.active,
+  [data-action="primary"],
+  .primary-action,
+  .alex-action.primary,
+  .ed-new-exam,
+  .ed-primary-action
+) {
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #184888, #2563EB, #0EA5E9)) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+}
+
+:root:not([data-theme="dark"]) body:not([data-ui-appearance="dark"]):not([data-theme="dark"]) :is(
+  .btn.primary,
+  .btn-primary,
+  button.primary,
+  a.button.primary,
+  .qr-btn.primary,
+  .primary-nav,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  #reference-new-activity,
+  .g-button,
+  .dl-study-now-start,
+  .dl-primary,
+  .dl5-start,
+  .dl-start,
+  .alex-open-tutoring,
+  .alex-send-button,
+  .luria-daily-review-primary,
+  .qs-daily-review-primary,
+  .qs-start-button,
+  #daily-submit,
+  #start-review-session,
+  #show-answer,
+  .quiz-submit,
+  .google-calendar-primary,
+  .stats-tab.active,
+  .stats-range button.active,
+  .planner-view-toggle button.active,
+  .agenda-activity-view-switch button.active,
+  .agenda-insight-tabs button.active,
+  .qs-mode-tab.active,
+  .error-state-switch button.active,
+  .flash-tab.active,
+  [data-action="primary"],
+  .primary-action,
+  .alex-action.primary,
+  .ed-new-exam,
+  .ed-primary-action
+) :is(span, strong, b, small, i, svg, svg *) {
+  color: #ffffff !important;
+  stroke: currentColor !important;
+}
+
+:root:not([data-theme="dark"]) body:not([data-ui-appearance="dark"]):not([data-theme="dark"]) :is(
+  .btn.primary,
+  .btn-primary,
+  button.primary,
+  a.button.primary,
+  .qr-btn.primary,
+  .primary-nav,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  #reference-new-activity,
+  .g-button,
+  .dl-study-now-start,
+  .dl-primary,
+  .dl5-start,
+  .dl-start,
+  .alex-open-tutoring,
+  .alex-send-button,
+  .luria-daily-review-primary,
+  .qs-daily-review-primary,
+  .qs-start-button,
+  #daily-submit,
+  #start-review-session,
+  #show-answer,
+  .quiz-submit,
+  .google-calendar-primary,
+  [data-action="primary"],
+  .primary-action,
+  .alex-action.primary,
+  .ed-new-exam,
+  .ed-primary-action
+):hover {
+  filter: brightness(1.08) !important;
+  transform: translateY(-1px) !important;
+  color: #ffffff !important;
+}
+
+/* 2. MODO ESCURO (Dark Mode) */
+:is([data-theme="dark"] body, body[data-ui-appearance="dark"], html[data-theme="dark"] body, :root[data-theme="dark"] body, body[data-theme="dark"]) :is(
+  .btn.primary,
+  .btn-primary,
+  button.primary,
+  a.button.primary,
+  .qr-btn.primary,
+  .primary-nav,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  #reference-new-activity,
+  .g-button,
+  .dl-study-now-start,
+  .dl-primary,
+  .dl5-start,
+  .dl-start,
+  .alex-open-tutoring,
+  .alex-send-button,
+  .luria-daily-review-primary,
+  .qs-daily-review-primary,
+  .qs-start-button,
+  #daily-submit,
+  #start-review-session,
+  #show-answer,
+  .quiz-submit,
+  .google-calendar-primary,
+  .stats-tab.active,
+  .stats-range button.active,
+  .planner-view-toggle button.active,
+  .agenda-activity-view-switch button.active,
+  .agenda-insight-tabs button.active,
+  .qs-mode-tab.active,
+  .error-state-switch button.active,
+  .flash-tab.active,
+  [data-action="primary"],
+  .primary-action,
+  .alex-action.primary,
+  .ed-new-exam,
+  .ed-primary-action
+) {
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #38BDF8, #60A5FA, #818CF8)) !important;
+  color: var(--color-primary-foreground, #08101F) !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35) !important;
+}
+
+:is([data-theme="dark"] body, body[data-ui-appearance="dark"], html[data-theme="dark"] body, :root[data-theme="dark"] body, body[data-theme="dark"]) :is(
+  .btn.primary,
+  .btn-primary,
+  button.primary,
+  a.button.primary,
+  .qr-btn.primary,
+  .primary-nav,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  #reference-new-activity,
+  .g-button,
+  .dl-study-now-start,
+  .dl-primary,
+  .dl5-start,
+  .dl-start,
+  .alex-open-tutoring,
+  .alex-send-button,
+  .luria-daily-review-primary,
+  .qs-daily-review-primary,
+  .qs-start-button,
+  #daily-submit,
+  #start-review-session,
+  #show-answer,
+  .quiz-submit,
+  .google-calendar-primary,
+  .stats-tab.active,
+  .stats-range button.active,
+  .planner-view-toggle button.active,
+  .agenda-activity-view-switch button.active,
+  .agenda-insight-tabs button.active,
+  .qs-mode-tab.active,
+  .error-state-switch button.active,
+  .flash-tab.active,
+  [data-action="primary"],
+  .primary-action,
+  .alex-action.primary,
+  .ed-new-exam,
+  .ed-primary-action
+) :is(span, strong, b, small, i, svg, svg *) {
+  color: var(--color-primary-foreground, #08101F) !important;
+  stroke: currentColor !important;
+}
+
+:is([data-theme="dark"] body, body[data-ui-appearance="dark"], html[data-theme="dark"] body, :root[data-theme="dark"] body, body[data-theme="dark"]) :is(
+  .btn.primary,
+  .btn-primary,
+  button.primary,
+  a.button.primary,
+  .qr-btn.primary,
+  .primary-nav,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  #reference-new-activity,
+  .g-button,
+  .dl-study-now-start,
+  .dl-primary,
+  .dl5-start,
+  .dl-start,
+  .alex-open-tutoring,
+  .alex-send-button,
+  .luria-daily-review-primary,
+  .qs-daily-review-primary,
+  .qs-start-button,
+  #daily-submit,
+  #start-review-session,
+  #show-answer,
+  .quiz-submit,
+  .google-calendar-primary,
+  [data-action="primary"],
+  .primary-action,
+  .alex-action.primary,
+  .ed-new-exam,
+  .ed-primary-action
+):hover {
+  filter: brightness(1.08) !important;
+  transform: translateY(-1px) !important;
+  color: var(--color-primary-foreground, #08101F) !important;
+}
+
