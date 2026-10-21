@@ -219,7 +219,7 @@
   position: sticky;
   top: 16px;
   align-self: start;
-  min-height: 490px;
+  min-height: 245px;
   margin: 0;
   box-shadow: var(--ui-shadow);
 }
