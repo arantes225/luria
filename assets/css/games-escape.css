@@ -220,6 +220,33 @@
   height: 100px;
 }
 .luria-game .e-journey-doctor svg { display: block; width: 100%; height: 100%; }
+.luria-game .e-journey-contact {
+  position: absolute;
+  z-index: 2;
+  right: 8%;
+  bottom: 43px;
+  display: flex;
+  width: 48px;
+  height: 79px;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-text-primary);
+}
+.luria-game .e-contact-head {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #d6a17f;
+}
+.luria-game .e-contact-body {
+  width: 29px;
+  height: 39px;
+  margin-top: 2px;
+  border-radius: 7px 7px 3px 3px;
+  background: var(--color-primary);
+}
+.luria-game .e-contact-coat { background: var(--color-surface); border: 1px solid var(--color-border); }
+.luria-game .e-journey-contact small { font-size: 9px; line-height: 1.4; }
 .luria-game .e-journey-running .e-journey-doctor {
   animation: e-doctor-cross 2.2s ease-in-out both;
 }
@@ -245,7 +272,7 @@
 }
 @keyframes e-doctor-cross {
   0% { left: 11%; }
-  100% { left: calc(89% - 64px); }
+  100% { left: calc(75% - 64px); }
 }
 @keyframes e-doctor-stride {
   from { transform: rotate(-17deg); }
@@ -254,7 +281,7 @@
 @media (prefers-reduced-motion: reduce) {
   .luria-game .e-journey-running .e-journey-doctor {
     animation: none;
-    left: calc(89% - 64px);
+    left: calc(75% - 64px);
   }
   .luria-game .e-journey-running .e-doctor-leg { animation: none; }
 }

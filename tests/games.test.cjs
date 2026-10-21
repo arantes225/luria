@@ -206,6 +206,9 @@ test("adventure mixes mechanics, retries failed decisions, unlocks rooms and fin
       g.d.querySelector(".e-journey-to").textContent,
       g.w.LuriaGameContent.adventure[i + 1]?.room || "Fim do plantão",
     );
+    if (i < 8)
+      assert.match(g.d.querySelector(".e-journey-contact").textContent, /Paciente|Profissional/);
+    else assert.equal(g.d.querySelector(".e-journey-contact"), null);
     assert.equal(g.d.querySelector('[data-action="next"]').disabled, true);
     g.tick(2200);
     assert.equal(g.d.querySelector('[data-action="next"]').disabled, false);
