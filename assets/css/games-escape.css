@@ -258,6 +258,14 @@
   transform-origin: 35px 68px;
   animation: e-doctor-stride .28s ease-in-out infinite alternate-reverse;
 }
+.luria-game .e-journey-running .e-doctor-arm-front {
+  transform-origin: 22px 40px;
+  animation: e-doctor-stride .28s ease-in-out infinite alternate-reverse;
+}
+.luria-game .e-journey-running .e-doctor-arm-back {
+  transform-origin: 42px 40px;
+  animation: e-doctor-stride .28s ease-in-out infinite alternate;
+}
 .luria-game .e-journey-status {
   position: absolute;
   z-index: 3;
@@ -283,7 +291,8 @@
     animation: none;
     left: calc(75% - 64px);
   }
-  .luria-game .e-journey-running .e-doctor-leg { animation: none; }
+  .luria-game .e-journey-running .e-doctor-leg,
+  .luria-game .e-journey-running .e-doctor-arm { animation: none; }
 }
 .luria-game .e-narrative {
   display: flex;
