@@ -7,7 +7,7 @@
     const userId=event.detail?.user?.id;if(!userId)return;
     if(currentUser===userId&&companion){companion.setAccess(event.detail.isAdmin);return;}
     const ticket=++revision;currentUser=userId;companion?.destroy();companion=null;
-    try{const {mountAlexCompanion}=await import('/assets/js/professor-alex-companion.mjs?v=20261014-ready2');if(ticket!==revision)return;companion=mountAlexCompanion({userId,isAdmin:event.detail.isAdmin});}catch(error){console.warn('Alex indisponível',error);}
+    try{const {mountAlexCompanion}=await import('/assets/js/professor-alex-companion.mjs?v=20261021-chat1');if(ticket!==revision)return;companion=mountAlexCompanion({userId,isAdmin:event.detail.isAdmin});}catch(error){console.warn('Alex indisponível',error);}
   };
   window.addEventListener('docmap:ready',start);
   window.addEventListener('docmap:access-updated',start);

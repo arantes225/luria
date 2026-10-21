@@ -1,5 +1,9 @@
 // Secure Professor Alex front-end: only the user's Supabase JWT goes to our Edge Function.
 // The Gemini API key is read exclusively inside the Edge Function.
+const finalLayoutStyle = document.createElement("link");
+finalLayoutStyle.rel = "stylesheet";
+finalLayoutStyle.href = "/assets/css/professor-alex-layout-20261021.css?v=2";
+document.head.appendChild(finalLayoutStyle);
 const form = document.getElementById("alex-form");
 const output = document.getElementById("alex-output");
 const outputCopy = document.getElementById("alex-output-copy");
@@ -56,7 +60,7 @@ function ensureUsageStyles() {
 }
 
 function ensureUsageUI() {
-  const controls = document.getElementById("luria-notifications");
+  const controls = document.getElementById("alex-mode-card") || document.getElementById("luria-notifications");
   if (!controls) return null;
   ensureUsageStyles();
   let widget = document.getElementById("alex-token-usage");
@@ -68,9 +72,12 @@ function ensureUsageUI() {
     widget.setAttribute("aria-live", "polite");
     widget.innerHTML = '<span class="alex-token-battery" aria-hidden="true">' +
       '<span></span><span></span><span></span><span></span><span></span>' +
-      '</span><span class="alex-token-copy"><strong id="alex-token-count">— tokens</strong>' +
+      '</span><span class="alex-token-copy"><strong id="alex-token-count">Uso de IA: —</strong>' +
       '<small id="alex-token-renewal">Renova em 24h</small></span>';
     controls.insertBefore(widget, controls.firstElementChild);
+  } else {
+    const modeBar = document.getElementById("alex-mode-card");
+    if (modeBar && widget.parentElement !== modeBar) modeBar.insertBefore(widget, modeBar.firstElementChild);
   }
   return widget;
 }
@@ -82,7 +89,7 @@ function renderUsage(usage) {
   const remaining = Math.max(0, Math.min(limit, Number(usage?.remaining_tokens) || 0));
   const count = document.getElementById("alex-token-count");
   const renewal = document.getElementById("alex-token-renewal");
-  if (count) count.textContent = `${remaining.toLocaleString("pt-BR")} tokens`;
+  if (count) count.textContent = `Uso de IA: ${remaining.toLocaleString("pt-BR")}`;
   if (renewal) {
     const renewsAt = Date.parse(String(usage?.renews_at || ""));
     const hours = Number.isFinite(renewsAt) ? Math.max(1, Math.ceil((renewsAt - Date.now()) / 3600000)) : 24;
@@ -90,7 +97,7 @@ function renderUsage(usage) {
   }
   widget.classList.toggle("is-empty", remaining === 0);
   const voiceMultiplier = Number(usage?.voice_multiplier) || 3;
-  widget.title = `${remaining.toLocaleString("pt-BR")} tokens ponderados restantes hoje. Voz consome ${voiceMultiplier}x. Renovação diária em até 24 horas.`;
+  widget.title = `${remaining.toLocaleString("pt-BR")} de uso de IA ponderado restante hoje. Voz consome ${voiceMultiplier}x. Renovação diária em até 24 horas.`;
   widget.querySelectorAll(".alex-token-battery span").forEach((bar, index) => {
     bar.classList.toggle("is-filled", index < Math.ceil((remaining / limit) * 5));
   });

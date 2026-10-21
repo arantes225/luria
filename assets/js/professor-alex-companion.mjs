@@ -2,7 +2,7 @@ import './professor-alex-mascot.mjs?v=20261014-ready2';
 import {bindAlex} from './professor-alex-integration.mjs?v=20261014-ready2';
 
 const contexts = {
-  dashboard: ['Seu dia na LURIA', 'Escolha uma atividade ou confira seu progresso.', '/aprender/', 'Explorar formas de aprender'],
+  dashboard: ['Professor Alex', 'Converse comigo por aqui ou abra a tutoria completa para estudar com mais profundidade.', '/professor-alex/', 'Abrir tutoria completa'],
   aprender: ['Como você quer aprender?', 'Explore as apostilas, suas anotações ou o estudo guiado.', '/apostilas/', 'Abrir apostilas'],
   flashcards: ['Revisão com flashcards', 'Tente lembrar antes de revelar a resposta e avalie como foi sua recordação.', '/consolidar/', 'Ver atividades de revisão'],
   questoes: ['Treino com questões', 'Leia o enunciado com atenção e revise o raciocínio depois da resposta.', '/consolidar/', 'Ver atividades de revisão'],
@@ -44,7 +44,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
     }
   } catch {}
 
-  const cssHref = new URL('../css/professor-alex-companion.css?v=20261018-solid2', import.meta.url).href;
+  const cssHref = new URL('../css/professor-alex-companion.css?v=20261021-chat1', import.meta.url).href;
   shadow.innerHTML = `
     <link rel="stylesheet" href="${cssHref}">
     <style>
@@ -71,12 +71,17 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
       <button class="close" aria-label="Fechar ajuda">×</button>
       <h2></h2>
       <p></p>
+      <div class="alex-quick-messages" aria-live="polite">
+        <div class="alex-quick-message alex">Olá! Sou o Professor Alex. Qual dúvida médica você quer estudar?</div>
+      </div>
       <form class="alex-quick-chat">
         <input type="text" class="alex-quick-input" placeholder="Tire uma dúvida com o Alex..." maxlength="200" aria-label="Dúvida para o Alex" />
         <button type="submit" class="alex-quick-send">Perguntar</button>
       </form>
-      <a class="context-link"></a>
-      <p><a class="tutoring" href="/professor-alex/" hidden>Abrir tutoria completa com o Alex</a></p>
+      <div class="alex-quick-actions">
+        <button class="alex-live-quick" type="button">🎙️ Falar ao vivo</button>
+        <a class="tutoring" href="/professor-alex/" hidden>Abrir tutoria completa</a>
+      </div>
       <div class="help-actions">
         <button class="recharge-btn" type="button">🔋 Mandar Alex recarregar</button>
         <button class="minimize" type="button">Minimizar Alex</button>
@@ -227,8 +232,8 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
     save();
   }
 
-  function setAccess(value) {
-    shadow.querySelector('.tutoring').hidden = value !== true;
+  function setAccess() {
+    shadow.querySelector('.tutoring').hidden = false;
   }
 
   // --- Click and Multi-Click (Tickle) Handling ---
@@ -299,9 +304,9 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
   ];
   help.querySelector('h2').textContent = context[0];
   help.querySelector('p').textContent = context[1];
-  const link = help.querySelector('.context-link');
-  link.href = context[2];
-  link.textContent = context[3];
+  const link = help.querySelector('.tutoring');
+  link.href = '/professor-alex/';
+  link.textContent = 'Abrir tutoria completa';
 
   shadow.querySelector('.close').addEventListener('click', () => {
     help.hidden = true;
@@ -319,24 +324,49 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
     alex.button?.focus();
   }, opts);
 
-  // Quick chat handler
+  // Chat compacto: responde no próprio painel usando o mesmo backend seguro do Alex.
   const quickChat = shadow.querySelector('.alex-quick-chat');
   const quickInput = shadow.querySelector('.alex-quick-input');
-  quickChat?.addEventListener('submit', (e) => {
+  const quickSend = shadow.querySelector('.alex-quick-send');
+  const quickMessages = shadow.querySelector('.alex-quick-messages');
+  const appendQuickMessage = (text, type) => {
+    const message = document.createElement('div');
+    message.className = `alex-quick-message ${type || 'alex'}`;
+    message.textContent = text;
+    quickMessages?.append(message);
+    if (quickMessages) quickMessages.scrollTop = quickMessages.scrollHeight;
+  };
+  quickChat?.addEventListener('submit', async (e) => {
     e.preventDefault();
     const query = quickInput?.value?.trim();
     if (!query) return;
-    if (document.body?.dataset.page === 'professor_alex') {
-      const mainPrompt = document.getElementById('alex-prompt');
-      const mainForm = document.getElementById('alex-form');
-      if (mainPrompt) {
-        mainPrompt.value = query;
-        help.hidden = true;
-        mainForm?.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
-      }
-    } else {
-      window.location.href = '/professor-alex/?q=' + encodeURIComponent(query);
+    appendQuickMessage(query, 'user');
+    quickInput.value = '';
+    if (quickSend) quickSend.disabled = true;
+    appendQuickMessage('Pensando…', 'pending');
+    integration.react('thinking');
+    try {
+      const client = window.supabaseClient;
+      if (!client?.functions) throw new Error('Conexão indisponível');
+      const {data, error} = await client.functions.invoke('professor-alex-gemini', {
+        body: {prompt: query, area: '', topic: '', intent: 'learn', mode: 'normal', channel: 'chat'}
+      });
+      if (error) throw error;
+      quickMessages?.querySelector('.pending')?.remove();
+      appendQuickMessage(data?.answer || 'Não consegui responder agora. Tente novamente.', 'alex');
+      integration.react('explain');
+    } catch (error) {
+      quickMessages?.querySelector('.pending')?.remove();
+      appendQuickMessage('Não consegui responder agora. Tente novamente.', 'error');
+      integration.react('error');
+    } finally {
+      if (quickSend) quickSend.disabled = false;
+      quickInput?.focus();
     }
+  }, opts);
+
+  shadow.querySelector('.alex-live-quick')?.addEventListener('click', () => {
+    window.location.href = '/professor-alex/?voice=1';
   }, opts);
 
   // Recharge action

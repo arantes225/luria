@@ -2,7 +2,7 @@
 body[data-page="professor_alex"] .alex-central-stage {
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
-  grid-template-rows: minmax(0, 1fr) auto !important;
+  grid-template-rows: auto minmax(0, 1fr) !important;
   align-items: stretch !important;
   gap: 14px 18px !important;
   width: 100% !important;
@@ -13,7 +13,7 @@ body[data-page="professor_alex"] .alex-central-stage {
 
 body[data-page="professor_alex"] .alex-mascot-card {
   grid-column: 1 !important;
-  grid-row: 1 !important;
+  grid-row: 2 !important;
   width: auto !important;
   min-width: 0 !important;
   height: auto !important;
@@ -22,7 +22,7 @@ body[data-page="professor_alex"] .alex-mascot-card {
 
 body[data-page="professor_alex"] .alex-chat-container {
   grid-column: 2 !important;
-  grid-row: 1 !important;
+  grid-row: 2 !important;
   width: auto !important;
   min-width: 0 !important;
   height: auto !important;
@@ -31,14 +31,52 @@ body[data-page="professor_alex"] .alex-chat-container {
 
 body[data-page="professor_alex"] .alex-mode-card {
   grid-column: 1 / -1 !important;
-  grid-row: 2 !important;
+  grid-row: 1 !important;
   order: initial !important;
   width: 100% !important;
   justify-self: stretch !important;
   flex-direction: row !important;
   align-items: center !important;
   border-radius: 16px !important;
+  min-height: 64px !important;
+  padding: 10px 14px !important;
+  justify-content: space-between !important;
+  box-shadow: 0 10px 24px rgba(5, 20, 46, .2) !important;
 }
+
+body[data-page="professor_alex"] .alex-mode-card .alex-mode-info {
+  flex: 1 1 auto !important;
+  min-width: 145px !important;
+}
+
+body[data-page="professor_alex"] .alex-mode-card .alex-mode-description {
+  display: none !important;
+}
+
+body[data-page="professor_alex"] .alex-mode-card .alex-mode-switch {
+  order: 2 !important;
+  align-self: center !important;
+  min-width: 116px !important;
+  height: 38px !important;
+  padding: 0 12px 0 40px !important;
+  border: 1px solid rgba(125,178,255,.35) !important;
+  border-radius: 11px !important;
+  background: #182b4a !important;
+  color: #c9dbf5 !important;
+  font-size: 12px !important;
+  font-weight: 750 !important;
+  text-align: left !important;
+}
+
+body[data-page="professor_alex"] .alex-mode-card .alex-mode-switch::before { content: "Normal" !important; }
+body[data-page="professor_alex"] .alex-mode-card.estourado-active .alex-mode-switch {
+  border-color: rgba(255, 166, 91, .7) !important;
+  background: linear-gradient(135deg, #713b2a, #9b4e2b) !important;
+  color: #fff4e8 !important;
+}
+body[data-page="professor_alex"] .alex-mode-card.estourado-active .alex-mode-switch::before { content: "Estourado" !important; }
+body[data-page="professor_alex"] .alex-mode-card .alex-depth-toggle { order: 1 !important; flex: 0 0 auto !important; }
+body[data-page="professor_alex"] #alex-token-usage { order: 0 !important; min-width: 166px !important; flex: 0 0 auto !important; }
 
 body[data-page="professor_alex"] .alex-chat-feed {
   min-height: 0 !important;
@@ -56,13 +94,13 @@ body[data-page="professor_alex"] .alex-chat-feed {
 
   body[data-page="professor_alex"] .alex-mascot-card {
     grid-column: 1 !important;
-    grid-row: 1 !important;
+    grid-row: 2 !important;
     width: 100% !important;
   }
 
   body[data-page="professor_alex"] .alex-mode-card {
     grid-column: 1 !important;
-    grid-row: 2 !important;
+    grid-row: 1 !important;
     width: 100% !important;
   }
 
