@@ -93,7 +93,7 @@
   tocNav.addEventListener('click',event=>{
     const link=event.target.closest('a[href^="#"]');
     if(!link)return;
-    const target=document.querySelector(link.getAttribute('href'));
+    const target=document.getElementById((link.getAttribute('href')||'').slice(1));
     if(!target)return;
     event.preventDefault();
     target.scrollIntoView({behavior:'smooth',block:'start'});
@@ -105,7 +105,7 @@
     [...originalLinks,...tocLinks].forEach(link=>link.classList.toggle('is-active',link.getAttribute('href')==='#'+id));
   };
   if('IntersectionObserver' in window){
-    const observedSections=[...originalLinks].map(link=>document.querySelector(link.getAttribute('href'))).filter(Boolean);
+    const observedSections=[...originalLinks].map(link=>document.getElementById((link.getAttribute('href')||'').slice(1))).filter(Boolean);
     const observer=new IntersectionObserver(entries=>{
       const visible=entries.filter(entry=>entry.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top)[0];
       if(visible)setActiveLink(visible.target);
