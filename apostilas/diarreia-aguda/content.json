@@ -1122,15 +1122,59 @@
       [
         [
           "2",
-          "Algoritmo de revisão de alto rendimento"
+          "Algoritmo visual de revisão — da triagem à conduta"
         ],
         [
           "p",
-          "<strong>Fezes líquidas agudas → avaliar criança (gravidade antes do agente) →</strong>\r<br><ul><li><strong>Choque/desidratação grave:</strong> cuidado urgente, reidratação venosa adaptada e monitorização, enquanto se investiga etiologia.</li>\r<br><li><strong>Sem desidratação:</strong> Plano A, SRO/prevenção, manter aleitamento e alimentação, retorno com sinais de alarme.</li>\r<br><li><strong>Desidratação sem gravidade e consegue beber:</strong> Plano B com SRO supervisionada, reavaliando até recuperação.</li>\r<br><li><strong>Sangue/disenteria:</strong> avaliar toxemia, suspeita STEC e SHU, necessidade de exame fecal e antibiótico de acordo com normas/risco.</li>\r<br><li><strong>Diarreia ≥14 dias:</strong> avaliar crescimento e nutrição, protozoários, intolerância secundária e outras doenças.</li>\r<br><li><strong>Dor focal/abdome agudo:</strong> investigar invaginação, apendicite e obstrução antes de rotular \"virose\".</li>\r<br><li><strong>Suspeita de surto:</strong> comunicar vigilância e investigar fonte, higiene e água.</li>"
+          "<strong>Leia a criança antes de ler as fezes.</strong> O primeiro desvio do fluxograma é a presença de desidratação grave ou choque; depois vêm tolerância à reidratação oral, sangue nas fezes, duração do quadro e sinais de causa não infecciosa."
         ],
         [
-          "p",
-          "</ul><table class=\"book-table\"><thead><tr><th>Pergunta de prova</th><th>Resposta base</th></tr></thead><tbody><tr><td>Diarreia aquosa sem gravidade pede antibiótico?</td><td>Em geral não</td></tr><tr><td>A SRO reduz diarreia por matar agentes?</td><td>Não, repõe fluidos e eletrólitos</td></tr><tr><td>Rotavirose exige suspender aleitamento?</td><td>Não</td></tr><tr><td>Sangue na diarreia = Shigella obrigatória?</td><td>Não, lembrar STEC e diferenciais</td></tr><tr><td>Tríade anemia hemolítica + plaquetas baixas + IRA</td><td>SHU</td></tr><tr><td>Diarreia por mais de duas semanas com falha ponderal</td><td>Persistente, investigar</td></tr><tr><td>OMS 2024: zinco atual</td><td>Sugestão condicional 5 mg/dia, checar protocolo brasileiro</td></tr><tr><td>OMS 2024: probióticos na diarreia aquosa</td><td>Sugere contra uso rotineiro</td></tr><tr><td>PNI rotavírus 2026</td><td>Rotina 2 e 4 meses, janelas estendidas oficiais</td></tr><tr><td>Criança com dor episódica, letargia, sangue/muco</td><td>Considerar invaginação intestinal</td></tr></tbody></table>"
+          "o",
+          [
+            "<strong>Reconhecer gravidade:</strong> avaliar estado mental, ingestão, pulso/perfusão, diurese, olhos e prega abdominal; procurar vômito bilioso, dor focal, toxemia e desnutrição.",
+            "<strong>Escolher o plano:</strong> A sem desidratação, B com desidratação na unidade e C se desidratação grave ou choque.",
+            "<strong>Tratar antes de etiologizar:</strong> reidratação e manutenção alimentar vêm antes de exames de fezes de rotina.",
+            "<strong>Investigar quando necessário:</strong> disenteria, quadro grave, suspeita STEC/SHU, diarreia persistente, imunossupressão ou surto.",
+            "<strong>Concluir com segurança:</strong> sinais de retorno, plano de seguimento, higiene e alimentação; definir zinco pelo protocolo aplicável."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Pergunta que muda a decisão",
+            "Resposta de alto rendimento"
+          ],
+          [
+            [
+              "A criança tem sinais de desidratação?",
+              "Escolher A, B ou C segundo exame; B na unidade, C urgente"
+            ],
+            [
+              "Diarreia aquosa isolada precisa de antibiótico?",
+              "Geralmente não; SRO é o tratamento principal"
+            ],
+            [
+              "Sangue significa Shigella confirmada?",
+              "Não; STEC também pode causar sangue e risco de SHU"
+            ],
+            [
+              "Anemia hemolítica + plaquetopenia + lesão renal depois de diarreia?",
+              "Pensar em síndrome hemolítico-urêmica; avaliação nefrológica urgente"
+            ],
+            [
+              "OMS 2024 e MS 2026 orientam a mesma dose de zinco?",
+              "Não; explicitar divergência e não misturar doses"
+            ],
+            [
+              "Pode usar probiótico em todos os casos?",
+              "A OMS 2024 sugere contra uso rotineiro na diarreia aquosa aguda"
+            ],
+            [
+              "Vacina de rotavírus fora do prazo da primeira dose?",
+              "Consultar calendário PNI; a primeira dose tem idade máxima de 11 meses e 29 dias"
+            ]
+          ],
+          "book-table"
         ]
       ]
     ],
@@ -1184,7 +1228,7 @@
             "[x] Seis casos clínicos originais, doze questões justificadas.",
             "[x] Doze candidatas visuais especificadas, sem incorporar imagens privadas.",
             "[ ] <strong>Benchmark equivalente de diarreia pediátrica</strong> ainda não localizado (Drive tem apenas gastroenterologia adulta); não declarar equivalente lido.",
-            "[ ] Conferência do calendário PNI 2026 contra última instrução normativa, especialmente limites em atraso e contraindicações.",
+            "[x] Conferência da janela de rotavírus PNI 2026 na página e na instrução normativa oficiais; demais detalhes de contraindicações e grupos especiais precisam de revisão específica.",
             "[ ] Revisão pediátrica de antibióticos de disenteria, doenças invasivas e doses nacionais; conferir STEC antes de prescrever.",
             "[ ] Verificar divergências de <strong>zinco OMS 2024 versus protocolo brasileiro institucional</strong> e corrigir também a aula 053.",
             "[ ] Checar se 60.000 caracteres <strong>didáticos úteis</strong> foram alcançados excluindo casos, questões, tabelas e referências, sem inflar por repetição.",
