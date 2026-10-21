@@ -18,7 +18,7 @@
   const createBtn = byId("qs-builder-generate");
   const statusEl = byId("qs-builder-status");
   const nf = new Intl.NumberFormat("pt-BR");
-  const state = { items: [], userId: null, ownerEpoch: null, maximum: 50, busy: false, hasDifficulty: false };
+  const state = { items: [], userId: null, ownerEpoch: null, maximum: 100, busy: false, hasDifficulty: false };
 
   const normalize = text => String(text || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
   const rules = {
@@ -198,7 +198,7 @@
       }
       if (!contextValid()) return;
       if (!data || !Array.isArray(data.items)) throw new Error("O catálogo não retornou uma lista válida.");
-      state.maximum = Math.max(1, Math.min(100, Number(data.max_questions) || 50));
+      state.maximum = Math.max(1, Math.min(100, Number(data.max_questions) || 100));
       state.hasDifficulty = data.items.some(item => !!item.dificuldade);
       state.items = data.items.filter(item => item.question_id && item.enunciado && /^[A-D]$/.test(String(item.gabarito || ""))).map(item => {
         const result = {...item, normalizedArea: areaFor(item.area)};

@@ -12,7 +12,7 @@
     const reviewCss = document.createElement("link");
     reviewCss.id = "luria-review-fixes";
     reviewCss.rel = "stylesheet";
-    reviewCss.href = "/assets/css/review-fixes-20261020.css?v=1";
+    reviewCss.href = "/assets/css/review-fixes-20261020.css?v=20261021-comments";
     document.head.appendChild(reviewCss);
   }
 

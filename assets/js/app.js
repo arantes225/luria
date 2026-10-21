@@ -1496,20 +1496,12 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${luriaIcon("stethoscope")}</span><span>Simulador de Emergência</span>
         </a>
 
-        <a class="nav-link ${isLuriaZap ? "active" : ""}" href="/plantao/luriazap/">
-          <span class="nav-icon">${luriaIcon("message-circle")}</span><span>LuriaZap</span>
-        </a>
-
         <a class="nav-link ${page === "estatisticas" ? "active" : ""}" href="/estatisticas/">
           <span class="nav-icon">${luriaIcon("chart")}</span><span>Estatísticas</span>
         </a>
 
         <a class="nav-link ${["aplicar", "curriculo", "radar"].includes(page) ? "active" : ""}" href="/aplicar/">
           <span class="nav-icon">${luriaIcon("compass")}</span><span>Aplicar</span>
-        </a>
-
-        <a class="nav-link ${page === "editais" ? "active" : ""}" href="/editais/">
-          <span class="nav-icon">${luriaIcon("simulation")}</span><span>Editais e Provas</span>
         </a>
 
         <a class="nav-link ${page === "amigos" ? "active" : ""}" href="/amigos/">
