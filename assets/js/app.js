@@ -1146,6 +1146,176 @@
   if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
+
+/* LURIA PWA BOTTOM MENU FINAL OVERRIDE v1 — 2026-10-21 */
+(function installLuriaPwaBottomMenuFinalV1(){
+  const style=document.createElement("style");
+  style.id="luria-pwa-bottom-menu-final-v1";
+  style.textContent=`
+    @media (max-width:980px){
+      html.pwa-standalone body #sidebar.sidebar{
+        position:fixed!important; inset:auto 0 0 0!important; width:100%!important;
+        height:auto!important; min-height:0!important; max-height:calc(96px + env(safe-area-inset-bottom))!important;
+        padding:0 0 env(safe-area-inset-bottom)!important; display:block!important; overflow:hidden!important;
+        transform:translateY(110%)!important; transition:transform 180ms ease,visibility 180ms ease!important;
+        visibility:hidden!important; border:0!important; border-top:1px solid var(--border)!important;
+        border-radius:18px 18px 0 0!important; box-shadow:0 -14px 34px rgba(3,10,25,.24)!important;
+        background:var(--sidebar)!important; z-index:2147481000!important;
+      }
+      html.pwa-standalone body.sidebar-open #sidebar.sidebar{transform:translateY(0)!important;visibility:visible!important;}
+      html.pwa-standalone body #sidebar.sidebar .sidebar-top,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work{display:none!important;}
+      html.pwa-standalone body #sidebar.sidebar .nav,
+      html.pwa-standalone body #sidebar.sidebar .nav-study,
+      html.pwa-standalone body #sidebar.sidebar .nav-work{
+        width:100%!important; height:auto!important; min-height:0!important; max-height:none!important;
+        display:flex!important; align-items:stretch!important; gap:6px!important; padding:8px 10px!important;
+        overflow-x:auto!important; overflow-y:hidden!important; overscroll-behavior-x:contain!important;
+        -webkit-overflow-scrolling:touch!important; scrollbar-width:none!important; box-sizing:border-box!important;
+      }
+      html.pwa-standalone body #sidebar.sidebar .nav::-webkit-scrollbar{display:none!important;}
+      html.pwa-standalone body #sidebar.sidebar .nav-link,
+      html.pwa-standalone body #sidebar.sidebar .nav-group-label{
+        flex:0 0 72px!important; width:72px!important; min-width:72px!important; min-height:72px!important;
+        padding:7px 4px!important; display:flex!important; flex-direction:column!important; justify-content:center!important;
+        align-items:center!important; gap:4px!important; border-radius:11px!important; text-align:center!important;
+        font-size:10px!important; line-height:1.12!important; white-space:normal!important; box-sizing:border-box!important;
+      }
+      html.pwa-standalone body #sidebar.sidebar .nav-link span:last-child,
+      html.pwa-standalone body #sidebar.sidebar .nav-group-label span:last-child{
+        display:-webkit-box!important; -webkit-box-orient:vertical!important; -webkit-line-clamp:2!important; overflow:hidden!important;
+      }
+      html.pwa-standalone body #sidebar.sidebar .nav-icon{
+        width:auto!important; min-width:0!important; height:24px!important; display:grid!important; place-items:center!important;
+        font-size:20px!important; line-height:1!important;
+      }
+      html.pwa-standalone body #sidebar.sidebar .nav-icon svg{width:22px!important;height:22px!important;}
+      html.pwa-standalone body #sidebar.sidebar .nav-group{display:contents!important;}
+      html.pwa-standalone body #sidebar.sidebar .nav-submenu,
+      html.pwa-standalone body #sidebar.sidebar .nav-group-chevron{display:none!important;}
+      html.pwa-standalone body .sidebar-backdrop{display:none!important;}
+      html.pwa-standalone body.sidebar-open .main{padding-bottom:calc(104px + env(safe-area-inset-bottom))!important;}
+      html.pwa-standalone body #menu-open[aria-expanded="true"]{background:var(--accent-soft)!important;color:var(--accent-strong)!important;}
+    }
+    @media (prefers-reduced-motion:reduce){html.pwa-standalone body #sidebar.sidebar{transition:none!important;}}
+  `;
+  document.head.appendChild(style);
+})();
+
+
+/* LURIA PWA BOTTOM MENU v1 — 2026-10-21 */
+(function installLuriaPwaBottomMenuV1(){
+  if(document.getElementById("luria-pwa-bottom-menu-v1"))return;
+  const style=document.createElement("style");
+  style.id="luria-pwa-bottom-menu-v1";
+  style.textContent=`
+    @media (max-width:980px){
+      html.pwa-standalone body #sidebar.sidebar{
+        position:fixed!important;
+        inset:auto 0 0 0!important;
+        width:100%!important;
+        height:auto!important;
+        min-height:0!important;
+        max-height:calc(96px + env(safe-area-inset-bottom))!important;
+        padding:0 0 env(safe-area-inset-bottom)!important;
+        display:block!important;
+        overflow:hidden!important;
+        transform:translateY(110%)!important;
+        transition:transform 180ms ease, visibility 180ms ease!important;
+        visibility:hidden!important;
+        border:0!important;
+        border-top:1px solid var(--border)!important;
+        border-radius:18px 18px 0 0!important;
+        box-shadow:0 -14px 34px rgba(3,10,25,.24)!important;
+        background:var(--sidebar)!important;
+        z-index:2147481000!important;
+      }
+      html.pwa-standalone body.sidebar-open #sidebar.sidebar{
+        transform:translateY(0)!important;
+        visibility:visible!important;
+      }
+      html.pwa-standalone body #sidebar.sidebar .sidebar-top,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work{
+        display:none!important;
+      }
+      html.pwa-standalone body #sidebar.sidebar .nav,
+      html.pwa-standalone body #sidebar.sidebar .nav-study,
+      html.pwa-standalone body #sidebar.sidebar .nav-work{
+        width:100%!important;
+        height:auto!important;
+        min-height:0!important;
+        max-height:none!important;
+        display:flex!important;
+        align-items:stretch!important;
+        gap:6px!important;
+        padding:8px 10px!important;
+        overflow-x:auto!important;
+        overflow-y:hidden!important;
+        overscroll-behavior-x:contain!important;
+        -webkit-overflow-scrolling:touch!important;
+        scrollbar-width:none!important;
+        box-sizing:border-box!important;
+      }
+      html.pwa-standalone body #sidebar.sidebar .nav::-webkit-scrollbar{display:none!important;}
+      html.pwa-standalone body #sidebar.sidebar .nav-link,
+      html.pwa-standalone body #sidebar.sidebar .nav-group-label{
+        flex:0 0 72px!important;
+        width:72px!important;
+        min-width:72px!important;
+        min-height:72px!important;
+        padding:7px 4px!important;
+        display:flex!important;
+        flex-direction:column!important;
+        justify-content:center!important;
+        align-items:center!important;
+        gap:4px!important;
+        border-radius:11px!important;
+        text-align:center!important;
+        font-size:10px!important;
+        line-height:1.12!important;
+        white-space:normal!important;
+        box-sizing:border-box!important;
+      }
+      html.pwa-standalone body #sidebar.sidebar .nav-link span:last-child,
+      html.pwa-standalone body #sidebar.sidebar .nav-group-label span:last-child{
+        display:-webkit-box!important;
+        -webkit-box-orient:vertical!important;
+        -webkit-line-clamp:2!important;
+        overflow:hidden!important;
+      }
+      html.pwa-standalone body #sidebar.sidebar .nav-icon{
+        width:auto!important;
+        min-width:0!important;
+        height:24px!important;
+        display:grid!important;
+        place-items:center!important;
+        font-size:20px!important;
+        line-height:1!important;
+      }
+      html.pwa-standalone body #sidebar.sidebar .nav-icon svg{width:22px!important;height:22px!important;}
+      html.pwa-standalone body #sidebar.sidebar .nav-group{display:contents!important;}
+      html.pwa-standalone body #sidebar.sidebar .nav-submenu,
+      html.pwa-standalone body #sidebar.sidebar .nav-group-chevron{display:none!important;}
+      html.pwa-standalone body .sidebar-backdrop{display:none!important;}
+      html.pwa-standalone body.sidebar-open .main{
+        padding-bottom:calc(104px + env(safe-area-inset-bottom))!important;
+      }
+      html.pwa-standalone body #menu-open[aria-expanded="true"]{
+        background:var(--accent-soft)!important;
+        color:var(--accent-strong)!important;
+      }
+    }
+    @media (prefers-reduced-motion:reduce){
+      html.pwa-standalone body #sidebar.sidebar{transition:none!important;}
+    }
+  `;
+  document.head.appendChild(style);
+})();
+
 const sb = window.supabaseClient;
 
 const PAGE_INFO = {
@@ -4771,19 +4941,27 @@ function prepararMobileMenu() {
   const close = document.getElementById("sidebar-close");
   const backdrop = document.getElementById("sidebar-backdrop");
 
-  const abrir = () => document.body.classList.add("sidebar-open");
-  const fechar = () => document.body.classList.remove("sidebar-open");
+  const atualizarEstado = (aberto) => {
+    open?.setAttribute("aria-expanded", aberto ? "true" : "false");
+    open?.setAttribute("aria-label", aberto ? "Fechar menu" : "Abrir menu");
+  };
+  const abrir = () => {
+    document.body.classList.add("sidebar-open");
+    atualizarEstado(true);
+  };
+  const fechar = () => {
+    document.body.classList.remove("sidebar-open");
+    atualizarEstado(false);
+  };
   const alternar = () => {
-    if (
-      document.body.classList.contains("plantao-phone-mode")
-      && document.body.classList.contains("sidebar-open")
-    ) {
+    if (document.body.classList.contains("sidebar-open")) {
       fechar();
       return;
     }
     abrir();
   };
 
+  atualizarEstado(document.body.classList.contains("sidebar-open"));
   open?.addEventListener("click", alternar);
   close?.addEventListener("click", fechar);
   backdrop?.addEventListener("click", fechar);
