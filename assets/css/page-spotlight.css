@@ -636,22 +636,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   box-shadow: 0 6px 18px rgba(29, 78, 216, 0.4) !important;
 }
 
-/* Supressão global do botão do Alex na topbar (o Professor Alex agora reside exclusivamente como companheiro lateral) */
-#luria-alex-topbar,
-.luria-alex-topbar,
-.topbar [href*="professor-alex"],
-.topbar [data-alex-topbar],
-.topbar .alex-topbar-button {
-  display: none !important;
-  visibility: hidden !important;
-  width: 0 !important;
-  height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: 0 !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-}
+/* Botão do Alex habilitado na topbar */
 
 /* O mascote lateral sai da lateral em Aprender e Professor Alex (reside no card dedicado) */
 body[data-page="aprender"] luria-alex-companion,
