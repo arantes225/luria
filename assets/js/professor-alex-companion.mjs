@@ -13,6 +13,9 @@ const contexts = {
 
 export function mountAlexCompanion({userId, isAdmin=false}={}) {
   if (!userId || document.querySelector('luria-alex-companion')) return null;
+  const isStandalonePwa = document.documentElement.dataset.pwa === "standalone";
+  if (isStandalonePwa) return null;
+
   const page = document.body?.dataset.page || '';
   if (page === 'aprender' || page === 'professor_alex') {
     return null;

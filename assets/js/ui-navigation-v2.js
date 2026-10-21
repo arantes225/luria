@@ -144,6 +144,8 @@
   }
   function enhanceStreak(sidebar, center) {
     if (work || body.dataset.uiAdmin === "v2" || !center) return;
+    document.getElementById("ui-topbar-streak")?.remove();
+    return;
     let indicator = document.getElementById("ui-topbar-streak");
     if (!indicator) {
       indicator = document.createElement("span"); indicator.id = "ui-topbar-streak";
