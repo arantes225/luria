@@ -342,4 +342,6 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   html body[data-page="dashboard"] #dashboard-alternative .dl-grid .dl-areas { grid-column: 1 !important; grid-row: 5 !important; }
 }
 
-body[data-page="dashboard"] #luria-alex-topbar { display: none !important; }
+html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .topbar #luria-alex-topbar {
+  display: none !important;
+}
