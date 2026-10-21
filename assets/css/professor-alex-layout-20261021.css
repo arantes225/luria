@@ -1,0 +1,74 @@
+/* Layout final do Professor Alex: mascote à esquerda e conversa à direita. */
+body[data-page="professor_alex"] .alex-central-stage {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  grid-template-rows: minmax(0, 1fr) auto !important;
+  align-items: stretch !important;
+  gap: 14px 18px !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: 100% !important;
+  margin: 0 !important;
+}
+
+body[data-page="professor_alex"] .alex-mascot-card {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  width: auto !important;
+  min-width: 0 !important;
+  height: auto !important;
+  align-self: stretch !important;
+}
+
+body[data-page="professor_alex"] .alex-chat-container {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  width: auto !important;
+  min-width: 0 !important;
+  height: auto !important;
+  align-self: stretch !important;
+}
+
+body[data-page="professor_alex"] .alex-mode-card {
+  grid-column: 1 / -1 !important;
+  grid-row: 2 !important;
+  order: initial !important;
+  width: 100% !important;
+  justify-self: stretch !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  border-radius: 16px !important;
+}
+
+body[data-page="professor_alex"] .alex-chat-feed {
+  min-height: 0 !important;
+  max-height: none !important;
+  height: auto !important;
+}
+
+@media (max-width: 700px) {
+  body[data-page="professor_alex"] .alex-central-stage {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto minmax(420px, 1fr) !important;
+    height: auto !important;
+  }
+
+  body[data-page="professor_alex"] .alex-mascot-card {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+  }
+
+  body[data-page="professor_alex"] .alex-mode-card {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    width: 100% !important;
+  }
+
+  body[data-page="professor_alex"] .alex-chat-container {
+    grid-column: 1 !important;
+    grid-row: 3 !important;
+    width: 100% !important;
+  }
+}
