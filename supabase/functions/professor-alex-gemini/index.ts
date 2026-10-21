@@ -68,6 +68,18 @@ Deno.serve(async (req: Request) => {
     return json({ error: "invalid_body" }, 400, headers);
   }
 
+  const admin = createClient(url, serviceRole, { auth: { persistSession: false, autoRefreshToken: false } });
+  if (data.action === "usage") {
+    const { data: usage, error: usageError } = await admin.rpc("get_professor_alex_daily_usage", {
+      p_user_id: user.id,
+      p_limit: REQUESTS_PER_DAY,
+    });
+    if (usageError || !usage || typeof usage !== "object") {
+      return json({ error: "usage_limit_unavailable" }, 503, headers);
+    }
+    return json({ usage }, 200, headers);
+  }
+
   const intent = ["learn", "question", "material"].includes(String(data.intent)) ? String(data.intent) : "learn";
   const mode = data.mode === "estourado" ? "estourado" : "normal";
   const area = String(data.area || "").trim().slice(0, 120);
@@ -107,7 +119,6 @@ Deno.serve(async (req: Request) => {
   }
 
   // This RPC performs an atomic increment and rejects requests over the daily limit.
-  const admin = createClient(url, serviceRole, { auth: { persistSession: false, autoRefreshToken: false } });
   const { data: reserved, error: reserveError } = await admin.rpc("reserve_professor_alex_daily_request", {
     p_user_id: user.id,
     p_limit: REQUESTS_PER_DAY,

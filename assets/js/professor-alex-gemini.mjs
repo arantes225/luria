@@ -6,6 +6,8 @@ const outputCopy = document.getElementById("alex-output-copy");
 const outputTitle = output?.querySelector("h3");
 const submit = form?.querySelector('button[type="submit"]');
 const fileInput = document.getElementById("alex-file");
+const ALEX_DAILY_LIMIT = 15;
+let alexUsageTimer = null;
 
 // Estado da Conversa ao Vivo por Voz
 let isLiveActive = false;
@@ -34,6 +36,92 @@ const ERROR_MESSAGES = {
   usage_limit_unavailable: "Não foi possível verificar o limite de uso do Professor Alex.",
   backend_not_configured: "O backend do Professor Alex ainda não está configurado.",
 };
+
+function ensureUsageStyles() {
+  if (document.getElementById("alex-token-usage-styles")) return;
+  const style = document.createElement("style");
+  style.id = "alex-token-usage-styles";
+  style.textContent = `
+    .alex-token-usage{display:flex;align-items:center;gap:9px;height:43px;min-width:142px;padding:0 11px;border:1px solid rgba(125,178,255,.34);border-radius:12px;background:linear-gradient(135deg,rgba(24,53,92,.96),rgba(20,32,66,.96));color:#f4f8ff;box-sizing:border-box;box-shadow:0 8px 20px rgba(3,12,35,.16)}
+    .alex-token-battery{display:flex;align-items:center;gap:2px;position:relative;padding:3px 4px;border:2px solid #79bdff;border-radius:5px}
+    .alex-token-battery::after{content:"";position:absolute;right:-5px;top:6px;width:3px;height:7px;border-radius:0 2px 2px 0;background:#79bdff}
+    .alex-token-battery span{display:block;width:5px;height:12px;border-radius:1px;background:#2b466c}
+    .alex-token-battery span.is-filled{background:linear-gradient(180deg,#71e4c5,#42a9ff)}
+    .alex-token-copy{display:flex;flex-direction:column;min-width:0;line-height:1.05}
+    .alex-token-copy strong{font-size:12px;white-space:nowrap;font-variant-numeric:tabular-nums}
+    .alex-token-copy small{margin-top:4px;color:#b8cae6;font-size:9px;white-space:nowrap}
+    .alex-token-usage.is-empty .alex-token-battery{border-color:#ff9bba}.alex-token-usage.is-empty .alex-token-battery span.is-filled{background:#ff6f9d}
+    @media(max-width:760px){.alex-token-usage{min-width:116px;padding:0 8px;gap:7px}.alex-token-copy strong{font-size:10px}.alex-token-copy small{font-size:8px}}
+  `;
+  document.head.appendChild(style);
+}
+
+function ensureUsageUI() {
+  const controls = document.getElementById("luria-notifications");
+  if (!controls) return null;
+  ensureUsageStyles();
+  let widget = document.getElementById("alex-token-usage");
+  if (!widget) {
+    widget = document.createElement("div");
+    widget.id = "alex-token-usage";
+    widget.className = "alex-token-usage";
+    widget.setAttribute("role", "status");
+    widget.setAttribute("aria-live", "polite");
+    widget.innerHTML = '<span class="alex-token-battery" aria-hidden="true">' +
+      '<span></span><span></span><span></span><span></span><span></span>' +
+      '</span><span class="alex-token-copy"><strong id="alex-token-count">—/15</strong>' +
+      '<small id="alex-token-renewal">Renova em 24h</small></span>';
+    controls.insertBefore(widget, controls.firstElementChild);
+  }
+  return widget;
+}
+
+function renderUsage(usage) {
+  const widget = ensureUsageUI();
+  if (!widget) return;
+  const limit = Number(usage?.limit) || ALEX_DAILY_LIMIT;
+  const remaining = Math.max(0, Math.min(limit, Number(usage?.remaining)));
+  const count = document.getElementById("alex-token-count");
+  const renewal = document.getElementById("alex-token-renewal");
+  if (count) count.textContent = `${remaining}/${limit} solicitações`;
+  if (renewal) {
+    const renewsAt = Date.parse(String(usage?.renews_at || ""));
+    const hours = Number.isFinite(renewsAt) ? Math.max(1, Math.ceil((renewsAt - Date.now()) / 3600000)) : 24;
+    renewal.textContent = `Renova em ${hours}h`;
+  }
+  widget.classList.toggle("is-empty", remaining === 0);
+  widget.title = `${remaining} de ${limit} solicitações restantes hoje. Renovação diária em até 24 horas.`;
+  widget.querySelectorAll(".alex-token-battery span").forEach((bar, index) => {
+    bar.classList.toggle("is-filled", index < Math.ceil((remaining / limit) * 5));
+  });
+}
+
+async function refreshUsage() {
+  const widget = ensureUsageUI();
+  if (!widget) return;
+  const client = window.supabaseClient;
+  if (!client?.functions) return;
+  const { data, error } = await client.functions.invoke("professor-alex-gemini", { body: { action: "usage" } });
+  if (!error && data?.usage) renderUsage(data.usage);
+}
+
+function startUsageIndicator() {
+  if (alexUsageTimer) return;
+  const refresh = () => refreshUsage().catch(() => {});
+  refresh();
+  alexUsageTimer = window.setInterval(refresh, 60_000);
+}
+
+startUsageIndicator();
+if (!document.getElementById("luria-notifications")) {
+  const usageObserver = new MutationObserver(() => {
+    if (ensureUsageUI()) {
+      refreshUsage().catch(() => {});
+      usageObserver.disconnect();
+    }
+  });
+  usageObserver.observe(document.documentElement, { childList: true, subtree: true });
+}
 
 function escapeHtml(str) {
   return String(str || '')
@@ -193,6 +281,7 @@ if (form) {
       if (material) payload.file = material;
       const { data, error } = await client.functions.invoke("professor-alex-gemini", { body: payload });
       if (error) throw error;
+      if (data?.usage) renderUsage(data.usage);
       if (typeof data?.answer !== "string" || !data.answer.trim()) throw Error("empty_response");
       if (!isLiveActive) {
         display(data.answer, "Sua aula com o Professor Alex");
