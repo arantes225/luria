@@ -74,6 +74,8 @@
     root.innerHTML =
       top() +
       `<nav class="e-chapters" aria-label="Capítulos">${C.chapters.map((ch, i) => `<span class="${i === s.chapter ? "e-chapter-active" : ""}" ${i === s.chapter ? 'aria-current="step"' : ""}><b>0${i + 1}</b>${G.esc(ch)}</span>`).join("")}</nav><div class="e-layout">${map()}<section class="g-panel e-story"><span class="g-kicker">${G.esc(s.room)} · Cena ${run.index + 1}/${C.adventure.length}</span><h2>${G.esc(s.title)}</h2><div class="e-narrative"><span class="e-narrator" aria-hidden="true">✦</span><p>${G.esc(s.story)}</p></div><h3>${G.esc(s.prompt)}</h3>${interaction(x)}${journey(x)}${x.message ? `<div class="g-feedback ${x.solved ? "g-correct g-anim-correct" : "g-wrong g-anim-wrong"}" role="status"><strong>${x.solved ? "✓ Pendência resolvida" : "↻ Reavalie sua decisão"}</strong>${G.esc(x.message)}${x.solved ? G.refs(s.refs) : ""}</div>` : '<p class="g-note">Leia os dados antes de decidir. A seleção só é enviada ao confirmar.</p>'}<div class="g-actions">${G.button(x.solved ? "next" : "confirm", x.solved ? (x.ready ? (run.index === C.adventure.length - 1 ? "Encerrar o plantão →" : "Seguir para a próxima sala →") : "Médico a caminho…") : "Confirmar decisão")}${G.button("restart", "Novo plantão", true)}</div></section></div>${run.journal ? journal() : ""}${G.note}`;
+    const journeyScene = root.querySelector(".e-journey");
+    if (journeyScene) journeyScene.dataset.scene = s.id;
     const nextButton = root.querySelector('[data-action="next"]');
     if (nextButton && !x.ready) nextButton.disabled = true;
     root.querySelectorAll("[data-option]").forEach(

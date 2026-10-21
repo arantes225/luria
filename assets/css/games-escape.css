@@ -166,6 +166,45 @@
   align-items: center;
   background: linear-gradient(var(--color-primary-subtle), var(--color-surface-elevated));
 }
+.luria-game .e-journey-wall::before,
+.luria-game .e-journey-wall::after {
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-align: center;
+  content: "";
+}
+.luria-game .e-journey[data-scene="arrival"] .e-journey-wall { background: linear-gradient(135deg, #dce9f8, #f8f3e8); }
+.luria-game .e-journey[data-scene="arrival"] .e-journey-wall::before { left: 5%; width: 29%; height: 52px; border-radius: 8px 8px 0 0; background: #38648a; box-shadow: 18px -22px 0 -9px #d8af6c; content: "RECEPÇÃO"; }
+.luria-game .e-journey[data-scene="identity"] .e-journey-wall { background: linear-gradient(135deg, #d8f0ef, #e7eefb); }
+.luria-game .e-journey[data-scene="identity"] .e-journey-wall::before { left: 10%; width: 38px; height: 55px; border: 5px solid #405d7d; border-radius: 6px; background: #73c8c2; box-shadow: 11px 12px 0 -5px #405d7d, 58px 20px 0 -8px #f5f9fb; content: ""; }
+.luria-game .e-journey[data-scene="identity"] .e-journey-wall::after { right: 8%; width: 84px; height: 37px; border-radius: 7px 7px 0 0; background: #758fa8; content: "LEITO"; }
+.luria-game .e-journey[data-scene="hands"] .e-journey-wall { background: linear-gradient(135deg, #d9f4fa, #e9f8f0); }
+.luria-game .e-journey[data-scene="hands"] .e-journey-wall::before { left: 8%; width: 64px; height: 30px; border: 7px solid #6c99af; border-top: 0; border-radius: 0 0 22px 22px; background: #b9ebf1; box-shadow: 100px 0 0 -7px #b9ebf1, 100px 0 0 0 #6c99af; content: ""; }
+.luria-game .e-journey[data-scene="hands"] .e-journey-wall::after { right: 7%; width: 36px; height: 66px; border-radius: 8px 8px 3px 3px; background: #54a9bd; box-shadow: -7px -10px 0 -5px #fff; content: "SABÃO"; }
+.luria-game .e-journey[data-scene="dengue"] .e-journey-wall { background: linear-gradient(135deg, #f7e5dd, #e8edf8); }
+.luria-game .e-journey[data-scene="dengue"] .e-journey-wall::before { left: 7%; width: 112px; height: 32px; border: 5px solid #5d7899; border-radius: 9px 9px 2px 2px; background: #f8fbff; box-shadow: 74px -20px 0 -14px #d58c73; content: "OBSERVAÇÃO"; }
+.luria-game .e-journey[data-scene="dengue"] .e-journey-wall::after { right: 10%; width: 31px; height: 47px; border: 4px solid #4b6280; border-radius: 5px; background: #80c4b7; content: ""; }
+.luria-game .e-journey[data-scene="glucose"] .e-journey-wall { background: linear-gradient(135deg, #e7ddf5, #edf4fb); }
+.luria-game .e-journey[data-scene="glucose"] .e-journey-wall::before { left: 8%; width: 42px; height: 62px; border-radius: 5px 5px 0 0; background: #8266a7; box-shadow: 54px 12px 0 -3px #f8fafc, 54px 12px 0 1px #9aaabd; content: ""; }
+.luria-game .e-journey[data-scene="glucose"] .e-journey-wall::after { right: 7%; width: 93px; height: 38px; border-radius: 7px 7px 0 0; background: #6b7793; content: "CONSULTÓRIO"; }
+.luria-game .e-journey[data-scene="time-out"] .e-journey-wall { background: radial-gradient(circle at 50% 10%, #fff5c7, #c9e3e8 50%, #e8f2f4); }
+.luria-game .e-journey[data-scene="time-out"] .e-journey-wall::before { left: 14%; width: 100px; height: 34px; border: 6px solid #607a92; border-radius: 30px 30px 4px 4px; background: #d3ece9; box-shadow: 0 -38px 0 -12px #fff2b0; content: "MESA CIRÚRGICA"; }
+.luria-game .e-journey[data-scene="time-out"] .e-journey-wall::after { right: 8%; width: 38px; height: 65px; border-radius: 7px 7px 0 0; background: #5b8a93; content: ""; }
+.luria-game .e-journey[data-scene="recheck"] .e-journey-wall { background: linear-gradient(135deg, #d9ebf6, #f4eddf); }
+.luria-game .e-journey[data-scene="recheck"] .e-journey-wall::before { left: 7%; width: 45px; height: 62px; border: 5px solid #415d7c; border-radius: 6px; background: #6dc4bd; box-shadow: 76px 16px 0 -7px #e9d48a; content: ""; }
+.luria-game .e-journey[data-scene="recheck"] .e-journey-wall::after { right: 9%; width: 89px; height: 37px; border-radius: 7px 7px 0 0; background: #6d8c9d; content: "REAVALIAÇÃO"; }
+.luria-game .e-journey[data-scene="handoff"] .e-journey-wall { background: linear-gradient(135deg, #ebe0cc, #e7ecf6); }
+.luria-game .e-journey[data-scene="handoff"] .e-journey-wall::before { left: 8%; width: 120px; height: 42px; border-radius: 7px 7px 0 0; background: #8d715d; box-shadow: 23px -18px 0 -11px #d7ad77, 70px -18px 0 -11px #5b8ea5; content: "PASSAGEM DE TURNO"; }
+.luria-game .e-journey[data-scene="handoff"] .e-journey-wall::after { right: 9%; width: 27px; height: 57px; border-radius: 14px 14px 3px 3px; background: #fff; box-shadow: -37px 0 0 #59a0ad; content: ""; }
+.luria-game .e-journey[data-scene="ending"] .e-journey-wall { background: linear-gradient(135deg, #ffddaa, #c7e5ed 58%, #edf5f8); }
+.luria-game .e-journey[data-scene="ending"] .e-journey-wall::before { left: 9%; width: 78px; height: 105px; border: 7px solid #59768e; border-bottom: 0; background: #80b8c2; content: "SAÍDA"; }
+.luria-game .e-journey[data-scene="ending"] .e-journey-wall::after { right: 9%; bottom: 45px; width: 35px; height: 35px; border-radius: 50%; background: #ffd36b; box-shadow: 0 0 0 12px #ffd36b55; content: ""; }
 .luria-game .e-journey-window {
   width: 15%;
   height: 55px;
