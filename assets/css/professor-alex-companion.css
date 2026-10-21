@@ -172,7 +172,7 @@ professor-alex-mascot {
   font-weight: 750;
 }
 .alex-live-quick { flex: 1; border: 1px solid #2b7de9; background: #173f83; color: #fff; }
-.help .tutoring { flex: 1; border: 1px solid #2c3f59; background: #18263a; color: #9bc6ff; }
+.help .tutoring { flex: 1; border: 1px solid #2c3f59; background: #18263a; color: #9bc6ff; text-align: center; line-height: 1.25; }
 .alex-quick-input {
   flex: 1;
   min-width: 0;

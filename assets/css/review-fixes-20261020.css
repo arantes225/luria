@@ -254,3 +254,92 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   body[data-page="questoes"] .error-metric-summary-grid.qs-metric-4col { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
   body[data-page="dashboard"] #ui-review-summary .ui-quick-metric { flex-basis: 100% !important; }
 }
+
+/* Dashboard: hierarchy compacta e previsível para o Layout 1. */
+@media (min-width: 981px) {
+  html body[data-page="dashboard"] #dashboard-alternative .dl-grid.dl-layout-1 {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-rows: auto auto auto auto !important;
+    gap: 10px !important;
+    align-items: stretch !important;
+  }
+
+  html body[data-page="dashboard"] #dashboard-alternative .dl-agenda-study-pair-1,
+  html body[data-page="dashboard"] #dashboard-alternative .dl-side {
+    display: contents !important;
+  }
+
+  html body[data-page="dashboard"] #dashboard-alternative .dl-agenda-study-pair-1 > .dl-agenda-large {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  html body[data-page="dashboard"] #dashboard-alternative .dl-agenda-study-pair-1 > .dl-study-now-card-main {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+  }
+
+  html body[data-page="dashboard"] #dashboard-alternative .dl-grid .ui-review-summary {
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  html body[data-page="dashboard"] #dashboard-alternative .ui-review-summary .ui-quick-metric {
+    min-height: 118px !important;
+    height: 118px !important;
+    padding: 14px 16px !important;
+    justify-content: space-between !important;
+  }
+
+  html body[data-page="dashboard"] #dashboard-alternative .dl-grid .dl-cat {
+    grid-column: 1 / -1 !important;
+    grid-row: 3 !important;
+    min-height: 136px !important;
+    height: 136px !important;
+  }
+
+  html body[data-page="dashboard"] #dashboard-alternative .dl-grid .dl-areas {
+    grid-column: 1 / -1 !important;
+    grid-row: 4 !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  html body[data-page="dashboard"] #dashboard-alternative .dl-agenda-study-pair-1 > .dl-card {
+    height: 100% !important;
+    min-height: 360px !important;
+  }
+}
+
+@media (max-width: 980px) {
+  html body[data-page="dashboard"] #dashboard-alternative .dl-grid.dl-layout-1 {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  html body[data-page="dashboard"] #dashboard-alternative .dl-agenda-study-pair-1,
+  html body[data-page="dashboard"] #dashboard-alternative .dl-side {
+    display: contents !important;
+  }
+
+  html body[data-page="dashboard"] #dashboard-alternative .dl-agenda-study-pair-1 > .dl-study-now-card-main { grid-column: 1 !important; grid-row: 1 !important; }
+  html body[data-page="dashboard"] #dashboard-alternative .dl-agenda-study-pair-1 > .dl-agenda-large { grid-column: 1 !important; grid-row: 2 !important; }
+  html body[data-page="dashboard"] #dashboard-alternative .dl-grid .ui-review-summary { grid-column: 1 !important; grid-row: 3 !important; }
+  html body[data-page="dashboard"] #dashboard-alternative .dl-grid .dl-cat { grid-column: 1 !important; grid-row: 4 !important; }
+  html body[data-page="dashboard"] #dashboard-alternative .dl-grid .dl-areas { grid-column: 1 !important; grid-row: 5 !important; }
+}
+
+body[data-page="dashboard"] #luria-alex-topbar { display: none !important; }
