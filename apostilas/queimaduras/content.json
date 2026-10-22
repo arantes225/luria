@@ -562,7 +562,14 @@
         ],
         [
           "t",
-          "Em criança, a estimativa da SCQ deve usar <strong>tabela de Lund–Browder específica para a idade</strong>; mnemônicos simplificados podem ajudar em provas, mas variam por intervalo etário e não substituem a tabela. Não aplicar a regra de “subtrair 1% da cabeça e acrescentar 0,5% a cada perna por ano” de forma linear até 10 anos: ela não reproduz consistentemente todas as faixas exibidas.",
+          [
+            "Segmento anatômico",
+            "Lactente (<1 ano)",
+            "Criança 1–4 anos",
+            "Criança 5–9 anos",
+            "Criança 10–14 anos",
+            "Adulto (≥15 anos)"
+          ],
           [
             [
               "<strong>Cabeça (total: anterior + posterior)</strong>",
@@ -617,7 +624,7 @@
         ],
         [
           "p",
-          "<em>Regra mnemônica pediátrica simplificada para provas:</em> No recém-nascido e lactente até 1 ano, a cabeça vale <strong>18%</strong> e cada membro inferior vale <strong>13,5%</strong> (ambos os MMII somam 27%). A cada ano de vida que a criança completa até os 10 anos, subtrai-se 1% da cabeça e adiciona-se 0,5% a cada membro inferior (1% na soma dos dois membros inferiores), mantendo a harmonia matemática até atingir os padrões do adulto."
+          "<strong>Memória pediátrica:</strong> a cabeça corresponde a proporção maior da SCQ no lactente (cerca de 18%) e as pernas a proporção menor que no adulto. A progressão <strong>não deve ser calculada pela regra linear de 1% ao ano</strong>: para classificar o paciente real, consulte a tabela Lund–Browder por idade e superfície efetivamente afetada."
         ]
       ]
     ],
