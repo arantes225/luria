@@ -36,7 +36,7 @@
     ],
     [
       "estadiamento-cirurgico-figo-2023-e-classificacao-molecular",
-      "4. Classificação Molecular do Câncer de Endométrio (TCGA) e Atualizações do Estadiamento FIGO 2023"
+      "4. Classificação molecular aplicada — quando muda o risco"
     ],
     [
       "4-quadro-cl-nico-e-diagn-sticos-diferenciais",
@@ -44,7 +44,7 @@
     ],
     [
       "5-abordagem-inicial-antes-e-depois-da-atualiza-o-acog-2026",
-      "6. Abordagem inicial: antes e depois da atualização ACOG 2026"
+      "6. Sangramento pós-menopausa — abordagem brasileira e comparação ACOG"
     ],
     [
       "6-hiperplasia-endometrial-e-ein-a-fronteira-com-c-ncer",
@@ -64,7 +64,7 @@
     ],
     [
       "complemento-avancado-especializado",
-      "11. Complemento de Oncologia Ginecológica: Estratificação Molecular FIGO 2023, Testagem Universal de Lynch e Mapeamento de Linfonodo Sentinela"
+      "11. Perfis moleculares e linfonodo sentinela — decisões cirúrgicas"
     ],
     [
       "10-adjuv-ncia-por-que-nem-toda-paciente-recebe-radioterapia-quimioterapia",
@@ -84,7 +84,7 @@
     ],
     [
       "complemento-especializado-fase2",
-      "16. Abordagem Cirúrgica Robótica, Preservação de Fertilidade e Terapia Sistêmica em Doença Metastática"
+      "16. Preservação reprodutiva e tratamento sistêmico — critérios de segurança"
     ],
     [
       "13-lynch-e-gen-tica-o-que-perguntar-e-quando-encaminhar",
@@ -92,7 +92,7 @@
     ],
     [
       "complemento-micro-normativo",
-      "18. Síndromes Hereditárias Associadas ao Câncer Endometrial: Critérios de Amsterdam II e Bethesda"
+      "18. Lynch — testagem tumoral, risco hereditário e limites de critérios familiares"
     ],
     [
       "estrategia-rastreamento-linch",
@@ -104,7 +104,7 @@
     ],
     [
       "15-fluxogramas-textuais-luria",
-      "21. Fluxogramas textuais LURIA"
+      "21. Fluxos de decisão clínica — três caminhos de alto rendimento"
     ],
     [
       "16-casos-cl-nicos-comentados",
@@ -257,7 +257,7 @@
       [
         [
           "2",
-          "4. Classificação Molecular do Câncer de Endométrio (TCGA) e Atualizações do Estadiamento FIGO 2023"
+          "4. Classificação molecular aplicada — quando muda o risco"
         ],
         [
           "p",
@@ -386,7 +386,7 @@
       [
         [
           "2",
-          "6. Abordagem inicial: antes e depois da atualização ACOG 2026"
+          "6. Sangramento pós-menopausa — abordagem brasileira e comparação ACOG"
         ],
         [
           "p",
@@ -659,7 +659,7 @@
       [
         [
           "2",
-          "11. Complemento de Oncologia Ginecológica: Estratificação Molecular FIGO 2023, Testagem Universal de Lynch e Mapeamento de Linfonodo Sentinela"
+          "11. Perfis moleculares e linfonodo sentinela — decisões cirúrgicas"
         ],
         [
           "3",
@@ -988,7 +988,7 @@
       [
         [
           "2",
-          "16. Abordagem Cirúrgica Robótica, Preservação de Fertilidade e Terapia Sistêmica em Doença Metastática"
+          "16. Preservação reprodutiva e tratamento sistêmico — critérios de segurança"
         ],
         [
           "3",
@@ -1106,7 +1106,7 @@
       [
         [
           "2",
-          "18. Síndromes Hereditárias Associadas ao Câncer Endometrial: Critérios de Amsterdam II e Bethesda"
+          "18. Lynch — testagem tumoral, risco hereditário e limites de critérios familiares"
         ],
         [
           "3",
@@ -1228,31 +1228,135 @@
       [
         [
           "2",
-          "21. Fluxogramas textuais LURIA"
-        ],
-        [
-          "3",
-          "Fluxo A — Sangramento pós-menopausa"
+          "21. Fluxos de decisão clínica — três caminhos de alto rendimento"
         ],
         [
           "p",
-          "<strong>Fluxo brasileiro:</strong> identificar sangramento e estabilidade clínica → exame especular, idade, fatores de risco → US transvaginal e decisão de biópsia orientada por <a href=\"https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude\" target=\"_blank\" rel=\"noopener noreferrer\">INCA</a> e <a href=\"https://femina.org.br/article/hiperplasia-endometrial/\" target=\"_blank\" rel=\"noopener noreferrer\">FEBRASGO 2025</a> → sangramento recorrente, biópsia insuficiente, imagem focal ou fatores de risco relevantes exigem prosseguir investigação, frequentemente com amostragem dirigida → se EIN/hiperplasia atípica, pesquisar carcinoma coexistente e discutir tratamento definitivo → se carcinoma confirmado, revisar patologia e encaminhar para oncoginecologia. <strong>Comparação ACOG 2026:</strong> associação de US e biópsia já na avaliação inicial da maioria."
+          "<strong>Como usar:</strong> comece pela pergunta em negrito, percorra a segunda coluna e chegue à ação da terceira. Não é um substituto para protocolos locais; é uma ferramenta de raciocínio que evita pular do exame diretamente ao tratamento."
         ],
         [
           "3",
-          "Fluxo B — Câncer confirmado"
+          "Fluxo A — apareceu sangramento após a menopausa"
         ],
         [
-          "p",
-          "Revisão histológica → tipo e grau → MMR/p53/POLE quando possível → exame clínico e imagem de extensão → discutir cirurgia e estratégia nodal → patologia final + FIGO 2023 + grupo de risco clínico-molecular → observar ou adjuvância individualizada → seguimento."
+          "t",
+          [
+            "Pergunta-chave",
+            "Resposta ou evidência",
+            "Próximo passo"
+          ],
+          [
+            [
+              "Está instável pelo sangramento?",
+              "Hipotensão, taquicardia, síncope, anemia importante",
+              "Estabilizar, controlar perdas e investigar após segurança"
+            ],
+            [
+              "A origem é endometrial?",
+              "Anamnese, exame especular, história de medicamentos",
+              "US pélvico/transvaginal e avaliação histológica quando indicada"
+            ],
+            [
+              "Eco <4 mm e sangramento cessou no episódio único?",
+              "Baixo risco, imagem adequada e acompanhamento possível",
+              "Individualizar conforme FEBRASGO e risco; orientar retorno"
+            ],
+            [
+              "Sangramento persiste ou é recorrente?",
+              "Sim, inclusive se o eco tem 3 mm",
+              "Investigar com biópsia; avaliar histeroscopia se lesão focal"
+            ],
+            [
+              "Histologia EIN ou carcinoma?",
+              "Lesão precursora ou tumor confirmado",
+              "Encaminhar para equipe de oncoginecologia e genética conforme caso"
+            ]
+          ],
+          "book-table"
         ],
         [
           "3",
-          "Fluxo C — Desejo reprodutivo"
+          "Fluxo B — biópsia confirmou carcinoma"
+        ],
+        [
+          "t",
+          [
+            "Passo",
+            "Dado necessário",
+            "Decisão que ele modifica"
+          ],
+          [
+            [
+              "Revisar histologia",
+              "Tipo endometrioide versus agressivo, grau, confiança da amostra",
+              "Risco, extensão de estadiamento e estratégia"
+            ],
+            [
+              "Integrar biomarcadores",
+              "MMR, p53, POLE patogênica quando disponível",
+              "Grupo de risco, possibilidade de Lynch e opções terapêuticas"
+            ],
+            [
+              "Definir extensão",
+              "RM/US experiente, imagem de doença distante quando indicada",
+              "Ressecabilidade, cirurgia e avaliação linfonodal"
+            ],
+            [
+              "Classificar após dados definitivos",
+              "FIGO 2023, LVSI, margens, linfonodos e molecular",
+              "Observar ou indicar adjuvância conforme grupo"
+            ],
+            [
+              "Planejar seguimento",
+              "Risco de recidiva, sintomas e efeitos tardios",
+              "Consultas e exames direcionados, sem protocolos universais"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Fluxo C — paciente deseja preservar a fertilidade"
+        ],
+        [
+          "t",
+          [
+            "Pergunta de elegibilidade",
+            "O que confirmar",
+            "Implicação"
+          ],
+          [
+            [
+              "É um subtipo elegível?",
+              "Endometrioide de baixo grau com revisão histológica",
+              "Histologia agressiva impede tratar como alternativa simples"
+            ],
+            [
+              "Há invasão ou doença extrauterina?",
+              "Imagem adequada sem invasão miometrial e sem extensão",
+              "Qualquer invasão relevante muda a segurança"
+            ],
+            [
+              "Aceita seguimento rigoroso?",
+              "Consentimento, disponibilidade de biópsias seriadas e retornos",
+              "Sem seguimento confiável a estratégia torna-se insegura"
+            ],
+            [
+              "Resposta histológica foi documentada?",
+              "Nova amostragem, persistência ou regressão da lesão",
+              "Prosseguir para plano reprodutivo ou rever tratamento"
+            ],
+            [
+              "Prole concluída ou houve progressão?",
+              "Discussão de risco e metas da paciente",
+              "Avaliar histerectomia definitiva com equipe especializada"
+            ]
+          ],
+          "book-table"
         ],
         [
           "p",
-          "Tumor inicial endometrioide de baixo grau? → imagem sem invasão? → revisão especializada de lâminas, risco genético, viabilidade de seguimento? → decisão compartilhada progestagênica supervisionada → histologia seriada para documentar resposta → fertilidade quando segura → cirurgia definitiva após prole/falha/recidiva conforme indicação."
+          "<strong>Pulo do Gato:</strong> o ultrassom é mapa anatômico, a biópsia é o diagnóstico, FIGO descreve extensão e biologia, e a equipe multidisciplinar converte esse conjunto em tratamento. Pular qualquer uma dessas etapas pode produzir erro com aparência de raciocínio rápido."
         ]
       ]
     ],
