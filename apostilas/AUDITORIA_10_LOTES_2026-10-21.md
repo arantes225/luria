@@ -41,7 +41,7 @@ Critério: 264 registros distribuídos ciclicamente por especialidade (27 nos lo
 | 13 | Clínica Médica | Trauma Pélvico e Geniturinário | /apostilas/trauma-pelvico-e-geniturinario/ | Pendente |
 | 14 | Clínica Médica | Vigilância Sanitária | /apostilas/vigilancia-sanitaria/ | Pendente |
 | 15 | Clínica Médica | Lesão Renal Aguda | /apostilas/lesao-renal-aguda/ | Pendente |
-| 16 | Ginecologia e Obstetrícia | Câncer de Endométrio | /apostilas/cancer-de-endometrio/ | Pendente |
+| 16 | Ginecologia e Obstetrícia | Câncer de Endométrio | /apostilas/cancer-de-endometrio/ | Revisão clínica/editorial aplicada; QA oncológico e visual pendente |
 | 17 | Ginecologia e Obstetrícia | Infecções Sexualmente Transmissíveis (IST) | /apostilas/infeccoes-sexualmente-transmissiveis/ | Triagem iniciada |
 | 18 | Ginecologia e Obstetrícia | Infecções na gestação e transmissão vertical | /apostilas/infeccoes-gestacao-transmissao-vertical/ | Pendente |
 | 19 | Hanseníase: Diagnóstico, Tratamento e Prevenção de Incapacidades | hanseniase-diagnostico-tratamento-e-prevencao-de-incapacidades | /apostilas/hanseniase-diagnostico-tratamento-e-prevencao-de-incapacidades/ | Pendente |
