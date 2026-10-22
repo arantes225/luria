@@ -777,11 +777,26 @@
       [
         [
           "2",
-          "18. Resumo de alto rendimento e armadilhas"
+          "O que não posso esquecer — revisão de alto rendimento"
+        ],
+        [
+          "o",
+          [
+            "<strong>Sangramento pós-menopausa:</strong> investigar, mesmo discreto; citologia cervical normal não exclui carcinoma endometrial.",
+            "<strong>Prioridade Brasil:</strong> INCA, MS e FEBRASGO para diagnóstico; FIGO + patologia brasileira para estádio; SBOC para tratamentos.",
+            "<strong>Eco fino:</strong> abaixo de 4 mm não afasta tumor se sangramento recorre, há lesão focal ou alto risco; tecido dá diagnóstico definitivo.",
+            "<strong>EIN:</strong> hiperplasia atípica tem risco de carcinoma coexistente; não se confunde com hiperplasia sem atipia.",
+            "<strong>FIGO 2023:</strong> anatomia, histologia, LVSI e molecular. IVB é metástase peritoneal além da pelve; IVC inclui metástase distante.",
+            "<strong>Biomarcadores:</strong> POLE patogênico pode sinalizar prognóstico favorável; p53abn costuma sinalizar risco maior; MMRd exige triagem para Lynch sem presumir hereditariedade.",
+            "<strong>Cirurgia/adjuvância:</strong> ajustar por risco; linfonodo sentinela não implica linfadenectomia universal nem dispensa sempre terapias adicionais.",
+            "<strong>Fertilidade:</strong> preservação uterina é exceção com critérios histológicos, imagem e vigilância especializados.",
+            "<strong>Lynch:</strong> vigilância varia com gene; CA-125 e ultrassom anuais não são regra universal com benefício demonstrado.",
+            "<strong>Emergência:</strong> sangramento com choque pede estabilização e controle do foco antes de planejamento eletivo."
+          ]
         ],
         [
           "p",
-          "<li>Sangramento pós-menopausa é sintoma de alerta, mesmo discreto. Não confundir com diagnóstico de câncer.</li>\n<li>Citologia cervical normal não exclui neoplasia endometrial.</li>\n<li><strong>ACOG 2026</strong>: na maioria, combinar TVUS e amostragem inicial; explicitar divergência de protocolos antigos de eco ≤4 mm sem biópsia inicial.</li>\n<li>Amostra insuficiente ou sangramento persistente exige reconsiderar diagnóstico; lesão focal pode escapar de pipelle.</li>\n<li>EIN/hiperplasia atípica é precursora relevante, diferente de hiperplasia simples.</li>\n<li>POLEmut geralmente tem bom prognóstico; p53abn tende ao pior; MMRd relaciona-se a câncer hereditário em parcela dos casos.</li>\n<li>FIGO 2023 integra anatomia, histologia, LVSI e perfil molecular; risco de adjuvância não é apenas estágio.</li>\n<li>Histerectomia total + salpingo-ooforectomia bilateral é eixo cirúrgico frequente; linfonodo sentinela pode reduzir morbidade em situações adequadas.</li>\n<li>Preservação de fertilidade não é rotina para doença invasiva; exige critérios rigorosos e biópsias seriadas.</li>\n<li>Terapias sistêmicas avançadas dependem de biomarcadores, linhas, disponibilidade e análise multidisciplinar.</li>"
+          "<strong>Pulo do Gato:</strong> nem o número de milímetros no ultrassom nem um marcador molecular isolado respondem a todas as decisões. Pergunte: qual risco clínico? Qual diagnóstico histológico? Qual extensão? O que muda a conduta no Brasil?"
         ]
       ]
     ],
@@ -889,19 +904,31 @@
       [
         [
           "2",
-          "20. Referências verificáveis e diferenças de fonte"
+          "Referências e hierarquia das evidências"
         ],
         [
-          "p",
-          "1. Instituto Nacional de Câncer (INCA). <strong>Câncer do corpo do útero — versão para profissionais de saúde</strong>. https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude<br>2. Concin N, et al. <strong>ESGO–ESTRO–ESP guidelines for endometrial carcinoma: update 2025</strong>. Lancet Oncology. 2025;26:e423–e435. DOI: 10.1016/S1470-2045(25)00167-6. https://pubmed.ncbi.nlm.nih.gov/40744042/<br>3. FIGO. <strong>FIGO staging of endometrial cancer: 2023</strong>. Int J Gynecol Obstet. 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10482588/<br>4. American College of Obstetricians and Gynecologists. <strong>Updated guidance on evaluation of postmenopausal bleeding</strong>, comunicado 16/04/2026. https://www.acog.org/news/news-releases/2026/04/acog-publishes-updated-guidance-evaluation-postmenopausal-bleeding<br>5. ACOG. <strong>The Role of Transvaginal Ultrasonography in Evaluating the Endometrium of Women With Postmenopausal Bleeding</strong>, orientação de 2018 para comparação histórica, <strong>não usar como único algoritmo de 2026</strong>. https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/05/the-role-of-transvaginal-ultrasonography-in-evaluating-the-endometrium-of-women-with-postmenopausal-bleeding<br>6. National Cancer Institute. <strong>Endometrial Cancer Treatment (PDQ)</strong>, edição para profissionais, inclui FIGO 2023, cirurgia e terapias por risco. https://www.cancer.gov/types/uterine/hp/endometrial-treatment-pdq<br>7. Sociedade Brasileira de Patologia. <strong>Carcinomas do Endométrio</strong>, Manual 2026. https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/"
+          "o",
+          [
+            "<a href=\"https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL | INCA] Câncer do corpo do útero: profissionais de saúde.</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2026/manual-de-atencao-as-mulheres-na-transicao-menopausal-e-menopausa.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL | MS] Manual de atenção às mulheres na transição menopausal e menopausa, 2026.</a>",
+            "<a href=\"https://femina.org.br/article/hiperplasia-endometrial/\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL | FEBRASGO] Hiperplasia endometrial, Protocolo nº 31, Femina. 2025;53(6):841–847.</a>",
+            "<a href=\"https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL | SOCIEDADE BRASILEIRA DE PATOLOGIA] Carcinomas do Endométrio, manual 2026: FIGO e biomarcadores.</a>",
+            "<a href=\"https://imunotox.sboc.org.br/diretrizes-publicas-categorias/2026/\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL | SBOC] Diretrizes de tratamentos oncológicos, 2026, capítulo Endométrio.</a>",
+            "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10482588/\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL | ESTADIAMENTO] FIGO 2023: estadiamento de carcinoma endometrial.</a>",
+            "<a href=\"https://pubmed.ncbi.nlm.nih.gov/40744042/\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL | TRATAMENTO] ESGO–ESTRO–ESP: update 2025.</a>",
+            "<a href=\"https://doi.org/10.1097/AOG.0000000000006275\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL | DIAGNÓSTICO] ACOG, Clinical Practice Update, 2026, investigação do sangramento pós-menopausa.</a>",
+            "<a href=\"https://doi.org/10.1016/j.ejca.2026.116739\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL | LYNCH] ESGO, consenso de prevenção e manejo de Lynch, 2026.</a>",
+            "<a href=\"https://www.ncbi.nlm.nih.gov/books/NBK1211/\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL | GENÉTICA] GeneReviews: Lynch Syndrome, vigilância e variação de risco por gene.</a>"
+          ],
+          "reference-list"
         ],
         [
           "3",
-          "Divergências explicadas"
+          "Conflitos de fontes: o que interpretar no contexto brasileiro"
         ],
         [
           "p",
-          "<li><strong>ACOG 2018 × ACOG 2026:</strong> o primeiro permitia US isolada no episódio inicial selecionado com endométrio ≤4 mm; a atualização orienta combinar US e tecido inicialmente na maioria. Contexto de implementação no Brasil deve respeitar disponibilidade e diretrizes nacionais.</li>\n<li><strong>Esquema histológico antigo × classificação moderna:</strong> “tipo I/II” é introdução histórica; classificação molecular, LVSI e histologia refinam risco.</li>\n<li><strong>Diretrizes internacionais × SUS:</strong> procedimentos, medicamentos e testes nem sempre estão disponíveis de forma uniforme. Não afirmar incorporação automática de imunoterápicos, painéis moleculares ou exames.</li>"
+          "<strong>Sangramento pós-menopausa:</strong> FEBRASGO 2025 discute biópsia diante de suspeita clínica, mas também admite acompanhamento de episódio único de baixo risco e endométrio regular inferior a 4 mm, com amostragem se recorrente. ACOG 2026, como atualização internacional, favorece amostragem inicial na maioria. <strong>Tratamento:</strong> diretrizes SBOC 2026 consideram restrições de acesso e relevância clínica no Brasil; orientações ESGO 2025 complementam, mas não significam incorporação automática. <strong>Estadiamento:</strong> a Sociedade Brasileira de Patologia de 2026 emprega FIGO 2023 e destaca MMR, p53 e POLE."
         ]
       ]
     ],
