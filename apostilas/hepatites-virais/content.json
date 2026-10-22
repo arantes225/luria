@@ -866,6 +866,62 @@
         [
           "p",
           "A expressão “portador inativo” merece cautela porque atividade biológica pode mudar. Melhor descrever fase clínica e dados disponíveis no acompanhamento."
+        ],
+        [
+          "3",
+          "Seis padrões de sorologia que precisam ser diferenciados"
+        ],
+        [
+          "t",
+          [
+            "HBsAg",
+            "Anti-HBc total",
+            "Anti-HBs",
+            "Interpretação clínica (com ressalvas)"
+          ],
+          [
+            [
+              "Negativo",
+              "Negativo",
+              "Positivo",
+              "Padrão de resposta vacinal, quando anti-HBs em título protetor"
+            ],
+            [
+              "Negativo",
+              "Positivo",
+              "Positivo",
+              "Padrão de infecção natural resolvida (não apenas vacinação)"
+            ],
+            [
+              "Positivo",
+              "Positivo",
+              "Negativo",
+              "Infecção atual; diferenciar fase aguda/crônica por tempo, anti-HBc IgM e outros dados"
+            ],
+            [
+              "Negativo",
+              "Positivo",
+              "Negativo",
+              "Anti-HBc isolado: repetir, conferir anti-HBs quantitativo, HBV-DNA e contexto de risco/imunossupressão"
+            ],
+            [
+              "Negativo",
+              "Negativo",
+              "Negativo",
+              "Sem evidência sorológica de imunidade ou exposição; avaliar vacinação"
+            ],
+            [
+              "Positivo",
+              "Positivo",
+              "Positivo",
+              "Interpretação menos usual: conferir ensaio, contexto clínico e eventual coexistência; não rotular automaticamente como cura"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Interpretação antes de prescrever:</strong> testes não são uma linha do tempo perfeita. Anti-HBc IgM favorece infecção recente, mas pode reaparecer em reativação; HBsAg persistente por mais de seis meses caracteriza infecção crônica. Sob imunossupressão, anti-HBc isolado importa por risco de reativação, mesmo com HBsAg ausente. HBV-DNA e ALT ajudam a avaliar replicação e lesão, mas decisões de antivirais no SUS dependem do PCDT vigente e situação especial. Uma pessoa com anti-HBs protetor após vacina não apresenta anti-HBc apenas pelo imunizante."
         ]
       ]
     ],
@@ -1143,6 +1199,50 @@
         [
           "p",
           "Em pessoa sem fibrose avançada e sem outras condições hepáticas, cura costuma reduzir necessidade de seguimento hepatológico especializado contínuo. Mas cirrose preexistente demanda rastreio de HCC, avaliação de varizes/hipertensão portal e risco metabólico/álcool. A decisão não se baseia somente em ALT normal ou HCV-RNA negativo."
+        ],
+        [
+          "3",
+          "Três exames distintos: triagem, confirmação e resposta sustentada"
+        ],
+        [
+          "t",
+          [
+            "Pergunta clínica",
+            "Exame adequado",
+            "Conclusão permitida"
+          ],
+          [
+            [
+              "Houve contato anterior com HCV?",
+              "Anti-HCV (triagem)",
+              "Reagente não informa, isoladamente, se há infecção atual"
+            ],
+            [
+              "O paciente apresenta infecção replicativa agora?",
+              "HCV-RNA (teste molecular)",
+              "Detectável confirma viremia; avaliar timing/exposição se resultado inicial negativo"
+            ],
+            [
+              "O tratamento foi efetivo?",
+              "HCV-RNA aproximadamente 12 semanas após completar terapia, conforme PCDT",
+              "RNA indetectável caracteriza resposta virológica sustentada; anticorpo pode continuar reagente"
+            ],
+            [
+              "Pode ocorrer nova infecção após cura?",
+              "Nova exposição e HCV-RNA quando indicado",
+              "Cura não gera imunidade esterilizante nem dispensa prevenção"
+            ],
+            [
+              "Gestante com anti-HCV positivo",
+              "Avaliação de viremia e seguimento materno-infantil conforme PCDT",
+              "Evitar extrapolar segurança de DAA em gestação sem diretriz brasileira e avaliação especializada"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Pulo do Gato:</strong> RVS12 não significa que o anti-HCV fica negativo. O alvo é HCV-RNA indetectável no marco recomendado após a terapia. Em cirrose, a cura virológica não elimina automaticamente risco prévio de carcinoma hepatocelular e necessidade de seguimento. Paciente que interrompe o esquema precisa de manejo conforme fluxos nacionais atuais; não reinventar dose ou duração com base em uma tabela antiga de cursinho. Fonte prioritária: <a href=\"https://portal.aids.gov.br/hepatite-c\">Portal oficial de apoio à decisão clínica em hepatite C</a> e PCDT de 2026."
         ]
       ]
     ],
