@@ -26,10 +26,10 @@ Critério: 264 registros distribuídos ciclicamente por especialidade (27 nos lo
 
 | Nº | Área atual | Apostila | Caminho | Status |
 |---:|---|---|---|---|
-| 1 | Cirurgia Geral | Perfuração de Víscera Oca e Peritonite Aguda | /apostilas/perfuracao-de-viscera-oca/ | Triagem iniciada |
+| 1 | Cirurgia Geral | Perfuração de Víscera Oca e Peritonite Aguda | /apostilas/perfuracao-de-viscera-oca/ | Revisão clínica/editorial aplicada; QA médico e visual pendentes |
 | 2 | Cirurgia Geral | Doenças Prostáticas e Avaliação Inicial de Neoplasias Urológicas | /apostilas/doencas-prostaticas-e-avaliacao-inicial-de-neoplasias-urologicas/ | Pendente |
 | 3 | Cirurgia Geral | tumores-renais-e-vesicais | /apostilas/tumores-renais-e-vesicais/ | Pendente |
-| 4 | Cirurgia Geral | Queimaduras | /apostilas/queimaduras/ | Pendente |
+| 4 | Cirurgia Geral | Queimaduras | /apostilas/queimaduras/ | Revisão clínica/editorial aplicada; QA médico, imagens e visual pendentes |
 | 5 | Clínica Médica | Arritmias e Fibrilação Atrial | /apostilas/arritmias-fibrilacao-atrial/ | Revisão científica/editorial aplicada; validação clínica e visual pendentes |
 | 6 | Clínica Médica | Cirrose e suas Complicações | /apostilas/cirrose-e-suas-complicacoes/ | Pendente |
 | 7 | Clínica Médica | Diarreia Aguda na Infância | /apostilas/diarreia-aguda/ | Em revisão científica/editorial; correções na branch, QA visual pendente |
