@@ -181,3 +181,9 @@ O renderer compartilhado usa fonte de **13,2 px** em parágrafos/listas, **12 px
 - https://www.who.int/publications/i/item/9789240103412
 - https://www.idsociety.org/practice-guideline/infectious-diarrhea
 
+
+### Checagem estrutural adicional (22/10/2026)
+
+- Releitura da versão corrigida: JSON válido, **23 seções**, **23 âncoras únicas**, 7 tabelas com largura consistente, 12 blocos de questões e 12 respostas comentadas na seção principal; bibliografia permanece como último capítulo.
+- Estimativa instrumental atual de ~**65.920 caracteres textuais**, incluindo títulos, tabelas e referências; **não satisfaz por si só a contagem oficial >=60.000 caracteres úteis**, que exclui referências, título e redundância.
+- Após novos commits em `main`, a branch de revisão ficou **16 commits atrás**; duas páginas `index.html` (diarreia e perfuração) também foram alteradas em `main`. **Não fazer merge automático sem reconciliar os dois HTML e testar o PWA**. O repositório de produção e a `main` não foram alterados por esta auditoria.
