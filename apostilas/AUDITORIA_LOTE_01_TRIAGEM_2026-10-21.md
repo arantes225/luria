@@ -228,3 +228,84 @@ O renderer compartilhado usa fonte de **13,2 px** em parágrafos/listas, **12 px
 
 **Status: revisão substantiva iniciada, não aprovada.**
 
+
+
+## Execução científica e editorial — Câncer de Endométrio (22/10/2026)
+
+**Arquivos alterados:** `apostilas/cancer-de-endometrio/content.json` e `apostilas/cancer-de-endometrio/index.html`, exclusivamente na branch de auditoria. Material de comparação aberto e efetivamente lido no Drive: **02 - CANCER DE ENDOMETRIO.pdf**. O resumo apresenta condutas históricas (p.ex. linfadenectomia sistemática e classificação tipo I/II) e uma ordenação equivocada de prognóstico molecular; **nenhum texto, diagrama, tabela ou imagem do PDF foi reutilizado**. Material comparativo ≠ autoridade clínica.
+
+### Hierarquia das fontes realmente aplicada
+
+1. **INCA/MS**: câncer do corpo do útero (rastreamento populacional não recomendado; diagnóstico do sangramento sintomático), Manual de Atenção às Mulheres na Transição Menopausal e Menopausa (MS, 2026).
+2. **FEBRASGO, Protocolo 31, Femina 2025;53(6):841–847**: diagnóstico/histologia de hiperplasia; reconhecida **divergência interna** entre corpo do artigo (valorização de biópsia quando há suspeita) e recomendações finais (episódio único de baixo risco, endométrio regular menor que 4 mm, biópsia na recorrência).
+3. **Sociedade Brasileira de Patologia, manual 2026**: classificação anatomopatológica, biomarcadores e FIGO 2023.
+4. **Sociedade Brasileira de Oncologia Clínica (SBOC), diretrizes de 2026 — Endométrio**: tratamento oncológico no Brasil, critérios de evidência e realidade de acesso. **As linhas/doses oncológicas específicas ainda exigem conferência da diretriz integral e liberação especializada antes de prescrição.**
+5. **FIGO 2023, ESGO–ESTRO–ESP 2025, ACOG 2026 e consenso Lynch ESGO 2026 / GeneReviews**: estadiamento, aprofundamento terapêutico, atualização de sangramento e genética; apresentados como comparadores ou fontes de especialidade quando não há norma brasileira equivalente, sem incorporação automática.
+
+### Achados clínicos relevantes e correções gravadas
+
+- **Sangramento pós-menopausa:** o documento anterior colocava ACOG 2026 no título e primeiro plano da prática brasileira. Reordenado para INCA/MS/FEBRASGO, com distinção explícita do limiar ultrassonográfico de 4 mm, necessidade de histologia em sangramento recorrente, lesão focal, amostragem insuficiente ou risco elevado, e exceção ACOG 2026 para seleção estrita.
+- **FIGO 2023:** reexplicados IA1–IA3, IB/IC, II e III, a separação **IVB (peritônio extrapélvico) versus IVC (sítios distantes)**, critérios de POLE patogênico / p53abn e a diferença entre estádio e tratamento. Removida ideia de que todo p53abn eleva automaticamente a estádio avançado e obriga quimiorradioterapia.
+- **Estadiamento e linfonodo sentinela:** retirada afirmação de que todo câncer exige estadiamento “estritamente cirúrgico” com avaliação pélvica e para-aórtica extensiva. Técnica sentinela com ICG apresentada como opção orientada por risco, mapeamento, protocolo e experiência, não padrão universal de sobrevida idêntica.
+- **Fertilidade:** critérios de histologia/endometrioide de baixo grau, ausência de invasão e monitorização destacados; retiradas exigências uniformes de PET-CT, RP 50–80%, prazo rígido de falha e ooforectomia bilateral inevitável para todas as jovens.
+- **Sistêmico:** corrigido erro de classificação dos estudos KEYNOTE-158 / GARNET como ensaios fase III; combinações e imunoterapia inseridas em cenários apropriados por MMR/linhas, sem prometer disponibilidade ou dose uniforme. Destacada separação entre marcador prognóstico e preditivo.
+- **Radioterapia:** substituídas indicações obrigatórias por estádio e percentuais universais por discussão de risco clínico-molecular, radioterapia vaginal/pélvica e tratamento sistêmico conforme benefício e toxicidade.
+- **Lynch:** MMR IHQ em amostra diagnóstica quando disponível; investigar metilação MLH1 em padrão de perda correspondente; risco por gene, aconselhamento e testagem em cascata. Retirada recomendação rígida de **US transvaginal + CA-125 anual** como rastreamento eficaz. Biópsia endometrial periódica é opção discutida, sem evidência robusta de benefício em mortalidade. Cirurgia redutora e ooforectomia individualizadas.
+- **Rastreio populacional:** explicitada distinção entre não rastrear assintomáticas de risco habitual e investigar sinais/sintomas.
+
+### Mudanças editoriais e visuais
+
+- Removidas da **página de leitura** três seções internas: auditoria/Drive (“etapa zero”), grade de imagens candidatas e checklist de aprovação. Mantidas como tarefas no relatório de auditoria; não confundir conteúdo de aluno com documentação de produção.
+- Referências reorganizadas para o **fim do livro**, ordenadas por INCA, MS, FEBRASGO, Patologia brasileira, SBOC e diretrizes internacionais. Índice/âncoras preservados após reordenação de capítulos por assunto.
+- Refeitos títulos que não correspondiam ao conteúdo; criado fechamento **“O que não posso esquecer”** com decisões práticas.
+- Acrescentados quadros autorais em formato de tabela para: triagem de sangramento pós-menopausa; estádio FIGO 2023; decisão de adjuvância; seleção sistêmica por biomarcadores; aconselhamento Lynch; três fluxos de diagnóstico, carcinoma confirmado e preservação de fertilidade.
+- 12 questões antes embutidas em parágrafos foram convertidas para **12 enunciados, 48 alternativas e 12 comentários**, com subtítulos próprios; sem atribuição de provas reais.
+- CSS de fonte/nav/tabelas ampliado **somente neste index.html** como piloto de legibilidade, com rolagem horizontal em tabelas no PWA. CSS global não alterado e render real não testado.
+
+### Testes estruturais executados e limitações
+
+- JSON serializado, parse válido e releitura pós-commit. **26 capítulos com 26 âncoras únicas**, **15 tabelas** com colunas consistentes, **12 questões, 48 alternativas e 12 respostas**, bibliografia por último. Ausentes nas seções do estudante as notas de auditoria e fila editorial de imagens.
+- Estimativa heurística nesta rodada: **aproximadamente 67.413 caracteres textuais em parágrafos/listas/tabelas, excluídas referências e títulos principais**. É cálculo aproximado com pontuação de serialização residual, **não prova definitiva do limiar de 60.000 caracteres úteis não repetitivos**. Exige script editorial definitivo e revisão humana de redundância.
+- **Pendente:** validação oncológica integral (biomarcadores, esquemas, doses e riscos), verificação final de todas as fontes e disponibilidade no Brasil, teste visual desktop/PWA, acessibilidade, revisão de originalidade das 12 questões, licenças e fila de aprovação de figuras, pipeline e compatibilidade com alterações recentes da main.
+- **Nenhuma imagem de terceiro inserida ou aprovada; nada publicado, nenhuma modificação na main.**
+
+### Fila de candidatas visuais — planejamento, não imagens aprovadas
+
+Priorização para curadoria com fonte primária, arquivo original, licença, legenda e aprovação no Admin, visando cerca de 20 recursos quando didaticamente adequados:
+1. US transvaginal normal com medida de eco;
+2. US de endométrio heterogêneo com medida;
+3. Pólipo em histerossonografia;
+4. Histeroscopia de pólipo;
+5. Histeroscopia de lesão endometrial suspeita;
+6. HE sem atipias em histologia;
+7. EIN/hiperplasia atípica em histologia;
+8. Carcinoma endometrioide G1 na patologia;
+9. Carcinoma seroso na patologia;
+10. IHQ p53 aberrante com controle;
+11. IHQ MMR com controles internos;
+12. Esquema autoral do fluxo MMR → MLH1/metilação → genética;
+13. RM pélvica de invasão superficial;
+14. RM pélvica de invasão profunda;
+15. Diagrama autoral FIGO 2023 IA/IB/IC;
+16. Diagrama autoral FIGO II/III/IV;
+17. Esquema de linfonodo sentinela pélvico;
+18. Árvore de decisão de adjuvância por perfil;
+19. Mapa clínico Lynch gene-específico;
+20. Esquema da diferença entre braquiterapia vaginal e teleterapia.
+
+**Nunca usar fotografias clínicas nem imagens de material comparador sem autoria/licença comercial verificadas. Nenhuma candidata acima foi licenciada ou inserida nesta rodada.**
+
+### Referências principais consultadas
+
+- INCA: https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude
+- FEBRASGO/Femina 2025: https://femina.org.br/article/hiperplasia-endometrial/
+- Sociedade Brasileira de Patologia 2026: https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/
+- SBOC Diretrizes 2026: https://imunotox.sboc.org.br/diretrizes-publicas-categorias/2026/
+- FIGO 2023: https://pmc.ncbi.nlm.nih.gov/articles/PMC10482588/
+- ACOG 2026: https://doi.org/10.1097/AOG.0000000000006275
+- ESGO 2025: https://pubmed.ncbi.nlm.nih.gov/40744042/
+- Consenso ESGO Lynch 2026: https://doi.org/10.1016/j.ejca.2026.116739
+- GeneReviews Lynch: https://www.ncbi.nlm.nih.gov/books/NBK1211/
+
+**Status: EM REVISÃO. Correções substantivas concluídas nesta rodada, aprovação clínica/editorial final e QA visual pendentes.**
+
