@@ -87,6 +87,14 @@
         ],
         [
           "p",
+          "<strong>Em 30 segundos:</strong> 1) avaliar pulso e estabilidade; 2) identificar QRS e regularidade no ECG; 3) FA documentada exige pensar simultaneamente em prevenção de AVC, alívio de sintomas e comorbidades; 4) na instabilidade causada pelo ritmo, cardioversão imediata; 5) não suspender anticoagulação apenas porque o ritmo sinusal foi restaurado."
+        ],
+        [
+          "p",
+          "<strong>Hierarquia das fontes:</strong> para <em>fibrilação atrial</em> em pacientes no Brasil, o <a href=\"https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt\" target=\"_blank\" rel=\"noopener noreferrer\">documento SBC/SOBRAC de 2025</a> é a referência especializada principal, especialmente para CHA₂DS₂-VA, anticoagulantes e cardioversão. Em <em>emergência com pulso ou parada</em>, conferir o protocolo da instituição e o <a href=\"https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms\" target=\"_blank\" rel=\"noopener noreferrer\">ACLS AHA 2025</a> para energia, segurança e sequências de ressuscitação. A <a href=\"https://academic.oup.com/eurheartj/article/45/36/3314/7738779\" target=\"_blank\" rel=\"noopener noreferrer\">ESC 2024</a> e a <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/\" target=\"_blank\" rel=\"noopener noreferrer\">ACC/AHA 2023</a> ajudam a explicar diferenças, sem substituir a conduta brasileira silenciosamente."
+        ],
+        [
+          "p",
           "Uma arritmia é uma alteração na formação ou condução do impulso elétrico cardíaco capaz de modificar frequência, regularidade e sequência de ativação de átrios e ventrículos. Nem toda palpitação corresponde a arritmia perigosa; nem toda arritmia grave produz palpitação. O atendimento seguro começa pela situação clínica do paciente, seguida de ECG, identificação de frequência/regularidade/largura do QRS e busca de causa reversível. Fibrilação atrial (FA) é a arritmia sustentada mais prevalente na prática clínica e aumenta risco de AVC, internações e insuficiência cardíaca."
         ],
         [
@@ -434,7 +442,7 @@
         ],
         [
           "p",
-          "O algoritmo de cardioversão elétrica da AHA 2025 indica energia inicial de referência em equipamento bifásico para adultos: FA 200 J; flutter atrial 200 J; taquicardia regular de QRS estreito 100 J; TV monomórfica com pulso 100 J. Em TV polimórfica utiliza-se descarga não sincronizada em energia de desfibrilação. Considerar recomendações do fabricante, monitor e protocolo local; o equipamento pode requerer escalonamento após falha e nova sincronização. Esses números não devem ser copiados para criança ou cardioversão pediátrica, que utiliza esquemas por peso e circunstância. Materiais anteriores citavam para flutter energia menor; a diretriz 2025 alterou a recomendação, portanto identificar a edição em prova."
+          "<strong>Energia de cardioversão — AHA ACLS 2025, aplicável ao adulto:</strong> com pulso e instabilidade atribuível à arritmia, o algoritmo de cardioversão elétrica indica <strong>200 J para FA; 200 J para flutter; 100 J para taquicardia regular estreita; 100 J para TV monomórfica</strong>, com sincronização; TV polimórfica grave exige choque não sincronizado. Em todos os casos considerar recomendação do equipamento e protocolo local, sedar se viável e não atrasar tratamento de choque. São parâmetros de ressuscitação, não regras de anticoagulação da SBC. Fonte: <a href=\"https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms\" target=\"_blank\" rel=\"noopener noreferrer\">AHA 2025, Electrical Cardioversion Algorithm</a>."
         ],
         [
           "t",
@@ -596,7 +604,7 @@
         ],
         [
           "p",
-          "<strong>Recomendação brasileira 2025:</strong> anticoagulação oral recomendada em CHA₂DS₂-VA ≥2; em 1 ponto, pode ser considerada após avaliação de benefícios, riscos de sangramento e preferências; em 0, em geral não se recomenda antitrombótico para prevenção de FA, salvo contextos especiais. Cardiomiopatia hipertrófica e amiloidose cardíaca constituem cenários de anticoagulação apesar da pontuação. A diretriz brasileira cita também hipertireoidismo com recomendação específica, devendo-se considerar duração/gravidade e contexto. Não transformar o escore em substituto de avaliação clínica individual."
+          "<strong>Diretriz brasileira SBC/SOBRAC 2025 (Quadro 5):</strong> FA não valvar com CHA₂DS₂-VA ≥2 → <strong>anticoagulação oral recomendada</strong> (classe I); escore 1 → considerar anticoagulação após decisão individualizada (classe IIa); escore 0 → <strong>sem indicação de antitrombótico apenas pela FA</strong> (classe I). A presença de cardiomiopatia hipertrófica, amiloidose cardíaca e hipertireoidismo com FA demanda atenção à recomendação própria da diretriz, independentemente do escore. Escore de sangramento não serve isoladamente para excluir tratamento. Fonte: <a href=\"https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt\" target=\"_blank\" rel=\"noopener noreferrer\">SBC/SOBRAC 2025, Quadro 5</a>."
         ],
         [
           "t",
@@ -749,7 +757,7 @@
         ],
         [
           "p",
-          "A SBC/SOBRAC 2025 apresenta doses usuais de DOAC para prevenção de AVC em FA. Apixabana: 5 mg duas vezes ao dia, reduzindo para 2,5 mg duas vezes ao dia quando há <strong>pelo menos dois</strong> dos três critérios — idade ≥80 anos, peso ≤60 kg e creatinina sérica ≥1,5 mg/dL — conforme bula/indicação. Rivaroxabana: 20 mg uma vez ao dia; ajuste de referência para 15 mg ao dia quando ClCr está na faixa de 15–49 mL/min na tabela brasileira, com ingestão alimentar e atenção à função renal. Edoxabana: 60 mg uma vez ao dia, reduzindo a 30 mg quando ao menos um dos critérios específicos de função renal, peso ≤60 kg ou interações da tabela se aplica. Dabigatrana: 150 mg duas vezes ao dia; 110 mg duas vezes em populações selecionadas com maior risco hemorrágico, idade ≥80 anos ou uso concomitante de verapamil conforme disponibilidade/bula. Essas apresentações não são intercambiáveis sem critério e devem ser conferidas na prescrição individual."
+          "<strong>Posologia de referência para prevenção de AVC em FA — SBC/SOBRAC 2025, Tabela 8:</strong> apixabana 5 mg duas vezes ao dia (2,5 mg duas vezes se preenchidos <strong>dois de três</strong>: idade ≥80 anos, peso ≤60 kg, creatinina ≥1,5 mg/dL); rivaroxabana 20 mg/dia com alimento (15 mg/dia com ClCr 15–49 mL/min, de acordo com a tabela); edoxabana 60 mg/dia (30 mg/dia com ClCr 15–50 mL/min, peso ≤60 kg ou interações determinadas); dabigatrana 150 mg duas vezes ao dia, ou 110 mg duas vezes em contextos específicos. <strong>A dose de dabigatrana de 110 mg é uma dose reduzida testada no RE-LY, não uma dose “ajustada” por critério obrigatório como ocorre com apixabana.</strong> Cada opção exige conferência de bula, função renal por método apropriado, interações, idade e indicação; não são doses intercambiáveis. Fonte: <a href=\"https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt\" target=\"_blank\" rel=\"noopener noreferrer\">SBC/SOBRAC 2025, Tabela 8</a>."
         ],
         [
           "p",
@@ -766,22 +774,22 @@
             [
               "Apixabana",
               "5 mg VO 12/12h",
-              "2,5 mg 12/12h se ≥2: idade ≥80, peso ≤60 kg, creatinina ≥1,5 mg/dL; demais situações exigem bula"
+              "2,5 mg 12/12h se ≥2 critérios: ≥80 anos, ≤60 kg, creatinina ≥1,5 mg/dL; verificar bula, rim e interações"
             ],
             [
               "Rivaroxabana",
               "20 mg VO 1x/dia com alimento",
-              "15 mg/dia se ClCr 15–49 mL/min na tabela; evitar extrapolar para rim mais grave sem avaliação"
+              "15 mg/dia com alimento se ClCr 15–49 mL/min na tabela SBC; não transpor para outras indicações"
             ],
             [
               "Edoxabana",
               "60 mg VO 1x/dia",
-              "30 mg/dia por função renal 15–50, peso ≤60 kg ou interações específicas"
+              "30 mg/dia se ClCr 15–50, peso ≤60 kg ou interações específicas descritas na Tabela 8"
             ],
             [
               "Dabigatrana",
               "150 mg VO 12/12h",
-              "110 mg 12/12h por critérios específicos de idade/risco/interações; dependência renal alta"
+              "110 mg 12/12h é dose REDUZIDA validada no RE-LY, não ajuste obrigatório padronizado; considerar risco hemorrágico, idade, verapamil e bula"
             ],
             [
               "Varfarina",
@@ -994,7 +1002,7 @@
         ],
         [
           "p",
-          "A diretriz brasileira de 2025 destaca mudanças no manejo pericardioversão. Antes de prescrever números exatos de horas, semanas ou doses, o editor médico deve conferir as tabelas da SBC 2025, AHA 2023 e ESC 2024, pois usam alguns limiares distintos. Nenhum resultado de ECG em ritmo sinusal após choque basta para autorizar interrupção imediata de anticoagulação."
+          "<strong>Primeiro, a SBC/SOBRAC 2025:</strong> na FA estável com duração <strong>superior a 24 horas</strong> ou início incerto, indicar, antes da cardioversão eletiva, <strong>três semanas de anticoagulação terapêutica</strong> ou estratégia guiada por <strong>ecocardiograma transesofágico</strong> para excluir trombo, com anticoagulação periprocedimento. Em <strong>todos</strong> os cardioversionados, a recomendação brasileira é manter anticoagulação por <strong>pelo menos quatro semanas</strong>, inclusive quando CHA₂DS₂-VA é zero; depois avaliar risco embólico para decidir continuidade. Na instabilidade causada por FA, a cardioversão elétrica é urgente e o anticoagulante deve ser introduzido tão cedo quanto for clinicamente seguro. <a href=\"https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt\" target=\"_blank\" rel=\"noopener noreferrer\">SBC/SOBRAC 2025, Quadro 7</a>."
         ],
         [
           "3",
@@ -1002,7 +1010,7 @@
         ],
         [
           "p",
-          "A cardioversão elétrica ou farmacológica pode deslocar trombo atrial pré-existente ou produzir risco no período de atordoamento atrial pós-restauração do ritmo sinusal. Por isso, a SBC/SOBRAC 2025 recomenda, para FA com duração <strong>superior a 24 horas</strong>, anticoagulação terapêutica por pelo menos três semanas antes de cardioversão eletiva ou estratégia com ecocardiografia transesofágica para excluir trombo, com anticoagulação adequada, e manutenção da anticoagulação por pelo menos quatro semanas depois em todos os cardioversionados. A ESC 2024 também adota referência conservadora de 24 horas; a ACC/AHA 2023 mantém ≥48 horas como gatilho explícito para três semanas/estudo de imagem, mas ressalta risco não homogêneo nas durações menores. Não misturar 24 e 48 horas sem identificar a diretriz."
+          "<strong>Brasil — SBC/SOBRAC 2025, Quadro 7:</strong> em FA estável com duração <strong>maior que 24 horas</strong> ou desconhecida, anticoagular por pelo menos três semanas antes de cardioversão eletiva, <strong>ou</strong> realizar ETE para excluir trombo e anticoagular em torno do procedimento. Manter anticoagulação por <strong>pelo menos quatro semanas após</strong>, independentemente do CHA₂DS₂-VA; continuidade além desse período depende do risco individual. <strong>Comparação:</strong> a <a href=\"https://academic.oup.com/eurheartj/article/45/36/3314/7738779\" target=\"_blank\" rel=\"noopener noreferrer\">ESC 2024</a> também enfatiza o limiar de 24 horas; a <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/\" target=\"_blank\" rel=\"noopener noreferrer\">ACC/AHA 2023</a> usa outro recorte para anticoagulação prévia na cardioversão eletiva, mas valoriza risco mesmo em episódios mais curtos. Não misturar algoritmos em uma mesma resposta de prova. <strong>Em instabilidade causada pela arritmia, cardioversão imediata, sem esperar ETE ou três semanas.</strong>"
         ],
         [
           "p",
@@ -1043,17 +1051,17 @@
             [
               "FA estável >24 h ou de início incerto",
               "≥3 semanas de anticoagulação OU ETE adequado e proteção periprocedimento",
-              "SBC/SOBRAC 2025 e ESC 2024"
+              "SBC/SOBRAC 2025, Quadro 7 (referência brasileira principal); ESC 2024 complementar"
             ],
             [
               "FA ≥48 h",
               "≥3 semanas ou imagem antes da eletiva",
-              "ACC/AHA 2023"
+              "ACC/AHA/ACCP/HRS 2023 (comparação, não substituir esquema SBC)"
             ],
             [
               "Após qualquer cardioversão de FA",
               "Anticoagulação por pelo menos 4 semanas",
-              "SBC/SOBRAC 2025"
+              "SBC/SOBRAC 2025, Quadro 7 (regra pós-cardioversão)"
             ],
             [
               "Após 4 semanas em CHA₂DS₂-VA ≥2",
@@ -1075,7 +1083,7 @@
         ],
         [
           "p",
-          "Fontes: SBC/SOBRAC 2025, seção 6.5.1 e quadro 7, https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt ; ESC AF-CARE 2024, https://academic.oup.com/eurheartj/article/45/36/3314/7738779 ; ACC/AHA 2023, seção 8.2.1, https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/ ; AHA 2025 ACLS, https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support ."
+          "Fontes e escopos: <a href=\"https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt\" target=\"_blank\" rel=\"noopener noreferrer\">SBC/SOBRAC 2025, seção 6.5.1 e Quadro 7</a> — prioridade para cardioversão e anticoagulação no Brasil; <a href=\"https://academic.oup.com/eurheartj/article/45/36/3314/7738779\" target=\"_blank\" rel=\"noopener noreferrer\">ESC 2024</a> e <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/\" target=\"_blank\" rel=\"noopener noreferrer\">ACC/AHA 2023</a> — comparação de limiares e exceções; <a href=\"https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms\" target=\"_blank\" rel=\"noopener noreferrer\">AHA ACLS 2025</a> — execução da cardioversão de emergência. A interpretação deve incluir duração realmente conhecida, adesão e condições individuais."
         ],
         [
           "3",
@@ -1792,28 +1800,19 @@
       [
         [
           "2",
-          "Referências verificáveis e limites editoriais"
+          "Referências oficiais e leituras complementares"
         ],
         [
           "o",
           [
-            "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC13400077/\" target=\"_blank\" rel=\"noopener noreferrer\">Cintra FD et al. Diretriz Brasileira de Fibrilação Atrial — 2025. SBC/SOBRAC. Arq Bras Cardiol 122(9):e20250618.</a>",
-            "<a href=\"https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/atrial-fibrillation/\" target=\"_blank\" rel=\"noopener noreferrer\">ESC/EACTS Guidelines for the management of atrial fibrillation — 2024. AF-CARE.</a>",
-            "<a href=\"https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017\" target=\"_blank\" rel=\"noopener noreferrer\">ACC/AHA/ACCP/HRS. Guideline for the Diagnosis and Management of Atrial Fibrillation — 2023.</a>",
-            "<a href=\"https://socesp.org.br/revista/edicoes/revista-socesp-v36-n1-2026-36-1/atualizacoes-no-manejo-da-fibrilacao-atrial-implicacoes-praticas-da-diretriz-brasileira-de-2025-1116/\" target=\"_blank\" rel=\"noopener noreferrer\">SOCESP. Atualizações no manejo da FA: implicações práticas da diretriz brasileira de 2025. Revista SOCESP, 2026.</a>",
-            "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10389103/\" target=\"_blank\" rel=\"noopener noreferrer\">SBC/SOBRAC. Diretriz Brasileira de Dispositivos Cardíacos Eletrônicos Implantáveis — 2023. Indicações de marca-passo para disfunção do nó sinusal e BAV.</a>",
-            "<a href=\"https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Accessible/Algorithm-ACLS-Bradycardia-LngDscrp-250725-Ed.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">American Heart Association. Adult Bradycardia Algorithm — 2025. Doses e suporte da bradicardia instável no adulto.</a>",
-            "<a href=\"https://academic.oup.com/europace/article/24/1/71/6358627\" target=\"_blank\" rel=\"noopener noreferrer\">ESC. Cardiac Pacing and Cardiac Resynchronization Therapy — 2021. Distúrbios de condução e indicações de estimulação.</a>"
+            "<a href=\"https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt\" target=\"_blank\" rel=\"noopener noreferrer\">[PRIORIDADE BRASILEIRA — FA] Cintra FD et al. Diretriz Brasileira de Fibrilação Atrial — 2025. SBC/SOBRAC, Arq Bras Cardiol. 122(9):e20250618. DOI 10.36660/abc.20250618.</a>",
+            "<a href=\"https://abccardiol.org/article/diretriz-brasileira-de-dispositivos-cardiacos-eletronicos-implantaveis-2023/\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — BRADIARRITMIAS] Diretriz Brasileira de Dispositivos Cardíacos Eletrônicos Implantáveis — 2023, indicações de estimulação.</a>",
+            "<a href=\"https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support\" target=\"_blank\" rel=\"noopener noreferrer\">[EMERGÊNCIA — AHA 2025] Adult Advanced Life Support e algoritmos de cardioversão/taquiarritmia/bradicardia; confirmar adaptações do serviço.</a>",
+            "<a href=\"https://academic.oup.com/eurheartj/article/45/36/3314/7738779\" target=\"_blank\" rel=\"noopener noreferrer\">[COMPARAÇÃO INTERNACIONAL] ESC/EACTS. Guidelines for Management of Atrial Fibrillation — 2024.</a>",
+            "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/\" target=\"_blank\" rel=\"noopener noreferrer\">[COMPARAÇÃO INTERNACIONAL] ACC/AHA/ACCP/HRS. Guideline for Diagnosis and Management of Atrial Fibrillation — 2023.</a>",
+            "<a href=\"https://socesp.org.br/revista/edicoes/revista-socesp-v36-n1-2026-36-1/atualizacoes-no-manejo-da-fibrilacao-atrial-implicacoes-praticas-da-diretriz-brasileira-de-2025-1116/\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — SÍNTESE SECUNDÁRIA] SOCESP. Atualizações no manejo de FA e implicações da diretriz brasileira de 2025, 2026.</a>"
           ],
           0
-        ],
-        [
-          "p",
-          "Fonte clínica conferida para este capítulo: Cintra FD et al. Diretriz Brasileira de Fibrilação Atrial (SBC/SOBRAC), 2025, seção 7 e Quadro 7, disponível em https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt. Referência comparativa reaberta no Drive: '02 - TAQUIARRITMIA .pdf', útil para ECG e apresentação, mas insuficiente para anticoagulação pericardioversão."
-        ],
-        [
-          "p",
-          "<strong>Referências nucleares para o aprofundamento:</strong> Cintra FD et al. SBC/SOBRAC, Diretriz Brasileira de Fibrilação Atrial 2025, Arq Bras Cardiol. 122(9):e20250618. DOI 10.36660/abc.20250618, https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt ; 2024 ESC AF Guidelines, https://academic.oup.com/eurheartj/article/45/36/3314/7738779 ; 2023 ACC/AHA/ACCP/HRS FA, https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/ ; AHA 2025 Adult Advanced Life Support, https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support . O comparativo do Drive foi usado como inventário curricular, não como fonte de energias atuais."
         ]
       ]
     ]
