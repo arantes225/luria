@@ -309,3 +309,73 @@ Priorização para curadoria com fonte primária, arquivo original, licença, le
 
 **Status: EM REVISÃO. Correções substantivas concluídas nesta rodada, aprovação clínica/editorial final e QA visual pendentes.**
 
+
+
+## Execução científica e editorial — Queimaduras (22/10/2026)
+
+**Arquivos de trabalho:** `apostilas/queimaduras/content.json` e piloto local `index.html` na branch `audit/apostilas-10-lotes-2026-10-21`. Publicação, deploy e merge **NÃO realizados**.
+
+**Material comparador do Google Drive realmente aberto e lido:** `01 - INTENSIVA - POLITRAUMA E QUEIMADURAS.pdf`, 26.658 caracteres extraídos. Contém Parkland 4 mL/kg/%SCQ e conteúdo de trauma/queimadura, útil apenas como inventário didático; é de terceiro, sem liberação de uso comercial nem autoria institucional atribuída. Nenhum trecho ou figura do comparador foi copiado para a LURIA.
+
+### Hierarquia das fontes aplicada (por contexto e vigência)
+
+- **BRASIL — Ministério da Saúde, 2012:** Cartilha para Tratamento de Emergência das Queimaduras, https://bvsms.saude.gov.br/bvs/publicacoes/cartilha_tratamento_emergencia_queimaduras.pdf — referência histórica nacional de Parkland 4 mL/kg/%SCQ e transferência; **não chamar de diretriz nacional de 2026**.
+- **BRASIL — SAMU/MS, 2014/2015:** AT25 Queimadura Térmica, https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_suporte_avancado_vida.pdf — algoritmo pré-hospitalar e estimativa clássica (4 mL/kg/%SCQ), com observação explícita sobre os riscos de excesso de fluido.
+- **BRASIL — Sociedade Brasileira de Queimaduras / ESCS, 2021:** `Manual de Queimaduras para Estudantes`, https://sbqueimaduras.org.br/material/3091 — referência nacional de escopo. O resumo/editoria da SBQ foi verificado; **o manual integral não foi objeto de análise linha a linha nesta rodada**. O PDF sinaliza reprodução apenas sem finalidade comercial; não copiar imagens/páginas.
+- **BRASIL — Ministério da Saúde, Portaria nº 1.115 de 19/10/2015:** Protocolo de uso de hidroxocobalamina em intoxicação aguda por cianeto. Página governamental atualizada em 20/01/2025, **o protocolo em si é de 2015**, https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hidroxocobalamina-na-intoxicacao-aguda-por-cianeto-protocolo-de-uso/view .
+- **INTERNACIONAL — ABA, 2024:** `American Burn Association Clinical Practice Guidelines on Burn Shock Resuscitation`, J Burn Care Res 45:565–589, DOI 10.1093/jbcr/irad125. **Escopo específico:** adultos com queimaduras ≥20% da SCQ; 2 mL/kg/%SCQ apenas como taxa inicial estimada, titulação conforme resposta, consideração seletiva de albumina em extensões maiores. https://academic.oup.com/jbcr/article/45/3/565/7458089 . Não extrapolar a pediatria, nem misturar arbitrariamente com cronograma Parkland.
+- **INTERNACIONAL — ABA, critérios de consulta/transferência:** https://www.ameriburn.org/burn-care-team/resources/guidelines-for-burn-patient-referral ; mais abrangentes do que limiares MS 2012 para consultas em espessura parcial ≥10%, espessura total qualquer tamanho, áreas especiais, crianças, inalação, químicas/elétricas.
+- **INTERNACIONAL — AAST, consenso 2022 sobre rabdomiólise:** bicarbonato ou diuréticos preventivos rotineiros **não recomendados** para prevenção de LRA. https://pmc.ncbi.nlm.nih.gov/articles/PMC8804685/
+- **INTERNACIONAL — AHA/Cruz Vermelha 2024 e OMS:** primeiros socorros, resfriamento cuidadoso, evitar gelo e hipotermia. https://cpr.heart.org/en/resuscitation-science/2024-first-aid-guidelines ; https://www.who.int/news-room/fact-sheets/detail/burns
+
+### Erros clínicos concretos encontrados e corrigidos
+
+1. **Questão 1 marcava alternativa D (504 mL/h), mas a resposta matemática correta para a hipótese que passou a ser explicitada é C (360 mL/h).** Adulto 70 kg, 36% SCQ: ABA 2024 (escopo adulto ≥20%) fornece total **5.040 mL/24 h** como ponto de partida. Se a questão hipoteticamente exige 50% em oito horas desde a lesão, sem fluido recebido e com uma hora passada, **2.520 mL ÷ 7 h = 360 mL/h**. A questão foi reescrita para declarar essa hipótese e afirmar que **essa partição não é prescrição mandatória da ABA**, que recomenda titulação contínua.
+2. **Conflito de fórmulas:** texto antigo tratava ATLS 10ª/11ª, ABA e Parkland como fontes intercambiáveis. Agora distingue **MS/SAMU brasileiros 2012/2015: Parkland 4 mL/kg/%SCQ** da **ABA 2024: início com 2 mL/kg/%SCQ em adultos ≥20%**, sem aplicar recomendação adulta à criança e sem transpor automaticamente 50%/8 h para todas as estratégias.
+3. **Caso clínico 1 tinha cálculo incompleto:** SCQ identificada como **45%** (tronco anterior 18 + dois braços anteriores 9 + duas pernas anteriores 18). Em homem de 80 kg, estimativa ABA 2 mL = **7.200 mL/24 h**; Parkland 4 mL = **14.400 mL/24 h**. Ambos como estimativas educacionais, com diurese/perfusão como objetivos de titulação.
+4. **Questão 6 e texto de rabdomiólise indicavam alcalinização com bicarbonato IV de rotina:** corrigidos para o consenso AAST, que não a recomenda preventivamente por insuficiência de evidência, preservando avaliação de acidose e outras indicações próprias. Incluída diferenciação entre estimativa de SCQ cutânea e lesão muscular profunda elétrica.
+5. **Lesão inalatória:** texto tinha IOT imediata para fuligem/vibrissas isoladas. Alterado para avaliação clínica e monitorização, com intubação precoce quando há obstrução, edema progressivo, alteração de proteção de via aérea e sinais respiratórios graves. Co-oximetria na suspeita de intoxicação por CO; lactato elevado e incêndio fechado como **suspeita**, não diagnóstico definitivo de cianeto. Protocolo MS de hidroxocobalamina identificado por data correta.
+6. **Encaminhamento ao CTQ:** removido critério genérico de que apenas queimadura de 3º grau acima de 5% exige avaliação; MS 2012 indica qualquer extensão de espessura total, e ABA complementa com consulta mais ampla. Diferenças explícitas e fluxo SUS/regulação preservado.
+7. **Escarotomia/fasciotomia:** removida afirmação perigosa de que incisão não necessita analgesia; fasciotomia não é “obrigatória em toda queimadura elétrica de alta tensão” sem síndrome compartimental. Eliminado HTML fragmentado dentro de listas. Sinais de isquemia antes da perda de pulso valorizados.
+8. **Curativos:** sulfadiazina de prata não é “padrão-ouro universal”; pode atrasar epitelização de lesão superficial em alguns contextos. Antimicrobiano sistêmico profilático não é recomendado **de rotina**, diferente da ideia de que antibióticos são proibidos em qualquer circunstância. Cuidados guiados por tipo/risco; ajuste de profilaxia de úlcera de estresse e nutrição, que não são automáticos a todos.
+9. **Lund–Browder:** mnemônico “subtrair um ponto da cabeça por ano” não reproduzia fielmente todos os intervalos pediátricos; substituído por orientação de usar tabela conforme idade. Cabeçalho da tabela verificado com seis colunas e seis linhas.
+10. **Questões originalmente rotuladas com nomes de bancas (SUS-SP, USP-RP, UNICAMP, IAMSPE etc.) sem comprovação de procedência** receberam rótulos de **casos autorais simulados**, com seis blocos separados em enunciado, cinco alternativas e resposta comentada. Questão de curativo corrigida para não sugerir tratamento universal com sulfadiazina.
+
+### Curadoria visual — problema real
+
+- Em `content.json`, três blocos `raw` eram apresentados como imagens homologadas; dois arquivos vinham de **`Curious creatures in zoology`** e de uma **enciclopédia de agricultura de 1908**, mas as legendas os descreviam falsamente como **fotografias clínicas de queimaduras de 2º/3º grau**.
+- **Os dois blocos com atribuições incompatíveis foram removidos da leitura nesta branch**, sem deletar bancos externos ou o arquivo-fonte dos provedores. O diagrama de Wallace, já presente, foi **realocado** do capítulo de Jackson para o de cálculo de SCQ, onde faz sentido.
+- **Imagem remanescente:** Wallace, em SVG de fonte externa, ainda precisa de QA de precisão, licença e legibilidade/idioma. Não declarar liberação de imagens. Fila de substituição no Admin permanece humana.
+
+### Fila visual planejada — ainda sem imagens adquiridas ou aprovadas
+
+1. mecanismo das zonas de Jackson (diagrama original);
+2. queimadura epidérmica (foto clínica licenciada);
+3. parcial superficial (foto clínica);
+4. parcial profunda (foto clínica);
+5. espessura total (foto clínica);
+6. exemplo de escara;
+7. regra dos nove Wallace em português;
+8. Lund–Browder lactente;
+9. Lund–Browder criança;
+10. cálculo de SCQ em anatomia esquemática;
+11. curvas de volume e edema em diferentes estimativas;
+12. esquema de diurese e perfusão;
+13. sinais de via aérea ameaçada (esquema anatômico);
+14. mecanismo CO × hemoglobina (original);
+15. mecanismo de cianeto e cadeia respiratória (original);
+16. escarotomia versus fasciotomia (desenho anatômico técnico);
+17. ferida com curativo não aderente;
+18. comparação de coberturas de ferida;
+19. efeito iceberg em lesão elétrica;
+20. fluxo de encaminhamento SUS/CTQ por gravidade.
+
+**Candidatas precisam de URL original, licença comercial, legenda e aprovação em Admin. Não inserir fotogramas de Drive/manual não comercial.**
+
+### Controle de qualidade e limites
+
+- JSON gravado na branch e relido. **15 seções, 10 tabelas estruturais com largura consistente, 6 questões, 30 alternativas e 6 comentários**, sem erro de outline/tipos de bloco encontrado no teste estrutural; **aproximadamente 70.767 caracteres textuais** de parágrafos, listas e tabelas, excluindo títulos/figuras/bibliografia (estimativa, sujeita a auditoria de redundância).
+- Piloto CSS local no `index.html` elevou fontes de corpo/nav/tabelas; **não foi realizado screenshot visual desktop/PWA**, nem teste assistivo. O estilo global não foi alterado.
+- **Pendente antes de aprovar:** revisão por equipe de cirurgia plástica/queimados do conteúdo integral, parâmetros pediátricos/albumina/avaliação inalatória, confirmação de bula/antídoto conforme apresentação, originalidade, prova oficial de 60k caracteres úteis sem redundância, homologação de fotos reais e testes no PWA.
+- **Não aprovada, não publicada; branch em draft PR #77**, com necessidade de conciliar os commits paralelos em main.
+
