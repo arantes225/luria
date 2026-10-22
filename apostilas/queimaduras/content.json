@@ -40,7 +40,7 @@
     ],
     [
       "ressuscitacao-volemica-parkland-atls",
-      "6. Ressuscitação Volêmica no Trauma Térmico: Parkland vs ATLS 10ª/11ª Ed / ABA e Metas de Débito Urinário"
+      "6. Reposição volêmica: protocolos brasileiros históricos, ABA 2024 e titulação segura"
     ],
     [
       "queimadura-inalatoria-e-intoxicacoes",
@@ -68,7 +68,7 @@
     ],
     [
       "questoes-comentadas-residencia",
-      "13. Questões Comentadas de Residência Médica e Revalida/ENAMED"
+      "13. Treino ativo — seis questões originais simuladas e justificadas"
     ],
     [
       "pontos-chave-enamed-queimaduras",
@@ -627,7 +627,7 @@
       [
         [
           "2",
-          "6. Ressuscitação Volêmica no Trauma Térmico: Parkland vs ATLS 10ª/11ª Ed / ABA e Metas de Débito Urinário"
+          "6. Reposição volêmica: protocolos brasileiros históricos, ABA 2024 e titulação segura"
         ],
         [
           "3",
@@ -834,7 +834,7 @@
           "u",
           [
             "<strong>Suspeita clínica forte:</strong> fumaça em local fechado, rebaixamento/choque e hiperlactatemia marcante podem justificar tratamento sem aguardar dosagem de cianeto. Considerar hipóxia, trauma, CO e outras causas concomitantes.",
-            "<strong>Antídoto no Brasil:</strong> <a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hidroxocobalamina-na-intoxicacao-aguda-por-cianeto-protocolo-de-uso/view\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde — Protocolo de Uso de Hidroxocobalamina, 2025</a>. Conferir elegibilidade, apresentação, dose para adulto e criança, via e disponibilidade antes da aplicação; em emergência, o manejo não deve aguardar confirmação laboratorial difícil quando a suspeita é alta. A hidroxocobalamina pode alterar a coloração da pele/urina e interferir em alguns exames.",
+            "<strong>Antídoto no Brasil:</strong> <a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hidroxocobalamina-na-intoxicacao-aguda-por-cianeto-protocolo-de-uso/view\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde — Protocolo de Uso de Hidroxocobalamina (Portaria 1.115/2015; página MS atualizada em 2025)</a>. Conferir elegibilidade, apresentação, dose para adulto e criança, via e disponibilidade antes da aplicação; em emergência, o manejo não deve aguardar confirmação laboratorial difícil quando a suspeita é alta. A hidroxocobalamina pode alterar a coloração da pele/urina e interferir em alguns exames.",
             "<strong>Segunda Linha (se indisponível hidroxicobalamina):</strong> Tiossulfato de sódio a 25% (fornece substrato de enxofre para a enzima rodanase mitocondrial transformar cianeto em tiocianato). Deve-se <em>evitar nitritos</em> (nitrito de amila/sódio) no paciente com queimadura grave por causarem metemoglobinemia adicional e piorarem a hipóxia tecidual e o choque."
           ]
         ]
@@ -1314,99 +1314,139 @@
       [
         [
           "2",
-          "13. Questões Comentadas de Residência Médica e Revalida/ENAMED"
+          "13. Treino ativo — seis questões originais simuladas e justificadas"
         ],
         [
           "p",
-          "<strong>Questão 1 — autoral simulada, sem vínculo com banca:</strong> adulto de 70 kg com queimadura de espessura parcial em 36% da SCQ (dorso 18%, membro superior direito 9%, metade anterior de um membro inferior 9%). Um eritema exclusivamente epidérmico não entra nessa conta. O acidente ocorreu há 1 hora e ainda <strong>não houve infusão</strong>. Em um exercício didático que adota a <strong>estimativa inicial ABA 2024 de 2 mL/kg/%SCQ</strong> para adulto com ≥20% e que <strong>supõe, expressamente, infundir 50% do volume calculado nas primeiras 8 horas após a lesão</strong>, qual seria a taxa horária teórica pelas 7 horas restantes dessa primeira fase? Não confundir esse exercício matemático com taxa clínica obrigatória; a ABA recomenda titulação por resposta."
-        ],
-        [
-          "p",
-          "A) 756 mL/h nas próximas 7 horas.<br>B) 504 mL/h nas próximas 8 horas.<br>C) 360 mL/h nas próximas 7 horas.<br>D) 504 mL/h nas próximas 7 horas.<br>E) 252 mL/h nas próximas 16 horas."
+          "As seis questões são <strong>autorais e simuladas</strong>; não são retiradas nem atribuídas a ENAMED, ENARE, IAMSPE, UNICAMP, USP ou outra banca. Identifique primeiro qual diretriz o enunciado fornece, depois resolva e confira o comentário."
         ],
         [
           "4",
-          "Comentário Detalhado:"
+          "Questão 1 — Volume inicial: fontes e cálculo"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> adulto de 70 kg com queimadura de espessura parcial em 36% da SCQ (dorso 18%, membro superior direito 9%, metade anterior de um membro inferior 9%). Um eritema exclusivamente epidérmico não entra nessa conta. O acidente ocorreu há 1 hora e ainda <strong>não houve infusão</strong>. Em um exercício didático que adota a <strong>estimativa inicial ABA 2024 de 2 mL/kg/%SCQ</strong> para adulto com ≥20% e que <strong>supõe, expressamente, infundir 50% do volume calculado nas primeiras 8 horas após a lesão</strong>, qual seria a taxa horária teórica pelas 7 horas restantes dessa primeira fase? Não confundir esse exercício matemático com taxa clínica obrigatória; a ABA recomenda titulação por resposta."
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> 756 mL/h nas próximas 7 horas.",
+            "<strong>B)</strong> 504 mL/h nas próximas 8 horas.",
+            "<strong>C)</strong> 360 mL/h nas próximas 7 horas.",
+            "<strong>D)</strong> 504 mL/h nas próximas 7 horas.",
+            "<strong>E)</strong> 252 mL/h nas próximas 16 horas."
+          ]
         ],
         [
           "p",
           "<strong>Resposta comentada: alternativa C.</strong> SCQ 36%, porque o eritema superficial não é somado. A estimativa <strong>ABA 2024</strong> em adulto ≥20% é 2 × 70 × 36 = <strong>5.040 mL/24 h</strong>. A questão <em>supõe</em> 50% em 8 h: 2.520 mL. Uma hora já transcorreu; sem volume prévio, restam 7 h → 2.520 / 7 = <strong>360 mL/h</strong>. A alternativa D (504 mL/h) estava erroneamente marcada como correta no manuscrito anterior, e foi corrigida. <strong>Na vida real</strong>, não se impõe essa divisão à ABA como regra; a taxa é titulada a diurese/perfusão. Na Parkland histórica de 4 mL, os números seriam diferentes."
         ],
         [
-          "p",
-          "<strong>Questão 2 — autoral simulada:</strong> lactente de 10 meses, 10 kg, sofre escaldadura que abrange toda a cabeça e o membro superior esquerdo, com bolhas e leito úmido doloroso. Para a idade, a estimativa pela tabela pediátrica (cabeça ~18%, membro superior ~9%) e o objetivo urinário inicial de monitorização em grande queimado pediátrico são:"
-        ],
-        [
-          "p",
-          "A) SCQ 18%; Débito urinário alvo 0,5 mL/kg/h.<br>\n  B) SCQ 27%; Débito urinário alvo 1,0 mL/kg/h.<br>\n  C) SCQ 18%; Débito urinário alvo 1,5 a 2,0 mL/kg/h.<br>\n  D) SCQ 27%; Débito urinário alvo 0,5 mL/kg/h.<br>\n  E) SCQ 36%; Débito urinário alvo 1,0 mL/kg/h."
-        ],
-        [
           "4",
-          "Comentário Detalhado:"
+          "Questão 2 — Pediatria: Lund–Browder e diurese"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> lactente de 10 meses, 10 kg, sofre escaldadura que abrange toda a cabeça e o membro superior esquerdo, com bolhas e leito úmido doloroso. Para a idade, a estimativa pela tabela pediátrica (cabeça ~18%, membro superior ~9%) e o objetivo urinário inicial de monitorização em grande queimado pediátrico são:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> SCQ 18%; Débito urinário alvo 0,5 mL/kg/h.",
+            "<strong>B)</strong> SCQ 27%; Débito urinário alvo 1,0 mL/kg/h.",
+            "<strong>C)</strong> SCQ 18%; Débito urinário alvo 1,5 a 2,0 mL/kg/h.",
+            "<strong>D)</strong> SCQ 27%; Débito urinário alvo 0,5 mL/kg/h.",
+            "<strong>E)</strong> SCQ 36%; Débito urinário alvo 1,0 mL/kg/h."
+          ]
         ],
         [
           "p",
           "<strong>Resposta comentada: alternativa B.</strong> Cabeça 18% + membro superior 9% = <strong>27% SCQ</strong>. Na criança, o objetivo urinário orientativo usual é cerca de <strong>1 mL/kg/h</strong>; não basta aplicar uma fórmula de adulto e não se pode omitir avaliação de manutenção com glicose e eletrólitos. A/B/C/D/E refletem combinações distintas; a alternativa B é a única compatível com os dois dados. Este é um <strong>caso simulado</strong>, sem autoria da banca indicada no manuscrito antigo."
         ],
         [
-          "p",
-          "<strong>Questão 3 — autoral simulada:</strong> paciente com queimadura de espessura total circunferencial no tórax e em ambas as pernas desenvolve, sob ventilação mecânica, aumento progressivo das pressões ventilatórias, redução do volume-corrente e sinais de comprometimento vascular distal. Após medidas imediatas de avaliação ventilatória e hemodinâmica, qual intervenção pode ser necessária por equipe habilitada para liberar a escara constritiva?"
-        ],
-        [
-          "p",
-          "A) Realizar traqueostomia de urgência e iniciar nitroprussiato de sódio endovenoso.<br>\n  B) Administrar bloqueador neuromuscular e aumentar a PEEP para 18 cmH2O.<br>\n  C) Realizar escarotomia torácica e escarotomia das extremidades inferiores à beira do leito.<br>\n  D) Encaminhar imediatamente ao centro cirúrgico para fasciotomia dos quatro compartimentos da perna sob anestesia geral.<br>\n  E) Reduzir a infusão de cristaloides pela metade e prescrever furosemida intravenosa."
-        ],
-        [
           "4",
-          "Comentário Detalhado:"
+          "Questão 3 — Escarotomia versus fasciotomia"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> paciente com queimadura de espessura total circunferencial no tórax e em ambas as pernas desenvolve, sob ventilação mecânica, aumento progressivo das pressões ventilatórias, redução do volume-corrente e sinais de comprometimento vascular distal. Após medidas imediatas de avaliação ventilatória e hemodinâmica, qual intervenção pode ser necessária por equipe habilitada para liberar a escara constritiva?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Realizar traqueostomia de urgência e iniciar nitroprussiato de sódio endovenoso.",
+            "<strong>B)</strong> Administrar bloqueador neuromuscular e aumentar a PEEP para 18 cmH2O.",
+            "<strong>C)</strong> Realizar escarotomia torácica e escarotomia das extremidades inferiores à beira do leito.",
+            "<strong>D)</strong> Encaminhar imediatamente ao centro cirúrgico para fasciotomia dos quatro compartimentos da perna sob anestesia geral.",
+            "<strong>E)</strong> Reduzir a infusão de cristaloides pela metade e prescrever furosemida intravenosa."
+          ]
         ],
         [
           "p",
           "<strong>Resposta comentada: alternativa C.</strong> A escarotomia torácica e de membros é indicada quando escara inelástica compromete ventilação/perfusão; requer equipe treinada, analgesia e técnica segura. <strong>Não é igual à fasciotomia</strong>, que abre compartimentos musculares em situação selecionada. A questão simula o cenário, sem afiliação a exames oficiais."
         ],
         [
-          "p",
-          "<strong>Questão 4 — autoral simulada:</strong> paciente com queimadura em incêndio de ambiente fechado por materiais sintéticos evolui com hipotensão, confusão e acidose láctica importante (lactato 14 mmol/L) apesar de oxigenação suplementar; dosagem de COHb não explica a gravidade. Qual intoxicação associada deve ser fortemente considerada e qual terapia específica pode ser necessária?"
-        ],
-        [
-          "p",
-          "A) Intoxicação grave por Monóxido de Carbono; indicar Oxigenoterapia Hiperbárica em câmara fechada imediatamente.<br>\n  B) Acidose hiperclorêmica por ressuscitação com solução salina a 0,9%; trocar a hidratação por Ringer Lactato.<br>\n  C) Choque cardiogênico por infarto agudo do miocárdio sem supra de ST; indicar angioplastia primária.<br>\n  D) Intoxicação por Cianeto de Hidrogênio; administrar Hidroxicobalamina intravenosa.<br>\n  E) Choque séptico precoce; iniciar imediatamente Meropenem associado a Vancomicina."
-        ],
-        [
           "4",
-          "Comentário Detalhado:"
+          "Questão 4 — Cianeto em incêndio fechado"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> paciente com queimadura em incêndio de ambiente fechado por materiais sintéticos evolui com hipotensão, confusão e acidose láctica importante (lactato 14 mmol/L) apesar de oxigenação suplementar; dosagem de COHb não explica a gravidade. Qual intoxicação associada deve ser fortemente considerada e qual terapia específica pode ser necessária?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Intoxicação grave por Monóxido de Carbono; indicar Oxigenoterapia Hiperbárica em câmara fechada imediatamente.",
+            "<strong>B)</strong> Acidose hiperclorêmica por ressuscitação com solução salina a 0,9%; trocar a hidratação por Ringer Lactato.",
+            "<strong>C)</strong> Choque cardiogênico por infarto agudo do miocárdio sem supra de ST; indicar angioplastia primária.",
+            "<strong>D)</strong> Intoxicação por Cianeto de Hidrogênio; administrar Hidroxicobalamina intravenosa.",
+            "<strong>E)</strong> Choque séptico precoce; iniciar imediatamente Meropenem associado a Vancomicina."
+          ]
         ],
         [
           "p",
           "<strong>Resposta comentada: alternativa D.</strong> No incêndio em espaço fechado, choque e hiperlactatemia acentuada levantam suspeita clínica forte de intoxicação por cianeto; avaliação emergencial e hidroxocobalamina podem ser indicadas conforme protocolo brasileiro do Ministério da Saúde de uso de antídoto e toxicologia. Outras causas de choque/lactato devem ser avaliadas em paralelo. Não usar apenas um marcador isolado como prova laboratorial definitiva."
         ],
         [
-          "p",
-          "<strong>Questão 5 — autoral simulada:</strong> sobre o manejo de feridas em pacientes queimados, qual alternativa é a mais adequada, considerando seleção de curativos, riscos dos agentes e prevenção de infecção?"
-        ],
-        [
-          "p",
-          "A) Toda queimadura de primeiro grau requer sulfadiazina de prata diária.<br>B) A mafenida provoca alcalose metabólica por inibir a anidrase carbônica.<br>C) Antibioticoterapia sistêmica profilática deve ser prescrita rotineiramente na admissão.<br>D) Escolha de curativo depende de profundidade e risco; sulfadiazina de prata pode retardar epitelização em lesões parciais superficiais, portanto não é universalmente superior.<br>E) Toda bolha íntegra precisa ser rompida pelo leigo antes do atendimento."
-        ],
-        [
           "4",
-          "Comentário Detalhado:"
+          "Questão 5 — Curativo tópico e antibiótico"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> sobre o manejo de feridas em pacientes queimados, qual alternativa é a mais adequada, considerando seleção de curativos, riscos dos agentes e prevenção de infecção?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Toda queimadura de primeiro grau requer sulfadiazina de prata diária.",
+            "<strong>B)</strong> A mafenida provoca alcalose metabólica por inibir a anidrase carbônica.",
+            "<strong>C)</strong> Antibioticoterapia sistêmica profilática deve ser prescrita rotineiramente na admissão.",
+            "<strong>D)</strong> Escolha de curativo depende de profundidade e risco; sulfadiazina de prata pode retardar epitelização em lesões parciais superficiais, portanto não é universalmente superior.",
+            "<strong>E)</strong> Toda bolha íntegra precisa ser rompida pelo leigo antes do atendimento."
+          ]
         ],
         [
           "p",
           "<strong>Resposta comentada: alternativa D.</strong> Profundidade, localização, exsudato e disponibilidade guiam o curativo. A sulfadiazina de prata pode dificultar epitelização em lesões de espessura parcial superficial em comparação a alternativas modernas; a mafenida, por inibir anidrase carbônica, associa-se a <strong>acidose</strong>, não alcalose. Antibiótico sistêmico profilático de rotina não é indicado. A abertura indiscriminada de bolhas no primeiro socorro também é incorreta. Avaliar agente tópico e contraindicações com serviço habilitado."
         ],
         [
-          "p",
-          "<strong>Questão 6 — autoral simulada:</strong> em queimadura elétrica de alta tensão, assinale a alternativa <strong>INCORRETA</strong>:"
-        ],
-        [
-          "p",
-          "A) Lesão muscular interna pode ser maior que a área cutânea aparente.<br>B) Em rabdomiólise/mioglobinúria, limitar rigidamente a diurese a 0,5 mL/kg/h em qualquer circunstância, sem monitorização adicional.<br>C) ECG e monitorização cardíaca devem ser considerados, particularmente em alta tensão, sintomas ou perda de consciência, conforme protocolo.<br>D) Urina escura, teste de sangue positivo e ausência de hemácias pode sugerir mioglobinúria.<br>E) Bicarbonato não deve ser usado rotineiramente como profilaxia de lesão renal por rabdomiólise; a evidência de benefício é insuficiente."
-        ],
-        [
           "4",
-          "Comentário Detalhado:"
+          "Questão 6 — Elétrica: mioglobinúria e rim"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> em queimadura elétrica de alta tensão, assinale a alternativa <strong>INCORRETA</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Lesão muscular interna pode ser maior que a área cutânea aparente.",
+            "<strong>B)</strong> Em rabdomiólise/mioglobinúria, limitar rigidamente a diurese a 0,5 mL/kg/h em qualquer circunstância, sem monitorização adicional.",
+            "<strong>C)</strong> ECG e monitorização cardíaca devem ser considerados, particularmente em alta tensão, sintomas ou perda de consciência, conforme protocolo.",
+            "<strong>D)</strong> Urina escura, teste de sangue positivo e ausência de hemácias pode sugerir mioglobinúria.",
+            "<strong>E)</strong> Bicarbonato não deve ser usado rotineiramente como profilaxia de lesão renal por rabdomiólise; a evidência de benefício é insuficiente."
+          ]
         ],
         [
           "p",
@@ -1433,12 +1473,12 @@
             "<strong>2. Hierarquia de fontes:</strong> MS 2012/SAMU 2015 ensinam Parkland 4 mL/kg/%SCQ no Brasil. A <a href=\"https://academic.oup.com/jbcr/article/45/3/565/7458089\" target=\"_blank\" rel=\"noopener noreferrer\">ABA 2024</a> propõe iniciar 2 mL/kg/%SCQ <strong>somente para adultos ≥20% SCQ</strong>. Não escrever “ATLS 10ª/11ª” como sinônimo de ABA sem conferência documental; pediatria e queimadura elétrica exigem protocolos próprios.",
             "<strong>3. As 8 horas contam da queimadura:</strong> a divisão 50%/8 h e 50%/16 h descreve Parkland clássica; com outras estratégias, a velocidade deve ser ajustada a diurese e perfusão. Não compensar atraso por cálculo cegamente.",
             "<strong>4. Fórmula não substitui monitorização:</strong> objetivo urinário orientativo em adulto ~0,5 mL/kg/h e em criança ~1 mL/kg/h, interpretado com perfusão, peso, rim, edema e manutenção pediátrica. Em rabdomiólise, metas são individualizadas.",
-            "<strong>5. Intubação Precoce na Lesão Inalatória:</strong> Não hesite: estridor inspiratório, rouquidão, queimadura profunda de face/pescoço, fuligem na orofaringe e confinamento são sinais que exigem avaliação imediata de via aérea, e não IOT automática isoladamente antes do edema oclusivo de glote.",
-            "<strong>6. Oximetria Mente no Monóxido de Carbono:</strong> A oximetria de pulso é normal mesmo com níveis letais de COHb. Diagnóstico exige gasometria com co-oximetria. Tratamento: $O_2$ a 100% não reinalante (OHB se $\text{COHb} &gt; 25%$ ou gestante $\text{COHb} &gt; 15%$).",
-            "<strong>7. Cianeto mata por Acidose Lática:</strong> Incêndio em ambiente fechado com materiais plásticos/estofados + choque com <strong>lactato sérico elevadíssimo (&gt; 10 mmol/L)</strong> = intoxicação por cianeto. Antídoto: <strong>Hidroxicobalamina 5,0 g IV</strong>.",
+            "<strong>5. Via aérea exige avaliação, não automatismo:</strong> estridor, edema progressivo e insuficiência respiratória elevam indicação de intervenção. Fuligem e vibrissas chamuscadas isoladas exigem consulta/monitorização, sem intubação obrigatória por uma única pista.",
+            "<strong>6. CO e oximetria:</strong> oxímetro comum pode aparentar saturação normal apesar de COHb elevada; colher co-oximetria e administrar oxigênio adequado; hiperbaria requer avaliação especializada, não depende exclusivamente de um percentual de COHb.",
+            "<strong>7. Cianeto:</strong> pensar em incêndio fechado + alteração neurológica/choque e hiperlactatemia. O antídoto é hidroxocobalamina, conforme Protocolo de Uso do MS aprovado em 2015 (a página oficial foi atualizada em 2025), não apenas uma tabela estrangeira.",
             "<strong>8. Escarotomia é Urgência na Sala de Trauma:</strong> Queimaduras circunferenciais de tórax com hipóxia / alta pressão ventilatória ou membros com dor ao estiramento e perda de pulso exigem incisão longitudinal imediata da escara. Não requer anestesia na área de 3º grau.",
             "<strong>9. Cobertura da ferida:</strong> selecionar curativos conforme profundidade, exsudato, topografia, dor e risco de infecção; sulfadiazina de prata não é o melhor curativo universal e pode atrasar epitelização de algumas lesões superficiais. Mafenida tem toxicidade específica; antibiótico sistêmico profilático de rotina não é indicado.",
-            "<strong>10. Úlcera de Curling e Hipermetabolismo:</strong> Prevenção de úlcera de estresse com IBP e nutrição enteral precoce hiperproteica (1,5 a 2,0 g/kg/dia) nas primeiras 6 a 12 horas. Vacina e imunoglobulina antitetânica conforme calendário para feridas tetanogênicas."
+            "<strong>10. Transferência ao CTQ:</strong> MS 2012 traz limiares mais antigos; a orientação ABA atualizada recomenda consulta ampliada em queimadura ≥10% SCQ parcial, espessura total em qualquer extensão, áreas funcionais, pediatria e etiologias especiais, com regulação no SUS."
           ]
         ]
       ]
@@ -1454,11 +1494,15 @@
         [
           "o",
           [
-            "<a href=\"https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/\" target=\"_blank\" rel=\"noopener noreferrer\">American College of Surgeons — Advanced Trauma Life Support (ATLS), 10th and 11th Editions: Thermal Injuries</a>",
-            "<a href=\"https://ameriburn.org/education/burn-care-resources/\" target=\"_blank\" rel=\"noopener noreferrer\">American Burn Association (ABA) — Practice Guidelines for Burn Care and Fluid Resuscitation</a>",
-            "<a href=\"http://sbqueimaduras.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Queimaduras (SBQ) — Diretrizes Nacionais de Atendimento Inicial ao Paciente Queimado</a>",
-            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/q/queimaduras\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde do Brasil — Cartilha para Tratamento de Emergência das Queimaduras</a>",
-            "<a href=\"https://www.euroburn.org/\" target=\"_blank\" rel=\"noopener noreferrer\">European Burn Association (EBA) — European Practice Guidelines for Burn Care</a>"
+            "<a href=\"https://bvsms.saude.gov.br/bvs/publicacoes/cartilha_tratamento_emergencia_queimaduras.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — MS] Cartilha para Tratamento de Emergência das Queimaduras. Brasília, 2012. Parkland histórica e transferência.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_suporte_avancado_vida.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — SAMU/MS] Protocolo de Suporte Avançado de Vida, AT25 Queimadura Térmica, elaboração 2014, revisão 2015.</a>",
+            "<a href=\"https://sbqueimaduras.org.br/material/3091\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — SBQ] Manual de Queimaduras para Estudantes. SBQ/ESCS/LETES, 2021. Referência nacional de cobertura; texto e imagens não reproduzidos, publicação não comercial.</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hidroxocobalamina-na-intoxicacao-aguda-por-cianeto-protocolo-de-uso/view\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — MS] Protocolo de Uso da Hidroxocobalamina na Intoxicação Aguda por Cianeto. Portaria nº 1.115, de 19/10/2015; página atualizada em 20/01/2025.</a>",
+            "<a href=\"https://www.ameriburn.org/burn-care-team/resources/guidelines-for-burn-patient-referral\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL — ABA] Guidelines for Burn Patient Referral; consultar critérios mais sensíveis, compatibilizando destino com regulação do SUS.</a>",
+            "<a href=\"https://academic.oup.com/jbcr/article/45/3/565/7458089\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL — ABA] Cartotto et al. Clinical Practice Guidelines on Burn Shock Resuscitation. J Burn Care Res. 2024;45:565–589. A recomendação de 2 mL/kg/%SCQ refere-se a adultos ≥20% SCQ.</a>",
+            "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8804685/\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL — AAST] Rhabdomyolysis Consensus Document. 2022. Sem recomendação de bicarbonato/diuréticos preventivos de LRA de rotina.</a>",
+            "<a href=\"https://cpr.heart.org/en/resuscitation-science/2024-first-aid-guidelines\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL — AHA/Cruz Vermelha] First Aid Guidelines. 2024. Resfriamento com água corrente, avaliação de queimaduras e prevenção de hipotermia.</a>",
+            "<a href=\"https://www.who.int/news-room/fact-sheets/detail/burns\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL — OMS] Burns: prevenção, primeiros cuidados, descontaminação e encaminhamento.</a>"
           ],
           "reference-list"
         ]
