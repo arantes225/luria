@@ -1332,51 +1332,259 @@
         ],
         [
           "p",
-          "<strong>Q1.</strong> Mulher de 61 anos apresenta sangramento pós-menopausa recorrente, com endométrio de 3 mm. Segundo o raciocínio brasileiro, qual conduta é adequada?<br>A) Alta definitiva porque endométrio tem menos de 4 mm.<br>B) Prosseguir investigação e amostragem histológica conforme risco, apesar do eco fino.<br>C) Dosar CA-125 para excluir neoplasia.<br>D) Fazer apenas citologia cervical.<br><strong>Resposta comentada: alternativa B.</strong> A FEBRASGO 2025 indica reavaliar sangramento recorrente mesmo quando a medida é inferior a 4 mm. O INCA recomenda investigar sintomas; a ACOG 2026, como comparação, prefere US + amostragem na avaliação inicial da maioria."
+          "<strong>Treino ativo:</strong> tente resolver a pergunta antes de abrir mentalmente o comentário. Cada questão é autoral e simulada, não atribuída a uma prova real. Releia o capítulo correspondente quando errar uma alternativa."
+        ],
+        [
+          "4",
+          "Questão 1 — Sangramento e endométrio fino"
         ],
         [
           "p",
-          "<strong>Q2.</strong> Sangramento persistente apesar de biópsia endometrial cega benigna e lesão focal ao US. Próxima opção apropriada:  <br>A) Encerrar investigação. B) Repetir apenas citologia cervical anualmente. C) Avaliação adicional, frequentemente histeroscopia e biópsia dirigida. D) Radioiodo.  <br><strong>Gabarito C.</strong> A/B podem perder lesão focal; D não trata endométrio. <strong>Mini-revisão:</strong> amostragem negativa pode não representar toda cavidade."
+          "<strong>Enunciado:</strong> Mulher de 61 anos apresenta sangramento pós-menopausa recorrente, com endométrio de 3 mm. Segundo o raciocínio brasileiro, qual conduta é adequada?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Alta definitiva porque endométrio tem menos de 4 mm.",
+            "<strong>B)</strong> Prosseguir investigação e amostragem histológica conforme risco, apesar do eco fino.",
+            "<strong>C)</strong> Dosar CA-125 para excluir neoplasia.",
+            "<strong>D)</strong> Fazer apenas citologia cervical."
+          ]
         ],
         [
           "p",
-          "<strong>Q3.</strong> Qual perfil molecular costuma associar-se a prognóstico favorável em câncer endometrial inicial?  <br>A) POLE patogênico. B) p53abn isolado. C) Toda alteração de MMR indica prognóstico idêntico. D) Qualquer seroso sem invasão.  <br><strong>Gabarito A.</strong> B geralmente representa maior risco; C generaliza; D ignora biologia. <strong>Mini-revisão:</strong> POLEmut e p53abn têm implicações prognósticas diferentes."
+          "<strong>Resposta comentada: alternativa B.</strong> A FEBRASGO 2025 indica reavaliar sangramento recorrente mesmo quando a medida é inferior a 4 mm. O INCA recomenda investigar sintomas; a ACOG 2026, como comparação, prefere US + amostragem na avaliação inicial da maioria."
+        ],
+        [
+          "4",
+          "Questão 2 — Amostragem de lesão focal"
         ],
         [
           "p",
-          "<strong>Q4.</strong> Um carcinoma endometrial com perda de MLH1/PMS2 demonstra obrigatoriamente síndrome de Lynch?  <br>A) Sim, sem outros exames. B) Não; deve-se investigar metilação MLH1 e contexto para selecionar estudo germinativo. C) Apenas se CA-125 elevado. D) Não tem relação com genética.  <br><strong>Gabarito B.</strong> A ignora causas esporádicas; C é irrelevante; D ignora MMR e predisposição. <strong>Mini-revisão:</strong> triagem tumoral e mutação hereditária não são equivalentes."
+          "<strong>Enunciado:</strong> Sangramento persistente apesar de biópsia endometrial cega benigna e lesão focal ao US. Próxima opção apropriada:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Encerrar investigação.",
+            "<strong>B)</strong> Repetir apenas citologia cervical anualmente.",
+            "<strong>C)</strong> Avaliação adicional, frequentemente histeroscopia e biópsia dirigida.",
+            "<strong>D)</strong> Radioiodo."
+          ]
         ],
         [
           "p",
-          "<strong>Q5.</strong> No FIGO 2023, estádio I de endométrio é interpretado apenas por profundidade miometrial?  <br>A) Sim. B) Sim, se paciente obesa. C) Não, histologia/LVSI e classificação molecular podem modificar estadiamento. D) Não há mais estadiamento.  <br><strong>Gabarito C.</strong> A/B ignoram critérios de 2023; D é falso. <strong>Mini-revisão:</strong> anatomia e biologia são integradas."
+          "<strong>Resposta comentada: alternativa C.</strong> A/B podem perder lesão focal; D não trata endométrio. <strong>Pulo do Gato:</strong> amostragem negativa pode não representar toda cavidade."
+        ],
+        [
+          "4",
+          "Questão 3 — POLE versus p53"
         ],
         [
           "p",
-          "<strong>Q6.</strong> Paciente com EIN/hiperplasia atípica e prole concluída. Opção definitiva comumente considerada:  <br>A) Não tratar. B) Histerectomia após avaliação apropriada. C) Apenas antibiótico. D) Radioiodo.  <br><strong>Gabarito B.</strong> A não lida com risco; C/D não tratam a lesão. <strong>Mini-revisão:</strong> EIN tem risco de carcinoma concomitante/recorrência."
+          "<strong>Enunciado:</strong> Qual perfil molecular costuma associar-se a prognóstico favorável em câncer endometrial inicial?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> POLE patogênico.",
+            "<strong>B)</strong> p53abn isolado.",
+            "<strong>C)</strong> Toda alteração de MMR indica prognóstico idêntico.",
+            "<strong>D)</strong> Qualquer seroso sem invasão."
+          ]
         ],
         [
           "p",
-          "<strong>Q7.</strong> Em câncer de endométrio aparentemente inicial, a estratégia nodal atual pode incluir:  <br>A) Linfadenectomia sistemática obrigatória em qualquer paciente. B) Mapeamento de linfonodo sentinela conforme risco e protocolo. C) Nenhuma avaliação nodal é jamais permitida. D) Apenas palpação dos linfonodos.  <br><strong>Gabarito B.</strong> A exagera morbidade; C é absoluto falso; D é insuficiente em alguns casos. <strong>Mini-revisão:</strong> extensão nodal deve ser orientada por risco."
+          "<strong>Resposta comentada: alternativa A.</strong> B geralmente representa maior risco; C generaliza; D ignora biologia. <strong>Pulo do Gato:</strong> POLEmut e p53abn têm implicações prognósticas diferentes."
+        ],
+        [
+          "4",
+          "Questão 4 — MMRd e metilação de MLH1"
         ],
         [
           "p",
-          "<strong>Q8.</strong> Preservação de fertilidade pode ser considerada em cenário selecionado de:  <br>A) Carcinoma seroso metastático. B) Endometrioide de baixo grau sem invasão miometrial em paciente com seguimento confiável. C) p53abn avançado. D) Carcinossarcoma com infiltração cervical.  <br><strong>Gabarito B.</strong> A/C/D são situações inadequadas para a estratégia conservadora descrita. <strong>Mini-revisão:</strong> seleção rigorosa e confirmação histológica seriada."
+          "<strong>Enunciado:</strong> Um carcinoma endometrial com perda de MLH1/PMS2 demonstra obrigatoriamente síndrome de Lynch?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Sim, sem outros exames.",
+            "<strong>B)</strong> Não; deve-se investigar metilação MLH1 e contexto para selecionar estudo germinativo.",
+            "<strong>C)</strong> Apenas se CA-125 elevado.",
+            "<strong>D)</strong> Não tem relação com genética."
+          ]
         ],
         [
           "p",
-          "<strong>Q9.</strong> Qual conjunto de informações é indispensável para discussão pós-operatória moderna?  <br>A) Somente idade. B) Somente espessura inicial ao US. C) Histologia, grau, invasão miometrial, LVSI, linfonodos e perfil molecular quando disponível. D) Apenas peso corporal.  <br><strong>Gabarito C.</strong> A/B/D são dimensões insuficientes. <strong>Mini-revisão:</strong> risco adjuvante não é simples espessura."
+          "<strong>Resposta comentada: alternativa B.</strong> A ignora causas esporádicas; C é irrelevante; D ignora MMR e predisposição. <strong>Pulo do Gato:</strong> triagem tumoral e mutação hereditária não são equivalentes."
+        ],
+        [
+          "4",
+          "Questão 5 — Classificação FIGO 2023"
         ],
         [
           "p",
-          "<strong>Q10.</strong> MMRd é clinicamente relevante porque:  <br>A) Exclui qualquer risco de câncer colorretal familiar. B) Pode orientar investigação hereditária e terapias sistêmicas em contextos específicos. C) Define sempre que cirurgia é desnecessária. D) Impede interpretação histológica.  <br><strong>Gabarito B.</strong> A é falso; C transforma biomarcador em regra inadequada; D não procede. <strong>Mini-revisão:</strong> marcador molecular é prognóstico/preditivo e pode ter implicação familiar."
+          "<strong>Enunciado:</strong> No FIGO 2023, estádio I de endométrio é interpretado apenas por profundidade miometrial?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Sim.",
+            "<strong>B)</strong> Sim, se paciente obesa.",
+            "<strong>C)</strong> Não, histologia/LVSI e classificação molecular podem modificar estadiamento.",
+            "<strong>D)</strong> Não há mais estadiamento."
+          ]
         ],
         [
           "p",
-          "<strong>Q11.</strong> Sangramento intenso com hipotensão em paciente com carcinoma endometrial conhecido. Prioridade:  <br>A) Aguarde reunião de oncologia antes de qualquer intervenção. B) Primeiro estabilização e controle da hemorragia. C) Solicitar apenas CA-125. D) Repetir exame em seis meses.  <br><strong>Gabarito B.</strong> A/C/D atrasam suporte vital. <strong>Mini-revisão:</strong> urgência clínica precede planejamento eletivo."
+          "<strong>Resposta comentada: alternativa C.</strong> A/B ignoram critérios de 2023; D é falso. <strong>Pulo do Gato:</strong> anatomia e biologia são integradas."
+        ],
+        [
+          "4",
+          "Questão 6 — EIN e tratamento definitivo"
         ],
         [
           "p",
-          "<strong>Q12.</strong> Qual afirmação sobre rastreamento está correta?  <br>A) Todo adulto assintomático precisa de biópsia anual. B) Citologia cervical normal exclui câncer endometrial. C) Não existe rastreamento populacional com US/biópsia para todos; Lynch exige abordagem de risco específica. D) Espessura endometrial é marcador diagnóstico isolado para todos os contextos.  <br><strong>Gabarito C.</strong> A cria sobreinvestigação, B confunde colo com corpo uterino, D desconsidera idade e sintomas. <strong>Mini-revisão:</strong> sintomas e risco determinam investigação."
+          "<strong>Enunciado:</strong> Paciente com EIN/hiperplasia atípica e prole concluída. Opção definitiva comumente considerada:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Não tratar.",
+            "<strong>B)</strong> Histerectomia após avaliação apropriada.",
+            "<strong>C)</strong> Apenas antibiótico.",
+            "<strong>D)</strong> Radioiodo."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> A não lida com risco; C/D não tratam a lesão. <strong>Pulo do Gato:</strong> EIN tem risco de carcinoma concomitante/recorrência."
+        ],
+        [
+          "4",
+          "Questão 7 — Mapeamento linfonodal"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Em câncer de endométrio aparentemente inicial, a estratégia nodal atual pode incluir:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Linfadenectomia sistemática obrigatória em qualquer paciente.",
+            "<strong>B)</strong> Mapeamento de linfonodo sentinela conforme risco e protocolo.",
+            "<strong>C)</strong> Nenhuma avaliação nodal é jamais permitida.",
+            "<strong>D)</strong> Apenas palpação dos linfonodos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> A exagera morbidade; C é absoluto falso; D é insuficiente em alguns casos. <strong>Pulo do Gato:</strong> extensão nodal deve ser orientada por risco."
+        ],
+        [
+          "4",
+          "Questão 8 — Preservação de fertilidade"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Preservação de fertilidade pode ser considerada em cenário selecionado de:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Carcinoma seroso metastático.",
+            "<strong>B)</strong> Endometrioide de baixo grau sem invasão miometrial em paciente com seguimento confiável.",
+            "<strong>C)</strong> p53abn avançado.",
+            "<strong>D)</strong> Carcinossarcoma com infiltração cervical."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> A/C/D são situações inadequadas para a estratégia conservadora descrita. <strong>Pulo do Gato:</strong> seleção rigorosa e confirmação histológica seriada."
+        ],
+        [
+          "4",
+          "Questão 9 — Laudo integrado"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Qual conjunto de informações é indispensável para discussão pós-operatória moderna?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Somente idade.",
+            "<strong>B)</strong> Somente espessura inicial ao US.",
+            "<strong>C)</strong> Histologia, grau, invasão miometrial, LVSI, linfonodos e perfil molecular quando disponível.",
+            "<strong>D)</strong> Apenas peso corporal."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa C.</strong> A/B/D são dimensões insuficientes. <strong>Pulo do Gato:</strong> risco adjuvante não é simples espessura."
+        ],
+        [
+          "4",
+          "Questão 10 — MMRd e imunoterapia"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> MMRd é clinicamente relevante porque:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Exclui qualquer risco de câncer colorretal familiar.",
+            "<strong>B)</strong> Pode orientar investigação hereditária e terapias sistêmicas em contextos específicos.",
+            "<strong>C)</strong> Define sempre que cirurgia é desnecessária.",
+            "<strong>D)</strong> Impede interpretação histológica."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> A é falso; C transforma biomarcador em regra inadequada; D não procede. <strong>Pulo do Gato:</strong> marcador molecular é prognóstico/preditivo e pode ter implicação familiar."
+        ],
+        [
+          "4",
+          "Questão 11 — Hemorragia com instabilidade"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Sangramento intenso com hipotensão em paciente com carcinoma endometrial conhecido. Prioridade:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Aguarde reunião de oncologia antes de qualquer intervenção.",
+            "<strong>B)</strong> Primeiro estabilização e controle da hemorragia.",
+            "<strong>C)</strong> Solicitar apenas CA-125.",
+            "<strong>D)</strong> Repetir exame em seis meses."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> A/C/D atrasam suporte vital. <strong>Pulo do Gato:</strong> urgência clínica precede planejamento eletivo."
+        ],
+        [
+          "4",
+          "Questão 12 — Rastreamento populacional e risco"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Qual afirmação sobre rastreamento está correta?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Todo adulto assintomático precisa de biópsia anual.",
+            "<strong>B)</strong> Citologia cervical normal exclui câncer endometrial.",
+            "<strong>C)</strong> Não existe rastreamento populacional com US/biópsia para todos; Lynch exige abordagem de risco específica.",
+            "<strong>D)</strong> Espessura endometrial é marcador diagnóstico isolado para todos os contextos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa C.</strong> A cria sobreinvestigação, B confunde colo com corpo uterino, D desconsidera idade e sintomas. <strong>Pulo do Gato:</strong> sintomas e risco determinam investigação."
         ]
       ]
     ],
