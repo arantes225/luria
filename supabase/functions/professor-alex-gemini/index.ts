@@ -278,39 +278,42 @@ Deno.serve(async (req: Request) => {
       // Flash-Lite TTS oferece menor latência para respostas curtas; aulas
       // completas preservam o modelo expressivo. Um secret pode sobrescrever.
       const ttsModel = Deno.env.get("ALEX_TTS_MODEL") || (depth === "aula" ? TTS_MODEL : TTS_FAST_MODEL);
-      const ttsResponse = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + ttsModel + ":generateContent", {
+      // Gemini 3.8 TTS usa Interactions API. O endpoint generateContent com
+      // campos legados pode retornar 400 sem áudio mesmo com texto válido.
+      const ttsResponse = await fetch("https://generativelanguage.googleapis.com/v1beta/interactions", {
         method: "POST",
         headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
         body: JSON.stringify({
-          contents: [{
-            role: "user",
-            parts: [{
+          model: ttsModel,
+          input: [{
+            type: "user_input",
+            content: [{
+              type: "text",
               text: voiceText,
-              speech_metadata: {
+              annotations: [{
+                type: "speech_metadata",
                 style: mode === "estourado" ? "exasperated, impatient and explosive" : "cheerful and friendly"
-              }
+              }]
             }]
           }],
-          generationConfig: {
-            responseModalities: ["AUDIO"],
-            speechConfig: {
-              voiceConfig: {
-                // Gemini 3.8 TTS usa "voice" em vez do antigo "prebuiltVoiceConfig".
-                voice: "Puck"
-              }
-            }
-          }
+          response_format: { type: "audio" },
+          generation_config: { speech_config: [{ voice: "Puck" }] }
         }),
         signal: AbortSignal.timeout(25_000),
       });
 
       if (ttsResponse.ok) {
         const ttsData = await ttsResponse.json().catch(() => null);
-        const part = ttsData?.candidates?.[0]?.content?.parts?.[0];
-        const rawAudio = part?.inlineData?.data || part?.inline_data?.data;
-        if (rawAudio) {
-          audioBase64 = rawAudio;
-          audioMimeType = part?.inlineData?.mimeType || part?.inline_data?.mime_type || "audio/wav";
+        const steps = Array.isArray(ttsData?.steps) ? ttsData.steps : [];
+        const parts = steps.flatMap((step: { type?: string; content?: unknown }) =>
+          step.type === "model_output" && Array.isArray(step.content) ? step.content : []
+        );
+        const audioPart = parts.find((part: { type?: string; data?: unknown }) =>
+          part?.type === "audio" && typeof part.data === "string"
+        );
+        if (audioPart?.data) {
+          audioBase64 = audioPart.data;
+          audioMimeType = audioPart.mime_type || "audio/wav";
         } else {
           audioError = "tts_unavailable";
           console.warn("[alex-gemini] TTS returned no audio data");
