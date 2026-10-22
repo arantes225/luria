@@ -71,6 +71,7 @@ const TTS_MODEL = "gemini-3.8-flash-tts";
 const TTS_FAST_MODEL = "gemini-3.8-flash-lite-tts";
 const MAX_PDF_BASE64 = 6_000_000; // ~4.5MB of raw PDF
 const MAX_BODY_BYTES = 6_500_000;
+const MAX_SITE_CONTEXT_CHARS = 6_000;
 
 function corsHeaders(origin: string | null) {
   return {
@@ -139,6 +140,9 @@ Deno.serve(async (req: Request) => {
   const mode = (data.mode === "estourado") ? "estourado" : "normal";
   const channel = (data.channel === "voice") ? "voice" : "chat";
   const depth = data.depth === "aula" ? "aula" : "rapida";
+  const sourceMode = data.source_mode === "luria_site" ? "luria_site" : "general";
+  const siteContext = String(data.site_context || "").trim().slice(0, MAX_SITE_CONTEXT_CHARS);
+  const voiceConfidence = Number(data.voice_confidence);
   const area = String(data.area || "").trim().slice(0, 120);
   const topic = String(data.topic || "").trim().slice(0, 180);
   const prompt = String(data.prompt || "").trim().slice(0, 4000);
@@ -146,6 +150,14 @@ Deno.serve(async (req: Request) => {
   const rawHistory = Array.isArray(data.history) ? data.history.slice(-8) : [];
   if (!topic && !prompt) return json({ error: "empty_prompt" }, 400, headers);
   if (!Deno.env.get("CLIENT_GEMINI")) return json({ error: "gemini_secret_missing" }, 503, headers);
+
+  const voiceTranscript = prompt.toLocaleLowerCase("pt-BR").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[.\-]/g, " ").replace(/\s+/g, " ").trim();
+  if (channel === "voice" && /^(cep|c e p|cepe)$/.test(voiceTranscript)) {
+    return json({ clarification: "A transcrição veio como “CEP”. Você quis dizer “sepse”? Responda “sim, sepse” ou repita a pergunta.", clarification_code: "ambiguous_transcription" }, 200, headers);
+  }
+  if (channel === "voice" && Number.isFinite(voiceConfidence) && voiceConfidence < 0.65) {
+    return json({ clarification: "Não entendi bem esse termo. Pode repetir devagar ou digitar a palavra? Não vou elaborar uma resposta antes de confirmar.", clarification_code: "low_transcription_confidence" }, 200, headers);
+  }
 
   const { data: initialUsage, error: initialUsageError } = await admin.rpc("professor_alex_token_usage", { p_user_id: user.id });
   if (initialUsageError || !initialUsage || typeof initialUsage !== "object") {
@@ -193,13 +205,20 @@ Deno.serve(async (req: Request) => {
     }
   }
 
+  if (sourceMode === "luria_site" && !siteContext && (file === undefined || file === null)) {
+    return json({ clarification: "Não encontrei esse termo no conteúdo da LURIA. Reformule a pergunta ou indique a matéria.", clarification_code: "site_content_not_found" }, 200, headers);
+  }
+  if (sourceMode === "luria_site" && siteContext) {
+    userParts.unshift({ text: "Trechos recuperados exclusivamente do acervo público da LURIA. Use somente estes trechos como base factual; se forem insuficientes, diga isso em vez de completar com conhecimento externo:\n" + siteContext });
+  }
+
   contents.push({ role: "user", parts: userParts });
 
   // A opção escolhida pelo aluno controla efetivamente o tamanho da resposta.
   // A conversa casual continua curta mesmo em "aula", salvo solicitação explícita.
   const system = getAlexSystemInstruction(mode, channel) + (depth === "aula"
     ? "\n\nFORMATO AULA COMPLETA: quando o aluno pedir ensino médico, explique com raciocínio clínico, fisiopatologia, diagnóstico, conduta e exemplos pertinentes. Não force uma aula em cumprimentos ou conversas sociais."
-    : "\n\nFORMATO DÚVIDA RÁPIDA: priorize uma resposta imediata, direta e natural. Cumprimentos: uma frase curta. Dúvida factual simples: até três frases. Só aprofunde se a pergunta realmente exigir, sem comprometer segurança clínica.");
+    : "\n\nFORMATO DÚVIDA RÁPIDA: priorize uma resposta imediata, direta e natural. Cumprimentos: uma frase curta. Dúvida factual simples: até três frases. Só aprofunde se a pergunta realmente exigir, sem comprometer segurança clínica.") + (sourceMode === "luria_site" ? "\n\nFONTE RESTRITA: responda somente com base nos trechos do acervo LURIA enviados nesta requisição. Não use busca externa nem preencha lacunas com uma aula genérica." : "");
 
   // Gemini 3.5 Flash-Lite exige níveis de pensamento, não thinkingBudget: 0.
   // Não enviar os antigos parâmetros de sampling no Gemini 3.x (deprecated).

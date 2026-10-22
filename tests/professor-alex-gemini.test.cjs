@@ -55,6 +55,18 @@ test("Live conversation auto-plays audio and has no manual replay control", () =
   assert.match(client, /stopCurrentVoicePlayback\(\)/);
 });
 
+test("Site-only retrieval and ambiguity guards stay before Gemini generation", () => {
+  assert.match(client, /professor-alex-site-index\.json/);
+  assert.match(client, /payload\.site_context/);
+  assert.match(client, /Não encontrei esse termo no conteúdo da LURIA/);
+  assert.match(edge, /sourceMode/);
+  assert.match(edge, /MAX_SITE_CONTEXT_CHARS/);
+  assert.match(edge, /ambiguous_transcription/);
+  assert.match(edge, /voiceConfidence < 0\.65/);
+  assert.match(client, /payload\.voice_confidence/);
+  assert.match(client, /alex-stop-response/);
+});
+
 test("Fast answer format is sent to server and controls output budget", () => {
   assert.match(page, /data-alex-depth="rapida"/);
   assert.match(page, /data-alex-depth="aula"/);

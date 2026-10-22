@@ -12,6 +12,42 @@ const submit = form?.querySelector('button[type="submit"]');
 const fileInput = document.getElementById("alex-file");
 let alexUsageTimer = null;
 const sessionHistory = [];
+let alexSiteIndexPromise = null;
+let liveTranscriptConfidence = null;
+let speechGeneration = 0;
+
+function shouldSendAlexHistory(text) {
+  return /\b(isso|nesse caso|e depois|por que|porque|qual deles|como diferencio|continue|aprofund|anterior)\b/i.test(String(text || ""));
+}
+
+function normalizeAlexSearch(value) {
+  return String(value || "").toLocaleLowerCase("pt-BR")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+async function findAlexSiteContext(query) {
+  if (!alexSiteIndexPromise) {
+    alexSiteIndexPromise = fetch("/assets/data/professor-alex-site-index.json?v=20261022-site1", { cache: "force-cache" })
+      .then(response => response.ok ? response.json() : Promise.reject(new Error("site_index_unavailable")))
+      .catch(() => ({ records: [] }));
+  }
+  const index = await alexSiteIndexPromise;
+  const normalized = normalizeAlexSearch(query);
+  const tokens = normalized.split(/\s+/).filter(token => token.length >= 3);
+  if (!tokens.length) return null;
+  const ranked = (index.records || []).map(record => {
+    const title = normalizeAlexSearch(record.title);
+    const haystack = normalizeAlexSearch([record.title, record.area, record.subject, record.text].join(" "));
+    const score = tokens.reduce((total, token) => total + (haystack.includes(token) ? (title.includes(token) ? 5 : 1) : 0), 0);
+    return { record, score };
+  }).filter(item => item.score > 0).sort((a, b) => b.score - a.score).slice(0, 3);
+  if (!ranked.length) return null;
+  return {
+    context: ranked.map(({ record }) => `[${record.title} | ${record.area}] ${String(record.text || "").slice(0, 900)}`).join("\n\n").slice(0, 3_000),
+    sources: ranked.map(({ record }) => `/apostilas/${record.slug}/`),
+  };
+}
 
 // Estado da Conversa ao Vivo por Voz
 let isLiveActive = false;
@@ -256,8 +292,22 @@ if (form) {
       mode: isEstourado ? "estourado" : "normal",
       channel: isLiveActive ? "voice" : "chat",
       depth: document.querySelector('[data-alex-depth].is-active')?.dataset.alexDepth === "aula" ? "aula" : "rapida",
-      history: sessionHistory.slice(-8),
+      history: shouldSendAlexHistory(prompt) ? sessionHistory.slice(-4) : [],
     };
+    if (isLiveActive && Number.isFinite(liveTranscriptConfidence)) payload.voice_confidence = liveTranscriptConfidence;
+    const hasMaterial = Boolean(fileInput?.files?.[0]);
+    const siteContext = await findAlexSiteContext([topic, prompt].filter(Boolean).join(" "));
+    if (!siteContext && !hasMaterial) {
+      const message = "Não encontrei esse termo no conteúdo da LURIA. Reformule a pergunta ou indique a matéria. Não vou inventar uma aula fora do acervo.";
+      if (!isLiveActive) display(message, "Busca na LURIA", true);
+      else speakText(message);
+      return;
+    }
+    if (siteContext) {
+      payload.source_mode = "luria_site";
+      payload.site_context = siteContext.context;
+      payload.site_sources = siteContext.sources;
+    }
 
     const oldText = submit?.textContent || "Perguntar";
     if (submit) {
@@ -294,6 +344,11 @@ if (form) {
       const { data, error } = await client.functions.invoke("professor-alex-gemini", { body: payload });
       if (error) throw error;
       if (data?.usage) renderUsage(data.usage);
+      if (typeof data?.clarification === "string" && data.clarification.trim()) {
+        if (!isLiveActive) display(data.clarification, "Confirme a transcrição");
+        else speakText(data.clarification);
+        return;
+      }
       if (typeof data?.answer !== "string" || !data.answer.trim()) throw Error("empty_response");
       if (prompt) {
         sessionHistory.push({ role: "user", text: prompt });
@@ -364,12 +419,19 @@ if (form) {
 // ==========================================
 const liveCallBtn = document.getElementById("alex-live-call-btn");
 const liveCallText = document.getElementById("alex-live-call-text");
+const stopResponseBtn = document.getElementById("alex-stop-response");
 
 let currentPuckAudio = null;
 let currentPuckSource = null;
 let liveAudioContext = null;
 let audioPlaybackPending = false;
 let playbackGeneration = 0;
+
+function setStopResponseVisible(visible) {
+  if (!stopResponseBtn) return;
+  stopResponseBtn.hidden = !visible;
+  stopResponseBtn.style.display = visible ? "inline-flex" : "none";
+}
 
 // O toque em "Conversar ao Vivo" autoriza a saída de áudio para toda a sessão.
 // No Safari/iOS a liberação precisa ocorrer dentro do evento de clique.
@@ -394,6 +456,7 @@ function unlockLiveAudio() {
 
 function stopCurrentVoicePlayback() {
   playbackGeneration += 1;
+  speechGeneration += 1;
   audioPlaybackPending = false;
   if (currentPuckSource) {
     try { currentPuckSource.onended = null; currentPuckSource.stop(); } catch {}
@@ -406,7 +469,14 @@ function stopCurrentVoicePlayback() {
   window.speechSynthesis?.cancel();
   const mascot = document.getElementById("alex-mascot");
   if (mascot) mascot.speaking = false;
+  setStopResponseVisible(false);
 }
+
+stopResponseBtn?.addEventListener("click", () => {
+  stopCurrentVoicePlayback();
+  const statusText = document.getElementById("alex-status-text");
+  if (statusText) statusText.textContent = isLiveActive ? "⏸️ Resposta interrompida." : "Resposta interrompida.";
+});
 
 function setMascotSpeaking() {
   const mascot = document.getElementById("alex-mascot");
@@ -427,11 +497,13 @@ async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackTe
   stopCurrentVoicePlayback();
   const generation = playbackGeneration;
   audioPlaybackPending = true;
+  setStopResponseVisible(true);
   const finish = () => {
     if (generation !== playbackGeneration) return;
     currentPuckSource = null;
     currentPuckAudio = null;
     audioPlaybackPending = false;
+    setStopResponseVisible(false);
     const mascot = document.getElementById("alex-mascot");
     if (mascot) mascot.speaking = false;
     if (typeof onComplete === "function") onComplete();
@@ -490,6 +562,7 @@ function speakText(text, onComplete) {
     if (onComplete) onComplete();
     return;
   }
+  const generation = ++speechGeneration;
   window.speechSynthesis.cancel();
 
   const plainText = String(text || "")
@@ -525,6 +598,8 @@ function speakText(text, onComplete) {
 
   const mascot = document.getElementById("alex-mascot");
   utterance.onstart = () => {
+    if (generation !== speechGeneration) return;
+    setStopResponseVisible(true);
     if (mascot) {
       mascot.speaking = true;
       if (typeof mascot.playAnimation === "function") {
@@ -536,9 +611,10 @@ function speakText(text, onComplete) {
 
   let speechDone = false;
   const endSpeech = () => {
-    if (speechDone) return;
+    if (speechDone || generation !== speechGeneration) return;
     speechDone = true;
     audioPlaybackPending = false;
+    setStopResponseVisible(false);
     if (mascot) mascot.speaking = false;
     if (onComplete) onComplete();
   };
@@ -616,6 +692,7 @@ function initLiveVoiceMode() {
         if (!isLiveActive || recognition !== liveRecognition) return;
         const query = event.results?.[0]?.[0]?.transcript?.trim();
         if (query) {
+          liveTranscriptConfidence = Number(event.results?.[0]?.[0]?.confidence);
           const promptInput = document.getElementById("alex-prompt");
           if (promptInput) promptInput.value = query;
           if (form) form.dispatchEvent(new Event("submit", { cancelable: true }));
