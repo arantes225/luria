@@ -301,6 +301,10 @@
       "Questão 12 — Risco e processo"
     ],
     [
+      "sec-instrumentos-normativos-prioritarios",
+      "Guia de consulta normativa: qual documento usar em cada decisão?"
+    ],
+    [
       "referencias",
       "Referências"
     ]
@@ -324,6 +328,10 @@
         [
           "2",
           "Introdução à Vigilância Sanitária"
+        ],
+        [
+          "p",
+          "<strong>Em 30 segundos:</strong> vigilância sanitária atua sobre riscos em <strong>produtos e serviços</strong>, não se limita a doenças de notificação epidemiológica. Base jurídica: <a href=\"https://www.planalto.gov.br/ccivil_03/leis/l9782.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Lei 9.782/1999 (Anvisa e Sistema Nacional de Vigilância Sanitária)</a>. Em serviços, <a href=\"https://anvisalegis-empresa.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&numeroAto=00000036&orgao=RDC%2FDC%2FANVISA%2FMS&valorAno=2013\" target=\"_blank\" rel=\"noopener noreferrer\">RDC 36/2013</a> dispõe sobre ações de segurança do paciente; <a href=\"https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&numeroAto=00000222&orgao=RDC%2FDC%2FANVISA%2FMS&valorAno=2018\" target=\"_blank\" rel=\"noopener noreferrer\">RDC 222/2018</a> sobre resíduos de serviços de saúde e PGRSS; <a href=\"https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&numeroAto=00000015&orgao=RDC%2FDC%2FANVISA%2FMS&valorAno=2012\" target=\"_blank\" rel=\"noopener noreferrer\">RDC 15/2012</a> sobre processamento de produtos para saúde. <strong>As datas são de edição, não prova de que o texto esteja inalterado</strong>: consultar texto consolidado e alterações vigentes para fiscalizar/prescrever condutas institucionais."
         ],
         [
           "p",
@@ -755,6 +763,10 @@
         [
           "p",
           "A tabela é uma visão didática e não substitui a classificação detalhada da norma, inclusive exceções e subgrupos. Não definir tratamento ou destinação apenas pelo exemplo da coluna."
+        ],
+        [
+          "p",
+          "<strong>Aplicação prática da <a href=\"https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&numeroAto=00000222&orgao=RDC%2FDC%2FANVISA%2FMS&valorAno=2018\" target=\"_blank\" rel=\"noopener noreferrer\">RDC 222/2018</a>:</strong> o PGRSS é atribuição do gerador; classificação em A–E orienta segregação <em>na fonte</em>, identificação, acondicionamento, coleta, tratamento e destino conforme norma e riscos, sem presumir que todo material de serviço de saúde seja do grupo A. O grupo E trata perfurocortantes e requer descarte em recipiente apropriado, sem reencapar agulhas."
         ]
       ]
     ],
@@ -769,6 +781,10 @@
         [
           "p",
           "O processamento de materiais inclui sequência de etapas com finalidades diferentes. <strong>Limpeza</strong> remove sujidade e reduz carga orgânica; <strong>desinfecção</strong> atua sobre microrganismos conforme seu nível e processo; <strong>esterilização</strong> busca eliminar todas as formas de vida microbiana viável em condições especificadas. Material esterilizado pode perder condição de uso seguro por embalagem violada, transporte inadequado ou armazenamento indevido. O controle do processo não se resume ao ciclo da autoclave."
+        ],
+        [
+          "p",
+          "<strong>Base legal técnica:</strong> <a href=\"https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&numeroAto=00000015&orgao=RDC%2FDC%2FANVISA%2FMS&valorAno=2012\" target=\"_blank\" rel=\"noopener noreferrer\">RDC 15/2012</a> exige cadeia segura para processamento de produtos para saúde: pré-limpeza, limpeza, inspeção, preparo, desinfecção/esterilização conforme classificação e armazenamento; o fluxo deve ser da área suja para a área limpa. A terceirização não elimina a corresponsabilidade do serviço contratante; conferir versão consolidada da norma."
         ],
         [
           "2",
@@ -1912,6 +1928,56 @@
       ]
     ],
     [
+      "sec-instrumentos-normativos-prioritarios",
+      null,
+      [
+        [
+          "2",
+          "Guia de consulta normativa: qual documento usar em cada decisão?"
+        ],
+        [
+          "t",
+          [
+            "Problema",
+            "Fonte brasileira específica",
+            "Pergunta no serviço"
+          ],
+          [
+            [
+              "Registro, fiscalização e competência da Anvisa",
+              "Lei nº 9.782/1999",
+              "Quem regula, licencia, fiscaliza ou pode agir cautelarmente?"
+            ],
+            [
+              "Incidente assistencial e núcleo de segurança",
+              "RDC 36/2013",
+              "Existe fluxo local de notificação/análise/prevenção e requisitos aplicáveis?"
+            ],
+            [
+              "Resíduos de serviço de saúde",
+              "RDC 222/2018",
+              "Existe PGRSS, segregação correta e documentação de destino?"
+            ],
+            [
+              "Produtos para saúde reutilizáveis",
+              "RDC 15/2012",
+              "Limpeza, inspeção, esterilização e transporte estão validados?"
+            ],
+            [
+              "Doença de notificação epidemiológica",
+              "Lista nacional vigente + norma local",
+              "É agravo epidemiológico, incidente de assistência, tecnovigilância ou queixa técnica?"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "A data original de uma RDC e o nome informal da norma não substituem consulta ao texto consolidado e suas alterações. A autoridade legal vem dos atos oficiais, não de apostilas, slides ou respostas de IA."
+        ]
+      ]
+    ],
+    [
       "referencias",
       0,
       [
@@ -1922,6 +1988,10 @@
         [
           "o",
           [
+            "<a href=\"https://www.planalto.gov.br/ccivil_03/leis/l9782.htm\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — LEI 9.782/1999] Institui Anvisa e define competências do SNVS.</a>",
+            "<a href=\"https://anvisalegis-empresa.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&numeroAto=00000036&orgao=RDC%2FDC%2FANVISA%2FMS&valorAno=2013\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — ANVISA RDC 36/2013] Segurança do paciente em serviços de saúde; conferir texto consolidado.</a>",
+            "<a href=\"https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&numeroAto=00000222&orgao=RDC%2FDC%2FANVISA%2FMS&valorAno=2018\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — ANVISA RDC 222/2018] Gerenciamento de resíduos de serviços de saúde.</a>",
+            "<a href=\"https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&numeroAto=00000015&orgao=RDC%2FDC%2FANVISA%2FMS&valorAno=2012\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — ANVISA RDC 15/2012] Processamento de produtos para saúde.</a>",
             "<a href=\"https://www.gov.br/saude\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde - Atenção Especializada e Urgências</a>",
             "<a href=\"https://www.gov.br/conitec\" target=\"_blank\" rel=\"noopener noreferrer\">CONITEC - Diretrizes Nacionais</a>",
             "<a href=\"https://www.gov.br/saude\" target=\"_blank\" rel=\"noopener noreferrer\">Diretrizes Oficiais das Sociedades de Especialidade Médica</a>"
