@@ -1122,23 +1122,23 @@
           [
             [
               "Subtipo Histológico Estrito",
-              "Adenocarcinoma endometrioide <strong>Grau 1 (bem diferenciado)</strong> confirmado por revisão anatomopatológica especializada por dois patologistas ginecológicos.",
-              "Subtipos seroso, células claras, carcinossarcoma ou endometrioide grau 2-3 possuem alto risco de disseminação miometrial oculta e metastatização precoce, contraindicando manejo conservador."
+              "Carcinoma endometrioide de baixo grau, preferencialmente grau 1, revisado por patologista experiente; avaliar elegibilidade molecular e outros fatores.",
+              "Histologia agressiva e invasão alteram o risco; não apresentar número fixo de revisores como critério universal."
             ],
             [
               "Ausência de Invasão Miometrial",
               "Ressonância Magnética (RM) de pelve de alta resolução com protocolo específico para endométrio (sequências ponderadas em T2 e difusão DWI com mapa ADC).",
-              "A presença de qualquer grau de infiltração miometrial ou invasão de estroma cervical inviabiliza a terapia conservadora por risco inaceitável de progressão."
+              "Imagem local de qualidade e revisão especializada devem afastar invasão miometrial/cervical antes de proposta conservadora."
             ],
             [
               "Ausência de Doença Anexial ou Extrauterina",
-              "RM de pelve confirmando ovários e tubas normais + TC ou PET-CT de estadiamento toracoabdominal.",
+              "Avaliar anexos e extensão extrauterina com imagem conforme risco e situação clínica; não exigir PET-CT universal.",
               "Exclui metástases ovarianas sincrônicas ou metástases linfonodais ocultas (frequentes em mulheres jovens com Síndrome de Lynch)."
             ],
             [
               "Receptores Hormonais Fortemente Positivos",
-              "Imuno-histoquímica demonstrando positividade expressiva (&gt; 50-80%) para receptor de progesterona (RP).",
-              "Preditor essencial de resposta farmacológica à terapia progestacional em altas doses."
+              "ER/PR podem auxiliar seleção de tratamento hormonal, com técnica e interpretação patologicamente validadas.",
+              "Não afirmar que positividade de RP acima de 50–80% é condição obrigatória universal para todo manejo conservador."
             ]
           ],
           "book-table"
@@ -1160,7 +1160,7 @@
         ],
         [
           "p",
-          "A avaliação de resposta deve ser realizada obrigatoriamente a cada <strong>3 a 6 meses</strong> mediante <strong>videohisteroscopia diagnóstica com biópsia endometrial fracionada dirigida</strong>. Caso se confirme resposta histológica completa (ausência de atipias e atrofia endometrial farmacológica induzida) em duas biópsias consecutivas, a paciente é imediatamente liberada para reprodução assistida (FIV) para encurtar o tempo até a gestação. A <strong>histerectomia total com salpingo-ooforectomia bilateral profilática</strong> é recomendada de maneira definitiva e mandatória logo após o término da prole ou em caso de persistência tumoral após 9 a 12 meses de tratamento progestacional contínuo."
+          "<strong>Monitorização da preservação reprodutiva:</strong> tratamento conservador é exceção para carcinoma endometrioide de baixo grau e estágio criteriosamente selecionado, <strong>sem invasão miometrial e sem doença extrauterina</strong>, após revisão histológica e imagem adequadas. Progestagênios ou sistema intrauterino de levonorgestrel são opções a discutir por oncoginecologia, com biópsias e avaliação seriada, frequentemente a cada 3–6 meses. A resposta completa deve ser confirmada histologicamente antes de planejar gestação; falha, progressão ou recidiva levam à revisão imediata do plano. A histerectomia definitiva após prole ou falha terapêutica é discutida conforme risco e diretriz — não impor período rígido universal de 9–12 meses ou ooforectomia bilateral automática a todas as pacientes jovens. <a href=\"https://pubmed.ncbi.nlm.nih.gov/40744042/\" target=\"_blank\" rel=\"noopener noreferrer\">ESGO–ESTRO–ESP 2025</a>."
         ],
         [
           "3",
@@ -1168,28 +1168,28 @@
         ],
         [
           "p",
-          "Para pacientes com adenocarcinoma de endométrio avançado recidivado ou metastático que progrediram à quimioterapia de primeira linha com platina, o tratamento de escolha baseia-se na caracterização do status de reparo de DNA (MMR):"
+          "<strong>Tratamento sistêmico depende de linha e biomarcadores:</strong> em doença avançada ou recorrente, MMRd/MSI-H, p53, histologia, HER2 em casos selecionados, terapia prévia e desempenho funcional orientam opções. Imunoterapia isolada, combinações com quimioterapia e lenvatinibe + pembrolizumabe têm <strong>indicações e níveis de evidência diferentes</strong>; nem todo paciente que progrediu à platina deve receber esquema idêntico. Verificar aprovação regulatória, indicação vigente e acesso no SUS/suplementar antes de ensinar como prescrição direta. Fonte complementar: <a href=\"https://pubmed.ncbi.nlm.nih.gov/40744042/\" target=\"_blank\" rel=\"noopener noreferrer\">ESGO 2025</a>."
         ],
         [
           "t",
           [
-            "Status de Reparo de DNA (MMR)",
-            "Regime Terapêutico Sistêmico",
-            "Evidência Clínica (Ensaio Clínico Fase III)",
-            "Taxa de Resposta e Sobrevida"
+            "Biomarcador / cenário",
+            "Opção que pode ser considerada",
+            "Evidência-chave (não confundir desenho)",
+            "Alerta de aplicabilidade"
           ],
           [
             [
-              "Deficiência de Reparo (dMMR / MSI-H)",
-              "<strong>Pembrolizumabe</strong> 200 mg IV a cada 3 semanas OU <strong>Dostarlimabe</strong> 500 mg IV a cada 3 semanas.",
-              "Estudos KEYNOTE-158 e GARNET.",
-              "Taxa de resposta objetiva (ORR) de 45 a 50%, com respostas duradouras (&gt; 24 meses) e excelente perfil de tolerabilidade."
+              "MMRd / MSI-H em recidiva/avançado",
+              "Bloqueio PD-1 em indicação apropriada; seleção considera linhas anteriores e disponibilidade",
+              "KEYNOTE-158 (fase II, coorte); GARNET (fase I, coortes): <strong>não são dois estudos fase III</strong>",
+              "Perfil molecular pode predizer resposta, mas não significa disponibilidade universal nem ausência de toxicidade imune."
             ],
             [
-              "Reparo Competente (pMMR / MSS)",
-              "<strong>Lenvatinibe (20 mg/dia VO) + Pembrolizumabe (200 mg IV a cada 3 semanas)</strong>.",
-              "Estudo KEYNOTE-775 / Study 309.",
-              "Primeira combinação a demonstrar ganho estatisticamente significativo de sobrevida global (SG) e sobrevida livre de progressão (SLP) em comparação à quimioterapia com doxorrubicina ou paclitaxel semanal em tumores pMMR."
+              "pMMR / MSS em doença avançada ou recorrente após platina, caso elegível",
+              "Lenvatinibe + pembrolizumabe é estratégia em contexto específico, conforme linha e indicação regulatória",
+              "KEYNOTE-775 / Study 309: estudo randomizado fase III",
+              "Esquema exige avaliação de hipertensão, função renal, toxicidade e acesso; não indicar a toda paciente pMMR."
             ]
           ],
           "book-table"
@@ -1223,27 +1223,27 @@
           [
             [
               "Baixo Risco",
-              "Estádio IA (G1 ou G2), invasão miometrial &lt; 50%, ausência de LVSI; qualquer estádio IA/IB POLE mutado.",
-              "<strong>Nenhuma terapia adjuvante</strong> indicada (apenas observação clínica e ginecológica periódica).",
-              "Taxa de recidiva locorregional &lt; 3-5%; toxicidade de radiação não traz benefício de sobrevida."
+              "Baixo risco definido por estádio, histologia, LVSI e subtipo molecular em combinação, não apenas por estádio IA.",
+              "Observação sem adjuvância é apropriada em muitos casos de baixo risco selecionados por avaliação integrada.",
+              "Evitar percentuais universais de recorrência sem definir população do estudo; avaliar risco e toxicidade."
             ],
             [
               "Risco Intermediário",
               "Estádio IA (G3) ou Estádio IB (G1/G2), com critérios adicionais de risco (idade &ge; 60 anos, invasão miometrial &ge; 50%).",
-              "<strong>Braquiterapia de Alta Taxa de Dose (HDR) de Cúpula Vaginal isolada</strong>.",
-              "O estudo PORTEC-2 demonstrou que a braquiterapia vaginal oferece o mesmo controle local pélvico que a radioterapia externa (EBRT), com incidência significativamente menor de toxicidade gastrointestinal e vesical tardia."
+              "Braquiterapia vaginal pode ser preferida em subgrupos para reduzir recidiva vaginal e toxicidade, não automaticamente em todo estádio IB.",
+              "PORTEC-2 informa desfechos em população selecionada; não extrapolar como equivalência irrestrita de controle pélvico em toda paciente."
             ],
             [
               "Risco Alto-Intermediário / Alto Risco",
               "Estádio IB G3 com LVSI substancial; Estádio II (envolvimento do estroma cervical); ou qualquer estádio com subtipo p53 anormal / seroso.",
-              "<strong>Radioterapia Pélvica Externa (EBRT)</strong> associada a <strong>Braquiterapia de Cúpula Vaginal</strong> &plusmn; <strong>Quimioterapia baseada em platina</strong>.",
-              "O estudo PORTEC-3 demonstrou benefício significativo em sobrevida livre de recorrência e sobrevida global com a adição de quimioterapia adjuvante (Carboplatina + Paclitaxel concomitante e adjuvante à EBRT) em tumores de alto risco, principalmente naqueles com perfil p53 anormal."
+              "Radioterapia pélvica e/ou quimioterapia, eventualmente braquiterapia, conforme risco clínico-molecular e decisões multidisciplinares.",
+              "Benefício da associação sistêmica depende de risco, subtipo e protocolo; não transpor resultados de PORTEC-3 para todas as histologias."
             ],
             [
               "Estádio III (Acometimento de Serosa, Anexos, Vagina ou Linfonodos Pélvicos / Para-Aórticos)",
               "Disseminação locorregional extrauterina comprovada no estadiamento cirúrgico.",
-              "<strong>Tratamento Sistêmico Combinado Obrigatório: Quimioterapia sistêmica (Carboplatina + Paclitaxel por 6 ciclos) associada à EBRT com campo estendido</strong> se acometimento linfonodal para-aórtico.",
-              "Prevenção de falha locorregional pélvica associada a controle eficaz de micrometástases hematogênicas a distância."
+              "Tratamento sistêmico e radioterapia em sequências/campos escolhidos conforme extensão nodal, cirurgia, histologia e biologia; <strong>não obrigatório</strong> em combinação única para todo estádio III.",
+              "Pesar risco de recidiva sistêmica, controle locorregional e toxicidades conforme diretriz especializada."
             ]
           ],
           "book-table"
@@ -1265,7 +1265,7 @@
         ],
         [
           "p",
-          "Essa abordagem alcança taxas de sobrevida global em 5 anos e controle local duradouro de até 60% a 70% nas recidivas vaginais puras virgens de radiação. Caso a paciente já tenha recebido radiação pélvica prévia, as opções incluem ressecção cirúrgica de resgate ampla (exenteração pélvica em casos altamente selecionados) ou quimioterapia associada à imunoterapia sistêmica."
+          "Quando uma recidiva vaginal isolada ocorre sem radioterapia prévia, radioterapia externa combinada ou não com braquiterapia de resgate pode proporcionar controle duradouro em situações selecionadas. Esquemas, doses totais e intenção curativa dependem de tamanho, profundidade, extensão e técnica; não apresentar percentuais de sobrevida como universais. Após radioterapia prévia, reirradiação especializada, cirurgia de resgate ou terapia sistêmica são opções distintas a discutir em equipe."
         ],
         [
           "3",
@@ -1273,7 +1273,7 @@
         ],
         [
           "p",
-          "O seguimento oncológico deve ser realizado a cada 3 a 4 meses nos primeiros 2 anos (período em que se concentram 75% a 80% das recidivas), passando para a cada 6 meses entre o 3º e o 5º ano, e anualmente a partir de então:"
+          "<strong>Seguimento individualizado:</strong> consultas mais próximas nos primeiros anos podem ser apropriadas, ajustadas a estádio, risco, tratamento e sintomas. O <a href=\"https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude\" target=\"_blank\" rel=\"noopener noreferrer\">INCA</a> recomenda acompanhamento periódico, frequentemente a cada 3–6 meses nos primeiros anos e 6–12 meses posteriormente; não há necessidade de aplicar um calendário rígido único a todas as pacientes. Perguntar sobre sangramento, dor, sintomas urinários/intestinais, sexualidade e toxicidade tardia. Evitar exames de imagem e citologia vaginal de rotina sem indicação clínica."
         ],
         [
           "u",
@@ -1298,11 +1298,11 @@
         ],
         [
           "p",
-          "A Síndrome de Lynch é responsável por 3% a 5% de todos os carcinomas endometriais, sendo a causa hereditária monogênica mais prevalente. Em mulheres portadoras de mutações germinativas nos genes de reparo de DNA (especialmente <em>MSH2</em> e <em>MSH6</em>, seguidos por <em>MLH1</em> e <em>PMS2</em>), o risco cumulativo de desenvolver câncer de endométrio ao longo da vida atinge impressionantes 40% a 60%, superando inclusive o risco de câncer colorretal nestas pacientes."
+          "A síndrome de Lynch decorre de variantes germinativas patogênicas em genes de reparo de pareamento de DNA — <em>MLH1, MSH2, MSH6, PMS2</em> — ou deleções de <em>EPCAM</em> que silenciam MSH2. A magnitude e a idade de aparecimento do risco <strong>variam consideravelmente por gene e história familiar</strong>; não atribuir a todas as pessoas com Lynch o mesmo risco vitalício de 40%–60% para câncer endometrial. O carcinoma endometrial pode ser a manifestação sentinela, e a ausência de história familiar não exclui predisposição. Fonte: <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK1211/\" target=\"_blank\" rel=\"noopener noreferrer\">GeneReviews, Lynch</a>; <a href=\"https://doi.org/10.1016/j.ejca.2026.116739\" target=\"_blank\" rel=\"noopener noreferrer\">consenso ESGO 2026</a>."
         ],
         [
           "p",
-          "Muitas vezes, o câncer de endométrio é a neoplasia sentinela da Síndrome de Lynch, manifestando-se clinicamente até uma década antes do aparecimento do câncer colorretal. Por essa razão, os consensos internacionais (NCCN, ESMO e FIGO) recomendam a <strong>testagem imuno-histoquímica universal reflexa</strong> para as quatro proteínas de MMR em todas as peças cirúrgicas de câncer de endométrio ressecadas, independentemente da idade da paciente ou do histórico familiar relatado."
+          "<strong>Triagem tumoral recomendada:</strong> pesquisar deficiência de MMR por imuno-histoquímica (MLH1, PMS2, MSH2, MSH6) em tumores endometriais, idealmente desde a amostra diagnóstica quando disponível, e não <strong>apenas em peças cirúrgicas</strong>. A perda de MLH1/PMS2 requer investigação de metilação do promotor de MLH1 para diferenciar causas esporádicas comuns de situações elegíveis à avaliação genética. Uma IHQ alterada <strong>não confirma síndrome hereditária sem investigação germinativa</strong>. A <a href=\"https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Patologia, manual 2026</a> orienta registro de biomarcadores, e <a href=\"https://pubmed.ncbi.nlm.nih.gov/40744042/\" target=\"_blank\" rel=\"noopener noreferrer\">ESGO 2025</a> recomenda triagem universal dos carcinomas endometriais."
         ]
       ]
     ],
@@ -1320,19 +1320,19 @@
         ],
         [
           "p",
-          "Em familiares de primeiro grau de portadoras confirmadas de Síndrome de Lynch, a vigilância clínica estruturada deve ser iniciada aos 30 a 35 anos de idade (ou 5 a 10 anos antes do caso mais jovem diagnosticado na árvore genealógica). Essa vigilância contempla:"
+          "<strong>Atenção à elegibilidade:</strong> familiares de pessoa com Lynch confirmada devem ser encaminhados para aconselhamento e testagem genética em cascata; <strong>não presumir que todo familiar de primeiro grau é portador</strong>. Na portadora confirmada ainda com útero, discutir educação para sinais de sangramento anormal e possibilidade de amostragem endometrial periódica a partir de cerca de 30–35 anos (frequentemente a cada 1–2 anos), deixando claro que <strong>não há demonstração robusta de redução da mortalidade com rastreamento ginecológico</strong>. Gene específico, história familiar, desejo reprodutivo e acesso orientam o plano. <a href=\"https://doi.org/10.1016/j.ejca.2026.116739\" target=\"_blank\" rel=\"noopener noreferrer\">ESGO 2026</a>; <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK1211/\" target=\"_blank\" rel=\"noopener noreferrer\">GeneReviews</a>."
         ],
         [
           "u",
           [
-            "Ultrassonografia transvaginal anual associada à dosagem de CA-125 sérico, com o objetivo de detectar precocemente alterações na espessura endometrial e massas anexiais ovarianas assintomáticas.",
-            "Biópsia endometrial aspirativa anual ou bienal de consultório (utilizando cânula de Pipelle), que demonstrou sensibilidade superior a 90% para a identificação de hiperplasia endometrial com atipia ou adenocarcinoma incipiente em mulheres assintomáticas sob alto risco genético.",
-            "Colonoscopia bianual a partir dos 20 a 25 anos para vigilância concomitante do trato gastrointestinal inferior."
+            "<strong>Endométrio:</strong> orientar investigação imediata de qualquer sangramento anormal; considerar biópsia endometrial em vigilância a cada 1–2 anos a partir de 30–35 anos, após decisão compartilhada. Ultrassom isolado não substitui biópsia para rastrear câncer endometrial em portadoras de Lynch.",
+            "<strong>Ovário:</strong> ultrassonografia transvaginal e CA-125 anuais <strong>não têm benefício comprovado em mortalidade</strong> como rastreamento de rotina; não prescrever como obrigação universal para portadoras. Discutir sintomas, risco gene-específico e cirurgia redutora conforme aconselhamento.",
+            "<strong>Cólon e reto:</strong> o início da colonoscopia varia com o gene (<em>MLH1/MSH2/EPCAM</em> frequentemente 20–25 anos; <em>MSH6/PMS2</em> muitas vezes 30–35 anos), risco e história familiar. Intervalos variam entre 1 e 3 anos; seguir genética/gastroenterologia e recomendação atualizada."
           ]
         ],
         [
           "p",
-          "Ao completarem a prole planejada (geralmente por volta dos 40 a 45 anos), a cirurgia redutora de risco profilática (histerectomia total com salpingo-ooforectomia bilateral) elimina virtualmente o risco de morte por câncer de endométrio e ovário, consolidando-se como o padrão-ouro de prevenção primária nessas pacientes."
+          "<strong>Cirurgia redutora de risco:</strong> histerectomia total pode reduzir a incidência de câncer endometrial em portadoras selecionadas após completar o planejamento reprodutivo, mas <strong>não garante mortalidade nula</strong>. O momento é individualizado por gene, idade, comorbidades, preferência e contexto. A retirada dos ovários não é indiscriminada: deve equilibrar o risco específico de câncer ovariano e as consequências de menopausa cirúrgica, podendo ter indicação distinta da histerectomia. Fonte: <a href=\"https://doi.org/10.1016/j.ejca.2026.116739\" target=\"_blank\" rel=\"noopener noreferrer\">consenso ESGO 2026</a>; <a href=\"https://www.cancer.gov/types/colorectal/hp/colorectal-genetics-pdq\" target=\"_blank\" rel=\"noopener noreferrer\">NCI, genética da síndrome de Lynch</a>."
         ]
       ]
     ]
