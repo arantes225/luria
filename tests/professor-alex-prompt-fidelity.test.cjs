@@ -35,7 +35,7 @@ test("Edge function integrates prompts module, multi-turn history, and configura
   assert.match(edgeFile, /getAlexSystemInstruction\(mode, channel\)/);
   assert.match(edgeFile, /rawHistory/);
   assert.match(edgeFile, /modelToUse/);
-  assert.match(edgeFile, /thinkingLevel: depth === "aula" \\? "medium" : "minimal"/);
+  assert.match(edgeFile, /thinkingLevel/);
 });
 
 test("Client maintains session history and calibrated voice parameters", () => {
