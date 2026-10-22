@@ -419,6 +419,64 @@
         [
           "p",
           "<strong>Biópsia insuficiente</strong> não é biópsia negativa. A conduta depende de risco, persistência do sangramento, qualidade do US e possibilidade de lesão focal. <strong>Biópsia negativa em sangramento que continua</strong> exige nova avaliação, especialmente por histeroscopia e amostra dirigida quando apropriado."
+        ],
+        [
+          "3",
+          "O caso que parece simples — mas exige duas perguntas diferentes"
+        ],
+        [
+          "p",
+          "<strong>Primeira pergunta: existe um sangramento que precisa ser explicado?</strong> Sim, sempre que há perda vaginal após a menopausa, mesmo discreta. A maioria das causas não é câncer; atrofia, pólipo e efeitos hormonais são frequentes. Contudo, ausência de dor e pequena quantidade não oferecem segurança diagnóstica. A investigação começa confirmando origem genital pelo exame especular, avaliando estabilidade, anemia, medicamentos, antecedentes ginecológicos e risco individual. Não confundir rastreamento de pessoa assintomática — não recomendado para população geral pelo INCA — com investigação de sintoma, que é necessária."
+        ],
+        [
+          "p",
+          "<strong>Segunda pergunta: o que o ultrassom realmente consegue excluir?</strong> A espessura endometrial mede uma interface, não fornece histologia. Em primeira apresentação de baixo risco, endométrio fino e regular reduz probabilidade de carcinoma endometrioide típico; esse resultado não garante ausência de tumor focal ou seroso, nem é confiável se a imagem é inadequada. Em sangramento persistente, alteração focal, tamoxifeno e fatores de risco, a biópsia e eventualmente a histeroscopia dirigida tornam-se centrais. O exame negativo deve ser interpretado junto com sua representatividade: amostra escassa ou atrofia em peça obtida às cegas não encerra a investigação de lesão focal discordante."
+        ],
+        [
+          "t",
+          [
+            "Cenário",
+            "Principal armadilha",
+            "Pergunta útil",
+            "Próxima decisão"
+          ],
+          [
+            [
+              "<strong>Primeiro episódio, eco fino e baixo risco</strong>",
+              "Transformar 4 mm em garantia absoluta",
+              "A cavidade foi completamente vista? Há risco e retorno garantido?",
+              "Compartilhar decisão conforme FEBRASGO e protocolo; documentar alarme e seguimento"
+            ],
+            [
+              "<strong>Sangramento recorrente, eco 3 mm</strong>",
+              "Alta definitiva porque o eco é fino",
+              "Por que o sangramento continua?",
+              "Investigar endométrio e considerar biópsia, mesmo com eco reduzido"
+            ],
+            [
+              "<strong>Imagem focal/pólipo</strong>",
+              "Considerar pipelle negativa como exclusão da lesão",
+              "A área focal foi efetivamente amostrada?",
+              "Avaliar histeroscopia com amostra dirigida"
+            ],
+            [
+              "<strong>Espessura não mensurável</strong>",
+              "Escrever resultado normal apesar de medida ausente",
+              "Mioma, distorção de cavidade ou técnica impedem avaliação?",
+              "Completar propedêutica, guiada por risco e persistência"
+            ],
+            [
+              "<strong>Hemorragia importante</strong>",
+              "Debater espessura antes de estabilizar",
+              "Há hipoperfusão, anemia ou necessidade de transfusão?",
+              "Estabilização e controle de sangramento; investigar causa após segurança"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Pulo do Gato:</strong> a régua de <strong>4 mm</strong> ajuda a estratificar, mas a decisão é sobre o conjunto <em>episódio + persistência + risco + qualidade da imagem + representatividade da biópsia</em>. A <a href=\"https://femina.org.br/article/hiperplasia-endometrial/\" target=\"_blank\" rel=\"noopener noreferrer\">FEBRASGO 2025</a> inclui formulações distintas sobre episódio único com eco fino; o <a href=\"https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude\" target=\"_blank\" rel=\"noopener noreferrer\">INCA</a> enfatiza diagnóstico precoce pela investigação dos sintomas."
         ]
       ]
     ],
@@ -485,6 +543,79 @@
         [
           "p",
           "<strong>Alertas sobre o estadiamento:</strong> “invasão miometrial de 49%” e “51%” não bastam para prever adjuvância se LVSI, histologia e perfil molecular diferem. Estádio anatômico e grupo de risco adjuvante são conceitos relacionados, porém não equivalentes."
+        ],
+        [
+          "3",
+          "Aprenda o FIGO 2023 como mapa, não como uma lista de números"
+        ],
+        [
+          "p",
+          "A base anatômica descreve até onde o tumor se estende: endométrio, miométrio, colo, serosa, anexos, vagina, peritônio pélvico, linfonodos e doença a distância. O FIGO 2023 adicionou o comportamento biológico da histologia e a invasão linfovascular; quando os testes estão disponíveis, a classificação molecular pode alterar determinados subestádios iniciais. Para o aluno, a ordem de raciocínio é: <strong>localização → tipo histológico → porcentagem de invasão → LVSI → extensão locorregional → molecular</strong>. Um achado de ovário não significa automaticamente estádio IIIA se preencher os requisitos estritos do IA3; uma micrometástase nodal não deve ser descrita como célula tumoral isolada."
+        ],
+        [
+          "t",
+          [
+            "Achado",
+            "Interpretação FIGO 2023 (síntese)",
+            "Por que importa na prova"
+          ],
+          [
+            [
+              "Não agressivo, sem invasão miometrial",
+              "IA1",
+              "Tumor limitado a pólipo/endométrio não equivale a doença invasiva profunda"
+            ],
+            [
+              "Não agressivo, miométrio <50%, LVSI ausente/focal",
+              "IA2",
+              "A profundidade isolada não basta: LVSI pode alterar categoria"
+            ],
+            [
+              "Endometrioide G1/G2, útero e ovário sob critérios estritos",
+              "IA3",
+              "Exceção específica para comprometimento ovariano concomitante"
+            ],
+            [
+              "Não agressivo, miométrio ≥50%, LVSI ausente/focal",
+              "IB",
+              "O ponto de corte é metade do miométrio, inclusive 50%"
+            ],
+            [
+              "Histologia agressiva limitada ao endométrio/pólipo",
+              "IC",
+              "Sem invasão miometrial não significa baixo risco histológico"
+            ],
+            [
+              "Invasão cervical / LVSI substancial / agressivo com invasão",
+              "IIA / IIB / IIC, respectivamente",
+              "Três mecanismos diferentes explicam estágio II"
+            ],
+            [
+              "Linfonodo pélvico / para-aórtico positivo",
+              "IIIC1 / IIIC2 (com i/ii por tamanho)",
+              "Região do linfonodo e tamanho do depósito alteram a notação"
+            ],
+            [
+              "Mucosa vesical ou intestinal",
+              "IVA",
+              "Invasão da mucosa, não mera aderência ou contato"
+            ],
+            [
+              "Metástase peritoneal extrapélvica",
+              "IVB",
+              "Peritônio abdominal além da pelve não é automaticamente IVC"
+            ],
+            [
+              "Pulmão, fígado ou outro sítio distante",
+              "IVC",
+              "Separar disseminação à distância de doença peritoneal extrapélvica"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Exemplo comentado:</strong> uma paciente com tumor endometrioide G1 e invasão miometrial de 45%, sem LVSI significativa, sugere IA2 na ausência de outras extensões; a mesma profundidade com LVSI substancial muda o raciocínio. Se houver p53abn, avaliar os critérios específicos de IICm; se POLE for patogênica, verificar a categoria IAm aplicável. <strong>O estádio FIGO não é uma ordem automática de quimioterapia.</strong> O <a href=\"https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/\" target=\"_blank\" rel=\"noopener noreferrer\">manual brasileiro de patologia 2026</a> e a <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10482588/\" target=\"_blank\" rel=\"noopener noreferrer\">FIGO 2023</a> devem ser consultados em casos limítrofes."
         ]
       ]
     ],
