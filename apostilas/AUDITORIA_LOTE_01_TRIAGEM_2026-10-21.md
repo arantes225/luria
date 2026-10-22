@@ -187,3 +187,44 @@ O renderer compartilhado usa fonte de **13,2 px** em parágrafos/listas, **12 px
 - Releitura da versão corrigida: JSON válido, **23 seções**, **23 âncoras únicas**, 7 tabelas com largura consistente, 12 blocos de questões e 12 respostas comentadas na seção principal; bibliografia permanece como último capítulo.
 - Estimativa instrumental atual de ~**65.920 caracteres textuais**, incluindo títulos, tabelas e referências; **não satisfaz por si só a contagem oficial >=60.000 caracteres úteis**, que exclui referências, título e redundância.
 - Após novos commits em `main`, a branch de revisão ficou **16 commits atrás**; duas páginas `index.html` (diarreia e perfuração) também foram alteradas em `main`. **Não fazer merge automático sem reconciliar os dois HTML e testar o PWA**. O repositório de produção e a `main` não foram alterados por esta auditoria.
+
+
+## Execução científica e editorial — Arritmias e Fibrilação Atrial (22/10/2026)
+
+**Alvo:** `apostilas/arritmias-fibrilacao-atrial/content.json` e piloto local `index.html`. Material de comparação realmente reaberto no Drive: **02 - TAQUIARRITMIA .pdf**; traz taxonomia de QRS/ECG e exemplos de circuitos de reentrada, mas não foi usado como fonte de doses, anticoagulação ou energia atual. O texto LURIA foi confrontado com documentos primários por tema.
+
+### Hierarquia de fontes adotada nesta apostila
+
+- **Referência principal brasileira da FA:** Sociedade Brasileira de Cardiologia / Sociedade Brasileira de Arritmias Cardíacas, **Diretriz Brasileira de Fibrilação Atrial — 2025**, especialmente Quadro 5 (risco/anticoagulação), Tabela 8 (doses ACOD) e Quadro 7 (anticoagulação na cardioversão). https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt ; DOI 10.36660/abc.20250618.
+- **Bradiarritmias e estimulação:** Diretriz Brasileira de Dispositivos Cardíacos Eletrônicos Implantáveis — 2023. https://abccardiol.org/article/diretriz-brasileira-de-dispositivos-cardiacos-eletronicos-implantaveis-2023/
+- **Ressuscitação e choques:** quando se necessita algoritmo de urgência e energia, protocolo do serviço + **AHA ACLS 2025**, cuja especificidade é ressuscitação e não decisões de anticoagulação crônica. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms
+- **Complemento/comparação:** ESC/EACTS 2024 https://academic.oup.com/eurheartj/article/45/36/3314/7738779 e ACC/AHA/ACCP/HRS 2023 https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/ . Os intervalos temporais de cardioversão exigem distinguir fontes, não fundir 24h e 48h.
+
+### Modificações gravadas na branch de revisão
+
+1. **Ponto de entrada:** incluído “Em 30 segundos” e a explicação da fonte principal brasileira, AHA 2025 para emergências e documentos internacionais só para complementação/diferenças.
+2. **Anticoagulação:** reescrita a aplicação brasileira do **CHA₂DS₂-VA = 0/1/≥2**, indicando classe I/IIa, exceções e que HAS-BLED não proíbe automaticamente anticoagular.
+3. **DOACs/ACOD:** doses de apixabana, rivaroxabana, edoxabana e dabigatrana e seus critérios confrontados com a **Tabela 8 SBC/SOBRAC 2025**; retificada a distinção de que dabigatrana 110 mg 2x/dia foi uma **dose reduzida estudada**, não um ajuste compulsório igual ao gatilho “dois de três critérios” da apixabana. Tabela didática alinhada à explicação.
+4. **Cardioversão:** destacado primeiro o **Quadro 7 brasileiro**: na FA estável de duração >24h/início incerto, ≥3 semanas de anticoagulação OU ETE com proteção periprocedimento; **≥4 semanas após cardioversão** em todos conforme diretriz SBC/SOBRAC, mantendo cronicamente conforme escore. Exceção: instabilidade atribuível à arritmia, sem aguardar três semanas. ESC 2024 e ACC/AHA 2023 aparecem como fontes comparativas identificadas, não esquemas intercambiáveis.
+5. **ACLS:** energia de choque por ritmo em adulto atribuída ao **AHA 2025** (FA/flutter 200 J, regular estreita/TV monomórfica 100 J; TV polimórfica não sincronizada). Não atribuir esta dose ao documento brasileiro de anticoagulação; verificar equipamento, protocolo e sinais de instabilidade.
+6. **Quadro visual novo:** **“Mapa de decisões — primeiro perfusão, depois morfologia”**, cinco cenários (sem pulso, com instabilidade, QRS estreito regular, QRS largo regular e QRS largo irregular/preexcitação). A tabela é elemento de leitura nativo compatível com o renderer, sem imagens privadas.
+7. **Questões:** antes havia 24 perguntas compactadas numa única lista densa. Agora há **24 enunciados, 96 alternativas, 24 respostas comentadas**, em blocos com subtítulos e “Pulo do Gato”; nenhuma atribuição a provas reais. O conjunto segue em validação de qualidade e originalidade humana.
+8. **Referências:** ordenadas por prioridade: SBC/SOBRAC, diretriz nacional de dispositivos, síntese SOCESP, AHA específica de ressuscitação, ESC e ACC/AHA para comparações. Removidas do corpo estudantil observações editoriais sobre benchmarks.
+9. **Acessibilidade e leitura:** piloto CSS **apenas** no `index.html` desta apostila: fonte corpo 15px, navegação 12,2px, tabela 13,6px, respiros e rolagem horizontal de tabela em telas pequenas; não alterado CSS global.
+
+### Verificações realizadas
+
+- JSON serializado, gravado e relido pelo conector GitHub; **15 seções com 15 âncoras de índice**, **15 tabelas** com número de colunas consistente, 24 perguntas, 96 alternativas e 24 respostas comentadas. Renderer global verificado com suporte aos tipos de bloco `t`, `o`, `u`.
+- Triagem de caracteres didáticos por extração aproximada nesta rodada: **~109.633 no corpo de conteúdo**, sem contabilizar títulos e lista de referências, mas com listas/tabelas; não substitui auditoria oficial de 60.000 caracteres únicos.
+- **Não se executou renderização visual desktop/PWA, teste de acessibilidade assistiva, execução da auditoria oficial de 60k, conferência de TODAS as doses/indicações ou aprovação de imagens**. O conteúdo ainda não está clinicamente liberado.
+- **Não foi feito merge para `main`**. Manter branch/PR #77 em rascunho. A `main` prossegue recebendo alterações independentes; conciliar qualquer conflito antes da publicação.
+
+### Revisão restante desta apostila
+
+- Validar farmacoterapia com cardiologista/eletrofisiologista, sobretudo antiarrítmicos, FA pré-excitada, DRC avançada, gestação e anticoagulação com múltiplas comorbidades;
+- Avaliar repetição em capítulos extensos, redação e correção alternativa por alternativa das questões;
+- Conferir imagens realmente aprovadas e renders em desktop/celular/PWA; não importar automaticamente imagens do Drive;
+- Verificar se a orientação oficial institucional de atendimento diverge dos algoritmos internacionais de emergência e anotar a diferença com versão e data.
+
+**Status: revisão substantiva iniciada, não aprovada.**
+
