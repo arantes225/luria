@@ -131,6 +131,54 @@
             ]
           ],
           "book-table"
+        ],
+        [
+          "3",
+          "Mapa de decisões — primeiro perfusão, depois morfologia"
+        ],
+        [
+          "p",
+          "Este quadro foi elaborado para orientação rápida. Em situações de emergência, seguir o algoritmo AHA ACLS 2025 e o protocolo local; decisões de anticoagulação na FA seguem a SBC/SOBRAC 2025."
+        ],
+        [
+          "t",
+          [
+            "Cenário",
+            "ECG e sinais",
+            "Conduta inicial"
+          ],
+          [
+            [
+              "Sem pulso",
+              "FV/TV sem pulso ou AESP/assistolia",
+              "RCP; desfibrilação somente para ritmos chocáveis"
+            ],
+            [
+              "Instabilidade atribuída à arritmia",
+              "Choque, dor isquêmica, rebaixamento agudo ou IC aguda",
+              "Cardioversão sincronizada no ritmo organizado; TV polimórfica exige choque não sincronizado"
+            ],
+            [
+              "Regular e QRS estreito, estável",
+              "TRN ou reentrada AV possível",
+              "Manobras vagais; adenosina se indicada e sob monitorização"
+            ],
+            [
+              "Regular e QRS largo, estável",
+              "Possível TV, especialmente com cardiopatia estrutural",
+              "Monitorizar e buscar apoio; adenosina apenas em contexto regular monomórfico apropriado"
+            ],
+            [
+              "Irregular e QRS largo variável",
+              "Considerar FA pré-excitada",
+              "Não usar bloqueadores AV; cardioversão em instabilidade"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Pulo do Gato:</strong> FA regularizada por bloqueio avançado, FA pré-excitada e taquicardia sinusal por choque não devem ser tratadas como uma única doença. A presença de pulso e a perfusão determinam o primeiro passo."
         ]
       ]
     ],
