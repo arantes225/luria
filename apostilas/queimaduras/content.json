@@ -797,18 +797,16 @@
         ],
         [
           "p",
-          "O manejo das vias aéreas no paciente com suspeita de lesão inalatória deve ser agressivo e profilático. A presença de edema avançado torna a intubação uma tarefa heroica, frequentemente exigindo cricotireoidostomia de emergência. Deve-se realizar a intubação orotraqueal (IOT) imediata na presença dos seguintes sinais de alerta:"
+          "<strong>Suspeita de lesão inalatória demanda avaliação e reavaliação imediata de via aérea.</strong> Estridor, insuficiência respiratória, hipoxemia/hipercapnia, edema ou disfonia progressiva, alteração de consciência sem proteção de via aérea e queimaduras profundas faciais com comprometimento de orofaringe são situações que podem exigir intubação precoce por equipe experiente. <strong>Vibrissas chamuscadas ou fuligem isoladas não equivalem automaticamente a IOT</strong>, embora indiquem exposição e justifiquem avaliação monitorizada, consulta a CTQ e eventual visualização das vias aéreas. A decisão depende do conjunto clínico, risco de edema progressivo e condições de transporte."
         ],
         [
           "u",
           [
-            "<strong>Estridor laríngeo inspiratório ou tiragem intercostal/supraclavicular</strong> (sinal de obstrução iminente de mais de 70% a 80% do lúmen glótico);",
-            "<strong>Rouquidão aguda ou mudança na tonalidade da voz (disfonia progressiva)</strong>;",
-            "<strong>Queimaduras térmicas profundas em face, lábios ou pescoço circunferencial</strong>;",
-            "<strong>Presença de fuligem na orofaringe, língua ou escarro carbonáceo</strong>;",
-            "<strong>Vibrissas nasais chamuscadas associadas a história de confinamento em ambiente fechado</strong>;",
-            "<strong>Grande queimado (&gt; 40% a 50% da SCQ)</strong> mesmo sem lesão inalatória evidente, antecipando o edema maciço gerado pela ressuscitação volêmica vigorosa;",
-            "<strong>Rebaixamento do nível de consciência (Glasgow &le; 8)</strong> por hipóxia, trauma craniano ou intoxicação."
+            "<strong>Obstrução ou progressão real:</strong> estridor, dificuldade respiratória, edema orofaríngeo, voz mudando progressivamente, hipoxemia e trabalho respiratório são sinais importantes para abordagem precoce de via aérea.",
+            "<strong>Rebaixamento importante:</strong> avaliar capacidade de proteger vias aéreas, trauma e toxicidade por fumaça/CO/cianeto; não esperar piora catastrófica se a via aérea está ameaçada.",
+            "<strong>Exposição de risco:</strong> incêndio em ambiente fechado, fuligem ou vibrissas chamuscadas indicam avaliação, monitorização e consulta especializada — não são critério único obrigatório de intubação.",
+            "<strong>Queimadura extensa:</strong> avaliar risco de edema ao longo da ressuscitação, necessidade de transporte e recursos para manter via aérea segura.",
+            "<strong>Após decisão:</strong> equipe experiente, analgesia/sedação apropriadas, atenção à ventilação e planejamento de eventual broncoscopia quando indicada."
           ]
         ],
         [
@@ -821,7 +819,7 @@
         ],
         [
           "p",
-          "<strong>ARMADILHA CLÁSSICA DE PROVAS:</strong> O oxímetro de pulso padrão de duas ondas é <em>completamente incapaz de diferenciar a oxiemoglobina da carboxihemoglobina</em>, registrando falsamente saturações normais de 98% a 100%! O diagnóstico exige <strong>gasometria arterial com co-oximetria direta para dosagem de COHb</strong>."
+          "<strong>Armadilha de prova e da prática:</strong> a oximetria de pulso convencional pode ser <strong>falsamente normal</strong> na intoxicação por monóxido de carbono, porque não diferencia adequadamente oxi-hemoglobina de carboxi-hemoglobina. Solicitar <strong>co-oximetria</strong> para COHb quando houver exposição compatível e manter oxigênio de alta concentração conforme urgência. Gasometria de sangue arterial ou venoso com co-oximetria pode medir COHb; PaO₂ isolada não exclui intoxicação por CO."
         ],
         [
           "u",
@@ -837,13 +835,13 @@
         ],
         [
           "p",
-          "O cianeto é liberado pela combustão incompleta de materiais domésticos sintéticos (plásticos, poliuretano, nylon, lã, resinas de estofados). Uma vez inalado, liga-se irreversivelmente ao ferro férrico ($Fe^{3+}$) do citocromo c oxidase (complexo IV da cadeia de transporte de elétrons mitocondrial), paralisando a respiração celular aeróbica. A célula não consegue utilizar o oxigênio e recorre ao metabolismo anaeróbico, gerando <strong>acidose lática fulminante desproporcional</strong>."
+          "A combustão de materiais contendo nitrogênio pode liberar cianeto; sua toxicidade consiste em impedir a utilização celular de oxigênio por ligação à citocromo c oxidase, causando hipóxia histotóxica e acidose metabólica lática. <strong>Incêndio em espaço fechado + alteração neurológica ou colapso hemodinâmico + lactato muito alto</strong> sustentam forte suspeita clínica, mas o lactato sozinho não prova cianeto: outras causas de choque são frequentes. A decisão sobre antídoto é orientada por toxicologia e pelo protocolo brasileiro."
         ],
         [
           "u",
           [
-            "<strong>Suspeita Clínica:</strong> Paciente resgatado de incêndio em ambiente fechado com rebaixamento de consciência, instabilidade hemodinâmica inexplicada e <strong>lactato sérico extremamente elevado (&gt; 8 a 10 mmol/L)</strong> com diferença arteriovenosa de $O_2$ diminuída;",
-            "<strong>Antídoto de Escolha:</strong> <strong>Hidroxicobalamina (Vitamina $B_{12a}$)</strong> na dose inicial de <strong>5,0 g IV em 15 minutos</strong> (em pediatria: 70 mg/kg). A hidroxicobalamina quelata o cianeto formando a atóxica cianocobalamina (vitamina $B_{12}$), que é excretada pela urina (causa coloração vermelho-escura temporária da urina e da pele);",
+            "<strong>Suspeita clínica forte:</strong> fumaça em local fechado, rebaixamento/choque e hiperlactatemia marcante podem justificar tratamento sem aguardar dosagem de cianeto. Considerar hipóxia, trauma, CO e outras causas concomitantes.",
+            "<strong>Antídoto no Brasil:</strong> <a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hidroxocobalamina-na-intoxicacao-aguda-por-cianeto-protocolo-de-uso/view\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde — Protocolo de Uso de Hidroxocobalamina, 2025</a>. Conferir elegibilidade, apresentação, dose para adulto e criança, via e disponibilidade antes da aplicação; em emergência, o manejo não deve aguardar confirmação laboratorial difícil quando a suspeita é alta. A hidroxocobalamina pode alterar a coloração da pele/urina e interferir em alguns exames.",
             "<strong>Segunda Linha (se indisponível hidroxicobalamina):</strong> Tiossulfato de sódio a 25% (fornece substrato de enxofre para a enzima rodanase mitocondrial transformar cianeto em tiocianato). Deve-se <em>evitar nitritos</em> (nitrito de amila/sódio) no paciente com queimadura grave por causarem metemoglobinemia adicional e piorarem a hipóxia tecidual e o choque."
           ]
         ]
@@ -1034,7 +1032,7 @@
         ],
         [
           "p",
-          "O suporte nutricional enteral precoce (iniciado dentro das <strong>primeiras 6 a 12 horas pós-trauma</strong> por sonda nasoentérica posicionada preferencialmente pós-pilórica) é mandatório em todo paciente com SCQ &gt; 20%:"
+          "O suporte nutricional enteral precoce é componente essencial no grande queimado, assim que houver perfusão e trato gastrointestinal adequados. Em lesões extensas, a avaliação nutricional especializada deve estimar necessidades energéticas/proteicas e risco de intolerância. <strong>Não é correto afirmar que toda queimadura >20% exige obrigatoriamente sonda pós-pilórica entre 6 e 12 horas</strong> sem considerar hemodinâmica, via digestiva, contraindicacões e tolerância; a alimentação pode ser gástrica quando adequada."
         ],
         [
           "o",
@@ -1056,9 +1054,9 @@
         [
           "u",
           [
-            "<strong>Apresentação Clínica:</strong> Hemorragia digestiva alta aguda (hematêmese maciça e melena) ou perfuração gástrica/duodenal súbita em pacientes instáveis;",
-            "<strong>Prevenção Padrão:</strong>\n    <ul>\n      <li>Início imediato de <strong>Inibidores da Bomba de Prótons (IBP)</strong> endovenosos (ex: Omeprazol 40 mg IV 1x ou 2x/dia) ou antagonistas dos receptores $H_2$ da histamina (Ranitidina);",
-            "A introdução de <strong>dieta enteral precoce</strong> é o método não farmacológico mais potente para tamponar o ácido luminal e estimular a secreção endógena de muco protetor gástrico."
+            "<strong>Fatores de risco:</strong> queimadura extensa, choque, ventilação mecânica prolongada, coagulopatia, sangramento prévio ou outros fatores de hemorragia digestiva.",
+            "<strong>Prevenção:</strong> nutrição enteral assim que viável e profilaxia farmacológica de lesão de estresse <em>quando indicada pelo risco</em> — não prescrever IBP IV e ranitidina automaticamente a todo paciente com queimadura.",
+            "<strong>Reavaliar:</strong> duração, via e necessidade de antisecretor após estabilização; evitar prolongamento por rotina sem indicação."
           ]
         ],
         [
@@ -1085,7 +1083,7 @@
             [
               "<strong>Esquema Completo (&ge; 3 doses)</strong>",
               "Mais de 5 anos (ou &gt; 10 anos)",
-              "Aplicar 1 dose de reforço da vacina (dT ou dTpa). Não necessita de imunoglobulina."
+              "Ferida com risco tetânico: considerar reforço se última dose há ≥5 anos, conforme situação clínica e calendário vigente; avaliar idade e imunossupressão."
             ],
             [
               "<strong>Esquema Incompleto (&lt; 3 doses) ou Desconhecido</strong>",
@@ -1128,7 +1126,7 @@
         [
           "o",
           [
-            "<strong>Rabdomiólise e Insuficiência Renal Aguda:</strong> A lise de miócitos esqueléticos libera quantidades maciças de mioglobina monomérica na circulação. Nos túbulos renais contorcidos distais e coletores, a mioglobina precipita-se sob pH ácido, formando cilindros que obstruem a luz tubular e geram necrose tubular aguda (NTA). O paciente apresenta urina cor de \"chá escuro\" ou \"coca-cola\". Tratamento: ressuscitação volêmica agressiva com meta urinária de <strong>1,0 a 1,5 mL/kg/h</strong> e alcalinização urinária com bicarbonato de sódio IV (para elevar o pH urinário &gt; 6,5 e impedir a precipitação de mioglobina);",
+            "<strong>Rabdomiólise e lesão renal:</strong> lesão muscular oculta libera mioglobina; vigiar creatinina, potássio, CK, perfusão e diurese e realizar ressuscitação apropriada. <strong>Não recomendar alcalinização urinária rotineira com bicarbonato</strong> para prevenir LRA: consenso AAST <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8804685/\" target=\"_blank\" rel=\"noopener noreferrer\">2022</a> considera evidência insuficiente. Bicarbonato pode ser indicado por outro problema ácido-base selecionado, sob avaliação clínica, mas não como medida automática da queimadura elétrica.",
             "<strong>Arritmias Cardíacas Graves e Parada Cardíaca:</strong> A corrente alternada (AC, usual em redes elétricas residenciais a 60 Hz) despolariza o miocárdio durante o período refratário relativo vulnerável (fase T do eletrocardiograma), deflagrando <strong>Fibrilação Ventricular (FV)</strong> imediata; a corrente contínua (DC, alta voltagem industrial ou raios atmosféricos) costuma causar assistolia direta. Todo paciente vítima de acidente elétrico de alta voltagem ou com perda de consciência necessita de <strong>monitorização eletrocardiográfica contínua nas primeiras 24 horas</strong>;",
             "<strong>Síndrome Compartimental de Extremidades:</strong> Edema muscular volumoso dentro de fáscias inelásticas, exigindo fasciotomia descompressiva urgente;",
             "<strong>Lesões Traumáticas Associadas por Ejeção:</strong> A contração tetânica violenta dos músculos flexores ou a queda de altura decorrente do choque elétrico ocasiona fraturas de ossos longos, luxação posterior bilateral de ombro e traumatismo cranioencefálico / raquimedular associados."
@@ -1153,58 +1151,46 @@
         ],
         [
           "p",
-          "Pacientes que preenchem qualquer um dos seguintes critérios devem ser estabilizados segundo os princípios do ATLS e prontamente transferidos para uma Unidade de Queimados especializada:"
+          "O paciente deve primeiro receber ABCDE, analgesia, controle térmico e tratamento da lesão; o destino é coordenado pela regulação do SUS e CTQ local. A <a href=\"https://bvsms.saude.gov.br/bvs/publicacoes/cartilha_tratamento_emergencia_queimaduras.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">cartilha MS 2012</a> apresenta critérios antigos de transferência por SCQ/idade; as <a href=\"https://www.ameriburn.org/burn-care-team/resources/guidelines-for-burn-patient-referral\" target=\"_blank\" rel=\"noopener noreferrer\">orientações ABA de encaminhamento</a> recomendam consulta mais ampla para queimaduras ≥10% SCQ de espessura parcial, toda espessura total, áreas funcionais, lesão química/elétrica, suspeita de inalação e contextos pediátricos. <strong>A diferença é temporal e de escopo:</strong> não escrever que “ter menos de 20% em adulto” exclui necessidade de consulta ao CTQ."
         ],
         [
           "t",
           [
-            "Critério de Encaminhamento ao CTQ",
-            "Justificativa Fisiopatológica e Clínica"
+            "Queimadura / situação",
+            "Brasil: cartilha MS 2012; orientação de consulta/transferência pela ABA"
           ],
           [
             [
-              "<strong>Queimaduras de 2º grau &gt; 10% da SCQ</strong> em crianças (&lt; 10 anos) e idosos (&gt; 50 anos)",
-              "Extremos de idade exibem menor reserva fisiológica e alto risco de conversão e desidratação."
+              "<strong>Parcial de grande extensão</strong>",
+              "MS 2012: adultos >20% SCQ; crianças e maiores de 50 anos >10% SCQ. Critérios antigos de transferência; a ABA atualizada orienta consulta imediata com consideração de transferência já para espessura parcial ≥10% em qualquer idade."
             ],
             [
-              "<strong>Queimaduras de 2º grau &gt; 20% da SCQ</strong> em adultos de qualquer idade",
-              "Gera resposta inflamatória sistêmica generalizada (choque do queimado)."
+              "<strong>Espessura total</strong>",
+              "MS 2012: qualquer extensão requer transferência/avaliação especializada; ABA: consulta imediata, sem limite mínimo de 5%."
             ],
             [
-              "<strong>Qualquer queimadura de 3º grau &gt; 5% da SCQ</strong>",
-              "Necessidade mandatória de desbridamento cirúrgico tangencial e autoenxertia especializada."
+              "<strong>Profunda em face, mãos, pés, genitália, períneo ou sobre articulação</strong>",
+              "Consulta especializada urgente mesmo com pouca SCQ, pelo risco de sequelas funcionais e estéticas."
             ],
             [
-              "<strong>Queimaduras em Áreas Especiais / Nobres</strong>: Face, mãos, pés, genitália, períneo e grandes articulações",
-              "Risco crítico de sequelas estéticas e contraturas funcionais graves com incapacidade permanente."
+              "<strong>Exposição à fumaça/lesão inalatória</strong>",
+              "Avaliar via aérea, CO e cianeto; suspeita exige consulta com serviço de queimados, mas não IOT automática apenas por vibrissas chamuscadas."
             ],
             [
-              "<strong>Lesão Inalatória por Fumaça</strong>",
-              "Necessidade de suporte ventilatório avançado, fibrobroncoscopia e manejo de SDRA."
+              "<strong>Elétrica / raio</strong>",
+              "Alta tensão ≥1000 V e raio: consulta imediata e consideração de transferência; lesão muscular pode ser profunda com pequena marca cutânea."
             ],
             [
-              "<strong>Queimaduras Elétricas Graves</strong> (incluindo lesão por raio atmosférico)",
-              "Lesão profunda muscular oculta, risco de arritmias malignas e síndrome compartimental."
+              "<strong>Química</strong>",
+              "Contato com centro de toxicologia e CTQ; todas as exposições químicas potencialmente lesivas merecem avaliação de transferência."
             ],
             [
-              "<strong>Queimaduras Químicas Extensas</strong>",
-              "Evolução lenta e progressiva com toxicidade sistêmica associada."
+              "<strong>Criança</strong>",
+              "Todas as queimaduras podem se beneficiar de orientação do CTQ por dor, troca de curativos, reabilitação ou investigação de violência; decisão por gravidade e rede local."
             ],
             [
-              "<strong>Queimadura Circunferencial</strong> de tórax ou membros",
-              "Risco de restrição respiratória e síndrome compartimental requerendo escarotomia."
-            ],
-            [
-              "<strong>Comorbidades Clínicas Graves Pré-existentes</strong> (DM, insuficiência renal, cardiopatias, DPOC)",
-              "Descompensação sistêmica induzida pelo estresse hipermetabólico da queimadura."
-            ],
-            [
-              "<strong>Trauma Mecânico Grave Concomitante</strong>",
-              "Se o trauma mecânico for a ameaça imediata à vida, estabilizar no centro de trauma antes da transferência."
-            ],
-            [
-              "<strong>Suspeita de Violência, Abuso Infantil ou Vulnerabilidade Social</strong>",
-              "Necessidade de internação protetiva e investigação multidisciplinar legal."
+              "<strong>Outros agravantes</strong>",
+              "Doenças crônicas graves, trauma associado, dor mal controlada e dúvida quanto à profundidade exigem consulta e planejamento de destino."
             ]
           ],
           "book-table"
@@ -1241,7 +1227,7 @@
         ],
         [
           "p",
-          "<strong>2. Estimar fluido inicial e ajustar:</strong> para homem de 80 kg com 45% SCQ, a a=>a não é usada automaticamente; pela <strong>ABA 2024 (adultos ≥20%)</strong>, 2 × 80 × 45 = <strong>7.200 mL nas 24 h</strong> como estimativa, não ordem de infusão fixa. Pelo esquema brasileiro histórico de Parkland 4 × 80 × 45 = <strong>14.400 mL nas 24 h</strong>, com meia dose em 8 h desde a lesão. O acidente foi há 2 horas; a velocidade deve levar em conta os líquidos já recebidos, perfusão, diurese e protocolo do CTQ. <strong>Não misturar o volume ABA com o cronograma Parkland sem explicitar a hipótese didática.</strong>"
+          "<strong>2. Estimar e titular líquidos:</strong> para homem de 80 kg com 45% SCQ, pela <a href=\"https://academic.oup.com/jbcr/article/45/3/565/7458089\" target=\"_blank\" rel=\"noopener noreferrer\">ABA 2024</a> (adultos ≥20%), 2 × 80 × 45 = <strong>7.200 mL/24 h</strong> como ponto de partida. Na <a href=\"https://bvsms.saude.gov.br/bvs/publicacoes/cartilha_tratamento_emergencia_queimaduras.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Parkland clássica do Ministério da Saúde (2012)</a>, 4 × 80 × 45 = <strong>14.400 mL/24 h</strong>, dividindo-se teoricamente em metade nas primeiras 8 h desde a lesão e metade nas próximas 16 h. Como o acidente ocorreu há 2 h, contabilizar tempo e fluido já administrado. Na prática, <strong>nenhuma das duas estimativas é uma prescrição inflexível</strong>: conferir diurese, perfusão, edema, causa adicional de choque e protocolo do CTQ. Não transferir automaticamente o cronograma Parkland à fórmula ABA."
         ],
         [
           "p",
