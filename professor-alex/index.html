@@ -42,7 +42,6 @@
     .alex-lesson-map{display:grid;gap:8px;padding:16px}.alex-step{display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:start;padding:11px;border:1px solid var(--border);border-radius:12px;background:var(--surface)}.alex-step-num{width:30px;height:30px;display:grid;place-items:center;border-radius:9px;background:var(--accent-soft);color:var(--accent);font-size:11px}.alex-step strong{display:block;font-size:12px;font-weight:500}.alex-step span:not(.alex-step-num){display:block;margin-top:3px;color:var(--muted);font-size:10px;line-height:1.4}
     .alex-tip{margin:0 16px 16px;padding:13px 14px;border:1px solid color-mix(in srgb,var(--accent) 28%,var(--border));border-radius:12px;background:var(--accent-soft)}.alex-tip strong{display:block;font-size:11px;font-weight:500;color:var(--accent)}.alex-tip span{display:block;margin-top:4px;color:var(--text);font-size:11px;line-height:1.45}
     .alex-voice.is-listening{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
-    #alex-replay-audio[hidden]{display:none!important}
     @media(max-width:980px){.alex-hero{grid-template-columns:1fr}.alex-mode{width:max-content}.alex-workspace{grid-template-columns:1fr}.alex-start-grid{grid-template-columns:1fr}.alex-row{grid-template-columns:1fr}}
     @media(max-width:620px){.alex-page{gap:12px}.alex-hero{padding:18px}.alex-title{font-size:25px}.alex-start-card{min-height:120px}.alex-panel-head{padding:14px}.alex-form{padding:14px}.alex-actions{align-items:stretch}.alex-action{flex:1}.alex-action.primary{width:100%;margin-left:0;flex-basis:100%}}
   </style>
@@ -114,7 +113,6 @@
                   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
                   <span id="alex-live-call-text">Conversar ao Vivo por Voz</span>
                 </button>
-                <button type="button" class="alex-live-call-btn" id="alex-replay-audio" aria-label="Ouvir novamente a última resposta" hidden>🔊 Ouvir resposta</button>
               </div>
               <div class="alex-status-pill" id="alex-status-pill">
                 <span class="status-dot"></span>
@@ -415,7 +413,7 @@
   </script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
   <!-- A conversa de voz é controlada exclusivamente por professor-alex-gemini.mjs. -->
-  <script type="module" src="/assets/js/professor-alex-gemini.mjs?v=20261022-voice-fast1"></script>
+  <script type="module" src="/assets/js/professor-alex-gemini.mjs?v=20261022-live-autoplay2"></script>
   <script type="module" src="/assets/js/professor-alex-page.mjs?v=20261014-ready2"></script>
 </body>
 </html>
