@@ -40,6 +40,7 @@ test("Daily request quota uses atomic update, RLS and is not exposed to clients"
 test("Live conversation auto-plays audio and has no manual replay control", () => {
   assert.doesNotMatch(page, /<script[^>]+professor-alex-voice\.js/);
   assert.doesNotMatch(page, /alex-replay-audio|Ouvir resposta/);
+  assert.doesNotMatch(client, /replayVoiceButton|rememberVoiceReply|Ouvir resposta/);
   assert.match(edge, /generativelanguage\.googleapis\.com\/v1beta\/interactions/);
   assert.match(edge, /generation_config: \{ speech_config: \[\{ voice: "Puck" \}\] \}/);
   assert.match(edge, /step\.type === "model_output"/);
@@ -70,5 +71,5 @@ test("Gemini 3.8 TTS uses correct voice field and fast model for short replies",
   assert.match(edge, /gemini-3\.8-flash-lite-tts/);
   assert.match(edge, /depth === "aula" \? TTS_MODEL : TTS_FAST_MODEL/);
   assert.match(edge, /audioError = "tts_unavailable"/);
-  assert.match(client, /rememberVoiceReply\(data\.answer/);
+  assert.doesNotMatch(client, /rememberVoiceReply/);
 });
