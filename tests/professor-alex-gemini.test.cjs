@@ -36,3 +36,31 @@ test("Daily request quota uses atomic update, RLS and is not exposed to clients"
   assert.match(migration, /grant execute on function .* to service_role/i);
   assert.match(migration, /revoke all on function .* from public, anon, authenticated/i);
 });
+
+test("Voice conversation uses one controller and offers user-activated replay", () => {
+  assert.doesNotMatch(page, /<script[^>]+professor-alex-voice\.js/);
+  assert.match(page, /id="alex-replay-audio"/);
+  assert.match(client, /replayVoiceButton\?\.addEventListener\("click"/);
+  assert.match(client, /playPromise\.catch\(fallback\)/);
+  assert.match(client, /speakText\(fallbackText, onComplete\)/);
+  assert.match(client, /!currentPuckAudio && !submit\?\.disabled/);
+});
+
+test("Fast answer format is sent to server and controls output budget", () => {
+  assert.match(page, /data-alex-depth="rapida"/);
+  assert.match(page, /data-alex-depth="aula"/);
+  assert.match(client, /depth: document\.querySelector/);
+  assert.match(edge, /const depth = data\.depth === "aula"/);
+  assert.match(edge, /FORMATO DÚVIDA RÁPIDA/);
+  assert.match(edge, /maxOutputTokens: depth === "aula"/);
+  assert.match(edge, /thinkingBudget: 0/);
+});
+
+test("Gemini 3.8 TTS uses correct voice field and fast model for short replies", () => {
+  assert.match(edge, /voice:\s*"Puck"/);
+  assert.doesNotMatch(edge, /prebuiltVoiceConfig:\s*\{/);
+  assert.match(edge, /gemini-3\.8-flash-lite-tts/);
+  assert.match(edge, /depth === "aula" \? TTS_MODEL : TTS_FAST_MODEL/);
+  assert.match(edge, /audioError = "tts_unavailable"/);
+  assert.match(client, /rememberVoiceReply\(data\.answer/);
+});

@@ -68,6 +68,7 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 const DEFAULT_MODEL = "gemini-3.5-flash-lite";
 const TTS_MODEL = "gemini-3.8-flash-tts";
+const TTS_FAST_MODEL = "gemini-3.8-flash-lite-tts";
 const MAX_PDF_BASE64 = 6_000_000; // ~4.5MB of raw PDF
 const MAX_BODY_BYTES = 6_500_000;
 
@@ -137,6 +138,7 @@ Deno.serve(async (req: Request) => {
   const intent = ["learn", "question", "material"].includes(String(data.intent)) ? String(data.intent) : "learn";
   const mode = (data.mode === "estourado") ? "estourado" : "normal";
   const channel = (data.channel === "voice") ? "voice" : "chat";
+  const depth = data.depth === "aula" ? "aula" : "rapida";
   const area = String(data.area || "").trim().slice(0, 120);
   const topic = String(data.topic || "").trim().slice(0, 180);
   const prompt = String(data.prompt || "").trim().slice(0, 4000);
@@ -193,7 +195,11 @@ Deno.serve(async (req: Request) => {
 
   contents.push({ role: "user", parts: userParts });
 
-  const system = getAlexSystemInstruction(mode, channel);
+  // A opção escolhida pelo aluno controla efetivamente o tamanho da resposta.
+  // A conversa casual continua curta mesmo em "aula", salvo solicitação explícita.
+  const system = getAlexSystemInstruction(mode, channel) + (depth === "aula"
+    ? "\n\nFORMATO AULA COMPLETA: quando o aluno pedir ensino médico, explique com raciocínio clínico, fisiopatologia, diagnóstico, conduta e exemplos pertinentes. Não force uma aula em cumprimentos ou conversas sociais."
+    : "\n\nFORMATO DÚVIDA RÁPIDA: priorize uma resposta imediata, direta e natural. Cumprimentos: uma frase curta. Dúvida factual simples: até três frases. Só aprofunde se a pergunta realmente exigir, sem comprometer segurança clínica.");
 
   const apiKey = Deno.env.get("CLIENT_GEMINI")!;
   let response: Response;
@@ -207,7 +213,7 @@ Deno.serve(async (req: Request) => {
         generationConfig: {
           temperature: mode === "estourado" ? 0.85 : 0.60,
           topP: 0.95,
-          maxOutputTokens: channel === "voice" ? 300 : 600,
+          maxOutputTokens: depth === "aula" ? (channel === "voice" ? 650 : 1400) : (channel === "voice" ? 220 : 320),
           thinkingConfig: { thinkingBudget: 0 },
         },
       }),
@@ -256,6 +262,7 @@ Deno.serve(async (req: Request) => {
 
   let audioBase64: string | null = null;
   let audioMimeType: string = "audio/wav";
+  let audioError: string | null = null;
 
   if (channel === "voice") {
     try {
@@ -268,7 +275,10 @@ Deno.serve(async (req: Request) => {
         .slice(0, 1500)
         .trim();
 
-      const ttsResponse = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + TTS_MODEL + ":generateContent", {
+      // Flash-Lite TTS oferece menor latência para respostas curtas; aulas
+      // completas preservam o modelo expressivo. Um secret pode sobrescrever.
+      const ttsModel = Deno.env.get("ALEX_TTS_MODEL") || (depth === "aula" ? TTS_MODEL : TTS_FAST_MODEL);
+      const ttsResponse = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + ttsModel + ":generateContent", {
         method: "POST",
         headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
         body: JSON.stringify({
@@ -285,9 +295,8 @@ Deno.serve(async (req: Request) => {
             responseModalities: ["AUDIO"],
             speechConfig: {
               voiceConfig: {
-                prebuiltVoiceConfig: {
-                  voiceName: "Puck"
-                }
+                // Gemini 3.8 TTS usa "voice" em vez do antigo "prebuiltVoiceConfig".
+                voice: "Puck"
               }
             }
           }
@@ -302,12 +311,17 @@ Deno.serve(async (req: Request) => {
         if (rawAudio) {
           audioBase64 = rawAudio;
           audioMimeType = part?.inlineData?.mimeType || part?.inline_data?.mime_type || "audio/wav";
+        } else {
+          audioError = "tts_unavailable";
+          console.warn("[alex-gemini] TTS returned no audio data");
         }
       } else {
+        audioError = "tts_unavailable";
         console.warn("[alex-gemini] TTS non-ok", ttsResponse.status);
       }
     } catch (ttsErr) {
-      console.warn("[alex-gemini] TTS failure:", ttsErr);
+      audioError = "tts_unavailable";
+      console.warn("[alex-gemini] TTS failure:", ttsErr instanceof Error ? ttsErr.name : "unknown");
     }
   }
 
@@ -324,7 +338,7 @@ Deno.serve(async (req: Request) => {
   });
   if (usageError || !usage || typeof usage !== "object") {
     console.error("[alex-gemini] token_accounting_failure");
-    return json({ answer, audio: audioBase64, audioMimeType, model: modelToUse, usage: initialUsage, accounting_pending: true }, 200, headers);
+    return json({ answer, audio: audioBase64, audioMimeType, audioError, model: modelToUse, usage: initialUsage, accounting_pending: true }, 200, headers);
   }
-  return json({ answer, audio: audioBase64, audioMimeType, model: modelToUse, usage }, 200, headers);
+  return json({ answer, audio: audioBase64, audioMimeType, audioError, model: modelToUse, usage }, 200, headers);
 });

@@ -255,22 +255,23 @@ if (form) {
       intent: document.querySelector("[data-alex-intent].is-active")?.dataset.alexIntent || "learn",
       mode: isEstourado ? "estourado" : "normal",
       channel: isLiveActive ? "voice" : "chat",
+      depth: document.querySelector('[data-alex-depth].is-active')?.dataset.alexDepth === "aula" ? "aula" : "rapida",
       history: sessionHistory.slice(-8),
     };
 
-    const oldText = submit?.textContent || "Começar aula";
+    const oldText = submit?.textContent || "Perguntar";
     if (submit) {
       submit.disabled = true;
-      submit.textContent = isLiveActive ? "Pensando…" : "Preparando aula…";
+      submit.textContent = isLiveActive ? "Respondendo…" : (payload.depth === "aula" ? "Preparando aula…" : "Respondendo…");
     }
 
     if (isLiveActive) {
       const statusText = document.getElementById("alex-status-text");
       if (statusText) statusText.textContent = "🤔 Professor Alex pensando na resposta...";
     } else {
-      if (prompt) appendUserMessage(prompt);
-      display("Analisando sua pergunta e preparando a explicação…", "Professor Alex está pensando");
+      display(payload.depth === "aula" ? "Preparando explicação detalhada…" : "Respondendo à sua pergunta…", "Professor Alex está pensando");
     }
+    if (prompt) appendUserMessage(prompt);
 
     const mascot = document.getElementById("alex-mascot");
     if (mascot?.playAnimation) {
@@ -299,8 +300,13 @@ if (form) {
         sessionHistory.push({ role: "model", text: data.answer });
         if (sessionHistory.length > 20) sessionHistory.splice(0, sessionHistory.length - 20);
       }
+      const promptInput = document.getElementById("alex-prompt");
+      if (prompt && promptInput?.value.trim() === prompt) promptInput.value = "";
+      // A resposta também aparece no feed no modo de voz: o aluno não fica sem
+      // retorno visual se a síntese do Gemini ou o autoplay do iOS falharem.
+      display(data.answer, payload.depth === "aula" ? "Aula com o Professor Alex" : "Professor Alex");
+      rememberVoiceReply(data.answer, data.audio || "", data.audioMimeType || "audio/wav");
       if (!isLiveActive) {
-        display(data.answer, "Sua aula com o Professor Alex");
         if (mascot?.playAnimation) {
           if (isEstourado) {
             mascot.expression = "angry";
@@ -325,8 +331,9 @@ if (form) {
         };
 
         if (data?.audio) {
-          playGeminiPuckAudio(data.audio, data.audioMimeType || "audio/wav", onFinishedSpeaking);
+          playGeminiPuckAudio(data.audio, data.audioMimeType || "audio/wav", onFinishedSpeaking, data.answer);
         } else {
+          if (statusText) statusText.textContent = "Voz do Gemini indisponível. Usando a voz do dispositivo.";
           speakText(data.answer, onFinishedSpeaking);
         }
       }
@@ -362,34 +369,60 @@ const liveCallText = document.getElementById("alex-live-call-text");
 
 let currentPuckAudio = null;
 
-function playGeminiPuckAudio(base64Audio, mimeType, onComplete) {
+const replayVoiceButton = document.getElementById("alex-replay-audio");
+let lastVoiceAnswer = "";
+let lastVoiceAudio = "";
+let lastVoiceAudioMimeType = "audio/wav";
+
+function rememberVoiceReply(text, audio, mimeType) {
+  lastVoiceAnswer = String(text || "");
+  lastVoiceAudio = String(audio || "");
+  lastVoiceAudioMimeType = mimeType || "audio/wav";
+  if (replayVoiceButton) replayVoiceButton.hidden = !lastVoiceAnswer;
+}
+
+// Reprodução manual ocorre dentro de um clique real e contorna bloqueios de
+// autoplay do Safari/iOS e de PWAs instalados.
+replayVoiceButton?.addEventListener("click", () => {
+  if (!lastVoiceAnswer) return;
+  if (lastVoiceAudio) playGeminiPuckAudio(lastVoiceAudio, lastVoiceAudioMimeType, null, lastVoiceAnswer);
+  else speakText(lastVoiceAnswer);
+});
+
+function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackText = "") {
   if (currentPuckAudio) {
-    try {
-      currentPuckAudio.pause();
-      currentPuckAudio.currentTime = 0;
-    } catch {}
+    try { currentPuckAudio.pause(); currentPuckAudio.currentTime = 0; } catch {}
     currentPuckAudio = null;
   }
   window.speechSynthesis?.cancel();
-    if (currentPuckAudio) {
-      try {
-        currentPuckAudio.pause();
-        currentPuckAudio.currentTime = 0;
-      } catch {}
-      currentPuckAudio = null;
-    }
 
   const modeToggle = document.getElementById("alex-mode-toggle");
   const isEstourado = (modeToggle?.getAttribute("aria-checked") === "true") ||
     (modeToggle?.getAttribute("aria-pressed") === "true") ||
     (document.querySelector('[data-alex-mode="estourado"]')?.getAttribute("aria-pressed") === "true");
-
   const mascot = document.getElementById("alex-mascot");
+  let completed = false;
   try {
-    const audioUrl = "data:" + (mimeType || "audio/wav") + ";base64," + base64Audio;
-    const audio = new Audio(audioUrl);
+    // Gemini 3.8 em modo unário devolve WAV com cabeçalho; não tratar como
+    // PCM bruto nem acrescentar um segundo cabeçalho.
+    const audio = new Audio("data:" + (mimeType || "audio/wav") + ";base64," + base64Audio);
     currentPuckAudio = audio;
-
+    const finish = () => {
+      if (completed) return;
+      completed = true;
+      if (mascot) mascot.speaking = false;
+      if (currentPuckAudio === audio) currentPuckAudio = null;
+      if (typeof onComplete === "function") onComplete();
+    };
+    const fallback = () => {
+      if (completed) return;
+      completed = true;
+      if (mascot) mascot.speaking = false;
+      if (currentPuckAudio === audio) currentPuckAudio = null;
+      const status = document.getElementById("alex-status-text");
+      if (status) status.textContent = "Não consegui reproduzir a voz Puck. Tentando a voz do dispositivo; se não sair som, toque em Ouvir resposta.";
+      speakText(fallbackText, onComplete);
+    };
     audio.onplay = () => {
       if (mascot) {
         mascot.speaking = true;
@@ -399,32 +432,20 @@ function playGeminiPuckAudio(base64Audio, mimeType, onComplete) {
         }
       }
     };
-
-    const cleanup = () => {
-      if (mascot) mascot.speaking = false;
-      if (currentPuckAudio === audio) currentPuckAudio = null;
-      if (typeof onComplete === "function") onComplete();
-    };
-
-    audio.onended = cleanup;
-    audio.onerror = () => {
-      cleanup();
-    };
-
+    audio.onended = finish;
+    audio.onerror = fallback;
     const playPromise = audio.play();
-    if (playPromise !== undefined) {
-      playPromise.catch(() => {
-        cleanup();
-      });
-    }
-  } catch (err) {
+    if (playPromise && typeof playPromise.catch === "function") playPromise.catch(fallback);
+  } catch {
     if (mascot) mascot.speaking = false;
-    if (typeof onComplete === "function") onComplete();
+    speakText(fallbackText, onComplete);
   }
 }
 
 function speakText(text, onComplete) {
-  if (!("speechSynthesis" in window)) {
+  if (!("speechSynthesis" in window) || typeof window.SpeechSynthesisUtterance !== "function") {
+    const status = document.getElementById("alex-status-text");
+    if (status) status.textContent = "Este navegador não oferece síntese de voz. A resposta está no chat.";
     if (onComplete) onComplete();
     return;
   }
@@ -477,7 +498,11 @@ function speakText(text, onComplete) {
   };
 
   utterance.onend = endSpeech;
-  utterance.onerror = endSpeech;
+  utterance.onerror = () => {
+    const status = document.getElementById("alex-status-text");
+    if (status) status.textContent = "O navegador bloqueou o áudio. Toque em Ouvir resposta para tentar novamente.";
+    endSpeech();
+  };
   window.speechSynthesis.speak(utterance);
 }
 
@@ -516,6 +541,10 @@ function initLiveVoiceMode() {
       liveRecognition = null;
     }
     window.speechSynthesis?.cancel();
+    if (currentPuckAudio) {
+      try { currentPuckAudio.pause(); currentPuckAudio.currentTime = 0; } catch {}
+      currentPuckAudio = null;
+    }
     const mascot = document.getElementById("alex-mascot");
     if (mascot) {
       mascot.speaking = false;
@@ -550,7 +579,7 @@ function initLiveVoiceMode() {
         if (isLiveActive && err.error !== "no-speech") console.warn("[Live Alex]", err);
       };
       liveRecognition.onend = () => {
-        if (isLiveActive && !window.speechSynthesis?.speaking && !submit?.disabled) {
+        if (isLiveActive && !window.speechSynthesis?.speaking && !currentPuckAudio && !submit?.disabled) {
           setTimeout(startListening, 600);
         }
       };
