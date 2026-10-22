@@ -36,3 +36,28 @@ test("Daily request quota uses atomic update, RLS and is not exposed to clients"
   assert.match(migration, /grant execute on function .* to service_role/i);
   assert.match(migration, /revoke all on function .* from public, anon, authenticated/i);
 });
+
+test("Concise and safe voice handling avoids spending Gemini tokens on an ambiguous transcript", () => {
+  assert.match(edge, /ambiguous_transcription/);
+  assert.match(edge, /channel === "voice"/);
+  assert.match(edge, /Você quis dizer.*sepse/);
+  assert.match(edge, /maxOutputTokens: mode === "estourado" \? 3300 : channel === "voice" \? 650 : 1500/);
+  assert.match(edge, /MAX_HISTORY_ITEMS/);
+  assert.match(client, /shouldSendAlexHistory/);
+  assert.match(client, /payload\.history = alexHistory\.slice\(-4\)/);
+  assert.match(client, /data\.clarification/);
+  assert.match(edge, /não comece uma aula/);
+  assert.match(page, /alex-stop-response/);
+  assert.match(client, /stopAlexResponse/);
+  assert.match(client, /speechGeneration/);
+  assert.match(edge, /low_transcription_confidence/);
+  assert.match(edge, /voiceConfidence < 0\.65/);
+  assert.match(client, /payload\.voice_confidence/);
+  assert.match(client, /liveTranscriptConfidence/);
+  assert.match(client, /professor-alex-site-index\.json/);
+  assert.match(client, /site_context/);
+  assert.match(client, /Não encontrei esse termo no conteúdo da LURIA/);
+  assert.match(edge, /sourceMode/);
+  assert.match(edge, /MAX_SITE_CONTEXT_CHARS/);
+  assert.match(edge, /Fonte restrita/);
+});
