@@ -146,3 +146,38 @@ O renderer compartilhado usa fonte de **13,2 px** em parágrafos/listas, **12 px
 - IDSA, diretriz diarreias infecciosas: https://www.idsociety.org/practice-guideline/infectious-diarrhea
 
 **Status: EM REVISÃO — atualizações técnicas gravadas, pendente validação clínica integral e visual; não pronto para merge.**
+
+
+## Correção de hierarquia entre fontes — 22/10/2026
+
+**Pedido do responsável:** não inverter prioridade entre protocolos oficiais brasileiros e diretrizes internacionais ao atualizar as apostilas. Aplicar em todos os dez lotes. Regra registrada também em `apostilas/EDITORIAL_STANDARD.md` (seção de hierarquia clínico-científica).
+
+**Verificação documental específica na diarreia pediátrica:** aberto e examinado o PDF oficial de uma página do MS, `Manejo do Paciente com Diarreia`, atualizado em 10/07/2026. Checados MS/PNI 2026 e tabelas de recomendação OMS 2024 com força e certeza; exceção STEC conferida pela IDSA. Materiais de Drive são comparadores de didática, não fonte prescricional.
+
+### Hierarquia clínica aplicada
+1. **MS/SUS vigente, específico, com data**: dose/fluxo no SUS, elegibilidade, vacinação PNI e fármacos segundo cenário; citar documento primário e não portal genérico quando existir cartaz detalhado.
+2. **Sociedades brasileiras especializadas:** complementação fundamentada conforme público, metodologia e data, sem revogar automaticamente a regra oficial.
+3. **OMS/internacionais:** análise de evidências, alternativas de outros contextos e divergências explícitas; não migrar esquema estrangeiro sem processo de incorporação ou justificativa robusta.
+4. **Estudos/revisões científicas:** apoiar explicações e alertas de segurança; avaliar certeza e aplicabilidade.
+5. **Google Drive/curso:** comparação editorial, nunca fundamento isolado para dose/algoritmo.
+
+### Alterações efetivamente gravadas na apostila Diarreia Aguda na Infância
+- Acrescentada referência nacional visível já na abertura da apostila; a OMS não aparece mais como primeira fonte operacional para condutas no SUS.
+- Reordenadas as explicações de disenteria, antibiótico, probióticos e zinco em capítulos, casos e questões, distinguindo **MS 2026** de **OMS 2024** e incluindo exceção **STEC/SHU**.
+- Confirmado esquema nacional de zinco: <6 meses ou até 6 meses, conforme cartaz, **10 mg/dia**; maiores de 6 meses a menores de 5 anos, **20 mg/dia**, por 10–14 dias. A sugestão OMS **5 mg/dia** é condicional e não substitui a regra do SUS automaticamente. O material usa literalmente o corte do cartaz “até 6 meses”.
+- Conferido Plano B com SRO 50–100 mL/kg em 4–6 h como orientação inicial, mantendo supervisão e reavaliações, e esquema pediátrico para disenteria com comprometimento do estado geral.
+- Retirada **seção de pendências de produção** da leitura do estudante, substituída por **quadro didático de mecanismos**; checklist interno foi substituído por **tabela de divergências clínico-científicas**. Bibliografia final ordenada por contexto e autoridade com URLs específicas.
+- 23 capítulos estruturais e 12 questões comentadas principais foram preservados; imagens existentes e fila Admin não alteradas.
+
+### Riscos residuais e revisão necessária
+- Apesar de diretrizes citadas, ainda falta auditoria de originalidade das questões, revisão clínica especializada de todos os casos e testes visuais desktop/PWA.
+- Fonte SBP brasileira específica e comparável não foi aberta para cada subtópico desta apostila; **não atribuir validação integral à SBP**. As doses da discussão foram verificadas diretamente no documento MS vigente.
+- O padrão editorial exige que a mesma fonte, versão e ressalva de segurança sejam mantidas no texto principal, tabelas, casos, questões e resumo; a conferência integral continua necessária antes do merge.
+- **A atualização não equivale à aprovação final, nem autorizou merge em `main`.**
+
+**Documentos primários:** 
+- https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente/view
+- https://www.gov.br/saude/pt-br/vacinacao/calendario
+- https://www.who.int/publications/i/item/9789240103412
+- https://www.idsociety.org/practice-guideline/infectious-diarrhea
+
