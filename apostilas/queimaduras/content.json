@@ -1237,15 +1237,15 @@
         ],
         [
           "p",
-          "<strong>1. Cálculo da Superfície Corporal Queimada (%SCQ):</strong>"
+          "<strong>1. Calcular a SCQ:</strong> tórax/abdome anteriores = 18%; face anterior dos dois membros superiores = 4,5% + 4,5% = 9%; face anterior dos dois membros inferiores = 9% + 9% = 18%. Total de <strong>45% SCQ de espessura parcial</strong>. Cabeça e dorso não estão queimados."
         ],
         [
           "p",
-          "<strong>2. Prescrição da Ressuscitação Volêmica pelas Diretrizes Vigentes do ATLS 10ª/11ª Ed / ABA:</strong>"
+          "<strong>2. Estimar fluido inicial e ajustar:</strong> para homem de 80 kg com 45% SCQ, a a=>a não é usada automaticamente; pela <strong>ABA 2024 (adultos ≥20%)</strong>, 2 × 80 × 45 = <strong>7.200 mL nas 24 h</strong> como estimativa, não ordem de infusão fixa. Pelo esquema brasileiro histórico de Parkland 4 × 80 × 45 = <strong>14.400 mL nas 24 h</strong>, com meia dose em 8 h desde a lesão. O acidente foi há 2 horas; a velocidade deve levar em conta os líquidos já recebidos, perfusão, diurese e protocolo do CTQ. <strong>Não misturar o volume ABA com o cronograma Parkland sem explicitar a hipótese didática.</strong>"
         ],
         [
           "p",
-          "<strong>3. Metas de Monitorização:</strong> Cateter vesical de demora instalado. Meta de débito urinário: $0,5\text{ mL/kg/h} \times 80\text{ kg} = mathbf{40\text{ mL/hora}}$. A taxa de infusão deve ser ajustada para manter a diurese entre 35 e 50 mL/h."
+          "<strong>3. Titular por resposta:</strong> em adulto de 80 kg, a referência de débito urinário de aproximadamente 0,5 mL/kg/h corresponde a <strong>40 mL/h</strong>, interpretando perfusão e função renal junto à diurese. É inseguro manter uma taxa de fluidos rígida sem rever edema, pressão arterial, pulso, temperatura e acidose."
         ],
         [
           "3",
@@ -1343,11 +1343,11 @@
         ],
         [
           "p",
-          "<strong>Questão 1 (Residência Médica / Cirurgia Geral / ENAMED):</strong><br>\n  Um homem de 30 anos, pesando 70 kg, é vítima de queimadura térmica por chamas em ambiente aberto. Ao exame físico na sala de trauma, observam-se queimaduras de 2º grau superficial e profundo acometendo todo o dorso (18%), todo o membro superior direito (9%) e a face anterior da coxa e perna esquerdas (9%). Além disso, apresenta eritema solar intenso sem bolhas no tórax anterior (9%). O acidente ocorreu há exatamente 1 hora. Considerando as recomendações atuais do ATLS (10ª e 11ª edições) / American Burn Association (ABA), qual deve ser a taxa de infusão de Ringer Lactato nas primeiras horas de atendimento?"
+          "<strong>Questão 1 — autoral simulada, sem vínculo com banca:</strong> adulto de 70 kg com queimadura de espessura parcial em 36% da SCQ (dorso 18%, membro superior direito 9%, metade anterior de um membro inferior 9%). Um eritema exclusivamente epidérmico não entra nessa conta. O acidente ocorreu há 1 hora e ainda <strong>não houve infusão</strong>. Em um exercício didático que adota a <strong>estimativa inicial ABA 2024 de 2 mL/kg/%SCQ</strong> para adulto com ≥20% e que <strong>supõe, expressamente, infundir 50% do volume calculado nas primeiras 8 horas após a lesão</strong>, qual seria a taxa horária teórica pelas 7 horas restantes dessa primeira fase? Não confundir esse exercício matemático com taxa clínica obrigatória; a ABA recomenda titulação por resposta."
         ],
         [
           "p",
-          "A) 756 mL/hora nas próximas 7 horas.<br>\n  B) 504 mL/hora nas próximas 8 horas.<br>\n  C) 360 mL/hora nas próximas 7 horas.<br>\n  D) 504 mL/hora nas próximas 7 horas.<br>\n  E) 252 mL/hora nas próximas 16 horas."
+          "A) 756 mL/h nas próximas 7 horas.<br>B) 504 mL/h nas próximas 8 horas.<br>C) 360 mL/h nas próximas 7 horas.<br>D) 504 mL/h nas próximas 7 horas.<br>E) 252 mL/h nas próximas 16 horas."
         ],
         [
           "4",
@@ -1355,11 +1355,11 @@
         ],
         [
           "p",
-          "<strong>Alternativa Correta: D.</strong>"
+          "<strong>Resposta comentada: alternativa C.</strong> SCQ 36%, porque o eritema superficial não é somado. A estimativa <strong>ABA 2024</strong> em adulto ≥20% é 2 × 70 × 36 = <strong>5.040 mL/24 h</strong>. A questão <em>supõe</em> 50% em 8 h: 2.520 mL. Uma hora já transcorreu; sem volume prévio, restam 7 h → 2.520 / 7 = <strong>360 mL/h</strong>. A alternativa D (504 mL/h) estava erroneamente marcada como correta no manuscrito anterior, e foi corrigida. <strong>Na vida real</strong>, não se impõe essa divisão à ABA como regra; a taxa é titulada a diurese/perfusão. Na Parkland histórica de 4 mL, os números seriam diferentes."
         ],
         [
           "p",
-          "<strong>Questão 2 (SUS-SP / Revalida INEP):</strong><br>\n  Lactente de 10 meses de vida (peso: 10 kg) sofreu queimadura por derramamento acidental de água fervente sobre a cabeça e o membro superior esquerdo completo. As lesões apresentam bolhas rotas com leito vermelho vivo e úmido e dor intensa. Qual é a porcentagem da Superfície Corporal Queimada (%SCQ) estimada pela Tabela de Lund-Browder e qual o débito urinário alvo a ser perseguido na ressuscitação volêmica?"
+          "<strong>Questão 2 — autoral simulada:</strong> lactente de 10 meses, 10 kg, sofre escaldadura que abrange toda a cabeça e o membro superior esquerdo, com bolhas e leito úmido doloroso. Para a idade, a estimativa pela tabela pediátrica (cabeça ~18%, membro superior ~9%) e o objetivo urinário inicial de monitorização em grande queimado pediátrico são:"
         ],
         [
           "p",
@@ -1371,11 +1371,11 @@
         ],
         [
           "p",
-          "<strong>Alternativa Correta: B.</strong>"
+          "<strong>Resposta comentada: alternativa B.</strong> Cabeça 18% + membro superior 9% = <strong>27% SCQ</strong>. Na criança, o objetivo urinário orientativo usual é cerca de <strong>1 mL/kg/h</strong>; não basta aplicar uma fórmula de adulto e não se pode omitir avaliação de manutenção com glicose e eletrólitos. A/B/C/D/E refletem combinações distintas; a alternativa B é a única compatível com os dois dados. Este é um <strong>caso simulado</strong>, sem autoria da banca indicada no manuscrito antigo."
         ],
         [
           "p",
-          "<strong>Questão 3 (USP-RP / ENARE):</strong><br>\n  Um paciente de 24 anos é vítima de queimadura circunferencial de espessura total (3º grau) em ambas as pernas e no tronco superior decorrente de chamas em ambiente fechado. Após 8 horas de hidratação vigorosa, encontra-se intubado e ventilando em modo controlado. O ventilador mecânico começa a disparar alarmes sucessivos de pressão de pico elevada nas vias aéreas (atingindo 48 cmH2O), acompanhado de queda do volume-corrente de 500 mL para 280 mL e queda da SatO2 para 88%. Ao mesmo tempo, os pulsos pediosos e tibiais posteriores tornam-se filiformes e imperceptíveis ao Doppler. Qual é a conduta cirúrgica emergencial indicada imediatamente na sala de emergência?"
+          "<strong>Questão 3 — autoral simulada:</strong> paciente com queimadura de espessura total circunferencial no tórax e em ambas as pernas desenvolve, sob ventilação mecânica, aumento progressivo das pressões ventilatórias, redução do volume-corrente e sinais de comprometimento vascular distal. Após medidas imediatas de avaliação ventilatória e hemodinâmica, qual intervenção pode ser necessária por equipe habilitada para liberar a escara constritiva?"
         ],
         [
           "p",
@@ -1387,11 +1387,11 @@
         ],
         [
           "p",
-          "<strong>Alternativa Correta: C.</strong>"
+          "<strong>Resposta comentada: alternativa C.</strong> A escarotomia torácica e de membros é indicada quando escara inelástica compromete ventilação/perfusão; requer equipe treinada, analgesia e técnica segura. <strong>Não é igual à fasciotomia</strong>, que abre compartimentos musculares em situação selecionada. A questão simula o cenário, sem afiliação a exames oficiais."
         ],
         [
           "p",
-          "<strong>Questão 4 (UNICAMP / Cirurgia Geral):</strong><br>\n  Paciente de 38 anos é admitido após ser retirado de um incêndio em depósito de materiais plásticos e móveis estofados. Encontra-se intubado na admissão devido a queimaduras em face e escarro carbonáceo. Os sinais vitais mostram PA: 75/40 mmHg, FC: 140 bpm, extremidades frias e pálidas. O hemograma e eletrólitos revelam hematócrito 52%, sódio 138 mEq/L, potássio 5,2 mEq/L. A gasometria arterial revela pH 7,10, PaO2 125 mmHg (FiO2 100%), PaCO2 28 mmHg, HCO3- 9 mEq/L, e Lactato sérico de 14 mmol/L (VR &lt; 2,0). A carboxihemoglobina dosada é de 8%. Diante do quadro clínico-laboratorial, qual é a principal hipótese etiológica para a acidose lática desproporcional e qual a conduta específica indicada?"
+          "<strong>Questão 4 — autoral simulada:</strong> paciente com queimadura em incêndio de ambiente fechado por materiais sintéticos evolui com hipotensão, confusão e acidose láctica importante (lactato 14 mmol/L) apesar de oxigenação suplementar; dosagem de COHb não explica a gravidade. Qual intoxicação associada deve ser fortemente considerada e qual terapia específica pode ser necessária?"
         ],
         [
           "p",
@@ -1403,15 +1403,15 @@
         ],
         [
           "p",
-          "<strong>Alternativa Correta: D.</strong>"
+          "<strong>Resposta comentada: alternativa D.</strong> No incêndio em espaço fechado, choque e hiperlactatemia acentuada levantam suspeita clínica forte de intoxicação por cianeto; avaliação emergencial e hidroxocobalamina podem ser indicadas conforme protocolo brasileiro do Ministério da Saúde de uso de antídoto e toxicologia. Outras causas de choque/lactato devem ser avaliadas em paralelo. Não usar apenas um marcador isolado como prova laboratorial definitiva."
         ],
         [
           "p",
-          "<strong>Questão 5 (ENAMED / AMRIGS):</strong><br>\n  Sobre o uso de antimicrobianos tópicos e curativos no cuidado de pacientes queimados, assinale a afirmativa correta:"
+          "<strong>Questão 5 — autoral simulada:</strong> sobre o manejo de feridas em pacientes queimados, qual alternativa é a mais adequada, considerando seleção de curativos, riscos dos agentes e prevenção de infecção?"
         ],
         [
           "p",
-          "A) A sulfadiazina de prata a 1% é o agente de escolha para queimaduras de pavilhão auditivo devido à sua capacidade ímpar de penetrar cartilagens avasculares.<br>\n  B) O acetato de mafenida tem como principal efeito colateral a alcalose metabólica hipoclorêmica secundária à indução da anidrase carbônica renal.<br>\n  C) A antibioticoterapia profilática sistêmica com cefalosporinas de 1ª geração está indicada nas primeiras 48 horas para prevenir a colonização da ferida por Staphylococcus aureus.<br>\n  D) A sulfadiazina de prata a 1% pode provocar leucopenia transitória autolimitada que não requer a suspensão obrigatória do medicamento se o paciente estiver clinicamente bem.<br>\n  E) As queimaduras de 1º grau devem ser tratadas rotineiramente com sulfadiazina de prata para prevenir infecção e acelerar a cicatrização dérmica."
+          "A) Toda queimadura de primeiro grau requer sulfadiazina de prata diária.<br>B) A mafenida provoca alcalose metabólica por inibir a anidrase carbônica.<br>C) Antibioticoterapia sistêmica profilática deve ser prescrita rotineiramente na admissão.<br>D) Escolha de curativo depende de profundidade e risco; sulfadiazina de prata pode retardar epitelização em lesões parciais superficiais, portanto não é universalmente superior.<br>E) Toda bolha íntegra precisa ser rompida pelo leigo antes do atendimento."
         ],
         [
           "4",
@@ -1419,15 +1419,15 @@
         ],
         [
           "p",
-          "<strong>Alternativa Correta: D.</strong>"
+          "<strong>Resposta comentada: alternativa D.</strong> Profundidade, localização, exsudato e disponibilidade guiam o curativo. A sulfadiazina de prata pode dificultar epitelização em lesões de espessura parcial superficial em comparação a alternativas modernas; a mafenida, por inibir anidrase carbônica, associa-se a <strong>acidose</strong>, não alcalose. Antibiótico sistêmico profilático de rotina não é indicado. A abertura indiscriminada de bolhas no primeiro socorro também é incorreta. Avaliar agente tópico e contraindicações com serviço habilitado."
         ],
         [
           "p",
-          "<strong>Questão 6 (IAMSPE / Cirurgia Geral):</strong><br>\n  Em relação às queimaduras elétricas de alta voltagem (&gt; 1.000 volts), assinale a alternativa INCORRETA:"
+          "<strong>Questão 6 — autoral simulada:</strong> em queimadura elétrica de alta tensão, assinale a alternativa <strong>INCORRETA</strong>:"
         ],
         [
           "p",
-          "A) O dano tecidual interno costuma ser desproporcionalmente maior do que as lesões cutâneas externas visíveis nos pontos de contato (\"efeito iceberg\").<br>\n  B) O débito urinário deve ser mantido estritamente em 0,5 mL/kg/hora para evitar a sobrecarga de volume e edema cerebral.<br>\n  C) Há indicação formal de monitorização eletrocardiográfica contínua durante as primeiras 24 horas após o acidente devido ao risco de arritmias cardíacas tardias.<br>\n  D) A presença de urina avermelhada/escura com teste de fita positivo para sangue e ausência de hemácias no sedimento sugere mioglobinúria secundária à rabdomiólise.<br>\n  E) A alcalinização da urina com bicarbonato de sódio endovenoso ajuda a prevenir a precipitação tubular renal da mioglobina."
+          "A) Lesão muscular interna pode ser maior que a área cutânea aparente.<br>B) Em rabdomiólise/mioglobinúria, limitar rigidamente a diurese a 0,5 mL/kg/h em qualquer circunstância, sem monitorização adicional.<br>C) ECG e monitorização cardíaca devem ser considerados, particularmente em alta tensão, sintomas ou perda de consciência, conforme protocolo.<br>D) Urina escura, teste de sangue positivo e ausência de hemácias pode sugerir mioglobinúria.<br>E) Bicarbonato não deve ser usado rotineiramente como profilaxia de lesão renal por rabdomiólise; a evidência de benefício é insuficiente."
         ],
         [
           "4",
@@ -1435,7 +1435,7 @@
         ],
         [
           "p",
-          "<strong>Alternativa Incorreta: B.</strong>"
+          "<strong>Resposta comentada: alternativa B (incorreta).</strong> Queimadura elétrica profunda pode causar mionecrose, hipercalemia e rabdomiólise com necessidade de hidratação e vigilância renal diferentes da térmica superficial; impor 0,5 mL/kg/h como teto rígido é inseguro. A, C e D são afirmações compatíveis com avaliação clínica. A alternativa E foi <strong>corrigida</strong>: bicarbonato preventivo rotineiro não é recomendado no consenso de rabdomiólise da AAST devido à evidência insuficiente (https://pmc.ncbi.nlm.nih.gov/articles/PMC8804685/). Não transformar alcalinização urinária em tratamento obrigatório."
         ]
       ]
     ],
@@ -1458,7 +1458,7 @@
             "<strong>2. Hierarquia de fontes:</strong> MS 2012/SAMU 2015 ensinam Parkland 4 mL/kg/%SCQ no Brasil. A <a href=\"https://academic.oup.com/jbcr/article/45/3/565/7458089\" target=\"_blank\" rel=\"noopener noreferrer\">ABA 2024</a> propõe iniciar 2 mL/kg/%SCQ <strong>somente para adultos ≥20% SCQ</strong>. Não escrever “ATLS 10ª/11ª” como sinônimo de ABA sem conferência documental; pediatria e queimadura elétrica exigem protocolos próprios.",
             "<strong>3. As 8 horas contam da queimadura:</strong> a divisão 50%/8 h e 50%/16 h descreve Parkland clássica; com outras estratégias, a velocidade deve ser ajustada a diurese e perfusão. Não compensar atraso por cálculo cegamente.",
             "<strong>4. Fórmula não substitui monitorização:</strong> objetivo urinário orientativo em adulto ~0,5 mL/kg/h e em criança ~1 mL/kg/h, interpretado com perfusão, peso, rim, edema e manutenção pediátrica. Em rabdomiólise, metas são individualizadas.",
-            "<strong>5. Intubação Precoce na Lesão Inalatória:</strong> Não hesite: estridor inspiratório, rouquidão, queimadura profunda de face/pescoço, fuligem na orofaringe e confinamento são critérios mandatórios de IOT imediata antes do edema oclusivo de glote.",
+            "<strong>5. Intubação Precoce na Lesão Inalatória:</strong> Não hesite: estridor inspiratório, rouquidão, queimadura profunda de face/pescoço, fuligem na orofaringe e confinamento são sinais que exigem avaliação imediata de via aérea, e não IOT automática isoladamente antes do edema oclusivo de glote.",
             "<strong>6. Oximetria Mente no Monóxido de Carbono:</strong> A oximetria de pulso é normal mesmo com níveis letais de COHb. Diagnóstico exige gasometria com co-oximetria. Tratamento: $O_2$ a 100% não reinalante (OHB se $\text{COHb} &gt; 25%$ ou gestante $\text{COHb} &gt; 15%$).",
             "<strong>7. Cianeto mata por Acidose Lática:</strong> Incêndio em ambiente fechado com materiais plásticos/estofados + choque com <strong>lactato sérico elevadíssimo (&gt; 10 mmol/L)</strong> = intoxicação por cianeto. Antídoto: <strong>Hidroxicobalamina 5,0 g IV</strong>.",
             "<strong>8. Escarotomia é Urgência na Sala de Trauma:</strong> Queimaduras circunferenciais de tórax com hipóxia / alta pressão ventilatória ou membros com dor ao estiramento e perda de pulso exigem incisão longitudinal imediata da escara. Não requer anestesia na área de 3º grau.",
