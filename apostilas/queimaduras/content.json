@@ -89,6 +89,14 @@
           "1. Introdução, Epidemiologia e Mecanismos do Trauma Térmico"
         ],
         [
+          "p",
+          "<strong>Em 30 segundos:</strong> interromper exposição, proteger a equipe, remover roupas e adornos não aderidos, resfriar área queimada com água corrente fria (não gelo) quando apropriado e evitar hipotermia. Avaliar ABCDE, trauma associado e lesão inalatória; calcular SCQ <em>sem incluir eritema superficial isolado</em>; decidir ressuscitação e transferência segundo gravidade. <strong>A fórmula estima uma infusão inicial, não determina todo o tratamento</strong>."
+        ],
+        [
+          "p",
+          "<strong>Fontes por aplicabilidade:</strong> <a href=\"https://bvsms.saude.gov.br/bvs/publicacoes/cartilha_tratamento_emergencia_queimaduras.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde — Cartilha para Tratamento de Emergência das Queimaduras (2012)</a>, <a href=\"https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_suporte_avancado_vida.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">SAMU/MS — Protocolo de Suporte Avançado (2015)</a> e fluxo da regulação/CTQ local orientam a rede brasileira. São fontes nacionais <strong>antigas</strong>, que ainda ensinam Parkland clássica: <strong>4 mL/kg/%SCQ</strong>. A <a href=\"https://academic.oup.com/jbcr/article/45/3/565/7458089\" target=\"_blank\" rel=\"noopener noreferrer\">American Burn Association (2024)</a> tem recomendação mais recente e específica para <strong>adultos com ≥20% SCQ</strong>: iniciar 2 mL/kg/%SCQ e titular, reduzindo edema por excesso; não impor esse esquema à pediatria. Documentar a versão usada, não misturar fatores e adequar à resposta clínica."
+        ],
+        [
           "3",
           "Definição e Magnitude Epidemiológica do Trauma Térmico"
         ],
@@ -160,6 +168,50 @@
             ]
           ],
           "book-table"
+        ],
+        [
+          "3",
+          "Conduta inicial que antecede o cálculo"
+        ],
+        [
+          "t",
+          [
+            "Etapa",
+            "Pergunta clínica",
+            "Conduta prioritária"
+          ],
+          [
+            [
+              "A — Via aérea",
+              "Estridor, edema progressivo, insuficiência ventilatória ou rebaixamento?",
+              "Especialista e via aérea precoce se comprometida; fuligem isolada indica avaliação, não tubo automático"
+            ],
+            [
+              "B — Ventilação",
+              "Incêndio em local fechado, suspeita de monóxido de carbono?",
+              "Oxigênio suplementar alto fluxo quando indicado, co-oximetria e avaliação toxicológica"
+            ],
+            [
+              "C — Circulação",
+              "Perfusão, choque, SCQ, trauma associado e horas desde acidente?",
+              "Acesso, cristaloide balanceado se indicado e reavaliação de diurese/perfusão"
+            ],
+            [
+              "D/E — Exposição",
+              "Mecanismo elétrico/químico, bolhas, profundidade, hipotermia?",
+              "Retirar fonte, resfriar conforme situação, prevenir hipotermia, cobrir e analgesiar"
+            ],
+            [
+              "Destino",
+              "Pele profunda, área crítica, SCQ extensa, criança e suspeita inalatória?",
+              "Consultar regulação e CTQ conforme critérios nacionais e especialistas"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Segurança:</strong> um adulto com pequena queimadura, dor e perfusão normal não precisa automaticamente de Parkland. Uma criança com superfície menor e queimadura em mão pode precisar de avaliação especializada por risco funcional, apesar de não preencher volume de ressuscitação formal."
         ]
       ]
     ],
@@ -590,7 +642,7 @@
         ],
         [
           "p",
-          "A hidratação endovenosa imediata é a intervenção que mais impacta a sobrevida imediata do grande queimado. Historicamente, a fórmula mais difundida no mundo foi a <strong>Fórmula de Parkland clássica</strong>, desenvolvida por Charles Baxter no Parkland Memorial Hospital na década de 1960. No entanto, nas últimas duas décadas, o reconhecimento do fenômeno da <em>\"ressuscitação excessiva\" (fluid creep)</em> — que culmina em edema pulmonar agudo, síndrome compartimental de membros não queimados e síndrome de compartimento abdominal com falência renal — levou as principais entidades mundiais (American Burn Association - ABA e o Advanced Trauma Life Support - ATLS nas suas 10ª e 11ª edições) a atualizar as diretrizes de infusão inicial para patamares mais fisiológicos e conservadores."
+          "A ressuscitação do queimado procura corrigir perda intravascular e manter perfusão, <strong>sem produzir “fluid creep”</strong>, que agrava edema de tecidos, pulmões e compartimentos. <strong>No Brasil</strong>, a <a href=\"https://bvsms.saude.gov.br/bvs/publicacoes/cartilha_tratamento_emergencia_queimaduras.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">cartilha do MS (2012)</a> e o <a href=\"https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_suporte_avancado_vida.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">protocolo SAMU (2015)</a> ensinam Parkland clássica de 4 mL/kg/%SCQ; isso precisa aparecer com a <strong>data</strong>, pois são documentos antigos. A <a href=\"https://academic.oup.com/jbcr/article/45/3/565/7458089\" target=\"_blank\" rel=\"noopener noreferrer\">ABA 2024</a> recomenda iniciar a 2 mL/kg/%SCQ em <strong>adultos com ≥20% SCQ</strong> e considerar albumina em casos de maior extensão; a fórmula continua sendo <strong>ponto de partida</strong>, nunca meta fixa a ser atingida a qualquer custo. Não afirmar que “ATLS 10ª e 11ª edições” são ambas a fonte direta desta atualização sem abrir a página específica do curso."
         ],
         [
           "3",
@@ -599,35 +651,30 @@
         [
           "t",
           [
-            "Protocolo / Diretriz",
-            "Fórmula de Volume Inicial (Primeiras 24h)",
-            "Solução Eletrolítica de Escolha",
-            "População-Alvo Específica"
+            "Documento e população",
+            "Estimativa de cristaloide nas primeiras 24 h",
+            "Aplicação correta / limite"
           ],
           [
             [
-              "<strong>Fórmula de Parkland Clássica</strong>",
-              "<strong>$4\text{ mL} \times \text{Peso (kg)} \times %\text{SCQ}$</strong>",
-              "Ringer Lactato",
-              "Uso histórico clássico em grandes queimados adultos e pediátricos."
+              "<strong>MS 2012 / SAMU 2015 — ensino brasileiro</strong>",
+              "<strong>4 mL × peso (kg) × %SCQ</strong> (Parkland clássica)",
+              "Documentos brasileiros mais antigos; metade em 8 h após o acidente e o restante em 16 h; titular conforme diurese, risco e protocolo local"
             ],
             [
-              "<strong>ATLS 10ª/11ª Edição &amp; ABA (Adultos)</strong>",
-              "<strong>$2\text{ mL} \times \text{Peso (kg)} \times %\text{SCQ}$</strong>",
-              "Ringer Lactato",
-              "Queimaduras térmicas e químicas em adultos (&ge; 14 anos)."
+              "<strong>ABA 2024 — adultos com queimaduras ≥20% SCQ</strong>",
+              "<strong>2 mL × peso (kg) × %SCQ</strong> como ponto de partida",
+              "Diretriz especializada internacional atualizada; não extrapolar a pediatria; titular taxa de infusão e perfusão; considerar albumina em casos selecionados"
             ],
             [
-              "<strong>ATLS 10ª/11ª Edição &amp; ABA (Pediatria &lt; 14 anos)</strong>",
-              "<strong>$3\text{ mL} \times \text{Peso (kg)} \times %\text{SCQ}$</strong>",
-              "Ringer Lactato (+ Manutenção com SG 5% + Na)",
-              "Crianças e lactentes com peso &lt; 30 kg ou idade &lt; 14 anos."
+              "<strong>Pediatria</strong>",
+              "Fórmulas pediátricas próprias + <strong>manutenção</strong> quando necessária",
+              "Criança não é adulto pequeno; Lund-Browder, monitorar glicemia, diurese e protocolos pediátricos do CTQ; ABA 2024 de ressuscitação não estudou esta população"
             ],
             [
-              "<strong>Queimadura Elétrica de Alta Voltagem</strong>",
-              "<strong>$3\text{ a } 4\text{ mL} \times \text{Peso (kg)} \times %\text{SCQ}$</strong> (ou mais)",
-              "Ringer Lactato",
-              "Trauma elétrico de alta tensão com suspeita de lesão muscular profunda e rabdomiólise."
+              "<strong>Lesão elétrica com rabdomiólise</strong>",
+              "Estimativa pela %SCQ cutânea pode subestimar lesão muscular oculta",
+              "Avaliar choque, CK, mioglobinúria, eletrólitos, rim e perfusão; usar metas individualizadas; bicarbonato para prevenir LRA não é rotina"
             ]
           ],
           "book-table"
@@ -638,13 +685,14 @@
         ],
         [
           "p",
-          "O volume calculado para as primeiras 24 horas <strong>NÃO</strong> é dividido em parcelas iguais, e seu cronograma depende impreterivelmente da hora em que ocorreu o acidente térmico, e não da hora de chegada ao hospital:"
+          "<strong>Tempo zero = momento da queimadura</strong>, não a chegada ao hospital. Na <strong>Parkland clássica 4 mL</strong>, a divisão didática do total em 24 h é metade nas primeiras 8 h e metade nas 16 h seguintes; volumes já infundidos e horas decorridas devem ser contabilizados. <strong>Não transpor automaticamente a divisão e as velocidades de Parkland</strong> para todo protocolo contemporâneo: a <a href=\"https://academic.oup.com/jbcr/article/45/3/565/7458089\" target=\"_blank\" rel=\"noopener noreferrer\">ABA 2024</a> apresenta 2 mL/kg/%SCQ como <strong>estimativa inicial para adultos ≥20%</strong>, com ajustes contínuos de perfusão e débito urinário. Não “compensar atraso” com velocidade perigosa sem reavaliação."
         ],
         [
           "o",
           [
-            "<strong>Primeira Metade (50% do volume total calculado):</strong> Deve ser infundida nas <strong>primeiras 8 horas contadas a partir do MOMENTO DA QUEIMADURA</strong>. Se o paciente demorou 3 horas para chegar ao serviço de emergência, os 50% restantes deverão ser administrados nas 5 horas que restam do primeiro bloco de 8 horas;",
-            "<strong>Segunda Metade (50% do volume restante):</strong> Deve ser infundida uniformemente ao longo das <strong>16 horas subsequentes</strong>."
+            "<strong>Na Parkland histórica:</strong> metade do volume estimado nos 8 h iniciais <em>após a lesão</em>, descontando horas decorridas e volume já recebido.",
+            "<strong>Nas 16 h seguintes:</strong> a outra metade é distribuição teórica; a velocidade real muda conforme diurese, hemodinâmica, complicações e protocolo especializado.",
+            "<strong>Na ABA 2024 para adultos ≥20% SCQ:</strong> iniciar a 2 mL/kg/%SCQ em 24 h e titular hora a hora. Isso não transforma 2 mL em “metade obrigatória da Parkland” nem autoriza extrapolar a lactentes."
           ]
         ],
         [
@@ -657,7 +705,7 @@
         ],
         [
           "p",
-          "<em>Ressuscitação em Crianças Pequenas (&lt; 30 kg):</em> Além do Ringer Lactato calculado pela fórmula da queimadura (3 mL/kg/%SCQ), as crianças possuem reservas escassas de glicogênio hepático e risco elevadíssimo de hipoglicemia convulsiva. Deve-se administrar concomitantemente <strong>soro glicosado a 5% com eletrólitos de manutenção fisiológica (Regra de Holliday-Segar)</strong> em via venosa paralela!"
+          "<strong>Pediatria:</strong> lactentes e crianças requerem <strong>protocolos próprios</strong>, cálculo da SCQ por Lund–Browder e atenção especial a hipoglicemia, temperatura e diurese. Alguns serviços adotam estimativas iniciais de 3 mL/kg/%SCQ <em>mais fluido de manutenção com glicose e eletrólitos conforme necessidade</em>; esse fator não veio da recomendação da <a href=\"https://academic.oup.com/jbcr/article/45/3/565/7458089\" target=\"_blank\" rel=\"noopener noreferrer\">ABA 2024</a>, restrita a adultos com ≥20% SCQ, e não deve ser prescrito indiscriminadamente a todos os pesos/idades. Conferir protocolo pediátrico, perdas, perfusão e glicemia com o CTQ."
         ],
         [
           "3",
@@ -677,7 +725,45 @@
         ],
         [
           "p",
-          "<em>Ajuste Prático de Velocidade:</em> Se a diurese estiver abaixo da meta na última hora, aumenta-se o gotejamento em 20% a 33%; se estiver muito acima (&gt; 1,0 mL/kg/h em adultos), reduz-se na mesma proporção para evitar o <em>fluid creep</em>."
+          "<strong>Titulação segura:</strong> o débito urinário auxilia, mas deve ser interpretado com pressão/perfusão, frequência cardíaca, lactato, função renal, edema e aporte de líquidos. Não aumentar nem reduzir automaticamente 20–33% em todos os pacientes apenas por uma medida isolada. Reavaliar obstrução do cateter, mioglobinúria, trauma e hipotensão por outras causas. Suspeita de edema pulmonar ou síndrome compartimental exige revisão do plano por equipe habilitada."
+        ],
+        [
+          "3",
+          "Exemplo trabalhado — mesma lesão, fórmulas de anos diferentes"
+        ],
+        [
+          "p",
+          "<strong>Adulto de 70 kg, 36% SCQ de espessura parcial/profunda, queimado há 1 hora:</strong> na <strong>Parkland clássica</strong>, 4 × 70 × 36 = <strong>10.080 mL/24 h</strong>; metade 5.040 mL deveria transcorrer nas 8 h iniciais após a lesão (o restante em 16 h), descontando o volume já recebido. Pela <strong>ABA 2024</strong>, 2 × 70 × 36 = <strong>5.040 mL/24 h como estimativa inicial</strong>. Se um exercício especifica utilizar uma <em>divisão didática de 50% em 8 h</em> também sobre esse último volume e nada foi infundido, obteria 2.520 mL para a primeira fase, ou <strong>360 mL/h nas sete horas restantes</strong>; isso é <strong>matemática de exercício explicitamente condicionada</strong>, não uma ordem clínica ABA de fixar essa taxa por sete horas. O manejo real é titulado por perfusão e diurese."
+        ],
+        [
+          "t",
+          [
+            "Contexto no caso de 70 kg e 36% SCQ",
+            "Total teórico inicial",
+            "Principal alerta"
+          ],
+          [
+            [
+              "MS 2012 / Parkland",
+              "10.080 mL nas 24 h",
+              "Metade em 8 h e metade em 16 h — histórico; vigiar sobrecarga"
+            ],
+            [
+              "ABA 2024 (adulto ≥20%)",
+              "5.040 mL nas 24 h",
+              "Referência inicial mais conservadora; titular em serviço e não confundir com Parkland"
+            ],
+            [
+              "Exercício de 50% em 8 h aplicado à estimativa ABA",
+              "2.520 mL em 8 h desde a queimadura",
+              "Se 1 h transcorrida e nada administrado: 360 mL/h por 7 h apenas como exemplo matemático"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Não há receita única:</strong> perda de sangue por politrauma, atraso até atendimento, idade, superfície real, queimadura elétrica, via aérea e estado clínico mudam a velocidade adequada. Em provas, identificar se a banca pediu Parkland clássica ou uma referência moderna específica."
         ]
       ]
     ],
@@ -1369,9 +1455,9 @@
           "u",
           [
             "<strong>1. 1º Grau não entra na conta da SCQ:</strong> Queimaduras epidérmicas (eritema sem bolhas, como o eritema solar) são excluídas rigorosamente do cálculo da %SCQ para ressuscitação volêmica.",
-            "<strong>2. ATLS 10ª/11ª Edição vs Parkland:</strong> O ATLS preconiza <strong>$2\text{ mL} \times \text{kg} \times %\text{SCQ}$ de Ringer Lactato</strong> para queimaduras térmicas e químicas em adultos, e <strong>$3\text{ mL} \times \text{kg} \times %\text{SCQ}$</strong> em crianças &lt; 14 anos (&lt; 30 kg) e queimaduras elétricas. A fórmula de Parkland clássica utiliza $4\text{ mL} \times \text{kg} \times %\text{SCQ}$.",
-            "<strong>3. Metade nas primeiras 8 horas da QUEIMADURA:</strong> A primeira metade do volume calculado deve correr nas primeiras 8 horas a partir da hora exata do acidente térmico, e os 50% restantes nas 16 horas seguintes.",
-            "<strong>4. Débito Urinário é o Guia Supremo:</strong> A fórmula apenas estima o início. Ajusta-se o volume para manter a diurese em <strong>$0,5\text{ mL/kg/h}$ no adulto</strong> e <strong>$1,0\text{ mL/kg/h}$ na criança</strong> ($1,0\text{ a }1,5\text{ mL/kg/h}$ na queimadura elétrica com mioglobinúria).",
+            "<strong>2. Hierarquia de fontes:</strong> MS 2012/SAMU 2015 ensinam Parkland 4 mL/kg/%SCQ no Brasil. A <a href=\"https://academic.oup.com/jbcr/article/45/3/565/7458089\" target=\"_blank\" rel=\"noopener noreferrer\">ABA 2024</a> propõe iniciar 2 mL/kg/%SCQ <strong>somente para adultos ≥20% SCQ</strong>. Não escrever “ATLS 10ª/11ª” como sinônimo de ABA sem conferência documental; pediatria e queimadura elétrica exigem protocolos próprios.",
+            "<strong>3. As 8 horas contam da queimadura:</strong> a divisão 50%/8 h e 50%/16 h descreve Parkland clássica; com outras estratégias, a velocidade deve ser ajustada a diurese e perfusão. Não compensar atraso por cálculo cegamente.",
+            "<strong>4. Fórmula não substitui monitorização:</strong> objetivo urinário orientativo em adulto ~0,5 mL/kg/h e em criança ~1 mL/kg/h, interpretado com perfusão, peso, rim, edema e manutenção pediátrica. Em rabdomiólise, metas são individualizadas.",
             "<strong>5. Intubação Precoce na Lesão Inalatória:</strong> Não hesite: estridor inspiratório, rouquidão, queimadura profunda de face/pescoço, fuligem na orofaringe e confinamento são critérios mandatórios de IOT imediata antes do edema oclusivo de glote.",
             "<strong>6. Oximetria Mente no Monóxido de Carbono:</strong> A oximetria de pulso é normal mesmo com níveis letais de COHb. Diagnóstico exige gasometria com co-oximetria. Tratamento: $O_2$ a 100% não reinalante (OHB se $\text{COHb} &gt; 25%$ ou gestante $\text{COHb} &gt; 15%$).",
             "<strong>7. Cianeto mata por Acidose Lática:</strong> Incêndio em ambiente fechado com materiais plásticos/estofados + choque com <strong>lactato sérico elevadíssimo (&gt; 10 mmol/L)</strong> = intoxicação por cianeto. Antídoto: <strong>Hidroxicobalamina 5,0 g IV</strong>.",
