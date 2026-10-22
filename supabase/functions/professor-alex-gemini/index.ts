@@ -201,6 +201,17 @@ Deno.serve(async (req: Request) => {
     ? "\n\nFORMATO AULA COMPLETA: quando o aluno pedir ensino médico, explique com raciocínio clínico, fisiopatologia, diagnóstico, conduta e exemplos pertinentes. Não force uma aula em cumprimentos ou conversas sociais."
     : "\n\nFORMATO DÚVIDA RÁPIDA: priorize uma resposta imediata, direta e natural. Cumprimentos: uma frase curta. Dúvida factual simples: até três frases. Só aprofunde se a pergunta realmente exigir, sem comprometer segurança clínica.");
 
+  // Gemini 3.5 Flash-Lite exige níveis de pensamento, não thinkingBudget: 0.
+  // Não enviar os antigos parâmetros de sampling no Gemini 3.x (deprecated).
+  const generationConfig: Record<string, unknown> = {
+    maxOutputTokens: depth === "aula" ? (channel === "voice" ? 650 : 1400) : (channel === "voice" ? 220 : 320),
+  };
+  if (/^gemini-3(?:\.|-)/.test(modelToUse)) {
+    generationConfig.thinkingConfig = { thinkingLevel: depth === "aula" ? "medium" : "minimal" };
+  } else if (/^gemini-2\.5-flash/.test(modelToUse)) {
+    generationConfig.thinkingConfig = { thinkingBudget: 0 };
+  }
+
   const apiKey = Deno.env.get("CLIENT_GEMINI")!;
   let response: Response;
   try {
@@ -210,12 +221,7 @@ Deno.serve(async (req: Request) => {
       body: JSON.stringify({
         systemInstruction: { parts: [{ text: system }] },
         contents,
-        generationConfig: {
-          temperature: mode === "estourado" ? 0.85 : 0.60,
-          topP: 0.95,
-          maxOutputTokens: depth === "aula" ? (channel === "voice" ? 650 : 1400) : (channel === "voice" ? 220 : 320),
-          thinkingConfig: { thinkingBudget: 0 },
-        },
+        generationConfig,
       }),
       signal: AbortSignal.timeout(50_000),
     });
