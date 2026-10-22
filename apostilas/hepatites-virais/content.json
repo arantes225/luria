@@ -23,10 +23,6 @@
       "Introdução e Fundamentos"
     ],
     [
-      "0-etapa-zero-e-atualiza-o",
-      "0. Etapa zero e atualização"
-    ],
-    [
       "1-um-mapa-da-doen-a-antes-de-memorizar-sorologias",
       "1. Um mapa da doença antes de memorizar sorologias"
     ],
@@ -77,18 +73,6 @@
     [
       "13-quadros-de-revis-o-e-ncoras-de-aprendizagem",
       "13. Quadros de revisão e âncoras de aprendizagem"
-    ],
-    [
-      "14-camada-visual-proposta-nenhuma-imagem-incorporada",
-      "14. Camada visual proposta (nenhuma imagem incorporada)"
-    ],
-    [
-      "15-fontes",
-      "15. Fontes"
-    ],
-    [
-      "16-checklist-de-certifica-o-pendente",
-      "16. Checklist de certificação pendente"
     ],
     [
       "17-o-hepat-cito-n-o-adoece-da-mesma-forma-nos-cinco-v-rus",
@@ -143,16 +127,12 @@
       "29. Oito questões autorais adicionais — alternativas analisadas"
     ],
     [
-      "30-matriz-cap-tulo-compet-ncia-caso-quest-o",
-      "30. Matriz capítulo → competência → caso → questão"
+      "15-fontes",
+      "15. Fontes"
     ],
     [
       "31-fontes-atualizadas-ap-s-leitura-comparativa",
       "31. Fontes atualizadas após leitura comparativa"
-    ],
-    [
-      "32-parecer-editorial-ap-s-amplia-o",
-      "32. Parecer editorial após ampliação"
     ]
   ],
   "q": [
@@ -166,25 +146,11 @@
         ],
         [
           "p",
+          "<strong>Em 30 segundos:</strong> anti-HCV reagente precisa de <strong>HCV-RNA</strong> para confirmar infecção ativa; anti-HBs após vacina sem anti-HBc indica imunização, enquanto anti-HBc positivo aponta contato com vírus. Na gestante HBsAg positiva, avaliar DNA-HBV e profilaxia conforme critérios, além de vacina/imunoglobulina do recém-nascido exposto. <strong>Para o Brasil:</strong> <a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes/view\" target=\"_blank\" rel=\"noopener noreferrer\">PCDT MS de hepatite B (anexo alterado em julho de 2024)</a> e <a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-coinfeccoes/view\" target=\"_blank\" rel=\"noopener noreferrer\">PCDT MS de hepatite C (atualizado em julho de 2026)</a> são prioritários para critérios de acesso, exames e esquemas do SUS."
+        ],
+        [
+          "p",
           "<h1>LURIA — Lote 7 · Aula 131</h1>\r\n<h1>Hepatites virais A, B, C, D e E: raciocínio clínico, sorologia e seguimento</h1>\r\n<strong>Status:</strong> RASCUNHO CIENTÍFICO ORIGINAL; não publicado nem validado para uso prescritivo. <strong>Data:</strong> 14/10/2026.  \r\n<strong>Norma editorial:</strong> \\`lead.apostilas.txt\\`; comparação com a aula 126 (cirrose), evitando repetir integralmente hipertensão portal, ascite e HRS."
-        ]
-      ]
-    ],
-    [
-      "0-etapa-zero-e-atualiza-o",
-      0,
-      [
-        [
-          "2",
-          "0. Etapa zero e atualização"
-        ],
-        [
-          "p",
-          "O repositório LURIA não possuía pasta específica de “hepatites-virais” na listagem principal de apostilas. Foi lido no Drive “08 - HEPATITES VIRAIS.pdf” (14.845 caracteres extraídos): organiza A–E, sorologias do HBV, HCV e hepatite D, mas usa atalhos excessivamente rígidos sobre aminotransferases, marcadores de replicação e decisão de tratar. <strong>Não copiar texto, figura nem fluxograma</strong> e não presumir autoria do Estratégia MED: o documento apresenta marca de circulação “Medicina livre”. Referências clínicas principais são os PCDTs brasileiros de hepatite B e C, atualizações disponibilizadas pelo Ministério da Saúde em 2026, guias de diagnóstico das hepatites e recomendações internacionais quando úteis. Os PDFs dos PCDTs e suas versões integrais precisam de conferência específica antes de tabelas nacionais completas de medicamentos."
-        ],
-        [
-          "p",
-          "Apostilas correlatas no acervo: aula 126 trata de cirrose e complicações; \\`hiv-infeccoes-oportunistas\\` e \\`infeccoes-gestacao-transmissao-vertical\\` podem compartilhar tópicos, mas não substituem um livro focado em sorologia e terapêutica de hepatites virais. O programa curricular mantém tema autônomo pela prevalência de questões de interpretação de exames."
         ]
       ]
     ],
@@ -407,6 +373,10 @@
         [
           "p",
           "Corticosteroides em regimes relevantes, rituximabe/anti-CD20, transplante e quimioterapia podem reativar HBV mesmo em pessoa HBsAg negativa/anti-HBc positiva. Risco depende de marcadores e grau/duração de imunossupressão; rastrear HBsAg, anti-HBc e anti-HBs conforme regime e diretriz, e decidir profilaxia antiviral versus monitorização. Não permitir que anti-HBs positivo isolado leve a ignorar infecção passada documentada em contexto de anti-CD20."
+        ],
+        [
+          "p",
+          "<strong>Brasil — transmissão vertical HBV:</strong> <a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes/view\" target=\"_blank\" rel=\"noopener noreferrer\">PCDT de hepatite B</a> e <a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais/hepatite-b\" target=\"_blank\" rel=\"noopener noreferrer\">orientação oficial MS</a> determinam avaliação de carga viral e possível tenofovir conforme critérios gestacionais. Para recém-nascido exposto, vacina contra hepatite B e imunoglobulina anti-HBV são recomendadas preferencialmente nas <strong>primeiras 24 h</strong>; uma estratégia <strong>não substitui a outra</strong>. Doses/idades devem ser confirmadas no PCDT/PNI vigentes."
         ]
       ]
     ],
@@ -445,6 +415,10 @@
         [
           "p",
           "SVR reduz complicações e transmissibilidade, mas <strong>não confere imunidade protetora contra reinfecção</strong>; exposição sanguínea recorrente pode causar novo HCV. Pessoa com cirrose ou risco persistente de CHC mantém vigilância de câncer mesmo após SVR. Tratamento também é prevenção coletiva quando articulado a testagem e redução de danos."
+        ],
+        [
+          "p",
+          "<strong>Atualização de 2026:</strong> o <a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-coinfeccoes/view\" target=\"_blank\" rel=\"noopener noreferrer\">PCDT MS de hepatite C e coinfecções</a> apresenta critérios nacionais para esquemas e acompanhamento. Anti-HCV isoladamente <strong>não comprova viremia</strong>; testar HCV-RNA e documentar resposta virológica pós-tratamento. Nunca transpor doses, duração ou uso durante gravidez de um artigo internacional ao SUS sem conferir a versão integral de 2026, estágio hepático, rim, interações e faixa etária."
         ]
       ]
     ],
@@ -623,64 +597,6 @@
         [
           "p",
           "<li>HAV e HEV: via fecal-oral predominante; HEV pode cronificar em imunossuprimido.</li>\r<li>HBV: HBsAg infecção, anti-HBs imunidade, anti-HBc contato natural, IgM atividade aguda/contextual, DNA replicação.</li>\r<li>HCV: anti-HCV exposição; RNA infecção ativa; SVR12 cura virológica, não imunidade.</li>\r<li>HDV: exige HBV e teste de RNA define replicação.</li>\r<li>Doença hepática aguda grave: acompanhar INR, glicose, encefalopatia e função renal.</li>\r<li>DAA e HBV exigem revisar interações/risco de reativação.</li>\r<li>PCDT do SUS tem precedência na disponibilidade/doses, não automaticamente guideline estrangeira.</li>"
-        ]
-      ]
-    ],
-    [
-      "14-camada-visual-proposta-nenhuma-imagem-incorporada",
-      0,
-      [
-        [
-          "2",
-          "14. Camada visual proposta (nenhuma imagem incorporada)"
-        ],
-        [
-          "p",
-          "1. Esquema original anatômico lobular hepatocitário. 2. Linha temporal de HBV com HBsAg/anti-HBc/anti-HBs. 3. Matriz sorológica digital interativa não dependente de foto. 4. Fluxo anti-HCV→RNA. 5. Diagrama HDV usando envelope HBsAg. 6. Mapa conceitual HAV/HEV transmissão e controle. 7. US hepático normal versus cirrótico (fonte licenciada). 8. Quadro LURIA de sinais de falência hepática. 9. Ilustração original de imunoprofilaxia HBV vertical. 10. Diagrama de testes em janela sorológica. 11. Algoritmo HCV com/sem cirrose. 12. Diagrama de vacinação e imunossupressão HBV."
-        ],
-        [
-          "p",
-          "<strong>Todas são ideias a produzir/localizar com licença de uso comercial e aprovação Admin; nenhum arquivo clínico encontrado foi reproduzido do Drive.</strong>"
-        ]
-      ]
-    ],
-    [
-      "15-fontes",
-      0,
-      [
-        [
-          "2",
-          "15. Fontes"
-        ],
-        [
-          "p",
-          "<li>Ministério da Saúde. <em>PCDT Hepatite B e Coinfecções</em>, anexo alterado em 2024, portal MS atualizado 2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes/view</li>\r<li>Ministério da Saúde. <em>PCDT Hepatite C e Coinfecções</em>, portal atualizado em julho/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-e-coinfeccoes/view</li>\r<li>Ministério da Saúde. <em>Manual Técnico para o Diagnóstico das Hepatites Virais</em>, portal de publicações 2026. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/hepatites/hepatites-virais</li>\r<li>OMS/WHO. Diretrizes sobre hepatites e diagnóstico HBV/HDV; consultar versão integral antes da edição final.</li>\r<li>LURIA. \\`apostilas/_rascunhos/lote-07-aula-126-cirrose-complicacoes.md\\` — contexto de fibrose/cirrose.</li>"
-        ]
-      ]
-    ],
-    [
-      "16-checklist-de-certifica-o-pendente",
-      0,
-      [
-        [
-          "2",
-          "16. Checklist de certificação pendente"
-        ],
-        [
-          "p",
-          "<li>[x] Benchmark específico do tema lido, autoria não presumida, diferenças identificadas.</li>\r<li>[x] Cinco vírus, matrizes de HBV, diagnóstico do HCV, doenças especiais, gestação e fluxos.</li>\r<li>[x] Quatro casos e seis questões autorais totalmente comentadas.</li>\r<li>[ ] Revisar integralmente as versões completas dos PCDTs e esquemas/limiares nacionais, sem copiar doses antigas.</li>\r<li>[ ] Expandir imunologia, farmacologia, efeitos adversos/contraindicações e etiologia de agudização sobre crônica.</li>\r<li>[ ] Revisar normas de notificação, HCV pediátrico, condutas em imunossuprimidos e profilaxia vertical.</li>\r<li>[ ] Alcançar profundidade premium de ≥60.000 caracteres didáticos úteis sem inflar texto.</li>\r<li>[ ] Curadoria de imagens reais com licença e otimização PWA, auditoria médica/visual e testes.</li>"
-        ],
-        [
-          "p",
-          "<strong>Estado de publicação: RASCUNHO, não certificado nem publicado.</strong>"
-        ],
-        [
-          "p",
-          "---"
-        ],
-        [
-          "p",
-          "<h1>APROFUNDAMENTO LURIA — HEPATITES VIRAIS A–E</h1>\r\n<strong>Revisão editorial:</strong> 15/10/2026. <strong>Escopo:</strong> continuar o rascunho original das seções 0–16 sem apagar informações válidas; integrar o raciocínio dos vírus A, B, C, D e E com etiologias de lesão hepática aguda, doenças crônicas, gravidez, imunossupressão e saúde coletiva. Benchmark Drive “08 - HEPATITES VIRAIS.pdf” <strong>relido</strong> (14.845 caracteres de texto extraído); trata sorologias B, quadros agudos e esquemas históricos, mas alguns atalhos necessitam correção pela fisiopatologia e PCDTs. Não foi demonstrada autoria do Estratégia MED. Fontes de verificação independentes: PCDT <strong>hepatite B e coinfecções</strong> do MS (anexo alterado em 04/07/2024), PCDT <strong>hepatite C e coinfecções</strong> formalizado pela Portaria SCTIE/MS nº39 de <strong>20/07/2026</strong>, OMS hepatite B 2024 e guias brasileiros de diagnóstico/vigilância. Não indicar terapêutica individual sem verificar o texto integral de cada PCDT e os dados clínicos necessários."
         ]
       ]
     ],
@@ -1523,100 +1439,16 @@
       ]
     ],
     [
-      "30-matriz-cap-tulo-compet-ncia-caso-quest-o",
+      "15-fontes",
       0,
       [
         [
           "2",
-          "30. Matriz capítulo → competência → caso → questão"
-        ],
-        [
-          "t",
-          [
-            "Competência",
-            "Seção da apostila",
-            "Caso(s)",
-            "Questão(s)"
-          ],
-          [
-            [
-              "Distinguir hepatites A–E",
-              "17, 24–25",
-              "clínicos da primeira versão",
-              "13"
-            ],
-            [
-              "Separar lesão de falência funcional",
-              "18",
-              "9",
-              "14"
-            ],
-            [
-              "Interpretar HBsAg/anti-HBs/anti-HBc",
-              "19",
-              "5, 6",
-              "7, 12"
-            ],
-            [
-              "Reconhecer janela e anti-HBc isolado",
-              "19.3–19.4",
-              "5",
-              "7"
-            ],
-            [
-              "Avaliar replicação HBeAg-negativa",
-              "19.5–20",
-              "8",
-              "8"
-            ],
-            [
-              "Decidir risco de reativação",
-              "22",
-              "5",
-              "7"
-            ],
-            [
-              "Prevenir transmissão vertical",
-              "21",
-              "6",
-              "11"
-            ],
-            [
-              "Diferenciar anti-HCV de HCV-RNA",
-              "23.1–23.2",
-              "7",
-              "9"
-            ],
-            [
-              "Selecionar DAA considerando cirrose",
-              "23.3–23.5",
-              "7",
-              "10"
-            ],
-            [
-              "Entender RVS e vigilância HCC",
-              "23.6–23.7",
-              "7",
-              "9"
-            ],
-            [
-              "Reconhecer HDV",
-              "24",
-              "8 e outro conforme diferencial",
-              "13"
-            ],
-            [
-              "Abordar hepatite aguda grave",
-              "18, 26–27",
-              "9",
-              "14"
-            ]
-          ],
-          "book-table"
+          "15. Fontes"
         ],
         [
           "p",
-          "<strong>Teste de consistência:</strong> a matriz permite responder aos casos novos sem fontes externas na maior parte das decisões sindrômicas. Entretanto a escolha de <strong>regime e dose por paciente</strong> depende do PCDT integral vigente e de avaliação clínica. Por isso não emitir parecer de autossuficiência final."
+          "<li>Ministério da Saúde. <em>PCDT Hepatite B e Coinfecções</em>, anexo alterado em 2024, portal MS atualizado 2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes/view</li>\r<li>Ministério da Saúde. <em>PCDT Hepatite C e Coinfecções</em>, portal atualizado em julho/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-e-coinfeccoes/view</li>\r<li>Ministério da Saúde. <em>Manual Técnico para o Diagnóstico das Hepatites Virais</em>, portal de publicações 2026. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/hepatites/hepatites-virais</li>\r<li>OMS/WHO. Diretrizes sobre hepatites e diagnóstico HBV/HDV; consultar versão integral antes da edição final.</li>\r<li>LURIA. \\`apostilas/_rascunhos/lote-07-aula-126-cirrose-complicacoes.md\\` — contexto de fibrose/cirrose.</li>"
         ]
       ]
     ],
@@ -1631,20 +1463,10 @@
         [
           "p",
           "7. Ministério da Saúde. <strong>PCDT de Hepatite B e Coinfecções</strong>, anexo alterado em 04/07/2024. https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes/view\r<br>8. Ministério da Saúde. <strong>PCDT de Hepatite C e Coinfecções</strong>, Portaria SCTIE/MS nº39, 20/07/2026 (publicada 21/07/2026). https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-e-coinfeccoes/view\r<br>9. Ministério da Saúde. <strong>Hepatite B — diagnóstico, gestação, profilaxia neonatal e notificação</strong>. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais/hepatite-b\r<br>10. Ministério da Saúde. <strong>Hepatite D — diagnóstico e HDV-RNA</strong>. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais/hepatite-d/hepatite-d\r<br>11. OMS. <strong>Guidelines for the prevention, diagnosis, care and treatment for people with chronic hepatitis B infection</strong>. 2024. https://www.who.int/publications/i/item/9789240090903\r<br>12. OMS. <strong>Preventing mother-to-child transmission of HBV using antiviral prophylaxis</strong>. Guia 2024, capítulo 7. https://www.ncbi.nlm.nih.gov/books/NBK615006/\r<br>13. Ministério da Saúde. <strong>Publicações Hepatites Virais</strong> — PCDTs, Manual Técnico de Diagnóstico, plano de eliminação. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/hepatites/hepatites-virais"
-        ]
-      ]
-    ],
-    [
-      "32-parecer-editorial-ap-s-amplia-o",
-      0,
-      [
-        [
-          "2",
-          "32. Parecer editorial após ampliação"
         ],
         [
           "p",
-          "<li>[x] Drive específico de hepatites <strong>relido</strong> e tratado como benchmark editorial, sem presumir autoria ou validade normativa.</li>\r<li>[x] Hepatites A–E explicadas pela fisiologia, transmissão, imunidade e sequelas.</li>\r<li>[x] Sorologias HBV detalhadas, inclusive reativação com anti-HBc isolado.</li>\r<li>[x] HBeAg-negatividade e cccDNA, HCV-RNA e RVS, HDV e HEV.</li>\r<li>[x] Transmissão vertical, imunossupressão, hepatite fulminante, diagnósticos diferenciais e segurança DAA.</li>\r<li>[x] Cinco novos casos clínicos e oito novas questões de quatro alternativas comentadas.</li>\r<li>[ ] Não foram incorporadas todas as doses terapêuticas/limiares de início por faixa/renal/gestação dos PCDTs integrais; revisão farmacológica nacional necessária.</li>\r<li>[ ] Imagens clínicas reais de icterícia, histologia, elastografia/US hepático e fluxos sorológicos carecem de licença comercial e processo de aprovação Admin.</li>\r<li>[ ] Revisão médica formal de hepatologia/infectologia, teste de autossuficiência, comparação de redundâncias e validação de HTML/PWA antes da publicação.</li>\r\n<strong>Situação:</strong> RASCUNHO AVANÇADO, NÃO PUBLICADO/NÃO CERTIFICADO."
+          "<strong>Atualização normativa verificada em 22/10/2026:</strong> <a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes/view\" target=\"_blank\" rel=\"noopener noreferrer\">MS: hepatite B e coinfecções (alteração do anexo 04/07/2024)</a> e <a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-coinfeccoes/view\" target=\"_blank\" rel=\"noopener noreferrer\">MS: hepatite C e coinfecções (página atualizada em julho/2026)</a>. Conferir documentos integrais e notas técnicas posteriores antes de prescrever. PDFs privados não são referências terapêuticas."
         ]
       ]
     ]
