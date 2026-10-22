@@ -521,7 +521,7 @@
   });
   document.addEventListener("fullscreenchange",schedule);
   document.addEventListener("focusin",schedule);document.addEventListener("focusout",schedule);
-  window.visualViewport?.addEventListener("resize",schedule);
+  window.visualViewport?.addEventListener("resize",schedule,{passive:true});
   window.addEventListener("popstate",schedule);window.addEventListener("hashchange",schedule);
   window.addEventListener("docmap:access-updated",schedule);
   window.addEventListener("luria:owner-changed",schedule);
