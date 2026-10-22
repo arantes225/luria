@@ -127,6 +127,10 @@
         ],
         [
           "p",
+          "<strong>Em 30 segundos:</strong> trauma pélvico em choque pode sangrar intensamente no retroperitônio com FAST negativo. Estabilizar anel pélvico quando apropriado, com cinta ao nível dos <strong>grandes trocânteres</strong>, ressuscitar hemorragia e acionar controle definitivo. Sangue no meato uretral indica suspeita de lesão: <strong>não insistir em passagem traumática de sonda</strong> e considerar uretrografia retrógrada ou avaliação endoscópica. Fratura pélvica com hematúria macroscópica pode exigir <strong>cistografia retrógrada ativa</strong>. Fontes técnicas complementares: <a href=\"https://uroweb.org/guidelines/urological-trauma/chapter/urogenital-trauma-guidelines\" target=\"_blank\" rel=\"noopener noreferrer\">EAU Urological Trauma 2026</a> e <a href=\"https://www.guidelinecentral.com/guideline/4833925/\" target=\"_blank\" rel=\"noopener noreferrer\">ACS 2025/26</a> — compatibilizar com protocolo brasileiro de sala de trauma e recursos locais."
+        ],
+        [
+          "p",
           "A expressão “trauma pélvico” abrange lesões do <strong>anel ósseo da pelve</strong>, vasos e plexos venosos retroperitoneais, musculatura e fáscias pélvicas, trato urinário baixo, reto, órgãos genitais e nervos. Nem toda fratura da bacia é instável ou hemorrágica; nem todo paciente que sangra gravemente tem um RX com ruptura espetacular. É a associação entre <strong>mecanismo, fisiologia, anatomia e lesões concorrentes</strong> que determina prioridades."
         ],
         [
@@ -440,6 +444,42 @@
               "Sangramento persistente após embolização",
               "Reavaliar fonte venosa/óssea, novas lesões, coagulopatia e necessidade de intervenção adicional",
               "Supor sucesso apenas porque um vaso foi ocluído"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "t",
+          [
+            "Cenário",
+            "Escolha inicial",
+            "Cautela"
+          ],
+          [
+            [
+              "Instável, suspeita de sangramento pélvico",
+              "Cinta bem posicionada sobre trocânteres + protocolo de hemorragia e equipes cirúrgicas",
+              "FAST negativo não exclui sangue retroperitoneal"
+            ],
+            [
+              "Cinta após estabilização",
+              "Manter até avaliação ortopédica apropriada e planejar retirada",
+              "Não afrouxar precocemente nem posicionar sobre cristas ilíacas"
+            ],
+            [
+              "Persistência de choque",
+              "Considerar packing pré-peritoneal, fixação e/ou angioembolização conforme centro",
+              "Angiografia não substitui ressuscitação e busca de outras fontes"
+            ],
+            [
+              "Sangue no meato",
+              "Suspeita de lesão uretral; avaliação especializada antes de cateter traumático",
+              "Não repetir sondagem às cegas"
+            ],
+            [
+              "Hematúria visível com fratura pélvica",
+              "Cistografia retrógrada em momento seguro",
+              "Não confundir TC usual com cistografia"
             ]
           ],
           "book-table"
@@ -859,6 +899,10 @@
         [
           "p",
           "---"
+        ],
+        [
+          "p",
+          "<strong>Recomendação de segurança:</strong> o <a href=\"https://www.guidelinecentral.com/guideline/4833925/\" target=\"_blank\" rel=\"noopener noreferrer\">American College of Surgeons (2025), Management of Genitourinary Injuries</a> orienta considerar uretrografia retrógrada <em>antes</em> da passagem de cateter uretral quando a lesão é suspeita e os meios estão disponíveis. Em situação instável, decisão e sequência seguem equipe de trauma/urologia; evitar repetição forçada de tentativas. No trauma vesical, TC abdominal com excreção espontânea de contraste não equivale a cistografia por enchimento retrógrado ativo."
         ]
       ]
     ],
@@ -1569,6 +1613,9 @@
         [
           "o",
           [
+            "<a href=\"https://www.guidelinecentral.com/guideline/4833925/\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL — ACS 2025, atualizado 2026] Trauma geniturinário: quando suspeitar de lesão uretral e avaliação renal.</a>",
+            "<a href=\"https://uroweb.org/guidelines/urological-trauma/chapter/urogenital-trauma-guidelines\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL — EAU 2026] Urological Trauma: rim, bexiga, uretra, genitais.</a>",
+            "<a href=\"https://wjes.biomedcentral.com/articles/10.1186/s13017-017-0117-6\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL — WSES 2017] Pelvic Trauma guidelines; selecionar hemostasia pela fisiologia e recursos locais.</a>",
             "<a href=\"https://www.gov.br/saude\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde - Protocolos e Diretrizes Clínicas</a>",
             "<a href=\"https://www.conitec.gov.br\" target=\"_blank\" rel=\"noopener noreferrer\">CONITEC - Recomendações e Diretrizes Nacionais</a>",
             "<a href=\"https://www.sbp.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria (SBP) / Colégio Brasileiro de Cirurgiões (CBC)</a>",
