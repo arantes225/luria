@@ -79,8 +79,8 @@ export class ProfessorAlexMascot extends HTMLElement {
   connectedCallback() {
     this._media=matchMedia('(prefers-reduced-motion: reduce)');this._reduced=this._media.matches;this._media.addEventListener('change',this._motion);
     document.addEventListener('visibilitychange',this._visibility);
-    window.addEventListener('resize',this._viewportResize);
-    window.visualViewport?.addEventListener('resize',this._viewportResize);
+    window.addEventListener('resize',this._viewportResize,{passive:true});
+    window.visualViewport?.addEventListener('resize',this._viewportResize,{passive:true});
     this._themes=new MutationObserver(()=>{this._syncTheme();this._schedule();});
     this._themes.observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
     if(document.body)this._themes.observe(document.body,{attributes:true,attributeFilter:['data-ui-appearance','data-ui-identity']});

@@ -312,7 +312,7 @@ function setZoom(z){const min=window.innerWidth<=850?1.62:1;zoom=Math.max(min,Ma
 $('#zoomIn').addEventListener('click',()=>setZoom(zoom+.25));$('#zoomOut').addEventListener('click',()=>setZoom(zoom-.25));$('#zoomReset').addEventListener('click',()=>{zoom=window.innerWidth<=850?2.15:1;center={x:window.innerWidth<=850?300:560,y:window.innerWidth<=850?235:365};applyView()});
 svg.addEventListener('pointerdown',e=>{if(e.button!==0)return;drag={sx:e.clientX,sy:e.clientY,cx:center.x,cy:center.y};svg.setPointerCapture(e.pointerId)});
 svg.addEventListener('pointermove',e=>{if(!drag||zoom<=1)return;const b=svg.getBoundingClientRect();const w=1120/zoom,h=window.innerWidth<=850?w*b.height/b.width:730/zoom;center.x=drag.cx-(e.clientX-drag.sx)*w/b.width;center.y=drag.cy-(e.clientY-drag.sy)*h/b.height;applyView()});
-window.addEventListener('resize',applyView);svg.addEventListener('pointerup',()=>drag=null);svg.addEventListener('pointercancel',()=>drag=null);
+window.addEventListener('resize',applyView,{passive:true});svg.addEventListener('pointerup',()=>drag=null);svg.addEventListener('pointercancel',()=>drag=null);
 let toastTimeout;function showToast(str){const el=$('#toast');el.textContent=str;el.classList.add('show');clearTimeout(toastTimeout);toastTimeout=setTimeout(()=>el.classList.remove('show'),2600)}
 drawBackground();drawTrack();drawLandmarks();makeTokens();renderQuestion();if(onlineSession){refreshOnlineBoard();setInterval(refreshOnlineBoard,3500)}if(window.innerWidth<=850){center={x:250,y:230};setZoom(2.05);$('#mapHint').textContent='Pista orgânica · ↗ avance · ↩ volte';}
 window.StudyRatsGameReady=true;
