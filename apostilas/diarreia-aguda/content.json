@@ -70,11 +70,11 @@
     ],
     [
       "sec-19-camada-visual-premium-12-candidatas-sem-",
-      "Camada visual premium — 12 candidatas, sem uso automático"
+      "Mapa de mecanismos — do sintoma à decisão"
     ],
     [
       "sec-20-referencias-e-pendencias-cientificas",
-      "Referências e pendências científicas"
+      "Hierarquia das fontes e divergências que importam"
     ],
     [
       "sec-aprofundamento-diarreia-microbiologia-terapeutica",
@@ -120,6 +120,10 @@
         [
           "p",
           "Diarreia aguda é aumento de frequência e/ou redução da consistência das fezes, em geral três ou mais evacuações líquidas/amolecidas em 24 horas, com duração inferior a 14 dias, levando em conta padrão basal (lactentes amamentados podem ter várias evacuações normais). É síndrome, não diagnóstico etiológico. Em pediatria, gastroenterite infecciosa costuma ser autolimitada, mas <strong>a desidratação é a principal ameaça imediata</strong> e <strong>sangue nas fezes, toxemia, idade baixa, distensão, desnutrição e oligúria exigem atenção especial</strong>. A base de tratamento é SRO, alimentação e prevenção de perdas, enquanto antibióticos são exceção indicada por agente/cenário, não “remédio para parar diarreia”."
+        ],
+        [
+          "p",
+          "<strong>Protocolo de referência para atendimento e provas do SUS:</strong> <a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente/view\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde — Manejo do Paciente com Diarreia (julho de 2026)</a>. A <a href=\"https://www.who.int/publications/i/item/9789240103412\" target=\"_blank\" rel=\"noopener noreferrer\">OMS 2024</a> complementa a atualização científica, mas uma dose internacional diferente não substitui automaticamente a conduta operacional brasileira. Registrar divergências, critérios de gravidade e exceções de segurança."
         ],
         [
           "p",
@@ -233,7 +237,7 @@
         ],
         [
           "p",
-          "Shigella pode produzir febre, cólicas, tenesmo, evacuações pequenas com sangue e muco e transmissão pessoa-pessoa com baixo inóculo. Crianças em creche e contextos de saneamento precário têm risco. Pode haver convulsão febril e toxemia, especialmente em casos graves. Na diarreia sanguinolenta compatível com disenteria, a OMS 2024 recomenda antibiótico em crianças até 10 anos, mas seleção deve considerar sensibilidade/resistência regional e agente provável; não aplicar ciprofloxacino de adulto a qualquer bebê sem avaliação e protocolo pediátrico."
+          "<em>Shigella</em> pode causar febre, tenesmo, muco e sangue nas fezes e disseminar-se em creches. <strong>No SUS:</strong> o <a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente/view\" target=\"_blank\" rel=\"noopener noreferrer\">MS 2026</a> indica antimicrobianos quando a disenteria vem acompanhada de comprometimento do estado geral, febre alta persistente, tenesmo importante ou sinais sistêmicos. Na faixa de 3 meses a 10 anos, até 30 kg e sem imunodeficiência, orienta azitromicina oral por peso e ceftriaxona IM como alternativa. Diferenciar STEC, no qual antibiótico pode agravar risco de SHU, e investigar surtos."
         ],
         [
           "4",
@@ -433,7 +437,7 @@
         ],
         [
           "p",
-          "<strong>Diarreia aguda aquosa em criança saudável sem sinais de infecção invasiva</strong> geralmente não tem indicação de antibiótico empírico. Isso está alinhado à recomendação condicional da OMS 2024 contra o uso em crianças até 10 anos e ao Ministério da Saúde e SBP. Antibióticos desnecessários podem alterar microbiota, produzir reações adversas e contribuir para resistência; não aceleram recuperação de viroses."
+          "<strong>Conduta brasileira (MS 2026):</strong> não usar antibióticos de rotina em diarreia aquosa aguda não complicada. Reidratar, manter aleitamento e alimentação. A <a href=\"https://www.who.int/publications/i/item/9789240103412\" target=\"_blank\" rel=\"noopener noreferrer\">OMS 2024</a> concorda e sugere contra antimicrobianos nesta apresentação (condicional, baixa certeza). Prescrição específica exige quadro clínico ou agente que justifique exceção."
         ],
         [
           "4",
@@ -441,11 +445,11 @@
         ],
         [
           "p",
-          "A OMS 2024 recomenda antibiótico em crianças até 10 anos com <strong>sangue nas fezes</strong> (recomendação forte), presumindo contexto de disenteria invasiva, mas é essencial confrontar com epidemiologia de <strong>STEC</strong>, no qual antibiótico pode aumentar risco de SHU, e com orientação nacional que especifica disenteria <strong>com comprometimento do estado geral</strong>. Portanto: avaliar estado geral, história de febre, dor, exposição a carne malcozida/surto, possibilidade de teste de toxina de Shiga, gravidade e assistência/retorno. Não usar a recomendação como autorização de prescrição cega em criança com qualquer estria sanguínea superficial."
+          "<strong>Primeiro a norma brasileira:</strong> o <a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente/view\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (2026)</a> indica antibiótico na <strong>disenteria com comprometimento do estado geral ou critérios sistêmicos descritos no cartaz</strong>, em conjunto com reidratação. Para crianças elegíveis de 3 meses a 10 anos e até 30 kg, sem imunodeficiência, recomenda <strong>azitromicina 10 mg/kg/dia no primeiro dia e 5 mg/kg/dia por quatro dias</strong> ou ceftriaxona IM como alternativa. <strong>Divergência internacional:</strong> a <a href=\"https://www.who.int/publications/i/item/9789240103412\" target=\"_blank\" rel=\"noopener noreferrer\">OMS 2024</a> recomenda antimicrobianos de modo mais amplo para sangue nas fezes (recomendação forte), mas não deve ser lida como receita automática. Em suspeita de STEC O157 ou toxina Stx2, ou genótipo desconhecido, <a href=\"https://www.idsociety.org/practice-guideline/infectious-diarrhea\" target=\"_blank\" rel=\"noopener noreferrer\">IDSA</a> recomenda evitar antibióticos pelo possível dano. Avaliar risco de SHU, necessidade de testes e transferência. Lactentes menores de 3 meses e imunodeprimidos exigem fluxo hospitalar próprio."
         ],
         [
           "p",
-          "<strong>Antibioticoterapia deve seguir agente e susceptibilidade quando possível</strong>, idade, peso, alergia, função renal, resistência e protocolo brasileiro. Regimes de Shigella e Campylobacter variam; em pediatria, doses específicas só serão liberadas após dupla checagem em fonte oficial e bulário LURIA."
+          "<strong>Regra para prova e prática:</strong> citar o documento nacional quando a questão perguntar sobre SUS e informar seus critérios de idade, peso e gravidade. Quando houver suspeita de STEC ou outra situação especial, explicitar a exceção de segurança e buscar assistência especializada, sem atrasar suporte e exames necessários. Resultado microbiológico, susceptibilidade, alergia e protocolo local orientam ajuste."
         ],
         [
           "4",
@@ -477,7 +481,7 @@
         ],
         [
           "p",
-          "<strong>Zinco — duas recomendações, sem misturar doses:</strong> o <strong>cartaz do Ministério da Saúde atualizado em 10/07/2026</strong> prescreve, no Plano A, <strong>10 mg/dia até 6 meses e 20 mg/dia dos maiores de 6 meses até menores de 5 anos, durante 10–14 dias</strong>. A <strong>OMS 2024</strong> mantém o zinco adjuvante, mas sugere <strong>condicionalmente 5 mg/dia por até 14 dias</strong> para crianças até 10 anos, com baixa certeza. Não supor que o SUS tenha adotado a dose de 5 mg. Na prática, definir o protocolo vigente e conferir idade, forma farmacêutica e quantidade de zinco elementar."
+          "<strong>SUS — dose ensinada primeiro:</strong> o <a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente/view\" target=\"_blank\" rel=\"noopener noreferrer\">cartaz MS atualizado em julho de 2026</a> orienta zinco por 10–14 dias: <strong>10 mg/dia até 6 meses</strong> e <strong>20 mg/dia acima de 6 meses até menores de 5 anos</strong>. Confirmar zinco elementar na apresentação. <strong>Comparação com OMS 2024:</strong> a <a href=\"https://www.who.int/publications/i/item/9789240103412\" target=\"_blank\" rel=\"noopener noreferrer\">OMS</a> recomenda zinco como adjuvante, mas <em>sugere condicionalmente</em> <strong>5 mg/dia por até 14 dias</strong> em crianças até 10 anos, com baixa certeza para a dose. Essa sugestão não altera automaticamente o protocolo brasileiro; jamais combinar os esquemas."
         ],
         [
           "4",
@@ -485,7 +489,7 @@
         ],
         [
           "p",
-          "A OMS 2024 <strong>sugere contra o uso rotineiro de probióticos</strong> em diarreia aquosa aguda na faixa até 10 anos (condicional, evidência baixa); para diarreia persistente não emite recomendação por lacuna de conhecimento. A composição por cepa, qualidade do produto e população modifica segurança/benefício. Em imunossuprimidos ou com cateter central há risco específico associado a produtos com microrganismos vivos. Não incluir “dar probiótico a toda diarreia” como cuidado obrigatório ou substituto de SRO."
+          "<strong>Conduta no Brasil:</strong> o <a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente/view\" target=\"_blank\" rel=\"noopener noreferrer\">MS 2026</a> centra o tratamento em reidratação, nutrição e zinco, sem tornar probióticos obrigatórios. A <a href=\"https://www.who.int/publications/i/item/9789240103412\" target=\"_blank\" rel=\"noopener noreferrer\">OMS 2024</a> sugere contra uso rotineiro de probióticos em diarreia aquosa aguda (condicional, baixa certeza) e não emite recomendação para diarreia persistente, por lacuna de evidências. Recomendação seletiva de sociedade para determinada cepa não implica benefício universal nem substitui SRO."
         ]
       ]
     ],
@@ -664,7 +668,7 @@
         ],
         [
           "p",
-          "<strong>OMS 2024:</strong> recomenda antibiótico quando há diarreia com sangue em crianças até dez anos, em contraste com recomendação mais restritiva de uma página geral brasileira que o reserva em disenteria com comprometimento geral. Essa divergência é real e deve ser explicada ao aluno em vez de ocultada. Em suspeita de STEC, o potencial de SHU muda decisão e o acompanhamento de rim e hemograma passa a ser prioritário. Se o paciente está toxemiado ou com sepse, a abordagem hospitalar não deve aguardar exame de fezes."
+          "<strong>Como resolver a divergência:</strong> para SUS, seguir o <a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente/view\" target=\"_blank\" rel=\"noopener noreferrer\">MS 2026</a>: disenteria com comprometimento geral pede avaliação e tratamento antimicrobiano indicado, além de hidratação. A <a href=\"https://www.who.int/publications/i/item/9789240103412\" target=\"_blank\" rel=\"noopener noreferrer\">OMS 2024</a> recomenda antimicrobiano em toda diarreia sanguinolenta até 10 anos de forma mais ampla. <strong>Exceção de segurança:</strong> STEC O157/Stx2 pode evoluir para SHU e a <a href=\"https://www.idsociety.org/practice-guideline/infectious-diarrhea\" target=\"_blank\" rel=\"noopener noreferrer\">IDSA</a> recomenda evitar antibióticos. Se houver toxemia/sepse, buscar atendimento hospitalar imediato."
         ],
         [
           "4",
@@ -706,7 +710,7 @@
         ],
         [
           "p",
-          "<strong>Conduta:</strong> Plano A e prevenção de desidratação com SRO adequada, manter amamentação/dieta, higiene e vigilância de diurese. Orientar retorno por sangue, sede importante, oligúria, vômitos recorrentes, letargia ou piora. Avaliar zinco segundo norma local, reconhecendo atualização OMS 2024."
+          "<strong>Conduta:</strong> Plano A, SRO, manter alimentação e aleitamento, orientar diurese, higiene e retorno. Zinco conforme <a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente/view\" target=\"_blank\" rel=\"noopener noreferrer\">MS 2026</a>: crianças menores de cinco anos recebem 10 ou 20 mg/dia, segundo idade, por 10–14 dias. A dose alternativa da OMS 2024 aparece como atualização científica e não substituição automática do esquema SUS."
         ],
         [
           "p",
@@ -726,7 +730,7 @@
         ],
         [
           "p",
-          "<strong>Raciocínio:</strong> presença de sangue e tenesmo sugere acometimento colônico. Epidemiologia de creche favorece transmissão pessoa-pessoa. A OMS 2024 recomenda antibiótico em diarreia com sangue, mas identificar risco de STEC e gravidade é importante antes de selecionar agente; a norma geral brasileira enfatiza comprometimento geral."
+          "<strong>Raciocínio:</strong> sangue, tenesmo e febre alta apontam para disenteria com comprometimento geral. Para o SUS, o <a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente/view\" target=\"_blank\" rel=\"noopener noreferrer\">MS 2026</a> orienta tratamento antimicrobiano após avaliar e corrigir hidratação; a OMS tem recomendação mais ampla. Descartar suspeita significativa de STEC (exposição alimentar, pouca febre, dor intensa) quando a decisão sobre antibiótico envolve risco de SHU."
         ],
         [
           "p",
@@ -1011,24 +1015,24 @@
         ],
         [
           "4",
-          "Questão 8 — Zinco segundo OMS 2024"
+          "Questão 8 — zinco: SUS versus atualização internacional"
         ],
         [
           "p",
-          "<strong>Enunciado:</strong> Qual frase diferencia corretamente zinco segundo diretrizes publicadas até 2026?"
+          "<strong>Enunciado:</strong> Criança de 2 anos com diarreia aquosa sem desidratação será orientada na rede SUS. Qual alternativa diferencia adequadamente a dose do Ministério da Saúde (2026) da sugestão de dose da OMS (2024)?"
         ],
         [
           "o",
           [
             "A) A OMS 2024 e o MS 2026 determinam 5 mg/dia sem exceções.",
-            "B) O MS 2026 apresenta 10/20 mg por faixa etária; a OMS 2024 sugere condicionalmente 5 mg/dia por até 14 dias.",
+            "B) No SUS, o MS orienta zinco 20 mg/dia nesta idade por 10–14 dias; a OMS 2024 apenas sugere 5 mg/dia como dose alternativa internacional, sem mudança automática do esquema do SUS.",
             "C) Zinco substitui SRO.",
             "D) Zinco só serve para disenteria bacteriana."
           ]
         ],
         [
           "p",
-          "<strong>Resposta comentada: alternativa B.</strong> O cartaz brasileiro recomenda 10 mg/dia até 6 meses e 20 mg/dia acima de 6 meses até menores de 5 anos por 10–14 dias. A sugestão OMS 2024 de 5 mg/dia possui baixa certeza e não substituiu automaticamente o protocolo nacional."
+          "<strong>Resposta comentada: alternativa B.</strong> A fonte operacional para a rede SUS é o <a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente/view\" target=\"_blank\" rel=\"noopener noreferrer\">MS 2026</a>, com 20 mg/dia para crianças acima de seis meses e abaixo de cinco anos, por 10–14 dias; até seis meses, 10 mg/dia. A <a href=\"https://www.who.int/publications/i/item/9789240103412\" target=\"_blank\" rel=\"noopener noreferrer\">OMS 2024</a> sugere 5 mg/dia condicionalmente, com baixa certeza de evidência para essa dose, e não se torna automaticamente a recomendação nacional."
         ],
         [
           "4",
@@ -1184,15 +1188,46 @@
       [
         [
           "2",
-          "Camada visual premium — 12 candidatas, sem uso automático"
+          "Mapa de mecanismos — do sintoma à decisão"
         ],
         [
           "p",
-          "1. <strong>Mecanismo de absorção glicose–sódio no enterócito</strong>, diagrama vetorial original para SRO, legenda do mecanismo preservado em diarreia secretória.\r<br>2. <strong>Esquema de diarreia secretória x osmótica x inflamatória</strong>, três painéis autorais, sem figuras do Drive.\r<br>3. <strong>Microscopia do rotavírus</strong> de fonte institucional com licença comercial explícita, se houver.\r<br>4. <strong>Imagem de norovírus em microscopia eletrônica</strong> com fonte e direitos verificados, para surtos e transmissão.\r<br>5. <strong>Micrografia de Giardia duodenalis</strong> ou parasitologia autorizada, com identificação morfológica.\r<br>6. <strong>Quadro ilustrado de sinais de desidratação</strong>, fotografia ou esquema com consentimento/licença e limite de interpretação.\r<br>7. <strong>Fluxograma original de escolha A/B/C</strong>, conciso, incluindo critérios de alarme, remetendo à 053 para cálculo.\r<br>8. <strong>Esquema da microangiopatia na SHU</strong>, endotélio, esquizócito, plaquetas e rim, vetorial autoral.\r<br>9. <strong>Gráfico de evolução pós-STEC</strong>, fezes sanguinolentas → melhora intestinal → IRA/plaquetopenia (linha de tempo didática sem dados reais).\r<br>10. <strong>Ultrassom real de invaginação</strong>, sinal do alvo, com autorização editorial para diferenciar gastroenterite.\r<br>11. <strong>Fluxograma de testes fecais</strong>, quando colher cultura/PCR/toxina de Shiga versus quando não colher.\r<br>12. <strong>Calendário vacinal de rotavírus 2026</strong>, esquema gráfico original de 2 e 4 meses e janelas oficiais com referência, sem copiar layout governamental."
+          "O intestino pode perder água por secreção aumentada, solutos não absorvidos ou inflamação. A SRO aproveita o cotransporte de sódio e glicose e permite recuperar líquidos mesmo quando as evacuações ainda persistem."
+        ],
+        [
+          "t",
+          [
+            "Mecanismo",
+            "Pista",
+            "O que muda na decisão"
+          ],
+          [
+            [
+              "<strong>Secretor</strong>",
+              "Fezes aquosas volumosas",
+              "Estimar perdas, reidratar e reavaliar perfusão"
+            ],
+            [
+              "<strong>Osmótico</strong>",
+              "Distensão e relação com substâncias mal absorvidas",
+              "Investigar causa sem impor jejum generalizado"
+            ],
+            [
+              "<strong>Inflamatório</strong>",
+              "Sangue, muco, febre e tenesmo",
+              "Considerar disenteria, STEC, exames e risco de SHU"
+            ],
+            [
+              "<strong>Persistente</strong>",
+              "Duração prolongada, falha ponderal",
+              "Avaliar nutrição, parasitoses e má absorção"
+            ]
+          ],
+          "book-table"
         ],
         [
           "p",
-          "Todas dependem de aprovação na fila Admin. Imagens externas precisam de licença apropriada (incluindo uso comercial), diagnóstico confiável e legenda crítica. Não inserir automaticamente imagens do documento privado do Drive."
+          "<strong>Pulo do Gato:</strong> a SRO trata a perda hídrica, não identifica o agente. Quem determina A/B/C é o exame clínico; quem muda a investigação são sangue, sinais sistêmicos e evolução prolongada."
         ]
       ]
     ],
@@ -1202,38 +1237,57 @@
       [
         [
           "2",
-          "Referências e limites de aplicação"
+          "Hierarquia das fontes e divergências que importam"
         ],
         [
-          "u",
+          "p",
+          "<strong>Para questões de conduta no SUS:</strong> usar primeiro <a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente/view\" target=\"_blank\" rel=\"noopener noreferrer\">documento oficial nacional vigente</a>. Complementar com sociedades brasileiras especializadas e evidências internacionais conforme escopo. Hierarquia de aplicabilidade não é prova de qualidade absoluta: riscos não previstos, como STEC, exigem avaliação clínica e revisão das recomendações relevantes."
+        ],
+        [
+          "t",
           [
-            "Ministério da Saúde. Doenças diarreicas agudas. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda .",
-            "WHO. Guideline on management of pneumonia and diarrhoea in children up to 10 years of age. 2024. https://www.who.int/publications/i/item/9789240103412 .",
-            "WHO via NCBI Bookshelf. Evidence and recommendations, zinc, antimicrobianos e probióticos. https://www.ncbi.nlm.nih.gov/books/NBK611550/ .",
-            "Ministério da Saúde. Calendário Nacional de Vacinação, 2026. https://www.gov.br/saude/pt-br/vacinacao/calendario .",
-            "SBP. Diarreias, informações para famílias e recomendações gerais. https://www.sbp.com.br/diarreias/ ."
-          ]
-        ],
-        [
-          "4",
-          "Checklist de qualidade — estado real"
-        ],
-        [
-          "u",
+            "Decisão",
+            "Fonte nacional de referência",
+            "Comparação internacional",
+            "Como aplicar"
+          ],
           [
-            "[x] Documento correlato do Drive aberto e lido; especialidade <strong>adulto</strong> corretamente declarada como limitação; autoria material de referência não presumida.",
-            "[x] Manuscrito 053 reaberto e utilizado para definir fronteira curricular.",
-            "[x] Revisão externa WHO 2024/MS 2026/SBP e indicação de divergência sobre zinco, probióticos e antibióticos.",
-            "[x] Fisiopatologia, etiologias, exames seletivos, SHU, tratamento, vacina, complicações e prevenção.",
-            "[x] Seis casos clínicos originais, doze questões justificadas.",
-            "[x] Doze candidatas visuais especificadas, sem incorporar imagens privadas.",
-            "[ ] <strong>Benchmark equivalente de diarreia pediátrica</strong> ainda não localizado (Drive tem apenas gastroenterologia adulta); não declarar equivalente lido.",
-            "[x] Conferência da janela de rotavírus PNI 2026 na página e na instrução normativa oficiais; demais detalhes de contraindicações e grupos especiais precisam de revisão específica.",
-            "[ ] Revisão pediátrica de antibióticos de disenteria, doenças invasivas e doses nacionais; conferir STEC antes de prescrever.",
-            "[ ] Verificar divergências de <strong>zinco OMS 2024 versus protocolo brasileiro institucional</strong> e corrigir também a aula 053.",
-            "[ ] Checar se 60.000 caracteres <strong>didáticos úteis</strong> foram alcançados excluindo casos, questões, tabelas e referências, sem inflar por repetição.",
-            "[ ] Auditoria de autossuficiência, licença de imagens, tradução para renderer HTML, desktop/PWA e publicação apenas após aprovação."
-          ]
+            [
+              "<strong>Reidratação</strong>",
+              "MS 2026: Plano B supervisionado; A em casa, C grave com terapia IV",
+              "OMS apoia SRO de baixa osmolaridade",
+              "Ensinar fluxo A/B/C primeiro"
+            ],
+            [
+              "<strong>Zinco</strong>",
+              "MS 2026: 10 mg/dia até 6 meses, 20 mg/dia acima de 6 meses até menos de cinco anos",
+              "OMS 2024: dose de 5 mg/dia sugerida condicionalmente",
+              "Para SUS usar esquema MS e informar diferença"
+            ],
+            [
+              "<strong>Disenteria</strong>",
+              "MS 2026: antibiótico se sangue e comprometimento geral",
+              "OMS 2024: indicação mais ampla",
+              "Explicar exceção de segurança STEC"
+            ],
+            [
+              "<strong>Probióticos</strong>",
+              "Sem obrigatoriedade no MS",
+              "OMS 2024 sugere contra uso rotineiro",
+              "Não generalizar indicação por cepa"
+            ],
+            [
+              "<strong>Rotavírus</strong>",
+              "PNI 2026: 2 e 4 meses, com janelas nacionais definidas",
+              "Calendários estrangeiros podem variar",
+              "Para SUS usar o PNI"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Documentos: <a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente/view\" target=\"_blank\" rel=\"noopener noreferrer\">MS 2026: diarreia</a>; <a href=\"https://www.gov.br/saude/pt-br/vacinacao/calendario\" target=\"_blank\" rel=\"noopener noreferrer\">PNI 2026: rotavírus</a>; <a href=\"https://www.who.int/publications/i/item/9789240103412\" target=\"_blank\" rel=\"noopener noreferrer\">OMS 2024</a>; <a href=\"https://www.idsociety.org/practice-guideline/infectious-diarrhea\" target=\"_blank\" rel=\"noopener noreferrer\">IDSA: STEC</a>. Bibliografia completa ao final."
         ]
       ]
     ],
@@ -1295,16 +1349,16 @@
         ],
         [
           "p",
-          "Esta seção amplia o manejo terapêutico sem alterar a prioridade: reidratação, avaliação seriada e alimentação. Diferenças entre diretrizes de Ministério da Saúde, OMS e sociedades devem ser identificadas pela data, contexto e certeza da evidência."
+          "<strong>Hierarquia aplicável:</strong> protocolos oficiais do MS vigentes são referência de condutas no SUS. Sociedades brasileiras e consenso especializado são complementares, conforme escopo/data. <a href=\"https://www.who.int/publications/i/item/9789240103412\" target=\"_blank\" rel=\"noopener noreferrer\">OMS</a> e <a href=\"https://www.idsociety.org/practice-guideline/infectious-diarrhea\" target=\"_blank\" rel=\"noopener noreferrer\">IDSA</a> esclarecem evidências, divergências e alertas de segurança, sem revogar sozinhas a norma nacional. A decisão real permanece individualizada."
         ],
         [
           "u",
           [
-            "<strong>Zinco:</strong> o cartaz brasileiro de julho de 2026 recomenda 10 mg/dia até 6 meses e 20 mg/dia para maiores de 6 meses a menores de 5 anos por 10–14 dias. A OMS de 2024 sugere 5 mg/dia por até 14 dias para crianças até 10 anos, de modo condicional e com baixa certeza. Não apresentar todos os esquemas como doses equivalentes.",
-            "<strong>Probióticos:</strong> a OMS 2024 sugere contra uso rotineiro na diarreia aquosa aguda. Algumas sociedades consideram cepas específicas com evidência heterogênea; não generalizar benefícios de um produto para todos. Probiótico não substitui SRO e pode ser arriscado em determinados imunossuprimidos.",
-            "<strong>Antieméticos:</strong> para vômitos persistentes que impedem a terapia oral no Plano B, o cartaz brasileiro permite uma dose de ondansetrona na unidade, ajustada à faixa etária e contraindicada conforme risco de QT/alterações eletrolíticas. Não usar rotineiramente em casa.",
-            "<strong>Antimotilidade:</strong> não prescrever loperamida para crianças com gastroenterite infecciosa, sobretudo com febre, sangue ou suspeita de STEC; antiespasmódicos não substituem reidratação.",
-            "<strong>Antibióticos:</strong> não usar na diarreia aquosa não complicada. Em disenteria com comprometimento do estado geral, o MS 2026 indica, para crianças elegíveis de 3 meses a 10 anos e até 30 kg, azitromicina (10 mg/kg no primeiro dia e 5 mg/kg/dia por mais quatro) ou ceftriaxona IM como alternativa. Considerar resistência, diagnóstico e STEC, evitando tratamentos indiscriminados."
+            "<strong>Zinco no SUS:</strong> MS 2026: até 6 meses, 10 mg/dia; acima de 6 meses até menor de cinco anos, 20 mg/dia por 10–14 dias. OMS 2024 sugere condicionalmente 5 mg/dia até dez anos, com baixa certeza da dose. Não misturar.",
+            "<strong>Probióticos:</strong> não são obrigatórios segundo o manejo nacional. OMS 2024 sugere contra uso rotineiro na diarreia aquosa aguda; resultados específicos por cepa não autorizam generalização.",
+            "<strong>Vômitos:</strong> se persistirem e impedirem SRO no Plano B, MS 2026 prevê uma dose de ondansetrona na unidade segundo idade. Verificar contraindicações e QT; não converter em rotina domiciliar.",
+            "<strong>Antidiarreicos:</strong> o cartaz brasileiro orienta que não sejam utilizados; evitar loperamida sobretudo em disenteria e STEC.",
+            "<strong>Antibióticos:</strong> evitar na diarreia aquosa não complicada; no SUS, tratar disenteria com comprometimento geral nos critérios MS 2026, lembrando da precaução especial em STEC e necessidade de controle de perfusão."
           ]
         ]
       ]
@@ -1464,11 +1518,13 @@
         [
           "o",
           [
-            "<a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente/view\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde. Manejo do paciente com diarreia (cartaz; atualização em 10/07/2026).</a>",
-            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde. Doenças Diarreicas Agudas.</a>",
-            "<a href=\"https://www.who.int/publications/i/item/9789240103412\" target=\"_blank\" rel=\"noopener noreferrer\">OMS. Guideline on management of pneumonia and diarrhoea in children up to 10 years of age (2024).</a>",
-            "<a href=\"https://www.gov.br/saude/pt-br/vacinacao/calendario\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde. Calendário Nacional de Vacinação 2026, rotavírus.</a>",
-            "<a href=\"https://www.idsociety.org/practice-guideline/infectious-diarrhea\" target=\"_blank\" rel=\"noopener noreferrer\">IDSA. Clinical practice guideline for infectious diarrhea (STEC e antibióticos).</a>"
+            "<a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente/view\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — PRINCIPAL] Ministério da Saúde. Manejo do Paciente com Diarreia, atualização 10/07/2026.</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — PRINCIPAL] Ministério da Saúde. Doenças Diarreicas Agudas, orientação de prevenção e tratamento.</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/vacinacao/calendario\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — PNI] Ministério da Saúde. Calendário Nacional de Vacinação 2026 — rotavírus.</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — PNI] Ministério da Saúde. Instrução Normativa do Calendário Nacional de Vacinação de 2026.</a>",
+            "<a href=\"https://www.who.int/publications/i/item/9789240103412\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL — COMPLEMENTAR] Organização Mundial da Saúde. Guideline on management of pneumonia and diarrhoea in children up to 10 years of age (2024).</a>",
+            "<a href=\"https://www.ncbi.nlm.nih.gov/books/NBK611549/table/fm-ch2.tab2/\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL — EVIDÊNCIA] OMS. Quadro de recomendações e nível de certeza, diarreia infantil.</a>",
+            "<a href=\"https://www.idsociety.org/practice-guideline/infectious-diarrhea\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL — SEGURANÇA] IDSA. Clinical Practice Guidelines for Infectious Diarrhea (2017), cautela com STEC.</a>"
           ],
           "reference-list"
         ]
