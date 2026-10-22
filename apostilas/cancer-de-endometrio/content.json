@@ -738,6 +738,59 @@
         [
           "p",
           "A mutação patogênica de POLE em contexto apropriado pode justificar deintensificação adjuvante; p53abn, certos tipos histológicos e doença nodal podem aumentar necessidade de abordagem intensificada. Entretanto, nenhuma biomarcação substitui avaliação individual nem legitima aplicar fórmula única de tratamento. A diretriz ESGO–ESTRO–ESP 2025 contém algoritmos estratificados por grupos clínico-moleculares e deve ser revisada por oncoginecologia antes de a apostila se tornar prescricional."
+        ],
+        [
+          "3",
+          "O que muda entre observar, irradiar a cúpula e tratar sistemicamente?"
+        ],
+        [
+          "p",
+          "A adjuvância busca reduzir recidivas depois da cirurgia, mas cada modalidade protege contra riscos diferentes: a braquiterapia vaginal concentra dose no local onde algumas recidivas ocorrem; a radioterapia externa aborda maior volume pélvico; a quimioterapia trata risco sistêmico; combinações podem ter papel conforme categoria e evidência. Portanto, não somar tratamentos como se toda modalidade acrescentasse benefício independente em qualquer paciente. O grupo multidisciplinar precisa relacionar benefício absoluto esperado, probabilidade de recidiva, estágio, margens, LVSI, histologia, grau, categoria molecular, comorbidades e toxicidade."
+        ],
+        [
+          "t",
+          [
+            "Perfil após cirurgia",
+            "Pergunta para a equipe",
+            "Possíveis estratégias (não prescrição universal)"
+          ],
+          [
+            [
+              "Baixo risco integrado",
+              "Qual a chance real de recorrência sem tratamento adicional?",
+              "Observação clínica pode ser suficiente"
+            ],
+            [
+              "Risco concentrado em cúpula vaginal",
+              "É possível reduzir falha vaginal com baixa toxicidade?",
+              "Braquiterapia vaginal em pacientes selecionadas"
+            ],
+            [
+              "Maior risco locorregional",
+              "Há fatores para recidiva pélvica além da cúpula?",
+              "Avaliar radioterapia pélvica e/ou outras modalidades conforme grupo"
+            ],
+            [
+              "Alto risco de doença distante ou nodal",
+              "Qual o benefício adicional de controle sistêmico?",
+              "Quimioterapia ou estratégias sistêmicas, eventualmente combinadas com radioterapia"
+            ],
+            [
+              "POLEmut patogênico, contexto apropriado",
+              "Biologia favorável permite menos tratamento sem perder eficácia?",
+              "Considerar desintensificação somente se elegível pelas regras específicas"
+            ],
+            [
+              "p53abn ou histologia agressiva",
+              "Há indicação de intensificar frente ao estádio e patologia final?",
+              "Discutir terapia adjuvante conforme risco; biomarcador isolado não torna tudo obrigatório"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Caso didático:</strong> duas pessoas estão no mesmo estádio cirúrgico. A primeira tem endometrioide G1, invasão superficial, LVSI ausente e perfil de baixo risco; a segunda apresenta histologia agressiva e p53abn. O nome do estádio não resume todo o risco, mas também seria incorreto prescrever quimiorradioterapia para a segunda sem examinar extensão, elegibilidade e evidência. A fonte brasileira de tratamento é a <a href=\"https://imunotox.sboc.org.br/diretrizes-publicas-categorias/2026/\" target=\"_blank\" rel=\"noopener noreferrer\">SBOC 2026</a>; a <a href=\"https://pubmed.ncbi.nlm.nih.gov/40744042/\" target=\"_blank\" rel=\"noopener noreferrer\">ESGO 2025</a> refina estratégias internacionais e grupos moleculares."
         ]
       ]
     ],
@@ -852,6 +905,58 @@
         [
           "p",
           "Controlar dor, sangramento, anemia, náusea, fadiga, ansiedade e alterações urinárias/intestinais; discutir objetivos terapêuticos de maneira compartilhada. Cuidados paliativos podem coexistir com tratamentos oncológicos modificadores de doença desde o diagnóstico de condição avançada, não sendo sinônimo de abandono."
+        ],
+        [
+          "3",
+          "Como os biomarcadores entram nas decisões sem virar atalhos perigosos"
+        ],
+        [
+          "p",
+          "O primeiro passo na doença avançada ou recorrente é confirmar sítio e extensão, revisar laudo molecular e tratamento prévio e esclarecer objetivo terapêutico. MMRd/MSI-H é um marcador importante para sensibilidade a bloqueio de PD-1, mas indicação de imunoterapia depende da linha e da estratégia (isolada ou combinada com quimioterapia) sustentada pelo estudo e aprovada no sistema assistencial. Na doença pMMR, imunoterapia combinada com lenvatinibe pode ser opção após tratamento prévio em determinados cenários, mas toxicidade e acesso podem limitar uso. Não inventar que um produto está disponível em toda unidade do SUS apenas porque aparece em uma diretriz internacional."
+        ],
+        [
+          "p",
+          "No carcinoma seroso e em parte dos tumores p53abn, HER2 pode abrir avaliação de terapia direcionada, mas a expressão depende do método laboratorial e pode exigir confirmação. Tumores de baixo grau e receptores hormonais positivos podem responder a terapia hormonal em situações selecionadas, especialmente quando a evolução é indolente e a prioridade inclui menor toxicidade. O estado clínico, sintomas, velocidade de progressão, localização de metástases, efeitos adversos e preferências interferem na escolha tanto quanto um resultado de imuno-histoquímica."
+        ],
+        [
+          "t",
+          [
+            "Pergunta clínica",
+            "Exame/dado que responde",
+            "Cuidado de interpretação"
+          ],
+          [
+            [
+              "A doença expressa MMRd/MSI-H?",
+              "IHQ MMR e/ou testes moleculares válidos",
+              "MMRd não garante síndrome de Lynch nem acesso automático a anti-PD-1"
+            ],
+            [
+              "O tumor tem p53abn ou padrão seroso?",
+              "Histologia, p53 e HER2 se indicado",
+              "p53abn não é sinônimo de HER2 positivo nem prescrição obrigatória"
+            ],
+            [
+              "É tumor hormonalmente responsivo?",
+              "ER/PR, grau, ritmo de progressão",
+              "ER/PR não substituem avaliação de extensão e sintomas"
+            ],
+            [
+              "Há doença oligometastática/recidiva local?",
+              "Imagem e história de radioterapia/cirurgia",
+              "Resgate local e tratamento sistêmico podem seguir estratégias distintas"
+            ],
+            [
+              "Qual opção é viável no Brasil?",
+              "Diretrizes SBOC 2026, protocolo local, regulação, aprovação e acesso",
+              "Uma diretriz científica não prova incorporação ou cobertura automática"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Pulo do Gato:</strong> diferencie <em>biomarcador prognóstico</em> (risco de desfecho) de <em>biomarcador preditivo</em> (probabilidade de resposta a uma intervenção). MMRd pode ter as duas funções em contextos distintos, mas um resultado molecular isolado não decide a linha do tratamento. Consulte <a href=\"https://imunotox.sboc.org.br/diretrizes-publicas-categorias/2026/\" target=\"_blank\" rel=\"noopener noreferrer\">SBOC Endométrio 2026</a> para aplicabilidade brasileira e <a href=\"https://pubmed.ncbi.nlm.nih.gov/40744042/\" target=\"_blank\" rel=\"noopener noreferrer\">ESGO 2025</a> para comparação."
         ]
       ]
     ],
@@ -1044,6 +1149,54 @@
         [
           "p",
           "<strong>Cirurgia redutora de risco:</strong> histerectomia total pode reduzir a incidência de câncer endometrial em portadoras selecionadas após completar o planejamento reprodutivo, mas <strong>não garante mortalidade nula</strong>. O momento é individualizado por gene, idade, comorbidades, preferência e contexto. A retirada dos ovários não é indiscriminada: deve equilibrar o risco específico de câncer ovariano e as consequências de menopausa cirúrgica, podendo ter indicação distinta da histerectomia. Fonte: <a href=\"https://doi.org/10.1016/j.ejca.2026.116739\" target=\"_blank\" rel=\"noopener noreferrer\">consenso ESGO 2026</a>; <a href=\"https://www.cancer.gov/types/colorectal/hp/colorectal-genetics-pdq\" target=\"_blank\" rel=\"noopener noreferrer\">NCI, genética da síndrome de Lynch</a>."
+        ],
+        [
+          "3",
+          "Separar aconselhamento, teste germinativo e três alvos de vigilância"
+        ],
+        [
+          "p",
+          "Uma família com carcinoma endometrial e tumor MMR-deficiente precisa de perguntas encadeadas: qual proteína perdeu expressão? A perda de MLH1/PMS2 foi investigada quanto à metilação do promotor? Há mutação germinativa confirmada? O familiar quer e pode realizar testagem em cascata? Só depois desse percurso se estabelece vigilância individual. A doença associada a Lynch não começa necessariamente pela mesma neoplasia em todas as famílias. Um esquema rígido de US transvaginal + CA-125 todos os anos ignora os limites de evidência para detecção precoce do câncer ovariano."
+        ],
+        [
+          "t",
+          [
+            "Pessoa / situação",
+            "O que priorizar",
+            "O que não afirmar"
+          ],
+          [
+            [
+              "Carcinoma endometrial com perda tumoral de MMR",
+              "Avaliar testes reflexos pertinentes e encaminhar genética",
+              "Toda perda de proteína = mutação germinativa confirmada"
+            ],
+            [
+              "Parente de primeiro grau, variante familiar conhecida",
+              "Aconselhamento e testagem em cascata",
+              "Todo familiar obrigatoriamente herdou a variante"
+            ],
+            [
+              "Portadora Lynch com útero",
+              "Educar sinais de sangramento; discutir biópsia a cada 1–2 anos desde 30–35 anos",
+              "Biópsia comprovadamente reduz mortalidade em todos os genes"
+            ],
+            [
+              "Vigilância ovariana",
+              "Educar sintomas e avaliar cirurgia redutora conforme gene/idade",
+              "US e CA-125 anuais são rastreio com benefício comprovado"
+            ],
+            [
+              "Vigilância colorretal",
+              "Colonoscopia em idade e intervalo gene-específicos",
+              "Todos iniciam aos 20 anos e repetem exatamente a cada dois anos"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Exemplo:</strong> a perda tumoral de MLH1 e PMS2, em uma pessoa sem história familiar, pode decorrer de metilação somática do promotor de MLH1. Isso não equivale a diagnosticar Lynch, mas não é justificativa para dispensar investigação quando o padrão ou história clínica a indicar. O mesmo raciocínio se aplica a familiares: estimar risco <em>após</em> identificar variante hereditária, em vez de ordenar procedimentos genéricos. Fonte clínica: <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK1211/\" target=\"_blank\" rel=\"noopener noreferrer\">GeneReviews</a> e <a href=\"https://doi.org/10.1016/j.ejca.2026.116739\" target=\"_blank\" rel=\"noopener noreferrer\">Consenso ESGO 2026</a>; diagnóstico tumoral <a href=\"https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Patologia 2026</a>."
         ]
       ]
     ],
