@@ -27,19 +27,19 @@ Critério: 264 registros distribuídos ciclicamente por especialidade (27 nos lo
 | Nº | Área atual | Apostila | Caminho | Status |
 |---:|---|---|---|---|
 | 1 | Cirurgia Geral | Perfuração de Víscera Oca e Peritonite Aguda | /apostilas/perfuracao-de-viscera-oca/ | Revisão clínica/editorial aplicada; QA médico e visual pendentes |
-| 2 | Cirurgia Geral | Doenças Prostáticas e Avaliação Inicial de Neoplasias Urológicas | /apostilas/doencas-prostaticas-e-avaliacao-inicial-de-neoplasias-urologicas/ | Pendente |
-| 3 | Cirurgia Geral | tumores-renais-e-vesicais | /apostilas/tumores-renais-e-vesicais/ | Pendente |
+| 2 | Cirurgia Geral | Doenças Prostáticas e Avaliação Inicial de Neoplasias Urológicas | /apostilas/doencas-prostaticas-e-avaliacao-inicial-de-neoplasias-urologicas/ | Rodada corretiva de 10 (22/10): atualizações e QA estrutural; revisão médica/visual final pendente |
+| 3 | Cirurgia Geral | tumores-renais-e-vesicais | /apostilas/tumores-renais-e-vesicais/ | Rodada corretiva de 10 (22/10): atualizações e QA estrutural; revisão médica/visual final pendente |
 | 4 | Cirurgia Geral | Queimaduras | /apostilas/queimaduras/ | Revisão clínica/editorial aplicada; QA médico, imagens e visual pendentes |
 | 5 | Clínica Médica | Arritmias e Fibrilação Atrial | /apostilas/arritmias-fibrilacao-atrial/ | Revisão científica/editorial aplicada; validação clínica e visual pendentes |
-| 6 | Clínica Médica | Cirrose e suas Complicações | /apostilas/cirrose-e-suas-complicacoes/ | Pendente |
+| 6 | Clínica Médica | Cirrose e suas Complicações | /apostilas/cirrose-e-suas-complicacoes/ | Rodada corretiva de 10 (22/10): atualizações e QA estrutural; revisão médica/visual final pendente |
 | 7 | Clínica Médica | Diarreia Aguda na Infância | /apostilas/diarreia-aguda/ | Em revisão científica/editorial; correções na branch, QA visual pendente |
-| 8 | Clínica Médica | Doenças Anorretais: Cirurgia e Coloproctologia Essencial | /apostilas/doencas-anorretais/ | Pendente |
-| 9 | Clínica Médica | Hepatites Virais | /apostilas/hepatites-virais/ | Pendente |
-| 10 | Clínica Médica | neuropatias-perifericas-e-doencas-neuromusculares | /apostilas/neuropatias-perifericas-e-doencas-neuromusculares/ | Pendente |
-| 11 | Clínica Médica | Placenta Prévia e Descolamento Prematuro de Placenta | /apostilas/placenta-previa-e-descolamento-prematuro-de-placenta/ | Pendente |
-| 12 | Clínica Médica | Resposta Metabólica ao Trauma | /apostilas/resposta-metabolica-ao-trauma/ | Pendente |
-| 13 | Clínica Médica | Trauma Pélvico e Geniturinário | /apostilas/trauma-pelvico-e-geniturinario/ | Pendente |
-| 14 | Clínica Médica | Vigilância Sanitária | /apostilas/vigilancia-sanitaria/ | Pendente |
+| 8 | Clínica Médica | Doenças Anorretais: Cirurgia e Coloproctologia Essencial | /apostilas/doencas-anorretais/ | Rodada corretiva de 10 (22/10): atualizações e QA estrutural; revisão médica/visual final pendente |
+| 9 | Clínica Médica | Hepatites Virais | /apostilas/hepatites-virais/ | Rodada corretiva de 10 (22/10): atualizações e QA estrutural; revisão médica/visual final pendente |
+| 10 | Clínica Médica | neuropatias-perifericas-e-doencas-neuromusculares | /apostilas/neuropatias-perifericas-e-doencas-neuromusculares/ | Rodada corretiva de 10 (22/10): atualizações e QA estrutural; revisão médica/visual final pendente |
+| 11 | Clínica Médica | Placenta Prévia e Descolamento Prematuro de Placenta | /apostilas/placenta-previa-e-descolamento-prematuro-de-placenta/ | Rodada corretiva de 10 (22/10): atualizações e QA estrutural; revisão médica/visual final pendente |
+| 12 | Clínica Médica | Resposta Metabólica ao Trauma | /apostilas/resposta-metabolica-ao-trauma/ | Rodada corretiva de 10 (22/10): atualizações e QA estrutural; revisão médica/visual final pendente |
+| 13 | Clínica Médica | Trauma Pélvico e Geniturinário | /apostilas/trauma-pelvico-e-geniturinario/ | Rodada corretiva de 10 (22/10): atualizações e QA estrutural; revisão médica/visual final pendente |
+| 14 | Clínica Médica | Vigilância Sanitária | /apostilas/vigilancia-sanitaria/ | Rodada corretiva de 10 (22/10): atualizações e QA estrutural; revisão médica/visual final pendente |
 | 15 | Clínica Médica | Lesão Renal Aguda | /apostilas/lesao-renal-aguda/ | Pendente |
 | 16 | Ginecologia e Obstetrícia | Câncer de Endométrio | /apostilas/cancer-de-endometrio/ | Revisão clínica/editorial aplicada; QA oncológico e visual pendente |
 | 17 | Ginecologia e Obstetrícia | Infecções Sexualmente Transmissíveis (IST) | /apostilas/infeccoes-sexualmente-transmissiveis/ | Triagem iniciada |
