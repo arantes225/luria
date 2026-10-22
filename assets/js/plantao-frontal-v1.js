@@ -24,7 +24,7 @@
   pending=0;
   let src=base.getAttribute('src')||'';try{src=decodeURIComponent(src)}catch{}
   const entry=groups.find(([pattern])=>pattern.test(src));
-  if(!entry||/ambulancia|ambulance/.test(src)){remove();return}
+  if(!entry||/ambulancia|ambulance|\/plantao\/aph\//.test(src)){remove();return}
   const index=entry[1],config=window.LURIA_CHARACTERS[index];
   const value=base.dataset.luriaRr;
   const rr=value!==undefined&&value!==''&&Number.isFinite(Number(value))?Number(value):17;

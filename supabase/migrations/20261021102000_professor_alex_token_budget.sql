@@ -7,7 +7,7 @@ alter table public.professor_alex_daily_usage
 
 create table if not exists private.professor_alex_token_settings (
   id boolean primary key default true check (id),
-  daily_token_budget bigint not null default 30000 check (daily_token_budget between 1000 and 100000000),
+  daily_token_budget bigint not null default 100000 check (daily_token_budget between 1000 and 100000000),
   voice_multiplier numeric(8,3) not null default 3.000 check (voice_multiplier between 1 and 10),
   updated_at timestamptz not null default now(),
   updated_by uuid references auth.users(id)

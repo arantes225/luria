@@ -345,3 +345,45 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
 html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .topbar #luria-alex-topbar {
   display: none !important;
 }
+
+/* Shared button presentation lives in ui-app.css (luria-ui-controls). */
+
+/* ==========================================================================
+   PADRONIZACAO GLOBAL DE BOTOES DE VOLTAR (.luria-back-button)
+   Posicionamento abaixo do spotlight com espacamento e estilo oficial
+   ========================================================================== */
+.luria-back-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 8px !important;
+  height: 38px !important;
+  min-height: 38px !important;
+  max-height: 38px !important;
+  padding: 0 16px !important;
+  margin: 14px 0 16px 0 !important;
+  border-radius: 12px !important;
+  font-size: 13px !important;
+  font-weight: 750 !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  width: fit-content !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+.luria-back-button:hover {
+  transform: translateX(-2px) !important;
+}
+
+.luria-back-button svg {
+  flex-shrink: 0 !important;
+  width: 18px !important;
+  height: 18px !important;
+  transition: transform 0.15s ease !important;
+}
+
+.luria-back-button:hover svg {
+  transform: translateX(-2px) !important;
+}

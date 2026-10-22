@@ -386,6 +386,8 @@
     }else{
       setPlantaoMode("emergency");
     }
+    // Opening the activity inside its admitted room is an explicit case selection.
+    if(await openRoomCase())return;
     // Nunca reabrir um atendimento automaticamente ao acessar a Sala de Emergência.
     // O usuário decide explicitamente se quer retomá-lo pelo botão de continuar.
     if(ENTRY_MODE!=="emergency" && savedView.clinicalSessionId && ["plantao-simulator","plantao-debrief"].includes(savedView.section)){
@@ -402,6 +404,18 @@
 
     show("plantao-library",{persist:false});
     savePlantaoView({mode:"emergency",section:"plantao-library",clinicalSessionId:null,clinicalCaseId:null});
+  }
+
+  async function openRoomCase() {
+    const embed=window.LuriaRoomEmbed;
+    if(embed?.kind!=="simulator"||!embed.caseId)return false;
+    if(!state.cases.some(item=>String(item.id)===embed.caseId))return false;
+    if(state.activeSession?.case_id===embed.caseId){
+      const restored=await restoreClinicalSession(state.activeSession,"plantao-simulator");
+      if(restored)return true;
+    }
+    await startCase(embed.caseId);
+    return true;
   }
 
   function bestScore(caseId) {
@@ -493,21 +507,28 @@
   }
 
   const APH_PATIENT_IMAGES={
-    manAwake:"/assets/img/plantao/patient-frontal-adult-man-awake.webp",
-    womanAwake:"/assets/img/plantao/patient-frontal-adult-woman-awake.webp",
-    manReduced:"/assets/img/plantao/patient-frontal-adult-man-closed.webp",
-    womanReduced:"/assets/img/plantao/patient-frontal-adult-woman-closed.webp"
+    man:{awake:"/assets/img/plantao/aph/homem-adulto-aberto.webp?v=20261021",closed:"/assets/img/plantao/aph/homem-adulto-fechado.webp?v=20261021"},
+    woman:{awake:"/assets/img/plantao/aph/mulher-adulta-aberto.webp?v=20261021",closed:"/assets/img/plantao/aph/mulher-adulta-fechado.webp?v=20261021"},
+    elderlyMan:{awake:"/assets/img/plantao/aph/homem-idoso-aberto.webp?v=20261021",closed:"/assets/img/plantao/aph/homem-idoso-fechado.webp?v=20261021"},
+    elderlyWoman:{awake:"/assets/img/plantao/aph/mulher-idosa-aberto.webp?v=20261021",closed:"/assets/img/plantao/aph/mulher-idosa-fechado.webp?v=20261021"}
   };
 
-  function aphReferenceImage(item=state.current){
+  function aphPatientPair(item=state.current){
     const sex=normalizeLabel(item?.presentation?.sex||"");
     const female=sex==="f" || sex.startsWith("fem");
+    const age=patientAgeYears(item);
+    const elderly=(Number.isFinite(age)&&age>=60)
+      || /\bidos[oa]\b/.test(normalizeLabel([item?.title,item?.presentation?.opening].filter(Boolean).join(" ")));
+    return APH_PATIENT_IMAGES[elderly?(female?"elderlyWoman":"elderlyMan"):(female?"woman":"man")];
+  }
+
+  function aphReferenceImage(item=state.current){
+    const pair=aphPatientPair(item);
     const clinical=normalizeLabel([
       item?.title,item?.summary,item?.presentation?.opening,item?.presentation?.chief_complaint
     ].filter(Boolean).join(" "));
     const reduced=/pcr|parada|inconsciente|rebaix|sonol|confus|convuls|pos-ictal|síncope|sincope|coma|falencia ventilatoria|ventilacao inadequada/.test(clinical);
-    if(reduced) return female ? APH_PATIENT_IMAGES.womanReduced : APH_PATIENT_IMAGES.manReduced;
-    return female ? APH_PATIENT_IMAGES.womanAwake : APH_PATIENT_IMAGES.manAwake;
+    return reduced ? pair.closed : pair.awake;
   }
 
   function plantaoReferenceImage(item,index=0){
@@ -540,11 +561,8 @@
     const presets={
       "luria-homem-adulto-v7-aberto.webp":{x:50,y:24,scale:2.05},
       "luria-mulher-adulta-v5-aberto.webp":{x:43,y:24,scale:2.08},
-      "plantao-homem-adulto-acordado-v2-1600x900.webp":{x:50,y:24,scale:2.05},
-      "04-mulher-adulta-acordada.webp":{x:50,y:22,scale:2.08},
       "patient-frontal-elderly-woman-awake.webp":{x:50,y:23,scale:2.0},
       "patient-frontal-elderly-man-awake.webp":{x:50,y:24,scale:2.02},
-      "10-homem-idoso-acordado.webp":{x:50,y:23,scale:2.02},
       "patient-frontal-girl-awake.webp":{x:50,y:25,scale:2.12},
       "08-menino-acordado.webp":{x:50,y:25,scale:2.12},
       "patient-frontal-pregnant-awake.webp":{x:50,y:22,scale:1.95}
@@ -2851,11 +2869,10 @@
 
   function patientImagesForCurrentCase(){
     if(isAphCase()){
-      const patientImage=aphReferenceImage(state.current);
-      const sex=patientSex(state.current);
+      const pair=aphPatientPair(state.current);
       return {
-        patient_image:patientImage,
-        unconscious_image:sex==="F" ? APH_PATIENT_IMAGES.womanReduced : APH_PATIENT_IMAGES.manReduced
+        patient_image:pair.awake,
+        unconscious_image:pair.closed
       };
     }
 
@@ -5176,6 +5193,7 @@
     $("plantao-action-drawer").hidden=true;
     $("plantao-action-tabs").inert=false;
     show("plantao-library");
+    if(window.LuriaRoomEmbed?.kind==="simulator")window.dispatchEvent(new Event("luria:clinical-exit"));
   }
 
   document.addEventListener("click",async event=>{

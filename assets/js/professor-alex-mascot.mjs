@@ -84,7 +84,7 @@ export class ProfessorAlexMascot extends HTMLElement {
     this._themes=new MutationObserver(()=>{this._syncTheme();this._schedule();});
     this._themes.observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
     if(document.body)this._themes.observe(document.body,{attributes:true,attributeFilter:['data-ui-appearance','data-ui-identity']});
-    this._resizeObserver=new ResizeObserver(()=>{this._resize();this._schedule();});this._resizeObserver.observe(this);
+    this._resizeObserver=new ResizeObserver(()=>{this._resize();this._schedule();});this._resizeObserver.observe(this);this._resizeObserver.observe(this.button);
     this._intersection=new IntersectionObserver(([entry])=>{this._visible=entry.isIntersecting;this._last=0;this._schedule();});this._intersection.observe(this);
     try {this._createScene();this._syncProps();this._resize();this._schedule();this.message.hidden=true;this.dispatchEvent(new CustomEvent('alex-ready',{bubbles:true}));}
     catch(error) {this._dispose();this.message.hidden=false;this.message.textContent='O modo 3D requer WebGL 2. Tente um navegador compatível.';this.button.disabled=true;this.dispatchEvent(new CustomEvent('alex-error',{detail:error,bubbles:true}));}
@@ -125,9 +125,13 @@ export class ProfessorAlexMascot extends HTMLElement {
   }
   _syncTheme() {
     const global=document.documentElement.dataset.theme,body=document.body?.dataset;
-    this._theme=this.theme==='auto' ? (body?.uiIdentity==='pink'||['leila-mood','pink','rosa'].includes(global)?'pink':body?.uiAppearance==='dark'||global==='dark'?'dark':'light') : ({claro:'light',escuro:'dark',rosa:'pink'}[this.theme]||this.theme);
+    // The current shell's two dimensions take precedence over legacy preferences.
+    const identity=['blue','pink'].includes(body?.uiIdentity)?body.uiIdentity:(['leila-mood','pink','rosa'].includes(global)?'pink':'blue');
+    const appearance=['light','dark'].includes(body?.uiAppearance)?body.uiAppearance:(global==='dark'?'dark':'light');
+    this._theme=this.theme==='auto' ? (identity==='pink'?'pink':appearance) : ({claro:'light',escuro:'dark',rosa:'pink'}[this.theme]||this.theme);
+    const dark=this.theme==='auto'?appearance==='dark':this._theme==='dark';
     this._color=this._theme==='pink'?'#ff87c6':'#50d8ff';
-    if(this.lightMaterial){this._syncAccents();this.whiteMaterial.color.set(this._theme==='light'?'#729ac7':this._theme==='dark'?'#e6edf8':this._theme==='pink'&&!(this.theme==='auto'&&(body?.uiAppearance==='dark'||global==='dark'))?'#c586ad':'#ffffff');}
+    if(this.lightMaterial){this._syncAccents();this.whiteMaterial.color.set(this._theme==='pink'?(dark?'#664260':'#c586ad'):(dark?'#354766':'#729ac7'));}
   }
   _syncAccents() {
     const signature=[this._fromFace,this._currentFace,this._faceMix.toFixed(2),this._color].join('|');

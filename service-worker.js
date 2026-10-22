@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-neutral-20261020-review-fixes";
+const CACHE_VERSION = "luria-pwa-20261021-darktext-grad-v4-study-rats-v1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -13,7 +13,9 @@ const APP_SHELL = [
   "/assets/js/plantao-overlays.js?v=20261016-overlays1",
   "/assets/css/plantao-overlays.css?v=20261016-overlays1",
   "/assets/js/luria-personagens-original.js?v=20261016-original1",
-  "/assets/js/plantao-frontal-v1.js?v=20261016-original1",
+  "/assets/js/plantao-frontal-v1.js?v=20261021-aph1",
+  "/assets/js/plantao-aph-characters.js?v=20261021-aph1",
+  "/assets/css/plantao-aph-characters.css?v=20261021-aph1",
   "/assets/js/plantao-monitor.js?v=20261016-overlays1",
   "/assets/css/plantao-patient-original.css?v=20261016-original1",
   "/",
@@ -36,6 +38,10 @@ const APP_SHELL = [
   "/manifest.webmanifest?v=5",
   "/mini-osce/",
   "/jogos/",
+  "/jogos/study-rats/",
+  "/jogos/study-rats/hall.css?v=20261021-hall1",
+  "/jogos/study-rats/hall.js?v=20261021-hall1",
+  "/jogos/study-rats/game.js?v=20261021-hall1",
   "/jogos/plantao-relampago/",
   "/jogos/sequencia-salvadora/",
   "/jogos/escapando-do-plantao/",
@@ -45,7 +51,7 @@ const APP_SHELL = [
   "/assets/js/pwa.js?v=20261013-width2",
   "/assets/css/style.css?v=16.14-font-unified",
   "/assets/css/luria-brand-v5.css?v=20261005-global-v90",
-  "/assets/css/review-fixes-20261020.css?v=20261021-comments",
+  "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",
   "/assets/css/dashboard-layouts.css?v=20261020-card-grid-all",
   "/assets/js/ui-routes.js?v=1",
   "/assets/css/ui-app.css?v=7",
@@ -112,7 +118,7 @@ const INSTALL_PRECACHE = new Set([
   "/assets/js/pwa.js?v=20261013-width2",
   "/assets/css/style.css?v=16.14-font-unified",
   "/assets/css/luria-brand-v5.css?v=20261005-global-v90",
-  "/assets/css/review-fixes-20261020.css?v=20261021-comments",
+  "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",
   "/assets/js/ui-routes.js?v=1",
   "/assets/css/ui-app.css?v=7",
   "/assets/css/education-ui-v2.css?v=2",

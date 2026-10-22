@@ -37,27 +37,54 @@ test("Daily request quota uses atomic update, RLS and is not exposed to clients"
   assert.match(migration, /revoke all on function .* from public, anon, authenticated/i);
 });
 
-test("Concise and safe voice handling avoids spending Gemini tokens on an ambiguous transcript", () => {
-  assert.match(edge, /ambiguous_transcription/);
-  assert.match(edge, /channel === "voice"/);
-  assert.match(edge, /Você quis dizer.*sepse/);
-  assert.match(edge, /maxOutputTokens: mode === "estourado" \? 3300 : channel === "voice" \? 650 : 1500/);
-  assert.match(edge, /MAX_HISTORY_ITEMS/);
-  assert.match(client, /shouldSendAlexHistory/);
-  assert.match(client, /payload\.history = alexHistory\.slice\(-4\)/);
-  assert.match(client, /data\.clarification/);
-  assert.match(edge, /não comece uma aula/);
-  assert.match(page, /alex-stop-response/);
-  assert.match(client, /stopAlexResponse/);
-  assert.match(client, /speechGeneration/);
-  assert.match(edge, /low_transcription_confidence/);
-  assert.match(edge, /voiceConfidence < 0\.65/);
-  assert.match(client, /payload\.voice_confidence/);
-  assert.match(client, /liveTranscriptConfidence/);
+test("Live conversation auto-plays audio and has no manual replay control", () => {
+  assert.doesNotMatch(page, /<script[^>]+professor-alex-voice\.js/);
+  assert.doesNotMatch(page, /alex-replay-audio|Ouvir resposta/);
+  assert.doesNotMatch(client, /replayVoiceButton|rememberVoiceReply|Ouvir resposta/);
+  assert.match(edge, /generativelanguage\.googleapis\.com\/v1beta\/interactions/);
+  assert.match(edge, /generation_config: \{ speech_config: \[\{ voice: "Puck" \}\] \}/);
+  assert.match(edge, /step\.type === "model_output"/);
+  assert.match(edge, /audioPart\?\.data/);
+  assert.match(client, /unlockLiveAudio\(\);/);
+  assert.match(client, /liveAudioContext\.decodeAudioData\(bytes\.buffer\)/);
+  assert.match(client, /source\.start\(0\)/);
+  assert.match(client, /playGeminiPuckAudio\(data\.audio/);
+  assert.match(client, /speakText\(data\.answer, onFinishedSpeaking\)/);
+  assert.match(client, /if \(!isLiveActive\) return;/);
+  assert.match(client, /!currentPuckSource && !audioPlaybackPending/);
+  assert.match(client, /stopCurrentVoicePlayback\(\)/);
+});
+
+test("Site-only retrieval and ambiguity guards stay before Gemini generation", () => {
   assert.match(client, /professor-alex-site-index\.json/);
-  assert.match(client, /site_context/);
+  assert.match(client, /payload\.site_context/);
   assert.match(client, /Não encontrei esse termo no conteúdo da LURIA/);
   assert.match(edge, /sourceMode/);
   assert.match(edge, /MAX_SITE_CONTEXT_CHARS/);
-  assert.match(edge, /Fonte restrita/);
+  assert.match(edge, /ambiguous_transcription/);
+  assert.match(edge, /voiceConfidence < 0\.65/);
+  assert.match(client, /payload\.voice_confidence/);
+  assert.match(client, /alex-stop-response/);
+});
+
+test("Fast answer format is sent to server and controls output budget", () => {
+  assert.match(page, /data-alex-depth="rapida"/);
+  assert.match(page, /data-alex-depth="aula"/);
+  assert.match(client, /depth: document\.querySelector/);
+  assert.match(edge, /const depth = data\.depth === "aula"/);
+  assert.match(edge, /FORMATO DÚVIDA RÁPIDA/);
+  assert.match(edge, /maxOutputTokens: depth === "aula"/);
+  assert.match(edge, /thinkingLevel/);
+  assert.match(edge, /generationConfig,/);
+  assert.match(edge, /generationConfig.thinkingConfig/);
+  assert.doesNotMatch(edge, /topP: 0/);
+});
+
+test("Gemini 3.8 TTS uses correct voice field and fast model for short replies", () => {
+  assert.match(edge, /voice:\s*"Puck"/);
+  assert.doesNotMatch(edge, /prebuiltVoiceConfig:\s*\{/);
+  assert.match(edge, /gemini-3\.8-flash-lite-tts/);
+  assert.match(edge, /depth === "aula" \? TTS_MODEL : TTS_FAST_MODEL/);
+  assert.match(edge, /audioError = "tts_unavailable"/);
+  assert.doesNotMatch(client, /rememberVoiceReply/);
 });

@@ -17,10 +17,12 @@ button {
   background: var(--color-surface, #fff);
   color: inherit;
   border-radius: 12px;
-  min-height: 36px;
+  min-height: 44px;
+  appearance: none;
+  background-clip: padding-box;
 }
 button:focus-visible, a:focus-visible {
-  outline: 3px solid #1687c7;
+  outline: 3px solid var(--color-focus-ring, #1687c7);
   outline-offset: 2px;
 }
 .robot {
@@ -62,13 +64,13 @@ professor-alex-mascot {
   left: 50%;
   transform: translateX(-50%) translateY(4px) scale(0.9);
   padding: 8px 14px;
-  background: #ffffff;
-  color: #0f2b48;
-  border: 1px solid #c7d8ed;
+  background: var(--color-surface-solid, #ffffff);
+  color: var(--color-text-primary, #0f2b48);
+  border: 1px solid var(--color-border, #c7d8ed);
   border-radius: 12px;
   font-size: 12px;
   font-weight: 750;
-  box-shadow: 0 6px 20px rgba(18, 54, 98, 0.16);
+  box-shadow: 0 6px 20px color-mix(in srgb,var(--color-primary,#184888) 16%,transparent);
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
@@ -86,17 +88,17 @@ professor-alex-mascot {
   left: 50%;
   transform: translateX(-50%);
   border: 6px solid transparent;
-  border-top-color: #ffffff;
+  border-top-color: var(--color-surface-solid, #ffffff);
 }
 .restore {
   width: 68px;
-  height: 40px;
+  height: 44px;
   border-radius: 12px !important;
-  box-shadow: 0 4px 16px rgba(18, 54, 98, 0.16);
+  box-shadow: 0 4px 16px color-mix(in srgb,var(--color-primary,#184888) 16%,transparent);
   pointer-events: auto;
   font-weight: 750;
   font-size: 12px;
-  background: var(--accent, #0077ff) !important;
+  background: var(--ui-pill-gradient, var(--accent, #0077ff)) !important;
   color: #ffffff !important;
   border: none !important;
 }
@@ -106,12 +108,12 @@ professor-alex-mascot {
   padding: 16px;
   border: 1px solid var(--color-border, #b5c6dc);
   border-radius: 14px;
-  background: #ffffff !important;
-  background-color: #ffffff !important;
+  background: var(--color-surface-solid, #ffffff) !important;
+  background-color: var(--color-surface-solid, #ffffff) !important;
   opacity: 1 !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
-  box-shadow: 0 10px 30px rgba(18, 54, 98, 0.22);
+  box-shadow: 0 10px 30px color-mix(in srgb,var(--color-primary,#184888) 22%,transparent);
   pointer-events: auto;
   z-index: 68;
 }
@@ -156,8 +158,8 @@ professor-alex-mascot {
   line-height: 1.4;
   overflow-wrap: anywhere;
 }
-.alex-quick-message.user { justify-self: end; background: #2563eb; color: #fff; }
-.alex-quick-message.alex { justify-self: start; background: #18263a; color: #f8fafc; }
+.alex-quick-message.user { justify-self: end; background: var(--ui-pill-gradient, #2563eb); color: #fff; }
+.alex-quick-message.alex { justify-self: start; background: var(--color-surface-elevated, #18263a); color: var(--color-text-primary, #f8fafc); }
 .alex-quick-message.pending { opacity: .7; font-style: italic; }
 .alex-quick-message.error { background: #3b1f2d; color: #fecdd3; }
 .alex-quick-actions { display: flex; align-items: center; gap: 8px; margin-top: 9px; }
@@ -165,18 +167,18 @@ professor-alex-mascot {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 34px;
+  min-height: 44px;
   padding: 0 10px;
   border-radius: 10px;
   font-size: 11px;
   font-weight: 750;
 }
-.alex-live-quick { flex: 1; border: 1px solid #2b7de9; background: #173f83; color: #fff; }
-.help .tutoring { flex: 1; border: 1px solid #2c3f59; background: #18263a; color: #9bc6ff; text-align: center; line-height: 1.25; }
+.alex-live-quick { flex: 1; border: 0; background: var(--ui-pill-gradient, #173f83); color: #fff; }
+.help .tutoring { flex: 1; border: 1px solid var(--color-border-interactive, #2c3f59); background: var(--color-surface-elevated, #18263a); color: var(--color-primary-text, #9bc6ff); text-align: center; line-height: 1.25; }
 .alex-quick-input {
   flex: 1;
   min-width: 0;
-  height: 36px;
+  height: 44px;
   padding: 0 10px;
   border-radius: 10px;
   border: 1px solid var(--color-border, #cbd5e1);
@@ -187,20 +189,20 @@ professor-alex-mascot {
   box-sizing: border-box;
 }
 .alex-quick-input:focus {
-  border-color: #2563EB;
+  border-color: var(--color-primary, #2563EB);
 }
 .alex-quick-send {
-  height: 36px;
+  height: 44px;
   padding: 0 12px;
-  border-radius: 10px !important;
-  background: linear-gradient(135deg, #184888, #2563EB) !important;
+  border-radius: var(--ui-radius-control, 12px) !important;
+  background: var(--ui-pill-gradient, var(--color-primary, #184888)) !important;
   color: #ffffff !important;
   border: none !important;
   font-size: 11.5px;
   font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
-  box-shadow: 0 2px 8px rgba(24, 72, 136, 0.25);
+  box-shadow: 0 2px 8px color-mix(in srgb,var(--color-primary,#184888) 25%,transparent);
 }
 .help .close {
   float: right;
@@ -230,7 +232,7 @@ professor-alex-mascot {
   justify-content: center;
   gap: 6px;
   width: 100%;
-  min-height: 36px;
+  min-height: 44px;
   border-radius: 12px !important;
   border: 1px solid #fed7aa !important;
   background: #fff7ed !important;
@@ -246,7 +248,7 @@ professor-alex-mascot {
 }
 .help .minimize {
   width: 100%;
-  min-height: 34px;
+  min-height: 44px;
   border-radius: 12px !important;
   border: 1px solid var(--color-border, #cbd5e1) !important;
   background: var(--color-surface, #ffffff) !important;
@@ -271,13 +273,13 @@ professor-alex-mascot {
 .help.dark-theme,
 :host-context([data-theme="dark"]) .help,
 :host-context([data-ui-appearance="dark"]) .help {
-  background: #0f1c2e !important;
-  background-color: #0f1c2e !important;
+  background: var(--color-surface-solid, #0f1c2e) !important;
+  background-color: var(--color-surface-solid, #0f1c2e) !important;
   opacity: 1 !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
-  border-color: #24354f !important;
-  color: #f1f5f9 !important;
+  border-color: var(--color-border, #24354f) !important;
+  color: var(--color-text-primary, #f1f5f9) !important;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
 }
 
@@ -286,7 +288,7 @@ professor-alex-mascot {
 .help.dark-theme h2,
 :host-context([data-theme="dark"]) .help h2,
 :host-context([data-ui-appearance="dark"]) .help h2 {
-  color: #f8fafc !important;
+  color: var(--color-text-primary, #f8fafc) !important;
 }
 
 :host([data-theme="dark"]) .help p,
@@ -294,7 +296,7 @@ professor-alex-mascot {
 .help.dark-theme p,
 :host-context([data-theme="dark"]) .help p,
 :host-context([data-ui-appearance="dark"]) .help p {
-  color: #94a3b8 !important;
+  color: var(--color-text-secondary, #94a3b8) !important;
 }
 
 :host([data-theme="dark"]) .alex-quick-input,
@@ -302,9 +304,9 @@ professor-alex-mascot {
 .help.dark-theme .alex-quick-input,
 :host-context([data-theme="dark"]) .alex-quick-input,
 :host-context([data-ui-appearance="dark"]) .alex-quick-input {
-  background: #18263a !important;
-  border-color: #2c3f59 !important;
-  color: #f8fafc !important;
+  background: var(--color-surface-elevated, #18263a) !important;
+  border-color: var(--color-border-interactive, #2c3f59) !important;
+  color: var(--color-text-primary, #f8fafc) !important;
 }
 
 :host([data-theme="dark"]) .help .minimize,
@@ -312,9 +314,9 @@ professor-alex-mascot {
 .help.dark-theme .minimize,
 :host-context([data-theme="dark"]) .help .minimize,
 :host-context([data-ui-appearance="dark"]) .help .minimize {
-  background: #18263a !important;
-  border-color: #2c3f59 !important;
-  color: #94a3b8 !important;
+  background: var(--color-surface-elevated, #18263a) !important;
+  border-color: var(--color-border-interactive, #2c3f59) !important;
+  color: var(--color-text-secondary, #94a3b8) !important;
 }
 
 :host([data-theme="dark"]) .help .recharge-btn,

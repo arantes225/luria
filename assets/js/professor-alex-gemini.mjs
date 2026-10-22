@@ -11,15 +11,48 @@ const outputTitle = output?.querySelector("h3");
 const submit = form?.querySelector('button[type="submit"]');
 const fileInput = document.getElementById("alex-file");
 let alexUsageTimer = null;
-const alexHistory = [];
-let speechGeneration = 0;
+const sessionHistory = [];
 let alexSiteIndexPromise = null;
+let liveTranscriptConfidence = null;
+let speechGeneration = 0;
+
+function shouldSendAlexHistory(text) {
+  return /\b(isso|nesse caso|e depois|por que|porque|qual deles|como diferencio|continue|aprofund|anterior)\b/i.test(String(text || ""));
+}
+
+function normalizeAlexSearch(value) {
+  return String(value || "").toLocaleLowerCase("pt-BR")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+async function findAlexSiteContext(query) {
+  if (!alexSiteIndexPromise) {
+    alexSiteIndexPromise = fetch("/assets/data/professor-alex-site-index.json?v=20261022-site1", { cache: "force-cache" })
+      .then(response => response.ok ? response.json() : Promise.reject(new Error("site_index_unavailable")))
+      .catch(() => ({ records: [] }));
+  }
+  const index = await alexSiteIndexPromise;
+  const normalized = normalizeAlexSearch(query);
+  const tokens = normalized.split(/\s+/).filter(token => token.length >= 3);
+  if (!tokens.length) return null;
+  const ranked = (index.records || []).map(record => {
+    const title = normalizeAlexSearch(record.title);
+    const haystack = normalizeAlexSearch([record.title, record.area, record.subject, record.text].join(" "));
+    const score = tokens.reduce((total, token) => total + (haystack.includes(token) ? (title.includes(token) ? 5 : 1) : 0), 0);
+    return { record, score };
+  }).filter(item => item.score > 0).sort((a, b) => b.score - a.score).slice(0, 3);
+  if (!ranked.length) return null;
+  return {
+    context: ranked.map(({ record }) => `[${record.title} | ${record.area}] ${String(record.text || "").slice(0, 900)}`).join("\n\n").slice(0, 3_000),
+    sources: ranked.map(({ record }) => `/apostilas/${record.slug}/`),
+  };
+}
 
 // Estado da Conversa ao Vivo por Voz
 let isLiveActive = false;
 let liveRecognition = null;
 let startLiveListening = null;
-let liveTranscriptConfidence = null;
 
 const ERROR_MESSAGES = {
   unauthorized: "Entre na sua conta da LURIA para conversar com o Professor Alex.",
@@ -43,52 +76,6 @@ const ERROR_MESSAGES = {
   usage_limit_unavailable: "Não foi possível verificar o limite de uso do Professor Alex.",
   backend_not_configured: "O backend do Professor Alex ainda não está configurado.",
 };
-
-function shouldSendAlexHistory(text) {
-  return /\b(isso|isso significa|nesse caso|e depois|por que|porque|qual deles|como diferencio|continue|aprofund| acima|anterior)\b/i.test(text);
-}
-
-function rememberAlexMessage(role, text) {
-  const value = String(text || "").trim();
-  if (!value) return;
-  alexHistory.push({ role, text: value.slice(0, 600) });
-  while (alexHistory.length > 8) alexHistory.shift();
-}
-
-function normalizeAlexSearch(value) {
-  return String(value || "").toLocaleLowerCase("pt-BR")
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9]+/g, " ").trim();
-}
-
-async function findAlexSiteContext(query) {
-  if (!alexSiteIndexPromise) {
-    alexSiteIndexPromise = fetch("/assets/data/professor-alex-site-index.json?v=20261022-site1", { cache: "force-cache" })
-      .then(response => response.ok ? response.json() : Promise.reject(new Error("site_index_unavailable")))
-      .catch(() => ({ records: [] }));
-  }
-  const index = await alexSiteIndexPromise;
-  const normalized = normalizeAlexSearch(query);
-  const tokens = normalized.split(/\s+/).filter(token => token.length >= 3);
-  if (!tokens.length) return null;
-  const ranked = (index.records || []).map(record => {
-    const haystack = normalizeAlexSearch([record.title, record.area, record.subject, record.text].join(" "));
-    const score = tokens.reduce((total, token) => total + (haystack.includes(token) ? (normalizeAlexSearch(record.title).includes(token) ? 5 : 1) : 0), 0);
-    return { record, score };
-  }).filter(item => item.score > 0).sort((a, b) => b.score - a.score).slice(0, 3);
-  if (!ranked.length) return null;
-  const excerpts = ranked.map(({ record }) => {
-    const text = String(record.text || "");
-    const hit = tokens.find(token => normalizeAlexSearch(text).includes(token)) || "";
-    const position = hit ? normalizeAlexSearch(text).indexOf(hit) : 0;
-    const start = Math.max(0, position - 180);
-    return `[${record.title} | ${record.area}] ${text.slice(start, start + 900)}`;
-  });
-  return {
-    context: excerpts.join("\n\n").slice(0, 3_000),
-    sources: ranked.map(({ record }) => `/apostilas/${record.slug}/`),
-  };
-}
 
 function ensureUsageStyles() {
   if (document.getElementById("alex-token-usage-styles")) return;
@@ -122,7 +109,7 @@ function ensureUsageUI() {
     widget.setAttribute("aria-live", "polite");
     widget.innerHTML = '<span class="alex-token-battery" aria-hidden="true">' +
       '<span></span><span></span><span></span><span></span><span></span>' +
-      '</span><span class="alex-token-copy"><strong id="alex-token-count">Uso de IA: —</strong>' +
+      '</span><span class="alex-token-copy"><strong id="alex-token-count">Bateria: —</strong>' +
       '<small id="alex-token-renewal">Renova em 24h</small></span>';
     controls.insertBefore(widget, controls.firstElementChild);
   } else {
@@ -135,11 +122,12 @@ function ensureUsageUI() {
 function renderUsage(usage) {
   const widget = ensureUsageUI();
   if (!widget) return;
-  const limit = Math.max(1, Number(usage?.daily_token_budget) || 30000);
+  const limit = Math.max(1, Number(usage?.daily_token_budget) || 100000);
   const remaining = Math.max(0, Math.min(limit, Number(usage?.remaining_tokens) || 0));
+  const percentage = Math.max(0, Math.min(100, Math.round((remaining / limit) * 100)));
   const count = document.getElementById("alex-token-count");
   const renewal = document.getElementById("alex-token-renewal");
-  if (count) count.textContent = `Uso de IA: ${remaining.toLocaleString("pt-BR")}`;
+  if (count) count.textContent = `Disponível: ${percentage}%`;
   if (renewal) {
     const renewsAt = Date.parse(String(usage?.renews_at || ""));
     const hours = Number.isFinite(renewsAt) ? Math.max(1, Math.ceil((renewsAt - Date.now()) / 3600000)) : 24;
@@ -147,9 +135,9 @@ function renderUsage(usage) {
   }
   widget.classList.toggle("is-empty", remaining === 0);
   const voiceMultiplier = Number(usage?.voice_multiplier) || 3;
-  widget.title = `${remaining.toLocaleString("pt-BR")} de uso de IA ponderado restante hoje. Voz consome ${voiceMultiplier}x. Renovação diária em até 24 horas.`;
+  widget.title = `${percentage}% de cota diária restante (${remaining.toLocaleString("pt-BR")} tokens de ${limit.toLocaleString("pt-BR")}). Renovação diária em até 24 horas.`;
   widget.querySelectorAll(".alex-token-battery span").forEach((bar, index) => {
-    bar.classList.toggle("is-filled", index < Math.ceil((remaining / limit) * 5));
+    bar.classList.toggle("is-filled", index < Math.ceil((percentage / 100) * 5));
   });
 }
 
@@ -303,19 +291,14 @@ if (form) {
       intent: document.querySelector("[data-alex-intent].is-active")?.dataset.alexIntent || "learn",
       mode: isEstourado ? "estourado" : "normal",
       channel: isLiveActive ? "voice" : "chat",
+      depth: document.querySelector('[data-alex-depth].is-active')?.dataset.alexDepth === "aula" ? "aula" : "rapida",
+      history: shouldSendAlexHistory(prompt) ? sessionHistory.slice(-4) : [],
     };
-    if (isLiveActive && Number.isFinite(liveTranscriptConfidence)) {
-      payload.voice_confidence = liveTranscriptConfidence;
-    }
-    if (shouldSendAlexHistory(prompt)) {
-      payload.history = alexHistory.slice(-4);
-    }
+    if (isLiveActive && Number.isFinite(liveTranscriptConfidence)) payload.voice_confidence = liveTranscriptConfidence;
     const hasMaterial = Boolean(fileInput?.files?.[0]);
-    const siteQuery = [topic, prompt].filter(Boolean).join(" ");
-    const siteContext = await findAlexSiteContext(siteQuery);
+    const siteContext = await findAlexSiteContext([topic, prompt].filter(Boolean).join(" "));
     if (!siteContext && !hasMaterial) {
-      const message = "Não encontrei esse termo no conteúdo da LURIA. Reformule a pergunta ou diga qual matéria você quer estudar. Não vou inventar uma aula fora do acervo.";
-      rememberAlexMessage("assistant", message);
+      const message = "Não encontrei esse termo no conteúdo da LURIA. Reformule a pergunta ou indique a matéria. Não vou inventar uma aula fora do acervo.";
       if (!isLiveActive) display(message, "Busca na LURIA", true);
       else speakText(message);
       return;
@@ -325,21 +308,20 @@ if (form) {
       payload.site_context = siteContext.context;
       payload.site_sources = siteContext.sources;
     }
-    rememberAlexMessage("user", prompt || topic);
 
-    const oldText = submit?.textContent || "Começar aula";
+    const oldText = submit?.textContent || "Perguntar";
     if (submit) {
       submit.disabled = true;
-      submit.textContent = isLiveActive ? "Pensando…" : "Preparando aula…";
+      submit.textContent = isLiveActive ? "Respondendo…" : (payload.depth === "aula" ? "Preparando aula…" : "Respondendo…");
     }
 
     if (isLiveActive) {
       const statusText = document.getElementById("alex-status-text");
       if (statusText) statusText.textContent = "🤔 Professor Alex pensando na resposta...";
     } else {
-      if (prompt) appendUserMessage(prompt);
-      display("Analisando sua pergunta e preparando a explicação…", "Professor Alex está pensando");
+      display(payload.depth === "aula" ? "Preparando explicação detalhada…" : "Respondendo à sua pergunta…", "Professor Alex está pensando");
     }
+    if (prompt) appendUserMessage(prompt);
 
     const mascot = document.getElementById("alex-mascot");
     if (mascot?.playAnimation) {
@@ -363,19 +345,21 @@ if (form) {
       if (error) throw error;
       if (data?.usage) renderUsage(data.usage);
       if (typeof data?.clarification === "string" && data.clarification.trim()) {
-        rememberAlexMessage("assistant", data.clarification);
         if (!isLiveActive) display(data.clarification, "Confirme a transcrição");
-        else {
-          const statusText = document.getElementById("alex-status-text");
-          if (statusText) statusText.textContent = "❓ Confirme o que você quis dizer...";
-          speakText(data.clarification);
-        }
+        else speakText(data.clarification);
         return;
       }
       if (typeof data?.answer !== "string" || !data.answer.trim()) throw Error("empty_response");
-      rememberAlexMessage("assistant", data.answer);
+      if (prompt) {
+        sessionHistory.push({ role: "user", text: prompt });
+        sessionHistory.push({ role: "model", text: data.answer });
+        if (sessionHistory.length > 20) sessionHistory.splice(0, sessionHistory.length - 20);
+      }
+      const promptInput = document.getElementById("alex-prompt");
+      if (prompt && promptInput?.value.trim() === prompt) promptInput.value = "";
+      // Modo ao vivo: texto acessível no chat e áudio automático. Chat comum: só texto.
+      display(data.answer, payload.depth === "aula" ? "Aula com o Professor Alex" : "Professor Alex");
       if (!isLiveActive) {
-        display(data.answer, "Sua aula com o Professor Alex");
         if (mascot?.playAnimation) {
           if (isEstourado) {
             mascot.expression = "angry";
@@ -386,18 +370,25 @@ if (form) {
         }
       } else {
         const statusText = document.getElementById("alex-status-text");
-        if (statusText) statusText.textContent = "🔊 Professor Alex respondendo por voz...";
-        speakText(data.answer, () => {
+        if (statusText) statusText.textContent = "🔊 Professor Alex respondendo por voz (Puck)...";
+        const onFinishedSpeaking = () => {
           if (isLiveActive) {
             const currentStatus = document.getElementById("alex-status-text");
             if (currentStatus) currentStatus.textContent = "🎙️ Ouvindo... Pode perguntar mais!";
             setTimeout(() => {
-              if (isLiveActive && !window.speechSynthesis?.speaking) {
+              if (isLiveActive && !window.speechSynthesis?.speaking && !currentPuckAudio && !currentPuckSource && !audioPlaybackPending) {
                 if (typeof startLiveListening === "function") startLiveListening();
               }
             }, 400);
           }
-        });
+        };
+
+        if (data?.audio) {
+          playGeminiPuckAudio(data.audio, data.audioMimeType || "audio/wav", onFinishedSpeaking, data.answer);
+        } else {
+          if (statusText) statusText.textContent = "Voz do Gemini indisponível. Usando a voz do dispositivo.";
+          speakText(data.answer, onFinishedSpeaking);
+        }
       }
     } catch (error) {
       const message = error?.message === "empty_response"
@@ -430,30 +421,144 @@ const liveCallBtn = document.getElementById("alex-live-call-btn");
 const liveCallText = document.getElementById("alex-live-call-text");
 const stopResponseBtn = document.getElementById("alex-stop-response");
 
+let currentPuckAudio = null;
+let currentPuckSource = null;
+let liveAudioContext = null;
+let audioPlaybackPending = false;
+let playbackGeneration = 0;
+
 function setStopResponseVisible(visible) {
   if (!stopResponseBtn) return;
   stopResponseBtn.hidden = !visible;
   stopResponseBtn.style.display = visible ? "inline-flex" : "none";
 }
 
-function stopAlexResponse() {
-  speechGeneration += 1;
-  window.speechSynthesis?.cancel();
-  if (liveRecognition) {
-    try { liveRecognition.abort(); } catch {}
-    liveRecognition = null;
+// O toque em "Conversar ao Vivo" autoriza a saída de áudio para toda a sessão.
+// No Safari/iOS a liberação precisa ocorrer dentro do evento de clique.
+function unlockLiveAudio() {
+  const Context = window.AudioContext || window.webkitAudioContext;
+  if (!Context) return;
+  try {
+    if (!liveAudioContext || liveAudioContext.state === "closed") {
+      liveAudioContext = new Context();
+    }
+    if (liveAudioContext.state === "suspended") {
+      liveAudioContext.resume().catch(() => {});
+    }
+    const silent = liveAudioContext.createBufferSource();
+    silent.buffer = liveAudioContext.createBuffer(1, 1, 22050);
+    silent.connect(liveAudioContext.destination);
+    silent.start(0);
+  } catch (err) {
+    console.warn("[Live Alex] Não foi possível habilitar AudioContext:", err?.name || "audio_error");
   }
+}
+
+function stopCurrentVoicePlayback() {
+  playbackGeneration += 1;
+  speechGeneration += 1;
+  audioPlaybackPending = false;
+  if (currentPuckSource) {
+    try { currentPuckSource.onended = null; currentPuckSource.stop(); } catch {}
+    currentPuckSource = null;
+  }
+  if (currentPuckAudio) {
+    try { currentPuckAudio.onended = null; currentPuckAudio.onerror = null; currentPuckAudio.pause(); currentPuckAudio.currentTime = 0; } catch {}
+    currentPuckAudio = null;
+  }
+  window.speechSynthesis?.cancel();
   const mascot = document.getElementById("alex-mascot");
   if (mascot) mascot.speaking = false;
   setStopResponseVisible(false);
-  const statusText = document.getElementById("alex-status-text");
-  if (statusText) statusText.textContent = isLiveActive ? "⏸️ Resposta interrompida. Toque para falar novamente." : "Resposta interrompida.";
 }
 
-stopResponseBtn?.addEventListener("click", stopAlexResponse);
+stopResponseBtn?.addEventListener("click", () => {
+  stopCurrentVoicePlayback();
+  const statusText = document.getElementById("alex-status-text");
+  if (statusText) statusText.textContent = isLiveActive ? "⏸️ Resposta interrompida." : "Resposta interrompida.";
+});
+
+function setMascotSpeaking() {
+  const mascot = document.getElementById("alex-mascot");
+  if (!mascot) return;
+  const toggle = document.getElementById("alex-mode-toggle");
+  const estourado = toggle?.getAttribute("aria-checked") === "true";
+  mascot.speaking = true;
+  if (typeof mascot.playAnimation === "function") {
+    mascot.expression = estourado ? "angry" : "happy";
+    mascot.playAnimation(estourado ? "angry" : "explaining");
+  }
+}
+
+// Reprodução automática na sessão de voz. AudioContext é desbloqueado na
+// ativação do modo ao vivo e reproduz o WAV do Gemini sem outro clique.
+async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackText = "") {
+  if (!isLiveActive) return;
+  stopCurrentVoicePlayback();
+  const generation = playbackGeneration;
+  audioPlaybackPending = true;
+  setStopResponseVisible(true);
+  const finish = () => {
+    if (generation !== playbackGeneration) return;
+    currentPuckSource = null;
+    currentPuckAudio = null;
+    audioPlaybackPending = false;
+    setStopResponseVisible(false);
+    const mascot = document.getElementById("alex-mascot");
+    if (mascot) mascot.speaking = false;
+    if (typeof onComplete === "function") onComplete();
+  };
+  const fallbackToSpeech = () => {
+    if (!isLiveActive || generation !== playbackGeneration) return;
+    currentPuckSource = null;
+    currentPuckAudio = null;
+    const status = document.getElementById("alex-status-text");
+    if (status) status.textContent = "Voz do Gemini indisponível. Respondendo com a voz do dispositivo...";
+    speakText(fallbackText, finish);
+  };
+
+  // Compatível com WAV unário do Gemini 3.8. A sessão de áudio já começou no clique.
+  if (liveAudioContext) {
+    try {
+      if (liveAudioContext.state === "suspended") await liveAudioContext.resume();
+      const raw = atob(base64Audio);
+      const bytes = new Uint8Array(raw.length);
+      for (let i = 0; i < raw.length; i++) bytes[i] = raw.charCodeAt(i);
+      const decoded = await liveAudioContext.decodeAudioData(bytes.buffer);
+      if (!isLiveActive || generation !== playbackGeneration) return;
+      const source = liveAudioContext.createBufferSource();
+      source.buffer = decoded;
+      source.connect(liveAudioContext.destination);
+      source.onended = finish;
+      currentPuckSource = source;
+      setMascotSpeaking();
+      source.start(0);
+      return;
+    } catch (error) {
+      console.warn("[Live Alex] Falha ao decodificar/reproduzir áudio:", error?.name || "audio_error");
+    }
+  }
+
+  // Navegadores sem AudioContext: tentar reprodução nativa automaticamente.
+  try {
+    if (!isLiveActive || generation !== playbackGeneration) return;
+    const audio = new Audio("data:" + (mimeType || "audio/wav") + ";base64," + base64Audio);
+    currentPuckAudio = audio;
+    audio.onplay = setMascotSpeaking;
+    audio.onended = finish;
+    audio.onerror = fallbackToSpeech;
+    const started = audio.play();
+    if (started && typeof started.catch === "function") started.catch(fallbackToSpeech);
+  } catch {
+    fallbackToSpeech();
+  }
+}
 
 function speakText(text, onComplete) {
-  if (!("speechSynthesis" in window)) {
+  if (!("speechSynthesis" in window) || typeof window.SpeechSynthesisUtterance !== "function") {
+    const status = document.getElementById("alex-status-text");
+    if (status) status.textContent = "Este navegador não oferece síntese de voz. A resposta está no chat.";
+    audioPlaybackPending = false;
     if (onComplete) onComplete();
     return;
   }
@@ -473,21 +578,23 @@ function speakText(text, onComplete) {
     return;
   }
 
+  const modeToggle = document.getElementById("alex-mode-toggle");
+  const isEstourado = (modeToggle?.getAttribute("aria-checked") === "true") ||
+    (modeToggle?.getAttribute("aria-pressed") === "true") ||
+    (document.querySelector('[data-alex-mode="estourado"]')?.getAttribute("aria-pressed") === "true");
+
+  audioPlaybackPending = true;
   const utterance = new SpeechSynthesisUtterance(plainText);
   utterance.lang = "pt-BR";
-  utterance.rate = 1.05;
-  utterance.pitch = 1.0;
+  // Cadência e tom calibrados conforme especificação do AI Studio:
+  utterance.rate = isEstourado ? 1.25 : 1.04;
+  utterance.pitch = isEstourado ? 0.82 : 1.0;
 
   try {
     const voices = window.speechSynthesis.getVoices?.() || [];
     const ptVoice = voices.find(v => v.lang === "pt-BR" || v.lang?.startsWith("pt"));
     if (ptVoice) utterance.voice = ptVoice;
   } catch {}
-
-  const modeToggle = document.getElementById("alex-mode-toggle");
-  const isEstourado = (modeToggle?.getAttribute("aria-checked") === "true") ||
-    (modeToggle?.getAttribute("aria-pressed") === "true") ||
-    (document.querySelector('[data-alex-mode="estourado"]')?.getAttribute("aria-pressed") === "true");
 
   const mascot = document.getElementById("alex-mascot");
   utterance.onstart = () => {
@@ -502,15 +609,22 @@ function speakText(text, onComplete) {
     }
   };
 
+  let speechDone = false;
   const endSpeech = () => {
-    if (mascot) mascot.speaking = false;
-    if (generation !== speechGeneration) return;
+    if (speechDone || generation !== speechGeneration) return;
+    speechDone = true;
+    audioPlaybackPending = false;
     setStopResponseVisible(false);
+    if (mascot) mascot.speaking = false;
     if (onComplete) onComplete();
   };
 
   utterance.onend = endSpeech;
-  utterance.onerror = endSpeech;
+  utterance.onerror = () => {
+    const status = document.getElementById("alex-status-text");
+    if (status) status.textContent = "Não foi possível reproduzir áudio. Verifique o volume e as permissões do navegador.";
+    endSpeech();
+  };
   window.speechSynthesis.speak(utterance);
 }
 
@@ -529,6 +643,8 @@ function initLiveVoiceMode() {
   });
 
   function startLiveMode() {
+    // Acionado diretamente pelo clique, antes do primeiro reconhecimento.
+    unlockLiveAudio();
     isLiveActive = true;
     liveCallBtn.classList.add("is-active");
     if (liveCallText) liveCallText.textContent = "Encerrar Conversa ao Vivo";
@@ -548,7 +664,7 @@ function initLiveVoiceMode() {
       try { liveRecognition.abort(); } catch {}
       liveRecognition = null;
     }
-    stopAlexResponse();
+    stopCurrentVoicePlayback();
     const mascot = document.getElementById("alex-mascot");
     if (mascot) {
       mascot.speaking = false;
@@ -565,13 +681,15 @@ function initLiveVoiceMode() {
 
   startLiveListening = startListening;
   function startListening() {
-    if (!isLiveActive) return;
+    if (!isLiveActive || liveRecognition || audioPlaybackPending || currentPuckSource || currentPuckAudio || submit?.disabled) return;
     try {
       liveRecognition = new SpeechRec();
+      const recognition = liveRecognition;
       liveRecognition.lang = "pt-BR";
       liveRecognition.continuous = false;
       liveRecognition.interimResults = false;
-      liveRecognition.onresult = async event => {
+      liveRecognition.onresult = event => {
+        if (!isLiveActive || recognition !== liveRecognition) return;
         const query = event.results?.[0]?.[0]?.transcript?.trim();
         if (query) {
           liveTranscriptConfidence = Number(event.results?.[0]?.[0]?.confidence);
@@ -584,7 +702,8 @@ function initLiveVoiceMode() {
         if (isLiveActive && err.error !== "no-speech") console.warn("[Live Alex]", err);
       };
       liveRecognition.onend = () => {
-        if (isLiveActive && !window.speechSynthesis?.speaking && !submit?.disabled) {
+        if (recognition === liveRecognition) liveRecognition = null;
+        if (isLiveActive && !window.speechSynthesis?.speaking && !currentPuckAudio && !currentPuckSource && !audioPlaybackPending && !submit?.disabled) {
           setTimeout(startListening, 600);
         }
       };

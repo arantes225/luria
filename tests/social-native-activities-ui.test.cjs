@@ -14,7 +14,22 @@ test('room activity workspace embeds canonical editors, protects rendering and p
  active={id:'dddddddd-dddd-4ddd-8ddd-dddddddddddd',kind:'simulator',active:true,is_admin:true,title:'Caso',case_id:caseId,participants:[]};w.dispatchEvent(new w.Event('luria:room-rendered'));await wait();d.getElementById('na-play').click();frame=d.getElementById('room-native-simulator');assert.equal(frame.dataset.caseId,caseId);assert.equal(new URL(frame.src).pathname,'/plantao/sala-emergencia/');w.dispatchEvent(new w.Event('luria:room-rendered'));await wait();assert.equal(d.getElementById('room-native-simulator'),frame);
  w.dispatchEvent(new w.MessageEvent('message',{origin:'https://evil.invalid',source:frame.contentWindow,data:{type:'luria:room-clinical-session',room_id:room,case_id:caseId,session_id:room}}));await wait();assert(!calls.some(c=>c.p_action==='simulation_join'));
  w.dispatchEvent(new w.MessageEvent('message',{origin:w.location.origin,source:frame.contentWindow,data:{type:'luria:room-clinical-session',room_id:room,case_id:caseId,session_id:room}}));await wait();assert(calls.some(c=>c.p_action==='simulation_join'));
+ assert(d.getElementById('social-room').classList.contains('na-wide'));
+ const close={type:'luria:room-simulator-close',room_id:room,case_id:caseId};
+ for(const invalid of [{origin:'https://evil.invalid',source:frame.contentWindow,data:close},{origin:w.location.origin,source:w,data:close},{origin:w.location.origin,source:frame.contentWindow,data:{...close,case_id:room}}])w.dispatchEvent(new w.MessageEvent('message',invalid));
+ assert.equal(d.getElementById('room-native-simulator'),frame);
+ w.dispatchEvent(new w.MessageEvent('message',{origin:w.location.origin,source:frame.contentWindow,data:close}));
+ assert.equal(d.getElementById('room-native-simulator'),null);assert(!d.getElementById('social-room').classList.contains('na-wide'));assert.equal(d.getElementById('na-wide').getAttribute('aria-pressed'),'false');
+ d.getElementById('na-play').click();assert(d.getElementById('room-native-simulator'));assert(d.getElementById('social-room').classList.contains('na-wide'));
+ d.querySelector('[data-workspace-tab="live"]').click();assert(!d.getElementById('social-room').classList.contains('na-wide'));assert(d.getElementById('room-native-simulator'));
+ d.getElementById('sc-tab-activity').click();d.getElementById('na-wide').click();active={...active,active:false};w.dispatchEvent(new w.Event('luria:room-rendered'));await wait();assert.equal(d.getElementById('room-native-simulator'),null);assert(!d.getElementById('social-room').classList.contains('na-wide'));
  w.dispatchEvent(new w.Event('luria:room-exit'));assert.equal(d.querySelector('#na-simulator iframe'),null);assert.equal(d.querySelector('#na-editor iframe'),null);assert.deepEqual(errors,[]);
+});
+
+test('simulator embed reports exit only with validated frame context',async t=>{
+ const {w,d}=page(t,'amigos/index.html');const frame=d.createElement('iframe');frame.id='room-native-simulator';frame.dataset.roomId='aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa';frame.dataset.nativeKind='simulator';frame.dataset.caseId='bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb';frame.src='/plantao/sala-emergencia/';d.body.append(frame);
+ const messages=[];w.postMessage=(data,origin)=>messages.push({data,origin});const child=frame.contentWindow;child.document.open();child.document.write('<!doctype html><html><body></body></html>');child.document.close();child.eval(read('assets/js/room-native-embed.js'));child.dispatchEvent(new child.Event('luria:clinical-exit'));
+ assert.equal(messages.length,1);assert.equal(messages[0].origin,w.location.origin);assert.equal(messages[0].data.type,'luria:room-simulator-close');assert.equal(messages[0].data.case_id,frame.dataset.caseId);
 });
 
 test('embed presentation is limited to the room frame and keeps only the parent companion',async t=>{
