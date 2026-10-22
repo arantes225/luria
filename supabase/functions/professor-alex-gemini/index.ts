@@ -67,7 +67,8 @@ const ALLOWED_ORIGINS = new Set([
   "http://127.0.0.1:8080",
 ]);
 const DEFAULT_MODEL = "gemini-3.5-flash-lite";
-const TTS_MODEL = Deno.env.get("ALEX_TTS_MODEL") || "gemini-3.8-flash-tts";
+const TTS_MODEL = "gemini-3.8-flash-tts";
+const TTS_FAST_MODEL = "gemini-3.8-flash-lite-tts";
 const MAX_PDF_BASE64 = 6_000_000; // ~4.5MB of raw PDF
 const MAX_BODY_BYTES = 6_500_000;
 
@@ -274,7 +275,10 @@ Deno.serve(async (req: Request) => {
         .slice(0, 1500)
         .trim();
 
-      const ttsResponse = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + TTS_MODEL + ":generateContent", {
+      // Flash-Lite TTS oferece menor latência para respostas curtas; aulas
+      // completas preservam o modelo expressivo. Um secret pode sobrescrever.
+      const ttsModel = Deno.env.get("ALEX_TTS_MODEL") || (depth === "aula" ? TTS_MODEL : TTS_FAST_MODEL);
+      const ttsResponse = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + ttsModel + ":generateContent", {
         method: "POST",
         headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
         body: JSON.stringify({
