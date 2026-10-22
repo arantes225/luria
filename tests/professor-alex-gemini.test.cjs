@@ -62,7 +62,10 @@ test("Fast answer format is sent to server and controls output budget", () => {
   assert.match(edge, /const depth = data\.depth === "aula"/);
   assert.match(edge, /FORMATO DÚVIDA RÁPIDA/);
   assert.match(edge, /maxOutputTokens: depth === "aula"/);
-  assert.match(edge, /thinkingBudget: 0/);
+  assert.match(edge, /thinkingLevel/);
+  assert.match(edge, /generationConfig,/);
+  assert.match(edge, /generationConfig.thinkingConfig/);
+  assert.doesNotMatch(edge, /topP: 0/);
 });
 
 test("Gemini 3.8 TTS uses correct voice field and fast model for short replies", () => {
