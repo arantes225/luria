@@ -4908,7 +4908,7 @@ let errorSpotlightTimer=null,errorSpotlightIndex=0;
 function startErrorSpotlight(){
   const text=document.getElementById("error-cat-spotlight-text"),meta=document.getElementById("error-cat-spotlight-meta"),bar=document.getElementById("error-cat-timer-bar");if(!text)return;
   const items=(Array.isArray(errorLibraryItems)?errorLibraryItems:[]).filter(x=>String(x?.ccq||"").trim());if(!items.length){text.textContent="Nenhum Pulo do Gato disponível nesta conta.";if(meta)meta.textContent="Os Pulos aparecem quando seus erros carregarem.";return}
-  const paint=()=>{const item=items[errorSpotlightIndex%items.length];text.classList.add("changing");setTimeout(()=>{text.textContent=item.ccq;meta.textContent=[item.area,item.materia||item.theme].filter(Boolean).join(" · ")||"Caderno de Erros";text.classList.remove("changing")},160);if(bar){bar.style.animation="none";void bar.offsetWidth;bar.style.animation="errorCatCountdown 15s linear forwards"};errorSpotlightIndex=(errorSpotlightIndex+1)%items.length};
+  const paint=()=>{const item=items[errorSpotlightIndex%items.length];text.classList.add("changing");setTimeout(()=>{text.textContent=item.ccq;const context=[item.area,item.materia||item.theme].filter(value=>value&&!/(medcof|medcurso|medway|aristo|estrat[eé]gia med|sanar)/i.test(String(value)));meta.textContent=context.join(" · ")||"Caderno de Erros";text.classList.remove("changing")},160);if(bar){bar.style.animation="none";void bar.offsetWidth;bar.style.animation="errorCatCountdown 15s linear forwards"};errorSpotlightIndex=(errorSpotlightIndex+1)%items.length};
   if(errorSpotlightTimer)clearInterval(errorSpotlightTimer);paint();if(items.length>1)errorSpotlightTimer=setInterval(paint,15000);
 }
 function renderErrorHomeExtras(){

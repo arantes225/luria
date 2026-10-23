@@ -153,7 +153,7 @@ body[data-page="erros"] #error-daily-card .qs-home-daily-action {
 }
 body[data-page="questoes"] #qs-home-daily-count,
 body[data-page="flashcards"] #review-launcher-count,
-body[data-page="erros"] #error-daily-count {
+body[data-page="erros"] #error-home-due-count {
   align-self: center !important;
   margin-inline: auto !important;
 }
@@ -185,7 +185,16 @@ body[data-page="plantao"] .plantao-phone-conversation-title { -webkit-line-clamp
 body[data-page="plantao"] .plantao-phone-conversation-preview { -webkit-line-clamp: 3 !important; }
 
 /* Games hub and game setup cards. */
-body[data-page="jogos"] .games-section-label { display: none !important; }
+body[data-page="jogos"] .games-section-label {
+  display: flex !important;
+  align-items: baseline !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+  margin: 18px 0 12px !important;
+}
+body[data-page="jogos"] .games-section-label h2 {
+  margin: 0 !important;
+}
 body[data-page="jogos"] .games-link,
 body[data-page="jogos"] .e-back-button,
 body[data-page="jogos"] .g-button:not(.g-secondary) {
@@ -206,7 +215,15 @@ body[data-page="jogos"] .g-top {
   background: var(--surface) !important;
 }
 body[data-page="jogos"] .g-top .g-back { margin: 0 !important; }
-body[data-page="jogos"] .g-top .g-edition { display: none !important; }
+body[data-page="jogos"] .g-top .g-edition {
+  display: inline-flex !important;
+  align-items: center !important;
+  min-height: 36px !important;
+  padding: 0 12px !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 999px !important;
+  color: var(--muted) !important;
+}
 body[data-page="jogos"] .g-hero {
   border-color: var(--border) !important;
   background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 30%, var(--surface)), var(--surface)) !important;
@@ -223,13 +240,37 @@ body[data-page="jogos"] .e-page-title-card {
   border-radius: 20px !important;
   background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 28%, var(--surface)), var(--surface)) !important;
 }
-body[data-page="jogos"] .e-page-title-actions .g-edition,
-body[data-page="jogos"] .e-page-title-actions .e-back-button { display: none !important; }
+body[data-page="jogos"] .e-page-title-actions .g-edition { display: none !important; }
+body[data-page="jogos"] .e-page-title-actions .e-back-button { display: inline-flex !important; }
+body[data-page="jogos"] .e-page-title-card.review-escape-title-card {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+}
+body[data-page="jogos"] .e-page-title-card .review-escape-summary {
+  display: grid !important;
+  grid-column: 1 / -1 !important;
+  grid-template-columns: minmax(0, 1.1fr) minmax(220px, .9fr) !important;
+  align-items: center !important;
+  gap: clamp(18px, 4vw, 42px) !important;
+  padding-top: 22px !important;
+}
+body[data-page="jogos"] .e-page-title-card .review-escape-summary h2 {
+  margin: 8px 0 0 !important;
+  font-size: clamp(30px, 4vw, 54px) !important;
+  line-height: 1.06 !important;
+}
+body[data-page="jogos"] .e-page-title-card .review-escape-summary .g-lead {
+  margin-top: 14px !important;
+  max-width: 620px !important;
+}
 body[data-page="jogos"] .e-page-title-card .review-escape-tags {
   display: flex !important;
   flex-wrap: wrap !important;
   gap: 8px !important;
-  margin: 16px 0 0 !important;
+  margin: 18px 0 0 !important;
+}
+body[data-page="jogos"] .e-page-title-card .review-escape-summary .e-illustration {
+  min-width: 0 !important;
 }
 body[data-page="jogos"] .e-hero { display: none !important; }
 body[data-page="jogos"] .e-intro { margin-top: 16px !important; }
@@ -246,4 +287,7 @@ body[data-page="jogos"] .e-story .e-narrative { max-width: 720px !important; }
   body .luria-page-spotlight.review-title-card .review-back-in-spotlight { margin: 0 !important; }
   body[data-page="jogos"] .g-top { align-items: flex-start !important; flex-direction: column !important; }
   body[data-page="jogos"] .g-top .g-edition { margin-left: auto !important; }
+  body[data-page="jogos"] .games-section-label { align-items: flex-start !important; flex-direction: column !important; gap: 4px !important; }
+  body[data-page="jogos"] .e-page-title-card.review-escape-title-card { grid-template-columns: 1fr !important; }
+  body[data-page="jogos"] .e-page-title-card .review-escape-summary { grid-template-columns: 1fr !important; }
 }

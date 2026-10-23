@@ -3,6 +3,24 @@ const {read,declaration,page,settle}=require('./fixtures/frontend.cjs');
 const {resolver}=require('./fixtures/questions.cjs');
 const flush=async()=>{for(let i=0;i<5;i++)await settle()};
 
+test('Global Alex access remains available in the application top bar',t=>{
+ const {w,d}=page(t,'dashboard/index.html'),source=read('assets/js/luria-command-center.js');
+ const topbar=d.querySelector('.topbar');
+ topbar.innerHTML='<div class="luria-notifications"><button class="luria-pomodoro-top" type="button">00:00</button></div>';
+ w.d=d;w.$=(selector,root=d)=>root.querySelector(selector);
+ w.eval(declaration(source,'topbar')+'\n'+declaration(source,'installSearch'));
+ w.installSearch();
+ const alex=d.getElementById('luria-alex-topbar');
+ assert(alex);assert.equal(alex.getAttribute('href'),'/professor-alex/');
+ assert.equal(alex.getAttribute('aria-label'),'Abrir Professor Alex');
+ assert.equal(alex.nextElementSibling.className,'luria-pomodoro-top');
+});
+
+test('Interactive question pages use source-neutral labels for external material',()=>{
+ const files=['questoes-simulados/index.html','questoes-simulados.html','registrar-questoes/index.html','registrar-questoes.html'];
+ for(const file of files) assert.doesNotMatch(read(file),/medcof|medcurso|medway|aristo|estrat[eé]gia med|sanar/i,file);
+});
+
 test('Simulation library keeps content separate from tools and preserves selection/menu handlers',t=>{
  const {w,d}=page(t,'questoes-simulados/index.html'),source=read('assets/js/questoes-simulados.js');
  w.qsState={sets:[{id:'s1',title:'Título longo '.repeat(12),total_questions:18,metrics:{answered:2,correct:1,wrong:1}}],selectedSetIds:new Set()};

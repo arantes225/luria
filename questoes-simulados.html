@@ -2499,7 +2499,7 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
                   <span class="error-home-action-icon qs-home-action-icon">↑</span>
                   <span class="error-home-action-copy qs-home-action-copy">
                     <strong>Enviar novo</strong>
-                    <small>Envie simulados externos (MEDCOF, Aristo, Medway...).</small>
+                    <small>Envie simulados externos.</small>
                   </span>
                   <span class="error-home-action-arrow qs-home-action-arrow">→</span>
                 </button>
@@ -2544,7 +2544,7 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
                 <span class="badge accent">Prática &amp; Avaliações</span>
                 <h2>Criar Lista ou Enviar Simulado</h2>
                 <p>
-                  Monte uma lista personalizada com até 100 questões do banco oficial LURIA ou envie simulados e provas realizados em plataformas externas (MEDCOF, Aristo, Medway, etc.).
+                  Monte uma lista personalizada com até 100 questões do banco oficial LURIA ou envie simulados e provas de outras fontes.
                 </p>
               </div>
             </div>
@@ -2654,7 +2654,7 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
               </div>
             </div>
 
-            <!-- ABA 2: ENVIAR SIMULADO EXTERNO (MEDCOF, ARISTO, MEDWAY, ESTRATÉGIA, MEDCURSO) -->
+            <!-- ABA 2: ENVIAR SIMULADO EXTERNO -->
             <div class="qs-add-section" data-qs-add-section="automatic">
               <div class="qs-external-container">
                 <div class="qs-external-hero-card">
@@ -2662,17 +2662,14 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
                     <span class="badge accent">Importação de Plataformas Externas</span>
                     <h3>Enviar Simulado ou Prova Externa</h3>
                     <p>
-                      Realizou uma prova no <strong>MEDCOF, Aristo, Medway, Estratégia MED, Medcurso</strong> ou na sua faculdade?
+                      Realizou uma prova em outra plataforma ou na sua faculdade?
                       Envie o PDF ou registre seu desempenho para alimentar seu histórico e o Caderno de Erros do LURIA.
                     </p>
                   </div>
-                  <div class="qs-external-cursinhos-badges">
-                    <span class="qs-cursinho-pill">MEDCOF</span>
-                    <span class="qs-cursinho-pill">Aristo</span>
-                    <span class="qs-cursinho-pill">Medway</span>
-                    <span class="qs-cursinho-pill">Estratégia MED</span>
-                    <span class="qs-cursinho-pill">Medcurso</span>
-                    <span class="qs-cursinho-pill">Outros</span>
+                  <div class="qs-external-cursinhos-badges" aria-label="Fontes aceitas">
+                    <span class="qs-cursinho-pill">Faculdade</span>
+                    <span class="qs-cursinho-pill">Prova própria</span>
+                    <span class="qs-cursinho-pill">Outra fonte</span>
                   </div>
                 </div>
 
@@ -2683,7 +2680,7 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
                       <strong id="qs-file-name">Selecione o PDF do Simulado</strong>
                       <small>
                         O LURIA lê o PDF localmente com privacidade total, extrai os enunciados e monta seu gabarito para marcar os erros.<br>
-                        PDFs oficiais de cursinhos funcionam perfeitamente.
+                        PDFs de outras fontes podem ser importados.
                       </small>
                       <label class="button secondary" for="qs-file">
                         Escolher arquivo PDF
@@ -2699,7 +2696,7 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
                         id="qs-title"
                         type="text"
                         maxlength="160"
-                        placeholder="Ex.: Simulado Geral MEDCOF — R1 2026"
+                        placeholder="Ex.: Simulado geral — R1 2026"
                       >
                     </label>
 
@@ -2755,7 +2752,7 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
                         id="qs-manual-title"
                         type="text"
                         maxlength="160"
-                        placeholder="Ex.: Simulado Aristo 01 (Físico)"
+                        placeholder="Ex.: Simulado 01 (físico)"
                       >
                     </label>
 

@@ -342,10 +342,6 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   html body[data-page="dashboard"] #dashboard-alternative .dl-grid .dl-areas { grid-column: 1 !important; grid-row: 5 !important; }
 }
 
-html body#luria-dashboard#luria-dashboard#luria-dashboard[data-ui="v2"][data-page="dashboard"] .topbar #luria-alex-topbar {
-  display: none !important;
-}
-
 /* ==========================================================================
    BOTOES GLOBAIS - PADRONIZACAO SOBERANA DE DEGRADE E CONTRASTE
    - Regra Geral: TODAS as escritas em botoes de degrade sao ESCURAS (#08101F / #19091E)

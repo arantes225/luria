@@ -57,7 +57,7 @@
   }
 
   function removeReviewOnlyContent() {
-    document.querySelectorAll(".books-page .production-lots, .books-page .library-book-link, body[data-page=\"jogos\"] .games-section-label").forEach((node) => node.remove());
+    document.querySelectorAll(".books-page .production-lots, .books-page .library-book-link").forEach((node) => node.remove());
     document.querySelectorAll(".qs-home-action-upload small").forEach((node) => {
       if (/MEDCOF|Aristo|Medway/i.test(text(node))) node.textContent = "Envie simulados externos.";
     });
@@ -68,14 +68,22 @@
     }
   }
 
-  function moveEscapeTags() {
+  function moveEscapeHero() {
     if (document.body?.dataset.page !== "jogos") return;
     const titleCard = document.querySelector(".e-page-title-card");
     const hero = document.querySelector(".e-hero");
-    const tags = hero?.querySelector(".g-tags");
-    if (!titleCard || !tags || titleCard.querySelector(".review-escape-tags")) return;
-    tags.classList.add("review-escape-tags");
-    titleCard.appendChild(tags);
+    const copy = hero?.querySelector(":scope > div:not(.g-hero-art)");
+    const illustration = hero?.querySelector(":scope > .e-illustration");
+    if (!titleCard || !hero || !copy || titleCard.querySelector(".review-escape-summary")) return;
+    const summary = document.createElement("section");
+    summary.className = "review-escape-summary";
+    const tags = copy.querySelector(".g-tags");
+    if (tags) tags.classList.add("review-escape-tags");
+    summary.append(copy);
+    if (illustration) summary.append(illustration);
+    titleCard.classList.add("review-escape-title-card");
+    titleCard.append(summary);
+    hero.remove();
   }
 
   function clearAlexPrompt() {
@@ -98,7 +106,7 @@
     ensureBackLinks();
     ensureDashboardApps();
     removeReviewOnlyContent();
-    moveEscapeTags();
+    moveEscapeHero();
     clearAlexPrompt();
   }
 
