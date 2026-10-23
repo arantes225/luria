@@ -240,7 +240,15 @@ body[data-page="jogos"] .e-page-title-card {
   border-radius: 20px !important;
   background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 28%, var(--surface)), var(--surface)) !important;
 }
-body[data-page="jogos"] .e-page-title-actions .g-edition { display: none !important; }
+body[data-page="jogos"] .e-page-title-actions .g-edition {
+  display: inline-flex !important;
+  align-items: center !important;
+  min-height: 36px !important;
+  padding: 0 12px !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 999px !important;
+  color: var(--muted) !important;
+}
 body[data-page="jogos"] .e-page-title-actions .e-back-button { display: inline-flex !important; }
 body[data-page="jogos"] .e-page-title-card.review-escape-title-card {
   display: grid !important;

@@ -28,6 +28,14 @@ test('Study Rats presents each hall entry route as a primary action',()=>{
  assert.match(css,/color: var\(--luria-btn-text-blue, #08101f\) !important;/);
 });
 
+test('Escape keeps its game edition beside the link back to the games hub',()=>{
+ const css=read('assets/css/review-continuation-20261022.css'),source=read('assets/js/games/escape.js');
+ assert.match(source,/03 \/ Uma aventura de cuidado/);
+ assert.match(source,/Voltar à Central de jogos/);
+ assert.match(css,/\.e-page-title-actions \.g-edition \{\s*display: inline-flex !important;/);
+ assert.doesNotMatch(css,/\.e-page-title-actions \.g-edition \{\s*display: none !important;/);
+});
+
 test('Simulation library keeps content separate from tools and preserves selection/menu handlers',t=>{
  const {w,d}=page(t,'questoes-simulados/index.html'),source=read('assets/js/questoes-simulados.js');
  w.qsState={sets:[{id:'s1',title:'Título longo '.repeat(12),total_questions:18,metrics:{answered:2,correct:1,wrong:1}}],selectedSetIds:new Set()};
