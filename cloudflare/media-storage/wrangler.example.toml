@@ -1,0 +1,19 @@
+# TEMPLATE ONLY — use a separate Cloudflare R2 bucket for staging.
+# Copy to wrangler.staging.toml and fill ALLOWED_ORIGINS and the publishable key.
+# Never put the R2 access key or SIGNING_SECRET in this file.
+name = "luria-media-staging"
+main = "worker.mjs"
+compatibility_date = "2026-10-23"
+workers_dev = true
+preview_urls = false
+
+[vars]
+SUPABASE_URL = "https://kvprgusgfptslbhigsab.supabase.co"
+SUPABASE_PUBLISHABLE_KEY = "REPLACE_WITH_STAGING_PUBLISHABLE_KEY"
+ALLOWED_ORIGINS = "http://localhost:8080"
+MEDIA_WRITE_ENABLED = "false"
+MAX_FILE_BYTES = "10485760"
+
+[[r2_buckets]]
+binding = "R2_MEDIA"
+bucket_name = "luria-media-staging"
