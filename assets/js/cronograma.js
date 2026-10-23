@@ -1,5 +1,17 @@
 const scheduleSb = window.supabaseClient;
 
+function debounce(func, wait) {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
+
 const scheduleState = {
   user: null,
   file: null,
@@ -7417,12 +7429,12 @@ function wireEventLibrary() {
     )
     ?.addEventListener(
       "input",
-      (event) => {
+      debounce((event) => {
         scheduleState.eventSearch =
           event.target.value || "";
 
         renderEventLibrary();
-      }
+      }, 300)
     );
 
   document
@@ -8154,12 +8166,12 @@ function wireThemeLibraryFilters() {
 
   search?.addEventListener(
     "input",
-    () => {
+    debounce(() => {
       scheduleState.themeSearch =
         search.value;
 
       renderThemeLibrary();
-    }
+    }, 300)
   );
 
 
