@@ -12,6 +12,42 @@ const submit = form?.querySelector('button[type="submit"]');
 const fileInput = document.getElementById("alex-file");
 let alexUsageTimer = null;
 const sessionHistory = [];
+let alexSiteIndexPromise = null;
+let liveTranscriptConfidence = null;
+let speechGeneration = 0;
+
+function shouldSendAlexHistory(text) {
+  return /\b(isso|nesse caso|e depois|por que|porque|qual deles|como diferencio|continue|aprofund|anterior)\b/i.test(String(text || ""));
+}
+
+function normalizeAlexSearch(value) {
+  return String(value || "").toLocaleLowerCase("pt-BR")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+async function findAlexSiteContext(query) {
+  if (!alexSiteIndexPromise) {
+    alexSiteIndexPromise = fetch("/assets/data/professor-alex-site-index.json?v=20261022-site1", { cache: "force-cache" })
+      .then(response => response.ok ? response.json() : Promise.reject(new Error("site_index_unavailable")))
+      .catch(() => ({ records: [] }));
+  }
+  const index = await alexSiteIndexPromise;
+  const normalized = normalizeAlexSearch(query);
+  const tokens = normalized.split(/\s+/).filter(token => token.length >= 3);
+  if (!tokens.length) return null;
+  const ranked = (index.records || []).map(record => {
+    const title = normalizeAlexSearch(record.title);
+    const haystack = normalizeAlexSearch([record.title, record.area, record.subject, record.text].join(" "));
+    const score = tokens.reduce((total, token) => total + (haystack.includes(token) ? (title.includes(token) ? 5 : 1) : 0), 0);
+    return { record, score };
+  }).filter(item => item.score > 0).sort((a, b) => b.score - a.score).slice(0, 3);
+  if (!ranked.length) return null;
+  return {
+    context: ranked.map(({ record }) => `[${record.title} | ${record.area}] ${String(record.text || "").slice(0, 900)}`).join("\n\n").slice(0, 3_000),
+    sources: ranked.map(({ record }) => `/apostilas/${record.slug}/`),
+  };
+}
 
 // Estado da Conversa ao Vivo por Voz
 let isLiveActive = false;
@@ -255,22 +291,37 @@ if (form) {
       intent: document.querySelector("[data-alex-intent].is-active")?.dataset.alexIntent || "learn",
       mode: isEstourado ? "estourado" : "normal",
       channel: isLiveActive ? "voice" : "chat",
-      history: sessionHistory.slice(-8),
+      depth: document.querySelector('[data-alex-depth].is-active')?.dataset.alexDepth === "aula" ? "aula" : "rapida",
+      history: shouldSendAlexHistory(prompt) ? sessionHistory.slice(-4) : [],
     };
+    if (isLiveActive && Number.isFinite(liveTranscriptConfidence)) payload.voice_confidence = liveTranscriptConfidence;
+    const hasMaterial = Boolean(fileInput?.files?.[0]);
+    const siteContext = await findAlexSiteContext([topic, prompt].filter(Boolean).join(" "));
+    if (!siteContext && !hasMaterial) {
+      const message = "Não encontrei esse termo no conteúdo da LURIA. Reformule a pergunta ou indique a matéria. Não vou inventar uma aula fora do acervo.";
+      if (!isLiveActive) display(message, "Busca na LURIA", true);
+      else speakText(message);
+      return;
+    }
+    if (siteContext) {
+      payload.source_mode = "luria_site";
+      payload.site_context = siteContext.context;
+      payload.site_sources = siteContext.sources;
+    }
 
-    const oldText = submit?.textContent || "Começar aula";
+    const oldText = submit?.textContent || "Perguntar";
     if (submit) {
       submit.disabled = true;
-      submit.textContent = isLiveActive ? "Pensando…" : "Preparando aula…";
+      submit.textContent = isLiveActive ? "Respondendo…" : (payload.depth === "aula" ? "Preparando aula…" : "Respondendo…");
     }
 
     if (isLiveActive) {
       const statusText = document.getElementById("alex-status-text");
       if (statusText) statusText.textContent = "🤔 Professor Alex pensando na resposta...";
     } else {
-      if (prompt) appendUserMessage(prompt);
-      display("Analisando sua pergunta e preparando a explicação…", "Professor Alex está pensando");
+      display(payload.depth === "aula" ? "Preparando explicação detalhada…" : "Respondendo à sua pergunta…", "Professor Alex está pensando");
     }
+    if (prompt) appendUserMessage(prompt);
 
     const mascot = document.getElementById("alex-mascot");
     if (mascot?.playAnimation) {
@@ -293,14 +344,22 @@ if (form) {
       const { data, error } = await client.functions.invoke("professor-alex-gemini", { body: payload });
       if (error) throw error;
       if (data?.usage) renderUsage(data.usage);
+      if (typeof data?.clarification === "string" && data.clarification.trim()) {
+        if (!isLiveActive) display(data.clarification, "Confirme a transcrição");
+        else speakText(data.clarification);
+        return;
+      }
       if (typeof data?.answer !== "string" || !data.answer.trim()) throw Error("empty_response");
       if (prompt) {
         sessionHistory.push({ role: "user", text: prompt });
         sessionHistory.push({ role: "model", text: data.answer });
         if (sessionHistory.length > 20) sessionHistory.splice(0, sessionHistory.length - 20);
       }
+      const promptInput = document.getElementById("alex-prompt");
+      if (prompt && promptInput?.value.trim() === prompt) promptInput.value = "";
+      // Modo ao vivo: texto acessível no chat e áudio automático. Chat comum: só texto.
+      display(data.answer, payload.depth === "aula" ? "Aula com o Professor Alex" : "Professor Alex");
       if (!isLiveActive) {
-        display(data.answer, "Sua aula com o Professor Alex");
         if (mascot?.playAnimation) {
           if (isEstourado) {
             mascot.expression = "angry";
@@ -317,7 +376,7 @@ if (form) {
             const currentStatus = document.getElementById("alex-status-text");
             if (currentStatus) currentStatus.textContent = "🎙️ Ouvindo... Pode perguntar mais!";
             setTimeout(() => {
-              if (isLiveActive && !window.speechSynthesis?.speaking && !currentPuckAudio) {
+              if (isLiveActive && !window.speechSynthesis?.speaking && !currentPuckAudio && !currentPuckSource && !audioPlaybackPending) {
                 if (typeof startLiveListening === "function") startLiveListening();
               }
             }, 400);
@@ -325,8 +384,9 @@ if (form) {
         };
 
         if (data?.audio) {
-          playGeminiPuckAudio(data.audio, data.audioMimeType || "audio/wav", onFinishedSpeaking);
+          playGeminiPuckAudio(data.audio, data.audioMimeType || "audio/wav", onFinishedSpeaking, data.answer);
         } else {
+          if (statusText) statusText.textContent = "Voz do Gemini indisponível. Usando a voz do dispositivo.";
           speakText(data.answer, onFinishedSpeaking);
         }
       }
@@ -359,75 +419,150 @@ if (form) {
 // ==========================================
 const liveCallBtn = document.getElementById("alex-live-call-btn");
 const liveCallText = document.getElementById("alex-live-call-text");
+const stopResponseBtn = document.getElementById("alex-stop-response");
 
 let currentPuckAudio = null;
+let currentPuckSource = null;
+let liveAudioContext = null;
+let audioPlaybackPending = false;
+let playbackGeneration = 0;
 
-function playGeminiPuckAudio(base64Audio, mimeType, onComplete) {
+function setStopResponseVisible(visible) {
+  if (!stopResponseBtn) return;
+  stopResponseBtn.hidden = !visible;
+  stopResponseBtn.style.display = visible ? "inline-flex" : "none";
+}
+
+// O toque em "Conversar ao Vivo" autoriza a saída de áudio para toda a sessão.
+// No Safari/iOS a liberação precisa ocorrer dentro do evento de clique.
+function unlockLiveAudio() {
+  const Context = window.AudioContext || window.webkitAudioContext;
+  if (!Context) return;
+  try {
+    if (!liveAudioContext || liveAudioContext.state === "closed") {
+      liveAudioContext = new Context();
+    }
+    if (liveAudioContext.state === "suspended") {
+      liveAudioContext.resume().catch(() => {});
+    }
+    const silent = liveAudioContext.createBufferSource();
+    silent.buffer = liveAudioContext.createBuffer(1, 1, 22050);
+    silent.connect(liveAudioContext.destination);
+    silent.start(0);
+  } catch (err) {
+    console.warn("[Live Alex] Não foi possível habilitar AudioContext:", err?.name || "audio_error");
+  }
+}
+
+function stopCurrentVoicePlayback() {
+  playbackGeneration += 1;
+  speechGeneration += 1;
+  audioPlaybackPending = false;
+  if (currentPuckSource) {
+    try { currentPuckSource.onended = null; currentPuckSource.stop(); } catch {}
+    currentPuckSource = null;
+  }
   if (currentPuckAudio) {
-    try {
-      currentPuckAudio.pause();
-      currentPuckAudio.currentTime = 0;
-    } catch {}
+    try { currentPuckAudio.onended = null; currentPuckAudio.onerror = null; currentPuckAudio.pause(); currentPuckAudio.currentTime = 0; } catch {}
     currentPuckAudio = null;
   }
   window.speechSynthesis?.cancel();
-    if (currentPuckAudio) {
-      try {
-        currentPuckAudio.pause();
-        currentPuckAudio.currentTime = 0;
-      } catch {}
-      currentPuckAudio = null;
-    }
-
-  const modeToggle = document.getElementById("alex-mode-toggle");
-  const isEstourado = (modeToggle?.getAttribute("aria-checked") === "true") ||
-    (modeToggle?.getAttribute("aria-pressed") === "true") ||
-    (document.querySelector('[data-alex-mode="estourado"]')?.getAttribute("aria-pressed") === "true");
-
   const mascot = document.getElementById("alex-mascot");
-  try {
-    const audioUrl = "data:" + (mimeType || "audio/wav") + ";base64," + base64Audio;
-    const audio = new Audio(audioUrl);
-    currentPuckAudio = audio;
+  if (mascot) mascot.speaking = false;
+  setStopResponseVisible(false);
+}
 
-    audio.onplay = () => {
-      if (mascot) {
-        mascot.speaking = true;
-        if (typeof mascot.playAnimation === "function") {
-          mascot.expression = isEstourado ? "angry" : "happy";
-          mascot.playAnimation(isEstourado ? "angry" : "explaining");
-        }
-      }
-    };
+stopResponseBtn?.addEventListener("click", () => {
+  stopCurrentVoicePlayback();
+  const statusText = document.getElementById("alex-status-text");
+  if (statusText) statusText.textContent = isLiveActive ? "⏸️ Resposta interrompida." : "Resposta interrompida.";
+});
 
-    const cleanup = () => {
-      if (mascot) mascot.speaking = false;
-      if (currentPuckAudio === audio) currentPuckAudio = null;
-      if (typeof onComplete === "function") onComplete();
-    };
+function setMascotSpeaking() {
+  const mascot = document.getElementById("alex-mascot");
+  if (!mascot) return;
+  const toggle = document.getElementById("alex-mode-toggle");
+  const estourado = toggle?.getAttribute("aria-checked") === "true";
+  mascot.speaking = true;
+  if (typeof mascot.playAnimation === "function") {
+    mascot.expression = estourado ? "angry" : "happy";
+    mascot.playAnimation(estourado ? "angry" : "explaining");
+  }
+}
 
-    audio.onended = cleanup;
-    audio.onerror = () => {
-      cleanup();
-    };
-
-    const playPromise = audio.play();
-    if (playPromise !== undefined) {
-      playPromise.catch(() => {
-        cleanup();
-      });
-    }
-  } catch (err) {
+// Reprodução automática na sessão de voz. AudioContext é desbloqueado na
+// ativação do modo ao vivo e reproduz o WAV do Gemini sem outro clique.
+async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackText = "") {
+  if (!isLiveActive) return;
+  stopCurrentVoicePlayback();
+  const generation = playbackGeneration;
+  audioPlaybackPending = true;
+  setStopResponseVisible(true);
+  const finish = () => {
+    if (generation !== playbackGeneration) return;
+    currentPuckSource = null;
+    currentPuckAudio = null;
+    audioPlaybackPending = false;
+    setStopResponseVisible(false);
+    const mascot = document.getElementById("alex-mascot");
     if (mascot) mascot.speaking = false;
     if (typeof onComplete === "function") onComplete();
+  };
+  const fallbackToSpeech = () => {
+    if (!isLiveActive || generation !== playbackGeneration) return;
+    currentPuckSource = null;
+    currentPuckAudio = null;
+    const status = document.getElementById("alex-status-text");
+    if (status) status.textContent = "Voz do Gemini indisponível. Respondendo com a voz do dispositivo...";
+    speakText(fallbackText, finish);
+  };
+
+  // Compatível com WAV unário do Gemini 3.8. A sessão de áudio já começou no clique.
+  if (liveAudioContext) {
+    try {
+      if (liveAudioContext.state === "suspended") await liveAudioContext.resume();
+      const raw = atob(base64Audio);
+      const bytes = new Uint8Array(raw.length);
+      for (let i = 0; i < raw.length; i++) bytes[i] = raw.charCodeAt(i);
+      const decoded = await liveAudioContext.decodeAudioData(bytes.buffer);
+      if (!isLiveActive || generation !== playbackGeneration) return;
+      const source = liveAudioContext.createBufferSource();
+      source.buffer = decoded;
+      source.connect(liveAudioContext.destination);
+      source.onended = finish;
+      currentPuckSource = source;
+      setMascotSpeaking();
+      source.start(0);
+      return;
+    } catch (error) {
+      console.warn("[Live Alex] Falha ao decodificar/reproduzir áudio:", error?.name || "audio_error");
+    }
+  }
+
+  // Navegadores sem AudioContext: tentar reprodução nativa automaticamente.
+  try {
+    if (!isLiveActive || generation !== playbackGeneration) return;
+    const audio = new Audio("data:" + (mimeType || "audio/wav") + ";base64," + base64Audio);
+    currentPuckAudio = audio;
+    audio.onplay = setMascotSpeaking;
+    audio.onended = finish;
+    audio.onerror = fallbackToSpeech;
+    const started = audio.play();
+    if (started && typeof started.catch === "function") started.catch(fallbackToSpeech);
+  } catch {
+    fallbackToSpeech();
   }
 }
 
 function speakText(text, onComplete) {
-  if (!("speechSynthesis" in window)) {
+  if (!("speechSynthesis" in window) || typeof window.SpeechSynthesisUtterance !== "function") {
+    const status = document.getElementById("alex-status-text");
+    if (status) status.textContent = "Este navegador não oferece síntese de voz. A resposta está no chat.";
+    audioPlaybackPending = false;
     if (onComplete) onComplete();
     return;
   }
+  const generation = ++speechGeneration;
   window.speechSynthesis.cancel();
 
   const plainText = String(text || "")
@@ -448,6 +583,7 @@ function speakText(text, onComplete) {
     (modeToggle?.getAttribute("aria-pressed") === "true") ||
     (document.querySelector('[data-alex-mode="estourado"]')?.getAttribute("aria-pressed") === "true");
 
+  audioPlaybackPending = true;
   const utterance = new SpeechSynthesisUtterance(plainText);
   utterance.lang = "pt-BR";
   // Cadência e tom calibrados conforme especificação do AI Studio:
@@ -462,6 +598,8 @@ function speakText(text, onComplete) {
 
   const mascot = document.getElementById("alex-mascot");
   utterance.onstart = () => {
+    if (generation !== speechGeneration) return;
+    setStopResponseVisible(true);
     if (mascot) {
       mascot.speaking = true;
       if (typeof mascot.playAnimation === "function") {
@@ -471,13 +609,22 @@ function speakText(text, onComplete) {
     }
   };
 
+  let speechDone = false;
   const endSpeech = () => {
+    if (speechDone || generation !== speechGeneration) return;
+    speechDone = true;
+    audioPlaybackPending = false;
+    setStopResponseVisible(false);
     if (mascot) mascot.speaking = false;
     if (onComplete) onComplete();
   };
 
   utterance.onend = endSpeech;
-  utterance.onerror = endSpeech;
+  utterance.onerror = () => {
+    const status = document.getElementById("alex-status-text");
+    if (status) status.textContent = "Não foi possível reproduzir áudio. Verifique o volume e as permissões do navegador.";
+    endSpeech();
+  };
   window.speechSynthesis.speak(utterance);
 }
 
@@ -496,6 +643,8 @@ function initLiveVoiceMode() {
   });
 
   function startLiveMode() {
+    // Acionado diretamente pelo clique, antes do primeiro reconhecimento.
+    unlockLiveAudio();
     isLiveActive = true;
     liveCallBtn.classList.add("is-active");
     if (liveCallText) liveCallText.textContent = "Encerrar Conversa ao Vivo";
@@ -515,7 +664,7 @@ function initLiveVoiceMode() {
       try { liveRecognition.abort(); } catch {}
       liveRecognition = null;
     }
-    window.speechSynthesis?.cancel();
+    stopCurrentVoicePlayback();
     const mascot = document.getElementById("alex-mascot");
     if (mascot) {
       mascot.speaking = false;
@@ -532,15 +681,18 @@ function initLiveVoiceMode() {
 
   startLiveListening = startListening;
   function startListening() {
-    if (!isLiveActive) return;
+    if (!isLiveActive || liveRecognition || audioPlaybackPending || currentPuckSource || currentPuckAudio || submit?.disabled) return;
     try {
       liveRecognition = new SpeechRec();
+      const recognition = liveRecognition;
       liveRecognition.lang = "pt-BR";
       liveRecognition.continuous = false;
       liveRecognition.interimResults = false;
-      liveRecognition.onresult = async event => {
+      liveRecognition.onresult = event => {
+        if (!isLiveActive || recognition !== liveRecognition) return;
         const query = event.results?.[0]?.[0]?.transcript?.trim();
         if (query) {
+          liveTranscriptConfidence = Number(event.results?.[0]?.[0]?.confidence);
           const promptInput = document.getElementById("alex-prompt");
           if (promptInput) promptInput.value = query;
           if (form) form.dispatchEvent(new Event("submit", { cancelable: true }));
@@ -550,7 +702,8 @@ function initLiveVoiceMode() {
         if (isLiveActive && err.error !== "no-speech") console.warn("[Live Alex]", err);
       };
       liveRecognition.onend = () => {
-        if (isLiveActive && !window.speechSynthesis?.speaking && !submit?.disabled) {
+        if (recognition === liveRecognition) liveRecognition = null;
+        if (isLiveActive && !window.speechSynthesis?.speaking && !currentPuckAudio && !currentPuckSource && !audioPlaybackPending && !submit?.disabled) {
           setTimeout(startListening, 600);
         }
       };

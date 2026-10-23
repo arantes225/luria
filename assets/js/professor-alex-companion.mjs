@@ -54,8 +54,8 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
     <style>
       :host { opacity: 1 !important; }
       .help {
-        background: #ffffff !important;
-        background-color: #ffffff !important;
+        background: var(--color-surface-solid, #ffffff) !important;
+        background-color: var(--color-surface-solid, #ffffff) !important;
         opacity: 1 !important;
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
@@ -63,8 +63,8 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
       :host([data-theme="dark"]) .help,
       :host([data-ui-appearance="dark"]) .help,
       .help.dark-theme {
-        background: #0f1c2e !important;
-        background-color: #0f1c2e !important;
+        background: var(--color-surface-solid, #0f1c2e) !important;
+        background-color: var(--color-surface-solid, #0f1c2e) !important;
         opacity: 1 !important;
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
@@ -106,21 +106,21 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
   const grip = robot;
 
   const syncTheme = () => {
-    const isDark = document.documentElement.getAttribute('data-theme') === 'dark' ||
-                   document.body?.getAttribute('data-ui-appearance') === 'dark' ||
-                   document.documentElement.getAttribute('data-ui-appearance') === 'dark';
+    const appearance = document.body?.dataset.uiAppearance || document.documentElement.dataset.uiAppearance;
+    const isDark = ['light','dark'].includes(appearance) ? appearance === 'dark' : document.documentElement.dataset.theme === 'dark';
+    host.dataset.uiIdentity = document.body?.dataset.uiIdentity || 'blue';
     if (isDark) {
       host.setAttribute('data-theme', 'dark');
       host.setAttribute('data-ui-appearance', 'dark');
       help.classList.add('dark-theme');
-      help.style.backgroundColor = '#0f1c2e';
-      help.style.background = '#0f1c2e';
+      help.style.backgroundColor = 'var(--color-surface-solid, #0f1c2e)';
+      help.style.background = 'var(--color-surface-solid, #0f1c2e)';
     } else {
       host.removeAttribute('data-theme');
       host.removeAttribute('data-ui-appearance');
       help.classList.remove('dark-theme');
-      help.style.backgroundColor = '#ffffff';
-      help.style.background = '#ffffff';
+      help.style.backgroundColor = 'var(--color-surface-solid, #ffffff)';
+      help.style.background = 'var(--color-surface-solid, #ffffff)';
     }
     help.style.opacity = '1';
     help.style.backdropFilter = 'none';
@@ -128,9 +128,9 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
   };
   syncTheme();
   const themeObserver = new MutationObserver(syncTheme);
-  themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme', 'data-ui-appearance'] });
+  themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme', 'data-ui-appearance', 'data-ui-identity'] });
   if (document.body) {
-    themeObserver.observe(document.body, { attributes: true, attributeFilter: ['data-theme', 'data-ui-appearance'] });
+    themeObserver.observe(document.body, { attributes: true, attributeFilter: ['data-theme', 'data-ui-appearance', 'data-ui-identity'] });
   }
 
   const isAprenderPage = document.body.dataset.page === 'aprender';
@@ -177,11 +177,12 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
     const top = Math.max(86, (viewport?.offsetTop || 0) + 86);
     const width = viewport?.width || innerWidth;
     const height = viewport?.height || innerHeight;
+    const navigationHeight = document.getElementById("ui-mobile-navigation")?.getBoundingClientRect().height || 0;
     return {
       left,
       top,
       right: Math.max(left, (viewport?.offsetLeft || 0) + width - host.offsetWidth - 16),
-      bottom: Math.max(top, (viewport?.offsetTop || 0) + height - host.offsetHeight - 24)
+      bottom: Math.max(top, (viewport?.offsetTop || 0) + height - host.offsetHeight - navigationHeight - 24)
     };
   };
 
@@ -282,7 +283,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
           position();
           if (!help.hidden) {
             help.style.opacity = '1';
-            help.style.backgroundColor = (help.classList.contains('dark-theme') || host.getAttribute('data-theme') === 'dark') ? '#0f1c2e' : '#ffffff';
+            help.style.backgroundColor = 'var(--color-surface-solid, #ffffff)';
             help.style.background = help.style.backgroundColor;
             help.style.backdropFilter = 'none';
             help.style.webkitBackdropFilter = 'none';
@@ -500,6 +501,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
   }, opts);
 
   window.addEventListener('resize', position, passiveOpts);
+  window.addEventListener('luria:mobile-navigation-change', position, opts);
   window.visualViewport?.addEventListener('resize', position, passiveOpts);
   window.visualViewport?.addEventListener('scroll', position, passiveOpts);
 
@@ -523,7 +525,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
       help.hidden = false;
       help.style.display = 'block';
       help.style.opacity = '1';
-      help.style.backgroundColor = (help.classList.contains('dark-theme') || host.getAttribute('data-theme') === 'dark') ? '#0f1c2e' : '#ffffff';
+      help.style.backgroundColor = 'var(--color-surface-solid, #ffffff)';
       help.style.background = help.style.backgroundColor;
       help.style.backdropFilter = 'none';
       help.style.webkitBackdropFilter = 'none';

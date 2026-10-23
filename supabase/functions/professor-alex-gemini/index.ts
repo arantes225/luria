@@ -8,7 +8,19 @@ Nunca diga frases como "seja muito bem-vindo à plataforma", "como você não es
 Nunca se apresente repetidamente nem justifique sua função.
 Nunca interprete a ausência de um tema médico como autorização para iniciar uma aula ou para cobrar um assunto de estudo.
 Nunca sugira temas médicos automaticamente em conversas sociais e nunca pergunte repetidamente qual tema o aluno quer estudar.
-Em conversas casuais, como cumprimentos, agradecimentos, afeto, cansaço físico ou bate-papo informal, responda exatamente como uma pessoa conversando no WhatsApp, com humor, naturalidade e espontaneidade, limitando a resposta a uma ou duas frases curtas, sem iniciar aulas, tabelas ou casos clínicos.`;
+Em conversas casuais, como cumprimentos, agradecimentos, afeto, cansaço físico ou bate-papo informal, responda exatamente como uma pessoa conversando no WhatsApp, com humor, naturalidade e espontaneidade, limitando a resposta a uma ou duas frases curtas, sem iniciar aulas, tabelas ou casos clínicos.
+
+PADRÃO DE CLAREZA (inspirado nos princípios do ASD-STE100, adaptados ao português brasileiro e à educação médica; não é conformidade literal com esse padrão):
+- Use frases diretas, prefira voz ativa e uma ideia principal por frase quando isso facilitar a compreensão.
+- Mantenha terminologia médica precisa e consistente. Explique siglas quando necessário, sem trocar termos técnicos indispensáveis por simplificações vagas.
+- Comece pela resposta solicitada; elimine repetições, preâmbulos, formalidades e explicações não pedidas.
+- Adapte a extensão à intenção: conversa casual é conversa; dúvida simples merece resposta curta; aula ou pergunta complexa merece aprofundamento progressivo e organizado.
+- Em explicações aprofundadas, preserve fisiologia, fisiopatologia, raciocínio clínico, exceções e aplicações práticas. Use quadros e listas apenas quando realmente ajudarem.
+- Nunca suprima dose, unidade, condição, contraindicação, nuance ou incerteza clinicamente relevante apenas para encurtar o texto.
+- Se uma transcrição de voz trouxer termo ambíguo, priorize o contexto médico; se a dúvida continuar, faça uma pergunta breve em vez de uma explicação longa sobre um termo improvável.
+- Preserve a personalidade, o humor e a espontaneidade do modo selecionado. Não traduza o português para inglês técnico nem imponha rigidez de manual.
+PRIORIDADES: segurança e precisão científica > intenção da pergunta > clareza > concisão > estilo.
+`;
 
 export const ALEX_NORMAL_MODE_PROMPT = `${ALEX_CORE_IDENTITY}
 
@@ -68,8 +80,10 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 const DEFAULT_MODEL = "gemini-3.5-flash-lite";
 const TTS_MODEL = "gemini-3.8-flash-tts";
+const TTS_FAST_MODEL = "gemini-3.8-flash-lite-tts";
 const MAX_PDF_BASE64 = 6_000_000; // ~4.5MB of raw PDF
 const MAX_BODY_BYTES = 6_500_000;
+const MAX_SITE_CONTEXT_CHARS = 6_000;
 
 function corsHeaders(origin: string | null) {
   return {
@@ -137,6 +151,10 @@ Deno.serve(async (req: Request) => {
   const intent = ["learn", "question", "material"].includes(String(data.intent)) ? String(data.intent) : "learn";
   const mode = (data.mode === "estourado") ? "estourado" : "normal";
   const channel = (data.channel === "voice") ? "voice" : "chat";
+  const depth = data.depth === "aula" ? "aula" : "rapida";
+  const sourceMode = data.source_mode === "luria_site" ? "luria_site" : "general";
+  const siteContext = String(data.site_context || "").trim().slice(0, MAX_SITE_CONTEXT_CHARS);
+  const voiceConfidence = Number(data.voice_confidence);
   const area = String(data.area || "").trim().slice(0, 120);
   const topic = String(data.topic || "").trim().slice(0, 180);
   const prompt = String(data.prompt || "").trim().slice(0, 4000);
@@ -144,6 +162,14 @@ Deno.serve(async (req: Request) => {
   const rawHistory = Array.isArray(data.history) ? data.history.slice(-8) : [];
   if (!topic && !prompt) return json({ error: "empty_prompt" }, 400, headers);
   if (!Deno.env.get("CLIENT_GEMINI")) return json({ error: "gemini_secret_missing" }, 503, headers);
+
+  const voiceTranscript = prompt.toLocaleLowerCase("pt-BR").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[.\-]/g, " ").replace(/\s+/g, " ").trim();
+  if (channel === "voice" && /^(cep|c e p|cepe)$/.test(voiceTranscript)) {
+    return json({ clarification: "A transcrição veio como “CEP”. Você quis dizer “sepse”? Responda “sim, sepse” ou repita a pergunta.", clarification_code: "ambiguous_transcription" }, 200, headers);
+  }
+  if (channel === "voice" && Number.isFinite(voiceConfidence) && voiceConfidence < 0.65) {
+    return json({ clarification: "Não entendi bem esse termo. Pode repetir devagar ou digitar a palavra? Não vou elaborar uma resposta antes de confirmar.", clarification_code: "low_transcription_confidence" }, 200, headers);
+  }
 
   const { data: initialUsage, error: initialUsageError } = await admin.rpc("professor_alex_token_usage", { p_user_id: user.id });
   if (initialUsageError || !initialUsage || typeof initialUsage !== "object") {
@@ -191,9 +217,31 @@ Deno.serve(async (req: Request) => {
     }
   }
 
+  if (sourceMode === "luria_site" && !siteContext && (file === undefined || file === null)) {
+    return json({ clarification: "Não encontrei esse termo no conteúdo da LURIA. Reformule a pergunta ou indique a matéria.", clarification_code: "site_content_not_found" }, 200, headers);
+  }
+  if (sourceMode === "luria_site" && siteContext) {
+    userParts.unshift({ text: "Trechos recuperados exclusivamente do acervo público da LURIA. Use somente estes trechos como base factual; se forem insuficientes, diga isso em vez de completar com conhecimento externo:\n" + siteContext });
+  }
+
   contents.push({ role: "user", parts: userParts });
 
-  const system = getAlexSystemInstruction(mode, channel);
+  // A opção escolhida pelo aluno controla efetivamente o tamanho da resposta.
+  // A conversa casual continua curta mesmo em "aula", salvo solicitação explícita.
+  const system = getAlexSystemInstruction(mode, channel) + (depth === "aula"
+    ? "\n\nFORMATO AULA COMPLETA: quando o aluno pedir ensino médico, explique com raciocínio clínico, fisiopatologia, diagnóstico, conduta e exemplos pertinentes. Não force uma aula em cumprimentos ou conversas sociais."
+    : "\n\nFORMATO DÚVIDA RÁPIDA: priorize uma resposta imediata, direta e natural. Cumprimentos: uma frase curta. Dúvida factual simples: até três frases. Só aprofunde se a pergunta realmente exigir, sem comprometer segurança clínica.") + (sourceMode === "luria_site" ? "\n\nFONTE RESTRITA: responda somente com base nos trechos do acervo LURIA enviados nesta requisição. Não use busca externa nem preencha lacunas com uma aula genérica." : "");
+
+  // Gemini 3.5 Flash-Lite exige níveis de pensamento, não thinkingBudget: 0.
+  // Não enviar os antigos parâmetros de sampling no Gemini 3.x (deprecated).
+  const generationConfig: Record<string, unknown> = {
+    maxOutputTokens: depth === "aula" ? (channel === "voice" ? 650 : 1400) : (channel === "voice" ? 220 : 320),
+  };
+  if (/^gemini-3(?:\.|-)/.test(modelToUse)) {
+    generationConfig.thinkingConfig = { thinkingLevel: depth === "aula" ? "medium" : "minimal" };
+  } else if (/^gemini-2\.5-flash/.test(modelToUse)) {
+    generationConfig.thinkingConfig = { thinkingBudget: 0 };
+  }
 
   const apiKey = Deno.env.get("CLIENT_GEMINI")!;
   let response: Response;
@@ -204,12 +252,7 @@ Deno.serve(async (req: Request) => {
       body: JSON.stringify({
         systemInstruction: { parts: [{ text: system }] },
         contents,
-        generationConfig: {
-          temperature: mode === "estourado" ? 0.85 : 0.60,
-          topP: 0.95,
-          maxOutputTokens: channel === "voice" ? 300 : 600,
-          thinkingConfig: { thinkingBudget: 0 },
-        },
+        generationConfig,
       }),
       signal: AbortSignal.timeout(50_000),
     });
@@ -256,6 +299,7 @@ Deno.serve(async (req: Request) => {
 
   let audioBase64: string | null = null;
   let audioMimeType: string = "audio/wav";
+  let audioError: string | null = null;
 
   if (channel === "voice") {
     try {
@@ -268,46 +312,56 @@ Deno.serve(async (req: Request) => {
         .slice(0, 1500)
         .trim();
 
-      const ttsResponse = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + TTS_MODEL + ":generateContent", {
+      // Flash-Lite TTS oferece menor latência para respostas curtas; aulas
+      // completas preservam o modelo expressivo. Um secret pode sobrescrever.
+      const ttsModel = Deno.env.get("ALEX_TTS_MODEL") || (depth === "aula" ? TTS_MODEL : TTS_FAST_MODEL);
+      // Gemini 3.8 TTS usa Interactions API. O endpoint generateContent com
+      // campos legados pode retornar 400 sem áudio mesmo com texto válido.
+      const ttsResponse = await fetch("https://generativelanguage.googleapis.com/v1beta/interactions", {
         method: "POST",
         headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
         body: JSON.stringify({
-          contents: [{
-            role: "user",
-            parts: [{
+          model: ttsModel,
+          input: [{
+            type: "user_input",
+            content: [{
+              type: "text",
               text: voiceText,
-              speech_metadata: {
+              annotations: [{
+                type: "speech_metadata",
                 style: mode === "estourado" ? "exasperated, impatient and explosive" : "cheerful and friendly"
-              }
+              }]
             }]
           }],
-          generationConfig: {
-            responseModalities: ["AUDIO"],
-            speechConfig: {
-              voiceConfig: {
-                prebuiltVoiceConfig: {
-                  voiceName: "Puck"
-                }
-              }
-            }
-          }
+          response_format: { type: "audio" },
+          generation_config: { speech_config: [{ voice: "Puck" }] }
         }),
         signal: AbortSignal.timeout(25_000),
       });
 
       if (ttsResponse.ok) {
         const ttsData = await ttsResponse.json().catch(() => null);
-        const part = ttsData?.candidates?.[0]?.content?.parts?.[0];
-        const rawAudio = part?.inlineData?.data || part?.inline_data?.data;
-        if (rawAudio) {
-          audioBase64 = rawAudio;
-          audioMimeType = part?.inlineData?.mimeType || part?.inline_data?.mime_type || "audio/wav";
+        const steps = Array.isArray(ttsData?.steps) ? ttsData.steps : [];
+        const parts = steps.flatMap((step: { type?: string; content?: unknown }) =>
+          step.type === "model_output" && Array.isArray(step.content) ? step.content : []
+        );
+        const audioPart = parts.find((part: { type?: string; data?: unknown }) =>
+          part?.type === "audio" && typeof part.data === "string"
+        );
+        if (audioPart?.data) {
+          audioBase64 = audioPart.data;
+          audioMimeType = audioPart.mime_type || "audio/wav";
+        } else {
+          audioError = "tts_unavailable";
+          console.warn("[alex-gemini] TTS returned no audio data");
         }
       } else {
+        audioError = "tts_unavailable";
         console.warn("[alex-gemini] TTS non-ok", ttsResponse.status);
       }
     } catch (ttsErr) {
-      console.warn("[alex-gemini] TTS failure:", ttsErr);
+      audioError = "tts_unavailable";
+      console.warn("[alex-gemini] TTS failure:", ttsErr instanceof Error ? ttsErr.name : "unknown");
     }
   }
 
@@ -324,7 +378,7 @@ Deno.serve(async (req: Request) => {
   });
   if (usageError || !usage || typeof usage !== "object") {
     console.error("[alex-gemini] token_accounting_failure");
-    return json({ answer, audio: audioBase64, audioMimeType, model: modelToUse, usage: initialUsage, accounting_pending: true }, 200, headers);
+    return json({ answer, audio: audioBase64, audioMimeType, audioError, model: modelToUse, usage: initialUsage, accounting_pending: true }, 200, headers);
   }
-  return json({ answer, audio: audioBase64, audioMimeType, model: modelToUse, usage }, 200, headers);
+  return json({ answer, audio: audioBase64, audioMimeType, audioError, model: modelToUse, usage }, 200, headers);
 });

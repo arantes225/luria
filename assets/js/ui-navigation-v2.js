@@ -40,40 +40,154 @@
   const focusable = root => [...(root?.querySelectorAll('a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled])') || [])]
     .filter(node => !node.hidden && node.getClientRects().length && !node.closest('[inert]'));
 
+  // Presentation of the existing destinations, not a second router or access model.
+  let mobileSignature = "", sheetTrigger = null, lastMobileState = null;
+  const navIcon = name => window.LuriaIcon?.(name) || icon('<rect x="4" y="4" width="16" height="16" rx="3"/>');
+  const visibleSource = node => node && !node.closest('[hidden]') && node.getAttribute("aria-hidden") !== "true";
+  function mobileEligible() {
+    return narrow.matches
+      && ["study", "work"].includes(body.dataset.uiContext) && body.dataset.uiAdmin !== "v2"
+      && body.classList.contains("app-ready") && !!window.docmapUser?.id
+      && window.parent === window && !document.documentElement.classList.contains("room-native-embed");
+  }
+  function mobileImmersive() {
+    const simulator = document.getElementById("plantao-simulator");
+    const studyOverlay = [...document.querySelectorAll("#luria-session-overlay,#luria-search-overlay")].some(panel=>!panel.hidden && getComputedStyle(panel).display!=="none");
+    const keyboard = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName || "")
+      && window.visualViewport && window.visualViewport.height < innerHeight * .75;
+    return !!document.fullscreenElement || studyOverlay || body.classList.contains("flash-review-session-active")
+      || (body.dataset.page === "plantao" && simulator && !simulator.hidden) || keyboard;
+  }
+  function closeMobileTools(restoreFocus = true) {
+    const sheet = document.getElementById("ui-mobile-tools");
+    if (sheet?.open) sheet.close();
+    for (const button of document.querySelectorAll("#ui-mobile-more,#ui-mobile-tools-trigger")) set(button,"aria-expanded",false);
+    const target = sheetTrigger?.isConnected ? sheetTrigger : document.getElementById(sheetTrigger?.id);
+    if (restoreFocus && target && body.dataset.uiMobileNavigation === "true") target.focus();
+  }
+  function openMobileTools(trigger) {
+    const sheet = document.getElementById("ui-mobile-tools");
+    if (!sheet || sheet.open || body.dataset.uiMobileNavigation !== "true") return;
+    if ([...document.querySelectorAll('dialog[open], [role="dialog"][aria-modal="true"]:not([hidden])')].some(panel=>panel.id!=="sidebar"&&!panel.closest("[inert]")&&panel.getClientRects().length)) return;
+    for (const [panel, toggle] of [["luria-profile-menu","luria-profile-toggle"],["luria-notification-panel","luria-notification-toggle"],["luria-pomodoro-panel","luria-pomodoro-toggle"]]) {
+      const popup = document.getElementById(panel);
+      if (popup && !popup.hidden) document.getElementById(toggle)?.click();
+    }
+    const toolsOnly = trigger.id === "ui-mobile-tools-trigger";
+    sheet.dataset.toolsOnly = String(toolsOnly);
+    sheet.querySelector("h2").textContent = toolsOnly ? "Ferramentas médicas" : "Mais ferramentas";
+    sheet.querySelectorAll("section[data-mobile-medical]").forEach(section => { section.hidden = toolsOnly && section.dataset.mobileMedical !== "true"; });
+    sheetTrigger = trigger; sheet.showModal(); set(trigger,"aria-expanded",true);
+    sheet.querySelector("[data-mobile-close]").focus();
+  }
   function enhanceMobileNavigation(sidebar) {
-    if (workHub) return;
-    const installed = document.documentElement.dataset.pwa === "standalone";
-    if (!installed || body.dataset.uiAdmin === "v2" || !sidebar) return;
-    const entries = work
-      ? [["/trabalho/", "Início", '<path d="m3 10 9-7 9 7v10H3Z"/>'], ["/trabalho/passometro/", "Passômetro", '<path d="M4 4h16v16H4Z"/><path d="M8 8h8M8 12h8M8 16h5"/>'], ["/trabalho/gestor-plantoes/", "Plantões", '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/>']]
-      : [["/dashboard/", "Início", '<path d="m3 10 9-7 9 7v10H3Z"/>'], ["/aprender/", "Estudar", '<path d="M3 4h7l2 2 2-2h7v16h-7l-2 2-2-2H3Z"/><path d="M12 6v16"/>'], ["/consolidar/", "Revisar", '<path d="M4 10a8 8 0 1 1 1 9M4 4v6h6"/>']];
-    // Reuse only links already granted to this account by the existing sidebar.
-    const sources = entries.map(([href]) => sidebar.querySelector(`nav a[href="${href}"]`));
-    if (sources.some(source => !source || source.hidden)) {
-      document.getElementById("ui-mobile-navigation")?.remove(); delete body.dataset.uiMobileNavigation; return;
+    const railBefore = document.getElementById("ui-mobile-navigation");
+    if (!mobileEligible() || !sidebar?.querySelector("nav a[href]")) {
+      closeMobileTools(false); railBefore?.remove(); document.getElementById("ui-mobile-tools")?.remove();
+      delete body.dataset.uiMobileNavigation; delete body.dataset.uiMobileShell; mobileSignature = ""; return;
     }
-    let rail = document.getElementById("ui-mobile-navigation");
-    if (!rail) {
-      rail = document.createElement("nav"); rail.id = "ui-mobile-navigation";
-      rail.className = "ui-mobile-navigation"; rail.setAttribute("aria-label", "Navegação principal");
-      entries.forEach(([href, label, paths]) => {
-        const link = document.createElement("a"); link.href = href;
-        link.innerHTML = icon(paths) + `<span>${label}</span>`; rail.append(link);
-      });
-      const more = document.createElement("button"); more.type = "button";
-      more.id = "ui-mobile-more"; more.setAttribute("aria-controls", "sidebar");
-      more.innerHTML = menuIcon + '<span>Mais</span>'; rail.append(more);
-      document.body.append(rail);
-    }
-    const activePath = sidebar.querySelector('nav a[aria-current="page"],nav a.active')?.getAttribute("href");
-    const studySection = ["cronograma", "caderno", "apostilas", "professor_alex"].includes(body.dataset.page) ? "/aprender/"
-      : ["flashcards", "questoes", "resolver_questoes", "caderno_erros"].includes(body.dataset.page) ? "/consolidar/" : activePath;
-    rail.querySelectorAll("a").forEach(link => {
-      if (link.getAttribute("href") === studySection) set(link, "aria-current", "page");
-      else link.removeAttribute("aria-current");
+    body.dataset.uiMobileShell = "true";
+    const immersive = mobileImmersive();
+    if (immersive) { closeMobileTools(false); delete body.dataset.uiMobileNavigation; }
+    else body.dataset.uiMobileNavigation = "true";
+    const sources = [...sidebar.querySelectorAll('nav a[href],.work-pcr-button[href]')].filter(visibleSource);
+    const get = href => sources.find(source => source.getAttribute("href") === href);
+    const disabled = entry => entry.source?.getAttribute("aria-disabled") === "true"
+      || entry.source?.classList.contains("nav-feature-locked")
+      || !!entry.feature && window.docmapIsAdmin !== true && window.LuriaEntitlements?.enabled(entry.feature) !== true;
+    const entry = (href,label,visual,group,source,feature) => ({href,label,visual,group,source,feature});
+    const main = work ? [
+      entry("/trabalho/","Início","dashboard","",get("/trabalho/")),
+      {label:"Ferramentas",visual:"clipboard",tools:true},
+      entry("/trabalho/prescricao/","Prescrição","file","",get("/trabalho/prescricao/")),
+      entry("/trabalho/pcr/","PCR","stethoscope","",get("/trabalho/pcr/"))
+    ] : [
+      entry("/dashboard/","Início","dashboard","",get("/dashboard/")),
+      entry("/aprender/","Aulas","book","",get("/aprender/")),
+      entry("/flashcards/","Flashcards","cards","",get("/consolidar/"),"flashcards"),
+      entry("/plantao/sala-emergencia/","Simulador","stethoscope","",get("/plantao/sala-emergencia/"),"plantao")
+    ];
+    for (const item of main) item.disabled = !item.tools && (!item.source || disabled(item));
+    const categories = work
+      ? ["Ferramentas médicas","Rotina e acompanhamento","Conta e gestão"]
+      : ["Estudar e revisar","Praticar e consolidar","Planejamento e desempenho","Comunidade","Conta e gestão"];
+    const groupFor = href => work
+      ? (/calculadora|scores|diagnostico|fluidos|prontuario|prescricao/.test(href) ? categories[0] : /admin|editorial|beta/.test(href) ? categories[2] : categories[1])
+      : (/aprender/.test(href) ? categories[0] : /consolidar|jogos|desafio/.test(href) ? categories[1] : /cronograma|estatisticas|aplicar/.test(href) ? categories[2] : /amigos/.test(href) ? categories[3] : categories[4]);
+    const extra = sources.filter(source => !main.some(item => item.href === source.getAttribute("href"))).map(source => {
+      const href = source.getAttribute("href");
+      return entry(href,(source.querySelector(":scope > span:not(.nav-icon):not(.nav-plan-badge)")?.textContent || source.dataset.uiNavLabel || source.textContent).replace(/PLUS|◆/g,"").trim(),"file",groupFor(href),source);
     });
-    set(rail.querySelector("button"), "aria-expanded", drawerOpen);
-    body.dataset.uiMobileNavigation = "true";
+    if (work && get("/trabalho/prescricao/")) extra.push(entry("/trabalho/bulario/","Bulário","book",categories[0],get("/trabalho/prescricao/")));
+    if (!work) {
+      // Existing learning/consolidation hub links and their existing entitlement keys.
+      for (const [href,label,visual,parent,feature,group] of [
+        ["/apostilas/","Apostilas","book","/aprender/",null,categories[0]],
+        ["/caderno/","Anotações","file","/aprender/",null,categories[0]],
+        ["/professor-alex/","Professor Alex","sparkles","/aprender/",null,categories[0]],
+        ["/questoes-simulados/","Questões e Simulados","file","/consolidar/","questions",categories[1]],
+        ["/caderno-erros/","Caderno de Erros","clipboard","/consolidar/","error_notebook",categories[1]],
+        ["/plantao/luriazap/","LuriaZap","users","/aprender/","plantao",categories[1]]
+      ]) if (get(parent)) extra.push(entry(href,label,visual,group,get(parent),feature));
+    }
+    const settings = document.querySelector('#luria-profile-menu a[href="/configuracoes/"]');
+    if (settings && !settings.hidden && settings.getAttribute("aria-hidden") !== "true") extra.push(entry(settings.getAttribute("href"),"Configurações","settings",categories.at(-1),settings));
+    const environment = sidebar.querySelector(".luria-mode-footer-switch[href]");
+    if (visibleSource(environment)) extra.push(entry(environment.getAttribute("href"),work?"Trocar para Estudos":"Trocar para Trabalho","compass",categories.at(-1),environment));
+    const unique = [...new Map(extra.filter(item => item.href?.startsWith("/") && !item.href.startsWith("//")).map(item => [item.href,item])).values()];
+    unique.forEach(item => { item.disabled = disabled(item); });
+    const path = location.pathname;
+    const activeSource = sidebar.querySelector('nav a[aria-current="page"],nav a.active')?.getAttribute("href");
+    let active = main.findIndex(item => item.href && (item.href === path || item.href !== (work?"/trabalho/":"/dashboard/") && path.startsWith(item.href)));
+    if (active < 0 && !work && ["aprender","caderno","apostilas","professor_alex"].includes(body.dataset.page)) active = 1;
+    if (active < 0 && work) active = activeSource === "/trabalho/prescricao/" ? 2 : /calculadora|scores|diagnostico|fluidos|prontuario/.test(path) ? 1 : -1;
+    const signature = JSON.stringify([main.map(item=>[item.href,item.label,item.disabled]),unique.map(item=>[item.href,item.label,item.group,item.disabled]),active]);
+    if (signature === mobileSignature && railBefore) return;
+    mobileSignature = signature;
+    const makeLink = (item, markCurrent = false) => {
+      const link = document.createElement("a"); link.href = item.href; link.dataset.mobileLink = "true";
+      const visual = document.createElement("span"); visual.className = "ui-mobile-icon";visual.setAttribute("aria-hidden","true");
+      const existingIcon = item.source?.querySelector("svg,.nav-icon");
+      if (existingIcon && item.href === item.source.getAttribute("href")) visual.append(existingIcon.cloneNode(true));
+      else visual.innerHTML = navIcon(item.visual);
+      const label = document.createElement("span"); label.textContent = item.label;
+      link.append(visual,label); set(link,"aria-disabled",item.disabled === true);
+      if(markCurrent && (path===item.href || item.href!=="/trabalho/" && item.href!=="/dashboard/" && path.startsWith(item.href)))set(link,"aria-current","page");
+      if (item.disabled) link.title = "Indisponível para sua conta";
+      return link;
+    };
+    let rail = railBefore;
+    if (!rail) {rail = document.createElement("nav");rail.id="ui-mobile-navigation";rail.className="ui-mobile-navigation";rail.setAttribute("aria-label","Navegação principal");body.append(rail);}
+    rail.replaceChildren();
+    main.forEach((item,index) => {
+      let control;
+      if (item.tools) {control=document.createElement("button");control.type="button";control.id="ui-mobile-tools-trigger";control.innerHTML=navIcon(item.visual)+'<span>Ferramentas</span>';set(control,"aria-controls","ui-mobile-tools");set(control,"aria-haspopup","dialog");set(control,"aria-expanded",false);}
+      else control=makeLink(item);
+      if (index===active) set(control,"aria-current","page");
+      if (work && index===3) control.dataset.mobilePcr="true";
+      rail.append(control);
+    });
+    const more=document.createElement("button");more.id="ui-mobile-more";more.type="button";
+    more.innerHTML=navIcon("more")+'<span>Mais</span>';set(more,"aria-controls","ui-mobile-tools");set(more,"aria-haspopup","dialog");set(more,"aria-expanded",false);
+    if (active<0) set(more,"aria-current","page");rail.append(more);
+    let sheet=document.getElementById("ui-mobile-tools");
+    if (!sheet) {
+      sheet=document.createElement("dialog");sheet.id="ui-mobile-tools";sheet.className="ui-mobile-tools";sheet.setAttribute("aria-labelledby","ui-mobile-tools-title");
+      sheet.innerHTML='<header><h2 id="ui-mobile-tools-title">Mais ferramentas</h2><button type="button" data-mobile-close aria-label="Fechar mais ferramentas">'+closeIcon+'</button></header><div class="ui-mobile-tools-content"></div>';
+      sheet.addEventListener("cancel",event=>{event.preventDefault();closeMobileTools();});
+      sheet.addEventListener("close",()=>closeMobileTools());
+      sheet.addEventListener("click",event=>{if(event.target!==sheet)return;const box=sheet.getBoundingClientRect();if(event.clientY<box.top||event.clientY>box.bottom||event.clientX<box.left||event.clientX>box.right)closeMobileTools();});
+      body.append(sheet);
+    }
+    const focusedHref=sheet.contains(document.activeElement)?document.activeElement.getAttribute("href"):null;
+    const content=sheet.querySelector(".ui-mobile-tools-content");content.replaceChildren();
+    for (const group of categories) {
+      const items=unique.filter(item=>item.group===group);if(!items.length)continue;
+      const section=document.createElement("section");section.dataset.mobileMedical=String(work&&group===categories[0]);
+      const title=document.createElement("h3");title.textContent=group;section.append(title);
+      const links=document.createElement("div");links.className="ui-mobile-tools-grid";items.forEach(item=>links.append(makeLink(item,true)));section.append(links);content.append(section);
+    }
+    if(sheet.open){sheet.querySelectorAll("section").forEach(section=>{section.hidden=sheet.dataset.toolsOnly==="true"&&section.dataset.mobileMedical!=="true";});set(document.getElementById(sheetTrigger?.id),"aria-expanded",true);const restored=[...sheet.querySelectorAll("a")].find(link=>link.getAttribute("href")===focusedHref);(restored||sheet.querySelector("[data-mobile-close]")).focus();}
   }
 
   function themes() {
@@ -206,6 +320,14 @@
 
     placeStudyNavigation(sidebar, bar);
 
+    if (body.dataset.uiMobileNavigation === "true") {
+      if(body.classList.contains("sidebar-open"))body.classList.remove("sidebar-open");
+      if(sidebar){sidebar.inert=true;set(sidebar,"aria-hidden",true);for(const attr of ["role","aria-modal"])sidebar.removeAttribute(attr);}
+      if(trigger && !trigger.hidden)trigger.hidden=true;
+      drawerOpen=false;restorePageInteraction();return;
+    }
+    if(trigger && !workHub)trigger.hidden=false;
+    if(sidebar && !workHub)sidebar.removeAttribute("aria-hidden");
     if (workHub) {
       // Keep the permission-owned links available to the profile adapter only.
       // The Work hub replaces the drawer, including on installed mobile apps.
@@ -239,7 +361,6 @@
     if (open && !drawerOpen) focusable(sidebar)[0]?.focus();
     if (!open && drawerOpen) (drawerTrigger?.isConnected ? drawerTrigger : trigger)?.focus();
     drawerOpen = open;
-    set(document.getElementById("ui-mobile-more"), "aria-expanded", open);
   }
   function enhanceWorkHub(sidebar, bar) {
     if (!workHub || !bar) return;
@@ -291,6 +412,7 @@
     }
   }
   function enhance() {
+    if (!window.document || !body.isConnected) return;
     const sidebar = document.getElementById("sidebar");
     const bar = document.querySelector(".topbar");
     if (bar) {
@@ -333,9 +455,11 @@
     }
     enhanceProfile(sidebar);
     enhanceStreak(sidebar, document.getElementById("luria-notifications"));
-    syncDrawer();
     enhanceWorkHub(sidebar, bar);
     enhanceMobileNavigation(sidebar);
+    syncDrawer();
+    const mobileState=body.dataset.uiMobileNavigation === "true";
+    if(mobileState!==lastMobileState){lastMobileState=mobileState;window.dispatchEvent(new Event("luria:mobile-navigation-change"));}
     const menu = document.getElementById("luria-profile-menu");
     const open = !!menu && !menu.hidden;
     if (open && !profileOpen) focusable(menu)[0]?.focus();
@@ -346,11 +470,19 @@
     }
   }
   function schedule() {
-    if (scheduled) return;
+    if (scheduled || !window.document || !body.isConnected) return;
     scheduled = true;
     requestAnimationFrame(() => { scheduled = false; enhance(); });
   }
   document.addEventListener("click", event => {
+    const mobileLink=event.target.closest?.('[data-mobile-link]');
+    if(mobileLink){
+      if(mobileLink.getAttribute("aria-disabled")==="true"){event.preventDefault();event.stopImmediatePropagation();closeMobileTools(false);window.LuriaDialog?.alert("Este recurso está indisponível para sua conta.");return;}
+      closeMobileTools(false);return;
+    }
+    if(event.target.closest?.('[data-mobile-close]')){event.preventDefault();closeMobileTools();return;}
+    const toolsTrigger=event.target.closest?.('#ui-mobile-more,#ui-mobile-tools-trigger');
+    if(toolsTrigger){event.preventDefault();event.stopImmediatePropagation();openMobileTools(toolsTrigger);return;}
     const trigger = event.target.closest("#menu-open, #ui-mobile-more, #sidebar-close, #sidebar-backdrop");
     if (!trigger) return;
     event.preventDefault(); event.stopImmediatePropagation();
@@ -381,19 +513,26 @@
   // with the drawer's inert state still attached. Always return to a usable
   // closed menu when the page resumes.
   window.addEventListener("pageshow", () => {
+    closeMobileTools(false);
     body.classList.remove("sidebar-open");
     drawerOpen = false;
     restorePageInteraction();
     schedule();
   });
+  document.addEventListener("fullscreenchange",schedule);
+  document.addEventListener("focusin",schedule);document.addEventListener("focusout",schedule);
+  window.visualViewport?.addEventListener("resize",schedule);
+  window.addEventListener("popstate",schedule);window.addEventListener("hashchange",schedule);
+  window.addEventListener("docmap:access-updated",schedule);
+  window.addEventListener("luria:owner-changed",schedule);
   window.addEventListener("docmap:ready", enhance);
   window.addEventListener("luria:dashboard-data", schedule);
   document.addEventListener("DOMContentLoaded", enhance, {once:true});
   // Updating question or notebook content should not rebuild the navigation.
-  const shellRegion = "#sidebar,.topbar,#luria-profile-menu,#luria-notifications";
+  const shellRegion = "#sidebar,.topbar,#luria-profile-menu,#luria-notifications,#plantao-simulator,#luria-session-overlay,#luria-search-overlay";
   new MutationObserver(records => {
     if (records.some(record => record.target === body || record.target.closest?.(shellRegion)
       || [...record.addedNodes].some(node => node.nodeType === 1 && (node.matches(shellRegion) || node.querySelector(shellRegion))))) schedule();
-  }).observe(body, {subtree:true, childList:true, attributes:true, attributeFilter:["class", "hidden"]});
+  }).observe(body, {subtree:true, childList:true, attributes:true, attributeFilter:["class", "hidden", "aria-disabled"]});
   if (document.readyState !== "loading") enhance();
 })();

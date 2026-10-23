@@ -42,7 +42,8 @@
   body[data-ui="v2"][data-plantao-entry="emergency"] .plantao-library-metrics {display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:1rem!important;}
   body[data-ui="v2"][data-plantao-entry="emergency"] .plantao-library-metrics strong {font-size:1.75rem!important;line-height:1.3!important;font-variant-numeric:tabular-nums!important;color:var(--color-text-primary)!important;}
   body[data-ui="v2"][data-plantao-entry="emergency"] .plantao-empty {padding:1.5rem!important;font-size:1rem!important;line-height:1.5!important;border:1px dashed var(--color-border)!important;border-radius:12px!important;background:var(--color-surface)!important;color:var(--color-text-secondary)!important;}
-  body[data-ui="v2"][data-plantao-entry="emergency"] :is(.plantao-sim-top,.plantao-feed,.plantao-action-rail,.plantao-action-drawer,.plantao-patient-card,.plantao-debrief) {background:var(--color-surface)!important;color:var(--color-text-primary)!important;border-color:var(--color-border)!important;box-shadow:none!important;}
+  body[data-ui="v2"][data-plantao-entry="emergency"] :is(.plantao-feed,.plantao-action-rail,.plantao-action-drawer,.plantao-patient-card,.plantao-debrief) {background:var(--color-surface)!important;color:var(--color-text-primary)!important;border-color:var(--color-border)!important;box-shadow:none!important;}
+  body[data-ui="v2"][data-plantao-entry="emergency"] .plantao-sim-top {background:transparent!important;border:0!important;box-shadow:none!important;color:var(--color-text-primary)!important;}
   body[data-ui="v2"][data-plantao-entry="emergency"] .plantao-action-drawer {background:var(--color-surface-solid)!important;}
   body[data-ui="v2"][data-plantao-entry="emergency"] :is(.plantao-sim-title strong,#plantao-case-title,.plantao-drawer-head h2,.plantao-feed h2,.plantao-feed h3) {font-size:1.125rem!important;line-height:1.4!important;color:var(--color-text-primary)!important;}
   body[data-ui="v2"][data-plantao-entry="emergency"] :is(.plantao-sim-title span,.plantao-score-live,.plantao-feed-list,.plantao-search-label) {font-size:.875rem!important;line-height:1.5!important;color:var(--color-text-secondary)!important;}
@@ -113,6 +114,6 @@
   body[data-ui="v2"][data-plantao-entry="emergency"] .plantao-case-grid {grid-template-columns:minmax(0,1fr)!important;}
   body[data-ui="v2"][data-plantao-entry="emergency"] .plantao-library-side {grid-template-columns:minmax(0,1fr)!important;}
   body[data-ui="v2"][data-plantao-entry="emergency"] .plantao-library-metrics {grid-template-columns:minmax(0,1fr)!important;}
-  body[data-ui="v2"][data-plantao-entry="emergency"] #plantao-simulator {height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;background:var(--color-background)!important;}
+  body[data-ui="v2"][data-plantao-entry="emergency"] #plantao-simulator {height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;background:transparent!important;}
   }
 }
