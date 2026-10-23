@@ -1,6 +1,7 @@
 
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { createClient } from "jsr:@supabase/supabase-js@2";
+import { downloadImage } from "../_shared/image-download.ts";
 import {
   ImageMagick,
   initializeImageMagick,
@@ -57,10 +58,11 @@ Deno.serve(async (req: Request) => {
     if (!src) throw new Error("Imagem sem URL");
 
     const siteBase = Deno.env.get("PUBLIC_SITE_URL") || "https://www.luriamedicina.com.br";
-    const resolvedSrc = new URL(src, siteBase).toString();
-    const response = await fetch(resolvedSrc, { redirect: "follow" });
-    if (!response.ok) throw new Error("Falha ao baixar imagem original: HTTP " + response.status);
-    const input = new Uint8Array(await response.arrayBuffer());
+    // Optional exact-origin policy is configured by operators, not candidates.
+    const configuredOrigins = Deno.env.get("APOSTILA_IMAGE_ORIGINS");
+    const allowedOrigins = configuredOrigins ? JSON.parse(configuredOrigins) : undefined;
+    if (allowedOrigins !== undefined && (!Array.isArray(allowedOrigins) || !allowedOrigins.length || allowedOrigins.some((value) => typeof value !== "string" || new URL(value).origin !== value))) throw Error("Política de origens inválida");
+    const { bytes: input, url: resolvedSrc } = await downloadImage(src, siteBase, { allowedOrigins });
 
     let output: Uint8Array | null = null;
     let outWidth = 0;
@@ -72,6 +74,7 @@ Deno.serve(async (req: Request) => {
     for (const width of widths) {
       for (const quality of qualities) {
         const encoded = ImageMagick.read(input, (img): Uint8Array => {
+          if (img.width > 16000 || img.height > 16000 || img.width * img.height > 40000000) throw Error("Dimensões da imagem excedem o limite");
           if (img.width > width) {
             const ratio = width / img.width;
             img.resize(width, Math.max(1, Math.round(img.height * ratio)));

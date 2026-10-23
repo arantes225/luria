@@ -27,14 +27,18 @@ test('bottom navigation follows the shared mobile breakpoint independently of in
   const f=fixture(t,options);await f.ready();assert.equal(f.d.getElementById('ui-mobile-navigation'),null,JSON.stringify(options));
  }
  for(const options of [{},{width:320},{width:412},{width:768},{width:980},{width:844,height:390},{installed:false},{width:390,touch:false},{installed:false,ios:true}]){
-  const f=fixture(t,options);await f.ready();assert.equal(f.d.querySelectorAll('#ui-mobile-navigation > *').length,5,JSON.stringify(options));
+  const f=fixture(t,options);await f.ready();assert.equal(f.d.querySelectorAll('#ui-mobile-navigation > *').length,4,JSON.stringify(options));
  }
 });
 
 test('study shortcuts use real destinations, keep the web sidebar and track nested modules',async t=>{
  const f=fixture(t,{page:'flashcards',pathname:'/flashcards/revisao/'});await f.ready();
- const rail=f.d.getElementById('ui-mobile-navigation');assert.deepEqual([...rail.querySelectorAll('a')].map(n=>n.getAttribute('href')),['/dashboard/','/aprender/','/flashcards/','/plantao/sala-emergencia/']);
- assert.equal(rail.querySelector('[aria-current]').textContent,'Flashcards');assert.equal(f.d.getElementById('menu-open').hidden,true);
+ const rail=f.d.getElementById('ui-mobile-navigation');assert.deepEqual([...rail.querySelectorAll('a')].map(n=>n.getAttribute('href')),['/dashboard/','/aprender/','/consolidar/']);
+ assert.deepEqual([...rail.children].map(n=>n.textContent),['Dashboard','Aprender','Consolidar','Mais']);
+ assert.equal(rail.querySelector('[aria-current]').textContent,'Consolidar');assert.equal(f.d.getElementById('menu-open').hidden,true);
+ for(const [page,pathname,label] of [['questoes','/questoes-simulados/','Consolidar'],['erros','/caderno-erros/','Consolidar'],['caderno','/caderno/','Aprender'],['plantao','/plantao/sala-emergencia/','Mais']]){
+  const nested=fixture(t,{page,pathname});await nested.ready();assert.equal(nested.d.querySelector('#ui-mobile-navigation [aria-current]').textContent,label);
+ }
  const original=f.d.querySelector('#sidebar a[href="/dashboard/"]');await f.resize(1440);
  assert.equal(f.d.getElementById('ui-mobile-navigation'),null);assert.equal(f.d.getElementById('menu-open').hidden,false);assert.equal(original.isConnected,true);
  await f.resize(390);assert.equal(f.d.querySelectorAll('#ui-mobile-navigation').length,1);assert.deepEqual(f.errors,[]);
@@ -44,6 +48,7 @@ test('More groups available modules, closes on cancel and destination, and resto
  const f=fixture(t);await f.ready();const more=f.d.getElementById('ui-mobile-more'),sheet=f.d.getElementById('ui-mobile-tools');
  more.click();assert.equal(sheet.open,true);assert.equal(more.getAttribute('aria-expanded'),'true');assert.equal(f.d.activeElement,sheet.querySelector('[data-mobile-close]'));
  assert(sheet.querySelector('a[href="/configuracoes/"]'),"settings remain available while the profile popup is closed");assert(sheet.querySelectorAll('section').length>=4);assert(!sheet.querySelector('a[href="/admin/"]'));
+ assert(sheet.querySelector('a[href="/flashcards/"]'));assert(sheet.querySelector('a[href="/plantao/sala-emergencia/"]'));
  for(const link of sheet.querySelectorAll('a')){const route=decodeURIComponent(link.pathname);assert(fs.existsSync('.'+route+'index.html'),route);}
  sheet.dispatchEvent(new f.w.Event('cancel',{cancelable:true}));assert.equal(sheet.open,false);assert.equal(f.d.activeElement,more);
  more.click();const target=sheet.querySelector('a[href="/amigos/"]');target.addEventListener('click',e=>e.preventDefault());target.click();assert.equal(sheet.open,false);
@@ -52,7 +57,7 @@ test('More groups available modules, closes on cancel and destination, and resto
 
 test('account restrictions and changes never become unguarded links',async t=>{
  const f=fixture(t);await f.ready();f.enabled.delete('flashcards');f.w.dispatchEvent(new f.w.Event('docmap:access-updated'));await f.ready();
- const card=f.d.querySelector('#ui-mobile-navigation a[href="/flashcards/"]');assert.equal(card.getAttribute('aria-disabled'),'true');
+ const card=f.d.querySelector('#ui-mobile-tools a[href="/flashcards/"]');assert.equal(card.getAttribute('aria-disabled'),'true');
  const click=new f.w.MouseEvent('click',{bubbles:true,cancelable:true});assert.equal(card.dispatchEvent(click),false);assert(f.w.lastAlert);
  const admin=f.d.querySelector('#sidebar a[href="/admin/"]');admin.hidden=false;await f.ready();assert(f.d.querySelector('#ui-mobile-tools a[href="/admin/"]'));
  admin.hidden=true;await f.ready();assert(!f.d.querySelector('#ui-mobile-tools a[href="/admin/"]'));

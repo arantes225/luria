@@ -2891,6 +2891,7 @@ body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
     transition:background-color 150ms ease,color 150ms ease;
   }
   body[data-ui-nav="v2"] .ui-mobile-navigation .ui-mobile-icon {display:grid!important;place-items:center!important;}
+  body[data-ui-nav="v2"][data-ui-context="study"] .ui-mobile-navigation {grid-template-columns:repeat(4,minmax(0,1fr))!important;}
   body[data-ui-nav="v2"] .ui-mobile-navigation svg {width:22px!important;height:22px!important;}
   body[data-ui-nav="v2"] .ui-mobile-navigation :is([aria-current="page"],[aria-expanded="true"]) {background:var(--color-primary-subtle)!important;color:var(--color-primary-text)!important;}
   body[data-ui-nav="v2"] .ui-mobile-navigation [data-mobile-pcr] {color:var(--color-danger)!important;background:var(--color-danger-surface)!important;font-weight:700!important;}

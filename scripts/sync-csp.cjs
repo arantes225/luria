@@ -56,7 +56,9 @@ function sync(write = false) {
   for (const file of pages) {
     const full = path.join(root, file);
     const html = fs.readFileSync(full, 'utf8');
-    const policy = expectedPolicy(html, pages.resources?.[file]);
+    let policy;
+    try { policy = expectedPolicy(html, pages.resources?.[file]); }
+    catch (error) { throw new Error(file + ': ' + error.message, {cause:error}); }
     const pattern = /(<meta\b[^>]*http-equiv="Content-Security-Policy"[^>]*\bcontent=")([^"]*)(")/i;
     if (!pattern.test(html)) throw new Error(file + ': unsupported CSP meta syntax');
     let updated = html.replace(pattern, (_, start, old, end) => start + policy + end);

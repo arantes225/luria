@@ -4,16 +4,18 @@
   if(document.body?.dataset.uiNav!=="v2")return;
   let companion=null,currentUser=null,revision=0;
   const start=async (event={})=>{
+    if(window.LuriaSessionInvalidated)return false;
     // ui-navigation is deferred on many pages. It can start after the auth
     // event has already fired, especially when returning from the PWA cache.
     const user=event.detail?.user||window.docmapUser||window.docmapSession?.user;
     const userId=user?.id;if(!userId)return false;
-    if(currentUser===userId&&companion){companion.setAccess(event.detail.isAdmin);return;}
+    if(currentUser===userId&&companion){companion.setAccess(event.detail?.isAdmin??window.docmapIsAdmin);return;}
     const ticket=++revision;currentUser=userId;companion?.destroy();companion=null;
-    try{const {mountAlexCompanion}=await import('/assets/js/professor-alex-companion.mjs?v=20261023-visible2');if(ticket!==revision)return false;companion=mountAlexCompanion({userId,isAdmin:event.detail?.isAdmin??window.docmapIsAdmin});return !!companion;}catch(error){console.warn('Alex indisponível',error);return false;}
+    try{const {mountAlexCompanion}=await import('/assets/js/professor-alex-companion.mjs?v=20261023-visible2');if(ticket!==revision||window.LuriaSessionInvalidated)return false;companion=mountAlexCompanion({userId,isAdmin:event.detail?.isAdmin??window.docmapIsAdmin});return !!companion;}catch(error){console.warn('Alex indisponível',error);return false;}
   };
   window.addEventListener('docmap:ready',start);
   window.addEventListener('docmap:access-updated',start);
+  window.addEventListener('luria:session-invalidated',()=>{revision++;currentUser=null;companion?.destroy();companion=null;});
   // Deferred navigation can execute after a fast cached login already emitted ready.
   const resume=()=>start({detail:{user:window.docmapUser||window.docmapSession?.user,isAdmin:window.docmapIsAdmin}});
   window.addEventListener('pageshow',resume);
@@ -53,7 +55,7 @@
   const navIcon = name => window.LuriaIcon?.(name) || icon('<rect x="4" y="4" width="16" height="16" rx="3"/>');
   const visibleSource = node => node && !node.closest('[hidden]') && node.getAttribute("aria-hidden") !== "true";
   function mobileEligible() {
-    return narrow.matches
+    return !window.LuriaSessionInvalidated && narrow.matches
       && ["study", "work"].includes(body.dataset.uiContext) && body.dataset.uiAdmin !== "v2"
       && body.classList.contains("app-ready") && !!window.docmapUser?.id
       && window.parent === window && !document.documentElement.classList.contains("room-native-embed");
@@ -110,10 +112,9 @@
       entry("/trabalho/prescricao/","Prescrição","file","",get("/trabalho/prescricao/")),
       entry("/trabalho/pcr/","PCR","stethoscope","",get("/trabalho/pcr/"))
     ] : [
-      entry("/dashboard/","Início","dashboard","",get("/dashboard/")),
-      entry("/aprender/","Aulas","book","",get("/aprender/")),
-      entry("/flashcards/","Flashcards","cards","",get("/consolidar/"),"flashcards"),
-      entry("/plantao/sala-emergencia/","Simulador","stethoscope","",get("/plantao/sala-emergencia/"),"plantao")
+      entry("/dashboard/","Dashboard","dashboard","",get("/dashboard/")),
+      entry("/aprender/","Aprender","book","",get("/aprender/")),
+      entry("/consolidar/","Consolidar","cards","",get("/consolidar/"))
     ];
     for (const item of main) item.disabled = !item.tools && (!item.source || disabled(item));
     const categories = work
@@ -121,7 +122,7 @@
       : ["Estudar e revisar","Praticar e consolidar","Planejamento e desempenho","Comunidade","Conta e gestão"];
     const groupFor = href => work
       ? (/calculadora|scores|diagnostico|fluidos|prontuario|prescricao/.test(href) ? categories[0] : /admin|editorial|beta/.test(href) ? categories[2] : categories[1])
-      : (/aprender/.test(href) ? categories[0] : /consolidar|jogos|desafio/.test(href) ? categories[1] : /cronograma|estatisticas|aplicar/.test(href) ? categories[2] : /amigos/.test(href) ? categories[3] : categories[4]);
+      : (/aprender/.test(href) ? categories[0] : /consolidar|jogos|desafio|plantao/.test(href) ? categories[1] : /cronograma|estatisticas|aplicar/.test(href) ? categories[2] : /amigos/.test(href) ? categories[3] : categories[4]);
     const extra = sources.filter(source => !main.some(item => item.href === source.getAttribute("href"))).map(source => {
       const href = source.getAttribute("href");
       return entry(href,(source.querySelector(":scope > span:not(.nav-icon):not(.nav-plan-badge)")?.textContent || source.dataset.uiNavLabel || source.textContent).replace(/PLUS|◆/g,"").trim(),"file",groupFor(href),source);
@@ -133,6 +134,8 @@
         ["/apostilas/","Apostilas","book","/aprender/",null,categories[0]],
         ["/caderno/","Anotações","file","/aprender/",null,categories[0]],
         ["/professor-alex/","Professor Alex","sparkles","/aprender/",null,categories[0]],
+        ["/flashcards/","Flashcards","cards","/consolidar/","flashcards",categories[1]],
+        ["/plantao/sala-emergencia/","Simulador de Emergência","stethoscope","/plantao/sala-emergencia/","plantao",categories[1]],
         ["/questoes-simulados/","Questões e Simulados","file","/consolidar/","questions",categories[1]],
         ["/caderno-erros/","Caderno de Erros","clipboard","/consolidar/","error_notebook",categories[1]],
         ["/plantao/luriazap/","LuriaZap","users","/aprender/","plantao",categories[1]]
@@ -148,6 +151,7 @@
     const activeSource = sidebar.querySelector('nav a[aria-current="page"],nav a.active')?.getAttribute("href");
     let active = main.findIndex(item => item.href && (item.href === path || item.href !== (work?"/trabalho/":"/dashboard/") && path.startsWith(item.href)));
     if (active < 0 && !work && ["aprender","caderno","apostilas","professor_alex"].includes(body.dataset.page)) active = 1;
+    if (active < 0 && !work && ["consolidar","flashcards","questoes","erros"].includes(body.dataset.page)) active = 2;
     if (active < 0 && work) active = activeSource === "/trabalho/prescricao/" ? 2 : /calculadora|scores|diagnostico|fluidos|prontuario/.test(path) ? 1 : -1;
     const signature = JSON.stringify([main.map(item=>[item.href,item.label,item.disabled]),unique.map(item=>[item.href,item.label,item.group,item.disabled]),active]);
     if (signature === mobileSignature && railBefore) return;

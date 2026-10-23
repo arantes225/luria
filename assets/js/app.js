@@ -6398,7 +6398,16 @@ async function iniciarApp() {
   const { data, error } =
     await sb.auth.getSession();
 
+  if (window.LuriaSessionInvalidated) return;
+
   let user = data?.session?.user;
+  const authOwner = window.LuriaLocalOwnerStore;
+  await authOwner?.ready;
+  if (window.LuriaSessionInvalidated) return;
+  if (user && authOwner && authOwner.ownerId !== user.id) {
+    window.location.replace(authOwner.ownerId ? window.location.href : "/login/");
+    return;
+  }
   if (error || !data?.session) {
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
       user = { id: 'dev-user-id', email: 'dev@luria.med.br' };
@@ -6414,6 +6423,7 @@ async function iniciarApp() {
 
   if (page === "professor_alex" || String(page).startsWith("trabalho_")) {
     accessState = await carregarEstadoRemoto(user.id);
+    if (window.LuriaSessionInvalidated) return;
   }
 
   if (page === "professor_alex") {
@@ -6677,6 +6687,7 @@ async function iniciarApp() {
         profile,
         acessoAdmin
       }) => {
+        if (window.LuriaSessionInvalidated) return;
         const finalEntitlements =
           entitlements
           || cachedEntitlements;
@@ -6861,12 +6872,26 @@ iniciarApp();
       const cached=JSON.parse(localStorage.getItem(key)||"null");
       if(unpersisted.has(snapshot.sessionId)&&cached?.sessionId!==snapshot.sessionId)throw new Error("Sessão ainda não foi guardada localmente.");
       if(cached&&cached.sessionId!==snapshot.sessionId)return false;
+      // A previous insert may have committed despite a lost reply. Without a
+      // server operation key, retrying this draft would risk a duplicate row.
+      if(cached?.persistenceState==="uncertain"&&!completed.has(snapshot.sessionId)){
+        notify("persist_uncertain",{sessionId:snapshot.sessionId});return false;
+      }
       // Another tab can have completed this same session while this tab waited.
       if(cached?.sessionId===snapshot.sessionId && seconds>=1 && !completed.has(snapshot.sessionId)){
         const payload={user_id:snapshot.ownerId,activity_kind:snapshot.kind||"study",area:snapshot.area||null,materia:snapshot.materia||null,started_at:new Date(snapshot.startedAt).toISOString(),ended_at:new Date().toISOString(),duration_seconds:seconds};
         if(snapshot.sourceId&&/^[0-9a-f-]{36}$/i.test(snapshot.sourceId))payload.source_id=snapshot.sourceId;
+        localStorage.setItem(key,JSON.stringify({...cached,persistenceState:"uncertain"}));
+        if(state?.sessionId===snapshot.sessionId)state.persistenceState="uncertain";
         const {error}=await window.supabaseClient.from("study_sessions").insert(payload);
-        if(error)throw error;
+        if(error){
+          // A returned SQL rejection proves rollback; transport errors do not.
+          if(/^(?:22|23|42)[A-Z0-9]{3}$/.test(String(error.code||""))){
+            localStorage.setItem(key,JSON.stringify({...cached,persistenceState:null}));
+            if(state?.sessionId===snapshot.sessionId)state.persistenceState=null;
+          }
+          throw error;
+        }
         completed.add(snapshot.sessionId);
       }
       const latest=JSON.parse(localStorage.getItem(key)||"null");
@@ -6881,7 +6906,7 @@ iniciarApp();
       .finally(()=>flights.delete(snapshot.sessionId));
     flights.set(snapshot.sessionId,promise);return promise;
   }
-  function resume(){if(!state||state.running||flights.has(state.sessionId))return;state.running=true;state.segmentStartedAt=now();state.lastInteractionAt=now();state.pausedReason=null;write();scheduleIdle();}
+  function resume(){if(!state||state.persistenceState==="uncertain"||state.running||flights.has(state.sessionId))return;state.running=true;state.segmentStartedAt=now();state.lastInteractionAt=now();state.pausedReason=null;write();scheduleIdle();}
   function scheduleIdle(){clearTimeout(idleHandle);if(!state?.running||state.allowIdle)return;const wait=Math.max(0,IDLE_MS-(now()-(state.lastInteractionAt||now())));idleHandle=setTimeout(()=>pause("idle_15m"),wait+50);}
   function touch(){if(!state?.running||state.allowIdle)return;state.lastInteractionAt=now();write();scheduleIdle();}
   async function start(kind="study",opts={}){

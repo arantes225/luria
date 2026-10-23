@@ -179,14 +179,31 @@ window.supabaseClient = window.supabase.createClient(
 // Ownership is established by Auth, never by an unscoped legacy draft.
 (() => {
   let ownerId = null, epoch = 0, authRevision = 0;
+  const invalidateDocument = nextId => {
+    if (window.LuriaSessionInvalidated) return;
+    window.LuriaSessionInvalidated = true;
+    document.documentElement.style.setProperty('visibility', 'hidden', 'important');
+    document.documentElement.style.setProperty('display', 'none', 'important');
+    document.body?.classList.remove('app-ready');
+    if (document.body) document.body.inert = true;
+    // This document belongs to one identity. Old closures must never render
+    // into a new account; a fresh document performs the next auth bootstrap.
+    for (const name of ['docmapUser', 'docmapSession', 'docmapProfile', 'docmapEntitlements', 'docmapPlan', 'docmapIsAdmin']) {
+      Object.defineProperty(window, name, { configurable: false, get: () => null, set: () => {} });
+    }
+    window.dispatchEvent(new CustomEvent('luria:session-invalidated'));
+    // Do not delete owner-scoped drafts or the new account's auth storage.
+    window.location.replace(nextId ? window.location.href : '/login/');
+  };
   const setOwner = id => {
     if (ownerId === id) return;
     const previousId = ownerId;
     ownerId = id;
     epoch += 1;
+    if (previousId || (window.docmapUser?.id && window.docmapUser.id !== id)) invalidateDocument(id);
     window.dispatchEvent(new CustomEvent("luria:owner-changed", {detail:{ownerId,previousId,epoch}}));
   };
-  const key = (base, id = ownerId) => id ? base + ":" + encodeURIComponent(id) : null;
+  const key = (base, id = ownerId) => !window.LuriaSessionInvalidated && id ? base + ":" + encodeURIComponent(id) : null;
   const api = {
     get ownerId() { return ownerId; },
     get epoch() { return epoch; },
@@ -209,4 +226,27 @@ window.supabaseClient = window.supabase.createClient(
     if (!error && authRevision === initialRevision) setOwner(data?.session?.user?.id || null);
     return ownerId;
   }).catch(() => ownerId);
+  window.addEventListener('pageshow', async event => {
+    if (!event.persisted || !ownerId || window.LuriaSessionInvalidated) return;
+    document.documentElement.style.setProperty('visibility', 'hidden', 'important');
+    document.documentElement.style.setProperty('display', 'none', 'important');
+    const revision = authRevision;
+    try {
+      const {data,error} = await window.supabaseClient.auth.getSession();
+      if (window.LuriaSessionInvalidated) return;
+      if (revision !== authRevision) {
+        // A same-owner token refresh superseded this lookup. Identity changes
+        // already invalidated the document synchronously in setOwner.
+        document.documentElement.style.removeProperty('display');
+        document.documentElement.style.removeProperty('visibility');
+        return;
+      }
+      const id = error ? null : data?.session?.user?.id || null;
+      if (id !== ownerId) setOwner(id);
+      else {
+        document.documentElement.style.removeProperty('display');
+        document.documentElement.style.removeProperty('visibility');
+      }
+    } catch { invalidateDocument(null); }
+  });
 })();

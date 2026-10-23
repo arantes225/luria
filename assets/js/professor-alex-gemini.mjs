@@ -55,6 +55,10 @@ let liveRecognition = null;
 let startLiveListening = null;
 
 const ERROR_MESSAGES = {
+  invalid_request_id: "Atualize a página para continuar a conversa.",
+  request_in_progress: "Uma resposta ainda está sendo processada. Aguarde antes de enviar outra pergunta.",
+  duplicate_request: "Esta pergunta já foi processada ou está em processamento.",
+  request_conflict: "Não foi possível confirmar esta solicitação. Atualize a página.",
   unauthorized: "Entre na sua conta da LURIA para conversar com o Professor Alex.",
   empty_prompt: "Digite uma pergunta ou informe o tema que deseja estudar.",
   invalid_body: "Os dados da aula não puderam ser enviados. Tente novamente.",
@@ -285,6 +289,7 @@ if (form) {
       (document.querySelector('[data-alex-mode="estourado"]')?.getAttribute("aria-pressed") === "true");
 
     const payload = {
+      request_id: crypto.randomUUID(),
       area,
       topic,
       prompt,

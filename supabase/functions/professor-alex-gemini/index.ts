@@ -158,7 +158,8 @@ Deno.serve(async (req: Request) => {
   const area = String(data.area || "").trim().slice(0, 120);
   const topic = String(data.topic || "").trim().slice(0, 180);
   const prompt = String(data.prompt || "").trim().slice(0, 4000);
-  const modelToUse = Deno.env.get("ALEX_GEMINI_MODEL") || (typeof data.model === "string" && data.model.trim() ? data.model.trim() : DEFAULT_MODEL);
+  const modelToUse = Deno.env.get("ALEX_GEMINI_MODEL") || DEFAULT_MODEL;
+  if (!/^gemini-(?:3[.\w-]*|2\.5-flash[\w-]*)$/.test(modelToUse)) return json({ error: "gemini_model_unavailable" }, 503, headers);
   const rawHistory = Array.isArray(data.history) ? data.history.slice(-8) : [];
   if (!topic && !prompt) return json({ error: "empty_prompt" }, 400, headers);
   if (!Deno.env.get("CLIENT_GEMINI")) return json({ error: "gemini_secret_missing" }, 503, headers);
@@ -169,14 +170,6 @@ Deno.serve(async (req: Request) => {
   }
   if (channel === "voice" && Number.isFinite(voiceConfidence) && voiceConfidence < 0.65) {
     return json({ clarification: "Não entendi bem esse termo. Pode repetir devagar ou digitar a palavra? Não vou elaborar uma resposta antes de confirmar.", clarification_code: "low_transcription_confidence" }, 200, headers);
-  }
-
-  const { data: initialUsage, error: initialUsageError } = await admin.rpc("professor_alex_token_usage", { p_user_id: user.id });
-  if (initialUsageError || !initialUsage || typeof initialUsage !== "object") {
-    return json({ error: "usage_limit_unavailable" }, 503, headers);
-  }
-  if (Number(initialUsage.remaining_tokens || 0) <= 0) {
-    return json({ error: "token_budget_reached", usage: initialUsage }, 429, headers);
   }
 
   const contents: Array<Record<string, unknown>> = [];
@@ -244,25 +237,61 @@ Deno.serve(async (req: Request) => {
   }
 
   const apiKey = Deno.env.get("CLIENT_GEMINI")!;
+  const requestId = String(data.request_id || "");
+  if (!/^[a-f0-9]{8}(?:-[a-f0-9]{4}){3}-[a-f0-9]{12}$/i.test(requestId)) return json({ error: "invalid_request_id" }, 400, headers);
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(JSON.stringify({ ...data, request_id: undefined })));
+  const requestHash = Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
+  const { data: reservation, error: reserveError } = await admin.rpc("reserve_alex_budget", {
+    p_user_id: user.id, p_request_id: requestId, p_request_hash: requestHash, p_channel: channel,
+  });
+  if (reserveError || !reservation) return json({ error: "usage_limit_unavailable" }, 503, headers);
+  if (reservation.ok !== true) return json({ error: reservation.error || "usage_limit_unavailable", usage: reservation.usage }, reservation.error === "token_budget_reached" ? 429 : 409, headers);
+  const initialUsage = reservation.usage;
+  async function settle(input: number | null, output: number | null, total: number | null) {
+    // Retry the same operation only. A lost RPC reply cannot double-charge.
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        const result = await admin.rpc("settle_alex_budget", { p_user_id: user.id, p_request_id: requestId, p_input: input, p_output: output, p_total: total });
+        if (!result.error && result.data) return result.data;
+      } catch { /* Full reservation remains charged. */ }
+    }
+    return null;
+  }
+  const providerRequest = { systemInstruction: { parts: [{ text: system }] }, contents, generationConfig };
+  // Count system/history/PDF input; output cap includes thinking. No tools or retries.
+  try {
+    const counted = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + modelToUse + ":countTokens", {
+      method: "POST", headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
+      body: JSON.stringify({ generateContentRequest: { model: "models/" + modelToUse, ...providerRequest } }),
+      signal: AbortSignal.timeout(10_000),
+    });
+    const count = counted.ok ? Number((await counted.json()).totalTokens) : NaN;
+    if (!Number.isSafeInteger(count) || count < 0) throw Error("count_unavailable");
+    if ((count + Number(generationConfig.maxOutputTokens)) * Number(reservation.multiplier) > Number(reservation.reserved)) {
+      const usage = await settle(0, 0, 0);
+      return json({ error: "token_budget_reached", usage: usage || initialUsage }, 429, headers);
+    }
+  } catch {
+    await settle(0, 0, 0); // No generation was dispatched.
+    return json({ error: "usage_limit_unavailable" }, 503, headers);
+  }
   let response: Response;
   try {
     response = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + modelToUse + ":generateContent", {
       method: "POST",
       headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
-      body: JSON.stringify({
-        systemInstruction: { parts: [{ text: system }] },
-        contents,
-        generationConfig,
-      }),
+      body: JSON.stringify(providerRequest),
       signal: AbortSignal.timeout(50_000),
     });
   } catch (cause) {
     // Only record the error category; never log prompts, API keys, attachments or
     // raw provider error messages.
     console.warn("[alex-gemini] provider_connection_failure", cause instanceof DOMException ? cause.name : "network_failure");
+    await settle(null, null, null);
     return json({ error: "gemini_connection_failed" }, 502, headers);
   }
   if (!response.ok) {
+    await settle(null, null, null);
     const provider = await response.json().catch(() => ({}));
     // Upstream messages may contain key fragments or user input, so only inspect
     // them locally and expose a finite set of nonsensitive error categories.
@@ -295,7 +324,10 @@ Deno.serve(async (req: Request) => {
     ?.filter((part: { thought?: boolean }) => !part.thought)
     ?.map((part: { text?: string }) => part.text || "")
     .filter(Boolean).join("\n").trim();
-  if (!answer) return json({ error: "empty_response" }, 502, headers);
+  if (!answer) {
+    await settle(null, null, null);
+    return json({ error: "empty_response" }, 502, headers);
+  }
 
   let audioBase64: string | null = null;
   let audioMimeType: string = "audio/wav";
@@ -366,17 +398,12 @@ Deno.serve(async (req: Request) => {
   }
 
   const metadata = result?.usageMetadata || {};
-  const inputTokens = Number(metadata.promptTokenCount || 0);
-  const outputTokens = Number(metadata.candidatesTokenCount || 0);
-  const totalTokens = Number(metadata.totalTokenCount || (inputTokens + outputTokens));
-  const { data: usage, error: usageError } = await admin.rpc("record_professor_alex_token_usage", {
-    p_user_id: user.id,
-    p_channel: channel,
-    p_input_tokens: Number.isFinite(inputTokens) ? inputTokens : 0,
-    p_output_tokens: Number.isFinite(outputTokens) ? outputTokens : 0,
-    p_total_tokens: Number.isFinite(totalTokens) ? totalTokens : 0,
-  });
-  if (usageError || !usage || typeof usage !== "object") {
+  const inputTokens = metadata.promptTokenCount;
+  const outputTokens = metadata.candidatesTokenCount;
+  const totalTokens = metadata.totalTokenCount;
+  const validUsage = [inputTokens, outputTokens, totalTokens].every((value) => Number.isSafeInteger(value) && value >= 0) && totalTokens >= inputTokens + outputTokens;
+  const usage = await settle(validUsage ? inputTokens : null, validUsage ? outputTokens : null, validUsage ? totalTokens : null);
+  if (!validUsage || !usage || typeof usage !== "object") {
     console.error("[alex-gemini] token_accounting_failure");
     return json({ answer, audio: audioBase64, audioMimeType, audioError, model: modelToUse, usage: initialUsage, accounting_pending: true }, 200, headers);
   }

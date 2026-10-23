@@ -150,12 +150,13 @@ test('Notion main editor keeps block identity through reopening and saving edits
 test('Admin queue renderers reject dangerous URLs and escape persisted titles and attributes',t=>{
   const {w}=fixture(t,'<div id="admin-images-list"></div><div id="admin-apostila-images-list"></div>');
   w.$=id=>w.document.getElementById(id);w.clinicalImageLabel=()=>'';w.eval(declaration(admin,'esc','  '));
-  for(const name of ['renderClinicalImageReviewQueue','renderApostilaImageReviewQueue'])w.eval(declaration(admin,name,'  '));
+  w.apostilaImageReviewRows=[];w.apostilaImageSelection=new w.Set();
+  for(const name of ['apostilaVisibleImageRows','updateApostilaSelectionControls','luriaSafeImageSrc','renderClinicalImageReviewQueue','renderApostilaImageReviewQueue'])w.eval(declaration(admin,name,'  '));
   const row={id:1,source_url:'javascript:window.auditExecuted=1',source_name:'<img onerror="window.auditExecuted=1">',proposed_asset:{src:'data:text/html,<script>1</script>',alt:'" onerror="window.auditExecuted=1',caption:'Texto & çã'}};
-  w.renderClinicalImageReviewQueue([row]);w.renderApostilaImageReviewQueue([row]);
+  w.apostilaImageReviewRows=[row];w.renderClinicalImageReviewQueue([row]);w.renderApostilaImageReviewQueue();
   for(const id of ['admin-images-list','admin-apostila-images-list']){const root=w.$(id);assertSafe(root);assert.equal(root.querySelectorAll('img,a').length,0);assert.ok(root.textContent.includes(row.source_name));}
   row.source_url='https://example.org/source';row.proposed_asset.src='/assets/img/demo.webp';
-  w.renderClinicalImageReviewQueue([row]);w.renderApostilaImageReviewQueue([row]);
+  w.renderClinicalImageReviewQueue([row]);w.renderApostilaImageReviewQueue();
   for(const id of ['admin-images-list','admin-apostila-images-list']){const root=w.$(id);assertSafe(root);assert.equal(root.querySelector('a').href,row.source_url);assert.equal(root.querySelector('img').alt,row.proposed_asset.alt);assert.equal(root.querySelectorAll('button').length>=2,true);}
 });
 
@@ -339,13 +340,15 @@ test('Apostila approved figures, review cards and lightbox share the URL protect
   w.eval(declaration(admin,'esc','  '));w.isAdmin=true;
   w.rows=[{id:1,review_status:'pending',source_name:'Fonte <literal>',source_url:'javascript:window.auditExecuted=1',proposed_asset:{src:'data:text/html,<script>1</script>',alt:'" onmouseover="window.auditExecuted=1',caption:'Descrição & çã'}}];
   w.ensureLightbox=()=>w.document.getElementById('lightbox');
-  const source=read('assets/js/apostila-tools.js');for(const name of ['getAsset','createApprovedFigure','expandImage','renderReviewPanel'])w.eval(declaration(source,name,'  '));
+  const source=read('assets/js/apostila-tools.js');
+  w.eval(source.slice(source.indexOf('  const removedUnlicensed ='),source.indexOf('  function createApprovedFigure(')).replace(/\bconst /g,'var '));
+  for(const name of ['getAsset','createApprovedFigure','expandImage','renderReviewPanel'])w.eval(declaration(source,name,'  '));
   let figure=w.createApprovedFigure(w.rows[0]);assertSafe(figure);assert.equal(figure.querySelector('a').getAttribute('href'),'#');assert.equal(figure.querySelector('img').getAttribute('src'),'');
   w.renderReviewPanel();const panel=w.document.getElementById('apostila-image-curation');assert.equal(panel.querySelector('a').getAttribute('href'),'#');assert.equal(panel.querySelector('img').getAttribute('src'),'');
   w.eval(read('assets/js/apostila-image-fallback.js'));
   assert.equal(panel.querySelector('img').hasAttribute('onerror'),false);assert.equal(panel.querySelector('img').hasAttribute('onmouseover'),false);
   panel.querySelector('img').dispatchEvent(new w.Event('error'));
-  assert.equal(panel.querySelector('img').style.display,'none');assert.ok(panel.textContent.includes('Imagem indisponível'));
+  assert.equal(panel.querySelector('img').hidden,true);assert.ok(panel.textContent.includes('Imagem não carregada — confira a fonte no Admin'));
   panel.querySelector('[data-apostila-image-expand]').click();assert.equal(w.document.getElementById('lightbox').hidden,false);assert.equal(w.document.querySelector('#lightbox img').getAttribute('src'),'');
   w.rows[0].source_url='https://example.org/fonte';w.rows[0].proposed_asset.src='/assets/img/demo.webp';
   figure=w.createApprovedFigure(w.rows[0]);assert.equal(figure.querySelector('a').href,w.rows[0].source_url);assert.equal(figure.querySelector('img').getAttribute('src'),w.rows[0].proposed_asset.src);

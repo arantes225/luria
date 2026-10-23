@@ -75,7 +75,8 @@ test("Fast answer format is sent to server and controls output budget", () => {
   assert.match(edge, /FORMATO DÚVIDA RÁPIDA/);
   assert.match(edge, /maxOutputTokens: depth === "aula"/);
   assert.match(edge, /thinkingLevel/);
-  assert.match(edge, /generationConfig,/);
+  assert.match(edge, /contents, generationConfig/);
+  assert.match(edge, /body: JSON.stringify\(providerRequest\)/);
   assert.match(edge, /generationConfig.thinkingConfig/);
   assert.doesNotMatch(edge, /topP: 0/);
 });

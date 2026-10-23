@@ -3,7 +3,7 @@ const code=fs.readFileSync(path.join(__dirname,'../assets/js/ui-navigation-v2.js
 async function fixture(ready){
  const listeners={},mounts=[],access=[];const window={addEventListener:(name,fn)=>listeners[name]=fn,docmapUser:ready?{id:'user-a'}:null,docmapSession:ready?{user:{id:'user-a'}}:null,docmapIsAdmin:false};
  const document={body:{dataset:{uiNav:'v2'},classList:{contains:()=>ready}},addEventListener:()=>{}};
- const context={window,document,console,load:async()=>({mountAlexCompanion:options=>{mounts.push(options);return {setAccess:value=>access.push(value),destroy:()=>{}};}})};
+ const context={window,document,console,setTimeout:()=>0,load:async()=>({mountAlexCompanion:options=>{mounts.push(options);return {setAccess:value=>access.push(value),destroy:()=>{}};}})};
  vm.runInNewContext(code.replace(/import\('[^']+'\)/,'load()'),context);await new Promise(resolve=>setImmediate(resolve));
  return {listeners,mounts,access,window};
 }

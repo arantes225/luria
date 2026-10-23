@@ -29,14 +29,14 @@ test('quick chart waits for in-flight save before clear and preserves edits made
   f.requests[2].finish();await Promise.all([saving,clearing,after]);assert.equal(f.note.value,'AFTER');assert.equal(f.stored().note,'AFTER');
 });
 
-async function managerFixture(signInImmediately=false){
+async function managerFixture(signInImmediately=false,portal=null){
  const {ownerFixture}=require('./fixtures/app-client.cjs');const f=ownerFixture(signInImmediately?null:"A"),c=f.context;await c.LuriaLocalOwnerStore.ready;
  const elements={},requests=[],loads=[];
  const el=id=>elements[id]??={value:'',textContent:'',disabled:false,addEventListener(type,fn){this[type]=fn}};
  c.document={getElementById:el};c.location={search:'',origin:'https://fixture.invalid'};
  c.supabaseClient.from=table=>{let owner,payload;const query={
   select(){return this},eq(_,id){owner=id;return this},
-  maybeSingle:async()=>{loads.push({table,owner});return {data:table==='profiles'?{username:owner.toLowerCase()}:null,error:null}},
+  maybeSingle:async()=>{loads.push({table,owner});return {data:table==='profiles'?{username:owner.toLowerCase()}:portal,error:null}},
   upsert(value){payload=value;return this},
   single(){return new Promise(resolve=>requests.push({payload,finish(){resolve({data:payload,error:null})}}))},
   then(resolve){requests.push({payload,finish(){resolve({error:null})}})}
@@ -61,6 +61,12 @@ test('internal chart clears owner data and ignores an old account save response'
 
 test('internal chart initializes once when initial Auth and owner event overlap',async()=>{
  const f=await managerFixture(true);assert.equal(f.loads.length,2,'one profile and one chart request');
+});
+
+test('expired internal chart reads hide old content without deleting a newer remote write',async()=>{
+ const f=await managerFixture(false,{content:{note:'EXPIRED'},content_expires_at:'2000-01-01T00:00:00Z'});
+ assert.equal(f.el('quick-chart-note').value,'');assert.equal(f.requests.length,0);
+ assert.equal(f.loads.length,2);
 });
 
 test('public chart ignores a late login response after another portal was selected',async()=>{

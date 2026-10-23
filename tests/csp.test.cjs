@@ -30,6 +30,7 @@ for (const file of pages) test('CSP: ' + file, () => {
       assert.ok(!(directives[directive] || directives['default-src']).some(value => /^https:\/\/(?:cdn\.jsdelivr\.net|cdnjs\.cloudflare\.com)\/?$/.test(value)), directive);
     }
     if (resources.noBackend) assert.deepEqual(directives['connect-src'], ["'none'"]);
+    else if (resources.localConnect) assert.deepEqual(directives['connect-src'], ["'self'"]);
     else {
       assert.ok(directives['connect-src'].includes('https://sxdsfklllilhdyuamvvg.supabase.co'));
       if (resources.websocket !== false) assert.ok(directives['connect-src'].includes('wss://sxdsfklllilhdyuamvvg.supabase.co'));
@@ -115,17 +116,19 @@ test('Apostila fallback capture preserves all static and dynamic image behaviors
     assert.equal(display.style.display,'none');assert.equal(display.nextElementSibling.hidden,false);
     assert.equal(hidden.hidden,true);assert.equal(hidden.nextElementSibling.hidden,false);
     assert.equal(ist.closest('figure').classList.contains('ist-image-unavailable'),true);
-    assert.equal(candidate.style.display,'none');assert.equal(candidate.parentElement.textContent,'Imagem indisponível');
+    assert.equal(candidate.hidden,true);assert.equal(candidate.parentElement.textContent,'Imagem não carregada — confira a fonte no Admin');
     assert.equal(ordinary.hidden,false);assert.equal(ordinary.style.display,'');
   } finally {dom.window.close();}
 });
 
-test('Apostila pages register image capture before static images and template loaders', () => {
+test('Apostila pages with declarative fallbacks register capture before their static images', () => {
   for (const file of pages.filter(page=>page.startsWith('apostilas/') && page!=='apostilas/index.html')) {
     const html = fs.readFileSync(path.join(root,file),'utf8');
     const dom = new JSDOM(html);
     try {
       const doc=dom.window.document;
+      // Not every public editorial chapter uses this fallback contract.
+      if (!doc.querySelector('[data-apostila-image-fallback]')) continue;
       const helper=doc.querySelector('script[src="/assets/js/apostila-image-fallback.js"]');
       assert.ok(helper && doc.head.contains(helper),file);
       assert.equal(helper.hasAttribute('defer'),false);
@@ -135,18 +138,12 @@ test('Apostila pages register image capture before static images and template lo
   }
 });
 
-test('CSP inventory covers all 98 application HTML pages exactly once', () => {
-  const files=[];
-  function scan(directory) {
-    for (const entry of fs.readdirSync(directory,{withFileTypes:true})) {
-      if (entry.name.startsWith('.') || ['node_modules','assets','tests','docs','scripts','build','browser-results','tmp'].includes(entry.name)) continue;
-      const full=path.join(directory,entry.name);
-      if(entry.isDirectory())scan(full);
-      else if(entry.name.endsWith('.html'))files.push(path.relative(root,full).replaceAll(path.sep,'/'));
-    }
-  }
-  scan(root);
-  assert.equal(files.length,98);
+test('CSP inventory follows the tracked Pages publication filter', () => {
+  const {publicFiles,isPublicFile}=require('../scripts/public-files.cjs');
+  const files=publicFiles(root).filter(file=>file.endsWith('.html'));
+  assert(files.length>=367);
+  for(const page of ['new-page/index.html','aplicar/editais/index.html','editorial.html'])assert(isPublicFile(page));
+  for(const page of ['tests/fixture.html','docs/example.html','supabase/function/index.html','node_modules/a.html','build/pages/index.html'])assert(!isPublicFile(page));
   assert.equal(new Set(pages).size,pages.length);
   assert.deepEqual([...pages].sort(),files.sort());
 });

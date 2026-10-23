@@ -22,7 +22,7 @@
       loaded: () => !!window.pdfjsLib?.getDocument
     },
     tesseract: {
-      src: "https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js",
+      src: "https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js",
       loaded: () => !!window.Tesseract?.recognize
     },
     jszip: {
@@ -38,7 +38,8 @@
       loaded: () => typeof window.fzstd?.decompress === "function"
     },
     jspdf: {
-      src: "https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js",
+      src: "https://cdn.jsdelivr.net/npm/jspdf@4.2.1/dist/jspdf.umd.min.js",
+      integrity: "sha384-qovJwSBbRDPP5cEjCp8S0UP66wrvnjaa60XMOGzTNanrThcrGfXfnZkvgY8N1KT3",
       loaded: () => typeof window.jspdf?.jsPDF === "function"
     }
   });
@@ -54,6 +55,7 @@
       const script = document.createElement("script");
       script.src = resource.src;
       script.async = true;
+      if (resource.integrity) { script.integrity = resource.integrity; script.crossOrigin = "anonymous"; }
       script.dataset.luriaOptionalLibrary = name;
       script.onload = () => {
         if (name === "xlsx-full" && window.XLSX?.read && window.XLSX?.utils?.sheet_to_json) {

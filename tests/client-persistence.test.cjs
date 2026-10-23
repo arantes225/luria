@@ -31,7 +31,7 @@ async function timerFixture() {
   const inserts=[];let clock=Date.now(),fail=false;
   c.Date=class extends Date{static now(){return clock}};
   c.document={addEventListener(){}};c.setTimeout=()=>1;c.clearTimeout=()=>{};c.crypto=require('node:crypto').webcrypto;
-  c.supabaseClient.from=()=>({insert:async p=>{inserts.push(p);return {error:fail?{message:'FAKE_FAILURE'}:null}}});
+  c.supabaseClient.from=()=>({insert:async p=>{inserts.push(p);return {error:fail?{message:'FAKE_FAILURE',code:'23514'}:null}}});
   const app=source('assets/js/app.js'),a=app.indexOf('(function installLuriaStudyTimer()');
   vm.runInContext(app.slice(a,app.indexOf('})();',a)+5),c);await turn();
   return {...f,inserts,advance:ms=>{clock+=ms},fail:value=>{fail=value}};
@@ -55,6 +55,15 @@ test('timer response for A cannot clear a new session belonging to B',async()=>{
   await t.start('A');f.advance(2000);const pending=t.finish();await turn();
   f.change('B');await t.start('B');resolve({error:null});await pending;
   assert.equal(t.getState().kind,'B');assert.equal(t.getState().ownerId,'B');
+});
+
+test('timer retains an ambiguous insert across retry and reload without sending it again',async()=>{
+  const f=await timerFixture(),c=f.context,t=c.LuriaStudyTimer;
+  c.supabaseClient.from=()=>({insert:async p=>{f.inserts.push(p);throw Error('Response lost after commit');}});
+  await t.start('UNCERTAIN');f.advance(2000);await t.finish();await t.finish();
+  assert.equal(f.inserts.length,1);assert.equal(t.getState().persistenceState,'uncertain');
+  f.change('B');f.change('A');await t.finish();assert.equal(f.inserts.length,1);
+  assert.equal(t.getState().persistenceState,'uncertain');
 });
 test('Passometro schedules independent decks and does not recreate a queued deletion',async()=>{
   const f=await passometroFixture(),c=f.context;

@@ -4,7 +4,7 @@ const fs=require('node:fs');
 const {JSDOM}=require('jsdom');
 const navigation=fs.readFileSync('assets/js/ui-navigation-v2.js','utf8');
 const hub=fs.readFileSync('assets/js/work-dashboard.js','utf8');
-const settle=w=>new Promise(resolve=>w.setTimeout(resolve,60));
+const settle=async w=>{const frame=w.__fixtureFrame||w.requestAnimationFrame.bind(w);for(let i=0;i<3;i++)await new Promise(resolve=>frame(resolve));};
 function fixture(t,{mobile=false,admin=true,page='trabalho_bulario',installed=false}={}) {
  const dom=new JSDOM('<html '+(installed?'data-pwa="standalone"':'')+'><body class="app-ready" data-ui-nav="v2" data-ui-context="work" data-ui-work="v2" data-ui-work-navigation="hub" data-page="'+page+'"><div class="app-shell"><aside id="sidebar"><div class="sidebar-top"><a class="brand" href="/dashboard/"><img id="luria-brand-logo"></a></div><nav><a href="/trabalho/">Dashboard</a><a href="/trabalho/passometro/">Passômetro</a><a href="/trabalho/gestor-plantoes/">Plantões</a>'+(admin?'<a id="admin-nav-link" href="/admin/">◆ Admin</a>':'')+'<a id="beta-testers-nav-link" href="/beta-testers/">Beta Testers</a></nav><a class="work-pcr-button" href="/trabalho/pcr/">PCR</a><a class="luria-mode-footer-switch" href="/dashboard/">Estudos</a></aside><div id="sidebar-backdrop"></div><main class="main"><div class="page"><header class="topbar"><button id="menu-open">Menu</button><div class="luria-notifications"><button id="luria-profile-toggle">Perfil</button><div id="luria-profile-menu" hidden><a href="/configuracoes/#perfil">Perfil</a><button id="luria-profile-logout">Sair</button></div></div></header><div id="work-dashboard-content"></div><input id="clinical-control" value="preservado"></div></main></div></body></html>',{url:'https://fixture.invalid/trabalho/bulario/',runScripts:'outside-only',pretendToBeVisual:true});
  const observers=[],NativeObserver=dom.window.MutationObserver;
@@ -12,7 +12,9 @@ function fixture(t,{mobile=false,admin=true,page='trabalho_bulario',installed=fa
  t.after(()=>{observers.forEach(o=>o.disconnect());dom.window.close();});
  dom.window.matchMedia=()=>({matches:mobile,addEventListener(){}});
  dom.window.docmapUser={id:'work-test-user'};
- dom.window.eval(navigation);
+ dom.window.__fixtureFrame=dom.window.requestAnimationFrame.bind(dom.window);
+ // Companion behavior is covered separately; this fixture runs only the shell.
+ dom.window.eval(navigation.replace(/import\('[^']*professor-alex-companion[^']*'\)/g,'Promise.resolve({mountAlexCompanion:()=>({destroy(){},setAccess(){}})})'));
  return dom.window;
 }
 test('Work preserves its desktop hub and uses mobile shortcuts without changing clinical controls',async t=>{
@@ -81,7 +83,7 @@ test('all authenticated Work pages share the hub adapter and preserve the public
  assert.doesNotMatch(fs.readFileSync('trabalho/prontuario/index.html','utf8'),/work-navigation|data-ui-work-navigation/);
 });
 
-test('installed Study navigation uses five mobile destinations and its shared tools dialog',async t=>{
+test('installed Study navigation uses its three hubs and shared tools dialog',async t=>{
  const dom=new JSDOM('<html data-pwa="standalone"><body class="app-ready" data-ui-nav="v2" data-ui-context="study"><div class="app-shell"><aside id="sidebar"><div class="sidebar-top"></div><nav><a href="/dashboard/">Início</a><a href="/aprender/">Estudar</a><a href="/consolidar/">Revisar</a></nav></aside><main class="main"><header class="topbar"><button id="menu-open">Menu</button></header></main></div></body></html>',{url:'https://fixture.invalid/dashboard/',runScripts:'outside-only',pretendToBeVisual:true});
  const s=dom.window,observers=[],NativeObserver=s.MutationObserver;
  s.MutationObserver=class extends NativeObserver{constructor(fn){super(fn);observers.push(this);}};
@@ -90,7 +92,7 @@ test('installed Study navigation uses five mobile destinations and its shared to
  s.HTMLDialogElement.prototype.showModal=function(){this.setAttribute('open','');};
  s.HTMLDialogElement.prototype.close=function(){if(this.open){this.removeAttribute('open');this.dispatchEvent(new s.Event('close'));}};
  s.eval(navigation);await settle(s);
- assert.equal(s.document.querySelectorAll('#ui-mobile-navigation a').length,4);
+ assert.equal(s.document.querySelectorAll('#ui-mobile-navigation a').length,3);
  assert.equal(s.document.querySelector('.work-hub-navigation'),null);
  s.document.getElementById('ui-mobile-more').click();assert.equal(s.document.getElementById('ui-mobile-tools').open,true);assert.equal(s.document.body.classList.contains('sidebar-open'),false);
  s.document.getElementById('ui-mobile-tools').dispatchEvent(new s.Event('cancel',{cancelable:true}));assert.equal(s.document.getElementById('ui-mobile-tools').open,false);

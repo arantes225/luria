@@ -39,7 +39,7 @@ test('fixed SheetJS reads CSV, XLSX and XLS preserving imported cells',()=>{
 
 test('late initial Auth lookup cannot restore ownership after sign-out',async()=>{
  let listener,resolve;
- const c={window:null,localStorage:storage(),sessionStorage:storage(),CustomEvent:function(){},dispatchEvent(){}};c.window=c;
+ const c={window:null,localStorage:storage(),sessionStorage:storage(),CustomEvent:function(){},dispatchEvent(){},addEventListener(){}};c.window=c;
  c.supabase={createClient:()=>({auth:{onAuthStateChange:fn=>{listener=fn},getSession:()=>new Promise(done=>{resolve=done})}})};
  vm.runInNewContext(source('assets/js/supabase.js'),c);
  listener('SIGNED_OUT',null);resolve({data:{session:{user:{id:'OLD'}}}});await c.LuriaLocalOwnerStore.ready;

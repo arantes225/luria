@@ -5796,6 +5796,20 @@
   function renderApostilaImageReviewQueue() {
     const list = $("admin-apostila-images-list");
     if (!list) return;
+    if (!list.dataset.imageFallbackBound) {
+      list.dataset.imageFallbackBound = "1";
+      list.addEventListener("error", event => {
+        const image = event.target;
+        if (image.tagName !== "IMG" || !image.hasAttribute("data-admin-image-fallback")) return;
+        if (!image.dataset.retried) {
+          image.dataset.retried = "1";
+          const match = image.src.match(/File:(.+)$/);
+          if (match) { image.src = "https://commons.wikimedia.org/wiki/Special:FilePath/" + match[1]; return; }
+        }
+        image.style.display = "none";
+        if (image.nextElementSibling) image.nextElementSibling.style.display = "flex";
+      }, true);
+    }
     const filter = $("admin-apostila-image-filter");
     if (filter) {
       const current = filter.value;
@@ -5823,7 +5837,7 @@
       const asset = row.proposed_asset && typeof row.proposed_asset === "object" ? row.proposed_asset : {};
       const src = luriaSafeImageSrc(asset.src);
       const preview = src
-        ? '<img loading="lazy" src="' + esc(src) + '" alt="' + esc(asset.alt || asset.title || "Imagem candidata") + '" onerror="if(!this.dataset.retried){this.dataset.retried=\'1\';var m=this.src.match(/File:(.+)$/);if(m){this.src=\'https://commons.wikimedia.org/wiki/Special:FilePath/\'+m[1];return;}}this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\';"><div class="admin-image-placeholder-fallback" style="display:none;width:100%;height:140px;align-items:center;justify-content:center;background:var(--surface-muted,#f3f4f6);color:var(--text-muted,#6b7280);font-size:12px;text-align:center;padding:8px;border-radius:8px;border:1px dashed var(--border,#d1d5db)"><span>Imagem indisponível na fonte externa<br><small style=\'opacity:.8\'>Clique em Abrir fonte ou aguarde substituição</small></span></div>'
+        ? '<img loading="lazy" src="' + esc(src) + '" alt="' + esc(asset.alt || asset.title || "Imagem candidata") + '" data-admin-image-fallback="true"><div class="admin-image-placeholder-fallback" style="display:none;width:100%;height:140px;align-items:center;justify-content:center;background:var(--surface-muted,#f3f4f6);color:var(--text-muted,#6b7280);font-size:12px;text-align:center;padding:8px;border-radius:8px;border:1px dashed var(--border,#d1d5db)"><span>Imagem indisponível na fonte externa<br><small style=\'opacity:.8\'>Clique em Abrir fonte ou aguarde substituição</small></span></div>'
         : '<span>Prévia indisponível.</span>';
       const sourceUrl = luriaSafeContentUrl(row.source_url);
       const source = sourceUrl

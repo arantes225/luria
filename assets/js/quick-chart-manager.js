@@ -69,9 +69,8 @@
     username=String(profile?.username||"").trim().toLowerCase();
     portal=data||null;
     if(portal?.content_expires_at && new Date(portal.content_expires_at).getTime()<=Date.now()){
-      const {error:expiryError}=await sb.from("external_quick_chart_portals").update({content:{},content_expires_at:null}).eq("owner_id",owner);
-      if(!current(owner,version))return;
-      if(expiryError){setStatus("Não foi possível limpar o conteúdo expirado.");return;}
+      // Expired reads must not erase a newer write made by another device.
+      // Actual expiry enforcement/cleanup belongs to the server.
       portal={...portal,content:{},content_expires_at:null};
     }
     note.value=String(portal?.content?.note||"");

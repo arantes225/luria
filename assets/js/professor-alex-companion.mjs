@@ -352,7 +352,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
       const client = window.supabaseClient;
       if (!client?.functions) throw new Error('Conexão indisponível');
       const {data, error} = await client.functions.invoke('professor-alex-gemini', {
-        body: {prompt: query, area: '', topic: '', intent: 'learn', mode: 'normal', channel: 'chat'}
+        body: {request_id: crypto.randomUUID(), prompt: query, area: '', topic: '', intent: 'learn', mode: 'normal', channel: 'chat'}
       });
       if (error) throw error;
       quickMessages?.querySelector('.pending')?.remove();
