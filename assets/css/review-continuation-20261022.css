@@ -47,6 +47,23 @@ body[data-page="cronograma"] .planner-day-header span {
   color: var(--accent) !important;
 }
 
+/* Cronograma: the planner is one continuous rounded surface. The matrix
+   cells can keep their grid borders without exposing square outer corners. */
+body[data-page="cronograma"] :is(.week-planner, #week-planner, .week-matrix),
+body[data-page="cronograma"] :is(.planner-day, .planner-day-header, .planner-day-body),
+body[data-page="cronograma"] :is(.schedule-add-hub, .planner-panel, .import-box, .deck-panel) {
+  border-radius: 16px !important;
+}
+body[data-page="cronograma"] :is(.week-planner, #week-planner, .week-matrix, .planner-day) {
+  overflow: hidden !important;
+}
+body[data-page="cronograma"] .planner-day-header {
+  border-radius: 15px 15px 0 0 !important;
+}
+body[data-page="cronograma"] .planner-day-body {
+  border-radius: 0 0 15px 15px !important;
+}
+
 /* Professor Alex: keep the conversation inside the workspace. */
 body[data-page="professor_alex"] .alex-chat-container {
   min-height: 0 !important;
@@ -164,6 +181,39 @@ body[data-page="erros"] .error-metric-summary-grid > :last-child {
 }
 body[data-page="erros"] .qs-home-my-lists-content {
   grid-auto-columns: minmax(290px, 1fr) !important;
+}
+
+/* Pulo do Gato occupies the complete daily-review block instead of leaving a
+   decorative empty region beside the actual revision content. */
+body[data-page="erros"] #error-daily-card.error-ccq-home-card {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: minmax(0, 1fr) auto !important;
+  align-items: stretch !important;
+  min-height: 270px !important;
+  width: 100% !important;
+}
+body[data-page="erros"] #error-daily-card .error-ccq-home-copy,
+body[data-page="erros"] #error-daily-card .error-review-home-buttons {
+  width: 100% !important;
+  max-width: none !important;
+}
+body[data-page="erros"] #error-daily-card .error-ccq-home-copy {
+  display: grid !important;
+  align-content: center !important;
+  justify-items: stretch !important;
+  min-height: 0 !important;
+}
+body[data-page="erros"] #error-daily-card .error-review-home-buttons {
+  display: grid !important;
+  grid-template-columns: max-content minmax(0, 1fr) !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+@media (max-width: 560px) {
+  body[data-page="erros"] #error-daily-card .error-review-home-buttons {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 /* LuriaZap phone copy must never paint over another row. */

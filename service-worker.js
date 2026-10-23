@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261023-robot-companion-v1";
+const CACHE_VERSION = "luria-pwa-20261023-visible-alex-v2";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -52,9 +52,13 @@ const APP_SHELL = [
   "/assets/css/style.css?v=16.14-font-unified",
   "/assets/css/luria-brand-v5.css?v=20261005-global-v90",
   "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",
-  "/assets/css/review-continuation-20261022.css?v=1",
+  "/assets/css/review-continuation-20261022.css?v=20261023-visible2",
   "/assets/js/review-continuation-20261022.js?v=1",
   "/assets/js/luria-command-center.js?v=20261023-robot-companion",
+  "/assets/js/professor-alex-companion.mjs?v=20261023-visible2",
+  "/assets/js/professor-alex-mascot.mjs?v=20261014-ready2",
+  "/assets/js/professor-alex-integration.mjs?v=20261014-ready2",
+  "/assets/css/professor-alex-companion.css?v=20261023-visible2",
   "/assets/css/dashboard-layouts.css?v=20261020-card-grid-all",
   "/assets/js/ui-routes.js?v=1",
   "/assets/css/ui-app.css?v=7",
@@ -101,7 +105,7 @@ const APP_SHELL = [
   "/assets/fonts/inter/InterVariable.woff2",
   "/assets/js/dashboard.js?v=20261006-css-owned-height",
   "/assets/js/study-mode.js?v=12.1",
-  "/assets/js/luria-brand-v5.js?v=12",
+  "/assets/js/luria-brand-v5.js?v=20261023-visible2",
   "/assets/img/logos/pwa-icon-192.png?v=pwa5",
   "/assets/img/logos/pwa-icon-512.png?v=pwa5"
 ];
@@ -122,9 +126,13 @@ const INSTALL_PRECACHE = new Set([
   "/assets/css/style.css?v=16.14-font-unified",
   "/assets/css/luria-brand-v5.css?v=20261005-global-v90",
   "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",
-  "/assets/css/review-continuation-20261022.css?v=1",
+  "/assets/css/review-continuation-20261022.css?v=20261023-visible2",
   "/assets/js/review-continuation-20261022.js?v=1",
   "/assets/js/luria-command-center.js?v=20261023-robot-companion",
+  "/assets/js/professor-alex-companion.mjs?v=20261023-visible2",
+  "/assets/js/professor-alex-mascot.mjs?v=20261014-ready2",
+  "/assets/js/professor-alex-integration.mjs?v=20261014-ready2",
+  "/assets/css/professor-alex-companion.css?v=20261023-visible2",
   "/assets/js/ui-routes.js?v=1",
   "/assets/css/ui-app.css?v=7",
   "/assets/css/education-ui-v2.css?v=2",
@@ -135,7 +143,7 @@ const INSTALL_PRECACHE = new Set([
   "/assets/css/vocacao.css?v=2",
   "/assets/js/vocacao.js?v=2",
   "/assets/fonts/inter/InterVariable.woff2",
-  "/assets/js/luria-brand-v5.js?v=12"
+  "/assets/js/luria-brand-v5.js?v=20261023-visible2"
 ]);
 
 
@@ -161,7 +169,7 @@ function publicResource(request) {
     || path === "/manifest.webmanifest"
     || /^\/content\/weekly\/[a-zA-Z0-9/_-]+\.json$/.test(path)
     || /^\/jogos\/study-rats\/(?:hall|game)\.(?:css|js)$/.test(path)
-    || /^\/assets\/(?:js|css|vendor|fonts|img)\/[a-zA-Z0-9/_%. -]+\.(?:js|css|wasm|woff2?|ttf|otf|png|jpe?g|svg|webp|gif|ico)$/.test(path);
+  || /^\/assets\/(?:js|css|vendor|fonts|img)\/[a-zA-Z0-9/_%. -]+\.(?:m?js|css|wasm|woff2?|ttf|otf|png|jpe?g|svg|webp|gif|ico)$/.test(path);
 }
 
 function cacheableResponse(request, response) {
@@ -176,7 +184,7 @@ function cacheableResponse(request, response) {
   if (vary.some(value => !["accept", "accept-encoding", "origin"].includes(value))) return false;
   const path = new URL(request.url).pathname;
   const type = (headers.get("Content-Type") || "").split(";")[0].toLowerCase().trim();
-  if (path.endsWith(".js")) return ["text/javascript", "application/javascript"].includes(type);
+  if (/\.m?js$/.test(path)) return ["text/javascript", "application/javascript"].includes(type);
   if (path.endsWith(".css")) return type === "text/css";
   if (path.endsWith(".json")) return type === "application/json";
   if (path.endsWith(".webmanifest")) return ["application/manifest+json", "application/json"].includes(type);

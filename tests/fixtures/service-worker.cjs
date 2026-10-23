@@ -67,7 +67,7 @@ function workerFixture({ fetch: network = async () => { throw new Error('offline
 }
 function resource(url, body = 'public resource', headers = {}, status = 200) {
   const pathname = new URL(typeof url === 'string' ? url : url.url, origin).pathname;
-  const type = pathname.endsWith('.css') ? 'text/css' : pathname.endsWith('.js') ? 'text/javascript'
+  const type = pathname.endsWith('.css') ? 'text/css' : /\.m?js$/.test(pathname) ? 'text/javascript'
     : pathname.endsWith('.json') ? 'application/json' : pathname.endsWith('.webmanifest') ? 'application/manifest+json'
     : pathname.endsWith('.woff2') ? 'font/woff2' : pathname.endsWith('.wasm') ? 'application/wasm'
     : /\.(png|svg|webp)$/.test(pathname) ? 'image/png' : 'text/html';

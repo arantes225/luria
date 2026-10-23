@@ -3,18 +3,26 @@
 (() => {
   if(document.body?.dataset.uiNav!=="v2")return;
   let companion=null,currentUser=null,revision=0;
-  const start=async event=>{
-    const userId=event.detail?.user?.id;if(!userId)return;
+  const start=async (event={})=>{
+    // ui-navigation is deferred on many pages. It can start after the auth
+    // event has already fired, especially when returning from the PWA cache.
+    const user=event.detail?.user||window.docmapUser||window.docmapSession?.user;
+    const userId=user?.id;if(!userId)return false;
     if(currentUser===userId&&companion){companion.setAccess(event.detail.isAdmin);return;}
     const ticket=++revision;currentUser=userId;companion?.destroy();companion=null;
-    try{const {mountAlexCompanion}=await import('/assets/js/professor-alex-companion.mjs?v=20261021-chat1');if(ticket!==revision)return;companion=mountAlexCompanion({userId,isAdmin:event.detail.isAdmin});}catch(error){console.warn('Alex indisponível',error);}
+    try{const {mountAlexCompanion}=await import('/assets/js/professor-alex-companion.mjs?v=20261023-visible2');if(ticket!==revision)return false;companion=mountAlexCompanion({userId,isAdmin:event.detail?.isAdmin??window.docmapIsAdmin});return !!companion;}catch(error){console.warn('Alex indisponível',error);return false;}
   };
   window.addEventListener('docmap:ready',start);
   window.addEventListener('docmap:access-updated',start);
   // Deferred navigation can execute after a fast cached login already emitted ready.
-  const resume=()=>{if(document.body.classList.contains('app-ready')&&window.docmapUser?.id&&window.docmapSession?.user?.id===window.docmapUser.id)start({detail:{user:window.docmapUser,isAdmin:window.docmapIsAdmin}});};
+  const resume=()=>start({detail:{user:window.docmapUser||window.docmapSession?.user,isAdmin:window.docmapIsAdmin}});
   window.addEventListener('pageshow',resume);
   resume();
+  // A cached PWA may expose the authenticated user just after this deferred
+  // script evaluates. Retry briefly so the robot is never lost to that race.
+  let retries=0;
+  const retry=()=>{if(companion||retries++>=24)return;resume();if(!companion)setTimeout(retry,250);};
+  retry();
   document.addEventListener('click',event=>{if(event.target.closest?.('#logout,#luria-profile-logout')){revision++;currentUser=null;companion?.destroy();companion=null;}});
 })();
 (() => {

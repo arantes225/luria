@@ -14,6 +14,8 @@ test('Alex remains the on-screen companion instead of a top-bar shortcut',t=>{
  const companion=read('assets/js/professor-alex-companion.mjs');
  assert.match(companion,/let prefs = \{x: 1, y: 1, minimized: false, visibilityVersion: 2\}/);
  assert.match(companion,/saved\.visibilityVersion === 2 \? \(saved\.minimized === true\) : false/);
+ assert.doesNotMatch(companion,/isStandalonePwa/);
+ assert.match(read('assets/js/ui-navigation-v2.js'),/window\.docmapUser\|\|window\.docmapSession\?\.user/);
 });
 
 test('Every reviewed study route loads the on-screen Alex companion layer',()=>{
@@ -21,6 +23,14 @@ test('Every reviewed study route loads the on-screen Alex companion layer',()=>{
   assert.match(read(file),/assets\/js\/ui-navigation-v2\.js\?/,file);
  }
  assert.match(read('assets/js/ui-navigation-v2.js'),/mountAlexCompanion/);
+});
+
+test('The Pulo do Gato card fills its review block and the planner clips square outer corners',()=>{
+ const css=read('assets/css/review-continuation-20261022.css');
+ assert.match(css,/body\[data-page="erros"\] #error-daily-card\.error-ccq-home-card \{\s*display: grid !important;/);
+ assert.match(css,/grid-template-rows: minmax\(0, 1fr\) auto !important;/);
+ assert.match(css,/body\[data-page="cronograma"\] :is\(\.week-planner, #week-planner, \.week-matrix, \.planner-day\) \{\s*overflow: hidden !important;/);
+ assert.match(css,/body\[data-page="cronograma"\] \.planner-day-header \{\s*border-radius: 15px 15px 0 0 !important;/);
 });
 
 test('Interactive question pages use source-neutral labels for external material',()=>{
