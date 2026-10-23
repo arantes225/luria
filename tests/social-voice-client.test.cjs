@@ -42,7 +42,7 @@ test('voice client captures audio only, stops both normal and late captures and 
  const old=w.LuriaVoice.join(A,channel);await tick();assert.equal(captureRequests.length,1);await w.LuriaVoice.leave();
  const current=w.LuriaVoice.join(B,channel);await tick();captureRequests[1](media(second));await current;assert.equal(w.LuriaVoice.getState().active,true);
  captureRequests[0](media(first));await old;assert.equal(first.stopped,true);assert.equal(second.stopped,false);
- assert.equal(second.enabled,false);assert.equal(replacements.at(-1),null);assert.equal(parameters.at(-1).encodings[0].maxBitrate,32000);assert.equal(parameters.at(-1).encodings[0].dtx,'enabled');
+ assert.equal(second.enabled,false);assert.equal(replacements.at(-1),null);assert.equal(parameters.at(-1).encodings[0].maxBitrate,24000);assert.equal(parameters.at(-1).encodings[0].dtx,'enabled');
  await w.LuriaVoice.mute(false);assert.equal(second.enabled,true);assert.equal(replacements.at(-1),second);await w.LuriaVoice.setPushToTalk(true);assert.equal(second.enabled,false);await w.LuriaVoice.pushToTalk(true);assert.equal(second.enabled,true);await w.LuriaVoice.pushToTalk(false);assert.equal(replacements.at(-1),null);
  w.LuriaVoice.mute(true);assert.equal(second.enabled,false);
  w.supabaseClient.auth.getSession=()=>{throw new Error('Unload must not wait for auth');};w.dispatchEvent(new w.Event('pagehide'));
