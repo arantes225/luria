@@ -16,6 +16,14 @@ test('Global Alex access remains available in the application top bar',t=>{
  assert.equal(alex.nextElementSibling.className,'luria-pomodoro-top');
 });
 
+test('Every reviewed study route loads the common top-bar access layer',()=>{
+ const app=read('assets/js/app.js');
+ assert.match(app,/\/assets\/js\/luria-command-center\.js\?v=20261023-global-alex/);
+ for(const file of ['consolidar/index.html','questoes-simulados/index.html','flashcards/index.html','caderno-erros/index.html','plantao/luriazap/index.html','jogos/index.html','jogos/study-rats/index.html','professor-alex/index.html']){
+  assert.match(read(file),/assets\/js\/app\.js\?/,file);
+ }
+});
+
 test('Interactive question pages use source-neutral labels for external material',()=>{
  const files=['questoes-simulados/index.html','questoes-simulados.html','registrar-questoes/index.html','registrar-questoes.html'];
  for(const file of files) assert.doesNotMatch(read(file),/medcof|medcurso|medway|aristo|estrat[eé]gia med|sanar/i,file);
