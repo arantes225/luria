@@ -282,6 +282,22 @@ body[data-page="jogos"] .e-story {
 body[data-page="jogos"] .e-story .g-kicker { margin-bottom: 10px !important; }
 body[data-page="jogos"] .e-story .e-narrative { max-width: 720px !important; }
 
+/* Study Rats: the three ways to start a run use the same primary action. */
+body[data-page="study-rats"] .sr-hall-button,
+body[data-page="study-rats"] .sr-hall-button--secondary {
+  border-color: transparent !important;
+  border-radius: 12px !important;
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #4fc3f7, #7687ff)) !important;
+  color: var(--luria-btn-text-blue, #08101f) !important;
+  font-weight: 800 !important;
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--accent, #4fc3f7) 26%, transparent) !important;
+}
+body[data-page="study-rats"] .sr-hall-button:hover:not(:disabled),
+body[data-page="study-rats"] .sr-hall-button--secondary:hover:not(:disabled) {
+  filter: brightness(1.06) !important;
+  transform: translateY(-1px) !important;
+}
+
 @media (max-width: 720px) {
   body .luria-page-spotlight.review-title-card { align-items: flex-start !important; flex-direction: column !important; }
   body .luria-page-spotlight.review-title-card .review-back-in-spotlight { margin: 0 !important; }

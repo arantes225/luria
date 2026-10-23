@@ -21,6 +21,13 @@ test('Interactive question pages use source-neutral labels for external material
  for(const file of files) assert.doesNotMatch(read(file),/medcof|medcurso|medway|aristo|estrat[eé]gia med|sanar/i,file);
 });
 
+test('Study Rats presents each hall entry route as a primary action',()=>{
+ const css=read('assets/css/review-continuation-20261022.css');
+ assert.match(css,/body\[data-page="study-rats"\] \.sr-hall-button--secondary/);
+ assert.match(css,/background: var\(--ui-pill-gradient, linear-gradient\(135deg, #4fc3f7, #7687ff\)\) !important;/);
+ assert.match(css,/color: var\(--luria-btn-text-blue, #08101f\) !important;/);
+});
+
 test('Simulation library keeps content separate from tools and preserves selection/menu handlers',t=>{
  const {w,d}=page(t,'questoes-simulados/index.html'),source=read('assets/js/questoes-simulados.js');
  w.qsState={sets:[{id:'s1',title:'Título longo '.repeat(12),total_questions:18,metrics:{answered:2,correct:1,wrong:1}}],selectedSetIds:new Set()};
