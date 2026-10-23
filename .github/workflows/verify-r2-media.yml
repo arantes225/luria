@@ -1,0 +1,28 @@
+name: Verify optional R2 media bridge
+
+on:
+  pull_request:
+    paths:
+      - "cloudflare/media-storage/**"
+      - "assets/js/storage-router.js"
+      - "tests/storage-r2.test.cjs"
+      - ".github/workflows/verify-r2-media.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Check syntax of browser router and Cloudflare Worker
+        run: |
+          node --check assets/js/storage-router.js
+          node --check cloudflare/media-storage/worker.mjs
+      - name: Run isolated authorization and backward-compatibility tests
+        run: node --test tests/storage-r2.test.cjs
