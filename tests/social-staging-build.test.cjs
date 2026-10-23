@@ -19,8 +19,8 @@ test('staging artifact isolates API and websocket endpoints without changing pro
  }
  const sourceVersion=fs.readFileSync(path.join(root,'service-worker.js'),'utf8').match(/const CACHE_VERSION = "([^"]+)"/)[1];assert.ok(text('service-worker.js').includes(sourceVersion+'-staging-'));
  assert.match(text('manifest.webmanifest'),/Homologação/);
- assert.match(text('assets/js/social-voice.js'),/const endpoint='\/api\/study-voice';/);
- assert.equal(config.voiceOrigin,null);
+ assert.match(text('assets/js/social-voice.js'),/const endpoint='https:\\/\\/luria-study-voice-nova\\.luizarantes2255\\.workers\\.dev\\/api\\/study-voice';/);
+ assert.equal(config.voiceOrigin,'https://luria-study-voice-nova.luizarantes2255.workers.dev');
  for(const file of ['assets/js/professor-alex-companion.mjs','assets/js/professor-alex-mascot.mjs','assets/vendor/three.module.min.mjs'])assert.ok(fs.existsSync(path.join(output,file)),file);
 });
 test('staging artifact excludes database definitions, secrets, tooling and Git metadata',()=>{
