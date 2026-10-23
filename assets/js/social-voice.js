@@ -99,7 +99,7 @@
    const published=await api('publish',{sessionDescription:connection.localDescription,mid:transceiver.mid},context);if(g!==generation)return;await negotiate(published);
    await connected(connection);if(g!==generation)return;
    $('social-voice-join').hidden=true;$('social-voice-leave').hidden=false;$('social-voice-mute').hidden=false;await mute(true);
-   if(uplink?.getParameters&&uplink.setParameters){try{const parameters=uplink.getParameters();if(parameters.encodings?.length){parameters.encodings[0].maxBitrate=64000;if('dtx' in parameters.encodings[0])parameters.encodings[0].dtx='enabled';await uplink.setParameters(parameters);}}catch{}}
+   if(uplink?.getParameters&&uplink.setParameters){try{const parameters=uplink.getParameters();if(parameters.encodings?.length){parameters.encodings[0].maxBitrate=24000;if('dtx' in parameters.encodings[0])parameters.encodings[0].dtx='enabled';await uplink.setParameters(parameters);}}catch{}}
    await sync();if(g!==generation)return;heartbeat=setInterval(()=>sync().catch(async error=>{if(g===generation){status(error.message);await leave();}}),45000);
    statsTimer=setInterval(()=>measure(connection,g),1000);quotaTimer=setInterval(()=>{if(g!==generation)return;const remaining=state().remainingSeconds;if($('social-voice-remaining'))$('social-voice-remaining').textContent=remaining===null?'':`${Math.floor(remaining/60)} min de voz disponíveis hoje`;if(quotaExpires&&Date.now()>=quotaExpires){status('A autorização da chamada expirou. Entre novamente na voz.');leave();}},1000);
    for(const id of ['social-voice-listen','social-voice-options'])if($(id))$(id).hidden=false;await devices();notify();

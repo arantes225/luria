@@ -1,0 +1,28 @@
+name = "luria-study-voice-nova"
+main = "worker.mjs"
+compatibility_date = "2026-10-13"
+account_id = "353fa1a99bef6c7f9cdf85920e782ed6"
+workers_dev = true
+preview_urls = false
+
+[observability]
+enabled = true
+
+[observability.logs]
+enabled = true
+
+[vars]
+VOICE_ENABLED = "false"
+# Use the isolated staging site for the first two-participant test.
+ALLOWED_ORIGINS = "https://luria-homologacao.lfab225.workers.dev"
+SUPABASE_URL = "https://kvprgusgfptslbhigsab.supabase.co"
+SUPABASE_PUBLISHABLE_KEY = "sb_publishable_E3uYQ5dm1ZrlabTz7Lm8CA_HdMNIpDZ"
+SFU_APP_ID = "61a2773cb9679a75ff6c1b42ad83a138"
+
+[[durable_objects.bindings]]
+name = "ROOM_VOICE"
+class_name = "RoomVoice"
+
+[exports.RoomVoice]
+type = "durable-object"
+storage = "sqlite"
