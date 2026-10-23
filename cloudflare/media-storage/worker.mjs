@@ -21,7 +21,7 @@ function cors(origin, env) {
   return {
     ...(origin ? { "access-control-allow-origin": origin, "vary": "Origin" } : {}),
     "access-control-allow-methods": "GET, PUT, DELETE, POST, OPTIONS",
-    "access-control-allow-headers": "authorization, content-type",
+    "access-control-allow-headers": "authorization, content-type, x-luria-upsert",
     "access-control-max-age": "600"
   };
 }
