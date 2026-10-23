@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261023-global-alex-v1";
+const CACHE_VERSION = "luria-pwa-20261023-robot-companion-v1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -54,7 +54,7 @@ const APP_SHELL = [
   "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",
   "/assets/css/review-continuation-20261022.css?v=1",
   "/assets/js/review-continuation-20261022.js?v=1",
-  "/assets/js/luria-command-center.js?v=20261023-global-alex",
+  "/assets/js/luria-command-center.js?v=20261023-robot-companion",
   "/assets/css/dashboard-layouts.css?v=20261020-card-grid-all",
   "/assets/js/ui-routes.js?v=1",
   "/assets/css/ui-app.css?v=7",
@@ -124,7 +124,7 @@ const INSTALL_PRECACHE = new Set([
   "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",
   "/assets/css/review-continuation-20261022.css?v=1",
   "/assets/js/review-continuation-20261022.js?v=1",
-  "/assets/js/luria-command-center.js?v=20261023-global-alex",
+  "/assets/js/luria-command-center.js?v=20261023-robot-companion",
   "/assets/js/ui-routes.js?v=1",
   "/assets/css/ui-app.css?v=7",
   "/assets/css/education-ui-v2.css?v=2",
@@ -160,6 +160,7 @@ function publicResource(request) {
     || /^\/apostilas\/[a-z0-9-]+\/(?:index\.html|content\.json)?$/.test(path)
     || path === "/manifest.webmanifest"
     || /^\/content\/weekly\/[a-zA-Z0-9/_-]+\.json$/.test(path)
+    || /^\/jogos\/study-rats\/(?:hall|game)\.(?:css|js)$/.test(path)
     || /^\/assets\/(?:js|css|vendor|fonts|img)\/[a-zA-Z0-9/_%. -]+\.(?:js|css|wasm|woff2?|ttf|otf|png|jpe?g|svg|webp|gif|ico)$/.test(path);
 }
 

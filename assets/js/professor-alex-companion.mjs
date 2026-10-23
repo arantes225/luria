@@ -32,14 +32,18 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
   const key = 'luria:alex:companion:' + userId;
   const isStudyActionPage = ['questoes', 'erros'].includes(page);
 
-  let prefs = {x: 1, y: 1, minimized: isStudyActionPage};
+  // Keep the robot present after this rollout. Older preferences used to
+  // minimize it automatically on question/review screens; a user can still
+  // minimize Alex explicitly and that newer choice will be remembered.
+  let prefs = {x: 1, y: 1, minimized: false, visibilityVersion: 2};
   try {
     const saved = JSON.parse(localStorage.getItem(key + ':' + page) || localStorage.getItem(key));
     if (saved && Number.isFinite(saved.x) && Number.isFinite(saved.y)) {
       prefs = {
         x: Math.max(0, Math.min(1, saved.x)),
         y: Math.max(0, Math.min(1, saved.y)),
-        minimized: isStudyActionPage ? (saved[page + '_minimized'] ?? true) : (saved.minimized === true)
+        minimized: saved.visibilityVersion === 2 ? (saved.minimized === true) : false,
+        visibilityVersion: 2
       };
     }
   } catch {}
@@ -159,6 +163,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
 
   const save = () => {
     try {
+      prefs.visibilityVersion = 2;
       if (isStudyActionPage) prefs[page + '_minimized'] = prefs.minimized;
       localStorage.setItem(key + ':' + page, JSON.stringify(prefs));
       localStorage.setItem(key, JSON.stringify(prefs));

@@ -3,25 +3,24 @@ const {read,declaration,page,settle}=require('./fixtures/frontend.cjs');
 const {resolver}=require('./fixtures/questions.cjs');
 const flush=async()=>{for(let i=0;i<5;i++)await settle()};
 
-test('Global Alex access remains available in the application top bar',t=>{
+test('Alex remains the on-screen companion instead of a top-bar shortcut',t=>{
  const {w,d}=page(t,'dashboard/index.html'),source=read('assets/js/luria-command-center.js');
  const topbar=d.querySelector('.topbar');
- topbar.innerHTML='<div class="luria-notifications"><button class="luria-pomodoro-top" type="button">00:00</button></div>';
+ topbar.innerHTML='<div class="luria-notifications"><a id="luria-alex-topbar" href="/professor-alex/">Alex</a><button class="luria-pomodoro-top" type="button">00:00</button></div>';
  w.d=d;w.$=(selector,root=d)=>root.querySelector(selector);
  w.eval(declaration(source,'topbar')+'\n'+declaration(source,'installSearch'));
  w.installSearch();
- const alex=d.getElementById('luria-alex-topbar');
- assert(alex);assert.equal(alex.getAttribute('href'),'/professor-alex/');
- assert.equal(alex.getAttribute('aria-label'),'Abrir Professor Alex');
- assert.equal(alex.nextElementSibling.className,'luria-pomodoro-top');
+ assert.equal(d.getElementById('luria-alex-topbar'),null);
+ const companion=read('assets/js/professor-alex-companion.mjs');
+ assert.match(companion,/let prefs = \{x: 1, y: 1, minimized: false, visibilityVersion: 2\}/);
+ assert.match(companion,/saved\.visibilityVersion === 2 \? \(saved\.minimized === true\) : false/);
 });
 
-test('Every reviewed study route loads the common top-bar access layer',()=>{
- const app=read('assets/js/app.js');
- assert.match(app,/\/assets\/js\/luria-command-center\.js\?v=20261023-global-alex/);
+test('Every reviewed study route loads the on-screen Alex companion layer',()=>{
  for(const file of ['consolidar/index.html','questoes-simulados/index.html','flashcards/index.html','caderno-erros/index.html','plantao/luriazap/index.html','jogos/index.html','jogos/study-rats/index.html','professor-alex/index.html']){
-  assert.match(read(file),/assets\/js\/app\.js\?/,file);
+  assert.match(read(file),/assets\/js\/ui-navigation-v2\.js\?/,file);
  }
+ assert.match(read('assets/js/ui-navigation-v2.js'),/mountAlexCompanion/);
 });
 
 test('Interactive question pages use source-neutral labels for external material',()=>{

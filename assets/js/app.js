@@ -7896,7 +7896,7 @@ iniciarApp();
 (function loadLuriaCommandCenter(){
   if (document.querySelector('script[data-luria-command-center]')) return;
   const script = document.createElement('script');
-  script.src = '/assets/js/luria-command-center.js?v=20261023-global-alex';
+  script.src = '/assets/js/luria-command-center.js?v=20261023-robot-companion';
   script.defer = true;
   script.dataset.luriaCommandCenter = '1';
   document.head.appendChild(script);
