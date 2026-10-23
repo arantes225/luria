@@ -58,7 +58,7 @@
     ],
     [
       "questoes",
-      "13. Questões autorais — 24 comentadas"
+      "13. Treino ativo — 24 questões autorais com alternativas comentadas"
     ],
     [
       "referencias",
@@ -84,6 +84,14 @@
         [
           "2",
           "Arritmias e Fibrilação Atrial — pensar primeiro na estabilidade"
+        ],
+        [
+          "p",
+          "<strong>Em 30 segundos:</strong> 1) avaliar pulso e estabilidade; 2) identificar QRS e regularidade no ECG; 3) FA documentada exige pensar simultaneamente em prevenção de AVC, alívio de sintomas e comorbidades; 4) na instabilidade causada pelo ritmo, cardioversão imediata; 5) não suspender anticoagulação apenas porque o ritmo sinusal foi restaurado."
+        ],
+        [
+          "p",
+          "<strong>Hierarquia das fontes:</strong> para <em>fibrilação atrial</em> em pacientes no Brasil, o <a href=\"https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt\" target=\"_blank\" rel=\"noopener noreferrer\">documento SBC/SOBRAC de 2025</a> é a referência especializada principal, especialmente para CHA₂DS₂-VA, anticoagulantes e cardioversão. Em <em>emergência com pulso ou parada</em>, conferir o protocolo da instituição e o <a href=\"https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms\" target=\"_blank\" rel=\"noopener noreferrer\">ACLS AHA 2025</a> para energia, segurança e sequências de ressuscitação. A <a href=\"https://academic.oup.com/eurheartj/article/45/36/3314/7738779\" target=\"_blank\" rel=\"noopener noreferrer\">ESC 2024</a> e a <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/\" target=\"_blank\" rel=\"noopener noreferrer\">ACC/AHA 2023</a> ajudam a explicar diferenças, sem substituir a conduta brasileira silenciosamente."
         ],
         [
           "p",
@@ -123,6 +131,54 @@
             ]
           ],
           "book-table"
+        ],
+        [
+          "3",
+          "Mapa de decisões — primeiro perfusão, depois morfologia"
+        ],
+        [
+          "p",
+          "Este quadro foi elaborado para orientação rápida. Em situações de emergência, seguir o algoritmo AHA ACLS 2025 e o protocolo local; decisões de anticoagulação na FA seguem a SBC/SOBRAC 2025."
+        ],
+        [
+          "t",
+          [
+            "Cenário",
+            "ECG e sinais",
+            "Conduta inicial"
+          ],
+          [
+            [
+              "Sem pulso",
+              "FV/TV sem pulso ou AESP/assistolia",
+              "RCP; desfibrilação somente para ritmos chocáveis"
+            ],
+            [
+              "Instabilidade atribuída à arritmia",
+              "Choque, dor isquêmica, rebaixamento agudo ou IC aguda",
+              "Cardioversão sincronizada no ritmo organizado; TV polimórfica exige choque não sincronizado"
+            ],
+            [
+              "Regular e QRS estreito, estável",
+              "TRN ou reentrada AV possível",
+              "Manobras vagais; adenosina se indicada e sob monitorização"
+            ],
+            [
+              "Regular e QRS largo, estável",
+              "Possível TV, especialmente com cardiopatia estrutural",
+              "Monitorizar e buscar apoio; adenosina apenas em contexto regular monomórfico apropriado"
+            ],
+            [
+              "Irregular e QRS largo variável",
+              "Considerar FA pré-excitada",
+              "Não usar bloqueadores AV; cardioversão em instabilidade"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Pulo do Gato:</strong> FA regularizada por bloqueio avançado, FA pré-excitada e taquicardia sinusal por choque não devem ser tratadas como uma única doença. A presença de pulso e a perfusão determinam o primeiro passo."
         ]
       ]
     ],
@@ -434,7 +490,7 @@
         ],
         [
           "p",
-          "O algoritmo de cardioversão elétrica da AHA 2025 indica energia inicial de referência em equipamento bifásico para adultos: FA 200 J; flutter atrial 200 J; taquicardia regular de QRS estreito 100 J; TV monomórfica com pulso 100 J. Em TV polimórfica utiliza-se descarga não sincronizada em energia de desfibrilação. Considerar recomendações do fabricante, monitor e protocolo local; o equipamento pode requerer escalonamento após falha e nova sincronização. Esses números não devem ser copiados para criança ou cardioversão pediátrica, que utiliza esquemas por peso e circunstância. Materiais anteriores citavam para flutter energia menor; a diretriz 2025 alterou a recomendação, portanto identificar a edição em prova."
+          "<strong>Energia de cardioversão — AHA ACLS 2025, aplicável ao adulto:</strong> com pulso e instabilidade atribuível à arritmia, o algoritmo de cardioversão elétrica indica <strong>200 J para FA; 200 J para flutter; 100 J para taquicardia regular estreita; 100 J para TV monomórfica</strong>, com sincronização; TV polimórfica grave exige choque não sincronizado. Em todos os casos considerar recomendação do equipamento e protocolo local, sedar se viável e não atrasar tratamento de choque. São parâmetros de ressuscitação, não regras de anticoagulação da SBC. Fonte: <a href=\"https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms\" target=\"_blank\" rel=\"noopener noreferrer\">AHA 2025, Electrical Cardioversion Algorithm</a>."
         ],
         [
           "t",
@@ -596,7 +652,7 @@
         ],
         [
           "p",
-          "<strong>Recomendação brasileira 2025:</strong> anticoagulação oral recomendada em CHA₂DS₂-VA ≥2; em 1 ponto, pode ser considerada após avaliação de benefícios, riscos de sangramento e preferências; em 0, em geral não se recomenda antitrombótico para prevenção de FA, salvo contextos especiais. Cardiomiopatia hipertrófica e amiloidose cardíaca constituem cenários de anticoagulação apesar da pontuação. A diretriz brasileira cita também hipertireoidismo com recomendação específica, devendo-se considerar duração/gravidade e contexto. Não transformar o escore em substituto de avaliação clínica individual."
+          "<strong>Diretriz brasileira SBC/SOBRAC 2025 (Quadro 5):</strong> FA não valvar com CHA₂DS₂-VA ≥2 → <strong>anticoagulação oral recomendada</strong> (classe I); escore 1 → considerar anticoagulação após decisão individualizada (classe IIa); escore 0 → <strong>sem indicação de antitrombótico apenas pela FA</strong> (classe I). A presença de cardiomiopatia hipertrófica, amiloidose cardíaca e hipertireoidismo com FA demanda atenção à recomendação própria da diretriz, independentemente do escore. Escore de sangramento não serve isoladamente para excluir tratamento. Fonte: <a href=\"https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt\" target=\"_blank\" rel=\"noopener noreferrer\">SBC/SOBRAC 2025, Quadro 5</a>."
         ],
         [
           "t",
@@ -749,7 +805,7 @@
         ],
         [
           "p",
-          "A SBC/SOBRAC 2025 apresenta doses usuais de DOAC para prevenção de AVC em FA. Apixabana: 5 mg duas vezes ao dia, reduzindo para 2,5 mg duas vezes ao dia quando há <strong>pelo menos dois</strong> dos três critérios — idade ≥80 anos, peso ≤60 kg e creatinina sérica ≥1,5 mg/dL — conforme bula/indicação. Rivaroxabana: 20 mg uma vez ao dia; ajuste de referência para 15 mg ao dia quando ClCr está na faixa de 15–49 mL/min na tabela brasileira, com ingestão alimentar e atenção à função renal. Edoxabana: 60 mg uma vez ao dia, reduzindo a 30 mg quando ao menos um dos critérios específicos de função renal, peso ≤60 kg ou interações da tabela se aplica. Dabigatrana: 150 mg duas vezes ao dia; 110 mg duas vezes em populações selecionadas com maior risco hemorrágico, idade ≥80 anos ou uso concomitante de verapamil conforme disponibilidade/bula. Essas apresentações não são intercambiáveis sem critério e devem ser conferidas na prescrição individual."
+          "<strong>Posologia de referência para prevenção de AVC em FA — SBC/SOBRAC 2025, Tabela 8:</strong> apixabana 5 mg duas vezes ao dia (2,5 mg duas vezes se preenchidos <strong>dois de três</strong>: idade ≥80 anos, peso ≤60 kg, creatinina ≥1,5 mg/dL); rivaroxabana 20 mg/dia com alimento (15 mg/dia com ClCr 15–49 mL/min, de acordo com a tabela); edoxabana 60 mg/dia (30 mg/dia com ClCr 15–50 mL/min, peso ≤60 kg ou interações determinadas); dabigatrana 150 mg duas vezes ao dia, ou 110 mg duas vezes em contextos específicos. <strong>A dose de dabigatrana de 110 mg é uma dose reduzida testada no RE-LY, não uma dose “ajustada” por critério obrigatório como ocorre com apixabana.</strong> Cada opção exige conferência de bula, função renal por método apropriado, interações, idade e indicação; não são doses intercambiáveis. Fonte: <a href=\"https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt\" target=\"_blank\" rel=\"noopener noreferrer\">SBC/SOBRAC 2025, Tabela 8</a>."
         ],
         [
           "p",
@@ -766,22 +822,22 @@
             [
               "Apixabana",
               "5 mg VO 12/12h",
-              "2,5 mg 12/12h se ≥2: idade ≥80, peso ≤60 kg, creatinina ≥1,5 mg/dL; demais situações exigem bula"
+              "2,5 mg 12/12h se ≥2 critérios: ≥80 anos, ≤60 kg, creatinina ≥1,5 mg/dL; verificar bula, rim e interações"
             ],
             [
               "Rivaroxabana",
               "20 mg VO 1x/dia com alimento",
-              "15 mg/dia se ClCr 15–49 mL/min na tabela; evitar extrapolar para rim mais grave sem avaliação"
+              "15 mg/dia com alimento se ClCr 15–49 mL/min na tabela SBC; não transpor para outras indicações"
             ],
             [
               "Edoxabana",
               "60 mg VO 1x/dia",
-              "30 mg/dia por função renal 15–50, peso ≤60 kg ou interações específicas"
+              "30 mg/dia se ClCr 15–50, peso ≤60 kg ou interações específicas descritas na Tabela 8"
             ],
             [
               "Dabigatrana",
               "150 mg VO 12/12h",
-              "110 mg 12/12h por critérios específicos de idade/risco/interações; dependência renal alta"
+              "110 mg 12/12h é dose REDUZIDA validada no RE-LY, não ajuste obrigatório padronizado; considerar risco hemorrágico, idade, verapamil e bula"
             ],
             [
               "Varfarina",
@@ -994,7 +1050,7 @@
         ],
         [
           "p",
-          "A diretriz brasileira de 2025 destaca mudanças no manejo pericardioversão. Antes de prescrever números exatos de horas, semanas ou doses, o editor médico deve conferir as tabelas da SBC 2025, AHA 2023 e ESC 2024, pois usam alguns limiares distintos. Nenhum resultado de ECG em ritmo sinusal após choque basta para autorizar interrupção imediata de anticoagulação."
+          "<strong>Primeiro, a SBC/SOBRAC 2025:</strong> na FA estável com duração <strong>superior a 24 horas</strong> ou início incerto, indicar, antes da cardioversão eletiva, <strong>três semanas de anticoagulação terapêutica</strong> ou estratégia guiada por <strong>ecocardiograma transesofágico</strong> para excluir trombo, com anticoagulação periprocedimento. Em <strong>todos</strong> os cardioversionados, a recomendação brasileira é manter anticoagulação por <strong>pelo menos quatro semanas</strong>, inclusive quando CHA₂DS₂-VA é zero; depois avaliar risco embólico para decidir continuidade. Na instabilidade causada por FA, a cardioversão elétrica é urgente e o anticoagulante deve ser introduzido tão cedo quanto for clinicamente seguro. <a href=\"https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt\" target=\"_blank\" rel=\"noopener noreferrer\">SBC/SOBRAC 2025, Quadro 7</a>."
         ],
         [
           "3",
@@ -1002,7 +1058,7 @@
         ],
         [
           "p",
-          "A cardioversão elétrica ou farmacológica pode deslocar trombo atrial pré-existente ou produzir risco no período de atordoamento atrial pós-restauração do ritmo sinusal. Por isso, a SBC/SOBRAC 2025 recomenda, para FA com duração <strong>superior a 24 horas</strong>, anticoagulação terapêutica por pelo menos três semanas antes de cardioversão eletiva ou estratégia com ecocardiografia transesofágica para excluir trombo, com anticoagulação adequada, e manutenção da anticoagulação por pelo menos quatro semanas depois em todos os cardioversionados. A ESC 2024 também adota referência conservadora de 24 horas; a ACC/AHA 2023 mantém ≥48 horas como gatilho explícito para três semanas/estudo de imagem, mas ressalta risco não homogêneo nas durações menores. Não misturar 24 e 48 horas sem identificar a diretriz."
+          "<strong>Brasil — SBC/SOBRAC 2025, Quadro 7:</strong> em FA estável com duração <strong>maior que 24 horas</strong> ou desconhecida, anticoagular por pelo menos três semanas antes de cardioversão eletiva, <strong>ou</strong> realizar ETE para excluir trombo e anticoagular em torno do procedimento. Manter anticoagulação por <strong>pelo menos quatro semanas após</strong>, independentemente do CHA₂DS₂-VA; continuidade além desse período depende do risco individual. <strong>Comparação:</strong> a <a href=\"https://academic.oup.com/eurheartj/article/45/36/3314/7738779\" target=\"_blank\" rel=\"noopener noreferrer\">ESC 2024</a> também enfatiza o limiar de 24 horas; a <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/\" target=\"_blank\" rel=\"noopener noreferrer\">ACC/AHA 2023</a> usa outro recorte para anticoagulação prévia na cardioversão eletiva, mas valoriza risco mesmo em episódios mais curtos. Não misturar algoritmos em uma mesma resposta de prova. <strong>Em instabilidade causada pela arritmia, cardioversão imediata, sem esperar ETE ou três semanas.</strong>"
         ],
         [
           "p",
@@ -1043,17 +1099,17 @@
             [
               "FA estável >24 h ou de início incerto",
               "≥3 semanas de anticoagulação OU ETE adequado e proteção periprocedimento",
-              "SBC/SOBRAC 2025 e ESC 2024"
+              "SBC/SOBRAC 2025, Quadro 7 (referência brasileira principal); ESC 2024 complementar"
             ],
             [
               "FA ≥48 h",
               "≥3 semanas ou imagem antes da eletiva",
-              "ACC/AHA 2023"
+              "ACC/AHA/ACCP/HRS 2023 (comparação, não substituir esquema SBC)"
             ],
             [
               "Após qualquer cardioversão de FA",
               "Anticoagulação por pelo menos 4 semanas",
-              "SBC/SOBRAC 2025"
+              "SBC/SOBRAC 2025, Quadro 7 (regra pós-cardioversão)"
             ],
             [
               "Após 4 semanas em CHA₂DS₂-VA ≥2",
@@ -1075,7 +1131,7 @@
         ],
         [
           "p",
-          "Fontes: SBC/SOBRAC 2025, seção 6.5.1 e quadro 7, https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt ; ESC AF-CARE 2024, https://academic.oup.com/eurheartj/article/45/36/3314/7738779 ; ACC/AHA 2023, seção 8.2.1, https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/ ; AHA 2025 ACLS, https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support ."
+          "Fontes e escopos: <a href=\"https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt\" target=\"_blank\" rel=\"noopener noreferrer\">SBC/SOBRAC 2025, seção 6.5.1 e Quadro 7</a> — prioridade para cardioversão e anticoagulação no Brasil; <a href=\"https://academic.oup.com/eurheartj/article/45/36/3314/7738779\" target=\"_blank\" rel=\"noopener noreferrer\">ESC 2024</a> e <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/\" target=\"_blank\" rel=\"noopener noreferrer\">ACC/AHA 2023</a> — comparação de limiares e exceções; <a href=\"https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms\" target=\"_blank\" rel=\"noopener noreferrer\">AHA ACLS 2025</a> — execução da cardioversão de emergência. A interpretação deve incluir duração realmente conhecida, adesão e condições individuais."
         ],
         [
           "3",
@@ -1752,37 +1808,515 @@
       [
         [
           "2",
-          "13. Questões autorais — 24 comentadas"
+          "13. Treino ativo — 24 questões autorais com alternativas comentadas"
         ],
         [
-          "o",
+          "p",
+          "<strong>Como usar este bloco:</strong> responda cada pergunta antes de ler o comentário. As questões são autorais e simuladas — não são enunciados oficiais de concursos. Os gabaritos e justificativas se baseiam no capítulo e em diretrizes identificadas nas referências finais."
+        ],
+        [
+          "4",
+          "Questão 1 — CHA₂DS₂-VA"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Em FA documentada e HAS + idade 70 anos, o CHA₂DS₂-VA vale:"
+        ],
+        [
+          "u",
           [
-            "<strong>Q1.</strong> Em FA documentada e HAS + idade 70 anos, o CHA₂DS₂-VA vale: A) 0; B) 1; C) 2; D) 3 por sexo. <strong>Gabarito C.</strong> Idade 65–74 (1) + HAS (1); A/B omitem fatores, D acrescenta sexo que não integra escore 2025.",
-            "<strong>Q2.</strong> Paciente com taquicardia irregular e QRS largo variável, história de pré-excitação. Evitar: A) avaliação emergencial; B) cardioversão se instável; C) bloqueadores do nó AV; D) monitorização. <strong>Gabarito C.</strong> Bloqueio AV pode acelerar via acessória; A/B/D são medidas de segurança.",
-            "<strong>Q3.</strong> Em FA com prótese valvar mecânica, o anticoagulante padrão é: A) AAS apenas; B) varfarina com controle de INR; C) apixabana obrigatória; D) clopidogrel isolado. <strong>Gabarito B.</strong> DOAC não substitui antagonista de vitamina K nesse cenário; antiplaquetários não são equivalentes.",
-            "<strong>Q4.</strong> Qual conduta em FA de resposta rápida e choque atribuível à arritmia? A) apenas observar; B) cardioversão sincronizada urgente; C) alta com betabloqueador; D) tratar primeiro por 3 semanas de anticoagulação sem suporte. <strong>Gabarito B.</strong> Instabilidade exige ação rápida; A/C/D atrasam terapia salvadora.",
-            "<strong>Q5.</strong> O HAS-BLED alto implica: A) proibição absoluta de anticoagulação; B) investigar fatores de sangramento modificáveis e acompanhar; C) substituir por AAS; D) deixar de reavaliar risco de AVC. <strong>Gabarito B.</strong> Risco hemorrágico exige mitigação e decisão compartilhada; A/C/D desprezam proteção cerebral.",
-            "<strong>Q6.</strong> O modelo AF-CARE organiza: A) só controle de frequência; B) somente cardioversão; C) comorbidades, prevenção de AVC, sintomas e reavaliação; D) apenas ablação. <strong>Gabarito C.</strong> O cuidado integrado reduz foco exclusivo no traçado; A/B/D são estratégias parciais.",
-            "<strong>Q7.</strong> Paciente estável com FA iniciada há cinco dias e não anticoagulada deseja cardioversão. Qual estratégia segundo SBC/SOBRAC 2025? A) Cardioversão imediata sem avaliar trombo; B) anticoagulação terapêutica por ≥3 semanas ou estratégia com ETE e proteção periprocedimento; C) AAS isolado por uma semana; D) apenas observar indefinidamente. <strong>Gabarito B.</strong> Correta porque o tempo excede 24h e há risco relacionado a trombo/atordoamento atrial. A ignora risco; C não é anticoagulação; D abandona avaliação. <strong>Revisão:</strong> proteger por no mínimo quatro semanas após cardioversão.",
-            "<strong>Q8.</strong> Cardioversão restaurou ritmo sinusal e CHA₂DS₂-VA é zero. O que indica a SBC/SOBRAC 2025? A) Suspender anticoagulante na mesma hora; B) manter por ≥4 semanas e decidir continuidade crônica conforme risco; C) trocar por clopidogrel; D) anticoagular obrigatoriamente por toda vida em qualquer escore. <strong>Gabarito B.</strong> O atordoamento atrial cria risco temporário; A/C são inadequadas; D ignora risco crônico baixo. <strong>Revisão:</strong> cardioversão não zera risco embólico imediatamente.",
-            "<strong>Q9.</strong> Homem com FA, 75 anos e HAS: CHA₂DS₂-VA vale: A) 1; B) 2; C) 3; D) 4. <strong>Gabarito C.</strong> Idade ≥75 vale 2 e HAS vale 1, total 3; A/B omitem fatores e D adiciona ponto inexistente. <strong>Revisão:</strong> a faixa de 65–74 não se soma à de ≥75.",
-            "<strong>Q10.</strong> Mulher de 70 anos, 80 kg, creatinina 0,9 mg/dL em apixabana 2,5 mg duas vezes ao dia apenas pela idade. Qual interpretação? A) Correto em qualquer idade >65; B) redução não está justificada pelos critérios clássicos e deve ser revisada; C) substituir por AAS; D) usar dose de profilaxia ortopédica. <strong>Gabarito B.</strong> São necessários ≥2 entre idade ≥80, peso ≤60 e creatinina ≥1,5 nas regras clássicas de redução, salvo indicações/especificidades de bula. A/C/D podem causar subtratamento. <strong>Revisão:</strong> dose de FA não se confunde com profilaxia de TEV.",
-            "<strong>Q11.</strong> Qual anticoagulante de escolha na FA com prótese mitral mecânica? A) Apixabana; B) varfarina com INR e alvo valvar específico; C) AAS; D) não anticoagular se ritmo sinusal. <strong>Gabarito B.</strong> Próteses mecânicas exigem antagonista de vitamina K; A é inadequada, C não substitui anticoagulação, D ignora risco protético. <strong>Revisão:</strong> bioprótese e prótese mecânica não são sinônimos.",
-            "<strong>Q12.</strong> FA a 145/min com FEVE 24% e congestão aguda: por que evitar diltiazem? A) Não altera frequência; B) pode piorar disfunção sistólica por inotropismo negativo; C) resolve pré-excitação; D) previne AVC independentemente de anticoagulante. <strong>Gabarito B.</strong> Em ICFEr descompensada, bloqueador de cálcio não diidropiridínico pode piorar débito. A é falsa, C é perigosa e D confunde objetivos. <strong>Revisão:</strong> controle de FC depende de FEVE, pressão e perfusão.",
-            "<strong>Q13.</strong> ECG irregular de QRS muito largo e morfologias variáveis, histórico de onda delta. Qual droga deve ser evitada? A) Procainamida em paciente selecionado e monitorizado; B) adenosina ou verapamil para bloquear nó AV; C) cardioversão se instável; D) avaliação de eletrofisiologia. <strong>Gabarito B.</strong> Bloqueio nodal pode favorecer via acessória e induzir FV; A pode ser opção especializada, C é necessária na instabilidade, D auxilia tratamento definitivo. <strong>Revisão:</strong> FA pré-excitada não é FA comum.",
-            "<strong>Q14.</strong> No algoritmo AHA ACLS 2025, a energia inicial de referência para cardioversão sincronizada de FA em adulto instável com pulso é: A) 10 J; B) 50 J; C) 200 J bifásico; D) choque não sincronizado obrigatório. <strong>Gabarito C.</strong> A/B são insuficientes segundo a atualização e D confunde com TV polimórfica/FV. <strong>Revisão:</strong> sincronização no QRS previne descarga em fase vulnerável.",
-            "<strong>Q15.</strong> Em qual situação a prevenção de AVC não deve depender exclusivamente do CHA₂DS₂-VA convencional? A) FA em cardiomiopatia hipertrófica; B) extrassístoles isoladas sem FA; C) ECG normal sem doença; D) taquicardia sinusal fisiológica. <strong>Gabarito A.</strong> Cardiomiopatia hipertrófica com FA tem recomendação específica; B/C/D não configuram a mesma condição. <strong>Revisão:</strong> amiloidose e certas valvopatias também mudam decisão.",
-            "<strong>Q16.</strong> Após ablação de FA em paciente com HAS, diabetes e AVC prévio, qual conduta é correta? A) Retirar anticoagulação após Holter curto negativo; B) manter avaliação de anticoagulação pelo risco clínico, não só pelo sucesso da ablação; C) usar apenas AAS universalmente; D) presumir que a idade deixa de pontuar. <strong>Gabarito B.</strong> O substrato trombogênico não é eliminado por restauração elétrica do ritmo. A/C/D negligenciam fatores de AVC. <strong>Revisão:</strong> ablação e anticoagulação têm objetivos distintos.",
-            "<strong>Q17.</strong> Homem com IAM prévio e taquicardia regular QRS 170 ms, estável, pulso presente. Qual hipótese inicial mais segura? A) TV até melhor avaliação; B) taquicardia sinusal obrigatória; C) artefato sempre; D) qualquer FA com QRS largo. <strong>Gabarito A.</strong> TV é provável em cardiopatia estrutural; B/C/D são generalizações. <strong>Revisão:</strong> manter monitorização, ECG e equipe capaz de cardioverter, sem dar verapamil empiricamente.",
-            "<strong>Q18.</strong> Paciente com torsades de pointes, instabilidade e QT prolongado: abordagem elétrica? A) Aguarde bloqueador de canal de cálcio; B) choque não sincronizado e correção de causas/QT/K/Mg; C) adenosina repetida até converter; D) cardioversão sincronizada garantida em cada QRS variável. <strong>Gabarito B.</strong> Morfologia polimórfica inviabiliza sincronização confiável; A/C são inadequadas, D pode atrasar choque. <strong>Revisão:</strong> diferenciar TV polimórfica e TV monomórfica.",
-            "<strong>Q19.</strong> Mulher de 72 anos sem sintomas, ECG com PR igual em batimentos conduzidos e ondas P isoladas não seguidas de QRS, confirmado Mobitz II e sem causa reversível. Melhor conduta? A) Alta sem investigação por ausência de síncope; B) avaliação de marca-passo definitivo; C) apenas exercício físico; D) retirar AAS e considerar resolvido. <strong>Gabarito B.</strong> O risco de progressão do BAV Mobitz II é relevante mesmo assintomático; A subestima o bloqueio, C não corrige condução His-Purkinje e D não trata o mecanismo. <strong>Revisão:</strong> SBC 2023 indica MP nos BAV Mobitz II/avançado/terceiro grau adquiridos não reversíveis, independente dos sintomas.",
-            "<strong>Q20.</strong> No ECG, ondas P alternam condução 2:1, sem progressão de PR demonstrável. Qual afirmação é correta? A) É obrigatoriamente Wenckebach; B) é obrigatoriamente Mobitz II; C) classificar como BAV 2:1 e avaliar nível de bloqueio e contexto; D) é fibrilação atrial. <strong>Gabarito C.</strong> Não há PR seriado suficiente para provar I ou II; A e B antecipam tipo, D ignora ondas P organizadas. <strong>Revisão:</strong> 2:1 pode ser nodal ou infranodal e pede estratificação específica.",
-            "<strong>Q21.</strong> Adulto com bradicardia causando choque: qual esquema de atropina corresponde ao ACLS AHA 2025? A) 0,1 mg IV de 30 em 30 minutos; B) 1 mg IV e repetir a cada 3–5 min até total de 3 mg; C) 10 mg IV a cada minuto; D) nenhuma avaliação de marca-passo. <strong>Gabarito B.</strong> A/C têm doses incorretas e D despreza estimulação precoce se atropina falhar ou houver BAV de alto risco. <strong>Revisão:</strong> sempre tratar a causa e preparar estimulação/vasoativos quando necessário.",
-            "<strong>Q22.</strong> Mulher com FA permanente tem FC ventricular 34 bpm surpreendentemente regular e síncope. A principal hipótese a investigar é: A) FA lenta sem necessidade de verificar condução; B) bloqueio AV avançado com escape, inclusive possível efeito medicamentoso; C) flutter típico obrigatório; D) ritmo sinusal comprovado. <strong>Gabarito B.</strong> FA com resposta ventricular muito regular pode refletir escape por BAV; A negligencia síncope, C/D não decorrem do traçado descrito. <strong>Revisão:</strong> correlacionar ECG, medicamentos, eletrólitos e sintomas.",
-            "<strong>Q23.</strong> Homem com FC 35, PA baixa, K 6,6 mEq/L, LRA e uso de carvedilol + verapamil. A conduta mais completa inclui: A) chamar doença degenerativa e implantar MP definitivo imediatamente sem investigar; B) suporte de bradicardia/choque e tratamento urgente de hipercalemia, revisão de drogas e avaliação de estimulação; C) atropina isolada e alta; D) acrescentar diltiazem. <strong>Gabarito B.</strong> É possível síndrome BRASH e a hipercalemia agrava condução; A ignora causa reversível, C é insuficiente e D piora bloqueio nodal. <strong>Revisão:</strong> causas reversíveis não afastam urgência da hipoperfusão.",
-            "<strong>Q24.</strong> Qual paciente tem maior probabilidade de precisar de marca-passo definitivo por critério robusto, mesmo sem sintomas? A) Atleta com FC sinusal 48 durante sono; B) jovem com Wenckebach vagal noturno isolado e sem sintomas; C) adulto com BAV de terceiro grau adquirido persistente não reversível; D) pessoa com extrassístoles isoladas e ECG normal. <strong>Gabarito C.</strong> BAV total adquirido não reversível tem risco de escape inadequado; A/B podem ser fisiológicos e D não constitui indicação. <strong>Revisão:</strong> diferenciar baixa FC fisiológica de doença de condução avançada."
-          ],
-          0
+            "<strong>A)</strong> 0",
+            "<strong>B)</strong> 1",
+            "<strong>C)</strong> 2",
+            "<strong>D)</strong> 3 por sexo."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa C.</strong> Idade 65–74 (1) + HAS (1); A/B omitem fatores, D acrescenta sexo que não integra escore 2025."
+        ],
+        [
+          "4",
+          "Questão 2 — Pré-excitação"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Paciente com taquicardia irregular e QRS largo variável, história de pré-excitação. Evitar:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> avaliação emergencial",
+            "<strong>B)</strong> cardioversão se instável",
+            "<strong>C)</strong> bloqueadores do nó AV",
+            "<strong>D)</strong> monitorização."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa C.</strong> Bloqueio AV pode acelerar via acessória; A/B/D são medidas de segurança."
+        ],
+        [
+          "4",
+          "Questão 3 — Prótese valvar"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Em FA com prótese valvar mecânica, o anticoagulante padrão é:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> AAS apenas",
+            "<strong>B)</strong> varfarina com controle de INR",
+            "<strong>C)</strong> apixabana obrigatória",
+            "<strong>D)</strong> clopidogrel isolado."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> DOAC não substitui antagonista de vitamina K nesse cenário; antiplaquetários não são equivalentes."
+        ],
+        [
+          "4",
+          "Questão 4 — Choque pela FA"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Qual conduta em FA de resposta rápida e choque atribuível à arritmia?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> apenas observar",
+            "<strong>B)</strong> cardioversão sincronizada urgente",
+            "<strong>C)</strong> alta com betabloqueador",
+            "<strong>D)</strong> tratar primeiro por 3 semanas de anticoagulação sem suporte."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> Instabilidade exige ação rápida; A/C/D atrasam terapia salvadora."
+        ],
+        [
+          "4",
+          "Questão 5 — HAS-BLED"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> O HAS-BLED alto implica:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> proibição absoluta de anticoagulação",
+            "<strong>B)</strong> investigar fatores de sangramento modificáveis e acompanhar",
+            "<strong>C)</strong> substituir por AAS",
+            "<strong>D)</strong> deixar de reavaliar risco de AVC."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> Risco hemorrágico exige mitigação e decisão compartilhada; A/C/D desprezam proteção cerebral."
+        ],
+        [
+          "4",
+          "Questão 6 — AF-CARE"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> O modelo AF-CARE organiza:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> só controle de frequência",
+            "<strong>B)</strong> somente cardioversão",
+            "<strong>C)</strong> comorbidades, prevenção de AVC, sintomas e reavaliação",
+            "<strong>D)</strong> apenas ablação."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa C.</strong> O cuidado integrado reduz foco exclusivo no traçado; A/B/D são estratégias parciais."
+        ],
+        [
+          "4",
+          "Questão 7 — Cardioversão eletiva"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Paciente estável com FA iniciada há cinco dias e não anticoagulada deseja cardioversão. Qual estratégia segundo SBC/SOBRAC 2025?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Cardioversão imediata sem avaliar trombo",
+            "<strong>B)</strong> anticoagulação terapêutica por ≥3 semanas ou estratégia com ETE e proteção periprocedimento",
+            "<strong>C)</strong> AAS isolado por uma semana",
+            "<strong>D)</strong> apenas observar indefinidamente."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> Correta porque o tempo excede 24h e há risco relacionado a trombo/atordoamento atrial. A ignora risco; C não é anticoagulação; D abandona avaliação. <strong>Pulo do Gato:</strong> proteger por no mínimo quatro semanas após cardioversão."
+        ],
+        [
+          "4",
+          "Questão 8 — Pós-cardioversão"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Cardioversão restaurou ritmo sinusal e CHA₂DS₂-VA é zero. O que indica a SBC/SOBRAC 2025?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Suspender anticoagulante na mesma hora",
+            "<strong>B)</strong> manter por ≥4 semanas e decidir continuidade crônica conforme risco",
+            "<strong>C)</strong> trocar por clopidogrel",
+            "<strong>D)</strong> anticoagular obrigatoriamente por toda vida em qualquer escore."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> O atordoamento atrial cria risco temporário; A/C são inadequadas; D ignora risco crônico baixo. <strong>Pulo do Gato:</strong> cardioversão não zera risco embólico imediatamente."
+        ],
+        [
+          "4",
+          "Questão 9 — Escore aos 75 anos"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Homem com FA, 75 anos e HAS: CHA₂DS₂-VA vale:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> 1",
+            "<strong>B)</strong> 2",
+            "<strong>C)</strong> 3",
+            "<strong>D)</strong> 4."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa C.</strong> Idade ≥75 vale 2 e HAS vale 1, total 3; A/B omitem fatores e D adiciona ponto inexistente. <strong>Pulo do Gato:</strong> a faixa de 65–74 não se soma à de ≥75."
+        ],
+        [
+          "4",
+          "Questão 10 — Dose da apixabana"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Mulher de 70 anos, 80 kg, creatinina 0,9 mg/dL em apixabana 2,5 mg duas vezes ao dia apenas pela idade. Qual interpretação?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Correto em qualquer idade >65",
+            "<strong>B)</strong> redução não está justificada pelos critérios clássicos e deve ser revisada",
+            "<strong>C)</strong> substituir por AAS",
+            "<strong>D)</strong> usar dose de profilaxia ortopédica."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> São necessários ≥2 entre idade ≥80, peso ≤60 e creatinina ≥1,5 nas regras clássicas de redução, salvo indicações/especificidades de bula. A/C/D podem causar subtratamento. <strong>Pulo do Gato:</strong> dose de FA não se confunde com profilaxia de TEV."
+        ],
+        [
+          "4",
+          "Questão 11 — Prótese mitral mecânica"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Qual anticoagulante de escolha na FA com prótese mitral mecânica?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Apixabana",
+            "<strong>B)</strong> varfarina com INR e alvo valvar específico",
+            "<strong>C)</strong> AAS",
+            "<strong>D)</strong> não anticoagular se ritmo sinusal."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> Próteses mecânicas exigem antagonista de vitamina K; A é inadequada, C não substitui anticoagulação, D ignora risco protético. <strong>Pulo do Gato:</strong> bioprótese e prótese mecânica não são sinônimos."
+        ],
+        [
+          "4",
+          "Questão 12 — IC com fração reduzida"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> FA a 145/min com FEVE 24% e congestão aguda: por que evitar diltiazem?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Não altera frequência",
+            "<strong>B)</strong> pode piorar disfunção sistólica por inotropismo negativo",
+            "<strong>C)</strong> resolve pré-excitação",
+            "<strong>D)</strong> previne AVC independentemente de anticoagulante."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> Em ICFEr descompensada, bloqueador de cálcio não diidropiridínico pode piorar débito. A é falsa, C é perigosa e D confunde objetivos. <strong>Pulo do Gato:</strong> controle de FC depende de FEVE, pressão e perfusão."
+        ],
+        [
+          "4",
+          "Questão 13 — FA pré-excitada"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> ECG irregular de QRS muito largo e morfologias variáveis, histórico de onda delta. Qual droga deve ser evitada?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Procainamida em paciente selecionado e monitorizado",
+            "<strong>B)</strong> adenosina ou verapamil para bloquear nó AV",
+            "<strong>C)</strong> cardioversão se instável",
+            "<strong>D)</strong> avaliação de eletrofisiologia."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> Bloqueio nodal pode favorecer via acessória e induzir FV; A pode ser opção especializada, C é necessária na instabilidade, D auxilia tratamento definitivo. <strong>Pulo do Gato:</strong> FA pré-excitada não é FA comum."
+        ],
+        [
+          "4",
+          "Questão 14 — Energia elétrica"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> No algoritmo AHA ACLS 2025, a energia inicial de referência para cardioversão sincronizada de FA em adulto instável com pulso é:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> 10 J",
+            "<strong>B)</strong> 50 J",
+            "<strong>C)</strong> 200 J bifásico",
+            "<strong>D)</strong> choque não sincronizado obrigatório."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa C.</strong> A/B são insuficientes segundo a atualização e D confunde com TV polimórfica/FV. <strong>Pulo do Gato:</strong> sincronização no QRS previne descarga em fase vulnerável."
+        ],
+        [
+          "4",
+          "Questão 15 — Cardiomiopatia hipertrófica"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Em qual situação a prevenção de AVC não deve depender exclusivamente do CHA₂DS₂-VA convencional?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> FA em cardiomiopatia hipertrófica",
+            "<strong>B)</strong> extrassístoles isoladas sem FA",
+            "<strong>C)</strong> ECG normal sem doença",
+            "<strong>D)</strong> taquicardia sinusal fisiológica."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa A.</strong> Cardiomiopatia hipertrófica com FA tem recomendação específica; B/C/D não configuram a mesma condição. <strong>Pulo do Gato:</strong> amiloidose e certas valvopatias também mudam decisão."
+        ],
+        [
+          "4",
+          "Questão 16 — Ablação e anticoagulação"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Após ablação de FA em paciente com HAS, diabetes e AVC prévio, qual conduta é correta?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Retirar anticoagulação após Holter curto negativo",
+            "<strong>B)</strong> manter avaliação de anticoagulação pelo risco clínico, não só pelo sucesso da ablação",
+            "<strong>C)</strong> usar apenas AAS universalmente",
+            "<strong>D)</strong> presumir que a idade deixa de pontuar."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> O substrato trombogênico não é eliminado por restauração elétrica do ritmo. A/C/D negligenciam fatores de AVC. <strong>Pulo do Gato:</strong> ablação e anticoagulação têm objetivos distintos."
+        ],
+        [
+          "4",
+          "Questão 17 — Taquicardia de QRS largo"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Homem com IAM prévio e taquicardia regular QRS 170 ms, estável, pulso presente. Qual hipótese inicial mais segura?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> TV até melhor avaliação",
+            "<strong>B)</strong> taquicardia sinusal obrigatória",
+            "<strong>C)</strong> artefato sempre",
+            "<strong>D)</strong> qualquer FA com QRS largo."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa A.</strong> TV é provável em cardiopatia estrutural; B/C/D são generalizações. <strong>Pulo do Gato:</strong> manter monitorização, ECG e equipe capaz de cardioverter, sem dar verapamil empiricamente."
+        ],
+        [
+          "4",
+          "Questão 18 — Torsades de pointes"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Paciente com torsades de pointes, instabilidade e QT prolongado: abordagem elétrica?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Aguarde bloqueador de canal de cálcio",
+            "<strong>B)</strong> choque não sincronizado e correção de causas/QT/K/Mg",
+            "<strong>C)</strong> adenosina repetida até converter",
+            "<strong>D)</strong> cardioversão sincronizada garantida em cada QRS variável."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> Morfologia polimórfica inviabiliza sincronização confiável; A/C são inadequadas, D pode atrasar choque. <strong>Pulo do Gato:</strong> diferenciar TV polimórfica e TV monomórfica."
+        ],
+        [
+          "4",
+          "Questão 19 — Mobitz II"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Mulher de 72 anos sem sintomas, ECG com PR igual em batimentos conduzidos e ondas P isoladas não seguidas de QRS, confirmado Mobitz II e sem causa reversível. Melhor conduta?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Alta sem investigação por ausência de síncope",
+            "<strong>B)</strong> avaliação de marca-passo definitivo",
+            "<strong>C)</strong> apenas exercício físico",
+            "<strong>D)</strong> retirar AAS e considerar resolvido."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> O risco de progressão do BAV Mobitz II é relevante mesmo assintomático; A subestima o bloqueio, C não corrige condução His-Purkinje e D não trata o mecanismo. <strong>Pulo do Gato:</strong> SBC 2023 indica MP nos BAV Mobitz II/avançado/terceiro grau adquiridos não reversíveis, independente dos sintomas."
+        ],
+        [
+          "4",
+          "Questão 20 — BAV 2:1"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> No ECG, ondas P alternam condução 2:1, sem progressão de PR demonstrável. Qual afirmação é correta?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> É obrigatoriamente Wenckebach",
+            "<strong>B)</strong> é obrigatoriamente Mobitz II",
+            "<strong>C)</strong> classificar como BAV 2:1 e avaliar nível de bloqueio e contexto",
+            "<strong>D)</strong> é fibrilação atrial."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa C.</strong> Não há PR seriado suficiente para provar I ou II; A e B antecipam tipo, D ignora ondas P organizadas. <strong>Pulo do Gato:</strong> 2:1 pode ser nodal ou infranodal e pede estratificação específica."
+        ],
+        [
+          "4",
+          "Questão 21 — Atropina em bradicardia"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Adulto com bradicardia causando choque: qual esquema de atropina corresponde ao ACLS AHA 2025?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> 0,1 mg IV de 30 em 30 minutos",
+            "<strong>B)</strong> 1 mg IV e repetir a cada 3–5 min até total de 3 mg",
+            "<strong>C)</strong> 10 mg IV a cada minuto",
+            "<strong>D)</strong> nenhuma avaliação de marca-passo."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> A/C têm doses incorretas e D despreza estimulação precoce se atropina falhar ou houver BAV de alto risco. <strong>Pulo do Gato:</strong> sempre tratar a causa e preparar estimulação/vasoativos quando necessário."
+        ],
+        [
+          "4",
+          "Questão 22 — FA com resposta regular lenta"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Mulher com FA permanente tem FC ventricular 34 bpm surpreendentemente regular e síncope. A principal hipótese a investigar é:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> FA lenta sem necessidade de verificar condução",
+            "<strong>B)</strong> bloqueio AV avançado com escape, inclusive possível efeito medicamentoso",
+            "<strong>C)</strong> flutter típico obrigatório",
+            "<strong>D)</strong> ritmo sinusal comprovado."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> FA com resposta ventricular muito regular pode refletir escape por BAV; A negligencia síncope, C/D não decorrem do traçado descrito. <strong>Pulo do Gato:</strong> correlacionar ECG, medicamentos, eletrólitos e sintomas."
+        ],
+        [
+          "4",
+          "Questão 23 — Hipercalemia e BRASH"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Homem com FC 35, PA baixa, K 6,6 mEq/L, LRA e uso de carvedilol + verapamil. A conduta mais completa inclui:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> chamar doença degenerativa e implantar MP definitivo imediatamente sem investigar",
+            "<strong>B)</strong> suporte de bradicardia/choque e tratamento urgente de hipercalemia, revisão de drogas e avaliação de estimulação",
+            "<strong>C)</strong> atropina isolada e alta",
+            "<strong>D)</strong> acrescentar diltiazem."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> É possível síndrome BRASH e a hipercalemia agrava condução; A ignora causa reversível, C é insuficiente e D piora bloqueio nodal. <strong>Pulo do Gato:</strong> causas reversíveis não afastam urgência da hipoperfusão."
+        ],
+        [
+          "4",
+          "Questão 24 — BAV total"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Qual paciente tem maior probabilidade de precisar de marca-passo definitivo por critério robusto, mesmo sem sintomas?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Atleta com FC sinusal 48 durante sono",
+            "<strong>B)</strong> jovem com Wenckebach vagal noturno isolado e sem sintomas",
+            "<strong>C)</strong> adulto com BAV de terceiro grau adquirido persistente não reversível",
+            "<strong>D)</strong> pessoa com extrassístoles isoladas e ECG normal."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa C.</strong> BAV total adquirido não reversível tem risco de escape inadequado; A/B podem ser fisiológicos e D não constitui indicação. <strong>Pulo do Gato:</strong> diferenciar baixa FC fisiológica de doença de condução avançada."
         ]
       ]
     ],
@@ -1792,28 +2326,19 @@
       [
         [
           "2",
-          "Referências verificáveis e limites editoriais"
+          "Referências oficiais e leituras complementares"
         ],
         [
           "o",
           [
-            "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC13400077/\" target=\"_blank\" rel=\"noopener noreferrer\">Cintra FD et al. Diretriz Brasileira de Fibrilação Atrial — 2025. SBC/SOBRAC. Arq Bras Cardiol 122(9):e20250618.</a>",
-            "<a href=\"https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/atrial-fibrillation/\" target=\"_blank\" rel=\"noopener noreferrer\">ESC/EACTS Guidelines for the management of atrial fibrillation — 2024. AF-CARE.</a>",
-            "<a href=\"https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017\" target=\"_blank\" rel=\"noopener noreferrer\">ACC/AHA/ACCP/HRS. Guideline for the Diagnosis and Management of Atrial Fibrillation — 2023.</a>",
-            "<a href=\"https://socesp.org.br/revista/edicoes/revista-socesp-v36-n1-2026-36-1/atualizacoes-no-manejo-da-fibrilacao-atrial-implicacoes-praticas-da-diretriz-brasileira-de-2025-1116/\" target=\"_blank\" rel=\"noopener noreferrer\">SOCESP. Atualizações no manejo da FA: implicações práticas da diretriz brasileira de 2025. Revista SOCESP, 2026.</a>",
-            "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10389103/\" target=\"_blank\" rel=\"noopener noreferrer\">SBC/SOBRAC. Diretriz Brasileira de Dispositivos Cardíacos Eletrônicos Implantáveis — 2023. Indicações de marca-passo para disfunção do nó sinusal e BAV.</a>",
-            "<a href=\"https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Accessible/Algorithm-ACLS-Bradycardia-LngDscrp-250725-Ed.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">American Heart Association. Adult Bradycardia Algorithm — 2025. Doses e suporte da bradicardia instável no adulto.</a>",
-            "<a href=\"https://academic.oup.com/europace/article/24/1/71/6358627\" target=\"_blank\" rel=\"noopener noreferrer\">ESC. Cardiac Pacing and Cardiac Resynchronization Therapy — 2021. Distúrbios de condução e indicações de estimulação.</a>"
+            "<a href=\"https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt\" target=\"_blank\" rel=\"noopener noreferrer\">[PRIORIDADE BRASILEIRA — FA] Cintra FD et al. Diretriz Brasileira de Fibrilação Atrial — 2025. SBC/SOBRAC, Arq Bras Cardiol. 122(9):e20250618. DOI 10.36660/abc.20250618.</a>",
+            "<a href=\"https://abccardiol.org/article/diretriz-brasileira-de-dispositivos-cardiacos-eletronicos-implantaveis-2023/\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — BRADIARRITMIAS] Diretriz Brasileira de Dispositivos Cardíacos Eletrônicos Implantáveis — 2023, indicações de estimulação.</a>",
+            "<a href=\"https://socesp.org.br/revista/edicoes/revista-socesp-v36-n1-2026-36-1/atualizacoes-no-manejo-da-fibrilacao-atrial-implicacoes-praticas-da-diretriz-brasileira-de-2025-1116/\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — SÍNTESE SECUNDÁRIA] SOCESP. Atualizações no manejo de FA e implicações da diretriz brasileira de 2025, 2026.</a>",
+            "<a href=\"https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support\" target=\"_blank\" rel=\"noopener noreferrer\">[EMERGÊNCIA — AHA 2025] Adult Advanced Life Support e algoritmos de cardioversão/taquiarritmia/bradicardia; confirmar adaptações do serviço.</a>",
+            "<a href=\"https://academic.oup.com/eurheartj/article/45/36/3314/7738779\" target=\"_blank\" rel=\"noopener noreferrer\">[COMPARAÇÃO INTERNACIONAL] ESC/EACTS. Guidelines for Management of Atrial Fibrillation — 2024.</a>",
+            "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/\" target=\"_blank\" rel=\"noopener noreferrer\">[COMPARAÇÃO INTERNACIONAL] ACC/AHA/ACCP/HRS. Guideline for Diagnosis and Management of Atrial Fibrillation — 2023.</a>"
           ],
           0
-        ],
-        [
-          "p",
-          "Fonte clínica conferida para este capítulo: Cintra FD et al. Diretriz Brasileira de Fibrilação Atrial (SBC/SOBRAC), 2025, seção 7 e Quadro 7, disponível em https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt. Referência comparativa reaberta no Drive: '02 - TAQUIARRITMIA .pdf', útil para ECG e apresentação, mas insuficiente para anticoagulação pericardioversão."
-        ],
-        [
-          "p",
-          "<strong>Referências nucleares para o aprofundamento:</strong> Cintra FD et al. SBC/SOBRAC, Diretriz Brasileira de Fibrilação Atrial 2025, Arq Bras Cardiol. 122(9):e20250618. DOI 10.36660/abc.20250618, https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt ; 2024 ESC AF Guidelines, https://academic.oup.com/eurheartj/article/45/36/3314/7738779 ; 2023 ACC/AHA/ACCP/HRS FA, https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/ ; AHA 2025 Adult Advanced Life Support, https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support . O comparativo do Drive foi usado como inventário curricular, não como fonte de energias atuais."
         ]
       ]
     ]

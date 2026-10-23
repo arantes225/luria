@@ -23,10 +23,6 @@
       "Introdução e Fundamentos"
     ],
     [
-      "0-etapa-zero-invent-rio-benchmark-e-cautelas-editoriais",
-      "0. Etapa zero: inventário, benchmark e cautelas editoriais"
-    ],
-    [
       "1-conceitos-e-anatomia-funcional-antes-do-diagn-stico",
       "1. Conceitos e anatomia funcional antes do diagnóstico"
     ],
@@ -87,28 +83,8 @@
       "15. Pulo do Gato — erros que mais prejudicam o aluno"
     ],
     [
-      "16-camada-visual-planejada-n-o-incorporada-nem-licenciada",
-      "16. Camada visual planejada — não incorporada nem licenciada"
-    ],
-    [
       "17-refer-ncias-verificadas-e-hierarquia",
       "17. Referências verificadas e hierarquia"
-    ],
-    [
-      "17a-fontes-diretamente-conferidas-na-revis-o-de-15-10-2026-e-compara-o-editorial",
-      "17A. Fontes diretamente conferidas na revisão de 15/10/2026 e comparação editorial"
-    ],
-    [
-      "17b-matriz-de-evid-ncia-de-autossufici-ncia-ainda-provis-ria",
-      "17B. Matriz de evidência de autossuficiência (ainda provisória)"
-    ],
-    [
-      "18a-revis-o-cl-nica-editorial-desta-continua-o",
-      "18A. Revisão clínica-editorial desta continuação"
-    ],
-    [
-      "18-auditoria-parcial-e-quest-es-abertas",
-      "18. Auditoria parcial e questões abertas"
     ]
   ],
   "q": [
@@ -122,6 +98,10 @@
         ],
         [
           "p",
+          "<strong>Em 30 segundos:</strong> na cirrose descompensada investigar infecção, sangramento, lesão renal e precipitantes. PMN ascítico ≥250/mm³ sustenta PBE mesmo com cultura negativa. HRS-AKI exige avaliação de IRA e causas reversíveis, sem albumina 48 horas universal. Fonte de especialidade internacional: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11193657/\">ADQI–ICA 2024</a>; aplicação terapêutica depende de protocolos brasileiros e equipe hepatológica."
+        ],
+        [
+          "p",
           "<h1>LURIA — LOTE 07 | AULA 126</h1>\r\n<h1>Cirrose hepática: da fibrose à hipertensão portal e às complicações</h1>"
         ],
         [
@@ -131,36 +111,6 @@
         [
           "p",
           "> <strong>Aprendizagem de saída:</strong> o aluno deverá reconhecer cirrose compensada e descompensada, explicar hipertensão portal e circulação hiperdinâmica, interpretar exames e escores, investigar ascite, diferenciar PBE de peritonite secundária, tratar encefalopatia e detectar injúria renal com possível HRS-AKI. O material não é protocolo prescritivo autônomo."
-        ]
-      ]
-    ],
-    [
-      "0-etapa-zero-invent-rio-benchmark-e-cautelas-editoriais",
-      0,
-      [
-        [
-          "2",
-          "0. Etapa zero: inventário, benchmark e cautelas editoriais"
-        ],
-        [
-          "p",
-          "<strong>Inventário LURIA.</strong> Na listagem de diretórios de apostilas verificada em 14/10/2026, não havia livro independente de “cirrose”; há cobertura parcial de sepse, sangramento e outros temas. A aula 127 do lote cobre HDA com maior profundidade; não reproduzir integralmente sua terapêutica aqui. A aula 131 tratará etiologias virais com maior detalhe."
-        ],
-        [
-          "p",
-          "<strong>Material do Drive efetivamente aberto e lido:</strong>\r<br>1. “04 - GASTRO - ASCITE + PBE.pdf”, aproximadamente 7,6 mil caracteres extraídos. Inclui GASA, ascite, PBE, profilaxia, ascite refratária e hidrotórax, mas oferece cobertura abreviada da fisiopatologia, da seleção de albumina e do controle de foco.\r<br>2. “05 - GASTRO - ENCEFALOPATIA HEPATICA SINDROME HEPATORRENAL.pdf”, aproximadamente 8,2 mil caracteres extraídos. Abrange alterações neurológicas, precipitantes, lactulose/rifaximina e HRS, mas segue <strong>algoritmo histórico de suspensão de diuréticos + 48 h de albumina como requisito diagnóstico</strong>, que não deve ser ensinado como exigência universal após consenso ADQI–ICA de 2024.\r<br>3. “06 - GASTRO - HDA E SINDROME HEPATOPULMONAR.pdf”, aproximadamente 6,7 mil caracteres. Aborda sangramento varicoso, profilaxia e síndrome hepatopulmonar, sem integrar avaliação prognóstica, etiologias completas ou avaliação longitudinal do paciente cirrótico."
-        ],
-        [
-          "p",
-          "Esses textos são <strong>benchmarks de organização</strong>, e não fontes normativas ou autorização para copiar trechos/figuras. Os arquivos exibem identificação de circulação “Medicina livre”; <strong>a autoria da Estratégia MED não foi comprovada</strong>. A análise LURIA é de ausência de título equivalente, não de ausência absoluta de qualquer informação sobre cirrose em todo o site."
-        ],
-        [
-          "p",
-          "<strong>Diferenças que este livro deve ensinar de modo mais seguro:</strong>\r<li>GASA elevado identifica componente de hipertensão portal e não deve ser chamado simplesmente de “transudato” como se classificação por exsudato bastasse.</li>\r<li>Ascite de primeira apresentação exige paracentese diagnóstica; descompensação hospitalar também muda indicação, ainda quando não haja febre.</li>\r<li>PBE se define por contagem de neutrófilos ≥250/mm³, sem exigir cultura positiva.</li>\r<li>HRS-AKI <strong>não</strong> exige obrigatoriamente desafio empírico com albumina durante 48 h em toda pessoa.</li>\r<li>Betabloqueador não seletivo em paciente cirrótico compensado com HPCS pode <strong>prevenir primeira descompensação</strong>, além de reduzir risco de hemorragia varicosa.</li>\r<li>Proteína alimentar não deve ser sistematicamente restringida em encefalopatia hepática; desnutrição e sarcopenia pioram prognóstico.</li>\r<li>Diurético, paracentese, antibiótico, vasoconstritor e TIPS tratam <strong>mecanismos diferentes</strong> da descompensação.</li>"
-        ],
-        [
-          "p",
-          "---"
         ]
       ]
     ],
@@ -869,6 +819,36 @@
           "O PDF comparativo do Drive apresenta <strong>albumina 1 g/kg por dois dias como passo universal anterior ao diagnóstico de HRS-AKI</strong>. Essa regra, muito ensinada em provas antigas, <strong>foi revisada</strong> pelo consenso conjunto <em>Acute Disease Quality Initiative–International Club of Ascites</em> (ADQI–ICA), publicado em 2024. A recomendação atual desaconselha esperar sistematicamente 48 h de albumina para definir HRS-AKI, pois pode causar sobrecarga e atrasar vasoconstritor em pacientes já euvolêmicos. <https://pmc.ncbi.nlm.nih.gov/articles/PMC11193657/>"
         ],
         [
+          "t",
+          [
+            "Questão",
+            "ADQI–ICA 2024",
+            "Cuidado"
+          ],
+          [
+            [
+              "Definição de IRA",
+              "Creatinina +0,3 mg/dL/48 h, +50%/7 dias ou oligúria aplicável",
+              "Creatinina aparentemente normal pode enganar em sarcopenia"
+            ],
+            [
+              "HRS-AKI",
+              "Cirrótico com ascite e IRA sem resposta à ressuscitação adequada quando indicada, sem explicação alternativa forte",
+              "Não exigir albumina por 48 horas sistematicamente"
+            ],
+            [
+              "Conduta após diagnóstico",
+              "Corrigir fatores precipitantes e considerar vasoconstritor e albumina ajustada ao volume",
+              "Evitar sobrecarga de albumina e edema pulmonar"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Fonte: ADQI–ICA 2024 (https://pmc.ncbi.nlm.nih.gov/articles/PMC11193657/). Recomendações medicamentosas devem ser individualizadas em serviço com apoio hepatológico."
+        ],
+        [
           "3",
           "8.2. Como reconhecer IRA em cirrose"
         ],
@@ -1415,24 +1395,6 @@
       ]
     ],
     [
-      "16-camada-visual-planejada-n-o-incorporada-nem-licenciada",
-      0,
-      [
-        [
-          "2",
-          "16. Camada visual planejada — não incorporada nem licenciada"
-        ],
-        [
-          "p",
-          "1. Fotografia histopatológica real de arquitetura cirrótica com nódulos e pontes fibrosas, licença a verificar.\r<br>2. Esquema anatômico original do sinusóide e ativação de célula estrelada.\r<br>3. US real de fígado nodular com esplenomegalia, sob licença verificada.\r<br>4. Doppler real de fluxo portal hepatofugal/colaterais, quando didático.\r<br>5. US real de ascite e local de punção guiada, licença e segurança clínica verificadas.\r<br>6. Fotografia real de varizes esofágicas em EDA, obtida de fonte licenciada; diferenças varizes esofágicas/gástricas.\r<br>7. Fluxograma autoral de cálculo de GASA e PMN.\r<br>8. Fluxograma autoral de circulação hiperdinâmica → retenção de sódio.\r<br>9. TC/US real de CHC em fígado cirrótico com revisão radiológica.\r<br>10. Quadro original IRA cirrótica e HRS ADQI–ICA 2024.\r<br>11. Imagem real/diagrama da TIPS e relação portal-cava.\r<br>12. Quadro original compensação → descompensação → recompensação."
-        ],
-        [
-          "p",
-          "<strong>Regra do acervo LURIA:</strong> essas são <em>especificações</em>; nenhuma imagem está liberada, convertida a WebP ou inserida neste rascunho. Confirmar autoria, licença para uso comercial, procedência clínica, resolução, crédito e aprovação Admin, sem copiar as imagens dos PDFs do Drive."
-        ]
-      ]
-    ],
-    [
       "17-refer-ncias-verificadas-e-hierarquia",
       0,
       [
@@ -1447,149 +1409,6 @@
         [
           "p",
           "<strong>Diretrizes internacionais</strong>\r<li>de Franchis R et al. <em>Baveno VII – Renewing consensus in portal hypertension</em>. J Hepatol. 2022;76(4):959–974. DOI 10.1016/j.jhep.2021.12.022. https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/</li>\r<li>Biggins SW et al. <em>Diagnosis, Evaluation, and Management of Ascites, Spontaneous Bacterial Peritonitis and Hepatorenal Syndrome: AASLD 2021 Practice Guidance</em>. Hepatology. DOI 10.1002/hep.31884. https://onlinelibrary.wiley.com/doi/10.1002/hep.31884</li>\r<li>Nadim MK et al. <em>Acute kidney injury in patients with cirrhosis: ADQI–ICA joint multidisciplinary consensus</em>. J Hepatol. 2024;81(1):163–183. DOI 10.1016/j.jhep.2024.03.031. https://pmc.ncbi.nlm.nih.gov/articles/PMC11193657/</li>\r<li>AASLD. <em>Back to Basics: Outpatient Management of Cirrhosis</em> (portal educacional baseado em diretrizes). https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-outpatient-management-cirrhosis</li>\r<li>ESGE. <em>Endoscopic diagnosis and management of esophagogastric variceal hemorrhage</em>, orientação de 2022. https://www.esge.com/endoscopic-diagnosis-and-management-of-esophagogastric-variceal-hemorrhage</li>"
-        ]
-      ]
-    ],
-    [
-      "17a-fontes-diretamente-conferidas-na-revis-o-de-15-10-2026-e-compara-o-editorial",
-      0,
-      [
-        [
-          "2",
-          "17A. Fontes diretamente conferidas na revisão de 15/10/2026 e comparação editorial"
-        ],
-        [
-          "p",
-          "<strong>Etapa zero:</strong> relidos do Drive antes das mudanças: \"04 - GASTRO - ASCITE + PBE.pdf\" (7.629 caracteres extraídos), \"05 - GASTRO - ENCEFALOPATIA HEPATICA SINDROME HEPATORRENAL.pdf\" (8.159) e \"06 - GASTRO - HDA E SINDROME HEPATOPULMONAR.pdf\" (6.654). Confrontados com a versão prévia LURIA de 53.172 caracteres. Os três resumos trazem dicas úteis, mas <strong>não compõem um livro-texto único autossuficiente; autoria Estratégia MED não comprovada</strong>. Algumas simplificações foram corrigidas: GASA não é classificação transudato/exsudato de Light; albumina por dois dias não é pré-requisito obrigatório para HRS-AKI de 2024; não há profilaxia antibiótica crônica de PBE para toda ascite com proteína baixa isoladamente; restrição proteica na encefalopatia não é tratamento de rotina. <strong>Nada foi copiado dos PDFs comparativos, inclusive figuras.</strong>"
-        ],
-        [
-          "p",
-          "<strong>Fontes clínicas primárias:</strong>\r<li>de Franchis R et al. <strong>Baveno VII — Renewing consensus in portal hypertension</strong>. <em>J Hepatol</em>. 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/</li>\r<li>Biggins SW et al. <strong>AASLD Practice Guidance: Diagnosis, Evaluation and Management of Ascites, Spontaneous Bacterial Peritonitis and Hepatorenal Syndrome</strong>. <em>Hepatology</em>. 2021;74:1014–1048. DOI 10.1002/hep.31884. https://aasldpubs.onlinelibrary.wiley.com/doi/full/10.1002/hep.31884</li>\r<li>Nadim MK et al. <strong>Acute kidney injury in patients with cirrhosis: ADQI–ICA joint consensus</strong>. <em>J Hepatol</em>. 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11193657/</li>\r<li>EASL. <strong>Clinical Practice Guidelines on acute-on-chronic liver failure</strong>. <em>J Hepatol</em>. 2023;79:461–491. DOI 10.1016/j.jhep.2023.04.021. https://www.journal-of-hepatology.eu/article/S0168-8278%2823%2900244-1/fulltext</li>\r<li>AASLD. <strong>Back to Basics: Outpatient Management of Cirrhosis</strong>, orientações sobre EH, nutrição, NSBB e HCC. https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-outpatient-management-cirrhosis</li>"
-        ],
-        [
-          "p",
-          "<strong>Fontes normativas brasileiras ainda necessárias antes de publicar:</strong> conferir acesso/versão do PCDT atual de hepatite B/C na etiologia, protocolos específicos de transplante e pontuação de alocação brasileira, apresentações comerciais/bulas de terlipressina, diuréticos, albumina, lactulose e antibióticos, epidemiologia de PBE e resistência da instituição. As tabelas acima têm finalidade didática em adultos e <strong>não foram validadas como protocolo de prescrição SUS</strong>."
-        ]
-      ]
-    ],
-    [
-      "17b-matriz-de-evid-ncia-de-autossufici-ncia-ainda-provis-ria",
-      0,
-      [
-        [
-          "2",
-          "17B. Matriz de evidência de autossuficiência (ainda provisória)"
-        ],
-        [
-          "t",
-          [
-            "Competência",
-            "Texto explicativo",
-            "Caso e questão"
-          ],
-          [
-            [
-              "Diagnosticar CSPH sem extrapolar elastografia",
-              "4.2, 4.7",
-              "Questão 7"
-            ],
-            [
-              "Diferenciar classificação prognóstica de indicação de transplante",
-              "4.3–4.8",
-              "Caso 9 e discussão"
-            ],
-            [
-              "Calcular GASA e interpretar proteína",
-              "5.2",
-              "Casos 1, 5; questão 8"
-            ],
-            [
-              "Acompanhar diurético e definir refratariedade",
-              "5.3–5.9",
-              "Caso 1 e retorno"
-            ],
-            [
-              "Separar albumina em LVP/PBE/HRS",
-              "5.7, 6.3, 8",
-              "Questões 10, 12"
-            ],
-            [
-              "Diferenciar PBE de peritonite secundária",
-              "6.2, 6.5–6.8",
-              "Caso 6; questão 9"
-            ],
-            [
-              "Diagnosticar EH sem confundir delirium/sepse",
-              "7",
-              "Caso 3, questão 4"
-            ],
-            [
-              "Reconhecer IRA apesar de creatinina baixa",
-              "8.2, 8.5",
-              "Caso 7; questão 11"
-            ],
-            [
-              "Evitar albumina diagnóstica fixa para HRS",
-              "8.3–8.6",
-              "Casos 4, 8; questão 12"
-            ],
-            [
-              "Reconhecer ACLF com falências orgânicas",
-              "10.5",
-              "Caso 9; questão 13"
-            ],
-            [
-              "Diferenciar hidrotórax/hepatopulmonar/portopulmonar",
-              "10.2–10.6",
-              "Questão 14"
-            ],
-            [
-              "Vigiar CHC, sarcopenia e prevenção de novos eventos",
-              "10.1, 11",
-              "discussão de alta"
-            ]
-          ],
-          "book-table"
-        ],
-        [
-          "p",
-          "<strong>Resultado parcial:</strong> a maior parte dos novos itens é sustentada internamente. Não houve bateria de questões externas independente nem auditoria de legibilidade/duplicação. <strong>Não certificada.</strong>"
-        ]
-      ]
-    ],
-    [
-      "18a-revis-o-cl-nica-editorial-desta-continua-o",
-      0,
-      [
-        [
-          "2",
-          "18A. Revisão clínica-editorial desta continuação"
-        ],
-        [
-          "p",
-          "<li>[x] Releitura real de três comparativos do Drive, identificando erros históricos e autoria não confirmada.</li>\r<li>[x] Critérios CSPH/TE de Baveno VII e limites por etiologia/obesidade.</li>\r<li>[x] Ascite resistente/intratável, diferentes usos de albumina, TIPS e hiponatremia.</li>\r<li>[x] Bacterascite, PBE versus peritonite secundária, antibioticoterapia e duração/profilaxia condicionais.</li>\r<li>[x] Fenótipos renais, albumina, riscos respiratórios de terlipressina, ACLF e distúrbios pulmonares.</li>\r<li>[x] Cinco novos casos completos e oito novas questões com justificativa por alternativa.</li>\r<li>[ ] Verificar doses, contraindicações, ajuste renal, tempo de infusão e disponibilidade no Brasil em protocolos institucionais integrais.</li>\r<li>[ ] Checagem médica independente de hepatologia, nefrologia e medicina intensiva.</li>\r<li>[ ] Obter imagens clínicas realmente licenciadas, aprovadas pelo Admin e convertidas em WebP.</li>\r<li>[ ] Auditoria de autossuficiência por questões independentes, remoção de redundâncias, publicação via gerador/JSON e testes PWA e desktop.</li>"
-        ],
-        [
-          "p",
-          "<strong>Estado após continuação: RASCUNHO AVANÇADO, NÃO CERTIFICADO E NÃO PUBLICADO.</strong>"
-        ]
-      ]
-    ],
-    [
-      "18-auditoria-parcial-e-quest-es-abertas",
-      0,
-      [
-        [
-          "2",
-          "18. Auditoria parcial e questões abertas"
-        ],
-        [
-          "p",
-          "<li>[x] Inventário de existência na LURIA, comparativos do Drive efetivamente lidos, autoria de benchmark tratada com cautela.</li>\r<li>[x] Fisiologia, hipertensão portal, insuficiência hepatocelular e ponte causal entre complicações.</li>\r<li>[x] Avaliação inicial, etiologia, escalas, paracentese, GASA, PBE, ascite refratária, EH, HRS 2024, varizes e seguimento.</li>\r<li>[x] 4 casos completos e 6 questões comentadas com todas as alternativas.</li>\r<li>[x] Referências brasileiras e internacionais reais identificadas.</li>\r<li>[ ] Ampliar epidemiologia e dados de prognóstico segundo população brasileira sem inventar percentuais.</li>\r<li>[ ] Aprofundar exames complementares do fígado por etiologia, e escore MELD versão aplicável no SUS.</li>\r<li>[ ] Validar tratamento com doses completas, disponibilidade brasileira, contraindicações de cada medicamento e algoritmo de PBE comunitária/nosocomial.</li>\r<li>[ ] Leitura médico-editorial formal, revisão do protocolo SES-DF/Ebserh e comparação com apostila LURIA equivalente quando possível.</li>\r<li>[x] Ultrapassado <strong>60 mil caracteres brutos</strong> com acréscimos clínicos pertinentes; a contagem de 60 mil <strong>úteis</strong> e a autossuficiência ainda exigem auditoria independente.</li>\r<li>[ ] Selecionar imagens clínicas com licença, converter WebP, aprovar no Admin e testar desktop/PWA.</li>\r<li>[ ] Auditoria de prova: seis questões devem ser respondíveis após leitura do corpo, sem consultar gabarito.</li>"
-        ],
-        [
-          "p",
-          "<strong>Estado final deste arquivo:</strong> rascunho autoral substancial, <strong>não certificado e não publicado na LURIA</strong>."
         ]
       ]
     ]

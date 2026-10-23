@@ -49,6 +49,10 @@
     [
       "casos-clinicos-e-questoes-comentadas-doencas-anorretais",
       "8. Casos Clínicos Integradores e Banco de Questões Comentadas"
+    ],
+    [
+      "bibliografia-clinica-anorretal",
+      "Referências clínicas e limites de aplicação"
     ]
   ],
   "q": [
@@ -59,6 +63,10 @@
         [
           "2",
           "1. Anatomia Cirúrgica do Canal Anal, Esfíncteres e Espaços Anorretais"
+        ],
+        [
+          "p",
+          "<strong>Em 30 segundos:</strong> abscesso anorretal é diagnóstico clínico em casos típicos e requer controle de foco por drenagem; antibiótico sistêmico isolado não substitui drenagem. Na sepse, imunossupressão ou celulite extensa, avaliação cirúrgica urgente e antibiótico quando indicado. Suspeita de Crohn, abscesso supralevador ou fístula complexa muda investigação e pode requerer imagem. Para evidência de emergência sem documento nacional específico equivalente: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/pmid/34530908/\">WSES–AAST 2021</a>; adequar ao serviço brasileiro."
         ],
         [
           "p",
@@ -762,6 +770,41 @@
           "Abscessos Anorretais: Fisiopatologia, Classificação Anatômica e Clínica"
         ],
         [
+          "t",
+          [
+            "Cenário",
+            "Ação segura",
+            "Armadilha"
+          ],
+          [
+            [
+              "Abscesso perianal superficial típico e paciente estável",
+              "Avaliar incisão/drenagem e seguimento, possivelmente ambulatorial",
+              "Tratar apenas com antibiótico"
+            ],
+            [
+              "Sepse, imunossupressão, diabetes descompensado ou celulite",
+              "Drenagem urgente e antibiótico quando indicado; ressuscitação se instável",
+              "Atrasar controle de foco enquanto espera imagem"
+            ],
+            [
+              "Abscesso supralevador/oculto ou doença de Crohn",
+              "Imagem dirigida (RM, TC ou ultrassom endoanal conforme caso) e especialista",
+              "Pedir RM para todos ou não avaliar abscesso profundo"
+            ],
+            [
+              "Fístula complexa/transesfincteriana",
+              "Mapear trajeto e preservar esfíncteres",
+              "Fistulotomia indiscriminada com incontinência"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Referência técnica complementar: WSES–AAST 2021; drenagem é tratamento principal, antibióticos adjuvantes seletivos em sepse/celulite/imunossupressão, e imagem nos casos complexos."
+        ],
+        [
           "p",
           "Conforme demonstrado pela teoria de Eisenhammer e Parks, cerca de 90% a 95% dos abscessos anorretais originam-se da infecção bacteriana mista estagnada em uma das criptas de Morgagni ao nível da linha pectínea. A coleção purulenta propaga-se ao longo dos planos fasciais perianais, sendo classificada em quatro categorias anatômicas principais:"
         ],
@@ -1220,6 +1263,29 @@
         [
           "p",
           "<strong>Gabarito Oficial: Alternativa C.</strong><br>\n<em>Comentário Didático:</em> A teoria adquirida de Karydakis e Bascom sepultou o mito congênito da doença pilonidal: a afecção é <strong>100% adquirida</strong> pela invasão de pelos soltos impulsionados pela fricção glútea na fenda profunda macerada. As cirurgias que realizam retalhos fasciocutâneos com <strong>desvio da cicatriz da linha média e aplanamento do sulco interglúteo</strong> (como a operação de Karydakis ou o Cleft Lift de Bascom) apresentam as menores taxas de complicações de ferida e recidiva (&lt; 2-4%). O fechamento primário na linha média (Alternativa B) está formalmente desaconselhado pelos altos índices de deiscência e recidiva."
+        ]
+      ]
+    ],
+    [
+      "bibliografia-clinica-anorretal",
+      null,
+      [
+        [
+          "2",
+          "Referências clínicas e limites de aplicação"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/pmid/34530908/\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL — WSES–AAST 2021] Anorectal emergencies, drenagem e diagnóstico.</a>",
+            "<a href=\"https://fascrs.org/ascrs/media/files/2022-Abscess-and-Fistula-CPG.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL — ASCRS 2022] Abscesso e fístula anorretais, guideline.</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — SUS] Rede de referência e protocolos cirúrgicos da instituição; confirmar protocolo local.</a>"
+          ],
+          "reference-list"
+        ],
+        [
+          "p",
+          "Aplicar recomendações internacionais com avaliação cirúrgica e organização do SUS. Material de terceiros usado para estudo não é fonte de ilustrações licenciadas."
         ]
       ]
     ]

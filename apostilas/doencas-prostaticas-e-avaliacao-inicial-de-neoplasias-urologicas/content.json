@@ -60,7 +60,7 @@
     ],
     [
       "questoes-comentadas",
-      "11. Questões de Concursos Médicos e Revalida Comentadas em Profundidade"
+      "11. Questões de estudo — atribuição de bancas não verificada"
     ],
     [
       "tabela-sinoptica-perolas",
@@ -79,6 +79,10 @@
         [
           "2",
           "1. Epidemiologia e Fisiopatologia Celular, Endócrina e Molecular das Doenças Prostáticas e Neoplasias Urológicas"
+        ],
+        [
+          "p",
+          "<strong>Em 30 segundos:</strong> sintomas urinários não equivalem a câncer de próstata; diferenciar hiperplasia benigna, prostatite, retenção urinária e suspeita oncológica. <strong>Para pessoas assintomáticas no SUS</strong>, o <a href=\"https://www.inca.gov.br/publicacoes/notas-tecnicas/nota-tecnica-recomendacao-pelo-nao-rastreamento-populacional-do-cancer-de\" target=\"_blank\" rel=\"noopener noreferrer\">MS/INCA (Nota Técnica 2023)</a> <strong>não recomenda rastreamento populacional de rotina por PSA/toque</strong>. Se houver procura individual, discutir benefícios, falso-positivos, sobrediagnóstico, biópsias e efeitos de tratamento antes da decisão. Em paciente <strong>sintomático ou com toque suspeito</strong>, trata-se de investigação diagnóstica, não de rastreamento."
         ],
         [
           "p",
@@ -767,7 +771,7 @@
         ],
         [
           "p",
-          "O rastreamento do câncer de próstata e as condutas urológicas em idosos e populações de risco genético exigem decisões individualizadas e compartilhadas."
+          "<strong>Dois contextos, duas respostas:</strong> a recomendação nacional <a href=\"https://www.inca.gov.br/publicacoes/notas-tecnicas/nota-tecnica-recomendacao-pelo-nao-rastreamento-populacional-do-cancer-de\" target=\"_blank\" rel=\"noopener noreferrer\">MS/INCA 2023</a> é <strong>não implementar rastreamento populacional sistemático</strong> de homens assintomáticos. Se uma pessoa solicita avaliação, a decisão individualizada deve explicitar incerteza sobre balanço de benefício/dano e risco. A <a href=\"https://uroweb.org/guidelines/prostate-cancer\" target=\"_blank\" rel=\"noopener noreferrer\">EAU</a> e sociedades especializadas defendem estratégias mais individualizadas para grupos de risco e faixas etárias selecionadas; isso <strong>não transforma PSA anual + toque em obrigação na APS do SUS</strong>. Sintomas ou toque suspeito exigem investigação própria."
         ],
         [
           "3",
@@ -780,7 +784,7 @@
         [
           "u",
           [
-            "<strong>Posicionamento da Sociedade Brasileira de Urologia (SBU) e AUA/EAU:</strong> Defendem o rastreamento oportunístico anual através da <strong>avaliação combinada de PSA Total e Toque Retal</strong> após decisão compartilhada com o paciente:\n    <ul>\n      <li><em>População Geral de Risco Médio:</em> Iniciar aos <strong>50 anos de idade</strong> para homens com expectativa de vida superior a 10-15 anos.",
+            "<strong>Perspectiva especializada internacional / SBU:</strong> profissionais podem discutir investigação individual em faixas etárias e perfis de risco (por exemplo história familiar forte e BRCA2), com exame físico, PSA e critérios de reavaliação definidos por risco e desejo do paciente. <strong>Não escrever que rastreamento anual combinado de PSA e toque é exigido para toda população</strong>. Para recomendações populacionais no Brasil, prevalece o posicionamento <a href=\"https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/prostata/versao-para-populacao\" target=\"_blank\" rel=\"noopener noreferrer\">INCA/MS</a>.",
             "<em>Populações de Alto Risco:</em> Iniciar mais precocemente, aos <strong>45 anos de idade</strong>, para <strong>homens da raça negra / afrodescendentes</strong> (que apresentam maior incidência, tumores biologicamente mais agressivos e maior mortalidade) e homens com <strong>histórico familiar de primeiro grau de câncer de próstata</strong> (pai ou irmão diagnosticado antes dos 60-65 anos).",
             "<em>Portadores de Mutações Germinativas de Alto Risco (BRCA2, BRCA1, Lynch):</em> Iniciar o rastreamento aos <strong>40 anos de idade</strong>."
           ]
@@ -1048,7 +1052,7 @@
       [
         [
           "2",
-          "11. Questões de Concursos Médicos e Revalida Comentadas em Profundidade"
+          "11. Questões de estudo — atribuição de bancas não verificada"
         ],
         [
           "p",
@@ -1056,7 +1060,7 @@
         ],
         [
           "3",
-          "Questão 1 (Residência Médica / USP)"
+          "Questão 1 (exercício didático; procedência da banca não verificada)"
         ],
         [
           "p",
@@ -1080,7 +1084,7 @@
         ],
         [
           "3",
-          "Questão 2 (Residência Médica / ENARE)"
+          "Questão 2 (exercício didático; procedência da banca não verificada)"
         ],
         [
           "p",
@@ -1104,7 +1108,7 @@
         ],
         [
           "3",
-          "Questão 3 (Revalida INEP)"
+          "Questão 3 (exercício didático; procedência da banca não verificada)"
         ],
         [
           "p",
@@ -1128,7 +1132,7 @@
         ],
         [
           "3",
-          "Questão 4 (Residência Médica / UNICAMP)"
+          "Questão 4 (exercício didático; procedência da banca não verificada)"
         ],
         [
           "p",
@@ -1152,7 +1156,7 @@
         ],
         [
           "3",
-          "Questão 5 (Residência Médica / SUS-SP)"
+          "Questão 5 (exercício didático; procedência da banca não verificada)"
         ],
         [
           "p",
@@ -1257,6 +1261,8 @@
         [
           "o",
           [
+            "<a href=\"https://www.inca.gov.br/publicacoes/notas-tecnicas/nota-tecnica-recomendacao-pelo-nao-rastreamento-populacional-do-cancer-de\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — MS/INCA] Nota Técnica 2023: não rastreamento populacional do câncer de próstata.</a>",
+            "<a href=\"https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/prostata/versao-para-populacao\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — INCA] Câncer da próstata: população; diagnóstico de sintomas e discussão de riscos e benefícios.</a>",
             "<a href=\"https://portaldaurologia.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Urologia (SBU) — Diretrizes de Hiperplasia Prostática Benigna e Câncer de Próstata</a>",
             "<a href=\"https://uroweb.org\" target=\"_blank\" rel=\"noopener noreferrer\">European Association of Urology (EAU) — Guidelines on Prostate Cancer, Non-Neurogenic Male LUTS, Renal Cell Carcinoma and Urothelial Carcinoma</a>",
             "<a href=\"https://www.auanet.org\" target=\"_blank\" rel=\"noopener noreferrer\">American Urological Association (AUA) — Management of Lower Urinary Tract Symptoms Attributed to Benign Prostatic Hyperplasia & Early Detection of Prostate Cancer</a>"

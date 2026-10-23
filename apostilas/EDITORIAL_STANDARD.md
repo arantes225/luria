@@ -116,6 +116,32 @@ Cada apostila deve ser escrita como se fosse o principal e, se necessário, o ú
 9. Referências devem aparecer em lista organizada, priorizando diretrizes, consensos e entidades brasileiras quando disponíveis.
 10. Se um subtópico introduzir uma nova entidade clínica (por exemplo, hipoglicemia), tratá-la como um mini-capítulo completo: definição, fisiopatologia, quadro clínico, diagnóstico, classificação quando aplicável, tratamento e prevenção/seguimento.
 
+## Hierarquia clínico-científica obrigatória — conteúdo brasileiro e divergências
+
+A hierarquia depende do **tipo de decisão**, não apenas do prestígio de uma organização. Em apostilas para estudantes e provas de residência no Brasil:
+
+1. **Norma nacional vigente específica para a conduta no SUS:** Ministério da Saúde, PNI, PCDT/CONITEC, ANVISA, protocolos técnicos oficiais publicados e aplicáveis. Para doses, fluxos e elegibilidade praticados no SUS, começar por estes documentos e identificar a versão/data. Norma oficial de 2026 específica não deve ser substituída silenciosamente por síntese internacional de 2024 ou por um PDF de curso.
+2. **Diretrizes de sociedades brasileiras da especialidade** (SBP, SBC, FEBRASGO, AMB e outras conforme tema), consensos nacionais e manuais técnicos brasileiros, especialmente onde o MS não detalha a decisão. Avaliar método, força de recomendação, público-alvo e atualização; sociedades **não são automaticamente superiores** à orientação vinculante do programa nacional.
+3. **Organismos internacionais** (OMS, OPAS, CDC, NICE, NIH, IDSA, WSES e semelhantes) e diretrizes globais de alta qualidade, para reforçar evidências, situações especiais ou preencher lacunas nacionais. Informar divergências sem apresentar duas doses incompatíveis como equivalentes.
+4. **Evidências originais e revisões sistemáticas confiáveis**, com avaliação crítica de população, risco de viés, precisão, aplicabilidade e atualização. Podem justificar alerta de segurança diante de limitação do protocolo; não atribuir às diretrizes conclusões que elas não trazem.
+5. **Livros, manuais acadêmicos e materiais comparadores do Google Drive**: recurso de sequência didática, não autoridade final para prescrição, dados atuais ou imagens. Não copiar material privado/protegido.
+
+### Vedação absoluta de cursinhos na bibliografia do aluno
+
+**NUNCA incluir referências de outros cursinhos, cursos preparatórios para residência, plataformas educacionais concorrentes, apostilas comerciais, resumos de cursinhos, bancos de questões desses serviços ou materiais de aula desses fornecedores na bibliografia final, nas notas de rodapé, nas referências por capítulo nem como suposta fonte científica de diagnóstico, epidemiologia, dose, recomendação ou conduta.** A vedação vale também para nomes de cursinhos, siglas, links, PDFs espelhados, capturas de tela, marcas e atribuições indiretas do tipo “adaptado de [cursinho]”.
+
+1. A **hierarquia se aplica às fontes científicas e aos dados usados para construir o conteúdo**, não à ordenação cosmética de links no site: **órgãos oficiais brasileiros (MS/PCDT/CONITEC/ANVISA/INCA/PNI e bases oficiais relevantes) → sociedades científicas/médicas brasileiras da especialidade → órgãos e diretrizes internacionais → estudos originais e sínteses científicas qualificadas**. Distinguir norma aplicável ao SUS de evidência internacional mais recente e explicar divergências.
+2. Materiais de cursinhos eventualmente fornecidos pelo usuário ou encontrados no Drive têm **um único uso permitido: comparação interna e privada de cobertura de temas, clareza pedagógica e lacunas curriculares**. **Não constituem fonte de dados, não sustentam recomendações e nunca aparecem na seção “Referências” acessível ao aluno**. Não copiar, parafrasear de perto, transformar questões proprietárias em “autorais” sem reescrita independente, nem usar figuras sem direitos.
+3. Quando um material comparativo apontar informação aparentemente relevante, buscar e verificar a **fonte primária legítima** (órgão oficial, sociedade médica, estudo científico etc.) e citar **essa fonte científica**, apenas se realmente sustentar a afirmação. **Nunca citar cursinho como intermediário da descoberta.**
+4. A rastreabilidade do benchmark comparativo pode constar **somente em documentos internos de auditoria/produção, separados das apostilas e da bibliografia do aluno**, com acesso adequado. Evitar URLs privadas, credenciais e identificadores de arquivos conectados em repositórios públicos.
+5. **Bloqueio editorial:** antes de aprovar cada apostila, revisar a bibliografia, links inline, legendas, capítulos, quadros, casos e questões em busca de referências diretas ou disfarçadas a cursinhos. Encontrar uma referência dessas **impede a publicação** até sua retirada e verificação da afirmação em fonte permitida.
+
+**Em conflito:** escrever de forma visível “Recomendação para o SUS (fonte/data)” e, separadamente, “Atualização internacional (fonte/ano; força/certeza)”; explicar qual contexto pede qual resposta. Nunca misturar esquemas; sinalizar especialidades, riscos e lacunas. O uso de uma recomendação nacional como referência de prova não é prova de infalibilidade científica: casos com alerta de dano, contraindicação, situação especial ou norma ultrapassada exigem ressalva e avaliação especializada.
+
+**Rastreabilidade de cada afirmação crítica:** para dose, duração, indicação, contraindicação, algoritmo ou corte de idade, conferir a fonte primária exata, escopo e data; inserir link próximo à afirmação (além de bibliografia final). Não citar portal genérico quando há documento específico. Distinguir “forte/condicional”, qualidade da evidência, política operacional e hipótese interpretativa. Se não verificado, marcar *pendente de validação* e não ensinar como regra fechada.
+
+**Antes de aprovar:** percorrer capítulos, questões, gabaritos, resumos, casos, tabelas, algoritmos e bibliografia procurando versões contraditórias da mesma decisão. Se atualizar um esquema, atualizar **todas** as ocorrências e checar idade/peso/risco; registrar divergências no relatório de auditoria. Manter notas de produção, pendências e lista de candidatas de imagens **fora da leitura estudantil**, nos arquivos de auditoria/Admin, salvo quando forem transformadas em conteúdo didático real.
+
 ## Critério de qualidade
 Antes de publicar, perguntar: **“Um estudante conseguiria estudar esse tema do zero até um nível de prova e prática clínica usando apenas esta apostila?”**  
 Se a resposta for não, o conteúdo ainda está insuficiente.

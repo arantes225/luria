@@ -20,55 +20,55 @@
   "o": [
     [
       "etiopatogenia-viscera-oca-ulcera-diverticulite-iatrogenias",
-      "1. Etiopatogenia do Abdome Agudo Perfurativo: Úlcera Péptica, Diverticulite, Perfurações Traumáticas, Iatrogênicas e Corpos Estranhos"
+      "1. Etiopatogenia do abdome agudo perfurativo"
     ],
     [
       "fisiopatologia-peritonite-quimica-para-bacteriana-choque",
-      "2. Fisiopatologia da Peritonite: A Transição da Fase Química para a Fase Bacteriana e o Choque Séptico"
+      "2. Fisiopatologia e resposta sistêmica"
     ],
     [
       "quadro-clinico-semiologia-sinal-jobert-sindrome-peritonite",
-      "3. Quadro Clínico e Semiologia Física: A Dor Súbita, O Abdome em Tábua e o Sinal de Jobert"
+      "3. Semiologia e hipóteses diagnósticas"
     ],
     [
       "perfuracoes-iatrogenicas-endoscopicas-cpre-classificacao-stapfer",
-      "4. Perfurações Iatrogênicas em Procedimentos Endoscópicos, CPRE (Classificação de Stapfer) e Cirurgias Eletivas"
+      "4. Perfurações iatrogênicas e classificação de Stapfer"
     ],
     [
       "propedutica-imagem-rotina-abdome-agudo-sinais-radiograficos-tc",
-      "4. Propedêutica Armada: Rotina Radiológica de Abdome Agudo e Sinais Tomográficos (Pneumoperitônio, Rigler e Ligamento Falciforme)"
+      "5. Diagnóstico e interpretação das imagens"
     ],
     [
       "tratamento-cirurgico-graham-patch-ressuscitacao-antibioticos",
-      "5. Tratamento Cirúrgico de Emergência: Técnica de Graham (Patch de Omento), Ressecções e Manejo da Sepse Peritoneal"
+      "6. Tratamento cirúrgico e controle do foco"
     ],
     [
       "tratamento-nao-operatorio-taylor-e-sindrome-boerhaave",
-      "5. Tratamento Não Operatório de Perfurações Gastroduodenais (Método de Taylor) e Manejo da Síndrome de Boerhaave"
+      "7. Seleção excepcional de tratamento não operatório"
     ],
     [
       "trauma-de-viscera-oca-e-peritonite-terciaria",
-      "6. Trauma Abdominal com Perfuração Oculta de Delgado e o Desafio da Peritonite Terciária"
+      "8. Trauma e peritonite terciária"
     ],
     [
       "sindrome-compartimental-abdominal-e-abdome-aberto",
-      "8. Síndrome Compartimental Abdominal, Laparostomia (Bolsa de Bogotá vs VAC) e Fechamento da Parede"
+      "9. Síndrome compartimental abdominal e abdome aberto"
     ],
     [
       "terapia-intensiva-fistulas-e-complicacoes-pos-operatorias",
-      "8. Cuidados Pós-Operatórios em UTI, Manejo de Fístulas Digestivas e Nutrição Especializada"
+      "10. Cuidados pós-operatórios"
     ],
     [
       "casos-clinicos-estruturados-perfuracao",
-      "6. Casos Clínicos Estruturados e Raciocínio Diagnóstico-Cirúrgico Passo a Passo"
+      "11. Casos clínicos integradores"
     ],
     [
       "questoes-concurso-comentadas-perfuracao",
-      "7. Questões de Concursos de Residência Médica e Título de Cirurgia Geral Comentadas Passo a Passo"
+      "12. Questões autorais simuladas e comentadas"
     ],
     [
       "conclusao-recomendacoes-finais-referencias-perfuracao",
-      "8. Síntese Terapêutica Integrada e Referências Internacionais Oficiais"
+      "13. Algoritmo final e síntese de conduta"
     ],
     [
       "referencias",
@@ -82,7 +82,7 @@
       [
         [
           "2",
-          "1. Etiopatogenia do Abdome Agudo Perfurativo: Úlcera Péptica, Diverticulite, Perfurações Traumáticas, Iatrogênicas e Corpos Estranhos"
+          "1. Etiopatogenia do abdome agudo perfurativo"
         ],
         [
           "3",
@@ -162,7 +162,7 @@
       [
         [
           "2",
-          "2. Fisiopatologia da Peritonite: A Transição da Fase Química para a Fase Bacteriana e o Choque Séptico"
+          "2. Fisiopatologia e resposta sistêmica"
         ],
         [
           "3",
@@ -170,32 +170,63 @@
         ],
         [
           "p",
-          "O peritônio é uma membrana serosa contínua e bidimensional com área de superfície equivalente à superfície corporal humana total (cerca de <strong>1,7 a 2,0 m²</strong>), composta por uma monocamada de células mesoteliais sobreposta a uma rica matriz de tecido conjuntivo frouxo contendo densas redes de capilares sanguíneos e linfáticos. Essa vasta superfície atua como uma barreira semipermeável para troca de fluidos e defesa imunológica contra patógenos. Quando ocorre a perfuração de uma víscera oca, a resposta inflamatória peritoneal deflagra-se em duas fases cronológicas e biológicas bem delimitadas:"
+          "O peritônio é uma serosa com extensa superfície de troca e resposta inflamatória. Quando uma víscera oca perfura, conteúdo digestivo e microrganismos podem provocar irritação química, contaminação bacteriana, extravasamento de líquidos e disfunção orgânica. <strong>Esses processos se sobrepõem: não existe uma passagem universal, em horas fixas, de peritonite química «estéril» para peritonite bacteriana.</strong> O sítio da perfuração, a microbiota, o uso de supressores de ácido, a duração do vazamento e a condição do paciente modificam o risco. A conduta depende da gravidade clínica e do controle do foco, não de esperar um relógio completar um intervalo."
         ],
         [
           "3",
-          "1. Fase Precoce: A Peritonite Química Aéptica (Primeiras 6 a 12 horas)"
+          "Contaminação química e resposta inflamatória inicial: não pressupor esterilidade"
         ],
         [
           "p",
-          "Nos momentos iniciais após a perfuração de vísceras do trato gastrointestinal alto (estômago e duodeno proximal), o conteúdo derramado na cavidade peritoneal consiste predominantemente em <strong>ácido clorídrico puro (pH entre 1,0 e 2,0), pepsina gástrica ativa, bile e suco pancreático</strong>:"
+          "Na perfuração gastroduodenal, ácido e enzimas digestivas podem desencadear irritação peritoneal intensa e defesa muscular precoce. <strong>Mesmo na apresentação inicial, a contaminação bacteriana é possível</strong>; a quantidade e o perfil dos microrganismos variam com a origem, a acidez gástrica, medicamentos e comorbidades. Por isso, a aparência inicial de «peritonite química» não justifica adiar antibióticos nem controle do foco quando estes estiverem indicados."
         ],
         [
           "u",
           [
-            "<strong>Baixa Carga Bacteriana Inicial:</strong> Sob condições de acidez gástrica normal íntegra, o estômago e o duodeno são cavidades praticamente estéreis ou albergam uma microbiota transitória mínima ($&lt; 10³$ UFC/mL, composta por estreptococos e lactobacilos orais);",
-            "<strong>Queimadura Química Peritoneal Maciça:</strong> O contato direto do ácido clorídrico concentrado com o peritônio parietal e visceral deflagra uma intensa <strong>queimadura química e necrose coagulativa das células mesoteliais</strong>;",
-            "<strong>O Espasmo Muscular Reflexo (O \"Abdome em Tábua\"):</strong> A estimulação nociceptiva extrema das terminações nervosas livres somáticas dos nervos intercostais inferiores (T7 a T12) que inervam o peritônio parietal anterior deflagra um arco reflexo motor espinhal involuntário de contração tetânica contínua da musculatura dos músculos retos abdominais, oblíquos e transverso. O abdome torna-se pétreo, rígido e totalmente imóvel à palpação — o clássico <strong>\"Abdome em Tábua\" (Ventre de Madeira)</strong>;",
-            "<strong>Vasodilatação e Formação Maciça de Terceiro Espaço:</strong> A liberação local de histamina, bradicinina, substância P e prostaglandinas promove vasodilatação capilar peritoneal monumental com aumento brutal da permeabilidade microvascular. Litros de líquido rico em proteínas e eletrólitos extravasam do plasma para a cavidade peritoneal (ascite inflamatória exsudativa), levando à hipovolemia intravascular e hemoconcentração precoces."
+            "<strong>Contato químico:</strong> ácido e conteúdo digestivo irritam o mesotélio; a intensidade do quadro varia com local, volume e tempo de extravasamento.",
+            "<strong>Contaminação microbiológica variável:</strong> estômago e duodeno não são universalmente estéreis; a carga de microrganismos pode ser menor que a do cólon, mas não é nula nem clinicamente desprezível.",
+            "<strong>Defesa muscular:</strong> a irritação do peritônio parietal pode produzir contratura involuntária; a ausência de «abdome em tábua», especialmente no idoso ou imunossuprimido, não exclui perfuração.",
+            "<strong>Terceiro espaço e hipoperfusão:</strong> a inflamação aumenta permeabilidade e sequestro de líquido; monitorar perfusão e resposta à ressuscitação, evitando infusão excessiva sem reavaliação."
           ]
         ],
         [
           "3",
-          "2. Fase Tardia: A Peritonite Bacteriana e o Choque Séptico (Após 12 a 24 horas)"
+          "Contaminação bacteriana, resposta sistêmica e risco de sepse: início variável"
         ],
         [
           "p",
-          "Se a perfuração ocorrer em víscera distal rica em bactérias (como cólon sigmoide ou apêndice cecal), a peritonite é <strong>bacteriana polimicrobiana desde o primeiro minuto</strong>. Já na úlcera péptica alta, após 12 a 24 horas de perfuração, ocorre colonização bacteriana secundária maciça da cavidade:"
+          "Em perfurações de cólon ou outras vísceras com microbiota abundante, a contaminação polimicrobiana é imediata. Na perfuração gastroduodenal, a intensidade do componente bacteriano varia e pode estar presente desde o início, sobretudo com maior tempo de evolução, hipocloridria ou comorbidades. <strong>Não se deve aguardar 12 ou 24 horas para reconhecer infecção, iniciar antimicrobianos indicados ou providenciar controle do foco.</strong> O risco sistêmico depende da carga contaminante, da resposta do hospedeiro e da rapidez do tratamento."
+        ],
+        [
+          "t",
+          [
+            "Situação clínica",
+            "Mecanismo mais relevante",
+            "Decisão prática"
+          ],
+          [
+            [
+              "Perfuração gastroduodenal recente",
+              "Irritação química e possível contaminação bacteriana já coexistem",
+              "Reanimação, investigação rápida, antibiótico conforme contexto e avaliação cirúrgica precoce"
+            ],
+            [
+              "Perfuração colônica / peritonite fecal",
+              "Elevada inoculação bacteriana e risco de infecção intra-abdominal",
+              "Controle urgente do foco, antimicrobiano com cobertura apropriada e ressuscitação"
+            ],
+            [
+              "Choque ou disfunção orgânica",
+              "Hipoperfusão, inflamação sistêmica e possível sepse",
+              "Suporte hemodinâmico imediato e controle do foco sem atrasos evitáveis"
+            ],
+            [
+              "Suspeita de perfuração contida",
+              "Vazamento pode estar selado, mas exige comprovação e vigilância",
+              "Considerar manejo não operatório apenas em caso excepcional, sem peritonite ou sepse e com monitorização adequada"
+            ]
+          ],
+          "book-table"
         ],
         [
           "o",
@@ -215,7 +246,7 @@
       [
         [
           "2",
-          "3. Quadro Clínico e Semiologia Física: A Dor Súbita, O Abdome em Tábua e o Sinal de Jobert"
+          "3. Semiologia e hipóteses diagnósticas"
         ],
         [
           "3",
@@ -298,7 +329,7 @@
       [
         [
           "2",
-          "4. Perfurações Iatrogênicas em Procedimentos Endoscópicos, CPRE (Classificação de Stapfer) e Cirurgias Eletivas"
+          "4. Perfurações iatrogênicas e classificação de Stapfer"
         ],
         [
           "3",
@@ -380,7 +411,7 @@
       [
         [
           "2",
-          "4. Propedêutica Armada: Rotina Radiológica de Abdome Agudo e Sinais Tomográficos (Pneumoperitônio, Rigler e Ligamento Falciforme)"
+          "5. Diagnóstico e interpretação das imagens"
         ],
         [
           "3",
@@ -483,7 +514,7 @@
       [
         [
           "2",
-          "5. Tratamento Cirúrgico de Emergência: Técnica de Graham (Patch de Omento), Ressecções e Manejo da Sepse Peritoneal"
+          "6. Tratamento cirúrgico e controle do foco"
         ],
         [
           "3",
@@ -491,16 +522,16 @@
         ],
         [
           "p",
-          "O paciente com perfuração de víscera oca e peritonite aguda apresenta perda líquida maciça para a cavidade peritoneal e translocação endotóxica com risco iminente de choque séptico. A cirurgia é de emergência, mas <strong>o paciente não deve ser levado à mesa cirúrgica em choque descompensado sem ressuscitação inicial</strong>:"
+          "Perfuração de víscera oca com peritonite é urgência cirúrgica. <strong>Inicie ressuscitação e antibióticos indicados em paralelo ao acionamento imediato da equipe que realizará o controle do foco.</strong> Não espere normalizar todos os parâmetros hemodinâmicos para indicar cirurgia; em choque, estabilização inicial, vasopressores quando necessários e preparo operatório devem avançar simultaneamente. A abordagem específica depende do sítio perfurado e da estabilidade."
         ],
         [
           "o",
           [
-            "<strong>Ressuscitação Volêmica Agressiva com Cristaloides Balanceados:</strong> Iniciar infusão imediata de 30 mL/kg de solução cristaloide balanceada (Ringer Lactato ou Plasma-Lyte) nas primeiras 2 a 3 horas, guiando a volemia pela restauração de PAM $ge 65$ mmHg e débito urinário $ge 0,5$ mL/kg/h;",
-            "<strong>Antibioticoterapia Intravenosa Precoce de Amplo Espectro:</strong> Administrada obrigatoriamente dentro da <strong>primeira hora do diagnóstico</strong>. O regime deve cobrir bacilos Gram-negativos entéricos e anaeróbios estritos:\n    <ul>\n      <li><em>Regime Padrão:</em> <strong>Ceftriaxona (2 g IV 1x/dia) associada a Metronidazol (500 mg IV a cada 8h)</strong> OU Ampicilina-Sulbactam (3 g IV a cada 6h);",
-            "<em>Pacientes Críticos em Choque Séptico de UTI ou Imunossuprimidos:</em> <strong>Piperacilina-Tazobactam (4,5 g IV a cada 6h)</strong> OU Meropenem (1 g IV a cada 8h) associado a antifúngico (Fluconazol ou Equinocandina) em perfurações de trato digestivo alto com peritonite prolongada;",
-            "<strong>Descompressão Gástrica com Sonda Nasogástrica Aberta:</strong> Esvazia o conteúdo gástrico e biliopancreático retido, reduzindo o extravasamento contínuo de suco digestivo para a cavidade peritoneal;",
-            "<strong>Inibidor de Bomba de Prótons (IBP) em Altas Doses:</strong> Omeprazol ou Pantoprazol 80 mg em bólus IV seguido de infusão contínua ou 40 mg 12/12h para suprimir imediatamente a secreção de ácido gástrico."
+            "<strong>Ressuscitação orientada por perfusão:</strong> obtenha acessos, acompanhe pressão arterial, estado mental, lactato quando indicado e diurese. Prefira cristaloides balanceados quando apropriado e reavalie frequentemente. A sugestão de <strong>pelo menos 30 mL/kg em até 3 horas</strong> da SSC 2026 é <em>condicional para adultos com hipoperfusão induzida por sepse ou choque séptico</em>, e não uma prescrição universal para toda perfuração.",
+            "<strong>Antimicrobianos precoces:</strong> na perfuração gastroduodenal com peritonite, iniciar cobertura de amplo espectro para flora entérica, incluindo Gram-negativos e anaeróbios, ajustada a gravidade, risco de resistência, função renal e protocolo local; obter culturas quando viável sem atrasar tratamento. Reavaliar para descalonamento após controle do foco e resultados microbiológicos.",
+            "<strong>Antifúngico não rotineiro:</strong> não associar fluconazol ou equinocandina automaticamente só por existir perfuração ou choque. Considerar cobertura antifúngica empírica individualmente quando houver fatores relevantes para candidíase invasiva, como imunossupressão, infecção intra-abdominal persistente, exposição antimicrobiana prolongada ou internação prolongada.",
+            "<strong>Descompressão e proteção gástrica:</strong> considerar sonda nasogástrica conforme distensão, vômitos e plano cirúrgico; usar inibidor da bomba de prótons conforme contexto de úlcera perfurada. O esquema de infusão contínua em altas doses empregado após hemostasia endoscópica de úlcera <em>sangrante</em> não deve ser transposto como regra para toda perfuração.",
+            "<strong>Controle do foco sem atraso evitável:</strong> acionar cirurgia de urgência para controlar vazamento e contaminação; não postergar intervenção apenas para completar um volume pré-fixado de fluido. Em choque persistente, associar suporte vasoativo e anestésico conforme avaliação."
           ]
         ],
         [
@@ -509,7 +540,7 @@
         ],
         [
           "p",
-          "Na grande maioria das perfurações por úlcera duodenal ou gástrica antral (orifícios perfurativos com diâmetro $le 2$ a 3 cm), a cirurgia tem como objetivo primário <strong>fechar a perfuração e lavar exaustivamente a cavidade, NÃO sendo necessária gastrectomia ou vagotomia na urgência</strong>:"
+          "Para perfurações gastroduodenais pequenas, o fechamento da perfuração, com ou sem reforço omental conforme a situação cirúrgica, costuma ser estratégia adequada. Perfurações com diâmetro <strong>inferior a 2 cm</strong> são geralmente abordadas por reparo primário; defeitos maiores exigem individualização pela localização, fragilidade das bordas, suspeita neoplásica e condição clínica. A WSES recomenda controle cirúrgico do foco com a maior brevidade possível nos casos com peritonite, pneumoperitônio significativo ou extravasamento de contraste."
         ],
         [
           "p",
@@ -523,7 +554,7 @@
           "o",
           [
             "<strong>Identificação da Perfuração:</strong> Localiza-se o orifício perfurativo na parede anterior do bulbo duodenal (frequentemente com diâmetro de 3 a 10 mm com bordas hiperemiadas e friáveis);",
-            "<strong>Passagem dos Pontos Seromusculares sem Nó Inicial:</strong> Passam-se três a quatro pontos simples com fio absorvível monofilamentar de absorção lenta (Polidioxanona / PDS 2-0 ou 3-0) ou inabsorvível (Vicryl ou Seda), transfixando a parede duodenal saudável de ambos os lados do orifício, mantendo os fios reparados sem dar nós;",
+            "<strong>Passagem dos Pontos Seromusculares sem Nó Inicial:</strong> Passam-se três a quatro pontos simples com fio de sutura escolhido conforme técnica e tecido; a polidioxanona (PDS) é absorvível de longa duração, o poliglactina 910 (Vicryl) é absorvível e a seda é não absorvível, transfixando a parede duodenal saudável de ambos os lados do orifício, mantendo os fios reparados sem dar nós;",
             "<strong>Interposição do Segmento de Grande Omento Vascularizado:</strong> Mobiliza-se uma lingueta livre ou pediculada e ricamente vascularizada do <strong>grande omento (epíploon)</strong> e posiciona-se esse segmento de omento diretamente sobre o orifício perfurativo, sob os fios de sutura previamente passados;",
             "<strong>Amarração dos Pontos sobre o Omento (Sem Tensão):</strong> Os nós são amarrados suavemente sobre a lingueta omental. <strong>O orifício da úlcera NÃO é suturado borda a borda sob tensão mecânica</strong> (a borda da úlcera é friável, edemaciada e isquêmica, e qualquer sutura direta sob tração rasgaria o tecido duodenal, causando fístula duodenal de alto débito pós-operatória catastrófica). O omento atua como uma \"rolha biológica\" viva e vascularizada que promove hemostasia, neovascularização rápida e cicatrização estanque hermética;",
             "<strong>Técnica de Graham Modificada:</strong> Amarra-se primeiro os pontos aproximando as bordas frouxamente e depois amarra-se o omento por cima com as mesmas sobras de fio;",
@@ -532,7 +563,7 @@
         ],
         [
           "3",
-          "Conduta em Úlceras Gástricas Perfuradas: A Biópsia Obrigatória"
+          "Úlcera gástrica perfurada: investigar malignidade e garantir histopatologia"
         ],
         [
           "p",
@@ -541,9 +572,9 @@
         [
           "u",
           [
-            "<strong>Úlceras Duodenais:</strong> São benignas em mais de 99% a 100% dos casos. Não exigem biópsia intraoperatória de rotina;",
-            "<strong>Úlceras Gástricas (Corpo, Antro ou Pequena Curvatura):</strong> <strong>Até 10% a 15% das úlceras gástricas perfuradas são, na realidade, um ADENOCARCINOMA GÁSTRICO ULCERADO E PERFURADO</strong>;",
-            "<strong>A Regra de Ouro da Úlcera Gástrica Perfurada:</strong> É <strong>MANDATÓRIA a realização de BIÓPSIA EM CUNHA DAS BORDAS DA ÚLCERA GÁSTRICA</strong> antes de realizar o fechamento com patch de Graham, enviando o material para exame anatomopatológico de congelação ou parafina para afastar malignidade. Se a úlcera gástrica for extensa, suspeita de neoplasia ou com destruição maciça do antro em paciente estável, a conduta pode exigir gastrectomia parcial com reconstrução à Billroth II ou Y de Roux."
+            "<strong>Úlcera duodenal perfurada:</strong> na maioria dos casos é benigna; a avaliação patológica depende de achados suspeitos.",
+            "<strong>Úlcera gástrica perfurada:</strong> apresenta risco relevante de neoplasia subjacente. Examinar bordas, localização e características da lesão e planejar avaliação histopatológica adequada.",
+            "<strong>Momento da biópsia:</strong> considerar amostragem das bordas durante a cirurgia quando tecnicamente viável e segura, ou organizar endoscopia e biópsias após recuperação, garantindo seguimento. O controle da sepse e do vazamento não deve ser adiado para realizar biópsia. Lesões grandes, friáveis ou com suspeita de câncer exigem planejamento cirúrgico individualizado."
           ]
         ],
         [
@@ -605,7 +636,7 @@
       [
         [
           "2",
-          "5. Tratamento Não Operatório de Perfurações Gastroduodenais (Método de Taylor) e Manejo da Síndrome de Boerhaave"
+          "7. Seleção excepcional de tratamento não operatório"
         ],
         [
           "3",
@@ -618,24 +649,20 @@
         [
           "u",
           [
-            "<strong>Critérios Clínicos Rígidos de Elegibilidade para o Método de Taylor:</strong>\n    <ol>\n      <li>Paciente jovem ou adulto <strong>rigorosamente estável hemodinamicamente (sem choque, sem taquicardia descompensada e sem hipotensão)</strong>;",
-            "Início recente dos sintomas com evidência clara de <strong>peritonite localizada restrita ao epigástrio ou hipocôndrio direito</strong> (ausência de peritonite generalizada em quatro quadrantes e ausência de abdome em tábua difuso);",
-            "Idade $&lt; 70$ anos e ausência de imunossupressão grave;",
-            "<strong>Confirmação Tomográfica ou Radiológica de Tampão Hermético (Teste de Contraste Hidrossolúvel):</strong> Realiza-se ingestão oral de meio de contraste iodado hidrossolúvel (Gastrografin - <em>nunca sulfato de bário</em>) sob fluoroscopia ou TC: se <strong>NÃO houver extravasamento ativo do contraste para a cavidade peritoneal livre</strong>, confirma-se que o orifício encontra-se mecanicamente bloqueado e selado pelo omento;",
-            "<strong>Protocolo Operacional Clínico do Método de Taylor:</strong>\n    <ul>\n      <li>Jejum oral absoluto contínuo;",
-            "<strong>Sondagem Nasogástrica Contínua com Aspiração em Sucção Contínua ou Intermitente</strong>: alivia a pressão intragástrica e impede que novo suco digestivo atinja o duodeno;",
-            "Inibidor de Bomba de Prótons em altas doses por via intravenosa (Omeprazol 80 mg em bólus seguido de infusão contínua de 8 mg/h por 72 horas);",
-            "Antibioticoterapia intravenosa de amplo espectro por 7 a 10 dias cobrindo flora entérica;",
-            "<strong>Vigilância Clínica Cirúrgica Presencial Estrita a cada 2 a 4 horas</strong>: a equipe cirúrgica deve reavaliar continuamente o abdome, a frequência cardíaca, a temperatura e a curva leucocitária;"
+            "<strong>Seleção excepcional:</strong> o manejo não operatório NÃO é de rotina. Considerá-lo somente em paciente criteriosamente selecionado, estável, <strong>sem peritonite ou sepse</strong>, com evidência por contraste hidrossolúvel de que a perfuração está selada e sem extravasamento ativo.",
+            "<strong>Seis requisitos operacionais:</strong> ausência de vazamento radiológico; reavaliações clínicas seriadas; exames laboratoriais repetidos; suporte respiratório/renal quando necessário; recursos para vigilância hospitalar; e disponibilidade imediata de cirurgia caso haja piora.",
+            "<strong>Medidas de suporte:</strong> jejum, hidratação IV orientada por perfusão, descompressão por sonda nasogástrica quando indicada, inibidor da bomba de prótons, antibiótico IV adequado ao quadro e endoscopia de controle após recuperação conforme avaliação especializada.",
+            "<strong>Duração dos antimicrobianos:</strong> não fixar 7 a 10 dias indiscriminadamente. A duração deve depender de controle do foco e evolução. Em infecção intra-abdominal com controle adequado, diretrizes favorecem cursos curtos; persistência de sinais exige procurar foco residual.",
+            "<strong>Falha: intervir sem esperar:</strong> surgimento de peritonite, sepse, deterioração hemodinâmica, dor progressiva ou evidência de vazamento impõe reavaliação cirúrgica imediata. Idade avançada aumenta cautela, mas um corte etário isolado não substitui o julgamento clínico."
           ]
         ],
         [
           "p",
-          "</li>\n  <li><strong>Critérios Formais de Falha e Conversão Imediata para Cirurgia:</strong>"
+          "<strong>Decisão de segurança:</strong> o manejo conservador exige observação hospitalar com possibilidade real de operar prontamente. A piora clínica ou a demonstração de vazamento são motivos para abandonar a estratégia; a equipe <strong>não deve aguardar uma janela fixa de 12–24 horas</strong> para agir."
         ],
         [
           "p",
-          "Se após 12 a 24 horas de tratamento conservador o paciente mantiver febre persistente, piora da dor abdominal, taquicardia em ascensão, leucocitose progressiva ou surgimento de defesa muscular generalizada, o método de Taylor é considerado falho, indicando <strong>laparotomia exploradora imediata sem protelação</strong>."
+          "Se aparecerem dor abdominal crescente, sinais de peritonite, instabilidade hemodinâmica, sepse ou extravasamento de contraste, indique reavaliação cirúrgica <strong>imediata</strong>. O tempo de observação isoladamente não define sucesso: monitorização clínica frequente, exames pertinentes e capacidade de realizar cirurgia de resgate são obrigatórios."
         ],
         [
           "3",
@@ -679,7 +706,7 @@
       [
         [
           "2",
-          "6. Trauma Abdominal com Perfuração Oculta de Delgado e o Desafio da Peritonite Terciária"
+          "8. Trauma e peritonite terciária"
         ],
         [
           "3",
@@ -723,10 +750,10 @@
         [
           "o",
           [
-            "Otimização do suporte intensivo em UTI e suporte nutricional parenteral;",
-            "Cobertura antimicrobiana direcionada de amplo espectro baseada em culturas e antibiogramas guiados (ex.: Meropenem associado a Polimixina B / Tigeciclina e Daptomicina);",
-            "<strong>Terapia Antifúngica Empírica com Equinocandinas (Equinocandina: Caspofungina, Anidulafungina ou Micafungina)</strong> é formalmente mandatória em pacientes com peritonite terciária ou pós-operatória complicada com choque séptico;",
-            "Drenagem percutânea guiada por TC de abscessos organizados, evitando relaparotomias não programadas intempestivas sem alvo anatômico definido."
+            "<strong>Reavaliar o foco:</strong> verificar coleção residual, vazamento, necrose ou necessidade de drenagem cirúrgica/percutânea e discutir com cirurgia e infectologia.",
+            "<strong>Antibioticoterapia guiada por risco e culturas:</strong> escolher espectro com base no perfil de resistência, foco intra-abdominal, função renal e microbiologia; não combinar automaticamente carbapenêmicos e agentes de resgate como polimixinas, tigeciclina ou daptomicina.",
+            "<strong>Antifúngicos apenas quando indicados:</strong> na peritonite terciária ou infecção pós-operatória, avaliar risco individual de candidíase invasiva, isolamento microbiológico, imunossupressão e falha de controle do foco. Equinocandina pode ser considerada em situações selecionadas, não é mandatória em todo paciente com choque.",
+            "<strong>Suporte intensivo e nutrição:</strong> monitorar perfusão e disfunções orgânicas; preferir nutrição enteral quando viável, reservando a parenteral para indicações específicas. Drenar coleções identificadas com técnica adequada."
           ]
         ]
       ]
@@ -737,7 +764,7 @@
       [
         [
           "2",
-          "8. Síndrome Compartimental Abdominal, Laparostomia (Bolsa de Bogotá vs VAC) e Fechamento da Parede"
+          "9. Síndrome compartimental abdominal e abdome aberto"
         ],
         [
           "3",
@@ -832,9 +859,9 @@
           "u",
           [
             "<strong>A - Air under diaphragm:</strong> Pneumoperitônio subdiafragmático na rotina de abdome agudo (sinal de Jobert). Em acamados: decúbito lateral esquerdo com raios horizontais (Hjelm-Laurell);",
-            "<strong>B - Biópsia obrigatória:</strong> Sempre biopsiar bordas de úlceras gástricas perfuradas antes da rafia ou omentoplastia para afastar adenocarcinoma. Úlceras duodenais perfuradas raramente são malignas e dispensam biópsia;",
-            "<strong>C - Controle do Foco (Source Control):</strong> Hartmann na diverticulite perfurada Hinchey IV, sutura em cunha/ressecção nas perfurações colônicas/delgadas e patch de Graham omental nas duodenais;",
-            "<strong>D - Duração do Antibiótico:</strong> Fixar em apenas 4 a 5 dias após o controle cirúrgico estanque adequado do foco séptico (Ensaio STOP-IT);",
+            "<strong>B — Biópsia e seguimento:</strong> úlcera gástrica perfurada requer investigação de malignidade e histopatologia, intraoperatória quando viável ou após estabilização por endoscopia; a prioridade imediata é controle do foco. A úlcera duodenal geralmente é benigna.",
+            "<strong>C — Controle do foco:</strong> escolha a operação segundo sítio, estabilidade e contaminação; perfuração colônica grave pode exigir Hartmann, enquanto pacientes selecionados admitem ressecção com anastomose. Perfuração gastroduodenal pequena em geral recebe reparo primário.",
+            "<strong>D — Duração antimicrobiana:</strong> após controle cirúrgico adequado da infecção intra-abdominal, preferir curso curto e avaliar evolução; SIS 2024 recomenda não mais que quatro dias. Persistência de sinais exige investigar foco residual, não apenas prolongar antibiótico.",
             "<strong>E - Enterocutaneous Fistula prevention:</strong> Proteger o intestino com película plástica não aderente ao realizar laparostomia a vácuo e evitar enterorrafias sob tensão ou isquemia."
           ]
         ]
@@ -846,7 +873,7 @@
       [
         [
           "2",
-          "8. Cuidados Pós-Operatórios em UTI, Manejo de Fístulas Digestivas e Nutrição Especializada"
+          "10. Cuidados pós-operatórios"
         ],
         [
           "3",
@@ -877,7 +904,7 @@
       [
         [
           "2",
-          "6. Casos Clínicos Estruturados e Raciocínio Diagnóstico-Cirúrgico Passo a Passo"
+          "11. Casos clínicos integradores"
         ],
         [
           "3",
@@ -951,11 +978,11 @@
       [
         [
           "2",
-          "7. Questões de Concursos de Residência Médica e Título de Cirurgia Geral Comentadas Passo a Passo"
+          "12. Questões autorais simuladas e comentadas"
         ],
         [
           "3",
-          "Questão 1 (USP-SP / Residência Médica em Cirurgia)"
+          "Questão simulada 1 — raciocínio clínico aplicado"
         ],
         [
           "p",
@@ -972,7 +999,7 @@
         ],
         [
           "p",
-          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+          "<strong>Resposta comentada: Alternativa B.</strong>"
         ],
         [
           "p",
@@ -980,7 +1007,7 @@
         ],
         [
           "3",
-          "Questão 2 (ENAMED / Revalidação e Residência Médica Nacional)"
+          "Questão simulada 2 — raciocínio clínico aplicado"
         ],
         [
           "p",
@@ -997,7 +1024,7 @@
         ],
         [
           "p",
-          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+          "<strong>Resposta comentada: Alternativa B.</strong>"
         ],
         [
           "p",
@@ -1005,7 +1032,7 @@
         ],
         [
           "3",
-          "Questão 3 (SURCE - Seleção Unificada para Residência Médica do Ceará)"
+          "Questão simulada 3 — raciocínio clínico aplicado"
         ],
         [
           "p",
@@ -1022,7 +1049,7 @@
         ],
         [
           "p",
-          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+          "<strong>Resposta comentada: Alternativa B.</strong>"
         ],
         [
           "p",
@@ -1030,16 +1057,16 @@
         ],
         [
           "3",
-          "Questão 4 (UNICAMP - Universidade Estadual de Campinas)"
+          "Questão simulada 4 — raciocínio clínico aplicado"
         ],
         [
           "p",
-          "Paciente feminina de 58 anos é submetida à laparotomia de urgência por abdome agudo perfurativo. No intraoperatório, é encontrada uma perfuração de 1,5 cm na <strong>pequena curvatura gástrica (úlcera gástrica perfurada)</strong> com peritonite química associada. Em relação à abordagem cirúrgica específica da úlcera gástrica perfurada comparada à úlcera duodenal, qual detalhe cirúrgico é <strong>MANDATÓRIO</strong>?"
+          "Mulher de 58 anos é submetida a cirurgia de urgência por abdome agudo perfurativo. Identifica-se uma úlcera perfurada de 1,5 cm na pequena curvatura gástrica. Após controlar a contaminação, qual medida ajuda a não perder o diagnóstico de possível neoplasia subjacente?"
         ],
         [
           "o",
           [
-            "Realizar biópsia em cunha das bordas da úlcera gástrica para exame anatomopatológico a fim de excluir adenocarcinoma gástrico perfurado, visto que úlceras gástricas podem representar malignidade oculta em até 10% a 15% dos casos.",
+            "Garantir avaliação histopatológica adequada da úlcera gástrica, com biópsia de bordas durante o procedimento quando seguro e viável ou endoscopia com biópsias após estabilização e seguimento garantido.",
             "É formalmente proibido biopsiar a úlcera gástrica devido ao risco de disseminação peritoneal bacteriana.",
             "Realizar obrigatoriamente esofagectomia distal com transposição de cólon direito de urgência.",
             "Suturar a úlcera gástrica sem omento e administrar injeção intralesional de adrenalina em quatro quadrantes."
@@ -1047,15 +1074,15 @@
         ],
         [
           "p",
-          "<strong>Gabarito Oficial: Alternativa A.</strong>"
+          "<strong>Resposta comentada: Alternativa A.</strong>"
         ],
         [
           "p",
-          "<strong>Comentário Editorial Detalhado:</strong> Ao contrário da úlcera duodenal (que é praticamente sempre benigna), <strong>a úlcera gástrica perfurada pode albergar um adenocarcinoma gástrico subjacente em até 10% a 15% dos casos</strong>. Por esse motivo, é <strong>mandatória a realização de biópsia em cunha das bordas da úlcera</strong> para análise histopatológica antes do fechamento com omentoplastia (Alternativa A correta). Caso o anatomopatológico revele adenocarcinoma, a paciente deverá ser programada para gastrectomia oncológica com linfadenectomia após a recuperação da sepse."
+          "<strong>Comentário:</strong> uma úlcera gástrica perfurada pode ocultar neoplasia. A alternativa A é a única que propõe esclarecer a etiologia por histopatologia, sem transformar a coleta intraoperatória em exigência absoluta quando comprometer o controle urgente do foco ou a segurança. A amostragem pode ser feita na cirurgia se viável ou no seguimento endoscópico programado. A operação oncológica definitiva depende do estadiamento, do estado clínico e de discussão especializada."
         ],
         [
           "3",
-          "Questão 5 (UERJ - Universidade do Estado do Rio de Janeiro)"
+          "Questão simulada 5 — raciocínio clínico aplicado"
         ],
         [
           "p",
@@ -1072,7 +1099,7 @@
         ],
         [
           "p",
-          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+          "<strong>Resposta comentada: Alternativa B.</strong>"
         ],
         [
           "p",
@@ -1080,7 +1107,7 @@
         ],
         [
           "3",
-          "Questão 6 (IAMSPE - Instituto de Assistência Médica ao Servidor Público Estadual)"
+          "Questão simulada 6 — raciocínio clínico aplicado"
         ],
         [
           "p",
@@ -1097,7 +1124,7 @@
         ],
         [
           "p",
-          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+          "<strong>Resposta comentada: Alternativa C.</strong>"
         ],
         [
           "p",
@@ -1111,7 +1138,7 @@
       [
         [
           "2",
-          "8. Síntese Terapêutica Integrada e Referências Internacionais Oficiais"
+          "13. Algoritmo final e síntese de conduta"
         ],
         [
           "3",
@@ -1121,10 +1148,10 @@
           "o",
           [
             "<strong>Reconhecimento Clínico Cardinal:</strong> Dor abdominal súbita em \"facada\" + Abdome em tábua + <strong>Sinal de Jobert positivo</strong> (timpanismo pré-hepático);",
-            "<strong>Rotina de Imagem Imediata:</strong> Radiografia de tórax em PA em ortostase (pesquisa de pneumoperitônio) ou incidência em decúbito lateral esquerdo com raios horizontais (Hjelm-Laurell) se acamado; TC de abdome com contraste IV se estabilidade hemodinâmica para identificar sítio e etiologia precisa;",
-            "<strong>Ressuscitação da Primeira Hora:</strong> Dois acessos venosos calibrosos, expansão com cristaloide balanceado, sonda nasogástrica aberta, IBP venoso e <strong>Antibioticoterapia de amplo espectro (Ceftriaxona + Metronidazol ou Piperacilina-Tazobactam)</strong>;",
-            "<strong>Abordagem Cirúrgica Específica:</strong>\n    <ul>\n      <li><em>Úlcera Duodenal Perfurada:</em> <strong>Técnica de Graham (patch de omento pediculado vascularizado sobre o orifício)</strong> + Lavagem exaustiva da cavidade com grande volume de soro salino aquecido;",
-            "<em>Úlcera Gástrica Perfurada:</em> <strong>Biópsia em cunha das bordas mandatória</strong> para afastar adenocarcinoma gástrico + patch de Graham;",
+            "<strong>Imagem para localizar o foco:</strong> TC de abdome com contraste IV é preferível quando disponível e compatível com a situação hemodinâmica, sem atrasar tratamento de peritonite evidente. Radiografia simples pode ajudar quando TC não está prontamente acessível, mas exame negativo não exclui perfuração.",
+            "<strong>Primeiras medidas em paralelo:</strong> ressuscitação guiada por perfusão, analgesia, antibióticos precoces e acionamento cirúrgico; em choque séptico, aplicar recomendações condicionais de fluidos e suporte vasoativo da SSC 2026, com reavaliações frequentes.",
+            "<strong>Controle do foco:</strong> úlcera perfurada pequena pode receber reparo primário, com reforço omental quando indicado. Em úlcera gástrica avaliar possibilidade de malignidade e obter amostragem patológica intraoperatória ou em endoscopia de seguimento conforme viabilidade. Em perfuração colônica, a opção entre Hartmann e ressecção com anastomose depende de estabilidade, grau de contaminação e risco individual; não presumir uma operação única para todos.",
+            "<strong>Após controle adequado do foco:</strong> reavaliar infecção e descalonar antimicrobianos; em infecções intra-abdominais controladas preferir curso curto (a SIS 2024 recomenda no máximo 4 dias), individualizando quando o foco não foi controlado. Tratar fatores causais como <em>H. pylori</em> e revisar uso de anti-inflamatórios.",
             "<em>Diverticulite Cólica Perfurada Hinchey IV:</em> <strong>Cirurgia de Hartmann</strong> de emergência;",
             "<strong>Pós-Operatório:</strong> Manutenção de antibioticoterapia por 4 a 7 dias guiada por controle do foco e marcadores inflamatórios, erradicação do <em>H. pylori</em> e suspensão definitiva de fármacos ulcerogênicos (AINEs)."
           ]
@@ -1142,11 +1169,12 @@
         [
           "o",
           [
-            "<a href=\"https://wjes.biomedcentral.com/articles/10.1186/s13017-020-00325-0\" target=\"_blank\" rel=\"noopener noreferrer\">World Society of Emergency Surgery (WSES) — Guidelines for the management of perforated peptic ulcer</a>",
-            "<a href=\"https://www.sccm.org/SurvivingSepsisCampaign/Guidelines\" target=\"_blank\" rel=\"noopener noreferrer\">Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021</a>",
-            "<a href=\"https://cbc.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Colégio Brasileiro de Cirurgiões (CBC) — Diretrizes no Manejo do Abdome Agudo Perfurativo</a>",
+            "<a href=\"https://wjes.biomedcentral.com/articles/10.1186/s13017-019-0283-9\" target=\"_blank\" rel=\"noopener noreferrer\">World Society of Emergency Surgery (WSES) — Guidelines for the management of perforated peptic ulcer</a>",
+            "<a href=\"https://www.sccm.org/SurvivingSepsisCampaign/Guidelines\" target=\"_blank\" rel=\"noopener noreferrer\">Surviving Sepsis Campaign 2021 — referência histórica, substituída para as recomendações atuais pela edição de 2026</a>",
             "<a href=\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\" target=\"_blank\" rel=\"noopener noreferrer\">American College of Radiology (ACR) — ACR Appropriateness Criteria: Acute Nonlocalized Abdominal Pain</a>",
-            "<a href=\"https://www.nejm.org/doi/full/10.1056/NEJMicm1902801\" target=\"_blank\" rel=\"noopener noreferrer\">New England Journal of Medicine (NEJM) — Perforated Peptic Ulcer and Surgical Repair</a>"
+            "<a href=\"https://www.nejm.org/doi/full/10.1056/NEJMicm1902801\" target=\"_blank\" rel=\"noopener noreferrer\">New England Journal of Medicine (NEJM) — Perforated Peptic Ulcer and Surgical Repair</a>",
+            "<a href=\"https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Surviving Sepsis Campaign 2026 — recomendações atuais sobre ressuscitação, antimicrobianos e controle do foco (SCCM)</a>",
+            "<a href=\"https://journals.sagepub.com/doi/full/10.1089/sur.2024.137\" target=\"_blank\" rel=\"noopener noreferrer\">Surgical Infection Society — Guidelines on the Management of Intra-Abdominal Infection: 2024 Update</a>"
           ],
           "reference-list"
         ]

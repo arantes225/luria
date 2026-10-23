@@ -49,6 +49,10 @@
     [
       "tabela-high-yield-e-pontos-chave-de-memorizacao",
       "8. Tabela High-Yield Resumo e Pontos-Chave de Memorização para a Prova"
+    ],
+    [
+      "bibliografia-clinica-rim-bexiga-2026",
+      "Referências clínicas e interpretação da hierarquia"
     ]
   ],
   "q": [
@@ -59,6 +63,10 @@
         [
           "2",
           "1. Tumores Renais: Epidemiologia, Genética Molecular (VHL e Hereditariedade) e Subtipos Histopatológicos do Carcinoma de Células Renais (CCR)"
+        ],
+        [
+          "p",
+          "<strong>Em 30 segundos:</strong> massa renal localizada não significa nefrectomia radical automática; preservar néfrons em tumores T1 quando tecnicamente viável. Hematúria macroscópica pode exigir investigação do urotélio; na neoplasia vesical, a presença de <strong>músculo detrusor na peça</strong>, o estádio Ta/T1/Tis versus T2 e a categoria de risco definem o fluxo. A base brasileira disponível (INCA e protocolos locais) tem prioridade de aplicabilidade; as recomendações técnicas de cirurgia renal e bexiga devem ser conferidas com <a href=\"https://uroweb.org/guidelines/renal-cell-carcinoma/chapter/disease-management\" target=\"_blank\" rel=\"noopener noreferrer\">EAU 2026 — rim</a> e <a href=\"https://uroweb.org/guidelines/non-muscle-invasive-bladder-cancer\" target=\"_blank\" rel=\"noopener noreferrer\">EAU 2026 — bexiga</a> como fontes especializadas internacionais, explicitando disponibilidade no SUS."
         ],
         [
           "3",
@@ -395,6 +403,10 @@
           "A <strong>Nefrectomia Parcial (NP)</strong> consiste na ressecção cirúrgica completa do tumor renal com uma margem de parênquima renal macroscopicamente e microscopicamente sadia, preservando a porção remanescente do rim funcionante. A preservação do parênquima renal sadio reduz drasticamente o risco a longo prazo de desenvolvimento de <strong>Doença Renal Crônica (DRC), eventos cardiovasculares maiores (infarto e AVC) e mortalidade por todas as causas</strong>, mantendo sobrevida oncológica idêntica à da nefrectomia radical em tumores selecionados."
         ],
         [
+          "p",
+          "<strong>Atualização EAU 2026:</strong> recomenda <strong>oferecer nefrectomia parcial aos pacientes com tumores renais T1</strong>, se tecnicamente e oncologicamente viável, preservando função; para T2 com rim único/DRC, considerar parcial em casos selecionados. Não exigir nefrectomia parcial em todas as situações com anatomia complexa, nem fazer linfadenectomia ou adrenalectomia ipsilateral de rotina na doença confinada sem suspeita. Fonte: <a href=\"https://uroweb.org/guidelines/renal-cell-carcinoma/chapter/disease-management\" target=\"_blank\" rel=\"noopener noreferrer\">EAU RCC 2026</a>."
+        ],
+        [
           "4",
           "Indicações da Nefrectomia Parcial"
         ],
@@ -637,6 +649,10 @@
             ]
           ],
           "book-table"
+        ],
+        [
+          "p",
+          "<strong>Atenção à segunda RTU:</strong> T1 e ressecção inicial incompleta e situações com amostra inadequada exigem discutir re-RTU conforme risco e edição da diretriz. Nem toda peça sem músculo detrusor implica a <strong>mesma</strong> regra se a doença é Ta de baixo grau claramente ressecada ou lesão primária CIS; há exceções definidas no <a href=\"https://uroweb.org/guidelines/non-muscle-invasive-bladder-cancer\" target=\"_blank\" rel=\"noopener noreferrer\">EAU NMIBC 2026</a>. Confirmar a presença e profundidade muscular no relatório e evitar iniciar BCG sem estadiamento adequado quando exigido."
         ]
       ]
     ],
@@ -647,6 +663,10 @@
         [
           "2",
           "5. Tratamento do Câncer de Bexiga: Tumores Não Músculo-Invasivos (BCG Intravesical) vs. Músculo-Invasivos (Quimioterapia Neoadjuvante e Cistectomia com Neobexiga)"
+        ],
+        [
+          "p",
+          "<strong>Atualização e contextualização:</strong> intravesical com quimioterápico ou BCG depende de risco de progressão/recorrência, CIS e categoria de falha ao BCG. A <a href=\"https://uroweb.org/guidelines/non-muscle-invasive-bladder-cancer\" target=\"_blank\" rel=\"noopener noreferrer\">EAU NMIBC 2026</a> atualiza opções para doença BCG-unresponsive e grupos de alto risco, mas <strong>aprovação internacional não prova incorporação no SUS</strong>. A terapia de tumor músculo-invasivo exige avaliação sistêmica e cirúrgica integrada, não a regra “todos recebem neobexiga”."
         ],
         [
           "3",
@@ -1214,6 +1234,33 @@
             "<strong>Câncer de Bexiga Músculo-Invasivo (MIBC - T2 a T4a):</strong> Padrão-ouro (nível 1A): <strong>Quimioterapia Neoadjuvante baseada em Cisplatina (GC ou ddMVAC) seguida de Cistectomia Radical com Linfadenectomia Pélvica Estendida</strong>.",
             "<strong>Derivação Urinária de Bricker:</strong> Conduto ileal incontinente na fossa ilíaca direita com bolsa coletora externa; menor tempo operatório e menor morbimortalidade em idosos cardiopatas. Neobexiga ortotópica urina pela uretra nativa, mas tem risco de acidose metabólica hiperclorêmica e incontinência noturna."
           ]
+        ]
+      ]
+    ],
+    [
+      "bibliografia-clinica-rim-bexiga-2026",
+      [
+        0,
+        ""
+      ],
+      [
+        [
+          "2",
+          "Referências clínicas e interpretação da hierarquia"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/inca/pt-br/assuntos/cancer/tipos\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — INCA] Tipos de câncer e organização da assistência oncológica. Este é um índice geral, não um PCDT específico de rim.</a>",
+            "<a href=\"https://www.inca.gov.br/sites/ufu.sti.inca.local/files//media/document//protocolo_unificado_neoplasias_malignas_nao_hematologicas_fevereiro_2022.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL — REDE FEDERAL/INCA] Protocolo assistencial local de neoplasia maligna renal, aprovado em 2021; não equivale a diretriz nacional vigente nem incorpora automaticamente novos fármacos.</a>",
+            "<a href=\"https://uroweb.org/guidelines/renal-cell-carcinoma/chapter/disease-management\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL — EAU 2026] Renal Cell Carcinoma, seção de tratamento da doença.</a>",
+            "<a href=\"https://uroweb.org/guidelines/non-muscle-invasive-bladder-cancer\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL — EAU 2026] Non-muscle-invasive bladder cancer, re-RTU, BCG e seguimento.</a>"
+          ],
+          "reference-list"
+        ],
+        [
+          "p",
+          "Fontes europeias são referências técnicas especializadas quando não existe PCDT nacional específico equivalente e não garantem oferta de qualquer fármaco/procedimento no SUS."
         ]
       ]
     ]

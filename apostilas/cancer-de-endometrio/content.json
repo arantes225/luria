@@ -20,11 +20,7 @@
   "o": [
     [
       "introdu-o-e-fundamentos",
-      "Introdução e Fundamentos"
-    ],
-    [
-      "etapa-zero-auditoria-da-base-compara-o-com-drive-e-atualiza-o-cient-fica",
-      "Etapa zero — auditoria da base, comparação com Drive e atualização científica"
+      "Em 30 segundos — o essencial"
     ],
     [
       "1-introdu-o-por-que-o-endom-trio-sangra",
@@ -39,100 +35,92 @@
       "3. Histologia e biologia molecular — um mesmo órgão, várias doenças"
     ],
     [
+      "estadiamento-cirurgico-figo-2023-e-classificacao-molecular",
+      "4. Classificação molecular aplicada — quando muda o risco"
+    ],
+    [
       "4-quadro-cl-nico-e-diagn-sticos-diferenciais",
-      "4. Quadro clínico e diagnósticos diferenciais"
+      "5. Quadro clínico e diagnósticos diferenciais"
     ],
     [
       "5-abordagem-inicial-antes-e-depois-da-atualiza-o-acog-2026",
-      "5. Abordagem inicial: antes e depois da atualização ACOG 2026"
+      "6. Sangramento pós-menopausa — abordagem brasileira e comparação ACOG"
     ],
     [
       "6-hiperplasia-endometrial-e-ein-a-fronteira-com-c-ncer",
-      "6. Hiperplasia endometrial e EIN: a fronteira com câncer"
+      "7. Hiperplasia endometrial e EIN: a fronteira com câncer"
     ],
     [
       "7-confirmou-c-ncer-que-informa-es-devem-estar-no-laudo",
-      "7. Confirmou câncer: que informações devem estar no laudo?"
+      "8. Confirmou câncer: que informações devem estar no laudo?"
     ],
     [
       "8-figo-2023-mapa-did-tico-que-integra-anatomia-e-biologia",
-      "8. FIGO 2023: mapa didático que integra anatomia e biologia"
+      "9. FIGO 2023: mapa didático que integra anatomia e biologia"
     ],
     [
       "9-tratamento-cir-rgico-opera-o-proporcional-ao-risco",
-      "9. Tratamento cirúrgico: operação proporcional ao risco"
-    ],
-    [
-      "10-adjuv-ncia-por-que-nem-toda-paciente-recebe-radioterapia-quimioterapia",
-      "10. Adjuvância: por que nem toda paciente recebe radioterapia/quimioterapia?"
-    ],
-    [
-      "11-doen-a-avan-ada-ou-recorrente-e-tratamento-sist-mico",
-      "11. Doença avançada ou recorrente e tratamento sistêmico"
-    ],
-    [
-      "12-preserva-o-da-fertilidade-exce-o-planejada-n-o-alternativa-casual",
-      "12. Preservação da fertilidade: exceção planejada, não alternativa casual"
-    ],
-    [
-      "13-lynch-e-gen-tica-o-que-perguntar-e-quando-encaminhar",
-      "13. Lynch e genética: o que perguntar e quando encaminhar"
-    ],
-    [
-      "14-seguimento-qualidade-de-vida-e-progn-stico",
-      "14. Seguimento, qualidade de vida e prognóstico"
-    ],
-    [
-      "15-fluxogramas-textuais-luria",
-      "15. Fluxogramas textuais LURIA"
-    ],
-    [
-      "16-casos-cl-nicos-comentados",
-      "16. Casos clínicos comentados"
-    ],
-    [
-      "17-quest-es-autorais-comentadas-resid-ncia-enamed",
-      "17. Questões autorais comentadas — residência/ENAMED"
-    ],
-    [
-      "18-resumo-de-alto-rendimento-e-armadilhas",
-      "18. Resumo de alto rendimento e armadilhas"
-    ],
-    [
-      "19-imagens-candidatas-curadoria-sem-publica-o-autom-tica",
-      "19. Imagens candidatas — curadoria sem publicação automática"
-    ],
-    [
-      "20-refer-ncias-verific-veis-e-diferen-as-de-fonte",
-      "20. Referências verificáveis e diferenças de fonte"
-    ],
-    [
-      "21-auditoria-final-desta-vers-o-n-o-certificar",
-      "21. Auditoria final desta versão — não certificar"
-    ],
-    [
-      "estadiamento-cirurgico-figo-2023-e-classificacao-molecular",
-      "Classificação Molecular do Câncer de Endométrio (TCGA) e Atualizações do Estadiamento FIGO 2023"
+      "10. Tratamento cirúrgico: operação proporcional ao risco"
     ],
     [
       "complemento-avancado-especializado",
-      "Complemento de Oncologia Ginecológica: Estratificação Molecular FIGO 2023, Testagem Universal de Lynch e Mapeamento de Linfonodo Sentinela"
+      "11. Perfis moleculares e linfonodo sentinela — decisões cirúrgicas"
     ],
     [
-      "complemento-especializado-fase2",
-      "Abordagem Cirúrgica Robótica, Preservação de Fertilidade e Terapia Sistêmica em Doença Metastática"
+      "10-adjuv-ncia-por-que-nem-toda-paciente-recebe-radioterapia-quimioterapia",
+      "12. Adjuvância: por que nem toda paciente recebe radioterapia/quimioterapia?"
     ],
     [
       "complemento-final-especializado",
-      "Estratégias de Radioterapia Adjuvante, Tratamento de Recidivas Locorregionais e Toxicidades Tardias"
+      "13. Estratégias de Radioterapia Adjuvante, Tratamento de Recidivas Locorregionais e Toxicidades Tardias"
+    ],
+    [
+      "11-doen-a-avan-ada-ou-recorrente-e-tratamento-sist-mico",
+      "14. Doença avançada ou recorrente e tratamento sistêmico"
+    ],
+    [
+      "12-preserva-o-da-fertilidade-exce-o-planejada-n-o-alternativa-casual",
+      "15. Preservação da fertilidade: exceção planejada, não alternativa casual"
+    ],
+    [
+      "complemento-especializado-fase2",
+      "16. Preservação reprodutiva e tratamento sistêmico — critérios de segurança"
+    ],
+    [
+      "13-lynch-e-gen-tica-o-que-perguntar-e-quando-encaminhar",
+      "17. Lynch e genética: o que perguntar e quando encaminhar"
     ],
     [
       "complemento-micro-normativo",
-      "Síndromes Hereditárias Associadas ao Câncer Endometrial: Critérios de Amsterdam II e Bethesda"
+      "18. Lynch — testagem tumoral, risco hereditário e limites de critérios familiares"
     ],
     [
       "estrategia-rastreamento-linch",
-      "Protocolos de Triagem em Síndromes Familiares e Vigilância Ginecológica"
+      "19. Protocolos de Triagem em Síndromes Familiares e Vigilância Ginecológica"
+    ],
+    [
+      "14-seguimento-qualidade-de-vida-e-progn-stico",
+      "20. Seguimento, qualidade de vida e prognóstico"
+    ],
+    [
+      "15-fluxogramas-textuais-luria",
+      "21. Fluxos de decisão clínica — três caminhos de alto rendimento"
+    ],
+    [
+      "16-casos-cl-nicos-comentados",
+      "22. Casos clínicos comentados"
+    ],
+    [
+      "17-quest-es-autorais-comentadas-resid-ncia-enamed",
+      "23. Questões autorais comentadas — residência/ENAMED"
+    ],
+    [
+      "18-resumo-de-alto-rendimento-e-armadilhas",
+      "24. O que não posso esquecer — revisão de alto rendimento"
+    ],
+    [
+      "20-refer-ncias-verific-veis-e-diferen-as-de-fonte",
+      "Referências e hierarquia das evidências"
     ]
   ],
   "q": [
@@ -142,49 +130,19 @@
       [
         [
           "2",
-          "Introdução e Fundamentos"
+          "Em 30 segundos — o essencial"
         ],
         [
           "p",
-          "<h1>LURIA | Aula 179 — Câncer de endométrio: do sangramento ao tratamento orientado por risco</h1>"
+          "<strong>Em 30 segundos:</strong> sangramento após a menopausa exige investigação; a <strong>biópsia endometrial</strong> estabelece diagnóstico de carcinoma. Após confirmação, histologia, profundidade de invasão, LVSI, linfonodos e perfil <strong>POLE / MMR / p53 / NSMP</strong> orientam a avaliação de risco. O tratamento costuma ser cirúrgico quando operável, porém extensão nodal, adjuvância e tratamento sistêmico devem ser individualizados por equipe de oncoginecologia."
         ],
         [
           "p",
-          "<strong>Lote curricular:</strong> 08 — tema 179/260  <br><strong>Área:</strong> Ginecologia e Obstetrícia / Oncoginecologia / Cirurgia Geral  <br><strong>Versão:</strong> rascunho autoral 01, 14/10/2026  <br><strong>Estado:</strong> EM PRODUÇÃO, NÃO CERTIFICADO. Não publicar no catálogo, não converter automaticamente em prescrição, não realizar merge nem deploy antes da auditoria médica/editorial."
+          "<strong>Hierarquia para o Brasil:</strong> <a href=\"https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude\" target=\"_blank\" rel=\"noopener noreferrer\">INCA</a>, <a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2026/manual-de-atencao-as-mulheres-na-transicao-menopausal-e-menopausa.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde, manual 2026</a> e <a href=\"https://femina.org.br/article/hiperplasia-endometrial/\" target=\"_blank\" rel=\"noopener noreferrer\">FEBRASGO (Femina 2025)</a> orientam reconhecimento e investigação; <a href=\"https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Patologia, manual 2026</a> fundamenta o laudo e a classificação; <a href=\"https://imunotox.sboc.org.br/diretrizes-publicas-categorias/2026/\" target=\"_blank\" rel=\"noopener noreferrer\">SBOC, Diretrizes de tratamentos oncológicos 2026</a> complementa decisões terapêuticas na realidade brasileira. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10482588/\" target=\"_blank\" rel=\"noopener noreferrer\">FIGO 2023</a>, <a href=\"https://pubmed.ncbi.nlm.nih.gov/40744042/\" target=\"_blank\" rel=\"noopener noreferrer\">ESGO–ESTRO–ESP 2025</a> e <a href=\"https://doi.org/10.1097/AOG.0000000000006275\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG 2026</a> são fontes internacionais complementares e não significam incorporação automática ao SUS."
         ],
         [
           "p",
           "> <strong>Pulo do Gato LURIA:</strong> o sinal cardinal é o sangramento uterino anormal, sobretudo o sangramento após a menopausa. O diagnóstico é histológico; a ultrassonografia estratifica e localiza, mas não substitui a amostragem endometrial quando indicada. Depois de confirmar câncer, a conduta depende não apenas de estádio e grau, mas também de <strong>POLE, MMR, p53 e NSMP</strong>. Um tumor pequeno de biologia agressiva pode exigir conduta mais intensa do que outro anatomicamente semelhante."
-        ]
-      ]
-    ],
-    [
-      "etapa-zero-auditoria-da-base-compara-o-com-drive-e-atualiza-o-cient-fica",
-      0,
-      [
-        [
-          "2",
-          "Etapa zero — auditoria da base, comparação com Drive e atualização científica"
-        ],
-        [
-          "p",
-          "<strong>Acervo LURIA:</strong> não foi identificada, na listagem da pasta apostilas da branch main em 14/10/2026, uma apostila própria denominada câncer de endométrio. Existem apostilas relacionadas de sangramento uterino anormal, síndrome ovariana metabólica/poliendócrina e climatério, a preservar e não duplicar."
-        ],
-        [
-          "p",
-          "<strong>Material comparativo aberto e lido no Drive:</strong> “02 - CANCER DE ENDOMETRIO.pdf”, resumo de aproximadamente 9,6 mil caracteres extraídos, com epidemiologia, hiperplasia, sangramento pós-menopausa, biópsia, FIGO 2023 e tratamentos. Contém referência textual à plataforma Medicina Livre; autoria institucional como Estratégia MED <strong>não foi comprovada</strong>. A leitura foi usada somente como benchmark de amplitude e identificação de armadilhas, sem copiar redação, ilustrações, tabelas ou sequência editorial."
-        ],
-        [
-          "p",
-          "<strong>Pontos do resumo comparativo que exigem correção crítica:</strong> apresenta POLE como pior prognóstico em ordem invertida em trecho de classificação; a classificação molecular atual reconhece <strong>POLE patogênico geralmente favorável</strong> e <strong>p53 anormal de pior risco</strong>. Aplica algoritmo de sangramento pós-menopausa anterior à atualização <strong>ACOG de abril de 2026</strong>, que recomenda ultrassonografia transvaginal associada a amostragem tecidual inicial na maioria dos casos. Também simplifica linfadenectomia como procedimento universal em grupos extensos, sem incorporar adequadamente biópsia de linfonodo sentinela e mapeamento conforme risco. A indicação de histerectomia radical exclusivamente por comprometimento cervical não é regra automática em recomendações modernas. O rascunho autoral prioriza diretrizes FIGO 2023, ESGO–ESTRO–ESP 2025, INCA brasileiro e ACOG 2026."
-        ],
-        [
-          "3",
-          "Objetivos de aprendizagem"
-        ],
-        [
-          "p",
-          "Ao terminar, o aluno deverá: reconhecer fatores de risco e sintomatologia; compreender efeito do estrogênio não contraposto e as vias moleculares de carcinogênese; diferenciar causas benignas de sangramento; decidir sobre US, biópsia ambulatorial e histeroscopia; interpretar alterações histológicas e classificação molecular; distinguir hiperplasia sem atipia, neoplasia intraepitelial endometrial (EIN)/hiperplasia atípica e câncer invasivo; resumir FIGO 2023 e risco adjuvante; explicar cirurgia, linfonodo sentinela, preservação de fertilidade em casos rigorosamente selecionados, radioterapia, quimioterapia e opções sistêmicas avançadas; reconhecer repercussões psicossociais e orientar seguimento."
         ]
       ]
     ],
@@ -294,12 +252,69 @@
       ]
     ],
     [
+      "estadiamento-cirurgico-figo-2023-e-classificacao-molecular",
+      0,
+      [
+        [
+          "2",
+          "4. Classificação molecular aplicada — quando muda o risco"
+        ],
+        [
+          "p",
+          "O estadiamento contemporâneo exige correlação de anatomia, histologia, extensão tumoral, LVSI, linfonodos e perfil molecular, em vez de ser descrito como processo <strong>estritamente cirúrgico</strong>. Quando operável, a cirurgia frequentemente inclui histerectomia total e salpingo-ooforectomia bilateral com avaliação nodal <strong>conforme risco e técnica disponível</strong>. O mapeamento de linfonodo sentinela com verde de indocianina pode reduzir morbidade comparado a linfadenectomia sistemática em pacientes selecionadas, mas não é procedimento obrigatório ou substituto universal de toda estratégia nodal. Fontes: <a href=\"https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Patologia 2026</a>; <a href=\"https://pubmed.ncbi.nlm.nih.gov/40744042/\" target=\"_blank\" rel=\"noopener noreferrer\">ESGO 2025</a>."
+        ],
+        [
+          "p",
+          "Historicamente, os carcinomas de endométrio eram divididos no modelo dual de Bokhman: <strong>Tipo I (Endometrioide)</strong> — correspondendo a 80% dos casos, associado a hiperestrogenismo sem oposição progestagênica, obesidade, síndrome metabólica, receptores hormonais positivos, mutações no gene PTEN e excelente sobrevida global; e <strong>Tipo II (Não Endometrioide)</strong> — incluindo carcinomas serosos e de células claras, associados a atrofia endometrial prévia, idade avançada, mutações no gene TP53, comportamento altamente agressivo e padrão de disseminação peritoneal semelhante ao câncer de ovário."
+        ],
+        [
+          "p",
+          "A incorporação da <strong>Classificação Molecular do TCGA (The Cancer Genome Atlas)</strong>, agora integrada formalmente ao estadiamento <strong>FIGO 2023</strong>, divide os tumores em quatro grupos prognósticos independentes:"
+        ],
+        [
+          "t",
+          [
+            "Subgrupo Molecular (TCGA)",
+            "Alteração Genética Chave",
+            "Prognóstico e Implicações Terapêuticas"
+          ],
+          [
+            [
+              "<strong>POLE ultramutado (POLEmut)</strong>",
+              "Mutações no domínio exonucleásico da DNA polimerase epsilon (POLE)",
+              "Prognóstico frequentemente favorável em estágios apropriados; a desintensificação adjuvante deve respeitar estádio, critérios da variante POLE e estratificação multiparamétrica."
+            ],
+            [
+              "<strong>Instabilidade de Microssatélites (MSI-H / dMMR)</strong>",
+              "Deficiência das proteínas de reparo do DNA (MLH1, MSH2, MSH6, PMS2)",
+              "Perfil MMR-deficiente. Indica triagem para síndrome de Lynch, sem inferir que todos os casos são hereditários. Pode orientar terapias anti-PD-1 em cenários indicados de doença avançada/recorrente."
+            ],
+            [
+              "<strong>Copy Number Low (NSMP - No Specific Molecular Profile)</strong>",
+              "Sem mutações POLE, sem dMMR e sem mutação em TP53",
+              "Risco heterogêneo. Histologia, grau, invasão, LVSI e expressão hormonal ajudam a definir necessidade de tratamento; não equivale automaticamente à indicação de hormonioterapia adjuvante."
+            ],
+            [
+              "<strong>Copy Number High (p53 anormal / p53abn)</strong>",
+              "Mutações missense ou nulas no gene supressor tumoral TP53",
+              "Frequentemente risco mais elevado, mas não autoriza quimioterapia e radioterapia obrigatórias em todos os casos: integrar estádio anatômico, extensão, cenário clínico e protocolos."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Importante — FIGO 2023:</strong> o perfil molecular altera certos subestádios iniciais (por exemplo <strong>IAm_POLEmut</strong> e <strong>IICm_p53abn</strong>) quando os critérios de extensão são satisfeitos. Isso <strong>não eleva automaticamente todo tumor p53abn a doença avançada</strong> nem transforma tratamento sistêmico adjuvante em obrigação indiscriminada. São decisões distintas: classificação FIGO, grupo de risco clínico-molecular e conduta da equipe oncológica, conforme <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10482588/\" target=\"_blank\" rel=\"noopener noreferrer\">FIGO 2023</a> e <a href=\"https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/\" target=\"_blank\" rel=\"noopener noreferrer\">protocolo brasileiro 2026</a>."
+        ]
+      ]
+    ],
+    [
       "4-quadro-cl-nico-e-diagn-sticos-diferenciais",
       0,
       [
         [
           "2",
-          "4. Quadro clínico e diagnósticos diferenciais"
+          "5. Quadro clínico e diagnósticos diferenciais"
         ],
         [
           "p",
@@ -371,15 +386,15 @@
       [
         [
           "2",
-          "5. Abordagem inicial: antes e depois da atualização ACOG 2026"
+          "6. Sangramento pós-menopausa — abordagem brasileira e comparação ACOG"
         ],
         [
           "p",
-          "A abordagem clássica ensinava que, em <strong>primeiro episódio de sangramento pós-menopausa com baixo risco</strong>, uma ultrassonografia transvaginal com endométrio uniforme de até 4 mm tinha valor preditivo negativo muito alto e podia dispensar amostragem imediata em cenários selecionados. Essa orientação ainda pode aparecer em provas ou protocolos locais antigos, e ajuda a explicar o raciocínio histórico."
+          "<strong>Prioridade brasileira:</strong> <a href=\"https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude\" target=\"_blank\" rel=\"noopener noreferrer\">INCA</a>, <a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2026/manual-de-atencao-as-mulheres-na-transicao-menopausal-e-menopausa.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde, 2026</a> e <a href=\"https://femina.org.br/article/hiperplasia-endometrial/\" target=\"_blank\" rel=\"noopener noreferrer\">FEBRASGO, 2025</a> recomendam avaliar sangramento pós-menopausa com história, exame ginecológico, ultrassonografia e amostragem histológica quando indicada. <strong>O documento FEBRASGO 2025 apresenta duas orientações:</strong> o corpo do texto ressalta biópsia diante de suspeita de hiperplasia/câncer; as recomendações finais aceitam observar um primeiro episódio único de baixo risco com endométrio regular menor que 4 mm, exigindo biópsia se sangramento recorrer. Essa diferença não deve ser escondida. A espessura isolada não exclui câncer quando há recorrência, risco elevado, lesão focal ou visualização inadequada."
         ],
         [
           "p",
-          "<strong>ATUALIZAÇÃO CRÍTICA (16 de abril de 2026):</strong> a ACOG divulgou revisão recomendando <strong>combinação de ultrassonografia transvaginal com amostragem endometrial na avaliação inicial da maioria das pacientes com sangramento pós-menopausa</strong>, modificando o enfoque anterior de US isolada como primeira abordagem quando espessura ≤4 mm. Essa distinção deve ser explicitada em materiais de 2026. Não afirmar que o ponto de corte 4 mm foi abolido como informação ultrassonográfica; ele continua descritivo e potencialmente útil, mas não substitui automaticamente o componente tecidual no novo esquema da ACOG. Confrontar disponibilidade e normas nacionais antes da implementação brasileira."
+          "<strong>Comparação internacional — ACOG 2026:</strong> na maioria das pacientes com sangramento pós-menopausa, recomenda ultrassonografia transvaginal <strong>associada à amostragem endometrial na avaliação inicial</strong>. Dispensa inicial de biópsia cabe somente em episódio único, endométrio completamente visualizado ≤4 mm, ausência de alto risco e seguimento rápido garantido. Essa atualização reforça a investigação histológica, mas <strong>não substitui automaticamente o fluxo brasileiro</strong>. Fonte: <a href=\"https://doi.org/10.1097/AOG.0000000000006275\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG 2026</a>."
         ],
         [
           "p",
@@ -404,6 +419,64 @@
         [
           "p",
           "<strong>Biópsia insuficiente</strong> não é biópsia negativa. A conduta depende de risco, persistência do sangramento, qualidade do US e possibilidade de lesão focal. <strong>Biópsia negativa em sangramento que continua</strong> exige nova avaliação, especialmente por histeroscopia e amostra dirigida quando apropriado."
+        ],
+        [
+          "3",
+          "O caso que parece simples — mas exige duas perguntas diferentes"
+        ],
+        [
+          "p",
+          "<strong>Primeira pergunta: existe um sangramento que precisa ser explicado?</strong> Sim, sempre que há perda vaginal após a menopausa, mesmo discreta. A maioria das causas não é câncer; atrofia, pólipo e efeitos hormonais são frequentes. Contudo, ausência de dor e pequena quantidade não oferecem segurança diagnóstica. A investigação começa confirmando origem genital pelo exame especular, avaliando estabilidade, anemia, medicamentos, antecedentes ginecológicos e risco individual. Não confundir rastreamento de pessoa assintomática — não recomendado para população geral pelo INCA — com investigação de sintoma, que é necessária."
+        ],
+        [
+          "p",
+          "<strong>Segunda pergunta: o que o ultrassom realmente consegue excluir?</strong> A espessura endometrial mede uma interface, não fornece histologia. Em primeira apresentação de baixo risco, endométrio fino e regular reduz probabilidade de carcinoma endometrioide típico; esse resultado não garante ausência de tumor focal ou seroso, nem é confiável se a imagem é inadequada. Em sangramento persistente, alteração focal, tamoxifeno e fatores de risco, a biópsia e eventualmente a histeroscopia dirigida tornam-se centrais. O exame negativo deve ser interpretado junto com sua representatividade: amostra escassa ou atrofia em peça obtida às cegas não encerra a investigação de lesão focal discordante."
+        ],
+        [
+          "t",
+          [
+            "Cenário",
+            "Principal armadilha",
+            "Pergunta útil",
+            "Próxima decisão"
+          ],
+          [
+            [
+              "<strong>Primeiro episódio, eco fino e baixo risco</strong>",
+              "Transformar 4 mm em garantia absoluta",
+              "A cavidade foi completamente vista? Há risco e retorno garantido?",
+              "Compartilhar decisão conforme FEBRASGO e protocolo; documentar alarme e seguimento"
+            ],
+            [
+              "<strong>Sangramento recorrente, eco 3 mm</strong>",
+              "Alta definitiva porque o eco é fino",
+              "Por que o sangramento continua?",
+              "Investigar endométrio e considerar biópsia, mesmo com eco reduzido"
+            ],
+            [
+              "<strong>Imagem focal/pólipo</strong>",
+              "Considerar pipelle negativa como exclusão da lesão",
+              "A área focal foi efetivamente amostrada?",
+              "Avaliar histeroscopia com amostra dirigida"
+            ],
+            [
+              "<strong>Espessura não mensurável</strong>",
+              "Escrever resultado normal apesar de medida ausente",
+              "Mioma, distorção de cavidade ou técnica impedem avaliação?",
+              "Completar propedêutica, guiada por risco e persistência"
+            ],
+            [
+              "<strong>Hemorragia importante</strong>",
+              "Debater espessura antes de estabilizar",
+              "Há hipoperfusão, anemia ou necessidade de transfusão?",
+              "Estabilização e controle de sangramento; investigar causa após segurança"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Pulo do Gato:</strong> a régua de <strong>4 mm</strong> ajuda a estratificar, mas a decisão é sobre o conjunto <em>episódio + persistência + risco + qualidade da imagem + representatividade da biópsia</em>. A <a href=\"https://femina.org.br/article/hiperplasia-endometrial/\" target=\"_blank\" rel=\"noopener noreferrer\">FEBRASGO 2025</a> inclui formulações distintas sobre episódio único com eco fino; o <a href=\"https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude\" target=\"_blank\" rel=\"noopener noreferrer\">INCA</a> enfatiza diagnóstico precoce pela investigação dos sintomas."
         ]
       ]
     ],
@@ -413,7 +486,7 @@
       [
         [
           "2",
-          "6. Hiperplasia endometrial e EIN: a fronteira com câncer"
+          "7. Hiperplasia endometrial e EIN: a fronteira com câncer"
         ],
         [
           "p",
@@ -435,7 +508,7 @@
       [
         [
           "2",
-          "7. Confirmou câncer: que informações devem estar no laudo?"
+          "8. Confirmou câncer: que informações devem estar no laudo?"
         ],
         [
           "p",
@@ -457,19 +530,92 @@
       [
         [
           "2",
-          "8. FIGO 2023: mapa didático que integra anatomia e biologia"
+          "9. FIGO 2023: mapa didático que integra anatomia e biologia"
         ],
         [
           "p",
-          "O estadiamento de 2023 considera não apenas a profundidade da invasão e localização, mas <strong>tipo histológico, LVSI e perfil molecular</strong>, conforme aplicável. O detalhamento completo pode ser consultado nas tabelas oficiais, mas o estudante deve dominar a lógica:<br><li><strong>Estádio I:</strong> doença confinada ao corpo uterino em condições definidas pela histologia, profundidade e características; IA1 é lesão não agressiva limitada a pólipo/endométrio, IA2 inclui invasão superficial <50% sem LVSI substancial, IA3 é situação muito específica de câncer endometrioide de baixo grau com acometimento ovariano concomitante e critérios restritos; IB representa invasão miometrial ≥50% sem LVSI substancial em tipo não agressivo; IC inclui histologia agressiva sem invasão miometrial.</li><br><li><strong>Estádio II:</strong> envolvimento estromal cervical para tumor não agressivo, LVSI substancial em contexto definido, ou histologia agressiva com invasão miometrial.</li><br><li><strong>Estádio III:</strong> extensão locorregional, como serosa/anexos, vagina/paramétrios, peritônio pélvico ou linfonodos regionais; subcategorias incluem micro e macrometástases linfonodais.</li><br><li><strong>Estádio IV:</strong> invasão da mucosa de órgãos adjacentes, disseminação peritoneal extrapelviana e/ou metástases à distância de acordo com subestádio.</li>"
+          "<strong>FIGO 2023:</strong> estadiamento histopatológico integrado com histologia, extensão anatômica, <strong>invasão linfovascular (LVSI)</strong> e, quando disponível, classificação molecular. <strong>IA1:</strong> subtipo não agressivo restrito ao endométrio/pólipo; <strong>IA2:</strong> invasão miometrial &lt;50% e LVSI ausente/focal; <strong>IA3:</strong> tumor endometrioide de baixo grau com envolvimento ovariano síncrono <em>somente se preenchidos critérios específicos</em>; <strong>IB:</strong> invasão ≥50% em subtipo não agressivo sem LVSI substancial; <strong>IC:</strong> histologia agressiva limitada ao endométrio/pólipo; <strong>IIA/B/C:</strong> estroma cervical, LVSI substancial ou subtipo agressivo com invasão miometrial, respectivamente; <strong>III:</strong> disseminação locorregional; <strong>IVA:</strong> invasão de mucosa vesical/intestinal; <strong>IVB:</strong> metástases peritoneais além da pelve; <strong>IVC:</strong> metástases a distância (por exemplo pulmão, fígado ou linfonodos inguinais), conforme <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10482588/\" target=\"_blank\" rel=\"noopener noreferrer\">classificação FIGO 2023</a> e <a href=\"https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/\" target=\"_blank\" rel=\"noopener noreferrer\">manual brasileiro de patologia</a>."
         ],
         [
           "p",
-          "<strong>Modificadores moleculares em estádios iniciais:</strong> tumor com variante patogênica POLE e critérios de doença uterina definidos pode ser classificado como <strong>IAm_POLEmut</strong>; p53abn com invasão miometrial nos cenários previstos modifica o estádio para <strong>IICm_p53abn</strong>. MMRd e NSMP também devem ser reportados, mas não modificam estádios iniciais da mesma forma. A presença de múltiplos classificadores exige aplicar algoritmo internacional, e não selecionar a anormalidade de pior aparência isoladamente."
+          "<strong>Modificadores moleculares:</strong> doença de extensão apropriada com variante <strong>POLE patogênica</strong> pode ser categorizada como <strong>IAm_POLEmut</strong> e casos com <strong>p53abn e invasão miometrial</strong> como <strong>IICm_p53abn</strong>, respeitando os critérios FIGO 2023. <strong>Nem toda imunoexpressão anormal de p53 obriga estádio III/IV ou quimiorradioterapia</strong>; distinguir estádio, grupo de risco e indicação terapêutica. MMRd e NSMP precisam constar do laudo e ajudam a definir prognóstico. Fonte: <a href=\"https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/\" target=\"_blank\" rel=\"noopener noreferrer\">SBPato 2026</a>; <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10482588/\" target=\"_blank\" rel=\"noopener noreferrer\">FIGO 2023</a>."
         ],
         [
           "p",
           "<strong>Alertas sobre o estadiamento:</strong> “invasão miometrial de 49%” e “51%” não bastam para prever adjuvância se LVSI, histologia e perfil molecular diferem. Estádio anatômico e grupo de risco adjuvante são conceitos relacionados, porém não equivalentes."
+        ],
+        [
+          "3",
+          "Aprenda o FIGO 2023 como mapa, não como uma lista de números"
+        ],
+        [
+          "p",
+          "A base anatômica descreve até onde o tumor se estende: endométrio, miométrio, colo, serosa, anexos, vagina, peritônio pélvico, linfonodos e doença a distância. O FIGO 2023 adicionou o comportamento biológico da histologia e a invasão linfovascular; quando os testes estão disponíveis, a classificação molecular pode alterar determinados subestádios iniciais. Para o aluno, a ordem de raciocínio é: <strong>localização → tipo histológico → porcentagem de invasão → LVSI → extensão locorregional → molecular</strong>. Um achado de ovário não significa automaticamente estádio IIIA se preencher os requisitos estritos do IA3; uma micrometástase nodal não deve ser descrita como célula tumoral isolada."
+        ],
+        [
+          "t",
+          [
+            "Achado",
+            "Interpretação FIGO 2023 (síntese)",
+            "Por que importa na prova"
+          ],
+          [
+            [
+              "Não agressivo, sem invasão miometrial",
+              "IA1",
+              "Tumor limitado a pólipo/endométrio não equivale a doença invasiva profunda"
+            ],
+            [
+              "Não agressivo, miométrio <50%, LVSI ausente/focal",
+              "IA2",
+              "A profundidade isolada não basta: LVSI pode alterar categoria"
+            ],
+            [
+              "Endometrioide G1/G2, útero e ovário sob critérios estritos",
+              "IA3",
+              "Exceção específica para comprometimento ovariano concomitante"
+            ],
+            [
+              "Não agressivo, miométrio ≥50%, LVSI ausente/focal",
+              "IB",
+              "O ponto de corte é metade do miométrio, inclusive 50%"
+            ],
+            [
+              "Histologia agressiva limitada ao endométrio/pólipo",
+              "IC",
+              "Sem invasão miometrial não significa baixo risco histológico"
+            ],
+            [
+              "Invasão cervical / LVSI substancial / agressivo com invasão",
+              "IIA / IIB / IIC, respectivamente",
+              "Três mecanismos diferentes explicam estágio II"
+            ],
+            [
+              "Linfonodo pélvico / para-aórtico positivo",
+              "IIIC1 / IIIC2 (com i/ii por tamanho)",
+              "Região do linfonodo e tamanho do depósito alteram a notação"
+            ],
+            [
+              "Mucosa vesical ou intestinal",
+              "IVA",
+              "Invasão da mucosa, não mera aderência ou contato"
+            ],
+            [
+              "Metástase peritoneal extrapélvica",
+              "IVB",
+              "Peritônio abdominal além da pelve não é automaticamente IVC"
+            ],
+            [
+              "Pulmão, fígado ou outro sítio distante",
+              "IVC",
+              "Separar disseminação à distância de doença peritoneal extrapélvica"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Exemplo comentado:</strong> uma paciente com tumor endometrioide G1 e invasão miometrial de 45%, sem LVSI significativa, sugere IA2 na ausência de outras extensões; a mesma profundidade com LVSI substancial muda o raciocínio. Se houver p53abn, avaliar os critérios específicos de IICm; se POLE for patogênica, verificar a categoria IAm aplicável. <strong>O estádio FIGO não é uma ordem automática de quimioterapia.</strong> O <a href=\"https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/\" target=\"_blank\" rel=\"noopener noreferrer\">manual brasileiro de patologia 2026</a> e a <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10482588/\" target=\"_blank\" rel=\"noopener noreferrer\">FIGO 2023</a> devem ser consultados em casos limítrofes."
         ]
       ]
     ],
@@ -479,7 +625,7 @@
       [
         [
           "2",
-          "9. Tratamento cirúrgico: operação proporcional ao risco"
+          "10. Tratamento cirúrgico: operação proporcional ao risco"
         ],
         [
           "p",
@@ -508,12 +654,82 @@
       ]
     ],
     [
+      "complemento-avancado-especializado",
+      0,
+      [
+        [
+          "2",
+          "11. Perfis moleculares e linfonodo sentinela — decisões cirúrgicas"
+        ],
+        [
+          "3",
+          "1. Revolução Molecular FIGO 2023 e Implicações Terapêuticas Diretas"
+        ],
+        [
+          "p",
+          "A classificação molecular (POLEmut, MMRd, NSMP e p53abn) aperfeiçoa a avaliação anatômico-patológica e, em determinados casos, muda a classificação FIGO 2023. <strong>Histologia e biologia não competem:</strong> grau, invasão miometrial, LVSI, linfonodos, extensão extrauterina e biomarcadores são interpretados em conjunto. Nenhum marcador isolado deve ser apresentado como receita terapêutica universal."
+        ],
+        [
+          "t",
+          [
+            "Subgrupo Molecular FIGO 2023",
+            "Assinatura Genômica / Biomarcador",
+            "Comportamento Biológico e Prognóstico",
+            "Conduta Terapêutica de Escolha"
+          ],
+          [
+            [
+              "<strong>POLE ultramutado (POLEmut)</strong>",
+              "Mutações no domínio catalítico da exonuclease da DNA polimerase epsilon (POLE). Exibe carga mutacional tumoral (TMB) extraordinariamente elevada.",
+              "<strong>Excelente prognóstico clínico</strong>, com sobrevida livre de progressão superior a 95%, mesmo em tumores morfologicamente indiferenciados (G3) ou com invasão miometrial profunda.",
+              "Pode permitir discussão de desintensificação adjuvante em doença inicial de baixo risco molecular, conforme estádio e elegibilidade; não prometer dispensa universal de radioterapia ou quimioterapia em todos os graus."
+            ],
+            [
+              "<strong>Deficiência do Mismatch Repair (dMMR / MSI-H)</strong>",
+              "Perda de expressão imuno-histoquímica das proteínas de reparo de DNA (MLH1, PMS2, MSH2 ou MSH6) ou hipermetilação epigenética do promotor de MLH1.",
+              "Prognóstico intermediário. Frequente apresentação com infiltrado inflamatório linfocítico peritumoral abundante e invasão de espaço linfovascular.",
+              "Encaminha investigação reflexa de Lynch após avaliação de metilação MLH1 quando aplicável; anti-PD-1 pode ser considerado conforme indicação, linha e acesso em doença avançada/recidivada."
+            ],
+            [
+              "<strong>Sem Perfil Molecular Específico (NSMP / p53wt)</strong>",
+              "Expressão intacta / normal de p53 à imuno-histoquímica; genes de MMR íntegros (pMMR); ausência de mutação no gene POLE.",
+              "Prognóstico intermediário, correlacionado rigorosamente a fatores histopatológicos tradicionais (grau de diferenciação, infiltração do estroma cervical e invasão linfovascular).",
+              "O status hormonal pode orientar tratamento hormonal de doença avançada selecionada; não presumir braquiterapia ou progestagênio para todo NSMP."
+            ],
+            [
+              "<strong>p53 anormal (p53abn)</strong>",
+              "Expressão aberrante difusa de p53 (mutant pattern: superexpressão nuclear em > 80% das células ou perda total completa de sinal 'null pattern').",
+              "<strong>Pior prognóstico oncológico</strong>. Altíssima propensão a disseminação peritoneal, carcinomatose e metástases linfonodais e a distância.",
+              "É marcador de risco relevante e pode motivar intensificação em grupos apropriados; definição de adjuvância depende do conjunto histomolecular, FIGO, ressecção e recomendações."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "2. Técnica e Vantagens do Mapeamento do Linfonodo Sentinela (SLN) com ICG"
+        ],
+        [
+          "p",
+          "O algoritmo contemporâneo de cirurgia ginecológica oncológica adotou amplamente o mapeamento do Linfonodo Sentinela (SLN) guiado por fluorescência com <strong>Verde de Indocianina (ICG)</strong> para estadiamento inicial de pacientes com doença clinicamente limitada ao corpo uterino:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Técnica em centro habilitado:</strong> injeção cervical de verde de indocianina para mapeamento linfático com parâmetros de volume, concentração e pontos de aplicação definidos por protocolo e experiência do cirurgião. Técnica não deve ser reproduzida sem treinamento e checagem local.",
+            "<strong>Protocolo de Ultrastadiamento Anatomopatológico:</strong> Os linfonodos sentinelas identificados e ressecados são encaminhados a protocolo histológico específico, com cortes histológicos micrométricos seriados e pesquisa imuno-histoquímica automatizada para citoqueratinas (anti-pan-CK). Esse processo permite a identificação acurada de <strong>micrometástases</strong> (lesões entre 0,2 e 2,0 mm) e de <strong>células tumorais isoladas (ITCs < 0,2 mm)</strong>, que passariam despercebidas no exame anatomopatológico convencional por hematoxilina-eosina de rotina.",
+            "<strong>Morbidade:</strong> em pacientes selecionadas, o sentinela pode evitar linfadenectomia extensa e diminuir risco de linfedema/linfocele. A concordância diagnóstica e a necessidade de completar avaliação nodal dependem do algoritmo, do sucesso bilateral do mapeamento, de achados suspeitos e da histologia; não prometer sobrevida idêntica em todos os cenários."
+          ]
+        ]
+      ]
+    ],
+    [
       "10-adjuv-ncia-por-que-nem-toda-paciente-recebe-radioterapia-quimioterapia",
       0,
       [
         [
           "2",
-          "10. Adjuvância: por que nem toda paciente recebe radioterapia/quimioterapia?"
+          "12. Adjuvância: por que nem toda paciente recebe radioterapia/quimioterapia?"
         ],
         [
           "p",
@@ -522,6 +738,147 @@
         [
           "p",
           "A mutação patogênica de POLE em contexto apropriado pode justificar deintensificação adjuvante; p53abn, certos tipos histológicos e doença nodal podem aumentar necessidade de abordagem intensificada. Entretanto, nenhuma biomarcação substitui avaliação individual nem legitima aplicar fórmula única de tratamento. A diretriz ESGO–ESTRO–ESP 2025 contém algoritmos estratificados por grupos clínico-moleculares e deve ser revisada por oncoginecologia antes de a apostila se tornar prescricional."
+        ],
+        [
+          "3",
+          "O que muda entre observar, irradiar a cúpula e tratar sistemicamente?"
+        ],
+        [
+          "p",
+          "A adjuvância busca reduzir recidivas depois da cirurgia, mas cada modalidade protege contra riscos diferentes: a braquiterapia vaginal concentra dose no local onde algumas recidivas ocorrem; a radioterapia externa aborda maior volume pélvico; a quimioterapia trata risco sistêmico; combinações podem ter papel conforme categoria e evidência. Portanto, não somar tratamentos como se toda modalidade acrescentasse benefício independente em qualquer paciente. O grupo multidisciplinar precisa relacionar benefício absoluto esperado, probabilidade de recidiva, estágio, margens, LVSI, histologia, grau, categoria molecular, comorbidades e toxicidade."
+        ],
+        [
+          "t",
+          [
+            "Perfil após cirurgia",
+            "Pergunta para a equipe",
+            "Possíveis estratégias (não prescrição universal)"
+          ],
+          [
+            [
+              "Baixo risco integrado",
+              "Qual a chance real de recorrência sem tratamento adicional?",
+              "Observação clínica pode ser suficiente"
+            ],
+            [
+              "Risco concentrado em cúpula vaginal",
+              "É possível reduzir falha vaginal com baixa toxicidade?",
+              "Braquiterapia vaginal em pacientes selecionadas"
+            ],
+            [
+              "Maior risco locorregional",
+              "Há fatores para recidiva pélvica além da cúpula?",
+              "Avaliar radioterapia pélvica e/ou outras modalidades conforme grupo"
+            ],
+            [
+              "Alto risco de doença distante ou nodal",
+              "Qual o benefício adicional de controle sistêmico?",
+              "Quimioterapia ou estratégias sistêmicas, eventualmente combinadas com radioterapia"
+            ],
+            [
+              "POLEmut patogênico, contexto apropriado",
+              "Biologia favorável permite menos tratamento sem perder eficácia?",
+              "Considerar desintensificação somente se elegível pelas regras específicas"
+            ],
+            [
+              "p53abn ou histologia agressiva",
+              "Há indicação de intensificar frente ao estádio e patologia final?",
+              "Discutir terapia adjuvante conforme risco; biomarcador isolado não torna tudo obrigatório"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Caso didático:</strong> duas pessoas estão no mesmo estádio cirúrgico. A primeira tem endometrioide G1, invasão superficial, LVSI ausente e perfil de baixo risco; a segunda apresenta histologia agressiva e p53abn. O nome do estádio não resume todo o risco, mas também seria incorreto prescrever quimiorradioterapia para a segunda sem examinar extensão, elegibilidade e evidência. A fonte brasileira de tratamento é a <a href=\"https://imunotox.sboc.org.br/diretrizes-publicas-categorias/2026/\" target=\"_blank\" rel=\"noopener noreferrer\">SBOC 2026</a>; a <a href=\"https://pubmed.ncbi.nlm.nih.gov/40744042/\" target=\"_blank\" rel=\"noopener noreferrer\">ESGO 2025</a> refina estratégias internacionais e grupos moleculares."
+        ]
+      ]
+    ],
+    [
+      "complemento-final-especializado",
+      0,
+      [
+        [
+          "2",
+          "13. Estratégias de Radioterapia Adjuvante, Tratamento de Recidivas Locorregionais e Toxicidades Tardias"
+        ],
+        [
+          "3",
+          "1. Planejamento da Radioterapia Adjuvante: Braquiterapia de Cúpula Vaginal vs. Teleterapia Pélvica Externa (EBRT)"
+        ],
+        [
+          "p",
+          "A radioterapia desempenha papel fundamental no controle locorregional pós-operatório do adenocarcinoma endometrial. A escolha da modalidade radioterápica é guiada rigorosamente pela estratificação de risco (estádios FIGO, grau histológico, profundidade de invasão miometrial, idade da paciente, presença de invasão do espaço linfovascular e status molecular):"
+        ],
+        [
+          "t",
+          [
+            "Categoria de Risco / Estádio",
+            "Critérios Anatomopatológicos e Moleculares",
+            "Indicação de Radioterapia Adjuvante",
+            "Racional Clínico e Evidência (Ensaios PORTEC)"
+          ],
+          [
+            [
+              "Baixo Risco",
+              "Baixo risco definido por estádio, histologia, LVSI e subtipo molecular em combinação, não apenas por estádio IA.",
+              "Observação sem adjuvância é apropriada em muitos casos de baixo risco selecionados por avaliação integrada.",
+              "Evitar percentuais universais de recorrência sem definir população do estudo; avaliar risco e toxicidade."
+            ],
+            [
+              "Risco Intermediário",
+              "Estádio IA (G3) ou Estádio IB (G1/G2), com critérios adicionais de risco (idade &ge; 60 anos, invasão miometrial &ge; 50%).",
+              "Braquiterapia vaginal pode ser preferida em subgrupos para reduzir recidiva vaginal e toxicidade, não automaticamente em todo estádio IB.",
+              "PORTEC-2 informa desfechos em população selecionada; não extrapolar como equivalência irrestrita de controle pélvico em toda paciente."
+            ],
+            [
+              "Risco Alto-Intermediário / Alto Risco",
+              "Estádio IB G3 com LVSI substancial; Estádio II (envolvimento do estroma cervical); ou qualquer estádio com subtipo p53 anormal / seroso.",
+              "Radioterapia pélvica e/ou quimioterapia, eventualmente braquiterapia, conforme risco clínico-molecular e decisões multidisciplinares.",
+              "Benefício da associação sistêmica depende de risco, subtipo e protocolo; não transpor resultados de PORTEC-3 para todas as histologias."
+            ],
+            [
+              "Estádio III (Acometimento de Serosa, Anexos, Vagina ou Linfonodos Pélvicos / Para-Aórticos)",
+              "Disseminação locorregional extrauterina comprovada no estadiamento cirúrgico.",
+              "Tratamento sistêmico e radioterapia em sequências/campos escolhidos conforme extensão nodal, cirurgia, histologia e biologia; <strong>não obrigatório</strong> em combinação única para todo estádio III.",
+              "Pesar risco de recidiva sistêmica, controle locorregional e toxicidades conforme diretriz especializada."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "2. Manejo Clínico da Recidiva Vaginal Isolada"
+        ],
+        [
+          "p",
+          "Em pacientes que não receberam radioterapia prévia no pós-operatório inicial e apresentam recidiva confinada estritamente à cúpula vaginal (diagnosticada em exame especular de rotina ou investigação de sangramento vaginal), o tratamento radioterápico de resgate com intento curativo consiste em:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Teleterapia Pélvica Externa (EBRT)</strong> na dose de 45 a 50,4 Gy; ASSOCIADA a:",
+            "<strong>Braquiterapia intersticial ou de cúpula vaginal HDR</strong> para reforço de dose na lesão tumoral (dose total biologicamente efetiva &ge; 70 a 80 Gy)."
+          ]
+        ],
+        [
+          "p",
+          "Quando uma recidiva vaginal isolada ocorre sem radioterapia prévia, radioterapia externa combinada ou não com braquiterapia de resgate pode proporcionar controle duradouro em situações selecionadas. Esquemas, doses totais e intenção curativa dependem de tamanho, profundidade, extensão e técnica; não apresentar percentuais de sobrevida como universais. Após radioterapia prévia, reirradiação especializada, cirurgia de resgate ou terapia sistêmica são opções distintas a discutir em equipe."
+        ],
+        [
+          "3",
+          "3. Vigilância Pós-Tratamento e Prevenção de Complicações Tardias"
+        ],
+        [
+          "p",
+          "<strong>Seguimento individualizado:</strong> consultas mais próximas nos primeiros anos podem ser apropriadas, ajustadas a estádio, risco, tratamento e sintomas. O <a href=\"https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude\" target=\"_blank\" rel=\"noopener noreferrer\">INCA</a> recomenda acompanhamento periódico, frequentemente a cada 3–6 meses nos primeiros anos e 6–12 meses posteriormente; não há necessidade de aplicar um calendário rígido único a todas as pacientes. Perguntar sobre sangramento, dor, sintomas urinários/intestinais, sexualidade e toxicidade tardia. Evitar exames de imagem e citologia vaginal de rotina sem indicação clínica."
+        ],
+        [
+          "u",
+          [
+            "<strong>Exame Clínico-Ginecológico Rigoroso:</strong> Inspeção da vulva, exame especular cuidadoso da cúpula vaginal (sítio mais frequente de recidiva local isolada) e toque retovaginal bimanual. A citologia de cúpula vaginal não é recomendada de rotina em pacientes assintomáticas devido ao baixo rendimento e alto índice de atipias actínicas radiogênicas falso-positivas.",
+            "<strong>Prevenção de Estenose Vaginal Actínica:</strong> O uso regular de dilatadores vaginais de silicone acoplados a hidratantes ginecológicos à base de ácido hialurônico ou estrogênio tópico de baixa absorção (quando autorizado pela oncologia) deve ser iniciado 2 a 4 semanas após o término da braquiterapia para manter a elasticidade vaginal e viabilizar relações sexuais satisfatórias e exames ginecológicos futuros."
+          ]
         ]
       ]
     ],
@@ -531,7 +888,7 @@
       [
         [
           "2",
-          "11. Doença avançada ou recorrente e tratamento sistêmico"
+          "14. Doença avançada ou recorrente e tratamento sistêmico"
         ],
         [
           "p",
@@ -548,6 +905,58 @@
         [
           "p",
           "Controlar dor, sangramento, anemia, náusea, fadiga, ansiedade e alterações urinárias/intestinais; discutir objetivos terapêuticos de maneira compartilhada. Cuidados paliativos podem coexistir com tratamentos oncológicos modificadores de doença desde o diagnóstico de condição avançada, não sendo sinônimo de abandono."
+        ],
+        [
+          "3",
+          "Como os biomarcadores entram nas decisões sem virar atalhos perigosos"
+        ],
+        [
+          "p",
+          "O primeiro passo na doença avançada ou recorrente é confirmar sítio e extensão, revisar laudo molecular e tratamento prévio e esclarecer objetivo terapêutico. MMRd/MSI-H é um marcador importante para sensibilidade a bloqueio de PD-1, mas indicação de imunoterapia depende da linha e da estratégia (isolada ou combinada com quimioterapia) sustentada pelo estudo e aprovada no sistema assistencial. Na doença pMMR, imunoterapia combinada com lenvatinibe pode ser opção após tratamento prévio em determinados cenários, mas toxicidade e acesso podem limitar uso. Não inventar que um produto está disponível em toda unidade do SUS apenas porque aparece em uma diretriz internacional."
+        ],
+        [
+          "p",
+          "No carcinoma seroso e em parte dos tumores p53abn, HER2 pode abrir avaliação de terapia direcionada, mas a expressão depende do método laboratorial e pode exigir confirmação. Tumores de baixo grau e receptores hormonais positivos podem responder a terapia hormonal em situações selecionadas, especialmente quando a evolução é indolente e a prioridade inclui menor toxicidade. O estado clínico, sintomas, velocidade de progressão, localização de metástases, efeitos adversos e preferências interferem na escolha tanto quanto um resultado de imuno-histoquímica."
+        ],
+        [
+          "t",
+          [
+            "Pergunta clínica",
+            "Exame/dado que responde",
+            "Cuidado de interpretação"
+          ],
+          [
+            [
+              "A doença expressa MMRd/MSI-H?",
+              "IHQ MMR e/ou testes moleculares válidos",
+              "MMRd não garante síndrome de Lynch nem acesso automático a anti-PD-1"
+            ],
+            [
+              "O tumor tem p53abn ou padrão seroso?",
+              "Histologia, p53 e HER2 se indicado",
+              "p53abn não é sinônimo de HER2 positivo nem prescrição obrigatória"
+            ],
+            [
+              "É tumor hormonalmente responsivo?",
+              "ER/PR, grau, ritmo de progressão",
+              "ER/PR não substituem avaliação de extensão e sintomas"
+            ],
+            [
+              "Há doença oligometastática/recidiva local?",
+              "Imagem e história de radioterapia/cirurgia",
+              "Resgate local e tratamento sistêmico podem seguir estratégias distintas"
+            ],
+            [
+              "Qual opção é viável no Brasil?",
+              "Diretrizes SBOC 2026, protocolo local, regulação, aprovação e acesso",
+              "Uma diretriz científica não prova incorporação ou cobertura automática"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Pulo do Gato:</strong> diferencie <em>biomarcador prognóstico</em> (risco de desfecho) de <em>biomarcador preditivo</em> (probabilidade de resposta a uma intervenção). MMRd pode ter as duas funções em contextos distintos, mas um resultado molecular isolado não decide a linha do tratamento. Consulte <a href=\"https://imunotox.sboc.org.br/diretrizes-publicas-categorias/2026/\" target=\"_blank\" rel=\"noopener noreferrer\">SBOC Endométrio 2026</a> para aplicabilidade brasileira e <a href=\"https://pubmed.ncbi.nlm.nih.gov/40744042/\" target=\"_blank\" rel=\"noopener noreferrer\">ESGO 2025</a> para comparação."
         ]
       ]
     ],
@@ -557,7 +966,7 @@
       [
         [
           "2",
-          "12. Preservação da fertilidade: exceção planejada, não alternativa casual"
+          "15. Preservação da fertilidade: exceção planejada, não alternativa casual"
         ],
         [
           "p",
@@ -574,12 +983,112 @@
       ]
     ],
     [
+      "complemento-especializado-fase2",
+      0,
+      [
+        [
+          "2",
+          "16. Preservação reprodutiva e tratamento sistêmico — critérios de segurança"
+        ],
+        [
+          "3",
+          "1. Protocolo de Preservação de Fertilidade em Mulheres Jovens com Câncer de Endométrio"
+        ],
+        [
+          "p",
+          "Embora o adenocarcinoma de endométrio seja predominantemente uma doença de mulheres na pós-menopausa (pico entre 60 e 70 anos), aproximadamente 5% dos diagnósticos ocorrem em pacientes com menos de 40 anos com desejo reprodutivo não constituído. Para casos altamente selecionados, pode-se considerar uma estratégia conservadora de preservação uterina temporária sob rigoroso termo de consentimento livre e esclarecido."
+        ],
+        [
+          "t",
+          [
+            "Critério Obrigatório para Preservação Uterina",
+            "Método de Avaliação e Confirmação Diagnóstica",
+            "Mecanismo / Justificativa Oncológica"
+          ],
+          [
+            [
+              "Subtipo Histológico Estrito",
+              "Carcinoma endometrioide de baixo grau, preferencialmente grau 1, revisado por patologista experiente; avaliar elegibilidade molecular e outros fatores.",
+              "Histologia agressiva e invasão alteram o risco; não apresentar número fixo de revisores como critério universal."
+            ],
+            [
+              "Ausência de Invasão Miometrial",
+              "Ressonância Magnética (RM) de pelve de alta resolução com protocolo específico para endométrio (sequências ponderadas em T2 e difusão DWI com mapa ADC).",
+              "Imagem local de qualidade e revisão especializada devem afastar invasão miometrial/cervical antes de proposta conservadora."
+            ],
+            [
+              "Ausência de Doença Anexial ou Extrauterina",
+              "Avaliar anexos e extensão extrauterina com imagem conforme risco e situação clínica; não exigir PET-CT universal.",
+              "Exclui metástases ovarianas sincrônicas ou metástases linfonodais ocultas (frequentes em mulheres jovens com Síndrome de Lynch)."
+            ],
+            [
+              "Receptores Hormonais Fortemente Positivos",
+              "ER/PR podem auxiliar seleção de tratamento hormonal, com técnica e interpretação patologicamente validadas.",
+              "Não afirmar que positividade de RP acima de 50–80% é condição obrigatória universal para todo manejo conservador."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "2. Esquema Farmacológico Conservador e Monitoramento Histeroscópico Seriado"
+        ],
+        [
+          "p",
+          "O tratamento medicamentoso de escolha consiste em:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Acetato de Megestrol:</strong> 160 a 320 mg/dia por via oral; OU",
+            "<strong>Dispositivo Intrauterino liberador de Levonorgestrel (DIU-LNG 52 mg):</strong> Associado ou não a agonistas de GnRH ou progestágenos orais, proporcionando concentrações endometriais ultra-altas com mínima absorção sistêmica."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Monitorização da preservação reprodutiva:</strong> tratamento conservador é exceção para carcinoma endometrioide de baixo grau e estágio criteriosamente selecionado, <strong>sem invasão miometrial e sem doença extrauterina</strong>, após revisão histológica e imagem adequadas. Progestagênios ou sistema intrauterino de levonorgestrel são opções a discutir por oncoginecologia, com biópsias e avaliação seriada, frequentemente a cada 3–6 meses. A resposta completa deve ser confirmada histologicamente antes de planejar gestação; falha, progressão ou recidiva levam à revisão imediata do plano. A histerectomia definitiva após prole ou falha terapêutica é discutida conforme risco e diretriz — não impor período rígido universal de 9–12 meses ou ooforectomia bilateral automática a todas as pacientes jovens. <a href=\"https://pubmed.ncbi.nlm.nih.gov/40744042/\" target=\"_blank\" rel=\"noopener noreferrer\">ESGO–ESTRO–ESP 2025</a>."
+        ],
+        [
+          "3",
+          "3. Tratamento Sistêmico de Segunda Linha e Terapia Imunooncológica Combinada"
+        ],
+        [
+          "p",
+          "<strong>Tratamento sistêmico depende de linha e biomarcadores:</strong> em doença avançada ou recorrente, MMRd/MSI-H, p53, histologia, HER2 em casos selecionados, terapia prévia e desempenho funcional orientam opções. Imunoterapia isolada, combinações com quimioterapia e lenvatinibe + pembrolizumabe têm <strong>indicações e níveis de evidência diferentes</strong>; nem todo paciente que progrediu à platina deve receber esquema idêntico. Verificar aprovação regulatória, indicação vigente e acesso no SUS/suplementar antes de ensinar como prescrição direta. Fonte complementar: <a href=\"https://pubmed.ncbi.nlm.nih.gov/40744042/\" target=\"_blank\" rel=\"noopener noreferrer\">ESGO 2025</a>."
+        ],
+        [
+          "t",
+          [
+            "Biomarcador / cenário",
+            "Opção que pode ser considerada",
+            "Evidência-chave (não confundir desenho)",
+            "Alerta de aplicabilidade"
+          ],
+          [
+            [
+              "MMRd / MSI-H em recidiva/avançado",
+              "Bloqueio PD-1 em indicação apropriada; seleção considera linhas anteriores e disponibilidade",
+              "KEYNOTE-158 (fase II, coorte); GARNET (fase I, coortes): <strong>não são dois estudos fase III</strong>",
+              "Perfil molecular pode predizer resposta, mas não significa disponibilidade universal nem ausência de toxicidade imune."
+            ],
+            [
+              "pMMR / MSS em doença avançada ou recorrente após platina, caso elegível",
+              "Lenvatinibe + pembrolizumabe é estratégia em contexto específico, conforme linha e indicação regulatória",
+              "KEYNOTE-775 / Study 309: estudo randomizado fase III",
+              "Esquema exige avaliação de hipertensão, função renal, toxicidade e acesso; não indicar a toda paciente pMMR."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
       "13-lynch-e-gen-tica-o-que-perguntar-e-quando-encaminhar",
       0,
       [
         [
           "2",
-          "13. Lynch e genética: o que perguntar e quando encaminhar"
+          "17. Lynch e genética: o que perguntar e quando encaminhar"
         ],
         [
           "p",
@@ -592,12 +1101,112 @@
       ]
     ],
     [
+      "complemento-micro-normativo",
+      0,
+      [
+        [
+          "2",
+          "18. Lynch — testagem tumoral, risco hereditário e limites de critérios familiares"
+        ],
+        [
+          "3",
+          "1. Síndrome de Lynch (Câncer Colorretal Hereditário Não Polipoide - HNPCC)"
+        ],
+        [
+          "p",
+          "A síndrome de Lynch decorre de variantes germinativas patogênicas em genes de reparo de pareamento de DNA — <em>MLH1, MSH2, MSH6, PMS2</em> — ou deleções de <em>EPCAM</em> que silenciam MSH2. A magnitude e a idade de aparecimento do risco <strong>variam consideravelmente por gene e história familiar</strong>; não atribuir a todas as pessoas com Lynch o mesmo risco vitalício de 40%–60% para câncer endometrial. O carcinoma endometrial pode ser a manifestação sentinela, e a ausência de história familiar não exclui predisposição. Fonte: <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK1211/\" target=\"_blank\" rel=\"noopener noreferrer\">GeneReviews, Lynch</a>; <a href=\"https://doi.org/10.1016/j.ejca.2026.116739\" target=\"_blank\" rel=\"noopener noreferrer\">consenso ESGO 2026</a>."
+        ],
+        [
+          "p",
+          "<strong>Triagem tumoral recomendada:</strong> pesquisar deficiência de MMR por imuno-histoquímica (MLH1, PMS2, MSH2, MSH6) em tumores endometriais, idealmente desde a amostra diagnóstica quando disponível, e não <strong>apenas em peças cirúrgicas</strong>. A perda de MLH1/PMS2 requer investigação de metilação do promotor de MLH1 para diferenciar causas esporádicas comuns de situações elegíveis à avaliação genética. Uma IHQ alterada <strong>não confirma síndrome hereditária sem investigação germinativa</strong>. A <a href=\"https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Patologia, manual 2026</a> orienta registro de biomarcadores, e <a href=\"https://pubmed.ncbi.nlm.nih.gov/40744042/\" target=\"_blank\" rel=\"noopener noreferrer\">ESGO 2025</a> recomenda triagem universal dos carcinomas endometriais."
+        ]
+      ]
+    ],
+    [
+      "estrategia-rastreamento-linch",
+      0,
+      [
+        [
+          "2",
+          "19. Protocolos de Triagem em Síndromes Familiares e Vigilância Ginecológica"
+        ],
+        [
+          "3",
+          "1. Critérios de Rastreamento Clínico em Familiares de Primeiro Grau"
+        ],
+        [
+          "p",
+          "<strong>Atenção à elegibilidade:</strong> familiares de pessoa com Lynch confirmada devem ser encaminhados para aconselhamento e testagem genética em cascata; <strong>não presumir que todo familiar de primeiro grau é portador</strong>. Na portadora confirmada ainda com útero, discutir educação para sinais de sangramento anormal e possibilidade de amostragem endometrial periódica a partir de cerca de 30–35 anos (frequentemente a cada 1–2 anos), deixando claro que <strong>não há demonstração robusta de redução da mortalidade com rastreamento ginecológico</strong>. Gene específico, história familiar, desejo reprodutivo e acesso orientam o plano. <a href=\"https://doi.org/10.1016/j.ejca.2026.116739\" target=\"_blank\" rel=\"noopener noreferrer\">ESGO 2026</a>; <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK1211/\" target=\"_blank\" rel=\"noopener noreferrer\">GeneReviews</a>."
+        ],
+        [
+          "u",
+          [
+            "<strong>Endométrio:</strong> orientar investigação imediata de qualquer sangramento anormal; considerar biópsia endometrial em vigilância a cada 1–2 anos a partir de 30–35 anos, após decisão compartilhada. Ultrassom isolado não substitui biópsia para rastrear câncer endometrial em portadoras de Lynch.",
+            "<strong>Ovário:</strong> ultrassonografia transvaginal e CA-125 anuais <strong>não têm benefício comprovado em mortalidade</strong> como rastreamento de rotina; não prescrever como obrigação universal para portadoras. Discutir sintomas, risco gene-específico e cirurgia redutora conforme aconselhamento.",
+            "<strong>Cólon e reto:</strong> o início da colonoscopia varia com o gene (<em>MLH1/MSH2/EPCAM</em> frequentemente 20–25 anos; <em>MSH6/PMS2</em> muitas vezes 30–35 anos), risco e história familiar. Intervalos variam entre 1 e 3 anos; seguir genética/gastroenterologia e recomendação atualizada."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Cirurgia redutora de risco:</strong> histerectomia total pode reduzir a incidência de câncer endometrial em portadoras selecionadas após completar o planejamento reprodutivo, mas <strong>não garante mortalidade nula</strong>. O momento é individualizado por gene, idade, comorbidades, preferência e contexto. A retirada dos ovários não é indiscriminada: deve equilibrar o risco específico de câncer ovariano e as consequências de menopausa cirúrgica, podendo ter indicação distinta da histerectomia. Fonte: <a href=\"https://doi.org/10.1016/j.ejca.2026.116739\" target=\"_blank\" rel=\"noopener noreferrer\">consenso ESGO 2026</a>; <a href=\"https://www.cancer.gov/types/colorectal/hp/colorectal-genetics-pdq\" target=\"_blank\" rel=\"noopener noreferrer\">NCI, genética da síndrome de Lynch</a>."
+        ],
+        [
+          "3",
+          "Separar aconselhamento, teste germinativo e três alvos de vigilância"
+        ],
+        [
+          "p",
+          "Uma família com carcinoma endometrial e tumor MMR-deficiente precisa de perguntas encadeadas: qual proteína perdeu expressão? A perda de MLH1/PMS2 foi investigada quanto à metilação do promotor? Há mutação germinativa confirmada? O familiar quer e pode realizar testagem em cascata? Só depois desse percurso se estabelece vigilância individual. A doença associada a Lynch não começa necessariamente pela mesma neoplasia em todas as famílias. Um esquema rígido de US transvaginal + CA-125 todos os anos ignora os limites de evidência para detecção precoce do câncer ovariano."
+        ],
+        [
+          "t",
+          [
+            "Pessoa / situação",
+            "O que priorizar",
+            "O que não afirmar"
+          ],
+          [
+            [
+              "Carcinoma endometrial com perda tumoral de MMR",
+              "Avaliar testes reflexos pertinentes e encaminhar genética",
+              "Toda perda de proteína = mutação germinativa confirmada"
+            ],
+            [
+              "Parente de primeiro grau, variante familiar conhecida",
+              "Aconselhamento e testagem em cascata",
+              "Todo familiar obrigatoriamente herdou a variante"
+            ],
+            [
+              "Portadora Lynch com útero",
+              "Educar sinais de sangramento; discutir biópsia a cada 1–2 anos desde 30–35 anos",
+              "Biópsia comprovadamente reduz mortalidade em todos os genes"
+            ],
+            [
+              "Vigilância ovariana",
+              "Educar sintomas e avaliar cirurgia redutora conforme gene/idade",
+              "US e CA-125 anuais são rastreio com benefício comprovado"
+            ],
+            [
+              "Vigilância colorretal",
+              "Colonoscopia em idade e intervalo gene-específicos",
+              "Todos iniciam aos 20 anos e repetem exatamente a cada dois anos"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Exemplo:</strong> a perda tumoral de MLH1 e PMS2, em uma pessoa sem história familiar, pode decorrer de metilação somática do promotor de MLH1. Isso não equivale a diagnosticar Lynch, mas não é justificativa para dispensar investigação quando o padrão ou história clínica a indicar. O mesmo raciocínio se aplica a familiares: estimar risco <em>após</em> identificar variante hereditária, em vez de ordenar procedimentos genéricos. Fonte clínica: <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK1211/\" target=\"_blank\" rel=\"noopener noreferrer\">GeneReviews</a> e <a href=\"https://doi.org/10.1016/j.ejca.2026.116739\" target=\"_blank\" rel=\"noopener noreferrer\">Consenso ESGO 2026</a>; diagnóstico tumoral <a href=\"https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Patologia 2026</a>."
+        ]
+      ]
+    ],
+    [
       "14-seguimento-qualidade-de-vida-e-progn-stico",
       0,
       [
         [
           "2",
-          "14. Seguimento, qualidade de vida e prognóstico"
+          "20. Seguimento, qualidade de vida e prognóstico"
         ],
         [
           "p",
@@ -619,31 +1228,135 @@
       [
         [
           "2",
-          "15. Fluxogramas textuais LURIA"
-        ],
-        [
-          "3",
-          "Fluxo A — Sangramento pós-menopausa"
+          "21. Fluxos de decisão clínica — três caminhos de alto rendimento"
         ],
         [
           "p",
-          "Sangramento confirmado → estabilidade e avaliação clínica → exame especular / fatores de risco → US transvaginal + <strong>amostragem endometrial inicial na maioria dos casos conforme atualização ACOG 2026</strong> → histologia adequada?  \n• Benigna e sangramento cessou, sem outros alertas: seguimento individual conforme avaliação.  \n• Amostra insuficiente, lesão focal ou sangramento persiste: avaliação adicional, em muitos casos histeroscopia/biópsia dirigida.  \n• EIN/atipia: avaliar carcinoma concomitante e indicar conduta especializada.  \n• Carcinoma confirmado: estadiamento clínico-imagético e plano oncológico."
+          "<strong>Como usar:</strong> comece pela pergunta em negrito, percorra a segunda coluna e chegue à ação da terceira. Não é um substituto para protocolos locais; é uma ferramenta de raciocínio que evita pular do exame diretamente ao tratamento."
         ],
         [
           "3",
-          "Fluxo B — Câncer confirmado"
+          "Fluxo A — apareceu sangramento após a menopausa"
         ],
         [
-          "p",
-          "Revisão histológica → tipo e grau → MMR/p53/POLE quando possível → exame clínico e imagem de extensão → discutir cirurgia e estratégia nodal → patologia final + FIGO 2023 + grupo de risco clínico-molecular → observar ou adjuvância individualizada → seguimento."
+          "t",
+          [
+            "Pergunta-chave",
+            "Resposta ou evidência",
+            "Próximo passo"
+          ],
+          [
+            [
+              "Está instável pelo sangramento?",
+              "Hipotensão, taquicardia, síncope, anemia importante",
+              "Estabilizar, controlar perdas e investigar após segurança"
+            ],
+            [
+              "A origem é endometrial?",
+              "Anamnese, exame especular, história de medicamentos",
+              "US pélvico/transvaginal e avaliação histológica quando indicada"
+            ],
+            [
+              "Eco <4 mm e sangramento cessou no episódio único?",
+              "Baixo risco, imagem adequada e acompanhamento possível",
+              "Individualizar conforme FEBRASGO e risco; orientar retorno"
+            ],
+            [
+              "Sangramento persiste ou é recorrente?",
+              "Sim, inclusive se o eco tem 3 mm",
+              "Investigar com biópsia; avaliar histeroscopia se lesão focal"
+            ],
+            [
+              "Histologia EIN ou carcinoma?",
+              "Lesão precursora ou tumor confirmado",
+              "Encaminhar para equipe de oncoginecologia e genética conforme caso"
+            ]
+          ],
+          "book-table"
         ],
         [
           "3",
-          "Fluxo C — Desejo reprodutivo"
+          "Fluxo B — biópsia confirmou carcinoma"
+        ],
+        [
+          "t",
+          [
+            "Passo",
+            "Dado necessário",
+            "Decisão que ele modifica"
+          ],
+          [
+            [
+              "Revisar histologia",
+              "Tipo endometrioide versus agressivo, grau, confiança da amostra",
+              "Risco, extensão de estadiamento e estratégia"
+            ],
+            [
+              "Integrar biomarcadores",
+              "MMR, p53, POLE patogênica quando disponível",
+              "Grupo de risco, possibilidade de Lynch e opções terapêuticas"
+            ],
+            [
+              "Definir extensão",
+              "RM/US experiente, imagem de doença distante quando indicada",
+              "Ressecabilidade, cirurgia e avaliação linfonodal"
+            ],
+            [
+              "Classificar após dados definitivos",
+              "FIGO 2023, LVSI, margens, linfonodos e molecular",
+              "Observar ou indicar adjuvância conforme grupo"
+            ],
+            [
+              "Planejar seguimento",
+              "Risco de recidiva, sintomas e efeitos tardios",
+              "Consultas e exames direcionados, sem protocolos universais"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Fluxo C — paciente deseja preservar a fertilidade"
+        ],
+        [
+          "t",
+          [
+            "Pergunta de elegibilidade",
+            "O que confirmar",
+            "Implicação"
+          ],
+          [
+            [
+              "É um subtipo elegível?",
+              "Endometrioide de baixo grau com revisão histológica",
+              "Histologia agressiva impede tratar como alternativa simples"
+            ],
+            [
+              "Há invasão ou doença extrauterina?",
+              "Imagem adequada sem invasão miometrial e sem extensão",
+              "Qualquer invasão relevante muda a segurança"
+            ],
+            [
+              "Aceita seguimento rigoroso?",
+              "Consentimento, disponibilidade de biópsias seriadas e retornos",
+              "Sem seguimento confiável a estratégia torna-se insegura"
+            ],
+            [
+              "Resposta histológica foi documentada?",
+              "Nova amostragem, persistência ou regressão da lesão",
+              "Prosseguir para plano reprodutivo ou rever tratamento"
+            ],
+            [
+              "Prole concluída ou houve progressão?",
+              "Discussão de risco e metas da paciente",
+              "Avaliar histerectomia definitiva com equipe especializada"
+            ]
+          ],
+          "book-table"
         ],
         [
           "p",
-          "Tumor inicial endometrioide de baixo grau? → imagem sem invasão? → revisão especializada de lâminas, risco genético, viabilidade de seguimento? → decisão compartilhada progestagênica supervisionada → histologia seriada para documentar resposta → fertilidade quando segura → cirurgia definitiva após prole/falha/recidiva conforme indicação."
+          "<strong>Pulo do Gato:</strong> o ultrassom é mapa anatômico, a biópsia é o diagnóstico, FIGO descreve extensão e biologia, e a equipe multidisciplinar converte esse conjunto em tratamento. Pular qualquer uma dessas etapas pode produzir erro com aparência de raciocínio rápido."
         ]
       ]
     ],
@@ -653,7 +1366,7 @@
       [
         [
           "2",
-          "16. Casos clínicos comentados"
+          "22. Casos clínicos comentados"
         ],
         [
           "3",
@@ -661,7 +1374,7 @@
         ],
         [
           "p",
-          "Mulher de 63 anos, há nove anos sem menstruar, apresenta apenas dois episódios de manchas marrons. Tem obesidade e diabetes. US transvaginal mostra endométrio de 3 mm, sem massa visível. <strong>Hipótese:</strong> sangramento pós-menopausa de etiologia ainda não definida. <strong>Raciocínio:</strong> o eco fino reduz probabilidade de certas neoplasias, mas fatores de risco existem e a orientação ACOG 2026 recomenda associar amostragem na avaliação inicial da maioria; recorrência exige histologia mesmo sob algoritmo anterior. <strong>Exames:</strong> exame especular e avaliação endometrial conforme protocolo atualizado. <strong>Conduta:</strong> não tranquilizar exclusivamente com “3 mm”; prosseguir investigação apropriada e orientar retorno para novos episódios. <strong>Por que importa:</strong> evitar falso-negativo por excesso de confiança no ultrassom."
+          "Mulher de 63 anos, há nove anos sem menstruar, apresenta apenas dois episódios de manchas marrons. Tem obesidade e diabetes. US transvaginal mostra endométrio de 3 mm, sem massa visível. <strong>Hipótese:</strong> sangramento pós-menopausa de etiologia ainda não definida. <strong>Raciocínio:</strong> o eco fino reduz probabilidade de certas neoplasias, mas fatores de risco existem e a orientação brasileira valoriza fatores de risco e biópsia na recorrência; a ACOG 2026, como atualização internacional, recomenda amostra na avaliação inicial da maioria. <strong>Exames:</strong> exame especular e avaliação endometrial conforme protocolo atualizado. <strong>Conduta:</strong> não tranquilizar exclusivamente com “3 mm”; prosseguir investigação apropriada e orientar retorno para novos episódios. <strong>Por que importa:</strong> evitar falso-negativo por excesso de confiança no ultrassom."
         ],
         [
           "3",
@@ -719,55 +1432,263 @@
       [
         [
           "2",
-          "17. Questões autorais comentadas — residência/ENAMED"
+          "23. Questões autorais comentadas — residência/ENAMED"
         ],
         [
           "p",
-          "<strong>Q1.</strong> Mulher de 61 anos com sangramento pós-menopausa. Segundo atualização ACOG de abril de 2026, a abordagem inicial na maioria das pacientes envolve:  <br>A) Exclusivamente citologia cervical. B) US transvaginal associada à amostragem endometrial. C) CA-125 como prova confirmatória. D) Alta obrigatória se endométrio tem 3 mm.  <br><strong>Gabarito B.</strong> A não avalia adequadamente endométrio; C não é teste diagnóstico; D reproduz interpretação anterior de forma absoluta e ignora a revisão. <strong>Mini-revisão:</strong> US caracteriza, histologia confirma."
+          "<strong>Treino ativo:</strong> tente resolver a pergunta antes de abrir mentalmente o comentário. Cada questão é autoral e simulada, não atribuída a uma prova real. Releia o capítulo correspondente quando errar uma alternativa."
+        ],
+        [
+          "4",
+          "Questão 1 — Sangramento e endométrio fino"
         ],
         [
           "p",
-          "<strong>Q2.</strong> Sangramento persistente apesar de biópsia endometrial cega benigna e lesão focal ao US. Próxima opção apropriada:  <br>A) Encerrar investigação. B) Repetir apenas citologia cervical anualmente. C) Avaliação adicional, frequentemente histeroscopia e biópsia dirigida. D) Radioiodo.  <br><strong>Gabarito C.</strong> A/B podem perder lesão focal; D não trata endométrio. <strong>Mini-revisão:</strong> amostragem negativa pode não representar toda cavidade."
+          "<strong>Enunciado:</strong> Mulher de 61 anos apresenta sangramento pós-menopausa recorrente, com endométrio de 3 mm. Segundo o raciocínio brasileiro, qual conduta é adequada?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Alta definitiva porque endométrio tem menos de 4 mm.",
+            "<strong>B)</strong> Prosseguir investigação e amostragem histológica conforme risco, apesar do eco fino.",
+            "<strong>C)</strong> Dosar CA-125 para excluir neoplasia.",
+            "<strong>D)</strong> Fazer apenas citologia cervical."
+          ]
         ],
         [
           "p",
-          "<strong>Q3.</strong> Qual perfil molecular costuma associar-se a prognóstico favorável em câncer endometrial inicial?  <br>A) POLE patogênico. B) p53abn isolado. C) Toda alteração de MMR indica prognóstico idêntico. D) Qualquer seroso sem invasão.  <br><strong>Gabarito A.</strong> B geralmente representa maior risco; C generaliza; D ignora biologia. <strong>Mini-revisão:</strong> POLEmut e p53abn têm implicações prognósticas diferentes."
+          "<strong>Resposta comentada: alternativa B.</strong> A FEBRASGO 2025 indica reavaliar sangramento recorrente mesmo quando a medida é inferior a 4 mm. O INCA recomenda investigar sintomas; a ACOG 2026, como comparação, prefere US + amostragem na avaliação inicial da maioria."
+        ],
+        [
+          "4",
+          "Questão 2 — Amostragem de lesão focal"
         ],
         [
           "p",
-          "<strong>Q4.</strong> Um carcinoma endometrial com perda de MLH1/PMS2 demonstra obrigatoriamente síndrome de Lynch?  <br>A) Sim, sem outros exames. B) Não; deve-se investigar metilação MLH1 e contexto para selecionar estudo germinativo. C) Apenas se CA-125 elevado. D) Não tem relação com genética.  <br><strong>Gabarito B.</strong> A ignora causas esporádicas; C é irrelevante; D ignora MMR e predisposição. <strong>Mini-revisão:</strong> triagem tumoral e mutação hereditária não são equivalentes."
+          "<strong>Enunciado:</strong> Sangramento persistente apesar de biópsia endometrial cega benigna e lesão focal ao US. Próxima opção apropriada:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Encerrar investigação.",
+            "<strong>B)</strong> Repetir apenas citologia cervical anualmente.",
+            "<strong>C)</strong> Avaliação adicional, frequentemente histeroscopia e biópsia dirigida.",
+            "<strong>D)</strong> Radioiodo."
+          ]
         ],
         [
           "p",
-          "<strong>Q5.</strong> No FIGO 2023, estádio I de endométrio é interpretado apenas por profundidade miometrial?  <br>A) Sim. B) Sim, se paciente obesa. C) Não, histologia/LVSI e classificação molecular podem modificar estadiamento. D) Não há mais estadiamento.  <br><strong>Gabarito C.</strong> A/B ignoram critérios de 2023; D é falso. <strong>Mini-revisão:</strong> anatomia e biologia são integradas."
+          "<strong>Resposta comentada: alternativa C.</strong> A/B podem perder lesão focal; D não trata endométrio. <strong>Pulo do Gato:</strong> amostragem negativa pode não representar toda cavidade."
+        ],
+        [
+          "4",
+          "Questão 3 — POLE versus p53"
         ],
         [
           "p",
-          "<strong>Q6.</strong> Paciente com EIN/hiperplasia atípica e prole concluída. Opção definitiva comumente considerada:  <br>A) Não tratar. B) Histerectomia após avaliação apropriada. C) Apenas antibiótico. D) Radioiodo.  <br><strong>Gabarito B.</strong> A não lida com risco; C/D não tratam a lesão. <strong>Mini-revisão:</strong> EIN tem risco de carcinoma concomitante/recorrência."
+          "<strong>Enunciado:</strong> Qual perfil molecular costuma associar-se a prognóstico favorável em câncer endometrial inicial?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> POLE patogênico.",
+            "<strong>B)</strong> p53abn isolado.",
+            "<strong>C)</strong> Toda alteração de MMR indica prognóstico idêntico.",
+            "<strong>D)</strong> Qualquer seroso sem invasão."
+          ]
         ],
         [
           "p",
-          "<strong>Q7.</strong> Em câncer de endométrio aparentemente inicial, a estratégia nodal atual pode incluir:  <br>A) Linfadenectomia sistemática obrigatória em qualquer paciente. B) Mapeamento de linfonodo sentinela conforme risco e protocolo. C) Nenhuma avaliação nodal é jamais permitida. D) Apenas palpação dos linfonodos.  <br><strong>Gabarito B.</strong> A exagera morbidade; C é absoluto falso; D é insuficiente em alguns casos. <strong>Mini-revisão:</strong> extensão nodal deve ser orientada por risco."
+          "<strong>Resposta comentada: alternativa A.</strong> B geralmente representa maior risco; C generaliza; D ignora biologia. <strong>Pulo do Gato:</strong> POLEmut e p53abn têm implicações prognósticas diferentes."
+        ],
+        [
+          "4",
+          "Questão 4 — MMRd e metilação de MLH1"
         ],
         [
           "p",
-          "<strong>Q8.</strong> Preservação de fertilidade pode ser considerada em cenário selecionado de:  <br>A) Carcinoma seroso metastático. B) Endometrioide de baixo grau sem invasão miometrial em paciente com seguimento confiável. C) p53abn avançado. D) Carcinossarcoma com infiltração cervical.  <br><strong>Gabarito B.</strong> A/C/D são situações inadequadas para a estratégia conservadora descrita. <strong>Mini-revisão:</strong> seleção rigorosa e confirmação histológica seriada."
+          "<strong>Enunciado:</strong> Um carcinoma endometrial com perda de MLH1/PMS2 demonstra obrigatoriamente síndrome de Lynch?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Sim, sem outros exames.",
+            "<strong>B)</strong> Não; deve-se investigar metilação MLH1 e contexto para selecionar estudo germinativo.",
+            "<strong>C)</strong> Apenas se CA-125 elevado.",
+            "<strong>D)</strong> Não tem relação com genética."
+          ]
         ],
         [
           "p",
-          "<strong>Q9.</strong> Qual conjunto de informações é indispensável para discussão pós-operatória moderna?  <br>A) Somente idade. B) Somente espessura inicial ao US. C) Histologia, grau, invasão miometrial, LVSI, linfonodos e perfil molecular quando disponível. D) Apenas peso corporal.  <br><strong>Gabarito C.</strong> A/B/D são dimensões insuficientes. <strong>Mini-revisão:</strong> risco adjuvante não é simples espessura."
+          "<strong>Resposta comentada: alternativa B.</strong> A ignora causas esporádicas; C é irrelevante; D ignora MMR e predisposição. <strong>Pulo do Gato:</strong> triagem tumoral e mutação hereditária não são equivalentes."
+        ],
+        [
+          "4",
+          "Questão 5 — Classificação FIGO 2023"
         ],
         [
           "p",
-          "<strong>Q10.</strong> MMRd é clinicamente relevante porque:  <br>A) Exclui qualquer risco de câncer colorretal familiar. B) Pode orientar investigação hereditária e terapias sistêmicas em contextos específicos. C) Define sempre que cirurgia é desnecessária. D) Impede interpretação histológica.  <br><strong>Gabarito B.</strong> A é falso; C transforma biomarcador em regra inadequada; D não procede. <strong>Mini-revisão:</strong> marcador molecular é prognóstico/preditivo e pode ter implicação familiar."
+          "<strong>Enunciado:</strong> No FIGO 2023, estádio I de endométrio é interpretado apenas por profundidade miometrial?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Sim.",
+            "<strong>B)</strong> Sim, se paciente obesa.",
+            "<strong>C)</strong> Não, histologia/LVSI e classificação molecular podem modificar estadiamento.",
+            "<strong>D)</strong> Não há mais estadiamento."
+          ]
         ],
         [
           "p",
-          "<strong>Q11.</strong> Sangramento intenso com hipotensão em paciente com carcinoma endometrial conhecido. Prioridade:  <br>A) Aguarde reunião de oncologia antes de qualquer intervenção. B) Primeiro estabilização e controle da hemorragia. C) Solicitar apenas CA-125. D) Repetir exame em seis meses.  <br><strong>Gabarito B.</strong> A/C/D atrasam suporte vital. <strong>Mini-revisão:</strong> urgência clínica precede planejamento eletivo."
+          "<strong>Resposta comentada: alternativa C.</strong> A/B ignoram critérios de 2023; D é falso. <strong>Pulo do Gato:</strong> anatomia e biologia são integradas."
+        ],
+        [
+          "4",
+          "Questão 6 — EIN e tratamento definitivo"
         ],
         [
           "p",
-          "<strong>Q12.</strong> Qual afirmação sobre rastreamento está correta?  <br>A) Todo adulto assintomático precisa de biópsia anual. B) Citologia cervical normal exclui câncer endometrial. C) Não existe rastreamento populacional com US/biópsia para todos; Lynch exige abordagem de risco específica. D) Espessura endometrial é marcador diagnóstico isolado para todos os contextos.  <br><strong>Gabarito C.</strong> A cria sobreinvestigação, B confunde colo com corpo uterino, D desconsidera idade e sintomas. <strong>Mini-revisão:</strong> sintomas e risco determinam investigação."
+          "<strong>Enunciado:</strong> Paciente com EIN/hiperplasia atípica e prole concluída. Opção definitiva comumente considerada:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Não tratar.",
+            "<strong>B)</strong> Histerectomia após avaliação apropriada.",
+            "<strong>C)</strong> Apenas antibiótico.",
+            "<strong>D)</strong> Radioiodo."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> A não lida com risco; C/D não tratam a lesão. <strong>Pulo do Gato:</strong> EIN tem risco de carcinoma concomitante/recorrência."
+        ],
+        [
+          "4",
+          "Questão 7 — Mapeamento linfonodal"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Em câncer de endométrio aparentemente inicial, a estratégia nodal atual pode incluir:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Linfadenectomia sistemática obrigatória em qualquer paciente.",
+            "<strong>B)</strong> Mapeamento de linfonodo sentinela conforme risco e protocolo.",
+            "<strong>C)</strong> Nenhuma avaliação nodal é jamais permitida.",
+            "<strong>D)</strong> Apenas palpação dos linfonodos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> A exagera morbidade; C é absoluto falso; D é insuficiente em alguns casos. <strong>Pulo do Gato:</strong> extensão nodal deve ser orientada por risco."
+        ],
+        [
+          "4",
+          "Questão 8 — Preservação de fertilidade"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Preservação de fertilidade pode ser considerada em cenário selecionado de:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Carcinoma seroso metastático.",
+            "<strong>B)</strong> Endometrioide de baixo grau sem invasão miometrial em paciente com seguimento confiável.",
+            "<strong>C)</strong> p53abn avançado.",
+            "<strong>D)</strong> Carcinossarcoma com infiltração cervical."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> A/C/D são situações inadequadas para a estratégia conservadora descrita. <strong>Pulo do Gato:</strong> seleção rigorosa e confirmação histológica seriada."
+        ],
+        [
+          "4",
+          "Questão 9 — Laudo integrado"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Qual conjunto de informações é indispensável para discussão pós-operatória moderna?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Somente idade.",
+            "<strong>B)</strong> Somente espessura inicial ao US.",
+            "<strong>C)</strong> Histologia, grau, invasão miometrial, LVSI, linfonodos e perfil molecular quando disponível.",
+            "<strong>D)</strong> Apenas peso corporal."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa C.</strong> A/B/D são dimensões insuficientes. <strong>Pulo do Gato:</strong> risco adjuvante não é simples espessura."
+        ],
+        [
+          "4",
+          "Questão 10 — MMRd e imunoterapia"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> MMRd é clinicamente relevante porque:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Exclui qualquer risco de câncer colorretal familiar.",
+            "<strong>B)</strong> Pode orientar investigação hereditária e terapias sistêmicas em contextos específicos.",
+            "<strong>C)</strong> Define sempre que cirurgia é desnecessária.",
+            "<strong>D)</strong> Impede interpretação histológica."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> A é falso; C transforma biomarcador em regra inadequada; D não procede. <strong>Pulo do Gato:</strong> marcador molecular é prognóstico/preditivo e pode ter implicação familiar."
+        ],
+        [
+          "4",
+          "Questão 11 — Hemorragia com instabilidade"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Sangramento intenso com hipotensão em paciente com carcinoma endometrial conhecido. Prioridade:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Aguarde reunião de oncologia antes de qualquer intervenção.",
+            "<strong>B)</strong> Primeiro estabilização e controle da hemorragia.",
+            "<strong>C)</strong> Solicitar apenas CA-125.",
+            "<strong>D)</strong> Repetir exame em seis meses."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa B.</strong> A/C/D atrasam suporte vital. <strong>Pulo do Gato:</strong> urgência clínica precede planejamento eletivo."
+        ],
+        [
+          "4",
+          "Questão 12 — Rastreamento populacional e risco"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Qual afirmação sobre rastreamento está correta?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Todo adulto assintomático precisa de biópsia anual.",
+            "<strong>B)</strong> Citologia cervical normal exclui câncer endometrial.",
+            "<strong>C)</strong> Não existe rastreamento populacional com US/biópsia para todos; Lynch exige abordagem de risco específica.",
+            "<strong>D)</strong> Espessura endometrial é marcador diagnóstico isolado para todos os contextos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Resposta comentada: alternativa C.</strong> A cria sobreinvestigação, B confunde colo com corpo uterino, D desconsidera idade e sintomas. <strong>Pulo do Gato:</strong> sintomas e risco determinam investigação."
         ]
       ]
     ],
@@ -777,109 +1698,26 @@
       [
         [
           "2",
-          "18. Resumo de alto rendimento e armadilhas"
+          "24. O que não posso esquecer — revisão de alto rendimento"
+        ],
+        [
+          "o",
+          [
+            "<strong>Sangramento pós-menopausa:</strong> investigar, mesmo discreto; citologia cervical normal não exclui carcinoma endometrial.",
+            "<strong>Prioridade Brasil:</strong> INCA, MS e FEBRASGO para diagnóstico; FIGO + patologia brasileira para estádio; SBOC para tratamentos.",
+            "<strong>Eco fino:</strong> abaixo de 4 mm não afasta tumor se sangramento recorre, há lesão focal ou alto risco; tecido dá diagnóstico definitivo.",
+            "<strong>EIN:</strong> hiperplasia atípica tem risco de carcinoma coexistente; não se confunde com hiperplasia sem atipia.",
+            "<strong>FIGO 2023:</strong> anatomia, histologia, LVSI e molecular. IVB é metástase peritoneal além da pelve; IVC inclui metástase distante.",
+            "<strong>Biomarcadores:</strong> POLE patogênico pode sinalizar prognóstico favorável; p53abn costuma sinalizar risco maior; MMRd exige triagem para Lynch sem presumir hereditariedade.",
+            "<strong>Cirurgia/adjuvância:</strong> ajustar por risco; linfonodo sentinela não implica linfadenectomia universal nem dispensa sempre terapias adicionais.",
+            "<strong>Fertilidade:</strong> preservação uterina é exceção com critérios histológicos, imagem e vigilância especializados.",
+            "<strong>Lynch:</strong> vigilância varia com gene; CA-125 e ultrassom anuais não são regra universal com benefício demonstrado.",
+            "<strong>Emergência:</strong> sangramento com choque pede estabilização e controle do foco antes de planejamento eletivo."
+          ]
         ],
         [
           "p",
-          "<li>Sangramento pós-menopausa é sintoma de alerta, mesmo discreto. Não confundir com diagnóstico de câncer.</li>\n<li>Citologia cervical normal não exclui neoplasia endometrial.</li>\n<li><strong>ACOG 2026</strong>: na maioria, combinar TVUS e amostragem inicial; explicitar divergência de protocolos antigos de eco ≤4 mm sem biópsia inicial.</li>\n<li>Amostra insuficiente ou sangramento persistente exige reconsiderar diagnóstico; lesão focal pode escapar de pipelle.</li>\n<li>EIN/hiperplasia atípica é precursora relevante, diferente de hiperplasia simples.</li>\n<li>POLEmut geralmente tem bom prognóstico; p53abn tende ao pior; MMRd relaciona-se a câncer hereditário em parcela dos casos.</li>\n<li>FIGO 2023 integra anatomia, histologia, LVSI e perfil molecular; risco de adjuvância não é apenas estágio.</li>\n<li>Histerectomia total + salpingo-ooforectomia bilateral é eixo cirúrgico frequente; linfonodo sentinela pode reduzir morbidade em situações adequadas.</li>\n<li>Preservação de fertilidade não é rotina para doença invasiva; exige critérios rigorosos e biópsias seriadas.</li>\n<li>Terapias sistêmicas avançadas dependem de biomarcadores, linhas, disponibilidade e análise multidisciplinar.</li>"
-        ]
-      ]
-    ],
-    [
-      "19-imagens-candidatas-curadoria-sem-publica-o-autom-tica",
-      0,
-      [
-        [
-          "2",
-          "19. Imagens candidatas — curadoria sem publicação automática"
-        ],
-        [
-          "p",
-          "O objetivo é selecionar pelo menos 10 recursos realmente didáticos, com fonte confiável, qualidade diagnóstica, licença editorial/comercial confirmada e legenda. <strong>Nenhuma imagem foi licenciada, convertida ou incluída neste rascunho.</strong>"
-        ],
-        [
-          "t",
-          [
-            "Recurso proposto",
-            "Onde ensinar",
-            "Legenda conceitual",
-            "Validação indispensável"
-          ],
-          [
-            [
-              "US transvaginal de endométrio fino normal",
-              "§5",
-              "Medida anteroposterior do eco endometrial",
-              "Exemplo verdadeiro, técnica correta, licença"
-            ],
-            [
-              "US de espessamento heterogêneo",
-              "§5",
-              "Limitações do valor único e lesões focais",
-              "Fonte original verificável"
-            ],
-            [
-              "US/sonohisterografia de pólipo",
-              "§4–5",
-              "Pólipo vs proliferação difusa",
-              "Direitos de reprodução"
-            ],
-            [
-              "Histeroscopia de lesão endometrial suspeita",
-              "§5",
-              "Valor da biópsia dirigida",
-              "Consentimento/publicação e licença"
-            ],
-            [
-              "Fotomicrografia EIN",
-              "§6",
-              "Arquitetura glandular e atipia",
-              "Patologista e fonte com direitos"
-            ],
-            [
-              "Histologia endometrioide G1",
-              "§3",
-              "Diferenciação glandular",
-              "Crédito técnico"
-            ],
-            [
-              "Histologia de carcinoma seroso",
-              "§3",
-              "Padrão de alto risco",
-              "Revisão de lâmina e licença"
-            ],
-            [
-              "Imuno-histoquímica MLH1/PMS2",
-              "§3/13",
-              "Perda de MMR e controle interno",
-              "Sem exposição de identificadores"
-            ],
-            [
-              "Imuno-histoquímica p53 aberrante",
-              "§3",
-              "Alteração molecular surrogate",
-              "Controle técnico"
-            ],
-            [
-              "RM pélvica com invasão miometrial",
-              "§7",
-              "Invasão <50% vs ≥50%",
-              "Laudo confiável"
-            ],
-            [
-              "Diagrama SVG autoral FIGO 2023",
-              "§8",
-              "Estádio anatômico-molecular",
-              "Validação médica; não copiar gráfico de terceiros"
-            ],
-            [
-              "Fluxograma autoral diagnóstico/adjuvância",
-              "§15",
-              "Da hemorragia à terapêutica",
-              "Leitura PWA, hierarquia e precisão"
-            ]
-          ],
-          "book-table"
+          "<strong>Pulo do Gato:</strong> nem o número de milímetros no ultrassom nem um marcador molecular isolado respondem a todas as decisões. Pergunte: qual risco clínico? Qual diagnóstico histológico? Qual extensão? O que muda a conduta no Brasil?"
         ]
       ]
     ],
@@ -889,450 +1727,31 @@
       [
         [
           "2",
-          "20. Referências verificáveis e diferenças de fonte"
+          "Referências e hierarquia das evidências"
         ],
         [
-          "p",
-          "1. Instituto Nacional de Câncer (INCA). <strong>Câncer do corpo do útero — versão para profissionais de saúde</strong>. https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude<br>2. Concin N, et al. <strong>ESGO–ESTRO–ESP guidelines for endometrial carcinoma: update 2025</strong>. Lancet Oncology. 2025;26:e423–e435. DOI: 10.1016/S1470-2045(25)00167-6. https://pubmed.ncbi.nlm.nih.gov/40744042/<br>3. FIGO. <strong>FIGO staging of endometrial cancer: 2023</strong>. Int J Gynecol Obstet. 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10482588/<br>4. American College of Obstetricians and Gynecologists. <strong>Updated guidance on evaluation of postmenopausal bleeding</strong>, comunicado 16/04/2026. https://www.acog.org/news/news-releases/2026/04/acog-publishes-updated-guidance-evaluation-postmenopausal-bleeding<br>5. ACOG. <strong>The Role of Transvaginal Ultrasonography in Evaluating the Endometrium of Women With Postmenopausal Bleeding</strong>, orientação de 2018 para comparação histórica, <strong>não usar como único algoritmo de 2026</strong>. https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/05/the-role-of-transvaginal-ultrasonography-in-evaluating-the-endometrium-of-women-with-postmenopausal-bleeding<br>6. National Cancer Institute. <strong>Endometrial Cancer Treatment (PDQ)</strong>, edição para profissionais, inclui FIGO 2023, cirurgia e terapias por risco. https://www.cancer.gov/types/uterine/hp/endometrial-treatment-pdq<br>7. Sociedade Brasileira de Patologia. <strong>Carcinomas do Endométrio</strong>, Manual 2026. https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/"
+          "o",
+          [
+            "<a href=\"https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL | INCA] Câncer do corpo do útero: profissionais de saúde.</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2026/manual-de-atencao-as-mulheres-na-transicao-menopausal-e-menopausa.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL | MS] Manual de atenção às mulheres na transição menopausal e menopausa, 2026.</a>",
+            "<a href=\"https://femina.org.br/article/hiperplasia-endometrial/\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL | FEBRASGO] Hiperplasia endometrial, Protocolo nº 31, Femina. 2025;53(6):841–847.</a>",
+            "<a href=\"https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL | SOCIEDADE BRASILEIRA DE PATOLOGIA] Carcinomas do Endométrio, manual 2026: FIGO e biomarcadores.</a>",
+            "<a href=\"https://imunotox.sboc.org.br/diretrizes-publicas-categorias/2026/\" target=\"_blank\" rel=\"noopener noreferrer\">[BRASIL | SBOC] Diretrizes de tratamentos oncológicos, 2026, capítulo Endométrio.</a>",
+            "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10482588/\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL | ESTADIAMENTO] FIGO 2023: estadiamento de carcinoma endometrial.</a>",
+            "<a href=\"https://pubmed.ncbi.nlm.nih.gov/40744042/\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL | TRATAMENTO] ESGO–ESTRO–ESP: update 2025.</a>",
+            "<a href=\"https://doi.org/10.1097/AOG.0000000000006275\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL | DIAGNÓSTICO] ACOG, Clinical Practice Update, 2026, investigação do sangramento pós-menopausa.</a>",
+            "<a href=\"https://doi.org/10.1016/j.ejca.2026.116739\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL | LYNCH] ESGO, consenso de prevenção e manejo de Lynch, 2026.</a>",
+            "<a href=\"https://www.ncbi.nlm.nih.gov/books/NBK1211/\" target=\"_blank\" rel=\"noopener noreferrer\">[INTERNACIONAL | GENÉTICA] GeneReviews: Lynch Syndrome, vigilância e variação de risco por gene.</a>"
+          ],
+          "reference-list"
         ],
         [
           "3",
-          "Divergências explicadas"
+          "Conflitos de fontes: o que interpretar no contexto brasileiro"
         ],
         [
           "p",
-          "<li><strong>ACOG 2018 × ACOG 2026:</strong> o primeiro permitia US isolada no episódio inicial selecionado com endométrio ≤4 mm; a atualização orienta combinar US e tecido inicialmente na maioria. Contexto de implementação no Brasil deve respeitar disponibilidade e diretrizes nacionais.</li>\n<li><strong>Esquema histológico antigo × classificação moderna:</strong> “tipo I/II” é introdução histórica; classificação molecular, LVSI e histologia refinam risco.</li>\n<li><strong>Diretrizes internacionais × SUS:</strong> procedimentos, medicamentos e testes nem sempre estão disponíveis de forma uniforme. Não afirmar incorporação automática de imunoterápicos, painéis moleculares ou exames.</li>"
-        ]
-      ]
-    ],
-    [
-      "21-auditoria-final-desta-vers-o-n-o-certificar",
-      0,
-      [
-        [
-          "2",
-          "21. Auditoria final desta versão — não certificar"
-        ],
-        [
-          "t",
-          [
-            "Gate",
-            "Situação"
-          ],
-          [
-            [
-              "Inventário e preservação de acervo",
-              "Realizado: livro próprio ausente, existentes correlatos não modificados"
-            ],
-            [
-              "Benchmark de tema no Drive",
-              "Realizado: PDF de câncer de endométrio aberto e lido, autor institucional não confirmado"
-            ],
-            [
-              "Fundamentos, diagnóstico e risco",
-              "Produzidos em primeira versão, sujeitos a revisão especializada"
-            ],
-            [
-              "Cirurgia, adjuvância e seguimento",
-              "Produzidos em nível conceitual; doses/linhas específicas não finalizadas"
-            ],
-            [
-              "Casos clínicos",
-              "7 casos originais comentados"
-            ],
-            [
-              "Questões autorais",
-              "12 questões com correção"
-            ],
-            [
-              "Imagens",
-              "12 candidatas planejadas, nenhuma aprovada/incorporada"
-            ],
-            [
-              "Contagem de 60.000 caracteres úteis",
-              "Não atingida/certificada nesta primeira versão"
-            ],
-            [
-              "Revisão médica e QA desktop/PWA",
-              "Pendentes"
-            ],
-            [
-              "Publicação e deploy",
-              "<strong>NÃO realizados</strong>"
-            ]
-          ],
-          "book-table"
-        ],
-        [
-          "p",
-          "<strong>Teste de autossuficiência ainda não concluído:</strong> faltam fluxos completos de manejo sistêmico por perfil molecular/linha, detalhes completos do estadiamento FIGO, parâmetros nacionais de rastreamento em Lynch, aprofundamento da cirurgia em doença avançada, testes de consistência dos casos e liberação de imagens. Para aprovação, reavaliar capítulo por capítulo, sem duplicações artificiais."
-        ]
-      ]
-    ],
-    [
-      "estadiamento-cirurgico-figo-2023-e-classificacao-molecular",
-      0,
-      [
-        [
-          "2",
-          "Classificação Molecular do Câncer de Endométrio (TCGA) e Atualizações do Estadiamento FIGO 2023"
-        ],
-        [
-          "p",
-          "O estadiamento do câncer de endométrio é estritamente cirúrgico-patológico, baseado na laparotomia ou videolaparoscopia com histerectomia total extrafascial, salpingo-ooforectomia bilateral e avaliação linfonodal pélvica e para-aórtica (sendo a pesquisa do linfonodo sentinela por injeção cervical de verde de indocianina o padrão-ouro contemporâneo para reduzir linfedema de membros inferiores)."
-        ],
-        [
-          "p",
-          "Historicamente, os carcinomas de endométrio eram divididos no modelo dual de Bokhman: <strong>Tipo I (Endometrioide)</strong> — correspondendo a 80% dos casos, associado a hiperestrogenismo sem oposição progestagênica, obesidade, síndrome metabólica, receptores hormonais positivos, mutações no gene PTEN e excelente sobrevida global; e <strong>Tipo II (Não Endometrioide)</strong> — incluindo carcinomas serosos e de células claras, associados a atrofia endometrial prévia, idade avançada, mutações no gene TP53, comportamento altamente agressivo e padrão de disseminação peritoneal semelhante ao câncer de ovário."
-        ],
-        [
-          "p",
-          "A incorporação da <strong>Classificação Molecular do TCGA (The Cancer Genome Atlas)</strong>, agora integrada formalmente ao estadiamento <strong>FIGO 2023</strong>, divide os tumores em quatro grupos prognósticos independentes:"
-        ],
-        [
-          "t",
-          [
-            "Subgrupo Molecular (TCGA)",
-            "Alteração Genética Chave",
-            "Prognóstico e Implicações Terapêuticas"
-          ],
-          [
-            [
-              "<strong>POLE ultramutado (POLEmut)</strong>",
-              "Mutações no domínio exonucleásico da DNA polimerase epsilon (POLE)",
-              "Prognóstico excepcionalmente excelente; sobrevida livre de progressão próxima a 100%, permitindo descalonamento seguro de terapias adjuvantes mesmo em tumores de alto grau histológico."
-            ],
-            [
-              "<strong>Instabilidade de Microssatélites (MSI-H / dMMR)</strong>",
-              "Deficiência das proteínas de reparo do DNA (MLH1, MSH2, MSH6, PMS2)",
-              "Prognóstico intermediário; forte associação com Síndrome de Lynch (câncer colorretal e endometrial hereditário); excelente sensibilidade a inibidores de checkpoint imune (Pembrolizumabe e Dostarlimabe)."
-            ],
-            [
-              "<strong>Copy Number Low (NSMP - No Specific Molecular Profile)</strong>",
-              "Sem mutações POLE, sem dMMR e sem mutação em TP53",
-              "Prognóstico intermediário; corresponde à maioria dos tumores endometrioides de baixo grau grau 1/2 com alta expressão de receptores de estrogênio e progesterona (candidatos à hormonioterapia adjuvante)."
-            ],
-            [
-              "<strong>Copy Number High (p53 anormal / p53abn)</strong>",
-              "Mutações missense ou nulas no gene supressor tumoral TP53",
-              "Prognóstico desfavorável; associado a carcinomas serosos e carcinomas de alto grau histológico; indicação formal de quimioterapia adjuvante baseada em platina + taxano associada à radioterapia pélvica."
-            ]
-          ],
-          "book-table"
-        ],
-        [
-          "p",
-          "<strong>Atualização Crucial FIGO 2023:</strong> No estadiamento FIGO atualizado, o status molecular pode alterar o estádio clínico-patológico de uma paciente. A presença de perfil <em>POLEmut</em> comprovado em tumores confinados ao corpo uterino (estádios I e II convencionais) reduz a classificação de risco prognóstico, enquanto a presença de mutação em <em>p53</em> eleva automaticamente tumores antes classificados como I ou II para estágios mais avançados com recomendação imperativa de terapia adjuvante combinada."
-        ]
-      ]
-    ],
-    [
-      "complemento-avancado-especializado",
-      0,
-      [
-        [
-          "2",
-          "Complemento de Oncologia Ginecológica: Estratificação Molecular FIGO 2023, Testagem Universal de Lynch e Mapeamento de Linfonodo Sentinela"
-        ],
-        [
-          "3",
-          "1. Revolução Molecular FIGO 2023 e Implicações Terapêuticas Diretas"
-        ],
-        [
-          "p",
-          "A incorporação definitiva dos quatro subgrupos moleculares do consórcio The Cancer Genome Atlas (TCGA) nas diretrizes mundiais da FIGO 2023 transformou integralmente o estadiamento e o tratamento do câncer de endométrio. A classificação histológica clássica de Bokhman (Tipo I endometrioide estrogênio-dependente de baixo grau vs. Tipo II não endometrioide de alto grau) foi superada pela biologia molecular, que dita o risco de recorrência e a sensibilidade a drogas específicas."
-        ],
-        [
-          "t",
-          [
-            "Subgrupo Molecular FIGO 2023",
-            "Assinatura Genômica / Biomarcador",
-            "Comportamento Biológico e Prognóstico",
-            "Conduta Terapêutica de Escolha"
-          ],
-          [
-            [
-              "<strong>POLE ultramutado (POLEmut)</strong>",
-              "Mutações no domínio catalítico da exonuclease da DNA polimerase epsilon (POLE). Exibe carga mutacional tumoral (TMB) extraordinariamente elevada.",
-              "<strong>Excelente prognóstico clínico</strong>, com sobrevida livre de progressão superior a 95%, mesmo em tumores morfologicamente indiferenciados (G3) ou com invasão miometrial profunda.",
-              "Permite <strong>descalonamento terapêutico seguro</strong>: dispensa quimioterapia adjuvante sistêmica e radioterapia externa pélvica em estádios precoces (FIGO I e II), evitando toxicidade desnecessária."
-            ],
-            [
-              "<strong>Deficiência do Mismatch Repair (dMMR / MSI-H)</strong>",
-              "Perda de expressão imuno-histoquímica das proteínas de reparo de DNA (MLH1, PMS2, MSH2 ou MSH6) ou hipermetilação epigenética do promotor de MLH1.",
-              "Prognóstico intermediário. Frequente apresentação com infiltrado inflamatório linfocítico peritumoral abundante e invasão de espaço linfovascular.",
-              "Indicação universal de rastreamento reflexo para <strong>Síndrome de Lynch</strong>. Resposta terapêutica exuberante aos inibidores de PD-1 (Pembrolizumabe ou Dostarlimabe) em fases avançadas ou recidivadas."
-            ],
-            [
-              "<strong>Sem Perfil Molecular Específico (NSMP / p53wt)</strong>",
-              "Expressão intacta / normal de p53 à imuno-histoquímica; genes de MMR íntegros (pMMR); ausência de mutação no gene POLE.",
-              "Prognóstico intermediário, correlacionado rigorosamente a fatores histopatológicos tradicionais (grau de diferenciação, infiltração do estroma cervical e invasão linfovascular).",
-              "Alta positividade para receptores hormonais de estrogênio (RE) e progesterona (RP). Responde à braquiterapia vaginal de cúpula e à hormonioterapia com acetato de megestrol em casos específicos."
-            ],
-            [
-              "<strong>p53 anormal (p53abn)</strong>",
-              "Expressão aberrante difusa de p53 (mutant pattern: superexpressão nuclear em > 80% das células ou perda total completa de sinal 'null pattern').",
-              "<strong>Pior prognóstico oncológico</strong>. Altíssima propensão a disseminação peritoneal, carcinomatose e metástases linfonodais e a distância.",
-              "Exige conduta cirúrgica multimodal agressiva com estadiamento peritoneal completo e <strong>quimioterapia adjuvante combinada (Carboplatina + Paclitaxel) associada à radioterapia pélvica externa</strong>."
-            ]
-          ],
-          "book-table"
-        ],
-        [
-          "3",
-          "2. Técnica e Vantagens do Mapeamento do Linfonodo Sentinela (SLN) com ICG"
-        ],
-        [
-          "p",
-          "O algoritmo contemporâneo de cirurgia ginecológica oncológica adotou amplamente o mapeamento do Linfonodo Sentinela (SLN) guiado por fluorescência com <strong>Verde de Indocianina (ICG)</strong> para estadiamento inicial de pacientes com doença clinicamente limitada ao corpo uterino:"
-        ],
-        [
-          "u",
-          [
-            "<strong>Técnica de Injeção:</strong> Aplicação submucosa (superficial - 1 a 2 mm) e estromal (profunda - 1 a 2 cm) de 1 a 2 mL de solução de verde de indocianina nas posições de 3 e 9 horas do colo uterino imediatamente após a indução anestésica. O ICG drena através dos pedículos linfáticos parametriais para os linfonodos ilíacos internos, ilíacos externos e obturatórios.",
-            "<strong>Protocolo de Ultrastadiamento Anatomopatológico:</strong> Os linfonodos sentinelas identificados e ressecados são encaminhados a protocolo histológico específico, com cortes histológicos micrométricos seriados e pesquisa imuno-histoquímica automatizada para citoqueratinas (anti-pan-CK). Esse processo permite a identificação acurada de <strong>micrometástases</strong> (lesões entre 0,2 e 2,0 mm) e de <strong>células tumorais isoladas (ITCs < 0,2 mm)</strong>, que passariam despercebidas no exame anatomopatológico convencional por hematoxilina-eosina de rotina.",
-            "<strong>Morbidade Reduzida:</strong> A técnica do linfonodo sentinela reduz dramaticamente as taxas de linfedema crônico dos membros inferiores, linfocele dolorosa pélvica e lesões nervosas vasculares quando comparada à linfadenectomia sistemática radical pélvica e retroperitoneal aórtica, mantendo taxas idênticas de detecção metastática nodal e sobrevida global."
-          ]
-        ]
-      ]
-    ],
-    [
-      "complemento-especializado-fase2",
-      0,
-      [
-        [
-          "2",
-          "Abordagem Cirúrgica Robótica, Preservação de Fertilidade e Terapia Sistêmica em Doença Metastática"
-        ],
-        [
-          "3",
-          "1. Protocolo de Preservação de Fertilidade em Mulheres Jovens com Câncer de Endométrio"
-        ],
-        [
-          "p",
-          "Embora o adenocarcinoma de endométrio seja predominantemente uma doença de mulheres na pós-menopausa (pico entre 60 e 70 anos), aproximadamente 5% dos diagnósticos ocorrem em pacientes com menos de 40 anos com desejo reprodutivo não constituído. Para casos altamente selecionados, pode-se considerar uma estratégia conservadora de preservação uterina temporária sob rigoroso termo de consentimento livre e esclarecido."
-        ],
-        [
-          "t",
-          [
-            "Critério Obrigatório para Preservação Uterina",
-            "Método de Avaliação e Confirmação Diagnóstica",
-            "Mecanismo / Justificativa Oncológica"
-          ],
-          [
-            [
-              "Subtipo Histológico Estrito",
-              "Adenocarcinoma endometrioide <strong>Grau 1 (bem diferenciado)</strong> confirmado por revisão anatomopatológica especializada por dois patologistas ginecológicos.",
-              "Subtipos seroso, células claras, carcinossarcoma ou endometrioide grau 2-3 possuem alto risco de disseminação miometrial oculta e metastatização precoce, contraindicando manejo conservador."
-            ],
-            [
-              "Ausência de Invasão Miometrial",
-              "Ressonância Magnética (RM) de pelve de alta resolução com protocolo específico para endométrio (sequências ponderadas em T2 e difusão DWI com mapa ADC).",
-              "A presença de qualquer grau de infiltração miometrial ou invasão de estroma cervical inviabiliza a terapia conservadora por risco inaceitável de progressão."
-            ],
-            [
-              "Ausência de Doença Anexial ou Extrauterina",
-              "RM de pelve confirmando ovários e tubas normais + TC ou PET-CT de estadiamento toracoabdominal.",
-              "Exclui metástases ovarianas sincrônicas ou metástases linfonodais ocultas (frequentes em mulheres jovens com Síndrome de Lynch)."
-            ],
-            [
-              "Receptores Hormonais Fortemente Positivos",
-              "Imuno-histoquímica demonstrando positividade expressiva (&gt; 50-80%) para receptor de progesterona (RP).",
-              "Preditor essencial de resposta farmacológica à terapia progestacional em altas doses."
-            ]
-          ],
-          "book-table"
-        ],
-        [
-          "3",
-          "2. Esquema Farmacológico Conservador e Monitoramento Histeroscópico Seriado"
-        ],
-        [
-          "p",
-          "O tratamento medicamentoso de escolha consiste em:"
-        ],
-        [
-          "u",
-          [
-            "<strong>Acetato de Megestrol:</strong> 160 a 320 mg/dia por via oral; OU",
-            "<strong>Dispositivo Intrauterino liberador de Levonorgestrel (DIU-LNG 52 mg):</strong> Associado ou não a agonistas de GnRH ou progestágenos orais, proporcionando concentrações endometriais ultra-altas com mínima absorção sistêmica."
-          ]
-        ],
-        [
-          "p",
-          "A avaliação de resposta deve ser realizada obrigatoriamente a cada <strong>3 a 6 meses</strong> mediante <strong>videohisteroscopia diagnóstica com biópsia endometrial fracionada dirigida</strong>. Caso se confirme resposta histológica completa (ausência de atipias e atrofia endometrial farmacológica induzida) em duas biópsias consecutivas, a paciente é imediatamente liberada para reprodução assistida (FIV) para encurtar o tempo até a gestação. A <strong>histerectomia total com salpingo-ooforectomia bilateral profilática</strong> é recomendada de maneira definitiva e mandatória logo após o término da prole ou em caso de persistência tumoral após 9 a 12 meses de tratamento progestacional contínuo."
-        ],
-        [
-          "3",
-          "3. Tratamento Sistêmico de Segunda Linha e Terapia Imunooncológica Combinada"
-        ],
-        [
-          "p",
-          "Para pacientes com adenocarcinoma de endométrio avançado recidivado ou metastático que progrediram à quimioterapia de primeira linha com platina, o tratamento de escolha baseia-se na caracterização do status de reparo de DNA (MMR):"
-        ],
-        [
-          "t",
-          [
-            "Status de Reparo de DNA (MMR)",
-            "Regime Terapêutico Sistêmico",
-            "Evidência Clínica (Ensaio Clínico Fase III)",
-            "Taxa de Resposta e Sobrevida"
-          ],
-          [
-            [
-              "Deficiência de Reparo (dMMR / MSI-H)",
-              "<strong>Pembrolizumabe</strong> 200 mg IV a cada 3 semanas OU <strong>Dostarlimabe</strong> 500 mg IV a cada 3 semanas.",
-              "Estudos KEYNOTE-158 e GARNET.",
-              "Taxa de resposta objetiva (ORR) de 45 a 50%, com respostas duradouras (&gt; 24 meses) e excelente perfil de tolerabilidade."
-            ],
-            [
-              "Reparo Competente (pMMR / MSS)",
-              "<strong>Lenvatinibe (20 mg/dia VO) + Pembrolizumabe (200 mg IV a cada 3 semanas)</strong>.",
-              "Estudo KEYNOTE-775 / Study 309.",
-              "Primeira combinação a demonstrar ganho estatisticamente significativo de sobrevida global (SG) e sobrevida livre de progressão (SLP) em comparação à quimioterapia com doxorrubicina ou paclitaxel semanal em tumores pMMR."
-            ]
-          ],
-          "book-table"
-        ]
-      ]
-    ],
-    [
-      "complemento-final-especializado",
-      0,
-      [
-        [
-          "2",
-          "Estratégias de Radioterapia Adjuvante, Tratamento de Recidivas Locorregionais e Toxicidades Tardias"
-        ],
-        [
-          "3",
-          "1. Planejamento da Radioterapia Adjuvante: Braquiterapia de Cúpula Vaginal vs. Teleterapia Pélvica Externa (EBRT)"
-        ],
-        [
-          "p",
-          "A radioterapia desempenha papel fundamental no controle locorregional pós-operatório do adenocarcinoma endometrial. A escolha da modalidade radioterápica é guiada rigorosamente pela estratificação de risco (estádios FIGO, grau histológico, profundidade de invasão miometrial, idade da paciente, presença de invasão do espaço linfovascular e status molecular):"
-        ],
-        [
-          "t",
-          [
-            "Categoria de Risco / Estádio",
-            "Critérios Anatomopatológicos e Moleculares",
-            "Indicação de Radioterapia Adjuvante",
-            "Racional Clínico e Evidência (Ensaios PORTEC)"
-          ],
-          [
-            [
-              "Baixo Risco",
-              "Estádio IA (G1 ou G2), invasão miometrial &lt; 50%, ausência de LVSI; qualquer estádio IA/IB POLE mutado.",
-              "<strong>Nenhuma terapia adjuvante</strong> indicada (apenas observação clínica e ginecológica periódica).",
-              "Taxa de recidiva locorregional &lt; 3-5%; toxicidade de radiação não traz benefício de sobrevida."
-            ],
-            [
-              "Risco Intermediário",
-              "Estádio IA (G3) ou Estádio IB (G1/G2), com critérios adicionais de risco (idade &ge; 60 anos, invasão miometrial &ge; 50%).",
-              "<strong>Braquiterapia de Alta Taxa de Dose (HDR) de Cúpula Vaginal isolada</strong>.",
-              "O estudo PORTEC-2 demonstrou que a braquiterapia vaginal oferece o mesmo controle local pélvico que a radioterapia externa (EBRT), com incidência significativamente menor de toxicidade gastrointestinal e vesical tardia."
-            ],
-            [
-              "Risco Alto-Intermediário / Alto Risco",
-              "Estádio IB G3 com LVSI substancial; Estádio II (envolvimento do estroma cervical); ou qualquer estádio com subtipo p53 anormal / seroso.",
-              "<strong>Radioterapia Pélvica Externa (EBRT)</strong> associada a <strong>Braquiterapia de Cúpula Vaginal</strong> &plusmn; <strong>Quimioterapia baseada em platina</strong>.",
-              "O estudo PORTEC-3 demonstrou benefício significativo em sobrevida livre de recorrência e sobrevida global com a adição de quimioterapia adjuvante (Carboplatina + Paclitaxel concomitante e adjuvante à EBRT) em tumores de alto risco, principalmente naqueles com perfil p53 anormal."
-            ],
-            [
-              "Estádio III (Acometimento de Serosa, Anexos, Vagina ou Linfonodos Pélvicos / Para-Aórticos)",
-              "Disseminação locorregional extrauterina comprovada no estadiamento cirúrgico.",
-              "<strong>Tratamento Sistêmico Combinado Obrigatório: Quimioterapia sistêmica (Carboplatina + Paclitaxel por 6 ciclos) associada à EBRT com campo estendido</strong> se acometimento linfonodal para-aórtico.",
-              "Prevenção de falha locorregional pélvica associada a controle eficaz de micrometástases hematogênicas a distância."
-            ]
-          ],
-          "book-table"
-        ],
-        [
-          "3",
-          "2. Manejo Clínico da Recidiva Vaginal Isolada"
-        ],
-        [
-          "p",
-          "Em pacientes que não receberam radioterapia prévia no pós-operatório inicial e apresentam recidiva confinada estritamente à cúpula vaginal (diagnosticada em exame especular de rotina ou investigação de sangramento vaginal), o tratamento radioterápico de resgate com intento curativo consiste em:"
-        ],
-        [
-          "u",
-          [
-            "<strong>Teleterapia Pélvica Externa (EBRT)</strong> na dose de 45 a 50,4 Gy; ASSOCIADA a:",
-            "<strong>Braquiterapia intersticial ou de cúpula vaginal HDR</strong> para reforço de dose na lesão tumoral (dose total biologicamente efetiva &ge; 70 a 80 Gy)."
-          ]
-        ],
-        [
-          "p",
-          "Essa abordagem alcança taxas de sobrevida global em 5 anos e controle local duradouro de até 60% a 70% nas recidivas vaginais puras virgens de radiação. Caso a paciente já tenha recebido radiação pélvica prévia, as opções incluem ressecção cirúrgica de resgate ampla (exenteração pélvica em casos altamente selecionados) ou quimioterapia associada à imunoterapia sistêmica."
-        ],
-        [
-          "3",
-          "3. Vigilância Pós-Tratamento e Prevenção de Complicações Tardias"
-        ],
-        [
-          "p",
-          "O seguimento oncológico deve ser realizado a cada 3 a 4 meses nos primeiros 2 anos (período em que se concentram 75% a 80% das recidivas), passando para a cada 6 meses entre o 3º e o 5º ano, e anualmente a partir de então:"
-        ],
-        [
-          "u",
-          [
-            "<strong>Exame Clínico-Ginecológico Rigoroso:</strong> Inspeção da vulva, exame especular cuidadoso da cúpula vaginal (sítio mais frequente de recidiva local isolada) e toque retovaginal bimanual. A citologia de cúpula vaginal não é recomendada de rotina em pacientes assintomáticas devido ao baixo rendimento e alto índice de atipias actínicas radiogênicas falso-positivas.",
-            "<strong>Prevenção de Estenose Vaginal Actínica:</strong> O uso regular de dilatadores vaginais de silicone acoplados a hidratantes ginecológicos à base de ácido hialurônico ou estrogênio tópico de baixa absorção (quando autorizado pela oncologia) deve ser iniciado 2 a 4 semanas após o término da braquiterapia para manter a elasticidade vaginal e viabilizar relações sexuais satisfatórias e exames ginecológicos futuros."
-          ]
-        ]
-      ]
-    ],
-    [
-      "complemento-micro-normativo",
-      0,
-      [
-        [
-          "2",
-          "Síndromes Hereditárias Associadas ao Câncer Endometrial: Critérios de Amsterdam II e Bethesda"
-        ],
-        [
-          "3",
-          "1. Síndrome de Lynch (Câncer Colorretal Hereditário Não Polipoide - HNPCC)"
-        ],
-        [
-          "p",
-          "A Síndrome de Lynch é responsável por 3% a 5% de todos os carcinomas endometriais, sendo a causa hereditária monogênica mais prevalente. Em mulheres portadoras de mutações germinativas nos genes de reparo de DNA (especialmente <em>MSH2</em> e <em>MSH6</em>, seguidos por <em>MLH1</em> e <em>PMS2</em>), o risco cumulativo de desenvolver câncer de endométrio ao longo da vida atinge impressionantes 40% a 60%, superando inclusive o risco de câncer colorretal nestas pacientes."
-        ],
-        [
-          "p",
-          "Muitas vezes, o câncer de endométrio é a neoplasia sentinela da Síndrome de Lynch, manifestando-se clinicamente até uma década antes do aparecimento do câncer colorretal. Por essa razão, os consensos internacionais (NCCN, ESMO e FIGO) recomendam a <strong>testagem imuno-histoquímica universal reflexa</strong> para as quatro proteínas de MMR em todas as peças cirúrgicas de câncer de endométrio ressecadas, independentemente da idade da paciente ou do histórico familiar relatado."
-        ]
-      ]
-    ],
-    [
-      "estrategia-rastreamento-linch",
-      0,
-      [
-        [
-          "2",
-          "Protocolos de Triagem em Síndromes Familiares e Vigilância Ginecológica"
-        ],
-        [
-          "3",
-          "1. Critérios de Rastreamento Clínico em Familiares de Primeiro Grau"
-        ],
-        [
-          "p",
-          "Em familiares de primeiro grau de portadoras confirmadas de Síndrome de Lynch, a vigilância clínica estruturada deve ser iniciada aos 30 a 35 anos de idade (ou 5 a 10 anos antes do caso mais jovem diagnosticado na árvore genealógica). Essa vigilância contempla:"
-        ],
-        [
-          "u",
-          [
-            "Ultrassonografia transvaginal anual associada à dosagem de CA-125 sérico, com o objetivo de detectar precocemente alterações na espessura endometrial e massas anexiais ovarianas assintomáticas.",
-            "Biópsia endometrial aspirativa anual ou bienal de consultório (utilizando cânula de Pipelle), que demonstrou sensibilidade superior a 90% para a identificação de hiperplasia endometrial com atipia ou adenocarcinoma incipiente em mulheres assintomáticas sob alto risco genético.",
-            "Colonoscopia bianual a partir dos 20 a 25 anos para vigilância concomitante do trato gastrointestinal inferior."
-          ]
-        ],
-        [
-          "p",
-          "Ao completarem a prole planejada (geralmente por volta dos 40 a 45 anos), a cirurgia redutora de risco profilática (histerectomia total com salpingo-ooforectomia bilateral) elimina virtualmente o risco de morte por câncer de endométrio e ovário, consolidando-se como o padrão-ouro de prevenção primária nessas pacientes."
+          "<strong>Sangramento pós-menopausa:</strong> FEBRASGO 2025 discute biópsia diante de suspeita clínica, mas também admite acompanhamento de episódio único de baixo risco e endométrio regular inferior a 4 mm, com amostragem se recorrente. ACOG 2026, como atualização internacional, favorece amostragem inicial na maioria. <strong>Tratamento:</strong> diretrizes SBOC 2026 consideram restrições de acesso e relevância clínica no Brasil; orientações ESGO 2025 complementam, mas não significam incorporação automática. <strong>Estadiamento:</strong> a Sociedade Brasileira de Patologia de 2026 emprega FIGO 2023 e destaca MMR, p53 e POLE."
         ]
       ]
     ]

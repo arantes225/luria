@@ -23,10 +23,6 @@
       "Introdução e Fundamentos"
     ],
     [
-      "0-auditoria-editorial-benchmark-e-decisao-de-escopo",
-      "0. Auditoria editorial, benchmark e decisão de escopo"
-    ],
-    [
       "1-introducao-e-principio-de-localizacao",
       "1. Introdução e princípio de localização"
     ],
@@ -87,18 +83,6 @@
       "15. Questões autorais comentadas — alternativas justificadas"
     ],
     [
-      "16-imagens-e-figuras-candidatas-nao-inserir-ate-aprovacao",
-      "16. Imagens e figuras candidatas — não inserir até aprovação"
-    ],
-    [
-      "17-referencias-primarias-e-institucionais",
-      "17. Referências primárias e institucionais"
-    ],
-    [
-      "18-matriz-de-qualidade-pendencias",
-      "18. Matriz de qualidade / pendências"
-    ],
-    [
       "19-interpretacao-de-resultados-dificeis-clinica-enmg-liquor-e-imagem",
       "19. Interpretação de resultados difíceis: clínica, ENMG, líquor e imagem"
     ],
@@ -127,8 +111,8 @@
       "25. Questões avançadas de prova: interpretação em cenário"
     ],
     [
-      "26-nota-de-encerramento-desta-fase-de-redacao",
-      "26. Nota de encerramento desta fase de redação"
+      "17-referencias-primarias-e-institucionais",
+      "17. Referências primárias e institucionais"
     ]
   ],
   "q": [
@@ -142,41 +126,15 @@
         ],
         [
           "p",
+          "<strong>Em 30 segundos:</strong> antes de chamar toda fraqueza de neuropatia, localizar a lesão: nervo, raiz, músculo, placa neuromuscular ou sistema nervoso central. <strong>Fraqueza rapidamente progressiva, disfagia/disfonia, ortopneia, dispneia ou disautonomia requerem avaliação hospitalar de risco respiratório.</strong> Na suspeita de Guillain–Barré, o <a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-de-guillain-barre/view\" target=\"_blank\" rel=\"noopener noreferrer\">PCDT MS de SGB (anexo alterado em 2022)</a> é a referência brasileira de tratamento; o <a href=\"https://onlinelibrary.wiley.com/doi/10.1111/ene.16073\" target=\"_blank\" rel=\"noopener noreferrer\">consenso EAN/PNS 2023</a> complementa critérios e evidência, sem substituir elegibilidade SUS."
+        ],
+        [
+          "p",
           "<h1>LURIA — Apostila 228: Neuropatias periféricas e doenças neuromusculares</h1>\r\n<strong>Lote 11 · Clínica Médica · CM-11 · Manuscrito autoral de desenvolvimento 0.1 · 15/10/2026</strong>"
         ],
         [
           "p",
           "> <strong>ESTADO: EM DESENVOLVIMENTO / NÃO CERTIFICADO / NÃO PUBLICAR.</strong> Etapa zero com duas referências complementares do Drive concluída parcialmente para o conjunto sindrômico. Este documento não deve ser automaticamente transformado em HTML de produção. Faltam extensão ≥60.000 caracteres didáticos úteis, auditoria clínica integral, imagens reais licenciadas aprovadas pelo Admin e verificação de autossuficiência/desktop/PWA."
-        ]
-      ]
-    ],
-    [
-      "0-auditoria-editorial-benchmark-e-decisao-de-escopo",
-      0,
-      [
-        [
-          "2",
-          "0. Auditoria editorial, benchmark e decisão de escopo"
-        ],
-        [
-          "p",
-          "<strong>Tema LURIA:</strong> “Neuropatias periféricas e doenças neuromusculares”, apostila 228 no planejamento vigente do lote 11. Não foi identificada apostila própria correspondente entre os diretórios principais de apostilas lidos na branch `main` em 15/10/2026. Evitar repetir extensamente os capítulos de diabetes, reumatologia ou emergências respiratórias de outras obras; esta apostila precisa funcionar sozinha para o estudante."
-        ],
-        [
-          "p",
-          "<strong>Materiais consultados efetivamente no Google Drive (15/10/2026):</strong>\r<br>1. `06 - MIOPATIAS.pdf`, resumo de dermatomiosite, polimiosite, síndrome antissintetase, miopatia necrosante e terapêutica. O material possui avisos de circulação de terceiro e não oferece autorização para cópia. A instituição “Estratégia MED” <strong>não foi identificada com segurança</strong>.\r<br>2. `05 - COMPLICACOES CRONICAS DO DM.pdf`, lidas especialmente as seções 2, 2.1–2.7 sobre neuropatia diabética (fibras finas/grossas, rastreamento, formas autonômicas, cuidado com o pé e alívio sintomático). Também contém avisos de distribuição de terceiros e <strong>não deve ser reproduzido</strong>."
-        ],
-        [
-          "p",
-          "<strong>Limitação do benchmarking:</strong> nenhuma das referências equivale a uma apostila completa de doenças neuromusculares. Os temas Guillain-Barré, polirradiculoneuropatia inflamatória desmielinizante crônica, miastenia, neuropatias hereditárias e esclerose lateral amiotrófica exigem bibliografia primária própria. O padrão visual a preservar é o da LURIA, como `apostilas/cancer-de-mama/index.html` (capítulos e navegação lateral). A análise de cobertura é parcial, e não autoriza certificação integral."
-        ],
-        [
-          "p",
-          "<strong>Correções conceituais importantes em relação ao benchmark:</strong>\r<li>A neuropatia distal simétrica da diabetes é frequente, mas sintomas neuropáticos em uma pessoa diabética <strong>não dispensam</strong> o diagnóstico diferencial; padrões assimétricos, motores ou rapidamente progressivos são sinais de atipia. [ADA 2026].</li>\r<li>O monofilamento de 10 g serve principalmente para detectar <strong>perda de sensibilidade protetora e risco de ulceração</strong>, não substitui avaliação das fibras finas nem exame etiológico. [ADA 2026].</li>\r<li>Não oferecer ácido alfa-lipoico ou reposição de vitaminas sem deficiência como “restauração nervosa” comprovada; tratar deficiências documentadas e fatores causais.</li>\r<li>Paralisia isolada do terceiro nervo em diabetes pode poupar a pupila; <strong>midríase associada a dor ou déficit oculomotor exige avaliação urgente para aneurisma ou compressão</strong>, não atribuição automática a neuropatia diabética.</li>\r<li>Polimiosite é categoria diagnóstica atualmente mais restrita do que a representação de muitos resumos; reavaliar subtipos, autoanticorpos e biópsia antes de rotular.</li>\r<li>Em Guillain-Barré, <strong>proteína liquórica normal na primeira semana não afasta</strong> a doença; corticosteroide isolado não é tratamento de rotina eficaz. [EAN/PNS 2023].</li>"
-        ],
-        [
-          "p",
-          "<strong>Fontes de referência verificadas em pesquisa de 15/10/2026:</strong> ADA Standards of Care 2026 (neuropatia e pé), EAN/PNS Guillain-Barré 2023, EAN/PNS CIDP 2021, consenso internacional de miastenia 2016/2020, British Society for Rheumatology miosites 2022, IMACS rastreamento de neoplasia associada à miosite 2023, PCDT brasileiro Guillain-Barré (anexo atualizado em 2022; catálogo consultado em 2025)."
         ]
       ]
     ],
@@ -499,6 +457,45 @@
         [
           "p",
           "Reabilitação precoce, manejo de dor, prevenção de úlceras, suporte psicológico e monitoramento de disfagia acompanham o tratamento imunológico. O prognóstico varia; déficit residual e fadiga podem persistir mesmo após estabilização imunológica."
+        ],
+        [
+          "3",
+          "Segurança — nenhum exame normal inicial exclui piora respiratória"
+        ],
+        [
+          "t",
+          [
+            "Problema",
+            "Sinal ou dado relevante",
+            "Conduta de raciocínio"
+          ],
+          [
+            [
+              "Progressão rápida de paresia",
+              "Fraqueza ascendendo, incapacidade de caminhar, déficit bulbar",
+              "Admitir/avaliar monitorização hospitalar, capacidade vital e função bulbar"
+            ],
+            [
+              "Risco respiratório",
+              "Dispneia, ortopneia, tosse fraca, dificuldade em contar, esforço ventilatório",
+              "Avaliar função respiratória seriada e suporte antes de falha tardia; SpO₂ normal não exclui hipoventilação iminente"
+            ],
+            [
+              "Diagnóstico precoce",
+              "Líquor e ENMG podem ser pouco alterados na primeira semana",
+              "Não aguardar alteração de exames para conduzir paciente grave"
+            ],
+            [
+              "Tratamento imunomodulador",
+              "IVIG 0,4 g/kg/dia por 5 dias ou plasmaférese em elegíveis",
+              "Corticosteroides isolados não são eficazes para tratar SGB; segunda IVIG automática não é recomendada"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Fonte brasileira prioritária:</strong> <a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-de-guillain-barre/view\" target=\"_blank\" rel=\"noopener noreferrer\">PCDT MS SGB</a>. <strong>Comparação:</strong> <a href=\"https://onlinelibrary.wiley.com/doi/10.1111/ene.16073\" target=\"_blank\" rel=\"noopener noreferrer\">EAN/PNS 2023</a> recomenda IVIG 0,4 g/kg/d por cinco dias em pacientes elegíveis e plasmaférese conforme tempo desde início; desaconselha corticoides isolados e segundo curso indiscriminado de IVIG. A função respiratória exige vigilância clínica seriada mesmo com saturação inicialmente preservada."
         ]
       ]
     ],
@@ -935,128 +932,6 @@
       ]
     ],
     [
-      "16-imagens-e-figuras-candidatas-nao-inserir-ate-aprovacao",
-      0,
-      [
-        [
-          "2",
-          "16. Imagens e figuras candidatas — não inserir até aprovação"
-        ],
-        [
-          "p",
-          "Procurar e auditar ≥10 imagens candidatas em fontes institucionais com uso comercial explicitamente permitido. São propostas pedagógicas, <strong>não URLs validadas</strong>:\r<br>1. Diagrama <strong>original</strong> de localização neuroeixo→raiz→plexo→nervo→junção→músculo (§2).\r<br>2. Ilustração <strong>original</strong> dos campos sensitivos/fibras finas versus grossas (§2).\r<br>3. Fotografia clínica real de atrofia interóssea com licença (§6).\r<br>4. Diagrama de territórios do mediano e fibular <strong>autoral</strong> (§6).\r<br>5. Curva original de tempo para SGB (<4 semanas) versus CIDP (>8 semanas) (§7–8).\r<br>6. Exemplo <strong>real autorizado</strong> de ENMG desmielinizante com legenda sobre bloqueio de condução (§8).\r<br>7. Exame real de nervo periférico de artigo/licença verificável (§4).\r<br>8. Fotografia real de pápulas de Gottron (§10), com consentimento/licença.\r<br>9. Fotografia real de sinal heliotrópico (§10), com consentimento/licença.\r<br>10. RM muscular real em STIR compatível com edema de miosite (§10).\r<br>11. Fotomicrografia muscular real de miopatia necrosante ou inclusão (§10).\r<br>12. Exemplo original de avaliação da força MRC e reflexos segmentares (§2)."
-        ],
-        [
-          "p",
-          "Cada candidata futura deverá conter nome, instituição, autoria, tipo de licença, confirmação de uso comercial, `candidate_key`, seção/legenda e nota didática, passar pela fila Admin e WebP ≤110 KiB conforme padrão; <strong>nenhuma está aprovada</strong>."
-        ]
-      ]
-    ],
-    [
-      "17-referencias-primarias-e-institucionais",
-      0,
-      [
-        [
-          "2",
-          "17. Referências primárias e institucionais"
-        ],
-        [
-          "p",
-          "1. American Diabetes Association. <strong>Retinopathy, Neuropathy, and Foot Care: Standards of Care in Diabetes—2026</strong>. Diabetes Care. DOI: 10.2337/dc26-s012. https://doi.org/10.2337/dc26-s012\r<br>2. England JD et al. <strong>Practice Parameter: evaluation of distal symmetric polyneuropathy—laboratory and genetic testing</strong>. Neurology. 2009. https://pubmed.ncbi.nlm.nih.gov/19627867/\r<br>3. Van Doorn PA et al. <strong>EAN/PNS Guideline on diagnosis and treatment of Guillain–Barré syndrome</strong>. Eur J Neurol. 2023. https://doi.org/10.1111/ene.16073\r<br>4. Brasil, Ministério da Saúde. <strong>PCDT Síndrome de Guillain-Barré</strong> (anexo alterado 01/04/2022; página atualizada em 21/01/2025). https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-de-guillain-barre/view\r<br>5. Van den Bergh PYK et al. <strong>EAN/PNS guideline on diagnosis and treatment of CIDP</strong>, segunda revisão. Eur J Neurol. 2021. https://doi.org/10.1111/ene.14959\r<br>6. Sanders DB et al. <strong>International consensus guidance for management of myasthenia gravis: executive summary</strong>. Neurology. 2016. https://pmc.ncbi.nlm.nih.gov/articles/PMC4977114/\r<br>7. Narayanaswami P et al. <strong>International consensus guidance for management of myasthenia gravis: 2020 update</strong>. Neurology. 2021. https://pubmed.ncbi.nlm.nih.gov/33144515/\r<br>8. Oldroyd AGS et al. <strong>British Society for Rheumatology guideline on idiopathic inflammatory myopathy</strong>. Rheumatology. 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9398208/\r<br>9. Oldroyd AGS et al. <strong>International Guideline for Idiopathic Inflammatory Myopathy-Associated Cancer Screening</strong>. Nat Rev Rheumatol. 2023. https://doi.org/10.1038/s41584-023-01045-w\r<br>10. AANEM. <strong>Diagnostic and Screening Laboratory Tests in the Assessment of Patients With Small Fiber Neuropathy: An Evidence-Based Review</strong>. Muscle Nerve. 2026. https://doi.org/10.1002/mus.70119"
-        ]
-      ]
-    ],
-    [
-      "18-matriz-de-qualidade-pendencias",
-      0,
-      [
-        [
-          "2",
-          "18. Matriz de qualidade / pendências"
-        ],
-        [
-          "t",
-          [
-            "Domínio",
-            "Cobertura nesta versão",
-            "Situação"
-          ],
-          [
-            [
-              "Localização, fisiopatologia inicial e padrões clínicos",
-              "§§1–3",
-              "Núcleo escrito; aprofundar neuroanatomia, critérios de testes"
-            ],
-            [
-              "Polineuropatia e investigação",
-              "§4–5",
-              "Núcleo escrito, necessitam algoritmo de etiologia e medidas"
-            ],
-            [
-              "Mononeuropatia e radiculopatia",
-              "§6",
-              "Inicial; expandir protocolos por nervo"
-            ],
-            [
-              "Guillain-Barré",
-              "§7",
-              "Bases, diferencial e terapia; expandir UTI, prognóstico, variações e casos"
-            ],
-            [
-              "CIDP",
-              "§8",
-              "Núcleo; expandir critérios eletrofisiológicos e monitoramento"
-            ],
-            [
-              "Miastenia",
-              "§9",
-              "Núcleo; expandir MGFA, terapia e farmacologia por cenários"
-            ],
-            [
-              "Miopatias inflamatórias e não inflamatórias",
-              "§10",
-              "Núcleo; aprofundar biópsia, autoanticorpos e órgãos-alvo"
-            ],
-            [
-              "ELA, neuropatia motora e hereditárias",
-              "§11",
-              "Cobertura inicial, não autossuficiente"
-            ],
-            [
-              "Fluxos/tabelas/casos/questões",
-              "§§12–15",
-              "6 casos, 8 questões iniciais; ampliar níveis e revisar gabaritos"
-            ],
-            [
-              "Bibliografia atual",
-              "§17",
-              "Referências reais rastreáveis, checagem por afirmação ainda pendente"
-            ],
-            [
-              "Imagens reais e licença",
-              "§16",
-              "NÃO APROVADAS; não integrar até triagem Admin"
-            ],
-            [
-              "Meta editorial ≥60K didáticos úteis",
-              "Documento inteiro",
-              "<strong>NÃO ALCANÇADA/VALIDAÇÃO PENDENTE</strong>"
-            ],
-            [
-              "Testes HTML desktop/PWA e autossuficiência",
-              "Não aplicável ao Markdown",
-              "<strong>PENDENTE</strong>"
-            ]
-          ],
-          "book-table"
-        ],
-        [
-          "p",
-          "<strong>Decisão editorial final desta etapa:</strong> conservar o manuscrito 228 como <strong>rascunho em branch editorial</strong>, não alterar `main`, não gerar HTML incompleto ou inserir imagens sem licença e não anunciar como apostila certificada. Próxima iteração: aprofundar critérios SGB/CIDP, miastenia e miosites, expandir 4+ cenários de interpretação de exames, alargar parte terapêutica com segurança e completar matriz formal de rastreabilidade questão→capítulo."
-        ]
-      ]
-    ],
-    [
       "19-interpretacao-de-resultados-dificeis-clinica-enmg-liquor-e-imagem",
       0,
       [
@@ -1441,16 +1316,20 @@
       ]
     ],
     [
-      "26-nota-de-encerramento-desta-fase-de-redacao",
+      "17-referencias-primarias-e-institucionais",
       0,
       [
         [
           "2",
-          "26. Nota de encerramento desta fase de redação"
+          "17. Referências primárias e institucionais"
         ],
         [
           "p",
-          "Esta expansão acrescenta raciocínio original para ENMG e LCR, avaliação da gravidade respiratória, efeitos medicamentosos/nutricionais, interpretação de autoanticorpos, reabilitação, quatro novos casos e seis questões comentadas. <strong>Ainda é obrigatório</strong> fazer revisão médica afirmação a afirmação, conferir referências, auditar a proporção de caracteres realmente didáticos, selecionar e aprovar imagens clínicas reais em fluxo Admin e validar a futura edição HTML em desktop e PWA. Não tratar contagem bruta como selo de qualidade."
+          "1. American Diabetes Association. <strong>Retinopathy, Neuropathy, and Foot Care: Standards of Care in Diabetes—2026</strong>. Diabetes Care. DOI: 10.2337/dc26-s012. https://doi.org/10.2337/dc26-s012\r<br>2. England JD et al. <strong>Practice Parameter: evaluation of distal symmetric polyneuropathy—laboratory and genetic testing</strong>. Neurology. 2009. https://pubmed.ncbi.nlm.nih.gov/19627867/\r<br>3. Van Doorn PA et al. <strong>EAN/PNS Guideline on diagnosis and treatment of Guillain–Barré syndrome</strong>. Eur J Neurol. 2023. https://doi.org/10.1111/ene.16073\r<br>4. Brasil, Ministério da Saúde. <strong>PCDT Síndrome de Guillain-Barré</strong> (anexo alterado 01/04/2022; página atualizada em 21/01/2025). https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-de-guillain-barre/view\r<br>5. Van den Bergh PYK et al. <strong>EAN/PNS guideline on diagnosis and treatment of CIDP</strong>, segunda revisão. Eur J Neurol. 2021. https://doi.org/10.1111/ene.14959\r<br>6. Sanders DB et al. <strong>International consensus guidance for management of myasthenia gravis: executive summary</strong>. Neurology. 2016. https://pmc.ncbi.nlm.nih.gov/articles/PMC4977114/\r<br>7. Narayanaswami P et al. <strong>International consensus guidance for management of myasthenia gravis: 2020 update</strong>. Neurology. 2021. https://pubmed.ncbi.nlm.nih.gov/33144515/\r<br>8. Oldroyd AGS et al. <strong>British Society for Rheumatology guideline on idiopathic inflammatory myopathy</strong>. Rheumatology. 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9398208/\r<br>9. Oldroyd AGS et al. <strong>International Guideline for Idiopathic Inflammatory Myopathy-Associated Cancer Screening</strong>. Nat Rev Rheumatol. 2023. https://doi.org/10.1038/s41584-023-01045-w\r<br>10. AANEM. <strong>Diagnostic and Screening Laboratory Tests in the Assessment of Patients With Small Fiber Neuropathy: An Evidence-Based Review</strong>. Muscle Nerve. 2026. https://doi.org/10.1002/mus.70119"
+        ],
+        [
+          "p",
+          "<strong>Hierarquia nacional:</strong> <a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-de-guillain-barre/view\" target=\"_blank\" rel=\"noopener noreferrer\">MS, PCDT Síndrome de Guillain–Barré (anexo 2022)</a> para cuidado no SUS. <strong>Evidência internacional complementar:</strong> <a href=\"https://onlinelibrary.wiley.com/doi/10.1111/ene.16073\" target=\"_blank\" rel=\"noopener noreferrer\">EAN/PNS 2023</a> sobre IVIG, plasmaférese, ENMG e risco respiratório. As indicações e doses devem ser confirmadas nos documentos originais."
         ]
       ]
     ]
