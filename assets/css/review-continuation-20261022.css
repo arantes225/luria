@@ -16,6 +16,31 @@ body .luria-page-spotlight.review-title-card .review-back-in-spotlight {
   flex: 0 0 auto !important;
 }
 
+@layer luria-ui-education {
+  /* Back actions moved into the title card must fit its content on mobile. */
+  @media(max-width:720px) {
+    body[data-ui="v2"][data-ui-context="study"] .main .luria-page-spotlight.review-title-card {
+      height:auto!important;
+      max-height:none!important;
+      min-height:118px!important;
+      flex-direction:column!important;
+      align-items:flex-start!important;
+      justify-content:flex-start!important;
+      gap:16px!important;
+    }
+    body[data-ui="v2"][data-ui-context="study"] .main .review-title-card .luria-page-spotlight-copy {
+      flex:0 1 auto!important;
+      width:100%!important;
+      min-width:0!important;
+    }
+    body[data-ui="v2"][data-ui-context="study"] .main .review-title-card .luria-back-button {
+      align-self:flex-start!important;
+      margin:0!important;
+      max-width:100%!important;
+    }
+  }
+}
+
 /* Dashboard: the app shelf should expose the complete study surface. */
 body[data-page="dashboard"] .dashboard-app-grid {
   align-items: stretch !important;

@@ -196,7 +196,7 @@ body[data-page="professor_alex"] .alex-live-call-btn {
   border-radius: 999px !important;
   border: 1.5px solid rgba(37, 99, 235, 0.4) !important;
   background: linear-gradient(135deg, rgba(24, 72, 136, 0.95), rgba(37, 99, 235, 0.95)) !important;
-  color: #FFFFFF !important;
+  color: var(--color-text-primary) !important;
   font-size: 13.5px !important;
   font-weight: 700 !important;
   cursor: pointer !important;
