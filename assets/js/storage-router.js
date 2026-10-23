@@ -85,7 +85,7 @@
   // Optional private Cloudflare R2 bridge. It is inert until explicitly registered
   // and a route is switched. JWTs are sent only as authorization headers.
   function r2Client(config) {
-    const endpoint = String(config.endpoint || "").replace(/\\/+$/, "");
+    const endpoint = String(config.endpoint || "").replace(/\/+$/, "");
     const origin = new URL(endpoint);
     if (origin.protocol !== "https:" && !(origin.protocol === "http:" && ["localhost", "127.0.0.1"].includes(origin.hostname))) {
       throw new Error("Endpoint R2 precisa usar HTTPS.");
