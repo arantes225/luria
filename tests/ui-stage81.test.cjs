@@ -44,6 +44,23 @@ test('Escape keeps its game edition beside the link back to the games hub',()=>{
  assert.doesNotMatch(css,/\.e-page-title-actions \.g-edition \{\s*display: none !important;/);
 });
 
+test('Annotated learning and review homes retain their named actions and metrics',()=>{
+ const consolidate=read('consolidar/index.html'),questions=read('questoes-simulados/index.html'),errors=read('caderno-erros/index.html'),css=read('assets/css/review-continuation-20261022.css');
+ for(const label of ['Praticar →','Revisar →','Revisar erros →']) assert.match(consolidate,new RegExp(label.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')));
+ for(const label of ['Questões e Simulados','Abrir questões do dia →']) assert.match(questions,new RegExp(label.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')));
+ for(const label of ['Caderno de Erros','Revisar agora →']) assert.match(errors,new RegExp(label.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')));
+ assert.match(css,/#qs-home-daily-count,[\s\S]*#review-launcher-count,[\s\S]*#error-home-due-count/);
+ assert.match(css,/\.error-metric-summary-grid > :last-child[\s\S]*grid-column: 1 \/ -1 !important/);
+});
+
+test('Annotated game entry and play surfaces retain their labels and responsive controls',()=>{
+ const hub=read('jogos/index.html'),hall=read('jogos/study-rats/hall.js'),board=read('jogos/study-rats/index.html'),studyRats=read('jogos/study-rats/game.js'),quick=read('assets/js/games/relampago.js'),sequence=read('assets/js/games/sequencia.js'),escape=read('assets/js/games/escape.js'),css=read('assets/css/review-continuation-20261022.css');
+ for(const [source,label] of [[hub,'Jogos disponíveis'],[hall,'Prepare sua próxima corrida'],[hall,'Jogar demonstração'],[board,'Partida demonstrativa · 4 jogadores'],[studyRats,'Valor do dado: '],[quick,'O relógio corre.'],[sequence,'A ordem muda'],[escape,'O turno termina.'],[escape,'9 cenas interativas']]) assert.match(source,new RegExp(label.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')));
+ assert.match(css,/\.games-section-label \{\s*display: flex !important/);
+ assert.match(css,/\.g-setup select \{[\s\S]*border-radius: 999px !important/);
+ assert.match(css,/\.review-escape-summary \{[\s\S]*grid-template-columns:/);
+});
+
 test('Simulation library keeps content separate from tools and preserves selection/menu handlers',t=>{
  const {w,d}=page(t,'questoes-simulados/index.html'),source=read('assets/js/questoes-simulados.js');
  w.qsState={sets:[{id:'s1',title:'Título longo '.repeat(12),total_questions:18,metrics:{answered:2,correct:1,wrong:1}}],selectedSetIds:new Set()};
