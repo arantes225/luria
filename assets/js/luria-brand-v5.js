@@ -18,6 +18,18 @@
     reviewCss.href = "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4";
     document.head.appendChild(reviewCss);
   }
+  if (!document.getElementById("luria-review-continuation")) {
+    const continuationCss = document.createElement("link");
+    continuationCss.id = "luria-review-continuation-css";
+    continuationCss.rel = "stylesheet";
+    continuationCss.href = "/assets/css/review-continuation-20261022.css?v=1";
+    document.head.appendChild(continuationCss);
+    const continuationScript = document.createElement("script");
+    continuationScript.id = "luria-review-continuation";
+    continuationScript.defer = true;
+    continuationScript.src = "/assets/js/review-continuation-20261022.js?v=1";
+    document.head.appendChild(continuationScript);
+  }
 
   const LOGOS = {
     light: "assets/img/logos/logo-icone-original.png?v=luria9",

@@ -1,0 +1,249 @@
+/* Follow-up visual corrections from the second product review.  The rules are
+   page-scoped and only adjust presentation around the existing LURIA markup. */
+
+/* Shared title cards and back actions. */
+body .luria-page-spotlight.review-title-card {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 18px !important;
+}
+body .luria-page-spotlight.review-title-card .luria-page-spotlight-copy {
+  min-width: 0 !important;
+}
+body .luria-page-spotlight.review-title-card .review-back-in-spotlight {
+  margin: 0 0 0 auto !important;
+  flex: 0 0 auto !important;
+}
+
+/* Dashboard: the app shelf should expose the complete study surface. */
+body[data-page="dashboard"] .dashboard-app-grid {
+  align-items: stretch !important;
+}
+body[data-page="dashboard"] .dashboard-app-card {
+  min-height: 116px !important;
+}
+body[data-page="dashboard"] .dashboard-app-copy > span {
+  overflow-wrap: anywhere !important;
+}
+
+/* Cronograma. */
+body[data-page="cronograma"] .planner-day,
+body[data-page="cronograma"] .planner-day-header,
+body[data-page="cronograma"] .planner-day-body {
+  border-radius: 16px !important;
+}
+body[data-page="cronograma"] .planner-day {
+  border: 1px solid var(--border) !important;
+  overflow: hidden !important;
+  background: var(--surface) !important;
+}
+body[data-page="cronograma"] .planner-day-header {
+  border-bottom: 1px solid var(--border) !important;
+  background: color-mix(in srgb, var(--accent-soft) 58%, var(--surface)) !important;
+}
+body[data-page="cronograma"] .planner-day-header strong,
+body[data-page="cronograma"] .planner-day-header span {
+  color: var(--accent) !important;
+}
+
+/* Professor Alex: keep the conversation inside the workspace. */
+body[data-page="professor_alex"] .alex-chat-container {
+  min-height: 0 !important;
+  overflow: hidden !important;
+}
+body[data-page="professor_alex"] .alex-chat-feed {
+  min-height: 0 !important;
+  height: 100% !important;
+  max-height: none !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain !important;
+  scrollbar-gutter: stable !important;
+}
+
+/* Apostilas: remove editorial-only controls from the public library and keep
+   annotation tools inside the reading column. */
+body[data-page="aprender"] .books-page .production-lots,
+body[data-page="aprender"] .books-page .library-book-link {
+  display: none !important;
+}
+body.apostila-reading-layout-v2 .book-outline,
+body.apostila-reading-layout-v2 .book-tools,
+body.apostila-reading-layout-v2 .book-tool-btn,
+body.apostila-reading-layout-v2 .book-highlight-palette,
+body.apostila-reading-layout-v2 .book-postit-palette {
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+body.apostila-reading-layout-v2 .book-tools {
+  overflow: hidden !important;
+}
+body.apostila-reading-layout-v2 .book-highlight-palette,
+body.apostila-reading-layout-v2 .book-postit-palette {
+  flex-wrap: wrap !important;
+  overflow: hidden !important;
+}
+body.apostila-reading-layout-v2 .book-section figure,
+body.apostila-reading-layout-v2 .book-section img {
+  position: relative !important;
+}
+body.apostila-reading-layout-v2 .book-section figure {
+  padding: 12px !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 14px !important;
+  background: color-mix(in srgb, var(--surface-2) 82%, var(--surface)) !important;
+}
+body.apostila-reading-layout-v2 .book-section figure img {
+  background: var(--surface-2) !important;
+  padding: 8px !important;
+  border-radius: 10px !important;
+}
+body[data-page="aprender"] .books-page .library-section {
+  margin-top: 18px !important;
+}
+
+/* Consolidar, Questões, Flashcards and Caderno de Erros share one action
+   language: centered content, full-width primary actions and wide metrics. */
+body[data-page="consolidar"] .learn-card .learn-cta,
+body[data-page="consolidar"] .learn-card a,
+body[data-page="consolidar"] .learn-card button,
+body[data-page="questoes"] #qs-start-daily,
+body[data-page="flashcards"] #start-review-session,
+body[data-page="erros"] #error-daily-review-open {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-height: 48px !important;
+  border-radius: 999px !important;
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #4fc3f7, #7687ff)) !important;
+  color: var(--luria-btn-text-blue, #08101f) !important;
+  border-color: transparent !important;
+  font-weight: 800 !important;
+}
+body[data-page="consolidar"] .learn-card .learn-cta:hover,
+body[data-page="consolidar"] .learn-card a:hover,
+body[data-page="consolidar"] .learn-card button:hover,
+body[data-page="questoes"] #qs-start-daily:hover,
+body[data-page="flashcards"] #start-review-session:hover,
+body[data-page="erros"] #error-daily-review-open:hover {
+  filter: brightness(1.06) !important;
+  transform: translateY(-1px) !important;
+}
+body[data-page="questoes"] #qs-daily-card,
+body[data-page="flashcards"] .flash-daily-review-card,
+body[data-page="erros"] #error-daily-card {
+  align-items: center !important;
+  text-align: center !important;
+}
+body[data-page="questoes"] #qs-daily-card .qs-home-system-copy,
+body[data-page="flashcards"] .flash-daily-review-card .qs-home-system-copy,
+body[data-page="erros"] #error-daily-card .qs-home-system-copy {
+  justify-items: center !important;
+  text-align: center !important;
+}
+body[data-page="questoes"] #qs-daily-card .qs-home-daily-action,
+body[data-page="flashcards"] .flash-daily-review-card .qs-home-daily-action,
+body[data-page="erros"] #error-daily-card .qs-home-daily-action {
+  width: min(100%, 460px) !important;
+  align-items: stretch !important;
+  text-align: center !important;
+}
+body[data-page="questoes"] #qs-home-daily-count,
+body[data-page="flashcards"] #review-launcher-count,
+body[data-page="erros"] #error-daily-count {
+  align-self: center !important;
+  margin-inline: auto !important;
+}
+body[data-page="questoes"] .error-metric-summary-grid.qs-metric-4col > :last-child,
+body[data-page="erros"] .error-metric-summary-grid > :last-child {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+}
+body[data-page="erros"] .qs-home-my-lists-content {
+  grid-auto-columns: minmax(290px, 1fr) !important;
+}
+
+/* LuriaZap phone copy must never paint over another row. */
+body[data-page="plantao"] .plantao-phone-conversation {
+  min-height: 116px !important;
+}
+body[data-page="plantao"] .plantao-phone-conversation-main {
+  min-width: 0 !important;
+  overflow: hidden !important;
+}
+body[data-page="plantao"] .plantao-phone-conversation-title,
+body[data-page="plantao"] .plantao-phone-conversation-preview {
+  display: -webkit-box !important;
+  overflow: hidden !important;
+  overflow-wrap: anywhere !important;
+  -webkit-box-orient: vertical !important;
+}
+body[data-page="plantao"] .plantao-phone-conversation-title { -webkit-line-clamp: 2 !important; }
+body[data-page="plantao"] .plantao-phone-conversation-preview { -webkit-line-clamp: 3 !important; }
+
+/* Games hub and game setup cards. */
+body[data-page="jogos"] .games-section-label { display: none !important; }
+body[data-page="jogos"] .games-link,
+body[data-page="jogos"] .e-back-button,
+body[data-page="jogos"] .g-button:not(.g-secondary) {
+  border-radius: 999px !important;
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #4fc3f7, #7687ff)) !important;
+  color: var(--luria-btn-text-blue, #08101f) !important;
+  border-color: transparent !important;
+  font-weight: 800 !important;
+}
+body[data-page="jogos"] .g-top {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+  padding: 14px 18px !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 18px !important;
+  background: var(--surface) !important;
+}
+body[data-page="jogos"] .g-top .g-back { margin: 0 !important; }
+body[data-page="jogos"] .g-top .g-edition { display: none !important; }
+body[data-page="jogos"] .g-hero {
+  border-color: var(--border) !important;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 30%, var(--surface)), var(--surface)) !important;
+  box-shadow: var(--ui-shadow) !important;
+}
+body[data-page="jogos"] .g-setup select {
+  border-color: var(--border-interactive, var(--border)) !important;
+  border-radius: 999px !important;
+  background: var(--surface-2) !important;
+  color: var(--text) !important;
+}
+body[data-page="jogos"] .e-page-title-card {
+  border: 1px solid var(--border) !important;
+  border-radius: 20px !important;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 28%, var(--surface)), var(--surface)) !important;
+}
+body[data-page="jogos"] .e-page-title-actions .g-edition,
+body[data-page="jogos"] .e-page-title-actions .e-back-button { display: none !important; }
+body[data-page="jogos"] .e-page-title-card .review-escape-tags {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin: 16px 0 0 !important;
+}
+body[data-page="jogos"] .e-hero { display: none !important; }
+body[data-page="jogos"] .e-intro { margin-top: 16px !important; }
+body[data-page="jogos"] .e-story {
+  max-width: 980px !important;
+  margin-inline: auto !important;
+  padding: clamp(18px, 3vw, 30px) !important;
+}
+body[data-page="jogos"] .e-story .g-kicker { margin-bottom: 10px !important; }
+body[data-page="jogos"] .e-story .e-narrative { max-width: 720px !important; }
+
+@media (max-width: 720px) {
+  body .luria-page-spotlight.review-title-card { align-items: flex-start !important; flex-direction: column !important; }
+  body .luria-page-spotlight.review-title-card .review-back-in-spotlight { margin: 0 !important; }
+  body[data-page="jogos"] .g-top { align-items: flex-start !important; flex-direction: column !important; }
+  body[data-page="jogos"] .g-top .g-edition { margin-left: auto !important; }
+}
