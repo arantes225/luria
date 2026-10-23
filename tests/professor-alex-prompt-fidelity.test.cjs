@@ -14,6 +14,14 @@ test("Professor Alex prompt mestre contains core anti-robotic rules", () => {
   assert.match(promptsFile, /como uma pessoa conversando no WhatsApp/);
 });
 
+test("ASD-STE100 clarity adaptation applies without erasing medical precision or conversational mode", () => {
+  assert.match(promptsFile, /ASD-STE100/);
+  assert.match(promptsFile, /terminologia médica precisa e consistente/);
+  assert.match(promptsFile, /dúvida simples merece resposta curta/);
+  assert.match(promptsFile, /precisão científica > intenção da pergunta/);
+  assert.match(edgeFile, /ASD-STE100/);
+});
+
 test("Modo Estourado contains maximum fury, authentic curse words, and aggressive directives", () => {
   assert.match(promptsFile, /MODO ESTOURADO \(INTENSIDADE MÁXIMA DE FÚRIA 5 DE 5\)/);
   assert.match(promptsFile, /preceptor mais casca-grossa, furioso, boca-suja, impaciente/);
