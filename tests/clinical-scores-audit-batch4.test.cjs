@@ -91,7 +91,7 @@ test('CIWA-Ar impede cálculo se a cooperação for impossível',()=>{
  assert.match(c.safetyNote,/não utilizar/i);
 });
 test('HINTS impede padrão falsamente periférico sem treinamento',()=>{
- assert.match(source,/id="h_train"/);
+ assert.match(source,/selectField\("O examinador tem treinamento específico em HINTS\?","h_train"/);
  assert.match(source,/h_train"\)\.value!==1/);
  assert.match(get('hints').safetyNote,/treinado/i);
 });
