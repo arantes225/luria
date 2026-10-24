@@ -4,6 +4,7 @@
  */
 const HEADERS = {"content-type":"application/json; charset=utf-8","cache-control":"no-store","x-content-type-options":"nosniff"};
 const LEADS = new Set(["I","II","III","aVR","aVL","aVF","V1","V2","V3","V4","V5","V6","global"]);
+const FEATURES = new Set(["ST_ELEVATION","ST_DEPRESSION","T_INVERSION","T_PEAKED","Q_PATHOLOGIC","RHYTHM","PR_ABNORMAL","QRS_ABNORMAL","QT_ABNORMAL","AXIS_ABNORMAL","OTHER"]);
 const RATES = {"gpt-6-luna":[0.10,0.50],"gpt-6.1-sol":[2,10],"claude-haiku-5-5":[0.10,0.50]};
 function reply(data,status,origin) {
   const headers = new Headers(HEADERS);
@@ -16,10 +17,13 @@ function reply(data,status,origin) {
 const prompt = [
   "APENAS TESTE COM ECG DE REFERENCIA NAO ASSOCIADO A PACIENTE.",
   "Descreva possiveis alteracoes observaveis por derivacao. Nunca assuma diagnostico.",
+  "Uma observacao deve ter lead e feature padronizada. Informe um achado por observacao.",
+  "Categorias feature: ST_ELEVATION, ST_DEPRESSION, T_INVERSION, T_PEAKED, Q_PATHOLOGIC, RHYTHM, PR_ABNORMAL, QRS_ABNORMAL, QT_ABNORMAL, AXIS_ABNORMAL, OTHER.",
+  "Se usar feature OTHER ou nao conseguir distinguir um padrao, descreva limitacoes e nao invente certeza.",
   "Nunca invente medidas de ST, PR, QRS, QTc ou eixo quando nao conseguir medi-las.",
   "Nao exclua isquemia aguda com base em exame normal. Nao recomende tratamento.",
   "Retorne SOMENTE JSON valido com o formato abaixo:",
-  '{"quality":"adequate|unclear","observations":[{"lead":"II","finding":"texto","evidence":"texto","certainty":"low|moderate|high"}],"differential":["hipotese"],"limitations":["texto"],"urgent_patterns":["texto"]}'
+  '{"quality":"adequate|unclear","observations":[{"lead":"II","feature":"ST_ELEVATION","finding":"texto","evidence":"texto","certainty":"low|moderate|high"}],"differential":["hipotese"],"limitations":["texto"],"urgent_patterns":["texto"]}'
 ].join("\n");
 function normalized(raw) {
   const data=String(raw||""); const a=data.indexOf("{"),b=data.lastIndexOf("}");
@@ -30,7 +34,7 @@ function normalized(raw) {
   const list=s=>Array.isArray(s)?s.slice(0,8).map(t):[];
   return {quality:p.quality==="adequate"?"adequate":"unclear",
     observations:p.observations.slice(0,32).filter(x=>LEADS.has(x?.lead)).map(x=>({
-      lead:x.lead,finding:t(x.finding),evidence:t(x.evidence),
+      lead:x.lead,feature:FEATURES.has(x.feature)?x.feature:"OTHER",finding:t(x.finding),evidence:t(x.evidence),
       certainty:["low","moderate","high"].includes(x.certainty)?x.certainty:"low"})),
     differential:list(p.differential),limitations:list(p.limitations),urgent_patterns:list(p.urgent_patterns)};
 }
@@ -42,7 +46,7 @@ function cost(model,usage) {
 async function openai(env,model,url) {
   const response=await fetch("https://api.openai.com/v1/responses",{
     method:"POST",headers:{authorization:"Bearer "+env.OPENAI_API_KEY,"content-type":"application/json"},
-    body:JSON.stringify({model,store:false,max_output_tokens:1000,input:[{
+    body:JSON.stringify({model,store:false,max_output_tokens:1400,input:[{
       role:"user",content:[{type:"input_text",text:prompt},{type:"input_image",image_url:url,detail:"high"}]}]}),
     signal:AbortSignal.timeout(40000)});
   if(!response.ok)throw Error("openai_unavailable");
@@ -55,7 +59,7 @@ async function anthropic(env,data) {
   const model="claude-haiku-5-5";
   const response=await fetch("https://api.anthropic.com/v1/messages",{
     method:"POST",headers:{"x-api-key":env.ANTHROPIC_API_KEY,"anthropic-version":"2023-06-01","content-type":"application/json"},
-    body:JSON.stringify({model,max_tokens:1000,messages:[{role:"user",content:[
+    body:JSON.stringify({model,max_tokens:1400,messages:[{role:"user",content:[
       {type:"text",text:prompt},{type:"image",source:{type:"base64",media_type:"image/png",data}}]}]}),
     signal:AbortSignal.timeout(40000)});
   if(!response.ok)throw Error("anthropic_unavailable");
@@ -80,14 +84,60 @@ function base64(bytes) {
   return btoa(s);
 }
 function compare(a,b) {
-  const leadSet=analysis=>new Set(analysis.observations.map(x=>x.lead));
-  const x=leadSet(a.analysis),y=leadSet(b.analysis);
-  const differingLeads=[...new Set([...x,...y])].filter(lead=>x.has(lead)!==y.has(lead));
+  // Match a specific feature IN a specific lead. This is a reconciliation aid, not a vote.
+  const key=o=>o.lead+"|"+o.feature;
+  const featuresA=new Set(a.analysis.observations.filter(o=>o.feature!=="OTHER").map(key));
+  const featuresB=new Set(b.analysis.observations.filter(o=>o.feature!=="OTHER").map(key));
+  const onlyA=[...featuresA].filter(x=>!featuresB.has(x));
+  const onlyB=[...featuresB].filter(x=>!featuresA.has(x));
+  const overlap=[...featuresA].filter(x=>featuresB.has(x));
   const urgentPatterns=[...a.analysis.urgent_patterns,...b.analysis.urgent_patterns].slice(0,12);
-  return {differingLeads,urgentPatterns,qualityConcern:a.analysis.quality!=="adequate"||b.analysis.quality!=="adequate",
-    // Agreement is NOT evidence of safety, and this does not validate any diagnostic claim.
-    physicianReviewRequired:true};
+  return {onlyFirstModel:onlyA,onlySecondModel:onlyB,sharedReportedFeatures:overlap,
+    unclassifiedFindings:[a,b].some(x=>x.analysis.observations.some(o=>o.feature==="OTHER")),
+    urgentPatterns,qualityConcern:a.analysis.quality!=="adequate"||b.analysis.quality!=="adequate",
+    physicianReviewRequired:true,modelAgreementDoesNotExcludeDisease:true};
 }
+function parsePositiveLimit(value) {
+  const n=Number(value);
+  return Number.isFinite(n)&&n>0?n:0;
+}
+async function reserveBenchmarkBudget(env,wantsEscalation) {
+  // Fail-closed without a durable, shared counter. Reservations are intentionally
+  // overestimated, not reconciled, to prevent repeat requests from draining credits.
+  if(!env.ECG_BENCHMARK_QUOTA) return false;
+  const usdLimit=parsePositiveLimit(env.ECG_BENCHMARK_DAILY_USD_LIMIT);
+  const maxRequests=Math.floor(parsePositiveLimit(env.ECG_BENCHMARK_DAILY_MAX_REQUESTS));
+  if(!usdLimit||!maxRequests)return false;
+  const reserveUsd=wantsEscalation?0.20:0.03;
+  const id=env.ECG_BENCHMARK_QUOTA.idFromName("ecg-benchmark-"+new Date().toISOString().slice(0,10));
+  const quota=env.ECG_BENCHMARK_QUOTA.get(id);
+  const result=await quota.fetch("https://ecg-budget.invalid/reserve",{
+    method:"POST",headers:{"content-type":"application/json"},
+    body:JSON.stringify({reserveUsd,usdLimit,maxRequests})
+  });
+  return result.ok;
+}
+/** Strongly consistent spending-reservation counter for benchmark ONLY. */
+export class EcgBenchmarkQuota {
+  constructor(state) { this.state=state; }
+  async fetch(request) {
+    if(request.method!=="POST"||new URL(request.url).pathname!=="/reserve")
+      return new Response(null,{status:404});
+    const {reserveUsd,usdLimit,maxRequests}=await request.json();
+    if(![reserveUsd,usdLimit,maxRequests].every(x=>Number.isFinite(x)&&x>0))
+      return new Response(null,{status:400});
+    const allowed=this.state.storage.transactionSync(()=>{
+      const used=Number(this.state.storage.kv.get("reserved_usd")||0);
+      const requests=Number(this.state.storage.kv.get("requests")||0);
+      if(requests>=maxRequests||used+reserveUsd>usdLimit+1e-9)return false;
+      this.state.storage.kv.put("reserved_usd",used+reserveUsd);
+      this.state.storage.kv.put("requests",requests+1);
+      return true;
+    });
+    return new Response(null,{status:allowed?204:429});
+  }
+}
+
 export default {
   async fetch(request,env) {
     const origin=request.headers.get("origin")||"";
@@ -112,14 +162,26 @@ export default {
       const obj=await env.ECG_BENCHMARK_R2.get("ecg-benchmarks/"+id+".png");
       if(!obj)return reply({error:"benchmark_not_found"},404,origin);
       if(obj.size>3*1024*1024)return reply({error:"image_too_large"},413,origin);
-      const image=base64(new Uint8Array(await obj.arrayBuffer()));
+      const bytes=new Uint8Array(await obj.arrayBuffer());
+      // Reject bogus/too-small images before they become billable AI requests.
+      const pngSignature=[137,80,78,71,13,10,26,10];
+      if(bytes.length<24||!pngSignature.every((x,i)=>bytes[i]===x))
+        return reply({error:"invalid_benchmark_png"},415,origin);
+      const v=new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength);
+      const width=v.getUint32(16),height=v.getUint32(20);
+      if(width<900||height<450||width>10000||height>10000)
+        return reply({error:"insufficient_image_resolution"},422,origin);
+      const escalationAllowed=body.escalate===true && env.ECG_ENABLE_ESCALATION==="true";
+      if(!(await reserveBenchmarkBudget(env,escalationAllowed)))
+        return reply({error:"benchmark_budget_exhausted_or_unavailable"},429,origin);
+      const image=base64(bytes);
       const results=await Promise.allSettled([
         openai(env,"gpt-6-luna","data:image/png;base64,"+image),anthropic(env,image)]);
       if(results.some(x=>x.status!=="fulfilled"))
         return reply({error:"independent_reading_incomplete"},502,origin);
       const readings=results.map(x=>x.value);
       let escalation=null;
-      if(body.escalate===true && env.ECG_ENABLE_ESCALATION==="true")
+      if(escalationAllowed)
         try {escalation=await openai(env,"gpt-6.1-sol","data:image/png;base64,"+image);}
         catch {escalation={error:"strong_model_unavailable"};}
       const all=[...readings,...(escalation?.model?[escalation]:[])];
