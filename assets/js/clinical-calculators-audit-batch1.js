@@ -153,10 +153,11 @@
   document.addEventListener("click",event=>{
     if (!event.target?.closest) return;
     const control=event.target.closest("[data-open]");
-    if (!control || !ids.has(control.dataset.open)) return;
+    if (!control) return;
     const id=control.dataset.open, d=defs[id], modal=document.querySelector("#calc-modal");
-    if (!modal || !d) return;
-    modal.dataset.clinicalAuditId=id;
+    if (!modal) return;
+    modal.dataset.clinicalAuditId=ids.has(id)?id:"";
+    if (!ids.has(id) || !d) return;
     const formula=modal.querySelector(".formula");
     if (formula && d.reference) {
       const citation=document.createElement("p");
