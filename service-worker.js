@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261024-clinical-audit-batch3";
+const CACHE_VERSION = "luria-pwa-20261024-clinical-audit-batch4";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
