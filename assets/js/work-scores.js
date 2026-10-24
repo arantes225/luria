@@ -57,7 +57,7 @@
     {
       id:"cha2ds2vasc",name:"CHA₂DS₂-VASc",category:"Cardiologia",aliases:"fibrilação atrial AVC anticoagulação",desc:"Estimativa de risco tromboembólico em fibrilação atrial.",tags:["FA","Anticoagulação"],
       questions:[
-        q("Insuficiência cardíaca / disfunção VE",yesno()),q("Hipertensão",yesno()),
+        q("Insuficiência cardíaca / disfunção VE",yesno()),q("Hipertensão (inclusive tratada)",yesno()),
         q("Idade",[opt("<65 anos",0),opt("65–74 anos",1),opt("≥75 anos",2)]),
         q("Diabetes mellitus",yesno()),q("AVC/AIT/tromboembolismo prévio",yesno(2)),
         q("Doença vascular",yesno()),q("Sexo feminino",yesno())
@@ -68,9 +68,9 @@
     {
       id:"hasbled",name:"HAS-BLED",category:"Cardiologia",aliases:"sangramento anticoagulação FA",desc:"Identifica fatores associados a maior risco de sangramento.",tags:["FA","Anticoagulação"],
       questions:[
-        q("Hipertensão não controlada",yesno()),q("Função renal anormal",yesno()),q("Função hepática anormal",yesno()),
-        q("AVC prévio",yesno()),q("Sangramento prévio/predisposição",yesno()),q("INR lábil",yesno()),
-        q("Idade >65 anos",yesno()),q("Fármacos que aumentam sangramento",yesno()),q("Álcool",yesno())
+        q("PAS persistentemente >160 mmHg",yesno()),q("Função renal anormal",yesno()),q("Função hepática anormal",yesno()),
+        q("AVC prévio",yesno()),q("Sangramento prévio/predisposição",yesno()),q("INR lábil na varfarina (tempo na faixa terapêutica <60%)",yesno()),
+        q("Idade >65 anos",yesno()),q("Fármacos que aumentam sangramento",yesno()),q("Consumo excessivo de álcool (≥8 unidades/semana)",yesno())
       ],
       interpret:(n)=> n>=3 ? "HAS-BLED ≥3: alto risco de sangramento. Identifique e corrija fatores modificáveis e faça seguimento mais próximo; o escore, isoladamente, não é motivo para negar anticoagulação." : "HAS-BLED 0–2: abaixo do ponto de corte de alto risco; ainda assim, revisar fatores modificáveis e reavaliar periodicamente.",
       reference:"Pisters R et al. Chest. 2010;138:1093–1100."
@@ -81,7 +81,7 @@
         q("Sinais clínicos de TVP",[opt("Não",0),opt("Sim",3)]),
         q("Diagnóstico alternativo menos provável que TEP",[opt("Não",0),opt("Sim",3)]),
         q("FC >100 bpm",[opt("Não",0),opt("Sim",1.5)]),
-        q("Imobilização >3 dias ou cirurgia recente",[opt("Não",0),opt("Sim",1.5)]),
+        q("Imobilização ≥3 dias ou cirurgia nas últimas 4 semanas",[opt("Não",0),opt("Sim",1.5)]),
         q("TEP/TVP prévia",[opt("Não",0),opt("Sim",1.5)]),
         q("Hemoptise",yesno()),q("Malignidade ativa",yesno())
       ],
@@ -92,15 +92,15 @@
       id:"perc",name:"PERC",category:"Tromboembolismo",aliases:"embolia pulmonar TEP rule out",desc:"Critérios de exclusão de TEP em pacientes selecionados de baixo risco pré-teste.",tags:["PS","TEP"],
       questions:[
         q("Idade ≥50 anos",yesno()),q("FC ≥100 bpm",yesno()),q("SpO₂ <95%",yesno()),q("Edema unilateral de perna",yesno()),
-        q("Hemoptise",yesno()),q("Cirurgia/trauma recente",yesno()),q("TEP/TVP prévia",yesno()),q("Uso de estrogênio",yesno())
+        q("Hemoptise",yesno()),q("Cirurgia ou trauma com internação nas últimas 4 semanas",yesno()),q("TEP/TVP prévia",yesno()),q("Uso de estrogênio",yesno()),q("Probabilidade clínica pré-teste de TEP baixa (<15%) foi confirmada?",[opt("Sim",0),opt("Não ou incerta",1)])
       ],
-      interpret:(n)=> n===0 ? "PERC 0: em paciente com baixa probabilidade clínica pré-teste, permite excluir TEP sem D-dímero em cenários validados." : `PERC positivo: ${n} critério(s). Não diagnostica TEP; significa apenas que a regra não pode ser usada para encerrar a investigação.`,
+      interpret:(n)=> n===0 ? "PERC 0 com probabilidade pré-teste baixa confirmada: pode permitir dispensar testes adicionais em adultos apropriados; NÃO utilizar em contexto não validado." : `PERC positivo: ${n} critério(s). Não diagnostica TEP; significa apenas que a regra não pode ser usada para encerrar a investigação.`,
       reference:"Kline JA et al. J Thromb Haemost. 2004;2:1247–1255."
     },
     {
       id:"wellsdvt",name:"Wells para TVP",category:"Tromboembolismo",aliases:"trombose venosa profunda",desc:"Probabilidade clínica pré-teste de trombose venosa profunda.",tags:["PS","TVP"],
       questions:[
-        q("Câncer ativo",yesno()),q("Paralisia/paresia/imobilização de membro",yesno()),q("Acamado >3 dias ou cirurgia recente",yesno()),
+        q("Câncer ativo",yesno()),q("Paralisia/paresia/imobilização de membro",yesno()),q("Acamado ≥3 dias ou cirurgia maior nas últimas 12 semanas",yesno()),
         q("Dor à palpação no sistema venoso profundo",yesno()),q("Edema de toda a perna",yesno()),q("Panturrilha ≥3 cm maior",yesno()),
         q("Edema depressível restrito à perna sintomática",yesno()),q("Veias superficiais colaterais não varicosas",yesno()),q("TVP prévia",yesno()),
         q("Diagnóstico alternativo tão provável quanto TVP",[opt("Não",0),opt("Sim",-2)])
@@ -116,7 +116,7 @@
     },
     {
       id:"curb65",name:"CURB-65",category:"Respiratório",aliases:"pneumonia PAC",desc:"Estratificação de gravidade na pneumonia adquirida na comunidade.",tags:["Pneumonia","PS"],
-      questions:[q("Confusão nova",yesno()),q("Ureia >7 mmol/L (~19 mg/dL de BUN)",yesno()),q("FR ≥30 irpm",yesno()),q("PAS <90 ou PAD ≤60 mmHg",yesno()),q("Idade ≥65 anos",yesno())],
+      questions:[q("Confusão nova",yesno()),q("Ureia >7 mmol/L (≈42 mg/dL de ureia ou ≈19,6 mg/dL de BUN)",yesno()),q("FR ≥30 irpm",yesno()),q("PAS <90 ou PAD ≤60 mmHg",yesno()),q("Idade ≥65 anos",yesno())],
       interpret:sumInterpret([[0,1,"CURB-65 0–1: baixo risco pelo escore; manejo ambulatorial pode ser possível se não houver outros critérios de gravidade."],[2,2,"CURB-65 2: risco intermediário; considerar avaliação hospitalar/internação conforme contexto."],[3,5,"CURB-65 3–5: pneumonia grave pelo escore; avaliação hospitalar urgente e considerar cuidado intensivo conforme quadro."]]),
       reference:refs.curb
     },
@@ -152,7 +152,7 @@
       questions:[
         q("Bilirrubina total",[opt("<2 mg/dL",1),opt("2–3 mg/dL",2),opt(">3 mg/dL",3)]),
         q("Albumina",[opt(">3,5 g/dL",1),opt("2,8–3,5 g/dL",2),opt("<2,8 g/dL",3)]),
-        q("INR",[opt("<1,7",1),opt("1,7–2,3",2),opt(">2,3",3)]),
+        q("INR (sem interferência de anticoagulante)",[opt("<1,7",1),opt("1,7–2,3",2),opt(">2,3",3)]),
         q("Ascite",[opt("Ausente",1),opt("Leve/controlada",2),opt("Moderada/grave/refratária",3)]),
         q("Encefalopatia",[opt("Ausente",1),opt("Grau I–II",2),opt("Grau III–IV",3)])
       ],
@@ -163,13 +163,13 @@
     {id:"gbs",name:"Glasgow-Blatchford",category:"Gastro/Hepato",aliases:"hemorragia digestiva alta HDA",desc:"Estratificação inicial de risco na hemorragia digestiva alta.",tags:["HDA","PS"],custom:"gbs",reference:refs.gbs},
     {
       id:"bisap",name:"BISAP",category:"Gastro/Hepato",aliases:"pancreatite aguda",desc:"Estratificação precoce de gravidade na pancreatite aguda.",tags:["Pancreatite","PS"],
-      questions:[q("BUN >25 mg/dL",yesno()),q("Alteração do estado mental (GCS <15)",yesno()),q("SIRS presente",yesno()),q("Idade >60 anos",yesno()),q("Derrame pleural",yesno())],
+      questions:[q("BUN >25 mg/dL (nitrogênio ureico, não ureia total)",yesno()),q("Alteração do estado mental (GCS <15)",yesno()),q("SIRS ≥2 critérios nas primeiras 24 h",yesno()),q("Idade >60 anos",yesno()),q("Derrame pleural",yesno())],
       interpret:(n)=>n>=3?`BISAP ${n}/5: faixa de maior risco; escores ≥3 se associam a maior probabilidade de pancreatite grave e mortalidade.`:`BISAP ${n}/5: faixa de menor risco pelo escore; reavaliar clinicamente porque a gravidade pode evoluir nas primeiras 24–48 h.`,
       reference:refs.bisap
     },
     {
       id:"alvarado",name:"Alvarado",category:"Cirurgia",aliases:"apendicite MANTRELS",desc:"Estima a probabilidade clínica de apendicite aguda.",tags:["Cirurgia","Abdome agudo"],
-      questions:[q("Migração da dor para FID",yesno()),q("Anorexia",yesno()),q("Náuseas/vômitos",yesno()),q("Dor à palpação em FID",yesno(2)),q("Descompressão dolorosa",yesno()),q("Febre",yesno()),q("Leucocitose",yesno(2)),q("Desvio à esquerda",yesno())],
+      questions:[q("Migração da dor para FID",yesno()),q("Anorexia",yesno()),q("Náuseas/vômitos",yesno()),q("Dor à palpação em FID",yesno(2)),q("Descompressão dolorosa",yesno()),q("Temperatura ≥37,3 °C",yesno()),q("Leucócitos >10.000/µL",yesno(2)),q("Neutrófilos >75% ou desvio à esquerda",yesno())],
       interpret:sumInterpret([[0,4,"Alvarado 0–4: apendicite menos provável; observar evolução e considerar diagnósticos alternativos se a suspeita clínica persistir."],[5,6,"Alvarado 5–6: quadro compatível/intermediário; costuma justificar observação e investigação adicional."],[7,8,"Alvarado 7–8: alta probabilidade clínica de apendicite."],[9,10,"Alvarado 9–10: probabilidade clínica muito alta pelo escore."]]),
       reference:"Alvarado A. Ann Emerg Med. 1986;15:557–564."
     },
@@ -375,6 +375,14 @@
   ];
 
 
+  // Auditoria clínica 3/6: primeiros 19 escores.
+  const auditedScoreIds=["gcs","news2","qsofa","sofa","heart","cha2ds2vasc","hasbled","wellspe","perc","wellsdvt","spesi","curb65","nihss","abcd2","childpugh","meldna","gbs","bisap","alvarado"];
+  if(JSON.stringify(scores.slice(0,19).map(s=>s.id))!==JSON.stringify(auditedScoreIds))throw Error("Ordem dos primeiros 19 escores mudou");
+  const auditedNotes=["Registrar E/V/M individualmente; componentes não testáveis (intubação, edema, sedação) não devem receber pontuação normal/mínima arbitrária.","NEWS2 adulto: Escala 2 somente para hipercapnia confirmada e alvo SpO₂ 88–92% prescrito; uso contextualizado.","qSOFA não serve como triagem exclusiva nem exclui sepse com pontuação baixa.","SOFA clássico requer informação de suporte ventilatório, drogas vasoativas ≥1 hora, diurese/creatinina e nível basal.","HEART depende de ECG, história e troponina adequados; resultado não determina alta sem algoritmo seriado.","Sexo feminino isoladamente não indica anticoagulação. Considerar também CHA₂DS₂-VA e diretriz aplicável.","HAS-BLED destaca riscos modificáveis; não é motivo isolado para negar anticoagulação.","Wells TEP prediz probabilidade pré-teste; usar algoritmo com D-dímero e/ou imagem conforme apresentação.","PERC apenas em paciente selecionado com baixa probabilidade pré-teste clínica, nunca em alto risco.","Wells TVP estima probabilidade pré-teste; confirmar diagnóstico por teste apropriado.","sPESI é prognóstico APÓS TEP confirmado, não exclui TEP ou habilita alta isoladamente.","Ureia >7 mmol/L corresponde aproximadamente a 42 mg/dL de ureia OU 19,6 mg/dL de BUN.","NIHSS exige examinador treinado. Itens não testáveis não podem ser pontuados como normais.","ABCD² baixo não permite descartar AIT nem dispensar investigação urgente.","INR, ascite e encefalopatia podem ser afetados por tratamento e comorbidades; avaliar causa.","MELD-Na é modelo HISTÓRICO de 2016; para alocação atual de adulto usar MELD 3.0 OPTN.","GBS depende de BUN, hemoglobina e informações clínicas; resultado não substitui estabilidade clínica.","BISAP é calculado nas primeiras 24h; SIRS corresponde a 2 ou mais critérios.","Alvarado é instrumento auxiliar na apendicite; sintomas atípicos e gravidez requerem abordagem própria."];
+  for(let i=0;i<auditedScoreIds.length;i++){
+    const score=scores[i]; score.auditDate="2026-10-24";score.safetyNote=auditedNotes[i];
+    if(!score.reference)throw Error("Escore sem fonte: "+score.id);
+  }
   // Ampliação clínica — 24/10/2026. Pontuações dependem de preenchimento integral.
   // Classificações diagnósticas não devem ser usadas como diagnóstico definitivo.
   const expandedScoreDefs = [
@@ -703,6 +711,11 @@
       </div>`;
     $(".score-close",d).onclick=()=>d.close();
     renderForm(s);
+    if(s.safetyNote){
+      const note=document.createElement("p");note.className="score-warning";
+      note.textContent="Limitações de uso: "+s.safetyNote;
+      $("#score-form").prepend(note);
+    }
     $("#score-copy").onclick=()=>copyResult(s);
     $("#score-reset").onclick=()=>{renderForm(s);};
     d.showModal(); renderShelves();
@@ -725,6 +738,9 @@
     if(vals.some(v=>v==="")){
       setResult("—",phqRisk?"Item 9 positivo: avaliar risco de suicídio/autolesão imediatamente, mesmo antes da pontuação total.":"Preencha todos os campos.","");
       return;
+    }
+    if(s.id==="perc"&&vals[vals.length-1]==="1"){
+      setResult("Não aplicável","A probabilidade pré-teste de TEP não foi confirmada como baixa; PERC não pode excluir TEP.","Utilize algoritmo diagnóstico apropriado.");return;
     }
     const total=vals.reduce((a,v)=>a+Number(v),0);
     const note=phqRisk?"ATENÇÃO: item 9 positivo. Realizar avaliação clínica imediata de segurança; o total PHQ-9 não classifica risco suicida.":"Pontuação calculada a partir dos critérios selecionados.";
@@ -775,7 +791,7 @@
       f.innerHTML=
         field("Frequência respiratória (irpm)","n_rr","number",'min="0"')+
         field("SpO₂ (%)","n_spo2","number",'min="0" max="100"')+
-        selectField("Escala de SpO₂","n_scale",[opt("Escala 1 — padrão",1),opt("Escala 2 — alvo de 88–92% em hipercapnia confirmada",2)])+
+        selectField("Escala de SpO₂","n_scale",[opt("Escala 1 — padrão",1),opt("Escala 2 — alvo de 88–92% em hipercapnia confirmada",2)])+selectField("Hipercapnia confirmada e alvo 88–92% definido clinicamente?","n_hyper",[opt("Não",0),opt("Sim",1)])+
         selectField("Oxigênio suplementar","n_o2",[opt("Ar ambiente",0),opt("Sim",1)])+
         field("PAS (mmHg)","n_sbp","number",'min="0"')+
         field("Frequência cardíaca (bpm)","n_hr","number",'min="0"')+
@@ -788,9 +804,9 @@
         selectField("Respiração (PaO₂/FiO₂)", "s_resp",[opt("≥400",0),opt("<400",1),opt("<300",2),opt("<200 com suporte respiratório",3),opt("<100 com suporte respiratório",4)])+
         selectField("Plaquetas (×10³/µL)","s_pl",[opt("≥150",0),opt("<150",1),opt("<100",2),opt("<50",3),opt("<20",4)])+
         selectField("Bilirrubina (mg/dL)","s_bili",[opt("<1,2",0),opt("1,2–1,9",1),opt("2,0–5,9",2),opt("6,0–11,9",3),opt("≥12",4)])+
-        selectField("Cardiovascular","s_cv",[opt("PAM ≥70",0),opt("PAM <70",1),opt("Dopamina ≤5 ou dobutamina qualquer dose",2),opt("Dopamina >5 ou epinefrina/norepinefrina ≤0,1 µg/kg/min",3),opt("Dopamina >15 ou epinefrina/norepinefrina >0,1 µg/kg/min",4)])+
+        selectField("Cardiovascular","s_cv",[opt("PAM ≥70",0),opt("PAM <70",1),opt("Dopamina ≤5 mcg/kg/min ou dobutamina (qualquer dose) por ≥1 h",2),opt("Dopamina >5 a ≤15 OU adrenalina/noradrenalina ≤0,1 mcg/kg/min por ≥1 h",3),opt("Dopamina >15 OU adrenalina/noradrenalina >0,1 mcg/kg/min por ≥1 h",4)])+
         selectField("Glasgow","s_gcs",[opt("15",0),opt("13–14",1),opt("10–12",2),opt("6–9",3),opt("<6",4)])+
-        selectField("Renal","s_renal",[opt("Creatinina <1,2 mg/dL",0),opt("1,2–1,9",1),opt("2,0–3,4",2),opt("3,5–4,9 ou diurese <500 mL/d",3),opt(">5,0 ou diurese <200 mL/d",4)]);
+        selectField("Renal","s_renal",[opt("Creatinina <1,2 mg/dL",0),opt("1,2–1,9",1),opt("2,0–3,4",2),opt("3,5–4,9 ou diurese <500 mL/d",3),opt("≥5,0 ou diurese <200 mL/d",4)]);
       $$("select",f).forEach(x=>x.onchange=()=>{const v=$$("select",f).map(x=>x.value);if(v.some(x=>x===""))return setResult("—","Preencha todos os sistemas.");const n=v.reduce((a,b)=>a+Number(b),0);setResult(String(n),`SOFA total: ${n}/24. Quanto maior a pontuação, maior a disfunção orgânica e o risco prognóstico.`,"Em suspeita de infecção, aumento de ≥2 pontos em relação ao basal integra o conceito de disfunção orgânica do Sepsis-3; o SOFA não deve ser interpretado isoladamente.");}); setResult("—","Preencha os campos.");
     },
     meldna(f){
@@ -918,7 +934,7 @@
   }
 
   function calcNews2(){
-    const ids=["n_rr","n_spo2","n_scale","n_o2","n_sbp","n_hr","n_cns","n_temp"]; if(!validateScoreInputs(ids)) return;
+    const ids=["n_rr","n_spo2","n_scale","n_hyper","n_o2","n_sbp","n_hr","n_cns","n_temp"]; if(!validateScoreInputs(ids)) return; if(+$("#n_scale").value===2&&+$("#n_hyper").value!==1)return setResult("Não aplicável","Escala 2 do NEWS2 exige hipercapnia confirmada e alvo SpO₂ 88–92% definido clinicamente.","Usar Escala 1 sem indicação formal.");
     const rr=+$("#n_rr").value, sp=+$("#n_spo2").value, scale=+$("#n_scale").value, o2=+$("#n_o2").value, sbp=+$("#n_sbp").value, hr=+$("#n_hr").value, cns=+$("#n_cns").value, t=+$("#n_temp").value;
     const rrP=rr<=8?3:rr<=11?1:rr<=20?0:rr<=24?2:3;
     let spP=0;
@@ -944,9 +960,9 @@
     let meld=10*(0.957*Math.log(cr)+0.378*Math.log(bili)+1.120*Math.log(inr)+0.643);
     meld=Math.max(6,Math.min(40,Math.round(meld)));
     const na=Math.max(125,Math.min(137,+$("#m_na").value));
-    let meldNa=meld+1.32*(137-na)-0.033*meld*(137-na);
+    let meldNa=meld>11?meld+1.32*(137-na)-0.033*meld*(137-na):meld;
     meldNa=Math.max(6,Math.min(40,Math.round(meldNa)));
-    setResult(String(meldNa),`MELD-Na: ${meldNa} (MELD base: ${meld}). Pontuações maiores correspondem a maior mortalidade em curto prazo e maior prioridade histórica para transplante.`,"Implementação do MELD-Na de 2016; programas de transplante podem utilizar fórmulas e regras de alocação mais recentes.");
+    setResult(String(meldNa),`MELD-Na: ${meldNa} (MELD base: ${meld}). Pontuações maiores correspondem a maior mortalidade em curto prazo e maior prioridade histórica para transplante.`,"MELD-Na histórico (2016), NÃO fórmula atual de alocação de adultos. O ajuste por sódio só incide quando MELD base >11. Para fila atual, usar MELD 3.0 oficial OPTN/HRSA.");
   }
 
   function calcGBS(){
