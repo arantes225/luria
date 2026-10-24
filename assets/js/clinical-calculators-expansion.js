@@ -47,7 +47,22 @@
     caconv:{fields:[["ca","Cálcio total","number","mg/dL"]],formula:"Cálcio total mmol/L = cálcio total mg/dL ÷ 4,008. Não é cálcio iônico.",calc:v=>[+v.ca/4.008,"mmol/L"]},
     plateletconv:{fields:[["plt","Plaquetas","number","mil/µL (10³/µL)"]],formula:"Plaquetas/µL = plaquetas (10³/µL) × 1000.",calc:v=>[+v.plt*1000,"/µL"]}
   };
+
+  items.push(
+    ["Hepatologia","FIB-4","FIB-4 — fibrose hepática","Triagem não invasiva de fibrose em contexto apropriado","fib4"],
+    ["Hepatologia","MELD3","MELD 3.0 — adulto","Estimativa de pontuação; confirmar no sistema oficial OPTN","meld3"],
+    ["Respiratório","LIGHT","Critérios de Light","Diferenciação bioquímica de exsudato e transudato","light"]
+  );
+  Object.assign(extra,{
+    fib4:{fields:[["age","Idade","number","anos"],["ast","AST","number","U/L"],["alt","ALT","number","U/L"],["plt","Plaquetas","number","10⁹/L"]],formula:"FIB-4 = idade × AST ÷ [plaquetas (10⁹/L) × √ALT]. Cortes mudam para idosos, jovens e doença de base; não usar durante hepatite aguda.",calc:v=>{if(+v.age<18)throw Error("Uso adulto");return[+v.age*+v.ast/(+v.plt*Math.sqrt(+v.alt)),""];}},
+    meld3:{fields:[["cr","Creatinina","number","mg/dL"],["bil","Bilirrubina total","number","mg/dL"],["inr","INR","number",""],["na","Sódio","number","mEq/L"],["alb","Albumina","number","g/dL"],["sex","Sexo usado no sistema MELD adulto","select","Feminino|Masculino"],["dial","Diálise elegível nos 7 dias anteriores","select","Não|Sim"]],formula:"MELD 3.0 adulto OPTN 2023. Aplica limites do algoritmo (Cr 1–3, Na 125–137, albumina 1,5–3,5; INR/bilirrubina ≥1). Valor informativo; prioridade de transplante deve ser conferida no cálculo oficial.",calc:v=>{const clamp=(x,min,max)=>Math.min(max,Math.max(min,+x));let cr=v.dial==="Sim"?3:clamp(v.cr,1,3),bil=Math.max(1,+v.bil),inr=Math.max(1,+v.inr),na=clamp(v.na,125,137),alb=clamp(v.alb,1.5,3.5);let n=(v.sex==="Feminino"?1.33:0)+4.56*Math.log(bil)+.82*(137-na)-.24*(137-na)*Math.log(bil)+9.09*Math.log(inr)+11.14*Math.log(cr)+1.85*(3.5-alb)-1.83*(3.5-alb)*Math.log(cr)+6;return[Math.round(Math.max(6,Math.min(40,n))),"pontos (estimado)"];}},
+    light:{fields:[["pp","Proteína pleural","number","g/dL"],["sp","Proteína sérica","number","g/dL"],["pl","LDH pleural","number","U/L"],["sl","LDH sérica","number","U/L"],["uln","LSN de LDH sérica do laboratório","number","U/L"]],formula:"Exsudato se QUALQUER critério: proteína pleural/sérica >0,5; LDH pleural/sérica >0,6; LDH pleural >2/3 LSN sérico. Atenção a pseudoexsudatos após diuréticos.",calc:v=>{let p=+v.pp/+v.sp,l=+v.pl/+v.sl,u=+v.pl/+v.uln;return[Number(p>.5||l>.6||u>2/3),"1 = exsudato; 0 = não preenche"];}}
+  });
+
   const messages={
+    fib4:n=>n<1.3?"FIB-4 abaixo de 1,3 no algoritmo comum de MASLD; idade e contexto podem modificar cortes.":n<2.67?"FIB-4 intermediário; considerar avaliação complementar conforme risco.":"FIB-4 elevado; investigar fibrose significativa segundo diretriz.",
+    meld3:()=>"Pontuação aproximada. Para listagem/transplante, conferir cálculo diretamente no OPTN e regras vigentes.",
+    light:n=>n===1?"Preenche pelo menos um critério de exsudato. Interpretar contexto e possíveis pseudoexsudatos.":"Não preenche critérios de Light para exsudato.",
     uacr:n=>n<30?"KDIGO A1 (<30 mg/g)":n<=300?"KDIGO A2 (30–300 mg/g)":"KDIGO A3 (>300 mg/g). Confirmar persistência, por pelo menos 3 meses quando aplicável.",
     homair:()=> "Não aplicar ponto de corte único a diferentes populações; insulinometria não é padronizada entre todos os laboratórios.",
     mentzer:n=>n<13?"Índice <13 pode favorecer traço talassêmico; necessita hemograma, ferritina e investigação.":"Índice ≥13 pode favorecer deficiência de ferro; confirmar laboratorialmente.",
