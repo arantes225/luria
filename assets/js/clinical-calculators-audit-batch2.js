@@ -195,6 +195,7 @@
   for(const id of ids) {
     if(defs[id].auditDate!=="2026-10-24"||!defs[id].reference)throw Error("Referência ou revisão ausente em "+id);
   }
+  if(typeof document==="undefined")return; // cálculo unitário isolado fora do navegador
   const allowedZero = {
     "dp":["peep"],"cstat":["peep"],"gts":["ml"],"mgm":["pct"],"mcg":["mg"],
     "mmol":["glu"],"temp":["c"],"diurese":["vol"],"anc":["neut"],
