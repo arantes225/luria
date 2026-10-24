@@ -1,0 +1,19 @@
+/* Cola Rápida — capturar, reconhecer e revisar texto no próprio navegador */
+.quick-chart-scan{display:grid;gap:12px;padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:var(--surface);min-width:0}
+.quick-chart-scan [hidden]{display:none!important}
+.quick-chart-scan-header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.quick-chart-scan-header>div{display:grid;gap:3px}
+.quick-chart-scan-header strong{font-size:13px;font-weight:850;color:var(--text)}
+.quick-chart-scan-header span{font-size:11px;color:var(--muted);line-height:1.4}
+.quick-chart-scan .quick-chart-scan-private{font-size:10px;color:var(--accent);font-weight:800;border:1px solid var(--border);border-radius:999px;padding:6px 9px;white-space:nowrap}
+.quick-chart-scan-actions,.quick-chart-ocr-controls{display:flex;flex-wrap:wrap;gap:8px}
+.quick-chart-scan button{min-height:44px;min-width:44px;padding:0 14px;border-radius:11px;border:1px solid var(--border);background:var(--surface-2);color:var(--text);font-size:12px;font-weight:800;cursor:pointer}
+.quick-chart-scan button:focus-visible,.quick-chart-ocr-preview textarea:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.quick-chart-scan button:disabled{opacity:.5;cursor:wait}
+.quick-chart-scan #quick-chart-camera,.quick-chart-scan #quick-chart-ocr-send{color:#fff;background:linear-gradient(135deg,#184888,#2563eb);border-color:transparent}
+.quick-chart-ocr-progress{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:40px;padding:9px 11px;border-radius:10px;background:var(--surface-2);color:var(--text);font-size:11px;line-height:1.5}
+.quick-chart-ocr-progress button{min-height:34px;font-size:10px}
+.quick-chart-ocr-preview{display:grid;gap:9px;padding:12px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2);min-width:0}
+.quick-chart-ocr-preview label{font-size:11px;font-weight:750;color:var(--text)}
+.quick-chart-ocr-preview textarea{display:block;width:100%;min-height:145px;padding:12px;resize:vertical;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font:400 14px/1.5 var(--font-ui,system-ui,sans-serif);-webkit-text-size-adjust:100%}
+@media(max-width:760px){.quick-chart-scan{padding:12px;gap:10px}.quick-chart-scan-actions{display:grid;grid-template-columns:1fr 1fr}.quick-chart-scan-actions button{padding:0 9px}.quick-chart-scan-actions button:last-of-type{grid-column:1/-1}.quick-chart-ocr-controls{display:grid;grid-template-columns:1fr 1fr}.quick-chart-ocr-controls #quick-chart-ocr-send{grid-column:1/-1;grid-row:1}.quick-chart-scan-header>div{max-width:100%}}
