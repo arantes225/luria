@@ -6,7 +6,7 @@
   const editor=document.getElementById("external-editor");
   const errorBox=document.getElementById("external-error");
   const usernameInput=document.getElementById("external-username");
-  const pinInput=document.getElementById("external-code");
+  const pinInput=document.getElementById("external-pin");
   const enterBtn=document.getElementById("external-enter");
   const gateError=document.getElementById("external-gate-error");
   const status=document.getElementById("external-status");
