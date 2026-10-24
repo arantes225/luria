@@ -469,10 +469,10 @@
     {id:"pas",name:"PAS — apendicite pediátrica",category:"Pediatria",aliases:"Pediatric Appendicitis Score apendicite criança",
       desc:"Risco clínico em criança com suspeita de apendicite; não substitui imagem e reavaliação.",tags:["Pediatria","Cirurgia"],
       questions:[
-        q("Migração da dor para FID",yesno()),q("Anorexia",yesno()),q("Náuseas ou vômitos",yesno()),q("Febre",yesno()),
+        q("Migração da dor para FID",yesno()),q("Anorexia",yesno()),q("Náuseas ou vômitos",yesno()),q("Temperatura ≥38 °C",yesno()),
         q("Dor na FID à palpação",[opt("Não",0),opt("Sim",2)]),
         q("Dor ao tossir/percutir/saltar",[opt("Não",0),opt("Sim",2)]),
-        q("Leucocitose",yesno()),q("Neutrofilia",yesno())
+        q("Leucócitos ≥10.000/µL",yesno()),q("Neutrófilos ≥75%",yesno())
       ],
       interpret:n=>n<=2?"PAS 0–2: menor risco, reavaliar clinicamente.":n<=6?"PAS 3–6: risco intermediário; observação/investigação conforme protocolo.":"PAS 7–10: alto risco clínico; avaliação cirúrgica e exames conforme contexto.",
       reference:"Samuel M. J Pediatr Surg. 2002;37:877–881."},
@@ -720,10 +720,15 @@
   }
 
   function calculateGeneric(s){
-    const vals=$$("#score-form select").map(x=>x.value);
-    if(vals.some(v=>v==="")){setResult("—","Preencha todos os campos.","");return;}
+    const vals=$("#score-form select").map(x=>x.value);
+    const phqRisk=s.id==="phq9" && vals[8]!=="" && Number(vals[8])>0;
+    if(vals.some(v=>v==="")){
+      setResult("—",phqRisk?"Item 9 positivo: avaliar risco de suicídio/autolesão imediatamente, mesmo antes da pontuação total.":"Preencha todos os campos.","");
+      return;
+    }
     const total=vals.reduce((a,v)=>a+Number(v),0);
-    setResult(formatNum(total),s.interpret(total),"Pontuação calculada a partir dos critérios selecionados.");
+    const note=phqRisk?"ATENÇÃO: item 9 positivo. Realizar avaliação clínica imediata de segurança; o total PHQ-9 não classifica risco suicida.":"Pontuação calculada a partir dos critérios selecionados.";
+    setResult(formatNum(total),s.interpret(total),note);
   }
 
   function setResult(value,text,note=""){
