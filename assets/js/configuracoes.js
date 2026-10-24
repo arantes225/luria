@@ -2038,7 +2038,6 @@ async function initStudySettings() {
     ?.addEventListener("click", saveAccountPhone);
   document.getElementById("verify-account-phone")
     ?.addEventListener("click", verifyAccountPhone);
-    ?.addEventListener("click", saveQuickAccessPin);
 
   document.getElementById("signout-other-browsers")
     ?.addEventListener("click", signOutOtherBrowsers);
