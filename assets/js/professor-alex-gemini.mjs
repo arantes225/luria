@@ -26,6 +26,20 @@ function normalizeAlexSearch(value) {
     .replace(/[^a-z0-9]+/g, " ").trim();
 }
 
+function isSocialOrGreeting(text) {
+  const clean = normalizeAlexSearch(text);
+  return /^(oi|ola|bom dia|boa tarde|boa noite|e ai|eai|fala ai|opa|tudo bem|como vai|valeu|obrigado|obrigada|tchau|ate logo|ate mais|beleza|tranquilo|mestre|alex|professor|eae)(\s+(alex|professor|mestre|amigo|cara))?$/i.test(clean)
+    || /^(oi|ola|bom dia|boa tarde|boa noite|opa|e ai|fala|valeu|obrigado|obrigada)\s+(alex|professor|mestre|amigo)/i.test(clean);
+}
+
+const ALEX_SEARCH_STOP_WORDS = new Set([
+  "ola", "bom", "dia", "boa", "tarde", "noite", "tudo", "bem", "como", "vai",
+  "voce", "alex", "professor", "amigo", "valeu", "obrigado", "obrigada",
+  "tchau", "ate", "mais", "beleza", "legal", "massa", "fala", "eai", "opa",
+  "sim", "nao", "quero", "ajuda", "uma", "para", "com", "por", "sobre", "estou",
+  "qual", "quais", "onde", "quando", "quem", "quanto", "quantos", "devo", "pode"
+]);
+
 async function findAlexSiteContext(query) {
   if (!alexSiteIndexPromise) {
     alexSiteIndexPromise = fetch("/assets/data/professor-alex-site-index.json?v=20261022-site1", { cache: "force-cache" })
@@ -34,7 +48,7 @@ async function findAlexSiteContext(query) {
   }
   const index = await alexSiteIndexPromise;
   const normalized = normalizeAlexSearch(query);
-  const tokens = normalized.split(/\s+/).filter(token => token.length >= 3);
+  const tokens = normalized.split(/\s+/).filter(token => token.length >= 3 && !ALEX_SEARCH_STOP_WORDS.has(token));
   if (!tokens.length) return null;
   const ranked = (index.records || []).map(record => {
     const title = normalizeAlexSearch(record.title);
@@ -301,8 +315,9 @@ if (form) {
     };
     if (isLiveActive && Number.isFinite(liveTranscriptConfidence)) payload.voice_confidence = liveTranscriptConfidence;
     const hasMaterial = Boolean(fileInput?.files?.[0]);
-    const siteContext = await findAlexSiteContext([topic, prompt].filter(Boolean).join(" "));
-    if (!siteContext && !hasMaterial) {
+    const isSocial = isSocialOrGreeting(prompt || topic);
+    const siteContext = isSocial ? null : await findAlexSiteContext([topic, prompt].filter(Boolean).join(" "));
+    if (!siteContext && !hasMaterial && !isSocial) {
       const message = "Não encontrei esse termo no conteúdo da LURIA. Reformule a pergunta ou indique a matéria. Não vou inventar uma aula fora do acervo.";
       if (!isLiveActive) display(message, "Busca na LURIA", true);
       else speakText(message);
