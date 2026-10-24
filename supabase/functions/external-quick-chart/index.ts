@@ -106,6 +106,8 @@ Deno.serve(async (req: Request) => {
     // Temporary compatibility for already-published clients while Pages is blocked.
     // Newly displayed daily codes revoke the legacy PIN via the daily_code branch.
     if (payload.action === "set_pin") {
+      return json({ error: "O PIN fixo foi substituído pelo código diário." }, 410);
+      /*
       const token = (req.headers.get("authorization") || "").replace(/^Bearer\s+/i,"");
       if (!token) return json({ error: "Sessão inválida." }, 401);
       const { data: authData, error: authError } = await sb.auth.getUser(token);
@@ -124,6 +126,7 @@ Deno.serve(async (req: Request) => {
       },{onConflict:"owner_id"});
       if (saveError) throw saveError;
       return json({ok:true,username:verifiedUsername});
+      */
     }
 
     if (payload.action === "daily_code") {
