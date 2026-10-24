@@ -607,44 +607,6 @@ body[data-page="amigos"] #social-dialog #friends-room-create:hover {
   transform: translateY(-1px) !important;
 }
 
-/* Inside Room View Harmonization */
-body[data-page="amigos"] #social-room .social-room-header {
-  border: 1px solid var(--color-border, #e2e8f0) !important;
-  border-radius: 14px !important;
-  background: var(--color-surface, #ffffff) !important;
-  padding: 14px 18px !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03) !important;
-}
-
-body[data-page="amigos"] #social-room .social-room-header h2 {
-  font-size: 20px !important;
-  font-weight: 800 !important;
-  margin: 2px 0 4px 0 !important;
-}
-
-body[data-page="amigos"] #social-room .social-room-header p {
-  font-size: 13px !important;
-  color: var(--color-text-secondary, #64748b) !important;
-}
-
-body[data-page="amigos"] #social-room .social-actions .button {
-  border-radius: 10px !important;
-  min-height: 36px !important;
-  font-size: 12px !important;
-  font-weight: 700 !important;
-}
-
-body[data-page="amigos"] #social-room #social-leave {
-  background: color-mix(in srgb, #ef4444 8%, var(--color-surface, #ffffff)) !important;
-  color: #dc2626 !important;
-  border: 1px solid color-mix(in srgb, #ef4444 20%, var(--color-border, #e2e8f0)) !important;
-}
-
-body[data-page="amigos"] #social-room #social-leave:hover {
-  background: #dc2626 !important;
-  color: #ffffff !important;
-}
-
 @media (max-width: 768px) {
   body[data-page="amigos"] #community-rooms > .social-card-head {
     flex-direction: column !important;
