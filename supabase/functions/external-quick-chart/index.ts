@@ -6,7 +6,8 @@ const cors = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
   "Access-Control-Allow-Methods": "POST, OPTIONS",
-  "Content-Type": "application/json"
+  "Content-Type": "application/json",
+  "Cache-Control": "no-store, private"
 };
 
 const enc = new TextEncoder();
@@ -102,9 +103,10 @@ Deno.serve(async (req: Request) => {
         .upsert({ owner_id: authData.user.id, access_slug: verifiedUsername,
           pin_hash: null, pin_salt: null, pin_configured_at: null }, { onConflict: "owner_id" });
       if (portalError) throw portalError;
+      const now = new Date();
       return json({ ok: true, username: verifiedUsername,
-        code: await dailyCode(authData.user.id, new Date()),
-        day: brazilDay(new Date()), zone: ZONE });
+        code: await dailyCode(authData.user.id, now),
+        day: brazilDay(now), zone: ZONE });
     }
 
     const username = normalizeUsername(payload.username);
