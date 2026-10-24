@@ -12,7 +12,7 @@ async function fixture(deferLoad=false){
     return new Promise(resolve=>requests.push({body,finish(ok=true){if(ok)stored=body.action==='clear'?{}:body.content;resolve({ok,json:async()=>({expires_at:null})});}}));
   }};
   vm.runInNewContext(source('assets/js/quick-chart-external.js'),c);
-  if(!deferLoad){el('external-username').value='fixture-user';el('external-pin').value='0000';await el('external-enter').click();}
+  if(!deferLoad){el('external-username').value='fixture-user';el('external-pin').value='000000';await el('external-enter').click();}
   return {el,note,requests,stored:()=>stored};
 }
 test('quick chart serializes saves and confirms the latest editor value',async()=>{
@@ -71,8 +71,8 @@ test('expired internal chart reads hide old content without deleting a newer rem
 
 test('public chart ignores a late login response after another portal was selected',async()=>{
  const f=await fixture(true);
- f.el('external-username').value='account-a';f.el('external-pin').value='0000';const a=f.el('external-enter').click();await turn();
- f.el('external-username').value='account-b';f.el('external-pin').value='1111';const b=f.el('external-enter').click();await turn();
+ f.el('external-username').value='account-a';f.el('external-pin').value='000000';const a=f.el('external-enter').click();await turn();
+ f.el('external-username').value='account-b';f.el('external-pin').value='111111';const b=f.el('external-enter').click();await turn();
  f.requests[0].finish({note:'A PRIVATE'});await turn();assert.equal(f.note.value,'');assert.equal(f.requests[1].body.username,'account-b');
  f.requests[1].finish({note:'B PRIVATE'});await Promise.all([a,b]);assert.equal(f.note.value,'B PRIVATE');
 });
