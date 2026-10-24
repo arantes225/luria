@@ -3208,6 +3208,42 @@ dialog[open]{
   overflow:visible!important;
 }
 
+/* Calendário responsivo: não permitir min-content dos botões expandir a grade. */
+.luria-calendar{
+  box-sizing:border-box!important;
+  min-width:0!important;
+  max-width:calc(100vw - 24px)!important;
+}
+.luria-calendar .luria-calendar-weekdays,
+.luria-calendar .luria-calendar-days{
+  display:grid!important;
+  width:100%;
+  min-width:0!important;
+  grid-template-columns:repeat(7,minmax(0,1fr))!important;
+}
+.luria-calendar .luria-calendar-weekdays span{
+  min-width:0!important;
+  overflow:hidden;
+}
+.luria-calendar .luria-calendar-days button,
+body[data-page="cronograma"] .luria-calendar .luria-calendar-days button{
+  box-sizing:border-box!important;
+  min-width:0!important;
+  min-height:0!important;
+  max-width:100%!important;
+  width:100%!important;
+  padding:0!important;
+  aspect-ratio:1;
+  border:0!important;
+}
+@media(max-width:520px){
+  .luria-calendar{padding:10px!important;}
+  .luria-calendar .luria-calendar-head{margin:-10px -10px 8px!important;padding:10px!important;}
+  .luria-calendar .luria-calendar-foot{margin:8px -10px -10px!important;padding:8px 10px!important;}
+  .luria-calendar .luria-calendar-days,
+  .luria-calendar .luria-calendar-weekdays{gap:3px!important;}
+}
+
 
 /* LURIA — seletor de hora do Adicionar evento */
 .luria-time-picker{
