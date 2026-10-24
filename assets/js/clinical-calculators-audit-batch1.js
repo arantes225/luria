@@ -55,8 +55,8 @@
   note("winter","Fórmula de Winter, apenas para ACIDOSE METABÓLICA: PaCO₂ esperada = 1,5×HCO₃ + 8 (±2 mmHg). Comparar com PaCO₂ real; não diagnostica distúrbios isoladamente.",source.gas);
   check("winter",v=>error(+v.hco>=24,"Winter se aplica a bicarbonato reduzido em acidose metabólica. Para HCO₃ ≥24, usar outra abordagem."));
   // 12. Déficit de água livre.
-  note("freewater","Déficit teórico de água livre = peso × fator ACT × (Na/140 − 1); só faz sentido quando Na >140. Não inclui perdas contínuas, diurese nem aporte previsto. NÃO equivale a volume de infusão prescrito.",source.sodium);
-  check("freewater",v=>error(+v.na<=140||+v.na>200,"Esta ferramenta estima déficit de água em hipernatremia (Na >140 mEq/L); confirme sódio e causa."));
+  note("freewater","Déficit teórico de água livre = peso × fator ACT × (Na/140 − 1); usar somente na hipernatremia (Na >145). Não inclui perdas contínuas, diurese nem aporte previsto. NÃO equivale a volume de infusão prescrito.",source.sodium);
+  check("freewater",v=>error(+v.na<=145||+v.na>200,"Reservado à hipernatremia (Na >145 mEq/L); valores dentro da referência não devem gerar indicação de reposição."));
   // 13. Preparo de KCl, sem prescrição implícita.
   note("kclprep","Ampola (mL)=dose (mEq)/concentração da ampola (mEq/mL); concentração FINAL (mEq/L)=1000×dose/volume final diluído; taxa (mEq/h)=dose/duração. Nunca administrar KCl concentrado por injeção direta.",source.kcl);
   if (!defs.kclprep.fields.some(f=>f[0]==="vol")) defs.kclprep.fields.push(["vol","Volume FINAL diluído (inclui KCl)","number","mL"]);
@@ -117,9 +117,11 @@
   check("imc",v=>error(+v.age<18||+v.age>120,"Classificação adulta de IMC aplica-se a ≥18 anos; em pediatria utilizar IMC por idade e sexo."));
   note("bsa","Superfície corporal de Mosteller (m²) = √[(peso kg × altura cm)/3600]. Estimativa para protocolos que usam m².");
   note("ibw","Peso ideal de Devine = 50 kg (homem) ou 45,5 kg (mulher) + 2,3 kg/polegada acima de 152,4 cm; não é meta ponderal.",source.general);
-  check("ibw",v=>error(+v.h<152.4||+v.h>250,"Fórmula de Devine extrapolada abaixo de 152,4 cm; rever método para alturas fora da faixa."));
+  if(!defs.ibw.fields.some(f=>f[0]==="age"))defs.ibw.fields.push(["age","Idade (Devine em adultos)","number","anos"]);
+  check("ibw",v=>error(+v.age<18||+v.age>120||+v.h<152.4||+v.h>250,"Devine: usar somente em adultos e conferir altura ≥152,4 cm; para outras populações seguir protocolo."));
   note("abw","Peso ajustado = peso ideal + 0,4×(peso atual − ideal). Apenas quando protocolo específico prevê uso desse fator.");
-  check("abw",v=>error(+v.w<+v.ideal,"Peso atual inferior ao ideal: não aplicar esta forma de peso ajustado."));
+  if(!defs.abw.fields.some(f=>f[0]==="age"))defs.abw.fields.push(["age","Idade (peso ajustado em adultos)","number","anos"]);
+  check("abw",v=>error(+v.age<18||+v.age>120||+v.w<+v.ideal,"Peso ajustado: uso adulto; não aplicar quando peso atual for inferior ao peso ideal."));
   // 29. P/F
   note("pf","P/F = PaO₂ (mmHg) / FiO₂ (fração 0,21–1,0). A classificação de SDRA requer dados adicionais (imagem, momento, suporte pressórico e origem).",source.vent);
   check("pf",v=>error(+v.fio<21||+v.fio>100,"FiO₂ informada em % deve estar entre 21 e 100 em condições habituais."));
