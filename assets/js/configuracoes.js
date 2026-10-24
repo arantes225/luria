@@ -1258,58 +1258,6 @@ async function verifyAccountPhone() {
   setAccountStatus("account-phone-status", "Telefone confirmado.", "success");
 }
 
-async function saveQuickAccessPin() {
-  const button = document.getElementById("save-quick-access-pin");
-  const pin = String(document.getElementById("quick-access-pin")?.value || "").replace(/\D/g, "");
-  const confirmPin = String(document.getElementById("quick-access-pin-confirm")?.value || "").replace(/\D/g, "");
-  const username = currentProfileUsername();
-
-  if (!validUsername(username)) {
-    setAccountStatus("quick-access-status", "Salve primeiro um nome de usuário válido no perfil.", "error");
-    return;
-  }
-  if (!/^\d{4}$/.test(pin)) {
-    setAccountStatus("quick-access-status", "O PIN precisa ter exatamente 4 dígitos.", "error");
-    return;
-  }
-  if (pin !== confirmPin) {
-    setAccountStatus("quick-access-status", "Os PINs não coincidem.", "error");
-    return;
-  }
-
-  const { data: sessionData } = await settingsSb.auth.getSession();
-  const token = sessionData?.session?.access_token;
-  if (!token) {
-    setAccountStatus("quick-access-status", "Sessão expirada. Entre novamente.", "error");
-    return;
-  }
-
-  button.disabled = true;
-  setAccountStatus("quick-access-status", "Salvando PIN...");
-  try {
-    const response = await fetch("https://sxdsfklllilhdyuamvvg.supabase.co/functions/v1/external-quick-chart", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "apikey": "sb_publishable_AQ5-Pn1knmBhSFyt5aMtjQ_XQynLJ_L",
-        "Authorization": `Bearer ${token}`
-      },
-      body: JSON.stringify({ action: "set_pin", pin })
-    });
-    const data = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(data.error || "Não foi possível salvar o PIN.");
-    document.getElementById("quick-access-pin").value = "";
-    document.getElementById("quick-access-pin-confirm").value = "";
-    refreshQuickAccessAddress();
-    setAccountStatus("quick-access-status", "PIN salvo. Seu acesso externo está pronto.", "success");
-  } catch (error) {
-    setAccountStatus("quick-access-status", error?.message || "Não foi possível salvar o PIN.", "error");
-  } finally {
-    button.disabled = false;
-  }
-}
-
-
 function setPasskeyStatus(text, type = "") {
   const element = document.getElementById("passkey-status");
   if (!element) return;
@@ -2090,7 +2038,6 @@ async function initStudySettings() {
     ?.addEventListener("click", saveAccountPhone);
   document.getElementById("verify-account-phone")
     ?.addEventListener("click", verifyAccountPhone);
-  document.getElementById("save-quick-access-pin")
     ?.addEventListener("click", saveQuickAccessPin);
 
   document.getElementById("signout-other-browsers")
