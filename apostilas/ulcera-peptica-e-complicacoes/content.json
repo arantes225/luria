@@ -2,8 +2,8 @@
   "v": 2,
   "s": "ulcera-peptica-e-complicacoes",
   "t": "Úlcera Péptica e Complicações Cirúrgicas",
-  "p": "Úlcera Péptica e Complicações Cirúrgicas — Livro-Texto LURIA",
-  "d": "Fisiopatologia de Johnson, H. pylori, AINEs, classificação de Forrest, conduta na HDA, perfuração e estenose pilórica",
+  "p": "Fisiopatologia de Johnson, H. pylori, AINEs, classificação de Forrest, conduta na HDA, perfuração e estenose pilórica Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Fisiopatologia de Johnson, H. pylori, AINEs, classificação de Forrest, conduta na HDA, perfuração e estenose pilórica Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Cirurgia Geral",
   "m": "Cirurgia do Aparelho Digestivo e Emergências Cirúrgicas",
   "h": [
@@ -443,19 +443,19 @@
               "<strong>Forrest Ia</strong>",
               "<strong>Sangramento Ativo em Jato arterial pulsátil</strong> (<em>Spurting hemorrhage</em>).",
               "80% a 90% (altíssimo risco de óbito por choque).",
-              "<strong>EDA Terapêutica Imediata Obrigatória</strong> (terapia combinada/dupla) + IBP venoso em dose alta contínua."
+              "<strong>EDA Terapêutica Imediata Obrigatória</strong> (terapia combinada/dupla) + IBP venoso em dose máxima preconizada contínua."
             ],
             [
               "<strong>Forrest Ib</strong>",
               "<strong>Sangramento Ativo Difuso / Babação contínua</strong> (<em>Oozing hemorrhage</em>).",
               "20% a 30% de ressangramento.",
-              "<strong>EDA Terapêutica Imediata Obrigatória</strong> (terapia combinada/dupla) + IBP venoso em dose alta contínua."
+              "<strong>EDA Terapêutica Imediata Obrigatória</strong> (terapia combinada/dupla) + IBP venoso em dose máxima preconizada contínua."
             ],
             [
               "<strong>Forrest IIa</strong>",
               "<strong>Vaso Visível Não Sangrante</strong> (protuberância vascular avermelhada ou azulada no fundo da cratera ulcerosa).",
               "40% a 50% de ressangramento precoce.",
-              "<strong>EDA Terapêutica Imediata Obrigatória</strong> (terapia combinada/dupla hemostática) + IBP venoso em dose alta contínua."
+              "<strong>EDA Terapêutica Imediata Obrigatória</strong> (terapia combinada/dupla hemostática) + IBP venoso em dose máxima preconizada contínua."
             ],
             [
               "<strong>Forrest IIb</strong>",
@@ -572,7 +572,7 @@
         ],
         [
           "p",
-          "O ácido intragástrico é o principal inimigo da hemostasia: sob pH &lt; 6,0, a agregação plaquetária é completamente abolida e a pepsina ativada hidrolisa e dissolve rapidamente o tampão hemostático de fibrina recém-formado no vaso erodido. Para promover hemostasia estável, o pH intragástrico deve ser mantido <strong>acima de 6,0 de forma contínua</strong>."
+          "O ácido intragástrico é o principal inimigo da hemostasia: sob pH &lt; 6,0, a agregação plaquetária é completamente abolida e a pepsina ativada hidrolisa e dissolve com agilidade o tampão hemostático de fibrina recém-formado no vaso erodido. Para promover hemostasia estável, o pH intragástrico deve ser mantido <strong>acima de 6,0 de forma contínua</strong>."
         ],
         [
           "u",
@@ -788,7 +788,7 @@
         ],
         [
           "p",
-          "A abordagem cirúrgica de emergência (por laparoscopia ou laparotomia mediana supraumbilical) deve ser deflagrada tão logo o paciente receba ressuscitação volêmica vigorosa, antibióticos de amplo espectro cobrindo Gram-negativos e anaeróbios (como Ceftriaxona + Metronidazol ou Piperacilina-Tazobactam) e IBP venoso."
+          "A abordagem cirúrgica de emergência (por laparoscopia ou laparotomia mediana supraumbilical) deve ser deflagrada tão logo o paciente receba ressuscitação volêmica vigorosa, antimicrobianos de amplo espectro guiados por perfil institucional (ex.: Piperacilina-Tazobactam 4,5 g EV 6/6h associado a Vancomicina 15-20 mg/kg EV 12/12h) cobrindo Gram-negativos e anaeróbios (como Ceftriaxona (1g a 2g EV 1x/dia) + Metronidazol (500 mg EV 8/8h) ou Piperacilina-Tazobactam (4,5 g EV em infusão estendida de 3-4h a cada 6 horas)) e IBP venoso."
         ],
         [
           "4",
@@ -897,7 +897,7 @@
         ],
         [
           "p",
-          "Devido ao aumento alarmante da resistência primária da bactéria à claritromicina no Brasil e no mundo ocidental (&gt; 15% a 20%), os esquemas terapêuticos foram atualizados:"
+          "Devido ao aumento alarmante da resistência primária da bactéria à Claritromicina (500 mg VO a cada 12 horas) no Brasil e no mundo ocidental (&gt; 15% a 20%), os esquemas terapêuticos foram atualizados:"
         ],
         [
           "t",
@@ -910,21 +910,21 @@
           [
             [
               "<strong>Terapia Quádrupla sem Bismuto (Concomitante) — Esquema de Primeira Linha Preferencial</strong>",
-              "• <strong>IBP em dose dobrada:</strong> Omeprazol 20 mg (ou Esomeprazol 40 mg) de 12/12h<br>\n        • <strong>Amoxicilina:</strong> 1.000 mg de 12/12h<br>\n        • <strong>Claritromicina:</strong> 500 mg de 12/12h<br>\n        • <strong>Metronidazol:</strong> 500 mg de 12/12h",
+              "• <strong>IBP em dose dobrada:</strong> Omeprazol 20 mg (ou Esomeprazol 40 mg) de 12/12h<br>\n        • <strong>Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria):</strong> 1.000 mg de 12/12h<br>\n        • <strong>Claritromicina (500 mg VO a cada 12 horas):</strong> 500 mg de 12/12h<br>\n        • <strong>Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase):</strong> 500 mg de 12/12h",
               "<strong>14 dias</strong>",
-              "Esquema empírico de primeira linha preferencial em regiões com resistência intermediária ou desconhecida à claritromicina. Taxas de erradicação &gt; 90%."
+              "Esquema empírico de primeira linha preferencial em regiões com resistência intermediária ou desconhecida à Claritromicina (500 mg VO a cada 12 horas). Taxas de erradicação &gt; 90%."
             ],
             [
               "<strong>Terapia Quádrupla com Bismuto — Esquema Padrão-Ouro Alternativo / Segunda Linha</strong>",
-              "• <strong>IBP em dose dobrada:</strong> Omeprazol 20 mg de 12/12h<br>\n        • <strong>Subcitrato ou Subsalicilato de Bismuto:</strong> 120-240 mg 4x ao dia<br>\n        • <strong>Tetraciclina:</strong> 500 mg 4x ao dia<br>\n        • <strong>Metronidazol:</strong> 500 mg 3x ao dia (ou 400 mg 4x ao dia)",
+              "• <strong>IBP em dose dobrada:</strong> Omeprazol 20 mg de 12/12h<br>\n        • <strong>Subcitrato ou Subsalicilato de Bismuto:</strong> 120-240 mg 4x ao dia<br>\n        • <strong>Tetraciclina:</strong> 500 mg 4x ao dia<br>\n        • <strong>Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase):</strong> 500 mg 3x ao dia (ou 400 mg 4x ao dia)",
               "<strong>14 dias</strong>",
-              "Excelente opção para pacientes alérgicos à penicilina/amoxicilina ou como terapia de resgate após falha do esquema contendo claritromicina. O bismuto exerce ação bactericida tópica direta."
+              "Excelente opção para pacientes alérgicos à penicilina/Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) ou como terapia de resgate após falha do esquema contendo Claritromicina (500 mg VO a cada 12 horas). O bismuto exerce ação bactericida tópica direta."
             ],
             [
               "<strong>Terapia Tripla Padrão Clássica (Uso Restrito)</strong>",
-              "• <strong>IBP:</strong> Omeprazol 20 mg de 12/12h<br>\n        • <strong>Amoxicilina:</strong> 1.000 mg de 12/12h<br>\n        • <strong>Claritromicina:</strong> 500 mg de 12/12h",
+              "• <strong>IBP:</strong> Omeprazol 20 mg de 12/12h<br>\n        • <strong>Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria):</strong> 1.000 mg de 12/12h<br>\n        • <strong>Claritromicina (500 mg VO a cada 12 horas):</strong> 500 mg de 12/12h",
               "<strong>14 dias</strong> (antigamente 7-10 dias)",
-              "Permitida apenas em áreas comprovadamente com taxas de resistência bacteriana à claritromicina inferiores a 15%. Na prática brasileira contemporânea, tem sido progressivamente substituída pelos regimes quádruplos."
+              "Permitida apenas em áreas comprovadamente com taxas de resistência bacteriana à Claritromicina (500 mg VO a cada 12 horas) inferiores a 15%. Na prática brasileira contemporânea, tem sido progressivamente substituída pelos regimes quádruplos."
             ]
           ],
           "book-table"
@@ -982,7 +982,7 @@
               "<strong>Bloqueadores de Potássio Competitivos (PCABs)</strong>",
               "Vonoprazana (Vonoprazan).",
               "Inibição competitiva e reversível do sítio de ligação do íon potássio (K+) na H+/K+-ATPase. Não necessitam de ativação ácida no canalículo.",
-              "<strong>Início de ação ultra-rápido (bloqueio ácido quase total na primeira dose)</strong>, meia-vida longa, estabilidade em pH ácido e ação independente da ingestão alimentar. Não sofrem influência do polimorfismo do CYP2C19. Taxas de erradicação de <em>H. pylori</em> superiores a 90%-95% mesmo em cepas resistentes à claritromicina."
+              "<strong>Início de ação ultra-rápido (bloqueio ácido quase total na primeira dose)</strong>, meia-vida longa, estabilidade em pH ácido e ação independente da ingestão alimentar. Não sofrem influência do polimorfismo do CYP2C19. Taxas de erradicação de <em>H. pylori</em> superiores a 90%-95% mesmo em cepas resistentes à Claritromicina (500 mg VO a cada 12 horas)."
             ],
             [
               "<strong>Antagonistas dos Receptores H2</strong>",
@@ -1094,8 +1094,8 @@
           "Em relação à Classificação de Forrest para lesões pépticas sangrantes à endoscopia digestiva alta, assinale a opção que descreve uma lesão classificada como Forrest IIa e sua respectiva conduta obrigatória:"
         ],
         [
-          "p",
-          "A) Sangramento arterial ativo em jato; indicação de terapia combinada com injeção de adrenalina associada a clipe mecânico ou método térmico.<br>\n  B) Coágulo firmemente aderido à base da cratera ulcerosa; indicação de alta hospitalar imediata com IBP oral em dose dobrada.<br>\n  C) Vaso visível não sangrante na base da úlcera; indicação mandatória de hemostasia endoscópica combinada associada a IBP venoso contínuo.<br>\n  D) Base da úlcera limpa revestida por fibrina esbranquiçada; indicação de hemostasia com hemoclipes metálicos e internação em UTI por 72 horas.<br>\n  E) Sangramento difuso em babação; contraindicação absoluta de métodos hemostáticos mecânicos."
+          "raw",
+          "<div class=\"book-callout-warning\"><strong class=\"callout-title\">⚠️ Alerta de Segurança — WARNING</strong><p>A) Sangramento arterial ativo em jato; indicação de terapia combinada com injeção de adrenalina associada a clipe mecânico ou método térmico.<br>\n  B) Coágulo firmemente aderido à base da cratera ulcerosa; indicação de alta hospitalar imediata com IBP oral em dose dobrada.<br>\n  C) Vaso visível não sangrante na base da úlcera; indicação mandatória de hemostasia endoscópica combinada associada a IBP venoso contínuo.<br>\n  D) Base da úlcera limpa revestida por fibrina esbranquiçada; indicação de hemostasia com hemoclipes metálicos e internação em UTI por 72 horas.<br>\n  E) Sangramento difuso em babação; contraindicação absoluta de métodos hemostáticos mecânicos.</p></div>"
         ],
         [
           "p",
@@ -1202,7 +1202,7 @@
             "<strong>Diagnóstico:</strong> Abdome agudo perfurativo com peritonite purulenta secundária difusa, choque séptico distributivo/hipovolêmico e disfunção de múltiplos órgãos (renal, hematológica e circulatória), decorrente de <strong>perfuração de úlcera péptica duodenal</strong>.",
             "<strong>Ressuscitação Imediata:</strong>\n      <ul>\n        <li>Monitorização contínua e intubação orotraqueal com ventilação protetora;",
             "Instalação imediata de cateter venoso central e introdução de <strong>noradrenalina em infusão contínua</strong> titulada para PAM &gt;= 65 mmHg concomitante à ressuscitação volêmica prudente;",
-            "Antibioticoterapia endovenosa de amplo espectro na primeira hora (como Piperacilina-Tazobactam ou Meropenem);",
+            "Antibioticoterapia endovenosa de amplo espectro na primeira hora (como Piperacilina-Tazobactam (4,5 g EV em infusão estendida de 3-4h a cada 6 horas) ou Meropenem (1 g EV em infusão prolongada a cada 8 horas, ou 2 g EV 8/8h em meningite bacteriana));",
             "Passagem de sonda nasogástrica em aspiração contínua e sonda vesical para monitorização do débito urinário;",
             "Omeprazol 80 mg EV em bolus. O paciente deve ser transferido ao centro cirúrgico com a máxima celeridade assim que a pressão de perfusão for minimamente restaurada.",
             "<strong>Tática Cirúrgica:</strong> Abertura por laparotomia mediana ampla, identificação do orifício de perfuração duodenal, rafia primária com pontos separados transfixantes protegida por <strong>ometoplastia pediculada vascularizada (Patch de Graham)</strong>, irrigação exaustiva de todos os recessos peritoneais com soro fisiológico morno, drenagem da cavidade abdominal e fechamento temporário ou definitivo da parede a depender do risco de síndrome compartimental intra-abdominal.",
@@ -1241,14 +1241,35 @@
       [
         [
           "2",
-          "9. Síntese Prática, Fluxograma de Conduta e Referências Bibliográficas"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
-          "4",
-          "Guia de Conduta Rápida na Úlcera Péptica e Complicações"
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
-          "u",
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Cirurgia Geral. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
+        ],
+        [
+          "o",
           [
             "<strong>Fisiopatologia:</strong> Duodenal (hipersecreção ácida, jovens, predomínio antral de <em>H. pylori</em>); Gástrica (hipo/normossecreção com falha defensiva da mucosa, idosos, AINEs).",
             "<strong>Classificação de Johnson:</strong> Tipo I (pequena curvatura/incisura angularis - hipocloridria, mais comum); Tipo II (gástrica + duodenal concomitante - hipercloridria); Tipo III (pré-pilórica - hipercloridria); Tipo IV (alta pequena curvatura/justa-cárdica - hipocloridria); Tipo V (induzida por AINEs/AAS, qualquer localização).",
@@ -1257,16 +1278,7 @@
             "<strong>HDA:</strong> Alvo transfusional restritivo (Hb 7 a 8 g/dL). Não usar adrenalina isolada! Segunda EDA no ressangramento; falha = embolização angiográfica ou cirurgia.",
             "<strong>Perfuração Péptica:</strong> Parede anterior do duodeno ou pequena curvatura; dor súbita em facada, abdome em tábua, sinal de Jobert e pneumoperitônio. Conduta: ressuscitação, antibióticos e <strong>Patch de Graham</strong> (sutura simples + omentoplastia pediculada vascularizada). Biópsia obrigatória se úlcera gástrica!",
             "<strong>Estenose Pilórica:</strong> Vômitos tardios não biliosos com alimentos ingeridos horas antes. Distúrbio: <strong>alcalose metabólica hipoclorêmica e hipocalêmica com acidúria paradoxal</strong>. Tratar com SF 0,9% + KCl, descompressão por SNG e dilatação por balão ou antrectomia/gastrojejunostomia.",
-            "<strong>Erradicação de H. pylori:</strong> Esquema quádruplo sem bismuto (IBP + Amoxicilina + Claritromicina + Metronidazol por 14 dias) ou com bismuto. Controle de cura após 4-8 semanas com teste respiratório ou antígeno fecal, SEM usar sorologia!"
-          ]
-        ],
-        [
-          "3",
-          "Referências Bibliográficas Fundamentais"
-        ],
-        [
-          "o",
-          [
+            "<strong>Erradicação de H. pylori:</strong> Esquema quádruplo sem bismuto (IBP + Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) + Claritromicina (500 mg VO a cada 12 horas) + Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) por 14 dias) ou com bismuto. Controle de cura após 4-8 semanas com teste respiratório ou antígeno fecal, SEM usar sorologia!",
             "Laine L, Barkun AN, Saltzman JR, Martel M, Leontiadis GI. ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding. <em>Am J Gastroenterol</em>. 2021;116(5):899-917.",
             "Malfertheiner P, Megraud F, Rokkas T, et al. Management of Helicobacter pylori infection: the Maastricht VI/Florence consensus report. <em>Gut</em>. 2022;71(12):1724-1762.",
             "Coelho LGV, Marinho JR, Genta R, et al. IVth Brazilian Consensus Conference on Helicobacter pylori infection. <em>Arq Gastroenterol</em>. 2018;55(2):97-121.",

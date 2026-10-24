@@ -2,8 +2,8 @@
   "v": 2,
   "s": "leucemias-e-linfomas",
   "t": "Leucemias e Linfomas",
-  "p": "Leucemias e Linfomas — Livro-Texto LURIA",
-  "d": "Tratado completo de Leucemias e Linfomas para concursos médicos e prática especializada: fundamentos da hematopoiese, Leucemia Mieloide Aguda (LMA) com mieloperoxidase e bastonetes de Auer, Leucemia Promielocítica Aguda (LPA) com translocação t(15;17) PML-RARA, coagulopatia de consumo (CIVD) e terapia direcionada com ATRA e Trióxido de Arsênico, Leucemia Linfoide Aguda (LLA) na infância e no adulto com santuários do SNC e testículo, Leucemia Mieloide Crônica (LMC) com cromossomo Filadélfia t(9;22) BCR-ABL e inibidores de tirosina-quinase, Leucemia Linfoide Crônica (LLC) com manchas de Gümprecht e estadiamentos de Rai e Binet, Linfoma de Hodgkin com células de Reed-Sternberg CD15+ e CD30+, subtipo esclerose nodular, sintomas B e Ann Arbor, e o espectro dos Linfomas Não-Hodgkin (LDGCB com R-CHOP e Linfoma de Burkitt com t(8;14) c-myc e padrão de céu estrelado), profilaxia da Síndrome de Lise Tumoral e casos clínicos com questões comentadas.",
+  "p": "Tratado completo de Leucemias e Linfomas para concursos médicos e prática especializada: fundamentos da hematopoiese, Leucemia Mieloide Aguda (LMA) com mieloperoxidase e bastonetes de Auer, Leucemia Promielocítica Aguda (LPA) com translocação t(15;17) PML-RARA, coagulopatia de consumo (CIVD) e terapia direcionada com ATRA e Trióxido de Arsênico, Leucemia Linfoide Aguda (LLA) na infância e no adulto com santuários do SNC e testículo, Leucemia Mieloide Crônica (LMC) com cromossomo Filadélfia t(9;22) BCR-ABL e inibidores de tirosina-quinase, Leucemia Linfoide Crônica (LLC) com manchas de Gümprecht e estadiamentos de Rai e Binet, Linfoma de Hodgkin com células de Reed-Sternberg CD15+ e CD30+, subtipo esclerose nodular, sintomas B e Ann Arbor, e o espectro dos Linfomas Não-Hodgkin (LDGCB com R-CHOP e Linfoma de Burkitt com t(8;14) c-myc e padrão de céu estrelado), profilaxia da Síndrome de Lise Tumoral e casos clínicos com questões comentadas. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado completo de Leucemias e Linfomas para concursos médicos e prática especializada: fundamentos da hematopoiese, Leucemia Mieloide Aguda (LMA) com mieloperoxidase e bastonetes de Auer, Leucemia Promielocítica Aguda (LPA) com translocação t(15;17) PML-RARA, coagulopatia de consumo (CIVD) e terapia direcionada com ATRA e Trióxido de Arsênico, Leucemia Linfoide Aguda (LLA) na infância e no adulto com santuários do SNC e testículo, Leucemia Mieloide Crônica (LMC) com cromossomo Filadélfia t(9;22) BCR-ABL e inibidores de tirosina-quinase, Leucemia Linfoide Crônica (LLC) com manchas de Gümprecht e estadiamentos de Rai e Binet, Linfoma de Hodgkin com células de Reed-Sternberg CD15+ e CD30+, subtipo esclerose nodular, sintomas B e Ann Arbor, e o espectro dos Linfomas Não-Hodgkin (LDGCB com R-CHOP e Linfoma de Burkitt com t(8;14) c-myc e padrão de céu estrelado), profilaxia da Síndrome de Lise Tumoral e casos clínicos com questões comentadas. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Clínica Médica",
   "m": "Hematologia e Oncologia Clínica",
   "h": [
@@ -172,6 +172,10 @@
           "O quadro clínico decorre diretamente da <strong>Síndrome de Ocupação Medular (Insuficiência da Hematopoiese Sadia)</strong>:"
         ],
         [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Clínica Médica, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "u",
           [
             "<strong>Síndrome Anêmica Intensa:</strong> Astenia profunda e incapacitante, palidez cutaneomucosa descorada, taquicardia aos mínimos esforços, palpitações e agravamento de angina miocárdica prévia em idosos.",
@@ -245,7 +249,7 @@
             "<strong>O que é o ATRA?</strong> Trata-se do <strong>Ácido Todo-Trans-Retinoico (Tretinoína oral em doses farmacológicas de 45 mg/m²/dia)</strong>. O ATRA atua ligando-se ao domínio mutado do receptor RARA na proteína de fusão PML-RARA, forçando sua degradação proteassômica e <strong>destravando o bloqueio de maturação</strong>: os promielócitos leucêmicos são forçados a se diferenciar em neutrófilos maduros funcionais que não liberam fatores pró-coagulantes, cessando o estímulo da CIVD em 24 a 48 horas!",
             "<strong>Terapia Combinada Curativa Atual (Esquema Livre de Quimioterapia Padrão-Ouro):</strong>\n      <br><strong>ATRA + Trióxido de Arsênico (ATO - <em>Arsenic Trioxide</em>)</strong>. O ATO atua sinergicamente promovendo a degradação da porção PML da oncoproteína e induzindo apoptose celular direta. Esse regime alcança taxas de cura de &gt; 95% em pacientes de baixo e intermediário risco (leucócitos &le; 10.000/mm³).",
             "<strong>Manejo Transfusional Agressivo de Suporte:</strong> Manter plaquetas rigorosamente &gt; 30.000 a 50.000/mm³ com transfusões seriadas; repor <strong>Crioprecipitado</strong> para manter o fibrinogênio &gt; 150 mg/dL; repor Plasma Fresco Congelado (PFC) se INR alargado.",
-            "<strong>Complicação Aguda: Síndrome de Diferenciação Leucêmica (Antiga Síndrome do ATRA):</strong> Surge em 10% a 25% dos pacientes nos primeiros dias de tratamento, caracterizada por febre súbita, dispneia progressiva, ganho de peso rápido com edema maleolar, derrame pleural e pericárdico e infiltrado pulmonar bilateral à radiografia, decorrente da hiperativação e migração tecidual dos neutrófilos em diferenciação que liberam citocinas inflamatórias. <em>Tratamento imediato:</em> <strong>Dexametasona 10 mg EV a cada 12 horas</strong> mantida até a resolução completa dos sintomas. Não suspender o ATRA salvo em casos de insuficiência respiratória hipoxêmica extrema com necessidade de IOT."
+            "<strong>Complicação Aguda: Síndrome de Diferenciação Leucêmica (Antiga Síndrome do ATRA):</strong> Surge em 10% a 25% dos pacientes nos primeiros dias de tratamento, caracterizada por febre súbita, dispneia progressiva, ganho de peso rápido com edema maleolar, derrame pleural e pericárdico e infiltrado pulmonar bilateral à radiografia, decorrente da hiperativação e migração tecidual dos neutrófilos em diferenciação que liberam citocinas inflamatórias. <em>Tratamento imediato:</em> <strong>Dexametasona (10 mg EV 15-20 minutos antes ou junto à 1ª dose de antibiótico em meningite bacteriana aguda, ou 6 mg/dia VO/EV no choque séptico refratário/COVID grave) 10 mg EV a cada 12 horas</strong> mantida até a resolução completa dos sintomas. Não suspender o ATRA salvo em casos de insuficiência respiratória hipoxêmica extrema com necessidade de IOT."
           ]
         ]
       ]
@@ -297,7 +301,7 @@
         [
           "o",
           [
-            "<strong>1. Sistema Nervoso Central (SNC):</strong> Infiltração das leptomeninges e líquor (leucemia meníngea). Manifesta-se como síndrome de hipertensão intracraniana (cefaleia matinal intensa, vômitos em jato, papiledema bilateral) ou paralisia isolada de pares cranianos (especialmente paralisia do VI e VII pares). <em>Prevenção e Tratamento Mandatório:</em> <strong>Quimioterapia Intratecal Profilática Universal</strong> (administração de metotrexato, citarabina e dexametasona diretamente no espaço subaracnóideo via punção lombar seriada) em todos os pacientes, mesmo que o líquor inicial seja normal! A ausência de profilaxia intratecal leva a taxas de recidiva no SNC superiores a 50%.",
+            "<strong>1. Sistema Nervoso Central (SNC):</strong> Infiltração das leptomeninges e líquor (leucemia meníngea). Manifesta-se como síndrome de hipertensão intracraniana (cefaleia matinal intensa, vômitos em jato, papiledema bilateral) ou paralisia isolada de pares cranianos (especialmente paralisia do VI e VII pares). <em>Prevenção e Tratamento Mandatório:</em> <strong>Quimioterapia Intratecal Profilática Universal</strong> (administração de metotrexato, citarabina e Dexametasona (10 mg EV 15-20 minutos antes ou junto à 1ª dose de antibiótico em meningite bacteriana aguda, ou 6 mg/dia VO/EV no choque séptico refratário/COVID grave) diretamente no espaço subaracnóideo via punção lombar seriada) em todos os pacientes, mesmo que o líquor inicial seja normal! A ausência de profilaxia intratecal leva a taxas de recidiva no SNC superiores a 50%.",
             "<strong>2. Testículos (Santuário Gonadal):</strong> Acomete meninos, manifestando-se clinicamente como <strong>aumento de volume testicular indolor, unilateral ou bilateral, de consistência pétrea e assimétrica</strong>, sem sinais flogísticos agudos. Trata-se de sítio clássico de recidiva tardia isolada pós-quimioterapia."
           ]
         ],
@@ -356,7 +360,7 @@
         [
           "o",
           [
-            "<strong>1. Fase de Indução de Remissão:</strong> Quatro a cinco drogas (Vincristina, Corticoide [Dexametasona ou Prednisona], L-Asparaginase e Antraciclina [Daunorrubicina]) associadas à terapia intratecal precoce, visando erradicar a massa blástica visível e restaurar a hematopoiese normal (atingir &lt; 5% de blastos na medula e DRM negativa).",
+            "<strong>1. Fase de Indução de Remissão:</strong> Quatro a cinco drogas (Vincristina, Corticoide [Dexametasona (10 mg EV 15-20 minutos antes ou junto à 1ª dose de antibiótico em meningite bacteriana aguda, ou 6 mg/dia VO/EV no choque séptico refratário/COVID grave) ou Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo)], L-Asparaginase e Antraciclina [Daunorrubicina]) associadas à terapia intratecal precoce, visando erradicar a massa blástica visível e restaurar a hematopoiese normal (atingir &lt; 5% de blastos na medula e DRM negativa).",
             "<strong>2. Fase de Consolidação / Intensificação:</strong> Bloqueio com altas doses de Metotrexato (HD-MTX com resgate de ácido folínico/leucovorina) e Citarabina em altas doses para eliminar clones resistentes.",
             "<strong>3. Terapia Direcionada ao SNC:</strong> Manutenção de quimioterapia intratecal periódica.",
             "<strong>4. Fase de Manutenção:</strong> Quimioterapia oral ambulatorial contínua de baixa intensidade com 6-Mercaptopurina diária e Metotrexato semanal por 2 anos."
@@ -760,7 +764,7 @@
             "<strong>C: Ciclofosfamida</strong> (agente alquilante);",
             "<strong>H: Hidroxidaunorrubicina / Doxorrubicina</strong> (antraciclina inibidora de topoisomerase II);",
             "<strong>O: Oncovin / Vincristina</strong> (inibidor da polimerização de microtúbulos no fuso mitótico);",
-            "<strong>P: Prednisona</strong> (corticoide oral indutor de apoptose linfoide)."
+            "<strong>P: Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo)</strong> (corticoide oral indutor de apoptose linfoide)."
           ]
         ],
         [
@@ -853,7 +857,7 @@
               "<strong>1. Hiperuricemia</strong>",
               "Degradação enzimática maciça dos ácidos nucleicos celulares em purinas, que são oxidadas em ácido úrico pela xantina oxidase.",
               "Precipitação intratubular de cristais insolúveis de ácido úrico no túbulo coletor renal em pH urinário ácido, provocando <strong>Nefropatia por Ácido Úrico e Lesão Renal Aguda Anúrica</strong>.",
-              "<strong>Hiper-hidratação venosa vigorosa</strong> (2.500 a 3.000 mL/m²/dia de soro fisiológico 0,9%) para garantir diurese &gt; 100 mL/m²/h;<br>Uso de <strong>Alopurinol</strong> (inibe xantina oxidase, prevenindo a formação de novo ácido úrico) para risco intermediário; OU <strong>Rasburicase</strong> (urato oxidase recombinante que converte diretamente o ácido úrico formado na molécula hidrossolúvel alantoína, eliminável facilmente pela urina) para alto risco."
+              "<strong>Hiper-ressuscitação volêmica guiada por metas com Ringer Lactato ou Soro Fisiológico 0,9% (20 a 30 mL/kg nas primeiras 3 horas, objetivando débito urinário ≥ 0,5 mL/kg/h)</strong> (2.500 a 3.000 mL/m²/dia de soro fisiológico 0,9%) para garantir diurese &gt; 100 mL/m²/h;<br>Uso de <strong>Alopurinol</strong> (inibe xantina oxidase, prevenindo a formação de novo ácido úrico) para risco intermediário; OU <strong>Rasburicase</strong> (urato oxidase recombinante que converte diretamente o ácido úrico formado na molécula hidrossolúvel alantoína, eliminável facilmente pela urina) para alto risco."
             ],
             [
               "<strong>2. Hipercalemia</strong>",
@@ -1022,7 +1026,7 @@
         ],
         [
           "p",
-          "A) Rai 0; iniciar quimioterapia com esquema R-CHOP imediatamente para impedir infiltração medular.<br>\n  B) Rai 0; conduta expectante ('Watch and Wait'), com acompanhamento clínico e hematológico semestral ambulatorial.<br>\n  C) Rai I; iniciar tratamento com inibidor de tirosina-quinase de Bruton (Ibrutinibe).<br>\n  D) Rai III; indicar transplante autólogo de células-tronco hematopoéticas.<br>\n  E) Rai IV; iniciar transfusão profilática de plaquetas e corticoterapia em altas doses."
+          "A) Rai 0; iniciar quimioterapia com esquema R-CHOP imediatamente para impedir infiltração medular.<br>\n  B) Rai 0; conduta expectante ('Watch and Wait'), com acompanhamento clínico e hematológico semestral ambulatorial.<br>\n  C) Rai I; iniciar tratamento com inibidor de tirosina-quinase de Bruton (Ibrutinibe).<br>\n  D) Rai III; indicar transplante autólogo de células-tronco hematopoéticas.<br>\n  E) Rai IV; iniciar transfusão profilática de plaquetas e corticoterapia sistêmica em altas doses (Metilprednisolona 1 g/dia EV por 3 dias em pulsoterapia, ou Prednisona 1 a 2 mg/kg/dia VO com dose máxima de 60-80 mg/dia)."
         ],
         [
           "p",

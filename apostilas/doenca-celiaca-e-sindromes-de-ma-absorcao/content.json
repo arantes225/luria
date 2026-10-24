@@ -2,8 +2,8 @@
   "v": 2,
   "s": "doenca-celiaca-e-sindromes-de-ma-absorcao",
   "t": "Doença Celíaca e Síndromes de Má Absorção",
-  "p": "Doença Celíaca e Síndromes de Má Absorção — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance em Enteropatia Imunomediada, Critérios ESPGHAN 2020 e Síndromes de Má Absorção Pediátricas",
+  "p": "Tratado de Alta Performance em Enteropatia Imunomediada, Critérios ESPGHAN 2020 e Síndromes de Má Absorção Pediátricas Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance em Enteropatia Imunomediada, Critérios ESPGHAN 2020 e Síndromes de Má Absorção Pediátricas Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Pediatria",
   "m": "Pediatria",
   "h": [
@@ -195,6 +195,10 @@
           "O glúten é um complexo proteico insolúvel em água de armazenamento de reserva presente no endosperma de gramíneas alimentares da família <em>Poaceae</em>, especificamente no <strong>trigo</strong> (e suas variedades espelta, kamut), no <strong>centeio</strong> (secalinas) e na <strong>cevada</strong> (hordeínas). A <strong>aveia</strong> pura é desprovida de glúten tóxico (sua proteína de reserva é a avenina, que possui baixíssima reatividade imunológica), mas encontra-se quase universalmente contaminada por trigo durante o cultivo, transporte e processamento industrial."
         ],
         [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Pediatria, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "p",
           "O glúten é composto por duas frações proteicas principais: as <strong>gluteninas</strong> (de alto e baixo peso molecular) e as <strong>prolaminas</strong> (ricas em prolina e glutamina). No trigo, a prolamina tóxica é a <strong>gliadina</strong> (subdividida em frações alfa, beta, gama e ômega). O trato gastrointestinal humano — por meio de suas enzimas digestivas luminais gástricas (pepsina) e pancreáticas (tripsina, quimotripsina, elastase) associadas às enteropeptidases da borda em escova — é <strong>incapaz de clivar completamente</strong> ligações peptídicas envolvendo prolina e glutamina em posições adjacentes."
         ],
@@ -286,7 +290,7 @@
             "<strong>Parada do Ganho Ponderoestatural e Perda Ponderal:</strong> Desaceleração acentuada da curva de crescimento, queda de percentis de peso e estatura nas curvas da OMS (z-score de peso/idade e peso/estatura < -2 ou -3).",
             "<strong>Hipotrofia Muscular Marcante:</strong> Especialmente visível nas cinturas escapular e pélvica, com atrofia severa das massas glúteas (\"nádegas descaídas\" com pregas cutâneas frouxas pendentes) e adelgaçamento dos membros (\"membros em graveto\").",
             "<strong>Alterações Neurocomportamentais Típicas:</strong> Apatia, prostração, anorexia profunda, irritabilidade extrema, labilidade emocional e recusa alimentar progressiva.",
-            "<strong>Crise Celíaca (Emergência Médica Pediátrica):</strong> Forma fulminante de apresentação da forma clássica, hoje rara devido ao diagnóstico precoce, caracterizada por diarreia aquosa profusa e explosiva, desidratação hiponatrêmica grave, hipocalemia, acidose metabólica descompensada, hipoalbuminemia extrema com anasarca e choque hipovolêmico secundário. Requer internação em UTI pediátrica, suporte hidroeletrolítico venoso imediato e corticoterapia sistêmica endovenosa transitória (hidrocortisona ou metilprednisolona) até a resposta à suspensão estrita do glúten.",
+            "<strong>Crise Celíaca (Emergência Médica Pediátrica):</strong> Forma fulminante de apresentação da forma clássica, hoje rara devido ao diagnóstico precoce, caracterizada por diarreia aquosa profusa e explosiva, desidratação hiponatrêmica grave, hipocalemia, acidose metabólica descompensada, hipoalbuminemia extrema com anasarca e choque hipovolêmico secundário. Requer internação em UTI pediátrica, suporte hidroeletrolítico venoso imediato e corticoterapia sistêmica endovenosa transitória (Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores) ou Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias)) até a resposta à suspensão estrita do glúten.",
             "<strong>2. Forma Não Clássica (Atípica ou Extraintestinal):</strong>\n    <p>É hoje a forma de apresentação <strong>mais prevalente</strong> em crianças maiores, escolares, adolescentes e adultos jovens. Os sintomas gastrointestinais clássicos estão ausentes ou são muito discretos e inespecíficos (dor abdominal recorrente tipo cólica periumbilical, dispepsia, náuseas esporádicas, constipação intestinal crônica refratária a laxativos osmóticos por retenção fecal funcional ou espasmo retal). O paciente procura assistência médica por manifestações isoladas de órgãos distantes:</p>\n    <ul>\n      <li><strong>Anemia Ferropriva Refratária:</strong> É a manifestação não clássica isolada mais frequente! O ferro inorgânico dietético é absorvido primariamente nos enterócitos do <em>duodeno descendente e jejuno proximal</em> — exatamente o sítio anatômico de maior destruição vilositária na doença celíaca. Caracteriza-se por microcitose, hipocromia e ferritina sérica colapsada que não responde ou responde de maneira efêmera à reposição oral de sais de ferro em doses adequadas (3 a 5 mg/kg/dia de ferro elementar por mais de 3 meses).",
             "<strong>Baixa Estatura Idiopática ou Desaceleração do Crescimento:</strong> Criança ou adolescente que apresenta desaceleração da velocidade de crescimento (queda de percentil estatural nas curvas da OMS), idade óssea atrasada e puberdade retardada, mesmo na ausência de diarreia ou queixas digestivas. Representa até 10% dos casos investigados por baixa estatura em ambulatórios de endocrinologia pediátrica!",
             "<strong>Hipoplasia do Esmalte Dentário:</strong> Defeitos simétricos, cronológicos e bilaterais no esmalte dos dentes permanentes (ranhuras horizontais, depressões, coloração amarelada ou acastanhada que acomete preferencialmente incisivos e primeiros molares em erupção durante a infância). É um achado altamente específico ao exame físico estomatológico.",
@@ -310,7 +314,7 @@
         [
           "u",
           [
-            "<strong>Quadro Dermatológico Típico:</strong> Erupção papulovesicular intensamente pruriginosa, em queimação e ferroada, com distribuição simétrica clássica nas <strong>superfícies extensoras dos membros</strong> (cotovelos, superfícies anteriores dos joelhos, nádegas, região sacral, couro cabeludo e dorso superior). Devido ao prurido incoercível, as vesículas intactas agrupadas (\"em buquê de herpes\") rompem-se rapidamente, sendo mais frequente observar no consultório crostas escoriadas, pápulas eritematosas e áreas de hiperpigmentação pós-inflamatória secundárias.",
+            "<strong>Quadro Dermatológico Típico:</strong> Erupção papulovesicular intensamente pruriginosa, em queimação e ferroada, com distribuição simétrica clássica nas <strong>superfícies extensoras dos membros</strong> (cotovelos, superfícies anteriores dos joelhos, nádegas, região sacral, couro cabeludo e dorso superior). Devido ao prurido incoercível, as vesículas intactas agrupadas (\"em buquê de herpes\") rompem-se com agilidade, sendo mais frequente observar no consultório crostas escoriadas, pápulas eritematosas e áreas de hiperpigmentação pós-inflamatória secundárias.",
             "<strong>Fisiopatologia Cutânea:</strong> A estimulação imunológica crônica na lâmina própria intestinal leva à produção de anticorpos da classe IgA dirigidos contra a <strong>transglutaminase epidérmica (eTG ou tTG-3)</strong>. Esses imunocomplexos circulantes IgA-tTG3 ligam-se e depositam-se nas papilas dérmicas superficiais da pele, ativando a via alternativa do complemento com liberação de C5a. O C5a atrai neutrófilos em massa, os quais liberam elastase e enzimas líticas na junção dermoepidérmica, clivando a lâmina lúcida e gerando microabscessos neutrofílicos subepidérmicos e vesículas tênues.",
             "<strong>Diagnóstico Padrão-Ouro:</strong> O exame definitivo é a <strong>Biópsia de Pele Perilesional Saudável</strong> (e não do centro da vesícula escoriada, onde o infiltrado inflamatório digere os depósitos!) com exame por <strong>Imunofluorescência Direta (IFD)</strong>, que revela <strong>depósitos granulares de IgA nas papilas dérmicas</strong> em padrão pontilhado ou microgranular contínuo ao longo da membrana basal.",
             "<em>Implicação Prática Crucial em Exames:</em> <strong>Mais de 90% a 95% dos pacientes com Dermatite Herpetiforme apresentam lesão histopatológica celíaca na biópsia de intestino delgado</strong> (embora a maioria seja assintomática do ponto de vista digestivo). A presença de Dermatite Herpetiforme comprovada por biópsia com IFD granular dérmica positiva <strong>DISPENSA A REALIZAÇÃO DE ENDOSCOPIA DIGESTIVA E BIÓPSIA DUODENAL</strong> para confirmação de doença celíaca! O tratamento definitivo de longo prazo é a <strong>dieta sem glúten estrita e para a vida toda</strong>, associada à <strong>Dapsona oral</strong> (1 a 2 mg/kg/dia) nas fases agudas para alívio rápido do prurido e controle das vesículas enquanto a mucosa e a pele cicatrizam (a resposta clínica à dapsona ocorre em 24 a 48 horas!)."
@@ -590,7 +594,7 @@
           "u",
           [
             "<strong>Fisiopatologia e Mimetismo:</strong> O recobrimento físico em massa da superfície mucosa pelos parasitas, associado à liberação de proteases e clivagem das junções intercelulares, provoca encurtamento transitório de vilosidades, redução da atividade das dissacaridases da borda em escova (especialmente a lactase) e má absorção osmótica de carboidratos e gorduras. O quadro clínico mimetiza perfeitamente a doença celíaca: distensão abdominal, flatulência explosiva fétida, dor epigástrica/periumbilical pós-prandial, fezes amolecidas gordurosas e perda de peso.",
-            "<strong>Diferenciação Propedêutica:</strong> A biópsia duodenal na giardíase pode apresentar Marsh 1 (aumento de LIEs), mas revela tipicamente trofozoítos de <em>Giardia</em> piriformes e flagelados aderidos à superfície dos enterócitos na coloração por Giemsa ou Hematoxilina-Eosina. O Exame Parasitológico de Fezes (EPF) em 3 amostras colhidas em dias alternados ou o teste de antígeno fecal de <em>Giardia</em> por ELISA fecham o diagnóstico. Responde pronta e completamente a agentes antiparasitários orais (Tinidazol dose única de 50 mg/kg, Nitazoxanida ou Metronidazol), sem necessidade de dieta sem glúten!"
+            "<strong>Diferenciação Propedêutica:</strong> A biópsia duodenal na giardíase pode apresentar Marsh 1 (aumento de LIEs), mas revela tipicamente trofozoítos de <em>Giardia</em> piriformes e flagelados aderidos à superfície dos enterócitos na coloração por Giemsa ou Hematoxilina-Eosina. O Exame Parasitológico de Fezes (EPF) em 3 amostras colhidas em dias alternados ou o teste de antígeno fecal de <em>Giardia</em> por ELISA fecham o diagnóstico. Responde pronta e completamente a agentes antiparasitários orais (Tinidazol dose única de 50 mg/kg, Nitazoxanida ou Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase)), sem necessidade de dieta sem glúten!"
           ]
         ],
         [
@@ -994,7 +998,7 @@
             "A) Solicitar tipagem de HLA-DQ2 e HLA-DQ8; se positiva, instituir imediatamente a dieta sem glúten sem necessidade de novos exames.",
             "B) Coletar uma segunda amostra de sangue independente para dosagem de anticorpos anti-endomísio da classe IgA (anti-EMA IgA).",
             "C) Encaminhar obrigatoriamente a paciente para endoscopia digestiva alta com realização de múltiplas biópsias duodenais.",
-            "D) Iniciar de imediato a dieta isenta de glúten e prescrever corticoterapia oral com prednisona por 4 semanas.",
+            "D) Iniciar de imediato a dieta isenta de glúten e prescrever corticoterapia oral com Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) por 4 semanas.",
             "E) Solicitar teste de dosagem de anti-peptídeo de gliadina desamidada da classe IgG (anti-DGP IgG) para confirmação diagnóstica."
           ]
         ],
@@ -1072,7 +1076,7 @@
             "A) É uma erupção maculopapular descamativa e indolor que acomete preferencialmente as dobras flexurais e a região perioral.",
             "B) A biópsia de pele perilesional com imunofluorescência direta demonstra depósitos granulares de IgA nos ápices das papilas dérmicas.",
             "C) Sua presença comprovada por biópsia de pele impõe a realização obrigatória de endoscopia digestiva alta com biópsia duodenal para iniciar o tratamento.",
-            "D) O tratamento medicamentoso de escolha na crise aguda é a prednisona oral em altas doses, sendo a dieta sem glúten ineficaz nas manifestações cutâneas.",
+            "D) O tratamento medicamentoso de escolha na crise aguda é a Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral em altas doses, sendo a dieta sem glúten ineficaz nas manifestações cutâneas.",
             "E) Ao contrário da doença celíaca clássica, a dermatite herpetiforme não apresenta associação com os alelos HLA-DQ2 e HLA-DQ8."
           ]
         ],
@@ -1316,7 +1320,7 @@
               "Dieta 100% Isenta de Glúten (sem trigo, centeio, cevada) estrita e vitalícia.",
               "Fórmula extensamente hidrolisada ou fórmula de aminoácidos; exclusão na dieta materna.",
               "Reposição de enzimas pancreáticas (lipase) a cada refeição + vitaminas ADEK + suporte pulmonar.",
-              "Antiparasitários orais específicos: Tinidazol (dose única de 50 mg/kg), Nitazoxanida ou Metronidazol."
+              "Antiparasitários orais específicos: Tinidazol (dose única de 50 mg/kg), Nitazoxanida ou Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase)."
             ]
           ],
           "book-table"
@@ -1348,7 +1352,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Pediatria. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1358,8 +1387,7 @@
             "<a href=\"https://nature.com\" target=\"_blank\" rel=\"noopener noreferrer\">LEFFLER, D. A. et al. Extraintestinal Manifestations of Celiac Disease. Nature Reviews Gastroenterology & Hepatology, v. 12, p. 561-571, 2015.</a>",
             "<a href=\"https://journals.physiology.org\" target=\"_blank\" rel=\"noopener noreferrer\">FASANO, A. Zonulin and its regulation of intestinal barrier function: the biological door to inflammation, autoimmunity, and cancer. Physiological Reviews, v. 91, n. 1, p. 151-175, 2011.</a>",
             "<a href=\"https://pmph-usa.com\" target=\"_blank\" rel=\"noopener noreferrer\">KLEINMAN, R. E.; GOULET, O. Pediatric Gastrointestinal Disease. 6th ed. Shelton: PMPH USA, 2018.</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

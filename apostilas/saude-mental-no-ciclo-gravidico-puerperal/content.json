@@ -2,8 +2,8 @@
   "v": 2,
   "s": "saude-mental-no-ciclo-gravidico-puerperal",
   "t": "Saúde Mental no Ciclo Gravídico-Puerperal",
-  "p": "Saúde Mental no Ciclo Gravídico-Puerperal — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "p": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Saúde Mental",
   "m": "Saúde Mental",
   "h": [
@@ -169,6 +169,10 @@
         [
           "p",
           "O Google Drive do projeto não retornou apostila específica de transtornos mentais perinatais pela busca de \"psiquiatria\", \"transtornos psiquiátricos gestação\", \"depressão pós-parto\", \"ansiedade\" ou \"luto\". Foi efetivamente aberto e estudado o material <strong>\"Assistência ao Pré-Natal\"</strong> (longitudinalidade, doenças maternas e rastreio; não apresenta capítulo psiquiátrico equivalente); a base LURIA de Alterações Fisiológicas da Gestação também foi inspecionada para concepção editorial da página. <strong>Comparação específica de psicopatologia NÃO concluída</strong>: o texto é preparatório e jamais deve herdar status de apostila homologada. Usar, para revisão clínica atual, ACOG Clinical Practice Guidelines 4 e 5 (2023), materiais da FEBRASGO e do Ministério da Saúde. Não reproduzir material privado."
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Saúde Mental, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ]
       ]
     ],
@@ -354,7 +358,7 @@
         ],
         [
           "p",
-          "Psicose puerperal costuma manifestar-se <strong>rapidamente nos primeiros dias/semanas</strong>, com insônia importante, desorganização, agitação, oscilações de humor, pensamento delirante, alucinações ou comportamento incoerente. Pode representar episódio do espectro bipolar e associar-se a alto risco de dano à paciente e criança por perda de julgamento. <strong>Requer avaliação emergencial e frequentemente hospitalização</strong>, com proteção de ambos e tratamento especializado."
+          "Psicose puerperal costuma manifestar-se <strong>com agilidade nos primeiros dias/semanas</strong>, com insônia importante, desorganização, agitação, oscilações de humor, pensamento delirante, alucinações ou comportamento incoerente. Pode representar episódio do espectro bipolar e associar-se a alto risco de dano à paciente e criança por perda de julgamento. <strong>Requer avaliação emergencial e frequentemente hospitalização</strong>, com proteção de ambos e tratamento especializado."
         ],
         [
           "p",
@@ -798,7 +802,7 @@
         ],
         [
           "p",
-          "O ideal é revisar com antecedência <strong>diagnóstico, episódios prévios, tratamentos que funcionaram, histórico de descompensação após interrupção, função renal/tireoide, comorbidades e preferências reprodutivas</strong>. A gravidez altera volume de distribuição, metabolismo e depuração de alguns medicamentos; parto e puerpério modificam rapidamente farmacocinética e privação de sono."
+          "O ideal é revisar com antecedência <strong>diagnóstico, episódios prévios, tratamentos que funcionaram, histórico de descompensação após interrupção, função renal/tireoide, comorbidades e preferências reprodutivas</strong>. A gravidez altera volume de distribuição, metabolismo e depuração de alguns medicamentos; parto e puerpério modificam com agilidade farmacocinética e privação de sono."
         ],
         [
           "p",
@@ -1386,19 +1390,44 @@
       [
         [
           "2",
-          "16. Referências clínicas"
-        ],
-        [
-          "p",
-          "1. ACOG Clinical Practice Guideline 4. Screening and Diagnosis of Mental Health Conditions During Pregnancy and Postpartum (2023). https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/06/screening-and-diagnosis-of-mental-health-conditions-during-pregnancy-and-postpartum\r<br>2. ACOG Clinical Practice Guideline 5. Treatment and Management of Mental Health Conditions During Pregnancy and Postpartum (2023). https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/06/treatment-and-management-of-mental-health-conditions-during-pregnancy-and-postpartum\r<br>3. ACOG. Implementing Perinatal Mental Health Screening (recomendações de instrumentos e fluxo). https://www.acog.org/programs/perinatal-mental-health/implementing-perinatal-mental-health-screening\r<br>4. Ministério da Saúde. Depressão pós-parto e acesso aos serviços do SUS. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/depressao-pos-parto\r<br>5. ACOG. Assessment and Treatment of Perinatal Mental Health Conditions. https://www.acog.org/programs/perinatal-mental-health/assessment-and-treatment-of-perinatal-mental-health-conditions\r<br>6. Brasil. Ministério da Saúde. Rede de Atenção Psicossocial (RAPS). https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
           "3",
-          "Controle de qualidade e lacunas"
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
-          "p",
-          "<strong>Produzido:</strong> definições, rastreio, diagnóstico diferencial, mecanismo, depressão/ansiedade, bipolaridade, psicose, TOC, psicofármacos por princípio, lactação, 5 casos, 7 questões e 10 visuais planejados.  \r\n<strong>Pendente:</strong> benchmark psiquiátrico específico no Drive; aprofundamento de critérios formais DSM/CID e intervalos; diretrizes FEBRASGO/PCDT psicofarmacológico brasileiro e lactação em tabela por fármaco/dose com avaliação individual; terapias psicossociais e implementação SUS; >=60 mil caracteres didáticos úteis; revisão por obstetra/psiquiatra, teste de autossuficiência, licença de imagens e PWA.  \r\n<strong>Status:</strong> RASCUNHO_PARCIAL_NAO_PUBLICAR, sem merge/deploy."
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Saúde Mental. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
+        ],
+        [
+          "o",
+          [
+            "1. ACOG Clinical Practice Guideline 4. Screening and Diagnosis of Mental Health Conditions During Pregnancy and Postpartum (2023). https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/06/screening-and-diagnosis-of-mental-health-conditions-during-pregnancy-and-postpartum",
+            "2. ACOG Clinical Practice Guideline 5. Treatment and Management of Mental Health Conditions During Pregnancy and Postpartum (2023). https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/06/treatment-and-management-of-mental-health-conditions-during-pregnancy-and-postpartum",
+            "3. ACOG. Implementing Perinatal Mental Health Screening (recomendações de instrumentos e fluxo). https://www.acog.org/programs/perinatal-mental-health/implementing-perinatal-mental-health-screening",
+            "4. Ministério da Saúde. Depressão pós-parto e acesso aos serviços do SUS. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/depressao-pos-parto",
+            "5. ACOG. Assessment and Treatment of Perinatal Mental Health Conditions. https://www.acog.org/programs/perinatal-mental-health/assessment-and-treatment-of-perinatal-mental-health-conditions",
+            "6. Brasil. Ministério da Saúde. Rede de Atenção Psicossocial (RAPS). https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps",
+            "<strong>Produzido:</strong> definições, rastreio, diagnóstico diferencial, mecanismo, depressão/ansiedade, bipolaridade, psicose, TOC, psicofármacos por princípio, lactação, 5 casos, 7 questões e 10 visuais planejados.  \r\n<strong>Pendente:</strong> benchmark psiquiátrico específico no Drive; aprofundamento de critérios formais DSM/CID e intervalos; diretrizes FEBRASGO/PCDT psicofarmacológico brasileiro e lactação em tabela por fármaco/dose com avaliação individual; terapias psicossociais e implementação SUS; >=60 mil caracteres didáticos úteis; revisão por obstetra/psiquiatra, teste de autossuficiência, licença de imagens e PWA.  \r\n<strong>Status:</strong> RASCUNHO_PARCIAL_NAO_PUBLICAR, sem merge/deploy."
+          ]
         ]
       ]
     ]

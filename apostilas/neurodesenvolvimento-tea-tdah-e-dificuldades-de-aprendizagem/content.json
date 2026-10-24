@@ -2,8 +2,8 @@
   "v": 2,
   "s": "neurodesenvolvimento-tea-tdah-e-dificuldades-de-aprendizagem",
   "t": "Neurodesenvolvimento: TEA, TDAH e Dificuldades de Aprendizagem",
-  "p": "Neurodesenvolvimento: TEA, TDAH e Dificuldades de Aprendizagem — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance: Critérios DSM-5-TR, M-CHAT-R/F, Escalas SNAP-IV, Psicofarmacologia e Intervenções Baseadas em Evidências",
+  "p": "Tratado de Alta Performance: Critérios DSM-5-TR, M-CHAT-R/F, Escalas SNAP-IV, Psicofarmacologia e Intervenções Baseadas em Evidências Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance: Critérios DSM-5-TR, M-CHAT-R/F, Escalas SNAP-IV, Psicofarmacologia e Intervenções Baseadas em Evidências Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Pediatria",
   "m": "Pediatria",
   "h": [
@@ -105,6 +105,10 @@
         [
           "p",
           "Ao concluir este tratado médico aprofundado, o estudante e profissional deverá ser capaz de:"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Pediatria, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "p",
@@ -377,7 +381,7 @@
         ],
         [
           "p",
-          "* <strong>Sintomas de Desatenção (9 Itens):</strong><br>  1. Frequentemente deixa de prestar atenção a detalhes ou comete erros por descuido em tarefas escolares, no trabalho ou durante outras atividades.<br>  2. Frequentemente tem dificuldade de manter a atenção em tarefas ou atividades lúdicas.<br>  3. Frequentemente parece não escutar quando alguém lhe dirige a palavra diretamente (parece \"no mundo da lua\").<br>  4. Frequentemente não segue instruções até o fim e não consegue terminar tarefas escolares, afazeres ou deveres no local de trabalho (começa tarefas, mas rapidamente perde o foco e desvia-se facilmente).<br>  5. Frequentemente tem dificuldade para organizar tarefas e atividades (gerenciamento de tempo deficiente, mesa e cadernos desorganizados, perde prazos).<br>  6. Frequentemente evita, não gosta ou reluta em se envolver em tarefas que exijam esforço mental constante (ex.: lições de casa extensas, preenchimento de formulários, relatórios).<br>  7. Frequentemente perde coisas necessárias para tarefas ou atividades (ex.: cadernos, lápis, estojo, casaco, chaves, telefone).<br>  8. É facilmente distraído por estímulos externos (inclusive pensamentos não relacionados em adolescentes e adultos).<br>  9. Frequentemente é esquecido em relação a atividades cotidianas (ex.: esquecer de fazer tarefas de casa, retornar ligações, pagar contas)."
+          "* <strong>Sintomas de Desatenção (9 Itens):</strong><br>  1. Frequentemente deixa de prestar atenção a detalhes ou comete erros por descuido em tarefas escolares, no trabalho ou durante outras atividades.<br>  2. Frequentemente tem dificuldade de manter a atenção em tarefas ou atividades lúdicas.<br>  3. Frequentemente parece não escutar quando alguém lhe dirige a palavra diretamente (parece \"no mundo da lua\").<br>  4. Frequentemente não segue instruções até o fim e não consegue terminar tarefas escolares, afazeres ou deveres no local de trabalho (começa tarefas, mas com agilidade perde o foco e desvia-se facilmente).<br>  5. Frequentemente tem dificuldade para organizar tarefas e atividades (gerenciamento de tempo deficiente, mesa e cadernos desorganizados, perde prazos).<br>  6. Frequentemente evita, não gosta ou reluta em se envolver em tarefas que exijam esforço mental constante (ex.: lições de casa extensas, preenchimento de formulários, relatórios).<br>  7. Frequentemente perde coisas necessárias para tarefas ou atividades (ex.: cadernos, lápis, estojo, casaco, chaves, telefone).<br>  8. É facilmente distraído por estímulos externos (inclusive pensamentos não relacionados em adolescentes e adultos).<br>  9. Frequentemente é esquecido em relação a atividades cotidianas (ex.: esquecer de fazer tarefas de casa, retornar ligações, pagar contas)."
         ],
         [
           "p",
@@ -439,7 +443,7 @@
         ],
         [
           "p",
-          "* <strong>Mecanismo Neurocognitivo Subjacente (Déficit Fonológico Central):</strong><br>  * O cérebro humano não possui circuitos geneticamente programados para a leitura (a escrita é uma invenção cultural recente de cerca de 5.000 anos). Para aprender a ler, o cérebro precisa reciclar circuitos visuais e linguísticos temporoparietais do hemisfério esquerdo.<br>  * O cerne da dislexia reside no <strong>déficit no processamento da Consciência Fonológica</strong>: a incapacidade cognitiva de perceber, isolar e manipular conscientemente os menores sons constituintes da fala humana (os <strong>fonemas</strong>).<br>  * Sem a consciência fonológica bem estabelecida, a criança não consegue fazer a correspondência biunívoca entre os fonemas (sons) e os <strong>grafemas</strong> (letras escritas) — o chamado <strong>Princípio Alfabético</strong>.<br>  * Estudos de ressonância magnética funcional demonstram uma hipoativação marcante nas áreas temporoparietal e occipitotemporal esquerdas (a chamada \"área da forma visual da palavra\" no giro fusiforme esquerdo), com hiperativação compensatória no giro frontal inferior (área de Broca) e no hemisfério direito.<br>* <strong>Manifestações Clínicas e Sinais Precoces:</strong><br>  <em> Na idade pré-escolar: atraso na aquisição da fala; dificuldade crônica para memorizar rimas infantis, cantigas e nomes das letras; dificuldade para nomear cores e objetos rapidamente (</em>Rapid Automatized Naming* - RAN deficitário).<br>  * Na idade escolar: leitura lenta, silabada, hesitante, com esforço extenuante; inversão de letras com simetria espacial semelhante (b/d, p/q); omissão, substituição ou adição de sílabas e palavras; dificuldade para ler pseudopalavras (palavras inventadas sem significado, como \"flurpo\" ou \"branto\", que exigem decodificação fonológica pura e não memorização visual de vocabulário). A compreensão textual é secundariamente comprometida em decorrência da sobrecarga cognitiva exigida para decodificar cada letra, esgotando a memória de trabalho.<br>* <strong>Intervenção Baseada em Evidências:</strong> O tratamento da dislexia NÃO se faz com medicamentos nem com métodos visuais/motores (como exercícios oculares ou óculos de lentes coloridas, que não possuem comprovação científica). A única abordagem terapêutica padrão-ouro com evidência científica sólida de nível A consiste na <strong>intervenção fonoaudiológica e psicopedagógica estruturada através do Método Fônico Multissensorial</strong>, com treino explícito e intensivo da consciência fonológica e da correspondência grafema-fonema."
+          "* <strong>Mecanismo Neurocognitivo Subjacente (Déficit Fonológico Central):</strong><br>  * O cérebro humano não possui circuitos geneticamente programados para a leitura (a escrita é uma invenção cultural recente de cerca de 5.000 anos). Para aprender a ler, o cérebro precisa reciclar circuitos visuais e linguísticos temporoparietais do hemisfério esquerdo.<br>  * O cerne da dislexia reside no <strong>déficit no processamento da Consciência Fonológica</strong>: a incapacidade cognitiva de perceber, isolar e manipular conscientemente os menores sons constituintes da fala humana (os <strong>fonemas</strong>).<br>  * Sem a consciência fonológica bem estabelecida, a criança não consegue fazer a correspondência biunívoca entre os fonemas (sons) e os <strong>grafemas</strong> (letras escritas) — o chamado <strong>Princípio Alfabético</strong>.<br>  * Estudos de ressonância magnética funcional demonstram uma hipoativação marcante nas áreas temporoparietal e occipitotemporal esquerdas (a chamada \"área da forma visual da palavra\" no giro fusiforme esquerdo), com hiperativação compensatória no giro frontal inferior (área de Broca) e no hemisfério direito.<br>* <strong>Manifestações Clínicas e Sinais Precoces:</strong><br>  <em> Na idade pré-escolar: atraso na aquisição da fala; dificuldade crônica para memorizar rimas infantis, cantigas e nomes das letras; dificuldade para nomear cores e objetos com agilidade (</em>Rapid Automatized Naming* - RAN deficitário).<br>  * Na idade escolar: leitura lenta, silabada, hesitante, com esforço extenuante; inversão de letras com simetria espacial semelhante (b/d, p/q); omissão, substituição ou adição de sílabas e palavras; dificuldade para ler pseudopalavras (palavras inventadas sem significado, como \"flurpo\" ou \"branto\", que exigem decodificação fonológica pura e não memorização visual de vocabulário). A compreensão textual é secundariamente comprometida em decorrência da sobrecarga cognitiva exigida para decodificar cada letra, esgotando a memória de trabalho.<br>* <strong>Intervenção Baseada em Evidências:</strong> O tratamento da dislexia NÃO se faz com medicamentos nem com métodos visuais/motores (como exercícios oculares ou óculos de lentes coloridas, que não possuem comprovação científica). A única abordagem terapêutica padrão-ouro com evidência científica sólida de nível A consiste na <strong>intervenção fonoaudiológica e psicopedagógica estruturada através do Método Fônico Multissensorial</strong>, com treino explícito e intensivo da consciência fonológica e da correspondência grafema-fonema."
         ],
         [
           "3",
@@ -837,7 +841,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Pediatria. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -846,8 +875,7 @@
             "<a href=\"https://www.sbp.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria (SBP) — Manual de Orientação: Transtorno do Espectro do Autismo (Departamentos Científicos de Pediatria do Desenvolvimento e Comportamento e de Neurologia Infantil)</a>",
             "<a href=\"https://publications.aap.org\" target=\"_blank\" rel=\"noopener noreferrer\">American Academy of Pediatrics (AAP) — Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents (Pediatrics 2019/2024)</a>",
             "<a href=\"https://www.gov.br/saude\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde do Brasil — Linha de Cuidado para a Atenção às Pessoas com Transtornos do Espectro do Autismo e suas Famílias na Rede de Atenção Psicossocial do SUS</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

@@ -1,1 +1,1381 @@
-{"v":2,"s":"resposta-metabolica-ao-trauma","t":"Resposta Metabólica ao Trauma","p":"Resposta metabólica ao trauma: fisiopatologia, interpretação e conduta","o":[["visao","Resposta metabólica ao trauma: da agressão tecidual ao cuidado integral"],["fases","1. Conceitos fundamentais: estresse cirúrgico, ebb e flow"],["hormonios","2. Resposta neuroendócrina: simpático, cortisol, ADH e SRAA"],["inflamacao","3. Imunidade inata, DAMPs, citocinas e fase aguda"],["substratos","4. Glicose, lipídios, proteínas e balanço nitrogenado no trauma"],["perfusao","5. Perfusão, metabolismo anaeróbio e interpretação de lactato/base deficit"],["endotelio","6. Endotélio, glicocálix, coagulopatia e disfunção de órgãos"],["organos","7. Consequências sistêmicas: pulmão, rim, intestino, cérebro e músculo"],["avaliacao","8. Avaliação e estratificação: do trauma anatômico ao fenótipo metabólico"],["nutricao","9. Nutrição no trauma: quando começar, qual via e como evitar dano"],["situacoes","10. Populações especiais e padrões metabólicos que modificam conduta"],["algoritmo","11. Algoritmo integrado e prognóstico: reconhecer a mudança de fase"],["casos","12. Casos clínicos integradores: mecanismos e decisões"],["questoes","13. Questões autorais de alto rendimento — comentários completos"],["referencias","14. Referências, matriz de autossuficiência e registro editorial"]],"h":["Apostila LURIA","Resposta Metabólica ao Trauma","Da resposta ao estresse à recuperação metabólica e funcional",["Área: Cirurgia Geral","Matéria: Trauma e Fisiologia Cirúrgica","Tema: Resposta metabólica ao trauma"],"apostila-identity"],"q":[["visao",0,[["2","Resposta metabólica ao trauma: da agressão tecidual ao cuidado integral"],["p","Trauma, cirurgia extensa, queimaduras e choque disparam respostas neuroendócrinas, inflamatórias, metabólicas e imunes destinadas a preservar perfusão de órgãos vitais, mobilizar combustíveis e iniciar reparação tecidual. A mesma resposta que protege nas primeiras horas pode se tornar fonte de dano: hiperglicemia, proteólise muscular, disfunção endotelial, distúrbios da coagulação, intolerância alimentar, imunossupressão e falência orgânica. Entender o mecanismo impede interpretar cada alteração laboratorial como uma doença isolada ou tratar o hipercatabolismo com medidas perigosas."],["p","O tema não se restringe à resposta endócrino-metabólica à cirurgia. Um acidente com fraturas múltiplas gera lesão anatômica, perda sanguínea, dor, ativação simpática e liberação de sinais de dano; uma colectomia eletiva pode desencadear resposta semelhante em grau menor; uma queimadura extensa mantém grande perda de calor, inflamação e demanda energética por tempo prolongado. A intensidade depende do mecanismo, área lesionada, perfusão, tempo até controle da agressão, comorbidades, idade, nutrição prévia e complicações infecciosas."],["p","A pergunta central do médico é dupla: <strong>qual resposta fisiológica esperada estou observando?</strong> e <strong>quando ela se tornou sinal de hipoperfusão, infecção, falência metabólica ou lesão secundária tratável?</strong> Glicose de 190 mg/dL pode refletir resistência à insulina do estresse ou diabetes subjacente; lactato de 4 mmol/L pode sinalizar choque hemorrágico, mas também catecolaminas, convulsão, falência hepática ou outros mecanismos. A tendência e o contexto valem mais que a rotulagem automática de qualquer número."],["t",["Agressão","Mecanismo","Consequência possível","Pergunta útil"],[["Perda sanguínea","Baixa oferta de O₂ e resposta adrenérgica","Acidose, hipoperfusão, coagulopatia","Sangramento e perfusão foram controlados?"],["Lesão dos tecidos","DAMPs e imunidade inata","Febre, fase aguda, edema","Inflamação esperada ou novo foco infeccioso?"],["Dor e cirurgia","Simpático e eixo HPA","Taquicardia, cortisol, hiperglicemia","Analgesia reduz sofrimento desnecessário?"],["Imobilidade","Proteólise e síntese muscular insuficiente","Fraqueza e sarcopenia","Há plano seguro de nutrição e mobilização?"],["Queimadura","Perda térmica e hipermetabolismo","Alto consumo, lenta cicatrização","Controle térmico, de ferida e energético?"]],"book-table"],["p","<strong>Fronteira curricular:</strong> esta apostila explica mecanismos e seu uso clínico. Algoritmos completos de ressuscitação hemorrágica ficam no tema 022; reposição hidroeletrolítica detalhada no 017; profilaxia e recuperação pós-operatória no 007. O conteúdo de cada apostila deve ser suficiente para entender seu próprio problema, sem duplicar protocolos especializados de outras."]]],["fases",0,[["2","1. Conceitos fundamentais: estresse cirúrgico, ebb e flow"],["3","Ebb e flow de Cuthbertson: fases didáticas, não cronômetro"],["p","Classicamente se descreve uma fase inicial de economia ou choque — ebb — seguida de fase de mobilização — flow. A ebb se associa à ameaça à perfusão, vasoconstrição, menor gasto energético relativo, hipotermia possível e conservação do volume circulante. A flow, após melhora da circulação, frequentemente apresenta maior gasto energético, consumo de oxigênio, catabolismo proteico, hiperglicemia e atividade inflamatória. Isso ajuda a reconhecer por que um paciente ainda em choque não deve receber o mesmo plano metabólico de um traumatizado estabilizado."],["p","Não existe corte universal em 24 ou 48 horas. A ebb pode dominar horas iniciais e persistir enquanto houver choque; características de flow podem coexistir precocemente com resposta adrenérgica. Pessoas submetidas a cirurgia de pequena agressão podem ter mudanças discretas; vítimas de queimadura extensa, infecção secundária ou operações repetidas podem permanecer catabólicas por semanas. O modelo fornece organização conceitual, não critério diagnóstico validado para todos."],["t",["Domínio","Ebb — instabilidade inicial","Flow — mobilização catabólica"],[["Contexto","Hemorragia, perfusão inadequada, agressão não controlada","Perfusão recuperada parcial/totalmente, dano ainda em reparação"],["Gasto energético","Pode reduzir no choque, variável por temperatura e sedação","Geralmente aumenta com gravidade e febre"],["Circulação","Vasoconstrição, possível baixo débito","Estado hiperdinâmico possível"],["Temperatura","Hipotermia por exposição, perda de sangue e alterações de perfusão","Elevação inflamatória da temperatura pode ocorrer"],["Glicose","Hormônios contrarreguladores já ativados","Resistência insulínica e gliconeogênese persistentes"],["Proteínas","Mobilização inicial","Proteólise com balanço nitrogenado negativo"],["Conduta","Hemostasia, oxigenação, correção de choque, aquecimento","Controle de complicações, alimentação segura e mobilização"]],"book-table"],["3","Resposta adaptativa versus resposta desregulada"],["p","A liberação aguda de glicose e ácidos graxos permite sustentar órgãos vitais e células imunes; retenção de água e sódio ajuda preservar perfusão em hipovolemia. Entretanto, quando o estímulo persiste, hiperglicemia prejudica função imune e aumenta osmolaridade, perda muscular reduz recuperação, capilares tornam-se permeáveis e coagulopatia agrava hemorragia. A abordagem clínica não é bloquear todo cortisol ou todas as citocinas, mas remover causa, restaurar fisiologia, prevenir lesão adicional e apoiar reparação."],["3","Gravidade anatômica e resposta sistêmica não são a mesma coisa"],["p","Duas pessoas com fratura semelhante podem evoluir de modo diferente por idade, estado nutricional, diabetes, fragilidade, medicamentos, reserva orgânica e duração da hipoperfusão. Uma lesão pequena de víscera perfurada pode provocar resposta exuberante por infecção e atraso de controle de foco; fratura fechada de alto impacto pode produzir inflamação estéril importante. Índices de gravidade anatômica auxiliam prognóstico populacional, mas não substituem exame de perfusão, série de marcadores e evolução funcional."],["3","Inflamação estéril não equivale automaticamente a sepse"],["p","Febre, leucocitose e taquicardia após lesão podem ser reflexos de inflamação estéril. SIRS descreve um conjunto inespecífico de achados, enquanto sepse exige resposta desregulada a infecção com disfunção orgânica. A ausência de foco infeccioso claro não permite ignorar febre tardia ou nova hipotensão; o inverso também vale: PCR isoladamente elevada no primeiro dia após grande agressão não basta para antibiótico. Usar cronologia, exame, sinais de disfunção e investigação dirigida."]]],["hormonios",0,[["2","2. Resposta neuroendócrina: simpático, cortisol, ADH e SRAA"],["3","Simpático-adrenomedular: segundos a minutos"],["p","Nocicepção, hipovolemia, hipóxia e estresse psicológico ativam sistema nervoso simpático e medula adrenal. Noradrenalina promove vasoconstrição em territórios selecionados e sustenta resistência vascular; adrenalina eleva atividade cardiovascular e estimula glicogenólise e lipólise. Compensação pode preservar pressão aparentemente aceitável em fases de hemorragia, apesar de perfusão cutânea e renal reduzida. Taquicardia e palidez não devem ser rotuladas como ansiedade sem investigar choque."],["p","Betabloqueadores, dispositivos de estimulação cardíaca, idade, sedação e lesão medular alteram resposta cronotrópica. Uma frequência cardíaca normal não exclui grande hemorragia. Em contrapartida, dor intensa, febre e catecolaminas exógenas podem elevar FC sem perda sanguínea importante. O objetivo é integrar mecanismo do trauma, exame, débito, perfusão, hemoglobina seriada, lactato e resposta ao tratamento."],["3","Eixo hipotálamo–hipófise–adrenal"],["p","O estresse eleva atividade de CRH hipotalâmico, ACTH hipofisário e cortisol adrenal. O cortisol facilita resposta vascular às catecolaminas, favorece gliconeogênese a partir de lactato, glicerol e aminoácidos e contribui para resistência à insulina. Também modula inflamação de maneira variável por contexto e tempo. Alterações de proteínas ligadoras e do ritmo circadiano na doença crítica fazem uma dosagem isolada de cortisol pouco interpretável fora de hipótese endocrinológica específica."],["p","Cortisol elevado no traumatizado não significa síndrome de Cushing e não indica corticoterapia universal. Em insuficiência adrenal conhecida, o contexto é diferente e pode exigir plano de reposição de estresse específico. Confundir o eixo adaptativo com indicação de corticoide em todo choque hemorrágico é erro potencialmente nocivo."],["3","ADH e renina–angiotensina–aldosterona"],["p","Redução do volume arterial efetivo estimula vasopressina/ADH e SRAA. ADH favorece reabsorção de água livre, angiotensina II vasoconstrição e aldosterona retenção de sódio e eliminação de potássio. No início, esses efeitos ajudam conservar volume; depois, associados a inflamação, disfunção renal e excesso de fluidos, podem contribuir para edema. Oligúria é achado a explicar, não indicação automática de bolus indiscriminado."],["p","Diferenciar oligúria pré-renal por hipoperfusão, lesão renal aguda estabelecida, retenção urinária, lesão traumática de trato urinário e aumento de pressão intra-abdominal exige avaliação. Tratar com fluidos repetidos sem controlar sangramento pode agravar hemodiluição de fatores de coagulação e edema tecidual."],["3","Hormônios tireoidianos e anabolismo em doença crítica"],["p","Há alteração de T3/T4/TSH por síndrome do eutireoidiano doente, redução de efeitos anabólicos de IGF-1 e perturbação de hormônios sexuais. T3 baixo isolado durante trauma grave não prova hipotireoidismo primário e habitualmente não justifica reposição empírica. A sinalização de GH/IGF e a insulinorresistência ilustram que concentrações hormonais e respostas dos tecidos podem divergir."],["t",["Achado","Causa plausível","Erro a evitar"],[["Taquicardia e palidez","Catecolaminas ou hipovolemia","Ignorar sangramento porque paciente refere dor"],["Hiperglicemia","Cortisol, catecolaminas e resistência insulínica","Insulina excessiva e hipoglicemia"],["Oligúria","ADH/SRAA, hipoperfusão ou lesão renal","Dar soro indefinidamente sem reavaliar"],["Potássio alterado","Aldosterona, rim, acidose e lesão muscular","Inferir valor sem medir"],["T3 baixo","Resposta à doença crítica","Tratar como hipotireoidismo primário sem contexto"]],"book-table"]]],["inflamacao",0,[["2","3. Imunidade inata, DAMPs, citocinas e fase aguda"],["3","A lesão tecidual sinaliza perigo sem bactéria"],["p","Células lesadas e matriz extracelular danificada liberam sinais moleculares de dano — DAMPs — incluindo DNA mitocondrial, ATP extracelular e proteínas nucleares. Receptores de reconhecimento de padrões (PRRs) presentes em células imunes e teciduais reconhecem essas moléculas e ativam vias inflamatórias. Esse sistema recruta leucócitos, remove detritos, aumenta permeabilidade e participa do reparo. A inflamação inicial pode ser estéril e não prova infecção."],["p","Patógenos fornecem outros sinais, os PAMPs, que se somam à resposta a DAMPs em trauma contaminado ou sepse posterior. É importante diferenciar o mecanismo inicial de resposta, mas o quadro clínico pode conter simultaneamente lesão estéril e infecção. Não atribuir toda leucocitose, febre ou PCR alta a 'complicação infecciosa' sem avaliar evolução e foco."],["t",["Mediador","Função relevante","Implicação"],[["TNF-α","Ativação endotelial, migração celular, permeabilidade","Edema e vasoplegia em quadros graves"],["IL-1","Inflamação e febre","Alteração térmica e resposta imune"],["IL-6","Indução de proteínas de fase aguda","Aumento de PCR e fibrinogênio"],["IL-10","Freios anti-inflamatórios","Modula atividade imune e pode participar de imunossupressão"],["Quimiocinas","Direcionamento de leucócitos","Acúmulo de células na área lesionada"],["Complemento","Opsonização e ligação com coagulação","Amplificação imune e lesão endotelial"]],"book-table"],["3","Proteínas de fase aguda e a armadilha da albumina"],["p","O fígado aumenta síntese de proteínas positivas de fase aguda, como PCR e fibrinogênio, enquanto albumina e transtirretina podem diminuir por redistribuição, alteração de síntese, permeabilidade e hemodiluição. Albumina de 2,5 g/dL no segundo dia após trauma grave é marcador de doença e prognóstico em determinado contexto, mas não mede sozinha a massa muscular ou o grau de desnutrição anterior."],["p","Avaliar nutrição exige história de ingestão e perda ponderal, função, exame físico, composição corporal e inflamação. PCR elevada não escolhe antibiótico; ela descreve uma parte da resposta. A decisão de infecção exige identificar fonte provável, temporalidade, exames dirigidos e disfunção."],["3","Inflamação e imunossupressão podem coexistir"],["p","Após trauma grave, alguns circuitos permanecem pró-inflamatórios enquanto outros apresentam redução de respostas celulares e maior suscetibilidade a infecção secundária. Não se deve assumir esquema rígido 'primeiro SIRS, depois CARS' em todo paciente. Inflamação persistente, linfopenia, complicações infecciosas e perda muscular podem coexistir na doença crítica prolongada."],["3","Diferencial entre febre inflamatória e complicação"],["p","Febre leve e leucocitose próximas a uma operação podem acompanhar inflamação estéril. Febre persistente associada a novo choque, piora de oxigenação, secreção purulenta, dor abdominal progressiva ou disfunção orgânica impõe investigação de complicação. O tempo isolado não estabelece diagnóstico: uma pessoa idosa pode ter infecção grave sem febre. Em vez de tratar PCR como doença, reavaliar achados objetivos e buscar foco quando indicado."]]],["substratos",0,[["2","4. Glicose, lipídios, proteínas e balanço nitrogenado no trauma"],["3","Glicemia do estresse: alta produção e uso periférico perturbado"],["p","Catecolaminas e glucagon aumentam glicogenólise hepática; cortisol e mediadores inflamatórios mantêm gliconeogênese a partir de lactato, glicerol e aminoácidos. A resistência insulínica em músculo e tecido adiposo reduz captação periférica, apesar de secreção pancreática relativamente preservada ou elevada. Essas adaptações fornecem energia a órgãos prioritários, mas hiperglicemia sustentada associa-se a infecções, diurese osmótica, distúrbios eletrolíticos e estresse oxidativo."],["p","O diagnóstico de hiperglicemia do estresse exige interpretação clínica, não um limite isolado que dispense investigar diabetes. HbA1c ajuda a avaliar exposição glicêmica prévia quando sua interpretação é válida, porém sangramento, transfusão e condições hematológicas podem distorcer resultado. Ao iniciar dieta, vasopressores, glicocorticoides ou nutrição parenteral, as doses de insulina e a necessidade de monitorização podem mudar. Uma correção agressiva para valores normoglicêmicos de pessoa saudável aumenta hipoglicemia e não é meta apropriada por padrão em trauma grave."],["3","Lipólise e ácidos graxos: energia quando a glicose não é suficiente"],["p","A resposta adrenérgica ativa lipase hormônio-sensível e libera ácidos graxos livres e glicerol. O fígado utiliza glicerol na gliconeogênese; ácidos graxos podem sustentar oxidação em tecidos capazes de utilizá-los, desde que perfusão e função mitocondrial sejam adequadas. Jejum e resposta hormonal podem aumentar cetogênese, mas cetonas discretas não equivalem a cetoacidose. Em diabético com acidose, cetonemia elevada e alterações do ânion gap, a hipótese de cetoacidose deve ser investigada de forma específica."],["3","Proteólise muscular é parte do custo fisiológico da sobrevivência"],["p","O tecido muscular fornece alanina e glutamina que podem sustentar gliconeogênese hepática, células do sistema imune e reparo de tecidos. Sistemas de ubiquitina-proteassoma e autofagia participam da degradação de proteínas, enquanto a sinalização anabólica mediada por insulina e IGF-1 fica menos eficaz. O resultado pode ser balanço nitrogenado negativo apesar de grande aporte de calorias; isso não é mera falta de vontade do paciente de fazer fisioterapia."],["p","A perda de massa muscular compromete força respiratória, capacidade de caminhar, transferência da cama, deglutição e autonomia após a alta. Obesidade ou edema importante não protegem automaticamente de sarcopenia: tecido adiposo e líquido podem mascarar queda de proteína muscular. Em idosos, pessoas desnutridas, imobilizadas por fraturas ou em ventilação mecânica, a reserva funcional pode cair rapidamente. A prevenção envolve controlar lesão, evitar complicações, instituir nutrição segura e realizar mobilização progressiva quando viável."],["3","Balanço nitrogenado: marcador interpretativo com limitações"],["p","A diferença entre nitrogênio ingerido e perdido é uma aproximação do estado proteico global. A ureia urinária pode apoiar estimativas, mas cálculos podem errar diante de alteração de função renal, hemodiálise, grandes perdas por feridas/drenos, coleta incompleta e variação de estoque corporal. Nitrogênio positivo não garante síntese muscular funcional, assim como perda no dia de hipercatabolismo não significa ausência de benefício da nutrição. A leitura clínica deve integrar evolução de força, ingestão, função renal, inflamação e mobilização."],["t",["Substrato","Produção/uso sob estresse","Implicação à beira do leito"],[["Glicose","Glicogenólise, gliconeogênese e captação periférica reduzida","Glicemia seriada e evitar tanto hiperglicemia importante quanto hipoglicemia"],["Glicerol","Lipólise e substrato hepático","A produção endógena de glicose continua mesmo sem alimentação"],["Ácidos graxos","Lipólise e β-oxidação","Oferta energética depende de perfusão e metabolismo celular"],["Alanina","Catabolismo muscular e gliconeogênese","Perda de músculo pode ocorrer com peso total aumentado por edema"],["Glutamina","Mobilização de aminoácidos para tecidos e células imunes","Não implica recomendação de suplementação universal de glutamina"],["Ureia","Metabolismo e excreção de nitrogênio","Função renal interfere no balanço nitrogenado estimado"]],"book-table"],["3","O ciclo de Cori e o lactato: por que o corpo não é um sistema 'com ou sem oxigênio'"],["p","O músculo e hemácias produzem lactato, que pode ser captado por fígado e rins para produção de glicose; esse intercâmbio integra o ciclo de Cori. O lactato não surge somente de hipóxia: glicólise acelerada por catecolaminas e depuração reduzida podem elevá-lo. Em choque, a contribuição de hipóxia tecidual pode ser importante, porém uma normalização parcial do lactato não garante resolução de todas as lesões e sua persistência não comprova por si continuidade da hemorragia."],["3","Trauma versus jejum simples"],["p","Em jejum sem agressão, o organismo tende progressivamente a usar gordura e corpos cetônicos para poupar proteína. No trauma grave, sinais inflamatórios e hormonais mantêm produção hepática de glicose e proteólise apesar de alguma adaptação ao jejum; por isso a perda muscular pode ser muito maior que em um adulto saudável em restrição alimentar de igual duração. O trauma também pode reduzir tolerância gastrointestinal, aumentar perdas e impedir ingestão por operações e sedação. Suporte nutricional deve responder à fase clínica e ao risco, não apenas ao número de dias sem alimentação."]]],["perfusao",0,[["2","5. Perfusão, metabolismo anaeróbio e interpretação de lactato/base deficit"],["3","DO₂ e VO₂: oferta, extração e consumo de oxigênio"],["p","A entrega de oxigênio, DO₂, depende do débito cardíaco e do conteúdo arterial de oxigênio. Este é dominado por hemoglobina e saturação; o oxigênio dissolvido no plasma contribui muito menos em condições habituais. Assim, uma SpO₂ de 99% não garante boa oferta tecidual se a hemoglobina ou o débito estão muito baixos. O consumo celular, VO₂, depende do trabalho metabólico e da capacidade de extração e utilização, que podem se modificar por inflamação, microcirculação e disfunção mitocondrial."],["p","A equação conceitual é <strong>DO₂ = débito cardíaco × conteúdo arterial de O₂</strong>. Para cálculo didático, CaO₂ em mL/dL é aproximadamente 1,34 × hemoglobina (g/dL) × saturação arterial (fração) + 0,003 × PaO₂ (mmHg). Para expressar DO₂ em mL/min, é necessário considerar conversão de unidades entre dL e L. A fórmula explica por que oferecer oxigênio suplementar não corrige sozinho hemorragia aguda, mas não substitui avaliação clínica e intervenções imediatas."],["3","Lactato alto nem sempre significa metabolismo exclusivamente anaeróbio"],["p","Lactato integra metabolismo intermediário normal e pode se elevar por hipóxia celular, ativação β-adrenérgica de glicólise aeróbia, convulsões, exercício, uso de catecolaminas, fármacos, deficiência de tiamina e menor depuração hepática. Em trauma com hipotensão, extremidades frias, alteração mental e sangramento suspeito, a hipoperfusão é prioritária; entretanto, reconhecer causas adicionais melhora interpretação da persistência após hemostasia. A diretriz europeia de trauma, sexta edição (2023), recomenda lactato seriado como auxílio à estimativa da gravidade da hemorragia e da hipoperfusão, não como exame etiológico exclusivo."],["p","Um valor normal não exclui choque, principalmente em fases iniciais ou conforme mecanismos e compensação. A evolução ao longo das horas, associada a exame físico, medidas de perfusão e intervenções realizadas, costuma ter maior utilidade do que um ponto isolado. Não tratar lactato alto com litros de cristaloide por reflexo sem investigar sangramento persistente, vasoplegia, função hepática, uso de adrenalina e controle da causa."],["3","Base deficit e ânion gap: não usar como sinônimos de lactato"],["p","Base deficit descreve uma estimativa do componente metabólico ácido-base e se associa a hipoperfusão em trauma hemorrágico, mas também pode refletir carga de cloreto, disfunção renal, cetose e outras causas de acidose. Lactato e base deficit têm correlação imperfeita e podem evoluir em ritmos distintos. O ânion gap depende das concentrações de eletrólitos e da albumina: hipoalbuminemia reduz o valor observado e pode ocultar ácidos não medidos. Portanto, 'acidose metabólica' não constitui diagnóstico etiológico suficiente."],["t",["Achado","Interpretação possível","Conduta interpretativa"],[["Lactato alto, pele fria, PA reduzida e trauma de alta energia","Hipoperfusão/hemorragia provável","Controlar fonte e reavaliar perfusão e série de marcadores"],["Lactato alto após recuperação de PA em uso de adrenalina","Produção adrenérgica, depuração ou perfusão residual","Checar exame seriado, drogas e perfusão sem fluidos automáticos"],["Acidose hiperclorêmica após grande infusão de soro","Distúrbio de íons fortes/Cl e função renal","Revisar tipo de fluido, cloreto, balanço e função renal"],["Hb inicial aparentemente normal e hemorragia evidente","Diluição/equilíbrio ainda não ocorreram","Não usar Hb única para excluir grande perda"],["Base deficit anormal com lactato normal","Outra acidose ou diferença de cinética","Interpretar gasometria completa, eletrólitos e contexto"],["Lactato normal em instável","Aferição não exclui choque","Priorizar clínica e busca de causa reversível"]],"book-table"],["3","Janelas de perfusão: por que nenhum marcador isolado é infalível"],["p","Nível de consciência, pele, enchimento capilar, pulsos, pressão de pulso, temperatura periférica, débito urinário, lactato, base deficit e resposta à intervenção oferecem informação complementar. Sedação altera consciência, ambiente frio altera enchimento capilar, doença renal modifica diurese e betabloqueador suprime taquicardia. Hemorragia grave exige controle da fonte e ressuscitação apropriada, não espera por exame laboratorial perfeito. A leitura metabólica deve ajudar a seguir o caso, nunca bloquear tratamento de risco vital."]]],["endotelio",0,[["2","6. Endotélio, glicocálix, coagulopatia e disfunção de órgãos"],["3","O endotélio é órgão funcional, não revestimento passivo"],["p","Células endoteliais e glicocálix regulam permeabilidade, adesão de leucócitos, coagulação, tônus vascular e distribuição da microcirculação. Isquemia, reperfusão, catecolaminas, inflamação e trauma mecânico podem danificar essa interface, aumentando extravasamento de água e proteínas, edema e heterogeneidade de perfusão. O paciente pode desenvolver edema importante apesar de relativa depleção intravascular, situação em que administrar mais cristaloide sem avaliação pode ampliar edema sem restaurar microfluxo adequado."],["p","O glicocálix é uma rede de proteoglicanos e glicoproteínas na superfície endotelial que modula contato das células circulantes com a parede vascular. Sua degradação associa-se a aumento de permeabilidade, inflamação e alterações da hemostasia, mas marcadores séricos como sindecano-1 ainda não constituem exames de rotina universal para guiar ressuscitação no pronto-socorro. Essa distinção entre mecanismo estudado e biomarcador validado evita recomendar testes de pesquisa como padrão assistencial."],["3","Inflamação e coagulação se comunicam"],["p","O trauma intenso pode causar ativação de trombina, consumo e disfunção de fatores, fibrinólise alterada, lesão endotelial, ativação plaquetária e efeitos de acidose, hipotermia e diluição. Coagulopatia induzida pelo trauma pode estar presente precocemente, antes mesmo de múltiplas bolsas de fluidos, e se agrava por ressuscitação inadequada. A diretriz europeia de 2023 recomenda monitorização precoce de hemostasia e uso orientado por testes convencionais ou viscoelásticos quando disponíveis, em contexto de hemorragia maior."],["t",["Mecanismo","Efeito","Por que monitorar"],[["Hipotermia","Reduz desempenho enzimático e plaquetário","Aquecimento e evitar infusão de líquidos frios"],["Acidose grave","Prejudica contratilidade e hemostasia","Corrigir causa da hipoperfusão, não só número do pH"],["Hipofibrinogenemia","Compromete malha de fibrina","Dosagem de fibrinogênio/avaliação dirigida"],["Hipocalcemia ionizada","Prejudica coagulação e contratilidade","Monitorar cálcio ionizado em grande transfusão"],["Endoteliopatia","Aumenta permeabilidade e altera hemostasia","Controle da fonte e evitar segunda agressão"],["Diluição iatrogênica","Pode reduzir fatores/plaquetas e agravar edema","Ressuscitação hemostática, evitando cristaloide excessivo"]],"book-table"],["3","Hipocalcemia na transfusão e o papel do citrato"],["p","Produtos sanguíneos podem fornecer citrato que quelata cálcio; grande volume transfusional, comprometimento hepático e choque aumentam risco de hipocalcemia ionizada. Cálcio participa de formação e estabilização da fibrina, função plaquetária e contratilidade miocárdica. A recomendação da diretriz europeia é acompanhar cálcio ionizado e corrigir hipocalcemia durante trauma maior, especialmente transfusão maciça. O cálcio total pode ser enganoso em hipoalbuminemia; a concentração ionizada é mais diretamente relevante."],["3","Tríade letal e diamante letal: cuidado com memorização sem causalidade"],["p","Hipotermia, acidose e coagulopatia compõem a tríade clássica associada a sangramento progressivo e mortalidade; hipocalcemia é frequentemente adicionada em modelos de 'diamante letal'. A hipoperfusão piora acidose, sangramento e inflamação; perda de calor reduz eficiência de coagulação; a coagulopatia perpetua hemorragia; transfusão maciça pode intensificar queda do cálcio ionizado. A intervenção deve interromper o ciclo por controle de hemorragia, ressuscitação racional, aquecimento e correção dirigida de fatores, não apenas normalizar quatro números sem tratar lesão."],["3","Disfunção mitocondrial e heterogeneidade microvascular"],["p","Após hipóxia e reperfusão, espécies reativas de oxigênio e inflamação podem comprometer mitocôndrias, levando a utilização inadequada de oxigênio mesmo quando oferta macroscópica melhorou. A microcirculação pode conter capilares perfundidos e outros com fluxo inadequado, sem que pressão arterial média reflita integralmente esse mosaico. Clinicamente, isso explica parte da persistência de disfunção orgânica e hiperlactatemia em casos complexos, mas não autoriza diagnosticar 'citopatia' com um único exame ou abandonar pesquisa de causas reversíveis."]]],["organos",0,[["2","7. Consequências sistêmicas: pulmão, rim, intestino, cérebro e músculo"],["3","Pulmão: inflamação sistêmica pode evoluir para SDRA"],["p","DAMPs, citocinas, endoteliopatia e ativação de neutrófilos podem aumentar permeabilidade alvéolo-capilar e produzir edema pulmonar não explicado apenas por insuficiência cardíaca. Contusão pulmonar e aspiração podem somar agressão direta; transfusão e choque podem somar vias indiretas. O paciente pode evoluir com hipoxemia, redução de complacência e necessidade de suporte ventilatório. A síndrome do desconforto respiratório agudo exige critérios específicos e diferenciação de sobrecarga hidrostática, não sendo sinônimo de qualquer saturação baixa."],["3","Rim: oligúria é sinal, não mecanismo único"],["p","Vasoconstrição renal, hipoperfusão, inflamação, rabdomiólise, medicamentos nefrotóxicos, alterações hemodinâmicas e síndrome compartimental abdominal podem causar lesão renal aguda. Creatinina costuma subir com atraso relativo e é influenciada por massa muscular, diluição e catabolismo; débito urinário seriado fornece informação adicional, mas precisa ser interpretado com obstrução, contexto e objetivos clínicos. Distúrbios de potássio podem surgir por liberação celular ou falência renal e requerem vigilância dirigida."],["3","Intestino: translocação, motilidade e isquemia"],["p","Hipoperfusão esplâncnica, opioides, inflamação e distensão contribuem para íleo e intolerância alimentar. A barreira intestinal pode ficar comprometida em choque e aumentar exposição a produtos microbianos, mas 'translocação bacteriana' não deve ser usada como diagnóstico clínico automático de sepse. Nutrição enteral precoce é desejável em muitos pacientes estabilizados, entretanto alimentação durante choque não controlado ou isquemia intestinal suspeita pode aumentar risco de complicações graves."],["3","Cérebro: resposta ao estresse, delirium e lesão secundária"],["p","Hipóxia, hipoglicemia, hiperglicemia acentuada, febre, sedação excessiva e inflamação podem agravar disfunção neurológica após trauma. Em traumatismo cranioencefálico, hipotensão e hipóxia são agressões secundárias relevantes, e nutrição/catabolismo influenciam recuperação funcional. Delirium exige identificação de causas reversíveis e estratégias não farmacológicas quando pertinentes; não é equivalente a agitação por dor, abstinência, hipoxemia ou convulsão."],["3","Músculo e funcionalidade: desfecho esquecido"],["p","A perda de massa e força muscular prolonga dependência de ventilação, dificulta fisioterapia, reduz marcha, capacidade de deglutição e autonomia. Obesidade com edema pode ocultar perda muscular. A recuperação metabólica exige não só calorias e proteínas mas redução da inflamação, controle de complicações, tratamento da dor, sono adequado, mobilização progressiva e prevenção de imobilização excessiva. Um paciente pode sobreviver ao trauma e receber alta com incapacidade importante: qualidade do cuidado inclui essa dimensão."],["t",["Sistema","Complicação importante","Sinal de vigilância"],[["Pulmão","Edema inflamatório, aspiração ou SDRA","Necessidade crescente de O₂, baixa complacência, infiltrados"],["Rim","LRA, rabdomiólise, distúrbios eletrolíticos","Oligúria persistente, K alterado, creatinina subindo"],["Intestino","Íleo, isquemia, intolerância alimentar","Dor/ distensão desproporcional, lactato com sinais abdominais"],["Cérebro","Delirium e lesão neurológica secundária","Alteração de atenção/consciência, crises ou déficit"],["Músculo","Fraqueza adquirida na UTI","Queda de força, dificuldade de desmame/marcha"],["Hematológico","Coagulopatia, trombose ou hemorragia","Sangramento, plaquetas, fibrinogênio, testes dirigidos"]],"book-table"]]],["avaliacao",0,[["2","8. Avaliação e estratificação: do trauma anatômico ao fenótipo metabólico"],["3","Matriz inicial de avaliação: cinco perguntas, sem substituir a abordagem do trauma"],["p","A avaliação metabólica não deve competir com controle de hemorragia, proteção da via aérea, ventilação ou cirurgia de emergência. Nas primeiras horas, registrar mecanismo de trauma, tempo e provável extensão da agressão, condição de perfusão, temperatura e terapias já administradas. Em seguida, buscar sinais de disfunção renal, hepática, respiratória e neurológica e identificar risco nutricional prévio. Ao longo da internação, revisar resultados seriados, incluindo glicemia, eletrólitos, lactato, função renal, hemoglobina, coagulação e marcadores de inflamação interpretados no contexto."],["p","A ordem prática é: primeiro reconhecer risco vital e corrigir causa; depois medir repercussões; por fim, acompanhar direção da resposta ao cuidado. Um adulto politraumatizado instável não deve aguardar dosagem de cortisol sérico ou balanço nitrogenado para ir ao centro cirúrgico. Um paciente já estabilizado, porém com hiperglicemia persistente, má ingestão, inflamação e fraqueza, exige plano metabólico e de reabilitação. O mesmo tema exige decisões diferentes conforme momento clínico."],["t",["Momento","Perguntas prioritárias","Marcadores que ajudam"],[["Admissão","Sangra? Ventila? Perfunde? Está hipotérmico?","Hemograma, gasometria, lactato/base deficit, coagulação, cálcio ionizado quando indicado"],["Após hemostasia e reanimação","Perfusão melhora? Alguma lesão foi negligenciada?","Tendência de lactato, diurese, glicemia, eletrólitos, temperatura, exame seriado"],["Primeiros dias","Há infecção ou disfunção nova? Nutrição é segura?","Evolução clínica, PCR contextual, função orgânica, ingestão, glicemia"],["Fase de recuperação","Perde massa muscular? Tolera alimentação? Mobiliza?","Avaliação nutricional, força, funcionalidade, peso interpretado com edema"],["Após alta","Persistem fragilidade, déficit funcional ou complicações?","Peso/tendência, reabilitação, feridas, exame de seguimento"]],"book-table"],["3","Hemoglobina, albumina, lactato e PCR respondem a perguntas diferentes"],["p","Hemoglobina se relaciona à capacidade de transporte de O₂, mas pode estar aparentemente normal antes de redistribuição de fluidos após perda sanguínea. Albumina cai em inflamação por mecanismos além da nutrição. Lactato ajuda sinalizar risco circulatório/metabólico, sem definir sozinho a causa. PCR reflete resposta de fase aguda com defasagem temporal, sem determinar presença de patógeno. Escolher exames porque o resultado pode mudar conduta é mais racional que interpretar todos como 'marcadores de trauma' intercambiáveis."],["3","Risco nutricional prévio tem peso prognóstico"],["p","Trauma pode ocorrer em pessoa previamente sarcopênica, idosa, com neoplasia, doença inflamatória intestinal, uso de álcool, fragilidade ou insegurança alimentar. O IMC isolado é pouco sensível à perda muscular; edema e fluidos agravam essa limitação. Registrar perda de peso involuntária, ingestão dos dias prévios, capacidade funcional, histórico de deglutição, sinais de perda de gordura/músculo e condições sociais. O risco não depende de albumina baixa isoladamente, e o benefício de intervir aumenta quando a desnutrição é reconhecida cedo."],["3","Reavaliação em ciclos: um marcador que piora muda hipótese"],["p","No dia 1 após hemostasia, lactato cai de 5,2 para 2,6 mmol/L, perfusão melhora e diurese se normaliza. No dia 3, surge febre, distensão, taquicardia e lactato novamente elevado. Essa segunda mudança exige procurar nova causa — infecção, deiscência, isquemia, sangramento, efeito medicamentoso — e não atribuir automaticamente à fase flow. A melhor interpretação de fisiologia é capaz de reconhecer quando a trajetória deixa de ser esperada."]]],["nutricao",0,[["2","9. Nutrição no trauma: quando começar, qual via e como evitar dano"],["3","Uma sequência clínica: perfusão antes de dieta plena"],["p","O trauma aumenta necessidade de substratos para reparo e preservação funcional, mas não autoriza alimentar plenamente uma pessoa em choque descontrolado. O intestino depende de perfusão adequada para digestão e absorção; durante vasoconstrição esplâncnica grave, a oferta enteral pode agravar isquemia. A diretriz ESPEN de terapia nutricional em UTI, atualizada parcialmente em 2023, orienta adiar alimentação enteral no choque não controlado e permitir início em baixa dose quando a perfusão estiver controlada, mesmo com vasopressores estáveis em determinados pacientes, com vigilância para intolerância/isquemia."],["p","A atualização ESPEN 2025 de nutrição em cirurgia apoia alimentação oral precoce quando viável e terapia enteral dentro de aproximadamente 24 horas para pacientes selecionados cuja ingestão oral não será adequada, incluindo pessoas com trauma grave e traumatismo cranioencefálico grave. Porém esse princípio não elimina contraindicações de instabilidade circulatória, isquemia intestinal, abdome compartimental e outras condições. Uma recomendação feita para recuperação cirúrgica não pode ser interpretada como ordem para iniciar dieta em qualquer paciente enquanto sangra."],["t",["Condição","Estratégia de princípio","Justificativa"],[["Paciente alerta, estável e trato digestório funcional","Priorizar alimentação oral segura quando possível","Preserva função gastrointestinal e facilita recuperação"],["Ingestão oral insuficiente prevista por vários dias, circulação estável","Considerar nutrição enteral precocemente","Ajuda enfrentar déficit nutricional em pacientes selecionados"],["Choque não controlado e metas de perfusão não alcançadas","Adiar início ou avanço de dieta enteral","Risco de isquemia intestinal"],["Choque controlado com vasopressor estável/baixo em paciente selecionado","Avaliar alimentação trófica/baixa dose com monitorização","Tolerância depende de perfusão e estabilidade"],["Isquemia intestinal suspeita, obstrução ou síndrome compartimental abdominal","Não insistir em dieta enteral","A alimentação pode agravar lesão e distensão"],["Intestino inviável e necessidade prolongada de suporte nutricional","Avaliar nutrição parenteral conforme risco e cronologia","Via enteral pode estar temporariamente contraindicada"]],"book-table"],["3","Requerimento energético: evitar tanto subalimentação prolongada quanto sobrealimentação precoce"],["p","O hipercatabolismo aumenta perda de proteína e pode elevar gasto energético, mas a produção endógena de energia continua elevada nos primeiros dias de doença crítica. Ofertar calorias plenas precocemente a todos pode aumentar hiperglicemia, produção de CO₂, esteatose hepática e intolerância metabólica. A calorimetria indireta, quando disponível e interpretável, ajuda estimar necessidade energética; equações preditivas têm erro substancial em pessoas com trauma, obesidade, edema ou ventilação alterada. Planos devem prever avanço progressivo e monitorização de tolerância."],["p","Não inventar uma meta calórica universal por peso para todo politraumatizado. Faixas de kcal/kg podem constar de protocolos clínicos e nutrição hospitalar, mas devem ser ajustadas por idade, composição corporal, gravidade, evolução, sedação, alimentação oral/enteral e risco de superalimentação. Em queimaduras extensas a demanda pode ser ainda maior e variável, exigindo equipe especializada. Paciente com doença crítica prolongada, por outro lado, pode precisar foco crescente em aporte proteico e reabilitação."],["3","Proteína, sarcopenia e reabilitação: mais do que apenas calorias"],["p","O aporte proteico adequado torna-se central para reparo de feridas e preservação muscular, mas sua quantidade ótima é influenciada por função renal, terapia renal substitutiva, gravidade do estado catabólico, tolerância gastrointestinal e estágio de recuperação. A nutrição não anula efeitos de imobilidade e inflamação; por isso mobilização e fisioterapia precoce, quando seguras, compõem a estratégia. A tentativa de oferecer suplementos de aminoácidos ou glutamina a todos os pacientes gravemente traumatizados sem indicação específica não representa recomendação universal das diretrizes recentes."],["3","Síndrome da realimentação: risco mesmo no paciente com 'trauma hipercatabólico'"],["p","Paciente com desnutrição importante e vários dias de baixa ingestão pode desenvolver hipofosfatemia, hipocalemia, hipomagnesemia, retenção hidrossalina, deficiência de tiamina e alterações cardiorrespiratórias quando alimentação é retomada rapidamente. A liberação de insulina desloca eletrólitos ao interior das células e aumenta necessidades metabólicas. A identificação envolve triagem de risco, avaliação do aporte prévio, monitorização de eletrólitos e avanço gradual de energia com prevenção e tratamento conforme protocolo. Não é seguro simplesmente 'compensar os dias perdidos' com grande carga calórica abrupta."],["t",["Achado após realimentação","Mecanismo plausível","Ação de segurança"],[["Fosfato cai acentuadamente","Consumo intracelular e demanda por ATP aumentada","Monitorar/repor conforme gravidade e rever velocidade de avanço"],["Potássio e magnésio caem","Deslocamento celular com resposta insulínica","Monitorização, reposição dirigida e vigilância de arritmias"],["Edema e piora respiratória","Retenção de sódio/água e possível sobrecarga","Revisar fluidos, aporte e função cardíaca/renal"],["Confusão, fraqueza, instabilidade","Deficiência nutricional e alterações metabólicas","Avaliação imediata e considerar tiamina conforme risco"],["Hiperglicemia progressiva","Oferta/calorias acima de utilização e resistência à insulina","Reavaliar regime e glicemia, evitando correção agressiva"]],"book-table"],["3","Intolerância alimentar: não transformar todo resíduo gástrico em parada definitiva"],["p","Vômitos, distensão progressiva, dor abdominal, aumento de necessidade de vasopressor, queda de perfusão e sinais clínicos de isquemia são mais relevantes do que volume gástrico isolado em muitos contextos. A ESPEN 2023 descreve circunstâncias específicas em que grandes resíduos ou contraindicações justificam adiar alimentação, mas a avaliação deve ser integrada. Em risco de aspiração, considerar medidas de posicionamento, via pós-pilórica ou ajustes de infusão quando apropriados. Em suspeita de isquemia intestinal, interromper a dieta e investigar rapidamente."],["3","Nutrição parenteral: alternativa quando o tubo digestivo não pode ser utilizado"],["p","Nutrição parenteral fornece macronutrientes e eletrólitos pela via intravenosa quando a enteral é inviável ou insuficiente por tempo relevante e risco nutricional elevado. Não é intrinsecamente melhor ou pior em qualquer situação; tem riscos próprios, como infecção de cateter, hiperglicemia, distúrbios eletrolíticos e sobrealimentação. A decisão exige equipe de terapia nutricional e balanço entre necessidade, acesso, risco infeccioso e probabilidade de recuperação gastrointestinal. Um paciente com choque ainda descontrolado não fica automaticamente pronto para meta parenteral plena."],["3","Conduta integrada pela fase clínica"],["o",["Primeiro: corrigir agressões com risco de morte — hemorragia, obstrução de via aérea, hipóxia, infecção com fonte e distúrbios de perfusão.","Em paralelo: avaliar risco nutricional prévio e prever incapacidade de ingestão por tempo prolongado.","Após estabilidade suficiente: escolher via oral quando viável; caso contrário considerar via enteral com vigilância e respeitar contraindicações.","Prescrever aumento progressivo de energia e proteína com monitorização metabólica; prevenir síndrome de realimentação nos suscetíveis.","Combinar com controle de dor, mobilização, sono e reabilitação funcional.","Reavaliar diariamente metas, oferta real, complicações, composição corporal e plano de alta."]],["3","BRASPEN 2023: aplicação brasileira das recomendações no trauma"],["p","A Diretriz BRASPEN de Terapia Nutricional no Paciente Grave (2023), na seção específica de trauma, recomenda privilegiar a <strong>nutrição enteral sobre a parenteral</strong> e iniciá-la nas <strong>primeiras 24 a 48 horas após a admissão, tão logo se alcance estabilidade hemodinâmica</strong> (evidência moderada). Isso harmoniza o princípio de intervenção precoce com a contraindicação de alimentação enteral em choque não controlado. O cuidado precisa levar em conta viabilidade gastrointestinal, sinais de intolerância e risco nutricional. A fase de recuperação pode exigir reajustes crescentes de energia e proteína, mas a prescrição exata é individualizada e não deve copiar meta máxima como se fosse mínimo para todos."],["p","A BRASPEN 2023 também diferencia suplementos potencialmente úteis em determinados subgrupos de trauma das recomendações gerais de UTI. Não há justificativa para prescrever <strong>glutamina suplementar a todo paciente crítico</strong> indiscriminadamente; a diretriz desaconselha seu uso enteral rotineiro em críticos, enquanto menciona potencial benefício em subgrupos selecionados de trauma com evidência de menor certeza. Essa nuance deve ser explicitada em provas e na prática, evitando a crença antiga de que grande dose de glutamina é obrigatória em toda queimadura ou TCE."]]],["situacoes",0,[["2","10. Populações especiais e padrões metabólicos que modificam conduta"],["3","Idosos, fragilidade e polifarmácia"],["p","Envelhecimento costuma reduzir reserva muscular, capacidade cardiorrespiratória e respostas à fome/sede. Um idoso com fratura pélvica pode apresentar hipotensão menos evidente ou taquicardia limitada por betabloqueador e perder autonomia com poucos dias de imobilização. Delirium, desidratação e dificuldades de mastigação/deglutição impactam nutrição. A abordagem deve considerar metas funcionais e cuidado compartilhado com geriatria, fisioterapia e nutrição, evitando interpretações por números de adulto jovem."],["3","Diabetes e obesidade"],["p","Trauma pode elevar glicemia tanto em diabéticos quanto em não diabéticos. HbA1c, quando confiável, ajuda distinguir doença crônica; insulina pode ser necessária com monitorização, mas metas excessivamente estritas aumentam hipoglicemia. Obesidade não elimina risco de sarcopenia ou deficiência de micronutrientes. Equações calóricas baseadas em peso atual podem superestimar gasto energético em alguns obesos; equipe nutricional deve individualizar estratégias, sobretudo durante ventilação e reabilitação."],["3","Desnutrição prévia e insegurança alimentar"],["p","Paciente com baixa ingestão anterior, perda ponderal acentuada, neoplasia ou uso crônico de álcool tem risco aumentado de complicações, deficiência de tiamina e síndrome de realimentação. A pergunta 'comeu hoje?' é insuficiente: investigar semanas e meses anteriores, capacidade funcional e contexto social. Na alta, insegurança alimentar pode inviabilizar plano proteico complexo; assistência social e APS integram o cuidado."],["3","Crianças e adolescentes"],["p","Na pediatria, crescimento modifica necessidades de nutrientes e fisiologia da resposta ao trauma. Reservas e superfície corporal relativa diferem do adulto e aumentam vulnerabilidade à perda térmica. Não extrapolar automaticamente cálculo calórico/proteico, limiares de choque, estratégias de sedação ou interpretação de glicemia de diretriz para adultos. Equipes pediátricas usam protocolos próprios, especialmente em queimaduras e traumatismo cranioencefálico."],["3","Gestação e puerpério"],["p","A gestação envolve expansão plasmática, resistência insulínica fisiológica progressiva, mudanças respiratórias e necessidades materno-fetais. Trauma materno exige priorizar estabilização da gestante e considerar avaliação fetal/obstétrica segundo idade gestacional e gravidade. Hemoglobina e pressão podem ser interpretadas diferentemente em relação ao adulto não gestante; albumina baixa pode refletir hemodiluição. Planos nutricionais precisam respeitar exigências gestacionais e segurança fetal, sem automatizar restrições de adulto."],["3","Queimaduras extensas e lesão por inalação"],["p","Grandes queimaduras combinam evaporação, perda de barreira, inflamação sustentada, catecolaminas e demanda de reparo, podendo causar hipermetabolismo prolongado. Área queimada, profundidade, idade e complicações determinam magnitude da resposta, mas não se deve prescrever energia apenas por uma 'fórmula do trauma' universal. Queimaduras precisam de controle térmico, reanimação volêmica apropriada, manejo de feridas, analgesia, cirurgia e nutrição em equipe especializada. Não confundir fórmula de reposição de líquidos com cálculo energético."],["3","Traumatismo cranioencefálico grave"],["p","Hipotensão, hipóxia, febre, distúrbios de glicose e desequilíbrios eletrolíticos aumentam risco de lesão neurológica secundária. Há também imobilidade e catabolismo, frequentemente com ventilação prolongada. O plano nutricional deve buscar aporte seguro após estabilização, com atenção a íleo, aspiração e necessidade de exames/procedimentos. Alterações endócrinas de doença crítica não autorizam reposição indiscriminada de hormônio do crescimento ou T3."],["3","Sepse secundária ao trauma"],["p","Uma pessoa pode começar com resposta inflamatória estéril e desenvolver infecção dias depois. A nova deterioração exige investigação de feridas, dispositivos invasivos, pulmão, cavidade abdominal, trato urinário e outros focos prováveis; culturas e imagem devem responder a perguntas clínicas. Controle de fonte, antibióticos adequados quando indicados, suporte de perfusão e proteção metabólica são ações complementares. A febre sozinha não define sepse, e a ausência de febre não a exclui."]]],["algoritmo",0,[["2","11. Algoritmo integrado e prognóstico: reconhecer a mudança de fase"],["3","Algoritmo de tomada de decisão à beira do leito"],["t",["Situação atual","Prioridade imediata","Próxima pergunta"],[["Choque hemorrágico ainda não controlado","Hemostasia e ressuscitação apropriada","Perfusão e coagulação melhoram na reavaliação?"],["Trauma estabilizado com hiperglicemia","Monitorar e manejar glicose por protocolo seguro","Há diabetes, drogas, nutrição excessiva ou infecção?"],["Trauma estabilizado sem ingestão oral adequada","Avaliação nutricional e via enteral quando segura","Há contraindicação intestinal ou risco de realimentação?"],["Paciente edemaciado com oligúria","Avaliar perfusão, rim, balanço e resposta a fluidos","Há sobrecarga, hipoperfusão ou lesão renal?"],["PCR alta isolada no pós-trauma","Avaliar evolução e contexto de inflamação","Há novo foco, febre persistente ou disfunção?"],["Fraqueza importante após dias de UTI","Reabilitação com plano de nutrição e controle de causas","Quanto músculo e função foram perdidos?"]],"book-table"],["3","Reavaliar após cada intervenção — uma espiral de cuidado"],["p","O raciocínio clínico deve ser iterativo: uma alteração de lactato leva à hipótese de hipoperfusão, que exige busca de causa e intervenção apropriada; depois a série de marcadores e o exame confirmam ou desafiam o resultado. A queda de lactato com diurese melhorando é tranquilizadora, mas piora de dor abdominal, febre e necessidade de vasopressor dias depois obriga reiniciar investigação. Não ancorar em 'fase flow' para deixar passar infecção, isquemia ou sangramento tardios."],["3","Quando a resposta de estresse vira síndrome de doença crítica prolongada"],["p","Persistência de inflamação, imunossupressão e catabolismo pode acompanhar internações prolongadas, infecções recorrentes, cicatrização difícil e grande perda muscular. O objetivo terapêutico é interromper estímulos reversíveis, minimizar sedação e imobilidade, entregar nutrição compatível com tolerância, prevenir novas infecções e preparar reabilitação. Não existe um único exame de sangue que diagnostique a totalidade dessa síndrome. Prognóstico depende de gravidade da lesão inicial, reserva funcional, complicações e acesso à reabilitação."],["3","Alta hospitalar: sobreviver não equivale a recuperar-se"],["p","Na alta, planejar continuidade da alimentação, avaliação de feridas, controle glicêmico temporário ou diagnóstico de diabetes quando pertinente, retorno para função renal e acompanhamento muscular/funcional. Em fraturas e grandes cirurgias, considerar fisioterapia, terapia ocupacional, suporte nutricional e ajuda social. Pacientes e cuidadores precisam conhecer sinais de complicações: febre persistente, piora de ferida, falta de ar, dor desproporcional, vômitos persistentes, perda importante de apetite e redução de diurese."],["3","Síntese que evita confusões em questões de residência"],["p","Ebb e flow são modelos fisiológicos, não intervalos cronometrados; cortisol alto não implica corticoide universal; hiperglicemia pode ser estresse ou diabetes; lactato não é exclusivamente anaeróbio; albumina baixa no trauma não prova desnutrição isoladamente; nutrição precoce é desejável após avaliação da segurança, mas choque não controlado contraindica avanço enteral; muito edema não significa boa volemia; e cálcio ionizado é relevante durante grande transfusão. Resolver a questão exige relacionar mecanismo e contexto temporal, não apenas lembrar uma palavra-chave."]]],["casos",0,[["2","12. Casos clínicos integradores: mecanismos e decisões"],["3","Caso 1 — Pressão aceitável, mas dívida de oxigênio após trauma pélvico"],["p","Adulto de 28 anos, atropelado, fratura pélvica instável, pele fria, enchimento capilar lento, frequência cardíaca 126/min, pressão 105/70 mmHg, Hb inicial 13 g/dL e lactato 5,4 mmol/L. <strong>Hipóteses:</strong> choque hemorrágico compensado, hipoperfusão apesar de pressão sistólica relativamente preservada. <strong>Mecanismo:</strong> catecolaminas e vasoconstrição mantêm pressão arterial enquanto a entrega de oxigênio cai; hemoglobina imediatamente após hemorragia pode não ter refletido ainda perda e hemodiluição. <strong>Exames:</strong> hemograma seriado, gasometria, lactato/base deficit, fibrinogênio/coagulação e avaliação de hemorragia conforme protocolo do trauma. <strong>Interpretação:</strong> lactato elevado é compatível com dívida de oxigênio, mas não localiza fonte sozinho. <strong>Conduta:</strong> controle urgente da fonte hemorrágica e ressuscitação hemostática pela equipe de trauma, aquecimento, reavaliação de perfusão; não tratar apenas o lactato com grande cristaloide. <strong>Por que importa:</strong> PA e Hb iniciais não excluem choque, e a resposta metabólica pode avisar antes de hipotensão grave."],["3","Caso 2 — Albumina baixa dois dias após cirurgia não prova desnutrição"],["p","Mulher de 54 anos após laparotomia por perfuração de víscera, em recuperação hemodinâmica, PCR 170 mg/L, albumina 2,3 g/dL, edema periférico, ingesta limitada desde o procedimento e sem relato de perda ponderal prévia. <strong>Hipóteses:</strong> inflamação importante, extravasamento capilar e hemodiluição; risco nutricional a avaliar, não diagnóstico de desnutrição baseado apenas na albumina. <strong>Mecanismo:</strong> resposta de fase aguda prioriza outras proteínas hepáticas, altera permeabilidade e distribuição de albumina. <strong>Exames:</strong> tendência clínica, balanço hídrico, função renal, ingestão real, anamnese nutricional e rastreio de complicações. <strong>Conduta:</strong> investigar perda de peso/ingestão prévia, planejar nutrição segura, reavaliar foco infeccioso e perfusão se deterioração; não corrigir número de albumina como meta isolada. <strong>Por que importa:</strong> marcadores inflamatórios e nutricionais não são intercambiáveis."],["3","Caso 3 — Choque ainda ativo: a dieta enteral precoce tem limites"],["p","Homem de 42 anos com trauma abdominal, hemorragia controlada parcialmente, pressão dependente de doses crescentes de vasopressor, lactato em elevação e distensão abdominal progressiva. A prescrição de dieta enteral plena foi sugerida por estar nas primeiras 24 horas de UTI. <strong>Hipóteses:</strong> perfusão esplâncnica insuficiente, risco de isquemia intestinal, intolerância alimentar. <strong>Mecanismo:</strong> choque e vasoconstrição reduzem fluxo intestinal, enquanto aporte luminal aumenta demanda metabólica local. <strong>Exames:</strong> perfusão clínica, lactato seriado, avaliação abdominal e investigação de lesão/isquemia conforme gravidade. <strong>Conduta:</strong> não avançar dieta durante choque não controlado; estabilizar circulação e avaliar possibilidade de enteral trófica após controle com vigilância, conforme ESPEN 2023. <strong>Por que importa:</strong> 'nutrição precoce' é recomendação condicionada à segurança fisiológica."],["3","Caso 4 — Realimentação de paciente desnutrido após semanas de baixa ingestão"],["p","Homem de 66 anos com alcoolismo, perda de 15% do peso em meses e fratura de fêmur; permaneceu com ingestão muito baixa antes do atendimento e recebe fórmula concentrada rapidamente. Nas 48 horas seguintes desenvolve fraqueza, edema e fósforo muito reduzido, com potássio e magnésio em queda. <strong>Hipótese:</strong> síndrome da realimentação. <strong>Mecanismo:</strong> aumento de insulina e utilização de substratos desloca fósforo, K e Mg para o meio intracelular, com risco de arritmia, fraqueza respiratória e disfunção orgânica. <strong>Exames:</strong> fósforo, magnésio, potássio, glicose, função renal e estado de hidratação seriados. <strong>Conduta:</strong> reavaliar velocidade de avanço nutricional, repor eletrólitos e considerar tiamina conforme protocolo e equipe de nutrição. <strong>Por que importa:</strong> grande oferta calórica imediata pode ser nociva mesmo quando existe desnutrição."],["3","Caso 5 — Queimadura extensa e catabolismo persistente"],["p","Paciente de 34 anos, queimaduras profundas em grande superfície corporal, após estabilização inicial encontra-se febril, com gasto energético estimado elevado, feridas extensas e perda de força após semanas de internação. <strong>Hipótese:</strong> hipermetabolismo e catabolismo persistentes por perda de barreira, inflamação, dor e necessidade de reparação. <strong>Mecanismo:</strong> catecolaminas, cortisol, citocinas, evaporação e cicatrização mantêm consumo energético e proteólise. <strong>Avaliação:</strong> área/profundidade, temperatura, feridas, infecção, ingestão, função renal e estimativa de gasto energético com método apropriado. <strong>Conduta:</strong> controle de feridas, ambiente térmico, analgesia, suporte nutricional individualizado, mobilização e vigilância de complicações. <strong>Por que importa:</strong> fórmulas de reposição volêmica não calculam necessidade calórico-proteica nem substituem equipe especializada."],["3","Caso 6 — PCR volta a subir no quarto dia: não chamar de flow sem investigar"],["p","Mulher de 39 anos, operada após trauma intestinal, evolui com melhora de FC e lactato no pós-operatório. No quarto dia apresenta nova febre, taquicardia, dor abdominal crescente, PCR em ascensão e débito de dreno turvo. <strong>Hipóteses:</strong> infecção intra-abdominal, falha de anastomose ou outra complicação, acima de inflamação estéril habitual. <strong>Mecanismo:</strong> novo estímulo infeccioso pode ampliar citocinas, resistência insulínica e disfunção circulatória. <strong>Exames:</strong> reexame abdominal e da ferida, hemograma, lactato, culturas/TC conforme estabilidade e hipótese cirúrgica. <strong>Conduta:</strong> avaliação cirúrgica urgente, investigação de foco, tratamento específico e suporte conforme gravidade; não prescrever antibiótico apenas pela PCR sem examinar a pessoa. <strong>Por que importa:</strong> a trajetória temporal distingue adaptação de deterioração."],["3","Caso 7 — Lesão muscular maciça e lesão renal: nem toda hipercalemia é só aldosterona"],["p","Homem de 24 anos ficou preso sob escombros, com esmagamento de membro inferior, dor e edema importantes. Após resgate apresenta urina escura, CK muito elevada, potássio aumentado e creatinina em elevação. <strong>Hipóteses:</strong> rabdomiólise traumática e lesão renal aguda, com risco de arritmia por hipercalemia. <strong>Mecanismo:</strong> necrose muscular libera potássio, mioglobina e fosfato; hipoperfusão e pigmentos podem comprometer rim. <strong>Exames:</strong> ECG, K, cálcio, fósforo, CK seriada, creatinina, gasometria e monitorização urinária. <strong>Conduta:</strong> intervenção urgente para hipercalemia quando indicada, avaliação de síndrome compartimental, perfusão e suporte renal em protocolo específico. <strong>Por que importa:</strong> a resposta metabólica pode refletir destruição celular diretamente, e não só hormônios do estresse."],["3","Caso 8 — Recuperação cardiovascular, mas perda funcional após UTI"],["p","Mulher de 72 anos após politrauma e duas semanas de ventilação mecânica, hemodinamicamente estável, mas incapaz de levantar sem ajuda, com baixa ingestão, perda muscular perceptível e edema periférico residual. <strong>Hipóteses:</strong> fraqueza adquirida em UTI, proteólise inflamatória e imobilidade, possível risco nutricional. <strong>Mecanismo:</strong> catabolismo, alterações de vias anabólicas, sedação e inatividade reduzem massa/força muscular. <strong>Exames/avaliação:</strong> força, função, alimentação, dor, delirium, distúrbios eletrolíticos e necessidades de reabilitação. <strong>Conduta:</strong> planejamento de nutrição compatível com necessidades e tolerância, fisioterapia/mobilização progressiva, prevenção de complicações e transição de cuidados. <strong>Por que importa:</strong> normalizar PA, lactato e glicose não significa restaurar capacidade funcional."]]],["questoes",0,[["2","13. Questões autorais de alto rendimento — comentários completos"],["o",["<strong>Q1.</strong> Em paciente politraumatizado que mantém hipotensão e hipoperfusão, qual fase clássica explica melhor a prioridade? A) Flow anabólica que exige dieta plena imediata; B) Ebb associada a ameaça circulatória e necessidade de hemostasia; C) Recuperação sem necessidade de reavaliação; D) Eutireoidiano doente isolado. <strong>Gabarito B.</strong> A confunde catabolismo com alimentação segura; C ignora risco vital; D não explica choque. Revisão: ebb é modelo de instabilidade e não tem duração fixa.","<strong>Q2.</strong> Qual mecanismo contribui diretamente para hiperglicemia pós-trauma? A) Supressão universal de cortisol; B) Aumento de captação muscular por insulina sem produção hepática; C) Catecolaminas, cortisol, glucagon e resistência periférica à insulina; D) Desligamento da gliconeogênese. <strong>Gabarito C.</strong> A e D contrariam resposta ao estresse; B descreve efeito contrário. Revisão: hiperglicemia de estresse resulta de produção aumentada e uso periférico comprometido.","<strong>Q3.</strong> Qual marcador isolado NÃO deve ser usado como diagnóstico de desnutrição em trauma recente? A) História de perda ponderal prolongada; B) Baixa ingestão prévia persistente; C) Avaliação funcional e física; D) Albumina sérica baixa com PCR alta. <strong>Gabarito D.</strong> A, B e C compõem avaliação nutricional; D sofre efeitos de fase aguda, permeabilidade e hemodiluição. Revisão: albumina tem valor prognóstico, não diagnóstico nutricional exclusivo.","<strong>Q4.</strong> Após trauma hemorrágico, a pressão arterial melhora, mas o lactato permanece alto. Qual afirmação é correta? A) Obrigatoriamente existe sangramento ativo; B) Lactato é exclusivamente produzido sem oxigênio; C) Deve-se investigar perfusão, catecolaminas, depuração e tendência seriada; D) Oferecer sempre grande volume de cristaloide até zerar lactato. <strong>Gabarito C.</strong> A e B simplificam etiologia; D pode agravar edema e coagulopatia. Revisão: lactato é marcador de risco e metabolismo, não teste único de sangramento.","<strong>Q5.</strong> Na fase crítica, qual estratégia nutricional é mais segura em paciente ainda com choque não controlado? A) Nutrição enteral plena imediatamente para todo paciente; B) Adiar avanço enteral e estabilizar perfusão, reavaliando dieta após controle; C) Glutamina parenteral em dose alta para todos; D) Dieta oral independentemente de consciência. <strong>Gabarito B.</strong> A ignora risco intestinal; C não é recomendação universal; D desconsidera aspiração. Revisão: ESPEN 2023 recomenda adiar EN no choque não controlado.","<strong>Q6.</strong> Após início muito rápido de dieta em paciente gravemente desnutrido, surgem hipofosfatemia, hipocalemia e edema. Diagnóstico provável? A) Síndrome de realimentação; B) Ebb obrigatória; C) Hipertireoidismo primário; D) Síndrome nefrótica automaticamente. <strong>Gabarito A.</strong> B não explica alterações temporais com dieta; C/D não são inferidos desses achados. Revisão: resposta insulínica consome/redistribui eletrólitos após realimentação.","<strong>Q7.</strong> Uma criança que sofreu trauma extenso apresenta elevação de PCR e febre discreta nas primeiras horas, sem foco infeccioso. Qual afirmação é correta? A) Existe sepse bacteriana confirmada; B) Toda PCR alta indica antibiótico; C) DAMPs podem gerar inflamação estéril e a interpretação exige evolução e exame; D) O trauma não altera citocinas. <strong>Gabarito C.</strong> A/B confundem inflamação com infecção; D nega ativação imune. Revisão: resposta inata pode ser desencadeada sem patógeno.","<strong>Q8.</strong> Qual alteração merece vigilância em transfusão maciça por trauma? A) Aumento obrigatório de cálcio ionizado; B) Hipocalcemia ionizada pelo citrato e impacto na coagulação/contratilidade; C) Ausência de interação com hemostasia; D) Excluir dosagem de cálcio ionizado em todo caso. <strong>Gabarito B.</strong> A/C/D contradizem fisiologia e recomendações de monitorização. Revisão: ionização de cálcio interfere em hemostasia e função cardíaca.","<strong>Q9.</strong> O que melhor caracteriza a fase flow clássica? A) Necessariamente anabolismo muscular imediato; B) Resposta hipercatabólica e maior consumo energético, variável conforme paciente; C) Cessação da atividade inflamatória; D) Duração fixa de 24 horas. <strong>Gabarito B.</strong> A e C erram a fisiologia; D transforma modelo histórico em relógio. Revisão: flow frequentemente mantém resistência à insulina e proteólise.","<strong>Q10.</strong> Em paciente com grande edema e oligúria após trauma, qual abordagem é apropriada? A) Repetir bolus porque oligúria sempre significa hipovolemia; B) Proibir avaliação renal; C) Avaliar perfusão, balanço, lesão renal e possível sobrecarga antes de novas infusões; D) Usar albumina baixa como único guia de fluido. <strong>Gabarito C.</strong> A ignora riscos de edema; B abandona investigação; D confunde inflamação e volume intravascular. Revisão: oligúria tem múltiplos mecanismos.","<strong>Q11.</strong> No trauma com esmagamento, CK elevada, hipercalemia e urina escura sugerem: A) Rabdomiólise e risco renal/cardiológico; B) Apenas resposta do ADH; C) Reabsorção de cálcio sem dano muscular; D) Falta de fósforo por realimentação. <strong>Gabarito A.</strong> B/C/D não explicam necrose muscular e pigmentúria. Revisão: potássio de células musculares pode elevar-se e ameaçar a vida.","<strong>Q12.</strong> O que a equação DO₂ = débito cardíaco × CaO₂ ensina? A) Saturação normal sempre garante oferta adequada; B) Hemoglobina e débito não importam; C) Conteúdo arterial e fluxo sanguíneo determinam oferta de O₂, que pode cair apesar de SpO₂ normal; D) Oxigênio dissolvido é sempre a principal parcela do CaO₂. <strong>Gabarito C.</strong> A/B ignoram anemia e fluxo; D exagera a parcela dissolvida. Revisão: oxigenação arterial não é sinônimo de perfusão.","<strong>Q13.</strong> Qual afirmação sobre nutrição cirúrgica conforme ESPEN 2025 é mais segura? A) Sempre manter jejum por sete dias após trauma; B) Oferecer alimentação oral quando possível e enteral precoce em elegíveis, respeitando contraindicações fisiológicas; C) Iniciar parenteral plena em qualquer choque; D) Calcular calorias apenas pela fórmula de ressuscitação de queimaduras. <strong>Gabarito B.</strong> A promove subalimentação, C ignora estabilidade e risco de sobrealimentação, D mistura volume e energia. Revisão: precocidade é modulada por segurança e avaliação nutricional.","<strong>Q14.</strong> No paciente após grande trauma, qual situação exige investigar nova causa em vez de atribuir a inflamação normal? A) PCR inicialmente elevada que cai com melhora clínica; B) Leve dor esperada e estável; C) Taquicardia nova, dor abdominal progressiva, febre e lactato voltando a subir após melhora inicial; D) Paciente sem sintomas e com recuperação da marcha. <strong>Gabarito C.</strong> A e B podem ser resposta normal; D é evolução favorável. Revisão: mudança da trajetória tem valor diagnóstico.","<strong>Q15.</strong> O que mais diferencia recuperação metabólica completa de estabilização inicial? A) Normalização única da pressão arterial; B) A ausência de qualquer PCR; C) Recuperação de ingestão, função muscular, mobilidade e controle de complicações, além da estabilidade orgânica; D) Balanço hídrico positivo persistente como meta. <strong>Gabarito C.</strong> A é necessária mas insuficiente; B não é indicador obrigatório; D pode significar sobrecarga. Revisão: desfecho funcional importa após sobreviver ao trauma."]]]],["referencias",0,[["2","14. Referências, matriz de autossuficiência e registro editorial"],["3","Referências científicas verificáveis"],["o",["<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9977110/\" target=\"_blank\" rel=\"noopener noreferrer\">Rossaint R et al. The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. Critical Care. 2023;27:80. doi:10.1186/s13054-023-04327-7.</a>","<a href=\"https://www.clinicalnutritionjournal.com/article/S0261-5614%2823%2900230-3/fulltext\" target=\"_blank\" rel=\"noopener noreferrer\">ESPEN. Practical and partially revised guideline: Clinical nutrition in the intensive care unit. Clinical Nutrition, 2023.</a>","<a href=\"https://www.clinicalnutritionjournal.com/article/S0261-5614%2825%2900243-2/fulltext\" target=\"_blank\" rel=\"noopener noreferrer\">Weimann A et al. ESPEN guideline on clinical nutrition in surgery – Update 2025. Clinical Nutrition. 2025;53:222–261. doi:10.1016/j.clnu.2025.08.029.</a>","<a href=\"https://pubmed.ncbi.nlm.nih.gov/40957230/\" target=\"_blank\" rel=\"noopener noreferrer\">PubMed. ESPEN guideline on clinical nutrition in surgery – Update 2025. Metadados do artigo e resumo indexado.</a>","<a href=\"https://www.espen.org/guidelines-home/espen-guidelines\" target=\"_blank\" rel=\"noopener noreferrer\">ESPEN Guidelines &amp; Consensus Papers. Repositório institucional.</a>","<a href=\"https://www.braspenjournal.org/article/doi/10.37111/braspenj.diretrizDOENTEGRAVE\" target=\"_blank\" rel=\"noopener noreferrer\">Castro MG et al. Diretriz BRASPEN de Terapia Nutricional no Paciente Grave. BRASPEN J. 2023;38(2 Supl 2):2–46. DOI:10.37111/braspenj.diretrizDOENTEGRAVE. Inclui recomendações específicas para trauma.</a>"]],["3","Matriz de competências internas"],["t",["Eixo","Capítulo","Capacidade de prova/aplicação"],[["Definição e fases ebb/flow","Visão e 1","Não confundir cronologia histórica com fases rígidas"],["Hormônios e mecanismos","2","Explicar cortisol, catecolaminas, ADH/SRAA sem prescrever fármacos por reflexo"],["Inflamação estéril versus infecção","3","Interpretar PCR e leucocitose em contexto temporal"],["Carboidratos, proteínas e lipídios","4","Entender hiperglicemia, proteólise e balanço nitrogenado"],["Perfusão, lactato e base deficit","5","Reconhecer hipoperfusão sem depender de Hb/PA isoladas"],["Glicocálix e coagulopatia","6","Compreender hipóxia, endoteliopatia e hipocalcemia de transfusão"],["Disfunção orgânica","7","Suspeitar de LRA, SDRA, isquemia intestinal e fraqueza muscular"],["Exames e estratificação","8","Reavaliar trajetória e risco nutricional"],["Nutrição e realimentação","9","Diferenciar alimentação precoce segura de choque não controlado"],["Populações especiais","10","Não extrapolar valores e protocolos para pediatria, idosos e gestação"],["Algoritmo e seguimento","11","Definir prioridade e recuperação funcional"],["Aplicação e questões","12 e 13","Justificar cenários sem consultar fonte externa básica"]],"book-table"],["p","<strong>Comparação documental:</strong> foram lidos no Google Drive do usuário os PDFs '01 - INTENSIVA - POLITRAUMA E QUEIMADURAS.pdf', '01 - CHOQUE - ABORDAGEM INICIAL.pdf' e '01 - TRAUMA REVISAO ABCDE.pdf'. Nenhum tinha autoria institucional de material de referência confirmada ou desenvolvimento abrangente específico de resposta metabólica. O material foi usado apenas como benchmark de escopo e identificação de lacunas; nenhum texto, imagem ou tabela foi copiado. Etapa zero e limitação documentadas no controle editorial do Lote 1."]]]]}
+{
+  "v": 2,
+  "s": "resposta-metabolica-ao-trauma",
+  "t": "Resposta Metabólica ao Trauma",
+  "p": "Resposta metabólica ao trauma: fisiopatologia, interpretação e conduta",
+  "o": [
+    [
+      "visao",
+      "Resposta metabólica ao trauma: da agressão tecidual ao cuidado integral"
+    ],
+    [
+      "fases",
+      "1. Conceitos fundamentais: estresse cirúrgico, ebb e flow"
+    ],
+    [
+      "hormonios",
+      "2. Resposta neuroendócrina: simpático, cortisol, ADH e SRAA"
+    ],
+    [
+      "inflamacao",
+      "3. Imunidade inata, DAMPs, citocinas e fase aguda"
+    ],
+    [
+      "substratos",
+      "4. Glicose, lipídios, proteínas e balanço nitrogenado no trauma"
+    ],
+    [
+      "perfusao",
+      "5. Perfusão, metabolismo anaeróbio e interpretação de lactato/base deficit"
+    ],
+    [
+      "endotelio",
+      "6. Endotélio, glicocálix, coagulopatia e disfunção de órgãos"
+    ],
+    [
+      "organos",
+      "7. Consequências sistêmicas: pulmão, rim, intestino, cérebro e músculo"
+    ],
+    [
+      "avaliacao",
+      "8. Avaliação e estratificação: do trauma anatômico ao fenótipo metabólico"
+    ],
+    [
+      "nutricao",
+      "9. Nutrição no trauma: quando começar, qual via e como evitar dano"
+    ],
+    [
+      "situacoes",
+      "10. Populações especiais e padrões metabólicos que modificam conduta"
+    ],
+    [
+      "algoritmo",
+      "11. Algoritmo integrado e prognóstico: reconhecer a mudança de fase"
+    ],
+    [
+      "casos",
+      "12. Casos clínicos integradores: mecanismos e decisões"
+    ],
+    [
+      "questoes",
+      "13. Questões autorais de alto rendimento — comentários completos"
+    ],
+    [
+      "referencias",
+      "14. Referências, matriz de autossuficiência e registro editorial"
+    ]
+  ],
+  "h": [
+    "Apostila LURIA",
+    "Resposta Metabólica ao Trauma",
+    "Da resposta ao estresse à recuperação metabólica e funcional",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Trauma e Fisiologia Cirúrgica",
+      "Tema: Resposta metabólica ao trauma"
+    ],
+    "apostila-identity"
+  ],
+  "q": [
+    [
+      "visao",
+      0,
+      [
+        [
+          "2",
+          "Resposta metabólica ao trauma: da agressão tecidual ao cuidado integral"
+        ],
+        [
+          "p",
+          "Trauma, cirurgia extensa, queimaduras e choque disparam respostas neuroendócrinas, inflamatórias, metabólicas e imunes destinadas a preservar perfusão de órgãos vitais, mobilizar combustíveis e iniciar reparação tecidual. A mesma resposta que protege nas primeiras horas pode se tornar fonte de dano: hiperglicemia, proteólise muscular, disfunção endotelial, distúrbios da coagulação, intolerância alimentar, imunossupressão e falência orgânica. Entender o mecanismo impede interpretar cada alteração laboratorial como uma doença isolada ou tratar o hipercatabolismo com medidas perigosas."
+        ],
+        [
+          "p",
+          "O tema não se restringe à resposta endócrino-metabólica à cirurgia. Um acidente com fraturas múltiplas gera lesão anatômica, perda sanguínea, dor, ativação simpática e liberação de sinais de dano; uma colectomia eletiva pode desencadear resposta semelhante em grau menor; uma queimadura extensa mantém grande perda de calor, inflamação e demanda energética por tempo prolongado. A intensidade depende do mecanismo, área lesionada, perfusão, tempo até controle da agressão, comorbidades, idade, nutrição prévia e complicações infecciosas."
+        ],
+        [
+          "p",
+          "A pergunta central do médico é dupla: <strong>qual resposta fisiológica esperada estou observando?</strong> e <strong>quando ela se tornou sinal de hipoperfusão, infecção, falência metabólica ou lesão secundária tratável?</strong> Glicose de 190 mg/dL pode refletir resistência à insulina do estresse ou diabetes subjacente; lactato de 4 mmol/L pode sinalizar choque hemorrágico, mas também catecolaminas, convulsão, falência hepática ou outros mecanismos. A tendência e o contexto valem mais que a rotulagem automática de qualquer número."
+        ],
+        [
+          "t",
+          [
+            "Agressão",
+            "Mecanismo",
+            "Consequência possível",
+            "Pergunta útil"
+          ],
+          [
+            [
+              "Perda sanguínea",
+              "Baixa oferta de O₂ e resposta adrenérgica",
+              "Acidose, hipoperfusão, coagulopatia",
+              "Sangramento e perfusão foram controlados?"
+            ],
+            [
+              "Lesão dos tecidos",
+              "DAMPs e imunidade inata",
+              "Febre, fase aguda, edema",
+              "Inflamação esperada ou novo foco infeccioso?"
+            ],
+            [
+              "Dor e cirurgia",
+              "Simpático e eixo HPA",
+              "Taquicardia, cortisol, hiperglicemia",
+              "Analgesia reduz sofrimento desnecessário?"
+            ],
+            [
+              "Imobilidade",
+              "Proteólise e síntese muscular insuficiente",
+              "Fraqueza e sarcopenia",
+              "Há plano seguro de nutrição e mobilização?"
+            ],
+            [
+              "Queimadura",
+              "Perda térmica e hipermetabolismo",
+              "Alto consumo, lenta cicatrização",
+              "Controle térmico, de ferida e energético?"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Fronteira curricular:</strong> esta apostila explica mecanismos e seu uso clínico. Algoritmos completos de ressuscitação hemorrágica ficam no tema 022; reposição hidroeletrolítica detalhada no 017; profilaxia e recuperação pós-operatória no 007. O conteúdo de cada apostila deve ser suficiente para entender seu próprio problema, sem duplicar protocolos especializados de outras."
+        ]
+      ]
+    ],
+    [
+      "fases",
+      0,
+      [
+        [
+          "2",
+          "1. Conceitos fundamentais: estresse cirúrgico, ebb e flow"
+        ],
+        [
+          "3",
+          "Ebb e flow de Cuthbertson: fases didáticas, não cronômetro"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"US_Navy_030423-N-6967M-090_A_central_computer_system_monitors_the_heart_rates_of\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/US%20Navy%20030423-N-6967M-090%20A%20central%20computer%20system%20monitors%20the%20heart%20rates%20of%20each%20patient%20in%20the%20Intensive%20Care%20Unit%20(ICU)%20to%20ensure%20a%20quick.jpg\" alt=\"Monitorização hemodinâmica do paciente cirúrgico crítico em UTI\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Monitorização hemodinâmica do paciente cirúrgico crítico em UTI</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AUS%20Navy%20030423-N-6967M-090%20A%20central%20computer%20system%20monitors%20the%20heart%20rates%20of%20each%20patient%20in%20the%20Intensive%20Care%20Unit%20(ICU)%20to%20ensure%20a%20quick.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">U.S. Navy photo by Photographer&#39;s Mate 1st Class Shane T. McCoy. ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Self_Monitoring_of_Blood_Glucose.png\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Self%20Monitoring%20of%20Blood%20Glucose.png\" alt=\"Monitorização glicêmica estrita na hiperglicemia de estresse cirúrgico\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Monitorização glicêmica estrita na hiperglicemia de estresse cirúrgico</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ASelf%20Monitoring%20of%20Blood%20Glucose.png\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Omstaal ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
+          "p",
+          "Classicamente se descreve uma fase inicial de economia ou choque — ebb — seguida de fase de mobilização — flow. A ebb se associa à ameaça à perfusão, vasoconstrição, menor gasto energético relativo, hipotermia possível e conservação do volume circulante. A flow, após melhora da circulação, frequentemente apresenta maior gasto energético, consumo de oxigênio, catabolismo proteico, hiperglicemia e atividade inflamatória. Isso ajuda a reconhecer por que um paciente ainda em choque não deve receber o mesmo plano metabólico de um traumatizado estabilizado."
+        ],
+        [
+          "p",
+          "Não existe corte universal em 24 ou 48 horas. A ebb pode dominar horas iniciais e persistir enquanto houver choque; características de flow podem coexistir precocemente com resposta adrenérgica. Pessoas submetidas a cirurgia de pequena agressão podem ter mudanças discretas; vítimas de queimadura extensa, infecção secundária ou operações repetidas podem permanecer catabólicas por semanas. O modelo fornece organização conceitual, não critério diagnóstico validado para todos."
+        ],
+        [
+          "t",
+          [
+            "Domínio",
+            "Ebb — instabilidade inicial",
+            "Flow — mobilização catabólica"
+          ],
+          [
+            [
+              "Contexto",
+              "Hemorragia, perfusão inadequada, agressão não controlada",
+              "Perfusão recuperada parcial/totalmente, dano ainda em reparação"
+            ],
+            [
+              "Gasto energético",
+              "Pode reduzir no choque, variável por temperatura e sedação",
+              "Geralmente aumenta com gravidade e febre"
+            ],
+            [
+              "Circulação",
+              "Vasoconstrição, possível baixo débito",
+              "Estado hiperdinâmico possível"
+            ],
+            [
+              "Temperatura",
+              "Hipotermia por exposição, perda de sangue e alterações de perfusão",
+              "Elevação inflamatória da temperatura pode ocorrer"
+            ],
+            [
+              "Glicose",
+              "Hormônios contrarreguladores já ativados",
+              "Resistência insulínica e gliconeogênese persistentes"
+            ],
+            [
+              "Proteínas",
+              "Mobilização inicial",
+              "Proteólise com balanço nitrogenado negativo"
+            ],
+            [
+              "Conduta",
+              "Hemostasia, oxigenação, correção de choque, aquecimento",
+              "Controle de complicações, alimentação segura e mobilização"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Resposta adaptativa versus resposta desregulada"
+        ],
+        [
+          "p",
+          "A liberação aguda de glicose e ácidos graxos permite sustentar órgãos vitais e células imunes; retenção de água e sódio ajuda preservar perfusão em hipovolemia. Entretanto, quando o estímulo persiste, hiperglicemia prejudica função imune e aumenta osmolaridade, perda muscular reduz recuperação, capilares tornam-se permeáveis e coagulopatia agrava hemorragia. A abordagem clínica não é bloquear todo cortisol ou todas as citocinas, mas remover causa, restaurar fisiologia, prevenir lesão adicional e apoiar reparação."
+        ],
+        [
+          "3",
+          "Gravidade anatômica e resposta sistêmica não são a mesma coisa"
+        ],
+        [
+          "p",
+          "Duas pessoas com fratura semelhante podem evoluir de modo diferente por idade, estado nutricional, diabetes, fragilidade, medicamentos, reserva orgânica e duração da hipoperfusão. Uma lesão pequena de víscera perfurada pode provocar resposta exuberante por infecção e atraso de controle de foco; fratura fechada de alto impacto pode produzir inflamação estéril importante. Índices de gravidade anatômica auxiliam prognóstico populacional, mas não substituem exame de perfusão, série de marcadores e evolução funcional."
+        ],
+        [
+          "3",
+          "Inflamação estéril não equivale automaticamente a sepse"
+        ],
+        [
+          "p",
+          "Febre, leucocitose e taquicardia após lesão podem ser reflexos de inflamação estéril. SIRS descreve um conjunto inespecífico de achados, enquanto sepse exige resposta desregulada a infecção com disfunção orgânica. A ausência de foco infeccioso claro não permite ignorar febre tardia ou nova hipotensão; o inverso também vale: PCR isoladamente elevada no primeiro dia após grande agressão não basta para antibiótico. Usar cronologia, exame, sinais de disfunção e investigação dirigida."
+        ]
+      ]
+    ],
+    [
+      "hormonios",
+      0,
+      [
+        [
+          "2",
+          "2. Resposta neuroendócrina: simpático, cortisol, ADH e SRAA"
+        ],
+        [
+          "3",
+          "Simpático-adrenomedular: segundos a minutos"
+        ],
+        [
+          "p",
+          "Nocicepção, hipovolemia, hipóxia e estresse psicológico ativam sistema nervoso simpático e medula adrenal. Noradrenalina promove vasoconstrição em territórios selecionados e sustenta resistência vascular; adrenalina eleva atividade cardiovascular e estimula glicogenólise e lipólise. Compensação pode preservar pressão aparentemente aceitável em fases de hemorragia, apesar de perfusão cutânea e renal reduzida. Taquicardia e palidez não devem ser rotuladas como ansiedade sem investigar choque."
+        ],
+        [
+          "p",
+          "Betabloqueadores, dispositivos de estimulação cardíaca, idade, sedação e lesão medular alteram resposta cronotrópica. Uma frequência cardíaca normal não exclui grande hemorragia. Em contrapartida, dor intensa, febre e catecolaminas exógenas podem elevar FC sem perda sanguínea importante. O objetivo é integrar mecanismo do trauma, exame, débito, perfusão, hemoglobina seriada, lactato e resposta ao tratamento."
+        ],
+        [
+          "3",
+          "Eixo hipotálamo–hipófise–adrenal"
+        ],
+        [
+          "p",
+          "O estresse eleva atividade de CRH hipotalâmico, ACTH hipofisário e cortisol adrenal. O cortisol facilita resposta vascular às catecolaminas, favorece gliconeogênese a partir de lactato, glicerol e aminoácidos e contribui para resistência à insulina. Também modula inflamação de maneira variável por contexto e tempo. Alterações de proteínas ligadoras e do ritmo circadiano na doença crítica fazem uma dosagem isolada de cortisol pouco interpretável fora de hipótese endocrinológica específica."
+        ],
+        [
+          "p",
+          "Cortisol elevado no traumatizado não significa síndrome de Cushing e não indica corticoterapia universal. Em insuficiência adrenal conhecida, o contexto é diferente e pode exigir plano de reposição de estresse específico. Confundir o eixo adaptativo com indicação de corticoide em todo choque hemorrágico é erro potencialmente nocivo."
+        ],
+        [
+          "3",
+          "ADH e renina–angiotensina–aldosterona"
+        ],
+        [
+          "p",
+          "Redução do volume arterial efetivo estimula vasopressina/ADH e SRAA. ADH favorece reabsorção de água livre, angiotensina II vasoconstrição e aldosterona retenção de sódio e eliminação de potássio. No início, esses efeitos ajudam conservar volume; depois, associados a inflamação, disfunção renal e excesso de fluidos, podem contribuir para edema. Oligúria é achado a explicar, não indicação automática de bolus indiscriminado."
+        ],
+        [
+          "p",
+          "Diferenciar oligúria pré-renal por hipoperfusão, lesão renal aguda estabelecida, retenção urinária, lesão traumática de trato urinário e aumento de pressão intra-abdominal exige avaliação. Tratar com fluidos repetidos sem controlar sangramento pode agravar hemodiluição de fatores de coagulação e edema tecidual."
+        ],
+        [
+          "3",
+          "Hormônios tireoidianos e anabolismo em doença crítica"
+        ],
+        [
+          "p",
+          "Há alteração de T3/T4/TSH por síndrome do eutireoidiano doente, redução de efeitos anabólicos de IGF-1 e perturbação de hormônios sexuais. T3 baixo isolado durante trauma grave não prova hipotireoidismo primário e habitualmente não justifica reposição empírica. A sinalização de GH/IGF e a insulinorresistência ilustram que concentrações hormonais e respostas dos tecidos podem divergir."
+        ],
+        [
+          "t",
+          [
+            "Achado",
+            "Causa plausível",
+            "Erro a evitar"
+          ],
+          [
+            [
+              "Taquicardia e palidez",
+              "Catecolaminas ou hipovolemia",
+              "Ignorar sangramento porque paciente refere dor"
+            ],
+            [
+              "Hiperglicemia",
+              "Cortisol, catecolaminas e resistência insulínica",
+              "Insulina excessiva e hipoglicemia"
+            ],
+            [
+              "Oligúria",
+              "ADH/SRAA, hipoperfusão ou lesão renal",
+              "Dar soro indefinidamente sem reavaliar"
+            ],
+            [
+              "Potássio alterado",
+              "Aldosterona, rim, acidose e lesão muscular",
+              "Inferir valor sem medir"
+            ],
+            [
+              "T3 baixo",
+              "Resposta à doença crítica",
+              "Tratar como hipotireoidismo primário sem contexto"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "inflamacao",
+      0,
+      [
+        [
+          "2",
+          "3. Imunidade inata, DAMPs, citocinas e fase aguda"
+        ],
+        [
+          "3",
+          "A lesão tecidual sinaliza perigo sem bactéria"
+        ],
+        [
+          "p",
+          "Células lesadas e matriz extracelular danificada liberam sinais moleculares de dano — DAMPs — incluindo DNA mitocondrial, ATP extracelular e proteínas nucleares. Receptores de reconhecimento de padrões (PRRs) presentes em células imunes e teciduais reconhecem essas moléculas e ativam vias inflamatórias. Esse sistema recruta leucócitos, remove detritos, aumenta permeabilidade e participa do reparo. A inflamação inicial pode ser estéril e não prova infecção."
+        ],
+        [
+          "p",
+          "Patógenos fornecem outros sinais, os PAMPs, que se somam à resposta a DAMPs em trauma contaminado ou sepse posterior. É importante diferenciar o mecanismo inicial de resposta, mas o quadro clínico pode conter simultaneamente lesão estéril e infecção. Não atribuir toda leucocitose, febre ou PCR alta a 'complicação infecciosa' sem avaliar evolução e foco."
+        ],
+        [
+          "t",
+          [
+            "Mediador",
+            "Função relevante",
+            "Implicação"
+          ],
+          [
+            [
+              "TNF-α",
+              "Ativação endotelial, migração celular, permeabilidade",
+              "Edema e vasoplegia em quadros graves"
+            ],
+            [
+              "IL-1",
+              "Inflamação e febre",
+              "Alteração térmica e resposta imune"
+            ],
+            [
+              "IL-6",
+              "Indução de proteínas de fase aguda",
+              "Aumento de PCR e fibrinogênio"
+            ],
+            [
+              "IL-10",
+              "Freios anti-inflamatórios",
+              "Modula atividade imune e pode participar de imunossupressão"
+            ],
+            [
+              "Quimiocinas",
+              "Direcionamento de leucócitos",
+              "Acúmulo de células na área lesionada"
+            ],
+            [
+              "Complemento",
+              "Opsonização e ligação com coagulação",
+              "Amplificação imune e lesão endotelial"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Proteínas de fase aguda e a armadilha da albumina"
+        ],
+        [
+          "p",
+          "O fígado aumenta síntese de proteínas positivas de fase aguda, como PCR e fibrinogênio, enquanto albumina e transtirretina podem diminuir por redistribuição, alteração de síntese, permeabilidade e hemodiluição. Albumina de 2,5 g/dL no segundo dia após trauma grave é marcador de doença e prognóstico em determinado contexto, mas não mede sozinha a massa muscular ou o grau de desnutrição anterior."
+        ],
+        [
+          "p",
+          "Avaliar nutrição exige história de ingestão e perda ponderal, função, exame físico, composição corporal e inflamação. PCR elevada não escolhe antibiótico; ela descreve uma parte da resposta. A decisão de infecção exige identificar fonte provável, temporalidade, exames dirigidos e disfunção."
+        ],
+        [
+          "3",
+          "Inflamação e imunossupressão podem coexistir"
+        ],
+        [
+          "p",
+          "Após trauma grave, alguns circuitos permanecem pró-inflamatórios enquanto outros apresentam redução de respostas celulares e maior suscetibilidade a infecção secundária. Não se deve assumir esquema rígido 'primeiro SIRS, depois CARS' em todo paciente. Inflamação persistente, linfopenia, complicações infecciosas e perda muscular podem coexistir na doença crítica prolongada."
+        ],
+        [
+          "3",
+          "Diferencial entre febre inflamatória e complicação"
+        ],
+        [
+          "p",
+          "Febre leve e leucocitose próximas a uma operação podem acompanhar inflamação estéril. Febre persistente associada a novo choque, piora de oxigenação, secreção purulenta, dor abdominal progressiva ou disfunção orgânica impõe investigação de complicação. O tempo isolado não estabelece diagnóstico: uma pessoa idosa pode ter infecção grave sem febre. Em vez de tratar PCR como doença, reavaliar achados objetivos e buscar foco quando indicado."
+        ]
+      ]
+    ],
+    [
+      "substratos",
+      0,
+      [
+        [
+          "2",
+          "4. Glicose, lipídios, proteínas e balanço nitrogenado no trauma"
+        ],
+        [
+          "3",
+          "Glicemia do estresse: alta produção e uso periférico perturbado"
+        ],
+        [
+          "p",
+          "Catecolaminas e glucagon aumentam glicogenólise hepática; cortisol e mediadores inflamatórios mantêm gliconeogênese a partir de lactato, glicerol e aminoácidos. A resistência insulínica em músculo e tecido adiposo reduz captação periférica, apesar de secreção pancreática relativamente preservada ou elevada. Essas adaptações fornecem energia a órgãos prioritários, mas hiperglicemia sustentada associa-se a infecções, diurese osmótica, distúrbios eletrolíticos e estresse oxidativo."
+        ],
+        [
+          "p",
+          "O diagnóstico de hiperglicemia do estresse exige interpretação clínica, não um limite isolado que dispense investigar diabetes. HbA1c ajuda a avaliar exposição glicêmica prévia quando sua interpretação é válida, porém sangramento, transfusão e condições hematológicas podem distorcer resultado. Ao iniciar dieta, vasopressores, glicocorticoides ou nutrição parenteral, as doses de insulina e a necessidade de monitorização podem mudar. Uma correção agressiva para valores normoglicêmicos de pessoa saudável aumenta hipoglicemia e não é meta apropriada por padrão em trauma grave."
+        ],
+        [
+          "3",
+          "Lipólise e ácidos graxos: energia quando a glicose não é suficiente"
+        ],
+        [
+          "p",
+          "A resposta adrenérgica ativa lipase hormônio-sensível e libera ácidos graxos livres e glicerol. O fígado utiliza glicerol na gliconeogênese; ácidos graxos podem sustentar oxidação em tecidos capazes de utilizá-los, desde que perfusão e função mitocondrial sejam adequadas. Jejum e resposta hormonal podem aumentar cetogênese, mas cetonas discretas não equivalem a cetoacidose. Em diabético com acidose, cetonemia elevada e alterações do ânion gap, a hipótese de cetoacidose deve ser investigada de forma específica."
+        ],
+        [
+          "3",
+          "Proteólise muscular é parte do custo fisiológico da sobrevivência"
+        ],
+        [
+          "p",
+          "O tecido muscular fornece alanina e glutamina que podem sustentar gliconeogênese hepática, células do sistema imune e reparo de tecidos. Sistemas de ubiquitina-proteassoma e autofagia participam da degradação de proteínas, enquanto a sinalização anabólica mediada por insulina e IGF-1 fica menos eficaz. O resultado pode ser balanço nitrogenado negativo apesar de grande aporte de calorias; isso não é mera falta de vontade do paciente de fazer fisioterapia."
+        ],
+        [
+          "p",
+          "A perda de massa muscular compromete força respiratória, capacidade de caminhar, transferência da cama, deglutição e autonomia após a alta. Obesidade ou edema importante não protegem automaticamente de sarcopenia: tecido adiposo e líquido podem mascarar queda de proteína muscular. Em idosos, pessoas desnutridas, imobilizadas por fraturas ou em ventilação mecânica, a reserva funcional pode cair com agilidade. A prevenção envolve controlar lesão, evitar complicações, instituir nutrição segura e realizar mobilização progressiva quando viável."
+        ],
+        [
+          "3",
+          "Balanço nitrogenado: marcador interpretativo com limitações"
+        ],
+        [
+          "p",
+          "A diferença entre nitrogênio ingerido e perdido é uma aproximação do estado proteico global. A ureia urinária pode apoiar estimativas, mas cálculos podem errar diante de alteração de função renal, hemodiálise, grandes perdas por feridas/drenos, coleta incompleta e variação de estoque corporal. Nitrogênio positivo não garante síntese muscular funcional, assim como perda no dia de hipercatabolismo não significa ausência de benefício da nutrição. A leitura clínica deve integrar evolução de força, ingestão, função renal, inflamação e mobilização."
+        ],
+        [
+          "t",
+          [
+            "Substrato",
+            "Produção/uso sob estresse",
+            "Implicação à beira do leito"
+          ],
+          [
+            [
+              "Glicose",
+              "Glicogenólise, gliconeogênese e captação periférica reduzida",
+              "Glicemia seriada e evitar tanto hiperglicemia importante quanto hipoglicemia"
+            ],
+            [
+              "Glicerol",
+              "Lipólise e substrato hepático",
+              "A produção endógena de glicose continua mesmo sem alimentação"
+            ],
+            [
+              "Ácidos graxos",
+              "Lipólise e β-oxidação",
+              "Oferta energética depende de perfusão e metabolismo celular"
+            ],
+            [
+              "Alanina",
+              "Catabolismo muscular e gliconeogênese",
+              "Perda de músculo pode ocorrer com peso total aumentado por edema"
+            ],
+            [
+              "Glutamina",
+              "Mobilização de aminoácidos para tecidos e células imunes",
+              "Não implica recomendação de suplementação universal de glutamina"
+            ],
+            [
+              "Ureia",
+              "Metabolismo e excreção de nitrogênio",
+              "Função renal interfere no balanço nitrogenado estimado"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "O ciclo de Cori e o lactato: por que o corpo não é um sistema 'com ou sem oxigênio'"
+        ],
+        [
+          "p",
+          "O músculo e hemácias produzem lactato, que pode ser captado por fígado e rins para produção de glicose; esse intercâmbio integra o ciclo de Cori. O lactato não surge somente de hipóxia: glicólise acelerada por catecolaminas e depuração reduzida podem elevá-lo. Em choque, a contribuição de hipóxia tecidual pode ser importante, porém uma normalização parcial do lactato não garante resolução de todas as lesões e sua persistência não comprova por si continuidade da hemorragia."
+        ],
+        [
+          "3",
+          "Trauma versus jejum simples"
+        ],
+        [
+          "p",
+          "Em jejum sem agressão, o organismo tende progressivamente a usar gordura e corpos cetônicos para poupar proteína. No trauma grave, sinais inflamatórios e hormonais mantêm produção hepática de glicose e proteólise apesar de alguma adaptação ao jejum; por isso a perda muscular pode ser muito maior que em um adulto saudável em restrição alimentar de igual duração. O trauma também pode reduzir tolerância gastrointestinal, aumentar perdas e impedir ingestão por operações e sedação. Suporte nutricional deve responder à fase clínica e ao risco, não apenas ao número de dias sem alimentação."
+        ]
+      ]
+    ],
+    [
+      "perfusao",
+      0,
+      [
+        [
+          "2",
+          "5. Perfusão, metabolismo anaeróbio e interpretação de lactato/base deficit"
+        ],
+        [
+          "3",
+          "DO₂ e VO₂: oferta, extração e consumo de oxigênio"
+        ],
+        [
+          "p",
+          "A entrega de oxigênio, DO₂, depende do débito cardíaco e do conteúdo arterial de oxigênio. Este é dominado por hemoglobina e saturação; o oxigênio dissolvido no plasma contribui muito menos em condições habituais. Assim, uma SpO₂ de 99% não garante boa oferta tecidual se a hemoglobina ou o débito estão muito baixos. O consumo celular, VO₂, depende do trabalho metabólico e da capacidade de extração e utilização, que podem se modificar por inflamação, microcirculação e disfunção mitocondrial."
+        ],
+        [
+          "p",
+          "A equação conceitual é <strong>DO₂ = débito cardíaco × conteúdo arterial de O₂</strong>. Para cálculo didático, CaO₂ em mL/dL é aproximadamente 1,34 × hemoglobina (g/dL) × saturação arterial (fração) + 0,003 × PaO₂ (mmHg). Para expressar DO₂ em mL/min, é necessário considerar conversão de unidades entre dL e L. A fórmula explica por que oferecer oxigênio suplementar não corrige sozinho hemorragia aguda, mas não substitui avaliação clínica e intervenções imediatas."
+        ],
+        [
+          "3",
+          "Lactato alto nem sempre significa metabolismo exclusivamente anaeróbio"
+        ],
+        [
+          "p",
+          "Lactato integra metabolismo intermediário normal e pode se elevar por hipóxia celular, ativação β-adrenérgica de glicólise aeróbia, convulsões, exercício, uso de catecolaminas, fármacos, deficiência de tiamina e menor depuração hepática. Em trauma com hipotensão, extremidades frias, alteração mental e sangramento suspeito, a hipoperfusão é prioritária; entretanto, reconhecer causas adicionais melhora interpretação da persistência após hemostasia. A diretriz europeia de trauma, sexta edição (2023), recomenda lactato seriado como auxílio à estimativa da gravidade da hemorragia e da hipoperfusão, não como exame etiológico exclusivo."
+        ],
+        [
+          "p",
+          "Um valor normal não exclui choque, principalmente em fases iniciais ou conforme mecanismos e compensação. A evolução ao longo das horas, associada a exame físico, medidas de perfusão e intervenções realizadas, costuma ter maior utilidade do que um ponto isolado. Não tratar lactato alto com litros de cristaloide por reflexo sem investigar sangramento persistente, vasoplegia, função hepática, uso de adrenalina e controle da causa."
+        ],
+        [
+          "3",
+          "Base deficit e ânion gap: não usar como sinônimos de lactato"
+        ],
+        [
+          "p",
+          "Base deficit descreve uma estimativa do componente metabólico ácido-base e se associa a hipoperfusão em trauma hemorrágico, mas também pode refletir carga de cloreto, disfunção renal, cetose e outras causas de acidose. Lactato e base deficit têm correlação imperfeita e podem evoluir em ritmos distintos. O ânion gap depende das concentrações de eletrólitos e da albumina: hipoalbuminemia reduz o valor observado e pode ocultar ácidos não medidos. Portanto, 'acidose metabólica' não constitui diagnóstico etiológico suficiente."
+        ],
+        [
+          "t",
+          [
+            "Achado",
+            "Interpretação possível",
+            "Conduta interpretativa"
+          ],
+          [
+            [
+              "Lactato alto, pele fria, PA reduzida e trauma de alta energia",
+              "Hipoperfusão/hemorragia provável",
+              "Controlar fonte e reavaliar perfusão e série de marcadores"
+            ],
+            [
+              "Lactato alto após recuperação de PA em uso de adrenalina",
+              "Produção adrenérgica, depuração ou perfusão residual",
+              "Checar exame seriado, drogas e perfusão sem fluidos automáticos"
+            ],
+            [
+              "Acidose hiperclorêmica após grande infusão de soro",
+              "Distúrbio de íons fortes/Cl e função renal",
+              "Revisar tipo de fluido, cloreto, balanço e função renal"
+            ],
+            [
+              "Hb inicial aparentemente normal e hemorragia evidente",
+              "Diluição/equilíbrio ainda não ocorreram",
+              "Não usar Hb única para excluir grande perda"
+            ],
+            [
+              "Base deficit anormal com lactato normal",
+              "Outra acidose ou diferença de cinética",
+              "Interpretar gasometria completa, eletrólitos e contexto"
+            ],
+            [
+              "Lactato normal em instável",
+              "Aferição não exclui choque",
+              "Priorizar clínica e busca de causa reversível"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Janelas de perfusão: por que nenhum marcador isolado é infalível"
+        ],
+        [
+          "p",
+          "Nível de consciência, pele, enchimento capilar, pulsos, pressão de pulso, temperatura periférica, débito urinário, lactato, base deficit e resposta à intervenção oferecem informação complementar. Sedação altera consciência, ambiente frio altera enchimento capilar, doença renal modifica diurese e betabloqueador suprime taquicardia. Hemorragia grave exige controle da fonte e ressuscitação apropriada, não espera por exame laboratorial perfeito. A leitura metabólica deve ajudar a seguir o caso, nunca bloquear tratamento de risco vital."
+        ]
+      ]
+    ],
+    [
+      "endotelio",
+      0,
+      [
+        [
+          "2",
+          "6. Endotélio, glicocálix, coagulopatia e disfunção de órgãos"
+        ],
+        [
+          "3",
+          "O endotélio é órgão funcional, não revestimento passivo"
+        ],
+        [
+          "p",
+          "Células endoteliais e glicocálix regulam permeabilidade, adesão de leucócitos, coagulação, tônus vascular e distribuição da microcirculação. Isquemia, reperfusão, catecolaminas, inflamação e trauma mecânico podem danificar essa interface, aumentando extravasamento de água e proteínas, edema e heterogeneidade de perfusão. O paciente pode desenvolver edema importante apesar de relativa depleção intravascular, situação em que administrar mais cristaloide sem avaliação pode ampliar edema sem restaurar microfluxo adequado."
+        ],
+        [
+          "p",
+          "O glicocálix é uma rede de proteoglicanos e glicoproteínas na superfície endotelial que modula contato das células circulantes com a parede vascular. Sua degradação associa-se a aumento de permeabilidade, inflamação e alterações da hemostasia, mas marcadores séricos como sindecano-1 ainda não constituem exames de rotina universal para guiar ressuscitação no pronto-socorro. Essa distinção entre mecanismo estudado e biomarcador validado evita recomendar testes de pesquisa como padrão assistencial."
+        ],
+        [
+          "3",
+          "Inflamação e coagulação se comunicam"
+        ],
+        [
+          "p",
+          "O trauma intenso pode causar ativação de trombina, consumo e disfunção de fatores, fibrinólise alterada, lesão endotelial, ativação plaquetária e efeitos de acidose, hipotermia e diluição. Coagulopatia induzida pelo trauma pode estar presente precocemente, antes mesmo de múltiplas bolsas de fluidos, e se agrava por ressuscitação inadequada. A diretriz europeia de 2023 recomenda monitorização precoce de hemostasia e uso orientado por testes convencionais ou viscoelásticos quando disponíveis, em contexto de hemorragia maior."
+        ],
+        [
+          "t",
+          [
+            "Mecanismo",
+            "Efeito",
+            "Por que monitorar"
+          ],
+          [
+            [
+              "Hipotermia",
+              "Reduz desempenho enzimático e plaquetário",
+              "Aquecimento e evitar infusão de líquidos frios"
+            ],
+            [
+              "Acidose grave",
+              "Prejudica contratilidade e hemostasia",
+              "Corrigir causa da hipoperfusão, não só número do pH"
+            ],
+            [
+              "Hipofibrinogenemia",
+              "Compromete malha de fibrina",
+              "Dosagem de fibrinogênio/avaliação dirigida"
+            ],
+            [
+              "Hipocalcemia ionizada",
+              "Prejudica coagulação e contratilidade",
+              "Monitorar cálcio ionizado em grande transfusão"
+            ],
+            [
+              "Endoteliopatia",
+              "Aumenta permeabilidade e altera hemostasia",
+              "Controle da fonte e evitar segunda agressão"
+            ],
+            [
+              "Diluição iatrogênica",
+              "Pode reduzir fatores/plaquetas e agravar edema",
+              "Ressuscitação hemostática, evitando cristaloide excessivo"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Hipocalcemia na transfusão e o papel do citrato"
+        ],
+        [
+          "p",
+          "Produtos sanguíneos podem fornecer citrato que quelata cálcio; grande volume transfusional, comprometimento hepático e choque aumentam risco de hipocalcemia ionizada. Cálcio participa de formação e estabilização da fibrina, função plaquetária e contratilidade miocárdica. A recomendação da diretriz europeia é acompanhar cálcio ionizado e corrigir hipocalcemia durante trauma maior, especialmente transfusão maciça. O cálcio total pode ser enganoso em hipoalbuminemia; a concentração ionizada é mais diretamente relevante."
+        ],
+        [
+          "3",
+          "Tríade letal e diamante letal: cuidado com memorização sem causalidade"
+        ],
+        [
+          "p",
+          "Hipotermia, acidose e coagulopatia compõem a tríade clássica associada a sangramento progressivo e mortalidade; hipocalcemia é frequentemente adicionada em modelos de 'diamante letal'. A hipoperfusão piora acidose, sangramento e inflamação; perda de calor reduz eficiência de coagulação; a coagulopatia perpetua hemorragia; transfusão maciça pode intensificar queda do cálcio ionizado. A intervenção deve interromper o ciclo por controle de hemorragia, ressuscitação racional, aquecimento e correção dirigida de fatores, não apenas normalizar quatro números sem tratar lesão."
+        ],
+        [
+          "3",
+          "Disfunção mitocondrial e heterogeneidade microvascular"
+        ],
+        [
+          "p",
+          "Após hipóxia e reperfusão, espécies reativas de oxigênio e inflamação podem comprometer mitocôndrias, levando a utilização inadequada de oxigênio mesmo quando oferta macroscópica melhorou. A microcirculação pode conter capilares perfundidos e outros com fluxo inadequado, sem que pressão arterial média reflita integralmente esse mosaico. Clinicamente, isso explica parte da persistência de disfunção orgânica e hiperlactatemia em casos complexos, mas não autoriza diagnosticar 'citopatia' com um único exame ou abandonar pesquisa de causas reversíveis."
+        ]
+      ]
+    ],
+    [
+      "organos",
+      0,
+      [
+        [
+          "2",
+          "7. Consequências sistêmicas: pulmão, rim, intestino, cérebro e músculo"
+        ],
+        [
+          "3",
+          "Pulmão: inflamação sistêmica pode evoluir para SDRA"
+        ],
+        [
+          "p",
+          "DAMPs, citocinas, endoteliopatia e ativação de neutrófilos podem aumentar permeabilidade alvéolo-capilar e produzir edema pulmonar não explicado apenas por insuficiência cardíaca. Contusão pulmonar e aspiração podem somar agressão direta; transfusão e choque podem somar vias indiretas. O paciente pode evoluir com hipoxemia, redução de complacência e necessidade de suporte ventilatório. A síndrome do desconforto respiratório agudo exige critérios específicos e diferenciação de sobrecarga hidrostática, não sendo sinônimo de qualquer saturação baixa."
+        ],
+        [
+          "3",
+          "Rim: oligúria é sinal, não mecanismo único"
+        ],
+        [
+          "p",
+          "Vasoconstrição renal, hipoperfusão, inflamação, rabdomiólise, medicamentos nefrotóxicos, alterações hemodinâmicas e síndrome compartimental abdominal podem causar lesão renal aguda. Creatinina costuma subir com atraso relativo e é influenciada por massa muscular, diluição e catabolismo; débito urinário seriado fornece informação adicional, mas precisa ser interpretado com obstrução, contexto e objetivos clínicos. Distúrbios de potássio podem surgir por liberação celular ou falência renal e requerem vigilância dirigida."
+        ],
+        [
+          "3",
+          "Intestino: translocação, motilidade e isquemia"
+        ],
+        [
+          "p",
+          "Hipoperfusão esplâncnica, opioides, inflamação e distensão contribuem para íleo e intolerância alimentar. A barreira intestinal pode ficar comprometida em choque e aumentar exposição a produtos microbianos, mas 'translocação bacteriana' não deve ser usada como diagnóstico clínico automático de sepse. Nutrição enteral precoce é desejável em muitos pacientes estabilizados, entretanto alimentação durante choque não controlado ou isquemia intestinal suspeita pode aumentar risco de complicações graves."
+        ],
+        [
+          "3",
+          "Cérebro: resposta ao estresse, delirium e lesão secundária"
+        ],
+        [
+          "p",
+          "Hipóxia, hipoglicemia, hiperglicemia acentuada, febre, sedação excessiva e inflamação podem agravar disfunção neurológica após trauma. Em traumatismo cranioencefálico, hipotensão e hipóxia são agressões secundárias relevantes, e nutrição/catabolismo influenciam recuperação funcional. Delirium exige identificação de causas reversíveis e estratégias não farmacológicas quando pertinentes; não é equivalente a agitação por dor, abstinência, hipoxemia ou convulsão."
+        ],
+        [
+          "3",
+          "Músculo e funcionalidade: desfecho esquecido"
+        ],
+        [
+          "p",
+          "A perda de massa e força muscular prolonga dependência de ventilação, dificulta fisioterapia, reduz marcha, capacidade de deglutição e autonomia. Obesidade com edema pode ocultar perda muscular. A recuperação metabólica exige não só calorias e proteínas mas redução da inflamação, controle de complicações, tratamento da dor, sono adequado, mobilização progressiva e prevenção de imobilização excessiva. Um paciente pode sobreviver ao trauma e receber alta com incapacidade importante: qualidade do cuidado inclui essa dimensão."
+        ],
+        [
+          "t",
+          [
+            "Sistema",
+            "Complicação importante",
+            "Sinal de vigilância"
+          ],
+          [
+            [
+              "Pulmão",
+              "Edema inflamatório, aspiração ou SDRA",
+              "Necessidade crescente de O₂, baixa complacência, infiltrados"
+            ],
+            [
+              "Rim",
+              "LRA, rabdomiólise, distúrbios eletrolíticos",
+              "Oligúria persistente, K alterado, creatinina subindo"
+            ],
+            [
+              "Intestino",
+              "Íleo, isquemia, intolerância alimentar",
+              "Dor/ distensão desproporcional, lactato com sinais abdominais"
+            ],
+            [
+              "Cérebro",
+              "Delirium e lesão neurológica secundária",
+              "Alteração de atenção/consciência, crises ou déficit"
+            ],
+            [
+              "Músculo",
+              "Fraqueza adquirida na UTI",
+              "Queda de força, dificuldade de desmame/marcha"
+            ],
+            [
+              "Hematológico",
+              "Coagulopatia, trombose ou hemorragia",
+              "Sangramento, plaquetas, fibrinogênio, testes dirigidos"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "avaliacao",
+      0,
+      [
+        [
+          "2",
+          "8. Avaliação e estratificação: do trauma anatômico ao fenótipo metabólico"
+        ],
+        [
+          "3",
+          "Matriz inicial de avaliação: cinco perguntas, sem substituir a abordagem do trauma"
+        ],
+        [
+          "p",
+          "A avaliação metabólica não deve competir com controle de hemorragia, proteção da via aérea, ventilação ou cirurgia de emergência. Nas primeiras horas, registrar mecanismo de trauma, tempo e provável extensão da agressão, condição de perfusão, temperatura e terapias já administradas. Em seguida, buscar sinais de disfunção renal, hepática, respiratória e neurológica e identificar risco nutricional prévio. Ao longo da internação, revisar resultados seriados, incluindo glicemia, eletrólitos, lactato, função renal, hemoglobina, coagulação e marcadores de inflamação interpretados no contexto."
+        ],
+        [
+          "p",
+          "A ordem prática é: primeiro reconhecer risco vital e corrigir causa; depois medir repercussões; por fim, acompanhar direção da resposta ao cuidado. Um adulto politraumatizado instável não deve aguardar dosagem de cortisol sérico ou balanço nitrogenado para ir ao centro cirúrgico. Um paciente já estabilizado, porém com hiperglicemia persistente, má ingestão, inflamação e fraqueza, exige plano metabólico e de reabilitação. O mesmo tema exige decisões diferentes conforme momento clínico."
+        ],
+        [
+          "t",
+          [
+            "Momento",
+            "Perguntas prioritárias",
+            "Marcadores que ajudam"
+          ],
+          [
+            [
+              "Admissão",
+              "Sangra? Ventila? Perfunde? Está hipotérmico?",
+              "Hemograma, gasometria, lactato/base deficit, coagulação, cálcio ionizado quando indicado"
+            ],
+            [
+              "Após hemostasia e reanimação",
+              "Perfusão melhora? Alguma lesão foi negligenciada?",
+              "Tendência de lactato, diurese, glicemia, eletrólitos, temperatura, exame seriado"
+            ],
+            [
+              "Primeiros dias",
+              "Há infecção ou disfunção nova? Nutrição é segura?",
+              "Evolução clínica, PCR contextual, função orgânica, ingestão, glicemia"
+            ],
+            [
+              "Fase de recuperação",
+              "Perde massa muscular? Tolera alimentação? Mobiliza?",
+              "Avaliação nutricional, força, funcionalidade, peso interpretado com edema"
+            ],
+            [
+              "Após alta",
+              "Persistem fragilidade, déficit funcional ou complicações?",
+              "Peso/tendência, reabilitação, feridas, exame de seguimento"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Hemoglobina, albumina, lactato e PCR respondem a perguntas diferentes"
+        ],
+        [
+          "p",
+          "Hemoglobina se relaciona à capacidade de transporte de O₂, mas pode estar aparentemente normal antes de redistribuição de fluidos após perda sanguínea. Albumina cai em inflamação por mecanismos além da nutrição. Lactato ajuda sinalizar risco circulatório/metabólico, sem definir sozinho a causa. PCR reflete resposta de fase aguda com defasagem temporal, sem determinar presença de patógeno. Escolher exames porque o resultado pode mudar conduta é mais racional que interpretar todos como 'marcadores de trauma' intercambiáveis."
+        ],
+        [
+          "3",
+          "Risco nutricional prévio tem peso prognóstico"
+        ],
+        [
+          "p",
+          "Trauma pode ocorrer em pessoa previamente sarcopênica, idosa, com neoplasia, doença inflamatória intestinal, uso de álcool, fragilidade ou insegurança alimentar. O IMC isolado é pouco sensível à perda muscular; edema e fluidos agravam essa limitação. Registrar perda de peso involuntária, ingestão dos dias prévios, capacidade funcional, histórico de deglutição, sinais de perda de gordura/músculo e condições sociais. O risco não depende de albumina baixa isoladamente, e o benefício de intervir aumenta quando a desnutrição é reconhecida cedo."
+        ],
+        [
+          "3",
+          "Reavaliação em ciclos: um marcador que piora muda hipótese"
+        ],
+        [
+          "p",
+          "No dia 1 após hemostasia, lactato cai de 5,2 para 2,6 mmol/L, perfusão melhora e diurese se normaliza. No dia 3, surge febre, distensão, taquicardia e lactato novamente elevado. Essa segunda mudança exige procurar nova causa — infecção, deiscência, isquemia, sangramento, efeito medicamentoso — e não atribuir automaticamente à fase flow. A melhor interpretação de fisiologia é capaz de reconhecer quando a trajetória deixa de ser esperada."
+        ]
+      ]
+    ],
+    [
+      "nutricao",
+      0,
+      [
+        [
+          "2",
+          "9. Nutrição no trauma: quando começar, qual via e como evitar dano"
+        ],
+        [
+          "3",
+          "Uma sequência clínica: perfusão antes de dieta plena"
+        ],
+        [
+          "p",
+          "O trauma aumenta necessidade de substratos para reparo e preservação funcional, mas não autoriza alimentar plenamente uma pessoa em choque descontrolado. O intestino depende de perfusão adequada para digestão e absorção; durante vasoconstrição esplâncnica grave, a oferta enteral pode agravar isquemia. A diretriz ESPEN de terapia nutricional em UTI, atualizada parcialmente em 2023, orienta adiar alimentação enteral no choque não controlado e permitir início em baixa dose quando a perfusão estiver controlada, mesmo com vasopressores estáveis em determinados pacientes, com vigilância para intolerância/isquemia."
+        ],
+        [
+          "p",
+          "A atualização ESPEN 2025 de nutrição em cirurgia apoia alimentação oral precoce quando viável e terapia enteral dentro de aproximadamente 24 horas para pacientes selecionados cuja ingestão oral não será adequada, incluindo pessoas com trauma grave e traumatismo cranioencefálico grave. Porém esse princípio não elimina contraindicações de instabilidade circulatória, isquemia intestinal, abdome compartimental e outras condições. Uma recomendação feita para recuperação cirúrgica não pode ser interpretada como ordem para iniciar dieta em qualquer paciente enquanto sangra."
+        ],
+        [
+          "t",
+          [
+            "Condição",
+            "Estratégia de princípio",
+            "Justificativa"
+          ],
+          [
+            [
+              "Paciente alerta, estável e trato digestório funcional",
+              "Priorizar alimentação oral segura quando possível",
+              "Preserva função gastrointestinal e facilita recuperação"
+            ],
+            [
+              "Ingestão oral insuficiente prevista por vários dias, circulação estável",
+              "Considerar nutrição enteral precocemente",
+              "Ajuda enfrentar déficit nutricional em pacientes selecionados"
+            ],
+            [
+              "Choque não controlado e metas de perfusão não alcançadas",
+              "Adiar início ou avanço de dieta enteral",
+              "Risco de isquemia intestinal"
+            ],
+            [
+              "Choque controlado com vasopressor estável/baixo em paciente selecionado",
+              "Avaliar alimentação trófica/baixa dose com monitorização",
+              "Tolerância depende de perfusão e estabilidade"
+            ],
+            [
+              "Isquemia intestinal suspeita, obstrução ou síndrome compartimental abdominal",
+              "Não insistir em dieta enteral",
+              "A alimentação pode agravar lesão e distensão"
+            ],
+            [
+              "Intestino inviável e necessidade prolongada de suporte nutricional",
+              "Avaliar nutrição parenteral conforme risco e cronologia",
+              "Via enteral pode estar temporariamente contraindicada"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Requerimento energético: evitar tanto subalimentação prolongada quanto sobrealimentação precoce"
+        ],
+        [
+          "p",
+          "O hipercatabolismo aumenta perda de proteína e pode elevar gasto energético, mas a produção endógena de energia continua elevada nos primeiros dias de doença crítica. Ofertar calorias plenas precocemente a todos pode aumentar hiperglicemia, produção de CO₂, esteatose hepática e intolerância metabólica. A calorimetria indireta, quando disponível e interpretável, ajuda estimar necessidade energética; equações preditivas têm erro substancial em pessoas com trauma, obesidade, edema ou ventilação alterada. Planos devem prever avanço progressivo e monitorização de tolerância."
+        ],
+        [
+          "p",
+          "Não inventar uma meta calórica universal por peso para todo politraumatizado. Faixas de kcal/kg podem constar de protocolos clínicos e nutrição hospitalar, mas devem ser ajustadas por idade, composição corporal, gravidade, evolução, sedação, alimentação oral/enteral e risco de superalimentação. Em queimaduras extensas a demanda pode ser ainda maior e variável, exigindo equipe especializada. Paciente com doença crítica prolongada, por outro lado, pode precisar foco crescente em aporte proteico e reabilitação."
+        ],
+        [
+          "3",
+          "Proteína, sarcopenia e reabilitação: mais do que apenas calorias"
+        ],
+        [
+          "p",
+          "O aporte proteico adequado torna-se central para reparo de feridas e preservação muscular, mas sua quantidade ótima é influenciada por função renal, terapia renal substitutiva, gravidade do estado catabólico, tolerância gastrointestinal e estágio de recuperação. A nutrição não anula efeitos de imobilidade e inflamação; por isso mobilização e fisioterapia precoce, quando seguras, compõem a estratégia. A tentativa de oferecer suplementos de aminoácidos ou glutamina a todos os pacientes gravemente traumatizados sem indicação específica não representa recomendação universal das diretrizes recentes."
+        ],
+        [
+          "3",
+          "Síndrome da realimentação: risco mesmo no paciente com 'trauma hipercatabólico'"
+        ],
+        [
+          "p",
+          "Paciente com desnutrição importante e vários dias de baixa ingestão pode desenvolver hipofosfatemia, hipocalemia, hipomagnesemia, retenção hidrossalina, deficiência de tiamina e alterações cardiorrespiratórias quando alimentação é retomada com agilidade. A liberação de insulina desloca eletrólitos ao interior das células e aumenta necessidades metabólicas. A identificação envolve triagem de risco, avaliação do aporte prévio, monitorização de eletrólitos e avanço gradual de energia com prevenção e tratamento conforme protocolo. Não é seguro simplesmente 'compensar os dias perdidos' com grande carga calórica abrupta."
+        ],
+        [
+          "t",
+          [
+            "Achado após realimentação",
+            "Mecanismo plausível",
+            "Ação de segurança"
+          ],
+          [
+            [
+              "Fosfato cai acentuadamente",
+              "Consumo intracelular e demanda por ATP aumentada",
+              "Monitorar/repor conforme gravidade e rever velocidade de avanço"
+            ],
+            [
+              "Potássio e magnésio caem",
+              "Deslocamento celular com resposta insulínica",
+              "Monitorização, reposição dirigida e vigilância de arritmias"
+            ],
+            [
+              "Edema e piora respiratória",
+              "Retenção de sódio/água e possível sobrecarga",
+              "Revisar fluidos, aporte e função cardíaca/renal"
+            ],
+            [
+              "Confusão, fraqueza, instabilidade",
+              "Deficiência nutricional e alterações metabólicas",
+              "Avaliação imediata e considerar tiamina conforme risco"
+            ],
+            [
+              "Hiperglicemia progressiva",
+              "Oferta/calorias acima de utilização e resistência à insulina",
+              "Reavaliar regime e glicemia, evitando correção agressiva"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Intolerância alimentar: não transformar todo resíduo gástrico em parada definitiva"
+        ],
+        [
+          "p",
+          "Vômitos, distensão progressiva, dor abdominal, aumento de necessidade de vasopressor, queda de perfusão e sinais clínicos de isquemia são mais relevantes do que volume gástrico isolado em muitos contextos. A ESPEN 2023 descreve circunstâncias específicas em que grandes resíduos ou contraindicações justificam adiar alimentação, mas a avaliação deve ser integrada. Em risco de aspiração, considerar medidas de posicionamento, via pós-pilórica ou ajustes de infusão quando apropriados. Em suspeita de isquemia intestinal, interromper a dieta e investigar com agilidade."
+        ],
+        [
+          "3",
+          "Nutrição parenteral: alternativa quando o tubo digestivo não pode ser utilizado"
+        ],
+        [
+          "p",
+          "Nutrição parenteral fornece macronutrientes e eletrólitos pela via intravenosa quando a enteral é inviável ou insuficiente por tempo relevante e risco nutricional elevado. Não é intrinsecamente melhor ou pior em qualquer situação; tem riscos próprios, como infecção de cateter, hiperglicemia, distúrbios eletrolíticos e sobrealimentação. A decisão exige equipe de terapia nutricional e balanço entre necessidade, acesso, risco infeccioso e probabilidade de recuperação gastrointestinal. Um paciente com choque ainda descontrolado não fica automaticamente pronto para meta parenteral plena."
+        ],
+        [
+          "3",
+          "Conduta integrada pela fase clínica"
+        ],
+        [
+          "o",
+          [
+            "Primeiro: corrigir agressões com risco de morte — hemorragia, obstrução de via aérea, hipóxia, infecção com fonte e distúrbios de perfusão.",
+            "Em paralelo: avaliar risco nutricional prévio e prever incapacidade de ingestão por tempo prolongado.",
+            "Após estabilidade suficiente: escolher via oral quando viável; caso contrário considerar via enteral com vigilância e respeitar contraindicações.",
+            "Prescrever aumento progressivo de energia e proteína com monitorização metabólica; prevenir síndrome de realimentação nos suscetíveis.",
+            "Combinar com controle de dor, mobilização, sono e reabilitação funcional.",
+            "Reavaliar diariamente metas, oferta real, complicações, composição corporal e plano de alta."
+          ]
+        ],
+        [
+          "3",
+          "BRASPEN 2023: aplicação brasileira das recomendações no trauma"
+        ],
+        [
+          "p",
+          "A Diretriz BRASPEN de Terapia Nutricional no Paciente Grave (2023), na seção específica de trauma, recomenda privilegiar a <strong>nutrição enteral sobre a parenteral</strong> e iniciá-la nas <strong>primeiras 24 a 48 horas após a admissão, tão logo se alcance estabilidade hemodinâmica</strong> (evidência moderada). Isso harmoniza o princípio de intervenção precoce com a contraindicação de alimentação enteral em choque não controlado. O cuidado precisa levar em conta viabilidade gastrointestinal, sinais de intolerância e risco nutricional. A fase de recuperação pode exigir reajustes crescentes de energia e proteína, mas a prescrição exata é individualizada e não deve copiar meta máxima como se fosse mínimo para todos."
+        ],
+        [
+          "p",
+          "A BRASPEN 2023 também diferencia suplementos potencialmente úteis em determinados subgrupos de trauma das recomendações gerais de UTI. Não há justificativa para prescrever <strong>glutamina suplementar a todo paciente crítico</strong> indiscriminadamente; a diretriz desaconselha seu uso enteral rotineiro em críticos, enquanto menciona potencial benefício em subgrupos selecionados de trauma com evidência de menor certeza. Essa nuance deve ser explicitada em provas e na prática, evitando a crença antiga de que grande dose de glutamina é obrigatória em toda queimadura ou TCE."
+        ]
+      ]
+    ],
+    [
+      "situacoes",
+      0,
+      [
+        [
+          "2",
+          "10. Populações especiais e padrões metabólicos que modificam conduta"
+        ],
+        [
+          "3",
+          "Idosos, fragilidade e polifarmácia"
+        ],
+        [
+          "p",
+          "Envelhecimento costuma reduzir reserva muscular, capacidade cardiorrespiratória e respostas à fome/sede. Um idoso com fratura pélvica pode apresentar hipotensão menos evidente ou taquicardia limitada por betabloqueador e perder autonomia com poucos dias de imobilização. Delirium, desidratação e dificuldades de mastigação/deglutição impactam nutrição. A abordagem deve considerar metas funcionais e cuidado compartilhado com geriatria, fisioterapia e nutrição, evitando interpretações por números de adulto jovem."
+        ],
+        [
+          "3",
+          "Diabetes e obesidade"
+        ],
+        [
+          "p",
+          "Trauma pode elevar glicemia tanto em diabéticos quanto em não diabéticos. HbA1c, quando confiável, ajuda distinguir doença crônica; insulina pode ser necessária com monitorização, mas metas excessivamente estritas aumentam hipoglicemia. Obesidade não elimina risco de sarcopenia ou deficiência de micronutrientes. Equações calóricas baseadas em peso atual podem superestimar gasto energético em alguns obesos; equipe nutricional deve individualizar estratégias, sobretudo durante ventilação e reabilitação."
+        ],
+        [
+          "3",
+          "Desnutrição prévia e insegurança alimentar"
+        ],
+        [
+          "p",
+          "Paciente com baixa ingestão anterior, perda ponderal acentuada, neoplasia ou uso crônico de álcool tem risco aumentado de complicações, deficiência de tiamina e síndrome de realimentação. A pergunta 'comeu hoje?' é insuficiente: investigar semanas e meses anteriores, capacidade funcional e contexto social. Na alta, insegurança alimentar pode inviabilizar plano proteico complexo; assistência social e APS integram o cuidado."
+        ],
+        [
+          "3",
+          "Crianças e adolescentes"
+        ],
+        [
+          "p",
+          "Na pediatria, crescimento modifica necessidades de nutrientes e fisiologia da resposta ao trauma. Reservas e superfície corporal relativa diferem do adulto e aumentam vulnerabilidade à perda térmica. Não extrapolar automaticamente cálculo calórico/proteico, limiares de choque, estratégias de sedação ou interpretação de glicemia de diretriz para adultos. Equipes pediátricas usam protocolos próprios, especialmente em queimaduras e traumatismo cranioencefálico."
+        ],
+        [
+          "3",
+          "Gestação e puerpério"
+        ],
+        [
+          "p",
+          "A gestação envolve expansão plasmática, resistência insulínica fisiológica progressiva, mudanças respiratórias e necessidades materno-fetais. Trauma materno exige priorizar estabilização da gestante e considerar avaliação fetal/obstétrica segundo idade gestacional e gravidade. Hemoglobina e pressão podem ser interpretadas diferentemente em relação ao adulto não gestante; albumina baixa pode refletir hemodiluição. Planos nutricionais precisam respeitar exigências gestacionais e segurança fetal, sem automatizar restrições de adulto."
+        ],
+        [
+          "3",
+          "Queimaduras extensas e lesão por inalação"
+        ],
+        [
+          "p",
+          "Grandes queimaduras combinam evaporação, perda de barreira, inflamação sustentada, catecolaminas e demanda de reparo, podendo causar hipermetabolismo prolongado. Área queimada, profundidade, idade e complicações determinam magnitude da resposta, mas não se deve prescrever energia apenas por uma 'fórmula do trauma' universal. Queimaduras precisam de controle térmico, reanimação volêmica apropriada, manejo de feridas, analgesia, cirurgia e nutrição em equipe especializada. Não confundir fórmula de reposição de líquidos com cálculo energético."
+        ],
+        [
+          "3",
+          "Traumatismo cranioencefálico grave"
+        ],
+        [
+          "p",
+          "Hipotensão, hipóxia, febre, distúrbios de glicose e desequilíbrios eletrolíticos aumentam risco de lesão neurológica secundária. Há também imobilidade e catabolismo, frequentemente com ventilação prolongada. O plano nutricional deve buscar aporte seguro após estabilização, com atenção a íleo, aspiração e necessidade de exames/procedimentos. Alterações endócrinas de doença crítica não autorizam reposição indiscriminada de hormônio do crescimento ou T3."
+        ],
+        [
+          "3",
+          "Sepse secundária ao trauma"
+        ],
+        [
+          "p",
+          "Uma pessoa pode começar com resposta inflamatória estéril e desenvolver infecção dias depois. A nova deterioração exige investigação de feridas, dispositivos invasivos, pulmão, cavidade abdominal, trato urinário e outros focos prováveis; culturas e imagem devem responder a perguntas clínicas. Controle de fonte, antibióticos adequados quando indicados, suporte de perfusão e proteção metabólica são ações complementares. A febre sozinha não define sepse, e a ausência de febre não a exclui."
+        ]
+      ]
+    ],
+    [
+      "algoritmo",
+      0,
+      [
+        [
+          "2",
+          "11. Algoritmo integrado e prognóstico: reconhecer a mudança de fase"
+        ],
+        [
+          "3",
+          "Algoritmo de tomada de decisão à beira do leito"
+        ],
+        [
+          "t",
+          [
+            "Situação atual",
+            "Prioridade imediata",
+            "Próxima pergunta"
+          ],
+          [
+            [
+              "Choque hemorrágico ainda não controlado",
+              "Hemostasia e ressuscitação apropriada",
+              "Perfusão e coagulação melhoram na reavaliação?"
+            ],
+            [
+              "Trauma estabilizado com hiperglicemia",
+              "Monitorar e manejar glicose por protocolo seguro",
+              "Há diabetes, drogas, nutrição excessiva ou infecção?"
+            ],
+            [
+              "Trauma estabilizado sem ingestão oral adequada",
+              "Avaliação nutricional e via enteral quando segura",
+              "Há contraindicação intestinal ou risco de realimentação?"
+            ],
+            [
+              "Paciente edemaciado com oligúria",
+              "Avaliar perfusão, rim, balanço e resposta a fluidos",
+              "Há sobrecarga, hipoperfusão ou lesão renal?"
+            ],
+            [
+              "PCR alta isolada no pós-trauma",
+              "Avaliar evolução e contexto de inflamação",
+              "Há novo foco, febre persistente ou disfunção?"
+            ],
+            [
+              "Fraqueza importante após dias de UTI",
+              "Reabilitação com plano de nutrição e controle de causas",
+              "Quanto músculo e função foram perdidos?"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Reavaliar após cada intervenção — uma espiral de cuidado"
+        ],
+        [
+          "p",
+          "O raciocínio clínico deve ser iterativo: uma alteração de lactato leva à hipótese de hipoperfusão, que exige busca de causa e intervenção apropriada; depois a série de marcadores e o exame confirmam ou desafiam o resultado. A queda de lactato com diurese melhorando é tranquilizadora, mas piora de dor abdominal, febre e necessidade de vasopressor dias depois obriga reiniciar investigação. Não ancorar em 'fase flow' para deixar passar infecção, isquemia ou sangramento tardios."
+        ],
+        [
+          "3",
+          "Quando a resposta de estresse vira síndrome de doença crítica prolongada"
+        ],
+        [
+          "p",
+          "Persistência de inflamação, imunossupressão e catabolismo pode acompanhar internações prolongadas, infecções recorrentes, cicatrização difícil e grande perda muscular. O objetivo terapêutico é interromper estímulos reversíveis, minimizar sedação e imobilidade, entregar nutrição compatível com tolerância, prevenir novas infecções e preparar reabilitação. Não existe um único exame de sangue que diagnostique a totalidade dessa síndrome. Prognóstico depende de gravidade da lesão inicial, reserva funcional, complicações e acesso à reabilitação."
+        ],
+        [
+          "3",
+          "Alta hospitalar: sobreviver não equivale a recuperar-se"
+        ],
+        [
+          "p",
+          "Na alta, planejar continuidade da alimentação, avaliação de feridas, controle glicêmico temporário ou diagnóstico de diabetes quando pertinente, retorno para função renal e acompanhamento muscular/funcional. Em fraturas e grandes cirurgias, considerar fisioterapia, terapia ocupacional, suporte nutricional e ajuda social. Pacientes e cuidadores precisam conhecer sinais de complicações: febre persistente, piora de ferida, falta de ar, dor desproporcional, vômitos persistentes, perda importante de apetite e redução de diurese."
+        ],
+        [
+          "3",
+          "Síntese que evita confusões em questões de residência"
+        ],
+        [
+          "p",
+          "Ebb e flow são modelos fisiológicos, não intervalos cronometrados; cortisol alto não implica corticoide universal; hiperglicemia pode ser estresse ou diabetes; lactato não é exclusivamente anaeróbio; albumina baixa no trauma não prova desnutrição isoladamente; nutrição precoce é desejável após avaliação da segurança, mas choque não controlado contraindica avanço enteral; muito edema não significa boa volemia; e cálcio ionizado é relevante durante grande transfusão. Resolver a questão exige relacionar mecanismo e contexto temporal, não apenas lembrar uma palavra-chave."
+        ]
+      ]
+    ],
+    [
+      "casos",
+      0,
+      [
+        [
+          "2",
+          "12. Casos clínicos integradores: mecanismos e decisões"
+        ],
+        [
+          "3",
+          "Caso 1 — Pressão aceitável, mas dívida de oxigênio após trauma pélvico"
+        ],
+        [
+          "p",
+          "Adulto de 28 anos, atropelado, fratura pélvica instável, pele fria, enchimento capilar lento, frequência cardíaca 126/min, pressão 105/70 mmHg, Hb inicial 13 g/dL e lactato 5,4 mmol/L. <strong>Hipóteses:</strong> choque hemorrágico compensado, hipoperfusão apesar de pressão sistólica relativamente preservada. <strong>Mecanismo:</strong> catecolaminas e vasoconstrição mantêm pressão arterial enquanto a entrega de oxigênio cai; hemoglobina imediatamente após hemorragia pode não ter refletido ainda perda e hemodiluição. <strong>Exames:</strong> hemograma seriado, gasometria, lactato/base deficit, fibrinogênio/coagulação e avaliação de hemorragia conforme protocolo do trauma. <strong>Interpretação:</strong> lactato elevado é compatível com dívida de oxigênio, mas não localiza fonte sozinho. <strong>Conduta:</strong> controle urgente da fonte hemorrágica e ressuscitação hemostática pela equipe de trauma, aquecimento, reavaliação de perfusão; não tratar apenas o lactato com grande cristaloide. <strong>Por que importa:</strong> PA e Hb iniciais não excluem choque, e a resposta metabólica pode avisar antes de hipotensão grave."
+        ],
+        [
+          "3",
+          "Caso 2 — Albumina baixa dois dias após cirurgia não prova desnutrição"
+        ],
+        [
+          "p",
+          "Mulher de 54 anos após laparotomia por perfuração de víscera, em recuperação hemodinâmica, PCR 170 mg/L, albumina 2,3 g/dL, edema periférico, ingesta limitada desde o procedimento e sem relato de perda ponderal prévia. <strong>Hipóteses:</strong> inflamação importante, extravasamento capilar e hemodiluição; risco nutricional a avaliar, não diagnóstico de desnutrição baseado apenas na albumina. <strong>Mecanismo:</strong> resposta de fase aguda prioriza outras proteínas hepáticas, altera permeabilidade e distribuição de albumina. <strong>Exames:</strong> tendência clínica, balanço hídrico, função renal, ingestão real, anamnese nutricional e rastreio de complicações. <strong>Conduta:</strong> investigar perda de peso/ingestão prévia, planejar nutrição segura, reavaliar foco infeccioso e perfusão se deterioração; não corrigir número de albumina como meta isolada. <strong>Por que importa:</strong> marcadores inflamatórios e nutricionais não são intercambiáveis."
+        ],
+        [
+          "3",
+          "Caso 3 — Choque ainda ativo: a dieta enteral precoce tem limites"
+        ],
+        [
+          "p",
+          "Homem de 42 anos com trauma abdominal, hemorragia controlada parcialmente, pressão dependente de doses crescentes de vasopressor, lactato em elevação e distensão abdominal progressiva. A prescrição de dieta enteral plena foi sugerida por estar nas primeiras 24 horas de UTI. <strong>Hipóteses:</strong> perfusão esplâncnica insuficiente, risco de isquemia intestinal, intolerância alimentar. <strong>Mecanismo:</strong> choque e vasoconstrição reduzem fluxo intestinal, enquanto aporte luminal aumenta demanda metabólica local. <strong>Exames:</strong> perfusão clínica, lactato seriado, avaliação abdominal e investigação de lesão/isquemia conforme gravidade. <strong>Conduta:</strong> não avançar dieta durante choque não controlado; estabilizar circulação e avaliar possibilidade de enteral trófica após controle com vigilância, conforme ESPEN 2023. <strong>Por que importa:</strong> 'nutrição precoce' é recomendação condicionada à segurança fisiológica."
+        ],
+        [
+          "3",
+          "Caso 4 — Realimentação de paciente desnutrido após semanas de baixa ingestão"
+        ],
+        [
+          "p",
+          "Homem de 66 anos com alcoolismo, perda de 15% do peso em meses e fratura de fêmur; permaneceu com ingestão muito baixa antes do atendimento e recebe fórmula concentrada com agilidade. Nas 48 horas seguintes desenvolve fraqueza, edema e fósforo muito reduzido, com potássio e magnésio em queda. <strong>Hipótese:</strong> síndrome da realimentação. <strong>Mecanismo:</strong> aumento de insulina e utilização de substratos desloca fósforo, K e Mg para o meio intracelular, com risco de arritmia, fraqueza respiratória e disfunção orgânica. <strong>Exames:</strong> fósforo, magnésio, potássio, glicose, função renal e estado de hidratação seriados. <strong>Conduta:</strong> reavaliar velocidade de avanço nutricional, repor eletrólitos e considerar tiamina conforme protocolo e equipe de nutrição. <strong>Por que importa:</strong> grande oferta calórica imediata pode ser nociva mesmo quando existe desnutrição."
+        ],
+        [
+          "3",
+          "Caso 5 — Queimadura extensa e catabolismo persistente"
+        ],
+        [
+          "p",
+          "Paciente de 34 anos, queimaduras profundas em grande superfície corporal, após estabilização inicial encontra-se febril, com gasto energético estimado elevado, feridas extensas e perda de força após semanas de internação. <strong>Hipótese:</strong> hipermetabolismo e catabolismo persistentes por perda de barreira, inflamação, dor e necessidade de reparação. <strong>Mecanismo:</strong> catecolaminas, cortisol, citocinas, evaporação e cicatrização mantêm consumo energético e proteólise. <strong>Avaliação:</strong> área/profundidade, temperatura, feridas, infecção, ingestão, função renal e estimativa de gasto energético com método apropriado. <strong>Conduta:</strong> controle de feridas, ambiente térmico, analgesia, suporte nutricional individualizado, mobilização e vigilância de complicações. <strong>Por que importa:</strong> fórmulas de reposição volêmica não calculam necessidade calórico-proteica nem substituem equipe especializada."
+        ],
+        [
+          "3",
+          "Caso 6 — PCR volta a subir no quarto dia: não chamar de flow sem investigar"
+        ],
+        [
+          "p",
+          "Mulher de 39 anos, operada após trauma intestinal, evolui com melhora de FC e lactato no pós-operatório. No quarto dia apresenta nova febre, taquicardia, dor abdominal crescente, PCR em ascensão e débito de dreno turvo. <strong>Hipóteses:</strong> infecção intra-abdominal, falha de anastomose ou outra complicação, acima de inflamação estéril habitual. <strong>Mecanismo:</strong> novo estímulo infeccioso pode ampliar citocinas, resistência insulínica e disfunção circulatória. <strong>Exames:</strong> reexame abdominal e da ferida, hemograma, lactato, culturas/TC conforme estabilidade e hipótese cirúrgica. <strong>Conduta:</strong> avaliação cirúrgica urgente, investigação de foco, tratamento específico e suporte conforme gravidade; não prescrever antibiótico apenas pela PCR sem examinar a pessoa. <strong>Por que importa:</strong> a trajetória temporal distingue adaptação de deterioração."
+        ],
+        [
+          "3",
+          "Caso 7 — Lesão muscular maciça e lesão renal: nem toda hipercalemia é só aldosterona"
+        ],
+        [
+          "p",
+          "Homem de 24 anos ficou preso sob escombros, com esmagamento de membro inferior, dor e edema importantes. Após resgate apresenta urina escura, CK muito elevada, potássio aumentado e creatinina em elevação. <strong>Hipóteses:</strong> rabdomiólise traumática e lesão renal aguda, com risco de arritmia por hipercalemia. <strong>Mecanismo:</strong> necrose muscular libera potássio, mioglobina e fosfato; hipoperfusão e pigmentos podem comprometer rim. <strong>Exames:</strong> ECG, K, cálcio, fósforo, CK seriada, creatinina, gasometria e monitorização urinária. <strong>Conduta:</strong> intervenção urgente para hipercalemia quando indicada, avaliação de síndrome compartimental, perfusão e suporte renal em protocolo específico. <strong>Por que importa:</strong> a resposta metabólica pode refletir destruição celular diretamente, e não só hormônios do estresse."
+        ],
+        [
+          "3",
+          "Caso 8 — Recuperação cardiovascular, mas perda funcional após UTI"
+        ],
+        [
+          "p",
+          "Mulher de 72 anos após politrauma e duas semanas de ventilação mecânica, hemodinamicamente estável, mas incapaz de levantar sem ajuda, com baixa ingestão, perda muscular perceptível e edema periférico residual. <strong>Hipóteses:</strong> fraqueza adquirida em UTI, proteólise inflamatória e imobilidade, possível risco nutricional. <strong>Mecanismo:</strong> catabolismo, alterações de vias anabólicas, sedação e inatividade reduzem massa/força muscular. <strong>Exames/avaliação:</strong> força, função, alimentação, dor, delirium, distúrbios eletrolíticos e necessidades de reabilitação. <strong>Conduta:</strong> planejamento de nutrição compatível com necessidades e tolerância, fisioterapia/mobilização progressiva, prevenção de complicações e transição de cuidados. <strong>Por que importa:</strong> normalizar PA, lactato e glicose não significa restaurar capacidade funcional."
+        ]
+      ]
+    ],
+    [
+      "questoes",
+      0,
+      [
+        [
+          "2",
+          "13. Questões autorais de alto rendimento — comentários completos"
+        ],
+        [
+          "o",
+          [
+            "<strong>Q1.</strong> Em paciente politraumatizado que mantém hipotensão e hipoperfusão, qual fase clássica explica melhor a prioridade? A) Flow anabólica que exige dieta plena imediata; B) Ebb associada a ameaça circulatória e necessidade de hemostasia; C) Recuperação sem necessidade de reavaliação; D) Eutireoidiano doente isolado. <strong>Gabarito B.</strong> A confunde catabolismo com alimentação segura; C ignora risco vital; D não explica choque. Revisão: ebb é modelo de instabilidade e não tem duração fixa.",
+            "<strong>Q2.</strong> Qual mecanismo contribui diretamente para hiperglicemia pós-trauma? A) Supressão universal de cortisol; B) Aumento de captação muscular por insulina sem produção hepática; C) Catecolaminas, cortisol, glucagon e resistência periférica à insulina; D) Desligamento da gliconeogênese. <strong>Gabarito C.</strong> A e D contrariam resposta ao estresse; B descreve efeito contrário. Revisão: hiperglicemia de estresse resulta de produção aumentada e uso periférico comprometido.",
+            "<strong>Q3.</strong> Qual marcador isolado NÃO deve ser usado como diagnóstico de desnutrição em trauma recente? A) História de perda ponderal prolongada; B) Baixa ingestão prévia persistente; C) Avaliação funcional e física; D) Albumina sérica baixa com PCR alta. <strong>Gabarito D.</strong> A, B e C compõem avaliação nutricional; D sofre efeitos de fase aguda, permeabilidade e hemodiluição. Revisão: albumina tem valor prognóstico, não diagnóstico nutricional exclusivo.",
+            "<strong>Q4.</strong> Após trauma hemorrágico, a pressão arterial melhora, mas o lactato permanece alto. Qual afirmação é correta? A) Obrigatoriamente existe sangramento ativo; B) Lactato é exclusivamente produzido sem oxigênio; C) Deve-se investigar perfusão, catecolaminas, depuração e tendência seriada; D) Oferecer sempre grande volume de cristaloide até zerar lactato. <strong>Gabarito C.</strong> A e B simplificam etiologia; D pode agravar edema e coagulopatia. Revisão: lactato é marcador de risco e metabolismo, não teste único de sangramento.",
+            "<strong>Q5.</strong> Na fase crítica, qual estratégia nutricional é mais segura em paciente ainda com choque não controlado? A) Nutrição enteral plena imediatamente para todo paciente; B) Adiar avanço enteral e estabilizar perfusão, reavaliando dieta após controle; C) Glutamina parenteral em dose máxima preconizada para todos; D) Dieta oral independentemente de consciência. <strong>Gabarito B.</strong> A ignora risco intestinal; C não é recomendação universal; D desconsidera aspiração. Revisão: ESPEN 2023 recomenda adiar EN no choque não controlado.",
+            "<strong>Q6.</strong> Após início muito rápido de dieta em paciente gravemente desnutrido, surgem hipofosfatemia, hipocalemia e edema. Diagnóstico provável? A) Síndrome de realimentação; B) Ebb obrigatória; C) Hipertireoidismo primário; D) Síndrome nefrótica automaticamente. <strong>Gabarito A.</strong> B não explica alterações temporais com dieta; C/D não são inferidos desses achados. Revisão: resposta insulínica consome/redistribui eletrólitos após realimentação.",
+            "<strong>Q7.</strong> Uma criança que sofreu trauma extenso apresenta elevação de PCR e febre discreta nas primeiras horas, sem foco infeccioso. Qual afirmação é correta? A) Existe sepse bacteriana confirmada; B) Toda PCR alta indica antibiótico; C) DAMPs podem gerar inflamação estéril e a interpretação exige evolução e exame; D) O trauma não altera citocinas. <strong>Gabarito C.</strong> A/B confundem inflamação com infecção; D nega ativação imune. Revisão: resposta inata pode ser desencadeada sem patógeno.",
+            "<strong>Q8.</strong> Qual alteração merece vigilância em transfusão maciça por trauma? A) Aumento obrigatório de cálcio ionizado; B) Hipocalcemia ionizada pelo citrato e impacto na coagulação/contratilidade; C) Ausência de interação com hemostasia; D) Excluir dosagem de cálcio ionizado em todo caso. <strong>Gabarito B.</strong> A/C/D contradizem fisiologia e recomendações de monitorização. Revisão: ionização de cálcio interfere em hemostasia e função cardíaca.",
+            "<strong>Q9.</strong> O que melhor caracteriza a fase flow clássica? A) Necessariamente anabolismo muscular imediato; B) Resposta hipercatabólica e maior consumo energético, variável conforme paciente; C) Cessação da atividade inflamatória; D) Duração fixa de 24 horas. <strong>Gabarito B.</strong> A e C erram a fisiologia; D transforma modelo histórico em relógio. Revisão: flow frequentemente mantém resistência à insulina e proteólise.",
+            "<strong>Q10.</strong> Em paciente com grande edema e oligúria após trauma, qual abordagem é apropriada? A) Repetir bolus porque oligúria sempre significa hipovolemia; B) Proibir avaliação renal; C) Avaliar perfusão, balanço, lesão renal e possível sobrecarga antes de novas infusões; D) Usar albumina baixa como único guia de fluido. <strong>Gabarito C.</strong> A ignora riscos de edema; B abandona investigação; D confunde inflamação e volume intravascular. Revisão: oligúria tem múltiplos mecanismos.",
+            "<strong>Q11.</strong> No trauma com esmagamento, CK elevada, hipercalemia e urina escura sugerem: A) Rabdomiólise e risco renal/cardiológico; B) Apenas resposta do ADH; C) Reabsorção de cálcio sem dano muscular; D) Falta de fósforo por realimentação. <strong>Gabarito A.</strong> B/C/D não explicam necrose muscular e pigmentúria. Revisão: potássio de células musculares pode elevar-se e ameaçar a vida.",
+            "<strong>Q12.</strong> O que a equação DO₂ = débito cardíaco × CaO₂ ensina? A) Saturação normal sempre garante oferta adequada; B) Hemoglobina e débito não importam; C) Conteúdo arterial e fluxo sanguíneo determinam oferta de O₂, que pode cair apesar de SpO₂ normal; D) Oxigênio dissolvido é sempre a principal parcela do CaO₂. <strong>Gabarito C.</strong> A/B ignoram anemia e fluxo; D exagera a parcela dissolvida. Revisão: oxigenação arterial não é sinônimo de perfusão.",
+            "<strong>Q13.</strong> Qual afirmação sobre nutrição cirúrgica conforme ESPEN 2025 é mais segura? A) Sempre manter jejum por sete dias após trauma; B) Oferecer alimentação oral quando possível e enteral precoce em elegíveis, respeitando contraindicações fisiológicas; C) Iniciar parenteral plena em qualquer choque; D) Calcular calorias apenas pela fórmula de ressuscitação de queimaduras. <strong>Gabarito B.</strong> A promove subalimentação, C ignora estabilidade e risco de sobrealimentação, D mistura volume e energia. Revisão: precocidade é modulada por segurança e avaliação nutricional.",
+            "<strong>Q14.</strong> No paciente após grande trauma, qual situação exige investigar nova causa em vez de atribuir a inflamação normal? A) PCR inicialmente elevada que cai com melhora clínica; B) Leve dor esperada e estável; C) Taquicardia nova, dor abdominal progressiva, febre e lactato voltando a subir após melhora inicial; D) Paciente sem sintomas e com recuperação da marcha. <strong>Gabarito C.</strong> A e B podem ser resposta normal; D é evolução favorável. Revisão: mudança da trajetória tem valor diagnóstico.",
+            "<strong>Q15.</strong> O que mais diferencia recuperação metabólica completa de estabilização inicial? A) Normalização única da pressão arterial; B) A ausência de qualquer PCR; C) Recuperação de ingestão, função muscular, mobilidade e controle de complicações, além da estabilidade orgânica; D) Balanço hídrico positivo persistente como meta. <strong>Gabarito C.</strong> A é necessária mas insuficiente; B não é indicador obrigatório; D pode significar sobrecarga. Revisão: desfecho funcional importa após sobreviver ao trauma."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9977110/\" target=\"_blank\" rel=\"noopener noreferrer\">Rossaint R et al. The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. Critical Care. 2023;27:80. doi:10.1186/s13054-023-04327-7.</a>",
+            "<a href=\"https://www.clinicalnutritionjournal.com/article/S0261-5614%2823%2900230-3/fulltext\" target=\"_blank\" rel=\"noopener noreferrer\">ESPEN. Practical and partially revised guideline: Clinical nutrition in the intensive care unit. Clinical Nutrition, 2023.</a>",
+            "<a href=\"https://www.clinicalnutritionjournal.com/article/S0261-5614%2825%2900243-2/fulltext\" target=\"_blank\" rel=\"noopener noreferrer\">Weimann A et al. ESPEN guideline on clinical nutrition in surgery – Update 2025. Clinical Nutrition. 2025;53:222–261. doi:10.1016/j.clnu.2025.08.029.</a>",
+            "<a href=\"https://pubmed.ncbi.nlm.nih.gov/40957230/\" target=\"_blank\" rel=\"noopener noreferrer\">PubMed. ESPEN guideline on clinical nutrition in surgery – Update 2025. Metadados do artigo e resumo indexado.</a>",
+            "<a href=\"https://www.espen.org/guidelines-home/espen-guidelines\" target=\"_blank\" rel=\"noopener noreferrer\">ESPEN Guidelines &amp; Consensus Papers. Repositório institucional.</a>",
+            "<a href=\"https://www.braspenjournal.org/article/doi/10.37111/braspenj.diretrizDOENTEGRAVE\" target=\"_blank\" rel=\"noopener noreferrer\">Castro MG et al. Diretriz BRASPEN de Terapia Nutricional no Paciente Grave. BRASPEN J. 2023;38(2 Supl 2):2–46. DOI:10.37111/braspenj.diretrizDOENTEGRAVE. Inclui recomendações específicas para trauma.</a>"
+          ]
+        ]
+      ]
+    ]
+  ]
+}

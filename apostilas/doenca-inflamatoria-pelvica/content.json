@@ -2,8 +2,8 @@
   "v": 2,
   "s": "doenca-inflamatoria-pelvica",
   "t": "Doença Inflamatória Pélvica (DIP) e Cervicites",
-  "p": "Doença Inflamatória Pélvica (DIP) e Cervicites — Livro-Texto LURIA",
-  "d": "Critérios de Hager Modificados (CDC/MS 2026) · Classificação e Estadiamento de Monif I-IV · Síndrome de Fitz-Hugh-Curtis e Abscesso Tubo-Ovariano · Protocolos Ambulatoriais e Hospitalares",
+  "p": "Critérios de Hager Modificados (CDC/MS 2026) · Classificação e Estadiamento de Monif I-IV · Síndrome de Fitz-Hugh-Curtis e Abscesso Tubo-Ovariano · Protocolos Ambulatoriais e Hospitalares Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Critérios de Hager Modificados (CDC/MS 2026) · Classificação e Estadiamento de Monif I-IV · Síndrome de Fitz-Hugh-Curtis e Abscesso Tubo-Ovariano · Protocolos Ambulatoriais e Hospitalares Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Ginecologia e Obstetrícia",
   "m": "Ginecologia Infecciosa e Emergências Ginecológicas",
   "h": [
@@ -158,9 +158,13 @@
             "Teste cervical negativo para clamídia/gonococo não exclui infecção do trato superior.",
             "Brasil: o PCDT organiza o diagnóstico por 3 critérios maiores + 1 menor, ou 1 elaborado.",
             "CDC: usa limiar terapêutico mais sensível — dor pélvica compatível + pelo menos um entre dor à mobilização cervical, uterina ou anexial, sem causa alternativa melhor.",
-            "Esquema ambulatorial central: ceftriaxona + doxiciclina + metronidazol, com doxiciclina e metronidazol por 14 dias.",
+            "Esquema ambulatorial central: Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) + Doxiciclina (100 mg VO a cada 12 horas) + Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase), com Doxiciclina (100 mg VO a cada 12 horas) e Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) por 14 dias.",
             "Gestação, abscesso tubo-ovariano, gravidade, intolerância oral ou emergência cirúrgica possível indicam avaliação hospitalar."
           ]
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Ginecologia e Obstetrícia, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ]
       ]
     ],
@@ -218,7 +222,7 @@
         ],
         [
           "p",
-          "Cervicite e DIP não usam o mesmo esquema. Na DIP ambulatorial: ceftriaxona + doxiciclina + metronidazol."
+          "Cervicite e DIP não usam o mesmo esquema. Na DIP ambulatorial: Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) + Doxiciclina (100 mg VO a cada 12 horas) + Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase)."
         ],
         [
           "p",
@@ -280,7 +284,7 @@
         ],
         [
           "p",
-          "O agente não possui parede celular, portanto penicilinas e cefalosporinas são ineficazes. Outro problema é a seleção rápida de resistência a macrolídeos: azitromicina 1 g isolada pode selecionar resistência e não deve ser usada como tratamento específico. Quando há disponibilidade, estratégias guiadas por teste de resistência são preferíveis."
+          "O agente não possui parede celular, portanto penicilinas e cefalosporinas são ineficazes. Outro problema é a seleção rápida de resistência a macrolídeos: Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g isolada pode selecionar resistência e não deve ser usada como tratamento específico. Quando há disponibilidade, estratégias guiadas por teste de resistência são preferíveis."
         ],
         [
           "3",
@@ -526,7 +530,7 @@
         ],
         [
           "p",
-          "A estratégia depende do risco, disponibilidade de testes e garantia de retorno. No PCDT brasileiro, a abordagem sindrômica de cervicite com cobertura para gonococo/clamídia utiliza <strong>ceftriaxona 500 mg IM dose única + azitromicina 1 g VO dose única</strong>. No CDC, o esquema recomendado para cervicite é <strong>doxiciclina 100 mg VO 12/12 h por 7 dias</strong>, acrescentando cobertura para gonococo quando indicada."
+          "A estratégia depende do risco, disponibilidade de testes e garantia de retorno. No PCDT brasileiro, a abordagem sindrômica de cervicite com cobertura para gonococo/clamídia utiliza <strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) 500 mg IM dose única + Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g VO dose única</strong>. No CDC, o esquema recomendado para cervicite é <strong>Doxiciclina (100 mg VO a cada 12 horas) 100 mg VO 12/12 h por 7 dias</strong>, acrescentando cobertura para gonococo quando indicada."
         ],
         [
           "t",
@@ -538,22 +542,22 @@
           [
             [
               "Abordagem brasileira gonococo/clamídia",
-              "Ceftriaxona 500 mg IM DU + azitromicina 1 g VO DU",
+              "Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) 500 mg IM DU + Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g VO DU",
               "PCDT brasileiro"
             ],
             [
               "Cervicite – CDC",
-              "Doxiciclina 100 mg VO 12/12 h por 7 dias",
+              "Doxiciclina (100 mg VO a cada 12 horas) 100 mg VO 12/12 h por 7 dias",
               "Cobrir gonococo se risco/indicação"
             ],
             [
               "Gonorreia não complicada – CDC",
-              "Ceftriaxona 500 mg IM DU (&lt;150 kg); 1 g se ≥150 kg",
+              "Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) 500 mg IM DU (&lt;150 kg); 1 g se ≥150 kg",
               "Tratar clamídia se não excluída"
             ],
             [
               "Clamídia na gestação",
-              "Azitromicina 1 g VO DU",
+              "Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g VO DU",
               "Teste de cura e seguimento"
             ]
           ],
@@ -725,17 +729,17 @@
           ],
           [
             [
-              "Ceftriaxona",
+              "Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana)",
               "500 mg IM",
               "Dose única"
             ],
             [
-              "Doxiciclina",
+              "Doxiciclina (100 mg VO a cada 12 horas)",
               "100 mg VO 12/12 h",
               "14 dias"
             ],
             [
-              "Metronidazol",
+              "Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase)",
               "500 mg VO 12/12 h",
               "14 dias"
             ]
@@ -744,7 +748,7 @@
         ],
         [
           "p",
-          "Brasil e CDC convergem nesse núcleo terapêutico. O metronidazol amplia cobertura anaeróbia e trata vaginose coexistente; não deve ser apresentado como componente “opcional de rotina” na DIP."
+          "Brasil e CDC convergem nesse núcleo terapêutico. O Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) amplia cobertura anaeróbia e trata vaginose coexistente; não deve ser apresentado como componente “opcional de rotina” na DIP."
         ],
         [
           "3",
@@ -767,7 +771,7 @@
         ],
         [
           "p",
-          "O CDC apresenta ceftriaxona 1 g IV 24/24 h + doxiciclina 100 mg 12/12 h + metronidazol 500 mg 12/12 h. O PCDT brasileiro disponibilizado traz tabela própria; na internação, seguir protocolo institucional e não misturar doses de diretrizes diferentes."
+          "O CDC apresenta ceftriaxona 1 g IV 24/24 h + Doxiciclina (100 mg VO a cada 12 horas) 100 mg 12/12 h + Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) 500 mg 12/12 h. O PCDT brasileiro disponibilizado traz tabela própria; na internação, seguir protocolo institucional e não misturar doses de diretrizes diferentes."
         ],
         [
           "p",
@@ -891,7 +895,7 @@
         ],
         [
           "p",
-          "<strong>Como conduzir:</strong> gestante com suspeita de DIP deve ser <strong>hospitalizada</strong>, submetida a avaliação obstétrica/ginecológica e tratada com antimicrobianos IV apropriados em conjunto com equipe especializada. O objetivo é controlar a infecção, excluir emergências obstétricas e evitar um esquema ambulatorial improvisado baseado simplesmente em “trocar a doxiciclina”."
+          "<strong>Como conduzir:</strong> gestante com suspeita de DIP deve ser <strong>hospitalizada</strong>, submetida a avaliação obstétrica/ginecológica e tratada com antimicrobianos IV apropriados em conjunto com equipe especializada. O objetivo é controlar a infecção, excluir emergências obstétricas e evitar um esquema ambulatorial improvisado baseado simplesmente em “trocar a Doxiciclina (100 mg VO a cada 12 horas)”."
         ],
         [
           "p",
@@ -979,19 +983,19 @@
         ],
         [
           "p",
-          "<strong>Por que muda?</strong> “Alergia à penicilina” é frequentemente registrada sem caracterização e pode levar à retirada desnecessária da ceftriaxona, justamente um dos principais componentes contra gonococo. A reatividade cruzada com cefalosporinas de terceira geração, como ceftriaxona, é muito baixa."
+          "<strong>Por que muda?</strong> “Alergia à penicilina” é frequentemente registrada sem caracterização e pode levar à retirada desnecessária da Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana), justamente um dos principais componentes contra gonococo. A reatividade cruzada com cefalosporinas de terceira geração, como Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana), é muito baixa."
         ],
         [
           "p",
-          "<strong>Como conduzir:</strong> antes de abolir ceftriaxona, esclarecer o tipo de reação: intolerância gastrointestinal não é alergia; exantema remoto é diferente de anafilaxia, síndrome de Stevens-Johnson ou reação grave a cefalosporina."
+          "<strong>Como conduzir:</strong> antes de abolir Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana), esclarecer o tipo de reação: intolerância gastrointestinal não é alergia; exantema remoto é diferente de anafilaxia, síndrome de Stevens-Johnson ou reação grave a cefalosporina."
         ],
         [
           "p",
-          "Se houver <strong>verdadeira contraindicação a cefalosporinas</strong>, o problema passa a ser garantir cobertura segura para gonococo. O CDC admite alternativas ambulatoriais com quinolona somente quando o risco individual e comunitário de gonorreia é baixo e o seguimento é confiável; isso não deve virar substituição automática de ceftriaxona. Nessa situação, colher testes para gonococo antes do tratamento e considerar discussão especializada."
+          "Se houver <strong>verdadeira contraindicação a cefalosporinas</strong>, o problema passa a ser garantir cobertura segura para gonococo. O CDC admite alternativas ambulatoriais com quinolona somente quando o risco individual e comunitário de gonorreia é baixo e o seguimento é confiável; isso não deve virar substituição automática de Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana). Nessa situação, colher testes para gonococo antes do tratamento e considerar discussão especializada."
         ],
         [
           "p",
-          "<div class=\"book-callout\"><strong>Pulo do gato:</strong> não trocar ceftriaxona por ciprofloxacino “porque tem alergia a penicilina”. Primeiro caracterize a alergia; depois avalie o risco de gonorreia e resistência.</div>"
+          "<div class=\"book-callout\"><strong>Pulo do gato:</strong> não trocar Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) por Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h) “porque tem alergia a penicilina”. Primeiro caracterize a alergia; depois avalie o risco de gonorreia e resistência.</div>"
         ],
         [
           "3",
@@ -1023,7 +1027,7 @@
         ],
         [
           "p",
-          "<strong>Por que muda?</strong> os esquemas usuais de DIP não erradicam de forma confiável <em>M. genitalium</em>. O organismo não possui parede celular, portanto ceftriaxona e outros betalactâmicos não atuam sobre ele; além disso, a resistência a macrolídeos é frequente."
+          "<strong>Por que muda?</strong> os esquemas usuais de DIP não erradicam de forma confiável <em>M. genitalium</em>. O organismo não possui parede celular, portanto Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) e outros betalactâmicos não atuam sobre ele; além disso, a resistência a macrolídeos é frequente."
         ],
         [
           "p",
@@ -1168,7 +1172,7 @@
         ],
         [
           "p",
-          "<strong>Brasil × CDC:</strong> para diagnóstico sindrômico formal, o PCDT brasileiro lista três critérios maiores associados a um menor, ou critério elaborado; porém a decisão segura de tratar não deve transformar uma regra classificatória em atraso diante de forte suspeita clínica. Em qualquer abordagem, excluir gestação ectópica, apendicite, torção e outras urgências compatíveis. O exame cervical negativo para clamídia ou gonococo não exclui infecção do trato genital superior. Quando elegível para tratamento ambulatorial, o núcleo terapêutico estudado é ceftriaxona, doxiciclina e metronidazol pelo tempo definido, com reavaliação organizada."
+          "<strong>Brasil × CDC:</strong> para diagnóstico sindrômico formal, o PCDT brasileiro lista três critérios maiores associados a um menor, ou critério elaborado; porém a decisão segura de tratar não deve transformar uma regra classificatória em atraso diante de forte suspeita clínica. Em qualquer abordagem, excluir gestação ectópica, apendicite, torção e outras urgências compatíveis. O exame cervical negativo para clamídia ou gonococo não exclui infecção do trato genital superior. Quando elegível para tratamento ambulatorial, o núcleo terapêutico estudado é Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana), Doxiciclina (100 mg VO a cada 12 horas) e Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) pelo tempo definido, com reavaliação organizada."
         ],
         [
           "3",
@@ -1176,7 +1180,7 @@
         ],
         [
           "p",
-          "Paciente de 27 anos relata atraso menstrual, dor pélvica unilateral e sangramento vaginal. Teste de gravidez positivo e dor anexial são <strong>sinais para investigação imediata de gestação ectópica</strong>, inclusive rota de atendimento de urgência se houver instabilidade. Não rotular a dor como DIP apenas pela presença de corrimento ou histórico de IST. A avaliação envolve estabilidade hemodinâmica, ultrassonografia transvaginal, β-hCG seriado quando pertinente e decisões obstétricas individualizadas. Gestação não é contexto para aplicar automaticamente esquema ambulatorial com doxiciclina."
+          "Paciente de 27 anos relata atraso menstrual, dor pélvica unilateral e sangramento vaginal. Teste de gravidez positivo e dor anexial são <strong>sinais para investigação imediata de gestação ectópica</strong>, inclusive rota de atendimento de urgência se houver instabilidade. Não rotular a dor como DIP apenas pela presença de corrimento ou histórico de IST. A avaliação envolve estabilidade hemodinâmica, ultrassonografia transvaginal, β-hCG seriado quando pertinente e decisões obstétricas individualizadas. Gestação não é contexto para aplicar automaticamente esquema ambulatorial com Doxiciclina (100 mg VO a cada 12 horas)."
         ],
         [
           "3",
@@ -1249,13 +1253,13 @@
             "O diagnóstico de DIP é predominantemente clínico.",
             "Imagem ajuda principalmente em complicações e diferenciais.",
             "Brasil e CDC diferem sobretudo na operacionalização do limiar diagnóstico e em detalhes de manejo de gonorreia/cervicite.",
-            "DIP ambulatorial: ceftriaxona + doxiciclina + metronidazol.",
-            "Doxiciclina e metronidazol: 14 dias no esquema ambulatorial central.",
+            "DIP ambulatorial: Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) + Doxiciclina (100 mg VO a cada 12 horas) + Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase).",
+            "Doxiciclina (100 mg VO a cada 12 horas) e Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase): 14 dias no esquema ambulatorial central.",
             "Gestação e abscesso mudam o destino assistencial.",
             "Sem melhora em 72 h: reavaliar, não apenas “esperar mais”.",
             "DIU não é removido automaticamente.",
             "Tratar parcerias faz parte do tratamento.",
-            "<em>M. genitalium</em> não responde a ceftriaxona e azitromicina 1 g isolada não é terapia específica adequada."
+            "<em>M. genitalium</em> não responde a Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) e Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g isolada não é terapia específica adequada."
           ]
         ]
       ]
@@ -1396,7 +1400,7 @@
         ],
         [
           "p",
-          "O uso de metronidazol em determinados esquemas ajuda a ampliar cobertura de anaeróbios e aborda vaginose bacteriana concomitante quando presente. O objetivo não é apenas aliviar dor durante alguns dias, mas reduzir persistência infecciosa e complicações. A duração e a combinação devem ser as recomendadas no protocolo vigente; interromper precocemente por desaparecimento de sintomas pode comprometer tratamento. Também é preciso avaliar necessidade de internação, especialmente quando existe doença grave, gestação, vômitos que impedem terapia oral, dúvida diagnóstica cirúrgica ou abscesso tubo-ovariano."
+          "O uso de Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) em determinados esquemas ajuda a ampliar cobertura de anaeróbios e aborda vaginose bacteriana concomitante quando presente. O objetivo não é apenas aliviar dor durante alguns dias, mas reduzir persistência infecciosa e complicações. A duração e a combinação devem ser as recomendadas no protocolo vigente; interromper precocemente por desaparecimento de sintomas pode comprometer tratamento. Também é preciso avaliar necessidade de internação, especialmente quando existe doença grave, gestação, vômitos que impedem terapia oral, dúvida diagnóstica cirúrgica ou abscesso tubo-ovariano."
         ],
         [
           "3",
@@ -1446,11 +1450,32 @@
       [
         [
           "2",
-          "Referências essenciais"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
-          "p",
-          "<h2>Referências essenciais</h2>"
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Ginecologia e Obstetrícia. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1490,7 +1515,7 @@
         ],
         [
           "p",
-          "O diagnóstico da Doença Inflamatória Pélvica (DIP) é predominantemente <strong>clínico</strong>. Diante da alta morbidade reprodutiva (infertilidade tubária, gravidez ectópica e dor pélvica crônica), o Ministério da Saúde e o CDC recomendam <em>baixo limiar diagnóstico</em>: em mulheres jovens, sexualmente ativas ou sob risco para IST, a presença dos três critérios maiores na ausência de outra causa evidente já autoriza o início imediato da antibioticoterapia empírica."
+          "O diagnóstico da Doença Inflamatória Pélvica (DIP) é predominantemente <strong>clínico</strong>. Diante da alta morbidade reprodutiva (infertilidade tubária, gravidez ectópica e dor pélvica crônica), o Ministério da Saúde e o CDC recomendam <em>baixo limiar diagnóstico</em>: em mulheres jovens, sexualmente ativas ou sob risco para IST, a presença dos três critérios maiores na ausência de outra causa evidente já autoriza o início imediato da antibioticoterapia empírica direcionada ao foco (ex.: Ceftriaxona 1-2 g EV 1x/dia associada a Metronidazol 500 mg EV 8/8h em infecções intra-abdominais, ou Ceftriaxona 2 g EV 12/12h na meningite)."
         ],
         [
           "4",
@@ -1548,19 +1573,19 @@
               "<strong>Estágio I</strong>",
               "Endometrite e Salpingite aguda sem peritonite evidente (sem sinais de irritação peritoneal).",
               "Ambulatorial (desde que tolere via oral e sem critérios de gravidade)",
-              "Ceftriaxona 500 mg IM dose única + Doxiciclina 100 mg VO 12/12h por 14 dias + Metronidazol 500 mg VO 12/12h por 14 dias."
+              "Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) 500 mg IM dose única + Doxiciclina (100 mg VO a cada 12 horas) 100 mg VO 12/12h por 14 dias + Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) 500 mg VO 12/12h por 14 dias."
             ],
             [
               "<strong>Estágio II</strong>",
               "Salpingite aguda com peritonite pélvica / irritação peritoneal no hipogástrio (dor à descompressão localizada).",
               "Hospitalar (Internação recomendada)",
-              "Ceftriaxona 1g IV 1x/dia + Doxiciclina 100 mg VO ou IV 12/12h + Metronidazol 400 mg IV 12/12h (ou Clindamicina 900mg IV 8/8h + Gentamicina)."
+              "Ceftriaxona 1g IV 1x/dia + Doxiciclina (100 mg VO a cada 12 horas) 100 mg VO ou IV 12/12h + Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) 400 mg IV 12/12h (ou Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas) 900mg IV 8/8h + Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas))."
             ],
             [
               "<strong>Estágio III</strong>",
               "Salpingite aguda com oclusão tubária e formação de <strong>Abscesso Tubo-Ovariano (ATO)</strong> íntegro.",
               "Hospitalar Obrigatório",
-              "Antibioticoterapia parenteral venosa de amplo espectro com cobertura anaeróbia estrita (Ceftriaxona + Doxi + Metro ou Clinda + Genta). Monitorização ultrassonográfica seriada."
+              "Antibioticoterapia parenteral venosa de amplo espectro com cobertura anaeróbia estrita (Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) + Doxi + Metro ou Clinda + Genta). Monitorização ultrassonográfica seriada."
             ],
             [
               "<strong>Estágio IV</strong>",
@@ -1582,7 +1607,7 @@
         [
           "u",
           [
-            "<strong>Gestação</strong>: risco iminente de abortamento séptico, corioamnionite, parto prematuro e perda gestacional. É proibido o uso de doxiciclina na gravidez;",
+            "<strong>Gestação</strong>: risco iminente de abortamento séptico, corioamnionite, parto prematuro e perda gestacional. É proibido o uso de Doxiciclina (100 mg VO a cada 12 horas) na gravidez;",
             "<strong>Suspeita ou confirmação de Abscesso Tubo-Ovariano (Monif III ou IV)</strong>;",
             "<strong>Incerteza diagnóstica que não exclui emergências cirúrgicas</strong> (ex.: apendicite aguda, torção de anexo, gravidez ectópica);",
             "<strong>Quadro clínico grave</strong>: febre alta (> 38,5 °C), vômitos incoercíveis, prostração, sepse ou sinais de peritonite difusa / abdome agudo perfurativo;",
@@ -1617,14 +1642,14 @@
         [
           "u",
           [
-            "<strong>Ceftriaxona</strong> 500 mg, via intramuscular (IM), dose única (cobertura bactericida para <em>Neisseria gonorrhoeae</em> resistente a quinolonas e penicilinas); <em>mais</em>",
-            "<strong>Doxiciclina</strong> 100 mg, via oral (VO), de 12 em 12 horas, por <strong>14 dias</strong> (cobertura para <em>Chlamydia trachomatis</em> e <em>Mycoplasma genitalium</em>); <em>mais</em>",
-            "<strong>Metronidazol</strong> 500 mg, via oral (VO), de 12 em 12 horas, por <strong>14 dias</strong> (cobertura essencial para anaeróbios estritos da microbiota vaginal alterada e vaginose bacteriana associada)."
+            "<strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana)</strong> 500 mg, via intramuscular (IM), dose única (cobertura bactericida para <em>Neisseria gonorrhoeae</em> resistente a quinolonas e penicilinas); <em>mais</em>",
+            "<strong>Doxiciclina (100 mg VO a cada 12 horas)</strong> 100 mg, via oral (VO), de 12 em 12 horas, por <strong>14 dias</strong> (cobertura para <em>Chlamydia trachomatis</em> e <em>Mycoplasma genitalium</em>); <em>mais</em>",
+            "<strong>Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase)</strong> 500 mg, via oral (VO), de 12 em 12 horas, por <strong>14 dias</strong> (cobertura essencial para anaeróbios estritos da microbiota vaginal alterada e vaginose bacteriana associada)."
           ]
         ],
         [
           "p",
-          "<em>Nota farmacológica:</em> A adesão aos 14 dias completos de doxiciclina e metronidazol é obrigatória. A paciente deve ser orientada expressamente sobre a abstinência sexual durante o tratamento e o efeito dissulfiram-like do metronidazol com bebidas alcoólicas."
+          "<em>Nota farmacológica:</em> A adesão aos 14 dias completos de Doxiciclina (100 mg VO a cada 12 horas) e Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) é obrigatória. A paciente deve ser orientada expressamente sobre a abstinência sexual durante o tratamento e o efeito dissulfiram-like do Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) com bebidas alcoólicas."
         ],
         [
           "3",
@@ -1641,9 +1666,9 @@
         [
           "u",
           [
-            "<strong>Ceftriaxona</strong> 1 g a 2 g, IV, uma vez ao dia; <em>mais</em>",
-            "<strong>Doxiciclina</strong> 100 mg, VO ou IV (se disponível), de 12 em 12 horas; <em>mais</em>",
-            "<strong>Metronidazol</strong> 400 mg a 500 mg, IV, de 12 em 12 horas."
+            "<strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana)</strong> 1 g a 2 g, IV, uma vez ao dia; <em>mais</em>",
+            "<strong>Doxiciclina (100 mg VO a cada 12 horas)</strong> 100 mg, VO ou IV (se disponível), de 12 em 12 horas; <em>mais</em>",
+            "<strong>Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase)</strong> 400 mg a 500 mg, IV, de 12 em 12 horas."
           ]
         ],
         [
@@ -1653,13 +1678,13 @@
         [
           "u",
           [
-            "<strong>Clindamicina</strong> 900 mg, IV, de 8 em 8 horas (excelente penetração tecidual pélvica e ação potente antianaeróbia); <em>mais</em>",
-            "<strong>Gentamicina</strong>: dose de ataque de 2 mg/kg IV, seguida por dose de manutenção de 1,5 mg/kg IV a cada 8 horas (ou dose diária única de 3 a 5 mg/kg IV em bomba de infusão)."
+            "<strong>Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas)</strong> 900 mg, IV, de 8 em 8 horas (excelente penetração tecidual pélvica e ação potente antianaeróbia); <em>mais</em>",
+            "<strong>Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas)</strong>: dose de ataque de 2 mg/kg IV, seguida por dose de manutenção de 1,5 mg/kg IV a cada 8 horas (ou dose diária única de 3 a 5 mg/kg IV em bomba de infusão)."
           ]
         ],
         [
           "p",
-          "<em>Transição oral:</em> Após desospitalização, completar 14 dias com Doxiciclina 100 mg VO 12/12h associada a Clindamicina 450 mg VO 6/6h ou Metronidazol 500 mg VO 12/12h."
+          "<em>Transição oral:</em> Após desospitalização, completar 14 dias com Doxiciclina (100 mg VO a cada 12 horas) 100 mg VO 12/12h associada a Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas) 450 mg VO 6/6h ou Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) 500 mg VO 12/12h."
         ],
         [
           "3",
@@ -1667,7 +1692,7 @@
         ],
         [
           "p",
-          "A ocorrência de DIP na gestação é rara devido ao tampão mucoso cervical e obliteração da cavidade uterina após as 12 semanas, ocorrendo quase exclusivamente no primeiro trimestre. Toda gestante com suspeita de DIP <strong>deve ser internada</strong>. A Doxiciclina é estritamente contraindicada pelo risco de toxicidade fetal e coloração dentária. O esquema de escolha baseia-se em <strong>Ceftriaxona 1g IV/dia + Azitromicina 1g VO dose única (repetida após 7 dias) + Metronidazol parenteral</strong>, ou Clindamicina + Gentamicina com rigorosa vigilância materno-fetal."
+          "A ocorrência de DIP na gestação é rara devido ao tampão mucoso cervical e obliteração da cavidade uterina após as 12 semanas, ocorrendo quase exclusivamente no primeiro trimestre. Toda gestante com suspeita de DIP <strong>deve ser internada</strong>. A Doxiciclina (100 mg VO a cada 12 horas) é estritamente contraindicada pelo risco de toxicidade fetal e coloração dentária. O esquema de escolha baseia-se em <strong>Ceftriaxona 1g IV/dia + Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1g VO dose única (repetida após 7 dias) + Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) parenteral</strong>, ou Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas) + Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas) com rigorosa vigilância materno-fetal."
         ]
       ]
     ],
@@ -1697,7 +1722,7 @@
             "<strong>Quadro típico:</strong> Mulher jovem em idade fértil que apresenta dor pleurítica intensa no hipocôndrio direito, que piora com a inspiração profunda, tosse e movimentação de tronco. Frequentemente há história concomitante ou pregressa recente de corrimento vaginal, disúria ou dor hipogástrica leve/moderada;",
             "<strong>Armadilha diagnóstica em provas:</strong> O quadro mimetiza com perfeição colecistite aguda, pleurite, pneumonia de base direita ou cólica biliar. Entretanto, a ultrassonografia de vias biliares é normal (sem cálculos e sem espessamento da parede vesicular) e as enzimas hepáticas (TGO, TGP, FA e Gama-GT) encontram-se habitualmente normais ou apenas discretamente alteradas;",
             "<strong>Achado Laparoscópico Patognomônico:</strong> Presença de <em>aderências tênues e fibrosas em \"corda de violino\"</em> (violin-string adhesions) entre a superfície anterior da cápsula de Glisson do fígado e a parede peritoneal abdominal ou diafragmática;",
-            "<strong>Tratamento:</strong> Não exige cirurgia hepática. O tratamento clínico padrão para DIP com 14 dias de Ceftriaxona + Doxiciclina + Metronidazol promove resolução completa do processo infeccioso e da dor."
+            "<strong>Tratamento:</strong> Não exige cirurgia hepática. O tratamento clínico padrão para DIP com 14 dias de Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) + Doxiciclina (100 mg VO a cada 12 horas) + Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) promove resolução completa do processo infeccioso e da dor."
           ]
         ],
         [
@@ -1723,7 +1748,7 @@
             ],
             [
               "<strong>Abordagem Preferencial</strong>",
-              "Internação hospitalar + Antibioticoterapia venosa de amplo espectro (Ceftriaxona + Doxiciclina + Metronidazol ou Clindamicina + Gentamicina). Taxa de sucesso de 70% a 80%.",
+              "Internação hospitalar + antibioticoterapia venosa de amplo espectro (Ceftriaxona 1g a 2g IV a cada 12-24h associada a Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) 500mg IV a cada 8h) (Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) + Doxiciclina (100 mg VO a cada 12 horas) + Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) ou Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas) + Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas)). Taxa de sucesso de 70% a 80%.",
               "<strong>1ª escolha:</strong> Drenagem percutânea guiada por ultrassonografia ou tomografia computadorizada (preserva fertilidade e evita laparotomia);<br><strong>2ª escolha / refratariedade:</strong> Laparoscopia ou Laparotomia exploradora conservadora (lavagem, lise de aderências e salpingo-ooforectomia unilateral se necrose)."
             ]
           ],
@@ -1757,7 +1782,7 @@
         ],
         [
           "p",
-          "<strong>Discussão e Conduta:</strong> Trata-se do clássico quadro de <strong>Síndrome de Fitz-Hugh-Curtis</strong> decorrente de DIP não tratada precocemente. A peri-hepatite manifesta-se por dor tipo pleurítica decorrente da inflamação da cápsula hepática por <em>Chlamydia trachomatis</em>. Como a paciente não apresenta critérios de gravidade, tolera a via oral, tem USG sem abscesso tubo-ovariano e apresenta estabilidade hemodinâmica, a conduta correta é o <strong>tratamento ambulatorial da DIP</strong>: Ceftriaxona 500 mg IM em dose única + Doxiciclina 100 mg VO 12/12h por 14 dias + Metronidazol 500 mg VO 12/12h por 14 dias. Não há indicação de retirada imediata do DIU nem de intervenção cirúrgica."
+          "<strong>Discussão e Conduta:</strong> Trata-se do clássico quadro de <strong>Síndrome de Fitz-Hugh-Curtis</strong> decorrente de DIP não tratada precocemente. A peri-hepatite manifesta-se por dor tipo pleurítica decorrente da inflamação da cápsula hepática por <em>Chlamydia trachomatis</em>. Como a paciente não apresenta critérios de gravidade, tolera a via oral, tem USG sem abscesso tubo-ovariano e apresenta estabilidade hemodinâmica, a conduta correta é o <strong>tratamento ambulatorial da DIP</strong>: Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) 500 mg IM em dose única + Doxiciclina (100 mg VO a cada 12 horas) 100 mg VO 12/12h por 14 dias + Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) 500 mg VO 12/12h por 14 dias. Não há indicação de retirada imediata do DIU nem de intervenção cirúrgica."
         ],
         [
           "3",
@@ -1770,15 +1795,15 @@
         [
           "u",
           [
-            "A) Prescrever Ceftriaxona 500 mg IM dose única + Doxiciclina 100 mg VO 12/12h + Metronidazol 500 mg VO 12/12h por 14 dias e alta com reavaliação em 72h.",
-            "B) Internação hospitalar imediata e início de esquema antimicrobiano parenteral com Ceftriaxona IV associada a Azitromicina e Metronidazol.",
+            "A) Prescrever Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) 500 mg IM dose única + Doxiciclina (100 mg VO a cada 12 horas) 100 mg VO 12/12h + Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) 500 mg VO 12/12h por 14 dias e alta com reavaliação em 72h.",
+            "B) Internação hospitalar imediata e início de esquema antimicrobiano parenteral com Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) IV associada a Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) e Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase).",
             "C) Realizar aspiração manual intrauterina (AMIU) para esvaziamento por abortamento infectado.",
-            "D) Prescrever Ciprofloxacino 500 mg VO dose única e Azitromicina 1g VO dose única com seguimento pré-natal."
+            "D) Prescrever Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h) 500 mg VO dose única e Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1g VO dose única com seguimento pré-natal."
           ]
         ],
         [
           "p",
-          "<strong>Gabarito: B.</strong> <em>Comentário detalhado:</em> A gestação é uma indicação <strong>absoluta</strong> de internação hospitalar para tratamento da Doença Inflamatória Pélvica. O tratamento parenteral hospitalar previne complicações obstétricas graves como sepse e perda fetal. Além disso, a alternativa A é incorreta porque a Doxiciclina é contraindicada na gestação (risco de pigmentação dos dentes decíduos e alteração do crescimento ósseo). A alternativa C é errada porque a paciente tem gestação tópica viável sem sangramento ou diagnóstico de abortamento. A alternativa D cita quinolona, que apresenta alta taxa de resistência gonocócica no Brasil e é contraindicada na gravidez."
+          "<strong>Gabarito: B.</strong> <em>Comentário detalhado:</em> A gestação é uma indicação <strong>absoluta</strong> de internação hospitalar para tratamento da Doença Inflamatória Pélvica. O tratamento parenteral hospitalar previne complicações obstétricas graves como sepse e perda fetal. Além disso, a alternativa A é incorreta porque a Doxiciclina (100 mg VO a cada 12 horas) é contraindicada na gestação (risco de pigmentação dos dentes decíduos e alteração do crescimento ósseo). A alternativa C é errada porque a paciente tem gestação tópica viável sem sangramento ou diagnóstico de abortamento. A alternativa D cita quinolona, que apresenta alta taxa de resistência gonocócica no Brasil e é contraindicada na gravidez."
         ],
         [
           "3",
@@ -1786,7 +1811,7 @@
         ],
         [
           "p",
-          "<em>(Revalida INEP)</em> Mulher de 32 anos é internada com diagnóstico de Doença Inflamatória Pélvica Monif III. A ultrassonografia transvaginal evidencia formação cística de paredes espessadas e ecogênicas, com debris internos em região anexial esquerda, medindo 5,5 x 4,8 cm, compatível com abscesso tubo-ovariano íntegro. A paciente encontra-se afebril, hemodinamicamente estável, com dor abdominal moderada controlada com analgésicos comuns. Qual é a conduta inicial recomendada?"
+          "<em>(Revalida INEP)</em> Mulher de 32 anos é internada com diagnóstico de Doença Inflamatória Pélvica Monif III. A ultrassonografia transvaginal evidencia formação cística de paredes espessadas e ecogênicas, com debris internos em região anexial esquerda, medindo 5,5 x 4,8 cm, compatível com abscesso tubo-ovariano íntegro. A paciente encontra-se afebril, hemodinamicamente estável, com dor abdominal moderada controlada com analgésicos não opioides (Dipirona 1 g VO/EV a cada 6 horas ou Paracetamol 750 mg a 1.000 mg VO a cada 6 horas). Qual é a conduta inicial recomendada?"
         ],
         [
           "u",
@@ -1794,12 +1819,12 @@
             "A) Laparotomia exploradora de urgência com histerectomia total e anexectomia bilateral.",
             "B) Internação hospitalar com antibioticoterapia intravenosa de amplo espectro por 48 a 72 horas e acompanhamento clínico rigoroso.",
             "C) Drenagem cirúrgica imediata por colpotomia posterior no pronto-socorro.",
-            "D) Tratamento ambulatorial com Ceftriaxona 500 mg IM dose única associada a Doxiciclina e Metronidazol por via oral."
+            "D) Tratamento ambulatorial com Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) 500 mg IM dose única associada a Doxiciclina (100 mg VO a cada 12 horas) e Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) por via oral."
           ]
         ],
         [
           "p",
-          "<strong>Gabarito: B.</strong> <em>Comentário detalhado:</em> No Abscesso Tubo-Ovariano (ATO) íntegro e menor que 8-9 cm em paciente estável, a conduta de primeira linha é <strong>sempre clínica</strong>, com internação e antibioticoterapia venosa potente com cobertura anaeróbia (ex.: Clindamicina + Gentamicina ou Ceftriaxona + Doxiciclina + Metronidazol). Aproximadamente 70% a 80% das pacientes respondem satisfatoriamente sem necessidade de cirurgia, preservando a reserva ovariana e o potencial reprodutivo. A cirurgia de emergência (laparoscopia/laparotomia) é reservada exclusivamente para suspeita de ruptura do abscesso (Monif IV), sepse refratária ou falha evidente do tratamento clínico após 48-72h."
+          "<strong>Gabarito: B.</strong> <em>Comentário detalhado:</em> No Abscesso Tubo-Ovariano (ATO) íntegro e menor que 8-9 cm em paciente estável, a conduta de primeira linha é <strong>sempre clínica</strong>, com internação e antibioticoterapia venosa potente com cobertura anaeróbia (ex.: Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas) + Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas) ou Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) + Doxiciclina (100 mg VO a cada 12 horas) + Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase)). Aproximadamente 70% a 80% das pacientes respondem satisfatoriamente sem necessidade de cirurgia, preservando a reserva ovariana e o potencial reprodutivo. A cirurgia de emergência (laparoscopia/laparotomia) é reservada exclusivamente para suspeita de ruptura do abscesso (Monif IV), sepse refratária ou falha evidente do tratamento clínico após 48-72h."
         ]
       ]
     ]

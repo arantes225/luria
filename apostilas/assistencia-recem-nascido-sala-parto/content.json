@@ -79,7 +79,7 @@
         ],
         [
           "p",
-          "Receber um recém-nascido exige simultaneamente reconhecer rapidamente quem necessita de suporte e evitar procedimentos desnecessários em quem apresenta boa adaptação. O período imediatamente após o nascimento reúne mudanças circulatórias, respiratórias, térmicas e metabólicas de grande magnitude. A maior parte dos bebês estabelece respiração efetiva, mantém frequência cardíaca adequada e pode permanecer em contato pele a pele, com supervisão ativa. O objetivo não é executar uma sequência ritualística de intervenções, mas garantir segurança, vínculo, estabilidade e identificação precoce de sinais de alerta."
+          "Receber um recém-nascido exige simultaneamente reconhecer com agilidade quem necessita de suporte e evitar procedimentos desnecessários em quem apresenta boa adaptação. O período imediatamente após o nascimento reúne mudanças circulatórias, respiratórias, térmicas e metabólicas de grande magnitude. A maior parte dos bebês estabelece respiração efetiva, mantém frequência cardíaca adequada e pode permanecer em contato pele a pele, com supervisão ativa. O objetivo não é executar uma sequência ritualística de intervenções, mas garantir segurança, vínculo, estabilidade e identificação precoce de sinais de alerta."
         ],
         [
           "p",
@@ -106,7 +106,7 @@
             [
               "Respira, mas apresenta desconforto, cianose central ou alterações persistentes",
               "Há problema de transição ou doença?",
-              "Avaliação neonatal dirigida, monitorização e suporte conforme necessidade"
+              "Avaliação neonatal dirigida, monitorização e suporte conforme critérios clínicos objetivos"
             ]
           ]
         ],
@@ -127,6 +127,18 @@
         [
           "3",
           "Dos pulmões preenchidos por líquido à ventilação alveolar"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Skin_to_skin_breastfeeding.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Skin%20to%20skin%20breastfeeding.jpg\" alt=\"Contato pele a pele precoce e promoção do vínculo mãe-bebê\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Contato pele a pele precoce e promoção do vínculo mãe-bebê</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ASkin%20to%20skin%20breastfeeding.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">David Goodman ↗</a> (CC BY 2.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Post-medieval_copper-alloy_pin_head__FindID_459708_.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Post-medieval%20copper-alloy%20pin%20head%20(FindID%20459708).jpg\" alt=\"Aferição do perímetro cefálico na antropometria neonatal\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Aferição do perímetro cefálico na antropometria neonatal</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3APost-medieval%20copper-alloy%20pin%20head%20(FindID%20459708).jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Birmingham Museums Trust, Tom Brindle, 2011-08-24 09:28:18 ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Umbical_cord_clamp_2005.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Umbical%20cord%20clamp%202005.jpg\" alt=\"Clampeamento do cordão umbilical e hemostasia\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Clampeamento do cordão umbilical e hemostasia</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AUmbical%20cord%20clamp%202005.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Wikimedia Commons ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
           "p",
@@ -340,7 +352,7 @@
         ],
         [
           "p",
-          "Um briefing bem feito deve ocupar pouco tempo, mas prevenir ambiguidades. Dizer 'o pediatra vem se precisar' não responde quem está capacitado para os passos iniciais nem quanto demora o reforço. A equipe deve ter treinamento e recursos compatíveis com perfil da maternidade e fluxo de transferência de alto risco. Em nascimento gemelar, planejar profissionais e materiais para cada bebê, além de identificação separada e rastreável."
+          "Um briefing bem feito deve ocupar curto intervalo, mas prevenir ambiguidades. Dizer 'o pediatra vem se precisar' não responde quem está capacitado para os passos iniciais nem quanto demora o reforço. A equipe deve ter treinamento e recursos compatíveis com perfil da maternidade e fluxo de transferência de alto risco. Em nascimento gemelar, planejar profissionais e materiais para cada bebê, além de identificação separada e rastreável."
         ],
         [
           "3",
@@ -458,8 +470,8 @@
           ]
         ],
         [
-          "p",
-          "<strong>Pegadinha:</strong> iniciar ventilação após aguardar 'Apgar de 1 minuto' é erro potencialmente grave. O cuidado ocorre em tempo real e o escore é atribuído paralelamente ou posteriormente, sem atrasar intervenções. Extremidades azuladas nos primeiros minutos podem representar acrocianose fisiológica, diferente de cianose central persistente."
+          "raw",
+          "<div class=\"book-callout-caution\"><strong class=\"callout-title\">⚡ Atenção — Armadilha Diagnóstica</strong><p>iniciar ventilação após aguardar 'Apgar de 1 minuto' é erro potencialmente grave. O cuidado ocorre em tempo real e o escore é atribuído paralelamente ou posteriormente, sem atrasar intervenções. Extremidades azuladas nos primeiros minutos podem representar acrocianose fisiológica, diferente de cianose central persistente.</p></div>"
         ],
         [
           "3",
@@ -516,7 +528,7 @@
         ],
         [
           "p",
-          "O minuto de ouro não é intervalo para 'ver se o bebê melhora sozinho': as intervenções iniciais e, quando indicada, a ventilação, devem ocorrer dentro dos primeiros 60 segundos. Ventilação adequada costuma elevar a frequência cardíaca rapidamente, sendo a resposta de FC indicador central de eficácia. Esta apostila deliberadamente não ensina dosagem de adrenalina, relação compressão/ventilação, seleção de cânulas ou interrupção de esforços, conteúdos práticos do tema 008 que requerem treinamento supervisionado e atualização SBP 2026."
+          "O minuto de ouro não é intervalo para 'ver se o bebê melhora sozinho': as intervenções iniciais e, quando indicada, a ventilação, devem ocorrer dentro dos primeiros 60 segundos. Ventilação adequada costuma elevar a frequência cardíaca com agilidade, sendo a resposta de FC indicador central de eficácia. Esta apostila deliberadamente não ensina dosagem de adrenalina, relação compressão/ventilação, seleção de cânulas ou interrupção de esforços, conteúdos práticos do tema 008 que requerem treinamento supervisionado e atualização SBP 2026."
         ],
         [
           "3",
@@ -1430,7 +1442,7 @@
           "o",
           [
             "<strong>Q7.</strong> RN de 39 semanas chora, tem tônus em flexão e respiração regular. Conduta inicial mais apropriada? A) Aspiração traqueal preventiva; B) contato pele a pele protegido, calor, monitorização e clampeamento oportuno; C) oxigênio a 100% em todos; D) aguardar Apgar antes de qualquer cuidado. <strong>Gabarito B.</strong> A introduz procedimento desnecessário; C ignora risco do hiperóxia; D confunde registro com cuidado clínico em tempo real. Revisão: preservar a adaptação fisiológica do RN com boa vitalidade.",
-            "<strong>Q8.</strong> RN com apneia após nascer e FC menor que 100/min após passos iniciais. O que não pode ser feito? A) Avaliar rapidamente e iniciar assistência ventilatória conforme protocolo; B) acionar equipe treinada; C) esperar a pontuação de Apgar para decidir iniciar ventilação; D) garantir normotermia enquanto estabiliza. <strong>Gabarito C.</strong> A, B e D fazem parte da assistência responsável; esperar um minuto por escore é atraso evitável. Revisão: Apgar descreve a evolução, não é gatilho de intervenção.",
+            "<strong>Q8.</strong> RN com apneia após nascer e FC menor que 100/min após passos iniciais. O que não pode ser feito? A) Avaliar com agilidade e iniciar assistência ventilatória conforme protocolo; B) acionar equipe treinada; C) esperar a pontuação de Apgar para decidir iniciar ventilação; D) garantir normotermia enquanto estabiliza. <strong>Gabarito C.</strong> A, B e D fazem parte da assistência responsável; esperar um minuto por escore é atraso evitável. Revisão: Apgar descreve a evolução, não é gatilho de intervenção.",
             "<strong>Q9.</strong> Bebê de 35 semanas e bom Apgar é filho de mãe com diabetes. Qual afirmação é correta? A) Apgar alto dispensa vigilância glicêmica; B) prematuridade tardia não afeta termorregulação; C) considerar risco de hipoglicemia, sucção ineficaz e hipotermia; D) fórmula universal sem avaliação. <strong>Gabarito C.</strong> A ignora hiperinsulinismo; B desconsidera maturidade; D impõe alimentação sem necessidade individual. Revisão: vitalidade e vulnerabilidade metabólica são dimensões distintas.",
             "<strong>Q10.</strong> Qual afirmativa sobre clampeamento é mais consistente com SBP 2026 para RN ≥34 semanas vigoroso? A) Aguardar pelo menos 60 segundos com vigilância; B) sempre clampear imediatamente; C) fazer ordenha em todo prematuro extremo; D) ignorar hemorragia materna. <strong>Gabarito A.</strong> B perde benefício potencial, C ignora risco de hemorragia intraventricular em faixas muito imaturas, D desconsidera segurança obstétrica. Revisão: decisão incorpora vitalidade, idade gestacional e condições da placenta.",
             "<strong>Q11.</strong> RN saudável de mãe HBsAg positiva recebe apenas vacina contra hepatite B, sem imunoglobulina, porque nasceu sem sintomas. A) Correto, a vacina substitui imunoglobulina; B) incorreto, ambas estão indicadas conforme PNI; C) esperar sorologia do RN aos seis meses; D) usar somente BCG. <strong>Gabarito B.</strong> A confunde imunidade ativa e passiva; C perde a janela de profilaxia; D não protege contra HBV. Revisão: prevenção da transmissão vertical é decisão orientada pela sorologia materna.",
@@ -1449,7 +1461,32 @@
       [
         [
           "2",
-          "Referências e limites de aplicação"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1466,16 +1503,11 @@
             "<a href=\"https://www.sbp.com.br/wp-content/uploads/2026/06/PRN-SBP-Diretrizes-2026-Reanimacao-RN-igual-maior-34-semanas-12junho2026.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Almeida MFB, Guinsburg R et al. SBP. Reanimação do recém-nascido ≥34 semanas em sala de parto: Diretrizes 2026. DOI:10.25060/PRN-SBP-2026-1.</a>",
             "<a href=\"https://www.sbp.com.br/wp-content/uploads/2026/06/PRN-SBP-Diretrizes-2026-Reanimacao-RN-menor-34-semanas-12junho2026.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">SBP. Reanimação do recém-nascido &lt;34 semanas em sala de parto: Diretrizes 2026, junho.</a>",
             "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/cuidado-neonatal\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde. Cuidado Neonatal: teste do olhinho, teste da orelhinha e teste do coraçãozinho.</a>",
-            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais/notas-tecnicas-e-informativas/nota-tecnica-no-108-2025-cgici-dpni-svsa-ms\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde. Nota Técnica 108/2025. Prevenção da hepatite B em recém-nascidos e profilaxia com imunoglobulina.</a>"
+            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais/notas-tecnicas-e-informativas/nota-tecnica-no-108-2025-cgici-dpni-svsa-ms\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde. Nota Técnica 108/2025. Prevenção da hepatite B em recém-nascidos e profilaxia com imunoglobulina.</a>",
+            "<strong>Comparativos consultados no Google Drive:</strong> 'Reanimação Neonatal.pdf' (2.130 caracteres extraídos) e '01 - ICTERICIA E COLESTASE NEONATAL.pdf' (14.963 caracteres), com autoria institucional Estratégia MED não confirmada. Foram usados apenas para definir fronteiras curriculares e armadilhas: resumo antigo sugere aspiração meconial e regras de suspensão de reanimação desatualizadas; não reproduzimos suas figuras ou textos, e decisões de reanimação pertencem ao tema 008.",
+            "<strong>Estado editorial:</strong> rascunho original do tema curricular 003, primeira etapa de construção. Ainda não atende à meta de 60 mil caracteres didáticos úteis nem recebeu revisão independente, matriz de questões completa, curadoria de imagens ou validação de desktop/PWA. Não existe index.html nem vínculo novo ao catálogo; não publicado. Revisar em capítulo futuro os critérios de triagem neonatal por idade, detalhes dos exames e situações de prematuridade/infecção antes da certificação.",
+            "<strong>Aprofundamento editorial LURIA 14/10/2026:</strong> atualizados fisiologia cardiopulmonar, prevenção de hipotermia, briefing, decisão na primeira hora, Apgar, clampeamento, exame por sistemas, sinais de risco, hemorragia por vitamina K, vacinação e linha de cuidado dos rastreios; casos e questões adicionais. Documento comparativo do Drive efetivamente aberto e lido: “Reanimação Neonatal.pdf”, autoria institucional não comprovada. As afirmações antigas de aspiração meconial rotineira ou interrupção obrigatória da reanimação aos 10 minutos não foram reproduzidas. A base normativa é a SBP 2026 para ≥34 e &lt;34 semanas, AHA/AAP 2025, MS 2026, PNI. Esta é versão <strong>em rascunho</strong>: material precisa de revisão médica independente, cotejo final com diretrizes brasileiras locais, curadoria de imagens no Admin, teste de autossuficiência e desktop/PWA. Não publicar."
           ]
-        ],
-        [
-          "p",
-          "<strong>Comparativos consultados no Google Drive:</strong> 'Reanimação Neonatal.pdf' (2.130 caracteres extraídos) e '01 - ICTERICIA E COLESTASE NEONATAL.pdf' (14.963 caracteres), com autoria institucional material de referência não confirmada. Foram usados apenas para definir fronteiras curriculares e armadilhas: resumo antigo sugere aspiração meconial e regras de suspensão de reanimação desatualizadas; não reproduzimos suas figuras ou textos, e decisões de reanimação pertencem ao tema 008."
-        ],
-        [
-          "p",
-          "<strong>Aprofundamento editorial LURIA 14/10/2026:</strong> atualizados fisiologia cardiopulmonar, prevenção de hipotermia, briefing, decisão na primeira hora, Apgar, clampeamento, exame por sistemas, sinais de risco, hemorragia por vitamina K, vacinação e linha de cuidado dos rastreios; casos e questões adicionais. Documento comparativo do Drive efetivamente aberto e lido: “Reanimação Neonatal.pdf”, autoria institucional não comprovada. As afirmações antigas de aspiração meconial rotineira ou interrupção obrigatória da reanimação aos 10 minutos não foram reproduzidas. A base normativa é a SBP 2026 para ≥34 e &lt;34 semanas, AHA/AAP 2025, MS 2026, PNI. Esta é versão <strong>em rascunho</strong>: material precisa de revisão médica independente, cotejo final com diretrizes brasileiras locais, curadoria de imagens no Admin, teste de autossuficiência e desktop/PWA. Não publicar."
         ]
       ]
     ]

@@ -2,8 +2,8 @@
   "v": 2,
   "s": "planejamento-reprodutivo-contracepcao",
   "t": "Planejamento Reprodutivo e Contracepção",
-  "p": "Planejamento Reprodutivo e Contracepção — Livro-Texto LURIA",
-  "d": "Critérios de elegibilidade da OMS/FEBRASGO 2026 · LARC · emergência · combinados e segurança cardiovascular",
+  "p": "Critérios de elegibilidade da OMS/FEBRASGO 2026 · LARC · emergência · combinados e segurança cardiovascular Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Critérios de elegibilidade da OMS/FEBRASGO 2026 · LARC · emergência · combinados e segurança cardiovascular Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Ginecologia e Obstetrícia",
   "m": "Planejamento Familiar e Endocrinologia Ginecológica",
   "h": [
@@ -208,6 +208,10 @@
         [
           "p",
           "Aplicar MEC: risco cardiovascular, câncer de mama, doença hepática, puerpério, interações e outras condições."
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Ginecologia e Obstetrícia, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "p",
@@ -852,7 +856,7 @@
         ],
         [
           "p",
-          "Após aborto, ovulação pode retornar rapidamente. Métodos hormonais e LARC podem, em geral, ser iniciados imediatamente se clinicamente apropriado e sem infecção uterina ativa."
+          "Após aborto, ovulação pode retornar com agilidade. Métodos hormonais e LARC podem, em geral, ser iniciados imediatamente se clinicamente apropriado e sem infecção uterina ativa."
         ]
       ]
     ],
@@ -1747,7 +1751,32 @@
       [
         [
           "2",
-          "Referências"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Ginecologia e Obstetrícia. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",

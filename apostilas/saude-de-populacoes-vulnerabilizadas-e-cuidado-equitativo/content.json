@@ -2,8 +2,8 @@
   "v": 2,
   "s": "saude-de-populacoes-vulnerabilizadas-e-cuidado-equitativo",
   "t": "Saúde de Populações Vulnerabilizadas e Cuidado Equitativo",
-  "p": "Saúde de Populações Vulnerabilizadas e Cuidado Equitativo — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "p": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Medicina de Família e Comunidade",
   "m": "Medicina de Família e Comunidade",
   "h": [
@@ -166,6 +166,10 @@
           "Uma das questões mais cobradas em provas de Residência Médica, Revalida e ENAMED refere-se às barreiras burocráticas de acesso. A <strong>Portaria MS nº 940/2011</strong> (e a Política Nacional de Atenção Básica — PNAB) estabelece de forma taxativa e inegociável:"
         ],
         [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina de Família e Comunidade, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "u",
           [
             "<strong>É ESTRITAMENTE VEDADA a exigência de comprovante de residência física ou de documento de identificação civil (RG/CPF)</strong> para o cadastramento no Cartão Nacional de Saúde (Cartão SUS) e para o atendimento integral da População em Situação de Rua, ciganos, nômades e itinerantes em qualquer Unidade Básica de Saúde ou ponto da Rede de Atenção à Saúde!",
@@ -292,7 +296,7 @@
           "o",
           [
             "<strong>Saúde Materna e Violência Obstétrica:</strong> Mulheres negras (pretas e pardas) apresentam razão de <strong>mortalidade materna até 2 a 3 vezes superior</strong> à de mulheres brancas (especialmente por síndromes hipertensivas da gestação — pré-eclâmpsia/eclâmpsia — e hemorragia pós-parto). Mesmo após ajuste estatístico para renda e escolaridade, mulheres pretas: (a) realizam menos consultas de pré-natal; (b) recebem menos orientações sobre sinais de trabalho de parto e complicações; (c) sofrem maior peregrinação anteparto em busca de vaga em maternidade; e (d) <strong>recebem significativamente MENOS analgesia e anestesia farmacológica durante o trabalho de parto e procedimentos obstétricos</strong> do que mulheres brancas! Essa disparidade na analgesia decorre do mito racista pseudocientífico colonial de que <em>\"corpos negros seriam mais resistentes à dor ou mais fortes fisicamente\"</em> (viés racial implícito no manejo da dor).",
-            "<strong>Manejo Álgico na Doença Falciforme nas Emergências:</strong> Pacientes negros jovens que procuram prontos-socorros com crise vaso-oclusiva álgica lancinante da Doença Falciforme têm sua dor frequentemente subestimada ou invalidada pelas equipes de plantão, sendo injustamente rotulados como \"viciados em morfina / simuladores\" (<em>drug-seeking behavior</em>), sofrendo atrasos inaceitáveis na administração de opioides parenterais.",
+            "<strong>Manejo Álgico na Doença Falciforme nas Emergências:</strong> Pacientes negros jovens que procuram prontos-socorros com crise vaso-oclusiva álgica lancinante da Doença Falciforme têm sua dor frequentemente subestimada ou invalidada pelas equipes de plantão, sendo injustamente rotulados como \"viciados em Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor) / simuladores\" (<em>drug-seeking behavior</em>), sofrendo atrasos inaceitáveis na administração de opioides parenterais.",
             "<strong>Oncologia:</strong> Mulheres negras recebem diagnóstico de câncer de mama e câncer do colo do útero em estágios clínicos significativamente mais avançados (III e IV) e enfrentam maior tempo de espera entre o diagnóstico histopatológico e o início do tratamento cirúrgico/quimioterápico (Lei dos 60 dias)."
           ]
         ],
@@ -328,7 +332,7 @@
             "<strong>Hipertensão Arterial Sistêmica (HAS) na População Negra:</strong>\n    <ul>\n      <li>Apresenta início mais precoce, maior prevalência (até 2 vezes maior), evolução mais grave e maior repercussão em órgãos-alvo (maior incidência de <strong>Acidente Vascular Cerebral hemorrágico e isquêmico</strong>, hipertrofia ventricular esquerda concêntrica e <strong>Doença Renal Crônica hipertensiva / glomeruloesclerose focal e segmentar associada a variantes do gene APOL1</strong>).",
             "<strong>Fisiopatologia e Farmacologia de Primeira Linha (Pegadinha Clássica de Prova!):</strong> Pacientes negros hipertensos apresentam, com maior frequência, fenótipo de <strong>hipertensão sensível ao sal com atividade plasmática de renina baixa (hiporreninêmica) e expansão volêmica</strong>. Por essa razão fisiopatológica, quando utilizados em <em>monoterapia isolada</em>, os Inibidores da ECA (enalapril, captopril) e os BRAs (losartana) apresentam menor eficácia redutora pressórica e menor proteção contra AVC em pacientes negros do que os <strong>Diuréticos Tiazídicos (Clortalidona, Hidroclorotiazida, Indapamida)</strong> e os <strong>Bloqueadores dos Canais de Cálcio di-hidropiridínicos (Anlodipino)</strong>!",
             "Portanto, as Diretrizes Brasileiras de Hipertensão Arterial e o JNC-8 preconizam que, na população negra sem doença renal crônica proteinúrica ou insuficiência cardíaca com FEVE reduzida, os fármacos de 1ª escolha preferenciais para início de tratamento são os <strong>Diuréticos Tiazídicos e/ou Bloqueadores dos Canais de Cálcio (BCC)</strong>! (Naturalmente, se o paciente negro tiver nefropatia diabética com albuminúria ou ICFEr, ou quando se utiliza combinação dupla, associa-se IECA ou BRA normalmente, lembrando que a incidência de <em>angioedema bradicinérgico induzido por IECA</em> é 3 a 4 vezes maior em pessoas negras).",
-            "<strong>Deficiência de Glicose-6-Fosfato Desidrogenase (G6PD):</strong> Enzimopatia ligada ao cromossomo X mais prevalente em afrodescendentes, causando crises de <strong>anemia hemolítica intravascular aguda não imune (com corpúsculos de Heinz e hemácias mordidas — <em>bite cells</em>)</strong> após exposição a estresse oxidativo por medicamentos como <strong>Primaquina, Tafenoquina, Dapsona, Nitrofurantoína, Sulfonamidas e Rasburicase</strong>.",
+            "<strong>Deficiência de Glicose-6-Fosfato Desidrogenase (G6PD):</strong> Enzimopatia ligada ao cromossomo X mais prevalente em afrodescendentes, causando crises de <strong>anemia hemolítica intravascular aguda não imune (com corpúsculos de Heinz e hemácias mordidas — <em>bite cells</em>)</strong> após exposição a estresse oxidativo por medicamentos como <strong>Primaquina, Tafenoquina, Dapsona, Nitrofurantoína (100 mg VO a cada 6 horas por 5 a 7 dias, ou macrocristais 100 mg 12/12h), Sulfonamidas e Rasburicase</strong>.",
             "<strong>Miomatose Uterina:</strong> Mulheres negras apresentam incidência 3 vezes maior de leiomiomas uterinos, com surgimento em idade mais jovem, tumores múltiplos e mais volumosos e maior taxa de anemia ferropriva severa por sangramento uterino anormal (menorragia/hipermenorreia)."
           ]
         ]
@@ -1069,7 +1073,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina de Família e Comunidade. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1078,8 +1107,7 @@
             "<a href=\"https://www.planalto.gov.br\" target=\"_blank\" rel=\"noopener noreferrer\">Brasil — Lei Federal nº 9.836/1999 (Lei Arouca - Subsistema de Atenção à Saúde Indígena SASI-SUS) e Portaria MS nº 254/2002 (PNASPI)</a>",
             "<a href=\"https://sistemas.cfm.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Conselho Federal de Medicina (CFM) — Resolução CFM nº 2.265/2019 (Cuidado específico à pessoa com incongruência de gênero ou transgênero)</a>",
             "<a href=\"https://www.sbmfc.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Gusso G, Lopes JMC, Dias LC — Tratado de Medicina de Família e Comunidade: Princípios, Formação e Prática (SBMFC / Artmed)</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

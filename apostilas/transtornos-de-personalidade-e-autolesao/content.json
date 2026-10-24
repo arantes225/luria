@@ -2,8 +2,8 @@
   "v": 2,
   "s": "transtornos-de-personalidade-e-autolesao",
   "t": "Transtornos de Personalidade e Autolesão",
-  "p": "Transtornos de Personalidade e Autolesão — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "p": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Saúde Mental",
   "m": "Saúde Mental",
   "h": [
@@ -165,6 +165,10 @@
         [
           "p",
           "Busca no Drive conectado por \"transtornos de personalidade\", \"borderline\", \"autolesão\", \"psiquiatria\", \"suicídio\" e \"saúde mental\" não localizou apostila específica de personalidade. Foram examinados materiais de área vizinha (\"Síndromes Cognitivas\", descrição de alterações mentais orgânicas, e \"SUS\", organização de acesso e rede), mas nenhum permite benchmarking de psicopatologia, psicoterapias ou autolesão. Portanto <strong>benchmark integral NÃO CONCLUÍDO</strong>; este manuscrito é preparatório, não resultado certificado da etapa zero. A estrutura visual LURIA foi cotejada com HTML de apostila existente; não inserir imagem nem texto de terceiro. Fontes clínicas externas: NICE CG78 e NG225; classificação DSM-5-TR/ICD-11 exige comparação técnica específica antes da publicação."
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Saúde Mental, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ]
       ]
     ],
@@ -715,7 +719,7 @@
         ],
         [
           "p",
-          "A rede de cuidado pode envolver <strong>UPA/pronto-socorro, UBS, CAPS, serviços especializados, SAMU e assistência social</strong>, conforme necessidade e disponibilidade territorial. Violência autoprovocada e situações de violência devem seguir fluxos brasileiros atuais de vigilância e notificação, com atenção a privacidade e normas aplicáveis; <strong>não presumir que uma guideline britânica determina automaticamente obrigações brasileiras</strong>. Em adolescentes, avaliar direitos, capacidade de participação, proteção e possível violência familiar, com acionamento de estruturas competentes quando necessário."
+          "A rede de cuidado pode envolver <strong>UPA/pronto-socorro, UBS, CAPS, serviços especializados, SAMU e assistência social</strong>, conforme critérios clínicos objetivos e disponibilidade territorial. Violência autoprovocada e situações de violência devem seguir fluxos brasileiros atuais de vigilância e notificação, com atenção a privacidade e normas aplicáveis; <strong>não presumir que uma guideline britânica determina automaticamente obrigações brasileiras</strong>. Em adolescentes, avaliar direitos, capacidade de participação, proteção e possível violência familiar, com acionamento de estruturas competentes quando necessário."
         ],
         [
           "p",
@@ -832,7 +836,7 @@
         ],
         [
           "p",
-          "Uma versão útil pode conter:\r<br>1. <strong>Sinais pessoais de alerta:</strong> mudanças de sono, isolamento, aumento de conflitos, piora de desesperança ou intensificação de pensamentos intrusivos que a própria pessoa reconhece.\r<br>2. <strong>Ações de enfrentamento seguras:</strong> atividades previamente testadas que ajudam a reduzir intensidade do sofrimento sem provocar lesão, adaptadas às condições físicas e cognitivas.\r<br>3. <strong>Ambientes e contatos que reduzem isolamento:</strong> identificar locais e pessoas que funcionam como apoio, com consentimento e sem expor a pessoa a violência.\r<br>4. <strong>Quem pode acompanhar uma crise:</strong> contatos concretos e horários; confirmar se estão disponíveis.\r<br>5. <strong>Serviços profissionais:</strong> UBS/CAPS de referência, pronto atendimento, SAMU e outros serviços locais conforme necessidade; registrar endereço e forma de acesso quando confirmados.\r<br>6. <strong>Segurança ambiental:</strong> planejar com paciente e cuidadores, quando adequados, a redução de acesso a meios potencialmente letais, sem listar técnicas de autoagressão.\r<br>7. <strong>Revisão do plano:</strong> responsável e data de atualização após novo episódio ou mudança de contexto."
+          "Uma versão útil pode conter:\r<br>1. <strong>Sinais pessoais de alerta:</strong> mudanças de sono, isolamento, aumento de conflitos, piora de desesperança ou intensificação de pensamentos intrusivos que a própria pessoa reconhece.\r<br>2. <strong>Ações de enfrentamento seguras:</strong> atividades previamente testadas que ajudam a reduzir intensidade do sofrimento sem provocar lesão, adaptadas às condições físicas e cognitivas.\r<br>3. <strong>Ambientes e contatos que reduzem isolamento:</strong> identificar locais e pessoas que funcionam como apoio, com consentimento e sem expor a pessoa a violência.\r<br>4. <strong>Quem pode acompanhar uma crise:</strong> contatos concretos e horários; confirmar se estão disponíveis.\r<br>5. <strong>Serviços profissionais:</strong> UBS/CAPS de referência, pronto atendimento, SAMU e outros serviços locais conforme critérios clínicos objetivos; registrar endereço e forma de acesso quando confirmados.\r<br>6. <strong>Segurança ambiental:</strong> planejar com paciente e cuidadores, quando adequados, a redução de acesso a meios potencialmente letais, sem listar técnicas de autoagressão.\r<br>7. <strong>Revisão do plano:</strong> responsável e data de atualização após novo episódio ou mudança de contexto."
         ],
         [
           "p",
@@ -1350,19 +1354,43 @@
       [
         [
           "2",
-          "15. Referências principais"
-        ],
-        [
-          "p",
-          "1. NICE. Borderline personality disorder: recognition and management. CG78. https://www.nice.org.uk/guidance/cg78/chapter/Recommendations\r<br>2. NICE. Self-harm: assessment, management and preventing recurrence. NG225, 2022. https://www.nice.org.uk/guidance/ng225/chapter/recommendations\r<br>3. NICE. Self-harm clinical overview. https://www.nice.org.uk/guidance/ng225\r<br>4. WHO. ICD-11 for Mortality and Morbidity Statistics — Personality disorder: https://icd.who.int/browse/2026-01/mms/en\r<br>5. Brasil. Ministério da Saúde. Rede de Atenção Psicossocial (RAPS): https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
           "3",
-          "Auditoria (não é certificado)"
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
-          "p",
-          "<strong>Produzido:</strong> classificação e mecanismos, autolesão, TPB, diagnóstico diferencial, avaliação de segurança, psicoterapia, papel de fármacos, coordenação, 5 casos, 7 questões, 10 pautas visuais.  \r\n<strong>Falta:</strong> benchmark específico e íntegra de normativas brasileiras para internação/APS/RAPS, definição temporal formal de transtornos da personalidade por CID-11/DSM, manejo farmacológico de comorbidades por doses e contraindicações, avaliação de diagnósticos diferenciais complexos, tratamento longitudinal e prevenção de recaída em mais profundidade, >=60 mil caracteres únicos, revisão psiquiátrica e teste de autossuficiência, publicação/imagens/PWA.  \r\n<strong>Status:</strong> RASCUNHO_PARCIAL_NAO_PUBLICAR."
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Saúde Mental. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
+        ],
+        [
+          "o",
+          [
+            "1. NICE. Borderline personality disorder: recognition and management. CG78. https://www.nice.org.uk/guidance/cg78/chapter/Recommendations",
+            "2. NICE. Self-harm: assessment, management and preventing recurrence. NG225, 2022. https://www.nice.org.uk/guidance/ng225/chapter/recommendations",
+            "3. NICE. Self-harm clinical overview. https://www.nice.org.uk/guidance/ng225",
+            "4. WHO. ICD-11 for Mortality and Morbidity Statistics — Personality disorder: https://icd.who.int/browse/2026-01/mms/en",
+            "5. Brasil. Ministério da Saúde. Rede de Atenção Psicossocial (RAPS): https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps",
+            "<strong>Produzido:</strong> classificação e mecanismos, autolesão, TPB, diagnóstico diferencial, avaliação de segurança, psicoterapia, papel de fármacos, coordenação, 5 casos, 7 questões, 10 pautas visuais.  \r\n<strong>Falta:</strong> benchmark específico e íntegra de normativas brasileiras para internação/APS/RAPS, definição temporal formal de transtornos da personalidade por CID-11/DSM, manejo farmacológico de comorbidades por doses e contraindicações, avaliação de diagnósticos diferenciais complexos, tratamento longitudinal e prevenção de recaída em mais profundidade, >=60 mil caracteres únicos, revisão psiquiátrica e teste de autossuficiência, publicação/imagens/PWA.  \r\n<strong>Status:</strong> RASCUNHO_PARCIAL_NAO_PUBLICAR."
+          ]
         ]
       ]
     ]

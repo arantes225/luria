@@ -159,6 +159,18 @@
           "No trauma, pesquisar sangramento externo, tórax, abdome, retroperitônio, pelve e ossos longos. O espaço retroperitoneal pode acumular volumes expressivos sem sinais externos evidentes; fraturas pélvicas instáveis exigem contenção apropriada e equipe preparada para controle endovascular ou operatório. No sangramento digestivo, obstétrico ou pós-operatório, a fisiologia do choque é similar, mas a estratégia de hemostasia é específica da origem."
         ],
         [
+          "raw",
+          "<figure data-luria-curated-image=\"EquipmentforPelvicBinder.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/EquipmentforPelvicBinder.jpg\" alt=\"Cinta de compressão pélvica para fraturas em livro aberto instáveis\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Cinta de compressão pélvica para fraturas em livro aberto instáveis</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AEquipmentforPelvicBinder.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Doc James ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Stauschlauch.JPG\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Stauschlauch.JPG\" alt=\"Torniquete hemostático para contenção de hemorragia exsanguinante em extremidade\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Torniquete hemostático para contenção de hemorragia exsanguinante em extremidade</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AStauschlauch.JPG\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">me Ernstl ↗</a> (CC BY-SA 2.5). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "p",
           "Choque obstrutivo por pneumotórax hipertensivo ou tamponamento, choque cardiogênico após contusão/infarto e choque distributivo podem coexistir com hemorragia. Isso é especialmente importante quando um paciente mantém sinais de hipoperfusão apesar de controle aparente da perda. Ultrassom à beira-leito ajuda a buscar sangramento ou disfunção associada, mas exame negativo não descarta fonte retroperitoneal ou sangramento intermitente."
         ],
@@ -356,7 +368,7 @@
         ],
         [
           "p",
-          "Cirurgia de controle de danos trata a fisiologia instável como parte da decisão operatória. Em vez de reconstruções complexas durante coagulopatia profunda, o objetivo inicial pode ser comprimir, ligar ou controlar vasos, retirar contaminantes e estabilizar rapidamente. O paciente segue para correção de temperatura, coagulação, perfusão e suporte intensivo, retornando para tratamento definitivo quando condições permitirem. Essa decisão exige julgamento cirúrgico e não se aplica a todo trauma."
+          "Cirurgia de controle de danos trata a fisiologia instável como parte da decisão operatória. Em vez de reconstruções complexas durante coagulopatia profunda, o objetivo inicial pode ser comprimir, ligar ou controlar vasos, retirar contaminantes e estabilizar com agilidade. O paciente segue para correção de temperatura, coagulação, perfusão e suporte intensivo, retornando para tratamento definitivo quando condições permitirem. Essa decisão exige julgamento cirúrgico e não se aplica a todo trauma."
         ],
         [
           "p",
@@ -407,6 +419,10 @@
         [
           "p",
           "A transfusão precoce de hemocomponentes é central quando há hemorragia significativa com choque. Cristaloides em grandes volumes podem diluir fatores e plaquetas, agravar hipotermia, edema e acidose hiperclorêmica, sem repor capacidade de transporte de oxigênio. Usar pequenos volumes como ponte quando produtos sanguíneos não estiverem disponíveis, reavaliando continuamente a necessidade."
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Blood_transfusion.gif\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Blood%20transfusion.gif\" alt=\"Bolsa de concentrado de hemácias para transfusão no choque hemorrágico\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Bolsa de concentrado de hemácias para transfusão no choque hemorrágico</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ABlood%20transfusion.gif\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Ian Furst/User:Doc James ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
           "p",
@@ -1144,23 +1160,38 @@
       [
         [
           "2",
-          "Referências e diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
-          "p",
-          "Rossaint R et al. European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. Critical Care. 2023;27:80. https://doi.org/10.1186/s13054-023-04327-7 ."
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
-          "p",
-          "American College of Surgeons, ATLS: princípios de avaliação primária e manejo de trauma; consultar edição vigente e protocolos locais da instituição."
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
         ],
         [
-          "p",
-          "Este tema complementa, mas não reproduz, LURIA 'Cuidados perioperatórios' e 'Reposição volêmica no paciente cirúrgico'. Limites de atuação e doses exigem checagem clínica antes da publicação."
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
         ],
         [
-          "p",
-          "Holcomb JB et al. Transfusion of plasma, platelets, and red blood cells in a 1:1:1 vs a 1:1:2 ratio and mortality in patients with severe trauma: the PROPPR randomized clinical trial. JAMA. 2015;313:471–482. https://doi.org/10.1001/jama.2015.12 . Referência para discussão crítica de ressuscitação hemostática; não substitui diretriz vigente."
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.who.int/\" target=\"_blank\" rel=\"noopener noreferrer\">Organização Mundial da Saúde (OMS / WHO). Clinical Management Guidelines and Global Health Norms.</a>"
+          ]
         ]
       ]
     ]

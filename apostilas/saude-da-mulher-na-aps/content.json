@@ -2,8 +2,8 @@
   "v": 2,
   "s": "saude-da-mulher-na-aps",
   "t": "Saúde da Mulher na Atenção Primária à Saúde",
-  "p": "Saúde da Mulher na Atenção Primária à Saúde — Livro-Texto LURIA",
-  "d": "Tratado de Saúde da Mulher na Atenção Básica: Diretrizes da PNAISM, Método Clínico Centrado na Pessoa, rastreamento de câncer de colo de útero e mama (MS/INCA), critérios médicos de elegibilidade contraceptiva da OMS e nova Lei de Planejamento Familiar (Lei 14.443/2022), rotina de pré-natal compartilhado, abordagem da violência doméstica e sexual segundo a Lei Maria da Penha com profilaxia de ISTs e notificação compulsória, manejo do climatério e atenção à saúde da mulher negra, indígena e LGBTQIA+.",
+  "p": "Tratado de Saúde da Mulher na Atenção Básica: Diretrizes da PNAISM, Método Clínico Centrado na Pessoa, rastreamento de câncer de colo de útero e mama (MS/INCA), critérios médicos de elegibilidade contraceptiva da OMS e nova Lei de Planejamento Familiar (Lei 14.443/2022), rotina de pré-natal compartilhado, abordagem da violência doméstica e sexual segundo a Lei Maria da Penha com profilaxia de ISTs e notificação compulsória, manejo do climatério e atenção à saúde da mulher negra, indígena e LGBTQIA+. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Saúde da Mulher na Atenção Básica: Diretrizes da PNAISM, Método Clínico Centrado na Pessoa, rastreamento de câncer de colo de útero e mama (MS/INCA), critérios médicos de elegibilidade contraceptiva da OMS e nova Lei de Planejamento Familiar (Lei 14.443/2022), rotina de pré-natal compartilhado, abordagem da violência doméstica e sexual segundo a Lei Maria da Penha com profilaxia de ISTs e notificação compulsória, manejo do climatério e atenção à saúde da mulher negra, indígena e LGBTQIA+. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Medicina Preventiva",
   "m": "Medicina de Família e Comunidade / Ginecologia e Obstetrícia na APS",
   "h": [
@@ -158,6 +158,10 @@
         [
           "p",
           "A mulher frequentemente chega à unidade carregando uma sobrecarga desproporcional de trabalho doméstico, cuidado de filhos e idosos enfermos (a chamada <em>economia do cuidado</em>), além de vivenciar jornadas duplas ou triplas de trabalho. O profissional de saúde deve oferecer um ambiente seguro, com privacidade acústica e visual inviolável, pontualidade, linguagem clara e ausência de julgamentos morais sobre escolhas sexuais, práticas eróticas, número de parceiros, métodos contraceptivos ou interrupções de gestação prévias."
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina Preventiva, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "4",
@@ -629,7 +633,7 @@
             [
               "<strong>1º Trimestre (ou Primeira Consulta)</strong>",
               "- Tipagem sanguínea e Fator Rh;<br>\n        - Teste de Coombs indireto (se Rh negativo);<br>\n        - Hemograma completo;<br>\n        - Glicemia de jejum;<br>\n        - Testes rápidos para Sífilis e HIV;<br>\n        - Sorologia para Hepatite B (HBsAg);<br>\n        - Sorologia para Toxoplasmose (IgM e IgG);<br>\n        - Urina tipo 1 (EAS) e Urocultura com antibiograma;<br>\n        - Exame parasitológico de fezes (se indicação clínica).",
-              "- <strong>Bacteriúria Assintomática:</strong> Urocultura &ge; 100.000 UFC/mL em gestante EXIGE tratamento imediato (cefalexina, amoxicilina-clavulanato, nitrofurantoína ou fosfomicina) e controle com nova urocultura pós-tratamento para prevenir pielonefrite aguda e prematuridade.<br>\n        - <strong>Sífilis Gestacional:</strong> Teste rápido positivo = iniciar IMEDIATAMENTE Penicilina Benzatina (sem aguardar teste confirmatório ou VDRL). Sífilis primária, secundária ou latente recente: Penicilina Benzatina 2,4 milhões UI IM dose única (1,2 milhão UI em cada glúteo). Sífilis terciária, latente tardia ou duração indeterminada: 2,4 milhões UI IM semanalmente por 3 semanas consecutivas (total de 7,2 milhões UI). Tratar parceria sexual.<br>\n        - <strong>Toxoplasmose IgM e IgG negativos:</strong> Gestante suscetível = orientações higienodietéticas rígidas (evitar carnes cruas, contato com fezes de felinos) e repetir sorologia trimestralmente."
+              "- <strong>Bacteriúria Assintomática:</strong> Urocultura &ge; 100.000 UFC/mL em gestante EXIGE tratamento imediato (Cefalexina (500 mg VO a cada 6 horas), Amoxicilina-Clavulanato (875/125 mg VO 12/12h ou 1g/200mg EV 8/8h), Nitrofurantoína (100 mg VO a cada 6 horas por 5 a 7 dias, ou macrocristais 100 mg 12/12h) ou Fosfomicina trometamol (3 g VO em dose única)) e controle com nova urocultura pós-tratamento para prevenir pielonefrite aguda e prematuridade.<br>\n        - <strong>Sífilis Gestacional:</strong> Teste rápido positivo = iniciar IMEDIATAMENTE Penicilina Benzatina (sem aguardar teste confirmatório ou VDRL). Sífilis primária, secundária ou latente recente: Penicilina Benzatina 2,4 milhões UI IM dose única (1,2 milhão UI em cada glúteo). Sífilis terciária, latente tardia ou duração indeterminada: 2,4 milhões UI IM semanalmente por 3 semanas consecutivas (total de 7,2 milhões UI). Tratar parceria sexual.<br>\n        - <strong>Toxoplasmose IgM e IgG negativos:</strong> Gestante suscetível = orientações higienodietéticas rígidas (evitar carnes cruas, contato com fezes de felinos) e repetir sorologia trimestralmente."
             ],
             [
               "<strong>2º Trimestre</strong>",
@@ -639,7 +643,7 @@
             [
               "<strong>3º Trimestre (por volta da 28ª a 30ª semana)</strong>",
               "- Hemograma completo;<br>\n        - Glicemia de jejum (se TOTG não realizado);<br>\n        - Testes rápidos para Sífilis e HIV repetidos;<br>\n        - Sorologia para Hepatite B (HBsAg) repetida;<br>\n        - Sorologia para Toxoplasmose (se suscetível no 1º tri);<br>\n        - Urina tipo 1 e Urocultura com antibiograma;<br>\n        - <em>Swab vaginorretal para Streptococcus do Grupo B (EGB / S. agalactiae) entre 35 e 37 semanas</em> (conforme disponibilidade municipal/estadual).",
-              "- <strong>Anemia na Gestação:</strong> Hemoglobina &lt; 11 g/dL define anemia gestacional. Se Hb entre 8 e 11 g/dL (leve a moderada): dobrar suplementação com Sulfato Ferroso para 120 a 200 mg de ferro elementar/dia e repetir em 30 a 60 dias. Se Hb &lt; 8 g/dL: encaminhar ao PNAR.<br>\n        - <strong>Profilaxia Intraparto para EGB:</strong> Indicada se cultura positiva, urocultura com EGB em qualquer momento da gestação ou filho anterior com sepse por EGB. Profilaxia intraparto feita com Penicilina Cristalina ou Ampicilina endovenosa a cada 4h até o clampeamento do cordão."
+              "- <strong>Anemia na Gestação:</strong> Hemoglobina &lt; 11 g/dL define anemia gestacional. Se Hb entre 8 e 11 g/dL (leve a moderada): dobrar suplementação com Sulfato Ferroso para 120 a 200 mg de ferro elementar/dia e repetir em 30 a 60 dias. Se Hb &lt; 8 g/dL: encaminhar ao PNAR.<br>\n        - <strong>Profilaxia Intraparto para EGB:</strong> Indicada se cultura positiva, urocultura com EGB em qualquer momento da gestação ou filho anterior com sepse por EGB. Profilaxia intraparto feita com Penicilina Cristalina ou Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) endovenosa a cada 4h até o clampeamento do cordão."
             ]
           ],
           "book-table"
@@ -767,7 +771,7 @@
             [
               "<strong>Profilaxia das ISTs Bacterianas Não Virais (Sífilis, Gonorreia, Clamídia e Tricomoníase)</strong>",
               "Imediata na admissão (mesmo dia).",
-              "<strong>Tratamento Sindrômico Triplo de Cobertura Ampliada:</strong><br>\n        - <strong>Penicilina Benzatina:</strong> 2,4 milhões UI IM (1,2 milhão UI em cada glúteo) dose única (prevenção de Sífilis);<br>\n        - <strong>Ceftriaxona:</strong> 500 mg IM dose única (prevenção de <em>Neisseria gonorrhoeae</em>);<br>\n        - <strong>Azitromicina:</strong> 1 g (1.000 mg) VO dose única (prevenção de <em>Chlamydia trachomatis</em>);<br>\n        - <strong>Metronidazol:</strong> 2 g (4 comprimidos de 500 mg) VO dose única (prevenção de <em>Trichomonas vaginalis</em>)."
+              "<strong>Tratamento Sindrômico Triplo de Cobertura Ampliada:</strong><br>\n        - <strong>Penicilina Benzatina:</strong> 2,4 milhões UI IM (1,2 milhão UI em cada glúteo) dose única (prevenção de Sífilis);<br>\n        - <strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana):</strong> 500 mg IM dose única (prevenção de <em>Neisseria gonorrhoeae</em>);<br>\n        - <strong>Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias):</strong> 1 g (1.000 mg) VO dose única (prevenção de <em>Chlamydia trachomatis</em>);<br>\n        - <strong>Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase):</strong> 2 g (4 comprimidos de 500 mg) VO dose única (prevenção de <em>Trichomonas vaginalis</em>)."
             ],
             [
               "<strong>Profilaxia do Tétano</strong>",

@@ -2,8 +2,8 @@
   "v": 2,
   "s": "seguranca-do-paciente-e-prevencao-de-eventos-adversos",
   "t": "Segurança do Paciente e Prevenção de Eventos Adversos",
-  "p": "Segurança do Paciente e Prevenção de Eventos Adversos — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "p": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Saúde Coletiva",
   "m": "Saúde Coletiva",
   "h": [
@@ -174,8 +174,8 @@
         [
           "u",
           [
-            "<strong>Reação Adversa a Medicamento (RAM — Conceito da OMS):</strong> Qualquer resposta prejudicial ou indesejável e não intencional a um medicamento, que ocorre nas <strong>doses normalmente utilizadas no ser humano</strong> para profilaxia, diagnóstico ou terapia de doença. A RAM clássica (ex.: paciente que nunca havia usado dipirona ou amoxicilina, sem histórico prévio conhecido de alergia, recebe a dose correta prescrita e desenvolve choque anafilático ou Síndrome de Stevens-Johnson) é um <strong>Evento Adverso NÃO EVITÁVEL</strong> (não houve erro humano na prescrição nem na administração!).",
-            "<strong>Erro de Medicação:</strong> Qualquer evento <strong>evitável</strong> que pode causar ou induzir ao uso inapropriado de medicamento ou prejudicar o paciente (erro de prescrição, dispensação, preparo ou administração). Se um paciente já tem alergia grave à Penicilina registrada no prontuário e na pulseira vermelha, mas mesmo assim recebe Amoxicilina e faz anafilaxia, trata-se de um <strong>Evento Adverso Medicamentoso EVITÁVEL decorrente de Erro de Medicação</strong>!"
+            "<strong>Reação Adversa a Medicamento (RAM — Conceito da OMS):</strong> Qualquer resposta prejudicial ou indesejável e não intencional a um medicamento, que ocorre nas <strong>doses normalmente utilizadas no ser humano</strong> para profilaxia, diagnóstico ou terapia de doença. A RAM clássica (ex.: paciente que nunca havia usado Dipirona (1 g EV ou VO a cada 6 horas em adultos, ou 15 a 25 mg/kg/dose até 4x/dia em crianças) ou Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria), sem histórico prévio conhecido de alergia, recebe a dose correta prescrita e desenvolve choque anafilático ou Síndrome de Stevens-Johnson) é um <strong>Evento Adverso NÃO EVITÁVEL</strong> (não houve erro humano na prescrição nem na administração!).",
+            "<strong>Erro de Medicação:</strong> Qualquer evento <strong>evitável</strong> que pode causar ou induzir ao uso inapropriado de medicamento ou prejudicar o paciente (erro de prescrição, dispensação, preparo ou administração). Se um paciente já tem alergia grave à Penicilina registrada no prontuário e na pulseira vermelha, mas mesmo assim recebe Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) e faz anafilaxia, trata-se de um <strong>Evento Adverso Medicamentoso EVITÁVEL decorrente de Erro de Medicação</strong>!"
           ]
         ]
       ]
@@ -199,6 +199,10 @@
         [
           "p",
           "O psicólogo cognitivo britânico <strong>James Reason</strong> revolucionou a segurança da aviação, das usinas nucleares e da medicina ao propor a <strong>Abordagem Sistêmica do Erro Humano</strong>, ilustrada pela célebre metáfora do <strong>Modelo do Queijo Suíço (<em>Swiss Cheese Model</em>)</strong>:"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Saúde Coletiva, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "u",
@@ -419,7 +423,7 @@
             "<strong>Anticoagulantes e Trombolíticos:</strong> Heparina não fracionada EV/SC, Heparinas de baixo peso molecular (Enoxaparina), Varfarina, Anticoagulantes Orais Diretos (Dabigatrana, Rivaroxabana, Apixabana, Edoxabana), Alteplase (rt-PA) e Tenecteplase.",
             "<strong>Agonistas Adrenérgicos e Vasoativos Endovenosos:</strong> Epinefrina (Adrenalina), Norepinefrina (Noradrenalina), Dopamina, Dobutamina, Vasopressina, Milrinona e Nitroprussiato de Sódio.",
             "<strong>Quimioterápicos Antineoplásicos (Parenterais e Orais):</strong> Ex.: Metotrexato oral (erro fatal clássico quando o metotrexato prescrito para artrite reumatoide na dose de 1x por semana é tomado 1x por dia pelo paciente, causando aplasia medular letal!).",
-            "<strong>Opioides (Endovenosos, Transdérmicos e Orais), Sedativos Moderados, Anestésicos Gerais e Bloqueadores Neuromusculares:</strong> Morfina, Fentanil, Metadona, Midazolam, Propofol, Cetamina, Succinilcolina, Rocurônio, Pancurônio e Atracúrio (bloqueadores neuromusculares devem ter alerta vermelho em toda a embalagem: <em>\"CUIDADO: AGENTE PARALISANTE — CAUSA PARADA RESPIRATÓRIA\"</em>)."
+            "<strong>Opioides (Endovenosos, Transdérmicos e Orais), Sedativos Moderados, Anestésicos Gerais e Bloqueadores Neuromusculares:</strong> Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor), Fentanil, Metadona, Midazolam, Propofol, Cetamina, Succinilcolina, Rocurônio, Pancurônio e Atracúrio (bloqueadores neuromusculares devem ter alerta vermelho em toda a embalagem: <em>\"CUIDADO: AGENTE PARALISANTE — CAUSA PARADA RESPIRATÓRIA\"</em>)."
           ]
         ],
         [
@@ -779,8 +783,8 @@
         [
           "u",
           [
-            "<strong>Situação 1 (Leito 1):</strong> O médico prescreve Cefepima 2 g EV para o Sr. José da Silva (leito 1A), que possui alergia grave documentada a cefalosporinas (anafilaxia prévia). Antes de conectar o equipo no paciente, a enfermeira do setor lê a pulseira vermelha de alergia no punho do Sr. José e suspende a infusão na bancada.",
-            "<strong>Situação 2 (Leito 2):</strong> O técnico de enfermagem administra por engano Paracetamol 750 mg VO para o paciente do leito 2B (que não tinha febre nem dor, pois o comprimido era destinado ao leito 2A). O paciente do leito 2B tem função hepática normal, não tem alergia e evolui totalmente assintomático e sem alterações laboratoriais.",
+            "<strong>Situação 1 (Leito 1):</strong> O médico prescreve Cefepima (2 g EV a cada 8 horas em infusão estendida de 3 horas) 2 g EV para o Sr. José da Silva (leito 1A), que possui alergia grave documentada a cefalosporinas (anafilaxia prévia). Antes de conectar o equipo no paciente, a enfermeira do setor lê a pulseira vermelha de alergia no punho do Sr. José e suspende a infusão na bancada.",
+            "<strong>Situação 2 (Leito 2):</strong> O técnico de enfermagem administra por engano Paracetamol (500 a 1.000 mg VO a cada 6 horas, respeitando dose máxima de 4 g/dia) 750 mg VO para o paciente do leito 2B (que não tinha febre nem dor, pois o comprimido era destinado ao leito 2A). O paciente do leito 2B tem função hepática normal, não tem alergia e evolui totalmente assintomático e sem alterações laboratoriais.",
             "<strong>Situação 3 (Leito 3):</strong> Ao final do plantão de 24 horas, exausto, o técnico vai lavar o cateter venoso central da Sra. Marta (62 anos, internada para controle de celulite em membro inferior) com o que acreditava ser uma ampola de 10 mL de Soro Fisiológico 0,9%. Na verdade, ele aspirou uma ampola de 10 mL de <strong>Cloreto de Potássio (KCl) a 19,1% puro</strong> e injetou em <em>bolus</em> no cateter central. A paciente desenvolve imediatamente fibrilação ventricular/assistolia refratária às manobras de ressuscitação cardiopulmonar e evolui a óbito às 05h30 da manhã. Na manhã seguinte, o diretor administrativo propõe demitir o técnico por justa causa, arquivar o caso internamente sem notificar a Anvisa e informar à família que a paciente teve um \"infarto fulminante natural\"."
           ]
         ],
@@ -831,7 +835,7 @@
         ],
         [
           "p",
-          "<strong>Apresentação do Caso:</strong> Em uma Unidade de Terapia Intensiva (UTI), o médico plantonista examina o paciente do Box 4, um idoso de 77 anos internado há 15 dias em uso de meropenem e vancomicina que iniciou quadro de diarreia líquida fétida volumosa (8 episódios/dia), febre (38,5°C), leucocitose de 24.000/mm³ e pesquisa de toxinas A e B nas fezes positiva para <strong><em>Clostridioides difficile</em></strong>. Ao terminar a palpação abdominal do paciente (usando luvas de procedimento e avental de precaução de contato), o médico retira as luvas, aplica rapidamente <strong>álcool em gel a 70% nas mãos por 15 segundos</strong> (sem lavar na pia com água e sabonete) e dirige-se imediatamente ao Box 5 para examinar um paciente imunossuprimido neutropênico. Poucos minutos depois, o laboratório liga para a enfermeira do Box 5 informando um resultado crítico de potássio sérico de 2,1 mEq/L, e o médico, que já havia descido para o refeitório, ordena por telefone: <em>\"Faça reposição endovenosa de cloreto de potássio agora\"</em>, desligando o telefone sem que a enfermeira anotasse ou repetisse a prescrição."
+          "<strong>Apresentação do Caso:</strong> Em uma Unidade de Terapia Intensiva (UTI), o médico plantonista examina o paciente do Box 4, um idoso de 77 anos internado há 15 dias em uso de Meropenem (1 g EV em infusão prolongada a cada 8 horas, ou 2 g EV 8/8h em meningite bacteriana) e Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) que iniciou quadro de diarreia líquida fétida volumosa (8 episódios/dia), febre (38,5°C), leucocitose de 24.000/mm³ e pesquisa de toxinas A e B nas fezes positiva para <strong><em>Clostridioides difficile</em></strong>. Ao terminar a palpação abdominal do paciente (usando luvas de procedimento e avental de precaução de contato), o médico retira as luvas, aplica com agilidade <strong>álcool em gel a 70% nas mãos por 15 segundos</strong> (sem lavar na pia com água e sabonete) e dirige-se imediatamente ao Box 5 para examinar um paciente imunossuprimido neutropênico. Poucos minutos depois, o laboratório liga para a enfermeira do Box 5 informando um resultado crítico de potássio sérico de 2,1 mEq/L, e o médico, que já havia descido para o refeitório, ordena por telefone: <em>\"Faça reposição endovenosa de cloreto de potássio agora\"</em>, desligando o telefone sem que a enfermeira anotasse ou repetisse a prescrição."
         ],
         [
           "4",
@@ -1198,7 +1202,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Saúde Coletiva. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1207,8 +1236,7 @@
             "<a href=\"https://www.who.int\" target=\"_blank\" rel=\"noopener noreferrer\">World Health Organization (WHO) — Global Patient Safety Action Plan 2021–2030 & WHO Surgical Safety Checklist / 5 Moments for Hand Hygiene</a>",
             "<a href=\"https://proqualis.fiocruz.br\" target=\"_blank\" rel=\"noopener noreferrer\">Reason J — Human Error: Models and Management (BMJ / Swiss Cheese Model) & Vincent C — Protocolo de Londres para Investigação de Incidentes Clínicos (Proqualis/Fiocruz)</a>",
             "<a href=\"https://www.ismp-brasil.org\" target=\"_blank\" rel=\"noopener noreferrer\">Institute for Safe Medication Practices (ISMP Brasil) — Medicamentos Potencialmente Perigosos de Uso Hospitalar e Ambulatorial</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

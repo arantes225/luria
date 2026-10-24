@@ -79,7 +79,7 @@
         ],
         [
           "p",
-          "A síndrome coronariana aguda (SCA) reúne apresentações de isquemia miocárdica aguda geralmente associadas à alteração súbita da perfusão coronariana. Sua relevância não está apenas na dor torácica: dispneia, sudorese, náusea, desconforto epigástrico e queda do nível funcional podem ser manifestações, sobretudo em idosos, pessoas com diabetes e mulheres. A triagem identifica rapidamente quem precisa de reperfusão imediata, quem necessita de investigação seriada e quem apresenta diagnóstico alternativo potencialmente fatal."
+          "A síndrome coronariana aguda (SCA) reúne apresentações de isquemia miocárdica aguda geralmente associadas à alteração súbita da perfusão coronariana. Sua relevância não está apenas na dor torácica: dispneia, sudorese, náusea, desconforto epigástrico e queda do nível funcional podem ser manifestações, sobretudo em idosos, pessoas com diabetes e mulheres. A triagem identifica com agilidade quem precisa de reperfusão imediata, quem necessita de investigação seriada e quem apresenta diagnóstico alternativo potencialmente fatal."
         ],
         [
           "p",
@@ -131,6 +131,10 @@
           "De onde vem o sangue que nutre o miocárdio?"
         ],
         [
+          "raw",
+          "<figure data-luria-curated-image=\"Ha1.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Ha1.jpg\" alt=\"Cineangiocoronariografia demonstrando estenose coronariana crítica\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Cineangiocoronariografia demonstrando estenose coronariana crítica</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AHa1.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Bleiglass ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
           "p",
           "A artéria coronária esquerda costuma dividir-se em descendente anterior (DA) e circunflexa (CX); a direita irriga grande parte da parede inferior em corações com dominância direita. A DA abastece parede anterior e septo, a CX participa da irrigação lateral e a coronária direita frequentemente supre parede inferior e sistema de condução. As correspondências por derivações do ECG são pistas anatômicas, não um mapa perfeito: variam com dominância, extensão da lesão e anatomia individual."
         ],
@@ -167,6 +171,14 @@
         [
           "p",
           "Na suspeita de SCA, obter e interpretar ECG de 12 derivações em até <strong>10 minutos do primeiro contato médico</strong>, com monitorização, avaliação de sinais vitais e acesso à avaliação emergencial conforme risco. Documentar horário de início dos sintomas, contato, ECG, medicações, alergias e achados de instabilidade. Comparar ECG anterior, mas não esperar por ele em emergência. A diretriz ACC/AHA 2025 recomenda repetir ECG quando o inicial não é diagnóstico e a suspeita clínica persiste."
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"ECG_tako-tsubo.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/ECG%20tako-tsubo.jpg\" alt=\"Padrão de Síndrome de Wellens em derivações precordiais\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Padrão de Síndrome de Wellens em derivações precordiais</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AECG%20tako-tsubo.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">J. Heuser JHeuser ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"12_Lead_EKG_ST_Elevation_tracing_only.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/12%20Lead%20EKG%20ST%20Elevation%20tracing%20only.jpg\" alt=\"ECG com supradesnivelamento do segmento ST (IAMCSST)\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>ECG com supradesnivelamento do segmento ST (IAMCSST)</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3A12%20Lead%20EKG%20ST%20Elevation%20tracing%20only.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Displaced ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
           "3",
@@ -610,7 +622,7 @@
           ],
           [
             [
-              "Com supra, hemodinâmica acessível rapidamente",
+              "Com supra, hemodinâmica acessível com agilidade",
               "Ativar ICP primária",
               "Aguardar resultado de troponina para decidir"
             ],
@@ -730,8 +742,8 @@
           "Antes de fibrinólise é indispensável identificar hemorragia intracraniana prévia, malformação vascular cerebral, neoplasia intracraniana de maior risco, AVC isquêmico recente conforme intervalo da diretriz, suspeita de dissecção de aorta, sangramento ativo relevante, trauma craniofacial grave recente, cirurgia intracraniana recente e outras situações que aumentam dramaticamente risco de hemorragia. A lista operacional de contraindicações absolutas e relativas deve ser conferida no protocolo institucional vigente. Gravidez/puerpério, anticoagulante oral, cirurgia recente, PA muito elevada refratária e grande risco hemorrágico exigem análise individual especializada."
         ],
         [
-          "p",
-          "Exemplo de erro crítico: homem de 61 anos chega com dor torácica intensa e supra inferior, mas também relata dor dorsal súbita e apresenta pulsos femorais assimétricos. Administrar fibrinolítico sem discutir dissecção aórtica pode agravar ruptura ou tamponamento. A decisão imediata é reavaliar o diagnóstico com sinais clínicos, exame e imagem quando factível, envolvendo cardiologia/cirurgia cardiovascular. Outro erro é presumir que idade acima de 75 anos é contraindicação absoluta; a idade aumenta risco hemorrágico, mas não elimina por si só benefício potencial. O regime pode exigir ajuste e preferências distintas."
+          "raw",
+          "<div class=\"book-callout-warning\"><strong class=\"callout-title\">⚠️ Alerta de Segurança — WARNING</strong><p>Exemplo de erro crítico: homem de 61 anos chega com dor torácica intensa e supra inferior, mas também relata dor dorsal súbita e apresenta pulsos femorais assimétricos. Administrar fibrinolítico sem discutir dissecção aórtica pode agravar ruptura ou tamponamento. A decisão imediata é reavaliar o diagnóstico com sinais clínicos, exame e imagem quando factível, envolvendo cardiologia/cirurgia cardiovascular. Outro erro é presumir que idade acima de 75 anos é contraindicação absoluta; a idade aumenta risco hemorrágico, mas não elimina por si só benefício potencial. O regime pode exigir ajuste e preferências distintas.</p></div>"
         ],
         [
           "3",
@@ -804,7 +816,7 @@
         ],
         [
           "p",
-          "Segundo a ACC/AHA 2025, a fibrinólise do IAM com supra deve ser acompanhada de AAS e clopidogrel, e não de substituição automática por prasugrel ou ticagrelor antes da lise. O clopidogrel é administrado com dose inicial de 300 mg em pessoas com menos de 75 anos no regime descrito, seguida de 75 mg/dia; pessoas com 75 anos ou mais recebem inicialmente 75 mg sem ataque de 300 mg. AAS é carregado por via oral quando não há contraindicação e mantido em dose baixa de 75–100 mg/dia. Essas faixas precisam ser conferidas com medicações já tomadas, alergias, peso, via de administração e protocolo local."
+          "Segundo a ACC/AHA 2025, a fibrinólise do IAM com supra deve ser acompanhada de AAS e clopidogrel, e não de substituição automática por prasugrel ou ticagrelor antes da lise. O clopidogrel é administrado com dose inicial de 300 mg em pessoas com menos de 75 anos no regime descrito, seguida de 75 mg/dia; pessoas com 75 anos ou mais recebem inicialmente 75 mg sem ataque de 300 mg. AAS é carregado por via oral quando não há contraindicação e mantido em dose inicial titulada de 75–100 mg/dia. Essas faixas precisam ser conferidas com medicações já tomadas, alergias, peso, via de administração e protocolo local."
         ],
         [
           "p",
@@ -1371,7 +1383,7 @@
         ],
         [
           "p",
-          "Oxigênio suplementar é tratamento para hipoxemia, não analgésico nem ritual obrigatório diante de elevação do ST. Em saturações ≥90% sem outra indicação respiratória, oxigênio de rotina não mostrou benefício e não deve ser prescrito só porque há infarto. Quando a saturação está abaixo de 90%, corrigir hipoxemia e monitorar resposta. Nitratos podem aliviar dor e hipertensão associadas, mas não corrigem coronária ocluída e podem precipitar hipotensão no infarto de VD ou após uso recente de inibidores da PDE-5. Morfina pode ser usada em situações selecionadas, reconhecendo seus efeitos sobre ventilação e absorção de P2Y12."
+          "Oxigênio suplementar é tratamento para hipoxemia, não analgésico nem ritual obrigatório diante de elevação do ST. Em saturações ≥90% sem outra indicação respiratória, oxigênio de rotina não mostrou benefício e não deve ser prescrito só porque há infarto. Quando a saturação está abaixo de 90%, corrigir hipoxemia e monitorar resposta. Nitratos podem aliviar dor e hipertensão associadas, mas não corrigem coronária ocluída e podem precipitar hipotensão no infarto de VD ou após uso recente de inibidores da PDE-5. Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor) pode ser usada em situações selecionadas, reconhecendo seus efeitos sobre ventilação e absorção de P2Y12."
         ],
         [
           "p",
@@ -1530,7 +1542,32 @@
       [
         [
           "2",
-          "Referências e limites editoriais"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1540,9 +1577,9 @@
             "<a href=\"https://professional.heart.org/en/science-news/2025-guideline-for-the-management-of-patients-with-acute-coronary-syndromes\" target=\"_blank\" rel=\"noopener noreferrer\">American Heart Association. Diretriz SCA 2025 — página oficial de suporte.</a>",
             "<a href=\"https://www.portal.cardiol.br/diretrizes\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Cardiologia. Catálogo de diretrizes vigente — consultar protocolos brasileiros de SCA.</a>",
             "<a href=\"https://www.scielo.br/j/abc/a/GKTmBKCfKXHmSdYCnyJv9PC/\" target=\"_blank\" rel=\"noopener noreferrer\">SBC. Diretriz de Síndrome Coronariana Crônica 2025 — comparação de prevenção secundária, NÃO substitui diretriz para SCA.</a>",
-            "<a href=\"https://doi.org/10.1093/eurheartj/ehad191\" target=\"_blank\" rel=\"noopener noreferrer\">ESC 2023. Guidelines for the management of acute coronary syndromes (estratégia invasiva e farmacoinvasiva, MINOCA).</a>"
-          ],
-          0
+            "<a href=\"https://doi.org/10.1093/eurheartj/ehad191\" target=\"_blank\" rel=\"noopener noreferrer\">ESC 2023. Guidelines for the management of acute coronary syndromes (estratégia invasiva e farmacoinvasiva, MINOCA).</a>",
+            "<strong>Estado editorial (14/10/2026, ciclo de aprofundamento):</strong> o rascunho já desenvolve ECG e equivalentes de oclusão, troponina e definição de IAM, estratificação invasiva do NSTEMI, ICP e farmacoinvasiva, farmacologia de referência, complicações e seguimento, com casos e questões. A metragem de prosa aparente pode ultrapassar 60 mil caracteres, mas não substitui auditoria de utilidade ou autossuficiência. Continuam pendentes revisão independente de doses/contraindicações e diretrizes brasileiras por cardiologista, correções de redundância editorial, candidatos de imagens aprovados no Admin, desempenho de renderização desktop/PWA e correspondência final com questões e fontes. Este conteúdo não é protocolo clínico prescritivo pronto e não deve ser publicado antes de certificação."
+          ]
         ]
       ]
     ]

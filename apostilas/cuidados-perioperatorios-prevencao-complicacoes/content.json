@@ -140,6 +140,18 @@
           "Três pausas com finalidades diferentes"
         ],
         [
+          "raw",
+          "<figure data-luria-curated-image=\"Compression_socks.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Compression%20socks.jpg\" alt=\"Profilaxia mecânica de trombose venosa profunda com compressão elástica/pneumática\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Profilaxia mecânica de trombose venosa profunda com compressão elástica/pneumática</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ACompression%20socks.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">DinoDerm ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Iranian_surgical_technologist_with_hijab_02.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Iranian%20surgical%20technologist%20with%20hijab%2002.jpg\" alt=\"Lista de Verificação de Segurança Cirúrgica da OMS (Checklist)\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Lista de Verificação de Segurança Cirúrgica da OMS (Checklist)</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AIranian%20surgical%20technologist%20with%20hijab%2002.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">SnowBink ↗</a> (CC0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "p",
           "A Lista de Verificação de Segurança Cirúrgica da OMS reúne 19 itens em três momentos: <strong>Sign in</strong> antes da indução, <strong>Time out</strong> antes da incisão e <strong>Sign out</strong> antes de sair da sala. O objetivo não é preencher um formulário depois, mas reunir ativamente equipe de anestesia, cirurgia e enfermagem para checar paciente, sítio, procedimento, alergias, via aérea, profilaxia antibiótica, imagens relevantes, perda sanguínea esperada, contagens, rotulagem de peças e plano imediato."
         ],
@@ -201,7 +213,7 @@
         ],
         [
           "p",
-          "Antibioticoprofilaxia é administração de antimicrobiano <strong>antes da contaminação cirúrgica prevista</strong> para alcançar concentrações teciduais adequadas no momento da incisão. Não é tratamento de infecção já instalada. A OMS recomenda que a profilaxia, quando indicada para o procedimento, seja administrada antes da incisão, dentro dos <strong>120 minutos</strong> anteriores e considerando a farmacocinética. Para cefazolina e muitos agentes de meia-vida curta, protocolos costumam preferir administração dentro de 60 minutos antes da incisão; vancomicina e outros agentes de infusão prolongada exigem início mais precoce para completar infusão. Escolha, dose e redose dependem de peso, tipo de operação, alergias verdadeiras, função renal, duração e perda sanguínea."
+          "Antibioticoprofilaxia é administração de antimicrobiano <strong>antes da contaminação cirúrgica prevista</strong> para alcançar concentrações teciduais adequadas no momento da incisão. Não é tratamento de infecção já instalada. A OMS recomenda que a profilaxia, quando indicada para o procedimento, seja administrada antes da incisão, dentro dos <strong>120 minutos</strong> anteriores e considerando a farmacocinética. Para cefazolina e muitos agentes de meia-vida curta, protocolos costumam preferir administração dentro de 60 minutos antes da incisão; Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) e outros agentes de infusão prolongada exigem início mais precoce para completar infusão. Escolha, dose e redose dependem de peso, tipo de operação, alergias verdadeiras, função renal, duração e perda sanguínea."
         ],
         [
           "p",
@@ -308,7 +320,7 @@
         ],
         [
           "p",
-          "A farmacocinética explica o timing: a concentração no compartimento tecidual não atinge nível adequado instantaneamente após prescrição ou passagem por acesso venoso. Para antimicrobianos de infusão curta, é frequente administrar dentro dos sessenta minutos que antecedem a incisão; a OMS utiliza intervalo geral de até 120 minutos conforme o fármaco, para permitir infusão mais longa quando necessário. A vancomicina requer planejamento antecipado do início da infusão, enquanto cefazolina permite administração mais próxima da incisão. A escolha do marcador institucional — início da infusão, administração completa ou intervalo a partir da incisão — deve ser padronizada e comunicada em time-out."
+          "A farmacocinética explica o timing: a concentração no compartimento tecidual não atinge nível adequado instantaneamente após prescrição ou passagem por acesso venoso. Para antimicrobianos de infusão curta, é frequente administrar dentro dos sessenta minutos que antecedem a incisão; a OMS utiliza intervalo geral de até 120 minutos conforme o fármaco, para permitir infusão mais longa quando necessário. A Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) requer planejamento antecipado do início da infusão, enquanto cefazolina permite administração mais próxima da incisão. A escolha do marcador institucional — início da infusão, administração completa ou intervalo a partir da incisão — deve ser padronizada e comunicada em time-out."
         ],
         [
           "p",
@@ -324,7 +336,7 @@
         ],
         [
           "p",
-          "A indicação de cefazolina exige flora esperada e avaliação de alergia. 'Sou alérgico a penicilina' pode significar desde diarreia até anafilaxia verdadeira; a história precisa ser qualificada, e protocolos modernos evitam trocar cefazolina automaticamente por vancomicina em qualquer relato remoto de reação leve. Quando há reação imediata grave a betalactâmicos ou outra contraindicação específica, escolher alternativa recomendada para aquele procedimento e microbiologia. Vancomicina isoladamente não cobre todos os patógenos relevantes em cirurgia de cólon; carbapenêmico profilático de rotina aumenta pressão de seleção sem justificar benefício universal."
+          "A indicação de cefazolina exige flora esperada e avaliação de alergia. 'Sou alérgico a penicilina' pode significar desde diarreia até anafilaxia verdadeira; a história precisa ser qualificada, e protocolos modernos evitam trocar cefazolina automaticamente por Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) em qualquer relato remoto de reação leve. Quando há reação imediata grave a betalactâmicos ou outra contraindicação específica, escolher alternativa recomendada para aquele procedimento e microbiologia. Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) isoladamente não cobre todos os patógenos relevantes em cirurgia de cólon; carbapenêmico profilático de rotina aumenta pressão de seleção sem justificar benefício universal."
         ],
         [
           "t",
@@ -355,7 +367,7 @@
               "Cefazolina isolada pode ser insuficiente"
             ],
             [
-              "Vancomicina",
+              "Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL)",
               "Somente quando flora/colonização/alergia e protocolo indicarem",
               "Infusão mais longa; não usar indiscriminadamente"
             ],
@@ -401,7 +413,7 @@
         ],
         [
           "p",
-          "Hipotermia diminui perfusão periférica e altera coagulação e resposta imunológica, sobretudo em cirurgias longas e pacientes frágeis. Monitorizar temperatura e usar aquecimento ativo quando indicado reduz exposição; não se deve confundir febre séptica com necessidade de aquecer. Hiperglicemia perioperatória significativa aumenta risco infeccioso, mas metas glicêmicas extremamente estreitas com insulina e monitorização insuficiente podem causar hipoglicemia perigosa. A dose de insulina, frequência de checagem e alvo devem constar de protocolo específico, em vez de orientação genérica para 'baixar glicose rapidamente'."
+          "Hipotermia diminui perfusão periférica e altera coagulação e resposta imunológica, sobretudo em cirurgias longas e pacientes frágeis. Monitorizar temperatura e usar aquecimento ativo quando indicado reduz exposição; não se deve confundir febre séptica com necessidade de aquecer. Hiperglicemia perioperatória significativa aumenta risco infeccioso, mas metas glicêmicas extremamente estreitas com insulina e monitorização insuficiente podem causar hipoglicemia perigosa. A dose de insulina, frequência de checagem e alvo devem constar de protocolo específico, em vez de orientação genérica para 'baixar glicose com agilidade'."
         ],
         [
           "p",
@@ -599,7 +611,7 @@
             [
               "Hemorrágico",
               "Perda visível/oculta, taquicardia, hemoperitônio, Hb em queda tardia",
-              "Controle de fonte, protocolo de hemorragia e sangue conforme necessidade"
+              "Controle de fonte, protocolo de hemorragia e sangue conforme critérios clínicos objetivos"
             ],
             [
               "Distributivo/vasoplégico",
@@ -723,7 +735,7 @@
         ],
         [
           "p",
-          "<strong>Caso G — hipotensão e hemoglobina 'normal'.</strong> Homem de 48 anos na sala de recuperação após laparotomia apresenta FC 128, PA 85/50, pele fria e distensão abdominal crescente. Hb inicial é 12,4 g/dL, próxima ao pré-operatório. Isso não exclui hemorragia aguda; a dinâmica de perda pode preceder hemodiluição. Conduta: ressuscitação organizada, investigação e controle de sangramento, revisão do procedimento e hemoderivados conforme necessidade. Pulo do Gato: hemodinâmica e perda em curso importam mais que número inicial."
+          "<strong>Caso G — hipotensão e hemoglobina 'normal'.</strong> Homem de 48 anos na sala de recuperação após laparotomia apresenta FC 128, PA 85/50, pele fria e distensão abdominal crescente. Hb inicial é 12,4 g/dL, próxima ao pré-operatório. Isso não exclui hemorragia aguda; a dinâmica de perda pode preceder hemodiluição. Conduta: ressuscitação organizada, investigação e controle de sangramento, revisão do procedimento e hemoderivados conforme critérios clínicos objetivos. Pulo do Gato: hemodinâmica e perda em curso importam mais que número inicial."
         ],
         [
           "p",
@@ -1172,7 +1184,7 @@
         ],
         [
           "p",
-          "Dor pós-operatória mal controlada dificulta tosse, ventilação, mobilização e sono, além de contribuir para estresse e possível cronificação. Por outro lado, uso excessivo de opioides favorece náuseas, constipação, sedação, retenção urinária, depressão respiratória e íleo. Analgesia multimodal combina fármacos e técnicas de mecanismos complementares — paracetamol, anti-inflamatórios quando seguros, bloqueios de parede/locorregionais e opioides de resgate — segundo cirurgia, rins, sangramento, anastomoses e comorbidades."
+          "Dor pós-operatória mal controlada dificulta tosse, ventilação, mobilização e sono, além de contribuir para estresse e possível cronificação. Por outro lado, uso excessivo de opioides favorece náuseas, constipação, sedação, retenção urinária, depressão respiratória e íleo. Analgesia multimodal combina fármacos e técnicas de mecanismos complementares — Paracetamol (500 a 1.000 mg VO a cada 6 horas, respeitando dose máxima de 4 g/dia), anti-inflamatórios quando seguros, bloqueios de parede/locorregionais e opioides de resgate — segundo cirurgia, rins, sangramento, anastomoses e comorbidades."
         ],
         [
           "p",
@@ -1220,11 +1232,11 @@
         ],
         [
           "p",
-          "O paracetamol age predominantemente em mecanismos centrais, alivia dor leve a moderada e pode reduzir consumo de opioides em combinações. As diretrizes ERAS 2025 favorecem seu uso na cirurgia colorretal em pacientes elegíveis, ajustando dose a peso, doença hepática e álcool. Anti-inflamatórios não esteroidais reduzem mediadores inflamatórios e podem ser úteis, mas podem agravar injúria renal, sangramento, doença gastrointestinal e determinadas preocupações relativas a anastomoses. A relação entre AINEs e deiscência não é idêntica entre moléculas, doses e cirurgias; em anastomose de maior risco, a decisão pertence ao protocolo cirúrgico e anestésico."
+          "O Paracetamol (500 a 1.000 mg VO a cada 6 horas, respeitando dose máxima de 4 g/dia) age predominantemente em mecanismos centrais, alivia dor leve a moderada e pode reduzir consumo de opioides em combinações. As diretrizes ERAS 2025 favorecem seu uso na cirurgia colorretal em pacientes elegíveis, ajustando dose a peso, doença hepática e álcool. Anti-inflamatórios não esteroidais reduzem mediadores inflamatórios e podem ser úteis, mas podem agravar injúria renal, sangramento, doença gastrointestinal e determinadas preocupações relativas a anastomoses. A relação entre AINEs e deiscência não é idêntica entre moléculas, doses e cirurgias; em anastomose de maior risco, a decisão pertence ao protocolo cirúrgico e anestésico."
         ],
         [
           "p",
-          "Dipirona é opção analgésica e antipirética amplamente utilizada no Brasil, mas seu uso requer reconhecer alergia, hipotensão com infusão rápida em determinadas circunstâncias, raros eventos hematológicos graves e precauções de gestação. Não basta prescrever 'dipirona se dor' sem dose, via, intervalo e limites. Em pessoas com insuficiência renal, hepatopatia, hipotensão e fragilidade, a tolerância a qualquer classe muda. Analgésicos combinados podem conter paracetamol oculto; somar diferentes apresentações pode causar superdosagem mesmo sem intenção."
+          "Dipirona (1 g EV ou VO a cada 6 horas em adultos, ou 15 a 25 mg/kg/dose até 4x/dia em crianças) é opção analgésica e antipirética amplamente utilizada no Brasil, mas seu uso requer reconhecer alergia, hipotensão com infusão rápida em determinadas circunstâncias, raros eventos hematológicos graves e precauções de gestação. Não basta prescrever 'Dipirona (1 g EV ou VO a cada 6 horas em adultos, ou 15 a 25 mg/kg/dose até 4x/dia em crianças) se dor' sem dose, via, intervalo e limites. Em pessoas com insuficiência renal, hepatopatia, hipotensão e fragilidade, a tolerância a qualquer classe muda. Analgésicos combinados podem conter Paracetamol (500 a 1.000 mg VO a cada 6 horas, respeitando dose máxima de 4 g/dia) oculto; somar diferentes apresentações pode causar superdosagem mesmo sem intenção."
         ],
         [
           "p",
@@ -1236,7 +1248,7 @@
         ],
         [
           "p",
-          "Morfina, tramadol, oxicodona e outros opioides diferem em potência, metabolismo, interações e via. A escolha deve levar em conta idade, DRC, doença pulmonar, uso crônico prévio, apneia obstrutiva do sono, associação com benzodiazepínicos e perfil de dor. Na DRC, metabólitos ativos de certos opioides podem se acumular e causar sedação; em cirrose, o metabolismo também pode se modificar. A estratégia segura costuma priorizar menor dose efetiva, intervalo reavaliado, profilaxia de constipação quando apropriada e monitorização de sedação e respiração. Não transferir dose de opioide do centro cirúrgico diretamente para alta sem recalcular duração e necessidade."
+          "Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor), Tramadol (50 a 100 mg EV em infusão de 20 min ou VO a cada 6 a 8 horas - dose máxima 400 mg/dia), oxicodona e outros opioides diferem em potência, metabolismo, interações e via. A escolha deve levar em conta idade, DRC, doença pulmonar, uso crônico prévio, apneia obstrutiva do sono, associação com benzodiazepínicos e perfil de dor. Na DRC, metabólitos ativos de certos opioides podem se acumular e causar sedação; em cirrose, o metabolismo também pode se modificar. A estratégia segura costuma priorizar menor dose efetiva, intervalo reavaliado, profilaxia de constipação quando apropriada e monitorização de sedação e respiração. Não transferir dose de opioide do centro cirúrgico diretamente para alta sem recalcular duração e necessidade."
         ],
         [
           "p",
@@ -1252,7 +1264,7 @@
         ],
         [
           "p",
-          "Os consensos internacionais incluem antagonistas 5-HT3, como ondansetrona, corticosteroides como dexametasona, antagonistas NK1 e outros agentes selecionados. Em adultos elegíveis, exemplos de esquemas de literatura incluem ondansetrona 4 mg IV em momento apropriado e dexametasona 4–8 mg IV no início da anestesia, frequentemente combinadas em perfis de risco mais alto. Essas doses são referências para revisão, não prescrição automática: QT longo, bradiarritmia, interação medicamentosa, hiperglicemia e risco individual podem mudar agente e dose. Se ocorrer vômito apesar de profilaxia, considerar outra classe farmacológica em resgate, sem repetir imediatamente mecanismo que já falhou."
+          "Os consensos internacionais incluem antagonistas 5-HT3, como ondansetrona, corticosteroides como Dexametasona (10 mg EV 15-20 minutos antes ou junto à 1ª dose de antibiótico em meningite bacteriana aguda, ou 6 mg/dia VO/EV no choque séptico refratário/COVID grave), antagonistas NK1 e outros agentes selecionados. Em adultos elegíveis, exemplos de esquemas de literatura incluem ondansetrona 4 mg IV em momento apropriado e Dexametasona (10 mg EV 15-20 minutos antes ou junto à 1ª dose de antibiótico em meningite bacteriana aguda, ou 6 mg/dia VO/EV no choque séptico refratário/COVID grave) 4–8 mg IV no início da anestesia, frequentemente combinadas em perfis de risco mais alto. Essas doses são referências para revisão, não prescrição automática: QT longo, bradiarritmia, interação medicamentosa, hiperglicemia e risco individual podem mudar agente e dose. Se ocorrer vômito apesar de profilaxia, considerar outra classe farmacológica em resgate, sem repetir imediatamente mecanismo que já falhou."
         ],
         [
           "p",
@@ -1342,7 +1354,7 @@
         ],
         [
           "p",
-          "<strong>Caso E — analgesia que impede o próprio tratamento.</strong> Homem de 70 anos após laparotomia apresenta dor 7/10 ao tossir, hipoventilação, pouca mobilização e náuseas quando recebe morfina. Não basta aumentar opioide. Verificar causa cirúrgica de dor, função renal e respiratória; organizar paracetamol ou analgésico não opioide elegível, técnicas locais/regionais quando possíveis, opioide de resgate e profilaxia de NVPO, monitorando ventilação. Pulo do Gato: analgesia útil permite respirar e caminhar com segurança."
+          "<strong>Caso E — analgesia que impede o próprio tratamento.</strong> Homem de 70 anos após laparotomia apresenta dor 7/10 ao tossir, hipoventilação, pouca mobilização e náuseas quando recebe Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor). Não basta aumentar opioide. Verificar causa cirúrgica de dor, função renal e respiratória; organizar Paracetamol (500 a 1.000 mg VO a cada 6 horas, respeitando dose máxima de 4 g/dia) ou analgésico não opioide elegível, técnicas locais/regionais quando possíveis, opioide de resgate e profilaxia de NVPO, monitorando ventilação. Pulo do Gato: analgesia útil permite respirar e caminhar com segurança."
         ],
         [
           "p",
@@ -1352,7 +1364,7 @@
           "o",
           [
             "<strong>Q17.</strong> Em colectomia eletiva não complicada, ERAS 2025 favorece: A) jejum até flatos em todos; B) alimentação enteral/oral precoce em elegíveis; C) sonda nasogástrica obrigatória por uma semana; D) opioides como única analgesia. <strong>Gabarito B.</strong> A/C prolongam recuperação sem indicação universal e D agrava efeitos adversos. Revisão: ERAS exige estabilidade e julgamento.",
-            "<strong>Q18.</strong> Pessoa com apneia do sono e sonolência/bradipneia após morfina deve receber apenas oxigênio e dormir? A) Sim; B) não, avaliar ventilação e depressão opioide com suporte e protocolo; C) sim se PA normal; D) apenas ondansetrona. <strong>Gabarito B.</strong> A/C podem mascarar hipercapnia; D não corrige ventilação. Revisão: SpO₂ sob O₂ pode ser enganosa.",
+            "<strong>Q18.</strong> Pessoa com apneia do sono e sonolência/bradipneia após Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor) deve receber apenas oxigênio e dormir? A) Sim; B) não, avaliar ventilação e depressão opioide com suporte e protocolo; C) sim se PA normal; D) apenas ondansetrona. <strong>Gabarito B.</strong> A/C podem mascarar hipercapnia; D não corrige ventilação. Revisão: SpO₂ sob O₂ pode ser enganosa.",
             "<strong>Q19.</strong> Para alto risco de NVPO, geralmente é mais lógico: A) nenhuma profilaxia; B) combinação de mecanismos quando elegível; C) repetir sempre uma mesma droga sem reavaliar; D) tratar apenas depois de sete dias. <strong>Gabarito B.</strong> A/C/D ignoram fatores de risco e efeitos adversos. Revisão: Apfel ajuda a reconhecer risco, não é prescrição isolada.",
             "<strong>Q20.</strong> Dor que aumenta depois da melhora inicial, com febre e taquicardia, exige: A) apenas dobrar opioide; B) investigar complicações cirúrgicas; C) alta; D) goma de mascar. <strong>Gabarito B.</strong> A/C/D podem atrasar controle de foco. Revisão: reconhecer padrão temporal importa."
           ],
@@ -1598,7 +1610,7 @@
         ],
         [
           "p",
-          "Em fístula entérica exteriorizada, registrar localização, característica, volume diário, estado nutricional, hidratação, eletrólitos e condição da pele exposta. Alto débito pode produzir hipovolemia e distúrbios eletrolíticos; o conteúdo intestinal irrita rapidamente a pele. A equipe deve proteger tegumento, substituir perdas de modo individualizado, controlar sepse e discutir suporte nutricional e anatomia para eventual tratamento definitivo. Fechamento espontâneo e necessidade cirúrgica dependem de fatores anatômicos e biológicos; não prometer um prazo uniforme de resolução."
+          "Em fístula entérica exteriorizada, registrar localização, característica, volume diário, estado nutricional, hidratação, eletrólitos e condição da pele exposta. Alto débito pode produzir hipovolemia e distúrbios eletrolíticos; o conteúdo intestinal irrita com agilidade a pele. A equipe deve proteger tegumento, substituir perdas de modo individualizado, controlar sepse e discutir suporte nutricional e anatomia para eventual tratamento definitivo. Fechamento espontâneo e necessidade cirúrgica dependem de fatores anatômicos e biológicos; não prometer um prazo uniforme de resolução."
         ]
       ]
     ],
@@ -1955,7 +1967,32 @@
       [
         [
           "2",
-          "13. Referências rastreáveis e lacunas da versão atual"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1970,17 +2007,6 @@
             "<a href=\"https://academic.oup.com/ajhp/article/70/3/195/5112717\" target=\"_blank\" rel=\"noopener noreferrer\">ASHP et al. Clinical Practice Guidelines for Antimicrobial Prophylaxis in Surgery. Am J Health Syst Pharm. 2013;70:195–283.</a>",
             "<a href=\"https://www.ncbi.nlm.nih.gov/books/NBK536431/\" target=\"_blank\" rel=\"noopener noreferrer\">OMS. Evidence-Based Recommendations on Measures for the Prevention of Surgical Site Infection, capítulo 4.26 sobre drenos e antibioticoprofilaxia.</a>"
           ]
-        ],
-        [
-          "p",
-          "<strong>Benchmark comparativo:</strong> o arquivo do Drive '03 - OBESIDADE - COMPLICACOES POS BARIATRICA.pdf' foi aberto, com foco em fístula, sangramento, hérnia interna e eventos metabólicos após cirurgia bariátrica. Ele NÃO é diretriz geral de pós-operatório e teve uso apenas para identificar uma vinheta de alerta de taquicardia; o texto, as tabelas e imagens do PDF não foram reproduzidos. A autoria institucional do PDF não foi comprovada."
-        ],
-        [
-          "p",
-          "Fontes oficiais: ANVISA, portal de Infecção de Sítio Cirúrgico (atualizado em 28/01/2026), https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/prevencao-das-principais-iras/infeccao-de-sitio-cirurgico ; ANVISA, controle da infecção hospitalar e medidas de prevenção (2022), https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2022/controle-da-infeccao-hospitalar-prevencao-e-fundamental ; OMS, Global Guidelines for SSI, 2018. O comparativo do Drive '03 - OBESIDADE - COMPLICACOES POS BARIATRICA.pdf' foi lido apenas para verificar cobertura de sinais de alarme; não foi reproduzido."
-        ],
-        [
-          "p"
         ]
       ]
     ]

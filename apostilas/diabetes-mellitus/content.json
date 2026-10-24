@@ -2,8 +2,8 @@
   "v": 2,
   "s": "diabetes-mellitus",
   "t": "Diabetes Mellitus",
-  "p": "Tratado completo e atualizado sobre Diabetes Mellitus para provas de residência médica e ENAMED, fundamentado nas Diretrizes Oficiais da Sociedade Brasileira de Diabetes (SBD 2025/2026) e American Diabetes Association (ADA). Abrange critérios diagnósticos estritos, rastreamento do pré-diabetes, classificação etiológica (DM1, DM2, LADA, MODY), metas individualizadas de HbA1c, farmacoterapia moderna não insulínica (metformina, iSGLT2, agonistas GLP-1, coagonistas GIP/GLP-1 tirzepatida, iDPP-4, sulfonilureias, pioglitazona), insulinoterapia basal-bolus com contagem de carboidratos, rastreamento e manejo das complicações crônicas microvasculares e macrovasculares, casos clínicos detalhados e questões comentadas com todos os distratores.",
-  "d": "Tratado completo e atualizado sobre Diabetes Mellitus para provas de residência médica e ENAMED, fundamentado nas Diretrizes Oficiais da Sociedade Brasileira de Diabetes (SBD 2025/2026) e American Diabetes Association (ADA). Abrange critérios diagnósticos estritos, rastreamento do pré-diabetes, classificação etiológica (DM1, DM2, LADA, MODY), metas individualizadas de HbA1c, farmacoterapia moderna não insulínica (metformina, iSGLT2, agonistas GLP-1, coagonistas GIP/GLP-1 tirzepatida, iDPP-4, sulfonilureias, pioglitazona), insulinoterapia basal-bolus com contagem de carboidratos, rastreamento e manejo das complicações crônicas microvasculares e macrovasculares, casos clínicos detalhados e questões comentadas com todos os distratores.",
+  "p": "Tratado completo e atualizado sobre Diabetes Mellitus para provas de residência médica e ENAMED, fundamentado nas Diretrizes Oficiais da Sociedade Brasileira de Diabetes (SBD 2025/2026) e American Diabetes Association (ADA). Abrange critérios diagnósticos estritos, rastreamento do pré-diabetes, classificação etiológica (DM1, DM2, LADA, MODY), metas individualizadas de HbA1c, farmacoterapia moderna não insulínica (metformina, iSGLT2, agonistas GLP-1, coagonistas GIP/GLP-1 tirzepatida, iDPP-4, sulfonilureias, pioglitazona), insulinoterapia basal-bolus com contagem de carboidratos, rastreamento e manejo das complicações crônicas microvasculares e macrovasculares, casos clínicos detalhados e questões comentadas com todos os distratores. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado completo e atualizado sobre Diabetes Mellitus para provas de residência médica e ENAMED, fundamentado nas Diretrizes Oficiais da Sociedade Brasileira de Diabetes (SBD 2025/2026) e American Diabetes Association (ADA). Abrange critérios diagnósticos estritos, rastreamento do pré-diabetes, classificação etiológica (DM1, DM2, LADA, MODY), metas individualizadas de HbA1c, farmacoterapia moderna não insulínica (metformina, iSGLT2, agonistas GLP-1, coagonistas GIP/GLP-1 tirzepatida, iDPP-4, sulfonilureias, pioglitazona), insulinoterapia basal-bolus com contagem de carboidratos, rastreamento e manejo das complicações crônicas microvasculares e macrovasculares, casos clínicos detalhados e questões comentadas com todos os distratores. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Clínica Médica",
   "m": "Endocrinologia e Metabologia",
   "h": [
@@ -184,6 +184,10 @@
         [
           "raw",
           "<figure data-luria-curated-image=\"Fundus_photo_showing_scatter_laser_surgery_for_diabetic_retinopathy_EDA09.JPG\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Fundus%20photo%20showing%20scatter%20laser%20surgery%20for%20diabetic%20retinopathy%20EDA09.JPG\" alt=\"Retinografia óptica evidenciando exsudatos e microaneurismas retinianos\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Retinografia óptica evidenciando exsudatos e microaneurismas retinianos</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AFundus%20photo%20showing%20scatter%20laser%20surgery%20for%20diabetic%20retinopathy%20EDA09.JPG\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">National Eye Institute, National Institutes of Health ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Clínica Médica, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "p",
@@ -546,7 +550,7 @@
             "<em>Paciente com Doença Cardiovascular Aterosclerótica (DCVA) estabelecida (IAM, AVC, DAOP, placa carotídea &gt; 50%):</em> A primeira escolha mandatória é associar um <strong>Agonista de GLP-1 com benefício comprovado em MACE (Semaglutida, Dulaglutida ou Liraglutida)</strong> OU um <strong>iSGLT2</strong>.",
             "<em>Paciente com Insuficiência Cardíaca (ICFEr ou ICFEp):</em> A primeira escolha mandatória e indiscutível é um <strong>Inibidor de SGLT2 (Dapagliflozina ou Empagliflozina)</strong>, independentemente da HbA1c basal.",
             "<em>Paciente com Doença Renal Crônica (TFGe entre 20 e 60 mL/min e/ou RAC &ge; 30 mg/g):</em> A primeira escolha preferencial é um <strong>iSGLT2</strong>; se houver contraindicação ou persistência de albuminúria, associar <strong>aGLP-1</strong> ou <strong>Finerenona</strong> (antagonista não esteroide do receptor mineralocorticoide).",
-            "<em>Paciente sem DCV/IC/DRC com necessidade prioritária de perda de peso:</em> Prescrever <strong>Tirzepatida</strong> ou <strong>Semaglutida / Liraglutida</strong> em dose alta.",
+            "<em>Paciente sem DCV/IC/DRC com necessidade prioritária de perda de peso:</em> Prescrever <strong>Tirzepatida</strong> ou <strong>Semaglutida / Liraglutida</strong> em dose máxima preconizada.",
             "<em>Paciente sem comorbidades cardiorrenais e limitação financeira severa:</em> Metformina associada à <strong>Sulfonilureia de menor risco (Gliclazida MR)</strong> ou Pioglitazona."
           ]
         ]
@@ -870,9 +874,9 @@
           "o",
           [
             "<strong>Grau 1 (Sem infecção):</strong> Úlcera limpa sem hiperemia ou supuração. Apenas alívio de pressão mecânica (off-loading) e curativo.",
-            "<strong>Grau 2 (Infecção Leve):</strong> Celulite perilesional restrita a &lt; 2 cm da borda da úlcera, sem atingir tecidos profundos e sem repercussão sistêmica. Tratar em regime ambulatorial com antibiótico oral direcionado a gram-positivos de pele (cefalexina ou amoxicilina-clavulanato por 7 a 14 dias).",
-            "<strong>Grau 3 (Infecção Moderada):</strong> Celulite extensa &gt; 2 cm ao redor da ferida OU acometimento de tecidos profundos (fáscia muscular, tendões, articulações e ossos) sem sepse sistêmica. Exige internação hospitalar, desbridamento cirúrgico de tecidos desvitalizados e antibioticoterapia parenteral de amplo espectro (amoxicilina-clavulanato IV, ciprofloxacino com clindamicina, ou ceftriaxona com metronidazol).",
-            "<strong>Grau 4 (Infecção Grave com Sepse):</strong> Presença de síndrome da resposta inflamatória sistêmica (febre, taquicardia, hipotensão, leucocitose). Urgência cirúrgica imediata para desbridamento agressivo ou amputação aberta de controle de danos, associada a vancomicina com piperacilina-tazobactam ou meropenem."
+            "<strong>Grau 2 (Infecção Leve):</strong> Celulite perilesional restrita a &lt; 2 cm da borda da úlcera, sem atingir tecidos profundos e sem repercussão sistêmica. Tratar em regime ambulatorial com antibiótico oral direcionado a gram-positivos de pele (Cefalexina (500 mg VO a cada 6 horas) ou Amoxicilina-Clavulanato (875/125 mg VO 12/12h ou 1g/200mg EV 8/8h) por 7 a 14 dias).",
+            "<strong>Grau 3 (Infecção Moderada):</strong> Celulite extensa &gt; 2 cm ao redor da ferida OU acometimento de tecidos profundos (fáscia muscular, tendões, articulações e ossos) sem sepse sistêmica. Exige internação hospitalar, desbridamento cirúrgico de tecidos desvitalizados e antibioticoterapia parenteral de amplo espectro (Amoxicilina-Clavulanato (875/125 mg VO 12/12h ou 1g/200mg EV 8/8h) IV, Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h) com Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas), ou Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) com Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase)).",
+            "<strong>Grau 4 (Infecção Grave com Sepse):</strong> Presença de síndrome da resposta inflamatória sistêmica (febre, taquicardia, hipotensão, leucocitose). Urgência cirúrgica imediata para desbridamento agressivo ou amputação aberta de controle de danos, associada a Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) com Piperacilina-Tazobactam (4,5 g EV em infusão estendida de 3-4h a cada 6 horas) ou Meropenem (1 g EV em infusão prolongada a cada 8 horas, ou 2 g EV 8/8h em meningite bacteriana)."
           ]
         ],
         [
@@ -1034,7 +1038,7 @@
             "<em>Fisiopatologia dos Pulsos Palpáveis:</em> Os pulsos amplos demonstram que a vasculatura macrovascular distal está pérvia (pé neuropático puro). A úlcera surgiu pela insensibilidade plantar combinada à sobrecarga mecânica repetitiva decorrente de deformidade motora, evoluindo com quebra da barreira cutânea e penetração bacteriana polimicrobiana profunda.",
             "<em>Conduta Hospitalar Multidisciplinar Imediata:</em>\n    <ul>\n      <li><em>Internação Hospitalar Imediata em isolamento:</em> Jejum e início de hidratação venosa e controle glicêmico com Insulina Regular em bomba de infusão ou esquema intensivo.",
             "<em>Avaliação Cirúrgica de Emergência:</em> Indicação mandatória de <strong>Desbridamento Cirúrgico Amplo em Centro Cirúrgico</strong> para drenagem de lojas de pus, desbridamento de tendões necrosados e ressecção óssea da cabeça do metatarso acometido por osteomielite (amputação menor de raio preservadora). Coleta de fragmento ósseo profundo e biópsia tecidual estéril para cultura bacteriana e antibiograma (swab superficial de pele é formalmente contraindicado por isolar apenas colonizantes).",
-            "<em>Antibioticoterapia Parenteral Empírica Imediata de Amplo Espectro:</em> Deve cobrir cocos gram-positivos (incluindo MRSA conforme epidemiologia local), bacilos gram-negativos e anaeróbios profundos. Esquema inicial: <strong>Piperacilina-Tazobactam associada à Vancomicina</strong> IV."
+            "<em>Antibioticoterapia Parenteral Empírica Imediata de Amplo Espectro:</em> Deve cobrir cocos gram-positivos (incluindo MRSA conforme epidemiologia local), bacilos gram-negativos e anaeróbios profundos. Esquema inicial: <strong>Piperacilina-Tazobactam (4,5 g EV em infusão estendida de 3-4h a cada 6 horas) associada à Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL)</strong> IV."
           ]
         ],
         [
@@ -1188,7 +1192,7 @@
           [
             "<strong>A)</strong> Insulinoterapia intensiva em regime basal-bolus de aplicação contínua.",
             "<strong>B)</strong> Sulfonilureia em baixa dose (ex: Gliclazida ou Glibenclamida).",
-            "<strong>C)</strong> Metformina em dose alta associada a inibidor de SGLT2.",
+            "<strong>C)</strong> Metformina em dose máxima preconizada associada a inibidor de SGLT2.",
             "<strong>D)</strong> Apenas dieta e atividade física, pois o MODY 3 nunca evolui com complicações microvasculares."
           ]
         ],
@@ -1380,7 +1384,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Clínica Médica. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1390,8 +1419,7 @@
             "<a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde do Brasil — Protocolo Clínico e Diretrizes Terapêuticas do Diabetes Mellitus Tipo 1 e Tipo 2</a>",
             "<a href=\"https://kdigo.org/guidelines/diabetes-ckd\" target=\"_blank\" rel=\"noopener noreferrer\">Kidney Disease: Improving Global Outcomes (KDIGO) Diabetes Work Group. Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease</a>",
             "<a href=\"https://iwgdfguidelines.org\" target=\"_blank\" rel=\"noopener noreferrer\">International Working Group on the Diabetic Foot (IWGDF) Guidelines on the Prevention and Management of Diabetic Foot Disease</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

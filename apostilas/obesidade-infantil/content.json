@@ -2,8 +2,8 @@
   "v": 2,
   "s": "obesidade-infantil",
   "t": "Obesidade Infantil",
-  "p": "Tratado completo de Obesidade Infantil e na Adolescência: epidemiologia brasileira e transição nutricional com dados SISVAN/POF-IBGE; avaliação antropométrica pelas curvas de crescimento OMS 2006/2007 (escores-z e percentis para 0 a 5 anos e 5 a 19 anos); diagnóstico diferencial minucioso entre obesidade exógena/nutricional (95%) e causas endógenas e sindrômicas (5%), incluindo Prader-Willi, hipotireoidismo, Cushing e craniofaringioma; complicações metabólicas e cardiovasculares precoces (Síndrome Metabólica pelos critérios IDF/SBP, MASLD/esteatose hepática dismetabólica pediátrica, dislipidemia aterogênica e DM2); afecções ortopédicas mecânicas (epifisiólise proximal do fêmur e doença de Blount); SAHOS e pseudotumor cerebral; manejo terapêutico escalonado com intervenção multiprofissional no estilo de vida, tempo de tela, farmacoterapia pediátrica (Liraglutida, Semaglutida e Orlistate) e critérios formais para cirurgia bariátrica na adolescência; casos clínicos detalhados e questões comentadas de provas de residência médica e ENAMED.",
-  "d": "Tratado completo de Obesidade Infantil e na Adolescência: epidemiologia brasileira e transição nutricional com dados SISVAN/POF-IBGE; avaliação antropométrica pelas curvas de crescimento OMS 2006/2007 (escores-z e percentis para 0 a 5 anos e 5 a 19 anos); diagnóstico diferencial minucioso entre obesidade exógena/nutricional (95%) e causas endógenas e sindrômicas (5%), incluindo Prader-Willi, hipotireoidismo, Cushing e craniofaringioma; complicações metabólicas e cardiovasculares precoces (Síndrome Metabólica pelos critérios IDF/SBP, MASLD/esteatose hepática dismetabólica pediátrica, dislipidemia aterogênica e DM2); afecções ortopédicas mecânicas (epifisiólise proximal do fêmur e doença de Blount); SAHOS e pseudotumor cerebral; manejo terapêutico escalonado com intervenção multiprofissional no estilo de vida, tempo de tela, farmacoterapia pediátrica (Liraglutida, Semaglutida e Orlistate) e critérios formais para cirurgia bariátrica na adolescência; casos clínicos detalhados e questões comentadas de provas de residência médica e ENAMED.",
+  "p": "Tratado completo de Obesidade Infantil e na Adolescência: epidemiologia brasileira e transição nutricional com dados SISVAN/POF-IBGE; avaliação antropométrica pelas curvas de crescimento OMS 2006/2007 (escores-z e percentis para 0 a 5 anos e 5 a 19 anos); diagnóstico diferencial minucioso entre obesidade exógena/nutricional (95%) e causas endógenas e sindrômicas (5%), incluindo Prader-Willi, hipotireoidismo, Cushing e craniofaringioma; complicações metabólicas e cardiovasculares precoces (Síndrome Metabólica pelos critérios IDF/SBP, MASLD/esteatose hepática dismetabólica pediátrica, dislipidemia aterogênica e DM2); afecções ortopédicas mecânicas (epifisiólise proximal do fêmur e doença de Blount); SAHOS e pseudotumor cerebral; manejo terapêutico escalonado com intervenção multiprofissional no estilo de vida, tempo de tela, farmacoterapia pediátrica (Liraglutida, Semaglutida e Orlistate) e critérios formais para cirurgia bariátrica na adolescência; casos clínicos detalhados e questões comentadas de provas de residência médica e ENAMED. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado completo de Obesidade Infantil e na Adolescência: epidemiologia brasileira e transição nutricional com dados SISVAN/POF-IBGE; avaliação antropométrica pelas curvas de crescimento OMS 2006/2007 (escores-z e percentis para 0 a 5 anos e 5 a 19 anos); diagnóstico diferencial minucioso entre obesidade exógena/nutricional (95%) e causas endógenas e sindrômicas (5%), incluindo Prader-Willi, hipotireoidismo, Cushing e craniofaringioma; complicações metabólicas e cardiovasculares precoces (Síndrome Metabólica pelos critérios IDF/SBP, MASLD/esteatose hepática dismetabólica pediátrica, dislipidemia aterogênica e DM2); afecções ortopédicas mecânicas (epifisiólise proximal do fêmur e doença de Blount); SAHOS e pseudotumor cerebral; manejo terapêutico escalonado com intervenção multiprofissional no estilo de vida, tempo de tela, farmacoterapia pediátrica (Liraglutida, Semaglutida e Orlistate) e critérios formais para cirurgia bariátrica na adolescência; casos clínicos detalhados e questões comentadas de provas de residência médica e ENAMED. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Pediatria",
   "m": "Nutrologia Pediátrica e Endocrinologia Pediátrica",
   "h": [
@@ -172,6 +172,10 @@
         [
           "p",
           "O diagnóstico de sobrepeso e obesidade na infância e na adolescência baseia-se primordialmente em critérios antropométricos padronizados internacionalmente. Em 2006, a Organização Mundial da Saúde publicou as Curvas de Crescimento Infantil para crianças de 0 a 5 anos (0 a 59 meses), construídas a partir do estudo multicêntrico <em>Multicentre Growth Reference Study</em> (MGRS), que acompanhou crianças em condições ideais de saúde, nutrição e aleitamento materno exclusivo em seis países (incluindo o Brasil, na cidade de Pelotas-RS). Em 2007, a OMS estendeu esse padrão para a faixa etária de 5 a 19 anos (revisão baseada em dados históricos do NCHS de 1977 com refinamento estatístico)."
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Pediatria, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "p",
@@ -438,7 +442,7 @@
               "<strong>Síndrome de Cushing (Hipercortisolismo Pediátrico)</strong>",
               "Excesso suprafisiológico crônico de glicocorticoides (exógeno por uso inadvertido de corticoides orais/tópicos/inalatórios; ou endógeno por adenoma hipofisário secretor de ACTH - Doença de Cushing, ou adenoma/carcinoma adrenal).",
               "<strong>Parada imediata do crescimento linear associada a ganho de peso centrípeto rápido</strong> (o cortisol inibe o GH e a placa epifisária). Fácies em \"lua cheia\", rubor malar, giba gordurosa dorsal (\"giba de búfalo\"), <strong>estrias violáceas largas (&gt; 1 cm)</strong> no abdome, flancos e coxas, equimoses espontâneas, osteopenia grave com fraturas patológicas, hipertensão arterial sistêmica e hirsutismo/acne por co-secreção de androgênios adrenais.",
-              "Cortisol salivar noturno (23h), cortisol livre urinário de 24 horas e/ou teste de supressão noturna com dose baixa de dexametasona (1 mg ou 20 mcg/kg). ACTH sérico para localização etiológica."
+              "Cortisol salivar noturno (23h), cortisol livre urinário de 24 horas e/ou teste de supressão noturna com dose inicial titulada de dexametasona (1 mg ou 20 mcg/kg). ACTH sérico para localização etiológica."
             ],
             [
               "<strong>Obesidade Hipotalâmica (Craniofaringioma e Lesões do SNC)</strong>",
@@ -1027,7 +1031,7 @@
         ],
         [
           "p",
-          "<strong>Identificação e História:</strong> Menina de 12 anos e 8 meses, com antecedente de obesidade progressiva nos últimos 3 anos, é trazida ao pronto-socorro infantil com queixa de dor de cabeça diária e progressiva há cerca de 3 semanas. A cefaleia é holocraniana, em pressão, mais intensa no início da manhã ao acordar e piora ao tossir ou agachar. Há 4 dias passou a relatar visão dupla (diplopia) ao olhar para os lados e episódios de escurecimento visual transitório quando se levanta rapidamente. Nega febre ou convulsões."
+          "<strong>Identificação e História:</strong> Menina de 12 anos e 8 meses, com antecedente de obesidade progressiva nos últimos 3 anos, é trazida ao pronto-socorro infantil com queixa de dor de cabeça diária e progressiva há cerca de 3 semanas. A cefaleia é holocraniana, em pressão, mais intensa no início da manhã ao acordar e piora ao tossir ou agachar. Há 4 dias passou a relatar visão dupla (diplopia) ao olhar para os lados e episódios de escurecimento visual transitório quando se levanta com agilidade. Nega febre ou convulsões."
         ],
         [
           "p",
@@ -1418,7 +1422,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Pediatria. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1429,8 +1458,7 @@
             "<a href=\"https://publications.aap.org/pediatrics/article/151/2/e2022060640/190443/\" target=\"_blank\" rel=\"noopener noreferrer\">American Academy of Pediatrics (AAP) — Clinical Practice Guideline for the Evaluation and Treatment of Children and Adolescents With Obesity (Pediatrics 2023)</a>",
             "<a href=\"https://idf.org/our-activities/advocacy-awareness/resources-and-tools/162-idf-consensus-definition-of-the-metabolic-syndrome-in-children-and-adolescents.html\" target=\"_blank\" rel=\"noopener noreferrer\">International Diabetes Federation (IDF) — The IDF Consensus Definition of the Metabolic Syndrome in Children and Adolescents</a>",
             "<a href=\"https://www.sbp.com.br/especiais/pediatria-para-familias/desenvolvimento/menos-telas-mais-saude/\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria (SBP) — Departamento de Adolescência e Saúde Mental. Manual de Saúde de Crianças e Adolescentes na Era Digital (#MenosTelas #MaisSaúde)</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

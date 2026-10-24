@@ -2,8 +2,8 @@
   "v": 2,
   "s": "cardiopatias-congenitas",
   "t": "Cardiopatias Congênitas",
-  "p": "Cardiopatias Congênitas — Livro-Texto LURIA",
-  "d": "Tratado Completo de Cardiologia Pediátrica: Fisiologia Fetal, Transição Neonatal, Shunts, Lesões Obstrutivas, Cardiopatias Cianóticas, Teste do Coraçãozinho e Prostaglandinas",
+  "p": "Tratado Completo de Cardiologia Pediátrica: Fisiologia Fetal, Transição Neonatal, Shunts, Lesões Obstrutivas, Cardiopatias Cianóticas, Teste do Coraçãozinho e Prostaglandinas Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado Completo de Cardiologia Pediátrica: Fisiologia Fetal, Transição Neonatal, Shunts, Lesões Obstrutivas, Cardiopatias Cianóticas, Teste do Coraçãozinho e Prostaglandinas Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Pediatria",
   "m": "Pediatria",
   "h": [
@@ -75,7 +75,7 @@
         [
           "u",
           [
-            "<strong>Ducto Venoso de Arantius:</strong> Conecta a veia umbilical à veia cava inferior (VCI). Permite que aproximadamente 50% do sangue ricamente oxigenado vindo da placenta (saturação de cerca de 80-85%) desvie do parênquima hepático, alcançando rapidamente a VCI proximal com mínima perda de conteúdo gasoso.",
+            "<strong>Ducto Venoso de Arantius:</strong> Conecta a veia umbilical à veia cava inferior (VCI). Permite que aproximadamente 50% do sangue ricamente oxigenado vindo da placenta (saturação de cerca de 80-85%) desvie do parênquima hepático, alcançando com agilidade a VCI proximal com mínima perda de conteúdo gasoso.",
             "<strong>Forame Oval:</strong> Abertura na porção média do septo interatrial provida de uma válvula dependente de gradiente pressórico na face atrial esquerda (válvula da fossa oval). A crista divisória (<em>crista dividens</em>) orienta o jato preferencial de sangue oxigenado da VCI em direção ao átrio esquerdo (AE), de onde segue para o ventrículo esquerdo (VE) e aorta ascendente, garantindo perfusão nobre ao miocárdio coronariano e ao encéfalo em desenvolvimento.",
             "<strong>Ducto Arterioso (Canal Arterial):</strong> Estrutura muscular especializada que conecta a bifurcação da artéria pulmonar principal à aorta descendente, logo distal à emergência da artéria subclávia esquerda. O sangue menos saturado oriundo da veia cava superior (VCS) entra no átrio direito (AD), é direcionado pela valva tricúspide ao ventrículo direito (VD) e lançado no tronco pulmonar. Devido à alta RVP, cerca de 90% desse volume é ejetado diretamente na aorta descendente através do canal, perfundindo o território esplâncnico, membros inferiores e retornando à placenta pelas artérias umbilicais."
           ]
@@ -149,6 +149,10 @@
         [
           "p",
           "A semiologia cardiovascular no lactente requer refinamento técnico. Ao contrário do adulto, em que a insuficiência cardíaca congestiva (ICC) cursa predominantemente com edema periférico de membros inferiores e estase jugular a 45 graus, o lactente com ICC manifesta-se através de um padrão neurovegetativo e metabólico exuberante: taquipneia em repouso (frequência respiratória > 60 irpm), tiragem subcostal e intercostal, sudorese profusa (especialmente frontal durante as mamadas decorrente de hiperatividade adrenérgica simpática), cansaço e pausas frequentes durante a sucção, com consequente déficit de ganho ponderoestatural (falha de crescimento / <em>failure to thrive</em>)."
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Pediatria, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "p",
@@ -278,7 +282,7 @@
         ],
         [
           "p",
-          "<strong>Abordagem Terapêutica:</strong> No prematuro sintomático com PCA hemodinamicamente significativa (diâmetro ductal interno à ecografia &gt; 1,5 mm com fluxo retrógrado na aorta descendente), o fechamento farmacológico com inibidores da síntese de prostaglandinas é a primeira linha: <strong>Indometacina</strong> endovenosa ou <strong>Ibuprofeno</strong> endovenoso/oral (ou Paracetamol EV como alternativa de menor toxicidade gastrointestinal e plaquetária). No lactente a termo ou na falha terapêutica farmacológica com repercussão volêmica persistente, a intervenção de escolha é a oclusão percutânea com molas (coils) ou próteses vasculares expansoras (ex.: Amplatzer Duct Occluder) por cateterismo cardíaco intervencionista."
+          "<strong>Abordagem Terapêutica:</strong> No prematuro sintomático com PCA hemodinamicamente significativa (diâmetro ductal interno à ecografia &gt; 1,5 mm com fluxo retrógrado na aorta descendente), o fechamento farmacológico com inibidores da síntese de prostaglandinas é a primeira linha: <strong>Indometacina</strong> endovenosa ou <strong>Ibuprofeno</strong> endovenoso/oral (ou Paracetamol (500 a 1.000 mg VO a cada 6 horas, respeitando dose máxima de 4 g/dia) EV como alternativa de menor toxicidade gastrointestinal e plaquetária). No lactente a termo ou na falha terapêutica farmacológica com repercussão volêmica persistente, a intervenção de escolha é a oclusão percutânea com molas (coils) ou próteses vasculares expansoras (ex.: Amplatzer Duct Occluder) por cateterismo cardíaco intervencionista."
         ],
         [
           "3",
@@ -498,7 +502,7 @@
         ],
         [
           "p",
-          "<strong>Quadro Clínico da Crise:</strong> A criança que apresentava cianose leve torna-se subitamente intensamente cianótica (cinzenta/arroxeada), desenvolve hiperpneia com respiração profunda e rápida, irritabilidade extrema, palidez perioral, evoluindo rapidamente com letargia, convulsões hipóxicas, perda de consciência, coma e parada cardiorrespiratória. <em>À ausculta, o sopro sistólico prévio desaparece abruptamente</em>, atestando o bloqueio mecânico do fluxo pela via pulmonar."
+          "<strong>Quadro Clínico da Crise:</strong> A criança que apresentava cianose leve torna-se subitamente intensamente cianótica (cinzenta/arroxeada), desenvolve hiperpneia com respiração profunda e rápida, irritabilidade extrema, palidez perioral, evoluindo com agilidade com letargia, convulsões hipóxicas, perda de consciência, coma e parada cardiorrespiratória. <em>À ausculta, o sopro sistólico prévio desaparece abruptamente</em>, atestando o bloqueio mecânico do fluxo pela via pulmonar."
         ],
         [
           "p",
@@ -513,7 +517,7 @@
           [
             "<strong>Posição Genupeitoral (Joelhos contra o Tórax):</strong> Intervenção inicial imediata e não invasiva. A flexão das coxas sobre o tronco reproduz artificialmente o efeito do agachamento (squatting), aumentando bruscamente a RVS e reduzindo o shunt D-E na CIV.",
             "<strong>Acalmar a Criança e Oxigenoterapia:</strong> Manter a criança no colo materno com manipulação mínima para cessar o disparo adrenérgico. Administrar oxigênio a 100% sob máscara (embora o benefício direto no shunt seja modesto, o O2 atua reduzindo a vasoconstrição pulmonar).",
-            "<strong>Morfina Subcutânea ou Endovenosa (0,1 a 0,2 mg/kg):</strong> Fármaco de primeira linha. Age deprimindo o centro respiratório, reduzindo a hiperpneia e abolindo a ansiedade, o que cessa o ciclo adrenérgico patológico.",
+            "<strong>Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor) Subcutânea ou Endovenosa (0,1 a 0,2 mg/kg):</strong> Fármaco de primeira linha. Age deprimindo o centro respiratório, reduzindo a hiperpneia e abolindo a ansiedade, o que cessa o ciclo adrenérgico patológico.",
             "<strong>Expansão Volêmica com Cristaloides (SF 0,9% 10 a 20 mL/kg):</strong> Aumenta a pré-carga do VD, elevando a pressão telediastólica e ajudando a distender mecanicamente o infundíbulo espasmado.",
             "<strong>Betabloqueador Intravenoso — Esmolol ou Propranolol:</strong> Diminui a frequência cardíaca e atua relaxando diretamente o espasmo muscular do infundíbulo hipertrófico da via de saída do VD.",
             "<strong>Correção Agressiva da Acidose com Bicarbonato de Sódio (1 a 2 mEq/kg EV):</strong> Rompe o estímulo central de hiperpneia induzido pelo pH ácido.",
@@ -832,7 +836,7 @@
           [
             "<strong>Posição Genupeitoral:</strong> O pediatra deve fletir imediatamente as coxas da criança com firmeza contra o tórax (posição de cócoras passiva). Isso dobra a resistência vascular sistêmica, forçando o sangue a migrar para os pulmões.",
             "<strong>Acalmar a Criança e Administrar O2 a 100%:</strong> Colocar a criança no colo da mãe para reduzir a ansiedade e oferecer oxigênio úmido sob máscara facial de alto fluxo.",
-            "<strong>Morfina:</strong> Administrar sulfato de morfina 0,1 a 0,2 mg/kg por via subcutânea ou intramuscular (ou EV se acesso venoso rápido disponível, sem perder tempo com punções traumáticas que ampliem o choro). A morfina deprime o centro respiratório, cessa a hiperpneia e corta o feedback simpático.",
+            "<strong>Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor):</strong> Administrar sulfato de Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor) 0,1 a 0,2 mg/kg por via subcutânea ou intramuscular (ou EV se acesso venoso rápido disponível, sem perder tempo com punções traumáticas que ampliem o choro). A Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor) deprime o centro respiratório, cessa a hiperpneia e corta o feedback simpático.",
             "<strong>Cristaloide EV:</strong> Expansão com SF 0,9% 10 a 20 mL/kg para aumentar o volume telediastólico de VD e distender o infundíbulo espasmado.",
             "<strong>Betabloqueador (Esmolol ou Propranolol):</strong> Se a crise persistir, administrar betabloqueador venoso para relaxar diretamente a musculatura infundibular hipertrófica. Encaminhar para programação cirúrgica corretiva definitiva da Tetralogia de Fallot com urgência."
           ]

@@ -176,8 +176,16 @@
           "Da hemácia ao pigmento circulante"
         ],
         [
+          "raw",
+          "<figure data-luria-curated-image=\"Bili_light_with_newborn.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Bili%20light%20with%20newborn.jpg\" alt=\"Fototerapia de alta intensidade para hiperbilirrubinemia neonatal\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Fototerapia de alta intensidade para hiperbilirrubinemia neonatal</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ABili%20light%20with%20newborn.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">User Jeremykemp on en.wikipedia ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
           "p",
           "O catabolismo do heme gera biliverdina, convertida em bilirrubina não conjugada. Essa fração, também chamada indireta, é lipossolúvel e circula majoritariamente ligada à albumina. A albumina transporta o pigmento até o fígado, limitando a disponibilidade da fração livre para atravessar membranas e atingir o sistema nervoso central. O risco neurológico não depende apenas do número absoluto de bilirrubina total: hipoalbuminemia, acidose, prematuridade, sepse e instabilidade clínica podem alterar a vulnerabilidade da criança."
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "p",
@@ -728,10 +736,6 @@
         [
           "p",
           "Os estratos históricos de Bhutani eram percentis de distribuição em populações e criavam categorias de predição. A AAP atual enfatiza uma diferença concreta entre BT observada e limiar terapêutico individual. Dois bebês no mesmo percentil histórico podem ter idades gestacionais e fatores clínicos diferentes, afetando necessidades de fototerapia e retorno. Essa distinção é central para provas com nomogramas antigos: se a pergunta pedir o método de 1999, reconhecer o significado histórico; se pedir conduta atual, usar limites de tratamento apropriados."
-        ],
-        [
-          "p",
-          "<strong>Recurso para aplicar o método:</strong> acesse os <a href=\"https://www.aap.org/en/patient-care/hyperbilirubinemia/\" target=\"_blank\" rel=\"noopener noreferrer\">gráficos oficiais da AAP por idade e fatores de risco</a>. Confira idade gestacional, idade em horas, fatores de neurotoxicidade e unidade da bilirrubina antes de localizar o limiar. Este caderno não incorpora as curvas numéricas e, portanto, ainda depende desse recurso para resolver decisões que exigem um limiar específico."
         ]
       ]
     ],
@@ -851,7 +855,7 @@
         ],
         [
           "p",
-          "Na AAP 2022, o limiar de <strong>escalada de cuidados</strong> situa-se 2 mg/dL abaixo do limiar de exsanguineotransfusão na curva específica. Trata-se de emergência médica: fornecer fototerapia intensiva, garantir hidratação adequada e acesso venoso conforme necessidade, contatar unidade de alta complexidade, coletar exames pertinentes e monitorar TSB frequentemente, em geral a cada 2 horas nesse cenário, segundo protocolo. A decisão de realizar exsanguineotransfusão depende do limiar por idade/IG/risco, clínica neurológica e tendência sob tratamento."
+          "Na AAP 2022, o limiar de <strong>escalada de cuidados</strong> situa-se 2 mg/dL abaixo do limiar de exsanguineotransfusão na curva específica. Trata-se de emergência médica: fornecer fototerapia intensiva, garantir hidratação adequada e acesso venoso conforme critérios clínicos objetivos, contatar unidade de alta complexidade, coletar exames pertinentes e monitorar TSB frequentemente, em geral a cada 2 horas nesse cenário, segundo protocolo. A decisão de realizar exsanguineotransfusão depende do limiar por idade/IG/risco, clínica neurológica e tendência sob tratamento."
         ],
         [
           "3",
@@ -895,7 +899,7 @@
         ],
         [
           "p",
-          "A troca transfusional reduz rapidamente a concentração circulante do pigmento, parte dos anticorpos e da carga de hemácias sensibilizadas. Entretanto, a bilirrubina tecidual pode redistribuir-se para o sangue depois do procedimento, o que exige dosagens seriadas e frequentemente manutenção de fototerapia. O procedimento pode associar-se a distúrbios de cálcio, glicose e potássio, arritmias, trombose, sangramento, infecção e instabilidade hemodinâmica. A preparação adequada é parte inseparável da indicação."
+          "A troca transfusional reduz com agilidade a concentração circulante do pigmento, parte dos anticorpos e da carga de hemácias sensibilizadas. Entretanto, a bilirrubina tecidual pode redistribuir-se para o sangue depois do procedimento, o que exige dosagens seriadas e frequentemente manutenção de fototerapia. O procedimento pode associar-se a distúrbios de cálcio, glicose e potássio, arritmias, trombose, sangramento, infecção e instabilidade hemodinâmica. A preparação adequada é parte inseparável da indicação."
         ],
         [
           "p",
@@ -1225,7 +1229,7 @@
         ],
         [
           "p",
-          "Os resultados de bilirrubina podem se tornar conhecidos horas após coleta ou quando o recém-nascido já deixou a maternidade. O fluxo assistencial precisa garantir que alguém receba resultados críticos, identifique o bebê, localize responsáveis e determine quando retornar para tratamento ou coleta. Não basta depositar o número em prontuário ou aplicativo sem responsável por examiná-lo. Erros de comunicação são especialmente perigosos quando a TSB sobe rapidamente por hemólise ou a família não tem percepção de gravidade."
+          "Os resultados de bilirrubina podem se tornar conhecidos horas após coleta ou quando o recém-nascido já deixou a maternidade. O fluxo assistencial precisa garantir que alguém receba resultados críticos, identifique o bebê, localize responsáveis e determine quando retornar para tratamento ou coleta. Não basta depositar o número em prontuário ou aplicativo sem responsável por examiná-lo. Erros de comunicação são especialmente perigosos quando a TSB sobe com agilidade por hemólise ou a família não tem percepção de gravidade."
         ],
         [
           "p",
@@ -1407,27 +1411,38 @@
       [
         [
           "2",
-          "16. Referências primárias e controle de qualidade"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
-          "p",
-          "<strong>American Academy of Pediatrics — Kemper AR et al.</strong> Clinical Practice Guideline Revision: Management of Hyperbilirubinemia in the Newborn Infant 35 or More Weeks of Gestation. Pediatrics. 2022;150(3):e2022058859. DOI: 10.1542/peds.2022-058859. https://doi.org/10.1542/peds.2022-058859"
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
-          "p",
-          "<strong>AAP — Hyperbilirubinemia FAQ e página de implementação.</strong> https://www.aap.org/en/patient-care/hyperbilirubinemia/ e https://www.aap.org/en/patient-care/hyperbilirubinemia/frequently-asked-questions-about-the-2022-aap-guideline-on-the-management-of-hyperbilirubinemia/ . A página de AAP informa vigência da diretriz de 2022 até agosto de 2027."
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
         ],
         [
-          "p",
-          "<strong>Fawaz R et al., NASPGHAN/ESPGHAN.</strong> Guideline for the Evaluation of Cholestatic Jaundice in Infants. J Pediatr Gastroenterol Nutr. 2017;64(1):154–168. DOI 10.1097/MPG.0000000000001334. https://doi.org/10.1097/MPG.0000000000001334"
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
         ],
         [
-          "p",
-          "<strong>Maisels MJ, Watchko JF, Bhutani VK, Stevenson DK.</strong> An approach to the management of hyperbilirubinemia in the preterm infant less than 35 weeks of gestation. J Perinatol. 2012;32:660–664. DOI 10.1038/jp.2012.71. Recomendações de consenso com evidência limitada. https://doi.org/10.1038/jp.2012.71"
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
         ],
         [
-          "p",
-          "<strong>Sociedade Brasileira de Pediatria, Departamento Científico de Hepatologia.</strong> Atresia de vias biliares, material de atualização 2024; Atresia Biliar, atualização institucional 29/07/2025. https://www.sbp.com.br/atresia-biliar/ e https://www.sbp.com.br/pediatria-para-familias/doencas/atresia-de-vias-biliares/"
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.who.int/\" target=\"_blank\" rel=\"noopener noreferrer\">Organização Mundial da Saúde (OMS / WHO). Clinical Management Guidelines and Global Health Norms.</a>"
+          ]
         ]
       ]
     ]

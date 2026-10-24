@@ -2,8 +2,8 @@
   "v": 2,
   "s": "vieses-confundimento-e-causalidade",
   "t": "Vieses, Confundimento e Causalidade",
-  "p": "Tratado completo de Vieses, Confundimento e Causalidade em Epidemiologia para residência médica e ENAMED: taxonomia dos erros aleatórios e sistemáticos; o espectro completo dos vieses de seleção (viés de admissão hospitalar de Berkson, viés do trabalhador sadio, viés de autoseleção do voluntário, perdas de seguimento/atrição e viés de detecção); vieses de aferição e informação (viés de memória/recordatório, viés do observador/entrevistador, o Efeito Hawthorne e erros de classificação diferencial versus não diferencial); Fator de Confundimento: critérios diagnósticos epidemiológicos clássicos de Rothman, métodos de controle no desenho (randomização, restrição, pareamento/matching) e na análise (estratificação de Mantel-Haenszel e modelagem multivariada); Modificação de Efeito (interação biológica) versus confundimento e o algoritmo diagnóstico da estratificação passo a passo; os nove critérios de causalidade de Sir Austin Bradford Hill detalhados um a um, com destaque para a soberania e primazia inegociável da temporalidade; inferência causal contemporânea: Gráficos Acíclicos Direcionados (DAGs de Judea Pearl), cadeias causais e mediadores, causas comuns (backdoor paths), efeito comum e o perigo do viés de colisor (collider stratification bias); o Paradoxo de Simpson; análise de sensibilidade para confundimento residual, o E-Value de VanderWeele e a triangulação metodológica em epidemiologia etiológica; guia prático de identificação de vieses em provas e o modelo contrafatual de Rubin com variáveis instrumentais (two-stage least squares); vieses cognitivos na decisão médica (teoria dual de Kahneman: disponibilidade, ancoragem, confirmação e encerramento prematuro) e vieses algorítmicos em inteligência artificial na saúde; crônicas metodológicas: falhas epidemiológicas históricas (o desastre da TRH desmascarado pelo ensaio WHI e o paradoxo dos betacarotenos no CARET); casos clínicos estruturados e bateria de questões comentadas com análise minuciosa de distratores.",
-  "d": "Tratado completo de Vieses, Confundimento e Causalidade em Epidemiologia para residência médica e ENAMED: taxonomia dos erros aleatórios e sistemáticos; o espectro completo dos vieses de seleção (viés de admissão hospitalar de Berkson, viés do trabalhador sadio, viés de autoseleção do voluntário, perdas de seguimento/atrição e viés de detecção); vieses de aferição e informação (viés de memória/recordatório, viés do observador/entrevistador, o Efeito Hawthorne e erros de classificação diferencial versus não diferencial); Fator de Confundimento: critérios diagnósticos epidemiológicos clássicos de Rothman, métodos de controle no desenho (randomização, restrição, pareamento/matching) e na análise (estratificação de Mantel-Haenszel e modelagem multivariada); Modificação de Efeito (interação biológica) versus confundimento e o algoritmo diagnóstico da estratificação passo a passo; os nove critérios de causalidade de Sir Austin Bradford Hill detalhados um a um, com destaque para a soberania e primazia inegociável da temporalidade; inferência causal contemporânea: Gráficos Acíclicos Direcionados (DAGs de Judea Pearl), cadeias causais e mediadores, causas comuns (backdoor paths), efeito comum e o perigo do viés de colisor (collider stratification bias); o Paradoxo de Simpson; análise de sensibilidade para confundimento residual, o E-Value de VanderWeele e a triangulação metodológica em epidemiologia etiológica; guia prático de identificação de vieses em provas e o modelo contrafatual de Rubin com variáveis instrumentais (two-stage least squares); vieses cognitivos na decisão médica (teoria dual de Kahneman: disponibilidade, ancoragem, confirmação e encerramento prematuro) e vieses algorítmicos em inteligência artificial na saúde; crônicas metodológicas: falhas epidemiológicas históricas (o desastre da TRH desmascarado pelo ensaio WHI e o paradoxo dos betacarotenos no CARET); casos clínicos estruturados e bateria de questões comentadas com análise minuciosa de distratores.",
+  "p": "Tratado completo de Vieses, Confundimento e Causalidade em Epidemiologia para residência médica e ENAMED: taxonomia dos erros aleatórios e sistemáticos; o espectro completo dos vieses de seleção (viés de admissão hospitalar de Berkson, viés do trabalhador sadio, viés de autoseleção do voluntário, perdas de seguimento/atrição e viés de detecção); vieses de aferição e informação (viés de memória/recordatório, viés do observador/entrevistador, o Efeito Hawthorne e erros de classificação diferencial versus não diferencial); Fator de Confundimento: critérios diagnósticos epidemiológicos clássicos de Rothman, métodos de controle no desenho (randomização, restrição, pareamento/matching) e na análise (estratificação de Mantel-Haenszel e modelagem multivariada); Modificação de Efeito (interação biológica) versus confundimento e o algoritmo diagnóstico da estratificação passo a passo; os nove critérios de causalidade de Sir Austin Bradford Hill detalhados um a um, com destaque para a soberania e primazia inegociável da temporalidade; inferência causal contemporânea: Gráficos Acíclicos Direcionados (DAGs de Judea Pearl), cadeias causais e mediadores, causas comuns (backdoor paths), efeito comum e o perigo do viés de colisor (collider stratification bias); o Paradoxo de Simpson; análise de sensibilidade para confundimento residual, o E-Value de VanderWeele e a triangulação metodológica em epidemiologia etiológica; guia prático de identificação de vieses em provas e o modelo contrafatual de Rubin com variáveis instrumentais (two-stage least squares); vieses cognitivos na decisão médica (teoria dual de Kahneman: disponibilidade, ancoragem, confirmação e encerramento prematuro) e vieses algorítmicos em inteligência artificial na saúde; crônicas metodológicas: falhas epidemiológicas históricas (o desastre da TRH desmascarado pelo ensaio WHI e o paradoxo dos betacarotenos no CARET); casos clínicos estruturados e bateria de questões comentadas com análise minuciosa de distratores. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado completo de Vieses, Confundimento e Causalidade em Epidemiologia para residência médica e ENAMED: taxonomia dos erros aleatórios e sistemáticos; o espectro completo dos vieses de seleção (viés de admissão hospitalar de Berkson, viés do trabalhador sadio, viés de autoseleção do voluntário, perdas de seguimento/atrição e viés de detecção); vieses de aferição e informação (viés de memória/recordatório, viés do observador/entrevistador, o Efeito Hawthorne e erros de classificação diferencial versus não diferencial); Fator de Confundimento: critérios diagnósticos epidemiológicos clássicos de Rothman, métodos de controle no desenho (randomização, restrição, pareamento/matching) e na análise (estratificação de Mantel-Haenszel e modelagem multivariada); Modificação de Efeito (interação biológica) versus confundimento e o algoritmo diagnóstico da estratificação passo a passo; os nove critérios de causalidade de Sir Austin Bradford Hill detalhados um a um, com destaque para a soberania e primazia inegociável da temporalidade; inferência causal contemporânea: Gráficos Acíclicos Direcionados (DAGs de Judea Pearl), cadeias causais e mediadores, causas comuns (backdoor paths), efeito comum e o perigo do viés de colisor (collider stratification bias); o Paradoxo de Simpson; análise de sensibilidade para confundimento residual, o E-Value de VanderWeele e a triangulação metodológica em epidemiologia etiológica; guia prático de identificação de vieses em provas e o modelo contrafatual de Rubin com variáveis instrumentais (two-stage least squares); vieses cognitivos na decisão médica (teoria dual de Kahneman: disponibilidade, ancoragem, confirmação e encerramento prematuro) e vieses algorítmicos em inteligência artificial na saúde; crônicas metodológicas: falhas epidemiológicas históricas (o desastre da TRH desmascarado pelo ensaio WHI e o paradoxo dos betacarotenos no CARET); casos clínicos estruturados e bateria de questões comentadas com análise minuciosa de distratores. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Medicina Preventiva",
   "m": "Epidemiologia Geral e Inferência Causal Avançada",
   "h": [
@@ -166,6 +166,10 @@
         [
           "p",
           "Suas modalidades mais recorrentes em provas de residência incluem:"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina Preventiva, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "3",
@@ -1115,7 +1119,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina Preventiva. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1126,8 +1155,7 @@
             "<a href=\"https://www.cambridge.org\" target=\"_blank\" rel=\"noopener noreferrer\">Pearl, Judea — Causality: Models, Reasoning, and Inference (2nd Edition). Cambridge University Press, 2009</a>",
             "<a href=\"https://www.acpjournals.org/doi/10.7326/M16-2607\" target=\"_blank\" rel=\"noopener noreferrer\">VanderWeele, T. J. & Ding, P. — Sensitivity Analysis in Observational Research: Introducing the E-Value. Annals of Internal Medicine, 2017</a>",
             "<a href=\"https://academic.oup.com/ije/article/45/6/1866/2617185\" target=\"_blank\" rel=\"noopener noreferrer\">Lawlor, D. A., Tilling, K., & Davey Smith, G. — Triangulation in aetiological epidemiology. International Journal of Epidemiology, 2016</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

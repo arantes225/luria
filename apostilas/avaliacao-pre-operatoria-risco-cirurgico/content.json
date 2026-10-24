@@ -687,7 +687,7 @@
         ],
         [
           "p",
-          "O RCRI é aplicado a cirurgia <strong>não cardíaca</strong> e deve ser interpretado junto ao risco intrínseco do procedimento. Não usar porcentagens antigas extraídas de listas de material de estudo como risco individual exato: elas pertencem a coortes e desfechos específicos, variam por validação e não equivalem automaticamente a chance de morte ou IAM. Um paciente com RCRI 0 e sangramento esperado elevado ainda precisa de planejamento transfusional e tromboprofilaxia; um paciente com RCRI 2 não está automaticamente proibido de operar."
+          "O RCRI é aplicado a cirurgia <strong>não cardíaca</strong> e deve ser interpretado junto ao risco intrínseco do procedimento. Não usar porcentagens antigas extraídas de listas de cursinho como risco individual exato: elas pertencem a coortes e desfechos específicos, variam por validação e não equivalem automaticamente a chance de morte ou IAM. Um paciente com RCRI 0 e sangramento esperado elevado ainda precisa de planejamento transfusional e tromboprofilaxia; um paciente com RCRI 2 não está automaticamente proibido de operar."
         ],
         [
           "t",
@@ -747,6 +747,14 @@
         [
           "p",
           "Solicitar exames laboratoriais e complementares quando a resposta vai alterar anestesia, tratamento ou segurança. Hemograma é útil quando há anemia suspeita, comorbidade, sangramento esperado ou cirurgia de maior porte. Creatinina/eletrólitos ajudam em DRC, diabetes, diuréticos, disfunção cardíaca e cirurgias com risco de alterações volêmicas. Coagulograma não é rastreio universal de sangramento em paciente com história negativa; indagar história hemorrágica, hepatopatia, anticoagulantes e procedimentos prévios."
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"12_lead_generated_sinus_rhythm.JPG\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/12%20lead%20generated%20sinus%20rhythm.JPG\" alt=\"Traçado de eletrocardiograma de 12 derivações basal\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Traçado de eletrocardiograma de 12 derivações basal</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3A12%20lead%20generated%20sinus%20rhythm.JPG\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Glenlarson ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Mediastinal_structures_on_chest_X-ray.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Mediastinal%20structures%20on%20chest%20X-ray.jpg\" alt=\"Radiografia de tórax padrão PA na avaliação pré-operatória\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Radiografia de tórax padrão PA na avaliação pré-operatória</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AMediastinal%20structures%20on%20chest%20X-ray.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Mikael Häggström, from source images by ZooFari, Stillwaterising and Gray&#39;s Anat ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
           "p",
@@ -1149,7 +1157,7 @@
         ],
         [
           "p",
-          "O plano de medicamentos começa por reconciliação com doses, horários e indicação. Um betabloqueador em uso crônico costuma ser mantido; iniciá-lo em dose alta na véspera exclusivamente para prevenir eventos pode causar hipotensão/bradicardia. A decisão de manter ou suspender IECA/BRA antes de cirurgia depende de pressão, insuficiência cardíaca e orientação anestésica; estratégias diferem entre pessoas com HAS estável e pessoas cuja medicação trata disfunção ventricular. Estatinas são geralmente mantidas em quem já as utiliza."
+          "O plano de medicamentos começa por reconciliação com doses, horários e indicação. Um betabloqueador em uso crônico costuma ser mantido; iniciá-lo em dose máxima preconizada na véspera exclusivamente para prevenir eventos pode causar hipotensão/bradicardia. A decisão de manter ou suspender IECA/BRA antes de cirurgia depende de pressão, insuficiência cardíaca e orientação anestésica; estratégias diferem entre pessoas com HAS estável e pessoas cuja medicação trata disfunção ventricular. Estatinas são geralmente mantidas em quem já as utiliza."
         ],
         [
           "p",
@@ -1183,7 +1191,7 @@
             [
               "Betabloqueador crônico",
               "Há indicação e estabilidade?",
-              "Suspender abruptamente ou iniciar dose alta na véspera"
+              "Suspender abruptamente ou iniciar dose máxima preconizada na véspera"
             ],
             [
               "Anticoagulante",
@@ -1233,7 +1241,7 @@
         ],
         [
           "p",
-          "A recomendação CHEST 2022 é contra ponte perioperatória rotineira com heparina quando DOAC precisa ser suspenso. O motivo é a farmacocinética de início e término relativamente rápidos: inserir HBPM terapêutica em breve janela sem droga frequentemente só aumenta sangramento. Isso não elimina a necessidade de profilaxia de TEV após cirurgia de risco, que é uma indicação distinta com dose e janela próprios. Em quem teve tromboembolismo extremamente recente ou outra situação incomum de alto risco, individualizar com hematologia/cardiologia."
+          "A recomendação CHEST 2022 é contra ponte perioperatória rotineira com heparina quando DOAC precisa ser suspenso. O motivo é a farmacocinética de início e término relativamente rápidos: inserir HBPM terapêutica precocemente janela sem droga frequentemente só aumenta sangramento. Isso não elimina a necessidade de profilaxia de TEV após cirurgia de risco, que é uma indicação distinta com dose e janela próprios. Em quem teve tromboembolismo extremamente recente ou outra situação incomum de alto risco, individualizar com hematologia/cardiologia."
         ],
         [
           "p",
@@ -1286,11 +1294,11 @@
         ],
         [
           "p",
-          "O maior temor de anticoagulação e punção neuraxial é hematoma espinhal com lesão neurológica. As recomendações de anestesia regional da ASRA, quinta edição publicada em 2025, distinguem doses altas e baixas de DOAC, função renal, punção e retirada de cateter. Para apixabana em dose alta, a ASRA sugere interrupção de pelo menos 72 horas antes de bloqueio neuraxial/profundo; para dose baixa, pelo menos 36 horas em cenários pertinentes, com possibilidade de avaliação de nível residual quando intervalo menor. São orientações para <strong>procedimento neuraxial</strong>, não para todo ato cirúrgico sob anestesia geral. É perigoso copiar diretamente a tabela de suspensão de cirurgias superficiais da CHEST para raquianestesia."
+          "O maior temor de anticoagulação e punção neuraxial é hematoma espinhal com lesão neurológica. As recomendações de anestesia regional da ASRA, quinta edição publicada em 2025, distinguem doses altas e baixas de DOAC, função renal, punção e retirada de cateter. Para apixabana em dose máxima preconizada, a ASRA sugere interrupção de pelo menos 72 horas antes de bloqueio neuraxial/profundo; para dose inicial mínima, pelo menos 36 horas em cenários pertinentes, com possibilidade de avaliação de nível residual quando intervalo menor. São orientações para <strong>procedimento neuraxial</strong>, não para todo ato cirúrgico sob anestesia geral. É perigoso copiar diretamente a tabela de suspensão de cirurgias superficiais da CHEST para raquianestesia."
         ],
         [
           "p",
-          "Dabigatrana em dose alta pode exigir pelo menos 72 horas se ClCr ≥50 mL/min e 120 horas se ClCr 30–49 mL/min antes de técnicas neuraxiais; em ClCr muito reduzido, a técnica geralmente não deve ser feita sem avaliação especializada de nível residual. Outros anticoagulantes e heparinas possuem janelas próprias, inclusive para remoção do cateter e reinício. Confirmar o texto integral atual da ASRA, dose prescrita e intervalos adequados com anestesiologista. Um protocolo de cirurgia pouco hemorrágica não pode sobrepor a segurança da medula."
+          "Dabigatrana em dose máxima preconizada pode exigir pelo menos 72 horas se ClCr ≥50 mL/min e 120 horas se ClCr 30–49 mL/min antes de técnicas neuraxiais; em ClCr muito reduzido, a técnica geralmente não deve ser feita sem avaliação especializada de nível residual. Outros anticoagulantes e heparinas possuem janelas próprias, inclusive para remoção do cateter e reinício. Confirmar o texto integral atual da ASRA, dose prescrita e intervalos adequados com anestesiologista. Um protocolo de cirurgia pouco hemorrágica não pode sobrepor a segurança da medula."
         ],
         [
           "p",
@@ -1411,7 +1419,7 @@
             [
               "Betabloqueador crônico",
               "Há bradicardia, bloqueio ou choque?",
-              "Manter em geral; não iniciar dose alta no dia da cirurgia"
+              "Manter em geral; não iniciar dose máxima preconizada no dia da cirurgia"
             ],
             [
               "IECA/BRA para HAS",
@@ -1457,7 +1465,7 @@
         ],
         [
           "p",
-          "<strong>Caso medicamentoso 1:</strong> paciente de 69 anos com FA, apixabana em dose terapêutica e ClCr preservado fará herniorrafia, mas anestesista prevê raquianestesia. A família ouviu que bastava suspender 24 horas. A janela da CHEST para cirurgia de baixo sangramento não define segurança do bloqueio neuraxial; ASRA 2025 recomenda intervalos mais longos para apixabana de dose alta, frequentemente ≥72 horas. Conduta: documentar dose/última tomada, rever clearance, técnica e plano de reinício/cateter; não adotar ponte rotineira. Por que importa: anestesia acrescenta risco não refletido apenas pelo campo cirúrgico."
+          "<strong>Caso medicamentoso 1:</strong> paciente de 69 anos com FA, apixabana em dose terapêutica e ClCr preservado fará herniorrafia, mas anestesista prevê raquianestesia. A família ouviu que bastava suspender 24 horas. A janela da CHEST para cirurgia de baixo sangramento não define segurança do bloqueio neuraxial; ASRA 2025 recomenda intervalos mais longos para apixabana de dose máxima preconizada, frequentemente ≥72 horas. Conduta: documentar dose/última tomada, rever clearance, técnica e plano de reinício/cateter; não adotar ponte rotineira. Por que importa: anestesia acrescenta risco não refletido apenas pelo campo cirúrgico."
         ],
         [
           "p",
@@ -1612,8 +1620,8 @@
           "O INR em cirrose não é medida isolada de risco hemorrágico porque vias pró-coagulantes e anticoagulantes podem estar alteradas. Corrigir INR pré-operatório com plasma em qualquer cirrótico, sem sangramento ou indicação contextual, pode aumentar volume e pressão portal sem resolver risco. A investigação deve considerar contagem de plaquetas, fibrinogênio, história de sangramento e, conforme serviço, testes viscoelásticos em cenários adequados, sem tratá-los como garantia de hemostasia. A necessidade de intervenção sobre ascite, nutrição ou profilaxia de infecção precisa ser individualizada."
         ],
         [
-          "p",
-          "O potencial de descompensação após cirurgia é alto em insuficiência hepática avançada. Uma avaliação clínica responsável pode recomendar adiar eletiva para otimização, escolher técnica menos invasiva, transferir para centro de maior complexidade ou não operar quando riscos excedem benefício. Informar que uma classificação Child A não autoriza todas as operações complexas e que Child C não constitui contraindicação absoluta independente da urgência. O cuidado é avaliar o que acontece se não operar, não apenas qual seria a mortalidade estatística da cirurgia."
+          "raw",
+          "<div class=\"book-callout-warning\"><strong class=\"callout-title\">⚠️ Alerta de Segurança — WARNING</strong><p>O potencial de descompensação após cirurgia é alto em insuficiência hepática avançada. Uma avaliação clínica responsável pode recomendar adiar eletiva para otimização, escolher técnica menos invasiva, transferir para centro de maior complexidade ou não operar quando riscos excedem benefício. Informar que uma classificação Child A não autoriza todas as operações complexas e que Child C não constitui contraindicação absoluta independente da urgência. O cuidado é avaliar o que acontece se não operar, não apenas qual seria a mortalidade estatística da cirurgia.</p></div>"
         ],
         [
           "3",
@@ -1633,7 +1641,7 @@
         ],
         [
           "p",
-          "Pessoas com corticoterapia prolongada podem apresentar supressão do eixo hipotálamo-hipófise-adrenal, risco de infecção e alteração de cicatrização. Contudo, prescrever 'dose de estresse' máxima de hidrocortisona indiscriminadamente gera hiperglicemia e efeitos adversos. Perguntar dose, potência, via e duração, suspensão recente, sinais clínicos de insuficiência adrenal e magnitude do estresse cirúrgico; o plano de cobertura depende de endocrinologia/anestesia e orientação institucional. Crises adrenais com hipotensão refratária são emergência de diagnóstico/tratamento, não motivo para ignorar riscos metabólicos do excesso de esteroide."
+          "Pessoas com corticoterapia prolongada podem apresentar supressão do eixo hipotálamo-hipófise-adrenal, risco de infecção e alteração de cicatrização. Contudo, prescrever 'dose de estresse' máxima de Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores) indiscriminadamente gera hiperglicemia e efeitos adversos. Perguntar dose, potência, via e duração, suspensão recente, sinais clínicos de insuficiência adrenal e magnitude do estresse cirúrgico; o plano de cobertura depende de endocrinologia/anestesia e orientação institucional. Crises adrenais com hipotensão refratária são emergência de diagnóstico/tratamento, não motivo para ignorar riscos metabólicos do excesso de esteroide."
         ],
         [
           "p",
@@ -1886,7 +1894,32 @@
       [
         [
           "2",
-          "Referências e limites de aplicação"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1900,13 +1933,6 @@
             "<a href=\"https://www.chestnet.org/guidelines-and-topic-collections/guidelines/pulmonary-vascular/perioperative-management-of-antithrombotic-therapy\" target=\"_blank\" rel=\"noopener noreferrer\">Douketis et al. CHEST 2022 — manejo perioperatório de antagonistas de vitamina K, DOAC e antiplaquetários, com recomendação contra ponte rotineira em muitos cenários.</a>",
             "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11666732/\" target=\"_blank\" rel=\"noopener noreferrer\">Kindel et al. 2024 — orientação multissocietária sobre agonistas GLP-1 no perioperatório, individualização de risco de aspiração.</a>"
           ]
-        ],
-        [
-          "p",
-          "<strong>Benchmark não incorporado:</strong> “01 - AVALIACAO PRE-ANESTESICA.pdf” foi aberto no Drive e mostra ASA, Lee, METs, exames, jejum e via aérea. Há nele afirmações demasiado absolutas (4 METs para autorizar cirurgia; porcentagens ASA como risco do indivíduo) e referências legais que exigem conferência; a redação LURIA usa diretrizes primárias e não reproduz imagens/tabelas/figuras da apostila comparativa."
-        ],
-        [
-          "p"
         ]
       ]
     ]

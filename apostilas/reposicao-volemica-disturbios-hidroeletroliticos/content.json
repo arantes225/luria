@@ -162,8 +162,16 @@
           "Água total e compartimentos: conceitos aproximados que orientam"
         ],
         [
+          "raw",
+          "<figure data-luria-curated-image=\"Placement_of_intravenous_cannula_1.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Placement%20of%20intravenous%20cannula%201.jpg\" alt=\"Acesso venoso periférico calibroso para ressuscitação cristaloide\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Acesso venoso periférico calibroso para ressuscitação cristaloide</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3APlacement%20of%20intravenous%20cannula%201.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">HoRaMi ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
           "p",
           "A água corporal total é variável; em adultos de composição corporal média, é frequentemente aproximada por 60% do peso em homens e 50% em mulheres, com redução em idosos, obesidade e desnutrição muscular. Cerca de dois terços da água corporal estão no intracelular e um terço no extracelular; este se reparte em plasma, interstício e fluidos especializados. Os valores são ilustrações fisiológicas, não fórmula exata de prescrição em indivíduo edemaciado. O terceiro espaço, no vocabulário cirúrgico, não é 'reservatório fixo de litros' calculável automaticamente: edema/coleções e inflamação alteram permeabilidade e distribuição."
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "p",
@@ -682,11 +690,11 @@
         ],
         [
           "3",
-          "E se o Na corrigir mais rapidamente do que planejado?"
+          "E se o Na corrigir mais com agilidade do que planejado?"
         ],
         [
           "p",
-          "Quando a diurese aquosa aumenta de repente após corrigir hipovolemia ou suspender uma causa de ADH elevado, o sódio pode subir rapidamente mesmo que a solução hipertônica já tenha sido parada. Se a trajetória ultrapassa limite recomendado ou se há alto risco de desmielinização, acionar especialista e discutir contenção da aquarese com desmopressina e, em situações selecionadas, rebaixamento cuidadosamente monitorizado com água livre/glicose IV. Essa estratégia exige vigilância intensa e não deve ser improvisada com fórmula de déficit."
+          "Quando a diurese aquosa aumenta de repente após corrigir hipovolemia ou suspender uma causa de ADH elevado, o sódio pode subir com agilidade mesmo que a solução hipertônica já tenha sido parada. Se a trajetória ultrapassa limite recomendado ou se há alto risco de desmielinização, acionar especialista e discutir contenção da aquarese com desmopressina e, em situações selecionadas, rebaixamento cuidadosamente monitorizado com água livre/glicose IV. Essa estratégia exige vigilância intensa e não deve ser improvisada com fórmula de déficit."
         ],
         [
           "3",
@@ -762,6 +770,14 @@
           "Concentração sérica não é estoque corporal total"
         ],
         [
+          "raw",
+          "<figure data-luria-curated-image=\"LowKECG.JPG\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/LowKECG.JPG\" alt=\"Onda U proeminente e infradesnível de ST na hipocalemia\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Onda U proeminente e infradesnível de ST na hipocalemia</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ALowKECG.JPG\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">James Heilman, MD ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"ECG_in_hyperkalemia.png\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/ECG%20in%20hyperkalemia.png\" alt=\"Ondas T apiculadas e simétricas no ECG de hipercalemia grave\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Ondas T apiculadas e simétricas no ECG de hipercalemia grave</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AECG%20in%20hyperkalemia.png\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Mikael Häggström.\nWhen using this image in external works, it may be cited as:\n\n ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
           "p",
           "A maior parte do potássio está no intracelular, e pequenas mudanças no fluxo transcelular alteram concentração plasmática. Insulina e agonistas beta-adrenérgicos deslocam K para dentro das células; acidose de certos tipos, destruição muscular e deficiência de insulina podem elevá-lo. Perdas por diuréticos, vômitos, drenagem digestiva e diarreia reduzem estoques corporais; LRA, DRC, hipoaldosteronismo e fármacos reduzem excreção renal. Uma pessoa pode apresentar K normal apesar de deficiência corporal importante, e o resultado deve ser lido com gases/Na/Mg/rim."
         ],
@@ -779,7 +795,7 @@
         ],
         [
           "p",
-          "Cloreto de potássio concentrado é medicação de alto risco: não administrar em bolus IV, não manipular sem diluição e preparo seguro, respeitar acesso periférico/central e monitorização cardíaca conforme necessidade. Uma ampola com concentração em mEq/mL diferente daquela presumida pode causar intoxicação fatal. A prescrição acadêmica deve sempre indicar unidade, dose, diluente, velocidade e frequência de checagem, mas a execução depende de padronização institucional e dupla checagem."
+          "Cloreto de potássio concentrado é medicação de alto risco: não administrar em bolus IV, não manipular sem diluição e preparo seguro, respeitar acesso periférico/central e monitorização cardíaca conforme critérios clínicos objetivos. Uma ampola com concentração em mEq/mL diferente daquela presumida pode causar intoxicação fatal. A prescrição acadêmica deve sempre indicar unidade, dose, diluente, velocidade e frequência de checagem, mas a execução depende de padronização institucional e dupla checagem."
         ],
         [
           "3",
@@ -791,7 +807,7 @@
         ],
         [
           "p",
-          "ECG pode apresentar onda T apiculada, PR prolongado, P atenuada/desaparecida, QRS alargado, bradiarritmia ou padrão sinusoidal em evolução grave. A correlação entre valor sérico e ECG é variável: ECG aparentemente normal não exclui arritmia iminente em K muito alto. Hemólise da amostra pode produzir pseudohipercalemia, sobretudo se quadro e ECG não combinam; colher nova amostra rapidamente quando seguro, sem atrasar tratamento de risco vital."
+          "ECG pode apresentar onda T apiculada, PR prolongado, P atenuada/desaparecida, QRS alargado, bradiarritmia ou padrão sinusoidal em evolução grave. A correlação entre valor sérico e ECG é variável: ECG aparentemente normal não exclui arritmia iminente em K muito alto. Hemólise da amostra pode produzir pseudohipercalemia, sobretudo se quadro e ECG não combinam; colher nova amostra com agilidade quando seguro, sem atrasar tratamento de risco vital."
         ],
         [
           "t",
@@ -1417,7 +1433,7 @@
         ],
         [
           "p",
-          "Não dar bolus porque só a diurese caiu; não confundir responsividade a fluido com benefício líquido da infusão; não normalizar sódio crônico rapidamente; não administrar potássio concentrado em bolus ou sem preparo seguro. Esses princípios são tão importantes quanto fórmulas de soro, pois reduzem iatrogenias previsíveis."
+          "Não dar bolus porque só a diurese caiu; não confundir responsividade a fluido com benefício líquido da infusão; não normalizar sódio crônico com agilidade; não administrar potássio concentrado em bolus ou sem preparo seguro. Esses princípios são tão importantes quanto fórmulas de soro, pois reduzem iatrogenias previsíveis."
         ],
         [
           "3",
@@ -1471,7 +1487,7 @@
         ],
         [
           "p",
-          "Homem de 67 anos, DPO 2 de colectomia, recebe 3 L/dia de cristaloides e mais 1 L em diluentes, tem balanço acumulado +5 L, ganho ponderal de 4 kg, crepitações basais e diurese 0,35 mL/kg/h por oito horas. PA estável, extremidades aquecidas, lactato normal e creatinina de 0,9 para 1,3 mg/dL em 48 horas. <strong>Hipóteses:</strong> LRA segundo KDIGO, congestão venosa/iatrogenia hídrica, além de causas renais e pós-renais a excluir. <strong>Raciocínio:</strong> oligúria não prova necessidade de expansão; sinais de congestão tornam bolus indiscriminado arriscado. <strong>Exames:</strong> checar sonda urinária, balanço, ultrassom conforme necessidade, Na/K/Cl, gasometria e revisão de medicamentos. <strong>Conduta:</strong> suspender aporte desnecessário, reavaliar perfusão e função renal, discutir remoção controlada de excesso de fluido depois de estabilização e causas de LRA. <strong>Por que importa:</strong> o paciente pode estar oligúrico e excessivamente hidratado ao mesmo tempo."
+          "Homem de 67 anos, DPO 2 de colectomia, recebe 3 L/dia de cristaloides e mais 1 L em diluentes, tem balanço acumulado +5 L, ganho ponderal de 4 kg, crepitações basais e diurese 0,35 mL/kg/h por oito horas. PA estável, extremidades aquecidas, lactato normal e creatinina de 0,9 para 1,3 mg/dL em 48 horas. <strong>Hipóteses:</strong> LRA segundo KDIGO, congestão venosa/iatrogenia hídrica, além de causas renais e pós-renais a excluir. <strong>Raciocínio:</strong> oligúria não prova necessidade de expansão; sinais de congestão tornam bolus indiscriminado arriscado. <strong>Exames:</strong> checar sonda urinária, balanço, ultrassom conforme critérios clínicos objetivos, Na/K/Cl, gasometria e revisão de medicamentos. <strong>Conduta:</strong> suspender aporte desnecessário, reavaliar perfusão e função renal, discutir remoção controlada de excesso de fluido depois de estabilização e causas de LRA. <strong>Por que importa:</strong> o paciente pode estar oligúrico e excessivamente hidratado ao mesmo tempo."
         ],
         [
           "3",
@@ -1487,7 +1503,7 @@
         ],
         [
           "p",
-          "Paciente de 44 anos, DPO 1 de cirurgia eletiva, recebeu fluidos hipotônicos em grande quantidade enquanto apresentava náuseas e dor. Desenvolve cefaleia intensa, convulsão e Na 116 mmol/L; osmolaridade plasmática baixa e glicemia normal. <strong>Hipótese:</strong> hiponatremia hipotônica aguda sintomática grave com edema cerebral, facilitada por liberação de ADH e aporte de água livre. <strong>Raciocínio:</strong> sintomas neurológicos graves têm prioridade; limitar velocidade total de correção para evitar lesão osmótica quando cronicidade é incerta. <strong>Exames:</strong> Na e osmolalidade seriados, K, função renal, osmolaridade urinária, avaliação clínica/neurológica contínua. <strong>Conduta:</strong> emergência em ambiente monitorizado, salina hipertônica em bolus conforme protocolo e resposta, suspensão de líquidos causais, investigação da causa e acompanhamento de sobrecorreção. <strong>Por que importa:</strong> normalizar Na rapidamente para 140 não é objetivo da fase inicial."
+          "Paciente de 44 anos, DPO 1 de cirurgia eletiva, recebeu fluidos hipotônicos em grande quantidade enquanto apresentava náuseas e dor. Desenvolve cefaleia intensa, convulsão e Na 116 mmol/L; osmolaridade plasmática baixa e glicemia normal. <strong>Hipótese:</strong> hiponatremia hipotônica aguda sintomática grave com edema cerebral, facilitada por liberação de ADH e aporte de água livre. <strong>Raciocínio:</strong> sintomas neurológicos graves têm prioridade; limitar velocidade total de correção para evitar lesão osmótica quando cronicidade é incerta. <strong>Exames:</strong> Na e osmolalidade seriados, K, função renal, osmolaridade urinária, avaliação clínica/neurológica contínua. <strong>Conduta:</strong> emergência em ambiente monitorizado, salina hipertônica em bolus conforme protocolo e resposta, suspensão de líquidos causais, investigação da causa e acompanhamento de sobrecorreção. <strong>Por que importa:</strong> normalizar Na com agilidade para 140 não é objetivo da fase inicial."
         ],
         [
           "3",
@@ -1588,11 +1604,11 @@
             "<strong>Q12.</strong> Após insulina com glicose para tratar hiperK, o risco a monitorar por horas é: A) hipoglicemia; B) anemia ferropriva aguda; C) hiperNa inevitável; D) derrame pleural infeccioso. <strong>Gabarito A.</strong> A: efeito conhecido sobretudo em disfunção renal; B/C/D: não são complicações típicas dessa intervenção. Revisão: controlar glicemia seriada após redistribuição de K.",
             "<strong>Q13.</strong> Hipocalemia persiste após repetidas reposições; Mg está baixo. Qual a explicação mais provável? A) Mg baixo promove perda renal de K e dificulta correção; B) Mg baixo impede qualquer arritmia; C) não existe relação Mg-K; D) insulina eleva K sempre. <strong>Gabarito A.</strong> A: mecanismo importante; B/C: falsas; D: insulina desloca K para células. Revisão: corrigir distúrbio associado é essencial.",
             "<strong>Q14.</strong> Depois de transfusão maciça, qual exame melhor avalia cálcio biologicamente ativo? A) cálcio ionizado; B) só cálcio total sem albumina; C) fosfatase alcalina como substituto direto; D) LDL-colesterol. <strong>Gabarito A.</strong> A: mede fração ativa; B: hipoalbuminemia confunde total; C/D: não avaliam cálcio ativo. Revisão: citrato da transfusão pode baixar ionizado.",
-            "<strong>Q15.</strong> Doente desnutrido recebe dieta plena rapidamente e desenvolve fosfato muito baixo, K/Mg baixos e edema. Diagnóstico provável: A) síndrome da realimentação; B) edema pulmonar cardiogênico confirmado sem outros dados; C) hipotireoidismo primário como única causa; D) hipercalcemia isolada. <strong>Gabarito A.</strong> A: padrão típico relacionado a insulina/metabolismo; B: não explica eletrólitos; C/D: insuficientes. Revisão: monitorar fósforo/Mg/K e tiamina ao realimentar.",
+            "<strong>Q15.</strong> Doente desnutrido recebe dieta plena com agilidade e desenvolve fosfato muito baixo, K/Mg baixos e edema. Diagnóstico provável: A) síndrome da realimentação; B) edema pulmonar cardiogênico confirmado sem outros dados; C) hipotireoidismo primário como única causa; D) hipercalcemia isolada. <strong>Gabarito A.</strong> A: padrão típico relacionado a insulina/metabolismo; B: não explica eletrólitos; C/D: insuficientes. Revisão: monitorar fósforo/Mg/K e tiamina ao realimentar.",
             "<strong>Q16.</strong> Na 140, Cl 109, bicarbonato 15 e albumina 2 g/dL, qual interpretação do AG é mais apropriada? A) AG bruto 16 e corrigido próximo de 21, sugerindo componente de ânions não medidos; B) AG 140 e corrigido zero; C) AG não pode ser calculado; D) albumina baixa aumenta AG medido e dispensa correção. <strong>Gabarito A.</strong> A: AG=Na-(Cl+HCO3), correção aproximada por albumina; B/C: cálculo falso; D: albumina baixa reduz AG aparente. Revisão: interpretar gasometria com proteína sérica.",
             "<strong>Q17.</strong> Na acidose metabólica com bicarbonato 12, PaCO₂ esperada pela fórmula de Winter é aproximadamente: A) 12 mmHg; B) 26 mmHg (±2); C) 50 mmHg; D) 80 mmHg. <strong>Gabarito B.</strong> A: subestima compensação; B: 1,5×12+8=26; C/D: sugerem hipoventilação adicional. Revisão: PaCO₂ 'normal' pode ser inadequada em acidose grave.",
             "<strong>Q18.</strong> Critério KDIGO de LRA em adulto inclui: A) aumento de creatinina ≥0,3 mg/dL em 48 horas; B) somente diurese &lt;2 L/d por qualquer tempo; C) necessidade obrigatória de diálise para qualquer estágio; D) só creatinina >10 mg/dL. <strong>Gabarito A.</strong> A: critério aceito; B: ignora peso e tempo; C/D: não definem todos os casos. Revisão: também usar 1,5× basal em 7 dias ou diurese &lt;0,5mL/kg/h por ≥6h.",
-            "<strong>Q19.</strong> Qual quadro sugere LRA pós-renal em pós-operatório pélvico? A) sonda urinária obstruída ou retenção e oligúria; B) fósforo baixo isolado; C) hipercalcemia antiga sem sintomas; D) vitamina D elevada como dado isolado. <strong>Gabarito A.</strong> A: obstrução deve ser excluída rapidamente; B/C/D: não demonstram obstrução. Revisão: investigar mecanismo antes de atribuir oligúria a hipovolemia.",
+            "<strong>Q19.</strong> Qual quadro sugere LRA pós-renal em pós-operatório pélvico? A) sonda urinária obstruída ou retenção e oligúria; B) fósforo baixo isolado; C) hipercalcemia antiga sem sintomas; D) vitamina D elevada como dado isolado. <strong>Gabarito A.</strong> A: obstrução deve ser excluída com agilidade; B/C/D: não demonstram obstrução. Revisão: investigar mecanismo antes de atribuir oligúria a hipovolemia.",
             "<strong>Q20.</strong> Qual indicação clássica pode levar a terapia renal substitutiva urgente na LRA? A) creatinina discretamente acima do basal sem sintomas; B) hipercalemia grave refratária ou edema pulmonar refratário com ameaça clínica; C) toda oligúria por ADH em pós-operatório; D) albumina sérica baixa isolada. <strong>Gabarito B.</strong> A: decisão não é apenas número; B: emergência renal reconhecida; C/D: não indicam diálise por si. Revisão: usar contexto e refratariedade.",
             "<strong>Q21.</strong> Paciente com ileostomia de alto débito e LRA após alta recebe só orientação de água pura. Qual abordagem é melhor? A) medir débito, avaliar Na/Mg/rim e considerar solução de reidratação com Na conforme avaliação; B) restringir toda ingestão hídrica sem exame; C) manter apenas água pura em volume ilimitado; D) prescrever diurético como rotina. <strong>Gabarito A.</strong> A: repõe perdas específicas; B/C/D: podem agravar depleção. Revisão: Na de perdas do estoma importa.",
             "<strong>Q22.</strong> Qual é a prática mais segura na prescrição de K IV? A) bolus de KCl concentrado pelo acesso periférico; B) diluir/manipular manualmente fora de protocolo; C) usar preparação padronizada, monitorar e evitar bolus IV de concentrado; D) prescrever K a todo anúrico sem dosagem. <strong>Gabarito C.</strong> A/B/D: potencialmente fatais; C: respeita segurança de medicamento de alto risco. Revisão: KCl concentrado exige sistema seguro de preparo/administração.",
@@ -1608,11 +1624,32 @@
       [
         [
           "2",
-          "14. Fontes, matriz de suficiência e estado editorial"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
           "3",
-          "Fontes verificáveis de diretrizes e consensos"
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1626,117 +1663,6 @@
             "<a href=\"https://www.nice.org.uk/guidance/cg32/chapter/Recommendations\" target=\"_blank\" rel=\"noopener noreferrer\">NICE. Nutrition support for adults (CG32): identificação de risco de realimentação, tiamina, fósforo, potássio e magnésio.</a>",
             "<a href=\"https://kdigo.org/guidelines/acute-kidney-injury/\" target=\"_blank\" rel=\"noopener noreferrer\">KDIGO. Acute Kidney Injury: recomendações de definição, estadiamento, investigação e prevenção; verificar versão institucional vigente ao usar decisões.</a>"
           ]
-        ],
-        [
-          "3",
-          "Matriz: conceito → decisão → onde o aluno pratica"
-        ],
-        [
-          "t",
-          [
-            "Competência",
-            "Capítulo",
-            "Caso / questão"
-          ],
-          [
-            [
-              "5 Rs e plano de 24h",
-              "Visão, 4 e 11",
-              "Q1, Q5 e caso 1"
-            ],
-            [
-              "Cristaloides/hipercloremia",
-              "3 e 8",
-              "Q3–Q4, Q23, caso 9"
-            ],
-            [
-              "Reavaliação e responsividade",
-              "2 e 11",
-              "Q2, caso 1"
-            ],
-            [
-              "Vômitos/sonda/ileostomia",
-              "4 e 10",
-              "Casos 2 e 12, Q6 e Q21"
-            ],
-            [
-              "Hiponatremia aguda e crônica",
-              "5",
-              "Casos 3 e 4, Q7–Q9"
-            ],
-            [
-              "Hipernatremia e hiperglicemia",
-              "5 e 10",
-              "Casos 7 e 8, Q10"
-            ],
-            [
-              "Hipercalemia e segurança do K",
-              "6",
-              "Caso 5, Q11–Q12 e Q22"
-            ],
-            [
-              "Hipocalemia e magnésio",
-              "6 e 7",
-              "Caso 6, Q13"
-            ],
-            [
-              "Cálcio ionizado/transfusão",
-              "7",
-              "Q14"
-            ],
-            [
-              "Fósforo e realimentação",
-              "7",
-              "Caso 10, Q15"
-            ],
-            [
-              "Ânion gap, Winter e distúrbios mistos",
-              "8",
-              "Casos 9 e 11, Q16–Q17"
-            ],
-            [
-              "Critérios KDIGO e causas de LRA",
-              "9",
-              "Caso 1, Q18–Q20"
-            ],
-            [
-              "Trauma, TCE e insuficiência renal",
-              "3, 9 e 10",
-              "Q4, Q24"
-            ]
-          ],
-          "book-table"
-        ],
-        [
-          "3",
-          "Fronteiras com o currículo LURIA"
-        ],
-        [
-          "p",
-          "A apostila 007 (Cuidados Perioperatórios) cobre o cuidado de segurança amplo, prevenção de infecção/TEV, ERAS e recuperação. A 012 (Resposta Metabólica ao Trauma) aprofunda os mecanismos inflamatórios, endocrinológicos e catabólicos. A 017 cobre indicação, prescrição, interpretação e correção de fluidos/eletrólitos no paciente cirúrgico. O tema 022 abordará hemostasia e transfusão no choque hemorrágico. A diferenciação evita repetir os capítulos já existentes enquanto mantém os mecanismos indispensáveis para entender cada emergência."
-        ],
-        [
-          "3",
-          "Comparação documental realizada na etapa zero"
-        ],
-        [
-          "p",
-          "Foram efetivamente lidos, no Google Drive do usuário, os PDFs '04 - ECG DISTURBIOS HIDROELETROLITICOS.pdf' (4.793 caracteres extraídos), '08 - GASOMETRIA ARTERIAL - PARTE 2.pdf' (8.923), '02 - ESPECIALIDADES- NEFRO - DRC, LRA.pdf' (19.972) e '01 - INTENSIVA - POLITRAUMA E QUEIMADURAS.pdf' (26.658). Não foi encontrado documento único com cobertura equivalente à aula 017, e autoria institucional material de referência não foi confirmada. Os documentos serviram apenas para verificar lacunas, sem copiar texto, tabelas, imagens ou identidade gráfica. Registro detalhado: `apostilas/lotes/TEMA_017_REPOSICAO_VOLEMICA_DISTURBIOS_HIDROELETROLITICOS_AUDITORIA_2026-10-15.md`."
-        ],
-        [
-          "3",
-          "Cuidados com recomendações de outras regiões"
-        ],
-        [
-          "p",
-          "NICE CG174, ESICM 2024–2025, UKKA 2023 e diretriz europeia de hiponatremia 2014 são referências internacionais de contexto e não equivalem automaticamente a uma portaria brasileira ou ao protocolo específico de cada hospital. Doses e prioridades de emergência precisam ser adaptadas por anestesia, cirurgia, nefrologia/UTI e farmácia clínica, especialmente em KCl IV concentrado, salina 3%, cálcio IV e administração de insulina-glicose. A versão da diretriz, a qualidade da evidência e a população-alvo devem ser informadas antes de assumir universalidade."
-        ],
-        [
-          "3",
-          "Pendências que impedem certificação/publicação"
-        ],
-        [
-          "p"
         ]
       ]
     ]

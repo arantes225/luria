@@ -169,6 +169,18 @@
           "Classificação por idade gestacional"
         ],
         [
+          "raw",
+          "<figure data-luria-curated-image=\"Remington_Rand_KMC_typewriter.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Remington%20Rand%20KMC%20typewriter.jpg\" alt=\"Método Canguru e contato pele a pele no prematuro\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Método Canguru e contato pele a pele no prematuro</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ARemington%20Rand%20KMC%20typewriter.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Georg Sommeregger ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Couveuse_pour_pr_matur_.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Couveuse%20pour%20pr%C3%A9matur%C3%A9.jpg\" alt=\"Lactente prematuro em incubadora neonatal com termorregulação\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Lactente prematuro em incubadora neonatal com termorregulação</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ACouveuse%20pour%20pr%C3%A9matur%C3%A9.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Yann (talk) ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "t",
           [
             "Categoria",
@@ -449,7 +461,7 @@
         ],
         [
           "p",
-          "O pré-termo apresenta grande relação superfície/massa, pele fina, barreira epidérmica incompleta, menos gordura subcutânea e capacidade variável de termogênese sem tremores. Evaporação de água e perdas por convecção, radiação e condução podem reduzir temperatura rapidamente. Hipotermia aumenta consumo de oxigênio e glicose, agrava acidose e dificulta adaptação; hipertermia iatrogênica também é nociva. Incubadoras, calor radiante, envoltórios indicados e contato pele a pele seguro são ferramentas de cuidado, não medidas de conforto dispensáveis."
+          "O pré-termo apresenta grande relação superfície/massa, pele fina, barreira epidérmica incompleta, menos gordura subcutânea e capacidade variável de termogênese sem tremores. Evaporação de água e perdas por convecção, radiação e condução podem reduzir temperatura com agilidade. Hipotermia aumenta consumo de oxigênio e glicose, agrava acidose e dificulta adaptação; hipertermia iatrogênica também é nociva. Incubadoras, calor radiante, envoltórios indicados e contato pele a pele seguro são ferramentas de cuidado, não medidas de conforto dispensáveis."
         ],
         [
           "3",
@@ -565,7 +577,7 @@
         ],
         [
           "p",
-          "O objetivo é manter normotermia sem sobreaquecer. A temperatura corporal deve ser medida por via e frequência apropriadas e relacionada ao aquecimento utilizado. A pele muito fina aumenta perdas insensíveis e risco de alterações de sódio e peso; a necessidade de líquido muda rapidamente conforme dia de vida, idade gestacional e cobertura cutânea. Peso diário, diurese, sódio, glicose e balanço ajudam adaptar prescrição. Uma perda de peso pós-natal inicial pode refletir contração fisiológica de líquido extracelular, não necessariamente desnutrição; perda excessiva ou persistência requer investigação."
+          "O objetivo é manter normotermia sem sobreaquecer. A temperatura corporal deve ser medida por via e frequência apropriadas e relacionada ao aquecimento utilizado. A pele muito fina aumenta perdas insensíveis e risco de alterações de sódio e peso; a necessidade de líquido muda com agilidade conforme dia de vida, idade gestacional e cobertura cutânea. Peso diário, diurese, sódio, glicose e balanço ajudam adaptar prescrição. Uma perda de peso pós-natal inicial pode refletir contração fisiológica de líquido extracelular, não necessariamente desnutrição; perda excessiva ou persistência requer investigação."
         ],
         [
           "3",
@@ -1770,11 +1782,32 @@
       [
         [
           "2",
-          "Referências e limites de aplicação"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
           "3",
-          "Fontes científicas e normativas"
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1788,98 +1821,9 @@
             "<a href=\"https://www.sbp.com.br/pediatria-para-familias/vacinas/imunizacao-de-bebes-prematuros/\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria. Imunização de bebês prematuros. Atualização 2024.</a>",
             "<a href=\"https://pubmed.ncbi.nlm.nih.gov/36705703/\" target=\"_blank\" rel=\"noopener noreferrer\">Embleton ND et al. Enteral Nutrition in Preterm Infants (2022): A Position Paper From ESPGHAN. J Pediatr Gastroenterol Nutr. 2023;76:248–268. doi:10.1097/MPG.0000000000003642.</a>",
             "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC13038240/\" target=\"_blank\" rel=\"noopener noreferrer\">Sweet DG et al. European Consensus Guidelines on the Management of Respiratory Distress Syndrome: 2025. Neonatology. 2026;123:514–539. doi:10.1159/000551062.</a>",
-            "<a href=\"https://www.sbp.com.br/fileadmin/user_upload/pdfs/Seguimento_prematuro_oficial.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria. Seguimento ambulatorial do prematuro de risco — referência brasileira sobre rastreio ocular, atualização a conferir antes da publicação.</a>"
+            "<a href=\"https://www.sbp.com.br/fileadmin/user_upload/pdfs/Seguimento_prematuro_oficial.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria. Seguimento ambulatorial do prematuro de risco — referência brasileira sobre rastreio ocular, atualização a conferir antes da publicação.</a>",
+            "<strong>Status:</strong> apostila 013 criada em JSON como rascunho editorial. O formato e contagem de caracteres não comprovam suficiência clínica. Exigir revisão independente por neonatologista (incluindo critérios e data de rastreio de ROP, protocolo institucional de CPAP/surfactante, detalhes de vacinação, nutricional e limiares de alta); validação científica das questões; teste de autossuficiência; inspeção visual desktop/PWA; avaliação de quadros; imagens apenas com proveniência/licenças e aprovação no Admin. Não criar index.html, catálogo, merge ou deploy."
           ]
-        ],
-        [
-          "3",
-          "Matriz de cobertura por capítulo"
-        ],
-        [
-          "t",
-          [
-            "Habilidade",
-            "Onde está ensinada",
-            "O que o aluno deve ser capaz de fazer"
-          ],
-          [
-            [
-              "Diferenciar prematuridade/baixo peso/PIG",
-              "Visão e 1",
-              "Classificar RN com IG e percentil sem confundir conceitos"
-            ],
-            [
-              "Identificar riscos antenatais",
-              "2",
-              "Antecipar local de parto e necessidades neonatais"
-            ],
-            [
-              "Explicar imaturidade multisistêmica",
-              "3–4",
-              "Relacionar mecanismo a termorregulação, glicemia e suporte"
-            ],
-            [
-              "Diagnosticar problemas respiratórios",
-              "5",
-              "Diferenciar SDR, TTN, apneia, DBP e intervenções"
-            ],
-            [
-              "Reconhecer hemodinâmica neonatal",
-              "6",
-              "Não tratar automaticamente todo canal arterial patente"
-            ],
-            [
-              "Identificar complicações neurológicas",
-              "7",
-              "Interpretar riscos de HIC e evolução de desenvolvimento"
-            ],
-            [
-              "Identificar ECN e anemia",
-              "8",
-              "Reconhecer emergência intestinal e riscos hematológicos"
-            ],
-            [
-              "Planejar leite/fortificação/crescimento",
-              "9",
-              "Escolher vias e avaliar crescimento com curvas"
-            ],
-            [
-              "Aplicar Método Canguru",
-              "10",
-              "Separar início de contato e critérios de segunda/terceira etapas"
-            ],
-            [
-              "Programar triagens",
-              "11",
-              "Garantir ROP, US craniana, audição e outras quando indicadas"
-            ],
-            [
-              "Planejar alta e seguimento",
-              "12",
-              "Idade corrigida, vacina cronológica e critérios funcionais"
-            ],
-            [
-              "Resolver decisões de prova",
-              "13–15",
-              "Justificar condutas sem extrapolar protocolos de outras apostilas"
-            ]
-          ],
-          "book-table"
-        ],
-        [
-          "3"
-        ],
-        [
-          "p",
-          "Os resumos privados do Google Drive 'Desconforto Respiratório do Recém...', 'Reanimação Neonatal' e 'Sepse neonatal' foram abertos para identificar temas e lacunas, mas não possuíam aprofundamento de prematuridade longitudinal. Autoria institucional de material de estudo não comprovada; alguns mnemônicos estavam desatualizados ou com unidades erradas, razão para priorizar literatura primária acima. Nenhuma ilustração ou tabela de terceiros foi copiada. Comparadas as apostilas LURIA 003 e 008 para delimitar escopo e prevenir reescrita de reanimação."
-        ],
-        [
-          "3",
-          "Pendências de revisão e publicação"
-        ],
-        [
-          "p",
-          "Fronteiras com outras apostilas: tema 003 aborda assistência inicial e profilaxias de sala de parto; tema 008 detalha VPP e reanimação avançada; tema 018 aprofunda hiperbilirrubinemia do recém-nascido; tema 023, sepse neonatal e protocolos de antimicrobianos. O leitor encontra aqui mecanismos, sinais de alerta e encaminhamento necessários a prematuros, mas doses e algoritmos especializados requerem documentos próprios revisados."
         ]
       ]
     ]

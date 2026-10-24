@@ -148,6 +148,10 @@
           "hCG é uma glicoproteína heterodimérica com subunidades alfa e beta. A subunidade beta ajuda especificidade de ensaios diagnósticos, mas os testes têm sensibilidades distintas e podem detectar isoformas/hormônios relacionados dependendo do método. O valor isolado não data com precisão e não indica o número de fetos. Gestação múltipla, doença trofoblástica e outras circunstâncias podem alterar concentrações, com grande sobreposição entre gestações normais. Interpretar tendências depende do intervalo entre coletas, técnica laboratorial e quadro clínico."
         ],
         [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "3",
           "Sintomas clássicos são indícios, não confirmação"
         ],
@@ -444,7 +448,7 @@
             [
               "Febre, secreção fétida e dor intensa após perda gestacional",
               "Possível infecção uterina grave",
-              "Avaliar sepse, estabilização e intervenção conforme necessidade"
+              "Avaliar sepse, estabilização e intervenção conforme critérios clínicos objetivos"
             ],
             [
               "Náuseas intensas e desidratação",
@@ -483,6 +487,10 @@
         [
           "3",
           "Transvaginal e transabdominal não são métodos de sensibilidade igual no início"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"4_mm_gestational_sac.png\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/4%20mm%20gestational%20sac.png\" alt=\"Ultrassom transvaginal demonstrando saco gestacional e vesícula vitelínica\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Ultrassom transvaginal demonstrando saco gestacional e vesícula vitelínica</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3A4%20mm%20gestational%20sac.png\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Luis Goncalves ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
           "p",
@@ -1320,7 +1328,32 @@
       [
         [
           "2",
-          "12. Bibliografia, fronteira curricular e pendências"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1330,16 +1363,11 @@
             "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/g/gravidez/pre-natal\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde. Pré-natal: início precoce, captação e continuidade na APS.</a>",
             "<a href=\"https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/pregnancy-unknown-location-pul\" target=\"_blank\" rel=\"noopener noreferrer\">UCLH/NHS. Pregnancy of Unknown Location: seguimento e sinais de alerta.</a>",
             "<a href=\"https://www.nice.org.uk/guidance/NG126/chapter/diagnosis-of-viable-intrauterine-pregnancy-and-of-tubal-ectopic-pregnancy\" target=\"_blank\" rel=\"noopener noreferrer\">NICE. NG126. Diagnóstico de gravidez intrauterina viável e ectópica tubária; segunda opinião e reavaliação.</a>",
-            "<a href=\"https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2026/02/management-of-positive-human-chorionic-gonadotropin-test-results-in-nonpregnant-patients-without-gynecologic-malignancy\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG. Clinical Consensus nº 11, fevereiro de 2026: elevação de hCG fora de gestação confirmada.</a>"
+            "<a href=\"https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2026/02/management-of-positive-human-chorionic-gonadotropin-test-results-in-nonpregnant-patients-without-gynecologic-malignancy\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG. Clinical Consensus nº 11, fevereiro de 2026: elevação de hCG fora de gestação confirmada.</a>",
+            "<strong>Comparação LURIA com materiais existentes:</strong> antes de redigir, foram abertos os PDFs privados '02 - ASSISTENCIA AO PRE-NATAL.pdf' e '02 - SANGRAMENTO DA PRIMEIRA METADE.pdf'; a autoria institucional do cursinho não pôde ser confirmada. Seus textos e imagens não foram reproduzidos. O material público preexistente da LURIA 'Pré-natal de Baixo Risco' também foi lido, especialmente os capítulos de diagnóstico de gestação, cálculo de DUM/IG/DPP e ultrassonografia; seu papel de seguimento longitudinal não foi transferido nem apagado.",
+            "<strong>Matriz de cobertura interna:</strong> confirmação hormonal em testes; cronologia em biologia; diferenciais de amenorreia em biologia e semio; localização intrauterina versus ectópica em ultrassom/pul; viabilidade em viabilidade; datação por DUM/CRL/ART em data, crl e fiv; decisões de risco em semio, pul e casos; interpretação de questões em questoes. Referências são recursos para conferir, e não pré-requisito para os casos introdutórios.",
+            "<strong>Estado editorial:</strong> primeiro rascunho original do tema 009, não publicado, sem `index.html`, sem alteração de catálogo. Não recebeu revisão de obstetra, validação de critérios ultrassonográficos atualizados em diretrizes brasileiras, teste de autossuficiência por banca representativa, auditoria de semântica e acessibilidade ou curadoria de imagens na fila de aprovação Admin. A meta de 60.000 caracteres didáticos úteis e a revisão humana continuam exigidas; não declarar certificação."
           ]
-        ],
-        [
-          "p",
-          "<strong>Comparação LURIA com materiais existentes:</strong> antes de redigir, foram abertos os PDFs privados '02 - ASSISTENCIA AO PRE-NATAL.pdf' e '02 - SANGRAMENTO DA PRIMEIRA METADE.pdf'; a autoria institucional do material de estudo não pôde ser confirmada. Seus textos e imagens não foram reproduzidos. O material público preexistente da LURIA 'Pré-natal de Baixo Risco' também foi lido, especialmente os capítulos de diagnóstico de gestação, cálculo de DUM/IG/DPP e ultrassonografia; seu papel de seguimento longitudinal não foi transferido nem apagado."
-        ],
-        [
-          "p",
-          "<strong>Matriz de cobertura interna:</strong> confirmação hormonal em testes; cronologia em biologia; diferenciais de amenorreia em biologia e semio; localização intrauterina versus ectópica em ultrassom/pul; viabilidade em viabilidade; datação por DUM/CRL/ART em data, crl e fiv; decisões de risco em semio, pul e casos; interpretação de questões em questoes. Referências são recursos para conferir, e não pré-requisito para os casos introdutórios."
         ]
       ]
     ]

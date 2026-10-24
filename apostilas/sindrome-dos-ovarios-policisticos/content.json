@@ -2,8 +2,8 @@
   "v": 2,
   "s": "sindrome-dos-ovarios-policisticos",
   "t": "Síndrome dos Ovários Policísticos (SOP)",
-  "p": "Síndrome dos Ovários Policísticos (SOP) — Livro-Texto LURIA",
-  "d": "Critérios de Roterdã e Consenso 2023 · fisiopatologia neuroendócrina e resistência insulínica · risco metabólico e oncologia · MEV, ACOs antiandrogênicos e indução com letrozol",
+  "p": "Critérios de Roterdã e Consenso 2023 · fisiopatologia neuroendócrina e resistência insulínica · risco metabólico e oncologia · MEV, ACOs antiandrogênicos e indução com letrozol Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Critérios de Roterdã e Consenso 2023 · fisiopatologia neuroendócrina e resistência insulínica · risco metabólico e oncologia · MEV, ACOs antiandrogênicos e indução com letrozol Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Ginecologia e Obstetrícia",
   "m": "Endocrinologia Ginecológica e Reprodução Humana",
   "h": [
@@ -204,6 +204,10 @@
         [
           "p",
           "Em condições fisiológicas, pulsos lentos de GnRH favorecem a síntese hipofisária da subunidade beta do FSH, enquanto pulsos rápidos estimulam preferencialmente a síntese da subunidade beta do <strong>Hormônio Luteinizante (LH)</strong>. Na SOP, a redução da retroalimentação negativa exercida pela progesterona (devido à anovulação crônica e ausência de corpo lúteo), associada à ação estimulatória de neuropeptídeos centrais (kisspeptina e neurocinina B), mantém o gerador de pulsos de GnRH em regime acelerado contínuo. Consequentemente:"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Ginecologia e Obstetrícia, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "u",
@@ -1306,7 +1310,7 @@
             ],
             [
               "<strong>Síndrome de Cushing</strong>",
-              "Cortisol salivar noturno, Cortisol livre urinário de 24h ou Teste de supressão com 1 mg de Dexametasona",
+              "Cortisol salivar noturno, Cortisol livre urinário de 24h ou Teste de supressão com 1 mg de Dexametasona (10 mg EV 15-20 minutos antes ou junto à 1ª dose de antibiótico em meningite bacteriana aguda, ou 6 mg/dia VO/EV no choque séptico refratário/COVID grave)",
               "Investigar se houver estigmas cushingóides: pletora facial (\"fácies em lua cheia\"), giba dorsal de búfalo, estrias violáceas largas (> 1 cm) em abdome e flancos, fraqueza muscular proximal e hipertensão grave."
             ]
           ],
@@ -1350,7 +1354,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Ginecologia e Obstetrícia. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1360,8 +1389,7 @@
             "<a href=\"https://www.endocrino.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Endocrinologia e Metabologia (SBEM) — Diretrizes Clínicas para o Diagnóstico e Tratamento da Síndrome dos Ovários Policísticos</a>",
             "<a href=\"https://www.acog.org\" target=\"_blank\" rel=\"noopener noreferrer\">American College of Obstetricians and Gynecologists (ACOG) — Practice Bulletin No. 194: Polycystic Ovary Syndrome</a>",
             "<a href=\"https://www.nejm.org\" target=\"_blank\" rel=\"noopener noreferrer\">National Institutes of Health (NIH) / Reproductive Medicine Network — Pregnancy in Polycystic Ovary Syndrome II (PPCOS II Trial - Legro RS et al., NEJM)</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

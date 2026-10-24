@@ -141,9 +141,7 @@
         [
           "p",
           "A disciplina do tema 003, Assistência ao RN em Sala de Parto, descreve transição fisiológica, contato pele a pele, vacinas, vitamina K e rastreios. Aqui, esses assuntos só aparecem quando mudam uma decisão de reanimação. O objetivo é preservar fronteiras curriculares e tornar o conteúdo aprofundado em vez de repetitivo."
-        ],
-        "<p><strong>Caso de fixação:</strong> recém-nascido prematuro nasce hipotônico e não inicia respiração efetiva após as medidas iniciais. A decisão deve seguir o algoritmo vigente do PRN-SBP: avaliar respiração e frequência cardíaca, garantir ventilação eficaz, reavaliar a resposta e escalar somente quando a ventilação estiver comprovadamente adequada. O caso não autoriza memorizar uma dose isolada; concentração, via, intervalo e indicação devem ser conferidos no manual institucional atualizado.</p>",
-        "<p><strong>Caso de fixação:</strong> recém-nascido prematuro nasce hipotônico e não inicia respiração efetiva após as medidas iniciais. A decisão deve seguir o algoritmo vigente do PRN-SBP: avaliar respiração e frequência cardíaca, garantir ventilação eficaz, reavaliar a resposta e escalar somente quando a ventilação estiver comprovadamente adequada. O caso não autoriza memorizar uma dose isolada; concentração, via, intervalo e indicação devem ser conferidos no manual institucional atualizado.</p>"
+        ]
       ]
     ],
     [
@@ -159,6 +157,22 @@
           "O pulmão fetal precisa tornar-se órgão de trocas gasosas"
         ],
         [
+          "raw",
+          "<figure data-luria-curated-image=\"A_compendious_system_of_midwifery__1852___14760754931_.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/A%20compendious%20system%20of%20midwifery%20(1852)%20(14760754931).jpg\" alt=\"Cateterismo venoso umbilical de emergência para infusão de fármacos\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Cateterismo venoso umbilical de emergência para infusão de fármacos</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AA%20compendious%20system%20of%20midwifery%20(1852)%20(14760754931).jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Dewees, William Potts, 1768-1841. [from old catalog] ↗</a> (No restrictions). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"CPR_Infant_Chest_Compression.png\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/CPR%20Infant%20Chest%20Compression.png\" alt=\"Técnica dos dois polegares para massagem cardíaca neonatal\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Técnica dos dois polegares para massagem cardíaca neonatal</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ACPR%20Infant%20Chest%20Compression.png\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">BruceBlaus ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"USNMRTC_Guantanamo_Bay_Builds_Lifesaving_Readiness_for_Security_Forces__10003156\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/USNMRTC%20Guantanamo%20Bay%20Builds%20Lifesaving%20Readiness%20for%20Security%20Forces%20(10003156).jpg\" alt=\"Ventilação com pressão positiva (VPP) com balão e máscara no RN\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Ventilação com pressão positiva (VPP) com balão e máscara no RN</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AUSNMRTC%20Guantanamo%20Bay%20Builds%20Lifesaving%20Readiness%20for%20Security%20Forces%20(10003156).jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">U.S. Navy photo by Emily McCamy ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
           "p",
           "Durante a vida fetal, a placenta sustenta trocas de oxigênio e gás carbônico, e a circulação desvia grande parte do fluxo do leito pulmonar por ducto arterioso e forame oval. Após o nascimento, a entrada de ar, a formação de capacidade residual funcional e o aumento da pressão parcial de oxigênio favorecem queda de resistência vascular pulmonar e maior fluxo aos pulmões. Quando o recém-nascido não ventila, o pulmão permanece com capacidade residual insuficiente e resistência vascular elevada, agravando hipoxemia, acidemia e bradicardia."
         ],
@@ -172,7 +186,7 @@
         ],
         [
           "p",
-          "O conceito de 'Minuto de Ouro' enfatiza que avaliação e passos iniciais devem ocorrer rapidamente para permitir ventilação quando há apneia, respiração irregular importante ou FC persistentemente inferior a 100/minuto. Não significa esperar até completar sessenta segundos para decidir; ao contrário, significa não perder essa janela em aspirações desnecessárias, procedimentos de conforto ou cálculo de Apgar. A resposta à VPP pode reverter bradicardia e evitar escalonamento para manobras mais invasivas."
+          "O conceito de 'Minuto de Ouro' enfatiza que avaliação e passos iniciais devem ocorrer com agilidade para permitir ventilação quando há apneia, respiração irregular importante ou FC persistentemente inferior a 100/minuto. Não significa esperar até completar sessenta segundos para decidir; ao contrário, significa não perder essa janela em aspirações desnecessárias, procedimentos de conforto ou cálculo de Apgar. A resposta à VPP pode reverter bradicardia e evitar escalonamento para manobras mais invasivas."
         ],
         [
           "3",
@@ -269,7 +283,7 @@
             ],
             [
               "Monitor de ECG",
-              "Avaliar FC rapidamente em reanimação",
+              "Avaliar FC no intervalo de reanimação",
               "Usar FC estimada apenas por palpação lenta durante manobras"
             ],
             [
@@ -352,7 +366,7 @@
         ],
         [
           "p",
-          "Ao nascer, avaliar rapidamente respiração ou choro, tônus e sinais de boa adaptação, em contexto de idade gestacional e riscos obstétricos. RN que respira e tem bom tônus pode receber cuidados junto à mãe com observação ativa e proteção térmica; quando não apresenta boa vitalidade, passa a atendimento em fonte de calor para passos iniciais rápidos e avaliação. Apneia ou gasping exige ventilação; respiração superficial irregular em RN com FC baixa é ventilação insuficiente até prova em contrário."
+          "Ao nascer, avaliar com agilidade respiração ou choro, tônus e sinais de boa adaptação, em contexto de idade gestacional e riscos obstétricos. RN que respira e tem bom tônus pode receber cuidados junto à mãe com observação ativa e proteção térmica; quando não apresenta boa vitalidade, passa a atendimento em fonte de calor para passos iniciais rápidos e avaliação. Apneia ou gasping exige ventilação; respiração superficial irregular em RN com FC baixa é ventilação insuficiente até prova em contrário."
         ],
         [
           "3",
@@ -391,7 +405,7 @@
         [
           "o",
           [
-            "No nascimento, avaliar rapidamente vitalidade, respiração/choro, tônus e necessidade de suporte, respeitando a situação da placenta e a capacidade de prestar assistência.",
+            "No nascimento, avaliar com agilidade vitalidade, respiração/choro, tônus e necessidade de suporte, respeitando a situação da placenta e a capacidade de prestar assistência.",
             "Proteger temperatura desde o primeiro contato; no prematuro imaturo, aplicar proteção térmica específica prevista no protocolo, sem gerar atraso respiratório.",
             "Posicionar a cabeça para abertura funcional da via aérea e remover secreções apenas diante de obstrução significativa, não por rotina ou pelo simples aspecto do líquido amniótico.",
             "Se houver apneia, gasping ou FC inferior a 100/min depois dos passos iniciais, iniciar VPP dentro do primeiro minuto, com monitorização apropriada.",
@@ -1022,7 +1036,7 @@
         ],
         [
           "p",
-          "Após cerca de 60 segundos de compressões coordenadas e ventilação com O₂ 100%, reavaliar FC no protocolo. Com elevação sustentada da FC acima de 60/min, suspender compressões, mantendo ventilação de suporte conforme necessidade e reduzindo gradualmente FiO₂ de acordo com metas de saturação. Se FC segue abaixo de 60, reavaliar qualidade de VPP/compressão, posicionamento da via aérea, oxigênio e possível necessidade de adrenalina intravascular."
+          "Após cerca de 60 segundos de compressões coordenadas e ventilação com O₂ 100%, reavaliar FC no protocolo. Com elevação sustentada da FC acima de 60/min, suspender compressões, mantendo ventilação de suporte conforme critérios clínicos objetivos e reduzindo gradualmente FiO₂ de acordo com metas de saturação. Se FC segue abaixo de 60, reavaliar qualidade de VPP/compressão, posicionamento da via aérea, oxigênio e possível necessidade de adrenalina intravascular."
         ],
         [
           "t",
@@ -1258,7 +1272,7 @@
         ],
         [
           "p",
-          "O prematuro extremo perde calor rapidamente por evaporação, condução, convecção e radiação, além de produzir pouco calor relativo às necessidades. O preparo inclui sala aquecida, proteção apropriada com envoltório plástico em faixas indicadas e gases aquecidos/umidificados quando disponíveis, sem retardar assistência respiratória. Meta de temperatura permanece normotermia, evitando hipertermia iatrogênica. A estratégia de clampeamento do cordão deve respeitar vitalidade, circulação placentária e o protocolo neonatal específico, sem ordenha indiscriminada no extremo prematuro."
+          "O prematuro extremo perde calor com agilidade por evaporação, condução, convecção e radiação, além de produzir pouco calor relativo às necessidades. O preparo inclui sala aquecida, proteção apropriada com envoltório plástico em faixas indicadas e gases aquecidos/umidificados quando disponíveis, sem retardar assistência respiratória. Meta de temperatura permanece normotermia, evitando hipertermia iatrogênica. A estratégia de clampeamento do cordão deve respeitar vitalidade, circulação placentária e o protocolo neonatal específico, sem ordenha indiscriminada no extremo prematuro."
         ],
         [
           "3",
@@ -1461,7 +1475,7 @@
         ],
         [
           "p",
-          "Comprometimento neurológico após insulto hipóxico-isquêmico pode se manifestar por alterações de consciência, tônus, reflexos primitivos, sucção, convulsões ou instabilidade autonômica. A avaliação depende de história intraparto, necessidade de reanimação, gasometria/acidose quando disponível, exame neurológico seriado e diagnósticos alternativos. Hipotermia terapêutica é intervenção especializada em recém-nascidos que atendem critérios gestacionais, temporais e clínico-neurológicos; a indicação deve ser examinada rapidamente, pois existe janela terapêutica. <strong>Não resfriar indiscriminadamente</strong> todo RN com Apgar baixo ou bradicardia inicial, nem esquecer normotermia durante estabilização."
+          "Comprometimento neurológico após insulto hipóxico-isquêmico pode se manifestar por alterações de consciência, tônus, reflexos primitivos, sucção, convulsões ou instabilidade autonômica. A avaliação depende de história intraparto, necessidade de reanimação, gasometria/acidose quando disponível, exame neurológico seriado e diagnósticos alternativos. Hipotermia terapêutica é intervenção especializada em recém-nascidos que atendem critérios gestacionais, temporais e clínico-neurológicos; a indicação deve ser examinada com agilidade, pois existe janela terapêutica. <strong>Não resfriar indiscriminadamente</strong> todo RN com Apgar baixo ou bradicardia inicial, nem esquecer normotermia durante estabilização."
         ],
         [
           "t",
@@ -1715,7 +1729,7 @@
         ],
         [
           "p",
-          "RN de 40 semanas necessita VPP por apneia, inicialmente melhora FC de 70 para 125/min. Depois de intensificação de pressões, desenvolve cianose central, piora respiratória, redução de entrada de ar em hemitórax direito e FC 70/min. <strong>Hipóteses:</strong> pneumotórax ou outro escape aéreo, falha/obstrução do dispositivo, pior posicionamento de via aérea; não atribuir tudo à baixa FiO₂. <strong>Raciocínio:</strong> deterioração após melhora e assimetria pulmonar apontam problema mecânico, não necessariamente falha primária do algoritmo. <strong>Avaliação:</strong> conferir rapidamente via aérea, circuito, pressões, expansão e sinais de pneumotórax sob equipe habilitada. <strong>Conduta:</strong> reestabelecer ventilação eficaz e manejar causa torácica conforme urgência, inclusive descompressão emergencial se instabilidade e diagnóstico clínico sustentarem, sem retardar avaliação pelo simples pedido de imagem. <strong>Por que importa:</strong> 'aumentar o oxigênio' é resposta incompleta quando o ar não alcança alvéolos com segurança."
+          "RN de 40 semanas necessita VPP por apneia, inicialmente melhora FC de 70 para 125/min. Depois de intensificação de pressões, desenvolve cianose central, piora respiratória, redução de entrada de ar em hemitórax direito e FC 70/min. <strong>Hipóteses:</strong> pneumotórax ou outro escape aéreo, falha/obstrução do dispositivo, pior posicionamento de via aérea; não atribuir tudo à baixa FiO₂. <strong>Raciocínio:</strong> deterioração após melhora e assimetria pulmonar apontam problema mecânico, não necessariamente falha primária do algoritmo. <strong>Avaliação:</strong> conferir com agilidade via aérea, circuito, pressões, expansão e sinais de pneumotórax sob equipe habilitada. <strong>Conduta:</strong> reestabelecer ventilação eficaz e manejar causa torácica conforme urgência, inclusive descompressão emergencial se instabilidade e diagnóstico clínico sustentarem, sem retardar avaliação pelo simples pedido de imagem. <strong>Por que importa:</strong> 'aumentar o oxigênio' é resposta incompleta quando o ar não alcança alvéolos com segurança."
         ],
         [
           "3",
@@ -1758,7 +1772,7 @@
             "<strong>Q2.</strong> Após 30 segundos de VPP facial, FC segue 80/min e não há elevação torácica. Qual melhor medida? A) avaliar vazamento, posição, obstrução e dispositivo; B) comprimir sem revisar ventilação; C) aplicar mais oxigênio sem corrigir técnica; D) observar por dez minutos. <strong>Gabarito A.</strong> B/C não corrigem falha ventilatória; D atrasa intervenção. Revisão: o aumento da FC comprova efetividade.",
             "<strong>Q3.</strong> Segundo SBP 2026, concentração inicial de O₂ na VPP do RN ≥34 semanas é: A) 100%; B) 60%; C) 21%; D) 5%. <strong>Gabarito C.</strong> A promove hiperóxia indiscriminada; B corresponde à recomendação SBP para &lt;34 semanas; D é incompatível com ar ambiente. Revisão: 21%, depois titular conforme saturação.",
             "<strong>Q4.</strong> Pela SBP 2026, na VPP do RN &lt;34 semanas deve-se iniciar: A) 21% fixos sem monitorização; B) O₂ 60% e ajustar por oximetria; C) 100% para todos durante toda a internação; D) sem oxigênio em qualquer circunstância. <strong>Gabarito B.</strong> A mistura protocolo do grupo ≥34; C ignora risco oxidativo; D ignora insuficiência respiratória. Revisão: atribuir faixa gestacional e protocolo brasileiro.",
-            "<strong>Q5.</strong> RN 30 semanas com FC 150/min, respiração espontânea e desconforto. Qual estratégia pode ser apropriada após avaliação? A) CPAP; B) compressões; C) adrenalina imediata; D) aguardar apneia sem agir. <strong>Gabarito A.</strong> B/C não têm indicação com FC adequada; D ignora necessidade de suporte. Revisão: CPAP mantém pressão contínua, diferentemente da VPP de apneia.",
+            "<strong>Q5.</strong> RN 30 semanas com FC 150/min, respiração espontânea e desconforto. Qual estratégia pode ser apropriada após avaliação? A) CPAP; B) compressões; C) Adrenalina intramuscular (0,3 a 0,5 mg no vasto lateral da coxa na concentração 1:1.000 [1 mg/mL] em adultos, ou 0,01 mg/kg até 0,3 mg em crianças)ediata; D) aguardar apneia sem agir. <strong>Gabarito A.</strong> B/C não têm indicação com FC adequada; D ignora necessidade de suporte. Revisão: CPAP mantém pressão contínua, diferentemente da VPP de apneia.",
             "<strong>Q6.</strong> Compressões são indicadas em RN quando: A) Apgar de um minuto é baixo isoladamente; B) há FC &lt;60 apesar de VPP efetiva, conforme algoritmo; C) há mecônio no líquido; D) a saturação é baixa no segundo minuto, com FC normal. <strong>Gabarito B.</strong> A/C/D não substituem critério fisiológico e resposta ventilatória. Revisão: compressões vêm depois da ventilação comprovada.",
             "<strong>Q7.</strong> Na reanimação neonatal, a relação usual compressão/ventilação coordenada é: A) 30:2 de adulto; B) 15:2; C) 3:1; D) 10:1. <strong>Gabarito C.</strong> A/B são proporções típicas de outros cenários; D não corresponde à recomendação. Revisão: aproximadamente 90 compressões e 30 ventilações por minuto.",
             "<strong>Q8.</strong> Qual afirmação sobre adrenalina neonatal é correta? A) Primeira escolha antes da VPP; B) via intravascular é preferida quando FC &lt;60 persiste após VPP/compressões eficazes; C) a concentração comercial 1 mg/mL deve ser usada sem diluição de rotina; D) administrar volume sempre antes de ventilação. <strong>Gabarito B.</strong> A e D ignoram fisiopatologia; C representa risco gravíssimo de erro de medicação. Revisão: checar via, peso, diluição e indicação.",
@@ -1784,7 +1798,32 @@
       [
         [
           "2",
-          "Referências oficiais e mapa curricular"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1795,14 +1834,6 @@
             "<a href=\"https://www.sbp.com.br/especiais/reanimacao-/\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria. Programa de Reanimação Neonatal — cursos e diretrizes vigentes.</a>",
             "<a href=\"https://www.sbp.com.br/wp-content/uploads/2026/06/PRN-SBP-Diretrizes-2026-Reanimacao-RN-menor-34-semanas-12junho2026.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Guinsburg R, Almeida MFB et al. PRN-SBP. Reanimação do recém-nascido &lt;34 semanas em sala de parto: Diretrizes 2026, junho. DOI:10.25060/PRN-SBP-2026-2.</a>"
           ]
-        ],
-        [
-          "p",
-          "<strong>Benchmark consultado:</strong> 'Reanimação Neonatal.pdf', documento resumido presente no Drive do usuário, efetivamente aberto em outubro de 2026. A autoria institucional do arquivo não foi confirmada. Seu conteúdo orientou apenas mapeamento dos tópicos e identificação de conceitos desatualizados; não reproduzimos seus fluxogramas, tabelas ou imagens."
-        ],
-        [
-          "p",
-          "<strong>Fronteira com o tema 003:</strong> este volume discute monitorização e suporte quando há transição inadequada; não substitui a apostila de assistência habitual ao recém-nascido, que cobre primeira hora, vínculo, profilaxias, vacinação e rastreios. As diferenças de oxigênio entre SBP 2026 e AHA/AAP 2025 estão identificadas com atribuição, sem fusão de protocolos."
         ]
       ]
     ]

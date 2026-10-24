@@ -2,8 +2,8 @@
   "v": 2,
   "s": "hipoglicemia-e-disturbios-metabolicos-neonatais",
   "t": "Hipoglicemia e Distúrbios Metabólicos Neonatais",
-  "p": "Hipoglicemia e Distúrbios Metabólicos Neonatais — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance em Adaptação Metabólica, TIG, Hiperinsulinismo, Hipocalcemia e Hipomagnesemia Neonatal",
+  "p": "Tratado de Alta Performance em Adaptação Metabólica, TIG, Hiperinsulinismo, Hipocalcemia e Hipomagnesemia Neonatal Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance em Adaptação Metabólica, TIG, Hiperinsulinismo, Hipocalcemia e Hipomagnesemia Neonatal Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Pediatria",
   "m": "Pediatria",
   "h": [
@@ -219,6 +219,10 @@
           "book-table"
         ],
         [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Pediatria, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "3",
           "A Divergência Crítica entre a AAP e a Pediatric Endocrine Society (PES)"
         ],
@@ -387,7 +391,7 @@
               "<strong>1. Hipoglicemia HIPOCETONÊMICA SEM Acidose Grave (ou com acidose leve)</strong>",
               "A insulina ou o defeito mitocondrial impede a oxidação lipídica e a síntese hepática de corpos cetônicos.",
               "- <strong>Hiperinsulinismo Congênito</strong> (mutações <em>ABCC8</em>, <em>KCNJ11</em>);<br>- <strong>Defeitos da Beta-oxidação de Ácidos Graxos</strong> (ex: Deficiência de Desidrogenase de Acil-CoA de Cadeia Média - <strong>MCAD</strong>).",
-              "- No Hiperinsulinismo: TIG extremamente elevada (> 10 a 15 mg/kg/min), recém-nascido macrossômico ou com Beckwith-Wiedemann, glicemia sobe rapidamente com glucagon;<br>- Na deficiência de MCAD: hipoglicemia hipocetonêmica desencadeada por jejum prolongado, cardiomiopatia, perfil de acilcarnitinas plasmáticas alterado (elevação de C8 e C6/C10)."
+              "- No Hiperinsulinismo: TIG extremamente elevada (> 10 a 15 mg/kg/min), recém-nascido macrossômico ou com Beckwith-Wiedemann, glicemia sobe com agilidade com glucagon;<br>- Na deficiência de MCAD: hipoglicemia hipocetonêmica desencadeada por jejum prolongado, cardiomiopatia, perfil de acilcarnitinas plasmáticas alterado (elevação de C8 e C6/C10)."
             ],
             [
               "<strong>2. Hipoglicemia HIPERCETONÊMICA COM Hepatomegalia e Hiperlactatemia Grave</strong>",
@@ -627,9 +631,9 @@
               "Excelente para resgate de emergência sem acesso vascular estabelecido ou na falência transitória de TIG elevada. Efeito efêmero se os estoques de glicogênio hepático estiverem depletados (como no prematuro ou PIG desnutrido). Pode causar náuseas e vômitos."
             ],
             [
-              "<strong>Glicocorticoides (Hidrocortisona)</strong>",
+              "<strong>Glicocorticoides (Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores))</strong>",
               "Induzem a transcrição de enzimas-chave da gliconeogênese hepática (PEPCK e glicose-6-fosfatase), aumentam a resistência periférica à insulina e inibem a captação de glicose nos tecidos periféricos (músculo e tecido adiposo).",
-              "<strong>Hidrocortisona sódica IV:</strong> 5 mg/kg/dia dividida em 2 a 3 doses diárias.",
+              "<strong>Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores) sódica IV:</strong> 5 mg/kg/dia dividida em 2 a 3 doses diárias.",
               "Indicada primariamente quando há <strong>deficiência documentada de cortisol / hipopituitarismo congênito</strong>. No hiperinsulinismo é medicação de terceira linha com eficácia modesta e risco de imunossupressão, hipertensão arterial e catabolismo protéico."
             ]
           ],
@@ -670,7 +674,7 @@
               "<strong>Hipocalcemia Precoce</strong>",
               "<strong>Primeiras 48 a 72 horas de vida</strong> (nadir no 1º e 2º dias).",
               "- <strong>Prematuridade extrema</strong> (interrupção da transferência placentária do 3º trimestre);<br>- <strong>Filho de Mãe Diabética</strong> (associada a hipomagnesemia crônica fetal que suprime o PTH);<br>- <strong>Asfixia Perinatal Grave</strong> (liberação de fosfato intracelular e hipercalcitonemia transitória).",
-              "Costuma ser assintomática ou manifestar-se por tremores finos e irritabilidade.<br><em>Tratamento sintomático:</em> <strong>Gluconato de Cálcio a 10% IV</strong> na dose de <strong>1 a 2 mL/kg (100 a 200 mg/kg) diluído 1:1 em água destilada</strong>, administrado lentamente sob <strong>monitorização eletrocardiográfica contínua</strong> (risco de bradicardia severa e assistolia se infundido rapidamente). Prevenção: aporte de cálcio elementar de 40 a 60 mg/kg/dia na nutrição parenteral."
+              "Costuma ser assintomática ou manifestar-se por tremores finos e irritabilidade.<br><em>Tratamento sintomático:</em> <strong>Gluconato de Cálcio a 10% IV</strong> na dose de <strong>1 a 2 mL/kg (100 a 200 mg/kg) diluído 1:1 em água destilada</strong>, administrado lentamente sob <strong>monitorização eletrocardiográfica contínua</strong> (risco de bradicardia severa e assistolia se infundido com agilidade). Prevenção: aporte de cálcio elementar de 40 a 60 mg/kg/dia na nutrição parenteral."
             ],
             [
               "<strong>Hipocalcemia Tardia</strong>",
@@ -703,7 +707,7 @@
         [
           "u",
           [
-            "<strong>Hiponatremia Neonatal ($Na^+ < 130 \text{ mEq/L}$):</strong>\n    <ul>\n      <li><em>Com Depleção Volêmica e Desidratação:</em> Perda excessiva renal ou cutânea de sal. O diagnóstico diferencial mandatório é a <strong>Hiperplasia Adrenal Congênita forma perdedora de sal</strong> (deficiência de 21-hidroxilase) associada a <strong>Hipercalemia ($K^+ > 6,0 \text{ a } 6,5 \text{ mEq/L}$)</strong>, acidose metabólica e hipotensão entre o 7º e 14º dia de vida. Requer reposição com NaCl 0,9% e introdução de hidrocortisona e fludrocortisona;",
+            "<strong>Hiponatremia Neonatal ($Na^+ < 130 \text{ mEq/L}$):</strong>\n    <ul>\n      <li><em>Com Depleção Volêmica e Desidratação:</em> Perda excessiva renal ou cutânea de sal. O diagnóstico diferencial mandatório é a <strong>Hiperplasia Adrenal Congênita forma perdedora de sal</strong> (deficiência de 21-hidroxilase) associada a <strong>Hipercalemia ($K^+ > 6,0 \text{ a } 6,5 \text{ mEq/L}$)</strong>, acidose metabólica e hipotensão entre o 7º e 14º dia de vida. Requer reposição com NaCl 0,9% e introdução de Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores) e fludrocortisona;",
             "<em>Com Hipervolemia e Edema (Dilucional):</em> Síndrome da Secreção Inapropriada de Hormônio Antidiurético (SIADH) pós-asfixia perinatal ou meningite, ou oferta excessiva iatrogênica de água livre hipotônica;",
             "<em>Manejo da Hiponatremia Sintomática com Convulsões:</em> Infusão lenta de <strong>Solução Salina Hipertônica a 3% (NaCl 3%) na dose de 3 a 5 mL/kg por via venosa ao longo de 20 a 30 minutos</strong>, visando elevar o sódio sérico agudamente em 3 a 5 mEq/L para cessar o edema cerebral agudo e as convulsões."
           ]
@@ -816,7 +820,7 @@
             "T4 livre = 0,4 ng/dL com TSH = 1,2 mUI/L (Hipotireoidismo Central);",
             "Corpos cetônicos séricos levemente presentes (beta-hidroxibutirato = 1,4 mmol/L).",
             "<strong>Neuroimagem:</strong> Ressonância Magnética de Sela Túrcica e Crânio demonstrou <strong>Tríade de Interrupção da Haste Hipofisária</strong>: hipoplasia severa da adeno-hipófise, haste hipofisária ausente/afilada e neuro-hipófise ectópica na base do infundíbulo hipotalâmico;",
-            "<strong>Conduta Terapêutica Definitiva:</strong>\n      <ul>\n        <li>Início imediato de <strong>Hidrocortisona sódica IV na dose de 10 mg/m²/dia</strong> (reposição de glicocorticoide), o que permitiu estabilizar a glicemia em menos de 12 horas e retirar a infusão de glicose venosa;",
+            "<strong>Conduta Terapêutica Definitiva:</strong>\n      <ul>\n        <li>Início imediato de <strong>Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores) sódica IV na dose de 10 mg/m²/dia</strong> (reposição de glicocorticoide), o que permitiu estabilizar a glicemia em menos de 12 horas e retirar a infusão de glicose venosa;",
             "Início concomitante de <strong>Levotiroxina sódica oral (10 mcg/kg/dia)</strong> após início do corticoide (nunca iniciar hormônio tireoidiano antes do corticoide pelo risco de precipitar crise adrenal aguda por aceleração do clearance metabólico hepático do escasso cortisol residual);",
             "Introdução subsequente de <strong>Hormônio do Crescimento Recombinante Humano (rhGH)</strong> por via subcutânea e seguimento conjunto com endocrinologia pediátrica, normalizando o desenvolvimento e garantindo prognóstico favorável."
           ]
@@ -938,7 +942,7 @@
         ],
         [
           "p",
-          "A) Ofertar imediatamente 30 mL de fórmula láctea infantil de partida por copinho ou mamadeira e repetir a glicemia capilar em 30 minutos.<br>\nB) Administrar bolus endovenoso de Soro Glicosado a 25% na dose de 4 mL/kg em push rápido seguido de hidrocortisona endovenosa.<br>\nC) Administrar bolus endovenoso de Soro Glicosado a 10% na dose de 2 mL/kg (200 mg/kg de glicose) em 2 a 3 minutos, seguido de infusão contínua de glicose (TIG) iniciando em 6 a 8 mg/kg/min, e repetir a glicemia em 30 minutos.<br>\nD) Administrar Glucagon intramuscular na dose de 0,1 mg/kg como monoterapia de primeira linha para mobilizar o glicogênio hepático.<br>\nE) Manter observação expectante, uma vez que valores até 20 mg/dL fazem parte do nadir glicêmico fisiológico das primeiras 2 horas de vida."
+          "A) Ofertar imediatamente 30 mL de fórmula láctea infantil de partida por copinho ou mamadeira e repetir a glicemia capilar em 30 minutos.<br>\nB) Administrar bolus endovenoso de Soro Glicosado a 25% na dose de 4 mL/kg em push rápido seguido de Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores) endovenosa.<br>\nC) Administrar bolus endovenoso de Soro Glicosado a 10% na dose de 2 mL/kg (200 mg/kg de glicose) em 2 a 3 minutos, seguido de infusão contínua de glicose (TIG) iniciando em 6 a 8 mg/kg/min, e repetir a glicemia em 30 minutos.<br>\nD) Administrar Glucagon intramuscular na dose de 0,1 mg/kg como monoterapia de primeira linha para mobilizar o glicogênio hepático.<br>\nE) Manter observação expectante, uma vez que valores até 20 mg/dL fazem parte do nadir glicêmico fisiológico das primeiras 2 horas de vida."
         ],
         [
           "p",
@@ -986,7 +990,7 @@
         ],
         [
           "p",
-          "A) Deficiência de Acil-CoA Desidrogenase de Cadeia Média (MCAD); L-carnitina oral.<br>\nB) Glicogenose Tipo I (Doença de Von Gierke); Amido de milho cru.<br>\nC) Hiperinsulinismo Congênito Persistente; Diazóxido oral.<br>\nD) Pan-hipopituitarismo Congênito; Hidrocortisona e Somatropina.<br>\nE) Hipoglicemia Factícia por administração exógena de insulina; Octreotide."
+          "A) Deficiência de Acil-CoA Desidrogenase de Cadeia Média (MCAD); L-carnitina oral.<br>\nB) Glicogenose Tipo I (Doença de Von Gierke); Amido de milho cru.<br>\nC) Hiperinsulinismo Congênito Persistente; Diazóxido oral.<br>\nD) Pan-hipopituitarismo Congênito; Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores) e Somatropina.<br>\nE) Hipoglicemia Factícia por administração exógena de insulina; Octreotide."
         ],
         [
           "p",
@@ -1006,7 +1010,7 @@
         ],
         [
           "p",
-          "<strong>Gabarito Oficial e Comentário Detalhado:</strong><br>\n<strong>Alternativa CORRETA: B.</strong><br>\n<em>Justificativa Médica:</em> A hipomagnesemia (&lt; 1,5 mg/dL) é frequente em filhos de mães diabéticas devido à perda urinária materna de magnésio por diurese osmótica. A depleção severa de magnésio bloqueia a adenilato ciclase nas glândulas paratireoides, impedindo a exocitose de PTH e gerando resistência periférica óssea à ação do PTH. Por conseguinte, qualquer infusão isolada de cálcio será rapidamente perdida na urina ou mal aproveitada até que o estoque sérico de magnésio seja corrigido com <strong>Sulfato de Magnésio a 50% (0,1 a 0,2 mL/kg/dose IM ou IV lento)</strong>."
+          "<strong>Gabarito Oficial e Comentário Detalhado:</strong><br>\n<strong>Alternativa CORRETA: B.</strong><br>\n<em>Justificativa Médica:</em> A hipomagnesemia (&lt; 1,5 mg/dL) é frequente em filhos de mães diabéticas devido à perda urinária materna de magnésio por diurese osmótica. A depleção severa de magnésio bloqueia a adenilato ciclase nas glândulas paratireoides, impedindo a exocitose de PTH e gerando resistência periférica óssea à ação do PTH. Por conseguinte, qualquer infusão isolada de cálcio será com agilidade perdida na urina ou mal aproveitada até que o estoque sérico de magnésio seja corrigido com <strong>Sulfato de Magnésio a 50% (0,1 a 0,2 mL/kg/dose IM ou IV lento)</strong>."
         ],
         [
           "3",

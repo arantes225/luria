@@ -2,8 +2,8 @@
   "v": 2,
   "s": "purpuras-coagulopatias-e-hemoglobinopatias-pediatricas",
   "t": "Púrpuras, Coagulopatias e Hemoglobinopatias Pediátricas",
-  "p": "Púrpuras, Coagulopatias e Hemoglobinopatias Pediátricas — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance em Trombocitopenia Imune Primária, Vasculite por IgA, Hemofilias Congênitas, Doença de von Willebrand e Doença Falciforme na Infância",
+  "p": "Tratado de Alta Performance em Trombocitopenia Imune Primária, Vasculite por IgA, Hemofilias Congênitas, Doença de von Willebrand e Doença Falciforme na Infância Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance em Trombocitopenia Imune Primária, Vasculite por IgA, Hemofilias Congênitas, Doença de von Willebrand e Doença Falciforme na Infância Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Pediatria",
   "m": "Pediatria",
   "h": [
@@ -192,6 +192,10 @@
           "A fisiopatologia da PTI pediátrica é desencadeada por um fenômeno de <strong>mimetismo molecular pós-infeccioso</strong>. Em aproximadamente <strong>60% a 80% dos casos</strong>, há história evidente de uma infecção viral autolimitada prévia (infecções das vias aéreas superiores, resfriado comum, varicela, rubéola, EBV ou citomegalovírus) ou imunização recente (como a vacina tríplice viral - SCR) ocorrida <strong>1 a 4 semanas antes</strong> do aparecimento dos sangramentos."
         ],
         [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Pediatria, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "o",
           [
             "<strong>Destruição Periférica no Sistema Reticuloendotelial (Baço):</strong> O organismo produz autoanticorpos patogênicos da classe <strong>IgG dirigidos contra glicoproteínas da membrana plaquetária</strong>, com predileção absoluta pelos complexos <strong>GPIIb/IIIa</strong> e <strong>GPIb/IX</strong>. As plaquetas opsonizadas por IgG circulam até os cordões esplênicos do baço, onde a porção Fc do anticorpo é reconhecida com alta afinidade pelos receptores <strong>Fc-gama (FcγRIIa e FcγRIIIa)</strong> presentes na membrana dos macrófagos teciduais esplênicos. Os macrófagos fagocitam e destroem as plaquetas prematuramente, reduzindo a meia-vida plaquetária fisiológica de 7 a 10 dias para poucas horas ou minutos!",
@@ -248,9 +252,9 @@
             "<strong>Conduta Expectante e Observação Clínica Exclusiva (Sem Fármacos):</strong>\n    <p>Indicada para a grande maioria das crianças que apresentam <strong>ausência de sangramento ou apenas sangramento cutâneo leve</strong> (petéquias, equimoses, sem sangramentos de mucosas ativos), <strong>INDEPENDENTEMENTE DA CONTAGEM DE PLAQUETAS</strong> (mesmo se as plaquetas estiverem em 5.000 ou 8.000/mm³!).</p>\n    <ul>\n      <li>Orientações essenciais: repouso relativo, evitar esportes de contato e traumatismos cranianos, contraindicar formalmente o uso de anti-inflamatórios não esteroides (AINEs) e ácido acetilsalicílico (AAS), contraindicar injeções intramusculares e manter monitoramento ambulatorial semanal ou quinzenal.",
             "Cerca de <strong>75% a 80% das crianças com PTI aguda apresentam remissão espontânea completa e sustentada em até 3 a 6 meses</strong> sem qualquer intervenção medicamentosa!",
             "<strong>Tratamento Farmacológico de Primeira Linha (Quando Intervir?):</strong>\n    <p>Indicado quando a criança apresenta <strong>sangramento mucoso ativo moderado a grave</strong> (epistaxe profusa contínua, hematúria macroscópica, sangramento gastrointestinal, menorragia severa, bolhas hemorrágicas extensas em cavidade oral) ou presença de fatores de risco adicionais para sangramento grave.</p>\n    <ul>\n      <li><strong>Opção 1: Imunoglobulina Humana Intravenosa (IVIG):</strong> Dose de <strong>0,8 a 1,0 g/kg em dose única</strong> (ou 1 g/kg/dia por 2 dias). É a droga de escolha quando se busca a <strong>elevação plaquetária mais rápida possível (resposta em 24 a 48 horas)</strong>. <em>Mecanismo de Ação:</em> As moléculas de IgG infundidas promovem o <strong>bloqueio competitivo dos receptores Fc-gama (FcγR) nos macrófagos do baço</strong> (saturação dos receptores), impedindo fisicamente que os macrófagos fagocitem as plaquetas opsonizadas pelo autoanticorpo.",
-            "<strong>Opção 2: Corticoterapia Sistêmica Oral ou Venosa:</strong>\n        <ul>\n          <li><strong>Prednisona oral:</strong> 1 a 2 mg/kg/dia por 7 a 14 dias com desmame rápido; OU",
-            "<strong>Pulsoterapia com Dexametasona oral:</strong> 0,6 mg/kg/dia (máx 40 mg/dia) por 4 dias; OU Metilprednisolona venosa (30 mg/kg/dia por 3 dias). <em>Mecanismo:</em> Reduz a depuração esplênica mediada por receptores Fc, diminui a síntese de autoanticorpos pelos linfócitos B e melhora a integridade endotelial capilar.",
-            "<strong>Transfusão de Concentrado de Plaquetas:</strong> Está <strong>FORMALMENTE CONTRAINDICADA na rotina da PTI</strong>! As plaquetas transfundidas são destruídas em minutos pelos autoanticorpos circulantes. A transfusão de plaquetas é reservada exclusivamente para situações de <strong>sangramento com risco iminente de morte (Hemorragia Intracraniana Aguda)</strong>, devendo ser administrada em infusão contínua em altas doses associada a IVIG em bolus e metilprednisolona venosa!"
+            "<strong>Opção 2: Corticoterapia Sistêmica Oral ou Venosa:</strong>\n        <ul>\n          <li><strong>Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral:</strong> 1 a 2 mg/kg/dia por 7 a 14 dias com desmame rápido; OU",
+            "<strong>Pulsoterapia com Dexametasona (10 mg EV 15-20 minutos antes ou junto à 1ª dose de antibiótico em meningite bacteriana aguda, ou 6 mg/dia VO/EV no choque séptico refratário/COVID grave) oral:</strong> 0,6 mg/kg/dia (máx 40 mg/dia) por 4 dias; OU Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias) venosa (30 mg/kg/dia por 3 dias). <em>Mecanismo:</em> Reduz a depuração esplênica mediada por receptores Fc, diminui a síntese de autoanticorpos pelos linfócitos B e melhora a integridade endotelial capilar.",
+            "<strong>Transfusão de Concentrado de Plaquetas:</strong> Está <strong>FORMALMENTE CONTRAINDICADA na rotina da PTI</strong>! As plaquetas transfundidas são destruídas em minutos pelos autoanticorpos circulantes. A transfusão de plaquetas é reservada exclusivamente para situações de <strong>sangramento com risco iminente de morte (Hemorragia Intracraniana Aguda)</strong>, devendo ser administrada em infusão contínua em altas doses associada a IVIG em bolus e Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias) venosa!"
           ]
         ]
       ]
@@ -290,7 +294,7 @@
         [
           "o",
           [
-            "<strong>1. Púrpura Palpável Não Trombocitopênica (O Elemento Clínico Mandatório!):</strong>\n    <p>Presente em <strong>100% dos pacientes</strong>. Inicia-se como lesões maculopapulares eritematosas ou placas urticadas que rapidamente evoluem para <strong>púrpuras e petéquias palpáveis</strong> (lesões elevadas, discretamente infiltradas ao tato, que não desaparecem à vitroimpressão). Podem confluir formando placas purpúricas extensas e equimoses.</p>\n    <ul>\n      <li><strong>Distribuição Gravitacional Patognomônica:</strong> As lesões cutâneas têm distribuição topográfica rigorosamente simétrica nas <strong>regiões pendentes e de maior pressão hidrostática</strong>: <strong>membros inferiores (coxas, pernas e maléolos) e nádegas</strong>. Em lactentes que ainda não andam, as lesões podem concentrar-se no dorso, face e membros superiores. O tronco costuma ser poupado.",
+            "<strong>1. Púrpura Palpável Não Trombocitopênica (O Elemento Clínico Mandatório!):</strong>\n    <p>Presente em <strong>100% dos pacientes</strong>. Inicia-se como lesões maculopapulares eritematosas ou placas urticadas que com agilidade evoluem para <strong>púrpuras e petéquias palpáveis</strong> (lesões elevadas, discretamente infiltradas ao tato, que não desaparecem à vitroimpressão). Podem confluir formando placas purpúricas extensas e equimoses.</p>\n    <ul>\n      <li><strong>Distribuição Gravitacional Patognomônica:</strong> As lesões cutâneas têm distribuição topográfica rigorosamente simétrica nas <strong>regiões pendentes e de maior pressão hidrostática</strong>: <strong>membros inferiores (coxas, pernas e maléolos) e nádegas</strong>. Em lactentes que ainda não andam, as lesões podem concentrar-se no dorso, face e membros superiores. O tronco costuma ser poupado.",
             "<em>Pérola Propedêutica Crucial:</em> É uma púrpura <strong>NÃO TROMBOCITOPÊNICA</strong>! O hemograma revela contagem de <strong>plaquetas normal ou aumentada (trombocitose reativa pela inflamação)</strong>, o que a distingue categoricamente da PTI e da Meningococcemia!",
             "<strong>2. Artrite ou Artralgia Transitória Não Deformante:</strong>\n    <p>Presente em <strong>60% a 80% dos casos</strong>. Acomete preferencialmente <strong>grandes articulações dos membros inferiores</strong> (especialmente tornozelos e joelhos). Caracteriza-se por dor periarticular intensa, edema periarticular proeminente e limitação funcional da marcha (claudicação ou recusa para ficar de pé). É uma artrite tipicamente <strong>oligoarticular, transitória e autolimitada (dura poucos dias a 2 semanas), NÃO EROSIVA e que se resolve completamente sem deixar sequelas ou deformidades articulares permanentes</strong>.</p>",
             "<strong>3. Dor Abdominal em Cólica e Complicações Gastrointestinais:</strong>\n    <p>Presente em <strong>50% a 75% dos pacientes</strong>. Ocorre pelo edema submucoso e vasculite isquêmica das vênulas do intestino delgado (especialmente jejuno e íleo). Manifesta-se por dor abdominal paroxística intensa em cólica (frequentemente periumbilical ou difusa), agravada após as refeições, associada a náuseas, vômitos e fezes com sangue oculto ou sangramento visível (melena ou hematoquezia).</p>\n    <ul>\n      <li><strong>A Temida Complicação Abdominal: Intussuscepção Intestinal Ileo-Ileal:</strong>\n        <p>A vasculite e o hematoma intramural na parede intestinal funcionam como um ponto de partida mecânico (cabeça de invaginação), predispondo ao desenvolvimento de <strong>Intussuscepção Intestinal Aguda</strong> em cerca de 3% a 5% dos casos. <em>Alerta de Prova:</em> Enquanto a intussuscepção idiopática comum do lactente é tipicamente ileo-cólica, na Vasculite por IgA <strong>mais de 60% a 70% das invaginações são do tipo ILEO-ILEAL pura</strong>, o que pode passar despercebido em enemas baritados convencionais, exigindo ultrassonografia abdominal com Doppler minuciosa!</p>",
@@ -309,8 +313,8 @@
         [
           "u",
           [
-            "<strong>Tratamento de Suporte Básico:</strong> Repouso, hidratação adequada, elevação dos membros inferiores e analgesia com paracetamol ou dipirona. Evitar anti-inflamatórios não esteroides (AINEs como ibuprofeno) se houver suspeita de sangramento digestivo ou nefrite ativa pelo risco de nefrotoxicidade e sangramento gastrintestinal!",
-            "<strong>Indicações Precisas da Corticoterapia Sistêmica (Prednisona 1 a 2 mg/kg/dia por 1 a 2 semanas):</strong>\n    <div class=\"note-box\">\n      <p><em>Onde os Corticoides Funcionam:</em> O corticoide é altamente eficaz para <strong>alívio rápido da dor abdominal em cólica intensa</strong>, controle do edema escrotal exuberante, nefrite rapidamente progressiva (em pulsoterapia com metilprednisolona) e artrite refratária incapacitante.</p>\n      <p><em>O Que os Corticoides NÃO Fazem (Pegadinha Clássica de Provas!):</em> Estudos prospectivos randomizados comprovaram que o uso precoce de corticoides <strong>NÃO PREVINE O APARECIMENTO NEM A PROGRESSÃO DA DOENÇA RENAL CRÔNICA (NEFRITE)</strong> e <strong>NÃO PREVINE AS RECIDIVAS CUTÂNEAS DA PÚRPURA</strong>! Portanto, não se prescreve corticoide de forma profilática para prevenir nefrite.</p>\n    </div>"
+            "<strong>Tratamento de Suporte Básico:</strong> Repouso, hidratação adequada, elevação dos membros inferiores e analgesia com Paracetamol (500 a 1.000 mg VO a cada 6 horas, respeitando dose máxima de 4 g/dia) ou Dipirona (1 g EV ou VO a cada 6 horas em adultos, ou 15 a 25 mg/kg/dose até 4x/dia em crianças). Evitar anti-inflamatórios não esteroides (AINEs como ibuprofeno) se houver suspeita de sangramento digestivo ou nefrite ativa pelo risco de nefrotoxicidade e sangramento gastrintestinal!",
+            "<strong>Indicações Precisas da Corticoterapia Sistêmica (Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) 1 a 2 mg/kg/dia por 1 a 2 semanas):</strong>\n    <div class=\"note-box\">\n      <p><em>Onde os Corticoides Funcionam:</em> O corticoide é altamente eficaz para <strong>alívio rápido da dor abdominal em cólica intensa</strong>, controle do edema escrotal exuberante, nefrite com agilidade progressiva (em pulsoterapia com Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias)) e artrite refratária incapacitante.</p>\n      <p><em>O Que os Corticoides NÃO Fazem (Pegadinha Clássica de Provas!):</em> Estudos prospectivos randomizados comprovaram que o uso precoce de corticoides <strong>NÃO PREVINE O APARECIMENTO NEM A PROGRESSÃO DA DOENÇA RENAL CRÔNICA (NEFRITE)</strong> e <strong>NÃO PREVINE AS RECIDIVAS CUTÂNEAS DA PÚRPURA</strong>! Portanto, não se prescreve corticoide de forma profilática para prevenir nefrite.</p>\n    </div>"
           ]
         ]
       ]
@@ -463,7 +467,7 @@
           "o",
           [
             "<strong>Ponte Molecular na Hemostasia Primária (Adesão Plaquetária):</strong> Conforme detalhado na Seção 1, sob condições de alto estresse de cisalhamento arteriolar, os multímeros de alto peso molecular de vWF ligam-se ao colágeno subendotelial exposto e ao complexo glicoproteico <strong>GPIb-V-IX</strong> da membrana das plaquetas, promovendo a adesão plaquetária inicial à matriz lesada. Além disso, o vWF participa da agregação plaquetária interagindo com a integrina GPIIb/IIIa.",
-            "<strong>Proteína Carreadora e Protetora do Fator VIII na Circulação (Hemostasia Secundária):</strong> No plasma circulante, mais de 95% do <strong>Fator VIII da coagulação viaja intimamente ligado em complexo não covalente de alta afinidade ao vWF</strong>. Essa ligação desempenha um papel protetor vital: impede que o Fator VIII livre seja rapidamente degradado e inativado pelas proteases plasmáticas fisiológicas (como a Proteína C ativada e o Fator Xa). Na ausência ou deficiência grave de vWF, a meia-vida plasmática do Fator VIII colapsa de 12 horas normais para menos de 1 a 2 horas! Por essa razão, defeitos quantitativos severos de vWF acarretam uma <strong>queda secundária acentuada dos níveis de Fator VIII</strong>, provocando concomitante alargamento do TTPa e manifestações clínicas mistas (primárias e secundárias!)."
+            "<strong>Proteína Carreadora e Protetora do Fator VIII na Circulação (Hemostasia Secundária):</strong> No plasma circulante, mais de 95% do <strong>Fator VIII da coagulação viaja intimamente ligado em complexo não covalente de alta afinidade ao vWF</strong>. Essa ligação desempenha um papel protetor vital: impede que o Fator VIII livre seja com agilidade degradado e inativado pelas proteases plasmáticas fisiológicas (como a Proteína C ativada e o Fator Xa). Na ausência ou deficiência grave de vWF, a meia-vida plasmática do Fator VIII colapsa de 12 horas normais para menos de 1 a 2 horas! Por essa razão, defeitos quantitativos severos de vWF acarretam uma <strong>queda secundária acentuada dos níveis de Fator VIII</strong>, provocando concomitante alargamento do TTPa e manifestações clínicas mistas (primárias e secundárias!)."
           ]
         ],
         [
@@ -503,7 +507,7 @@
             ],
             [
               "<em>Subtipo 2B</em>",
-              "<strong>Ganho de função anômalo</strong>: o vWF mutado liga-se espontaneamente ao receptor GPIb das plaquetas no plasma livre, formando agregados que são depurados rapidamente.",
+              "<strong>Ganho de função anômalo</strong>: o vWF mutado liga-se espontaneamente ao receptor GPIb das plaquetas no plasma livre, formando agregados que são depurados com agilidade.",
               "Autossômica Dominante",
               "<strong>Cursa com Trombocitopenia intermitente ou crônica</strong> e ausência dos grandes multímeros. <em>ATENÇÃO:</em> <strong>O uso de DDAVP é CONTRAINDICADO no Tipo 2B</strong> pelo risco de piorar a trombocitopenia e induzir trombose!"
             ],
@@ -648,7 +652,7 @@
             "<strong>Dactilite Falcêmica (Síndrome Mão-Pé):</strong>\n    <p>É tipicamente a <strong>primeira manifestação clínica da doença falciforme</strong>, surgindo entre os <strong>6 meses e 2 anos de idade</strong>. Caracteriza-se por microenfartes ósseos isquêmicos agudos e necrose asséptica da medula óssea das falanges proximais e metacarpianos/metatarsianos, onde persiste hematopoiese ativa nessa faixa etária. Manifesta-se por <strong>edema volumoso, tenso, doloroso, eritematoso e quente no dorso das mãos e/ou pés</strong>, com choro inconsolável à manipulação e recusa de engatinhar ou apoiar os membros. As radiografias iniciais são normais, podendo mostrar periostite laminar reativa após 1 a 2 semanas.</p>",
             "<strong>Crises Álgicas Ósseas Vaso-Oclusivas (Crises de Dor):</strong>\n    <p>São a causa mais frequente de internação hospitalar e atendimento de urgência em crianças maiores e adolescentes. Envolvem infartos isquêmicos do osso medular em fêmures, tíbias, úmeros, vértebras e pelve. A dor é lancinante, em pontada ou queimação contínua, frequentemente precipitada por desidratação, infecções bacterianas ou virais intercorrentes, exposição ao frio súbito ou estresse físico.</p>",
             "<strong>Síndrome Torácica Aguda (STA): A Maior Causa de Óbito na Infância:</strong>\n    <p>É uma emergência respiratória potencialmente fulminante definida clinicamente pelo surgimento de um <strong>novo infiltrado pulmonar à radiografia de tórax</strong> acompanhado de pelo menos um dos seguintes sinais/sintomas: <strong>febre >= 38,5 °C, tosse, taquipneia, dor torácica aguda, tiragem intercostal ou hipoxemia aguda (queda da SpO2 > 3% a 4% em relação ao basal)</strong>.</p>\n    <ul>\n      <li>Fisiopatologia: Desencadeada por uma combinação de infarto pulmonar microvascular local, <strong>embolia gordurosa da medula óssea necrótica</strong> e infecções pulmonares por germes atípicos (<em>Mycoplasma pneumoniae</em> e <em>Chlamydia pneumoniae</em>) ou bacterianos clássicos (<em>Streptococcus pneumoniae</em>).",
-            "Manejo Emergencial: Oxigenioterapia suplementar para manter SpO2 > 92% a 95%; analgesia criteriosa (opioides intravenosos com cautela para não deprimir o centro respiratório); antibioticoterapia empírica imediata combinando uma <strong>Cefalosporina de 3ª geração (Ceftriaxona) associada obrigatoriamente a um Macrolídeo (Azitromicina ou Claritromicina)</strong> para cobertura de atípicos; broncodilatadores inalatórios; e <strong>Transfusão Simples ou Exsanguinotransfusão Parcial de Troca (Meta: reduzir os níveis de HbS para < 30% a 40% e manter Hb total em torno de 10 g/dL sem elevar o hematócrito acima de 30% para não aumentar a viscosidade sanguínea!)</strong>.",
+            "Manejo Emergencial: Oxigenioterapia suplementar para manter SpO2 > 92% a 95%; analgesia criteriosa (opioides intravenosos com cautela para não deprimir o centro respiratório); antibioticoterapia empírica direcionada ao foco (ex.: Ceftriaxona 1-2 g EV 1x/dia associada a Metronidazol 500 mg EV 8/8h em infecções intra-abdominais, ou Ceftriaxona 2 g EV 12/12h na meningite) imediata guiada pelo foco (ex.: Ceftriaxona 2 g EV 12/12h na meningite, ou Ceftriaxona 1-2 g EV 1x/dia + Claritromicina (500 mg VO a cada 12 horas) 500 mg VO 12/12h na PAC grave) combinando uma <strong>Cefalosporina de 3ª geração (Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana)) associada obrigatoriamente a um Macrolídeo (Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) ou Claritromicina (500 mg VO a cada 12 horas))</strong> para cobertura de atípicos; broncodilatadores inalatórios; e <strong>Transfusão Simples ou Exsanguinotransfusão Parcial de Troca (Meta: reduzir os níveis de HbS para < 30% a 40% e manter Hb total em torno de 10 g/dL sem elevar o hematócrito acima de 30% para não aumentar a viscosidade sanguínea!)</strong>.",
             "<strong>Crise de Sequestro Esplênico Agudo (Emergência Pediátrica Fulminante):</strong>\n    <p>Ocorre primariamente em lactentes e pré-escolares entre <strong>6 meses e 3 anos de idade</strong> (período no qual o baço ainda se encontra palpável e funcionante, antes de sofrer fibrose e autoesplenectomia completa). Ocorre aprisionamento mecânico súbito e maciço de um volume extraordinário de hemácias nos cordões de Billroth do baço. Manifesta-se por <strong>esplenomegalia dolorosa gigante de surgimento abrupto (em poucas horas), palidez extrema cadavérica, letargia profunda e choque hipovolêmico distributivo</strong>, com queda abrupta de 3 a 5 g/dL na hemoglobina em relação ao basal e reticulocitose explosiva (> 15% a 25%). O tratamento imediato é a expansão volêmica vigorosa com cristaloides e <strong>transfusão cuidadosa de concentrado de hemácias (10 mL/kg)</strong> para restaurar a perfusão tecidual (o baço frequentemente \"esvazia\" o sangue sequestrado de volta para a circulação sistêmica após o suporte). Episódios recorrentes exigem <strong>esplenectomia cirúrgica eletiva</strong>.</p>",
             "<strong>Crise Aplásica Transitória (Infecção pelo Parvovírus B19):</strong>\n    <p>O Parvovírus B19 possui tropismo citotóxico seletivo e destrói diretamente os <strong>precursores eritroides na medula óssea (pró-eritroblastos)</strong>, cessando temporariamente a produção de novas hemácias por 7 a 14 dias. Como a hemácia falcêmica tem sobrevida ultra-curta (10 a 20 dias, contra 120 dias normais), a parada transitória da hematopoiese provoca uma <strong>queda catastrófica da hemoglobina associada ao achado patognomônico de CONTAGEM DE RETICULÓCITOS COLAPSADA (< 1% ou próxima de 0%)</strong>! (O que a diferencia categoricamente do sequestro esplênico e da crise hemolítica, onde há reticulocitose exuberante!). O tratamento baseia-se em suporte transfusional de emergência até a recuperação espontânea da medula óssea.</p>",
             "<strong>Acidente Vascular Cerebral (AVC) Isquêmico e Doppler Transcraniano:</strong>\n    <p>Ocorre em até 10% a 11% das crianças não triadas com anemia falciforme, com pico de incidência entre os 2 e 9 anos de idade, causado por estenose progressiva e oclusão de grandes vasos do Polígono de Willis (artéria cerebral média e carótida interna terminal). A triagem anual com <strong>Doppler Transcraniano (DTC)</strong> iniciada a partir dos <strong>2 anos até os 16 anos de idade</strong> é obrigatória: se a velocidade de fluxo na artéria cerebral média for <strong>>= 200 cm/s (fluxo de alto risco)</strong>, a criança deve ser inserida imediatamente em um <strong>programa de Transfusão Crônica Regular mensal</strong> para manter HbS < 30%, o que reduz o risco relativo de primeiro AVC em mais de 90%!</p>",
@@ -753,7 +757,7 @@
         ],
         [
           "p",
-          "<strong>História da Moléstia Atual:</strong> Há cerca de 10 dias a criança apresentou episódio de faringoamigdalite bacteriana tratada com amoxicilina por 7 dias com resolução completa. Há 3 dias, a mãe notou o surgimento de lesões avermelhadas nas nádegas e pernas que \"parecem pequenas bolinhas duras ao passar a mão\". Concomitantemente, passou a queixar-se de dor intensa nos tornozelos, recusando-se a andar e pedindo colo. Nas últimas 24 horas, iniciou quadro de dor abdominal em cólica periumbilical intermitente e intensa, que piora após comer, acompanhada de 2 episódios de vômitos com restos alimentares. Nega febre no momento. Evacuações normais sem sangue visível."
+          "<strong>História da Moléstia Atual:</strong> Há cerca de 10 dias a criança apresentou episódio de faringoamigdalite bacteriana tratada com Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) por 7 dias com resolução completa. Há 3 dias, a mãe notou o surgimento de lesões avermelhadas nas nádegas e pernas que \"parecem pequenas bolinhas duras ao passar a mão\". Concomitantemente, passou a queixar-se de dor intensa nos tornozelos, recusando-se a andar e pedindo colo. Nas últimas 24 horas, iniciou quadro de dor abdominal em cólica periumbilical intermitente e intensa, que piora após comer, acompanhada de 2 episódios de vômitos com restos alimentares. Nega febre no momento. Evacuações normais sem sangue visível."
         ],
         [
           "p",
@@ -784,7 +788,7 @@
             "A presença de plaquetas normais (380.000/mm³) descarta PTI, meningococcemia e leucemia aguda.",
             "A USG descartou a complicação cirúrgica imediata da intussuscepção intestinal.",
             "<strong>Conduta Terapêutica:</strong>\n      <ul>\n        <li>Internação hospitalar para vigilância clínica, repouso no leito com membros elevados e dieta branda fracionada.",
-            "Prescrição de <strong>Prednisona oral na dose de 1 a 2 mg/kg/dia por 7 a 14 dias</strong> (com desmame subsequente). O corticoide é altamente eficaz para o <strong>alívio rápido da dor abdominal em cólica intensa e controle da dor articular</strong>!",
+            "Prescrição de <strong>Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral na dose de 1 a 2 mg/kg/dia por 7 a 14 dias</strong> (com desmame subsequente). O corticoide é altamente eficaz para o <strong>alívio rápido da dor abdominal em cólica intensa e controle da dor articular</strong>!",
             "<em>Ponto Conceitual Importante para a Família:</em> Esclarecer que o corticoide melhora a dor abdominal e articular, mas <strong>não previne novas recidivas cutâneas da púrpura e não impede a evolução para nefrite crônica</strong>.",
             "<strong>Monitoramento Renal Obrigatório:</strong> Acompanhamento ambulatorial rigoroso com dosagem de Urina tipo I (EAS), relação proteína/creatinina urinária e aferição da pressão arterial semanalmente no primeiro mês e mensalmente por 6 meses. O paciente evoluiu com remissão completa da dor abdominal em 48h, resolução da artrite em 5 dias e desaparecimento da hematúria em 3 meses."
           ]
@@ -843,7 +847,7 @@
         ],
         [
           "p",
-          "<strong>História da Moléstia Atual:</strong> A mãe relata que a criança estava em uso regular de Hidroxiureia e ácido fólico. Há 2 dias começou a queixar-se de dor moderada em dorso e arcos costais, tratada em casa com paracetamol e hidratação oral. Ontem à noite evoluiu com febre aferida de 38,9 °C, tosse produtiva e piora progressiva da dor torácica (\"dor no peito ao respirar fundo\"), seguida de cansaço e respiração rápida. Nega hemoptise. A mãe nega crises prévias de sequestro esplênico; o baço não é palpável desde os 4 anos."
+          "<strong>História da Moléstia Atual:</strong> A mãe relata que a criança estava em uso regular de Hidroxiureia e ácido fólico. Há 2 dias começou a queixar-se de dor moderada em dorso e arcos costais, tratada em casa com Paracetamol (500 a 1.000 mg VO a cada 6 horas, respeitando dose máxima de 4 g/dia) e hidratação oral. Ontem à noite evoluiu com febre aferida de 38,9 °C, tosse produtiva e piora progressiva da dor torácica (\"dor no peito ao respirar fundo\"), seguida de cansaço e respiração rápida. Nega hemoptise. A mãe nega crises prévias de sequestro esplênico; o baço não é palpável desde os 4 anos."
         ],
         [
           "p",
@@ -873,8 +877,8 @@
             "O paciente preenche todos os critérios diagnósticos e operacionais de <strong>Síndrome Torácica Aguda (STA)</strong>: portador de Doença Falciforme apresentando <strong>infiltrado pulmonar novo à radiografia de tórax acompanhado de febre alta, tosse, dor torácica, taquipneia, esforço respiratório e hipoxemia aguda (SpO2 89%)</strong>.",
             "A Síndrome Torácica Aguda é a principal causa de admissão em UTI pediátrica e a <strong>principal causa de óbito</strong> em pacientes com doença falciforme! O manejo deve ser imediato e agressivo:",
             "<strong>Pilares do Manejo Terapêutico na UTI Pediátrica:</strong>\n      <ul>\n        <li><strong>Oxigenioterapia Imediata:</strong> Máscara com reservatório não reinalante a 10 L/min visando manter SpO2 >= 95% e prevenir novas crises de vaso-oclusão induzidas por hipoxemia tecidual.",
-            "<strong>Antibioticoterapia Intravenosa de Amplo Espectro Combinada:</strong> Prescrição imediata de <strong>Ceftriaxona (100 mg/kg/dia) associada a Azitromicina oral/venosa (10 mg/kg/dia)</strong>, cobrindo tanto patógenos bacterianos capsulados clássicos (<em>S. pneumoniae</em>) quanto bactérias atípicas intracelulares (<em>Mycoplasma pneumoniae</em> e <em>Chlamydia pneumoniae</em>, agentes desencadeantes primordiais de STA em escolares).",
-            "<strong>Analgesia Criteriosa:</strong> Morfina intravenosa titulada para alívio da dor torácica, associada a fisioterapia respiratória intensiva com espirômetro de incentivo (para prevenir atelectasias secundárias à hipoventilação antálgica).",
+            "<strong>Antibioticoterapia Intravenosa de Amplo Espectro Combinada:</strong> Prescrição imediata de <strong>Ceftriaxona (100 mg/kg/dia) associada a Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) oral/venosa (10 mg/kg/dia)</strong>, cobrindo tanto patógenos bacterianos capsulados clássicos (<em>S. pneumoniae</em>) quanto bactérias atípicas intracelulares (<em>Mycoplasma pneumoniae</em> e <em>Chlamydia pneumoniae</em>, agentes desencadeantes primordiais de STA em escolares).",
+            "<strong>Analgesia Criteriosa:</strong> Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor) intravenosa titulada para alívio da dor torácica, associada a fisioterapia respiratória intensiva com espirômetro de incentivo (para prevenir atelectasias secundárias à hipoventilação antálgica).",
             "<strong>Terapia Transfusional de Urgência:</strong>\n          <p>O paciente apresenta comprometimento multilobar com hipoxemia importante e queda da hemoglobina para 6,4 g/dL. Indicada <strong>Transfusão Simples de Concentrado de Hemácias fenotipadas (desleucocitadas e compatibilizadas para os antígenos C, E e Kell) na dose de 10 mL/kg</strong>.</p>\n          <p><em>Regra de Segurança Hematológica:</em> A meta transfusional é elevar a hemoglobina para cerca de 9,5 a 10 g/dL, <strong>SEM ULTRAPASSAR O HEMATÓCRITO DE 30%</strong> (pois hematócritos acima de 30% na doença falciforme elevam criticamente a viscosidade sanguínea e deflagram vaso-oclusão generalizada!). Em casos refratários ou de maior gravidade, indica-se a Exsanguinotransfusão parcial (eritrocitaférese) para reduzir a HbS < 30%.</p>\n      </ul>",
             "O paciente apresentou melhora clínica da mecânica ventilatória em 24h, desmame do oxigênio no 4º dia e alta hospitalar após 7 dias de antibioticoterapia, mantendo seguimento com hidroxiureia ambulatorial."
           ]
@@ -903,7 +907,7 @@
             "A) Realizar punção aspirativa de medula óssea (mielograma) de urgência para descartar Leucemia Linfoblástica Aguda antes de qualquer decisão.",
             "B) Prescrever transfusão imediata de concentrado de plaquetas na dose de 1 unidade para cada 10 kg de peso para elevar a contagem acima de 50.000/mm³.",
             "C) Adotar conduta expectante com observação clínica rigorosa e orientações de segurança para a família, sem necessidade de terapia farmacológica imediata.",
-            "D) Iniciar corticoterapia com prednisona oral na dose de 2 mg/kg/dia por 30 dias contínuos.",
+            "D) Iniciar corticoterapia com Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral na dose de 2 mg/kg/dia por 30 dias contínuos.",
             "E) Indicar imunoglobulina humana intravenosa de urgência associada a esplenectomia de emergência."
           ]
         ],
@@ -1019,7 +1023,7 @@
           [
             "A) Dosagem do Fator IX da coagulação; Fator VII ativado recombinante.",
             "B) Dosagem do Antígeno do Fator de von Willebrand (vWF:Ag) e atividade do Cofator de Ristocetina (vWF:RCo); Desmopressina (DDAVP).",
-            "C) Mielograma com biópsia óssea; Prednisona oral.",
+            "C) Mielograma com biópsia óssea; Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral.",
             "D) Tempo de lise da euglobina; Ácido Tranexâmico.",
             "E) Agregação plaquetária com ADP e colágeno; Hidroxiureia."
           ]
@@ -1059,7 +1063,7 @@
             "A) Crise Aplásica por Parvovírus B19; administrar concentrado de hemácias e imunoglobulina IV de emergência.",
             "B) Crise de Hiper-hemólise aguda; realizar plasmaférese e corticoterapia venosa imediata.",
             "C) Crise de Sequestro Esplênico Agudo; estabilização hemodinâmica com expansão volêmica e transfusão criteriosa de concentrado de hemácias.",
-            "D) Síndrome Torácica Aguda fulminante; iniciar antibioticoterapia com Ceftriaxona e Macrolídeo e ventilação mecânica.",
+            "D) Síndrome Torácica Aguda fulminante; iniciar antibioticoterapia com Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) e Macrolídeo e ventilação mecânica.",
             "E) Leucemia Aguda secundária; realizar punção de medula óssea imediata."
           ]
         ],
@@ -1171,11 +1175,11 @@
         [
           "u",
           [
-            "A) Amoxicilina oral em monoterapia ambulatorial por 7 dias.",
-            "B) Cefalosporina de 3ª geração (Ceftriaxona) associada a um Macrolídeo (Azitromicina ou Claritromicina).",
+            "A) Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral em monoterapia ambulatorial por 7 dias.",
+            "B) Cefalosporina de 3ª geração (Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana)) associada a um Macrolídeo (Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) ou Claritromicina (500 mg VO a cada 12 horas)).",
             "C) Penicilina Cristalina intravenosa em monoterapia.",
-            "D) Ciprofloxacino intravenoso associado a Metronidazol.",
-            "E) Vancomicina associada a Anfotericina B desoxicolato."
+            "D) Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h) intravenoso associado a Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase).",
+            "E) Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) associada a Anfotericina B desoxicolato."
           ]
         ],
         [
@@ -1188,7 +1192,7 @@
         ],
         [
           "p",
-          "A <strong>Síndrome Torácica Aguda (STA)</strong> é uma emergência crítica com alta taxa de mortalidade. Na sua etiologia infecciosa, além dos patógenos comunitários e capsulados clássicos como o <em>Streptococcus pneumoniae</em>, há uma frequência extraordinariamente alta de infecções por <strong>bactérias atípicas intracelulares</strong>, com destaque absoluto para o <strong><em>Mycoplasma pneumoniae</em> e <em>Chlamydia pneumoniae</em></strong>. Por essa razão, todos os consensos internacionais e a SBP determinam que a antibioticoterapia intravenosa inicial deve combinar obrigatoriamente um betalactâmico de largo espectro (<strong>Ceftriaxona</strong>) com um agente com cobertura excelente para germes atípicos (<strong>Macrolídeo: Azitromicina ou Claritromicina</strong>)."
+          "A <strong>Síndrome Torácica Aguda (STA)</strong> é uma emergência crítica com alta taxa de mortalidade. Na sua etiologia infecciosa, além dos patógenos comunitários e capsulados clássicos como o <em>Streptococcus pneumoniae</em>, há uma frequência extraordinariamente alta de infecções por <strong>bactérias atípicas intracelulares</strong>, com destaque absoluto para o <strong><em>Mycoplasma pneumoniae</em> e <em>Chlamydia pneumoniae</em></strong>. Por essa razão, todos os consensos internacionais e a SBP determinam que a antibioticoterapia intravenosa inicial deve combinar obrigatoriamente um betalactâmico de largo espectro (<strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana)</strong>) com um agente com cobertura excelente para germes atípicos (<strong>Macrolídeo: Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) ou Claritromicina (500 mg VO a cada 12 horas)</strong>)."
         ],
         [
           "p",
@@ -1197,9 +1201,9 @@
         [
           "u",
           [
-            "<em>Alternativa A incorreta:</em> A STA exige internação hospitalar imediata e terapia parenteral, nunca tratamento ambulatorial com amoxicilina oral.",
+            "<em>Alternativa A incorreta:</em> A STA exige internação hospitalar imediata e terapia parenteral, nunca tratamento ambulatorial com Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral.",
             "<em>Alternativa C incorreta:</em> A penicilina isolada não cobre germes atípicos (que não possuem parede celular de peptideoglicano).",
-            "<em>Alternativa D incorreta:</em> Fluoroquinolonas e metronidazol cobrem Gram-negativos e anaeróbios de foco abdominal, inadequados para a microbiota pulmonar pediátrica.",
+            "<em>Alternativa D incorreta:</em> Fluoroquinolonas e Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) cobrem Gram-negativos e anaeróbios de foco abdominal, inadequados para a microbiota pulmonar pediátrica.",
             "<em>Alternativa E incorreta:</em> Antifúngicos não têm indicação no manejo inicial da pneumonia comunitária em pediatria."
           ]
         ]
@@ -1242,7 +1246,7 @@
               "Imunomediada pós-infecciosa (após faringite estreptocócica ou viral).",
               "<strong>Púrpura palpável em nádegas e MMII</strong>, artrite transitória não deformante de tornozelos/joelhos, dor abdominal em cólica (intussuscepção) e nefrite (hematúria).",
               "<strong>Plaquetas NORMAIS ou aumentadas</strong> (não trombocitopênica); coagulograma normal; hematúria/proteinúria na urina tipo I.",
-              "Suporte clínico e repouso. Corticoterapia (prednisona) alivia a dor abdominal e articular, mas <strong>não previne a nefrite crônica</strong>! Monitorar urina por 6 meses."
+              "Suporte clínico e repouso. Corticoterapia (Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo)) alivia a dor abdominal e articular, mas <strong>não previne a nefrite crônica</strong>! Monitorar urina por 6 meses."
             ],
             [
               "<strong>Hemofilia A e B</strong>",
@@ -1266,7 +1270,7 @@
               "<strong>Autossômica Recessiva</strong> (homozigose HbSS; traço HbAS assintomático).",
               "Dactilite (6m-2a), crises álgicas ósseas, <strong>Síndrome Torácica Aguda (infiltrado novo + febre + hipoxemia)</strong>, sequestro esplênico e asplenia funcional.",
               "Eletroforese no Teste do Pezinho: <strong>Padrão Hb FS</strong>. Anemia hemolítica com drepanócitos e reticulocitose intensa (exceto reticulocitopenia na crise aplásica por Parvovírus B19).",
-              "<strong>Profilaxia com Penicilina oral (até 5 anos)</strong> + vacinas conjugadas especiais + Ácido Fólico. <strong>Hidroxiureia</strong> (eleva HbF e reduz crises). Na STA: Ceftriaxona + Macrolídeo + Transfusão com alvo Hb 10 g/dL (Ht < 30%)."
+              "<strong>Profilaxia com Penicilina oral (até 5 anos)</strong> + vacinas conjugadas especiais + Ácido Fólico. <strong>Hidroxiureia</strong> (eleva HbF e reduz crises). Na STA: Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) + Macrolídeo + Transfusão com alvo Hb 10 g/dL (Ht < 30%)."
             ]
           ],
           "book-table"
@@ -1287,7 +1291,7 @@
             "<strong>TTPa e o Teste da Mistura:</strong> TTPa alargado isolado que corrige na mistura 1:1 com plasma normal define deficiência quantitativa de fator (Hemofilias). Se não corrigir, há inibidor circulante presente.",
             "<strong>Doença de von Willebrand:</strong> É a coagulopatia hereditária mais comum; herança autossômica dominante (homens e mulheres); manifesta-se por sangramento mucocutâneo e menorragia severa na menarca. DDAVP é a droga de escolha no Tipo 1, mas contraindicado no Tipo 2B!",
             "<strong>Dactilite Falcêmica:</strong> É a primeira manifestação da Anemia Falciforme (6 meses a 2 anos), com edema doloroso em dorso de mãos e pés. A HbF protege o recém-nascido nos primeiros meses.",
-            "<strong>Emergências Falcêmicas:</strong> Na Síndrome Torácica Aguda, associar Ceftriaxona + Macrolídeo (para cobrir <em>Mycoplasma</em>) e transfundir sem passar Ht de 30%. No Sequestro Esplênico, há esplenomegalia gigante súbita, choque e reticulocitose explosiva. Na crise por Parvovírus B19, há anemia súbita com reticulócitos colapsados (0%). Penicilina profilática diária até os 5 anos de idade!"
+            "<strong>Emergências Falcêmicas:</strong> Na Síndrome Torácica Aguda, associar Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) + Macrolídeo (para cobrir <em>Mycoplasma</em>) e transfundir sem passar Ht de 30%. No Sequestro Esplênico, há esplenomegalia gigante súbita, choque e reticulocitose explosiva. Na crise por Parvovírus B19, há anemia súbita com reticulócitos colapsados (0%). Penicilina profilática diária até os 5 anos de idade!"
           ]
         ]
       ]
@@ -1298,7 +1302,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Pediatria. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1308,8 +1337,7 @@
             "<a href=\"https://ard.bmj.com\" target=\"_blank\" rel=\"noopener noreferrer\">OZEN, S. et al. EULAR/PRINTO/PRES criteria for Henoch-Schonlein purpura. Annals of the Rheumatic Diseases, v. 69, p. 798-806, 2010.</a>",
             "<a href=\"https://wfh.org\" target=\"_blank\" rel=\"noopener noreferrer\">WORLD FEDERATION OF HEMOPHILIA (WFH). Guidelines for the Management of Hemophilia. 3rd ed. Haemophilia, v. 26, Suppl 6, p. 1-158, 2020.</a>",
             "<a href=\"https://bvsms.saude.gov.br\" target=\"_blank\" rel=\"noopener noreferrer\">BRASIL. Ministério da Saúde. Doença Falciforme: Diretrizes Básicas da Linha de Cuidado. Brasília: Editora do Ministério da Saúde, 2018/2024.</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

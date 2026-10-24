@@ -2,8 +2,8 @@
   "v": 2,
   "s": "puberdade-precoce-e-atrasada",
   "t": "Puberdade Precoce e Atrasada",
-  "p": "Puberdade Precoce e Atrasada — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance em Fisiologia do Eixo Hipotálamo-Hipófise-Gonadal, Critérios de Marshall-Tanner, Puberdade Precoce Central e Periférica e Abordagem da Puberdade Atrasada",
+  "p": "Tratado de Alta Performance em Fisiologia do Eixo Hipotálamo-Hipófise-Gonadal, Critérios de Marshall-Tanner, Puberdade Precoce Central e Periférica e Abordagem da Puberdade Atrasada Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance em Fisiologia do Eixo Hipotálamo-Hipófise-Gonadal, Critérios de Marshall-Tanner, Puberdade Precoce Central e Periférica e Abordagem da Puberdade Atrasada Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Pediatria",
   "m": "Pediatria",
   "h": [
@@ -187,6 +187,10 @@
         [
           "p",
           "Na menina, a sequência puberal canônica compreende quatro eventos sucessivos: <strong>Telarca -> Pubarca -> Estirão Estatural Máximo (Pico de Velocidade de Crescimento) -> Menarca</strong>."
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Pediatria, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "t",
@@ -494,7 +498,7 @@
         ],
         [
           "p",
-          "</li>\n  <li><strong>Diagnóstico Padrão-Ouro:</strong> Dosagem sérica basal de <strong>17-alfa-hidroxiprogesterona (17-OHP) elevada</strong> (colhida em jejum às 8h da manhã); em casos limítrofes, realiza-se o <strong>Teste de Estímulo com ACTH sintético (Cortrosina 250 mcg IV)</strong> com dosagem de 17-OHP aos 60 minutos (valores estimulados > 10 a 15 ng/mL fecham o diagnóstico).</li>\n  <li><strong>Tratamento:</strong> Reposição de glicocorticoide oral (<strong>Hidrocortisona</strong> na dose de 10 a 15 mg/m²/dia dividida em 3 tomadas), que suprime a secreção excessiva de ACTH pela hipófise e normaliza a produção adrenal de andrógenos, permitindo o controle da idade óssea e o crescimento normal.</li>\n</ul>"
+          "</li>\n  <li><strong>Diagnóstico Padrão-Ouro:</strong> Dosagem sérica basal de <strong>17-alfa-hidroxiprogesterona (17-OHP) elevada</strong> (colhida em jejum às 8h da manhã); em casos limítrofes, realiza-se o <strong>Teste de Estímulo com ACTH sintético (Cortrosina 250 mcg IV)</strong> com dosagem de 17-OHP aos 60 minutos (valores estimulados > 10 a 15 ng/mL fecham o diagnóstico).</li>\n  <li><strong>Tratamento:</strong> Reposição de glicocorticoide oral (<strong>Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores)</strong> na dose de 10 a 15 mg/m²/dia dividida em 3 tomadas), que suprime a secreção excessiva de ACTH pela hipófise e normaliza a produção adrenal de andrógenos, permitindo o controle da idade óssea e o crescimento normal.</li>\n</ul>"
         ],
         [
           "4",
@@ -849,7 +853,7 @@
             "O paciente apresenta <strong>Puberdade Precoce Periférica (Pseudopuberdade Precoce / GnRH-Independente)</strong>. O achado semiológico patognomônico é a <strong>DISSOCIAÇÃO ENTRE O DESENVOLVIMENTO PENIANO ACELERADO (G3/G4 com pubarca P3) E OS TESTÍCULOS PEQUENOS E INFANTIS (volume de 2 mL, Tanner G1)</strong>!",
             "Se o eixo central estivesse ativado (PPC), os testículos estariam obrigatoriamente aumentados (>= 4 mL) pela ação do LH/FSH. A presença de testículos pequenos comprova que a fonte de testosterona é <strong>extratesticular</strong> (suprarrenal) e está suprimindo o eixo central por retroalimentação negativa (LH indetectável).",
             "A elevação maciça de 17-OHP (28 ng/mL) e de andrógenos adrenais associada a eletrólitos normais estabelece o diagnóstico definitivo de <strong>Hiperplasia Adrenal Congênita por Deficiência de 21-Hidroxilase na Forma Não Clássica (de Início Tardio)</strong>.",
-            "<em>Tratamento Farmacológico Específico:</em> O tratamento <strong>NÃO É FEITO COM ANÁLOGO DE GnRH</strong> (que seria totalmente inútil, pois o eixo já está suprimido!). O tratamento de escolha é a <strong>Glicocorticoidoterapia de Reposição com Hidrocortisona oral na dose de 10 a 12 mg/m²/dia dividida em 3 tomadas</strong>. A hidrocortisona repõe o cortisol deficiente, inibe a hiperprodução de ACTH pela hipófise e \"desliga\" a síntese excessiva de andrógenos pela adrenal. A idade óssea estabilizou e a velocidade de crescimento retornou a 5 cm/ano."
+            "<em>Tratamento Farmacológico Específico:</em> O tratamento <strong>NÃO É FEITO COM ANÁLOGO DE GnRH</strong> (que seria totalmente inútil, pois o eixo já está suprimido!). O tratamento de escolha é a <strong>Glicocorticoidoterapia de Reposição com Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores) oral na dose de 10 a 12 mg/m²/dia dividida em 3 tomadas</strong>. A Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores) repõe o cortisol deficiente, inibe a hiperprodução de ACTH pela hipófise e \"desliga\" a síntese excessiva de andrógenos pela adrenal. A idade óssea estabilizou e a velocidade de crescimento retornou a 5 cm/ano."
           ]
         ],
         [
@@ -896,7 +900,7 @@
             "Trata-se de uma variante normal e benigna do desenvolvimento neuroendócrino (\"maturador lento\"), na qual o eixo simplesmente acordará mais tarde.",
             "<strong>Planejamento Terapêutico e Manejo Psicossocial:</strong>\n      <ul>\n        <li>O paciente e os pais foram inicialmente tranquilizados quanto ao excelente prognóstico estatural e fertilidade futura normal.",
             "No entanto, em decorrência do <strong>sofrimento psicológico significativo e isolamento escolar do adolescente</strong>, foi indicado um ciclo curto de indução puberal com <strong>Cipionato de Testosterona por via intramuscular na dose de 50 mg uma vez a cada 4 semanas por 4 meses consecutivos</strong>.",
-            "<em>Resultado:</em> Essa dose baixa induziu aumento peniano, surgimento de pelos pubianos iniciais (P2), incremento da velocidade de crescimento para 8 cm/ano e grande melhora da autoestima, sem precipitar fechamento epifisário. Após os 4 meses, a medicação foi suspensa; o eixo endógeno do paciente assumiu o comando espontaneamente, com aumento testicular progressivo para 8 mL em 6 meses. O paciente atingiu 173 cm na idade adulta, cumprindo com perfeição o alvo parental!"
+            "<em>Resultado:</em> Essa dose inicial mínima induziu aumento peniano, surgimento de pelos pubianos iniciais (P2), incremento da velocidade de crescimento para 8 cm/ano e grande melhora da autoestima, sem precipitar fechamento epifisário. Após os 4 meses, a medicação foi suspensa; o eixo endógeno do paciente assumiu o comando espontaneamente, com aumento testicular progressivo para 8 mL em 6 meses. O paciente atingiu 173 cm na idade adulta, cumprindo com perfeição o alvo parental!"
           ]
         ]
       ]
@@ -1291,7 +1295,7 @@
             [
               "<strong>Tratamento Padrão-Ouro</strong>",
               "<strong>Análogo de GnRH de depósito (Leuprorrelina 3,75 mg IM mensal)</strong>.",
-              "Depende da causa: Hidrocortisona na HAC; Inibidores de aromatase no McCune-Albright; Cirurgia em tumores.",
+              "Depende da causa: Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores) na HAC; Inibidores de aromatase no McCune-Albright; Cirurgia em tumores.",
               "Tranquilização da família; ciclo curto de Testosterona em baixa dose se sofrimento psicossocial.",
               "Reposição hormonal: Estradiol transdérmico no Turner; Cipionato de Testosterona no Klinefelter."
             ]
@@ -1325,7 +1329,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Pediatria. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1335,8 +1364,7 @@
             "<a href=\"https://sarvier.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">SETIAN, N. et al. Endocrinologia Pediátrica: Aspectos Fisiológicos e Clínicos. 4ª ed. São Paulo: Sarvier, 2018.</a>",
             "<a href=\"https://pediatrics.aappublications.org\" target=\"_blank\" rel=\"noopener noreferrer\">CARELS, P. et al. Consensus statement on the use of gonadotropin-releasing hormone analogs in children. Pediatrics, v. 123, n. 4, p. e752-e762, 2009.</a>",
             "<a href=\"https://aafp.org\" target=\"_blank\" rel=\"noopener noreferrer\">KLEIN, D. A. et al. Delayed Puberty: Evaluation and Management. American Family Physician, v. 96, n. 12, p. 790-799, 2017.</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

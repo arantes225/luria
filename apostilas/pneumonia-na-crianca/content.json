@@ -2,14 +2,14 @@
   "v": 2,
   "s": "pneumonia-na-crianca",
   "t": "Pneumonia na Criança",
-  "p": "Tratado completo de Pneumonia Adquirida na Comunidade (PAC) na infância: epidemiologia global e brasileira como principal causa infecciosa de mortalidade em menores de 5 anos; classificação etiológica estratificada por faixa etária (recém-nascidos, lactentes de 1 a 3 meses, crianças de 2 meses a 5 anos e escolares maiores de 5 anos); Pneumonia Afebril do Lactente por Chlamydia trachomatis (tosse em staccato, eosinofilia periférica, infiltrado intersticial e tratamento com azitromicina); pneumonias atípicas por Mycoplasma pneumoniae e Chlamydia pneumoniae; diagnóstico clínico segundo a estratégia AIDPI da OMS / Ministério da Saúde (a taquipneia aferida em 1 minuto completo como o sinal mais sensível: < 2 meses >= 60 irpm, 2 a 11 meses >= 50 irpm, 1 a 4 anos >= 40 irpm, >= 5 anos >= 20-30 irpm); estratificação de gravidade (pneumonia ambulatorial versus pneumonia grave com tiragem subcostal versus pneumonia muito grave com sinais gerais de perigo); diretrizes de antibioticoterapia ambulatorial (Amoxicilina 50 a 90 mg/kg/dia) e hospitalar (Ampicilina IV ou Penicilina Cristalina IV); complicações pleuropulmonares (derrame parapneumônico e empiema pleural: toracocentese diagnóstica, critérios bioquímicos de pH < 7,20 e glicose < 40 mg/dL, drenagem tubular em selo d'água, videotoracoscopia precoce) e pneumonia estafilocócica necrotizante com pneumatoceles; casos clínicos estruturados e questões comentadas para o ENAMED e residência médica.",
-  "d": "Tratado completo de Pneumonia Adquirida na Comunidade (PAC) na infância: epidemiologia global e brasileira como principal causa infecciosa de mortalidade em menores de 5 anos; classificação etiológica estratificada por faixa etária (recém-nascidos, lactentes de 1 a 3 meses, crianças de 2 meses a 5 anos e escolares maiores de 5 anos); Pneumonia Afebril do Lactente por Chlamydia trachomatis (tosse em staccato, eosinofilia periférica, infiltrado intersticial e tratamento com azitromicina); pneumonias atípicas por Mycoplasma pneumoniae e Chlamydia pneumoniae; diagnóstico clínico segundo a estratégia AIDPI da OMS / Ministério da Saúde (a taquipneia aferida em 1 minuto completo como o sinal mais sensível: < 2 meses >= 60 irpm, 2 a 11 meses >= 50 irpm, 1 a 4 anos >= 40 irpm, >= 5 anos >= 20-30 irpm); estratificação de gravidade (pneumonia ambulatorial versus pneumonia grave com tiragem subcostal versus pneumonia muito grave com sinais gerais de perigo); diretrizes de antibioticoterapia ambulatorial (Amoxicilina 50 a 90 mg/kg/dia) e hospitalar (Ampicilina IV ou Penicilina Cristalina IV); complicações pleuropulmonares (derrame parapneumônico e empiema pleural: toracocentese diagnóstica, critérios bioquímicos de pH < 7,20 e glicose < 40 mg/dL, drenagem tubular em selo d'água, videotoracoscopia precoce) e pneumonia estafilocócica necrotizante com pneumatoceles; casos clínicos estruturados e questões comentadas para o ENAMED e residência médica.",
+  "p": "Tratado completo de Pneumonia Adquirida na Comunidade (PAC) na infância: epidemiologia global e brasileira como principal causa infecciosa de mortalidade em menores de 5 anos; classificação etiológica estratificada por faixa etária (recém-nascidos, lactentes de 1 a 3 meses, crianças de 2 meses a 5 anos e escolares maiores de 5 anos); Pneumonia Afebril do Lactente por Chlamydia trachomatis (tosse em staccato, eosinofilia periférica, infiltrado intersticial e tratamento com Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias)); pneumonias atípicas por Mycoplasma pneumoniae e Chlamydia pneumoniae; diagnóstico clínico segundo a estratégia AIDPI da OMS / Ministério da Saúde (a taquipneia aferida em 1 minuto completo como o sinal mais sensível: < 2 meses >= 60 irpm, 2 a 11 meses >= 50 irpm, 1 a 4 anos >= 40 irpm, >= 5 anos >= 20-30 irpm); estratificação de gravidade (pneumonia ambulatorial versus pneumonia grave com tiragem subcostal versus pneumonia muito grave com sinais gerais de perigo); diretrizes de antibioticoterapia ambulatorial (Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) 50 a 90 mg/kg/dia) e hospitalar (Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) IV ou Penicilina Cristalina IV); complicações pleuropulmonares (derrame parapneumônico e empiema pleural: toracocentese diagnóstica, critérios bioquímicos de pH < 7,20 e glicose < 40 mg/dL, drenagem tubular em selo d'água, videotoracoscopia precoce) e pneumonia estafilocócica necrotizante com pneumatoceles; casos clínicos estruturados e questões comentadas para o ENAMED e residência médica. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado completo de Pneumonia Adquirida na Comunidade (PAC) na infância: epidemiologia global e brasileira como principal causa infecciosa de mortalidade em menores de 5 anos; classificação etiológica estratificada por faixa etária (recém-nascidos, lactentes de 1 a 3 meses, crianças de 2 meses a 5 anos e escolares maiores de 5 anos); Pneumonia Afebril do Lactente por Chlamydia trachomatis (tosse em staccato, eosinofilia periférica, infiltrado intersticial e tratamento com Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias)); pneumonias atípicas por Mycoplasma pneumoniae e Chlamydia pneumoniae; diagnóstico clínico segundo a estratégia AIDPI da OMS / Ministério da Saúde (a taquipneia aferida em 1 minuto completo como o sinal mais sensível: < 2 meses >= 60 irpm, 2 a 11 meses >= 50 irpm, 1 a 4 anos >= 40 irpm, >= 5 anos >= 20-30 irpm); estratificação de gravidade (pneumonia ambulatorial versus pneumonia grave com tiragem subcostal versus pneumonia muito grave com sinais gerais de perigo); diretrizes de antibioticoterapia ambulatorial (Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) 50 a 90 mg/kg/dia) e hospitalar (Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) IV ou Penicilina Cristalina IV); complicações pleuropulmonares (derrame parapneumônico e empiema pleural: toracocentese diagnóstica, critérios bioquímicos de pH < 7,20 e glicose < 40 mg/dL, drenagem tubular em selo d'água, videotoracoscopia precoce) e pneumonia estafilocócica necrotizante com pneumatoceles; casos clínicos estruturados e questões comentadas para o ENAMED e residência médica. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Pediatria",
   "m": "Infectologia Pediátrica e Pneumologia",
   "h": [
     "Apostila LURIA",
     "Pneumonia na Criança",
-    "Tratado completo de Pneumonia Adquirida na Comunidade (PAC) na infância: epidemiologia global e brasileira como principal causa infecciosa de mortalidade em menores de 5 anos; classificação etiológica estratificada por faixa etária (recém-nascidos, lactentes de 1 a 3 meses, crianças de 2 meses a 5 anos e escolares maiores de 5 anos); Pneumonia Afebril do Lactente por Chlamydia trachomatis (tosse em staccato, eosinofilia periférica, infiltrado intersticial e tratamento com azitromicina); pneumonias atípicas por Mycoplasma pneumoniae e Chlamydia pneumoniae; diagnóstico clínico segundo a estratégia AIDPI da OMS / Ministério da Saúde (a taquipneia aferida em 1 minuto completo como o sinal mais sensível: < 2 meses >= 60 irpm, 2 a 11 meses >= 50 irpm, 1 a 4 anos >= 40 irpm, >= 5 anos >= 20-30 irpm); estratificação de gravidade (pneumonia ambulatorial versus pneumonia grave com tiragem subcostal versus pneumonia muito grave com sinais gerais de perigo); diretrizes de antibioticoterapia ambulatorial (Amoxicilina 50 a 90 mg/kg/dia) e hospitalar (Ampicilina IV ou Penicilina Cristalina IV); complicações pleuropulmonares (derrame parapneumônico e empiema pleural: toracocentese diagnóstica, critérios bioquímicos de pH < 7,20 e glicose < 40 mg/dL, drenagem tubular em selo d'água, videotoracoscopia precoce) e pneumonia estafilocócica necrotizante com pneumatoceles; casos clínicos estruturados e questões comentadas para o ENAMED e residência médica.",
+    "Tratado completo de Pneumonia Adquirida na Comunidade (PAC) na infância: epidemiologia global e brasileira como principal causa infecciosa de mortalidade em menores de 5 anos; classificação etiológica estratificada por faixa etária (recém-nascidos, lactentes de 1 a 3 meses, crianças de 2 meses a 5 anos e escolares maiores de 5 anos); Pneumonia Afebril do Lactente por Chlamydia trachomatis (tosse em staccato, eosinofilia periférica, infiltrado intersticial e tratamento com Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias)); pneumonias atípicas por Mycoplasma pneumoniae e Chlamydia pneumoniae; diagnóstico clínico segundo a estratégia AIDPI da OMS / Ministério da Saúde (a taquipneia aferida em 1 minuto completo como o sinal mais sensível: < 2 meses >= 60 irpm, 2 a 11 meses >= 50 irpm, 1 a 4 anos >= 40 irpm, >= 5 anos >= 20-30 irpm); estratificação de gravidade (pneumonia ambulatorial versus pneumonia grave com tiragem subcostal versus pneumonia muito grave com sinais gerais de perigo); diretrizes de antibioticoterapia ambulatorial (Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) 50 a 90 mg/kg/dia) e hospitalar (Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) IV ou Penicilina Cristalina IV); complicações pleuropulmonares (derrame parapneumônico e empiema pleural: toracocentese diagnóstica, critérios bioquímicos de pH < 7,20 e glicose < 40 mg/dL, drenagem tubular em selo d'água, videotoracoscopia precoce) e pneumonia estafilocócica necrotizante com pneumatoceles; casos clínicos estruturados e questões comentadas para o ENAMED e residência médica.",
     [
       "Área: Pediatria",
       "Matéria: Infectologia Pediátrica e Pneumologia",
@@ -142,7 +142,7 @@
         [
           "u",
           [
-            "<strong>Fase de Congestão / Edema Inicial:</strong> Liberação de citocinas pró-inflamatórias (IL-1, TNF-&alpha;, IL-8), provocando vasodilatação capilar e transudação de líquido seroso rico em proteínas para o interior dos sacos alveolares. O pneumococo prolifera rapidamente nesse líquido rico em nutrientes e dissemina-se para alvéolos vizinhos através dos <strong>Poros de Kohn</strong> e dos <strong>Canais de Lambert</strong>;",
+            "<strong>Fase de Congestão / Edema Inicial:</strong> Liberação de citocinas pró-inflamatórias (IL-1, TNF-&alpha;, IL-8), provocando vasodilatação capilar e transudação de líquido seroso rico em proteínas para o interior dos sacos alveolares. O pneumococo prolifera com agilidade nesse líquido rico em nutrientes e dissemina-se para alvéolos vizinhos através dos <strong>Poros de Kohn</strong> e dos <strong>Canais de Lambert</strong>;",
             "<strong>Fase de Hepatização Vermelha:</strong> Influxo maciço de neutrófilos, hemácias extravasadas e filamentos de fibrina que preenchem os alvéolos, conferindo ao lobo pulmonar uma consistência firme e avermelhada semelhante à do fígado;",
             "<strong>Fase de Hepatização Cinzenta:</strong> Lise das hemácias, desagregação leucocitária e deposição densa de fibrina comprimindo os capilares alveolares;",
             "<strong>Fase de Resolução:</strong> Macrófagos fagocitam os debris celulares e a fibrina, restabelecendo a aeração alveolar sem destruição da arquitetura do estroma elástico (na ausência de germes necrotizantes)."
@@ -175,8 +175,12 @@
           "<figure data-luria-curated-image=\"The_American_journal_of_roentgenology__radium_therapy_and_nuclear_medicine__1906\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/The%20American%20journal%20of%20roentgenology%2C%20radium%20therapy%20and%20nuclear%20medicine%20(1906)%20(14571301037).jpg\" alt=\"Condensação de contornos arredondados típica de pneumonia redonda na infância\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Condensação de contornos arredondados típica de pneumonia redonda na infância</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AThe%20American%20journal%20of%20roentgenology%2C%20radium%20therapy%20and%20nuclear%20medicine%20(1906)%20(14571301037).jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Internet Archive Book Images ↗</a> (No restrictions). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Pediatria, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "p",
-          "O isolamento microbiológico do patógeno causador da PAC na criança é um dos maiores desafios da infectologia pediátrica. Como a coleta de escarro é inviável na grande maioria dos menores de 7 a 8 anos e métodos invasivos (lavado broncoalveolar, punção pulmonar transtorácica) são reservados exclusivamente para pacientes graves em UTI, <strong>a idade da criança é o elemento isolado mais fidedigno para prever a etiologia microbiana provável</strong> e orientar a antibioticoterapia empírica imediata."
+          "O isolamento microbiológico do patógeno causador da PAC na criança é um dos maiores desafios da infectologia pediátrica. Como a coleta de escarro é inviável na grande maioria dos menores de 7 a 8 anos e métodos invasivos (lavado broncoalveolar, punção pulmonar transtorácica) são reservados exclusivamente para pacientes graves em UTI, <strong>a idade da criança é o elemento isolado mais fidedigno para prever a etiologia microbiana provável</strong> e orientar a antibioticoterapia empírica direcionada ao foco (ex.: Ceftriaxona 1-2 g EV 1x/dia associada a Metronidazol 500 mg EV 8/8h em infecções intra-abdominais, ou Ceftriaxona 2 g EV 12/12h na meningite) imediata guiada pelo foco (ex.: Ceftriaxona 2 g EV 12/12h na meningite, ou Ceftriaxona 1-2 g EV 1x/dia + Claritromicina (500 mg VO a cada 12 horas) 500 mg VO 12/12h na PAC grave)."
         ],
         [
           "t",
@@ -298,10 +302,10 @@
         [
           "u",
           [
-            "<strong>Azitromicina Oral:</strong> Dose de <strong>10 mg/kg/dia administrada em tomada única diária por 5 dias consecutivos</strong>;",
-            "<strong>Claritromicina Oral:</strong> Dose de 15 mg/kg/dia dividida em duas tomadas diárias (de 12/12h) por 10 a 14 dias;",
+            "<strong>Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) Oral:</strong> Dose de <strong>10 mg/kg/dia administrada em tomada única diária por 5 dias consecutivos</strong>;",
+            "<strong>Claritromicina (500 mg VO a cada 12 horas) Oral:</strong> Dose de 15 mg/kg/dia dividida em duas tomadas diárias (de 12/12h) por 10 a 14 dias;",
             "<strong>Eritromicina Oral (Regime Histórico):</strong> 50 mg/kg/dia dividida de 6/6h por 14 dias. <em>Atenção para Provas:</em> O uso de eritromicina (e em menor grau outros macrolídeos) em lactentes menores de 6 semanas de vida associa-se ao risco potencial de <strong>Estenose Hipertrófica de Piloro (EHP)</strong>, demandando vigilância para vômitos em jato não biliosos após o término do tratamento;",
-            "<strong>Conduta Obrigatória com os Pais:</strong> O diagnóstico de clamídia no lactente denuncia infecção genital materna não tratada. É <strong>mandatório convocar a mãe e seu parceiro sexual para avaliação e tratamento simultâneo</strong> (Doxiciclina ou Azitromicina), prevenindo doença inflamatória pélvica, infertilidade futura e reinfecção."
+            "<strong>Conduta Obrigatória com os Pais:</strong> O diagnóstico de clamídia no lactente denuncia infecção genital materna não tratada. É <strong>mandatório convocar a mãe e seu parceiro sexual para avaliação e tratamento simultâneo</strong> (Doxiciclina (100 mg VO a cada 12 horas) ou Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias)), prevenindo doença inflamatória pélvica, infertilidade futura e reinfecção."
           ]
         ]
       ]
@@ -336,7 +340,7 @@
         ],
         [
           "p",
-          "O <em>Mycoplasma pneumoniae</em> é a bactéria de vida livre de menor tamanho conhecida pela ciência. É desprovido de parede celular rígida (envolto apenas por uma membrana de camada tripla rica em colesterol), o que confere <strong>resistência biológica intrínseca natural a todos os antibióticos betalactâmicos</strong> (penicilinas, amoxicilina, cefalosporinas, carbapenêmicos). Sua aderência ao epitélio respiratório é mediada pela adesina P1, paralisando os cílios e produzindo a exotoxina CARDS (<em>Community-Acquired Respiratory Distress Syndrome toxin</em>), que induz inflamação e vacuolização celular."
+          "O <em>Mycoplasma pneumoniae</em> é a bactéria de vida livre de menor tamanho conhecida pela ciência. É desprovido de parede celular rígida (envolto apenas por uma membrana de camada tripla rica em colesterol), o que confere <strong>resistência biológica intrínseca natural a todos os antibióticos betalactâmicos</strong> (penicilinas, Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria), cefalosporinas, carbapenêmicos). Sua aderência ao epitélio respiratório é mediada pela adesina P1, paralisando os cílios e produzindo a exotoxina CARDS (<em>Community-Acquired Respiratory Distress Syndrome toxin</em>), que induz inflamação e vacuolização celular."
         ],
         [
           "p",
@@ -401,8 +405,8 @@
         [
           "u",
           [
-            "<strong>Macrolídeos (Primeira Escolha):</strong>\n    <ul>\n      <li><strong>Azitromicina Oral:</strong> 10 mg/kg/dia (máx. 500 mg) no 1º dia, seguido por 5 mg/kg/dia (máx. 250 mg) do 2º ao 5º dia (total de 5 dias); OU 10 mg/kg/dia 1x/dia por 5 dias consecutivos;",
-            "<strong>Claritromicina Oral:</strong> 15 mg/kg/dia dividida em 2 doses de 12/12h por 7 a 10 dias;"
+            "<strong>Macrolídeos (Primeira Escolha):</strong>\n    <ul>\n      <li><strong>Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) Oral:</strong> 10 mg/kg/dia (máx. 500 mg) no 1º dia, seguido por 5 mg/kg/dia (máx. 250 mg) do 2º ao 5º dia (total de 5 dias); OU 10 mg/kg/dia 1x/dia por 5 dias consecutivos;",
+            "<strong>Claritromicina (500 mg VO a cada 12 horas) Oral:</strong> 15 mg/kg/dia dividida em 2 doses de 12/12h por 7 a 10 dias;"
           ]
         ],
         [
@@ -412,7 +416,7 @@
         [
           "u",
           [
-            "<strong>Doxiciclina Oral:</strong> 2 a 4 mg/kg/dia dividida em 2 tomadas por 7 a 10 dias (excelente eficácia contra cepas resistentes de <em>Mycoplasma</em>)."
+            "<strong>Doxiciclina (100 mg VO a cada 12 horas) Oral:</strong> 2 a 4 mg/kg/dia dividida em 2 tomadas por 7 a 10 dias (excelente eficácia contra cepas resistentes de <em>Mycoplasma</em>)."
           ]
         ]
       ]
@@ -543,17 +547,17 @@
             [
               "<strong>1. PNEUMONIA<br>(Pneumonia Leve / Não Grave)</strong>",
               "• Presença de <strong>TAQUIPNEIA</strong> para a faixa etária;<br>• <strong>SEM tiragem subcostal</strong>;<br>• <strong>SEM sinais gerais de perigo</strong>.",
-              "<strong>Tratamento Ambulatorial no Domicílio:</strong><br>\n      • Iniciar <strong>Amoxicilina oral na dose de 50 mg/kg/dia (ou 80-90 mg/kg/dia)</strong> dividida em 2 doses diárias (de 12/12h) por <strong>5 a 7 dias</strong>;<br>\n      • Orientar ingestão abundante de líquidos e lavagem nasal;<br>\n      • <strong>Reavaliação médica ambulatorial OBRIGATÓRIA em 48 a 72 horas</strong> (ou retorno imediato se piora)."
+              "<strong>Tratamento Ambulatorial no Domicílio:</strong><br>\n      • Iniciar <strong>Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral na dose de 50 mg/kg/dia (ou 80-90 mg/kg/dia)</strong> dividida em 2 doses diárias (de 12/12h) por <strong>5 a 7 dias</strong>;<br>\n      • Orientar ingestão abundante de líquidos e lavagem nasal;<br>\n      • <strong>Reavaliação médica ambulatorial OBRIGATÓRIA em 48 a 72 horas</strong> (ou retorno imediato se piora)."
             ],
             [
               "<strong>2. PNEUMONIA GRAVE</strong>",
               "• Presença de taquipneia associada a <strong>TIRAGEM SUBCOSTAL</strong> (afundamento da parede torácica inferior na inspiração);<br>• OU presença de <strong>batimento de asa de nariz (BAN)</strong> ou gemência intermitente;<br>• <strong>SEM sinais gerais de perigo</strong>.",
-              "<strong>Indicação Formal de INTERNAÇÃO HOSPITALAR:</strong><br>\n      • Não tratar em casa!<br>\n      • Primeira dose de antibiótico no local (se transferência necessária);<br>\n      • Iniciar <strong>Ampicilina venosa (150 a 200 mg/kg/dia) dividida de 6/6 horas</strong> OU Penicilina Cristalina IV (200.000 UI/kg/dia);<br>\n      • Suporte de oxigenoterapia se SpO2 &lt; 92%."
+              "<strong>Indicação Formal de INTERNAÇÃO HOSPITALAR:</strong><br>\n      • Não tratar em casa!<br>\n      • Primeira dose de antibiótico no local (se transferência necessária);<br>\n      • Iniciar <strong>Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) venosa (150 a 200 mg/kg/dia) dividida de 6/6 horas</strong> OU Penicilina Cristalina IV (200.000 UI/kg/dia);<br>\n      • Suporte de oxigenoterapia se SpO2 &lt; 92%."
             ],
             [
               "<strong>3. PNEUMONIA MUITO GRAVE<br>(ou Doença Muito Grave)</strong>",
               "• Presença de taquipneia ou esforço associada a pelo menos <strong>UM SINAL GERAL DE PERIGO</strong>:<br>\n      1. Incapacidade de beber líquidos ou sugar o seio materno;<br>\n      2. Vômitos incoercíveis (vomita tudo o que ingere);<br>\n      3. Convulsões ativas ou recentes na vigência da doença;<br>\n      4. Letargia, sonolência anormal ou inconsciência/coma;<br>\n      5. Estridor em repouso;<br>\n      6. Desnutrição grave associada;<br>\n      7. <strong>Cianose central ou SpO2 &lt; 90-92% em ar ambiente</strong>.",
-              "<strong>INTERNAÇÃO HOSPITALAR DE EMERGÊNCIA / UTI PEDIÁTRICA:</strong><br>\n      • Estabilização imediata da via aérea e oxigenoterapia contínua;<br>\n      • Acesso venoso imediato para hidratação fracionada;<br>\n      • <strong>Antibioticoterapia parenteral de amplo espectro:</strong><br>\n      - Lactente jovem &lt; 2 meses: <strong>Ampicilina IV + Gentamicina IV</strong> (ou Cefotaxima);<br>\n      - &gt; 2 meses com choque ou toxemia grave: <strong>Ceftriaxona IV (100 mg/kg/dia) associada a Oxacilina IV (150-200 mg/kg/dia)</strong> (para cobrir pneumococo resistente e <em>S. aureus</em>)."
+              "<strong>INTERNAÇÃO HOSPITALAR DE EMERGÊNCIA / UTI PEDIÁTRICA:</strong><br>\n      • Estabilização imediata da via aérea e oxigenoterapia contínua;<br>\n      • Acesso venoso imediato para hidratação fracionada;<br>\n      • <strong>Antibioticoterapia parenteral de amplo espectro:</strong><br>\n      - Lactente jovem &lt; 2 meses: <strong>Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) IV + Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas) IV</strong> (ou Cefotaxima);<br>\n      - &gt; 2 meses com choque ou toxemia grave: <strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) IV (100 mg/kg/dia) associada a Oxacilina (2 g EV a cada 4 horas) IV (150-200 mg/kg/dia)</strong> (para cobrir pneumococo resistente e <em>S. aureus</em>)."
             ]
           ],
           "book-table"
@@ -564,7 +568,7 @@
         ],
         [
           "p",
-          "No protocolo AIDPI, <strong>todo lactente com menos de 2 meses de vida que apresenta tosse ou dificuldade respiratória com FR &ge; 60 irpm ou tiragem subcostal é automaticamente classificado como \"DOENÇA GRAVE / SEPSE POSSÍVEL\"</strong>, exigindo internação hospitalar imediata, coleta de exames sépticos (hemoculturas, líquor e urocultura) e início de ampicilina venosa associada a um aminoglicosídeo (gentamicina) parenteral!"
+          "No protocolo AIDPI, <strong>todo lactente com menos de 2 meses de vida que apresenta tosse ou dificuldade respiratória com FR &ge; 60 irpm ou tiragem subcostal é automaticamente classificado como \"DOENÇA GRAVE / SEPSE POSSÍVEL\"</strong>, exigindo internação hospitalar imediata, coleta de exames sépticos (hemoculturas, líquor e urocultura) e início de Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) venosa associada a um aminoglicosídeo (Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas)) parenteral!"
         ]
       ]
     ],
@@ -586,7 +590,7 @@
         ],
         [
           "p",
-          "<strong>RECOMENDAÇÃO DE DIRETRIZ:</strong><br>\nCrianças com quadro clínico ambulatorial clássico de pneumonia leve (taquipneia sem tiragem subcostal e sem sinais de perigo) <strong>NÃO NECESSITAM de radiografia de tórax de rotina</strong> para o início do tratamento com amoxicilina oral na Atenção Primária à Saúde!"
+          "<strong>RECOMENDAÇÃO DE DIRETRIZ:</strong><br>\nCrianças com quadro clínico ambulatorial clássico de pneumonia leve (taquipneia sem tiragem subcostal e sem sinais de perigo) <strong>NÃO NECESSITAM de radiografia de tórax de rotina</strong> para o início do tratamento com Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral na Atenção Primária à Saúde!"
         ],
         [
           "p",
@@ -685,19 +689,19 @@
         [
           "u",
           [
-            "<strong>Antimicrobiano de Primeira Escolha Oficial:</strong> <strong>Amoxicilina oral</strong>:\n    <ul>\n      <li><strong>Dose Convencional:</strong> <strong>50 mg/kg/dia</strong> dividida em 2 doses (de 12/12h) ou 3 doses (de 8/8h) — recomendada pelo AIDPI/MS em regiões com baixas taxas de resistência pneumocócica;",
-            "<strong>Dose Alta (Preconizada pela SBP e AAP em áreas de resistência):</strong> <strong>80 a 90 mg/kg/dia</strong> dividida em duas tomadas diárias (de 12/12h), para superar com segurança cepas de <em>Streptococcus pneumoniae</em> com sensibilidade intermediária por alteração de PBPs;"
+            "<strong>Antimicrobiano de Primeira Escolha Oficial:</strong> <strong>Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral</strong>:\n    <ul>\n      <li><strong>Dose Convencional:</strong> <strong>50 mg/kg/dia</strong> dividida em 2 doses (de 12/12h) ou 3 doses (de 8/8h) — recomendada pelo AIDPI/MS em regiões com baixas taxas de resistência pneumocócica;",
+            "<strong>dose máxima preconizada (Preconizada pela SBP e AAP em áreas de resistência):</strong> <strong>80 a 90 mg/kg/dia</strong> dividida em duas tomadas diárias (de 12/12h), para superar com segurança cepas de <em>Streptococcus pneumoniae</em> com sensibilidade intermediária por alteração de PBPs;"
           ]
         ],
         [
           "p",
-          "</li>\n  <li><strong>Duração do Tratamento Ambulatorial:</strong> Ensaios clínicos randomizados recentes (como o estudo CAP-IT e SAFER) comprovaram que esquemas curtos de <strong>5 DIAS COMPLETOS</strong> de amoxicilina oral possuem eficácia clínica e microbiológica rigorosamente idêntica a esquemas tradicionais de 7 a 10 dias em pneumonias leves, com menos efeitos adversos gastrointestinais e menor seleção de resistência bacteriana;</li>\n  <li><strong>Alternativa para Alérgicos à Penicilina:</strong>"
+          "</li>\n  <li><strong>Duração do Tratamento Ambulatorial:</strong> Ensaios clínicos randomizados recentes (como o estudo CAP-IT e SAFER) comprovaram que esquemas curtos de <strong>5 DIAS COMPLETOS</strong> de Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral possuem eficácia clínica e microbiológica rigorosamente idêntica a esquemas tradicionais de 7 a 10 dias em pneumonias leves, com menos efeitos adversos gastrointestinais e menor seleção de resistência bacteriana;</li>\n  <li><strong>Alternativa para Alérgicos à Penicilina:</strong>"
         ],
         [
           "u",
           [
             "Alergia não grave (exantema tardio sem anafilaxia): Cefuroxima axetil oral (30 mg/kg/dia) ou Cefprozil;",
-            "Alergia anafilática tipo I (IgE-mediada): <strong>Azitromicina oral</strong> (10 mg/kg/dia no 1º dia, seguido por 5 mg/kg/dia por mais 4 dias) ou Claritromicina (15 mg/kg/dia dividida 12/12h por 7 a 10 dias);"
+            "Alergia anafilática tipo I (IgE-mediada): <strong>Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) oral</strong> (10 mg/kg/dia no 1º dia, seguido por 5 mg/kg/dia por mais 4 dias) ou Claritromicina (15 mg/kg/dia dividida 12/12h por 7 a 10 dias);"
           ]
         ],
         [
@@ -722,18 +726,18 @@
           [
             [
               "<strong>Primeira Escolha Hospitalar Padrão</strong>",
-              "<strong>Ampicilina venosa: 150 a 200 mg/kg/dia</strong> dividida em 4 doses (de 6/6 horas) IV;<br>\n      OU <strong>Penicilina G Cristalina venosa: 150.000 a 200.000 UI/kg/dia</strong> dividida em 4 a 6 doses (de 4/4h ou 6/6h) IV.",
-              "Esquema padrão-ouro da SBP e OMS para crianças vacinadas contra Hib. Excelente penetração pulmonar e cobertura bactericida bacteriana contra <em>Streptococcus pneumoniae</em>. A via venosa é mantida até a criança ficar afebril por 24 a 48 horas e sem esforço respiratório, momento em que se realiza a transição segura para <strong>Amoxicilina oral</strong> para completar 7 a 10 dias totais."
+              "<strong>Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) venosa: 150 a 200 mg/kg/dia</strong> dividida em 4 doses (de 6/6 horas) IV;<br>\n      OU <strong>Penicilina G Cristalina venosa: 150.000 a 200.000 UI/kg/dia</strong> dividida em 4 a 6 doses (de 4/4h ou 6/6h) IV.",
+              "Esquema padrão-ouro da SBP e OMS para crianças vacinadas contra Hib. Excelente penetração pulmonar e cobertura bactericida bacteriana contra <em>Streptococcus pneumoniae</em>. A via venosa é mantida até a criança ficar afebril por 24 a 48 horas e sem esforço respiratório, momento em que se realiza a transição segura para <strong>Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral</strong> para completar 7 a 10 dias totais."
             ],
             [
               "<strong>Alternativa / Segunda Escolha Parenteral</strong>",
-              "<strong>Ceftriaxona venosa: 50 a 100 mg/kg/dia</strong> IV em dose única diária ou dividida de 12/12h;<br>\n      OU <strong>Cefotaxima IV: 150 mg/kg/dia</strong> de 6/6h ou 8/8h.",
-              "Indicada nos casos de: desvacinação para Hib, falha terapêutica documentada após 48-72h de ampicilina, pneumonia associada a derrame pleural purulento ou paciente admitido com sepse grave/choque séptico."
+              "<strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) venosa: 50 a 100 mg/kg/dia</strong> IV em dose única diária ou dividida de 12/12h;<br>\n      OU <strong>Cefotaxima IV: 150 mg/kg/dia</strong> de 6/6h ou 8/8h.",
+              "Indicada nos casos de: desvacinação para Hib, falha terapêutica documentada após 48-72h de Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas), pneumonia associada a derrame pleural purulento ou paciente admitido com sepse grave/choque séptico."
             ],
             [
               "<strong>Pneumonia Muito Grave / Suspeita de <em>S. aureus</em></strong>",
-              "<strong>Oxacilina venosa (150 a 200 mg/kg/dia de 6/6h) ASSOCIADA à Ceftriaxona IV (100 mg/kg/dia)</strong>.<br>\n      Se suspeita de MRSA comunitário (CA-MRSA): substituir oxacilina por <strong>Vancomicina IV</strong> (40-60 mg/kg/dia) ou <strong>Clindamicina IV</strong> (40 mg/kg/dia).",
-              "Indicada diante de: pneumonia com rápida progressão multifocal, pneumatoceles, pneumotórax espontâneo, empiema loculado espesso ou histórico de furunculose e abscesso cutâneo prévio na criança ou familiares. A clindamicina possui a vantagem adicional de inibir a síntese da toxina leucocidina de Panton-Valentine (PVL)."
+              "<strong>Oxacilina (2 g EV a cada 4 horas) venosa (150 a 200 mg/kg/dia de 6/6h) ASSOCIADA à Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) IV (100 mg/kg/dia)</strong>.<br>\n      Se suspeita de MRSA comunitário (CA-MRSA): substituir Oxacilina (2 g EV a cada 4 horas) por <strong>Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) IV</strong> (40-60 mg/kg/dia) ou <strong>Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas) IV</strong> (40 mg/kg/dia).",
+              "Indicada diante de: pneumonia com rápida progressão multifocal, pneumatoceles, pneumotórax espontâneo, empiema loculado espesso ou histórico de furunculose e abscesso cutâneo prévio na criança ou familiares. A Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas) possui a vantagem adicional de inibir a síntese da toxina leucocidina de Panton-Valentine (PVL)."
             ]
           ],
           "book-table"
@@ -758,7 +762,7 @@
         ],
         [
           "p",
-          "<strong>CENÁRIO CLÁSSICO DE PROVA:</strong><br>\nCriança internada com pneumonia em uso de ampicilina ou penicilina venosa adequada que, <strong>após 48 a 72 horas de tratamento correto, mantém febre alta diária contínua, piora do desconforto respiratório ou apresenta assimetria na ausculta pulmonar</strong> (macicez à percussão e murmúrio vesicular abolido no hemitórax afetado). A suspeita obrigatória número um é <strong>DERRAME PLEURAL PARAPNEUMÔNICO / EMPIEMA PLEURAL</strong>!"
+          "<strong>CENÁRIO CLÁSSICO DE PROVA:</strong><br>\nCriança internada com pneumonia em uso de Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) ou penicilina venosa adequada que, <strong>após 48 a 72 horas de tratamento correto, mantém febre alta diária contínua, piora do desconforto respiratório ou apresenta assimetria na ausculta pulmonar</strong> (macicez à percussão e murmúrio vesicular abolido no hemitórax afetado). A suspeita obrigatória número um é <strong>DERRAME PLEURAL PARAPNEUMÔNICO / EMPIEMA PLEURAL</strong>!"
         ],
         [
           "3",
@@ -832,7 +836,7 @@
           "o",
           [
             "<strong>Drenagem Torácica Tubular Fechada em Selo d'Água Imediata:</strong> Inserção de dreno torácico tubular calibroso posicionado no 5º ou 6º espaço intercostal entre a linha axilar média e anterior, conectado a sistema de frasco de selo d'água;",
-            "<strong>Otimização Antimicrobiana Parenteral:</strong> Cobertura venosa plena para <em>Streptococcus pneumoniae</em> e <em>Staphylococcus aureus</em>: <strong>Ceftriaxona IV associada a Oxacilina IV</strong> (ou Vancomicina se risco de MRSA) por pelo menos 14 a 21 dias totais;",
+            "<strong>Otimização Antimicrobiana Parenteral:</strong> Cobertura venosa plena para <em>Streptococcus pneumoniae</em> e <em>Staphylococcus aureus</em>: <strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) IV associada a Oxacilina (2 g EV a cada 4 horas) IV</strong> (ou Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) se risco de MRSA) por pelo menos 14 a 21 dias totais;",
             "<strong>Conduta no Derrame Loculado / Septado Complexo:</strong> Se a ultrassonografia demonstrar múltiplos septos espessos de fibrina impedindo a drenagem adequada pelo tubo:\n    <ul>\n      <li><strong>Videotoracoscopia Precoce (VATS - Video-Assisted Thoracoscopic Surgery):</strong> Método de escolha padrão em centros cirúrgicos pediátricos de referência, permitindo debridamento mecânico direto dos septos de fibrina, lise de aderências, aspiração do pus e posicionamento preciso do dreno sob visão óptica direta;",
             "<strong>Instilação Intrapleural de Fibrinolíticos:</strong> Alternativa clínica não invasiva à cirurgia: instilação de <strong>Alteplase (r-tPA)</strong> ou Estreptoquinase através do dreno de tórax para lisar as traves de fibrina e desobstruir as loculações."
           ]
@@ -892,7 +896,7 @@
             [
               "<strong>Abscesso Pulmonar Verdadeiro</strong>",
               "Cavidade parenquimatosa única ou confluente espessa com <strong>nível hidroaéreo nítido</strong> no seu interior, circundada por consolidação inflamatória.",
-              "Geralmente decorre de aspiração maciça de secreções com flora mista anaeróbia em crianças com neuropatias crônicas ou refluxo grave. Exige antibioticoterapia com cobertura para anaeróbios (Ampicilina-Sulbactam ou Clindamicina IV) por 4 a 6 semanas."
+              "Geralmente decorre de aspiração maciça de secreções com flora mista anaeróbia em crianças com neuropatias crônicas ou refluxo grave. Exige antibioticoterapia com cobertura para anaeróbios (Ampicilina-Sulbactam ou Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas) IV) por 4 a 6 semanas."
             ]
           ],
           "book-table"
@@ -908,8 +912,8 @@
         [
           "u",
           [
-            "Associar imediatamente <strong>Clindamicina IV (40 mg/kg/dia)</strong> ao esquema antibiótico (a clindamicina atua na subunidade ribossômica 50S inibindo diretamente a síntese proteica ribossômica bacteriana e <strong>bloqueando a produção da toxina leucocidina de Panton-Valentine</strong>, com potente efeito antitoxina!);",
-            "Se o perfil microbiológico local indicar alta prevalência de CA-MRSA resistente à clindamicina: utilizar <strong>Vancomicina IV</strong> (com monitorização da vancocinemia sérica de vale entre 15 e 20 mcg/mL) ou <strong>Linezolida IV</strong> (que também possui ação inibidora de toxinas ribossômicas)."
+            "Associar imediatamente <strong>Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas) IV (40 mg/kg/dia)</strong> ao esquema antibiótico (a Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas) atua na subunidade ribossômica 50S inibindo diretamente a síntese proteica ribossômica bacteriana e <strong>bloqueando a produção da toxina leucocidina de Panton-Valentine</strong>, com potente efeito antitoxina!);",
+            "Se o perfil microbiológico local indicar alta prevalência de CA-MRSA resistente à Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas): utilizar <strong>Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) IV</strong> (com monitorização da vancocinemia sérica de vale entre 15 e 20 mcg/mL) ou <strong>Linezolida IV</strong> (que também possui ação inibidora de toxinas ribossômicas)."
           ]
         ]
       ]
@@ -928,7 +932,7 @@
         ],
         [
           "p",
-          "<strong>Identificação e Queixa:</strong> Menino de 18 meses de vida é levado pela mãe à Unidade Básica de Saúde com história de tosse e \"nariz escorrendo\" há 4 dias. A mãe relata que há 24 horas a criança passou a \"respirar muito rápido\" e apresentou febre de 38,4°C controlada com dipirona. Nega vômitos, a criança está mamando e bebendo água normalmente e não teve convulsões."
+          "<strong>Identificação e Queixa:</strong> Menino de 18 meses de vida é levado pela mãe à Unidade Básica de Saúde com história de tosse e \"nariz escorrendo\" há 4 dias. A mãe relata que há 24 horas a criança passou a \"respirar muito rápido\" e apresentou febre de 38,4°C controlada com Dipirona (1 g EV ou VO a cada 6 horas em adultos, ou 15 a 25 mg/kg/dose até 4x/dia em crianças). Nega vômitos, a criança está mamando e bebendo água normalmente e não teve convulsões."
         ],
         [
           "p",
@@ -954,7 +958,7 @@
             "<strong>Interpretação da Taquipneia:</strong> A criança tem 18 meses de idade (faixa de 12 a 59 meses). O ponto de corte que define taquipneia nessa faixa etária é <strong>FR &ge; 40 irpm</strong>. Como apresenta 46 irpm na ausência de febre e com a criança calma, <strong>a taquipneia está formalmente configurada</strong>;",
             "<strong>Estratificação de Gravidade:</strong> Presença de taquipneia, sem tiragem subcostal e sem sinais gerais de perigo classifica o paciente como <strong>PNEUMONIA (Pneumonia Não Grave / Ambulatorial)</strong>;",
             "<strong>Dispensa de Exames Complementares:</strong> Não há necessidade de solicitar radiografia de tórax ou exames de sangue para início do tratamento na UBS;",
-            "<strong>Prescrição Baseada em Evidências:</strong> <strong>Amoxicilina oral na dose de 50 mg/kg/dia (ou 80-90 mg/kg/dia) dividida de 12/12h por 5 a 7 dias</strong>;",
+            "<strong>Prescrição Baseada em Evidências:</strong> <strong>Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral na dose de 50 mg/kg/dia (ou 80-90 mg/kg/dia) dividida de 12/12h por 5 a 7 dias</strong>;",
             "<strong>Orientação aos Pais:</strong> Hidratação, lavagem nasal com SF 0,9% e <strong>retorno obrigatório agendado em 48 a 72 horas</strong> para reavaliação clínica presencial, ou retorno imediato caso surja tiragem subcostal, gemência ou incapacidade de ingerir líquidos."
           ]
         ],
@@ -995,14 +999,14 @@
         [
           "u",
           [
-            "<strong>Azitromicina oral:</strong> 10 mg/kg/dia em tomada única diária por <strong>5 dias consecutivos</strong>;",
-            "Alternativa: Claritromicina oral 15 mg/kg/dia dividida de 12/12h por 14 dias;",
-            "<strong>Conduta de Saúde Pública:</strong> Notificar e tratar a mãe e o parceiro sexual com Doxiciclina oral 100 mg 12/12h por 7 dias ou Azitromicina 1g dose única."
+            "<strong>Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) oral:</strong> 10 mg/kg/dia em tomada única diária por <strong>5 dias consecutivos</strong>;",
+            "Alternativa: Claritromicina (500 mg VO a cada 12 horas) oral 15 mg/kg/dia dividida de 12/12h por 14 dias;",
+            "<strong>Conduta de Saúde Pública:</strong> Notificar e tratar a mãe e o parceiro sexual com Doxiciclina (100 mg VO a cada 12 horas) oral 100 mg 12/12h por 7 dias ou Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1g dose única."
           ]
         ],
         [
           "3",
-          "Caso Clínico 3: Pneumonia Grave com Tiragem Subcostal e Indicação de Ampicilina IV"
+          "Caso Clínico 3: Pneumonia Grave com Tiragem Subcostal e Indicação de Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) IV"
         ],
         [
           "p",
@@ -1031,11 +1035,11 @@
           "o",
           [
             "<strong>Classificação:</strong> Pelo protocolo AIDPI / SBP, a presença de <strong>tiragem subcostal</strong> define formalmente o diagnóstico de <strong>PNEUMONIA GRAVE</strong>. A hipoxemia (SpO2 91%) reforça a gravidade;",
-            "<strong>Indicação Formal de Internação Hospitalar:</strong> Pacientes com pneumonia grave <strong>NÃO PODEM ser tratados em domicílio</strong> com amoxicilina oral!;",
+            "<strong>Indicação Formal de Internação Hospitalar:</strong> Pacientes com pneumonia grave <strong>NÃO PODEM ser tratados em domicílio</strong> com Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral!;",
             "<strong>Exames Complementares Hospitalares:</strong> Radiografia de tórax (evidenciou consolidação lobar homogênea em lobo inferior esquerdo com broncograma aéreo, sem derrame pleural associado) e dois pares de hemoculturas;",
             "<strong>Tratamento Farmacológico Hospitalar:</strong>\n    <ul>\n      <li>Instalar <strong>oxigênio por cânula nasal a 1 L/min</strong> para manter SpO2 &ge; 92% a 94%;",
-            "Iniciar <strong>Ampicilina venosa na dose de 150 a 200 mg/kg/dia dividida em 4 doses de 6/6 horas IV</strong>;",
-            "Transicionar para amoxicilina oral assim que a criança estiver afebril e sem esforço respiratório por 24 a 48 horas, completando 7 a 10 dias totais."
+            "Iniciar <strong>Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) venosa na dose de 150 a 200 mg/kg/dia dividida em 4 doses de 6/6 horas IV</strong>;",
+            "Transicionar para Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral assim que a criança estiver afebril e sem esforço respiratório por 24 a 48 horas, completando 7 a 10 dias totais."
           ]
         ],
         [
@@ -1044,7 +1048,7 @@
         ],
         [
           "p",
-          "<strong>Identificação e Evolução:</strong> Menino de 4 anos e meio foi internado na enfermaria de pediatria há 3 dias com diagnóstico de pneumonia pneumocócica lobar em base direita, iniciando tratamento com Ampicilina venosa (150 mg/kg/dia). Hoje, no 3º dia de internação hospitalar (72 horas completas de antibiótico venoso), a equipe médica nota que o paciente <strong>mantém febre alta diária em picos de 39,2°C a 39,5°C</strong>, aumento da prostração e nova piora do cansaço respiratório."
+          "<strong>Identificação e Evolução:</strong> Menino de 4 anos e meio foi internado na enfermaria de pediatria há 3 dias com diagnóstico de pneumonia pneumocócica lobar em base direita, iniciando tratamento com Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) venosa (150 mg/kg/dia). Hoje, no 3º dia de internação hospitalar (72 horas completas de antibiótico venoso), a equipe médica nota que o paciente <strong>mantém febre alta diária em picos de 39,2°C a 39,5°C</strong>, aumento da prostração e nova piora do cansaço respiratório."
         ],
         [
           "p",
@@ -1076,7 +1080,7 @@
           [
             "<strong>Drenagem Torácica Tubular Fechada em Selo d'Água:</strong> Instalação urgente de dreno torácico tubular para evacuação imediata do exsudato purulento sob pressão;",
             "<strong>Videotoracoscopia Precoce (VATS):</strong> Como a ultrassonografia comprovou múltiplas lojas septadas de fibrina espessas, a conduta ideal é a <strong>debridamento mecânico e lise de aderências por VATS em centro cirúrgico</strong> pelo cirurgião pediátrico;",
-            "<strong>Escalonamento Antimicrobiano Parenteral:</strong> Trocar a ampicilina por <strong>Ceftriaxona venosa (100 mg/kg/dia) associada a Oxacilina venosa (150 mg/kg/dia)</strong>, cobrindo pneumococo com resistência intermediária e eventual coinfecção por <em>Staphylococcus aureus</em>, mantendo a terapia parenteral por 14 a 21 dias."
+            "<strong>Escalonamento Antimicrobiano Parenteral:</strong> Trocar a Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) por <strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) venosa (100 mg/kg/dia) associada a Oxacilina (2 g EV a cada 4 horas) venosa (150 mg/kg/dia)</strong>, cobrindo pneumococo com resistência intermediária e eventual coinfecção por <em>Staphylococcus aureus</em>, mantendo a terapia parenteral por 14 a 21 dias."
           ]
         ]
       ]
@@ -1107,11 +1111,11 @@
         ],
         [
           "p",
-          "<strong>C)</strong> Pneumonia; prescrição de Amoxicilina oral na dose de 50 mg/kg/dia (ou 80-90 mg/kg/dia) por 5 a 7 dias em tratamento domiciliar, com reavaliação obrigatória em 48 a 72 horas."
+          "<strong>C)</strong> Pneumonia; prescrição de Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral na dose de 50 mg/kg/dia (ou 80-90 mg/kg/dia) por 5 a 7 dias em tratamento domiciliar, com reavaliação obrigatória em 48 a 72 horas."
         ],
         [
           "p",
-          "<strong>D)</strong> Doença muito grave; solicitação imediata de vaga de UTI pediátrica, punção lombar e início de Ceftriaxona associada a Oxacilina."
+          "<strong>D)</strong> Doença muito grave; solicitação imediata de vaga de UTI pediátrica, punção lombar e início de Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) associada a Oxacilina (2 g EV a cada 4 horas)."
         ],
         [
           "p",
@@ -1132,7 +1136,7 @@
         [
           "u",
           [
-            "<strong>Por que a alternativa C está CORRETA?</strong> A criança tem 8 meses de vida (faixa etária de <strong>2 a 11 meses</strong>). O ponto de corte que define taquipneia pelo protocolo AIDPI/MS nessa faixa é <strong>FR &ge; 50 irpm</strong>. Como o paciente apresenta 54 irpm aferida corretamente durante 1 minuto completo com a criança calma, <strong>a taquipneia está presente</strong>. Como <em>não há tiragem subcostal</em> e <em>não há sinais gerais de perigo</em> (a criança está alerta, hidratada e mamando bem), classifica-se obrigatoriamente como <strong>PNEUMONIA (Pneumonia Não Grave / Ambulatorial)</strong>. A conduta preconizada é o tratamento ambulatorial com <strong>Amoxicilina oral (50 a 90 mg/kg/dia) por 5 a 7 dias</strong> e retorno obrigatório para <strong>reavaliação em 48 a 72 horas</strong>;",
+            "<strong>Por que a alternativa C está CORRETA?</strong> A criança tem 8 meses de vida (faixa etária de <strong>2 a 11 meses</strong>). O ponto de corte que define taquipneia pelo protocolo AIDPI/MS nessa faixa é <strong>FR &ge; 50 irpm</strong>. Como o paciente apresenta 54 irpm aferida corretamente durante 1 minuto completo com a criança calma, <strong>a taquipneia está presente</strong>. Como <em>não há tiragem subcostal</em> e <em>não há sinais gerais de perigo</em> (a criança está alerta, hidratada e mamando bem), classifica-se obrigatoriamente como <strong>PNEUMONIA (Pneumonia Não Grave / Ambulatorial)</strong>. A conduta preconizada é o tratamento ambulatorial com <strong>Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral (50 a 90 mg/kg/dia) por 5 a 7 dias</strong> e retorno obrigatório para <strong>reavaliação em 48 a 72 horas</strong>;",
             "<strong>Por que a A está INCORRETA?</strong> A presença de taquipneia com estertores focais afasta o diagnóstico de mero resfriado comum; o antibiótico é obrigatório;",
             "<strong>Por que a B está INCORRETA?</strong> Para ser classificada como \"Pneumonia Grave\", exigiria a presença de <em>tiragem subcostal</em> ou batimento de asas de nariz, que estão ausentes;",
             "<strong>Por que a D está INCORRETA?</strong> A criança não tem sinais gerais de perigo (vomita tudo, convulsões, letargia/inconsciência, incapacidade de beber, estridor em repouso);",
@@ -1149,11 +1153,11 @@
         ],
         [
           "p",
-          "<strong>A)</strong> Pneumonia por <em>Streptococcus pneumoniae</em>; tratamento ambulatorial com amoxicilina oral por 10 dias."
+          "<strong>A)</strong> Pneumonia por <em>Streptococcus pneumoniae</em>; tratamento ambulatorial com Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral por 10 dias."
         ],
         [
           "p",
-          "<strong>B)</strong> Pneumonia afebril do lactente por <em>Chlamydia trachomatis</em>; tratamento com Azitromicina oral por 5 dias e convocação da mãe e parceiro sexual para tratamento."
+          "<strong>B)</strong> Pneumonia afebril do lactente por <em>Chlamydia trachomatis</em>; tratamento com Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) oral por 5 dias e convocação da mãe e parceiro sexual para tratamento."
         ],
         [
           "p",
@@ -1182,7 +1186,7 @@
         [
           "u",
           [
-            "<strong>Por que a alternativa B está CORRETA?</strong> O quadro descreve a apresentação patognomônica da <strong>Pneumonia Afebril do Lactente por <em>Chlamydia trachomatis</em></strong>: lactente jovem (1 a 3 meses), tosse paroxística em staccato sem guincho inspiratório, ausência completa de febre, bom estado geral com taquipneia e estertores difusos, infiltrado intersticial difuso e a marcante <strong>eosinofilia periférica acentuada (&gt; 1.000 eosinófilos/mm³)</strong>. O tratamento de escolha é a <strong>Azitromicina oral por 5 dias</strong> (ou claritromicina por 14 dias), sendo obrigatório convocar os pais para tratamento da infecção genital por clamídia;",
+            "<strong>Por que a alternativa B está CORRETA?</strong> O quadro descreve a apresentação patognomônica da <strong>Pneumonia Afebril do Lactente por <em>Chlamydia trachomatis</em></strong>: lactente jovem (1 a 3 meses), tosse paroxística em staccato sem guincho inspiratório, ausência completa de febre, bom estado geral com taquipneia e estertores difusos, infiltrado intersticial difuso e a marcante <strong>eosinofilia periférica acentuada (&gt; 1.000 eosinófilos/mm³)</strong>. O tratamento de escolha é a <strong>Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) oral por 5 dias</strong> (ou Claritromicina (500 mg VO a cada 12 horas) por 14 dias), sendo obrigatório convocar os pais para tratamento da infecção genital por clamídia;",
             "<strong>Por que a A está INCORRETA?</strong> Pneumonia pneumocócica causa febre alta súbita, condensação lobar e neutrofilia com desvio à esquerda (não cursa com eosinofilia e curso afebril insidioso);",
             "<strong>Por que a C está INCORRETA?</strong> A coqueluche cursa com <em>linfocitose absoluta exuberante</em> (frequentemente &gt; 20.000 a 30.000 linfócitos/mm³), e não com eosinofilia; além disso, a droga para coqueluche é macrolídeo (não penicilina);",
             "<strong>Por que a D está INCORRETA?</strong> Corticoide não tem indicação em BVA e BVA não causa eosinofilia de 1.890/mm³;",
@@ -1199,19 +1203,19 @@
         ],
         [
           "p",
-          "<strong>A)</strong> <em>Streptococcus pneumoniae</em>; Amoxicilina oral em dose alta."
+          "<strong>A)</strong> <em>Streptococcus pneumoniae</em>; Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral em dose máxima preconizada."
         ],
         [
           "p",
-          "<strong>B)</strong> <em>Mycoplasma pneumoniae</em>; Azitromicina oral (ou Claritromicina)."
+          "<strong>B)</strong> <em>Mycoplasma pneumoniae</em>; Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) oral (ou Claritromicina (500 mg VO a cada 12 horas))."
         ],
         [
           "p",
-          "<strong>C)</strong> <em>Staphylococcus aureus</em>; Cefalexina oral associada a clindamicina."
+          "<strong>C)</strong> <em>Staphylococcus aureus</em>; Cefalexina (500 mg VO a cada 6 horas) oral associada a Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas)."
         ],
         [
           "p",
-          "<strong>D)</strong> <em>Klebsiella pneumoniae</em>; Ciprofloxacino oral."
+          "<strong>D)</strong> <em>Klebsiella pneumoniae</em>; Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h) oral."
         ],
         [
           "p",
@@ -1232,7 +1236,7 @@
         [
           "u",
           [
-            "<strong>Por que a alternativa B está CORRETA?</strong> O caso ilustra o padrão clássico da <strong>Pneumonia Atípica por <em>Mycoplasma pneumoniae</em></strong>: idade escolar (&gt; 5 anos), pródromo constitucional com cefaleia, tosse seca intratável e arrastada há mais de 10 dias, <strong>dissociação clínico-radiológica evidente</strong> (exame físico pobre contrastando com infiltrado radiológico extenso) e presença de manifestações extrapulmonares imunomediadas clássicas (<strong>lesões de eritema multiforme</strong>). Como o <em>Mycoplasma</em> não possui parede celular, os betalactâmicos são ineficazes. O tratamento de escolha são os <strong>macrolídeos (Azitromicina ou Claritromicina)</strong>;",
+            "<strong>Por que a alternativa B está CORRETA?</strong> O caso ilustra o padrão clássico da <strong>Pneumonia Atípica por <em>Mycoplasma pneumoniae</em></strong>: idade escolar (&gt; 5 anos), pródromo constitucional com cefaleia, tosse seca intratável e arrastada há mais de 10 dias, <strong>dissociação clínico-radiológica evidente</strong> (exame físico pobre contrastando com infiltrado radiológico extenso) e presença de manifestações extrapulmonares imunomediadas clássicas (<strong>lesões de eritema multiforme</strong>). Como o <em>Mycoplasma</em> não possui parede celular, os betalactâmicos são ineficazes. O tratamento de escolha são os <strong>macrolídeos (Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) ou Claritromicina (500 mg VO a cada 12 horas))</strong>;",
             "<strong>Por que a A está INCORRETA?</strong> O pneumococo causa pneumonia típica hiperaguda com febre alta e condensação lobar com broncograma aéreo;",
             "<strong>Por que a C está INCORRETA?</strong> O estafilococo produz quadro agudo grave necrotizante em lactentes, com rápida prostração e empiema;",
             "<strong>Por que as alternativas D e E estão INCORRETAS?</strong> <em>Klebsiella</em> causa pneumonia em etilistas/imunodeprimidos e influenza causa síndrome gripal hiperaguda nos primeiros 2 a 3 dias."
@@ -1244,7 +1248,7 @@
         ],
         [
           "p",
-          "Menino de 3 anos e 8 meses foi internado há 48 horas em enfermaria de pediatria com diagnóstico de Pneumonia Adquirida na Comunidade, recebendo Ampicilina venosa (150 mg/kg/dia). A equipe médica de plantão é chamada pela enfermagem porque o paciente mantém picos febris de 39,4°C e aumento do cansaço respiratório. Ao exame físico: paciente irritado, com taquipneia (FR = 50 irpm), tiragem intercostal e subcostal e <strong>macicez acentuada à percussão de todo o terço inferior do hemitórax direito, com murmúrio vesicular abolido no mesmo sítio</strong>. Foi realizada toracocentese diagnóstica imediata. Assinale a alternativa que apresenta o conjunto de achados laboratoriais do líquido pleural que indica <strong>diagnóstico de EMPIEMA PLEURAL e conduta de DRENAGEM TORÁCICA TUBULAR IMEDIATA EM SELO D'ÁGUA</strong>:"
+          "Menino de 3 anos e 8 meses foi internado há 48 horas em enfermaria de pediatria com diagnóstico de Pneumonia Adquirida na Comunidade, recebendo Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) venosa (150 mg/kg/dia). A equipe médica de plantão é chamada pela enfermagem porque o paciente mantém picos febris de 39,4°C e aumento do cansaço respiratório. Ao exame físico: paciente irritado, com taquipneia (FR = 50 irpm), tiragem intercostal e subcostal e <strong>macicez acentuada à percussão de todo o terço inferior do hemitórax direito, com murmúrio vesicular abolido no mesmo sítio</strong>. Foi realizada toracocentese diagnóstica imediata. Assinale a alternativa que apresenta o conjunto de achados laboratoriais do líquido pleural que indica <strong>diagnóstico de EMPIEMA PLEURAL e conduta de DRENAGEM TORÁCICA TUBULAR IMEDIATA EM SELO D'ÁGUA</strong>:"
         ],
         [
           "p",
@@ -1301,19 +1305,19 @@
         ],
         [
           "p",
-          "<strong>B)</strong> <em>Staphylococcus aureus</em> produtor de Leucocidina de Panton-Valentine (PVL); associação de Oxacilina ou Vancomicina com Clindamicina intravenosa."
+          "<strong>B)</strong> <em>Staphylococcus aureus</em> produtor de Leucocidina de Panton-Valentine (PVL); associação de Oxacilina (2 g EV a cada 4 horas) ou Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) com Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas) intravenosa."
         ],
         [
           "p",
-          "<strong>C)</strong> <em>Mycoplasma pneumoniae</em>; Doxiciclina oral associada a corticoterapia sistêmica."
+          "<strong>C)</strong> <em>Mycoplasma pneumoniae</em>; Doxiciclina (100 mg VO a cada 12 horas) oral associada a corticoterapia sistêmica."
         ],
         [
           "p",
-          "<strong>D)</strong> <em>Pseudomonas aeruginosa</em>; Ciprofloxacino oral associado a tobramicina inalatória."
+          "<strong>D)</strong> <em>Pseudomonas aeruginosa</em>; Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h) oral associado a tobramicina inalatória."
         ],
         [
           "p",
-          "<strong>E)</strong> <em>Haemophilus influenzae</em> tipo b; Ampicilina venosa em monoterapia."
+          "<strong>E)</strong> <em>Haemophilus influenzae</em> tipo b; Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) venosa em monoterapia."
         ],
         [
           "p",
@@ -1330,7 +1334,7 @@
         [
           "u",
           [
-            "<strong>Por que a alternativa B está CORRETA?</strong> A associação de pneumonia rapidamente destrutiva em lactente, presença de <strong>pneumatoceles, pneumotórax espontâneo e histórico familiar de infecções cutâneas purulentas (furunculose)</strong> é a clássica assinatura do <strong><em>Staphylococcus aureus</em></strong> (especialmente cepas comunitárias produtoras de Leucocidina de Panton-Valentine - PVL). A adição de <strong>Clindamicina</strong> é preconizada pelas diretrizes porque seu mecanismo de inibição da subunidade ribossômica 50S bloqueia a síntese proteica e <strong>suprime a produção da toxina PVL</strong>, reduzindo a destruição tecidual pulmonar;",
+            "<strong>Por que a alternativa B está CORRETA?</strong> A associação de pneumonia com agilidade destrutiva em lactente, presença de <strong>pneumatoceles, pneumotórax espontâneo e histórico familiar de infecções cutâneas purulentas (furunculose)</strong> é a clássica assinatura do <strong><em>Staphylococcus aureus</em></strong> (especialmente cepas comunitárias produtoras de Leucocidina de Panton-Valentine - PVL). A adição de <strong>Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas)</strong> é preconizada pelas diretrizes porque seu mecanismo de inibição da subunidade ribossômica 50S bloqueia a síntese proteica e <strong>suprime a produção da toxina PVL</strong>, reduzindo a destruição tecidual pulmonar;",
             "<strong>Por que as alternativas A, C, D e E estão INCORRETAS?</strong> O pneumococo comum, o <em>Mycoplasma</em>, a <em>Pseudomonas</em> e o Hib não são a etiologia típica de pneumatoceles com pneumotórax e história de furunculose de contato."
           ]
         ],
@@ -1408,17 +1412,17 @@
             "2 a 11 meses: FR &ge; 50 irpm;",
             "1 a 4 anos (12 a 59 meses): FR &ge; 40 irpm;",
             "5 anos ou mais: FR &ge; 20-30 irpm.",
-            "<strong>Estratificação de Gravidade AIDPI:</strong>\n    <ul>\n      <li>Pneumonia (Ambulatorial): Taquipneia sem tiragem subcostal e sem sinais de perigo. Tratar com <strong>Amoxicilina oral (50 a 90 mg/kg/dia) por 5 a 7 dias</strong> com retorno obrigatório em 48 a 72 horas;",
-            "Pneumonia Grave: Presença de <strong>tiragem subcostal</strong> ou batimento de asas de nariz. <strong>Internação hospitalar obrigatória e Ampicilina venosa (150 a 200 mg/kg/dia)</strong>;",
-            "Pneumonia Muito Grave: Presença de sinais gerais de perigo (vômitos incoercíveis, convulsões, letargia/inconsciência, incapacidade de beber, estridor em repouso ou SpO2 &lt; 90-92%). UTI e Ceftriaxona + Oxacilina.",
-            "<strong>Lactente Menor de 2 Meses:</strong> Todo lactente &lt; 2 meses com tosse e taquipneia (&ge; 60 irpm) ou tiragem tem \"Doença Muito Grave / Sepse Possível\" no AIDPI. Internação hospitalar e Ampicilina + Gentamicina IV.",
+            "<strong>Estratificação de Gravidade AIDPI:</strong>\n    <ul>\n      <li>Pneumonia (Ambulatorial): Taquipneia sem tiragem subcostal e sem sinais de perigo. Tratar com <strong>Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral (50 a 90 mg/kg/dia) por 5 a 7 dias</strong> com retorno obrigatório em 48 a 72 horas;",
+            "Pneumonia Grave: Presença de <strong>tiragem subcostal</strong> ou batimento de asas de nariz. <strong>Internação hospitalar obrigatória e Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) venosa (150 a 200 mg/kg/dia)</strong>;",
+            "Pneumonia Muito Grave: Presença de sinais gerais de perigo (vômitos incoercíveis, convulsões, letargia/inconsciência, incapacidade de beber, estridor em repouso ou SpO2 &lt; 90-92%). UTI e Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) + Oxacilina (2 g EV a cada 4 horas).",
+            "<strong>Lactente Menor de 2 Meses:</strong> Todo lactente &lt; 2 meses com tosse e taquipneia (&ge; 60 irpm) ou tiragem tem \"Doença Muito Grave / Sepse Possível\" no AIDPI. Internação hospitalar e Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) + Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas) IV.",
             "<strong>Radiografia de Tórax:</strong> NÃO é necessária de rotina para casos leves ambulatoriais na Atenção Primária. Obrigatória apenas para internados, piora clínica ou suspeita de complicações.",
-            "<strong>Pneumonia Afebril do Lactente (<em>Chlamydia trachomatis</em>):</strong> Lactente de 1 a 3 meses, parto vaginal, história prévia de conjuntivite neonatal, tosse em staccato, <strong>ausência completa de febre</strong>, estertores finos difusos, infiltrado intersticial e <strong>eosinofilia periférica maciça (&gt; 1.000/mm³)</strong>. Tratar com <strong>Azitromicina oral por 5 dias</strong> e tratar os pais.",
-            "<strong>Pneumonias Atípicas em Escolares (<em>Mycoplasma pneumoniae</em>):</strong> Crianças &gt; 5 anos, tosse seca intratável e arrastada, cefaleia, dissociação clínico-radiológica e manifestações extrapulmonares (eritema multiforme, anemia hemolítica por crioaglutininas). Tratar com macrolídeos (Azitromicina ou Claritromicina). Betalactâmicos não funcionam porque o <em>Mycoplasma</em> não tem parede celular!",
+            "<strong>Pneumonia Afebril do Lactente (<em>Chlamydia trachomatis</em>):</strong> Lactente de 1 a 3 meses, parto vaginal, história prévia de conjuntivite neonatal, tosse em staccato, <strong>ausência completa de febre</strong>, estertores finos difusos, infiltrado intersticial e <strong>eosinofilia periférica maciça (&gt; 1.000/mm³)</strong>. Tratar com <strong>Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) oral por 5 dias</strong> e tratar os pais.",
+            "<strong>Pneumonias Atípicas em Escolares (<em>Mycoplasma pneumoniae</em>):</strong> Crianças &gt; 5 anos, tosse seca intratável e arrastada, cefaleia, dissociação clínico-radiológica e manifestações extrapulmonares (eritema multiforme, anemia hemolítica por crioaglutininas). Tratar com macrolídeos (Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) ou Claritromicina (500 mg VO a cada 12 horas)). Betalactâmicos não funcionam porque o <em>Mycoplasma</em> não tem parede celular!",
             "<strong>Agente Bacteriano Mais Comum:</strong> O <strong><em>Streptococcus pneumoniae</em> (Pneumococo)</strong> é o agente bacteriano típico mais comum em todas as faixas etárias acima do período neonatal, causando clássica condensação lobar com broncograma aéreo.",
             "<strong>Derrame Parapneumônico / Empiema:</strong> Suspeitar sempre que houver <strong>persistência de febre após 48 a 72 horas de antibiótico adequado</strong> associada a macicez e murmúrio abolido. Avaliar com USG e toracocentese diagnóstica.",
-            "<strong>Critérios de Empiema e Conduta:</strong> Pus franco, <strong>pH &lt; 7,20, glicose &lt; 40 mg/dL</strong>, DHL &gt; 1.000 e bactérias no Gram/cultura definem empiema. Conduta: <strong>Drenagem torácica tubular imediata em selo d'água</strong> e Ceftriaxona + Oxacilina IV; indicar videotoracoscopia precoce (VATS) se septações complexas.",
-            "<strong>Pneumonia Estafilocócica (<em>S. aureus</em> PVL):</strong> Evolução fulminante, necrose tecidual, <strong>pneumatoceles, pneumotórax espontâneo e empiema espesso</strong>. Tratar com Oxacilina/Vancomicina associada a <strong>Clindamicina IV</strong> (efeito antitoxina inibidor da leucocidina PVL). Pneumatoceles não devem ser puncionadas de rotina!"
+            "<strong>Critérios de Empiema e Conduta:</strong> Pus franco, <strong>pH &lt; 7,20, glicose &lt; 40 mg/dL</strong>, DHL &gt; 1.000 e bactérias no Gram/cultura definem empiema. Conduta: <strong>Drenagem torácica tubular imediata em selo d'água</strong> e Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) + Oxacilina (2 g EV a cada 4 horas) IV; indicar videotoracoscopia precoce (VATS) se septações complexas.",
+            "<strong>Pneumonia Estafilocócica (<em>S. aureus</em> PVL):</strong> Evolução fulminante, necrose tecidual, <strong>pneumatoceles, pneumotórax espontâneo e empiema espesso</strong>. Tratar com Oxacilina (2 g EV a cada 4 horas)/Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) associada a <strong>Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas) IV</strong> (efeito antitoxina inibidor da leucocidina PVL). Pneumatoceles não devem ser puncionadas de rotina!"
           ]
         ]
       ]
@@ -1429,7 +1433,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Pediatria. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1439,8 +1468,7 @@
             "<a href=\"https://www.who.int/publications/i/item/9789241507812\" target=\"_blank\" rel=\"noopener noreferrer\">World Health Organization (WHO) — Revised WHO classification and treatment of childhood pneumonia at health facilities</a>",
             "<a href=\"https://www.idsociety.org/practice-guideline/community-acquired-pneumonia-in-infants-and-children/\" target=\"_blank\" rel=\"noopener noreferrer\">Infectious Diseases Society of America (IDSA) / Pediatric Infectious Diseases Society (PIDS) — Clinical Practice Guideline by the PIDS and IDSA: The Management of Community-Acquired Pneumonia in Infants and Children Older Than 3 Months of Age</a>",
             "<a href=\"https://www.brit-thoracic.org.uk/quality-improvement/guidelines/children-community-acquired-pneumonia/\" target=\"_blank\" rel=\"noopener noreferrer\">British Thoracic Society (BTS) — Guidelines for the Management of Community Acquired Pneumonia in Children: update 2011 (Thorax)</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

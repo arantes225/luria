@@ -2,8 +2,8 @@
   "v": 2,
   "s": "soap-e-registro-clinico-na-atencao-primaria",
   "t": "SOAP e Registro Clínico na Atenção Primária",
-  "p": "SOAP e Registro Clínico na Atenção Primária — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "p": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Medicina de Família e Comunidade",
   "m": "Medicina de Família e Comunidade",
   "h": [
@@ -175,6 +175,10 @@
         [
           "p",
           "O campo <strong>Subjetivo (S)</strong> compreende toda e qualquer informação relatada verbalmente pelo paciente, por seu acompanhante/familiar ou colhida pelo profissional por meio da anamnese durante a entrevista clínica. É a narrativa histórica e fenomenológica sob a ótica de quem vivencia o problema."
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina de Família e Comunidade, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "p",
@@ -607,7 +611,7 @@
         [
           "o",
           [
-            "<strong>Alertas de Segurança e Alergias / Reações Adversas a Medicamentos (RAM):</strong> Destacados no topo, diferenciando alergia imunológica verdadeira (ex: anafilaxia ou angioedema por dipirona/penicilina) de intolerância ou efeito colateral farmacodinâmico previsível (ex: tosse seca por enalapril, epigastralgia por AINE).",
+            "<strong>Alertas de Segurança e Alergias / Reações Adversas a Medicamentos (RAM):</strong> Destacados no topo, diferenciando alergia imunológica verdadeira (ex: anafilaxia ou angioedema por Dipirona (1 g EV ou VO a cada 6 horas em adultos, ou 15 a 25 mg/kg/dose até 4x/dia em crianças)/penicilina) de intolerância ou efeito colateral farmacodinâmico previsível (ex: tosse seca por enalapril, epigastralgia por AINE).",
             "<strong>Lista de Problemas Ativos (Crônicos e Agudos Relevantes):</strong> Problemas que demandam ação contínua, vigilância ou tratamento atual. Cada problema recebe um número identificador ou código CIAP-2/CID-10 e sua data de início/identificação.",
             "<strong>Lista de Problemas Latentes / Inativos / Resolvidos:</strong> Condições passadas já curadas ou cirurgias prévias que não requerem conduta ativa hoje, mas cujo conhecimento pode impactar decisões futuras (ex: <em>\"Nefrectomia unilateral esquerda pós-trauma em 2012\"</em> — essencial para evitar prescrição de fármacos nefrotóxicos; <em>\"Episódio depressivo grave pós-parto em 2018\"</em>; <em>\"Sífilis secundária tratada adequadamente em 2021 com VDRL cicatricial 1:2\"</em>).",
             "<strong>Lista de Medicamentos de Uso Contínuo e Prescrições Vigentes:</strong> Com dose exata, posologia real em uso pelo paciente e data da última reconciliação medicamentosa.",
@@ -873,7 +877,7 @@
           [
             "<em>Plano Terapêutico e Desprescrição:</em>\n        <ul>\n          <li>Para Problemas #1 e #2: Mantidos Losartana potássica 50 mg VO de 12/12h, Metformina 850 mg VO no almoço e jantar, e Sinvastatina 20 mg VO à noite (renovada receita contínua por 6 meses — <code>K50</code>, <code>T50</code>).",
             "Para Problema #3: <strong>Suspenso imediatamente o Diclofenaco sódico</strong> (desprescrição de AINE por alto risco gastrointestinal, renal e pressórico em idosa hipertensa e diabética). Prescrito Omeprazol 20 mg VO em jejum pela manhã por 4 semanas (<code>D50</code>) e medidas antirrefluxo (elevar cabeceira da cama, evitar deitar-se logo após o jantar).",
-            "Para Problema #4 e #5: Prescrito Paracetamol 500 mg a 750 mg VO se dor aguda eventual (máximo 6/6h) e compressas mornas locais; encaminhada para grupo de fortalecimento muscular de quadríceps e hidroginástica com fisioterapeuta da eMulti (<code>L68</code>)."
+            "Para Problema #4 e #5: Prescrito Paracetamol (500 a 1.000 mg VO a cada 6 horas, respeitando dose máxima de 4 g/dia) 500 mg a 750 mg VO se dor aguda eventual (máximo 6/6h) e compressas mornas locais; encaminhada para grupo de fortalecimento muscular de quadríceps e hidroginástica com fisioterapeuta da eMulti (<code>L68</code>)."
           ]
         ],
         [
@@ -929,7 +933,7 @@
           "u",
           [
             "<em>Plano Diagnóstico e Epidemiológico:</em> Solicitado Teste Rápido de Antígeno NS1 para Dengue na unidade e Hemograma completo com contagem de plaquetas (<code>A34</code>). Realizada notificação compulsória de caso suspeito de Dengue no SINAN e acionada equipe de vigilância/ACE para bloqueio de foco vetorial no quarteirão.",
-            "<em>Plano Terapêutico (Manejo Dengue Grupo A — MS):</em> Prescrita hidratação oral vigorosa calculada pelo peso (60 mL/kg/dia × 70 kg = <strong>4.200 mL/dia</strong>, sendo 1/3 com sais de reidratação oral [1,4 L] e 2/3 com água, sucos, água de coco e chás [2,8 L]). Prescrito Dipirona 500 mg a 1 g VO de 6/6h se dor ou febre (<code>A50</code>).",
+            "<em>Plano Terapêutico (Manejo Dengue Grupo A — MS):</em> Prescrita hidratação oral vigorosa calculada pelo peso (60 mL/kg/dia × 70 kg = <strong>4.200 mL/dia</strong>, sendo 1/3 com sais de reidratação oral [1,4 L] e 2/3 com água, sucos, água de coco e chás [2,8 L]). Prescrito Dipirona (1 g EV ou VO a cada 6 horas em adultos, ou 15 a 25 mg/kg/dose até 4x/dia em crianças) 500 mg a 1 g VO de 6/6h se dor ou febre (<code>A50</code>).",
             "<em>Plano Educacional e Administrativo:</em> Orientado enfaticamente a <strong>não utilizar ácido acetilsalicílico (AAS) nem anti-inflamatórios não esteroidais (ibuprofeno, diclofenaco, nimesulida, cetoprofeno)</strong> pelo risco hemorrágico. Entregue Cartão de Acompanhamento da Dengue preenchido. Explicada a <strong>Rede de Segurança (<em>Safety Netting</em>)</strong>: atenção máxima no período de defervescência da febre (entre o 3º e o 7º dia de doença) para sinais de alarme (dor abdominal intensa e contínua, vômitos persistentes, tontura ao levantar, sangramentos, prostração extrema), devendo retornar imediatamente se surgirem. Emitido atestado médico de 3 dias (<code>A62</code>) com reavaliação clínica programada na UBS em 48 horas (ou no dia de queda da febre)."
           ]
         ],
@@ -1395,7 +1399,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina de Família e Comunidade. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1404,8 +1433,7 @@
             "<a href=\"https://www.sbmfc.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">ORGANIZAÇÃO MUNDIAL DE MÉDICOS DE FAMÍLIA (WONCA). Classificação Internacional de Atenção Primária (CIAP-2 / ICPC-2). 2ª ed. Florianópolis: SBMFC, 2010.</a>",
             "<a href=\"https://www.sbmfc.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">GUSSO, G.; LOPES, J. M. C.; DIAS, L. C. Tratado de Medicina de Família e Comunidade: Princípios, Formação e Prática. 2ª ed. Porto Alegre: Artmed, 2019.</a>",
             "<a href=\"https://sisaps.saude.gov.br/esus/\" target=\"_blank\" rel=\"noopener noreferrer\">BRASIL. Ministério da Saúde. Manual de Uso do Sistema com Prontuário Eletrônico do Cidadão PEC e-SUS APS. Brasília: MS, 2024/2026.</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

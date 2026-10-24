@@ -504,8 +504,8 @@
           "</div>\r\n            <div class=\"book-mini\"><strong>Gestação gemelar</strong>"
         ],
         [
-          "p",
-          "Não é contraindicação absoluta; depende de apresentação, corionicidade e contexto."
+          "raw",
+          "<div class=\"book-callout-warning\"><strong class=\"callout-title\">⚠️ Alerta de Segurança — WARNING</strong><p>Não é contraindicação absoluta; depende de apresentação, corionicidade e contexto.</p></div>"
         ],
         [
           "p",
@@ -711,7 +711,7 @@
           "u",
           [
             "taquissistolia e alteração da FCF;",
-            "hipotensão se administrada rapidamente em bolus;",
+            "hipotensão se administrada no intervalo de bolus;",
             "retenção hídrica/hiponatremia em infusões prolongadas com grandes volumes hipotônicos, por efeito semelhante à vasopressina."
           ]
         ],
@@ -835,7 +835,7 @@
         ],
         [
           "p",
-          "Indução farmacológica deve ocorrer em ambiente capaz de avaliar mãe e feto e responder rapidamente a complicações. Mulheres recebendo ocitocina ou prostaglandinas não devem ficar sem supervisão adequada."
+          "Indução farmacológica deve ocorrer em ambiente capaz de avaliar mãe e feto e responder com agilidade a complicações. Mulheres recebendo ocitocina ou prostaglandinas não devem ficar sem supervisão adequada."
         ],
         [
           "p",
@@ -1256,7 +1256,7 @@
             [
               "Febre, dor uterina e sinais de infecção",
               "Possível infecção intra-amniótica em membranas rotas ou íntegras",
-              "Investigar e tratar rapidamente, com plano obstétrico individualizado."
+              "Investigar e tratar com agilidade, com plano obstétrico individualizado."
             ],
             [
               "Sangramento e suspeita de descolamento/placenta prévia",
@@ -1852,9 +1852,9 @@
           "o",
           [
             "A) O antibiótico deve ser iniciado no momento da inserção da sonda de Foley intracervical, mantendo-se até o puerpério.",
-            "B) A profilaxia com Penicilina Cristalina intravenosa (ou ampicilina) deve ser iniciada no momento em que a paciente entra em trabalho de parto ativo ou logo após a rotura das membranas ovulares, mantendo-se a cada 4 horas até o clampeamento do cordão.",
+            "B) A profilaxia com Penicilina Cristalina intravenosa (ou Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas)) deve ser iniciada no momento em que a paciente entra em trabalho de parto ativo ou logo após a rotura das membranas ovulares, mantendo-se a cada 4 horas até o clampeamento do cordão.",
             "C) A presença de SGB contraindica formalmente a indução do trabalho de parto, exigindo cesariana programada.",
-            "D) Deve-se prescrever azitromicina oral em dose única 7 dias antes da indução programada.",
+            "D) Deve-se prescrever Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) oral em dose única 7 dias antes da indução programada.",
             "E) Não há necessidade de profilaxia caso a indução seja realizada com métodos mecânicos."
           ]
         ],
@@ -2065,35 +2065,41 @@
       [
         [
           "2",
-          "Referências"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
-          "p",
-          "1. Organização Mundial da Saúde (OMS). <em>WHO recommendations for induction of labour</em>. Genebra: World Health Organization, 2011 (atualizado 2022). Disponível em: https://www.who.int/publications/i/item/9789241501156"
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
-          "p",
-          "2. Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). <em>Indução do Trabalho de Parto</em>. Manual de Orientação FEBRASGO, São Paulo, 2023."
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
         ],
         [
-          "p",
-          "3. American College of Obstetricians and Gynecologists (ACOG). <em>Practice Bulletin No. 107: Induction of Labor</em>. Obstet Gynecol, 2009 (reaffirmed 2023); 114(2):386-397. https://doi.org/10.1097/AOG.0b013e3181b48ef5"
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
         ],
         [
-          "p",
-          "4. Grobman WA, Rice MM, Reddy UM, et al. <em>Labor Induction versus Expectant Management in Low-Risk Nulliparous Women (The ARRIVE Trial)</em>. N Engl J Med, 2018; 379(6):513-523. https://doi.org/10.1056/NEJMoa1800566"
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
         ],
         [
-          "p",
-          "5. Ministério da Saúde (Brasil). <em>Diretrizes Nacionais de Assistência ao Parto Normal</em>. Brasília: Ministério da Saúde, 2022."
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
-          "p",
-          "6. International Federation of Gynecology and Obstetrics (FIGO). <em>FIGO's updated recommendations for misoprostol used alone in gynecology and obstetrics</em>. Int J Gynaecol Obstet, 2017; 138(1):88-97. https://doi.org/10.1002/ijgo.12181"
-        ],
-        [
-          "p",
-          "7. Bishop EH. <em>Pelvic scoring for elective induction</em>. Obstet Gynecol, 1964; 24:266-268."
+          "o",
+          [
+            "1. Organização Mundial da Saúde (OMS). <em>WHO recommendations for induction of labour</em>. Genebra: World Health Organization, 2011 (atualizado 2022). Disponível em: https://www.who.int/publications/i/item/9789241501156",
+            "3. American College of Obstetricians and Gynecologists (ACOG). <em>Practice Bulletin No. 107: Induction of Labor</em>. Obstet Gynecol, 2009 (reaffirmed 2023); 114(2):386-397. https://doi.org/10.1097/AOG.0b013e3181b48ef5",
+            "4. Grobman WA, Rice MM, Reddy UM, et al. <em>Labor Induction versus Expectant Management in Low-Risk Nulliparous Women (The ARRIVE Trial)</em>. N Engl J Med, 2018; 379(6):513-523. https://doi.org/10.1056/NEJMoa1800566",
+            "6. International Federation of Gynecology and Obstetrics (FIGO). <em>FIGO's updated recommendations for misoprostol used alone in gynecology and obstetrics</em>. Int J Gynaecol Obstet, 2017; 138(1):88-97. https://doi.org/10.1002/ijgo.12181"
+          ]
         ]
       ]
     ]

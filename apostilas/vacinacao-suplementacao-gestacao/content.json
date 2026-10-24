@@ -161,9 +161,7 @@
         [
           "p",
           "Políticas públicas podem atualizar a elegibilidade ou o produto sem mudar a fisiologia da doença. Por isso, explicar primeiro mecanismo e objetivo de cada intervenção permite que o aluno compreenda uma mudança futura de dose/semana sem decorar regra vazia. Após identificar o mecanismo, aplica-se a norma brasileira vigente. Quando um dispositivo ou apresentação comercial tem bula própria, ela não deve ser confundida com calendário de disponibilidade do SUS."
-        ],
-        "<p><strong>Caso de fixação:</strong> gestante sem registro vacinal confiável procura pré-natal no segundo trimestre. A conduta começa por reconstruir o histórico, verificar contraindicações e organizar as vacinas indicadas para a gestação e o puerpério conforme o calendário vigente. A resposta deve distinguir vacina recomendada durante a gestação, vacina adiada e vacina indicada para proteção do recém-nascido por estratégia materna.</p>",
-        "<p><strong>Caso de fixação:</strong> gestante sem registro vacinal confiável procura pré-natal no segundo trimestre. A conduta começa por reconstruir o histórico, verificar contraindicações e organizar as vacinas indicadas para a gestação e o puerpério conforme o calendário vigente. A resposta deve distinguir vacina recomendada durante a gestação, vacina adiada e vacina indicada para proteção do recém-nascido por estratégia materna.</p>"
+        ]
       ]
     ],
     [
@@ -177,6 +175,18 @@
         [
           "3",
           "Imunidade ativa, proteção passiva e cronologia"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Ferroceron.svg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Ferroceron.svg\" alt=\"Suplementação oral diária de ferro elementar e ácido fólico\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Suplementação oral diária de ferro elementar e ácido fólico</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AFerroceron.svg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">BattlePeasant ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Pregnant_women_vaccination.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Pregnant%20women%20vaccination.jpg\" alt=\"Administração de vacina intramuscular no deltoide da gestante\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Administração de vacina intramuscular no deltoide da gestante</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3APregnant%20women%20vaccination.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Arie Basuki ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "p",
@@ -760,7 +770,7 @@
         ],
         [
           "3",
-          "Quem precisa de avaliação especializada para dose alta"
+          "Quem precisa de avaliação especializada para dose máxima preconizada"
         ],
         [
           "p",
@@ -798,7 +808,7 @@
             ],
             [
               "Antecedente de defeito do tubo neural",
-              "Avaliação e dose alta por protocolo especializado",
+              "Avaliação e dose máxima preconizada por protocolo especializado",
               "Oferecer 400 µg sem avaliar risco de recorrência"
             ],
             [
@@ -844,7 +854,7 @@
         ],
         [
           "p",
-          "Antecedente de gestação afetada por anencefalia ou espinha bífida eleva risco de recorrência, e o planejamento precisa começar antes de engravidar. Protocolos frequentemente usam dose alta de ácido fólico (4–5 mg/dia) nesse contexto sob acompanhamento especializado, com início pré-concepcional e manutenção na janela de organogênese. A duração e o momento exato de redução para dose habitual devem seguir serviço de referência; não prolongar dose alta indefinidamente sem motivo clínico."
+          "Antecedente de gestação afetada por anencefalia ou espinha bífida eleva risco de recorrência, e o planejamento precisa começar antes de engravidar. Protocolos frequentemente usam dose plena recomendada de ácido fólico (4–5 mg/dia) nesse contexto sob acompanhamento especializado, com início pré-concepcional e manutenção na janela de organogênese. A duração e o momento exato de redução para dose habitual devem seguir serviço de referência; não prolongar dose máxima preconizada indefinidamente sem motivo clínico."
         ],
         [
           "p",
@@ -1454,7 +1464,7 @@
             "<strong>Q5.</strong> Carbonato de cálcio 1.250 mg contendo 500 mg de cálcio elementar deve ser usado, na recomendação brasileira de 1 g/dia, como: A) meio comprimido; B) um comprimido; C) dois comprimidos da apresentação indicada; D) cinco comprimidos. <strong>Gabarito C.</strong> A/B: insuficientes. C: correta, 2 x 500 mg elementares. D: excesso. <em>Revisão:</em> massa de sal diferente de massa elementar.",
             "<strong>Q6.</strong> Sobre ferro e cálcio, assinale a correta. A) devem sempre ser tomados no mesmo horário; B) cálcio elementar e sulfato ferroso são massas equivalentes; C) recomenda-se distância mínima de 2 horas entre suplementos no protocolo brasileiro; D) ingerir ferro junto com cálcio melhora absorção. <strong>Gabarito C.</strong> A/D: incorretas, interação prejudica absorção. B: incorreta, compostos distintos. C: correta. <em>Revisão:</em> adesão e farmacologia prática.",
             "<strong>Q7.</strong> A recomendação brasileira de ferro profilático na linha de cuidado é: A) 40 mg/dia de ferro elementar a partir da 20ª semana até 3 meses pós-parto/pós-aborto; B) 400 mg/dia de ferro elementar desde o 1º trimestre; C) 40 mg/dia de sal ferroso sem verificar elemento; D) não suplementar nenhuma gestante. <strong>Gabarito A.</strong> A: correta. B: dose excessiva. C: confunde massa do sal e elemento. D: contraria PNSF. <em>Revisão:</em> política brasileira versus OMS.",
-            "<strong>Q8.</strong> Para prevenir defeito do tubo neural em pessoa de baixo risco que planeja engravidar, indica-se usualmente: A) folato 400 µg/dia iniciado antes da concepção; B) vitamina A em dose alta; C) folato apenas depois de 20 semanas; D) 400 mg de folato. <strong>Gabarito A.</strong> A: correta. B: potencial teratogênico. C: muito tarde para janela principal. D: confusão de unidade por mil. <em>Revisão:</em> neurulação e prevenção periconcepcional.",
+            "<strong>Q8.</strong> Para prevenir defeito do tubo neural em pessoa de baixo risco que planeja engravidar, indica-se usualmente: A) folato 400 µg/dia iniciado antes da concepção; B) vitamina A em dose máxima preconizada; C) folato apenas depois de 20 semanas; D) 400 mg de folato. <strong>Gabarito A.</strong> A: correta. B: potencial teratogênico. C: muito tarde para janela principal. D: confusão de unidade por mil. <em>Revisão:</em> neurulação e prevenção periconcepcional.",
             "<strong>Q9.</strong> A gestante com Hb 8,5 g/dL e ferritina baixa, apesar de ferro profilático, precisa: A) apenas manutenção sem investigação; B) investigação de anemia e tratamento terapêutico individualizado; C) proibição de suplementos; D) trocar ferro por cálcio. <strong>Gabarito B.</strong> A: incorreta, anemia diagnosticada exige abordagem própria. B: correta. C/D: incorretas. <em>Revisão:</em> distinguir prevenção de tratamento.",
             "<strong>Q10.</strong> Febre amarela na gestação é: A) vacina de rotina em toda gestante; B) invariavelmente proibida até diante de surto; C) possível excepcionalmente se alto risco epidemiológico e benefício superar risco; D) equivalente a vacina inativada de influenza. <strong>Gabarito C.</strong> A: incorreta. B: incorreta, há exceção. C: correta. D: incorreta, vacina viva atenuada. <em>Revisão:</em> benefício-risco.",
             "<strong>Q11.</strong> Gestante recebeu vacina tríplice viral inadvertidamente antes de saber da gravidez. Conduta adequada: A) indicação obrigatória de interrupção; B) aconselhar, registrar e acompanhar sem interrupção automática apenas pela exposição; C) iniciar antibioticoterapia; D) aplicar reforço de tríplice viral na 20ª semana. <strong>Gabarito B.</strong> A: incorreta, não se indica aborto automático. B: correta. C: sem indicação. D: vacina viva não é rotina gestacional. <em>Revisão:</em> contraindicação prospectiva não equivale a dano fetal certo após exposição.",
@@ -1469,31 +1479,44 @@
       [
         [
           "2",
-          "Referências e limites de aplicação"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
-          "p",
-          "<strong>Ministério da Saúde (Brasil).</strong> Calendário Nacional de Vacinação — Gestante, 2026: https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-gestante . Calendário técnico da gestante: https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico/calendario-tecnico-nacional-de-vacinacao-gestante . Versões institucionais acessadas em outubro de 2026."
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
-          "p",
-          "<strong>Ministério da Saúde.</strong> Vacina vírus sincicial respiratório: perguntas frequentes, público-alvo/gestante e administração antes da 28ª semana: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/v/vsr/faq/publico-alvo-e-elegibilidade-vsr/quem-pode-receber-a-vacina ; https://www.gov.br/saude/pt-br/vacinacao/esavi/faq/faq/vacina-contra-virus-sincicial-respiratorio-vsr/uma-mulher-foi-vacinada-antes ."
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
         ],
         [
-          "p",
-          "<strong>Ministério da Saúde.</strong> Nota Técnica Conjunta nº 251/2024, orientações para suplementação universal de cálcio em gestantes, publicada no portal federal: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2024/nota-tecnica-conjunta-no-251-2024-coemm-cgesmu-dgci-saps-ms-e-cgan-deppros-saps-ms.pdf/@@download/file ."
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
         ],
         [
-          "p",
-          "<strong>Ministério da Saúde.</strong> Linha de Cuidado de Pré-natal de Baixo Risco, planejamento terapêutico e PNSF: https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/unidade-de-atencao-primaria/planejamento-terapeutico/ . A linha de cuidado é anterior ao calendário de vacinação de 2026; utilizar o PNI atual para imunização."
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
         ],
         [
-          "p",
-          "<strong>Organização Mundial da Saúde.</strong> Daily iron and folic acid supplementation during pregnancy (atualização 2024): https://www.who.int/tools/elena/interventions/daily-iron-pregnancy . Recomendação de 30–60 mg de ferro elementar + folato 400 µg; contextualizar com política brasileira."
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
-          "p",
-          "<strong>OMS.</strong> WHO Recommendations on Antenatal Care for a Positive Pregnancy Experience, suplementação de cálcio para contextos com baixa ingestão dietética; síntese em NCBI Bookshelf: https://www.ncbi.nlm.nih.gov/books/NBK409113/ ."
+          "o",
+          [
+            "<strong>Ministério da Saúde (Brasil).</strong> Calendário Nacional de Vacinação — Gestante, 2026: https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-gestante . Calendário técnico da gestante: https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico/calendario-tecnico-nacional-de-vacinacao-gestante . Versões institucionais acessadas em outubro de 2026.",
+            "<strong>Ministério da Saúde.</strong> Vacina vírus sincicial respiratório: perguntas frequentes, público-alvo/gestante e administração antes da 28ª semana: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/v/vsr/faq/publico-alvo-e-elegibilidade-vsr/quem-pode-receber-a-vacina ; https://www.gov.br/saude/pt-br/vacinacao/esavi/faq/faq/vacina-contra-virus-sincicial-respiratorio-vsr/uma-mulher-foi-vacinada-antes .",
+            "<strong>Ministério da Saúde.</strong> Nota Técnica Conjunta nº 251/2024, orientações para suplementação universal de cálcio em gestantes, publicada no portal federal: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2024/nota-tecnica-conjunta-no-251-2024-coemm-cgesmu-dgci-saps-ms-e-cgan-deppros-saps-ms.pdf/@@download/file .",
+            "<strong>Ministério da Saúde.</strong> Linha de Cuidado de Pré-natal de Baixo Risco, planejamento terapêutico e PNSF: https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/unidade-de-atencao-primaria/planejamento-terapeutico/ . A linha de cuidado é anterior ao calendário de vacinação de 2026; utilizar o PNI atual para imunização.",
+            "<strong>Organização Mundial da Saúde.</strong> Daily iron and folic acid supplementation during pregnancy (atualização 2024): https://www.who.int/tools/elena/interventions/daily-iron-pregnancy . Recomendação de 30–60 mg de ferro elementar + folato 400 µg; contextualizar com política brasileira.",
+            "<strong>OMS.</strong> WHO Recommendations on Antenatal Care for a Positive Pregnancy Experience, suplementação de cálcio para contextos com baixa ingestão dietética; síntese em NCBI Bookshelf: https://www.ncbi.nlm.nih.gov/books/NBK409113/ .",
+            "<strong>Status editorial:</strong> rascunho autoral do tema 019, separado dos detalhes gerais do pré-natal (tema 004) e de exames (tema 014). A priorização de particularidades do calendário 2026 impede cópia de esquemas antigos do material comparativo. Não considerar certificado antes de auditoria de conteúdo didático útil, validação de cada esquema/dose/questão, revisão médica e de política sanitária, imagens/diagramas aprovados e teste PWA/desktop. Sem criação de HTML, publicação ou merge."
+          ]
         ]
       ]
     ]

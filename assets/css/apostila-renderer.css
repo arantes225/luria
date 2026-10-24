@@ -26,8 +26,97 @@
     .book-badge{display:inline-flex;align-items:center;min-height:24px;padding:0 9px;border-radius:999px;background:rgba(255,255,255,.14);font-size:9px;letter-spacing:.08em;text-transform:uppercase}
     .book-hero h1{margin:12px 0 6px;font-size:30px;line-height:1.06;font-weight:600;color:#fff}.book-hero p{margin:0;color:rgba(255,255,255,.84);font-size:12px;line-height:1.5}.apostila-identity{position:relative;overflow:hidden}.apostila-identity:after{content:"";position:absolute;right:-70px;bottom:-100px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.06);pointer-events:none}.apostila-identity .book-meta-row{position:relative;z-index:1}
     .book-meta-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.book-meta-row span{padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.12);font-size:9px}
-    .book-section{padding:24px 26px;border:1px solid var(--border);border-radius:18px;background:var(--surface);box-shadow:0 8px 22px rgba(15,35,66,.04)}
-    .book-section h2{margin:0 0 14px;font-size:21px;line-height:1.18;font-weight:600;letter-spacing:-.012em}.book-section h3{margin:22px 0 9px;font-size:15.5px;line-height:1.25;font-weight:600}.book-section p,.book-section li{font-size:13.2px;line-height:1.68}.book-section p{margin:0 0 12px}.book-section ul{margin:9px 0;padding-left:22px}.book-section li+li{margin-top:5px}
+    /* --- PADRÃO EDITORIAL PREMIUM: ESPAÇAMENTO E TIPOGRAFIA DE LIVRO DIGITAL --- */
+.book-main {
+  display: grid;
+  gap: 28px;
+  min-width: 0;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.book-section {
+  padding: 36px 42px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: 0 10px 30px rgba(15, 35, 66, 0.05);
+  font-feature-settings: "kern" 1, "liga" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.book-section h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.018em;
+  color: var(--accent);
+  padding-bottom: 12px;
+  border-bottom: 2px solid color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
+.book-section h3 {
+  margin: 32px 0 14px;
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.book-section h4 {
+  margin: 24px 0 10px;
+  font-size: 15.5px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: var(--accent-strong);
+}
+
+.book-section p {
+  margin: 0 0 18px;
+  font-size: 15px;
+  line-height: 1.78;
+  color: var(--text);
+  letter-spacing: -0.003em;
+  max-width: 72ch; /* Limite ergonômico ótimo de caracteres por linha para leitura prolongada */
+}
+
+.book-section ul, .book-section ol {
+  margin: 14px 0 22px;
+  padding-left: 26px;
+}
+
+.book-section li {
+  font-size: 15px;
+  line-height: 1.74;
+  margin-bottom: 10px;
+  color: var(--text);
+  max-width: 72ch;
+}
+
+.book-section li+li {
+  margin-top: 8px;
+}
+
+@media(max-width: 768px) {
+  .book-section {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+  .book-section h2 {
+    font-size: 20px;
+  }
+  .book-section h3 {
+    font-size: 16.5px;
+  }
+  .book-section p, .book-section li {
+    font-size: 14.2px;
+    line-height: 1.7;
+  }
+}
+    
     .book-table{width:100%;border-collapse:collapse;margin-top:12px;font-size:12px}.book-table th,.book-table td{padding:10px 11px;border:1px solid var(--border);text-align:left;vertical-align:top;line-height:1.5}.book-table th{background:var(--surface-2);font-weight:600}.book-table td:first-child{font-weight:500}.book-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:13px}.book-mini{padding:15px 16px;border:1px solid color-mix(in srgb,var(--accent) 16%,var(--border));border-radius:14px;background:color-mix(in srgb,var(--accent) 3%,var(--surface-2))}.book-mini strong{display:block;margin-bottom:7px;font-size:12.8px;line-height:1.25;color:var(--text)}.book-mini p{margin:0!important;font-size:12px!important;line-height:1.58!important}.book-mini ul{margin:0!important;padding-left:18px!important}.book-mini li{font-size:12px!important;line-height:1.5!important}.mechanism-chain{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:13px}.mechanism-step{position:relative;padding:13px 10px;border-radius:12px;border:1px solid var(--border);background:var(--surface-2);text-align:center}.mechanism-step b{display:block;font-size:11.5px}.mechanism-step small{display:block;margin-top:5px;color:var(--muted);font-size:9.5px;line-height:1.4}.complication-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}.complication-card{padding:12px 14px;border:1px solid color-mix(in srgb,var(--accent) 15%,var(--border));border-radius:14px;background:color-mix(in srgb,var(--accent) 2.5%,var(--surface-2))}.complication-card strong{display:block;font-size:13px;line-height:1.25;margin-bottom:6px}.complication-card span{display:block;color:var(--muted);font-size:11.5px;line-height:1.58}.reference-list{margin:0;padding-left:20px}.reference-list li{margin-bottom:8px}.reference-list a{color:var(--accent);text-decoration:none}
     .book-callout{margin:18px 0;padding:19px 20px;border-radius:16px;background:color-mix(in srgb,var(--accent) 8%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));font-size:13.6px;line-height:1.62;box-shadow:0 6px 18px color-mix(in srgb,var(--accent) 7%,transparent)}
     .book-callout:not(.book-alert){position:relative;min-height:108px;padding:20px 22px 20px 102px}
@@ -139,20 +228,143 @@
 @media(max-width:900px){.book-grid-3{grid-template-columns:1fr 1fr}.algo-row{grid-template-columns:1fr}}
 @media(max-width:620px){.book-grid-3{grid-template-columns:1fr}}
 
-/* Padrão editorial de referência: resumo destacado, barras de capítulo,
-   leitura em duas colunas e tabelas acessíveis/roláveis. */
-.book-safety-note{display:flex;align-items:baseline;gap:8px;margin:0;padding:10px 14px;border-left:4px solid var(--accent);border-radius:0 10px 10px 0;background:color-mix(in srgb,var(--accent) 5%,var(--surface));color:var(--muted);font-size:11px;line-height:1.5}
-.book-safety-note strong{color:var(--accent);font-size:11px;white-space:nowrap}
-.book-section>h2{display:flex;align-items:center;gap:12px}
-.book-section>h2::after{content:"";height:10px;flex:1;min-width:30px;background:var(--accent);opacity:.92}
-.book-section>p:first-of-type{padding:12px 14px;border-left:4px solid var(--accent);border-radius:0 10px 10px 0;background:color-mix(in srgb,var(--accent) 4%,var(--surface-2))}
-.luria-table-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;scrollbar-width:thin;margin:14px 0 18px}
-.luria-table-scroll .book-table{min-width:590px;margin:0}
-.book-section>h2,.book-section>table,.book-section>.luria-table-scroll,.book-section>figure,.book-section>.luria-figure,.book-section>.book-callout,.book-section>.clinical-cards,.book-section>.book-grid-2,.book-section>.book-grid-3,.book-section>.flowchart{break-inside:avoid}
-@media(min-width:1100px){
-  .book-section:not(#referencias){column-count:2;column-gap:26px;column-fill:balance}
-  .book-section:not(#referencias)>h2,.book-section:not(#referencias)>p:first-of-type,.book-section:not(#referencias)>table,.book-section:not(#referencias)>.luria-table-scroll,.book-section:not(#referencias)>figure,.book-section:not(#referencias)>.luria-figure,.book-section:not(#referencias)>.book-callout,.book-section:not(#referencias)>.clinical-cards,.book-section:not(#referencias)>.book-grid-2,.book-section:not(#referencias)>.book-grid-3,.book-section:not(#referencias)>.flowchart{column-span:all}
-  .book-section:not(#referencias)>p,.book-section:not(#referencias)>ul,.book-section:not(#referencias)>ol,.book-section:not(#referencias)>h3,.book-section:not(#referencias)>h4{break-inside:avoid}
+/* --- PADRÃO DE CLAREZA AEROESPACIAL ASD-STE100 ADAPTADO À MEDICINA --- */
+.book-callout-warning{
+  margin:18px 0;
+  padding:16px 20px;
+  border-radius:14px;
+  background:color-mix(in srgb,var(--danger) 10%,var(--surface));
+  border-left:5px solid var(--danger);
+  border-top:1px solid color-mix(in srgb,var(--danger) 25%,var(--border));
+  border-right:1px solid color-mix(in srgb,var(--danger) 25%,var(--border));
+  border-bottom:1px solid color-mix(in srgb,var(--danger) 25%,var(--border));
+  box-shadow:0 4px 14px color-mix(in srgb,var(--danger) 10%,transparent);
 }
-@media(max-width:760px){.book-safety-note{display:block}.book-safety-note strong{display:block;margin-bottom:3px}.book-section>h2::after{min-width:16px;height:7px}.book-section>p:first-of-type{padding:10px 12px}}
+.book-callout-warning strong.callout-title{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:0 0 8px;
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+  color:var(--danger);
+}
+.book-callout-warning p{
+  margin:0;
+  font-size:13.6px;
+  line-height:1.6;
+  color:var(--text);
+}
 
+.book-callout-caution{
+  margin:18px 0;
+  padding:16px 20px;
+  border-radius:14px;
+  background:color-mix(in srgb,var(--gold) 12%,var(--surface));
+  border-left:5px solid var(--gold);
+  border-top:1px solid color-mix(in srgb,var(--gold) 28%,var(--border));
+  border-right:1px solid color-mix(in srgb,var(--gold) 28%,var(--border));
+  border-bottom:1px solid color-mix(in srgb,var(--gold) 28%,var(--border));
+  box-shadow:0 4px 14px color-mix(in srgb,var(--gold) 10%,transparent);
+}
+.book-callout-caution strong.callout-title{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:0 0 8px;
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+  color:#b8860b;
+}
+:root[data-theme="dark"] .book-callout-caution strong.callout-title{
+  color:var(--gold);
+}
+.book-callout-caution p{
+  margin:0;
+  font-size:13.6px;
+  line-height:1.6;
+  color:var(--text);
+}
+
+.book-callout-note{
+  margin:18px 0;
+  padding:16px 20px;
+  border-radius:14px;
+  background:color-mix(in srgb,var(--accent) 8%,var(--surface));
+  border-left:5px solid var(--accent);
+  border-top:1px solid color-mix(in srgb,var(--accent) 25%,var(--border));
+  border-right:1px solid color-mix(in srgb,var(--accent) 25%,var(--border));
+  border-bottom:1px solid color-mix(in srgb,var(--accent) 25%,var(--border));
+  box-shadow:0 4px 14px color-mix(in srgb,var(--accent) 8%,transparent);
+}
+.book-callout-note strong.callout-title{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:0 0 8px;
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+.book-callout-note p{
+  margin:0;
+  font-size:13.6px;
+  line-height:1.6;
+  color:var(--text);
+}
+
+
+
+/* --- PADRÃO EDITORIAL ESTRATÉGIA MED / LURIA OURO --- */
+.book-cai-na-prova {
+  margin: 22px 0;
+  padding: 20px 22px;
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--accent) 7%, var(--surface));
+  border: 1.5px solid color-mix(in srgb, var(--accent) 32%, var(--border));
+  box-shadow: 0 6px 20px rgba(16, 36, 62, 0.06);
+}
+.book-cai-na-prova .cai-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 13.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+.book-cai-na-prova .banca-tag {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+}
+.book-cai-na-prova .enunciado {
+  margin: 10px 0 14px;
+  font-size: 13.6px;
+  line-height: 1.62;
+  color: var(--text);
+}
+.book-cai-na-prova .comentario-gabarito {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--success) 9%, var(--surface));
+  border-left: 4px solid var(--success);
+  font-size: 13px;
+  line-height: 1.58;
+}
+.book-cai-na-prova .comentario-gabarito strong {
+  color: var(--success);
+}

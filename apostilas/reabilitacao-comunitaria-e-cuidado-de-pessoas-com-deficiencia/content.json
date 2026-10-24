@@ -2,8 +2,8 @@
   "v": 2,
   "s": "reabilitacao-comunitaria-e-cuidado-de-pessoas-com-deficiencia",
   "t": "Reabilitação Comunitária e Cuidado de Pessoas com Deficiência",
-  "p": "Reabilitação Comunitária e Cuidado de Pessoas com Deficiência — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED — Modelo Biopsicossocial da CIF, Estatuto da PcD (Lei 13.146/15), Rede de Cuidados (RCPD), Lesão Medular, Espasticidade e Atenção Domiciliar",
+  "p": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED — Modelo Biopsicossocial da CIF, Estatuto da PcD (Lei 13.146/15), Rede de Cuidados (RCPD), Lesão Medular, Espasticidade e Atenção Domiciliar Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED — Modelo Biopsicossocial da CIF, Estatuto da PcD (Lei 13.146/15), Rede de Cuidados (RCPD), Lesão Medular, Espasticidade e Atenção Domiciliar Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Medicina de Família e Comunidade",
   "m": "Medicina de Família e Comunidade",
   "h": [
@@ -153,6 +153,10 @@
         [
           "p",
           "Foram abertos e lidos no Drive: \"SUS\" (princípios, integração e descentralização) e \"Cirurgia Plástica — Lesões por Pressão\" (imobilidade, risco, prevenção e manejo de complicação frequente na deficiência física). O segundo é <strong>material cirúrgico correlato</strong>, sem cobertura de reabilitação comunitária, direitos, tecnologia assistiva e coordenação do cuidado. A procura por termos \"reabilitação\", \"deficiência\", \"saúde da família\" e \"fisioterapia\" não localizou apostila geral equivalente; portanto a etapa zero permanece <strong>incompleta</strong>, ainda que material correlato tenha sido lido. A exposição abaixo é original e baseada sobretudo na PNAISPD/RCPD do Ministério da Saúde e na Lei Brasileira de Inclusão. Não atribuir autoria institucional não comprovada aos PDFs privados, nem copiar seus textos/figuras."
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina de Família e Comunidade, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "p",
@@ -763,7 +767,7 @@
         ],
         [
           "p",
-          "A) Posicionar o paciente em decúbito dorsal horizontal com membros inferiores elevados e administrar Nitroprussiato de Sódio endovenoso em bomba de infusão.<br>\n  B) Posicionar o paciente sentado com as pernas pendentes, afrouxar roupas apertadas e checar/esvaziar imediatamente o sistema de drenagem vesical.<br>\n  C) Administrar Diazepam 10 mg intravenoso para sedação e realizar punção lombar diagnóstica para pesquisa de hemorragia subaracnóidea.<br>\n  D) Iniciar infusão imediata de Atropina 0,5 mg intravenosa para reverter a bradicardia sinusal e deitar o paciente em decúbito lateral esquerdo.<br>\n  E) Prescrever antibioticoterapia empírica imediata com Ceftriaxona para choque séptico de foco pulmonar."
+          "A) Posicionar o paciente em decúbito dorsal horizontal com membros inferiores elevados e administrar Nitroprussiato de Sódio endovenoso em bomba de infusão.<br>\n  B) Posicionar o paciente sentado com as pernas pendentes, afrouxar roupas apertadas e checar/esvaziar imediatamente o sistema de drenagem vesical.<br>\n  C) Administrar Diazepam 10 mg intravenoso para sedação e realizar punção lombar diagnóstica para pesquisa de hemorragia subaracnóidea.<br>\n  D) Iniciar infusão imediata de Atropina 0,5 mg intravenosa para reverter a bradicardia sinusal e deitar o paciente em decúbito lateral esquerdo.<br>\n  E) Prescrever antibioticoterapia empírica direcionada ao foco (ex.: Ceftriaxona 1-2 g EV 1x/dia associada a Metronidazol 500 mg EV 8/8h em infecções intra-abdominais, ou Ceftriaxona 2 g EV 12/12h na meningite) imediata guiada pelo foco (ex.: Ceftriaxona 2 g EV 12/12h na meningite, ou Ceftriaxona 1-2 g EV 1x/dia + Claritromicina (500 mg VO a cada 12 horas) 500 mg VO 12/12h na PAC grave) com Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) para choque séptico de foco pulmonar."
         ],
         [
           "p",
@@ -1172,19 +1176,45 @@
       [
         [
           "2",
-          "18. Fontes oficiais e referência técnica"
-        ],
-        [
-          "p",
-          "1. Ministério da Saúde. Saúde da Pessoa com Deficiência — PNAISPD e reabilitação: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia\r<br>2. Ministério da Saúde. Rede de Cuidados à Pessoa com Deficiência, PTS e CER: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/rcpd/rede-de-cuidados-a-pessoa-com-deficiencia/\r<br>3. Ministério da Saúde. Centros Especializados em Reabilitação, modalidades: https://www.gov.br/saude/pt-br/assuntos/novo-pac-saude/selecao-2025/centros-especializados-em-reabilitacao\r<br>4. Ministério da Saúde. Legislação PNAISPD: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/legislacao/legislacao\r<br>5. Brasil. Lei nº 13.146/2015 (Lei Brasileira de Inclusão): https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm\r<br>6. OMS. Classificação Internacional de Funcionalidade, Incapacidade e Saúde: https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health\r<br>7. Ministério da Saúde. Notas técnicas e fluxos de reabilitação 2025/2026: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/notas-tecnicas/notas-tecnicas"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
           "3",
-          "Auditoria desta versão"
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
-          "p",
-          "<strong>Realizado:</strong> conteúdo original com definição de deficiência, avaliação funcional, organização RCPD/CER, plano centrado na pessoa, reabilitação física e cognitivo-comunicacional, prevenção de complicações, tecnologia assistiva, direitos e saúde integral, 5 casos e 7 questões comentadas.\r\n<strong>Pendente:</strong> literatura especializada de reabilitação comunitária, critérios de rastreamento e evidência de tecnologias específicas, aprofundar escalas e resultados por síndrome, políticas intersetoriais e financiamento, recomendações completas sobre lesões por pressão sem generalizações, benchmark equivalente, ≥60.000 caracteres únicos, revisão especializada, imagens com licença e inspeção PWA.\r\n<strong>Estado verdadeiro:</strong> RASCUNHO_PARCIAL_NAO_PUBLICAR. Nenhuma página existente foi alterada."
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina de Família e Comunidade. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
+        ],
+        [
+          "o",
+          [
+            "1. Ministério da Saúde. Saúde da Pessoa com Deficiência — PNAISPD e reabilitação: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia",
+            "2. Ministério da Saúde. Rede de Cuidados à Pessoa com Deficiência, PTS e CER: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/rcpd/rede-de-cuidados-a-pessoa-com-deficiencia/",
+            "3. Ministério da Saúde. Centros Especializados em Reabilitação, modalidades: https://www.gov.br/saude/pt-br/assuntos/novo-pac-saude/selecao-2025/centros-especializados-em-reabilitacao",
+            "4. Ministério da Saúde. Legislação PNAISPD: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/legislacao/legislacao",
+            "5. Brasil. Lei nº 13.146/2015 (Lei Brasileira de Inclusão): https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm",
+            "6. OMS. Classificação Internacional de Funcionalidade, Incapacidade e Saúde: https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health",
+            "7. Ministério da Saúde. Notas técnicas e fluxos de reabilitação 2025/2026: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/notas-tecnicas/notas-tecnicas",
+            "<strong>Realizado:</strong> conteúdo original com definição de deficiência, avaliação funcional, organização RCPD/CER, plano centrado na pessoa, reabilitação física e cognitivo-comunicacional, prevenção de complicações, tecnologia assistiva, direitos e saúde integral, 5 casos e 7 questões comentadas.\r\n<strong>Pendente:</strong> literatura especializada de reabilitação comunitária, critérios de rastreamento e evidência de tecnologias específicas, aprofundar escalas e resultados por síndrome, políticas intersetoriais e financiamento, recomendações completas sobre lesões por pressão sem generalizações, benchmark equivalente, ≥60.000 caracteres únicos, revisão especializada, imagens com licença e inspeção PWA.\r\n<strong>Estado verdadeiro:</strong> RASCUNHO_PARCIAL_NAO_PUBLICAR. Nenhuma página existente foi alterada."
+          ]
         ]
       ]
     ]

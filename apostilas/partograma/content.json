@@ -134,6 +134,10 @@
           "O Grid Central: Eixo Vertical e Eixo Horizontal"
         ],
         [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "p",
           "O coração do partograma reside no gráfico cartesiano principal de dilatação e descida:"
         ],
@@ -718,7 +722,7 @@
         ],
         [
           "p",
-          "<strong>Discussão Diagnóstica e Conduta Passo a Passo:</strong> Trata-se do diagnóstico clássico de <strong>fase ativa prolongada</strong> por hipoatividade uterina secundária (progressão de apenas 2 cm em 4 horas, velocidade de 0,5 cm/h). Não há critérios para desproporção cefalopélvica, pois o colo continuou dilatando lentamente e a apresentação descendeu para -1 de De Lee sem cavalgamento ósseo. A conduta correta imediata consiste em: 1) Realizar amniotomia artificial com autorização da paciente para avaliar o aspecto do líquido e potencializar as contrações; 2) Se em 1 hora a dinâmica não alcançar 3 a 4 contrações em 10 minutos com duração &gt; 40 segundos, iniciar infusão de ocitocina em bomba de infusão contínua em dose baixa escalonada (2 mUI/min); 3) Proporcionar métodos não farmacológicos de alívio da dor e liberdade de posição. A indicação de cesariana nessa fase é absolutamente contraindicada e errônea."
+          "<strong>Discussão Diagnóstica e Conduta Passo a Passo:</strong> Trata-se do diagnóstico clássico de <strong>fase ativa prolongada</strong> por hipoatividade uterina secundária (progressão de apenas 2 cm em 4 horas, velocidade de 0,5 cm/h). Não há critérios para desproporção cefalopélvica, pois o colo continuou dilatando lentamente e a apresentação descendeu para -1 de De Lee sem cavalgamento ósseo. A conduta correta imediata consiste em: 1) Realizar amniotomia artificial com autorização da paciente para avaliar o aspecto do líquido e potencializar as contrações; 2) Se em 1 hora a dinâmica não alcançar 3 a 4 contrações em 10 minutos com duração &gt; 40 segundos, iniciar infusão de ocitocina em bomba de infusão contínua em dose inicial mínima escalonada (2 mUI/min); 3) Proporcionar métodos não farmacológicos de alívio da dor e liberdade de posição. A indicação de cesariana nessa fase é absolutamente contraindicada e errônea."
         ],
         [
           "3",
@@ -965,7 +969,7 @@
             "B) Amniotomia artificial com consentimento da paciente, estimulando a deambulação e métodos de alívio da dor, reavaliando a dinâmica em 1 a 2 horas para considerar ocitocina.",
             "C) Aplicação imediata de fórcipe de Simpson para abreviar o período de dilatação.",
             "D) Indução com misoprostol 50 mcg via oral a cada 4 horas.",
-            "E) Sedação materna com morfina intravenosa e repouso estrito em decúbito dorsal."
+            "E) Sedação materna com Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor) intravenosa e repouso estrito em decúbito dorsal."
           ]
         ],
         [
@@ -1110,35 +1114,41 @@
       [
         [
           "2",
-          "Referências"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
-          "p",
-          "1. Organização Mundial da Saúde (OMS). <em>WHO recommendations: intrapartum care for a positive childbirth experience</em>. Genebra: World Health Organization, 2018. Disponível em: https://www.who.int/publications/i/item/9789241550215"
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
-          "p",
-          "2. Organização Mundial da Saúde (OMS). <em>WHO Labour Care Guide: user's manual</em>. Genebra: World Health Organization, 2020. Disponível em: https://www.who.int/publications/i/item/9789240017566"
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
         ],
         [
-          "p",
-          "3. Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). <em>Diretrizes Nacionais de Assistência ao Parto Normal</em>. São Paulo: FEBRASGO, 2023."
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
         ],
         [
-          "p",
-          "4. Ministério da Saúde (Brasil). <em>Diretrizes Nacionais de Assistência ao Parto Normal</em>. Brasília: Ministério da Saúde, 2022."
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
         ],
         [
-          "p",
-          "5. American College of Obstetricians and Gynecologists (ACOG). <em>Obstetric Care Consensus No. 1: Safe prevention of the primary cesarean delivery</em>. Obstet Gynecol, 2014 (reaffirmed 2023); 123:693-711. https://doi.org/10.1097/01.AOG.00004444410.04111.1d"
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
-          "p",
-          "6. Zhang J, Landy HJ, Branch DW, et al. <em>Contemporary patterns of spontaneous labor with normal neonatal outcomes</em>. Obstet Gynecol, 2010; 116(6):1281-1287. https://doi.org/10.1097/AOG.0b013e3181fdd6f1"
-        ],
-        [
-          "p",
-          "7. Philpott RH, Castle WM. <em>Cervicographs in the management of labour in primigravidae</em>. J Obstet Gynaecol Br Commonw, 1972; 79(7):592-598."
+          "o",
+          [
+            "1. Organização Mundial da Saúde (OMS). <em>WHO recommendations: intrapartum care for a positive childbirth experience</em>. Genebra: World Health Organization, 2018. Disponível em: https://www.who.int/publications/i/item/9789241550215",
+            "2. Organização Mundial da Saúde (OMS). <em>WHO Labour Care Guide: user's manual</em>. Genebra: World Health Organization, 2020. Disponível em: https://www.who.int/publications/i/item/9789240017566",
+            "5. American College of Obstetricians and Gynecologists (ACOG). <em>Obstetric Care Consensus No. 1: Safe prevention of the primary cesarean delivery</em>. Obstet Gynecol, 2014 (reaffirmed 2023); 123:693-711. https://doi.org/10.1097/01.AOG.00004444410.04111.1d",
+            "6. Zhang J, Landy HJ, Branch DW, et al. <em>Contemporary patterns of spontaneous labor with normal neonatal outcomes</em>. Obstet Gynecol, 2010; 116(6):1281-1287. https://doi.org/10.1097/AOG.0b013e3181fdd6f1"
+          ]
         ]
       ]
     ]

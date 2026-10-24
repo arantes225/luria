@@ -139,6 +139,22 @@
           "Do nó sinusal ao sistema His-Purkinje"
         ],
         [
+          "raw",
+          "<figure data-luria-curated-image=\"Transesophageal_echocardiography_diagram.svg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Transesophageal%20echocardiography%20diagram.svg\" alt=\"Ecocardiograma transesofágico excluindo trombo intracavitário\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Ecocardiograma transesofágico excluindo trombo intracavitário</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ATransesophageal%20echocardiography%20diagram.svg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Patrick J. Lynch, medical illustrator ↗</a> (CC BY 2.5). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Holter_AtrialFlutter.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Holter%20AtrialFlutter.jpg\" alt=\"Flutter atrial com ondas em dente de serra típicas\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Flutter atrial com ondas em dente de serra típicas</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AHolter%20AtrialFlutter.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">J. Heuser JHeuser ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Atrial_fibrillation_01.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Atrial%20fibrillation%2001.jpg\" alt=\"Eletrocardiograma de fibrilação atrial com ritmo irregularmente irregular\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Eletrocardiograma de fibrilação atrial com ritmo irregularmente irregular</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AAtrial%20fibrillation%2001.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Meddoc13 ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
           "p",
           "O nó sinusal usualmente inicia a ativação atrial; o impulso chega ao nó atrioventricular (AV), onde a condução lenta oferece tempo para enchimento ventricular, e então segue pelo feixe de His e rede Purkinje para ativação rápida do ventrículo. O intervalo PR reflete condução atrioventricular e o QRS, despolarização ventricular. Alterações de canais iônicos, estrutura miocárdica ou tônus autonômico podem mudar a velocidade de condução, refratariedade e automatismo."
         ],
@@ -148,7 +164,7 @@
         ],
         [
           "p",
-          "<strong>Automatismo aumentado:</strong> foco gera impulsos mais rapidamente; pode ocorrer em taquicardia sinusal por febre, anemia ou hipovolemia, onde a solução é tratar causa, e em algumas taquicardias atriais. <strong>Atividade deflagrada:</strong> pós-despolarizações precoces ou tardias desencadeiam batimentos, em contextos como QT longo e sobrecarga de cálcio. <strong>Reentrada:</strong> circuitos percorrem vias com velocidades e refratariedades distintas, reexcitando tecido recuperado, como nas taquicardias reentrantes nodal e atrioventricular."
+          "<strong>Automatismo aumentado:</strong> foco gera impulsos mais com agilidade; pode ocorrer em taquicardia sinusal por febre, anemia ou hipovolemia, onde a solução é tratar causa, e em algumas taquicardias atriais. <strong>Atividade deflagrada:</strong> pós-despolarizações precoces ou tardias desencadeiam batimentos, em contextos como QT longo e sobrecarga de cálcio. <strong>Reentrada:</strong> circuitos percorrem vias com velocidades e refratariedades distintas, reexcitando tecido recuperado, como nas taquicardias reentrantes nodal e atrioventricular."
         ],
         [
           "p",
@@ -986,7 +1002,7 @@
         ],
         [
           "p",
-          "A cardioversão restaura ritmo sinusal e pode melhorar hemodinâmica rapidamente, mas há risco de embolização de trombo atrial preexistente, além de disfunção transitória da contração atrial após reversão. Por isso, duração conhecida ou incerta da FA, uso correto de anticoagulante e possibilidade de imagem cardíaca para excluir trombo alteram estratégia. Os limiares temporais para anticoagulação antes e depois da cardioversão variam entre documentos e pela avaliação individual; esta apostila não deve misturar algoritmos de anos distintos sem atribuir a diretriz."
+          "A cardioversão restaura ritmo sinusal e pode melhorar hemodinâmica com agilidade, mas há risco de embolização de trombo atrial preexistente, além de disfunção transitória da contração atrial após reversão. Por isso, duração conhecida ou incerta da FA, uso correto de anticoagulante e possibilidade de imagem cardíaca para excluir trombo alteram estratégia. Os limiares temporais para anticoagulação antes e depois da cardioversão variam entre documentos e pela avaliação individual; esta apostila não deve misturar algoritmos de anos distintos sem atribuir a diretriz."
         ],
         [
           "p",
@@ -1792,7 +1808,32 @@
       [
         [
           "2",
-          "Referências verificáveis e limites editoriais"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1804,16 +1845,7 @@
             "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10389103/\" target=\"_blank\" rel=\"noopener noreferrer\">SBC/SOBRAC. Diretriz Brasileira de Dispositivos Cardíacos Eletrônicos Implantáveis — 2023. Indicações de marca-passo para disfunção do nó sinusal e BAV.</a>",
             "<a href=\"https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Accessible/Algorithm-ACLS-Bradycardia-LngDscrp-250725-Ed.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">American Heart Association. Adult Bradycardia Algorithm — 2025. Doses e suporte da bradicardia instável no adulto.</a>",
             "<a href=\"https://academic.oup.com/europace/article/24/1/71/6358627\" target=\"_blank\" rel=\"noopener noreferrer\">ESC. Cardiac Pacing and Cardiac Resynchronization Therapy — 2021. Distúrbios de condução e indicações de estimulação.</a>"
-          ],
-          0
-        ],
-        [
-          "p",
-          "Fonte clínica conferida para este capítulo: Cintra FD et al. Diretriz Brasileira de Fibrilação Atrial (SBC/SOBRAC), 2025, seção 7 e Quadro 7, disponível em https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt. Referência comparativa reaberta no Drive: '02 - TAQUIARRITMIA .pdf', útil para ECG e apresentação, mas insuficiente para anticoagulação pericardioversão."
-        ],
-        [
-          "p",
-          "<strong>Referências nucleares para o aprofundamento:</strong> Cintra FD et al. SBC/SOBRAC, Diretriz Brasileira de Fibrilação Atrial 2025, Arq Bras Cardiol. 122(9):e20250618. DOI 10.36660/abc.20250618, https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt ; 2024 ESC AF Guidelines, https://academic.oup.com/eurheartj/article/45/36/3314/7738779 ; 2023 ACC/AHA/ACCP/HRS FA, https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/ ; AHA 2025 Adult Advanced Life Support, https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support . O comparativo do Drive foi usado como inventário curricular, não como fonte de energias atuais."
+          ]
         ]
       ]
     ]

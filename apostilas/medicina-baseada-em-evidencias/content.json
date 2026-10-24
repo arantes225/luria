@@ -2,8 +2,8 @@
   "v": 2,
   "s": "medicina-baseada-em-evidencias",
   "t": "Medicina Baseada em Evidências",
-  "p": "Medicina Baseada em Evidências — Livro-Texto LURIA",
-  "d": "Tratado completo de Medicina Baseada em Evidências para concursos de residência médica e ENAMED: epistemologia e origens da MBE na Universidade McMaster, definição clássica e a tríade indissociável de David Sackett (melhor evidência científica externa, perícia clínica médica e valores/preferências do paciente); formulação da dúvida clínica através do modelo estruturado PICO e suas variações metodológicas (PIRD para acurácia diagnóstica, PECO/PFO para prognóstico e etiologia, PICo qualitativo); a evolução histórica da hierarquia de evidências: desconstrução da pirâmide rígida tradicional e ascensão do modelo contemporâneo de Murad (2016) com fronteiras onduladas e a Revisão Sistemática atuando como lente de aumento integrada; métricas de efeito relativo e benefício absoluto: Taxa de Eventos no Controle (CER), Taxa no Experimental (EER), Risco Relativo (RR), Redução Relativa do Risco (RRR), Redução Absoluta do Risco (RRA/ARR), Número Necessário para Tratar (NNT) e Número Necessário para Causar Dano (NNH) com regras de arredondamento ético; raciocínio diagnóstico bayesiano: probabilidade pré-teste, falácias do resultado binário, Sensibilidade, Especificidade, Razão de Verossimilhança Positiva (LR+) e Negativa (LR-), Teorema de Bayes em odds e o Nomograma de Fagan; sistema GRADE (alta, moderada, baixa, muito baixa; os 5 critérios de rebaixamento e 3 de elevação da certeza) e graduação da força das recomendações (forte vs condicional); a Colaboração Cochrane e o protocolo PRISMA 2020 em 4 fases com ferramentas RoB 2 e ROBINS-I; Tomada de Decisão Compartilhada (Shared Decision Making - SDM), o modelo de três passos de Elwyn e instrumentos de auxílio à decisão (PtDAs com Icon Arrays / Cates Plots); modelo de limiares diagnósticos e terapêuticos de Pauker-Kassirer (limiar de teste, zona de teste e limiar de tratamento); integridade científica e combate a fraudes metodológicas: a crise de reprodutibilidade de Ioannidis, p-hacking e inflação de erro alfa cumulativo, HARKing, relato seletivo de desfechos e registro prévio de protocolo (ClinicalTrials.gov/PROSPERO); análise de sobrevida, dados censurados à direita, curvas de Kaplan-Meier (step-function, mediana de sobrevida), teste de log-rank e regressão de riscos proporcionais de Cox com Hazard Ratio (HR); curvas ROC (Receiver Operating Characteristic), área sob a curva (AUC / C-Statistic) e o Índice de Youden (J) para ponto de corte ótimo; guia prático de leitura crítica de artigos médicos (validade interna, magnitude do efeito e aplicabilidade/validade externa); Avaliação de Tecnologias em Saúde (ATS), farmacoeconomia no SUS pela CONITEC, custo-efetividade, custo-utilidade, anos de vida ajustados pela qualidade (QALY) e razão de custo-efetividade incremental (ICER); Prevenção Quaternária de Jamoulle, proteção contra sobremedicalização, sobrediagnóstico (overdiagnosis), sobretratamento (overtreatment), cascatas iatrogênicas e protocolos de desprescrição sistemática; Diretrizes de Prática Clínica (Guidelines), critérios de validação internacional com AGREE II (6 domínios), manejo rigoroso de conflitos de interesse e a campanha Choosing Wisely; casos clínicos estruturados e bateria de 7 questões comentadas com análise minuciosa de distratores.",
+  "p": "Tratado completo de Medicina Baseada em Evidências para concursos de residência médica e ENAMED: epistemologia e origens da MBE na Universidade McMaster, definição clássica e a tríade indissociável de David Sackett (melhor evidência científica externa, perícia clínica médica e valores/preferências do paciente); formulação da dúvida clínica através do modelo estruturado PICO e suas variações metodológicas (PIRD para acurácia diagnóstica, PECO/PFO para prognóstico e etiologia, PICo qualitativo); a evolução histórica da hierarquia de evidências: desconstrução da pirâmide rígida tradicional e ascensão do modelo contemporâneo de Murad (2016) com fronteiras onduladas e a Revisão Sistemática atuando como lente de aumento integrada; métricas de efeito relativo e benefício absoluto: Taxa de Eventos no Controle (CER), Taxa no Experimental (EER), Risco Relativo (RR), Redução Relativa do Risco (RRR), Redução Absoluta do Risco (RRA/ARR), Número Necessário para Tratar (NNT) e Número Necessário para Causar Dano (NNH) com regras de arredondamento ético; raciocínio diagnóstico bayesiano: probabilidade pré-teste, falácias do resultado binário, Sensibilidade, Especificidade, Razão de Verossimilhança Positiva (LR+) e Negativa (LR-), Teorema de Bayes em odds e o Nomograma de Fagan; sistema GRADE (alta, moderada, baixa, muito baixa; os 5 critérios de rebaixamento e 3 de elevação da certeza) e graduação da força das recomendações (forte vs condicional); a Colaboração Cochrane e o protocolo PRISMA 2020 em 4 fases com ferramentas RoB 2 e ROBINS-I; Tomada de Decisão Compartilhada (Shared Decision Making - SDM), o modelo de três passos de Elwyn e instrumentos de auxílio à decisão (PtDAs com Icon Arrays / Cates Plots); modelo de limiares diagnósticos e terapêuticos de Pauker-Kassirer (limiar de teste, zona de teste e limiar de tratamento); integridade científica e combate a fraudes metodológicas: a crise de reprodutibilidade de Ioannidis, p-hacking e inflação de erro alfa cumulativo, HARKing, relato seletivo de desfechos e registro prévio de protocolo (ClinicalTrials.gov/PROSPERO); análise de sobrevida, dados censurados à direita, curvas de Kaplan-Meier (step-function, mediana de sobrevida), teste de log-rank e regressão de riscos proporcionais de Cox com Hazard Ratio (HR); curvas ROC (Receiver Operating Characteristic), área sob a curva (AUC / C-Statistic) e o Índice de Youden (J) para ponto de corte ótimo; guia prático de leitura crítica de artigos médicos (validade interna, magnitude do efeito e aplicabilidade/validade externa); Avaliação de Tecnologias em Saúde (ATS), farmacoeconomia no SUS pela CONITEC, custo-efetividade, custo-utilidade, anos de vida ajustados pela qualidade (QALY) e razão de custo-efetividade incremental (ICER); Prevenção Quaternária de Jamoulle, proteção contra sobremedicalização, sobrediagnóstico (overdiagnosis), sobretratamento (overtreatment), cascatas iatrogênicas e protocolos de desprescrição sistemática; Diretrizes de Prática Clínica (Guidelines), critérios de validação internacional com AGREE II (6 domínios), manejo rigoroso de conflitos de interesse e a campanha Choosing Wisely; casos clínicos estruturados e bateria de 7 questões comentadas com análise minuciosa de distratores. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado completo de Medicina Baseada em Evidências para concursos de residência médica e ENAMED: epistemologia e origens da MBE na Universidade McMaster, definição clássica e a tríade indissociável de David Sackett (melhor evidência científica externa, perícia clínica médica e valores/preferências do paciente); formulação da dúvida clínica através do modelo estruturado PICO e suas variações metodológicas (PIRD para acurácia diagnóstica, PECO/PFO para prognóstico e etiologia, PICo qualitativo); a evolução histórica da hierarquia de evidências: desconstrução da pirâmide rígida tradicional e ascensão do modelo contemporâneo de Murad (2016) com fronteiras onduladas e a Revisão Sistemática atuando como lente de aumento integrada; métricas de efeito relativo e benefício absoluto: Taxa de Eventos no Controle (CER), Taxa no Experimental (EER), Risco Relativo (RR), Redução Relativa do Risco (RRR), Redução Absoluta do Risco (RRA/ARR), Número Necessário para Tratar (NNT) e Número Necessário para Causar Dano (NNH) com regras de arredondamento ético; raciocínio diagnóstico bayesiano: probabilidade pré-teste, falácias do resultado binário, Sensibilidade, Especificidade, Razão de Verossimilhança Positiva (LR+) e Negativa (LR-), Teorema de Bayes em odds e o Nomograma de Fagan; sistema GRADE (alta, moderada, baixa, muito baixa; os 5 critérios de rebaixamento e 3 de elevação da certeza) e graduação da força das recomendações (forte vs condicional); a Colaboração Cochrane e o protocolo PRISMA 2020 em 4 fases com ferramentas RoB 2 e ROBINS-I; Tomada de Decisão Compartilhada (Shared Decision Making - SDM), o modelo de três passos de Elwyn e instrumentos de auxílio à decisão (PtDAs com Icon Arrays / Cates Plots); modelo de limiares diagnósticos e terapêuticos de Pauker-Kassirer (limiar de teste, zona de teste e limiar de tratamento); integridade científica e combate a fraudes metodológicas: a crise de reprodutibilidade de Ioannidis, p-hacking e inflação de erro alfa cumulativo, HARKing, relato seletivo de desfechos e registro prévio de protocolo (ClinicalTrials.gov/PROSPERO); análise de sobrevida, dados censurados à direita, curvas de Kaplan-Meier (step-function, mediana de sobrevida), teste de log-rank e regressão de riscos proporcionais de Cox com Hazard Ratio (HR); curvas ROC (Receiver Operating Characteristic), área sob a curva (AUC / C-Statistic) e o Índice de Youden (J) para ponto de corte ótimo; guia prático de leitura crítica de artigos médicos (validade interna, magnitude do efeito e aplicabilidade/validade externa); Avaliação de Tecnologias em Saúde (ATS), farmacoeconomia no SUS pela CONITEC, custo-efetividade, custo-utilidade, anos de vida ajustados pela qualidade (QALY) e razão de custo-efetividade incremental (ICER); Prevenção Quaternária de Jamoulle, proteção contra sobremedicalização, sobrediagnóstico (overdiagnosis), sobretratamento (overtreatment), cascatas iatrogênicas e protocolos de desprescrição sistemática; Diretrizes de Prática Clínica (Guidelines), critérios de validação internacional com AGREE II (6 domínios), manejo rigoroso de conflitos de interesse e a campanha Choosing Wisely; casos clínicos estruturados e bateria de 7 questões comentadas com análise minuciosa de distratores. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Medicina Preventiva",
   "m": "Epidemiologia Geral e Bioestatística Clínica",
   "h": [
@@ -124,7 +124,7 @@
           "o",
           [
             "<strong>A Melhor Evidência Científica Externa Disponível:</strong> Pesquisas clínicas metodologicamente sólidas e sistemáticas, com foco prioritário em ensaios clínicos randomizados de alta qualidade, estudos de acurácia diagnóstica validados e revisões sistemáticas independentes, avaliando desfechos clínicos centrados no paciente;",
-            "<strong>A Perícia e Experiência Clínica do Médico (Clinical Expertise):</strong> A habilidade diagnóstica refinada pelo exame físico minucioso à beira do leito, a capacidade de identificar rapidamente o estado de gravidade do paciente, o julgamento de nuances atípicas de apresentação e a sabedoria para decidir se o paciente à sua frente é compatível com os critérios de inclusão dos ensaios clínicos publicados;",
+            "<strong>A Perícia e Experiência Clínica do Médico (Clinical Expertise):</strong> A habilidade diagnóstica refinada pelo exame físico minucioso à beira do leito, a capacidade de identificar com agilidade o estado de gravidade do paciente, o julgamento de nuances atípicas de apresentação e a sabedoria para decidir se o paciente à sua frente é compatível com os critérios de inclusão dos ensaios clínicos publicados;",
             "<strong>Os Valores, Preferências, Expectativas e Contexto do Paciente:</strong> A autonomia individual do paciente, suas crenças éticas e religiosas, sua tolerância pessoal a riscos e efeitos adversos, suas prioridades de vida (ex.: priorizar qualidade de vida versus sobrevida em meses) e sua realidade socioeconômica. Sem a incorporação da vontade do paciente, a prática médica degenera em autoritarismo tecnológico frio."
           ]
         ],
@@ -180,6 +180,10 @@
         [
           "p",
           "<strong>A Anatomia dos Quatro Elementos do PICO:</strong>"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina Preventiva, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "u",
@@ -1634,7 +1638,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina Preventiva. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1646,8 +1675,7 @@
             "<a href=\"https://www.nejm.org/doi/full/10.1056/NEJM198011133032003\" target=\"_blank\" rel=\"noopener noreferrer\">Pauker, S. G. & Kassirer, J. P. — The threshold approach to clinical decision making. New England Journal of Medicine, 1980</a>",
             "<a href=\"https://link.springer.com/article/10.1007/s11606-012-2077-6\" target=\"_blank\" rel=\"noopener noreferrer\">Elwyn, G., Frosch, D., Thomson, R., et al. — Shared decision making: a model for clinical practice. Journal of General Internal Medicine, 2012</a>",
             "<a href=\"https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124\" target=\"_blank\" rel=\"noopener noreferrer\">Ioannidis, J. P. A. — Why most published research findings are false. PLoS Medicine, 2005</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

@@ -2,8 +2,8 @@
   "v": 2,
   "s": "diabetes-mellitus-tipo-1-e-cetoacidose",
   "t": "Diabetes Mellitus Tipo 1 e Cetoacidose Diabética",
-  "p": "Diabetes Mellitus Tipo 1 e Cetoacidose Diabética — Livro-Texto LURIA",
-  "d": "Tratado Completo de Endocrinologia e Terapia Intensiva Pediátrica: Autoimunidade, Autoanticorpos (Anti-GAD, IA2, ZnT8, IAA), Fisiopatologia da CAD, Protocolo Rígido de Hidratação 24-48h, Insulina Contínua sem Bolus, Reposição de Potássio, Manejo Hiperosmolar do Edema Cerebral, Esquema Basal-Bolus, CGM, Lua de Mel e Complicações Crônicas",
+  "p": "Tratado Completo de Endocrinologia e Terapia Intensiva Pediátrica: Autoimunidade, Autoanticorpos (Anti-GAD, IA2, ZnT8, IAA), Fisiopatologia da CAD, Protocolo Rígido de Hidratação 24-48h, Insulina Contínua sem Bolus, Reposição de Potássio, Manejo Hiperosmolar do Edema Cerebral, Esquema Basal-Bolus, CGM, Lua de Mel e Complicações Crônicas Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado Completo de Endocrinologia e Terapia Intensiva Pediátrica: Autoimunidade, Autoanticorpos (Anti-GAD, IA2, ZnT8, IAA), Fisiopatologia da CAD, Protocolo Rígido de Hidratação 24-48h, Insulina Contínua sem Bolus, Reposição de Potássio, Manejo Hiperosmolar do Edema Cerebral, Esquema Basal-Bolus, CGM, Lua de Mel e Complicações Crônicas Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Pediatria",
   "m": "Pediatria",
   "h": [
@@ -177,6 +177,10 @@
           "O evento fisiopatológico deflagrador da cetoacidose diabética é a coexistência de dois distúrbios neuroendócrinos graves:"
         ],
         [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Pediatria, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "p",
           "<strong>Deficiência Absoluta ou Quase Absoluta de Insulina</strong><br>\n  <strong>+</strong><br>\n  <strong>Hipersecreção Maciça dos Hormônios Contrarreguladores (Glucagon, Cortisol, Catecolaminas e GH)</strong>"
         ],
@@ -204,7 +208,7 @@
         ],
         [
           "p",
-          "O acetoacetato e o beta-hidroxibutirato são ácidos orgânicos fortes que se dissociam completamente em pH fisiológico, liberando prótons H+ na circulação. Os íons hidrogênio consomem e exaurem rapidamente os estoques do principal tampão extracelular: o <strong>Bicarbonato sérico (HCO3-)</strong>. Instala-se <strong>Acidose Metabólica com Hiato Aniônico Elevado (Anion Gap &gt; 12-16 mEq/L)</strong>, onde:"
+          "O acetoacetato e o beta-hidroxibutirato são ácidos orgânicos fortes que se dissociam completamente em pH fisiológico, liberando prótons H+ na circulação. Os íons hidrogênio consomem e exaurem com agilidade os estoques do principal tampão extracelular: o <strong>Bicarbonato sérico (HCO3-)</strong>. Instala-se <strong>Acidose Metabólica com Hiato Aniônico Elevado (Anion Gap &gt; 12-16 mEq/L)</strong>, onde:"
         ],
         [
           "p",
@@ -365,7 +369,7 @@
           "u",
           [
             "<strong>NUNCA SUSPENDA A INFUSÃO DE INSULINA VENOSA!</strong> O objetivo da insulina na CAD não é apenas normalizar a glicemia, mas sim <em>bloquear a lipólise e desligar a cetogênese no fígado</em>. Se você desligar a insulina porque a glicemia caiu para 250 mg/dL, a acidose e os corpos cetônicos retornarão com força total.",
-            "<strong>A CONDUTA OBRIGATÓRIA:</strong> Mantenha a bomba de insulina na mesma taxa e <strong>ADICIONE GLICOSE À SOLUÇÃO DE HIDRATAÇÃO VENOSA</strong>, transformando o soro em <strong>Soro Glicosado a 5% (SG 5%) com Cloreto de Sódio a 0,45%</strong> (ou Soro com 10% de Glicose se a glicemia continuar caindo rapidamente).",
+            "<strong>A CONDUTA OBRIGATÓRIA:</strong> Mantenha a bomba de insulina na mesma taxa e <strong>ADICIONE GLICOSE À SOLUÇÃO DE HIDRATAÇÃO VENOSA</strong>, transformando o soro em <strong>Soro Glicosado a 5% (SG 5%) com Cloreto de Sódio a 0,45%</strong> (ou Soro com 10% de Glicose se a glicemia continuar caindo com agilidade).",
             "<strong>Meta Terapêutica Alvo:</strong> Manter a glicemia plasmática estável entre <strong>150 e 200 mg/dL</strong> (ou 150 a 250 mg/dL) durante toda a fase restante de tratamento, até que a acidose metabólica esteja completamente resolvida e o ânion gap normalizado!"
           ]
         ],

@@ -2,8 +2,8 @@
   "v": 2,
   "s": "anemias",
   "t": "Anemias no Adulto",
-  "p": "Anemias no Adulto — Livro-Texto LURIA",
-  "d": "Tratado Completo de Hematologia Clínica: Eritropoiese, Classificação Cinética e Morfológica, Anemia Ferropriva vs Doença Crônica, Hepcidina, Megaloblastose por B12 e Folato, Anemias Hemolíticas Imunes e Microangiopatias Trombóticas (PTT vs SHU), Aplasia Medular e Mielodisplasia",
+  "p": "Tratado Completo de Hematologia Clínica: Eritropoiese, Classificação Cinética e Morfológica, Anemia Ferropriva vs Doença Crônica, Hepcidina, Megaloblastose por B12 e Folato, Anemias Hemolíticas Imunes e Microangiopatias Trombóticas (PTT vs SHU), Aplasia Medular e Mielodisplasia Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado Completo de Hematologia Clínica: Eritropoiese, Classificação Cinética e Morfológica, Anemia Ferropriva vs Doença Crônica, Hepcidina, Megaloblastose por B12 e Folato, Anemias Hemolíticas Imunes e Microangiopatias Trombóticas (PTT vs SHU), Aplasia Medular e Mielodisplasia Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Clínica Médica",
   "m": "Clínica Médica",
   "h": [
@@ -119,7 +119,7 @@
         ],
         [
           "p",
-          "A investigação diagnóstica de qualquer síndrome anêmica no adulto exige a aplicação simultânea de duas abordagens complementares e indissociáveis: a <strong>classificação cinética (funcional)</strong>, que determina se a medula óssea está produzindo hemácias de forma adequada em resposta à anemia, e a <strong>classificação morfológica (estrutural)</strong>, fundamentada nos índices hematimétricos automatizados do hemograma (VCM, HCM, CHCM e RDW)."
+          "A investigação diagnóstica de qualquer síndrome anêmica no adulto exige a aplicação simultânea de duas abordagens complementares e indissociáveis: a <strong>classificação cinética (funcional)</strong>, que determina se a medula óssea está produzindo hemácias conforme protocolo clínico aplicável em resposta à anemia, e a <strong>classificação morfológica (estrutural)</strong>, fundamentada nos índices hematimétricos automatizados do hemograma (VCM, HCM, CHCM e RDW)."
         ],
         [
           "3",
@@ -128,6 +128,10 @@
         [
           "p",
           "O primeiro passo na propedêutica de uma anemia não é dosar ferro ou vitaminas, mas sim classificar a capacidade proliferativa da medula óssea mediante a análise dos <strong>Reticulócitos</strong>. A contagem normal de reticulócitos no sangue periférico situa-se entre 0,5% e 2,0% (ou valor absoluto entre 25.000 e 100.000/mm³). Contudo, diante de uma anemia, uma contagem percentual normal é um erro interpretativo grave, pois o número absoluto de hemácias circulantes está reduzido. É obrigatório realizar a correção pelo hematócrito do paciente."
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Clínica Médica, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "4",
@@ -484,7 +488,7 @@
         ],
         [
           "p",
-          "O ácido fólico (Vitamina B9) é encontrado em abundância em folhas verdes cruas, frutas cítricas, feijão e leveduras. Ao contrário da B12, <strong>os estoques corporais de folato no fígado são escassos (cerca de 5 a 10 mg), suprindo o organismo por apenas 3 a 5 MESES</strong>. Causas frequentes incluem desnutrição em etilistas crônicos (o álcool bloqueia a circulação entero-hepática de folato), aumento da demanda metabólica (gravidez, lactação, anemia falciforme e anemias hemolíticas crônicas com hiperplasia eritroide) e uso de antagonistas do folato (Metotrexato, Sulfametoxazol-Trimetoprima e Fenitoína). <em>Diferencial Crítico:</em> <strong>A deficiência de Ácido Fólico NÃO CAUSA degeneração combinada subaguda da medula nem sintomas neurológicos desmielinizantes!</strong>"
+          "O ácido fólico (Vitamina B9) é encontrado em abundância em folhas verdes cruas, frutas cítricas, feijão e leveduras. Ao contrário da B12, <strong>os estoques corporais de folato no fígado são escassos (cerca de 5 a 10 mg), suprindo o organismo por apenas 3 a 5 MESES</strong>. Causas frequentes incluem desnutrição em etilistas crônicos (o álcool bloqueia a circulação entero-hepática de folato), aumento da demanda metabólica (gravidez, lactação, anemia falciforme e anemias hemolíticas crônicas com hiperplasia eritroide) e uso de antagonistas do folato (Metotrexato, Sulfametoxazol-Trimetoprima (800/160 mg VO ou EV 12/12h para ITU/partes moles, ou 15-20 mg/kg/dia com base no trimetoprima em 3-4 doses para pneumocistose) e Fenitoína). <em>Diferencial Crítico:</em> <strong>A deficiência de Ácido Fólico NÃO CAUSA degeneração combinada subaguda da medula nem sintomas neurológicos desmielinizantes!</strong>"
         ],
         [
           "3",
@@ -553,7 +557,7 @@
             "<strong>Reticulocitose Absoluta Elevada (IPR &gt; 2,0 a 2,5):</strong> Traduz a hiperplasia e a hiperproliferação eritroide medular compensatória induzida por níveis elevados de eritropoietina.",
             "<strong>Hiperbilirrubinemia Indireta (Não Conjugada):</strong> A degradação do anel heme da hemoglobina pela enzima heme-oxigenase nos macrófagos gera biliverdina e, em seguida, bilirrubina livre (indireta). Como a taxa de produção excede a capacidade de glicuronidação dos hepatócitos, a bilirrubina indireta eleva-se no plasma (geralmente entre 1,5 e 4,0 mg/dL), manifestando-se clinicamente por <strong>Icterícia leve a moderada de coloração amarelo-limão, com fezes de coloração normal ou pleiocrômicas (ausência de colúria clássica e ausência de acolia fecal)</strong>.",
             "<strong>Elevação Acentuada do Lactato Desidrogenase (LDH Sérica):</strong> A enzima LDH é extremamente abundante no citosol das hemácias; a destruição de eritrócitos libera quantidades maciças de LDH no plasma, correlacionando-se diretamente com a intensidade da hemólise.",
-            "<strong>Queda Drástica ou Consumo Completo da Haptoglobina Sérica:</strong> A Haptoglobina é uma proteína plasmática sintetizada pelo fígado cuja função é capturar e ligar-se com altíssima avidez à hemoglobina livre liberada no plasma. O complexo Hb-Haptoglobina é rapidamente internalizado e degradado pelos macrófagos hepáticos via receptor CD163. Portanto, <strong>a presença de níveis séricos de Haptoglobina indetectáveis (&lt; 10 a 20 mg/dL) é o marcador mais sensível e precoce de hemólise intravascular e extravascular ativa</strong>."
+            "<strong>Queda Drástica ou Consumo Completo da Haptoglobina Sérica:</strong> A Haptoglobina é uma proteína plasmática sintetizada pelo fígado cuja função é capturar e ligar-se com altíssima avidez à hemoglobina livre liberada no plasma. O complexo Hb-Haptoglobina é com agilidade internalizado e degradado pelos macrófagos hepáticos via receptor CD163. Portanto, <strong>a presença de níveis séricos de Haptoglobina indetectáveis (&lt; 10 a 20 mg/dL) é o marcador mais sensível e precoce de hemólise intravascular e extravascular ativa</strong>."
           ]
         ],
         [
@@ -624,7 +628,7 @@
             ],
             [
               "<strong>Tratamento Farmacológico e Resposta</strong>",
-              "1. <strong>CORTICOTERAPIA SISTÊMICA (Prednisona 1 a 1,5 mg/kg/dia):</strong> Resposta em 80% dos casos.<br>\n        2. <strong>Rituximabe (Anti-CD20)</strong> nas formas refratárias.<br>\n        3. <strong>Esplenectomia Cirúrgica:</strong> Altamente eficaz (remove o principal sítio de destruição celular).",
+              "1. <strong>CORTICOTERAPIA SISTÊMICA (Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) 1 a 1,5 mg/kg/dia):</strong> Resposta em 80% dos casos.<br>\n        2. <strong>Rituximabe (Anti-CD20)</strong> nas formas refratárias.<br>\n        3. <strong>Esplenectomia Cirúrgica:</strong> Altamente eficaz (remove o principal sítio de destruição celular).",
               "1. <strong>EVITAR EXPOSIÇÃO AO FRIO (Aquecimento corporal)</strong>.<br>\n        2. <strong>Corticoides e Esplenectomia são TOTALMENTE INEFICAZES E NÃO DEVEM SER REALIZADOS!</strong><br>\n        3. Tratamento de escolha: <strong>Rituximabe</strong> isolado ou associado a Bendamustina; inibidor de C1s (Sutimlimabe)."
             ]
           ],
@@ -700,7 +704,7 @@
           "o",
           [
             "<strong>PLASMAFÉRESE TERAPÊUTICA (Plasma Exchange - PLEX) com Reposição de Plasma Fresco Congelado:</strong> Início imediato de urgência absoluta (meta: dentro das primeiras 4 a 8 horas). A plasmaférese atua de forma dupla: remove os autoanticorpos circulantes e os multímeros gigantes de FVW do sangue do paciente e repõe a enzima ADAMTS13 ativa contida no plasma doador. Realizada diariamente até contagem de plaquetas &gt; 150.000/mm³ e LDH normalizado por 2 a 3 dias consecutivos.",
-            "<strong>Imunossupressão Agressiva:</strong> Corticoterapia em altas doses (Metilprednisolona venosa 1 g/dia por 3 dias seguida de prednisona oral 1 mg/kg/dia) associada ao anticorpo monoclonal <strong>Rituximabe</strong> para erradicar a linhagem de plasmócitos produtores de anti-ADAMTS13.",
+            "<strong>Imunossupressão Agressiva:</strong> corticoterapia sistêmica em altas doses (Metilprednisolona 1 g/dia EV por 3 dias em pulsoterapia, ou Prednisona 1 a 2 mg/kg/dia VO com dose máxima de 60-80 mg/dia) (Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias) venosa 1 g/dia por 3 dias seguida de Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral 1 mg/kg/dia) associada ao anticorpo monoclonal <strong>Rituximabe</strong> para erradicar a linhagem de plasmócitos produtores de anti-ADAMTS13.",
             "<strong>Caplacizumabe (Nanocorpo Inibidor da Ligação FVW-Plaqueta):</strong> Bloqueia o domínio A1 do FVW, impedindo a ligação com a glicoproteína Ib plaquetária e abortando a microtrombose imediatamente.",
             "<em>PROSCRIÇÃO FORMAL ABSOLUTA:</em> <strong>É TERMINANTEMENTE PROIBIDA A TRANSFUSÃO DE CONCENTRADO DE PLAQUETAS NA PTT!</strong> A transfusão de plaquetas atua como \"jogar gasolina na fogueira\", fornecendo o substrato que faltava para os multímeros gigantes formarem microtrombos em massa, desencadeando infarto agudo do miocárdio fulminante, AVE isquêmico e morte súbita imediata. Reservada exclusivamente em caso de hemorragia intracraniana ativa com risco iminente de óbito."
           ]
@@ -806,7 +810,7 @@
           "o",
           [
             "<strong>TRANSFERÊNCIA IMEDIATA PARA UTI E INÍCIO DE PLASMAFÉRESE TERAPÊUTICA (PLEX) DE URGÊNCIA:</strong> Meta de início em até 4 a 8 horas, com troca de 1 a 1,5 volemia plasmática diária com reposição de plasma fresco congelado para eliminar os autoanticorpos anti-ADAMTS13 e os multímeros gigantes de FVW e repor a enzima ativa.",
-            "<strong>Corticoterapia em Altas Doses:</strong> Metilprednisolona venosa 1.000 mg/dia por 3 dias para suprimir a produção de novos autoanticorpos, associada precocemente a <strong>Rituximabe</strong> (375 mg/m² semanal).",
+            "<strong>corticoterapia sistêmica em altas doses (Metilprednisolona 1 g/dia EV por 3 dias em pulsoterapia, ou Prednisona 1 a 2 mg/kg/dia VO com dose máxima de 60-80 mg/dia):</strong> Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias) venosa 1.000 mg/dia por 3 dias para suprimir a produção de novos autoanticorpos, associada precocemente a <strong>Rituximabe</strong> (375 mg/m² semanal).",
             "<em>CONTRAINDICAÇÃO ABSOLUTA VITAL:</em> <strong>NÃO TRANSFUNDIR CONCENTRADO DE PLAQUETAS!</strong> A transfusão de plaquetas na PTT provoca trombose microvascular fulminante nos territórios cerebral e coronariano, induzindo parada cardíaca imediata.",
             "Coleta de amostra de sangue para dosagem de atividade da enzima <strong>ADAMTS13</strong> antes de iniciar a primeira sessão de plasmaférese (resultado esperado: atividade &lt; 10%)."
           ]
@@ -821,7 +825,7 @@
         ],
         [
           "p",
-          "Mulher de 45 anos, com histórico de artrite reumatoide de longa data em uso irregular de leflunomida e prednisona 5 mg/dia, comparece ao ambulatório queixando-se de astenia e desânimo progressivos há 4 meses. O exame físico evidencia palidez cutaneomucosa moderada (2+/4+), sinovite crônica em punhos e articulações metacarpofalangeanas e ausência de hepatoesplenomegalia. O hemograma demonstra: Hemoglobina 9,8 g/dL; Hematócrito 30%; VCM 83 fL; HCM 28 pg; RDW 13,2% (normal); Leucócitos e Plaquetas normais; Reticulócitos corrigidos = 0,6% (IPR &lt; 1). Diante da principal suspeita diagnóstica, qual o perfil esperado na avaliação da cinética do ferro sérico e qual a molécula central responsável por essa alteração?"
+          "Mulher de 45 anos, com histórico de artrite reumatoide de longa data em uso irregular de leflunomida e Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) 5 mg/dia, comparece ao ambulatório queixando-se de astenia e desânimo progressivos há 4 meses. O exame físico evidencia palidez cutaneomucosa moderada (2+/4+), sinovite crônica em punhos e articulações metacarpofalangeanas e ausência de hepatoesplenomegalia. O hemograma demonstra: Hemoglobina 9,8 g/dL; Hematócrito 30%; VCM 83 fL; HCM 28 pg; RDW 13,2% (normal); Leucócitos e Plaquetas normais; Reticulócitos corrigidos = 0,6% (IPR &lt; 1). Diante da principal suspeita diagnóstica, qual o perfil esperado na avaliação da cinética do ferro sérico e qual a molécula central responsável por essa alteração?"
         ],
         [
           "p",
@@ -857,11 +861,11 @@
         ],
         [
           "p",
-          "A) Hemólise intravascular mediada por IgM e complemento C5b-9; fígado; infusão de imunoglobulina humana intravenosa.<br>\nB) Hemólise extravascular mediada por autoanticorpos da classe IgG; baço; corticoterapia com prednisona oral.<br>\nC) Hemólise mecânica microangiopática por microtrombos de fibrina; rins; plasmaférese terapêutica de urgência.<br>\nD) Lise celular osmótica por defeito genético na espectrina da membrana; circulação pulmonar; esplenectomia imediata.<br>\nE) Destruição imune por crioaglutininas com autoaglutinação a frio; extremidades; aquecimento corporal isolado."
+          "A) Hemólise intravascular mediada por IgM e complemento C5b-9; fígado; infusão de imunoglobulina humana intravenosa.<br>\nB) Hemólise extravascular mediada por autoanticorpos da classe IgG; baço; corticoterapia com Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral.<br>\nC) Hemólise mecânica microangiopática por microtrombos de fibrina; rins; plasmaférese terapêutica de urgência.<br>\nD) Lise celular osmótica por defeito genético na espectrina da membrana; circulação pulmonar; esplenectomia imediata.<br>\nE) Destruição imune por crioaglutininas com autoaglutinação a frio; extremidades; aquecimento corporal isolado."
         ],
         [
           "p",
-          "<strong>Gabarito Oficial: Letra B.</strong><br>\n<strong>Comentário Detalhado:</strong> O quadro clínico e laboratorial consolida o diagnóstico de <strong>Anemia Hemolítica Autoimune (AHAI) por Anticorpos Quentes (IgG) secundária ao Lúpus Eritematoso Sistêmico</strong>: síndrome hemolítica franca (reticulocitose regenerativa com IPR &gt; 2,5, hiperbilirrubinemia indireta, LDH elevado e haptoglobina indetectável), microesferócitos ao esfregaço e Teste de Coombs Direto positivo para IgG em temperatura de 37 ºC. Fisiopatologia: as hemácias opsonizadas por IgG sofrem remoção parcial de membrana pelos macrófagos do <strong>Baço</strong> dotados de receptores Fc-gama, transformando-se em microesferócitos que são fagocitados nos cordões esplênicos (<strong>hemólise extravascular esplênica</strong>). A primeira linha de tratamento farmacológico obrigatória é a <strong>Corticoterapia Sistêmica com Prednisona oral (1 a 1,5 mg/kg/dia)</strong>, que reduz a síntese de anticorpos e bloqueia a função fagocítica dos macrófagos esplênicos. Alternativa B rigorosamente exata."
+          "<strong>Gabarito Oficial: Letra B.</strong><br>\n<strong>Comentário Detalhado:</strong> O quadro clínico e laboratorial consolida o diagnóstico de <strong>Anemia Hemolítica Autoimune (AHAI) por Anticorpos Quentes (IgG) secundária ao Lúpus Eritematoso Sistêmico</strong>: síndrome hemolítica franca (reticulocitose regenerativa com IPR &gt; 2,5, hiperbilirrubinemia indireta, LDH elevado e haptoglobina indetectável), microesferócitos ao esfregaço e Teste de Coombs Direto positivo para IgG em temperatura de 37 ºC. Fisiopatologia: as hemácias opsonizadas por IgG sofrem remoção parcial de membrana pelos macrófagos do <strong>Baço</strong> dotados de receptores Fc-gama, transformando-se em microesferócitos que são fagocitados nos cordões esplênicos (<strong>hemólise extravascular esplênica</strong>). A primeira linha de tratamento farmacológico obrigatória é a <strong>Corticoterapia Sistêmica com Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral (1 a 1,5 mg/kg/dia)</strong>, que reduz a síntese de anticorpos e bloqueia a função fagocítica dos macrófagos esplênicos. Alternativa B rigorosamente exata."
         ]
       ]
     ],

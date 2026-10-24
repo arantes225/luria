@@ -2,8 +2,8 @@
   "v": 2,
   "s": "climaterio-e-menopausa",
   "t": "Climatério e Menopausa",
-  "p": "Climatério e Menopausa — Livro-Texto LURIA",
-  "d": "Fisiologia da Transição Menopáusica e Critérios STRAW+10 · Diagnóstico Clínico e Síndrome Geniturinária · Terapia Hormonal e Janela de Oportunidade · Vias, Esquemas e Opções Não Hormonais",
+  "p": "Fisiologia da Transição Menopáusica e Critérios STRAW+10 · Diagnóstico Clínico e Síndrome Geniturinária · Terapia Hormonal e Janela de Oportunidade · Vias, Esquemas e Opções Não Hormonais Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Fisiologia da Transição Menopáusica e Critérios STRAW+10 · Diagnóstico Clínico e Síndrome Geniturinária · Terapia Hormonal e Janela de Oportunidade · Vias, Esquemas e Opções Não Hormonais Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Ginecologia e Obstetrícia",
   "m": "Endocrinologia Ginecológica e Climatério",
   "h": [
@@ -546,7 +546,7 @@
             [
               "<strong>Antagonistas do Receptor de Neurocinina 3 (NK3R)</strong>",
               "<strong>Fezolinetant</strong> (45 mg VO uma vez ao dia)",
-              "Nova classe terapêutica revolucionária que bloqueia diretamente a ligação da Neurocinina B nos neurônios KNDy da área pré-óptica. Reduz os fogachos rapidamente sem qualquer atividade hormonal estrogênica. Exige monitorização periódica de transaminases hepáticas basais e trimestrais no primeiro ano."
+              "Nova classe terapêutica revolucionária que bloqueia diretamente a ligação da Neurocinina B nos neurônios KNDy da área pré-óptica. Reduz os fogachos com agilidade sem qualquer atividade hormonal estrogênica. Exige monitorização periódica de transaminases hepáticas basais e trimestrais no primeiro ano."
             ]
           ],
           "book-table"
@@ -613,8 +613,8 @@
           "<strong>Enunciado:</strong> Mulher de 56 anos, submetida a mastectomia e esvaziamento axilar por adenocarcinoma de mama luminal A há 3 anos, atualmente em uso de Tamoxifeno. Procura o ginecologista com queixa de ressecamento vaginal incapacitante, queimação contínua e dispareunia que inviabiliza qualquer atividade sexual conjugal. Refere também fogachos intensos diários. Ao exame: mucosa vaginal extremamente pálida, descorada, com petéquias de atrito e ausência completa de rugosidades epiteliais. Qual a conduta indicada para os sintomas vasomotores e geniturinários?"
         ],
         [
-          "p",
-          "<strong>Discussão e Conduta:</strong> O câncer de mama prévio é <strong>contraindicação absoluta para terapia hormonal sistêmica</strong>. Para o controle dos fogachos, opta-se por medicamento não hormonal. Como a paciente está em uso de Tamoxifeno, são formalmente contraindicados a Paroxetina e a Fluoxetina (pelo bloqueio da CYP2D6). A escolha correta é <strong>Venlafaxina</strong> (37,5 a 75 mg/dia) ou Desvenlafaxina ou Gabapentina. Para a Síndrome Geniturinária, a primeira abordagem deve ser com <strong>hidratantes vaginais à base de ácido hialurônico</strong> de uso contínuo associados a lubrificantes. Caso não haja resposta após uso prolongado, o uso de estriol em ultra-baixa dose local pode ser avaliado em conjunto e com anuência expressa do mastologista/oncologista assistente."
+          "raw",
+          "<div class=\"book-callout-warning\"><strong class=\"callout-title\">⚠️ Alerta de Segurança — WARNING</strong><p><strong>Discussão e Conduta:</strong> O câncer de mama prévio é <strong>contraindicação absoluta para terapia hormonal sistêmica</strong>. Para o controle dos fogachos, opta-se por medicamento não hormonal. Como a paciente está em uso de Tamoxifeno, são formalmente contraindicados a Paroxetina e a Fluoxetina (pelo bloqueio da CYP2D6). A escolha correta é <strong>Venlafaxina</strong> (37,5 a 75 mg/dia) ou Desvenlafaxina ou Gabapentina. Para a Síndrome Geniturinária, a primeira abordagem deve ser com <strong>hidratantes vaginais à base de ácido hialurônico</strong> de uso contínuo associados a lubrificantes. Caso não haja resposta após uso prolongado, o uso de estriol em ultra-baixa dose local pode ser avaliado em conjunto e com anuência expressa do mastologista/oncologista assistente.</p></div>"
         ],
         [
           "3",
@@ -655,8 +655,8 @@
           ]
         ],
         [
-          "p",
-          "<strong>Gabarito: C.</strong> <em>Comentário detalhado:</em> O histórico de Tromboembolismo Venoso prévio (TVP ou embolia pulmonar) é uma <strong>contraindicação absoluta e definitiva</strong> à terapia hormonal sistêmica, independentemente da via ser oral ou transdérmica e independentemente do tempo transcorrido desde o evento agudo. A paciente deve ser acolhida e tratada com medidas farmacológicas não hormonais de comprovada eficácia central no hipotálamo, tais como antidepressivos inibidores da recaptação (venlafaxina, desvenlafaxina) ou gabapentina."
+          "raw",
+          "<div class=\"book-callout-warning\"><strong class=\"callout-title\">⚠️ Alerta de Segurança — WARNING</strong><p><strong>Gabarito: C.</strong> <em>Comentário detalhado:</em> O histórico de Tromboembolismo Venoso prévio (TVP ou embolia pulmonar) é uma <strong>contraindicação absoluta e definitiva</strong> à terapia hormonal sistêmica, independentemente da via ser oral ou transdérmica e independentemente do tempo transcorrido desde o evento agudo. A paciente deve ser acolhida e tratada com medidas farmacológicas não hormonais de comprovada eficácia central no hipotálamo, tais como antidepressivos inibidores da recaptação (venlafaxina, desvenlafaxina) ou gabapentina.</p></div>"
         ]
       ]
     ],
@@ -814,7 +814,7 @@
           "u",
           [
             "<strong>Todas as mulheres com idade &ge; 65 anos</strong>, independentemente da presença de fatores de risco adicionais;",
-            "<strong>Mulheres na pós-menopausa com idade < 65 anos</strong> que apresentem pelo menos <strong>um fator de risco maior</strong> para perda de massa óssea ou fratura: baixo peso corporal (IMC < 19 kg/m²), tabagismo ativo atual, história prévia de fratura por fragilidade após os 40 anos, história parental de fratura do colo de fêmur, artrite reumatoide ou uso prolongado de glicocorticoides (&ge; 5 mg/dia de prednisona ou equivalente por mais de 3 meses);",
+            "<strong>Mulheres na pós-menopausa com idade < 65 anos</strong> que apresentem pelo menos <strong>um fator de risco maior</strong> para perda de massa óssea ou fratura: baixo peso corporal (IMC < 19 kg/m²), tabagismo ativo atual, história prévia de fratura por fragilidade após os 40 anos, história parental de fratura do colo de fêmur, artrite reumatoide ou uso prolongado de glicocorticoides (&ge; 5 mg/dia de Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) ou equivalente por mais de 3 meses);",
             "<strong>Mulheres na transição menopáusica</strong> que apresentem alto risco de fratura ou causas secundárias de osteoporose (hiperparatireoidismo primário, hipertireoidismo não tratado, síndrome de má absorção, doença celíaca, gastrectomia prévia);",
             "<strong>Avaliação de eficácia terapêutica</strong> em pacientes que já recebem medicamentos específicos para osteoporose (geralmente repetida a cada 1 a 2 anos)."
           ]
@@ -1038,8 +1038,8 @@
           "4. Enxaqueca com e sem Aura no Climatério"
         ],
         [
-          "p",
-          "A enxaqueca com aura durante a menacme constitui contraindicação absoluta para o uso de contraceptivos hormonais combinados em altas doses devido ao risco elevado de AVC isquêmico. No climatério, no entanto, a THM utiliza doses fisiológicas muito inferiores (cerca de 1/4 a 1/6 da dose de um anticoncepcional oral). Recomenda-se:"
+          "raw",
+          "<div class=\"book-callout-warning\"><strong class=\"callout-title\">⚠️ Alerta de Segurança — WARNING</strong><p>A enxaqueca com aura durante a menacme constitui contraindicação absoluta para o uso de contraceptivos hormonais combinados em altas doses devido ao risco elevado de AVC isquêmico. No climatério, no entanto, a THM utiliza doses fisiológicas muito inferiores (cerca de 1/4 a 1/6 da dose de um anticoncepcional oral). Recomenda-se:</p></div>"
         ],
         [
           "u",
@@ -1364,7 +1364,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Ginecologia e Obstetrícia. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1374,8 +1399,7 @@
             "<a href=\"https://www.imsociety.org\" target=\"_blank\" rel=\"noopener noreferrer\">International Menopause Society (IMS) Recommendations on Women's Midlife Health and Menopause Hormone Therapy</a>",
             "<a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3580996/\" target=\"_blank\" rel=\"noopener noreferrer\">Stages of Reproductive Aging Workshop + 10 (STRAW+10): Addressing the Unfinished Agenda of Staging Reproductive Aging</a>",
             "<a href=\"https://www.endocrino.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Diretrizes Brasileiras de Climatério da Sociedade Brasileira de Endocrinologia e Metabologia (SBEM)</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

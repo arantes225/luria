@@ -2,8 +2,8 @@
   "v": 2,
   "s": "lesao-renal-aguda",
   "t": "Lesão Renal Aguda",
-  "p": "Tratado de referência sobre Lesão Renal Aguda (LRA) para concursos de Residência Médica e ENAMED: critérios diagnósticos oficiais KDIGO 2012, AKIN e RIFLE por creatinina e débito urinário horário; fisiopatologia e etiopatogenia tripartida: azotemia pré-renal, dano renal intrínseco (NTA isquêmica e nefrotóxica, nefrite intersticial aguda imunoalérgica, GNRP, ateroembolismo e MAT) e LRA pós-renal obstrutiva; propedêutica armada com índices e frações de excreção (FeNa, FeUreia no uso de diuréticos, osmolaridade urinária, densidade, sedimentoscopia urinária e diferenciação de cilindros granulosos pardos, hialinos, hemáticos e leucocitários); novos biomarcadores precoces (NGAL, KIM-1, TIMP-2 x IGFBP7); manejo volêmico balanceado versus acidose hiperclorêmica por salina a 0,9%; riscos da sobrecarga hídrica e Teste de Estresse com Furosemida (FST); indicações formais clássicas de diálise de urgência pelo mnemônico AEIOU; ensaios clínicos sobre momento da diálise (STARRT-AKI, AKIKI); modalidades de suporte dialítico (hemodiálise intermitente, CRRT contínua e SLED); escolha de acessos vasculares; casos clínicos completos estruturados e 6 questões de residência comentadas alternativa por alternativa.",
-  "d": "Tratado de referência sobre Lesão Renal Aguda (LRA) para concursos de Residência Médica e ENAMED: critérios diagnósticos oficiais KDIGO 2012, AKIN e RIFLE por creatinina e débito urinário horário; fisiopatologia e etiopatogenia tripartida: azotemia pré-renal, dano renal intrínseco (NTA isquêmica e nefrotóxica, nefrite intersticial aguda imunoalérgica, GNRP, ateroembolismo e MAT) e LRA pós-renal obstrutiva; propedêutica armada com índices e frações de excreção (FeNa, FeUreia no uso de diuréticos, osmolaridade urinária, densidade, sedimentoscopia urinária e diferenciação de cilindros granulosos pardos, hialinos, hemáticos e leucocitários); novos biomarcadores precoces (NGAL, KIM-1, TIMP-2 x IGFBP7); manejo volêmico balanceado versus acidose hiperclorêmica por salina a 0,9%; riscos da sobrecarga hídrica e Teste de Estresse com Furosemida (FST); indicações formais clássicas de diálise de urgência pelo mnemônico AEIOU; ensaios clínicos sobre momento da diálise (STARRT-AKI, AKIKI); modalidades de suporte dialítico (hemodiálise intermitente, CRRT contínua e SLED); escolha de acessos vasculares; casos clínicos completos estruturados e 6 questões de residência comentadas alternativa por alternativa.",
+  "p": "Tratado de referência sobre Lesão Renal Aguda (LRA) para concursos de Residência Médica e ENAMED: critérios diagnósticos oficiais KDIGO 2012, AKIN e RIFLE por creatinina e débito urinário horário; fisiopatologia e etiopatogenia tripartida: azotemia pré-renal, dano renal intrínseco (NTA isquêmica e nefrotóxica, nefrite intersticial aguda imunoalérgica, GNRP, ateroembolismo e MAT) e LRA pós-renal obstrutiva; propedêutica armada com índices e frações de excreção (FeNa, FeUreia no uso de diuréticos, osmolaridade urinária, densidade, sedimentoscopia urinária e diferenciação de cilindros granulosos pardos, hialinos, hemáticos e leucocitários); novos biomarcadores precoces (NGAL, KIM-1, TIMP-2 x IGFBP7); manejo volêmico balanceado versus acidose hiperclorêmica por salina a 0,9%; riscos da sobrecarga hídrica e Teste de Estresse com Furosemida (FST); indicações formais clássicas de diálise de urgência pelo mnemônico AEIOU; ensaios clínicos sobre momento da diálise (STARRT-AKI, AKIKI); modalidades de suporte dialítico (hemodiálise intermitente, CRRT contínua e SLED); escolha de acessos vasculares; casos clínicos completos estruturados e 6 questões de residência comentadas alternativa por alternativa. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de referência sobre Lesão Renal Aguda (LRA) para concursos de Residência Médica e ENAMED: critérios diagnósticos oficiais KDIGO 2012, AKIN e RIFLE por creatinina e débito urinário horário; fisiopatologia e etiopatogenia tripartida: azotemia pré-renal, dano renal intrínseco (NTA isquêmica e nefrotóxica, nefrite intersticial aguda imunoalérgica, GNRP, ateroembolismo e MAT) e LRA pós-renal obstrutiva; propedêutica armada com índices e frações de excreção (FeNa, FeUreia no uso de diuréticos, osmolaridade urinária, densidade, sedimentoscopia urinária e diferenciação de cilindros granulosos pardos, hialinos, hemáticos e leucocitários); novos biomarcadores precoces (NGAL, KIM-1, TIMP-2 x IGFBP7); manejo volêmico balanceado versus acidose hiperclorêmica por salina a 0,9%; riscos da sobrecarga hídrica e Teste de Estresse com Furosemida (FST); indicações formais clássicas de diálise de urgência pelo mnemônico AEIOU; ensaios clínicos sobre momento da diálise (STARRT-AKI, AKIKI); modalidades de suporte dialítico (hemodiálise intermitente, CRRT contínua e SLED); escolha de acessos vasculares; casos clínicos completos estruturados e 6 questões de residência comentadas alternativa por alternativa. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Clínica Médica",
   "m": "Nefrologia e Terapia Intensiva",
   "h": [
@@ -259,9 +259,9 @@
           "u",
           [
             "<strong>NTA Isquêmica:</strong> É a evolução natural da LRA pré-renal não tratada ou prolongada. Choque séptico, choque cardiogênico, choque hemorrágico, grandes cirurgias vasculares com clampeamento aórtico. As regiões mais vulneráveis à isquemia são o <strong>segmento reto do túbulo proximal (S3)</strong> e a <strong>porção espessa da alça ascendente de Henle na medula externa</strong>, por possuírem altíssima taxa metabólica de consumo de ATP (bomba Na+/K+ ATPase) operando sob uma pressão parcial de oxigênio fisiologicamente baixa;",
-            "<strong>NTA Tóxica Exógena:</strong>\n    <ul>\n      <li><strong>Aminoglicosídeos (Gentamicina, Amicacina):</strong> Acumulam-se nos lisossomos das células tubulares proximais por pinocitose mediada pelo receptor megalina-cubilina, gerando necrose celular tóxica. O dano manifesta-se tipicamente após <strong>5 a 10 dias</strong> de exposição contínua e apresenta-se classicamente como <em>LRA não oligúrica</em> associada a hipocalemia e hipomagnesemia por lesão tubular espoliadora;",
+            "<strong>NTA Tóxica Exógena:</strong>\n    <ul>\n      <li><strong>Aminoglicosídeos (Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas), Amicacina):</strong> Acumulam-se nos lisossomos das células tubulares proximais por pinocitose mediada pelo receptor megalina-cubilina, gerando necrose celular tóxica. O dano manifesta-se tipicamente após <strong>5 a 10 dias</strong> de exposição contínua e apresenta-se classicamente como <em>LRA não oligúrica</em> associada a hipocalemia e hipomagnesemia por lesão tubular espoliadora;",
             "<strong>Contraste Radiológico Iodado:</strong> Nefropatia induzida por contraste (NIC). Gera vasoconstrição medular intensa seguida de toxicidade tubular oxidativa direta. O pico de creatinina ocorre em 48 a 72 horas, com recuperação em 7 a 10 dias;",
-            "<strong>Vancomicina e Anfotericina B:</strong> A vancomicina gera estresse oxidativo e precipitação tubular de cilindros; a anfotericina B induz vasoconstrição da arteríola aferente e formação de poros líticos na membrana celular tubular, provocando hipocalemia grave e acidose tubular renal tipo 1;",
+            "<strong>Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) e Anfotericina B:</strong> A Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) gera estresse oxidativo e precipitação tubular de cilindros; a anfotericina B induz vasoconstrição da arteríola aferente e formação de poros líticos na membrana celular tubular, provocando hipocalemia grave e acidose tubular renal tipo 1;",
             "<strong>Quimioterápicos:</strong> Cisplatina (necrose tubular proximal profunda) e Metotrexato (precipitação intraluminal de cristais sob pH urinário ácido);"
           ]
         ],
@@ -288,7 +288,7 @@
         [
           "u",
           [
-            "<strong>Fármacos Causadores Típicos:</strong> Antibióticos betalactâmicos (oxacilina, ampicilina, penicilina cristalina, cefalosporinas), sulfas (sulfametoxazol-trimetoprima), fluoroquinolonas (ciprofloxacino), AINEs, inibidores da bomba de prótons (omeprazol, pantoprazol), rifampicina, alopurinol;",
+            "<strong>Fármacos Causadores Típicos:</strong> Antibióticos betalactâmicos (Oxacilina (2 g EV a cada 4 horas), Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas), penicilina cristalina, cefalosporinas), sulfas (Sulfametoxazol-Trimetoprima (800/160 mg VO ou EV 12/12h para ITU/partes moles, ou 15-20 mg/kg/dia com base no trimetoprima em 3-4 doses para pneumocistose)), fluoroquinolonas (Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h)), AINEs, inibidores da bomba de prótons (omeprazol, pantoprazol), rifampicina, alopurinol;",
             "<strong>Tríade Clínica Clássica de Hipersensibilidade (presente em apenas 10% a 30% dos casos):</strong> Febre, exantema cutâneo maculopapular e artralgia. A eosinofilia periférica e a eosinofilúria sustentam a suspeita diagnóstica. O padrão-ouro diagnóstico definitivo é a biópsia renal percutânea (infiltrado mononuclear intersticial com linfócitos, plasmócitos e eosinófilos, edema intersticial e tubulite)."
           ]
         ],
@@ -299,7 +299,7 @@
         [
           "u",
           [
-            "<strong>Glomerulonefrite Rapidamente Progressiva (GNRP):</strong> Síndrome nefrítica fulminante acompanhada de perda rápida da função renal em dias a semanas, caracterizada histopatologicamente por <em>crescentes celulares em mais de 50% dos glomérulos</em>. Subdivide-se em Tipo 1 (doença antimembrana basal glomerular / Síndrome de Goodpasture com anticorpos anti-MBG), Tipo 2 (imunocomplexos: lúpus eritematoso sistêmico, pós-estreptocócica, crioglobulinemia) e Tipo 3 (pauci-imune associada a ANCA: granulomatose com poliangiite / Wegener e poliangiite microscópica);",
+            "<strong>Glomerulonefrite com agilidade Progressiva (GNRP):</strong> Síndrome nefrítica fulminante acompanhada de perda rápida da função renal em dias a semanas, caracterizada histopatologicamente por <em>crescentes celulares em mais de 50% dos glomérulos</em>. Subdivide-se em Tipo 1 (doença antimembrana basal glomerular / Síndrome de Goodpasture com anticorpos anti-MBG), Tipo 2 (imunocomplexos: lúpus eritematoso sistêmico, pós-estreptocócica, crioglobulinemia) e Tipo 3 (pauci-imune associada a ANCA: granulomatose com poliangiite / Wegener e poliangiite microscópica);",
             "<strong>Ateroembolismo Renal (Doença Ateroembólica / Embolia por Cristais de Colesterol):</strong> Ocorre tipicamente após manipulação vascular invasiva da aorta (cateterismo cardíaco, arteriografia, cirurgia de aneurisma) ou início de anticoagulação plena em pacientes idosos com aterosclerose aórtica severa. Fissuração de placas aórticas libera microêmbolos de colesterol que ocluem arteríolas arqueadas e interlobulares. Quadro sistêmico florido: LRA subaguda oscilante, livedo reticular em membros inferiores, síndrome dos dedos azuis (<em>blue toe syndrome</em>), necrose digital com pulsos distais preservados, eosinofilia periférica, hipocomplementemia e placas de Hollenhorst observadas na fundoscopia óptica da retina;",
             "<strong>Microangiopatias Trombóticas (MAT):</strong> Púrpura Trombocitopênica Trombótica (PTT - deficiência grave da ADAMTS13 com predomínio neurológico) e Síndrome Hemolítico-Urêmica (SHU típica mediada por toxina Shiga de <em>E. coli</em> O157:H7 em crianças ou SHU atípica mediada por desregulação da via alternativa do complemento). Manifestam-se pela tríade: anemia hemolítica microangiopática com esquizócitos no esfregaço de sangue periférico, plaquetopenia de consumo e LRA com trombose microvascular."
           ]
@@ -546,7 +546,7 @@
             "<strong>Cristaloides Balanceados vs Soro Fisiológico a 0,9%:</strong> Grandes ensaios clínicos randomizados contemporâneos (SMART, SALT-ED e BaSICS) demonstraram conclusivamente que a infusão volumosa de <strong>Soro Fisiológico a 0,9% (Cloreto de Sódio)</strong> — que contém 154 mEq/L de Na+ e 154 mEq/L de Cl-, apresentando um <em>strong ion difference (SID)</em> de zero — acarreta <strong>acidose metabólica hiperclorêmica</strong>. A hipercloremia atinge a mácula densa tubular, ativando intensamente o feedback tubuloglomerular com <strong>vasoconstrição sustentada da arteríola aferente renal</strong>, redução da perfusão cortical renal e aumento da incidência de LRA com necessidade de diálise;",
             "<strong>A Escolha de Primeira Linha:</strong> As <strong>soluções cristaloides balanceadas (Ringer Lactato ou Plasma-Lyte)</strong>, com concentrações de cloro mais próximas da fisiologia plasmática (98 a 109 mEq/L) e tamponadas com lactato ou acetato/gluconato, são as soluções de escolha para a ressuscitação volêmica na LRA e sepse;",
             "<strong>Alvos Hemodinâmicos de Ressuscitação:</strong> O objetivo hemodinâmico é garantir uma <strong>Pressão Arterial Média (PAM) $ge 65$ mmHg</strong>. Em pacientes idosos previamente hipertensos crônicos mal controlados, o limiar de autorregulação renal encontra-se desviado para a direita; nesses casos específicos, alvos de PAM ligeiramente superiores (75 a 85 mmHg) reduzem a necessidade de diálise;",
-            "<strong>Drogas Vasoativas de Escolha:</strong> Se a reposição volêmica guiada por parâmetros dinâmicos (variação da pressão de pulso - $Delta PP$, elevação passiva das pernas ou ultrassonografia de veia cava inferior e pulmão) indicar término da fase de responsividade a volume e a PAM persistir $&lt; 65$ mmHg, inicia-se prontamente o vasopressor de escolha: <strong>Noradrenalina</strong> em infusão contínua. A noradrenalina restaura o tônus arteriolar sistêmico e da arteríola eferente renal, elevando o gradiente de ultrafiltração glomerular sem comprometer a microcirculação medular renal quando associada à volemia corrigida."
+            "<strong>Drogas Vasoativas de Escolha:</strong> Se a reposição volêmica guiada por parâmetros dinâmicos (variação da pressão de pulso - $Delta PP$, elevação passiva das pernas ou ultrassonografia de veia cava inferior e pulmão) indicar término da fase de responsividade a volume e a PAM persistir $&lt; 65$ mmHg, inicia-se prontamente o vasopressor de primeira escolha: Noradrenalina IV contínua (iniciar em 0,1 mcg/kg/min e titular para PAM ≥ 65 mmHg): <strong>Noradrenalina</strong> em infusão contínua. A noradrenalina restaura o tônus arteriolar sistêmico e da arteríola eferente renal, elevando o gradiente de ultrafiltração glomerular sem comprometer a microcirculação medular renal quando associada à volemia corrigida."
           ]
         ],
         [
@@ -591,7 +591,7 @@
           [
             "<strong>Suspensão Imediata:</strong> AINEs (incluindo inibidores seletivos da COX-2 como celecoxibe), aminoglicosídeos (substituir por betalactâmico ou quinolona guiada por antibiograma), contraste iodado (adiar exames não emergenciais ou utilizar ressonância sem gadolínio se viável);",
             "<strong>Manejo de IECA / BRA:</strong> Em vigência de LRA isquêmica ou sepse com instabilidade hemodinâmica, IECA e BRA devem ser <strong>temporariamente suspensos</strong> para permitir a vasoconstrição compensatória da arteríola eferente e recuperação da taxa de filtração;",
-            "<strong>Ajuste Obrigatório de Dose pela TFGe:</strong> Antibióticos (meropenem, vancomicina, piperacilina-tazobactam, cefepime), anticoagulantes (enoxaparina — risco de sangramento fatal por acúmulo de heparina de baixo peso molecular, devendo ser substituída por heparina não fracionada quando TFGe $< 30$ mL/min), hipoglicemiantes orais (metformina — risco de acidose lática grave; sulfonilureias — hipoglicemia prolongada) e opioides (morfina e codeína acumulam metabólitos neurotóxicos como morfina-6-glicuronídeo, optando-se por fentanil ou metadona)."
+            "<strong>Ajuste Obrigatório de Dose pela TFGe:</strong> Antibióticos (Meropenem (1 g EV em infusão prolongada a cada 8 horas, ou 2 g EV 8/8h em meningite bacteriana), Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL), Piperacilina-Tazobactam (4,5 g EV em infusão estendida de 3-4h a cada 6 horas), cefepime), anticoagulantes (enoxaparina — risco de sangramento fatal por acúmulo de heparina de baixo peso molecular, devendo ser substituída por heparina não fracionada quando TFGe $< 30$ mL/min), hipoglicemiantes orais (metformina — risco de acidose lática grave; sulfonilureias — hipoglicemia prolongada) e opioides (Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor) e codeína acumulam metabólitos neurotóxicos como Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor)-6-glicuronídeo, optando-se por fentanil ou metadona)."
           ]
         ]
       ]
@@ -757,7 +757,7 @@
         ],
         [
           "p",
-          "<ul>\n    <li><em>Diagnóstico Sindrômico:</em> Choque Séptico secundário à Pneumonia Adquirida na Comunidade grave, associado à Lesão Renal Aguda KDIGO Estágio 3 (creatinina subiu mais de 3 vezes o basal e oligúria severa);</li>\n    <li><em>Padrão Fisiopatológico:</em> O paciente encontra-se em azotemia <strong>Pré-Renal precoce</strong> (superposta aos efeitos do enalapril prévio que aboliu a vasoconstrição da arteríola eferente). Evidências laboratoriais inequívocas de preservação tubular: relação Ureia/Creatinina sérica $> 40:1$ ($118 / 2,8 = 42,1$), Sódio urinário baixo ($12$ mEq/L, que é $< 20$ mEq/L), densidade urinária elevada ($1.024$) e Fração de Excreção de Sódio ($FeNa$):\n    $$FeNa = \frac{12 \times 2,8}{138 \times 98} \times 100 = \frac{33,6}{13524} \times 100 = 0,25%$$\n    O valor de $FeNa = 0,25%$ ($< 1%$) confirma que as bombas tubulares estão intactas e retendo sódio avidamente;</li>\n    <li><em>Conduta Terapêutica Imediata:</em>\n      <ol>\n        <li>Expansão volêmica agressiva com <strong>solução cristaloide balanceada (Ringer Lactato)</strong> a 30 mL/kg nas primeiras 3 horas;</li>\n        <li>Início precoce de <strong>Noradrenalina em infusão contínua</strong> para atingir PAM $ge 65$ mmHg;</li>\n        <li>Antibioticoterapia empírica intravenosa na primeira hora (Ceftriaxona + Claritromicina);</li>\n        <li>Suspensão imediata de Enalapril e Metformina (risco iminente de acidose lática);</li>\n        <li>Coleta seriada de lactato e monitorização horária estrita do débito urinário. Não há indicação imediata de diálise no momento.</li>\n      </ol>\n    </li>\n  </ul>\n</div>"
+          "<ul>\n    <li><em>Diagnóstico Sindrômico:</em> Choque Séptico secundário à Pneumonia Adquirida na Comunidade grave, associado à Lesão Renal Aguda KDIGO Estágio 3 (creatinina subiu mais de 3 vezes o basal e oligúria severa);</li>\n    <li><em>Padrão Fisiopatológico:</em> O paciente encontra-se em azotemia <strong>Pré-Renal precoce</strong> (superposta aos efeitos do enalapril prévio que aboliu a vasoconstrição da arteríola eferente). Evidências laboratoriais inequívocas de preservação tubular: relação Ureia/Creatinina sérica $> 40:1$ ($118 / 2,8 = 42,1$), Sódio urinário baixo ($12$ mEq/L, que é $< 20$ mEq/L), densidade urinária elevada ($1.024$) e Fração de Excreção de Sódio ($FeNa$):\n    $$FeNa = \frac{12 \times 2,8}{138 \times 98} \times 100 = \frac{33,6}{13524} \times 100 = 0,25%$$\n    O valor de $FeNa = 0,25%$ ($< 1%$) confirma que as bombas tubulares estão intactas e retendo sódio avidamente;</li>\n    <li><em>Conduta Terapêutica Imediata:</em>\n      <ol>\n        <li>Expansão volêmica agressiva com <strong>solução cristaloide balanceada (Ringer Lactato)</strong> a 30 mL/kg nas primeiras 3 horas;</li>\n        <li>Início precoce de <strong>Noradrenalina em infusão contínua</strong> para atingir PAM $ge 65$ mmHg;</li>\n        <li>antibioticoterapia empírica direcionada ao foco (ex.: Ceftriaxona 1-2 g EV 1x/dia associada a Metronidazol 500 mg EV 8/8h em infecções intra-abdominais, ou Ceftriaxona 2 g EV 12/12h na meningite) intravenosa na primeira hora (Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) + Claritromicina (500 mg VO a cada 12 horas));</li>\n        <li>Suspensão imediata de Enalapril e Metformina (risco iminente de acidose lática);</li>\n        <li>Coleta seriada de lactato e monitorização horária estrita do débito urinário. Não há indicação imediata de diálise no momento.</li>\n      </ol>\n    </li>\n  </ul>\n</div>"
         ],
         [
           "3",
@@ -765,7 +765,7 @@
         ],
         [
           "p",
-          "<strong>Identificação:</strong> Mulher de 54 anos, portadora de osteomielite crônica em tíbia esquerda tratada há 18 dias com Oxacilina intravenosa em regime de internação domiciliar. É trazida ao hospital referindo mal-estar geral, febre diária há 4 dias e aparecimento de manchas avermelhadas pelo corpo."
+          "<strong>Identificação:</strong> Mulher de 54 anos, portadora de osteomielite crônica em tíbia esquerda tratada há 18 dias com Oxacilina (2 g EV a cada 4 horas) intravenosa em regime de internação domiciliar. É trazida ao hospital referindo mal-estar geral, febre diária há 4 dias e aparecimento de manchas avermelhadas pelo corpo."
         ],
         [
           "p",
@@ -773,7 +773,7 @@
         ],
         [
           "p",
-          "<strong>Laboratório:</strong> Hemograma: Hemoglobina 11,8 g/dL, Leucócitos 13.400/mm³ com <strong>14% de eosinófilos</strong> (1.876 eosinófilos absolutos/mm³ - eosinofilia acentuada). Creatinina sérica atual: 3,4 mg/dL (basal pré-oxacilina de 0,8 mg/dL). Ureia: 76 mg/dL. Potássio: 4,8 mEq/L. EAS: proteinúria discreta (500 mg/24h), leucocitúria estéril importante (45 leucócitos por campo), cilindros leucocitários no sedimento urinário. Coloração de Hansel na urina positiva para <strong>eosinofilúria</strong>."
+          "<strong>Laboratório:</strong> Hemograma: Hemoglobina 11,8 g/dL, Leucócitos 13.400/mm³ com <strong>14% de eosinófilos</strong> (1.876 eosinófilos absolutos/mm³ - eosinofilia acentuada). Creatinina sérica atual: 3,4 mg/dL (basal pré-Oxacilina (2 g EV a cada 4 horas) de 0,8 mg/dL). Ureia: 76 mg/dL. Potássio: 4,8 mEq/L. EAS: proteinúria discreta (500 mg/24h), leucocitúria estéril importante (45 leucócitos por campo), cilindros leucocitários no sedimento urinário. Coloração de Hansel na urina positiva para <strong>eosinofilúria</strong>."
         ],
         [
           "p",
@@ -781,7 +781,7 @@
         ],
         [
           "p",
-          "<ul>\n    <li><em>Diagnóstico:</em> <strong>Nefrite Intersticial Aguda (NIA) Imunoalérgica Farmacodermóide</strong> induzida por Oxacilina;</li>\n    <li><em>Elementos-Chave do Caso:</em> O aparecimento subagudo (após mais de 2 semanas de uso do betalactâmico), associado à tríade clínica de hipersensibilidade (febre + rash cutâneo maculopapular), eosinofilia periférica acentuada e sedimento urinário com cilindros leucocitários e eosinofilúria fecham o quadro com elevadíssima probabilidade clínica pré-biópsia;</li>\n    <li><em>Conduta Farmacológica:</em>\n      <ol>\n        <li><strong>Suspensão imediata e definitiva da Oxacilina</strong>;</li>\n        <li>Substituição da antibioticoterapia para osteomielite por classe química não correlacionada guiada por antibiograma ósseo (ex.: Daptomicina ou Clindamicina se suscetível);</li>\n        <li>Se a função renal não apresentar melhora consistente e espontânea em 48 a 72 horas após a descontinuação da droga causadora, iniciar <strong>Corticoterapia Sistêmica com Prednisona 1 mg/kg/dia por 2 a 4 semanas</strong> com desmame progressivo. A corticoterapia precoce acelera a resolução do infiltrado inflamatório e reduz a formação de fibrose intersticial irreversível crônica.</li>\n      </ol>\n    </li>\n  </ul>\n</div>"
+          "<ul>\n    <li><em>Diagnóstico:</em> <strong>Nefrite Intersticial Aguda (NIA) Imunoalérgica Farmacodermóide</strong> induzida por Oxacilina (2 g EV a cada 4 horas);</li>\n    <li><em>Elementos-Chave do Caso:</em> O aparecimento subagudo (após mais de 2 semanas de uso do betalactâmico), associado à tríade clínica de hipersensibilidade (febre + rash cutâneo maculopapular), eosinofilia periférica acentuada e sedimento urinário com cilindros leucocitários e eosinofilúria fecham o quadro com elevadíssima probabilidade clínica pré-biópsia;</li>\n    <li><em>Conduta Farmacológica:</em>\n      <ol>\n        <li><strong>Suspensão imediata e definitiva da Oxacilina (2 g EV a cada 4 horas)</strong>;</li>\n        <li>Substituição da antibioticoterapia para osteomielite por classe química não correlacionada guiada por antibiograma ósseo (ex.: Daptomicina ou Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas) se suscetível);</li>\n        <li>Se a função renal não apresentar melhora consistente e espontânea em 48 a 72 horas após a descontinuação da droga causadora, iniciar <strong>Corticoterapia Sistêmica com Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) 1 mg/kg/dia por 2 a 4 semanas</strong> com desmame progressivo. A corticoterapia precoce acelera a resolução do infiltrado inflamatório e reduz a formação de fibrose intersticial irreversível crônica.</li>\n      </ol>\n    </li>\n  </ul>\n</div>"
         ],
         [
           "3",
@@ -830,7 +830,7 @@
           [
             "Trata-se de Necrose Tubular Aguda isquêmica estabelecida, evidenciada pela relação Ureia/Creatinina elevada; a conduta imediata consiste na administração de furosemida intravenosa em altas doses para restabelecer a diurese.",
             "O quadro representa Lesão Renal Aguda pré-renal funcional com túbulos íntegros; a conduta mandatória imediata é a restauração volêmica com solução cristaloide balanceada e suspensão transitória da losartana e do diurético.",
-            "A presença de cilindros hialinos e fração de excreção de sódio calculada superior a 2% indica glomerulonefrite aguda rapidamente progressiva, justificando pulsoterapia com metilprednisolona.",
+            "A presença de cilindros hialinos e fração de excreção de sódio calculada superior a 2% indica glomerulonefrite aguda com agilidade progressiva, justificando pulsoterapia com Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias).",
             "Trata-se de Nefrite Intersticial Aguda secundária à desidratação, devendo-se indicar biópsia renal percutânea de urgência antes de qualquer reposição hídrica."
           ]
         ],
@@ -889,8 +889,8 @@
           "<strong>Gabarito Oficial: Alternativa C.</strong>"
         ],
         [
-          "p",
-          "<strong>Comentário Editorial Detalhado:</strong> As indicações clássicas de diálise de urgência baseiam-se na gravidade clínica e no risco iminente de morte (mnemônico AEIOU): Acidose refratária ($pH < 7,15$), Eletrólitos (hipercalemia grave refratária com alterações no ECG, como onda T em tenda e alargamento do QRS), Intoxicações dialisáveis, Overload (edema agudo de pulmão refratário a diuréticos) e Uremia sintomática grave (encefalopatia, pericardite, sangramento urêmico). Valores numéricos isolados de creatinina (Alternativa A) ou ureia moderada (Alternativa D) na ausência de sintomas clínicos ou distúrbios metabólicos refratários <em>não constituem indicação de diálise de urgência</em> conforme consagrado pelos grandes ensaios clínicos randomizados contemporâneos (STARRT-AKI e AKIKI)."
+          "raw",
+          "<div class=\"book-callout-warning\"><strong class=\"callout-title\">⚠️ Alerta de Segurança — WARNING</strong><p><strong>Comentário Editorial Detalhado:</strong> As indicações clássicas de diálise de urgência baseiam-se na gravidade clínica e no risco iminente de morte (mnemônico AEIOU): Acidose refratária ($pH < 7,15$), Eletrólitos (hipercalemia grave refratária com alterações no ECG, como onda T em tenda e alargamento do QRS), Intoxicações dialisáveis, Overload (edema agudo de pulmão refratário a diuréticos) e Uremia sintomática grave (encefalopatia, pericardite, sangramento urêmico). Valores numéricos isolados de creatinina (Alternativa A) ou ureia moderada (Alternativa D) na ausência de sintomas clínicos ou distúrbios metabólicos refratários <em>não constituem indicação de diálise de urgência</em> conforme consagrado pelos grandes ensaios clínicos randomizados contemporâneos (STARRT-AKI e AKIKI).</p></div>"
         ],
         [
           "3",
@@ -975,40 +975,42 @@
       [
         [
           "2",
-          "8. Prognóstico Evolutivo, Transição LRA-DRC e Diretrizes Internacionais"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
           "3",
-          "O Contínuo Bidirecional: A Transição da Lesão Renal Aguda para a Doença Renal Crônica"
-        ],
-        [
-          "p",
-          "Historicamente, a Lesão Renal Aguda era interpretada como um evento clínico completamente autolimitado e benigno caso o paciente sobrevivesse à fase crítica e recebesse alta com valores de creatinina sérica estabilizados. A nefrologia molecular contemporânea desmistificou esse dogma: <strong>a LRA e a Doença Renal Crônica (DRC) constituem um contínuo fisiopatológico bidirecional indissociável</strong>."
-        ],
-        [
-          "p",
-          "Após um episódio de agressão isquêmica ou nefrotóxica moderada a grave (KDIGO estágios 2 e 3), as células tubulares que sofrem lesão subletal ativam programas moleculares de reparo anômalo caracterizados por:"
-        ],
-        [
-          "u",
-          [
-            "<strong>Parada do Ciclo Celular na Fase G2/M:</strong> Células epiteliais tubulares bloqueadas em G2/M passam a secretar continuamente citocinas pró-fibróticas potentes, principalmente o <strong>Fator de Crescimento Transformador Beta 1 (TGF-$\beta_1$)</strong> e o <em>Fator de Crescimento de Tecido Conjuntivo (CTGF)</em>;",
-            "<strong>Transição Epitélio-Mesenquimal (TEM) e Ativação de Miofibroblastos:</strong> Os pericitos perivasculares e fibroblastos intersticiais proliferam descontroladamente, depositando colágeno tipo I e III na matriz extracelular;",
-            "<strong>Rarefação dos Capilares Peritubulares (Ruptura da Microcirculação):</strong> A inflamação endotelial residual provoca perda crônica da densidade de capilares peritubulares, gerando hipóxia medular crônica permanente;",
-            "<strong>Perda Nefrônica e Hiperfiltração Compensatória dos Glomérulos Remanescentes:</strong> A redução definitiva do número total de néfrons funcionantes sobrecarrega os glomérulos saudáveis remanescentes, instalando hipertensão intraglomerular, proteinúria progressiva e esclerose focal e segmentar secundária, acelerando a perda da taxa de filtração glomerular ao longo dos anos subsequentes."
-          ]
-        ],
-        [
-          "3",
-          "Recomendações de Seguimento Pós-LRA (KDIGO)"
-        ],
-        [
-          "p",
-          "Todo paciente que sofreu um episódio de LRA no ambiente hospitalar deve ser submetido a uma <strong>avaliação ambulatorial nefrológica formal entre 30 e 90 dias após a alta hospitalar</strong> para:"
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
           "o",
           [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Clínica Médica. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
+        ],
+        [
+          "o",
+          [
+            "Historicamente, a Lesão Renal Aguda era interpretada como um evento clínico completamente autolimitado e benigno caso o paciente sobrevivesse à fase crítica e recebesse alta com valores de creatinina sérica estabilizados. A nefrologia molecular contemporânea desmistificou esse dogma: <strong>a LRA e a Doença Renal Crônica (DRC) constituem um contínuo fisiopatológico bidirecional indissociável</strong>.",
+            "<strong>Parada do Ciclo Celular na Fase G2/M:</strong> Células epiteliais tubulares bloqueadas em G2/M passam a secretar continuamente citocinas pró-fibróticas potentes, principalmente o <strong>Fator de Crescimento Transformador Beta 1 (TGF-$\beta_1$)</strong> e o <em>Fator de Crescimento de Tecido Conjuntivo (CTGF)</em>;",
+            "<strong>Transição Epitélio-Mesenquimal (TEM) e Ativação de Miofibroblastos:</strong> Os pericitos perivasculares e fibroblastos intersticiais proliferam descontroladamente, depositando colágeno tipo I e III na matriz extracelular;",
+            "<strong>Rarefação dos Capilares Peritubulares (Ruptura da Microcirculação):</strong> A inflamação endotelial residual provoca perda crônica da densidade de capilares peritubulares, gerando hipóxia medular crônica permanente;",
+            "<strong>Perda Nefrônica e Hiperfiltração Compensatória dos Glomérulos Remanescentes:</strong> A redução definitiva do número total de néfrons funcionantes sobrecarrega os glomérulos saudáveis remanescentes, instalando hipertensão intraglomerular, proteinúria progressiva e esclerose focal e segmentar secundária, acelerando a perda da taxa de filtração glomerular ao longo dos anos subsequentes.",
+            "Todo paciente que sofreu um episódio de LRA no ambiente hospitalar deve ser submetido a uma <strong>avaliação ambulatorial nefrológica formal entre 30 e 90 dias após a alta hospitalar</strong> para:",
             "Reavaliação laboratorial completa da TFGe através da equação CKD-EPI;",
             "Quantificação da albuminúria ou proteinúria em amostra isolada de urina (Razão Albumina/Creatinina Urinária - RAC);",
             "Controle rigoroso das metas de pressão arterial ($&lt; 130/80$ mmHg) e controle glicêmico;",
@@ -1023,7 +1025,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Clínica Médica. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1034,8 +1061,7 @@
             "<a href=\"https://www.nejm.org/doi/full/10.1056/NEJMoa2000741\" target=\"_blank\" rel=\"noopener noreferrer\">New England Journal of Medicine (NEJM) — Timing of Initiation of Renal-Replacement Therapy in Acute Kidney Injury (STARRT-AKI Trial)</a>",
             "<a href=\"https://www.nejm.org/doi/full/10.1056/NEJMoa1711584\" target=\"_blank\" rel=\"noopener noreferrer\">Lancet — Comparison of Balanced Crystalloids versus Saline in Critically Ill Adults (SMART Trial)</a>",
             "<a href=\"https://sbn.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Diretrizes da Sociedade Brasileira de Nefrologia (SBN) — Diagnóstico e Manejo da Lesão Renal Aguda</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

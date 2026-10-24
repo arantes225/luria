@@ -2,8 +2,8 @@
   "v": 2,
   "s": "cancer-colorretal",
   "t": "Câncer Colorretal: Da Carcinogênese à TME e TNT",
-  "p": "Câncer Colorretal: Da Carcinogênese à TME e TNT — Livro-Texto LURIA",
-  "d": "Vias moleculares, pólipos, síndromes hereditárias (PAF e Lynch), ressecção oncológica de cólon e manejo multimodal do reto",
+  "p": "Vias moleculares, pólipos, síndromes hereditárias (PAF e Lynch), ressecção oncológica de cólon e manejo multimodal do reto Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Vias moleculares, pólipos, síndromes hereditárias (PAF e Lynch), ressecção oncológica de cólon e manejo multimodal do reto Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Cirurgia Geral",
   "m": "Coloproctologia e Cirurgia Oncológica",
   "h": [
@@ -190,6 +190,10 @@
             ]
           ],
           "book-table"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Cirurgia Geral, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ]
       ]
     ],
@@ -283,7 +287,7 @@
             [
               "<strong>Pólipo Séssil Serrilhado (SSP / SSL)</strong>",
               "Criptas basais dilatadas horizontalmente em formato de \"T\" ou \"L\" (aspecto em bota ou âncora), com serrilhamento que atinge a profundidade da base da cripta. Ausência de displasia citológica convencional típica nas fases iniciais.",
-              "<strong>Elevado potencial oncogênico</strong> através da <strong>Via Serrilhada / CIMP / Mutação BRAF V600E</strong>, progredindo rapidamente para adenocarcinoma com instabilidade de microssatélites (MSI-H).",
+              "<strong>Elevado potencial oncogênico</strong> através da <strong>Via Serrilhada / CIMP / Mutação BRAF V600E</strong>, progredindo de forma acelerada para adenocarcinoma com instabilidade de microssatélites (MSI-H).",
               "Lesões planas ou sésseis rasas, recobertas por muco aderente com bordas indistintas, localizadas predominantemente no <strong>CÓLON DIREITO (ceco e ascendente)</strong>. Frequentemente negligenciadas em colonoscopias rápidas ou mal preparadas."
             ],
             [
@@ -906,7 +910,7 @@
         ],
         [
           "p",
-          "<strong>Discussão e Conduta Cirúrgica de Emergência:</strong>\n  1. Trata-se de abdome agudo obstrutivo mecânico baixo por adenocarcinoma estenosante de cólon sigmoide, com dilatação cecal iminente de rotura (&gt; 8-9 cm - Lei de Laplace).<br>\n  2. Conduta pré-operatória: ressuscitação com Ringer Lactato, passagem de sonda nasogástrica descompressiva e antibioticoterapia de amplo espectro.<br>\n  3. <strong>Opção Cirúrgica Padrão na Urgência:</strong> <strong>Cirurgia de Hartmann (Sigmoidectomia oncológica com ligadura alta da artéria mesentérica inferior e ressecção em monobloco do mesocólon com &gt; 12 linfonodos, sepultamento do coto retal e colostomia terminal na fossa ilíaca esquerda)</strong>. A confecção de anastomose primária imediata com preparo de cólon intraoperatório pode ser considerada apenas por cirurgiões experientes em pacientes perfeitamente estáveis sem peritonite; caso contrário, o procedimento de Hartmann é a conduta mais segura para salvar a vida do paciente, com reconstrução eletiva do trânsito após 3 a 6 meses."
+          "<strong>Discussão e Conduta Cirúrgica de Emergência:</strong>\n  1. Trata-se de abdome agudo obstrutivo mecânico baixo por adenocarcinoma estenosante de cólon sigmoide, com dilatação cecal iminente de rotura (&gt; 8-9 cm - Lei de Laplace).<br>\n  2. Conduta pré-operatória: ressuscitação com Ringer Lactato, passagem de sonda nasogástrica descompressiva e antibioticoterapia direcionada de amplo espectro (ex.: Piperacilina-Tazobactam (4,5 g EV em infusão estendida de 3-4h a cada 6 horas) 4,5 g EV 6/6h associado ou não a Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) 15-20 mg/kg EV 12/12h conforme o foco).<br>\n  3. <strong>Opção Cirúrgica Padrão na Urgência:</strong> <strong>Cirurgia de Hartmann (Sigmoidectomia oncológica com ligadura alta da artéria mesentérica inferior e ressecção em monobloco do mesocólon com &gt; 12 linfonodos, sepultamento do coto retal e colostomia terminal na fossa ilíaca esquerda)</strong>. A confecção de anastomose primária imediata com preparo de cólon intraoperatório pode ser considerada apenas por cirurgiões experientes em pacientes perfeitamente estáveis sem peritonite; caso contrário, o procedimento de Hartmann é a conduta mais segura para salvar a vida do paciente, com reconstrução eletiva do trânsito após 3 a 6 meses."
         ],
         [
           "4",
@@ -1085,51 +1089,45 @@
       [
         [
           "2",
-          "9. Síntese Prática, Fluxograma de Conduta e Referências Bibliográficas"
-        ],
-        [
-          "4",
-          "Guia de Conduta Rápida no Câncer Colorretal"
-        ],
-        [
-          "u",
-          [
-            "<strong>Rastreamento Populacional (Risco Habitual):</strong> Início aos <strong>45 anos</strong>. Colonoscopia a cada 10 anos ou FIT anual. Se parente de 1º grau com CCR &lt; 60 anos: iniciar aos 40 anos ou 10 anos antes do familiar mais jovem, repetindo a cada 5 anos.",
-            "<strong>Carcinogênese:</strong>\n      <ul>\n        <li><em>Via do Adenoma-Carcinoma (80%-85%):</em> Mutação no <em>APC</em> (porteiro da beta-catenina) -> <em>KRAS</em> -> <em>SMAD4</em> (18q) -> <em>TP53</em>.",
-            "<em>Via da Instabilidade de Microssatélites (15%-20%):</em> Perda das enzimas de reparo MMR (MLH1, MSH2, MSH6, PMS2) -> MSI-H. Predomínio no cólon direito, resposta a anti-PD-1 (imunoterapia)."
-          ]
-        ],
-        [
-          "p",
-          "</li>\n    <li><strong>Pólipos:</strong> Adenomas Tubulares (mais comuns, baixo risco), Adenomas Vilosos (alto risco de malignidade: 30%-50%, mucorreia/hipocalemia), Pólipos Sésseis Serrilhados (cólon direito, mutação BRAF V600E).</li>\n    <li><strong>Síndromes Hereditárias:</strong>"
-        ],
-        [
-          "u",
-          [
-            "<em>PAF:</em> &gt; 100 adenomas, mutação no gene APC (5q21), risco de CCR de 100%. Cirurgia profilática: proctocolectomia total com bolsa ileal (IPAA) ou colectomia com IRA. Variantes: Gardner (osteomas, desmoides) e Turcot tipo 2 (meduloblastoma).",
-            "<em>Síndrome de Lynch (HNPCC):</em> Mutação em MMR, cólon direito predominante, poucos pólipos, início jovem (&lt; 50 anos). Critérios de Amsterdam II (3-2-1-0). Risco alto de câncer de endométrio em mulheres. Cirurgia: colectomia total com IRA."
-          ]
-        ],
-        [
-          "p",
-          "</li>\n    <li><strong>Quadro Clínico:</strong> Cólon Direito (sangramento oculto, anemia ferropriva crônica, massa); Cólon Esquerdo (alteração do hábito, obstrução, fezes em fita, \"mordida de maçã\"); Reto (hematoquezia viva, tenesmo, urgência fecal).</li>\n    <li><strong>Cirurgia de Cólon:</strong> Margem de segurança de 5 cm longitudinal + ligadura alta dos troncos vasculares na raiz + <strong>no mínimo 12 linfonodos ressecados</strong>.</li>\n    <li><strong>Câncer de Reto (&lt; 15 cm da margem anal):</strong>"
-        ],
-        [
-          "u",
-          [
-            "RM de pelve de alta resolução mandatória para avaliar estádio T, N e Fáscia Mesorretal / CRM (&gt; 1 mm = livre).",
-            "Padrão-ouro: <strong>Excisão Total do Mesorreto (TME)</strong> no plano sagrado com preservação dos nervos autonômicos.",
-            "Lesões localmente avançadas (cT3-T4 ou N+): <strong>Terapia Neoadjuvante Total (TNT)</strong> com quimioterapia plena e radioterapia prévias. Se Resposta Clínica Completa (cCR): elegível para protocolo de <strong>Watch-and-Wait (Observar e Esperar) de Angelita Habr-Gama</strong>.",
-            "Cirurgia de Miles (amputação abdominoperineal com colostomia definitiva) indicada apenas se invasão direta do complexo esfincteriano."
-          ]
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
           "3",
-          "Referências Bibliográficas Fundamentais"
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
           "o",
           [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Cirurgia Geral. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
+        ],
+        [
+          "o",
+          [
+            "<strong>Rastreamento Populacional (Risco Habitual):</strong> Início aos <strong>45 anos</strong>. Colonoscopia a cada 10 anos ou FIT anual. Se parente de 1º grau com CCR &lt; 60 anos: iniciar aos 40 anos ou 10 anos antes do familiar mais jovem, repetindo a cada 5 anos.",
+            "<strong>Carcinogênese:</strong>\n      <ul>\n        <li><em>Via do Adenoma-Carcinoma (80%-85%):</em> Mutação no <em>APC</em> (porteiro da beta-catenina) -> <em>KRAS</em> -> <em>SMAD4</em> (18q) -> <em>TP53</em>.",
+            "<em>Via da Instabilidade de Microssatélites (15%-20%):</em> Perda das enzimas de reparo MMR (MLH1, MSH2, MSH6, PMS2) -> MSI-H. Predomínio no cólon direito, resposta a anti-PD-1 (imunoterapia).",
+            "<em>PAF:</em> &gt; 100 adenomas, mutação no gene APC (5q21), risco de CCR de 100%. Cirurgia profilática: proctocolectomia total com bolsa ileal (IPAA) ou colectomia com IRA. Variantes: Gardner (osteomas, desmoides) e Turcot tipo 2 (meduloblastoma).",
+            "<em>Síndrome de Lynch (HNPCC):</em> Mutação em MMR, cólon direito predominante, poucos pólipos, início jovem (&lt; 50 anos). Critérios de Amsterdam II (3-2-1-0). Risco alto de câncer de endométrio em mulheres. Cirurgia: colectomia total com IRA.",
+            "RM de pelve de alta resolução mandatória para avaliar estádio T, N e Fáscia Mesorretal / CRM (&gt; 1 mm = livre).",
+            "Padrão-ouro: <strong>Excisão Total do Mesorreto (TME)</strong> no plano sagrado com preservação dos nervos autonômicos.",
+            "Lesões localmente avançadas (cT3-T4 ou N+): <strong>Terapia Neoadjuvante Total (TNT)</strong> com quimioterapia plena e radioterapia prévias. Se Resposta Clínica Completa (cCR): elegível para protocolo de <strong>Watch-and-Wait (Observar e Esperar) de Angelita Habr-Gama</strong>.",
+            "Cirurgia de Miles (amputação abdominoperineal com colostomia definitiva) indicada apenas se invasão direta do complexo esfincteriano.",
             "Benson AB, Venook AP, Al-Hawary MM, et al. Colon Cancer, Version 2.2023, NCCN Clinical Practice Guidelines in Oncology. <em>J Natl Compr Canc Netw</em>. 2023;21(3):289-315.",
             "Benson AB, Venook AP, Al-Hawary MM, et al. Rectal Cancer, Version 3.2023, NCCN Clinical Practice Guidelines in Oncology. <em>J Natl Compr Canc Netw</em>. 2023;21(4):393-420.",
             "Bahadoer RR, Dijkstra EA, van Etten B, et al. Short-course radiotherapy followed by chemotherapy before total mesorectal excision (TME) versus preoperative chemoradiotherapy, TME, and optional adjuvant chemotherapy for locally advanced rectal cancer (RAPIDO): a randomised, open-label, phase 3 trial. <em>Lancet Oncol</em>. 2021;22(1):29-42.",

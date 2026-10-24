@@ -2,8 +2,8 @@
   "v": 2,
   "s": "doencas-prostaticas-e-avaliacao-inicial-de-neoplasias-urologicas",
   "t": "Doenças Prostáticas e Avaliação Inicial de Neoplasias Urológicas",
-  "p": "Doenças Prostáticas e Avaliação Inicial de Neoplasias Urológicas — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "p": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Cirurgia Geral",
   "m": "Cirurgia Geral",
   "h": [
@@ -165,6 +165,10 @@
         [
           "p",
           "O <strong>IPSS (International Prostate Symptom Score)</strong> é o instrumento padrão-ouro validado pela Organização Mundial da Saúde (OMS) e Sociedade Brasileira de Urologia (SBU) para estratificar a severidade dos LUTS e monitorar a resposta ao tratamento clínico ou cirúrgico:"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Cirurgia Geral, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "u",
@@ -752,7 +756,7 @@
           "u",
           [
             "<strong>Sinais de Alarme:</strong> Dor lombar ou dorsal intensa progressiva que piora no decúbito, fraqueza muscular simétrica nos membros inferiores, nível sensitivo metamérico definido ao exame físico (parestesias/anestesia abaixo de um dermátomo), hiper-reflexia tendínea com sinal de Babinski bilateral e disfunção esfincteriana tardia (retenção urinária ou incontinência fecal e anestesia em sela).",
-            "<strong>Conduta Médica Imediata:</strong> <strong>Ressonância Magnética de Coluna Total em regime de emergência absoluta!</strong> Iniciar imediatamente <strong>Dexametasona intravenosa em alta dose (bolus de 10 a 16 mg IV, seguido de 4 mg IV a cada 6 horas)</strong> para reduzir o edema vasogênico medular. Descompressão neurocirúrgica urgente por laminectomia ou radioterapia conformacional externa descompressiva fracionada de emergência nas primeiras 24 horas para evitar paraplegia definitiva."
+            "<strong>Conduta Médica Imediata:</strong> <strong>Ressonância Magnética de Coluna Total em regime de emergência absoluta!</strong> Iniciar imediatamente <strong>Dexametasona (10 mg EV 15-20 minutos antes ou junto à 1ª dose de antibiótico em meningite bacteriana aguda, ou 6 mg/dia VO/EV no choque séptico refratário/COVID grave) intravenosa em alta dose (bolus de 10 a 16 mg IV, seguido de 4 mg IV a cada 6 horas)</strong> para reduzir o edema vasogênico medular. Descompressão neurocirúrgica urgente por laminectomia ou radioterapia conformacional externa descompressiva fracionada de emergência nas primeiras 24 horas para evitar paraplegia definitiva."
           ]
         ]
       ]
@@ -1064,7 +1068,7 @@
         ],
         [
           "p",
-          "A) Tranquilizar o paciente e repetir o PSA em 12 meses, visto que o valor sérico normal de 1,8 ng/mL afasta a hipótese de adenocarcinoma de próstata clinicamente significativo.<br>\nB) Indicar realização de ressonância magnética multiparamétrica da próstata seguida de biópsia prostática guiada, pois o achado de nódulo pétreo ao toque retal é indicação formal de biópsia independentemente do nível de PSA.<br>\nC) Prescrever finasterida 5 mg ao dia por 6 meses para reduzir o volume do nódulo e reavaliar o toque retal após esse período.<br>\nD) Solicitar urocultura e iniciar ciprofloxacino oral empírico por 4 semanas para tratar provável prostatite crônica bacteriana subclínica.<br>\nE) Indicar ressecção transuretral da próstata (RTU de próstata) em regime ambulatorial para enucleação diagnóstica do lobo esquerdo."
+          "A) Tranquilizar o paciente e repetir o PSA em 12 meses, visto que o valor sérico normal de 1,8 ng/mL afasta a hipótese de adenocarcinoma de próstata clinicamente significativo.<br>\nB) Indicar realização de ressonância magnética multiparamétrica da próstata seguida de biópsia prostática guiada, pois o achado de nódulo pétreo ao toque retal é indicação formal de biópsia independentemente do nível de PSA.<br>\nC) Prescrever finasterida 5 mg ao dia por 6 meses para reduzir o volume do nódulo e reavaliar o toque retal após esse período.<br>\nD) Solicitar urocultura e iniciar Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h) oral empírico por 4 semanas para tratar provável prostatite crônica bacteriana subclínica.<br>\nE) Indicar ressecção transuretral da próstata (RTU de próstata) em regime ambulatorial para enucleação diagnóstica do lobo esquerdo."
         ],
         [
           "p",
@@ -1112,7 +1116,7 @@
         ],
         [
           "p",
-          "A) Ultrassonografia transretal da próstata e dosagem de antígeno carcinoembrionário (CEA).<br>\nB) Cistoscopia flexível associada à Urotomografia computadorizada com contraste intravenoso (Uro-TC com fase excretora).<br>\nC) Cintilografia óssea com tecnécio-99m e biópsia renal percutânea guiada por ultrassom.<br>\nD) Ressonância magnética da coluna lombossacra e dosagem seriada de PSA livre e total.<br>\nE) Antibioticoterapia empírica com fosfomicina em dose única e repetição do EAS em 30 dias."
+          "A) Ultrassonografia transretal da próstata e dosagem de antígeno carcinoembrionário (CEA).<br>\nB) Cistoscopia flexível associada à Urotomografia computadorizada com contraste intravenoso (Uro-TC com fase excretora).<br>\nC) Cintilografia óssea com tecnécio-99m e biópsia renal percutânea guiada por ultrassom.<br>\nD) Ressonância magnética da coluna lombossacra e dosagem seriada de PSA livre e total.<br>\nE) antibioticoterapia empírica direcionada ao foco (ex.: Ceftriaxona 1-2 g EV 1x/dia associada a Metronidazol 500 mg EV 8/8h em infecções intra-abdominais, ou Ceftriaxona 2 g EV 12/12h na meningite) com Fosfomicina trometamol (3 g VO em dose única) em dose única e repetição do EAS em 30 dias."
         ],
         [
           "p",
@@ -1252,7 +1256,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Cirurgia Geral. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1260,8 +1289,7 @@
             "<a href=\"https://portaldaurologia.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Urologia (SBU) — Diretrizes de Hiperplasia Prostática Benigna e Câncer de Próstata</a>",
             "<a href=\"https://uroweb.org\" target=\"_blank\" rel=\"noopener noreferrer\">European Association of Urology (EAU) — Guidelines on Prostate Cancer, Non-Neurogenic Male LUTS, Renal Cell Carcinoma and Urothelial Carcinoma</a>",
             "<a href=\"https://www.auanet.org\" target=\"_blank\" rel=\"noopener noreferrer\">American Urological Association (AUA) — Management of Lower Urinary Tract Symptoms Attributed to Benign Prostatic Hyperplasia & Early Detection of Prostate Cancer</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

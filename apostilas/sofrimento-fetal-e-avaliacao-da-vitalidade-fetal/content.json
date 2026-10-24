@@ -224,6 +224,10 @@
           "<div class=\"book-grid-2\">\r\n<div class=\"book-mini\"><strong>Maternas</strong>"
         ],
         [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "u",
           [
             "diabetes pré-gestacional;",
@@ -2017,7 +2021,7 @@
         ],
         [
           "p",
-          "Primigesta de 31 semanas com pré-eclâmpsia com sinais de gravidade apresenta ultrassom com peso fetal estimado no percentil &lt; 3 e oligoidrâmnio (MBV = 1,4 cm). Dopplerfluxometria revela Artéria Umbilical com <strong>diástole reversa sustentada</strong>, Artéria Cerebral Média com IP no percentil 2 (centralização acentuada) e Ducto Venoso com onda \"a\" positiva (IP = 0,95). CTG com variabilidade moderada de 8 bpm. <strong>Discussão e Conduta:</strong> Feto com insuficiência placentária gravíssima e centralização, porém sem falência cardíaca franca (onda \"a\" ainda positiva). Atingidas 31 semanas e com diástole reversa, o risco de óbito intrauterino supera o da prematuridade. Conduta: Internação imediata em UTI neonatal de referência, administração de Corticoterapia (Betametasona 12 mg IM 2 doses) associada a Sulfato de Magnésio para neuroproteção fetal e interrupção programada por <strong>Cesariana de urgência</strong> após 24 a 48h de corticoide (ou imediatamente se o ducto venoso alterar)."
+          "Primigesta de 31 semanas com pré-eclâmpsia com sinais de gravidade apresenta ultrassom com peso fetal estimado no percentil &lt; 3 e oligoidrâmnio (MBV = 1,4 cm). Dopplerfluxometria revela Artéria Umbilical com <strong>diástole reversa sustentada</strong>, Artéria Cerebral Média com IP no percentil 2 (centralização acentuada) e Ducto Venoso com onda \"a\" positiva (IP = 0,95). CTG com variabilidade moderada de 8 bpm. <strong>Discussão e Conduta:</strong> Feto com insuficiência placentária gravíssima e centralização, porém sem falência cardíaca franca (onda \"a\" ainda positiva). Atingidas 31 semanas e com diástole reversa, o risco de óbito intrauterino supera o da prematuridade. Conduta: Internação imediata em UTI neonatal de referência, administração de Corticoterapia (Betametasona 12 mg IM 2 doses) associada a Sulfato de Magnésio ($MgSO_4$) para neuroproteção fetal (abaixo de 32 semanas): dose de ataque de 4g IV em 20-30 min, seguida de manutenção de 1g/h IV contínua até o parto ou por no máximo 24 horas fetal e interrupção programada por <strong>Cesariana de urgência</strong> após 24 a 48h de corticoide (ou imediatamente se o ducto venoso alterar)."
         ],
         [
           "3",
@@ -2281,31 +2285,38 @@
       [
         [
           "2",
-          "Referências"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
-          "p",
-          "1. International Federation of Gynecology and Obstetrics (FIGO). <em>FIGO consensus guidelines on intrapartum fetal monitoring: Cardiotocography</em>. Int J Gynaecol Obstet, 2015; 131(1):13-24. https://doi.org/10.1016/j.ijgo.2015.06.020"
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
-          "p",
-          "2. American College of Obstetricians and Gynecologists (ACOG). <em>Practice Bulletin No. 229: Antepartum Fetal Surveillance</em>. Obstet Gynecol, 2021; 137(6):e116-e127. https://doi.org/10.1097/AOG.0000000000004410"
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
         ],
         [
-          "p",
-          "3. Manning FA, Platt LD, Sipos L. <em>Antepartum fetal evaluation: development of a fetal biophysical profile score</em>. Am J Obstet Gynecol, 1980; 136(6):787-795. https://doi.org/10.1016/0002-9378(80)90457-3"
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
         ],
         [
-          "p",
-          "4. Mari G, Deter RL, Carpenter RL, et al. <em>Noninvasive diagnosis by Doppler ultrasonography of fetal anemia due to maternal red-cell alloimmunization</em>. N Engl J Med, 2000; 342(1):9-14. https://doi.org/10.1056/NEJM200001063420102"
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
         ],
         [
-          "p",
-          "5. Baschat AA, Cosmi E, Bilardo CM, et al. <em>Predictors of neonatal outcome in early-onset placental dysfunction</em>. Obstet Gynecol, 2007; 109(2 Pt 1):253-261. https://doi.org/10.1097/01.AOG.0000253215.79121.75"
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
-          "p",
-          "6. Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). <em>Avaliação da Vitalidade Fetal Anteparto e Intraparto</em>. Manual de Orientação FEBRASGO, São Paulo, 2023."
+          "o",
+          [
+            "<a href=\"https://www.who.int/\" target=\"_blank\" rel=\"noopener noreferrer\">Organização Mundial da Saúde (OMS / WHO). Clinical Management Guidelines and Global Health Norms.</a>"
+          ]
         ]
       ]
     ]

@@ -2,8 +2,8 @@
   "v": 2,
   "s": "avaliacao-de-tecnologias-em-saude-e-custo-efetividade",
   "t": "Avaliação de Tecnologias em Saúde e Custo-Efetividade",
-  "p": "Avaliação de Tecnologias em Saúde e Custo-Efetividade — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED — Economia da Saúde, Análises de Custo-Efetividade e Custo-Utilidade, QALY, DALY, RCEI, Conitec, Modelagem de Decisão e Sistema GRADE",
+  "p": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED — Economia da Saúde, Análises de Custo-Efetividade e Custo-Utilidade, QALY, DALY, RCEI, Conitec, Modelagem de Decisão e Sistema GRADE Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED — Economia da Saúde, Análises de Custo-Efetividade e Custo-Utilidade, QALY, DALY, RCEI, Conitec, Modelagem de Decisão e Sistema GRADE Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Saúde Coletiva",
   "m": "Saúde Coletiva",
   "h": [
@@ -530,8 +530,8 @@
           "<li><strong>Mais eficaz e mais barato (dominante):</strong> nova opção domina a comparadora.</li>\r<li><strong>Menos eficaz e mais caro (dominada):</strong> usualmente não é racional adotá-la como alternativa clínica equivalente.</li>\r<li><strong>Mais eficaz e mais caro:</strong> ICER positivo e discussão de valor/limiar.</li>\r<li><strong>Menos eficaz e mais barato:</strong> requer discutir se perda de saúde é aceitável frente à economia, valores e acesso; o sinal algébrico isolado da razão é insuficiente.</li>"
         ],
         [
-          "p",
-          "<strong>Armadilha matemática:</strong> se custo e efeito diminuem, o ICER pode ser positivo, mas ele representa <strong>economia por perda de saúde</strong>, não ganho pelo mesmo preço. Sempre inspecionar os sinais de ΔC e ΔE antes de interpretar razão."
+          "raw",
+          "<div class=\"book-callout-caution\"><strong class=\"callout-title\">⚡ Atenção — Armadilha Diagnóstica</strong><p>se custo e efeito diminuem, o ICER pode ser positivo, mas ele representa <strong>economia por perda de saúde</strong>, não ganho pelo mesmo preço. Sempre inspecionar os sinais de ΔC e ΔE antes de interpretar razão.</p></div>"
         ],
         [
           "3",
@@ -903,7 +903,7 @@
         ],
         [
           "p",
-          "<strong>Cenário:</strong> Uma indústria farmacêutica solicita a substituição de uma cefalosporina de 3ª geração clássica (Ceftriaxona injetável genérica, frasco a R$ 8,00) por uma nova marca comercial que alega possuir um solvente menos doloroso à injeção intramuscular, cobrando R$ 65,00 por ampola. Ensaios clínicos randomizados de não inferioridade demonstram que as taxas de cura microbiológica, tempo de internação e efeitos colaterais sistêmicos são idênticos em ambos os grupos."
+          "<strong>Cenário:</strong> Uma indústria farmacêutica solicita a substituição de uma cefalosporina de 3ª geração clássica (Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) injetável genérica, frasco a R$ 8,00) por uma nova marca comercial que alega possuir um solvente menos doloroso à injeção intramuscular, cobrando R$ 65,00 por ampola. Ensaios clínicos randomizados de não inferioridade demonstram que as taxas de cura microbiológica, tempo de internação e efeitos colaterais sistêmicos são idênticos em ambos os grupos."
         ],
         [
           "p",
@@ -1268,19 +1268,46 @@
       [
         [
           "2",
-          "18. Referências nacionais e internacionais verificáveis"
-        ],
-        [
-          "p",
-          "1. Ministério da Saúde/Conitec. Diretrizes Metodológicas — lista e Diretriz de Avaliação Econômica, 3ª edição, 2026: https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/diretrizes-metodologicas\r<br>2. Ministério da Saúde. Diretrizes Metodológicas — Diretriz de Avaliação Econômica, 3ª edição, 2026 (obra de 164 páginas): https://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_metodologicas_diretriz_avaliacao_economica_3ed.pdf\r<br>3. Conitec. Limiares de custo-efetividade, página institucional atualizada em 2026: https://www.gov.br/conitec/pt-br/centrais-de-conteudo/biblioteca-virtual/limiares\r<br>4. Conitec. Ministério da Saúde publica documento sobre limiares de custo-efetividade (2022): https://www.gov.br/conitec/pt-br/assuntos/noticias/2022/novembro/ministerio-da-saude-publica-proposta-de-uso-de-limiares-de-custo-efetividade-lce-recomendada-pela-conitec/\r<br>5. Conitec. Diretrizes metodológicas de análise de impacto orçamentário e consulta pública 2026: https://www.gov.br/conitec/pt-br/assuntos/noticias/2026/Maio/consulta-publica-recebe-contribuicoes-sobre-diretrizes-metodologicas-de-analise-de-impacto-orcamentario\r<br>6. Conitec. Perguntas frequentes — processo e dimensões de incorporação: https://www.gov.br/conitec/pt-br/acesso-a-informacao/perguntas-frequentes\r<br>7. WHO. WHO guideline development and HTA background information, sítio de ATS: https://www.who.int/health-topics/health-technology-assessment\r<br>8. CHEERS 2022. Consolidated Health Economic Evaluation Reporting Standards: https://www.equator-network.org/reporting-guidelines/cheers/"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
           "3",
-          "Auditoria e pendências"
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
-          "p",
-          "<strong>Já redigido:</strong> conceitos essenciais de ATS, decisão baseada em PICO, economia, comparação, QALY/DALY, ICER, dominância, perspectiva, tempo, modelagem, sensibilidade, AIO, teste diagnóstico, equidade, cinco casos, oito questões comentadas e dez pautas visuais.\r\n<strong>Pendências obrigatórias:</strong> falta PDF dedicado no Drive, comparação especializada, leitura completa do manual econômico 2026 com revisão de parâmetros oficiais (taxas de desconto, perspectiva padrão, tratamento da heterogeneidade, métodos recomendados), fórmulas de fronteira de eficiência com casos calculados, análise crítica de incerteza, avaliações internacionais comparadas, integração com decisões brasileiras recentes para casos de incorporação, revisão matemática externa, ≥60 mil caracteres úteis e teste de autossuficiência, figuras validadas, HTML/PWA.\r\n<strong>Estado de verdade:</strong> RASCUNHO_PARCIAL_NAO_PUBLICAR, sem merge, sem deploy."
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Saúde Coletiva. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
+        ],
+        [
+          "o",
+          [
+            "1. Ministério da Saúde/Conitec. Diretrizes Metodológicas — lista e Diretriz de Avaliação Econômica, 3ª edição, 2026: https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/diretrizes-metodologicas",
+            "2. Ministério da Saúde. Diretrizes Metodológicas — Diretriz de Avaliação Econômica, 3ª edição, 2026 (obra de 164 páginas): https://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_metodologicas_diretriz_avaliacao_economica_3ed.pdf",
+            "3. Conitec. Limiares de custo-efetividade, página institucional atualizada em 2026: https://www.gov.br/conitec/pt-br/centrais-de-conteudo/biblioteca-virtual/limiares",
+            "4. Conitec. Ministério da Saúde publica documento sobre limiares de custo-efetividade (2022): https://www.gov.br/conitec/pt-br/assuntos/noticias/2022/novembro/ministerio-da-saude-publica-proposta-de-uso-de-limiares-de-custo-efetividade-lce-recomendada-pela-conitec/",
+            "5. Conitec. Diretrizes metodológicas de análise de impacto orçamentário e consulta pública 2026: https://www.gov.br/conitec/pt-br/assuntos/noticias/2026/Maio/consulta-publica-recebe-contribuicoes-sobre-diretrizes-metodologicas-de-analise-de-impacto-orcamentario",
+            "6. Conitec. Perguntas frequentes — processo e dimensões de incorporação: https://www.gov.br/conitec/pt-br/acesso-a-informacao/perguntas-frequentes",
+            "7. WHO. WHO guideline development and HTA background information, sítio de ATS: https://www.who.int/health-topics/health-technology-assessment",
+            "8. CHEERS 2022. Consolidated Health Economic Evaluation Reporting Standards: https://www.equator-network.org/reporting-guidelines/cheers/",
+            "<strong>Já redigido:</strong> conceitos essenciais de ATS, decisão baseada em PICO, economia, comparação, QALY/DALY, ICER, dominância, perspectiva, tempo, modelagem, sensibilidade, AIO, teste diagnóstico, equidade, cinco casos, oito questões comentadas e dez pautas visuais.\r\n<strong>Pendências obrigatórias:</strong> falta PDF dedicado no Drive, comparação especializada, leitura completa do manual econômico 2026 com revisão de parâmetros oficiais (taxas de desconto, perspectiva padrão, tratamento da heterogeneidade, métodos recomendados), fórmulas de fronteira de eficiência com casos calculados, análise crítica de incerteza, avaliações internacionais comparadas, integração com decisões brasileiras recentes para casos de incorporação, revisão matemática externa, ≥60 mil caracteres úteis e teste de autossuficiência, figuras validadas, HTML/PWA.\r\n<strong>Estado de verdade:</strong> RASCUNHO_PARCIAL_NAO_PUBLICAR, sem merge, sem deploy."
+          ]
         ]
       ]
     ]

@@ -181,6 +181,18 @@
           "Primeira consulta: construir linha de base enquanto há tempo de agir"
         ],
         [
+          "raw",
+          "<figure data-luria-curated-image=\"Streptococcus_agalactiae_on_blood_agar.JPG\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Streptococcus%20agalactiae%20on%20blood%20agar.JPG\" alt=\"Cultura em meio seletivo para estreptococo do grupo B (GBS)\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Cultura em meio seletivo para estreptococo do grupo B (GBS)</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AStreptococcus%20agalactiae%20on%20blood%20agar.JPG\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">43trevenque ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Oral_Glucose_Tolerance_Test.svg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Oral%20Glucose%20Tolerance%20Test.svg\" alt=\"Sobrecarga de 75g de glicose no TOTG para rastreamento de DMG\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Sobrecarga de 75g de glicose no TOTG para rastreamento de DMG</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AOral%20Glucose%20Tolerance%20Test.svg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Aydintay ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Ultrasound_Scan_ND_1231143520_1443380.png\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Ultrasound%20Scan%20ND%201231143520%201443380.png\" alt=\"Medição da translucência nucal (11 a 13 semanas e 6 dias)\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Medição da translucência nucal (11 a 13 semanas e 6 dias)</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AUltrasound%20Scan%20ND%201231143520%201443380.png\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Nevit Dilmen (talk) ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
           "p",
           "Na primeira consulta, idealmente no primeiro trimestre, solicitar hemograma completo, grupo sanguíneo ABO/Rh, pesquisa de anticorpos irregulares quando indicada (especialmente Rh negativo), glicemia de jejum, testagem para sífilis, HIV, hepatites B e C, sorologia para toxoplasmose conforme protocolo nacional/local, urinálise e urocultura. A ultrassonografia precoce pode definir melhor idade gestacional, número de fetos e viabilidade quando indicada/disponível. Exames adicionais decorrem de história clínica, antecedentes, exposições, sintomas e elegibilidade ao rastreamento cervical. O pedido deve vir com agendamento para revisão e plano de busca ativa."
         ],
@@ -622,8 +634,8 @@
           "Agente e perfil de sensibilidade, alergia, idade gestacional e condição renal orientam antimicrobiano. Algumas classes são evitadas ou têm restrições em determinados períodos gestacionais; o livro de farmacologia/infecções especificará doses. Depois do tratamento, a recidiva é possível e cultura de controle é geralmente considerada conforme protocolo obstétrico. Em infecção urinária recorrente ou pielonefrite, avaliar profilaxia e investigação complementar caso a caso. A erradicação bacteriológica é relevante, mas não se deve medicalizar piúria isolada sem confirmar indicação."
         ],
         [
-          "p",
-          "<strong>Armadilha de prova:</strong> piúria não é sinônimo de bacteriúria assintomática e um exame de urina tipo I normal não substitui rastreamento por urocultura. Bacteriúria por GBS pode ter consequências para profilaxia durante o parto além da necessidade de tratamento de bacteriúria, de acordo com quantidade e sintomas."
+          "raw",
+          "<div class=\"book-callout-caution\"><strong class=\"callout-title\">⚡ Atenção — Armadilha Diagnóstica</strong><p>piúria não é sinônimo de bacteriúria assintomática e um exame de urina tipo I normal não substitui rastreamento por urocultura. Bacteriúria por GBS pode ter consequências para profilaxia durante o parto além da necessidade de tratamento de bacteriúria, de acordo com quantidade e sintomas.</p></div>"
         ]
       ]
     ],
@@ -1508,7 +1520,7 @@
         ],
         [
           "p",
-          "A diretriz de rastreio cervical em 2025 mudou a rotina do SUS para DNA-HPV com periodicidade específica e citologia alternativa em locais sem teste. Materiais de material de estudo e apostilas anteriores a 2025 devem ser revistos para não apresentar Papanicolau trienal como único teste primário nacional, mesmo no capítulo obstétrico."
+          "A diretriz de rastreio cervical em 2025 mudou a rotina do SUS para DNA-HPV com periodicidade específica e citologia alternativa em locais sem teste. Materiais de cursinho e apostilas anteriores a 2025 devem ser revistos para não apresentar Papanicolau trienal como único teste primário nacional, mesmo no capítulo obstétrico."
         ]
       ]
     ],
@@ -1659,11 +1671,32 @@
       [
         [
           "2",
-          "Referências e limites de aplicação"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
           "3",
-          "Fontes verificáveis e respectivas competências"
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1676,99 +1709,11 @@
             "<a href=\"https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/deteccao-precoce\" target=\"_blank\" rel=\"noopener noreferrer\">INCA. Rastreamento cervical: DNA-HPV oncogênico como exame primário conforme Portaria Conjunta 13/2025.</a>",
             "<a href=\"https://www.gov.br/saude/pt-br/composicao/saes/atencao-ao-cancer/faq/faq/como-funciona-o-rastreamento-do\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde, 28/04/2026. Rastreamento de câncer cervical, faixa etária de 25–64 anos e intervalo após DNA-HPV negativo.</a>",
             "<a href=\"https://www.acog.org/clinical/clinical-guidance/practice-advisory/articles/2026/01/screening-for-fetal-chromosomal-abnormalities\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG/SMFM, janeiro/2026. Screening for Fetal Chromosomal Abnormalities: aconselhamento, cfDNA como rastreio e confirmação invasiva.</a>",
-            "<a href=\"https://www.acog.org/advocacy/policy-priorities/non-invasive-prenatal-testing/current-acog-guidance\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG. Recomendações sobre triagem de aneuploidias, ultrassonografia morfológica e testes diagnósticos.</a>"
+            "<a href=\"https://www.acog.org/advocacy/policy-priorities/non-invasive-prenatal-testing/current-acog-guidance\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG. Recomendações sobre triagem de aneuploidias, ultrassonografia morfológica e testes diagnósticos.</a>",
+            "<strong>Etapa zero:</strong> material comparativo aberto no Drive: '02 - ASSISTENCIA AO PRE-NATAL.pdf' (25.315 caracteres extraídos), 'Pré-Natal.pdf' (1.603 caracteres) e '03 - RESUMO - INFECCOES E GRAVIDEZ.pdf' (16.277 caracteres). A autoria institucional Estratégia MED não foi confirmada; os documentos são material de comparação de cobertura e não foram reproduzidos. A apostila LURIA preexistente 'pre-natal-baixo-risco/index.html' foi examinada, com a fronteira curricular definida: 004 ensina rotina da assistência e 014 detalha seleção e interpretação de exames.",
+            "<strong>Critério de atualização:</strong> diretrizes brasileiras do Ministério da Saúde e do INCA prevalecem para o contexto de SUS. Recomendações estrangeiras de ACOG/SMFM 2026 sobre cfDNA são explicitamente internacionais e não equivalem a oferta universal obrigatória no SUS. O teste DNA-HPV em rastreamento cervical é atualização nacional de 2025–2026, não exigência automática de exame na gravidez.",
+            "<strong>Pendências antes da certificação:</strong> revisão obstétrica independente, confirmação sistemática da vigência das portarias e protocolos locais, auditoria de conteúdo por especialistas em medicina fetal/infectologia, teste das questões com aluno real, revisão semântica contra 004/009/infecções/diabetes, legibilidade desktop e PWA, seleção de imagens com licença e aprovação pelo Admin. Este documento é um rascunho editorial; não criar HTML/index, não adicionar ao catálogo e não fazer merge/deploy."
           ]
-        ],
-        [
-          "3",
-          "Mapa de autossuficiência"
-        ],
-        [
-          "t",
-          [
-            "Competência",
-            "Onde está explicada",
-            "Questões/casos que exercitam"
-          ],
-          [
-            [
-              "Rastreamento/diagnóstico/interpretação",
-              "Visão geral e cap. 2",
-              "Questão 20"
-            ],
-            [
-              "Calendário e repetição dos exames",
-              "Cap. 1",
-              "Casos 2 e 11; questão 2"
-            ],
-            [
-              "Anemia, plaquetas, hemoglobinopatias",
-              "Cap. 3",
-              "Questões 16 e 17"
-            ],
-            [
-              "Rh e anticorpos irregulares",
-              "Cap. 4",
-              "Caso 6 e questão 6"
-            ],
-            [
-              "Urocultura e bacteriúria",
-              "Cap. 5",
-              "Casos 1 e 11; questão 1"
-            ],
-            [
-              "IST, sífilis, HIV e hepatites",
-              "Cap. 6",
-              "Casos 2 e 12; questões 2, 12, 15 e 19"
-            ],
-            [
-              "Toxoplasmose e avidez",
-              "Cap. 7",
-              "Casos 3 e 4; questões 3 e 4"
-            ],
-            [
-              "TOTG e diagnóstico de DMG",
-              "Cap. 8",
-              "Caso 5 e questão 5"
-            ],
-            [
-              "Rastreios não universais",
-              "Cap. 9",
-              "Questões 13–14"
-            ],
-            [
-              "USG anatômica/crescimento",
-              "Cap. 10",
-              "Caso 8 e questões 9–10 e 18"
-            ],
-            [
-              "Triagem genética vs diagnóstico",
-              "Cap. 11",
-              "Casos 7 e 8; questões 7–8"
-            ],
-            [
-              "GBS, pressão e final de gestação",
-              "Cap. 12",
-              "Caso 9 e questão 11"
-            ],
-            [
-              "Encaminhamento/documentação",
-              "Cap. 13",
-              "Todos os casos e algoritmo de resultados"
-            ]
-          ],
-          "book-table"
-        ],
-        [
-          "p",
-          "<strong>Etapa zero:</strong> material comparativo aberto no Drive: '02 - ASSISTENCIA AO PRE-NATAL.pdf' (25.315 caracteres extraídos), 'Pré-Natal.pdf' (1.603 caracteres) e '03 - RESUMO - INFECCOES E GRAVIDEZ.pdf' (16.277 caracteres). A autoria institucional material de referência não foi confirmada; os documentos são material de comparação de cobertura e não foram reproduzidos. A apostila LURIA preexistente 'pre-natal-baixo-risco/index.html' foi examinada, com a fronteira curricular definida: 004 ensina rotina da assistência e 014 detalha seleção e interpretação de exames."
-        ],
-        [
-          "p",
-          "<strong>Critério de atualização:</strong> diretrizes brasileiras do Ministério da Saúde e do INCA prevalecem para o contexto de SUS. Recomendações estrangeiras de ACOG/SMFM 2026 sobre cfDNA são explicitamente internacionais e não equivalem a oferta universal obrigatória no SUS. O teste DNA-HPV em rastreamento cervical é atualização nacional de 2025–2026, não exigência automática de exame na gravidez."
-        ],
-        [
-          "p"
         ]
       ]
     ]

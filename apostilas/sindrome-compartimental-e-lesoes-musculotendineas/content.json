@@ -2,8 +2,8 @@
   "v": 2,
   "s": "sindrome-compartimental-e-lesoes-musculotendineas",
   "t": "Síndrome Compartimental e Lesões Musculotendíneas",
-  "p": "Síndrome Compartimental e Lesões Musculotendíneas — Livro-Texto LURIA",
-  "d": "Tratado Completo de Emergências Ortopédicas e Traumatologia Cirúrgica: Fisiopatologia da Isquemia Neuromuscular da Síndrome Compartimental Aguda, os 6 Ps e a Dor ao Estiramento Passivo, Mensuração da PIC e Critério do Delta P, Técnica Cirúrgica de Fasciotomia de Duplo Acesso da Perna e Antebraço, e Diagnóstico/Manejo das Lesões do Manguito Rotador (Supraespinal e Jobe), Ligamentos do Joelho (LCA e Lachman), Meniscos (McMurray) e Ruptura do Tendão de Aquiles (Teste de Thompson)",
+  "p": "Tratado Completo de Emergências Ortopédicas e Traumatologia Cirúrgica: Fisiopatologia da Isquemia Neuromuscular da Síndrome Compartimental Aguda, os 6 Ps e a Dor ao Estiramento Passivo, Mensuração da PIC e Critério do Delta P, Técnica Cirúrgica de Fasciotomia de Duplo Acesso da Perna e Antebraço, e Diagnóstico/Manejo das Lesões do Manguito Rotador (Supraespinal e Jobe), Ligamentos do Joelho (LCA e Lachman), Meniscos (McMurray) e Ruptura do Tendão de Aquiles (Teste de Thompson) Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado Completo de Emergências Ortopédicas e Traumatologia Cirúrgica: Fisiopatologia da Isquemia Neuromuscular da Síndrome Compartimental Aguda, os 6 Ps e a Dor ao Estiramento Passivo, Mensuração da PIC e Critério do Delta P, Técnica Cirúrgica de Fasciotomia de Duplo Acesso da Perna e Antebraço, e Diagnóstico/Manejo das Lesões do Manguito Rotador (Supraespinal e Jobe), Ligamentos do Joelho (LCA e Lachman), Meniscos (McMurray) e Ruptura do Tendão de Aquiles (Teste de Thompson) Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Cirurgia Geral",
   "m": "Cirurgia Geral",
   "h": [
@@ -178,7 +178,7 @@
             [
               "<strong>1. PAIN (Dor Desproporcional)</strong>",
               "<strong>O SINAL MAIS PRECOCE, MAIS FREQUENTE E MAIS SENSÍVEL DA SCA!</strong>",
-              "A dor é caracteristicamente <strong>intensa, profunda, em queimação ou aperto constante, desproporcional à aparente gravidade da fratura ou lesão tecidual visível</strong>, e que tipicamente <strong>NÃO CEDE nem alivia com doses plenas de analgésicos e opioides potentes</strong> (morfina, fentanil). O paciente solicita analgesia repetidamente sem alívio.<br>\n      <strong>O TESTE SEMIOLÓGICO PADRÃO-OURO: DOR EXACERBADA PELO ESTIRAMENTO PASSIVO DOS MÚSCULOS DO COMPARTIMENTO!</strong><br>\n      - Ex.: na suspeita de SCA do compartimento anterior da perna, a <em>flexão plantar passiva do tornozelo e dos artelhos</em> estira as fibras isquêmicas do músculo tibial anterior e extensores, desencadeando dor excruciante intolerável!<br>\n      - Na SCA volar do antebraço, a <em>extensão passiva dos dedos</em> deflagra dor lancinante imediata!",
+              "A dor é caracteristicamente <strong>intensa, profunda, em queimação ou aperto constante, desproporcional à aparente gravidade da fratura ou lesão tecidual visível</strong>, e que tipicamente <strong>NÃO CEDE nem alivia com doses plenas de analgésicos e opioides potentes</strong> (Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor), fentanil). O paciente solicita analgesia repetidamente sem alívio.<br>\n      <strong>O TESTE SEMIOLÓGICO PADRÃO-OURO: DOR EXACERBADA PELO ESTIRAMENTO PASSIVO DOS MÚSCULOS DO COMPARTIMENTO!</strong><br>\n      - Ex.: na suspeita de SCA do compartimento anterior da perna, a <em>flexão plantar passiva do tornozelo e dos artelhos</em> estira as fibras isquêmicas do músculo tibial anterior e extensores, desencadeando dor excruciante intolerável!<br>\n      - Na SCA volar do antebraço, a <em>extensão passiva dos dedos</em> deflagra dor lancinante imediata!",
               "<strong>É o achado clínico mais precoce e confiável em pacientes alertas e orientados!</strong> A presença de dor ao estiramento passivo em membro sob risco exige conduta imediata."
             ],
             [
@@ -213,6 +213,10 @@
             ]
           ],
           "book-table"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Cirurgia Geral, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "3",
@@ -515,7 +519,7 @@
           "u",
           [
             "<em>Zona de Vulnerabilidade Anatômica:</em> A imensa maioria das rupturas (> 85%) ocorre na <strong>zona de hipovascularização relativa situada entre 2 e 6 centímetros proximais à inserção óssea no calcâneo</strong>.",
-            "<em>Fatores de Risco Farmacológicos e Médicos:</em>\n    <ol>\n      <li><strong>Uso Prévio de Quinolonas (Fluorquinolonas como Ciprofloxacino e Levofloxacino):</strong> As quinolonas inibem os tenócitos e promovem estresse oxidativo mitocondrial na matriz de colágeno tendíneo, elevando em até 4 a 8 vezes o risco de ruptura de Aquiles mesmo com poucos dias de uso!;",
+            "<em>Fatores de Risco Farmacológicos e Médicos:</em>\n    <ol>\n      <li><strong>Uso Prévio de Quinolonas (Fluorquinolonas como Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h) e Levofloxacino (500 mg a 750 mg VO ou EV a cada 24 horas)):</strong> As quinolonas inibem os tenócitos e promovem estresse oxidativo mitocondrial na matriz de colágeno tendíneo, elevando em até 4 a 8 vezes o risco de ruptura de Aquiles mesmo com poucos dias de uso!;",
             "<strong>Infiltração Local Intratendínea ou Peritendínea de Corticoides:</strong> Causa necrose focal de colágeno e é formalmente contraindicada em tendinopatias de Aquiles!;",
             "Uso crônico de corticosteroides orais sistêmicos, insuficiência renal crônica, hiperparatireoidismo e doenças reumatológicas inflamatórias."
           ]
@@ -567,7 +571,7 @@
         ],
         [
           "p",
-          "<strong>Identificação e História Clínica:</strong> Paciente masculino, 24 anos, motoboy, sofreu acidente de motocicleta com colisão lateral contra anteparo rígido há 14 horas. Deu entrada em pronto-socorro ortopédico com diagnóstico de fratura diafisária fechada oblíqua curta da tíbia e fíbula direitas, classificada como AO/OTA 42-A2. Foi realizada redução incruenta provisória e aplicada uma <strong>imobilização gessada inguinopodálica circular rígida fechada</strong> para analgesia e estabilização provisória enquanto aguardava leito para fixação cirúrgica definitiva. Cerca de 8 horas após a confecção do gesso, o paciente passa a queixar-se de <strong>dor excruciante, progressiva e lancinante na perna direita</strong>. Recebeu Dipirona venosa 2 g, Cetoprofeno 100 mg e duas doses de Morfina 10 mg IV em intervalo de 2 horas, <strong>sem qualquer alívio da dor</strong>. O paciente queixa-se de sensação de \"aperto explosivo\" dentro do gesso e dormência entre o primeiro e o segundo dedo do pé."
+          "<strong>Identificação e História Clínica:</strong> Paciente masculino, 24 anos, motoboy, sofreu acidente de motocicleta com colisão lateral contra anteparo rígido há 14 horas. Deu entrada em pronto-socorro ortopédico com diagnóstico de fratura diafisária fechada oblíqua curta da tíbia e fíbula direitas, classificada como AO/OTA 42-A2. Foi realizada redução incruenta provisória e aplicada uma <strong>imobilização gessada inguinopodálica circular rígida fechada</strong> para analgesia e estabilização provisória enquanto aguardava leito para fixação cirúrgica definitiva. Cerca de 8 horas após a confecção do gesso, o paciente passa a queixar-se de <strong>dor excruciante, progressiva e lancinante na perna direita</strong>. Recebeu Dipirona (1 g EV ou VO a cada 6 horas em adultos, ou 15 a 25 mg/kg/dose até 4x/dia em crianças) venosa 2 g, Cetoprofeno 100 mg e duas doses de Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor) 10 mg IV em intervalo de 2 horas, <strong>sem qualquer alívio da dor</strong>. O paciente queixa-se de sensação de \"aperto explosivo\" dentro do gesso e dormência entre o primeiro e o segundo dedo do pé."
         ],
         [
           "p",
@@ -595,7 +599,7 @@
             "<strong>Por que os pulsos distais estavam presentes?</strong>\n    <ul>\n      <li>Porque a pressão intracompartimental (em torno de 40 a 50 mmHg) é suficiente para colabar capilares e vênulas e gerar necrose muscular isquêmica, mas não supera a pressão sistólica sistêmica de 150 mmHg da artéria tibial. <strong>A presença de pulsos normais NÃO AFASTA a síndrome compartimental!</strong>",
             "<strong>Necessidade de Medir a Pressão com Agulha (PIC)?</strong>\n    <ul>\n      <li>NÃO é necessária neste paciente! Em paciente lúcido e comunicativo com quadro clínico florido e típico dos 6 Ps, a tentativa de medir a PIC apenas atrasa a descompressão cirúrgica de urgência. A aferição é reservada para comatosos ou casos duvidosos.",
             "<strong>Condutas Imediatas até o Centro Cirúrgico:</strong>\n    <ul>\n      <li>Manter a perna rigorosamente <strong>AO NÍVEL DO CORAÇÃO</strong> (não elevar e não pendurar!);",
-            "Hidratação venosa vigorosa com cristaloide para prevenir nefropatia por mioglobina;",
+            "ressuscitação volêmica guiada por metas com Ringer Lactato ou Soro Fisiológico 0,9% (20 a 30 mL/kg nas primeiras 3 horas, objetivando débito urinário ≥ 0,5 mL/kg/h) com cristaloide para prevenir nefropatia por mioglobina;",
             "Encaminhamento com caráter de urgência máxima para o bloco cirúrgico (tempo porta-bisturi < 30 minutos).",
             "<strong>Ato Cirúrgico — Fasciotomia Descompressiva Ampla de Duplo Acesso da Perna:</strong>\n    <ul>\n      <li>Realizou-se a técnica clássica de duas incisões de 22 cm:\n        <ol>\n          <li><em>Acesso Ântero-Lateral:</em> Aberta a fáscia aponeurótica do <strong>Compartimento Anterior</strong> e do <strong>Compartimento Lateral</strong>, identificando e preservando o nervo fibular superficial. Ao abrir a fáscia, o músculo tibial anterior herniou-se imediatamente para fora da ferida cirúrgica, edemaciado e pálido, recuperando a coloração rósea e sangramento em 10 minutos.",
             "<em>Acesso Póstero-Medial:</em> Incisão medial ampla, rebatendo veia safena magna e nervo safeno; abertura do <strong>Compartimento Posterior Superficial</strong>; desinserção cuidadosa do músculo sóleo da borda tibial com descompressão profunda completa do <strong>Compartimento Posterior Profundo</strong> e inspeção do feixe tibial posterior."
@@ -648,7 +652,7 @@
         ],
         [
           "p",
-          "<strong>Identificação e História Clínica:</strong> Paciente masculino, 42 anos, analista de sistemas, \"atleta de final de semana\". Praticava partida de tênis em quadra de saibro quando, ao dar uma arrancada súbita para frente para alcançar uma bola curta na rede, sentiu um <strong>estalo sonoro e uma dor violenta e lancinante na face posterior do tornozelo esquerdo</strong>. O paciente relata textualmente: <em>\"Doutor, foi como se eu tivesse levado uma pedrada violenta ou um chute com chuteira de ferro por trás no meu calcanhar!\"</em>. Chegou a olhar para trás com raiva para ver quem o havia agredido, percebendo que estava sozinho no fundo da quadra. Foi incapaz de continuar no jogo, claudicando intensamente. Refere que há cerca de 10 dias vinha tomando Ciprofloxacino oral prescrito para um quadro de sinusite aguda."
+          "<strong>Identificação e História Clínica:</strong> Paciente masculino, 42 anos, analista de sistemas, \"atleta de final de semana\". Praticava partida de tênis em quadra de saibro quando, ao dar uma arrancada súbita para frente para alcançar uma bola curta na rede, sentiu um <strong>estalo sonoro e uma dor violenta e lancinante na face posterior do tornozelo esquerdo</strong>. O paciente relata textualmente: <em>\"Doutor, foi como se eu tivesse levado uma pedrada violenta ou um chute com chuteira de ferro por trás no meu calcanhar!\"</em>. Chegou a olhar para trás com raiva para ver quem o havia agredido, percebendo que estava sozinho no fundo da quadra. Foi incapaz de continuar no jogo, claudicando intensamente. Refere que há cerca de 10 dias vinha tomando Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h) oral prescrito para um quadro de sinusite aguda."
         ],
         [
           "p",
@@ -753,7 +757,7 @@
         ],
         [
           "p",
-          "Um jovem de 21 anos é admitido no pronto-socorro ortopédico após sofrer queda de motocicleta há 6 horas, com fratura fechada do terço médio da diáfise da tíbia direita. O membro foi provisoriamente imobilizado com uma calha gessada suropodálica. O paciente evolui na enfermaria com queixa de dor intensa em queimação e aperto na perna, de caráter progressivo, refratária a duas doses de morfina venosa administradas na última hora. Ao exame físico imediato, após a retirada de toda a imobilização gessada e faixas: a perna direita encontra-se edemaciada e com musculatura intensamente tensa à palpação profunda; a flexão plantar passiva do tornozelo e dos artelhos desencadeia dor lancinante e insuportável no compartimento anterior da perna; detecta-se perda da sensibilidade no primeiro espaço interdigital dorsal do pé direito; os pulsos arteriais tibial posterior e pedioso dorsal encontram-se cheios e palpáveis bilateralmente. Diante deste quadro clínico, qual é o diagnóstico e a conduta imediata MAIS ADEQUADA?"
+          "Um jovem de 21 anos é admitido no pronto-socorro ortopédico após sofrer queda de motocicleta há 6 horas, com fratura fechada do terço médio da diáfise da tíbia direita. O membro foi provisoriamente imobilizado com uma calha gessada suropodálica. O paciente evolui na enfermaria com queixa de dor intensa em queimação e aperto na perna, de caráter progressivo, refratária a duas doses de Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor) venosa administradas na última hora. Ao exame físico imediato, após a retirada de toda a imobilização gessada e faixas: a perna direita encontra-se edemaciada e com musculatura intensamente tensa à palpação profunda; a flexão plantar passiva do tornozelo e dos artelhos desencadeia dor lancinante e insuportável no compartimento anterior da perna; detecta-se perda da sensibilidade no primeiro espaço interdigital dorsal do pé direito; os pulsos arteriais tibial posterior e pedioso dorsal encontram-se cheios e palpáveis bilateralmente. Diante deste quadro clínico, qual é o diagnóstico e a conduta imediata MAIS ADEQUADA?"
         ],
         [
           "p",
@@ -1036,7 +1040,7 @@
         ],
         [
           "p",
-          "</li>\n  <li><strong>Tendão de Aquiles Roto:</strong> Sensação de \"pedrada\", hiato palpável e <strong>Teste de Thompson POSITIVO</strong> (ausência de flexão plantar à compressão da panturrilha). Fator facilitador: <strong>Quinolonas (Ciprofloxacino)</strong>.</li>\n  <li><strong>LCA Roto:</strong> Entorse em valgo e rotação externa + \"pop\" audível + hemartrose rápida em 2h + <strong>Teste de Lachman a 20-30º positivo</strong> (o mais sensível!). Rx: <em>Fratura de Segond</em>.</li>\n  <li><strong>Menisco Roto:</strong> Bloqueio articular mecânico verdadeiro + <strong>Teste de McMurray positivo</strong>.</li>\n  <li><strong>Supraespinal Roto:</strong> Dor noturna ao deitar sobre o ombro + <strong>Teste de Jobe (Empty Can) positivo</strong>.</li>\n</ul>"
+          "</li>\n  <li><strong>Tendão de Aquiles Roto:</strong> Sensação de \"pedrada\", hiato palpável e <strong>Teste de Thompson POSITIVO</strong> (ausência de flexão plantar à compressão da panturrilha). Fator facilitador: <strong>Quinolonas (Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h))</strong>.</li>\n  <li><strong>LCA Roto:</strong> Entorse em valgo e rotação externa + \"pop\" audível + hemartrose rápida em 2h + <strong>Teste de Lachman a 20-30º positivo</strong> (o mais sensível!). Rx: <em>Fratura de Segond</em>.</li>\n  <li><strong>Menisco Roto:</strong> Bloqueio articular mecânico verdadeiro + <strong>Teste de McMurray positivo</strong>.</li>\n  <li><strong>Supraespinal Roto:</strong> Dor noturna ao deitar sobre o ombro + <strong>Teste de Jobe (Empty Can) positivo</strong>.</li>\n</ul>"
         ]
       ]
     ]

@@ -135,6 +135,10 @@
           "A pré-carga relaciona-se ao estiramento de fibras miocárdicas no final da diástole e não pode ser inferida apenas pelo volume infundido. A pós-carga é a carga contra a qual o ventrículo ejeta, influenciada por resistência e propriedades arteriais. A contratilidade depende de processos celulares e sinalização de cálcio; taquicardia intensa pode reduzir enchimento e agravar isquemia. O ventrículo direito, sensível a aumentos de resistência pulmonar, pode falhar por hipertensão pulmonar, embolia ou disfunção secundária à doença esquerda."
         ],
         [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "3",
           "Do mecanismo compensatório à progressão da doença"
         ],
@@ -172,7 +176,7 @@
         ],
         [
           "p",
-          "Na IC com FEVE reduzida, a ativação de simpático, SRAA e vasopressina sustenta perfusão nos minutos iniciais, mas cronicamente intensifica retenção de sódio, vasoconstrição, fibrose, remodelamento e arritmia. A terapia modificadora de prognóstico não é simples 'anti-hipertensivo': bloqueia mecanismos que amplificam disfunção e mortalidade. Essa fisiologia explica por que betabloqueadores podem reduzir mortalidade a longo prazo apesar de diminuírem frequência e inotropismo, desde que introduzidos em paciente estável e titulados progressivamente. Também explica por que a furosemida melhora rapidamente sintomas de congestão, porém não substitui os quatro eixos da terapia de base."
+          "Na IC com FEVE reduzida, a ativação de simpático, SRAA e vasopressina sustenta perfusão nos minutos iniciais, mas cronicamente intensifica retenção de sódio, vasoconstrição, fibrose, remodelamento e arritmia. A terapia modificadora de prognóstico não é simples 'anti-hipertensivo': bloqueia mecanismos que amplificam disfunção e mortalidade. Essa fisiologia explica por que betabloqueadores podem reduzir mortalidade a longo prazo apesar de diminuírem frequência e inotropismo, desde que introduzidos em paciente estável e titulados progressivamente. Também explica por que a furosemida melhora com agilidade sintomas de congestão, porém não substitui os quatro eixos da terapia de base."
         ],
         [
           "3",
@@ -216,7 +220,7 @@
             ],
             [
               "Taquicardia persistente",
-              "Pouco tempo diastólico, cardiomiopatia por taquicardia",
+              "curto intervalo diastólico, cardiomiopatia por taquicardia",
               "Reconhecer arritmia e tratar com segurança"
             ]
           ],
@@ -442,7 +446,7 @@
         ],
         [
           "p",
-          "A ressonância cardíaca fornece informação sobre volumes, função e padrão de realce tardio, edema e infiltrado. Realce subendocárdico/transmural tende a sugerir lesão isquêmica; realce mesocárdico ou subepicárdico pode apoiar etiologias não isquêmicas, embora exista sobreposição. Em suspeita de amiloidose, testes monoclonais séricos/urinários e cintilografia óssea com traçador apropriado podem fazer parte da avaliação, em sequência correta para não confundir ATTR com amiloidose AL. A biópsia endomiocárdica é reservada para cenários nos quais histologia tem chance de alterar tratamento, como algumas miocardites rapidamente progressivas e infiltrativas, não rotina de toda cardiomiopatia dilatada."
+          "A ressonância cardíaca fornece informação sobre volumes, função e padrão de realce tardio, edema e infiltrado. Realce subendocárdico/transmural tende a sugerir lesão isquêmica; realce mesocárdico ou subepicárdico pode apoiar etiologias não isquêmicas, embora exista sobreposição. Em suspeita de amiloidose, testes monoclonais séricos/urinários e cintilografia óssea com traçador apropriado podem fazer parte da avaliação, em sequência correta para não confundir ATTR com amiloidose AL. A biópsia endomiocárdica é reservada para cenários nos quais histologia tem chance de alterar tratamento, como algumas miocardites com agilidade progressivas e infiltrativas, não rotina de toda cardiomiopatia dilatada."
         ],
         [
           "t",
@@ -498,6 +502,18 @@
         [
           "p",
           "Na suspeita de IC, anamnese deve caracterizar padrão temporal da dispneia, limitação funcional, ortopneia, dispneia noturna, tosse, edema, ganho de peso e episódios prévios. Perguntar consumo de álcool, medicações, adesão, desencadeantes infecciosos, arritmias e sinais de isquemia. Exame investiga jugular, refluxo abdominojugular, crepitações, terceira bulha, perfusão periférica, ascite, hepatomegalia e edema. Em obesidade e na IC com FEVE preservada, alguns sinais podem ser pouco evidentes."
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"2D_Echocardiogram_showing_Mitral_Regurgitation_in_PLAX_view_-_Navi_Mumbai.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/2D%20Echocardiogram%20showing%20Mitral%20Regurgitation%20in%20PLAX%20view%20-%20Navi%20Mumbai.jpg\" alt=\"Ecocardiograma demonstrando dimensões cavitárias e função ventricular\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Ecocardiograma demonstrando dimensões cavitárias e função ventricular</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3A2D%20Echocardiogram%20showing%20Mitral%20Regurgitation%20in%20PLAX%20view%20-%20Navi%20Mumbai.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Goleisureintl ↗</a> (CC BY 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Kerley_b_lines.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Kerley%20b%20lines.jpg\" alt=\"Radiografia de tórax com congestão e linhas B de Kerley\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Radiografia de tórax com congestão e linhas B de Kerley</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AKerley%20b%20lines.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Braegel ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Journal_of_roentgenology__1918___14571705347__revised.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Journal%20of%20roentgenology%20(1918)%20(14571705347)%20revised.jpg\" alt=\"Radiografia de tórax evidenciando cardiomegalia (ICT &gt; 0,5)\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Radiografia de tórax evidenciando cardiomegalia (ICT &gt; 0,5)</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AJournal%20of%20roentgenology%20(1918)%20(14571705347)%20revised.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Western Roentgen Society ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
           "3",
@@ -776,7 +792,7 @@
         ],
         [
           "p",
-          "Na IC descompensada predominantemente vascular, hipertensão e venoconstrição redistribuem sangue para o leito pulmonar rapidamente, provocando aumento de pressão capilar mesmo sem grande ganho de volume corporal. O paciente chega subitamente com agitação, sudorese, ortopneia e edema pulmonar. Se está hipertenso e com ventilação comprometida, oxigenoterapia quando hipóxico, ventilação não invasiva quando apropriada e nitratos em cenário selecionado podem reduzir carga e melhorar sintomas, associados a avaliação de isquemia e outras causas. Dar apenas furosemida e aguardar pode ser insuficiente nessa apresentação."
+          "Na IC descompensada predominantemente vascular, hipertensão e venoconstrição redistribuem sangue para o leito pulmonar com agilidade, provocando aumento de pressão capilar mesmo sem grande ganho de volume corporal. O paciente chega subitamente com agitação, sudorese, ortopneia e edema pulmonar. Se está hipertenso e com ventilação comprometida, oxigenoterapia quando hipóxico, ventilação não invasiva quando apropriada e nitratos em cenário selecionado podem reduzir carga e melhorar sintomas, associados a avaliação de isquemia e outras causas. Dar apenas furosemida e aguardar pode ser insuficiente nessa apresentação."
         ],
         [
           "p",
@@ -824,7 +840,7 @@
         ],
         [
           "p",
-          "Oxigênio deve tratar hipoxemia, não ser prescrito automaticamente em toda pessoa com IC e saturação normal. Na congestão alveolar grave com esforço ventilatório, ventilação não invasiva pode reduzir trabalho respiratório e melhorar oxigenação rapidamente se o paciente está consciente, protege via aérea e não possui contraindicações como vômitos persistentes ou instabilidade muito severa. Quando há exaustão, rebaixamento de consciência, incapacidade de proteger via aérea ou falha de VNI, avaliar intubação em equipe experiente. A indução e pressão positiva podem precipitar colapso circulatório em paciente hipovolêmico ou com VD vulnerável; preparar suporte hemodinâmico."
+          "Oxigênio deve tratar hipoxemia, não ser prescrito automaticamente em toda pessoa com IC e saturação normal. Na congestão alveolar grave com esforço ventilatório, ventilação não invasiva pode reduzir trabalho respiratório e melhorar oxigenação com agilidade se o paciente está consciente, protege via aérea e não possui contraindicações como vômitos persistentes ou instabilidade muito severa. Quando há exaustão, rebaixamento de consciência, incapacidade de proteger via aérea ou falha de VNI, avaliar intubação em equipe experiente. A indução e pressão positiva podem precipitar colapso circulatório em paciente hipovolêmico ou com VD vulnerável; preparar suporte hemodinâmico."
         ],
         [
           "3",
@@ -1425,7 +1441,7 @@
         ],
         [
           "p",
-          "Homem de 66 anos com FEVE 28%, dispneia progressiva, ortopneia, ganho de 5 kg em dez dias, edema bilateral, jugular ingurgitada e estertores bibasais; PA 128/78 mmHg, extremidades quentes, sem confusão. <strong>Hipótese:</strong> IC descompensada perfil B, com congestão e perfusão preservada. <strong>Exames:</strong> ECG para arritmia/isquemia, eletrólitos, creatinina, hemograma, peptídeo natriurético conforme necessidade, radiografia ou US pulmonar e eco comparativo se mudança clínica. <strong>Interpretação:</strong> a PA normal não afasta pressões de enchimento elevadas; perfil quente não é 'saudável'. <strong>Conduta:</strong> descongestão com alça IV guiada por resposta, investigar falta de acesso a fármacos, arritmia e outros gatilhos, acompanhar urina, PA, rim e K+, planejar retomada/titulação dos pilares. <strong>Por que importa:</strong> o maior problema inicial é excesso de pressão/volume, sem choque que justifique inotrópico rotineiro."
+          "Homem de 66 anos com FEVE 28%, dispneia progressiva, ortopneia, ganho de 5 kg em dez dias, edema bilateral, jugular ingurgitada e estertores bibasais; PA 128/78 mmHg, extremidades quentes, sem confusão. <strong>Hipótese:</strong> IC descompensada perfil B, com congestão e perfusão preservada. <strong>Exames:</strong> ECG para arritmia/isquemia, eletrólitos, creatinina, hemograma, peptídeo natriurético conforme critérios clínicos objetivos, radiografia ou US pulmonar e eco comparativo se mudança clínica. <strong>Interpretação:</strong> a PA normal não afasta pressões de enchimento elevadas; perfil quente não é 'saudável'. <strong>Conduta:</strong> descongestão com alça IV guiada por resposta, investigar falta de acesso a fármacos, arritmia e outros gatilhos, acompanhar urina, PA, rim e K+, planejar retomada/titulação dos pilares. <strong>Por que importa:</strong> o maior problema inicial é excesso de pressão/volume, sem choque que justifique inotrópico rotineiro."
         ],
         [
           "3",
@@ -1487,7 +1503,32 @@
       [
         [
           "2",
-          "Referências e limites de aplicação"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1496,8 +1537,7 @@
             "<a href=\"https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/heart-failure\" target=\"_blank\" rel=\"noopener noreferrer\">European Society of Cardiology. ESC Guidelines for the management of heart failure, 2026.</a>",
             "<a href=\"https://academic.oup.com/eurheartj/article/47/38/5346/8766302\" target=\"_blank\" rel=\"noopener noreferrer\">ESC 2026 – artigo integral no European Heart Journal, definição fenotípica e terapias fundamentais.</a>",
             "<a href=\"https://www.portal.cardiol.br/diretrizes\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Cardiologia. Repositório oficial de diretrizes clínicas.</a>"
-          ],
-          0
+          ]
         ]
       ]
     ]

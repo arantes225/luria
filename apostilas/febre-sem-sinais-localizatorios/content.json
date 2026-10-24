@@ -2,8 +2,8 @@
   "v": 2,
   "s": "febre-sem-sinais-localizatorios",
   "t": "Febre sem Sinais Localizatórios (FSSL) na Infância",
-  "p": "Febre sem Sinais Localizatórios (FSSL) na Infância — Livro-Texto LURIA",
-  "d": "Tratado completo de abordagem clínica, diagnóstica e terapêutica da febre sem sinais localizatórios (FSSL) em neonatos (< 28 dias), lactentes jovens (29 a 90 dias) e pré-escolares (3 a 36 meses). Aborda o screening séptico neonatal, critérios de baixo risco, escala comportamental de Yale, busca ativa de ITU oculta, bacteremia e pneumonia silenciosas, casos clínicos e questões comentadas de concursos médicos.",
+  "p": "Tratado completo de abordagem clínica, diagnóstica e terapêutica da febre sem sinais localizatórios (FSSL) em neonatos (< 28 dias), lactentes jovens (29 a 90 dias) e pré-escolares (3 a 36 meses). Aborda o screening séptico neonatal, critérios de baixo risco, escala comportamental de Yale, busca ativa de ITU oculta, bacteremia e pneumonia silenciosas, casos clínicos e questões comentadas de concursos médicos. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado completo de abordagem clínica, diagnóstica e terapêutica da febre sem sinais localizatórios (FSSL) em neonatos (< 28 dias), lactentes jovens (29 a 90 dias) e pré-escolares (3 a 36 meses). Aborda o screening séptico neonatal, critérios de baixo risco, escala comportamental de Yale, busca ativa de ITU oculta, bacteremia e pneumonia silenciosas, casos clínicos e questões comentadas de concursos médicos. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Pediatria e Emergência Pediátrica",
   "m": "Pediatria / Infectologia Pediátrica",
   "h": [
@@ -148,8 +148,8 @@
           [
             "<strong>1. A Era Pré-Vacinas Conjugadas (Décadas de 1970 a 1990): O Pavor da Bacteremia Oculta por Hib e Pneumococo</strong>\n    <ul>\n      <li>Nesse período histórico, aproximadamente <strong>3% a 5% de todos os lactentes febris sem foco</strong> apresentavam <strong>Bacteremia Oculta (BO)</strong> no sangue periférico;",
             "O principal agente etiológico era o <em>Streptococcus pneumoniae</em> (responsável por 80% a 85% das bacteremias ocultas), seguido pelo temido <strong><em>Haemophilus influenzae</em> tipo b (Hib)</strong> (responsável por 10% a 15% dos casos);",
-            "A bacteremia oculta por Hib era uma catástrofe clínica silenciosa: até 20% a 30% desses lactentes aparentemente bem evoluíam rapidamente para <strong>Meningite Bacteriana fulminante purulenta, celulite periorbitária, pericardite ou choque séptico</strong>;",
-            "Por essa razão, os protocolos clássicos da época (Protocolo de Boston, Rochester e Philadelphia da década de 1990) adotavam condutas agressivas: internação hospitalar universal e antibioticoterapia empírica maciça em quase todos os lactentes febris."
+            "A bacteremia oculta por Hib era uma catástrofe clínica silenciosa: até 20% a 30% desses lactentes aparentemente bem evoluíam com agilidade para <strong>Meningite Bacteriana fulminante purulenta, celulite periorbitária, pericardite ou choque séptico</strong>;",
+            "Por essa razão, os protocolos clássicos da época (Protocolo de Boston, Rochester e Philadelphia da década de 1990) adotavam condutas agressivas: internação hospitalar universal e antibioticoterapia empírica direcionada ao foco (ex.: Ceftriaxona 1-2 g EV 1x/dia associada a Metronidazol 500 mg EV 8/8h em infecções intra-abdominais, ou Ceftriaxona 2 g EV 12/12h na meningite) maciça em quase todos os lactentes febris."
           ]
         ],
         [
@@ -185,6 +185,10 @@
         [
           "p",
           "O espectro clínico das Infecções Bacterianas Ocultas divide-se em quatro entidades patológicas essenciais:"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Pediatria e Emergência Pediátrica, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "t",
@@ -262,7 +266,7 @@
             "Imaturidade da barreira hematoencefálica (altíssima permeabilidade para a passagem de bactérias periféricas diretamente para o líquor cefalorraquidiano);",
             "Diminuição fisiológica do sistema do complemento sérico e dos níveis de fibronectina (deprimindo a opsonização bacteriana);",
             "Quimiotaxia de neutrófilos e atividade bactericida fagocítica amplamente deficitárias;",
-            "Incapacidade fisiológica de restringir infecções bacterianas a focos anatômicos localizados: qualquer foco menor evolui rapidamente para bacteremia generalizada e sepse neonatal;",
+            "Incapacidade fisiológica de restringir infecções bacterianas a focos anatômicos localizados: qualquer foco menor evolui em poucas horas para bacteremia generalizada e sepse neonatal;",
             "Quadro clínico frustro: o neonato séptico não apresenta rigidez de nuca clássica (a fontanela pode estar normotensa ou discretamente abaulada apenas nas fases finais), manifestando-se apenas com instabilidade térmica (frequentemente hipotermia em vez de febre!), letargia, sucção débil no seio materno, vômitos, icterícia tardia e gemência expiratória intermitente."
           ]
         ],
@@ -306,24 +310,24 @@
           ],
           [
             [
-              "<strong>Ampicilina IV + Gentamicina IV</strong><br>(ou Ampicilina IV + Cefotaxima IV)",
-              "<strong>Ampicilina:</strong> $100$ a $200$ mg/kg/dia divididos de 6/6h ou 8/8h (na meningite neonatal, eleva-se para $200-300$ mg/kg/dia).<br><strong>Gentamicina:</strong> $4$ a $5$ mg/kg/dia em dose única diária a cada 24 horas.<br><em>(Ou Cefotaxima: $100-150$ mg/kg/dia divididos de 8/8h).</em>",
-              "<ul>\n          <li><strong><em>Streptococcus agalactiae</em> (Strepto do Grupo B - GBS):</strong> Principal causador de sepse precoce e meningite, coberto pela Ampicilina;</li>\n          <li><strong><em>Listeria monocytogenes</em>:</strong> Bastonete gram-positivo transmitido por via transplacentária ou canal de parto, coberto soberanamente pela Ampicilina (cefalosporinas NÃO Cobrem Listeria!);</li>\n          <li><strong><em>Escherichia coli</em> e Bacilos Gram-Negativos Entéricos:</strong> Cobertos pela Gentamicina ou pela Cefotaxima.</li>\n        </ul>"
+              "<strong>Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) IV + Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas) IV</strong><br>(ou Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) IV + Cefotaxima IV)",
+              "<strong>Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas):</strong> $100$ a $200$ mg/kg/dia divididos de 6/6h ou 8/8h (na meningite neonatal, eleva-se para $200-300$ mg/kg/dia).<br><strong>Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas):</strong> $4$ a $5$ mg/kg/dia em dose única diária a cada 24 horas.<br><em>(Ou Cefotaxima: $100-150$ mg/kg/dia divididos de 8/8h).</em>",
+              "<ul>\n          <li><strong><em>Streptococcus agalactiae</em> (Strepto do Grupo B - GBS):</strong> Principal causador de sepse precoce e meningite, coberto pela Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas);</li>\n          <li><strong><em>Listeria monocytogenes</em>:</strong> Bastonete gram-positivo transmitido por via transplacentária ou canal de parto, coberto soberanamente pela Ampicilina (cefalosporinas NÃO Cobrem Listeria!);</li>\n          <li><strong><em>Escherichia coli</em> e Bacilos Gram-Negativos Entéricos:</strong> Cobertos pela Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas) ou pela Cefotaxima.</li>\n        </ul>"
             ]
           ],
           "book-table"
         ],
         [
           "4",
-          "Atenção Máxima para a Pegadinha Fatal da Ceftriaxona no Período Neonatal:"
+          "Atenção Máxima para a Pegadinha Fatal da Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) no Período Neonatal:"
         ],
         [
           "p",
-          "<strong>Por que a Ceftriaxona é FORMALMENTE CONTRAINDICADA em Recém-Nascidos (< 28 dias)?</strong>"
+          "<strong>Por que a Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) é FORMALMENTE CONTRAINDICADA em Recém-Nascidos (< 28 dias)?</strong>"
         ],
         [
           "p",
-          "<em>Portanto, se a banca de prova colocar como alternativa \"Ceftriaxona para recém-nascido de 15 dias de vida\", descarte a opção imediatamente! A cefalosporina de 3ª geração indicada no neonato é a <strong>Cefotaxima</strong>.</em>"
+          "<em>Portanto, se a banca de prova colocar como alternativa \"Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) para recém-nascido de 15 dias de vida\", descarte a opção imediatamente! A cefalosporina de 3ª geração indicada no neonato é a <strong>Cefotaxima</strong>.</em>"
         ]
       ]
     ],
@@ -405,7 +409,7 @@
           [
             "<strong>Internação hospitalar obrigatória</strong>;",
             "Coleta de <strong>Líquor por Punção Lombar</strong>, hemoculturas e urocultura por cateterismo;",
-            "Início imediato de <strong>Ceftriaxona IV ($50-75$ mg/kg/dia)</strong> ou Cefotaxima IV (associada a Ampicilina se houver suspeita de meningite por <em>Listeria</em>)."
+            "Início imediato de <strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) IV ($50-75$ mg/kg/dia)</strong> ou Cefotaxima IV (associada a Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) se houver suspeita de meningite por <em>Listeria</em>)."
           ]
         ],
         [
@@ -475,14 +479,14 @@
             ],
             [
               "<strong>2. Reação ao Estímulo dos Pais</strong>",
-              "Para de chorar rapidamente quando acolhido, consolado ou amamentado no colo.",
+              "Para de chorar com agilidade quando acolhido, consolado ou amamentado no colo.",
               "Chora e para de forma intermitente; consolo difícil e transitório.",
               "Choro inconsolável e persistente, ou indiferença total à presença materna/paterna."
             ],
             [
               "<strong>3. Estado de Alerta e Vigília</strong>",
               "Se acordado, permanece alerta e vigil; se dormindo, desperta prontamente ao estímulo verbal ou táctil leve.",
-              "Fecha os olhos rapidamente se deixado quieto; desperta apenas após estímulo moderado repetido.",
+              "Fecha os olhos com agilidade se deixado quieto; desperta apenas após estímulo moderado repetido.",
               "Não desperta ou quase não responde a estímulos dolorosos/mecânicos; letargia e estupor."
             ],
             [
@@ -632,17 +636,17 @@
             [
               "<strong>Criança Afebril e em Excelente Estado Geral</strong><br>(Yale $le 10$, brincando, alimentando-se bem)",
               "<strong><em>Streptococcus pneumoniae</em></strong><br>(Bacteremia pneumocócica autolimitada ou transitória)",
-              "<ol>\n          <li>Exame físico minucioso de cabo a rabo (descartar otite média aguda, focos osteoarticulares, petéquias);</li>\n          <li>Coletar <strong>nova hemocultura de controle</strong> para verificar clareamento bacterêmico;</li>\n          <li>Iniciar <strong>Amoxicilina em altas doses ($80-90$ mg/kg/dia VO)</strong> por 7 a 10 dias para erradicar colonização e prevenir recaída;</li>\n          <li>Se a nova hemocultura vier negativa e a criança permanecer assintomática, seguimento ambulatorial com segurança.</li>\n        </ol>"
+              "<ol>\n          <li>Exame físico minucioso de cabo a rabo (descartar otite média aguda, focos osteoarticulares, petéquias);</li>\n          <li>Coletar <strong>nova hemocultura de controle</strong> para verificar clareamento bacterêmico;</li>\n          <li>Iniciar <strong>Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) em altas doses ($80-90$ mg/kg/dia VO)</strong> por 7 a 10 dias para erradicar colonização e prevenir recaída;</li>\n          <li>Se a nova hemocultura vier negativa e a criança permanecer assintomática, seguimento ambulatorial com segurança.</li>\n        </ol>"
             ],
             [
               "<strong>Criança Permanece Febril ou com Piora do Estado Geral</strong><br>(Yale $> 10$, prostrada, irritada, inapetente)",
               "<strong>Qualquer Bactéria</strong><br>(<em>S. pneumoniae</em>, <em>H. influenzae</em>, <em>N. meningitidis</em>, <em>S. aureus</em>)",
-              "<ol>\n          <li><strong>INTERNAÇÃO HOSPITALAR IMEDIATA</strong>;</li>\n          <li><strong>Realizar Punção Lombar diagnóstica compulsória</strong> (altíssimo risco de meningite purulenta secundária à bacteremia persistente);</li>\n          <li>Coletar nova hemocultura pareada, urina estéril e radiografia de tórax;</li>\n          <li>Instalar <strong>Ceftriaxona IV ($100$ mg/kg/dia)</strong> em dose meningítica imediatamente.</li>\n        </ol>"
+              "<ol>\n          <li><strong>INTERNAÇÃO HOSPITALAR IMEDIATA</strong>;</li>\n          <li><strong>Realizar Punção Lombar diagnóstica compulsória</strong> (altíssimo risco de meningite purulenta secundária à bacteremia persistente);</li>\n          <li>Coletar nova hemocultura pareada, urina estéril e radiografia de tórax;</li>\n          <li>Instalar <strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) IV ($100$ mg/kg/dia)</strong> em dose meningítica imediatamente.</li>\n        </ol>"
             ],
             [
               "<strong>Criança em Qualquer Estado (Mesmo afebril)</strong>",
               "<strong><em>Neisseria meningitidis</em></strong> ou <strong><em>Haemophilus influenzae</em> tipo b</strong>",
-              "<ol>\n          <li><strong>INTERNAÇÃO HOSPITALAR OBRIGATÓRIA</strong> independente do aspecto clínico momentâneo;</li>\n          <li>Screening completo com <strong>Punção Lombar</strong> imediata;</li>\n          <li>Ceftriaxona parenteral IV;</li>\n          <li>Notificação epidemiológica compulsória imediata e quimioprofilaxia de contatos domiciliares próximos com Rifampicina ou Ceftriaxona dose única.</li>\n        </ol>"
+              "<ol>\n          <li><strong>INTERNAÇÃO HOSPITALAR OBRIGATÓRIA</strong> independente do aspecto clínico momentâneo;</li>\n          <li>Screening completo com <strong>Punção Lombar</strong> imediata;</li>\n          <li>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) parenteral IV;</li>\n          <li>Notificação epidemiológica compulsória imediata e quimioprofilaxia de contatos domiciliares próximos com Rifampicina ou Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) dose única.</li>\n        </ol>"
             ]
           ],
           "book-table"
@@ -746,7 +750,7 @@
         ],
         [
           "p",
-          "<strong>Alternativas:</strong><br>\n  A) Prescrever antitérmico (paracetamol), tranquilizar a mãe e orientar retorno ambulatorial caso a febre persista por mais de 48 horas.<br>\n  B) Coletar hemograma, proteína C-reativa e urina por saco coletor; se normais, liberar a criança com reavaliação em 24 horas.<br>\n  C) Internar a criança, realizar screening séptico completo (sangue, urina por punção suprapúbica ou cateterismo, e líquor) e iniciar ampicilina associada a gentamicina parenteral.<br>\n  D) Internar a criança, colher hemograma e iniciar ceftriaxona intramuscular em dose única diária, dispensando a punção lombar devido ao excelente estado geral.<br>\n  E) Solicitar sorologias para vírus respiratórios e indicar amoxicilina por via oral em regime ambulatorial."
+          "<strong>Alternativas:</strong><br>\n  A) Prescrever antitérmico (Paracetamol (500 a 1.000 mg VO a cada 6 horas, respeitando dose máxima de 4 g/dia)), tranquilizar a mãe e orientar retorno ambulatorial caso a febre persista por mais de 48 horas.<br>\n  B) Coletar hemograma, proteína C-reativa e urina por saco coletor; se normais, liberar a criança com reavaliação em 24 horas.<br>\n  C) Internar a criança, realizar screening séptico completo (sangue, urina por punção suprapúbica ou cateterismo, e líquor) e iniciar Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) associada a Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas) parenteral.<br>\n  D) Internar a criança, colher hemograma e iniciar Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) intramuscular em dose única diária, dispensando a punção lombar devido ao excelente estado geral.<br>\n  E) Solicitar sorologias para vírus respiratórios e indicar Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) por via oral em regime ambulatorial."
         ],
         [
           "p",
@@ -786,7 +790,7 @@
         ],
         [
           "p",
-          "<strong>Alternativas:</strong><br>\n  A) Alta médica imediata apenas com antitérmico, pois a escala de Yale $le 10$ descarta infecções graves em qualquer cenário.<br>\n  B) Solicitar hemograma, hemocultura, fita urinária e urocultura por cateterismo vesical aliviador, considerando o atraso vacinal e o alto risco de ITU oculta em menino não circuncidado.<br>\n  C) Realizar punção lombar imediata, devido à febre elevada acima de $39,0$ ºC com esquema vacinal incompleto.<br>\n  D) Prescrever amoxicilina empírica por via oral por 10 dias sem necessidade de qualquer exame laboratorial complementar.<br>\n  E) Coletar urina por saco coletor autoadesivo e liberar a criança com encaminhamento para o posto de saúde."
+          "<strong>Alternativas:</strong><br>\n  A) Alta médica imediata apenas com antitérmico, pois a escala de Yale $le 10$ descarta infecções graves em qualquer cenário.<br>\n  B) Solicitar hemograma, hemocultura, fita urinária e urocultura por cateterismo vesical aliviador, considerando o atraso vacinal e o alto risco de ITU oculta em menino não circuncidado.<br>\n  C) Realizar punção lombar imediata, devido à febre elevada acima de $39,0$ ºC com esquema vacinal incompleto.<br>\n  D) Prescrever Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) empírica por via oral por 10 dias sem necessidade de qualquer exame laboratorial complementar.<br>\n  E) Coletar urina por saco coletor autoadesivo e liberar a criança com encaminhamento para o posto de saúde."
         ],
         [
           "p",
@@ -806,7 +810,7 @@
         ],
         [
           "p",
-          "<strong>Alternativas:</strong><br>\n  A) Indicar punção lombar imediata para descartar meningite asséptica ou bacteriana subclínica.<br>\n  B) Solicitar radiografia de tórax para investigar pneumonia oculta (silenciosa), mesmo sem alterações auscultatórias ou desconforto respiratório.<br>\n  C) Prescrever ceftriaxona intramuscular e internar em UTI pediátrica devido à leucocitose extrema com risco iminente de choque séptico.<br>\n  D) Dar alta hospitalar apenas com sintomáticos, pois a criança é vacinada e está em bom estado geral.<br>\n  E) Prescrever amoxicilina empírica oral ambulatorial e dispensar exames adicionais."
+          "<strong>Alternativas:</strong><br>\n  A) Indicar punção lombar imediata para descartar meningite asséptica ou bacteriana subclínica.<br>\n  B) Solicitar radiografia de tórax para investigar pneumonia oculta (silenciosa), mesmo sem alterações auscultatórias ou desconforto respiratório.<br>\n  C) Prescrever Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) intramuscular e internar em UTI pediátrica devido à leucocitose extrema com risco iminente de choque séptico.<br>\n  D) Dar alta hospitalar apenas com sintomáticos, pois a criança é vacinada e está em bom estado geral.<br>\n  E) Prescrever Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) empírica oral ambulatorial e dispensar exames adicionais."
         ],
         [
           "p",
@@ -826,7 +830,7 @@
         ],
         [
           "p",
-          "<strong>Alternativas:</strong><br>\n  A) Internação hospitalar mandatória, punção lombar diagnóstica e ceftriaxona intravenosa em dose para meningite por 14 dias.<br>\n  B) Reavaliação clínica completa, coleta de nova hemocultura de controle e introdução de amoxicilina em dose alta por via oral em regime ambulatorial com seguimento próximo.<br>\n  C) Nenhuma intervenção ou antibiótico é necessário, considerando que a criança clareou a bacteremia espontaneamente e está afebril.<br>\n  D) Internação hospitalar em isolamento respiratório para profilaxia de meningococcemia com rifampicina oral.<br>\n  E) Solicitar tomografia de crânio e ecocardiograma de urgência para afastar endocardite bacteriana aguda."
+          "<strong>Alternativas:</strong><br>\n  A) Internação hospitalar mandatória, punção lombar diagnóstica e Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) intravenosa em dose para meningite por 14 dias.<br>\n  B) Reavaliação clínica completa, coleta de nova hemocultura de controle e introdução de Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) em dose máxima preconizada por via oral em regime ambulatorial com seguimento próximo.<br>\n  C) Nenhuma intervenção ou antibiótico é necessário, considerando que a criança clareou a bacteremia espontaneamente e está afebril.<br>\n  D) Internação hospitalar em isolamento respiratório para profilaxia de meningococcemia com rifampicina oral.<br>\n  E) Solicitar tomografia de crânio e ecocardiograma de urgência para afastar endocardite bacteriana aguda."
         ],
         [
           "p",
@@ -842,11 +846,11 @@
         ],
         [
           "p",
-          "<strong>Enunciado:</strong> Menina de 2 anos de idade é levada ao centro de saúde com febre diária de $39,0$ ºC há 6 dias consecutivos. A mãe relata que a criança recebeu amoxicilina prescrita em outro serviço por suspeita de virose/faringite, sem melhora. Ao exame físico: irritabilidade extrema, hiperemia conjuntival bulbar bilateral intensa sem secreção purulenta, lábios secos, fissurados e intensamente avermelhados com língua exibindo papilas proeminentes e hiperemiadas, exantema máculo-papular eritematoso difuso no tronco e períneo, além de edema endurecido doloroso no dorso dos pés e um linfonodo cervical anterior palpável à direita medindo $1,8$ cm de diâmetro, doloroso e fibroelástico. Não há sopros cardíacos audíveis. Diante do quadro clínico apresentado, assinale a opção que indica o diagnóstico mais provável, a principal complicação temida e o tratamento farmacológico inicial indicado:"
+          "<strong>Enunciado:</strong> Menina de 2 anos de idade é levada ao centro de saúde com febre diária de $39,0$ ºC há 6 dias consecutivos. A mãe relata que a criança recebeu Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) prescrita em outro serviço por suspeita de virose/faringite, sem melhora. Ao exame físico: irritabilidade extrema, hiperemia conjuntival bulbar bilateral intensa sem secreção purulenta, lábios secos, fissurados e intensamente avermelhados com língua exibindo papilas proeminentes e hiperemiadas, exantema máculo-papular eritematoso difuso no tronco e períneo, além de edema endurecido doloroso no dorso dos pés e um linfonodo cervical anterior palpável à direita medindo $1,8$ cm de diâmetro, doloroso e fibroelástico. Não há sopros cardíacos audíveis. Diante do quadro clínico apresentado, assinale a opção que indica o diagnóstico mais provável, a principal complicação temida e o tratamento farmacológico inicial indicado:"
         ],
         [
           "p",
-          "<strong>Alternativas:</strong><br>\n  A) Escarlatina; Glomerulonefrite Difusa Aguda; Penicilina Benzatina intramuscular.<br>\n  B) Mononucleose Infecciosa; Ruptura esplênica; Corticoterapia oral.<br>\n  C) Doença de Kawasaki; Aneurisma de artéria coronária; Imunoglobulina venosa humana associada a Ácido Acetilsalicílico.<br>\n  D) Síndrome do Choque Tóxico Estafilocócico; Insuficiência renal aguda; Oxacilina venosa.<br>\n  E) Febre Reumática Aguda; Cardite reumática valvar; Prednisona oral associada a repouso absoluto no leito."
+          "<strong>Alternativas:</strong><br>\n  A) Escarlatina; Glomerulonefrite Difusa Aguda; Penicilina Benzatina intramuscular.<br>\n  B) Mononucleose Infecciosa; Ruptura esplênica; Corticoterapia oral.<br>\n  C) Doença de Kawasaki; Aneurisma de artéria coronária; Imunoglobulina venosa humana associada a Ácido Acetilsalicílico.<br>\n  D) Síndrome do Choque Tóxico Estafilocócico; Insuficiência renal aguda; Oxacilina (2 g EV a cada 4 horas) venosa.<br>\n  E) Febre Reumática Aguda; Cardite reumática valvar; Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral associada a repouso absoluto no leito."
         ],
         [
           "p",
@@ -993,7 +997,7 @@
         ],
         [
           "p",
-          "Reconhecida a partir de 2020 associada temporalmente à infecção prévia pelo SARS-CoV-2 (ocorrendo tipicamente 2 a 6 semanas após infecção primária assintomática ou leve), a MIS-C compartilha traços fenotípicos com a Doença de Kawasaki e com o choque séptico bacteriano com Síndrome do Choque Tóxico. Diferencia-se de Kawasaki por acometer crianças com média de idade mais avançada (8 a 11 anos), por exibir <strong>acometimento miocárdico e choque cardiogênico fulminante</strong> com elevação estratosférica de troponina e BNP, dor abdominal lancinante mimetizando abdome agudo cirúrgico, diarreia profusa e marcadores de hiperinflamação e coagulopatia exuberantes (Ferritina $> 1.000$ ng/mL e D-Dímero muito elevado). O manejo requer terapia combinada com IVIG ($2$ g/kg) associada a pulsoterapia com metilprednisolona e suporte em UTI pediátrica."
+          "Reconhecida a partir de 2020 associada temporalmente à infecção prévia pelo SARS-CoV-2 (ocorrendo tipicamente 2 a 6 semanas após infecção primária assintomática ou leve), a MIS-C compartilha traços fenotípicos com a Doença de Kawasaki e com o choque séptico bacteriano com Síndrome do Choque Tóxico. Diferencia-se de Kawasaki por acometer crianças com média de idade mais avançada (8 a 11 anos), por exibir <strong>acometimento miocárdico e choque cardiogênico fulminante</strong> com elevação estratosférica de troponina e BNP, dor abdominal lancinante mimetizando abdome agudo cirúrgico, diarreia profusa e marcadores de hiperinflamação e coagulopatia exuberantes (Ferritina $> 1.000$ ng/mL e D-Dímero muito elevado). O manejo requer terapia combinada com IVIG ($2$ g/kg) associada a pulsoterapia com Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias) e suporte em UTI pediátrica."
         ]
       ]
     ],
@@ -1080,7 +1084,7 @@
         [
           "u",
           [
-            "<strong>Classes Farmacológicas Habitualmente Implicadas:</strong> Antimicrobianos beta-lactâmicos (penicilinas e cefalosporinas), sulfonamidas (cotrimoxazol), anticonvulsivantes (carbamazepina, fenitoína, lamotrigina), vancomicina e anfotericina B;",
+            "<strong>Classes Farmacológicas Habitualmente Implicadas:</strong> Antimicrobianos beta-lactâmicos (penicilinas e cefalosporinas), sulfonamidas (cotrimoxazol), anticonvulsivantes (carbamazepina, fenitoína, lamotrigina), Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) e anfotericina B;",
             "<strong>Pistas Diagnósticas no Paciente Hospitalizado:</strong> A febre reaparece ou se eleva após vários dias de uso do fármaco (\"febre no 7º a 10º dia de antibiótico\"), o paciente encontra-se surpreendentemente bem-disposto e eupnéico a despeito do pico febril de $39,0$ ºC (\"dissociação térmico-clínica\"), e o hemograma revela <strong>eosinofilia sérica</strong> com provas inflamatórias que não normalizam;",
             "<strong>Conduta Definitiva:</strong> Suspensão guiada do medicamento suspeito. A defervescência completa da temperatura corporal ocorre tipicamente dentro de 48 a 72 horas após a retirada do fármaco causal."
           ]
@@ -1116,19 +1120,19 @@
               "<strong>Recém-Nascido<br>(0 a 28 dias de vida)</strong>",
               "<strong>\"TOLERÂNCIA ZERO\"</strong><br>Não existe baixo risco clínico nessa idade.",
               "<strong>Screening Séptico Completo Mandatório:</strong>\n        <ul>\n          <li>Hemograma + Plaquetas + I/T;</li>\n          <li>PCR quantitativa + Procalcitonina;</li>\n          <li>Hemoculturas periféricas (2 amostras);</li>\n          <li>Urina por Cateterismo ou Punção Suprapúbica + Urocultura;</li>\n          <li><strong>Punção Lombar diagnóstica compulsória</strong> (citologia, bioquímica, Gram e cultura);</li>\n          <li>Radiografia de tórax.</li>\n        </ul>",
-              "<strong>INTERNAÇÃO HOSPITALAR OBRIGATÓRIA</strong>.<br>\n        <strong>Antibioticoterapia IV de Amplo Espectro Imediata:</strong><br>\n        <strong>Ampicilina IV</strong> ($150-200$ mg/kg/dia) + <strong>Gentamicina IV</strong> ($4-5$ mg/kg/dia 1x/dia)<br>\n        <em>(ou Cefotaxima IV se suspeita de meningite).</em><br>\n        <span style=\"color:red; font-weight:bold;\">CONTRAINDICAÇÃO FORMAL À CEFTRIAXONA!</span>"
+              "<strong>INTERNAÇÃO HOSPITALAR OBRIGATÓRIA</strong>.<br>\n        <strong>Antibioticoterapia IV de Amplo Espectro Imediata:</strong><br>\n        <strong>Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas) IV</strong> ($150-200$ mg/kg/dia) + <strong>Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas) IV</strong> ($4-5$ mg/kg/dia 1x/dia)<br>\n        <em>(ou Cefotaxima IV se suspeita de meningite).</em><br>\n        <span style=\"color:red; font-weight:bold;\">CONTRAINDICAÇÃO FORMAL À Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana)!</span>"
             ],
             [
               "<strong>Lactente Jovem<br>(29 a 90 dias de vida)</strong>",
               "<strong>Critérios de Rochester / AAP 2021:</strong><br>\n        Dividir em <em>Baixo Risco</em> vs <em>Alto Risco</em>.",
               "<strong>Lactente de Baixo Risco:</strong>\n        <ul>\n          <li>Hemograma (Leucócitos 5.000 a 15.000, bastões $< 1.500$);</li>\n          <li>PCR $< 20$ mg/L e Procalcitonina $< 0,5$ ng/mL;</li>\n          <li>Urina por cateterismo: $< 10$ leucócitos/campo e nitrito neg;</li>\n          <li><em>Punção lombar pode ser dispensada</em> se critérios rigorosos de baixo risco preenchidos (Rochester / AAP 2021).</li>\n        </ul>\n        <strong>Se Alto Risco:</strong> Rastreio completo incluindo líquor.",
-              "<strong>Baixo Risco:</strong> Opção de seguimento ambulatorial com reavaliação médica presencial mandatória em 24h (com ou sem dose de Ceftriaxona $50$ mg/kg IM), ou observação hospitalar sem antibióticos aguardando culturas.<br>\n        <strong>Alto Risco:</strong> Internação hospitalar + <strong>Ceftriaxona IV ($50-100$ mg/kg/dia)</strong>."
+              "<strong>Baixo Risco:</strong> Opção de seguimento ambulatorial com reavaliação médica presencial mandatória em 24h (com ou sem dose de Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) $50$ mg/kg IM), ou observação hospitalar sem antibióticos aguardando culturas.<br>\n        <strong>Alto Risco:</strong> Internação hospitalar + <strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) IV ($50-100$ mg/kg/dia)</strong>."
             ],
             [
               "<strong>Lactente e Pré-Escolar<br>(3 a 36 meses de idade)</strong>",
               "<strong>Escala de Observação de Yale (YOS):</strong><br>\n        $le 10$ (Bom estado), $11-15$ (Dúbio), $ge 16$ (Tóxico).<br>\n        Verificar <strong>Carteira de Vacinação</strong> (VPC e Hib $ge 2$ doses).",
               "<strong>1. Criança em Bom Estado Geral (Yale $le 10$) Vacinada:</strong>\n        <ul>\n          <li>Não coletar hemograma ou hemocultura de rotina;</li>\n          <li><strong>Rastrear ITU Oculta:</strong> Meninas $< 24$m com febre $ge 39$ ºC $> 48$h ou meninos não circuncidados $< 12$m com febre $> 24$h colhem urina por cateterismo estéril;</li>\n          <li>Radiografia de tórax se febre $ge 39$ ºC e Leucócitos $> 20.000$ (suspeita de pneumonia oculta).</li>\n        </ul>\n        <strong>2. Se Não Vacinada com Febre $ge 39$ ºC:</strong> Hemograma + Hemocultura + Urina.<br>\n        <strong>3. Se Yale $ge 16$ (Tóxico):</strong> Sepse workup completo com líquor.",
-              "<strong>Bom Estado Geral:</strong> Tratamento ambulatorial e sintomáticos. Se ITU confirmada: antibiótico oral (Cefixima, Cefuroxima, Amoxicilina-clavulanato).<br>\n        <strong>Estado Tóxico:</strong> Sala de ressuscitação / UTI Pediátrica, ressuscitação volêmica (bolus de cristalóide $20$ mL/kg) e <strong>Ceftriaxona IV ($100$ mg/kg/dia)</strong> na 1ª hora."
+              "<strong>Bom Estado Geral:</strong> Tratamento ambulatorial e sintomáticos. Se ITU confirmada: antibiótico oral (Cefixima, Cefuroxima, Amoxicilina-Clavulanato (875/125 mg VO 12/12h ou 1g/200mg EV 8/8h)).<br>\n        <strong>Estado Tóxico:</strong> Sala de ressuscitação / UTI Pediátrica, ressuscitação volêmica (bolus de cristalóide $20$ mL/kg) e <strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) IV ($100$ mg/kg/dia)</strong> na 1ª hora."
             ]
           ],
           "book-table"
@@ -1177,7 +1181,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Pediatria e Emergência Pediátrica. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1195,8 +1224,7 @@
             "Feldman HA, et al. Pediatric multisystem inflammatory syndrome temporally associated with SARS-CoV-2 (MIS-C): A systematic review. JAMA Pediatrics, v. 175, n. 8, p. 834-845, 2021.",
             "World Health Organization (WHO). Pocket Book of Hospital Care for Children: Guidelines for the Management of Common Childhood Illnesses. 2. ed. Geneva: WHO, 2013.",
             "Subcommittee on Urinary Tract Infection. Reaffirmation: Urinary Tract Infection: Clinical Practice Guideline for the Diagnosis and Management of the Initial UTI in Febrile Infants and Young Children 2 to 24 Months. Pediatrics, v. 138, n. 6, e20163026, 2016."
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

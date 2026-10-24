@@ -2,8 +2,8 @@
   "v": 2,
   "s": "abordagem-familiar-genograma-e-ecomapa",
   "t": "Abordagem Familiar, Genograma e Ecomapa",
-  "p": "Abordagem Familiar, Genograma e Ecomapa — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "p": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Medicina de Família e Comunidade",
   "m": "Medicina de Família e Comunidade",
   "h": [
@@ -187,6 +187,10 @@
         [
           "3",
           "2.1 Os 6 Estágios Clássicos de Betty Carter & Monica McGoldrick (1989)"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina de Família e Comunidade, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "p",
@@ -872,7 +876,7 @@
             [
               "<strong>AD1</strong><br>(Baixa Complexidade / Estável)",
               "<strong>Equipes de Atenção Primária à Saúde (eSF / eAP)</strong> apoiadas pela eMulti (antigo NASF).",
-              "Pacientes que possuem <strong>dificuldade ou impossibilidade física de locomoção até a UBS</strong>, mas que apresentam problemas de saúde <strong>compensados/controlados</strong> e necessitam de cuidados de menor frequência e menor complexidade técnica (geralmente visitas médicas/enfermagem mensais ou conforme necessidade e visitas regulares do ACS).",
+              "Pacientes que possuem <strong>dificuldade ou impossibilidade física de locomoção até a UBS</strong>, mas que apresentam problemas de saúde <strong>compensados/controlados</strong> e necessitam de cuidados de menor frequência e menor complexidade técnica (geralmente visitas médicas/enfermagem mensais ou conforme critérios clínicos objetivos e visitas regulares do ACS).",
               "• Idoso acamado por sequela crônica estável de AVC ou demência avançada;<br>• Troca de sonda vesical de demora de rotina ou curativo simples;<br>• Puérpera e recém-nascido na 1ª semana de vida."
             ],
             [
@@ -1409,7 +1413,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina de Família e Comunidade. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1418,8 +1447,7 @@
             "<a href=\"https://www.sbmfc.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">CARTER, B.; McGOLDRICK, M. As Mudanças no Ciclo de Vida Familiar: Uma Estrutura para a Terapia Familiar. 2ª ed. Porto Alegre: Artmed, 1995.</a>",
             "<a href=\"https://www.sbmfc.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">GUSSO, G.; LOPES, J. M. C.; DIAS, L. C. Tratado de Medicina de Família e Comunidade: Princípios, Formação e Prática. 2ª ed. Porto Alegre: Artmed, 2019.</a>",
             "<a href=\"https://bvsms.saude.gov.br\" target=\"_blank\" rel=\"noopener noreferrer\">BRASIL. Ministério da Saúde. Caderno de Atenção Domiciliar e Portaria nº 825/2016 (Redefine a Atenção Domiciliar no SUS). Brasília: MS, 2016/2024.</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

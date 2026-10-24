@@ -2,8 +2,8 @@
   "v": 2,
   "s": "pancreatite-aguda",
   "t": "Pancreatite Aguda: Do Diagnóstico ao Step-Up Approach",
-  "p": "Pancreatite Aguda: Do Diagnóstico ao Step-Up Approach — Livro-Texto LURIA",
-  "d": "Critérios de Atlanta revisados, estratificação prognóstica, hidratação por metas, coleções e abordagem minimamente invasiva",
+  "p": "Critérios de Atlanta revisados, estratificação prognóstica, hidratação por metas, coleções e abordagem minimamente invasiva Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Critérios de Atlanta revisados, estratificação prognóstica, hidratação por metas, coleções e abordagem minimamente invasiva Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Clínica Médica",
   "m": "Gastroenterologia e Terapia Intensiva",
   "h": [
@@ -135,6 +135,10 @@
           "Etiologias Principais e Mecanismos Específicos"
         ],
         [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Clínica Médica, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "t",
           [
             "Etiologia",
@@ -170,7 +174,7 @@
             [
               "<strong>Drogas e Medicamentos</strong>",
               "1% a 2% dos casos",
-              "Imunorreatividade idiossincrática, toxicidade direta celular ou acúmulo de metabólitos tóxicos. Fármacos com associação classe I comprovada: azatioprina, 6-mercaptopurina, didanosina, ácido valproico, furosemida, tiazídicos, tetraciclina, sulfametoxazol-trimetoprima, pentamidina e estrógenos.",
+              "Imunorreatividade idiossincrática, toxicidade direta celular ou acúmulo de metabólitos tóxicos. Fármacos com associação classe I comprovada: azatioprina, 6-mercaptopurina, didanosina, ácido valproico, furosemida, tiazídicos, tetraciclina, Sulfametoxazol-Trimetoprima (800/160 mg VO ou EV 12/12h para ITU/partes moles, ou 15-20 mg/kg/dia com base no trimetoprima em 3-4 doses para pneumocistose), pentamidina e estrógenos.",
               "Diagnóstico de exclusão após afastar biliar, alcoólica e triglicerídeos. Melhora com a suspensão imediata do medicamento implicado."
             ],
             [
@@ -256,7 +260,7 @@
         [
           "o",
           [
-            "<strong>Quadro clínico compatível:</strong> Dor abdominal em andar superior (epigástrio e hipocôndrio direito), de início súbito ou rapidamente progressivo, de intensidade moderada a lancinante, em faixa ou facada, com irradiação típica para o dorso (em 50% a 70% dos pacientes), frequentemente acompanhada de náuseas, vômitos incontroláveis que não aliviam a dor, taquicardia e distensão abdominal decorrente de íleo paralítico reflexo. A dor tende a sofrer discreto alívio na posição genupeitoral (posição de prece maometana) ou com a flexão anterior do tronco;",
+            "<strong>Quadro clínico compatível:</strong> Dor abdominal em andar superior (epigástrio e hipocôndrio direito), de início súbito ou com agilidade progressivo, de intensidade moderada a lancinante, em faixa ou facada, com irradiação típica para o dorso (em 50% a 70% dos pacientes), frequentemente acompanhada de náuseas, vômitos incontroláveis que não aliviam a dor, taquicardia e distensão abdominal decorrente de íleo paralítico reflexo. A dor tende a sofrer discreto alívio na posição genupeitoral (posição de prece maometana) ou com a flexão anterior do tronco;",
             "<strong>Laboratório específico:</strong> Atividade sérica de amilase e/ou lípase elevada em pelo menos <strong>3 vezes o Limite Superior da Normalidade (LSN)</strong> do método de referência laboratorial adotado pelo serviço;",
             "<strong>Achados compatíveis em exame de imagem:</strong> Alterações morfológicas típicas de pancreatite aguda documentadas em Tomografia Computadorizada (TC) de abdome com contraste endovenoso, Ressonância Magnética (RM) ou Ultrassonografia (USG) abdominal."
           ]
@@ -289,7 +293,7 @@
             [
               "<strong>Cinética Enzimática</strong>",
               "Eleva-se em 4 a 8 horas, atinge pico em 24 horas e <strong>permanece elevada por 8 a 14 dias</strong> devido à reabsorção tubular renal.",
-              "Eleva-se rapidamente em 2 a 12 horas, atinge pico em 24 a 48 horas e <strong>normaliza precocemente em 3 a 5 dias</strong> devido ao rápido clareamento renal."
+              "Eleva-se no intervalo de 2 a 12 horas, atinge pico em 24 a 48 horas e <strong>normaliza precocemente em 3 a 5 dias</strong> devido ao rápido clareamento renal."
             ],
             [
               "<strong>Desempenho em Casos Tardios</strong>",
@@ -779,7 +783,7 @@
         ],
         [
           "p",
-          "A dor na pancreatite aguda é de grande magnitude e perpetua o tônus simpático nocivo e o espasmo microvascular. O controle álgico deve ser agressivo e escalonado. O uso de opioides (morfina, hidromorfona, fentanil) é seguro e eficaz. O receio clássico de que a morfina induziria espasmo grave do esfíncter de Oddi carece de relevância clínica comprovada em humanos; entretanto, derivados sintéticos e opioides como fentanil, dipirona e paracetamol endovenosos são amplamente empregados."
+          "A dor na pancreatite aguda é de grande magnitude e perpetua o tônus simpático nocivo e o espasmo microvascular. O controle álgico deve ser agressivo e escalonado. O uso de opioides (Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor), hidromorfona, fentanil) é seguro e eficaz. O receio clássico de que a Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor) induziria espasmo grave do esfíncter de Oddi carece de relevância clínica comprovada em humanos; entretanto, derivados sintéticos e opioides como fentanil, Dipirona (1 g EV ou VO a cada 6 horas em adultos, ou 15 a 25 mg/kg/dose até 4x/dia em crianças) e Paracetamol (500 a 1.000 mg VO a cada 6 horas, respeitando dose máxima de 4 g/dia) endovenosos são amplamente empregados."
         ],
         [
           "3",
@@ -836,7 +840,7 @@
           "u",
           [
             "<strong>Carbapenêmicos (Fármacos de Escolha):</strong> Meropenem (1 g EV a cada 8h) ou Imipenem/Cilastatina (500 mg EV a cada 6h);",
-            "<strong>Opções Alternativas:</strong> Ciprofloxacino ou Levofloxacino associado a Metronidazol; ou Piperacilina-Tazobactam."
+            "<strong>Opções Alternativas:</strong> Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h) ou Levofloxacino (500 mg a 750 mg VO ou EV a cada 24 horas) associado a Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase); ou Piperacilina-Tazobactam (4,5 g EV em infusão estendida de 3-4h a cada 6 horas)."
           ]
         ],
         [
@@ -954,7 +958,7 @@
             "<strong>Ultrassonografia Abdominal Seriada:</strong> A USG inicial pode ser prejudicada pela presença de gases decorrentes de íleo adinâmico em até 30% a 40% dos casos. A repetição do exame ultrassonográfico após alguns dias ou a realização de USG dedicada à procura de barro biliar (<em>sludge</em>) e cálculos &lt; 3 mm tem alto rendimento diagnóstico;",
             "<strong>Colangiorressonância Magnética (CPRM):</strong> Método de imagem não invasivo com alta resolução espacial para o estudo da árvore biliar e ducto de Wirsung. Detecta coledocolitíase distal não obstrutiva, anomalias anatômicas como pâncreas divisum (fusão incompleta dos ductos dorsal e ventral, sobrecarregando a papila menor) e tumores periampulares ou ductais incipientes (como Neoplasia Mucinosa Papilar Intraductal - IPMN);",
             "<strong>Ecoendoscopia (Ultrassonografia Endoscópica - EUS):</strong> É o exame padrão-ouro para investigar pancreatite recorrente de etiologia indeterminada. Apresenta sensibilidade superior a 95% para detectar microlitíases da vesícula biliar, cálculos milimétricos no colédoco distal, tumores neuroendócrinos ou adenocarcinomas pancreáticos milimétricos e sinais parenquimatosos sutis de pancreatite crônica incipiente;",
-            "<strong>Pesquisa de Pancreatite Autoimune:</strong> Dosagem de imunoglobulina G subclasse 4 (IgG4). A pancreatite autoimune tipo 1 cursa com aumento de IgG4 e acometimento sistêmico (colangite esclerosante, fibrose retroperitoneal), enquanto o tipo 2 é restrito ao pâncreas e associado à Retocolite Ulcerativa. Ambas respondem dramaticamente à corticoterapia sistêmica com prednisona;",
+            "<strong>Pesquisa de Pancreatite Autoimune:</strong> Dosagem de imunoglobulina G subclasse 4 (IgG4). A pancreatite autoimune tipo 1 cursa com aumento de IgG4 e acometimento sistêmico (colangite esclerosante, fibrose retroperitoneal), enquanto o tipo 2 é restrito ao pâncreas e associado à Retocolite Ulcerativa. Ambas respondem dramaticamente à corticoterapia sistêmica com Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo);",
             "<strong>Painel Genético Molecular:</strong> Indicado em casos com histórico familiar positivo em primeiro grau ou episódios recorrentes na infância/adolescência. Pesquisa de mutações em <em>PRSS1</em> (pancreatite hereditária autossômica dominante de alta penetrância e risco cumulativo de câncer pancreático de 40%), <em>SPINK1</em>, <em>CFTR</em> (mucoviscidose/fibrose cística) e <em>CTRC</em>."
           ]
         ],
@@ -964,7 +968,7 @@
         ],
         [
           "p",
-          "Na pancreatite induzida por hipertrigliceridemia (níveis de triglicerídeos superiores a 1.000 mg/dL), além do suporte volêmico habitual, instituem-se medidas metabólicas específicas com o objetivo de reduzir rapidamente a trigliceridemia para níveis seguros (&lt; 500 mg/dL):"
+          "Na pancreatite induzida por hipertrigliceridemia (níveis de triglicerídeos superiores a 1.000 mg/dL), além do suporte volêmico habitual, instituem-se medidas metabólicas específicas com o objetivo de reduzir com agilidade a trigliceridemia para níveis seguros (&lt; 500 mg/dL):"
         ],
         [
           "u",
@@ -1010,7 +1014,7 @@
         ],
         [
           "p",
-          "<strong>Discussão e Conduta:</strong>\n  1. O paciente preenche os critérios diagnósticos de Atlanta (dor clínica típica + elevação de lípase &gt; 24x o LSN). A tomografia computadorizada é desnecessária e contraindicada neste momento admissional inicial.<br>\n  2. A etiologia é litiásica (biliar), comprovada pela presença de colelitíase com micromicrólitos à USG e elevação precoce de ALT &gt; 150 U/L.<br>\n  3. A conduta clínica imediata é a hidratação venosa moderada guiada por metas com Ringer Lactato (1,5 a 2,0 mL/kg/h), analgesia com dipirona e opioides endovenosos e monitorização do débito urinário e hematócrito.<br>\n  4. Não há indicação de antibioticoterapia profilática nem de CPRE de urgência (colédoco fino, sem icterícia obstrutiva persistente e ausência de sinais de colangite).<br>\n  5. Uma vez resolvida a dor e reintroduzida a dieta oral com boa tolerância, o paciente deve ser submetido à <strong>colecistectomia videolaparoscópica durante a mesma internação hospitalar</strong>, antes da alta médica."
+          "<strong>Discussão e Conduta:</strong>\n  1. O paciente preenche os critérios diagnósticos de Atlanta (dor clínica típica + elevação de lípase &gt; 24x o LSN). A tomografia computadorizada é desnecessária e contraindicada neste momento admissional inicial.<br>\n  2. A etiologia é litiásica (biliar), comprovada pela presença de colelitíase com micromicrólitos à USG e elevação precoce de ALT &gt; 150 U/L.<br>\n  3. A conduta clínica imediata é a hidratação venosa moderada guiada por metas com Ringer Lactato (1,5 a 2,0 mL/kg/h), analgesia com Dipirona (1 g EV ou VO a cada 6 horas em adultos, ou 15 a 25 mg/kg/dose até 4x/dia em crianças) e opioides endovenosos e monitorização do débito urinário e hematócrito.<br>\n  4. Não há indicação de antibioticoterapia profilática nem de CPRE de urgência (colédoco fino, sem icterícia obstrutiva persistente e ausência de sinais de colangite).<br>\n  5. Uma vez resolvida a dor e reintroduzida a dieta oral com boa tolerância, o paciente deve ser submetido à <strong>colecistectomia videolaparoscópica durante a mesma internação hospitalar</strong>, antes da alta médica."
         ],
         [
           "4",
@@ -1022,7 +1026,7 @@
         ],
         [
           "p",
-          "A) Deve-se solicitar Tomografia Computadorizada de abdome com contraste imediatamente para quantificar a porcentagem de necrose pancreática e definir a gravidade.<br>\n  B) Está indicada a prescrição imediata de ciprofloxacino associado a metronidazol para profilaxia de necrose infectada devido ao antecedente alcoólico.<br>\n  C) A hidratação venosa com Ringer Lactato deve ser iniciada de imediato de forma moderada e direcionada por metas clínicas de perfusão, evitando a sobrecarga volêmica agressiva.<br>\n  D) A dieta oral deve ser suspensa obrigatoriamente por 7 a 10 dias até a completa normalização dos níveis séricos de lípase e amilase.<br>\n  E) O escore de Ranson deve ser finalizado nas primeiras 12 horas para definir a necessidade de internação em unidade de terapia intensiva."
+          "A) Deve-se solicitar Tomografia Computadorizada de abdome com contraste imediatamente para quantificar a porcentagem de necrose pancreática e definir a gravidade.<br>\n  B) Está indicada a prescrição imediata de Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h) associado a Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) para profilaxia de necrose infectada devido ao antecedente alcoólico.<br>\n  C) A hidratação venosa com Ringer Lactato deve ser iniciada de imediato de forma moderada e direcionada por metas clínicas de perfusão, evitando a sobrecarga volêmica agressiva.<br>\n  D) A dieta oral deve ser suspensa obrigatoriamente por 7 a 10 dias até a completa normalização dos níveis séricos de lípase e amilase.<br>\n  E) O escore de Ranson deve ser finalizado nas primeiras 12 horas para definir a necessidade de internação em unidade de terapia intensiva."
         ],
         [
           "p",
@@ -1038,7 +1042,7 @@
         ],
         [
           "p",
-          "A) Laparotomia exploradora mediana de emergência com necrosectomia aberta ampla e drenagem em bolsa de Bogotá.<br>\n  B) Início de antibioticoterapia de amplo espectro com carbapenêmico e drenagem percutânea retroperitoneal ou drenagem endoscópica transluminal da coleção.<br>\n  C) Manutenção de conduta expectante com aumento do suporte vasopressor e punção aspirativa diagnóstica para aguardar antibiograma em 72 horas.<br>\n  D) Colangiopancreatografia retrógrada endoscópica com papilotomia e passagem de prótese biliar.<br>\n  E) Ressonância magnética de abdome para diferenciar necrose tecidual de pseudocisto estéril."
+          "A) Laparotomia exploradora mediana de emergência com necrosectomia aberta ampla e drenagem em bolsa de Bogotá.<br>\n  B) Início de antibioticoterapia direcionada de amplo espectro (ex.: Piperacilina-Tazobactam (4,5 g EV em infusão estendida de 3-4h a cada 6 horas) 4,5 g EV 6/6h associado ou não a Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) 15-20 mg/kg EV 12/12h conforme o foco) com carbapenêmico e drenagem percutânea retroperitoneal ou drenagem endoscópica transluminal da coleção.<br>\n  C) Manutenção de conduta expectante com aumento do suporte vasopressor e punção aspirativa diagnóstica para aguardar antibiograma em 72 horas.<br>\n  D) Colangiopancreatografia retrógrada endoscópica com papilotomia e passagem de prótese biliar.<br>\n  E) Ressonância magnética de abdome para diferenciar necrose tecidual de pseudocisto estéril."
         ],
         [
           "p",
@@ -1116,14 +1120,35 @@
       [
         [
           "2",
-          "10. Síntese Prática, Fluxograma de Decisão e Referências Bibliográficas"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
-          "4",
-          "Guia de Conduta Rápida na Pancreatite Aguda"
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
-          "u",
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Clínica Médica. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
+        ],
+        [
+          "o",
           [
             "<strong>Diagnóstico (2 de 3):</strong> Dor típica em faixa + Enzimas &gt;= 3x LSN (Lípase preferencial) + Imagem compatível. Não fazer TC admissional se os dois primeiros estiverem presentes!",
             "<strong>Etiologia:</strong> Biliar (mais comum, ALT &gt; 150) e Alcoólica (segunda mais comum). Investigar triglicerídeos (&gt; 1.000 mg/dL), drogas e CPRE prévia.",
@@ -1133,16 +1158,7 @@
             "<strong>Nutrição:</strong> Dieta oral precoce na leve assim que a dor regredir. Enteral precoce por sonda (nasogástrica ou nasoenteral) na pancreatite moderada/grave se jejum prolongado. NPT apenas em exceções.",
             "<strong>Antibioticoprofilaxia:</strong> FORMALMENTE PROSCRITA. Não usar de rotina nem mesmo na presença de necrose estéril!",
             "<strong>Necrose Infectada (Fase Tardia):</strong> Suspeita com piora séptica ou presença de gás à TC. Tratar com carbapenêmico e <em>Step-Up Approach</em> (drenagem percutânea/endoscópica em primeiro lugar; necrosectomia minimamente invasiva apenas se refratário após 72h). Postergada idealmente por &gt; 4 semanas.",
-            "<strong>Momento da Colecistectomia:</strong> Na mesma internação hospitalar para pancreatite biliar leve; tardia (&gt; 6-8 semanas) na pancreatite biliar grave ou necrosante."
-          ]
-        ],
-        [
-          "3",
-          "Referências Bibliográficas Fundamentais"
-        ],
-        [
-          "o",
-          [
+            "<strong>Momento da Colecistectomia:</strong> Na mesma internação hospitalar para pancreatite biliar leve; tardia (&gt; 6-8 semanas) na pancreatite biliar grave ou necrosante.",
             "Banks PA, Bollen TL, Dervenis C, et al. Classification of acute pancreatitis—2012: revision of the Atlanta classification and definitions by international consensus. <em>Gut</em>. 2013;62(1):102-111.",
             "de-Madaria E, Buxbaum JL, Maisonneuve P, et al. Aggressive or moderate fluid resuscitation in acute pancreatitis (WATERFALL). <em>New England Journal of Medicine</em>. 2022;387(15):1349-1359.",
             "van Santvoort HC, Besselink MG, Bakker OJ, et al. A step-up approach or open necrosectomy for necrotizing pancreatitis (PANTER). <em>New England Journal of Medicine</em>. 2010;362(16):1491-1502.",

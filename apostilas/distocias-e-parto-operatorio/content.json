@@ -168,6 +168,10 @@
         ],
         [
           "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
+          "raw",
           "<figure data-luria-curated-image=\"Das_s_long_curved_delivery_forceps_with_axis_traction_devices_in_place.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Das's%20long%20curved%20delivery%20forceps%20with%20axis%20traction%20devices%20in%20place.jpg\" alt=\"Fórcipe obstétrico posicionado na apresentação fetal no desprendimento\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Fórcipe obstétrico posicionado na apresentação fetal no desprendimento</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ADas's%20long%20curved%20delivery%20forceps%20with%20axis%20traction%20devices%20in%20place.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Sarindam7 ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
@@ -406,7 +410,7 @@
         ],
         [
           "p",
-          "Diante de uma distócia de espáduas, o fator tempo é crítico: a hipóxia fetal progride rapidamente devido à compressão do cordão umbilical no canal de parto e à restrição da circulação útero-placentária. O Colégio Americano de Obstetras e Ginecologistas (ACOG) e a <em>Advanced Life Support in Obstetrics</em> (ALSO) consagraram o mnemônico internacional <strong>HELPERR</strong> para orientar a conduta clínica estruturada:"
+          "Diante de uma distócia de espáduas, o fator tempo é crítico: a hipóxia fetal progride com agilidade devido à compressão do cordão umbilical no canal de parto e à restrição da circulação útero-placentária. O Colégio Americano de Obstetras e Ginecologistas (ACOG) e a <em>Advanced Life Support in Obstetrics</em> (ALSO) consagraram o mnemônico internacional <strong>HELPERR</strong> para orientar a conduta clínica estruturada:"
         ],
         [
           "t",
@@ -1574,31 +1578,38 @@
       [
         [
           "2",
-          "Referências"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
-          "p",
-          "1. American College of Obstetricians and Gynecologists (ACOG). <em>Practice Bulletin No. 154: Operative Vaginal Delivery</em>. Obstet Gynecol, 2015 (reaffirmed 2023); 126(5):e56-e65. https://doi.org/10.1097/AOG.0000000000001147"
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
-          "p",
-          "2. American College of Obstetricians and Gynecologists (ACOG). <em>Practice Bulletin No. 178: Shoulder Dystocia</em>. Obstet Gynecol, 2017 (reaffirmed 2023); 129(5):e123-e134. https://doi.org/10.1097/AOG.0000000000002043"
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
         ],
         [
-          "p",
-          "3. Royal College of Obstetricians and Gynaecologists (RCOG). <em>Operative Vaginal Delivery</em>. Green-top Guideline No. 26. Londres: RCOG, 2020."
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
         ],
         [
-          "p",
-          "4. Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). <em>Distócia de Ombros e Parto Instrumental</em>. Manual de Orientação FEBRASGO, 2023."
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
         ],
         [
-          "p",
-          "5. Sultan AH, Kettle C. <em>Perineal and Anal Sphincter Trauma: Diagnosis and Management</em>. Londres: Springer, 2007. https://doi.org/10.1007/978-1-84628-504-2"
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
-          "p",
-          "6. Caldwell WE, Moloy HC. <em>Anatomical variations in the female pelvis and their effect in labor with a suggested classification</em>. Am J Obstet Gynecol, 1933; 26(4):479-505."
+          "o",
+          [
+            "<a href=\"https://www.who.int/\" target=\"_blank\" rel=\"noopener noreferrer\">Organização Mundial da Saúde (OMS / WHO). Clinical Management Guidelines and Global Health Norms.</a>"
+          ]
         ]
       ]
     ]

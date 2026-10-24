@@ -2,8 +2,8 @@
   "v": 2,
   "s": "notificacao-compulsoria-de-doencas-e-agravos",
   "t": "Notificação Compulsória de Doenças e Agravos",
-  "p": "Tratado completo sobre Notificação Compulsória no Sistema Único de Saúde (SUS) e Regulamento Sanitário Internacional (RSI 2005) para concursos de Residência Médica e ENAMED: fundamentos doutrinários e legais (Lei Federal nº 6.259/1975, Lei nº 8.080/1990, Portarias de Consolidação nº 4 e 5, e Portarias GM/MS vigentes atualizadas 2024–2026); conceito e finalidade sanitária (\"informação para a ação\"); obrigatoriedade legal e ética do profissional de saúde (Artigo 269 do Código Penal Brasileiro e infração ao Código de Ética Médica); quem deve notificar; o preceito inegociável da notificação na suspeita clínica (vedação absoluta de aguardar confirmação diagnóstica ou laboratorial); Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública (DNC); cronologia e periodicidade rígida: Notificação Imediata em até 24 horas (comunicação pelo canal mais rápido à SMS, SES e Ministério da Saúde) versus Notificação Semanal em até 7 dias; Notificação Negativa sistemática; instrumentos do SINAN (Ficha de Notificação Individual — FNI e Ficha de Investigação de Caso — FIC); fluxo de retroalimentação e encerramento de casos; 4 casos clínicos estruturados com conduta de vigilância em saúde e questões comentadas na íntegra.",
-  "d": "Tratado completo sobre Notificação Compulsória no Sistema Único de Saúde (SUS) e Regulamento Sanitário Internacional (RSI 2005) para concursos de Residência Médica e ENAMED: fundamentos doutrinários e legais (Lei Federal nº 6.259/1975, Lei nº 8.080/1990, Portarias de Consolidação nº 4 e 5, e Portarias GM/MS vigentes atualizadas 2024–2026); conceito e finalidade sanitária (\"informação para a ação\"); obrigatoriedade legal e ética do profissional de saúde (Artigo 269 do Código Penal Brasileiro e infração ao Código de Ética Médica); quem deve notificar; o preceito inegociável da notificação na suspeita clínica (vedação absoluta de aguardar confirmação diagnóstica ou laboratorial); Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública (DNC); cronologia e periodicidade rígida: Notificação Imediata em até 24 horas (comunicação pelo canal mais rápido à SMS, SES e Ministério da Saúde) versus Notificação Semanal em até 7 dias; Notificação Negativa sistemática; instrumentos do SINAN (Ficha de Notificação Individual — FNI e Ficha de Investigação de Caso — FIC); fluxo de retroalimentação e encerramento de casos; 4 casos clínicos estruturados com conduta de vigilância em saúde e questões comentadas na íntegra.",
+  "p": "Tratado completo sobre Notificação Compulsória no Sistema Único de Saúde (SUS) e Regulamento Sanitário Internacional (RSI 2005) para concursos de Residência Médica e ENAMED: fundamentos doutrinários e legais (Lei Federal nº 6.259/1975, Lei nº 8.080/1990, Portarias de Consolidação nº 4 e 5, e Portarias GM/MS vigentes atualizadas 2024–2026); conceito e finalidade sanitária (\"informação para a ação\"); obrigatoriedade legal e ética do profissional de saúde (Artigo 269 do Código Penal Brasileiro e infração ao Código de Ética Médica); quem deve notificar; o preceito inegociável da notificação na suspeita clínica (vedação absoluta de aguardar confirmação diagnóstica ou laboratorial); Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública (DNC); cronologia e periodicidade rígida: Notificação Imediata em até 24 horas (comunicação pelo canal mais rápido à SMS, SES e Ministério da Saúde) versus Notificação Semanal em até 7 dias; Notificação Negativa sistemática; instrumentos do SINAN (Ficha de Notificação Individual — FNI e Ficha de Investigação de Caso — FIC); fluxo de retroalimentação e encerramento de casos; 4 casos clínicos estruturados com conduta de vigilância em saúde e questões comentadas na íntegra. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado completo sobre Notificação Compulsória no Sistema Único de Saúde (SUS) e Regulamento Sanitário Internacional (RSI 2005) para concursos de Residência Médica e ENAMED: fundamentos doutrinários e legais (Lei Federal nº 6.259/1975, Lei nº 8.080/1990, Portarias de Consolidação nº 4 e 5, e Portarias GM/MS vigentes atualizadas 2024–2026); conceito e finalidade sanitária (\"informação para a ação\"); obrigatoriedade legal e ética do profissional de saúde (Artigo 269 do Código Penal Brasileiro e infração ao Código de Ética Médica); quem deve notificar; o preceito inegociável da notificação na suspeita clínica (vedação absoluta de aguardar confirmação diagnóstica ou laboratorial); Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública (DNC); cronologia e periodicidade rígida: Notificação Imediata em até 24 horas (comunicação pelo canal mais rápido à SMS, SES e Ministério da Saúde) versus Notificação Semanal em até 7 dias; Notificação Negativa sistemática; instrumentos do SINAN (Ficha de Notificação Individual — FNI e Ficha de Investigação de Caso — FIC); fluxo de retroalimentação e encerramento de casos; 4 casos clínicos estruturados com conduta de vigilância em saúde e questões comentadas na íntegra. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Medicina Preventiva",
   "m": "Vigilância Epidemiológica e Notificação Sanitária",
   "h": [
@@ -166,6 +166,10 @@
         [
           "3",
           "1. Notificação Compulsória Imediata (Em até 24 Horas)"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina Preventiva, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "p",
@@ -350,7 +354,7 @@
         ],
         [
           "p",
-          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Caso 1 (Tuberculose):</strong> Notificação compulsória <strong>SEMANAL</strong> (em até 7 dias). Trata-se de agravo transmissível de curso crônico manejado programmaticamente na APS.<br>\n• <strong>Caso 2 (Acidente por Animal Peçonhento):</strong> Notificação compulsória <strong>IMEDIATA (até 24 horas)</strong>. A vigilância epidemiológica precisa monitorar estoques de soros antivenenos e investigar o foco animal.<br>\n• <strong>Caso 3 (Sífilis em gestante):</strong> Notificação compulsória <strong>SEMANAL</strong> (em até 7 dias). O tratamento com penicilina benzatina deve ser iniciado na hora, mas a comunicação ao SINAN é semanal.<br>\n• <strong>Caso 4 (Doença Meningocócica):</strong> Notificação compulsória <strong>IMEDIATA (até 24 horas)</strong>. É fundamental deflagrar a quimioprofilaxia de contatos íntimos nas primeiras horas com rifampicina ou ceftriaxona para conter surtos secundários de alta letalidade.<br>\nPortanto, apenas os casos 2 e 4 exigem notificação imediata em até 24h. Alternativa B correta."
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Caso 1 (Tuberculose):</strong> Notificação compulsória <strong>SEMANAL</strong> (em até 7 dias). Trata-se de agravo transmissível de curso crônico manejado programmaticamente na APS.<br>\n• <strong>Caso 2 (Acidente por Animal Peçonhento):</strong> Notificação compulsória <strong>IMEDIATA (até 24 horas)</strong>. A vigilância epidemiológica precisa monitorar estoques de soros antivenenos e investigar o foco animal.<br>\n• <strong>Caso 3 (Sífilis em gestante):</strong> Notificação compulsória <strong>SEMANAL</strong> (em até 7 dias). O tratamento com penicilina benzatina deve ser iniciado na hora, mas a comunicação ao SINAN é semanal.<br>\n• <strong>Caso 4 (Doença Meningocócica):</strong> Notificação compulsória <strong>IMEDIATA (até 24 horas)</strong>. É fundamental deflagrar a quimioprofilaxia de contatos íntimos nas primeiras horas com rifampicina ou Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) para conter surtos secundários de alta letalidade.<br>\nPortanto, apenas os casos 2 e 4 exigem notificação imediata em até 24h. Alternativa B correta."
         ],
         [
           "3",
@@ -400,7 +404,7 @@
         ],
         [
           "p",
-          "</li>\n  <li><strong>5. Notificação Negativa:</strong> Declaração semanal obrigatória de que nenhum caso ocorreu. Prova que o sistema está <strong>ativo e vigilante</strong>, descartando o silêncio epidemiológico artificial.</li>\n  <li><strong>6. Sigilo Médico vs Dever Legal:</strong> O sigilo médico cede expressamente diante do dever legal de notificação compulsória (justa causa ética do CEM).</li>\n  <li><strong>7. Acidente de Trabalho:</strong> Deve ser notificado no SINAN e ter <strong>CAT emitida até o 1º dia útil seguinte</strong>, havendo ou não afastamento das atividades laborais! Acidente grave ou com óbito exige notificação imediata em até 24h.</li>\n  <li><strong>8. Instrumentos do SINAN:</strong> FNI (Ficha de Notificação Individual na entrada) vs FIC (Ficha de Investigação de Caso aprofundada de campo).</li>\n  <li><strong>9. Bloqueio Vacinal no Sarampo:</strong> A notificação imediata do caso suspeito desencadeia o <strong>bloqueio vacinal com tríplice viral em até 72 horas</strong> nos contactantes da creche/domicílio a partir dos 6 meses de vida.</li>\n  <li><strong>10. Quimioprofilaxia da Meningite Meningocócica:</strong> Notificação imediata deflagra a quimioprofilaxia dos contatos íntimos nas primeiras 24-48h com <strong>Rifampicina oral por 2 dias</strong> (ou Ceftriaxona dose única em gestantes).</li>\n</ul>"
+          "</li>\n  <li><strong>5. Notificação Negativa:</strong> Declaração semanal obrigatória de que nenhum caso ocorreu. Prova que o sistema está <strong>ativo e vigilante</strong>, descartando o silêncio epidemiológico artificial.</li>\n  <li><strong>6. Sigilo Médico vs Dever Legal:</strong> O sigilo médico cede expressamente diante do dever legal de notificação compulsória (justa causa ética do CEM).</li>\n  <li><strong>7. Acidente de Trabalho:</strong> Deve ser notificado no SINAN e ter <strong>CAT emitida até o 1º dia útil seguinte</strong>, havendo ou não afastamento das atividades laborais! Acidente grave ou com óbito exige notificação imediata em até 24h.</li>\n  <li><strong>8. Instrumentos do SINAN:</strong> FNI (Ficha de Notificação Individual na entrada) vs FIC (Ficha de Investigação de Caso aprofundada de campo).</li>\n  <li><strong>9. Bloqueio Vacinal no Sarampo:</strong> A notificação imediata do caso suspeito desencadeia o <strong>bloqueio vacinal com tríplice viral em até 72 horas</strong> nos contactantes da creche/domicílio a partir dos 6 meses de vida.</li>\n  <li><strong>10. Quimioprofilaxia da Meningite Meningocócica:</strong> Notificação imediata deflagra a quimioprofilaxia dos contatos íntimos nas primeiras 24-48h com <strong>Rifampicina oral por 2 dias</strong> (ou Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) dose única em gestantes).</li>\n</ul>"
         ]
       ]
     ],
@@ -478,7 +482,7 @@
           "u",
           [
             "<strong>Acidentes Ofídicos e por Animais Peçonhentos (Notificação em até 24h):</strong>\n    <ul>\n      <li><em>Acidente Botrópico (Jararaca - 85% dos acidentes ofídicos no Brasil):</em> Ação proteolítica (inflamação e necrose local), coagulante (consumo de fibrinogênio com sangue incoagulável) e hemorrágica (lesão endotelial sistêmica por hemorraginas com hematúria, gengivorragia e choque). Tratamento: <strong>Soro Antibotrópico (SAB)</strong> em doses de 2 a 4 ampolas (leve), 4 a 8 ampolas (moderado) ou 12 ampolas (grave) por via venosa sem teste de sensibilidade prévio;",
-            "<em>Acidente Crotálico (Cascavel - 10% dos casos):</em> Ação neurotóxica (fascies miastênica de Rosenfeld com ptose palpebral bilateral, oftalmoplegia e visão turva), miotóxica (rabdomiólise com dor muscular difusa e mioglobinúria com urina cor de coca-cola) e coagulante. Risco crítico: <strong>Insuficiência Renal Aguda por necrose tubular aguda pigmentar mioglobinúrica</strong>. Tratamento: <strong>Soro Anticrotálico (SAC)</strong> associado a hidratação venosa vigorosa e alcalinização urinária com bicarbonato de sódio para manter fluxo urinário &gt; 2 mL/kg/h;",
+            "<em>Acidente Crotálico (Cascavel - 10% dos casos):</em> Ação neurotóxica (fascies miastênica de Rosenfeld com ptose palpebral bilateral, oftalmoplegia e visão turva), miotóxica (rabdomiólise com dor muscular difusa e mioglobinúria com urina cor de coca-cola) e coagulante. Risco crítico: <strong>Insuficiência Renal Aguda por necrose tubular aguda pigmentar mioglobinúrica</strong>. Tratamento: <strong>Soro Anticrotálico (SAC)</strong> associado a ressuscitação volêmica guiada por metas com Ringer Lactato ou Soro Fisiológico 0,9% (20 a 30 mL/kg nas primeiras 3 horas, objetivando débito urinário ≥ 0,5 mL/kg/h) e alcalinização urinária com bicarbonato de sódio para manter fluxo urinário &gt; 2 mL/kg/h;",
             "<em>Acidente Laquético (Surucucu - florestas tropicais):</em> Ação idêntica à botrópica associada a <strong>síndrome vagal intensa</strong> (bradicardia, hipotensão, cólicas abdominais e diarreia profusa). Tratamento: <strong>Soro Antibotrópico-Laquético (SABL)</strong>;",
             "<em>Acidente Elapídico (Coral verdadeira):</em> Ação neurotóxica pura com paralisia precoce da musculatura respiratória. Tratar com <strong>Soro Antielapídico (SAE)</strong> e suporte de ventilação mecânica."
           ]
@@ -505,7 +509,7 @@
             "Atendimento multidisciplinar humanizado sem exigência de boletim de ocorrência policial ou autorização judicial;",
             "<em>Profilaxia da Gravidez Indesejada:</em> <strong>Levonorgestrel oral (dose única de 1,5 mg)</strong> administrado idealmente nas primeiras 72 horas (podendo ser utilizado até 120 horas / 5 dias);",
             "<em>Profilaxia do HIV (PEP Sexual):</em> <strong>Tenofovir + Lamivudina + Dolutegravir por 28 dias</strong>, iniciada obrigatoriamente nas primeiras 72 horas;",
-            "<em>Profilaxia de ISTs Não Virais:</em> <strong>Ceftriaxona 500 mg IM em dose única</strong> (gonorreia) + <strong>Azitromicina 1g oral em dose única</strong> (clamídia) + <strong>Metronidazol 2g oral em dose única</strong> (tricomoníase);",
+            "<em>Profilaxia de ISTs Não Virais:</em> <strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) 500 mg IM em dose única</strong> (gonorreia) + <strong>Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1g oral em dose única</strong> (clamídia) + <strong>Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) 2g oral em dose única</strong> (tricomoníase);",
             "<em>Profilaxia da Hepatite B:</em> Vacina + Imunoglobulina específica (IGHA) se vítima não imunizada."
           ]
         ]
@@ -609,7 +613,7 @@
         ],
         [
           "p",
-          "<strong>Identificação e Queixa:</strong> Menino de 4 anos é admitido na enfermaria de neuropediatria de hospital regional com história de fraqueza muscular rapidamente progressiva iniciada há 3 dias. A mãe relata que a criança apresentou quadro febril baixo e diarreia há 1 semana, seguido por dificuldade para ficar de pé e claudicação. Ao exame neurológico: lúcido, sem sinais meníngeos, hipotonia muscular acentuada em membros inferiores com predomínio no membro inferior direito, com força muscular grau 2 à direita e grau 4 à esquerda (paralisia assimétrica), reflexo patelar e aquileu abolidos à direita (arreflexia osteotendínea profunda) e sensibilidade tátil e dolorosa integralmente preservadas. A caderneta vacinal revela apenas 2 doses de vacina inativada contra poliomielite (VIP) nos primeiros meses de vida, sem doses subsequentes."
+          "<strong>Identificação e Queixa:</strong> Menino de 4 anos é admitido na enfermaria de neuropediatria de hospital regional com história de fraqueza muscular com agilidade progressiva iniciada há 3 dias. A mãe relata que a criança apresentou quadro febril baixo e diarreia há 1 semana, seguido por dificuldade para ficar de pé e claudicação. Ao exame neurológico: lúcido, sem sinais meníngeos, hipotonia muscular acentuada em membros inferiores com predomínio no membro inferior direito, com força muscular grau 2 à direita e grau 4 à esquerda (paralisia assimétrica), reflexo patelar e aquileu abolidos à direita (arreflexia osteotendínea profunda) e sensibilidade tátil e dolorosa integralmente preservadas. A caderneta vacinal revela apenas 2 doses de vacina inativada contra poliomielite (VIP) nos primeiros meses de vida, sem doses subsequentes."
         ],
         [
           "p",
@@ -724,7 +728,7 @@
             ],
             [
               "<strong>Notificação Imediata APENAS à Secretaria Municipal de Saúde (SMS) em até 24h</strong>",
-              "• <strong>Doença Meningocócica e Outras Meningites</strong> (a esfera municipal organiza a quimioprofilaxia de contatos imediatos com rifampicina nas primeiras horas);<br>\n        • <strong>Coqueluche</strong> (bloqueio quimioprofilático e atualização vacinal dos contatos domiciliares e escolares mais próximos);<br>\n        • <strong>Difteria</strong> (busca de contatos, quimioprofilaxia com eritromicina/penicilina e isolamento respiratório de gotículas);<br>\n        • <strong>Tétano Acidental e Neonatal</strong> (investigação do foco ambiental e assistência hospitalar imediata em leito de UTI);<br>\n        • <strong>Febre Maculosa e Rickettsioses</strong> (orientação terapêutica empírica imediata com doxiciclina e controle de carrapatos no peridomicílio).",
+              "• <strong>Doença Meningocócica e Outras Meningites</strong> (a esfera municipal organiza a quimioprofilaxia de contatos imediatos com rifampicina nas primeiras horas);<br>\n        • <strong>Coqueluche</strong> (bloqueio quimioprofilático e atualização vacinal dos contatos domiciliares e escolares mais próximos);<br>\n        • <strong>Difteria</strong> (busca de contatos, quimioprofilaxia com eritromicina/penicilina e isolamento respiratório de gotículas);<br>\n        • <strong>Tétano Acidental e Neonatal</strong> (investigação do foco ambiental e assistência hospitalar imediata em leito de UTI);<br>\n        • <strong>Febre Maculosa e Rickettsioses</strong> (orientação terapêutica empírica imediata com Doxiciclina (100 mg VO a cada 12 horas) e controle de carrapatos no peridomicílio).",
               "O bloqueio profilático dos contatos ou a investigação do foco primário ocorre no território de residência e convivência do paciente, cuja competência de campo é prioritariamente local da vigilância do município."
             ]
           ],
@@ -868,7 +872,7 @@
         ],
         [
           "p",
-          "<strong>Enunciado:</strong> Um médico plantonista atende em uma Unidade de Pronto Atendimento (UPA) um paciente de 19 anos com febre alta ($39,5^circ\\text{C}$), cefaleia holocraniana intensa, vômitos em jato, rigidez de nuca nítida e petéquias disseminadas em tronco e membros inferiores. A punção lombar revela líquor turvo, com 4.800 leucócitos/$mm^3$ (95% neutrófilos), glicose de 10 mg/dL e visualização de diplococos Gram-negativos aos pares à bacterioscopia. O médico inicia ceftriaxona endovenosa e isolamento respiratório de gotículas. Em relação à notificação compulsória deste caso, assinale a opção que descreve a conduta estritamente correta:"
+          "<strong>Enunciado:</strong> Um médico plantonista atende em uma Unidade de Pronto Atendimento (UPA) um paciente de 19 anos com febre alta ($39,5^circ\\text{C}$), cefaleia holocraniana intensa, vômitos em jato, rigidez de nuca nítida e petéquias disseminadas em tronco e membros inferiores. A punção lombar revela líquor turvo, com 4.800 leucócitos/$mm^3$ (95% neutrófilos), glicose de 10 mg/dL e visualização de diplococos Gram-negativos aos pares à bacterioscopia. O médico inicia Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) endovenosa e isolamento respiratório de gotículas. Em relação à notificação compulsória deste caso, assinale a opção que descreve a conduta estritamente correta:"
         ],
         [
           "p",
@@ -990,7 +994,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina Preventiva. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1002,8 +1031,7 @@
             "<a href=\"https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/decreto/d10212.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Decreto Federal nº 10.212/2020 — Promulgação das Emendas ao RSI-2005</a>",
             "<a href=\"https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Decreto-Lei nº 2.848/1940 — Código Penal Brasileiro (Art. 269)</a>",
             "<a href=\"https://portal.cfm.org.br/etica-medica/codigo-de-etica-medica/\" target=\"_blank\" rel=\"noopener noreferrer\">Conselho Federal de Medicina — Código de Ética Médica</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

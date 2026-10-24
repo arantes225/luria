@@ -2,8 +2,8 @@
   "v": 2,
   "s": "infeccoes-sexualmente-transmissiveis",
   "t": "Infecções Sexualmente Transmissíveis (IST)",
-  "p": "Infecções Sexualmente Transmissíveis (IST) — Livro-Texto LURIA",
-  "d": "Diretrizes Clínicas PCDT IST 2026 · Abordagem Sindrômica e Etiológica · Sífilis, Gonorreia, Clamídia, Úlceras Genitais e Verrugas Anogenitais",
+  "p": "Diretrizes Clínicas PCDT IST 2026 · Abordagem Sindrômica e Etiológica · Sífilis, Gonorreia, Clamídia, Úlceras Genitais e Verrugas Anogenitais Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Diretrizes Clínicas PCDT IST 2026 · Abordagem Sindrômica e Etiológica · Sífilis, Gonorreia, Clamídia, Úlceras Genitais e Verrugas Anogenitais Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Ginecologia e Obstetrícia",
   "m": "Ginecologia Geral e Infecciosa",
   "h": [
@@ -162,14 +162,18 @@
             "Gonorreia e clamídia podem existir em uretra, colo, reto e faringe. O sítio a testar deve acompanhar o <strong>sítio exposto</strong>.",
             "Sífilis: teste treponêmico demonstra infecção atual ou passada; VDRL/RPR fornece título útil para atividade e seguimento. História de tratamento muda a interpretação.",
             "Gestante com sífilis deve receber <strong>penicilina benzatina</strong> imediatamente quando indicada; é o tratamento com eficácia estabelecida para prevenir sífilis congênita. Entre doses semanais, o ideal é 7 dias e o limite atual aceito é 9 dias.",
-            "No Brasil, o PCDT vigente ainda recomenda para gonorreia não complicada <strong>ceftriaxona 500 mg IM + azitromicina 1 g VO, ambas em dose única</strong>.",
+            "No Brasil, o PCDT vigente ainda recomenda para gonorreia não complicada <strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) 500 mg IM + Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g VO, ambas em dose única</strong>.",
             "Primeiro episódio de herpes genital: aciclovir sistêmico reduz duração e intensidade, mas não erradica o HSV.",
             "Verruga por HPV é diagnóstico predominantemente clínico; tratar a lesão não significa eliminar a infecção viral.",
-            "PEP para HIV é urgência: exposição recente deve ser avaliada rapidamente. Em 2026, o SUS incorporou também a <strong>DoxiPEP</strong> para prevenção de sífilis e clamídia em população elegível; não deve ser generalizada como automedicação após qualquer relação.",
+            "PEP para HIV é urgência: exposição recente deve ser avaliada com agilidade. Em 2026, o SUS incorporou também a <strong>DoxiPEP</strong> para prevenção de sífilis e clamídia em população elegível; não deve ser generalizada como automedicação após qualquer relação.",
             "Vacina HPV no SUS: rotina de 9 a 14 anos em dose única; há esquemas específicos para imunossuprimidos e outros grupos e estratégia de resgate para 15–19 anos não vacinados em 2026.",
             "Uma consulta por IST deve terminar com quatro respostas: <strong>o que tratar agora, o que testar, quais parcerias precisam ser abordadas e qual prevenção reduzirá nova exposição</strong>.",
             "Falha terapêutica verdadeira é diagnóstico de exclusão: primeiro verifique adesão, reinfecção, sítio extragenital e parceria não tratada."
           ]
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Ginecologia e Obstetrícia, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ]
       ]
     ],
@@ -815,7 +819,7 @@
         ],
         [
           "p",
-          "Quando penicilina realmente não puder ser utilizada, o PCDT admite alternativas em não gestantes: para sífilis recente, doxiciclina 100 mg VO a cada 12 horas por 15 dias; para sífilis tardia ou de duração ignorada, doxiciclina 100 mg VO a cada 12 horas por 30 dias. Essas alternativas exigem adesão e seguimento mais cuidadosos e <strong>não substituem penicilina na gestação</strong>."
+          "Quando penicilina realmente não puder ser utilizada, o PCDT admite alternativas em não gestantes: para sífilis recente, Doxiciclina (100 mg VO a cada 12 horas) 100 mg VO a cada 12 horas por 15 dias; para sífilis tardia ou de duração ignorada, Doxiciclina (100 mg VO a cada 12 horas) 100 mg VO a cada 12 horas por 30 dias. Essas alternativas exigem adesão e seguimento mais cuidadosos e <strong>não substituem penicilina na gestação</strong>."
         ],
         [
           "3",
@@ -910,17 +914,17 @@
           [
             [
               "Gonorreia não complicada: uretra, colo, reto ou faringe",
-              "Ceftriaxona 500 mg IM, dose única + azitromicina 1 g VO, dose única",
+              "Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) 500 mg IM, dose única + Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g VO, dose única",
               "o PCDT nacional vigente ainda utiliza terapia combinada"
             ],
             [
               "Clamídia",
-              "Azitromicina 1 g VO, dose única OU doxiciclina 100 mg VO 12/12 h por 7 dias",
-              "doxiciclina não é opção na gestação no PCDT"
+              "Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g VO, dose única OU Doxiciclina (100 mg VO a cada 12 horas) 100 mg VO 12/12 h por 7 dias",
+              "Doxiciclina (100 mg VO a cada 12 horas) não é opção na gestação no PCDT"
             ],
             [
               "Infecção gonocócica disseminada, exceto meningite/endocardite",
-              "Ceftriaxona 1 g IM ou IV ao dia por pelo menos 7 dias + azitromicina 1 g VO, dose única",
+              "Ceftriaxona 1 g IM ou IV ao dia por pelo menos 7 dias + Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g VO, dose única",
               "avaliar internação e acometimento sistêmico"
             ],
             [
@@ -961,7 +965,7 @@
         ],
         [
           "p",
-          "Persistência de secreção/disúria após esquema adequado exige nova história sexual e confirmação objetiva de uretrite. Reinfecção é frequente. Entre causas alternativas estão <i>Mycoplasma genitalium</i>, <i>Trichomonas vaginalis</i>, prostatite, irritação química e diagnósticos não infecciosos. O PCDT brasileiro traz azitromicina 1 g VO em dose única como opção para uretrite por <i>M. genitalium</i>, mas a resistência macrolídica crescente torna importante seguir atualização local e, quando disponível, diagnóstico molecular e teste de resistência."
+          "Persistência de secreção/disúria após esquema adequado exige nova história sexual e confirmação objetiva de uretrite. Reinfecção é frequente. Entre causas alternativas estão <i>Mycoplasma genitalium</i>, <i>Trichomonas vaginalis</i>, prostatite, irritação química e diagnósticos não infecciosos. O PCDT brasileiro traz Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g VO em dose única como opção para uretrite por <i>M. genitalium</i>, mas a resistência macrolídica crescente torna importante seguir atualização local e, quando disponível, diagnóstico molecular e teste de resistência."
         ],
         [
           "3",
@@ -1016,7 +1020,7 @@
           [
             [
               "Tricomoníase",
-              "Metronidazol 2 g VO, dose única OU metronidazol 500 mg VO 12/12 h por 7 dias",
+              "Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) 2 g VO, dose única OU Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) 500 mg VO 12/12 h por 7 dias",
               "Devem ser tratadas, mesmo assintomáticas."
             ]
           ],
@@ -1032,7 +1036,7 @@
         ],
         [
           "p",
-          "NAAT é mais sensível quando disponível. A microscopia a fresco tem especificidade útil quando demonstra o protozoário móvel, mas sensibilidade limitada e cai rapidamente com atraso na leitura da amostra."
+          "NAAT é mais sensível quando disponível. A microscopia a fresco tem especificidade útil quando demonstra o protozoário móvel, mas sensibilidade limitada e cai com agilidade com atraso na leitura da amostra."
         ],
         [
           "3",
@@ -1206,17 +1210,17 @@
             [
               "Cancroide — <i>Haemophilus ducreyi</i>",
               "úlcera dolorosa, bordas irregulares, fundo purulento; bubão inguinal doloroso",
-              "azitromicina 1 g VO, dose única, ou alternativa protocolada"
+              "Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g VO, dose única, ou alternativa protocolada"
             ],
             [
               "LGV — <i>C. trachomatis</i> L1-L3",
               "lesão inicial pequena/transitória, depois adenopatia; pode causar proctocolite",
-              "doxiciclina 100 mg VO 12/12 h por 21 dias, salvo contraindicações"
+              "Doxiciclina (100 mg VO a cada 12 horas) 100 mg VO 12/12 h por 21 dias, salvo contraindicações"
             ],
             [
               "Donovanose — <i>Klebsiella granulomatis</i>",
               "úlcera granulomatosa crônica, vermelho-viva, friável e geralmente pouco dolorosa",
-              "azitromicina em curso prolongado até cicatrização completa, conforme PCDT"
+              "Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) em curso prolongado até cicatrização completa, conforme PCDT"
             ]
           ],
           "book-table"
@@ -1350,7 +1354,7 @@
         ],
         [
           "p",
-          "Paciente de 30 anos apresenta tenesmo, dor retal, secreção, sangramento e teste molecular retal positivo para <em>Chlamydia trachomatis</em>. <strong>Interpretação:</strong> a possibilidade de linfogranuloma venéreo (LGV, sorotipos L1–L3) muda o raciocínio: em proctocolite compatível, o manejo pode exigir doxiciclina por 21 dias, conforme protocolo e contraindicações, e não simplesmente o esquema de sete dias usado para outras infecções clamidianas. Avalie gonorreia retal, sífilis, HIV, doença inflamatória intestinal e outras causas, além do cuidado das parcerias. A forma anorretal pode ocorrer sem úlcera genital visível."
+          "Paciente de 30 anos apresenta tenesmo, dor retal, secreção, sangramento e teste molecular retal positivo para <em>Chlamydia trachomatis</em>. <strong>Interpretação:</strong> a possibilidade de linfogranuloma venéreo (LGV, sorotipos L1–L3) muda o raciocínio: em proctocolite compatível, o manejo pode exigir Doxiciclina (100 mg VO a cada 12 horas) por 21 dias, conforme protocolo e contraindicações, e não simplesmente o esquema de sete dias usado para outras infecções clamidianas. Avalie gonorreia retal, sífilis, HIV, doença inflamatória intestinal e outras causas, além do cuidado das parcerias. A forma anorretal pode ocorrer sem úlcera genital visível."
         ],
         [
           "3",
@@ -1366,7 +1370,7 @@
         ],
         [
           "p",
-          "Gestante relata cancro genital prévio e apresenta teste treponêmico reagente com teste não treponêmico positivo; não há documentação de tratamento. Refere “alergia à penicilina” na infância, sem descrição de gravidade. <strong>Interpretação:</strong> é necessário avaliar o estágio e o histórico, investigar a natureza da reação e iniciar manejo imediato segundo PCDT. Para prevenção e tratamento da sífilis fetal, a penicilina é o tratamento eficaz recomendado; nos casos de alergia verdadeira, avaliar dessensibilização em ambiente apropriado. Não substituir arbitrariamente por doxiciclina na gestação. Oferecer avaliação fetal, testagem de outras IST e seguimento sorológico mensal. Gestantes e parcerias precisam de abordagem coordenada para evitar reinfecção."
+          "Gestante relata cancro genital prévio e apresenta teste treponêmico reagente com teste não treponêmico positivo; não há documentação de tratamento. Refere “alergia à penicilina” na infância, sem descrição de gravidade. <strong>Interpretação:</strong> é necessário avaliar o estágio e o histórico, investigar a natureza da reação e iniciar manejo imediato segundo PCDT. Para prevenção e tratamento da sífilis fetal, a penicilina é o tratamento eficaz recomendado; nos casos de alergia verdadeira, avaliar dessensibilização em ambiente apropriado. Não substituir arbitrariamente por Doxiciclina (100 mg VO a cada 12 horas) na gestação. Oferecer avaliação fetal, testagem de outras IST e seguimento sorológico mensal. Gestantes e parcerias precisam de abordagem coordenada para evitar reinfecção."
         ],
         [
           "3",
@@ -1719,17 +1723,17 @@
           ],
           [
             [
-              "Ceftriaxona",
+              "Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana)",
               "500 mg IM",
               "dose única"
             ],
             [
-              "Doxiciclina",
+              "Doxiciclina (100 mg VO a cada 12 horas)",
               "100 mg VO 12/12 h",
               "14 dias"
             ],
             [
-              "Metronidazol",
+              "Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase)",
               "500 mg VO 12/12 h",
               "14 dias"
             ]
@@ -1757,7 +1761,7 @@
         ],
         [
           "p",
-          "O PCDT inclui ceftriaxona IV + doxiciclina + metronidazol e alternativas como clindamicina + gentamicina ou ampicilina/sulbactam + doxiciclina. Após melhora clínica, a terapia pode migrar para via oral, completando 14 dias."
+          "O PCDT inclui Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) IV + Doxiciclina (100 mg VO a cada 12 horas) + Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) e alternativas como Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas) + Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas) ou Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas)/sulbactam + Doxiciclina (100 mg VO a cada 12 horas). Após melhora clínica, a terapia pode migrar para via oral, completando 14 dias."
         ],
         [
           "3",
@@ -1857,7 +1861,7 @@
         ],
         [
           "p",
-          "A Conitec recomendou e o Ministério da Saúde incorporou doxiciclina como profilaxia pós-exposição para prevenção de <strong>clamídia e sífilis</strong> em população definida. O regime avaliado corresponde a <strong>200 mg em dose única até 72 horas após a exposição, idealmente nas primeiras 24 horas, com máximo de 200 mg por dia</strong>. A população inicialmente priorizada inclui homens cisgênero gays/bissexuais e outros HSH e mulheres trans com episódio de IST nos 12 meses anteriores. A oferta deve seguir o protocolo e a organização do SUS; não deve ser convertida em automedicação universal."
+          "A Conitec recomendou e o Ministério da Saúde incorporou Doxiciclina (100 mg VO a cada 12 horas) como profilaxia pós-exposição para prevenção de <strong>clamídia e sífilis</strong> em população definida. O regime avaliado corresponde a <strong>200 mg em dose única até 72 horas após a exposição, idealmente nas primeiras 24 horas, com máximo de 200 mg por dia</strong>. A população inicialmente priorizada inclui homens cisgênero gays/bissexuais e outros HSH e mulheres trans com episódio de IST nos 12 meses anteriores. A oferta deve seguir o protocolo e a organização do SUS; não deve ser convertida em automedicação universal."
         ],
         [
           "p",
@@ -2097,8 +2101,8 @@
               "cancro pode cicatrizar sem tratamento enquanto a infecção progride"
             ],
             [
-              "“No Brasil já se trata gonorreia só com ceftriaxona”",
-              "em 2026 o PCDT brasileiro ainda recomenda ceftriaxona + azitromicina"
+              "“No Brasil já se trata gonorreia só com Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana)”",
+              "em 2026 o PCDT brasileiro ainda recomenda Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) + Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias)"
             ],
             [
               "“Tratar a verruga elimina o HPV”",
@@ -2145,7 +2149,7 @@
             "<div class=\"fixation-question\">1. Por que um NAAT urinário negativo não exclui gonorreia em quem praticou sexo oral e anal receptivo?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden>Porque o teste responde apenas ao sítio coletado; pode haver infecção faríngea e/ou retal independente da urina.</div>",
             "<div class=\"fixation-question\">2. Qual é o tratamento de referência da sífilis recente e o que muda quando a duração é desconhecida?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden>Recente: penicilina G benzatina 2,4 milhões UI IM em dose única. Duração desconhecida/tardia: 2,4 milhões UI IM semanal por 3 semanas, total 7,2 milhões.</div>",
             "<div class=\"fixation-question\">3. Por que não se deve esperar todos os exames diante de quadro clínico de DIP?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden>Porque a inflamação tubária pode causar dano precoce e sequela reprodutiva; o diagnóstico é clínico e o limiar para tratamento deve ser baixo.</div>",
-            "<div class=\"fixation-question\">4. O que a DoxiPEP mudou no Brasil em 2026?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden>O SUS incorporou profilaxia pós-exposição com doxiciclina para prevenção de sífilis e clamídia em população elegível; não é recomendação universal de antibiótico após qualquer relação sexual.</div>",
+            "<div class=\"fixation-question\">4. O que a DoxiPEP mudou no Brasil em 2026?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden>O SUS incorporou profilaxia pós-exposição com Doxiciclina (100 mg VO a cada 12 horas) para prevenção de sífilis e clamídia em população elegível; não é recomendação universal de antibiótico após qualquer relação sexual.</div>",
             "<div class=\"fixation-question\">5. Qual é hoje o limite de intervalo entre doses de penicilina benzatina na gestante antes de reiniciar o esquema?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden>O ideal é aplicar a cada 7 dias, mas a recomendação brasileira atual aceita até 9 dias. Se ultrapassar 9 dias, reiniciar o esquema.</div>",
             "<div class=\"fixation-question\">6. Por que corrimento vaginal não deve ser tratado automaticamente como gonorreia/clamídia?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden>Porque candidíase e vaginose bacteriana são causas muito frequentes e não são IST clássicas; além disso, cervicite e vaginite podem coexistir e exigem exame/testagem direcionada.</div>",
             "<div class=\"fixation-question\">7. Qual é a diferença entre teste de cura e retestagem?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden>Teste de cura procura persistência logo após o tratamento em situações selecionadas; retestagem busca sobretudo reinfecção em momento posterior.</div>"
@@ -2229,11 +2233,32 @@
       [
         [
           "2",
-          "Referências essenciais"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
-          "p",
-          "<h2>Referências essenciais</h2>"
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Ginecologia e Obstetrícia. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -2241,7 +2266,7 @@
             "Brasil. Ministério da Saúde. <a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>PCDT para Atenção Integral às Pessoas com IST</strong>, anexo alterado em 2024; página atualizada em 2025.</a>",
             "Brasil. Ministério da Saúde / Conitec. <strong>PCDT para Profilaxia Pós-Exposição (PEP) de Risco à Infecção pelo HIV, IST e Hepatites Virais</strong>. versão 2024.",
             "Brasil. Ministério da Saúde. <strong>PCDT para Profilaxia Pré-Exposição (PrEP) Oral à Infecção pelo HIV</strong>. 2025.",
-            "CONITEC. <strong>Relatório de Recomendação nº 1089 — doxiciclina como profilaxia pós-exposição para clamídia e sífilis</strong>. 2026.",
+            "CONITEC. <strong>Relatório de Recomendação nº 1089 — Doxiciclina (100 mg VO a cada 12 horas) como profilaxia pós-exposição para clamídia e sífilis</strong>. 2026.",
             "Ministério da Saúde. <strong>Ministério oferece nova estratégia para prevenção de clamídia e sífilis</strong>. 2026.",
             "Ministério da Saúde. <strong>Calendário Nacional de Vacinação / HPV</strong>. 2026.",
             "Ministério da Saúde. <strong>Portal de apoio à decisão clínica — PEP</strong>. 2026.",
@@ -2250,10 +2275,6 @@
             "Brasil. Ministério da Saúde. <strong>Portal de apoio à decisão clínica — Sífilis e PEP</strong>. versão consultada em 2026.",
             "Brasil. Ministério da Saúde. <strong>Manual dos Centros de Referência para Imunobiológicos Especiais (CRIE)</strong>. 6ª ed."
           ]
-        ],
-        [
-          "p",
-          "Revisão clínica LURIA: outubro de 2026. Material educacional. Condutas devem ser aplicadas com avaliação clínica individual e conferência de atualizações do Ministério da Saúde quando houver revisão do PCDT."
         ]
       ]
     ],

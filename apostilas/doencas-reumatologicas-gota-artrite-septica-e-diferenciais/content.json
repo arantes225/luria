@@ -2,8 +2,8 @@
   "v": 2,
   "s": "doencas-reumatologicas-gota-artrite-septica-e-diferenciais",
   "t": "Doenças Reumatológicas: Gota, Artrite Séptica e Diagnósticos Diferenciais",
-  "p": "Doenças Reumatológicas: Gota, Artrite Séptica e Diagnósticos Diferenciais — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "p": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Clínica Médica",
   "m": "Clínica Médica",
   "h": [
@@ -176,6 +176,10 @@
           "A história natural da gota divide-se classicamente em quatro etapas cronológicas e fisiopatológicas:"
         ],
         [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Clínica Médica, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "o",
           [
             "<strong>Hiperuricemia Assintomática:</strong> Nível de ácido úrico sérico &gt; 6,8 mg/dL sem qualquer episódio prévio de artrite inflamatória, tofos gotosos ou nefrolitíase por urato. Pode persistir durante décadas ou por toda a vida. <em>Regra de Ouro: Na esmagadora maioria dos casos, hiperuricemia assintomática isolada NÃO tem indicação de tratamento farmacológico hipouricemiante.</em>",
@@ -247,7 +251,7 @@
             ],
             [
               "<strong>Grupo D (Diagnóstico Possível)</strong>",
-              "Cultura do líquido articular e hemoculturas negativas, mas com melhora dramática e resolução clínica após instituição de antibioticoterapia empírica direcionada."
+              "Cultura do líquido articular e hemoculturas negativas, mas com melhora dramática e resolução clínica após instituição de antibioticoterapia empírica direcionada ao foco (ex.: Ceftriaxona 1-2 g EV 1x/dia associada a Metronidazol 500 mg EV 8/8h em infecções intra-abdominais, ou Ceftriaxona 2 g EV 12/12h na meningite) direcionada."
             ]
           ],
           "book-table"
@@ -372,7 +376,7 @@
         ],
         [
           "p",
-          "Erro diagnóstico catastrófico comum em prontos-socorros: rotular uma artrite séptica de joelho como 'celulite' e dar alta com cefalexina oral:"
+          "Erro diagnóstico catastrófico comum em prontos-socorros: rotular uma artrite séptica de joelho como 'celulite' e dar alta com Cefalexina (500 mg VO a cada 6 horas) oral:"
         ],
         [
           "t",
@@ -587,12 +591,12 @@
             "<strong>Colchicina Oral (Regime Posológico em Baixa Dose):</strong>\n    <ul>\n      <li>Mecanismo de Ação: Liga-se às moléculas de tubulina heterodimérica intracelular, impedindo sua polimerização em microtúbulos. Isso paralisa a mobilidade celular, a diapedese neutrofílica, a fagocitose de cristais de MSU e inibe a ativação do inflamassoma NLRP3.",
             "<em>Posologia Padronizada Moderna de Baixa Dose:</em> <strong>1,0 mg por via oral na primeira tomada, seguido por 0,5 mg exatamente 1 hora depois (dose total acumulada de 1,5 mg no 1º dia)</strong>. A partir do 2º dia, mantém-se 0,5 mg a 1,0 mg ao dia até a resolução completa da crise.",
             "<em>Alerta Crítico de Prova:</em> O antigo esquema histórico de '1 comprimido a cada 1 ou 2 horas até o paciente ter diarreia' foi FORMALMENTE PROSCRITO devido à altíssima toxicidade gastrointestinal e sistêmica sem ganho terapêutico adicional.",
-            "<em>Contraindicações e Ajustes:</em> Contraindicada em insuficiência renal grave (TFGe &lt; 15-30 mL/min) e em insuficiência hepática severa, especialmente se em uso concomitante de inibidores potentes do CYP3A4 ou da glicoproteína P (claritromicina, cetoconazol, ciclosporina, diltiazem), devido ao risco letal de toxicidade por colchicina (mielossupressão fulminante, rabdomiólise e neuropatia axonal).",
+            "<em>Contraindicações e Ajustes:</em> Contraindicada em insuficiência renal grave (TFGe &lt; 15-30 mL/min) e em insuficiência hepática severa, especialmente se em uso concomitante de inibidores potentes do CYP3A4 ou da glicoproteína P (Claritromicina (500 mg VO a cada 12 horas), cetoconazol, ciclosporina, diltiazem), devido ao risco letal de toxicidade por colchicina (mielossupressão fulminante, rabdomiólise e neuropatia axonal).",
             "<strong>Anti-Inflamatórios Não Esteroidais (AINEs):</strong>\n    <ul>\n      <li>Utilizados em doses anti-inflamatórias plenas nas primeiras 48 a 72 horas, com redução progressiva até o término da crise (duração média de 5 a 7 dias): Naproxeno 500 mg VO de 12/12h; Indometacina 50 mg VO de 8/8h; Ibuprofeno 600-800 mg VO de 8/8h; Celecoxibe 200 mg VO 12/12h (se risco gastrointestinal).",
             "<em>Contraindicações Estritas:</em> Doença Renal Crônica (estágios 3 a 5), úlcera péptica ativa ou histórico recente de hemorragia digestiva alta, insuficiência cardíaca congestiva descompensada (classe funcional III/IV da NYHA) e hipertensão arterial grave não controlada.",
             "<strong>Corticosteroides Sistêmicos ou Intra-Articulares:</strong>\n    <ul>\n      <li><strong>Primeira Escolha em Pacientes Renais Crônicos, Idosos ou Cardiopatas com contraindicação a AINEs e Colchicina!</strong>",
-            "<em>Via Oral:</em> Prednisona ou Prednisolona 30 a 40 mg ao dia por via oral durante 5 dias, seguido por redução gradual da dose em 5 a 10 dias para evitar efeito rebote inflamatório.",
-            "<em>Via Intra-Articular (Infiltração):</em> Opção de excelência quando a artrite é monoarticular (ex: joelho grande edemaciado) após ter sido rigorosamente descartada infecção articular. Triancinolona hexacetonida 20 a 40 mg ou acetato de metilprednisolona. Proporciona alívio imediato sem efeitos adversos sistêmicos.",
+            "<em>Via Oral:</em> Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) ou Prednisolona 30 a 40 mg ao dia por via oral durante 5 dias, seguido por redução gradual da dose em 5 a 10 dias para evitar efeito rebote inflamatório.",
+            "<em>Via Intra-Articular (Infiltração):</em> Opção de excelência quando a artrite é monoarticular (ex: joelho grande edemaciado) após ter sido rigorosamente descartada infecção articular. Triancinolona hexacetonida 20 a 40 mg ou acetato de Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias). Proporciona alívio imediato sem efeitos adversos sistêmicos.",
             "<strong>Regra de Ouro Quanto ao Alopurinol na Crise Aguda:</strong>\n    <ul>\n      <li><em>Se o paciente JÁ ESTAVA em uso prévio contínuo de Alopurinol antes da crise:</em> <strong>NUNCA SUSPENDER O ALOPURINOL!</strong> Manter rigorosamente a mesma dose diária e associar o anti-inflamatório (colchicina, corticoide ou AINE). A interrupção abrupta desestabiliza a concentração sérica de urato e prolonga a crise.",
             "<em>Se o paciente NÃO TOMAVA Alopurinol (gota aguda de início recente):</em> O foco imediato é tratar a inflamação. Segundo o ACR 2020, o alopurinol pode ser iniciado simultaneamente ou logo após o início do anti-inflamatório, desde que sob cobertura profilática obrigatória com colchicina ou AINE. A conduta clássica de aguardar 1 a 2 semanas após a resolução da crise para iniciar o alopurinol permanece amplamente aceita em diretrizes clínicas."
           ]
@@ -660,11 +664,11 @@
           [
             "<strong>Drenagem Articular Terapêutica Urgente:</strong>\n    <ul>\n      <li><em>Artroscopia ou Artrotomia Cirúrgica Aberta com Lavagem Exaustiva:</em> Indicada obrigatoriamente na <strong>artrite séptica do quadril</strong> (articulação profunda inacessível à punção de repetição com alto risco de necrose avascular da cabeça femoral), em coleções purulentas septadas densas, na falha de drenagens percutâneas após 48-72h, quando há osteomielite associada ou em infecções de prótese ortopédica.",
             "<em>Artrocenteses Aspirativas Repetidas de Repetição com Agulha Calibrosa (18G):</em> Permitidas no joelho nas fases iniciais não septadas, devendo ser realizadas diariamente ou a cada 2 dias até que o líquido se torne claro e a contagem de leucócitos caia progressivamente. Se persistir purulento após 3 a 5 dias, converter imediatamente para artroscopia cirúrgica.",
-            "<strong>Antibioticoterapia Intravenosa Empírica Imediata:</strong> Deve ser infundida imediatamente após a coleta das hemoculturas e do líquido sinovial (nunca atrasar para esperar o laudo laboratorial):\n    <ul>\n      <li><em>Adulto previamente hígido, sem fatores de risco para MRSA:</em> <strong>Oxacilina 2 g IV a cada 4 horas</strong> (cobre <em>S. aureus</em> sensível à meticilina e <em>Streptococcus</em>) associada ou não à Ceftriaxona.",
-            "<em>Risco de MRSA Comunitário ou Hospitalar (paciente institucionalizado, hemodiálise, pós-operatório ortopédico, uso de drogas EV):</em> <strong>Vancomicina 15 a 20 mg/kg IV a cada 8 a 12 horas</strong> (com ajuste de vale para 15-20 mcg/mL) ou Daptomicina 6 a 8 mg/kg IV 1 vez ao dia.",
-            "<em>Idosos frágeis, imunossuprimidos, foco urinário associado (cobertura para Gram-negativos entéricos e Pseudomonas):</em> <strong>Vancomicina IV + Cefepima 2 g IV 8/8h</strong> (ou Meropenem 1 g IV 8/8h).",
-            "<em>Artrite Gonocócica e DGI:</em> <strong>Ceftriaxona 1 g a 2 g IV ao dia</strong> (mantida até 24-48 horas após melhora clínica, convertendo para Cefixima oral 400 mg/dia para completar 7 a 14 dias de tratamento) associada obrigatoriamente a <strong>Azitromicina 1 g oral em dose única</strong> para cobrir eventual co-infecção por <em>Chlamydia trachomatis</em> e mitigar resistência bacteriana.",
-            "<strong>Duração do Tratamento:</strong> Artrite séptica não gonocócica exige um mínimo de <strong>3 a 4 semanas de antibioticoterapia total</strong> (pelo menos as primeiras 2 semanas por via intravenosa, podendo-se escalonar para via oral altamente biodisponível como levofloxacino + rifampicina após estabilização clínica, queda acentuada de PCR/VHS e ausência de febre por 48 horas). Na artrite gonocócica, o curso total é de 7 a 14 dias."
+            "<strong>Antibioticoterapia Intravenosa Empírica Imediata:</strong> Deve ser infundida imediatamente após a coleta das hemoculturas e do líquido sinovial (nunca atrasar para esperar o laudo laboratorial):\n    <ul>\n      <li><em>Adulto previamente hígido, sem fatores de risco para MRSA:</em> <strong>Oxacilina (2 g EV a cada 4 horas) 2 g IV a cada 4 horas</strong> (cobre <em>S. aureus</em> sensível à meticilina e <em>Streptococcus</em>) associada ou não à Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana).",
+            "<em>Risco de MRSA Comunitário ou Hospitalar (paciente institucionalizado, hemodiálise, pós-operatório ortopédico, uso de drogas EV):</em> <strong>Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) 15 a 20 mg/kg IV a cada 8 a 12 horas</strong> (com ajuste de vale para 15-20 mcg/mL) ou Daptomicina 6 a 8 mg/kg IV 1 vez ao dia.",
+            "<em>Idosos frágeis, imunossuprimidos, foco urinário associado (cobertura para Gram-negativos entéricos e Pseudomonas):</em> <strong>Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) IV + Cefepima (2 g EV a cada 8 horas em infusão estendida de 3 horas) 2 g IV 8/8h</strong> (ou Meropenem (1 g EV em infusão prolongada a cada 8 horas, ou 2 g EV 8/8h em meningite bacteriana) 1 g IV 8/8h).",
+            "<em>Artrite Gonocócica e DGI:</em> <strong>Ceftriaxona 1 g a 2 g IV ao dia</strong> (mantida até 24-48 horas após melhora clínica, convertendo para Cefixima oral 400 mg/dia para completar 7 a 14 dias de tratamento) associada obrigatoriamente a <strong>Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g oral em dose única</strong> para cobrir eventual co-infecção por <em>Chlamydia trachomatis</em> e mitigar resistência bacteriana.",
+            "<strong>Duração do Tratamento:</strong> Artrite séptica não gonocócica exige um mínimo de <strong>3 a 4 semanas de antibioticoterapia total</strong> (pelo menos as primeiras 2 semanas por via intravenosa, podendo-se escalonar para via oral altamente biodisponível como Levofloxacino (500 mg a 750 mg VO ou EV a cada 24 horas) + rifampicina após estabilização clínica, queda acentuada de PCR/VHS e ausência de febre por 48 horas). Na artrite gonocócica, o curso total é de 7 a 14 dias."
           ]
         ]
       ]
@@ -727,7 +731,7 @@
           "u",
           [
             "<strong>Gota em Mulheres Idosas em Uso de Diuréticos:</strong> Enquanto nos homens a gota inicia-se aos 30-50 anos, na mulher a gota é primariamente pós-menopáusica (o estrogênio natural tem efeito uricosúrico protetor). Em idosas frágeis hipertensas em uso crônico de hidroclorotiazida, a gota apresenta-se frequentemente de forma atípica: poliartrite nodular com tofos nas articulações interfalangianas distais e proximais das mãos (sobrepostos a nódulos prévios de Heberden e Bouchard de osteoartrite), simulando artrite reumatoide.",
-            "<strong>Manejo na DRC Estágios 3 a 5 (TFGe &lt; 30-60 mL/min):</strong>\n    <ul>\n      <li><em>Na crise aguda:</em> <strong>AINEs são absolutamente contraindicados</strong> (risco de necrose papilar renal e piora dialítica). A colchicina deve ser evitada ou reduzida a doses mínimas (0,5 mg a cada 2 ou 3 dias) devido ao acúmulo tóxico. <strong>O fármaco de escolha é o Corticosteroide oral (Prednisona 30-40 mg/dia) ou Infiltração intra-articular</strong>.",
+            "<strong>Manejo na DRC Estágios 3 a 5 (TFGe &lt; 30-60 mL/min):</strong>\n    <ul>\n      <li><em>Na crise aguda:</em> <strong>AINEs são absolutamente contraindicados</strong> (risco de necrose papilar renal e piora dialítica). A colchicina deve ser evitada ou reduzida a doses mínimas (0,5 mg a cada 2 ou 3 dias) devido ao acúmulo tóxico. <strong>O fármaco de escolha é o Corticosteroide oral (Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) 30-40 mg/dia) ou Infiltração intra-articular</strong>.",
             "<em>Na terapia redutora de urato:</em> O Alopurinol pode e deve ser utilizado, iniciando com dose reduzida de 50 mg ao dia e titulando lentamente a cada mês para atingir a meta de urato &lt; 6,0 mg/dL, acompanhando creatinina e hemograma."
           ]
         ],
@@ -739,7 +743,7 @@
           "u",
           [
             "A crise de gota na gravidez é evento excepcional. Se ocorrer, <strong>Colchicina e AINEs no 3º trimestre são contraindicados</strong> (risco de fechamento precoce do canal arterial fetal e oligoidrâmnio). O tratamento seguro na gestação é realizado com <strong>corticosteroides por via oral ou infiltração local</strong>. Alopurinol e uricosúricos devem ser evitados na gestação.",
-            "A artrite séptica na gestante decorre comumente de infecção gonocócica disseminada facilitada pela estase venosa pélvica e alterações hormonais. O tratamento de escolha é a Ceftriaxona intravenosa (segura na gestação - categoria B)."
+            "A artrite séptica na gestante decorre comumente de infecção gonocócica disseminada facilitada pela estase venosa pélvica e alterações hormonais. O tratamento de escolha é a Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) intravenosa (segura na gestação - categoria B)."
           ]
         ],
         [
@@ -748,7 +752,7 @@
         ],
         [
           "p",
-          "Em pacientes com prótese total de quadril ou joelho, a infecção articular divide-se em aguda precoce (&lt; 3 meses da cirurgia, causada por <em>S. aureus</em> ou Gram-negativos), subaguda (&lt; 1 ano, causada por bactérias formadoras de biofilme como <em>Staphylococcus epidermidis</em> e <em>Cutibacterium</em>) e hematogênica tardia (&gt; 1 ano). O biofilme bacteriano adere firmemente ao polietileno e titânio da prótese, impedindo a penetração de antibióticos comuns. O tratamento exige abordagem cirúrgica especializada: desbridamento com retenção do implante (DAIR) e uso de <strong>Rifampicina</strong> associada (para penetrar no biofilme estafilocócico), ou cirurgia de revisão da prótese em um ou dois tempos (com espaçador de cimento impregnado com gentamicina/vancomicina)."
+          "Em pacientes com prótese total de quadril ou joelho, a infecção articular divide-se em aguda precoce (&lt; 3 meses da cirurgia, causada por <em>S. aureus</em> ou Gram-negativos), subaguda (&lt; 1 ano, causada por bactérias formadoras de biofilme como <em>Staphylococcus epidermidis</em> e <em>Cutibacterium</em>) e hematogênica tardia (&gt; 1 ano). O biofilme bacteriano adere firmemente ao polietileno e titânio da prótese, impedindo a penetração de antibióticos comuns. O tratamento exige abordagem cirúrgica especializada: desbridamento com retenção do implante (DAIR) e uso de <strong>Rifampicina</strong> associada (para penetrar no biofilme estafilocócico), ou cirurgia de revisão da prótese em um ou dois tempos (com espaçador de cimento impregnado com Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas)/Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL))."
         ]
       ]
     ],
@@ -780,7 +784,7 @@
             [
               "<strong>Passo 2: Análise Rápida</strong>",
               "Exame macroscópico, bacterioscopia por Gram, pesquisa de cristais na luz polarizada e citometria.",
-              "- <em>Líquido purulento (&gt; 50.000 leucócitos/mm³ e &gt; 85% neutrófilos) ou Gram positivo:</em> <strong>Internação imediata + Oxacilina IV / Vancomicina IV + Drenagem cirúrgica/aspiração diária</strong>.<br>\n        - <em>Cristais de MSU agulhiformes fortemente negativos birrefringentes:</em> <strong>Confirmada Gota Aguda</strong>. Iniciar Colchicina baixa dose ou Corticoide/AINE.<br>\n        - <em>Cristais de CPPD romboides fracamente positivos:</em> <strong>Confirmada Pseudogota</strong>. Tratar com AINE ou Corticoide intra-articular."
+              "- <em>Líquido purulento (&gt; 50.000 leucócitos/mm³ e &gt; 85% neutrófilos) ou Gram positivo:</em> <strong>Internação imediata + Oxacilina (2 g EV a cada 4 horas) IV / Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) IV + Drenagem cirúrgica/aspiração diária</strong>.<br>\n        - <em>Cristais de MSU agulhiformes fortemente negativos birrefringentes:</em> <strong>Confirmada Gota Aguda</strong>. Iniciar Colchicina baixa dose ou Corticoide/AINE.<br>\n        - <em>Cristais de CPPD romboides fracamente positivos:</em> <strong>Confirmada Pseudogota</strong>. Tratar com AINE ou Corticoide intra-articular."
             ],
             [
               "<strong>Passo 3: Manejo Longo Prazo da Gota</strong>",
@@ -814,7 +818,7 @@
         ],
         [
           "p",
-          "<strong>HDA:</strong> Relata que acordou no dia anterior com desconforto no joelho direito, que piorou rapidamente ao longo do dia, tornando impossível qualquer movimento da perna ou colocar o pé no chão. Nega traumas recentes ou episódios semelhantes no passado. Refere ferimento cortante superficial na perna direita há 5 dias enquanto trabalhava na obra, o qual não foi limpo adequadamente."
+          "<strong>HDA:</strong> Relata que acordou no dia anterior com desconforto no joelho direito, que piorou com agilidade ao longo do dia, tornando impossível qualquer movimento da perna ou colocar o pé no chão. Nega traumas recentes ou episódios semelhantes no passado. Refere ferimento cortante superficial na perna direita há 5 dias enquanto trabalhava na obra, o qual não foi limpo adequadamente."
         ],
         [
           "p",
@@ -843,7 +847,7 @@
           [
             "Internação hospitalar imediata em leito de enfermaria/cirurgia.",
             "Coleta de 2 pares de hemoculturas periféricas de veias distintas.",
-            "Início imediato de <strong>Antibioticoterapia Intravenosa Empírica de Largo Espectro</strong>: <strong>Oxacilina 2 g IV a cada 4 horas associada à Ceftriaxona 2 g IV ao dia</strong> (ou Vancomicina se alto risco de MRSA comunitário).",
+            "Início imediato de <strong>Antibioticoterapia Intravenosa Empírica de Largo Espectro</strong>: <strong>Oxacilina (2 g EV a cada 4 horas) 2 g IV a cada 4 horas associada à Ceftriaxona 2 g IV ao dia</strong> (ou Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) se alto risco de MRSA comunitário).",
             "<strong>Drenagem Cirúrgica de Emergência:</strong> Encaminhamento imediato ao centro cirúrgico para <strong>Artroscopia ou Artrotomia do joelho direito com sinovectomia e lavagem articular exaustiva</strong> com 10 litros de solução salina fisiológica estéril para remoção completa de debris purulentos e enzimas líticas. Instalação de dreno de sucção fechado por 24-48 horas.",
             "Manutenção de antibioticoterapia parenteral dirigida por 2 semanas, seguida de reavaliação clínica e laboratorial (queda &gt; 50-75% da PCR) para escalonamento para via oral até completar 4 semanas totais de tratamento."
           ]
@@ -884,7 +888,7 @@
           "o",
           [
             "<em>O que NÃO prescrever (Erros Fatais):</em> <strong>AINEs (como cetoprofeno, diclofenaco ou naproxeno) são FORMALMENTE CONTRAINDICADOS</strong> pelo risco de precipitar necrose papilar renal e insuficiência renal anúrica dialítica. A colchicina em dose plena habitual também deve ser evitada devido ao alto risco de neuro e miotoxicidade grave por baixa depuração renal.",
-            "<strong>Tratamento Anti-Inflamatório de Escolha:</strong> <strong>Prednisona oral na dose de 30 a 40 mg ao dia durante 5 dias</strong>, seguida de desmame progressivo ao longo de 5 a 7 dias; OU infiltração local com corticoide se houver operador habilitado.",
+            "<strong>Tratamento Anti-Inflamatório de Escolha:</strong> <strong>Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral na dose de 30 a 40 mg ao dia durante 5 dias</strong>, seguida de desmame progressivo ao longo de 5 a 7 dias; OU infiltração local com corticoide se houver operador habilitado.",
             "<strong>Revisão da Prescrição Anti-Hipertensiva:</strong> Suspender a Hidroclorotiazida e substituí-la por <strong>Losartana</strong> (antagonista do receptor AT1 da angiotensina II que possui propriedade molecular única de inibir competitivamente o transportador URAT1 no túbulo proximal, exercendo efeito uricosúrico benéfico comprovado em pacientes gotosos).",
             "<strong>Conduta Quanto ao Alopurinol:</strong> Como o paciente não tomava alopurinol previamente, <em>não iniciá-lo no primeiro dia da crise aguda</em> sem cobertura anti-inflamatória; agendar retorno ambulatorial em 3 semanas para dosar a uricemia basal e, se indicada terapia hipouricemiante, introduzir Alopurinol na dose inicial corrigida para DRC (50 mg ao dia) associado à profilaxia com dose mínima de colchicina ou corticoide."
           ]
@@ -967,8 +971,8 @@
           "o",
           [
             "Internação hospitalar imediata em isolamento de contato.",
-            "Início de <strong>Ceftriaxona intravenosa 1 g a cada 24 horas</strong> (mantida por via parenteral por 24 a 48 horas após melhora clínica evidente, completando 7 dias de tratamento total com antimicrobiano oral de transição como Cefixima 400 mg/dia).",
-            "<strong>Tratamento Concomitante Empírico Obrigatório para Chlamydia:</strong> <strong>Azitromicina 1 g oral em dose única</strong> (ou Doxiciclina 100 mg 12/12h por 7 dias), conforme preconizado pelo Ministério da Saúde e CDC.",
+            "Início de <strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) intravenosa 1 g a cada 24 horas</strong> (mantida por via parenteral por 24 a 48 horas após melhora clínica evidente, completando 7 dias de tratamento total com antimicrobiano oral de transição como Cefixima 400 mg/dia).",
+            "<strong>Tratamento Concomitante Empírico Obrigatório para Chlamydia:</strong> <strong>Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g oral em dose única</strong> (ou Doxiciclina (100 mg VO a cada 12 horas) 100 mg 12/12h por 7 dias), conforme preconizado pelo Ministério da Saúde e CDC.",
             "Artrocentese de alívio e aspiração do joelho.",
             "Convocação, testagem sorológica para outras ISTs (HIV, Sífilis, Hepatite B e C) e tratamento simultâneo de todos os parceiros sexuais dos últimos 60 dias."
           ]
@@ -1021,7 +1025,7 @@
         ],
         [
           "p",
-          "A) Aguardar o resultado final das culturas do líquido sinovial (48 a 72 horas) em ambiente domiciliar antes de iniciar qualquer antimicrobiano.<br>\nB) Internar o paciente imediatamente, colher hemoculturas, iniciar antibioticoterapia intravenosa empírica com cobertura para <em>Staphylococcus aureus</em> e programar drenagem articular urgente.<br>\nC) Tratar ambulatorialmente com ciprofloxacino oral 500 mg 12/12h e anti-inflamatório não esteroidal por 10 dias.<br>\nD) Afastar artrite séptica bacteriana, visto que a bacterioscopia pelo método de Gram possui sensibilidade próxima a 100% no líquido sinovial purulento.<br>\nE) Proceder à infiltração intra-articular imediata com acetonido de triancinolona para alívio antálgico rápido da sinovite."
+          "A) Aguardar o resultado final das culturas do líquido sinovial (48 a 72 horas) em ambiente domiciliar antes de iniciar qualquer antimicrobiano.<br>\nB) Internar o paciente imediatamente, colher hemoculturas, iniciar antibioticoterapia intravenosa empírica com cobertura para <em>Staphylococcus aureus</em> e programar drenagem articular urgente.<br>\nC) Tratar ambulatorialmente com Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h) oral 500 mg 12/12h e anti-inflamatório não esteroidal por 10 dias.<br>\nD) Afastar artrite séptica bacteriana, visto que a bacterioscopia pelo método de Gram possui sensibilidade próxima a 100% no líquido sinovial purulento.<br>\nE) Proceder à infiltração intra-articular imediata com acetonido de triancinolona para alívio antálgico rápido da sinovite."
         ],
         [
           "p",
@@ -1029,7 +1033,7 @@
         ],
         [
           "p",
-          "<strong>Alternativa B está CORRETA:</strong> O paciente apresenta apresentação clínica inequívoca de Artrite Séptica bacteriana aguda de joelho (monoartrite aguda hipertensiva com bloqueio funcional e febre em hospedeiro imunocomprometido). A regra de ouro microbiológica cobrada enfaticamente é: <strong>a bacterioscopia pelo método de Gram do líquido sinovial tem sensibilidade imperfeita (50% a 70% para Gram-positivos e &lt; 30% para Gram-negativos e gonococo)</strong>. Portanto, <strong>um Gram negativo NUNCA descarta artrite séptica!</strong> O atraso no início do tratamento enquanto se aguardam as culturas acarreta destruição irreversível da cartilagem hialina em menos de 24 a 48 horas. A conduta mandatória é internação imediata, coleta de hemoculturas de múltiplos sítios venosos, início imediato de antibioticoterapia intravenosa bactericida (Oxacilina + Ceftriaxona ou Vancomicina se risco de MRSA) e drenagem mecânica urgente da articulação (por artroscopia ou artrotomias repetidas)."
+          "<strong>Alternativa B está CORRETA:</strong> O paciente apresenta apresentação clínica inequívoca de Artrite Séptica bacteriana aguda de joelho (monoartrite aguda hipertensiva com bloqueio funcional e febre em hospedeiro imunocomprometido). A regra de ouro microbiológica cobrada enfaticamente é: <strong>a bacterioscopia pelo método de Gram do líquido sinovial tem sensibilidade imperfeita (50% a 70% para Gram-positivos e &lt; 30% para Gram-negativos e gonococo)</strong>. Portanto, <strong>um Gram negativo NUNCA descarta artrite séptica!</strong> O atraso no início do tratamento enquanto se aguardam as culturas acarreta destruição irreversível da cartilagem hialina em menos de 24 a 48 horas. A conduta mandatória é internação imediata, coleta de hemoculturas de múltiplos sítios venosos, início imediato de antibioticoterapia intravenosa bactericida (Oxacilina (2 g EV a cada 4 horas) + Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) ou Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) se risco de MRSA) e drenagem mecânica urgente da articulação (por artroscopia ou artrotomias repetidas)."
         ],
         [
           "p",
@@ -1077,11 +1081,11 @@
         ],
         [
           "p",
-          "<strong>Alternativa B está CORRETA:</strong> Esta questão resume com perfeição as diretrizes modernas do manejo a longo prazo da gota:\n1. <strong>Dose Inicial Baixa do Alopurinol:</strong> Iniciar com <strong>100 mg ao dia por via oral</strong> (ou 50 mg/dia se DRC avançada) para reduzir o risco de reações de hipersensibilidade graves (síndrome de DRESS) e titular a dose a cada 2 a 4 semanas até atingir a meta.<br>\n2. <strong>Meta Estrita de Ácido Úrico:</strong> Em pacientes graves portadores de <strong>tofos gotosos</strong> ou artropatia erosiva crônica, a meta terapêutica alvo é mais rigorosa: <strong>ácido úrico sérico &lt; 5,0 mg/dL</strong> (em pacientes sem tofos, a meta padrão é &lt; 6,0 mg/dL) para promover a dissolução ativa dos tofos e prevenir novas precipitações.<br>\n3. <strong>Profilaxia Obrigatória de Crises de Indução:</strong> A mobilização rápida dos cristais pelos hipouricemiantes precipita crises inflamatórias agudas reflexas nos primeiros meses. É obrigatório associar <strong>colchicina oral em dose baixa (0,5 a 1,0 mg/dia) por no mínimo 3 a 6 meses</strong>."
+          "<strong>Alternativa B está CORRETA:</strong> Esta questão resume com perfeição as diretrizes modernas do manejo a longo prazo da gota:\n1. <strong>Dose Inicial Baixa do Alopurinol:</strong> Iniciar com <strong>100 mg ao dia por via oral</strong> (ou 50 mg/dia se DRC avançada) para reduzir o risco de reações de hipersensibilidade graves (síndrome de DRESS) e titular a dose a cada 2 a 4 semanas até atingir a meta.<br>\n2. <strong>Meta Estrita de Ácido Úrico:</strong> Em pacientes graves portadores de <strong>tofos gotosos</strong> ou artropatia erosiva crônica, a meta terapêutica alvo é mais rigorosa: <strong>ácido úrico sérico &lt; 5,0 mg/dL</strong> (em pacientes sem tofos, a meta padrão é &lt; 6,0 mg/dL) para promover a dissolução ativa dos tofos e prevenir novas precipitações.<br>\n3. <strong>Profilaxia Obrigatória de Crises de Indução:</strong> A mobilização rápida dos cristais pelos hipouricemiantes precipita crises inflamatórias agudas reflexas nos primeiros meses. É obrigatório associar <strong>colchicina oral em dose inicial mínima (0,5 a 1,0 mg/dia) por no mínimo 3 a 6 meses</strong>."
         ],
         [
           "p",
-          "<em>Refutação dos Distratores:</em><br>\n<strong>A está incorreta:</strong> Iniciar alopurinol diretamente em dose alta (600 mg) é perigoso pelo risco de efeitos adversos graves e desestabilização articular; ademais, a meta de 6,5 a 7,0 mg/dL está acima do ponto de saturação do urato (6,8 mg/dL), mantendo a doença ativa.<br>\n<strong>C está incorreta:</strong> A benzbromarona é uricosúrico de 2ª linha; metas de ácido úrico excessivamente baixas (&lt; 3,0 ou &lt; 2,0 mg/dL) não são recomendadas por risco teórico neurológico.<br>\n<strong>D está incorreta:</strong> O paciente já possui critérios formais absolutos de tratamento hipouricemiante: presença de tofos e crises recorrentes (&ge; 2 por ano).<br>\n<strong>E está incorreta:</strong> Se o paciente apresentar crise aguda na vigência de alopurinol, <strong>o alopurinol JAMAIS deve ser suspenso</strong>; deve-se mantê-lo na mesma dose e apenas associar o anti-inflamatório para tratar a crise."
+          "<em>Refutação dos Distratores:</em><br>\n<strong>A está incorreta:</strong> Iniciar alopurinol diretamente em dose máxima preconizada (600 mg) é perigoso pelo risco de efeitos adversos graves e desestabilização articular; ademais, a meta de 6,5 a 7,0 mg/dL está acima do ponto de saturação do urato (6,8 mg/dL), mantendo a doença ativa.<br>\n<strong>C está incorreta:</strong> A benzbromarona é uricosúrico de 2ª linha; metas de ácido úrico excessivamente baixas (&lt; 3,0 ou &lt; 2,0 mg/dL) não são recomendadas por risco teórico neurológico.<br>\n<strong>D está incorreta:</strong> O paciente já possui critérios formais absolutos de tratamento hipouricemiante: presença de tofos e crises recorrentes (&ge; 2 por ano).<br>\n<strong>E está incorreta:</strong> Se o paciente apresentar crise aguda na vigência de alopurinol, <strong>o alopurinol JAMAIS deve ser suspenso</strong>; deve-se mantê-lo na mesma dose e apenas associar o anti-inflamatório para tratar a crise."
         ],
         [
           "3",
@@ -1093,7 +1097,7 @@
         ],
         [
           "p",
-          "A) <em>Staphylococcus aureus</em>; sangue periférico; oxacilina intravenosa por 6 semanas.<br>\nB) <em>Neisseria gonorrhoeae</em>; uretra / mucosas genitais e extragenitais; ceftriaxona intravenosa associada à azitromicina oral.<br>\nC) <em>Streptococcus pyogenes</em>; orofaringe; penicilina cristalina intravenosa por 10 dias.<br>\nD) <em>Chlamydia trachomatis</em>; líquido sinovial; doxiciclina oral em monoterapia.<br>\nE) <em>Treponema pallidum</em>; lesões cutâneas; penicilina benzatina intramuscular em dose única."
+          "A) <em>Staphylococcus aureus</em>; sangue periférico; Oxacilina (2 g EV a cada 4 horas) intravenosa por 6 semanas.<br>\nB) <em>Neisseria gonorrhoeae</em>; uretra / mucosas genitais e extragenitais; Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) intravenosa associada à Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) oral.<br>\nC) <em>Streptococcus pyogenes</em>; orofaringe; penicilina cristalina intravenosa por 10 dias.<br>\nD) <em>Chlamydia trachomatis</em>; líquido sinovial; Doxiciclina (100 mg VO a cada 12 horas) oral em monoterapia.<br>\nE) <em>Treponema pallidum</em>; lesões cutâneas; penicilina benzatina intramuscular em dose única."
         ],
         [
           "p",
@@ -1101,7 +1105,7 @@
         ],
         [
           "p",
-          "<strong>Alternativa B está CORRETA:</strong> O quadro clássico composto pela tríade <strong>tenossinovite migratória + poliartralgias / monoartrite aguda + lesões cutâneas pústulo-hemorrágicas acrais assépticas</strong> em jovem sexualmente ativo é patognomônico da <strong>Infecção Gonocócica Disseminada (DGI clássica / Síndrome Artrite-Dermatite)</strong> causada por <em>Neisseria gonorrhoeae</em>. Devido ao mecanismo imunomediado, a cultura do líquido sinovial frequentemente é negativa (&lt; 25-50% de positividade). O diagnóstico confirmatório de excelência é realizado por swab ou NAAT (PCR) colhido dos <strong>sítios mucosos primários colonizados: uretra, canal endocervical, reto ou orofaringe</strong>. O tratamento hospitalar de escolha é a <strong>Ceftriaxona 1 g a 2 g IV ao dia associada à Azitromicina 1 g VO dose única</strong> (para cobrir co-infecção por clamídia e ampliar eficácia microbiológica)."
+          "<strong>Alternativa B está CORRETA:</strong> O quadro clássico composto pela tríade <strong>tenossinovite migratória + poliartralgias / monoartrite aguda + lesões cutâneas pústulo-hemorrágicas acrais assépticas</strong> em jovem sexualmente ativo é patognomônico da <strong>Infecção Gonocócica Disseminada (DGI clássica / Síndrome Artrite-Dermatite)</strong> causada por <em>Neisseria gonorrhoeae</em>. Devido ao mecanismo imunomediado, a cultura do líquido sinovial frequentemente é negativa (&lt; 25-50% de positividade). O diagnóstico confirmatório de excelência é realizado por swab ou NAAT (PCR) colhido dos <strong>sítios mucosos primários colonizados: uretra, canal endocervical, reto ou orofaringe</strong>. O tratamento hospitalar de escolha é a <strong>Ceftriaxona 1 g a 2 g IV ao dia associada à Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g VO dose única</strong> (para cobrir co-infecção por clamídia e ampliar eficácia microbiológica)."
         ],
         [
           "p",
@@ -1179,7 +1183,7 @@
             "<strong>Pérola 1 (O Paradoxo do Ácido Úrico):</strong> <em>Ácido úrico sérico dosado na crise aguda de gota pode estar rigorosamente normal em até 40% dos pacientes!</em> Nunca descarte gota com base em uricemia normal na fase aguda. Aguarde 2 a 4 semanas para dosagem basal.",
             "<strong>Pérola 2 (O Alopurinol na Crise):</strong> <em>Se o paciente já toma alopurinol e tem uma crise: NÃO SUSPENDA! Se o paciente não toma alopurinol: NÃO INICIE NO 1º DIA sem controle anti-inflamatório prévio!</em> A flutuação abrupta da uricemia fragmenta cristais e piora a sinovite.",
             "<strong>Pérola 3 (O Gram Negativo na Artrite Séptica):</strong> <em>Bacterioscopia por Gram do líquido sinovial negativa NÃO descarta artrite séptica!</em> A sensibilidade do Gram é de apenas 50-70% para estafilococo e &lt; 30% para gonococo. Na dúvida, interne e cubra com antibiótico empírico.",
-            "<strong>Pérola 4 (Monoartrite em Renal Crônico):</strong> <em>Paciente renal crônico com gota não pode usar AINE (risco de piora dialítica) e nem colchicina plena (risco de neuro/miopatia grave).</em> O fármaco de escolha é o <strong>Corticosteroide oral (Prednisona 30-40 mg/dia)</strong> ou Infiltração intra-articular.",
+            "<strong>Pérola 4 (Monoartrite em Renal Crônico):</strong> <em>Paciente renal crônico com gota não pode usar AINE (risco de piora dialítica) e nem colchicina plena (risco de neuro/miopatia grave).</em> O fármaco de escolha é o <strong>Corticosteroide oral (Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) 30-40 mg/dia)</strong> ou Infiltração intra-articular.",
             "<strong>Pérola 5 (Losartana na Gota):</strong> <em>O anti-hipertensivo de escolha para o paciente gotoso é a Losartana</em>, pois inibe o transportador tubular renal URAT1, promovendo excreção uricosúrica benéfica. Os tiazídicos (hidroclorotiazida) e furosemida aumentam a reabsorção de urato e devem ser suspensos se possível.",
             "<strong>Pérola 6 (Meta de Urato Treat-to-Target):</strong> <em>Meta padrão na gota: ácido úrico sérico &lt; 6,0 mg/dL. Meta em pacientes graves com tofos gotosos: ácido úrico &lt; 5,0 mg/dL!</em>"
           ]
@@ -1192,7 +1196,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Clínica Médica. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1201,8 +1230,7 @@
             "<a href=\"https://rheumatology.org\" target=\"_blank\" rel=\"noopener noreferrer\">American College of Rheumatology (ACR) — Guideline for the Management of Gout 2020 / Updated Recommendations 2025</a>",
             "<a href=\"https://eular.org\" target=\"_blank\" rel=\"noopener noreferrer\">European Alliance of Associations for Rheumatology (EULAR) — Recommendations for the diagnosis and management of acute and chronic gout and septic arthritis 2024</a>",
             "<a href=\"https://idsociety.org\" target=\"_blank\" rel=\"noopener noreferrer\">Infectious Diseases Society of America (IDSA) — Guidelines for the Diagnosis and Treatment of Native Joint Septic Arthritis in Adults and Children</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

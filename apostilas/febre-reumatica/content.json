@@ -2,8 +2,8 @@
   "v": 2,
   "s": "febre-reumatica",
   "t": "Febre Reumática",
-  "p": "Febre Reumática — Livro-Texto LURIA",
-  "d": "Tratado Completo de Reumatologia e Cardiologia Pediátrica: Fisiopatologia Imunológica, Critérios de Jones AHA 2015, Cardite Subclínica, Coreia de Sydenham, Cardiopatia Reumática Crônica, Gestação e Profilaxias",
+  "p": "Tratado Completo de Reumatologia e Cardiologia Pediátrica: Fisiopatologia Imunológica, Critérios de Jones AHA 2015, Cardite Subclínica, Coreia de Sydenham, Cardiopatia Reumática Crônica, Gestação e Profilaxias Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado Completo de Reumatologia e Cardiologia Pediátrica: Fisiopatologia Imunológica, Critérios de Jones AHA 2015, Cardite Subclínica, Coreia de Sydenham, Cardiopatia Reumática Crônica, Gestação e Profilaxias Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Pediatria",
   "m": "Pediatria",
   "h": [
@@ -136,6 +136,10 @@
             "<strong>Populações de Baixo Risco:</strong> Definidas como aquelas em que a incidência de febre reumática aguda é &lt; 2 por 100.000 crianças em idade escolar (5 a 14 anos) por ano, OU onde a prevalência de cardiopatia reumática crônica em qualquer faixa etária é &lt;= 1 por 1.000 pessoas por ano. Exemplo: regiões nobres de países desenvolvidos (América do Norte, Europa Ocidental).",
             "<strong>Populações de Moderado e Alto Risco:</strong> Populações que não se enquadram nos critérios de baixo risco, apresentando incidência &gt;= 2 por 100.000 crianças ou prevalência de cardiopatia reumática &gt; 1 por 1.000. <strong>O Brasil e a esmagadora maioria dos países da América Latina, África e Ásia pertencem a essa categoria de moderado/alto risco</strong>, na qual os critérios são ampliados para aumentar a sensibilidade e evitar o subdiagnóstico."
           ]
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Pediatria, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "t",
@@ -439,7 +443,7 @@
         [
           "u",
           [
-            "Penicilina V potássica oral (250 mg 2 a 3 vezes/dia por 10 dias) ou Amoxicilina oral (50 mg/kg/dia dividida em 2 a 3 tomadas por 10 dias). <em>Desvantagem:</em> Depende da adesão estrita aos 10 dias completos de tratamento."
+            "Penicilina V potássica oral (250 mg 2 a 3 vezes/dia por 10 dias) ou Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral (50 mg/kg/dia dividida em 2 a 3 tomadas por 10 dias). <em>Desvantagem:</em> Depende da adesão estrita aos 10 dias completos de tratamento."
           ]
         ],
         [
@@ -449,7 +453,7 @@
         [
           "u",
           [
-            "<strong>Eritromicina oral</strong> (estolato de eritromicina 40 a 50 mg/kg/dia dividido em 3 a 4 doses por 10 dias), <strong>Azitromicina</strong> (12 mg/kg/dia 1x/dia por 5 dias) ou <strong>Claritromicina</strong> (15 mg/kg/dia dividida em 2 tomadas por 10 dias)."
+            "<strong>Eritromicina oral</strong> (estolato de eritromicina 40 a 50 mg/kg/dia dividido em 3 a 4 doses por 10 dias), <strong>Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias)</strong> (12 mg/kg/dia 1x/dia por 5 dias) ou <strong>Claritromicina (500 mg VO a cada 12 horas)</strong> (15 mg/kg/dia dividida em 2 tomadas por 10 dias)."
           ]
         ],
         [
@@ -487,11 +491,11 @@
         [
           "u",
           [
-            "<strong>Prednisona ou Prednisolona Oral:</strong> Dose de <strong>1 a 2 mg/kg/dia (dose máxima de 60 a 80 mg/dia)</strong> administrada em tomada matinal única ou dividida em duas tomadas.",
+            "<strong>Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) ou Prednisolona Oral:</strong> Dose de <strong>1 a 2 mg/kg/dia (dose máxima de 60 a 80 mg/dia)</strong> administrada em tomada matinal única ou dividida em duas tomadas.",
             "<strong>Duração do Tratamento:</strong> Manter a dose plena por 2 a 4 semanas, dependendo da gravidade e da velocidade de regressão da insuficiência cardíaca e normalização das provas inflamatórias.",
             "<strong>Desmame Gradual e Profilaxia do Rebote:</strong> A redução da dose de corticoide deve ser feita lentamente ao ritmo de 20% a 25% a cada semana, ao longo de 2 a 4 semanas adicionais (duração total do ciclo de 4 a 8 semanas).",
-            "<strong>Uso Concomitante de AAS no Desmame do Corticoide:</strong> Para evitar o temido <em>fenômeno de rebote clínico e laboratorial</em> durante a retirada do corticoide, inicia-se AAS na dose de 50 mg/kg/dia 1 semana antes de iniciar o desmame da prednisona, mantendo o AAS por mais 2 a 3 semanas após a suspensão completa do corticoide.",
-            "<strong>Cardite Grave com Choque ou Insuficiência Cardíaca Refratária:</strong> Indica-se <strong>Pulsoterapia com Metilprednisolona Intravenosa</strong> na dose de 30 mg/kg/dia (máximo de 1.000 mg/dia) infundida em 2 a 3 horas durante 3 dias consecutivos."
+            "<strong>Uso Concomitante de AAS no Desmame do Corticoide:</strong> Para evitar o temido <em>fenômeno de rebote clínico e laboratorial</em> durante a retirada do corticoide, inicia-se AAS na dose de 50 mg/kg/dia 1 semana antes de iniciar o desmame da Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo), mantendo o AAS por mais 2 a 3 semanas após a suspensão completa do corticoide.",
+            "<strong>Cardite Grave com Choque ou Insuficiência Cardíaca Refratária:</strong> Indica-se <strong>Pulsoterapia com Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias) Intravenosa</strong> na dose de 30 mg/kg/dia (máximo de 1.000 mg/dia) infundida em 2 a 3 horas durante 3 dias consecutivos."
           ]
         ],
         [
@@ -508,7 +512,7 @@
             "<strong>Ácido Valproico (Valproato de Sódio):</strong> Fármaco de primeira linha com excelente perfil de tolerabilidade (15 a 30 mg/kg/dia dividido em 2 a 3 tomadas).",
             "<strong>Carbamazepina:</strong> Alternativa oral amplamente utilizada (10 a 20 mg/kg/dia).",
             "<strong>Haloperidol:</strong> Antagonista dopaminérgico tradicional de alta potência (0,5 a 2 mg/dia), reservado para casos refratários em virtude do risco de distonia aguda e impregnação extrapiramidal.",
-            "<strong>Corticoterapia na Coreia Refratária:</strong> Pacientes com Coreia paralítica grave ou refratária aos moduladores dopaminérgicos beneficiam-se de cursos curtos de Prednisona oral ou pulsoterapia com Metilprednisolona venosa para acelerar a depuração dos anticorpos antineuronais."
+            "<strong>Corticoterapia na Coreia Refratária:</strong> Pacientes com Coreia paralítica grave ou refratária aos moduladores dopaminérgicos beneficiam-se de cursos curtos de Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral ou pulsoterapia com Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias) venosa para acelerar a depuração dos anticorpos antineuronais."
           ]
         ],
         [
@@ -632,15 +636,15 @@
         ],
         [
           "p",
-          "Menino de 9 anos de idade é trazido à Unidade de Pronto Atendimento com queixa de dor intensa e inchaço no tornozelo direito há 3 dias, que melhorou progressivamente, porém há 24 horas evoluiu com dor incapacitante, calor e edema no joelho esquerdo, impedindo a marcha. Há 3 semanas apresentou febre e dor de garganta com placas purulentas, tratada pela mãe com chá caseiro e analgésicos comuns. Ao exame físico: joelho esquerdo edemaciado, quente e intensamente doloroso à mínima palpação. Ausculta cardíaca revela taquicardia sinusal (FC 125 bpm) desproporcional à temperatura corporal (Tax 37,9 ºC) e sopro holossistólico regurgitativo 3+/6+ em foco mitral com irradiação axilar. Exames laboratoriais: VHS = 78 mm na 1ª hora; PCR = 12 mg/dL; ASLO = 980 UI/mL. O eletrocardiograma demonstra ritmo sinusal com intervalo PR de 0,22 segundos (prolongado para a idade). Considerando os Critérios de Jones modificados da AHA 2015 para populações de moderado/alto risco, assinale a opção que indica os critérios preenchidos e a conduta medicamentosa anti-inflamatória correta:"
+          "Menino de 9 anos de idade é trazido à Unidade de Pronto Atendimento com queixa de dor intensa e inchaço no tornozelo direito há 3 dias, que melhorou progressivamente, porém há 24 horas evoluiu com dor incapacitante, calor e edema no joelho esquerdo, impedindo a marcha. Há 3 semanas apresentou febre e dor de garganta com placas purulentas, tratada pela mãe com chá caseiro e analgésicos não opioides (Dipirona 1 g VO/EV a cada 6 horas ou Paracetamol 750 mg a 1.000 mg VO a cada 6 horas). Ao exame físico: joelho esquerdo edemaciado, quente e intensamente doloroso à mínima palpação. Ausculta cardíaca revela taquicardia sinusal (FC 125 bpm) desproporcional à temperatura corporal (Tax 37,9 ºC) e sopro holossistólico regurgitativo 3+/6+ em foco mitral com irradiação axilar. Exames laboratoriais: VHS = 78 mm na 1ª hora; PCR = 12 mg/dL; ASLO = 980 UI/mL. O eletrocardiograma demonstra ritmo sinusal com intervalo PR de 0,22 segundos (prolongado para a idade). Considerando os Critérios de Jones modificados da AHA 2015 para populações de moderado/alto risco, assinale a opção que indica os critérios preenchidos e a conduta medicamentosa anti-inflamatória correta:"
         ],
         [
           "p",
-          "A) O paciente preenche 2 critérios maiores (artrite e cardite) e 3 menores (febre, VHS/PCR e PR longo); conduta: Ácido Acetilsalicílico em altas doses isolado.<br>\nB) O paciente preenche 2 critérios maiores (artrite e cardite) e 2 menores (febre e VHS/PCR elevado); o PR prolongado não pode ser computado como menor porque a cardite foi usada como maior; conduta: Prednisona oral em dose plena.<br>\nC) O paciente preenche 1 critério maior (artrite) e 4 menores; conduta: Indometacina intravenosa.<br>\nD) O paciente possui apenas artrite infecciosa séptica com sopro inocente de hiperfluxo febril; conduta: Punção articular e Ceftriaxona venosa.<br>\nE) O paciente preenche critérios de Febre Reumática, porém a corticoterapia está contraindicada pelo risco de infecção ativa; conduta: Ibuprofeno oral."
+          "A) O paciente preenche 2 critérios maiores (artrite e cardite) e 3 menores (febre, VHS/PCR e PR longo); conduta: Ácido Acetilsalicílico em altas doses isolado.<br>\nB) O paciente preenche 2 critérios maiores (artrite e cardite) e 2 menores (febre e VHS/PCR elevado); o PR prolongado não pode ser computado como menor porque a cardite foi usada como maior; conduta: Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral em dose plena.<br>\nC) O paciente preenche 1 critério maior (artrite) e 4 menores; conduta: Indometacina intravenosa.<br>\nD) O paciente possui apenas artrite infecciosa séptica com sopro inocente de hiperfluxo febril; conduta: Punção articular e Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) venosa.<br>\nE) O paciente preenche critérios de Febre Reumática, porém a corticoterapia está contraindicada pelo risco de infecção ativa; conduta: Ibuprofeno oral."
         ],
         [
           "p",
-          "<strong>Gabarito Oficial: Letra B.</strong><br>\n<strong>Comentário Detalhado:</strong> A questão exige o domínio fino das regras de exclusão mútua da diretriz AHA 2015. O paciente possui comprovação de infecção estreptocócica (ASLO 980 UI/mL com história de faringite há 3 semanas). Apresenta 2 Critérios Maiores: Artrite (poliartrite migratória de grandes articulações) e Cardite clínica (sopro holossistólico de regurgitação mitral por valvulite aguda associado a taquicardia desproporcional). Entre os Critérios Menores, temos a febre (37,9-38,0 ºC) e a elevação exuberante de reagentes de fase aguda (VHS 78 e PCR 12). <em>Regra de Exclusão da AHA:</em> Como a Cardite foi computada como Critério Maior, o prolongamento do intervalo PR ao ECG NÃO PODE ser computado como Critério Menor no mesmo indivíduo! Portanto, ele possui 2 Maiores e 2 Menores (e não 3 menores, tornando a alternativa A falsa). Quanto ao tratamento: diante da presença inequívoca de CARDITE clínica, o tratamento de escolha é a <strong>Corticoterapia Sistêmica com Prednisona oral (1 a 2 mg/kg/dia)</strong>, e não AAS isolado (que só deve ser usado em artrite pura sem cardite). A alternativa B é a única plenamente correta."
+          "<strong>Gabarito Oficial: Letra B.</strong><br>\n<strong>Comentário Detalhado:</strong> A questão exige o domínio fino das regras de exclusão mútua da diretriz AHA 2015. O paciente possui comprovação de infecção estreptocócica (ASLO 980 UI/mL com história de faringite há 3 semanas). Apresenta 2 Critérios Maiores: Artrite (poliartrite migratória de grandes articulações) e Cardite clínica (sopro holossistólico de regurgitação mitral por valvulite aguda associado a taquicardia desproporcional). Entre os Critérios Menores, temos a febre (37,9-38,0 ºC) e a elevação exuberante de reagentes de fase aguda (VHS 78 e PCR 12). <em>Regra de Exclusão da AHA:</em> Como a Cardite foi computada como Critério Maior, o prolongamento do intervalo PR ao ECG NÃO PODE ser computado como Critério Menor no mesmo indivíduo! Portanto, ele possui 2 Maiores e 2 Menores (e não 3 menores, tornando a alternativa A falsa). Quanto ao tratamento: diante da presença inequívoca de CARDITE clínica, o tratamento de escolha é a <strong>Corticoterapia Sistêmica com Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral (1 a 2 mg/kg/dia)</strong>, e não AAS isolado (que só deve ser usado em artrite pura sem cardite). A alternativa B é a única plenamente correta."
         ],
         [
           "4",
@@ -873,7 +877,7 @@
         ],
         [
           "p",
-          "A droga de escolha absoluta para profilaxia primária é a <strong>Penicilina G Benzatina por via intramuscular em dose única</strong> (600.000 UI se &lt;= 20-27 kg; 1.200.000 UI se &gt; 20-27 kg). As vantagens são inequívocas: garantia de 100% de adesão terapêutica imediata sem depender da tomada domiciliar de comprimidos por 10 dias e custo irrisório. Quando a via oral for preferida pela família e houver certeza de adesão estrita, utiliza-se <strong>Amoxicilina oral (50 mg/kg/dia 1x ao dia ou dividida em 2 tomadas por 10 dias inteiros)</strong> ou Penicilina V potássica oral. Nos alérgicos, utiliza-se Azitromicina (12 mg/kg/dia por 5 dias) ou Claritromicina (15 mg/kg/dia por 10 dias)."
+          "A droga de escolha absoluta para profilaxia primária é a <strong>Penicilina G Benzatina por via intramuscular em dose única</strong> (600.000 UI se &lt;= 20-27 kg; 1.200.000 UI se &gt; 20-27 kg). As vantagens são inequívocas: garantia de 100% de adesão terapêutica imediata sem depender da tomada domiciliar de comprimidos por 10 dias e custo irrisório. Quando a via oral for preferida pela família e houver certeza de adesão estrita, utiliza-se <strong>Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral (50 mg/kg/dia 1x ao dia ou dividida em 2 tomadas por 10 dias inteiros)</strong> ou Penicilina V potássica oral. Nos alérgicos, utiliza-se Azitromicina (12 mg/kg/dia por 5 dias) ou Claritromicina (15 mg/kg/dia por 10 dias)."
         ],
         [
           "4",
@@ -881,7 +885,7 @@
         ],
         [
           "p",
-          "1. As <strong>Sulfas (Sulfadiazina e Sulfametoxazol-Trimetoprima) NÃO SERVEM para o tratamento agudo da faringoamigdalite nem para profilaxia primária</strong>, pois possuem taxas inaceitavelmente altas de falha de erradicação do estreptococo da orofaringe, embora a sulfadiazina seja excelente para a profilaxia secundária contínua!<br>\n  2. O tratamento antimicrobiano precoce da faringoamigdalite previne com sucesso a Febre Reumática, <strong>MAS NÃO PREVINE a ocorrência de Glomerulonefrite Difusa Aguda Pós-Estreptocócica (GNPE)</strong>, cujo desenvolvimento imune independe do uso de antibióticos na infecção inicial."
+          "1. As <strong>Sulfas (Sulfadiazina e Sulfametoxazol-Trimetoprima (800/160 mg VO ou EV 12/12h para ITU/partes moles, ou 15-20 mg/kg/dia com base no trimetoprima em 3-4 doses para pneumocistose)) NÃO SERVEM para o tratamento agudo da faringoamigdalite nem para profilaxia primária</strong>, pois possuem taxas inaceitavelmente altas de falha de erradicação do estreptococo da orofaringe, embora a sulfadiazina seja excelente para a profilaxia secundária contínua!<br>\n  2. O tratamento antimicrobiano precoce da faringoamigdalite previne com sucesso a Febre Reumática, <strong>MAS NÃO PREVINE a ocorrência de Glomerulonefrite Difusa Aguda Pós-Estreptocócica (GNPE)</strong>, cujo desenvolvimento imune independe do uso de antibióticos na infecção inicial."
         ]
       ]
     ],
@@ -1046,7 +1050,7 @@
             "<strong>Regras de Exclusão Mútua:</strong> Se artrite/artralgia for usada como Critério Maior, não pontue artralgia como menor. Se a cardite for computada como Maior, não pontue o prolongamento do intervalo PR ao ECG como menor.",
             "<strong>As Duas Exceções de Jones:</strong> A Coreia de Sydenham isolada e a Cardite Indolente de início tardio dispensam outros critérios e dispensam a comprovação laboratorial de infecção estreptocócica prévia.",
             "<strong>A Prova do AAS:</strong> A artrite reumática desaparece dramaticamente em 24 a 48 horas após a introdução de AAS em doses plenas (75 a 100 mg/kg/dia). Dor persistente após 3 dias afasta o diagnóstico de FR.",
-            "<strong>Corticoterapia na Cardite:</strong> Na presença de cardite clínica ou subclínica, o AAS está proscrito como monoterapia inicial. O tratamento obrigatório é CORTICOTERAPIA (Prednisona oral 1 a 2 mg/kg/dia ou pulsoterapia com metilprednisolona se cardite grave). Iniciar AAS no desmame para prevenir rebote inflamatório.",
+            "<strong>Corticoterapia na Cardite:</strong> Na presença de cardite clínica ou subclínica, o AAS está proscrito como monoterapia inicial. O tratamento obrigatório é CORTICOTERAPIA (Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral 1 a 2 mg/kg/dia ou pulsoterapia com Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias) se cardite grave). Iniciar AAS no desmame para prevenir rebote inflamatório.",
             "<strong>Erradicação Universal:</strong> Todo paciente com febre reumática deve receber Penicilina G Benzatina IM dose única para erradicar o foco amigdaliano, mesmo com orofaringe assintomática e swab negativo.",
             "<strong>Intervalo Brasileiro da Profilaxia:</strong> No Brasil, a profilaxia secundária é administrada rigorosamente A CADA 21 DIAS (3 semanas) e não a cada 28 dias.",
             "<strong>Tempo de Profilaxia Secundária:</strong>\n      <ul>\n        <li>Sem cardite: até 21 anos ou 5 anos do surto.",

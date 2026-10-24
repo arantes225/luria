@@ -2,8 +2,8 @@
   "v": 2,
   "s": "doencas-anorretais",
   "t": "Doenças Anorretais: Cirurgia e Coloproctologia Essencial",
-  "p": "Doenças Anorretais: Cirurgia e Coloproctologia Essencial — Livro-Texto LURIA",
-  "d": "Tratado completo de Proctologia e Cirurgia Colorretal abordando anatomia do canal anal, fisiopatologia e manejo da doença hemorroidária, fissura anal, abscessos e fístulas anorretais com regra de Goodsall-Salmon, doença pilonidal sacrococcígea, casos clínicos integradores e banco de questões comentadas.",
+  "p": "Tratado completo de Proctologia e Cirurgia Colorretal abordando anatomia do canal anal, fisiopatologia e manejo da doença hemorroidária, fissura anal, abscessos e fístulas anorretais com regra de Goodsall-Salmon, doença pilonidal sacrococcígea, casos clínicos integradores e banco de questões comentadas. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado completo de Proctologia e Cirurgia Colorretal abordando anatomia do canal anal, fisiopatologia e manejo da doença hemorroidária, fissura anal, abscessos e fístulas anorretais com regra de Goodsall-Salmon, doença pilonidal sacrococcígea, casos clínicos integradores e banco de questões comentadas. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Clínica Médica",
   "m": "Clínica Médica",
   "h": [
@@ -180,6 +180,10 @@
         [
           "p",
           "Ao longo da circunferência da linha pectínea repousam de 8 a 12 pequenas pregas semilunares de mucosa denominadas <strong>válvulas de Morgagni</strong>. Entre essas pregas e as colunas retais longitudinais de Morgagni situam-se pequenas depressões côncavas orientadas em fundo cego caudalmente conhecidas como <strong>criptas anais (criptas de Morgagni)</strong>."
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Clínica Médica, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "p",
@@ -534,7 +538,7 @@
             "<strong>Paciente que se Apresenta Após 72 Horas de Início:</strong>\n    <ul>\n      <li>Após 3 dias, a fase inflamatória mais crítica já atingiu o platô e iniciou a curva descendente. O organismo já deu início ao processo espontâneo de lise enzimática tecidual, liquefação e reabsorção progressiva do trombo.",
             "A realização de incisão cirúrgica nesta fase tardia trará mais dor e desconforto cicatricial decorrente da ferida cirúrgica do que a própria história natural da doença em resolução.",
             "<strong>Conduta de Escolha: Tratamento Conservador e Clínico.</strong>",
-            "Prescreve-se repouso relativo, analgésicos sistêmicos (dipirona, paracetamol, anti-inflamatórios não esteroidais), banhos de assento mornos frequentes (3 a 4 vezes ao dia), dieta rica em fibras, laxativos emolientes (óleo mineral ou lactulose) para manter fezes pastosas e pomadas anti-inflamatórias tópicas suaves.",
+            "Prescreve-se repouso relativo, analgésicos sistêmicos (Dipirona (1 g EV ou VO a cada 6 horas em adultos, ou 15 a 25 mg/kg/dose até 4x/dia em crianças), Paracetamol (500 a 1.000 mg VO a cada 6 horas, respeitando dose máxima de 4 g/dia), anti-inflamatórios não esteroidais), banhos de assento mornos frequentes (3 a 4 vezes ao dia), dieta rica em fibras, laxativos emolientes (óleo mineral ou lactulose) para manter fezes pastosas e pomadas anti-inflamatórias tópicas suaves.",
             "<em>Evolução:</em> O trombo se reabsorve completamente em 2 a 6 semanas, deixando frequentemente como único vestígio um <strong>plicoma anal flácido residual</strong> (que só necessitará de ressecção estética ou higiênica eletiva tardia se incomodar o paciente). Se ocorrer necrose de pressão da pele sobre o trombo com exteriorização de coágulos escuros e alívio espontâneo da dor (\"trombose hemorroidária rota\"), mantém-se a conduta conservadora com higienização suave, sem necessidade de sutura."
           ]
         ]
@@ -814,7 +818,7 @@
           [
             "<strong>Nunca aguardar flutuação para indicar a drenagem:</strong> Esperar que um abscesso profundo (como o isquiorretal) apresente flutuação externa significa permitir a destruição do aparelho esfincteriano, a propagação para a fossa contralateral (abscesso em ferradura) e a disseminação séptica com risco de fasceíte necrosante.",
             "<strong>Antibióticos NUNCA substituem a drenagem cirúrgica:</strong> Prescrever antibióticos isoladamente para um abscesso anorretal fechado é um erro grave que apenas mascara a toxicidade sistêmica transitória enquanto a necrose tecidual avança silenciosamente nos planos profundos.",
-            "<strong>Indicações de Antibioticoterapia Adjuvante PÓS-Drenagem:</strong> Reservada formalmente para pacientes com <em>febre sistêmica, leucocitose expressiva, celulite perianal extensa associada, diabéticos descompensados, imunossuprimidos (HIV/neutropênicos) e portadores de próteses valvares cardíacas</em>. O esquema deve cobrir enterobactérias Gram-negativas e anaeróbios (ex.: Ciprofloxacino ou Ceftriaxona associados a Metronidazol)."
+            "<strong>Indicações de Antibioticoterapia Adjuvante PÓS-Drenagem:</strong> Reservada formalmente para pacientes com <em>febre sistêmica, leucocitose expressiva, celulite perianal extensa associada, diabéticos descompensados, imunossuprimidos (HIV/neutropênicos) e portadores de próteses valvares cardíacas</em>. O esquema deve cobrir enterobactérias Gram-negativas e anaeróbios (ex.: Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h) ou Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) associados a Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase))."
           ]
         ],
         [
@@ -823,7 +827,7 @@
         ],
         [
           "p",
-          "A complicação mais temida da infecção anorretal é a progressão para a <strong>Gangrena de Fournier</strong> — fasceíte necrosante polimicrobiana sinérgica de rápida disseminação ao longo dos planos fasciais do períneo (fáscia de Colles), escroto/vulva (fáscia de Buck e Dartos) e parede abdominal anterior (fáscia de Scarpa). Caracteriza-se por dor perineal desproporcional, necrose cutânea escurecida com drenagem de líquido fétido acastanhado (\"água de lavagem de carne\"), enfisema subcutâneo palpável com crepitação à compressão e choque séptico distributivo grave. Exige intervenção cirúrgica de emergência absoluta: <strong>desbridamento agressivo em bloco de todos os tecidos desvitalizados</strong>, antibioticoterapia parenteral de largo espectro em dose máxima (ex.: Meropenem + Vancomicina + Clindamicina) e suporte intensivo em UTI."
+          "A complicação mais temida da infecção anorretal é a progressão para a <strong>Gangrena de Fournier</strong> — fasceíte necrosante polimicrobiana sinérgica de rápida disseminação ao longo dos planos fasciais do períneo (fáscia de Colles), escroto/vulva (fáscia de Buck e Dartos) e parede abdominal anterior (fáscia de Scarpa). Caracteriza-se por dor perineal desproporcional, necrose cutânea escurecida com drenagem de líquido fétido acastanhado (\"água de lavagem de carne\"), enfisema subcutâneo palpável com crepitação à compressão e choque séptico distributivo grave. Exige intervenção cirúrgica de emergência absoluta: <strong>desbridamento agressivo em bloco de todos os tecidos desvitalizados</strong>, antibioticoterapia parenteral de largo espectro em dose máxima (ex.: Meropenem (1 g EV em infusão prolongada a cada 8 horas, ou 2 g EV 8/8h em meningite bacteriana) + Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) + Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas)) e suporte intensivo em UTI."
         ],
         [
           "3",
@@ -1103,7 +1107,7 @@
         ],
         [
           "p",
-          "<strong>História Clínica:</strong> Refere que há aproximadamente 36 horas, após um episódio isolado de esforço evacuatório associado a evacuação endurecida, percebeu o surgimento abrupto de um \"caroço\" doloroso na margem do ânus. A dor é contínua, em queimação e pontada, piorando muito ao sentar e ao caminhar, sem alívio com analgésicos comuns orais. Nega febre, nega sangramento volumoso e refere que o nódulo nunca esteve presente anteriormente."
+          "<strong>História Clínica:</strong> Refere que há aproximadamente 36 horas, após um episódio isolado de esforço evacuatório associado a evacuação endurecida, percebeu o surgimento abrupto de um \"caroço\" doloroso na margem do ânus. A dor é contínua, em queimação e pontada, piorando muito ao sentar e ao caminhar, sem alívio com analgésicos não opioides (Dipirona 1 g VO/EV a cada 6 horas ou Paracetamol 750 mg a 1.000 mg VO a cada 6 horas) orais. Nega febre, nega sangramento volumoso e refere que o nódulo nunca esteve presente anteriormente."
         ],
         [
           "p",
@@ -1151,7 +1155,7 @@
         ],
         [
           "p",
-          "A) Prescrever ciprofloxacino oral associado a metronidazol e orientar banhos de assento mornos por 72 horas, solicitando retorno ambulatorial para reavaliação se houver surgimento de flutuação cutânea na nádega.<br>\nB) Indicar internamento hospitalar e encaminhamento imediato ao centro cirúrgico para exploração e drenagem cirúrgica ampla sob anestesia geral ou regional.<br>\nC) Realizar punção aspirativa com agulha fina às cegas no leito da emergência para identificação do patógeno e cultura antes de qualquer procedimento cirúrgico.<br>\nD) Solicitar colonoscopia de urgência para descartar adenocarcinoma colorretal obstrutivo perfurado antes de planejar intervenção cirúrgica."
+          "A) Prescrever Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h) oral associado a Metronidazol (500 mg VO ou EV a cada 8 horas, ou 2g VO dose única na tricomoníase) e orientar banhos de assento mornos por 72 horas, solicitando retorno ambulatorial para reavaliação se houver surgimento de flutuação cutânea na nádega.<br>\nB) Indicar internamento hospitalar e encaminhamento imediato ao centro cirúrgico para exploração e drenagem cirúrgica ampla sob anestesia geral ou regional.<br>\nC) Realizar punção aspirativa com agulha fina às cegas no leito da emergência para identificação do patógeno e cultura antes de qualquer procedimento cirúrgico.<br>\nD) Solicitar colonoscopia de urgência para descartar adenocarcinoma colorretal obstrutivo perfurado antes de planejar intervenção cirúrgica."
         ],
         [
           "p",

@@ -2,8 +2,8 @@
   "v": 2,
   "s": "doencas-exantematicas",
   "t": "Doenças Exantemáticas na Infância",
-  "p": "Doenças Exantemáticas na Infância — Livro-Texto LURIA",
-  "d": "Tratado Completo de Infectologia e Dermatologia Pediátrica: Diagnóstico Diferencial Semiológico, Sarampo (Koplik e Vitamina A), Rubéola (Linfonodos e SRC), Eritema Infeccioso (Parvovírus B19 e Crise Aplásica), Exantema Súbito (HHV-6), Escarlatina (Filatov, Pastia e Penicilina), Varicela (Polimorfismo e Bloqueio Pós-Exposição), Mão-Pé-Boca, Doença de Kawasaki, Mononucleose por EBV, Farmacodermias Graves (SSJ, NET, DRESS), Tabela Mestre LURIA e Calendário Vacinal do PNI",
+  "p": "Tratado Completo de Infectologia e Dermatologia Pediátrica: Diagnóstico Diferencial Semiológico, Sarampo (Koplik e Vitamina A), Rubéola (Linfonodos e SRC), Eritema Infeccioso (Parvovírus B19 e Crise Aplásica), Exantema Súbito (HHV-6), Escarlatina (Filatov, Pastia e Penicilina), Varicela (Polimorfismo e Bloqueio Pós-Exposição), Mão-Pé-Boca, Doença de Kawasaki, Mononucleose por EBV, Farmacodermias Graves (SSJ, NET, DRESS), Tabela Mestre LURIA e Calendário Vacinal do PNI Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado Completo de Infectologia e Dermatologia Pediátrica: Diagnóstico Diferencial Semiológico, Sarampo (Koplik e Vitamina A), Rubéola (Linfonodos e SRC), Eritema Infeccioso (Parvovírus B19 e Crise Aplásica), Exantema Súbito (HHV-6), Escarlatina (Filatov, Pastia e Penicilina), Varicela (Polimorfismo e Bloqueio Pós-Exposição), Mão-Pé-Boca, Doença de Kawasaki, Mononucleose por EBV, Farmacodermias Graves (SSJ, NET, DRESS), Tabela Mestre LURIA e Calendário Vacinal do PNI Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Pediatria",
   "m": "Pediatria",
   "h": [
@@ -121,6 +121,10 @@
         [
           "p",
           "<strong>Amnésia Imunológica Induzida pelo Sarampo:</strong> O vírus do sarampo possui tropismo específico pelo receptor CD150 (SLAM) expresso na superfície de linfócitos T e B de memória e células dendríticas. A infecção maciça dessas células induz apoptose generalizada dos clones de memória, resultando em uma profunda <strong>\"amnésia imunológica\" que dura de 2 a 3 anos após o sarampo</strong>, apagando a imunidade celular e humoral previamente adquirida contra dezenas de outros patógenos e multiplicando a mortalidade infantil tardia por pneumonias e diarreias bacterianas secundárias."
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Pediatria, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "p",
@@ -267,7 +271,7 @@
         ],
         [
           "p",
-          "<strong>Morfologia e Disseminação do Exantema:</strong> Trata-se de um exantema maculopapular avermelhado ou róseo pálido, composto por máculas e pápulas pequeninas e discretas (2 a 3 mm), que clareiam à digitopressão e raramente confluem. A sua distribuição é tipicamente <strong>centrífuga: tem início no TRONCO e pescoço</strong>, progredindo discretamente para a face e porção proximal dos membros. POUPA a porção distal dos membros inferiores e superiores. É assintomático, não pruriginoso e <strong>desaparece rapidamente em 24 a 48 horas sem descamação residual</strong>."
+          "<strong>Morfologia e Disseminação do Exantema:</strong> Trata-se de um exantema maculopapular avermelhado ou róseo pálido, composto por máculas e pápulas pequeninas e discretas (2 a 3 mm), que clareiam à digitopressão e raramente confluem. A sua distribuição é tipicamente <strong>centrífuga: tem início no TRONCO e pescoço</strong>, progredindo discretamente para a face e porção proximal dos membros. POUPA a porção distal dos membros inferiores e superiores. É assintomático, não pruriginoso e <strong>desaparece no intervalo de 24 a 48 horas sem descamação residual</strong>."
         ]
       ]
     ],
@@ -324,7 +328,7 @@
         ],
         [
           "p",
-          "<em>Tratamento Obrigatório:</em> O tratamento de escolha absoluta é a <strong>Penicilina G Benzatina em dose única por via intramuscular profunda (600.000 UI se &lt;= 27 kg; 1.200.000 UI se &gt; 27 kg)</strong>, ou Amoxicilina oral por 10 dias inteiros. O objetivo do tratamento é erradicar o estreptococo da orofaringe, cessar a transmissão comunitária após 24 horas do antibiótico e realizar a <strong>Profilaxia Primária da Febre Reumática</strong>."
+          "<em>Tratamento Obrigatório:</em> O tratamento de escolha absoluta é a <strong>Penicilina G Benzatina em dose única por via intramuscular profunda (600.000 UI se &lt;= 27 kg; 1.200.000 UI se &gt; 27 kg)</strong>, ou Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral por 10 dias inteiros. O objetivo do tratamento é erradicar o estreptococo da orofaringe, cessar a transmissão comunitária após 24 horas do antibiótico e realizar a <strong>Profilaxia Primária da Febre Reumática</strong>."
         ],
         [
           "3",
@@ -363,7 +367,7 @@
         [
           "o",
           [
-            "<strong>Superinfecção Bacteriana Secundária da Pele (A Complicação Mais Comum):</strong> As escoriações provocadas pelo ato de coçar rompem a barreira cutânea, permitindo a invasão secundária por <em>Staphylococcus aureus</em> e <em>Streptococcus pyogenes</em>. Manifesta-se como impetigo bolhoso, celulite, erisipela, abscessos subcutâneos e, nas formas graves, <strong>Fasceíte Necrosante e Choque Tóxico Estreptocócico</strong>. <em>Aviso Farmacológico:</em> <strong>O uso de anti-inflamatórios não esteroidais (AINEs como Ibuprofeno) durante a varicela está proscrito</strong>, pois estudos associam seu uso a risco aumentado de infecções bacterianas invasivas de partes moles e fasceíte necrosante! O antitérmico de escolha é a Dipirona ou o Paracetamol.",
+            "<strong>Superinfecção Bacteriana Secundária da Pele (A Complicação Mais Comum):</strong> As escoriações provocadas pelo ato de coçar rompem a barreira cutânea, permitindo a invasão secundária por <em>Staphylococcus aureus</em> e <em>Streptococcus pyogenes</em>. Manifesta-se como impetigo bolhoso, celulite, erisipela, abscessos subcutâneos e, nas formas graves, <strong>Fasceíte Necrosante e Choque Tóxico Estreptocócico</strong>. <em>Aviso Farmacológico:</em> <strong>O uso de anti-inflamatórios não esteroidais (AINEs como Ibuprofeno) durante a varicela está proscrito</strong>, pois estudos associam seu uso a risco aumentado de infecções bacterianas invasivas de partes moles e fasceíte necrosante! O antitérmico de escolha é a Dipirona (1 g EV ou VO a cada 6 horas em adultos, ou 15 a 25 mg/kg/dose até 4x/dia em crianças) ou o Paracetamol (500 a 1.000 mg VO a cada 6 horas, respeitando dose máxima de 4 g/dia).",
             "<strong>Síndrome de Reye:</strong> Encefalopatia aguda não inflamatória e degeneração gordurosa hepática grave desencadeada pelo uso de <strong>Ácido Acetilsalicílico (AAS / Salicilatos)</strong> durante o curso da varicela ou influenza. O uso de AAS é formalmente contraindicado.",
             "<strong>Ataxia Cerebelar Aguda:</strong> Inflamação benigna e autolimitada do cerebelo pós-varicela, manifestando-se por marcha atáxica cambaleante, dismetria e nistagmo cerca de 1 a 3 semanas após o exantema."
           ]
@@ -419,7 +423,7 @@
         [
           "o",
           [
-            "<strong>Lesões Ulceradas Orais (Enantema):</strong> Pequenas pápulas eritematosas que evoluem rapidamente para vesículas delicadas que se rompem com facilidade, transformando-se em <strong>úlceras rasas dolorosas com halo eritematoso fino</strong>, localizadas na mucosa jugal, língua, gengivas, palato duro e mole e pilares amigdalianos.",
+            "<strong>Lesões Ulceradas Orais (Enantema):</strong> Pequenas pápulas eritematosas que evoluem com agilidade para vesículas delicadas que se rompem com facilidade, transformando-se em <strong>úlceras rasas dolorosas com halo eritematoso fino</strong>, localizadas na mucosa jugal, língua, gengivas, palato duro e mole e pilares amigdalianos.",
             "<strong>Vesículas Palmares (Mãos):</strong> Pápulas eritematosas e <strong>vesículas ovais ou elípticas de conteúdo líquido claro, circundadas por um halo eritematoso vermelho-vivo</strong>, com o seu maior eixo alinhado paralelamente às linhas de força da pele. Localizam-se nas palmas das mãos, dobras interfalangeanas e dorsos dos dedos.",
             "<strong>Vesículas Plantares (Pés):</strong> Lesões idênticas distribuídas nas plantas dos pés, calcanhares e dorsos dos artelhos. As lesões são habitualmente pouco pruriginosas ou indolores na pele íntegra, contrastando com a intensa dor oral.",
             "<strong>Acometimento de Glúteos e Períneo:</strong> Frequentemente observa-se uma erupção maculopapular eritematosa confluente (às vezes sem vesículas óbvias) nas <strong>nádegas, sulco interglúteo e região perianal</strong>."
@@ -486,9 +490,9 @@
         [
           "o",
           [
-            "<strong>IMUNOGLOBULINA HUMANA INTRAVENOSA (IGIV):</strong> Dose única de <strong>2 g/kg por via intravenosa</strong> administrada em infusão contínua lenta ao longo de 10 a 12 horas. Se o paciente mantiver febre persistente ou recrudescente 36 horas após o término da infusão (Kawasaki refratário), indica-se uma segunda dose de IGIV 2 g/kg ou pulsoterapia com metilprednisolona venosa ou infliximabe (anti-TNF).",
+            "<strong>IMUNOGLOBULINA HUMANA INTRAVENOSA (IGIV):</strong> Dose única de <strong>2 g/kg por via intravenosa</strong> administrada em infusão contínua lenta ao longo de 10 a 12 horas. Se o paciente mantiver febre persistente ou recrudescente 36 horas após o término da infusão (Kawasaki refratário), indica-se uma segunda dose de IGIV 2 g/kg ou pulsoterapia com Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias) venosa ou infliximabe (anti-TNF).",
             "<strong>ÁCIDO ACETILSALICÍLICO (AAS):</strong>\n      <ul>\n        <li><em>Fase Aguda Anti-Inflamatória:</em> Dose de <strong>30 a 50 mg/kg/dia</strong> (diretrizes norte-americanas) ou <strong>80 a 100 mg/kg/dia</strong> fracionada em 4 tomadas diárias, mantida até que a criança permaneça afebril por 48 a 72 horas.",
-            "<em>Fase Subaguda / Antiagregante Plaquetária:</em> Reduzir a dose do AAS para <strong>3 a 5 mg/kg/dia em tomada matinal única</strong> (ação puramente antiagregante plaquetária para prevenir trombose intracoronariana durante a fase de trombocitose reativa intensa). Essa dose baixa é mantida por <strong>6 a 8 semanas</strong>, momento em que um novo ecocardiograma é realizado; se as artérias coronárias forem estritamente normais (Z-score &lt; 2,0), o AAS pode ser suspenso. Se houver aneurismas persistentes, o AAS é mantido indefinidamente."
+            "<em>Fase Subaguda / Antiagregante Plaquetária:</em> Reduzir a dose do AAS para <strong>3 a 5 mg/kg/dia em tomada matinal única</strong> (ação puramente antiagregante plaquetária para prevenir trombose intracoronariana durante a fase de trombocitose reativa intensa). Essa dose inicial mínima é mantida por <strong>6 a 8 semanas</strong>, momento em que um novo ecocardiograma é realizado; se as artérias coronárias forem estritamente normais (Z-score &lt; 2,0), o AAS pode ser suspenso. Se houver aneurismas persistentes, o AAS é mantido indefinidamente."
           ]
         ]
       ]
@@ -515,7 +519,7 @@
         ],
         [
           "p",
-          "<strong>História da Moléstia Atual:</strong> A mãe relata que a criança apresentou febre alta súbita (39,8 ºC a 40,2 ºC) durante os últimos 4 dias, exigindo doses alternadas de dipirona e paracetamol. Apesar da febre alta, o lactente mantinha-se ativo e mamando bem nos intervalos entre os picos. Não houve tosse, coriza, diarreia ou vômitos. Hoje cedo, a temperatura normalizou completamente (36,6 ºC) e não retornou mais; logo em seguida, surgiram as manchas cutâneas."
+          "<strong>História da Moléstia Atual:</strong> A mãe relata que a criança apresentou febre alta súbita (39,8 ºC a 40,2 ºC) durante os últimos 4 dias, exigindo doses alternadas de Dipirona (1 g EV ou VO a cada 6 horas em adultos, ou 15 a 25 mg/kg/dose até 4x/dia em crianças) e Paracetamol (500 a 1.000 mg VO a cada 6 horas, respeitando dose máxima de 4 g/dia). Apesar da febre alta, o lactente mantinha-se ativo e mamando bem nos intervalos entre os picos. Não houve tosse, coriza, diarreia ou vômitos. Hoje cedo, a temperatura normalizou completamente (36,6 ºC) e não retornou mais; logo em seguida, surgiram as manchas cutâneas."
         ],
         [
           "p",
@@ -567,7 +571,7 @@
         [
           "o",
           [
-            "<strong>Prescrição de Penicilina G Benzatina por Via Intramuscular Profunda:</strong> Paciente pesa 24 kg (&lt;= 27 kg): prescrever dose única de <strong>600.000 UI IM profunda</strong> (ou Amoxicilina oral 50 mg/kg/dia por 10 dias inteiros).",
+            "<strong>Prescrição de Penicilina G Benzatina por Via Intramuscular Profunda:</strong> Paciente pesa 24 kg (&lt;= 27 kg): prescrever dose única de <strong>600.000 UI IM profunda</strong> (ou Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral 50 mg/kg/dia por 10 dias inteiros).",
             "<strong>Afastamento Escolar Temporário:</strong> O paciente deve permanecer em isolamento domiciliar e afastado da escola por <strong>24 horas após a primeira dose do antibiótico</strong>, momento em que a transmissão comunitária cessa.",
             "<strong>Orientação sobre Descamação Tardia:</strong> Avisar aos pais que entre a 2ª e a 3ª semana de evolução ocorrerá descamação lamelar nas pontas dos dedos das mãos e pés, processo benigno esperado da doença."
           ]
@@ -618,7 +622,7 @@
         ],
         [
           "p",
-          "A) Escarlatina; Dosagem de ASLO; Penicilina G Benzatina em dose única.<br>\nB) Doença de Kawasaki; Ecocardiograma Transtorácico; Imunoglobulina Humana Intravenosa (2 g/kg) associada ao Ácido Acetilsalicílico.<br>\nC) Mononucleose Infecciosa; Sorologia para Epstein-Barr; Corticoterapia com Prednisona.<br>\nD) Sarampo complicado; Radiografia de tórax; Vitamina A em altas doses e Ceftriaxona venosa.<br>\nE) Artrite Idiopática Juvenil de início sistêmico; Ferritina sérica; Pulsoterapia com Metilprednisolona venosa."
+          "A) Escarlatina; Dosagem de ASLO; Penicilina G Benzatina em dose única.<br>\nB) Doença de Kawasaki; Ecocardiograma Transtorácico; Imunoglobulina Humana Intravenosa (2 g/kg) associada ao Ácido Acetilsalicílico.<br>\nC) Mononucleose Infecciosa; Sorologia para Epstein-Barr; Corticoterapia com Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo).<br>\nD) Sarampo complicado; Radiografia de tórax; Vitamina A em altas doses e Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) venosa.<br>\nE) Artrite Idiopática Juvenil de início sistêmico; Ferritina sérica; Pulsoterapia com Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias) venosa."
         ],
         [
           "p",
@@ -656,11 +660,11 @@
         ],
         [
           "4",
-          "O Exantema Induzido por Aminopenicilinas (Amoxicilina / Ampicilina)"
+          "O Exantema Induzido por Aminopenicilinas (Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) / Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas))"
         ],
         [
           "p",
-          "Na infecção natural não complicada por EBV, o exantema cutâneo ocorre em apenas 5% a 10% dos pacientes. Contudo, se a criança com mononucleose for erroneamente diagnosticada como portadora de faringoamigdalite bacteriana estreptocócica e tratada com <strong>Amoxicilina ou Ampicilina, cerca de 90% a 95% dos pacientes desenvolvem um EXANTEMA MACULOPAPULAR MORBILIFORME FLORIDO, INTENSAMENTE PRURIGINOSO E CONFLUENTE</strong> cerca de 7 a 10 dias após a primeira dose do antibiótico. <em>Conceito de Prova:</em> Esse exantema NÃO representa alergia verdadeira (hipersensibilidade tipo I IgE-mediada) à penicilina, mas sim uma reação imunomediada transitória mediada por células T ativadas pelo EBV em contato com o anel beta-lactâmico. Não contraindica o uso futuro de penicilinas ao longo da vida!"
+          "Na infecção natural não complicada por EBV, o exantema cutâneo ocorre em apenas 5% a 10% dos pacientes. Contudo, se a criança com mononucleose for erroneamente diagnosticada como portadora de faringoamigdalite bacteriana estreptocócica e tratada com <strong>Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) ou Ampicilina (2 g EV a cada 4 horas em infecções graves/meningite por Listeria, ou 1 a 2 g EV a cada 6 horas), cerca de 90% a 95% dos pacientes desenvolvem um EXANTEMA MACULOPAPULAR MORBILIFORME FLORIDO, INTENSAMENTE PRURIGINOSO E CONFLUENTE</strong> cerca de 7 a 10 dias após a primeira dose do antibiótico. <em>Conceito de Prova:</em> Esse exantema NÃO representa alergia verdadeira (hipersensibilidade tipo I IgE-mediada) à penicilina, mas sim uma reação imunomediada transitória mediada por células T ativadas pelo EBV em contato com o anel beta-lactâmico. Não contraindica o uso futuro de penicilinas ao longo da vida!"
         ],
         [
           "p",
@@ -698,7 +702,7 @@
             ],
             [
               "<strong>Zika Vírus</strong>",
-              "Exantema maculopapular pruriginoso fino de <strong>início precoce (nas primeiras 24 a 48 horas de doença)</strong>, que se dissemina rapidamente pelo corpo com febre muito baixa ou ausente.",
+              "Exantema maculopapular pruriginoso fino de <strong>início precoce (nas primeiras 24 a 48 horas de doença)</strong>, que se dissemina com agilidade pelo corpo com febre muito baixa ou ausente.",
               "<strong>Hiperemia conjuntival bilateral não purulenta intensa</strong> com fotofobia leve, cefaleia e poliartralgia leve. Risco máximo de microcefalia e Síndrome Congênita do Zika se contraída na gestação."
             ]
           ],
@@ -714,7 +718,7 @@
         ],
         [
           "p",
-          "Qualquer criança febril que apresente <strong>lesões petequiais, púrpuras ou equimoses cutâneas que NÃO clareiam à digitopressão</strong> deve ser considerada portadora de <strong>Meningococcemia ou Sepse Bacteriana Fulminante</strong> até que se prove o contrário! O quadro inicia-se com pequenas petéquias no tronco e membros inferiores que evoluem em poucas horas para púrpuras extensas palpáveis e lesões necróticas fulminantes de centro cinzento (<em>Purpura Fulminans</em>), associadas a choque séptico distributivo hiperlactatêmico, Coagulação Intravascular Disseminada (CIVD) e necrose hemorrágica maciça das glândulas suprarrenais (<strong>Síndrome de Waterhouse-Friderichsen</strong>). A conduta mandatória é: <strong>Acesso vascular imediato, expansão volêmica agressiva e administração da primeira dose de Ceftriaxona venosa (100 mg/kg) IMEDIATAMENTE antes de qualquer transferência ou exame!</strong>"
+          "Qualquer criança febril que apresente <strong>lesões petequiais, púrpuras ou equimoses cutâneas que NÃO clareiam à digitopressão</strong> deve ser considerada portadora de <strong>Meningococcemia ou Sepse Bacteriana Fulminante</strong> até que se prove o contrário! O quadro inicia-se com pequenas petéquias no tronco e membros inferiores que evoluem em poucas horas para púrpuras extensas palpáveis e lesões necróticas fulminantes de centro cinzento (<em>Purpura Fulminans</em>), associadas a choque séptico distributivo hiperlactatêmico, Coagulação Intravascular Disseminada (CIVD) e necrose hemorrágica maciça das glândulas suprarrenais (<strong>Síndrome de Waterhouse-Friderichsen</strong>). A conduta mandatória é: <strong>Acesso vascular imediato, expansão volêmica agressiva e administração da primeira dose de Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) venosa (100 mg/kg) IMEDIATAMENTE antes de qualquer transferência ou exame!</strong>"
         ]
       ]
     ],
@@ -785,7 +789,7 @@
               "Micropapular eritematoso em <strong>lixa áspera</strong>; <strong>Sinal de Filatov</strong> (palidez perioral) e <strong>Sinal de Pastia</strong> (linhas nas dobras)",
               "<strong>Língua em Framboesa Branca -> Vermelha</strong>",
               "<strong>Lamelar / Foliácea</strong> nas polpas digitais das mãos e pés (em luva e bota)",
-              "<strong>Penicilina G Benzatina IM dose única</strong> (ou Amoxicilina oral 10 dias) para profilaxia primária de febre reumática; afastamento escolar por 24h."
+              "<strong>Penicilina G Benzatina IM dose única</strong> (ou Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) oral 10 dias) para profilaxia primária de febre reumática; afastamento escolar por 24h."
             ],
             [
               "<strong>Varicela</strong> (Catapora)",
@@ -832,8 +836,8 @@
             "<strong>Vesículas em \"gota de orvalho\" com polimorfismo regional simultâneo:</strong> VARICELA.",
             "<strong>Vesículas elípticas em palmas e plantas com úlceras orais:</strong> DOENÇA MÃO-PÉ-BOCA.",
             "<strong>Febre por &gt;= 5 dias + Olhos vermelhos sem pus + Lábios vermelhos rachados:</strong> DOENÇA DE KAWASAKI (IGIV + AAS já!).",
-            "<strong>Amoxicilina dada para faringite que gera rash morbiliforme avermelhado:</strong> MONONUCLEOSE (Vírus Epstein-Barr).",
-            "<strong>Petéquias e púrpuras que não clareiam com febre e toxemia:</strong> MENINGOグレー / MENINGOCOCEMIA (Ceftriaxona venosa imediata!)."
+            "<strong>Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) dada para faringite que gera rash morbiliforme avermelhado:</strong> MONONUCLEOSE (Vírus Epstein-Barr).",
+            "<strong>Petéquias e púrpuras que não clareiam com febre e toxemia:</strong> MENINGOグレー / MENINGOCOCEMIA (Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) venosa imediata!)."
           ]
         ]
       ]
@@ -955,11 +959,11 @@
         ],
         [
           "p",
-          "<em>Fármacos Causais Típicos do DRESS:</em> Anticonvulsivantes (Carbamazepina, Fenitoína, Lamotrigina), Alopurinol, Sulfametoxazol-Trimetoprima, Dapsona, Sulfassalazina, Vancomicina e Minociclina."
+          "<em>Fármacos Causais Típicos do DRESS:</em> Anticonvulsivantes (Carbamazepina, Fenitoína, Lamotrigina), Alopurinol, Sulfametoxazol-Trimetoprima (800/160 mg VO ou EV 12/12h para ITU/partes moles, ou 15-20 mg/kg/dia com base no trimetoprima em 3-4 doses para pneumocistose), Dapsona, Sulfassalazina, Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) e Minociclina."
         ],
         [
           "p",
-          "<em>Tratamento de Escolha:</em> Suspensão imediata do fármaco causal associada a <strong>Corticoterapia Sistêmica Prolongada com Prednisona oral (1 a 1,5 mg/kg/dia)</strong> ou pulsoterapia com Metilprednisolona venosa nas formas graves com disfunção hepática, renal ou miocárdica. O desmame do corticoide deve ser feito com extrema lentidão ao longo de <strong>2 a 3 meses</strong> para prevenir o temido rebote inflamatório induzido pela reativação viral persistente."
+          "<em>Tratamento de Escolha:</em> Suspensão imediata do fármaco causal associada a <strong>Corticoterapia Sistêmica Prolongada com Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral (1 a 1,5 mg/kg/dia)</strong> ou pulsoterapia com Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias) venosa nas formas graves com disfunção hepática, renal ou miocárdica. O desmame do corticoide deve ser feito com extrema lentidão ao longo de <strong>2 a 3 meses</strong> para prevenir o temido rebote inflamatório induzido pela reativação viral persistente."
         ],
         [
           "3",
@@ -1033,7 +1037,7 @@
           "u",
           [
             "<strong>Imunodeficiências Congênitas ou Adquiridas Graves:</strong> Crianças com imunodeficiência combinada grave (SCID), infecção avançada pelo HIV com imunossupressão grave (contagem de linfócitos T CD4+ &lt; 15% em menores de 5 anos ou &lt; 200 células/mm³ em maiores de 5 anos), leucemias, linfomas ou neoplasias sólidas em quimioterapia ativa;",
-            "<strong>Uso de Corticoterapia Sistêmica Imunossupressora:</strong> Pacientes em uso de Prednisona na dose &gt;= 2 mg/kg/dia (ou &gt;= 20 mg/dia para crianças &gt; 10 kg) por um período superior a <strong>14 dias consecutivos</strong>. A vacinação só pode ser realizada após um intervalo mínimo de <strong>30 dias (1 mês) após a suspensão completa do corticoide</strong>;",
+            "<strong>Uso de Corticoterapia Sistêmica Imunossupressora:</strong> Pacientes em uso de Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) na dose &gt;= 2 mg/kg/dia (ou &gt;= 20 mg/dia para crianças &gt; 10 kg) por um período superior a <strong>14 dias consecutivos</strong>. A vacinação só pode ser realizada após um intervalo mínimo de <strong>30 dias (1 mês) após a suspensão completa do corticoide</strong>;",
             "<strong>Mulheres Gestantes:</strong> Risco teórico de teratogênese pelo componente atenuado da rubéola (evitar gestação por pelo menos 30 dias após receber a vacina tríplice viral inadvertidamente);",
             "<strong>Histórico de Anafilaxia Severa Comprovada a Doses Anteriores ou a Componentes da Vacina</strong> (como neomicina ou gelatina); <em>Atenção para Mito de Prova:</em> A alergia à proteína do ovo de galinha (mesmo com manifestações graves como anafilaxia) <strong>NÃO É MAIS CONTRAINDICAÇÃO À VACINA TRÍPLICE VIRAL</strong>, pois o vírus vacinal do sarampo e caxumba é cultivado em cultura de fibroblastos de embrião de galinha e contém quantidades absolutamente microscópicas de ovalbumina, podendo ser administrada com segurança na sala de vacina habitual!"
           ]

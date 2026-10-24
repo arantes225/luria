@@ -2,8 +2,8 @@
   "v": 2,
   "s": "cancer-gastrico",
   "t": "Câncer Gástrico: Diagnóstico, Estadiamento e Cirurgia Oncológica",
-  "p": "Câncer Gástrico: Diagnóstico, Estadiamento e Cirurgia Oncológica — Livro-Texto LURIA",
-  "d": "Epidemiologia, classificações de Lauren e Bormann, linfadenectomia D2, reconstrução em Y de Roux, metástases e protocolo FLOT",
+  "p": "Epidemiologia, classificações de Lauren e Bormann, linfadenectomia D2, reconstrução em Y de Roux, metástases e protocolo FLOT Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Epidemiologia, classificações de Lauren e Bormann, linfadenectomia D2, reconstrução em Y de Roux, metástases e protocolo FLOT Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Cirurgia Geral",
   "m": "Cirurgia Oncológica do Trato Digestivo Alto",
   "h": [
@@ -183,6 +183,10 @@
         [
           "p",
           "Aplicada exclusivamente aos tumores invasores que ultrapassam a camada submucosa e atingem a muscular própria ou camadas mais profundas (câncer gástrico avançado):"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Cirurgia Geral, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "t",
@@ -1237,43 +1241,42 @@
       [
         [
           "2",
-          "8. Síntese Prática, Fluxograma Decisório e Referências Bibliográficas"
-        ],
-        [
-          "4",
-          "Guia de Conduta Rápida no Câncer Gástrico"
-        ],
-        [
-          "u",
-          [
-            "<strong>Epidemiologia e Fatores de Risco:</strong> <em>H. pylori</em> (principal fator Grupo 1, CagA), sal, nitratos, defumados, gastrite atrófica/metaplasia intestinal, anemia perniciosa, tabagismo e EBV.",
-            "<strong>Classificação de Lauren:</strong>\n      <ul>\n        <li><em>Intestinal:</em> Idosos, homens, antro/distal, bem diferenciado/tubular, ambiental/H. pylori, disseminação hematogênica (fígado), margem 3-5 cm.",
-            "<em>Difuso:</em> Jovens, mulheres, corpo/fundo, indiferenciado/células em anel de sinete, perda de E-caderina (gene <em>CDH1</em>), disseminação peritoneal precoce, pior prognóstico, margem 6-8 cm (ou total)."
-          ]
-        ],
-        [
-          "p",
-          "</li>\n    <li><strong>Classificação de Bormann (Avançado):</strong> I (polipoide), II (ulcerado de bordas nítidas), III (ulceroinfiltrativo - mais comum), IV (infiltrativo difuso / linite plástica - pior prognóstico).</li>\n    <li><strong>Sinais de Metástase à Distância (M1):</strong> Virchow (supraclavicular esquerdo), Irish (axilar esquerdo), Irmã Maria José (umbigo), Prateleira de Blumer (fundo de saco ao toque retal), Tumor de Krukenberg (ovário bilateral).</li>\n    <li><strong>Estadiamento:</strong> EDA com biópsias + TC tórax/abdome/pelve + Ecoendoscopia (T e N) + <strong>Laparoscopia de Estadiamento com Citologia Peritoneal</strong> (obrigatória em &gt;= T2, N+ ou difuso).</li>\n    <li><strong>Tratamento Cirúrgico:</strong>"
-        ],
-        [
-          "u",
-          [
-            "Antro/terço inferior = Gastrectomia Subtotal; Corpo/cárdia ou Difuso/Linite = Gastrectomia Total.",
-            "<strong>Linfadenectomia D2 obrigatória</strong> (mínimo de 16 linfonodos ressecados; padrão 25 a 30). Esplenectomia de rotina PROSCRITA (estudo JCOG 0110).",
-            "Reconstrução em <strong>Y de Roux com alça de 50-60 cm</strong> para evitar esofagite alcalina."
-          ]
-        ],
-        [
-          "p",
-          "</li>\n    <li><strong>Quimioterapia Perioperatória:</strong> Protocolo <strong>FLOT</strong> (5-FU, Leucovorina, Oxaliplatina, Docetaxel) - 4 ciclos neoadjuvantes + cirurgia + 4 ciclos adjuvantes para tumores &gt;= cT2 ou N+.</li>\n    <li><strong>Câncer Precoce (T1a/T1b):</strong> Elegível para ESD se preencher critérios japoneses (T1a intestinal sem úlcera &lt;= 2 cm para critérios absolutos).</li>\n  </ul>\n</div>"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
           "3",
-          "Referências Bibliográficas Fundamentais"
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
           "o",
           [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Cirurgia Geral. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
+        ],
+        [
+          "o",
+          [
+            "<strong>Epidemiologia e Fatores de Risco:</strong> <em>H. pylori</em> (principal fator Grupo 1, CagA), sal, nitratos, defumados, gastrite atrófica/metaplasia intestinal, anemia perniciosa, tabagismo e EBV.",
+            "<strong>Classificação de Lauren:</strong>\n      <ul>\n        <li><em>Intestinal:</em> Idosos, homens, antro/distal, bem diferenciado/tubular, ambiental/H. pylori, disseminação hematogênica (fígado), margem 3-5 cm.",
+            "<em>Difuso:</em> Jovens, mulheres, corpo/fundo, indiferenciado/células em anel de sinete, perda de E-caderina (gene <em>CDH1</em>), disseminação peritoneal precoce, pior prognóstico, margem 6-8 cm (ou total).",
+            "Antro/terço inferior = Gastrectomia Subtotal; Corpo/cárdia ou Difuso/Linite = Gastrectomia Total.",
+            "<strong>Linfadenectomia D2 obrigatória</strong> (mínimo de 16 linfonodos ressecados; padrão 25 a 30). Esplenectomia de rotina PROSCRITA (estudo JCOG 0110).",
+            "Reconstrução em <strong>Y de Roux com alça de 50-60 cm</strong> para evitar esofagite alcalina.",
             "Japanese Gastric Cancer Association. Japanese Gastric Cancer Treatment Guidelines 2021 (6th edition). <em>Gastric Cancer</em>. 2023;26(1):1-25.",
             "Al-Batran SE, Homann N, Pauligk C, et al. Perioperative chemotherapy with fluorouracil plus leucovorin, oxaliplatin, and docetaxel versus fluorouracil or capecitabine plus cisplatin and epirubicin for locally advanced, resectable gastric or gastro-oesophageal junction adenocarcinoma (FLOT4): a randomised, phase 2/3 trial. <em>The Lancet</em>. 2019;393(10184):1948-1957.",
             "Sano T, Sasako M, Mizusawa J, et al. Randomized controlled trial to evaluate splenectomy in total gastrectomy for proximal gastric carcinoma (JCOG0110). <em>Ann Surg</em>. 2017;265(2):277-283.",

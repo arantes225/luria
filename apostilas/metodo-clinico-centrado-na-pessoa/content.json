@@ -2,8 +2,8 @@
   "v": 2,
   "s": "metodo-clinico-centrado-na-pessoa",
   "t": "Método Clínico Centrado na Pessoa",
-  "p": "Método Clínico Centrado na Pessoa — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "p": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Medicina de Família e Comunidade",
   "m": "Medicina de Família e Comunidade",
   "h": [
@@ -213,6 +213,10 @@
           "Na língua inglesa e na antropologia médica (Arthur Kleinman, Cecil Helman e Ian McWhinney), os termos para o processo saúde-doença possuem recortes semânticos precisos que não podem ser confundidos:"
         ],
         [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina de Família e Comunidade, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
           "u",
           [
             "<strong><em>Health</em> (Saúde):</strong> Não é meramente a ausência de patologia, mas a percepção subjetiva e funcional de vitalidade, resiliência, propósito de vida e capacidade de realizar aspirações pessoais. Dois indivíduos com a mesma doença crônica podem ter percepções opostas de sua própria saúde: um paciente paraplégico engajado no esporte e no trabalho pode considerar-se plenamente saudável, enquanto um indivíduo sem patologia orgânica detectável pode sentir-se profundamente desprovido de saúde. Explorar a saúde envolve mapear a salutogênese (conceito de Aaron Antonovsky): quais são os recursos internos, hábitos protetores e fontes de significado que mantêm a pessoa saudável.",
@@ -384,7 +388,7 @@
         [
           "u",
           [
-            "<strong>Etapa 1 — Iniciando a Sessão (<em>Initiating the session</em>):</strong> Preparação prévia do médico (zerar pendências emocionais da consulta anterior, ler o prontuário rapidamente), estabelecimento do <em>rapport</em> inicial (cumprimento acolhedor, contato visual, apresentação pelo nome e função) e identificação de todos os motivos da consulta (rastreamento da agenda completa).",
+            "<strong>Etapa 1 — Iniciando a Sessão (<em>Initiating the session</em>):</strong> Preparação prévia do médico (zerar pendências emocionais da consulta anterior, ler o prontuário com agilidade), estabelecimento do <em>rapport</em> inicial (cumprimento acolhedor, contato visual, apresentação pelo nome e função) e identificação de todos os motivos da consulta (rastreamento da agenda completa).",
             "<strong>Etapa 2 — Coletando Informações (<em>Gathering information</em>):</strong> Exploração dos problemas sob a perspectiva biomédica (história da doença atual, revisão de sistemas focada, antecedentes) e sob a perspectiva da pessoa (SIFE), utilizando a transição fluida de perguntas abertas para perguntas fechadas (técnica do cone ou funil).",
             "<strong>Etapa 3 — Exame Físico (<em>Physical examination</em>):</strong> Pedido de permissão, explicação prévia das manobras, respeito ao pudor, lavagem das mãos e comunicação empática durante o toque clínico.",
             "<strong>Etapa 4 — Explicação e Planejamento (<em>Explanation and planning</em>):</strong> Fornecimento da quantidade e do tipo corretos de informação, auxílio na retenção e compreensão (técnica <em>chunk and check</em> e <em>teach-back</em>) e tomada de decisão compartilhada.",
@@ -788,7 +792,7 @@
           [
             "<strong>Discrepância entre a banalidade ou cronicidade do sintoma e a urgência da consulta:</strong> Paciente que tem uma verruga plantar ou lombalgia leve há 3 anos e subitamente comparece à demanda espontânea numa terça-feira chuvosa exigindo atendimento no dia. A pergunta-chave de McWhinney é: <strong><em>\"Por que este paciente veio hoje, exatamente neste momento, com esta queixa?\"</em></strong>",
             "<strong>Incongruência entre comunicação verbal e não verbal:</strong> O paciente relata uma queixa trivial (\"vim só pegar um encaminhamento para o oculista\"), mas apresenta olhar cabisbaixo, suspiros profundos, mãos trêmulas, voz embargada ou tensão corporal extrema.",
-            "<strong>Insatisfação com a resolução rápida do \"bilhete de entrada\":</strong> Quando o médico examina rapidamente a queixa inicial, entrega uma receita e tenta encerrar a consulta, o paciente hesita em se levantar ou lança a clássica <strong>Queixa de Maçaneta de Porta (<em>Doorknob Syndrome</em>)</strong> no último segundo da consulta."
+            "<strong>Insatisfação com a resolução rápida do \"bilhete de entrada\":</strong> Quando o médico examina com agilidade a queixa inicial, entrega uma receita e tenta encerrar a consulta, o paciente hesita em se levantar ou lança a clássica <strong>Queixa de Maçaneta de Porta (<em>Doorknob Syndrome</em>)</strong> no último segundo da consulta."
           ]
         ],
         [
@@ -996,7 +1000,7 @@
         ],
         [
           "p",
-          "Na anamnese biomédica e exame físico dirigidos: a dor é holocraniana, em peso/aperto (não pulsátil), de intensidade leve a moderada (4/10), surge no final do expediente no escritório, melhora com dipirona e com o repouso noturno (não o acorda à noite), sem náuseas, vômitos, fotofobia, febre, rigidez de nuca, alteração visual ou déficit focal. Pressão arterial: 122x78 mmHg; fundo de olho e exame neurológico completo rigorosamente normais."
+          "Na anamnese biomédica e exame físico dirigidos: a dor é holocraniana, em peso/aperto (não pulsátil), de intensidade leve a moderada (4/10), surge no final do expediente no escritório, melhora com Dipirona (1 g EV ou VO a cada 6 horas em adultos, ou 15 a 25 mg/kg/dose até 4x/dia em crianças) e com o repouso noturno (não o acorda à noite), sem náuseas, vômitos, fotofobia, febre, rigidez de nuca, alteração visual ou déficit focal. Pressão arterial: 122x78 mmHg; fundo de olho e exame neurológico completo rigorosamente normais."
         ],
         [
           "4",
@@ -1417,7 +1421,7 @@
         ],
         [
           "p",
-          "<strong>Enunciado:</strong> Uma médica de família de 28 anos percebe que sente intensa irritação, impaciência e vontade de encerrar rapidamente a consulta sempre que atende um determinado paciente de 62 anos, etilista crônico, que costuma fazer comentários irônicos e minimizar suas orientações. Em supervisão, a médica dá-se conta de que o tom de voz e a postura daquele paciente são idênticos aos de seu próprio tio paterno, que causou graves conflitos financeiros e emocionais em sua família durante sua infância. No referencial do Quarto Componente do MCCP, esse fenômeno vivenciado pela médica denomina-se:"
+          "<strong>Enunciado:</strong> Uma médica de família de 28 anos percebe que sente intensa irritação, impaciência e vontade de encerrar com agilidade a consulta sempre que atende um determinado paciente de 62 anos, etilista crônico, que costuma fazer comentários irônicos e minimizar suas orientações. Em supervisão, a médica dá-se conta de que o tom de voz e a postura daquele paciente são idênticos aos de seu próprio tio paterno, que causou graves conflitos financeiros e emocionais em sua família durante sua infância. No referencial do Quarto Componente do MCCP, esse fenômeno vivenciado pela médica denomina-se:"
         ],
         [
           "u",
@@ -1499,7 +1503,7 @@
             [
               "<strong>Estágios de Mudança Comportamental</strong>",
               "Prochaska & DiClemente (1982)",
-              "<strong>1. Pré-contemplação:</strong> não vê problema/não quer mudar;<br><strong>2. Contemplação:</strong> ambivalência clássica (\"quero, mas...\");<br><strong>3. Preparação:</strong> decidido a mudar em breve (~30 dias);<br><strong>4. Ação:</strong> mudou há &lt; 6 meses;<br><strong>5. Manutenção:</strong> mudou há &gt; 6 meses;<br><strong>6. Recaída:</strong> retorno ao hábito (deve ser desculpabilizada).",
+              "<strong>1. Pré-contemplação:</strong> não vê problema/não quer mudar;<br><strong>2. Contemplação:</strong> ambivalência clássica (\"quero, mas...\");<br><strong>3. Preparação:</strong> decidido a mudar precocemente (~30 dias);<br><strong>4. Ação:</strong> mudou há &lt; 6 meses;<br><strong>5. Manutenção:</strong> mudou há &gt; 6 meses;<br><strong>6. Recaída:</strong> retorno ao hábito (deve ser desculpabilizada).",
               "Dar sermão ou prescrever plano rígido para paciente em Pré-contemplação ou Contemplação ativa o <em>reflexo de consertar</em> e aumenta a resistência (reatância)."
             ],
             [
@@ -1540,7 +1544,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina de Família e Comunidade. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1549,8 +1578,7 @@
             "<a href=\"https://www.sbmfc.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">GUSSO, G.; LOPES, J. M. C.; DIAS, L. C. Tratado de Medicina de Família e Comunidade: Princípios, Formação e Prática. 2ª ed. Porto Alegre: Artmed, 2019.</a>",
             "<a href=\"https://www.each.international\" target=\"_blank\" rel=\"noopener noreferrer\">SILVERMAN, J.; KURTZ, S.; DRAPER, J. Skills for Communicating with Patients (Calgary-Cambridge Guide). 3rd ed. CRC Press, 2013.</a>",
             "<a href=\"https://motivationalinterviewing.org\" target=\"_blank\" rel=\"noopener noreferrer\">MILLER, W. R.; ROLLNICK, S. Entrevista Motivacional: Preparando as Pessoas para a Mudança. 3ª/4ª ed. Porto Alegre: Artmed, 2013/2023.</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

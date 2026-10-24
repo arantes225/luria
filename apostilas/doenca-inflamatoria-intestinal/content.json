@@ -2,8 +2,8 @@
   "v": 2,
   "s": "doenca-inflamatoria-intestinal",
   "t": "Doença Inflamatória Intestinal: Doença de Crohn e Retocolite Ulcerativa",
-  "p": "Doença Inflamatória Intestinal: Doença de Crohn e Retocolite Ulcerativa — Livro-Texto LURIA",
-  "d": "Fisiopatologia imunológica, manifestações extraintestinais, megacólon tóxico, terapias biológicas e abordagem cirúrgica comparada",
+  "p": "Fisiopatologia imunológica, manifestações extraintestinais, megacólon tóxico, terapias biológicas e abordagem cirúrgica comparada Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Fisiopatologia imunológica, manifestações extraintestinais, megacólon tóxico, terapias biológicas e abordagem cirúrgica comparada Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Clínica Médica",
   "m": "Gastroenterologia e Coloproctologia",
   "h": [
@@ -149,6 +149,10 @@
         [
           "p",
           "Estudos de associação genômica ampla (GWAS) identificaram mais de 240 loci de suscetibilidade associados às DIIs. O primeiro e mais impactante gene descrito foi o <strong>NOD2/CARD15</strong> (localizado no cromossomo 16q12):"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Clínica Médica, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "u",
@@ -510,7 +514,7 @@
             [
               "<strong>Dermatológico</strong>",
               "<strong>Eritema Nodoso:</strong> Nódulos subcutâneos eritematosos, dolorosos, quentes, localizados preferencialmente na face anterior da tíbia. Mais comum no sexo feminino e na Doença de Crohn. Regride com a indução de remissão da colite/ileíte.",
-              "<strong>Pioderma Gangrenoso:</strong> Lesão ulcerada destrutiva grave, de bordas violáceas escavadas e fundo necrótico purulento, precedida por pústula inicial. Ocorre fenômeno de <strong>patergia</strong> (piora ou surgimento de nova lesão após trauma cutâneo ou debridamento cirúrgico!). Mais comum na RCU. <strong>Pode eclodir mesmo com a doença intestinal em franca remissão clínica completa</strong>. Responde a corticoterapia sistêmica em altas doses e anti-TNF (Infliximabe)."
+              "<strong>Pioderma Gangrenoso:</strong> Lesão ulcerada destrutiva grave, de bordas violáceas escavadas e fundo necrótico purulento, precedida por pústula inicial. Ocorre fenômeno de <strong>patergia</strong> (piora ou surgimento de nova lesão após trauma cutâneo ou debridamento cirúrgico!). Mais comum na RCU. <strong>Pode eclodir mesmo com a doença intestinal em franca remissão clínica completa</strong>. Responde a corticoterapia sistêmica (ex.: Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) 1 mg/kg/dia VO [dose máxima 60-80 mg/dia] ou Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias) 1 g EV/dia por 3 dias em pulsoterapia) e anti-TNF (Infliximabe)."
             ],
             [
               "<strong>Ocular</strong>",
@@ -662,7 +666,7 @@
         ],
         [
           "p",
-          "</li>\n  <li><em>Conduta Mandatória:</em> Internação hospitalar imediata, jejum/dieta leve, rastreamento de <em>C. difficile</em> e início de corticoterapia endovenosa plena (Metilprednisolona 60 mg/dia ou Hidrocortisona 300 mg/dia).</li>\n</ul>"
+          "</li>\n  <li><em>Conduta Mandatória:</em> Internação hospitalar imediata, jejum/dieta leve, rastreamento de <em>C. difficile</em> e início de corticoterapia endovenosa plena (Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias) 60 mg/dia ou Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores) 300 mg/dia).</li>\n</ul>"
         ]
       ]
     ],
@@ -717,8 +721,8 @@
           "u",
           [
             "Jejum oral absoluto, passagem de sonda nasogástrica descompressiva e reposição volêmica vigorosa com Ringer Lactato e cloreto de potássio;",
-            "Antibioticoterapia endovenosa de amplo espectro cobrindo Gram-negativos e anaeróbios entéricos (ex: Ceftriaxona + Metronidazol ou Ciprofloxacino + Metronidazol);",
-            "<strong>Metilprednisolona 60 mg/dia EV (1 mg/kg/dia)</strong>;",
+            "Antibioticoterapia endovenosa de amplo espectro cobrindo Gram-negativos e anaeróbios entéricos (ex: Ceftriaxona (1g a 2g EV 1x/dia) + Metronidazol (500 mg EV 8/8h) ou Ciprofloxacino (500 mg VO 12/12h ou 400 mg EV 12/12h) + Metronidazol (500 mg VO/EV 8/8h));",
+            "<strong>Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias) 60 mg/dia EV (1 mg/kg/dia)</strong>;",
             "Investigação obrigatória de toxina A/B e PCR para <em>C. difficile</em> nas fezes e realização de retossigmoidoscopia flexível cuidadosa sem preparo com biópsias para pesquisa de CMV por imuno-histoquímica (iniciar Ganciclovir se confirmado);",
             "<strong>Janela Cirúrgica Crítica de 48 a 72 Horas:</strong> Se o paciente não apresentar melhora clínica e radiológica evidente em até 24 a 72 horas sob terapia médica intensiva, ou se houver sinais de piora (pneumoperitônio, choque séptico, peritonite franca), a conduta imediata é a <strong>COLECTOMIA TOTAL COM ILEOSTOMIA TERMINAL E SEPULTAMENTO DO COTO RETAL (Cirurgia de Hartmann modificada)</strong>. A colectomia aberta é salvadora de vidas e previne a perfuração catastrófica com peritonite fecal."
           ]
@@ -834,7 +838,7 @@
             ],
             [
               "<strong>Corticosteroides</strong>",
-              "<strong>Prednisona oral</strong> (40-60 mg/dia); <strong>Budesonida oral</strong> (9 mg/dia de liberação ileal ou MMX colônica); <strong>Metilprednisolona / Hidrocortisona EV</strong> no surto grave hospitalar.",
+              "<strong>Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral</strong> (40-60 mg/dia); <strong>Budesonida oral</strong> (9 mg/dia de liberação ileal ou MMX colônica); <strong>Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias) / Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores) EV</strong> no surto grave hospitalar.",
               "<strong>Estritamente reservados para INDUÇÃO rápida de remissão clínica nos surtos moderados a graves</strong>. <strong>NUNCA devem ser utilizados como terapia de manutenção</strong> pelo perfil deletério de efeitos adversos crônicos e ausência de cicatrização da mucosa.",
               "Osteoporose, síndrome de Cushing iatrogênica, osteonecrose asséptica da cabeça femoral, hiperglicemia descompensada, catarata, hipertensão e imunossupressão severa. Exigem desmame gradual após 8 a 12 semanas."
             ],
@@ -981,7 +985,7 @@
           [
             "<strong>Momento Ideal da Concepção:</strong> Aconselha-se que a gravidez ocorra com a doença em <strong>remissão clínica e endoscópica há pelo menos 6 meses consecutivos</strong>;",
             "<strong>Segurança dos Fármacos na Gestação:</strong>\n    <ul>\n      <li><em>Mesalazina e Sulfassalazina:</em> Seguras na gestação e lactação (sulfassalazina exige suplementação de ácido fólico em dose mais alta: 5 mg/dia pelo bloqueio competitivo na absorção de folato);",
-            "<em>Corticosteroides (Prednisona):</em> Seguros para controle de surtos agudos graves (pequeno aumento de fenda palatina no primeiro trimestre, amplamente superado pelo benefício materno-fetal do controle da colite);",
+            "<em>Corticosteroides (Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo)):</em> Seguros para controle de surtos agudos graves (pequeno aumento de fenda palatina no primeiro trimestre, amplamente superado pelo benefício materno-fetal do controle da colite);",
             "<em>Tiopurinas (Azatioprina e 6-Mercaptopurina):</em> Seguras na gravidez e amamentação. A manutenção do tratamento em mulheres já adaptadas é recomendada pelas diretrizes mundiais;",
             "<em>Anti-TNF (Infliximabe e Adalimumabe):</em> São anticorpos IgG1 que sofrem transporte placentário ativo mediado pelo receptor Fc neonatal a partir do final do segundo trimestre. Podem ser mantidos com segurança; se a paciente estiver em remissão sustentada profunda, pode-se programar a última dose algumas semanas antes do parto para minimizar os níveis séricos neonatais;",
             "<em>ATENÇÃO VACINAL PEDIÁTRICA:</em> O recém-nascido exposto a anti-TNF no terceiro trimestre intraútero <strong>NÃO PODE RECEBER VACINAS DE VÍRUS VIVO ATENUADO (BCG e Rotavírus) nos primeiros 6 a 12 meses de vida</strong> devido ao risco de infecção disseminada fatal!;",
@@ -1046,7 +1050,7 @@
         ],
         [
           "p",
-          "<strong>Classificação e Conduta Imediata:</strong>\n  1. A paciente preenche critérios de <strong>Colite Aguda Grave de Truelove e Witts</strong> (&gt; 6 evacuações sanguinolentas/dia + febre + taquicardia &gt; 90 + anemia + PCR elevada).<br>\n  2. Conduta hospitalar imediata: hidratação venosa, correção eletrolítica (potássio), profilaxia para trombose venosa profunda com enoxaparina profilática (pacientes com surto de DII têm risco trombótico quadruplicado!) e pesquisa de toxina de <em>C. difficile</em> nas fezes.<br>\n  3. Início imediato de <strong>Corticoterapia Endovenosa com Metilprednisolona 60 mg/dia</strong> (ou Hidrocortisona 300 mg/dia) por via parenteral.<br>\n  4. Realizada retossigmoidoscopia flexível à beira do leito sem preparo: presença de mucosa friável com ulcerações profundas; biópsias negativas para CMV.<br>\n  5. <strong>Avaliação no 3º Dia (Critérios de Oxford):</strong> Se no 3º dia de corticoterapia a paciente mantiver &gt; 8 evacuações/dia OU PCR &gt; 45 mg/L com 3 a 8 evacuações/dia, a chance de falha do corticoide supera 85%. Indica-se imediatamente <strong>Terapia de Resgate com Infliximabe (5 mg/kg) ou Ciclosporina EV</strong>, ou colectomia de urgência se deterioração clínica."
+          "<strong>Classificação e Conduta Imediata:</strong>\n  1. A paciente preenche critérios de <strong>Colite Aguda Grave de Truelove e Witts</strong> (&gt; 6 evacuações sanguinolentas/dia + febre + taquicardia &gt; 90 + anemia + PCR elevada).<br>\n  2. Conduta hospitalar imediata: hidratação venosa, correção eletrolítica (potássio), profilaxia para trombose venosa profunda com enoxaparina profilática (pacientes com surto de DII têm risco trombótico quadruplicado!) e pesquisa de toxina de <em>C. difficile</em> nas fezes.<br>\n  3. Início imediato de <strong>Corticoterapia Endovenosa com Metilprednisolona (pulsoterapia: 1 g EV diluído em 250 mL SG 5% em 2 a 3 horas, 1x/dia por 3 dias) 60 mg/dia</strong> (ou Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores) 300 mg/dia) por via parenteral.<br>\n  4. Realizada retossigmoidoscopia flexível à beira do leito sem preparo: presença de mucosa friável com ulcerações profundas; biópsias negativas para CMV.<br>\n  5. <strong>Avaliação no 3º Dia (Critérios de Oxford):</strong> Se no 3º dia de corticoterapia a paciente mantiver &gt; 8 evacuações/dia OU PCR &gt; 45 mg/L com 3 a 8 evacuações/dia, a chance de falha do corticoide supera 85%. Indica-se imediatamente <strong>Terapia de Resgate com Infliximabe (5 mg/kg) ou Ciclosporina EV</strong>, ou colectomia de urgência se deterioração clínica."
         ],
         [
           "4",
@@ -1070,15 +1074,15 @@
         ],
         [
           "p",
-          "Um paciente de 34 anos com diagnóstico de longa data de pancolite por Retocolite Ulcerativa é admitido no CTI com piora clínica abrupta, apresentando dor abdominal difusa, taquicardia de 128 bpm, pressão arterial de 85x50 mmHg e febre de 38,9°C. A radiografia de abdome em decúbito dorsal demonstra diâmetro do cólon transverso medindo 7,2 cm, com ausência de padrão de haustrações normais. O paciente vinha em uso de loperamida e sulfato de morfina prescritos no dia anterior para cólica intestinal. Assinale a conduta terapêutica de urgência mais adequada:"
+          "Um paciente de 34 anos com diagnóstico de longa data de pancolite por Retocolite Ulcerativa é admitido no CTI com piora clínica abrupta, apresentando dor abdominal difusa, taquicardia de 128 bpm, pressão arterial de 85x50 mmHg e febre de 38,9°C. A radiografia de abdome em decúbito dorsal demonstra diâmetro do cólon transverso medindo 7,2 cm, com ausência de padrão de haustrações normais. O paciente vinha em uso de loperamida e sulfato de Morfina (2 a 4 mg EV em bólus lento a cada 4 horas com titulação conforme escala visual analógica de dor) prescritos no dia anterior para cólica intestinal. Assinale a conduta terapêutica de urgência mais adequada:"
         ],
         [
           "p",
-          "A) Realizar colonoscopia diagnóstica descompressiva com aspiração gasosa de urgência e passagem de tubo de drenagem transanal até o ceco.<br>\n  B) Suspender imediatamente medicamentos antimotilidade/opioides, iniciar jejum absoluto, ressuscitação com cristaloides, antibioticoterapia de amplo espectro, corticoterapia endovenosa e indicar colectomia total de urgência caso não haja resposta satisfatória em 24 a 48 horas.<br>\n  C) Iniciar mesalazina oral em dose de 4,8 g/dia associada a enema retal de budesonida como primeira escolha.<br>\n  D) Proceder à estrituroplastia de emergência associada a enterectomia segmentar poupadora de cólon.<br>\n  E) Prescrever sulfassalazina venosa e aguardar 7 a 10 dias para reavaliação tomográfica ambulatorial."
+          "A) Realizar colonoscopia diagnóstica descompressiva com aspiração gasosa de urgência e passagem de tubo de drenagem transanal até o ceco.<br>\n  B) Suspender imediatamente medicamentos antimotilidade/opioides, iniciar jejum absoluto, ressuscitação com cristaloides, antibioticoterapia direcionada de amplo espectro (ex.: Piperacilina-Tazobactam (4,5 g EV em infusão estendida de 3-4h a cada 6 horas) 4,5 g EV 6/6h associado ou não a Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) 15-20 mg/kg EV 12/12h conforme o foco), corticoterapia endovenosa e indicar colectomia total de urgência caso não haja resposta satisfatória em 24 a 48 horas.<br>\n  C) Iniciar mesalazina oral em dose de 4,8 g/dia associada a enema retal de budesonida como primeira escolha.<br>\n  D) Proceder à estrituroplastia de emergência associada a enterectomia segmentar poupadora de cólon.<br>\n  E) Prescrever sulfassalazina venosa e aguardar 7 a 10 dias para reavaliação tomográfica ambulatorial."
         ],
         [
           "p",
-          "<strong>Gabarito Comentado:</strong> <strong>Alternativa B</strong>. O paciente apresenta megacólon tóxico (dilatação &gt; 5,5-6 cm + toxicidade sistêmica: febre, taquicardia, choque). A conduta clínica agressiva com suporte, descompressão, antibióticos e corticoide EV deve ser instituída, com indicação de colectomia total caso não responda rapidamente em 24-48 horas. A colonoscopia é formalmente contraindicada pelo risco extremo de perfuração colônica iatrogênica (elimina A). Mesalazina oral não tem papel no megacólon e atrasa o tratamento (elimina C). Estrituroplastia é técnica da Doença de Crohn, não da RCU (elimina D)."
+          "<strong>Gabarito Comentado:</strong> <strong>Alternativa B</strong>. O paciente apresenta megacólon tóxico (dilatação &gt; 5,5-6 cm + toxicidade sistêmica: febre, taquicardia, choque). A conduta clínica agressiva com suporte, descompressão, antibióticos e corticoide EV deve ser instituída, com indicação de colectomia total caso não responda no intervalo de 24-48 horas. A colonoscopia é formalmente contraindicada pelo risco extremo de perfuração colônica iatrogênica (elimina A). Mesalazina oral não tem papel no megacólon e atrasa o tratamento (elimina C). Estrituroplastia é técnica da Doença de Crohn, não da RCU (elimina D)."
         ],
         [
           "4",
@@ -1172,30 +1176,42 @@
       [
         [
           "2",
-          "8. Síntese Prática, Fluxograma de Conduta e Referências Bibliográficas"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
-          "4",
-          "Guia de Conduta Rápida nas Doenças Inflamatórias Intestinais"
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
-          "u",
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Clínica Médica. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
+        ],
+        [
+          "o",
           [
             "<strong>Doença de Crohn:</strong> Boca ao ânus, lesões salteadas/descontínuas, transmural, preserva reto com frequência, granulomas não caseosos (patognomônicos), ASCA (+), doença perianal frequente, tabagismo piora. Cirurgia NÃO é curativa (ressecção econômica ou estrituroplastia).",
             "<strong>Retocolite Ulcerativa:</strong> Restrita a cólon e reto, lesão contínua e ascendente desde o reto (sempre acometido), mucosa/submucosa, abscessos de cripta, p-ANCA (+), tabagismo \"protetor\" paradoxal. Cirurgia potencialmente curativa (Proctocolectomia total com bolsa ileal em J e anastomose íleo-anal).",
             "<strong>Manifestações Extraintestinais Paralelas ao Surto:</strong> Eritema nodoso, artrite periférica tipo 1, episclerite. Tratam-se tratando o intestino.",
             "<strong>Manifestações Extraintestinais Independentes:</strong> Espondilite anquilosante (HLA-B27), Pioderma gangrenoso, Colangite Esclerosante Primária (CEP - risco de colangiocarcinoma e câncer colorretal acelerado).",
             "<strong>Megacólon Tóxico (RCU):</strong> Dilatação &gt; 5,5-6 cm do transverso + sepse/toxicidade sistêmica. Descompressão, ATB, corticoide EV. Não melhorou em 48-72h = Colectomia total de urgência com ileostomia terminal. Colonoscopia e opioides PROSCRITOS!",
-            "<strong>Tratamento Farmacológico:</strong> 5-ASA (mesalazina) para RCU leve/moderada (inclusive tópica retal); Corticoides para indução rápida (PROSCRITOS na manutenção); Imunomoduladores (azatioprina) para manutenção; Biológicos (anti-TNF, anti-integrina, anti-IL-23) e pequenas moléculas (JAKi, S1P) para moderada/grave refratária."
-          ]
-        ],
-        [
-          "3",
-          "Referências Bibliográficas Fundamentais"
-        ],
-        [
-          "o",
-          [
+            "<strong>Tratamento Farmacológico:</strong> 5-ASA (mesalazina) para RCU leve/moderada (inclusive tópica retal); Corticoides para indução rápida (PROSCRITOS na manutenção); Imunomoduladores (azatioprina) para manutenção; Biológicos (anti-TNF, anti-integrina, anti-IL-23) e pequenas moléculas (JAKi, S1P) para moderada/grave refratária.",
             "Raine T, Bonovas S, Burisch J, et al. ECCO Guidelines on Therapeutics in Ulcerative Colitis: Medical Treatment. <em>J Crohns Colitis</em>. 2022;16(1):2-17.",
             "Torres J, Bonovas S, Doherty G, et al. ECCO Guidelines on Therapeutics in Crohn's Disease: Medical Treatment. <em>J Crohns Colitis</em>. 2020;14(1):4-22.",
             "Feuerstein JD, Ho EY, Shmidt E, et al. AGA Clinical Practice Guidelines on the Management of Moderate to Severe Ulcerative Colitis. <em>Gastroenterology</em>. 2020;158(5):1450-1461.",

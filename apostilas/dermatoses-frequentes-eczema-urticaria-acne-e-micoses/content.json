@@ -2,8 +2,8 @@
   "v": 2,
   "s": "dermatoses-frequentes-eczema-urticaria-acne-e-micoses",
   "t": "Dermatoses Frequentes: Eczema, Urticária, Acne e Micoses Superficiais",
-  "p": "Dermatoses Frequentes: Eczema, Urticária, Acne e Micoses Superficiais — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "p": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Clínica Médica",
   "m": "Clínica Médica",
   "h": [
@@ -114,7 +114,7 @@
             "<strong>Mastócito Cutâneo (MC_TC):</strong> Os mastócitos da pele contêm grânulos com triptase e quimase. Na Urticária Aguda mediada por hipersensibilidade tipo I, alérgenos bivalentes ou multivalentes cruzam pontes entre moléculas vizinhas de IgE ligadas ao receptor de alta afinidade FcεRI na membrana mastocitária. Isso desencadeia a fosforilação de tirosina-quinases intracelulares (Syk e Lyn), ativação da fosfolipase C gama (PLC-gama), clivagem de PIP2 em IP3 e DAG, influxo citoplasmático maciço de íons cálcio (Ca²+) e exocitose instantânea de mediadores pré-formados: histamina, heparina, fator ativador de plaquetas (PAF) e triptase.",
             "<strong>Ação da Histamina e Vasodilatação Microvascular:</strong> A histamina liberada atua nos receptores H1 acoplados à proteína Gq/11 expressos no endotélio pós-capilar, deflagrando a síntese de óxido nítrico e a fosforilação de caderinas do endotélio, causando fendas interendoteliais transitórias com extravasamento de plasma rico em proteínas (edema dérmico = urtica). A estimulação concomitante de receptores H1 em terminações nervosas livres do tipo C provoca reflexo de axônio antidrômico com liberação de CGRP e taquicininas, gerando o halo eritematoso reflexo e o prurido intenso. Em receptores H2 (G_s), a histamina reforça a vasodilatação arteriolar prolongada.",
             "<strong>Urticária Crônica Espontânea (UCE) e Mecanismos Autoimunes:</strong> Na UCE (sintomas recorrentes por período igual ou superior a 6 semanas sem desencadeante externo evidente), a fisiopatologia divide-se em Tipo I (autoalérgica) e Tipo IIb (autoimune clássica). No Tipo I, há presença de anticorpos IgE autólogos direcionados contra autoantígenos cutâneos, incluindo peroxidase tireoidiana (anti-TPO) e interleucina-24. No Tipo IIb, encontram-se autoanticorpos IgG funcionais dirigidos contra a cadeia alfa do próprio FcεRI (anti-FcεRI-alfa) ou contra o domínio Fc da molécula de IgE (anti-IgE), ativando o sistema complemento e fixando C5a, o qual por sua vez estimula o receptor C5aR nos mastócitos, mantendo degranulação contínua e persistente.",
-            "<strong>Ativação Não-Imunológica (Pseudoalergia e Receptores MRGPRX2):</strong> Diversos fármacos (como opioides, vancomicina, quinolonas, meios de contraste iodados) e certas aminas ativam diretamente o receptor acoplado à proteína G denominado MRGPRX2 (Mas-related G protein-coupled receptor member X2), localizado exclusivamente nos mastócitos periféricos, disparando liberação histamínica independente de IgE. Anti-inflamatórios não esteroidais (AINEs) inibem a ciclo-oxigenase 1 (COX-1), desviando o metabolismo do ácido araquidônico para a via da 5-lipoxigenase com hiperprodução de cisteinil-leucotrienos (LTC4, LTD4, LTE4), que aumentam a permeabilidade vascular e precipitam urticária/angioedema em pacientes predispostos."
+            "<strong>Ativação Não-Imunológica (Pseudoalergia e Receptores MRGPRX2):</strong> Diversos fármacos (como opioides, Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL), quinolonas, meios de contraste iodados) e certas aminas ativam diretamente o receptor acoplado à proteína G denominado MRGPRX2 (Mas-related G protein-coupled receptor member X2), localizado exclusivamente nos mastócitos periféricos, disparando liberação histamínica independente de IgE. Anti-inflamatórios não esteroidais (AINEs) inibem a ciclo-oxigenase 1 (COX-1), desviando o metabolismo do ácido araquidônico para a via da 5-lipoxigenase com hiperprodução de cisteinil-leucotrienos (LTC4, LTD4, LTE4), que aumentam a permeabilidade vascular e precipitam urticária/angioedema em pacientes predispostos."
           ]
         ],
         [
@@ -171,6 +171,10 @@
         [
           "p",
           "A Dermatite Atópica possui critérios clínicos consolidados. Os critérios de Hanifin e Rajka exigem a presença de pelo menos 3 critérios maiores e pelo menos 3 critérios menores:"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Clínica Médica, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "t",
@@ -541,7 +545,7 @@
           [
             "<strong>Terapia Básica de Barreira e Cuidados Gerais:</strong> O pilar universal para toda dermatite é a restauração mecânica e lipídica do estrato córneo. Prescrevem-se banhos rápidos (5 a 10 minutos), com água morna (nunca quente), sem uso de buchas abrasivas e com sabonetes sem detergente aniônico agressivo (syndets com pH fisiológico 5.5). Aplicação generosa e imediata de hidratantes e emolientes ricos em ceramidas, colesterol, ácidos graxos livres e glicerol dentro de 3 minutos após o término do banho ('regra dos três minutos'), sobre a pele ainda discretamente úmida, 2 a 3 vezes ao dia. Evitar contato direto com roupas de lã, tecidos sintéticos rugosos, solventes e amaciantes aromáticos.",
             "<strong>Corticosteroides Tópicos (CST):</strong> Fármacos de primeira linha para o controle dos episódios de exacerbação aguda. A escolha da molécula e do veículo depende da localização anatômica e do estágio da lesão:\n    <ul>\n      <li><em>Áreas de pele espessa ou lesões hiperceratósicas/liquenificadas (tronco, membros):</em> Corticoides de alta potência (propionato de clobetasol 0,05% ou dipropionato de betametasona 0,05%) em pomada (veículo oclusivo que potencializa a penetração), aplicados 1 a 2 vezes ao dia por ciclos curtos (7 a 14 dias).",
-            "<em>Áreas de pele fina, dobras e face:</em> Corticoides de baixa a média potência (acetato de hidrocortisona 1%, desonida 0,05% ou furoato de mometasona 0,1%) em creme ou loção fluida, para evitar atrofia cutânea irreversível, estrias atróficas, telangiectasias, rosácea esteroidea e glaucoma/catarata se aplicado periocular.",
+            "<em>Áreas de pele fina, dobras e face:</em> Corticoides de baixa a média potência (acetato de Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores) 1%, desonida 0,05% ou furoato de mometasona 0,1%) em creme ou loção fluida, para evitar atrofia cutânea irreversível, estrias atróficas, telangiectasias, rosácea esteroidea e glaucoma/catarata se aplicado periocular.",
             "<em>Terapia Proativa de Manutenção:</em> Em casos moderados a graves com recidivas frequentes, adota-se a aplicação proativa de corticosteroide tópico de média potência ou inibidor de calcineurina 2 vezes por semana (ex: sábados e domingos) nas áreas anatômicas previamente acometidas já cicatrizadas, reduzindo em mais de 70% as crises agudas anuais.",
             "<strong>Inibidores Tópicos da Calcineurina (ITC):</strong> Tacrolimo (pomada a 0,03% para crianças de 2 a 15 anos e 0,1% para adultos) e Pimecrolimo (creme a 1%). Ligam-se à imunofilina intracelular FKBP-12, inibindo a fosfatase calcineurina e bloqueando a desfosforilação do fator nuclear de células T ativadas (NFAT), suprimindo a transcrição de IL-2, IL-4 e IFN-gama. <strong>Vantagem decisiva: não causam atrofia cutânea nem telangiectasias</strong>, sendo os agentes de escolha para face, pálpebras, pescoço e dobras axilares/inguinais. Efeito adverso mais comum: sensação transitória de queimação local nos primeiros dias de uso.",
             "<strong>Anti-histamínicos Orais na Dermatite Atópica:</strong> Ponto crucial para provas! <em>Anti-histamínicos de 2ª geração não sedantes NÃO têm eficácia comprovada no controle do prurido da DA</em>, pois o prurido atópico é mediado predominantemente por IL-31, TSLP e neuropeptídeos, e não por histamina. Anti-histamínicos de 1ª geração sedantes (hidroxizina 25 a 50 mg/noite; dexclorfeniramina 2 mg) são utilizados estritamente pelo seu efeito sedativo central auxiliar para melhorar a qualidade do sono e reduzir o ato inconsciente de coçar durante a noite.",
@@ -604,7 +608,7 @@
         ],
         [
           "p",
-          "</li>\n  <li><strong>Resgate em Crises Agudas Graves:</strong> Permite-se um ciclo curto de corticosteroide oral (prednisona 20 a 50 mg/dia via oral por no máximo 5 a 10 dias seguidos), estritamente para quebrar o ciclo inflamatório agudo, sendo proscrito seu uso crônico contínuo.</li>\n</ul>"
+          "</li>\n  <li><strong>Resgate em Crises Agudas Graves:</strong> Permite-se um ciclo curto de corticosteroide oral (Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) 20 a 50 mg/dia via oral por no máximo 5 a 10 dias seguidos), estritamente para quebrar o ciclo inflamatório agudo, sendo proscrito seu uso crônico contínuo.</li>\n</ul>"
         ],
         [
           "3",
@@ -625,12 +629,12 @@
             ],
             [
               "<strong>Grau II (Pápulo-Pustulosa Leve a Moderada)</strong>",
-              "<strong>Terapia combinada tópica fixa:</strong><br>- Peróxido de Benzoíla (2,5% ou 5%) + Adapaleno (0,1% ou 0,3%) à noite; OU<br>- Peróxido de Benzoíla + Clindamicina a 1% gel.",
+              "<strong>Terapia combinada tópica fixa:</strong><br>- Peróxido de Benzoíla (2,5% ou 5%) + Adapaleno (0,1% ou 0,3%) à noite; OU<br>- Peróxido de Benzoíla + Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas) a 1% gel.",
               "<em>Atenção Fundamental:</em> <strong>NUNCA utilizar antibiótico tópico em monoterapia</strong> (risco imediato de induzir cepas bacterianas resistentes de <em>C. acnes</em> e <em>S. aureus</em>). O peróxido de benzoíla é um bactericida oxidante sem risco de indução de resistência bacteriana."
             ],
             [
               "<strong>Grau II (Moderada a Severa Extensa com acometimento de tronco)</strong>",
-              "<strong>Antibioticoterapia sistêmica oral + Tópico:</strong><br>- Doxiciclina 100 mg via oral 1 vez ao dia por no máximo 8 a 12 semanas; OU<br>- Limeciclina 300 mg via oral 1 vez ao dia.<br><em>SEMPRE associada a Peróxido de Benzoíla tópico.</em>",
+              "<strong>Antibioticoterapia sistêmica oral + Tópico:</strong><br>- Doxiciclina (100 mg VO a cada 12 horas) 100 mg via oral 1 vez ao dia por no máximo 8 a 12 semanas; OU<br>- Limeciclina 300 mg via oral 1 vez ao dia.<br><em>SEMPRE associada a Peróxido de Benzoíla tópico.</em>",
               "Evitar tetraciclina com derivados lácteos (quelação de cálcio). Contraindicada em gestantes e crianças &lt; 8 anos (manchamento dentário e hipoplasia de esmalte). Não manter por &gt; 3 meses. Em mulheres: associar contraceptivo oral combinado antiandrogênico (drospirenona ou ciproterona) ou espironolactona (50 a 100 mg/dia)."
             ],
             [
@@ -687,7 +691,7 @@
         ],
         [
           "p",
-          "As complicações dermatológicas podem evoluir rapidamente para emergências com risco de óbito ou sequelas estéticas e funcionais irreversíveis se não reconhecidas e tratadas prontamente."
+          "As complicações dermatológicas podem evoluir com agilidade para emergências com risco de óbito ou sequelas estéticas e funcionais irreversíveis se não reconhecidas e tratadas prontamente."
         ],
         [
           "3",
@@ -700,9 +704,9 @@
         [
           "u",
           [
-            "<strong>Apresentação Clínica:</strong> Piora súbita do eczema pré-existente com febre alta (39 a 40 °C), prostração, linfoadenopatia regional dolorosa volumosa e erupção em salvas de incontáveis microvesículas umbilicadas monomórficas cupuliformes em 'cacho de uva'. As vesículas rompem-se rapidamente, dando origem a erosões 'em saca-bocado' (punch-out) circulares milimétricas recobertas por crostas hemáticas, com rápida disseminação para face, pescoço e tronco.",
+            "<strong>Apresentação Clínica:</strong> Piora súbita do eczema pré-existente com febre alta (39 a 40 °C), prostração, linfoadenopatia regional dolorosa volumosa e erupção em salvas de incontáveis microvesículas umbilicadas monomórficas cupuliformes em 'cacho de uva'. As vesículas rompem-se com agilidade, dando origem a erosões 'em saca-bocado' (punch-out) circulares milimétricas recobertas por crostas hemáticas, com rápida disseminação para face, pescoço e tronco.",
             "<strong>Complicações Ameaçadoras:</strong> Ceratoconjuntivite herpética com perfuração corneana e cegueira, meningoencefalite herpética e viremia fulminante com sepse bacteriana secundária por <em>Staphylococcus aureus</em>.",
-            "<strong>Conduta Imediata:</strong> <strong>Emergência dermatológica!</strong> Não aguardar resultado de PCR ou citologia de Tzanck. Iniciar imediatamente <strong>Aciclovir intravenoso</strong> na dose de 5 a 10 mg/kg a cada 8 horas (ou Aciclovir oral em casos precoces e estáveis: 400 a 800 mg 5 vezes ao dia em adultos; 20 mg/kg 4 vezes ao dia em crianças) por 7 a 14 dias. Cobertura empírica para estafilococo associada (Cefalexina ou Oxacilina) e avaliação oftalmológica mandatória se houver lesões periorbitárias. <em>Suspender temporariamente corticosteroides tópicos e inibidores de calcineurina</em> nas áreas afetadas."
+            "<strong>Conduta Imediata:</strong> <strong>Emergência dermatológica!</strong> Não aguardar resultado de PCR ou citologia de Tzanck. Iniciar imediatamente <strong>Aciclovir intravenoso</strong> na dose de 5 a 10 mg/kg a cada 8 horas (ou Aciclovir oral em casos precoces e estáveis: 400 a 800 mg 5 vezes ao dia em adultos; 20 mg/kg 4 vezes ao dia em crianças) por 7 a 14 dias. Cobertura empírica para estafilococo associada (Cefalexina (500 mg VO a cada 6 horas) ou Oxacilina (2 g EV a cada 4 horas)) e avaliação oftalmológica mandatória se houver lesões periorbitárias. <em>Suspender temporariamente corticosteroides tópicos e inibidores de calcineurina</em> nas áreas afetadas."
           ]
         ],
         [
@@ -732,7 +736,7 @@
           "u",
           [
             "<strong>Reconhecimento Imediato:</strong> Surgimento de rouquidão, estridor laríngeo inspiratório, sensação de sufocamento, disfonia ou disfagia e edema visível de úvula e palato mole.",
-            "<strong>Droga de Primeira Linha Insubstituível:</strong> <strong>ADRENALINA (EPINEFRINA) 1:1.000 (1 mg/mL) INTRAMUSCULAR</strong> na face anterolateral da coxa (músculo vasto lateral). Dose no adulto: 0,3 a 0,5 mg (0,3 a 0,5 mL). Dose na criança: 0,01 mg/kg (máximo de 0,3 mg). Pode ser repetida a cada 5 a 15 minutos em caso de resposta insatisfatória. <em>Erros crônicos de prova: prescrever corticoide ou anti-histamínico IV como primeira escolha na anafilaxia — o atraso na administração de adrenalina IM é o principal determinante isolado de morte por anafilaxia!</em>"
+            "<strong>Droga de Primeira Linha Insubstituível:</strong> <strong>ADRENALINA (EPINEFRINA) 1:1.000 (1 mg/mL) INTRAMUSCULAR</strong> na face anterolateral da coxa (músculo vasto lateral). Dose no adulto: 0,3 a 0,5 mg (0,3 a 0,5 mL). Dose na criança: 0,01 mg/kg (máximo de 0,3 mg). Pode ser repetida a cada 5 a 15 minutos em caso de resposta insatisfatória. <em>Erros crônicos de prova: prescrever corticoide ou anti-histamínico IV como primeira escolha na anafilaxia — o atraso na administração de Adrenalina intramuscular (0,3 a 0,5 mg no vasto lateral da coxa na concentração 1:1.000 [1 mg/mL] em adultos, ou 0,01 mg/kg até 0,3 mg em crianças) é o principal determinante isolado de morte por anafilaxia!</em>"
           ]
         ]
       ]
@@ -756,8 +760,8 @@
         [
           "u",
           [
-            "<strong>Acne Vulgar na Gestação:</strong> Fármacos absolutamente <strong>contraindicados: isotretinoína oral (categoria X - teratogenia devastadora)</strong>, tretinoína e adapaleno tópicos, tetraciclinas orais (doxiciclina e minociclina - provocam descoloração óssea e dentária amarelada/acastanhada fetal permanente e hipoplasia do esmalte dentário), espironolactona (risco de feminilização do feto masculino). <em>Tratamento seguro permitido:</em> <strong>Ácido Azelaico tópico a 15% ou 20%</strong> (categoria B da FDA, clareia e desinflama com absorção sistêmica desprezível), peróxido de benzoíla em baixas concentrações (2,5% a 5%), eritromicina tópica ou clindamicina tópica. Casos graves e inflamatórios que exigem antibiótico oral: Cefalexina ou Eritromicina (evitar estolato de eritromicina pelo risco de colestase materna).",
-            "<strong>Eczemas na Gestante:</strong> Hidratação emoliente intensiva e corticosteroides tópicos de baixa a média potência (hidrocortisona, desonida) são considerados seguros em áreas restritas. Evitar corticoides de ultra-alta potência em grandes superfícies (risco de restrição de crescimento intrauterino e baixo peso ao nascer). Inibidores de calcineurina tópicos (tacrolimo) devem ser evitados como rotina, reservados para casos de exceção. Anti-histamínicos seguros: cetirizina e loratadina (categoria B).",
+            "<strong>Acne Vulgar na Gestação:</strong> Fármacos absolutamente <strong>contraindicados: isotretinoína oral (categoria X - teratogenia devastadora)</strong>, tretinoína e adapaleno tópicos, tetraciclinas orais (Doxiciclina (100 mg VO a cada 12 horas) e minociclina - provocam descoloração óssea e dentária amarelada/acastanhada fetal permanente e hipoplasia do esmalte dentário), espironolactona (risco de feminilização do feto masculino). <em>Tratamento seguro permitido:</em> <strong>Ácido Azelaico tópico a 15% ou 20%</strong> (categoria B da FDA, clareia e desinflama com absorção sistêmica desprezível), peróxido de benzoíla em baixas concentrações (2,5% a 5%), eritromicina tópica ou Clindamicina (600 mg EV a cada 8 horas ou 300 mg VO a cada 6 horas) tópica. Casos graves e inflamatórios que exigem antibiótico oral: Cefalexina (500 mg VO a cada 6 horas) ou Eritromicina (evitar estolato de eritromicina pelo risco de colestase materna).",
+            "<strong>Eczemas na Gestante:</strong> Hidratação emoliente intensiva e corticosteroides tópicos de baixa a média potência (Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores), desonida) são considerados seguros em áreas restritas. Evitar corticoides de ultra-alta potência em grandes superfícies (risco de restrição de crescimento intrauterino e baixo peso ao nascer). Inibidores de calcineurina tópicos (tacrolimo) devem ser evitados como rotina, reservados para casos de exceção. Anti-histamínicos seguros: cetirizina e loratadina (categoria B).",
             "<strong>Micoses na Gestante:</strong> Antifúngicos orais (terbinafina e itraconazol) são <em>contraindicados</em> durante a gestação e lactação; o tratamento de onicomicoses e micoses cutâneas deve ser estritamente tópico (ciclopiroxolamina, miconazol, clotrimazol) ou postergado para após o término do aleitamento materno."
           ]
         ],
@@ -827,7 +831,7 @@
             ],
             [
               "<strong>UCE Passo 3</strong>",
-              "Adicionar Omalizumabe 300 mg por via subcutânea a cada 4 semanas, mantendo anti-H1 em dose alta.",
+              "Adicionar Omalizumabe 300 mg por via subcutânea a cada 4 semanas, mantendo anti-H1 em dose máxima preconizada.",
               "Avaliar resposta após 3 a 6 meses de injeções regulares. Se refratário com UAS7 descontrolado, avançar para o Passo 4."
             ],
             [
@@ -858,13 +862,13 @@
             ],
             [
               "<strong>Grau II Extenso</strong>",
-              "Doxiciclina oral 100 mg/dia (ou Limeciclina 300 mg/dia) por no máximo 8 a 12 semanas + Peróxido de Benzoíla tópico.",
+              "Doxiciclina (100 mg VO a cada 12 horas) oral 100 mg/dia (ou Limeciclina 300 mg/dia) por no máximo 8 a 12 semanas + Peróxido de Benzoíla tópico.",
               "Se recidiva rápida pós-antibiótico ou formação de cicatrizes, indicar Isotretinoína oral."
             ],
             [
               "<strong>Grau III e IV</strong>",
               "Isotretinoína oral 0,5 a 1,0 mg/kg/dia até dose cumulativa de 120-150 mg/kg, sob contracepção dupla e exames mensais.",
-              "Se surto inflamatório no início do tratamento (risco de acne fulminans induzida), associar Prednisona oral temporária."
+              "Se surto inflamatório no início do tratamento (risco de acne fulminans induzida), associar Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral temporária."
             ]
           ],
           "book-table"
@@ -893,7 +897,7 @@
         ],
         [
           "p",
-          "<strong>História da Doença Atual (HDA):</strong> Paciente possui diagnóstico de Dermatite Atópica desde os 3 meses de vida, com placas eritematosas pruriginosas e exsudativas nas bochechas e superfícies extensoras de braços e pernas, em uso irregular de hidratante e pomada de hidrocortisona. Há 2 dias a mãe notou surgimento de pequenas bolhinhas na face que rapidamente se romperam, acompanhadas de recusa alimentar e temperatura axilar de 39,2 °C. A mãe refere que o pai tem crises frequentes de 'aftas e bolhas na boca' (herpes labial) e beijou a criança na face há 4 dias."
+          "<strong>História da Doença Atual (HDA):</strong> Paciente possui diagnóstico de Dermatite Atópica desde os 3 meses de vida, com placas eritematosas pruriginosas e exsudativas nas bochechas e superfícies extensoras de braços e pernas, em uso irregular de hidratante e pomada de Hidrocortisona (100 mg EV a cada 8 horas ou 200 mg/dia em infusão contínua no choque séptico refratário a vasopressores). Há 2 dias a mãe notou surgimento de pequenas bolhinhas na face que com agilidade se romperam, acompanhadas de recusa alimentar e temperatura axilar de 39,2 °C. A mãe refere que o pai tem crises frequentes de 'aftas e bolhas na boca' (herpes labial) e beijou a criança na face há 4 dias."
         ],
         [
           "p",
@@ -920,7 +924,7 @@
             "Internação hospitalar imediata em leito de isolamento de contato.",
             "Início urgente de <strong>Aciclovir intravenoso</strong> na dose de 10 mg/kg a cada 8 horas (30 mg/kg/dia) em infusão lenta de 1 hora, sem aguardar testes virológicos confirmatórios.",
             "Coleta de PCR para HSV-1/HSV-2 das vesículas íntegras ou raspado da base da erosão para citologia de Tzanck (evidenciando queratinócitos multinucleados gigantes com inclusões nucleares e balonização).",
-            "Antibioticoterapia profilática/terapêutica associada com Cefazolina ou Oxacilina IV devido ao altíssimo risco de superinfecção bacteriana secundária por <em>S. aureus</em>.",
+            "Antibioticoterapia profilática/terapêutica associada com Cefazolina ou Oxacilina (2 g EV a cada 4 horas) IV devido ao altíssimo risco de superinfecção bacteriana secundária por <em>S. aureus</em>.",
             "Suspensão formal e imediata de qualquer corticoide tópico ou inibidor de calcineurina nas áreas ativas de infecção viral.",
             "Avaliação formal por médico oftalmologista para descartar ceratite herpética subclínica."
           ]
@@ -976,7 +980,7 @@
         ],
         [
           "p",
-          "<strong>HDA:</strong> O paciente relata que as lesões iniciaram aos 15 anos e pioraram progressivamente no último ano. Refere isolamento social e sintomas depressivos reativos à aparência da pele. Já utilizou sabonetes secativos comerciais, peróxido de benzoíla em gel e realizou dois ciclos de 30 dias de sulfametoxazol-trimetoprima e cefalexina oral prescritos em prontos-socorros, sempre com recidiva explosiva logo após a suspensão."
+          "<strong>HDA:</strong> O paciente relata que as lesões iniciaram aos 15 anos e pioraram progressivamente no último ano. Refere isolamento social e sintomas depressivos reativos à aparência da pele. Já utilizou sabonetes secativos comerciais, peróxido de benzoíla em gel e realizou dois ciclos de 30 dias de Sulfametoxazol-Trimetoprima (800/160 mg VO ou EV 12/12h para ITU/partes moles, ou 15-20 mg/kg/dia com base no trimetoprima em 3-4 doses para pneumocistose) e Cefalexina (500 mg VO a cada 6 horas) oral prescritos em prontos-socorros, sempre com recidiva explosiva logo após a suspensão."
         ],
         [
           "p",
@@ -1002,7 +1006,7 @@
           [
             "<strong>Indicação Padrão-Ouro Absoluta:</strong> <strong>Isotretinoína Oral (Ácido 13-cis-retinoico)</strong> sistêmica. Trata-se da única droga modificadora do curso da doença capaz de induzir remissão prolongada definitiva.",
             "<em>Exames Laboratoriais Pré-Tratamento:</em> Hemograma completo, TGO, TGP, Gama-GT, fosfatase alcalina, ureia, creatinina, colesterol total, HDL, LDL e triglicerídeos basais.",
-            "<em>Prevenção de Piora Paradoxal Inicial (Pseudo-Acne Fulminans):</em> Devido à altíssima carga inflamatória nodular inicial, o início direto de isotretinoína em dose cheia pode induzir necrose e ruptura maciça de folículos sebáceos. Portanto, prescreve-se <strong>Prednisona oral 0,5 mg/kg/dia por 2 a 4 semanas</strong> em conjunto com uma dose baixa introdutória de isotretinoína (0,2 a 0,3 mg/kg/dia), escalonando-se a isotretinoína para 0,5 a 1,0 mg/kg/dia conforme o desmame progressivo do corticoide.",
+            "<em>Prevenção de Piora Paradoxal Inicial (Pseudo-Acne Fulminans):</em> Devido à altíssima carga inflamatória nodular inicial, o início direto de isotretinoína em dose cheia pode induzir necrose e ruptura maciça de folículos sebáceos. Portanto, prescreve-se <strong>Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral 0,5 mg/kg/dia por 2 a 4 semanas</strong> em conjunto com uma dose inicial mínima introdutória de isotretinoína (0,2 a 0,3 mg/kg/dia), escalonando-se a isotretinoína para 0,5 a 1,0 mg/kg/dia conforme o desmame progressivo do corticoide.",
             "<em>Meta Terapêutica Cumulativa:</em> Planejar o tratamento para atingir a dose cumulativa total de <strong>120 a 150 mg/kg</strong> de peso corporal (para 60 kg, dose total de 7.200 a 9.000 mg ao longo de 6 a 9 meses), assegurando a prevenção de recidivas a longo prazo."
           ]
         ],
@@ -1016,7 +1020,7 @@
         ],
         [
           "p",
-          "<strong>HDA:</strong> Relata que há 2 meses notou uma 'coceira avermelhada' na dobra inguinal direita que descia para a coxa. Foi à farmácia onde o balconista indicou uma pomada de associação tripla contendo dipropionato de betametasona, sulfato de gentamicina e tolnaftato. O paciente relata que a coceira aliviou nos primeiros dias, mas após 3 semanas a lesão espalhou-se pela coxa, abdome inferior e nádega, ficando com manchas escuras, pústulas e pele 'fina e estriada'."
+          "<strong>HDA:</strong> Relata que há 2 meses notou uma 'coceira avermelhada' na dobra inguinal direita que descia para a coxa. Foi à farmácia onde o balconista indicou uma pomada de associação tripla contendo dipropionato de betametasona, sulfato de Gentamicina (5 mg/kg EV em dose única diária ou 1,5 a 2 mg/kg EV a cada 8 horas) e tolnaftato. O paciente relata que a coceira aliviou nos primeiros dias, mas após 3 semanas a lesão espalhou-se pela coxa, abdome inferior e nádega, ficando com manchas escuras, pústulas e pele 'fina e estriada'."
         ],
         [
           "p",
@@ -1070,7 +1074,7 @@
         ],
         [
           "p",
-          "A) Prednisona oral na dose de 40 mg ao dia por 4 semanas com desmame progressivo.<br>\nB) Anti-histamínico H1 de 2ª geração em dose padrão diária, como a bilastina 20 mg/dia ou fexofenadina 180 mg/dia.<br>\nC) Associação imediata de anti-histamínico H1 de 1ª geração sedante à noite (hidroxizina 25 mg) com anti-histamínico H2 (ranitidina 150 mg 12/12h).<br>\nD) Omalizumabe 300 mg por via subcutânea a cada 4 semanas como terapia biológica de indução precoce.<br>\nE) Dieta hipoalergênica rigorosa com exclusão de glúten, lactose, frutos do mar e corantes alimentares artificiais."
+          "A) Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral na dose de 40 mg ao dia por 4 semanas com desmame progressivo.<br>\nB) Anti-histamínico H1 de 2ª geração em dose padrão diária, como a bilastina 20 mg/dia ou fexofenadina 180 mg/dia.<br>\nC) Associação imediata de anti-histamínico H1 de 1ª geração sedante à noite (hidroxizina 25 mg) com anti-histamínico H2 (ranitidina 150 mg 12/12h).<br>\nD) Omalizumabe 300 mg por via subcutânea a cada 4 semanas como terapia biológica de indução precoce.<br>\nE) Dieta hipoalergênica rigorosa com exclusão de glúten, lactose, frutos do mar e corantes alimentares artificiais."
         ],
         [
           "p",
@@ -1253,7 +1257,7 @@
               "<strong>Acne Vulgar</strong>",
               "Comedão (aberto/fechado), pápula, pústula, nódulo, cisto",
               "Face, dorso superior e tórax anterior (áreas seborreicas).",
-              "Grau I: Retinoide tópico.<br>Grau II: Retinoide + PBz +/- Doxiciclina.<br>Grau III/IV: Isotretinoína oral (120-150 mg/kg cumulativo).",
+              "Grau I: Retinoide tópico.<br>Grau II: Retinoide + PBz +/- Doxiciclina (100 mg VO a cada 12 horas).<br>Grau III/IV: Isotretinoína oral (120-150 mg/kg cumulativo).",
               "NUNCA usar antibiótico tópico isolado (sempre associar Peróxido de Benzoíla). Isotretinoína é teratogênica absoluta (categoria X) e causa queilite em 100%."
             ],
             [
@@ -1303,7 +1307,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Clínica Médica. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1312,8 +1341,7 @@
             "<a href=\"https://eaaci.org\" target=\"_blank\" rel=\"noopener noreferrer\">EAACI/GA²LEN/EuroGuiDerm/APAAACI Guideline for the Definition, Classification, Diagnosis and Management of Urticaria 2022/2024</a>",
             "<a href=\"https://www.aad.org\" target=\"_blank\" rel=\"noopener noreferrer\">American Academy of Dermatology (AAD) — Guidelines of care for the management of acne vulgaris, atopic dermatitis and superficial fungal infections 2024/2026</a>",
             "<a href=\"https://asbai.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Diretrizes da Associação Brasileira de Alergia e Imunologia (ASBAI) — Urticária Crônica e Angioedema</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

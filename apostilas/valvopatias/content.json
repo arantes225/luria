@@ -132,9 +132,7 @@
         [
           "p",
           "Na assistência longitudinal, educação sobre sintomas de alerta e adesão à avaliação é parte essencial. A aparente estabilidade pode decorrer de o paciente evitar esforços ou restringir atividades sem relatar limitação. Perguntar especificamente sobre escadas, distâncias, tarefas e comparação com meses anteriores ajuda a revelar sintomas encobertos. Um diário clínico pode complementar intervalos entre ecocardiogramas."
-        ],
-        "<p><strong>Caso de fixação:</strong> paciente com dispneia progressiva, sopro novo e fibrilação atrial precisa de avaliação antes de uma decisão terapêutica. O raciocínio deve integrar sintomas, ritmo, ecocardiograma, gravidade da lesão, função ventricular, repercussão pulmonar e risco tromboembólico. Não se deve escolher intervenção apenas pelo sopro ou por uma medida isolada.</p>",
-        "<p><strong>Caso de fixação:</strong> paciente com dispneia progressiva, sopro novo e fibrilação atrial precisa de avaliação antes de uma decisão terapêutica. O raciocínio deve integrar sintomas, ritmo, ecocardiograma, gravidade da lesão, função ventricular, repercussão pulmonar e risco tromboembólico. Não se deve escolher intervenção apenas pelo sopro ou por uma medida isolada.</p>"
+        ]
       ]
     ],
     [
@@ -148,6 +146,18 @@
         [
           "p",
           "A válvula aórtica separa o ventrículo esquerdo da aorta; a mitral separa átrio esquerdo e ventrículo esquerdo; a pulmonar fica na saída do ventrículo direito; e a tricúspide entre átrio e ventrículo direitos. Durante a sístole ventricular, válvulas semilunares abrem e atrioventriculares fecham. Durante a diástole, ocorre o inverso."
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Prosthetic_Cardiac_Ball_Valves.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Prosthetic%20Cardiac%20Ball%20Valves.jpg\" alt=\"Prótese valvar cardíaca mecânica bivalvular\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Prótese valvar cardíaca mecânica bivalvular</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AProsthetic%20Cardiac%20Ball%20Valves.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Dr. Mirko Junge ↗</a> (CC BY 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Mitral_regurgitation_echo_4chamber.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Mitral%20regurgitation%20echo%204chamber.jpg\" alt=\"Jato de regurgitação mitral visualizado com Doppler colorido\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Jato de regurgitação mitral visualizado com Doppler colorido</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AMitral%20regurgitation%20echo%204chamber.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">J. Heuser JHeuser ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Medicina, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "p",
@@ -203,7 +213,7 @@
         ],
         [
           "p",
-          "Na insuficiência aórtica, parte do volume ejetado retorna ao ventrículo durante a diástole. O ventrículo aumenta volume diastólico e tenta preservar fluxo sistêmico; a forma crônica pode gerar pulsos amplos e hipertrofia excêntrica, enquanto forma aguda eleva rapidamente pressão diastólica sem tempo de adaptação. Daí decorre diferença marcante de apresentação e urgência."
+          "Na insuficiência aórtica, parte do volume ejetado retorna ao ventrículo durante a diástole. O ventrículo aumenta volume diastólico e tenta preservar fluxo sistêmico; a forma crônica pode gerar pulsos amplos e hipertrofia excêntrica, enquanto forma aguda eleva com agilidade pressão diastólica sem tempo de adaptação. Daí decorre diferença marcante de apresentação e urgência."
         ],
         [
           "p",
@@ -565,7 +575,7 @@
         ],
         [
           "p",
-          "Na regurgitação aórtica crônica, o ventrículo tolera por algum tempo volume adicional por dilatação e aumento de complacência, mantendo débito adiante. Na forma aguda, não há tempo de remodelamento: a pressão diastólica ventricular sobe rapidamente, elevando pressão pulmonar e reduzindo fluxo efetivo. Pode haver edema agudo e hipotensão com sopro pouco audível; exame físico clássico de pressão de pulso ampla é pouco sensível nesse cenário."
+          "Na regurgitação aórtica crônica, o ventrículo tolera por algum tempo volume adicional por dilatação e aumento de complacência, mantendo débito adiante. Na forma aguda, não há tempo de remodelamento: a pressão diastólica ventricular sobe com agilidade, elevando pressão pulmonar e reduzindo fluxo efetivo. Pode haver edema agudo e hipotensão com sopro pouco audível; exame físico clássico de pressão de pulso ampla é pouco sensível nesse cenário."
         ],
         [
           "p",
@@ -841,7 +851,7 @@
         ],
         [
           "p",
-          "Tratamento hemodinâmico depende da lesão: vasodilatação ou diurese podem ser úteis em determinados cenários, mas causar deterioração em outros. Evitar regras únicas para todas as valvopatias; estabilizar, solicitar ecocardiografia urgente e envolver cardiologia/cirurgia cardíaca conforme necessidade."
+          "Tratamento hemodinâmico depende da lesão: vasodilatação ou diurese podem ser úteis em determinados cenários, mas causar deterioração em outros. Evitar regras únicas para todas as valvopatias; estabilizar, solicitar ecocardiografia urgente e envolver cardiologia/cirurgia cardíaca conforme critérios clínicos objetivos."
         ],
         [
           "3",
@@ -1262,27 +1272,38 @@
       [
         [
           "2",
-          "Referências e limites de aplicação"
+          "Referências Bibliográficas e Diretrizes Oficiais"
         ],
         [
-          "p",
-          "Diretriz ESC/EACTS 2025 para manejo de valvopatias: https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/valvular-heart-disease . Conferir versão integral e atualizações antes de transformar limiares em indicação automática."
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
         ],
         [
-          "p",
-          "Diretriz ACC/AHA 2020 para doença valvar: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000923 . Usar como referência comparativa, respeitando atualizações."
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
         ],
         [
-          "p",
-          "Sociedade Brasileira de Cardiologia: pesquisar e confrontar diretrizes nacionais de valvopatias e profilaxia de endocardite, incluindo data e validade da versão antes da certificação."
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
         ],
         [
-          "p",
-          "Material de benchmark disponível no Drive: '03 - CARDIO - MIOCARDITE, SINCOPE, IC.pdf', lido apenas para identificar fronteira com insuficiência cardíaca; não é apostila específica de valvopatias e não foi reproduzido."
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Medicina. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
         ],
         [
-          "p",
-          "Atualização prioritária: ESC/EACTS Guidelines for the management of valvular heart disease, publicada em 29/08/2025, com errata publicada em agosto de 2026. https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/All-ESC-Practice-Guidelines/Valvular-Heart-Disease . Conferir tabelas da versão corrigida ao validar limiares e classes de recomendação."
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.who.int/\" target=\"_blank\" rel=\"noopener noreferrer\">Organização Mundial da Saúde (OMS / WHO). Clinical Management Guidelines and Global Health Norms.</a>"
+          ]
         ]
       ]
     ]

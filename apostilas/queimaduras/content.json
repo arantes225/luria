@@ -2,8 +2,8 @@
   "v": 2,
   "s": "queimaduras",
   "t": "Queimaduras",
-  "p": "Tratado completo de Queimaduras para concursos de Residência Médica e ENAMED: fisiopatologia da lesão térmica e resposta inflamatória sistêmica (SIRS, perda de barreira cutânea, hiperpermeabilidade capilar generalizada e choque do queimado); classificação quanto à profundidade (1º grau epidérmica, 2º grau superficial, 2º grau profunda, 3º grau espessura total e 4º grau musculoesquelético); cálculo da Superfície Corporal Queimada (SCQ) pela Regra dos Nove de Wallace e Tabela de Lund-Browder; ressuscitação volêmica intensiva comparando Parkland clássica vs ATLS 10ª/11ª ed / ABA com Ringer Lactato e titulação estrita pelo débito urinário; lesão por inalação com critérios formais de via aérea definitiva e manejo de intoxicações por CO (carboxihemoglobina) e cianeto (hidroxicobalamina); indicações e técnicas de escarotomia e fasciotomia; antibioticoterapia tópica com sulfadiazina de prata e mafenida; resposta hipermetabólica, suporte nutricional e profilaxia da Úlcera de Curling; queimaduras elétricas e químicas; 4 casos clínicos estruturados e questões comentadas na íntegra.",
-  "d": "Tratado completo de Queimaduras para concursos de Residência Médica e ENAMED: fisiopatologia da lesão térmica e resposta inflamatória sistêmica (SIRS, perda de barreira cutânea, hiperpermeabilidade capilar generalizada e choque do queimado); classificação quanto à profundidade (1º grau epidérmica, 2º grau superficial, 2º grau profunda, 3º grau espessura total e 4º grau musculoesquelético); cálculo da Superfície Corporal Queimada (SCQ) pela Regra dos Nove de Wallace e Tabela de Lund-Browder; ressuscitação volêmica intensiva comparando Parkland clássica vs ATLS 10ª/11ª ed / ABA com Ringer Lactato e titulação estrita pelo débito urinário; lesão por inalação com critérios formais de via aérea definitiva e manejo de intoxicações por CO (carboxihemoglobina) e cianeto (hidroxicobalamina); indicações e técnicas de escarotomia e fasciotomia; antibioticoterapia tópica com sulfadiazina de prata e mafenida; resposta hipermetabólica, suporte nutricional e profilaxia da Úlcera de Curling; queimaduras elétricas e químicas; 4 casos clínicos estruturados e questões comentadas na íntegra.",
+  "p": "Tratado completo de Queimaduras para concursos de Residência Médica e ENAMED: fisiopatologia da lesão térmica e resposta inflamatória sistêmica (SIRS, perda de barreira cutânea, hiperpermeabilidade capilar generalizada e choque do queimado); classificação quanto à profundidade (1º grau epidérmica, 2º grau superficial, 2º grau profunda, 3º grau espessura total e 4º grau musculoesquelético); cálculo da Superfície Corporal Queimada (SCQ) pela Regra dos Nove de Wallace e Tabela de Lund-Browder; ressuscitação volêmica intensiva comparando Parkland clássica vs ATLS 10ª/11ª ed / ABA com Ringer Lactato e titulação estrita pelo débito urinário; lesão por inalação com critérios formais de via aérea definitiva e manejo de intoxicações por CO (carboxihemoglobina) e cianeto (hidroxicobalamina); indicações e técnicas de escarotomia e fasciotomia; antibioticoterapia tópica com sulfadiazina de prata e mafenida; resposta hipermetabólica, suporte nutricional e profilaxia da Úlcera de Curling; queimaduras elétricas e químicas; 4 casos clínicos estruturados e questões comentadas na íntegra. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado completo de Queimaduras para concursos de Residência Médica e ENAMED: fisiopatologia da lesão térmica e resposta inflamatória sistêmica (SIRS, perda de barreira cutânea, hiperpermeabilidade capilar generalizada e choque do queimado); classificação quanto à profundidade (1º grau epidérmica, 2º grau superficial, 2º grau profunda, 3º grau espessura total e 4º grau musculoesquelético); cálculo da Superfície Corporal Queimada (SCQ) pela Regra dos Nove de Wallace e Tabela de Lund-Browder; ressuscitação volêmica intensiva comparando Parkland clássica vs ATLS 10ª/11ª ed / ABA com Ringer Lactato e titulação estrita pelo débito urinário; lesão por inalação com critérios formais de via aérea definitiva e manejo de intoxicações por CO (carboxihemoglobina) e cianeto (hidroxicobalamina); indicações e técnicas de escarotomia e fasciotomia; antibioticoterapia tópica com sulfadiazina de prata e mafenida; resposta hipermetabólica, suporte nutricional e profilaxia da Úlcera de Curling; queimaduras elétricas e químicas; 4 casos clínicos estruturados e questões comentadas na íntegra. Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Cirurgia Geral",
   "m": "Trauma e Emergências Cirúrgicas",
   "h": [
@@ -185,6 +185,10 @@
         ],
         [
           "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Cirurgia Geral, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
+        ],
+        [
+          "raw",
           "<figure data-luria-curated-image=\"The_standard_cyclopedia_of_modern_agriculture_and_rural_economy__by_the_most_dis\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/The%20standard%20cyclopedia%20of%20modern%20agriculture%20and%20rural%20economy%2C%20by%20the%20most%20distinguished%20authorities%20and%20specialists%20under%20the%20editorship%20of%20Professor%20R.%20Patrick%20Wright%20(1908)%20(14804836973).jpg\" alt=\"Queimadura de 2º grau superficial com vesículas e flictenas ricas em exsudato\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Queimadura de 2º grau superficial com vesículas e flictenas ricas em exsudato</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AThe%20standard%20cyclopedia%20of%20modern%20agriculture%20and%20rural%20economy%2C%20by%20the%20most%20distinguished%20authorities%20and%20specialists%20under%20the%20editorship%20of%20Professor%20R.%20Patrick%20Wright%20(1908)%20(14804836973).jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Internet Archive Book Images ↗</a> (No restrictions). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
@@ -214,7 +218,7 @@
         [
           "u",
           [
-            "Se o paciente receber <em>ressuscitação volêmica precoce e adequada</em>, preservação da perfusão tecidual, oxigenação tecidual ótima e prevenção da infecção local, as células recuperam o potencial elétrico transmembrana e a microcirculação se reestabelece, promovendo a sobrevivência e regeneração do tecido;",
+            "Se o paciente receber <em>ressuscitação volêmica imediata com cristaloides balanceados (Ringer Lactato ou SF 0,9% na dose de 30 mL/kg nas primeiras 3 horas) e adequada</em>, preservação da perfusão tecidual, oxigenação tecidual ótima e prevenção da infecção local, as células recuperam o potencial elétrico transmembrana e a microcirculação se reestabelece, promovendo a sobrevivência e regeneração do tecido;",
             "Se houver <em>hipovolemia, hipotensão sistêmica, vasoconstrição adrenérgica desregulada, edema intersticial compressivo ou infecção bacteriana secundária</em>, a zona de estase evolui inexoravelmente para trombose microvascular completa e necrose secundária — fenômeno conhecido como <strong>conversão da queimadura</strong> (uma lesão que inicialmente era de 2º grau superficial aprofunda-se para 3º grau de espessura total)."
           ]
         ],
@@ -653,7 +657,7 @@
         ],
         [
           "p",
-          "O <strong>Ringer Lactato</strong> é o cristaloide padrão-ouro para ressuscitação do queimado. Sua concentração de sódio (130 mEq/L) e osmolaridade aproximam-se mais do plasma que o Soro Fisiológico a 0,9%. O uso maciço de Soro Fisiológico 0,9% (que contém 154 mEq/L de sódio e 154 mEq/L de cloreto) induz rapidamente <strong>acidose metabólica hiperclorêmica grave</strong>, que piora a vasoconstrição renal, deprime a contratilidade miocárdica e confunde a interpretação laboratorial da acidose lática secundária à hipoperfusão tecidual."
+          "O <strong>Ringer Lactato</strong> é o cristaloide padrão-ouro para ressuscitação do queimado. Sua concentração de sódio (130 mEq/L) e osmolaridade aproximam-se mais do plasma que o Soro Fisiológico a 0,9%. O uso maciço de Soro Fisiológico 0,9% (que contém 154 mEq/L de sódio e 154 mEq/L de cloreto) induz com agilidade <strong>acidose metabólica hiperclorêmica grave</strong>, que piora a vasoconstrição renal, deprime a contratilidade miocárdica e confunde a interpretação laboratorial da acidose lática secundária à hipoperfusão tecidual."
         ],
         [
           "p",
@@ -844,7 +848,7 @@
         ],
         [
           "p",
-          "A perda da epiderme priva o hospedeiro da sua principal barreira física e biológica contra microrganismos invasores, além de amplificar perdas hídricas evaporativas diárias (que podem alcançar 3.000 a 5.000 mL/dia em grandes queimados). O leito da ferida queimada é estéril nas primeiras 24 a 48 horas pós-trauma; após esse período, coloniza-se rapidamente por flora gram-positiva endógena da pele (<em>Staphylococcus aureus</em>, <em>Streptococcus pyogenes</em>) e, após 5 a 7 dias de internação, por bacilos gram-negativos hospitalares virulentos multirresistentes (<em>Pseudomonas aeruginosa</em>, <em>Acinetobacter baumannii</em>, <em>Klebsiella pneumoniae</em>) e leveduras oportunistas (<em>Candida albicans</em>)."
+          "A perda da epiderme priva o hospedeiro da sua principal barreira física e biológica contra microrganismos invasores, além de amplificar perdas hídricas evaporativas diárias (que podem alcançar 3.000 a 5.000 mL/dia em grandes queimados). O leito da ferida queimada é estéril nas primeiras 24 a 48 horas pós-trauma; após esse período, coloniza-se com agilidade por flora gram-positiva endógena da pele (<em>Staphylococcus aureus</em>, <em>Streptococcus pyogenes</em>) e, após 5 a 7 dias de internação, por bacilos gram-negativos hospitalares virulentos multirresistentes (<em>Pseudomonas aeruginosa</em>, <em>Acinetobacter baumannii</em>, <em>Klebsiella pneumoniae</em>) e leveduras oportunistas (<em>Candida albicans</em>)."
         ],
         [
           "3",
@@ -1309,7 +1313,7 @@
         ],
         [
           "p",
-          "A) Intoxicação grave por Monóxido de Carbono; indicar Oxigenoterapia Hiperbárica em câmara fechada imediatamente.<br>\n  B) Acidose hiperclorêmica por ressuscitação com solução salina a 0,9%; trocar a hidratação por Ringer Lactato.<br>\n  C) Choque cardiogênico por infarto agudo do miocárdio sem supra de ST; indicar angioplastia primária.<br>\n  D) Intoxicação por Cianeto de Hidrogênio; administrar Hidroxicobalamina intravenosa.<br>\n  E) Choque séptico precoce; iniciar imediatamente Meropenem associado a Vancomicina."
+          "A) Intoxicação grave por Monóxido de Carbono; indicar Oxigenoterapia Hiperbárica em câmara fechada imediatamente.<br>\n  B) Acidose hiperclorêmica por ressuscitação com solução salina a 0,9%; trocar a hidratação por Ringer Lactato.<br>\n  C) Choque cardiogênico por infarto agudo do miocárdio sem supra de ST; indicar angioplastia primária.<br>\n  D) Intoxicação por Cianeto de Hidrogênio; administrar Hidroxicobalamina intravenosa.<br>\n  E) Choque séptico precoce; iniciar imediatamente Meropenem (1 g EV em infusão prolongada a cada 8 horas, ou 2 g EV 8/8h em meningite bacteriana) associado a Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL)."
         ],
         [
           "4",
@@ -1388,7 +1392,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes do SUS.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Cirurgia Geral. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1398,8 +1427,7 @@
             "<a href=\"http://sbqueimaduras.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Queimaduras (SBQ) — Diretrizes Nacionais de Atendimento Inicial ao Paciente Queimado</a>",
             "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/q/queimaduras\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde do Brasil — Cartilha para Tratamento de Emergência das Queimaduras</a>",
             "<a href=\"https://www.euroburn.org/\" target=\"_blank\" rel=\"noopener noreferrer\">European Burn Association (EBA) — European Practice Guidelines for Burn Care</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

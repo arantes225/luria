@@ -2,8 +2,8 @@
   "v": 2,
   "s": "oncologia-pediatrica-leucemias-linfomas-e-tumores-solidos",
   "t": "Oncologia Pediátrica: Leucemias, Linfomas e Tumores Sólidos",
-  "p": "Oncologia Pediátrica: Leucemias, Linfomas e Tumores Sólidos — Livro-Texto LURIA",
-  "d": "Tratado de Alta Performance em Leucemias Agudas, Linfomas da Infância, Tumores Sólidos Abdominais e Emergências Oncológicas Pediátricas",
+  "p": "Tratado de Alta Performance em Leucemias Agudas, Linfomas da Infância, Tumores Sólidos Abdominais e Emergências Oncológicas Pediátricas Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado de Alta Performance em Leucemias Agudas, Linfomas da Infância, Tumores Sólidos Abdominais e Emergências Oncológicas Pediátricas Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Pediatria",
   "m": "Pediatria",
   "h": [
@@ -190,6 +190,10 @@
         [
           "p",
           "A LLA exibe um pico de incidência bimodal bem documentado, com uma curva de distribuição muito acentuada na infância precoce: <strong>o pico clássico ocorre entre os 2 e 5 anos de idade</strong>, com discreto predomínio no sexo masculino (1,2:1). O evento biológico primário costuma envolver uma aberração cromossômica estrutural (translocação cromossômica ou aneuploidia) originada ainda <em>in utero</em> durante a hematopoiese fetal (primeiro \"hit\" genômico), seguida de mutações somáticas secundárias adicionais pós-natais desencadeadas por estímulos imunológicos infecciosos anormais."
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Pediatria, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "3",
@@ -816,7 +820,7 @@
         [
           "u",
           [
-            "<strong>1. Hiper-hidratação Venosa Vigorosa:</strong> Iniciar 24 a 48 horas antes da quimioterapia. Infusão de <strong>2.500 a 3.000 mL/m²/dia</strong> (ou 150 a 200 mL/kg/dia em lactentes) de soro fisiológico a 0,45% com glicose a 5%, <strong>SEM ADIÇÃO DE POTÁSSIO OU CÁLCIO</strong> na solução de hidratação! Meta: manter débito urinário vigoroso de <strong>>= 3 a 4 mL/kg/hora</strong> (ou > 100 mL/m²/hora). Se o débito urinário for insuficiente apesar da reposição hídrica adequada e volemia preenchida, associar diurético de alça (Furosemida 0,5 a 1 mg/kg IV).",
+            "<strong>1. Hiper-ressuscitação volêmica guiada por metas com Ringer Lactato ou Soro Fisiológico 0,9% (20 a 30 mL/kg nas primeiras 3 horas, objetivando débito urinário ≥ 0,5 mL/kg/h):</strong> Iniciar 24 a 48 horas antes da quimioterapia. Infusão de <strong>2.500 a 3.000 mL/m²/dia</strong> (ou 150 a 200 mL/kg/dia em lactentes) de soro fisiológico a 0,45% com glicose a 5%, <strong>SEM ADIÇÃO DE POTÁSSIO OU CÁLCIO</strong> na solução de hidratação! Meta: manter débito urinário vigoroso de <strong>>= 3 a 4 mL/kg/hora</strong> (ou > 100 mL/m²/hora). Se o débito urinário for insuficiente apesar da reposição hídrica adequada e volemia preenchida, associar diurético de alça (Furosemida 0,5 a 1 mg/kg IV).",
             "<strong>2. Manejo do Ácido Úrico: Alopurinol versus Rasburicase:</strong>\n    <ul>\n      <li><strong>Alopurinol:</strong> Inibidor competitivo da enzima <em>xantina oxidase</em>. Impede a formação de <em>novo</em> ácido úrico a partir de xantina e hipoxantina. <em>Limitação:</em> NÃO destrói nem reduz o ácido úrico já formado e circulante; além disso, causa acúmulo de xantina, que também pode precipitar nos túbulos renais (xantinúria). Indicado na profilaxia de pacientes de <strong>baixo a intermediário risco</strong>.",
             "<strong>Rasburicase (Urato-oxidase recombinante):</strong> Enzima lítica recombinante que converte enzimaticamente o ácido úrico circulante pré-existente em <strong>alantoína</strong>. A alantoína é um metabólito inerte altamente solúvel em água (cinco vezes mais solúvel que o ácido úrico), que é excretado pelos rins com extrema facilidade. Reduz os níveis plasmáticos de ácido úrico para valores normais ou indetectáveis em <strong>menos de 4 horas</strong>! Indicada na profilaxia e tratamento de <strong>alto risco de SLT</strong> (Burkitt, hiperleucocitose > 100.000/mm³ ou ácido úrico basal elevado). <em>Contraindicação Absoluta:</em> Pacientes com <strong>Deficiência de Glicose-6-Fosfato Desidrogenase (G6PD)</strong>, pelo risco de induzir hemólise intravascular aguda grave e metemoglobinemia (pois a reação da urato-oxidase produz peróxido de hidrogênio)."
           ]
@@ -847,8 +851,8 @@
         [
           "u",
           [
-            "Monoterapia intravenosa com betalactâmico antipseudomonas: <strong>Cefepima</strong> (150 mg/kg/dia dividido em 3 doses) OU <strong>Piperacilina-Tazobactam</strong> OU Carbapenêmico (Meropenem, se instabilidade hemodinâmica ou histórico de colonização por bactérias multirresistentes produtoras de ESBL).",
-            "<em>Quando Associar Vancomicina Inicialmente?</em> O uso de glicopeptídeos (Vancomicina) não é rotineiro para todos os pacientes. Está estritamente indicado na presença de: (1) Instabilidade hemodinâmica ou choque séptico; (2) Infecção óbvia relacionada a cateter venoso central (hiperemia, drenagem purulenta no túnel ou trajeto); (3) Infecção grave de partes moles, pele ou mucosite grave; (4) Hemocultura prévia positiva para Gram-positivos (S. aureus resistente à oxacilina - MRSA); ou (5) Uso prévio recente de profilaxia com fluoroquinolonas."
+            "Monoterapia intravenosa com betalactâmico antipseudomonas: <strong>Cefepima (2 g EV a cada 8 horas em infusão estendida de 3 horas)</strong> (150 mg/kg/dia dividido em 3 doses) OU <strong>Piperacilina-Tazobactam (4,5 g EV em infusão estendida de 3-4h a cada 6 horas)</strong> OU Carbapenêmico (Meropenem (1 g EV em infusão prolongada a cada 8 horas, ou 2 g EV 8/8h em meningite bacteriana), se instabilidade hemodinâmica ou histórico de colonização por bactérias multirresistentes produtoras de ESBL).",
+            "<em>Quando Associar Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL) Inicialmente?</em> O uso de glicopeptídeos (Vancomicina (15 a 20 mg/kg EV a cada 8 a 12 horas, com monitorização de vancocinemia entre 15-20 mcg/mL)) não é rotineiro para todos os pacientes. Está estritamente indicado na presença de: (1) Instabilidade hemodinâmica ou choque séptico; (2) Infecção óbvia relacionada a cateter venoso central (hiperemia, drenagem purulenta no túnel ou trajeto); (3) Infecção grave de partes moles, pele ou mucosite grave; (4) Hemocultura prévia positiva para Gram-positivos (S. aureus resistente à Oxacilina (2 g EV a cada 4 horas) - MRSA); ou (5) Uso prévio recente de profilaxia com fluoroquinolonas."
           ]
         ]
       ]
@@ -875,7 +879,7 @@
         ],
         [
           "p",
-          "<strong>História da Moléstia Atual:</strong> A mãe relata que a criança vinha apresentando episódios de febre diária de até 38,5 °C há 20 dias, tratada inicialmente como amigdalite com amoxicilina por 7 dias, sem melhora. Concomitantemente, passou a apresentar dor difusa nas pernas e recusa progressiva para andar. A mãe enfatiza que o menino acorda no meio da noite aos prantos, queixando-se de dor intensa nas coxas e joelhos (\"dor que desperta a criança à noite\"). Há 5 dias surgiram \"pontinhos vermelhos\" na barriga e pernas e sangramento gengival após a escovação dentária. A criança encontra-se apática, hipoativa e inapetente."
+          "<strong>História da Moléstia Atual:</strong> A mãe relata que a criança vinha apresentando episódios de febre diária de até 38,5 °C há 20 dias, tratada inicialmente como amigdalite com Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) por 7 dias, sem melhora. Concomitantemente, passou a apresentar dor difusa nas pernas e recusa progressiva para andar. A mãe enfatiza que o menino acorda no meio da noite aos prantos, queixando-se de dor intensa nas coxas e joelhos (\"dor que desperta a criança à noite\"). Há 5 dias surgiram \"pontinhos vermelhos\" na barriga e pernas e sangramento gengival após a escovação dentária. A criança encontra-se apática, hipoativa e inapetente."
         ],
         [
           "p",
@@ -907,7 +911,7 @@
             "<strong>Resultados da Medula Óssea:</strong>\n      <ul>\n        <li>Citologia: Medula hipercelular com <strong>88% de linfoblastos</strong> pequenos com relação núcleo-citoplasma alta e nucléolos inconspícuos (morfologia L1).",
             "Imunofenotipagem por citometria de fluxo: Blastos fortemente positivos para <strong>CD19, CD22, CD10 (CALLA+), CD79a e TdT</strong>; negativos para mieloperoxidase e marcadores de células T. Confirma <strong>Leucemia Linfoblástica Aguda de Células Precursoras B Comum (LLA-B Comum)</strong>.",
             "Citogenética / FISH: Demonstrou cariótipo hiperdiploide com 55 cromossomos (favorável) e presença da fusão <em>ETV6-RUNX1</em> / t(12;21). Ausência de cromossomo Philadelphia.",
-            "<strong>Estratificação e Terapêutica:</strong> Classificado como Risco Padrão do NCI (idade entre 1 e 9 anos e leucócitos < 50.000/mm³). Iniciada hidratação venosa vigorosa e profilaxia com alopurinol para lise tumoral + quimioterapia de indução da remissão de 4 drogas (Dexametasona, Vincristina, L-asparaginase e Daunorrubicina) conforme protocolo GBTLI / BFM. No D33 de indução, alcançou remissão citológica completa com Doença Residual Mínima (DRM) negativa (< 0,01%). Prognóstico de cura a longo prazo superior a 90%!"
+            "<strong>Estratificação e Terapêutica:</strong> Classificado como Risco Padrão do NCI (idade entre 1 e 9 anos e leucócitos < 50.000/mm³). Iniciada ressuscitação volêmica guiada por metas com Ringer Lactato ou Soro Fisiológico 0,9% (20 a 30 mL/kg nas primeiras 3 horas, objetivando débito urinário ≥ 0,5 mL/kg/h) e profilaxia com alopurinol para lise tumoral + quimioterapia de indução da remissão de 4 drogas (Dexametasona (10 mg EV 15-20 minutos antes ou junto à 1ª dose de antibiótico em meningite bacteriana aguda, ou 6 mg/dia VO/EV no choque séptico refratário/COVID grave), Vincristina, L-asparaginase e Daunorrubicina) conforme protocolo GBTLI / BFM. No D33 de indução, alcançou remissão citológica completa com Doença Residual Mínima (DRM) negativa (< 0,01%). Prognóstico de cura a longo prazo superior a 90%!"
           ]
         ],
         [
@@ -1055,7 +1059,7 @@
             "O paciente preenche todos os critérios de <strong>Síndrome de Lise Tumoral Clínica Grave de Cairo-Bishop</strong> (hiperuricemia + hiperpotassemia + hiperfosfatemia + hipocalcemia associadas a insuficiência renal aguda oligúrica e alterações eletrocardiográficas).",
             "<strong>Tratamento Imediato da Hipercalemia Ameaçadora à Vida:</strong>\n      <ul>\n        <li>Administração intravenosa imediata de <strong>Gluconato de Cálcio a 10% (0,5 mL/kg IV lento em 5 a 10 minutos sob monitorização cardíaca contínua)</strong> para estabilizar a membrana dos cardiomiócitos contra arritmias ventriculares (o cálcio é o único tratamento imediato que protege o coração, apesar da hiperfosfatemia, por haver alteração de ECG!).",
             "Medidas de deslocamento intracelular de potássio: Solução de <strong>Glicose 50% + Insulina Regular</strong> (0,1 U/kg de insulina com 0,5 g/kg de glicose IV em 30 min), inalação com beta-2 agonista (Salbutamol em altas doses) e resina de troca iônica intestinal (Poliestirenossulfonato de cálcio/Sorcal).",
-            "<strong>Controle do Ácido Úrico:</strong> Prescrição imediata de <strong>Rasburicase intravenosa (0,2 mg/kg IV infundido em 30 minutos)</strong>. O alopurinol isolado seria totalmente ineficaz neste momento, pois não degrada o ácido úrico de 14,8 mg/dL já cristalizado nos rins. A rasburicase cliva o ácido úrico em alantoína solúvel rapidamente. (Atenção: alcalinização urinária com bicarbonato foi expressamente evitada para não piorar a precipitação de fosfato de cálcio!).",
+            "<strong>Controle do Ácido Úrico:</strong> Prescrição imediata de <strong>Rasburicase intravenosa (0,2 mg/kg IV infundido em 30 minutos)</strong>. O alopurinol isolado seria totalmente ineficaz neste momento, pois não degrada o ácido úrico de 14,8 mg/dL já cristalizado nos rins. A rasburicase cliva o ácido úrico em alantoína solúvel com agilidade. (Atenção: alcalinização urinária com bicarbonato foi expressamente evitada para não piorar a precipitação de fosfato de cálcio!).",
             "<strong>Suporte Dialítico de Urgência:</strong> Devido à oligoanúria refratária, creatinina de 2,1 mg/dL e produto cálcio x fósforo > 60 mg²/dL² com hiperfosfatemia de 9,2 mg/dL, indicou-se <strong>Hemodiálise de Urgência / Hemodiafiltração Contínua</strong> para remoção rápida de fósforo e potássio e recuperação do equilíbrio volêmico.",
             "Após estabilização metabólica e normalização da função renal pela diálise em 48 horas, iniciou-se a quimioterapia em doses escalonadas conforme o protocolo B-NHL-BFM, com excelente regressão das lesões residuais."
           ]
@@ -1303,14 +1307,14 @@
         ],
         [
           "p",
-          "<strong>Questão 7 (SES-PE - Residência Médica):</strong> Menino de 8 anos portador de Leucemia Linfoblástica Aguda em quimioterapia de manutenção apresenta febre aferida em domicílio de 38,5 °C há 2 horas. Encontra-se em uso de cateter venoso central totalmente implantado (Port-a-Cath). Ao chegar ao pronto-socorro oncológico: REG, hipoativo, FC 135 bpm, PA 95/60 mmHg, FR 22 irpm, afebril no momento (37,4 °C após dipirona domiciliar). O hemograma colhido na admissão revela: Leucócitos totais: 1.200/mm³ (Segmentados: 15%, Bastonetes: 5%, Linfócitos: 80%), correspondendo a uma Contagem Absoluta de Neutrófilos (CAN) de 240/mm³. Diante do diagnóstico de Neutropenia Febril, assinale a conduta prioritária e o prazo temporal preconizado pelas diretrizes internacionais:"
+          "<strong>Questão 7 (SES-PE - Residência Médica):</strong> Menino de 8 anos portador de Leucemia Linfoblástica Aguda em quimioterapia de manutenção apresenta febre aferida em domicílio de 38,5 °C há 2 horas. Encontra-se em uso de cateter venoso central totalmente implantado (Port-a-Cath). Ao chegar ao pronto-socorro oncológico: REG, hipoativo, FC 135 bpm, PA 95/60 mmHg, FR 22 irpm, afebril no momento (37,4 °C após Dipirona (1 g EV ou VO a cada 6 horas em adultos, ou 15 a 25 mg/kg/dose até 4x/dia em crianças) domiciliar). O hemograma colhido na admissão revela: Leucócitos totais: 1.200/mm³ (Segmentados: 15%, Bastonetes: 5%, Linfócitos: 80%), correspondendo a uma Contagem Absoluta de Neutrófilos (CAN) de 240/mm³. Diante do diagnóstico de Neutropenia Febril, assinale a conduta prioritária e o prazo temporal preconizado pelas diretrizes internacionais:"
         ],
         [
           "u",
           [
             "A) Aguardar o resultado das culturas de sangue e urina antes de prescrever qualquer antimicrobiano para evitar indução de resistência bacteriana.",
-            "B) Prescrever amoxicilina com clavulanato por via oral e liberar a criança para monitoramento domiciliar se mantiver pressão normal.",
-            "C) Coletar hemoculturas (periférica e do cateter) e administrar imediatamente antibiótico bactericida antipseudomonas intravenoso (como Cefepima) na primeira hora de admissão (\"Golden Hour\").",
+            "B) Prescrever Amoxicilina (500 mg a 1.000 mg VO a cada 8 horas em adultos, ou 50 a 90 mg/kg/dia fracionada em 3 doses na pediatria) com clavulanato por via oral e liberar a criança para monitoramento domiciliar se mantiver pressão normal.",
+            "C) Coletar hemoculturas (periférica e do cateter) e administrar imediatamente antibiótico bactericida antipseudomonas intravenoso (como Cefepima (2 g EV a cada 8 horas em infusão estendida de 3 horas)) na primeira hora de admissão (\"Golden Hour\").",
             "D) Retirar cirurgicamente o cateter totalmente implantado de imediato antes de qualquer exame laboratorial.",
             "E) Iniciar antifúngico intravenoso empírico com voriconazol na primeira hora de atendimento."
           ]
@@ -1325,7 +1329,7 @@
         ],
         [
           "p",
-          "O paciente apresenta os dois critérios formais de <strong>Neutropenia Febril</strong>: temperatura >= 38,3 °C associada a neutrófilos totais < 500/mm³ (CAN = 240/mm³). Em oncologia pediátrica, a neutropenia febril é uma emergência infecciosa crítica de altíssima letalidade por choque séptico bacteriano por Gram-negativos. As diretrizes internacionais estabelecem o princípio inegociável da <strong>\"Golden Hour\"</strong>: após a coleta rápida de hemoculturas (duas amostras: do cateter e periférica), deve-se administrar um betalactâmico intravenoso com atividade antipseudomonas (como <strong>Cefepima ou Piperacilina-Tazobactam</strong>) dentro da <strong>primeira hora (60 minutos) da admissão no serviço de saúde</strong>!"
+          "O paciente apresenta os dois critérios formais de <strong>Neutropenia Febril</strong>: temperatura >= 38,3 °C associada a neutrófilos totais < 500/mm³ (CAN = 240/mm³). Em oncologia pediátrica, a neutropenia febril é uma emergência infecciosa crítica de altíssima letalidade por choque séptico bacteriano por Gram-negativos. As diretrizes internacionais estabelecem o princípio inegociável da <strong>\"Golden Hour\"</strong>: após a coleta rápida de hemoculturas (duas amostras: do cateter e periférica), deve-se administrar um betalactâmico intravenoso com atividade antipseudomonas (como <strong>Cefepima (2 g EV a cada 8 horas em infusão estendida de 3 horas) ou Piperacilina-Tazobactam (4,5 g EV em infusão estendida de 3-4h a cada 6 horas)</strong>) dentro da <strong>primeira hora (60 minutos) da admissão no serviço de saúde</strong>!"
         ],
         [
           "p",
@@ -1335,7 +1339,7 @@
           "u",
           [
             "<em>Alternativa A incorreta:</em> Jamais esperar o crescimento bacteriano das culturas (que demora de 24 a 48 horas); o retardo na antibioticoterapia aumenta exponencialmente a mortalidade em neutropênicos febris.",
-            "<em>Alternativa B incorreta:</em> Pacientes neutropênicos com CAN < 500/mm³ em uso de cateter não devem ser tratados em regime ambulatorial oral com amoxicilina-clavulanato.",
+            "<em>Alternativa B incorreta:</em> Pacientes neutropênicos com CAN < 500/mm³ em uso de cateter não devem ser tratados em regime ambulatorial oral com Amoxicilina-Clavulanato (875/125 mg VO 12/12h ou 1g/200mg EV 8/8h).",
             "<em>Alternativa D incorreta:</em> O cateter não deve ser retirado empiricamente na chegada, exceto se houver infecção grosseira do túnel/loja, choque refratário ou bacteremias comprovadas por patógenos intratáveis no dispositivo (<em>Candida</em>, <em>S. aureus</em> resistente, <em>Pseudomonas</em> refratária).",
             "<em>Alternativa E incorreta:</em> Antifúngicos não são indicados na abordagem inicial (D1); são reservados para neutropenia febril persistente após 4 a 7 dias de antibioticoterapia de largo espectro sem foco definido."
           ]
@@ -1475,7 +1479,7 @@
             "<strong>Nunca Palpar Repetidamente o Wilms:</strong> Evitar palpação abdominal vigorosa ou repetida para não romper a pseudocápsula tumoral e disseminar células na cavidade peritoneal.",
             "<strong>Linfoma de Hodgkin:</strong> Adolescentes, linfonodopatia cervical/supraclavicular indolor > 2,0 cm elástica crônica, sintomas B (febre, sudorese noturna, perda de peso > 10%). Células de Reed-Sternberg (\"olhos de coruja\") CD15+ e CD30+.",
             "<strong>Linfoma de Burkitt:</strong> O tumor de maior taxa mitótica (duplicação < 24h, Ki-67 100%). Translocação t(8;14) do gene <em>MYC</em>, aspecto em \"céu estrelado\", massa abdominal em FID e intussuscepção intestinal.",
-            "<strong>Síndrome de Lise Tumoral:</strong> Hiperuricemia, Hiperpotassemia, Hiperfosfatemia e Hipocalcemia. Manejo: hiper-hidratação vigorosa sem potássio, Rasburicase (ou alopurinol), Gluconato de Cálcio IV apenas se alteração de ECG. Proscrita a alcalinização urinária com bicarbonato! Na Neutropenia Febril, antibiótico antipseudomonas (Cefepima) na primeira hora (\"Golden Hour\")."
+            "<strong>Síndrome de Lise Tumoral:</strong> Hiperuricemia, Hiperpotassemia, Hiperfosfatemia e Hipocalcemia. Manejo: hiper-hidratação vigorosa sem potássio, Rasburicase (ou alopurinol), Gluconato de Cálcio IV apenas se alteração de ECG. Proscrita a alcalinização urinária com bicarbonato! Na Neutropenia Febril, antibiótico antipseudomonas (Cefepima (2 g EV a cada 8 horas em infusão estendida de 3 horas)) na primeira hora (\"Golden Hour\")."
           ]
         ]
       ]
@@ -1486,7 +1490,32 @@
       [
         [
           "2",
-          "Referências Oficiais e Diretrizes"
+          "Referências Bibliográficas e Diretrizes Oficiais"
+        ],
+        [
+          "3",
+          "1. Ministério da Saúde do Brasil e ANVISA (Diretrizes Nacionais Mandatórias)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde (MS). Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) Nacionais. Brasília: Ministério da Saúde.</a>",
+            "<a href=\"https://bvsms.saude.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Biblioteca Virtual em Saúde do Ministério da Saúde (BVSMS). Diretrizes Clínicas e Normativas Vigentes.</a>"
+          ]
+        ],
+        [
+          "3",
+          "2. Sociedades Médicas Brasileiras (Consenso Técnico de Especialidades)"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://amb.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Associação Médica Brasileira (AMB) e Sociedades Nacionais de Pediatria. Diretrizes e Consensos Clínicos Brasileiros.</a>"
+          ]
+        ],
+        [
+          "3",
+          "3. Entidades Internacionais e Literatura Médica Global"
         ],
         [
           "o",
@@ -1496,8 +1525,7 @@
             "<a href=\"https://shop.lww.com\" target=\"_blank\" rel=\"noopener noreferrer\">PIZZO, P. A.; POPLACK, D. G. Principles and Practice of Pediatric Oncology. 8th ed. Philadelphia: Wolters Kluwer, 2021.</a>",
             "<a href=\"https://www.sbp.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">SOCIEDADE BRASILEIRA DE PEDIATRIA (SBP). Departamento Científico de Oncologia Pediátrica. Diagnóstico Precoce do Câncer na Criança e no Adolescente. Rio de Janeiro: SBP, 2022/2024.</a>",
             "<a href=\"https://onlinelibrary.wiley.com\" target=\"_blank\" rel=\"noopener noreferrer\">CAIRO, M. S.; BISHOP, M. Tumour lysis syndrome: new therapeutic strategies and classification. British Journal of Haematology, v. 127, n. 1, p. 3-11, 2004.</a>"
-          ],
-          "reference-list"
+          ]
         ]
       ]
     ]

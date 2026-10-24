@@ -2,8 +2,8 @@
   "v": 2,
   "s": "hanseniase-diagnostico-tratamento-e-prevencao-de-incapacidades",
   "t": "Hanseníase: Diagnóstico, Tratamento e Prevenção de Incapacidades",
-  "p": "Hanseníase: Diagnóstico, Tratamento e Prevenção de Incapacidades — Livro-Texto LURIA",
-  "d": "Tratado Completo da Doença de Hansen: Biologia do Mycobacterium leprae, Espectro de Ridley-Jopling, Propedêutica da Perda de Sensibilidade e Exame de Troncos Neurais, Classificação Operacional PB vs MB, Novo PCDT da Poliquimioterapia Única (PQT-U), Reação Tipo 1 vs Tipo 2 (Talidomida e Corticoterapia), Grau de Incapacidade Física e Vigilância com BCG",
+  "p": "Tratado Completo da Doença de Hansen: Biologia do Mycobacterium leprae, Espectro de Ridley-Jopling, Propedêutica da Perda de Sensibilidade e Exame de Troncos Neurais, Classificação Operacional PB vs MB, Novo PCDT da Poliquimioterapia Única (PQT-U), Reação Tipo 1 vs Tipo 2 (Talidomida e Corticoterapia), Grau de Incapacidade Física e Vigilância com BCG Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado Completo da Doença de Hansen: Biologia do Mycobacterium leprae, Espectro de Ridley-Jopling, Propedêutica da Perda de Sensibilidade e Exame de Troncos Neurais, Classificação Operacional PB vs MB, Novo PCDT da Poliquimioterapia Única (PQT-U), Reação Tipo 1 vs Tipo 2 (Talidomida e Corticoterapia), Grau de Incapacidade Física e Vigilância com BCG Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Clínica Médica",
   "m": "Clínica Médica",
   "h": [
@@ -175,6 +175,10 @@
         [
           "4",
           "1. A Sequência Obrigatória da Perda de Sensibilidade Cutânea"
+        ],
+        [
+          "raw",
+          "<div class=\"book-callout-note\"><strong class=\"callout-title\">📌 Nota Prática — Diretriz Oficial</strong><p>A abordagem diagnóstica e terapêutica desta afecção deve seguir rigorosamente os protocolos validados pelo Ministério da Saúde e pelas Sociedades Brasileiras de Clínica Médica, priorizando a segurança do paciente e a estratificação precoce de risco clínico.</p></div>"
         ],
         [
           "p",
@@ -455,13 +459,13 @@
             ],
             [
               "<strong>Tratamento Farmacológico de PRIMEIRA ESCOLHA</strong>",
-              "<strong>CORTICOTERAPIA ORAL EM ALTAS DOSES: PREDNISONA</strong><br>Dose de ataque: <strong>1 a 1,5 mg/kg/dia por via oral</strong> (em dose única matinal), mantida até melhora clínica e neurológica completa, seguida de desmame lento e gradual ao longo de <strong>vários meses (4 a 6 meses ou mais)</strong> para prevenir o efeito rebote!",
+              "<strong>CORTICOTERAPIA ORAL EM ALTAS DOSES: Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo)</strong><br>Dose de ataque: <strong>1 a 1,5 mg/kg/dia por via oral</strong> (em dose única matinal), mantida até melhora clínica e neurológica completa, seguida de desmame lento e gradual ao longo de <strong>vários meses (4 a 6 meses ou mais)</strong> para prevenir o efeito rebote!",
               "<strong>TALIDOMIDA (Medicamento Padrão-Ouro Oficial)</strong><br>Dose de ataque: <strong>100 a 400 mg/dia por via oral</strong> (dividida em tomadas ou dose única noturna conforme a gravidade), reduzindo progressivamente para doses de manutenção (50 a 100 mg/dia) após remissão dos nódulos."
             ],
             [
               "<strong>Uso da Talidomida vs Corticoide</strong>",
               "A <strong>Talidomida é TOTALMENTE INEFICAZ na Reação Tipo 1</strong> e NÃO deve ser utilizada!",
-              "Se a Talidomida for contraindicada (ex.: mulher em idade fértil) ou se houver neurite aguda, orquite ou iridociclite concomitante, o tratamento de escolha é a <strong>Corticoterapia Oral (Prednisona 1 a 1,5 mg/kg/dia) associada ou isolada</strong>."
+              "Se a Talidomida for contraindicada (ex.: mulher em idade fértil) ou se houver neurite aguda, orquite ou iridociclite concomitante, o tratamento de escolha é a <strong>Corticoterapia Oral (Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) 1 a 1,5 mg/kg/dia) associada ou isolada</strong>."
             ],
             [
               "<strong>Conduta Quanto à Poliquimioterapia (PQT-U)</strong>",
@@ -482,7 +486,7 @@
         [
           "u",
           [
-            "<strong>Contraindicação Formal Absoluta:</strong> Gestantes e <strong>mulheres em idade fértil (menacme) que não estejam em uso comprovado de dupla contracepção eficaz</strong> (um método de alta eficácia como DIU ou implante associado a método de barreira). No Brasil, para mulheres no menacme, a talidomida é evitada ao máximo, optando-se prioritariamente pela Prednisona ou Pentoxifilina!",
+            "<strong>Contraindicação Formal Absoluta:</strong> Gestantes e <strong>mulheres em idade fértil (menacme) que não estejam em uso comprovado de dupla contracepção eficaz</strong> (um método de alta eficácia como DIU ou implante associado a método de barreira). No Brasil, para mulheres no menacme, a talidomida é evitada ao máximo, optando-se prioritariamente pela Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) ou Pentoxifilina!",
             "Termo de Consentimento Pós-Informado e Notificação de Receita B específica obrigatória no SUS."
           ]
         ],
@@ -497,7 +501,7 @@
         [
           "o",
           [
-            "<strong>Conduta Clínica Imediata:</strong> Início imediato de <strong>Prednisona 1 a 2 mg/kg/dia por via oral</strong>; imobilização do membro afetado com tala gessada ou órtese funcional em posição anatômica neutra para repouso neural; fisioterapia motora precoce passiva e ativa supervisionada;",
+            "<strong>Conduta Clínica Imediata:</strong> Início imediato de <strong>Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) 1 a 2 mg/kg/dia por via oral</strong>; imobilização do membro afetado com tala gessada ou órtese funcional em posição anatômica neutra para repouso neural; fisioterapia motora precoce passiva e ativa supervisionada;",
             "<strong>Indicação de Neurolise Cirúrgica (Descompressão Cirúrgica de Troncos Nervosos):</strong>\n    <ul>\n      <li>Neurite persistente refratária com dor excruciante que não cede após 4 semanas de corticoterapia em doses plenas otimizadas;",
             "Piora progressiva do déficit motor/sensitivo durante a corticoterapia;",
             "Abscesso intraneural comprovado (flutuação localizada no trajeto do tronco ulnar ou fibular);",
@@ -722,13 +726,13 @@
           "o",
           [
             "<strong>Diagnóstico Sindrômico:</strong> <em>Reação Hansênica Tipo 1 (Reação Reversa)</em> de alta gravidade complicada por <strong>Neurite Ulnar Aguda</strong> (hipersensibilidade tardia Th1 mediada por células com lise antigênica e compressão intraneural aguda). Trata-se de uma urgência neurológica com risco iminente de dano neural irreversível e deformidade definitiva (Grau 2).",
-            "<strong>Conduta Medicamentosa Imediata:</strong>\n    <ul>\n      <li><strong>Corticoterapia Oral Imediata em Altas Doses: Prednisona 1 a 1,5 mg/kg/dia (60 mg/dia via oral em dose única matinal)</strong> associada a protetor gástrico (Omeprazol 20 mg/dia);",
+            "<strong>Conduta Medicamentosa Imediata:</strong>\n    <ul>\n      <li><strong>Corticoterapia Oral Imediata em Altas Doses: Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) 1 a 1,5 mg/kg/dia (60 mg/dia via oral em dose única matinal)</strong> associada a protetor gástrico (Omeprazol 20 mg/dia);",
             "<em>Atenção para erro em provas:</em> A Talidomida é <strong>INÚTIL E FORMALMENTE INEFICAZ</strong> na Reação Tipo 1 e NUNCA deve ser prescrita!",
             "<strong>Manutenção Rigorosa da Poliquimioterapia (PQT-U):</strong> A 4ª dose da PQT-U deve ser mantida conforme o cronograma mensal; <strong>NUNCA suspender a PQT-U durante estados reacionais!</strong>",
             "<strong>Medidas Ortopédicas e de Enfermagem:</strong>\n    <ul>\n      <li>Imobilização do cotovelo esquerdo com tala gessada axilopalmar a 90º por 7 a 14 dias para repouso mecânico e descompressão estática do nervo ulnar na goteira epitrócleo-olecraniana;",
             "Fisioterapia motora passiva e ativa supervisionada iniciada logo após a remissão da fase álgica aguda;",
             "Critérios para neurolise cirúrgica de urgência: se houver ausência de melhora da dor ou progressão da garra motora após 4 semanas de corticoterapia oral máxima, está indicada a <em>descompressão cirúrgica aberta com transposição anterior subcutânea do nervo ulnar</em>.",
-            "<strong>Evolução:</strong> Em 72 horas pós-prednisona, a dor excruciante desapareceu completamente. Ao final de 3 semanas, a força motora recuperou-se para grau V/V com regressão total do edema das placas cutâneas. A prednisona foi desmamada lentamente em doses decrescentes de 10 mg a cada 15 dias, ao longo de 5 meses consecutivos, evitando rebote reacional."
+            "<strong>Evolução:</strong> Em 72 horas pós-Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo), a dor excruciante desapareceu completamente. Ao final de 3 semanas, a força motora recuperou-se para grau V/V com regressão total do edema das placas cutâneas. A Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) foi desmamada lentamente em doses decrescentes de 10 mg a cada 15 dias, ao longo de 5 meses consecutivos, evitando rebote reacional."
           ]
         ],
         [
@@ -762,10 +766,10 @@
           [
             "<strong>Diagnóstico Definitivo:</strong> <em>Reação Hansênica Tipo 2 — Eritema Nodoso Hansênico (ENH) Grave</em> associado a manifestações viscerais inflamatórias agudas (Orquiepididimite bilateral e Artrite reacional). Fisiopatologia: deposição de imunocomplexos circulantes tipo III com liberação de TNF-alfa em paciente Multibacilar com alta carga bacilar prévia.",
             "<strong>Estratégia Terapêutica Farmacológica de Choque:</strong>\n    <ul>\n      <li><strong>Talidomida Oral:</strong> O paciente é do sexo masculino (sem qualquer risco de gestação e teratogenia!). Administrou-se <strong>Talidomida 300 mg/dia via oral</strong> (dose de ataque dividida em 200 mg à noite e 100 mg pela manhã), com notificação de receita específica B e assinatura do termo de responsabilidade no SUS. A talidomida atua inibindo seletivamente a síntese de TNF-alfa e a quimiotaxia neutrofílica, cessando a febre e a dor dos nódulos em 24 a 48 horas.",
-            "<strong>Associação Obrigatória de Corticoterapia Oral (Prednisona):</strong> Como o paciente apresenta <strong>Orquiepididimite Aguda Bilateral</strong> (risco iminente de orquite necrotizante com atrofia testicular fibrosa, azoospermia e esterilidade permanente) e artrite com glomerulonefrite incipiente, a Talidomida isolada é insuficiente! Indicou-se a associação formal de <strong>Prednisona 1 mg/kg/dia (60 mg/dia VO)</strong> para proteção rápida do parênquima testicular e articular.",
+            "<strong>Associação Obrigatória de Corticoterapia Oral (Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo)):</strong> Como o paciente apresenta <strong>Orquiepididimite Aguda Bilateral</strong> (risco iminente de orquite necrotizante com atrofia testicular fibrosa, azoospermia e esterilidade permanente) e artrite com glomerulonefrite incipiente, a Talidomida isolada é insuficiente! Indicou-se a associação formal de <strong>Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) 1 mg/kg/dia (60 mg/dia VO)</strong> para proteção rápida do parênquima testicular e articular.",
             "<em>Manutenção da Poliquimioterapia:</em> A PQT-U de 12 meses <strong>NÃO É INTERROMPIDA</strong>, devendo ser mantida rigorosamente.",
             "<em>Suporte Escrotal:</em> Repouso absoluto no leito, bolsa de gelo local e uso de suspensório escrotal anatômico elevado para drenagem venosa.",
-            "<strong>Evolução e Desmame:</strong> A febre cedeu em 36 horas e os nódulos do ENH regrediram rapidamente em 5 dias. A orquite entrou em remissão completa ao final da segunda semana sem sequelas atróficas. A Talidomida foi reduzida para 100 mg/dia e a Prednisona foi desmamada ao longo de 8 semanas. O paciente completou o 12º mês da PQT-U com cura clínica e índice baciloscópico em declínio progressivo."
+            "<strong>Evolução e Desmame:</strong> A febre cedeu em 36 horas e os nódulos do ENH regrediram no intervalo de 5 dias. A orquite entrou em remissão completa ao final da segunda semana sem sequelas atróficas. A Talidomida foi reduzida para 100 mg/dia e a Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) foi desmamada ao longo de 8 semanas. O paciente completou o 12º mês da PQT-U com cura clínica e índice baciloscópico em declínio progressivo."
           ]
         ]
       ]
@@ -812,7 +816,7 @@
         ],
         [
           "p",
-          "<strong>A)</strong> Prednisona oral 1 a 2 mg/kg/dia; e suspender temporariamente a PQT-U até a regressão completa dos nódulos.<br>\n<strong>B)</strong> Talidomida oral 100 a 400 mg/dia; e manter rigorosamente a administração da PQT-U sem qualquer interrupção.<br>\n<strong>C)</strong> Dapsona em dose dobrada para 200 mg/dia; e suspender a Clofazimina devido à fotossensibilidade.<br>\n<strong>D)</strong> Metotrexato venoso em dose de pulso semanal; e interromper a Rifampicina.<br>\n<strong>E)</strong> Talidomida oral 300 mg/dia; e suspender definitivamente o tratamento da hanseníase por se tratar de falha terapêutica."
+          "<strong>A)</strong> Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral 1 a 2 mg/kg/dia; e suspender temporariamente a PQT-U até a regressão completa dos nódulos.<br>\n<strong>B)</strong> Talidomida oral 100 a 400 mg/dia; e manter rigorosamente a administração da PQT-U sem qualquer interrupção.<br>\n<strong>C)</strong> Dapsona em dose dobrada para 200 mg/dia; e suspender a Clofazimina devido à fotossensibilidade.<br>\n<strong>D)</strong> Metotrexato venoso em dose de pulso semanal; e interromper a Rifampicina.<br>\n<strong>E)</strong> Talidomida oral 300 mg/dia; e suspender definitivamente o tratamento da hanseníase por se tratar de falha terapêutica."
         ],
         [
           "p",
@@ -836,7 +840,7 @@
         ],
         [
           "p",
-          "<strong>A)</strong> Prescrever Talidomida 300 mg/dia via oral, pois é o medicamento de escolha para reverter o espessamento neural.<br>\n<strong>B)</strong> Prescrever Prednisona oral na dose de 1 a 1,5 mg/kg/dia imediatamente, associar imobilização do membro afetado e manter a PQT-U.<br>\n<strong>C)</strong> Indicar cirurgia de laminectomia descompressiva imediata no mesmo dia e suspender a Rifampicina.<br>\n<strong>D)</strong> Prescrever Pentoxifilina em monoterapia oral e aguardar 4 semanas antes de introduzir qualquer corticoide.<br>\n<strong>E)</strong> Interromper imediatamente todo o tratamento da hanseníase e iniciar imunoglobulina humana intravenosa."
+          "<strong>A)</strong> Prescrever Talidomida 300 mg/dia via oral, pois é o medicamento de escolha para reverter o espessamento neural.<br>\n<strong>B)</strong> Prescrever Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral na dose de 1 a 1,5 mg/kg/dia imediatamente, associar imobilização do membro afetado e manter a PQT-U.<br>\n<strong>C)</strong> Indicar cirurgia de laminectomia descompressiva imediata no mesmo dia e suspender a Rifampicina.<br>\n<strong>D)</strong> Prescrever Pentoxifilina em monoterapia oral e aguardar 4 semanas antes de introduzir qualquer corticoide.<br>\n<strong>E)</strong> Interromper imediatamente todo o tratamento da hanseníase e iniciar imunoglobulina humana intravenosa."
         ],
         [
           "p",
@@ -1019,8 +1023,8 @@
             ],
             [
               "<strong>Droga de Escolha Padronizada</strong>",
-              "<strong>PREDNISONA oral em altas doses (1 a 1,5 mg/kg/dia)</strong> com desmame lento ao longo de 4 a 6 meses.",
-              "<strong>TALIDOMIDA oral (100 a 400 mg/dia)</strong>. Se contraindicada (mulher no menacme) ou neurite/orquite associada -> <strong>Prednisona</strong>."
+              "<strong>Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo) oral em altas doses (1 a 1,5 mg/kg/dia)</strong> com desmame lento ao longo de 4 a 6 meses.",
+              "<strong>TALIDOMIDA oral (100 a 400 mg/dia)</strong>. Se contraindicada (mulher no menacme) ou neurite/orquite associada -> <strong>Prednisona (1 a 2 mg/kg/dia VO - dose máxima 60-80 mg/dia - com desmame progressivo)</strong>."
             ],
             [
               "<strong>Eficácia da Talidomida</strong>",
