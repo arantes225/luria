@@ -117,14 +117,18 @@ Deno.serve(async (req: Request) => {
     const now = new Date();
 
     const accountKey = await sha256Hex("luria:daily-code:account:" + username);
-    const [{ data: attempt, error: attemptError }, { data: accountAttempt, error: accountAttemptError }] =
-      await Promise.all([ipKey, accountKey].map(keyHash =>
-        sb.from("external_quick_chart_attempts")
-          .select("failed_count,window_started_at,blocked_until")
-          .eq("key_hash", keyHash).maybeSingle()));
-    if (attemptError || accountAttemptError) throw attemptError || accountAttemptError;
-    if ([attempt, accountAttempt].some(item =>
-      item?.blocked_until && new Date(item.blocked_until).getTime() > now.getTime())) {
+    // Reserva atômica por conta e por IP antes de testar a credencial.
+    // A transação Postgres evita ultrapassar o limite com pedidos simultâneos.
+    const { data: accountAllowed, error: accountLimitError } = await sb
+      .rpc("quick_chart_claim_attempt", { p_key_hash: accountKey });
+    if (accountLimitError) throw accountLimitError;
+    if (accountAllowed !== true) {
+      return json({ error: "Muitas tentativas. Aguarde 30 minutos e tente novamente." }, 429);
+    }
+    const { data: ipAllowed, error: ipLimitError } = await sb
+      .rpc("quick_chart_claim_attempt", { p_key_hash: ipKey });
+    if (ipLimitError) throw ipLimitError;
+    if (ipAllowed !== true) {
       return json({ error: "Muitas tentativas. Aguarde 30 minutos e tente novamente." }, 429);
     }
 
@@ -151,25 +155,7 @@ Deno.serve(async (req: Request) => {
     const authenticated = Boolean(portal?.owner_id && equalCode(suppliedCode, expectedCode));
 
     if (!authenticated) {
-      const increment = async (keyHash: string, previous: typeof attempt) => {
-        const windowStart = previous?.window_started_at ? new Date(previous.window_started_at) : now;
-        const stale = now.getTime() - windowStart.getTime() > 15 * 60 * 1000;
-        const count = stale ? 1 : Number(previous?.failed_count || 0) + 1;
-        const blockedUntil = count >= 5 ? new Date(now.getTime() + 30 * 60 * 1000).toISOString() : null;
-        const { error } = await sb.from("external_quick_chart_attempts").upsert({
-          key_hash: keyHash, failed_count: count,
-          window_started_at: stale ? now.toISOString() : windowStart.toISOString(),
-          blocked_until: blockedUntil, updated_at: now.toISOString()
-        }, { onConflict: "key_hash" });
-        if (error) throw error;
-        return Boolean(blockedUntil);
-      };
-      const [ipLocked, accountLocked] = await Promise.all([
-        increment(ipKey, attempt), increment(accountKey, accountAttempt)
-      ]);
-      return json({ error: ipLocked || accountLocked
-        ? "Muitas tentativas. Aguarde 30 minutos e tente novamente."
-        : "Usuário ou código diário inválido." }, ipLocked || accountLocked ? 429 : 401);
+      return json({ error: "Usuário ou código diário inválido." }, 401);
     }
 
     const { error: resetError } = await sb.from("external_quick_chart_attempts")
