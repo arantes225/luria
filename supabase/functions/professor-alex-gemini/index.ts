@@ -258,15 +258,22 @@ Deno.serve(async (req: Request) => {
     return null;
   }
   const providerRequest = { systemInstruction: { parts: [{ text: system }] }, contents, generationConfig };
-  // Count system/history/PDF input; output cap includes thinking. No tools or retries.
+  // Para agilidade em perguntas de texto sem anexos pesados, fazemos a estimativa heuristica (chars / 3.5).
+  // Chamamos a API remota de countTokens somente se houver arquivo anexado (ex: PDF).
   try {
-    const counted = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + modelToUse + ":countTokens", {
-      method: "POST", headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
-      body: JSON.stringify({ generateContentRequest: { model: "models/" + modelToUse, ...providerRequest } }),
-      signal: AbortSignal.timeout(10_000),
-    });
-    const count = counted.ok ? Number((await counted.json()).totalTokens) : NaN;
-    if (!Number.isSafeInteger(count) || count < 0) throw Error("count_unavailable");
+    let count = 0;
+    if (file !== undefined && file !== null) {
+      const counted = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + modelToUse + ":countTokens", {
+        method: "POST", headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
+        body: JSON.stringify({ generateContentRequest: { model: "models/" + modelToUse, ...providerRequest } }),
+        signal: AbortSignal.timeout(10_000),
+      });
+      count = counted.ok ? Number((await counted.json()).totalTokens) : NaN;
+      if (!Number.isSafeInteger(count) || count < 0) throw Error("count_unavailable");
+    } else {
+      const approxChars = (system || "").length + contents.reduce((acc, c) => acc + (c.parts || []).reduce((pAcc, p) => pAcc + (p.text || "").length, 0), 0);
+      count = Math.ceil(approxChars / 3.5) + 50;
+    }
     if ((count + Number(generationConfig.maxOutputTokens)) * Number(reservation.multiplier) > Number(reservation.reserved)) {
       const usage = await settle(0, 0, 0);
       return json({ error: "token_budget_reached", usage: usage || initialUsage }, 429, headers);
@@ -368,7 +375,7 @@ Deno.serve(async (req: Request) => {
           response_format: { type: "audio" },
           generation_config: { speech_config: [{ voice: "Puck" }] }
         }),
-        signal: AbortSignal.timeout(25_000),
+        signal: AbortSignal.timeout(10_000),
       });
 
       if (ttsResponse.ok) {
