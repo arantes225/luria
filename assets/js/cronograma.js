@@ -4930,64 +4930,139 @@ function bindReferenceCalendarControls() {
   });
 }
 
+
+function renderHistoricalPlanner() {
+  const planner = document.getElementById("list-planner");
+  if (!planner) return;
+  document.getElementById("planner-range").textContent = "Todas as atividades";
+  const items = [
+    ...scheduleState.events.filter(item => item.event_date).map(item => ({
+      source: "event", id: item.id, date: item.event_date, title: item.title || "Evento",
+      area: item.area || "", category: scheduleKindLabel(item.event_type || "other"),
+      time: item.event_time ? String(item.event_time).slice(0, 5) : ""
+    })),
+    ...scheduleState.topics.filter(item => item.scheduled_date).map(item => ({
+      source: "topic", id: item.id, date: item.scheduled_date, title: item.theme || "Aula",
+      area: item.area || "", category: "Aula", time: ""
+    }))
+  ].sort((a, b) => b.date.localeCompare(a.date) || a.title.localeCompare(b.title, "pt-BR"));
+  if (!items.length) {
+    planner.innerHTML = '<p class="schedule-history-empty">Nenhum evento ou aula agendada no histórico.</p>';
+    return;
+  }
+  let currentMonth = "";
+  const rows = items.map(item => {
+    const month = item.date.slice(0, 7);
+    let heading = "";
+    if (month !== currentMonth) {
+      currentMonth = month;
+      const [year, number] = month.split("-").map(Number);
+      const label = new Intl.DateTimeFormat("pt-BR", { month: "long", year: "numeric" }).format(new Date(year, number - 1, 1));
+      heading = '<h3 class="schedule-history-month">' + escapeScheduleHtml(label) + '</h3>';
+    }
+    const day = item.date.slice(8, 10);
+    const dateLabel = formatDateLabelSchedule(item.date);
+    const itemId = escapeScheduleHtml(item.id);
+    const itemSource = escapeScheduleHtml(item.source);
+    return heading + '<article class="schedule-history-row">'
+      + '<time datetime="' + escapeScheduleHtml(item.date) + '" class="schedule-history-date"><strong>' + escapeScheduleHtml(day) + '</strong><small>' + escapeScheduleHtml(dateLabel) + '</small></time>'
+      + '<div class="schedule-history-main"><strong>' + escapeScheduleHtml(item.title) + '</strong>'
+      + '<span>' + escapeScheduleHtml(item.category) + (item.area ? ' · ' + escapeScheduleHtml(item.area) : '')
+      + (item.time ? ' · ' + escapeScheduleHtml(item.time) : '') + '</span></div>'
+      + '<details class="schedule-history-actions"><summary aria-label="Ações para ' + escapeScheduleHtml(item.title) + '" title="Ações">⋯</summary>'
+      + '<div class="schedule-history-action-list">'
+      + '<button type="button" data-history-action="edit" data-history-source="' + itemSource + '" data-history-id="' + itemId + '">Editar</button>'
+      + '<button type="button" class="danger" data-history-action="delete" data-history-source="' + itemSource + '" data-history-id="' + itemId + '">Apagar</button>'
+      + '</div></details></article>';
+  }).join("");
+  planner.innerHTML = '<div class="schedule-history-intro"><span>' + items.length + ' atividade' + (items.length === 1 ? '' : 's') + '</span><small>Histórico completo de eventos e aulas agendadas, incluindo datas passadas e futuras.</small></div>' + rows;
+}
+function openHistoricalPlannerEditor(source, id) {
+  const item = source === "topic"
+    ? scheduleState.topics.find(entry => String(entry.id) === String(id))
+    : scheduleState.events.find(entry => String(entry.id) === String(id));
+  if (!item) return;
+  const dialog = document.getElementById("schedule-history-edit-dialog");
+  if (!dialog) return;
+  scheduleState.historyEditing = { source, id };
+  document.getElementById("schedule-history-edit-title").value = source === "topic" ? item.theme || "" : item.title || "";
+  document.getElementById("schedule-history-edit-area").value = item.area || "";
+  document.getElementById("schedule-history-edit-date").value = source === "topic" ? item.scheduled_date || "" : item.event_date || "";
+  if (typeof dialog.showModal === "function") dialog.showModal();
+  else dialog.setAttribute("open", "");
+}
+function closeHistoricalPlannerEditor() {
+  const dialog = document.getElementById("schedule-history-edit-dialog");
+  if (typeof dialog?.close === "function") dialog.close();
+  else dialog?.removeAttribute("open");
+  scheduleState.historyEditing = null;
+}
+async function saveHistoricalPlannerEdit(event) {
+  event.preventDefault();
+  const editing = scheduleState.historyEditing;
+  if (!editing || !scheduleState.user?.id) return;
+  const title = cleanText(document.getElementById("schedule-history-edit-title").value);
+  const area = cleanText(document.getElementById("schedule-history-edit-area").value) || null;
+  const date = document.getElementById("schedule-history-edit-date").value;
+  if (!title || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+    window.LuriaDialog.alert("Preencha o título e a data.");
+    return;
+  }
+  const save = document.getElementById("schedule-history-edit-save");
+  save.disabled = true;
+  let googleSyncError = false;
+  try {
+    const isTopic = editing.source === "topic";
+    const values = isTopic
+      ? { theme: title, area, scheduled_date: date, updated_at: new Date().toISOString() }
+      : { title, area, event_date: date, updated_at: new Date().toISOString() };
+    const { data, error } = await scheduleSb.from(isTopic ? "study_topics" : "schedule_events")
+      .update(values).eq("id", editing.id).eq("user_id", scheduleState.user.id).select("id");
+    if (error) throw error;
+    if (!data?.length) throw new Error("O registro não foi encontrado ou não há permissão para editá-lo.");
+    if (!isTopic && window.LuriaGoogleCalendar?.pushEvent) {
+      try { await window.LuriaGoogleCalendar.pushEvent(editing.id); }
+      catch (error) { console.warn("Não foi possível sincronizar com o Google Agenda", error); googleSyncError = true; }
+    }
+    closeHistoricalPlannerEditor();
+    await loadTopics();
+    if (googleSyncError) window.LuriaDialog.alert("Alteração salva na LURIA, mas a sincronização com o Google Agenda falhou. Tente sincronizar novamente.");
+  } catch (error) {
+    console.error("Erro ao editar atividade", error);
+    window.LuriaDialog.alert("Não foi possível salvar: " + error.message);
+  } finally {
+    save.disabled = false;
+  }
+}
+
 function updatePlannerViewControls() {
-  const isMonth =
-    scheduleState.plannerView === "month";
-
-  const weekPlanner =
-    document.getElementById("week-planner");
-
-  const monthPlanner =
-    document.getElementById("month-planner");
-
-  const weekButton =
-    document.getElementById("planner-view-week");
-
-  const monthButton =
-    document.getElementById("planner-view-month");
-
-  const todayButton =
-    document.getElementById("week-today");
-
-  if (weekPlanner) {
-    weekPlanner.hidden =
-      isMonth;
-  }
-
-  if (monthPlanner) {
-    monthPlanner.hidden =
-      !isMonth;
-  }
-
-  weekButton?.classList.toggle(
-    "active",
-    !isMonth
-  );
-
-  monthButton?.classList.toggle(
-    "active",
-    isMonth
-  );
-
-  weekButton?.setAttribute(
-    "aria-pressed",
-    !isMonth ? "true" : "false"
-  );
-
-  monthButton?.setAttribute(
-    "aria-pressed",
-    isMonth ? "true" : "false"
-  );
-
-  if (todayButton) {
-    todayButton.textContent = "Hoje";
-  }
+  const view = scheduleState.plannerView;
+  const week = document.getElementById("week-planner");
+  const month = document.getElementById("month-planner");
+  const list = document.getElementById("list-planner");
+  if (week) week.hidden = view !== "week";
+  if (month) month.hidden = view !== "month";
+  if (list) list.hidden = view !== "list";
+  const panel = document.querySelector(".agenda-calendar-column .planner-panel");
+  if (panel) panel.dataset.plannerMode = view;
+  ["week", "month", "list"].forEach(name => {
+    const button = document.getElementById("planner-view-" + name);
+    button?.classList.toggle("active", name === view);
+    button?.setAttribute("aria-pressed", name === view ? "true" : "false");
+  });
+  const todayButton = document.getElementById("week-today");
+  if (todayButton) todayButton.textContent = "Hoje";
 }
 
 function renderPlanner() {
   updatePlannerViewControls();
   renderAgendaSide();
   renderScheduleStudyInsights();
+
+  if (scheduleState.plannerView === "list") {
+    renderHistoricalPlanner();
+    return;
+  }
 
   if (
     scheduleState.plannerView
@@ -8784,24 +8859,30 @@ async function renderScheduleStudyInsights(period){
   }
   document.querySelectorAll(".agenda-insight-tabs [data-period]").forEach(btn=>btn.onclick=()=>renderScheduleStudyInsights(btn.dataset.period));
 }
+async function loadAllPlannerRows(table, sortColumn, userId) {
+  const rows = [];
+  const batchSize = 500;
+  for (let offset = 0; ; offset += batchSize) {
+    const { data, error } = await scheduleSb.from(table).select("*")
+      .eq("user_id", userId)
+      .order(sortColumn, { ascending: true })
+      .order("id", { ascending: true })
+      .range(offset, offset + batchSize - 1);
+    if (error) return { data: null, error };
+    rows.push(...(data || []));
+    if (!data || data.length < batchSize) break;
+  }
+  return { data: rows, error: null };
+}
+
 async function loadTopics() {
   const [
     topicsResult,
     eventsResult,
     errorsResult
   ] = await Promise.all([
-    scheduleSb
-      .from("study_topics")
-      .select("*")
-      .eq("user_id", scheduleState.user.id)
-      .order("created_at", { ascending: true }),
-
-    scheduleSb
-      .from("schedule_events")
-      .select("*")
-      .eq("user_id", scheduleState.user.id)
-      .order("event_date", { ascending: true })
-      .order("created_at", { ascending: true }),
+    loadAllPlannerRows("study_topics", "created_at", scheduleState.user.id),
+    loadAllPlannerRows("schedule_events", "event_date", scheduleState.user.id),
 
     scheduleSb
       .from("error_notebook")
@@ -8989,7 +9070,8 @@ async function deleteTopic(topicId) {
   const { error } = await scheduleSb
     .from("study_topics")
     .delete()
-    .eq("id", topicId);
+    .eq("id", topicId)
+    .eq("user_id", scheduleState.user.id);
 
   if (error) {
     console.error(error);
@@ -9055,7 +9137,8 @@ async function deleteScheduleEvent(
       .eq(
         "id",
         eventId
-      );
+      )
+      .eq("user_id", scheduleState.user.id);
 
 
   if (error) {
@@ -9648,6 +9731,31 @@ function wirePlannerNavigation() {
     updatePlannerViewControls();
     renderMonthPlanner();
     wireDynamicInteractions();
+  });
+
+  document.getElementById("planner-view-list")?.addEventListener("click", () => {
+    scheduleState.plannerView = "list";
+    renderPlanner();
+    wireDynamicInteractions();
+  });
+
+  document.getElementById("list-planner")?.addEventListener("click", async (event) => {
+    const button = event.target.closest("[data-history-action]");
+    if (!button) return;
+    const source = button.dataset.historySource;
+    const id = button.dataset.historyId;
+    if (button.dataset.historyAction === "edit") {
+      openHistoricalPlannerEditor(source, id);
+    } else if (button.dataset.historyAction === "delete") {
+      if (source === "topic") await deleteTopic(id);
+      else if (source === "event") await deleteScheduleEvent(id);
+    }
+  });
+  document.getElementById("schedule-history-edit-form")?.addEventListener("submit", saveHistoricalPlannerEdit);
+  document.getElementById("schedule-history-edit-cancel")?.addEventListener("click", closeHistoricalPlannerEditor);
+  document.getElementById("schedule-history-edit-close")?.addEventListener("click", closeHistoricalPlannerEditor);
+  document.getElementById("schedule-history-edit-dialog")?.addEventListener("close", () => {
+    scheduleState.historyEditing = null;
   });
 }
 
