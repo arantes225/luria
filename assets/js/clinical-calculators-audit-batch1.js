@@ -135,3 +135,73 @@
       "ROX intermediário às "+hours+" horas: zona cinzenta. Reavaliar tendência, esforço respiratório e oxigenação.";
   };
 })();
+
+
+/* Eventos da calculadora: validação antes do manipulador legado, sem alterar script inline
+ * protegido por CSP. Aplicado SOMENTE às primeiras 30 calculadoras auditadas.
+ */
+(() => {
+  if (typeof document === "undefined" || typeof C === "undefined") return;
+  const ids = new Set([
+    "egfr","crcl","fena","feurea","egfrcys","pam","shock","qtc","pp","ag",
+    "winter","freewater","kclprep","adrogue","nadeficit","na3vol","agc","nac",
+    "osm","ogap","delta","calcio","eag","ldl","imc","bsa","ibw","abw","pf","rox"
+  ]);
+  const zeroAllowed = {
+    fena:["un"], adrogue:["ksol"], osm:["bun"], ogap:["bun"], ldl:["tg"]
+  };
+  document.addEventListener("click",event=>{
+    if (!event.target?.closest) return;
+    const control=event.target.closest("[data-open]");
+    if (!control || !ids.has(control.dataset.open)) return;
+    const id=control.dataset.open, d=defs[id], modal=document.querySelector("#calc-modal");
+    if (!modal || !d) return;
+    modal.dataset.clinicalAuditId=id;
+    const formula=modal.querySelector(".formula");
+    if (formula && d.reference) {
+      const citation=document.createElement("p");
+      citation.className="note";
+      citation.textContent="Referência: "+d.reference+" · Auditoria: 24/10/2026";
+      formula.insertAdjacentElement("afterend",citation);
+    }
+  });
+  document.addEventListener("submit",event=>{
+    const form=event.target, modal=document.querySelector("#calc-modal");
+    if (form?.tagName!=="FORM" || !modal?.contains(form)) return;
+    const id=modal.dataset.clinicalAuditId;
+    if (!ids.has(id)) return; // Outras calculadoras continuam com seu fluxo próprio.
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    const def=defs[id], values=Object.fromEntries(new FormData(form));
+    const res=form.querySelector(".result"), err=form.querySelector(".err");
+    const warn=message=>{err.textContent=message;res.classList.remove("show");};
+    if (!def || !res || !err) return;
+    for(const f of def.fields) {
+      const raw=String(values[f[0]]??"").trim();
+      if (!raw) return warn("Preencha todos os campos obrigatórios.");
+      if (f[2]!=="number") continue;
+      const num=Number(raw);
+      if(!Number.isFinite(num))return warn("Número inválido: "+f[1]+".");
+      const canZero=(zeroAllowed[id]||[]).includes(f[0]);
+      if(num<0 || (num===0&&!canZero))return warn("Valor incompatível para "+f[1]+".");
+    }
+    try {
+      const msg=typeof def.validate==="function"?def.validate(values):"";
+      if(msg)return warn(msg);
+      const [value,units]=def.calc(values);
+      if(!Number.isFinite(value))return warn("Fórmula não aplicável aos valores informados.");
+      const summary=calcInterpret(id,value,units,values);
+      res.replaceChildren();
+      const label=document.createElement("span");
+      label.className="result-label";label.textContent="Resultado";
+      const number=document.createElement("b");
+      number.textContent=value.toLocaleString("pt-BR",{maximumFractionDigits:2})+(units?" "+units:"");
+      const info=document.createElement("small");info.textContent=summary;
+      res.append(label,number,info);
+      err.textContent="";
+      res.classList.add("show");
+    } catch(ex) {
+      warn("Não foi possível calcular de modo seguro. Verifique dados, unidades e indicação.");
+    }
+  },true);
+})();
