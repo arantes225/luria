@@ -56,7 +56,7 @@ test('classificações FIB-4 por idade, MELD 3.0 e Light',()=>{
  assert.match(calcInterpretations.fib4(1.6,'',{age:45}),/intermediário/);
  assert.match(calcInterpretations.light(0),/transudato/);
  assert.match(calcInterpretations.light(1),/exsudato/);
- assert.equal(defs.light.calc({pp:4,sp:6,pl:170,sl:280,uln:200})[0],2);
+ assert.equal(defs.light.calc({pp:4,sp:6,pl:170,sl:280,uln:200})[0],3);
  assert.equal(defs.meld3.calc({age:55,cr:1,bil:1,inr:1,na:137,alb:3.5,sex:'Masculino',dial:'Não'})[0],6);
 });
 const script=read('assets/js/work-scores.js');
