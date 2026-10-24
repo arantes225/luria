@@ -32,9 +32,18 @@ function topbar(){return $(".topbar")}
 function modal(id,title,body){let o=d.getElementById(id);if(o)o.remove();o=d.createElement("div");o.id=id;o.className="luria-intel-overlay";o.innerHTML='<section class="luria-intel-modal" role="dialog" aria-modal="true"><header class="luria-intel-head"><h2>'+esc(title)+'</h2><button class="luria-intel-close" type="button" aria-label="Fechar">×</button></header>'+body+'</section>';d.body.appendChild(o);o.querySelector(".luria-intel-close").onclick=()=>o.remove();o.onclick=e=>{if(e.target===o)o.remove()};return o}
 function installSearch(){
  const bar=topbar();if(!bar)return;
- document.getElementById('luria-alex-topbar')?.remove();
  const controls=bar.querySelector(".luria-notifications");
  if(!controls){setTimeout(installSearch,120);return}
+ if(!d.getElementById("luria-alex-topbar")){
+   const alex=d.createElement("a");
+   alex.id="luria-alex-topbar";
+   alex.className="luria-alex-topbar";
+   alex.href="/professor-alex/";
+   alex.textContent="Alex";
+   alex.setAttribute("aria-label","Abrir Professor Alex");
+   const timerWrap=controls.querySelector(".luria-pomodoro-top");
+   if(timerWrap)controls.insertBefore(alex,timerWrap);else controls.prepend(alex);
+ }
 
  const open=(initialQuery="")=>{
    const o=modal("luria-search-overlay","Busca global",'<input id="luria-search-input" class="luria-search-input" type="search" placeholder="Busque páginas, ferramentas, temas e conteúdos..." autofocus><div id="luria-search-list" class="luria-search-list"></div>');

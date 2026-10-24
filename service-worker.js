@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261024-paciente-v1";
+const CACHE_VERSION = "luria-pwa-20261024-clinical-audit-batch4-paciente-v1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -36,6 +36,11 @@ const APP_SHELL = [
   "/trabalho/",
   "/trabalho/paciente/",
   "/trabalho/calculadora/",
+  "/trabalho/scores/",
+  "/assets/js/clinical-calculators-expansion.js?v=20261024",
+  "/assets/js/clinical-calculators-audit-batch1.js?v=20261024-batch1",
+  "/assets/js/clinical-calculators-audit-batch2.js?v=20261024-batch2",
+  "/assets/js/clinical-calculators-audit-batch3.js?v=20261024-batch3",
   "/manifest.webmanifest?v=5",
   "/mini-osce/",
   "/jogos/",
@@ -55,7 +60,7 @@ const APP_SHELL = [
   "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",
   "/assets/css/review-continuation-20261022.css?v=20261023-visible2",
   "/assets/js/review-continuation-20261022.js?v=1",
-  "/assets/js/luria-command-center.js?v=20261023-robot-companion",
+  "/assets/js/luria-command-center.js?v=20261024-alex-topbar",
   "/assets/js/professor-alex-companion.mjs?v=20261023-visible2",
   "/assets/js/professor-alex-mascot.mjs?v=20261014-ready2",
   "/assets/js/professor-alex-integration.mjs?v=20261014-ready2",
@@ -131,7 +136,7 @@ const INSTALL_PRECACHE = new Set([
   "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",
   "/assets/css/review-continuation-20261022.css?v=20261023-visible2",
   "/assets/js/review-continuation-20261022.js?v=1",
-  "/assets/js/luria-command-center.js?v=20261023-robot-companion",
+  "/assets/js/luria-command-center.js?v=20261024-alex-topbar",
   "/assets/js/professor-alex-companion.mjs?v=20261023-visible2",
   "/assets/js/professor-alex-mascot.mjs?v=20261014-ready2",
   "/assets/js/professor-alex-integration.mjs?v=20261014-ready2",

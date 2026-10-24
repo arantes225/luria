@@ -6,11 +6,14 @@ const flush=async()=>{for(let i=0;i<5;i++)await settle()};
 test('Alex remains the on-screen companion instead of a top-bar shortcut',t=>{
  const {w,d}=page(t,'dashboard/index.html'),source=read('assets/js/luria-command-center.js');
  const topbar=d.querySelector('.topbar');
- topbar.innerHTML='<div class="luria-notifications"><a id="luria-alex-topbar" href="/professor-alex/">Alex</a><button class="luria-pomodoro-top" type="button">00:00</button></div>';
+ topbar.innerHTML='<div class="luria-notifications"><button class="luria-pomodoro-top" type="button">00:00</button></div>';
  w.d=d;w.$=(selector,root=d)=>root.querySelector(selector);
  w.eval(declaration(source,'topbar')+'\n'+declaration(source,'installSearch'));
  w.installSearch();
- assert.equal(d.getElementById('luria-alex-topbar'),null);
+ const alex=d.getElementById('luria-alex-topbar');
+ assert(alex);assert.equal(alex.getAttribute('href'),'/professor-alex/');
+ assert.equal(alex.getAttribute('aria-label'),'Abrir Professor Alex');
+ assert.equal(alex.nextElementSibling.className,'luria-pomodoro-top');
  const companion=read('assets/js/professor-alex-companion.mjs');
  assert.match(companion,/let prefs = \{x: 1, y: 1, minimized: false, visibilityVersion: 2\}/);
  assert.match(companion,/saved\.visibilityVersion === 2 \? \(saved\.minimized === true\) : false/);
