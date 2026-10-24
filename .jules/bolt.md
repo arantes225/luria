@@ -5,3 +5,7 @@
 ## 2024-10-23 - Prevent main thread blocking on keystroke filtering
 **Learning:** In the monolithic Vanilla JS architecture, rendering functions like `renderThemeLibrary` and `renderEventLibrary` are expensive as they manipulate the DOM synchronously based on search queries. We found that `input` event listeners were attached to search bars without any debouncing or throttling.
 **Action:** When working on search or filter inputs, always use a `debounce` wrapper around the event listener callback to delay the execution of expensive rendering functions until the user has stopped typing. This significantly reduces redundant UI re-renders and improves application responsiveness.
+
+## 2024-10-24 - Debouncing input listeners
+**Learning:** We need to be careful to implement debouncing to inputs where events trigger intensive rendering actions like filtering libraries, but be mindful about files containing vanilla JS without build steps. We implemented a debounce function and correctly applied it without needing architectural changes.
+**Action:** When working on frontend apps without transpilation, provide a global or file-scoped `debounce` helper function and apply it to `<input>` tags bound to heavy DOM/rendering logic on the `input` event to improve responsiveness.
