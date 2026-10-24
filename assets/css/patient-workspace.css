@@ -1,0 +1,62 @@
+@layer luria-patient {
+  body[data-page="trabalho_paciente"] { background:var(--color-background,#f6f8fb); }
+  body[data-page="trabalho_paciente"] .patient-page { width:100%; max-width:1440px; margin:0 auto; }
+  body[data-page="trabalho_paciente"] .patient-hero { display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; margin:0 0 1.25rem; }
+  body[data-page="trabalho_paciente"] .patient-hero h1 { margin:0 0 .35rem; color:var(--color-text-primary); font-size:clamp(1.6rem,3vw,2.2rem); letter-spacing:-.025em; }
+  body[data-page="trabalho_paciente"] .patient-hero p { margin:0; max-width:68ch; color:var(--color-text-secondary); line-height:1.55; }
+  body[data-page="trabalho_paciente"] .patient-status { display:inline-flex; align-items:center; gap:.45rem; padding:.45rem .7rem; border:1px solid var(--color-border); border-radius:999px; background:var(--color-surface); color:var(--color-text-secondary); font-size:.78rem; font-weight:700; white-space:nowrap; }
+  body[data-page="trabalho_paciente"] .patient-status[data-active="true"] { color:var(--color-success,#267247); border-color:color-mix(in srgb,var(--color-success,#267247) 40%,var(--color-border)); }
+  body[data-page="trabalho_paciente"] .patient-dot,.patient-context-dot { width:.5rem; height:.5rem; border-radius:50%; background:currentColor; flex:0 0 .5rem; }
+  body[data-page="trabalho_paciente"] .patient-start { display:grid; grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr); gap:1rem; align-items:stretch; }
+  body[data-page="trabalho_paciente"] .patient-card,.patient-context-bar { border:1px solid var(--color-border); border-radius:var(--ui-radius-card,16px); background:var(--color-surface); box-shadow:var(--ui-shadow,0 12px 30px rgba(20,44,78,.08)); }
+  body[data-page="trabalho_paciente"] .patient-card { padding:clamp(1rem,2vw,1.5rem); }
+  body[data-page="trabalho_paciente"] .patient-card h2,.patient-card h3 { margin:0 0 .45rem; color:var(--color-text-primary); font-size:1.08rem; }
+  body[data-page="trabalho_paciente"] .patient-card p { margin:.35rem 0 1rem; color:var(--color-text-secondary); line-height:1.55; }
+  body[data-page="trabalho_paciente"] .patient-actions { display:flex; flex-wrap:wrap; gap:.65rem; align-items:center; }
+  body[data-page="trabalho_paciente"] button,.patient-page a.button { font:inherit; }
+  body[data-page="trabalho_paciente"] .patient-primary { border:0; border-radius:var(--ui-radius-control,10px); padding:.75rem 1rem; background:var(--color-primary,#184888); color:#fff; font-weight:700; cursor:pointer; }
+  body[data-page="trabalho_paciente"] .patient-secondary { display:inline-flex; align-items:center; justify-content:center; min-height:42px; padding:.6rem .9rem; border:1px solid var(--color-border); border-radius:var(--ui-radius-control,10px); background:transparent; color:var(--color-primary-text,#184888); font-weight:700; text-decoration:none; cursor:pointer; }
+  body[data-page="trabalho_paciente"] .patient-primary:hover,.patient-secondary:hover { filter:brightness(.97); }
+  body[data-page="trabalho_paciente"] .patient-note { padding:1rem; background:color-mix(in srgb,var(--color-primary-text,#184888) 5%,var(--color-surface)); }
+  body[data-page="trabalho_paciente"] .patient-note ul { margin:.7rem 0 0; padding-left:1.15rem; color:var(--color-text-secondary); line-height:1.55; }
+  body[data-page="trabalho_paciente"] .patient-workspace { display:grid; grid-template-columns:minmax(250px,.78fr) minmax(0,1.62fr); gap:1rem; align-items:start; }
+  body[data-page="trabalho_paciente"] .patient-main,.patient-side { display:grid; gap:1rem; min-width:0; }
+  body[data-page="trabalho_paciente"] .patient-summary-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.65rem; }
+  body[data-page="trabalho_paciente"] .patient-stat { padding:.8rem; border:1px solid var(--color-border); border-radius:12px; background:var(--color-surface); min-width:0; }
+  body[data-page="trabalho_paciente"] .patient-stat small,.patient-meta small { display:block; color:var(--color-text-secondary); font-size:.72rem; }
+  body[data-page="trabalho_paciente"] .patient-stat strong { display:block; margin-top:.2rem; overflow-wrap:anywhere; color:var(--color-text-primary); font-size:.94rem; }
+  body[data-page="trabalho_paciente"] .patient-section-head { display:flex; align-items:flex-start; justify-content:space-between; gap:.75rem; margin-bottom:.8rem; }
+  body[data-page="trabalho_paciente"] .patient-section-head h2 { margin:0; color:var(--color-text-primary); font-size:1.05rem; }
+  body[data-page="trabalho_paciente"] .patient-section-head p { margin:.25rem 0 0; color:var(--color-text-secondary); font-size:.84rem; line-height:1.4; }
+  body[data-page="trabalho_paciente"] .patient-search { display:flex; gap:.6rem; align-items:center; margin-bottom:.8rem; }
+  body[data-page="trabalho_paciente"] .patient-search input,.patient-form input,.patient-form select,.patient-form textarea { width:100%; min-height:42px; box-sizing:border-box; border:1px solid var(--color-border); border-radius:10px; background:var(--color-surface); color:var(--color-text-primary); padding:.65rem .75rem; font:inherit; }
+  body[data-page="trabalho_paciente"] .patient-search input:focus,.patient-form :is(input,select,textarea):focus { outline:2px solid var(--color-focus-ring); outline-offset:1px; }
+  body[data-page="trabalho_paciente"] .patient-tool-list,.patient-list { display:grid; gap:.6rem; }
+  body[data-page="trabalho_paciente"] .patient-tool,.patient-list-item { display:flex; align-items:flex-start; justify-content:space-between; gap:.75rem; padding:.75rem; border:1px solid var(--color-border); border-radius:12px; background:var(--color-surface); }
+  body[data-page="trabalho_paciente"] .patient-tool-copy,.patient-list-copy { min-width:0; }
+  body[data-page="trabalho_paciente"] .patient-tool strong,.patient-list-item strong { display:block; color:var(--color-text-primary); font-size:.9rem; }
+  body[data-page="trabalho_paciente"] .patient-tool small,.patient-list-item small { display:block; margin-top:.2rem; color:var(--color-text-secondary); line-height:1.4; }
+  body[data-page="trabalho_paciente"] .patient-tool-actions { display:flex; flex-wrap:wrap; gap:.4rem; justify-content:flex-end; }
+  body[data-page="trabalho_paciente"] .patient-tool-actions a,.patient-tool-actions button { flex:0 0 auto; border:1px solid var(--color-border); border-radius:8px; padding:.45rem .6rem; background:transparent; color:var(--color-primary-text,#184888); font:inherit; font-size:.76rem; font-weight:700; text-decoration:none; cursor:pointer; }
+  body[data-page="trabalho_paciente"] .patient-empty { padding:.9rem; border:1px dashed var(--color-border); border-radius:12px; color:var(--color-text-secondary); font-size:.86rem; line-height:1.5; }
+  body[data-page="trabalho_paciente"] .patient-form { display:grid; gap:.75rem; }
+  body[data-page="trabalho_paciente"] .patient-form-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.7rem; }
+  body[data-page="trabalho_paciente"] .patient-form-grid.three { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  body[data-page="trabalho_paciente"] .patient-form label { display:grid; gap:.32rem; color:var(--color-text-secondary); font-size:.78rem; font-weight:700; }
+  body[data-page="trabalho_paciente"] .patient-form label.full { grid-column:1/-1; }
+  body[data-page="trabalho_paciente"] .patient-inline-form { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.55rem; align-items:end; }
+  body[data-page="trabalho_paciente"] .patient-inline-form .wide { grid-column:span 2; }
+  body[data-page="trabalho_paciente"] .patient-alert { padding:.75rem .85rem; border-left:3px solid var(--color-warning,#a85b20); background:color-mix(in srgb,var(--color-warning,#a85b20) 8%,var(--color-surface)); color:var(--color-text-secondary); font-size:.82rem; line-height:1.45; }
+  body[data-page="trabalho_paciente"] .patient-plan textarea { min-height:90px; resize:vertical; }
+  body[data-page="trabalho_paciente"] .patient-timeline { display:grid; gap:.75rem; }
+  body[data-page="trabalho_paciente"] .patient-timeline-item { display:grid; grid-template-columns:9px minmax(0,1fr); gap:.7rem; }
+  body[data-page="trabalho_paciente"] .patient-timeline-marker { width:9px; height:9px; margin-top:.35rem; border-radius:50%; background:var(--color-primary,#184888); box-shadow:0 0 0 4px color-mix(in srgb,var(--color-primary,#184888) 13%,transparent); }
+  body[data-page="trabalho_paciente"] .patient-timeline-item strong { display:block; color:var(--color-text-primary); font-size:.84rem; }
+  body[data-page="trabalho_paciente"] .patient-timeline-item small { display:block; margin-top:.2rem; color:var(--color-text-secondary); line-height:1.45; }
+  body[data-page="trabalho_paciente"] .patient-context-bar { display:flex; align-items:center; gap:.65rem; margin:0 0 1rem; padding:.7rem .85rem; color:var(--color-text-primary); }
+  body[data-page="trabalho_paciente"] .patient-context-bar span:nth-child(2) { display:grid; min-width:0; }
+  body[data-page="trabalho_paciente"] .patient-context-bar small { color:var(--color-text-secondary); }
+  body[data-page="trabalho_paciente"] .patient-context-bar a { margin-left:auto; color:var(--color-primary-text,#184888); font-size:.82rem; font-weight:700; }
+  @media(max-width:920px) { body[data-page="trabalho_paciente"] .patient-start,.patient-workspace { grid-template-columns:1fr; } body[data-page="trabalho_paciente"] .patient-side { order:-1; } }
+  @media(max-width:620px) { body[data-page="trabalho_paciente"] .patient-hero { display:grid; } body[data-page="trabalho_paciente"] .patient-summary-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } body[data-page="trabalho_paciente"] .patient-form-grid,.patient-form-grid.three,.patient-inline-form { grid-template-columns:1fr; } body[data-page="trabalho_paciente"] .patient-form label.full,.patient-inline-form .wide { grid-column:auto; } body[data-page="trabalho_paciente"] .patient-tool { display:grid; } body[data-page="trabalho_paciente"] .patient-tool-actions { justify-content:flex-start; } }
+}

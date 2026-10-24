@@ -108,6 +108,7 @@
     const entry = (href,label,visual,group,source,feature) => ({href,label,visual,group,source,feature});
     const main = work ? [
       entry("/trabalho/","Início","dashboard","",get("/trabalho/")),
+      entry("/trabalho/paciente/","Paciente","users","",get("/trabalho/paciente/")),
       {label:"Ferramentas",visual:"clipboard",tools:true},
       entry("/trabalho/prescricao/","Prescrição","file","",get("/trabalho/prescricao/")),
       entry("/trabalho/pcr/","PCR","stethoscope","",get("/trabalho/pcr/"))
@@ -121,7 +122,7 @@
       ? ["Ferramentas médicas","Rotina e acompanhamento","Conta e gestão"]
       : ["Estudar e revisar","Praticar e consolidar","Planejamento e desempenho","Comunidade","Conta e gestão"];
     const groupFor = href => work
-      ? (/calculadora|scores|diagnostico|fluidos|prontuario|prescricao/.test(href) ? categories[0] : /admin|editorial|beta/.test(href) ? categories[2] : categories[1])
+      ? (/calculadora|scores|diagnostico|fluidos|prontuario|prescricao|paciente/.test(href) ? categories[0] : /admin|editorial|beta/.test(href) ? categories[2] : categories[1])
       : (/aprender/.test(href) ? categories[0] : /consolidar|jogos|desafio|plantao/.test(href) ? categories[1] : /cronograma|estatisticas|aplicar/.test(href) ? categories[2] : /amigos/.test(href) ? categories[3] : categories[4]);
     const extra = sources.filter(source => !main.some(item => item.href === source.getAttribute("href"))).map(source => {
       const href = source.getAttribute("href");
@@ -152,7 +153,7 @@
     let active = main.findIndex(item => item.href && (item.href === path || item.href !== (work?"/trabalho/":"/dashboard/") && path.startsWith(item.href)));
     if (active < 0 && !work && ["aprender","caderno","apostilas","professor_alex"].includes(body.dataset.page)) active = 1;
     if (active < 0 && !work && ["consolidar","flashcards","questoes","erros"].includes(body.dataset.page)) active = 2;
-    if (active < 0 && work) active = activeSource === "/trabalho/prescricao/" ? 2 : /calculadora|scores|diagnostico|fluidos|prontuario/.test(path) ? 1 : -1;
+    if (active < 0 && work) active = activeSource === "/trabalho/prescricao/" ? 3 : /paciente/.test(path) ? 1 : /calculadora|scores|diagnostico|fluidos|prontuario/.test(path) ? 2 : -1;
     const signature = JSON.stringify([main.map(item=>[item.href,item.label,item.disabled]),unique.map(item=>[item.href,item.label,item.group,item.disabled]),active]);
     if (signature === mobileSignature && railBefore) return;
     mobileSignature = signature;
@@ -176,7 +177,7 @@
       if (item.tools) {control=document.createElement("button");control.type="button";control.id="ui-mobile-tools-trigger";control.innerHTML=navIcon(item.visual)+'<span>Ferramentas</span>';set(control,"aria-controls","ui-mobile-tools");set(control,"aria-haspopup","dialog");set(control,"aria-expanded",false);}
       else control=makeLink(item);
       if (index===active) set(control,"aria-current","page");
-      if (work && index===3) control.dataset.mobilePcr="true";
+      if (work && index===4) control.dataset.mobilePcr="true";
       rail.append(control);
     });
     const more=document.createElement("button");more.id="ui-mobile-more";more.type="button";

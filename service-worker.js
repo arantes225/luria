@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261023-visible-alex-v2";
+const CACHE_VERSION = "luria-pwa-20261024-paciente-v1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -34,6 +34,7 @@ const APP_SHELL = [
   "/amigos/",
   "/apostilas/",
   "/trabalho/",
+  "/trabalho/paciente/",
   "/trabalho/calculadora/",
   "/manifest.webmanifest?v=5",
   "/mini-osce/",
@@ -90,6 +91,8 @@ const APP_SHELL = [
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
   "/assets/js/app.js?v=20261020-sidebar-nav",
+  "/assets/css/patient-workspace.css?v=1",
+  "/assets/js/patient-context.js?v=1",
   "/assets/css/vocacao.css?v=2",
   "/assets/js/vocacao.js?v=2",
   "/assets/js/dashboard-layouts.js?v=20261005-dashboard3-v101",

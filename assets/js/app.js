@@ -1146,6 +1146,36 @@
   if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
+// A patient session is optional context for independent Work tools. It lives
+// only in sessionStorage and is never copied into a tool automatically.
+(() => {
+  const body = document.body;
+  if (!body?.dataset.page?.startsWith("trabalho_") || body.dataset.page === "trabalho_paciente") return;
+  const key = "luria:temporary-patient:v1";
+  if (!document.getElementById("luria-patient-context-style")) {
+    const style = document.createElement("style");
+    style.id = "luria-patient-context-style";
+    style.textContent = `.patient-context-bar{display:flex;align-items:center;gap:.65rem;margin:0 0 1rem;padding:.7rem .85rem;border:1px solid var(--color-border);border-radius:var(--ui-radius-card,16px);background:var(--color-surface);box-shadow:var(--ui-shadow,0 12px 30px rgba(20,44,78,.08));color:var(--color-text-primary)}.patient-context-bar>span:nth-child(2){display:grid;min-width:0}.patient-context-bar small{color:var(--color-text-secondary)}.patient-context-bar a{margin-left:auto;color:var(--color-primary-text,#184888);font-size:.82rem;font-weight:700}.patient-context-dot{width:.5rem;height:.5rem;border-radius:50%;background:var(--color-success,#267247);flex:0 0 .5rem}`;
+    document.head.appendChild(style);
+  }
+  const read = () => { try { const value = sessionStorage.getItem(key); return value ? JSON.parse(value) : null; } catch { return null; } };
+  const escapeHtml = value => String(value ?? "").replace(/[&<>\"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;",'\"':"&quot;", "'":"&#39;"}[char]));
+  const mount = () => {
+    document.querySelector(".patient-context-bar")?.remove();
+    const state = read();
+    if (!state?.patient) return;
+    const host = document.querySelector(".page > .topbar") || document.querySelector("main.main .page");
+    if (!host) return;
+    const bar = document.createElement("aside");
+    bar.className = "patient-context-bar";
+    bar.setAttribute("aria-label", "Contexto de paciente ativo");
+    bar.innerHTML = `<span class="patient-context-dot" aria-hidden="true"></span><span><strong>Paciente ativo</strong><small>${escapeHtml(state.patient.id)} · uso opcional nesta ferramenta</small></span><a href="/trabalho/paciente/">Abrir central</a>`;
+    host.insertAdjacentElement("afterend", bar);
+  };
+  mount();
+  window.addEventListener("luria:patient-context-changed", mount);
+})();
+
 
 /* LURIA PWA BOTTOM MENU FINAL OVERRIDE v1 — 2026-10-21 */
 (function installLuriaPwaBottomMenuFinalV1(){
@@ -1345,6 +1375,7 @@ const PAGE_INFO = {
   admin: { title: "Admin", eyebrow: "Gestão LURIA", helper: "Gerencie conteúdo, acessos e operação da plataforma." },
   beta_testers: { title: "Beta Testers", eyebrow: "Feedback beta", helper: "Acompanhe sugestões e pontos de melhoria." },
   trabalho_dashboard: { title: "Dashboard", eyebrow: "Rotina clínica", helper: "Acesse rapidamente as ferramentas do seu dia." },
+  trabalho_paciente: { title: "Paciente — Central Clínica", eyebrow: "Contexto temporário", helper: "Organize uma avaliação sem substituir as ferramentas clínicas independentes." },
   trabalho_gestor_plantoes: { title: "Gestor de Plantões", eyebrow: "Escalas e plantões", helper: "Organize sua rotina de plantões em um só lugar." },
   trabalho_plantoes: { title: "Escala", eyebrow: "Plantões e horários", helper: "Visualize e organize seus plantões." },
   trabalho_passometro: { title: "Passômetro", eyebrow: "Passos e evolução", helper: "Estruture a passagem de plantão com clareza." },
@@ -1603,6 +1634,10 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
       ${String(page).startsWith("trabalho_") ? `
         <a class="nav-link ${page === "trabalho_dashboard" ? "active" : ""}" href="/trabalho/">
           <span class="nav-icon">◫</span><span>Dashboard</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_paciente" ? "active" : ""}" href="/trabalho/paciente/">
+          <span class="nav-icon">♙</span><span>Paciente</span>
         </a>
 
         <a class="nav-link ${page === "trabalho_passometro" ? "active" : ""}" href="/trabalho/passometro/">
