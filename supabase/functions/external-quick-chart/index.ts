@@ -29,6 +29,26 @@ function validUsername(value: string) {
 function validCode(value: unknown) {
   return /^\d{6}$/.test(String(value ?? ""));
 }
+// Compatibility only while the static site is held back by unrelated CI failures.
+// Calling daily_code explicitly revokes this older PIN for that account.
+function validLegacyPin(value: unknown) {
+  return /^\d{4}$/.test(String(value ?? ""));
+}
+function randomSaltHex() {
+  const salt = new Uint8Array(16);
+  crypto.getRandomValues(salt);
+  return hex(salt);
+}
+function bytesFromHex(value: string) {
+  return new Uint8Array((value.match(/.{2}/g) || []).map(x => parseInt(x, 16)));
+}
+async function deriveLegacyHash(pin: string, saltHex: string) {
+  const key = await crypto.subtle.importKey("raw", enc.encode(pin), "PBKDF2", false, ["deriveBits"]);
+  const bits = await crypto.subtle.deriveBits({
+    name: "PBKDF2", hash: "SHA-256", salt: bytesFromHex(saltHex), iterations: 120000
+  }, key, 256);
+  return hex(new Uint8Array(bits));
+}
 
 function json(body: unknown, status = 200) {
   return new Response(JSON.stringify(body), { status, headers: cors });
@@ -83,8 +103,27 @@ Deno.serve(async (req: Request) => {
       { auth: { persistSession: false, autoRefreshToken: false } }
     );
 
+    // Temporary compatibility for already-published clients while Pages is blocked.
+    // Newly displayed daily codes revoke the legacy PIN via the daily_code branch.
     if (payload.action === "set_pin") {
-      return json({ error: "O PIN fixo foi substituído pelo código diário." }, 410);
+      const token = (req.headers.get("authorization") || "").replace(/^Bearer\s+/i,"");
+      if (!token) return json({ error: "Sessão inválida." }, 401);
+      const { data: authData, error: authError } = await sb.auth.getUser(token);
+      if (authError || !authData?.user) return json({ error: "Sessão inválida." }, 401);
+      if (!validLegacyPin(payload.pin)) return json({ error: "Use um PIN de 4 dígitos." }, 400);
+      const { data: profile, error: profileError } = await sb.from("profiles")
+        .select("username").eq("user_id",authData.user.id).maybeSingle();
+      if (profileError) throw profileError;
+      const verifiedUsername = normalizeUsername(profile?.username);
+      if (!validUsername(verifiedUsername)) return json({ error: "Defina primeiro um nome de usuário válido em Perfil e Conta." }, 400);
+      const salt = randomSaltHex();
+      const pinHash = await deriveLegacyHash(String(payload.pin),salt);
+      const { error: saveError } = await sb.from("external_quick_chart_portals").upsert({
+        owner_id:authData.user.id,access_slug:verifiedUsername,
+        access_code_hash:null,pin_hash:pinHash,pin_salt:salt,pin_configured_at:new Date().toISOString()
+      },{onConflict:"owner_id"});
+      if (saveError) throw saveError;
+      return json({ok:true,username:verifiedUsername});
     }
 
     if (payload.action === "daily_code") {
@@ -111,8 +150,11 @@ Deno.serve(async (req: Request) => {
 
     const username = normalizeUsername(payload.username);
     const suppliedCode = String(payload.code ?? "");
-    if (!validUsername(username) || !validCode(suppliedCode)) {
-      return json({ error: "Usuário ou código diário inválido." }, 401);
+    const legacyPin = String(payload.pin ?? "");
+    const tryDaily = validCode(suppliedCode);
+    const tryLegacy = validLegacyPin(legacyPin);
+    if (!validUsername(username) || (!tryDaily && !tryLegacy)) {
+      return json({ error: "Usuário ou código inválido." }, 401);
     }
 
     const ipKey = await sha256Hex(`${username}|${requestIp(req)}`);
@@ -146,18 +188,21 @@ Deno.serve(async (req: Request) => {
     if (profile?.user_id) {
       const result = await sb
         .from("external_quick_chart_portals")
-        .select("owner_id,content,content_expires_at,last_accessed_at,updated_at")
+        .select("owner_id,pin_hash,pin_salt,content,content_expires_at,last_accessed_at,updated_at")
         .eq("owner_id", profile.user_id)
         .maybeSingle();
       if (result.error) throw result.error;
       portal = result.data;
     }
 
-    const expectedCode = portal?.owner_id ? await dailyCode(portal.owner_id, now) : "";
-    const authenticated = Boolean(portal?.owner_id && equalCode(suppliedCode, expectedCode));
-
+    const expectedCode = portal?.owner_id && tryDaily ? await dailyCode(portal.owner_id, now) : "";
+    let authenticated = Boolean(portal?.owner_id && tryDaily && equalCode(suppliedCode, expectedCode));
+    if (!authenticated && tryLegacy && portal?.pin_hash && portal?.pin_salt) {
+      // Old four-digit PINs are accepted only before this account requests a new daily code.
+      authenticated = (await deriveLegacyHash(legacyPin,portal.pin_salt)) === portal.pin_hash;
+    }
     if (!authenticated) {
-      return json({ error: "Usuário ou código diário inválido." }, 401);
+      return json({ error: "Usuário ou código inválido." }, 401);
     }
 
     const { error: resetError } = await sb.from("external_quick_chart_attempts")
