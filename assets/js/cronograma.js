@@ -9752,6 +9752,24 @@ function wirePlannerNavigation() {
     }
   });
   document.getElementById("schedule-history-edit-form")?.addEventListener("submit", saveHistoricalPlannerEdit);
+
+  // Atalhos de data sem abrir o pop-up; o calendário completo permanece opcional.
+  document.querySelectorAll("[data-schedule-date-target][data-schedule-date-preset]").forEach(button => {
+    button.addEventListener("click", () => {
+      const input = document.getElementById(button.dataset.scheduleDateTarget);
+      if (!input) return;
+      const preset = button.dataset.scheduleDatePreset;
+      if (preset === "clear") {
+        input.value = "";
+      } else {
+        const date = new Date();
+        if (preset === "tomorrow") date.setDate(date.getDate() + 1);
+        input.value = toISODateSchedule(date);
+      }
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+      input.dispatchEvent(new Event("change", { bubbles: true }));
+    });
+  });
   document.getElementById("schedule-history-edit-cancel")?.addEventListener("click", closeHistoricalPlannerEditor);
   document.getElementById("schedule-history-edit-close")?.addEventListener("click", closeHistoricalPlannerEditor);
   document.getElementById("schedule-history-edit-dialog")?.addEventListener("close", () => {

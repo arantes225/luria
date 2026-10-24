@@ -5348,49 +5348,38 @@ function openLuriaCalendar(
 
   render();
 
-  popover.hidden =
-    false;
+  // O calendário fica na top layer do diálogo; calcule seu tamanho real
+  // antes de posicioná-lo, evitando grade cortada em celulares.
+  const viewportWidth = document.documentElement.clientWidth || window.innerWidth;
+  const viewportHeight = window.innerHeight;
+  const rect = input.getBoundingClientRect();
+  const insideDialog = Boolean(input.closest("dialog[open]"));
+  const width = Math.min(330, Math.max(0, viewportWidth - 24));
 
-  const rect =
-    input.getBoundingClientRect();
+  popover.style.boxSizing = "border-box";
+  popover.style.width = `${width}px`;
+  popover.style.maxWidth = "calc(100vw - 24px)";
+  popover.hidden = false;
 
-  const width =
-    Math.min(
-      330,
-      window.innerWidth - 24
-    );
+  const pickerHeight = Math.min(
+    popover.getBoundingClientRect().height || 390,
+    Math.max(0, viewportHeight - 24)
+  );
+  const centered = Math.max(12, Math.round((viewportWidth - width) / 2));
+  const left = insideDialog && viewportWidth <= 640
+    ? centered
+    : Math.max(12, Math.min(rect.left, viewportWidth - width - 12));
 
-  let left =
-    Math.min(
-      Math.max(
-        12,
-        rect.left
-      ),
-      window.innerWidth - width - 12
-    );
-
-  let top =
-    rect.bottom + 7;
-
-  if (
-    top + 390 >
-    window.innerHeight
-  ) {
-    top =
-      Math.max(
-        12,
-        rect.top - 370
-      );
+  let top = rect.bottom + 8;
+  if (top + pickerHeight > viewportHeight - 12) {
+    top = rect.top - pickerHeight - 8;
+  }
+  if (top < 12) {
+    top = Math.max(12, Math.round((viewportHeight - pickerHeight) / 2));
   }
 
-  popover.style.width =
-    `${width}px`;
-
-  popover.style.left =
-    `${left}px`;
-
-  popover.style.top =
-    `${top}px`;
+  popover.style.left = `${left}px`;
+  popover.style.top = `${top}px`;
 
   setTimeout(
     () => document.addEventListener(

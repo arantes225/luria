@@ -17,7 +17,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
 <script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
-  <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
+  <link rel="stylesheet" href="/assets/css/style.css?v=20261024-date-responsive">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261005-learning-hubs">
 
   <style>
@@ -4148,7 +4148,63 @@ body[data-page="cronograma"] .planner-today:hover{
     body[data-page="cronograma"] .schedule-history-action-list{min-width:90px}
   }
 </style>
-\n</head>
+\n
+<style>
+  /* Edição de atividades: modal compacto e confortável no celular */
+  body[data-page="cronograma"] #schedule-history-edit-dialog{
+    box-sizing:border-box!important;
+    width:min(440px,calc(100vw - 28px))!important;
+    max-width:none!important;
+    max-height:calc(100dvh - 28px)!important;
+    margin:auto!important;
+    padding:20px!important;
+    overflow-y:auto!important;
+    overscroll-behavior:contain;
+  }
+  body[data-page="cronograma"] #schedule-history-edit-dialog:has(> .luria-calendar:not([hidden])){
+    overflow:visible!important;
+  }
+  body[data-page="cronograma"] .schedule-history-edit-head button{
+    display:grid!important;place-items:center!important;
+    flex:0 0 38px!important;width:38px!important;height:38px!important;
+    border:1px solid var(--border)!important;
+    border-radius:10px!important;background:var(--surface-2)!important;
+    font-size:23px!important;line-height:1!important;
+  }
+  body[data-page="cronograma"] #schedule-history-edit-form input{
+    min-width:0!important;min-height:44px!important;font-size:16px!important;
+  }
+  body[data-page="cronograma"] .schedule-history-date-shortcuts{
+    display:flex;gap:8px;flex-wrap:wrap;margin-top:-7px;
+  }
+  body[data-page="cronograma"] .schedule-history-date-shortcuts button{
+    border:1px solid var(--border)!important;border-radius:999px!important;
+    background:var(--surface-2)!important;color:var(--text)!important;
+    padding:7px 12px!important;min-height:35px!important;
+    font-size:12px!important;font-weight:750!important;cursor:pointer;
+  }
+  body[data-page="cronograma"] .schedule-history-date-shortcuts button:hover{
+    background:var(--accent-soft)!important;color:var(--accent)!important;
+  }
+  @media(max-width:640px){
+    body[data-page="cronograma"] #schedule-history-edit-dialog{
+      width:calc(100vw - 20px)!important;
+      max-height:calc(100dvh - 20px)!important;
+      padding:16px!important;
+      border-radius:16px!important;
+    }
+    body[data-page="cronograma"] #schedule-history-edit-form{gap:12px!important;}
+    body[data-page="cronograma"] .schedule-history-edit-actions{
+      display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    }
+    body[data-page="cronograma"] .schedule-history-edit-actions button{
+      min-width:0!important;min-height:42px!important;
+      padding:8px!important;white-space:normal!important;
+    }
+  }
+</style>
+
+</head>
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="cronograma">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
 <script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
@@ -5020,13 +5076,18 @@ body[data-page="cronograma"] .planner-today:hover{
         <datalist id="schedule-history-area-options"><option value="Clínica Médica"></option><option value="Cirurgia Geral"></option><option value="Ginecologia e Obstetrícia"></option><option value="Medicina Preventiva"></option><option value="Pediatria"></option></datalist>
       </label>
       <label>Data <input id="schedule-history-edit-date" name="date" type="date" required></label>
+      <div class="schedule-history-date-shortcuts" role="group" aria-label="Atalhos de data">
+        <button type="button" data-schedule-date-target="schedule-history-edit-date" data-schedule-date-preset="today">Hoje</button>
+        <button type="button" data-schedule-date-target="schedule-history-edit-date" data-schedule-date-preset="tomorrow">Amanhã</button>
+        <button type="button" data-schedule-date-target="schedule-history-edit-date" data-schedule-date-preset="clear">Limpar</button>
+      </div>
       <div class="schedule-history-edit-actions">
         <button type="button" class="button secondary" id="schedule-history-edit-cancel">Cancelar</button>
         <button type="submit" class="button primary" id="schedule-history-edit-save">Salvar alterações</button>
       </div>
     </form>
   </dialog>
-\n  <dialog id="already-done-dialog" class="done-dialog">
+  <dialog id="already-done-dialog" class="done-dialog">
     <form id="already-done-form" method="dialog">
       <span class="badge accent">Aula já feita</span>
       <h2 id="already-done-title">Marcar aula</h2>
@@ -5057,14 +5118,14 @@ body[data-page="cronograma"] .planner-today:hover{
 
 
 <script src="/assets/js/supabase.js"></script>
-<script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
+<script src="/assets/js/app.js?v=20261024-date-responsive"></script>
 <script src="/assets/js/study-mode.js?v=12.1"></script>
 <script src="/assets/js/exam-priority-data.js?v=1"></script>
 <script src="/assets/js/exam-priority-extra.js?v=1"></script>
 <script src="/assets/js/exam-priority.js?v=20261017-neutral1"></script>
 <script src="/assets/js/cronograma-base-data.js?v=12.6"></script>
 <script src="/assets/js/luria-lazy-vendors.js?v=1"></script>
-<script src="/assets/js/cronograma.js?v=20261024-lista1"></script>
+<script src="/assets/js/cronograma.js?v=20261024-date-shortcuts"></script>
 <script src="/assets/js/google-calendar.js?v=3-side-lock"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
