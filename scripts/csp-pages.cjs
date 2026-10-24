@@ -27,6 +27,8 @@ const ocrConnect = [
 for (const page of ['caderno-erros.html', 'caderno-erros/index.html']) {
   module.exports.resources[page] = {scriptSrc: [...ocrScripts, jsPdf], connectSrc: ocrConnect, wasm: true};
 }
+// OCR local na Cola Rápida (câmera e galeria); sem upload da imagem.
+module.exports.resources['trabalho/prontuario-rapido/index.html'] = {scriptSrc: ocrScripts, connectSrc: ocrConnect, wasm: true};
 for (const page of ['questoes-simulados.html', 'questoes-simulados/index.html']) {
   module.exports.resources[page] = {scriptSrc: [...pdfScripts, ...ocrScripts], connectSrc: ocrConnect, wasm: true};
 }
