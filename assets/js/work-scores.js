@@ -374,21 +374,182 @@
 
   ];
 
-  const practicalScoreIds = new Set([
-    "gcs","news2","qsofa","sofa",
-    "heart","grace","timi_ua","cha2ds2vasc","hasbled",
-    "wellspe","perc","wellsdvt","spesi",
-    "curb65",
-    "nihss","abcd2","ichscore","hunthess","mfisher",
-    "childpugh","meldna","gbs","bisap",
-    "alvarado","rcri","caprini",
-    "bishop","apgar",
-    "ciwaar","centor","hints","cage","fagerstrom","framingham"
-  ]);
-  for (let i = scores.length - 1; i >= 0; i -= 1) {
-    if (!practicalScoreIds.has(scores[i].id)) scores.splice(i, 1);
-  }
 
+  // Ampliação clínica — 24/10/2026. Pontuações dependem de preenchimento integral.
+  // Classificações diagnósticas não devem ser usadas como diagnóstico definitivo.
+  const expandedScoreDefs = [
+    {id:"sirs",name:"SIRS",category:"Emergência",aliases:"resposta inflamatória sistêmica infecção sepse",
+      desc:"Critérios inflamatórios inespecíficos; não diagnostica sepse.",tags:["Plantão","Infecção"],
+      questions:[q("Temperatura >38 °C ou <36 °C",yesno()),q("FC >90 bpm",yesno()),q("FR >20/min ou PaCO₂ <32 mmHg",yesno()),q("Leucócitos >12.000 ou <4.000/µL ou >10% bastões",yesno())],
+      interpret:n=>n>=2?"SIRS ≥2 critérios. Não indica necessariamente infecção ou sepse; investigar causa e disfunção orgânica.":"SIRS <2 não exclui infecção grave ou sepse.",
+      reference:"Bone RC et al. Chest. 1992;101:1644–1655; Surviving Sepsis Campaign."},
+    {id:"nyha",name:"Classe funcional NYHA",category:"Cardiologia",aliases:"insuficiência cardíaca dispneia esforço",
+      desc:"Classifica sintomas e limitação funcional da insuficiência cardíaca.",tags:["IC","Ambulatório"],
+      questions:[q("Limitação aos esforços",[opt("I — sem limitação da atividade habitual",1),opt("II — sintomas com atividade habitual",2),opt("III — sintomas com atividade menor que a habitual",3),opt("IV — sintomas em repouso",4)])],
+      interpret:n=>"NYHA "+["","I","II","III","IV"][n]+". Classificação sintomática; complementar com exame físico e avaliação objetiva.",
+      reference:"New York Heart Association functional classification; diretrizes SBC."},
+    {id:"geneva",name:"Genebra revisado — TEP",category:"Tromboembolismo",aliases:"revised Geneva embolia pulmonar probabilidade",
+      desc:"Probabilidade clínica pré-teste de TEP.",tags:["PS","TEP"],
+      questions:[
+        q("Idade >65 anos",yesno()),q("TVP ou TEP anterior",[opt("Não",0),opt("Sim",3)]),
+        q("Cirurgia ou fratura no último mês",[opt("Não",0),opt("Sim",2)]),
+        q("Câncer ativo",[opt("Não",0),opt("Sim",2)]),
+        q("Dor unilateral em membro inferior",[opt("Não",0),opt("Sim",3)]),
+        q("Hemoptise",[opt("Não",0),opt("Sim",2)]),
+        q("Frequência cardíaca",[opt("<75 bpm",0),opt("75–94 bpm",3),opt("≥95 bpm",5)]),
+        q("Dor à palpação venosa profunda e edema unilateral",[opt("Não",0),opt("Sim",4)])
+      ],
+      interpret:n=>n<=3?"Baixa probabilidade clínica (0–3). Integrar com algoritmo de TEP.":n<=10?"Probabilidade intermediária (4–10). Investigar por protocolo.":"Alta probabilidade (≥11). Investigar prontamente conforme estabilidade.",
+      reference:"Le Gal G et al. Ann Intern Med. 2006;144:165–171."},
+    {id:"fourts",name:"4Ts — trombocitopenia induzida por heparina",category:"Hematologia",aliases:"HIT heparina trombose plaquetas",
+      desc:"Probabilidade pré-teste de trombocitopenia induzida por heparina.",tags:["Plantão","Anticoagulação"],
+      questions:[
+        q("Queda plaquetária",[opt("<30% ou nadir <10 mil",0),opt("30–50% ou nadir 10–19 mil",1),opt(">50% e nadir ≥20 mil",2)]),
+        q("Momento da queda",[opt("≤4 dias sem exposição recente",0),opt("Momento incerto, >10 dias ou ≤1 dia após exposição 30–100 dias",1),opt("5–10 dias ou ≤1 dia após exposição nos últimos 30 dias",2)]),
+        q("Trombose ou sequela",[opt("Nenhuma",0),opt("Trombose progressiva/suspeita ou lesão não necrótica",1),opt("Trombose nova, necrose ou reação sistêmica após bolus",2)]),
+        q("Outras causas",[opt("Causa definida",0),opt("Possível",1),opt("Nenhuma aparente",2)])
+      ],
+      interpret:n=>n<=3?"4Ts 0–3: baixa probabilidade de HIT.":n<=5?"4Ts 4–5: probabilidade intermediária; investigar e seguir protocolo de HIT.":"4Ts 6–8: alta probabilidade; avaliação urgente e manejo conforme diretriz.",
+      reference:"Lo GK et al. J Thromb Haemost. 2006; ASH HIT guideline 2018."},
+    {id:"mmrc",name:"mMRC — dispneia",category:"Respiratório",aliases:"DPOC dispneia GOLD",
+      desc:"Escala de dispneia modificada do Medical Research Council.",tags:["DPOC","Ambulatório"],
+      questions:[q("Atividade associada à falta de ar",[
+        opt("0 — apenas exercício intenso",0),opt("1 — pressa ou leve subida",1),
+        opt("2 — mais lento que pares ou precisa parar",2),opt("3 — para após ~100 metros ou minutos",3),
+        opt("4 — dispneia ao se vestir ou impede sair de casa",4)])],
+      interpret:n=>"mMRC "+n+"/4. Utilizar em conjunto com sintomas, exacerbações e espirometria.",
+      reference:"Bestall JC et al. Thorax. 1999;54:581–586; GOLD."},
+    {id:"bode",name:"BODE — DPOC",category:"Respiratório",aliases:"IMC VEF1 caminhada dispneia prognóstico DPOC",
+      desc:"Índice prognóstico composto (IMC, obstrução, dispneia e exercício).",tags:["DPOC","Prognóstico"],
+      questions:[
+        q("IMC",[opt(">21 kg/m²",0),opt("≤21 kg/m²",1)]),
+        q("VEF1 % do previsto",[opt("≥65%",0),opt("50–64%",1),opt("36–49%",2),opt("≤35%",3)]),
+        q("mMRC",[opt("0–1",0),opt("2",1),opt("3",2),opt("4",3)]),
+        q("Distância no teste de caminhada 6 min",[opt("≥350 m",0),opt("250–349 m",1),opt("150–249 m",2),opt("≤149 m",3)])
+      ],
+      interpret:n=>"BODE "+n+"/10: valores maiores associam-se a pior prognóstico populacional; não substitui avaliação individual.",
+      reference:"Celli BR et al. N Engl J Med. 2004;350:1005–1012."},
+    {id:"asa",name:"ASA — estado físico",category:"Cirurgia",aliases:"anestesia cirúrgico ASA PS",
+      desc:"Classificação pré-anestésica de estado físico, não probabilidade individual de complicações.",tags:["Cirurgia","Pré-operatório"],
+      questions:[q("Estado físico",[opt("ASA I — saudável",1),opt("ASA II — doença sistêmica leve",2),opt("ASA III — doença sistêmica grave",3),opt("ASA IV — ameaça constante à vida",4),opt("ASA V — moribundo sem expectativa de sobrevida sem cirurgia",5),opt("ASA VI — morte encefálica para doação",6)])],
+      interpret:n=>"ASA "+n+". Em procedimento de emergência, o sufixo E é definido pela equipe; classificação não é escore de mortalidade.",
+      reference:"American Society of Anesthesiologists. ASA Physical Status Classification System."},
+    {id:"mrankin",name:"Rankin modificada (mRS)",category:"Neurologia",aliases:"AVC incapacidade funcional",
+      desc:"Desfecho funcional e incapacidade após AVC.",tags:["AVC","Reabilitação"],
+      questions:[q("Dependência funcional",[opt("0 — sem sintomas",0),opt("1 — sintomas sem incapacidade relevante",1),opt("2 — pequena incapacidade, independente",2),opt("3 — necessita alguma ajuda mas caminha sem auxílio",3),opt("4 — não caminha nem cuida de si sem auxílio",4),opt("5 — acamado, incontinente, cuidados constantes",5),opt("6 — óbito",6)])],
+      interpret:n=>"mRS "+n+"/6. Atribuir com entrevista estruturada e contexto funcional prévio.",
+      reference:"van Swieten JC et al. Stroke. 1988;19:604–607."},
+    {id:"wfns",name:"WFNS — hemorragia subaracnóidea",category:"Neurologia",aliases:"HSA aneurisma gravidade Glasgow déficit motor",
+      desc:"Graduação clínica de HSA baseada em Glasgow e déficit motor.",tags:["Neuro","HSA"],
+      questions:[q("Glasgow e déficit focal",[opt("I — GCS 15, sem déficit",1),opt("II — GCS 13–14, sem déficit motor",2),opt("III — GCS 13–14, com déficit motor",3),opt("IV — GCS 7–12, com ou sem déficit",4),opt("V — GCS 3–6, com ou sem déficit",5)])],
+      interpret:n=>"WFNS "+n+". Gravidade neurológica; não define conduta isoladamente.",
+      reference:"World Federation of Neurosurgical Societies grading (1988)."},
+    {id:"silverman",name:"Silverman–Andersen",category:"Pediatria",aliases:"neonatologia desconforto respiratório recém-nascido",
+      desc:"Quantifica cinco sinais de desconforto respiratório neonatal.",tags:["Neonatologia","Sala de parto"],
+      questions:[
+        q("Movimento toracoabdominal",[opt("Sincronizado",0),opt("Atraso inspiratório",1),opt("Movimento em gangorra",2)]),
+        q("Tiragem intercostal",[opt("Ausente",0),opt("Discreta",1),opt("Acentuada",2)]),
+        q("Retração xifoide",[opt("Ausente",0),opt("Discreta",1),opt("Acentuada",2)]),
+        q("Batimento de asas nasais",[opt("Ausente",0),opt("Mínimo",1),opt("Acentuado",2)]),
+        q("Gemido expiratório",[opt("Ausente",0),opt("Audível com estetoscópio",1),opt("Audível sem estetoscópio",2)])
+      ],
+      interpret:n=>"Silverman–Andersen "+n+"/10. Valores maiores indicam mais desconforto respiratório; não adiar suporte ventilatório por pontuação.",
+      reference:"Silverman WA, Andersen DH. Pediatrics. 1956;17:1–10."},
+    {id:"westley",name:"Westley — crupe",category:"Pediatria",aliases:"laringite estridor crupe pediátrico",
+      desc:"Escore clínico da gravidade de crupe.",tags:["Pediatria","PS"],
+      questions:[
+        q("Nível de consciência",[opt("Normal",0),opt("Desorientado/alterado",5)]),
+        q("Cianose",[opt("Ausente",0),opt("Com agitação",4),opt("Em repouso",5)]),
+        q("Estridor",[opt("Ausente",0),opt("Com agitação",1),opt("Em repouso",2)]),
+        q("Entrada de ar",[opt("Normal",0),opt("Reduzida",1),opt("Muito reduzida",2)]),
+        q("Retrações",[opt("Ausentes",0),opt("Leves",1),opt("Moderadas",2),opt("Graves",3)])
+      ],
+      interpret:n=>n<=2?"Westley 0–2: crupe leve.":n<=5?"Westley 3–5: crupe moderado.":n<=11?"Westley 6–11: crupe grave; avaliação urgente.":"Westley ≥12: risco de insuficiência respiratória iminente; emergência.",
+      reference:"Westley CR et al. Am J Dis Child. 1978;132:484–487."},
+    {id:"pas",name:"PAS — apendicite pediátrica",category:"Pediatria",aliases:"Pediatric Appendicitis Score apendicite criança",
+      desc:"Risco clínico em criança com suspeita de apendicite; não substitui imagem e reavaliação.",tags:["Pediatria","Cirurgia"],
+      questions:[
+        q("Migração da dor para FID",yesno()),q("Anorexia",yesno()),q("Náuseas ou vômitos",yesno()),q("Febre",yesno()),
+        q("Dor na FID à palpação",[opt("Não",0),opt("Sim",2)]),
+        q("Dor ao tossir/percutir/saltar",[opt("Não",0),opt("Sim",2)]),
+        q("Leucocitose",yesno()),q("Neutrofilia",yesno())
+      ],
+      interpret:n=>n<=2?"PAS 0–2: menor risco, reavaliar clinicamente.":n<=6?"PAS 3–6: risco intermediário; observação/investigação conforme protocolo.":"PAS 7–10: alto risco clínico; avaliação cirúrgica e exames conforme contexto.",
+      reference:"Samuel M. J Pediatr Surg. 2002;37:877–881."},
+    {id:"rotterdam",name:"Rotterdam — critérios de SOP",category:"Ginecologia",aliases:"ovários policísticos hiperandrogenismo oligoanovulação",
+      desc:"Em adultos, dois dos três critérios após exclusão de outras causas.",tags:["GO","Ambulatório"],
+      questions:[q("Oligo/anovulação",yesno()),q("Hiperandrogenismo clínico ou bioquímico",yesno()),q("Morfologia ovariana policística ou marcador aceito pela diretriz aplicável",yesno())],
+      interpret:n=>n>=2?"Dois ou mais critérios presentes. Compatível com SOP em adulta APÓS excluir causas alternativas; critérios de adolescentes diferem.":"Critérios insuficientes no modelo de Rotterdam; investigar conforme quadro.",
+      reference:"ESHRE/ASRM Rotterdam 2003; International Evidence-based Guideline for PCOS 2023."},
+    {id:"phq9",name:"PHQ-9",category:"Psiquiatria",aliases:"depressão rastreio sintomas humor",
+      desc:"Sintomas depressivos nas últimas duas semanas. Item 9 positivo exige avaliação de segurança.",tags:["APS","Saúde mental"],
+      questions:["Pouco interesse ou prazer","Sentir-se deprimido(a) ou sem esperança","Dificuldade para dormir ou dormir demais","Cansaço e pouca energia","Apetite alterado","Sentir-se mal consigo/fracasso","Dificuldade de concentração","Lentidão ou agitação psicomotora","Pensamentos de morte ou de se ferir"].map((label,i)=>q((i+1)+". "+label,[opt("Nunca",0),opt("Vários dias",1),opt("Mais da metade dos dias",2),opt("Quase todos os dias",3)],i===8?"QUALQUER resposta positiva neste item requer avaliação clínica de risco, independentemente do total.":"")),
+      interpret:n=>"PHQ-9 "+n+"/27. "+(n<=4?"Sintomas mínimos.":n<=9?"Sintomas leves.":n<=14?"Sintomas moderados.":n<=19?"Sintomas moderadamente graves.":"Sintomas graves.")+" Não diagnostica depressão. Verificar resposta ao item 9 e segurança do paciente.",
+      reference:"Kroenke K, Spitzer RL, Williams JB. J Gen Intern Med. 2001;16:606–613."},
+    {id:"gad7",name:"GAD-7",category:"Psiquiatria",aliases:"ansiedade generalizada rastreio",
+      desc:"Frequência de sintomas ansiosos nas últimas duas semanas.",tags:["APS","Saúde mental"],
+      questions:["Nervosismo ou ansiedade","Não conseguir parar de se preocupar","Preocupações excessivas","Dificuldade para relaxar","Inquietação","Irritabilidade","Medo de algo terrível acontecer"].map((label,i)=>q((i+1)+". "+label,[opt("Nunca",0),opt("Vários dias",1),opt("Mais da metade dos dias",2),opt("Quase todos os dias",3)])),
+      interpret:n=>"GAD-7 "+n+"/21. "+(n<5?"Sintomas mínimos.":n<10?"Sintomas leves.":n<15?"Sintomas moderados.":"Sintomas graves.")+" Triagem; confirmar diagnóstico e impacto funcional.",
+      reference:"Spitzer RL et al. Arch Intern Med. 2006;166:1092–1097."},
+    {id:"audit",name:"AUDIT — álcool",category:"Psiquiatria/Toxicologia",aliases:"álcool consumo de risco OMS",
+      desc:"Instrumento de rastreio de consumo problemático de álcool (10 questões).",tags:["APS","Álcool"],
+      questions:[
+        q("Frequência de uso",[opt("Nunca",0),opt("Mensal ou menos",1),opt("2–4 vezes/mês",2),opt("2–3 vezes/semana",3),opt("≥4 vezes/semana",4)]),
+        q("Doses numa ocasião típica",[opt("1–2",0),opt("3–4",1),opt("5–6",2),opt("7–9",3),opt("≥10",4)]),
+        ...["Seis ou mais doses em uma ocasião","Não conseguir parar após começar","Deixar compromissos por beber","Precisar beber ao acordar","Sentir culpa/remorso","Não lembrar da noite anterior"].map(t=>q(t,[opt("Nunca",0),opt("Menos de mensal",1),opt("Mensal",2),opt("Semanal",3),opt("Diário ou quase",4)])),
+        q("Ferimento seu ou de outra pessoa relacionado a beber",[opt("Não",0),opt("Sim, mas não no último ano",2),opt("Sim, no último ano",4)]),
+        q("Outros já se preocuparam ou sugeriram reduzir consumo",[opt("Não",0),opt("Sim, mas não no último ano",2),opt("Sim, no último ano",4)])
+      ],
+      interpret:n=>n<=7?"AUDIT 0–7: risco mais baixo na faixa clássica de adultos (avaliar grupo populacional).":n<=15?"AUDIT 8–15: consumo de risco; aconselhamento e avaliação.":n<=19?"AUDIT 16–19: risco elevado; intervenção breve e avaliação.":"AUDIT ≥20: possível dependência/transtorno; encaminhar para avaliação específica.",
+      reference:"WHO. AUDIT — Guidelines for Use in Primary Care (2001)."},
+    {id:"barthel",name:"Índice de Barthel",category:"Geriatria",aliases:"AVD independência reabilitação",
+      desc:"Capacidade funcional em dez atividades básicas.",tags:["Geriatria","Reabilitação"],
+      questions:[
+        q("Alimentação",[opt("Dependente",0),opt("Precisa de ajuda",5),opt("Independente",10)]),
+        q("Banho",[opt("Dependente",0),opt("Independente",5)]),
+        q("Higiene pessoal",[opt("Dependente",0),opt("Independente",5)]),
+        q("Vestir-se",[opt("Dependente",0),opt("Precisa de ajuda",5),opt("Independente",10)]),
+        q("Controle intestinal",[opt("Incontinente",0),opt("Acidente ocasional",5),opt("Continente",10)]),
+        q("Controle vesical",[opt("Incontinente",0),opt("Acidente ocasional",5),opt("Continente",10)]),
+        q("Uso de sanitário",[opt("Dependente",0),opt("Precisa de ajuda",5),opt("Independente",10)]),
+        q("Transferência",[opt("Incapaz",0),opt("Grande ajuda",5),opt("Pequena ajuda",10),opt("Independente",15)]),
+        q("Mobilidade em superfície plana",[opt("Imóvel",0),opt("Cadeira de rodas independente",5),opt("Caminha com ajuda",10),opt("Independente",15)]),
+        q("Escadas",[opt("Incapaz",0),opt("Precisa de ajuda",5),opt("Independente",10)])
+      ],
+      interpret:n=>"Barthel "+n+"/100. Quanto maior a pontuação, maior a independência em atividades básicas. Confirmar versão utilizada.",
+      reference:"Mahoney FI, Barthel DW. Md State Med J. 1965;14:61–65."},
+    {id:"katz",name:"Katz — atividades básicas (ABVD)",category:"Geriatria",aliases:"AVD idosos dependência",
+      desc:"Independência em seis atividades básicas.",tags:["Geriatria","APS"],
+      questions:["Banho","Vestir-se","Ir ao banheiro","Transferir-se","Continência","Alimentar-se"].map(t=>q(t,[opt("Dependente",0),opt("Independente",1)])),
+      interpret:n=>"Katz "+n+"/6 atividades independentes (versão contagem). A codificação alfabética tradicional usa outra notação.",
+      reference:"Katz S et al. JAMA. 1963;185:914–919."},
+    {id:"lawton",name:"Lawton–Brody — atividades instrumentais",category:"Geriatria",aliases:"AIVD funcional idosos",
+      desc:"Versão de 8 itens com independência em atividades instrumentais.",tags:["Geriatria","APS"],
+      questions:["Telefone","Compras","Preparo de alimentos","Tarefas domésticas","Lavanderia","Transporte","Medicações","Finanças"].map(t=>q(t,[opt("Dependente",0),opt("Independente",1)])),
+      interpret:n=>"Lawton–Brody "+n+"/8. A literatura usa variantes de pontuação: registrar a versão na evolução.",
+      reference:"Lawton MP, Brody EM. Gerontologist. 1969;9:179–186."},
+    {id:"cfs",name:"Clinical Frailty Scale (CFS)",category:"Geriatria",aliases:"fragilidade idoso vulnerabilidade",
+      desc:"Classificação clínica de fragilidade; avaliar funcionalidade basal e faixa de validação.",tags:["Geriatria","Enfermaria"],
+      questions:[q("Estado basal",[opt("1 — muito ativo",1),opt("2 — bem",2),opt("3 — bem com condições tratadas",3),opt("4 — vulnerável",4),opt("5 — fragilidade leve",5),opt("6 — moderada",6),opt("7 — grave",7),opt("8 — muito grave",8),opt("9 — terminal",9)])],
+      interpret:n=>"CFS "+n+"/9. Requer avaliação basal, e não incapacidade transitória durante evento agudo.",
+      reference:"Rockwood K et al. CMAJ. 2005;173:489–495."},
+    {id:"minicog",name:"Mini-Cog",category:"Geriatria",aliases:"triagem cognitiva memória relógio",
+      desc:"Triagem breve de comprometimento cognitivo; aplicação exige teste real.",tags:["Geriatria","APS"],
+      questions:[
+        q("Palavras lembradas após distração",[opt("0",0),opt("1",1),opt("2",2),opt("3",3)]),
+        q("Desenho do relógio",[opt("Alterado",0),opt("Normal",2)])
+      ],
+      interpret:n=>n<=2?"Mini-Cog 0–2/5: triagem positiva para possível comprometimento; investigar.":"Mini-Cog 3–5/5: menor probabilidade de comprometimento, mas não exclui; interpretar clinicamente.",
+      reference:"Borson S et al. Int J Geriatr Psychiatry. 2000;15:1021–1027."},
+    {id:"hurley",name:"Hurley — hidradenite supurativa",category:"Dermatologia",aliases:"hidradenite abscesso túneis",
+      desc:"Estadiamento clínico da hidradenite supurativa.",tags:["Dermato","Ambulatório"],
+      questions:[q("Lesões",[opt("I — abscessos, sem túneis ou cicatrizes",1),opt("II — túneis/cicatrizes separados com lesões recorrentes",2),opt("III — comprometimento difuso ou túneis interligados",3)])],
+      interpret:n=>"Hurley estágio "+(["","I","II","III"][n])+". Classificação anatômica; complementar com atividade da doença.",
+      reference:"Hurley HJ. Dermatologic Surgery. 1989."}
+  ];
+  for (const item of expandedScoreDefs) if (!scores.some(s=>s.id===item.id)) scores.push(item);
+
+  // Exibir o catálogo completo, inclusive escalas complementares de uso ambulatorial.
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
   const favKey = "luria:scores:favorites";
   const recentKey = "luria:scores:recent";
