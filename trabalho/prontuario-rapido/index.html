@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/quick-chart-manager.css?v=7-notebook">
   <link rel="stylesheet" href="/assets/css/quick-chart-ocr.css?v=1">
+  <link rel="stylesheet" href="/assets/css/quick-chart-daily-code.css?v=1">
 <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
 <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
 
@@ -91,17 +92,19 @@
             <button id="quick-chart-save-note" class="primary" type="button">Salvar</button>
           </div>
 
-          <details class="temp-note-access">
-            <summary>Configurar acesso temporário</summary>
-            <div class="temp-note-access-grid">
-              <p>Use seu nome de usuário da LURIA e um PIN de 4 dígitos para abrir este caderno fora da conta.</p>
-              <div id="quick-chart-pin-setup" class="quick-chart-pin-setup">
-                <input id="quick-chart-pin" type="text" inputmode="numeric" maxlength="4" autocomplete="one-time-code" data-lpignore="true" data-1p-ignore="true" name="luria-access-code" placeholder="PIN">
-                <input id="quick-chart-pin-confirm" type="text" inputmode="numeric" maxlength="4" autocomplete="one-time-code" data-lpignore="true" data-1p-ignore="true" name="luria-access-code-confirm" placeholder="Confirmar PIN">
-                <button id="quick-chart-save-pin" type="button">Salvar PIN</button>
-              </div>
+          <section class="quick-chart-daily-access" aria-label="Acesso diário do computador">
+            <div>
+              <span class="temp-note-kicker">Acesso sem login no computador</span>
+              <strong>Código de hoje</strong>
+              <p>O código muda automaticamente à meia-noite (horário de Brasília). Use seu nome de usuário e o código atual no acesso restrito.</p>
             </div>
-          </details>
+            <div class="quick-chart-daily-code">
+              <output id="quick-chart-daily-code" aria-live="polite">••••••</output>
+              <span id="quick-chart-daily-day">Consultando código…</span>
+              <button id="quick-chart-copy-daily-code" type="button">Copiar código</button>
+            </div>
+            <p id="quick-chart-daily-status" role="status" aria-live="polite"></p>
+          </section>
         </section>
       </div>
     </main>
@@ -111,7 +114,8 @@
 <script src="/assets/js/supabase.js"></script>
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script src="/assets/js/clinical-bridge.js?v=1"></script>
-<script src="/assets/js/quick-chart-manager.js?v=8-clinical-integration"></script>
+<script src="/assets/js/quick-chart-manager.js?v=9-daily"></script>
+<script src="/assets/js/quick-chart-daily-code.js?v=1"></script>
 <script src="/assets/js/luria-lazy-vendors.js?v=20261024"></script>
 <script src="/assets/js/quick-chart-ocr.js?v=1"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>

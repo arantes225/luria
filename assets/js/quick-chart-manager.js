@@ -30,33 +30,6 @@
     }else expiry.textContent="Nenhum conteúdo ativo";
   }
 
-  async function savePinHere(){
-    const button=document.getElementById("quick-chart-save-pin");
-    const pin=String(document.getElementById("quick-chart-pin")?.value||"").replace(/\D/g,"");
-    const confirmPin=String(document.getElementById("quick-chart-pin-confirm")?.value||"").replace(/\D/g,"");
-    if(!username){setStatus("Defina primeiro seu nome de usuário em Perfil e Conta.");return;}
-    if(!/^\d{4}$/.test(pin)){setStatus("O PIN precisa ter 4 dígitos.");return;}
-    if(pin!==confirmPin){setStatus("Os PINs não coincidem.");return;}
-    const owner=user?.id,version=generation;
-    if(!current(owner,version))return;
-    const {data:sessionData}=await sb.auth.getSession();
-    if(!current(owner,version))return;
-    const token=sessionData?.session?.access_token;
-    if(!token){setStatus("Sua sessão expirou. Entre novamente.");return;}
-    button.disabled=true;setStatus("Salvando PIN…");
-    try{
-      const response=await fetch(ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json","apikey":APIKEY,"Authorization":"Bearer "+token},body:JSON.stringify({action:"set_pin",pin})});
-      const data=await response.json().catch(()=>({}));
-      if(!response.ok) throw new Error(data.error||"Não foi possível salvar o PIN.");
-      if(!current(owner,version))return;
-      document.getElementById("quick-chart-pin").value="";
-      document.getElementById("quick-chart-pin-confirm").value="";
-      portal={...(portal||{}),pin_configured_at:new Date().toISOString(),access_slug:username};
-      setStatus("PIN salvo.");
-    }catch(error){if(current(owner,version))setStatus(error?.message||"Não foi possível salvar o PIN.");}
-    finally{button.disabled=false;}
-  }
-
   async function load(){
     if(!user)return;
     const owner=user.id,version=generation;
@@ -117,10 +90,6 @@
     }).catch(error=>{if(current(owner,version)){if(!note.value)note.value=previous;setStatus("Não foi possível limpar.");console.error(error);}});
   }
 
-  document.getElementById("quick-chart-save-pin")?.addEventListener("click",savePinHere);
-  ["quick-chart-pin","quick-chart-pin-confirm"].forEach(id=>{
-    document.getElementById(id)?.addEventListener("input",e=>{e.currentTarget.value=e.currentTarget.value.replace(/\D/g,"").slice(0,4)});
-  });
   document.getElementById("quick-chart-copy-address")?.addEventListener("click",async()=>{
     if(!username){setStatus("Defina seu nome de usuário primeiro.");return;}
     const url=publicAddress();
@@ -142,7 +111,6 @@
   }
   window.addEventListener("luria:owner-changed",()=>{
     generation++;loading=true;user=null;portal=null;username="";note.value="";
-    ["quick-chart-pin","quick-chart-pin-confirm"].forEach(id=>{const el=document.getElementById(id);if(el)el.value="";});
     renderAddress();renderExpiry();setStatus(owned.ownerId?"Carregando…":"Entre na sua conta.");
     if(owned.ownerId)init();
   });

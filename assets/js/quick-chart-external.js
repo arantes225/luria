@@ -13,7 +13,7 @@
   const saveState=document.getElementById("external-save-state");
   const routeHash=new URLSearchParams(location.hash.replace(/^#/,""));
   let username=normalizeUsername(routeHash.get("u")||"");
-  let pin="";
+  let code="";
   let saveTimer=null;
   let loading=true;
   let lastSerialized="";
@@ -29,14 +29,14 @@
   const fill=(content={})=>fields().forEach(el=>{el.value=String(content?.[el.dataset.chartField]||"")});
   const serialized=()=>JSON.stringify(read());
 
-  async function call(body,credentials={username,pin}){
+  async function call(body,credentials={username,code}){
     const res=await fetch(ENDPOINT,{
       method:"POST",
       headers:{"Content-Type":"application/json","apikey":APIKEY},
       body:JSON.stringify({...credentials,...body})
     });
     const data=await res.json().catch(()=>({}));
-    if(!res.ok) throw new Error(data.error||"Não foi possível acessar o caderno.");
+    if(!res.ok){const error=new Error(data.error||"Não foi possível acessar o caderno.");error.status=res.status;throw error;}
     return data;
   }
 
@@ -49,7 +49,7 @@
 
   async function openPortal(){
     username=normalizeUsername(usernameInput.value||username);
-    pin=String(pinInput.value||"").replace(/\D/g,"").slice(0,4);
+    code=String(pinInput.value||"").replace(/\D/g,"").slice(0,6);
     gateError.hidden=true;
 
     if(!/^[a-z0-9][a-z0-9._-]{2,29}$/.test(username)){
@@ -57,8 +57,8 @@
       gateError.hidden=false;
       return;
     }
-    if(!/^\d{4}$/.test(pin)){
-      gateError.textContent="Digite seu PIN de 4 dígitos.";
+    if(!/^\d{6}$/.test(code)){
+      gateError.textContent="Digite o código diário de 6 dígitos.";
       gateError.hidden=false;
       return;
     }
@@ -68,7 +68,7 @@
     enterBtn.textContent="Abrindo…";
     try{
       clearTimeout(saveTimer);
-      const credentials={username,pin};
+      const credentials={username,code};
       const data=await enqueue(()=>version===generation?call({action:"load"},credentials):null);
       if(version!==generation)return;
       fill(data.chart.content||{});
@@ -83,16 +83,16 @@
       history.replaceState(null,"","/trabalho/prontuario/");
       fields().forEach(el=>el.addEventListener("input",queueSave));
     }catch(e){
-      if(version===generation){pin="";gateError.textContent=e.message;gateError.hidden=false;}
+      if(version===generation){code="";gateError.textContent=e.message;gateError.hidden=false;}
     }finally{
       if(version===generation){enterBtn.disabled=false;enterBtn.textContent="Abrir caderno";}
     }
   }
 
   async function save(){
-    if(loading||!username||!pin) return;
+    if(loading||!username||!code) return;
     clearTimeout(saveTimer);
-    const version=generation,credentials={username,pin},content=read();
+    const version=generation,credentials={username,code},content=read();
     const now=serialized();
     return enqueue(async()=>{
       if(version!==generation)return;
@@ -107,7 +107,12 @@
         saveState.textContent=current?"Salvo agora":"Alterações pendentes";
         status.textContent=current?"Sincronizado":"Sem sincronizar";
       }catch(e){
-        if(version===generation){saveState.textContent="Falha ao salvar";status.textContent="Sem sincronizar";}
+        if(version===generation){
+          saveState.textContent="Falha ao salvar";
+          status.textContent=e.status===401
+            ?"Código diário expirado. Copie seu texto e abra novamente com o código de hoje."
+            :"Sem sincronizar";
+        }
       }
     });
   }
@@ -119,10 +124,10 @@
   }
 
   async function clearAll(){
-    if(!username||!pin) return;
+    if(!username||!code) return;
     if(!confirm("Limpar todo o conteúdo deste caderno temporário?")) return;
     clearTimeout(saveTimer);
-    const version=++generation,credentials={username,pin},previous=read();
+    const version=++generation,credentials={username,code},previous=read();
     fill({});const empty=serialized();
     saveState.textContent="Limpando…";
     return enqueue(async()=>{
@@ -134,7 +139,11 @@
         updateExpiry(null);
         saveState.textContent=serialized()===empty?"Conteúdo limpo":"Alterações pendentes";
       }catch(e){
-        if(version===generation){if(serialized()===empty)fill(previous);saveState.textContent="Não foi possível limpar";}
+        if(version===generation){
+          if(serialized()===empty)fill(previous);
+          saveState.textContent="Não foi possível limpar";
+          if(e.status===401) status.textContent="Código diário expirado. Reabra com o código de hoje.";
+        }
       }
     });
   }
@@ -142,8 +151,22 @@
   enterBtn.addEventListener("click",openPortal);
   usernameInput.addEventListener("input",()=>{usernameInput.value=normalizeUsername(usernameInput.value)});
   usernameInput.addEventListener("keydown",e=>{if(e.key==="Enter")pinInput.focus()});
-  pinInput.addEventListener("input",()=>{pinInput.value=pinInput.value.replace(/\D/g,"").slice(0,4)});
+  pinInput.addEventListener("input",()=>{pinInput.value=pinInput.value.replace(/\D/g,"").slice(0,6)});
   pinInput.addEventListener("keydown",e=>{if(e.key==="Enter")openPortal()});
+  document.getElementById("external-renew")?.addEventListener("click",()=>{
+    if(serialized()!==lastSerialized &&
+       !confirm("Há alterações não salvas. Copie seu texto antes de trocar o código para não perdê-lo. Continuar?")) return;
+    clearTimeout(saveTimer);
+    generation++;
+    code="";
+    loading=true;
+    editor.hidden=true;
+    gate.hidden=false;
+    status.textContent="Digite o código atualizado.";
+    gateError.hidden=true;
+    pinInput.value="";
+    pinInput.focus();
+  });
   document.getElementById("external-save").addEventListener("click",save);
   document.getElementById("external-clear").addEventListener("click",clearAll);
 
