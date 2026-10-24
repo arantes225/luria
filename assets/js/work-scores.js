@@ -176,9 +176,9 @@
     {
       id:"padua",name:"Padua",category:"Tromboembolismo",aliases:"TEV profilaxia paciente clínico",desc:"Risco de tromboembolismo venoso em pacientes clínicos hospitalizados.",tags:["Enfermaria","TEV"],
       questions:[
-        q("Câncer ativo",yesno(3)),q("TEV prévio",yesno(3)),q("Mobilidade reduzida",yesno(3)),q("Trombofilia conhecida",yesno(3)),
+        q("Câncer ativo",yesno(3)),q("TEV prévio",yesno(3)),q("Mobilidade reduzida com previsão de repouso ≥3 dias",yesno(3)),q("Trombofilia conhecida",yesno(3)),
         q("Trauma/cirurgia recente",yesno(2)),q("Idade ≥70 anos",yesno()),q("Insuficiência cardíaca/respiratória",yesno()),
-        q("IAM ou AVC isquêmico agudo",yesno()),q("Infecção aguda/doença reumatológica",yesno()),q("Obesidade (IMC ≥30)",yesno()),q("Tratamento hormonal",yesno())
+        q("IAM ou AVC isquêmico agudo",yesno()),q("Infecção aguda/doença reumatológica",yesno()),q("Obesidade (IMC ≥30)",yesno()),q("Tratamento hormonal estrogênico",yesno())
       ],
       interpret:(n)=>n>=4?"≥4: alto risco de TEV pelo Padua.":"<4: baixo risco de TEV pelo Padua.",
       reference:"Barbar S et al. J Thromb Haemost. 2010;8:2450–2457."
@@ -225,7 +225,7 @@
     },
     {
       id:"stopbang",name:"STOP-BANG",category:"Respiratório",aliases:"apneia sono ronco",desc:"Rastreia risco de apneia obstrutiva do sono.",tags:["Sono","Pré-op"],
-      questions:[q("Ronco alto",yesno()),q("Cansaço/sonolência diurna",yesno()),q("Apneia observada",yesno()),q("Hipertensão",yesno()),q("IMC >35 kg/m²",yesno()),q("Idade >50 anos",yesno()),q("Circunferência cervical >40 cm",yesno()),q("Sexo masculino",yesno())],
+      questions:[q("Ronco alto",yesno()),q("Cansaço/sonolência diurna",yesno()),q("Apneia observada",yesno()),q("Hipertensão",yesno()),q("IMC >35 kg/m² (não ≥35)",yesno()),q("Idade >50 anos",yesno()),q("Circunferência cervical >40 cm",yesno()),q("Sexo masculino",yesno())],
       interpret:sumInterpret([[0,2,"Baixo risco pelo STOP-BANG"],[3,4,"Risco intermediário"],[5,8,"Alto risco"]]),
       reference:"Chung F et al. Anesthesiology. 2008;108:812–821."
     },
@@ -247,7 +247,7 @@
       id:"rcri",name:"RCRI (Lee)",category:"Cardiologia",aliases:"risco cardíaco perioperatório cirurgia lee",desc:"Estimativa de risco cardíaco em cirurgia não cardíaca.",tags:["Pré-op","Cirurgia"],
       questions:[
         q("Cirurgia de alto risco",yesno()),q("Doença cardíaca isquêmica",yesno()),q("Insuficiência cardíaca",yesno()),
-        q("Doença cerebrovascular",yesno()),q("Diabetes em uso de insulina",yesno()),q("Creatinina >2,0 mg/dL",yesno())
+        q("Doença cerebrovascular",yesno()),q("Diabetes em uso de insulina",yesno()),q("Creatinina ≥2,0 mg/dL",yesno())
       ],
       interpret:(n)=>n===0?"RCRI 0: nenhum preditor clínico do índice; menor estrato de risco pelo RCRI.":n===1?"RCRI 1: um preditor clínico; risco perioperatório acima do grupo sem fatores.":n===2?"RCRI 2: dois preditores clínicos; risco perioperatório aumentado.":"RCRI ≥3: maior estrato de risco pelo RCRI; integrar tipo de cirurgia, capacidade funcional e avaliação cardiovascular perioperatória.",
       reference:"Lee TH et al. Circulation. 1999;100:1043–1049. Diretriz SBC de Avaliação Cardiovascular Perioperatória 2024."
@@ -400,7 +400,7 @@
       desc:"Probabilidade clínica pré-teste de TEP.",tags:["PS","TEP"],
       questions:[
         q("Idade >65 anos",yesno()),q("TVP ou TEP anterior",[opt("Não",0),opt("Sim",3)]),
-        q("Cirurgia ou fratura no último mês",[opt("Não",0),opt("Sim",2)]),
+        q("Cirurgia com anestesia geral ou fratura de membro inferior no último mês",[opt("Não",0),opt("Sim",2)]),
         q("Câncer ativo",[opt("Não",0),opt("Sim",2)]),
         q("Dor unilateral em membro inferior",[opt("Não",0),opt("Sim",3)]),
         q("Hemoptise",[opt("Não",0),opt("Sim",2)]),
@@ -596,6 +596,120 @@
     if (!scores.some(x=>x.id===id)) scores.push({id,name,category,desc,aliases:name,reference,custom:"reference",tags:["Referência"]});
   }
 
+
+  /* Auditoria clínica 4/6 — scores 20–49. Não altera catálogo restante.
+   * Fontes: MS/PCDT, sociedades, originais, AHA/ACC 2024, Caprini RAM 2013.
+   */
+  const auditBatch4Ids=[
+    "padua","apfel","bishop","apgar","mascc","stopbang","grace","timi_ua","rcri","cha2ds2va",
+    "crb65","psi","ichscore","hunthess","mfisher","caprini","ciwaar","rts","hints","cage",
+    "fagerstrom","framingham","centor","sirs","nyha","geneva","fourts","mmrc","bode","asa"
+  ];
+  if(JSON.stringify(scores.slice(19,49).map(x=>x.id))!==JSON.stringify(auditBatch4Ids))
+    throw Error("Auditoria 4: alteração inesperada na ordem dos escores");
+  const getScore=id=>{const v=scores.find(x=>x.id===id);if(!v)throw Error("Score ausente: "+id);return v;};
+  const batch4Notes={
+    padua:"Uso em pacientes clínicos hospitalizados; estimativa de TEV não substitui avaliação de contraindicações e risco hemorrágico.",
+    apfel:"Quatro fatores de risco de náusea e vômito pós-operatório; depende de anestesia e perfil do paciente.",
+    bishop:"A avaliação cervical tem variabilidade interobservador. Bishop favorável não é indicação automática de indução.",
+    apgar:"Registrar tempo da avaliação (1, 5 e, quando indicado, 10 minutos). Reanimação neonatal não deve esperar pontuação.",
+    mascc:"MASCC ≥21 não garante manejo ambulatorial; febre neutropênica exige avaliação e antimicrobiano oportuno.",
+    stopbang:"Rastreio de AOS, não diagnóstico; não usar resultado isolado para excluir apneia clinicamente suspeita.",
+    grace:"Implementação por faixas do GRACE clássico; confirmar escore/riscos com fonte validada antes de decisões invasivas.",
+    timi_ua:"TIMI em SCA sem supra; risco de eventos é de população de derivação e não substitui ECG/troponinas seriadas.",
+    rcri:"RCRI clássico tem 6 critérios, incluindo creatinina ≥2,0 mg/dL. Não equivale a probabilidade individual exata.",
+    cha2ds2va:"Avaliar CHA₂DS₂-VA em FA, risco hemorrágico e contraindicações. Escores não prescrevem anticoagulação.",
+    crb65:"CRB-65 sem ureia pode auxiliar quando não há laboratório, mas não exclui critérios de internação por hipoxemia.",
+    psi:"PSI calcula pontuação numérica para classes II–V; classe I depende de algoritmo clínico à parte.",
+    ichscore:"ICH Score prognóstico em hemorragia espontânea. Não usar para limitar suporte, prognóstico individual ou decisões de fim de vida.",
+    hunthess:"Hunt–Hess avalia gravidade na HSA; avaliar condições após estabilização e contexto de sedação.",
+    mfisher:"Fisher modificada é graduação radiológica da HSA, não diagnóstico independente de vasoespasmo.",
+    caprini:"Caprini RAM 2013: idade e procedimento são mutuamente exclusivos por categoria; conferir todos os fatores na ficha e avaliar contraindicações de profilaxia.",
+    ciwaar:"CIWA-Ar depende de cooperação e relato; não utilizar em delirium significativo, pacientes intubados/não comunicativos ou outras condições não avaliáveis.",
+    rts:"RTS ponderado exige GCS, pressão sistólica e frequência respiratória e não define via aérea ou ressuscitação.",
+    hints:"HINTS apenas na síndrome vestibular aguda contínua COM nistagmo espontâneo e EXAMINADOR TREINADO.",
+    cage:"CAGE é rastreio de transtorno por uso de álcool e não mede consumo atual ou define diagnóstico.",
+    fagerstrom:"Fagerström avalia dependência de nicotina em fumantes de cigarro; não extrapolar para vapes sem instrumento validado.",
+    framingham:"Framingham 2008: avaliação de eventos cardiovasculares globais, não equivalente ao PREVENT ou SCORE2.",
+    centor:"McIsaac exige idade apropriada e avaliação de sintomas; não prescrever antibiótico apenas por pontuação.",
+    sirs:"SIRS é inflamação inespecífica; não diagnostica nem exclui sepse.",
+    nyha:"Classe funcional depende de história e limitações basais; combinar com ecocardiografia e exames.",
+    geneva:"Genebra revisado estima probabilidade pré-teste de TEP; não é teste diagnóstico e não classifica gestação automaticamente.",
+    fourts:"4Ts é pré-teste de HIT; queda plaquetária e exposição à heparina dependem de cronologia. Não manter heparina sem avaliação quando suspeita relevante.",
+    mmrc:"mMRC é dispneia crônica funcional, não diagnóstico de DPOC isolado.",
+    bode:"BODE exige IMC, VEF1 pós-broncodilatador, mMRC e distância percorrida em seis minutos; não usar para classificar exacerbação.",
+    asa:"ASA Physical Status classificação pré-anestésica, não preditor isolado de risco operatório."
+  };
+  for(const id of auditBatch4Ids){
+    const d=getScore(id);d.auditDate="2026-10-24";d.safetyNote=batch4Notes[id];
+    if(!d.reference||!d.safetyNote)throw Error("Auditoria incompleta: "+id);
+  }
+
+  // Caprini 2013: usa uma única faixa de idade e uma única categoria de procedimento
+  // (corrige somas impossíveis da versão anterior: 41–60 + 61–74 + ≥75 e
+  // cirurgia >45min + laparoscópica >45min).
+  const caprini=getScore("caprini");
+  caprini.questions=[
+    q("Idade",[
+      opt("≤40 anos",0),opt("41–60 anos",1),opt("61–74 anos",2),opt("≥75 anos",3)
+    ]),
+    q("Procedimento planejado (uma categoria principal)",[
+      opt("Sem cirurgia ou procedimento de baixo risco não incluído",0),
+      opt("Cirurgia menor <45 minutos",1),
+      opt("Cirurgia maior, inclusive laparoscópica/artroscópica >45 min",2),
+      opt("Artroplastia eletiva de quadril ou joelho",5)
+    ]),
+    q("Cirurgia maior nos últimos 30 dias (além da planejada)",yesno()),
+    q("IMC ≥25 kg/m²",yesno()),
+    q("Veias varicosas visíveis",yesno()),
+    q("Edema atual das pernas",yesno()),
+    q("Doença inflamatória intestinal",yesno()),
+    q("Infarto agudo de miocárdio recente",yesno()),
+    q("Insuficiência cardíaca congestiva recente",yesno()),
+    q("Infecção grave recente (inclui pneumonia)",yesno()),
+    q("Doença pulmonar preexistente",yesno()),
+    q("Repouso no leito ou mobilidade restrita <72 h",yesno()),
+    q("Contraceptivo oral ou terapia de reposição hormonal",yesno()),
+    q("Gravidez atual ou parto nas últimas quatro semanas",yesno()),
+    q("Natimorto sem explicação, ≥3 perdas gestacionais, prematuro associado a pré-eclâmpsia ou restrição de crescimento",yesno()),
+    q("IMC >40 kg/m² (fator adicional no RAM 2013)",yesno()),
+    q("Tabagismo ativo (fator adicional no RAM 2013)",yesno()),
+    q("Diabetes tratado com insulina",yesno()),
+    q("Quimioterapia recente",yesno()),
+    q("Transfusão sanguínea recente",yesno()),
+    q("Duração total prevista da cirurgia >2 h (fator adicional)",yesno()),
+    q("Neoplasia ativa ou prévia, exceto câncer cutâneo não melanoma",yesno(2)),
+    q("Imobilização gessada no último mês",yesno(2)),
+    q("Acesso venoso central no último mês",yesno(2)),
+    q("Repouso no leito ≥72 h",yesno(2)),
+    q("TVP/TEP pessoal prévio",yesno(3)),
+    q("História familiar de TVP/TEP",yesno(3)),
+    q("Trombofilia conhecida pessoal ou familiar",yesno(3)),
+    q("Fratura de quadril, pelve ou perna no último mês",yesno(5)),
+    q("Trauma grave/múltiplas fraturas recente",yesno(5)),
+    q("Paralisia por lesão medular aguda (<1 mês)",yesno(5)),
+    q("AVC com déficit neurológico recente (<1 mês)",yesno(5))
+  ];
+  caprini.reference="Caprini Risk Assessment Model (2013); Cronin MA et al. Clin Appl Thromb Hemost. 2019;25:1076029619838052; NCBI Bookshelf Caprini Score (2025).";
+  caprini.desc="Risco de TEV cirúrgico — versão estruturada do Caprini RAM 2013; conferir ficha e contexto institucional.";
+  caprini.interpret=n=>n===0?"Caprini 0: risco muito baixo; considerar procedimento e contexto.":n<=2?"Caprini 1–2: estrato baixo, condicionado ao procedimento.":n<=4?"Caprini 3–4: estrato moderado; definir profilaxia e risco hemorrágico por protocolo.":"Caprini ≥5: estrato elevado/alto; escolher prevenção segundo cirurgia, contraindicações e risco hemorrágico.";
+
+  // Avaliação neonatal: registrar explicitamente o instante de medição.
+  const apgar=getScore("apgar");
+  apgar.questions.push(q("Momento da aferição",[
+    opt("1 minuto de vida",0),opt("5 minutos de vida",0),opt("10 minutos de vida (se indicado)",0)
+  ]));
+  apgar.interpret=n=>n>=7?"Apgar "+n+"/10 (registrar o minuto selecionado). Resultados de 7–10 aos 5 min são usualmente tranquilizadores; NÃO atrasar reanimação aguardando escore.":n>=4?"Apgar "+n+"/10 (registrar o minuto selecionado). Resultado 4–6 aos 5 min é moderadamente anormal; observar e reavaliar.":"Apgar "+n+"/10 (registrar o minuto selecionado). Resultado 0–3 aos 5 min é baixo; não diagnostica asfixia ou prognóstico isoladamente.";
+
+  // CIWA-Ar: sem colaboração, não aplicar pontuação; outras escalas seriam necessárias.
+  getScore("ciwaar").questions.push(q("Paciente capaz de comunicar sintomas e cooperar com a escala?",[
+    opt("Sim, avaliável",0),opt("Não; delirium importante, intubação ou comunicação inviável",-999)
+  ]));
+
+  // Versões diferentes de escore e corte devem continuar com identificação explícita.
+  getScore("rcri").reference+="; ACC/AHA Perioperative Guideline 2024, tabela do RCRI.";
+  getScore("geneva").reference+="; Diretriz de TEP ACC/AHA 2026, tabela de probabilidade pré-teste.";
+
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
   const favKey = "luria:scores:favorites";
   const recentKey = "luria:scores:recent";
@@ -717,7 +831,7 @@
       $("#score-form").prepend(note);
     }
     $("#score-copy").onclick=()=>copyResult(s);
-    $("#score-reset").onclick=()=>{renderForm(s);};
+    $("#score-reset").onclick=()=>{renderForm(s);if(s.safetyNote){const p=document.createElement("p");p.className="score-warning";p.textContent="Limitações de uso: "+s.safetyNote;$("#score-form").prepend(p);}};
     d.showModal(); renderShelves();
   }
 
@@ -738,6 +852,9 @@
     if(vals.some(v=>v==="")){
       setResult("—",phqRisk?"Item 9 positivo: avaliar risco de suicídio/autolesão imediatamente, mesmo antes da pontuação total.":"Preencha todos os campos.","");
       return;
+    }
+    if(s.id==="ciwaar"&&vals[vals.length-1]==="-999"){
+      setResult("Não aplicável","CIWA-Ar não pode ser pontuada quando o paciente não consegue cooperar ou relatar sintomas.","Usar avaliação clínica e instrumento apropriado ao cenário.");return;
     }
     if(s.id==="perc"&&vals[vals.length-1]==="1"){
       setResult("Não aplicável","A probabilidade pré-teste de TEP não foi confirmada como baixa; PERC não pode excluir TEP.","Utilize algoritmo diagnóstico apropriado.");return;
@@ -768,6 +885,7 @@
       f.innerHTML=
         selectField("Quadro compatível com síndrome vestibular aguda contínua?","h_avs",[opt("Sim",1),opt("Não",0)])+
         selectField("Há nistagmo espontâneo em repouso?","h_nys",[opt("Sim",1),opt("Não",0)])+
+        selectField("O examinador tem treinamento específico em HINTS?","h_train",[opt("Sim",1),opt("Não",0)])+
         selectField("Head impulse horizontal","h_hit",[opt("Anormal, com sacada corretiva",0),opt("Normal, sem sacada corretiva",1)])+
         selectField("Nistagmo","h_ntype",[opt("Horizontal unidirecional",0),opt("Muda de direção com o olhar ou é vertical/torsional",1)])+
         selectField("Test of skew","h_skew",[opt("Sem desvio vertical",0),opt("Skew/desalinhamento vertical presente",1)]);
@@ -873,8 +991,9 @@
   }
 
   function calcHints(){
-    const ids=["h_avs","h_nys","h_hit","h_ntype","h_skew"];
+    const ids=["h_avs","h_nys","h_train","h_hit","h_ntype","h_skew"];
     if(!validateScoreInputs(ids)) return;
+    if(+$("#h_train").value!==1)return setResult("Não aplicável","HINTS exige examinador treinado; não há interpretação segura sem treinamento.","Não classificar padrão central/periférico por esta ferramenta.");
     if(+$("#h_avs").value!==1 || +$("#h_nys").value!==1){
       return setResult("Não aplicável","O HINTS não deve ser interpretado fora da síndrome vestibular aguda contínua com nistagmo espontâneo.","Use outro raciocínio diagnóstico para vertigem episódica, posicional ou sem nistagmo espontâneo.");
     }
