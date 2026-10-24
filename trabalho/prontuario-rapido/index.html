@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js https://cdn.jsdelivr.net/npm/tesseract.js@v5.1.1/dist/worker.min.js https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core.wasm.js https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core-simd.wasm.js https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core-lstm.wasm.js https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core-simd-lstm.wasm.js 'wasm-unsafe-eval'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core.wasm https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core-simd.wasm https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core-lstm.wasm https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core-simd-lstm.wasm https://cdn.jsdelivr.net/npm/@tesseract.js-data/eng/4.0.0/eng.traineddata.gz https://cdn.jsdelivr.net/npm/@tesseract.js-data/eng/4.0.0_best_int/eng.traineddata.gz https://cdn.jsdelivr.net/npm/@tesseract.js-data/por/4.0.0/por.traineddata.gz https://cdn.jsdelivr.net/npm/@tesseract.js-data/por/4.0.0_best_int/por.traineddata.gz; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/quick-chart-manager.css?v=7-notebook">
+  <link rel="stylesheet" href="/assets/css/quick-chart-ocr.css?v=1">
 <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
 <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
 
@@ -53,6 +54,33 @@
             </div>
           </div>
 
+          <section class="quick-chart-scan" aria-label="Extrator de texto">
+            <div class="quick-chart-scan-header">
+              <div><strong>Extrair texto</strong><span>Foto, captura de tela ou texto copiado · reconhecimento no celular</span></div>
+              <span class="quick-chart-scan-private">Imagem não enviada</span>
+            </div>
+            <div class="quick-chart-scan-actions">
+              <button id="quick-chart-camera" type="button">📷 Usar câmera</button>
+              <button id="quick-chart-gallery" type="button">▧ Selecionar imagem</button>
+              <button id="quick-chart-paste" type="button">Colar texto</button>
+              <input id="quick-chart-camera-input" type="file" accept="image/*" capture="environment" hidden aria-label="Fotografar documento">
+              <input id="quick-chart-gallery-input" type="file" accept="image/*" hidden aria-label="Selecionar imagem da galeria">
+            </div>
+            <div id="quick-chart-ocr-progress" class="quick-chart-ocr-progress" role="status" aria-live="polite" hidden>
+              <span id="quick-chart-ocr-progress-text">Preparando imagem…</span>
+              <button id="quick-chart-ocr-abort" type="button" hidden>Cancelar</button>
+            </div>
+            <div id="quick-chart-ocr-preview" class="quick-chart-ocr-preview" hidden>
+              <label for="quick-chart-ocr-text">Texto extraído — confira nomes, números, doses e unidades antes de usar</label>
+              <textarea id="quick-chart-ocr-text" rows="7" spellcheck="true" placeholder="Revise o texto reconhecido"></textarea>
+              <div class="quick-chart-ocr-controls">
+                <button id="quick-chart-ocr-insert" type="button">Adicionar ao caderno</button>
+                <button id="quick-chart-ocr-send" type="button">Adicionar e enviar ao computador</button>
+                <button id="quick-chart-ocr-discard" type="button">Descartar</button>
+              </div>
+            </div>
+          </section>
+
           <article class="temp-note-paper">
             <textarea id="quick-chart-note" spellcheck="true" autocomplete="off" placeholder="Comece a escrever..."></textarea>
           </article>
@@ -84,6 +112,8 @@
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script src="/assets/js/clinical-bridge.js?v=1"></script>
 <script src="/assets/js/quick-chart-manager.js?v=8-clinical-integration"></script>
+<script src="/assets/js/luria-lazy-vendors.js?v=20261024"></script>
+<script src="/assets/js/quick-chart-ocr.js?v=1"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>
