@@ -27,6 +27,7 @@
 
 
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
+  <link rel="stylesheet" href="/assets/css/work-ecg-validation.css?v=1">
 </head>
 <body data-page="trabalho_ecg" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
@@ -40,12 +41,30 @@
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
           <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
         </header>
-        <section class="work-tool-shell">
+        <section class="ecg-v" aria-label="Protótipo de interpretação assistida de ECG">
           <article class="work-tool-hero">
-            <h2>ECG</h2>
-            <p>Área de apoio à leitura e interpretação sistemática do eletrocardiograma.</p>
+            <h2>Interpretador de ECG</h2>
+            <p>Análise por derivação, comparação de leituras independentes e revisão de possíveis achados pelo médico.</p>
           </article>
-          <div class="work-tool-placeholder">Página preparada para frequência, ritmo, eixo, intervalos, bloqueios, isquemia e arritmias.</div>
+          <article class="ecg-v-card" aria-label="Estado do projeto">
+            <div class="ecg-v-head"><h3 class="ecg-v-title">Laboratório de validação</h3><strong>Não liberado para pacientes</strong></div>
+            <p class="ecg-v-note">Protótipo em desenvolvimento. O processamento de ECGs reais ficará indisponível até validação clínica, avaliação regulatória, proteção de dados e autorização contratual das APIs.</p>
+            <p class="ecg-v-warning">Não use esta página para orientar atendimento. Não envie nomes, dados identificáveis ou exames de pacientes. O exemplo abaixo é exclusivamente fictício.</p>
+          </article>
+          <article class="ecg-v-card">
+            <h3 class="ecg-v-title">Demonstração da revisão médica</h3>
+            <p class="ecg-v-note">Veja como será a confirmação, rejeição e reavaliação de possíveis achados por derivação. Este exemplo não usa IA nem analisa um eletrocardiograma.</p>
+            <div class="ecg-v-actions">
+              <button id="ecg-load-demo" class="ecg-v-primary" type="button">Abrir exemplo fictício</button>
+              <button id="ecg-reset-demo" type="button">Limpar demonstração</button>
+              <button type="button" disabled aria-label="Envio de ECG real indisponível">Enviar ECG real — indisponível</button>
+            </div>
+          </article>
+          <div id="ecg-demo-result" class="ecg-v" hidden aria-live="polite"></div>
+          <article class="ecg-v-card">
+            <h3 class="ecg-v-title">Arquitetura técnica em avaliação</h3>
+            <p class="ecg-v-note">Cloudflare R2 privado (biblioteca de referência) → GPT-6 Luna + Claude Haiku 5.5 independentes → comparação de possíveis achados → modelo mais forte quando solicitado em testes → revisão obrigatória. Meta financeira: R$ 0,05/ECG, sujeita à medição real de tokens, precisão e custos de processamento.</p>
+          </article>
         </section>
       </div>
     </main>
@@ -53,6 +72,7 @@
 <script src="/assets/vendor/supabase-2.110.6.js"></script>
 <script src="/assets/js/supabase.js"></script>
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
+<script defer src="/assets/js/work-ecg-validation.js?v=1"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>

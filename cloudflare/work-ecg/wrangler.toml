@@ -1,0 +1,27 @@
+name = "luria-ecg-validation"
+main = "index.mjs"
+compatibility_date = "2026-10-01"
+workers_dev = false
+
+# BENCHMARK ONLY: do not bind to production routes or enable for patient use.
+# Create this bucket manually and upload ONLY de-identified, licensed reference fixtures.
+[[r2_buckets]]
+binding = "ECG_BENCHMARK_R2"
+bucket_name = "luria-ecg-benchmarks"
+
+[[durable_objects.bindings]]
+name = "ECG_BENCHMARK_QUOTA"
+class_name = "EcgBenchmarkQuota"
+
+[[migrations]]
+tag = "ecg-budget-v1"
+new_sqlite_classes = ["EcgBenchmarkQuota"]
+
+[vars]
+ECG_VALIDATION_ENABLED = "false"
+ECG_ENABLE_ESCALATION = "false"
+ECG_BENCHMARK_DAILY_USD_LIMIT = "0"
+ECG_BENCHMARK_DAILY_MAX_REQUESTS = "0"
+ECG_ALLOWED_ORIGINS = "https://resibulando.online,https://www.resibulando.online"
+ECG_BENCHMARK_CASE_IDS = ""
+# Required secrets: OPENAI_API_KEY, ANTHROPIC_API_KEY, SUPABASE_URL, SUPABASE_ANON_KEY
