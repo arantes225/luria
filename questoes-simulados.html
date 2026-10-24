@@ -3114,28 +3114,37 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
 
 <script id="qs-lumina-enhancements">
 (() => {
+
+function debounce(func, wait) {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+}
+
   // Real-time search filter for Minhas Listas
   const listsSearch = document.getElementById("qs-home-lists-search");
   if (listsSearch) {
-    listsSearch.addEventListener("input", (e) => {
+    listsSearch.addEventListener("input", debounce((e) => {
       const q = e.target.value.toLowerCase().trim();
       document.querySelectorAll("#qs-home-my-lists-content .qs-home-user-card").forEach(card => {
         const text = card.textContent.toLowerCase();
         card.style.display = !q || text.includes(q) ? "" : "none";
       });
-    });
+    }, 250));
   }
 
   // Real-time search filter for Biblioteca
   const libSearch = document.getElementById("qs-library-search");
   if (libSearch) {
-    libSearch.addEventListener("input", (e) => {
+    libSearch.addEventListener("input", debounce((e) => {
       const q = e.target.value.toLowerCase().trim();
       document.querySelectorAll("#qs-library .qs-library-card").forEach(card => {
         const title = card.querySelector("h3")?.textContent?.toLowerCase() || "";
         card.style.display = !q || title.includes(q) ? "" : "none";
       });
-    });
+    }, 250));
   }
 
   // Presets for manual question counter

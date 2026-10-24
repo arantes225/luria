@@ -1,3 +1,11 @@
+
+function debounce(func, wait) {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+}
 const flashSb = window.supabaseClient;
 
 let flashUser = null;
@@ -7618,7 +7626,7 @@ function wireLibrary() {
     )
     ?.addEventListener(
       "input",
-      renderLibrary
+      debounce(renderLibrary, 250)
     );
 
 

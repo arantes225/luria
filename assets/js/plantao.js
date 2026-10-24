@@ -1,6 +1,15 @@
 (() => {
   "use strict";
 
+function debounce(func, wait) {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+}
+
+
   const E=window.PlantaoEngine;
   const sb = window.supabaseClient;
   if (!sb) return;
@@ -1264,10 +1273,10 @@
     state.phoneArea="";
     renderPhoneCases();
   });
-  $("plantao-phone-search")?.addEventListener("input",event=>{
+  $("plantao-phone-search")?.addEventListener("input",debounce(event=>{
     state.phoneSearch=event.currentTarget.value||"";
     renderPhoneCases();
-  });
+  }, 250));
   $("plantao-phone-area-filter")?.addEventListener("change",event=>{
     state.phoneArea=event.currentTarget.value||"";
     renderPhoneCases();
@@ -1432,10 +1441,10 @@
   });
 
 
-  $("plantao-case-search")?.addEventListener("input",event=>{
+  $("plantao-case-search")?.addEventListener("input",debounce(event=>{
     state.filters.query=event.currentTarget.value||"";
     renderLibrary();
-  });
+  }, 250));
 
   document.querySelector(".plantao-primary-switch-wrap")?.addEventListener("click",event=>{
     const button=event.target.closest("[data-case-library-view]");
@@ -5266,7 +5275,7 @@
   });
   $("plantao-disaster-finish")?.addEventListener("click",finishDisasterCase);
   $("plantao-action-close")?.addEventListener("click",closeActions);
-  $("plantao-action-search")?.addEventListener("input",renderActions);
+  $("plantao-action-search")?.addEventListener("input",debounce(renderActions, 150));
   $("plantao-pwa-patient-tab")?.addEventListener("click",openPatientSheet);
   $("plantao-patient-sheet-close")?.addEventListener("click",closePatientSheet);
   $("plantao-patient-sheet-ok")?.addEventListener("click",closePatientSheet);
