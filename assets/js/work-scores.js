@@ -550,6 +550,37 @@
   for (const item of expandedScoreDefs) if (!scores.some(s=>s.id===item.id)) scores.push(item);
 
   // Exibir o catálogo completo, inclusive escalas complementares de uso ambulatorial.
+
+  scores.push(
+    {id:"air",name:"AIR — Appendicitis Inflammatory Response",category:"Cirurgia",aliases:"apendicite diagnóstico inflamação",
+      desc:"Estratifica risco de apendicite em adultos; critérios laboratoriais e clínicos.",tags:["PS","Cirurgia"],
+      questions:[
+        q("Vômitos",yesno()),q("Dor em fossa ilíaca direita",yesno()),
+        q("Defesa muscular/dor à descompressão",[opt("Ausente",0),opt("Leve",1),opt("Moderada",2),opt("Intensa",3)]),
+        q("Temperatura ≥38,5 °C",yesno()),
+        q("Leucócitos (×10⁹/L)",[opt("<10",0),opt("10–14,9",1),opt("≥15",2)]),
+        q("Neutrófilos (%)",[opt("<70%",0),opt("70–84%",1),opt("≥85%",2)]),
+        q("PCR (mg/L)",[opt("<10",0),opt("10–49",1),opt("≥50",2)])
+      ],
+      interpret:n=>n<=4?"AIR 0–4: risco baixo; considerar reavaliação conforme quadro.":n<=8?"AIR 5–8: risco intermediário; investigação por protocolo.":"AIR 9–12: alto risco; avaliação cirúrgica prioritária.",
+      reference:"Andersson M, Andersson RE. World J Surg. 2008;32:1843–1849."},
+    {id:"sofa2",name:"SOFA-2 (2025)",category:"Emergência",aliases:"disfunção orgânica sepse terapia intensiva 2025",
+      desc:"Nova avaliação de seis sistemas; aplicar critérios de suporte e exceções do artigo original.",tags:["UTI","Sepse"],
+      questions:[
+        q("Neurológico",[opt("GCS 15",0),opt("GCS 13–14 ou fármaco para delirium",1),opt("GCS 9–12",2),opt("GCS 6–8",3),opt("GCS 3–5",4)]),
+        q("Respiratório",[opt("P/F >300",0),opt("P/F ≤300",1),opt("P/F ≤225",2),opt("P/F ≤150 com suporte ventilatório avançado",3),opt("P/F ≤75 com suporte avançado ou ECMO",4)]),
+        q("Cardiovascular",[opt("PAM ≥70 sem vasopressor/inotrópico",0),opt("PAM <70 sem drogas",1),opt("Noradrenalina + adrenalina ≤0,2 µg/kg/min ou outro vasopressor/inotrópico",2),opt("Noradrenalina + adrenalina >0,2 a ≤0,4; ou baixa dose associada",3),opt(">0,4 µg/kg/min; dose média associada ou suporte circulatório mecânico",4)]),
+        q("Hepático — bilirrubina total",[opt("≤1,2 mg/dL",0),opt(">1,2 a 3 mg/dL",1),opt(">3 a 6 mg/dL",2),opt(">6 a 12 mg/dL",3),opt(">12 mg/dL",4)]),
+        q("Renal — creatinina, diurese ou suporte",[opt("Cr ≤1,2 e sem oligúria relevante",0),opt("Cr >1,2 a 2 ou diurese <0,5 mL/kg/h por 6–12 h",1),opt("Cr >2 a 3,5 ou diurese <0,5 por ≥12 h",2),opt("Cr >3,5 ou oligúria <0,3 por ≥24 h ou anúria ≥12 h",3),opt("Necessidade/critérios de terapia substitutiva renal",4)]),
+        q("Hemostasia — plaquetas",[opt(">150 mil/µL",0),opt("≤150 mil/µL",1),opt("≤100 mil/µL",2),opt("≤80 mil/µL",3),opt("≤50 mil/µL",4)])
+      ],
+      interpret:n=>"SOFA-2: "+n+"/24. Maior pontuação representa maior disfunção orgânica. Uso assistencial requer leitura integral das regras originais, especialmente suporte avançado, componentes renais e sedação.",
+      reference:"JAMA 2025. Development and Validation of the Sequential Organ Failure Assessment (SOFA)-2 Score. doi/source: jama/fullarticle/2840822."},
+    {id:"ihs4",name:"IHS4 — hidradenite supurativa",category:"Dermatologia",aliases:"nodulos abscessos tuneis gravidade hidradenite",
+      desc:"Atividade de hidradenite por contagem de nódulos, abscessos e túneis drenantes.",tags:["Dermatologia","Ambulatório"],custom:"ihs4",
+      reference:"Zouboulis CC et al. Br J Dermatol. 2017. IHS4 = nódulos + 2×abscessos + 4×túneis."}
+  );
+
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
   const favKey = "luria:scores:favorites";
   const recentKey = "luria:scores:recent";
@@ -696,6 +727,11 @@
   function selectField(label,id,opts){return `<div class="score-field"><label for="${id}">${label}</label><select id="${id}"><option value="">Selecione…</option>${opts.map(o=>`<option value="${o.value}">${esc(o.text)}</option>`).join("")}</select></div>`;}
 
   const customRender={
+    ihs4(f){
+      f.innerHTML=field('Nódulos inflamatórios','ih_n','number','min="0" step="1"')+field('Abscessos','ih_a','number','min="0" step="1"')+field('Túneis drenantes','ih_t','number','min="0" step="1"');
+      $("input",f).forEach(el=>el.oninput=calcIHS4);
+      setResult('—','Preencha três contagens inteiras.','Ausência de lesão deve ser registrada como zero.');
+    },
     hints(f){
       f.innerHTML=
         selectField("Quadro compatível com síndrome vestibular aguda contínua?","h_avs",[opt("Sim",1),opt("Não",0)])+
@@ -906,6 +942,16 @@
     n += sbp<90?3:sbp<100?2:sbp<110?1:0;
     n += +$("#g_hr").value + +$("#g_mel").value + +$("#g_syn").value + +$("#g_liv").value + +$("#g_hf").value;
     setResult(String(n),n<=1?`Glasgow-Blatchford ${n}: risco muito baixo; diretrizes permitem considerar alta com seguimento ambulatorial se o paciente estiver clinicamente adequado.`:`Glasgow-Blatchford ${n}: acima da faixa de muito baixo risco (0–1); geralmente requer avaliação hospitalar/endoscópica conforme quadro.`,"Interprete com estabilidade hemodinâmica, comorbidades e protocolo local para hemorragia digestiva alta.");
+  }
+
+  function calcIHS4(){
+    const vals=["ih_n","ih_a","ih_t"].map(id=>$("#"+id)?.value ?? "");
+    if(vals.some(x=>x===""))return setResult("—","Preencha todos os campos.","");
+    const nums=vals.map(Number);
+    if(nums.some(x=>!Number.isSafeInteger(x)||x<0||x>10000))return setResult("—","Informe contagens inteiras e não negativas.","");
+    const n=nums[0]+2*nums[1]+4*nums[2];
+    const label=n<=3?"leve":n<=10?"moderada":"grave";
+    setResult(String(n),"IHS4 "+n+" — doença "+label+".","Medida de atividade; combinar com extensão das lesões e qualidade de vida.");
   }
 
   async function copyResult(s){
