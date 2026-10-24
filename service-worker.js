@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261024-clinical-tools-v1";
+const CACHE_VERSION = "luria-pwa-20261024-clinical-audit-batch1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -37,6 +37,7 @@ const APP_SHELL = [
   "/trabalho/calculadora/",
   "/trabalho/scores/",
   "/assets/js/clinical-calculators-expansion.js?v=20261024",
+  "/assets/js/clinical-calculators-audit-batch1.js?v=20261024-batch1",
   "/manifest.webmanifest?v=5",
   "/mini-osce/",
   "/jogos/",
