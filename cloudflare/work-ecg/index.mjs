@@ -195,3 +195,5 @@ export default {
     } catch {return reply({error:"benchmark_processing_failed"},500,origin);}
   }
 };
+// Pure evaluation helpers exported for automated safety and consistency tests.
+export { normalized as normalizeEcgBenchmarkReading, compare as reconcileEcgBenchmark };
