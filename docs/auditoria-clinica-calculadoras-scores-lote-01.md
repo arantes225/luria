@@ -47,7 +47,7 @@
 - **Cache:** `service-worker.js`, versão atualizada para invalidar o cache PWA anterior.
 - **Teste reproduzível:** `tests/clinical-calculators-audit-batch1.test.cjs`.
 - **Execução sugerida:** `node --test tests/clinical-calculators-audit-batch1.test.cjs`.
-- Foram executados na sessão de auditoria **30 testes numéricos positivos e 10 testes de rejeição** usando avaliação isolada das definições; nenhum falhou antes dos últimos refinamentos menores. A suíte Node foi adicionada ao repositório, **mas a execução pela CI do projeto e teste visual no navegador não foram confirmados**.
+- Foram verificados **50 testes reproduzíveis** em execução isolada do código de testes: 30 exemplos numéricos, 17 bloqueios de entradas inadequadas, 2 verificações de interpretação contextual (QTc, ROX/sódio) e 1 verificação do catálogo/referências; **50/50 passaram** após os últimos ajustes. A suíte Node foi adicionada ao repositório, **mas a execução via Node/CI do projeto e teste visual no navegador não foram confirmados**.
 - Os testes são unitários de fórmulas/limites, **não constituem ensaio clínico, certificação regulatória, validação de dose ou aprovação para uso autônomo em pacientes reais**.
 
 ## Pontos de atenção ainda necessários
