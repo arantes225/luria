@@ -18,7 +18,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     const overrideLow=number(r.min),overrideHigh=number(r.max);
     const custom=(overrideLow!==null||overrideHigh!==null);
     if(custom)return {min:overrideLow,max:overrideHigh,custom:true,available:true};
-    if(!isAdult()&&!isGest())return {min:null,max:null,custom:false,available:false};
+    if((isAdult()&&state.age!==""&&Number(state.age)<18)||(!isAdult()&&!isGest()))return {min:null,max:null,custom:false,available:false};
     if(isGest()&&t.name!=="Hemoglobina")return {min:null,max:null,custom:false,available:false};
     if(t.name==="Hemoglobina"){
       const min=isGest()?(state.population==="gest-2"?10.5:11):(state.population==="adult-m"?13:12);
@@ -31,7 +31,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     const r=itemState(t.id);if(String(r.value).trim()==="")return "";
     if(t.kind==="qual")return "recorded";
     const v=number(r.value);if(v===null)return "invalid";
-    const lim=ranges(t);if(lim.min!==null&&v<lim.min)return "low";
+    const lim=ranges(t);if((String(r.min).trim()&&number(r.min)===null)||(String(r.max).trim()&&number(r.max)===null)||(lim.min!==null&&lim.max!==null&&lim.min>lim.max))return "invalid";if(lim.min!==null&&v<lim.min)return "low";
     if(lim.max!==null&&v>lim.max)return "high";
     if(lim.available)return "normal";
     return "recorded";
@@ -102,7 +102,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
   function notes(){
     const data=values(),findings=[],add=(title,body,level="info")=>findings.push({title,body,level});
     const hb=reading("Hemoglobina"),vcm=reading("VCM"),ferr=reading("Ferritina");
-    const anemCut=state.population==="adult-m"?13:state.population==="adult-f"?12:state.population==="gest-2"?10.5:isGest()?11:null;
+    const anemCut=isAdult()&&state.age!==""&&Number(state.age)<18?null:state.population==="adult-m"?13:state.population==="adult-f"?12:state.population==="gest-2"?10.5:isGest()?11:null;
     if(hb!==null&&anemCut!==null&&hb<anemCut){
       const micro=vcm!==null&&vcm<80;const macro=vcm!==null&&vcm>100;
       add(micro?"Hemoglobina reduzida com microcitose":macro?"Hemoglobina reduzida com macrocitose":"Hemoglobina abaixo do limiar para anemia",`Limiar populacional OMS: ${fmt(anemCut)} g/dL. ${micro&&ferr!==null&&ferr<15?"Ferritina muito baixa fortalece a hipótese de deficiência de ferro.":micro?"Considerar ferropenia, talassemias e causas inflamatórias conforme investigação.":macro?"Avaliar B12, folato, reticulócitos, fígado, tireoide e fármacos conforme contexto.":"Interpretar índices hematimétricos, reticulócitos e história clínica."}`,"warn");
@@ -111,7 +111,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     if(sodium!==null&&(sodium<130||sodium>150))add("Distúrbio importante do sódio",`Sódio ${fmt(sodium)} mmol/L. Correlacionar com osmolaridade, volume, sintomas e evolução temporal. Evitar definir estratégia de correção por valor isolado.`,"warn");
     if(potassium!==null&&(potassium<3||potassium>5.5))add("Distúrbio do potássio",`Potássio ${fmt(potassium)} mmol/L. Confirmar amostra/hemólise, verificar função renal, medicamentos e ECG conforme gravidade.`,"warn");
     const a1c=reading("Hemoglobina glicada (HbA1c)"),glucose=reading("Glicemia em jejum");
-    if(!isGest()&&isAdult()&&((a1c!==null&&a1c>=6.5)||(glucose!==null&&glucose>=126)))add("Resultado em faixa diagnóstica para diabetes",`Critérios ADA para adultos não gestantes incluem HbA1c ≥6,5% ou glicemia de jejum ≥126 mg/dL. Na ausência de hiperglicemia inequívoca, confirmar conforme diretriz; verificar métodos e situações que alteram a HbA1c.`,"warn");
+    if(!isGest()&&isAdult()&&(state.age===""||Number(state.age)>=18)&&((a1c!==null&&a1c>=6.5)||(glucose!==null&&glucose>=126)))add("Resultado em faixa diagnóstica para diabetes",`Critérios ADA para adultos não gestantes incluem HbA1c ≥6,5% ou glicemia de jejum ≥126 mg/dL. Na ausência de hiperglicemia inequívoca, confirmar conforme diretriz; verificar métodos e situações que alteram a HbA1c.`,"warn");
     const ph=reading("pH"),bicarb=reading("HCO₃⁻ (gasometria)"),pco2=reading("PaCO₂");
     if(ph!==null&&bicarb!==null&&pco2!==null){
       if(ph<7.35&&bicarb<22){const winter=1.5*bicarb+8;add("Acidemia com componente metabólico",`PaCO₂ esperada pela fórmula de Winter: ${fmt(winter-2)}–${fmt(winter+2)} mmHg; observada ${fmt(pco2)} mmHg. Correlacionar diferença com possível distúrbio respiratório adicional.`,"warn");}
@@ -136,7 +136,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     if(sodium!==null&&(sodium<120||sodium>160))alerts.push("Sódio em faixa potencialmente crítica; avaliação urgente do estado neurológico e volemia.");
     if(hb!==null&&hb<7)alerts.push("Hemoglobina muito reduzida; avaliar urgência, sangramento, sintomas e comorbidades.");
     const plaq=reading("Plaquetas");if(plaq!==null&&plaq<20000)alerts.push("Plaquetas muito reduzidas; avaliar risco hemorrágico e confirmação.");
-    if(glucose!==null&&glucose<54)alerts.push("Glicemia em faixa de hipoglicemia clinicamente importante; verificar sintomas e agir segundo protocolo.");
+    if([glucose,reading("Glicemia casual")].some(v=>v!==null&&v<54))alerts.push("Glicemia em faixa de hipoglicemia clinicamente importante; verificar sintomas e agir segundo protocolo.");
     if(ph!==null&&(ph<7.1||ph>7.6))alerts.push("pH em faixa potencialmente crítica; avaliar paciente imediatamente.");
     return {findings,alerts};
   }
