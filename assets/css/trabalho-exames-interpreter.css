@@ -1,0 +1,36 @@
+
+#exam-tool{--exblue:#205fba;--exlight:#eaf2ff;color:var(--text,#142741)}
+#exam-tool *{box-sizing:border-box}#exam-tool button,#exam-tool input,#exam-tool select,#exam-tool textarea{font:inherit}
+#exam-tool .ex-hero{background:linear-gradient(135deg,#153e76,#2861a6);color:#fff;padding:23px;border-radius:19px;display:flex;justify-content:space-between;gap:18px;align-items:flex-start}
+#exam-tool .ex-hero p{color:#dceafb;margin:7px 0 0;line-height:1.5;max-width:750px}#exam-tool .ex-kicker{font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:#bddefe}
+#exam-tool .ex-hero h2{font-size:25px;line-height:1.2;margin:5px 0 0;color:#fff}#exam-tool .ex-hero-stat{font-size:32px;font-weight:900;text-align:center;white-space:nowrap}#exam-tool .ex-hero-stat small{display:block;font-size:11px;font-weight:500}
+#exam-tool .ex-notice{border:1px solid #bfd7ee;background:#f5f9ff;border-radius:13px;padding:11px 14px;color:#2e4770;font-size:12px;line-height:1.5}
+#exam-tool .ex-layout{display:grid;grid-template-columns:minmax(205px,245px) minmax(0,1fr);gap:16px;align-items:start}
+#exam-tool .ex-side,#exam-tool .ex-main,#exam-tool .ex-report{background:var(--surface,#fff);border:1px solid var(--border,#dce5f0);border-radius:17px;padding:15px;min-width:0}
+#exam-tool .ex-side{max-height:68vh;overflow-y:auto;position:sticky;top:12px}#exam-tool .ex-side button{width:100%;text-align:left;display:flex;align-items:center;justify-content:space-between;gap:8px;border:0;border-radius:9px;background:transparent;color:inherit;padding:9px;font-size:12px;cursor:pointer}
+#exam-tool .ex-side button:hover,#exam-tool .ex-side button.is-active{background:#e5f0ff;color:#154980;font-weight:750}#exam-tool .ex-side button span{font-size:11px;opacity:.7;white-space:nowrap}
+#exam-tool .ex-tabs{display:flex;gap:7px;flex-wrap:wrap;margin:15px 0}#exam-tool .ex-tabs button{border:1px solid var(--border,#dbe4ef);border-radius:10px;background:var(--surface,#fff);color:inherit;padding:9px 13px;cursor:pointer;font-size:13px;font-weight:700}
+#exam-tool .ex-tabs button.active{color:#fff;background:#215fae;border-color:#215fae}
+#exam-tool .ex-controls{display:grid;grid-template-columns:minmax(160px,1fr) repeat(2,minmax(110px,150px));gap:10px;margin-bottom:14px}#exam-tool label{font-size:11px;font-weight:750;display:grid;gap:5px;color:inherit}
+#exam-tool input,#exam-tool select,#exam-tool textarea{width:100%;min-width:0;padding:9px 10px;border:1px solid var(--border,#cbd8e7);border-radius:9px;background:var(--surface,#fff);color:inherit;font-size:13px}
+#exam-tool input:focus,#exam-tool select:focus{outline:2px solid #8bb9ec;outline-offset:0}#exam-tool .ex-section-title{font-size:17px;font-weight:800;margin:0 0 4px}
+#exam-tool .ex-subtitle{font-size:12px;color:var(--muted,#66748b);line-height:1.5;margin:0 0 13px}
+#exam-tool .ex-tests-head,#exam-tool .ex-test{display:grid;grid-template-columns:minmax(180px,1.6fr) minmax(90px,.75fr) minmax(95px,.9fr) minmax(70px,.6fr) minmax(70px,.6fr);gap:9px;align-items:center}
+#exam-tool .ex-tests-head{font-weight:750;font-size:10px;color:var(--muted,#677);padding:9px 11px;border-bottom:1px solid var(--border,#ddd)}
+#exam-tool .ex-test{padding:10px 11px;border-bottom:1px solid var(--border,#e4e8ef)}#exam-tool .ex-test:nth-child(odd){background:var(--surface-2,#f7f9fc)}
+#exam-tool .ex-test strong{font-size:12px;display:block;line-height:1.3}#exam-tool .ex-test small{font-size:10px;color:var(--muted,#66758c)}#exam-tool .ex-test .ex-ref{font-size:12px;font-weight:700}
+#exam-tool .ex-test input,#exam-tool .ex-test select{padding:7px 8px;font-size:12px}#exam-tool .ex-status{display:inline-block;margin-top:3px;font-weight:800;font-size:10px}
+#exam-tool .ex-status.low,#exam-tool .ex-status.high{color:#c65532}#exam-tool .ex-status.normal{color:#16764c}#exam-tool .ex-status.pending{color:#798496}
+#exam-tool .ex-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}#exam-tool .ex-btn{border:1px solid #bed1e6;background:var(--surface,#fff);border-radius:10px;padding:10px 13px;color:inherit;font-weight:750;cursor:pointer;font-size:12px}#exam-tool .ex-btn.primary{background:#225fad;border-color:#225fad;color:#fff}#exam-tool .ex-btn.danger{color:#b63b3b}
+#exam-tool .ex-summary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:12px 0}#exam-tool .ex-metric{background:var(--surface-2,#f5f8fc);border:1px solid var(--border,#e0e5ee);border-radius:12px;padding:13px}
+#exam-tool .ex-metric strong{font-size:24px;display:block}#exam-tool .ex-metric span{font-size:11px;color:var(--muted,#68788c)}
+#exam-tool .ex-findings{display:grid;gap:9px;margin-top:10px}#exam-tool .ex-finding{padding:12px;border:1px solid var(--border,#ddd);border-left:4px solid #5d96dd;border-radius:10px;background:var(--surface-2,#f8fafd);font-size:12px;line-height:1.55}
+#exam-tool .ex-finding.warn{border-left-color:#d9933e}#exam-tool .ex-finding.alert{border-left-color:#be4d45}#exam-tool .ex-finding strong{display:block;font-size:13px;margin-bottom:3px}
+#exam-tool .ex-results-table{width:100%;border-collapse:collapse;font-size:12px}#exam-tool .ex-results-table th,#exam-tool .ex-results-table td{text-align:left;padding:9px;border-bottom:1px solid var(--border,#ddd)}#exam-tool .ex-results-table th{font-size:11px}
+#exam-tool .ex-muted{font-size:12px;color:var(--muted,#65758c);line-height:1.5}#exam-tool .ex-history{display:grid;gap:8px}
+#exam-tool .ex-history article{padding:12px;border:1px solid var(--border,#dde5eb);border-radius:10px}#exam-tool .ex-history strong{display:block;font-size:13px}
+#exam-tool .ex-sources{font-size:12px;line-height:1.8}#exam-tool .ex-sources a{color:#2a75be}
+#exam-tool .ex-source-note{font-size:11px;margin-top:10px;color:var(--muted,#64748b)}
+@media(max-width:1000px){#exam-tool .ex-layout{grid-template-columns:1fr}#exam-tool .ex-side{position:static;display:flex;overflow-x:auto;max-height:115px;gap:5px;padding:8px}#exam-tool .ex-side button{min-width:155px;max-width:175px}}
+@media(max-width:750px){#exam-tool .ex-hero{padding:17px}#exam-tool .ex-hero h2{font-size:21px}#exam-tool .ex-hero-stat{font-size:22px}#exam-tool .ex-controls{grid-template-columns:1fr 1fr}#exam-tool .ex-controls label:first-child{grid-column:1/-1}
+#exam-tool .ex-tests-head{display:none}#exam-tool .ex-test{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}#exam-tool .ex-test-name{grid-column:1/-1}#exam-tool .ex-test .ex-ref{grid-column:1/-1}#exam-tool .ex-test input{width:100%}#exam-tool .ex-summary-grid{grid-template-columns:repeat(3,1fr)}#exam-tool .ex-metric{padding:8px}#exam-tool .ex-metric strong{font-size:21px}}
