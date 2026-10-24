@@ -67,7 +67,25 @@
   if(a.kind==='flashcards'){closeSimulator();host.innerHTML=`<div class="na-flash-progress"><span>Card ${Number(a.ordinal)+1} de ${Number(a.total)}</span><span>${a.revealed?'Verso revelado':'Revisão sincronizada'}</span></div><div class="na-flashcard"><span class="na-flash-label">FRENTE</span><div class="na-flash-text">${esc(a.front)}</div><div id="na-front-image"></div>${a.revealed||!a.active?`<div class="na-flash-back"><span class="na-flash-label">VERSO</span><div class="na-flash-text">${esc(a.back)}</div><div id="na-back-image"></div></div>`:'<p class="na-help">O administrador revela o verso para toda a turma.</p>'}</div><div class="na-flash-actions">${a.active&&!a.revealed&&a.is_admin?'<button type="button" class="button primary" id="na-reveal">Revelar verso para a turma</button>':''}${a.active&&a.revealed?`<div class="na-ratings" role="group" aria-label="Avaliar flashcard">${Object.entries({hard:'Errei / difícil',medium:'Parcial',easy:'Acertei'}).map(([k,v])=>`<button type="button" data-native-rating="${k}" aria-pressed="${a.my_rating===k}" ${a.my_rating?'disabled':''}>${v}</button>`).join('')}</div>${a.is_admin&&a.ordinal+1<a.total?'<button type="button" class="button secondary" id="na-next">Próximo flashcard →</button>':''}`:''}</div>`;
    $('na-reveal')?.addEventListener('click',()=>act('reveal'));$('na-next')?.addEventListener('click',async()=>{if(a.participants.some(p=>!p.ready)&&!await window.LuriaDialog.confirm('Há participantes que ainda não avaliaram. Avançar mesmo assim?'))return;act('next');});host.querySelectorAll('[data-native-rating]').forEach(b=>b.onclick=()=>act('rate',{rating:b.dataset.nativeRating}));
    image('na-front-image',a.front_image,a.id,a.ordinal);if(a.revealed||!a.active)image('na-back-image',a.back_image,a.id,a.ordinal);
-  }else{host.innerHTML=`<div class="na-sim-intro">${svg('simulator')}<div><h4>O mesmo caso para a turma</h4><p>Cada pessoa atende no simulador original. Os resultados coletivos aparecem quando todos concluem ou a atividade é encerrada.</p></div>${a.active?'<button class="button primary" type="button" id="na-play">Abrir simulador aqui</button>':''}</div>`;$('na-play')?.addEventListener('click',()=>{if(simActivity===a.id){$('na-simulator').scrollIntoView({block:'start',behavior:'smooth'});return;}simActivity=a.id;setWide(true);$('na-simulator').replaceChildren(makeFrame('room-native-simulator','simulator','/plantao/sala-emergencia/',a.case_id));$('na-simulator').scrollIntoView({block:'start',behavior:'smooth'});});if(simActivity&&(simActivity!==a.id||!a.active)){closeSimulator();}}
+  }else{
+   const shouldAutoOpen = a.active && a.case_id && (simActivity === null || simActivity === a.id);
+   host.innerHTML=`<div class="na-sim-intro">${svg('simulator')}<div><h4>O mesmo caso para a turma</h4><p>Cada pessoa atende no simulador original. Os resultados coletivos aparecem quando todos concluem ou a atividade é encerrada.</p></div>${a.active?'<button class="button primary" type="button" id="na-play">Abrir simulador aqui</button>':''}</div>`;
+   const mountSimulator=()=>{
+    if(simActivity===a.id&&$('room-native-simulator')){
+     $('na-simulator').scrollIntoView({block:'start',behavior:'smooth'});
+     return;
+    }
+    simActivity=a.id;
+    setWide(true);
+    $('na-simulator').replaceChildren(makeFrame('room-native-simulator','simulator','/plantao/sala-emergencia/',a.case_id));
+    $('na-simulator').scrollIntoView({block:'start',behavior:'smooth'});
+   };
+   $('na-play')?.addEventListener('click',mountSimulator);
+   if(shouldAutoOpen){
+    mountSimulator();
+   }
+   if(simActivity&&(simActivity!==a.id||!a.active)){closeSimulator();}
+  }
   $('na-participants').innerHTML=`<h4>Participantes</h4><div class="na-participant-list">${(a.participants||[]).map(p=>`<div><strong>${esc(p.name||'Participante')}</strong><span>${a.kind==='flashcards'?(p.ready?'Avaliação enviada':'Aguardando avaliação'):{not_started:'Não iniciou',in_progress:'Em atendimento',completed:'Concluído',abandoned:'Interrompido'}[p.status]||'Aguardando'}${a.kind==='simulator'&&a.results_revealed&&p.score!==null?' · '+Number(p.score)+' pontos':''}</span></div>`).join('')}</div>${a.kind==='flashcards'?'<p class="na-help">As avaliações desta sessão coletiva não alteram automaticamente a repetição espaçada individual.</p>':''}`;
  }
  async function image(id,path,activityId,ordinal){if(!path)return;try{const storage=window.LuriaStorage;const response=storage?await storage.createSignedUrl('flashcard_images',path,60):await window.supabaseClient.storage.from('docmap').createSignedUrl(path,60);if(activity?.id!==activityId||activity?.ordinal!==ordinal||!$(id))return;const src=response.data?.signedUrl;if(response.error||!src){$(id).textContent='Imagem indisponível para este acesso.';return;}const img=document.createElement('img');img.alt='Imagem do flashcard';img.src=src;img.loading='lazy';$(id).replaceChildren(img);}catch{if($(id))$(id).textContent='Não foi possível carregar a imagem.';}}
