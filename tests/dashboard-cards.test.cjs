@@ -91,10 +91,10 @@ test('all card actions use existing access decisions without duplicate legacy al
     for(const link of f.d.querySelectorAll('[data-dashboard-app]'))assert.equal(link.dispatchEvent(new f.w.MouseEvent('click',{bubbles:true,cancelable:true})),true);
   }finally{f.dom.window.close();}
 });
-test('14 real local module routes grouped once into four categories; approved CSP unchanged',()=>{
+test('16 real local module routes grouped once into five categories; approved CSP unchanged',()=>{
   const dom=new JSDOM(html),d=dom.window.document;try{
-    const links=[...d.querySelectorAll('[data-dashboard-app]')];assert.equal(links.length,14);assert.equal(new Set(links.map(x=>x.getAttribute('href'))).size,14);
-    assert.deepEqual([...d.querySelectorAll('.dashboard-app-category')].map(x=>x.querySelectorAll('[data-dashboard-app]').length),[6,4,3,1]);
+    const links=[...d.querySelectorAll('[data-dashboard-app]')];assert.equal(links.length,16);assert.equal(new Set(links.map(x=>x.getAttribute('href'))).size,16);
+    assert.deepEqual([...d.querySelectorAll('.dashboard-app-category')].map(x=>x.querySelectorAll('[data-dashboard-app]').length),[6,4,2,3,1]);
     for(const link of links){const href=link.getAttribute('href');assert(!href.startsWith('/trabalho/'));assert(fs.existsSync('.'+href+'index.html'),href);assert(link.querySelector('svg'));}
     const {expectedPolicy,pages}=require('../scripts/sync-csp.cjs');
     for(const path of ['dashboard/index.html','configuracoes/index.html','configuracoes.html']){
@@ -118,3 +118,4 @@ test('the actual renderer retains Classic agenda, study session, streak and prog
     }finally{f.dom.window.close();}
   }
 });
+

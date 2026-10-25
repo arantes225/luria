@@ -37,14 +37,26 @@
   function ensureDashboardApps() {
     const panel = document.getElementById("dashboard-apps");
     if (!panel) return;
-    const grid = panel.querySelector("#dashboard-category-practice + .dashboard-app-grid")
+    const practiceGrid = panel.querySelector("#dashboard-category-practice + .dashboard-app-grid")
       || panel.querySelector(".dashboard-app-grid");
-    if (!grid) return;
+    if (!practiceGrid) return;
+    let applyCategory = panel.querySelector("#dashboard-category-apply")?.closest(".dashboard-app-category");
+    if (!applyCategory) {
+      applyCategory = document.createElement("section");
+      applyCategory.className = "dashboard-app-category";
+      applyCategory.setAttribute("aria-labelledby", "dashboard-category-apply");
+      applyCategory.innerHTML = '<h2 id="dashboard-category-apply">Aplicar</h2><div class="dashboard-app-grid"></div>';
+      const simulationCategory = panel.querySelector("#dashboard-category-simulation")?.closest(".dashboard-app-category");
+      if (simulationCategory) simulationCategory.before(applyCategory);
+      else panel.appendChild(applyCategory);
+    }
+    const applyGrid = applyCategory.querySelector(".dashboard-app-grid");
+    if (!applyGrid) return;
     const cards = [
-      ["/jogos/", "Jogos", "Treine raciocínio clínico em desafios interativos.", "purple"],
-      ["/aplicar/", "Aplicar", "Planeje provas, currículo e próximos passos.", "teal"],
+      ["/jogos/", "Jogos", "Treine raciocínio clínico em desafios interativos.", "purple", practiceGrid],
+      ["/aplicar/", "Aplicar", "Planeje provas, currículo e próximos passos.", "teal", applyGrid],
     ];
-    cards.forEach(([href, title, description, tint]) => {
+    cards.forEach(([href, title, description, tint, targetGrid]) => {
       if (panel.querySelector(`a[data-dashboard-app][href="${href}"]`)) return;
       const card = document.createElement("a");
       card.className = "dashboard-app-card";
@@ -52,7 +64,7 @@
       card.dataset.dashboardApp = "";
       card.dataset.iconTint = tint;
       card.innerHTML = `<span class="dashboard-app-icon" aria-hidden="true">↗</span><span class="dashboard-app-copy"><strong>${title}</strong><span>${description}</span><small data-dashboard-access hidden></small></span><span class="dashboard-app-arrow" aria-hidden="true">→</span>`;
-      grid.appendChild(card);
+      targetGrid.appendChild(card);
     });
   }
 
@@ -127,3 +139,4 @@
     observer.observe(document.body, { childList: true, subtree: true });
   }
 })();
+
