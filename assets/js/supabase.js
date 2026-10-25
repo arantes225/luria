@@ -1,6 +1,9 @@
 const SUPABASE_URL = "https://sxdsfklllilhdyuamvvg.supabase.co";
 const SUPABASE_KEY = "sb_publishable_AQ5-Pn1knmBhSFyt5aMtjQ_XQynLJ_L";
 
+// Publishable public key is intentionally client-visible (not a service credential).
+window.LuriaSupabasePublishableKey = SUPABASE_KEY;
+
 const LURIA_AUTH_SESSION_ONLY_KEY = "luria-auth-session-only";
 
 const luriaAuthStorage = {
