@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261024-clinical-audit-batch4-paciente-v2";
+const CACHE_VERSION = "luria-pwa-20261025-apostilas-hall-v3";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -33,6 +33,8 @@ const APP_SHELL = [
   "/estatisticas/",
   "/amigos/",
   "/apostilas/",
+  "/assets/css/apostilas-hall.css?v=20261025-hall2",
+  "/assets/js/apostilas-app.js?v=20261025-hall2",
   "/trabalho/",
   "/trabalho/paciente/",
   "/trabalho/calculadora/",
