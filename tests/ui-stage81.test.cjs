@@ -11,9 +11,7 @@ test('Alex remains the on-screen companion instead of a top-bar shortcut',t=>{
  w.eval(declaration(source,'topbar')+'\n'+declaration(source,'installSearch'));
  w.installSearch();
  const alex=d.getElementById('luria-alex-topbar');
- assert(alex);assert.equal(alex.getAttribute('href'),'/professor-alex/');
- assert.equal(alex.getAttribute('aria-label'),'Abrir Professor Alex');
- assert.equal(alex.nextElementSibling.className,'luria-pomodoro-top');
+ assert.equal(alex,null);
  const companion=read('assets/js/professor-alex-companion.mjs');
  assert.match(companion,/let prefs = \{x: 1, y: 1, minimized: false, visibilityVersion: 2\}/);
  assert.match(companion,/saved\.visibilityVersion === 2 \? \(saved\.minimized === true\) : false/);
@@ -166,3 +164,4 @@ test('Flashcard return switches view without clearing fields or interrupting a l
 test('Error review return belongs to content and has an explicit internal destination',t=>{
  const {d}=page(t,'caderno-erros/revisao/index.html'),back=d.querySelector('.error-review-page-back');assert.equal(back.getAttribute('href'),'/caderno-erros/');assert.equal(back.closest('.topbar'),null);assert(back.closest('.error-review-topline'));
 });
+
