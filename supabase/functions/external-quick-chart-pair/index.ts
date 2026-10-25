@@ -58,7 +58,7 @@ Deno.serve(async(req:Request)=>{
         return json({ok:true,pin,username,expires_at:expiry});
       }
       if(action==="pending"){
-        const {data,error}=await sb.from("quick_chart_pair_requests").select("id,created_at,expires_at,state").eq("owner_id",owner).eq("state","pending").gt("expires_at",new Date(now).toISOString()).order("created_at",{ascending:false}).limit(5);
+        const {data,error}=await sb.from("quick_chart_pair_requests").select("id,created_at,expires_at,state").eq("owner_id",owner).eq("state","pending").gt("expires_at",new Date(now).toISOString()).gt("created_at",new Date(now-2*60*1000).toISOString()).order("created_at",{ascending:false}).limit(5);
         if(error)throw error;
         return json({requests:data||[]});
       }
@@ -92,10 +92,10 @@ Deno.serve(async(req:Request)=>{
       const accountKey=await sha("quick-pair-account|"+username);
       const ipKey=await sha("quick-pair-ip|"+username+"|"+ip(req));
       // Atomic claim counts attempts across all IPs and also by IP. Fifth request blocks for 30 min.
-      const {data:accountAllowed,error:accountError}=await sb.rpc("quick_chart_claim_attempt",{p_key_hash:accountKey});
+      const {data:accountAllowed,error:accountError}=await sb.rpc("quick_chart_pair_claim_attempt",{p_key_hash:accountKey});
       if(accountError)throw accountError;
       if(accountAllowed!==true)return json({error:"Cinco tentativas atingidas. Bloqueado por 30 minutos."},429);
-      const {data:ipAllowed,error:ipError}=await sb.rpc("quick_chart_claim_attempt",{p_key_hash:ipKey});
+      const {data:ipAllowed,error:ipError}=await sb.rpc("quick_chart_pair_claim_attempt",{p_key_hash:ipKey});
       if(ipError)throw ipError;
       if(ipAllowed!==true)return json({error:"Cinco tentativas atingidas. Bloqueado por 30 minutos."},429);
       const {data:profile,error:profileError}=await sb.from("profiles").select("user_id").eq("username",username).maybeSingle();
