@@ -4,7 +4,7 @@
   const init = () => {
     if (!document.querySelector('link[data-luria-feedback-style]')) {
       const style = document.createElement('link');
-      style.rel = 'stylesheet'; style.href = '/assets/css/feedback-checklist.css?v=2'; style.dataset.luriaFeedbackStyle = 'true';
+      style.rel = 'stylesheet'; style.href = '/assets/css/feedback-checklist.css?v=4'; style.dataset.luriaFeedbackStyle = 'true';
       document.head.append(style);
     }
     const topbar = document.querySelector('header.topbar');
