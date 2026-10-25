@@ -47,7 +47,7 @@ Deno.serve(async(req:Request)=>{
         const username=normalize(profile?.username);
         if(!validName(username))return json({error:"Defina um nome de usuário válido no perfil."},400);
         // No timer creates another code. This action is called only when the authenticated view opens.
-        const random=new Uint8Array(1);crypto.getRandomValues(random);
+        const random=new Uint8Array(1);do{crypto.getRandomValues(random);}while(random[0]>=200);
         const pin=String(random[0]%100).padStart(2,"0");
         const expiry=new Date(now+30*60*1000).toISOString();
         const {error:saveError}=await sb.from("quick_chart_pair_codes").upsert({owner_id:owner,code_hash:await pinDigest(owner,pin),expires_at:expiry,created_at:new Date(now).toISOString()},{onConflict:"owner_id"});
@@ -69,7 +69,7 @@ Deno.serve(async(req:Request)=>{
         const {data:active,error:activeError}=await sb.from("quick_chart_pair_codes").select("expires_at").eq("owner_id",owner).maybeSingle();
         if(activeError)throw activeError;
         if(!active||new Date(active.expires_at).getTime()<=now)return json({error:"PIN expirado. Abra a Cola Rápida novamente."},401);
-        const {data,error}=await sb.from("quick_chart_pair_requests").update({state:decision,decided_at:new Date(now).toISOString()}).eq("id",id).eq("owner_id",owner).eq("state","pending").gt("expires_at",new Date(now).toISOString()).select("id").maybeSingle();
+        const {data,error}=await sb.from("quick_chart_pair_requests").update({state:decision,decided_at:new Date(now).toISOString()}).eq("id",id).eq("owner_id",owner).eq("state","pending").gt("expires_at",new Date(now).toISOString()).gt("created_at",new Date(now-2*60*1000).toISOString()).select("id").maybeSingle();
         if(error)throw error;
         return data?json({ok:true}):json({error:"Solicitação não está mais disponível."},409);
       }
@@ -108,18 +108,18 @@ Deno.serve(async(req:Request)=>{
       // Correct PIN still cannot open any content: explicit approval on the authenticated app required.
       const challenge=fresh(),requestId=crypto.randomUUID();
       const pendingExpiry=new Date(Math.min(new Date(code.expires_at).getTime(),now+2*60*1000)).toISOString();
-      const {error:insertError}=await sb.from("quick_chart_pair_requests").insert({id:requestId,owner_id:owner,challenge_hash:await sha(challenge),state:"pending",expires_at:pendingExpiry});
+      const {error:insertError}=await sb.from("quick_chart_pair_requests").insert({id:requestId,owner_id:owner,challenge_hash:await sha(challenge),state:"pending",expires_at:code.expires_at});
       if(insertError)throw insertError;
       await sb.from("external_quick_chart_attempts").delete().in("key_hash",[accountKey,ipKey]);
-      return json({request_id:requestId,challenge,expires_at:pendingExpiry});
+      return json({request_id:requestId,challenge,pending_expires_at:pendingExpiry});
     }
     if(action==="poll"){
       const requestId=String(b.request_id||""),challenge=String(b.challenge||"");
       if(!/^[\da-f-]{36}$/i.test(requestId)||!/^[\da-f]{48}$/.test(challenge))return json({error:"Solicitação inválida."},400);
-      const {data,error}=await sb.from("quick_chart_pair_requests").select("id,owner_id,challenge_hash,state,expires_at,token_hash").eq("id",requestId).maybeSingle();
+      const {data,error}=await sb.from("quick_chart_pair_requests").select("id,owner_id,challenge_hash,state,created_at,expires_at,token_hash").eq("id",requestId).maybeSingle();
       if(error)throw error;
       if(!data||!verifyEqual(await sha(challenge),data.challenge_hash))return json({error:"Solicitação inválida."},403);
-      if(new Date(data.expires_at).getTime()<=now||data.state==="denied")return json({state:"expired"},410);
+      if(new Date(data.expires_at).getTime()<=now||data.state==="denied"||(data.state==="pending"&&now-new Date(data.created_at).getTime()>2*60*1000))return json({state:"expired"},410);
       if(data.state!=="approved")return json({state:"pending"});
       if(data.token_hash)return json({state:"claimed"},409);
       const token=fresh(32);
