@@ -1,4 +1,69 @@
 
+  function renderIntegratedRecipes(r) {
+    const slugs = Array.isArray(r.linked_recipe_slugs) ? r.linked_recipe_slugs : [];
+    // Busca receitas pelo slug vinculado ou por título similar
+    const matchedRecipes = recipesBank.filter(rb => 
+      slugs.includes(rb.slug) || 
+      norm(rb.title).includes(norm(r.title)) || 
+      norm(r.title).includes(norm(rb.title))
+    );
+
+    if (!matchedRecipes.length) return "";
+
+    return `
+      <section class="protocol-section" style="border:2px solid color-mix(in srgb,var(--theme,#184888) 25%,var(--border));background:color-mix(in srgb,var(--theme,#184888) 2.5%,var(--surface))">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <div>
+            <h3 style="margin:0;font-size:1.05rem;display:flex;align-items:center;gap:8px">
+              <span>💊</span> Prescrição Modelo & Tratamento Geral
+            </h3>
+            <span style="font-size:12px;color:var(--muted)">Pronto para conferência e cópia para o prontuário</span>
+          </div>
+          <span style="padding:4px 8px;border-radius:999px;font-size:11px;font-weight:800;background:var(--surface);border:1px solid var(--border);color:var(--theme,#184888)">
+            ${matchedRecipes.length} modelo${matchedRecipes.length > 1 ? 's' : ''}
+          </span>
+        </div>
+        <div style="display:grid;gap:12px">
+          ${matchedRecipes.map((rec, rIdx) => {
+            const data = rec.data || {};
+            const routes = Array.isArray(data.routes) ? data.routes : [];
+            const isCopyReady = rec.status === 'verified' && data.copy_ready === true;
+            return `
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;display:grid;gap:10px">
+                <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+                  <strong style="font-size:14px;color:var(--theme,#184888)">${esc(rec.title)}</strong>
+                  <div style="display:flex;gap:6px">
+                    <button type="button" class="integrated-recipe-copy-btn" data-recipe-index="${rIdx}" style="padding:6px 12px;border-radius:8px;border:1px solid var(--theme,#184888);background:color-mix(in srgb,var(--theme,#184888) 10%,var(--surface));color:var(--theme,#184888);font-size:12px;font-weight:750;cursor:pointer">
+                      Copiar Prescrição 📋
+                    </button>
+                  </div>
+                </div>
+                ${routes.map(rt => `
+                  <div style="padding:8px 10px;border-radius:8px;background:var(--surface-2);border-left:3px solid var(--theme,#184888);display:grid;gap:6px">
+                    <span style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--muted)">${esc(rt.route || 'Uso')}</span>
+                    ${(rt.items || []).map((it, itIdx) => `
+                      <div style="font-size:13px;line-height:1.45">
+                        <strong>${rt.mode === 'alternatives' ? (itIdx + 1) + 'ª OPÇÃO: ' : ''}${esc(it.drug || 'Medicamento')}</strong>
+                        ${it.quantity ? ' — <span style="color:var(--muted)">' + esc(it.quantity) + '</span>' : ''}
+                        ${it.directions ? '<p style="margin:3px 0 0;font-size:12.5px;color:var(--text)">' + esc(it.directions) + '</p>' : ''}
+                      </div>
+                    `).join('')}
+                  </div>
+                `).join('')}
+                ${data.orientations && data.orientations.length ? `
+                  <div style="font-size:12px;color:var(--muted);line-height:1.4">
+                    <strong>Orientações complementares:</strong> ${data.orientations.map(o => esc(o)).join('; ')}
+                  </div>
+                ` : ''}
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </section>
+    `;
+  }
+
+
   function getProtocolCalculators(r) {
     const slug = (r.slug || '').toLowerCase();
     const title = (r.title || '').toLowerCase();
@@ -108,7 +173,7 @@
     count: document.getElementById("protocol-count"),
     empty: document.getElementById("protocol-empty")
   };
-  let rows = [], selected = null;
+  let rows = [], selected = null, recipesBank = [];
 
   const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const norm = (v) => String(v ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -236,6 +301,7 @@
       ${renderImages(r.image_assets)}
       ${renderDecisionFlow(r.decision_flow)}
       ${listSection("Tratamento", r.treatment, "treatment")}
+      ${renderIntegratedRecipes(r)}
       ${getProtocolCalculators(r)}
       ${getDischargeInstructions(r)}
       ${drugs.length ? `<section class="protocol-section"><h3>Medicamentos relacionados</h3><div class="protocol-drugs">${drugs.map((d) => `<button type="button" data-drug="${esc(d)}">${esc(d)} <span>↗</span></button>`).join("")}</div></section>` : ""}
@@ -322,7 +388,43 @@
       });
     });
 
-    els.detail.querySelectorAll("[data-drug]").forEach((b) => b.addEventListener("click", () => bridge?.openDrug(b.dataset.drug)));
+    
+    // Listener de cópia da receita integrada
+    els.detail.querySelectorAll('.integrated-recipe-copy-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = Number(btn.dataset.recipeIndex);
+        const slugs = Array.isArray(r.linked_recipe_slugs) ? r.linked_recipe_slugs : [];
+        const matched = recipesBank.filter(rb => slugs.includes(rb.slug) || norm(rb.title).includes(norm(r.title)) || norm(r.title).includes(norm(rb.title)));
+        const targetRec = matched[idx];
+        if (!targetRec) return;
+
+        // Monta o texto limpo da receita
+        const data = targetRec.data || {};
+        const routes = Array.isArray(data.routes) ? data.routes : [];
+        const lines = [targetRec.title.toUpperCase(), ""];
+        routes.forEach(rt => {
+          lines.push(String(rt.route || "USO").toUpperCase() + ":");
+          (rt.items || []).forEach((it, i) => {
+            const prefix = rt.mode === "alternatives" ? (i + 1) + "ª OPÇÃO) " : (i + 1) + ") ";
+            lines.push(prefix + (it.drug || "Medicamento") + (it.quantity ? " — " + it.quantity : ""));
+            if (it.directions) lines.push("   " + it.directions);
+          });
+          lines.push("");
+        });
+        if (Array.isArray(data.orientations) && data.orientations.length) {
+          lines.push("ORIENTAÇÕES:");
+          data.orientations.forEach(o => lines.push("- " + o));
+        }
+
+        const fullTxt = lines.join("\n").trim();
+        navigator.clipboard?.writeText(fullTxt).then(() => {
+          const oldTxt = btn.textContent;
+          btn.textContent = "Prescrição Copiada! ✓";
+          setTimeout(() => { btn.textContent = oldTxt; }, 1500);
+        });
+      });
+    });
+els.detail.querySelectorAll("[data-drug]").forEach((b) => b.addEventListener("click", () => bridge?.openDrug(b.dataset.drug)));
     els.detail.querySelector("[data-open-recipe]")?.addEventListener("click", () => bridge?.openRecipe(recipes[0]));
     els.detail.querySelector("[data-send-note]")?.addEventListener("click", () => bridge?.toQuickChart({
       type:"protocol", slug:r.slug, title:r.title, text:protocolText(r), source:"Protocolos LURIA"
@@ -331,7 +433,11 @@
 
   async function load() {
     if (!sb) { els.list.innerHTML = '<div class="protocol-placeholder">Não foi possível conectar.</div>'; return; }
-    const {data,error} = await sb.from("clinical_protocols").select("*").order("title");
+    const [{data, error}, {data: rBank}] = await Promise.all([
+      sb.from("clinical_protocols").select("*").order("title"),
+      sb.from("recipe_bank").select("*")
+    ]);
+    recipesBank = rBank || [];
     if (error) { console.error(error); els.list.innerHTML = '<div class="protocol-placeholder">Não foi possível carregar os protocolos.</div>'; return; }
     rows = data || [];
     const cats = [...new Set(rows.map((r) => r.category).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
