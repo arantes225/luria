@@ -2975,3 +2975,7 @@ body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
   pointer-events: none !important;
 }
 
+
+
+/* Remove Alex topbar button across all screens */
+#luria-alex-topbar, .luria-alex-topbar { display: none !important; visibility: hidden !important; width: 0 !important; height: 0 !important; pointer-events: none !important; opacity: 0 !important; }

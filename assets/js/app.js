@@ -7945,7 +7945,7 @@ iniciarApp();
 (function loadLuriaCommandCenter(){
   if (document.querySelector('script[data-luria-command-center]')) return;
   const script = document.createElement('script');
-  script.src = '/assets/js/luria-command-center.js?v=20261024-alex-topbar';
+  script.src = '/assets/js/luria-command-center.js?v=20261025-robot-companion';
   script.defer = true;
   script.dataset.luriaCommandCenter = '1';
   document.head.appendChild(script);
