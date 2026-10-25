@@ -4,7 +4,7 @@
   const init = () => {
     if (!document.querySelector('link[data-luria-feedback-style]')) {
       const style = document.createElement('link');
-      style.rel = 'stylesheet'; style.href = '/assets/css/feedback-checklist.css?v=4'; style.dataset.luriaFeedbackStyle = 'true';
+      style.rel = 'stylesheet'; style.href = '/assets/css/feedback-checklist.css?v=5'; style.dataset.luriaFeedbackStyle = 'true';
       document.head.append(style);
     }
     const topbar = document.querySelector('header.topbar');
@@ -25,6 +25,10 @@
       }
       const activity = document.querySelector('.social-activity');
       const intro = activity?.querySelector('.sc-activity-intro');
+      if (intro) {
+        intro.hidden = true;
+        intro.style.display = 'none';
+      }
       if (activity && !activity.querySelector('.feedback-room-score')) {
         const score = document.createElement('section');
         score.className = 'feedback-room-score';
