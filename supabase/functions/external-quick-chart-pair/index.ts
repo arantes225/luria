@@ -55,6 +55,8 @@ Deno.serve(async(req:Request)=>{
         // The new opening invalidates all previous approvals, not only prior PIN values.
         const {error:removeError}=await sb.from("quick_chart_pair_requests").delete().eq("owner_id",owner);
         if(removeError)throw removeError;
+        // Conteúdo recebido é temporário: remover itens antigos na próxima abertura.
+        await sb.from("quick_chart_inbox").delete().eq("owner_id",owner).lt("created_at",new Date(now-12*60*60*1000).toISOString());
         return json({ok:true,pin,username,expires_at:expiry});
       }
       if(action==="pending"){
@@ -74,7 +76,7 @@ Deno.serve(async(req:Request)=>{
         return data?json({ok:true}):json({error:"Solicitação não está mais disponível."},409);
       }
       if(action==="inbox"){
-        const {data,error}=await sb.from("quick_chart_inbox").select("id,body,created_at").eq("owner_id",owner).order("created_at",{ascending:false}).limit(40);
+        const {data,error}=await sb.from("quick_chart_inbox").select("id,body,created_at").eq("owner_id",owner).gte("created_at",new Date(now-12*60*60*1000).toISOString()).order("created_at",{ascending:false}).limit(40);
         if(error)throw error;
         return json({messages:data||[]});
       }
