@@ -25,9 +25,14 @@
       }
       const activity = document.querySelector('.social-activity');
       const intro = activity?.querySelector('.sc-activity-intro');
-      if (intro) {
-        intro.hidden = true;
-        intro.style.display = 'none';
+      const hideActivityIntro = () => activity?.querySelectorAll('.sc-activity-intro').forEach(node => {
+        node.hidden = true;
+        node.style.display = 'none';
+      });
+      hideActivityIntro();
+      if (activity && !activity.dataset.feedbackIntroObserver) {
+        activity.dataset.feedbackIntroObserver = 'true';
+        new MutationObserver(hideActivityIntro).observe(activity, {childList:true, subtree:true});
       }
       if (activity && !activity.querySelector('.feedback-room-score')) {
         const score = document.createElement('section');
