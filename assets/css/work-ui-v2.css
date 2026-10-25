@@ -1,5 +1,11 @@
 /* Work pages opt into the approved Design System. Clinical content, controls,
    result visibility and export templates remain owned by their existing code. */
+body[data-ui-work="v2"] {
+  font-family: var(--ui-font-family) !important;
+}
+body[data-ui-work="v2"] :where(h1,h2,h3,h4,p,li,label,small,a,span,strong,section,article,div,input,select,textarea,button) {
+  font-family: var(--ui-font-family) !important;
+}
 body[data-ui-work="v2"] .main {
   color: var(--color-text-primary);
 }
@@ -617,8 +623,8 @@ body[data-ui-work="v2"] .pcr-history-form {
     flex-basis: 100%;
   }
 }
-body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.dx-hero,.gm-hero,.work-hero,.shift-hero,.finance-hero,.work-tool-hero,.tool-hero,.lab-hero) h2 {
-  display: none;
+body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.dx-hero,.gm-hero,.work-hero,.shift-hero,.finance-hero,.work-tool-hero,.tool-hero,.lab-hero) {
+  display: none !important;
 }
 
 /* Layered resets defeat legacy injected locks only on migrated components. */
@@ -652,28 +658,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
     gap: 24px !important;
     display: grid !important;
   }
-  body[data-ui-work="v2"] .luria-page-spotlight {
-    padding: 0 !important;
-    margin: 0 !important;
-    border: 0 !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    min-height: 0 !important;
-  }
-  body[data-ui-work="v2"] .luria-page-spotlight-copy {
-    gap: 8px !important;
-  }
-  body[data-ui-work="v2"] .luria-page-spotlight-copy strong {
-    font-size: 32px !important;
-    font-weight: 700 !important;
-    line-height: 1.2 !important;
-    color: var(--color-text-primary) !important;
-  }
-  body[data-ui-work="v2"] .luria-page-spotlight-copy :is(span,small) {
-    font-size: 14px !important;
-    line-height: 1.5 !important;
-    color: var(--color-text-secondary) !important;
-  }
+  /* LURIA standard spotlight preserved in work pages */
   body[data-ui-work="v2"] .work-dashboard-head {
     margin: 0 0 24px !important;
     padding: 0 !important;
@@ -927,14 +912,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
       font-size: 28px !important;
     }
   }
-  body[data-ui-work="v2"] .luria-page-spotlight :is(strong,h1) {
-    color: var(--color-text-primary) !important;
-    font-size: 32px !important;
-  }
-  body[data-ui-work="v2"] .luria-page-spotlight :is(span,small) {
-    color: var(--color-text-secondary) !important;
-    font-size: 14px !important;
-  }
+  /* spotlight typography handled by official page-spotlight.css */
   body[data-ui-work="v2"] :is(.calc-modal,.score-modal,.pm-dialog,.pm-view-dialog,.pcr-history-dialog) :is(input,select,textarea) {
     font-size: 16px !important;
     line-height: 1.5 !important;
@@ -951,18 +929,12 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
     font-size: 14px !important;
     min-height: var(--ui-control) !important;
   }
-  @media (max-width:760px) {
-    body[data-ui-work="v2"] .luria-page-spotlight :is(strong,h1) {
-      font-size: 28px !important;
-    }
-  }
+
   body[data-ui-work="v2"] :is(.dx-open,.gm-open,.pm-meta,.pm-chip,.pm-tag) {
     font-size: 14px !important;
     line-height: 1.5 !important;
   }
-  body[data-ui-work="v2"] .luria-page-spotlight::before,body[data-ui-work="v2"] .luria-page-spotlight::after {
-    content: none !important;
-  }
+
   body[data-ui-work="v2"] .gm-security-copy :is(strong,p,small,span) {
     font-size: 14px !important;
     line-height: 1.6 !important;
@@ -995,9 +967,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
     background: var(--color-primary-subtle) !important;
     border-color: var(--color-primary-text) !important;
   }
-  body[data-ui-work="v2"] .luria-page-spotlight-copy::before,body[data-ui-work="v2"] .luria-page-spotlight-copy::after {
-    content: none !important;
-  }
+
   body[data-ui-work="v2"] .gm-security-copy>div {
     font-size: 14px !important;
     line-height: 1.6 !important;
