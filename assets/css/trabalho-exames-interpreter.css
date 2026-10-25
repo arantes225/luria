@@ -34,3 +34,35 @@
 @media(max-width:1000px){#exam-tool .ex-layout{grid-template-columns:1fr}#exam-tool .ex-side{position:static;display:flex;overflow-x:auto;max-height:115px;gap:5px;padding:8px}#exam-tool .ex-side button{min-width:155px;max-width:175px}}
 @media(max-width:750px){#exam-tool .ex-hero{padding:17px}#exam-tool .ex-hero h2{font-size:21px}#exam-tool .ex-hero-stat{font-size:22px}#exam-tool .ex-controls{grid-template-columns:1fr 1fr}#exam-tool .ex-controls label:first-child{grid-column:1/-1}
 #exam-tool .ex-tests-head{display:none}#exam-tool .ex-test{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}#exam-tool .ex-test-name{grid-column:1/-1}#exam-tool .ex-test .ex-ref{grid-column:1/-1}#exam-tool .ex-test input{width:100%}#exam-tool .ex-summary-grid{grid-template-columns:repeat(3,1fr)}#exam-tool .ex-metric{padding:8px}#exam-tool .ex-metric strong{font-size:21px}}
+
+/* Exames: mesmo card de título das ferramentas do Trabalho; sem hero duplicado. */
+#exam-tool{display:grid;gap:16px}
+#exam-tool .ex-title-card{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:108px;padding:20px 24px;border:1px solid var(--color-border,var(--border,#dce5f0));border-radius:16px;background:var(--color-surface,var(--surface,#fff));box-shadow:none}
+#exam-tool .ex-title-copy{min-width:0}
+#exam-tool .ex-title-copy h2{margin:0;color:var(--color-text-primary,var(--text,#142741));font-size:23px;font-weight:700;line-height:1.25}
+#exam-tool .ex-title-copy p{margin:6px 0 0;color:var(--color-text-secondary,var(--muted,#67758b));font-size:13px;line-height:1.5}
+#exam-tool .ex-back-link{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:9px 15px;border:1px solid var(--color-border,var(--border,#dce5f0));border-radius:11px;background:var(--color-surface-secondary,var(--surface-2,#f5f7fb));color:var(--color-text-primary,var(--text,#142741));text-decoration:none;font-size:13px;font-weight:700}
+#exam-tool .ex-back-link:hover{border-color:var(--exblue);color:var(--exblue)}
+#exam-tool .ex-toolbar{display:flex;justify-content:flex-end;align-items:center;min-height:42px}
+#exam-tool .ex-patient-button{min-height:42px;padding:10px 16px;font-size:13px}
+#exam-tool .ex-tabs{margin:0;flex-wrap:wrap}
+#exam-tool .ex-controls{margin:0;grid-template-columns:minmax(180px,1fr) minmax(180px,260px) minmax(110px,160px)}
+#exam-tool :is(.ex-tabs,.ex-notice,#ex-age-wrap)[hidden]{display:none!important}
+#exam-tool .ex-tests-head.ex-reference-only,#exam-tool .ex-test.ex-reference-only{grid-template-columns:minmax(0,1.5fr) minmax(135px,.9fr);gap:16px}
+#exam-tool .ex-test.ex-reference-only{min-height:54px}
+#exam-tool .ex-test.ex-reference-only .ex-ref{justify-self:start;line-height:1.35;font-size:13px;overflow-wrap:anywhere}
+#exam-tool .ex-reference-only .ex-test-name strong{font-size:13px;font-weight:650}
+#exam-tool .ex-ref-unit{display:block;margin-top:3px;color:var(--color-text-secondary,var(--muted,#66758c));font-size:11px;font-weight:400}
+body[data-page="trabalho_exames"] .work-hub-navigation .work-hub-return,
+body[data-page="trabalho_laboratorio"] .work-hub-navigation .work-hub-return{display:none!important}
+@media(max-width:750px){
+ #exam-tool .ex-title-card{padding:15px 16px;min-height:86px;align-items:center}
+ #exam-tool .ex-title-copy h2{font-size:20px}
+ #exam-tool .ex-title-copy p{font-size:11px}
+ #exam-tool .ex-back-link{min-height:40px;padding:8px 12px;font-size:12px}
+ #exam-tool .ex-controls{grid-template-columns:minmax(0,1fr)}
+ #exam-tool .ex-controls label:first-child{grid-column:auto}
+ #exam-tool .ex-tests-head.ex-reference-only{display:grid}
+ #exam-tool .ex-test.ex-reference-only{grid-template-columns:minmax(0,1fr) minmax(110px, .9fr)}
+ #exam-tool .ex-patient-button{width:100%}
+}
