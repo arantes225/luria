@@ -403,6 +403,7 @@
       img.src = luriaSafeContentUrl(src, {relative:true}) || "";
       img.alt = String(asset.alt || captionText || "Imagem didática");
       img.loading = "lazy";
+      img.decoding = "async";
       img.dataset.apostilaImageFallback = "approved-source";
       img.dataset.apostilaImageSourceUrl = luriaSafeContentUrl(row.source_url) || "";
       // Redirecionamento alternativo do repositório de arquivos públicos.
@@ -517,15 +518,90 @@
     return paragraphs[Math.min(paragraphs.length - 1, Math.floor((index + 1) * paragraphs.length / (total + 1)))] || target.querySelector("h2");
   }
 
+  const sectionHintWords = {
+    diagnostico: ["diagnostico", "avaliacao", "exames", "investigacao", "teste"],
+    tratamento: ["tratamento", "terapeutica", "manejo", "conduta", "terapia"],
+    conduta: ["conduta", "manejo", "tratamento", "abordagem"],
+    complicacoes: ["complicacoes", "eventos", "adversos", "risco"],
+    visao: ["visao", "panorama", "resumo", "introducao"],
+    "visao-geral": ["visao", "panorama", "resumo", "introducao"],
+    quadro: ["quadro", "clinico", "sintomas", "manifestacoes"],
+    exames: ["exames", "diagnostico", "avaliacao", "investigacao"],
+  };
+
+  function normalizedSectionText(value) {
+    return String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+  }
+
+  function meaningfulWords(value) {
+    const stop = new Set([
+      "para", "com", "sem", "uma", "das", "dos", "que", "por", "nas", "nos", "entre",
+      "sobre", "apos", "antes", "como", "pela", "pelo", "mais", "menos", "imagem", "clinical",
+      "clinica", "exame", "figura", "comparacao", "demonstrando", "mostrar", "mostrando",
+    ]);
+    return normalizedSectionText(value)
+      .split(/[^a-z0-9]+/)
+      .filter(word => word.length >= 4 && !stop.has(word));
+  }
+
+  // The approved queue was curated against older section IDs. Resolve those
+  // IDs against the current chapter headings so approved images do not vanish
+  // merely because a booklet received a new editorial outline.
+  function resolveApprovedTargetSection(row) {
+    const requested = String(row.target_section || "").replace(/^#/, "").trim();
+    const exact = requested ? document.getElementById(requested) : null;
+    if (exact) return exact;
+
+    const candidates = [...document.querySelectorAll("section[id], article[id]")]
+      .filter(section => !section.closest("#apostila-image-curation"));
+    if (!candidates.length) return null;
+
+    const asset = getAsset(row);
+    const description = [requested, row.candidate_key, asset.title, asset.alt, asset.caption,
+      asset.intro_text, asset.didactic_note].filter(Boolean).join(" ");
+    const words = [...new Set(meaningfulWords(description))];
+    const hints = (sectionHintWords[normalizedSectionText(requested)] || []).map(normalizedSectionText);
+
+    let best = null;
+    for (const section of candidates) {
+      const heading = section.querySelector("h2,h3,h4")?.textContent || "";
+      const idText = normalizedSectionText(section.id);
+      const headingText = normalizedSectionText(heading);
+      const bodyText = normalizedSectionText(section.textContent).slice(0, 12000);
+      let score = 0;
+      for (const word of words) {
+        if (headingText.includes(word)) score += word.length >= 7 ? 8 : 5;
+        else if (idText.includes(word)) score += 5;
+        else if (bodyText.includes(word)) score += 1;
+      }
+      for (const hint of hints) {
+        if (headingText.includes(hint)) score += 4;
+        else if (idText.includes(hint)) score += 2;
+      }
+      if (!best || score > best.score) best = {section, score};
+    }
+
+    // Generic legacy targets such as "visao-geral" still belong at the
+    // beginning of the chapter when no semantic signal distinguishes a later
+    // section. This keeps the approved image visible without inventing a
+    // nonexistent section ID.
+    return best?.score > 0 ? best.section : candidates[0];
+  }
+
   function placeApprovedImage(row, slotIndex, slotTotal) {
     if (document.querySelector('[data-apostila-approved-image="' + Number(row.id) + '"]')) return;
-    const target = document.getElementById(String(row.target_section || "").replace(/^#/, ""));
+    const target = resolveApprovedTargetSection(row);
     if (!target) return;
     const figure = createApprovedFigure(row);
     if (!figure) return;
     const asset = getAsset(row);
     const selector = String(row.target_selector || asset.target_selector || "").trim();
-    const anchor = selector ? target.querySelector(selector) : afterReadingAnchor(target, slotIndex, slotTotal, row);
+    let anchor = null;
+    try { anchor = selector ? target.querySelector(selector) : afterReadingAnchor(target, slotIndex, slotTotal, row); }
+    catch { anchor = afterReadingAnchor(target, slotIndex, slotTotal, row); }
     if (!anchor || anchor === target) {
       target.appendChild(figure);
       return;
@@ -541,7 +617,9 @@
 
     const grouped = new Map();
     rows.filter(row => row.review_status === "approved" && !removedUnlicensed.has(Number(row.id))).forEach(row => {
-      const key = String(row.target_section || "");
+      const target = resolveApprovedTargetSection(row);
+      if (!target) return;
+      const key = target.id;
       if (!grouped.has(key)) grouped.set(key, []);
       grouped.get(key).push(row);
     });
