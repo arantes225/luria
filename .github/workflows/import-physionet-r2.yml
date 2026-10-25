@@ -4,11 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       dataset:
-        description: "Quais arquivos públicos do PhysioNet importar?"
+        description: "Escopo da importação"
         required: true
         type: choice
-        default: ptbxl-100hz
+        default: teste
         options:
+          - teste
           - ptbxl-100hz
           - ptbxl-completo
           - ptbxl-plus
@@ -31,52 +32,60 @@ jobs:
       R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
       R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
       R2_BUCKET: ${{ vars.R2_BUCKET || 'luria-ecg-library' }}
+
     steps:
-      - name: Verificar configuracao
+      - name: Verificar configuração
         shell: bash
         run: |
           set -euo pipefail
           for name in R2_ACCOUNT_ID R2_ACCESS_KEY_ID R2_SECRET_ACCESS_KEY R2_BUCKET; do
             if [[ -z "${!name:-}" ]]; then
-              echo "::error::Configure o secret/variavel $name antes de executar."
+              echo "::error::Configure o secret/variável $name antes de executar."
               exit 1
             fi
           done
           aws --version
-          echo "Transferencia manual autorizada; nenhum arquivo sera salvo no repositorio."
+          echo "Nenhum segredo será gravado no repositório ou nos artefatos."
 
-      - name: Copiar dados publicos da AWS do PhysioNet para o runner temporario
+      - name: Baixar dados públicos do PhysioNet para o runner temporário
         shell: bash
         run: |
           set -euo pipefail
           ROOT="$RUNNER_TEMP/physionet"
           mkdir -p "$ROOT"
+
           baixar_ptbxl() {
             local mode="$1"
             local dest="$ROOT/ptb-xl/1.0.3"
             mkdir -p "$dest"
-            if [[ "$mode" == "100hz" ]]; then
-              AWS_DEFAULT_REGION=us-east-1 aws s3 sync                 s3://physionet-open/ptb-xl/1.0.3/ "$dest/"                 --no-sign-request --exclude '*'                 --include 'records100/*'                 --include 'ptbxl_database.csv'                 --include 'scp_statements.csv'                 --include 'LICENSE.txt'                 --include '*changelog*.txt'                 --only-show-errors --no-progress
+            if [[ "$mode" == "teste" ]]; then
+              AWS_DEFAULT_REGION=us-east-1 aws s3 sync s3://physionet-open/ptb-xl/1.0.3/ "$dest/"                 --no-sign-request --exclude '*'                 --include 'records100/00000/*'                 --include 'ptbxl_database.csv'                 --include 'scp_statements.csv'                 --include 'LICENSE.txt'                 --only-show-errors --no-progress
+            elif [[ "$mode" == "100hz" ]]; then
+              AWS_DEFAULT_REGION=us-east-1 aws s3 sync s3://physionet-open/ptb-xl/1.0.3/ "$dest/"                 --no-sign-request --exclude '*' --include 'records100/*'                 --include 'ptbxl_database.csv' --include 'scp_statements.csv'                 --include 'LICENSE.txt' --include '*changelog*.txt'                 --only-show-errors --no-progress
             else
-              AWS_DEFAULT_REGION=us-east-1 aws s3 sync                 s3://physionet-open/ptb-xl/1.0.3/ "$dest/"                 --no-sign-request --only-show-errors --no-progress
+              AWS_DEFAULT_REGION=us-east-1 aws s3 sync s3://physionet-open/ptb-xl/1.0.3/ "$dest/"                 --no-sign-request --only-show-errors --no-progress
             fi
           }
+
           baixar_plus() {
             local dest="$ROOT/ptb-xl-plus/1.0.1"
             mkdir -p "$dest"
-            AWS_DEFAULT_REGION=us-east-1 aws s3 sync               s3://physionet-open/ptb-xl-plus/1.0.1/ "$dest/"               --no-sign-request --only-show-errors --no-progress
+            AWS_DEFAULT_REGION=us-east-1 aws s3 sync s3://physionet-open/ptb-xl-plus/1.0.1/ "$dest/"               --no-sign-request --only-show-errors --no-progress
           }
+
           case "$DATASET" in
+            teste) baixar_ptbxl teste ;;
             ptbxl-100hz) baixar_ptbxl 100hz ;;
             ptbxl-completo) baixar_ptbxl completo ;;
             ptbxl-plus) baixar_plus ;;
             ambos) baixar_ptbxl completo; baixar_plus ;;
-            *) echo "::error::Dataset invalido"; exit 1 ;;
+            *) echo "::error::Dataset inválido"; exit 1 ;;
           esac
-          echo "Espaco temporario utilizado:"
+
+          find "$ROOT" -type f -print0 | sort -z | xargs -0 sha256sum > "$RUNNER_TEMP/physionet.sha256"
+          cp "$RUNNER_TEMP/physionet.sha256" "$ROOT/PHYSIONET_SHA256SUMS.txt"
           du -sh "$ROOT"
-          echo "Arquivos baixados:"
-          find "$ROOT" -type f | wc -l
+          echo "Arquivos baixados: $(find "$ROOT" -type f | wc -l)"
 
       - name: Enviar ao bucket privado no Cloudflare R2
         shell: bash
@@ -88,13 +97,17 @@ jobs:
           export AWS_EC2_METADATA_DISABLED=true
           ENDPOINT="https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com"
           ROOT="$RUNNER_TEMP/physionet"
-          if [[ -d "$ROOT/ptb-xl/1.0.3" ]]; then
-            aws s3 sync "$ROOT/ptb-xl/1.0.3/"               "s3://$R2_BUCKET/physionet/ptb-xl/1.0.3/"               --endpoint-url "$ENDPOINT" --only-show-errors --no-progress
+
+          aws s3 sync "$ROOT/" "s3://$R2_BUCKET/physionet/"             --endpoint-url "$ENDPOINT" --only-show-errors --no-progress
+
+          aws s3api head-object --bucket "$R2_BUCKET"             --key physionet/PHYSIONET_SHA256SUMS.txt             --endpoint-url "$ENDPOINT" >/dev/null
+
+          if [[ "$DATASET" == "teste" || "$DATASET" == "ptbxl-100hz" || "$DATASET" == "ptbxl-completo" || "$DATASET" == "ambos" ]]; then
             aws s3api head-object --bucket "$R2_BUCKET"               --key physionet/ptb-xl/1.0.3/ptbxl_database.csv               --endpoint-url "$ENDPOINT" >/dev/null
           fi
-          if [[ -d "$ROOT/ptb-xl-plus/1.0.1" ]]; then
-            aws s3 sync "$ROOT/ptb-xl-plus/1.0.1/"               "s3://$R2_BUCKET/physionet/ptb-xl-plus/1.0.1/"               --endpoint-url "$ENDPOINT" --only-show-errors --no-progress
+          if [[ "$DATASET" == "ptbxl-plus" || "$DATASET" == "ambos" ]]; then
             aws s3api head-object --bucket "$R2_BUCKET"               --key physionet/ptb-xl-plus/1.0.1/LICENSE.txt               --endpoint-url "$ENDPOINT" >/dev/null
           fi
-          echo "Importacao concluida e arquivos principais verificados no R2."
-          echo "O runner temporario sera descartado. Nenhum ECG foi salvo no GitHub."
+
+          echo "Importação concluída; manifesto SHA-256 enviado ao R2."
+          echo "O runner temporário será descartado e nenhum ECG será salvo no GitHub."
