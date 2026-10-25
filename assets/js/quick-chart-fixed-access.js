@@ -8,7 +8,7 @@
   const requests=$("quick-chart-pair-requests"),sessions=$("quick-chart-active-sessions"),inbox=$("quick-chart-inbox-list");
   if(!sb||![state,status,pin,confirmPin,save,revoke,requests,sessions,inbox].every(Boolean))return;
   const endpoint="https://sxdsfklllilhdyuamvvg.supabase.co/functions/v1/external-quick-chart-pair";
-  const key="sb_publishable_AQ5-Pn1knmBhSFyt5aMtjQ_XQynLJ_L";
+  const key=window.LuriaSupabasePublishableKey || sb.supabaseKey;
   let owner="",epoch=0,timer=null,configured=false,working=false;
   const clock=v=>new Date(v).toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"});
   async function call(action,payload={}){
