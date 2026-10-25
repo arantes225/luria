@@ -196,7 +196,7 @@ Deno.serve(async(req:Request)=>{
       return data?json({state:"approved",token,expires_at:request.expires_at}):json({state:"claimed"},409);
     }
 
-    if(action==="receive"||action==="send"){
+    if(action==="receive"||action==="send"||action==="check_session"){
       const id=String(payload.request_id||""),token=String(payload.token||"");
       if(!uuid(id)||!/^[a-f0-9]{64}$/i.test(token))return json({error:"Sessão inválida."},401);
       const {data:session,error}=await sb.from("quick_chart_pair_requests")
@@ -208,6 +208,7 @@ Deno.serve(async(req:Request)=>{
       const config=await settings(session.owner_id);
       if(!config||session.authorization_version!==config.authorization_version)
         return json({error:"Acesso revogado."},401);
+      if(action==="check_session")return json({ok:true,expires_at:session.expires_at});
       if(action==="receive"){
         const {data:portal,error:e}=await sb.from("external_quick_chart_portals")
           .select("content,updated_at,content_expires_at").eq("owner_id",session.owner_id).maybeSingle();
