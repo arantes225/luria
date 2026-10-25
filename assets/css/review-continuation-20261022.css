@@ -471,14 +471,17 @@ body[data-page="aprender"] .learn-tools .tool-card .tool-cta:hover {
    reviewed resource colors authoritative on the public learning cards. */
 body[data-ui="v2"][data-ui-context="study"][data-page="aprender"] .main .learn-tools .tool-card[data-resource="apostilas"] .tool-cta {
   background: #2387d9 !important;
+  background-color: #2387d9 !important;
   color: #fff !important;
 }
 body[data-ui="v2"][data-ui-context="study"][data-page="aprender"] .main .learn-tools .tool-card[data-resource="notes"] .tool-cta {
   background: #7657c7 !important;
+  background-color: #7657c7 !important;
   color: #fff !important;
 }
 body[data-ui="v2"][data-ui-context="study"][data-page="aprender"] .main .learn-tools .tool-card[data-resource="luriazap"] .tool-cta {
   background: #16a394 !important;
+  background-color: #16a394 !important;
   color: #fff !important;
 }
 
