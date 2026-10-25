@@ -22,7 +22,7 @@
     const continuationCss = document.createElement("link");
     continuationCss.id = "luria-review-continuation-css";
     continuationCss.rel = "stylesheet";
-    continuationCss.href = "/assets/css/review-continuation-20261022.css?v=20261025-review-fixes2";
+    continuationCss.href = "/assets/css/review-continuation-20261022.css?v=20261025-review-fixes3";
     document.head.appendChild(continuationCss);
     const continuationScript = document.createElement("script");
     continuationScript.id = "luria-review-continuation";
