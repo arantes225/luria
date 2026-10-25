@@ -5,19 +5,19 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
   if(!root)return;
   const C=window.LURIA_EXAM_CATALOG||[];
   const byId=new Map(C.flatMap(g=>g.tests.map(t=>[t.id,t])));
-  const state={group:1,search:"",view:"catalog",population:"adult-f",age:"",context:"",readings:{},history:[]};
+  const state={group:1,search:"",view:"catalog",mode:"reference",population:"adult-f",age:"",context:"",readings:{},history:[]};
   const e=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const number=s=>{if(s===undefined||s===null||String(s).trim()==="")return null;const v=Number(String(s).replace(",",".").trim());return Number.isFinite(v)?v:null};
   const fmt=n=>Number.isFinite(n)?Number(n.toFixed(2)).toLocaleString("pt-BR"):"—";
   const isAdult=()=>state.population.startsWith("adult");
   const isGest=()=>state.population.startsWith("gest");
   const itemState=id=>state.readings[id]||(state.readings[id]={value:"",min:"",max:""});
-  function ranges(t){
+  function ranges(t,useCustom=true){
     const r=itemState(t.id);
     if(t.kind==="qual")return {min:null,max:null,custom:false,available:false};
     const overrideLow=number(r.min),overrideHigh=number(r.max);
     const custom=(overrideLow!==null||overrideHigh!==null);
-    if(custom)return {min:overrideLow,max:overrideHigh,custom:true,available:true};
+    if(useCustom&&custom)return {min:overrideLow,max:overrideHigh,custom:true,available:true};
     if((isAdult()&&state.age!==""&&Number(state.age)<18)||(!isAdult()&&!isGest()))return {min:null,max:null,custom:false,available:false};
     if(isGest()&&t.name!=="Hemoglobina")return {min:null,max:null,custom:false,available:false};
     if(t.name==="Hemoglobina"){
@@ -39,23 +39,48 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
   function reading(name){const t=C.flatMap(g=>g.tests).find(t=>t.name===name);if(!t)return null;return number(itemState(t.id).value)}
   function has(name){return reading(name)!==null}
   function renderLayout(){
-    root.innerHTML=`<div class="ex-hero"><div><div class="ex-kicker">Modo Trabalho · Apoio à interpretação</div><h2>Exames laboratoriais</h2><p>Consulte referências, registre resultados e organize o raciocínio clínico. Sem identificação de pacientes e sem envio automático de dados.</p></div><div class="ex-hero-stat">${C.reduce((n,g)=>n+g.tests.length,0)}<small>parâmetros · ${C.length} grupos</small></div></div>
-    <div class="ex-tabs" role="tablist" aria-label="Seções"><button type="button" data-view="catalog" class="active">Consultar e preencher</button><button type="button" data-view="analysis">Interpretação integrada</button><button type="button" data-view="history">Coletas da sessão</button><button type="button" data-view="sources">Referências e critérios</button></div>
-    <div class="ex-notice">Apoio à decisão, não diagnóstico automático. Intervalos exibidos são orientativos para adultos quando disponíveis. Utilize prioritariamente os limites do laudo e confirme unidade, método, idade, gestação e contexto. Resultados potencialmente críticos exigem avaliação clínica imediata.</div>
-    <div class="ex-controls" style="margin-top:16px"><label>Buscar exame ou painel<input id="ex-search" type="search" placeholder="Ex.: ferritina, gasometria, urina…" autocomplete="off"></label><label>Perfil de referência<select id="ex-pop"><option value="adult-f">Adulto • feminino</option><option value="adult-m">Adulto • masculino</option><option value="ped">Pediátrico • informar laudo</option><option value="gest-1">Gestante • 1º trimestre</option><option value="gest-2">Gestante • 2º trimestre</option><option value="gest-3">Gestante • 3º trimestre</option></select></label><label>Idade (opcional)<input id="ex-age" type="number" min="0" max="120" placeholder="Anos" inputmode="numeric"></label></div>
-    <div class="ex-layout"><nav class="ex-side" id="ex-nav" aria-label="Grupos de exames"></nav><section class="ex-main" id="ex-panel"></section></div>`;
-    root.querySelectorAll("[data-view]").forEach(b=>b.addEventListener("click",()=>{state.view=b.dataset.view;renderPanel()}));
-    root.querySelector("#ex-search").addEventListener("input",evt=>{state.search=evt.target.value.trim().toLowerCase();state.view="catalog";renderNav();renderPanel()});
-    root.querySelector("#ex-pop").addEventListener("change",evt=>{state.population=evt.target.value;renderPanel()});
-    root.querySelector("#ex-age").addEventListener("input",evt=>{state.age=evt.target.value;renderPanel()});
-    renderNav();renderPanel();
+  root.innerHTML=`<section class="ex-title-card" aria-label="Cabeçalho de Exames"><div class="ex-title-copy"><h2>Exames</h2><p>Valores de referência laboratoriais</p></div><a class="ex-back-link" href="/trabalho/" aria-label="Voltar à Central do Trabalho"><span aria-hidden="true">←</span> Voltar</a></section>
+    <div class="ex-toolbar"><button id="ex-patient-toggle" class="ex-btn primary ex-patient-button" type="button" aria-expanded="false" aria-controls="ex-patient-tabs">+ Adicionar resultados do paciente</button></div>
+    <div class="ex-tabs" id="ex-patient-tabs" role="tablist" aria-label="Ferramentas do paciente" hidden><button type="button" data-view="catalog" class="active">Resultados</button><button type="button" data-view="analysis">Interpretação integrada</button><button type="button" data-view="history">Coletas da sessão</button><button type="button" data-view="sources">Critérios e fontes</button></div>
+    <div class="ex-notice" id="ex-patient-notice" hidden>Apoio ao raciocínio, não diagnóstico automático. Os limites do laboratório devem prevalecer. Confirme método, unidade e contexto clínico. Não informe identificadores do paciente.</div>
+    <div class="ex-controls"><label>Buscar exame ou painel<input id="ex-search" type="search" placeholder="Ex.: ferritina, gasometria, urina…" autocomplete="off"></label><label>Perfil de referência<select id="ex-pop"><option value="adult-f">Adulto • feminino</option><option value="adult-m">Adulto • masculino</option><option value="ped">Pediátrico • conferir laudo</option><option value="gest-1">Gestante • 1º trimestre</option><option value="gest-2">Gestante • 2º trimestre</option><option value="gest-3">Gestante • 3º trimestre</option></select></label><label id="ex-age-wrap" hidden>Idade (opcional)<input id="ex-age" type="number" min="0" max="120" placeholder="Anos" inputmode="numeric"></label></div>
+    <div class="ex-layout"><nav class="ex-side" id="ex-nav" aria-label="Grupos de exames"></nav><section class="ex-main" id="ex-panel" aria-live="polite"></section></div>`;
+  function syncMode(){
+    const patient=state.mode==="patient";
+    const toggle=root.querySelector("#ex-patient-toggle");
+    toggle.textContent=patient?"← Voltar aos valores de referência":"+ Adicionar resultados do paciente";
+    toggle.classList.toggle("primary",!patient);
+    toggle.setAttribute("aria-expanded",String(patient));
+    root.querySelector("#ex-patient-tabs").hidden=!patient;
+    root.querySelector("#ex-patient-notice").hidden=!patient;
+    root.querySelector("#ex-age-wrap").hidden=!patient;
+    if(!patient)state.view="catalog";
+    renderPanel();
   }
+  root.querySelector("#ex-patient-toggle").addEventListener("click",()=>{
+    state.mode=state.mode==="reference"?"patient":"reference";
+    state.view="catalog";
+    syncMode();
+  });
+  root.querySelectorAll("[data-view]").forEach(b=>b.addEventListener("click",()=>{
+    if(state.mode!=="patient")return;
+    state.view=b.dataset.view;renderPanel();
+  }));
+  root.querySelector("#ex-search").addEventListener("input",evt=>{
+    state.search=evt.target.value.trim().toLowerCase();
+    state.view="catalog";renderNav();renderPanel();
+  });
+  root.querySelector("#ex-pop").addEventListener("change",evt=>{state.population=evt.target.value;renderPanel()});
+  root.querySelector("#ex-age").addEventListener("input",evt=>{state.age=evt.target.value;renderPanel()});
+  renderNav();syncMode();
+}
   function renderNav(){
     const nav=root.querySelector("#ex-nav");
     nav.innerHTML=C.map(g=>`<button type="button" data-group="${g.id}" class="${state.group===g.id?"is-active":""}">${g.id}. ${e(g.name)}<span>${g.tests.length}</span></button>`).join("");
     nav.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{state.group=Number(b.dataset.group);state.search="";root.querySelector("#ex-search").value="";state.view="catalog";renderNav();renderPanel()}));
   }
   function renderPanel(){
+    if(state.mode==="reference")state.view="catalog";
     root.querySelectorAll("[data-view]").forEach(b=>b.classList.toggle("active",b.dataset.view===state.view));
     const panel=root.querySelector("#ex-panel");
     if(state.view==="catalog")return renderCatalog(panel);
@@ -68,25 +93,29 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     return C.flatMap(g=>g.name.toLowerCase().includes(state.search)?g.tests:g.tests.filter(t=>t.name.toLowerCase().includes(state.search)));
   }
   function renderCatalog(panel){
-    const items=matching(),selected=C.find(g=>g.id===state.group);
-    panel.innerHTML=`<h3 class="ex-section-title">${state.search?"Resultados da pesquisa":e(selected.name)}</h3><p class="ex-subtitle">${items.length} exames. Preencha apenas os resultados disponíveis. Os limites mínimo/máximo do laudo substituem referências genéricas quando informados. Deixe o campo em branco se não houver resultado.</p>
-    <div class="ex-tests-head"><span>Exame</span><span>Referência</span><span>Resultado</span><span>Mín. do laudo</span><span>Máx. do laudo</span></div><div id="ex-rows"></div>
-    <div class="ex-actions"><button class="ex-btn primary" id="ex-analyze" type="button">Interpretar resultados</button><button class="ex-btn" id="ex-save" type="button">Registrar coleta nesta sessão</button><button class="ex-btn danger" id="ex-clear" type="button">Limpar sessão</button></div>
-    <p class="ex-source-note">Exames dependentes do método são exibidos sem faixa genérica. A ausência de destaque não demonstra normalidade.</p>`;
-    const rows=panel.querySelector("#ex-rows");
-    rows.innerHTML=items.map(t=>{
-      const r=itemState(t.id),lim=ranges(t),s=status(t);
-      const ref=lim.available?`${lim.min===null?"":fmt(lim.min)}${lim.min!==null&&lim.max!==null?" a ":""}${lim.max===null?"":fmt(lim.max)}`:"Conferir laudo";
-      const p=s==="low"?"Abaixo":s==="high"?"Acima":s==="normal"?"Na faixa":s==="invalid"?"Valor inválido":s==="recorded"?"Registrado":"";
-      const inp=t.kind==="qual"?`<select data-id="${t.id}" data-field="value"><option value="">Selecionar</option>${["Negativo","Positivo","Não reagente","Reagente","Indeterminado","Ausente","Presente","Traços"].map(v=>`<option value="${v}" ${r.value===v?"selected":""}>${v}</option>`).join("")}</select>`:`<input data-id="${t.id}" data-field="value" inputmode="decimal" autocomplete="off" placeholder="—" value="${e(r.value)}" aria-label="Resultado ${e(t.name)}">`;
-      return `<div class="ex-test" data-row="${t.id}"><div class="ex-test-name"><strong>${e(t.name)}</strong><small>${e(t.unit)}</small></div><span class="ex-ref" data-ref>${ref}${lim.diagnostic?"*":""}<span class="ex-status ${s}" data-status>${p}</span></span>${inp}<input data-id="${t.id}" data-field="min" ${t.kind==="qual"?"disabled":""} placeholder="—" inputmode="decimal" value="${e(r.min)}" aria-label="Limite inferior para ${e(t.name)}"><input data-id="${t.id}" data-field="max" ${t.kind==="qual"?"disabled":""} placeholder="—" inputmode="decimal" value="${e(r.max)}" aria-label="Limite superior para ${e(t.name)}"></div>`;
-    }).join("")||"<p class='ex-muted'>Nenhum exame encontrado.</p>";
-    rows.querySelectorAll("input,select").forEach(el=>el.addEventListener("change",onReading));
-    rows.querySelectorAll("input").forEach(el=>el.addEventListener("input",onReading));
-    panel.querySelector("#ex-analyze").addEventListener("click",()=>{state.view="analysis";renderPanel()});
-    panel.querySelector("#ex-save").addEventListener("click",addSnapshot);
-    panel.querySelector("#ex-clear").addEventListener("click",clear);
-  }
+  const items=matching(),selected=C.find(g=>g.id===state.group),patient=state.mode==="patient";
+  panel.innerHTML=`<h3 class="ex-section-title">${state.search?"Resultados da pesquisa":e(selected.name)}</h3>
+    <p class="ex-subtitle">${items.length} exames · ${patient?"Informe somente os resultados disponíveis e os limites do laudo, quando houver.":"Intervalos orientativos quando disponíveis; para os demais, confira o laudo e o método do laboratório."}</p>
+    <div class="ex-tests-head ${patient?"":"ex-reference-only"}">${patient?"<span>Exame</span><span>Referência</span><span>Resultado</span><span>Mín. do laudo</span><span>Máx. do laudo</span>":"<span>Exame</span><span>Valor de referência</span>"}</div>
+    <div id="ex-rows"></div>
+    ${patient?'<div class="ex-actions"><button class="ex-btn primary" id="ex-analyze" type="button">Interpretar resultados</button><button class="ex-btn" id="ex-save" type="button">Registrar coleta nesta sessão</button><button class="ex-btn danger" id="ex-clear" type="button">Limpar sessão</button></div>':""}
+    <p class="ex-source-note">Faixas orientativas não são critérios de conduta. Exames dependentes do método aparecem sem intervalo genérico; a ausência de destaque não demonstra normalidade.</p>`;
+  const rows=panel.querySelector("#ex-rows");
+  rows.innerHTML=items.map(t=>{
+    const r=itemState(t.id),lim=ranges(t,patient),s=patient?status(t):"";
+    const ref=lim.available?`${lim.min===null?"":fmt(lim.min)}${lim.min!==null&&lim.max!==null?" a ":""}${lim.max===null?"":fmt(lim.max)}`:"Conferir laudo";
+    if(!patient)return `<div class="ex-test ex-reference-only" data-row="${t.id}"><div class="ex-test-name"><strong>${e(t.name)}</strong></div><span class="ex-ref">${ref}${lim.diagnostic?"*":""}<small class="ex-ref-unit">${e(t.unit==="qualitativo"?"Conforme método":t.unit)}</small></span></div>`;
+    const p=s==="low"?"Abaixo":s==="high"?"Acima":s==="normal"?"Na faixa":s==="invalid"?"Valor inválido":s==="recorded"?"Registrado":"";
+    const inp=t.kind==="qual"?`<select data-id="${t.id}" data-field="value" aria-label="Resultado ${e(t.name)}"><option value="">Selecionar</option>${["Negativo","Positivo","Não reagente","Reagente","Indeterminado","Ausente","Presente","Traços"].map(v=>`<option value="${v}" ${r.value===v?"selected":""}>${v}</option>`).join("")}</select>`:`<input data-id="${t.id}" data-field="value" inputmode="decimal" autocomplete="off" placeholder="—" value="${e(r.value)}" aria-label="Resultado ${e(t.name)}">`;
+    return `<div class="ex-test" data-row="${t.id}"><div class="ex-test-name"><strong>${e(t.name)}</strong><small>${e(t.unit)}</small></div><span class="ex-ref" data-ref>${ref}${lim.diagnostic?"*":""}<span class="ex-status ${s}" data-status>${p}</span></span>${inp}<input data-id="${t.id}" data-field="min" ${t.kind==="qual"?"disabled":""} placeholder="—" inputmode="decimal" value="${e(r.min)}" aria-label="Limite inferior para ${e(t.name)}"><input data-id="${t.id}" data-field="max" ${t.kind==="qual"?"disabled":""} placeholder="—" inputmode="decimal" value="${e(r.max)}" aria-label="Limite superior para ${e(t.name)}"></div>`;
+  }).join("")||"<p class='ex-muted'>Nenhum exame encontrado.</p>";
+  if(!patient)return;
+  rows.querySelectorAll("input,select").forEach(el=>el.addEventListener("change",onReading));
+  rows.querySelectorAll("input").forEach(el=>el.addEventListener("input",onReading));
+  panel.querySelector("#ex-analyze").addEventListener("click",()=>{state.view="analysis";renderPanel()});
+  panel.querySelector("#ex-save").addEventListener("click",addSnapshot);
+  panel.querySelector("#ex-clear").addEventListener("click",clear);
+}
   function onReading(evt){
     const {id,field}=evt.target.dataset;
     const r=itemState(id);r[field]=evt.target.value;
