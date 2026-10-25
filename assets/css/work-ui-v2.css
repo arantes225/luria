@@ -671,7 +671,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
     color: var(--color-text-secondary) !important;
   }
   @media (max-width:760px) {
-    body[data-ui-work="v2"] .luria-page-spotlight-copy strong,body[data-ui-work="v2"] .work-dashboard-head h2 {
+    body[data-ui-work="v2"] .work-dashboard-head h2 {
       font-size: 28px !important;
     }
   }

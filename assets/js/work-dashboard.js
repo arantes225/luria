@@ -27,7 +27,6 @@
     ['Consulta e prescrição', [
       ['rx', 'Bulário', 'Consulte medicamentos e apresentações.', 'bulario/', 'blue'],
       ['file', 'Prescrição', 'Organize suas prescrições.', 'prescricao/', 'green'],
-      ['protocol', 'Protocolos & Tratamentos', 'Condutas, exames e prescrições modelo em um só lugar.', 'protocolos/', 'teal'],
       ['protocol', 'Cola rápida', 'Anotações com acesso temporário.', 'prontuario-rapido/', 'violet']
     ]],
     ['Avaliação e apoio clínico', [
