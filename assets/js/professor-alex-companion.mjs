@@ -45,7 +45,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
     }
   } catch {}
 
-  const cssHref = new URL('../css/professor-alex-companion.css?v=20261023-visible2', import.meta.url).href;
+  const cssHref = new URL('../css/professor-alex-companion.css?v=20261025-visible3', import.meta.url).href;
   shadow.innerHTML = `
     <link rel="stylesheet" href="${cssHref}">
     <style>

@@ -2,20 +2,39 @@
 // Load the companion only after the existing application has authenticated.
 (() => {
   if(document.body?.dataset.uiNav!=="v2")return;
-  let companion=null,currentUser=null,revision=0;
+  let companion=null,currentUser=null,revision=0,pendingStart=null;
   const start=async (event={})=>{
     if(window.LuriaSessionInvalidated)return false;
     // ui-navigation is deferred on many pages. It can start after the auth
     // event has already fired, especially when returning from the PWA cache.
     const user=event.detail?.user||window.docmapUser||window.docmapSession?.user;
     const userId=user?.id;if(!userId)return false;
-    if(currentUser===userId&&companion){companion.setAccess(event.detail?.isAdmin??window.docmapIsAdmin);return;}
+    const isAdmin=event.detail?.isAdmin??window.docmapIsAdmin;
+    if(currentUser===userId&&companion){companion.setAccess(isAdmin);return true;}
+    if(currentUser===userId&&pendingStart){return pendingStart;}
     const ticket=++revision;currentUser=userId;companion?.destroy();companion=null;
-    try{const {mountAlexCompanion}=await import('/assets/js/professor-alex-companion.mjs?v=20261023-visible2');if(ticket!==revision||window.LuriaSessionInvalidated)return false;companion=mountAlexCompanion({userId,isAdmin:event.detail?.isAdmin??window.docmapIsAdmin});return !!companion;}catch(error){console.warn('Alex indisponível',error);return false;}
+    pendingStart=new Promise((resolve)=>{
+      import('/assets/js/professor-alex-companion.mjs?v=20261025-visible3')
+        .then(({mountAlexCompanion})=>{
+          if(ticket!==revision||window.LuriaSessionInvalidated){resolve(false);return;}
+          if(!companion){
+            companion=mountAlexCompanion({userId,isAdmin});
+          }
+          resolve(!!companion);
+        })
+        .catch(error=>{
+          console.warn('Alex indisponível',error);
+          resolve(false);
+        })
+        .finally(()=>{
+          if(ticket===revision)pendingStart=null;
+        });
+    });
+    return pendingStart;
   };
   window.addEventListener('docmap:ready',start);
   window.addEventListener('docmap:access-updated',start);
-  window.addEventListener('luria:session-invalidated',()=>{revision++;currentUser=null;companion?.destroy();companion=null;});
+  window.addEventListener('luria:session-invalidated',()=>{revision++;pendingStart=null;currentUser=null;companion?.destroy();companion=null;});
   // Deferred navigation can execute after a fast cached login already emitted ready.
   const resume=()=>start({detail:{user:window.docmapUser||window.docmapSession?.user,isAdmin:window.docmapIsAdmin}});
   window.addEventListener('pageshow',resume);
@@ -23,9 +42,9 @@
   // A cached PWA may expose the authenticated user just after this deferred
   // script evaluates. Retry briefly so the robot is never lost to that race.
   let retries=0;
-  const retry=()=>{if(companion||retries++>=24)return;resume();if(!companion)setTimeout(retry,250);};
+  const retry=async ()=>{if(companion||retries++>=24)return;await resume();if(!companion)setTimeout(retry,250);};
   retry();
-  document.addEventListener('click',event=>{if(event.target.closest?.('#logout,#luria-profile-logout')){revision++;currentUser=null;companion?.destroy();companion=null;}});
+  document.addEventListener('click',event=>{if(event.target.closest?.('#logout,#luria-profile-logout')){revision++;pendingStart=null;currentUser=null;companion?.destroy();companion=null;}});
 })();
 (() => {
   const body = document.body;
