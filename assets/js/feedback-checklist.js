@@ -34,6 +34,10 @@
         activity.dataset.feedbackIntroObserver = 'true';
         new MutationObserver(hideActivityIntro).observe(activity, {childList:true, subtree:true});
       }
+      if (!document.body.dataset.feedbackIntroObserver) {
+        document.body.dataset.feedbackIntroObserver = 'true';
+        new MutationObserver(hideActivityIntro).observe(document.body, {childList:true, subtree:true});
+      }
       if (activity && !activity.querySelector('.feedback-room-score')) {
         const score = document.createElement('section');
         score.className = 'feedback-room-score';
