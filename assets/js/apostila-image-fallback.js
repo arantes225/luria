@@ -26,6 +26,13 @@
       url.pathname = url.pathname.replace(/\/wiki\/Special:Redirect\/file\//i, '/wiki/Special:FilePath/');
       return url.href;
     }
+    // Public Supabase Storage can briefly return a stale edge response while
+    // the page is hydrating. Retry the reviewed asset once before hiding it.
+    if (image.dataset.apostilaImageFallback === 'approved-source' &&
+      /\.supabase\.co$/i.test(url.hostname) && /\/storage\/v1\/object\/public\//i.test(url.pathname)) {
+      url.searchParams.set('_luria_retry', String(Date.now()));
+      return url.href;
+    }
     const explicitAlternative = image.dataset.apostilaFallbackUrl;
     if (explicitAlternative) {
       try {
