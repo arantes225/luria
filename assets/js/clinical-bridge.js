@@ -49,7 +49,7 @@
       return true;
     },
     openDrug(term) { location.href = "/trabalho/bulario/?q=" + qs(term); },
-    openRecipe(value) { location.href = "/trabalho/receitas/?q=" + qs(value); },
+    openRecipe(value) { location.href = "/trabalho/protocolos/?q=" + qs(value); },
     openProtocol(slug) { location.href = "/trabalho/protocolos/?protocol=" + qs(slug); }
   };
 })();
