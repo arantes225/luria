@@ -36,3 +36,9 @@ id_ed25519
 *service-account*.json
 *credentials*.json
 *secrets*.json
+
+# Arquivos de evidências ou saídas que possam conter dados sensíveis
+docs/auditoria-*/evidencias/
+**/*.env
+**/*.env.*
+!**/*.env.example
