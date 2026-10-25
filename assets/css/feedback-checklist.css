@@ -1,0 +1,93 @@
+/* Consolidated visual corrections from the product review checklist. */
+@layer luria-feedback {
+  body[data-page="cronograma"] #week-today { display:none !important; }
+  body[data-page="cronograma"] .topbar.dashboard-shell-topbar::after { content:none !important; }
+
+  body[data-page="aprender"] .tool-cta,
+  body[data-page="consolidar"] .learn-cta {
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    min-height:36px !important;
+    padding:8px 16px !important;
+    border:0 !important;
+    border-radius:12px !important;
+    background:linear-gradient(135deg,#38bdf8 0%,#60a5fa 48%,#818cf8 100%) !important;
+    background-image:linear-gradient(135deg,#38bdf8 0%,#60a5fa 48%,#818cf8 100%) !important;
+    color:#fff !important;
+    box-shadow:0 6px 16px rgba(37,99,235,.24) !important;
+  }
+  body[data-page="consolidar"] .learn-card--secondary:nth-of-type(2) .learn-cta { background-image:linear-gradient(135deg,#38bdf8,#818cf8) !important; }
+  body[data-page="consolidar"] .learn-card--secondary:nth-of-type(3) .learn-cta { background-image:linear-gradient(135deg,#60a5fa,#a78bfa) !important; }
+
+  body[data-page="questoes"] #qs-daily-card .qs-home-daily-action,
+  body[data-page="flashcards"] #review-launcher .review-launcher-action {
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:8px !important;
+    width:100% !important;
+  }
+  body[data-page="questoes"] #qs-start-daily,
+  body[data-page="flashcards"] #start-review-session {
+    width:calc(100% - 16px) !important;
+    margin:0 8px !important;
+    align-self:center !important;
+    justify-content:center !important;
+  }
+  body[data-page="flashcards"] #review-launcher-count { order:-1 !important; display:block !important; }
+  body[data-page="flashcards"] .qs-home-side-column { display:flex !important; flex-direction:column !important; }
+  body[data-page="flashcards"] .qs-home-side-column .flash-home-actions { order:1 !important; }
+  body[data-page="flashcards"] .qs-home-side-column .error-quick-metrics { order:2 !important; }
+
+  body[data-page="erros"] .qs-home-my-lists-content {
+    display:flex !important;
+    flex-direction:row !important;
+    flex-wrap:nowrap !important;
+    gap:12px !important;
+    overflow-x:auto !important;
+    overflow-y:hidden !important;
+    padding:4px 4px 12px 0 !important;
+  }
+  body[data-page="erros"] .qs-home-my-lists-content > * { flex:0 0 min(470px, calc(100% - 12px)) !important; }
+
+  body[data-page="curriculo"] .cv-nav { display:none !important; }
+  body[data-page="curriculo"] .cv-page { padding-top:0 !important; }
+
+  body[data-page="amigos"] .sc-community-note { display:none !important; }
+  body[data-page="amigos"] #community-groups .sc-eyebrow,
+  body[data-page="amigos"] #community-rooms .sc-eyebrow { display:none !important; }
+  body[data-page="amigos"] #community-groups > .social-card-head,
+  body[data-page="amigos"] #community-rooms > .social-card-head {
+    align-items:center !important;
+    border:1px solid var(--color-border) !important;
+    border-radius:18px !important;
+    background:linear-gradient(135deg,color-mix(in srgb,var(--sf-violet) 16%,var(--color-surface)),color-mix(in srgb,var(--sf-teal) 9%,var(--color-surface))) !important;
+    padding:20px !important;
+  }
+  body[data-page="amigos"] #community-groups > .social-card-head p,
+  body[data-page="amigos"] #community-rooms > .social-card-head p { margin:8px 0 0 !important; }
+  body[data-page="amigos"] #social-join-form { margin-top:-2px !important; }
+  body[data-page="amigos"] #social-room .sv-breadcrumb { display:none !important; }
+  body[data-page="amigos"] #social-room .social-room-header {
+    border:1px solid var(--color-border) !important;
+    border-radius:18px !important;
+    background:linear-gradient(135deg,color-mix(in srgb,var(--sf-violet) 16%,var(--color-surface)),color-mix(in srgb,var(--sf-teal) 9%,var(--color-surface))) !important;
+    padding:16px 18px !important;
+  }
+  body[data-page="amigos"] .feedback-room-score { display:grid; gap:8px; padding:16px; margin:0 0 12px; border:1px solid var(--color-border); border-radius:16px; background:var(--color-surface); }
+  body[data-page="amigos"] .feedback-room-score strong { font-size:18px; }
+  body[data-page="amigos"] .feedback-room-score p { margin:0; color:var(--color-text-secondary); font-size:13px; line-height:1.5; }
+  body[data-page="amigos"] .feedback-simulator-shell { overflow:hidden; border:1px solid var(--color-border); border-radius:18px; background:var(--color-surface); }
+  body[data-page="amigos"] .feedback-simulator-head { display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; padding:13px 16px; border-bottom:1px solid var(--color-border); background:linear-gradient(135deg,color-mix(in srgb,var(--sf-warm) 10%,var(--color-surface)),color-mix(in srgb,var(--sf-violet) 8%,var(--color-surface))); }
+  body[data-page="amigos"] .feedback-simulator-head span { color:var(--color-text-secondary); font-size:12px; }
+  body[data-page="amigos"] .feedback-simulator-body { padding:8px; }
+  body[data-page="amigos"] .feedback-simulator-body iframe { height:min(680px,calc(100dvh - 220px)) !important; border-radius:12px !important; }
+  body[data-page="curriculo"] #cv-rules select { min-height:42px; border-radius:10px; border:1px solid var(--color-border); background:var(--color-surface); color:var(--color-text-primary); padding:9px 12px; font:inherit; }
+
+  @media (max-width:900px) {
+    body[data-page="amigos"] #community-groups > .social-card-head,
+    body[data-page="amigos"] #community-rooms > .social-card-head { align-items:flex-start !important; }
+  }
+}

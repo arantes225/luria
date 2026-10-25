@@ -6868,6 +6868,15 @@ iniciarApp();
   document.head.appendChild(script);
 })();
 
+(function loadFeedbackChecklist(){
+  if(document.querySelector('script[data-luria-feedback-checklist]'))return;
+  const script=document.createElement('script');
+  script.src='/assets/js/feedback-checklist.js?v=1';
+  script.dataset.luriaFeedbackChecklist='true';
+  script.defer=true;
+  document.head.appendChild(script);
+})();
+
 (function installLuriaStudyTimer(){
   if (window.LuriaStudyTimer) return;
   const KEY="luria:active-study-session:v1", IDLE_MS=15*60*1000;

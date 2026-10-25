@@ -91,7 +91,12 @@
     }
     simActivity=a.id;
     setWide(true);
-    $('na-simulator').replaceChildren(makeFrame('room-native-simulator','simulator','/plantao/sala-emergencia/',a.case_id));
+    const simulatorFrame=makeFrame('room-native-simulator','simulator','/plantao/sala-emergencia/',a.case_id);
+    const simulatorShell=document.createElement('section');
+    simulatorShell.className='feedback-simulator-shell';
+    simulatorShell.innerHTML='<div class="feedback-simulator-head"><strong>Simulador da sala</strong><span>Bloco clínico ajustado à atividade coletiva</span></div><div class="feedback-simulator-body"></div>';
+    simulatorShell.querySelector('.feedback-simulator-body').append(simulatorFrame);
+    $('na-simulator').replaceChildren(simulatorShell);
     $('na-simulator').scrollIntoView({block:'start',behavior:'smooth'});
    };
    $('na-play')?.addEventListener('click',mountSimulator);
