@@ -10,7 +10,7 @@
   const sendTab=$("external-tab-send"),receiveTab=$("external-tab-receive");
   const sendText=$("external-send-text"),received=$("external-received-text");
   const sendStatus=$("external-send-status"),receiveStatus=$("external-receive-status");
-  let pairing=null,session=null,version=0,pollTimer=null,receiveTimer=null,activeTab="send";
+  let pairing=null,session=null,version=0,pollTimer=null,receiveTimer=null,checkTimer=null,activeTab="send";
   const username=()=>usernameField.value.trim().toLowerCase().replace(/[^a-z0-9._-]/g,"").slice(0,30);
   async function request(body){
     const response=await fetch(ENDPOINT,{method:"POST",cache:"no-store",headers:{"Content-Type":"application/json","apikey":APIKEY},body:JSON.stringify(body)});
@@ -32,7 +32,7 @@
     if(!sending)loadReceived();
   }
   function reset(){
-    version++;cancelTimers();pairing=null;session=null;
+    version++;cancelTimers();if(checkTimer!==null){clearTimeout(checkTimer);checkTimer=null;}pairing=null;session=null;
     gate.hidden=false;pending.hidden=true;editor.hidden=true;
     $("external-status").textContent="Acesso temporário";
     pinField.value="";error.hidden=true;
@@ -40,14 +40,14 @@
   }
   function stillValid(){
     if(!session)return false;
-    if(Date.now()>=session.expiresAt){reset();error.textContent="A sessão expirou. Abra a Cola Rápida no celular para gerar outro PIN.";error.hidden=false;return false;}
+    if(Date.now()>=session.expiresAt){reset();error.textContent="A sessão expirou. Digite sua senha fixa e peça nova aprovação no celular.";error.hidden=false;return false;}
     return true;
   }
   async function enter(){
-    const name=username(),pin=pinField.value.replace(/\D/g,"").slice(0,2);
+    const name=username(),pin=pinField.value.replace(/\D/g,"").slice(0,4);
     error.hidden=true;
-    if(!/^[a-z0-9][a-z0-9._-]{2,29}$/.test(name)||!/^\d{2}$/.test(pin)){
-      error.textContent="Informe usuário e PIN de 2 dígitos.";error.hidden=false;return;
+    if(!/^[a-z0-9][a-z0-9._-]{2,29}$/.test(name)||!/^\d{4}$/.test(pin)){
+      error.textContent="Informe usuário e senha fixa de 4 dígitos.";error.hidden=false;return;
     }
     entry.disabled=true;entry.textContent="Verificando…";
     const generation=++version;
@@ -75,10 +75,26 @@
         $("external-status").textContent="Conectado";
         expiry.textContent="Expira às "+new Date(session.expiresAt).toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"});
         tab("receive");
+        monitorSession(generation);
         return;
       }
     }catch(e){if(e.status===410||e.status===409){reset();error.textContent="Solicitação negada ou expirada.";error.hidden=false;return;}}
     pollTimer=setTimeout(()=>poll(generation),2200);
+  }
+  async function monitorSession(generation){
+    if(generation!==version||!stillValid())return;
+    try{
+      await request({action:"check_session",request_id:session.request_id,token:session.token});
+    }catch(e){
+      if(generation!==version)return;
+      if(e.status===401||e.status===403){
+        reset();
+        error.textContent="Todos os acessos foram revogados ou a sessão expirou. Solicite outra aprovação.";
+        error.hidden=false;
+        return;
+      }
+    }
+    if(generation===version)checkTimer=setTimeout(()=>monitorSession(generation),7000);
   }
   async function loadReceived(){
     if(!stillValid()||activeTab!=="receive")return;
@@ -115,7 +131,7 @@
     }finally{button.disabled=false;}
   }
   entry.addEventListener("click",enter);
-  pinField.addEventListener("input",()=>{pinField.value=pinField.value.replace(/\D/g,"").slice(0,2);});
+  pinField.addEventListener("input",()=>{pinField.value=pinField.value.replace(/\D/g,"").slice(0,4);});
   pinField.addEventListener("keydown",event=>{if(event.key==="Enter")enter();});
   usernameField.addEventListener("keydown",event=>{if(event.key==="Enter")pinField.focus();});
   $("external-pending-cancel").addEventListener("click",reset);

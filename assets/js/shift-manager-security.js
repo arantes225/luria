@@ -2,7 +2,7 @@
   const sb = window.supabaseClient;
   if (!sb) return;
 
-  const ENDPOINT = "https://sxdsfklllilhdyuamvvg.supabase.co/functions/v1/external-quick-chart";
+  const ENDPOINT = "https://sxdsfklllilhdyuamvvg.supabase.co/functions/v1/external-quick-chart-pair";
   const APIKEY = "sb_publishable_AQ5-Pn1knmBhSFyt5aMtjQ_XQynLJ_L";
   const IS_HUB = document.body.dataset.page === "trabalho_gestor_plantoes";
   let user = null;
@@ -78,7 +78,7 @@
         <div class="gsm-lock-icon" aria-hidden="true">⌑</div>
         <h2 id="gsm-gate-title">Gestor de Plantões protegido</h2>
         <p id="gsm-gate-copy">Confirme sua senha para continuar.</p>
-        <div id="gsm-gate-pin-wrap" class="gsm-field" hidden><label for="gsm-gate-pin">Código de segurança</label><input id="gsm-gate-pin" data-pin type="text" inputmode="numeric" maxlength="6" autocomplete="one-time-code" data-lpignore="true" data-1p-ignore="true"></div>
+        <div id="gsm-gate-pin-wrap" class="gsm-field" hidden><label for="gsm-gate-pin">Código de segurança</label><input id="gsm-gate-pin" data-pin type="text" inputmode="numeric" maxlength="4" autocomplete="one-time-code" data-lpignore="true" data-1p-ignore="true"></div>
         <div id="gsm-gate-password-wrap" class="gsm-field" hidden><label for="gsm-gate-password">Senha da conta</label><input id="gsm-gate-password" type="password" autocomplete="current-password"></div>
         <div id="gsm-gate-error" class="gsm-error" role="status"></div>
         <div class="gsm-actions"><button id="gsm-gate-back" class="gsm-secondary" type="button">Voltar</button><button id="gsm-gate-enter" class="gsm-primary" type="button">Entrar</button></div>
@@ -101,7 +101,7 @@
     document.getElementById("gsm-gate-error").textContent = "";
     document.getElementById("gsm-gate-copy").textContent =
       m === "pin" ? "Digite o PIN de 4 dígitos do Gestor de Plantões." :
-      m === "cola" ? "Digite o código diário de 6 dígitos mostrado na Cola Rápida." :
+      m === "cola" ? "Digite o senha fixa de 4 dígitos mostrado na Cola Rápida." :
       "Digite a senha da sua conta LURIA.";
     setTimeout(() => { (m === "account" ? document.getElementById("gsm-gate-password") : document.getElementById("gsm-gate-pin"))?.focus(); }, 50);
   }
@@ -109,10 +109,16 @@
   function hideGate() { const gate = document.getElementById("gsm-gate"); if (gate) gate.hidden = true; }
 
   async function verifyColaPin(pin) {
-    if (!username) throw new Error("Defina um nome de usuário antes de usar o código diário da Cola Rápida.");
-    const response = await fetch(ENDPOINT, { method:"POST", headers:{"Content-Type":"application/json","apikey":APIKEY}, body:JSON.stringify({ username, code:pin, action:"verify_code" }) });
-    const data = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(data.error || "Código diário inválido.");
+    const {data:sessionData}=await sb.auth.getSession();
+    const token=sessionData?.session?.access_token;
+    if(!token)throw new Error("Entre na conta para verificar a senha fixa.");
+    const response=await fetch(ENDPOINT,{
+      method:"POST",
+      headers:{"Content-Type":"application/json","apikey":APIKEY,"Authorization":"Bearer "+token},
+      body:JSON.stringify({action:"verify_owner_pin",pin})
+    });
+    const data=await response.json().catch(()=>({}));
+    if(!response.ok)throw new Error(data.error||"Senha fixa incorreta.");
   }
 
   async function unlock() {
@@ -130,7 +136,7 @@
         if (current !== localStorage.getItem(keyHash(user.id))) throw new Error("PIN incorreto.");
       } else if (m === "cola") {
         const pin = String(document.getElementById("gsm-gate-pin")?.value || "").replace(/\D/g,"");
-        if (!/^\d{6}$/.test(pin)) throw new Error("Digite os 6 dígitos do código diário.");
+        if (!/^\d{4}$/.test(pin)) throw new Error("Digite os 6 dígitos do código diário.");
         await verifyColaPin(pin);
       } else if (m === "account") {
         const password = String(document.getElementById("gsm-gate-password")?.value || "");
@@ -161,7 +167,7 @@
         <div class="gsm-options">
           <label class="gsm-option"><input type="radio" name="gsm-mode" value="none"><span><strong>Sem senha</strong><small>Abre direto enquanto sua conta estiver conectada.</small></span></label>
           <label class="gsm-option"><input type="radio" name="gsm-mode" value="pin"><span><strong>PIN próprio de 4 dígitos</strong><small>Crie um PIN exclusivo para o Gestor de Plantões neste dispositivo.</small></span></label>
-          <label class="gsm-option"><input type="radio" name="gsm-mode" value="cola"><span><strong>Código diário da Cola Rápida</strong><small>Digite o código rotativo mostrado na Cola Rápida da sua conta.</small></span></label>
+          <label class="gsm-option"><input type="radio" name="gsm-mode" value="cola"><span><strong>Senha fixa da Cola Rápida</strong><small>Digite o código rotativo mostrado na Cola Rápida da sua conta.</small></span></label>
           <label class="gsm-option"><input type="radio" name="gsm-mode" value="account"><span><strong>Senha da conta</strong><small>Pede novamente a senha da sua conta LURIA ao entrar.</small></span></label>
         </div>
         <div id="gsm-pin-fields" class="gsm-setup-fields" hidden>
@@ -169,7 +175,7 @@
           <div class="gsm-field"><label>Confirmar PIN</label><input id="gsm-confirm-pin" data-pin type="text" inputmode="numeric" maxlength="4" autocomplete="new-password"></div>
         </div>
         <div id="gsm-cola-fields" class="gsm-setup-fields" hidden>
-          <div class="gsm-field"><label>Código diário da Cola Rápida</label><input id="gsm-cola-pin" data-pin type="text" inputmode="numeric" maxlength="6" autocomplete="one-time-code"></div>
+          <div class="gsm-field"><label>Senha fixa da Cola Rápida</label><input id="gsm-cola-pin" data-pin type="text" inputmode="numeric" maxlength="4" autocomplete="one-time-code"></div>
         </div>
         <div id="gsm-config-status" class="gsm-status" role="status"></div>
         <div class="gsm-actions"><button id="gsm-lock-now" class="gsm-secondary" type="button">Bloquear agora</button><button id="gsm-config-save" class="gsm-primary" type="button">Salvar</button></div>
@@ -216,7 +222,7 @@
         localStorage.setItem(keyHash(user.id), hash);
       } else if (selected === "cola") {
         const pin = String(document.getElementById("gsm-cola-pin")?.value || "").replace(/\D/g,"");
-        if (!/^\d{6}$/.test(pin)) throw new Error("Digite o código diário de 6 dígitos da Cola Rápida.");
+        if (!/^\d{4}$/.test(pin)) throw new Error("Digite o senha fixa de 4 dígitos da Cola Rápida.");
         await verifyColaPin(pin);
         localStorage.removeItem(keyHash(user.id));
       } else {
@@ -226,7 +232,7 @@
       setUnlocked(true);
       document.getElementById("gsm-config").hidden = true;
       hideGate();
-      const label = selected === "none" ? "Sem senha" : selected === "pin" ? "PIN próprio" : selected === "cola" ? "Código diário" : "Senha da conta";
+      const label = selected === "none" ? "Sem senha" : selected === "pin" ? "PIN próprio" : selected === "cola" ? "Senha fixa" : "Senha da conta";
       const securityButton = document.getElementById("gm-security");
       if (securityButton) securityButton.textContent = `Segurança · ${label}`;
     } catch (e) {
@@ -244,7 +250,7 @@
     const securityButton = document.getElementById("gm-security");
     if (securityButton) {
       const m = mode();
-      const label = m === "none" ? "Sem senha" : m === "pin" ? "PIN próprio" : m === "cola" ? "Código diário" : m === "account" ? "Senha da conta" : "Configurar";
+      const label = m === "none" ? "Sem senha" : m === "pin" ? "PIN próprio" : m === "cola" ? "Senha fixa" : m === "account" ? "Senha da conta" : "Configurar";
       securityButton.textContent = `Segurança · ${label}`;
       securityButton.addEventListener("click", () => openConfig(false));
     }
