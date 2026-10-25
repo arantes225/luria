@@ -107,8 +107,8 @@
       output.textContent=pin;expiry.textContent="Válido até "+time(validUntil);
       copy.disabled=false;status.textContent="O computador também precisará da sua aprovação.";
       await refresh();
-      if(timer)clearInterval(timer);
-      timer=setInterval(()=>{if(!document.hidden)refresh();},5000);
+      if(timer)window.clearInterval(timer);
+      timer=window.setInterval(()=>{if(!document.hidden)refresh();},5000);
     }catch(e){if(stamp===epoch){wipe("PIN indisponível");status.textContent=e.message;}}
     finally{issuing=false;}
   }
@@ -120,7 +120,7 @@
   document.addEventListener("visibilitychange",()=>{if(!document.hidden)refresh();});
   window.addEventListener("luria:owner-changed",()=>{
     epoch++;owner="";issuing=false;
-    if(timer)clearInterval(timer);timer=null;
+    if(timer)window.clearInterval(timer);timer=null;
     wipe("Atualizando conta…");
     Promise.resolve(owned?.ready).then(issue);
   });
