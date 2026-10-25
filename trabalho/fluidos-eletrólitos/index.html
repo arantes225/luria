@@ -12,10 +12,17 @@
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
 <script src="/assets/js/ui-routes.js?v=1"></script>
-  <link rel="stylesheet" href="/assets/css/ui-app.css?v=20261015-unified-actions2">
+  <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
-  <link rel="stylesheet" href="/assets/css/fluidos-eletrólitos.css?v=1">
+  <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261025-work-spotlight">
+  <style>
+    .work-tool-shell{display:grid;gap:16px}
+    .work-tool-hero{padding:24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+    .work-tool-hero h2{margin:0 0 8px;font-size:24px}
+    .work-tool-hero p{margin:0;color:var(--muted);line-height:1.55}
+    .work-tool-placeholder{padding:20px;border:1px dashed var(--border);border-radius:16px;background:var(--surface-2);color:var(--muted)}
+  </style>
 <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
 <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
 
@@ -34,57 +41,12 @@
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
           <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
         </header>
-        <section class="fluids-shell" aria-labelledby="fluids-title">
-          <article class="fluids-hero">
-            <div>
-              <span class="fluids-kicker">Modo Trabalho · ferramenta clínica educacional</span>
-              <h2 id="fluids-title">Fluidos e eletrólitos</h2>
-              <p>Organize avaliação, cálculo e reavaliação da terapia hídrica. Os resultados são apoio ao raciocínio e não substituem protocolo institucional, prescrição habilitada ou revisão humana.</p>
-            </div>
-            <div class="fluids-safety" role="note"><strong>Barreira de segurança</strong><span>Não gera prescrição automática, não recomenda eletrólito concentrado e não substitui avaliação à beira-leito.</span></div>
+        <section class="work-tool-shell">
+          <article class="work-tool-hero">
+            <h2>Fluidos e eletrólitos</h2>
+            <p>Área para reposição, correções e raciocínio de distúrbios hidroeletrolíticos.</p>
           </article>
-
-          <nav class="fluids-tabs" aria-label="Seções de fluidoterapia">
-            <button class="fluids-tab is-active" type="button" data-fluids-tab="triagem">Triagem e avaliação</button>
-            <button class="fluids-tab" type="button" data-fluids-tab="calculadoras">Calculadoras</button>
-            <button class="fluids-tab" type="button" data-fluids-tab="balanco">Balanço e diurese</button>
-            <button class="fluids-tab" type="button" data-fluids-tab="solucoes">Soluções e protocolos</button>
-            <button class="fluids-tab" type="button" data-fluids-tab="rascunho">Rascunho revisável</button>
-          </nav>
-
-          <div class="fluids-panel is-active" data-fluids-panel="triagem">
-            <div class="fluids-grid fluids-grid-2">
-              <article class="fluids-card"><h3>1. Defina a necessidade</h3><p class="fluids-muted">A terapia pode ser oral/enteral? Se não, selecione o objetivo principal para orientar a revisão.</p>
-                <label>Objetivo<select id="fluid-goal"><option value="resuscitation">Ressuscitação</option><option value="maintenance">Manutenção</option><option value="replacement">Reposição de perdas</option><option value="redistribution">Redistribuição/excesso</option><option value="reassessment">Reavaliação de terapia em curso</option></select></label>
-                <label><input id="fluid-oral-feasible" type="checkbox"> Necessidades podem ser atendidas por via oral/enteral</label>
-                <label><input id="fluid-complex" type="checkbox"> Há insuficiência renal, cardíaca/hepática, edema importante, sepse, gestação, pediatria, UTI ou distúrbio grave</label>
-              </article>
-              <article class="fluids-card"><h3>2. Sinais de alerta</h3><p class="fluids-muted">Marque achados presentes. Isto não diagnostica choque nem autoriza bolus.</p>
-                <div class="fluids-checks"><label><input data-alert type="checkbox" data-message="Instabilidade hemodinâmica: avaliação ABCDE e suporte imediato são prioritários."> PAS baixa ou deterioração da perfusão</label><label><input data-alert type="checkbox" data-message="Possível congestão: reavaliar antes de administrar volume."> Dispneia, crepitações ou edema pulmonar</label><label><input data-alert type="checkbox" data-message="Distúrbio eletrolítico relevante requer confirmação, causa e plano de monitorização."> Alteração importante de sódio, potássio, cálcio ou magnésio</label><label><input data-alert type="checkbox" data-message="Perda contínua ou balanço não mensurado: quantificar entradas e saídas."> Vômitos, diarreia, drenos, estoma ou poliúria</label></div>
-                <div id="fluid-alerts" class="fluids-alerts" aria-live="polite">Nenhum alerta selecionado.</div>
-              </article>
-            </div>
-            <article class="fluids-card"><h3>3. Plano mínimo de dados</h3><div class="fluids-chips"><span>peso e tendência</span><span>PA/FC/FR/perfusão</span><span>edema e congestão</span><span>diurese</span><span>balanço acumulado</span><span>ureia/creatinina</span><span>Na/K/Cl/HCO₃</span><span>glicose e gasometria quando indicadas</span></div><p class="fluids-muted">Em terapia IV, registrar objetivo, solução, volume, velocidade, fontes adicionais, monitorização e horário de reavaliação.</p></article>
-          </div>
-
-          <div class="fluids-panel" data-fluids-panel="calculadoras">
-            <div class="fluids-grid fluids-grid-3">
-              <article class="fluids-card"><h3>Manutenção horária</h3><label>Peso (kg)<input id="calc-weight" type="number" min="0" step="0.1"></label><button class="fluids-button" type="button" data-calc="maintenance">Calcular</button><output id="out-maintenance" class="fluids-output">—</output><small>Regra 4–2–1 para estimativa educacional pediátrica. Confirmar protocolo local e contexto clínico.</small></article>
-              <article class="fluids-card"><h3>Osmolaridade estimada</h3><label>Na (mmol/L)<input id="calc-na" type="number" step="0.1"></label><label>Glicose (mg/dL)<input id="calc-glucose" type="number" step="0.1"></label><label>Ureia/BUN (mg/dL)<input id="calc-bun" type="number" step="0.1"></label><button class="fluids-button" type="button" data-calc="osmolality">Calcular</button><output id="out-osmolality" class="fluids-output">—</output><small>Use BUN, não ureia, quando essa for a variável informada.</small></article>
-              <article class="fluids-card"><h3>Ânion gap</h3><label>Na (mmol/L)<input id="calc-ag-na" type="number" step="0.1"></label><label>Cl (mmol/L)<input id="calc-ag-cl" type="number" step="0.1"></label><label>HCO₃ (mmol/L)<input id="calc-ag-hco3" type="number" step="0.1"></label><label><input id="calc-ag-k" type="checkbox"> Incluir K</label><button class="fluids-button" type="button" data-calc="anion-gap">Calcular</button><output id="out-anion-gap" class="fluids-output">—</output><small>Interpretar com albumina, gasometria e contexto.</small></article>
-              <article class="fluids-card"><h3>Correção do sódio por glicose</h3><label>Na medido (mmol/L)<input id="calc-cna" type="number" step="0.1"></label><label>Glicose (mg/dL)<input id="calc-cglucose" type="number" step="0.1"></label><button class="fluids-button" type="button" data-calc="corrected-na">Calcular</button><output id="out-corrected-na" class="fluids-output">—</output><small>Exibe a fórmula utilizada; não usar isoladamente para decidir tratamento.</small></article>
-              <article class="fluids-card"><h3>Déficit de água livre</h3><label>Peso (kg)<input id="calc-water-weight" type="number" step="0.1"></label><label>Na medido<input id="calc-water-na" type="number" step="0.1"></label><label>Na desejado<input id="calc-water-target" type="number" step="0.1" value="140"></label><label><input id="calc-water-sex" type="checkbox"> Fator 0,6 (adulto homem; desmarcado = 0,5)</label><button class="fluids-button" type="button" data-calc="water-deficit">Calcular</button><output id="out-water-deficit" class="fluids-output">—</output><small>Estimativa teórica. Não é uma ordem de reposição nem inclui perdas em curso.</small></article>
-              <article class="fluids-card"><h3>Fração de excreção de sódio</h3><label>Na urinário (mmol/L)<input id="calc-fena-una" type="number" step="0.1"></label><label>Na plasmático<input id="calc-fena-pna" type="number" step="0.1"></label><label>Creatinina urinária<input id="calc-fena-ucr" type="number" step="0.1"></label><label>Creatinina plasmática<input id="calc-fena-pcr" type="number" step="0.1"></label><button class="fluids-button" type="button" data-calc="fena">Calcular</button><output id="out-fena" class="fluids-output">—</output><small>Interpretar com diuréticos, DRC, LRA e contexto hemodinâmico.</small></article>
-            </div>
-          </div>
-
-          <div class="fluids-panel" data-fluids-panel="balanco"><div class="fluids-grid fluids-grid-3"><article class="fluids-card"><h3>Entradas</h3><label>Oral/enteral (mL)<input data-balance-in type="number" min="0" step="1"></label><label>IV/medicações (mL)<input data-balance-in type="number" min="0" step="1"></label><label>Hemocomponentes/nutrição (mL)<input data-balance-in type="number" min="0" step="1"></label></article><article class="fluids-card"><h3>Saídas</h3><label>Diurese (mL)<input data-balance-out type="number" min="0" step="1"></label><label>Drenos/perdas GI (mL)<input data-balance-out type="number" min="0" step="1"></label><label>Outras perdas mensuradas (mL)<input data-balance-out type="number" min="0" step="1"></label></article><article class="fluids-card"><h3>Resultado</h3><label>Intervalo (h)<input id="balance-hours" type="number" min="0.1" step="0.1" value="24"></label><output id="balance-result" class="fluids-output">Balanço: —</output><p id="urine-result" class="fluids-muted">Diurese: —</p><button class="fluids-button" type="button" data-calc="balance">Atualizar balanço</button></article></div></div>
-
-          <div class="fluids-panel" data-fluids-panel="solucoes"><article class="fluids-card"><h3>Biblioteca comparativa — estrutura inicial</h3><div class="fluids-table-wrap"><table><thead><tr><th>Solução</th><th>Uso a estudar</th><th>Alertas de revisão</th></tr></thead><tbody><tr><td>Cristaloide balanceado</td><td>Expansão/reposição conforme contexto</td><td>Composição, cálcio, função renal, TCE e protocolo local</td></tr><tr><td>NaCl 0,9%</td><td>Indicações específicas conforme protocolo</td><td>Carga de cloro, acidose hiperclorêmica, congestão</td></tr><tr><td>Glicose em água</td><td>Veículo/água livre em cenários selecionados</td><td>Não é fluido de ressuscitação; glicemia e risco de hiponatremia</td></tr></tbody></table></div><p class="fluids-muted">A biblioteca completa deverá ser versionada por instituição, concentração, apresentação e aprovação farmacêutica. Esta tela não calcula adição de KCl, NaCl hipertônico, cálcio ou magnésio.</p></article></div>
-
-          <div class="fluids-panel" data-fluids-panel="rascunho"><article class="fluids-card"><h3>Rascunho de plano para revisão</h3><label>Objetivo e hipótese clínica<textarea id="draft-goal" rows="3" placeholder="Descreva o objetivo, a causa provável e o que precisa ser reavaliado."></textarea></label><label>Monitorização e prazo de reavaliação<textarea id="draft-monitor" rows="3" placeholder="Ex.: sinais vitais, diurese, balanço, eletrólitos e horário de revisão."></textarea></label><label><input id="draft-review" type="checkbox"> Revisei contraindicações, fontes adicionais e necessidade de avaliação sênior/institucional</label><button class="fluids-button" type="button" data-calc="draft">Gerar resumo para revisão</button><pre id="draft-output" class="fluids-draft" aria-live="polite">Nenhum rascunho gerado.</pre></article></div>
-
-          <footer class="fluids-disclaimer"><strong>Uso responsável:</strong> conteúdo em desenvolvimento, sujeito a revisão clínica, farmacêutica, pediátrica, obstétrica e de terapia intensiva. Não publicar como protocolo assistencial sem aprovação institucional e testes independentes.</footer>
+          <div class="work-tool-placeholder">Página preparada para sódio, potássio, magnésio, cálcio, osmolaridade, reposições e correções.</div>
         </section>
       </div>
     </main>
@@ -92,8 +54,6 @@
 <script src="/assets/vendor/supabase-2.110.6.js"></script>
 <script src="/assets/js/supabase.js"></script>
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
-<script src="/assets/js/fluidos-eletrólitos.js?v=1"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>
-
