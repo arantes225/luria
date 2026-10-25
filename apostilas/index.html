@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-oXX/JfMj9W7Qt9VLs8NfQVvl7t52cNeaLLuOFK8iDW8='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -10,1048 +10,108 @@
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <meta name="theme-color" content="#0A2342">
-<script src="/assets/js/ui-routes.js?v=1"></script>
+  <script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261005-apostilas-library">
-<script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
-  <link rel="canonical" href="/apostilas/">
-  <style>
-    .books-page{display:grid;gap:14px;padding-bottom:30px}
-    .books-page>.luria-page-spotlight{margin:0!important}
-    .books-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
-    .books-search{flex:1 1 520px;max-width:620px}
-    .books-search input{width:100%;height:44px;min-height:44px;padding:0 15px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);font:inherit;font-size:12.5px;outline:none;box-sizing:border-box}
-    .books-search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
-    .books-search-count{color:var(--muted);font-size:11px;white-space:nowrap}
-
-    .library-section{display:grid;gap:10px;padding:16px 18px;border:1px solid var(--border);border-radius:15px;background:var(--surface);overflow:hidden}
-    .library-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
-    .library-section-head>div{min-width:0}
-    .library-section-eyebrow{display:block;margin-bottom:3px;color:var(--accent);font-size:8.5px;letter-spacing:.07em;text-transform:uppercase}
-    .library-section h2{margin:0;font-size:16px;line-height:1.2;font-weight:500;color:var(--text)}
-    .library-section-head small{color:var(--muted);font-size:9px}
-    .library-empty{padding:18px;border:1px dashed var(--border);border-radius:11px;color:var(--muted);font-size:10px;text-align:center}
-
-    .books-row{display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;max-width:100%;padding:3px 2px 8px;scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--accent) 55%,transparent) transparent}
-    .books-row::-webkit-scrollbar{height:7px}.books-row::-webkit-scrollbar-track{background:transparent}.books-row::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--accent) 55%,transparent);border-radius:999px}
-    .book-card{flex:0 0 210px;width:210px;min-height:190px;padding:17px;box-sizing:border-box;position:relative;display:flex;flex-direction:column;text-decoration:none;color:var(--text);overflow:hidden;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface) 58%);border:1.5px solid color-mix(in srgb,var(--accent) 44%,var(--border));border-left:5px solid var(--accent);border-radius:12px;box-shadow:none}
-    .book-card:hover{border-color:color-mix(in srgb,var(--accent) 62%,var(--border));background:color-mix(in srgb,var(--accent) 5%,var(--surface))}
-    .book-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
-    .book-card-icon{width:35px;height:35px;min-width:35px;border-radius:9px;display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 11%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent)}
-    .book-card-icon svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-    .book-meta{display:flex;flex:1;flex-direction:column;margin-top:9px;padding:0}
-    .book-area{display:block;color:var(--muted);font-size:10.5px;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-    .book-subarea{display:block;margin-top:3px;color:var(--accent);font-size:10.5px;line-height:1.25;font-weight:500}
-    .book-title{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin:8px 0 0;color:var(--text);font-size:14px;line-height:1.18;font-weight:600}
-    .book-foot{margin-top:auto;padding-top:12px;color:var(--muted);font-size:8.8px}
-
-    .area-block{display:grid;gap:10px}
-    .area-block+.area-block{margin-top:4px}
-    .area-title{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 2px}
-    .area-title h3{margin:0;font-size:13px;font-weight:500;color:var(--text)}
-    .area-title span{font-size:10px;color:var(--muted)}
-    .subarea-block{display:grid;gap:7px}
-    .subarea-label{margin:0 2px;color:var(--accent);font-size:9px;font-weight:600}
-    #area-library{display:grid;gap:14px}
-    .books-no-results{padding:24px;border:1px dashed var(--border);border-radius:13px;color:var(--muted);font-size:10px;text-align:center;background:var(--surface)}
-
-    @media(max-width:700px){
-      .books-toolbar{align-items:stretch;flex-direction:column}
-      .books-search{max-width:none;flex-basis:auto}
-      .book-card{flex-basis:190px;width:190px}
-      .library-section{padding:14px}
-    }
-  </style>
-
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
+  <link rel="stylesheet" href="/assets/css/apostilas-hall.css?v=20261024-hall1">
+  <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
+  <link rel="canonical" href="/apostilas/">
 </head>
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="aprender">
-<script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
-<script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
+  <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
+  <script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
   <div class="app-shell">
-    <aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
     <main class="main"><div class="page">
-      <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">Conteúdo LURIA</span><h1>Apostilas</h1></div></header>
+      <header class="topbar">
+        <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+        <div class="page-heading">
+          <span class="eyebrow">Conteúdo LURIA</span>
+          <h1>Apostilas</h1>
+        </div>
+      </header>
+
       <section class="books-page">
+        <!-- Spotlight da Página -->
         <section class="luria-page-spotlight" aria-label="Apostilas">
           <div class="luria-page-spotlight-copy">
-            <strong>Apostilas</strong>
-            <small>Biblioteca de estudo organizada por área, matéria e tema.</small>
+            <strong>Apostilas LURIA</strong>
+            <small>Biblioteca médica completa organizada por grandes áreas e subáreas clínicas.</small>
             <a class="library-book-link" href="/apostilas/curadoria-imagens-v2/">Prévia de curadoria visual dos blocos 1–3 ↗</a>
           </div>
         </section>
+
+        <!-- Botão Voltar -->
         <a href="/aprender/" class="luria-back-button" aria-label="Voltar para Aprender">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           <span>Voltar para Aprender</span>
         </a>
 
+        <!-- 1. Buscador posicionado em cima dos 6 botões -->
         <section class="books-toolbar" aria-label="Buscar apostilas">
           <label class="books-search">
-            <input id="books-search-input" type="search" placeholder="Buscar tema, matéria ou área..." autocomplete="off">
+            <svg class="books-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input id="books-search-input" type="search" placeholder="Buscar tema, subárea ou área médica..." autocomplete="off" aria-label="Buscar apostilas">
           </label>
-          <span class="books-search-count" id="books-search-count">Carregando...</span>
+          <span class="books-search-count" id="books-search-count">Carregando apostilas...</span>
         </section>
 
-        <section class="production-lots" id="production-lots" aria-label="Planejamento dos dez lotes"></section>
+        <!-- 2. Hall com os 6 botões das Grandes Áreas -->
+        <section class="books-hall-section" aria-label="Hall de Áreas Médicas">
+          <div class="books-hall-head">
+            <div>
+              <span class="books-hall-eyebrow">Grandes Áreas Médicas</span>
+              <h2 class="books-hall-title">Selecione uma área para navegar</h2>
+            </div>
+            <button type="button" class="books-hall-meta-btn is-active" id="hall-all-btn" aria-pressed="true">Ver todas as áreas</button>
+          </div>
+          <div class="hall-grid" id="hall-grid" role="group" aria-label="6 Grandes Áreas da Medicina"></div>
+        </section>
 
+        <!-- Banner de Filtro Ativo -->
+        <div class="active-area-banner" id="active-area-banner" hidden>
+          <div>
+            <strong id="active-banner-title">Área selecionada</strong>
+            <small id="active-banner-subtitle">Exibindo apostilas agrupadas por subáreas.</small>
+          </div>
+          <button type="button" class="banner-clear-btn" id="clear-active-area">Ver todas as áreas ✕</button>
+        </div>
+
+        <!-- Seção: Mais Recentes -->
         <section class="library-section" id="recent-section">
           <div class="library-section-head">
-            <div><span class="library-section-eyebrow">Mais recentes</span><h2>Últimas criadas</h2></div>
+            <div><span class="library-section-eyebrow">Destaques</span><h2>Apostilas Recentes</h2></div>
             <small id="recent-count"></small>
           </div>
           <div class="books-row" id="recent-grid"></div>
         </section>
 
+        <!-- Seção: Biblioteca Completa Agrupada por Subáreas -->
         <section class="library-section">
           <div class="library-section-head">
-            <div><span class="library-section-eyebrow">Biblioteca</span><h2>Por área</h2></div>
+            <div><span class="library-section-eyebrow">Apostilas Divididas por Subáreas</span><h2>Conteúdo por Subárea</h2></div>
             <small id="library-count"></small>
           </div>
           <div id="area-library"></div>
         </section>
+
+        <!-- Planejamento de Lotes (Referência Editorial) -->
+        <section class="production-lots" id="production-lots" aria-label="Planejamento de Lotes"></section>
       </section>
     </div></main>
   </div>
-<script src="/assets/vendor/supabase-2.110.6.js"></script>
-<script src="/assets/js/supabase.js?v=auth4"></script>
-<script src="/assets/js/app.js?v=20261013-frame1"></script>
-<script>
-  (()=>{"use strict";
-    const sb=window.supabaseClient;
-    const pilot={
-      id:"pilot-dmg",
-      area:"Ginecologia e Obstetrícia",
-      materia:"Obstetrícia",
-      tema:"Diabetes Mellitus Gestacional",
-      titulo:"Diabetes Mellitus Gestacional",
-      content_url:"/apostilas/diabetes-mellitus-gestacional/",
-      created_at:"2026-10-05T00:00:00Z"
-    };
-    const somp={
-      id:"somp-2026",
-      area:"Ginecologia e Obstetrícia",
-      materia:"Endocrinologia Ginecológica",
-      tema:"Síndrome Ovariana Metabólica Poliendócrina",
-      titulo:"Síndrome Ovariana Metabólica Poliendócrina",
-      content_url:"/apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/",
-      created_at:"2026-10-05T22:28:00-03:00"
-    };
-    const parto={
-      id:"assistencia-parto-2026",
-      area:"Ginecologia e Obstetrícia",
-      materia:"Obstetrícia",
-      tema:"Assistência ao Parto, Vigilância Intraparto e Partograma",
-      titulo:"Assistência ao Parto, Vigilância Intraparto e Partograma",
-      content_url:"/apostilas/assistencia-ao-parto/",
-      created_at:"2026-10-06T01:30:00-03:00"
-    };
-    const ist={
-      id:"ist-2026",
-      area:"Ginecologia e Obstetrícia",
-      materia:"Ginecologia",
-      tema:"Infecções Sexualmente Transmissíveis (IST)",
-      titulo:"Infecções Sexualmente Transmissíveis (IST)",
-      content_url:"/apostilas/infeccoes-sexualmente-transmissiveis/",
-      created_at:"2026-10-07T15:18:00-03:00"
-    };
-    const trabalhoPartoPrematuro={
-      id:"trabalho-parto-prematuro-2026",
-      area:"Ginecologia e Obstetrícia",
-      materia:"Obstetrícia",
-      tema:"Trabalho de Parto Prematuro",
-      titulo:"Trabalho de Parto Prematuro",
-      content_url:"/apostilas/trabalho-parto-prematuro/",
-      created_at:"2026-10-07T23:15:00-03:00"
-    };
-    const hipertensaoGestacao={
-      id:"sindromes-hipertensivas-gestacao-2026",
-      area:"Ginecologia e Obstetrícia",
-      materia:"Obstetrícia",
-      tema:"Síndromes hipertensivas da gestação",
-      titulo:"Síndromes hipertensivas da gestação",
-      content_url:"/apostilas/sindromes-hipertensivas-da-gestacao/",
-      created_at:"2026-10-07T14:28:00-03:00"
-    };
-    const sexualidade={
-      id:"sexualidade-feminina-2026",
-      area:"Ginecologia e Obstetrícia",
-      materia:"Ginecologia",
-      tema:"Medicina Sexual · Sexualidade Feminina",
-      titulo:"Sexualidade Feminina",
-      content_url:"/apostilas/sexualidade/",
-      created_at:"2026-10-14T01:36:00-03:00"
-    };
-    const sexualidadeMasculina={
-      id:"sexualidade-masculina-2026",
-      area:"Cirurgia Geral",
-      materia:"Urologia",
-      tema:"Medicina Sexual · Sexualidade Masculina",
-      titulo:"Sexualidade Masculina",
-      content_url:"/apostilas/sexualidade-masculina/",
-      created_at:"2026-10-14T01:37:00-03:00"
-    };
-    const climaterioMenopausa={
-      id:"climaterio-menopausa-2026",
-      area:"Ginecologia e Obstetrícia",
-      materia:"Saúde da Mulher",
-      tema:"Climatério e Menopausa",
-      titulo:"Climatério e Menopausa",
-      content_url:"/apostilas/climaterio-menopausa/",
-      created_at:"2026-10-07T15:18:00-03:00"
-    };
-    const cancerMama={id:"cancer-mama-2026",area:"Ginecologia e Obstetrícia",materia:"Mastologia",tema:"Câncer de mama",titulo:"Câncer de mama",content_url:"/apostilas/cancer-de-mama/",created_at:"2026-10-07T22:40:00-03:00"};
-    const cancerColo={
-      id:"cancer-colo-hpv-2026",
-      area:"Ginecologia e Obstetrícia",
-      materia:"Oncoginecologia",
-      tema:"Câncer do colo do útero e HPV",
-      titulo:"Câncer do colo do útero e HPV",
-      content_url:"/apostilas/cancer-colo-utero-hpv/",
-      created_at:"2026-10-07T15:18:00-03:00"
-    };
-    const contracepcao={
-      id:"planejamento-reprodutivo-contracepcao-2026",
-      area:"Ginecologia e Obstetrícia",
-      materia:"Planejamento Familiar",
-      tema:"Planejamento Reprodutivo e Contracepção",
-      titulo:"Planejamento Reprodutivo e Contracepção",
-      content_url:"/apostilas/planejamento-reprodutivo-contracepcao/",
-      created_at:"2026-10-07T23:19:00-03:00"
-    };
-    const cicloHho={
-      id:"ciclo-menstrual-hho-2026",
-      area:"Ginecologia e Obstetrícia",
-      materia:"Endocrinologia Ginecológica",
-      tema:"Ciclo Menstrual e Eixo Hipotálamo-Hipófise-Ovário",
-      titulo:"Ciclo Menstrual e Eixo Hipotálamo-Hipófise-Ovário",
-      content_url:"/apostilas/ciclo-menstrual-eixo-hho/",
-      created_at:"2026-10-07T15:27:00-03:00"
-    };
-    const sangramentoUterinoAnormal={
-      id:"sua-2026",
-      area:"Ginecologia e Obstetrícia",
-      materia:"Ginecologia",
-      tema:"Sangramento Uterino Anormal",
-      titulo:"Sangramento Uterino Anormal",
-      content_url:"/apostilas/sangramento-uterino-anormal/",
-      created_at:"2026-10-07T23:18:00-03:00"
-    };
-    const approvedBlocks123=[
-  {
-    "id": "approved-b123-1",
-    "area": "Clínica Médica",
-    "materia": "Clínica Médica",
-    "tema": "Síndromes Coronarianas Agudas",
-    "titulo": "Síndromes Coronarianas Agudas",
-    "content_url": "/apostilas/sindromes-coronarianas-agudas/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-2",
-    "area": "Cirurgia Geral",
-    "materia": "Cirurgia Geral",
-    "tema": "Avaliação Pré-operatória e Risco Cirúrgico",
-    "titulo": "Avaliação Pré-operatória e Risco Cirúrgico",
-    "content_url": "/apostilas/avaliacao-pre-operatoria-risco-cirurgico/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-3",
-    "area": "Pediatria",
-    "materia": "Pediatria",
-    "tema": "Assistência ao Recém-nascido em Sala de Parto",
-    "titulo": "Assistência ao Recém-nascido em Sala de Parto",
-    "content_url": "/apostilas/assistencia-recem-nascido-sala-parto/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-4",
-    "area": "Ginecologia e Obstetrícia",
-    "materia": "Ginecologia e Obstetrícia",
-    "tema": "Pré-natal de baixo risco",
-    "titulo": "Pré-natal de baixo risco",
-    "content_url": "/apostilas/pre-natal-baixo-risco/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-5",
-    "area": "Medicina Preventiva",
-    "materia": "Medicina Preventiva",
-    "tema": "Princípios e Diretrizes do SUS",
-    "titulo": "Princípios e Diretrizes do SUS",
-    "content_url": "/apostilas/principios-diretrizes-sus/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-6",
-    "area": "Clínica Médica",
-    "materia": "Clínica Médica",
-    "tema": "Insuficiência Cardíaca",
-    "titulo": "Insuficiência Cardíaca",
-    "content_url": "/apostilas/insuficiencia-cardiaca/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-7",
-    "area": "Cirurgia Geral",
-    "materia": "Cirurgia Geral",
-    "tema": "Cuidados Perioperatórios e Prevenção de Complicações",
-    "titulo": "Cuidados Perioperatórios e Prevenção de Complicações",
-    "content_url": "/apostilas/cuidados-perioperatorios-prevencao-complicacoes/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-8",
-    "area": "Pediatria",
-    "materia": "Pediatria",
-    "tema": "Reanimação Neonatal",
-    "titulo": "Reanimação Neonatal",
-    "content_url": "/apostilas/reanimacao-neonatal/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-9",
-    "area": "Ginecologia e Obstetrícia",
-    "materia": "Ginecologia e Obstetrícia",
-    "tema": "Diagnóstico e Datação da Gestação",
-    "titulo": "Diagnóstico e Datação da Gestação",
-    "content_url": "/apostilas/diagnostico-datacao-gestacao/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-10",
-    "area": "Medicina Preventiva",
-    "materia": "Medicina Preventiva",
-    "tema": "Lei nº 8.080/1990 — Lei Orgânica da Saúde",
-    "titulo": "Lei nº 8.080/1990 — Lei Orgânica da Saúde",
-    "content_url": "/apostilas/lei-8080-1990/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-11",
-    "area": "Clínica Médica",
-    "materia": "Clínica Médica",
-    "tema": "Hipertensão Arterial Sistêmica",
-    "titulo": "Hipertensão Arterial Sistêmica",
-    "content_url": "/apostilas/hipertensao-arterial-sistemica/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-12",
-    "area": "Cirurgia Geral",
-    "materia": "Cirurgia Geral",
-    "tema": "Resposta Metabólica ao Trauma",
-    "titulo": "Resposta Metabólica ao Trauma",
-    "content_url": "/apostilas/resposta-metabolica-ao-trauma/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-13",
-    "area": "Pediatria",
-    "materia": "Pediatria",
-    "tema": "Prematuridade e Baixo Peso ao Nascer",
-    "titulo": "Prematuridade e Baixo Peso ao Nascer",
-    "content_url": "/apostilas/prematuridade-baixo-peso-nascer/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-14",
-    "area": "Ginecologia e Obstetrícia",
-    "materia": "Ginecologia e Obstetrícia",
-    "tema": "Exames e Rastreamentos no Pré-Natal",
-    "titulo": "Exames e Rastreamentos no Pré-Natal",
-    "content_url": "/apostilas/exames-rastreamentos-pre-natal/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-15",
-    "area": "Medicina Preventiva",
-    "materia": "Medicina Preventiva",
-    "tema": "Lei nº 8.142/1990 — Participação Social e Repasses no SUS",
-    "titulo": "Lei nº 8.142/1990 — Participação Social e Repasses no SUS",
-    "content_url": "/apostilas/lei-8142-1990/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-16",
-    "area": "Clínica Médica",
-    "materia": "Clínica Médica",
-    "tema": "Arritmias e Fibrilação Atrial",
-    "titulo": "Arritmias e Fibrilação Atrial",
-    "content_url": "/apostilas/arritmias-fibrilacao-atrial/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-17",
-    "area": "Cirurgia Geral",
-    "materia": "Cirurgia Geral",
-    "tema": "Reposição Volêmica e Distúrbios Hidroeletrolíticos no Paciente Cirúrgico",
-    "titulo": "Reposição Volêmica e Distúrbios Hidroeletrolíticos no Paciente Cirúrgico",
-    "content_url": "/apostilas/reposicao-volemica-disturbios-hidroeletroliticos/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-18",
-    "area": "Pediatria",
-    "materia": "Pediatria",
-    "tema": "Icterícia Neonatal",
-    "titulo": "Icterícia Neonatal",
-    "content_url": "/apostilas/ictericia-neonatal/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-19",
-    "area": "Ginecologia e Obstetrícia",
-    "materia": "Ginecologia e Obstetrícia",
-    "tema": "Vacinação e Suplementação na Gestação",
-    "titulo": "Vacinação e Suplementação na Gestação",
-    "content_url": "/apostilas/vacinacao-suplementacao-gestacao/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-20",
-    "area": "Medicina Preventiva",
-    "materia": "Medicina Preventiva",
-    "tema": "Atenção Primária à Saúde e seus Atributos",
-    "titulo": "Atenção Primária à Saúde e seus Atributos",
-    "content_url": "/apostilas/atencao-primaria-saude-atributos/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-21",
-    "area": "Clínica Médica",
-    "materia": "Clínica Médica",
-    "tema": "Valvopatias",
-    "titulo": "Valvopatias",
-    "content_url": "/apostilas/valvopatias/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-22",
-    "area": "Cirurgia Geral",
-    "materia": "Cirurgia Geral",
-    "tema": "Choque Hemorrágico",
-    "titulo": "Choque Hemorrágico",
-    "content_url": "/apostilas/choque-hemorragico/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-23",
-    "area": "Pediatria",
-    "materia": "Pediatria",
-    "tema": "Sepse Neonatal",
-    "titulo": "Sepse Neonatal",
-    "content_url": "/apostilas/sepse-neonatal/",
-    "created_at": "2026-10-17T00:00:00Z",
-    "block": 1
-  },
-  {
-    "id": "approved-b123-24",
-    "area": "Ginecologia e Obstetrícia",
-    "materia": "Ginecologia e Obstetrícia",
-    "tema": "Síndromes hipertensivas da gestação",
-    "titulo": "Síndromes hipertensivas da gestação",
-    "content_url": "/apostilas/sindromes-hipertensivas-da-gestacao/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-25",
-    "area": "Medicina Preventiva",
-    "materia": "Medicina Preventiva",
-    "tema": "Estratégia Saúde da Família",
-    "titulo": "Estratégia Saúde da Família",
-    "content_url": "/apostilas/estrategia-saude-da-familia/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-26",
-    "area": "Clínica Médica",
-    "materia": "Clínica Médica",
-    "tema": "Endocardite Infecciosa",
-    "titulo": "Endocardite Infecciosa",
-    "content_url": "/apostilas/endocardite-infecciosa/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-27",
-    "area": "Cirurgia Geral",
-    "materia": "Cirurgia Geral",
-    "tema": "Nutrição no Paciente Cirúrgico",
-    "titulo": "Nutrição no Paciente Cirúrgico",
-    "content_url": "/apostilas/nutricao-no-paciente-cirurgico/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-28",
-    "area": "Pediatria",
-    "materia": "Pediatria",
-    "tema": "Aleitamento Materno",
-    "titulo": "Aleitamento Materno",
-    "content_url": "/apostilas/aleitamento-materno/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-29",
-    "area": "Ginecologia e Obstetrícia",
-    "materia": "Ginecologia e Obstetrícia",
-    "tema": "Diabetes Mellitus Gestacional",
-    "titulo": "Diabetes Mellitus Gestacional",
-    "content_url": "/apostilas/diabetes-mellitus-gestacional/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-30",
-    "area": "Medicina Preventiva",
-    "materia": "Medicina Preventiva",
-    "tema": "Política Nacional de Atenção Básica",
-    "titulo": "Política Nacional de Atenção Básica",
-    "content_url": "/apostilas/politica-nacional-de-atencao-basica/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-31",
-    "area": "Clínica Médica",
-    "materia": "Clínica Médica",
-    "tema": "Pericardite e Tamponamento Cardíaco",
-    "titulo": "Pericardite e Tamponamento Cardíaco",
-    "content_url": "/apostilas/pericardite-e-tamponamento-cardiaco/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-32",
-    "area": "Cirurgia Geral",
-    "materia": "Cirurgia Geral",
-    "tema": "Cicatrização de Feridas",
-    "titulo": "Cicatrização de Feridas",
-    "content_url": "/apostilas/cicatrizacao-de-feridas/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-33",
-    "area": "Pediatria",
-    "materia": "Pediatria",
-    "tema": "Alimentação Complementar",
-    "titulo": "Alimentação Complementar",
-    "content_url": "/apostilas/alimentacao-complementar/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-34",
-    "area": "Ginecologia e Obstetrícia",
-    "materia": "Ginecologia e Obstetrícia",
-    "tema": "Infecções na gestação e transmissão vertical",
-    "titulo": "Infecções na gestação e transmissão vertical",
-    "content_url": "/apostilas/infeccoes-gestacao-transmissao-vertical/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-35",
-    "area": "Medicina Preventiva",
-    "materia": "Medicina Preventiva",
-    "tema": "Redes de Atenção à Saúde",
-    "titulo": "Redes de Atenção à Saúde",
-    "content_url": "/apostilas/redes-de-atencao-a-saude/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-36",
-    "area": "Clínica Médica",
-    "materia": "Clínica Médica",
-    "tema": "Tromboembolismo Venoso e Embolia Pulmonar",
-    "titulo": "Tromboembolismo Venoso e Embolia Pulmonar",
-    "content_url": "/apostilas/tromboembolismo-venoso-e-embolia-pulmonar/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-37",
-    "area": "Cirurgia Geral",
-    "materia": "Cirurgia Geral",
-    "tema": "Infecção do Sítio Cirúrgico e Antibioticoprofilaxia",
-    "titulo": "Infecção do Sítio Cirúrgico e Antibioticoprofilaxia",
-    "content_url": "/apostilas/infeccao-do-sitio-cirurgico-e-antibioticoprofilaxia/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-38",
-    "area": "Pediatria",
-    "materia": "Pediatria",
-    "tema": "Crescimento e Desenvolvimento",
-    "titulo": "Crescimento e Desenvolvimento",
-    "content_url": "/apostilas/crescimento-e-desenvolvimento/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-39",
-    "area": "Ginecologia e Obstetrícia",
-    "materia": "Ginecologia e Obstetrícia",
-    "tema": "Hemorragias do 1º e 3º trimestre da gestação",
-    "titulo": "Hemorragias do 1º e 3º trimestre da gestação",
-    "content_url": "/apostilas/sangramento-na-primeira-metade-da-gestacao/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-40",
-    "area": "Medicina Preventiva",
-    "materia": "Medicina Preventiva",
-    "tema": "Regionalização, Hierarquização e Referência/Contrarreferência",
-    "titulo": "Regionalização, Hierarquização e Referência/Contrarreferência",
-    "content_url": "/apostilas/regionalizacao-hierarquizacao-e-referencia-contrarreferencia/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-41",
-    "area": "Clínica Médica",
-    "materia": "Clínica Médica",
-    "tema": "Choque Circulatório — Aula 41",
-    "titulo": "Choque Circulatório — Aula 41",
-    "content_url": "/apostilas/choque-circulatorio/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-42",
-    "area": "Cirurgia Geral",
-    "materia": "Cirurgia Geral",
-    "tema": "Princípios de Técnica Cirúrgica — Aula 42",
-    "titulo": "Princípios de Técnica Cirúrgica — Aula 42",
-    "content_url": "/apostilas/principios-de-tecnica-cirurgica/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-43",
-    "area": "Pediatria",
-    "materia": "Pediatria",
-    "tema": "Puericultura e Prevenção de Acidentes",
-    "titulo": "Puericultura e Prevenção de Acidentes",
-    "content_url": "/apostilas/puericultura-e-prevencao-de-acidentes/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-44",
-    "area": "Ginecologia e Obstetrícia",
-    "materia": "Ginecologia e Obstetrícia",
-    "tema": "Abortamento",
-    "titulo": "Abortamento",
-    "content_url": "/apostilas/abortamento/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-45",
-    "area": "Medicina Preventiva",
-    "materia": "Medicina Preventiva",
-    "tema": "Participação e Controle Social no SUS",
-    "titulo": "Participação e Controle Social no SUS",
-    "content_url": "/apostilas/participacao-e-controle-social-no-sus/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-46",
-    "area": "Clínica Médica",
-    "materia": "Clínica Médica",
-    "tema": "Asma",
-    "titulo": "Asma",
-    "content_url": "/apostilas/asma/",
-    "created_at": "2026-10-16T00:00:00Z",
-    "block": 2
-  },
-  {
-    "id": "approved-b123-47",
-    "area": "Cirurgia Geral",
-    "materia": "Cirurgia Geral",
-    "tema": "Trauma: Atendimento Inicial e ABCDE",
-    "titulo": "Trauma: Atendimento Inicial e ABCDE",
-    "content_url": "/apostilas/trauma-atendimento-inicial-abcde/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-48",
-    "area": "Pediatria",
-    "materia": "Pediatria",
-    "tema": "Imunizações na Infância",
-    "titulo": "Imunizações na Infância",
-    "content_url": "/apostilas/imunizacoes-na-infancia/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-49",
-    "area": "Ginecologia e Obstetrícia",
-    "materia": "Ginecologia e Obstetrícia",
-    "tema": "Gestação Ectópica",
-    "titulo": "Gestação Ectópica",
-    "content_url": "/apostilas/gestacao-ectopica/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-50",
-    "area": "Medicina Preventiva",
-    "materia": "Medicina Preventiva",
-    "tema": "Financiamento e Gestão do SUS",
-    "titulo": "Financiamento e Gestão do SUS",
-    "content_url": "/apostilas/financiamento-e-gestao-do-sus/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-51",
-    "area": "Clínica Médica",
-    "materia": "Clínica Médica",
-    "tema": "Doença Pulmonar Obstrutiva Crônica (DPOC)",
-    "titulo": "Doença Pulmonar Obstrutiva Crônica (DPOC)",
-    "content_url": "/apostilas/dpoc/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-52",
-    "area": "Cirurgia Geral",
-    "materia": "Cirurgia Geral",
-    "tema": "Traumatismo Cranioencefálico",
-    "titulo": "Traumatismo Cranioencefálico",
-    "content_url": "/apostilas/traumatismo-cranioencefalico/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-53",
-    "area": "Pediatria",
-    "materia": "Pediatria",
-    "tema": "Desidratação e Terapia de Reidratação",
-    "titulo": "Desidratação e Terapia de Reidratação",
-    "content_url": "/apostilas/desidratacao-e-terapia-de-reidratacao/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-54",
-    "area": "Ginecologia e Obstetrícia",
-    "materia": "Ginecologia e Obstetrícia",
-    "tema": "Doença Trofoblástica Gestacional",
-    "titulo": "Doença Trofoblástica Gestacional",
-    "content_url": "/apostilas/doenca-trofoblastica-gestacional/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-55",
-    "area": "Medicina Preventiva",
-    "materia": "Medicina Preventiva",
-    "tema": "Vigilância em Saúde",
-    "titulo": "Vigilância em Saúde",
-    "content_url": "/apostilas/vigilancia-em-saude/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-56",
-    "area": "Clínica Médica",
-    "materia": "Clínica Médica",
-    "tema": "Pneumonias Adquiridas na Comunidade",
-    "titulo": "Pneumonias Adquiridas na Comunidade",
-    "content_url": "/apostilas/pneumonias-adquiridas-na-comunidade/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-57",
-    "area": "Cirurgia Geral",
-    "materia": "Cirurgia Geral",
-    "tema": "Trauma Torácico",
-    "titulo": "Trauma Torácico",
-    "content_url": "/apostilas/trauma-toracico/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-58",
-    "area": "Pediatria",
-    "materia": "Pediatria",
-    "tema": "Diarreia Aguda na Infância",
-    "titulo": "Diarreia Aguda na Infância",
-    "content_url": "/apostilas/diarreia-aguda/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-59",
-    "area": "Ginecologia e Obstetrícia",
-    "materia": "Ginecologia e Obstetrícia",
-    "tema": "Sangramento na Segunda Metade da Gestação",
-    "titulo": "Sangramento na Segunda Metade da Gestação",
-    "content_url": "/apostilas/sangramento-na-segunda-metade-da-gestacao/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-60",
-    "area": "Medicina Preventiva",
-    "materia": "Medicina Preventiva",
-    "tema": "Vigilância Epidemiológica",
-    "titulo": "Vigilância Epidemiológica",
-    "content_url": "/apostilas/vigilancia-epidemiologica/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-61",
-    "area": "Clínica Médica",
-    "materia": "Clínica Médica",
-    "tema": "Tuberculose Pulmonar",
-    "titulo": "Tuberculose Pulmonar",
-    "content_url": "/apostilas/tuberculose-pulmonar/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-62",
-    "area": "Cirurgia Geral",
-    "materia": "Cirurgia Geral",
-    "tema": "Trauma Abdominal",
-    "titulo": "Trauma Abdominal",
-    "content_url": "/apostilas/trauma-abdominal/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-63",
-    "area": "Pediatria",
-    "materia": "Pediatria",
-    "tema": "Doença do Refluxo Gastroesofágico na Infância",
-    "titulo": "Doença do Refluxo Gastroesofágico na Infância",
-    "content_url": "/apostilas/doenca-do-refluxo-gastroesofagico-na-infancia/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-64",
-    "area": "Ginecologia e Obstetrícia",
-    "materia": "Ginecologia e Obstetrícia",
-    "tema": "Placenta Prévia e Descolamento Prematuro de Placenta",
-    "titulo": "Placenta Prévia e Descolamento Prematuro de Placenta",
-    "content_url": "/apostilas/placenta-previa-e-descolamento-prematuro-de-placenta/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-65",
-    "area": "Medicina Preventiva",
-    "materia": "Medicina Preventiva",
-    "tema": "Vigilância Sanitária",
-    "titulo": "Vigilância Sanitária",
-    "content_url": "/apostilas/vigilancia-sanitaria/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-66",
-    "area": "Clínica Médica",
-    "materia": "Clínica Médica",
-    "tema": "Derrame Pleural",
-    "titulo": "Derrame Pleural",
-    "content_url": "/apostilas/derrame-pleural/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-67",
-    "area": "Cirurgia Geral",
-    "materia": "Cirurgia Geral",
-    "tema": "Trauma Pélvico e Geniturinário",
-    "titulo": "Trauma Pélvico e Geniturinário",
-    "content_url": "/apostilas/trauma-pelvico-e-geniturinario/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-68",
-    "area": "Pediatria",
-    "materia": "Pediatria",
-    "tema": "Desnutrição e Deficiências Nutricionais",
-    "titulo": "Desnutrição e Deficiências Nutricionais",
-    "content_url": "/apostilas/desnutricao-e-deficiencias-nutricionais/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  },
-  {
-    "id": "approved-b123-69",
-    "area": "Ginecologia e Obstetrícia",
-    "materia": "Ginecologia e Obstetrícia",
-    "tema": "Assistência ao Parto, Vigilância Intraparto e Partograma",
-    "titulo": "Assistência ao Parto, Vigilância Intraparto e Partograma",
-    "content_url": "/apostilas/assistencia-ao-parto/",
-    "created_at": "2026-10-15T00:00:00Z",
-    "block": 3
-  }
-];
-    const areaOrder=["Clínica Médica","Cirurgia Geral","Ginecologia e Obstetrícia","Pediatria","Medicina Preventiva"];
-    const norm=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
-    const bookIcon='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H11v18H6.5A2.5 2.5 0 0 0 4 22.5v-18Z"/><path d="M20 4.5A2.5 2.5 0 0 0 17.5 2H13v18h4.5a2.5 2.5 0 0 1 2.5 2.5v-18Z"/></svg>';
-    let books=[];
 
-    function card(book){
-      const a=document.createElement("a");
-      a.className="book-card";
-      a.href=book.content_url||"#";
-      a.dataset.search=norm([book.area,book.materia,book.tema,book.titulo].filter(Boolean).join(" "));
-      a.innerHTML='<div class="book-card-top"><span class="book-card-icon">'+bookIcon+'</span></div><div class="book-meta"><span class="book-area"></span><span class="book-subarea"></span><strong class="book-title"></strong><small class="book-foot">Apostila LURIA</small></div>';
-      a.querySelector(".book-area").textContent=book.area||"Sem área";
-      a.querySelector(".book-subarea").textContent=book.materia||"";
-      a.querySelector(".book-title").textContent=book.tema||book.titulo||"Apostila";
-      return a;
-    }
-
-    function recentBooks(){
-      return [...books]
-        .sort((a,b)=>{
-          const ad=Date.parse(a.created_at||0)||0;
-          const bd=Date.parse(b.created_at||0)||0;
-          return bd-ad;
-        })
-        .slice(0,6);
-    }
-
-    function renderRecent(query=""){
-      const root=document.getElementById("recent-grid");
-      const section=document.getElementById("recent-section");
-      const q=norm(query);
-      const items=recentBooks().filter(book=>!q||norm([book.area,book.materia,book.tema,book.titulo].join(" ")).includes(q));
-      root.innerHTML="";
-      if(!items.length){
-        section.hidden=!!q;
-        if(!q)root.innerHTML='<div class="library-empty">As apostilas criadas mais recentemente aparecerão aqui.</div>';
-      }else{
-        section.hidden=false;
-        items.forEach(book=>root.appendChild(card(book)));
-      }
-      document.getElementById("recent-count").textContent=items.length?items.length+" criada"+(items.length===1?"":"s"):"";
-    }
-
-    function renderAreas(query=""){
-      const root=document.getElementById("area-library");
-      const q=norm(query);
-      const filtered=books.filter(book=>!q||norm([book.area,book.materia,book.tema,book.titulo].join(" ")).includes(q));
-      root.innerHTML="";
-      if(!filtered.length){
-        root.innerHTML='<div class="books-no-results">Nenhuma apostila encontrada para essa busca.</div>';
-        return;
-      }
-      const grouped=new Map();
-      filtered.forEach(book=>{
-        const area=book.area||"Sem área";
-        const materia=book.materia||"Outros";
-        if(!grouped.has(area))grouped.set(area,new Map());
-        if(!grouped.get(area).has(materia))grouped.get(area).set(materia,[]);
-        grouped.get(area).get(materia).push(book);
-      });
-      [...grouped.keys()].sort((a,b)=>{
-        const ai=areaOrder.indexOf(a),bi=areaOrder.indexOf(b);
-        if(ai<0&&bi<0)return a.localeCompare(b,"pt-BR");
-        if(ai<0)return 1;if(bi<0)return -1;return ai-bi;
-      }).forEach(area=>{
-        const areaBlock=document.createElement("section");
-        areaBlock.className="area-block";
-        const count=[...grouped.get(area).values()].reduce((n,arr)=>n+arr.length,0);
-        areaBlock.innerHTML='<div class="area-title"><h3></h3><span></span></div>';
-        areaBlock.querySelector("h3").textContent=area;
-        areaBlock.querySelector("span").textContent=count+" apostila"+(count===1?"":"s");
-        [...grouped.get(area).keys()].sort((a,b)=>a.localeCompare(b,"pt-BR")).forEach(materia=>{
-          const sub=document.createElement("div");
-          sub.className="subarea-block";
-          const label=document.createElement("div");
-          label.className="subarea-label";
-          label.textContent=materia;
-          const row=document.createElement("div");
-          row.className="books-row";
-          grouped.get(area).get(materia).forEach(book=>row.appendChild(card(book)));
-          sub.append(label,row);
-          areaBlock.appendChild(sub);
-        });
-        root.appendChild(areaBlock);
-      });
-    }
-
-    function render(query=""){
-      renderRecent(query);
-      renderAreas(query);
-      const q=norm(query);
-      const total=books.filter(book=>!q||norm([book.area,book.materia,book.tema,book.titulo].join(" ")).includes(q)).length;
-      document.getElementById("library-count").textContent=books.length+" apostila"+(books.length===1?"":"s");
-      document.getElementById("books-search-count").textContent=q?(total+" resultado"+(total===1?"":"s")):(books.length+" apostila"+(books.length===1?"":"s"));
-    }
-
-    async function loadBooks(){
-      let remote=[];
-      try{
-        if(sb){
-          const {data,error}=await sb.from("apostilas").select("id,area,materia,tema,titulo,content_url,is_published,created_at").eq("is_published",true).order("created_at",{ascending:false});
-          if(!error&&Array.isArray(data))remote=data;
-        }
-      }catch{}
-      const byUrl=new Map();
-      [...approvedBlocks123,contracepcao,trabalhoPartoPrematuro,cicloHho,sexualidade,sexualidadeMasculina,ist,cancerMama,cancerColo,climaterioMenopausa,hipertensaoGestacao,parto,somp,pilot,...remote].forEach(book=>{if(book.content_url&&!byUrl.has(book.content_url))byUrl.set(book.content_url,book)});
-      books=[...byUrl.values()].map(book=>{
-        const taxonomy=window.LuriaMedicalTaxonomy;
-        if(!taxonomy)return book;
-        const fixed=taxonomy.normalizeClassification(book.area,book.materia);
-        return {...book,area:fixed.area||book.area,materia:fixed.materia||book.materia};
-      }).sort((a,b)=>(Date.parse(b.created_at||0)||0)-(Date.parse(a.created_at||0)||0));
-      render("");
-    }
-
-    document.getElementById("books-search-input")?.addEventListener("input",event=>render(event.target.value));
-    loadBooks();
-  })();
-  </script>
-<script src="/assets/js/study-mode.js?v=20261007-taxonomy5"></script>
-<script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
-<script src="/assets/js/cronograma-base-data.js?v=20261014"></script>
-<script src="/assets/js/apostilas-lotes-225.js?v=20261017-neutral1"></script>
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js?v=auth4"></script>
+  <script src="/assets/js/app.js?v=20261013-frame1"></script>
+  <script src="/assets/js/apostilas-app.js?v=20261024-hall1"></script>
+  <script src="/assets/js/study-mode.js?v=20261007-taxonomy5"></script>
+  <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
+  <script src="/assets/js/cronograma-base-data.js?v=20261014"></script>
+  <script src="/assets/js/apostilas-lotes-225.js?v=20261017-neutral1"></script>
 </body>
 </html>
