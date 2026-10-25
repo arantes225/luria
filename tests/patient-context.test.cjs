@@ -4,7 +4,7 @@ const fs=require('node:fs');
 const {JSDOM}=require('jsdom');
 
 const html='<!doctype html><html><body data-page="trabalho_paciente"><main><section id="patient-app"></section></main></body></html>';
-const source=fs.readFileSync('assets/js/patient-context.js','utf8');
+const source=fs.readFileSync('assets/js/patient-workspace.js','utf8');
 function fixture(){
   const dom=new JSDOM(html,{url:'https://fixture.invalid/trabalho/paciente/',runScripts:'outside-only',pretendToBeVisual:true});
   dom.window.confirm=()=>true;
@@ -15,7 +15,7 @@ function fixture(){
 
 test('patient context starts empty and creates an isolated temporary session',()=>{
   const dom=fixture(),w=dom.window,d=w.document;
-  assert.equal(d.querySelector('h1').textContent,'Paciente — Central Clínica');
+  assert.equal(d.querySelector('h1').textContent,'Uma avaliação, um só lugar');
   assert.equal(w.LuriaPatientContext.read().patient,null);
   d.querySelector('[data-action="show-create"]').click();
   assert.equal(d.querySelector('#patient-create').hidden,false);
@@ -44,7 +44,8 @@ test('patient context preserves measurements and explicit results without overwr
   let state=w.LuriaPatientContext.read();
   assert.equal(state.measurements.length,2);
   assert.deepEqual(Array.from(state.measurements, item=>item.value),[126,130]);
-  d.querySelector('[data-add-result="electrolytes"]').click();
+  assert.ok(d.querySelector('[data-add-result="electrolytes"]'));
+  w.LuriaPatientContext.addResult({title:'Fluidos e eletrólitos',category:'Avaliação'});
   state=w.LuriaPatientContext.read();
   assert.equal(state.results.length,1);
   assert.equal(state.problems[0].label,'Hiponatremia');

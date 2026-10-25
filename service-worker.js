@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261024-clinical-audit-batch4-paciente-v1";
+const CACHE_VERSION = "luria-pwa-20261024-clinical-audit-batch4-paciente-v2";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -97,7 +97,9 @@ const APP_SHELL = [
   "/assets/js/auth.js?v=auth4",
   "/assets/js/app.js?v=20261020-sidebar-nav",
   "/assets/css/patient-workspace.css?v=1",
+  "/assets/css/patient-workspace-v2.css?v=2",
   "/assets/js/patient-context.js?v=1",
+  "/assets/js/patient-workspace.js?v=2",
   "/assets/css/vocacao.css?v=2",
   "/assets/js/vocacao.js?v=2",
   "/assets/js/dashboard-layouts.js?v=20261005-dashboard3-v101",
