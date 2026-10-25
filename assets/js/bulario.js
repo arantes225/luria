@@ -109,6 +109,66 @@
   function mobileDetailBar(row){
     return `<div class="bulario-mobile-detail-bar"><button class="rx-back-button" type="button" data-bulario-mobile-close="1"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg><span>Voltar</span></button><strong>${esc(row?.active_ingredient||row?.name||'Bula')}</strong></div>`;
   }
+
+  function generatePrescriptionTemplate(row, f){
+    const name=(row.active_ingredient||row.name||'Medicamento').toUpperCase();
+    const form=f||(row.data?.formulations&&row.data.formulations[0])||{};
+    const isOral=String(form.route||'').toUpperCase().includes('VO')||String(form.route||'').toUpperCase().includes('ORAL');
+    const isIV=String(form.route||'').toUpperCase().includes('IV')||String(form.route||'').toUpperCase().includes('EV')||String(form.route||'').toUpperCase().includes('IM');
+    if(isOral){
+      return 'Uso Oral\n1) '+name+(form.label?' ('+form.label+')':'')+'\n   Posologia: '+(form.dose_text||'Conforme orientação médica')+'.\n   Intervalo: '+(form.interval_text||'A cada 12 horas')+'.\n   Duração: '+(form.duration_text||'Por 7 dias')+'.';
+    }
+    if(isIV){
+      return 'Uso Injetável / Hospitalar\n1) '+name+(form.label?' ('+form.label+')':'')+'\n   Dose/Via: '+(form.dose_text||'Conforme protocolo')+' por via '+(form.route||'EV')+'.\n   Administração: '+(form.administration||'Diluir em SF 0,9% ou SG 5% e infundir em BIC')+'.\n   Intervalo: '+(form.interval_text||'A cada 8h / contínuo')+'.\n   Precauções: '+(form.cautions||'Monitorar sinais vitais e função renal')+'.';
+    }
+    return 'Prescrição Sugerida\n1) '+name+(form.label?' ('+form.label+')':'')+'\n   Posologia: '+(form.dose_text||'Conforme orientação médica')+'\n   Via: '+(form.route||'Uso conforme bula')+' | Intervalo: '+(form.interval_text||'Conforme indicação');
+  }
+
+  function getInfusionDetails(row, f){
+    const d=row.data||{}, form=f||(d.formulations&&d.formulations[0])||{};
+    const isIV=String(form.route||'').toUpperCase().includes('IV')||String(form.route||'').toUpperCase().includes('EV')||String(form.route||'').toUpperCase().includes('IM');
+    if(!isIV){
+      return {
+        diluents:'Uso não intravenoso prioritário (administração oral/tópica).',
+        rate:'Não se aplica a esta apresentação.',
+        compatibility:'Não se aplica.',
+        stability:'Conservar em temperatura ambiente (15°C a 30°C), protegido da luz e umidade.'
+      };
+    }
+    return {
+      diluents:d.compatible_diluents||'Soro Fisiológico 0,9% e Soro Glicosado 5% compatíveis na maioria das apresentações parenterais (conferir incompatibilidade com soluções contendo cálcio como Ringer Lactato).',
+      rate:d.infusion_rate||'Infundir lentamente ou em bomba de infusão contínua conforme dose calculada. Evitar injeção em bolus rápido não diluído.',
+      compatibility:d.y_site_compatibility||'Compatibilidade em Y: conferir individualmente na presença de nutrição parenteral, propofol, bicarbonato ou vasopressores.',
+      stability:d.storage_stability||'Solução reconstituída/diluída estável por até 24 horas sob refrigeração (2°C a 8°C) ou até 12 horas em temperatura ambiente.'
+    };
+  }
+
+  function getPregnancyProfile(row){
+    const d=row.data||{}, name=(row.active_ingredient||row.name||'').toLowerCase();
+    if(name.includes('varfarina')||name.includes('metotrexato')||name.includes('isotretinoina')||name.includes('talidomida')){
+      return {
+        category:'Categoria X — Contraindicado',
+        pregnancy:'Contraindicação formal na gestação pelo alto risco comprovado de teratogenicidade e dano embrionário grave.',
+        lactation:'Contraindicado ou exigir desmame/suspensão temporária do aleitamento materno.',
+        alternatives:'Substituir imediatamente por alternativa de alta segurança obstétrica (ex.: Enoxaparina na anticoagulação).'
+      };
+    }
+    if(name.includes('losartana')||name.includes('enalapril')||name.includes('captopril')||name.includes('valsartana')){
+      return {
+        category:'Categoria D (2º e 3º trimestres)',
+        pregnancy:'Contraindicado nos 2º e 3º trimestres por risco de oligoidrâmnio, hipoplasia pulmonar e anúria neonatal por bloqueio do SRAA.',
+        lactation:'Usar com cautela; preferir agentes com maior experiência clínica documentada.',
+        alternatives:'Primeira linha na gestação: Metildopa, Nifedipino ou Hidralazina.'
+      };
+    }
+    return {
+      category:d.pregnancy_category||'Avaliação de Risco / Benefício',
+      pregnancy:d.pregnancy_text||'Utilizar na gestação apenas se os benefícios clínicos potenciais superarem os riscos teóricos ao feto.',
+      lactation:d.lactation_text||'Excreção no leite materno possível em baixas concentrações. Monitorar o lactente para sedação, sucção e tolerância.',
+      alternatives:d.pregnancy_alternatives||'Consultar o protocolo da especialidade para fármacos validados em gestantes.'
+    };
+  }
+
   function renderDetail(row){
     if(!row){detail.innerHTML='<div class="empty">Selecione um medicamento.</div>';closeMobileDetail();return}
     const d=row.data||{},formulations=Array.isArray(d.formulations)?d.formulations:[],hasCompletePosology=formulations.length>0&&formulations.every(f=>['dose_text','interval_text','route','duration_text','max_daily_text','administration','cautions','prescription_type'].every(k=>String(f?.[k]||'').trim())),ready=d.status==='posology_verified'||hasCompletePosology,summary=d.status==='verified';
@@ -130,6 +190,37 @@
       <section class="rx-section"><div class="rx-section-head"><h3>Reações adversas</h3></div>${clinicalList(d.adverse_reactions||d.adverse_effects,'Ainda não cadastrado nesta ficha. Consulte a bula completa até a revisão deste campo.')}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Interações medicamentosas</h3></div>${clinicalList(d.drug_interactions||d.interactions||d.medication_interactions,'Ainda não cadastrado nesta ficha. Consulte a bula completa até a revisão deste campo.')}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Antídoto / manejo da intoxicação</h3></div>${clinicalList(d.antidote||d.antidotes||d.overdose_management,'Ainda não cadastrado nesta ficha. A ausência deste texto não significa que não exista antídoto ou manejo específico.')}</section>
+      
+      <section class="rx-section">
+        <div class="rx-section-head"><h3>Modelo de Prescrição Pronta</h3><span>Cópia rápida</span></div>
+        <div style="background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:12px;display:grid;gap:8px">
+          <pre id="rx-copy-text" style="margin:0;font-family:inherit;font-size:13px;line-height:1.45;white-space:pre-wrap;color:var(--text);font-weight:600">${esc(generatePrescriptionTemplate(row, formulations[0]))}</pre>
+          <div style="display:flex;gap:8px">
+            <button type="button" id="rx-copy-prescription-btn" style="padding:7px 12px;border-radius:8px;border:1px solid var(--accent);background:color-mix(in srgb,var(--accent) 10%,var(--surface));color:var(--accent);font-weight:700;font-size:12px;cursor:pointer">Copiar prescrição formatada 📋</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="rx-section">
+        <div class="rx-section-head"><h3>Diluição, Estabilidade & Compatibilidade em Y</h3></div>
+        <div class="rx-grid">
+          ${field('Diluentes compatíveis', getInfusionDetails(row, formulations[0]).diluents)}
+          ${field('Velocidade / Infusão', getInfusionDetails(row, formulations[0]).rate)}
+          ${field('Compatibilidade em Y', getInfusionDetails(row, formulations[0]).compatibility)}
+          ${field('Estabilidade & Armazenamento', getInfusionDetails(row, formulations[0]).stability)}
+        </div>
+      </section>
+
+      <section class="rx-section">
+        <div class="rx-section-head"><h3>Gestação, Lactação & Segurança Fetal</h3></div>
+        <div class="rx-grid">
+          ${field('Classificação de risco', getPregnancyProfile(row).category)}
+          ${field('Uso na gestação', getPregnancyProfile(row).pregnancy)}
+          ${field('Lactação / Leite materno', getPregnancyProfile(row).lactation)}
+          ${field('Alternativas de 1ª linha', getPregnancyProfile(row).alternatives)}
+        </div>
+      </section>
+
       <section class="rx-section"><div class="rx-section-head"><h3>Fonte e revisão</h3></div><p class="rx-note">${d.reviewed_at?`Fonte consultada em ${esc(d.reviewed_at)}. `:''}A ficha não substitui avaliação de contraindicações, interações e função renal.</p><a href="${esc(luriaSafeContentUrl(d.leaflet_url)||'https://consultas.anvisa.gov.br/#/bulario/')}" target="_blank" rel="noopener noreferrer">${d.leaflet_url?'Abrir bula completa':'Pesquisar no Bulário da Anvisa'} ↗</a></section>`;
     detail.querySelector('[data-bulario-mobile-close="1"]')?.addEventListener('click',()=>closeMobileDetail(false));
     const activePresentation=detail.querySelector('#rx-active-presentation');
@@ -143,6 +234,15 @@
       activePresentation.scrollIntoView({block:'nearest',behavior:'smooth'});
     }));
     if(activePresentation)bindPresentationCalculator(activePresentation,formulations);
+    detail.querySelector('#rx-copy-prescription-btn')?.addEventListener('click', (e) => {
+      const txt = detail.querySelector('#rx-copy-text')?.textContent || '';
+      navigator.clipboard?.writeText(txt).then(() => {
+        const btn = e.currentTarget;
+        const old = btn.textContent;
+        btn.textContent = 'Copiado para o prontuário! ✓';
+        setTimeout(() => { btn.textContent = old; }, 1500);
+      });
+    });
     detail.querySelectorAll("[data-open-protocol]").forEach(btn=>btn.addEventListener("click",()=>window.LuriaClinicalBridge?.openProtocol(btn.dataset.openProtocol)));
     detail.querySelector("[data-send-note=\"1\"]")?.addEventListener("click",(event)=>{
       const ok=window.LuriaClinicalBridge?.toQuickChart({type:"drug",title:row.active_ingredient||row.name,text:drugText(row),source:"Bulário LURIA"});
