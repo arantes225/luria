@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261025-apostilas-unified-v4";
+const CACHE_VERSION = "luria-pwa-20261025-alex-companion-v3";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";

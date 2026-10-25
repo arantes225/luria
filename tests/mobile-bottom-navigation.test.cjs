@@ -34,9 +34,9 @@ test('bottom navigation follows the shared mobile breakpoint independently of in
 test('study shortcuts use real destinations, keep the web sidebar and track nested modules',async t=>{
  const f=fixture(t,{page:'flashcards',pathname:'/flashcards/revisao/'});await f.ready();
  const rail=f.d.getElementById('ui-mobile-navigation');assert.deepEqual([...rail.querySelectorAll('a')].map(n=>n.getAttribute('href')),['/dashboard/','/aprender/','/consolidar/']);
- assert.deepEqual([...rail.children].map(n=>n.textContent),['Dashboard','Apostilas','Consolidar','Mais']);
+ assert.deepEqual([...rail.children].map(n=>n.textContent),['Dashboard','Aprender','Consolidar','Mais']);
  assert.equal(rail.querySelector('[aria-current]').textContent,'Consolidar');assert.equal(f.d.getElementById('menu-open').hidden,true);
- for(const [page,pathname,label] of [['questoes','/questoes-simulados/','Consolidar'],['erros','/caderno-erros/','Consolidar'],['caderno','/caderno/','Apostilas'],['plantao','/plantao/sala-emergencia/','Mais']]){
+ for(const [page,pathname,label] of [['questoes','/questoes-simulados/','Consolidar'],['erros','/caderno-erros/','Consolidar'],['caderno','/caderno/','Aprender'],['plantao','/plantao/sala-emergencia/','Mais']]){
   const nested=fixture(t,{page,pathname});await nested.ready();assert.equal(nested.d.querySelector('#ui-mobile-navigation [aria-current]').textContent,label);
  }
  const original=f.d.querySelector('#sidebar a[href="/dashboard/"]');await f.resize(1440);

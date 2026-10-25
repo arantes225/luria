@@ -1681,8 +1681,8 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${luriaIcon("calendar")}</span><span>Cronograma</span>
         </a>
 
-        <a class="nav-link ${["aprender", "apostilas"].includes(page) ? "active" : ""}" href="/apostilas/">
-          <span class="nav-icon">${luriaIcon("book")}</span><span>Apostilas</span>
+        <a class="nav-link ${page === "aprender" ? "active" : ""}" href="/aprender/">
+          <span class="nav-icon">${luriaIcon("book")}</span><span>Aprender</span>
         </a>
 
         <a class="nav-link ${page === "consolidar" ? "active" : ""}" href="/consolidar/">
