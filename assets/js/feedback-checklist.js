@@ -25,7 +25,7 @@
       }
       const activity = document.querySelector('.social-activity');
       const intro = activity?.querySelector('.sc-activity-intro');
-      const hideActivityIntro = () => activity?.querySelectorAll('.sc-activity-intro').forEach(node => {
+      const hideActivityIntro = () => document.querySelectorAll('.social-activity .sc-activity-intro').forEach(node => {
         node.hidden = true;
         node.style.display = 'none';
       });
