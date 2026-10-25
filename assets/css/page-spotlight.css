@@ -661,7 +661,10 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
 
 /* O mascote lateral sai da lateral em Aprender e Professor Alex (reside no card dedicado) */
 body[data-page="aprender"] luria-alex-companion,
-body[data-page="professor_alex"] luria-alex-companion {
+body[data-page="professor_alex"] luria-alex-companion,
+body[data-ui-context="work"] luria-alex-companion,
+body[data-ui-work="v2"] luria-alex-companion,
+body[data-page^="trabalho_"] luria-alex-companion {
   display: none !important;
   visibility: hidden !important;
   width: 0 !important;

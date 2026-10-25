@@ -271,8 +271,8 @@ test('APP_SHELL contains existing public files and exact current foundational CS
     assert.equal(f.context.publicResource(f.request(url)), true, url);
   }
   assert.ok(f.APP_SHELL.includes('/assets/css/ui-app.css?v=7'));
-  assert.ok(f.APP_SHELL.includes('/assets/js/professor-alex-companion.mjs?v=20261025-visible3'));
-  assert.equal(f.context.publicResource(f.request('/assets/js/professor-alex-companion.mjs?v=20261025-visible3')),true);
+  assert.ok(f.APP_SHELL.includes('/assets/js/professor-alex-companion.mjs?v=20261025-visible4'));
+  assert.equal(f.context.publicResource(f.request('/assets/js/professor-alex-companion.mjs?v=20261025-visible4')),true);
   assert.ok(!f.APP_SHELL.some(url=>/ui-v2-foundations|ui-navigation-v2\.css|work-navigation\.css|ui-shell-controls|ui-components-v2/.test(url)));
   assert.ok(!f.APP_SHELL.includes('/assets/css/ui-app.css'));
   assert.ok(!f.APP_SHELL.includes('/assets/js/app.js'));

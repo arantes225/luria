@@ -1,6 +1,6 @@
 :host {
   position: fixed;
-  z-index: 65;
+  z-index: 99999 !important;
   display: block;
   width: 128px;
   color: var(--color-text-primary, #17334b);

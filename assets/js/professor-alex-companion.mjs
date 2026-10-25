@@ -14,6 +14,8 @@ const contexts = {
 export function mountAlexCompanion({userId, isAdmin=false}={}) {
   if (!userId || document.querySelector('luria-alex-companion')) return null;
   const page = document.body?.dataset.page || '';
+  const bodyData = document.body?.dataset || {};
+  if (bodyData.uiContext === 'work' || bodyData.uiWork === 'v2' || page.startsWith('trabalho_')) return null;
   if (page === 'aprender' || page === 'professor_alex') {
     return null;
   }
@@ -45,7 +47,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
     }
   } catch {}
 
-  const cssHref = new URL('../css/professor-alex-companion.css?v=20261025-visible3', import.meta.url).href;
+  const cssHref = new URL('../css/professor-alex-companion.css?v=20261025-visible4', import.meta.url).href;
   shadow.innerHTML = `
     <link rel="stylesheet" href="${cssHref}">
     <style>
