@@ -1,6 +1,6 @@
 /* Consolidated visual corrections from the product review checklist. */
 @layer luria-feedback {
-  body[data-page="cronograma"] #week-today { display:none !important; }
+  #week-today { display:none !important; }
   body[data-page="cronograma"] .topbar.dashboard-shell-topbar::after { content:none !important; }
 
   body[data-page="aprender"] .tool-cta,
@@ -66,6 +66,18 @@
     background:linear-gradient(135deg,color-mix(in srgb,var(--sf-violet) 16%,var(--color-surface)),color-mix(in srgb,var(--sf-teal) 9%,var(--color-surface))) !important;
     padding:20px !important;
   }
+  body[data-page="amigos"] #community-rooms > .social-card-head { display:none !important; }
+  body[data-page="amigos"] #community-rooms > .community-section-title {
+    display:block !important;
+    margin:0 0 16px !important;
+    padding:20px !important;
+    border:1px solid var(--color-border) !important;
+    border-radius:18px !important;
+    background:linear-gradient(135deg,color-mix(in srgb,var(--sf-violet) 16%,var(--color-surface)),color-mix(in srgb,var(--sf-teal) 9%,var(--color-surface))) !important;
+  }
+  body[data-page="amigos"] #community-rooms > .community-section-title h2 { margin:0 !important; font-size:24px !important; }
+  body[data-page="amigos"] #community-rooms > .community-section-title p { margin:8px 0 0 !important; color:var(--color-text-secondary); }
+  body[data-page="amigos"] .sc-activity-intro { display:none !important; }
   body[data-page="amigos"] #community-groups > .social-card-head p,
   body[data-page="amigos"] #community-rooms > .social-card-head p { margin:8px 0 0 !important; }
   body[data-page="amigos"] #social-join-form { margin-top:-2px !important; }
