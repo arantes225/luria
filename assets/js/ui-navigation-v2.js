@@ -133,7 +133,7 @@
       entry("/trabalho/pcr/","PCR","stethoscope","",get("/trabalho/pcr/"))
     ] : [
       entry("/dashboard/","Dashboard","dashboard","",get("/dashboard/")),
-      entry("/aprender/","Aprender","book","",get("/aprender/")),
+      entry("/apostilas/","Apostilas","book","",get("/aprender/")),
       entry("/consolidar/","Consolidar","cards","",get("/consolidar/"))
     ];
     for (const item of main) item.disabled = !item.tools && (!item.source || disabled(item));
