@@ -9,7 +9,7 @@
   <title>Acesso temporário · LURIA</title>
   <meta name="theme-color" content="#184888">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-  <link rel="stylesheet" href="/assets/css/quick-chart-external.css?v=4-notebook">
+  <link rel="stylesheet" href="/assets/css/quick-chart-external.css?v=5-tabs">
 <style id="luria-page-font-lock-v57">html body,html body *{font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important}</style><link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
 </head>
 <body data-page="trabalho_prontuario_externo">
@@ -29,45 +29,55 @@
           <h1>Abrir caderno</h1>
         </div>
       </div>
-      <p class="external-privacy">Use seu nome de usuário e o código de 6 dígitos exibido hoje na Cola Rápida do celular. Ele muda à meia-noite (Brasília).</p>
+      <p class="external-privacy">Abra a Cola Rápida no celular para gerar um PIN de 2 dígitos, válido por até 30 minutos. Depois aprove o acesso pelo celular. Cinco tentativas incorretas bloqueiam por 30 minutos.</p>
       <label class="external-code-field">
         <span>Nome de usuário</span>
         <input id="external-username" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="30" name="luria-user-code" data-lpignore="true" data-1p-ignore="true" placeholder="Ex.: luizarantes">
       </label>
       <label class="external-code-field external-pin-field">
-        <span>Código de hoje</span>
-        <input id="external-pin" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" name="luria-access-code" data-lpignore="true" data-1p-ignore="true" placeholder="••••••">
+        <span>PIN temporário de 2 dígitos</span>
+        <input id="external-pin" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="2" name="luria-access-code" data-lpignore="true" data-1p-ignore="true" placeholder="••">
       </label>
-      <button id="external-enter" class="external-enter" type="button">Abrir caderno</button>
+      <button id="external-enter" class="external-enter" type="button">Solicitar acesso</button>
       <p id="external-gate-error" class="external-gate-error" hidden></p>
     </section>
 
-    <section id="external-error" class="external-error" hidden>
-      <h1>Este acesso não está disponível</h1>
-      <p id="external-error-message">Confira os dados e tente novamente.</p>
+    <section id="external-pending" class="external-editor external-gate" hidden aria-live="polite">
+      <h2>Aprovação necessária</h2>
+      <p class="external-privacy">No celular, abra a Cola Rápida e toque em <strong>Aprovar</strong> na solicitação deste computador. O PIN sozinho não libera acesso.</p>
+      <span id="external-pending-status">Aguardando aprovação…</span>
+      <button id="external-pending-cancel" type="button" class="external-enter">Voltar</button>
     </section>
 
     <section id="external-editor" class="external-editor external-notebook" hidden>
       <div class="external-title">
-        <div>
-          <span>Acesso temporário</span>
-          <h1>Caderno</h1>
-        </div>
-        <small id="external-expiry"></small>
+        <div><span>Acesso temporário</span><h1>Cola Rápida</h1></div>
+        <small id="external-expiry">Sessão temporária</small>
       </div>
-
-      <div class="external-paper">
-        <textarea data-chart-field="note" rows="22" spellcheck="true" autocomplete="off" placeholder="Comece a escrever..."></textarea>
+      <div class="external-tabs" role="tablist" aria-label="Direção da transferência">
+        <button id="external-tab-send" type="button" role="tab" aria-selected="true" aria-controls="external-send-panel">Enviar</button>
+        <button id="external-tab-receive" type="button" role="tab" aria-selected="false" aria-controls="external-receive-panel">Receber</button>
       </div>
-
-      <footer class="external-savebar">
-        <span id="external-save-state">Salvo</span>
-        <button id="external-renew" type="button" class="external-clear">Trocar código</button>
-        <button id="external-clear" type="button" class="external-clear">Limpar</button>
-        <button id="external-save" type="button">Salvar</button>
-      </footer>
+      <section id="external-send-panel" role="tabpanel" aria-labelledby="external-tab-send">
+        <p class="external-privacy">Escreva aqui para enviar ao celular. Esta mensagem entra na caixa de recebidos da Cola Rápida, sem sobrescrever suas anotações.</p>
+        <div class="external-paper"><textarea id="external-send-text" rows="12" spellcheck="true" placeholder="Digite ou cole o texto para enviar ao celular…"></textarea></div>
+        <footer class="external-savebar">
+          <span id="external-send-status" role="status">Pronto para enviar</span>
+          <button id="external-send" type="button">Enviar ao celular</button>
+        </footer>
+      </section>
+      <section id="external-receive-panel" role="tabpanel" aria-labelledby="external-tab-receive" hidden>
+        <p class="external-privacy">Veja as anotações enviadas pela Cola Rápida do celular. O conteúdo é atualizado automaticamente enquanto a sessão estiver autorizada.</p>
+        <div class="external-paper"><textarea id="external-received-text" rows="12" readonly placeholder="Nenhum texto enviado pelo celular."></textarea></div>
+        <footer class="external-savebar">
+          <span id="external-receive-status" role="status">Aguardando conteúdo</span>
+          <button id="external-refresh" class="external-clear" type="button">Atualizar</button>
+          <button id="external-copy" type="button">Copiar texto</button>
+        </footer>
+      </section>
+      <footer class="external-session-footer"><button id="external-renew" type="button">Encerrar acesso</button></footer>
     </section>
   </main>
-  <script src="/assets/js/quick-chart-external.js?v=7-daily"></script>
+  <script src="/assets/js/quick-chart-external-pair.js?v=1"></script>
 </body>
 </html>
