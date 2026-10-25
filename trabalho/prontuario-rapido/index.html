@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/quick-chart-manager.css?v=7-notebook">
   <link rel="stylesheet" href="/assets/css/quick-chart-ocr.css?v=1">
-  <link rel="stylesheet" href="/assets/css/quick-chart-daily-code.css?v=1">
+  <link rel="stylesheet" href="/assets/css/quick-chart-daily-code.css?v=2-pair">
 <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
 <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
 
@@ -92,18 +92,28 @@
             <button id="quick-chart-save-note" class="primary" type="button">Salvar</button>
           </div>
 
-          <section class="quick-chart-daily-access" aria-label="Acesso diário do computador">
+          <section class="quick-chart-daily-access" aria-label="Pareamento temporário com o computador">
             <div>
               <span class="temp-note-kicker">Acesso sem login no computador</span>
-              <strong>Código de hoje</strong>
-              <p>O código muda automaticamente à meia-noite (horário de Brasília). Use seu nome de usuário e o código atual no acesso restrito.</p>
+              <strong>PIN deste acesso</strong>
+              <p>Ao abrir esta página, é gerado um PIN de 2 dígitos por até 30 minutos. No computador, informe o PIN e aprove o pedido aqui no celular. Após 5 tentativas incorretas, o acesso é bloqueado por 30 minutos.</p>
             </div>
             <div class="quick-chart-daily-code">
-              <output id="quick-chart-daily-code" aria-live="polite">••••••</output>
-              <span id="quick-chart-daily-day">Consultando código…</span>
-              <button id="quick-chart-copy-daily-code" type="button">Copiar código</button>
+              <output id="quick-chart-daily-code" aria-live="polite">••</output>
+              <span id="quick-chart-daily-day">Preparando acesso…</span>
+              <button id="quick-chart-copy-daily-code" type="button">Copiar PIN</button>
             </div>
             <p id="quick-chart-daily-status" role="status" aria-live="polite"></p>
+          </section>
+          <section class="quick-chart-inbox-panel" aria-label="Solicitações do computador">
+            <h2>Autorizar computador</h2>
+            <p>Um PIN correto não libera o computador sem sua aprovação. Confira os pedidos abaixo.</p>
+            <div id="quick-chart-pair-requests" aria-live="polite"></div>
+          </section>
+          <section class="quick-chart-inbox-panel" aria-label="Textos recebidos">
+            <h2>Receber do computador</h2>
+            <p>Textos enviados pela aba <strong>Enviar</strong> do computador aparecem aqui. Copie ou exclua quando quiser.</p>
+            <div id="quick-chart-inbox-list" aria-live="polite"></div>
           </section>
         </section>
       </div>
@@ -115,7 +125,7 @@
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script src="/assets/js/clinical-bridge.js?v=1"></script>
 <script src="/assets/js/quick-chart-manager.js?v=9-daily"></script>
-<script src="/assets/js/quick-chart-daily-code.js?v=1"></script>
+<script src="/assets/js/quick-chart-session-pin.js?v=1"></script>
 <script src="/assets/js/luria-lazy-vendors.js?v=20261024"></script>
 <script src="/assets/js/quick-chart-ocr.js?v=1"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
