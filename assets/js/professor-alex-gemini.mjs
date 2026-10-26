@@ -32,6 +32,22 @@ function isSocialOrGreeting(text) {
     || /^(oi|ola|bom dia|boa tarde|boa noite|opa|e ai|fala|valeu|obrigado|obrigada)\s+(alex|professor|mestre|amigo)/i.test(clean);
 }
 
+function fastSocialReply(text, isEstourado = false) {
+  const clean = normalizeAlexSearch(text);
+  if (isEstourado) {
+    if (/\b(obrigado|obrigada|valeu)\b/.test(clean)) return "Tá. Agora volta a estudar, porra.";
+    if (/\b(tchau|ate logo|ate mais)\b/.test(clean)) return "Vai lá. E não esquece a porra da revisão.";
+    return "Oi é o caralho. Tô aqui — desembucha.";
+  }
+  if (/\b(bom dia)\b/.test(clean)) return "Bom dia! Tô por aqui — manda.";
+  if (/\b(boa tarde)\b/.test(clean)) return "Boa tarde! Tô por aqui — manda.";
+  if (/\b(boa noite)\b/.test(clean)) return "Boa noite! Tô por aqui — manda.";
+  if (/\b(obrigado|obrigada|valeu)\b/.test(clean)) return "Tamo junto!";
+  if (/\b(tchau|ate logo|ate mais)\b/.test(clean)) return "Até mais!";
+  if (/\b(tudo bem|como vai)\b/.test(clean)) return "Tudo certo por aqui. E com você?";
+  return "Oi! Tô aqui — manda.";
+}
+
 const ALEX_SEARCH_STOP_WORDS = new Set([
   "ola", "bom", "dia", "boa", "tarde", "noite", "tudo", "bem", "como", "vai",
   "voce", "alex", "professor", "amigo", "valeu", "obrigado", "obrigada",
@@ -316,6 +332,26 @@ if (form) {
     if (isLiveActive && Number.isFinite(liveTranscriptConfidence)) payload.voice_confidence = liveTranscriptConfidence;
     const hasMaterial = Boolean(fileInput?.files?.[0]);
     const isSocial = isSocialOrGreeting(prompt || topic);
+    if (isSocial && !hasMaterial) {
+      const answer = fastSocialReply(prompt || topic, isEstourado);
+      if (prompt) appendUserMessage(prompt);
+      display(answer, "Professor Alex");
+      const promptInput = document.getElementById("alex-prompt");
+      if (prompt && promptInput?.value.trim() === prompt) promptInput.value = "";
+      const mascot = document.getElementById("alex-mascot");
+      if (mascot?.playAnimation) mascot.playAnimation(isEstourado ? "angry" : "wave");
+      if (isLiveActive) {
+        const statusText = document.getElementById("alex-status-text");
+        if (statusText) statusText.textContent = "🔊 Professor Alex respondendo...";
+        speakText(answer, () => {
+          if (!isLiveActive) return;
+          const currentStatus = document.getElementById("alex-status-text");
+          if (currentStatus) currentStatus.textContent = "🎙️ Ouvindo... Pode perguntar mais!";
+          setTimeout(() => startLiveListening?.(), 250);
+        });
+      }
+      return;
+    }
     const siteContext = isSocial ? null : await findAlexSiteContext([topic, prompt].filter(Boolean).join(" "));
     if (!siteContext && !hasMaterial && !isSocial) {
       const message = "Não encontrei esse termo no conteúdo da LURIA. Reformule a pergunta ou indique a matéria. Não vou inventar uma aula fora do acervo.";
@@ -342,6 +378,7 @@ if (form) {
       display(payload.depth === "aula" ? "Preparando explicação detalhada…" : "Respondendo à sua pergunta…", "Professor Alex está pensando");
     }
     if (prompt) appendUserMessage(prompt);
+    if (isLiveActive) speakText(isEstourado ? "Aham. Espera aí." : "Aham… deixa eu pensar.");
 
     const mascot = document.getElementById("alex-mascot");
     if (mascot?.playAnimation) {
@@ -406,7 +443,9 @@ if (form) {
         if (data?.audio) {
           playGeminiPuckAudio(data.audio, data.audioMimeType || "audio/wav", onFinishedSpeaking, data.answer);
         } else {
-          if (statusText) statusText.textContent = "Voz do Gemini indisponível. Usando a voz do dispositivo.";
+          if (statusText) statusText.textContent = data?.audioError === "device_tts_fast_path"
+            ? "🔊 Professor Alex respondendo..."
+            : "Voz do Gemini indisponível. Usando a voz do dispositivo.";
           speakText(data.answer, onFinishedSpeaking);
         }
       }

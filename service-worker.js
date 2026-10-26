@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261025-protocolos-unified-v5";
+const CACHE_VERSION = "luria-pwa-20261026-feynman-v1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -26,6 +26,7 @@ const APP_SHELL = [
   "/flashcards/",
   "/questoes-simulados/",
   "/aprender/",
+  "/feynman/",
   "/consolidar/",
   "/cronograma/",
   "/caderno/",
@@ -72,6 +73,8 @@ const APP_SHELL = [
   "/assets/css/ui-app.css?v=7",
   "/assets/css/dashboard-ui-v2.css?v=1",
   "/assets/css/education-ui-v2.css?v=2",
+  "/assets/css/feynman.css?v=20261026-1",
+  "/assets/js/feynman.mjs?v=20261026-1",
   "/assets/css/social-v3.css?v=2",
   "/assets/css/social-v4.css?v=9",
   "/assets/css/social-friends.css?v=12",

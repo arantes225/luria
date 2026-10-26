@@ -80,7 +80,6 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 const DEFAULT_MODEL = "gemini-3.5-flash-lite";
 const TTS_MODEL = "gemini-3.8-flash-tts";
-const TTS_FAST_MODEL = "gemini-3.8-flash-lite-tts";
 const MAX_PDF_BASE64 = 6_000_000; // ~4.5MB of raw PDF
 const MAX_BODY_BYTES = 6_500_000;
 const MAX_SITE_CONTEXT_CHARS = 6_000;
@@ -98,6 +97,48 @@ function corsHeaders(origin: string | null) {
 
 function json(payload: Record<string, unknown>, status: number, headers: Record<string, string>) {
   return new Response(JSON.stringify(payload), { status, headers });
+}
+
+function normalizeSocialText(value: unknown) {
+  return String(value || "").toLocaleLowerCase("pt-BR")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+function fastSocialReply(value: unknown, mode: string) {
+  const clean = normalizeSocialText(value);
+  const social = /^(oi|ola|bom dia|boa tarde|boa noite|e ai|eai|fala ai|opa|tudo bem|como vai|valeu|obrigado|obrigada|tchau|ate logo|ate mais|beleza|tranquilo|mestre|alex|professor|eae)(\s+(alex|professor|mestre|amigo|cara))?$/i.test(clean)
+    || /^(oi|ola|bom dia|boa tarde|boa noite|opa|e ai|fala|valeu|obrigado|obrigada)\s+(alex|professor|mestre|amigo)/i.test(clean);
+  if (!social) return null;
+  if (mode === "estourado") {
+    if (/\b(obrigado|obrigada|valeu)\b/.test(clean)) return "Tá. Agora volta a estudar, porra.";
+    if (/\b(tchau|ate logo|ate mais)\b/.test(clean)) return "Vai lá. E não esquece a porra da revisão.";
+    return "Oi é o caralho. Tô aqui — desembucha.";
+  }
+  if (/\bbom dia\b/.test(clean)) return "Bom dia! Tô por aqui — manda.";
+  if (/\bboa tarde\b/.test(clean)) return "Boa tarde! Tô por aqui — manda.";
+  if (/\bboa noite\b/.test(clean)) return "Boa noite! Tô por aqui — manda.";
+  if (/\b(obrigado|obrigada|valeu)\b/.test(clean)) return "Tamo junto!";
+  if (/\b(tchau|ate logo|ate mais)\b/.test(clean)) return "Até mais!";
+  if (/\b(tudo bem|como vai)\b/.test(clean)) return "Tudo certo por aqui. E com você?";
+  return "Oi! Tô aqui — manda.";
+}
+
+function getFeynmanSystemInstruction(action: string, learnerMode: string, topic: string, channel: string) {
+  const persona = learnerMode === "iniciante"
+    ? "Represente um aluno iniciante: peça linguagem simples, exemplos e esclarecimento de termos, sem fingir conhecimento avançado."
+    : learnerMode === "banca"
+      ? "Represente uma banca oral respeitosa e exigente: cobre precisão, justificativa, aplicação clínica e relações fisiopatológicas."
+      : "Represente um aluno questionador com conhecimento básico: explore mecanismos, relações causais e consequências clínicas.";
+  const shared = `MÉTODO FEYNMAN DA LURIA. Tema: ${topic}. O usuário é o professor e você é o aluno. ${persona}
+Rigor médico: aceite sinônimos, siglas reconhecidas e explicações cientificamente equivalentes. Baseie correções em fontes oficiais brasileiras, diretrizes de sociedades médicas e consensos internacionais reconhecidos. Não trate divergência de redação como erro. Se a segurança for insuficiente, declare a incerteza.
+Observe internamente acertos, omissões, contradições, erros e relações fisiopatológicas, mas não interrompa a cada detalhe. Nunca invente fonte ou diretriz específica.`;
+  if (action === "finish") {
+    return shared + `
+Produza a avaliação final em JSON válido, sem markdown, com exatamente estas chaves: score (inteiro 0-100), summary (string curta), mastered (array de strings), gaps (array de strings), errors (array de strings) e next_steps (array de strings). O score deve priorizar precisão científica, compreensão de mecanismos e capacidade de relacionar conceitos; não premie apenas quantidade. Em errors, só afirme erros com segurança e inclua a correção. Em next_steps, recomende de forma objetiva apostilas, questões, flashcards, revisão ou caderno de erros conforme as lacunas demonstradas.`;
+  }
+  return shared + `
+Responda como aluno, não como tutor. Faça somente UMA pergunta curta e pertinente por turno, com no máximo 45 palavras. Use questionamento socrático para o usuário perceber a lacuna. Não dê a resposta nem faça uma correção completa, salvo risco médico grave que exija sinalização imediata. Não elogie genericamente; quando reconhecer algo correto, diga concretamente o quê. ${channel === "voice" ? "Use frase natural, fácil de ouvir, sem markdown." : "Evite listas e monólogos."}`;
 }
 
 Deno.serve(async (req: Request) => {
@@ -148,9 +189,13 @@ Deno.serve(async (req: Request) => {
     return json({ usage }, 200, headers);
   }
 
+  const experience = data.experience === "feynman" ? "feynman" : "alex";
+  const feynmanAction = data.feynman_action === "finish" ? "finish" : "turn";
+  const feynmanMode = ["iniciante", "questionador", "banca"].includes(String(data.feynman_mode)) ? String(data.feynman_mode) : "questionador";
   const intent = ["learn", "question", "material"].includes(String(data.intent)) ? String(data.intent) : "learn";
   const mode = (data.mode === "estourado") ? "estourado" : "normal";
   const channel = (data.channel === "voice") ? "voice" : "chat";
+  const isVoiceInput = channel === "voice" || data.voice_input === true;
   const depth = data.depth === "aula" ? "aula" : "rapida";
   const sourceMode = data.source_mode === "luria_site" ? "luria_site" : "general";
   const siteContext = String(data.site_context || "").trim().slice(0, MAX_SITE_CONTEXT_CHARS);
@@ -162,15 +207,19 @@ Deno.serve(async (req: Request) => {
   if (!/^gemini-(?:3[.\w-]*|2\.5-flash[\w-]*)$/.test(modelToUse)) return json({ error: "gemini_model_unavailable" }, 503, headers);
   const rawHistory = Array.isArray(data.history) ? data.history.slice(-8) : [];
   if (!topic && !prompt) return json({ error: "empty_prompt" }, 400, headers);
-  if (!Deno.env.get("CLIENT_GEMINI")) return json({ error: "gemini_secret_missing" }, 503, headers);
 
   const voiceTranscript = prompt.toLocaleLowerCase("pt-BR").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[.\-]/g, " ").replace(/\s+/g, " ").trim();
-  if (channel === "voice" && /^(cep|c e p|cepe)$/.test(voiceTranscript)) {
+  if (isVoiceInput && /^(cep|c e p|cepe)$/.test(voiceTranscript)) {
     return json({ clarification: "A transcrição veio como “CEP”. Você quis dizer “sepse”? Responda “sim, sepse” ou repita a pergunta.", clarification_code: "ambiguous_transcription" }, 200, headers);
   }
-  if (channel === "voice" && Number.isFinite(voiceConfidence) && voiceConfidence < 0.65) {
+  if (isVoiceInput && Number.isFinite(voiceConfidence) && voiceConfidence < 0.65) {
     return json({ clarification: "Não entendi bem esse termo. Pode repetir devagar ou digitar a palavra? Não vou elaborar uma resposta antes de confirmar.", clarification_code: "low_transcription_confidence" }, 200, headers);
   }
+  const socialReply = experience === "alex" ? fastSocialReply(prompt || topic, mode) : null;
+  if (socialReply && (data.file === undefined || data.file === null)) {
+    return json({ answer: socialReply, audio: null, audioError: channel === "voice" ? "device_tts_fast_path" : null, model: "local-fast-path", usage: null, fast_path: true }, 200, headers);
+  }
+  if (!Deno.env.get("CLIENT_GEMINI")) return json({ error: "gemini_secret_missing" }, 503, headers);
 
   const contents: Array<Record<string, unknown>> = [];
 
@@ -221,17 +270,23 @@ Deno.serve(async (req: Request) => {
 
   // A opção escolhida pelo aluno controla efetivamente o tamanho da resposta.
   // A conversa casual continua curta mesmo em "aula", salvo solicitação explícita.
-  const system = getAlexSystemInstruction(mode, channel) + (depth === "aula"
-    ? "\n\nFORMATO AULA COMPLETA: quando o aluno pedir ensino médico, explique com raciocínio clínico, fisiopatologia, diagnóstico, conduta e exemplos pertinentes. Não force uma aula em cumprimentos ou conversas sociais."
-    : "\n\nFORMATO DÚVIDA RÁPIDA: priorize uma resposta imediata, direta e natural. Cumprimentos: uma frase curta. Dúvida factual simples: até três frases. Só aprofunde se a pergunta realmente exigir, sem comprometer segurança clínica.") + (sourceMode === "luria_site" ? "\n\nFONTE RESTRITA: responda somente com base nos trechos do acervo LURIA enviados nesta requisição. Não use busca externa nem preencha lacunas com uma aula genérica." : "");
+  const system = experience === "feynman"
+    ? getFeynmanSystemInstruction(feynmanAction, feynmanMode, topic || "tema médico", channel)
+    : getAlexSystemInstruction(mode, channel) + (depth === "aula"
+      ? "\n\nFORMATO AULA COMPLETA: quando o aluno pedir ensino médico, explique com raciocínio clínico, fisiopatologia, diagnóstico, conduta e exemplos pertinentes. Não force uma aula em cumprimentos ou conversas sociais."
+      : "\n\nFORMATO DÚVIDA RÁPIDA: priorize uma resposta imediata, direta e natural. Cumprimentos: uma frase curta. Dúvida factual simples: até três frases. Só aprofunde se a pergunta realmente exigir, sem comprometer segurança clínica.") + (sourceMode === "luria_site" ? "\n\nFONTE RESTRITA: responda somente com base nos trechos do acervo LURIA enviados nesta requisição. Não use busca externa nem preencha lacunas com uma aula genérica." : "");
 
   // Gemini 3.5 Flash-Lite exige níveis de pensamento, não thinkingBudget: 0.
   // Não enviar os antigos parâmetros de sampling no Gemini 3.x (deprecated).
+  const alexMaxOutputTokens = depth === "aula" ? (channel === "voice" ? 650 : 1400) : (channel === "voice" ? 220 : 320);
   const generationConfig: Record<string, unknown> = {
-    maxOutputTokens: depth === "aula" ? (channel === "voice" ? 650 : 1400) : (channel === "voice" ? 220 : 320),
+    maxOutputTokens: experience === "feynman"
+      ? (feynmanAction === "finish" ? 900 : 180)
+      : alexMaxOutputTokens,
   };
+  if (experience === "feynman" && feynmanAction === "finish") generationConfig.responseMimeType = "application/json";
   if (/^gemini-3(?:\.|-)/.test(modelToUse)) {
-    generationConfig.thinkingConfig = { thinkingLevel: depth === "aula" ? "medium" : "minimal" };
+    generationConfig.thinkingConfig = { thinkingLevel: experience === "feynman" && feynmanAction === "finish" ? "medium" : depth === "aula" && experience === "alex" ? "medium" : "minimal" };
   } else if (/^gemini-2\.5-flash/.test(modelToUse)) {
     generationConfig.thinkingConfig = { thinkingBudget: 0 };
   }
@@ -340,7 +395,7 @@ Deno.serve(async (req: Request) => {
   let audioMimeType: string = "audio/wav";
   let audioError: string | null = null;
 
-  if (channel === "voice") {
+  if (experience === "alex" && channel === "voice" && depth === "aula") {
     try {
       const voiceText = answer
         .replace(/\*\*(.*?)\*\*/g, "$1")
@@ -351,9 +406,7 @@ Deno.serve(async (req: Request) => {
         .slice(0, 1500)
         .trim();
 
-      // Flash-Lite TTS oferece menor latência para respostas curtas; aulas
-      // completas preservam o modelo expressivo. Um secret pode sobrescrever.
-      const ttsModel = Deno.env.get("ALEX_TTS_MODEL") || (depth === "aula" ? TTS_MODEL : TTS_FAST_MODEL);
+      const ttsModel = Deno.env.get("ALEX_TTS_MODEL") || TTS_MODEL;
       // Gemini 3.8 TTS usa Interactions API. O endpoint generateContent com
       // campos legados pode retornar 400 sem áudio mesmo com texto válido.
       const ttsResponse = await fetch("https://generativelanguage.googleapis.com/v1beta/interactions", {
@@ -402,6 +455,21 @@ Deno.serve(async (req: Request) => {
       audioError = "tts_unavailable";
       console.warn("[alex-gemini] TTS failure:", ttsErr instanceof Error ? ttsErr.name : "unknown");
     }
+  } else if (channel === "voice") {
+    // Respostas rápidas chegam imediatamente ao cliente e usam a síntese do
+    // dispositivo. Evita bloquear o texto aguardando uma segunda chamada de IA.
+    audioError = "device_tts_fast_path";
+  }
+
+  let report: Record<string, unknown> | null = null;
+  if (experience === "feynman" && feynmanAction === "finish") {
+    try {
+      const parsed = JSON.parse(answer);
+      if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) report = parsed;
+    } catch {
+      await settle(null, null, null);
+      return json({ error: "invalid_feynman_report" }, 502, headers);
+    }
   }
 
   const metadata = result?.usageMetadata || {};
@@ -412,7 +480,7 @@ Deno.serve(async (req: Request) => {
   const usage = await settle(validUsage ? inputTokens : null, validUsage ? outputTokens : null, validUsage ? totalTokens : null);
   if (!validUsage || !usage || typeof usage !== "object") {
     console.error("[alex-gemini] token_accounting_failure");
-    return json({ answer, audio: audioBase64, audioMimeType, audioError, model: modelToUse, usage: initialUsage, accounting_pending: true }, 200, headers);
+    return json({ answer, report, audio: audioBase64, audioMimeType, audioError, model: modelToUse, usage: initialUsage, accounting_pending: true }, 200, headers);
   }
-  return json({ answer, audio: audioBase64, audioMimeType, audioError, model: modelToUse, usage }, 200, headers);
+  return json({ answer, report, audio: audioBase64, audioMimeType, audioError, model: modelToUse, usage }, 200, headers);
 });
