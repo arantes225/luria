@@ -37,8 +37,5 @@ id_ed25519
 *credentials*.json
 *secrets*.json
 
-# Arquivos de evidências ou saídas que possam conter dados sensíveis
+# Evidências temporárias podem conter URLs assinadas; revisar arquivos já rastreados também.
 docs/auditoria-*/evidencias/
-**/*.env
-**/*.env.*
-!**/*.env.example
