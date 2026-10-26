@@ -5,6 +5,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -70,6 +73,7 @@ jobs:
       - name: Run outstanding editorial and external PIN tests
         run: node --test --test-isolation=none tests/apostilas-batch.test.cjs tests/quick-chart-daily-code.test.cjs tests/quick-chart-pairing.test.cjs
   deploy:
+    if: github.event_name != 'pull_request'
     needs: quality
     environment:
       name: github-pages
