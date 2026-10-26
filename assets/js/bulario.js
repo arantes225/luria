@@ -3,7 +3,7 @@
   const list=document.getElementById('drug-list');
   const detail=document.getElementById('drug-detail');
   const count=document.getElementById('drug-count');
-  let rows=[], protocols=[], selected=null;
+  let rows=[], protocols=[], selected=null, activeChip=""; const normStr=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
   const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const number=value=>new Intl.NumberFormat('pt-BR',{maximumFractionDigits:2}).format(value);
   const status=row=>row.data?.status==='posology_verified'?2:row.data?.status==='verified'?1:0;
@@ -36,10 +36,17 @@
   };
   function renderList(){
     const term=search.value.trim().toLocaleLowerCase('pt-BR');
-    const matches=rows.filter(row=>[row.name,row.active_ingredient,row.therapeutic_class,row.pharmacological_class,...(row.data?.diseases||[])].some(value=>String(value||'').toLocaleLowerCase('pt-BR').includes(term)));
-    matches.sort((a,b)=>status(b)-status(a)||a.name.localeCompare(b.name,'pt-BR'));
+    const matches=rows.filter(row=>{
+      if(activeChip){
+        const hay=normStr([row.therapeutic_class,row.pharmacological_class,row.data?.therapeutic_class,...(row.data?.diseases||[])].join(' '));
+        if(!hay.includes(activeChip)) return false;
+      }
+      if(!term) return true;
+      return [row.name,row.active_ingredient,row.therapeutic_class,row.pharmacological_class,...(row.data?.diseases||[])].some(value=>String(value||'').toLocaleLowerCase('pt-BR').includes(term));
+    });
+    matches.sort((a,b)=>status(b)-status(a)||String(a.name||'').localeCompare(String(b.name||''),'pt-BR'));
     count.textContent=`${matches.length} medicamento${matches.length===1?'':'s'}`;
-    list.innerHTML=matches.map(row=>`<button type="button" class="drug-row" data-id="${row.id}" aria-current="${row.id===selected}"><span class="drug-row-content"><strong>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</strong><small>${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<span class="drug-row-description">Nome comercial/referência: ${esc(row.name)}</span>`:''}${status(row)===2?`<span class="drug-row-presentations">${row.data.formulations?.length||0} apresentaç${row.data.formulations?.length===1?'ão':'ões'}</span>`:status(row)===1?'<span class="drug-row-description">Resumo da bula</span>':''}</small></span></button>`).join('')||'<div class="empty">Nenhum medicamento encontrado.</div>';
+    list.innerHTML=matches.map(row=>`<button type="button" class="drug-row" data-id="${row.id}" aria-current="${String(row.id)===String(selected)}"><span class="drug-row-content"><strong>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</strong><small>${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<span class="drug-row-description">Nome comercial/referência: ${esc(row.name)}</span>`:''}${status(row)===2?`<span class="drug-row-presentations">${row.data.formulations?.length||0} apresentaç${row.data.formulations?.length===1?'ão':'ões'}</span>`:status(row)===1?'<span class="drug-row-description">Resumo da bula</span>':''}</small></span></button>`).join('')||'<div class="empty">Nenhum medicamento encontrado.</div>';
   }
   function calculator(formulation,index){
     const c=formulation.calculator;
@@ -292,17 +299,41 @@
   list.addEventListener('click',event=>{
     const button=event.target.closest('[data-id]');
     if(!button)return;
-    selected=Number(button.dataset.id);
+    const rawId=button.dataset.id;
+    const found=rows.find(row=>String(row.id)===String(rawId));
+    selected=found?found.id:rawId;
     renderList();
-    renderDetail(rows.find(row=>row.id===selected));
+    renderDetail(found);
     openMobileDetail();
+  });
+  document.querySelectorAll('[data-class-chip]').forEach(chip=>{
+    chip.addEventListener('click',()=>{
+      activeChip=normStr(chip.dataset.classChip||'');
+      document.querySelectorAll('[data-class-chip]').forEach(c=>c.classList.toggle('is-active',c===chip));
+      renderList();
+    });
   });
   window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(true); });
   search.addEventListener('input',renderList);
-  (async()=>{const [{data,error},{data:protocolRows}]=await Promise.all([
-    window.supabaseClient.from('bulario_catalog').select('id,name,active_ingredient,therapeutic_class,pharmacological_class,data').order('name').limit(1000),
-    window.supabaseClient.from('clinical_protocols').select('slug,title,linked_drug_terms').order('title')
-  ]);if(error){list.innerHTML='<div class="empty">Não foi possível carregar o Bulário.</div>';return}rows=data||[];protocols=protocolRows||[];
+  (async()=>{
+    const localSeeds=Array.isArray(window.LURIA_BULARIO_SEEDS)?window.LURIA_BULARIO_SEEDS:[];
+    const localProtoSeeds=Array.isArray(window.LURIA_PROTOCOL_SEEDS)?window.LURIA_PROTOCOL_SEEDS:[];
+    let data=[],error=null,protocolRows=[];
+    if(window.supabaseClient){
+      try{
+        const [bRes,pRes]=await Promise.all([
+          window.supabaseClient.from('bulario_catalog').select('id,name,active_ingredient,therapeutic_class,pharmacological_class,data').order('name').limit(1000),
+          window.supabaseClient.from('clinical_protocols').select('slug,title,linked_drug_terms').order('title')
+        ]);
+        data=bRes?.data||[];error=bRes?.error||null;protocolRows=pRes?.data||[];
+      }catch(e){error=e;}
+    }
+    if(error&&!localSeeds.length){list.innerHTML='<div class="empty">Não foi possível carregar o Bulário.</div>';return}
+    const dbRows=data||[];
+    const existingKeys=new Set(dbRows.map(r=>normStr(r.active_ingredient||r.name)).filter(Boolean));
+    rows=[...dbRows,...localSeeds.filter(s=>!existingKeys.has(normStr(s.active_ingredient||s.name)))];
+    const existingProtoSlugs=new Set((protocolRows||[]).map(p=>p.slug).filter(Boolean));
+    protocols=[...(protocolRows||[]),...localProtoSeeds.filter(p=>!existingProtoSlugs.has(p.slug))];
     const q=new URLSearchParams(location.search).get('q')?.trim();
     if(q){
       search.value=q;
@@ -311,5 +342,5 @@
         || rows.find(row=>[row.name,row.active_ingredient].some(v=>String(v||'').toLocaleLowerCase('pt-BR').includes(term)));
       selected=hit?.id||rows[0]?.id;
     }else selected=rows.find(row=>row.id===363)?.id||rows[0]?.id;
-    renderList();renderDetail(rows.find(row=>row.id===selected));})();
+    renderList();renderDetail(rows.find(row=>String(row.id)===String(selected)));})();
 })();

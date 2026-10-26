@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261026-topic-study-v1";
+const CACHE_VERSION = "luria-pwa-20261026-security-weekly-off-topic-study-v1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -182,7 +182,7 @@ function publicResource(request) {
   return PUBLIC_PAGES.has(path)
     || /^\/apostilas\/[a-z0-9-]+\/(?:index\.html|content\.json)?$/.test(path)
     || path === "/manifest.webmanifest"
-    || /^\/content\/weekly\/[a-zA-Z0-9/_-]+\.json$/.test(path)
+    || path === "/content/weekly/manifest.json"
     || /^\/jogos\/study-rats\/(?:hall|game)\.(?:css|js)$/.test(path)
   || /^\/assets\/(?:js|css|vendor|fonts|img)\/[a-zA-Z0-9/_%. -]+\.(?:m?js|css|wasm|woff2?|ttf|otf|png|jpe?g|svg|webp|gif|ico)$/.test(path);
 }

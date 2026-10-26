@@ -83,12 +83,268 @@
               <article class="fluids-card"><h3>Correção do sódio por glicose</h3><label>Na medido (mmol/L)<input id="calc-cna" type="number" step="0.1"></label><label>Glicose (mg/dL)<input id="calc-cglucose" type="number" step="0.1"></label><button class="fluids-button" type="button" data-calc="corrected-na">Calcular</button><output id="out-corrected-na" class="fluids-output">—</output><small>Exibe a fórmula utilizada; não usar isoladamente para decidir tratamento.</small></article>
               <article class="fluids-card"><h3>Déficit de água livre</h3><label>Peso (kg)<input id="calc-water-weight" type="number" step="0.1"></label><label>Na medido<input id="calc-water-na" type="number" step="0.1"></label><label>Na desejado<input id="calc-water-target" type="number" step="0.1" value="140"></label><label><input id="calc-water-sex" type="checkbox"> Fator 0,6 (adulto homem; desmarcado = 0,5)</label><button class="fluids-button" type="button" data-calc="water-deficit">Calcular</button><output id="out-water-deficit" class="fluids-output">—</output><small>Estimativa teórica. Não é uma ordem de reposição nem inclui perdas em curso.</small></article>
               <article class="fluids-card"><h3>Fração de excreção de sódio</h3><label>Na urinário (mmol/L)<input id="calc-fena-una" type="number" step="0.1"></label><label>Na plasmático<input id="calc-fena-pna" type="number" step="0.1"></label><label>Creatinina urinária<input id="calc-fena-ucr" type="number" step="0.1"></label><label>Creatinina plasmática<input id="calc-fena-pcr" type="number" step="0.1"></label><button class="fluids-button" type="button" data-calc="fena">Calcular</button><output id="out-fena" class="fluids-output">—</output><small>Interpretar com diuréticos, DRC, LRA e contexto hemodinâmico.</small></article>
+              <article class="fluids-card"><h3>Fórmula de Adrogué-Madias (ΔNa por 1 L)</h3><label>Peso (kg)<input id="calc-am-weight" type="number" step="0.1"></label><label>Na sérico atual (mEq/L)<input id="calc-am-na" type="number" step="0.1"></label><label>Solução infundida<select id="calc-am-inf"><option value="513">NaCl 3% Hipertônico (513 mEq/L)</option><option value="154">SF 0,9% Isotônico (154 mEq/L)</option><option value="130">Ringer Lactato (130 mEq/L)</option><option value="77">NaCl 0,45% Ao Meio (77 mEq/L)</option><option value="0">SG 5% Água Livre (0 mEq/L)</option></select></label><label>Água corporal total<select id="calc-am-factor"><option value="0.6">Adulto Homem (0,6)</option><option value="0.5">Adulto Mulher / Idoso H (0,5)</option><option value="0.45">Idosa Mulher (0,45)</option></select></label><button class="fluids-button" type="button" data-calc="adrogue">Calcular variação</button><output id="out-adrogue" class="fluids-output">—</output><small>Nunca elevar o sódio > 8–10 mEq/L em 24h (risco de Mielinólise Pontina).</small></article>
+              <article class="fluids-card"><h3>Cálcio corrigido pela albumina</h3><label>Cálcio total (mg/dL)<input id="calc-ca-total" type="number" step="0.1"></label><label>Albumina sérica (g/dL)<input id="calc-ca-alb" type="number" step="0.1" value="4.0"></label><button class="fluids-button" type="button" data-calc="corrected-ca">Calcular</button><output id="out-corrected-ca" class="fluids-output">—</output><small>Fórmula de Payne: Ca corr = Ca medido + 0,8 × (4,0 − Albumina). Em acidose/alcalose, preferir Cálcio Iônico.</small></article>
+              <article class="fluids-card"><h3>Déficit de Bicarbonato (HCO₃⁻)</h3><label>Peso (kg)<input id="calc-bic-weight" type="number" step="0.1"></label><label>HCO₃⁻ atual (mEq/L)<input id="calc-bic-hco3" type="number" step="0.1"></label><button class="fluids-button" type="button" data-calc="bicarb-deficit">Calcular déficit</button><output id="out-bicarb-deficit" class="fluids-output">—</output><small>Fórmula: 0,4 × Peso × (24 − HCO₃). Reposição IV geralmente reservada a acidose metabólica hiperclorêmica grave ou pH &lt; 7,10 (ou &lt; 6,90 na CAD).</small></article>
+              <article class="fluids-card"><h3>Compensação Ácido-Básica (Gasometria)</h3><label>pH arterial<input id="calc-gas-ph" type="number" step="0.01" placeholder="7.30"></label><label>PaCO₂ (mmHg)<input id="calc-gas-pco2" type="number" step="0.1" placeholder="28"></label><label>HCO₃⁻ (mEq/L)<input id="calc-gas-hco3" type="number" step="0.1" placeholder="14"></label><button class="fluids-button" type="button" data-calc="gasometry">Avaliar compensação</button><output id="out-gasometry" class="fluids-output">—</output><small>Calcula a PaCO₂ esperada pela Fórmula de Winter (1,5 × HCO₃ + 8 ± 2) na acidose metabólica ou o HCO₃ esperado nos distúrbios respiratórios.</small></article>
+              <article class="fluids-card"><h3>Reidratação Pediátrica por Peso (MS/OMS)</h3><label>Peso da criança (kg)<input id="calc-peds-w" type="number" min="1" step="0.1"></label><button class="fluids-button" type="button" data-calc="peds-plan">Calcular Planos B e C</button><output id="out-peds-plan" class="fluids-output">—</output><small>Plano B (Desidratação leve/moderada): 50 a 100 mL/kg de SRO VO em 4h. Plano C (Choque/Desidratação grave): Bolus 20 mL/kg de SF 0,9% ou RL IV em 15–30 min.</small></article>
             </div>
           </div>
 
           <div class="fluids-panel" data-fluids-panel="balanco"><div class="fluids-grid fluids-grid-3"><article class="fluids-card"><h3>Entradas</h3><label>Oral/enteral (mL)<input data-balance-in type="number" min="0" step="1"></label><label>IV/medicações (mL)<input data-balance-in type="number" min="0" step="1"></label><label>Hemocomponentes/nutrição (mL)<input data-balance-in type="number" min="0" step="1"></label></article><article class="fluids-card"><h3>Saídas</h3><label>Diurese (mL)<input data-balance-out type="number" min="0" step="1"></label><label>Drenos/perdas GI (mL)<input data-balance-out type="number" min="0" step="1"></label><label>Outras perdas mensuradas (mL)<input data-balance-out type="number" min="0" step="1"></label></article><article class="fluids-card"><h3>Resultado</h3><label>Intervalo (h)<input id="balance-hours" type="number" min="0.1" step="0.1" value="24"></label><output id="balance-result" class="fluids-output">Balanço: —</output><p id="urine-result" class="fluids-muted">Diurese: —</p><button class="fluids-button" type="button" data-calc="balance">Atualizar balanço</button></article></div></div>
 
-          <div class="fluids-panel" data-fluids-panel="solucoes"><article class="fluids-card"><h3>Biblioteca comparativa — estrutura inicial</h3><div class="fluids-table-wrap"><table><thead><tr><th>Solução</th><th>Uso a estudar</th><th>Alertas de revisão</th></tr></thead><tbody><tr><td>Cristaloide balanceado</td><td>Expansão/reposição conforme contexto</td><td>Composição, cálcio, função renal, TCE e protocolo local</td></tr><tr><td>NaCl 0,9%</td><td>Indicações específicas conforme protocolo</td><td>Carga de cloro, acidose hiperclorêmica, congestão</td></tr><tr><td>Glicose em água</td><td>Veículo/água livre em cenários selecionados</td><td>Não é fluido de ressuscitação; glicemia e risco de hiponatremia</td></tr></tbody></table></div><p class="fluids-muted">A biblioteca completa deverá ser versionada por instituição, concentração, apresentação e aprovação farmacêutica. Esta tela não calcula adição de KCl, NaCl hipertônico, cálcio ou magnésio.</p></article></div>
+          <div class="fluids-panel" data-fluids-panel="solucoes">
+            <div class="fluids-grid fluids-grid-2">
+              <article class="fluids-card">
+                <h3>Composição dos Cristaloides e Fluidos Comuns</h3>
+                <div class="fluids-table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Fluido</th>
+                        <th>Na⁺ (mEq/L)</th>
+                        <th>Cl⁻ (mEq/L)</th>
+                        <th>K⁺ (mEq/L)</th>
+                        <th>Tampão / Base</th>
+                        <th>Osmolaridade</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>NaCl 0,9% (SF)</strong></td>
+                        <td>154</td>
+                        <td>154</td>
+                        <td>0</td>
+                        <td>Nenhum</td>
+                        <td>308 mOsm/L</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Ringer Lactato</strong></td>
+                        <td>130</td>
+                        <td>109</td>
+                        <td>4</td>
+                        <td>Lactato 28 mEq/L (Ca²⁺ 3)</td>
+                        <td>273 mOsm/L</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Plasma-Lyte 148</strong></td>
+                        <td>140</td>
+                        <td>98</td>
+                        <td>5</td>
+                        <td>Acetato 27 + Gluconato 23 (Mg²⁺ 3)</td>
+                        <td>295 mOsm/L</td>
+                      </tr>
+                      <tr>
+                        <td><strong>SG 5% (Glicose)</strong></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>50 g/L Glicose (água livre pura)</td>
+                        <td>252 mOsm/L (isomolar in vitro)</td>
+                      </tr>
+                      <tr>
+                        <td><strong>NaCl 3% (Hipertônico)</strong></td>
+                        <td>513</td>
+                        <td>513</td>
+                        <td>0</td>
+                        <td>Nenhum</td>
+                        <td>1026 mOsm/L</td>
+                      </tr>
+                      <tr>
+                        <td><strong>NaHCO₃ 8,4%</strong></td>
+                        <td>1000 (1 mEq/mL)</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>Bicarbonato 1000 mEq/L</td>
+                        <td>2000 mOsm/L</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <small class="fluids-muted">Cristaloides balanceados reduzem risco de acidose metabólica hiperclorêmica e lesão renal aguda em grandes volumes comparados ao SF 0,9%.</small>
+              </article>
+
+              <article class="fluids-card">
+                <h3>Regras de Segurança: Correção de Eletrólitos</h3>
+                <div class="fluids-table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Distúrbio</th>
+                        <th>Velocidade Máxima / Limite de Segurança</th>
+                        <th>Alerta Crítico de Risco</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Hiponatremia</strong></td>
+                        <td>Máx. <strong>8 a 10 mEq/L em 24h</strong> (ou 4–6 mEq/L em alto risco de desmielinização)</td>
+                        <td><strong>Síndrome de Desmielinização Osmótica (Mielinólise Pontina)</strong> por sobrecorreção rápida.</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hipernatremia</strong></td>
+                        <td>Redução máx. <strong>10 a 12 mEq/L em 24h</strong> (~0,5 mEq/L/h)</td>
+                        <td><strong>Edema Cerebral</strong> e convulsões por queda abrupta da osmolaridade plasmática.</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hipocalemia (K⁺)</strong></td>
+                        <td>Acesso periférico: máx. <strong>10 mEq/h</strong> (conc. ≤ 40 mEq/L). Acesso central com monitor: máx. <strong>20 mEq/h</strong></td>
+                        <td>Flebite química intensa, arritmias ventriculares fatais e parada em assistolia. Nunca em bolus!</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hipercalemia</strong></td>
+                        <td>Estabilização de membrana: Gluconato de Cálcio 10% 10–20 mL IV em 2–5 min</td>
+                        <td>Fibrilação ventricular e assistolia. Iniciar com ECG / monitorização cardíaca contínua imediata.</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hipomagnesemia</strong></td>
+                        <td>Sulfato de Magnésio 10% a 50%: máx. 1 g/h em infusão contínua lenta (exceto crise/eclampsia)</td>
+                        <td>Hipotensão, bradicardia, bloqueios atrioventriculares e perda de reflexos patelares.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <small class="fluids-muted">Sempre rastrear hipomagnesemia em hipocalemia refratária. A reposição de K⁺ depende de magnésio adequado para reter potássio intracelular.</small>
+              </article>
+            </div>
+
+            <div class="fluids-grid fluids-grid-2" style="margin-top:14px">
+              <article class="fluids-card">
+                <h3>Protocolo Prático: Hipercalemia Aguda (Os 4 Passos)</h3>
+                <div class="fluids-table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Etapa Fisiológica</th>
+                        <th>Fármaco e Diluição Prática</th>
+                        <th>Início / Duração</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>1. Estabilizar Membrana</strong><br><small>(Se alteração de ECG ou K⁺ &ge; 6,5)</small></td>
+                        <td><strong>Gluconato de Cálcio 10%</strong>: 1 a 2 ampolas (10–20 mL) + 50–100 mL SF 0,9% correr IV lento em 2 a 5 min (não reduz K⁺ sérico!)</td>
+                        <td>Início: 1–3 min<br>Duração: 30–60 min</td>
+                      </tr>
+                      <tr>
+                        <td><strong>2. Shift Intracelular (Principal)</strong><br><small>(Desloca K⁺ para dentro da célula)</small></td>
+                        <td><strong>Solução Polarizante (Glicoinsulina)</strong>: 10 UI de Insulina Regular + 50 g de Glicose (100 mL de Glicose 50% OU 500 mL de SG 10%) correr IV em 30–60 min.<br><small><em>Se glicemia &ge; 250 mg/dL: fazer apenas 10 UI de Insulina Regular sem glicose!</em></small></td>
+                        <td>Início: 15–30 min<br>Reduz K⁺ em 0,5–1,2 mEq/L por 4–6h</td>
+                      </tr>
+                      <tr>
+                        <td><strong>3. Shift Intracelular (Adjuvante)</strong></td>
+                        <td><strong>Salbutamol / Fenoterol inalatório</strong>: 10 a 20 mg em nebulização (4x a dose da asma) ou 8–12 jatos; E/OU <strong>NaHCO₃ 8,4%</strong> 1 mEq/kg IV se acidose metabólica associada.</td>
+                        <td>Início: 15–30 min<br>Duração: 2–4h</td>
+                      </tr>
+                      <tr>
+                        <td><strong>4. Excreção Real do K⁺</strong><br><small>(Retira K⁺ do organismo)</small></td>
+                        <td><strong>Furosemida</strong> 40–80 mg IV (se normovolêmico/hipervolêmico com diurese) + <strong>Ciclossilicato de Zircônio</strong> 10 g VO 8/8h (ou Patiromer / Sorcal) OU <strong>Hemodiálise de Urgência</strong> se refratária/anúria.</td>
+                        <td>Diurético: 30–60 min<br>Diálise: imediata</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+
+              <article class="fluids-card">
+                <h3>Receitas Práticas de Bancada: Preparo de NaCl 3% e Reposição de KCl</h3>
+                <div class="fluids-table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Situação Clínica</th>
+                        <th>Como Preparar na Enfermaria / PS</th>
+                        <th>Como Infundir com Segurança</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Preparo de NaCl 3% (513 mEq/L)</strong><br><small>(Hiponatremia sintomática grave)</small></td>
+                        <td><strong>Receita 1 (com SF 0,9%):</strong> 445 mL de SF 0,9% + <strong>55 mL de NaCl 20%</strong> (5 ampolas e meia de 10 mL).<br><strong>Receita 2 (com Água Destilada):</strong> 425 mL de AD ou SG 5% + <strong>75 mL de NaCl 20%</strong>.</td>
+                        <td><strong>Sintomas graves (convulsão/coma):</strong> Bolus de <strong>100 a 150 mL de NaCl 3% IV em 10 a 20 min</strong> (repetir até 2x buscando elevar Na⁺ em 4–6 mEq/L nas primeiras horas; teto 8–10 mEq/L em 24h).</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Reposição de Potássio (KCl)</strong><br><small>1 ampola KCl 19,1% (10 mL) = <strong>25 mEq</strong><br>1 ampola KCl 10% (10 mL) = <strong>13,4 mEq</strong></small></td>
+                        <td><strong>Via Periférica (conc. máx. 40 mEq/L):</strong> Diluir <strong>1 ampola de KCl 19,1% (25 mEq)</strong> em <strong>500 mL de SF 0,9%</strong> (conc. = 50 mEq/L; ou em 1.000 mL = 25 mEq/L).<br><strong>Via Central (conc. até 100 mEq/L):</strong> 2 ampolas KCl 19,1% (50 mEq) + 480 mL SF 0,9%.</td>
+                        <td><strong>Velocidade Máxima Periférica:</strong> 10 mEq/h (correr 500 mL com 1 ampola em <strong>3 a 4 horas</strong>).<br><strong>Velocidade Máxima Central (UTI):</strong> 20 mEq/h sob monitor cardíaco. Preferir diluir em SF 0,9% (o SG 5% estimula insulina e baixa o K⁺ inicialmente!).</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Reposição de Magnésio</strong><br><small>1 ampola MgSO₄ 10% (10 mL) = 1 g (8 mEq)<br>1 ampola MgSO₄ 50% (10 mL) = 5 g (40 mEq)</small></td>
+                        <td>Diluir <strong>2 g de MgSO₄</strong> (2 ampolas a 10% [20 mL] OU 4 mL da ampola a 50%) em <strong>100 a 250 mL de SF 0,9% ou SG 5%</strong>.</td>
+                        <td>Infundir lentamente em <strong>1 a 2 horas</strong> na hipomagnesemia eletiva (a infusão rápida causa perda renal de até 50% do magnésio infundido!).</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            </div>
+
+            <div class="fluids-grid fluids-grid-2" style="margin-top:14px">
+              <article class="fluids-card">
+                <h3>Desidratação na Diarreia Aguda: Planos A, B e C (Ministério da Saúde / OMS)</h3>
+                <div class="fluids-table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Plano e Estadiamento</th>
+                        <th>Sinais Clínicos</th>
+                        <th>Conduta Prática de Reidratação</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Plano A (Sem Desidratação)</strong><br><small>(Domiciliar)</small></td>
+                        <td>Alerta, olhos normais, lágrimas presentes, bebe água normalmente, sinal da prega desaparece imediatamente, pulso cheio.</td>
+                        <td><strong>SRO após cada evacuação líquida:</strong><br>• &lt; 1 ano: 50 a 100 mL<br>• 1 a 10 anos: 100 a 200 mL<br>• &gt; 10 anos/Adultos: livre demanda<br>+ <strong>Zinco oral por 10–14 dias</strong> (&lt; 6m: 10 mg/dia; &ge; 6m: 20 mg/dia).</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Plano B (Com Desidratação)</strong><br><small>(Terapia de Reidratação Oral na Unidade por 4h)</small></td>
+                        <td><strong>&ge; 2 sinais:</strong> Irritado/intranquilo, olhos fundos, bebe avidamente com sede, sinal da prega desaparece lentamente (&lt; 2 seg).</td>
+                        <td><strong>SRO 50 a 100 mL/kg por Via Oral em 4 horas</strong> sob supervisão médica (oferecer em colher/copo de 15/15 min). Se vômitos persistentes: Ondansetrona + Gastróclise (SNG 20–30 mL/kg/h). Reavaliar após 4h!</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Plano C (Desidratação Grave / Choque)</strong><br><small>(Hidratação Venosa Imediata)</small></td>
+                        <td><strong>&ge; 2 sinais:</strong> Letárgico/inconsciente, olhos muito fundos, incapaz de beber, prega muito lenta (&gt; 2 seg), enchimento capilar &gt; 3 seg, pulso fino.</td>
+                        <td><strong>Fase de Expansão Rápida IV (SF 0,9% ou Ringer Lactato):</strong><br>• <strong>Com Choque / Diretriz Atual (MS):</strong> Bolus de <strong>20 mL/kg IV em 15–30 min</strong> (repetir até restauração da perfusão; em cardiopatas/RN/desnutridos graves: 10 mL/kg).<br>• <strong>Esquema OMS Clássico (100 mL/kg):</strong> &lt; 1 ano = 30 mL/kg em 1h + 70 mL/kg em 5h; &ge; 1 ano = 30 mL/kg em 30 min + 70 mL/kg em 2h30.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+
+              <article class="fluids-card">
+                <h3>Manejo Prático: Distúrbios do Cálcio e do Fósforo</h3>
+                <div class="fluids-table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Distúrbio</th>
+                        <th>Critério / Quadro Clínico</th>
+                        <th>Tratamento de Emergência / Reposição</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Hipocalcemia Sintomática</strong><br><small>(Ca corrigido &lt; 7,5 mg/dL ou Ca iônico &lt; 0,9 mmol/L)</small></td>
+                        <td>Parestesias periorais/acro, tetania, espasmo carpopedal (<strong>Sinal de Trousseau</strong>), contração facial (<strong>Chvostek</strong>), laringoespasmo, convulsões e <strong>QTc longo</strong>.</td>
+                        <td><strong>Ataque IV:</strong> 1 a 2 ampolas (10–20 mL) de <strong>Gluconato de Cálcio 10%</strong> + 50–100 mL de SF 0,9% ou SG 5% correr em 10 a 20 min.<br><strong>Manutenção:</strong> 10 ampolas de Gluconato de Ca 10% (100 mL) + 900 mL SF/SG (1 mg/mL de Ca elementar) a 50–100 mL/h + corrigir Magnésio!</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Crise Hipercalcêmica Grave</strong><br><small>(Ca corrigido &gt; 14 mg/dL ou &gt; 12 mg/dL sintomático)</small></td>
+                        <td>Poliúria, desidratação grave (diabetes insipidus nefrogênico), constipação, dor abdominal, confusão/letargia/coma, LRA e <strong>QTc curto</strong> (causas: Malignidade / Hiperpara).</td>
+                        <td><strong>1º) Hidratação Vigorosa (Pilar #1!):</strong> SF 0,9% 200 a 300 mL/h (meta de diurese 100–150 mL/h).<br><strong>2º) Bisfosfonato IV:</strong> Ácido Zoledrônico 4 mg IV em 15 min (ou Pamidronato 60–90 mg IV em 2h).<br><strong>3º) Calcitonina</strong> 4 UI/kg SC/IM 12/12h (efeito rápido nas primeiras 48h).</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hipofosfatemia Grave</strong><br><small>(Fósforo &lt; 1,0 a 1,5 mg/dL)</small></td>
+                        <td>Síndrome de Realimentação, recuperação de CAD, etilismo crônico. Causa fraqueza diafragmática (falha de extubação!), rabdomiólise, hemólise e disfunção miocárdica.</td>
+                        <td>Reposição endovenosa lenta com <strong>Fosfato de Potássio</strong> ou Fosfato de Sódio: 0,25 a 0,5 mmol/kg diluídos em 250 mL de SF 0,9% ou SG 5%, infundidos lentamente em <strong>4 a 6 horas</strong>.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            </div>
+          </div>
 
           <div class="fluids-panel" data-fluids-panel="rascunho"><article class="fluids-card"><h3>Rascunho de plano para revisão</h3><label>Objetivo e hipótese clínica<textarea id="draft-goal" rows="3" placeholder="Descreva o objetivo, a causa provável e o que precisa ser reavaliado."></textarea></label><label>Monitorização e prazo de reavaliação<textarea id="draft-monitor" rows="3" placeholder="Ex.: sinais vitais, diurese, balanço, eletrólitos e horário de revisão."></textarea></label><label><input id="draft-review" type="checkbox"> Revisei contraindicações, fontes adicionais e necessidade de avaliação sênior/institucional</label><button class="fluids-button" type="button" data-calc="draft">Gerar resumo para revisão</button><pre id="draft-output" class="fluids-draft" aria-live="polite">Nenhum rascunho gerado.</pre></article></div>
 

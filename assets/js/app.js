@@ -6871,7 +6871,7 @@ iniciarApp();
 (function loadFeedbackChecklist(){
   if(document.querySelector('script[data-luria-feedback-checklist]'))return;
   const script=document.createElement('script');
-  script.src='/assets/js/feedback-checklist.js?v=7';
+  script.src='/assets/js/feedback-checklist.js?v=8';
   script.dataset.luriaFeedbackChecklist='true';
   script.defer=true;
   document.head.appendChild(script);

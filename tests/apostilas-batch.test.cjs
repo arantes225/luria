@@ -212,8 +212,16 @@ test("Imagens sem licenca nao aparecem e exames reais licenciados substituem som
   assert.match(tools,/Coriodeciduite aguda/);
   assert.ok(!tools.includes("Fluxograma em português de manejo da rotura prematura de membranas ovulares"));
   const clim=JSON.parse(read("apostilas/climaterio-menopausa/content.json"));
-  const fs=clim.q.find(x=>x[0]==="fisiopatologia");
-  assert.ok(fs?.[2]?.some(x=>x[0]==="x"&&x[1].includes("Fluxo fisiopatológico autoral LURIA")));
+  const physiology=clim.q.find(x=>x[0]==="fisiologia-transicao-straw-esgotamento-folicular");
+  assert.ok(physiology,"Capítulo real de fisiologia STRAW+10 precisa existir");
+  const originalFlow=physiology[2].find(x=>x[0]==="x"&&x[1].includes("Fluxo fisiopatológico autoral LURIA"))?.[1]||"";
+  assert.match(originalFlow,/depleção da reserva folicular/);
+  assert.match(originalFlow,/inibina B e do AMH/);
+  assert.match(originalFlow,/o estradiol não diminui de forma linear/);
+  assert.match(originalFlow,/FSH isolado não substitui a história/);
+  assert.match(originalFlow,/nice\.org\.uk\/guidance\/ng23/);
+  assert.match(originalFlow,/PMC3580996/);
+  assert.ok(clim.o.some(x=>x[0]==="fisiologia-transicao-straw-esgotamento-folicular"));
 });
 
 test("Vitalidade fetal preserva exame real licenciado e raciocinio clinico contextualizado",()=>{
@@ -334,6 +342,14 @@ test("Climatério aplica atualização ACOG 2026 sem reduzir sangramento a 4mm",
   assert.match(chapter,/persistência ou recorrência/);
   assert.match(chapter,/não obriga automaticamente biópsia/);
   assert.match(chapter,/10\.1097\/AOG\.0000000000006275/);
+  assert.match(chapter,/um único episódio de sangramento/);
+  assert.match(chapter,/endométrio inteiramente visualizado/);
+  assert.match(chapter,/acesso oportuno à avaliação ginecológica/);
+  assert.match(chapter,/Sangramento persistente ou recorrente/);
+  assert.match(chapter,/Espessamento endometrial/);
+  assert.match(chapter,/sem sangramento/);
+  assert.match(chapter,/Exemplo 1/);
+  assert.match(chapter,/Exemplo 2/);
   assert.equal(new Set(d.q.map(x=>x[0])).size,d.q.length);
 });
 
@@ -368,21 +384,37 @@ test("Hemorragias obstetricas mantem fluxos clinicos sem amniotomia automatica",
 
 
 test("Indução de parto conserva exame verdadeiro e alerta para situações de risco",()=>{
-  const h=read("apostilas/inducao-do-trabalho-de-parto/index.html");
-  assert.match(h,/id="fig-balao-cervical-usg-real"/);
-  assert.match(h,/12884_2022_5035_Fig4_HTML\.png/);
-  assert.match(h,/creativecommons\.org\/licenses\/by\/4\.0/);
-  assert.doesNotMatch(h,/<img[^>]+src="https:\/\/www\.cookmedical\.com/i,
-    "Imagem de fabricante com direitos não demonstrados não deve estar incorporada");
-  assert.match(h,/id="inducoes-casos-avancados-2026"/);
-  assert.match(h,/href="#inducoes-casos-avancados-2026"/);
-  assert.match(h,/Colo favorável não equivale a amniotomia segura/);
-  assert.match(h,/gestante normoxêmica/);
-  assert.match(h,/12–18 horas/);
-  assert.match(h,/OMS, métodos mecânicos/);
-  assert.match(h,/NICE NG207/);
+  const html=read("apostilas/inducao-do-trabalho-de-parto/index.html");
+  const data=JSON.parse(read("apostilas/inducao-do-trabalho-de-parto/content.json"));
+  const renderer=read("assets/js/apostila-renderer.js");
+  assert.match(html,/data-apostila-content="\/apostilas\/inducao-do-trabalho-de-parto\/content\.json"/);
+  assert.match(html,/src="\/assets\/js\/apostila-renderer\.js/);
+  assert.match(renderer,/for\(const s of data\.q\|\|\[\]\)/);
+  const balloon=data.q.find(s=>s[0]==="balao");
+  assert.ok(balloon,"Capítulo de método mecânico ausente");
+  const figure=(balloon[2]||[]).filter(x=>x[0]==="p")
+    .map(x=>String(x[1])).find(x=>x.includes('id="fig-balao-cervical-usg-real"'))||"";
+  assert.match(figure,/id="fig-balao-cervical-usg-real"/);
+  assert.match(figure,/12884_2022_5035_Fig4_HTML\.png/);
+  assert.match(figure,/creativecommons\.org\/licenses\/by\/4\.0/);
+  assert.match(figure,/Wen e colaboradores/);
+  assert.match(figure,/não devem ser copiados como prescrição ou padrão universal/);
+  const images=(data.q||[]).flatMap(s=>s[2]||[]).map(block=>String(block[1]))
+    .filter(source=>source.includes("<img"));
+  assert.ok(!images.some(source=>new RegExp('<img[^>]+src="https://www\\.cookmedical\\.com','i').test(source)),
+    "Não incorporar imagem de fabricante sem autorização demonstrada");
+  const id="inducoes-casos-avancados-2026";
+  const advanced=data.q.find(s=>s[0]===id);
+  assert.ok(advanced,"Casos avançados ausentes");
+  assert.ok(data.o.some(x=>x[0]===id),"Casos avançados não navegáveis");
+  assert.ok(JSON.stringify(advanced[2]).length>4000,"Casos avançados insuficientes");
+  const clinical=JSON.stringify(data);
+  assert.match(clinical,/Colo favorável não equivale a amniotomia segura/);
+  assert.match(clinical,/gestante normoxêmica/);
+  assert.match(clinical,/12–18 horas/);
+  assert.match(clinical,/OMS, métodos mecânicos/);
+  assert.match(clinical,/NICE NG207/);
 });
-
 
 test("Transmissão vertical conserva imagem CDC e usa retinografia licenciada",()=>{
   const h=read("apostilas/infeccoes-gestacao-transmissao-vertical/index.html");
@@ -402,19 +434,27 @@ test("Transmissão vertical conserva imagem CDC e usa retinografia licenciada",(
 
 
 test("Apostila IST ensina diferencial de ulceras sem perder fotos clinicas",()=>{
- const html=read("apostilas/infeccoes-sexualmente-transmissiveis/index.html");
- assert.match(html,/id="ulceras-genitais-decisoes-2026"/);
- assert.match(html,/href="#ulceras-genitais-decisoes-2026"/);
- assert.match(html,/úlcera indolor não confirma sífilis/);
- assert.match(html,/proctite grave depois de sexo anal receptivo/i);
- assert.match(html,/biópsia de lesão persistente/i);
- assert.match(html,/anexo alterado em 2024/);
- for(const id of [13,14,15,16,17,18,19,20]) {
-   assert.match(html,new RegExp("ist-"+id+"\\.webp"),"Imagem clínica "+id+" foi perdida");
- }
- assert.equal((html.match(/ist-\d+\.webp/g)||[]).length,8,"Devem permanecer as oito fotos originais");
+  const html=read("apostilas/infeccoes-sexualmente-transmissiveis/index.html");
+  const data=JSON.parse(read("apostilas/infeccoes-sexualmente-transmissiveis/content.json"));
+  const renderer=read("assets/js/apostila-renderer.js");
+  assert.match(html,/data-apostila-content="\/apostilas\/infeccoes-sexualmente-transmissiveis\/content\.json"/);
+  assert.match(html,/src="\/assets\/js\/apostila-renderer\.js/);
+  assert.match(renderer,/for\(const s of data\.q\|\|\[\]\)/);
+  const section=data.q.find(x=>x[0]==="ulceras-genitais-decisoes-2026");
+  assert.ok(section,"Capítulo de decisões sobre úlceras ausente");
+  assert.ok(data.o.some(x=>x[0]==="ulceras-genitais-decisoes-2026"),"Capítulo sem link de navegação");
+  assert.ok(JSON.stringify(section[2]).length>3000,"Diferencial insuficientemente desenvolvido");
+  const all=JSON.stringify(data);
+  assert.match(all,/úlcera indolor não confirma sífilis/);
+  assert.match(all,/proctite grave depois de sexo anal receptivo/i);
+  assert.match(all,/biópsia de lesão persistente/i);
+  assert.match(all,/anexo alterado em 2024/);
+  const images=(data.q||[]).flatMap(x=>x[2]||[])
+    .filter(x=>x[0]==="p").flatMap(x=>String(x[1]).match(/ist-\d+\.webp/g)||[]);
+  for(const id of [13,14,15,16,17,18,19,20])
+    assert.ok(images.includes("ist-"+id+".webp"),"Imagem clínica "+id+" ausente da fonte renderizada");
+  assert.equal(images.length,8,"Preservar exatamente oito imagens clínicas originais");
 });
-
 
 test("Infertilidade mostra HSG real CC0 e raciocinio por casal",()=>{
  const html=read("apostilas/infertilidade-conjugal/index.html");
@@ -431,20 +471,28 @@ test("Infertilidade mostra HSG real CC0 e raciocinio por casal",()=>{
 
 test("Contracepção: decisões avançadas mantêm navegação e diferenciações clínicas",()=>{
   const html=read("apostilas/planejamento-reprodutivo-contracepcao/index.html");
-  assert.match(html,/id="decisoes-avancadas-contracepcao-2026"/);
-  assert.match(html,/href="#decisoes-avancadas-contracepcao-2026"/);
-  assert.match(html,/Ulipristal versus levonorgestrel/);
-  assert.match(html,/ao menos cinco dias/);
-  assert.match(html,/secreção mucopurulenta cervical/);
-  assert.match(html,/21 anos com capacidade civil plena OU pelo menos dois filhos vivos/);
-  assert.match(html,/Sepse puerperal é contraindicação/);
-  assert.match(html,/who\.int\/publications\/i\/item\/9789240115583/);
-  assert.match(html,/cdc\.gov\/contraception\/hcp\/usspr\/emergency-contraception/);
-  assert.match(html,/Lei 14\.443\/2022/);
-  assert.match(html,/\bid="diu-cobre"/);
-  assert.match(html,/\bid="siu-lng"/);
+  const data=JSON.parse(read("apostilas/planejamento-reprodutivo-contracepcao/content.json"));
+  const renderer=read("assets/js/apostila-renderer.js");
+  assert.match(html,/data-apostila-content="\/apostilas\/planejamento-reprodutivo-contracepcao\/content\.json"/);
+  assert.match(html,/src="\/assets\/js\/apostila-renderer\.js/);
+  assert.match(renderer,/for\(const s of data\.q\|\|\[\]\)/);
+  const id="decisoes-avancadas-contracepcao-2026";
+  const chapter=data.q.find(x=>x[0]===id);
+  assert.ok(chapter,"Capítulo de decisões avançadas ausente");
+  assert.ok(data.o.some(x=>x[0]===id),"Sumário sem link para decisões avançadas");
+  assert.ok(JSON.stringify(chapter[2]).length>4000,"Capítulo ainda superficial");
+  const clinical=JSON.stringify(data);
+  assert.match(clinical,/Ulipristal versus levonorgestrel/);
+  assert.match(clinical,/ao menos cinco dias/);
+  assert.match(clinical,/secreção mucopurulenta cervical/);
+  assert.match(clinical,/21 anos com capacidade civil plena OU pelo menos dois filhos vivos/);
+  assert.match(clinical,/Sepse puerperal é contraindicação/);
+  assert.match(clinical,/who\.int\/publications\/i\/item\/9789240115583/);
+  assert.match(clinical,/cdc\.gov\/contraception\/hcp\/usspr\/emergency-contraception/);
+  assert.match(clinical,/Lei 14\.443\/2022/);
+  for(const deviceId of ["diu-cobre","siu-lng"])
+    assert.ok(data.q.some(x=>x[0]===deviceId),deviceId+" ausente do conteúdo");
 });
-
 
 test("Pré-natal: casos 2026 têm rastreio de bacteriúria, sífilis e VSR e estão navegáveis",()=>{
   const html=read("apostilas/pre-natal-baixo-risco/index.html");
@@ -464,17 +512,28 @@ test("Pré-natal: casos 2026 têm rastreio de bacteriúria, sífilis e VSR e est
 
 test("SUA: fotografia real de pólipo usa fonte licenciada e não revive figura restrita",()=>{
   const html=read("apostilas/sangramento-uterino-anormal/index.html");
-  assert.ok(html.includes('id="sua-polipo-histeroscopia-real"'));
-  assert.ok(html.includes('05a_Corpuspolyp_01_vor_Abtragung_01.a.jpg'));
-  assert.ok(html.includes('Dr. Andreas Ott'));
-  assert.ok(html.includes('creativecommons.org/licenses/by-sa/2.0/de/'));
-  assert.ok(html.includes('data-apostila-image-source-url='));
-  assert.ok(html.includes('id="estrutural"'));
-  assert.ok(!html.includes('polipo-1221-l.alonso.jpg'));
-  const renderer=read("assets/js/apostila-tools.js");
-  assert.match(renderer,/removedUnlicensed = new Set\(\[78, 94, 315, 319\]\)/);
+  const data=JSON.parse(read("apostilas/sangramento-uterino-anormal/content.json"));
+  const renderer=read("assets/js/apostila-renderer.js");
+  assert.match(html,/data-apostila-content="\/apostilas\/sangramento-uterino-anormal\/content\.json"/);
+  assert.match(html,/src="\/assets\/js\/apostila-renderer\.js/);
+  assert.match(html,/src="\/assets\/js\/apostila-image-fallback\.js"/);
+  assert.match(html,/img-src[^;]*https:\/\/upload\.wikimedia\.org/);
+  assert.match(renderer,/if\(k==="p"\)return"<p>"\+b\[1\]\+"<\/p>"/);
+  const section=(data.q||[]).find(item=>item[0]==="estrutural");
+  assert.ok(section,"O capítulo estrutural deve estar presente no JSON publicado");
+  assert.ok((data.o||[]).some(item=>item[0]==="estrutural"),"O capítulo deve constar do sumário");
+  const figure=(section[2]||[]).filter(item=>item[0]==="p")
+    .map(item=>item[1]).find(text=>text.includes('id="sua-polipo-histeroscopia-real"'))||"";
+  assert.match(figure,/id="sua-polipo-histeroscopia-real"/);
+  assert.match(figure,/05a_Corpuspolyp_01_vor_Abtragung_01\.a\.jpg/);
+  assert.match(figure,/Dr\. Andreas Ott/);
+  assert.match(figure,/creativecommons\.org\/licenses\/by-sa\/2\.0\/de\//);
+  assert.match(figure,/data-apostila-image-source-url=/);
+  assert.match(figure,/Histopatologia|histopatologia|não permite avaliar atipia/);
+  assert.doesNotMatch(JSON.stringify(data),/polipo-1221-l\.alonso\.jpg/);
+  const tools=read("assets/js/apostila-tools.js");
+  assert.match(tools,/removedUnlicensed = new Set\(\[78, 94, 315, 319\]\)/);
 });
-
 
 test("Síndromes hipertensivas: microangiopatias, diretrizes de cálcio e rastreabilidade",()=>{
   const html=read("apostilas/sindromes-hipertensivas-da-gestacao/index.html");
@@ -554,9 +613,16 @@ test("Sexualidade feminina e masculina sao apostilas independentes e pesquisavei
   assert.match(female,/Área: Ginecologia e Obstetrícia/);
   assert.match(male,/Contraindicação farmacológica crítica/);
   assert.match(female,/id="atendimento-pos-violencia-sexual"/);
-  assert.match(library,/titulo:"Sexualidade Feminina"/);
-  assert.match(library,/titulo:"Sexualidade Masculina"/);
-  assert.match(library,/Medicina Sexual · Sexualidade Masculina/);
+  // The current hall reads its catalog from the database, not inline HTML.
+  const catalogClient=read("assets/js/apostilas-app.js");
+  const catalogMigration=read("supabase/migrations/20261026064732_register_female_and_male_sexuality_apostilas_20261026.sql");
+  assert.match(library,/src="\/assets\/js\/apostilas-app\.js/);
+  assert.match(catalogClient,/\.from\("apostilas"\)/);
+  assert.match(catalogClient,/b\.tema, b\.titulo/);
+  assert.match(catalogMigration,/Sexualidade Feminina/);
+  assert.match(catalogMigration,/Sexualidade Masculina/);
+  assert.match(catalogMigration,/Medicina Sexual · Sexualidade Masculina/);
+  assert.match(catalogMigration,/\/apostilas\/sexualidade-masculina\//);
   const ids=[...male.matchAll(/<section\b[^>]*\bid="([^"]+)"/g)].map(x=>x[1]);
   for(const [,dest] of male.matchAll(/class="book-outline-link" href="#([^"]+)"/g)){
     assert.ok(ids.includes(dest),"Seção masculina inexistente no sumário: "+dest);
@@ -586,4 +652,51 @@ test("Sexualidade Masculina separada ensina hipotestosteronemia e urgencias sem 
   assert.match(html,/CC BY-SA 3.0|prótese peniana/);
   const female=read("apostilas/sexualidade/index.html");
   assert.match(female,/Sexualidade Feminina/);
+});
+
+test("Choque: imagens licenciadas têm origem na CSP e legendas clinicamente fiéis",()=>{
+  const html=read("apostilas/choque-circulatorio/index.html");
+  const csp=html.match(/<meta\s+http-equiv="Content-Security-Policy"\s+content="([^"]+)"/i)?.[1]||"";
+  const directive=csp.match(/(?:^|;)\s*img-src\s+([^;]+)/i)?.[1]||"";
+  assert.ok(directive.split(/\s+/).includes("https://commons.wikimedia.org"));
+  assert.ok(directive.split(/\s+/).includes("https://upload.wikimedia.org"));
+  assert.match(html,/Cateter venoso central tunelizado tipo Hickman/);
+  assert.match(html,/Figura ilustrativa de cateter tunelizado, não de inserção emergencial em choque/);
+  assert.match(html,/Representação das informações de pressão arterial em diferentes resoluções temporais/);
+  assert.match(html,/Gráfico de pressão arterial; não representa cateterização arterial/);
+  assert.doesNotMatch(html,/Canulização de artéria radial para monitorização contínua de PAM/);
+});
+
+test("Pré-natal: imagens relevantes e fonte Wikimedia autorizada sem figura arqueológica",()=>{
+  const html=read("apostilas/pre-natal-baixo-risco/index.html");
+  const csp=html.match(/<meta\s+http-equiv="Content-Security-Policy"\s+content="([^"]+)"/i)?.[1]||"";
+  const origins=(csp.match(/(?:^|;)\s*img-src\s+([^;]+)/i)?.[1]||"").split(/\s+/);
+  assert.ok(origins.includes("https://commons.wikimedia.org"));
+  assert.ok(origins.includes("https://upload.wikimedia.org"));
+  assert.match(html,/CRL%20Crown%20rump%20length%2012%20weeks/);
+  assert.match(html,/Ultrassonografia obstétrica com medição do comprimento cabeça-nádega/);
+  assert.doesNotMatch(html,/The.desert.of.the.Exodus/i);
+});
+
+test("Técnica cirúrgica: origem verificada e figuras correspondem ao instrumental moderno",()=>{
+  const html=read("apostilas/principios-de-tecnica-cirurgica/index.html");
+  const csp=html.match(/<meta\s+http-equiv="Content-Security-Policy"\s+content="([^"]+)"/i)?.[1]||"";
+  const images=(csp.match(/(?:^|;)\s*img-src\s+([^;]+)/i)?.[1]||"").split(/\s+/);
+  assert.ok(images.includes("https://commons.wikimedia.org"));
+  assert.ok(images.includes("https://upload.wikimedia.org"));
+  assert.match(html,/src="\/assets\/js\/apostila-image-fallback\.js"/);
+  assert.match(html,/Conjunto de instrumentos de dissecção \(não demonstra técnica de incisão\)/);
+  assert.match(html,/Porta-agulhas Mayo-Hegar utilizado em suturas/);
+  assert.doesNotMatch(html,/Egyptian-surgical-instruments\.jpg/);
+  assert.doesNotMatch(html,/Bisturi cirúrgico e técnica de incisão cutânea contínua/);
+});
+
+test("Curadoria: não sugerir uso de lote recolhido nem confundir histopatologia com ultrassom",()=>{
+  const hypertensive=read("apostilas/sindromes-hipertensivas-da-gestacao/index.html");
+  assert.doesNotMatch(hypertensive,/RECALLED(?:%20|_|___)/i);
+  assert.doesNotMatch(hypertensive,/26399028226/);
+  const firstTrimester=read("apostilas/sangramento-na-primeira-metade-da-gestacao/index.html");
+  assert.match(firstTrimester,/Partial%20Hydatidiform%20Mole%20/);
+  assert.match(firstTrimester,/Fotomicrografia histopatológica de mola hidatiforme parcial/);
+  assert.doesNotMatch(firstTrimester,/Padrão ultrassonográfico em tempestade de neve na mola hidatiforme/);
 });

@@ -298,3 +298,18 @@ body[data-page="trabalho_calculadora"] .calc-modal-body .calc-date-value {
     cursor: pointer;
   }
 }
+
+/* Categorias recolhidas (acordeao): clique para abrir */
+.calc-page details.calc-acc{margin:0 0 12px;border:1px solid var(--border,#dce5f0);border-radius:15px;background:var(--surface,#fff);overflow:hidden}
+.calc-page details.calc-acc>summary.group-head{display:flex;align-items:center;gap:12px;padding:16px 18px;margin:0;cursor:pointer;list-style:none;user-select:none}
+.calc-page details.calc-acc>summary.group-head::-webkit-details-marker{display:none}
+.calc-page details.calc-acc>summary.group-head>div{flex:1;min-width:0}
+.calc-page details.calc-acc>summary.group-head h2{margin:0;font-size:17px}
+.calc-page details.calc-acc>summary.group-head p{margin:2px 0 0;font-size:12.5px;color:var(--muted,#67758b)}
+.calc-page details.calc-acc>summary:hover{background:var(--surface-2,rgba(24,72,136,.05))}
+.calc-page details.calc-acc>summary:focus-visible{outline:2px solid #2563EB;outline-offset:-2px}
+.calc-page .calc-acc-caret{font-size:22px;line-height:1;color:var(--muted,#67758b);transition:transform .18s}
+.calc-page details.calc-acc[open]>summary .calc-acc-caret{transform:rotate(90deg)}
+.calc-page details.calc-acc[open]>summary{border-bottom:1px solid var(--border,#dce5f0)}
+.calc-page details.calc-acc>.calc-list{padding:14px 16px 16px}
+@media(prefers-reduced-motion:reduce){.calc-page .calc-acc-caret{transition:none}}

@@ -20,30 +20,40 @@
   <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
   <style>
-    .ecg-lab{display:grid;gap:16px}
-    .ecg-card{padding:20px;border:1px solid var(--border);border-radius:18px;background:var(--surface);box-shadow:var(--shadow,0 8px 24px rgba(24,72,136,.08))}
+    .ecg-shell{display:grid;gap:16px}
+    .ecg-tabs{display:flex;gap:8px;flex-wrap:wrap}
+    .ecg-tab{border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:12px;padding:9px 14px;font-weight:800;font-size:13px;cursor:pointer;transition:.15s}
+    .ecg-tab.is-active{background:var(--accent);border-color:var(--accent);color:#fff}
+    .ecg-panel{display:none;gap:14px}
+    .ecg-panel.is-active{display:grid}
+    .ecg-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .ecg-grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .ecg-card{padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:var(--shadow,0 8px 24px rgba(24,72,136,.08));display:grid;gap:10px;align-content:start}
     .ecg-card h2{margin:0 0 8px;font-size:20px}
-    .ecg-card p{margin:0 0 14px;color:var(--muted);line-height:1.5}
-    .ecg-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .ecg-field{display:grid;gap:6px}
+    .ecg-card h3{margin:0;font-size:1.05rem;color:var(--text)}
+    .ecg-card p{margin:0;font-size:13px;color:var(--muted);line-height:1.5}
+    .ecg-step-badge{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:8px;background:color-mix(in srgb,var(--accent) 14%,var(--surface));color:var(--accent);font-weight:900;font-size:12.5px;margin-right:8px}
+    .ecg-list{margin:0;padding-left:18px;display:grid;gap:6px;font-size:13px;line-height:1.5;color:var(--text)}
+    .ecg-table-wrap{overflow-x:auto}
+    .ecg-table{width:100%;border-collapse:collapse;font-size:12.5px}
+    .ecg-table th{text-align:left;padding:9px 10px;border-bottom:2px solid var(--border);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+    .ecg-table td{padding:10px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.45}
+    .ecg-alert{padding:12px 14px;border-left:4px solid #dc2626;border-radius:10px;background:color-mix(in srgb,#dc2626 8%,var(--surface));font-size:12.5px;line-height:1.5}
+    .ecg-field{display:grid;gap:5px;font-size:12.5px;font-weight:700}
     .ecg-field label{font-size:13px;font-weight:700;color:var(--text)}
-    .ecg-field select,.ecg-field input,.ecg-field textarea{width:100%;box-sizing:border-box;border:1px solid var(--border);border-radius:10px;padding:10px;background:var(--surface-2);color:var(--text);font:inherit}
+    .ecg-field input,.ecg-field select,.ecg-field textarea{width:100%;box-sizing:border-box;padding:9px 11px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2);color:var(--text);font:inherit}
     .ecg-field textarea{min-height:88px;resize:vertical}
     .ecg-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-    .ecg-btn{border:0;border-radius:10px;padding:10px 14px;font:inherit;font-weight:700;cursor:pointer;background:#184888;color:#fff}
+    .ecg-btn{padding:10px 14px;border:0;border-radius:10px;background:var(--accent,#184888);color:#fff;font-weight:800;font-size:13px;cursor:pointer;justify-self:start}
     .ecg-btn.secondary{background:var(--surface-2);color:var(--text);border:1px solid var(--border)}
     .ecg-btn:disabled{opacity:.55;cursor:not-allowed}
     .ecg-status{min-height:20px;font-size:13px;color:var(--muted)}
     .ecg-status.error{color:#b42318}
     .ecg-status.ok{color:#147a45}
-    .ecg-catalog{display:grid;gap:8px;margin-top:12px}
-    .ecg-prefix{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:10px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2)}
-    .ecg-prefix code{overflow-wrap:anywhere;font-size:12px}
-    .ecg-preview{display:none;gap:10px;margin-top:12px;padding:12px;border-radius:12px;background:var(--surface-2)}
-    .ecg-preview.visible{display:grid}
-    .ecg-preview a{overflow-wrap:anywhere}
-    .ecg-summary{white-space:pre-wrap;padding:12px;border-radius:10px;background:var(--surface-2);font-size:13px}
-    @media(max-width:720px){.ecg-grid{grid-template-columns:1fr}.ecg-card{padding:16px}}
+    .ecg-output{padding:12px 14px;border-radius:11px;border:1px solid var(--border);background:color-mix(in srgb,var(--accent) 6%,var(--surface));font-weight:700;font-size:13px;line-height:1.5}
+    .ecg-pre{margin:0;padding:14px;border-radius:12px;border:1px solid var(--border);background:var(--surface-2);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;white-space:pre-wrap;line-height:1.55}
+    .ecg-lab{display:grid;gap:16px;margin-top:8px}
+    @media(max-width:860px){.ecg-grid-2,.ecg-grid-3{grid-template-columns:1fr}}
   </style>
 </head>
 <body data-page="trabalho_ecg" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
@@ -60,8 +70,343 @@
         </header>
         <section class="luria-page-spotlight" aria-label="ECG">
           <div class="luria-page-spotlight-copy">
-            <strong data-page-title>ECG</strong>
-            <small class="luria-page-spotlight-helper">Acesso seguro a ECGs para apoio à revisão médica.</small>
+            <strong data-page-title>ECG no Plantão</strong>
+            <small class="luria-page-spotlight-helper">Leitura sistemática em 7 passos, localização de parede culpada no IAM, Sgarbossa, bloqueios, taquiarritmias, gerador de laudo e leitor por IA.</small>
+          </div>
+        </section>
+
+        <section class="ecg-shell">
+          <nav class="ecg-tabs" role="tablist" aria-label="Módulos de ECG">
+            <button class="ecg-tab is-active" type="button" data-ecg-tab="passos" aria-selected="true">1. Leitura em 7 Passos &amp; Calculadoras</button>
+            <button class="ecg-tab" type="button" data-ecg-tab="isquemia" aria-selected="false">2. IAM, Paredes, Artéria Culpada &amp; Sgarbossa</button>
+            <button class="ecg-tab" type="button" data-ecg-tab="bloqueios" aria-selected="false">3. Bloqueios (BAV / BRE / BRD) &amp; Eletrólitos</button>
+            <button class="ecg-tab" type="button" data-ecg-tab="arritmias" aria-selected="false">4. Taquiarritmias (QRS Estreito vs. Largo)</button>
+            <button class="ecg-tab" type="button" data-ecg-tab="laudo" aria-selected="false">5. Gerador de Laudo p/ Prontuário</button>
+          </nav>
+
+          <!-- PAINEL 1: 7 PASSOS E CALCULADORAS -->
+          <div class="ecg-panel is-active" data-ecg-panel="passos">
+            <div class="ecg-grid-2">
+              <article class="ecg-card">
+                <h3>Calculadora de FC e Intervalo QTc pelo Papel (25 mm/s)</h3>
+                <p>No padrão de 25 mm/s, cada quadradinho (1 mm) = <strong>0,04 s (40 ms)</strong> e cada quadradão (5 mm) = <strong>0,20 s (200 ms)</strong>.</p>
+                <div class="ecg-grid-2">
+                  <label class="ecg-field">Distância R-R (em mm / quadradinhos)<input id="ecg-rr-mm" type="number" min="3" max="100" step="0.5" placeholder="Ex.: 20 (= 4 quadradões)"></label>
+                  <label class="ecg-field">Intervalo QT (em mm / quadradinhos — opcional)<input id="ecg-qt-mm" type="number" min="4" max="30" step="0.5" placeholder="Ex.: 10 (= 400 ms)"></label>
+                </div>
+                <label class="ecg-field">Sexo do paciente (para limite de QTc)<select id="ecg-sex"><option value="m">Masculino (normal ≤ 450 ms)</option><option value="f">Feminino (normal ≤ 470 ms)</option></select></label>
+                <button class="ecg-btn" id="ecg-calc-btn" type="button">Calcular FC e QTc</button>
+                <div class="ecg-output" id="ecg-calc-out">Preencha a distância R-R em milímetros para calcular FC e QTc (Bazett, Fridericia e Hodges).</div>
+                <small style="color:var(--muted);font-size:11.5px">Regra rápida de bolso para QT: se o intervalo QT for menor que a metade do intervalo R-R (em FC normal), o QTc geralmente é normal.</small>
+              </article>
+
+              <article class="ecg-card">
+                <h3>Avaliador Rápido do Eixo Elétrico (QRS em DI, aVF e DII)</h3>
+                <p>Observe a polaridade predominante do complexo QRS nas derivações frontais <strong>DI</strong> e <strong>aVF</strong> (e <strong>DII</strong> se aVF for negativo):</p>
+                <div class="ecg-grid-3">
+                  <label class="ecg-field">QRS em DI<select id="ecg-axis-d1"><option value="pos">Positivo (+)</option><option value="neg">Negativo (−)</option></select></label>
+                  <label class="ecg-field">QRS em aVF<select id="ecg-axis-avf"><option value="pos">Positivo (+)</option><option value="neg">Negativo (−)</option></select></label>
+                  <label class="ecg-field">QRS em DII<select id="ecg-axis-d2"><option value="pos">Positivo (+)</option><option value="neg">Negativo (−)</option></select></label>
+                </div>
+                <button class="ecg-btn" id="ecg-axis-btn" type="button">Determinar Eixo Elétrico</button>
+                <div class="ecg-output" id="ecg-axis-out">Eixo Normal (−30° a +90°): QRS positivo em DI e positivo em DII/aVF.</div>
+              </article>
+            </div>
+
+            <div class="ecg-grid-3">
+              <article class="ecg-card">
+                <h3><span class="ecg-step-badge">1</span>Identificação e Calibração</h3>
+                <ul class="ecg-list">
+                  <li><strong>Velocidade padrão:</strong> 25 mm/s e ganho <strong>N (10 mm/mV)</strong>.</li>
+                  <li><strong>Troca de eletrodos de MMSS (erro comum!):</strong> Onda P e QRS totalmente negativos em <strong>DI</strong> com <strong>aVR positivo</strong> (com progressão normal em V1–V6, diferenciando da dextrocardia!).</li>
+                </ul>
+              </article>
+              <article class="ecg-card">
+                <h3><span class="ecg-step-badge">2</span>Ritmo e Frequência</h3>
+                <ul class="ecg-list">
+                  <li><strong>Ritmo Sinusal:</strong> Onda P positiva em <strong>DI, DII e aVF</strong> e negativa em <strong>aVR</strong>, precedendo todo QRS com intervalo R-R regular.</li>
+                  <li><strong>Ritmo Irregular (FC em FA):</strong> Contar o número de complexos QRS em <strong>30 quadradões (6 segundos)</strong> e multiplicar por <strong>10</strong>!</li>
+                </ul>
+              </article>
+              <article class="ecg-card">
+                <h3><span class="ecg-step-badge">3</span>Onda P e Intervalo PR</h3>
+                <ul class="ecg-list">
+                  <li><strong>Onda P normal:</strong> duração &lt; 120 ms (3 mm) e amplitude &lt; 2,5 mm. (SAE: índice de Morris em V1 / P mitrale ≥ 120 ms em DII; SAD: P pulmonale apiculada &gt; 2,5 mm em DII).</li>
+                  <li><strong>Intervalo PR normal:</strong> <strong>120 a 200 ms (3 a 5 mm)</strong>. Se &lt; 120 ms + onda delta = <strong>Pré-excitação (WPW)</strong>. Se &gt; 200 ms = <strong>BAV de 1º grau</strong>.</li>
+                </ul>
+              </article>
+              <article class="ecg-card">
+                <h3><span class="ecg-step-badge">4</span>Complexo QRS e Sobrecargas</h3>
+                <ul class="ecg-list">
+                  <li><strong>Duração normal:</strong> &lt; 120 ms (&lt; 3 mm).</li>
+                  <li><strong>Sobrecarga de VE (SVE):</strong> <em>Sokolow-Lyon:</em> S(V1) + R(V5 ou V6) &gt; 35 mm; <em>Cornell:</em> R(aVL) + S(V3) &gt; 28 mm (H) ou &gt; 20 mm (M); <em>Peguero-Lo Presti:</em> maior S + S(V4) ≥ 28 mm (H) ou ≥ 23 mm (M).</li>
+                  <li><strong>Baixa voltagem:</strong> QRS &lt; 5 mm nas periféricas e &lt; 10 mm nas precordiais (pensar em <strong>Tamponamento Cardíaco / Derrame Pericárdico</strong>, DPOC, obesidade, mixedema ou amiloidose).</li>
+                </ul>
+              </article>
+              <article class="ecg-card">
+                <h3><span class="ecg-step-badge">5</span>Segmento ST e Onda Q</h3>
+                <ul class="ecg-list">
+                  <li><strong>Supra de ST no IAMCSST (medido no ponto J):</strong> ≥ 1 mm em 2 derivações contíguas (em <strong>V2–V3</strong>: ≥ 2 mm em homens ≥ 40a; ≥ 2,5 mm em homens &lt; 40a; ≥ 1,5 mm em mulheres; em <strong>V3R/V4R e V7–V9</strong>: ≥ 0,5 mm).</li>
+                  <li><strong>Onda Q patológica:</strong> duração ≥ 40 ms (1 mm) e amplitude &gt; 25% da onda R subsequente.</li>
+                </ul>
+              </article>
+              <article class="ecg-card">
+                <h3><span class="ecg-step-badge">6–7</span>Onda T e Intervalo QTc</h3>
+                <ul class="ecg-list">
+                  <li><strong>Onda T hiperaguda:</strong> ampla, simétrica e apiculada (fase hiperaguda do IAM ou hipercalemia).</li>
+                  <li><strong>Inversão simétrica profunda (&gt; 3 mm) em V2–V4:</strong> Síndrome de Wellens (suboclusão crítica de DA) ou hipertensão intracraniana (ondas T cerebrais).</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <!-- PAINEL 2: IAM E PAREDES -->
+          <div class="ecg-panel" data-ecg-panel="isquemia">
+            <article class="ecg-card">
+              <h3>Localização Topográfica do IAM com Supra de ST e Artéria Coronária Culpada</h3>
+              <div class="ecg-table-wrap">
+                <table class="ecg-table">
+                  <thead>
+                    <tr>
+                      <th>Parede / Território</th>
+                      <th>Derivações com Supra de ST</th>
+                      <th>Artéria Culpada Mais Provável</th>
+                      <th>Cuidados e Armadilhas Críticas no Plantão</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Anterosseptal / Anterior</strong></td>
+                      <td><strong>V1 a V4</strong></td>
+                      <td><strong>Descendente Anterior (DA)</strong></td>
+                      <td>Se supra em V1 &gt; V2 + supra em aVR e BRD novo: oclusão de <strong>DA proximal</strong> (antes da 1ª septal). Alto risco de disfunção de VE e choque cardiogênico.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Anterior Extenso</strong></td>
+                      <td><strong>V1 a V6 + DI e aVL</strong></td>
+                      <td><strong>Tronco da Coronária Esquerda (TCE)</strong> ou DA Proximal</td>
+                      <td>Imagens em espelho (infra de ST) em DII, DIII e aVF. Evitar betabloqueador venoso precoce pelo alto risco de Killip III/IV!</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Lateral Alta / Lateral</strong></td>
+                      <td><strong>DI e aVL</strong> (± V5–V6)</td>
+                      <td><strong>Circunflexa (CX)</strong> ou 1º Ramo Diagonal da DA</td>
+                      <td>O supra isolado em aVL com infra recíproco em DIII pode ser o único sinal inicial de oclusão de Diagonal/Circunflexa!</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Inferior</strong></td>
+                      <td><strong>DII, DIII e aVF</strong></td>
+                      <td><strong>Coronária Direita (CD — 80%)</strong> ou Circunflexa (20%)</td>
+                      <td><strong>Dica CD vs. CX:</strong> Supra em DIII &gt; DII + Infra em DI/aVL = <strong>Coronária Direita!</strong> OBRIGATÓRIO rodar <strong>V3R e V4R</strong> em todo IAM inferior!</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Ventrículo Direito (VD)</strong></td>
+                      <td><strong>V3R e V4R</strong> (≥ 0,5 a 1 mm) + DII, DIII, aVF</td>
+                      <td><strong>Coronária Direita Proximal</strong></td>
+                      <td>Tríade: Hipotensão + Turgência Jugular + Pulmões Limpos! <strong>CONTRAINDICADOS Nitratos, Morfina e Furosemida!</strong> Tratar hipotensão com expansão de SF 0,9%.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Dorsal / Posterior</strong></td>
+                      <td><strong>V7, V8 e V9</strong> (≥ 0,5 mm)<br><small>Espelho em V1–V3: Infra de ST horizontal + R ampla (R/S &gt; 1)</small></td>
+                      <td><strong>Circunflexa (CX)</strong> ou Coronária Direita</td>
+                      <td>Todo <strong>Infra de ST puro em V1–V3</strong> com onda R alta em V1–V2 deve ser investigado com derivações posteriores <strong>V7–V9</strong> (é equivalente de IAM com Supra!).</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+
+            <div class="ecg-grid-2">
+              <article class="ecg-card">
+                <h3>Padrões Equivalentes de Oclusão Coronariana Aguda (OCA — Sem Supra Clássico!)</h3>
+                <ul class="ecg-list">
+                  <li><strong>Padrão de De Winter (Oclusão subaguda de DA proximal):</strong> Infradesnivelamento do ponto J de 1–3 mm ascendente em <strong>V1 a V6</strong> continuando-se em <strong>ondas T gigantes, positivas e simétricas</strong>. Conduta: <strong>Cateterismo de Emergência Imediato!</strong></li>
+                  <li><strong>Síndrome de Wellens (Suboclusão crítica de DA proximal):</strong> Paciente com história de dor anginosa recente (geralmente sem dor no momento do ECG) apresentando <strong>ondas T bifásicas (Plus-Minus, Tipo A)</strong> ou <strong>profundamente invertidas e simétricas (Tipo B) em V2–V3</strong>. Contraindicado teste ergométrico → <strong>Cinecoronariografia precoce!</strong></li>
+                  <li><strong>Supra de aVR ≥ 1 mm + Infra Difuso em ≥ 6 derivações:</strong> Sugere suboclusão de <strong>Tronco da Coronária Esquerda (TCE)</strong>, doença triarterial grave ou isquemia circunferencial subendocárdica.</li>
+                </ul>
+              </article>
+
+              <article class="ecg-card">
+                <h3>Critérios de Sgarbossa Modificados por Smith (IAM no BRE ou Marcapasso)</h3>
+                <p>No Bloqueio de Ramo Esquerdo (BRE), a repolarização normal é <strong>discordante</strong> do QRS. Há IAM agudo se houver qualquer um dos 3 critérios:</p>
+                <ul class="ecg-list">
+                  <li><strong>1. Supra de ST Concordante ≥ 1 mm</strong> em qualquer derivação com QRS positivo (<strong>5 pontos</strong> — altíssima especificidade!).</li>
+                  <li><strong>2. Infra de ST Concordante ≥ 1 mm em V1, V2 ou V3</strong> (onde o QRS do BRE é negativo — <strong>3 pontos</strong>).</li>
+                  <li><strong>3. Discordância Excessiva (Modificação de Smith):</strong> Supra de ST discordante com razão <strong>|ST / S| ≥ 0,25 (25%)</strong> (ou ≥ 5 mm pelo critério original).</li>
+                </ul>
+                <div class="ecg-alert"><strong>Diferencial de Supra de ST: IAM vs. Pericardite Aguda:</strong> Na Pericardite Aguda o supra é <strong>difuso</strong> (côncavo, 'sorridente', respeitando apenas aVR e V1), há <strong>infradesnível do segmento PR</strong> (e supra de PR em aVR), ausência de imagem em espelho (exceto aVR) e <strong>Sinal de Spodick</strong> (segmento TP descendente).</div>
+              </article>
+            </div>
+          </div>
+
+          <!-- PAINEL 3: BLOQUEIOS E ELETRÓLITOS -->
+          <div class="ecg-panel" data-ecg-panel="bloqueios">
+            <div class="ecg-grid-2">
+              <article class="ecg-card">
+                <h3>Bloqueios Atrioventriculares (BAVs — Do Benigno ao Marcapasso)</h3>
+                <div class="ecg-table-wrap">
+                  <table class="ecg-table">
+                    <thead>
+                      <tr>
+                        <th>Tipo de BAV</th>
+                        <th>Critério Eletrocardiográfico</th>
+                        <th>Nível Anatômico e Conduta</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>BAV de 1º Grau</strong></td>
+                        <td>Intervalo PR fixo <strong>&gt; 200 ms (&gt; 5 mm)</strong>, mas toda onda P conduz um QRS (1:1).</td>
+                        <td>Nó AV (Supra-hissiano). Benigno; revisar drogas bradicardizantes (BB, BCC, digoxina).</td>
+                      </tr>
+                      <tr>
+                        <td><strong>BAV 2º Grau Mobitz I (Wenckebach)</strong></td>
+                        <td>Aumento progressivo do intervalo PR (e encurtamento do R-R) até que <strong>1 onda P é bloqueada</strong>.</td>
+                        <td>Nó AV (Supra-hissiano). Geralmente benigno / vagotônico (comum no IAM inferior). Responde à Atropina se sintomático.</td>
+                      </tr>
+                      <tr>
+                        <td><strong>BAV 2º Grau Mobitz II</strong></td>
+                        <td>Intervalo PR <strong>constante/fixo</strong> nas batidas conduzidas até que subitamente <strong>1 onda P falha em conduzir</strong> (QRS frequentemente largo).</td>
+                        <td><strong>Infra-hissiano (Sistema His-Purkinje)!</strong> Alto risco de progressão súbita para BAV Total / Assistolia → <strong>Indicação de Marcapasso Definitivo!</strong> (Evitar Atropina isolada; preparar MP transcutâneo).</td>
+                      </tr>
+                      <tr>
+                        <td><strong>BAV Total (3º Grau)</strong></td>
+                        <td><strong>Dissociação AV completa:</strong> ondas P regulares ('P-P constante') e complexos QRS regulares ('R-R constante', FC 20–45 bpm) batendo de forma totalmente independente (FC atrial &gt; FC ventricular).</td>
+                        <td>Emergência se instável: <strong>Marcapasso Transcutâneo</strong> + Epinefrina (2–10 mcg/min) ou Dopamina (5–20 mcg/kg/min) como ponte para Marcapasso Transvenoso/Definitivo.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+
+              <article class="ecg-card">
+                <h3>Bloqueios de Ramo (QRS ≥ 120 ms) e Distúrbios Eletrolíticos no ECG</h3>
+                <ul class="ecg-list">
+                  <li><strong>Bloqueio de Ramo Direito (BRD):</strong> QRS ≥ 120 ms + padrão <strong>rSR' ('orelha de coelho' / M) em V1–V2</strong> + onda <strong>S empastada/larga em DI e V6</strong>.</li>
+                  <li><strong>Bloqueio de Ramo Esquerdo (BRE):</strong> QRS ≥ 120 ms + padrão <strong>QS ou rS profundo em V1</strong> ('cenoura') + onda <strong>R ampla, pura e entalhada (em torre) em DI, aVL, V5 e V6</strong> + ausência de onda q septal em DI/V5/V6.</li>
+                  <li><strong>Hipercalemia Progressiva (K⁺ elevado):</strong> 1º) <strong>Onda T apiculada em 'tenda'</strong> (base estreita) → 2º) Alargamento do PR e achatamento/desaparecimento da onda P → 3º) <strong>Alargamento difuso do QRS</strong> → 4º) <strong>Padrão Sinusoidal</strong> (pré-PCR! Fazer Gluconato de Cálcio 10% 10–20 mL IV imediatamente!).</li>
+                  <li><strong>Hipocalemia (K⁺ baixo):</strong> Achatamento/inversão da onda T, infra de ST e surgimento de <strong>Onda U proeminente (&gt; 1 mm ou maior que a onda T em V2–V3)</strong>, com pseudo-prolongamento do intervalo QU.</li>
+                  <li><strong>Tromboembolismo Pulmonar (TEP Agudo):</strong> Achado mais comum = <strong>Taquicardia Sinusal</strong>; achado de sobrecarga aguda de VD = inversão de onda T de V1 a V4 + padrão clássico <strong>S1Q3T3 (McGinn-White)</strong> ou BRD novo.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <!-- PAINEL 4: TAQUIARRITMIAS -->
+          <div class="ecg-panel" data-ecg-panel="arritmias">
+            <article class="ecg-card">
+              <h3>Abordagem Sistemática das Taquiarritmias (FC ≥ 100–150 bpm)</h3>
+              <div class="ecg-alert"><strong>REGRA #1 DO ACLS (ESTÁVEL vs. INSTÁVEL):</strong> Se a taquiarritmia causa <strong>Choque/Hipotensão, Dor Torácica Isquêmica, Edema Agudo de Pulmão ou Rebaixamento Agudo do Sensório</strong> (os 4 Ds de instabilidade): realizar <strong>CARDIOVERSÃO ELÉTRICA SINCRONIZADA IMEDIATA</strong> sob sedoanalgesia (100 a 200 J bifásico; na TV polimórfica sem pulso ou instável = Desfibrilação não sincronizada 200 J)!</div>
+              <div class="ecg-table-wrap">
+                <table class="ecg-table">
+                  <thead>
+                    <tr>
+                      <th>Padrão do QRS e Regularidade</th>
+                      <th>Diagnóstico Principal e Pistas de ECG</th>
+                      <th>Conduta no Paciente Hemodinamicamente Estável</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>QRS Estreito (&lt; 120 ms) + REGULAR</strong></td>
+                      <td><strong>Taquicardia Supraventricular Paroxística (TSVP — TRN / TRAV):</strong> Início súbito, FC 150–250 bpm, ondas P retrógradas ocultas no QRS ou logo após (pseudo-r' em V1 e pseudo-s em DII/DIII/aVF).<br><em>Diferencial:</em> Flutter Atrial 2:1 (FC cravada em ~150 bpm com ondas F 'dente de serra' em DII/DIII/aVF).</td>
+                      <td><strong>1º) Manobra Vagal de Valsalva Modificada</strong> (soprar seringa de 10 mL por 15s sentado e deitar a 0° elevando as pernas a 45° por 15s — reverte até 43%!).<br><strong>2º) Adenosina IV em flush rápido:</strong> 6 mg IV em bolus na prega cubital + flush 20 mL SF (se não reverter em 1–2 min: 12 mg IV).</td>
+                    </tr>
+                    <tr>
+                      <td><strong>QRS Estreito (&lt; 120 ms) + IRREGULAR</strong></td>
+                      <td><strong>Fibrilação Atrial (FA):</strong> R-R irregularmente irregular sem ondas P distintas (tremor de linha de base / ondas f).<br><em>Diferencial:</em> Taquicardia Atrial Multifocal (≥ 3 morfologias diferentes de onda P — típica do DPOC grave).</td>
+                      <td><strong>Controle de FC (&lt; 110 bpm):</strong> Metoprolol 5 mg IV lento (repetir até 15 mg se FEVE preservada e sem congestão) OU Deslanosídeo 0,4 mg IV / Amiodarona se IC descompensada. Avaliar tempo (&lt; 48h vs &gt; 48h) e anticoagulação.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>QRS Largo (≥ 120 ms) + REGULAR</strong></td>
+                      <td><strong>Taquicardia Ventricular Monomórfica (TV — 80% dos casos!)</strong> vs. TSV com aberrância (20%).<br><strong>Critérios de Brugada / Vereckei a favor de TV:</strong> Ausência de complexo RS em todas as precordiais V1–V6, intervalo R ao pico da S &gt; 100 ms, Dissociação AV, batimentos de fusão/captura ou eixo extremo (−90° a ±180°).</td>
+                      <td><strong>Na dúvida, tratar SEMPRE como Taquicardia Ventricular!</strong><br><strong>Amiodarona 150 mg (1 ampola)</strong> diluída em 100 mL SG 5% correr IV em 10 minutos + manutenção (1 mg/min por 6h e 0,5 mg/min por 18h) ou Cardioversão Elétrica Sincronizada Eletiva (100 J). <strong>NUNCA fazer Verapamil em taquicardia de QRS largo!</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>QRS Largo (≥ 120 ms) + IRREGULAR</strong></td>
+                      <td><strong>1) Torsades de Pointes (TV Polimórfica com QTc longo):</strong> QRS que torce seu eixo ao redor da linha de base.<br><strong>2) FA Pré-Excitada (Wolff-Parkinson-White):</strong> R-R irregular, FC &gt; 200–250 bpm, QRS variando de largura com onda delta.</td>
+                      <td><strong>No Torsades de Pointes:</strong> <strong>Sulfato de Magnésio 2 g IV</strong> em 10–15 min + corrigir K⁺ (&gt; 4,5 mEq/L).<br><strong>Na FA com WPW:</strong> <strong>Cardioversão Elétrica Sincronizada!</strong> (PROSCRITOS Adenosina, Metoprolol, Verapamil, Diltiazem, Digoxina e Amiodarona — bloqueiam o nó AV e precipitam FV!).</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          </div>
+
+          <!-- PAINEL 5: GERADOR DE LAUDO -->
+          <div class="ecg-panel" data-ecg-panel="laudo">
+            <article class="ecg-card">
+              <h3>Construtor Rápido de Laudo Eletrocardiográfico para Evolução / Prontuário</h3>
+              <p>Selecione os parâmetros encontrados no traçado e copie o texto estruturado diretamente para a evolução médica:</p>
+              <div class="ecg-grid-2">
+                <label class="ecg-field">1. Ritmo Cardíaco
+                  <select id="rep-rhythm">
+                    <option value="Ritmo sinusal regular">Ritmo sinusal regular</option>
+                    <option value="Taquicardia sinusal">Taquicardia sinusal</option>
+                    <option value="Bradicardia sinusal">Bradicardia sinusal</option>
+                    <option value="Ritmo de Fibrilação Atrial (R-R irregularmente irregular, ausência de ondas P)">Fibrilação Atrial (FA)</option>
+                    <option value="Ritmo de Flutter Atrial (ondas F em serrilhado)">Flutter Atrial</option>
+                    <option value="Taquicardia Supraventricular regular de QRS estreito">Taquicardia Supraventricular (TSVP)</option>
+                    <option value="Ritmo de comando de Marcapasso Artificial">Ritmo de Marcapasso</option>
+                  </select>
+                </label>
+                <label class="ecg-field">2. Frequência Cardíaca (bpm)
+                  <input id="rep-fc" type="number" min="20" max="300" value="75">
+                </label>
+                <label class="ecg-field">3. Onda P e Intervalo PR
+                  <select id="rep-pr">
+                    <option value="Intervalo PR normal (120–200 ms), sem sinais de pré-excitação">PR normal (120–200 ms), sem pré-excitação</option>
+                    <option value="Intervalo PR prolongado (> 200 ms — BAV de 1º grau)">PR prolongado (&gt; 200 ms — BAV 1º grau)</option>
+                    <option value="Intervalo PR curto (< 120 ms) com presença de onda delta (pré-excitação ventricular)">PR curto (&lt; 120 ms) com onda delta (WPW)</option>
+                    <option value="Ondas P ausentes (substituídas por ondas fibrilatórias f)">Ondas P ausentes (FA)</option>
+                  </select>
+                </label>
+                <label class="ecg-field">4. Eixo Elétrico no Plano Frontal
+                  <select id="rep-axis">
+                    <option value="Eixo elétrico normal no plano frontal (entre -30° e +90°)">Eixo normal (−30° a +90°)</option>
+                    <option value="Desvio do eixo elétrico para a esquerda (além de -30° / BDAS)">Desvio do eixo para a esquerda (além de −30°)</option>
+                    <option value="Desvio do eixo elétrico para a direita (além de +90°)">Desvio do eixo para a direita (além de +90°)</option>
+                  </select>
+                </label>
+                <label class="ecg-field">5. Duração e Morfologia do QRS
+                  <select id="rep-qrs">
+                    <option value="QRS estreito (< 120 ms), amplitude e progressão de onda R preservadas em precordiais">QRS estreito (&lt; 120 ms), sem bloqueios de ramo</option>
+                    <option value="QRS alargado (>= 120 ms) com padrão de Bloqueio de Ramo Direito (rSR' em V1 e S empastada em V6)">Bloqueio de Ramo Direito (BRD)</option>
+                    <option value="QRS alargado (>= 120 ms) com padrão de Bloqueio de Ramo Esquerdo (QS em V1 e R ampla entalhada em DI/V6)">Bloqueio de Ramo Esquerdo (BRE)</option>
+                    <option value="Critérios de voltagem para Sobrecarga Ventricular Esquerda (Sokolow-Lyon / Cornell positivos)">Sobrecarga Ventricular Esquerda (SVE)</option>
+                  </select>
+                </label>
+                <label class="ecg-field">6. Segmento ST, Onda T e QTc
+                  <select id="rep-st">
+                    <option value="Segmento ST isoelétrico, sem supra ou infradesnivelamento agudo; ondas T fisiológicas">ST isoelétrico, sem correntes de lesão agudas</option>
+                    <option value="Alterações inespecíficas da repolarização ventricular">Alterações inespecíficas da repolarização</option>
+                    <option value="Supradesnivelamento do segmento ST sugestivo de corrente de lesão subepicárdica aguda">Supradesnivelamento agudo de ST (especificar parede abaixo)</option>
+                    <option value="Infradesnivelamento do segmento ST / inversão de onda T sugestivos de isquemia subendocárdica">Infradesnivelamento de ST / inversão de onda T</option>
+                  </select>
+                </label>
+              </div>
+              <div class="ecg-grid-2">
+                <label class="ecg-field">7. Intervalo QTc
+                  <select id="rep-qtc">
+                    <option value="Intervalo QTc dentro dos limites da normalidade">QTc normal (≤ 450–470 ms)</option>
+                    <option value="Intervalo QTc prolongado (monitorar eletrólitos e medicações)">QTc prolongado (&gt; 450–470 ms)</option>
+                  </select>
+                </label>
+                <label class="ecg-field">8. Observação / Conclusão Adicional (Opcional)
+                  <input id="rep-obs" type="text" placeholder="Ex.: Seriamento eletrocardiográfico + curva de troponina em andamento.">
+                </label>
+              </div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap">
+                <button class="ecg-btn" id="ecg-build-report" type="button">Gerar Laudo Estruturado</button>
+                <button class="ecg-btn" id="ecg-copy-report" type="button" style="background:var(--surface-2);color:var(--text);border:1px solid var(--border)">Copiar para o Prontuário</button>
+              </div>
+              <pre class="ecg-pre" id="ecg-report-output">ELETROCARDIOGRAMA DE 12 DERIVAÇÕES (25 mm/s · 10 mm/mV):
+• Ritmo e FC: Ritmo sinusal regular, FC ~75 bpm.
+• Ondas P e Intervalo PR: Intervalo PR normal (120–200 ms), sem sinais de pré-excitação.
+• Eixo e Complexo QRS: Eixo elétrico normal no plano frontal (entre -30° e +90°); QRS estreito (&lt; 120 ms), amplitude e progressão de onda R preservadas em precordiais.
+• Repolarização (ST-T) e QTc: Segmento ST isoelétrico, sem supra ou infradesnivelamento agudo; ondas T fisiológicas; Intervalo QTc dentro dos limites da normalidade.
+• Conclusão: Traçado eletrocardiográfico sem sinais de isquemia miocárdica aguda ou arritmias malignas no momento.</pre>
+            </article>
           </div>
         </section>
 
@@ -90,6 +435,8 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
+  <script src="/assets/js/trabalho-ecg.js?v=20261026"></script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
-  <script defer src="/assets/js/ecg-reader.js?v=1"></script></body>
+  <script defer src="/assets/js/ecg-reader.js?v=1"></script>
+</body>
 </html>

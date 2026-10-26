@@ -16,8 +16,10 @@
     overflow:hidden !important;
     border:1px solid rgba(255,255,255,.14) !important;
     border-radius:15px !important;
-    background:var(--ui-frame-bg,linear-gradient(135deg,#102C57 0%,#184888 50%,#2563EB 100%)) !important;
-    box-shadow:0 10px 30px rgba(17,65,130,.12) !important;
+    /* Do not inherit the dark theme's almost-black legacy header.  This is the
+       same clear blue title-card treatment used by the other main sections. */
+    background:linear-gradient(135deg,#102C57 0%,#184888 54%,#2563EB 100%) !important;
+    box-shadow:0 10px 30px rgba(17,65,130,.28) !important;
   }
   body[data-page="cronograma"] .schedule-top-spotlight-copy {
     position:relative !important;
