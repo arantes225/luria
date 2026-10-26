@@ -42,3 +42,6 @@ docs/auditoria-*/evidencias/
 
 # Fábrica interna de questões: o GitHub é público, não versionar acervo ou portal privado.
 /qf-*/
+
+# Pacotes com gabaritos completos nao devem ser servidos como arquivos estaticos.
+/content/weekly/20??-W??/
