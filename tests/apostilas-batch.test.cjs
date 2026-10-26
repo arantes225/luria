@@ -554,9 +554,16 @@ test("Sexualidade feminina e masculina sao apostilas independentes e pesquisavei
   assert.match(female,/Área: Ginecologia e Obstetrícia/);
   assert.match(male,/Contraindicação farmacológica crítica/);
   assert.match(female,/id="atendimento-pos-violencia-sexual"/);
-  assert.match(library,/titulo:"Sexualidade Feminina"/);
-  assert.match(library,/titulo:"Sexualidade Masculina"/);
-  assert.match(library,/Medicina Sexual · Sexualidade Masculina/);
+  // The current hall reads its catalog from the database, not inline HTML.
+  const catalogClient=read("assets/js/apostilas-app.js");
+  const catalogMigration=read("supabase/migrations/20261026064732_register_female_and_male_sexuality_apostilas_20261026.sql");
+  assert.match(library,/src="\/assets\/js\/apostilas-app\.js/);
+  assert.match(catalogClient,/\.from\("apostilas"\)/);
+  assert.match(catalogClient,/b\.tema, b\.titulo/);
+  assert.match(catalogMigration,/Sexualidade Feminina/);
+  assert.match(catalogMigration,/Sexualidade Masculina/);
+  assert.match(catalogMigration,/Medicina Sexual · Sexualidade Masculina/);
+  assert.match(catalogMigration,/\/apostilas\/sexualidade-masculina\//);
   const ids=[...male.matchAll(/<section\b[^>]*\bid="([^"]+)"/g)].map(x=>x[1]);
   for(const [,dest] of male.matchAll(/class="book-outline-link" href="#([^"]+)"/g)){
     assert.ok(ids.includes(dest),"Seção masculina inexistente no sumário: "+dest);
