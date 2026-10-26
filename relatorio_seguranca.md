@@ -1,65 +1,62 @@
-# Relatório de Auditoria de Segurança do Histórico Git - LURIA
+# LURIA — Auditoria de segredos e plano de resposta
 
-## 1. Escopo e Metodologia
+**Escopo:** repositório `arantes225/luria`, incluindo histórico Git e prevenção de novos vazamentos.  
+**Estado:** investigação e mitigação parcial; **não** declarar incidente resolvido sem validação dos provedores.  
+**Confidencialidade:** nenhum segredo completo, JWT ou URL pré-assinada deve constar deste documento, de comentários de PR ou de logs.
 
-- **Repositório auditado:** `arantes225/luria`
-- **Ferramenta utilizada:** Gitleaks v8.18.2
-- **Escopo temporal:** Todo o histórico Git (commits, branches, arquivos removidos).
-- **Limitações:** A análise estática por expressões regulares (Gitleaks) foca em padrões conhecidos de credenciais, o que pode gerar falsos positivos se não devidamente filtrado.
-- **Commits auditados:** 10.231 commits (incluindo todas as referências fetchadas, `--unshallow`).
+## 1. Evidências e limites
 
-## 2. Achados Confirmados
+O Jules relatou uma varredura de **10.231 commits** com Gitleaks v8.18.2 (histórico obtido com `--unshallow`). Esse número documenta a execução informada pelo agente, **não** uma nova varredura independente desta PR. Identificadores de commits abaixo são apenas referências para investigação.
 
-Durante a varredura em todo o histórico, foram encontrados vazamentos reais e potenciais. Os valores completos dos segredos foram ofuscados.
+O workflow preventivo `.github/workflows/security-secrets.yml` usa `gitleaks/gitleaks-action@v3`. Em PRs, os logs observados mostraram varredura **incremental**, não auditoria exaustiva de todo o histórico. Um check verde de PR não certifica que todos os commits antigos estejam livres de segredos.
 
-### 2.1. Credenciais da AWS (Alta Gravidade)
-- **Gravidade:** Alta.
-- **Ocorrência:** Commit `08e0d70d` no arquivo `docs/auditoria-apostilas-2026-10-16/evidencias/links-http.json`.
-- **Tipo:** Access Key ID da AWS (`AKIAI[REDACTED]A`) e uma URL presigned válida no momento do commit.
-- **Status:** Presente no histórico antigo. Arquivo foi removido em commits subsequentes.
-- **Risco:** Permite (ou permitia, dependendo do IAM) acesso indevido ao bucket S3 `host-article-assets`, expondo arquivos e gerando custos.
-- **Correção necessária:** Revogar a Access Key associada na AWS imediatamente.
+## 2. Achados e classificação
 
-### 2.2. JWT Supabase (Média Gravidade)
-- **Gravidade:** Média/Baixa.
-- **Ocorrência:** Presente no histórico nos arquivos `qf-r8K2[REDACTED]P1cF/index.html` (Commit `dc93e4ab`) e `app.js` (ex.: Commit `2754c71e`).
-- **Tipo:** JWT de token anônimo do Supabase (com papel `anon`).
-- **Status:** Presente no histórico, possivelmente inativo dependendo da rotação da chave JWT do Supabase.
-- **Risco:** Tokens `anon` com JWT assinado com a `jwt_secret` podem permitir leitura e operações de APIs que estão liberadas para usuários anônimos via RLS (Row Level Security).
-- **Correção necessária:** O projeto já possui políticas e chaves rotacionadas (publishable), mas é sempre bom confirmar as regras de RLS para acesso `anon`.
+### A. AWS — identificador de chave em URL pré-assinada (investigação prioritária)
 
-### 2.3. Chave Genérica de API/Acesso (Média Gravidade)
-- **Gravidade:** Média.
-- **Ocorrência:** Commit `dc93e4ab` no arquivo `qf-r8K2[REDACTED]P1cF/index.html`.
-- **Tipo:** Variável `ACCESS` com valor fixo para a ponte de acesso, que atua como barreira estática (`r8K2[REDACTED]P1cF`).
-- **Status:** Presente no histórico.
-- **Risco:** Bypass do controle de acesso estático para essa página pública específica caso a chave não tenha sido invalidada ou trocada.
-- **Correção necessária:** Se esta página ainda usar esse método de autenticação, o valor deve ser modificado (rotacionado).
+- **Local:** commit `08e0d70d`, `docs/auditoria-apostilas-2026-10-16/evidencias/links-http.json` (arquivo removido posteriormente).
+- **Evidência relatada:** um identificador `AKIA…` em URL S3 pré-assinada. Não reproduzimos a URL, a assinatura nem o identificador completo.
+- **Classificação:** potencial exposição **temporária do recurso endereçado pela URL** enquanto a assinatura era válida. **Um Access Key ID isolado não é o Secret Access Key** e não comprova comprometimento da conta AWS.
+- **Ações manuais:** identificar titular e serviço; conferir expiração da URL e escopo do objeto; avaliar logs/acessos anômalos. Se houver evidência de Secret Access Key exposto ou suspeita fundamentada de abuso, revogar/rotacionar a credencial no provedor e verificar recursos associados. Se a conta for de terceiros, encaminhar o relato ao proprietário sem publicar os valores.
 
-### 2.4. Chaves Publishable do Supabase (Baixa Gravidade / Falso Positivo)
-- **Gravidade:** Nenhuma (By design).
-- **Ocorrência:** Centenas de incidências no histórico em arquivos como `app.js`, `supabase.js`, `auth.js` (`sb_publishable_...`).
-- **Motivo:** Essas chaves (publishable keys) não são segredos, elas servem para identificar o projeto em chamadas client-side. A segurança real recai sobre o JWT (`anon` / `authenticated`) e o RLS (Row Level Security).
+### B. Supabase — JWTs históricos de papel `anon` (risco dependente das permissões)
 
-## 3. Prioridades de Correção
+- **Locais relatados:** commits `dc93e4ab` e `2754c71e`, incluindo ponte da fábrica de questões e `app.js`.
+- **Classificação:** JWT `anon` / chave pública de cliente não equivale a `service_role` nem, isoladamente, a uma sessão autenticada de usuário. Não existe prova neste relatório de vazamento de um JWT privilegiado ou da assinatura `JWT secret`.
+- **Ações manuais:** classificar todos os tokens por papel e validade, verificar políticas RLS, exposição de dados e permissões efetivas do papel anônimo. Somente exigir rotação de segredos de assinatura ou chaves privilegiadas diante de evidência de comprometimento, considerando o impacto sobre tokens existentes.
 
-1. **REVOGAÇÃO IMEDIATA (AWS):** Acessar a conta AWS da LURIA (se a conta for da LURIA) ou notificar o parceiro de conteúdo sobre a chave vazada `AKIAI[REDACTED]A`. Ela precisa ser inativada no IAM Console, pois as urls presigned do s3 continham esse id.
-2. **Revisar RLS (Supabase):** Confirmar que o perfil `anon` no Supabase possui apenas acessos de leitura necessários para páginas públicas (sem edição não autorizada e sem vazamento de PII dos pacientes/usuários).
-3. **Senhas/Rotacionamentos (Supabase):** Garantir que o segredo JWT de fato foi trocado desde os commits que expuseram a string JWT do início do desenvolvimento.
+### C. Ponte da fábrica — `ACCESS` embutido em código estático (risco de exposição de conteúdo)
 
-## 4. Medidas Preventivas para a Versão Atual e Futura
+- **Local:** commit `dc93e4ab`, `qf-*/index.html`; também há snapshots JSON da fábrica presentes no repositório público.
+- **Classificação:** uma chave de acesso distribuída em HTML/JS público **não é uma barreira de autorização**. Trocar o literal por outro literal não resolve.
+- **Ações manuais:** desativar a ponte pública não necessária e proteger acessos reais por autenticação/autorização no servidor, com controle de origem dos dados. Migrar acervo proprietário para armazenamento privado; excluir arquivos apenas do artefato do Pages não os remove do GitHub nem de forks/clones.
 
-Para impedir vazamentos adicionais, proponho a implementação no GitHub Actions de um *secret scanner* preventivo que impeça commits com chaves em plain-text.
+### D. Supabase publishable keys e nomes de storage local (não secretos)
 
-**Plano de ação na branch de segurança:**
-- Adicionar uma workflow `security-scan.yml` via GitHub Actions (rodando TruffleHog ou Gitleaks).
-- Atualizar o `.gitignore` para barrar pastas padrão de evidências, outputs e dados que contenham informações sensíveis (ex: `**/*.env`, `docs/auditoria-*/evidencias/`).
+- Valores `sb_publishable_...` são concebidos para exposição no cliente. A integridade de dados depende de RLS, autenticação e serviços server-side.
+- `luria_calc_favorites_v1` é um nome de chave do `localStorage`, não uma credencial.
+- Um falso positivo só pode ser permitido por correspondência específica e documentada; **nunca** isentar arquivos inteiros como `relatorio_seguranca.md`, HTMLs ou JSONs de auditoria.
 
-## 5. Auditoria de Histórico e Limpeza de Repositório
-Note que a remoção do arquivo ou as exclusões no `.gitignore` ou `.gitleaks.toml` não deletam os objetos do histórico antigo armazenados nas packfiles do Git.
+## 3. Prevenção implementada nesta PR
 
-Para eliminar definitivamente o objeto vazado (como o json com a chave AWS) e garantir que a credencial não seja acessada por quem faz um git clone do histórico completo, será necessário:
-1. Revogar/rotacionar todas as chaves vazadas imediatamente.
-2. Planejar uma reescrita de histórico em uma janela de manutenção coordenada para a branch main, utilizando ferramentas como `BFG Repo-Cleaner` ou `git filter-repo`.
-3. Executar o comando no ambiente local dos desenvolvedores (`git fetch origin && git reset --hard origin/main` seguido de `git reflog expire --expire=now --all` e `git gc --prune=now --aggressive`).
-Esse procedimento exige alinhamento com a equipe e força que todos recarreguem suas branchs locais sobre um novo commit raiz livre dos dados sensíveis.
+1. O arquivo `.gitleaks.toml` herda **explicitamente** as regras nativas (`[extend] useDefault = true`).
+2. A allowlist restringe-se a um formato de **publishable key inteira**. Não contém caminhos inteiros ignorados, valores AWS, tokens `ACCESS` ou JWTs.
+3. Um único workflow, `.github/workflows/security-secrets.yml`, executa o Gitleaks em push, PR, execução manual e agenda semanal, com privilégios mínimos.
+4. A CI cria amostras **sintéticas somente no runner**, verifica que uma amostra inofensiva passa e que um falso token de formato conhecido é detectado. As amostras não são gravadas no Git nem publicadas como artefatos.
+5. O `.gitignore` evita commits acidentais de arquivos de ambiente, credenciais e evidências locais, sem substituir o scanner de segredos.
+
+**Validação pendente:** conferir o resultado real dos checks desta PR após o push, inclusive o teste sintético e os alertas restantes. A auditoria histórica precisa ser executada separadamente, com triagem e rastreabilidade.
+
+## 4. Pendências de operação (não automatizadas)
+
+- Verificar no provedor quaisquer credenciais potencialmente comprometidas, revogar as realmente expostas e inspecionar indícios de utilização indevida.
+- Revisar políticas RLS e funções `SECURITY DEFINER` no Supabase; testar isolamento entre contas sem utilizar dados de usuários reais.
+- Planejar hospedagem compatível com repositório privado antes de tornar o GitHub privado, para não interromper o GitHub Pages.
+- Se uma reescrita do histórico for necessária **após rotação dos segredos**, planejar `git filter-repo` em cópia de trabalho descartável, backup, congelamento coordenado de merges e confirmação explícita dos mantenedores. **Não executar automaticamente** `reset --hard`, `git gc --prune` ou force-push. Reescrever o histórico **não apaga** cópias, forks, caches nem artefatos já distribuídos.
+- Não declarar a remediação concluída até existirem evidências de rotação/revogação quando aplicável, validação de CI e revisão independente.
+
+## 5. Referências operacionais
+
+- Workflow: `.github/workflows/security-secrets.yml`.
+- Publicação segura: `docs/SECURITY_PUBLICATION_RUNBOOK.md`.
+- Verificações no Supabase: `Security Advisor` e consulta das concessões `EXECUTE` das funções privilegiadas.
