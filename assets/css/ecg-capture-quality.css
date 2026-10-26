@@ -1,0 +1,21 @@
+/* ECG Lab: captura experimental, mantida no escopo visual do Modo Trabalho */
+.ecg-capture-modes{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0}
+.ecg-mode{border:1px solid var(--border);border-radius:12px;background:var(--surface-2);color:var(--text);font-weight:750;padding:10px 13px;cursor:pointer}
+.ecg-mode[aria-pressed="true"]{background:var(--accent,#184888);border-color:var(--accent,#184888);color:#fff}
+.ecg-capture-hint{padding:11px 13px;border:1px solid var(--border);background:var(--surface-2);border-radius:12px;line-height:1.5;font-size:13px}
+.ecg-quality-box{border:1px solid var(--border);border-radius:12px;padding:13px;display:grid;gap:9px}
+.ecg-quality-box[hidden],.ecg-lead-panel[hidden],.ecg-consent[hidden]{display:none!important}
+.ecg-quality-line{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;font-weight:700}
+.ecg-quality-meter{height:9px;border-radius:999px;background:var(--surface-2);overflow:hidden}
+.ecg-quality-meter>span{display:block;height:100%;width:0;background:var(--accent,#184888);border-radius:999px;transition:width .2s ease}
+.ecg-quality-sub{font-size:12px;color:var(--muted);line-height:1.5}
+.ecg-quality-bad{color:#b42318}.ecg-quality-good{color:#147a45}
+.ecg-lead-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.ecg-lead-tile{min-width:0;border:1px solid var(--border);border-radius:10px;background:var(--surface-2);color:var(--text);padding:9px 4px;display:grid;gap:4px;text-align:center;cursor:pointer}
+.ecg-lead-tile.is-current{outline:2px solid var(--accent,#184888);outline-offset:1px}
+.ecg-lead-tile span{font-weight:800;font-size:13px}
+.ecg-lead-tile small{color:var(--muted);font-size:10px}
+.ecg-consent{font-size:12px;line-height:1.5;display:flex;align-items:flex-start;gap:9px}
+.ecg-consent input{margin-top:3px;flex-shrink:0}
+.ecg-results-warning{border-left:3px solid #b45309;padding:10px;background:var(--surface-2);margin:10px 0;font-size:12px;line-height:1.5}
+@media(max-width:600px){.ecg-lead-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
