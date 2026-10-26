@@ -981,6 +981,7 @@
   let recents = JSON.parse(localStorage.getItem(recentKey)||"[]");
   let activeCat = "Todos";
   let query = "";
+  const openGroups = new Set();
 
   function mount() {
     const root = $("#score-app");
