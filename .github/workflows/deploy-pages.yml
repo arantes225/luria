@@ -53,12 +53,10 @@ jobs:
         run: node scripts/audit-apostilas-batch.cjs
       - name: Run release-blocking frontend regressions
         run: node --test --test-isolation=none tests/stage77-functional.test.cjs tests/stage77-questions.test.cjs tests/stage77-integrity.test.cjs tests/client-persistence.test.cjs tests/quick-chart.test.cjs tests/quick-chart-ocr.test.cjs tests/quick-chart-fixed-access.test.cjs tests/lazy-vendors.test.cjs tests/sheetjs-mini.test.cjs tests/professor-alex-integration.test.cjs tests/professor-alex-startup.test.cjs tests/trabalho-exames.test.cjs tests/trabalho-exames-view.test.cjs
-  # Legacy editorial and external PIN compatibility checks still execute and
-  # surface failures. They are not used as the static-site release gate while
-  # the separately tracked content/backend mismatches are being repaired.
+  # Editorial, image-license and external pairing regressions are release gates.
+  # Do not publish static pages when these safety/content checks fail.
   historical-regressions:
     runs-on: ubuntu-latest
-    continue-on-error: true
     permissions:
       contents: read
     steps:
@@ -75,7 +73,7 @@ jobs:
         run: node --test --test-isolation=none tests/apostilas-batch.test.cjs tests/quick-chart-daily-code.test.cjs tests/quick-chart-pairing.test.cjs
   deploy:
     if: github.event_name != 'pull_request'
-    needs: quality
+    needs: [quality, historical-regressions]
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
