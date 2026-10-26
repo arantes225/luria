@@ -587,3 +587,16 @@ test("Sexualidade Masculina separada ensina hipotestosteronemia e urgencias sem 
   const female=read("apostilas/sexualidade/index.html");
   assert.match(female,/Sexualidade Feminina/);
 });
+
+test("Choque: imagens licenciadas têm origem na CSP e legendas clinicamente fiéis",()=>{
+  const html=read("apostilas/choque-circulatorio/index.html");
+  const csp=html.match(/<meta\s+http-equiv="Content-Security-Policy"\s+content="([^"]+)"/i)?.[1]||"";
+  const directive=csp.match(/(?:^|;)\s*img-src\s+([^;]+)/i)?.[1]||"";
+  assert.ok(directive.split(/\s+/).includes("https://commons.wikimedia.org"));
+  assert.ok(directive.split(/\s+/).includes("https://upload.wikimedia.org"));
+  assert.match(html,/Cateter venoso central tunelizado tipo Hickman/);
+  assert.match(html,/Figura ilustrativa de cateter tunelizado, não de inserção emergencial em choque/);
+  assert.match(html,/Representação das informações de pressão arterial em diferentes resoluções temporais/);
+  assert.match(html,/Gráfico de pressão arterial; não representa cateterização arterial/);
+  assert.doesNotMatch(html,/Canulização de artéria radial para monitorização contínua de PAM/);
+});
