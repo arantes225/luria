@@ -4217,11 +4217,12 @@ body[data-page="cronograma"] .planner-today:hover{
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
         </header>
 
-        <section class="luria-page-spotlight" aria-label="Cronograma">
-          <div class="luria-page-spotlight-copy">
+        <section class="luria-page-spotlight schedule-top-spotlight" aria-label="Cronograma">
+          <div class="luria-page-spotlight-copy schedule-top-spotlight-copy">
             <strong>Cronograma</strong>
-            <small class="luria-page-spotlight-helper">Organize suas aulas e revisões ao longo da semana.</small>
+            <small class="luria-page-spotlight-helper schedule-top-spotlight-helper">Organize o que estudar e quando revisar.</small>
           </div>
+          <button id="reference-new-activity" class="button primary reference-new-activity" type="button">＋ Nova atividade</button>
         </section>
 
         <div class="schedule-stack">
@@ -4518,14 +4519,6 @@ body[data-page="cronograma"] .planner-today:hover{
             <div id="base-schedule-status" class="manual-status" aria-live="polite"></div>
             <div id="base-schedule-deck" class="base-schedule-deck"></div>
           </section>
-
-          <section class="schedule-top-spotlight" aria-label="Cronograma">
-  <div class="schedule-top-spotlight-copy">
-    <strong>Cronograma</strong>
-    <small class="schedule-top-spotlight-helper">Organize o que estudar e quando revisar.</small>
-  </div>
-  <button id="reference-new-activity" class="button primary reference-new-activity" type="button">＋ Nova atividade</button>
-</section>
 
           <dialog id="quick-activity-dialog" class="schedule-dialog quick-activity-dialog">
   <form id="quick-activity-form" class="quick-activity-form">
@@ -5117,7 +5110,7 @@ body[data-page="cronograma"] .planner-today:hover{
 
 
 <script src="/assets/js/supabase.js"></script>
-<script src="/assets/js/app.js?v=20261025-feedback4"></script>
+<script src="/assets/js/app.js?v=20261025-feedback7"></script>
 <script src="/assets/js/study-mode.js?v=12.1"></script>
 <script src="/assets/js/exam-priority-data.js?v=1"></script>
 <script src="/assets/js/exam-priority-extra.js?v=1"></script>

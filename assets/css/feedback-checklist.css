@@ -2,6 +2,47 @@
 @layer luria-feedback {
   #week-today { display:none !important; }
   body[data-page="cronograma"] .topbar.dashboard-shell-topbar::after { content:none !important; }
+  /* The schedule header is a first-class title card, including cached markup
+     that only has the legacy schedule-top-spotlight class. */
+  body[data-page="cronograma"] .page > .schedule-top-spotlight {
+    display:flex !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    gap:20px !important;
+    min-height:138px !important;
+    height:138px !important;
+    margin:0 0 14px !important;
+    padding:24px 28px !important;
+    overflow:hidden !important;
+    border:1px solid rgba(255,255,255,.14) !important;
+    border-radius:15px !important;
+    background:var(--ui-frame-bg,linear-gradient(135deg,#102C57 0%,#184888 50%,#2563EB 100%)) !important;
+    box-shadow:0 10px 30px rgba(17,65,130,.12) !important;
+  }
+  body[data-page="cronograma"] .schedule-top-spotlight-copy {
+    position:relative !important;
+    z-index:2 !important;
+    display:flex !important;
+    flex:1 1 auto !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+    min-width:0 !important;
+  }
+  body[data-page="cronograma"] .schedule-top-spotlight-copy > strong {
+    color:#fff !important;
+    font-size:32px !important;
+    font-weight:900 !important;
+    line-height:1.08 !important;
+  }
+  body[data-page="cronograma"] .schedule-top-spotlight-helper { color:rgba(255,255,255,.9) !important; }
+  @media (max-width:700px) {
+    body[data-page="cronograma"] .page > .schedule-top-spotlight {
+      min-height:118px !important;
+      height:118px !important;
+      padding:20px !important;
+    }
+    body[data-page="cronograma"] .schedule-top-spotlight-copy > strong { font-size:27px !important; }
+  }
 
   body[data-page="aprender"] .tool-cta,
   body[data-page="consolidar"] .learn-cta {
