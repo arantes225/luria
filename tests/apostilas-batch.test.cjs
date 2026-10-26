@@ -212,8 +212,16 @@ test("Imagens sem licenca nao aparecem e exames reais licenciados substituem som
   assert.match(tools,/Coriodeciduite aguda/);
   assert.ok(!tools.includes("Fluxograma em português de manejo da rotura prematura de membranas ovulares"));
   const clim=JSON.parse(read("apostilas/climaterio-menopausa/content.json"));
-  const fs=clim.q.find(x=>x[0]==="fisiopatologia");
-  assert.ok(fs?.[2]?.some(x=>x[0]==="x"&&x[1].includes("Fluxo fisiopatológico autoral LURIA")));
+  const physiology=clim.q.find(x=>x[0]==="fisiologia-transicao-straw-esgotamento-folicular");
+  assert.ok(physiology,"Capítulo real de fisiologia STRAW+10 precisa existir");
+  const originalFlow=physiology[2].find(x=>x[0]==="x"&&x[1].includes("Fluxo fisiopatológico autoral LURIA"))?.[1]||"";
+  assert.match(originalFlow,/depleção da reserva folicular/);
+  assert.match(originalFlow,/inibina B e do AMH/);
+  assert.match(originalFlow,/o estradiol não diminui de forma linear/);
+  assert.match(originalFlow,/FSH isolado não substitui a história/);
+  assert.match(originalFlow,/nice\.org\.uk\/guidance\/ng23/);
+  assert.match(originalFlow,/PMC3580996/);
+  assert.ok(clim.o.some(x=>x[0]==="fisiologia-transicao-straw-esgotamento-folicular"));
 });
 
 test("Vitalidade fetal preserva exame real licenciado e raciocinio clinico contextualizado",()=>{
