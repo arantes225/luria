@@ -68,6 +68,7 @@
   const hideResult = () => { resultCard.hidden = true; result.replaceChildren(); };
   const updateAnalyze = () => {
     analyze.disabled = busy || mode !== "quick" || !quick || !checkbox.checked || quick.quality.score < 40;
+    input.disabled = busy;
   };
   const showPreview = (file) => {
     if (previewUrl) URL.revokeObjectURL(previewUrl);
@@ -154,6 +155,7 @@
     const chosenMode = mode;
     const chosenLead = selectedLead();
     hideResult();
+    if (chosenMode === "quick") { quick = null; render(); }
     updateAnalyze();
     setStatus("Avaliando resolução, nitidez e contraste no próprio dispositivo...");
     try {
