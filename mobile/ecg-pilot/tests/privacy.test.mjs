@@ -1,8 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { join } from "node:path";
-const root = new URL("../", import.meta.url);
 const read = path => readFileSync(new URL("../" + path, import.meta.url), "utf8");
 
 test("piloto não envia fotos para APIs ou aciona inferência", () => {
