@@ -376,21 +376,37 @@ test("Hemorragias obstetricas mantem fluxos clinicos sem amniotomia automatica",
 
 
 test("Indução de parto conserva exame verdadeiro e alerta para situações de risco",()=>{
-  const h=read("apostilas/inducao-do-trabalho-de-parto/index.html");
-  assert.match(h,/id="fig-balao-cervical-usg-real"/);
-  assert.match(h,/12884_2022_5035_Fig4_HTML\.png/);
-  assert.match(h,/creativecommons\.org\/licenses\/by\/4\.0/);
-  assert.doesNotMatch(h,/<img[^>]+src="https:\/\/www\.cookmedical\.com/i,
-    "Imagem de fabricante com direitos não demonstrados não deve estar incorporada");
-  assert.match(h,/id="inducoes-casos-avancados-2026"/);
-  assert.match(h,/href="#inducoes-casos-avancados-2026"/);
-  assert.match(h,/Colo favorável não equivale a amniotomia segura/);
-  assert.match(h,/gestante normoxêmica/);
-  assert.match(h,/12–18 horas/);
-  assert.match(h,/OMS, métodos mecânicos/);
-  assert.match(h,/NICE NG207/);
+  const html=read("apostilas/inducao-do-trabalho-de-parto/index.html");
+  const data=JSON.parse(read("apostilas/inducao-do-trabalho-de-parto/content.json"));
+  const renderer=read("assets/js/apostila-renderer.js");
+  assert.match(html,/data-apostila-content="\/apostilas\/inducao-do-trabalho-de-parto\/content\.json"/);
+  assert.match(html,/src="\/assets\/js\/apostila-renderer\.js/);
+  assert.match(renderer,/for\(const s of data\.q\|\|\[\]\)/);
+  const balloon=data.q.find(s=>s[0]==="balao");
+  assert.ok(balloon,"Capítulo de método mecânico ausente");
+  const figure=(balloon[2]||[]).filter(x=>x[0]==="p")
+    .map(x=>String(x[1])).find(x=>x.includes('id="fig-balao-cervical-usg-real"'))||"";
+  assert.match(figure,/id="fig-balao-cervical-usg-real"/);
+  assert.match(figure,/12884_2022_5035_Fig4_HTML\.png/);
+  assert.match(figure,/creativecommons\.org\/licenses\/by\/4\.0/);
+  assert.match(figure,/Wen e colaboradores/);
+  assert.match(figure,/não devem ser copiados como prescrição ou padrão universal/);
+  const images=(data.q||[]).flatMap(s=>s[2]||[]).map(block=>String(block[1]))
+    .filter(source=>source.includes("<img"));
+  assert.ok(!images.some(source=>\/<img[^>]+src="https:\/\/www\.cookmedical\.com/i.test(source)),
+    "Não incorporar imagem de fabricante sem autorização demonstrada");
+  const id="inducoes-casos-avancados-2026";
+  const advanced=data.q.find(s=>s[0]===id);
+  assert.ok(advanced,"Casos avançados ausentes");
+  assert.ok(data.o.some(x=>x[0]===id),"Casos avançados não navegáveis");
+  assert.ok(JSON.stringify(advanced[2]).length>4000,"Casos avançados insuficientes");
+  const clinical=JSON.stringify(data);
+  assert.match(clinical,/Colo favorável não equivale a amniotomia segura/);
+  assert.match(clinical,/gestante normoxêmica/);
+  assert.match(clinical,/12–18 horas/);
+  assert.match(clinical,/OMS, métodos mecânicos/);
+  assert.match(clinical,/NICE NG207/);
 });
-
 
 test("Transmissão vertical conserva imagem CDC e usa retinografia licenciada",()=>{
   const h=read("apostilas/infeccoes-gestacao-transmissao-vertical/index.html");
