@@ -1,0 +1,15 @@
+[allowlist]
+description = "Gitleaks Allowlist for specific keys and pseudo-secrets in LURIA"
+
+regexes = [
+    '''sb_publishable_.*''',
+    '''luria_calc_favorites_v1'''
+]
+
+paths = [
+    '''trabalho/calculadora/index.html''',
+    '''build/staging/trabalho/calculadora/index.html''',
+    '''apostilas/curadoria-imagens-v2/curadoria-blocos-1-4-consolidada.json''',
+    '''build/staging/apostilas/curadoria-imagens-v2/curadoria-blocos-1-4-consolidada.json''',
+    '''relatorio_seguranca\.md'''
+]
