@@ -342,6 +342,14 @@ test("Climatério aplica atualização ACOG 2026 sem reduzir sangramento a 4mm",
   assert.match(chapter,/persistência ou recorrência/);
   assert.match(chapter,/não obriga automaticamente biópsia/);
   assert.match(chapter,/10\.1097\/AOG\.0000000000006275/);
+  assert.match(chapter,/um único episódio de sangramento/);
+  assert.match(chapter,/endométrio inteiramente visualizado/);
+  assert.match(chapter,/acesso oportuno à avaliação ginecológica/);
+  assert.match(chapter,/Sangramento persistente ou recorrente/);
+  assert.match(chapter,/Espessamento endometrial/);
+  assert.match(chapter,/sem sangramento/);
+  assert.match(chapter,/Exemplo 1/);
+  assert.match(chapter,/Exemplo 2/);
   assert.equal(new Set(d.q.map(x=>x[0])).size,d.q.length);
 });
 

@@ -31,6 +31,10 @@
       "2. Diagnóstico Clínico da Menopausa e Quando Solicitar Exames"
     ],
     [
+      "sangramento-pos-menopausa-2026",
+      "Atualização ACOG 2026: sangramento pós-menopausa e biópsia"
+    ],
+    [
       "manifestacoes-clinicas-fogachos-sgm-osteoporose",
       "3. Manifestações Clínicas: Sintomas Vasomotores, Síndrome Geniturinária e Osteoporose"
     ],
@@ -248,6 +252,73 @@
             "<strong>Usuárias de Dispositivo Intrauterino liberador de Levonorgestrel (DIU-LNG) ou Progestagênio Isolado:</strong> Frequentemente evoluem com amenorreia secundária ao efeito atrófico local do progestagênio no endométrio. Se apresentarem sintomas vasomotores severos aos 48-52 anos, a dosagem de FSH e estradiol sérico auxilia na distinção entre efeito progestagênico local e falência gonadal;",
             "<strong>Mulheres Submetidas a Procedimentos Cirúrgicos de Ablação Endometrial:</strong> Pacientes sem endométrio funcionante necessitam de avaliação hormonal caso necessitem estratificar o status ovariano."
           ]
+        ]
+      ]
+    ],
+    [
+      "sangramento-pos-menopausa-2026",
+      0,
+      [
+        [
+          "2",
+          "Atualização ACOG 2026: sangramento pós-menopausa — quando investigar o endométrio"
+        ],
+        [
+          "p",
+          "<strong>Regra de segurança:</strong> sangramento uterino depois de 12 meses sem menstruar, fora de situações que alterem a interpretação do ciclo, exige avaliação para descartar lesões endometriais pré-malignas ou malignas. A cor, quantidade e duração do sangramento não eliminam a necessidade de avaliação. O raciocínio envolve estabilidade clínica, fonte do sangramento, antecedentes, terapia hormonal, risco endometrial e acesso real ao seguimento."
+        ],
+        [
+          "3",
+          "O que mudou em abril de 2026?"
+        ],
+        [
+          "p",
+          "O <strong>ACOG 2026</strong> passou a recomendar, na avaliação inicial da maioria das pessoas com sangramento pós-menopausa, <strong>ultrassonografia transvaginal associada à amostragem endometrial</strong>. A decisão não deve depender apenas de um ponto de corte ultrassonográfico. A orientação de 2018 permitia utilizar isoladamente um endométrio ≤4 mm como triagem em primeiro episódio; a atualização enfatiza que lesões importantes podem ocorrer mesmo abaixo desse valor e que a acurácia depende da visualização adequada e do risco individual."
+        ],
+        [
+          "3",
+          "Exceção estreita: quando a amostragem inicial pode ser dispensada?"
+        ],
+        [
+          "p",
+          "Ultrassonografia transvaginal isolada pode ser considerada somente em <strong>casos selecionados com todos os critérios</strong> seguintes, segundo a atualização: um único episódio de sangramento; endométrio inteiramente visualizado com espessura <strong>≤4 mm</strong>; ausência de fatores fortemente associados ao câncer endometrial; e possibilidade de acesso oportuno à avaliação ginecológica se houver novo sangramento. A pessoa deve compreender a necessidade de retorno imediato diante de <strong>persistência ou recorrência</strong>. Portanto, ≤4 mm <strong>não obriga automaticamente biópsia</strong> em todos os casos, mas tampouco garante ausência de doença."
+        ],
+        [
+          "u",
+          [
+            "<strong>Primeiro episódio isolado:</strong> considerar a exceção apenas se todos os quatro requisitos forem satisfeitos e estiverem documentados.",
+            "<strong>Endométrio não completamente visualizado:</strong> a medida isolada não é suficientemente tranquilizadora; aprofundar avaliação, inclusive histológica conforme indicação.",
+            "<strong>Fatores de risco importantes:</strong> considerar obesidade, exposição estrogênica sem oposição, diabetes, antecedentes familiares ou genéticos relevantes e contexto clínico; não dispensar investigação por um laudo de fina espessura.",
+            "<strong>Sangramento persistente ou recorrente:</strong> indicar reavaliação e investigação endometrial, inclusive quando a medida do endométrio é ≤4 mm."
+          ]
+        ],
+        [
+          "3",
+          "Interpretação da amostragem e necessidade de avaliação adicional"
+        ],
+        [
+          "p",
+          "Amostragem em consultório pode não detectar lesões focais se for insuficiente ou não representativa. Sangramento que continua apesar de amostra negativa, resultados insuficientes, suspeita de pólipo ou visualização ultrassonográfica inadequada exigem reavaliação especializada e podem justificar histeroscopia, amostragem dirigida ou investigação adicional conforme disponibilidade e julgamento clínico. Uma medida isolada não substitui a história."
+        ],
+        [
+          "3",
+          "Não aplicar o limiar a pacientes sem sangramento"
+        ],
+        [
+          "p",
+          "Espessamento endometrial <em>incidental</em> em pessoa pós-menopausada <strong>sem sangramento</strong> é uma situação clínica distinta. Um achado isolado não determina biópsia automática: ponderar risco, morfologia da imagem, tratamentos e condições clínicas. As recomendações de 2026 acima tratam primariamente da investigação de quem apresenta sangramento."
+        ],
+        [
+          "3",
+          "Dois cenários para raciocinar"
+        ],
+        [
+          "p",
+          "<strong>Exemplo 1:</strong> paciente com um único episódio, sem fatores relevantes de risco, endométrio completamente visto com 3 mm e acesso imediato a retorno pode ser candidata a ultrassonografia isolada após decisão compartilhada e orientações expressas de reavaliação. <strong>Exemplo 2:</strong> paciente com sangramento recorrente ou fatores importantes de risco não fica dispensada de amostragem apenas porque a espessura é de 3 mm. Em ambos, documentar o plano de segurança e a disponibilidade do acompanhamento."
+        ],
+        [
+          "p",
+          "<strong>Fonte primária:</strong> American College of Obstetricians and Gynecologists. <em>ACOG Clinical Practice Update: Updated Guidance Regarding the Role of Transvaginal Ultrasonography in Evaluating the Endometrium of Individuals with Postmenopausal Bleeding.</em> Obstetrics &amp; Gynecology. 2026;148(1):e87–e91. DOI: <a href=\"https://doi.org/10.1097/AOG.0000000000006275\" rel=\"noopener noreferrer\" target=\"_blank\">10.1097/AOG.0000000000006275</a>. Complementar interpretação com protocolos brasileiros vigentes, recursos disponíveis e avaliação ginecológica individualizada."
         ]
       ]
     ],
