@@ -1,0 +1,8 @@
+{
+  "appId": "com.luria.ecg.capturepilot",
+  "appName": "LURIA ECG - Pesquisa",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}
