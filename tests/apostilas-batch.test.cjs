@@ -611,3 +611,16 @@ test("Pré-natal: imagens relevantes e fonte Wikimedia autorizada sem figura arq
   assert.match(html,/Ultrassonografia obstétrica com medição do comprimento cabeça-nádega/);
   assert.doesNotMatch(html,/The.desert.of.the.Exodus/i);
 });
+
+test("Técnica cirúrgica: origem verificada e figuras correspondem ao instrumental moderno",()=>{
+  const html=read("apostilas/principios-de-tecnica-cirurgica/index.html");
+  const csp=html.match(/<meta\s+http-equiv="Content-Security-Policy"\s+content="([^"]+)"/i)?.[1]||"";
+  const images=(csp.match(/(?:^|;)\s*img-src\s+([^;]+)/i)?.[1]||"").split(/\s+/);
+  assert.ok(images.includes("https://commons.wikimedia.org"));
+  assert.ok(images.includes("https://upload.wikimedia.org"));
+  assert.match(html,/src="\/assets\/js\/apostila-image-fallback\.js"/);
+  assert.match(html,/Conjunto de instrumentos de dissecção \(não demonstra técnica de incisão\)/);
+  assert.match(html,/Porta-agulhas Mayo-Hegar utilizado em suturas/);
+  assert.doesNotMatch(html,/Egyptian-surgical-instruments\.jpg/);
+  assert.doesNotMatch(html,/Bisturi cirúrgico e técnica de incisão cutânea contínua/);
+});
