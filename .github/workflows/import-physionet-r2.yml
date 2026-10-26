@@ -25,7 +25,7 @@ concurrency:
 jobs:
   importar:
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 360
     env:
       DATASET: ${{ inputs.dataset }}
       R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
@@ -131,8 +131,14 @@ jobs:
           ENDPOINT="https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com"
           ROOT="$RUNNER_TEMP/physionet"
 
+          # Aumenta a concorrência para o grande número de arquivos pequenos do PTB-XL.
+          aws configure set default.s3.max_concurrent_requests 64
+          aws configure set default.s3.max_queue_size 10000
+          aws configure set default.s3.multipart_threshold 64MB
+          aws configure set default.s3.multipart_chunksize 64MB
+
           aws s3 sync "$ROOT/" "s3://$R2_BUCKET/physionet/" \
-            --endpoint-url "$ENDPOINT" --only-show-errors --no-progress
+            --endpoint-url "$ENDPOINT" --page-size 1000 --only-show-errors --no-progress
 
           aws s3api head-object --bucket "$R2_BUCKET" \
             --key physionet/PHYSIONET_SHA256SUMS.txt \
