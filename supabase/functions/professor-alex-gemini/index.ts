@@ -124,6 +124,41 @@ function fastSocialReply(value: unknown, mode: string) {
   return "Oi! Tô aqui — manda.";
 }
 
+function isStudyPlanningRequest(value: unknown) {
+  const clean = normalizeSocialText(value);
+  return /\b(cronograma|aulas? (?:desta|da|por) semana|rodando em|lista de quest|lista de flashcard|criar quest|criar flashcard|selecionar apostila|estudar agora|mudar as aulas|ajustar.*cronograma)\b/.test(clean);
+}
+
+type StudyAction = {
+  type: "schedule_focus" | "topic_bundle";
+  topic: string;
+  start_date?: string;
+  end_date?: string;
+  lessons_per_day?: number;
+  question_count?: number;
+  flashcard_count?: number;
+  preview?: unknown;
+};
+
+function sanitizeStudyAction(value: unknown): StudyAction | null {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return null;
+  const item = value as Record<string, unknown>;
+  const type = item.type === "schedule_focus" ? "schedule_focus" : item.type === "topic_bundle" ? "topic_bundle" : null;
+  const topic = String(item.topic || "").trim().slice(0, 180);
+  if (!type || topic.length < 2) return null;
+  if (type === "schedule_focus") {
+    const start_date = String(item.start_date || "");
+    const end_date = String(item.end_date || "");
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(start_date) || !/^\d{4}-\d{2}-\d{2}$/.test(end_date)) return null;
+    return { type, topic, start_date, end_date, lessons_per_day: Math.max(1, Math.min(5, Number(item.lessons_per_day) || 1)) };
+  }
+  return { type, topic, question_count: Math.max(0, Math.min(50, Number(item.question_count) || 10)), flashcard_count: Math.max(0, Math.min(80, Number(item.flashcard_count) || 15)) };
+}
+
+function studyPlannerInstruction(today: string, channel: string) {
+  return `${ALEX_NORMAL_MODE_PROMPT}\n\nVocê também organiza estudos dentro da LURIA. Hoje é ${today}. Interprete o pedido e responda SOMENTE em JSON válido, sem markdown, neste formato: {"answer":"resumo curto em português pedindo confirmação antes de mudar dados","proposal":{"type":"schedule_focus ou topic_bundle","topic":"assunto","start_date":"YYYY-MM-DD ou omitir","end_date":"YYYY-MM-DD ou omitir","lessons_per_day":1,"question_count":10,"flashcard_count":15}}. Para mudança de cronograma use schedule_focus, datas exatas e no máximo 32 dias. Para lista de questões, flashcards ou apostila use topic_bundle. Nunca diga que aplicou; você apenas preparou uma proposta. ${channel === "voice" ? "A resposta falada deve continuar curta." : ""}`;
+}
+
 function getFeynmanSystemInstruction(action: string, learnerMode: string, topic: string, channel: string) {
   const persona = learnerMode === "iniciante"
     ? "Represente um aluno iniciante: peça linguagem simples, exemplos e esclarecimento de termos, sem fingir conhecimento avançado."
@@ -181,12 +216,24 @@ Deno.serve(async (req: Request) => {
   }
 
   const admin = createClient(url, serviceRole, { auth: { persistSession: false, autoRefreshToken: false } });
+  const userClient = createClient(url, anon, { global: { headers: { Authorization: authHeader } }, auth: { persistSession: false, autoRefreshToken: false } });
   if (data.action === "usage") {
     const { data: usage, error: usageError } = await admin.rpc("professor_alex_token_usage", { p_user_id: user.id });
     if (usageError || !usage || typeof usage !== "object") {
       return json({ error: "usage_limit_unavailable" }, 503, headers);
     }
     return json({ usage }, 200, headers);
+  }
+
+  if (data.action === "apply_study_action") {
+    const action = sanitizeStudyAction(data.action_plan);
+    if (!action) return json({ error: "invalid_study_action" }, 400, headers);
+    const call = action.type === "schedule_focus"
+      ? await userClient.rpc("alex_schedule_focus_v1", { p_focus: action.topic, p_start_date: action.start_date, p_end_date: action.end_date, p_lessons_per_day: action.lessons_per_day, p_apply: true })
+      : await userClient.rpc("build_topic_study_session_v1", { p_topic: action.topic, p_question_count: action.question_count, p_flashcard_count: action.flashcard_count });
+    if (call.error) return json({ error: "study_action_failed" }, 400, headers);
+    const answer = action.type === "schedule_focus" ? "Pronto. Ajustei o cronograma conforme a proposta confirmada." : "Pronto. Montei a lista com conteúdo real da LURIA.";
+    return json({ answer, action_result: call.data, model: "local-action", usage: null }, 200, headers);
   }
 
   const experience = data.experience === "feynman" ? "feynman" : "alex";
@@ -203,6 +250,7 @@ Deno.serve(async (req: Request) => {
   const area = String(data.area || "").trim().slice(0, 120);
   const topic = String(data.topic || "").trim().slice(0, 180);
   const prompt = String(data.prompt || "").trim().slice(0, 4000);
+  const studyPlanning = experience === "alex" && isStudyPlanningRequest(prompt || topic);
   const modelToUse = Deno.env.get("ALEX_GEMINI_MODEL") || DEFAULT_MODEL;
   if (!/^gemini-(?:3[.\w-]*|2\.5-flash[\w-]*)$/.test(modelToUse)) return json({ error: "gemini_model_unavailable" }, 503, headers);
   const rawHistory = Array.isArray(data.history) ? data.history.slice(-8) : [];
@@ -270,7 +318,10 @@ Deno.serve(async (req: Request) => {
 
   // A opção escolhida pelo aluno controla efetivamente o tamanho da resposta.
   // A conversa casual continua curta mesmo em "aula", salvo solicitação explícita.
-  const system = experience === "feynman"
+  const today = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Sao_Paulo", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+  const system = studyPlanning
+    ? studyPlannerInstruction(today, channel)
+    : experience === "feynman"
     ? getFeynmanSystemInstruction(feynmanAction, feynmanMode, topic || "tema médico", channel)
     : getAlexSystemInstruction(mode, channel) + (depth === "aula"
       ? "\n\nFORMATO AULA COMPLETA: quando o aluno pedir ensino médico, explique com raciocínio clínico, fisiopatologia, diagnóstico, conduta e exemplos pertinentes. Não force uma aula em cumprimentos ou conversas sociais."
@@ -282,11 +333,11 @@ Deno.serve(async (req: Request) => {
   const generationConfig: Record<string, unknown> = {
     maxOutputTokens: experience === "feynman"
       ? (feynmanAction === "finish" ? 900 : 180)
-      : alexMaxOutputTokens,
+      : studyPlanning ? 500 : alexMaxOutputTokens,
   };
-  if (experience === "feynman" && feynmanAction === "finish") generationConfig.responseMimeType = "application/json";
+  if ((experience === "feynman" && feynmanAction === "finish") || studyPlanning) generationConfig.responseMimeType = "application/json";
   if (/^gemini-3(?:\.|-)/.test(modelToUse)) {
-    generationConfig.thinkingConfig = { thinkingLevel: experience === "feynman" && feynmanAction === "finish" ? "medium" : depth === "aula" && experience === "alex" ? "medium" : "minimal" };
+    generationConfig.thinkingConfig = { thinkingLevel: experience === "feynman" && feynmanAction === "finish" ? "medium" : studyPlanning ? "medium" : depth === "aula" && experience === "alex" ? "medium" : "minimal" };
   } else if (/^gemini-2\.5-flash/.test(modelToUse)) {
     generationConfig.thinkingConfig = { thinkingBudget: 0 };
   }
@@ -382,13 +433,29 @@ Deno.serve(async (req: Request) => {
   }
 
   const result = await response.json().catch(() => null);
-  const answer = result?.candidates?.[0]?.content?.parts
+  let answer = result?.candidates?.[0]?.content?.parts
     ?.filter((part: { thought?: boolean }) => !part.thought)
     ?.map((part: { text?: string }) => part.text || "")
     .filter(Boolean).join("\n").trim();
   if (!answer) {
     await settle(null, null, null);
     return json({ error: "empty_response" }, 502, headers);
+  }
+  let actionPlan: StudyAction | null = null;
+  if (studyPlanning) {
+    try {
+      const parsed = JSON.parse(answer);
+      actionPlan = sanitizeStudyAction(parsed?.proposal);
+      answer = String(parsed?.answer || "Preparei uma proposta para você confirmar.").trim().slice(0, 1000);
+      if (!actionPlan) throw Error("invalid proposal");
+      if (actionPlan.type === "schedule_focus") {
+        const preview = await userClient.rpc("alex_schedule_focus_v1", { p_focus: actionPlan.topic, p_start_date: actionPlan.start_date, p_end_date: actionPlan.end_date, p_lessons_per_day: actionPlan.lessons_per_day, p_apply: false });
+        if (!preview.error) actionPlan = { ...actionPlan, preview: preview.data };
+      }
+    } catch {
+      await settle(null, null, null);
+      return json({ error: "invalid_study_plan" }, 502, headers);
+    }
   }
 
   let audioBase64: string | null = null;
@@ -480,7 +547,7 @@ Deno.serve(async (req: Request) => {
   const usage = await settle(validUsage ? inputTokens : null, validUsage ? outputTokens : null, validUsage ? totalTokens : null);
   if (!validUsage || !usage || typeof usage !== "object") {
     console.error("[alex-gemini] token_accounting_failure");
-    return json({ answer, report, audio: audioBase64, audioMimeType, audioError, model: modelToUse, usage: initialUsage, accounting_pending: true }, 200, headers);
+    return json({ answer, report, action_plan: actionPlan, audio: audioBase64, audioMimeType, audioError, model: modelToUse, usage: initialUsage, accounting_pending: true }, 200, headers);
   }
-  return json({ answer, report, audio: audioBase64, audioMimeType, audioError, model: modelToUse, usage }, 200, headers);
+  return json({ answer, report, action_plan: actionPlan, audio: audioBase64, audioMimeType, audioError, model: modelToUse, usage }, 200, headers);
 });

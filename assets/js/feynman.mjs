@@ -20,6 +20,9 @@ const confirmCopy = document.getElementById("feynman-confirm-copy");
 const confirmYes = document.getElementById("feynman-confirm-yes");
 const confirmAgain = document.getElementById("feynman-confirm-again");
 
+const requestedTopic = new URLSearchParams(window.location.search).get("topic")?.trim();
+if (topicInput && requestedTopic) topicInput.value = requestedTopic.slice(0, 180);
+
 const SESSION_SECONDS = 5 * 60;
 const modeLabels = { iniciante: "Aluno iniciante", questionador: "Aluno questionador", banca: "Banca examinadora" };
 const medicalTerms = ["sepse", "choque séptico", "insuficiência cardíaca", "síndrome coronariana", "diabetes mellitus", "hipertensão", "pneumonia", "tromboembolismo", "fisiopatologia", "hemodinâmica", "vasopressor", "noradrenalina", "lactato", "hipoperfusão", "taquicardia", "bradicardia", "dispneia", "edema", "hipoxemia", "insulina", "cetoacidose", "glomerular", "creatinina", "antibiótico"];

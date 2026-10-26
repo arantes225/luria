@@ -2,7 +2,7 @@
 (()=>{"use strict";
 if(window.__luriaCommandCenterLoaded)return;window.__luriaCommandCenterLoaded=true;
 const d=document,$=(s,r=d)=>r.querySelector(s),all=(s,r=d)=>[...r.querySelectorAll(s)],esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
-const css=d.createElement("link");css.rel="stylesheet";css.href="/assets/css/luria-command-center.css?v=20261002-study-durations";d.head.appendChild(css);
+const css=d.createElement("link");css.rel="stylesheet";css.href="/assets/css/luria-command-center.css?v=20261026-topic-study";d.head.appendChild(css);
 const routes=[
  ["Dashboard","Seu dia, sessões e atalhos","/dashboard/","Geral"],["Cronogramas","Planejamento de aulas e revisões","/cronograma/","Estudos"],["Desafio diário","Diagnóstico por pistas","/desafio-diario/","Estudos"],["Anotações · Cola Rápida","Anotações, prescrições e conteúdo rápido","/caderno/","Estudos"],["Questões e Simulados","Biblioteca e listas de questões","/questoes-simulados/","Estudos"],["Flashcards","Decks e revisões","/flashcards/","Estudos"],["Caderno de Erros","Erros e revisões","/caderno-erros/","Estudos"],["Simulador","Sala de emergência e LuriaZap","/plantao/","Prática"],["Mini-OSCE","Estações clínicas objetivas","/mini-osce/","Prática"],["Estatísticas","Evolução e desempenho","/estatisticas/","Desempenho"],["Editais e Provas","Provas, editais e datas","/editais/","Estudos"],["Bulário","Medicamentos e posologias","/bulario/","Trabalho"],["Protocolos","Protocolos clínicos","/protocolos/","Trabalho"],["Scores","Scores médicos","/scores/","Trabalho"],["Calculadoras","Calculadoras clínicas","/calculadoras/","Trabalho"],["Passômetro","Entrega de plantão","/passometro/","Trabalho"]
 ];
@@ -101,15 +101,75 @@ function activeGuidedSession(){
    return plan;
  }catch{return null}
 }
+function studyBundleCounts(minutes){
+ const available=minutes===999?90:Math.max(15,Number(minutes)||30);
+ return {questions:available<=30?5:available<=60?10:15,flashcards:available<=30?8:available<=60?15:24};
+}
+function guidedPlan(steps,minutes,requestedMinutes,topic=""){
+ const plan={minutes,requestedMinutes,topic:String(topic||"").trim(),steps,createdAt:Date.now()};
+ try{
+  sessionStorage.setItem("luria:guided-study-plan",JSON.stringify(plan));
+  sessionStorage.removeItem("luria:guided-study-progress");
+  sessionStorage.removeItem("luria:guided-study-active");
+  sessionStorage.removeItem("luria:guided-study-step-complete");
+ }catch{}
+ return plan;
+}
+function safeStudyHref(value,fallback){
+ try{const url=new URL(String(value||""),location.origin);return url.origin===location.origin?url.pathname+url.search+url.hash:fallback}catch{return fallback}
+}
+async function topicStudySteps(topic,minutes){
+ const subject=String(topic||"").trim();if(subject.length<2)throw new Error("Informe o assunto que você quer estudar.");
+ const sb=window.supabaseClient;if(!sb)throw new Error("Entre novamente na LURIA para montar a sessão.");
+ const counts=studyBundleCounts(minutes);
+ const {data,error}=await sb.rpc("build_topic_study_session_v1",{p_topic:subject,p_question_count:counts.questions,p_flashcard_count:counts.flashcards});
+ if(error)throw error;
+ const requested=minutes===999?90:Math.max(15,Number(minutes)||30),first=Math.max(5,Math.round(requested*.4)),second=Math.max(5,Math.round(requested*.35)),third=Math.max(5,requested-first-second);
+ const cards=Array.isArray(data?.flashcards)?data.flashcards:[],cardIds=cards.map(card=>card?.id).filter(Boolean);
+ const booklet=data?.apostila||null;
+ const steps=[
+  {title:`Estudar ${subject}`,detail:booklet?.title?`Apostila selecionada: ${booklet.title}`:"Escolha a apostila ou anotação mais adequada ao tema.",min:first,href:safeStudyHref(booklet?.url,"/apostilas/")},
+  data?.question_set_id
+   ?{title:`Questões de ${subject}`,detail:`${Number(data.question_count)||0} questões sorteadas agora do banco LURIA.`,min:second,href:"/resolver-questoes/?set_id="+encodeURIComponent(data.question_set_id)}
+   :{title:`Praticar ${subject}`,detail:"Abra a biblioteca e escolha questões deste assunto.",min:second,href:"/questoes-simulados/"},
+  cardIds.length
+   ?{title:`Flashcards de ${subject}`,detail:`${cardIds.length} flashcards sorteados agora para esta sessão.`,min:third,href:"/flashcards/?study_ids="+encodeURIComponent(cardIds.join(","))+"&study_topic="+encodeURIComponent(subject)}
+   :{title:`Explicar ${subject} para a IA`,detail:"Feche a sessão verificando o que você realmente entendeu.",min:third,href:"/feynman/?topic="+encodeURIComponent(subject)}
+ ];
+ return {steps,planned:requested,bundle:data};
+}
+function scheduledStudyTopic(){
+ const lesson=todayActivities().find(item=>["lesson","subject_review"].includes(String(item?.kind||"")));
+ return String(lesson?.title||lesson?.theme||lesson?.materia||lesson?.area||"").trim();
+}
+function openStudyChoice(initialMinutes=30){
+ const o=modal("luria-study-choice-overlay","Estudar agora",'<p class="luria-study-choice-copy">Como você quer montar a sessão?</p><div class="luria-study-paths"><button type="button" data-study-path="schedule"><strong>Seguir o cronograma</strong><span>Usa a próxima aula planejada e sorteia questões e flashcards desse assunto.</span></button><button type="button" data-study-path="topic"><strong>Estudar outro assunto</strong><span>Você escolhe o tema e a LURIA monta uma sessão focada sem alterar o cronograma.</span></button></div>');
+ $("[data-study-path='schedule']",o).onclick=()=>{o.remove();openSession(initialMinutes)};
+ $("[data-study-path='topic']",o).onclick=()=>{o.remove();openTopicSession(initialMinutes)};
+}
+function openTopicSession(initialMinutes=30){
+ let mins=Number(initialMinutes)||30;
+ const o=modal("luria-topic-session-overlay","Estudar outro assunto",'<label class="luria-topic-study-field"><span>Qual assunto você quer estudar?</span><input id="luria-topic-study-input" type="text" maxlength="180" placeholder="Ex.: sepse, pré-eclâmpsia, insuficiência cardíaca" autocomplete="off"></label><div class="luria-session-times" aria-label="Tempo disponível"><button data-m="15">15 min</button><button data-m="30" class="active">30 min</button><button data-m="60">1 hora</button><button data-m="90">1h30</button><button data-m="120">2 horas</button></div><p id="luria-topic-study-status" class="luria-topic-study-status" role="status">A LURIA sorteará questões e flashcards reais desse tema.</p><div class="luria-intel-actions"><button id="luria-topic-study-start" class="luria-intel-button primary">Montar sessão</button></div>');
+ const input=$("#luria-topic-study-input",o),status=$("#luria-topic-study-status",o),start=$("#luria-topic-study-start",o);
+ all("[data-m]",o).forEach(button=>{button.classList.toggle("active",Number(button.dataset.m)===mins);button.onclick=()=>{mins=Number(button.dataset.m);all("[data-m]",o).forEach(item=>item.classList.toggle("active",item===button))}});
+ start.onclick=async()=>{const topic=input.value.trim();if(topic.length<2){status.textContent="Informe o assunto antes de continuar.";input.focus();return}start.disabled=true;status.textContent="Selecionando apostila, questões e flashcards…";try{const result=await topicStudySteps(topic,mins);guidedPlan(result.steps,result.planned,mins,topic);location.href="/sessao-estudo/"}catch(error){status.textContent=error?.message||"Não foi possível montar a sessão.";start.disabled=false}};
+ setTimeout(()=>input.focus(),40);
+}
 function openSession(initialMinutes=30){
- let mins=Number(initialMinutes)||30;const o=modal("luria-session-overlay","Estudar agora",'<p style="margin:0;color:var(--muted);font-size:10px">A LURIA organiza uma sessão a partir das atividades e pendências disponíveis agora.</p><div class="luria-session-times"><button data-m="15">15 min</button><button data-m="30" class="active">30 min</button><button data-m="60">1 hora</button><button data-m="90">1h30</button><button data-m="120">2 horas</button><button data-m="999">Completar o dia</button></div><div id="luria-session-list" class="luria-session-list"></div><div class="luria-intel-actions"><button id="luria-session-remix" class="luria-intel-button">Reorganizar</button><button id="luria-session-start" class="luria-intel-button primary">Iniciar sessão</button></div>');
+ let mins=Number(initialMinutes)||30;const o=modal("luria-session-overlay","Seguir o cronograma",'<p style="margin:0;color:var(--muted);font-size:10px">A LURIA usa a próxima aula planejada e sorteia questões e flashcards do mesmo assunto.</p><div class="luria-session-times"><button data-m="15">15 min</button><button data-m="30" class="active">30 min</button><button data-m="60">1 hora</button><button data-m="90">1h30</button><button data-m="120">2 horas</button><button data-m="999">Completar o dia</button></div><div id="luria-session-list" class="luria-session-list"></div><p id="luria-session-status" class="luria-topic-study-status" role="status"></p><div class="luria-intel-actions"><button id="luria-session-remix" class="luria-intel-button">Reorganizar</button><button id="luria-session-start" class="luria-intel-button primary">Iniciar sessão</button></div>');
  const render=()=>{all("[data-m]",o).forEach(b=>{const selected=Number(b.dataset.m)===mins;b.classList.toggle("active",selected);b.setAttribute("aria-pressed",String(selected))});const s=sessionSteps(mins);o._steps=s;$("#luria-session-list",o).innerHTML=s.map((x,i)=>'<div class="luria-session-step"><b>'+(i+1)+'</b><div><strong>'+esc(x.title)+'</strong><small>'+esc(x.detail)+'</small></div><span>'+x.min+' min</span></div>').join("")};render();
  all("[data-m]",o).forEach(b=>b.onclick=()=>{mins=Number(b.dataset.m);all("[data-m]",o).forEach(x=>x.classList.toggle("active",x===b));render()});
- $("#luria-session-remix",o).onclick=render;$("#luria-session-start",o).onclick=()=>{
+  $("#luria-session-remix",o).onclick=render;$("#luria-session-start",o).onclick=async()=>{
+    const start=$("#luria-session-start",o),status=$("#luria-session-status",o),focus=scheduledStudyTopic();
+    start.disabled=true;
+    if(focus){
+      status.textContent=`Selecionando materiais, questões e flashcards de ${focus}…`;
+      try{const result=await topicStudySteps(focus,mins);guidedPlan(result.steps,result.planned,mins,focus);location.href="/sessao-estudo/";return}catch(error){status.textContent="Não consegui montar o pacote temático. Mantive a sessão do cronograma."}
+    }
    const steps=Array.isArray(o._steps)?o._steps:[];
-   if(!steps.length)return;
+    if(!steps.length){start.disabled=false;return}
    const planned=mins===999?steps.reduce((sum,x)=>sum+(Number(x.min)||0),0):mins;
-   try{sessionStorage.setItem("luria:guided-study-plan",JSON.stringify({minutes:planned,requestedMinutes:mins,steps,createdAt:Date.now()}));}catch{}
+    guidedPlan(steps,planned,mins,focus);
    location.href="/sessao-estudo/";
  };
 }
@@ -146,7 +206,7 @@ function bindNativeStudyPanels(){
      if(title&&title.textContent!=="Estudar agora")title.textContent="Estudar agora";
      if(start){
        if(start.textContent!=="Estudar agora")start.textContent="Estudar agora";
-       start.onclick=()=>openSession(mins);
+       start.onclick=()=>openStudyChoice(mins);
      }
    }
    panel.dataset.luriaBound="1";
@@ -171,7 +231,7 @@ function commandCard(){
  action.dataset.luriaStudyNowInline="1";
  const active=activeGuidedSession();
  action.textContent=active?"Voltar para a sessão":"Estudar agora";
- action.onclick=()=>active?(location.href="/sessao-estudo/"):openSession(30);
+  action.onclick=()=>active?(location.href="/sessao-estudo/"):openStudyChoice(30);
  const timeline=activityCard.querySelector(".dl-timeline,.dl-empty");
  activityCard.classList.add("luria-has-study-now");
  if(timeline?.parentNode) timeline.parentNode.appendChild(action);
@@ -191,7 +251,7 @@ async function statsTimeline(){
  try{const sb=window.supabaseClient,user=window.docmapUser;if(!sb||!user?.id)return;const since=new Date(Date.now()-42*86400000).toISOString();const {data}=await sb.from("question_attempts").select("result,answered_at").eq("user_id",user.id).gte("answered_at",since).order("answered_at",{ascending:true});const weeks=Array.from({length:6},(_,i)=>({start:new Date(Date.now()-(5-i)*7*86400000),n:0,ok:0}));(data||[]).forEach(a=>{const t=new Date(a.answered_at);let idx=Math.floor((Date.now()-t)/604800000);idx=5-Math.min(5,Math.max(0,idx));weeks[idx].n++;if(a.result==="correct")weeks[idx].ok++});const max=Math.max(1,...weeks.map(w=>w.n));$(".luria-timeline-bars",box).innerHTML=weeks.map(w=>'<div class="luria-timeline-col"><b>'+w.n+'</b><div class="luria-timeline-bar" style="height:'+Math.max(4,Math.round(w.n/max*100))+'px"></div><small>'+w.start.toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"})+'</small></div>').join("")}catch(e){console.warn("LURIA timeline",e)}
 }
 function plantaoOsceLink(){if(d.body.dataset.page!=="plantao"||d.getElementById("luria-osce-entry"))return;const lib=d.getElementById("plantao-library");if(!lib)return;const a=d.createElement("a");a.id="luria-osce-entry";a.href="/mini-osce/";a.className="luria-command-card";a.style.cssText="display:block;text-decoration:none;color:var(--text);margin-bottom:12px";a.innerHTML='<div class="luria-command-card-head"><div><h3>Mini-OSCE</h3><p>Estações objetivas derivadas dos casos clínicos do Simulador.</p></div><span class="luria-intel-button primary">Abrir estações</span></div>';lib.prepend(a)}
-function adaptive(){try{window.LuriaAdaptive={preExam:JSON.parse(localStorage.getItem("luria:preexam")||"null"),buildSession:sessionSteps,openSession,version:"1.0"}}catch{}}
+ function adaptive(){try{window.LuriaAdaptive={preExam:JSON.parse(localStorage.getItem("luria:preexam")||"null"),buildSession:sessionSteps,openSession:openStudyChoice,buildTopicSession:topicStudySteps,version:"2.0"}}catch{}}
 function boot(){installSearch();commandCard();bindNativeStudyPanels();enhanceQuestion();statsTimeline();plantaoOsceLink();adaptive()}
 if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot);else boot();window.addEventListener("pageshow",()=>{if(d.body.dataset.page==="dashboard"){commandCard();bindNativeStudyPanels()}});new MutationObserver(()=>{commandCard();enhanceQuestion();plantaoOsceLink()}).observe(d.documentElement,{childList:true,subtree:true});
 })();
