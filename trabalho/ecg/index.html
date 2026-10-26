@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
   <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
+  <link rel="stylesheet" href="/assets/css/ecg-capture-quality.css?v=20261026-1">
   <style>
     .ecg-shell{display:grid;gap:16px}
     .ecg-tabs{display:flex;gap:8px;flex-wrap:wrap}
@@ -412,8 +413,8 @@
 
         <section class="ecg-lab">
           <article class="ecg-card">
-            <h2>Leitor de ECG por IA</h2>
-            <p>Envie uma imagem do ECG para receber sugestões de achados. A saída é um apoio à revisão médica e não substitui o médico.</p>
+            <h2>Leitor experimental de ECG</h2>
+            <p>Protótipo para pesquisa e testes com imagens fictícias ou desidentificadas. A avaliação da foto é local; a análise experimental, quando autorizada, envia a imagem a um serviço externo. Não utilizar com pacientes reais ou para decisões clínicas.</p>
             <div class="ecg-actions">
               <label class="ecg-btn secondary" for="ecg-image">Selecionar imagem do ECG</label>
               <input id="ecg-image" type="file" accept="image/jpeg,image/png,image/webp" hidden>
@@ -437,6 +438,7 @@
   <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
   <script src="/assets/js/trabalho-ecg.js?v=20261026"></script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
-  <script defer src="/assets/js/ecg-reader.js?v=1"></script>
+  <script defer src="/assets/js/ecg-image-quality.js?v=20261026-1"></script>
+  <script defer src="/assets/js/ecg-reader.js?v=20261026-1"></script>
 </body>
 </html>
