@@ -15,7 +15,7 @@ if(targetUrl.protocol!=='https:'||targetUrl.origin!==config.supabaseUrl||!target
 if(!/^sb_publishable_[A-Za-z0-9_-]+$/.test(config.supabasePublishableKey))throw Error('A public publishable key is required');
 const voiceOrigin=config.voiceOrigin?new URL(config.voiceOrigin):null;
 if(voiceOrigin&&(voiceOrigin.protocol!=='https:'||voiceOrigin.origin!==config.voiceOrigin))throw Error('Voice origin must be an exact HTTPS origin');
-const blocked=/^(?:\.|node_modules\/|browser-results\/|build\/|db\/|docs\/|tests\/|scripts\/|tools\/|tmp\/|supabase\/|cloudflare\/|config\/)/;
+const blocked=/^(?:\.|node_modules\/|browser-results\/|build\/|mobile\/|db\/|docs\/|tests\/|scripts\/|tools\/|tmp\/|supabase\/|cloudflare\/|config\/)/;
 const extensions=new Set(['.html','.js','.mjs','.css','.svg','.png','.webp','.avif','.jpg','.jpeg','.gif','.ico','.woff','.woff2','.ttf','.eot','.json','.webmanifest','.xml','.txt','.pdf','.mp3','.wav','.ogg','.m4a']);
 const excluded=new Set(['package.json','package-lock.json','README.md','CNAME','AGENTS.md','_worker.js','_headers','_redirects']);
 const textExtensions=new Set(['.html','.js','.css','.svg','.json','.webmanifest','.xml','.txt']);
