@@ -1,21 +1,14 @@
 title = "LURIA - Gitleaks secret scanning"
 
-# A local config must explicitly inherit the bundled detection rules.
-# Never ignore entire source/report directories to silence a finding.
+# Keep bundled detection rules. Do not ignore entire files or paths.
 [extend]
 useDefault = true
 
-# Supabase publishable keys are client-side project identifiers, not private credentials.
-# Match only the full extracted value, never arbitrary text or file paths.
+# Allow only known, non-secret literal values; keep all other default rules.
 [allowlist]
-description = "Supabase publishable keys (public by design)"
+description = "Public Supabase identifiers and non-secret calculator preference key"
 regexTarget = "secret"
 regexes = [
-  '''^sb_publishable_[A-Za-z0-9_-]{20,}
-]
-'',
-  # LocalStorage preference key is a fixed frontend identifier, not a credential.
-  '''^luria_calc_favorites_v1
-]
-''
+  '''^sb_publishable_[A-Za-z0-9_-]{20,}$''',
+  '''^luria_calc_favorites_v1$'''
 ]
