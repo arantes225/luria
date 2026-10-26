@@ -178,7 +178,10 @@
       if (token !== generation) return;
       setStatus(err?.message || "Falha ao avaliar a imagem.", "error");
     } finally {
-      if (token === generation) updateAnalyze();
+      if (token === generation) {
+        input.value = "";
+        updateAnalyze();
+      }
     }
   });
 
