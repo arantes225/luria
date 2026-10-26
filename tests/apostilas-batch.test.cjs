@@ -600,3 +600,14 @@ test("Choque: imagens licenciadas têm origem na CSP e legendas clinicamente fi�
   assert.match(html,/Gráfico de pressão arterial; não representa cateterização arterial/);
   assert.doesNotMatch(html,/Canulização de artéria radial para monitorização contínua de PAM/);
 });
+
+test("Pré-natal: imagens relevantes e fonte Wikimedia autorizada sem figura arqueológica",()=>{
+  const html=read("apostilas/pre-natal-baixo-risco/index.html");
+  const csp=html.match(/<meta\s+http-equiv="Content-Security-Policy"\s+content="([^"]+)"/i)?.[1]||"";
+  const origins=(csp.match(/(?:^|;)\s*img-src\s+([^;]+)/i)?.[1]||"").split(/\s+/);
+  assert.ok(origins.includes("https://commons.wikimedia.org"));
+  assert.ok(origins.includes("https://upload.wikimedia.org"));
+  assert.match(html,/CRL%20Crown%20rump%20length%2012%20weeks/);
+  assert.match(html,/Ultrassonografia obstétrica com medição do comprimento cabeça-nádega/);
+  assert.doesNotMatch(html,/The.desert.of.the.Exodus/i);
+});
