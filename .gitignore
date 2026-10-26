@@ -36,3 +36,6 @@ id_ed25519
 *service-account*.json
 *credentials*.json
 *secrets*.json
+
+# Evidências temporárias podem conter URLs assinadas; revisar arquivos já rastreados também.
+docs/auditoria-*/evidencias/
