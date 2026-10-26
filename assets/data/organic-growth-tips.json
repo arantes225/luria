@@ -1,5 +1,23 @@
 [
   {
+    "id": "semana-45-2026",
+    "semana": "Semana Agendada (26/10/2026)",
+    "foco": "Otimização de Engajamento Orgânico & Eficiência de R$ 20",
+    "pilares": [
+      {
+        "titulo": "Otimização de R$ 20/semana no Meta Ads",
+        "dica": "Em orçamentos de R$ 20/semana, turbine o post vencedor da semana diretamente pelo aplicativo para Visitas ao Perfil.",
+        "acao": "Configuração: R$ 2,85/dia por 7 dias. Segmente apenas por raio de capitais com grandes hospitais universitários ou interesse em Residência Médica."
+      },
+      {
+        "titulo": "Análise de Métricas da Semana Anterior",
+        "dica": "Avalie métricas de engajamento verdadeiro: taxa de salvamento > 3% e retenção média de reels > 45%.",
+        "acao": "Arquive ou pause posts que tiveram retenção abaixo de 20% e replique o modelo visual do mais salvo."
+      }
+    ],
+    "atualizado_em": "2026-10-26T12:01:24.620Z"
+  },
+  {
     "id": "semana-43-2026",
     "semana": "Semana 1 · 26/10 a 01/11/2026",
     "foco": "Enchimento de Feed com Conteúdo Orgânico de Alto Valor (Sem Tráfego Pago)",
