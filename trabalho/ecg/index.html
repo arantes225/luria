@@ -61,13 +61,13 @@
         <section class="luria-page-spotlight" aria-label="ECG">
           <div class="luria-page-spotlight-copy">
             <strong data-page-title>ECG</strong>
-            <small class="luria-page-spotlight-helper">Interpretação estruturada com apoio do banco PTB-XL.</small>
+            <small class="luria-page-spotlight-helper">Acesso seguro a ECGs para apoio à revisão médica.</small>
           </div>
         </section>
 
         <section class="ecg-lab">
           <article class="ecg-card">
-            <h2>Escolher ECG</h2>
+            <h2>Abrir ECG para apoio clínico</h2>
             <p>O bucket continua privado. O site recebe apenas uma URL temporária para o arquivo selecionado.</p>
             <div class="ecg-grid">
               <div class="ecg-field">
@@ -95,28 +95,7 @@
             </div>
           </article>
 
-          <article class="ecg-card">
-            <h2>Leitura estruturada</h2>
-            <p>Preencha os achados. A hipótese final é uma sugestão para revisão médica.</p>
-            <div class="ecg-grid">
-              <div class="ecg-field"><label for="ecg-frequency">Frequência</label><select id="ecg-frequency"><option>Bradicardia</option><option selected>Normal</option><option>Taquicardia</option><option>Não determinado</option></select></div>
-              <div class="ecg-field"><label for="ecg-rhythm">Ritmo</label><select id="ecg-rhythm"><option>Sinusal</option><option>Fibrilação atrial</option><option>Flutter atrial</option><option>Juncional</option><option>Outro</option><option>Não determinado</option></select></div>
-              <div class="ecg-field"><label for="ecg-axis">Eixo</label><select id="ecg-axis"><option>Normal</option><option>Desvio para a esquerda</option><option>Desvio para a direita</option><option>Eixo extremo</option><option>Não determinado</option></select></div>
-              <div class="ecg-field"><label for="ecg-pr">Intervalo PR</label><select id="ecg-pr"><option>Normal</option><option>Prolongado</option><option>Curto</option><option>Ausente ou irregular</option><option>Não determinado</option></select></div>
-              <div class="ecg-field"><label for="ecg-qrs">QRS</label><select id="ecg-qrs"><option>Estreito</option><option>Alargado</option><option>Bloqueio de ramo</option><option>Outro</option><option>Não determinado</option></select></div>
-              <div class="ecg-field"><label for="ecg-st">ST e T</label><select id="ecg-st"><option>Sem alteração relevante</option><option>Supradesnivelamento de ST</option><option>Infradesnivelamento de ST</option><option>Inversão de onda T</option><option>Não determinado</option></select></div>
-            </div>
-            <div class="ecg-field" style="margin-top:12px">
-              <label for="ecg-hypothesis">Hipótese final sugerida</label>
-              <textarea id="ecg-hypothesis" placeholder="Descreva a hipótese e os achados que a sustentam."></textarea>
-            </div>
-            <div class="ecg-actions" style="margin-top:12px">
-              <button class="ecg-btn" id="ecg-save">Salvar rascunho</button>
-              <button class="ecg-btn secondary" id="ecg-clear">Limpar</button>
-            </div>
-            <div id="ecg-form-status" class="ecg-status" aria-live="polite"></div>
-            <div id="ecg-summary" class="ecg-summary" style="display:none"></div>
-          </article>
+
         </section>
       </div>
     </main>
@@ -203,35 +182,6 @@
         } catch (error) { setStatus(status, error.message || "Não foi possível abrir o arquivo.", "error"); }
       });
 
-      document.getElementById("ecg-save").addEventListener("click", () => {
-        const result = {
-          key: keyInput.value.trim(),
-          frequency: document.getElementById("ecg-frequency").value,
-          rhythm: document.getElementById("ecg-rhythm").value,
-          axis: document.getElementById("ecg-axis").value,
-          pr: document.getElementById("ecg-pr").value,
-          qrs: document.getElementById("ecg-qrs").value,
-          st: document.getElementById("ecg-st").value,
-          hypothesis: document.getElementById("ecg-hypothesis").value.trim(),
-          savedAt: new Date().toISOString()
-        };
-        localStorage.setItem("luria-ecg-draft", JSON.stringify(result));
-        summary.textContent = JSON.stringify(result, null, 2);
-        summary.style.display = "block";
-        formStatus.textContent = "Rascunho salvo neste dispositivo.";
-        formStatus.className = "ecg-status ok";
-      });
-
-      document.getElementById("ecg-clear").addEventListener("click", () => {
-        document.querySelectorAll(".ecg-card select, .ecg-card input, .ecg-card textarea").forEach((field) => {
-          if (field.id === "ecg-dataset") return;
-          if (field.tagName === "SELECT") field.selectedIndex = 0;
-          else field.value = "";
-        });
-        preview.classList.remove("visible");
-        summary.style.display = "none";
-        formStatus.textContent = "";
-      });
     })();
   </script>
 </body>
