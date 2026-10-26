@@ -11,23 +11,15 @@
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-<script src="/assets/js/ui-routes.js?v=1"></script>
+  <script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261025-work-spotlight">
-  <style>
-    .finance-shell{display:grid;gap:16px}
-    .finance-hero{padding:24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
-    .finance-hero h2{margin:0 0 8px;font-size:24px}
-    .finance-hero p{margin:0;color:var(--muted);line-height:1.55}
-    .finance-placeholder{padding:20px;border:1px dashed var(--border);border-radius:16px;background:var(--surface-2);color:var(--muted)}
-  </style>
-<link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
-<link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
-
-
+  <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
+  <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
+  <link rel="stylesheet" href="/assets/css/work-plantoes.css?v=20261026-v1">
 </head>
 <body data-page="trabalho_financeiro" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
@@ -47,16 +39,86 @@
         <section class="luria-page-spotlight" aria-label="Financeiro">
           <div class="luria-page-spotlight-copy">
             <strong data-page-title>Financeiro</strong>
-            <small class="luria-page-spotlight-helper">Acompanhe receitas e organização dos plantões.</small>
+            <small class="luria-page-spotlight-helper">Controle de faturamento, repasses recebidos, valores a receber e remuneração média da sua escala.</small>
           </div>
         </section>
 
-        <section class="finance-shell">
-          <article class="finance-hero">
-            <h2>Financeiro</h2>
-            <p>Área do ambiente Trabalho destinada à organização financeira.</p>
+        <section class="shift-fin-shell">
+          <!-- Métricas Financeiras do Mês -->
+          <div>
+            <h3 style="margin:0 0 10px;font-size:14px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em">Faturamento do Mês Vigente</h3>
+            <div class="shift-stats-grid">
+              <div class="shift-stat-card">
+                <span class="stat-label">Total Faturado</span>
+                <strong class="stat-val" id="fin-month-total">R$ 0,00</strong>
+                <span class="stat-sub">Mês atual</span>
+              </div>
+              <div class="shift-stat-card">
+                <span class="stat-label">Valores Recebidos</span>
+                <strong class="stat-val text-success" id="fin-month-paid">R$ 0,00</strong>
+                <span class="stat-sub">Já compensados</span>
+              </div>
+              <div class="shift-stat-card">
+                <span class="stat-label">A Receber / Pendentes</span>
+                <strong class="stat-val text-warning" id="fin-month-pending">R$ 0,00</strong>
+                <span class="stat-sub">Aguardando pagamento</span>
+              </div>
+              <div class="shift-stat-card">
+                <span class="stat-label">Remuneração Média</span>
+                <strong class="stat-val" id="fin-month-hourly">R$ 0,00/h</strong>
+                <span class="stat-sub">Valor/hora médio</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Métricas Globais Acumuladas -->
+          <div>
+            <h3 style="margin:0 0 10px;font-size:14px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em">Consolidado Acumulado</h3>
+            <div class="shift-stats-grid">
+              <div class="shift-stat-card">
+                <span class="stat-label">Total Geral</span>
+                <strong class="stat-val" id="fin-grand-total">R$ 0,00</strong>
+                <span class="stat-sub">Todos os plantões</span>
+              </div>
+              <div class="shift-stat-card">
+                <span class="stat-label">Total Já Pago</span>
+                <strong class="stat-val text-success" id="fin-grand-paid">R$ 0,00</strong>
+                <span class="stat-sub">Quitados</span>
+              </div>
+              <div class="shift-stat-card">
+                <span class="stat-label">Total Pendente</span>
+                <strong class="stat-val text-warning" id="fin-grand-pending">R$ 0,00</strong>
+                <span class="stat-sub">Repasses em aberto</span>
+              </div>
+              <div class="shift-stat-card">
+                <span class="stat-label">Horas Totais</span>
+                <strong class="stat-val" id="fin-grand-hours">0h</strong>
+                <span class="stat-sub">Carga horária total</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lista de Repasses Pendentes -->
+          <article class="fin-card">
+            <div>
+              <h2>Repasses Pendentes de Confirmação</h2>
+              <p>Plantões realizados ou agendados cujo repasse financeiro ainda não foi confirmado.</p>
+            </div>
+            <div id="fin-pending-table-container">
+              <!-- Preenchido dinamicamente por plantoes-financeiro.js -->
+            </div>
           </article>
-          <div class="finance-placeholder">A página já está criada e pronta para receber receitas, despesas, plantões pagos, repasses ou qualquer estrutura financeira que você definir.</div>
+
+          <!-- Detalhamento por Hospital/Instituição -->
+          <article class="fin-card">
+            <div>
+              <h2>Faturamento por Instituição / Hospital</h2>
+              <p>Distribuição do faturamento, carga horária e repasses por local de trabalho.</p>
+            </div>
+            <div id="fin-hospital-breakdown">
+              <!-- Preenchido dinamicamente por plantoes-financeiro.js -->
+            </div>
+          </article>
         </section>
       </div>
     </main>
@@ -65,6 +127,7 @@
 <script src="/assets/js/supabase.js"></script>
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script src="/assets/js/shift-manager-security.js?v=4-fixed"></script>
+<script src="/assets/js/plantoes-financeiro.js?v=20261026-v1"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>

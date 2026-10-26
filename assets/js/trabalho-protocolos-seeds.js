@@ -1989,7 +1989,119 @@
       source_refs: [
         { label: "Endocrine Society Clinical Practice Guideline: Diagnosis and Treatment of Primary Adrenal Insufficiency", url: "https://www.endocrine.org/" }
       ]
+    }    ,
+    {
+      id: "seed-hipercalemia",
+      slug: "hipercalemia-grave-emergencia-eletrocardiografica",
+      title: "Hipercalemia Grave e Alterações Eletrocardiográficas",
+      category: "Nefrologia e Urologia",
+      setting: "Pronto-Socorro / Emergência / UTI",
+      status: "verified",
+      linked_recipe_slugs: ["prescricao-hipercalemia-emergencia"],
+      summary: "Abordagem sistemática imediata para K+ > 6,5 mEq/L ou qualquer elevação com repercussão no ECG: estabilização de membrana, medidas de shift intracelular e espoliação corporal.",
+      suspicion: [
+        {
+          title: "Sinais de Alerta Clínico e Eletrocardiográfico",
+          items: [
+            "Potássio sérico >= 6,0 mEq/L (grave se >= 6,5 mEq/L) ou elevação rápida em insuficiência renal aguda/anúria, lise tumoral ou rabdomiólise.",
+            "ECG imediato: ondas T apiculadas, simétricas e de base estreita ('em tenda'); achatamento ou perda da onda P e alargamento do intervalo PR; alargamento de QRS; ritmo sinoventricular/onda senoidal (risco iminente de assistolia ou FV)."
+          ]
+        }
+      ],
+      initial_actions: [
+        {
+          title: "Tríade Sequencial de Manejo",
+          items: [
+            "1. Monitorização contínua de ECG, oximetria e acesso venoso periférico calibroso imediato.",
+            "2. Estabilização de Membrana Miocárdica (se alteração de ECG ou K+ >= 6,5 mEq/L): Gluconato de Cálcio 10% (10 mL = 1 g) IV em 2 a 5 minutos. Não reduz o potássio, mas previne arritmias fatais por 30 a 60 min. Pode ser repetido em 5–10 min se o ECG não normalizar.",
+            "3. Medidas de Shift (Entrada de K+ na Célula): Solução polarizante glico-insulínica (Insulina Regular 10 UI em 100 mL de Glicose 50% IV em 20–30 min) + Inalação com Beta-2 agonista (Fenoterol 10–20 gotas ou Salbutamol 5 mg nebulizados em 10 min).",
+            "4. Medidas de Remoção/Espoliação: Furosemida 40 a 80 mg IV (se função renal residual) e/ou Resina de troca (Poliestirenossulfonato de cálcio/Sorcal 15 a 30 g VO de 6/6h) ou novos quelantes (Patiromer / Ciclossilicato de sódio e zircônio se disponíveis).",
+            "5. Hemodiálise de Emergência: indicação imediata se hipercalemia refratária, anúria, acidose metabólica grave refratária ou onda senoidal persistente."
+          ]
+        }
+      ],
+      exams: [
+        {
+          title: "Investigação Laboratorial e Etiológica",
+          items: [
+            "ECG de 12 derivações seriado a cada 15 a 30 minutos até estabilização.",
+            "Gasometria venosa ou arterial (avaliar pH e bicarbonato - acidose piora o shift de K+).",
+            "Ureia, creatinina, sódio, cálcio iônico, magnésio, fósforo, CPK (afastar rabdomiólise) e hemograma com plaquetas (afastar pseudohipercalemia por hemólise ou trombocitose grave)."
+          ]
+        }
+      ],
+      decision_flow: [
+        {
+          if: "Paciente em uso de Digoxina apresentando hipercalemia grave com alteração de ECG",
+          then: "Gluconato de Cálcio deve ser administrado com cautela extrema (infundir em 20–30 min) ou preferir anticorpo antidigoxina (Fab fragment) se intoxicação digitálica suspeita."
+        },
+        {
+          if: "Paciente anúrico ou com DRC dialítica em choque ou congestão grave refratária",
+          then: "Acionar equipe de Nefrologia imediatamente para passagem de cateter de hemodiálise de urgência."
+        }
+      ],
+      references: [
+        { title: "KDIGO Clinical Practice Guideline for Acute Kidney Injury", url: "https://kdigo.org/" },
+        { title: "Management of Hyperkalemia in the Emergency Department - AHA / Circulation Guidelines", url: "https://www.ahajournals.org/" }
+      ]
+    },
+    {
+      id: "seed-hipoglicemia",
+      slug: "hipoglicemia-grave-no-adulto-manejo-de-urgencia",
+      title: "Hipoglicemia Grave no Adulto (Tríade de Whipple e Manejo Agudo)",
+      category: "Endocrinologia e Metabologia",
+      setting: "Pronto-Socorro / Enfermaria / Domiciliar",
+      status: "verified",
+      linked_recipe_slugs: ["prescricao-hipoglicemia-grave"],
+      summary: "Diagnóstico rápido e reversão imediata de hipoglicemia sintomática (Glicemia capilar < 70 mg/dL ou < 54 mg/dL grave/comatoso), com prevenção de encefalopatia e recidiva.",
+      suspicion: [
+        {
+          title: "Quadro Clínico e Tríade de Whipple",
+          items: [
+            "Glicemia plasmática ou capilar < 70 mg/dL (hipoglicemia clínica) ou < 54 mg/dL (nível de alerta grave).",
+            "Sintomas neurogênicos/adrenérgicos: sudorese fria, taquicardia, tremores, palidez, ansiedade, fome intensa.",
+            "Sintomas neuroglicopênicos: confusão mental, sonolência, rebaixamento do sensório, déficits neurológicos focais ('stroke mimics'), convulsões ou coma.",
+            "Tríade de Whipple: sintomas compatíveis + hipoglicemia laboratorial documentada + alívio imediato dos sintomas após infusão de glicose."
+          ]
+        }
+      ],
+      initial_actions: [
+        {
+          title: "Abordagem Imediata por Nível de Consciência",
+          items: [
+            "PACIENTE CONSCIENTE (Capaz de deglutir com segurança): Administrar 15 a 20 g de carboidrato simples VO (ex.: 150 a 200 mL de suco de laranja açucarado, refrigerante comum ou 1 colher de sopa de açúcar diluído em água). Regra dos 15: aguardar 15 minutos e retestar glicemia capilar; se < 70 mg/dL, repetir a dose.",
+            "PACIENTE INCONSCIENTE OU EM RISCO DE BRONCOASPIRAÇÃO: Acesso venoso imediato + Administrar 40 a 50 mL de Glicose 50% IV em bolus lento (20 a 25 g de glicose) em 3 a 5 minutos. Se não houver Glicose 50%, utilizar 100 mL de Glicose 25% ou 200 mL de Glicose 10%.",
+            "Sem Acesso Venoso Disponível: Glucagon 1 mg via intramuscular (IM) ou subcutânea (SC) ou Glicose 10% por sonda nasogástrica se bem posicionada.",
+            "Prevenção de Recidiva: Iniciar soro de manutenção com SG 5% ou SG 10% IV (cerca de 50 a 100 mL/h) se a hipoglicemia foi causada por sulfonilureias (Glibenclamida/Gliclazida) ou insulinas de ação prolongada (NPH, Degludeca, Glargina), mantendo vigilância por no mínimo 24 a 48 horas hospitalares."
+          ]
+        }
+      ],
+      exams: [
+        {
+          title: "Avaliação Complementar e Fatores Precipitantes",
+          items: [
+            "Glicemia capilar a cada 15 a 30 minutos na primeira hora, e depois a cada 1 a 2 horas até estabilização com glicemia > 100 mg/dL.",
+            "Função renal (ureia e creatinina), eletrólitos séricos, hemograma e rastreio de infecção oculta (fator descompensador comum de hipoglicemia em diabéticos).",
+            "Em pacientes desnutridos ou etilistas crônicos: administrar Tiamina 100 mg IV/IM ANTES ou junto à glicose para prevenir Síndrome de Wernicke."
+          ]
+        }
+      ],
+      decision_flow: [
+        {
+          if: "Hipoglicemia secundária a Sulfonilureias de meia-vida longa com recidiva frequente",
+          then: "Manter paciente internado em observação por pelo menos 24 a 48h com SG 10% IV contínuo. Considerar Octreotide 50 a 100 mcg SC de 8/8h se hipoglicemia refratária."
+        },
+        {
+          if: "Paciente mantém coma ou déficit focal persistente após normalização da glicemia",
+          then: "Solicitar TC de crânio urgente e considerar lesão cerebral anóxica/neuroglicopênica ou AVC isquêmico concorrente."
+        }
+      ],
+      references: [
+        { title: "American Diabetes Association (ADA) Standards of Care in Diabetes — Hypoglycemia Management", url: "https://diabetesjournals.org/care" },
+        { title: "Diretrizes da Sociedade Brasileira de Diabetes (SBD) — Manejo da Hipoglicemia", url: "https://diretriz.diabetes.org.br/" }
+      ]
     }
+
   ];
 
   window.LURIA_RECIPE_SEEDS = [
@@ -2413,6 +2525,73 @@
           "Nunca usar Fenitoína para crises de abstinência alcoólica e nunca usar Haloperidol em monoterapia sem benzodiazepínico."
         ]
       }
+    }    ,
+    {
+      id: "rec-seed-hipercalemia",
+      slug: "prescricao-hipercalemia-emergencia",
+      title: "Prescrição de Emergência — Hipercalemia Grave com Alteração de ECG",
+      status: "verified",
+      data: {
+        copy_ready: true,
+        routes: [
+          {
+            route: "1. Estabilização Imediata de Membrana Cardíaca",
+            mode: "standard",
+            items: [
+              { drug: "Gluconato de Cálcio 10% (1 ampola = 10 mL = 1 g)", quantity: "1 ampola IV em bolus", directions: "Infundir em 2 a 5 minutos sob monitorização eletrocardiográfica contínua. Pode repetir em 5 a 10 minutos se o ECG permanecer alterado." }
+            ]
+          },
+          {
+            route: "2. Medidas de Redistribuição Intracelular (Shift)",
+            mode: "standard",
+            items: [
+              { drug: "Solução Polarizante: Insulina Regular 10 UI + Glicose 50% 100 mL (50 g de glicose)", quantity: "Infundir IV em 20 a 30 minutos", directions: "Monitore a glicemia capilar a cada 30–60 minutos para evitar hipoglicemia reativa." },
+              { drug: "Inalação com Beta-2 Agonista: Fenoterol (Berotec) 10 a 20 gotas (ou Salbutamol 5 mg) em 3 a 5 mL de SF 0,9%", quantity: "Nebulizar durante 10 a 15 minutos", directions: "Pode ser repetida em 2 horas se necessário (cautela se taquicardia prévia ou coronariopatia grave)." }
+            ]
+          },
+          {
+            route: "3. Medidas de Espoliação / Eliminação Corporal de Potássio",
+            mode: "standard",
+            items: [
+              { drug: "Furosemida 20 mg/2 mL (Ampola)", quantity: "2 a 4 ampolas (40 a 80 mg) IV em bolus", directions: "Indicado se paciente normovolêmico/hipervolêmico com diurese preservada." },
+              { drug: "Poliestirenossulfonato de Cálcio (Sorcal) 30 g", quantity: "Diluir em 100 mL de água VO", directions: "Tomar por via oral de 6 em 6 horas (resina de troca de ação lenta; não utilizar para resgate hiperagudo isolado)." }
+            ]
+          }
+        ],
+        orientations: [
+          "Repetir dosagem sérica de Potássio e ECG em 1 a 2 horas após início das medidas. Se persistir K+ > 6,5 mEq/L ou onda senoidal refratária, solicitar vaga imediata de hemodiálise de urgência."
+        ]
+      }
+    },
+    {
+      id: "rec-seed-hipoglicemia",
+      slug: "prescricao-hipoglicemia-grave",
+      title: "Prescrição de Sala de Emergência — Hipoglicemia Grave e Reversão",
+      status: "verified",
+      data: {
+        copy_ready: true,
+        routes: [
+          {
+            route: "1. Fase de Resgate Imediato (Paciente Inconsciente ou em Jejum)",
+            mode: "standard",
+            items: [
+              { drug: "Glicose 50% (Ampolas de 10 mL ou frascos)", quantity: "4 a 5 ampolas (40 a 50 mL = 20 a 25 g de glicose pura) IV direto", directions: "Infundir em bolus lento de 3 a 5 minutos em acesso venoso periférico calibroso verificado." },
+              { drug: "Tiamina 100 mg (Vitamina B1) — SE paciente etilista crônico, desnutrido ou caquético", quantity: "1 ampola (100 mg) IV ou IM", directions: "Fazer concomitantemente ou antes da glicose para prevenção de Encefalopatia de Wernicke." }
+            ]
+          },
+          {
+            route: "2. Fase de Manutenção / Prevenção de Nova Queda Glicêmica",
+            mode: "standard",
+            items: [
+              { drug: "Soro Glicosado 10% (Frasco de 500 mL) ou SG 5% com 4 ampolas de Glicose 50%", quantity: "Correr a 60 a 100 mL/hora em bomba de infusão ou equipo de microgotas", directions: "Manter infusão contínua caso a causa tenha sido hipoglicemiante oral (Glibenclamida) ou insulina de ação prolongada." }
+            ]
+          }
+        ],
+        orientations: [
+          "Verificar glicemia capilar a cada 15 minutos até atingir >= 70 mg/dL e alívio dos sintomas neurológicos. Logo que acordado e consciente, ofertar refeição sólida com carboidratos complexos (pão, biscoito) e proteína."
+        ]
+      }
     }
+
   ];
 })();

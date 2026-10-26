@@ -11,27 +11,15 @@
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-<script src="/assets/js/ui-routes.js?v=1"></script>
+  <script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261025-work-spotlight">
-  <style>
-    .work-shell{display:grid;gap:16px}
-    .work-hero{padding:24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
-    .work-hero h2{margin:0 0 8px;font-size:24px}
-    .work-hero p{margin:0;color:var(--muted);line-height:1.55}
-    .work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-    .work-card{min-height:150px;padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
-    .work-card strong{display:block;margin-bottom:8px;font-size:15px}
-    .work-card span{color:var(--muted);font-size:13px;line-height:1.5}
-    @media(max-width:800px){.work-grid{grid-template-columns:1fr}.work-hero{padding:18px}}
-  </style>
-<link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
-<link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
-
-
+  <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
+  <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
+  <link rel="stylesheet" href="/assets/css/work-plantoes.css?v=20261026-v1">
 </head>
 <body data-page="trabalho_plantoes" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
@@ -51,19 +39,104 @@
         <section class="luria-page-spotlight" aria-label="Escala de Plantões">
           <div class="luria-page-spotlight-copy">
             <strong data-page-title>Escala de Plantões</strong>
-            <small class="luria-page-spotlight-helper">Visualize e organize seus plantões do mês.</small>
+            <small class="luria-page-spotlight-helper">Cadastre, acompanhe horas e controle o status da sua escala médica mensal.</small>
           </div>
         </section>
 
-        <section class="work-shell">
-          <article class="work-hero">
-            <h2>Escala</h2>
-            <p>Área destinada à organização e acompanhamento da sua escala de trabalho.</p>
-          </article>
-          <div class="work-grid">
-            <article class="work-card"><strong>Em construção</strong><span>Esta área já está criada e pronta para receber os módulos que você definir.</span></article>
-            <article class="work-card"><strong>Ambiente Trabalho</strong><span>A navegação deste espaço fica separada do ambiente de Estudos.</span></article>
-            <article class="work-card"><strong>Próximo passo</strong><span>Você pode me dizer agora quais informações e funções entram nesta página.</span></article>
+        <section class="shift-escala-shell">
+          <!-- Estatísticas do Mês -->
+          <div class="shift-stats-grid">
+            <div class="shift-stat-card">
+              <span class="stat-label">Plantões no Mês</span>
+              <strong class="stat-val" id="stat-total-shifts">0 plantões</strong>
+              <span class="stat-sub">Mês atual</span>
+            </div>
+            <div class="shift-stat-card">
+              <span class="stat-label">Carga Horária</span>
+              <strong class="stat-val" id="stat-total-hours">0 horas</strong>
+              <span class="stat-sub">Total acumulado</span>
+            </div>
+            <div class="shift-stat-card">
+              <span class="stat-label">Previsão Faturada</span>
+              <strong class="stat-val" id="stat-total-earned">R$ 0,00</strong>
+              <span class="stat-sub">Valor bruto estimado</span>
+            </div>
+            <div class="shift-stat-card">
+              <span class="stat-label">Status de Pagamento</span>
+              <strong class="stat-val" id="stat-paid-count">0 pagos</strong>
+              <span class="stat-sub">Repasses confirmados</span>
+            </div>
+          </div>
+
+          <!-- Layout Principal: Formulário + Lista -->
+          <div class="shift-main-layout">
+            <!-- Formulário Novo Plantão -->
+            <article class="shift-form-card">
+              <div>
+                <h2>Adicionar Plantão</h2>
+                <p>Insira os dados do plantão para registro local seguro.</p>
+              </div>
+              <form id="add-shift-form" class="shift-field-group">
+                <label class="shift-field-group">Data
+                  <input type="date" id="shift-date" required>
+                </label>
+                <label class="shift-field-group">Hospital / Instituição
+                  <input type="text" id="shift-place" placeholder="Ex.: Hospital São Paulo" required>
+                </label>
+                <div class="shift-field-row">
+                  <label class="shift-field-group">Setor
+                    <input type="text" id="shift-sector" placeholder="Ex.: PS Adulto, UTI">
+                  </label>
+                  <label class="shift-field-group">Duração (Horas)
+                    <select id="shift-duration">
+                      <option value="6">6 horas</option>
+                      <option value="12" selected>12 horas</option>
+                      <option value="24">24 horas</option>
+                      <option value="8">8 horas</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="shift-field-row">
+                  <label class="shift-field-group">Turno
+                    <select id="shift-type">
+                      <option value="Diurno (07h às 19h)" selected>Diurno (07h às 19h)</option>
+                      <option value="Noturno (19h às 07h)">Noturno (19h às 07h)</option>
+                      <option value="24h Corrido">24h Corrido</option>
+                      <option value="Matutino (07h às 13h)">Matutino (07h às 13h)</option>
+                      <option value="Vespertino (13h às 19h)">Vespertino (13h às 19h)</option>
+                    </select>
+                  </label>
+                  <label class="shift-field-group">Valor Previsto (R$)
+                    <input type="number" id="shift-val" placeholder="Ex.: 1500" step="50">
+                  </label>
+                </div>
+                <label class="shift-field-group">Situação Inicial
+                  <select id="shift-status">
+                    <option value="pendente" selected>Aguardando Repasse / A Pagar</option>
+                    <option value="pago">Pago / Repassado</option>
+                    <option value="trocado">Trocado / Cedido</option>
+                  </select>
+                </label>
+                <label class="shift-field-group">Observações / Colega de Troca
+                  <textarea id="shift-notes" placeholder="Ex.: Troca realizada com Dr. Marcos, repasse previsto até dia 20"></textarea>
+                </label>
+                <button type="submit" class="shift-form-submit">Salvar na Escala</button>
+              </form>
+            </article>
+
+            <!-- Lista de Plantões -->
+            <article class="shift-list-card">
+              <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+                <div>
+                  <h2>Seus Plantões Agendados</h2>
+                  <p>Histórico e status ordenados cronologicamente.</p>
+                </div>
+                <button type="button" class="shift-action-btn" id="export-shifts-btn">Exportar CSV</button>
+              </div>
+              <div id="shifts-list-container" class="shift-items-wrap">
+                <!-- Inserido dinamicamente por plantoes-escala.js -->
+              </div>
+            </article>
           </div>
         </section>
       </div>
@@ -73,6 +146,7 @@
 <script src="/assets/js/supabase.js"></script>
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script src="/assets/js/shift-manager-security.js?v=4-fixed"></script>
+<script src="/assets/js/plantoes-escala.js?v=20261026-v1"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>
