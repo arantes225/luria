@@ -11,5 +11,11 @@ useDefault = true
 description = "Supabase publishable keys (public by design)"
 regexTarget = "secret"
 regexes = [
-  '''^sb_publishable_[A-Za-z0-9_-]{20,}$'''
+  '''^sb_publishable_[A-Za-z0-9_-]{20,}
+]
+'',
+  # LocalStorage preference key is a fixed frontend identifier, not a credential.
+  '''^luria_calc_favorites_v1
+]
+''
 ]
