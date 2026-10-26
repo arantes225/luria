@@ -84,9 +84,14 @@ function edge({failure, count=100, total=120, accountingFailure=false, paidGate,
       return Response.json({candidates:[{content:{parts:[{text:'Resposta'}]}}],usageMetadata:{promptTokenCount:100,candidatesTokenCount:20,totalTokenCount:total}});
     }};
   vm.runInNewContext(code,context);
-  const call=(n=1)=>handler(new Request('https://edge.invalid',{method:'POST',headers:{authorization:'Bearer fake'},body:JSON.stringify({request_id:id(n),prompt:'pergunta',model:'expensive/arbitrary'})}));
+  const call=(n=1,prompt='pergunta',extra={})=>handler(new Request('https://edge.invalid',{method:'POST',headers:{authorization:'Bearer fake'},body:JSON.stringify({request_id:id(n),prompt,model:'expensive/arbitrary',...extra})}));
   return {call,stats:()=>({paid,counted})};
 }
+test('Edge: social greeting returns immediately without paid generation or token reservation',async()=>{
+  const f=edge();const response=await f.call(1,'oi');const body=await response.json();
+  assert.equal(response.status,200);assert.equal(body.fast_path,true);assert.equal(body.model,'local-fast-path');
+  assert.equal(f.stats().paid,0);assert.equal((await usage()).used_tokens,0);
+});
 test('Edge + real SQL: simultaneous requests and duplicates cannot dispatch twice',async()=>{
   let release, dispatched;
   const paidGate = new Promise(resolve=>release=resolve);

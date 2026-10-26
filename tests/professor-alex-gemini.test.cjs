@@ -73,19 +73,22 @@ test("Fast answer format is sent to server and controls output budget", () => {
   assert.match(client, /depth: document\.querySelector/);
   assert.match(edge, /const depth = data\.depth === "aula"/);
   assert.match(edge, /FORMATO DÚVIDA RÁPIDA/);
-  assert.match(edge, /maxOutputTokens: depth === "aula"/);
+  assert.match(edge, /const alexMaxOutputTokens = depth === "aula"/);
   assert.match(edge, /thinkingLevel/);
   assert.match(edge, /contents, generationConfig/);
   assert.match(edge, /body: JSON.stringify\(providerRequest\)/);
   assert.match(edge, /generationConfig.thinkingConfig/);
   assert.doesNotMatch(edge, /topP: 0/);
+  assert.match(client, /fastSocialReply/);
+  assert.match(client, /Aham… deixa eu pensar/);
+  assert.match(edge, /model: "local-fast-path"/);
 });
 
-test("Gemini 3.8 TTS uses correct voice field and fast model for short replies", () => {
+test("Gemini 3.8 TTS stays available for lessons while quick voice replies avoid the second AI call", () => {
   assert.match(edge, /voice:\s*"Puck"/);
   assert.doesNotMatch(edge, /prebuiltVoiceConfig:\s*\{/);
-  assert.match(edge, /gemini-3\.8-flash-lite-tts/);
-  assert.match(edge, /depth === "aula" \? TTS_MODEL : TTS_FAST_MODEL/);
+  assert.match(edge, /channel === "voice" && depth === "aula"/);
+  assert.match(edge, /device_tts_fast_path/);
   assert.match(edge, /audioError = "tts_unavailable"/);
   assert.doesNotMatch(client, /rememberVoiceReply/);
 });

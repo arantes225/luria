@@ -455,6 +455,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .month-planner > :las
 body[data-page="aprender"] .learn-tools .tool-card[data-resource="apostilas"] { --tool-accent: #2387d9; }
 body[data-page="aprender"] .learn-tools .tool-card[data-resource="notes"] { --tool-accent: #7657c7; }
 body[data-page="aprender"] .learn-tools .tool-card[data-resource="luriazap"] { --tool-accent: #16a394; }
+body[data-page="aprender"] .learn-tools .tool-card[data-resource="feynman"] { --tool-accent: #e07a32; }
 body[data-page="aprender"] .learn-tools .tool-card .tool-cta {
   background: linear-gradient(135deg, color-mix(in srgb, var(--tool-accent, var(--accent)) 78%, white), var(--tool-accent, var(--accent))) !important;
   border-color: transparent !important;
