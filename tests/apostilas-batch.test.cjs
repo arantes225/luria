@@ -464,17 +464,28 @@ test("Pré-natal: casos 2026 têm rastreio de bacteriúria, sífilis e VSR e est
 
 test("SUA: fotografia real de pólipo usa fonte licenciada e não revive figura restrita",()=>{
   const html=read("apostilas/sangramento-uterino-anormal/index.html");
-  assert.ok(html.includes('id="sua-polipo-histeroscopia-real"'));
-  assert.ok(html.includes('05a_Corpuspolyp_01_vor_Abtragung_01.a.jpg'));
-  assert.ok(html.includes('Dr. Andreas Ott'));
-  assert.ok(html.includes('creativecommons.org/licenses/by-sa/2.0/de/'));
-  assert.ok(html.includes('data-apostila-image-source-url='));
-  assert.ok(html.includes('id="estrutural"'));
-  assert.ok(!html.includes('polipo-1221-l.alonso.jpg'));
-  const renderer=read("assets/js/apostila-tools.js");
-  assert.match(renderer,/removedUnlicensed = new Set\(\[78, 94, 315, 319\]\)/);
+  const data=JSON.parse(read("apostilas/sangramento-uterino-anormal/content.json"));
+  const renderer=read("assets/js/apostila-renderer.js");
+  assert.match(html,/data-apostila-content="\/apostilas\/sangramento-uterino-anormal\/content\.json"/);
+  assert.match(html,/src="\/assets\/js\/apostila-renderer\.js/);
+  assert.match(html,/src="\/assets\/js\/apostila-image-fallback\.js"/);
+  assert.match(html,/img-src[^;]*https:\/\/upload\.wikimedia\.org/);
+  assert.match(renderer,/if\(k==="p"\)return"<p>"\+b\[1\]\+"<\/p>"/);
+  const section=(data.q||[]).find(item=>item[0]==="estrutural");
+  assert.ok(section,"O capítulo estrutural deve estar presente no JSON publicado");
+  assert.ok((data.o||[]).some(item=>item[0]==="estrutural"),"O capítulo deve constar do sumário");
+  const figure=(section[2]||[]).filter(item=>item[0]==="p")
+    .map(item=>item[1]).find(text=>text.includes('id="sua-polipo-histeroscopia-real"'))||"";
+  assert.match(figure,/id="sua-polipo-histeroscopia-real"/);
+  assert.match(figure,/05a_Corpuspolyp_01_vor_Abtragung_01\.a\.jpg/);
+  assert.match(figure,/Dr\. Andreas Ott/);
+  assert.match(figure,/creativecommons\.org\/licenses\/by-sa\/2\.0\/de\//);
+  assert.match(figure,/data-apostila-image-source-url=/);
+  assert.match(figure,/Histopatologia|histopatologia|não permite avaliar atipia/);
+  assert.doesNotMatch(JSON.stringify(data),/polipo-1221-l\.alonso\.jpg/);
+  const tools=read("assets/js/apostila-tools.js");
+  assert.match(tools,/removedUnlicensed = new Set\(\[78, 94, 315, 319\]\)/);
 });
-
 
 test("Síndromes hipertensivas: microangiopatias, diretrizes de cálcio e rastreabilidade",()=>{
   const html=read("apostilas/sindromes-hipertensivas-da-gestacao/index.html");
