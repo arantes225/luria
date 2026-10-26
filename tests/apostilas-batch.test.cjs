@@ -393,7 +393,7 @@ test("Indução de parto conserva exame verdadeiro e alerta para situações de 
   assert.match(figure,/não devem ser copiados como prescrição ou padrão universal/);
   const images=(data.q||[]).flatMap(s=>s[2]||[]).map(block=>String(block[1]))
     .filter(source=>source.includes("<img"));
-  assert.ok(!images.some(source=>\/<img[^>]+src="https:\/\/www\.cookmedical\.com/i.test(source)),
+  assert.ok(!images.some(source=>new RegExp('<img[^>]+src="https://www\\.cookmedical\\.com','i').test(source)),
     "Não incorporar imagem de fabricante sem autorização demonstrada");
   const id="inducoes-casos-avancados-2026";
   const advanced=data.q.find(s=>s[0]===id);
