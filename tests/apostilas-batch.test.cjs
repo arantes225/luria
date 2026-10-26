@@ -410,19 +410,27 @@ test("Transmissão vertical conserva imagem CDC e usa retinografia licenciada",(
 
 
 test("Apostila IST ensina diferencial de ulceras sem perder fotos clinicas",()=>{
- const html=read("apostilas/infeccoes-sexualmente-transmissiveis/index.html");
- assert.match(html,/id="ulceras-genitais-decisoes-2026"/);
- assert.match(html,/href="#ulceras-genitais-decisoes-2026"/);
- assert.match(html,/úlcera indolor não confirma sífilis/);
- assert.match(html,/proctite grave depois de sexo anal receptivo/i);
- assert.match(html,/biópsia de lesão persistente/i);
- assert.match(html,/anexo alterado em 2024/);
- for(const id of [13,14,15,16,17,18,19,20]) {
-   assert.match(html,new RegExp("ist-"+id+"\\.webp"),"Imagem clínica "+id+" foi perdida");
- }
- assert.equal((html.match(/ist-\d+\.webp/g)||[]).length,8,"Devem permanecer as oito fotos originais");
+  const html=read("apostilas/infeccoes-sexualmente-transmissiveis/index.html");
+  const data=JSON.parse(read("apostilas/infeccoes-sexualmente-transmissiveis/content.json"));
+  const renderer=read("assets/js/apostila-renderer.js");
+  assert.match(html,/data-apostila-content="\/apostilas\/infeccoes-sexualmente-transmissiveis\/content\.json"/);
+  assert.match(html,/src="\/assets\/js\/apostila-renderer\.js/);
+  assert.match(renderer,/for\(const s of data\.q\|\|\[\]\)/);
+  const section=data.q.find(x=>x[0]==="ulceras-genitais-decisoes-2026");
+  assert.ok(section,"Capítulo de decisões sobre úlceras ausente");
+  assert.ok(data.o.some(x=>x[0]==="ulceras-genitais-decisoes-2026"),"Capítulo sem link de navegação");
+  assert.ok(JSON.stringify(section[2]).length>3000,"Diferencial insuficientemente desenvolvido");
+  const all=JSON.stringify(data);
+  assert.match(all,/úlcera indolor não confirma sífilis/);
+  assert.match(all,/proctite grave depois de sexo anal receptivo/i);
+  assert.match(all,/biópsia de lesão persistente/i);
+  assert.match(all,/anexo alterado em 2024/);
+  const images=(data.q||[]).flatMap(x=>x[2]||[])
+    .filter(x=>x[0]==="p").flatMap(x=>String(x[1]).match(/ist-\d+\.webp/g)||[]);
+  for(const id of [13,14,15,16,17,18,19,20])
+    assert.ok(images.includes("ist-"+id+".webp"),"Imagem clínica "+id+" ausente da fonte renderizada");
+  assert.equal(images.length,8,"Preservar exatamente oito imagens clínicas originais");
 });
-
 
 test("Infertilidade mostra HSG real CC0 e raciocinio por casal",()=>{
  const html=read("apostilas/infertilidade-conjugal/index.html");
@@ -439,20 +447,28 @@ test("Infertilidade mostra HSG real CC0 e raciocinio por casal",()=>{
 
 test("Contracepção: decisões avançadas mantêm navegação e diferenciações clínicas",()=>{
   const html=read("apostilas/planejamento-reprodutivo-contracepcao/index.html");
-  assert.match(html,/id="decisoes-avancadas-contracepcao-2026"/);
-  assert.match(html,/href="#decisoes-avancadas-contracepcao-2026"/);
-  assert.match(html,/Ulipristal versus levonorgestrel/);
-  assert.match(html,/ao menos cinco dias/);
-  assert.match(html,/secreção mucopurulenta cervical/);
-  assert.match(html,/21 anos com capacidade civil plena OU pelo menos dois filhos vivos/);
-  assert.match(html,/Sepse puerperal é contraindicação/);
-  assert.match(html,/who\.int\/publications\/i\/item\/9789240115583/);
-  assert.match(html,/cdc\.gov\/contraception\/hcp\/usspr\/emergency-contraception/);
-  assert.match(html,/Lei 14\.443\/2022/);
-  assert.match(html,/\bid="diu-cobre"/);
-  assert.match(html,/\bid="siu-lng"/);
+  const data=JSON.parse(read("apostilas/planejamento-reprodutivo-contracepcao/content.json"));
+  const renderer=read("assets/js/apostila-renderer.js");
+  assert.match(html,/data-apostila-content="\/apostilas\/planejamento-reprodutivo-contracepcao\/content\.json"/);
+  assert.match(html,/src="\/assets\/js\/apostila-renderer\.js/);
+  assert.match(renderer,/for\(const s of data\.q\|\|\[\]\)/);
+  const id="decisoes-avancadas-contracepcao-2026";
+  const chapter=data.q.find(x=>x[0]===id);
+  assert.ok(chapter,"Capítulo de decisões avançadas ausente");
+  assert.ok(data.o.some(x=>x[0]===id),"Sumário sem link para decisões avançadas");
+  assert.ok(JSON.stringify(chapter[2]).length>4000,"Capítulo ainda superficial");
+  const clinical=JSON.stringify(data);
+  assert.match(clinical,/Ulipristal versus levonorgestrel/);
+  assert.match(clinical,/ao menos cinco dias/);
+  assert.match(clinical,/secreção mucopurulenta cervical/);
+  assert.match(clinical,/21 anos com capacidade civil plena OU pelo menos dois filhos vivos/);
+  assert.match(clinical,/Sepse puerperal é contraindicação/);
+  assert.match(clinical,/who\.int\/publications\/i\/item\/9789240115583/);
+  assert.match(clinical,/cdc\.gov\/contraception\/hcp\/usspr\/emergency-contraception/);
+  assert.match(clinical,/Lei 14\.443\/2022/);
+  for(const deviceId of ["diu-cobre","siu-lng"])
+    assert.ok(data.q.some(x=>x[0]===deviceId),deviceId+" ausente do conteúdo");
 });
-
 
 test("Pré-natal: casos 2026 têm rastreio de bacteriúria, sífilis e VSR e estão navegáveis",()=>{
   const html=read("apostilas/pre-natal-baixo-risco/index.html");
