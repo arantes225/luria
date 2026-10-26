@@ -39,3 +39,6 @@ id_ed25519
 
 # Evidências temporárias podem conter URLs assinadas; revisar arquivos já rastreados também.
 docs/auditoria-*/evidencias/
+
+# Fábrica interna de questões: o GitHub é público, não versionar acervo ou portal privado.
+/qf-*/

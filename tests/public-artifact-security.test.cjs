@@ -34,3 +34,11 @@ test('website assets required by current public static frontend are preserved',(
     'CNAME'
   ])assert.equal(isPublicFile(path),true,path);
 });
+
+
+test('private question factory files must not exist in public Git tree',()=>{
+  const {execFileSync}=require('node:child_process');
+  const tracked=execFileSync('git',['ls-files','--cached','-z'],{cwd:require('node:path').resolve(__dirname,'..'),maxBuffer:32*1024*1024}).toString('utf8').split('\0').filter(Boolean);
+  const exposed=tracked.filter(p=>/^qf-[^/]+\//.test(p));
+  assert.deepEqual(exposed,[], 'Internal question factory files must be hosted privately, never checked into the public repository');
+});
