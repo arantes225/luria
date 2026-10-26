@@ -200,19 +200,15 @@ test('apostila navigation fetches the existing index route but preserves the com
   assert.equal(result.response.status, 503);
 });
 
-test('weekly prefetch accepts only same-origin client/public JSON URLs and omits cookies', async () => {
+test('unauthenticated weekly answer packages cannot be prefetched', async () => {
   const f = workerFixture({ fetch: async req => resource(req, '{}') });
   const data = { type: 'LURIA_PREFETCH_WEEKLY_CONTENT', urls: ['/content/weekly/2026-W40/questions-g1-v1.json',
     '/content/weekly/private.json?token=secret', 'https://evil.org/content/weekly/a.json', '/admin/', '/content/weekly/a.js'] };
   await f.dispatch('message', { data, source: { url: 'https://evil.org/' } }).done();
   assert.equal(f.calls.length, 0);
   await f.dispatch('message', { data, source: { url: f.origin + '/dashboard/' } }).done();
-  assert.equal(f.calls.length, 1);
-  assert.equal(f.calls[0].request.credentials, 'omit');
-  assert.equal(f.writes[0].name, f.WEEKLY_CONTENT_CACHE);
-  const cached = await f.run(data.urls[0]);
-  assert.equal(await cached.response.text(), '{}');
-  assert.equal(f.calls.length, 1);
+  assert.equal(f.calls.length, 0);
+  assert.equal(f.writes.length, 0);
 });
 
 test('public images keep their TTL/offline fallback and never accept signed URLs', async () => {
