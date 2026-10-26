@@ -1,0 +1,39 @@
+name: Validate Cloudflare preview build
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cloudflare-preview:
+    name: Verify preview without publishing
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Test production hold and preview selection
+        run: node --test tests/cloudflare-preview-build.test.cjs
+      - name: Confirm default build never publishes LURIA
+        run: |
+          node scripts/build-cloudflare-pages.cjs
+          test -f build/pages/index.html
+          test ! -e build/pages/assets/js/app.js
+          grep -q 'Estamos preparando a plataforma' build/pages/index.html
+      - name: Prepare a preview artifact in runner only
+        env:
+          CF_PAGES_BRANCH: preview/ci-validation
+        run: |
+          node scripts/build-cloudflare-pages.cjs
+          test -f build/pages/index.html
+          test -f build/pages/assets/js/app.js
+          test ! -e build/pages/CNAME
+          test ! -e build/pages/supabase/functions
+          grep -q 'X-Robots-Tag: noindex' build/pages/_headers
+          echo "Preview assets verified locally in CI; no external deployment was triggered."
