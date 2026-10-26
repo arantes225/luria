@@ -624,3 +624,13 @@ test("Técnica cirúrgica: origem verificada e figuras correspondem ao instrumen
   assert.doesNotMatch(html,/Egyptian-surgical-instruments\.jpg/);
   assert.doesNotMatch(html,/Bisturi cirúrgico e técnica de incisão cutânea contínua/);
 });
+
+test("Curadoria: não sugerir uso de lote recolhido nem confundir histopatologia com ultrassom",()=>{
+  const hypertensive=read("apostilas/sindromes-hipertensivas-da-gestacao/index.html");
+  assert.doesNotMatch(hypertensive,/RECALLED(?:%20|_|___)/i);
+  assert.doesNotMatch(hypertensive,/26399028226/);
+  const firstTrimester=read("apostilas/sangramento-na-primeira-metade-da-gestacao/index.html");
+  assert.match(firstTrimester,/Partial%20Hydatidiform%20Mole%20/);
+  assert.match(firstTrimester,/Fotomicrografia histopatológica de mola hidatiforme parcial/);
+  assert.doesNotMatch(firstTrimester,/Padrão ultrassonográfico em tempestade de neve na mola hidatiforme/);
+});
