@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#184888">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' capacitor: https://localhost; base-uri 'none'; form-action 'none'; object-src 'none'; connect-src 'self' capacitor: https://localhost; img-src 'self' blob: data: capacitor: https://localhost; style-src 'self'; script-src 'self';">
+  <title>LURIA ECG | Captura local</title>
+</head>
+<body>
+  <main class="page">
+    <header class="head">
+      <p class="kicker">LURIA · MOBILE PILOT</p>
+      <h1>Foto do ECG impresso</h1>
+      <p class="sub">Captura assistida para iPhone e Android. Etapa de pesquisa — sem interpretação clínica.</p>
+    </header>
+    <section class="card warning" role="note">
+      <strong>Não utilizar com pacientes para decisão clínica.</strong>
+      <p>Este piloto apenas captura e pré-visualiza a foto. Não digitaliza derivações, não classifica o ECG nem emite diagnóstico.</p>
+    </section>
+    <section class="card">
+      <h2>1. Capturar o exame</h2>
+      <p class="muted">Enquadre toda a folha, evite brilho e confira se estão legíveis 25 mm/s e 10 mm/mV, quando aplicável.</p>
+      <div class="actions">
+        <button type="button" id="capture" class="primary">📷 Fotografar ECG</button>
+        <button type="button" id="gallery" class="secondary">Selecionar da galeria</button>
+      </div>
+      <input type="file" id="web-camera" accept="image/*" capture="environment" hidden>
+      <input type="file" id="web-gallery" accept="image/*" hidden>
+      <p class="status" id="status" role="status" aria-live="polite">Nenhuma imagem selecionada.</p>
+      <div class="preview" id="preview-wrap" hidden>
+        <canvas id="preview" aria-label="Prévia da foto selecionada"></canvas>
+      </div>
+      <div class="actions">
+        <button type="button" class="secondary" id="rotate" disabled>Girar 90°</button>
+        <button type="button" class="secondary" id="clear" disabled>Remover imagem</button>
+      </div>
+    </section>
+    <section class="card">
+      <h2>2. Conferência da imagem</h2>
+      <div id="metrics" class="metrics" aria-live="polite"><p class="muted">Aguardando foto.</p></div>
+      <ul class="tips">
+        <li>As 12 derivações precisam estar visíveis e legíveis.</li>
+        <li>Evite reflexos, recortes e perspectiva inclinada.</li>
+        <li>Confirme a velocidade e a amplitude registradas no papel.</li>
+        <li>Para testes, utilize apenas ECGs sintéticos ou devidamente desidentificados.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>3. Digitalização e IA</h2>
+      <p><strong>Aguardando desenvolvimento e validação.</strong> O modelo existente recebe 12 sinais digitais de 10 segundos; fotos de ECGs impressos podem apresentar derivações de duração menor. Não realizamos conversão nem completamos trechos ausentes.</p>
+      <p class="privacy">A imagem não é enviada a APIs ou servidores pela LURIA neste piloto. A câmera nativa e o sistema operacional podem manter arquivos temporários conforme suas próprias políticas; ao remover a prévia, a LURIA libera suas referências em memória.</p>
+    </section>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
