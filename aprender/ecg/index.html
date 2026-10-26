@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-T0BXhWGcu2GRrgsPLhzXkSqQR65cdjDAksU3YrvRIIg='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>ECG · LURIA</title>
+  <meta name="theme-color" content="#184888">
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <script src="/assets/js/ui-routes.js?v=1"></script>
+  <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
+  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
+  <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261025-work-spotlight">
+  <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
+  <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
+  <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
+  <style>
+    .ecg-lab{display:grid;gap:16px}
+    .ecg-card{padding:20px;border:1px solid var(--border);border-radius:18px;background:var(--surface);box-shadow:var(--shadow,0 8px 24px rgba(24,72,136,.08))}
+    .ecg-card h2{margin:0 0 8px;font-size:20px}
+    .ecg-card p{margin:0 0 14px;color:var(--muted);line-height:1.5}
+    .ecg-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .ecg-field{display:grid;gap:6px}
+    .ecg-field label{font-size:13px;font-weight:700;color:var(--text)}
+    .ecg-field select,.ecg-field input,.ecg-field textarea{width:100%;box-sizing:border-box;border:1px solid var(--border);border-radius:10px;padding:10px;background:var(--surface-2);color:var(--text);font:inherit}
+    .ecg-field textarea{min-height:88px;resize:vertical}
+    .ecg-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+    .ecg-btn{border:0;border-radius:10px;padding:10px 14px;font:inherit;font-weight:700;cursor:pointer;background:#184888;color:#fff}
+    .ecg-btn.secondary{background:var(--surface-2);color:var(--text);border:1px solid var(--border)}
+    .ecg-btn:disabled{opacity:.55;cursor:not-allowed}
+    .ecg-status{min-height:20px;font-size:13px;color:var(--muted)}
+    .ecg-status.error{color:#b42318}
+    .ecg-status.ok{color:#147a45}
+    .ecg-catalog{display:grid;gap:8px;margin-top:12px}
+    .ecg-prefix{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:10px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2)}
+    .ecg-prefix code{overflow-wrap:anywhere;font-size:12px}
+    .ecg-preview{display:none;gap:10px;margin-top:12px;padding:12px;border-radius:12px;background:var(--surface-2)}
+    .ecg-preview.visible{display:grid}
+    .ecg-preview a{overflow-wrap:anywhere}
+    .ecg-summary{white-space:pre-wrap;padding:12px;border-radius:10px;background:var(--surface-2);font-size:13px}
+    @media(max-width:720px){.ecg-grid{grid-template-columns:1fr}.ecg-card{padding:16px}}
+  </style>
+</head>
+<body data-page="aprender_ecg" data-ui-nav="v2" data-ui-context="study" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" >
+  <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
+  <script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main">
+      <div class="page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
+        </header>
+        <section class="luria-page-spotlight" aria-label="ECG">
+          <div class="luria-page-spotlight-copy">
+            <strong data-page-title>ECG</strong>
+            <small class="luria-page-spotlight-helper">Aprenda a interpretar ECG passo a passo com exercícios estruturados.</small>
+          </div>
+        </section>
+
+        <section class="ecg-lab">
+          <article class="ecg-card">
+            <h2>Escolher ECG para estudar</h2>
+            <p>O bucket continua privado. O site recebe apenas uma URL temporária para o arquivo selecionado.</p>
+            <div class="ecg-grid">
+              <div class="ecg-field">
+                <label for="ecg-dataset">Base</label>
+                <select id="ecg-dataset">
+                  <option value="ptbxl">PTB-XL 1.0.3</option>
+                  <option value="ptbxl-plus">PTB-XL+ 1.0.1</option>
+                </select>
+              </div>
+              <div class="ecg-field">
+                <label for="ecg-key">Chave do objeto</label>
+                <input id="ecg-key" placeholder="physionet/ptb-xl/1.0.3/records100/00000/00001_hr.hea">
+              </div>
+            </div>
+            <div class="ecg-actions" style="margin-top:12px">
+              <button class="ecg-btn" id="ecg-list">Listar catálogo</button>
+              <button class="ecg-btn secondary" id="ecg-sign">Gerar acesso temporário</button>
+            </div>
+            <div id="ecg-status" class="ecg-status" aria-live="polite"></div>
+            <div id="ecg-catalog" class="ecg-catalog"></div>
+            <div id="ecg-preview" class="ecg-preview">
+              <strong>Arquivo selecionado</strong>
+              <code id="ecg-selected-key"></code>
+              <a id="ecg-signed-link" target="_blank" rel="noopener noreferrer">Abrir arquivo temporário</a>
+            </div>
+          </article>
+
+          <article class="ecg-card">
+            <h2>Leitura estruturada</h2>
+            <p>Preencha os achados. A hipótese final é uma sugestão para revisão médica.</p>
+            <div class="ecg-grid">
+              <div class="ecg-field"><label for="ecg-frequency">Frequência</label><select id="ecg-frequency"><option>Bradicardia</option><option selected>Normal</option><option>Taquicardia</option><option>Não determinado</option></select></div>
+              <div class="ecg-field"><label for="ecg-rhythm">Ritmo</label><select id="ecg-rhythm"><option>Sinusal</option><option>Fibrilação atrial</option><option>Flutter atrial</option><option>Juncional</option><option>Outro</option><option>Não determinado</option></select></div>
+              <div class="ecg-field"><label for="ecg-axis">Eixo</label><select id="ecg-axis"><option>Normal</option><option>Desvio para a esquerda</option><option>Desvio para a direita</option><option>Eixo extremo</option><option>Não determinado</option></select></div>
+              <div class="ecg-field"><label for="ecg-pr">Intervalo PR</label><select id="ecg-pr"><option>Normal</option><option>Prolongado</option><option>Curto</option><option>Ausente ou irregular</option><option>Não determinado</option></select></div>
+              <div class="ecg-field"><label for="ecg-qrs">QRS</label><select id="ecg-qrs"><option>Estreito</option><option>Alargado</option><option>Bloqueio de ramo</option><option>Outro</option><option>Não determinado</option></select></div>
+              <div class="ecg-field"><label for="ecg-st">ST e T</label><select id="ecg-st"><option>Sem alteração relevante</option><option>Supradesnivelamento de ST</option><option>Infradesnivelamento de ST</option><option>Inversão de onda T</option><option>Não determinado</option></select></div>
+            </div>
+            <div class="ecg-field" style="margin-top:12px">
+              <label for="ecg-hypothesis">Hipótese final sugerida</label>
+              <textarea id="ecg-hypothesis" placeholder="Descreva a hipótese e os achados que a sustentam."></textarea>
+            </div>
+            <div class="ecg-actions" style="margin-top:12px">
+              <button class="ecg-btn" id="ecg-save">Salvar rascunho</button>
+              <button class="ecg-btn secondary" id="ecg-clear">Limpar</button>
+            </div>
+            <div id="ecg-form-status" class="ecg-status" aria-live="polite"></div>
+            <div id="ecg-summary" class="ecg-summary" style="display:none"></div>
+          </article>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js"></script>
+  <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
+  <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
+  <script>
+    (() => {
+      const client = window.supabaseClient;
+      const dataset = document.getElementById("ecg-dataset");
+      const keyInput = document.getElementById("ecg-key");
+      const listButton = document.getElementById("ecg-list");
+      const signButton = document.getElementById("ecg-sign");
+      const status = document.getElementById("ecg-status");
+      const catalog = document.getElementById("ecg-catalog");
+      const preview = document.getElementById("ecg-preview");
+      const selectedKey = document.getElementById("ecg-selected-key");
+      const signedLink = document.getElementById("ecg-signed-link");
+      const formStatus = document.getElementById("ecg-form-status");
+      const summary = document.getElementById("ecg-summary");
+      const rootPrefix = {
+        ptbxl: "physionet/ptb-xl/1.0.3/",
+        "ptbxl-plus": "physionet/ptb-xl-plus/1.0.1/"
+      };
+
+      function setStatus(node, message, kind) {
+        node.textContent = message || "";
+        node.className = "ecg-status" + (kind ? " " + kind : "");
+      }
+
+      async function callR2(body) {
+        if (!client?.functions) throw new Error("Supabase não carregado.");
+        const result = await client.functions.invoke("ecg-r2-catalog", { body });
+        if (result.error) throw result.error;
+        if (!result.data?.ok) throw new Error(result.data?.error || "Falha no acesso ao R2.");
+        return result.data;
+      }
+
+      async function listCatalog(prefix) {
+        setStatus(status, "Carregando catálogo...", "");
+        catalog.innerHTML = "";
+        const data = await callR2({ op: "catalog", dataset: dataset.value, prefix: prefix || rootPrefix[dataset.value] });
+        const items = [...(data.prefixes || []), ...(data.objects || []).map(item => item.key)].slice(0, 100);
+        if (!items.length) {
+          setStatus(status, "Nenhum objeto encontrado nesta pasta.", "error");
+          return;
+        }
+        items.forEach(item => {
+          const row = document.createElement("div");
+          row.className = "ecg-prefix";
+          const code = document.createElement("code");
+          code.textContent = item;
+          const button = document.createElement("button");
+          button.className = "ecg-btn secondary";
+          const isPrefix = item.endsWith("/");
+          button.textContent = isPrefix ? "Abrir pasta" : "Selecionar";
+          button.addEventListener("click", () => {
+            if (isPrefix) listCatalog(item);
+            else { keyInput.value = item; setStatus(status, "Objeto selecionado.", "ok"); }
+          });
+          row.append(code, button);
+          catalog.appendChild(row);
+        });
+        setStatus(status, "Catálogo carregado.", "ok");
+      }
+
+      listButton.addEventListener("click", async () => {
+        try { await listCatalog(rootPrefix[dataset.value]); }
+        catch (error) { setStatus(status, error.message || "Faça login para acessar o ECG.", "error"); }
+      });
+
+      signButton.addEventListener("click", async () => {
+        try {
+          const key = keyInput.value.trim();
+          if (!key) throw new Error("Selecione um objeto ou informe a chave.");
+          setStatus(status, "Gerando acesso temporário...", "");
+          const data = await callR2({ op: "sign", dataset: dataset.value, key });
+          selectedKey.textContent = data.key;
+          signedLink.href = data.url;
+          preview.classList.add("visible");
+          setStatus(status, "Acesso temporário gerado por 5 minutos.", "ok");
+        } catch (error) { setStatus(status, error.message || "Não foi possível abrir o arquivo.", "error"); }
+      });
+
+      document.getElementById("ecg-save").addEventListener("click", () => {
+        const result = {
+          key: keyInput.value.trim(),
+          frequency: document.getElementById("ecg-frequency").value,
+          rhythm: document.getElementById("ecg-rhythm").value,
+          axis: document.getElementById("ecg-axis").value,
+          pr: document.getElementById("ecg-pr").value,
+          qrs: document.getElementById("ecg-qrs").value,
+          st: document.getElementById("ecg-st").value,
+          hypothesis: document.getElementById("ecg-hypothesis").value.trim(),
+          savedAt: new Date().toISOString()
+        };
+        localStorage.setItem("luria-ecg-draft", JSON.stringify(result));
+        summary.textContent = JSON.stringify(result, null, 2);
+        summary.style.display = "block";
+        formStatus.textContent = "Rascunho salvo neste dispositivo.";
+        formStatus.className = "ecg-status ok";
+      });
+
+      document.getElementById("ecg-clear").addEventListener("click", () => {
+        document.querySelectorAll(".ecg-card select, .ecg-card input, .ecg-card textarea").forEach((field) => {
+          if (field.id === "ecg-dataset") return;
+          if (field.tagName === "SELECT") field.selectedIndex = 0;
+          else field.value = "";
+        });
+        preview.classList.remove("visible");
+        summary.style.display = "none";
+        formStatus.textContent = "";
+      });
+    })();
+  </script>
+</body>
+</html>
