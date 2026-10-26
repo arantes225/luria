@@ -67,35 +67,22 @@
 
         <section class="ecg-lab">
           <article class="ecg-card">
-            <h2>Abrir ECG para apoio clínico</h2>
-            <p>O bucket continua privado. O site recebe apenas uma URL temporária para o arquivo selecionado.</p>
-            <div class="ecg-grid">
-              <div class="ecg-field">
-                <label for="ecg-dataset">Base</label>
-                <select id="ecg-dataset">
-                  <option value="ptbxl">PTB-XL 1.0.3</option>
-                  <option value="ptbxl-plus">PTB-XL+ 1.0.1</option>
-                </select>
-              </div>
-              <div class="ecg-field">
-                <label for="ecg-key">Chave do objeto</label>
-                <input id="ecg-key" placeholder="physionet/ptb-xl/1.0.3/records100/00000/00001_hr.hea">
-              </div>
+            <h2>Leitor de ECG por IA</h2>
+            <p>Envie uma imagem do ECG para receber sugestões de achados. A saída é um apoio à revisão médica e não substitui o médico.</p>
+            <div class="ecg-actions">
+              <label class="ecg-btn secondary" for="ecg-image">Selecionar imagem do ECG</label>
+              <input id="ecg-image" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+              <button class="ecg-btn" id="ecg-analyze" disabled>Analisar com IA</button>
             </div>
-            <div class="ecg-actions" style="margin-top:12px">
-              <button class="ecg-btn" id="ecg-list">Listar catálogo</button>
-              <button class="ecg-btn secondary" id="ecg-sign">Gerar acesso temporário</button>
-            </div>
+            <div id="ecg-file-name" class="ecg-status">Nenhum ECG selecionado.</div>
+            <img id="ecg-image-preview" alt="Prévia do ECG selecionado" style="display:none;max-width:100%;max-height:520px;border-radius:12px;border:1px solid var(--border);margin-top:12px">
             <div id="ecg-status" class="ecg-status" aria-live="polite"></div>
-            <div id="ecg-catalog" class="ecg-catalog"></div>
-            <div id="ecg-preview" class="ecg-preview">
-              <strong>Arquivo selecionado</strong>
-              <code id="ecg-selected-key"></code>
-              <a id="ecg-signed-link" target="_blank" rel="noopener noreferrer">Abrir arquivo temporário</a>
-            </div>
           </article>
-
-
+          <article class="ecg-card" id="ecg-result-card" hidden>
+            <h2>Resultado sugerido</h2>
+            <div id="ecg-result"></div>
+            <p class="ecg-status">Revisar todos os achados diretamente no ECG e correlacionar com o contexto clínico.</p>
+          </article>
         </section>
       </div>
     </main>
@@ -104,85 +91,5 @@
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
-  <script>
-    (() => {
-      const client = window.supabaseClient;
-      const dataset = document.getElementById("ecg-dataset");
-      const keyInput = document.getElementById("ecg-key");
-      const listButton = document.getElementById("ecg-list");
-      const signButton = document.getElementById("ecg-sign");
-      const status = document.getElementById("ecg-status");
-      const catalog = document.getElementById("ecg-catalog");
-      const preview = document.getElementById("ecg-preview");
-      const selectedKey = document.getElementById("ecg-selected-key");
-      const signedLink = document.getElementById("ecg-signed-link");
-      const formStatus = document.getElementById("ecg-form-status");
-      const summary = document.getElementById("ecg-summary");
-      const rootPrefix = {
-        ptbxl: "physionet/ptb-xl/1.0.3/",
-        "ptbxl-plus": "physionet/ptb-xl-plus/1.0.1/"
-      };
-
-      function setStatus(node, message, kind) {
-        node.textContent = message || "";
-        node.className = "ecg-status" + (kind ? " " + kind : "");
-      }
-
-      async function callR2(body) {
-        if (!client?.functions) throw new Error("Supabase não carregado.");
-        const result = await client.functions.invoke("ecg-r2-catalog", { body });
-        if (result.error) throw result.error;
-        if (!result.data?.ok) throw new Error(result.data?.error || "Falha no acesso ao R2.");
-        return result.data;
-      }
-
-      async function listCatalog(prefix) {
-        setStatus(status, "Carregando catálogo...", "");
-        catalog.innerHTML = "";
-        const data = await callR2({ op: "catalog", dataset: dataset.value, prefix: prefix || rootPrefix[dataset.value] });
-        const items = [...(data.prefixes || []), ...(data.objects || []).map(item => item.key)].slice(0, 100);
-        if (!items.length) {
-          setStatus(status, "Nenhum objeto encontrado nesta pasta.", "error");
-          return;
-        }
-        items.forEach(item => {
-          const row = document.createElement("div");
-          row.className = "ecg-prefix";
-          const code = document.createElement("code");
-          code.textContent = item;
-          const button = document.createElement("button");
-          button.className = "ecg-btn secondary";
-          const isPrefix = item.endsWith("/");
-          button.textContent = isPrefix ? "Abrir pasta" : "Selecionar";
-          button.addEventListener("click", () => {
-            if (isPrefix) listCatalog(item);
-            else { keyInput.value = item; setStatus(status, "Objeto selecionado.", "ok"); }
-          });
-          row.append(code, button);
-          catalog.appendChild(row);
-        });
-        setStatus(status, "Catálogo carregado.", "ok");
-      }
-
-      listButton.addEventListener("click", async () => {
-        try { await listCatalog(rootPrefix[dataset.value]); }
-        catch (error) { setStatus(status, error.message || "Faça login para acessar o ECG.", "error"); }
-      });
-
-      signButton.addEventListener("click", async () => {
-        try {
-          const key = keyInput.value.trim();
-          if (!key) throw new Error("Selecione um objeto ou informe a chave.");
-          setStatus(status, "Gerando acesso temporário...", "");
-          const data = await callR2({ op: "sign", dataset: dataset.value, key });
-          selectedKey.textContent = data.key;
-          signedLink.href = data.url;
-          preview.classList.add("visible");
-          setStatus(status, "Acesso temporário gerado por 5 minutos.", "ok");
-        } catch (error) { setStatus(status, error.message || "Não foi possível abrir o arquivo.", "error"); }
-      });
-
-    })();
-  </script>
-</body>
+  <script defer src="/assets/js/ecg-reader.js?v=1"></script></body>
 </html>
