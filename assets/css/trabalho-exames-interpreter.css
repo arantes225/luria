@@ -66,3 +66,22 @@ body[data-page="trabalho_laboratorio"] .work-hub-navigation .work-hub-return{dis
  #exam-tool .ex-test.ex-reference-only{grid-template-columns:minmax(0,1fr) minmax(110px, .9fr)}
  #exam-tool .ex-patient-button{width:100%}
 }
+
+/* Cabecalho alinhado ao spotlight padrao do Modo Trabalho */
+#exam-tool .luria-page-spotlight.ex-title-card .ex-title-copy h2{margin:0;color:#fff;font-size:26px;font-weight:900;line-height:1.15;letter-spacing:-.6px}
+#exam-tool .luria-page-spotlight.ex-title-card .ex-back-link{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3);color:#fff}
+#exam-tool .luria-page-spotlight.ex-title-card .ex-back-link:hover{background:rgba(255,255,255,.24);border-color:#fff;color:#fff}
+
+/* Kits Rapidos de Plantao e Tabela de Valores Criticos */
+#exam-tool .ex-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;min-height:42px}
+#exam-tool .ex-kits-bar{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+#exam-tool .ex-kits-label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--muted,#64748b);margin-right:2px}
+#exam-tool .ex-kit-chip{padding:7px 11px;border-radius:999px;border:1px solid var(--border,#dce5f0);background:var(--surface,#fff);color:var(--text,#142741);font-size:12px;font-weight:750;cursor:pointer;transition:all .15s ease}
+#exam-tool .ex-kit-chip:hover,#exam-tool .ex-kit-chip.is-active{background:#215fae;border-color:#215fae;color:#fff}
+#exam-tool .ex-panic-banner{border:1px solid color-mix(in srgb,#dc2626 28%,var(--border,#dce5f0));border-radius:14px;background:color-mix(in srgb,#dc2626 4%,var(--surface,#fff));padding:10px 14px}
+#exam-tool .ex-panic-banner summary{display:flex;justify-content:space-between;align-items:center;gap:10px;cursor:pointer;font-size:12.5px;font-weight:800;color:#b91c1c;list-style:none}
+#exam-tool .ex-panic-banner summary::-webkit-details-marker{display:none}
+#exam-tool .ex-panic-banner summary small{font-size:11px;font-weight:600;color:var(--muted,#64748b)}
+#exam-tool .ex-panic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px;margin-top:10px;padding-top:10px;border-top:1px dashed color-mix(in srgb,#dc2626 25%,var(--border,#dce5f0))}
+#exam-tool .ex-panic-grid div{padding:8px 10px;border-radius:10px;background:var(--surface,#fff);border:1px solid var(--border,#dce5f0);font-size:11.5px;line-height:1.4}
+#exam-tool .ex-panic-grid strong{display:block;color:#991b1b;font-size:12px;margin-bottom:2px}

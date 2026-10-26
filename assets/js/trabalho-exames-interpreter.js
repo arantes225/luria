@@ -5,7 +5,15 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
   if(!root)return;
   const C=window.LURIA_EXAM_CATALOG||[];
   const byId=new Map(C.flatMap(g=>g.tests.map(t=>[t.id,t])));
-  const state={group:1,search:"",view:"catalog",mode:"reference",population:"adult-f",age:"",context:"",readings:{},history:[]};
+  const state={group:1,kit:"",search:"",view:"catalog",mode:"reference",population:"adult-f",age:"",context:"",readings:{},history:[]};
+  const KITS={
+    sepse:{label:"Kit Sepse & UTI",ids:["g1t1","g1t8","g1t14","g2t1","g2t2","g3t1","g3t2","g3t5","g4t1","g4t2","g4t3","g4t4","g4t8","g5t5","g5t6","g8t2","g8t3","g10t1","g10t4"]},
+    iam:{label:"Kit Dor Torácica & IC",ids:["g9t3","g9t1","g9t4","g9t5","g9t6","g9t7","g8t6","g1t1","g2t1","g3t1","g3t2","g3t6","g6t1","g7t3"]},
+    hepatico:{label:"Kit Hepático & Pâncreas",ids:["g5t1","g5t2","g5t3","g5t4","g5t5","g5t6","g5t7","g5t8","g8t2","g8t5","g15t1","g15t2","g1t14"]},
+    renal:{label:"Kit Renal & Gasometria",ids:["g2t1","g2t2","g2t6","g2t9","g3t1","g3t2","g3t3","g3t4","g3t5","g3t6","g3t7","g3t8","g4t1","g4t2","g4t4","g4t5"]},
+    anemia:{label:"Kit Anemias & Hemólise",ids:["g1t1","g1t2","g1t4","g1t5","g1t7","g1t14","g1t16","g1t17","g1t18","g1t21","g1t22","g1t23","g1t24","g1t25","g1t26"]},
+    preop:{label:"Kit Pré-Operatório & Coagulação",ids:["g1t1","g1t2","g1t8","g1t14","g8t1","g8t2","g8t3","g8t5","g2t1","g2t2","g3t1","g3t2","g6t1"]}
+  };
   const e=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const number=s=>{if(s===undefined||s===null||String(s).trim()==="")return null;const v=Number(String(s).replace(",",".").trim());return Number.isFinite(v)?v:null};
   const fmt=n=>Number.isFinite(n)?Number(n.toFixed(2)).toLocaleString("pt-BR"):"—";
@@ -39,8 +47,31 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
   function reading(name){const t=C.flatMap(g=>g.tests).find(t=>t.name===name);if(!t)return null;return number(itemState(t.id).value)}
   function has(name){return reading(name)!==null}
   function renderLayout(){
-  root.innerHTML=`<section class="ex-title-card" aria-label="Cabeçalho de Exames"><div class="ex-title-copy"><h2>Exames</h2><p>Valores de referência laboratoriais</p></div><a class="ex-back-link" href="/trabalho/" aria-label="Voltar à Central do Trabalho"><span aria-hidden="true">←</span> Voltar</a></section>
-    <div class="ex-toolbar"><button id="ex-patient-toggle" class="ex-btn primary ex-patient-button" type="button" aria-expanded="false" aria-controls="ex-patient-tabs">+ Adicionar resultados do paciente</button></div>
+  root.innerHTML=`<section class="luria-page-spotlight ex-title-card" aria-label="Cabeçalho de Exames"><div class="luria-page-spotlight-copy ex-title-copy"><h2>Exames</h2><small class="luria-page-spotlight-helper">Valores de referência laboratoriais, kits rápidos de plantão e interpretação integrada</small></div><a class="ex-back-link" href="/trabalho/" aria-label="Voltar à Central do Trabalho"><span aria-hidden="true">←</span> Voltar</a></section>
+    <div class="ex-toolbar">
+      <div class="ex-kits-bar" role="toolbar" aria-label="Kits rápidos de plantão">
+        <span class="ex-kits-label">Rotinas Rápidas:</span>
+        <button type="button" class="ex-kit-chip is-active" data-kit="">Todos os 20 Painéis</button>
+        <button type="button" class="ex-kit-chip" data-kit="sepse">Kit Sepse &amp; UTI</button>
+        <button type="button" class="ex-kit-chip" data-kit="iam">Kit Dor Torácica &amp; IC</button>
+        <button type="button" class="ex-kit-chip" data-kit="renal">Kit Renal &amp; Gasometria</button>
+        <button type="button" class="ex-kit-chip" data-kit="hepatico">Kit Hepático &amp; Pâncreas</button>
+        <button type="button" class="ex-kit-chip" data-kit="anemia">Kit Anemias &amp; Hemólise</button>
+        <button type="button" class="ex-kit-chip" data-kit="preop">Kit Pré-Op &amp; Coagulação</button>
+      </div>
+      <button id="ex-patient-toggle" class="ex-btn primary ex-patient-button" type="button" aria-expanded="false" aria-controls="ex-patient-tabs">+ Adicionar resultados do paciente</button>
+    </div>
+    <details class="ex-panic-banner">
+      <summary><span>🚨 Tabela Rápida de Valores Críticos (Panic Values — Ação Imediata no Plantão)</span><small>Clique para abrir/fechar</small></summary>
+      <div class="ex-panic-grid">
+        <div><strong>Potássio (K⁺)</strong><span>&lt; 2,5 ou &ge; 6,5 mmol/L &rarr; ECG imediato + Gluconato de Cálcio (se alto) ou reposição IV (se baixo)</span></div>
+        <div><strong>Sódio (Na⁺)</strong><span>&lt; 120 ou &gt; 160 mmol/L &rarr; Risco de edema cerebral / convulsão ou mielinólise (máx 8–10 mEq/24h)</span></div>
+        <div><strong>Hemoglobina / Plaquetas</strong><span>Hb &lt; 7,0 g/dL (gatilho transfusional) · Plaquetas &lt; 20.000/µL (risco de sangramento espontâneo)</span></div>
+        <div><strong>Gasometria Arterial</strong><span>pH &lt; 7,15 ou &gt; 7,60 · PaO₂ &lt; 55 mmHg · Lactato &ge; 4,0 mmol/L (hipoperfusão tecidual grave)</span></div>
+        <div><strong>Glicemia / Cálcio Iônico</strong><span>Glicose &lt; 54 mg/dL (hipoglicemia grave) ou &gt; 500 mg/dL · Ca²⁺ iônico &lt; 0,80 ou &gt; 1,60 mmol/L</span></div>
+        <div><strong>Coagulação / Neutrófilos</strong><span>INR &gt; 5,0 · Fibrinogênio &lt; 100 mg/dL (CIVD) · Neutrófilos &lt; 500/µL (Neutropenia grave)</span></div>
+      </div>
+    </details>
     <div class="ex-tabs" id="ex-patient-tabs" role="tablist" aria-label="Ferramentas do paciente" hidden><button type="button" data-view="catalog" class="active">Resultados</button><button type="button" data-view="analysis">Interpretação integrada</button><button type="button" data-view="history">Coletas da sessão</button><button type="button" data-view="sources">Critérios e fontes</button></div>
     <div class="ex-notice" id="ex-patient-notice" hidden>Apoio ao raciocínio, não diagnóstico automático. Os limites do laboratório devem prevalecer. Confirme método, unidade e contexto clínico. Não informe identificadores do paciente.</div>
     <div class="ex-controls"><label>Buscar exame ou painel<input id="ex-search" type="search" placeholder="Ex.: ferritina, gasometria, urina…" autocomplete="off"></label><label>Perfil de referência<select id="ex-pop"><option value="adult-f">Adulto • feminino</option><option value="adult-m">Adulto • masculino</option><option value="ped">Pediátrico • conferir laudo</option><option value="gest-1">Gestante • 1º trimestre</option><option value="gest-2">Gestante • 2º trimestre</option><option value="gest-3">Gestante • 3º trimestre</option></select></label><label id="ex-age-wrap" hidden>Idade (opcional)<input id="ex-age" type="number" min="0" max="120" placeholder="Anos" inputmode="numeric"></label></div>
@@ -68,16 +99,25 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
   }));
   root.querySelector("#ex-search").addEventListener("input",evt=>{
     state.search=evt.target.value.trim().toLowerCase();
+    if(state.search)state.kit="";
+    root.querySelectorAll("[data-kit]").forEach(k=>k.classList.toggle("is-active",k.dataset.kit===state.kit));
     state.view="catalog";renderNav();renderPanel();
   });
+  root.querySelectorAll("[data-kit]").forEach(btn=>btn.addEventListener("click",()=>{
+    state.kit=btn.dataset.kit||"";
+    state.search="";
+    root.querySelector("#ex-search").value="";
+    root.querySelectorAll("[data-kit]").forEach(k=>k.classList.toggle("is-active",k===btn));
+    state.view="catalog";renderNav();renderPanel();
+  }));
   root.querySelector("#ex-pop").addEventListener("change",evt=>{state.population=evt.target.value;renderPanel()});
   root.querySelector("#ex-age").addEventListener("input",evt=>{state.age=evt.target.value;renderPanel()});
   renderNav();syncMode();
 }
   function renderNav(){
     const nav=root.querySelector("#ex-nav");
-    nav.innerHTML=C.map(g=>`<button type="button" data-group="${g.id}" class="${state.group===g.id?"is-active":""}">${g.id}. ${e(g.name)}<span>${g.tests.length}</span></button>`).join("");
-    nav.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{state.group=Number(b.dataset.group);state.search="";root.querySelector("#ex-search").value="";state.view="catalog";renderNav();renderPanel()}));
+    nav.innerHTML=C.map(g=>`<button type="button" data-group="${g.id}" class="${!state.kit&&state.group===g.id?"is-active":""}">${g.id}. ${e(g.name)}<span>${g.tests.length}</span></button>`).join("");
+    nav.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{state.group=Number(b.dataset.group);state.kit="";state.search="";root.querySelector("#ex-search").value="";root.querySelectorAll("[data-kit]").forEach(k=>k.classList.toggle("is-active",k.dataset.kit===""));state.view="catalog";renderNav();renderPanel()}));
   }
   function renderPanel(){
     if(state.mode==="reference")state.view="catalog";
@@ -89,12 +129,13 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     return renderSources(panel);
   }
   function matching(){
-    if(!state.search)return C.find(g=>g.id===state.group).tests;
-    return C.flatMap(g=>g.name.toLowerCase().includes(state.search)?g.tests:g.tests.filter(t=>t.name.toLowerCase().includes(state.search)));
+    if(state.search)return C.flatMap(g=>g.name.toLowerCase().includes(state.search)?g.tests:g.tests.filter(t=>t.name.toLowerCase().includes(state.search)));
+    if(state.kit&&KITS[state.kit])return KITS[state.kit].ids.map(id=>byId.get(id)).filter(Boolean);
+    return C.find(g=>g.id===state.group).tests;
   }
   function renderCatalog(panel){
-  const items=matching(),selected=C.find(g=>g.id===state.group),patient=state.mode==="patient";
-  panel.innerHTML=`<h3 class="ex-section-title">${state.search?"Resultados da pesquisa":e(selected.name)}</h3>
+  const items=matching(),selected=C.find(g=>g.id===state.group),patient=state.mode==="patient",kitObj=state.kit?KITS[state.kit]:null;
+  panel.innerHTML=`<h3 class="ex-section-title">${state.search?"Resultados da pesquisa":kitObj?e(kitObj.label):e(selected.name)}</h3>
     <p class="ex-subtitle">${items.length} exames · ${patient?"Informe somente os resultados disponíveis e os limites do laudo, quando houver.":"Intervalos orientativos quando disponíveis; para os demais, confira o laudo e o método do laboratório."}</p>
     <div class="ex-tests-head ${patient?"":"ex-reference-only"}">${patient?"<span>Exame</span><span>Referência</span><span>Resultado</span><span>Mín. do laudo</span><span>Máx. do laudo</span>":"<span>Exame</span><span>Valor de referência</span>"}</div>
     <div id="ex-rows"></div>
@@ -159,6 +200,30 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     const trops=data.filter(x=>/Troponina/.test(x.t.name));if(trops.length)add("Troponinas","Interpretar com o percentil 99 do ensaio, curva seriada, sintomas e ECG. Elevação isolada sugere lesão miocárdica, não define infarto.");
     if(data.some(x=>x.t.name==="Dímero D"))add("Dímero D","Só é interpretável junto à probabilidade clínica, idade, unidade FEU/DDU e limiar validado do teste. Não confirma trombose isoladamente.");
     if(data.some(x=>/PSA|CA-125|CEA|CA 19-9|Alfafetoproteína/.test(x.t.name)))add("Marcadores tumorais","Não utilizar um marcador isolado como diagnóstico de câncer ou rastreamento indiscriminado.");
+    const lcsLeuco=reading("Líquor leucócitos"),lcsProt=reading("Líquor proteínas"),lcsGlic=reading("Líquor glicose"),lcsLac=reading("Líquor lactato");
+    if([lcsLeuco,lcsProt,lcsGlic,lcsLac].some(x=>x!==null)){
+      const bact=(lcsLeuco!==null&&lcsLeuco>=500)||(lcsGlic!==null&&lcsGlic<40)||(lcsLac!==null&&lcsLac>=3.5);
+      add("Análise do Líquor (LCR)",bact?"Padrão com pleocitose acentuada, hipoglicorraquia (<40 mg/dL) e/ou lactato liquórico elevado (≥3,5 mmol/L): forte alerta para Meningite Bacteriana Aguda (correlacionar com diferencial de PMN, Gram e culturas).":"Correlacionar celularidade diferencial (PMN vs. linfomononuclear), proteínas e relação glicorraquia/glicemia simultânea (<0,4 sugere consumo bacteriano/fúngico/BK).",bact?"warn":"info");
+    }
+    const ascAlb=reading("Ascítico albumina"),ascPmn=reading("Ascítico neutrófilos"),ascProt=reading("Ascítico proteínas");
+    if([ascAlb,ascPmn,ascProt].some(x=>x!==null)){
+      const saag=(albu!==null&&ascAlb!==null)?(albu-ascAlb):null;
+      const pbe=ascPmn!==null&&ascPmn>=250;
+      add("Líquido Ascítico (GASA e PBE)",`${saag!==null?`Gradiente Soro-Ascite de Albumina (GASA) = ${fmt(saag)} g/dL (${saag>=1.1?"≥1,1 g/dL: sugere Hipertensão Portal (cirrose, IC, Budd-Chiari)":"<1,1 g/dL: sugere causa peritoneal/exsudativa (carcinomatose, TB, pancreatite, serosite)"}). `:""}${pbe?`Neutrófilos (PMN) = ${fmt(ascPmn)}/mm³ (≥250/mm³): critério diagnóstico de Peritonite Bacteriana Espontânea (PBE) — avaliar Ceftriaxona + Albumina IV conforme protocolo!`:"Se PMN <250/mm³, afastar PBE conforme culturas e clínica."}`,pbe?"warn":"info");
+    }
+    const plProt=reading("Pleural proteínas"),plLdh=reading("Pleural DHL"),plPh=reading("Pleural pH"),plAda=reading("Pleural ADA"),sProt=reading("Proteínas totais"),sLdh=reading("DHL / LDH");
+    if([plProt,plLdh,plPh,plAda].some(x=>x!==null)){
+      const rProt=(plProt!==null&&sProt!==null&&sProt>0)?(plProt/sProt):null;
+      const rLdh=(plLdh!==null&&sLdh!==null&&sLdh>0)?(plLdh/sLdh):null;
+      const comp=(plPh!==null&&plPh<7.20)||(plLdh!==null&&plLdh>1000);
+      add("Líquido Pleural (Critérios de Light e Derrame Complicado)",`${rProt!==null?`Relação Proteína Pleural/Sérica = ${fmt(rProt)} (${rProt>0.5?">0,5: Exsudato":"≤0,5"}). `:""}${rLdh!==null?`Relação DHL Pleural/Sérico = ${fmt(rLdh)} (${rLdh>0.6?">0,6: Exsudato":"≤0,6"}). `:""}${comp?"ALERTA: pH pleural <7,20 ou DHL >1.000 UI/L em derrame parapneumônico indica Derrame Pleural Complicado / Empiema (indicação de drenagem torácica!). ":""}${plAda!==null&&plAda>40?"ADA pleural >40 U/L em exsudato linfocítico é altamente sugestivo de Tuberculose Pleural.":""}`,comp?"warn":"info");
+    }
+    const ck=reading("CK total");
+    if(ck!==null&&ck>=1000)add("Elevação importante de CK total (Rabdomiólise)",`CK total = ${fmt(ck)} U/L. Valores >1.000 U/L (>5x LSN) sugerem rabdomiólise (risco elevado de LRA pigmentar por mioglobinúria quando CK >5.000 U/L; monitorar diurese, potássio, cálcio, fósforo e hidratação vigorosa).`,"warn");
+    const tsh=reading("TSH"),t4l=reading("T4 livre");
+    if(tsh!==null||t4l!==null)add("Eixo Tireoidiano (TSH / T4 Livre)",`TSH ${tsh!==null?fmt(tsh)+" mUI/L":"não informado"}${t4l!==null?` · T4 livre ${fmt(t4l)} ng/dL`:""}. TSH elevado com T4L baixo sugere hipotireoidismo primário; TSH suprimido (<0,1) com T4L elevado sugere tireotoxicose/hipertireoidismo primário. Interpretar com faixa gestacional/etária do laboratório.`);
+    const neut=reading("Neutrófilos absolutos");
+    if(neut!==null&&neut<1500)add(neut<500?"Neutropenia Grave (<500/µL)":"Neutropenia",`Neutrófilos absolutos = ${fmt(neut)}/µL. Se associada a febre (≥38,3°C única ou ≥38,0°C por 1h), configura emergência médica (Neutropenia Febril — iniciar Cefepima ou Piperacilina-Tazobactam na 1ª hora após hemoculturas!).`,neut<500?"warn":"info");
     if(!findings.length&&data.length)add("Leitura inicial","Os resultados foram organizados abaixo. A ausência de um padrão nas regras disponíveis não exclui doença. Analise o conjunto, a variação temporal e as faixas do laboratório.");
     const alerts=[];
     if(potassium!==null&&(potassium<2.5||potassium>=6.5))alerts.push("Potássio em faixa potencialmente crítica; avaliação urgente, ECG e repetição conforme contexto.");
@@ -167,6 +232,9 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     const plaq=reading("Plaquetas");if(plaq!==null&&plaq<20000)alerts.push("Plaquetas muito reduzidas; avaliar risco hemorrágico e confirmação.");
     if([glucose,reading("Glicemia casual")].some(v=>v!==null&&v<54))alerts.push("Glicemia em faixa de hipoglicemia clinicamente importante; verificar sintomas e agir segundo protocolo.");
     if(ph!==null&&(ph<7.1||ph>7.6))alerts.push("pH em faixa potencialmente crítica; avaliar paciente imediatamente.");
+    const lac=reading("Lactato");if(lac!==null&&lac>=4)alerts.push("Lactato ≥4,0 mmol/L: hipoperfusão tecidual grave / possível choque oculto; reavaliar hemodinâmica imediatamente.");
+    const fib=reading("Fibrinogênio");if(fib!==null&&fib<100)alerts.push("Fibrinogênio <100 mg/dL: alto risco hemorrágico / possível CIVD ou coagulopatia de consumo; avaliar reposição de crioprecipitado.");
+    if(neut!==null&&neut<500)alerts.push("Neutropenia grave (<500/µL); se houver febre, tratar imediatamente como Neutropenia Febril.");
     return {findings,alerts};
   }
   function renderAnalysis(panel){

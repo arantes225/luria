@@ -232,17 +232,17 @@
     els.count.textContent = `${items.length} protocolo${items.length === 1 ? "" : "s"}`;
     els.empty.hidden = items.length > 0;
     els.list.innerHTML = items.map((r) => `
-      <button type="button" class="protocol-row ${selected === r.id ? "active" : ""}" data-id="${r.id}">
+      <button type="button" class="protocol-row ${String(selected) === String(r.id) ? "active" : ""}" data-id="${r.id}">
         <span><strong>${esc(r.title)}</strong><small>${esc(r.category)} · ${esc(r.setting)}</small></span>
         <em class="${r.status === "verified" ? "ok" : "warn"}">${r.status === "verified" ? "Revisado" : "Em revisão"}</em>
       </button>`).join("");
     els.list.querySelectorAll("[data-id]").forEach((btn) => btn.addEventListener("click", () => {
-      selected = Number(btn.dataset.id);
+      const rawId = btn.dataset.id; const found = rows.find((x) => String(x.id) === String(rawId)); selected = found ? found.id : rawId;
       renderList();
-      renderDetail(rows.find((x) => x.id === selected));
+      renderDetail(rows.find((x) => String(x.id) === String(selected)));
       if (matchMedia("(max-width:900px)").matches) els.detail.scrollIntoView({behavior:"smooth",block:"start"});
     }));
-    if ((!selected || !items.some((x) => x.id === selected)) && items[0]) {
+    if ((!selected || !items.some((x) => String(x.id) === String(selected))) && items[0]) {
       selected = items[0].id;
       renderList();
       renderDetail(items[0]);
@@ -432,14 +432,30 @@ els.detail.querySelectorAll("[data-drug]").forEach((b) => b.addEventListener("cl
   }
 
   async function load() {
-    if (!sb) { els.list.innerHTML = '<div class="protocol-placeholder">Não foi possível conectar.</div>'; return; }
-    const [{data, error}, {data: rBank}] = await Promise.all([
-      sb.from("clinical_protocols").select("*").order("title"),
-      sb.from("recipe_bank").select("*")
-    ]);
-    recipesBank = rBank || [];
-    if (error) { console.error(error); els.list.innerHTML = '<div class="protocol-placeholder">Não foi possível carregar os protocolos.</div>'; return; }
-    rows = data || [];
+    const localSeeds = Array.isArray(window.LURIA_PROTOCOL_SEEDS) ? window.LURIA_PROTOCOL_SEEDS : [];
+    const localRecipes = Array.isArray(window.LURIA_RECIPE_SEEDS) ? window.LURIA_RECIPE_SEEDS : [];
+    if (!sb && !localSeeds.length) { els.list.innerHTML = '<div class="protocol-placeholder">Não foi possível conectar.</div>'; return; }
+    let data = [], error = null, rBank = [];
+    if (sb) {
+      try {
+        const [pRes, rRes] = await Promise.all([
+          sb.from("clinical_protocols").select("*").order("title"),
+          sb.from("recipe_bank").select("*")
+        ]);
+        data = pRes?.data || [];
+        error = pRes?.error || null;
+        rBank = rRes?.data || [];
+      } catch (err) {
+        error = err;
+      }
+    }
+    const existingRecSlugs = new Set((rBank || []).map((r) => r.slug).filter(Boolean));
+    recipesBank = [...(rBank || []), ...localRecipes.filter((s) => !existingRecSlugs.has(s.slug))];
+    if (error && !localSeeds.length) { console.error(error); els.list.innerHTML = '<div class="protocol-placeholder">Não foi possível carregar os protocolos.</div>'; return; }
+    const dbRows = data || [];
+    const existingSlugs = new Set(dbRows.map((r) => r.slug).filter(Boolean));
+    rows = [...dbRows, ...localSeeds.filter((s) => !existingSlugs.has(s.slug))];
+    if (localSeeds.length) rows.sort((a, b) => String(a.title || "").localeCompare(String(b.title || ""), "pt-BR"));
     const cats = [...new Set(rows.map((r) => r.category).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
     els.category.innerHTML = '<option value="">Todas as áreas</option>' + cats.map((c)=>`<option value="${esc(c)}">${esc(c)}</option>`).join("");
     const params = new URLSearchParams(location.search);
@@ -448,7 +464,7 @@ els.detail.querySelectorAll("[data-drug]").forEach((b) => b.addEventListener("cl
     if (q) els.search.value = q;
     selected = rows.find((r) => r.slug === wanted)?.id || rows.find((r)=>norm(r.title).includes(norm(q||"")))?.id || rows[0]?.id || null;
     renderList();
-    if (selected) renderDetail(rows.find((r)=>r.id===selected));
+    if (selected) renderDetail(rows.find((r)=>String(r.id)===String(selected)));
   }
 
   [els.search,els.category].forEach((el)=>{el?.addEventListener("input",renderList);el?.addEventListener("change",renderList);});

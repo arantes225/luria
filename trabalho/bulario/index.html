@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261025-work-spotlight">
   <style>
-    .bulario{display:grid;gap:14px}.bulario-head{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .bulario{display:grid;gap:14px}.bulario-head{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.bulario-chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:2px}.bulario-chip{padding:7px 12px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:12px;font-weight:750;cursor:pointer;transition:all .15s ease}.bulario-chip:hover,.bulario-chip.is-active{background:var(--accent,#184888);border-color:var(--accent,#184888);color:#fff}
     .bulario-search{flex:1;min-width:220px;padding:12px 14px;border:1px solid var(--border);border-radius:14px;background:var(--surface);color:var(--text)}
     .bulario-count{font-size:13px;color:var(--muted)}.bulario-layout{display:grid;grid-template-columns:1fr;gap:14px;align-items:start}
     .drug-list{display:grid;gap:7px;max-height:250px;overflow:auto;padding:2px 2px 4px}.drug-row{width:100%;text-align:left;padding:12px 14px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);cursor:pointer}
@@ -339,6 +339,16 @@
             <input id="drug-search" class="bulario-search" type="search" placeholder="Buscar medicamento, classe ou princípio ativo" autocomplete="off">
             <span id="drug-count" class="bulario-count"></span>
           </div>
+          <div id="drug-class-chips" class="bulario-chips" role="toolbar" aria-label="Filtrar por classe terapêutica">
+            <button type="button" class="bulario-chip is-active" data-class-chip="">Todos</button>
+            <button type="button" class="bulario-chip" data-class-chip="vasoativos">Vasoativos & Choque</button>
+            <button type="button" class="bulario-chip" data-class-chip="sri">SRI, Sedação & Analgesia</button>
+            <button type="button" class="bulario-chip" data-class-chip="cardiologia">Cardiologia & Arritmias</button>
+            <button type="button" class="bulario-chip" data-class-chip="antitromboticos">Antitrombóticos & Trombólise</button>
+            <button type="button" class="bulario-chip" data-class-chip="antimicrobianos">Antimicrobianos</button>
+            <button type="button" class="bulario-chip" data-class-chip="eletrolitos">Eletrólitos & Obstetrícia</button>
+            <button type="button" class="bulario-chip" data-class-chip="antidotos">Antídotos & Toxicologia</button>
+          </div>
           <div class="bulario-layout"><div id="drug-list" class="drug-list"><div class="empty">Carregando medicamentos…</div></div><article id="drug-detail" class="drug-detail"><div class="empty">Selecione um medicamento.</div></article></div>
         </section>
       </div>
@@ -349,6 +359,7 @@
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 <script src="/assets/js/clinical-bridge.js?v=2-prescription-draft"></script>
+<script src="/assets/js/bulario-seeds.js?v=20261026"></script>
 <script src="/assets/js/bulario.js?v=17-prescription-draft"></script>
 </body>
 </html>
