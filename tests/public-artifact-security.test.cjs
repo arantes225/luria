@@ -6,6 +6,8 @@ const {isPublicFile}=require('../scripts/public-files.cjs');
 test('internal question factory snapshots never ship to the public web',()=>{
   for(const path of [
     'qf-r8K2mV7qL4x9P1cF/L001-B01.json',
+    'content/weekly/2026-W40/questions-g1-v1.json',
+    'content/weekly/2026-W40/flashcards-g1-v1.json',
     'qf-other-run/tmp/questions.json',
     'marketing/metricool/config.json',
     'marketing/public/commercial/layout.json',
@@ -29,7 +31,6 @@ test('website assets required by current public static frontend are preserved',(
     'apostilas/asma/index.html',
     'apostilas/asma/content.json',
     'content/weekly/manifest.json',
-    'content/weekly/2026-W40/questions-g1-v1.json',
     'manifest.webmanifest',
     'CNAME'
   ])assert.equal(isPublicFile(path),true,path);
@@ -41,4 +42,11 @@ test('private question factory files must not exist in public Git tree',()=>{
   const tracked=execFileSync('git',['ls-files','--cached','-z'],{cwd:require('node:path').resolve(__dirname,'..'),maxBuffer:32*1024*1024}).toString('utf8').split('\0').filter(Boolean);
   const exposed=tracked.filter(p=>/^qf-[^/]+\//.test(p));
   assert.deepEqual(exposed,[], 'Internal question factory files must be hosted privately, never checked into the public repository');
+});
+
+test('complete weekly answer packs must never return to public Git',()=>{
+  const {execFileSync}=require('node:child_process');
+  const tracked=execFileSync('git',['ls-files','--cached','-z'],{cwd:require('node:path').resolve(__dirname,'..'),maxBuffer:32*1024*1024}).toString('utf8').split('\0').filter(Boolean);
+  const exposed=tracked.filter(p=>/^content\/weekly\/\d{4}-W\d{2}\//.test(p));
+  assert.deepEqual(exposed,[], 'Weekly question and answer packs require a private, authenticated API');
 });

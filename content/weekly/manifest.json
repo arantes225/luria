@@ -1,61 +1,9 @@
 {
-  "version": 1,
-  "enabled": true,
-  "week": "2026-W40",
-  "group_count": 3,
-  "strategy": "stable-user-hash",
-  "published_at": "2026-09-28",
-  "groups": [
-    {
-      "id": 0,
-      "flashcards": [
-        {
-          "url": "/content/weekly/2026-W40/flashcards-g1-v1.json",
-          "count": 50,
-          "version": 1
-        }
-      ],
-      "questions": [
-        {
-          "url": "/content/weekly/2026-W40/questions-g1-v1.json",
-          "count": 50,
-          "version": 1
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "flashcards": [
-        {
-          "url": "/content/weekly/2026-W40/flashcards-g2-v1.json",
-          "count": 50,
-          "version": 1
-        }
-      ],
-      "questions": [
-        {
-          "url": "/content/weekly/2026-W40/questions-g2-v1.json",
-          "count": 50,
-          "version": 1
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "flashcards": [
-        {
-          "url": "/content/weekly/2026-W40/flashcards-g3-v1.json",
-          "count": 50,
-          "version": 1
-        }
-      ],
-      "questions": [
-        {
-          "url": "/content/weekly/2026-W40/questions-g3-v1.json",
-          "count": 50,
-          "version": 1
-        }
-      ]
-    }
-  ]
+  "version": 2,
+  "enabled": false,
+  "week": null,
+  "group_count": 0,
+  "strategy": "paused-until-authenticated-delivery",
+  "published_at": "2026-10-26",
+  "groups": []
 }
