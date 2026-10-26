@@ -96,9 +96,16 @@ Deno.serve(async (req: Request) => {
 
   try {
     if (op === "catalog") {
+      const requestedPrefix = String(body?.prefix ?? "").trim();
+      const listPrefix = requestedPrefix
+        ? cleanKey(requestedPrefix)
+        : config.prefix;
+      if (!listPrefix || !listPrefix.startsWith(config.prefix)) {
+        return reply({ ok: false, error: "INVALID_PREFIX" }, 400);
+      }
       const result = await s3.send(new ListObjectsV2Command({
         Bucket: bucket,
-        Prefix: config.prefix,
+        Prefix: listPrefix,
         Delimiter: "/",
         MaxKeys: 100,
       }));
