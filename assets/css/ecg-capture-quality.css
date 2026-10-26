@@ -19,3 +19,5 @@
 .ecg-consent input{margin-top:3px;flex-shrink:0}
 .ecg-results-warning{border-left:3px solid #b45309;padding:10px;background:var(--surface-2);margin:10px 0;font-size:12px;line-height:1.5}
 @media(max-width:600px){.ecg-lead-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+
+#ecg-result-card[hidden]{display:none!important}
