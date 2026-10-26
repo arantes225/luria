@@ -52,6 +52,13 @@ const flashParams =
     window.location.search
   );
 
+const flashStudyIds = [...new Set(String(flashParams.get("study_ids") || "")
+  .split(",")
+  .map(value => value.trim())
+  .filter(value => /^[a-f0-9]{8}(?:-[a-f0-9]{4}){3}-[a-f0-9]{12}$/i.test(value)))]
+  .slice(0, 80);
+const flashStudyTopic = String(flashParams.get("study_topic") || "").trim().slice(0, 180);
+
 
 const flashAgendaDate =
   flashParams.get(
@@ -1491,6 +1498,30 @@ async function renderCurrentReview() {
 async function loadReviewQueue() {
   reviewMode = "scheduled";
   reviewModeLabel = "";
+
+  if (flashStudyIds.length) {
+    reviewMode = "extra";
+    reviewModeLabel = flashStudyTopic || "Estudo focado";
+    const { data, error } = await flashSb
+      .from("flashcards")
+      .select(`
+        id, user_id, area, materia, theme, front_text, back_text,
+        front_image_path, back_image_path, due_date, review_count, active, created_at
+      `)
+      .in("id", flashStudyIds)
+      .eq("active", true);
+    if (error) {
+      console.error(error);
+      setFlashStatus("review-status", `Não foi possível carregar os cards: ${error.message}`, "error");
+      return;
+    }
+    reviewQueue = [...(data || [])].sort(() => Math.random() - 0.5);
+    reviewIndex = 0;
+    const sessionCopy = document.getElementById("review-session-copy");
+    if (sessionCopy) sessionCopy.textContent = `Sessão focada · ${reviewModeLabel}`;
+    updateReviewLauncher();
+    return;
+  }
 
   let query =
     flashSb

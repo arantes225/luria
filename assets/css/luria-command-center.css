@@ -179,3 +179,14 @@ body[data-page="estatisticas"] #luria-stats-timeline .luria-timeline-col b{
     margin:0!important;
   }
 }
+.luria-study-choice-copy{margin:0;color:var(--muted);font-size:13px}
+.luria-study-paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
+.luria-study-paths button{display:flex;min-height:132px;flex-direction:column;align-items:flex-start;gap:8px;padding:18px;border:1px solid color-mix(in srgb,var(--primary,#6d5dfc) 28%,transparent);border-radius:18px;background:color-mix(in srgb,var(--surface,#fff) 92%,var(--primary,#6d5dfc));color:var(--text);text-align:left;cursor:pointer;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.luria-study-paths button:hover,.luria-study-paths button:focus-visible{transform:translateY(-2px);border-color:var(--primary,#6d5dfc);box-shadow:0 12px 30px rgba(20,24,55,.14);outline:none}
+.luria-study-paths strong{font-size:16px}
+.luria-study-paths span{color:var(--muted);font-size:12px;line-height:1.55}
+.luria-topic-study-field{display:grid;gap:8px;margin-top:4px;color:var(--text);font-weight:700}
+.luria-topic-study-field input{width:100%;box-sizing:border-box;padding:12px 14px;border:1px solid color-mix(in srgb,var(--muted) 38%,transparent);border-radius:12px;background:var(--surface,#fff);color:var(--text);font:inherit}
+.luria-topic-study-field input:focus{border-color:var(--primary,#6d5dfc);outline:2px solid color-mix(in srgb,var(--primary,#6d5dfc) 22%,transparent)}
+.luria-topic-study-status{min-height:20px;margin:10px 0 0;color:var(--muted);font-size:12px;line-height:1.45}
+@media(max-width:640px){.luria-study-paths{grid-template-columns:1fr}.luria-study-paths button{min-height:108px}}

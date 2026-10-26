@@ -261,6 +261,71 @@ function display(message, title = "Professor Alex", isError = false) {
   output?.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
+function isStudyPlanningRequest(value) {
+  const clean = String(value || "").toLocaleLowerCase("pt-BR").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ");
+  return /\b(cronograma|aulas? (?:desta|da|por) semana|rodando em|lista de quest|lista de flashcard|criar quest|criar flashcard|selecionar apostila|estudar agora|mudar as aulas|ajustar.*cronograma)\b/.test(clean);
+}
+
+function renderStudyAction(plan) {
+  if (!feed || !plan || !["schedule_focus", "topic_bundle"].includes(plan.type)) return;
+  const card = document.createElement("section");
+  card.className = "alex-message alex-message--assistant alex-study-action";
+  const title = document.createElement("strong");
+  title.textContent = plan.type === "schedule_focus" ? "Alteração de cronograma" : "Pacote de estudo";
+  const summary = document.createElement("p");
+  const count = Number(plan.preview?.planned_count || 0);
+  summary.textContent = plan.type === "schedule_focus"
+    ? `${plan.topic}: ${count} aula${count === 1 ? "" : "s"} entre ${plan.start_date} e ${plan.end_date}, ${plan.lessons_per_day || 1} por dia de estudo.`
+    : `${plan.topic}: ${plan.question_count || 0} questões e ${plan.flashcard_count || 0} flashcards, além de uma apostila compatível quando disponível.`;
+  const actions = document.createElement("div");
+  actions.className = "alex-study-action-buttons";
+  const apply = document.createElement("button");
+  apply.type = "button";
+  apply.textContent = "Confirmar e aplicar";
+  const cancel = document.createElement("button");
+  cancel.type = "button";
+  cancel.textContent = "Cancelar";
+  actions.append(apply, cancel);
+  card.append(title, summary, actions);
+  feed.appendChild(card);
+  feed.scrollTop = feed.scrollHeight;
+  cancel.onclick = () => card.remove();
+  apply.onclick = async () => {
+    apply.disabled = true;
+    cancel.disabled = true;
+    apply.textContent = "Aplicando…";
+    const client = window.supabaseClient;
+    try {
+      const { data, error } = await client.functions.invoke("professor-alex-gemini", { body: { action: "apply_study_action", action_plan: plan } });
+      if (error || !data?.action_result) throw error || Error("empty_action");
+      display(data.answer || "Alteração aplicada.", "Professor Alex");
+      if (plan.type === "topic_bundle") {
+        const result = data.action_result;
+        const links = document.createElement("div");
+        links.className = "alex-study-action-links";
+        if (result.question_set_id) {
+          const link = document.createElement("a"); link.href = `/resolver-questoes/?set_id=${encodeURIComponent(result.question_set_id)}`; link.textContent = "Abrir questões"; links.appendChild(link);
+        }
+        const ids = Array.isArray(result.flashcards) ? result.flashcards.map(item => item?.id).filter(Boolean) : [];
+        if (ids.length) {
+          const link = document.createElement("a"); link.href = `/flashcards/?study_ids=${encodeURIComponent(ids.join(","))}&study_topic=${encodeURIComponent(plan.topic)}`; link.textContent = "Abrir flashcards"; links.appendChild(link);
+        }
+        if (result.apostila?.url) {
+          const link = document.createElement("a"); link.href = result.apostila.url; link.textContent = "Abrir apostila"; links.appendChild(link);
+        }
+        card.replaceWith(links);
+      } else {
+        const link = document.createElement("a"); link.href = "/cronograma/"; link.textContent = "Ver cronograma atualizado"; card.replaceWith(link);
+      }
+    } catch {
+      apply.disabled = false;
+      cancel.disabled = false;
+      apply.textContent = "Tentar novamente";
+      display("Não consegui aplicar essa proposta. Nada foi alterado.", "Professor Alex", true);
+    }
+  };
+}
+
 async function prepareFile(file) {
   if (!file) return null;
   const name = String(file.name || "material").slice(0, 120);
@@ -332,6 +397,7 @@ if (form) {
     if (isLiveActive && Number.isFinite(liveTranscriptConfidence)) payload.voice_confidence = liveTranscriptConfidence;
     const hasMaterial = Boolean(fileInput?.files?.[0]);
     const isSocial = isSocialOrGreeting(prompt || topic);
+    const isPlanning = isStudyPlanningRequest(prompt || topic);
     if (isSocial && !hasMaterial) {
       const answer = fastSocialReply(prompt || topic, isEstourado);
       if (prompt) appendUserMessage(prompt);
@@ -352,8 +418,8 @@ if (form) {
       }
       return;
     }
-    const siteContext = isSocial ? null : await findAlexSiteContext([topic, prompt].filter(Boolean).join(" "));
-    if (!siteContext && !hasMaterial && !isSocial) {
+    const siteContext = isSocial || isPlanning ? null : await findAlexSiteContext([topic, prompt].filter(Boolean).join(" "));
+    if (!siteContext && !hasMaterial && !isSocial && !isPlanning) {
       const message = "Não encontrei esse termo no conteúdo da LURIA. Reformule a pergunta ou indique a matéria. Não vou inventar uma aula fora do acervo.";
       if (!isLiveActive) display(message, "Busca na LURIA", true);
       else speakText(message);
@@ -416,6 +482,7 @@ if (form) {
       if (prompt && promptInput?.value.trim() === prompt) promptInput.value = "";
       // Modo ao vivo: texto acessível no chat e áudio automático. Chat comum: só texto.
       display(data.answer, payload.depth === "aula" ? "Aula com o Professor Alex" : "Professor Alex");
+      if (data?.action_plan) renderStudyAction(data.action_plan);
       if (!isLiveActive) {
         if (mascot?.playAnimation) {
           if (isEstourado) {
