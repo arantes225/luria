@@ -26,6 +26,11 @@ Deno.serve(async (req: Request) => {
   const { data } = await client.auth.getUser();
   if (!data.user) return reply({ ok: false, error: "AUTH_REQUIRED" }, 401);
 
+  const { data: isAdmin, error: adminError } = await client.rpc("is_admin");
+  if (adminError || isAdmin !== true) {
+    return reply({ ok: false, error: "ADMIN_REQUIRED" }, 403);
+  }
+
   let body: any;
   try { body = await req.json(); } catch { return reply({ ok: false, error: "INVALID_JSON" }, 400); }
   const image = body?.image;
