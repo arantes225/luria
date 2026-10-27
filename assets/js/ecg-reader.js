@@ -8,6 +8,7 @@
   const resultCard = document.getElementById("ecg-result-card");
   const review = document.getElementById("ecg-review-confirm");
   const result = document.getElementById("ecg-result");
+  const metadata = document.getElementById("ecg-capture-metadata");
   if (!input || !analyze) return;
   let selected = null;
   const canAnalyze = () => Boolean(selected && (!review || review.checked));
@@ -15,7 +16,23 @@
   input.addEventListener("change", () => {
     selected = input.files?.[0] || null; if (review) review.checked = false; analyze.disabled = !canAnalyze(); resultCard.hidden = true;
     if (!selected) { fileName.textContent = "Nenhum ECG selecionado."; preview.style.display = "none"; return; }
-    fileName.textContent = selected.name; preview.src = URL.createObjectURL(selected); preview.style.display = "block"; setStatus("Imagem pronta para análise.", "ok");
+    fileName.textContent = selected.name;
+    preview.src = URL.createObjectURL(selected);
+    preview.style.display = "block";
+    if (metadata) {
+      const probe = new Image();
+      probe.onload = () => {
+        const megapixels = (probe.naturalWidth * probe.naturalHeight / 1_000_000).toFixed(2);
+        const low = probe.naturalWidth < 1200 || probe.naturalHeight < 800;
+        metadata.textContent = `Captura: ${probe.naturalWidth}×${probe.naturalHeight}px · ${megapixels} MP · ${selected.type || "tipo não informado"} · ${Math.round(selected.size / 1024)} KB${low ? " · resolução baixa: recapture em maior qualidade se possível" : ""}`;
+        metadata.className = "ecg-status" + (low ? " error" : " ok");
+        analyze.disabled = !canAnalyze() || low;
+        if (low) setStatus("A imagem está abaixo do mínimo recomendado para revisão confiável.", "error");
+      };
+      probe.onerror = () => { metadata.textContent = "Não foi possível ler as dimensões da imagem."; metadata.className = "ecg-status error"; };
+      probe.src = preview.src;
+    }
+    setStatus("Imagem pronta para revisão.", "ok");
   });
   review?.addEventListener("change", () => { analyze.disabled = !canAnalyze(); });
   analyze.addEventListener("click", async () => {
