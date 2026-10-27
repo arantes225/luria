@@ -13,19 +13,19 @@
   };
 
   try {
-    if (!window.sb) {
+    if (!window.supabaseClient) {
       deny("Não foi possível validar a sessão. Recarregue a página.");
       return;
     }
 
-    const { data: sessionData } = await window.sb.auth.getSession();
+    const { data: sessionData } = await window.supabaseClient.auth.getSession();
     if (!sessionData?.session?.user) {
       deny("Entre na sua conta para continuar.");
       return;
     }
 
     let isAdmin = false;
-    const { data: rpcAdmin, error: rpcError } = await window.sb.rpc("is_admin");
+    const { data: rpcAdmin, error: rpcError } = await window.supabaseClient.rpc("is_admin");
     if (!rpcError && rpcAdmin === true) {
       isAdmin = true;
     } else if (typeof window.verificarAcessoAdmin === "function") {
