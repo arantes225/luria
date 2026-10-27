@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
   <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
+  <link rel="stylesheet" href="/assets/css/luria-rotate-hint.css?v=1">
+  <link rel="stylesheet" href="/assets/css/ecg-smart-camera.css?v=1">
   <style>
     .ecg-shell{display:grid;gap:16px}
     .ecg-tabs{display:flex;gap:8px;flex-wrap:wrap}
@@ -411,22 +413,108 @@
         </section>
 
         <section class="ecg-lab">
-          <article class="ecg-card">
-            <h2>Leitor de ECG por IA</h2>
-            <p>Envie uma imagem do ECG para receber sugestões de achados. A saída é um apoio à revisão médica e não substitui o médico.</p>
-            <div class="ecg-actions">
-              <label class="ecg-btn secondary" for="ecg-image">Selecionar imagem do ECG</label>
-              <input id="ecg-image" type="file" accept="image/jpeg,image/png,image/webp" hidden>
-              <button class="ecg-btn" id="ecg-analyze" disabled>Analisar com IA</button>
+          <!-- ETAPA 1: CAPTURA INTELIGENTE -->
+          <article class="ecg-card" id="ecg-stage1-capture">
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+              <div>
+                <h2>1. Captura Inteligente com Câmera</h2>
+                <p style="margin:0;color:var(--muted);font-size:13px">Reconhecimento automático de layout e derivações em tempo real, sem seleção manual e com orientação puramente visual.</p>
+              </div>
+              <div class="ecg-actions">
+                <button class="ecg-btn" id="ecg-btn-start-fast" type="button">Abrir Câmera (Modo Rápido)</button>
+                <button class="ecg-btn secondary" id="ecg-btn-start-ultra" type="button">Modo Ultrassensível</button>
+              </div>
             </div>
-            <div id="ecg-file-name" class="ecg-status">Nenhum ECG selecionado.</div>
-            <img id="ecg-image-preview" alt="Prévia do ECG selecionado" style="display:none;max-width:100%;max-height:520px;border-radius:12px;border:1px solid var(--border);margin-top:12px">
-            <div id="ecg-status" class="ecg-status" aria-live="polite"></div>
+
+            <!-- VIEWPORT DA CÂMERA -->
+            <div id="ecg-camera-viewport" class="ecg-viewport-container" hidden style="margin-top:14px">
+              <video id="ecg-video" class="ecg-camera-video" playsinline muted></video>
+              <canvas id="ecg-canvas-cv" class="ecg-camera-canvas-cv"></canvas>
+              <div class="ecg-hud-flash"></div>
+
+              <!-- HUD VISUAL DA CÂMERA -->
+              <div id="ecg-hud" class="ecg-hud-overlay">
+                <div class="ecg-hud-topbar">
+                  <span class="ecg-hud-target-badge">ALVO: <span class="ecg-hud-target">DI</span></span>
+                  <span class="ecg-hud-counter">CAPTURADAS: <span class="ecg-hud-count">0 de 12</span></span>
+                </div>
+
+                <div class="ecg-hud-reticle-wrap">
+                  <div class="ecg-hud-reticle" data-status="searching"></div>
+                </div>
+
+                <div class="ecg-hud-bottombar">
+                  <div class="ecg-hud-lead-badges"></div>
+                  <div class="ecg-hud-message-box">
+                    <span class="ecg-hud-message">Localizando ECG...</span>
+                  </div>
+                  <div class="ecg-hud-progress-bar">
+                    <div class="ecg-hud-progress-fill"></div>
+                  </div>
+                  <button id="ecg-btn-cancel-camera" class="ecg-btn secondary" type="button" style="pointer-events:auto;margin-top:4px;padding:6px 12px;font-size:12px">Cancelar Câmera</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- OPÇÃO DE UPLOAD ALTERNATIVO -->
+            <div style="margin-top:14px;padding-top:12px;border-top:1px dashed var(--border)">
+              <div class="ecg-actions">
+                <label class="ecg-btn secondary" for="ecg-image">Carregar fotografia do ECG</label>
+                <input id="ecg-image" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+              </div>
+              <div id="ecg-file-name" class="ecg-status">Nenhum ECG selecionado.</div>
+              <img id="ecg-image-preview" alt="Prévia do ECG selecionado" style="display:none;max-width:100%;max-height:520px;border-radius:12px;border:1px solid var(--border);margin-top:12px">
+            </div>
           </article>
-          <article class="ecg-card" id="ecg-result-card" hidden>
-            <h2>Resultado sugerido</h2>
-            <div id="ecg-result"></div>
-            <p class="ecg-status">Revisar todos os achados diretamente no ECG e correlacionar com o contexto clínico.</p>
+
+          <!-- ETAPA 2: EXTRAÇÃO E CONFERÊNCIA DOS TRAÇADOS -->
+          <article class="ecg-card" id="ecg-stage2-review" hidden>
+            <div class="ecg-review-header">
+              <div>
+                <h2>2. Traçados Extraídos e Conferência</h2>
+                <p style="margin:0;color:var(--muted);font-size:13px">Compare cada curva digitalizada diretamente com a região correspondente na fotografia original antes de interpretar.</p>
+              </div>
+              <div class="ecg-review-modes" role="radiogroup" aria-label="Modo de visualização">
+                <label style="font-size:12px;display:flex;align-items:center;gap:4px;cursor:pointer">
+                  <input type="radio" name="ecg-view-mode" value="overlay" checked> Sobreposição
+                </label>
+                <label style="font-size:12px;display:flex;align-items:center;gap:4px;cursor:pointer">
+                  <input type="radio" name="ecg-view-mode" value="digital"> Traçado Digital
+                </label>
+                <label style="font-size:12px;display:flex;align-items:center;gap:4px;cursor:pointer">
+                  <input type="radio" name="ecg-view-mode" value="original"> Foto Original
+                </label>
+              </div>
+            </div>
+
+            <div id="ecg-missing-alert" class="ecg-alert" hidden></div>
+
+            <div id="ecg-review-grid" class="ecg-review-grid" style="margin-top:12px"></div>
+
+            <!-- PORTÃO DE SEGURANÇA PARA A ETAPA 3 -->
+            <div class="ecg-stage3-gate">
+              <div class="ecg-safety-alert">
+                <strong>Atenção clínica obrigatória:</strong> A captura e digitalização automática não garantem que o traçado foi extraído perfeitamente. A interpretação médica automatizada não substitui o julgamento profissional.
+              </div>
+              <button class="ecg-btn" id="ecg-btn-confirm-and-ai" type="button" style="font-size:14px;padding:12px 20px">
+                Conferência Aprovada → Revisar ECG com IA
+              </button>
+            </div>
+          </article>
+
+          <!-- ETAPA 3: REVISÃO PELA IA -->
+          <article class="ecg-card" id="ecg-stage3-ai" hidden>
+            <h2>3. Revisão pela IA</h2>
+            <p>Os sinais digitais conferidos foram processados pelos modelos de interpretação. Analise os achados e correlacione com a clínica do paciente.</p>
+            <div class="ecg-actions">
+              <button class="ecg-btn" id="ecg-analyze">Executar Interpretação por IA</button>
+            </div>
+            <div id="ecg-status" class="ecg-status" aria-live="polite"></div>
+            <div id="ecg-result-card" hidden style="margin-top:12px">
+              <h3>Resultado sugerido</h3>
+              <div id="ecg-result"></div>
+              <p class="ecg-status" style="margin-top:8px">Revisar todos os achados diretamente no ECG e correlacionar com o contexto clínico.</p>
+            </div>
           </article>
         </section>
       </div>
@@ -436,6 +524,10 @@
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
   <script src="/assets/js/trabalho-ecg.js?v=20261026"></script>
+  <script src="/assets/js/luria-rotate-controller.js?v=1"></script>
+  <script src="/assets/js/ecg-cv-engine.js?v=1"></script>
+  <script src="/assets/js/ecg-smart-camera.js?v=1"></script>
+  <script src="/assets/js/ecg-smart-ui.js?v=1"></script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
   <script defer src="/assets/js/ecg-reader.js?v=1"></script>
 </body>
