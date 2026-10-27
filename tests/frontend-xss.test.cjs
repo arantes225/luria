@@ -197,9 +197,12 @@ test('Protocol full load, source links, image dialog and clinical bridge keep th
   w.HTMLDialogElement.prototype.showModal=function(){this.open=true;};
   w.HTMLDialogElement.prototype.close=function(){this.open=false;this.dispatchEvent(new w.Event('close'));};
   const row={id:1,title:'Título <literal>',category:'Clínica',setting:'Ambulatório',summary:'Texto & çã',status:'verified',source_refs:[{url:'javascript:window.auditExecuted=1',label:'Hostil'},{url:'https://example.org/reference?a=1&b=2',label:'Fonte'}],image_assets:[{src:'/assets/img/demo.webp',caption:'Imagem & explicação',alt:'" onerror="window.auditExecuted=1'}]};
-  mockTables(w,{clinical_protocols:[row]});w.eval(read('assets/js/trabalho-protocolos.js'));await tick();
+  row.linked_recipe_slugs=['receita-teste'];
+  mockTables(w,{clinical_protocols:[row],recipe_bank:[{slug:'receita-teste',title:'Receita teste',data:{routes:[{route:'Oral',items:[{drug:'Medicamento exemplo'}]}]}}]});
+  w.eval(read('assets/js/trabalho-protocolos.js'));await tick();
   const detail=w.document.getElementById('protocol-detail'),links=detail.querySelectorAll('.protocol-refs a');
   assert.equal(links[0].getAttribute('href'),'#');assert.equal(links[1].getAttribute('href'),row.source_refs[1].url);assertSafe(detail);
+  assert.ok(detail.querySelector('.integrated-recipe-copy-btn'),'Opening a protocol must render linked recipes without a ReferenceError');
   detail.querySelector('[data-image-src]').click();assert.equal(w.document.querySelector('dialog img').getAttribute('src'),row.image_assets[0].src);
   w.document.querySelector('dialog button').click();assert.equal(w.document.querySelector('dialog'),null);
   detail.querySelector('[data-send-note]').click();assert.equal(sent[0].title,row.title);assert.ok(sent[0].text.includes(row.summary));
