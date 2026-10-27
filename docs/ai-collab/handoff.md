@@ -1,0 +1,13 @@
+# Handoff entre IAs
+
+## Último handoff — 27/10/2026
+
+- **Tema:** estrutura compartilhada de documentação do ECG.
+- **Estado:** [PR #170](https://github.com/arantes225/luria/pull/170) em rascunho na branch `codex/ecg-shared-memory-20261027`, partindo de `main` em `28c76d0`. Nenhuma mudança de produção faz parte desta etapa.
+- **Leitura inicial:** [status.md](status.md), [ecg.md](ecg.md), [tasks.md](tasks.md), depois código/PRs citados.
+- **Próximo passo independente:** identificar evidências auditáveis de Colab/digitalizador e conferir modos/objetos das execuções do workflow R2, sem transferir dados ou credenciais ao chat.
+- **Pendências de validação:** inventário e checksums do bucket (as execuções 40269274487 e 40237969553 passaram), versão implantada da função, câmera física, métricas de treino/digitalização e aprovação clínica.
+
+## Modelo para o próximo agente
+
+Ao terminar uma sessão, substitua apenas a seção “Último handoff” por um resumo datado contendo: objetivo, branch/commit/PR, arquivos mudados, testes e resultado, estado de merge/deploy, evidências externas, decisões, bloqueios, mudanças locais não commitadas e próximo passo concreto. Preserve este modelo. Se não houve alteração, diga isso. Nunca cole segredos, URLs assinadas, exames ou logs com dados de pacientes.
