@@ -57,3 +57,31 @@ test('scanner opens as a modal and manual capture tolerates ordinary motion', as
   assert.equal(stopped, true);
   dom.window.close();
 });
+
+test('camera area is visible while permission is pending and closing cancels a late stream', async () => {
+  const root = path.resolve(__dirname, '..');
+  const html = fs.readFileSync(path.join(root, 'trabalho/ecg/index.html'), 'utf8');
+  const script = fs.readFileSync(path.join(root, 'assets/js/ecg-camera-map.js'), 'utf8');
+  const dom = new JSDOM(html, { url: 'https://www.resibulando.online/trabalho/ecg/', runScripts: 'outside-only' });
+  const { window } = dom;
+  const { document } = window;
+  let allowCamera, stopped = false;
+  window.matchMedia = () => ({ matches: false });
+  window.LuriaEcgLayout = { detect() {} };
+  window.LuriaEcgFrameGuide = { locate() {} };
+  window.HTMLCanvasElement.prototype.getContext = () => ({});
+  Object.defineProperty(window.navigator, 'mediaDevices', { value: {
+    getUserMedia: () => new Promise(resolve => { allowCamera = resolve; })
+  } });
+  window.eval(script);
+  document.getElementById('ecg-camera-start').click();
+  assert.equal(document.getElementById('ecg-camera-modal').hidden, false);
+  assert.equal(document.getElementById('ecg-camera-stage').hidden, false);
+  assert.match(document.getElementById('ecg-camera-overlay').textContent, /Aguardando acesso/);
+  document.getElementById('ecg-camera-stop').click();
+  allowCamera({ getTracks: () => [{ stop: () => { stopped = true; } }] });
+  await new Promise(resolve => setImmediate(resolve));
+  assert.equal(stopped, true);
+  assert.equal(document.getElementById('ecg-camera-modal').hidden, true);
+  dom.window.close();
+});
