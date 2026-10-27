@@ -51,12 +51,15 @@
     .ecg-pre{margin:0;padding:14px;border-radius:12px;border:1px solid var(--border);background:var(--surface-2);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;white-space:pre-wrap;line-height:1.55}
     .ecg-lab{display:grid;gap:16px;margin-top:8px}
     .ecg-camera{display:grid;gap:12px}
-    .ecg-camera-stage{position:relative;width:100%;min-height:220px;background:#0f172a;border-radius:14px;overflow:hidden}
+    .ecg-camera-stage{position:relative;width:min(100%,calc((100dvh - 100px)*16/9));aspect-ratio:16/9;margin-inline:auto;background:#0f172a;border-radius:14px;overflow:hidden}
     .ecg-camera-stage[hidden]{display:none}
-    .ecg-camera-stage video{display:block;width:100%;max-height:min(75vh,800px);object-fit:contain}
-    .ecg-camera-guide{display:none;position:absolute;left:6%;right:6%;top:27%;bottom:27%;border:2px dashed #7dd3fc;border-radius:12px;pointer-events:none}
+    .ecg-camera-stage video{display:block;width:100%;height:100%;object-fit:contain}
+    .ecg-camera-stage.is-rotated video{transform:rotate(90deg) scale(1.7778)}
+    .ecg-camera-guide{display:none;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:88%;aspect-ratio:5/1;max-height:25%;border:2px dashed #7dd3fc;border-radius:12px;pointer-events:none}
     .ecg-camera-stage.is-detail .ecg-camera-guide{display:block}
+    .ecg-camera-stage.is-columns .ecg-camera-guide{width:46%;aspect-ratio:3/1}
     .ecg-camera-guide::after{content:"Derivação selecionada";position:absolute;top:-28px;left:0;color:#bae6fd;font-size:12px;font-weight:800}
+    .ecg-camera-overlay{position:absolute;left:10px;right:10px;bottom:10px;padding:8px 12px;border-radius:9px;background:rgba(8,19,38,.78);color:#fff;font-size:14px;font-weight:800;text-align:center;pointer-events:none}
     .ecg-camera-guidance{margin:0;padding:10px 12px;border-radius:10px;background:color-mix(in srgb,#0ea5e9 10%,var(--surface));color:var(--text);font-size:13px;line-height:1.45}
     .ecg-camera-orientation{padding:11px 13px;border-radius:11px;background:color-mix(in srgb,#f59e0b 13%,var(--surface));color:var(--text);font-weight:800;font-size:14px}
     .ecg-camera-map{display:grid;gap:10px;padding:14px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2)}
@@ -103,6 +106,7 @@
           <div id="ecg-camera-stage" class="ecg-camera-stage" hidden>
             <video id="ecg-camera-video" playsinline muted aria-label="Prévia da câmera local"></video>
             <div class="ecg-camera-guide" aria-hidden="true"></div>
+            <div id="ecg-camera-overlay" class="ecg-camera-overlay" aria-hidden="true">Enquadre a folha inteira.</div>
             <canvas id="ecg-camera-canvas" hidden></canvas>
           </div>
           <div class="ecg-actions">
@@ -113,7 +117,7 @@
           </div>
           <div id="ecg-camera-status" class="ecg-status">Câmera desligada.</div>
           <div id="ecg-camera-quality" class="ecg-status">A qualidade local aparecerá após abrir a câmera.</div>
-          <div id="ecg-camera-guidance" class="ecg-camera-guidance" aria-live="polite">Abra a câmera para mapear o formato da folha.</div>
+          <div id="ecg-camera-guidance" class="ecg-camera-guidance" aria-live="polite">Abra a câmera para mapear o formato da folha. A captura automática começa quando o enquadramento estiver pronto.</div>
           <div id="ecg-camera-map" class="ecg-camera-map" hidden>
             <strong id="ecg-camera-layout-result">Formato ainda não identificado.</strong>
             <img id="ecg-camera-map-preview" alt="Foto ampla do ECG para confirmar o formato">
@@ -126,6 +130,7 @@
               </select>
             </label>
             <button class="ecg-btn" id="ecg-camera-map-confirm" type="button">Continuar para as derivações</button>
+            <button class="ecg-btn secondary" id="ecg-camera-map-retake" type="button">Refazer foto ampla</button>
             <label id="ecg-camera-lead-field" hidden>Derivação visível agora
               <select id="ecg-camera-lead">
                 <option value="">Selecione ou marque como não identificada</option>
@@ -170,6 +175,7 @@
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
   <script defer src="/assets/js/ecg-reader.js?v=20261027-stage2"></script>
   <script defer src="/assets/js/ecg-layout.js?v=20261027-layout1"></script>
-  <script defer src="/assets/js/ecg-camera-map.js?v=20261027-map1"></script>
+  <script defer src="/assets/js/ecg-frame-guide.js?v=20261027-guide1"></script>
+  <script defer src="/assets/js/ecg-camera-map.js?v=20261027-auto1"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
   "use strict";
   function detect(image) {
     const { data, width, height } = image || {};
-    if (!data || width < 80 || height < 80) return { kind: "unknown", rows: 0, confidence: "low" };
+    if (!data || width < 80 || height < 80) return { kind: "unknown", rows: 0, confidence: "low", bands: [] };
     const left = Math.floor(width * .23), right = Math.ceil(width * .77);
     const top = Math.floor(height * .07), bottom = Math.ceil(height * .94);
     const stride = Math.max(1, Math.floor((right - left) / 260));
@@ -39,7 +39,8 @@
     const gaps = merged.slice(1).map((value, index) => value - merged[index]);
     const mean = gaps.reduce((sum, value) => sum + value, 0) / Math.max(1, gaps.length);
     const regular = gaps.length > 1 && gaps.filter(gap => gap > mean * .55 && gap < mean * 1.45).length >= gaps.length * .65;
-    return { kind, rows, confidence: kind !== "unknown" && regular ? "medium" : "low" };
+    return { kind, rows, confidence: kind !== "unknown" && regular ? "medium" : "low",
+      bands: merged.map(center => (top + center) / height) };
   }
   const api = { detect };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
