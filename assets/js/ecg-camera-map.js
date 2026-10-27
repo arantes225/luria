@@ -68,6 +68,7 @@
         facingMode: { ideal: "environment" }, width: { ideal: 3840 }, height: { ideal: 2160 }, aspectRatio: { ideal: 16 / 9 }
       }, audio: false });
       video.srcObject = stream; await video.play();
+      stage.hidden = false;
       track = stream.getVideoTracks()[0];
       const capabilities = track.getCapabilities?.() || {};
       if (capabilities.focusMode?.includes("continuous")) {
@@ -84,7 +85,7 @@
   });
   stop.addEventListener("click", () => {
     clearInterval(timer); timer = null; stream?.getTracks().forEach(t => t.stop());
-    stream = null; track = null; video.srcObject = null; previous = null; stable = 0;
+      stream = null; track = null; video.srcObject = null; stage.hidden = true; previous = null; stable = 0;
     start.disabled = false; stop.disabled = true; torch.disabled = true; capture.disabled = true;
     torch.textContent = "Ligar lanterna"; message("Câmera desligada.");
     guidance.textContent = "Abra a câmera para mapear o formato da folha.";
@@ -121,6 +122,9 @@
       const link = document.createElement("a"), row = document.createElement("div");
       link.href = URL.createObjectURL(blob); link.download = `ecg-${lead.value}-${Date.now()}.jpg`;
       link.textContent = `${lead.value === "unknown" ? "Derivação não identificada" : lead.value} · foto aproximada (baixar)`;
+      const thumb = document.createElement("img");
+      thumb.src = link.href; thumb.alt = `Prévia da derivação ${lead.value === "unknown" ? "não identificada" : lead.value}`;
+      link.prepend(thumb);
       row.appendChild(link); captures.appendChild(row);
       message(`${lead.value} capturada no aparelho. Confira a foto e selecione a próxima derivação.`, "ok");
     }
