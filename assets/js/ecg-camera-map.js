@@ -76,7 +76,7 @@
     else if (brightness <= 40) tell("Aumente a iluminação.");
     else if (glare) tell("Reduza o reflexo ou desligue a lanterna.");
     else if (texture <= 3) tell("Aguarde o foco ou ajuste a distância.");
-    else if (movement >= 28) tell("Mova mais devagar e aguarde o enquadramento. Você também pode fotografar manualmente.");
+    else if (movement >= 28) tell("Mova devagar · captura manual disponível.");
     else if (phase === "detail" && !lead.value) tell("Selecione a derivação ou marque como não identificada.");
     else tell(direction?.instruction || "Enquadre o ECG no centro da câmera.");
     const autoReady = calm && steadyEnough && direction?.ready &&
