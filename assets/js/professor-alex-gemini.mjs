@@ -418,15 +418,10 @@ if (form) {
       }
       return;
     }
+    // O índice da LURIA é apenas um reforço opcional. Perguntas médicas
+    // gerais devem seguir para o tutor clínico completo.
     const siteContext = isSocial || isPlanning ? null : await findAlexSiteContext([topic, prompt].filter(Boolean).join(" "));
-    if (!siteContext && !hasMaterial && !isSocial && !isPlanning) {
-      const message = "Não encontrei esse termo no conteúdo da LURIA. Reformule a pergunta ou indique a matéria. Não vou inventar uma aula fora do acervo.";
-      if (!isLiveActive) display(message, "Busca na LURIA", true);
-      else speakText(message);
-      return;
-    }
-    if (siteContext) {
-      payload.source_mode = "luria_site";
+    if (siteContext && hasMaterial) {
       payload.site_context = siteContext.context;
       payload.site_sources = siteContext.sources;
     }
