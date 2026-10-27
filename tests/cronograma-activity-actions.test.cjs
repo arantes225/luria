@@ -39,3 +39,10 @@ test("lesson rows expose their date and block when one is available", () => {
   assert.match(source, /<span>Data<\/span>/);
 });
 
+test("bulk selection only appears after the user enters selection mode", () => {
+  assert.match(source, /themeSelectionMode/);
+  assert.match(source, /theme-selection-toggle/);
+  assert.match(source, /theme-library-row \$\{scheduleState\.themeSelectionMode/);
+  assert.match(source, /selectedThemeIds\.clear\(\)/);
+});
+
