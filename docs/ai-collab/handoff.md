@@ -3,7 +3,7 @@
 ## Último handoff — 27/10/2026
 
 - **Tema:** estrutura compartilhada de documentação do ECG.
-- **Estado:** documentação preparada em branch/PR; confira o PR e a branch reais no GitHub antes de continuar. Nenhuma mudança de produção faz parte desta etapa.
+- **Estado:** [PR #170](https://github.com/arantes225/luria/pull/170) em rascunho na branch `codex/ecg-shared-memory-20261027`, partindo de `main` em `28c76d0`. Nenhuma mudança de produção faz parte desta etapa.
 - **Leitura inicial:** [status.md](status.md), [ecg.md](ecg.md), [tasks.md](tasks.md), depois código/PRs citados.
 - **Próximo passo independente:** identificar evidências auditáveis de Colab/digitalizador e execuções do workflow R2, sem transferir dados ou credenciais ao chat.
 - **Pendências de validação:** execução do importador, conteúdo do bucket, versão implantada da função, câmera física, métricas de treino/digitalização e aprovação clínica.
