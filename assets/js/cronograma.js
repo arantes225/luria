@@ -94,7 +94,11 @@ const HEADER_ALIASES = {
     "bloco",
     "block",
     "modulo",
-    "módulo"
+    "módulo",
+    "semana",
+    "quinzena",
+    "mes",
+    "periodo"
   ],
 
   theme: [
@@ -366,6 +370,60 @@ function currentImportMode() {
   return document.querySelector('input[name="import-mode"]:checked')?.value || "dates";
 }
 
+function refreshBlockImportPlan() {
+  const panel = document.getElementById("block-import-panel");
+  const scheduler = window.LuriaBlockScheduler;
+  if (!panel || !scheduler) return;
+
+  const rows = scheduleState.parsedRows;
+  const blocks = [...new Set(rows.map((row) => scheduler.parseBlockNumber(row.bloco)).filter(Boolean))]
+    .sort((a, b) => a - b);
+  const anchor = document.getElementById("block-import-anchor");
+  const start = document.getElementById("block-import-start");
+  const unit = document.getElementById("block-import-unit");
+  const summary = document.getElementById("block-import-summary");
+
+  panel.hidden = !blocks.length || currentImportMode() !== "dates";
+  if (!blocks.length) {
+    anchor.innerHTML = "";
+    summary.textContent = "";
+  } else {
+    const previous = Number(anchor.value);
+    anchor.innerHTML = blocks.map((number) =>
+      `<option value="${number}">Bloco ${number}</option>`
+    ).join("");
+    anchor.value = blocks.includes(previous) ? String(previous) : String(blocks[0]);
+  }
+
+  for (const row of rows) {
+    if (row.generatedByBlock) {
+      row.date = row.sourceDate || null;
+      row.generatedByBlock = false;
+    }
+  }
+  if (panel.hidden) return;
+  if (!start.value) {
+    summary.textContent = "Informe a data de início do bloco de referência para distribuir as aulas.";
+    return;
+  }
+
+  const plan = scheduler.planBlockDates(rows, {
+    unit: unit.value,
+    anchorBlock: Number(anchor.value),
+    startDate: start.value,
+    weekdays: scheduleState.theoryStudyWeekdays
+  });
+  for (const assignment of plan.assignments) {
+    rows[assignment.index].date = assignment.date;
+    rows[assignment.index].generatedByBlock = true;
+  }
+  const crowded = plan.blocks.filter((block) =>
+    block.lessons > block.studyDays * scheduleState.maxLessonsPerDay
+  ).length;
+  summary.textContent = `${plan.blocks.length} bloco${plan.blocks.length === 1 ? "" : "s"} · ${plan.assignments.length} aula${plan.assignments.length === 1 ? "" : "s"} distribuída${plan.assignments.length === 1 ? "" : "s"} nos dias de estudo.`
+    + (crowded ? ` Em ${crowded} bloco${crowded === 1 ? "" : "s"}, algumas datas terão mais aulas que seu limite diário.` : "");
+}
+
 function setImportStatus(text, type = "") {
   const el = document.getElementById("import-status");
   el.textContent = text;
@@ -524,9 +582,9 @@ function parseWorkbookRows(matrix, sheetName) {
     );
   }
 
-  const mode = currentImportMode();
-
   const parsed = [];
+  const blockParser = window.LuriaBlockScheduler?.parseBlockNumber;
+  let currentBlock = blockParser?.(sheetName) ? sheetName : "";
 
   for (
     let rowIndex = headerRowIndex + 1;
@@ -546,6 +604,14 @@ function parseWorkbookRows(matrix, sheetName) {
     const rawType = getCell(row, indexes.type);
 
     const date = parseExcelDate(rawDate);
+    if (blockParser?.(bloco)) currentBlock = bloco;
+    if (!date && !area && !materia && !cleanText(rawDone) && !cleanText(rawStudiedDate)) {
+      if (!theme && blockParser?.(bloco)) continue;
+      if (!bloco && blockParser?.(theme) && !/^\d+$/.test(theme)) {
+        currentBlock = theme;
+        continue;
+      }
+    }
     const alreadyDone = indexes.done >= 0
       ? parseBooleanCell(rawDone)
       : false;
@@ -570,7 +636,7 @@ function parseWorkbookRows(matrix, sheetName) {
         theme,
         area,
         materia,
-        bloco,
+         bloco || currentBlock,
         cleanText(rawType)
       ].some(
         isOnboardingScheduleContent
@@ -607,7 +673,7 @@ function parseWorkbookRows(matrix, sheetName) {
       date,
       area,
       materia,
-      bloco,
+      bloco: bloco || currentBlock,
       theme,
       kind,
       alreadyDone,
@@ -915,6 +981,7 @@ function renderPreview() {
                 data-preview-field="date"
                 data-preview-index="${index}"
               >
+              ${row.generatedByBlock ? '<small class="preview-date-source">Por bloco</small>' : ""}
             </td>
 
             <td>
@@ -1062,7 +1129,10 @@ function renderPreview() {
     );
 
   confirm.disabled =
-    selected === 0;
+    selected === 0
+    || (document.getElementById("block-import-panel")
+      && !document.getElementById("block-import-panel").hidden
+      && !document.getElementById("block-import-start").value);
 
 
   wirePreviewEditor();
@@ -1144,6 +1214,11 @@ function wirePreviewEditor() {
                 input.value;
             }
 
+            if (field === "date") {
+              row.dateOverride = true;
+              row.generatedByBlock = false;
+            }
+
 
             if (
               field === "kind"
@@ -1165,6 +1240,8 @@ function wirePreviewEditor() {
                 true;
             }
 
+
+            if (field === "bloco") refreshBlockImportPlan();
 
             validateImportRow(
               row
@@ -1241,10 +1318,14 @@ function syncImportModeToRows(
         )
     );
 
+  const hasNumberedBlock = lessons.some((row) =>
+    Boolean(window.LuriaBlockScheduler?.parseBlockNumber(row.bloco))
+  );
+
   setPdfModeState(
     scheduleState.fileType
       === "pdf",
-    !hasDatedLesson
+    !hasDatedLesson && !hasNumberedBlock
   );
 }
 
@@ -1649,6 +1730,9 @@ function dedupeParsedRows(
               || "",
             row.kind
               || "",
+            normalizeHeader(
+              row.bloco
+            ),
             normalizeHeader(
               row.theme
             )
@@ -2771,7 +2855,8 @@ function looksLikeBlockCoursePdf(
 
 function parseGenericPdfLines({
   tokens,
-  pageNumber
+  pageNumber,
+  currentBlock = ""
 }) {
   const groups =
     groupPdfTokensByY(
@@ -2781,6 +2866,7 @@ function parseGenericPdfLines({
 
   const rows =
     [];
+  let block = currentBlock;
 
 
   for (
@@ -2791,6 +2877,12 @@ function parseGenericPdfLines({
       pdfLineText(
         group
       );
+
+    if (/^(?:bloco|semana|m[oó]dulo|m[eê]s)\s/i.test(text)
+        && window.LuriaBlockScheduler?.parseBlockNumber(text)) {
+      block = text.trim();
+      continue;
+    }
 
     if (
       shouldIgnorePdfLine(
@@ -2861,6 +2953,7 @@ function parseGenericPdfLines({
           ),
 
         pageNumber,
+        sourceBlock: block || null,
         confidence:
           date
             ? "medium"
@@ -2870,7 +2963,7 @@ function parseGenericPdfLines({
   }
 
 
-  return rows;
+  return { rows, currentBlock: block };
 }
 
 
@@ -2974,6 +3067,8 @@ async function parsePdfFile(
 
   let currentCourseBlock =
     null;
+
+  let currentGenericBlock = "";
 
   let pendingCourseLines =
     [];
@@ -3091,12 +3186,13 @@ async function parsePdfFile(
     }
 
 
-    rows.push(
-      ...parseGenericPdfLines({
-        ...pageData,
-        pageNumber
-      })
-    );
+    const genericPage = parseGenericPdfLines({
+      ...pageData,
+      pageNumber,
+      currentBlock: currentGenericBlock
+    });
+    rows.push(...genericPage.rows);
+    currentGenericBlock = genericPage.currentBlock;
   }
 
 
@@ -3301,6 +3397,12 @@ async function parseSelectedFile(
     return;
   }
 
+  if (scheduleState.file !== file) {
+    const anchor = document.getElementById("block-import-anchor");
+    const start = document.getElementById("block-import-start");
+    if (anchor) anchor.value = "";
+    if (start) start.value = "";
+  }
 
   scheduleState.file =
     file;
@@ -3353,11 +3455,18 @@ async function parseSelectedFile(
     scheduleState.parsedRows =
       result.rows;
 
+    for (const row of scheduleState.parsedRows) {
+      row.sourceDate = row.date || null;
+      row.dateOverride = false;
+      row.generatedByBlock = false;
+    }
+
 
     syncImportModeToRows(
       scheduleState.parsedRows
     );
 
+    refreshBlockImportPlan();
 
     applyDuplicateFlags();
 
@@ -3415,6 +3524,7 @@ async function parseSelectedFile(
       .detected =
         null;
 
+    refreshBlockImportPlan();
     renderPreview();
 
     setImportStatus(
@@ -3438,6 +3548,12 @@ function resetImport() {
 
   scheduleState.detected =
     null;
+
+  const anchor = document.getElementById("block-import-anchor");
+  const start = document.getElementById("block-import-start");
+  if (anchor) anchor.value = "";
+  if (start) start.value = "";
+  refreshBlockImportPlan();
 
 
   setPdfModeState(
@@ -3498,6 +3614,7 @@ function resetImport() {
 }
 
 async function createImportRecord(mode) {
+  const blockPanel = document.getElementById("block-import-panel");
   const metadata = {
     file_type:
       scheduleState.fileType,
@@ -3506,7 +3623,12 @@ async function createImportRecord(mode) {
       || null,
     detected:
       scheduleState.detected
-      || null
+      || null,
+    block_mapping: blockPanel && !blockPanel.hidden ? {
+      unit: document.getElementById("block-import-unit").value,
+      anchor_block: Number(document.getElementById("block-import-anchor").value),
+      start_date: document.getElementById("block-import-start").value
+    } : null
   };
 
   const { data, error } = await scheduleSb
@@ -3683,6 +3805,12 @@ async function confirmImport() {
     return;
   }
 
+  refreshBlockImportPlan();
+  const blockPanel = document.getElementById("block-import-panel");
+  if (blockPanel && !blockPanel.hidden && !document.getElementById("block-import-start").value) {
+    setImportStatus("Escolha a data de início do bloco de referência.", "error");
+    return;
+  }
 
   applyDuplicateFlags();
 
@@ -5706,6 +5834,11 @@ async function loadSchedulePreferences() {
         || 1
       )
     );
+
+  if (scheduleState.parsedRows.length) {
+    refreshBlockImportPlan();
+    renderPreview();
+  }
 
   scheduleState.targetExams =
     window.LuriaExamPriority?.sanitizeExams(
@@ -9650,12 +9783,18 @@ function wireImportControls() {
   document
     .querySelectorAll('input[name="import-mode"]')
     .forEach((radio) => {
-      radio.addEventListener("change", async () => {
-        if (scheduleState.file) {
-          await parseSelectedFile(scheduleState.file);
-        }
+      radio.addEventListener("change", () => {
+        refreshBlockImportPlan();
+        renderPreview();
       });
     });
+
+  ["block-import-unit", "block-import-anchor", "block-import-start"].forEach((id) => {
+    document.getElementById(id)?.addEventListener("change", () => {
+      refreshBlockImportPlan();
+      renderPreview();
+    });
+  });
 
   document
     .getElementById("cancel-import")
@@ -9893,3 +10032,4 @@ if (document.readyState === "loading") {
 }
 
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bindReferenceCalendarControls); else bindReferenceCalendarControls();
+
