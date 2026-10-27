@@ -48,6 +48,14 @@
     .native-cronograma-settings .mode-option span{display:block;padding:15px;border:1px solid var(--border);border-radius:12px;background:var(--surface);cursor:pointer}
     .native-cronograma-settings .mode-option input:checked+span{border-color:var(--accent);background:var(--accent-soft)}
     .native-cronograma-settings .import-help{margin-top:16px;padding:12px;border-radius:12px;background:var(--surface-2);display:grid;gap:4px}
+    .native-cronograma-settings .block-import-panel{margin-top:14px;padding:16px;border:1px solid color-mix(in srgb,var(--accent) 25%,var(--border));border-radius:14px;background:color-mix(in srgb,var(--accent-soft) 28%,var(--surface))}
+    .native-cronograma-settings .block-import-panel[hidden]{display:none!important}
+    .native-cronograma-settings .block-import-panel h3{margin:0;font-size:13px;color:var(--text)}
+    .native-cronograma-settings .block-import-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}
+    .native-cronograma-settings .block-import-fields label{display:grid;gap:5px;color:var(--text);font-size:11px;font-weight:700}
+    .native-cronograma-settings .block-import-fields :is(select,input){width:100%;min-height:38px;padding:7px 9px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text);font:inherit}
+    .native-cronograma-settings .block-import-summary{display:block;margin-top:10px;color:var(--muted);font-size:11px;line-height:1.5}
+    .native-cronograma-settings .preview-date-source{display:block;margin-top:3px;color:var(--accent);font-size:9px;font-weight:700}
     .native-cronograma-settings .import-preview{display:none;margin-top:18px}
     .native-cronograma-settings .import-preview.active{display:block}
     .native-cronograma-settings .preview-table-wrap{overflow:auto}
@@ -56,7 +64,7 @@
     .native-cronograma-settings .manual-field{display:grid;gap:6px}
     .native-cronograma-settings .manual-field.theme{grid-column:1/-1}
     .native-cronograma-settings .manual-actions{grid-column:1/-1;display:flex;align-items:center;gap:10px}
-    @media(max-width:760px){.native-cronograma-settings .import-grid,.native-cronograma-settings .manual-form{grid-template-columns:1fr}.native-cronograma-settings .schedule-add-hub-head{display:grid}}
+    @media(max-width:760px){.native-cronograma-settings .import-grid,.native-cronograma-settings .manual-form,.native-cronograma-settings .block-import-fields{grid-template-columns:1fr}.native-cronograma-settings .schedule-add-hub-head{display:grid}}
     @media(max-width:700px){
       .settings-tab{min-height:40px;padding:0 10px;font-size:11px}
     }
@@ -344,7 +352,7 @@
                   <span>
                     <strong>Importar datas</strong>
                     <small>
-                      Mantém as datas encontradas. Aulas sem data vão automaticamente para o Deck.
+                      Mantém as datas do arquivo. Se houver blocos numerados, distribui as aulas sem data no período escolhido abaixo.
                     </small>
                   </span>
                 </label>
@@ -361,11 +369,32 @@
               </div>
             </div>
 
+            <div id="block-import-panel" class="block-import-panel" hidden>
+              <h3>Distribuir aulas por bloco</h3>
+              <p>Escolha o período de cada bloco e indique quando começa um bloco conhecido. Os anteriores serão colocados antes dessa data e os posteriores, depois. Datas já presentes no arquivo são preservadas.</p>
+              <div class="block-import-fields">
+                <label for="block-import-unit">Cada bloco equivale a
+                  <select id="block-import-unit">
+                    <option value="week">1 semana</option>
+                    <option value="fortnight">1 quinzena</option>
+                    <option value="month">1 mês</option>
+                  </select>
+                </label>
+                <label for="block-import-anchor">Bloco de referência
+                  <select id="block-import-anchor"></select>
+                </label>
+                <label for="block-import-start">Início desse bloco
+                  <input id="block-import-start" type="date">
+                </label>
+              </div>
+              <span id="block-import-summary" class="block-import-summary" aria-live="polite"></span>
+            </div>
+
             <div class="import-help">
               <strong>Como funciona com PDF?</strong>
               <span>
                 O leitor reconhece planners e cronogramas em listas/blocos. O tema da aula é o único campo obrigatório;
-                área, data e bloco são opcionais. Quando nenhuma data é encontrada, as aulas seguem para o Deck.
+                área, data e bloco são opcionais. Blocos numerados podem ser distribuídos por semana, quinzena ou mês; aulas sem bloco e sem data seguem para o Deck.
               </span>
             </div>
 
@@ -541,7 +570,9 @@
 <script src="/assets/js/exam-priority.js?v=20261017-neutral1"></script>
 <script src="/assets/js/cronograma-base-data.js?v=12.6"></script>
 <script src="/assets/js/luria-lazy-vendors.js?v=1"></script>
-<script src="/assets/js/cronograma.js?v=20261017-neutral1"></script>
+<script src="/assets/js/schedule-block-import.js?v=20261026-1"></script>
+<script src="/assets/js/cronograma.js?v=20261026-block-import-1"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>
+
