@@ -18,6 +18,15 @@
   let stream, track, timer, mapUrl, previous, phase = "map", stable = 0;
   let autoFrames = 0, taking = false, capturedCurrent = false;
   const portrait = () => matchMedia("(pointer: coarse) and (orientation: portrait)").matches;
+  const rotated = () => video.videoWidth < video.videoHeight && !portrait();
+  function drawCamera(target, context, width, height) {
+    target.width = width; target.height = height;
+    if (rotated()) {
+      context.translate(width, 0); context.rotate(Math.PI / 2);
+      context.drawImage(video, 0, 0, height, width);
+      context.setTransform(1, 0, 0, 1, 0, 0);
+    } else context.drawImage(video, 0, 0, width, height);
+  }
   const message = (text, type = "") => { status.textContent = text; status.className = `ecg-status ${type}`; };
   const tell = text => { if (guidance.textContent !== text) guidance.textContent = text; if (overlay.textContent !== text) overlay.textContent = text; };
   const orient = () => {
@@ -27,8 +36,10 @@
   };
   function inspect() {
     if (!stream || !video.videoWidth) return;
-    sample.width = 480; sample.height = Math.round(480 * video.videoHeight / video.videoWidth);
-    ctx.drawImage(video, 0, 0, sample.width, sample.height);
+    const sourceWidth = rotated() ? video.videoHeight : video.videoWidth;
+    const sourceHeight = rotated() ? video.videoWidth : video.videoHeight;
+    drawCamera(sample, ctx, 480, Math.round(480 * sourceHeight / sourceWidth));
+    stage.classList.toggle("is-rotated", rotated());
     const frameImage = ctx.getImageData(0, 0, sample.width, sample.height);
     const pixels = frameImage.data;
     const current = []; let light = 0, edges = 0, motion = 0, clipped = 0, count = 0;
@@ -45,7 +56,7 @@
     const movement = previous ? motion / count : Infinity;
     previous = current; orient();
     const dimensions = `${video.videoWidth}×${video.videoHeight}px`;
-    const resolutionOk = video.videoWidth >= 1600 && video.videoHeight >= 900;
+    const resolutionOk = Math.max(video.videoWidth, video.videoHeight) >= 1600 && Math.min(video.videoWidth, video.videoHeight) >= 900;
     const glare = brightness >= 249 || clipped / count > .9;
     const usable = !portrait() && resolutionOk && brightness > 40 && !glare && texture > 3 && movement < 9;
     stable = usable ? Math.min(5, stable + 1) : 0;
@@ -71,8 +82,8 @@
   }
   async function frame() {
     const out = document.createElement("canvas");
-    out.width = video.videoWidth; out.height = video.videoHeight;
-    out.getContext("2d").drawImage(video, 0, 0);
+    drawCamera(out, out.getContext("2d"), rotated() ? video.videoHeight : video.videoWidth,
+      rotated() ? video.videoWidth : video.videoHeight);
     return new Promise(resolve => out.toBlob(resolve, "image/jpeg", .95));
   }
   start.addEventListener("click", async () => {

@@ -54,6 +54,7 @@
     .ecg-camera-stage{position:relative;width:min(100%,calc((100dvh - 100px)*16/9));aspect-ratio:16/9;margin-inline:auto;background:#0f172a;border-radius:14px;overflow:hidden}
     .ecg-camera-stage[hidden]{display:none}
     .ecg-camera-stage video{display:block;width:100%;height:100%;object-fit:contain}
+    .ecg-camera-stage.is-rotated video{transform:rotate(90deg) scale(1.7778)}
     .ecg-camera-guide{display:none;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:88%;aspect-ratio:5/1;max-height:25%;border:2px dashed #7dd3fc;border-radius:12px;pointer-events:none}
     .ecg-camera-stage.is-detail .ecg-camera-guide{display:block}
     .ecg-camera-stage.is-columns .ecg-camera-guide{width:46%;aspect-ratio:3/1}
