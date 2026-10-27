@@ -16,7 +16,7 @@
   if (!video || !sample || !window.LuriaEcgLayout || !window.LuriaEcgFrameGuide) return;
   const ctx = sample.getContext("2d", { willReadFrequently: true });
   let stream, track, timer, mapUrl, previous, phase = "map";
-  let qualityWindow = [];
+  let qualityWindow = [], requestId = 0;
   let autoFrames = 0, taking = false, capturedCurrent = false;
   const portrait = () => matchMedia("(pointer: coarse) and (orientation: portrait)").matches;
   const rotated = () => video.videoWidth < video.videoHeight && !portrait();
@@ -91,10 +91,15 @@
   }
   async function openCamera() {
     if (!navigator.mediaDevices?.getUserMedia) { message("Câmera indisponível neste navegador. Use uma foto de alta qualidade.", "error"); return; }
+    const request = ++requestId;
+    stage.hidden = false;
+    tell("Aguardando acesso à câmera…");
     try {
-      stream = await navigator.mediaDevices.getUserMedia({ video: {
+      const nextStream = await navigator.mediaDevices.getUserMedia({ video: {
         facingMode: { ideal: "environment" }, width: { ideal: 3840 }, height: { ideal: 2160 }, aspectRatio: { ideal: 16 / 9 }
       }, audio: false });
+      if (request !== requestId || modal.hidden) { nextStream.getTracks().forEach(t => t.stop()); return; }
+      stream = nextStream;
       video.srcObject = stream; await video.play();
       stage.hidden = false;
       track = stream.getVideoTracks()[0];
@@ -107,6 +112,7 @@
       orient(); message("Câmera aberta. Enquadre a folha inteira.", "ok");
       timer = setInterval(inspect, 200);
     } catch (_) {
+      if (request !== requestId) return;
       stream?.getTracks().forEach(t => t.stop()); stream = null; track = null;
       start.disabled = false; modal.hidden = true;
       message("Câmera indisponível ou permissão negada. Use uma foto de alta qualidade.", "error");
@@ -119,6 +125,7 @@
     await openCamera();
   });
   function closeCamera() {
+    requestId++;
     clearInterval(timer); timer = null; stream?.getTracks().forEach(t => t.stop());
     stream = null; track = null; video.srcObject = null; stage.hidden = true; modal.hidden = true;
     previous = null; qualityWindow = []; autoFrames = 0;
