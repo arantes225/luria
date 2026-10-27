@@ -356,13 +356,33 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
       const {data, error} = await client.functions.invoke('professor-alex-gemini', {
         body: {request_id: crypto.randomUUID(), prompt: query, area: '', topic: '', intent: 'learn', mode: 'normal', channel: 'chat'}
       });
-      if (error) throw error;
+      if (error || !data?.answer) {
+        let backendError = data?.error;
+        if (!backendError && error?.context?.json) {
+          try {
+            const body = await error.context.json();
+            backendError = body?.error;
+          } catch (_) { /* Preserve the friendly fallback below. */ }
+        }
+        const messages = {
+          unauthorized: 'Entre na sua conta da LURIA para conversar com o Professor Alex.',
+          gemini_secret_missing: 'O backend do Professor Alex está sem a configuração do Gemini.',
+          gemini_key_rejected: 'A configuração da API do Gemini foi recusada. Tente novamente mais tarde.',
+          gemini_key_invalid: 'A chave da API do Gemini está inválida ou expirada.',
+          gemini_rate_limited: 'O Gemini atingiu o limite de requisições. Tente novamente mais tarde.',
+          gemini_connection_failed: 'O Supabase não conseguiu se comunicar com o Gemini. Tente novamente.',
+          gemini_unavailable: 'O Gemini está temporariamente indisponível. Tente novamente em instantes.',
+          usage_limit_unavailable: 'Não foi possível verificar o limite de uso do Professor Alex.',
+          token_budget_reached: 'O limite diário do Professor Alex foi atingido. Tente novamente amanhã.'
+        };
+        throw new Error(messages[backendError] || 'Não foi possível concluir a resposta do Professor Alex.');
+      }
       quickMessages?.querySelector('.pending')?.remove();
-      appendQuickMessage(data?.answer || 'Não consegui responder agora. Tente novamente.', 'alex');
+      appendQuickMessage(data.answer, 'alex');
       integration.react('explain');
     } catch (error) {
       quickMessages?.querySelector('.pending')?.remove();
-      appendQuickMessage('Não consegui responder agora. Tente novamente.', 'error');
+      appendQuickMessage(error?.message || 'Não foi possível concluir a resposta do Professor Alex.', 'error');
       integration.react('error');
     } finally {
       if (quickSend) quickSend.disabled = false;
