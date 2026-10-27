@@ -861,7 +861,8 @@ function renderPreview() {
 
   if (!rows.length) {
     preview.classList.remove(
-      "visible"
+      "visible",
+      "active"
     );
 
     body.innerHTML =
@@ -875,6 +876,14 @@ function renderPreview() {
 
 
   applyDuplicateFlags();
+
+  // A página de Configurações usa `.active` para revelar a prévia; a página
+  // legada usa `.visible`. Manter as duas classes evita uma prévia sem o botão
+  // de confirmação em qualquer ponto de entrada.
+  preview.classList.add(
+    "visible",
+    "active"
+  );
 
 
   const invalid =
@@ -4628,15 +4637,46 @@ function renderSummary() {
   }
 }
 
+function renderCalendarActivityMenu(source, id, date) {
+  const key = `${source}:${id}`;
+  const safeKey = escapeScheduleHtml(key);
+  const moveControl = `
+    <label class="calendar-activity-move">
+      <span>Mover para</span>
+      <input type="date" value="${escapeScheduleHtml(date || todayScheduleISO())}" data-today-date-input="${safeKey}">
+    </label>
+    <button type="button" data-today-date-save="${safeKey}">Mover</button>
+  `;
+
+  const topicActions = source === "topic"
+    ? `
+      <button type="button" data-already-done-topic="${escapeScheduleHtml(id)}">Concluir e agendar revisões</button>
+      ${moveControl}
+      <button class="danger" type="button" data-delete-topic="${escapeScheduleHtml(id)}">Apagar</button>
+    `
+    : `
+      ${moveControl}
+      <button class="danger" type="button" data-delete-schedule-event="${escapeScheduleHtml(id)}">Apagar</button>
+    `;
+
+  return `
+    <div class="topic-overflow-wrap month-activity-overflow">
+      <button class="topic-overflow-trigger" type="button" data-topic-overflow-trigger="${safeKey}" aria-label="Mais opções" aria-expanded="false">⋯</button>
+      <div class="topic-overflow-menu" data-topic-overflow="${safeKey}" hidden>${topicActions}</div>
+    </div>
+  `;
+}
+
 function renderMonthTopicItem(topic) {
   return `
     <article
-      class="month-topic ${isTopicOverdue(topic) ? "is-overdue" : ""}"
+      class="month-topic month-activity-with-menu ${isTopicOverdue(topic) ? "is-overdue" : ""}"
       draggable="true"
       data-topic-id="${escapeScheduleHtml(topic.id)}"
       title="${escapeScheduleHtml(topic.theme)}"
     >
       ${escapeScheduleHtml(topic.theme)}
+      ${renderCalendarActivityMenu("topic", topic.id, topic.scheduled_date || topic.original_date)}
     </article>
   `;
 }
@@ -4644,10 +4684,11 @@ function renderMonthTopicItem(topic) {
 function renderMonthEventItem(event) {
   return `
     <div
-      class="month-event"
+      class="month-event month-activity-with-menu"
       title="${escapeScheduleHtml(event.title)}"
     >
       ${escapeScheduleHtml(event.title)}
+      ${renderCalendarActivityMenu("event", event.id, event.event_date)}
     </div>
   `;
 }
@@ -4854,14 +4895,23 @@ function renderAgendaSide() {
     if (kind === "errors") return "/caderno-erros/";
     return "/cronograma/";
   };
-  const todayMenu = (source, id, date) =>
-    '<div class="agenda-today-menu">'
-    + '<button class="agenda-today-more" type="button" data-today-menu-trigger="'+escapeScheduleHtml(source+":"+id)+'" aria-label="Editar atividade" aria-expanded="false">⋯</button>'
-    + '<div class="agenda-today-popover" data-today-menu="'+escapeScheduleHtml(source+":"+id)+'" hidden>'
-    + '<strong>Remarcar atividade</strong>'
-    + '<input type="date" value="'+escapeScheduleHtml(date||toISODateSchedule(today))+'" data-today-date-input="'+escapeScheduleHtml(source+":"+id)+'">'
-    + '<button type="button" data-today-date-save="'+escapeScheduleHtml(source+":"+id)+'">Salvar data</button>'
+  const todayMenu = (source, id, date) => {
+    const key = source + ":" + id;
+    const topicActions = source === "topic"
+      ? '<button type="button" data-already-done-topic="'+escapeScheduleHtml(id)+'">Concluir e agendar revisões</button>'
+        + '<button class="danger" type="button" data-delete-topic="'+escapeScheduleHtml(id)+'">Apagar</button>'
+      : source === "event"
+        ? '<button class="danger" type="button" data-delete-schedule-event="'+escapeScheduleHtml(id)+'">Apagar</button>'
+        : "";
+    return '<div class="agenda-today-menu">'
+    + '<button class="agenda-today-more" type="button" data-today-menu-trigger="'+escapeScheduleHtml(key)+'" aria-label="Mais opções" aria-expanded="false">⋯</button>'
+    + '<div class="agenda-today-popover" data-today-menu="'+escapeScheduleHtml(key)+'" hidden>'
+    + (source === "topic" ? '<strong>Atividade</strong>' : '<strong>Remarcar atividade</strong>')
+    + '<input type="date" value="'+escapeScheduleHtml(date||toISODateSchedule(today))+'" data-today-date-input="'+escapeScheduleHtml(key)+'">'
+    + '<button type="button" data-today-date-save="'+escapeScheduleHtml(key)+'">Mover</button>'
+    + topicActions
     + '</div></div>';
+  };
 
   if (list) {
     const sourceItems=[];
@@ -4891,6 +4941,23 @@ function renderAgendaSide() {
             time:"Atrasada"
           });
         });
+    } else if(scheduleState.agendaScope==="all") {
+      scheduleState.topics
+        .filter(topic=>topic.status === "scheduled" && !topic.completed_at)
+        .forEach(topic=>{
+          const kind=kindClass(topic.type||"lesson");
+          sourceItems.push({
+            source:"topic",
+            id:topic.id,
+            date:topic.scheduled_date||topic.original_date||todayScheduleISO(),
+            kind,
+            title:topic.theme,
+            meta:topicMeta(topic)||"Aula",
+            completed:false,
+            href:todayHref(kind,topic.id),
+            time:topic.scheduled_date||topic.original_date||"Sem data"
+          });
+        });
     }
     sourceItems.forEach(item=>{
       if(item.source==="topic"){const t=scheduleState.topics.find(x=>String(x.id)===String(item.id));item.area=t?.area||"";item.theme=t?.theme||item.title;}
@@ -4903,21 +4970,25 @@ function renderAgendaSide() {
     const labelForKind=k=>({lesson:"Aula",questions:"Questões",review:"Revisão",flashcards:"Flashcards",errors:"Caderno de erros",simulation:"Simulado",other:"Outro"}[k]||"Atividade");
     const row=item=>{
       const key=item.source+":"+item.id, selected=scheduleState.agendaSelected.has(key);
-      const check="";
-      return '<div class="agenda-today-row kind-'+item.kind+'">'+check
+      const selectable=(scheduleState.agendaScope==="overdue"||scheduleState.agendaScope==="all")&&item.source==="topic";
+      const check=selectable?'<label class="agenda-bulk-check-wrap"><input class="agenda-bulk-check" type="checkbox" data-agenda-select="'+escapeScheduleHtml(key)+'" aria-label="Selecionar '+escapeScheduleHtml(item.title)+'" '+(selected?"checked":"")+'></label>':"";
+      return '<div class="agenda-today-row '+(selectable?"bulk-mode ":"")+'kind-'+item.kind+'">'+check
         +'<a class="agenda-today-open" '+(item.source==="topic"?'data-start-study-topic="'+escapeScheduleHtml(item.id)+'" ':"")+'href="'+item.href+'"><span class="agenda-today-main"><span class="agenda-today-time">'+escapeScheduleHtml(item.time)+'</span><strong>'+escapeScheduleHtml(item.title)+'</strong><small>'+escapeScheduleHtml(item.meta)+'</small></span><span class="agenda-today-kind">'+escapeScheduleHtml(labelForKind(item.kind))+'</span></a>'
         +todayMenu(item.source,item.id,item.date)+'</div>';
     };
-    if(scheduleState.agendaScope==="overdue"){
-      list.innerHTML=visible.length?visible.map(row).join(""):'<p class="agenda-empty" style="padding:10px">Nenhuma aula atrasada.</p>';
+    if(scheduleState.agendaScope==="overdue"||scheduleState.agendaScope==="all"){
+      const emptyCopy=scheduleState.agendaScope==="overdue"?"Nenhuma aula atrasada.":"Nenhuma aula programada.";
+      list.innerHTML=visible.length?visible.map(row).join(""):'<p class="agenda-empty" style="padding:10px">'+emptyCopy+'</p>';
     } else {
       list.innerHTML=visible.length?visible.map(row).join(""):'<p class="agenda-empty" style="padding:10px">Nenhuma atividade para hoje.</p>';
     }
-    const bulk=document.getElementById("agenda-bulk-tools"); if(bulk) bulk.hidden=true;
+    const bulk=document.getElementById("agenda-bulk-tools"); if(bulk) bulk.hidden=!(scheduleState.agendaScope==="overdue"||scheduleState.agendaScope==="all");
     const title=document.getElementById("agenda-activities-title"), dateLabel=document.getElementById("agenda-today-date");
-    if(title) title.textContent=scheduleState.agendaScope==="overdue"?"Aulas atrasadas":"Atividades de hoje";
+    if(title) title.textContent=scheduleState.agendaScope==="overdue"?"Aulas atrasadas":scheduleState.agendaScope==="all"?"Todas as aulas":"Atividades de hoje";
     if(dateLabel) dateLabel.textContent=scheduleState.agendaScope==="overdue"
       ? (visible.length?visible.length+" aula"+(visible.length===1?"":"s")+" pendente"+(visible.length===1?"":"s"):"Nenhuma pendência")
+      : scheduleState.agendaScope==="all"
+        ? (visible.length?visible.length+" aula"+(visible.length===1?"":"s")+" programada"+(visible.length===1?"":"s"):"Nenhuma aula programada")
       : new Intl.DateTimeFormat("pt-BR",{weekday:"long",day:"2-digit",month:"long"}).format(today);
     if(count) count.textContent=String(visible.length);
     const countEl=document.getElementById("agenda-selected-count"); if(countEl) countEl.textContent="0 selecionadas";
@@ -5048,13 +5119,74 @@ function bindReferenceCalendarControls() {
   });
 
   newActivityButton?.addEventListener("click", () => {
-    document.body.classList.add("activity-composer-open");
-    switchScheduleAddMode("manual");
-    requestAnimationFrame(() => {
-      const section = document.querySelector('[data-schedule-add-section="manual"]');
-      section?.scrollIntoView({ behavior: "smooth", block: "start" });
-      document.getElementById("manual-area")?.focus({ preventScroll: true });
-    });
+    openQuickActivityDialog();
+  });
+
+  bindQuickActivityDialog();
+}
+
+function openQuickActivityDialog() {
+  const dialog = document.getElementById("quick-activity-dialog");
+  if (!dialog) return;
+  const today = todayScheduleISO();
+  document.getElementById("quick-lesson-date").value ||= today;
+  document.getElementById("quick-event-date").value ||= today;
+  document.getElementById("quick-activity-status").textContent = "";
+  dialog.showModal();
+  requestAnimationFrame(() => document.getElementById("quick-lesson-area")?.focus());
+}
+
+function bindQuickActivityDialog() {
+  const dialog = document.getElementById("quick-activity-dialog");
+  const form = document.getElementById("quick-activity-form");
+  if (!dialog || !form || dialog.dataset.bound === "true") return;
+  dialog.dataset.bound = "true";
+  let kind = "lesson";
+  const setKind = (nextKind) => {
+    kind = nextKind;
+    document.querySelectorAll("[data-quick-kind]").forEach(button => button.classList.toggle("active", button.dataset.quickKind === kind));
+    document.querySelectorAll("[data-quick-fields]").forEach(fields => fields.classList.toggle("active", fields.dataset.quickFields === kind));
+    const save = document.getElementById("quick-activity-save");
+    if (save) save.textContent = kind === "lesson" ? "Adicionar aula" : "Adicionar evento";
+  };
+  document.querySelectorAll("[data-quick-kind]").forEach(button => button.addEventListener("click", () => setKind(button.dataset.quickKind)));
+  document.getElementById("quick-activity-close")?.addEventListener("click", () => dialog.close());
+  dialog.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const save = document.getElementById("quick-activity-save");
+    const status = document.getElementById("quick-activity-status");
+    if (!scheduleState.user) return;
+    save.disabled = true;
+    status.textContent = "Salvando...";
+    try {
+      let error;
+      if (kind === "lesson") {
+        const area = document.getElementById("quick-lesson-area").value.trim();
+        const materia = document.getElementById("quick-lesson-materia").value.trim();
+        const theme = document.getElementById("quick-lesson-theme").value.trim();
+        const date = document.getElementById("quick-lesson-date").value;
+        if (!area || !theme || !date) throw new Error("Preencha área, tema e data da aula.");
+        ({ error } = await scheduleSb.rpc("create_study_topic", { p_area: area, p_materia: materia || null, p_theme: theme, p_original_date: date, p_scheduled_date: date, p_import_id: null, p_deck_order: null }));
+      } else {
+        const title = document.getElementById("quick-event-title").value.trim();
+        const eventDate = document.getElementById("quick-event-date").value;
+        if (!title || !eventDate) throw new Error("Preencha título e data do evento.");
+        ({ error } = await scheduleSb.from("schedule_events").insert({ user_id: scheduleState.user.id, title, event_type: document.getElementById("quick-event-type").value, event_date: eventDate, event_time: document.getElementById("quick-event-time").value || null }));
+      }
+      if (error) throw error;
+      form.reset();
+      document.getElementById("quick-lesson-date").value = todayScheduleISO();
+      document.getElementById("quick-event-date").value = todayScheduleISO();
+      setKind("lesson");
+      dialog.close();
+      await loadTopics();
+    } catch (error) {
+      console.error(error);
+      status.textContent = error.message || "Não foi possível adicionar a atividade.";
+    } finally {
+      save.disabled = false;
+    }
   });
 }
 
@@ -5673,6 +5805,14 @@ function renderDeck() {
   const list = document.getElementById("deck-list");
 
   if (!panel || !count || !list) return;
+
+  // Mantém o Deck no fluxo principal, logo abaixo do calendário e antes das listas.
+  const calendarColumn = document.querySelector(".agenda-calendar-column");
+  const activityList = calendarColumn?.querySelector(".agenda-bottom-grid");
+  if (calendarColumn && panel.parentElement !== calendarColumn) {
+    calendarColumn.insertBefore(panel, activityList || null);
+  }
+  panel.classList.add("deck-panel-prominent");
 
   // O Deck só existe visualmente quando há aulas realmente sem data.
   // Isso acontece ao importar sem datas ou ao usar "Remover" no planejador.
@@ -8787,8 +8927,8 @@ function wireDynamicInteractions() {
   document.querySelectorAll("[data-agenda-scope]").forEach(button=>button.addEventListener("click",()=>{
     scheduleState.agendaScope=button.dataset.agendaScope; scheduleState.agendaSelected.clear();
     const title=document.getElementById("agenda-activities-title"), dateLabel=document.getElementById("agenda-today-date");
-    if(title) title.textContent=scheduleState.agendaScope==="overdue"?"Aulas atrasadas":"Atividades de hoje";
-    if(dateLabel) dateLabel.textContent=scheduleState.agendaScope==="overdue"?"Aulas pendentes":new Intl.DateTimeFormat("pt-BR",{weekday:"long",day:"2-digit",month:"long"}).format(startOfDaySchedule(new Date()));
+    if(title) title.textContent=scheduleState.agendaScope==="overdue"?"Aulas atrasadas":scheduleState.agendaScope==="all"?"Todas as aulas":"Atividades de hoje";
+    if(dateLabel) dateLabel.textContent=scheduleState.agendaScope==="overdue"?"Aulas pendentes":scheduleState.agendaScope==="all"?"Aulas programadas":new Intl.DateTimeFormat("pt-BR",{weekday:"long",day:"2-digit",month:"long"}).format(startOfDaySchedule(new Date()));
     document.querySelectorAll("[data-agenda-scope]").forEach(b=>b.classList.toggle("active",b===button)); renderAgendaSide(); wireDynamicInteractions();
   }));
   const bindStructuredFilter=(id,stateKey)=>{const el=document.getElementById(id);if(!el)return;el.value=scheduleState[stateKey]||"all";el.onchange=()=>{scheduleState[stateKey]=el.value;scheduleState.agendaSelected.clear();renderAgendaSide();wireDynamicInteractions();};};
@@ -8796,22 +8936,45 @@ function wireDynamicInteractions() {
   bindStructuredFilter("agenda-filter-theme","agendaThemeFilter");
   const agendaFilter=document.getElementById("agenda-activity-filter");
   if(agendaFilter){agendaFilter.value=scheduleState.agendaFilter;agendaFilter.onchange=()=>{scheduleState.agendaFilter=agendaFilter.value;scheduleState.agendaSelected.clear();renderAgendaSide();wireDynamicInteractions();};}
-  document.querySelectorAll("[data-agenda-select]").forEach(input=>input.addEventListener("change",()=>{input.checked?scheduleState.agendaSelected.add(input.dataset.agendaSelect):scheduleState.agendaSelected.delete(input.dataset.agendaSelect);const el=document.getElementById("agenda-selected-count");if(el)el.textContent=scheduleState.agendaSelected.size+" selecionadas";}));
-  const selectAll=document.getElementById("agenda-select-all"); if(selectAll) selectAll.onchange=()=>{document.querySelectorAll("[data-agenda-select]").forEach(input=>{input.checked=selectAll.checked;selectAll.checked?scheduleState.agendaSelected.add(input.dataset.agendaSelect):scheduleState.agendaSelected.delete(input.dataset.agendaSelect)});const el=document.getElementById("agenda-selected-count");if(el)el.textContent=scheduleState.agendaSelected.size+" selecionadas";};
+  const updateAgendaSelectedCount=()=>{const el=document.getElementById("agenda-selected-count");if(el)el.textContent=scheduleState.agendaSelected.size+" selecionada"+(scheduleState.agendaSelected.size===1?"":"s");};
+  document.querySelectorAll("[data-agenda-select]").forEach(input=>input.addEventListener("change",()=>{input.checked?scheduleState.agendaSelected.add(input.dataset.agendaSelect):scheduleState.agendaSelected.delete(input.dataset.agendaSelect);updateAgendaSelectedCount();}));
+  const selectAll=document.getElementById("agenda-select-all"); if(selectAll) selectAll.onchange=()=>{document.querySelectorAll("[data-agenda-select]").forEach(input=>{input.checked=selectAll.checked;selectAll.checked?scheduleState.agendaSelected.add(input.dataset.agendaSelect):scheduleState.agendaSelected.delete(input.dataset.agendaSelect)});updateAgendaSelectedCount();};
   const bulkUpdate=async(mode)=>{
     const keys=[...scheduleState.agendaSelected]; if(!keys.length){window.LuriaDialog?.alert("Selecione pelo menos uma atividade.");return;}
     const date=document.getElementById("agenda-bulk-date")?.value;
     if(mode==="date"&&!date){window.LuriaDialog?.alert("Escolha a nova data.");return;}
+    if(mode==="complete-today"||mode==="complete-origin"){
+      const topics=keys.filter(key=>key.startsWith("topic:")).map(key=>scheduleState.topics.find(topic=>String(topic.id)===key.slice(6))).filter(Boolean);
+      if(!topics.length){window.LuriaDialog?.alert("Selecione pelo menos uma aula para concluir.");return;}
+      const studiedOn=mode==="complete-today"?todayScheduleISO():null;
+      const datesWithoutOrigin=topics.filter(topic=>!studiedOn&&!(topic.studied_on||topic.original_date||topic.scheduled_date));
+      if(datesWithoutOrigin.length){window.LuriaDialog?.alert("Uma ou mais aulas não têm data de origem. Mova-as ou conclua-as individualmente.");return;}
+      const modeLabel=mode==="complete-today"?"hoje":"na data de origem";
+      const confirmed=await window.LuriaDialog.confirm("Concluir "+topics.length+" aula"+(topics.length===1?"":"s")+" "+modeLabel+" e agendar as revisões?");
+      if(!confirmed)return;
+      try{
+        for(const topic of topics){
+          const completionDate=studiedOn||topic.studied_on||topic.original_date||topic.scheduled_date;
+          const {error}=await scheduleSb.rpc("mark_topic_already_done",{p_topic_id:topic.id,p_studied_on:completionDate});
+          if(error)throw error;
+        }
+        scheduleState.agendaSelected.clear();
+        await loadTopics();
+      }catch(error){console.error(error);window.LuriaDialog?.alert("Não foi possível concluir as aulas e agendar as revisões.");}
+      return;
+    }
     for(const key of keys){const [source,id]=key.split(":");
       if(mode==="date"){
         if(source==="topic") await scheduleSb.from("study_topics").update({scheduled_date:date}).eq("id",id).eq("user_id",scheduleState.user.id);
         if(source==="event") await scheduleSb.from("schedule_events").update({event_date:date}).eq("id",id).eq("user_id",scheduleState.user.id);
         if(source==="error") await scheduleSb.from("error_notebook").update({due_date:date}).eq("id",id).eq("user_id",scheduleState.user.id);
-      } else if(mode==="complete"&&source==="topic"){await scheduleSb.from("study_topics").update({completed_at:new Date().toISOString()}).eq("id",id).eq("user_id",scheduleState.user.id);}
+      }
     }
     scheduleState.agendaSelected.clear(); await loadTopics();
   };
   const bulkDate=document.getElementById("agenda-bulk-reschedule");if(bulkDate)bulkDate.onclick=()=>bulkUpdate("date");
+  const bulkCompleteToday=document.getElementById("agenda-bulk-complete-today");if(bulkCompleteToday)bulkCompleteToday.onclick=()=>bulkUpdate("complete-today");
+  const bulkCompleteOrigin=document.getElementById("agenda-bulk-complete-origin");if(bulkCompleteOrigin)bulkCompleteOrigin.onclick=()=>bulkUpdate("complete-origin");
   const bulkDeck=document.getElementById("agenda-bulk-deck");if(bulkDeck)bulkDeck.onclick=async()=>{const keys=[...scheduleState.agendaSelected].filter(k=>k.startsWith("topic:"));if(!keys.length){window.LuriaDialog?.alert("Selecione pelo menos uma aula para remover ao deck.");return;}for(const key of keys){const id=key.split(":")[1];await scheduleSb.from("study_topics").update({status:"deck",scheduled_date:null}).eq("id",id).eq("user_id",scheduleState.user.id);}scheduleState.agendaSelected.clear();await loadTopics();};
   const bulkDelete=document.getElementById("agenda-bulk-delete");if(bulkDelete)bulkDelete.onclick=async()=>{const keys=[...scheduleState.agendaSelected];if(!keys.length){window.LuriaDialog?.alert("Selecione pelo menos uma atividade.");return;}if(!confirm("Apagar "+keys.length+" atividade(s)? Esta ação não pode ser desfeita."))return;for(const key of keys){const [source,id]=key.split(":");if(source==="topic")await scheduleSb.from("study_topics").delete().eq("id",id).eq("user_id",scheduleState.user.id);if(source==="event")await scheduleSb.from("schedule_events").delete().eq("id",id).eq("user_id",scheduleState.user.id);if(source==="error")await scheduleSb.from("error_notebook").delete().eq("id",id).eq("user_id",scheduleState.user.id);}scheduleState.agendaSelected.clear();await loadTopics();};
   const bindMonthFilter=(id,key)=>{const el=document.getElementById(id);if(!el)return;el.value=scheduleState[key]||"all";el.onchange=()=>{scheduleState[key]=el.value;renderMonthPlanner();wireDynamicInteractions();};};
@@ -9140,7 +9303,11 @@ function openAlreadyDoneDialog(topicId) {
   document.getElementById("already-done-title").textContent =
     topic.theme;
 
-  document.getElementById("already-done-date").value = "";
+  document.getElementById("already-done-date").value =
+    topic.studied_on
+    || topic.original_date
+    || topic.scheduled_date
+    || todayScheduleISO();
 
   document.getElementById("already-done-dialog").showModal();
 }

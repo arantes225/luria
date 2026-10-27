@@ -544,6 +544,54 @@
       font-weight: 750;
     }
 
+    .month-activity-with-menu {
+      position: relative;
+      overflow: visible;
+      padding-right: 31px;
+      white-space: normal;
+      text-overflow: clip;
+    }
+
+    .month-activity-with-menu > .month-activity-overflow {
+      top: 3px;
+      right: 3px;
+    }
+
+    .month-activity-with-menu .topic-overflow-trigger {
+      width: 22px;
+      height: 22px;
+      min-height: 22px;
+      padding: 0;
+      font-size: 15px;
+      line-height: 1;
+    }
+
+    .calendar-activity-move {
+      display: grid;
+      gap: 4px;
+      padding: 6px 9px 4px;
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 750;
+    }
+
+    .calendar-activity-move input {
+      width: 100%;
+      min-height: 30px;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 0 6px;
+      background: var(--surface);
+      color: var(--text);
+      font: inherit;
+    }
+
+    .agenda-bulk-actions .agenda-bulk-complete-origin {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
     .month-more {
       color: var(--muted);
       font-size: 8px;
@@ -4201,6 +4249,20 @@ body[data-page="cronograma"] .planner-today:hover{
       padding:8px!important;white-space:normal!important;
     }
   }
+
+  /* Ações do calendário e Deck visível no fluxo principal. */
+  body:not(.schedule-settings-embed) .month-planner{overflow:visible!important}
+  body:not(.schedule-settings-embed) .month-day{overflow:visible!important}
+  body:not(.schedule-settings-embed) .month-day:has(.month-activity-with-menu){z-index:4}
+  body:not(.schedule-settings-embed) .month-activity-with-menu{overflow:visible!important;padding-right:29px!important;white-space:normal!important;text-overflow:clip!important}
+  body:not(.schedule-settings-embed) .month-activity-with-menu::before{display:none!important}
+  body:not(.schedule-settings-embed) .month-activity-overflow{position:absolute!important;top:1px!important;right:2px!important;z-index:80!important}
+  body:not(.schedule-settings-embed) .month-activity-with-menu .topic-overflow-trigger{display:grid!important;place-items:center!important;width:21px!important;height:21px!important;min-height:21px!important;padding:0!important;border:0!important;border-radius:5px!important;background:transparent!important;color:currentColor!important;font-size:15px!important;line-height:1!important}
+  body:not(.schedule-settings-embed) .month-activity-with-menu .topic-overflow-menu{z-index:120!important;min-width:196px!important;white-space:normal!important}
+  body:not(.schedule-settings-embed) .calendar-activity-move{white-space:normal!important}
+  .deck-panel-prominent{margin-top:16px!important}
+  .deck-panel-prominent[hidden]{display:none!important}
+  .deck-panel-prominent .deck-list{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))!important}
 </style>
 
 </head>
@@ -4593,6 +4655,7 @@ body[data-page="cronograma"] .planner-today:hover{
                 <div class="agenda-activity-view-switch" role="group" aria-label="Período das atividades">
                   <button type="button" class="active" data-agenda-scope="today">Hoje</button>
                   <button type="button" data-agenda-scope="overdue">Atrasadas</button>
+                  <button type="button" data-agenda-scope="all">Todas</button>
                 </div>
               </div>
               <div id="agenda-bulk-tools" class="agenda-bulk-tools" hidden>
@@ -4606,6 +4669,8 @@ body[data-page="cronograma"] .planner-today:hover{
                 </div>
                 <div id="agenda-bulk-actions" class="agenda-bulk-actions">
                   <span id="agenda-selected-count">0 selecionadas</span>
+                  <button id="agenda-bulk-complete-today" type="button">Concluir hoje</button>
+                  <button id="agenda-bulk-complete-origin" class="agenda-bulk-complete-origin" type="button">Concluir na data de origem</button>
                   <input id="agenda-bulk-date" type="date" aria-label="Nova data">
                   <button id="agenda-bulk-reschedule" type="button">Mover</button>
                   <button id="agenda-bulk-deck" type="button">Remover para o deck</button>
@@ -5117,7 +5182,7 @@ body[data-page="cronograma"] .planner-today:hover{
 <script src="/assets/js/exam-priority.js?v=20261017-neutral1"></script>
 <script src="/assets/js/cronograma-base-data.js?v=12.6"></script>
 <script src="/assets/js/luria-lazy-vendors.js?v=1"></script>
-<script src="/assets/js/cronograma.js?v=20261024-date-shortcuts"></script>
+<script src="/assets/js/cronograma.js?v=20261026-calendar-actions-1"></script>
 <script src="/assets/js/google-calendar.js?v=3-side-lock"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
