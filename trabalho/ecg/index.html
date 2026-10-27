@@ -51,11 +51,19 @@
     .ecg-pre{margin:0;padding:14px;border-radius:12px;border:1px solid var(--border);background:var(--surface-2);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;white-space:pre-wrap;line-height:1.55}
     .ecg-lab{display:grid;gap:16px;margin-top:8px}
     .ecg-camera{display:grid;gap:12px}
-    .ecg-camera-stage{position:relative;max-width:760px;min-height:220px;background:#0f172a;border-radius:14px;overflow:hidden}
-    .ecg-camera-stage video{display:block;width:100%;max-height:480px;object-fit:contain}
-    .ecg-camera-guide{position:absolute;left:12%;right:12%;top:28%;bottom:28%;border:2px dashed #7dd3fc;border-radius:12px;pointer-events:none}
-    .ecg-camera-guide::after{content:"DII · enquadramento local";position:absolute;top:-28px;left:0;color:#bae6fd;font-size:12px;font-weight:800}
+    .ecg-camera-stage{position:relative;width:100%;min-height:220px;background:#0f172a;border-radius:14px;overflow:hidden}
+    .ecg-camera-stage video{display:block;width:100%;max-height:min(75vh,800px);object-fit:contain}
+    .ecg-camera-guide{display:none;position:absolute;left:6%;right:6%;top:27%;bottom:27%;border:2px dashed #7dd3fc;border-radius:12px;pointer-events:none}
+    .ecg-camera-stage.is-detail .ecg-camera-guide{display:block}
+    .ecg-camera-guide::after{content:"Derivação selecionada";position:absolute;top:-28px;left:0;color:#bae6fd;font-size:12px;font-weight:800}
     .ecg-camera-guidance{margin:0;padding:10px 12px;border-radius:10px;background:color-mix(in srgb,#0ea5e9 10%,var(--surface));color:var(--text);font-size:13px;line-height:1.45}
+    .ecg-camera-orientation{padding:11px 13px;border-radius:11px;background:color-mix(in srgb,#f59e0b 13%,var(--surface));color:var(--text);font-weight:800;font-size:14px}
+    .ecg-camera-map{display:grid;gap:10px;padding:14px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2)}
+    .ecg-camera-map[hidden]{display:none}
+    .ecg-camera-map [hidden]{display:none}
+    .ecg-camera-map img{max-width:100%;max-height:320px;object-fit:contain;justify-self:start;border-radius:9px;border:1px solid var(--border)}
+    .ecg-camera-map label{display:grid;gap:5px;font-size:13px;font-weight:700}
+    .ecg-camera-map select{max-width:360px;padding:9px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text)}
     @media(max-width:860px){.ecg-grid-2,.ecg-grid-3{grid-template-columns:1fr}}
   </style>
 </head>
@@ -85,9 +93,10 @@
         <section class="ecg-shell">
 
         <section class="ecg-card ecg-camera" aria-labelledby="ecg-camera-title">
-          <h2 id="ecg-camera-title">Scanner local — protótipo para DII</h2>
-          <p>A câmera é processada no aparelho. Não gravamos vídeo nem enviamos quadros continuamente. Nesta versão, a moldura e a qualidade são locais; a confirmação automática da identidade DII ainda não está habilitada.</p>
-          <div class="ecg-camera-stage">
+          <h2 id="ecg-camera-title">Scanner local do ECG</h2>
+          <p>Comece com a folha inteira na câmera. Depois do mapeamento, aproxime uma derivação por vez. As imagens ficam no aparelho até você escolher uma para revisão.</p>
+          <div id="ecg-camera-orientation" class="ecg-camera-orientation">Vire o celular para a horizontal e enquadre toda a folha.</div>
+          <div id="ecg-camera-stage" class="ecg-camera-stage">
             <video id="ecg-camera-video" playsinline muted aria-label="Prévia da câmera local"></video>
             <div class="ecg-camera-guide" aria-hidden="true"></div>
             <canvas id="ecg-camera-canvas" hidden></canvas>
@@ -96,11 +105,33 @@
             <button class="ecg-btn" id="ecg-camera-start" type="button">Abrir câmera local</button>
             <button class="ecg-btn secondary" id="ecg-camera-stop" type="button" disabled>Desligar câmera</button>
             <button class="ecg-btn secondary" id="ecg-camera-torch" type="button" disabled>Ligar lanterna</button>
-            <button class="ecg-btn" id="ecg-camera-capture" type="button" disabled>Capturar quadro</button>
+            <button class="ecg-btn" id="ecg-camera-capture" type="button" disabled>Mapear folha inteira</button>
           </div>
           <div id="ecg-camera-status" class="ecg-status">Câmera desligada.</div>
           <div id="ecg-camera-quality" class="ecg-status">A qualidade local aparecerá após abrir a câmera.</div>
-          <div id="ecg-camera-guidance" class="ecg-camera-guidance" aria-live="polite">Abra a câmera para receber orientação local de luz, foco e estabilidade.</div>
+          <div id="ecg-camera-guidance" class="ecg-camera-guidance" aria-live="polite">Abra a câmera para mapear o formato da folha.</div>
+          <div id="ecg-camera-map" class="ecg-camera-map" hidden>
+            <strong id="ecg-camera-layout-result">Formato ainda não identificado.</strong>
+            <img id="ecg-camera-map-preview" alt="Foto ampla do ECG para confirmar o formato">
+            <label>Confirme o formato da folha
+              <select id="ecg-camera-layout-select">
+                <option value="unknown">Não tenho certeza</option>
+                <option value="stacked">Derivações longas empilhadas</option>
+                <option value="columns">Várias derivações por linha</option>
+                <option value="other">Outro formato</option>
+              </select>
+            </label>
+            <button class="ecg-btn" id="ecg-camera-map-confirm" type="button">Continuar para as derivações</button>
+            <label id="ecg-camera-lead-field" hidden>Derivação visível agora
+              <select id="ecg-camera-lead">
+                <option value="">Selecione ou marque como não identificada</option>
+                <option value="unknown">Não identificada</option>
+                <option>DI</option><option>DII</option><option>DIII</option><option>aVR</option><option>aVL</option><option>aVF</option>
+                <option>V1</option><option>V2</option><option>V3</option><option>V4</option><option>V5</option><option>V6</option>
+              </select>
+            </label>
+            <div id="ecg-camera-captures" class="ecg-status" aria-live="polite"></div>
+          </div>
         </section>
 
         <section class="ecg-lab">
@@ -134,6 +165,7 @@
   <script src="/assets/js/trabalho-ecg.js?v=20261027-admin1"></script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
   <script defer src="/assets/js/ecg-reader.js?v=20261027-stage2"></script>
-  <script defer src="/assets/js/ecg-local-camera.js?v=20261027-camera1"></script>
+  <script defer src="/assets/js/ecg-layout.js?v=20261027-layout1"></script>
+  <script defer src="/assets/js/ecg-camera-map.js?v=20261027-map1"></script>
 </body>
 </html>
