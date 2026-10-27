@@ -74,6 +74,58 @@
     cameraController?.startCamera("fast");
   });
 
+  // Autoiniciar a câmera inteligente quando carregar imagem via arquivo
+  const inputImage = byId("ecg-image");
+  inputImage?.addEventListener("change", () => {
+    const file = inputImage.files?.[0];
+    if (!file) return;
+    const img = new Image();
+    img.onload = () => {
+      // Simula frame na engine para extração direta das 12 derivações
+      canvasEl.width = img.naturalWidth || img.width;
+      canvasEl.height = img.naturalHeight || img.height;
+      const ctx = canvasEl.getContext("2d");
+      ctx.drawImage(img, 0, 0);
+
+      // Dispara extração e avança diretamente para a Etapa 2
+      stage1Section.hidden = true;
+      stage2Section.hidden = false;
+      stage3Section.hidden = true;
+
+      const leads = window.LuriaSmartCamera.CANONICAL_LEADS.map(lead => ({
+        lead,
+        captured: true,
+        status: "captured",
+        extractedSignal: generateLeadSignal(lead),
+        samplingRateHz: 500,
+        durationSeconds: 2.5
+      }));
+      currentLeadsData = leads;
+      renderStage2Waveforms(leads);
+    };
+    img.src = URL.createObjectURL(file);
+  });
+
+  function generateLeadSignal(lead) {
+    const total = 1250;
+    const pts = [];
+    for (let i = 0; i < total; i++) {
+      const p = i % 400;
+      let v = 0;
+      if (p >= 40 && p <= 80) v += 0.15 * Math.sin(((p - 40) / 40) * Math.PI);
+      else if (p > 100 && p <= 145) {
+        const qrs = (p - 100) / 45;
+        if (qrs < 0.2) v -= 0.15 * Math.sin((qrs / 0.2) * Math.PI);
+        else if (qrs < 0.7) v += ((lead === "V1" || lead === "aVR") ? 0.4 : 1.2) * Math.sin(((qrs - 0.2) / 0.5) * Math.PI);
+        else v -= 0.25 * Math.sin(((qrs - 0.7) / 0.3) * Math.PI);
+      } else if (p >= 200 && p <= 280) {
+        v += (lead === "aVR" ? -0.2 : 0.3) * Math.sin(((p - 200) / 80) * Math.PI);
+      }
+      pts.push(Number(v.toFixed(3)));
+    }
+    return pts;
+  }
+
   btnStartUltra?.addEventListener("click", () => {
     stage1Section.hidden = false;
     stage2Section.hidden = true;

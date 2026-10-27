@@ -127,10 +127,10 @@
     const shadowRatio = shadowPixels / sampleCount;
     const contrastEnergy = highFrequencyEnergy / sampleCount;
 
-    // Critérios determinísticos de adequação ótica
-    const isSharp = sharpnessScore >= 80;
-    const isLightingGood = meanLuma >= 65 && meanLuma <= 225 && glareRatio < 0.12 && shadowRatio < 0.25;
-    const hasSufficientContrast = contrastEnergy > 0.04;
+    // Critérios adaptativos de adequação ótica (calibrados para câmera de celular em ambiente real)
+    const isSharp = sharpnessScore >= 35;
+    const isLightingGood = meanLuma >= 45 && meanLuma <= 245 && glareRatio < 0.25 && shadowRatio < 0.40;
+    const hasSufficientContrast = contrastEnergy > 0.015;
 
     return {
       sharpnessScore,
@@ -153,13 +153,13 @@
     const quality = analyzeFrameQuality(imageData);
 
     // Se nitidez e contraste globais forem muito baixos, papel não encontrado
-    if (quality.sharpnessScore < 45 || quality.brightness < 40) {
+    if (quality.sharpnessScore < 20 || quality.brightness < 35) {
       return {
         detected: false,
         confidence: 0,
         boundaries: null,
         detectedLayout: null,
-        message: "Localizando ECG..."
+        message: "Aponte para o ECG..."
       };
     }
 
@@ -176,7 +176,7 @@
 
     return {
       detected: true,
-      confidence: Math.min(1.0, quality.sharpnessScore / 180),
+      confidence: Math.min(1.0, quality.sharpnessScore / 100),
       boundaries,
       detectedLayout: STANDARD_LAYOUT_3X4,
       quality,
@@ -206,21 +206,23 @@
       const imageData = ctx.getImageData(0, 0, w, h);
       const frameQuality = analyzeFrameQuality(imageData);
 
-      // Verificação de estabilidade (diferença com frame anterior)
+      // Verificação de estabilidade (diferença suave entre frames sucessivos)
       const frameSample = (imageData.data[100] + imageData.data[w * 4 + 100] + imageData.data[(w * h * 2)]) % 1000;
       let motionBlur = false;
       if (previousFrameHash !== null) {
         const delta = Math.abs(frameSample - previousFrameHash);
-        if (delta > 280) {
-          stabilityCounter = Math.max(0, stabilityCounter - 2);
+        if (delta > 380) {
+          stabilityCounter = Math.max(0, stabilityCounter - 1);
           motionBlur = true;
         } else {
           stabilityCounter = Math.min(10, stabilityCounter + 1);
         }
+      } else {
+        stabilityCounter = 2;
       }
       previousFrameHash = frameSample;
 
-      const isStable = stabilityCounter >= 3;
+      const isStable = stabilityCounter >= 1;
 
       // Reconhecimento de layout e limites
       const docDetection = detectECGBoundaries(imageData);

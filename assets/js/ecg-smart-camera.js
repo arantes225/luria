@@ -177,13 +177,13 @@
 
       // 1. Verificação se a folha do ECG foi identificada
       if (!docDetection.detected) {
-        setHudMessage("Localizando ECG...");
+        setHudMessage("Aponte para o ECG...");
         setReticleStatus("searching");
         return;
       }
 
-      // 2. Se a folha foi detectada, mas está borrada por movimento
-      if (motionBlur || !isStable) {
+      // 2. Se a folha foi detectada, mas com movimento brusco
+      if (motionBlur && !isStable) {
         setHudMessage("Mantenha parado...");
         setReticleStatus("stabilizing");
         return;
@@ -191,32 +191,34 @@
 
       // 3. Avaliação de iluminação e reflexos
       if (!quality.isLightingGood) {
-        if (quality.glareRatio > 0.12) {
+        if (quality.glareRatio > 0.25) {
           setHudMessage("Evite reflexos na folha");
-        } else if (quality.brightness < 60) {
-          setHudMessage("Melhore a iluminação do ambiente");
+          setReticleStatus("adjusting");
+          return;
+        } else if (quality.brightness < 45) {
+          setHudMessage("Melhore a iluminação");
+          setReticleStatus("adjusting");
+          return;
         }
-        setReticleStatus("adjusting");
-        return;
       }
 
-      // 4. Avaliação de nitidez ótica determinística
-      if (!quality.isSharp) {
+      // 4. Se nitidez for muito reduzida
+      if (quality.sharpnessScore < 25) {
         setHudMessage("Aproxime um pouco para focar...");
         setReticleStatus("adjusting");
         return;
       }
 
-      // 5. Enquadramento e condições ideais alcançadas: Disparar Captura Autônoma
+      // 5. Enquadramento e condições ideais alcançadas: Disparar Captura Autônoma Imediata!
       setReticleStatus("aligned");
 
       if (mode === "fast") {
-        // No Modo Rápido: Uma fotografia nítida e enquadrada valida múltiplas ou todas as 12 derivações
-        setHudMessage("ECG identificado! Capturando exame completo...");
+        // No Modo Rápido: Uma fotografia nítida e enquadrada valida todas as 12 derivações
+        setHudMessage("ECG identificado! Capturando exame...", true);
         performAutonomousCapture(true);
       } else {
         // No Modo Ultrassensível: Conduz derivação por derivação
-        setHudMessage(`Mantenha parado... Capturando ${currentTargetLead}`);
+        setHudMessage(`Capturando ${currentTargetLead}...`, true);
         performAutonomousCapture(false);
       }
     }
