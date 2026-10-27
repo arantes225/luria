@@ -1,5 +1,5 @@
 /* Work hub presentation only. Tools and their contracts remain independent. */
-(() => {
+(async () => {
   const root = document.querySelector('body[data-page="trabalho_dashboard"] #work-dashboard-content');
   if (!root) return;
   const icon=(name)=>{
@@ -41,6 +41,21 @@
       ['clock', 'Histórico de PCR', 'Consulte registros de atendimentos.', 'pcr/historico/', 'slate']
     ]]
   ];
+  let isAdmin = false;
+  try {
+    if (typeof window.verificarAcessoAdmin === "function") {
+      isAdmin = await window.verificarAcessoAdmin();
+    } else if (window.supabaseClient) {
+      const { data } = await window.supabaseClient.rpc("is_admin");
+      isAdmin = data === true;
+    }
+  } catch (_) {
+    isAdmin = false;
+  }
+  if (isAdmin) {
+    groups[1][1].push(['ecg', 'ECG', 'Digitalização experimental e ferramentas de apoio — acesso administrativo.', 'ecg/', 'rose']);
+  }
+
   root.innerHTML = '<a class="work-hub-patient" href="/trabalho/paciente/"><span class="work-hub-patient-icon" aria-hidden="true">' + icon('users') + '</span><span class="work-hub-patient-copy"><strong>Paciente</strong><span>Centralize um contexto temporário e use as ferramentas sem repetir dados.</span></span><span class="work-hub-patient-action">Iniciar ou abrir <span aria-hidden="true">→</span></span></a>'
     + '<a class="work-hub-emergency" href="/trabalho/pcr/"><span class="work-hub-emergency-icon" aria-hidden="true">' + icon('ecg') + '</span><span class="work-hub-emergency-copy"><strong>Parada Cardiorrespiratória</strong><span>Acesso rápido à ferramenta de PCR.</span></span><span class="work-hub-emergency-action">Abrir PCR <span aria-hidden="true">→</span></span></a>'
     + groups.map(([title, tools], i) => '<section class="work-hub-category" aria-labelledby="work-category-' + i + '"><h2 id="work-category-' + i + '">' + title + '</h2><div class="work-hub-grid">' + tools.map(([visual, name, description, route, color]) => '<a class="work-hub-card" href="/trabalho/' + route + '"><span class="work-hub-icon" data-work-color="' + color + '">' + icon(visual) + '</span><span class="work-hub-copy"><strong>' + name + '</strong><span>' + description + '</span></span><span class="work-hub-arrow" aria-hidden="true">→</span></a>').join('') + '</div></section>').join('');

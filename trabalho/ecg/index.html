@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
   <style>
     .ecg-shell{display:grid;gap:16px}
+    body.is-admin-pending .ecg-shell,body.is-admin-pending .ecg-lab,body.is-admin-denied .ecg-shell,body.is-admin-denied .ecg-lab{display:none}
+    #ecg-admin-gate{margin-top:16px}
     .ecg-tabs{display:flex;gap:8px;flex-wrap:wrap}
     .ecg-tab{border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:12px;padding:9px 14px;font-weight:800;font-size:13px;cursor:pointer;transition:.15s}
     .ecg-tab.is-active{background:var(--accent);border-color:var(--accent);color:#fff}
@@ -56,7 +58,7 @@
     @media(max-width:860px){.ecg-grid-2,.ecg-grid-3{grid-template-columns:1fr}}
   </style>
 </head>
-<body data-page="trabalho_ecg" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
+<body class="is-admin-pending" data-page="trabalho_ecg" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
   <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
   <script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
   <div class="app-shell">
@@ -73,6 +75,10 @@
             <strong data-page-title>ECG no Plantão</strong>
             <small class="luria-page-spotlight-helper">Leitura sistemática em 7 passos, localização de parede culpada no IAM, Sgarbossa, bloqueios, taquiarritmias, gerador de laudo e leitor por IA.</small>
           </div>
+        </section>
+
+        <section id="ecg-admin-gate" aria-live="polite">
+          <article class="ecg-card"><h2>Validando acesso administrativo…</h2><p>Aguarde um instante.</p></article>
         </section>
 
         <section class="ecg-shell">
@@ -435,7 +441,8 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
-  <script src="/assets/js/trabalho-ecg.js?v=20261026"></script>
+  <script src="/assets/js/ecg-admin-guard.js?v=20261027-admin1"></script>
+  <script src="/assets/js/trabalho-ecg.js?v=20261027-admin1"></script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
   <script defer src="/assets/js/ecg-reader.js?v=1"></script>
 </body>
