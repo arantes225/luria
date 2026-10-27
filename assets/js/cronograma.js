@@ -7914,6 +7914,11 @@ function renderThemeLibrary() {
           ? `Concluída · ${formatTopicDate(topic)}`
           : formatTopicDate(topic);
 
+      const blockLabel =
+        topic.bloco
+          ? `Bloco ${topic.bloco}`
+          : "";
+
       const examPriority = window.LuriaExamPriority?.evaluate(
         topic.theme,
         topic.area,
@@ -7948,6 +7953,10 @@ function renderThemeLibrary() {
                 || "Sem matéria"
               )}
             </small>
+            <div class="theme-library-quick-meta">
+              <span class="theme-library-meta-date ${isDeck ? "deck" : ""}">Data · ${escapeScheduleHtml(dateLabel)}</span>
+              ${blockLabel ? `<span class="theme-library-meta-block">${escapeScheduleHtml(blockLabel)}</span>` : ""}
+            </div>
             ${examPriorityLabel ? `
               <em class="exam-priority-badge ${examPriority.tier}">
                 ${examPriorityLabel} · ${examPriority.coverage}/${examPriority.total}
@@ -7956,23 +7965,18 @@ function renderThemeLibrary() {
           </div>
 
           <div class="theme-library-cell hide-medium">
-            ${escapeScheduleHtml(
-              topic.area
-              || "Sem área"
-            )}
+            <span>Área</span>
+            <strong>${escapeScheduleHtml(topic.area || "Sem área")}</strong>
           </div>
 
           <div class="theme-library-cell hide-medium">
-            ${escapeScheduleHtml(
-              topic.materia
-              || "—"
-            )}
+            <span>Bloco</span>
+            <strong>${escapeScheduleHtml(blockLabel || "Sem bloco")}</strong>
           </div>
 
           <div class="theme-library-date ${isDeck ? "deck" : ""} ${isCompleted ? "completed" : ""}">
-            ${escapeScheduleHtml(
-              dateLabel
-            )}
+            <span>Data</span>
+            <strong>${escapeScheduleHtml(dateLabel)}</strong>
           </div>
 
           <div class="theme-library-actions">
