@@ -605,7 +605,7 @@ function parseWorkbookRows(matrix, sheetName) {
 
     const date = parseExcelDate(rawDate);
     if (blockParser?.(bloco)) currentBlock = bloco;
-    if (!date && !area && !materia && !cleanText(rawDone) && !cleanText(rawStudiedDate)) {
+    if (!date && !cleanText(rawDone) && !cleanText(rawStudiedDate)) {
       if (!theme && blockParser?.(bloco)) continue;
       if (!bloco && blockParser?.(theme) && !/^\d+$/.test(theme)) {
         currentBlock = theme;
