@@ -419,13 +419,14 @@
         <section class="ecg-lab">
           <article class="ecg-card">
             <h2>Leitor de ECG por IA</h2>
-            <p>Envie uma imagem do ECG para receber sugestões de achados. A saída é um apoio à revisão médica e não substitui o médico.</p>
+            <p><strong>Etapa 1 — Capturar e revisar.</strong> Confira a imagem original, a legibilidade e o enquadramento antes de avançar. A interpretação abaixo é uma etapa separada, baseada nesta imagem, não em um sinal digital validado.</p>
             <div class="ecg-actions">
               <label class="ecg-btn secondary" for="ecg-image">Selecionar imagem do ECG</label>
               <input id="ecg-image" type="file" accept="image/jpeg,image/png,image/webp" hidden>
-              <button class="ecg-btn" id="ecg-analyze" disabled>Analisar com IA</button>
+              <button class="ecg-btn" id="ecg-analyze" disabled>Etapa 2 — Interpretar imagem</button>
             </div>
             <div id="ecg-file-name" class="ecg-status">Nenhum ECG selecionado.</div>
+            <label class="ecg-review-check"><input id="ecg-review-confirm" type="checkbox"> Revisei a imagem original e confirmo que ela está legível para uma tentativa de interpretação.</label>
             <img id="ecg-image-preview" alt="Prévia do ECG selecionado" style="display:none;max-width:100%;max-height:520px;border-radius:12px;border:1px solid var(--border);margin-top:12px">
             <div id="ecg-status" class="ecg-status" aria-live="polite"></div>
           </article>
