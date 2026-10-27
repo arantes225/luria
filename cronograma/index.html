@@ -4278,6 +4278,15 @@ body[data-page="cronograma"] .planner-today:hover{
   .theme-library-cell>span,.theme-library-date>span{color:var(--muted);font-size:8px;font-weight:800;letter-spacing:.03em;text-transform:uppercase}
   .theme-library-cell>strong,.theme-library-date>strong{font-size:10px;line-height:1.3}
   @media(max-width:560px){.theme-filter-fields-grid{grid-template-columns:1fr}.theme-filter-menu{right:auto;left:0}.theme-library-quick-meta span{font-size:8px}}
+
+  /* Seleção em lote: só revela checkboxes quando solicitada. */
+  .theme-selection-toggle{min-height:34px;padding:0 12px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text);font-size:10px;font-weight:850;cursor:pointer}
+  .theme-selection-toggle[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
+  .theme-selection-controls{display:flex;align-items:center;gap:10px;flex:1;min-width:0}
+  .theme-selection-controls[hidden]{display:none!important}
+  .theme-library-select{display:none!important}
+  .theme-library-row.selection-mode .theme-library-select{display:flex!important}
+  @media(max-width:760px){.theme-library-bulk{align-items:center}.theme-selection-controls{flex-wrap:wrap;width:100%}}
 </style>
 
 </head>
@@ -4963,6 +4972,8 @@ body[data-page="cronograma"] .planner-today:hover{
 
 
             <div class="theme-library-bulk">
+              <button id="theme-selection-toggle" class="theme-selection-toggle" type="button" aria-pressed="false">Selecionar</button>
+              <div id="theme-selection-controls" class="theme-selection-controls" hidden>
 
               <label class="theme-bulk-check">
 
@@ -4972,7 +4983,7 @@ body[data-page="cronograma"] .planner-today:hover{
                 >
 
                 <span>
-                  Selecionar visíveis
+                  Selecionar todas
                 </span>
 
               </label>
@@ -5043,6 +5054,9 @@ body[data-page="cronograma"] .planner-today:hover{
               </div>
 
             </div>
+
+            
+              </div>
 
             <div id="theme-library-list" class="theme-library-list"></div>
             </div>
