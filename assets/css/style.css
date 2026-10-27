@@ -202,6 +202,11 @@ button:disabled { cursor: not-allowed; opacity: .65; }
   font-weight: 750;
 }
 
+.button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .button.primary {
   background: linear-gradient(135deg, #184888, #2563EB) !important;
   color: #ffffff !important;
