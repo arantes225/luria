@@ -8,6 +8,7 @@
   const capture = document.getElementById("ecg-camera-capture");
   const status = document.getElementById("ecg-camera-status");
   const quality = document.getElementById("ecg-camera-quality");
+  const guidance = document.getElementById("ecg-camera-guidance");
   if (!video || !canvas || !start) return;
 
   let stream = null;
@@ -16,6 +17,7 @@
   let stableFrames = 0;
   const ctx = canvas.getContext("2d", { willReadFrequently: true });
   const setStatus = (text, kind = "") => { status.textContent = text; status.className = "ecg-status" + (kind ? " " + kind : ""); };
+  const setGuidance = (text) => { if (guidance) guidance.textContent = text; };
 
   const inspectFrame = () => {
     if (!video.videoWidth || !video.videoHeight) return;
@@ -36,6 +38,12 @@
     stableFrames = usable ? stableFrames + 1 : 0;
     quality.textContent = "Luz " + Math.round(brightness) + "/255 · textura " + texture.toFixed(1) + " · " + (usable ? "quadro aproveitável" : "ajuste luz, distância ou foco");
     quality.className = "ecg-status " + (usable ? "ok" : "error");
+    if (brightness <= 35) setGuidance("Aumente a iluminação ou abra a lanterna se o aparelho permitir.");
+    else if (brightness >= 235) setGuidance("Há luz excessiva ou reflexo. Afaste a lanterna e incline levemente o celular.");
+    else if (texture <= 3) setGuidance("Aproxime devagar ou aguarde o foco; a câmera ainda não vê textura suficiente do traçado.");
+    else if (stableFrames < 5) setGuidance("Mantenha DII dentro da moldura e segure o celular firme por mais alguns instantes.");
+    else setGuidance("Quadro estável para captura. A identidade DII ainda precisa ser conferida visualmente.");
+    capture.disabled = stableFrames < 5;
     if (stableFrames >= 5) setStatus("Enquadramento estável. A confirmação automática de DII ainda não está habilitada.", "ok");
   };
 
@@ -50,7 +58,7 @@
       if (caps.torch) { settings.push("lanterna"); torch.disabled = false; }
       setStatus("Câmera local ativa. Nenhum quadro é enviado para a nuvem.", "ok");
       quality.textContent = "Recursos detectados: " + (settings.join(", ") || "básicos");
-      start.disabled = true; stop.disabled = false; capture.disabled = false;
+      start.disabled = true; stop.disabled = false; capture.disabled = true;
       timer = window.setInterval(inspectFrame, 200);
     } catch (error) {
       setStatus("Câmera indisponível ou permissão negada. Use o upload manual.", "error");
@@ -60,6 +68,7 @@
     window.clearInterval(timer); timer = null; stream?.getTracks().forEach(t => t.stop()); stream = null; track = null;
     video.srcObject = null; start.disabled = false; stop.disabled = true; capture.disabled = true; torch.disabled = true; stableFrames = 0;
     setStatus("Câmera desligada.", "");
+    setGuidance("Abra a câmera para receber orientação local de luz, foco e estabilidade.");
   });
   torch.addEventListener("click", async () => {
     if (!track?.getCapabilities) return;
