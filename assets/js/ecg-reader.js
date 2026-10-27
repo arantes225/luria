@@ -6,17 +6,20 @@
   const fileName = document.getElementById("ecg-file-name");
   const status = document.getElementById("ecg-status");
   const resultCard = document.getElementById("ecg-result-card");
+  const review = document.getElementById("ecg-review-confirm");
   const result = document.getElementById("ecg-result");
   if (!input || !analyze) return;
   let selected = null;
+  const canAnalyze = () => Boolean(selected && (!review || review.checked));
   const setStatus = (message, kind = "") => { status.textContent = message; status.className = "ecg-status" + (kind ? " " + kind : ""); };
   input.addEventListener("change", () => {
-    selected = input.files?.[0] || null; analyze.disabled = !selected; resultCard.hidden = true;
+    selected = input.files?.[0] || null; if (review) review.checked = false; analyze.disabled = !canAnalyze(); resultCard.hidden = true;
     if (!selected) { fileName.textContent = "Nenhum ECG selecionado."; preview.style.display = "none"; return; }
     fileName.textContent = selected.name; preview.src = URL.createObjectURL(selected); preview.style.display = "block"; setStatus("Imagem pronta para análise.", "ok");
   });
+  review?.addEventListener("change", () => { analyze.disabled = !canAnalyze(); });
   analyze.addEventListener("click", async () => {
-    if (!selected || !client?.functions) return;
+    if (!canAnalyze() || !client?.functions) return;
     analyze.disabled = true; setStatus("Analisando ECG com IA...");
     try {
       const dataUrl = await new Promise((resolve, reject) => { const reader = new FileReader(); reader.onload = () => resolve(String(reader.result || "").split(",")[1] || ""); reader.onerror = reject; reader.readAsDataURL(selected); });
