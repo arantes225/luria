@@ -1,5 +1,5 @@
 
-  function renderIntegratedRecipes(r) {
+  function renderIntegratedRecipes(r, recipesBank, norm, esc) {
     const slugs = Array.isArray(r.linked_recipe_slugs) ? r.linked_recipe_slugs : [];
     // Busca receitas pelo slug vinculado ou por título similar
     const matchedRecipes = recipesBank.filter(rb => 
@@ -301,7 +301,7 @@
       ${renderImages(r.image_assets)}
       ${renderDecisionFlow(r.decision_flow)}
       ${listSection("Tratamento", r.treatment, "treatment")}
-      ${renderIntegratedRecipes(r)}
+      ${renderIntegratedRecipes(r, recipesBank, norm, esc)}
       ${getProtocolCalculators(r)}
       ${getDischargeInstructions(r)}
       ${drugs.length ? `<section class="protocol-section"><h3>Medicamentos relacionados</h3><div class="protocol-drugs">${drugs.map((d) => `<button type="button" data-drug="${esc(d)}">${esc(d)} <span>↗</span></button>`).join("")}</div></section>` : ""}
