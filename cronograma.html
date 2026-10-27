@@ -4263,6 +4263,21 @@ body[data-page="cronograma"] .planner-today:hover{
   .deck-panel-prominent{margin-top:16px!important}
   .deck-panel-prominent[hidden]{display:none!important}
   .deck-panel-prominent .deck-list{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))!important}
+
+  /* Lista de aulas: filtros agrupados e metadados sempre visíveis. */
+  .theme-filter-menu{width:min(420px,calc(100vw - 28px))!important;gap:14px!important}
+  .theme-filter-section{display:grid;gap:8px;padding:11px;border:1px solid var(--border);border-radius:11px;background:var(--surface-2)}
+  .theme-filter-section-title{color:var(--text);font-size:10px;font-weight:850;letter-spacing:.03em;text-transform:uppercase}
+  .theme-filter-fields-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .theme-filter-menu-actions{padding-top:2px;align-items:center}
+  .theme-library-quick-meta{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+  .theme-library-quick-meta span{display:inline-flex;align-items:center;min-height:21px;padding:0 7px;border:1px solid var(--border);border-radius:999px;background:var(--surface-2);color:var(--muted);font-size:8px;font-weight:800}
+  .theme-library-quick-meta .theme-library-meta-date{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 35%,var(--border));background:var(--accent-soft)}
+  .theme-library-quick-meta .theme-library-meta-date.deck{color:var(--accent)}
+  .theme-library-cell,.theme-library-date{display:grid;gap:3px}
+  .theme-library-cell>span,.theme-library-date>span{color:var(--muted);font-size:8px;font-weight:800;letter-spacing:.03em;text-transform:uppercase}
+  .theme-library-cell>strong,.theme-library-date>strong{font-size:10px;line-height:1.3}
+  @media(max-width:560px){.theme-filter-fields-grid{grid-template-columns:1fr}.theme-filter-menu{right:auto;left:0}.theme-library-quick-meta span{font-size:8px}}
 </style>
 
 </head>
@@ -4887,115 +4902,33 @@ body[data-page="cronograma"] .planner-today:hover{
                 >
 
                   <div class="theme-filter-menu-head">
-
                     <div>
-                      <strong>Filtros</strong>
-
-                      <small>
-                        Área, bloco, status e período
-                      </small>
+                      <strong>Filtrar aulas</strong>
+                      <small>Combine os campos abaixo para encontrar a aula certa.</small>
                     </div>
-
-
-                    <button
-                      id="theme-filter-menu-close"
-                      class="theme-filter-menu-close"
-                      type="button"
-                      aria-label="Fechar filtros"
-                    >
-                      ×
-                    </button>
-
+                    <button id="theme-filter-menu-close" class="theme-filter-menu-close" type="button" aria-label="Fechar filtros">×</button>
                   </div>
 
+                  <section class="theme-filter-section">
+                    <span class="theme-filter-section-title">Organização</span>
+                    <div class="theme-filter-fields-grid">
+                      <label class="theme-filter-field"><span>Área</span><select id="theme-area-filter" data-luria-area-select data-blank-label="Todas as áreas"><option value="">Todas as áreas</option></select></label>
+                      <label class="theme-filter-field"><span>Bloco</span><select id="theme-block-filter" aria-label="Filtrar por bloco"><option value="">Todos os blocos</option></select></label>
+                    </div>
+                  </section>
 
-                  <label class="theme-filter-field">
+                  <section class="theme-filter-section">
+                    <span class="theme-filter-section-title">Status</span>
+                    <label class="theme-filter-field"><span>Conclusão</span><select id="theme-completion-filter" aria-label="Filtrar por conclusão"><option value="all">Feitas e não feitas</option><option value="pending">Não feitas</option><option value="completed">Feitas</option></select></label>
+                  </section>
 
-                    <span>Área</span>
-
-                    <select
-                      id="theme-area-filter"
-                      data-luria-area-select
-                      data-blank-label="Todas as áreas"
-                    >
-                      <option value="">
-                        Todas as áreas
-                      </option>
-                    </select>
-
-                  </label>
-
-
-                  <label class="theme-filter-field">
-
-                    <span>Bloco</span>
-
-                    <select
-                      id="theme-block-filter"
-                      aria-label="Filtrar por bloco"
-                    >
-                      <option value="">
-                        Todos os blocos
-                      </option>
-                    </select>
-
-                  </label>
-
-
-                  <label class="theme-filter-field">
-
-                    <span>Status</span>
-
-                    <select
-                      id="theme-completion-filter"
-                      aria-label="Filtrar por conclusão"
-                    >
-                      <option value="all">
-                        Feitos e não feitos
-                      </option>
-
-                      <option value="pending">
-                        Não feitos
-                      </option>
-
-                      <option value="completed">
-                        Feitos
-                      </option>
-
-                    </select>
-
-                  </label>
-
-
-                  <div class="theme-filter-date-grid">
-
-                    <label class="theme-filter-field">
-
-                      <span>De</span>
-
-                      <input
-                        id="theme-date-from"
-                        type="date"
-                        aria-label="Data inicial"
-                      >
-
-                    </label>
-
-
-                    <label class="theme-filter-field">
-
-                      <span>Até</span>
-
-                      <input
-                        id="theme-date-to"
-                        type="date"
-                        aria-label="Data final"
-                      >
-
-                    </label>
-
-                  </div>
-
+                  <section class="theme-filter-section">
+                    <span class="theme-filter-section-title">Período programado</span>
+                    <div class="theme-filter-date-grid">
+                      <label class="theme-filter-field"><span>De</span><input id="theme-date-from" type="date" aria-label="Data inicial"></label>
+                      <label class="theme-filter-field"><span>Até</span><input id="theme-date-to" type="date" aria-label="Data final"></label>
+                    </div>
+                  </section>
 
                   <div class="theme-filter-menu-actions">
 
