@@ -55,6 +55,11 @@
     .ecg-output{padding:12px 14px;border-radius:11px;border:1px solid var(--border);background:color-mix(in srgb,var(--accent) 6%,var(--surface));font-weight:700;font-size:13px;line-height:1.5}
     .ecg-pre{margin:0;padding:14px;border-radius:12px;border:1px solid var(--border);background:var(--surface-2);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;white-space:pre-wrap;line-height:1.55}
     .ecg-lab{display:grid;gap:16px;margin-top:8px}
+    .ecg-camera{display:grid;gap:12px}
+    .ecg-camera-stage{position:relative;max-width:760px;min-height:220px;background:#0f172a;border-radius:14px;overflow:hidden}
+    .ecg-camera-stage video{display:block;width:100%;max-height:480px;object-fit:contain}
+    .ecg-camera-guide{position:absolute;left:12%;right:12%;top:28%;bottom:28%;border:2px dashed #7dd3fc;border-radius:12px;pointer-events:none}
+    .ecg-camera-guide::after{content:"DII · protótipo de enquadramento";position:absolute;top:-28px;left:0;color:#bae6fd;font-size:12px;font-weight:800}
     @media(max-width:860px){.ecg-grid-2,.ecg-grid-3{grid-template-columns:1fr}}
   </style>
 </head>
@@ -416,6 +421,24 @@
           </div>
         </section>
 
+        <section class="ecg-card ecg-camera" aria-labelledby="ecg-camera-title">
+          <h2 id="ecg-camera-title">Scanner local — protótipo para DII</h2>
+          <p>A câmera é processada no aparelho. Não gravamos vídeo nem enviamos quadros continuamente. Nesta versão, a moldura e a qualidade são locais; a confirmação automática da identidade DII ainda não está habilitada.</p>
+          <div class="ecg-camera-stage">
+            <video id="ecg-camera-video" playsinline muted aria-label="Prévia da câmera local"></video>
+            <div class="ecg-camera-guide" aria-hidden="true"></div>
+            <canvas id="ecg-camera-canvas" hidden></canvas>
+          </div>
+          <div class="ecg-actions">
+            <button class="ecg-btn" id="ecg-camera-start" type="button">Abrir câmera local</button>
+            <button class="ecg-btn secondary" id="ecg-camera-stop" type="button" disabled>Desligar câmera</button>
+            <button class="ecg-btn secondary" id="ecg-camera-torch" type="button" disabled>Ligar lanterna</button>
+            <button class="ecg-btn" id="ecg-camera-capture" type="button" disabled>Capturar quadro</button>
+          </div>
+          <div id="ecg-camera-status" class="ecg-status">Câmera desligada.</div>
+          <div id="ecg-camera-quality" class="ecg-status">A qualidade local aparecerá após abrir a câmera.</div>
+        </section>
+
         <section class="ecg-lab">
           <article class="ecg-card">
             <h2>Leitor de ECG por IA</h2>
@@ -446,6 +469,7 @@
   <script src="/assets/js/ecg-admin-guard.js?v=20261027-admin1"></script>
   <script src="/assets/js/trabalho-ecg.js?v=20261027-admin1"></script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
-  <script defer src="/assets/js/ecg-reader.js?v=1"></script>
+  <script defer src="/assets/js/ecg-reader.js?v=20261027-stage2"></script>
+  <script defer src="/assets/js/ecg-local-camera.js?v=20261027-camera1"></script>
 </body>
 </html>
