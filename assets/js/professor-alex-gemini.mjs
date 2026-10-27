@@ -211,6 +211,45 @@ function escapeHtml(str) {
     .replace(/'/g, '&#039;');
 }
 
+function formatAlexResponse(value) {
+  if (!document.getElementById('alex-rich-response-styles')) {
+    const style = document.createElement('style');
+    style.id = 'alex-rich-response-styles';
+    style.textContent = '.alex-rich-response p{margin:0 0 10px;line-height:1.58}.alex-rich-response p:last-child{margin-bottom:0}.alex-response-heading{margin:14px 0 7px;color:var(--text);font-size:1.08rem;line-height:1.3;font-weight:650}.alex-response-heading:first-child{margin-top:0}.alex-rich-response strong{color:var(--text);font-weight:700}.alex-rich-response em{font-style:italic}.alex-response-list{margin:7px 0 12px;padding-left:24px}.alex-response-list li{margin:6px 0;line-height:1.55}.alex-response-list li::marker{color:var(--accent);font-weight:700}';
+    document.head.appendChild(style);
+  }
+  const lines = String(value || '').replace(/\r/g, '').split('\n');
+  const blocks = [];
+  let listType = null;
+  const closeList = () => {
+    if (listType) blocks.push(`</${listType}>`);
+    listType = null;
+  };
+  const inline = line => escapeHtml(line)
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/__(.+?)__/g, '<strong>$1</strong>')
+    .replace(/\*([^*\n]+)\*/g, '<em>$1</em>')
+    .replace(/_([^_\n]+)_/g, '<em>$1</em>');
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+    if (!line) { closeList(); continue; }
+    const heading = line.match(/^#{1,3}\s+(.+)$/);
+    const numbered = line.match(/^\d+[.)]\s+(.+)$/);
+    const bulleted = line.match(/^[-*•]\s+(.+)$/);
+    if (heading) { closeList(); blocks.push(`<h3 class="alex-response-heading">${inline(heading[1])}</h3>`); continue; }
+    if (numbered || bulleted) {
+      const nextType = numbered ? 'ol' : 'ul';
+      if (listType !== nextType) { closeList(); listType = nextType; blocks.push(`<${listType} class="alex-response-list">`); }
+      blocks.push(`<li>${inline((numbered || bulleted)[1])}</li>`);
+      continue;
+    }
+    closeList();
+    blocks.push(`<p>${inline(line)}</p>`);
+  }
+  closeList();
+  return blocks.join('');
+}
+
 function appendUserMessage(text) {
   const feed = document.getElementById("alex-chat-feed");
   if (!feed) return;
@@ -244,7 +283,7 @@ function display(message, title = "Professor Alex", isError = false) {
     const headerTitle = isError ? 'Aviso' : 'Professor Alex';
     const errorStyle = isError ? ' style="border-left: 4px solid var(--danger);"' : '';
     msg.innerHTML = '<div class="alex-msg-header"><span class="response-icon">🎓</span><span>' + headerTitle + '</span></div>' +
-      '<div class="alex-msg-bubble"' + errorStyle + '>' + escapeHtml(message).replace(/\n/g, '<br>') + '</div>';
+      '<div class="alex-msg-bubble alex-rich-response"' + errorStyle + '>' + formatAlexResponse(message) + '</div>';
     feed.appendChild(msg);
     feed.scrollTop = feed.scrollHeight;
   }
