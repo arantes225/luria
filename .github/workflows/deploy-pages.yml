@@ -52,7 +52,7 @@ jobs:
       - name: Audit all apostilas without blocking legacy books
         run: node scripts/audit-apostilas-batch.cjs
       - name: Run release-blocking frontend regressions
-        run: node --test --test-isolation=none tests/stage77-functional.test.cjs tests/stage77-questions.test.cjs tests/stage77-integrity.test.cjs tests/client-persistence.test.cjs tests/quick-chart.test.cjs tests/quick-chart-ocr.test.cjs tests/quick-chart-fixed-access.test.cjs tests/lazy-vendors.test.cjs tests/sheetjs-mini.test.cjs tests/professor-alex-integration.test.cjs tests/professor-alex-startup.test.cjs tests/trabalho-exames.test.cjs tests/trabalho-exames-view.test.cjs
+        run: node --test --test-isolation=none tests/stage77-functional.test.cjs tests/stage77-questions.test.cjs tests/stage77-integrity.test.cjs tests/client-persistence.test.cjs tests/quick-chart.test.cjs tests/quick-chart-ocr.test.cjs tests/quick-chart-fixed-access.test.cjs tests/lazy-vendors.test.cjs tests/sheetjs-mini.test.cjs tests/professor-alex-integration.test.cjs tests/professor-alex-startup.test.cjs tests/trabalho-exames.test.cjs tests/trabalho-exames-view.test.cjs tests/frontend-xss.test.cjs
       - name: Validate schedule block imports
         run: node --test tests/schedule-block-import.test.cjs tests/cronograma-block-integration.test.cjs
   # Editorial, image-license and external pairing regressions are release gates.
