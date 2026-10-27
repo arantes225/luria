@@ -29,12 +29,12 @@ test("imports spreadsheet block headings and schedules their lessons from the ch
   });
   vm.runInContext(fs.readFileSync(path.join(__dirname, "../assets/js/cronograma.js"), "utf8"), context);
   const matrix = [
-    ["Bloco", "Aula", "Data"],
-    ["Bloco 1", "", ""],
-    ["", "Hipertensão", ""],
-    ["", "Diabetes", ""],
-    ["Bloco 2", "", ""],
-    ["", "Hipertensão", ""]
+    ["Bloco", "Aula", "Data", "Área"],
+    ["Bloco 1", "", "", "Clínica Médica"],
+    ["", "Hipertensão", "", "Clínica Médica"],
+    ["", "Diabetes", "", "Clínica Médica"],
+    ["Bloco 2", "", "", "Clínica Médica"],
+    ["", "Hipertensão", "", "Clínica Médica"]
   ];
   context.matrix = matrix;
   const parsed = vm.runInContext('parseWorkbookRows(matrix, "Cronograma").rows', context);
