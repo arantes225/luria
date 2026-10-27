@@ -1,4 +1,18 @@
 (()=>{
+  // ⚡ Bolt: Debounce utility for delaying expensive operations like rendering
+  // Impact: Reduces unnecessary synchronous DOM updates and main thread blocking on rapid typing.
+  function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func.apply(this, args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+
   const search=document.getElementById('drug-search');
   const list=document.getElementById('drug-list');
   const detail=document.getElementById('drug-detail');
@@ -314,7 +328,7 @@
     });
   });
   window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(true); });
-  search.addEventListener('input',renderList);
+  search.addEventListener('input',debounce(renderList, 300));
   (async()=>{
     const localSeeds=Array.isArray(window.LURIA_BULARIO_SEEDS)?window.LURIA_BULARIO_SEEDS:[];
     const localProtoSeeds=Array.isArray(window.LURIA_PROTOCOL_SEEDS)?window.LURIA_PROTOCOL_SEEDS:[];
