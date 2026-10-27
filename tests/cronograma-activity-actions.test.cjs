@@ -31,3 +31,11 @@ test("bulk completion supports today and the original study date", () => {
   assert.match(source, /agendaScope===\"all\"/);
 });
 
+test("lesson rows expose their date and block when one is available", () => {
+  assert.match(source, /const blockLabel =/);
+  assert.match(source, /theme-library-meta-date/);
+  assert.match(source, /theme-library-meta-block/);
+  assert.match(source, /<span>Bloco<\/span>/);
+  assert.match(source, /<span>Data<\/span>/);
+});
+
