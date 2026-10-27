@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { JSDOM } = require('jsdom');
 
-test('scanner opens as a modal and manual capture tolerates ordinary motion', async () => {
+test('scanner opens as a full-screen camera page and manual capture tolerates ordinary motion', async () => {
   const root = path.resolve(__dirname, '..');
   const html = fs.readFileSync(path.join(root, 'trabalho/ecg/index.html'), 'utf8');
   const script = fs.readFileSync(path.join(root, 'assets/js/ecg-camera-map.js'), 'utf8');
@@ -42,18 +42,23 @@ test('scanner opens as a modal and manual capture tolerates ordinary motion', as
     };
   };
   window.eval(script);
-  const modal = document.getElementById('ecg-camera-modal');
+  const cameraPage = document.getElementById('ecg-camera-page');
   const capture = document.getElementById('ecg-camera-capture');
   document.getElementById('ecg-camera-start').click();
   await new Promise(resolve => setImmediate(resolve));
-  assert.equal(modal.hidden, false);
+  assert.equal(cameraPage.hidden, false);
+  assert.equal(cameraPage.parentElement, document.body);
+  assert.equal(document.body.classList.contains('ecg-camera-open'), true);
+  assert.equal(window.location.hash, '#camera');
   assert.equal(document.getElementById('ecg-camera-stage').hidden, false);
   assert.equal(capture.closest('.ecg-camera-stage') !== null, true);
   assert.equal(typeof inspect, 'function');
   inspect();
   assert.equal(capture.disabled, false, 'manual capture should not wait for motion-free frames');
   document.getElementById('ecg-camera-stop').click();
-  assert.equal(modal.hidden, true);
+  assert.equal(cameraPage.hidden, true);
+  assert.equal(document.body.classList.contains('ecg-camera-open'), false);
+  assert.equal(window.location.hash, '');
   assert.equal(stopped, true);
   dom.window.close();
 });
@@ -75,13 +80,13 @@ test('camera area is visible while permission is pending and closing cancels a l
   } });
   window.eval(script);
   document.getElementById('ecg-camera-start').click();
-  assert.equal(document.getElementById('ecg-camera-modal').hidden, false);
+  assert.equal(document.getElementById('ecg-camera-page').hidden, false);
   assert.equal(document.getElementById('ecg-camera-stage').hidden, false);
   assert.match(document.getElementById('ecg-camera-overlay').textContent, /Aguardando acesso/);
   document.getElementById('ecg-camera-stop').click();
   allowCamera({ getTracks: () => [{ stop: () => { stopped = true; } }] });
   await new Promise(resolve => setImmediate(resolve));
   assert.equal(stopped, true);
-  assert.equal(document.getElementById('ecg-camera-modal').hidden, true);
+  assert.equal(document.getElementById('ecg-camera-page').hidden, true);
   dom.window.close();
 });
