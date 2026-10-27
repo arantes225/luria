@@ -7,13 +7,14 @@
   const status = el("ecg-camera-status"), quality = el("ecg-camera-quality");
   const guidance = el("ecg-camera-guidance"), orientation = el("ecg-camera-orientation");
   const overlay = el("ecg-camera-overlay");
-  const stage = el("ecg-camera-stage"), map = el("ecg-camera-map"), modal = el("ecg-camera-modal");
+  const stage = el("ecg-camera-stage"), map = el("ecg-camera-map"), cameraPage = el("ecg-camera-page");
   const preview = el("ecg-camera-map-preview"), layoutResult = el("ecg-camera-layout-result");
   const layoutSelect = el("ecg-camera-layout-select"), confirm = el("ecg-camera-map-confirm");
   const retake = el("ecg-camera-map-retake");
   const leadField = el("ecg-camera-lead-field"), lead = el("ecg-camera-lead");
   const captures = el("ecg-camera-captures");
-  if (!video || !sample || !window.LuriaEcgLayout || !window.LuriaEcgFrameGuide) return;
+  if (!video || !sample || !cameraPage || !window.LuriaEcgLayout || !window.LuriaEcgFrameGuide) return;
+  document.body.appendChild(cameraPage);
   const ctx = sample.getContext("2d", { willReadFrequently: true });
   let stream, track, timer, mapUrl, previous, phase = "map";
   let qualityWindow = [], requestId = 0;
@@ -31,9 +32,9 @@
   const message = (text, type = "") => { status.textContent = text; status.className = `ecg-status ${type}`; };
   const tell = text => { if (guidance.textContent !== text) guidance.textContent = text; if (overlay.textContent !== text) overlay.textContent = text; };
   const orient = () => {
-    orientation.textContent = portrait()
-      ? "Vire o celular para a horizontal antes de fotografar o ECG."
-      : "Celular na horizontal: enquadre toda a folha antes de aproximar cada derivação.";
+    orientation.textContent = portrait() ? "Gire o celular para a horizontal"
+      : phase === "detail" ? "Aproxime a derivação selecionada"
+        : "Enquadre toda a folha";
   };
   function inspect() {
     if (!stream || !video.videoWidth || phase === "review") return;
@@ -90,7 +91,7 @@
     return new Promise(resolve => out.toBlob(resolve, "image/jpeg", .95));
   }
   async function openCamera() {
-    if (!navigator.mediaDevices?.getUserMedia) { message("Câmera indisponível neste navegador. Use uma foto de alta qualidade.", "error"); return; }
+    if (!navigator.mediaDevices?.getUserMedia) { closeCamera(); message("Câmera indisponível neste navegador. Use uma foto de alta qualidade.", "error"); return; }
     const request = ++requestId;
     stage.hidden = false;
     tell("Aguardando acesso à câmera…");
@@ -98,7 +99,7 @@
       const nextStream = await navigator.mediaDevices.getUserMedia({ video: {
         facingMode: { ideal: "environment" }, width: { ideal: 3840 }, height: { ideal: 2160 }, aspectRatio: { ideal: 16 / 9 }
       }, audio: false });
-      if (request !== requestId || modal.hidden) { nextStream.getTracks().forEach(t => t.stop()); return; }
+      if (request !== requestId || cameraPage.hidden) { nextStream.getTracks().forEach(t => t.stop()); return; }
       stream = nextStream;
       video.srcObject = stream; await video.play();
       stage.hidden = false;
@@ -114,28 +115,33 @@
     } catch (_) {
       if (request !== requestId) return;
       stream?.getTracks().forEach(t => t.stop()); stream = null; track = null;
-      start.disabled = false; modal.hidden = true;
+      closeCamera();
       message("Câmera indisponível ou permissão negada. Use uma foto de alta qualidade.", "error");
     }
   }
   start.addEventListener("click", async () => {
-    modal.hidden = false; stop.disabled = false;
+    cameraPage.hidden = false; document.body.classList.add("ecg-camera-open"); stop.disabled = false;
+    if (location.hash !== "#camera") history.pushState({ ecgCamera: true }, "", "#camera");
+    orient(); stop.focus();
     if (phase === "review") { map.hidden = false; stage.hidden = true; return; }
     start.disabled = true;
     await openCamera();
   });
-  function closeCamera() {
+  function closeCamera(updateUrl = true) {
     requestId++;
     clearInterval(timer); timer = null; stream?.getTracks().forEach(t => t.stop());
-    stream = null; track = null; video.srcObject = null; stage.hidden = true; modal.hidden = true;
+    stream = null; track = null; video.srcObject = null; stage.hidden = true; cameraPage.hidden = true;
+    document.body.classList.remove("ecg-camera-open");
+    if (updateUrl && location.hash === "#camera") history.replaceState(null, "", location.pathname + location.search);
     previous = null; qualityWindow = []; autoFrames = 0;
     start.disabled = false; stop.disabled = true; torch.disabled = true; capture.disabled = true;
     torch.textContent = "Ligar lanterna"; message("Câmera desligada.");
     guidance.textContent = "Abra a câmera para mapear o formato da folha.";
     start.focus();
   }
-  stop.addEventListener("click", closeCamera);
-  document.addEventListener("keydown", event => { if (event.key === "Escape" && !modal.hidden) closeCamera(); });
+  stop.addEventListener("click", () => closeCamera());
+  document.addEventListener("keydown", event => { if (event.key === "Escape" && !cameraPage.hidden) closeCamera(); });
+  window.addEventListener("popstate", () => { if (!cameraPage.hidden && location.hash !== "#camera") closeCamera(false); });
   torch.addEventListener("click", async () => {
     if (!track?.getCapabilities?.().torch) return;
     const on = track.getSettings().torch === true;
@@ -180,6 +186,7 @@
   });
   confirm.addEventListener("click", async () => {
     phase = "detail"; stage.classList.add("is-detail");
+    orient();
     stage.classList.toggle("is-columns", layoutSelect.value === "columns");
     map.hidden = true; stage.hidden = false; leadField.hidden = false; confirm.hidden = true;
     capturedCurrent = false; autoFrames = 0; qualityWindow = [];
@@ -189,6 +196,7 @@
   });
   retake.addEventListener("click", async () => {
     phase = "map"; capturedCurrent = false; autoFrames = 0; qualityWindow = [];
+    orient();
     map.hidden = true; confirm.hidden = false; leadField.hidden = true;
     stage.hidden = false;
     stage.classList.remove("is-detail", "is-columns");
