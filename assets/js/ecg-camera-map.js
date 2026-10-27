@@ -7,7 +7,7 @@
   const status = el("ecg-camera-status"), quality = el("ecg-camera-quality");
   const guidance = el("ecg-camera-guidance"), orientation = el("ecg-camera-orientation");
   const overlay = el("ecg-camera-overlay");
-  const stage = el("ecg-camera-stage"), map = el("ecg-camera-map");
+  const stage = el("ecg-camera-stage"), map = el("ecg-camera-map"), modal = el("ecg-camera-modal");
   const preview = el("ecg-camera-map-preview"), layoutResult = el("ecg-camera-layout-result");
   const layoutSelect = el("ecg-camera-layout-select"), confirm = el("ecg-camera-map-confirm");
   const retake = el("ecg-camera-map-retake");
@@ -15,7 +15,8 @@
   const captures = el("ecg-camera-captures");
   if (!video || !sample || !window.LuriaEcgLayout || !window.LuriaEcgFrameGuide) return;
   const ctx = sample.getContext("2d", { willReadFrequently: true });
-  let stream, track, timer, mapUrl, previous, phase = "map", stable = 0;
+  let stream, track, timer, mapUrl, previous, phase = "map";
+  let qualityWindow = [];
   let autoFrames = 0, taking = false, capturedCurrent = false;
   const portrait = () => matchMedia("(pointer: coarse) and (orientation: portrait)").matches;
   const rotated = () => video.videoWidth < video.videoHeight && !portrait();
@@ -35,7 +36,7 @@
       : "Celular na horizontal: enquadre toda a folha antes de aproximar cada derivação.";
   };
   function inspect() {
-    if (!stream || !video.videoWidth) return;
+    if (!stream || !video.videoWidth || phase === "review") return;
     const sourceWidth = rotated() ? video.videoHeight : video.videoWidth;
     const sourceHeight = rotated() ? video.videoWidth : video.videoHeight;
     drawCamera(sample, ctx, 480, Math.round(480 * sourceHeight / sourceWidth));
@@ -58,9 +59,12 @@
     const dimensions = `${video.videoWidth}×${video.videoHeight}px`;
     const resolutionOk = Math.max(video.videoWidth, video.videoHeight) >= 1600 && Math.min(video.videoWidth, video.videoHeight) >= 900;
     const glare = brightness >= 249 || clipped / count > .9;
-    const usable = !portrait() && resolutionOk && brightness > 40 && !glare && texture > 3 && movement < 9;
-    stable = usable ? Math.min(5, stable + 1) : 0;
-    capture.disabled = taking || phase === "review" || stable < 5 || (phase === "detail" && !lead.value);
+    const readable = !portrait() && resolutionOk && brightness > 40 && !glare && texture > 3;
+    const calm = readable && movement < 28;
+    qualityWindow.push(calm);
+    if (qualityWindow.length > 10) qualityWindow.shift();
+    const steadyEnough = qualityWindow.filter(Boolean).length >= 6;
+    capture.disabled = taking || !readable || (phase === "detail" && !lead.value);
     quality.textContent = `Câmera ${dimensions} · luz ${Math.round(brightness)}/255 · detalhes ${texture.toFixed(1)} · movimento ${Number.isFinite(movement) ? movement.toFixed(1) : "…"}`;
     quality.className = `ecg-status${resolutionOk ? "" : " error"}`;
     let direction;
@@ -71,14 +75,13 @@
     else if (brightness <= 40) tell("Aumente a iluminação.");
     else if (glare) tell("Reduza o reflexo ou desligue a lanterna.");
     else if (texture <= 3) tell("Aguarde o foco ou ajuste a distância.");
-    else if (movement >= 9) tell("Segure o celular firme.");
-    else if (phase === "review") tell("Confira a foto ampla e confirme o formato da folha.");
+    else if (movement >= 28) tell("Mova mais devagar e aguarde o enquadramento. Você também pode fotografar manualmente.");
     else if (phase === "detail" && !lead.value) tell("Selecione a derivação ou marque como não identificada.");
     else tell(direction?.instruction || "Enquadre o ECG no centro da câmera.");
-    const autoReady = usable && direction?.ready && stable >= 5 && phase !== "review" &&
+    const autoReady = calm && steadyEnough && direction?.ready &&
       (phase === "map" || Boolean(lead.value)) && !capturedCurrent && !taking;
-    autoFrames = autoReady ? autoFrames + 1 : 0;
-    if (autoFrames >= 8) { autoFrames = 0; capturedCurrent = true; capture.click(); }
+    autoFrames = autoReady ? Math.min(5, autoFrames + 1) : Math.max(0, autoFrames - 1);
+    if (autoFrames >= 5) { autoFrames = 0; capturedCurrent = true; capture.click(); }
   }
   async function frame() {
     const out = document.createElement("canvas");
@@ -86,9 +89,8 @@
       rotated() ? video.videoWidth : video.videoHeight);
     return new Promise(resolve => out.toBlob(resolve, "image/jpeg", .95));
   }
-  start.addEventListener("click", async () => {
+  async function openCamera() {
     if (!navigator.mediaDevices?.getUserMedia) { message("Câmera indisponível neste navegador. Use uma foto de alta qualidade.", "error"); return; }
-    start.disabled = true;
     try {
       stream = await navigator.mediaDevices.getUserMedia({ video: {
         facingMode: { ideal: "environment" }, width: { ideal: 3840 }, height: { ideal: 2160 }, aspectRatio: { ideal: 16 / 9 }
@@ -101,21 +103,32 @@
         try { await track.applyConstraints({ advanced: [{ focusMode: "continuous" }] }); } catch (_) { /* Browser may reject focus control. */ }
       }
       torch.disabled = !capabilities.torch;
-      stop.disabled = false; stable = 0; autoFrames = 0; capturedCurrent = false; previous = null;
+      stop.disabled = false; qualityWindow = []; autoFrames = 0; capturedCurrent = false; previous = null;
       orient(); message("Câmera aberta. Enquadre a folha inteira.", "ok");
       timer = setInterval(inspect, 200);
     } catch (_) {
       stream?.getTracks().forEach(t => t.stop()); stream = null; track = null;
-      start.disabled = false; message("Câmera indisponível ou permissão negada. Use uma foto de alta qualidade.", "error");
+      start.disabled = false; modal.hidden = true;
+      message("Câmera indisponível ou permissão negada. Use uma foto de alta qualidade.", "error");
     }
+  }
+  start.addEventListener("click", async () => {
+    modal.hidden = false; stop.disabled = false;
+    if (phase === "review") { map.hidden = false; stage.hidden = true; return; }
+    start.disabled = true;
+    await openCamera();
   });
-  stop.addEventListener("click", () => {
+  function closeCamera() {
     clearInterval(timer); timer = null; stream?.getTracks().forEach(t => t.stop());
-      stream = null; track = null; video.srcObject = null; stage.hidden = true; previous = null; stable = 0; autoFrames = 0;
+    stream = null; track = null; video.srcObject = null; stage.hidden = true; modal.hidden = true;
+    previous = null; qualityWindow = []; autoFrames = 0;
     start.disabled = false; stop.disabled = true; torch.disabled = true; capture.disabled = true;
     torch.textContent = "Ligar lanterna"; message("Câmera desligada.");
     guidance.textContent = "Abra a câmera para mapear o formato da folha.";
-  });
+    start.focus();
+  }
+  stop.addEventListener("click", closeCamera);
+  document.addEventListener("keydown", event => { if (event.key === "Escape" && !modal.hidden) closeCamera(); });
   torch.addEventListener("click", async () => {
     if (!track?.getCapabilities?.().torch) return;
     const on = track.getSettings().torch === true;
@@ -138,6 +151,7 @@
         : estimate.kind === "columns" ? `Possível formato: várias derivações por linha (${estimate.rows} faixas). Confirme abaixo.`
           : "Formato incerto. Confirme o arranjo visualmente; os rótulos ainda não são reconhecidos.";
       map.hidden = false;
+      stage.hidden = true;
       const input = el("ecg-image");
       if (input) {
         const transfer = new DataTransfer();
@@ -155,24 +169,27 @@
       row.appendChild(link); captures.appendChild(row);
       message(`${lead.value} capturada no aparelho. Confira a foto e selecione a próxima derivação.`, "ok");
     }
-    taking = false; stable = 0; previous = null;
+    taking = false; qualityWindow = []; previous = null;
   });
-  confirm.addEventListener("click", () => {
+  confirm.addEventListener("click", async () => {
     phase = "detail"; stage.classList.add("is-detail");
     stage.classList.toggle("is-columns", layoutSelect.value === "columns");
-    leadField.hidden = false; confirm.hidden = true;
-    capturedCurrent = false; autoFrames = 0; stable = 0;
+    map.hidden = true; stage.hidden = false; leadField.hidden = false; confirm.hidden = true;
+    capturedCurrent = false; autoFrames = 0; qualityWindow = [];
     capture.textContent = "Capturar derivação aproximada"; capture.disabled = true;
     message(`Formato confirmado: ${layoutSelect.selectedOptions[0].textContent}. Selecione a derivação visível.`, "ok");
+    if (!stream) await openCamera();
   });
-  retake.addEventListener("click", () => {
-    phase = "map"; capturedCurrent = false; autoFrames = 0; stable = 0;
+  retake.addEventListener("click", async () => {
+    phase = "map"; capturedCurrent = false; autoFrames = 0; qualityWindow = [];
     map.hidden = true; confirm.hidden = false; leadField.hidden = true;
+    stage.hidden = false;
     stage.classList.remove("is-detail", "is-columns");
     capture.textContent = "Mapear folha inteira"; capture.disabled = true;
     message("Enquadre novamente a folha inteira.", "ok");
+    if (!stream) await openCamera();
   });
-  lead.addEventListener("change", () => { capturedCurrent = false; autoFrames = 0; stable = 0; capture.disabled = true; });
+  lead.addEventListener("change", () => { capturedCurrent = false; autoFrames = 0; qualityWindow = []; capture.disabled = true; });
   window.addEventListener("orientationchange", orient);
   orient();
 })();
