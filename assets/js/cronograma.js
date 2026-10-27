@@ -60,6 +60,9 @@ const scheduleState = {
   addMode:
     "automatic",
 
+  themeSelectionMode:
+    false,
+
   selectedThemeIds:
     new Set()
 };
@@ -6909,6 +6912,32 @@ function updateThemeBulkToolbar() {
       "theme-select-all"
     );
 
+  const selectionToggle =
+    document.getElementById(
+      "theme-selection-toggle"
+    );
+
+  const selectionControls =
+    document.getElementById(
+      "theme-selection-controls"
+    );
+
+  if (selectionToggle) {
+    selectionToggle.textContent =
+      scheduleState.themeSelectionMode
+        ? "Cancelar"
+        : "Selecionar";
+    selectionToggle.setAttribute(
+      "aria-pressed",
+      String(scheduleState.themeSelectionMode)
+    );
+  }
+
+  if (selectionControls) {
+    selectionControls.hidden =
+      !scheduleState.themeSelectionMode;
+  }
+
 
   if (count) {
     count.textContent =
@@ -7929,7 +7958,7 @@ function renderThemeLibrary() {
         window.LuriaExamPriority?.label(examPriority) || "";
 
       return `
-        <article class="theme-library-row with-selection ${isCompleted ? "completed" : ""}">
+        <article class="theme-library-row ${scheduleState.themeSelectionMode ? "with-selection selection-mode" : ""} ${isCompleted ? "completed" : ""}">
 
           <label
             class="theme-library-select"
@@ -8271,6 +8300,25 @@ function wireManualTopicForm() {
 
 
 function wireThemeLibraryBulkActions() {
+  document
+    .getElementById(
+      "theme-selection-toggle"
+    )
+    ?.addEventListener(
+      "click",
+      () => {
+        scheduleState.themeSelectionMode =
+          !scheduleState.themeSelectionMode;
+
+        if (!scheduleState.themeSelectionMode) {
+          scheduleState.selectedThemeIds.clear();
+          closeThemeBulkMenu();
+        }
+
+        renderThemeLibrary();
+      }
+    );
+
   document
     .getElementById(
       "theme-select-all"
