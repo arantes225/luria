@@ -45,8 +45,8 @@
   try {
     if (typeof window.verificarAcessoAdmin === "function") {
       isAdmin = await window.verificarAcessoAdmin();
-    } else if (window.sb) {
-      const { data } = await window.sb.rpc("is_admin");
+    } else if (window.supabaseClient) {
+      const { data } = await window.supabaseClient.rpc("is_admin");
       isAdmin = data === true;
     }
   } catch (_) {
