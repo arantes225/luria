@@ -121,7 +121,7 @@
   }
   start.addEventListener("click", async () => {
     cameraPage.hidden = false; document.body.classList.add("ecg-camera-open"); stop.disabled = false;
-    if (location.hash !== "#camera") history.pushState({ ecgCamera: true }, "", "#camera");
+    if (location.hash !== "#camera") history.pushState({ ecgCamera: true }, "", `${location.pathname}${location.search}#camera`);
     orient(); stop.focus();
     if (phase === "review") { map.hidden = false; stage.hidden = true; return; }
     start.disabled = true;
