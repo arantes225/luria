@@ -50,6 +50,7 @@ test('scanner opens as a full-screen camera page and manual capture tolerates or
   assert.equal(cameraPage.parentElement, document.body);
   assert.equal(document.body.classList.contains('ecg-camera-open'), true);
   assert.equal(window.location.hash, '#camera');
+  assert.equal(window.location.pathname, '/trabalho/ecg/');
   assert.equal(document.getElementById('ecg-camera-stage').hidden, false);
   assert.equal(capture.closest('.ecg-camera-stage') !== null, true);
   assert.equal(typeof inspect, 'function');
@@ -59,6 +60,7 @@ test('scanner opens as a full-screen camera page and manual capture tolerates or
   assert.equal(cameraPage.hidden, true);
   assert.equal(document.body.classList.contains('ecg-camera-open'), false);
   assert.equal(window.location.hash, '');
+  assert.equal(window.location.pathname, '/trabalho/ecg/');
   assert.equal(stopped, true);
   dom.window.close();
 });
