@@ -16,7 +16,7 @@
       const mascotImg=document.getElementById("study-session-mascot-img");
       const journeyCopy=document.getElementById("study-session-journey-copy");
       const progressPercent=document.getElementById("study-session-progress-percent");
-      const isReview=plan?.mode==="review"||String(steps[0]?.href||"").startsWith("/feynman/");
+      const isReview=plan?.mode==="review"||String(steps[0]?.href||"").startsWith("/professor-alex/?mode=feynman");
       const missionTitle=document.querySelector(".mission-board h2");
       const missionCopy=document.querySelector(".mission-board-copy");
       const diagnosticBox=document.getElementById("study-session-diagnostic");
