@@ -180,7 +180,7 @@
   // Both the ordinary photograph and a file imported from the gallery use
   // exactly the SAME extraction, layout, calibration and technical audit.
   // Only the acquisition mode/provenance changes. Source stays in memory.
-  function processPhotoFile(file, source = "file_upload") {
+  function processPhotoFile(file, source = "file_upload", photoOptions = {}) {
     if (!file || !file.type?.startsWith("image/")) {
       return Promise.resolve({ ok: false, reason: "Selecione uma foto válida do ECG." });
     }
@@ -214,10 +214,20 @@
           const ratio = Math.min(1, maxSide / Math.max(originalW, originalH));
           const workW = Math.max(1, Math.round(originalW * ratio));
           const workH = Math.max(1, Math.round(originalH * ratio));
-          const snapCanvas = document.createElement("canvas");
-          snapCanvas.width = workW;
-          snapCanvas.height = workH;
-          snapCanvas.getContext("2d").drawImage(img, 0, 0, workW, workH);
+          const unrectified = document.createElement("canvas");
+          unrectified.width = workW;
+          unrectified.height = workH;
+          unrectified.getContext("2d").drawImage(img, 0, 0, workW, workH);
+          const chosenCorners = photoOptions.corners;
+          const manualSelection = Array.isArray(chosenCorners);
+          if (manualSelection && !window.LuriaEcgPhotoPerspective) {
+            finish({ ok: false, reason: "Correção de perspectiva indisponível." });
+            return;
+          }
+          const selectedPaper = manualSelection
+            ? window.LuriaEcgPhotoPerspective.rectifyCanvas(unrectified, chosenCorners, maxSide)
+            : null;
+          const snapCanvas = selectedPaper?.canvas || unrectified;
 
           cameraController.stopCamera();
           cameraViewport.hidden = true;
@@ -225,7 +235,8 @@
           cameraController.setMode(source === "normal_photo" ? "photo" : "fast");
 
           const result = cameraController.processPhotographCanvas(snapCanvas, {
-            source,
+            source: manualSelection ? "normal_photo_manual_four_corners" : source,
+            manualPaperCornersApplied: manualSelection,
             userCalibration: {
               paperSpeedMmPerSec: Number(calSpeedSelect?.value) || 25,
               gainMmPerMv: Number(calGainSelect?.value) || 10,
@@ -243,7 +254,7 @@
             return;
           }
           if (missingAlert) missingAlert.hidden = true;
-          if (captureSource) captureSource.textContent = "Origem: " + (source === "normal_photo" ? "Foto normal (câmera nativa)" : "Imagem importada") + " · " + originalW + " × " + originalH + " px (original) · " + workW + " × " + workH + " px (análise).";
+          if (captureSource) captureSource.textContent = "Origem: " + (source === "normal_photo" ? (manualSelection ? "Foto normal (4 cantos ajustados)" : "Foto normal (integral)") : "Imagem importada") + " · " + originalW + " × " + originalH + " px (original) · " + snapCanvas.width + " × " + snapCanvas.height + " px (análise).";
           const leads = cameraController.getCapturedLeads();
           currentLeadsData = leads;
           currentSessionPackage = cameraController.getSessionStructuredPackage();
