@@ -618,7 +618,7 @@ test("Sexualidade feminina e masculina sao apostilas independentes e pesquisavei
   const catalogMigration=read("supabase/migrations/20261026064732_register_female_and_male_sexuality_apostilas_20261026.sql");
   assert.match(library,/src="\/assets\/js\/apostilas-app\.js/);
   assert.match(catalogClient,/\.from\("apostilas"\)/);
-  assert.match(catalogClient,/b\.tema, b\.titulo/);
+  assert.match(catalogClient,/book\.tema, book\.titulo/);
   assert.match(catalogMigration,/Sexualidade Feminina/);
   assert.match(catalogMigration,/Sexualidade Masculina/);
   assert.match(catalogMigration,/Medicina Sexual · Sexualidade Masculina/);
