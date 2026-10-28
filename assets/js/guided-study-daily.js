@@ -2,7 +2,8 @@
 (() => {
  "use strict";
  const PLAN="luria:guided-study-plan",PROGRESS="luria:guided-study-progress",
-       ACTIVE="luria:guided-study-active",COMPLETE="luria:guided-study-step-complete";
+       ACTIVE="luria:guided-study-active",COMPLETE="luria:guided-study-step-complete",
+       DIAGNOSTIC="luria:guided-study-diagnostic";
  const read=(store,key)=>{try{return JSON.parse(store.getItem(key)||"null")}catch{return null}};
  const today=()=>new Date().toLocaleDateString("sv-SE");
  const owner=()=>String(window.docmapUser?.id||"");
@@ -10,7 +11,7 @@
  const valid=plan=>!!plan?.createdAt&&Array.isArray(plan.steps)&&plan.steps.length===3
      &&(plan.day||new Date(plan.createdAt).toLocaleDateString("sv-SE"))===today()
      &&(!plan.ownerId||!owner()||plan.ownerId===owner());
- const clearOld=()=>{[PLAN,PROGRESS,ACTIVE,COMPLETE].forEach(key=>sessionStorage.removeItem(key));localStorage.removeItem("luria:guided-timer")};
+ const clearOld=()=>{[PLAN,PROGRESS,ACTIVE,COMPLETE,DIAGNOSTIC].forEach(key=>sessionStorage.removeItem(key));localStorage.removeItem("luria:guided-timer")};
  const restore=()=>{
   try{
    let plan=read(sessionStorage,PLAN),key=dailyKey(),record=key?read(localStorage,key):null;
@@ -25,6 +26,8 @@
    const localDone=Number(localProgress?.completedThrough??-1),tabDone=Number(tabProgress?.completedThrough??-1);
    if(localProgress&&(!tabProgress||tabProgress.createdAt!==plan.createdAt||localDone>tabDone))
      sessionStorage.setItem(PROGRESS,JSON.stringify(localProgress));
+   if(record?.diagnostic?.createdAt===plan.createdAt)
+     sessionStorage.setItem(DIAGNOSTIC,JSON.stringify(record.diagnostic));
   }catch(error){console.warn("LURIA: não consegui restaurar o estudo do dia.",error)}
  };
  const save=()=>{
@@ -35,7 +38,9 @@
    const doneTab=tab?.createdAt===plan.createdAt?Number(tab.completedThrough??-1):-1;
    const doneLocal=Number(latest?.completedThrough??-1);
    const progress=doneTab>=doneLocal?(tab?.createdAt===plan.createdAt?tab:null):latest;
-   localStorage.setItem(key,JSON.stringify({plan,progress}));
+   const tabDiagnostic=read(sessionStorage,DIAGNOSTIC);
+   const diagnostic=tabDiagnostic?.createdAt===plan.createdAt?tabDiagnostic:last?.diagnostic?.createdAt===plan.createdAt?last.diagnostic:null;
+   localStorage.setItem(key,JSON.stringify({plan,progress,diagnostic}));
   }catch(error){console.warn("LURIA: não consegui guardar o progresso diário.",error)}
  };
  const enhance=()=>{
@@ -44,18 +49,18 @@
   const completed=progress?.createdAt===plan.createdAt?Number(progress.completedThrough??-1):-1;
   const active=read(sessionStorage,ACTIVE),next=completed+1;
   // Uma simples navegação nunca conclui uma etapa: a pessoa confirma a leitura ao retornar.
-  if(next===0&&active?.plan?.createdAt===plan.createdAt&&active.activeIndex===0
-     &&["/apostilas/","/caderno/"].some(prefix=>String(steps[0]?.href||"").startsWith(prefix))){
+  if(next>=0&&next<steps.length&&active?.plan?.createdAt===plan.createdAt&&active.activeIndex===next
+     &&["/apostilas/","/caderno/"].some(prefix=>String(steps[next]?.href||"").startsWith(prefix))){
    const card=document.querySelector('.study-session-card.is-current .study-session-card-footer');
    if(card&&!card.querySelector("[data-confirm-material]")){
     const button=document.createElement("button");button.type="button";
     button.className="study-session-start";button.dataset.confirmMaterial="1";
-    button.textContent="Concluí o estudo";
+    button.textContent=plan.mode==="review"?"Concluí a revisão":"Concluí o estudo";
     button.addEventListener("click",()=>{
      const current=read(sessionStorage,ACTIVE);
-     if(!valid(current?.plan)||current.plan.createdAt!==plan.createdAt||current.activeIndex!==0)return;
+     if(!valid(current?.plan)||current.plan.createdAt!==plan.createdAt||current.activeIndex!==next)return;
      if(!window.LuriaGuidedStudy?.completeActiveStep?.("material-reviewed")){
-      sessionStorage.setItem(COMPLETE,JSON.stringify({createdAt:plan.createdAt,activeIndex:0,source:"material-reviewed",completedAt:Date.now()}));
+      sessionStorage.setItem(COMPLETE,JSON.stringify({createdAt:plan.createdAt,activeIndex:next,source:"material-reviewed",completedAt:Date.now()}));
      }
      location.reload();
     });
