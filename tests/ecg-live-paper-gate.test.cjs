@@ -38,6 +38,8 @@ test("keyboard, table, blank paper and text never qualify as a verified ECG", ()
   assert.equal(verified(textDocument),false);
   const blank=positive();
   blank.calibration.gridDetected=false;
+  blank.detected=false;
+  blank.detectedLayout.validWaveformCells=0;
   blank.detectedLayout.ocrConfirmedCount=0;
   assert.equal(verified(blank),false);
   const cropped=positive();
@@ -53,6 +55,7 @@ test("ECG paper with morphology and measured grid is allowed; OCR alternative is
   assert.equal(verified(positive()),true);
   const withoutGrid=positive();
   withoutGrid.calibration.gridDetected=false;
+  withoutGrid.detectedLayout.validWaveformCells=3; // No six-trace live fallback: test independent OCR evidence.
   withoutGrid.recognizedLabels = Object.fromEntries(["a","b"].map(k=>[k,{ocrRecognized:true,hasValidTrace:true}]));
   assert.equal(verified(withoutGrid),true);
   withoutGrid.recognizedLabels = {a:{ocrRecognized:true,hasValidTrace:true}};
