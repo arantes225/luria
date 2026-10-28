@@ -28,6 +28,7 @@ const modeLabels = { iniciante: "Aluno iniciante", questionador: "Aluno question
 const medicalTerms = ["sepse", "choque séptico", "insuficiência cardíaca", "síndrome coronariana", "diabetes mellitus", "hipertensão", "pneumonia", "tromboembolismo", "fisiopatologia", "hemodinâmica", "vasopressor", "noradrenalina", "lactato", "hipoperfusão", "taquicardia", "bradicardia", "dispneia", "edema", "hipoxemia", "insulina", "cetoacidose", "glomerular", "creatinina", "antibiótico"];
 
 let state = { topic: "", mode: "questionador", turns: [], seconds: SESSION_SECONDS, id: null, busy: false, finished: false };
+let modeVisible = new URLSearchParams(location.search).get("mode") === "feynman";
 let clockHandle = null;
 let recognition = null;
 let pendingTranscript = "";
@@ -65,7 +66,7 @@ function addMessage(role, text) {
   const article = document.createElement("article");
   article.className = `feynman-message feynman-message--${role === "user" ? "user" : "ai"}`;
   const label = document.createElement("span");
-  label.textContent = role === "user" ? "Você ensinando" : "Aluno IA";
+  label.textContent = role === "user" ? "Você ensinando" : "Alex · aluno";
   const copy = document.createElement("p");
   copy.textContent = text;
   article.append(label, copy);
@@ -135,7 +136,7 @@ function updateClock() {
 function startClock() {
   clearInterval(clockHandle);
   updateClock();
-  clockHandle = setInterval(() => { if (!state.busy && !state.finished) state.seconds -= 1; updateClock(); }, 1000);
+  clockHandle = setInterval(() => { if (modeVisible && !state.busy && !state.finished) state.seconds -= 1; updateClock(); }, 1000);
 }
 
 async function startSession() {
@@ -310,4 +311,11 @@ startButton.addEventListener("click", startSession);
 form.addEventListener("submit", sendExplanation);
 finishButton.addEventListener("click", finishSession);
 restartButton.addEventListener("click", () => { reportPanel.hidden = true; setup.hidden = false; topicInput.focus(); });
+document.addEventListener("alex:feynman-visibility",event=>{
+  modeVisible = !!event.detail?.visible;
+  if(!modeVisible){
+    recognition?.abort?.();
+    if ("speechSynthesis" in window) speechSynthesis.cancel();
+  }
+});
 window.addEventListener("beforeunload", () => { clearInterval(clockHandle); recognition?.abort?.(); });
