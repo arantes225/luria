@@ -122,7 +122,37 @@
     return { canvas: outputCanvas, width: outW, height: outH, paperCorners: cloneCorners(corners) };
   }
 
-  const api = { DEFAULT_CORNERS, cloneCorners, validateCorners, computeProjectiveMap, rectifyCanvas };
+  // Rotate the WORKING COPY, not the original photograph. Unlike the legacy
+  // deskew routine, this swaps dimensions for 90/270° and cannot crop edges.
+  // Corners must be selected in the resulting (upright) displayed image.
+  function rotateCanvasQuarter(sourceCanvas, quarterTurns = 0) {
+    const turn = Number(quarterTurns);
+    if (!Number.isInteger(turn)) throw new RangeError("Rotação deve ser um múltiplo de 90°.");
+    const count = ((turn % 4) + 4) % 4;
+    if (!count) return sourceCanvas;
+    const sourceW = sourceCanvas.width, sourceH = sourceCanvas.height;
+    if (!(sourceW > 0 && sourceH > 0)) throw new RangeError("Imagem inválida para rotação.");
+    const out = global.document.createElement("canvas");
+    out.width = count % 2 ? sourceH : sourceW;
+    out.height = count % 2 ? sourceW : sourceH;
+    const ctx = out.getContext("2d");
+    if (!ctx) throw new Error("Canvas indisponível para girar a fotografia.");
+    ctx.imageSmoothingEnabled = false;
+    if (count === 1) {
+      ctx.translate(out.width, 0);
+      ctx.rotate(Math.PI / 2);
+    } else if (count === 2) {
+      ctx.translate(out.width, out.height);
+      ctx.rotate(Math.PI);
+    } else {
+      ctx.translate(0, out.height);
+      ctx.rotate(-Math.PI / 2);
+    }
+    ctx.drawImage(sourceCanvas, 0, 0);
+    return out;
+  }
+
+  const api = { DEFAULT_CORNERS, cloneCorners, validateCorners, computeProjectiveMap, rectifyCanvas, rotateCanvasQuarter };
   global.LuriaEcgPhotoPerspective = api;
   if (typeof module !== "undefined" && module.exports) module.exports = api;
 })(typeof window !== "undefined" ? window : globalThis);
