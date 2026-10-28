@@ -64,7 +64,7 @@ test("a sessão salva progresso por usuário e dia e não reaproveita a missão 
  assert.match(daily,/clearOld/);
  assert.match(daily,/completedThrough/);
  assert.match(daily,/material-reviewed/);
- assert.match(session,/guided-study-daily\.js\?v=20261028-daily-feynman/);
+ assert.match(session,/guided-study-daily\.js\?v=20261028-review-first/);
 });
 
 test("a etapa Feynman só é concluída após relatório, mesmo tema e data", () => {
