@@ -757,7 +757,7 @@
     }
 
     // Verificar sobreposição de duas derivações na mesma janela
-    if (tracked.hasMultipleCurves) {
+    if (tracked.hasMultipleCurves && !options.allowOverlappingPreview) {
       const failOverlap = {
         isValid: false,
         hasMultipleCurves: true,
@@ -902,6 +902,10 @@
     let recoveredDurationSeconds = null;
     let effectiveResolutionHz = null;
     const limitations = [];
+
+    if (tracked.hasMultipleCurves) {
+      limitations.push("Há múltiplos agrupamentos de tinta na região; o traçado é apenas uma prévia e exige conferência/recaptura.");
+    }
 
     if (msPerPixel && msPerPixel > 0) {
       const totalSpanSeconds = Number(((width * msPerPixel) / 1000).toFixed(3));
