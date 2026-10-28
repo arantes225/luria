@@ -20,9 +20,15 @@ function rewritePageHtml(html, filename) {
   return withBase.replace(
     /(<script\b[^>]*>[\s\S]*?<\/script>|<style\b[^>]*>[\s\S]*?<\/style>|<[^>]+>)/gi,
     fragment => {
-      if (/^<(?:script|style)\b/i.test(fragment) && /<\/(?:script|style)>/i.test(fragment)) return fragment;
-      // Don't change protocol-relative external URLs, only absolute site paths.
-      return fragment.replace(/(\s(?:href|src|action|poster|data-src)\s*=\s*["'])\/(?!\/)/gi, "$1");
+      // Rewrite external script/style tag attributes but NEVER their inline
+      // body: existing CSP hashes must continue to match byte for byte.
+      const opening = fragment.match(/^<(?:script|style)\\b[^>]*>/i);
+      const attribute = /(\\s(?:href|src|action|poster|data-src)\\s*=\\s*["'])\\/(?!\\/)/gi;
+      if (opening && /<\\/(?:script|style)>/i.test(fragment)) {
+        const corrected = opening[0].replace(attribute, "$1");
+        return corrected + fragment.slice(opening[0].length);
+      }
+      return fragment.replace(attribute, "$1");
     }
   );
 }
