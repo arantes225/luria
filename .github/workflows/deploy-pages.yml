@@ -16,9 +16,10 @@ permissions:
   id-token: write
 
 concurrency:
-  # PR validation must never cancel the production deployment (or the other way around).
+  # PR checks can be superseded, but production uploads must finish before newer deployments.
+  # Otherwise frequent commits cancel GitHub Pages during the final upload.
   group: pages-${{ github.event_name == 'pull_request' && format('pr-{0}', github.event.pull_request.number) || 'deploy' }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   quality:
