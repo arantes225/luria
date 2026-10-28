@@ -229,11 +229,7 @@
       }
 
       updateHudProgress();
-      if (mode === "ultrasensitive" && currentTargetLead) {
-        setHudMessage(`Vá para ${currentTargetLead}.`, true);
-      } else {
-        setHudMessage("Aponte para o ECG...", true);
-      }
+      setHudMessage("Aponte a câmera para uma folha de ECG inteira. Nenhum traçado será reconhecido sem confirmação da folha.", true);
 
       try {
         const constraints = {
@@ -305,6 +301,7 @@
         Date.now() - verifiedSince >= 400;
       setHudPaperVerified(sceneReady);
       if (!hasEcgEvidence) {
+        currentSheetMap = null;
         setReticleStatus("searching");
         setHudMessage("Nenhuma folha de ECG confirmada. Aponte para o exame inteiro, com a grade e os rótulos visíveis.");
         return;
