@@ -10,6 +10,7 @@ module.exports.resources = Object.fromEntries(
   ['cronograma.html', 'cronograma/index.html'].map(page => [page, {scriptSrc: pdfScripts}])
 );
 const jsPdf = 'https://cdn.jsdelivr.net/npm/jspdf@4.2.1/dist/jspdf.umd.min.js';
+module.exports.resources['aplicar/curriculo/index.html'] = {scriptSrc: [...pdfScripts, jsPdf]};
 // These are the existing Tesseract 5 loader's 5.1.1 runtime paths, including
 // SIMD/non-SIMD and LSTM/legacy variants chosen according to browser support.
 const ocrCore = ['tesseract-core', 'tesseract-core-simd', 'tesseract-core-lstm', 'tesseract-core-simd-lstm']

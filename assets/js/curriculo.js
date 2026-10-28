@@ -1,6 +1,7 @@
 (() => {
   'use strict';
   const core = window.LuriaCurriculo;
+  const pdfSupport = window.LuriaCurriculoPdf;
   const rubrics = window.LuriaCurriculoRubricas || [];
   const $ = id => document.getElementById(id);
   const form = $('cv-form');
@@ -10,6 +11,68 @@
   let state = { items: [], answers: {} };
   let pending = [];
   let busy = false;
+  let originalPdf = null;
+  function refreshPdfControls() {
+    const uploaded = Boolean(originalPdf?.blob);
+    $('cv-pdf-attached').hidden = !uploaded;
+    $('cv-pdf-filename').textContent = uploaded ? `PDF anexado: ${originalPdf.name || 'curriculo.pdf'}` : '';
+  }
+  async function readSavedPdf(owner) {
+    originalPdf = null;
+    refreshPdfControls();
+    // Em navegadores sem IndexedDB (ou prévias/testes sem persistência),
+    // não dispare uma Promise cujo erro chegaria depois do encerramento da página.
+    if (!window.indexedDB) return;
+    try {
+      const record = await pdfSupport.getPdf(owner);
+      if (owner !== userId) return;
+      originalPdf = record?.blob ? record : null;
+      refreshPdfControls();
+    } catch {
+      if (owner === userId) status('PDF salvo anteriormente indisponível neste navegador. Você ainda pode enviar outro arquivo.');
+    }
+  }
+  function openOriginalPdf(download) {
+    if (!originalPdf?.blob) return status('Envie um PDF para abri-lo.');
+    const url = URL.createObjectURL(originalPdf.blob);
+    const link = node('a');
+    link.href = url;
+    if (download) {
+      link.download = String(originalPdf.name || 'meu-curriculo.pdf').replace(/[/\\]/g, '_');
+    } else {
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    }
+    document.body.append(link);
+    link.click();
+    link.remove();
+    // A visualização de PDF em uma nova aba pode demorar a carregar.
+    setTimeout(() => URL.revokeObjectURL(url), 60000);
+  }
+  function showImportReview(items, sourceLabel) {
+    const known = new Set(state.items.map(core.identity));
+    pending = items.filter(item => !known.has(core.identity(item)));
+    if (!pending.length) {
+      $('cv-import-review').hidden = true;
+      status('Nenhuma atividade nova identificada. O arquivo original permanece disponível.');
+      return;
+    }
+    const box = $('cv-import-items');
+    box.replaceChildren();
+    pending.forEach((item, index) => {
+      const label = node('label', undefined, 'cv-item');
+      const text = node('span', `${item.title} · ${item.year || 'Ano não informado'} · ${core.categories[item.category] || 'Atividade'}`);
+      const check = node('input');
+      check.type = 'checkbox';
+      check.checked = true;
+      check.dataset.importIndex = String(index);
+      label.append(check, text);
+      box.append(label);
+    });
+    $('cv-import-description').textContent = `${pending.length} atividade(s) sugerida(s) a partir do ${sourceLabel}. Revise a categoria, o ano e o título antes de adicionar. Nenhuma atividade importada é marcada como conferida.`;
+    $('cv-import-review').hidden = false;
+    status(`${sourceLabel} lido. Revise as sugestões antes de adicioná-las.`);
+  }
   curriculumToggle?.addEventListener('click', () => {
     const willOpen = curriculumPanel.hidden;
     curriculumPanel.hidden = !willOpen;
@@ -246,7 +309,8 @@
         if (rubrics.some(rubric=>rubric.id===saved.selectedExam)) { $('cv-exam').value = saved.selectedExam;state.selectedExam=saved.selectedExam; }
       }
     } catch { status('Não foi possível ler o currículo salvo. Você pode começar um novo cadastro.'); }
-    ['cv-add','cv-import','cv-lattes','cv-export','cv-exam'].forEach(id => { $(id).disabled = false; });
+    ['cv-add','cv-import','cv-lattes','cv-import-pdf','cv-pdf','cv-export-pdf','cv-export','cv-exam'].forEach(id => { $(id).disabled = false; });
+    void readSavedPdf(userId);
     renderItems(); renderRubric();
   }
   Object.entries(core.categories).forEach(([value,text]) => { const option = node('option',text); option.value = value; $('cv-category').append(option); });
@@ -282,6 +346,20 @@
   rubrics.forEach(rubric => { const option = node('option',rubric.title); option.value = rubric.id; $('cv-exam').append(option); });
   $('cv-add').addEventListener('click', () => editItem());
   $('cv-import').addEventListener('click', () => $('cv-lattes').click());
+  $('cv-import-pdf').addEventListener('click', () => $('cv-pdf').click());
+  $('cv-open-pdf').addEventListener('click', () => openOriginalPdf(false));
+  $('cv-download-pdf').addEventListener('click', () => openOriginalPdf(true));
+  $('cv-remove-pdf').addEventListener('click', async () => {
+    if (!userId || !originalPdf || busy) return;
+    const owner = userId;
+    try {
+      await pdfSupport.removePdf(owner);
+      if (owner !== userId) return;
+      originalPdf = null;
+      refreshPdfControls();
+      status('Arquivo PDF removido deste navegador. As atividades cadastradas foram preservadas.');
+    } catch (error) { status('Não foi possível remover o PDF: ' + error.message); }
+  });
   $('cv-cancel').addEventListener('click', () => { form.hidden = true; $('cv-add').focus(); });
   $('cv-exam').addEventListener('change', () => selectRubric($('cv-exam').value));
   form.addEventListener('submit', event => {
@@ -306,28 +384,96 @@
       if (encoding && !/^utf-?8$/i.test(encoding)) xml = new TextDecoder(encoding).decode(buffer);
       const items = core.parseLattes(xml, DOMParser);
       if (owner !== userId) return;
-      const known = new Set(state.items.map(core.identity)); pending = items.filter(item => !known.has(core.identity(item)));
-      if (!pending.length) { status('Nenhuma nova atividade compatível encontrada. Itens já cadastrados não são duplicados.'); return; }
-      const box = $('cv-import-items'); box.replaceChildren();
-      pending.forEach((item,index) => {
-        const label = node('label', undefined, 'cv-item'); const text = node('span', `${item.title} · ${item.year || 'Ano não informado'}`);
-        const check = node('input'); check.type = 'checkbox'; check.checked = true; check.dataset.importIndex = String(index); label.append(check,text); box.append(label);
-      });
-      $('cv-import-description').textContent = `${pending.length} nova(s) atividade(s). Selecione as que deseja incluir; depois confira os detalhes e os comprovantes.`;
-      $('cv-import-review').hidden = false; status('XML lido. Revise as atividades antes de adicioná-las.');
+      showImportReview(items, 'XML do Lattes');
     } catch (error) { status(`Não foi possível importar: ${error.message}`); }
     finally { busy = false; event.target.value = ''; }
+  });
+  $('cv-pdf').addEventListener('change', async event => {
+    const file = event.target.files?.[0];
+    if (!file || !userId || busy) return;
+    const owner = userId;
+    busy = true;
+    pending = [];
+    $('cv-import-review').hidden = true;
+    try {
+      await pdfSupport.checkPdf(file);
+      let persisted = true;
+      try {
+        await pdfSupport.storePdf(owner, file);
+      } catch {
+        persisted = false;
+      }
+      if (owner !== userId) return;
+      originalPdf = { blob: file, name: file.name };
+      refreshPdfControls();
+      status(persisted
+        ? 'PDF anexado neste navegador. Lendo as atividades…'
+        : 'PDF disponível nesta sessão. O navegador não permitiu salvá-lo para uso posterior.');
+      try {
+        const result = await pdfSupport.extract(file, status);
+        if (owner !== userId) return;
+        if (result.items.length) showImportReview(result.items, 'PDF');
+        else if (!result.hasText) status('PDF anexado. Ele parece ser digitalizado, sem texto selecionável. Você pode abri-lo, mas deve cadastrar as atividades manualmente.');
+        else status('PDF anexado e disponível para abrir. Não foi possível identificar atividades estruturadas com segurança; adicione-as manualmente ou use o XML do Lattes.');
+      } catch (error) {
+        if (owner === userId) status('PDF anexado para visualização, mas a extração de atividades falhou: ' + error.message);
+      }
+    } catch (error) {
+      if (owner === userId) status('Não foi possível anexar o PDF: ' + error.message);
+    } finally {
+      busy = false;
+      event.target.value = '';
+    }
   });
   $('cv-import-confirm').addEventListener('click', () => {
     const selected = [...$('cv-import-items').querySelectorAll('input:checked')].map(input => pending[Number(input.dataset.importIndex)]).filter(Boolean);
     state.items = core.merge(state.items, selected); const saved = save(); pending = []; $('cv-import-review').hidden = true; renderItems(); if (saved) status(`${selected.length} atividade(s) adicionada(s). Revise os dados importados.`);
   });
   $('cv-import-cancel').addEventListener('click', () => { pending = []; $('cv-import-review').hidden = true; status('Importação cancelada.'); });
+  $('cv-export-pdf').addEventListener('click', async () => {
+    if (!userId || busy) return;
+    busy = true;
+    try {
+      await window.LuriaLazyVendors.ensure('jspdf');
+      if (!window.jspdf?.jsPDF) throw Error('Gerador de PDF indisponível.');
+      const doc = new window.jspdf.jsPDF({ unit: 'pt', format: 'a4', compress: true });
+      const margin = 42, maxWidth = 511, bottom = 790;
+      let y = 58;
+      const line = (text, size = 10, bold = false) => {
+        doc.setFont('helvetica', bold ? 'bold' : 'normal');
+        doc.setFontSize(size);
+        const rows = doc.splitTextToSize(String(text), maxWidth);
+        for (const row of rows) {
+          if (y > bottom) { doc.addPage(); y = 52; }
+          doc.text(row, margin, y);
+          y += size * 1.45;
+        }
+      };
+      line('LURIA | Meu currículo', 19, true);
+      y += 9;
+      line(`Emitido em ${new Date().toLocaleDateString('pt-BR')} | ${state.items.length} atividade(s)`, 10);
+      y += 20;
+      for (const item of state.items) {
+        line(`${core.categories[item.category] || 'Outra atividade'} · ${item.year || 'Ano não informado'}`, 10, true);
+        line(item.title, 11);
+        if (item.hours) line(`Carga horária: ${item.hours} h`);
+        if (item.evidence) line(`Comprovante informado: ${item.evidence}`);
+        line(item.reviewed ? 'Informações marcadas como conferidas pelo aluno' : 'Revisão pendente', 9);
+        y += 14;
+      }
+      if (y > bottom - 35) { doc.addPage(); y = 52; }
+      line('Documento gerado a partir das atividades cadastradas pelo aluno. Não substitui comprovantes nem validação oficial da banca.', 9);
+      doc.save('meu-curriculo-luria.pdf');
+      status('Currículo em PDF gerado. Confira os dados antes de usá-lo em processos seletivos.');
+    } catch (error) {
+      status('Não foi possível gerar o PDF: ' + error.message);
+    } finally { busy = false; }
+  });
   $('cv-export').addEventListener('click', () => {
     const blob = new Blob([JSON.stringify({ version:1, exportedAt:new Date().toISOString(), ...state },null,2)], { type:'application/json' });
     const url = URL.createObjectURL(blob); const link = node('a'); link.href = url; link.download = 'meu-curriculo-luria.json'; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
   });
-  ['cv-add','cv-import','cv-lattes','cv-export','cv-exam'].forEach(id => { $(id).disabled = true; });
+  ['cv-add','cv-import','cv-lattes','cv-import-pdf','cv-pdf','cv-export-pdf','cv-export','cv-exam'].forEach(id => { $(id).disabled = true; });
   renderItems(); renderRubric();
   window.addEventListener('docmap:ready', event => ready(event.detail?.user));
   ready(window.docmapUser);
