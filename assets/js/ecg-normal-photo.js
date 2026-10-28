@@ -49,10 +49,15 @@
       appShell.setAttribute("aria-hidden", "true");
     }
     page.hidden = false;
+    if (typeof page.showModal === "function" && !page.open) {
+      try { page.showModal(); }
+      catch (exception) { console.warn("[LURIA ECG] Modal nativo indisponível, usando fallback.", exception); }
+    }
   }
   function deactivatePhotoSurface() {
     if (!photoOpen) return;
     photoOpen = false;
+    if (page.open && typeof page.close === "function") page.close();
     page.hidden = true;
     doc.body.classList.remove("ecg-normal-photo-open");
     if (!doc.body.classList.contains("ecg-guided-capture-open")) doc.body.classList.remove("ecg-capture-active");
@@ -209,6 +214,10 @@
   });
   btnRetake.addEventListener("click", choosePhoto);
   btnClose.addEventListener("click", close);
+  page.addEventListener("cancel", event => {
+    event.preventDefault();
+    close();
+  });
   doc.addEventListener("keydown", event => {
     if (event.key === "Escape" && !page.hidden) close();
   });

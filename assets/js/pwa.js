@@ -30,7 +30,7 @@
   // assumes origin-root URLs. Do not install a worker with invalid cache scope.
   if (new URL(document.baseURI).pathname !== "/") return;
 
-  const release = "20261013-width2";
+  const release = "20261028-ecg-safety-v2";
   const refreshKey = "luria:pwa:activated:" + release;
   let reloadPending = false;
   const hadController = !!navigator.serviceWorker.controller;

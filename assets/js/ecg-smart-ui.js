@@ -103,6 +103,12 @@
     guidedActive = true;
     setScannerTab();
     guidedPage.hidden = false;
+    // Native modal top-layer wins against PWA headers, browser fullscreen
+    // layers and dynamically inserted navigation (unlike fixed z-index).
+    if (typeof guidedPage.showModal === "function" && !guidedPage.open) {
+      try { guidedPage.showModal(); }
+      catch (error) { console.warn("[LURIA ECG] Falha ao abrir modal nativo; usando fallback.", error); }
+    }
     cameraViewport.hidden = false;
     guidedPage.dataset.captureMode = mode;
     document.body.classList.add("ecg-capture-active", "ecg-guided-capture-open");
@@ -116,7 +122,10 @@
   function exitGuidedCapture() {
     if (!guidedActive) return;
     guidedActive = false;
-    if (guidedPage) guidedPage.hidden = true;
+    if (guidedPage) {
+      if (guidedPage.open && typeof guidedPage.close === "function") guidedPage.close();
+      guidedPage.hidden = true;
+    }
     if (cameraViewport) cameraViewport.hidden = true;
     document.body.classList.remove("ecg-guided-capture-open");
     if (!document.body.classList.contains("ecg-normal-photo-open")) {
@@ -228,6 +237,10 @@
   }
   window.LuriaEcgStopScanner = stopGuidedScanner;
   guidedClose?.addEventListener("click", stopGuidedScanner);
+  guidedPage?.addEventListener("cancel", event => {
+    event.preventDefault();
+    stopGuidedScanner();
+  });
   document.addEventListener("keydown", event => {
     if (event.key === "Escape" && guidedActive) stopGuidedScanner();
   });
