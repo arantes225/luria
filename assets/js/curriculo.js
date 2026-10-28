@@ -8,7 +8,7 @@
   const curriculumPanel = $('cv-curriculum-panel');
   const curriculumToggle = $('cv-toggle');
   let userId = null;
-  let state = { items: [], answers: {} };
+  let state = { items: [], answers: {}, selectedSpecialty: '' };
   let pending = [];
   let busy = false;
   let originalPdf = null;
@@ -130,7 +130,12 @@
     showMetaFields();
     form.hidden = false; form.elements.title.focus();
   }
-  const activeRubric = () => rubrics.find(row => row.id === $('cv-exam').value);
+  const selectedInstitution = () => rubrics.find(row => row.id === $('cv-exam').value);
+  // A instituição UNIFESP é um cartão; cada especialidade R1 tem sua própria matriz.
+  const activeRubric = () => {
+    const base = selectedInstitution();
+    return base?.specialties?.find(item => item.id === state.selectedSpecialty) || base;
+  };
   function selectRubric(id) {
     $('cv-exam').value = id;
     state.selectedExam = id;
@@ -139,8 +144,8 @@
   function renderInstitutions() {
     const box = $('cv-institutions'); box.replaceChildren();
     const reviewed = rubrics.filter(row => row.status === 'reviewed').length;
-    const notRequired = rubrics.filter(row => row.status === 'not-required').length;
-    $('cv-coverage').textContent = `${reviewed} matrizes calculáveis · ${notRequired} sem currículo · ${rubrics.length - reviewed - notRequired} aguardando complemento`;
+    const specialties = rubrics.find(row => row.institution === 'UNIFESP')?.specialties?.length || 0;
+    $('cv-coverage').textContent = `${reviewed} matrizes institucionais calculáveis · ${specialties} especialidades R1 na UNIFESP · confira critérios pendentes`;
     rubrics.forEach(rubric => {
       const card = node('button', undefined, 'cv-institution'); card.type = 'button';
       card.setAttribute('aria-pressed', String(rubric.id === $('cv-exam').value));
@@ -154,7 +159,8 @@
         pending: `${rubric.region} · ${rubric.edition || 'edição vigente'} · Edital aguardado`
       };
       copy.append(node('strong',rubric.institution),node('small',subtitles[rubric.status] || subtitles.pending));
-      const score = core.score(rubric,state.answers[rubric.id] || {});
+      const effective = rubric.specialties?.find(item => item.id === state.selectedSpecialty) || rubric;
+      const score = core.score(effective,state.answers[effective.id] || {});
       const displayValue = score ? (score.total/score.max*10).toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1}) : rubric.status === 'not-required' ? 'Sem' : '—';
       card.append(icon,copy,node('span',displayValue,'cv-institution-value'));
       if (score) card.setAttribute('aria-label',`${rubric.institution}: ${score.total.toLocaleString('pt-BR')} de ${score.max} pontos. Cartão convertido para escala de 0 a 10.`);
@@ -192,10 +198,31 @@
   }
   function renderRubric() {
     const rubric = activeRubric();
+    const institution = selectedInstitution();
     const source = $('cv-source'); source.replaceChildren();
     const rules = $('cv-rules'); rules.replaceChildren();
     if (!rubric) { renderScore(); return; }
     renderInstitutions();
+    if (institution?.specialties) {
+      const box = node('div', undefined, 'cv-specialty-picker');
+      const label = node('label', undefined, 'cv-field');
+      const title = node('span','Escolha sua especialidade R1 na UNIFESP');
+      const select = node('select'); select.id = 'cv-specialty'; select.setAttribute('aria-label','Escolha sua especialidade R1 na UNIFESP');
+      const placeholder=node('option','Selecione uma especialidade');placeholder.value='';select.append(placeholder);
+      institution.specialties.forEach(item => {
+        const option=node('option',item.specialty+(item.status === 'reviewed' ? ' · calculadora disponível' : ' · consultar edital'));
+        option.value=item.id;select.append(option);
+      });
+      select.value=state.selectedSpecialty || '';
+      select.addEventListener('change',()=>{
+        state.selectedSpecialty=select.value;
+        save();
+        renderRubric();
+      });
+      label.append(title,select);
+      box.append(label,node('small','A avaliação curricular é diferente em cada programa. A calculadora só aparece quando a matriz individual está validada.'));
+      source.append(box);
+    }
     const links = node('div', undefined, 'cv-actions');
     for (const [text, url] of [['Edital oficial',rubric.source],['Retificação',rubric.updates],['Publicações oficiais',rubric.listing]]) {
       if (!url) continue;
@@ -203,6 +230,12 @@
     }
     if (rubric.status !== 'reviewed') {
       source.append(node('p',rubric.scope));
+      if (rubric.criteriaOverview?.length) {
+        const heading=node('h3','Critérios descritos no edital');
+        const list=node('ul');
+        rubric.criteriaOverview.forEach(item=>list.append(node('li',item)));
+        source.append(heading,list);
+      }
       if (rubric.checkedAt) source.append(node('small', `Situação conferida em ${rubric.checkedAt.split('-').reverse().join('/')}.`));
       if (links.childElementCount) source.append(links);
       const pending = node('div',undefined,'cv-pending');
@@ -288,14 +321,16 @@
   }
   function ready(user) {
     if (!user?.id || user.id === userId) return;
-    userId = user.id; state = { items: [], answers: {} }; pending = [];
+    userId = user.id; state = { items: [], answers: {}, selectedSpecialty: '' }; pending = [];
     $('cv-exam').value = rubrics[0]?.id || '';
     $('cv-import-review').hidden = true; form.hidden = true;
     try {
       const saved = JSON.parse(localStorage.getItem(key()) || 'null');
       if (saved && Array.isArray(saved.items) && saved.items.length <= 5000 && saved.answers && typeof saved.answers === 'object') {
         state.items = saved.items.filter(item => item && typeof item.title === 'string' && typeof item.id === 'string' && Object.hasOwn(core.categories,item.category));
-        rubrics.forEach(rubric => {
+        const unifesp = rubrics.find(row=>row.institution==='UNIFESP');
+        state.selectedSpecialty = unifesp?.specialties?.some(item=>item.id===saved.selectedSpecialty) ? saved.selectedSpecialty : '';
+        rubrics.flatMap(row => row.specialties || [row]).forEach(rubric => {
           if (rubric.status !== 'reviewed') return;
           const answers = saved.answers[rubric.id];
           if (!answers || typeof answers !== 'object' || Array.isArray(answers)) return;
