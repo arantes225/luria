@@ -211,24 +211,7 @@
     const title = document.getElementById("notebook-document-title");
     if (title) new MutationObserver(() => { if (!teardown) refresh(); })
       .observe(title, {childList:true,subtree:true,characterData:true});
-    // Quando veio de uma apostila, abra a anotação existente com mesmo título.
-    // Nunca crie nem sobrescreva anotação automaticamente.
-    if (params.get("apostila") && params.get("titulo") && !params.get("topic_id") && !params.get("note_id")) {
-      let ticks = 0;
-      const timer = setInterval(() => {
-        if (++ticks > 120) { clearInterval(timer); return; }
-        try {
-          if (typeof notebookState === "undefined" || !notebookState.user) return;
-          const key = norm(params.get("titulo"));
-          const topic = notebookState.topics.find(x => norm(x.theme) === key);
-          const note = [...notebookState.notesById.values()].find(x =>
-            !x.topic_id && !x.is_shared && norm(x.topic_title) === key);
-          if (topic || note) {
-            clearInterval(timer);
-            (topic ? openTopic(topic.id) : openFreeNote(note.id)).catch(console.warn);
-          } else if (ticks >= 30) clearInterval(timer);
-        } catch (err) { console.warn(err); clearInterval(timer); }
-      }, 250);
-    }
+    // A abertura da anotação correspondente é tratada pelo inicializador isolado
+    // de /caderno/, antes de carregar estes controles opcionais.
   }
 })();
