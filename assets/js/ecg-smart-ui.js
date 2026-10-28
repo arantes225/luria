@@ -56,17 +56,89 @@
     return leadViewStates.get(lead);
   }
 
-  // Inicializa o controlador de rotação reutilizável da LURIA
-  const rotateController = (window.LuriaRotateController && window.LuriaRotateController.create)
-    ? window.LuriaRotateController.create({
-        brandText: "LURIA · CÂMERA INTELIGENTE DE ECG",
-        headingText: "Gire o celular",
-        messageText: "Para uma captura adequada das 12 derivações, posicione o aparelho na horizontal.",
-        tipText: "Se a tela não girar, desative o bloqueio de rotação do aparelho.",
-        buttonText: "Continuar na vertical",
-        shouldActivate: () => stage1Section && !stage1Section.hidden
-      })
-    : null;
+  // Guided capture lives in its own full-screen body portal. Moving the SAME
+  // camera viewport preserves all existing video/HUD handlers and signal logic,
+  // while physically separating it from the educational ECG tabs and nav.
+  const guidedPage = byId("ecg-guided-camera-page");
+  const guidedMount = byId("ecg-guided-camera-mount");
+  const guidedClose = byId("ecg-guided-close");
+  const orientationHint = byId("ecg-guided-orientation");
+  const appShell = document.querySelector(".app-shell");
+  let lastGuidedFocus = null;
+  let wasAppInert = false;
+  let oldAppAria = null;
+  let guidedActive = false;
+  if (guidedMount && cameraViewport && cameraViewport.parentElement !== guidedMount) {
+    guidedMount.appendChild(cameraViewport);
+  }
+
+  function updateGuidedOrientation() {
+    if (!orientationHint || !guidedActive) return;
+    const landscape = window.matchMedia?.("(orientation: landscape)")?.matches
+      ?? (window.innerWidth > window.innerHeight);
+    orientationHint.textContent = landscape
+      ? "Horizontal · enquadre o ECG inteiro, com as bordas visíveis."
+      : "Vertical · a captura continua disponível. Gire se precisar de mais espaço.";
+  }
+  function setScannerTab() {
+    document.querySelectorAll("[data-ecg-tab]").forEach(tab => {
+      const active = tab.dataset.ecgTab === "scanner";
+      tab.classList.toggle("is-active", active);
+      tab.setAttribute("aria-selected", String(active));
+    });
+    document.querySelectorAll("[data-ecg-panel]").forEach(panel => {
+      panel.classList.toggle("is-active", panel.dataset.ecgPanel === "scanner");
+    });
+  }
+  function enterGuidedCapture(mode = "fast") {
+    if (!guidedPage || !guidedMount) return;
+    if (!guidedActive) {
+      lastGuidedFocus = document.activeElement;
+      wasAppInert = Boolean(appShell?.inert);
+      oldAppAria = appShell?.getAttribute("aria-hidden");
+      // Dismiss any leftover app navigation before locking the capture surface.
+      document.body.classList.remove("sidebar-open");
+      document.getElementById("ui-mobile-tools")?.close?.();
+    }
+    guidedActive = true;
+    setScannerTab();
+    guidedPage.hidden = false;
+    cameraViewport.hidden = false;
+    guidedPage.dataset.captureMode = mode;
+    document.body.classList.add("ecg-capture-active", "ecg-guided-capture-open");
+    if (appShell) {
+      appShell.inert = true;
+      appShell.setAttribute("aria-hidden", "true");
+    }
+    updateGuidedOrientation();
+    guidedClose?.focus();
+  }
+  function exitGuidedCapture() {
+    if (!guidedActive) return;
+    guidedActive = false;
+    if (guidedPage) guidedPage.hidden = true;
+    if (cameraViewport) cameraViewport.hidden = true;
+    document.body.classList.remove("ecg-guided-capture-open");
+    if (!document.body.classList.contains("ecg-normal-photo-open")) {
+      document.body.classList.remove("ecg-capture-active");
+    }
+    if (appShell) {
+      appShell.inert = wasAppInert;
+      if (oldAppAria === null) appShell.removeAttribute("aria-hidden");
+      else appShell.setAttribute("aria-hidden", oldAppAria);
+    }
+    if (lastGuidedFocus?.isConnected && !lastGuidedFocus.closest("[hidden]")) {
+      lastGuidedFocus.focus();
+    }
+  }
+
+  // Do not use the blocking "rotate phone" dialog for ECG: portrait is a
+  // supported capture orientation, and dismissing that dialog used to uncover
+  // the unrelated educational page behind the in-page camera.
+  const rotateController = null;
+  window.addEventListener("resize", updateGuidedOrientation, { passive: true });
+  window.addEventListener("orientationchange", updateGuidedOrientation, { passive: true });
+  window.visualViewport?.addEventListener?.("resize", updateGuidedOrientation, { passive: true });
 
   // Inicializa a Câmera Inteligente
   const cameraController = (window.LuriaSmartCamera && window.LuriaSmartCamera.createController)
@@ -76,6 +148,8 @@
         hudContainer,
         rotateController,
         onStageChange: stage => {
+          if (stage === 1) enterGuidedCapture(cameraController?.getCurrentMode?.() || "fast");
+          else exitGuidedCapture();
           stage1Section.hidden = (stage !== 1);
           stage2Section.hidden = (stage !== 2);
           stage3Section.hidden = (stage !== 3);
@@ -148,17 +222,22 @@
   });
 
   const captureSource = byId("ecg-capture-source");
-  window.LuriaEcgStopScanner = () => {
+  function stopGuidedScanner() {
     cameraController?.stopCamera();
-    if (cameraViewport) cameraViewport.hidden = true;
-  };
+    exitGuidedCapture();
+  }
+  window.LuriaEcgStopScanner = stopGuidedScanner;
+  guidedClose?.addEventListener("click", stopGuidedScanner);
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && guidedActive) stopGuidedScanner();
+  });
 
   // Botões de Inicialização da Câmera
   btnStartFast?.addEventListener("click", () => {
     stage1Section.hidden = false;
     stage2Section.hidden = true;
     stage3Section.hidden = true;
-    cameraViewport.hidden = false;
+    enterGuidedCapture("fast");
     if (captureSource) captureSource.textContent = "Origem: Scanner guiado (automático)";
     cameraController?.startCamera("fast");
   });
@@ -167,15 +246,12 @@
     stage1Section.hidden = false;
     stage2Section.hidden = true;
     stage3Section.hidden = true;
-    cameraViewport.hidden = false;
+    enterGuidedCapture("ultrasensitive");
     if (captureSource) captureSource.textContent = "Origem: Scanner guiado (por derivação)";
     cameraController?.startCamera("ultrasensitive");
   });
 
-  btnCancelCamera?.addEventListener("click", () => {
-    cameraController?.stopCamera();
-    cameraViewport.hidden = true;
-  });
+  btnCancelCamera?.addEventListener("click", stopGuidedScanner);
 
   // Both the ordinary photograph and a file imported from the gallery use
   // exactly the SAME extraction, layout, calibration and technical audit.
@@ -187,7 +263,10 @@
     if (!cameraController || !canvasEl) {
       return Promise.resolve({ ok: false, reason: "Motor do ECG indisponível." });
     }
-    const url = URL.createObjectURL(file);
+    let stage = "abertura do arquivo";
+    let url;
+    try { url = URL.createObjectURL(file); }
+    catch { return Promise.resolve({ ok: false, reason: "Não foi possível abrir esta foto no navegador. Escolha uma imagem JPEG/PNG válida." }); }
     return new Promise(resolve => {
       const img = new Image();
       let settled = false;
@@ -200,6 +279,7 @@
       img.onerror = () => finish({ ok: false, reason: "Não foi possível decodificar a imagem escolhida." });
       img.onload = () => {
         try {
+          stage = "preparação da imagem";
           const originalW = img.naturalWidth || img.width;
           const originalH = img.naturalHeight || img.height;
           if (!(originalW > 0 && originalH > 0)) {
@@ -217,7 +297,13 @@
           const unrectified = document.createElement("canvas");
           unrectified.width = workW;
           unrectified.height = workH;
-          unrectified.getContext("2d").drawImage(img, 0, 0, workW, workH);
+          const ctxPhoto = unrectified.getContext("2d");
+          if (!ctxPhoto) {
+            finish({ok:false,reason:"O navegador não conseguiu criar uma área de imagem. Feche outras abas pesadas e tente novamente."});
+            return;
+          }
+          ctxPhoto.drawImage(img, 0, 0, workW, workH);
+          stage = "correção da área do papel";
           const chosenCorners = photoOptions.corners;
           const manualSelection = Array.isArray(chosenCorners);
           if (manualSelection && !window.LuriaEcgPhotoPerspective) {
@@ -229,6 +315,7 @@
             : null;
           const snapCanvas = selectedPaper?.canvas || unrectified;
 
+          stage = "reconhecimento dos traçados";
           cameraController.stopCamera();
           cameraViewport.hidden = true;
           cameraController.resetCaptureSession?.();
@@ -253,6 +340,7 @@
             finish({ ok: false, reason, originalWidth: originalW, originalHeight: originalH, analysedWidth: workW, analysedHeight: workH });
             return;
           }
+          stage = "montagem da conferência";
           if (missingAlert) missingAlert.hidden = true;
           if (captureSource) captureSource.textContent = "Origem: " + (source === "normal_photo" ? (manualSelection ? "Foto normal (4 cantos ajustados)" : "Foto normal (integral)") : "Imagem importada") + " · " + originalW + " × " + originalH + " px (original) · " + snapCanvas.width + " × " + snapCanvas.height + " px (análise).";
           const leads = cameraController.getCapturedLeads();
@@ -262,8 +350,12 @@
           renderStage2Waveforms(leads);
           finish({ ok: true, capturedCount: result.capturedCount, totalCaptured: result.totalCaptured, originalWidth: originalW, originalHeight: originalH, analysedWidth: workW, analysedHeight: workH });
         } catch (exception) {
-          console.warn("[LURIA ECG] Falha no processamento da imagem:", exception);
-          finish({ ok: false, reason: "Falha de processamento da fotografia. Tente outra foto." });
+          console.warn("[LURIA ECG] Falha técnica na etapa", stage, exception);
+          const memoryError = /out.of.memory|allocation|memory|quota/i.test(String(exception?.message || ""));
+          const reason = memoryError
+            ? "A memória do aparelho não foi suficiente para processar a foto. Feche aplicativos pesados ou experimente outra imagem."
+            : "Erro técnico na etapa de " + stage + " (" + (exception?.name || "erro inesperado") + "). A foto original foi preservada. Tente novamente ou use quatro cantos.";
+          finish({ ok: false, reason, errorStage: stage });
         }
       };
       img.src = url;

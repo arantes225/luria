@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
   <link rel="stylesheet" href="/assets/css/luria-rotate-hint.css?v=1">
-  <link rel="stylesheet" href="/assets/css/ecg-smart-camera.css?v=3">
+  <link rel="stylesheet" href="/assets/css/ecg-smart-camera.css?v=4">
   <style>
     .ecg-shell{display:grid;gap:16px}
     .ecg-tabs{display:flex;gap:8px;flex-wrap:wrap}
@@ -28,6 +28,8 @@
     .ecg-tab.is-active{background:var(--accent);border-color:var(--accent);color:#fff}
     .ecg-panel{display:none;gap:14px}
     .ecg-panel.is-active{display:grid}
+    /* Author CSS must not override the hidden attribute during capture/review. */
+    .ecg-panel[hidden],.ecg-card[hidden],.ecg-viewport-container[hidden],.ecg-alert[hidden]{display:none!important}
     .ecg-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
     .ecg-grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
     .ecg-card{padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:var(--shadow,0 8px 24px rgba(24,72,136,.08));display:grid;gap:10px;align-content:start}
@@ -596,6 +598,18 @@
       </div>
     </main>
   </div>
+  <!-- Full-screen guided capture is a BODY sibling, not a card inside the
+       educational ECG app. Its video/HUD node is portaled here at runtime. -->
+  <section id="ecg-guided-camera-page" class="ecg-guided-camera-page" role="dialog" aria-modal="true" aria-label="Scanner guiado de ECG" hidden>
+    <header class="ecg-guided-camera-header">
+      <strong>Scanner de ECG · Captura</strong>
+      <button type="button" id="ecg-guided-close" class="ecg-btn secondary">Fechar câmera</button>
+    </header>
+    <div id="ecg-guided-camera-mount" class="ecg-guided-camera-mount"></div>
+    <footer class="ecg-guided-camera-footer">
+      <p id="ecg-guided-orientation" role="status">Enquadre a folha inteira. A câmera funciona em pé ou deitada.</p>
+    </footer>
+  </section>
   <!-- Página de conferência da fotografia: independende do menu e sem filtros que alterem o ECG. -->
   <section id="ecg-normal-photo-page" class="ecg-normal-photo-page" role="dialog" aria-modal="true" aria-label="Conferir fotografia normal do ECG" hidden>
     <header class="ecg-normal-photo-head">
@@ -637,11 +651,11 @@
   <script src="/assets/js/ecg-contracts.js?v=2"></script>
   <script src="/assets/js/ecg-signal-extractor.js?v=2"></script>
   <script src="/assets/js/ecg-cv-engine.js?v=2"></script>
-  <script src="/assets/js/ecg-smart-camera.js?v=2"></script>
-  <script src="/assets/js/ecg-smart-ui.js?v=3"></script>
+  <script src="/assets/js/ecg-smart-camera.js?v=3"></script>
+  <script src="/assets/js/ecg-smart-ui.js?v=4"></script>
   <script src="/assets/js/ecg-photo-perspective.js?v=1"></script>
-  <script src="/assets/js/ecg-normal-photo.js?v=2"></script>
-  <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
+  <script src="/assets/js/ecg-normal-photo.js?v=3"></script>
+  <script defer src="/assets/js/pwa.js?v=20261028-ecg-capture"></script>
   <script defer src="/assets/js/ecg-reader.js?v=2"></script>
 </body>
 </html>

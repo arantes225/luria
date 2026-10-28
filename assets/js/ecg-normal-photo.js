@@ -31,6 +31,37 @@
   let previewUrl = null;
   let working = false;
   let lastFocus = null;
+  const appShell = doc.querySelector(".app-shell");
+  let previousInert = false;
+  let previousAria = null;
+  let photoOpen = false;
+  function activatePhotoSurface() {
+    if (!photoOpen) {
+      previousInert = Boolean(appShell?.inert);
+      previousAria = appShell?.getAttribute("aria-hidden");
+    }
+    photoOpen = true;
+    doc.body.classList.remove("sidebar-open");
+    doc.getElementById("ui-mobile-tools")?.close?.();
+    doc.body.classList.add("ecg-normal-photo-open", "ecg-capture-active");
+    if (appShell) {
+      appShell.inert = true;
+      appShell.setAttribute("aria-hidden", "true");
+    }
+    page.hidden = false;
+  }
+  function deactivatePhotoSurface() {
+    if (!photoOpen) return;
+    photoOpen = false;
+    page.hidden = true;
+    doc.body.classList.remove("ecg-normal-photo-open");
+    if (!doc.body.classList.contains("ecg-guided-capture-open")) doc.body.classList.remove("ecg-capture-active");
+    if (appShell) {
+      appShell.inert = previousInert;
+      if (previousAria === null) appShell.removeAttribute("aria-hidden");
+      else appShell.setAttribute("aria-hidden", previousAria);
+    }
+  }
   let corners = perspective.cloneCorners();
   let selection = "corners";
   let photoWidth = 0;
@@ -147,8 +178,7 @@
   }
   function close() {
     if (working) return;
-    page.hidden = true;
-    doc.body.classList.remove("ecg-normal-photo-open");
+    deactivatePhotoSurface();
     releasePreview();
     preview.hidden = true;
     sourceFile = null;
@@ -189,10 +219,7 @@
     if (!file.type.startsWith("image/") || file.size === 0 || file.size > LIMIT_BYTES) {
       sourceFile = null;
       btnProcess.disabled = true;
-      if (page.hidden) {
-        page.hidden = false;
-        doc.body.classList.add("ecg-normal-photo-open");
-      }
+      activatePhotoSurface();
       showError("Escolha uma imagem válida de até 30 MB. Não foram enviados arquivos.");
       return;
     }
@@ -202,8 +229,7 @@
     btnProcess.disabled = true;
     showError("");
     details.textContent = "Conferindo resolução da foto...";
-    page.hidden = false;
-    doc.body.classList.add("ecg-normal-photo-open");
+    activatePhotoSurface();
     preview.hidden = true;
     frame.hidden = true;
     previewUrl = URL.createObjectURL(file);
