@@ -45,7 +45,7 @@
   const active=read(sessionStorage,ACTIVE),next=completed+1;
   // Uma simples navegação nunca conclui uma etapa: a pessoa confirma a leitura ao retornar.
   if(next===0&&active?.plan?.createdAt===plan.createdAt&&active.activeIndex===0
-     &&/^\\/(apostilas|caderno)(?:\\/|\\?)/.test(String(steps[0]?.href||""))){
+     &&["/apostilas/","/caderno/"].some(prefix=>String(steps[0]?.href||"").startsWith(prefix))){
    const card=document.querySelector('.study-session-card.is-current .study-session-card-footer');
    if(card&&!card.querySelector("[data-confirm-material]")){
     const button=document.createElement("button");button.type="button";
@@ -77,5 +77,5 @@
  document.addEventListener("DOMContentLoaded",()=>{save();enhance()});
  window.addEventListener("pageshow",()=>{save();enhance()});
  window.addEventListener("pagehide",save);
- document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"){if(!valid(read(sessionStorage,PLAN))){restore();location.reload();return}save()}});
+ document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"){if(read(sessionStorage,PLAN)&&!valid(read(sessionStorage,PLAN))){restore();location.reload();return}save()}});
 })();
