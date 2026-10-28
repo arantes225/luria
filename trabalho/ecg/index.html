@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
   <link rel="stylesheet" href="/assets/css/luria-rotate-hint.css?v=1">
-  <link rel="stylesheet" href="/assets/css/ecg-smart-camera.css?v=1">
+  <link rel="stylesheet" href="/assets/css/ecg-smart-camera.css?v=3">
   <style>
     .ecg-shell{display:grid;gap:16px}
     .ecg-tabs{display:flex;gap:8px;flex-wrap:wrap}
@@ -108,10 +108,12 @@
               <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
                 <div>
                   <h2>Etapa 1 — Captura Inteligente com Câmera</h2>
-                  <p style="margin:0;color:var(--muted);font-size:13px">Aponte para a folha do ECG. A câmera identifica o exame e captura automaticamente assim que estabilizado.</p>
+                  <p style="margin:0;color:var(--muted);font-size:13px">Compare Foto normal (câmera nativa, sem recorte automático) com Scanner guiado (captura e orientação contínuas). A extração posterior é a mesma em ambos.</p>
                 </div>
                 <div class="ecg-actions">
-                  <button class="ecg-btn" id="ecg-btn-start-fast" type="button">Abrir Câmera (Modo Automático)</button>
+                  <button class="ecg-btn" id="ecg-btn-normal-photo" type="button">📷 Foto normal (comparar)</button>
+                   <input id="ecg-normal-photo-input" type="file" accept="image/*" capture="environment" hidden>
+                   <button class="ecg-btn secondary" id="ecg-btn-start-fast" type="button">Scanner guiado (automático)</button>
                   <button class="ecg-btn secondary" id="ecg-btn-start-ultra" type="button">Modo Derivação por Derivação</button>
                 </div>
               </div>
@@ -179,6 +181,7 @@
                 <div>
                   <h2>Etapa 2 — Traçados Extraídos, Calibração e Auditoria de Fidelidade</h2>
                   <p style="margin:0;color:var(--muted);font-size:13px">Confira pixel a pixel cada onda reconstruída sobre a fotografia original, utilize zoom/arraste e confirme a calibração do papel.</p>
+                   <p id="ecg-capture-source" class="ecg-capture-source" aria-live="polite">Origem da captura: aguardando.</p>
                 </div>
                 <div class="ecg-review-modes" role="radiogroup" aria-label="Modo de visualização">
                   <label style="font-size:12px;display:flex;align-items:center;gap:4px;cursor:pointer">
@@ -593,6 +596,39 @@
       </div>
     </main>
   </div>
+  <!-- Página de conferência da fotografia: independende do menu e sem filtros que alterem o ECG. -->
+  <section id="ecg-normal-photo-page" class="ecg-normal-photo-page" role="dialog" aria-modal="true" aria-label="Conferir fotografia normal do ECG" hidden>
+    <header class="ecg-normal-photo-head">
+      <strong>Foto normal · LURIA ECG</strong>
+      <button type="button" class="ecg-btn secondary" id="ecg-normal-photo-close">Fechar</button>
+    </header>
+    <main class="ecg-normal-photo-main">
+      <p>Marque os quatro cantos reais do papel arrastando as bolinhas azuis. Inclua toda a grade e todos os rótulos, mas não a mesa ao redor. Se preferir, compare também o resultado da foto inteira.</p>
+      <div class="ecg-normal-photo-mode" role="group" aria-label="Selecionar área do exame">
+        <label><input type="radio" name="ecg-photo-selection" value="corners" checked> Delimitar papel (4 cantos)</label>
+        <label><input type="radio" name="ecg-photo-selection" value="whole"> Usar foto inteira (controle A/B)</label>
+        <button type="button" id="ecg-normal-photo-reset" class="ecg-btn secondary">Reiniciar cantos</button>
+      </div>
+      <div id="ecg-normal-photo-frame" class="ecg-normal-photo-frame" hidden>
+        <img id="ecg-normal-photo-preview" alt="Fotografia original do ECG, sem filtros" hidden>
+        <svg id="ecg-normal-photo-polygon" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">
+          <path id="ecg-normal-photo-dim" fill-rule="evenodd"></path>
+          <polygon id="ecg-normal-photo-outline"></polygon>
+        </svg>
+        <button type="button" class="ecg-photo-corner" data-ecg-corner="0" aria-label="Canto superior esquerdo"></button>
+        <button type="button" class="ecg-photo-corner" data-ecg-corner="1" aria-label="Canto superior direito"></button>
+        <button type="button" class="ecg-photo-corner" data-ecg-corner="2" aria-label="Canto inferior direito"></button>
+        <button type="button" class="ecg-photo-corner" data-ecg-corner="3" aria-label="Canto inferior esquerdo"></button>
+      </div>
+      <p id="ecg-normal-photo-corner-help" class="ecg-normal-photo-details" role="status">Arraste os quatro pontos para os cantos reais. Também é possível usar as setas do teclado quando um ponto estiver selecionado.</p>
+      <p id="ecg-normal-photo-details" class="ecg-normal-photo-details" role="status" aria-live="polite"></p>
+      <p id="ecg-normal-photo-error" class="ecg-normal-photo-error" role="alert" hidden></p>
+    </main>
+    <footer class="ecg-normal-photo-actions">
+      <button type="button" id="ecg-normal-photo-retake" class="ecg-btn secondary">Tirar outra foto</button>
+      <button type="button" id="ecg-normal-photo-process" class="ecg-btn">Usar foto e extrair ECG</button>
+    </footer>
+  </section>
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
@@ -602,7 +638,9 @@
   <script src="/assets/js/ecg-signal-extractor.js?v=2"></script>
   <script src="/assets/js/ecg-cv-engine.js?v=2"></script>
   <script src="/assets/js/ecg-smart-camera.js?v=2"></script>
-  <script src="/assets/js/ecg-smart-ui.js?v=2"></script>
+  <script src="/assets/js/ecg-smart-ui.js?v=3"></script>
+  <script src="/assets/js/ecg-photo-perspective.js?v=1"></script>
+  <script src="/assets/js/ecg-normal-photo.js?v=2"></script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
   <script defer src="/assets/js/ecg-reader.js?v=2"></script>
 </body>

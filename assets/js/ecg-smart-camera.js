@@ -156,6 +156,32 @@
       }
     }
 
+    // New image = new technical session. Do not mix a previous scanner attempt
+    // with a later normal photo in the user's A/B comparison.
+    function resetCaptureSession() {
+      stopCamera();
+      resetLeadsRegistry();
+      pendingLeadQueue = [...CANONICAL_LEADS];
+      currentTargetLead = "DI";
+      currentSheetMap = null;
+      originalImageUrl = null;
+      pendingUncertainCapture = null;
+      autoCaptureLock = false;
+      currentStage = 1;
+      sessionCalibration = {
+        paperSpeedMmPerSec: 25,
+        gainMmPerMv: 10,
+        calibrationSource: "unknown",
+        confirmedByUser: false,
+        pixelsPerMmX: null,
+        pixelsPerMmY: null,
+        msPerPixel: null,
+        mvPerPixel: null
+      };
+      global.LuriaEcgSessionData = null;
+      updateHudProgress();
+    }
+
     async function startCamera(preferredMode = "fast") {
       mode = preferredMode;
       currentStage = 1;
@@ -356,7 +382,7 @@
       });
 
       // Se a imagem estiver rotacionada ou com perspectiva severa e os cantos foram localizados, retifica
-      if (boundaries.orientation && (boundaries.orientation.isRotated90 || Math.abs(boundaries.orientation.skewAngleDeg) > 1.5)) {
+      if (!options.manualPaperCornersApplied && boundaries.orientation && (boundaries.orientation.isRotated90 || Math.abs(boundaries.orientation.skewAngleDeg) > 1.5)) {
         const corrAngle = boundaries.orientation.isRotated90 ? 90 : -boundaries.orientation.skewAngleDeg;
         const rectified = cvEngine.rectifyImagePerspective(
           fullImageData,
@@ -933,6 +959,7 @@
     return {
       startCamera,
       stopCamera,
+      resetCaptureSession,
       recaptureLead,
       processPhotographCanvas,
       openReview: transitionToStage2,

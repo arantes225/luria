@@ -41,6 +41,8 @@ jobs:
         run: node --test tests/pages-base-links.test.cjs
       - name: Guard public-site artifact against internal files
         run: node --test tests/public-artifact-security.test.cjs
+      - name: Verify ECG normal photo and guided scanner remain independent
+        run: node --test tests/ecg-normal-photo.test.cjs tests/ecg-photo-perspective.test.cjs
       - name: Check shared CSS and application routes
         run: node scripts/check-css.cjs
       - name: Test CSS ownership and legacy route aliases
