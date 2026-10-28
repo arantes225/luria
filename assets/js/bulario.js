@@ -314,6 +314,8 @@
     });
   });
   window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(true); });
+  // Optimization: Debounce the search input event listener to prevent synchronous DOM
+  // re-renders of the drug list on every keystroke, improving main thread responsiveness.
   function debounce(func, wait) {
     let timeout;
     return function(...args) {
@@ -325,8 +327,6 @@
       timeout = setTimeout(later, wait);
     };
   }
-  // Optimization: Debounce the search input event listener to prevent synchronous DOM
-  // re-renders of the drug list on every keystroke, improving main thread responsiveness.
   search.addEventListener('input',debounce(renderList, 300));
   (async()=>{
     const localSeeds=Array.isArray(window.LURIA_BULARIO_SEEDS)?window.LURIA_BULARIO_SEEDS:[];
