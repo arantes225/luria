@@ -105,6 +105,21 @@
       }
     }
 
+    // In full-sheet captures the left edge of every proposed lead cell may
+    // include a lead label or a calibration rectangle, both strong false
+    // "waves". Exclude this prefix from signal tracing only; keep source
+    // photograph untouched and preserve the omitted samples as missing.
+    if (options.maskPrintedHeader === true) {
+      const prefix = Math.min(Math.floor(width * 0.12), Math.max(0, width - 30));
+      for (let y = 0; y < height; y++) {
+        for (let x = 0; x < prefix; x++) {
+          const index = y * width + x;
+          inkStrength[index] = 0;
+          textMask[index] = 1;
+        }
+      }
+    }
+
     return {
       inkStrength,
       textMask,
