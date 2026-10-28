@@ -162,12 +162,13 @@ test('Lattes parses supported records, removes duplicates, requires review and r
   assert.throws(() => core.parseLattes('<!DOCTYPE x [<!ENTITY y SYSTEM "file:///secret">]><CURRICULO-VITAE/>',DOMParser));
   assert.throws(() => core.parseLattes('<CURRICULO-VITAE>',DOMParser));
 });
-function boot(userId='user-a', storage) {
+function boot(userId='user-a', storage, beforeReady) {
   const html = fs.readFileSync(path.join(root,'aplicar/curriculo/index.html'),'utf8');
   const dom = new JSDOM(html,{url:'https://luria.test/aplicar/curriculo/',runScripts:'outside-only'});
   const w = dom.window;
   if (storage) w.localStorage.setItem(`luria:curriculo:v1:${userId}`,storage);
   for (const script of ['curriculo-core','curriculo-rubricas','curriculo-pdf','curriculo']) w.eval(fs.readFileSync(path.join(root,`assets/js/${script}.js`),'utf8'));
+  beforeReady?.(w);
   w.dispatchEvent(new w.CustomEvent('docmap:ready',{detail:{user:{id:userId}}}));
   return w;
 }
@@ -246,4 +247,111 @@ test('PDF heurístico só sugere atividades datadas sob uma seção identificáv
   assert.deepEqual(items.map(item => item.year), ['2025','2024','2024']);
   assert.ok(items.every(item => !item.reviewed && item.source === 'pdf'));
   assert.equal(pdf.parseLines(['Currículo', '2025 - 2026 nome pessoa'], ()=>'test').length, 0);
+});
+
+
+test('PDF original: upload, abertura, download e remoção percorrem os handlers reais', async () => {
+  const w = boot();
+  const doc = w.document;
+  const attachment = doc.getElementById('cv-pdf-attached');
+  const clicks = [];
+  let storedOwner, removedOwner;
+  const file = {
+    name: 'curriculo-aluno.pdf', type: 'application/pdf', size: 1200,
+    slice: () => ({ arrayBuffer: async () => Uint8Array.from([37,80,68,70,45]).buffer }),
+    arrayBuffer: async () => Uint8Array.from([37,80,68,70,45]).buffer
+  };
+  w.LuriaCurriculoPdf.storePdf = async (owner, original) => {
+    storedOwner = owner;
+    assert.equal(original, file);
+  };
+  w.LuriaCurriculoPdf.extract = async () => ({ items: [], hasText: false, pages: 1 });
+  w.LuriaCurriculoPdf.removePdf = async owner => { removedOwner = owner; };
+  w.URL.createObjectURL = blob => {
+    assert.equal(blob, file);
+    return 'blob:https://luria.test/teste-original';
+  };
+  w.URL.revokeObjectURL = () => {};
+  w.HTMLAnchorElement.prototype.click = function () {
+    clicks.push({ href: this.href, download: this.download, target: this.target });
+  };
+
+  const input = doc.getElementById('cv-pdf');
+  Object.defineProperty(input, 'files', { configurable: true, value: [file] });
+  assert.equal(attachment.hidden, true);
+  doc.getElementById('cv-toggle').click();
+  assert.equal(doc.getElementById('cv-curriculum-panel').hidden, false);
+  input.dispatchEvent(new w.Event('change', { bubbles: true }));
+  await new Promise(resolve => setImmediate(resolve));
+  assert.equal(storedOwner, 'user-a');
+  assert.equal(attachment.hidden, false);
+  assert.match(doc.getElementById('cv-pdf-filename').textContent, /curriculo-aluno.pdf/);
+  assert.match(doc.getElementById('cv-status').textContent, /digitalizado/);
+
+  doc.getElementById('cv-open-pdf').click();
+  doc.getElementById('cv-download-pdf').click();
+  assert.equal(clicks.length, 2);
+  assert.match(clicks[0].href, /^blob:/);
+  assert.equal(clicks[0].target, '_blank');
+  assert.equal(clicks[1].download, 'curriculo-aluno.pdf');
+
+  doc.getElementById('cv-remove-pdf').click();
+  await new Promise(resolve => setImmediate(resolve));
+  assert.equal(removedOwner, 'user-a');
+  assert.equal(attachment.hidden, true);
+  w.close();
+});
+
+test('PDF original continua acessível ao recarregar o cadastro na mesma conta', async () => {
+  const file = { name: 'historico.pdf', type: 'application/pdf' };
+  const w = boot('user-a', null, win => {
+    win.indexedDB = {};
+    win.LuriaCurriculoPdf.getPdf = async owner => {
+      assert.equal(owner, 'user-a');
+      return { blob: file, name: file.name };
+    };
+  });
+  const doc = w.document;
+  await new Promise(resolve => setImmediate(resolve));
+  assert.equal(doc.getElementById('cv-pdf-attached').hidden, false);
+  assert.match(doc.getElementById('cv-pdf-filename').textContent, /historico.pdf/);
+  w.close();
+});
+
+test('Exportar currículo em PDF executa geração e download, não backup JSON', async () => {
+  const w = boot();
+  const doc = w.document;
+  doc.getElementById('cv-add').click();
+  const form = doc.getElementById('cv-form');
+  form.elements.title.value = 'Monitoria em Clínica Médica';
+  form.elements.year.value = '2025';
+  form.dispatchEvent(new w.Event('submit', { bubbles: true, cancelable: true }));
+  const output = { lines: [], filenames: [] };
+  w.LuriaLazyVendors = { ensure: async name => assert.equal(name, 'jspdf') };
+  w.jspdf = { jsPDF: class {
+    setFont() {}
+    setFontSize() {}
+    splitTextToSize(s) { return [s]; }
+    text(str) { output.lines.push(str); }
+    addPage() {}
+    save(filename) { output.filenames.push(filename); }
+  }};
+  doc.getElementById('cv-export-pdf').click();
+  await new Promise(resolve => setImmediate(resolve));
+  assert.deepEqual(output.filenames, ['meu-curriculo-luria.pdf']);
+  assert.ok(output.lines.some(line => line.includes('Monitoria em Clínica Médica')));
+  assert.match(doc.getElementById('cv-status').textContent, /PDF gerado/);
+  w.close();
+});
+
+test('Validação PDF rejeita extensão falsa, conteúdo não PDF e tamanho excessivo', async () => {
+  const goodHeader = { arrayBuffer: async () => Uint8Array.from([37,80,68,70,45]).buffer };
+  const badHeader = { arrayBuffer: async () => Uint8Array.from([72,69,76,76,79]).buffer };
+  const file = (name, size, header) => ({
+    name, type: 'application/pdf', size, slice: () => header
+  });
+  await pdf.checkPdf(file('curriculo.pdf', 1000, goodHeader));
+  await assert.rejects(pdf.checkPdf(file('curriculo.pdf', 1000, badHeader)), /não é um PDF válido/);
+  await assert.rejects(pdf.checkPdf(file('curriculo.pdf', pdf.MAX_BYTES + 1, goodHeader)), /até 10 MB/);
+  await assert.rejects(pdf.checkPdf({ ...file('arquivo.txt',1000,goodHeader), type: 'text/plain' }), /arquivo PDF/);
 });
