@@ -447,12 +447,16 @@
     const threshold = Math.max(105, globalMeanLuma * 0.72);
 
     let minY = 0, maxY = height - 1;
-    while (minY < height - 1 && rowBright[minY] > 0 && rowBright[minY] < threshold) minY += step;
-    while (maxY > minY && rowBright[maxY] > 0 && rowBright[maxY] < threshold) maxY -= step;
+    if (minY % step !== 0) minY = Math.floor(minY / step) * step;
+    if (maxY % step !== 0) maxY = Math.floor(maxY / step) * step;
+    while (minY < height - 1 && rowBright[minY] < threshold) minY += step;
+    while (maxY > minY && rowBright[maxY] < threshold) maxY -= step;
 
     let minX = 0, maxX = width - 1;
-    while (minX < width - 1 && colBright[minX] > 0 && colBright[minX] < threshold) minX += step;
-    while (maxX > minX && colBright[maxX] > 0 && colBright[maxX] < threshold) maxX -= step;
+    if (minX % step !== 0) minX = Math.floor(minX / step) * step;
+    if (maxX % step !== 0) maxX = Math.floor(maxX / step) * step;
+    while (minX < width - 1 && colBright[minX] < threshold) minX += step;
+    while (maxX > minX && colBright[maxX] < threshold) maxX -= step;
 
     // Medir as larguras da folha no topo vs na base para detectar perspectiva trapezoidal severa
     const topY = Math.min(height - 1, Math.max(0, Math.round(minY + (maxY - minY) * 0.12)));
@@ -476,14 +480,16 @@
     const widthRatio = (maxX - minX) / width;
     const heightRatio = (maxY - minY) / height;
 
-    // Se a folha está cortada demais ou ocupa fração minúscula, ou toca as 4 bordas sem margens livres
+    // Se a folha está cortada demais ou ocupa fração minúscula (< 45% largura ou < 40% altura),
+    // ou se o papel encosta exatamente nas 4 margens sem borda de mesa
     const touchesAllBorders = (minX === 0 && maxX === width - 1 && minY === 0 && maxY === height - 1);
-    const isCutOff = widthRatio < 0.45 || heightRatio < 0.40 || touchesAllBorders;
+    const isCutOff = (widthRatio < 0.45 || heightRatio < 0.40) || touchesAllBorders;
     const hasSeverePerspective = trapezoidRatio < 0.74;
 
     return {
-      found: !isCutOff && globalMeanLuma >= 80,
+      found: globalMeanLuma >= 80,
       isCutOff,
+      touchesAllBorders,
       hasSeverePerspective,
       trapezoidRatio: Number(trapezoidRatio.toFixed(3)),
       corners: {
@@ -689,8 +695,10 @@
    * 4. Detecta e mede a grade milimetrada do ECG por autocorrelação dos perfis cromáticos/luminosos
    * Retorna o espaçamento real em pixels por milímetro (px/mm), velocidade e ganho
    */
-  function detectECGGridAndCalibration(imageData, userCalibration = null) {
+  function detectECGGridAndCalibration(imageData, userCalibration = null, sheetBoundaries = null) {
     const { width, height, data } = imageData;
+
+    const effectiveSheetBoundaries = sheetBoundaries || locatePaperSheet(imageData)?.boundaries || null;
 
     // Extrair sinal de grade: linhas rosas/vermelhas/laranjas (R - B > 12 ou R - G > 10) ou linhas cinzas finas regulares
     const xGridProfile = new Float32Array(width);
@@ -732,7 +740,7 @@
     const periodY = findDominantGridPeriod(hpY, 3, Math.min(80, Math.floor(height / 8)));
 
     // Detecção do pulso retangular de calibração (1 mV = 10 mm de altura, 200 ms = 5 mm de largura)
-    const calPulse = detectCalibrationPulse(imageData);
+    const calPulse = detectCalibrationPulse(imageData, effectiveSheetBoundaries);
 
     const gridAxesAgree = periodX.period > 0 && periodY.period > 0 &&
       Math.abs(periodX.period - periodY.period) / Math.max(periodX.period, periodY.period) <= 0.22;
@@ -781,11 +789,11 @@
       paperSpeedMmPerSec = Math.abs(pulseWidthMm - 10) < Math.abs(pulseWidthMm - 5) ? 50 : 25;
       calibrationSource = "measured";
     } else if (hasMeasuredGrid) {
-      // Grade medida diretamente nos pixels; velocidade 25 mm/s e ganho 10 mm/mV são padrão se não informados,
-      // mas marcados explicitamente como "measured_grid_assumed_standard_speed_gain"
+      // Grade medida diretamente nos pixels, MAS velocidade e ganho NÃO foram medidos instrumentalmente
+      // Separar explicitamente: grade é medida, velocidade e ganho são presumidos (ou padrão)
       paperSpeedMmPerSec = (userCalibration && userCalibration.paperSpeedMmPerSec) || 25;
       gainMmPerMv = (userCalibration && userCalibration.gainMmPerMv) || 10;
-      calibrationSource = "measured";
+      calibrationSource = (userCalibration && userCalibration.confirmedByUser) ? "user_confirmed" : "assumed";
     } else if (userCalibration && userCalibration.allowAssumedStandard) {
       paperSpeedMmPerSec = userCalibration.paperSpeedMmPerSec || 25;
       gainMmPerMv = userCalibration.gainMmPerMv || 10;
@@ -819,6 +827,9 @@
       pixelsPerMv: mvPerPixel ? Number((1 / mvPerPixel).toFixed(2)) : null,
       calibrationPulse: calPulse,
       calibrationSource,
+      gridSpacingSource: hasMeasuredGrid ? "measured" : "unknown",
+      speedSource: (calPulse.detected && calPulse.confidence >= 0.75) ? "measured_pulse" : ((userCalibration && userCalibration.confirmedByUser) ? "user_confirmed" : (hasMeasuredGrid ? "assumed_standard" : "unknown")),
+      gainSource: (calPulse.detected && calPulse.confidence >= 0.75) ? "measured_pulse" : ((userCalibration && userCalibration.confirmedByUser) ? "user_confirmed" : (hasMeasuredGrid ? "assumed_standard" : "unknown")),
       measurementsAllowed: calibrationSource === "measured" || calibrationSource === "user_confirmed"
     };
   }
@@ -874,17 +885,27 @@
   /**
    * Detecta pulso quadrado de calibração (1 mV) geralmente situado na margem esquerda ou direita das linhas
    */
-  function detectCalibrationPulse(imageData) {
+  function detectCalibrationPulse(imageData, sheetBoundaries = null) {
     const { width, height, data } = imageData;
-    const scanMaxX = Math.min(width, Math.floor(width * 0.14));
+    const xMinPaper = sheetBoundaries ? Math.max(0, Math.floor(sheetBoundaries.xMin * width)) : 0;
+    const xMaxPaper = sheetBoundaries ? Math.min(width, Math.ceil(sheetBoundaries.xMax * width)) : width;
+    const yMinPaper = sheetBoundaries ? Math.max(0, Math.floor(sheetBoundaries.yMin * height)) : 0;
+    const yMaxPaper = sheetBoundaries ? Math.min(height, Math.ceil(sheetBoundaries.yMax * height)) : height;
+
+    const paperW = xMaxPaper - xMinPaper;
+    const paperH = yMaxPaper - yMinPaper;
+    const scanMinX = xMinPaper + Math.max(4, Math.floor(paperW * 0.02));
+    const scanMaxX = Math.min(xMaxPaper, scanMinX + Math.floor(paperW * 0.12));
     let bestPulse = { detected: false, heightPx: 0, widthPx: 0 };
+
+    if (scanMaxX <= scanMinX + 10 || paperH < 50) return bestPulse;
 
     // Procura degrau vertical abrupto seguido de platô plano horizontal e retorno
     for (let yBand = 0; yBand < 3; yBand++) {
-      const yMin = Math.floor(height * (0.08 + yBand * 0.25));
-      const yMax = Math.floor(height * (0.30 + yBand * 0.25));
+      const yMin = yMinPaper + Math.floor(paperH * (0.05 + yBand * 0.28));
+      const yMax = yMinPaper + Math.floor(paperH * (0.28 + yBand * 0.28));
       const trace = [];
-      for (let x = 2; x < scanMaxX; x++) {
+      for (let x = scanMinX; x < scanMaxX; x++) {
         let sumY = 0, cnt = 0;
         for (let y = yMin; y < yMax; y++) {
           const idx = (y * width + x) * 4;
@@ -898,18 +919,22 @@
       }
 
       // Analisar se há um platô retangular elevado em relação à base
+      // Um pulso verdadeiro tem: baseLevel -> subida vertical -> platô de 4 a 40 colunas -> descida vertical -> baseLevel
       const valid = trace.filter(v => v !== null);
-      if (valid.length > 8) {
+      if (valid.length > 15) {
         const sorted = [...valid].sort((a, b) => a - b);
         const topPlateau = sorted[Math.floor(sorted.length * 0.15)];
-        const baseLevel = sorted[Math.floor(sorted.length * 0.75)];
+        const baseLevel = sorted[Math.floor(sorted.length * 0.85)];
         const hPx = baseLevel - topPlateau;
-        if (hPx >= 10 && hPx <= (yMax - yMin) * 0.85) {
+        if (hPx >= 15 && hPx <= (yMax - yMin) * 0.85) {
           let plateauCols = 0;
+          let baselineCols = 0;
           for (const v of valid) {
             if (Math.abs(v - topPlateau) <= 2.5) plateauCols++;
+            if (Math.abs(v - baseLevel) <= 2.5) baselineCols++;
           }
-          if (plateauCols >= 4 && plateauCols <= 40) {
+          // Exige tanto platô quanto linha de base coexistindo antes/depois do pulso
+          if (plateauCols >= 6 && plateauCols <= 40 && baselineCols >= 8) {
             bestPulse = { detected: true, heightPx: hPx, widthPx: plateauCols };
             break;
           }
@@ -1016,9 +1041,11 @@
 
     const margin = bestScore - secondBestScore;
     if (bestLabel && bestScore >= 0.88 && margin >= 0.015) {
+      const canonicalLead = LEAD_SYNONYMS[bestLabel] || bestLabel;
       return {
         recognized: true,
-        lead: LEAD_SYNONYMS[bestLabel] || bestLabel,
+        lead: canonicalLead,
+        recognizedLead: canonicalLead,
         rawText: bestLabel,
         confidence: Number(Math.min(0.99, bestScore).toFixed(3)),
         method: "glyph_template_ocr"
@@ -1028,6 +1055,7 @@
     return {
       recognized: false,
       lead: null,
+      recognizedLead: null,
       rawText: null,
       confidence: 0,
       method: "none"
@@ -1189,7 +1217,7 @@
     }
 
     // 4. Medir grade milimetrada e calibração
-    const calibration = detectECGGridAndCalibration(imageData, options.userCalibration || null);
+    const calibration = detectECGGridAndCalibration(imageData, options.userCalibration || null, sheet.boundaries);
 
     // 5. Descobrir topologia das faixas de traçado
     const topology = discoverWaveformTopology(imageData, sheet.boundaries);
@@ -1201,11 +1229,17 @@
         confidence: 0.1,
         boundaries: sheet.boundaries,
         detectedLayout: null,
+        leads: {},
+        leadIdentities: {},
         layoutConfidence: "none",
         quality,
         calibration,
+        gridCalibration: calibration,
         topology,
         anomalies: [topology.rowCount === 0 ? "no_waveform_traces" : "dense_text_or_noise"],
+        reason: topology.rowCount === 0
+          ? "Grade ou papel sem traçados eletrocardiográficos detectáveis."
+          : "Padrão incompatível com ECG (possível página de texto ou ruído).",
         message: topology.rowCount === 0
           ? "Grade ou papel sem traçados eletrocardiográficos detectáveis."
           : "Padrão incompatível com ECG (possível página de texto ou ruído)."
@@ -1222,29 +1256,40 @@
         confidence: layoutEvaluation.confidence,
         boundaries: sheet.boundaries,
         detectedLayout: null,
+        leads: {},
+        leadIdentities: {},
         layoutConfidence: layoutEvaluation.layoutConfidence,
         quality,
         calibration,
+        gridCalibration: calibration,
         topology,
         orientation,
         anomalies: layoutEvaluation.anomalies,
+        reason: layoutEvaluation.message,
         message: layoutEvaluation.message
       };
     }
+
+    const leadsMap = layoutEvaluation.detectedLayout?.leads || {};
 
     return {
       detected: true,
       confidence: layoutEvaluation.confidence,
       boundaries: sheet.boundaries,
       detectedLayout: layoutEvaluation.detectedLayout,
+      leads: leadsMap,
+      leadIdentities: layoutEvaluation.leadIdentities || {},
       layoutConfidence: layoutEvaluation.layoutConfidence,
       recognizedLabels: layoutEvaluation.recognizedLabels,
       anomalies: layoutEvaluation.anomalies,
       quality,
       calibration,
+      gridCalibration: calibration,
       orientation,
       topology,
       sheet,
+      layoutId: layoutEvaluation.detectedLayout?.name || "standard_3x4",
+      reason: layoutEvaluation.message,
       message: layoutEvaluation.message
     };
   }
@@ -1533,8 +1578,9 @@
   /**
    * Calcula o vetor de orientação espacial da câmera para guiar o usuário até a próxima derivação
    */
-  function computeNavigationGuidance(currentMap, targetLead, currentRoiCenter = { x: 0.5, y: 0.5 }) {
-    if (!currentMap || !currentMap.leads || !targetLead || !currentMap.leads[targetLead]) {
+  function computeNavigationGuidance(currentMap, targetLead, currentRoiCenter = { x: 0.5, y: 0.5 }, trackingState = {}) {
+    const leadsMap = currentMap?.leads || currentMap?.detectedLayout?.leads || null;
+    if (!currentMap || !leadsMap || !targetLead || !leadsMap[targetLead]) {
       return {
         direction: "unknown",
         dx: 0,
@@ -1543,14 +1589,29 @@
       };
     }
 
-    const box = currentMap.leads[targetLead];
+    // Se houver rastreamento de referência com perda de coerência (ex.: deslocamento não suportado)
+    if (trackingState.trackingLost) {
+      return {
+        direction: "lost_reference",
+        dx: 0,
+        dy: 0,
+        instruction: "Referência espacial perdida. Afaste o celular para reenquadrar o ECG por completo."
+      };
+    }
+
+    const box = leadsMap[targetLead];
     const targetCenter = {
       x: (box.xMin + box.xMax) / 2,
       y: (box.yMin + box.yMax) / 2
     };
 
-    const dx = targetCenter.x - currentRoiCenter.x;
-    const dy = targetCenter.y - currentRoiCenter.y;
+    const effectiveCenter = {
+      x: (typeof currentRoiCenter?.x === "number" && !isNaN(currentRoiCenter.x)) ? currentRoiCenter.x : 0.5,
+      y: (typeof currentRoiCenter?.y === "number" && !isNaN(currentRoiCenter.y)) ? currentRoiCenter.y : 0.5
+    };
+
+    const dx = targetCenter.x - effectiveCenter.x;
+    const dy = targetCenter.y - effectiveCenter.y;
     const dist = Math.hypot(dx, dy);
 
     if (dist < 0.08) {
