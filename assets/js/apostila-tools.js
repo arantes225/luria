@@ -23,6 +23,12 @@
     body.apostila-reading-layout-v2 .book-color-dot.is-active{box-shadow:0 0 0 2px var(--surface),0 0 0 4px var(--accent)!important}
     body.apostila-reading-layout-v2 .book-highlight{background:var(--book-highlight-color,#ffd166)!important;color:#14243a!important;text-shadow:none!important;border-radius:3px!important;padding:0 .05em!important;box-decoration-break:clone!important;-webkit-box-decoration-break:clone!important}
     body.apostila-reading-layout-v2 .book-toc-block{order:2!important;margin:0!important;padding:22px 26px!important;border:1px solid var(--border)!important;border-radius:18px!important;background:var(--surface)!important;box-shadow:0 8px 22px rgba(15,35,66,.04)!important;scroll-margin-top:14px!important}
+    body.apostila-reading-layout-v2 .book-hero>.book-toc-block{position:relative!important;z-index:1!important;box-sizing:border-box!important;width:100%!important;margin:20px 0 0!important;padding:18px 0 0!important;border:0!important;border-top:1px solid rgba(255,255,255,.32)!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+    body.apostila-reading-layout-v2 .book-hero .book-toc-kicker{color:rgba(255,255,255,.78)!important}
+    body.apostila-reading-layout-v2 .book-hero .book-toc-block h2{color:#fff!important}
+    body.apostila-reading-layout-v2 .book-hero .book-toc-description{color:rgba(255,255,255,.86)!important}
+    body.apostila-reading-layout-v2 .book-hero .book-toc-link{border:1px solid rgba(255,255,255,.3)!important;border-left:3px solid rgba(255,255,255,.8)!important;background:rgba(255,255,255,.13)!important;color:#fff!important}
+    body.apostila-reading-layout-v2 .book-hero .book-toc-link:hover,body.apostila-reading-layout-v2 .book-hero .book-toc-link:focus-visible,body.apostila-reading-layout-v2 .book-hero .book-toc-link.is-active{background:#fff!important;border-color:#fff!important;color:#184888!important}
     body.apostila-reading-layout-v2 .book-toc-kicker{display:block!important;margin-bottom:4px!important;color:var(--accent)!important;font-size:9px!important;font-weight:700!important;letter-spacing:.08em!important;text-transform:uppercase!important}
     body.apostila-reading-layout-v2 .book-toc-block h2{margin:0 0 6px!important;font-size:22px!important;line-height:1.15!important}
     body.apostila-reading-layout-v2 .book-toc-description{margin:0 0 16px!important;color:var(--muted)!important;font-size:11px!important;line-height:1.5!important}
@@ -46,10 +52,21 @@
   const originalLinks=[...document.querySelectorAll('.book-outline-nav .book-outline-link')];
   const uniqueLinks=[];
   const seenLinks=new Set();
+  // As apostilas antigas podem usar links absolutos para a própria página.
+  const normalizedPath=path=>path.replace(/\\/index\\.html$/i,'/').replace(/\\/?$/,'/');
   originalLinks.forEach(sourceLink=>{
-    const href=sourceLink.getAttribute('href')||'';
+    const rawHref=sourceLink.getAttribute('href')||'';
     const label=sourceLink.textContent.trim();
-    if(!href.startsWith('#')||!label||seenLinks.has(href))return;
+    if(!label)return;
+    let href;
+    try{
+      const url=new URL(rawHref,location.href);
+      if(url.origin!==location.origin||normalizedPath(url.pathname)!==normalizedPath(location.pathname))return;
+      const targetId=decodeURIComponent(url.hash.slice(1));
+      if(!targetId||!document.getElementById(targetId))return;
+      href='#'+targetId;
+    }catch{return;}
+    if(seenLinks.has(href))return;
     seenLinks.add(href);
     uniqueLinks.push({href,label});
   });
@@ -79,7 +96,14 @@
     tocNav.appendChild(link);
   });
   toc.append(kicker,tocTitle,description,tocNav);
-  if(hero)hero.insertAdjacentElement('afterend',toc);else main.insertAdjacentElement('afterbegin',toc);
+  // O sumário integra o primeiro bloco (capa) e não ocupa mais um card independente.
+  if(hero){
+    const introEnd=hero.querySelector('.book-meta-row')||hero.querySelector('p')||hero.querySelector('h1');
+    if(introEnd)introEnd.insertAdjacentElement('afterend',toc);else hero.appendChild(toc);
+  }else{
+    const firstBlock=main.querySelector(':scope > .book-section, :scope > .mindmap-section')||main.firstElementChild;
+    if(firstBlock)firstBlock.prepend(toc);else main.prepend(toc);
+  }
 
   const outline=document.querySelector('.book-outline');
   outline?.replaceChildren();
