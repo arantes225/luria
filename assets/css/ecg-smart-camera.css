@@ -865,3 +865,18 @@ body[data-page="trabalho_ecg"] #ecg-guided-camera-page #ecg-btn-cancel-camera {
     min-height: 30px;
   }
 }
+
+/* Experimental waveform discovery: never imply an unconfirmed lead identity. */
+.ecg-provisional-warning {
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid rgba(245,158,11,.55);
+  border-radius: 8px;
+  background: color-mix(in srgb, #f59e0b 12%, transparent);
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.ecg-lead-card:has(.ecg-provisional-warning) .ecg-lead-title {
+  font-size: 13px;
+}

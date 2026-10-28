@@ -457,7 +457,12 @@ test("E2E Cenário 10: imagem percorre reconhecimento, câmera, extração, audi
     assert.ok(item.extraction.signal.length > 0);
     assert.equal(item.extraction.signal.length, item.extraction.validMask.length);
     assert.deepEqual(item.extraction.leadIdentity, item.leadIdentity);
-    assert.deepEqual(pkg.signals[item.lead], item.extraction.signal);
+    if (item.status === "captured") {
+      assert.deepEqual(pkg.signals[item.lead], item.extraction.signal);
+    } else {
+      assert.equal(Object.prototype.hasOwnProperty.call(pkg.signals, item.lead), false,
+        "Traçado candidato sem rótulo confirmado não pode entrar no mapa clínico nomeado");
+    }
     assert.ok(item.audit.status);
   }
   assert.equal(controller.confirmExtractionAndEnableAI().allowed, false);
@@ -483,8 +488,13 @@ test("OCR V3 em região DI bloqueia associação automática e preserva a diverg
   context.document.createElement = tag => tag === "canvas" ? pixelCanvas() : { tagName: tag, style: {}, addEventListener() {} };
   const controller = context.LuriaSmartCamera.createController({});
   const result = controller.processPhotographCanvas(pixelCanvas(image));
-  assert.equal(result.ok, false);
-  assert.equal(controller.getCapturedLeads().filter(l => l.captured).length, 0);
+  assert.equal(controller.getCapturedLeads().filter(l => l.status === "captured").length, 0,
+    "OCR conflituoso não pode virar derivação clinicamente identificada");
+  assert.equal(controller.confirmExtractionAndEnableAI().allowed, false);
+  if (result.ok) {
+    assert.ok(result.provisionalCount > 0, "Somente prévias sem rótulo poderão ser mostradas");
+    assert.deepEqual(Object.keys(controller.getSessionStructuredPackage().signals), []);
+  }
   assert.ok(controller.getSessionStructuredPackage().originalImageUrl);
 });
 

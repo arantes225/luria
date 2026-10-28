@@ -481,12 +481,16 @@
     if (!reviewGrid) return;
     reviewGrid.innerHTML = "";
 
-    let hasMissing = false;
+    let hasMissing = leads.some(info => !info.captured || info.status === 'provisional');
     let adequateCount = 0;
     let reviewCount = 0;
     let invalidCount = 0;
+    let candidateCount = 0;
 
     leads.forEach(leadInfo => {
+      if (!leadInfo.captured) return; // No twelve giant empty lead cards.
+      const provisional = leadInfo.status === "provisional";
+      if (provisional) candidateCount++;
       const card = document.createElement("article");
       card.className = "ecg-lead-card";
 
@@ -511,7 +515,10 @@
 
       const title = document.createElement("strong");
       title.className = "ecg-lead-title";
-      title.textContent = leadInfo.lead;
+      title.textContent = provisional
+        ? "Traçado candidato · região " + ((leadInfo.candidateRegion?.row ?? 0) + 1) +
+          "/" + ((leadInfo.candidateRegion?.col ?? 0) + 1)
+        : leadInfo.lead;
       titleWrap.appendChild(title);
 
       // Badge de status do auditor independente
@@ -520,7 +527,9 @@
         ? "status-ok"
         : (audit.status === "Revisão necessária" ? "status-warn" : "status-err");
       auditBadge.className = `ecg-audit-badge ${badgeCls}`;
-      auditBadge.textContent = `${audit.status} (${audit.technicalIndex}/100)`;
+      auditBadge.textContent = provisional
+        ? "Derivação não identificada · revisão obrigatória"
+        : `${audit.status} (${audit.technicalIndex}/100)`;
       auditBadge.title = `Fórmula: 40×Cobertura + 30×Alinhamento + 20×Continuidade + 10×Calibração. ${audit.reasons?.join("; ") || ""}`;
       titleWrap.appendChild(auditBadge);
 
@@ -545,6 +554,12 @@
       });
       head.appendChild(zoomControls);
       card.appendChild(head);
+      if (provisional) {
+        const warning = document.createElement("p");
+        warning.className = "ecg-provisional-warning";
+        warning.textContent = "Extração experimental dos pixels nesta região. NÃO foi confirmado se é DI, DII, aVR ou outra derivação. Não usar para diagnóstico ou IA.";
+        card.appendChild(warning);
+      }
 
       // Metadados técnicos da derivação
       const meta = document.createElement("div");
@@ -603,13 +618,20 @@
 
     // Atualiza barra de resumo do auditor técnico
     if (auditSummaryText) {
-      auditSummaryText.innerHTML = `<strong>Auditor de Fidelidade Independente:</strong> ${adequateCount} Adequadas · ${reviewCount} Revisão necessária · ${invalidCount} Inválidas / Indeterminadas. (Validação técnica geométrica de continuidade e grade; não equivale a diagnóstico clínico).`;
+      auditSummaryText.textContent = candidateCount > 0
+        ? candidateCount + " região(ões) com traçado candidato. Identidades pendentes — nenhuma derivação não confirmada é autorizada para diagnóstico/IA. " +
+          adequateCount + " identificada(s), " + reviewCount + " em revisão."
+        : "Auditoria técnica: " + adequateCount + " adequada(s) · " + reviewCount +
+          " revisão necessária · " + invalidCount + " inválida(s). Não equivale a validação clínica.";
     }
 
     if (missingAlert) {
       missingAlert.hidden = !hasMissing;
-      if (hasMissing) {
-        missingAlert.textContent = "Existem derivações pendentes, com qualidade técnica insuficiente ou rotulagem inconsistente. Recapture as derivações antes de prosseguir para a análise.";
+      if (hasMissing || candidateCount > 0) {
+        missingAlert.hidden = false;
+        missingAlert.textContent = candidateCount > 0
+          ? "Foram localizados traçados, mas a identidade das derivações não foi confirmada. Confira a fotografia original; a IA permanece bloqueada."
+          : "Existem derivações pendentes ou de qualidade insuficiente. Recapture antes de prosseguir.";
       }
     }
   }
