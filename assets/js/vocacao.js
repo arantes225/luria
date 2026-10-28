@@ -1,210 +1,228 @@
 (() => {
   "use strict";
-
-  const dimensions = {
-    R: { name: "Realista", short: "Prática, procedimentos e ação", desc: "Interesse por atividades práticas, instrumentação e intervenção direta." },
-    I: { name: "Investigativa", short: "Investigação e raciocínio", desc: "Interesse por investigar mecanismos, integrar evidências e resolver problemas complexos." },
-    A: { name: "Artística", short: "Criação e problemas abertos", desc: "Interesse por abordagens abertas, comunicação criativa e adaptação a situações singulares." },
-    S: { name: "Social", short: "Relação e cuidado contínuo", desc: "Interesse por escuta, cuidado longitudinal, ensino e colaboração próxima." },
-    E: { name: "Empreendedora", short: "Liderança e coordenação", desc: "Interesse por liderar equipes, negociar prioridades e mobilizar mudanças." },
-    C: { name: "Convencional", short: "Método e organização", desc: "Interesse por processos estruturados, precisão, dados e protocolos." }
-  };
-
-  const items = [
-    ["R", "Realizar procedimentos manuais delicados que exigem treino e precisão."],
-    ["R", "Atuar em situações clínicas que pedem uma resposta prática e imediata."],
-    ["R", "Usar equipamentos e instrumentos para diagnosticar ou tratar pacientes."],
-    ["R", "Acompanhar uma intervenção do preparo até a recuperação inicial."],
-    ["R", "Trabalhar em ambientes nos quais movimento e ação façam parte da rotina."],
-    ["R", "Executar técnicas com as mãos e aprimorá-las com prática repetida."],
-    ["I", "Investigar um diagnóstico quando os achados não apontam para uma única causa."],
-    ["I", "Relacionar dados clínicos, exames e mecanismos de doença para explicar um caso."],
-    ["I", "Ler estudos científicos e usar evidências para rever uma conduta."],
-    ["I", "Aprofundar-se em uma pergunta clínica até compreender os detalhes do problema."],
-    ["I", "Interpretar imagens, lâminas ou resultados laboratoriais para responder a uma dúvida."],
-    ["I", "Participar de pesquisa ou de projetos que avaliem resultados em saúde."],
-    ["A", "Lidar com casos únicos que exigem adaptar a abordagem, em vez de seguir uma sequência fixa."],
-    ["A", "Explicar questões complexas de maneiras diferentes para cada pessoa."],
-    ["A", "Construir um plano de cuidado que combine opções e objetivos pouco padronizados."],
-    ["A", "Trabalhar com problemas em que há mais de uma resposta razoável."],
-    ["A", "Encontrar formas novas de melhorar a experiência de pacientes e equipes."],
-    ["A", "Combinar áreas de conhecimento para responder a necessidades pouco comuns."],
-    ["S", "Acompanhar uma pessoa e sua família ao longo de diferentes fases da vida."],
-    ["S", "Escutar com atenção preocupações que não aparecem nos exames."],
-    ["S", "Ajudar pacientes a compreender opções e participar das decisões sobre o cuidado."],
-    ["S", "Ensinar pacientes, estudantes ou colegas em conversas individuais ou em grupo."],
-    ["S", "Coordenar o cuidado com profissionais de diferentes áreas."],
-    ["S", "Trabalhar com prevenção e promoção de saúde junto a pessoas ou comunidades."],
-    ["E", "Organizar uma equipe para responder a uma demanda clínica importante."],
-    ["E", "Tomar decisões e definir prioridades quando há pouco tempo ou recursos limitados."],
-    ["E", "Negociar um plano de cuidado entre necessidades diferentes de pacientes e serviços."],
-    ["E", "Liderar iniciativas para mudar um processo que prejudica o cuidado."],
-    ["E", "Representar uma equipe ou serviço em reuniões e decisões institucionais."],
-    ["E", "Assumir responsabilidade pela coordenação de um serviço ou projeto."],
-    ["C", "Conferir informações clínicas e registros com atenção a detalhes."],
-    ["C", "Trabalhar com protocolos e critérios definidos para reduzir erros."],
-    ["C", "Organizar dados e resultados para acompanhar padrões ao longo do tempo."],
-    ["C", "Manter documentação clara e consistente para apoiar a continuidade do cuidado."],
-    ["C", "Revisar um processo passo a passo para encontrar falhas ou inconsistências."],
-    ["C", "Usar listas, fluxos ou sistemas de classificação para orientar decisões complexas."]
-  ].map(([dimension, text], index) => ({ id: index, dimension, text }));
-
-  // Áreas de acesso direto: catálogo do ENARE 2025/2026 e atualização das normas CNRM.
-  // Os pares RIASEC são hipóteses de exploração baseadas em tarefas típicas; ainda não passaram por validação com especialistas ou residentes.
-  const specialties = [
-    ["Acupuntura", "R I", "Intervenção terapêutica e avaliação clínica."],
-    ["Anestesiologia", "R I", "Procedimentos, monitorização e decisões em tempo real."],
-    ["Cirurgia Geral", "R I", "Procedimentos, resolução prática e raciocínio diagnóstico."],
-    ["Clínica Médica", "I S", "Investigação diagnóstica e cuidado abrangente de adultos."],
-    ["Dermatologia", "I R", "Reconhecimento de padrões e procedimentos ambulatoriais."],
-    ["Genética Médica", "I S", "Investigação diagnóstica, aconselhamento e cuidado familiar."],
-    ["Homeopatia", "S I", "Consulta clínica e compreensão individualizada de sintomas."],
-    ["Infectologia", "I S", "Raciocínio diagnóstico, terapêutico e prevenção de infecções."],
-    ["Medicina de Emergência", "R I", "Avaliação rápida e intervenções em quadros agudos."],
-    ["Medicina de Família e Comunidade", "S I", "Cuidado contínuo, integral e próximo do território."],
-    ["Medicina do Esporte", "R S", "Avaliação funcional, prevenção e retorno à atividade."],
-    ["Medicina do Trabalho", "S C", "Cuidado, prevenção e acompanhamento de saúde ocupacional."],
-    ["Medicina de Tráfego", "C I", "Avaliação clínica e aplicação de critérios de aptidão."],
-    ["Medicina Física e Reabilitação", "S R", "Reabilitação, função e planos de cuidado individualizados."],
-    ["Medicina Intensiva", "R I", "Monitorização, decisões complexas e cuidado de alta intensidade."],
-    ["Medicina Legal e Perícia Médica", "I C", "Análise técnica, documentação e aplicação de critérios."],
-    ["Medicina Nuclear", "I C", "Métodos diagnósticos e terapêuticos com tecnologia e precisão."],
-    ["Medicina Preventiva e Social", "I S", "Epidemiologia, saúde coletiva e organização do cuidado."],
-    ["Neurocirurgia", "R I", "Procedimentos de alta complexidade e raciocínio neuroanatômico."],
-    ["Neurologia", "I S", "Localização diagnóstica e acompanhamento de condições neurológicas."],
-    ["Ginecologia e Obstetrícia", "R S", "Procedimentos, saúde reprodutiva e cuidado em diferentes fases."],
-    ["Oftalmologia", "R I", "Exame especializado, procedimentos e uso de equipamentos."],
-    ["Ortopedia e Traumatologia", "R I", "Avaliação musculoesquelética, trauma e procedimentos."],
-    ["Otorrinolaringologia", "R I", "Diagnóstico por exame direto e procedimentos especializados."],
-    ["Patologia", "I C", "Análise de tecidos, investigação diagnóstica e precisão."],
-    ["Patologia Clínica / Medicina Laboratorial", "I C", "Interpretação de exames, qualidade e sistemas laboratoriais."],
-    ["Pediatria", "S I", "Cuidado de crianças e adolescentes, prevenção e orientação familiar."],
-    ["Psiquiatria", "S I", "Escuta clínica, compreensão diagnóstica e cuidado longitudinal."],
-    ["Radiologia e Diagnóstico por Imagem", "I C", "Interpretação de imagens, tecnologia e precisão diagnóstica."],
-    ["Radioterapia", "I R", "Planejamento terapêutico técnico e cuidado oncológico."]
-  ].map(([name, code, focus]) => ({ name, code: code.split(" "), focus }));
-
-  const questionDimensionOrder = new Map(["R", "I", "S", "C", "A", "E"].map((key, index) => [key, index]));
-  items.sort((a, b) => (a.id % 6) - (b.id % 6) || questionDimensionOrder.get(a.dimension) - questionDimensionOrder.get(b.dimension));
-  const answers = Array(items.length).fill(null);
-  let current = 0;
-
+  const engine = window.LuriaVocacaoEngine;
+  if (!engine || !engine.catalogue || !engine.questions) {
+    console.error("LURIA: catálogo vocacional indisponível.");
+    return;
+  }
+  const { questions, labels, catalogue } = engine;
   const $ = (id) => document.getElementById(id);
   const intro = $("voc-intro");
   const quiz = $("voc-quiz");
   const results = $("voc-results");
-  const optionBox = $("voc-options");
+  const choices = $("voc-options");
+  const storageKey = "luria.vocacao.v2.session";
+  const answers = Array(questions.length).fill(null);
+  let current = 0;
+
+  // Progresso apenas na aba atual, sem enviar respostas para servidores.
+  function save() {
+    try { sessionStorage.setItem(storageKey, JSON.stringify({ current, answers })); } catch (_) {}
+  }
+  function restore() {
+    try {
+      const saved = JSON.parse(sessionStorage.getItem(storageKey) || "null");
+      if (!saved || !Array.isArray(saved.answers) || saved.answers.length !== answers.length) return false;
+      if (!saved.answers.every((value) => value === null || (Number.isInteger(value) && value >= 0 && value <= 3))) return false;
+      saved.answers.forEach((answer, index) => { answers[index] = answer; });
+      current = Number.isInteger(saved.current) ? Math.max(0, Math.min(questions.length - 1, saved.current)) : 0;
+      return true;
+    } catch (_) { return false; }
+  }
+  const text = (value) => String(value || "").replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[char]));
+  const name = (tag) => (labels[tag] || [tag])[0];
+  const detail = (tag) => (labels[tag] || [tag, ""])[1];
+  const phrase = (names) => {
+    const values = names.map(name);
+    if (values.length < 2) return values[0] || "";
+    return values.slice(0, -1).join(", ") + " e " + values[values.length - 1];
+  };
+  const stage = (step) => {
+    intro.hidden = step !== "intro";
+    quiz.hidden = step !== "quiz";
+    results.hidden = step !== "results";
+  };
 
   function renderQuestion() {
-    const item = items[current];
-    $("voc-dimension").textContent = "PREFERÊNCIAS DE TRABALHO";
-    $("voc-question").textContent = item.text;
-    $("voc-count").textContent = `${current + 1} de ${items.length}`;
-    $("voc-progress").setAttribute("aria-valuenow", String(current + 1));
-    $("voc-progress-fill").style.width = `${((current + 1) / items.length) * 100}%`;
-    $("voc-back").disabled = current === 0;
-    $("voc-next").textContent = current === items.length - 1 ? "Ver meu mapa →" : "Próxima →";
-    $("voc-error").textContent = "";
-    syncAnswerChoices(answers[current]);
-  }
-
-  function syncAnswerChoices(selectedValue) {
-    optionBox.querySelectorAll(".voc-option").forEach((button) => {
-      const selected = selectedValue !== null && Number(button.dataset.value) === selectedValue;
-      button.setAttribute("aria-pressed", String(selected));
+    const question = questions[current];
+    $("voc-dimension").textContent = question.section.toUpperCase();
+    $("voc-question").textContent = question.text;
+    $("voc-count").textContent = (current + 1) + " de " + questions.length;
+    const bar = $("voc-progress");
+    bar.setAttribute("aria-valuemax", String(questions.length));
+    bar.setAttribute("aria-valuenow", String(current + 1));
+    $("voc-progress-fill").style.width = ((current + 1) / questions.length * 100) + "%";
+    choices.innerHTML = question.options.map((option, index) =>
+      '<button type="button" class="voc-option" data-value="' + index + '" aria-pressed="' + (answers[current] === index) + '">' +
+      '<strong class="voc-option-letter" aria-hidden="true">' + String.fromCharCode(65 + index) + '</strong>' +
+      '<span>' + text(option.label) + '</span></button>'
+    ).join("");
+    choices.querySelectorAll("button").forEach((button) => {
+      button.addEventListener("click", () => {
+        answers[current] = Number(button.dataset.value);
+        choices.querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b === button)));
+        $("voc-error").textContent = "";
+        $("voc-next").disabled = false;
+        save();
+      });
     });
+    $("voc-error").textContent = "";
+    $("voc-back").disabled = current === 0;
+    $("voc-next").disabled = answers[current] === null;
+    $("voc-next").textContent = current === questions.length - 1 ? "Ver meu resultado →" : "Próxima →";
   }
 
-  function advanceQuestion() {
-    if (current === items.length - 1) {
-      renderResults();
+  function showQuiz() {
+    stage("quiz");
+    renderQuestion();
+    $("voc-question").focus({ preventScroll: true });
+    quiz.scrollIntoView({ block: "start", behavior: "smooth" });
+  }
+
+  function next() {
+    if (answers[current] === null) {
+      $("voc-error").textContent = "Escolha uma alternativa para continuar.";
       return;
     }
-    current += 1;
-    renderQuestion();
-    $("voc-question").focus();
+    if (current === questions.length - 1) {
+      renderResults();
+    } else {
+      current += 1;
+      save();
+      showQuiz();
+    }
   }
 
-  function chooseAnswer(value) {
-    answers[current] = value;
-    syncAnswerChoices(value);
-    $("voc-error").textContent = "";
-    advanceQuestion();
-  }
-
-  optionBox.querySelectorAll(".voc-option").forEach((button) => {
-    button.addEventListener("click", () => {
-      chooseAnswer(Number(button.dataset.value));
-    });
-  });
-
-  function calculate() {
-    const sums = Object.fromEntries(Object.keys(dimensions).map((key) => [key, { sum: 0, count: 0 }]));
-    items.forEach((item, index) => {
-      sums[item.dimension].sum += answers[index];
-      sums[item.dimension].count += 1;
-    });
-    const scores = Object.fromEntries(Object.entries(sums).map(([key, value]) => [key, Math.round(((value.sum - value.count) / (value.count * 4)) * 100)]));
-    return { scores, order: Object.keys(scores).sort((a, b) => scores[b] - scores[a] || a.localeCompare(b)) };
+  function section(title, content) {
+    return '<section class="voc-report-section"><h3>' + title + '</h3>' + content + '</section>';
   }
 
   function renderResults() {
-    const { scores, order } = calculate();
-    const profile = order.slice(0, 3).join("");
-    const matches = specialties.map((specialty) => ({
-      ...specialty,
-      score: Math.round(specialty.code.reduce((sum, key) => sum + scores[key], 0) / specialty.code.length)
-    })).sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, "pt-BR"));
-
-    const scoreCards = order.map((key) => `<div class="voc-score"><div class="voc-score-head"><span><strong>${key}</strong> · ${dimensions[key].name}</span><strong>${scores[key]}%</strong></div><div class="voc-score-track" aria-label="${dimensions[key].name}: ${scores[key]}%"><span style="width:${scores[key]}%"></span></div><small>${dimensions[key].desc}</small></div>`).join("");
-    const topMatches = matches.slice(0, 5).map((area) => `<article class="voc-match"><div class="voc-match-top"><h3>${area.name}</h3><span class="voc-match-score">${area.score}%</span></div><p>${area.focus}</p><p>Interesses relacionados: ${area.code.map((key) => dimensions[key].name).join(" + ")}</p></article>`).join("");
-    const allAreas = matches.map((area) => `<li><strong>${area.name}</strong><span> · Índice ${area.score}% · RIASEC ${area.code.join("")}</span></li>`).join("");
-    results.innerHTML = `
-      <p class="voc-kicker">SEU MAPA DE INTERESSES</p>
-      <h2 id="voc-results-title">Seu perfil combina curiosidades diferentes</h2>
-      <p class="voc-code" aria-label="Código de interesses ${profile.split("").join(", ")}">${profile.split("").join(" · ")}</p>
-      <p class="voc-result-intro">As três letras destacam as dimensões mais altas neste questionário. Veja abaixo as seis pontuações e áreas de acesso direto com interesses de trabalho relacionados. As áreas não são uma previsão de satisfação ou desempenho; leia os pontos de contato e use-os para escolher o que pesquisar, conversar e vivenciar.</p>
-      <h2>Seu perfil RIASEC</h2><div class="voc-score-grid">${scoreCards}</div>
-      <h2>Áreas para explorar primeiro</h2><div class="voc-match-list">${topMatches}</div>
-      <details class="voc-all-areas"><summary>Ver as 30 áreas de acesso direto incluídas</summary><ul>${allAreas}</ul></details>
-      <p class="voc-result-intro">A pontuação ao lado de cada área é a média das dimensões RIASEC associadas às atividades típicas descritas. É um índice exploratório criado para esta página, não uma medida validada de compatibilidade. Empates e diferenças pequenas não devem ser interpretados como preferência firme.</p>
-      <div class="voc-actions"><button id="voc-restart" class="voc-button voc-button-primary" type="button">Refazer questionário</button><a class="voc-button voc-button-secondary" href="/dashboard/">Voltar ao dashboard</a></div>`;
-    results.hidden = false;
-    quiz.hidden = true;
-    results.scrollIntoView({ behavior: "smooth", block: "start" });
-    $("voc-restart").addEventListener("click", () => {
-      answers.fill(null);
-      current = 0;
-      results.hidden = true;
-      quiz.hidden = false;
-      renderQuestion();
-      $("voc-question").focus();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  }
-
-  $("voc-start").addEventListener("click", () => {
-    intro.hidden = true;
-    quiz.hidden = false;
-    renderQuestion();
-    $("voc-question").focus();
-  });
-  $("voc-back").addEventListener("click", () => {
-    if (current > 0) { current -= 1; renderQuestion(); $("voc-question").focus(); }
-  });
-  $("voc-next").addEventListener("click", () => {
-    if (answers[current] === null) {
-      $("voc-error").textContent = "Escolha uma opção para continuar.";
-      optionBox.querySelector("button")?.focus();
+    let report;
+    try { report = engine.calculate(answers); }
+    catch (error) {
+      $("voc-error").textContent = error.message;
       return;
     }
-    if (current === items.length - 1) { renderResults(); return; }
-    current += 1;
-    renderQuestion();
-    $("voc-question").focus();
+    const preferenceTags = report.ordered.filter((tag) => report.scores[tag] > 0.09).slice(0, 5);
+    const lessChosen = [...report.ordered].reverse().filter((tag) => report.scores[tag] < -0.1).slice(0, 3);
+    const mainProfile = preferenceTags.length
+      ? "Nas suas respostas, você se aproximou principalmente de atividades ligadas a " + phrase(preferenceTags.slice(0, 3)).toLowerCase() + "."
+      : "Suas escolhas ficaram distribuídas entre diferentes estilos de trabalho. Isso também é uma informação útil: vale explorar cenários diferentes antes de decidir.";
+    const why = preferenceTags.length > 1
+      ? "Você selecionou repetidamente tarefas que envolvem " + phrase(preferenceTags).toLowerCase() + ". Isso descreve interesses manifestados aqui, não habilidades comprovadas."
+      : "As respostas não indicaram uma preferência dominante. Use os resultados como hipóteses para explorar em estágios, ligas e conversas com especialistas.";
+    const cautions = lessChosen.length
+      ? "Você escolheu menos vezes alternativas relacionadas a " + phrase(lessChosen).toLowerCase() + ". Não significa incapacidade nessas atividades; pode apontar aspectos da rotina que merecem ser vivenciados antes da escolha."
+      : "Não apareceu um conjunto consistente de atividades evitadas. As escolhas podem variar conforme experiência, contexto e momento de carreira.";
+    const group = (tags) => {
+      const ordered = tags.slice().sort((a,b) => report.scores[b] - report.scores[a]);
+      const positive = ordered.filter((tag) => report.scores[tag] > 0.08);
+      return positive.length ? phrase(positive.slice(0,3)).toLowerCase() : "um conjunto amplo de interesses, sem preferência marcada";
+    };
+    const routine = "Seu interesse por atividades de " + group(["acute","predictable","followup","highstakes"]) +
+      " ajuda a entender como você imagina o ritmo de trabalho. Escalas e horários dependem de serviço, localidade e etapa da carreira.";
+    const decisions = "Nas escolhas sobre tarefas, destacaram-se " +
+      group(["diagnosis","clinical","surgery","hands","technology","visual","precision"]) +
+      ". Isso sugere o tipo de atividade que você gostaria de repetir com frequência, não domínio técnico atual.";
+    const relationship = "Em relação a pacientes e equipes, as respostas apontam interesse por " +
+      group(["people","team","kids","women","elderly","mental","followup"]) +
+      ". O volume de contato e o vínculo são diferentes mesmo dentro da mesma especialidade.";
+    const motivation = "Quanto ao impacto profissional, apareceram interesses em " +
+      group(["prevention","community","systems","function","complex","research"]) +
+      ". Vale perguntar aos profissionais como esses objetivos aparecem no cotidiano real.";
+    const contrast = report.scores.acute > 0.12 && report.scores.predictable > 0.12
+      ? " Você também se interessou por casos agudos e por rotina programada: procure serviços que conciliem esses aspectos em fases diferentes da semana."
+      : "";
+    const cards = report.top.map((specialty, index) => {
+      const aligned = specialty.strengths.filter((tag) => report.scores[tag] > 0.03);
+      const relevant = aligned.length ? aligned.slice(0, 3) : specialty.strengths.slice(0, 2);
+      const low = specialty.frictions.filter((tag) => report.scores[tag] < -0.08);
+      const follow = specialty.areas[0] || null;
+      return '<article class="voc-match">' +
+        '<div class="voc-match-top"><h3>' + (index + 1) + 'ª opção · ' + text(specialty.name) + '</h3><span class="voc-match-score">Afinidade exploratória</span></div>' +
+        '<p><strong>Por que apareceu:</strong> atividades associadas a ' + text(phrase(relevant).toLowerCase()) + ' foram compatíveis com parte das suas respostas.</p>' +
+        '<p><strong>Formação:</strong> ' + text(specialty.prerequisite) + ' · residência na especialidade: ' + specialty.years + ' ano' + (specialty.years > 1 ? 's' : '') + '.</p>' +
+        '<p><strong>O que observar na prática:</strong> ' + (low.length
+          ? 'tarefas relacionadas a ' + text(phrase(low).toLowerCase()) + ' apareceram menos nas suas escolhas. Veja como elas realmente entram na rotina.'
+          : 'observe a divisão entre atendimentos, procedimentos, plantões e acompanhamento; a prática varia por serviço.') + '</p>' +
+        (follow ? '<p><strong>Possível aprofundamento:</strong> ' + text(follow.name) + ' (' + follow.years + (follow.years > 1 ? ' anos adicionais' : ' ano adicional') + '). Exige formação prévia e requisitos próprios; é uma área de atuação, não uma quarta recomendação.</p>' : '') +
+        '<p><strong>Como testar:</strong> acompanhe um turno real, pergunte sobre a parte mais frequente (não só a mais interessante) do trabalho e compare com sua expectativa.</p>' +
+      '</article>';
+    }).join("");
+    results.innerHTML =
+      '<p class="voc-kicker">SEU RELATÓRIO VOCACIONAL</p>' +
+      '<h2 id="voc-results-title">Seu jeito de se interessar pela Medicina</h2>' +
+      '<p class="voc-result-intro">' + text(mainProfile) + ' O resultado é uma ferramenta de reflexão e não define sua identidade ou carreira.</p>' +
+      section("O que suas respostas mostram", '<p>' + text(why) + '</p>' +
+        '<div class="voc-report-tags">' + (preferenceTags.length ? preferenceTags.map((tag) => '<span title="' + text(detail(tag)) + '">' + text(name(tag)) + '</span>').join("") : '<span>Interesses diversos</span>') + '</div>') +
+      section("Como você prefere decidir e atuar", '<p>' + text(decisions) + '</p>') +
+      section("Ritmo e ambiente de trabalho", '<p>' + text(routine + contrast) + '</p>') +
+      section("Pacientes e relações de cuidado", '<p>' + text(relationship) + '</p>') +
+      section("O que mais motiva você", '<p>' + text(motivation) + '</p>') +
+      section("Pontos de atenção para sua rotina", '<p>' + text(cautions) + '</p>') +
+      '<h2 class="voc-top-title">Seus três caminhos para explorar</h2>' +
+      '<p class="voc-result-intro">A ordem é relativa às respostas deste questionário, não uma probabilidade de sucesso ou satisfação.' +
+      (report.close ? ' As primeiras opções têm pontuações próximas: não interprete a ordem como diferença significativa.' : '') + '</p>' +
+      '<div class="voc-match-list">' + cards + '</div>' +
+      section("Como validar o seu perfil", '<p>Experimente um dia típico em cada área, converse com residentes e profissionais de diferentes serviços, observe o volume de atividades repetitivas e reflita sobre o que você gostaria de fazer em uma semana comum — não apenas em um caso excepcional.</p>') +
+      '<p class="voc-result-intro"><strong>Limites:</strong> estas associações foram construídas editorialmente para orientação educacional e ainda não passaram por validação psicométrica ou estudo de predição de escolha profissional. As descrições de formação seguem o catálogo CFM 2.472/2026 e podem mudar.</p>' +
+      '<div class="voc-actions"><button id="voc-restart" class="voc-button voc-button-primary" type="button">Refazer teste</button>' +
+      '<button id="voc-review" class="voc-button voc-button-secondary" type="button">Revisar respostas</button>' +
+      '<a href="/aplicar/" class="voc-button voc-button-secondary">Voltar ao Aplicar</a></div>';
+    stage("results");
+    save();
+    results.scrollIntoView({ block: "start", behavior: "smooth" });
+    $("voc-restart").addEventListener("click", reset);
+    $("voc-review").addEventListener("click", () => { current = 0; save(); showQuiz(); });
+  }
+
+  function reset() {
+    answers.fill(null);
+    current = 0;
+    try { sessionStorage.removeItem(storageKey); } catch (_) {}
+    showQuiz();
+  }
+
+  function renderCatalogue() {
+    const query = ($("voc-search").value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
+    const kind = $("voc-kind").value;
+    const items = [...catalogue.specialties, ...catalogue.areas].filter((item) => {
+      if (kind !== "all" && item.type !== kind) return false;
+      const haystack = (item.name + " " + item.prerequisite).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+      return haystack.includes(query);
+    }).sort((a,b) => a.name.localeCompare(b.name, "pt-BR"));
+    $("voc-catalog-count").textContent = items.length + " resultado(s) no catálogo";
+    $("voc-catalog-items").innerHTML = items.length ? items.map((item) =>
+      '<article class="voc-catalog-item"><strong>' + text(item.name) + '</strong><span>' +
+      (item.type === "area" ? "Área de atuação" : "Especialidade") +
+      ' · ' + item.years + ' ano' + (item.years > 1 ? 's' : '') +
+      '</span><small>' + (item.type === "area" ? "Pré-requisitos: " : "Ingresso: ") + text(item.prerequisite) + '</small></article>'
+    ).join("") : '<p>Nenhum item encontrado. Tente outra palavra.</p>';
+  }
+
+  $("voc-start").addEventListener("click", () => { current = 0; save(); showQuiz(); });
+  $("voc-back").addEventListener("click", () => {
+    if (current > 0) { current -= 1; save(); showQuiz(); }
+  });
+  $("voc-next").addEventListener("click", next);
+  $("voc-search").addEventListener("input", renderCatalogue);
+  $("voc-kind").addEventListener("change", renderCatalogue);
+  $("voc-catalogue").addEventListener("toggle", () => {
+    if ($("voc-catalogue").open) renderCatalogue();
   });
   document.addEventListener("keydown", (event) => {
-    if (quiz.hidden || event.repeat || !/^[1-5]$/.test(event.key)) return;
-    chooseAnswer(Number(event.key));
+    if (quiz.hidden || event.altKey || event.metaKey || event.ctrlKey ||
+        ["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement?.tagName)) return;
+    const option = Number(event.key) - 1;
+    if (Number.isInteger(option) && option >= 0 && option < 4) {
+      choices.querySelectorAll(".voc-option")[option]?.click();
+    } else if (event.key === "Enter" && document.activeElement?.tagName !== "BUTTON") {
+      next();
+    }
   });
+  if (restore() && answers.some((answer) => answer !== null)) showQuiz();
+  else stage("intro");
 })();
