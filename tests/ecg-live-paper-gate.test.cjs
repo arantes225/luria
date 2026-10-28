@@ -100,10 +100,8 @@ test("automatic capture uses native camera resolution and requests continuous fo
 });
 
 test("installed PWA release and ECG assets are cache-busted together",()=>{
-  const swRelease = worker.match(/const CACHE_VERSION = "luria-pwa-([^"]+)"/)?.[1];
-  const clientRelease = pwa.match(/const release = "([^"]+)"/)?.[1];
-  assert.ok(swRelease, "Service Worker must publish a release identifier");
-  assert.equal(swRelease, clientRelease, "Service Worker and PWA must use the same release");
+  assert.match(worker,/const CACHE_VERSION = "luria-pwa-20261028-ecg-scanner-v7"/);
+  assert.match(pwa,/const release = "20261028-ecg-scanner-v7"/);
   assert.match(html,/ecg-signal-extractor\.js\?v=5/);
   assert.match(html,/ecg-smart-camera\.js\?v=9/);
   assert.match(html,/ecg-smart-ui\.js\?v=9/);
