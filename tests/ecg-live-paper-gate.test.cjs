@@ -1,0 +1,88 @@
+"use strict";
+const test = require("node:test");
+const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const path = require("node:path");
+const vm = require("node:vm");
+const source = fs.readFileSync(path.join(__dirname, "../assets/js/ecg-smart-camera.js"), "utf8");
+const html = fs.readFileSync(path.join(__dirname, "../trabalho/ecg/index.html"), "utf8");
+const css = fs.readFileSync(path.join(__dirname, "../assets/css/ecg-smart-camera.css"), "utf8");
+const pwa = fs.readFileSync(path.join(__dirname, "../assets/js/pwa.js"), "utf8");
+const worker = fs.readFileSync(path.join(__dirname, "../service-worker.js"), "utf8");
+const ui = fs.readFileSync(path.join(__dirname, "../assets/js/ecg-smart-ui.js"), "utf8");
+
+function guard() {
+  const fakeGlobal = {LuriaEcgContracts:{normalizeAnomalies:x=>x||[]}};
+  vm.runInNewContext(source, {window:fakeGlobal,Date,console});
+  assert.equal(typeof fakeGlobal.LuriaEcgSceneGuard.isVerifiedEcgScene,"function");
+  return fakeGlobal.LuriaEcgSceneGuard.isVerifiedEcgScene;
+}
+const positive = () => ({
+  detected: true,
+  sheet: {found:true,isCutOff:false,hasSeverePerspective:false},
+  detectedLayout: {validWaveformCells:10,ocrConfirmedCount:2,leads:{DI:{},DII:{},DIII:{},aVR:{}}},
+  leads: {DI:{},DII:{},DIII:{},aVR:{}},
+  calibration: {gridDetected:true}
+});
+
+test("keyboard, table, blank paper and text never qualify as a verified ECG", () => {
+  const verified=guard();
+  assert.equal(verified(null),false);
+  assert.equal(verified({detected:false,quality:{brightness:120}}),false);
+  const keyboard=positive();
+  keyboard.sheet={found:false};
+  assert.equal(verified(keyboard),false);
+  const textDocument=positive();
+  textDocument.detectedLayout.validWaveformCells=0;
+  assert.equal(verified(textDocument),false);
+  const blank=positive();
+  blank.calibration.gridDetected=false;
+  blank.detectedLayout.ocrConfirmedCount=0;
+  assert.equal(verified(blank),false);
+  const cropped=positive();
+  cropped.sheet.isCutOff=true;
+  assert.equal(verified(cropped),false);
+  const badPerspective=positive();
+  badPerspective.sheet.hasSeverePerspective=true;
+  assert.equal(verified(badPerspective),false);
+});
+
+test("ECG paper with morphology and measured grid is allowed; OCR alternative is independently validated",()=>{
+  const verified=guard();
+  assert.equal(verified(positive()),true);
+  const withoutGrid=positive();
+  withoutGrid.calibration.gridDetected=false;
+  withoutGrid.detectedLayout.ocrConfirmedCount=4;
+  assert.equal(verified(withoutGrid),true);
+  withoutGrid.detectedLayout.ocrConfirmedCount=3;
+  assert.equal(verified(withoutGrid),false);
+});
+
+test("autonomous ECG capture cannot run without verified scene and temporal stability",()=>{
+  assert.match(source,/verifiedFrameCount >= 4/);
+  assert.match(source,/Date\.now\(\) - verifiedSince >= 400/);
+  assert.match(source,/if \(autoCaptureLock \|\| !isVerifiedEcgScene\(frameAnalysis\?\.docDetection\)/);
+  assert.match(source,/options\.source === "autonomous_camera" && !isVerifiedEcgScene\(boundaries\)/);
+  const block = source.slice(source.indexOf("function processCurrentFrame()"),source.indexOf("function setReticleStatus("));
+  assert.doesNotMatch(block,/if\s*\(!docDetection\.detected\)[\s\S]*?performAutonomousCapture\(false/);
+  assert.match(block,/if \(!hasEcgEvidence\)\s*\{/);
+  assert.match(source,/setHudPaperVerified\(sceneReady\)/);
+});
+
+test("capturing uses native dialog top layer and has no false lead or frame guide",()=>{
+  assert.match(html,/<dialog id="ecg-guided-camera-page"/);
+  assert.match(html,/<dialog id="ecg-normal-photo-page"/);
+  assert.match(ui,/guidedPage\.showModal\(\)/);
+  assert.match(ui,/guidedPage\.close\(\)/);
+  assert.match(css,/#ecg-guided-camera-page \.ecg-hud-reticle-wrap\s*\{\s*display:\s*none\s*!important/);
+  assert.match(css,/\.ecg-capture-active > :not\(#ecg-guided-camera-page\):not\(#ecg-normal-photo-page\)/);
+  assert.match(css,/#ecg-guided-camera-page::backdrop/);
+});
+
+test("installed PWA release and ECG assets are cache-busted together",()=>{
+  assert.match(worker,/const CACHE_VERSION = "luria-pwa-20261028-ecg-safety-v2"/);
+  assert.match(pwa,/const release = "20261028-ecg-safety-v2"/);
+  assert.match(html,/ecg-smart-camera\.js\?v=4/);
+  assert.match(html,/ecg-smart-ui\.js\?v=5/);
+  assert.match(html,/ecg-smart-camera\.css\?v=5/);
+});
