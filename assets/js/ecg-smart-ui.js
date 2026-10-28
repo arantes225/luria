@@ -169,52 +169,99 @@
     cameraViewport.hidden = true;
   });
 
-  // Processamento real ao carregar imagem via arquivo
+  // Both the ordinary photograph and a file imported from the gallery use
+  // exactly the SAME extraction, layout, calibration and technical audit.
+  // Only the acquisition mode/provenance changes. Source stays in memory.
+  function processPhotoFile(file, source = "file_upload") {
+    if (!file || !file.type?.startsWith("image/")) {
+      return Promise.resolve({ ok: false, reason: "Selecione uma foto válida do ECG." });
+    }
+    if (!cameraController || !canvasEl) {
+      return Promise.resolve({ ok: false, reason: "Motor do ECG indisponível." });
+    }
+    const url = URL.createObjectURL(file);
+    return new Promise(resolve => {
+      const img = new Image();
+      let settled = false;
+      const finish = result => {
+        if (settled) return;
+        settled = true;
+        URL.revokeObjectURL(url);
+        resolve(result);
+      };
+      img.onerror = () => finish({ ok: false, reason: "Não foi possível decodificar a imagem escolhida." });
+      img.onload = () => {
+        try {
+          const originalW = img.naturalWidth || img.width;
+          const originalH = img.naturalHeight || img.height;
+          if (!(originalW > 0 && originalH > 0)) {
+            finish({ ok: false, reason: "A imagem não possui dimensões válidas." });
+            return;
+          }
+
+          // The native photo is NEVER replaced or resaved. Analyse a bounded
+          // working copy to avoid out-of-memory failures on iPhone/Android.
+          // No document/ECG filters, enhancement or forced paper cropping here.
+          const maxSide = 2600;
+          const ratio = Math.min(1, maxSide / Math.max(originalW, originalH));
+          const workW = Math.max(1, Math.round(originalW * ratio));
+          const workH = Math.max(1, Math.round(originalH * ratio));
+          const snapCanvas = document.createElement("canvas");
+          snapCanvas.width = workW;
+          snapCanvas.height = workH;
+          snapCanvas.getContext("2d").drawImage(img, 0, 0, workW, workH);
+
+          cameraController.stopCamera();
+          cameraViewport.hidden = true;
+          cameraController.resetCaptureSession?.();
+          cameraController.setMode(source === "normal_photo" ? "photo" : "fast");
+
+          const result = cameraController.processPhotographCanvas(snapCanvas, {
+            source,
+            userCalibration: {
+              paperSpeedMmPerSec: Number(calSpeedSelect?.value) || 25,
+              gainMmPerMv: Number(calGainSelect?.value) || 10,
+              confirmedByUser: false
+            }
+          });
+
+          if (!result.ok || !cameraController.openReview()) {
+            const reason = result.reason || "Não foi possível extrair derivações com fidelidade suficiente. Verifique a foto.";
+            if (missingAlert) {
+              missingAlert.hidden = false;
+              missingAlert.textContent = reason;
+            }
+            finish({ ok: false, reason, originalWidth: originalW, originalHeight: originalH, analysedWidth: workW, analysedHeight: workH });
+            return;
+          }
+          if (missingAlert) missingAlert.hidden = true;
+          const leads = cameraController.getCapturedLeads();
+          currentLeadsData = leads;
+          currentSessionPackage = cameraController.getSessionStructuredPackage();
+          updateCalibrationUI(currentSessionPackage.calibration);
+          renderStage2Waveforms(leads);
+          finish({ ok: true, capturedCount: result.capturedCount, totalCaptured: result.totalCaptured, originalWidth: originalW, originalHeight: originalH, analysedWidth: workW, analysedHeight: workH });
+        } catch (exception) {
+          console.warn("[LURIA ECG] Falha no processamento da imagem:", exception);
+          finish({ ok: false, reason: "Falha de processamento da fotografia. Tente outra foto." });
+        }
+      };
+      img.src = url;
+    });
+  }
+
+  window.LuriaEcgProcessPhoto = processPhotoFile;
+
   const inputImage = byId("ecg-image");
-  inputImage?.addEventListener("change", () => {
+  inputImage?.addEventListener("change", async () => {
     const file = inputImage.files?.[0];
     if (!file) return;
-
-    const img = new Image();
-    img.onload = () => {
-      canvasEl.width = img.naturalWidth || img.width;
-      canvasEl.height = img.naturalHeight || img.height;
-      const ctx = canvasEl.getContext("2d");
-      ctx.drawImage(img, 0, 0);
-
-      const snapCanvas = document.createElement("canvas");
-      snapCanvas.width = canvasEl.width;
-      snapCanvas.height = canvasEl.height;
-      const snapCtx = snapCanvas.getContext("2d");
-      snapCtx.drawImage(canvasEl, 0, 0);
-
-      if (cameraController) {
-        const result = cameraController.processPhotographCanvas(snapCanvas, {
-          source: "file_upload",
-          userCalibration: {
-            paperSpeedMmPerSec: Number(calSpeedSelect?.value) || 25,
-            gainMmPerMv: Number(calGainSelect?.value) || 10,
-            confirmedByUser: false
-          }
-        });
-
-        if (!result.ok || !cameraController.openReview()) {
-          if (missingAlert) {
-            missingAlert.hidden = false;
-            missingAlert.textContent = result.reason || "Nenhum traçado válido foi extraído desta imagem. Reenquadre ou escolha outra foto.";
-          }
-          return;
-        }
-
-        const leads = cameraController.getCapturedLeads();
-        currentLeadsData = leads;
-        currentSessionPackage = cameraController.getSessionStructuredPackage();
-
-        updateCalibrationUI(currentSessionPackage.calibration);
-        renderStage2Waveforms(leads);
-      }
-    };
-    img.src = URL.createObjectURL(file);
+    const filename = byId("ecg-file-name");
+    if (filename) filename.textContent = "Processando " + file.name + "...";
+    const result = await processPhotoFile(file, "file_upload");
+    if (filename) filename.textContent = result.ok
+      ? "Foto importada — confira as derivações na etapa 2."
+      : result.reason;
   });
 
   // Atualização e confirmação de calibração manual
