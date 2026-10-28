@@ -25,16 +25,25 @@
   // Fail closed for LIVE automatic captures. Looking like lines is not proof
   // of an ECG: require a valid paper, >=3 waveform cells and either a measured
   // ECG grid or multiple independently recognized lead labels.
+  function hasCredibleEcgCandidates(detection, manualPaperSelection = false) {
+    if (!detection) return false;
+    const sheet = detection.sheet;
+    if (!manualPaperSelection && (!sheet?.found || sheet.isCutOff || sheet.hasSeverePerspective)) return false;
+    const n = Math.max(Number(detection.waveformCandidateCount || 0),
+      Number(detection.detectedLayout?.validWaveformCells || 0));
+    // Preserve independent signal evidence when simple template OCR disagrees;
+    // never regard the mismatch as verified lead identity.
+    if (n < 3 || Object.keys(detection.candidateRegions || {}).length < 3) return false;
+    const grid = detection.calibration;
+    const labels = detection.recognizedLabels || {};
+    const strongLabels = Object.values(labels).filter(x => x?.ocrRecognized && x?.hasValidTrace).length;
+    return manualPaperSelection ||
+      grid?.gridDetected === true ||
+      Number(grid?.coloredGridRatio || 0) >= 0.012 ||
+      strongLabels >= 2;
+  }
   function isVerifiedEcgScene(detection) {
-    if (!detection?.detected || !detection.sheet?.found ||
-        detection.sheet.isCutOff || detection.sheet.hasSeverePerspective) return false;
-    const layout = detection.detectedLayout;
-    const leads = detection.leads || layout?.leads;
-    const validWaveforms = Number(layout?.validWaveformCells || 0);
-    const ocrLabels = Number(layout?.ocrConfirmedCount || 0);
-    return Boolean(layout && leads && Object.keys(leads).length >= 3 &&
-      validWaveforms >= 3 &&
-      (detection.calibration?.gridDetected === true || ocrLabels >= 4));
+    return hasCredibleEcgCandidates(detection, false);
   }
 
   // Template positions are *not* lead identities. Never publish a named
@@ -501,10 +510,15 @@
           reason: "A folha e as derivações não foram confirmadas com segurança." };
       }
 
-      const leadsMap = boundaries.leads || boundaries.detectedLayout?.leads || null;
+      const candidateMap = boundaries.candidateRegions || {};
+      const crediblePaper = hasCredibleEcgCandidates(boundaries, options.manualPaperCornersApplied === true);
+      const leadsMap = crediblePaper
+        ? candidateMap
+        : (boundaries.detected ? (boundaries.leads || boundaries.detectedLayout?.leads) : null);
 
-      // Se a imagem foi rejeitada (papel em branco, página de texto, grade vazia sem ECG, etc.)
-      if (!boundaries.detected || !leadsMap) {
+      // Reject non-ECG scenes; identity conflict alone does not discard pixels
+      // when independently verified waveform and paper evidence exists.
+      if (!leadsMap || !Object.keys(leadsMap).length) {
         return {
           ok: false,
           capturedCount: 0,
@@ -523,12 +537,8 @@
         const box = leadsMap[leadName];
         if (!box) return;
         const proposedIdentity = contracts.normalizeLeadIdentity(boundaries.leadIdentities?.[leadName] || {});
-        if (!isSafeAutomaticLeadAssignment(leadName, proposedIdentity, box, anomalies)) {
-          // Keep candidates in diagnostic boundaries only; don't create a
-          // misleading waveform labeled aVR/DII/V* from an ambiguous crop.
-          quarantinedCount++;
-          return;
-        }
+        let provisional = !isSafeAutomaticLeadAssignment(leadName, proposedIdentity, box, anomalies);
+        if (provisional) quarantinedCount++;
 
         const roiX = Math.max(0, Math.round(box.xMin * snapCanvas.width));
         const roiY = Math.max(0, Math.round(box.yMin * snapCanvas.height));
@@ -553,22 +563,26 @@
             xMin: 0.36, yMin: 0, xMax: 1, yMax: 1
           });
           if (other.recognized && other.recognizedLead !== leadName) {
-            quarantinedCount++;
-            return;
+            if (!provisional) quarantinedCount++;
+            provisional = true;
           }
         }
 
         // Verifica o rótulo específico e anomalias (troca ou duplicidade)
         const regionAnomalies = anomalies.filter(a => a.lead === leadName || a.recognizedLead === leadName || a.expectedLead === leadName);
-        const leadIdentity = contracts.normalizeLeadIdentity({
-          ...(boundaries.leadIdentities?.[leadName] || {}),
-          lead: leadName,
-          expectedLead: boundaries.leadIdentities?.[leadName]?.expectedLead || box.expectedInTemplate || leadName,
-          region: boundaries.leadIdentities?.[leadName]?.region || box,
-          anomalies: regionAnomalies,
-          confirmedByUser: options.confirmedLead === leadName,
-          humanConfirmedLead: options.confirmedLead === leadName ? leadName : null
-        });
+        const leadIdentity = provisional
+          ? contracts.normalizeLeadIdentity({
+              lead: leadName, expectedLead: leadName, recognizedLead: null,
+              method: "topology_hypothesis", evidence: "positional_hypothesis",
+              region: box, anomalies: regionAnomalies
+            })
+          : contracts.normalizeLeadIdentity({
+              ...(boundaries.leadIdentities?.[leadName] || {}),
+              lead: leadName,
+              expectedLead: boundaries.leadIdentities?.[leadName]?.expectedLead || box.expectedInTemplate || leadName,
+              region: boundaries.leadIdentities?.[leadName]?.region || box,
+              anomalies: regionAnomalies
+            });
 
         const extractionResult = extractor.extractRealSignalFromImageData(roiImageData, {
           leadIdentity,
@@ -592,7 +606,8 @@
 
         if (extractionResult.isValid && extractionResult.signal && (!leadInfo.captured || newIndex >= prevIndex)) {
           leadInfo.captured = true;
-          leadInfo.status = "captured";
+          leadInfo.status = provisional ? "provisional" : "captured";
+          leadInfo.candidateRegion = { row: box.row, col: box.col, observedLabel: box.observedLabel || null };
           leadInfo.leadIdentity = leadIdentity;
           leadInfo.imageCropUrl = typeof cropCanvas.toDataURL === "function"
             ? cropCanvas.toDataURL("image/jpeg", 0.92)
@@ -618,18 +633,20 @@
         }
       });
 
-      pendingLeadQueue = CANONICAL_LEADS.filter(l => !capturedLeads.get(l).captured);
+      pendingLeadQueue = CANONICAL_LEADS.filter(l => capturedLeads.get(l)?.status !== "captured");
       currentTargetLead = pendingLeadQueue[0] || null;
       updateHudProgress();
-
+      const confirmedCount = CANONICAL_LEADS.filter(l => capturedLeads.get(l)?.status === "captured").length;
+      const provisionalCount = CANONICAL_LEADS.filter(l => capturedLeads.get(l)?.status === "provisional").length;
       return {
-        ok: newlyCapturedCount > 0,
+        ok: newlyCapturedCount > 0 || provisionalCount > 0,
         capturedCount: newlyCapturedCount,
         newlyCapturedLeads,
-        totalCaptured: CANONICAL_LEADS.filter(l => capturedLeads.get(l).captured).length,
+        totalCaptured: confirmedCount,
+        provisionalCount,
         quarantinedCount,
-        reason: newlyCapturedCount === 0
-          ? "Derivações não atribuídas: rótulos ausentes, conflitantes ou insuficientemente confiáveis. A LURIA não vai adivinhar nomes por posição; ajuste a imagem ou recapture."
+        reason: newlyCapturedCount === 0 && provisionalCount === 0
+          ? "O ECG foi analisado, mas nenhum traçado pôde ser reconstruído. Confira a nitidez, a grade e o enquadramento."
           : null,
         boundaries
       };
@@ -657,6 +674,11 @@
       const multiResult = processPhotographCanvas(snapCanvas, { source: "autonomous_camera" });
 
       if (multiResult.ok && multiResult.capturedCount > 0) {
+        if (isGlobalCapture && multiResult.provisionalCount > 0) {
+          setHudMessage("Traçados candidatos encontrados. Abrindo conferência sem atribuir nomes incertos.", true);
+          setTimeout(() => { stopCamera(); transitionToStage2(); }, 800);
+          return;
+        }
         if (multiResult.totalCaptured === 12) {
           setHudMessage("Todas as 12 derivações capturadas e validadas! Abrindo conferência...", true);
           setTimeout(() => {
@@ -942,7 +964,7 @@
       const leadsArray = Array.from(capturedLeads.values());
       const extractor = global.LuriaEcgSignalExtractor;
       const extractionObjects = leadsArray
-        .filter(l => l.captured && l.extraction)
+        .filter(l => l.captured && l.status === "captured" && l.extraction)
         .map(l => ({ lead: l.lead, audit: l.audit, extraction: l.extraction }));
 
       const globalAudit = (extractor && extractor.auditFullExtraction)
@@ -955,7 +977,7 @@
       const limitations = [];
 
       leadsArray.forEach(l => {
-        if (l.captured && l.extraction) {
+        if (l.captured && l.status === "captured" && l.extraction) {
           signalsByLead[l.lead] = l.extractedSignal;
           validMasksByLead[l.lead] = l.extraction.validMask;
           durationsByLead[l.lead] = l.durationSeconds;
@@ -1074,7 +1096,7 @@
     };
   }
 
-  global.LuriaEcgSceneGuard = { isVerifiedEcgScene, isSafeAutomaticLeadAssignment };
+  global.LuriaEcgSceneGuard = { isVerifiedEcgScene, hasCredibleEcgCandidates, isSafeAutomaticLeadAssignment };
 
   global.LuriaSmartCamera = {
     createController: createSmartCameraController,
