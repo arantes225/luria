@@ -42,6 +42,11 @@
 
     .mission-progress-note{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:2px;padding:10px 12px;border-radius:11px;background:color-mix(in srgb,var(--accent) 5%,var(--surface));color:var(--muted);font-size:.74rem}
     .mission-progress-note strong{color:var(--text);font-size:.76rem}
+    .study-session-diagnostic{margin-top:14px;padding:16px;border:1px solid color-mix(in srgb,var(--accent) 23%,var(--border));border-radius:13px;background:color-mix(in srgb,var(--accent) 4%,var(--surface))}
+    .study-session-diagnostic h3{margin:0 0 6px;font-size:.95rem;color:var(--text)}
+    .study-session-diagnostic p{margin:0 0 9px;color:var(--muted);font-size:.78rem;line-height:1.5}
+    .study-session-diagnostic ul{display:grid;gap:5px;padding-left:20px;margin:0;color:var(--text);font-size:.77rem;line-height:1.45}
+    .study-session-diagnostic small{display:block;margin-top:9px;color:var(--muted);font-size:.7rem}
 
     .study-session-banner{display:none;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;padding:11px 13px;border:1px solid color-mix(in srgb,#18885c 26%,var(--border));border-radius:12px;background:color-mix(in srgb,#18885c 7%,var(--surface));animation:sessionWin .35s ease both}
     .study-session-banner.is-visible{display:flex}
@@ -154,14 +159,15 @@
               <span id="study-session-progress-percent">0% concluído</span>
             </div>
 
+            <section id="study-session-diagnostic" class="study-session-diagnostic" aria-live="polite" hidden></section>
             <div id="study-session-banner" class="study-session-banner" aria-live="polite"></div>
             <div id="study-session-list" class="study-session-list"></div>
           </section>
 
           <div id="study-session-finale" class="study-session-finale">
             <span class="trophy" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4h8v3c0 3.3-1.8 5.7-4 6.5C9.8 12.7 8 10.3 8 7V4Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 6H5v1.2c0 2 1.2 3.5 3.2 3.8M16 6h3v1.2c0 2-1.2 3.5-3.2 3.8M12 13.5V17m-3 3h6m-5-3h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-            <h3>Sessão vencida</h3>
-            <p>Você concluiu as três etapas planejadas para hoje.</p>
+            <h3 id="study-session-finale-title">Sessão vencida</h3>
+            <p id="study-session-finale-copy">Você concluiu as três etapas planejadas para hoje.</p>
           </div>
         </section>
       </div>
@@ -190,6 +196,14 @@
       const mascotImg=document.getElementById("study-session-mascot-img");
       const journeyCopy=document.getElementById("study-session-journey-copy");
       const progressPercent=document.getElementById("study-session-progress-percent");
+      const isReview=plan?.mode==="review"||String(steps[0]?.href||"").startsWith("/feynman/");
+      const missionTitle=document.querySelector(".mission-board h2");
+      const missionCopy=document.querySelector(".mission-board-copy");
+      const diagnosticBox=document.getElementById("study-session-diagnostic");
+      if(missionTitle)missionTitle.textContent=isReview?"Primeiro, descubra o que lembra.":"Aprender. Praticar. Ensinar.";
+      if(missionCopy)missionCopy.textContent=isReview
+        ?"Explique o assunto sem consultar. O Alex mostrará suas lacunas para orientar a revisão e as questões do dia."
+        :"Estude o conteúdo, pratique e depois ensine ao Alex pelo método Feynman. O XP depende da conclusão de cada etapa.";
       if(minutes)minutes.textContent=(Number(plan?.minutes)||0)+" min";
       const theme=document.documentElement.dataset.theme||"light";
       if(mascotImg){
@@ -229,6 +243,22 @@
           }
         }
       }catch{}
+
+      if(diagnosticBox){
+        let diagnostic=null;
+        try{diagnostic=JSON.parse(sessionStorage.getItem("luria:guided-study-diagnostic")||"null")}catch{}
+        const validReport=isReview&&completedThrough>=0&&diagnostic?.createdAt===plan?.createdAt;
+        diagnosticBox.hidden=!validReport;
+        if(validReport){
+          const gaps=[...(Array.isArray(diagnostic.gaps)?diagnostic.gaps:[]),...(Array.isArray(diagnostic.errors)?diagnostic.errors:[])]
+            .filter(item=>typeof item==="string"&&item.trim()).slice(0,4);
+          const suggestions=Array.isArray(diagnostic.next_steps)?diagnostic.next_steps.filter(item=>typeof item==="string"&&item.trim()).slice(0,2):[];
+          diagnosticBox.innerHTML='<h3>Diagnóstico Feynman · Onde focar sua revisão</h3>'
+           +'<p>O Alex identificou os pontos abaixo na sua explicação inicial. Comece por eles antes de resolver as questões.</p>'
+           +(gaps.length?'<ul>'+gaps.map(item=>'<li>'+esc(item)+'</li>').join("")+'</ul>':'<p>Nenhuma lacuna específica foi identificada na explicação. Continue com o material e as questões.</p>')
+           +(suggestions.length?'<small>Próximos passos sugeridos: '+esc(suggestions.join(" · "))+'</small>':"");
+        }
+      }
 
       const currentIndex=Math.min(steps.length-1,completedThrough+1);
       const completedCount=Math.max(0,Math.min(steps.length,completedThrough+1));
@@ -276,6 +306,10 @@
       }).join("");
 
       if(completedThrough>=steps.length-1){
+        const finalTitle=document.getElementById("study-session-finale-title");
+        const finalCopy=document.getElementById("study-session-finale-copy");
+        if(finalTitle)finalTitle.textContent=isReview?"Revisão concluída":"Sessão vencida";
+        if(finalCopy)finalCopy.textContent=isReview?"Você começou explicando o que lembrava, revisou suas lacunas e praticou questões.":"Você concluiu as três etapas planejadas para hoje.";
         list.hidden=true;
         finale.classList.add("is-visible");
         try{localStorage.removeItem("luria:guided-timer")}catch{}
