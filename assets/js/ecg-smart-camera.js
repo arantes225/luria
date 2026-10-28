@@ -671,8 +671,19 @@
           newlyCapturedLeads.push(leadName);
         } else if (!leadInfo.captured) {
           leadInfo.status = "low_quality";
+          leadInfo.candidateRegion = { row: box.row, col: box.col, observedLabel: box.observedLabel || null };
+          leadInfo.leadIdentity = leadIdentity;
+          leadInfo.imageCropUrl = typeof cropCanvas.toDataURL === "function"
+            ? cropCanvas.toDataURL("image/jpeg", 0.92)
+            : null;
+          leadInfo.cropWidth = roiW;
+          leadInfo.cropHeight = roiH;
+          leadInfo.regionBounds = { x: roiX, y: roiY, width: roiW, height: roiH };
+          leadInfo.extractedSignal = null;
           leadInfo.extraction = extractionResult;
           leadInfo.audit = extractionResult.audit;
+          leadInfo.calibration = extractionResult.calibration;
+          leadInfo.confidence = extractionResult.confidence;
         }
       });
 

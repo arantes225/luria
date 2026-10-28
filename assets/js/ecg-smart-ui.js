@@ -483,14 +483,14 @@
     if (!reviewGrid) return;
     reviewGrid.innerHTML = "";
 
-    let hasMissing = leads.some(info => !info.captured || info.status === 'provisional');
+    let hasMissing = leads.some(info => info.status !== "captured");
     let adequateCount = 0;
     let reviewCount = 0;
     let invalidCount = 0;
     let candidateCount = 0;
 
     leads.forEach(leadInfo => {
-      if (!leadInfo.captured) return; // No twelve giant empty lead cards.
+      if (!leadInfo.captured && !leadInfo.imageCropUrl) return; // No giant cards without evidence.
       const provisional = leadInfo.status === "provisional";
       if (provisional) candidateCount++;
       const card = document.createElement("article");
@@ -560,6 +560,12 @@
         const warning = document.createElement("p");
         warning.className = "ecg-provisional-warning";
         warning.textContent = `Os pixels foram extraídos da posição esperada para ${leadInfo.lead}, mas o rótulo não foi confirmado automaticamente. Compare com a fotografia original antes de confirmar.`;
+        card.appendChild(warning);
+      } else if (leadInfo.status === "low_quality") {
+        const warning = document.createElement("p");
+        warning.className = "ecg-provisional-warning";
+        warning.textContent = leadInfo.extraction?.message ||
+          "A fotografia foi preservada, mas não há pixels suficientes para desenhar um traçado fiel. Recapture esta região.";
         card.appendChild(warning);
       }
 
@@ -708,6 +714,21 @@
     const h = canvas.height;
 
     ctx.clearRect(0, 0, w, h);
+
+    if (!leadInfo.extractedSignal && leadInfo.imageCropUrl) {
+      const img = new Image();
+      img.onload = () => {
+        ctx.drawImage(img, 0, 0, w, h);
+        ctx.fillStyle = "rgba(127, 29, 29, 0.84)";
+        ctx.fillRect(0, h - 32, w, 32);
+        ctx.fillStyle = "#ffffff";
+        ctx.font = "600 11px sans-serif";
+        ctx.textAlign = "center";
+        ctx.fillText("Extração bloqueada — recapture esta região", w / 2, h - 12);
+      };
+      img.src = leadInfo.imageCropUrl;
+      return;
+    }
 
     if (!leadInfo.captured || !leadInfo.extractedSignal) {
       ctx.fillStyle = "#fff7f5";
