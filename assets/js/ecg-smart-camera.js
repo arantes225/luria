@@ -189,7 +189,7 @@
       const progressFill = hudContainer.querySelector(".ecg-hud-progress-fill");
       const badgeContainer = hudContainer.querySelector(".ecg-hud-lead-badges");
 
-      const capturedCount = CANONICAL_LEADS.filter(l => capturedLeads.get(l)?.captured).length;
+      const capturedCount = CANONICAL_LEADS.filter(l => capturedLeads.get(l)?.status === "captured").length;
 
       if (countEl) countEl.textContent = `${capturedCount} de 12`;
       if (targetEl) targetEl.textContent = currentTargetLead || "Completo";
@@ -200,7 +200,7 @@
         CANONICAL_LEADS.forEach(lead => {
           const info = capturedLeads.get(lead);
           const badge = document.createElement("span");
-          const stateClass = info.captured
+          const stateClass = info.status === "captured"
             ? "is-captured"
             : (lead === currentTargetLead ? "is-target" : "is-pending");
           badge.className = `ecg-lead-pill ${stateClass}`;
