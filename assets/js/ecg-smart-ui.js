@@ -263,7 +263,10 @@
     if (!cameraController || !canvasEl) {
       return Promise.resolve({ ok: false, reason: "Motor do ECG indisponível." });
     }
-    const url = URL.createObjectURL(file);
+    let stage = "abertura do arquivo";
+    let url;
+    try { url = URL.createObjectURL(file); }
+    catch { return Promise.resolve({ ok: false, reason: "Não foi possível abrir esta foto no navegador. Escolha uma imagem JPEG/PNG válida." }); }
     return new Promise(resolve => {
       const img = new Image();
       let settled = false;
@@ -276,6 +279,7 @@
       img.onerror = () => finish({ ok: false, reason: "Não foi possível decodificar a imagem escolhida." });
       img.onload = () => {
         try {
+          stage = "preparação da imagem";
           const originalW = img.naturalWidth || img.width;
           const originalH = img.naturalHeight || img.height;
           if (!(originalW > 0 && originalH > 0)) {
@@ -293,7 +297,13 @@
           const unrectified = document.createElement("canvas");
           unrectified.width = workW;
           unrectified.height = workH;
-          unrectified.getContext("2d").drawImage(img, 0, 0, workW, workH);
+          const ctxPhoto = unrectified.getContext("2d");
+          if (!ctxPhoto) {
+            finish({ok:false,reason:"O navegador não conseguiu criar uma área de imagem. Feche outras abas pesadas e tente novamente."});
+            return;
+          }
+          ctxPhoto.drawImage(img, 0, 0, workW, workH);
+          stage = "correção da área do papel";
           const chosenCorners = photoOptions.corners;
           const manualSelection = Array.isArray(chosenCorners);
           if (manualSelection && !window.LuriaEcgPhotoPerspective) {
@@ -305,6 +315,7 @@
             : null;
           const snapCanvas = selectedPaper?.canvas || unrectified;
 
+          stage = "reconhecimento dos traçados";
           cameraController.stopCamera();
           cameraViewport.hidden = true;
           cameraController.resetCaptureSession?.();
@@ -329,6 +340,7 @@
             finish({ ok: false, reason, originalWidth: originalW, originalHeight: originalH, analysedWidth: workW, analysedHeight: workH });
             return;
           }
+          stage = "montagem da conferência";
           if (missingAlert) missingAlert.hidden = true;
           if (captureSource) captureSource.textContent = "Origem: " + (source === "normal_photo" ? (manualSelection ? "Foto normal (4 cantos ajustados)" : "Foto normal (integral)") : "Imagem importada") + " · " + originalW + " × " + originalH + " px (original) · " + snapCanvas.width + " × " + snapCanvas.height + " px (análise).";
           const leads = cameraController.getCapturedLeads();
@@ -338,8 +350,12 @@
           renderStage2Waveforms(leads);
           finish({ ok: true, capturedCount: result.capturedCount, totalCaptured: result.totalCaptured, originalWidth: originalW, originalHeight: originalH, analysedWidth: workW, analysedHeight: workH });
         } catch (exception) {
-          console.warn("[LURIA ECG] Falha no processamento da imagem:", exception);
-          finish({ ok: false, reason: "Falha de processamento da fotografia. Tente outra foto." });
+          console.warn("[LURIA ECG] Falha técnica na etapa", stage, exception);
+          const memoryError = /out.of.memory|allocation|memory|quota/i.test(String(exception?.message || ""));
+          const reason = memoryError
+            ? "A memória do aparelho não foi suficiente para processar a foto. Feche aplicativos pesados ou experimente outra imagem."
+            : "Erro técnico na etapa de " + stage + " (" + (exception?.name || "erro inesperado") + "). A foto original foi preservada. Tente novamente ou use quatro cantos.";
+          finish({ ok: false, reason, errorStage: stage });
         }
       };
       img.src = url;
