@@ -1202,20 +1202,11 @@
 
     // 3. Avaliar orientação (0/90/180/270) e inclinação
     const orientation = detectOrientationAndSkew(imageData);
-    if (orientation.isRotated90) {
-      return {
-        detected: false,
-        confidence: 0.2,
-        boundaries: sheet.boundaries,
-        detectedLayout: null,
-        layoutConfidence: "none",
-        quality,
-        sheet,
-        orientation,
-        anomalies: [{ code: "ecg_rotated_90_degrees" }],
-        message: "ECG girado em 90°. Gire o aparelho ou a imagem para a orientação horizontal."
-      };
-    }
+    // Column-vs-row ink variance is only a heuristic: vertical separators,
+    // lead labels and certain ECG layouts trigger many false 90° positives.
+    // Never reject a photo solely on this test. Continue to check the REAL
+    // waveform/layout evidence below. The user can rotate the photo manually
+    // if the waveform detector subsequently cannot recover usable leads.
 
     // 4. Medir grade milimetrada e calibração
     const calibration = detectECGGridAndCalibration(imageData, options.userCalibration || null, sheet.boundaries);

@@ -335,8 +335,8 @@
       }
 
       // 2. Verificação de orientação (rotação de 90°/270° ou inclinação acentuada)
-      if (docDetection.orientation && docDetection.orientation.isRotated90) {
-        setHudMessage("ECG rotacionado em 90°. Gire o exame ou o celular para a horizontal.");
+      if (docDetection.orientation?.isRotated90 && !docDetection.detected) {
+        setHudMessage("Possível rotação do ECG. Confira a orientação da foto; não é preciso girar o celular para continuar.");
         setReticleStatus("adjusting");
         return;
       }

@@ -316,17 +316,31 @@
             return;
           }
           ctxPhoto.drawImage(img, 0, 0, workW, workH);
+          stage = "ajuste da orientação da foto";
+          const rotationDeg = Number(photoOptions.rotationDeg ?? 0);
+          if (![0, 90, 180, 270].includes(rotationDeg)) {
+            finish({ ok: false, reason: "Rotação inválida. Escolha os botões de girar a foto novamente." });
+            return;
+          }
+          const perspective = window.LuriaEcgPhotoPerspective;
+          if (rotationDeg && !perspective?.rotateCanvasQuarter) {
+            finish({ ok: false, reason: "Rotação de imagem indisponível. Reabra a página do ECG." });
+            return;
+          }
+          const orientedCanvas = rotationDeg
+            ? perspective.rotateCanvasQuarter(unrectified, rotationDeg / 90)
+            : unrectified;
           stage = "correção da área do papel";
           const chosenCorners = photoOptions.corners;
           const manualSelection = Array.isArray(chosenCorners);
-          if (manualSelection && !window.LuriaEcgPhotoPerspective) {
+          if (manualSelection && !perspective) {
             finish({ ok: false, reason: "Correção de perspectiva indisponível." });
             return;
           }
           const selectedPaper = manualSelection
-            ? window.LuriaEcgPhotoPerspective.rectifyCanvas(unrectified, chosenCorners, maxSide)
+            ? perspective.rectifyCanvas(orientedCanvas, chosenCorners, maxSide)
             : null;
-          const snapCanvas = selectedPaper?.canvas || unrectified;
+          const snapCanvas = selectedPaper?.canvas || orientedCanvas;
 
           stage = "reconhecimento dos traçados";
           cameraController.stopCamera();
@@ -355,7 +369,7 @@
           }
           stage = "montagem da conferência";
           if (missingAlert) missingAlert.hidden = true;
-          if (captureSource) captureSource.textContent = "Origem: " + (source === "normal_photo" ? (manualSelection ? "Foto normal (4 cantos ajustados)" : "Foto normal (integral)") : "Imagem importada") + " · " + originalW + " × " + originalH + " px (original) · " + snapCanvas.width + " × " + snapCanvas.height + " px (análise).";
+          if (captureSource) captureSource.textContent = "Origem: " + (source === "normal_photo" ? (manualSelection ? "Foto normal (4 cantos ajustados)" : "Foto normal (integral)") : "Imagem importada") + " · rotação " + rotationDeg + "° · " + originalW + " × " + originalH + " px (original) · " + snapCanvas.width + " × " + snapCanvas.height + " px (análise).";
           const leads = cameraController.getCapturedLeads();
           currentLeadsData = leads;
           currentSessionPackage = cameraController.getSessionStructuredPackage();

@@ -621,6 +621,8 @@
       <div class="ecg-normal-photo-mode" role="group" aria-label="Selecionar área do exame">
         <label><input type="radio" name="ecg-photo-selection" value="corners" checked> Delimitar papel (4 cantos)</label>
         <label><input type="radio" name="ecg-photo-selection" value="whole"> Usar foto inteira (controle A/B)</label>
+        <button type="button" id="ecg-normal-photo-rotate-left" class="ecg-btn secondary" aria-label="Girar foto 90 graus para a esquerda">↺ Girar esquerda</button>
+        <button type="button" id="ecg-normal-photo-rotate-right" class="ecg-btn secondary" aria-label="Girar foto 90 graus para a direita">↻ Girar direita</button>
         <button type="button" id="ecg-normal-photo-reset" class="ecg-btn secondary">Reiniciar cantos</button>
       </div>
       <div id="ecg-normal-photo-frame" class="ecg-normal-photo-frame" hidden>
@@ -650,11 +652,11 @@
   <script src="/assets/js/luria-rotate-controller.js?v=1"></script>
   <script src="/assets/js/ecg-contracts.js?v=2"></script>
   <script src="/assets/js/ecg-signal-extractor.js?v=2"></script>
-  <script src="/assets/js/ecg-cv-engine.js?v=2"></script>
-  <script src="/assets/js/ecg-smart-camera.js?v=4"></script>
-  <script src="/assets/js/ecg-smart-ui.js?v=5"></script>
-  <script src="/assets/js/ecg-photo-perspective.js?v=1"></script>
-  <script src="/assets/js/ecg-normal-photo.js?v=4"></script>
+  <script src="/assets/js/ecg-cv-engine.js?v=3"></script>
+  <script src="/assets/js/ecg-smart-camera.js?v=5"></script>
+  <script src="/assets/js/ecg-smart-ui.js?v=6"></script>
+  <script src="/assets/js/ecg-photo-perspective.js?v=2"></script>
+  <script src="/assets/js/ecg-normal-photo.js?v=5"></script>
   <script defer src="/assets/js/pwa.js?v=20261028-ecg-reload2"></script>
   <script defer src="/assets/js/ecg-reader.js?v=2"></script>
 </body>
