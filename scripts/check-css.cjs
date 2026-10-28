@@ -6,7 +6,7 @@ const root = path.join(__dirname, '..');
 
 function files(directory, extension) {
   return fs.readdirSync(directory, {withFileTypes:true}).flatMap(entry => {
-    if (['.git','node_modules','browser-results','docs'].includes(entry.name)) return [];
+    if (['.git','node_modules','browser-results','docs','build'].includes(entry.name)) return [];
     const file = path.join(directory, entry.name);
     return entry.isDirectory() ? files(file, extension) : file.endsWith(extension) ? [file] : [];
   });
