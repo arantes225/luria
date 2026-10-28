@@ -71,8 +71,8 @@
   async function registerLatestWorker() {
     try {
       registrationPromise ||= navigator.serviceWorker.register(
-        "/service-worker.js?v=" + release,
-        { scope: "/", updateViaCache: "none" }
+        (window.luriaSitePath?.("/service-worker.js?v=" + release) || "/service-worker.js?v=" + release),
+        { scope: (new URL(document.baseURI)).pathname, updateViaCache: "none" }
       );
       const registration = await registrationPromise;
       await registration.update();
