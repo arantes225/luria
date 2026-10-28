@@ -326,11 +326,25 @@
       }
     }
 
-    function setReticleStatus(status) {
+    function setReticleStatus(status, macroState = null) {
       if (!hudContainer) return;
-      const reticle = hudContainer.querySelector(".ecg-hud-reticle");
+      const reticle = hudContainer.querySelector(".ecg-hud-reticle") || hudContainer.querySelector(".ecg-hud-reticle-box");
       if (reticle) {
         reticle.setAttribute("data-status", status);
+        if (macroState) {
+          reticle.setAttribute("data-macro-state", macroState);
+        } else {
+          // Mapeamento automático de status para data-macro-state
+          const macroMap = {
+            searching: "SEARCH_DOCUMENT",
+            adjusting: "LOCK_DOCUMENT",
+            stabilizing: "DETECT_ECG_STRUCTURE",
+            aligned: "GUIDED_CAPTURE"
+          };
+          if (macroMap[status]) {
+            reticle.setAttribute("data-macro-state", macroMap[status]);
+          }
+        }
       }
     }
 
@@ -984,7 +998,18 @@
       setMode: m => { mode = m; },
       updateHudProgress,
       getCameraCapabilities,
-      toggleTorch
+      toggleTorch,
+      triggerManualCapture: () => {
+        if (!videoEl || !canvasEl || !cvEngine) return false;
+        const snapCanvas = document.createElement("canvas");
+        snapCanvas.width = videoEl.videoWidth || 1920;
+        snapCanvas.height = videoEl.videoHeight || 1080;
+        const ctx = snapCanvas.getContext("2d");
+        ctx.drawImage(videoEl, 0, 0, snapCanvas.width, snapCanvas.height);
+        return processPhotographCanvas(snapCanvas, {
+          userCalibration: sessionCalibration.confirmedByUser ? sessionCalibration : null
+        });
+      }
     };
   }
 

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Câmera do Scanner · ECG LURIA</title>
+  <meta name="theme-color" content="#030a16">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <link rel="stylesheet" href="/assets/css/luria-rotate-hint.css?v=2">
+  <link rel="stylesheet" href="/assets/css/ecg-smart-camera.css?v=2">
+  <style>
+    /* Reset total para aplicação de câmera em tela cheia */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+    html, body {
+      width: 100vw;
+      height: 100dvh;
+      overflow: hidden;
+      background: #030a16;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      touch-action: manipulation;
+      user-select: none;
+    }
+    /* Isolamento contra qualquer estilo residual */
+    .app-shell, .sidebar, .topbar, .ui-mobile-navigation, .ui-mobile-tools {
+      display: none !important;
+    }
+
+    /* Contêiner principal da câmera independente */
+    .ecg-capture-app {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .ecg-capture-stage {
+      position: relative;
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+    }
+
+    #ecg-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    #ecg-canvas-cv {
+      display: none;
+    }
+
+    /* HUD flutuante sobreposto */
+    .ecg-capture-hud {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: calc(10px + env(safe-area-inset-top)) calc(12px + env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom)) calc(12px + env(safe-area-inset-left));
+      z-index: 10;
+    }
+
+    /* Barra Superior */
+    .ecg-hud-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      pointer-events: auto;
+    }
+
+    .ecg-hud-top-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .ecg-hud-btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(15, 23, 42, 0.78);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 7px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .ecg-hud-btn-back:hover {
+      background: rgba(30, 41, 59, 0.9);
+    }
+
+    .ecg-hud-mode-pill {
+      background: rgba(15, 23, 42, 0.78);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      padding: 4px;
+      display: inline-flex;
+      gap: 4px;
+    }
+
+    .ecg-hud-mode-btn {
+      background: transparent;
+      border: 0;
+      color: #94a3b8;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 5px 10px;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .ecg-hud-mode-btn.is-active {
+      background: #184888;
+      color: #fff;
+    }
+
+    .ecg-hud-top-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .ecg-hud-target-badge {
+      background: rgba(15, 23, 42, 0.78);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 6px 12px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: #38bdf8;
+    }
+
+    .ecg-hud-btn-icon {
+      background: rgba(15, 23, 42, 0.78);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 14px;
+      padding: 7px 11px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: none;
+    }
+
+    /* Centro: Retículo e Mira */
+    .ecg-hud-center {
+      flex: 1;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    .ecg-hud-reticle-box {
+      position: relative;
+      width: min(84vw, 680px);
+      aspect-ratio: 16 / 9;
+      border: 2px dashed rgba(56, 189, 248, 0.4);
+      border-radius: 16px;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+      box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.38);
+    }
+
+    /* Estado Macro: Buscando folha */
+    .ecg-hud-reticle-box[data-macro-state="SEARCH_DOCUMENT"] {
+      border-color: rgba(255, 255, 255, 0.3);
+      border-style: dashed;
+    }
+    /* Estado Macro: Folha travada e estável */
+    .ecg-hud-reticle-box[data-macro-state="LOCK_DOCUMENT"] {
+      border-color: rgba(56, 189, 248, 0.85);
+      border-style: solid;
+      box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.42), 0 0 20px rgba(56, 189, 248, 0.3);
+    }
+    /* Estado Macro: Estrutura e derivações mapeadas */
+    .ecg-hud-reticle-box[data-macro-state="MAP_LEADS"],
+    .ecg-hud-reticle-box[data-macro-state="GUIDED_CAPTURE"] {
+      border-color: rgba(16, 185, 129, 0.85);
+      border-style: solid;
+      box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.42), 0 0 24px rgba(16, 185, 129, 0.35);
+    }
+    /* Alerta ou erro */
+    .ecg-hud-reticle-box[data-macro-state="REJECT"] {
+      border-color: rgba(239, 68, 68, 0.85);
+      border-style: dashed;
+      box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5), 0 0 24px rgba(239, 68, 68, 0.35);
+    }
+
+    /* Cantos visuais da mira */
+    .ecg-hud-reticle-box::before, .ecg-hud-reticle-box::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border: 3px solid #38bdf8;
+      pointer-events: none;
+    }
+    .ecg-hud-reticle-box::before {
+      top: -3px;
+      left: -3px;
+      border-right: 0;
+      border-bottom: 0;
+      border-top-left-radius: 14px;
+    }
+    .ecg-hud-reticle-box::after {
+      bottom: -3px;
+      right: -3px;
+      border-left: 0;
+      border-top: 0;
+      border-bottom-right-radius: 14px;
+    }
+
+    /* Barra Inferior */
+    .ecg-hud-bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+      pointer-events: auto;
+    }
+
+    .ecg-hud-message-card {
+      background: rgba(15, 23, 42, 0.88);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      padding: 8px 18px;
+      text-align: center;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #f1f5f9;
+      max-width: 90vw;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .ecg-hud-progress-row {
+      width: min(84vw, 560px);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .ecg-hud-progress-track {
+      flex: 1;
+      height: 6px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.15);
+      overflow: hidden;
+    }
+    .ecg-hud-progress-fill {
+      height: 100%;
+      width: 0%;
+      background: #10b981;
+      transition: width 0.25s ease-out;
+    }
+
+    .ecg-hud-counter-text {
+      font-size: 11px;
+      font-weight: 800;
+      color: #94a3b8;
+      white-space: nowrap;
+    }
+
+    .ecg-hud-lead-badges {
+      display: flex;
+      gap: 4px;
+      overflow-x: auto;
+      max-width: 90vw;
+      padding-bottom: 2px;
+    }
+    .ecg-lead-pill {
+      font-size: 10px;
+      font-weight: 800;
+      padding: 3px 6px;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.12);
+      color: #94a3b8;
+      white-space: nowrap;
+    }
+    .ecg-lead-pill.is-captured {
+      background: #10b981;
+      color: #fff;
+    }
+    .ecg-lead-pill.is-target {
+      background: #38bdf8;
+      color: #030a16;
+    }
+
+    .ecg-hud-actions-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    .ecg-btn-snap {
+      background: #fff;
+      color: #0f172a;
+      border: 0;
+      border-radius: 50%;
+      width: 54px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.35), 0 4px 14px rgba(0, 0, 0, 0.4);
+      transition: transform 0.1s, box-shadow 0.1s;
+    }
+    .ecg-btn-snap:active {
+      transform: scale(0.92);
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+    }
+
+    /* Modal de Derivação Incerta (Ultrassensível) */
+    .ecg-uncertain-popup {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #0f172a;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 16px;
+      padding: 18px;
+      width: min(90vw, 360px);
+      z-index: 60;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+      text-align: center;
+      pointer-events: auto;
+    }
+    .ecg-uncertain-popup[hidden] {
+      display: none;
+    }
+    .ecg-uncertain-popup h3 {
+      font-size: 15px;
+      margin-bottom: 6px;
+      color: #fff;
+    }
+    .ecg-uncertain-popup p {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-bottom: 14px;
+      line-height: 1.4;
+    }
+    .ecg-uncertain-popup select {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 10px;
+      background: #1e293b;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .ecg-uncertain-popup .popup-actions {
+      display: flex;
+      gap: 8px;
+    }
+    .ecg-uncertain-popup button {
+      flex: 1;
+      padding: 9px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      border: 0;
+    }
+    .ecg-uncertain-popup .btn-confirm {
+      background: #184888;
+      color: #fff;
+    }
+    .ecg-uncertain-popup .btn-cancel {
+      background: #334155;
+      color: #cbd5e1;
+    }
+
+    /* Flash */
+    .ecg-hud-flash {
+      position: absolute;
+      inset: 0;
+      background: #fff;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 50;
+    }
+    .ecg-hud-flash.is-active {
+      animation: ecg-flash-anim 0.35s ease-out;
+    }
+
+    /* Layout Horizontal Otimizado (Landscape) */
+    @media (orientation: landscape) {
+      .ecg-capture-hud {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: 1fr;
+        padding: calc(6px + env(safe-area-inset-top)) calc(12px + env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) calc(12px + env(safe-area-inset-left));
+      }
+      .ecg-hud-top {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .ecg-hud-top-left {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .ecg-hud-top-right {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .ecg-hud-bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 12px;
+      }
+      .ecg-hud-actions-row {
+        flex-direction: column;
+      }
+      .ecg-hud-message-card {
+        position: absolute;
+        bottom: calc(8px + env(safe-area-inset-bottom));
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        padding: 6px 14px;
+      }
+      .ecg-hud-reticle-box {
+        width: min(72vw, 580px);
+        aspect-ratio: 16 / 9;
+      }
+    }
+  </style>
+</head>
+<body data-page="trabalho_ecg_captura">
+  <div class="ecg-capture-app">
+    <div class="ecg-capture-stage">
+      <video id="ecg-video" playsinline muted></video>
+      <canvas id="ecg-canvas-cv"></canvas>
+      <div class="ecg-hud-flash" id="ecg-flash"></div>
+
+      <div class="ecg-capture-hud" id="ecg-hud">
+        <!-- BARRA SUPERIOR -->
+        <div class="ecg-hud-top">
+          <div class="ecg-hud-top-left">
+            <a href="/trabalho/ecg/" class="ecg-hud-btn-back" id="ecg-btn-exit" title="Voltar ao ECG">
+              ← Voltar ao ECG
+            </a>
+            <div class="ecg-hud-mode-pill">
+              <button type="button" class="ecg-hud-mode-btn is-active" id="ecg-mode-fast">Automático</button>
+              <button type="button" class="ecg-hud-mode-btn" id="ecg-mode-ultra">Ultrassensível</button>
+            </div>
+          </div>
+
+          <div class="ecg-hud-top-right">
+            <button id="ecg-btn-torch" class="ecg-hud-btn-icon" type="button" aria-label="Lanterna">🔦</button>
+            <span class="ecg-hud-target-badge">ALVO: <span class="ecg-hud-target">DI</span></span>
+          </div>
+        </div>
+
+        <!-- MIRA CENTRAL MACRO / MICRO -->
+        <div class="ecg-hud-center">
+          <div class="ecg-hud-reticle-box" id="ecg-reticle" data-macro-state="SEARCH_DOCUMENT"></div>
+        </div>
+
+        <!-- BARRA INFERIOR -->
+        <div class="ecg-hud-bottom">
+          <div class="ecg-hud-lead-badges"></div>
+
+          <div class="ecg-hud-progress-row">
+            <div class="ecg-hud-progress-track">
+              <div class="ecg-hud-progress-fill"></div>
+            </div>
+            <span class="ecg-hud-counter-text">CAPTURADAS: <span class="ecg-hud-count">0 de 12</span></span>
+          </div>
+
+          <div class="ecg-hud-message-card">
+            <span class="ecg-hud-message">Localizando folha de ECG...</span>
+          </div>
+
+          <div class="ecg-hud-actions-row">
+            <button class="ecg-btn-snap" id="ecg-btn-snap" type="button" aria-label="Capturar manualmente">📸</button>
+          </div>
+        </div>
+
+        <!-- MODAL DE DERIVAÇÃO INCERTA (ULTRASSENSÍVEL) -->
+        <div id="ecg-uncertain-modal" class="ecg-uncertain-popup" hidden>
+          <h3>Identificação incerta da derivação</h3>
+          <p>O traçado foi localizado, mas o rótulo impresso não pôde ser confirmado com confiança. Reenquadre ou confirme manualmente:</p>
+          <select id="ecg-uncertain-select">
+            <option value="DI">DI</option><option value="DII">DII</option><option value="DIII">DIII</option>
+            <option value="aVR">aVR</option><option value="aVL">aVL</option><option value="aVF">aVF</option>
+            <option value="V1">V1</option><option value="V2">V2</option><option value="V3">V3</option>
+            <option value="V4">V4</option><option value="V5">V5</option><option value="V6">V6</option>
+          </select>
+          <div class="popup-actions">
+            <button class="btn-confirm" id="ecg-btn-confirm-uncertain" type="button">Confirmar</button>
+            <button class="btn-cancel" id="ecg-btn-reject-uncertain" type="button">Reenquadrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS ESSENCIAIS DO ECG -->
+  <script src="/assets/js/luria-rotate-controller.js?v=2"></script>
+  <script src="/assets/js/ecg-contracts.js?v=3"></script>
+  <script src="/assets/js/ecg-signal-extractor.js?v=3"></script>
+  <script src="/assets/js/ecg-cv-engine.js?v=3"></script>
+  <script src="/assets/js/ecg-smart-camera.js?v=3"></script>
+  <script src="/assets/js/ecg-capture-page.js?v=1"></script>
+</body>
+</html>

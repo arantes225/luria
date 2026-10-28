@@ -25,6 +25,17 @@
 
   const CANONICAL_LEADS = ["DI", "DII", "DIII", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"];
 
+  // Estados hierárquicos Macro -> Micro da máquina de reconhecimento
+  const SCANNER_STATES = {
+    SEARCH_DOCUMENT: "SEARCH_DOCUMENT",         // 1. Procurando bordas e contraste da folha de papel global
+    LOCK_DOCUMENT: "LOCK_DOCUMENT",             // 2. Folha identificada, estável, sem cortes ou perspectiva grave
+    DETECT_ECG_STRUCTURE: "DETECT_ECG_STRUCTURE", // 3. Grade milimetrada e topologia de faixas/linhas de ECG confirmadas
+    MAP_LEADS: "MAP_LEADS",                     // 4. Mapeamento das regiões de derivação e leitura dos rótulos via OCR
+    GUIDED_CAPTURE: "GUIDED_CAPTURE",           // 5. Enquadramento e estabilização para disparo automático ou manual
+    VERIFY_CAPTURE: "VERIFY_CAPTURE",           // 6. Extração, auditoria de fidelidade e integridade das derivações
+    STAGE_2: "STAGE_2"                          // 7. Pacote completo pronto para conferência pelo profissional
+  };
+
   // Mapeamento de sinônimos clínicos internacionais (I, II, III -> DI, DII, DIII)
   const LEAD_SYNONYMS = {
     "I": "DI", "DI": "DI", "D1": "DI",
@@ -1315,6 +1326,7 @@
     if (quality.sharpnessScore < 18 || quality.brightness < 35) {
       return {
         detected: false,
+        state: SCANNER_STATES.SEARCH_DOCUMENT,
         confidence: 0,
         boundaries: null,
         detectedLayout: null,
@@ -1330,6 +1342,7 @@
     if (!sheet.found || sheet.isCutOff) {
       return {
         detected: false,
+        state: SCANNER_STATES.SEARCH_DOCUMENT,
         confidence: 0.1,
         boundaries: sheet.boundaries || null,
         detectedLayout: null,
@@ -1344,6 +1357,7 @@
     if (sheet.hasSeverePerspective && !options.allowPerspectiveRectification) {
       return {
         detected: false,
+        state: SCANNER_STATES.SEARCH_DOCUMENT,
         confidence: 0.2,
         boundaries: sheet.boundaries,
         detectedLayout: null,
@@ -1360,6 +1374,7 @@
     if (orientation.isRotated90) {
       return {
         detected: false,
+        state: SCANNER_STATES.LOCK_DOCUMENT,
         confidence: 0.2,
         boundaries: sheet.boundaries,
         detectedLayout: null,
@@ -1382,6 +1397,7 @@
     if (topology.rowCount < 1 || topology.rowCount > 15) {
       return {
         detected: false,
+        state: SCANNER_STATES.DETECT_ECG_STRUCTURE,
         confidence: 0.1,
         boundaries: sheet.boundaries,
         detectedLayout: null,
@@ -1409,6 +1425,7 @@
     if (!layoutEvaluation.isValidECG) {
       return {
         detected: false,
+        state: SCANNER_STATES.MAP_LEADS,
         confidence: layoutEvaluation.confidence,
         boundaries: sheet.boundaries,
         detectedLayout: null,
@@ -1432,6 +1449,7 @@
 
     return {
       detected: true,
+      state: SCANNER_STATES.GUIDED_CAPTURE,
       confidence: layoutEvaluation.confidence,
       boundaries: sheet.boundaries,
       detectedLayout: layoutEvaluation.detectedLayout,
@@ -1985,6 +2003,7 @@
       cropSubImageData,
       drawBitmapLabelOnImageData,
       reset,
+      SCANNER_STATES,
       CANONICAL_LEADS,
       LAYOUT_TEMPLATES,
       STANDARD_LAYOUT_3X4
@@ -2006,6 +2025,7 @@
     detectCalibrationPulse,
     cropSubImageData,
     drawBitmapLabelOnImageData,
+    SCANNER_STATES,
     CANONICAL_LEADS,
     LAYOUT_TEMPLATES,
     STANDARD_LAYOUT_3X4

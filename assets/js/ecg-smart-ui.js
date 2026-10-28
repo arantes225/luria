@@ -671,6 +671,41 @@
     }
     ctx.stroke();
   }
+
+  // Hidratação a partir de sessão de captura prévia (ex.: retorno de /trabalho/ecg/captura/)
+  function checkSavedSession() {
+    try {
+      const savedSession = sessionStorage.getItem("luria_ecg_session");
+      const savedLeads = sessionStorage.getItem("luria_ecg_leads");
+      if (savedSession && savedLeads) {
+        const pkg = JSON.parse(savedSession);
+        const leads = JSON.parse(savedLeads);
+        currentSessionPackage = pkg;
+        currentLeadsData = leads;
+
+        stage1Section.hidden = true;
+        stage2Section.hidden = false;
+        stage3Section.hidden = true;
+        updateStepIndicators(2);
+
+        updateCalibrationUI(pkg?.calibration);
+        renderStage2Waveforms(leads);
+
+        // Limpa para evitar reativação indesejada em recarregamentos futuros
+        sessionStorage.removeItem("luria_ecg_session");
+        sessionStorage.removeItem("luria_ecg_leads");
+      }
+    } catch (e) {
+      console.warn("Erro ao carregar sessão salva de ECG:", e);
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", checkSavedSession);
+  } else {
+    checkSavedSession();
+  }
 })();
+
 
 

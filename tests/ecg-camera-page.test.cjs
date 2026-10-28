@@ -4,91 +4,143 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { JSDOM } = require('jsdom');
 
-test('scanner opens as a full-screen camera page and manual capture tolerates ordinary motion', async () => {
+test('standalone capture page (/trabalho/ecg/captura/) is independent, full-screen, isolated from LURIA menus, and stops tracks cleanly', async () => {
   const root = path.resolve(__dirname, '..');
-  const html = fs.readFileSync(path.join(root, 'trabalho/ecg/index.html'), 'utf8');
-  const script = fs.readFileSync(path.join(root, 'assets/js/ecg-camera-map.js'), 'utf8');
-  const dom = new JSDOM(html, { url: 'https://www.resibulando.online/trabalho/ecg/', runScripts: 'outside-only' });
+  const captureHtml = fs.readFileSync(path.join(root, 'trabalho/ecg/captura/index.html'), 'utf8');
+  const contractsSrc = fs.readFileSync(path.join(root, 'assets/js/ecg-contracts.js'), 'utf8');
+  const extractorSrc = fs.readFileSync(path.join(root, 'assets/js/ecg-signal-extractor.js'), 'utf8');
+  const cvEngineSrc = fs.readFileSync(path.join(root, 'assets/js/ecg-cv-engine.js'), 'utf8');
+  const cameraSrc = fs.readFileSync(path.join(root, 'assets/js/ecg-smart-camera.js'), 'utf8');
+  const rotateSrc = fs.readFileSync(path.join(root, 'assets/js/luria-rotate-controller.js'), 'utf8');
+  const pageSrc = fs.readFileSync(path.join(root, 'assets/js/ecg-capture-page.js'), 'utf8');
+
+  const dom = new JSDOM(captureHtml, {
+    url: 'https://www.resibulando.online/trabalho/ecg/captura/',
+    runScripts: 'outside-only'
+  });
   const { window } = dom;
   const { document } = window;
-  let inspect;
+
+  // 1. Verificar isolamento estrito contra menus/barras da LURIA
+  assert.equal(document.getElementById('sidebar'), null, 'Standalone capture page must have NO #sidebar');
+  assert.equal(document.querySelector('.ui-mobile-navigation'), null, 'Standalone capture page must have NO .ui-mobile-navigation');
+  assert.equal(document.querySelector('.ui-mobile-tools'), null, 'Standalone capture page must have NO .ui-mobile-tools');
+  assert.equal(document.querySelector('.topbar'), null, 'Standalone capture page must have NO global .topbar');
+
+  // 2. Elementos essenciais da câmera em tela cheia presentes
+  const video = document.getElementById('ecg-video');
+  const reticle = document.getElementById('ecg-reticle');
+  const btnExit = document.getElementById('ecg-btn-exit');
+  const btnSnap = document.getElementById('ecg-btn-snap');
+  assert.notEqual(video, null, 'Video element must exist');
+  assert.notEqual(reticle, null, 'Reticle element must exist');
+  assert.notEqual(btnExit, null, 'Exit button must exist');
+  assert.notEqual(btnSnap, null, 'Snap button must exist');
+  assert.equal(btnExit.getAttribute('href'), '/trabalho/ecg/');
+
   let stopped = false;
-  window.matchMedia = () => ({ matches: false });
-  window.setInterval = callback => { inspect = callback; return 1; };
-  window.clearInterval = () => { inspect = null; };
-  window.LuriaEcgLayout = { detect: () => ({ kind: 'unknown', rows: 0 }) };
-  window.LuriaEcgFrameGuide = { locate: () => ({ ready: false, instruction: 'Centralize o ECG.' }) };
   const track = {
-    getCapabilities: () => ({}),
-    stop: () => { stopped = true; }
+    getCapabilities: () => ({ torch: true }),
+    stop: () => { stopped = true; },
+    applyConstraints: async () => {}
   };
-  Object.defineProperty(window.navigator, 'mediaDevices', { value: {
-    getUserMedia: async () => ({ getVideoTracks: () => [track], getTracks: () => [track] })
-  } });
-  const video = document.getElementById('ecg-camera-video');
+
+  Object.defineProperty(window.navigator, 'mediaDevices', {
+    value: {
+      getUserMedia: async () => ({
+        getVideoTracks: () => [track],
+        getTracks: () => [track]
+      })
+    }
+  });
+
   Object.defineProperty(video, 'videoWidth', { value: 1920 });
   Object.defineProperty(video, 'videoHeight', { value: 1080 });
+  Object.defineProperty(video, 'readyState', { value: 4 });
   video.play = async () => {};
-  const image = new Uint8ClampedArray(480 * 270 * 4);
-  for (let i = 0; i < image.length; i += 4) {
-    const value = (i / 4) % 16 < 8 ? 70 : 190;
-    image[i] = image[i + 1] = image[i + 2] = value;
-    image[i + 3] = 255;
-  }
+
   window.HTMLCanvasElement.prototype.getContext = function () {
     return {
-      drawImage() {}, translate() {}, rotate() {}, setTransform() {},
-      getImageData: () => ({ data: image, width: 480, height: 270 })
+      drawImage() {},
+      getImageData: () => ({
+        data: new Uint8ClampedArray(320 * 240 * 4),
+        width: 320,
+        height: 240
+      })
     };
   };
-  window.eval(script);
-  const cameraPage = document.getElementById('ecg-camera-page');
-  const capture = document.getElementById('ecg-camera-capture');
-  document.getElementById('ecg-camera-start').click();
-  await new Promise(resolve => setImmediate(resolve));
-  assert.equal(cameraPage.hidden, false);
-  assert.equal(cameraPage.parentElement, document.body);
-  assert.equal(document.body.classList.contains('ecg-camera-open'), true);
-  assert.equal(window.location.hash, '#camera');
-  assert.equal(window.location.pathname, '/trabalho/ecg/');
-  assert.equal(document.getElementById('ecg-camera-stage').hidden, false);
-  assert.equal(capture.closest('.ecg-camera-stage') !== null, true);
-  assert.equal(typeof inspect, 'function');
-  inspect();
-  assert.equal(capture.disabled, false, 'manual capture should not wait for motion-free frames');
-  document.getElementById('ecg-camera-stop').click();
-  assert.equal(cameraPage.hidden, true);
-  assert.equal(document.body.classList.contains('ecg-camera-open'), false);
-  assert.equal(window.location.hash, '');
-  assert.equal(window.location.pathname, '/trabalho/ecg/');
-  assert.equal(stopped, true);
+
+  window.requestAnimationFrame = cb => setTimeout(cb, 16);
+  window.cancelAnimationFrame = id => clearTimeout(id);
+
+  window.eval(rotateSrc);
+  window.eval(contractsSrc);
+  window.eval(extractorSrc);
+  window.eval(cvEngineSrc);
+  window.eval(cameraSrc);
+  window.eval(pageSrc);
+
+  // Dispara DOMContentLoaded para inicializar
+  window.document.dispatchEvent(new window.Event('DOMContentLoaded'));
+  await new Promise(resolve => setTimeout(resolve, 50));
+
+  const controller = window.LuriaCapturePage.getCameraController();
+  assert.notEqual(controller, null, 'CameraController should be initialized');
+
+  // 3. Teste de parada limpa ao sair
+  btnExit.click();
+  assert.equal(stopped, true, 'Camera tracks must stop cleanly when clicking Voltar ao ECG');
+
   dom.window.close();
 });
 
-test('camera area is visible while permission is pending and closing cancels a late stream', async () => {
+test('orientation hint on standalone capture dismisses and adapts aspect ratio on "Manter vertical"', async () => {
   const root = path.resolve(__dirname, '..');
-  const html = fs.readFileSync(path.join(root, 'trabalho/ecg/index.html'), 'utf8');
-  const script = fs.readFileSync(path.join(root, 'assets/js/ecg-camera-map.js'), 'utf8');
-  const dom = new JSDOM(html, { url: 'https://www.resibulando.online/trabalho/ecg/', runScripts: 'outside-only' });
+  const captureHtml = fs.readFileSync(path.join(root, 'trabalho/ecg/captura/index.html'), 'utf8');
+  const rotateSrc = fs.readFileSync(path.join(root, 'assets/js/luria-rotate-controller.js'), 'utf8');
+  const pageSrc = fs.readFileSync(path.join(root, 'assets/js/ecg-capture-page.js'), 'utf8');
+
+  const dom = new JSDOM(captureHtml, {
+    url: 'https://www.resibulando.online/trabalho/ecg/captura/',
+    runScripts: 'outside-only'
+  });
   const { window } = dom;
   const { document } = window;
-  let allowCamera, stopped = false;
-  window.matchMedia = () => ({ matches: false });
-  window.LuriaEcgLayout = { detect() {} };
-  window.LuriaEcgFrameGuide = { locate() {} };
-  window.HTMLCanvasElement.prototype.getContext = () => ({});
-  Object.defineProperty(window.navigator, 'mediaDevices', { value: {
-    getUserMedia: () => new Promise(resolve => { allowCamera = resolve; })
-  } });
-  window.eval(script);
-  document.getElementById('ecg-camera-start').click();
-  assert.equal(document.getElementById('ecg-camera-page').hidden, false);
-  assert.equal(document.getElementById('ecg-camera-stage').hidden, false);
-  assert.match(document.getElementById('ecg-camera-overlay').textContent, /Aguardando acesso/);
-  document.getElementById('ecg-camera-stop').click();
-  allowCamera({ getTracks: () => [{ stop: () => { stopped = true; } }] });
-  await new Promise(resolve => setImmediate(resolve));
-  assert.equal(stopped, true);
-  assert.equal(document.getElementById('ecg-camera-page').hidden, true);
+
+  // Mock portrait mode
+  window.innerHeight = 800;
+  window.innerWidth = 400;
+  window.matchMedia = query => ({ matches: query.includes('portrait') });
+
+  window.requestAnimationFrame = cb => setTimeout(cb, 16);
+  window.cancelAnimationFrame = id => clearTimeout(id);
+
+  window.eval(rotateSrc);
+  window.eval(pageSrc);
+
+  const rotateCtrl = window.LuriaCapturePage.getRotateController();
+  assert.notEqual(rotateCtrl, null);
+
+  rotateCtrl.start();
+  const dialog = rotateCtrl.getElement();
+  assert.notEqual(dialog, null);
+  assert.equal(dialog.hidden, false, 'Rotate dialog should appear in portrait mode');
+
+  const dismissBtn = dialog.querySelector('.luria-rotate-action');
+  assert.notEqual(dismissBtn, null);
+  assert.equal(dismissBtn.textContent, 'Manter vertical');
+
+  // Clica em "Manter vertical"
+  dismissBtn.click();
+  assert.equal(dialog.hidden, true, 'Rotate dialog must hide on dismiss');
+
+  // Retículo deve ter adaptado aspect-ratio sem quebrar a tela
+  const reticle = document.getElementById('ecg-reticle');
+  assert.equal(reticle.style.aspectRatio, '4 / 3');
+
+  // Não deve ter nenhum elemento de /aprender/ecg/ ou estudo
+  assert.equal(document.getElementById('ecg-dataset'), null);
+  assert.equal(document.getElementById('ecg-save'), null);
+
   dom.window.close();
 });

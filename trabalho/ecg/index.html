@@ -105,18 +105,21 @@
 
             <!-- ETAPA 1: CAPTURA INTELIGENTE -->
             <article class="ecg-card" id="ecg-stage1-capture">
-              <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+              <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
                 <div>
                   <h2>Etapa 1 — Captura Inteligente com Câmera</h2>
-                  <p style="margin:0;color:var(--muted);font-size:13px">Aponte para a folha do ECG. A câmera identifica o exame e captura automaticamente assim que estabilizado.</p>
+                  <p style="margin:0;color:var(--muted);font-size:13px">Aponte para a folha do ECG. A câmera abre em tela cheia independente, identifica a folha e captura automaticamente.</p>
                 </div>
                 <div class="ecg-actions">
-                  <button class="ecg-btn" id="ecg-btn-start-fast" type="button">Abrir Câmera (Modo Automático)</button>
-                  <button class="ecg-btn secondary" id="ecg-btn-start-ultra" type="button">Modo Derivação por Derivação</button>
+                  <a href="/trabalho/ecg/captura/" class="ecg-btn" id="ecg-btn-start-camera" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px">
+                    📸 Abrir Câmera do Scanner
+                  </a>
+                  <button class="ecg-btn secondary" id="ecg-btn-start-fast" type="button" style="display:none">Abrir Câmera Rápida</button>
+                  <button class="ecg-btn secondary" id="ecg-btn-start-ultra" type="button" style="display:none">Modo Ultrassensível</button>
                 </div>
               </div>
 
-              <!-- VIEWPORT DA CÂMERA -->
+              <!-- VIEWPORT EMBUTIDO OPCIONAL / FALLBACK -->
               <div id="ecg-camera-viewport" class="ecg-viewport-container" hidden style="margin-top:14px">
                 <video id="ecg-video" class="ecg-camera-video" playsinline muted></video>
                 <canvas id="ecg-canvas-cv" class="ecg-camera-canvas-cv"></canvas>
