@@ -349,7 +349,7 @@
   const uniSelect=name=>unifesp.specialties.find(r=>r.specialty===name);
   Object.assign(uniSelect('Cirurgia Geral'),{
     status:'reviewed',max:12,
-    source:unifespPdf+'#page=28',
+    source:unifespPdf,
     scope:'Acesso direto R1, edital 690/2026, pp. 28–30; oito itens, máximo bruto de 12 pontos. Nota final da etapa = pontos × 10 / 12 (truncada pela banca a duas casas). Atividades válidas uma vez, com comprovantes formais, e prazos mínimos previstos em cada item.',
     criteria:[
       criterion('uni-cg-centro','Formação em centro de excelência',2,28,'Cumulativamente: hospital de ensino, residência médica credenciada, residência multiprofissional e programa stricto sensu com mestrado e doutorado; todos comprovados.',[part('uni-cg-centro1','Todos os quatro requisitos comprovados',2)]),
@@ -370,15 +370,17 @@
     ]
   });
   Object.assign(uniSelect('Acupuntura'),{
-    status:'reviewed',max:10,source:unifespPdf+'#page=23',
+    status:'reviewed',max:10,source:unifespPdf,
     scope:'Acesso direto R1, edital 690/2026, pp. 23–24. A confirmação de requisitos e a nota final cabem à banca. Nos itens por faixa, só a melhor alternativa pontua.',
     criteria:[
-      criterion('uni-ac-instit','Instituição de origem',1,23,'O conceito ENAMED da instituição é multiplicado por 0,1; os demais requisitos exigem certificado institucional.',[
+      criterion('uni-ac-instit','Instituição de origem',.5,23,'Hospital e programas exigem comprovação institucional.',[
         part('uni-ac-hosp','Hospital de ensino credenciado',.25),
         part('uni-ac-rm','Programas de residência médica credenciados',.125),
-        part('uni-ac-pg','Pós-graduação stricto sensu credenciada',.125),
-        part('uni-ac-en1','Conceito ENAMED 1',.1),part('uni-ac-en2','Conceito ENAMED 2',.2),part('uni-ac-en3','Conceito ENAMED 3',.3),part('uni-ac-en4','Conceito ENAMED 4',.4),part('uni-ac-en5','Conceito ENAMED 5',.5)
+        part('uni-ac-pg','Pós-graduação stricto sensu credenciada',.125)
       ]),
+      {...criterion('uni-ac-enamed','Conceito institucional no ENAMED',.5,23,'A nota da instituição no ENAMED é multiplicada por 0,1; escolha apenas um conceito.',[
+        part('uni-ac-en1','Conceito 1',.1),part('uni-ac-en2','Conceito 2',.2),part('uni-ac-en3','Conceito 3',.3),part('uni-ac-en4','Conceito 4',.4),part('uni-ac-en5','Conceito 5',.5)
+      ]),exclusive:true},
       criterion('uni-ac-historico','Desempenho acadêmico e duração do internato',1,24,'Nota e horas padronizadas pelo edital. Os dois indicadores, conjuntamente, valem até 1 ponto.',[
         part('uni-ac-cr','Parcela de coeficiente de rendimento (até 0,5)',.5),part('uni-ac-int','Parcela da duração do internato (até 0,5)',.5)
       ]),
@@ -395,7 +397,7 @@
       criterion('uni-ac-idioma','Língua estrangeira',1,26,'Proficiência com comprovação conforme o programa.',[part('uni-ac-idioma1','Idioma elegível',1)])
     ],
     groups:[
-      {id:'formacao',title:'Formação e histórico',tone:'violet',criteria:['uni-ac-instit','uni-ac-historico']},
+      {id:'formacao',title:'Formação e histórico',tone:'violet',criteria:['uni-ac-instit','uni-ac-enamed','uni-ac-historico']},
       {id:'pesquisa',title:'Pesquisa e publicações',tone:'amber',criteria:['uni-ac-ic','uni-ac-pub']},
       {id:'academicas',title:'Monitorias e extensão',tone:'blue',criteria:['uni-ac-mon','uni-ac-extra','uni-ac-rep']},
       {id:'eventos',title:'Congressos e prêmios',tone:'teal',criteria:['uni-ac-cong','uni-ac-premio']},
@@ -406,13 +408,15 @@
   // Para Clínica Médica, os itens que dependem de média padronizada são apresentados
   // com a ressalva de que o candidato só deve selecionar a fração plena se a atingir.
   Object.assign(uniSelect('Clínica Médica'),{
-    status:'reviewed',max:10,source:unifespPdf+'#page=30',
+    status:'reviewed',max:10,source:unifespPdf,
     scope:'Acesso direto R1, edital 690/2026, pp. 30–32. Os subitens de histórico e internato envolvem conversão proporcional definida pela banca. Esta calculadora estima pontuação plena desses subitens, sem inferir dados da graduação.',
     criteria:[
-      criterion('uni-cm-instit','Instituição de origem',1.75,30,'A nota da instituição no ENAMED é multiplicada por 0,1, e tem teto declarado de 0,75. Marque uma única faixa ENAMED.',[
-        part('uni-cm-hosp','Hospital de ensino credenciado',.5),part('uni-cm-rm','Residência médica credenciada',.25),part('uni-cm-pg','Pós-graduação stricto sensu',.25),
-        part('uni-cm-en1','ENAMED conceito 1',.1),part('uni-cm-en2','ENAMED conceito 2',.2),part('uni-cm-en3','ENAMED conceito 3',.3),part('uni-cm-en4','ENAMED conceito 4',.4),part('uni-cm-en5','ENAMED conceito 5',.5)
+      criterion('uni-cm-instit','Instituição de origem',1,30,'Requisitos institucionais documentados. A nota ENAMED tem campo separado.',[
+        part('uni-cm-hosp','Hospital de ensino credenciado',.5),part('uni-cm-rm','Residência médica credenciada',.25),part('uni-cm-pg','Pós-graduação stricto sensu',.25)
       ]),
+      {...criterion('uni-cm-enamed','Conceito institucional no ENAMED',.75,30,'Edital indica o multiplicador ×0,1 e limite anunciado de 0,75. Um conceito de 1–5 fornece 0,1–0,5 ponto. Não preencher mais de uma faixa.',[
+        part('uni-cm-en1','ENAMED conceito 1',.1),part('uni-cm-en2','ENAMED conceito 2',.2),part('uni-cm-en3','ENAMED conceito 3',.3),part('uni-cm-en4','ENAMED conceito 4',.4),part('uni-cm-en5','ENAMED conceito 5',.5)
+      ]),exclusive:true},
       criterion('uni-cm-hist','Histórico e internato',1,31,'Coeficiente de rendimento e duração do internato são padronizados. Cada parcela tem teto 0,5; valores parciais devem ser conferidos pela banca.',[part('uni-cm-cr','Parcela plena de rendimento acadêmico',.5),part('uni-cm-internato','Parcela plena de duração do internato',.5)]),
       criterion('uni-cm-repr','Representação estudantil',.5,31,'Participação em representação acadêmica elegível.',[part('uni-cm-rep1','Representação documentada',.5)]),
       {...criterion('uni-cm-ic','Iniciação científica',.75,31,'Escolha apenas a melhor modalidade elegível.',[part('uni-cm-icb','Com bolsa',.75),part('uni-cm-icv','Sem bolsa',.5)]),exclusive:true},
@@ -425,7 +429,7 @@
       {...criterion('uni-cm-idioma','Língua estrangeira',1,32,'Conferir nível de proficiência.',[part('uni-cm-idioma-a','Avançada',1),part('uni-cm-idioma-i','Intermediária',.5),part('uni-cm-idioma-b','Básica',.25)]),exclusive:true}
     ],
     groups:[
-      {id:'formacao',title:'Formação e histórico',tone:'violet',criteria:['uni-cm-instit','uni-cm-hist']},
+      {id:'formacao',title:'Formação e histórico',tone:'violet',criteria:['uni-cm-instit','uni-cm-enamed','uni-cm-hist']},
       {id:'pesquisa',title:'Pesquisa e produção',tone:'amber',criteria:['uni-cm-ic','uni-cm-pub']},
       {id:'academicas',title:'Atividades acadêmicas',tone:'blue',criteria:['uni-cm-mon','uni-cm-extra','uni-cm-repr']},
       {id:'eventos',title:'Congressos e prêmios',tone:'teal',criteria:['uni-cm-cong','uni-cm-premio']},
