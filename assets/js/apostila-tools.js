@@ -53,7 +53,7 @@
   const uniqueLinks=[];
   const seenLinks=new Set();
   // As apostilas antigas podem usar links absolutos para a própria página.
-  const normalizedPath=path=>path.replace(/\\/index\\.html$/i,'/').replace(/\\/?$/,'/');
+  const normalizedPath=path=>path.replace(/\/index\.html$/i,'/').replace(/\/?$/,'/');
   originalLinks.forEach(sourceLink=>{
     const rawHref=sourceLink.getAttribute('href')||'';
     const label=sourceLink.textContent.trim();
