@@ -147,12 +147,19 @@
     }
   });
 
+  const captureSource = byId("ecg-capture-source");
+  window.LuriaEcgStopScanner = () => {
+    cameraController?.stopCamera();
+    if (cameraViewport) cameraViewport.hidden = true;
+  };
+
   // Botões de Inicialização da Câmera
   btnStartFast?.addEventListener("click", () => {
     stage1Section.hidden = false;
     stage2Section.hidden = true;
     stage3Section.hidden = true;
     cameraViewport.hidden = false;
+    if (captureSource) captureSource.textContent = "Origem: Scanner guiado (automático)";
     cameraController?.startCamera("fast");
   });
 
@@ -161,6 +168,7 @@
     stage2Section.hidden = true;
     stage3Section.hidden = true;
     cameraViewport.hidden = false;
+    if (captureSource) captureSource.textContent = "Origem: Scanner guiado (por derivação)";
     cameraController?.startCamera("ultrasensitive");
   });
 
@@ -235,6 +243,7 @@
             return;
           }
           if (missingAlert) missingAlert.hidden = true;
+          if (captureSource) captureSource.textContent = "Origem: " + (source === "normal_photo" ? "Foto normal (câmera nativa)" : "Imagem importada") + " · " + originalW + " × " + originalH + " px (original) · " + workW + " × " + workH + " px (análise).";
           const leads = cameraController.getCapturedLeads();
           currentLeadsData = leads;
           currentSessionPackage = cameraController.getSessionStructuredPackage();
