@@ -7,6 +7,7 @@ const { JSDOM } = require("jsdom");
 const root = path.join(__dirname, "..");
 const html = fs.readFileSync(path.join(root, "trabalho/ecg/index.html"), "utf8");
 const photoCode = fs.readFileSync(path.join(root, "assets/js/ecg-normal-photo.js"), "utf8");
+const perspectiveCode = fs.readFileSync(path.join(root, "assets/js/ecg-photo-perspective.js"), "utf8");
 
 function setup() {
   const dom = new JSDOM(html, { url: "https://www.resibulando.online/trabalho/ecg/", runScripts: "outside-only" });
@@ -26,6 +27,7 @@ function setup() {
     get() { return originalSrc("src") || ""; },
     set(value) { preview.setAttribute("src", value); queueMicrotask(() => preview.onload?.()); }
   });
+  window.eval(perspectiveCode);
   window.eval(photoCode);
   return { window, dom, document, fileInput, preview, get opened() { return opened; }, get revoked() { return revoked; } };
 }
@@ -47,8 +49,8 @@ test("photo remains local, user previews original and explicitly processes via t
   const file = new e.window.File([new Uint8Array(2000)], "ecg.jpg", { type: "image/jpeg" });
   Object.defineProperty(e.fileInput, "files", { value: [file], configurable: true });
   const calls = [];
-  e.window.LuriaEcgProcessPhoto = async (received, mode) => {
-    calls.push([received, mode]);
+  e.window.LuriaEcgProcessPhoto = async (received, mode, options) => {
+    calls.push([received, mode, options]);
     return { ok: true, capturedCount: 5 };
   };
   e.fileInput.dispatchEvent(new e.window.Event("change", { bubbles: true }));
@@ -64,6 +66,8 @@ test("photo remains local, user previews original and explicitly processes via t
   assert.equal(calls.length, 1);
   assert.equal(calls[0][0], file);
   assert.equal(calls[0][1], "normal_photo");
+  assert.equal(calls[0][2]?.corners?.length, 4);
+  assert.equal(calls[0][2]?.paperSelection, "manual_four_corners");
   assert.equal(page.hidden, true);
   assert.ok(e.revoked > 0, "object URL released after confirmation");
   e.dom.window.close();
@@ -101,4 +105,55 @@ test("source keeps the photo unfiltered and camera takes a real picture", () => 
   assert.match(main, /cameraController\.resetCaptureSession/);
   assert.doesNotMatch(photoCode, /fetch\(|supabaseClient|localStorage|sessionStorage|enhanceImage|filterImage/);
   assert.match(photoCode, /sourceFile, "normal_photo"/);
+  assert.match(photoCode, /validateCorners/);
+  assert.match(main, /manualPaperCornersApplied: manualSelection/);
+});
+
+
+test("four points can be dragged and can be adjusted by keyboard", async () => {
+  const e = setup();
+  const file = new e.window.File([new Uint8Array(2000)], "ecg.jpg", { type: "image/jpeg" });
+  Object.defineProperty(e.fileInput, "files", { value: [file], configurable: true });
+  e.fileInput.dispatchEvent(new e.window.Event("change", { bubbles: true }));
+  await new Promise(resolve => setImmediate(resolve));
+  const frame = e.document.getElementById("ecg-normal-photo-frame");
+  assert.equal(frame.hidden, false);
+  const corner = e.document.querySelector('[data-ecg-corner="0"]');
+  assert.equal(corner.style.left, "3%");
+  frame.getBoundingClientRect = () => ({ left: 10, top: 20, width: 300, height: 220 });
+  const down = new e.window.Event("pointerdown", { bubbles: true, cancelable: true });
+  Object.assign(down, { pointerId: 1, clientX: 40, clientY: 51 });
+  corner.dispatchEvent(down);
+  const move = new e.window.Event("pointermove", { bubbles: true });
+  Object.assign(move, { pointerId: 1, clientX: 58, clientY: 70 });
+  corner.dispatchEvent(move);
+  assert.equal(corner.style.left, "16%");
+  const key = new e.window.KeyboardEvent("keydown", { bubbles: true, key: "ArrowRight" });
+  corner.dispatchEvent(key);
+  assert.ok(parseFloat(corner.style.left) > 16);
+  assert.match(e.document.getElementById("ecg-normal-photo-outline").getAttribute("points"), /,/);
+  e.dom.window.close();
+});
+
+test("user can compare full photo without using selected paper corners", async () => {
+  const e = setup();
+  const file = new e.window.File([new Uint8Array(3000)], "ecg.jpg", { type: "image/jpeg" });
+  Object.defineProperty(e.fileInput, "files", { value: [file], configurable: true });
+  e.fileInput.dispatchEvent(new e.window.Event("change"));
+  await new Promise(resolve => setImmediate(resolve));
+  const radio = e.document.querySelector('input[name="ecg-photo-selection"][value="whole"]');
+  radio.checked = true;
+  radio.dispatchEvent(new e.window.Event("change"));
+  assert.equal(e.document.getElementById("ecg-normal-photo-frame").classList.contains("is-whole-photo"), true);
+  const captured = [];
+  e.window.LuriaEcgProcessPhoto = async (f, mode, opts) => {
+    captured.push(opts);
+    return { ok: true };
+  };
+  e.document.getElementById("ecg-normal-photo-process").click();
+  await new Promise(resolve => setImmediate(resolve));
+  assert.equal(captured.length, 1);
+  assert.equal(captured[0].corners, null);
+  assert.equal(captured[0].paperSelection, "full_photo");
+  e.dom.window.close();
 });
