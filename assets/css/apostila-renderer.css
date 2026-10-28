@@ -368,3 +368,22 @@
 .book-cai-na-prova .comentario-gabarito strong {
   color: var(--success);
 }
+
+
+/*
+ * Leitura editorial: alinhamento justificado em todos os textos corridos das
+ * apostilas, sem atingir o hall, o menu, os controles, os títulos ou as tabelas.
+ * Funciona com apostilas HTML legadas e com o renderizador content.json.
+ */
+body[data-page="aprender"] .book-main :is(.book-section,.mindmap-section) {
+  text-align: justify;
+}
+body[data-page="aprender"] .book-main :is(.book-section,.mindmap-section) :is(p,li,blockquote,figcaption,dd),
+body[data-page="aprender"] .book-main .book-hero > p,
+body[data-page="aprender"] .book-main .book-safety-note > span {
+  text-align: justify !important;
+  text-align-last: auto !important;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  overflow-wrap: break-word;
+}
