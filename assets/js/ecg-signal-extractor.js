@@ -96,6 +96,36 @@
       }
     }
 
+    // Monochrome photographs can make the paper grid achromatic. In that
+    // case a fixed contrast gate admits thousands of grey grid pixels and the
+    // tracker sees a different "curve" on almost every row. Detect that dense
+    // regime and retain only the darkest 12% of candidate ink. Sparse/faded
+    // ECGs keep the permissive threshold above.
+    let inkPixelCount = 0;
+    const strengthHistogram = new Uint32Array(64);
+    for (let i = 0; i < inkStrength.length; i++) {
+      const strength = inkStrength[i];
+      if (strength <= 0) continue;
+      inkPixelCount++;
+      strengthHistogram[Math.min(63, Math.floor(strength * 63))]++;
+    }
+    const rawInkDensity = inkPixelCount / Math.max(1, width * height);
+    let denseInkFloor = 0;
+    if (rawInkDensity > 0.08 && inkPixelCount > 0) {
+      const target = inkPixelCount * 0.88;
+      let cumulative = 0;
+      for (let bin = 0; bin < strengthHistogram.length; bin++) {
+        cumulative += strengthHistogram[bin];
+        if (cumulative >= target) {
+          denseInkFloor = Math.min(0.92, Math.max(0.78, bin / 63));
+          break;
+        }
+      }
+      for (let i = 0; i < inkStrength.length; i++) {
+        if (inkStrength[i] > 0 && inkStrength[i] < denseInkFloor) inkStrength[i] = 0;
+      }
+    }
+
     // Suppress long straight grayscale grid lines. Color is insufficient for
     // black-and-white scans, but grid lines occupy most of a complete row or
     // column while an ECG trace normally does not. Only reduce their weight;
@@ -177,7 +207,9 @@
       textMask,
       bgLuminance,
       bgLuminanceRows,
-      prelimBaselineY: prelimY
+      prelimBaselineY: prelimY,
+      rawInkDensity: Number(rawInkDensity.toFixed(4)),
+      denseInkFloor: Number(denseInkFloor.toFixed(3))
     };
   }
 
@@ -291,7 +323,11 @@
             // A vertical cluster can physically connect a QRS jump. Penalize
             // only the distance not covered by that ink segment.
             const connectedJump = Math.max(0, dy - c.span * 0.8);
-            const transition = connectedJump * 0.32 + Math.min(dy, height * 0.2) * 0.035;
+            // Dark grid intersections can be locally stronger than the ECG.
+            // Make an unsupported jump substantially more expensive, while a
+            // genuinely connected near-vertical QRS remains discounted by
+            // the cluster span above.
+            const transition = connectedJump * 0.75 + Math.min(dy, height * 0.2) * 0.05;
             const cost = p.cost + transition + baselineCost - darknessReward;
             if (cost < bestCost) { bestCost = cost; bestPrev = pi; }
           }
@@ -327,11 +363,16 @@
         if (c.span >= Math.max(5, height * 0.04)) {
           const reference = Number.isFinite(nextY) ? nextY : prevY;
           if (Number.isFinite(reference)) {
-            // Pick the connected end of a steep stroke; this preserves narrow
-            // QRS peaks without inventing an intermediate mathematical wave.
+            // Enter a steep stroke through the end that is actually connected
+            // to the neighbouring sample. Choosing the farthest end turns a
+            // single vertical grid line into a false full-height QRS spike.
             const topDistance = Math.abs(c.yStart - reference);
             const bottomDistance = Math.abs(c.yEnd - reference);
-            chosenY = topDistance > bottomDistance ? c.yStart + 0.5 : c.yEnd - 0.5;
+            if (reference >= c.yStart && reference <= c.yEnd) {
+              chosenY = reference;
+            } else {
+              chosenY = topDistance <= bottomDistance ? c.yStart + 0.5 : c.yEnd - 0.5;
+            }
           }
         }
         rawY[x] = chosenY;
@@ -756,8 +797,12 @@
       return failText;
     }
 
-    // Verificar sobreposição de duas derivações na mesma janela
-    if (tracked.hasMultipleCurves && !options.allowOverlappingPreview) {
+    // Verificar sobreposição de duas derivações na mesma janela. A opção de
+    // prévia serve apenas para casos limítrofes; uma região em que mais da
+    // metade das colunas contém curvas concorrentes é incompatível com uma
+    // extração fiel e nunca deve produzir uma linha vermelha convincente.
+    const catastrophicOverlap = tracked.overlapRatio > 0.55;
+    if (tracked.hasMultipleCurves && (!options.allowOverlappingPreview || catastrophicOverlap)) {
       const failOverlap = {
         isValid: false,
         hasMultipleCurves: true,
@@ -776,7 +821,9 @@
         continuity: Number(continuityRatio.toFixed(3)),
         limitations: ["Região contém duas ou mais curvas simultâneas sobrepostas."],
         provenance,
-        message: "Foram detectadas múltiplas curvas sobrepostas nesta região. Recapture enquadrando uma derivação por vez."
+        message: catastrophicOverlap
+          ? "A grade, sombras ou outros traçados dominaram esta região. Não foi desenhada uma curva para evitar uma extração falsa. Recapture com a folha plana, bem iluminada e preenchendo a moldura."
+          : "Foram detectadas múltiplas curvas sobrepostas nesta região. Recapture enquadrando uma derivação por vez."
       };
       failOverlap.audit = auditExtractedLead(failOverlap);
       return failOverlap;

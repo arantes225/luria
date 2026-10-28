@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261028-aprender-cleanup-v8";
+const CACHE_VERSION = "luria-pwa-20261028-ecg-fidelity-v9";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -57,7 +57,7 @@ const APP_SHELL = [
   "/assets/img/logos/pwa-icon-180.png?v=pwa5",
   "/assets/img/logos/logo-principal.png?v=luria7",
   "/assets/vendor/supabase-2.110.6.js",
-  "/assets/js/pwa.js?v=20261028-aprender-cleanup-v8",
+  "/assets/js/pwa.js?v=20261028-ecg-fidelity-v9",
   "/assets/css/style.css?v=16.14-font-unified",
   "/assets/css/luria-brand-v5.css?v=20261005-global-v90",
   "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",

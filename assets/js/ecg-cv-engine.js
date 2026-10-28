@@ -1403,8 +1403,13 @@
         if (avgGap < (yMax - yMin) * 0.075 || avgGap > (yMax - yMin) * 0.24) continue;
         const regularity = Math.abs(gapA - gapB) / Math.max(0.001, avgGap);
         const continuity = group.reduce((sum, band) => sum + Number(band.continuityScore || 0), 0) / 3;
-        // Regularidade domina; continuidade desempata texto/cabeçalho versus traçado.
-        const score = regularity - continuity * 0.18;
+        // In 3x4 + rhythm printouts the three canonical rows precede the
+        // full-width rhythm strips. Several rhythm strips can be even more
+        // regular/continuous than the canonical rows, so use a modest early-
+        // page prior after the header band. Without it, lower rhythm strips
+        // were incorrectly split into four and named DI/aVR/V1/V4.
+        const earlyPagePrior = group[0].yCenterRatio * 0.12;
+        const score = regularity - continuity * 0.18 + earlyPagePrior;
         if (!best || score < best.score) best = { score, group };
       }
       if (best) mainBands = best.group;
