@@ -4,7 +4,7 @@ const assert = require("node:assert/strict");
 const vm = require("node:vm");
 const fs = require("node:fs");
 const path = require("node:path");
-const { rewritePageHtml } = require("../scripts/pages-base-links.cjs");
+const { rewritePageHtml, rewritePageCss, rewriteWebManifest } = require("../scripts/pages-base-links.cjs");
 
 test("root landing has a relative base and project-aware login and assets", () => {
   const source = '<!doctype html><head><script>const code = "href=\\"/login/\\"";</script><link href="/assets/css/app.css"><script src="/assets/js/app.js"></script></head><body><a href="/login/">Entrar</a></body>';
@@ -56,4 +56,22 @@ test("route helper keeps custom domains and prefixes GitHub project site exactly
   assert.equal(subpath("assets/js/app.js"), "assets/js/app.js");
   const canonical = capture("https://www.resibulando.online/");
   assert.equal(canonical("/login/"), "/login/");
+});
+
+
+test("CSS image URLs stay inside the project subpath", () => {
+  const result = rewritePageCss('a{background:url("/assets/img/logos/a.png")}', "assets/css/style.css");
+  assert.match(result, /url\("\.\.\/\.\.\/assets\/img\/logos\/a\.png"\)/);
+  assert.equal(rewritePageCss('a{background:url(https://cdn.example/a.png)}', "assets/css/a.css"),
+    'a{background:url(https://cdn.example/a.png)}');
+});
+
+test("PWA manifest uses paths relative to its location", () => {
+  const input = JSON.stringify({id:"/",scope:"/",start_url:"/dashboard/",icons:[{src:"/assets/i.png"}],shortcuts:[{url:"/cronograma/"}]});
+  const output = JSON.parse(rewriteWebManifest(input));
+  assert.equal(output.scope, "./");
+  assert.equal(output.id, "./");
+  assert.equal(output.start_url, "./dashboard/");
+  assert.equal(output.icons[0].src, "./assets/i.png");
+  assert.equal(output.shortcuts[0].url, "./cronograma/");
 });
