@@ -61,6 +61,7 @@
     let verifiedFrameCount = 0;
     let verifiedSince = 0;
     let hudHasVerifiedPaper = false;
+    let lastFrameAnalyzedAt = -Infinity;
 
     // Estado de calibração global da sessão (medida da grade, confirmada pelo usuário ou presumida)
     let sessionCalibration = {
@@ -197,6 +198,7 @@
       autoCaptureLock = false;
       verifiedFrameCount = 0;
       verifiedSince = 0;
+      lastFrameAnalyzedAt = -Infinity;
       setHudPaperVerified(false);
       currentStage = 1;
       sessionCalibration = {
@@ -220,6 +222,7 @@
       pendingUncertainCapture = null;
       verifiedFrameCount = 0;
       verifiedSince = 0;
+      lastFrameAnalyzedAt = -Infinity;
       hudHasVerifiedPaper = true; // force the first HUD transition
       setHudPaperVerified(false);
       if (typeof onStageChange === "function") onStageChange(1);
@@ -274,9 +277,15 @@
       }
     }
 
-    function scheduleLoop() {
+    function scheduleLoop(timestamp) {
       if (!isCapturingActive) return;
-      processCurrentFrame();
+      // Heavy frame analysis every animation frame caused lag/stale HUD on
+      // mobile PWAs. ~5 FPS is sufficient for paper verification and stability.
+      const now = Number.isFinite(timestamp) ? timestamp : Date.now();
+      if (now - lastFrameAnalyzedAt >= 180) {
+        lastFrameAnalyzedAt = now;
+        processCurrentFrame();
+      }
       animationFrameId = requestAnimationFrame(scheduleLoop);
     }
 
