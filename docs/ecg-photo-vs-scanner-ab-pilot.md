@@ -13,6 +13,8 @@ Verificar se fotografar o ECG com o aplicativo nativo de camera do aparelho (sem
 
 ### Integridade da imagem e privacidade
 
+- **Novo controle manual dos 4 cantos:** apos fotografar, o usuario arrasta TL/TR/BR/BL sobre as quinas do papel; a regiao externa e excluida e a perspectiva e retificada por homografia projetiva real, sem depender de uma moldura fixa. Uma opcao separada permite processar a foto inteira para controle de comparacao. A delimitacao valida convexidade e tamanho; nao e autorizacao clinica para a extracao.
+- **Tres condicoes A/B:** foto inteira sem delimitar; foto com papel marcado manualmente; scanner guiado. Anotar separadamente para identificar melhoria da camera ou da geometria.
 - O arquivo original e mantido em memoria e visualizado via URL de objeto local. O fluxo desta etapa nao faz upload automatico do arquivo.
 - Para limitar consumo de memoria, a copia utilizada pelo extrator atual tem maior dimensao de ate 2600 px. A foto original **nao e substituida**, mas a extracao nao utiliza sua resolucao integral se for maior. Essa escolha sera um parametro de benchmark, nao uma promessa de precisao.
 - Sem pre-processamento de contraste intenso, B&W, nitidez artificial, preenchimento de trechos, remocao de grade ou correcoes de perspectiva adicionais nesta nova etapa. O processamento **existente** do digitalizador pode continuar retificando/detectando a folha.
