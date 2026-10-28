@@ -626,3 +626,181 @@ body.ecg-normal-photo-open { overflow: hidden !important; }
 .ecg-normal-photo-frame.is-whole-photo #ecg-normal-photo-polygon,
 .ecg-normal-photo-frame.is-whole-photo .ecg-photo-corner { display: none; }
 .ecg-normal-photo-frame.is-invalid #ecg-normal-photo-outline { stroke: #f87171; }
+
+
+/* ECG CAPTURE — fixed independent PWA surface, never educational content.
+   Same layout in browser, standalone PWA, portrait and landscape. */
+body[data-page="trabalho_ecg"].ecg-capture-active {
+  overflow: hidden !important;
+  overscroll-behavior: none !important;
+}
+body[data-page="trabalho_ecg"].ecg-capture-active > .app-shell,
+body[data-page="trabalho_ecg"].ecg-capture-active > #ui-mobile-navigation,
+body[data-page="trabalho_ecg"].ecg-capture-active > #ui-mobile-tools,
+body[data-page="trabalho_ecg"].ecg-capture-active > #luria-pwa-update-action {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+body[data-page="trabalho_ecg"].ecg-capture-active > #ui-mobile-navigation,
+body[data-page="trabalho_ecg"].ecg-capture-active > #ui-mobile-tools {
+  display: none !important;
+}
+
+/* All hidden ECG steps must stay hidden despite author-defined grid/flex rules. */
+body[data-page="trabalho_ecg"] :is(.ecg-panel,.ecg-card,.ecg-viewport-container,.ecg-guided-camera-page,.ecg-normal-photo-page)[hidden] {
+  display: none !important;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page[hidden] {
+  display: none !important;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page,
+body[data-page="trabalho_ecg"] #ecg-normal-photo-page {
+  z-index: 2147483600 !important;
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  isolation: isolate;
+  background: #061223 !important;
+  color: #f8fafc !important;
+  overflow: hidden !important;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: max(8px,env(safe-area-inset-top)) max(10px,env(safe-area-inset-right))
+    max(8px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-header {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 40px;
+  line-height: 1.25;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-header strong {
+  color: #fff !important;
+  font-size: clamp(13px, 2.3vw, 17px);
+}
+body[data-page="trabalho_ecg"] :is(.ecg-guided-camera-header,.ecg-normal-photo-head) .ecg-btn.secondary {
+  color: #fff !important;
+  background: #173354 !important;
+  border: 1px solid #6898c9 !important;
+  min-height: 40px;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-mount {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  overflow: hidden;
+  border-radius: 9px;
+  background: #020617;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-mount #ecg-camera-viewport {
+  flex: 1 1 auto;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  min-width: 0;
+  min-height: 0;
+  border: 0 !important;
+  border-radius: 9px;
+  aspect-ratio: auto !important;
+  overflow: hidden;
+  margin: 0 !important;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-mount #ecg-camera-viewport[hidden] {
+  display: none !important;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-mount .ecg-camera-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  background: #020617;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-mount .ecg-hud-overlay {
+  padding: clamp(6px,2vw,14px);
+  gap: 6px;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-mount .ecg-hud-topbar {
+  padding: 6px 8px;
+  font-size: 11px;
+  gap: 8px;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-mount .ecg-hud-bottombar {
+  max-height: min(45%, 170px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page[data-capture-mode="fast"] .ecg-hud-reticle-wrap {
+  /* A static ROI falsely implied a page boundary, especially on mobile. */
+  display: none !important;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page[data-capture-mode="ultrasensitive"] .ecg-hud-reticle-wrap {
+  width: 92%;
+  height: 76%;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-footer {
+  flex: 0 0 auto;
+  text-align: center;
+  min-height: 18px;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-footer p {
+  margin: 0;
+  color: #bfdbfe;
+  font: 500 12px/1.35 system-ui,sans-serif;
+}
+body[data-page="trabalho_ecg"] #ecg-normal-photo-page {
+  padding: max(8px,env(safe-area-inset-top)) max(10px,env(safe-area-inset-right))
+    max(8px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));
+}
+body[data-page="trabalho_ecg"] #ecg-normal-photo-page .ecg-normal-photo-main {
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+body[data-page="trabalho_ecg"] #ecg-normal-photo-page .ecg-normal-photo-main img {
+  object-fit: contain;
+}
+body[data-page="trabalho_ecg"] #ecg-normal-photo-page .ecg-normal-photo-frame img {
+  object-fit: fill; /* identical rectangle to four-corner coordinates */
+}
+@media (orientation: portrait) and (max-width: 650px) {
+  body[data-page="trabalho_ecg"] #ecg-guided-camera-page {
+    gap: 6px;
+  }
+  body[data-page="trabalho_ecg"] .ecg-guided-camera-mount .ecg-hud-bottombar {
+    max-height: 30%;
+  }
+}
+@media (orientation: landscape) and (max-height: 530px) {
+  body[data-page="trabalho_ecg"] #ecg-guided-camera-page {
+    padding: max(4px,env(safe-area-inset-top)) 8px max(4px,env(safe-area-inset-bottom));
+    gap: 3px;
+  }
+  body[data-page="trabalho_ecg"] .ecg-guided-camera-header { min-height: 30px; }
+  body[data-page="trabalho_ecg"] .ecg-guided-camera-header .ecg-btn { min-height: 30px; padding: 4px 10px; }
+  body[data-page="trabalho_ecg"] .ecg-guided-camera-footer { min-height: 14px; }
+  body[data-page="trabalho_ecg"] .ecg-guided-camera-footer p { font-size: 11px; }
+  body[data-page="trabalho_ecg"] .ecg-guided-camera-mount .ecg-hud-bottombar { max-height: 38%; }
+  body[data-page="trabalho_ecg"] #ecg-normal-photo-page .ecg-normal-photo-main {
+    gap: 6px;
+    padding: 2px 0;
+  }
+  body[data-page="trabalho_ecg"] #ecg-normal-photo-page .ecg-normal-photo-actions {
+    padding-top: 4px;
+  }
+  body[data-page="trabalho_ecg"] #ecg-normal-photo-page .ecg-normal-photo-actions .ecg-btn {
+    min-height: 38px;
+  }
+}
