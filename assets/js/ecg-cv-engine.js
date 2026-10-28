@@ -782,7 +782,7 @@
         pixelsPerMmY = Number(userCalibration.pixelsPerMm);
       }
       calibrationSource = "user_confirmed";
-    } else if (hasMeasuredGrid && calPulse.detected) {
+    } else if (hasMeasuredGrid && calPulse.detected && calPulse.confidence >= 0.75) {
       // Medição direta de grade + pulso de calibração 1 mV
       const pulseHeightMm = calPulse.heightPx / pixelsPerMmY;
       const pulseWidthMm = calPulse.widthPx / pixelsPerMmX;
@@ -897,7 +897,7 @@
     const paperH = yMaxPaper - yMinPaper;
     const scanMinX = xMinPaper + Math.max(4, Math.floor(paperW * 0.02));
     const scanMaxX = Math.min(xMaxPaper, scanMinX + Math.floor(paperW * 0.12));
-    let bestPulse = { detected: false, heightPx: 0, widthPx: 0 };
+    let bestPulse = { detected: false, heightPx: 0, widthPx: 0, confidence: 0 };
 
     if (scanMaxX <= scanMinX + 10 || paperH < 50) return bestPulse;
 
@@ -928,16 +928,37 @@
         const baseLevel = sorted[Math.floor(sorted.length * 0.85)];
         const hPx = baseLevel - topPlateau;
         if (hPx >= 15 && hPx <= (yMax - yMin) * 0.85) {
-          let plateauCols = 0;
-          let baselineCols = 0;
-          for (const v of valid) {
-            if (Math.abs(v - topPlateau) <= 2.5) plateauCols++;
-            if (Math.abs(v - baseLevel) <= 2.5) baselineCols++;
-          }
-          // Exige tanto platô quanto linha de base coexistindo antes/depois do pulso
-          if (plateauCols >= 6 && plateauCols <= 40 && baselineCols >= 8) {
-            bestPulse = { detected: true, heightPx: hPx, widthPx: plateauCols };
-            break;
+          // Um QRS pode ter muitos pixels no alto e na base, mas não forma um
+          // platô contínuo, cercado pela linha de base nos dois lados.
+          const state = trace.map(v => {
+            if (v === null) return 0;
+            if (Math.abs(v - topPlateau) <= 2.5) return 2;
+            if (Math.abs(v - baseLevel) <= 2.5) return 1;
+            return 0;
+          });
+          let runStart = -1;
+          for (let i = 0; i <= state.length; i++) {
+            if (state[i] === 2 && runStart < 0) runStart = i;
+            if ((state[i] !== 2 || i === state.length) && runStart >= 0) {
+              const runEnd = i;
+              const runWidth = runEnd - runStart;
+              const before = state.slice(Math.max(0, runStart - 18), runStart).filter(v => v === 1).length;
+              const after = state.slice(runEnd, Math.min(state.length, runEnd + 18)).filter(v => v === 1).length;
+              if (runWidth >= 6 && runWidth <= 40 && before >= 4 && after >= 4) {
+                const bracketScore = Math.min(1, Math.min(before, after) / 8);
+                const plateauScore = Math.min(1, runWidth / 10);
+                const confidence = Math.min(0.99, 0.55 + bracketScore * 0.25 + plateauScore * 0.2);
+                if (confidence > bestPulse.confidence) {
+                  bestPulse = {
+                    detected: confidence >= 0.75,
+                    heightPx: hPx,
+                    widthPx: runWidth,
+                    confidence: Number(confidence.toFixed(3))
+                  };
+                }
+              }
+              runStart = -1;
+            }
           }
         }
       }
@@ -948,7 +969,22 @@
   /**
    * 5. Reconhece o rótulo de uma região de derivação por correspondência de template multi-escala (OCR especializado de ECG)
    */
-  function recognizeLeadLabelInRegion(imageData, roiBox) {
+  function recognizeLeadLabelInRegion(imageData, roiBox, options = {}) {
+    const canonicalExpected = LEAD_SYNONYMS[options.expectedLead] || options.expectedLead;
+    if (canonicalExpected && !options.candidateLabels) {
+      const expectedResult = recognizeLeadLabelInRegion(imageData, roiBox, {
+        candidateLabels: [canonicalExpected],
+        scales: [1, 2, 3]
+      });
+      if (expectedResult.recognized) return expectedResult;
+      // Sonda curta para contradições explícitas. Ela mantém o fail-closed
+      // (ex.: V3 impresso na célula de DI) sem repetir o OCR completo e lento.
+      return recognizeLeadLabelInRegion(imageData, roiBox, {
+        candidateLabels: ["DI", "DII", "DIII", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"]
+          .filter(label => label !== canonicalExpected),
+        scales: [2]
+      });
+    }
     const { width, height, data } = imageData;
     const x0 = Math.max(0, Math.floor(roiBox.xMin * width));
     const y0 = Math.max(0, Math.floor(roiBox.yMin * height));
@@ -956,7 +992,7 @@
     const y1 = Math.min(height, Math.ceil(roiBox.yMax * height));
 
     // O rótulo de uma derivação normalmente fica no quadrante superior esquerdo ou inferior esquerdo da célula (primeiros 35% horizontais)
-    const searchW = Math.max(16, Math.floor((x1 - x0) * 0.42));
+    const searchW = Math.max(16, Math.floor((x1 - x0) * 0.38));
     const searchH = Math.max(12, Math.floor((y1 - y0) * 0.85));
 
     // Encontrar componentes conectados de tinta escura pequenos (candidatos a texto do rótulo)
@@ -965,8 +1001,11 @@
     let bestScore = 0;
     let secondBestScore = 0;
 
-    const scales = [1, 2, 3];
-    const candidateLabels = ["DI", "DII", "DIII", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"];
+    const scales = options.scales || [1, 2, 3];
+    // Na folha completa, testar apenas o rótulo esperado reduz a busca em 12×
+    // e impede que um trecho da grade seja promovido a uma derivação diferente.
+    const candidateLabels = options.candidateLabels ||
+      ["DI", "DII", "DIII", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"];
 
     // Primeiro verifica se há uma caixa de caracteres nítida na zona de rótulo
     for (const labelName of candidateLabels) {
@@ -978,8 +1017,9 @@
         const th = tpl.height * scale;
         if (tw >= searchW || th >= searchH) continue;
 
-        const stepY = Math.max(1, scale);
-        const stepX = Math.max(1, scale);
+        const stepMultiplier = options.scanStepMultiplier || 1;
+        const stepY = Math.max(1, scale * stepMultiplier);
+        const stepX = Math.max(1, scale * stepMultiplier);
 
         for (let sy = y0; sy <= y0 + searchH - th; sy += stepY) {
           for (let sx = x0; sx <= x0 + searchW - tw; sx += stepX) {
@@ -1076,58 +1116,67 @@
     const spanW = Math.max(1, xMax - xMin);
     const spanH = Math.max(1, yMax - yMin);
 
-    // Perfil horizontal de pixels escuros de traçado (excluindo grade rosa/vermelha)
-    const rowDarkRatio = new Float32Array(height);
+    // Mede continuidade horizontal em blocos. Uma linha de base de ECG ocupa
+    // grande parte da largura; texto do cabeçalho e QRS isolados não. A grade
+    // colorida é excluída pelo limite de cromaticidade.
+    const binCount = Math.max(48, Math.min(112, Math.round(spanW / 16)));
+    const rowOccupancy = new Float32Array(height);
     for (let y = yMin; y < yMax; y++) {
-      let dark = 0;
-      for (let x = xMin; x < xMax; x++) {
-        const idx = (y * width + x) * 4;
-        const r = data[idx], g = data[idx + 1], b = data[idx + 2];
-        const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
-        if (luma < 130 && Math.abs(r - b) < 55) dark++;
+      let occupied = 0;
+      for (let bin = 0; bin < binCount; bin++) {
+        const bx0 = Math.floor(xMin + (bin / binCount) * spanW);
+        const bx1 = Math.max(bx0 + 1, Math.floor(xMin + ((bin + 1) / binCount) * spanW));
+        let found = false;
+        for (let yy = Math.max(yMin, y - 1); yy <= Math.min(yMax - 1, y + 1) && !found; yy++) {
+          for (let x = bx0; x < bx1; x += 2) {
+            const idx = (yy * width + x) * 4;
+            const r = data[idx], g = data[idx + 1], b = data[idx + 2];
+            const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+            const chroma = Math.max(r, g, b) - Math.min(r, g, b);
+            if (luma < 142 && chroma < 48) { found = true; break; }
+          }
+        }
+        if (found) occupied++;
       }
-      rowDarkRatio[y] = dark / spanW;
+      rowOccupancy[y] = occupied / binCount;
     }
 
-    // Identificar bandas horizontais que possuem linha de base de traçado (densidade moderada: nem 0%, nem bloco sólido de texto > 65%)
-    const activeRows = [];
-    for (let y = yMin; y < yMax; y++) {
-      const r = rowDarkRatio[y];
-      activeRows.push(r >= 0.015 && r <= 0.55);
-    }
-
-    // Agrupar bandas ativas próximas em linhas de derivações (faixas horizontais)
-    const bands = [];
-    let bandStart = -1;
-    for (let i = 0; i <= activeRows.length; i++) {
-      if (activeRows[i] && bandStart < 0) {
-        bandStart = yMin + i;
-      } else if ((!activeRows[i] || i === activeRows.length) && bandStart >= 0) {
-        const bandEnd = yMin + i;
-        bands.push({ yStart: bandStart, yEnd: bandEnd, yCenter: (bandStart + bandEnd) / 2 });
-        bandStart = -1;
+    const candidates = [];
+    const headerCutoff = yMin + spanH * 0.055;
+    for (let y = Math.ceil(headerCutoff) + 2; y < yMax - 2; y++) {
+      const score = (rowOccupancy[y - 1] + rowOccupancy[y] + rowOccupancy[y + 1]) / 3;
+      if (score >= 0.16 && score >= rowOccupancy[y - 2] && score >= rowOccupancy[y + 2]) {
+        candidates.push({ yCenter: y, score });
       }
     }
-
-    // Mesclar sub-bandas pertencentes ao mesmo complexo QRS (distância vertical < 6.5% da altura útil)
-    const minBandGap = Math.max(8, spanH * 0.065);
-    const mergedBands = [];
-    for (const b of bands) {
-      if (mergedBands.length && (b.yCenter - mergedBands[mergedBands.length - 1].yCenter) < minBandGap) {
-        const prev = mergedBands[mergedBands.length - 1];
-        prev.yEnd = b.yEnd;
-        prev.yCenter = (prev.yStart + prev.yEnd) / 2;
-      } else {
-        mergedBands.push({ ...b });
+    candidates.sort((a, b) => b.score - a.score);
+    const minBandGap = Math.max(10, spanH * 0.085);
+    const selected = [];
+    for (const candidate of candidates) {
+      if (selected.every(item => Math.abs(item.yCenter - candidate.yCenter) >= minBandGap)) {
+        selected.push(candidate);
       }
+      if (selected.length >= 12) break;
+    }
+    selected.sort((a, b) => a.yCenter - b.yCenter);
+
+    // Fallback proporcional: ainda permite revisão manual sem inventar nomes.
+    if (selected.length < 3) {
+      for (let i = 0; i < 3; i++) {
+        selected.push({ yCenter: yMin + spanH * (0.24 + i * 0.24), score: 0 });
+      }
+      selected.sort((a, b) => a.yCenter - b.yCenter);
     }
 
     return {
-      rowCount: mergedBands.length,
-      bands: mergedBands.map((b, idx) => {
-        const halfSpan = Math.max(Math.round(spanH / Math.max(3, mergedBands.length * 2.1)), Math.round((b.yEnd - b.yStart) * 1.4));
+      rowCount: selected.length,
+      bands: selected.map((b, idx) => {
+        const prevGap = idx > 0 ? b.yCenter - selected[idx - 1].yCenter : spanH / Math.max(3, selected.length);
+        const nextGap = idx < selected.length - 1 ? selected[idx + 1].yCenter - b.yCenter : prevGap;
+        const halfSpan = Math.max(12, Math.min(prevGap, nextGap) * 0.43);
         return {
           index: idx,
+          continuityScore: Number((b.score || 0).toFixed(3)),
           yCenterRatio: Number((b.yCenter / height).toFixed(4)),
           yMin: Number((Math.max(yMin, b.yCenter - halfSpan) / height).toFixed(4)),
           yMax: Number((Math.min(yMax, b.yCenter + halfSpan) / height).toFixed(4))
@@ -1324,11 +1373,14 @@
     const yMin = boundaries?.yMin ?? 0.08;
     const yMax = boundaries?.yMax ?? 0.92;
 
-    // Determinar qual estrutura geométrica melhor se adapta às bandas encontradas
+    // Layouts paisagem com 3–8 faixas são quase sempre 3×4 com zero ou mais
+    // tiras de ritmo. O código anterior convertia qualquer folha de 5–7 faixas
+    // em 6×2, inclusive fotos reais 3×4 + três ritmos.
+    const paperAspect = ((xMax - xMin) * width) / Math.max(1, (yMax - yMin) * height);
     let candidateTemplate = LAYOUT_TEMPLATES["3x4_standard"];
-    if (topology.rowCount === 4) {
+    if (paperAspect >= 1.18 && topology.rowCount >= 4 && topology.rowCount <= 8) {
       candidateTemplate = LAYOUT_TEMPLATES["3x4_plus_rhythm"];
-    } else if (topology.rowCount >= 5 && topology.rowCount <= 7) {
+    } else if (paperAspect < 1.18 && topology.rowCount >= 5 && topology.rowCount <= 7) {
       candidateTemplate = LAYOUT_TEMPLATES["6x2_standard"];
     } else if (topology.rowCount >= 10 && topology.rowCount <= 13) {
       candidateTemplate = LAYOUT_TEMPLATES["12x1_stacked"];
@@ -1340,10 +1392,28 @@
     const hasRhythmRow = candidateTemplate.rhythmRows.length > 0;
     const totalRows = numMainRows + (hasRhythmRow ? 1 : 0);
 
+    let mainBands = topology.bands;
+    if (candidateTemplate.name.startsWith("3x4") && topology.bands.length > 3) {
+      let best = null;
+      for (let start = 0; start <= topology.bands.length - 3; start++) {
+        const group = topology.bands.slice(start, start + 3);
+        const gapA = group[1].yCenterRatio - group[0].yCenterRatio;
+        const gapB = group[2].yCenterRatio - group[1].yCenterRatio;
+        const avgGap = (gapA + gapB) / 2;
+        if (avgGap < (yMax - yMin) * 0.075 || avgGap > (yMax - yMin) * 0.24) continue;
+        const regularity = Math.abs(gapA - gapB) / Math.max(0.001, avgGap);
+        const continuity = group.reduce((sum, band) => sum + Number(band.continuityScore || 0), 0) / 3;
+        // Regularidade domina; continuidade desempata texto/cabeçalho versus traçado.
+        const score = regularity - continuity * 0.18;
+        if (!best || score < best.score) best = { score, group };
+      }
+      if (best) mainBands = best.group;
+    }
+
     const cellBoxes = [];
     for (let r = 0; r < numMainRows; r++) {
       // Se o número de bandas detectadas bate com totalRows, usa a coordenada Y real da banda!
-      const band = (topology.bands.length >= numMainRows && topology.bands[r]) ? topology.bands[r] : null;
+      const band = (mainBands.length >= numMainRows && mainBands[r]) ? mainBands[r] : null;
       const rowYMin = band ? band.yMin : (yMin + (r / totalRows) * (yMax - yMin));
       const rowYMax = band ? band.yMax : (yMin + ((r + 0.92) / totalRows) * (yMax - yMin));
 
@@ -1387,14 +1457,15 @@
       const cropData = cropSubImageData(imageData, rx0, ry0, rw, rh);
 
       // Reconhecimento de rótulo na célula
-      const ocrRes = recognizeLeadLabelInRegion(imageData, cell);
+      const ocrRes = recognizeLeadLabelInRegion(imageData, cell, { expectedLead: cell.expectedLead });
 
       // Verificação de sinal real na célula
       let sigRes = { isValid: false, hasMultipleCurves: false };
       if (extractor && typeof extractor.extractRealSignalFromImageData === "function") {
         sigRes = extractor.extractRealSignalFromImageData(cropData, {
           calibration,
-          leadLabel: ocrRes.recognized ? ocrRes.lead : cell.expectedLead
+          leadLabel: ocrRes.recognized ? ocrRes.lead : cell.expectedLead,
+          allowOverlappingPreview: true
         });
       } else {
         // Fallback geométrico rigoroso caso o extrator não esteja carregado
@@ -1497,38 +1568,25 @@
 
     // Tiras de ritmo prolongadas (ex.: 4ª linha no 3x4+1)
     const rhythmStrips = [];
-    if (hasRhythmRow || topology.rowCount === 4) {
-      const rBand = topology.bands[3] || { yMin: 0.79, yMax: 0.94 };
-      const rBox = { xMin, xMax, yMin: rBand.yMin, yMax: rBand.yMax };
-      const rOcr = recognizeLeadLabelInRegion(imageData, rBox);
-      rhythmStrips.push({
-        name: `${rOcr.recognized ? rOcr.lead : "DII"}_long`,
-        lead: rOcr.recognized ? rOcr.lead : "DII",
-        evidence: rOcr.recognized ? "ocr_verified" : "positional_hypothesis",
-        xMin: rBox.xMin,
-        xMax: rBox.xMax,
-        yMin: rBox.yMin,
-        yMax: rBox.yMax
+    if (hasRhythmRow || topology.rowCount >= 4) {
+      const lastMainY = mainBands[numMainRows - 1]?.yCenterRatio || 0;
+      const rhythmBands = topology.bands.filter(band => band.yCenterRatio > lastMainY + 0.04);
+      (rhythmBands.length ? rhythmBands : [{ yMin: 0.79, yMax: 0.94 }]).forEach((rBand, index) => {
+        const rBox = { xMin, xMax, yMin: rBand.yMin, yMax: rBand.yMax };
+        const rOcr = recognizeLeadLabelInRegion(imageData, rBox);
+        rhythmStrips.push({
+          name: `${rOcr.recognized ? rOcr.lead : `rhythm_${index + 1}`}_long`,
+          lead: rOcr.recognized ? rOcr.lead : null,
+          evidence: rOcr.recognized ? "ocr_verified" : "unassigned_rhythm_candidate",
+          xMin: rBox.xMin, xMax: rBox.xMax, yMin: rBox.yMin, yMax: rBox.yMax
+        });
       });
     }
 
     // Critérios de recusa segura (Fail-Closed):
     // 1. Se houver rótulos duplicados na mesma folha -> recusar atribuição automática!
-    if (duplicateLeads.length > 0) {
-      return {
-        isValidECG: false,
-        confidence: 0.15,
-        detectedLayout: null,
-        candidateRegions,
-        validWaveformCells,
-        layoutConfidence: "rejected_duplicate_labels",
-        recognizedLabels,
-        leadIdentities,
-        cellIdentities,
-        anomalies,
-        message: `Rótulos de derivações duplicados ou ambíguos detectados (${duplicateLeads.join(", ")}). Atribuição automática recusada.`
-      };
-    }
+    // Duplicidade de OCR bloqueia os nomes, não os pixels. As regiões continuam
+    // disponíveis como candidatas para conferência humana.
 
     // 2. Se menos de 3 células tiverem morfologia real de ECG (e não for captura single-lead explícita)
     if (validWaveformCells < 3) {
@@ -1565,7 +1623,7 @@
         leadIdentities,
         cellIdentities,
         anomalies,
-        message: "Derivações fora da posição padrão e com rótulos ausentes/ambíguos. Atribuição automática recusada por segurança."
+        message: "Há um rótulo impresso fora da posição esperada. Os pixels foram preservados apenas para conferência; nenhuma derivação foi nomeada automaticamente."
       };
     }
 
@@ -1580,7 +1638,7 @@
       ocrConfirmedCount,
       validWaveformCells,
       candidateRegions,
-      leads: dynamicLeadsMap,
+      leads: (duplicateLeads.length > 0 || labelMismatchCount > 0) ? candidateRegions : dynamicLeadsMap,
       rhythmStrips
     };
 

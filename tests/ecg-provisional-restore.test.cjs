@@ -102,11 +102,14 @@ test("manual four-point paper selection permits preliminary review without prete
   assert.equal(result.ok,true);
   assert.equal(result.provisionalCount,3);
   assert.equal(result.totalCaptured,0);
+  assert.equal(controller.confirmCandidateLead("DI").confirmed,true);
+  assert.equal(controller.getCapturedLeads().find(item=>item.lead==="DI").leadIdentity.status,"manual_confirmed");
   assert.equal(controller.confirmExtractionAndEnableAI().allowed,false);
 });
-test("UI never prints DI/aVR title for positional-only crops",()=>{
+test("UI marks positional names as hypotheses and requires an explicit per-lead confirmation",()=>{
   const ui=fs.readFileSync(path.join(__dirname,"../assets/js/ecg-smart-ui.js"),"utf8");
-  assert.match(ui,/Traçado candidato · região/);
-  assert.match(ui,/Derivação não identificada/);
+  assert.match(ui,/hipótese pela posição/);
+  assert.match(ui,/Confirmar como/);
+  assert.match(ui,/rótulo não foi confirmado automaticamente/);
   assert.match(ui,/if \(!leadInfo\.captured\) return/);
 });

@@ -518,7 +518,7 @@
       const title = document.createElement("strong");
       title.className = "ecg-lead-title";
       title.textContent = provisional
-        ? "Traçado candidato · região " + ((leadInfo.candidateRegion?.row ?? 0) + 1) +
+        ? `${leadInfo.lead} — hipótese pela posição · região ` + ((leadInfo.candidateRegion?.row ?? 0) + 1) +
           "/" + ((leadInfo.candidateRegion?.col ?? 0) + 1)
         : leadInfo.lead;
       titleWrap.appendChild(title);
@@ -559,7 +559,7 @@
       if (provisional) {
         const warning = document.createElement("p");
         warning.className = "ecg-provisional-warning";
-        warning.textContent = "Extração experimental dos pixels nesta região. NÃO foi confirmado se é DI, DII, aVR ou outra derivação. Não usar para diagnóstico ou IA.";
+        warning.textContent = `Os pixels foram extraídos da posição esperada para ${leadInfo.lead}, mas o rótulo não foi confirmado automaticamente. Compare com a fotografia original antes de confirmar.`;
         card.appendChild(warning);
       }
 
@@ -603,6 +603,29 @@
         cameraController?.recaptureLead(leadInfo.lead);
       });
       actions.appendChild(btnRecapture);
+
+      if (provisional) {
+        const btnConfirmLead = document.createElement("button");
+        btnConfirmLead.type = "button";
+        btnConfirmLead.className = "ecg-btn";
+        btnConfirmLead.style.padding = "5px 10px";
+        btnConfirmLead.style.fontSize = "11.5px";
+        btnConfirmLead.textContent = `Confirmar como ${leadInfo.lead}`;
+        btnConfirmLead.addEventListener("click", () => {
+          const result = cameraController?.confirmCandidateLead(leadInfo.lead);
+          if (!result?.confirmed) {
+            if (missingAlert) {
+              missingAlert.hidden = false;
+              missingAlert.textContent = result?.reason || "Não foi possível confirmar esta região.";
+            }
+            return;
+          }
+          currentLeadsData = cameraController.getCapturedLeads();
+          currentSessionPackage = cameraController.getSessionStructuredPackage();
+          renderStage2Waveforms(currentLeadsData);
+        });
+        actions.appendChild(btnConfirmLead);
+      }
 
       if (audit.reasons && audit.reasons.length > 0) {
         const reasonSmall = document.createElement("small");

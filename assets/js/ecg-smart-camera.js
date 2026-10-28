@@ -630,6 +630,7 @@
           leadIdentity,
           regionBounds: { x: roiX, y: roiY, width: roiW, height: roiH },
           calibration: sessionCalibration,
+          allowOverlappingPreview: true,
           maskPrintedHeader: true,
           provenance: {
             source: options.source || "smart_camera",
@@ -959,6 +960,45 @@
       setHudMessage(`Vá para ${currentTargetLead || "DI"} e inclua o rótulo da derivação no quadro.`, true);
     }
 
+    /**
+     * Confirma, uma a uma, a identidade de uma região já extraída da folha.
+     * A confirmação não altera os pixels nem transforma qualidade ruim em boa.
+     */
+    function confirmCandidateLead(leadName) {
+      if (!CANONICAL_LEADS.includes(leadName)) return { confirmed: false, reason: "Derivação inválida." };
+      const leadInfo = capturedLeads.get(leadName);
+      if (!leadInfo?.captured || leadInfo.status !== "provisional") {
+        return { confirmed: false, reason: "Não há um traçado candidato pendente para esta derivação." };
+      }
+      const candidate = leadInfo.candidateRegion;
+      if (!candidate || currentSheetMap?.candidateRegions?.[leadName]?.expectedInTemplate !== leadName) {
+        return { confirmed: false, reason: "A posição desta região não corresponde ao layout exibido." };
+      }
+      const identity = contracts.normalizeLeadIdentity({
+        ...(leadInfo.leadIdentity || {}),
+        lead: leadName,
+        expectedLead: leadName,
+        recognizedLead: leadInfo.leadIdentity?.recognizedLead || null,
+        method: "user_confirmed",
+        confirmedByUser: true,
+        humanConfirmedLead: leadName,
+        region: leadInfo.leadIdentity?.region || currentSheetMap.candidateRegions[leadName]
+      });
+      leadInfo.leadIdentity = identity;
+      leadInfo.status = "captured";
+      if (leadInfo.extraction) {
+        leadInfo.extraction.leadIdentity = identity;
+        if (global.LuriaEcgSignalExtractor?.auditExtractedLead) {
+          leadInfo.audit = global.LuriaEcgSignalExtractor.auditExtractedLead(leadInfo.extraction);
+          leadInfo.extraction.audit = leadInfo.audit;
+        }
+      }
+      pendingLeadQueue = CANONICAL_LEADS.filter(lead => capturedLeads.get(lead)?.status !== "captured");
+      updateHudProgress();
+      global.LuriaEcgSessionData = getSessionStructuredPackage();
+      return { confirmed: true, lead: leadName };
+    }
+
     function triggerVisualFlash() {
       if (!hudContainer) return;
       const flashEl = hudContainer.querySelector(".ecg-hud-flash");
@@ -1102,8 +1142,9 @@
 
       const invalidLeads = CANONICAL_LEADS.filter(l => {
         const item = capturedLeads.get(l);
+        const identityStatus = item?.leadIdentity?.status;
         return item?.audit?.status !== "Adequada tecnicamente" ||
-          item?.leadIdentity?.status !== "ocr_confirmed" ||
+          (identityStatus !== "ocr_confirmed" && identityStatus !== "manual_confirmed") ||
           !Array.isArray(item?.extraction?.validMask) ||
           item.extraction.validMask.length !== item.extraction.signal?.length;
       });
@@ -1111,7 +1152,7 @@
       if (invalidLeads.length > 0) {
         return {
           allowed: false,
-          reason: `As derivações (${invalidLeads.join(", ")}) não têm identidade OCR, máscara e auditoria técnica suficientes. Revise ou recapture antes de prosseguir.`
+          reason: `As derivações (${invalidLeads.join(", ")}) não têm identidade confirmada, máscara e auditoria técnica suficientes. Revise ou recapture antes de prosseguir.`
         };
       }
 
@@ -1142,6 +1183,7 @@
       openReview: transitionToStage2,
       confirmUncertainLeadCapture,
       rejectUncertainLeadCapture,
+      confirmCandidateLead,
       setUserCalibration,
       getSessionCalibration: () => ({ ...sessionCalibration }),
       getSessionStructuredPackage,
