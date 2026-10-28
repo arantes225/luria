@@ -979,6 +979,7 @@
       confirmExtractionAndEnableAI,
       getCapturedLeads: () => Array.from(capturedLeads.values()),
       getCurrentStage: () => currentStage,
+      getCurrentMode: () => mode,
       setMode: m => { mode = m; },
       updateHudProgress
     };
