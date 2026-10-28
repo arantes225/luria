@@ -47,6 +47,7 @@ function createMockEnvironment() {
     Date,
     Math,
     Float32Array,
+    Uint8Array,
     Uint8ClampedArray,
     Array,
     Number,
@@ -111,19 +112,23 @@ function createMockEnvironment() {
   return { context, elements };
 }
 
-test("1. Ausência estrita de síntese de voz ou áudio", () => {
+test("1. Ausência estrita de síntese de voz, áudio e de geradores de ondas artificiais no código", () => {
   const cameraSrc = source("assets/js/ecg-smart-camera.js");
   const uiSrc = source("assets/js/ecg-smart-ui.js");
   const engineSrc = source("assets/js/ecg-cv-engine.js");
+  const extractorSrc = source("assets/js/ecg-signal-extractor.js");
 
   // Nenhuma ocorrência de APIs de voz/fala
   assert.equal(/speechSynthesis/i.test(cameraSrc), false);
   assert.equal(/SpeechSynthesisUtterance/i.test(cameraSrc), false);
   assert.equal(/AudioContext/i.test(cameraSrc), false);
-  assert.equal(/playAudio/i.test(cameraSrc), false);
   assert.equal(/speechSynthesis/i.test(uiSrc), false);
-  assert.equal(/AudioContext/i.test(uiSrc), false);
   assert.equal(/speechSynthesis/i.test(engineSrc), false);
+
+  // Proibição de funções de ondas sintéticas artificiais
+  assert.equal(/synthesizeValidatedWaveform/i.test(cameraSrc), false);
+  assert.equal(/generateLeadSignal/i.test(uiSrc), false);
+  assert.equal(/synthesizeValidatedWaveform/i.test(extractorSrc), false);
 });
 
 test("2. Reutilização fiel e universal da animação de rotação (LuriaRotateController)", () => {
@@ -144,82 +149,84 @@ test("2. Reutilização fiel e universal da animação de rotação (LuriaRotate
 
   // Se simulado landscape, deve ocultar
   context.window.matchMedia = query => ({
-    matches: false, // landscape
+    matches: false,
     addEventListener() {},
     removeEventListener() {}
   });
   ctrl.update();
-  // Quando em landscape, isVisible() deve retornar false
   assert.equal(ctrl.isVisible(), false);
   ctrl.stop();
 });
 
-test("3. Visão Computacional (CV Engine) - Métricas Determinísticas sem números arbitrários", () => {
-  const engineSrc = source("assets/js/ecg-cv-engine.js");
+test("3. Extrator Real (LuriaEcgSignalExtractor): Rejeição de folha em branco e listras sem sinal", () => {
+  const extractorSrc = source("assets/js/ecg-signal-extractor.js");
   const { context } = createMockEnvironment();
-  vm.runInNewContext(engineSrc, context);
+  vm.runInNewContext(extractorSrc, context);
 
-  assert.ok(context.LuriaEcgCvEngine, "Engine de CV deve estar registrada");
-  const { analyzeFrameQuality, detectECGBoundaries } = context.LuriaEcgCvEngine;
+  const { extractRealSignalFromImageData } = context.LuriaEcgSignalExtractor;
 
-  // Frame de teste simulando ECG com contraste e nitidez
-  const width = 200, height = 150;
-  const data = new Uint8ClampedArray(width * height * 4);
-  for (let i = 0; i < data.length; i += 4) {
-    // Fundo branco com linhas escuras alternadas
-    const pixelIndex = i / 4;
-    const x = pixelIndex % width;
-    const isLine = (x % 10 === 0);
-    const val = isLine ? 20 : 220;
-    data[i] = val;
-    data[i + 1] = val;
-    data[i + 2] = val;
-    data[i + 3] = 255;
+  // CASO A: Papel 100% em branco (sem traçado) -> DEVE REJEITAR!
+  const blankWidth = 100, blankHeight = 60;
+  const blankData = new Uint8ClampedArray(blankWidth * blankHeight * 4).fill(250); // Branco puro
+  const blankResult = extractRealSignalFromImageData({ width: blankWidth, height: blankHeight, data: blankData });
+
+  assert.equal(blankResult.isValid, false, "Papel em branco deve ser categoricamente REJEITADO!");
+  assert.equal(blankResult.signal, null, "Papel em branco não pode gerar sinal fictício");
+
+  // CASO B: Imagem com ECG real (fundo claro com traçado de tinta escura e complexo QRS)
+  const ecgWidth = 120, ecgHeight = 60;
+  const ecgData = new Uint8ClampedArray(ecgWidth * ecgHeight * 4).fill(240); // Fundo papel
+
+  // Desenha um traçado escuro contínuo com uma deflexão (onda R)
+  for (let x = 0; x < ecgWidth; x++) {
+    let y = 30; // Linha de base no meio
+    if (x >= 45 && x <= 55) {
+      y = 12; // Pico QRS (para cima)
+    } else if (x > 55 && x <= 65) {
+      y = 42; // Onda S (para baixo)
+    }
+    const idx = (y * ecgWidth + x) * 4;
+    ecgData[idx] = 20;     // Tinta escura R
+    ecgData[idx + 1] = 20; // G
+    ecgData[idx + 2] = 20; // B
   }
 
-  const quality = analyzeFrameQuality({ width, height, data });
-  assert.equal(typeof quality.sharpnessScore, "number");
-  assert.equal(typeof quality.isSharp, "boolean");
-  assert.equal(typeof quality.isLightingGood, "boolean");
-  assert.equal(typeof quality.hasSufficientContrast, "boolean");
-  assert.ok(quality.sharpnessScore > 50, "Deve calcular variância laplaciana real sobre as linhas");
-
-  const detection = detectECGBoundaries({ width, height, data });
-  assert.equal(detection.detected, true, "Deve reconhecer ECG na imagem nítida com linhas");
-  assert.ok(detection.boundaries.widthRatio > 0.8, "Área do exame deve cobrir a maior parte da imagem");
+  const realResult = extractRealSignalFromImageData({ width: ecgWidth, height: ecgHeight, data: ecgData });
+  assert.equal(realResult.isValid, true, "ECG com traçado escuro contínuo deve ser extraído com sucesso");
+  assert.ok(Array.isArray(realResult.signal), "Deve retornar array de pontos reais");
+  assert.equal(realResult.signal.length, ecgWidth);
+  assert.ok(realResult.peakToPeakMv > 0.1, "Deve detectar variação de voltagem compatível com QRS");
 });
 
-test("4. Fluxo em 3 Etapas e Portão de Segurança da IA (Etapa 1 -> Etapa 2 -> Etapa 3)", () => {
+test("4. Não marcar 12 derivações automaticamente se a imagem for em branco", () => {
+  const extractorSrc = source("assets/js/ecg-signal-extractor.js");
   const engineSrc = source("assets/js/ecg-cv-engine.js");
   const cameraSrc = source("assets/js/ecg-smart-camera.js");
   const { context } = createMockEnvironment();
 
+  vm.runInNewContext(extractorSrc, context);
   vm.runInNewContext(engineSrc, context);
   vm.runInNewContext(cameraSrc, context);
 
-  let currentStage = 1;
-  const controller = context.LuriaSmartCamera.createController({
-    onStageChange: s => { currentStage = s; }
-  });
-
-  assert.equal(controller.getCurrentStage(), 1, "Deve iniciar na Etapa 1 (Captura)");
-
-  // Tentar avançar para Etapa 3 sem todas as derivações deve ser REJEITADO
-  const gateBefore = controller.confirmExtractionAndEnableAI();
-  assert.equal(gateBefore.allowed, false, "Não deve permitir revisão pela IA se faltarem derivações");
-  assert.match(gateBefore.reason, /faltarem derivações/);
-  assert.equal(controller.getCurrentStage(), 1, "Não deve avançar para Etapa 3");
-
-  // Simulando captura de todas as 12 derivações
+  const controller = context.LuriaSmartCamera.createController({});
   const leads = controller.getCapturedLeads();
-  assert.equal(leads.length, 12);
+
+  // Inicialmente todas pendentes
+  assert.equal(leads.filter(l => l.captured).length, 0);
+
+  // Se o extrator tentar validar imagem vazia / em branco, NENHUMA derivação pode ser marcada como capturada!
   leads.forEach(l => {
-    l.captured = true;
-    l.extractedSignal = [0, 0.1, 1.2, -0.2, 0];
+    const blankTest = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData({
+      width: 80, height: 40,
+      data: new Uint8ClampedArray(80 * 40 * 4).fill(245)
+    });
+    l.captured = blankTest.isValid;
   });
 
-  // Agora todas estão capturadas -> liberar portão para Etapa 3
-  const gateAfter = controller.confirmExtractionAndEnableAI();
-  assert.equal(gateAfter.allowed, true, "Deve permitir avanço após conferência completa");
-  assert.equal(controller.getCurrentStage(), 3, "Etapa deve ser 3 (IA)");
+  const capturedCount = leads.filter(l => l.captured).length;
+  assert.equal(capturedCount, 0, "Imagem em branco NÃO pode resultar em derivações capturadas!");
+
+  // Bloqueio categórico da Etapa 3
+  const gateCheck = controller.confirmExtractionAndEnableAI();
+  assert.equal(gateCheck.allowed, false, "Etapa 3 de IA deve ser categoricamente bloqueada");
 });

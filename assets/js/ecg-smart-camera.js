@@ -232,13 +232,13 @@
     }
 
     /**
-     * Captura autônoma e validação de derivações
+     * Captura autônoma e validação REAL de derivações
+     * Extrai pixels reais e avalia se há sinal elétrico verdadeiro ou apenas papel em branco.
      */
     function performAutonomousCapture(isGlobalCapture) {
       if (autoCaptureLock) return;
       autoCaptureLock = true;
 
-      // Congela o frame atual do canvas como fotografia de referência
       const snapCanvas = document.createElement("canvas");
       snapCanvas.width = canvasEl.width;
       snapCanvas.height = canvasEl.height;
@@ -246,57 +246,122 @@
       snapCtx.drawImage(canvasEl, 0, 0);
 
       const photoDataUrl = snapCanvas.toDataURL("image/jpeg", 0.92);
-
-      // Efeito visual sutil de confirmação de captura (Flash na tela)
       triggerVisualFlash();
 
-      if (isGlobalCapture) {
-        // Valida todas as 12 derivações simultaneamente
+      const layout = (cvEngine && cvEngine.STANDARD_LAYOUT_3X4) ? cvEngine.STANDARD_LAYOUT_3X4 : null;
+      const extractor = global.LuriaEcgSignalExtractor;
+
+      if (isGlobalCapture && layout && extractor) {
+        // Validação INDIVIDUAL por região da fotografia
+        let successfullyCaptured = 0;
+
         CANONICAL_LEADS.forEach(lead => {
           const leadInfo = capturedLeads.get(lead);
-          leadInfo.captured = true;
-          leadInfo.status = "captured";
-          leadInfo.imageCropUrl = photoDataUrl;
-          leadInfo.extractedSignal = synthesizeValidatedWaveform(lead);
+          const box = layout.leads[lead];
+
+          if (box) {
+            // Recorta a ROI específica da derivação
+            const roiX = Math.round(box.xMin * snapCanvas.width);
+            const roiY = Math.round(box.yMin * snapCanvas.height);
+            const roiW = Math.round((box.xMax - box.xMin) * snapCanvas.width);
+            const roiH = Math.round((box.yMax - box.yMin) * snapCanvas.height);
+
+            const cropCanvas = document.createElement("canvas");
+            cropCanvas.width = roiW;
+            cropCanvas.height = roiH;
+            const cropCtx = cropCanvas.getContext("2d");
+            cropCtx.drawImage(snapCanvas, roiX, roiY, roiW, roiH, 0, 0, roiW, roiH);
+
+            const roiImageData = cropCtx.getImageData(0, 0, roiW, roiH);
+            const extractionResult = extractor.extractRealSignalFromImageData(roiImageData);
+
+            if (extractionResult.isValid && extractionResult.signal) {
+              leadInfo.captured = true;
+              leadInfo.status = "captured";
+              leadInfo.imageCropUrl = cropCanvas.toDataURL("image/jpeg", 0.9);
+              leadInfo.extractedSignal = extractionResult.signal;
+              leadInfo.confidence = extractionResult.confidence;
+              successfullyCaptured++;
+            } else {
+              leadInfo.captured = false;
+              leadInfo.status = "low_quality";
+              leadInfo.extractedSignal = null;
+              leadInfo.confidence = 0;
+            }
+          }
         });
 
-        pendingLeadQueue = [];
-        updateHudProgress();
-        setHudMessage("12 de 12 derivações capturadas! Extraindo traçados...", true);
-
-        setTimeout(() => {
-          stopCamera();
-          transitionToStage2();
-        }, 1200);
-
-      } else {
-        // Captura da derivação alvo atual
-        const leadInfo = capturedLeads.get(currentTargetLead);
-        if (leadInfo) {
-          leadInfo.captured = true;
-          leadInfo.status = "captured";
-          leadInfo.imageCropUrl = photoDataUrl;
-          leadInfo.extractedSignal = synthesizeValidatedWaveform(currentTargetLead);
-        }
-
-        const justCaptured = currentTargetLead;
-        pendingLeadQueue = pendingLeadQueue.filter(l => l !== justCaptured);
-
+        pendingLeadQueue = CANONICAL_LEADS.filter(l => !capturedLeads.get(l).captured);
         updateHudProgress();
 
-        if (pendingLeadQueue.length > 0) {
-          currentTargetLead = pendingLeadQueue[0];
-          setHudMessage(`${justCaptured} capturada! Agora vá para ${currentTargetLead}`, true);
-          setTimeout(() => {
-            autoCaptureLock = false;
-          }, 1000);
-        } else {
-          currentTargetLead = null;
-          setHudMessage("Todas as derivações capturadas! Extraindo traçados...", true);
+        if (successfullyCaptured >= 10) {
+          setHudMessage(`${successfullyCaptured} de 12 derivações identificadas! Abrindo traçados...`, true);
           setTimeout(() => {
             stopCamera();
             transitionToStage2();
           }, 1200);
+        } else if (successfullyCaptured > 0) {
+          setHudMessage(`${successfullyCaptured} derivações capturadas. Ajuste o enquadramento das pendências...`, true);
+          setTimeout(() => {
+            autoCaptureLock = false;
+          }, 1500);
+        } else {
+          setHudMessage("Nenhum traçado válido reconhecido. Verifique o enquadramento do ECG.", true);
+          setTimeout(() => {
+            autoCaptureLock = false;
+          }, 1500);
+        }
+
+      } else {
+        // Captura da derivação alvo atual (Modo ultrassensível)
+        const leadInfo = capturedLeads.get(currentTargetLead);
+        if (leadInfo && layout && extractor) {
+          const box = layout.leads[currentTargetLead] || { xMin: 0.1, xMax: 0.9, yMin: 0.1, yMax: 0.9 };
+          const roiX = Math.round(box.xMin * snapCanvas.width);
+          const roiY = Math.round(box.yMin * snapCanvas.height);
+          const roiW = Math.round((box.xMax - box.xMin) * snapCanvas.width);
+          const roiH = Math.round((box.yMax - box.yMin) * snapCanvas.height);
+
+          const cropCanvas = document.createElement("canvas");
+          cropCanvas.width = roiW;
+          cropCanvas.height = roiH;
+          const cropCtx = cropCanvas.getContext("2d");
+          cropCtx.drawImage(snapCanvas, roiX, roiY, roiW, roiH, 0, 0, roiW, roiH);
+
+          const roiImageData = cropCtx.getImageData(0, 0, roiW, roiH);
+          const extractionResult = extractor.extractRealSignalFromImageData(roiImageData);
+
+          if (extractionResult.isValid && extractionResult.signal) {
+            leadInfo.captured = true;
+            leadInfo.status = "captured";
+            leadInfo.imageCropUrl = cropCanvas.toDataURL("image/jpeg", 0.9);
+            leadInfo.extractedSignal = extractionResult.signal;
+            leadInfo.confidence = extractionResult.confidence;
+
+            const justCaptured = currentTargetLead;
+            pendingLeadQueue = pendingLeadQueue.filter(l => l !== justCaptured);
+            updateHudProgress();
+
+            if (pendingLeadQueue.length > 0) {
+              currentTargetLead = pendingLeadQueue[0];
+              setHudMessage(`${justCaptured} capturada! Agora aponte para ${currentTargetLead}`, true);
+              setTimeout(() => {
+                autoCaptureLock = false;
+              }, 1200);
+            } else {
+              currentTargetLead = null;
+              setHudMessage("Todas as derivações capturadas! Abrindo traçados...", true);
+              setTimeout(() => {
+                stopCamera();
+                transitionToStage2();
+              }, 1200);
+            }
+          } else {
+            setHudMessage(`Traçado de ${currentTargetLead} não reconhecido. Aproxime e estabilize...`, true);
+            setTimeout(() => {
+              autoCaptureLock = false;
+            }, 1200);
+          }
         }
       }
     }
@@ -312,56 +377,9 @@
     }
 
     /**
-     * Síntese de sinal digital de alta fidelidade para conferência (Etapa 2)
-     * Respeita rigorosamente a escala de calibração padrão (25 mm/s e 10 mm/mV)
-     * e os 2,5 s padrão das derivações clássicas (1250 pontos a 500 Hz).
+     * SÍNTESE ARTIFICIAL ELIMINADA DO FLUXO CLÍNICO.
+     * Os traçados devem ser exclusivamente extraídos dos pixels reais via LuriaEcgSignalExtractor.
      */
-    function synthesizeValidatedWaveform(lead) {
-      const samplingRate = 500;
-      const duration = 2.5;
-      const totalPoints = Math.round(samplingRate * duration);
-      const points = new Float32Array(totalPoints);
-
-      // Frequência cardíaca basal ~75 bpm -> período de ~0.8s (400 amostras)
-      const rrInterval = 400;
-
-      for (let i = 0; i < totalPoints; i++) {
-        const phase = i % rrInterval;
-        let mv = 0;
-
-        // Onda P (80 ms, altura ~0.15 mV)
-        if (phase >= 40 && phase <= 80) {
-          mv += 0.15 * Math.sin(((phase - 40) / 40) * Math.PI);
-        }
-        // Segmento PR isoelétrico
-        // Complexo QRS (~90 ms)
-        else if (phase > 100 && phase <= 145) {
-          const qrsPos = (phase - 100) / 45;
-          if (qrsPos < 0.2) {
-            // Onda Q
-            mv -= 0.15 * Math.sin((qrsPos / 0.2) * Math.PI);
-          } else if (qrsPos < 0.7) {
-            // Onda R (amplitude ajustada por derivação)
-            const rAmp = (lead === "V1" || lead === "aVR") ? 0.4 : 1.2;
-            mv += rAmp * Math.sin(((qrsPos - 0.2) / 0.5) * Math.PI);
-          } else {
-            // Onda S
-            const sAmp = (lead === "V1") ? 1.0 : 0.25;
-            mv -= sAmp * Math.sin(((qrsPos - 0.7) / 0.3) * Math.PI);
-          }
-        }
-        // Segmento ST isoelétrico
-        // Onda T (~160 ms)
-        else if (phase >= 200 && phase <= 280) {
-          const tAmp = lead === "aVR" ? -0.2 : 0.3;
-          mv += tAmp * Math.sin(((phase - 200) / 80) * Math.PI);
-        }
-
-        points[i] = Number(mv.toFixed(3));
-      }
-
-      return Array.from(points);
-    }
 
     /**
      * Transição para Etapa 2 — Extração e Conferência dos Traçados

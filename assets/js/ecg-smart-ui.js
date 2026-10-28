@@ -74,57 +74,64 @@
     cameraController?.startCamera("fast");
   });
 
-  // Autoiniciar a câmera inteligente quando carregar imagem via arquivo
+  // Processamento real ao carregar imagem via arquivo
   const inputImage = byId("ecg-image");
   inputImage?.addEventListener("change", () => {
     const file = inputImage.files?.[0];
     if (!file) return;
     const img = new Image();
     img.onload = () => {
-      // Simula frame na engine para extração direta das 12 derivações
       canvasEl.width = img.naturalWidth || img.width;
       canvasEl.height = img.naturalHeight || img.height;
       const ctx = canvasEl.getContext("2d");
       ctx.drawImage(img, 0, 0);
 
-      // Dispara extração e avança diretamente para a Etapa 2
+      const layout = window.LuriaEcgCvEngine ? window.LuriaEcgCvEngine.STANDARD_LAYOUT_3X4 : null;
+      const extractor = window.LuriaEcgSignalExtractor;
+
+      // Executa extração pixel a pixel real para cada uma das 12 derivações
+      const leads = window.LuriaSmartCamera.CANONICAL_LEADS.map(lead => {
+        const box = layout?.leads?.[lead];
+        if (!box || !extractor) {
+          return { lead, captured: false, status: "pending", extractedSignal: null };
+        }
+
+        const roiX = Math.round(box.xMin * canvasEl.width);
+        const roiY = Math.round(box.yMin * canvasEl.height);
+        const roiW = Math.round((box.xMax - box.xMin) * canvasEl.width);
+        const roiH = Math.round((box.yMax - box.yMin) * canvasEl.height);
+
+        const cropCanvas = document.createElement("canvas");
+        cropCanvas.width = roiW;
+        cropCanvas.height = roiH;
+        const cropCtx = cropCanvas.getContext("2d");
+        cropCtx.drawImage(canvasEl, roiX, roiY, roiW, roiH, 0, 0, roiW, roiH);
+
+        const roiImageData = cropCtx.getImageData(0, 0, roiW, roiH);
+        const res = extractor.extractRealSignalFromImageData(roiImageData);
+
+        return {
+          lead,
+          captured: res.isValid,
+          status: res.isValid ? "captured" : "low_quality",
+          extractedSignal: res.isValid ? res.signal : null,
+          imageCropUrl: cropCanvas.toDataURL("image/jpeg", 0.9),
+          confidence: res.confidence,
+          samplingRateHz: 500,
+          durationSeconds: 2.5
+        };
+      });
+
+      // Transiciona para a Etapa 2
       stage1Section.hidden = true;
       stage2Section.hidden = false;
       stage3Section.hidden = true;
 
-      const leads = window.LuriaSmartCamera.CANONICAL_LEADS.map(lead => ({
-        lead,
-        captured: true,
-        status: "captured",
-        extractedSignal: generateLeadSignal(lead),
-        samplingRateHz: 500,
-        durationSeconds: 2.5
-      }));
       currentLeadsData = leads;
       renderStage2Waveforms(leads);
     };
     img.src = URL.createObjectURL(file);
   });
-
-  function generateLeadSignal(lead) {
-    const total = 1250;
-    const pts = [];
-    for (let i = 0; i < total; i++) {
-      const p = i % 400;
-      let v = 0;
-      if (p >= 40 && p <= 80) v += 0.15 * Math.sin(((p - 40) / 40) * Math.PI);
-      else if (p > 100 && p <= 145) {
-        const qrs = (p - 100) / 45;
-        if (qrs < 0.2) v -= 0.15 * Math.sin((qrs / 0.2) * Math.PI);
-        else if (qrs < 0.7) v += ((lead === "V1" || lead === "aVR") ? 0.4 : 1.2) * Math.sin(((qrs - 0.2) / 0.5) * Math.PI);
-        else v -= 0.25 * Math.sin(((qrs - 0.7) / 0.3) * Math.PI);
-      } else if (p >= 200 && p <= 280) {
-        v += (lead === "aVR" ? -0.2 : 0.3) * Math.sin(((p - 200) / 80) * Math.PI);
-      }
-      pts.push(Number(v.toFixed(3)));
-    }
-    return pts;
-  }
 
   btnStartUltra?.addEventListener("click", () => {
     stage1Section.hidden = false;
@@ -232,20 +239,56 @@
   }
 
   /**
-   * Desenha o sinal digital e a grade milimetrada de ECG no Canvas
+   * Desenha a visualização da derivação:
+   * - "original": exibe a fotografia real recortada da derivação
+   * - "digital": exibe a curva extraída sobre a grade milimetrada
+   * - "overlay": exibe a curva extraída sobreposta à fotografia original
    */
   function drawLeadView(canvas, leadInfo, viewMode) {
     const ctx = canvas.getContext("2d");
     const w = canvas.width;
     const h = canvas.height;
 
-    // Fundo milimetrado clássico de ECG (rosa claro)
+    if (!leadInfo.captured || !leadInfo.extractedSignal) {
+      ctx.fillStyle = "#fff7f5";
+      ctx.fillRect(0, 0, w, h);
+      ctx.fillStyle = "#9ca3af";
+      ctx.font = "12px sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillText("Derivação não capturada ou ilegível", w / 2, h / 2);
+      return;
+    }
+
+    if (viewMode === "original" && leadInfo.imageCropUrl) {
+      // Exibe a fotografia recortada da região
+      const img = new Image();
+      img.onload = () => {
+        ctx.drawImage(img, 0, 0, w, h);
+        drawScaleBadge(ctx, h);
+      };
+      img.src = leadInfo.imageCropUrl;
+      return;
+    }
+
+    if (viewMode === "overlay" && leadInfo.imageCropUrl) {
+      // Desenha foto original de fundo com a curva extraída sobreposta em vermelho
+      const img = new Image();
+      img.onload = () => {
+        ctx.drawImage(img, 0, 0, w, h);
+        renderCurveOnContext(ctx, leadInfo.extractedSignal, w, h, "#dc2626", 2.0);
+        drawScaleBadge(ctx, h);
+      };
+      img.src = leadInfo.imageCropUrl;
+      return;
+    }
+
+    // Modo "digital": desenha a grade milimetrada de ECG (25 mm/s, 10 mm/mV)
     ctx.fillStyle = "#fff7f5";
     ctx.fillRect(0, 0, w, h);
 
-    // Grade milimetrada (1 mm = ~4px; 5 mm = ~20px)
+    // Grade milimetrada (1 mm = 4px; 5 mm = 20px)
     ctx.lineWidth = 0.5;
-    ctx.strokeStyle = "#fed7aa"; // Linhas finas
+    ctx.strokeStyle = "#fed7aa";
     for (let x = 0; x < w; x += 4) {
       ctx.beginPath();
       ctx.moveTo(x, 0);
@@ -260,7 +303,7 @@
     }
 
     ctx.lineWidth = 1;
-    ctx.strokeStyle = "#fdba74"; // Linhas de 5mm
+    ctx.strokeStyle = "#fdba74";
     for (let x = 0; x < w; x += 20) {
       ctx.beginPath();
       ctx.moveTo(x, 0);
@@ -274,22 +317,17 @@
       ctx.stroke();
     }
 
-    if (!leadInfo.captured || !leadInfo.extractedSignal) {
-      ctx.fillStyle = "#9ca3af";
-      ctx.font = "12px sans-serif";
-      ctx.textAlign = "center";
-      ctx.fillText("Derivação não capturada", w / 2, h / 2);
-      return;
-    }
+    renderCurveOnContext(ctx, leadInfo.extractedSignal, w, h, "#1e293b", 1.6);
+    drawScaleBadge(ctx, h);
+  }
 
-    // Desenho da curva digitalizada
-    const signal = leadInfo.extractedSignal;
+  function renderCurveOnContext(ctx, signal, w, h, strokeColor, lineWidth) {
     const centerY = h / 2 + 5;
-    const scaleY = 32; // ~32 px por 1 mV
+    const scaleY = 32;
 
     ctx.beginPath();
-    ctx.lineWidth = 1.6;
-    ctx.strokeStyle = (viewMode === "overlay") ? "#dc2626" : "#1e293b"; // Vermelho na sobreposição, preto no digital
+    ctx.lineWidth = lineWidth;
+    ctx.strokeStyle = strokeColor;
 
     for (let i = 0; i < signal.length; i++) {
       const x = (i / signal.length) * w;
@@ -298,8 +336,9 @@
       else ctx.lineTo(x, y);
     }
     ctx.stroke();
+  }
 
-    // Etiqueta de calibração
+  function drawScaleBadge(ctx, h) {
     ctx.fillStyle = "#64748b";
     ctx.font = "9.5px sans-serif";
     ctx.textAlign = "left";
