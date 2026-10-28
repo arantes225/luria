@@ -121,7 +121,7 @@ test('FMABC uses the official 10-point 2027 access-direct matrix',()=>{
 test('SES-PE 2027 uses the official 100-point R1 table and exclusive grade bands',()=>{
   const pe=sandbox.window.LuriaCurriculoRubricas.find(r=>r.institution==='SES-PE');
   assert.equal(pe.status,'reviewed');assert.equal(pe.max,100);assert.equal(pe.edition,'2027');
-  const all={};pe.criteria.forEach(r=>r.parts.forEach(p=>{all[p.id]=1;}));
+  const all={};pe.criteria.forEach(r=>r.parts.forEach(p=>{all[p.id]=p.limit;}));
   assert.equal(core.score(pe,all).total,100);
   assert.equal(core.score(pe,{'pe-h90':1,'pe-h80':1}).total,30);
   assert.equal(core.score(pe,{'pe-mon':3,'pe-ic':3,'pe-ext':4,'pe-art':1,'pe-oral':5,'pe-post':5}).total,70);
