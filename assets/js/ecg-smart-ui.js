@@ -481,7 +481,7 @@
     if (!reviewGrid) return;
     reviewGrid.innerHTML = "";
 
-    let hasMissing = false;
+    let hasMissing = leads.some(info => !info.captured || info.status === 'provisional');
     let adequateCount = 0;
     let reviewCount = 0;
     let invalidCount = 0;
@@ -596,7 +596,7 @@
       btnRecapture.className = "ecg-btn secondary";
       btnRecapture.style.padding = "5px 10px";
       btnRecapture.style.fontSize = "11.5px";
-      btnRecapture.textContent = provisional ? "Refazer foto / conferir rótulo" : "Recapturar";
+      btnRecapture.textContent = "Recapturar";
       btnRecapture.addEventListener("click", () => {
         cameraController?.recaptureLead(leadInfo.lead);
       });
