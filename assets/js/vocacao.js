@@ -117,6 +117,25 @@
     const cautions = lessChosen.length
       ? "Você escolheu menos vezes alternativas relacionadas a " + phrase(lessChosen).toLowerCase() + ". Não significa incapacidade nessas atividades; pode apontar aspectos da rotina que merecem ser vivenciados antes da escolha."
       : "Não apareceu um conjunto consistente de atividades evitadas. As escolhas podem variar conforme experiência, contexto e momento de carreira.";
+    const group = (tags) => {
+      const ordered = tags.slice().sort((a,b) => report.scores[b] - report.scores[a]);
+      const positive = ordered.filter((tag) => report.scores[tag] > 0.08);
+      return positive.length ? phrase(positive.slice(0,3)).toLowerCase() : "um conjunto amplo de interesses, sem preferência marcada";
+    };
+    const routine = "Seu interesse por atividades de " + group(["acute","predictable","followup","highstakes"]) +
+      " ajuda a entender como você imagina o ritmo de trabalho. Escalas e horários dependem de serviço, localidade e etapa da carreira.";
+    const decisions = "Nas escolhas sobre tarefas, destacaram-se " +
+      group(["diagnosis","clinical","surgery","hands","technology","visual","precision"]) +
+      ". Isso sugere o tipo de atividade que você gostaria de repetir com frequência, não domínio técnico atual.";
+    const relationship = "Em relação a pacientes e equipes, as respostas apontam interesse por " +
+      group(["people","team","kids","women","elderly","mental","followup"]) +
+      ". O volume de contato e o vínculo são diferentes mesmo dentro da mesma especialidade.";
+    const motivation = "Quanto ao impacto profissional, apareceram interesses em " +
+      group(["prevention","community","systems","function","complex","research"]) +
+      ". Vale perguntar aos profissionais como esses objetivos aparecem no cotidiano real.";
+    const contrast = report.scores.acute > 0.12 && report.scores.predictable > 0.12
+      ? " Você também se interessou por casos agudos e por rotina programada: procure serviços que conciliem esses aspectos em fases diferentes da semana."
+      : "";
     const cards = report.top.map((specialty, index) => {
       const aligned = specialty.strengths.filter((tag) => report.scores[tag] > 0.03);
       const relevant = aligned.length ? aligned.slice(0, 3) : specialty.strengths.slice(0, 2);
@@ -139,6 +158,10 @@
       '<p class="voc-result-intro">' + text(mainProfile) + ' O resultado é uma ferramenta de reflexão e não define sua identidade ou carreira.</p>' +
       section("O que suas respostas mostram", '<p>' + text(why) + '</p>' +
         '<div class="voc-report-tags">' + (preferenceTags.length ? preferenceTags.map((tag) => '<span title="' + text(detail(tag)) + '">' + text(name(tag)) + '</span>').join("") : '<span>Interesses diversos</span>') + '</div>') +
+      section("Como você prefere decidir e atuar", '<p>' + text(decisions) + '</p>') +
+      section("Ritmo e ambiente de trabalho", '<p>' + text(routine + contrast) + '</p>') +
+      section("Pacientes e relações de cuidado", '<p>' + text(relationship) + '</p>') +
+      section("O que mais motiva você", '<p>' + text(motivation) + '</p>') +
       section("Pontos de atenção para sua rotina", '<p>' + text(cautions) + '</p>') +
       '<h2 class="voc-top-title">Seus três caminhos para explorar</h2>' +
       '<p class="voc-result-intro">A ordem é relativa às respostas deste questionário, não uma probabilidade de sucesso ou satisfação.' +
