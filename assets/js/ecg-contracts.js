@@ -51,7 +51,57 @@
       verifiedAutomatically: status === "ocr_confirmed", region: input.region || null, anomalies
     };
   }
-  const exported = { LEADS, canonicalLead, normalizeAnomalies, normalizeLeadIdentity };
+  function normalizeCalibration(input = {}) {
+    const raw = input || {};
+    const confirmedByUser = Boolean(raw.confirmedByUser);
+    const gridDetected = Boolean(raw.gridDetected);
+    const pulseDetected = Boolean(raw.calibrationPulse?.detected || raw.pulseDetected);
+    const pulseConfidence = Number(raw.calibrationPulse?.confidence || raw.pulseConfidence || 0);
+
+    let paperSpeedMmPerSec = Number(raw.paperSpeedMmPerSec) || null;
+    let gainMmPerMv = Number(raw.gainMmPerMv) || null;
+    let pixelsPerMmX = Number(raw.pixelsPerMmX || raw.pixelsPerMm) || null;
+    let pixelsPerMmY = Number(raw.pixelsPerMmY || raw.pixelsPerMm) || null;
+
+    let calibrationSource = "unknown";
+    if (confirmedByUser) {
+      calibrationSource = "user_confirmed";
+    } else if (gridDetected && pulseDetected && pulseConfidence >= 0.70) {
+      calibrationSource = "measured";
+    } else if (gridDetected || raw.calibrationSource === "assumed") {
+      calibrationSource = "assumed";
+    }
+
+    const gridSpacingSource = gridDetected ? "measured" : "unknown";
+    const speedSource = (pulseDetected && pulseConfidence >= 0.70) ? "measured_pulse"
+      : (confirmedByUser ? "user_confirmed" : (gridDetected ? "assumed_standard" : "unknown"));
+    const gainSource = (pulseDetected && pulseConfidence >= 0.70) ? "measured_pulse"
+      : (confirmedByUser ? "user_confirmed" : (gridDetected ? "assumed_standard" : "unknown"));
+
+    const msPerPixel = (pixelsPerMmX && paperSpeedMmPerSec) ? Number((1000 / (paperSpeedMmPerSec * pixelsPerMmX)).toFixed(4)) : null;
+    const mvPerPixel = (pixelsPerMmY && gainMmPerMv) ? Number((1 / (gainMmPerMv * pixelsPerMmY)).toFixed(5)) : null;
+    const pixelsPerMv = mvPerPixel ? Number((1 / mvPerPixel).toFixed(2)) : null;
+
+    return {
+      gridDetected,
+      pixelsPerMmX,
+      pixelsPerMmY,
+      paperSpeedMmPerSec,
+      gainMmPerMv,
+      msPerPixel,
+      mvPerPixel,
+      pixelsPerMv,
+      calibrationPulse: raw.calibrationPulse || { detected: pulseDetected, confidence: pulseConfidence },
+      calibrationSource,
+      gridSpacingSource,
+      speedSource,
+      gainSource,
+      confirmedByUser,
+      measurementsAllowed: calibrationSource === "measured" || calibrationSource === "user_confirmed"
+    };
+  }
+
+  const exported = { LEADS, canonicalLead, normalizeAnomalies, normalizeLeadIdentity, normalizeCalibration };
   global.LuriaEcgContracts = exported;
   if (typeof module !== "undefined" && module.exports) module.exports = exported;
 })(typeof window !== "undefined" ? window : globalThis);

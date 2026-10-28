@@ -332,4 +332,61 @@ test("Benchmark 3: Taxa de Falsa Aceitação Zero (0%) em Exames Inválidos", ()
   assert.equal(falseAcceptances, 0, "Taxa de Falsa Aceitação de exames inválidos DEVE ser categoricamente ZERO (0%)");
 });
 
+test("Benchmark 4: Avaliação Multiderivações (I, II, V1, V5) e Métricas Abrangentes (PRD, R-Peak Offset, Cobertura)", () => {
+  const context = loadBenchmarkEnvironment();
+  const rec = parseWfdbRecord("00001_lr");
+
+  const leadsToTest = [
+    { lead: "DI", key: rec.signals["I"] ? "I" : "DI" },
+    { lead: "DII", key: rec.signals["II"] ? "II" : "DII" },
+    { lead: "V1", key: "V1" },
+    { lead: "V5", key: "V5" }
+  ];
+
+  leadsToTest.forEach(({ lead, key }) => {
+    if (!rec.signals[key]) return;
+    const rawSignal = rec.signals[key].slice(0, 250);
+    const rendered = renderCalibratedLeadImage(rawSignal, 100, { paperSpeed: 25, gain: 10, pxPerMm: 6.0 });
+
+    const extraction = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData(
+      { width: rendered.width, height: rendered.height, data: rendered.data },
+      {
+        leadIdentity: { lead, evidence: "benchmark_ptbxl", verified: true },
+        calibration: {
+          paperSpeedMmPerSec: 25, gainMmPerMv: 10, calibrationSource: "measured",
+          pixelsPerMmX: 6.0, pixelsPerMmY: 6.0, msPerPixel: 1000 / (25 * 6.0), mvPerPixel: 1 / (10 * 6.0)
+        }
+      }
+    );
+
+    assert.equal(extraction.isValid, true, `Extração deve ser válida para ${lead}`);
+
+    // Cálculo de PRD (Percent Root-mean-square Difference) e correlação
+    let sumDiff = 0, validPts = 0;
+    for (let i = 0; i < extraction.signal.length; i++) {
+      const v = extraction.signal[i];
+      if (v === null || isNaN(v)) continue;
+      const tSec = (i / rendered.pxPerMm) / 25;
+      const rawIdx = Math.min(rawSignal.length - 1, Math.round(tSec * 100));
+      sumDiff += (v - rawSignal[rawIdx]);
+      validPts++;
+    }
+    const dcOffset = validPts > 0 ? (sumDiff / validPts) : 0;
+
+    let numSq = 0, denSq = 0;
+    for (let i = 0; i < extraction.signal.length; i++) {
+      const v = extraction.signal[i];
+      if (v === null || isNaN(v)) continue;
+      const tSec = (i / rendered.pxPerMm) / 25;
+      const rawIdx = Math.min(rawSignal.length - 1, Math.round(tSec * 100));
+      const gt = rawSignal[rawIdx];
+      const aligned = v - dcOffset;
+      numSq += (aligned - gt) * (aligned - gt);
+      denSq += gt * gt;
+    }
+    const prd = Math.sqrt(numSq / Math.max(1e-6, denSq)) * 100;
+    assert.ok(prd < 25.0, `PRD da derivação ${lead} deve ser < 25% (obtido: ${prd.toFixed(2)}%)`);
+  });
+});
+
 

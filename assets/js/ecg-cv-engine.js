@@ -782,8 +782,8 @@
         pixelsPerMmY = Number(userCalibration.pixelsPerMm);
       }
       calibrationSource = "user_confirmed";
-    } else if (hasMeasuredGrid && calPulse.detected) {
-      // Medição direta de grade + pulso de calibração 1 mV
+    } else if (hasMeasuredGrid && calPulse.detected && (calPulse.confidence || 0) >= 0.70) {
+      // Medição direta de grade + pulso de calibração 1 mV comprovado com confiança
       const pulseHeightMm = calPulse.heightPx / pixelsPerMmY;
       const pulseWidthMm = calPulse.widthPx / pixelsPerMmX;
       gainMmPerMv = Math.abs(pulseHeightMm - 5) < Math.abs(pulseHeightMm - 10) ? 5 : 10;
@@ -829,8 +829,8 @@
       calibrationPulse: calPulse,
       calibrationSource,
       gridSpacingSource: hasMeasuredGrid ? "measured" : "unknown",
-      speedSource: (calPulse.detected && calPulse.confidence >= 0.75) ? "measured_pulse" : ((userCalibration && userCalibration.confirmedByUser) ? "user_confirmed" : (hasMeasuredGrid ? "assumed_standard" : "unknown")),
-      gainSource: (calPulse.detected && calPulse.confidence >= 0.75) ? "measured_pulse" : ((userCalibration && userCalibration.confirmedByUser) ? "user_confirmed" : (hasMeasuredGrid ? "assumed_standard" : "unknown")),
+      speedSource: (calPulse.detected && (calPulse.confidence || 0) >= 0.70) ? "measured_pulse" : ((userCalibration && userCalibration.confirmedByUser) ? "user_confirmed" : (hasMeasuredGrid ? "assumed_standard" : "unknown")),
+      gainSource: (calPulse.detected && (calPulse.confidence || 0) >= 0.70) ? "measured_pulse" : ((userCalibration && userCalibration.confirmedByUser) ? "user_confirmed" : (hasMeasuredGrid ? "assumed_standard" : "unknown")),
       measurementsAllowed: calibrationSource === "measured" || calibrationSource === "user_confirmed"
     };
   }
@@ -897,7 +897,7 @@
     const paperH = yMaxPaper - yMinPaper;
     const scanMinX = xMinPaper + Math.max(4, Math.floor(paperW * 0.02));
     const scanMaxX = Math.min(xMaxPaper, scanMinX + Math.floor(paperW * 0.12));
-    let bestPulse = { detected: false, heightPx: 0, widthPx: 0 };
+    let bestPulse = { detected: false, heightPx: 0, widthPx: 0, confidence: 0 };
 
     if (scanMaxX <= scanMinX + 10 || paperH < 50) return bestPulse;
 
@@ -936,7 +936,18 @@
           }
           // Exige tanto platô quanto linha de base coexistindo antes/depois do pulso
           if (plateauCols >= 6 && plateauCols <= 40 && baselineCols >= 8) {
-            bestPulse = { detected: true, heightPx: hPx, widthPx: plateauCols };
+            // Cálculo objetivo da confiança do pulso retangular:
+            // Avalia nitidez do degrau e fração de colunas de platô + base em relação ao total amostrado
+            const regularity = (plateauCols + baselineCols) / Math.max(1, valid.length);
+            const heightScore = Math.min(1.0, hPx / 20.0);
+            const pulseConfidence = Number(Math.min(0.98, regularity * 0.5 + heightScore * 0.5).toFixed(3));
+
+            bestPulse = {
+              detected: true,
+              heightPx: hPx,
+              widthPx: plateauCols,
+              confidence: pulseConfidence
+            };
             break;
           }
         }

@@ -382,25 +382,19 @@
       // Atualiza calibração da sessão se medida na grade ou no objeto calibration
       const detectedCal = boundaries.calibration || boundaries.gridCalibration || null;
       if (detectedCal) {
-        const gc = detectedCal;
-        if (gc.calibrationSource === "measured" || gc.calibrationSource === "user_confirmed") {
+        const normalized = contracts?.normalizeCalibration ? contracts.normalizeCalibration(detectedCal) : detectedCal;
+        if (normalized.calibrationSource === "measured" || normalized.calibrationSource === "user_confirmed") {
           sessionCalibration = {
             ...sessionCalibration,
-            paperSpeedMmPerSec: gc.paperSpeedMmPerSec || sessionCalibration.paperSpeedMmPerSec,
-            gainMmPerMv: gc.gainMmPerMv || sessionCalibration.gainMmPerMv,
-            calibrationSource: gc.calibrationSource,
-            confirmedByUser: Boolean(gc.confirmedByUser || sessionCalibration.confirmedByUser),
-            pixelsPerMmX: gc.pixelsPerMmX,
-            pixelsPerMmY: gc.pixelsPerMmY,
-            msPerPixel: gc.msPerPixel,
-            mvPerPixel: gc.mvPerPixel
+            ...normalized,
+            confirmedByUser: Boolean(normalized.confirmedByUser || sessionCalibration.confirmedByUser)
           };
         } else if (sessionCalibration.calibrationSource === "unknown") {
-          sessionCalibration.calibrationSource = gc.calibrationSource || "assumed";
-          sessionCalibration.pixelsPerMmX = gc.pixelsPerMmX;
-          sessionCalibration.pixelsPerMmY = gc.pixelsPerMmY;
-          sessionCalibration.msPerPixel = gc.msPerPixel;
-          sessionCalibration.mvPerPixel = gc.mvPerPixel;
+          sessionCalibration = {
+            ...sessionCalibration,
+            ...normalized,
+            calibrationSource: normalized.calibrationSource || "assumed"
+          };
         }
       }
 
@@ -930,6 +924,36 @@
       return { allowed: true, sessionPackage: pkg };
     }
 
+    function getVideoTrack() {
+      if (!stream) return null;
+      const tracks = stream.getVideoTracks();
+      return tracks && tracks.length > 0 ? tracks[0] : null;
+    }
+
+    function getCameraCapabilities() {
+      const track = getVideoTrack();
+      if (!track || typeof track.getCapabilities !== "function") return {};
+      return track.getCapabilities() || {};
+    }
+
+    async function toggleTorch(enabled) {
+      const track = getVideoTrack();
+      if (!track || typeof track.getCapabilities !== "function" || typeof track.applyConstraints !== "function") {
+        return { ok: false, reason: "Torch API unsupported" };
+      }
+      const caps = track.getCapabilities() || {};
+      if (!caps.torch) {
+        return { ok: false, reason: "Torch hardware unavailable" };
+      }
+      try {
+        const target = typeof enabled === "boolean" ? enabled : !track.getSettings?.().torch;
+        await track.applyConstraints({ advanced: [{ torch: target }] });
+        return { ok: true, torch: target };
+      } catch (err) {
+        return { ok: false, error: err?.message || String(err) };
+      }
+    }
+
     return {
       startCamera,
       stopCamera,
@@ -945,7 +969,9 @@
       getCapturedLeads: () => Array.from(capturedLeads.values()),
       getCurrentStage: () => currentStage,
       setMode: m => { mode = m; },
-      updateHudProgress
+      updateHudProgress,
+      getCameraCapabilities,
+      toggleTorch
     };
   }
 
