@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261028-provisional-v6";
+const CACHE_VERSION = "luria-pwa-20261028-provisional-v7";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -27,6 +27,7 @@ const APP_SHELL = [
   "/questoes-simulados/",
   "/aprender/",
   "/feynman/",
+  "/professor-alex/",
   "/sessao-estudo/",
   "/consolidar/",
   "/cronograma/",
@@ -74,8 +75,11 @@ const APP_SHELL = [
   "/assets/css/ui-app.css?v=7",
   "/assets/css/dashboard-ui-v2.css?v=1",
   "/assets/css/education-ui-v2.css?v=2",
-  "/assets/css/feynman.css?v=20261026-1",
-  "/assets/js/feynman.mjs?v=20261028-daily-feynman",
+  "/assets/css/feynman.css?v=20261028-alex-integrated",
+  "/assets/js/feynman.mjs?v=20261028-alex-integrated",
+  "/assets/css/alex-feynman-mode.css?v=20261028-integrated",
+  "/assets/js/alex-feynman-mode.js?v=20261028-integrated",
+  "/assets/js/ui-routes.js?v=20261028-alex-feynman",
   "/assets/js/guided-study-daily.js?v=20261028-review-first",
   "/assets/js/guided-study-session-page.js?v=20261028-review-first",
   "/assets/css/social-v3.css?v=2",
