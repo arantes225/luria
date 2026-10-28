@@ -26,7 +26,7 @@
     body.luria-dual-active .note-studio .note-tree,body.luria-dual-active .note-studio .note-info{display:none!important}
     body.luria-dual-active .note-studio .note-canvas{min-width:0!important}
     body.luria-dual-embedded .sidebar,body.luria-dual-embedded .sidebar-backdrop,body.luria-dual-embedded .topbar,body.luria-dual-embedded .luria-page-spotlight,body.luria-dual-embedded .note-back-library,body.luria-dual-embedded .note-tree,body.luria-dual-embedded .note-info,body.luria-dual-embedded .book-outline{display:none!important}
-    body.luria-dual-embedded .app-shell,body.luria-dual-embedded .main,body.luria-dual-embedded .page,body.luria-dual-embedded .note-studio-wrap{margin:0!important;padding:0!important;width:100%!important;max-width:none!important;min-height:0!important}
+    body.luria-dual-embedded .app-shell,body.luria-dual-embedded .main,body.luria-dual-embedded .page,body.luria-dual-embedded .note-studio-wrap{display:block!important;grid-template-columns:minmax(0,1fr)!important;margin:0!important;padding:0!important;width:100%!important;max-width:none!important;min-height:0!important}
     body.luria-dual-embedded .note-studio,body.luria-dual-embedded .book-page{display:block!important;padding:6px!important;width:100%!important;max-width:none!important}
     body.luria-dual-embedded .book-main,body.luria-dual-embedded .note-canvas,body.luria-dual-embedded .notebook-editor{width:100%!important;max-width:none!important;min-width:0!important}
     body.luria-dual-embedded .luria-dual-actions{display:none!important}
@@ -122,7 +122,16 @@
       try { localStorage.setItem(storage, String(ratio)); } catch {}
     });
     reset.addEventListener("click", () => { set(50); try { localStorage.setItem(storage, "50"); } catch {} });
-    const teardown = () => {
+    const teardown = async () => {
+      try {
+        if (typeof window.LuriaStudySave === "function" && !(await window.LuriaStudySave())) return;
+        const embeddedSave = iframe.contentWindow?.LuriaStudySave;
+        if (typeof embeddedSave === "function" && !(await embeddedSave())) return;
+      } catch (error) {
+        if (window.LuriaDialog?.alert) window.LuriaDialog.alert(error?.message || "Salve as anotações antes de fechar a divisão.");
+        else alert("Não foi possível salvar as anotações.");
+        return;
+      }
       parent.insertBefore(primary, marker); primary.classList.remove("luria-dual-left");
       shell.remove(); bar.remove(); marker.remove(); document.body.classList.remove("luria-dual-active");
       if (typeof onClose === "function") onClose();
@@ -141,7 +150,7 @@
     open.addEventListener("click", () => location.assign(notesUrl().toString()));
     let teardown;
     divide.addEventListener("click", () => {
-      if (teardown) { teardown(); teardown = null; divide.textContent = "Dividir tela"; }
+      if (teardown) { void teardown(); }
       else { teardown = split(page, notesUrl(), "Apostila + Anotações", () => { teardown = null; divide.textContent = "Dividir tela"; }); if (teardown) divide.textContent = "Fechar divisão"; }
     });
     return;
@@ -192,11 +201,12 @@
       else location.assign(url.toString());
     });
     divide.addEventListener("click", async () => {
-      if (teardown) { teardown(); teardown = null; divide.textContent = "Dividir tela"; return; }
+      if (teardown) { await teardown(); return; }
       await refresh(); if (!target) return;
       teardown = split(studio, withNoteId(new URL(target, location.origin)), "Anotações + Apostila", () => { teardown = null; divide.textContent = "Dividir tela"; });
       if (teardown) divide.textContent = "Fechar divisão";
     });
+    window.LuriaStudySave = safeSave;
     getCatalog().then(refresh);
     const title = document.getElementById("notebook-document-title");
     if (title) new MutationObserver(() => { if (!teardown) refresh(); })
