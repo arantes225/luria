@@ -50,6 +50,8 @@
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261023-content-fit">
   <link rel="stylesheet" href="/assets/css/professor-alex-page.css?v=20261013-2">
   <link rel="stylesheet" href="/assets/css/professor-alex-layout-20261021.css?v=2">
+  <link rel="stylesheet" href="/assets/css/feynman.css?v=20261028-alex-integrated">
+  <link rel="stylesheet" href="/assets/css/alex-feynman-mode.css?v=20261028-integrated">
   <style>
     /* O palco ocupa a viewport: a navegação fica fixa e somente o feed conversa rola. */
     html, body { height: 100%; overflow: hidden; }
@@ -130,6 +132,11 @@
 
             <!-- Controles compactos de resposta, acima do card do Alex. -->
             <div class="alex-mode-card" id="alex-mode-card">
+            <div class="alex-learning-modes" role="group" aria-label="Como estudar com o Professor Alex">
+              <button id="alex-study-mode-standard" type="button" aria-pressed="true">Conversar</button>
+              <button id="alex-study-mode-feynman" type="button" aria-pressed="false">Método Feynman</button>
+            </div>
+
               <div class="alex-mode-info">
                 <div class="alex-mode-title-row">
                   <span class="alex-mode-badge">Modo Normal</span>
@@ -196,6 +203,72 @@
               </form>
 
             </div>
+            <section id="alex-feynman-panel" class="alex-feynman-panel" aria-label="Método Feynman com o Professor Alex" hidden>
+              <header class="alex-feynman-intro">
+                <h2>Ensine ao Alex</h2>
+                <p>O Alex assume o papel de aluno, pergunta uma coisa por vez e mostra o que você domina e precisa revisar.</p>
+              </header>
+              <section id="feynman-setup" class="feynman-card feynman-setup" aria-labelledby="feynman-setup-title">
+        <div class="feynman-card-head">
+          <div><span class="feynman-step">Preparação</span><h2 id="feynman-setup-title">O que você vai ensinar?</h2></div>
+          <span class="feynman-duration">5 minutos</span>
+        </div>
+        <label class="feynman-field">
+          <span>Tema médico</span>
+          <input id="feynman-topic" maxlength="180" autocomplete="off" placeholder="Ex.: sepse, insuficiência cardíaca, diabetes mellitus">
+        </label>
+        <fieldset class="feynman-modes">
+          <legend>Como o Alex deve desafiar sua explicação?</legend>
+          <label><input type="radio" name="feynman-mode" value="iniciante"><span><strong>Aluno iniciante</strong><small>Pede clareza e questiona termos difíceis.</small></span></label>
+          <label><input type="radio" name="feynman-mode" value="questionador" checked><span><strong>Aluno questionador</strong><small>Explora mecanismos, causas e consequências.</small></span></label>
+          <label><input type="radio" name="feynman-mode" value="banca"><span><strong>Banca examinadora</strong><small>Exige precisão, justificativas e aplicação clínica.</small></span></label>
+        </fieldset>
+        <p class="feynman-privacy">Essa experiência acontece dentro do Professor Alex. A conversa fica vinculada à sua conta. A avaliação é educacional e não substitui validação clínica profissional.</p>
+        <p id="feynman-setup-status" class="feynman-setup-status" role="status"></p>
+        <button id="feynman-start" class="feynman-primary" type="button">Começar a ensinar</button>
+      </section>
+
+      <section id="feynman-session" class="feynman-session" hidden aria-labelledby="feynman-session-title">
+        <header class="feynman-session-bar">
+          <div><span id="feynman-mode-label">Aluno questionador</span><h2 id="feynman-session-title">Tema</h2></div>
+          <div class="feynman-clock" aria-live="polite"><span>Tempo restante</span><strong id="feynman-timer">05:00</strong></div>
+        </header>
+        <div class="feynman-progress" aria-hidden="true"><span id="feynman-progress-bar"></span></div>
+        <div id="feynman-feed" class="feynman-feed" aria-live="polite">
+          <article class="feynman-message feynman-message--ai"><span>Alex · aluno questionador</span><p>Estou pronto. Comece do seu jeito — vou ouvir antes de perguntar.</p></article>
+        </div>
+        <form id="feynman-form" class="feynman-composer">
+          <label for="feynman-explanation">Sua explicação</label>
+          <textarea id="feynman-explanation" rows="3" maxlength="4000" placeholder="Explique como se estivesse ensinando alguém pela primeira vez…"></textarea>
+          <div class="feynman-actions">
+            <button id="feynman-voice" class="feynman-secondary" type="button" aria-pressed="false">🎙 Falar</button>
+            <span id="feynman-status" role="status">O Alex fará uma pergunta por vez.</span>
+            <button id="feynman-send" class="feynman-primary" type="submit">Enviar explicação</button>
+          </div>
+          <div id="feynman-confirm" class="feynman-confirm" hidden>
+            <p id="feynman-confirm-copy"></p>
+            <button id="feynman-confirm-yes" type="button">Sim, usar isso</button>
+            <button id="feynman-confirm-again" type="button">Falar novamente</button>
+          </div>
+        </form>
+        <button id="feynman-finish" class="feynman-finish" type="button">Terminar e ver minha avaliação</button>
+      </section>
+
+      <section id="feynman-report" class="feynman-report" hidden aria-labelledby="feynman-report-title">
+        <header><span class="feynman-step">Avaliação final</span><h2 id="feynman-report-title">O que sua explicação revelou</h2><p id="feynman-report-summary"></p></header>
+        <div class="feynman-score"><strong id="feynman-report-score">—</strong><span>domínio demonstrado</span></div>
+        <div class="feynman-report-grid">
+          <article><h3>Pontos dominados</h3><ul id="feynman-mastered"></ul></article>
+          <article><h3>Lacunas para reforçar</h3><ul id="feynman-gaps"></ul></article>
+          <article><h3>Correções importantes</h3><ul id="feynman-errors"></ul></article>
+          <article><h3>Próximos passos</h3><ul id="feynman-next"></ul></article>
+        </div>
+        <nav class="feynman-recommendations" aria-label="Recomendações de estudo">
+          <a href="/apostilas/">Rever apostilas</a><a href="/resolver-questoes/">Fazer questões</a><a href="/flashcards/">Revisar flashcards</a><a href="/caderno-erros/">Abrir caderno de erros</a>
+        </nav>
+        <div class="feynman-report-actions"><button id="feynman-restart" class="feynman-primary" type="button">Explicar novamente</button><button id="alex-feynman-return-chat" type="button" class="feynman-secondary">Voltar ao chat do Alex</button></div>
+      </section>
+            </section>
           </div>
         </section>
       </div>
@@ -417,6 +490,8 @@
   <!-- A conversa de voz é controlada exclusivamente por professor-alex-gemini.mjs. -->
   <script type="module" src="/assets/js/professor-alex-gemini.mjs?v=20261026-rich-format1"></script>
   <script type="module" src="/assets/js/professor-alex-page.mjs?v=20261014-ready2"></script>
+  <script src="/assets/js/alex-feynman-mode.js?v=20261028-integrated"></script>
+  <script type="module" src="/assets/js/feynman.mjs?v=20261028-alex-integrated"></script>
 </body>
 </html>
 
