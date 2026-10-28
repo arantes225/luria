@@ -19,10 +19,15 @@
   <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
   <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
+  <link rel="stylesheet" href="/assets/css/luria-rotate-hint.css?v=1">
+  <link rel="stylesheet" href="/assets/css/ecg-smart-camera.css?v=1">
   <style>
     .ecg-shell{display:grid;gap:16px}
-    body.is-admin-pending .ecg-shell,body.is-admin-pending .ecg-lab,body.is-admin-denied .ecg-shell,body.is-admin-denied .ecg-lab{display:none}
-    #ecg-admin-gate{margin-top:16px}
+    .ecg-tabs{display:flex;gap:8px;flex-wrap:wrap}
+    .ecg-tab{border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:12px;padding:9px 14px;font-weight:800;font-size:13px;cursor:pointer;transition:.15s}
+    .ecg-tab.is-active{background:var(--accent);border-color:var(--accent);color:#fff}
+    .ecg-panel{display:none;gap:14px}
+    .ecg-panel.is-active{display:grid}
     .ecg-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
     .ecg-grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
     .ecg-card{padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:var(--shadow,0 8px 24px rgba(24,72,136,.08));display:grid;gap:10px;align-content:start}
@@ -50,50 +55,10 @@
     .ecg-output{padding:12px 14px;border-radius:11px;border:1px solid var(--border);background:color-mix(in srgb,var(--accent) 6%,var(--surface));font-weight:700;font-size:13px;line-height:1.5}
     .ecg-pre{margin:0;padding:14px;border-radius:12px;border:1px solid var(--border);background:var(--surface-2);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;white-space:pre-wrap;line-height:1.55}
     .ecg-lab{display:grid;gap:16px;margin-top:8px}
-    .ecg-camera{display:grid;gap:12px}
-    body.ecg-camera-open{overflow:hidden}
-    body[data-ui-nav="v2"].ecg-camera-open :is(.ui-mobile-navigation,.ui-mobile-tools){display:none!important}
-    .ecg-camera-page{position:fixed;inset:0;z-index:2147483647;box-sizing:border-box;width:100vw;height:100dvh;display:block;overflow:hidden;background:#071426;color:#fff}
-    .ecg-camera-page[hidden]{display:none}
-    .ecg-camera-page-inner{box-sizing:border-box;width:100%;height:100%;min-width:0;min-height:0;display:flex;flex-direction:column;gap:6px;padding:calc(6px + env(safe-area-inset-top)) calc(6px + env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) calc(6px + env(safe-area-inset-left));background:#071426}
-    .ecg-camera-topbar{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:38px}
-    .ecg-camera-topbar .ecg-camera-orientation{flex:1;min-width:0;padding:6px 10px;border-radius:9px;background:#243a56;color:#fff;font-size:12px}
-    .ecg-camera-topbar .ecg-btn{flex:none;min-height:40px;white-space:nowrap}
-    .ecg-camera-stage{position:relative;flex:1;min-height:0;width:100%;background:#0f172a;border-radius:10px;overflow:hidden}
-    .ecg-camera-stage[hidden]{display:none}
-    .ecg-camera-stage video{display:block;width:100%;height:100%;object-fit:contain}
-    .ecg-camera-stage.is-rotated video{transform:rotate(90deg) scale(1.7778)}
-    .ecg-camera-guide{display:none;position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:74%;height:17%;border:2px dashed #7dd3fc;border-radius:10px;pointer-events:none;box-sizing:border-box;box-shadow:0 0 0 999px rgba(3,10,25,.14)}
-    .ecg-camera-stage.is-detail .ecg-camera-guide{display:block}
-    .ecg-camera-stage.is-columns .ecg-camera-guide{width:44%;height:21%}
-    .ecg-camera-guide::after{content:"Derivação selecionada";position:absolute;top:-28px;left:0;color:#bae6fd;font-size:12px;font-weight:800}
-    .ecg-camera-overlay{position:absolute;left:10px;right:10px;top:8px;padding:7px 10px;border-radius:9px;background:rgba(8,19,38,.82);color:#fff;font-size:13px;font-weight:800;text-align:center;pointer-events:none}
-    .ecg-camera-controls{position:absolute;left:8px;right:8px;bottom:8px;display:flex;flex-wrap:wrap;align-items:end;justify-content:center;gap:6px;padding:7px;border-radius:12px;background:rgba(8,19,38,.84)}
-    .ecg-camera-controls .ecg-btn{min-height:44px}
-    .ecg-camera-controls .secondary{background:#e9f2ff;color:#10223d}
-    .ecg-camera-controls label{display:grid;gap:2px;min-width:130px;color:#fff;font-size:11px;font-weight:800}
-    .ecg-camera-controls select{min-height:42px;max-width:190px;padding:5px;border-radius:8px;background:#fff;color:#10223d}
-    .ecg-camera-controls [hidden]{display:none}
-    .ecg-camera-page-inner .ecg-status{display:none}
-    .ecg-camera-page-inner .ecg-camera-guidance{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
-    .ecg-camera-page-inner .ecg-camera-map{flex:1;min-height:0;overflow:auto;background:#192940;color:#fff}
-    .ecg-camera-page-inner .ecg-camera-map select{color:#10223d;background:#fff}
-    .ecg-camera-guidance{margin:0;padding:10px 12px;border-radius:10px;background:color-mix(in srgb,#0ea5e9 10%,var(--surface));color:var(--text);font-size:13px;line-height:1.45}
-    .ecg-camera-orientation{padding:11px 13px;border-radius:11px;background:color-mix(in srgb,#f59e0b 13%,var(--surface));color:var(--text);font-weight:800;font-size:14px}
-    .ecg-camera-map{display:grid;gap:10px;padding:14px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2)}
-    .ecg-camera-map[hidden]{display:none}
-    .ecg-camera-map [hidden]{display:none}
-    .ecg-camera-map img{max-width:100%;max-height:320px;object-fit:contain;justify-self:start;border-radius:9px;border:1px solid var(--border)}
-    .ecg-camera-map label{display:grid;gap:5px;font-size:13px;font-weight:700}
-    .ecg-camera-map select{max-width:360px;padding:9px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text)}
-    .ecg-camera-captures{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
-    .ecg-camera-captures a{display:grid;gap:5px;color:var(--accent);font-weight:700}
-    .ecg-camera-captures img{width:100%;aspect-ratio:16/9;object-fit:contain;background:#0f172a;border-radius:8px}
-    @media(max-height:460px) and (orientation:landscape){.ecg-camera-page-inner{gap:3px;padding:calc(3px + env(safe-area-inset-top)) calc(3px + env(safe-area-inset-right)) calc(3px + env(safe-area-inset-bottom)) calc(3px + env(safe-area-inset-left))}.ecg-camera-guide{width:58%}.ecg-camera-stage.is-columns .ecg-camera-guide{width:35%}.ecg-camera-topbar{min-height:34px}.ecg-camera-controls{padding:4px}.ecg-camera-controls .ecg-btn,.ecg-camera-controls select{min-height:38px}}
     @media(max-width:860px){.ecg-grid-2,.ecg-grid-3{grid-template-columns:1fr}}
   </style>
 </head>
-<body class="is-admin-pending" data-page="trabalho_ecg" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
+<body data-page="trabalho_ecg" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
   <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
   <script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
   <div class="app-shell">
@@ -108,86 +73,522 @@
         <section class="luria-page-spotlight" aria-label="ECG">
           <div class="luria-page-spotlight-copy">
             <strong data-page-title>ECG no Plantão</strong>
-            <small class="luria-page-spotlight-helper">Captura local, revisão da qualidade e interpretação administrativa do ECG.</small>
+            <small class="luria-page-spotlight-helper">Leitura sistemática em 7 passos, localização de parede culpada no IAM, Sgarbossa, bloqueios, taquiarritmias, gerador de laudo e leitor por IA.</small>
           </div>
         </section>
 
-        <section id="ecg-admin-gate" aria-live="polite">
-          <article class="ecg-card"><h2>Validando acesso administrativo…</h2><p>Aguarde um instante.</p></article>
-        </section>
-
         <section class="ecg-shell">
+          <!-- SELETOR PRINCIPAL: 3 ETAPAS DO SCANNER VS CALCULADORAS/GUIA -->
+          <nav class="ecg-tabs" role="tablist" aria-label="Módulos de ECG">
+            <button class="ecg-tab is-active" type="button" data-ecg-tab="scanner" aria-selected="true">⚡ Scanner Inteligente (3 Etapas)</button>
+            <button class="ecg-tab" type="button" data-ecg-tab="passos" aria-selected="false">1. Leitura em 7 Passos &amp; Calculadoras</button>
+            <button class="ecg-tab" type="button" data-ecg-tab="isquemia" aria-selected="false">2. IAM, Paredes &amp; Sgarbossa</button>
+            <button class="ecg-tab" type="button" data-ecg-tab="bloqueios" aria-selected="false">3. Bloqueios &amp; Eletrólitos</button>
+            <button class="ecg-tab" type="button" data-ecg-tab="arritmias" aria-selected="false">4. Taquiarritmias</button>
+            <button class="ecg-tab" type="button" data-ecg-tab="laudo" aria-selected="false">5. Gerador de Laudo</button>
+          </nav>
 
-        <section class="ecg-card ecg-camera" aria-labelledby="ecg-camera-title">
-          <h2 id="ecg-camera-title">Scanner local do ECG</h2>
-          <p>Comece com a folha inteira na câmera. Depois do mapeamento, aproxime uma derivação por vez. As imagens ficam no aparelho até você escolher uma para revisão.</p>
-          <button class="ecg-btn" id="ecg-camera-start" type="button">Abrir página da câmera</button>
-          <section id="ecg-camera-page" class="ecg-camera-page" aria-label="Página da câmera do ECG" hidden>
-           <div class="ecg-camera-page-inner">
-            <div class="ecg-camera-topbar">
-              <div id="ecg-camera-orientation" class="ecg-camera-orientation">Vire o celular para a horizontal e enquadre toda a folha.</div>
-              <button class="ecg-btn secondary" id="ecg-camera-stop" type="button" disabled>Voltar ao ECG</button>
+          <!-- PAINEL PRINCIPAL: SCANNER INTELIGENTE EM 3 ETAPAS -->
+          <div class="ecg-panel is-active" data-ecg-panel="scanner">
+            <!-- INDICADOR DE PROGRESSO DAS 3 ETAPAS -->
+            <div class="ecg-card" style="padding:14px 18px">
+              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
+                <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+                  <span id="ecg-step-indicator-1" class="ecg-step-badge" style="background:var(--accent);color:#fff;width:auto;padding:6px 14px;border-radius:10px">1. Captura com Câmera</span>
+                  <span style="color:var(--muted);font-weight:900">→</span>
+                  <span id="ecg-step-indicator-2" class="ecg-step-badge" style="opacity:0.6;width:auto;padding:6px 14px;border-radius:10px">2. Traçados Extraídos</span>
+                  <span style="color:var(--muted);font-weight:900">→</span>
+                  <span id="ecg-step-indicator-3" class="ecg-step-badge" style="opacity:0.6;width:auto;padding:6px 14px;border-radius:10px">3. Revisão com IA</span>
+                </div>
+              </div>
             </div>
-            <div id="ecg-camera-stage" class="ecg-camera-stage" hidden>
-            <video id="ecg-camera-video" playsinline muted aria-label="Prévia da câmera local"></video>
-            <div class="ecg-camera-guide" aria-hidden="true"></div>
-            <div id="ecg-camera-overlay" class="ecg-camera-overlay" aria-hidden="true">Enquadre a folha inteira.</div>
-            <canvas id="ecg-camera-canvas" hidden></canvas>
-            <div class="ecg-camera-controls">
-              <button class="ecg-btn secondary" id="ecg-camera-torch" type="button" disabled>Ligar lanterna</button>
-              <label id="ecg-camera-lead-field" hidden>Derivação visível agora
-                <select id="ecg-camera-lead">
-                  <option value="">Selecione ou marque como não identificada</option>
-                  <option value="unknown">Não identificada</option>
-                  <option>DI</option><option>DII</option><option>DIII</option><option>aVR</option><option>aVL</option><option>aVF</option>
-                  <option>V1</option><option>V2</option><option>V3</option><option>V4</option><option>V5</option><option>V6</option>
-                </select>
-              </label>
-              <button class="ecg-btn" id="ecg-camera-capture" type="button" disabled>Mapear folha inteira</button>
-            </div>
-            </div>
-            <div id="ecg-camera-guidance" class="ecg-camera-guidance" aria-live="polite">Abra a câmera para mapear o formato da folha. A captura automática começa quando o enquadramento estiver pronto.</div>
-            <div id="ecg-camera-quality" class="ecg-status">A qualidade local aparecerá após abrir a câmera.</div>
-            <div id="ecg-camera-map" class="ecg-camera-map" hidden>
-            <strong id="ecg-camera-layout-result">Formato ainda não identificado.</strong>
-            <img id="ecg-camera-map-preview" alt="Foto ampla do ECG para confirmar o formato">
-            <label>Confirme o formato da folha
-              <select id="ecg-camera-layout-select">
-                <option value="unknown">Não tenho certeza</option>
-                <option value="stacked">Derivações longas empilhadas</option>
-                <option value="columns">Várias derivações por linha</option>
-                <option value="other">Outro formato</option>
-              </select>
-            </label>
-            <button class="ecg-btn" id="ecg-camera-map-confirm" type="button">Continuar para as derivações</button>
-            <button class="ecg-btn secondary" id="ecg-camera-map-retake" type="button">Refazer foto ampla</button>
-            </div>
-           </div>
-          </section>
-          <div id="ecg-camera-status" class="ecg-status">Câmera desligada.</div>
-          <div id="ecg-camera-captures" class="ecg-camera-captures" aria-live="polite"></div>
-        </section>
 
-        <section class="ecg-lab">
-          <article class="ecg-card">
-            <h2>Leitor de ECG por IA</h2>
-            <p><strong>Etapa 1 — Capturar e revisar.</strong> Confira a imagem original, a legibilidade e o enquadramento antes de avançar. A interpretação abaixo é uma etapa separada, baseada nesta imagem, não em um sinal digital validado.</p>
-            <div class="ecg-actions">
-              <label class="ecg-btn secondary" for="ecg-image">Selecionar imagem do ECG</label>
-              <input id="ecg-image" type="file" accept="image/jpeg,image/png,image/webp" hidden>
-              <button class="ecg-btn" id="ecg-analyze" disabled>Etapa 2 — Interpretar imagem</button>
+            <!-- ETAPA 1: CAPTURA INTELIGENTE -->
+            <article class="ecg-card" id="ecg-stage1-capture">
+              <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+                <div>
+                  <h2>Etapa 1 — Captura Inteligente com Câmera</h2>
+                  <p style="margin:0;color:var(--muted);font-size:13px">Aponte para a folha do ECG. A câmera identifica o exame e captura automaticamente assim que estabilizado.</p>
+                </div>
+                <div class="ecg-actions">
+                  <button class="ecg-btn" id="ecg-btn-start-fast" type="button">Abrir Câmera (Modo Automático)</button>
+                  <button class="ecg-btn secondary" id="ecg-btn-start-ultra" type="button">Modo Derivação por Derivação</button>
+                </div>
+              </div>
+
+              <!-- VIEWPORT DA CÂMERA -->
+              <div id="ecg-camera-viewport" class="ecg-viewport-container" hidden style="margin-top:14px">
+                <video id="ecg-video" class="ecg-camera-video" playsinline muted></video>
+                <canvas id="ecg-canvas-cv" class="ecg-camera-canvas-cv"></canvas>
+                <div class="ecg-hud-flash"></div>
+
+                <!-- HUD VISUAL DA CÂMERA -->
+                <div id="ecg-hud" class="ecg-hud-overlay">
+                  <div class="ecg-hud-topbar">
+                    <span class="ecg-hud-target-badge">ALVO: <span class="ecg-hud-target">DI</span></span>
+                    <span class="ecg-hud-counter">CAPTURADAS: <span class="ecg-hud-count">0 de 12</span></span>
+                  </div>
+
+                  <div class="ecg-hud-reticle-wrap">
+                    <div class="ecg-hud-reticle" data-status="searching"></div>
+                  </div>
+
+                  <div class="ecg-hud-bottombar">
+                    <div class="ecg-hud-lead-badges"></div>
+                    <div class="ecg-hud-message-box">
+                      <span class="ecg-hud-message">Aponte para o ECG...</span>
+                    </div>
+                    <div class="ecg-hud-progress-bar">
+                      <div class="ecg-hud-progress-fill"></div>
+                    </div>
+                    <button id="ecg-btn-cancel-camera" class="ecg-btn secondary" type="button" style="pointer-events:auto;margin-top:4px;padding:6px 12px;font-size:12px">Fechar Câmera</button>
+                  </div>
+
+                  <!-- MODAL DE IDENTIFICAÇÃO INCERTA (MODO ULTRASSENSÍVEL) -->
+                  <div id="ecg-uncertain-modal" class="ecg-uncertain-modal" hidden style="pointer-events:auto">
+                    <strong>Identificação incerta da derivação</strong>
+                    <p style="margin:4px 0 8px;font-size:12px;color:#e2e8f0">O traçado foi localizado, mas o rótulo impresso não pôde ser confirmado automaticamente. Reenquadre incluindo o rótulo ou confirme a derivação manualmente:</p>
+                    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:center">
+                      <select id="ecg-uncertain-select" style="padding:6px 10px;border-radius:8px;background:#0f172a;color:#fff;border:1px solid rgba(255,255,255,0.25);font-weight:700">
+                        <option value="DI">DI</option><option value="DII">DII</option><option value="DIII">DIII</option>
+                        <option value="aVR">aVR</option><option value="aVL">aVL</option><option value="aVF">aVF</option>
+                        <option value="V1">V1</option><option value="V2">V2</option><option value="V3">V3</option>
+                        <option value="V4">V4</option><option value="V5">V5</option><option value="V6">V6</option>
+                      </select>
+                      <button id="ecg-btn-confirm-uncertain" class="ecg-btn" type="button" style="padding:6px 12px;font-size:12px">Confirmar Derivação</button>
+                      <button id="ecg-btn-reject-uncertain" class="ecg-btn secondary" type="button" style="padding:6px 12px;font-size:12px">Reenquadrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- OPÇÃO DE UPLOAD ALTERNATIVO -->
+              <div style="margin-top:14px;padding-top:12px;border-top:1px dashed var(--border)">
+                <div class="ecg-actions">
+                  <label class="ecg-btn secondary" for="ecg-image">Ou carregue uma foto do ECG</label>
+                  <input id="ecg-image" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+                </div>
+                <div id="ecg-file-name" class="ecg-status">Nenhum ECG selecionado.</div>
+                <img id="ecg-image-preview" alt="Prévia do ECG selecionado" style="display:none;max-width:100%;max-height:520px;border-radius:12px;border:1px solid var(--border);margin-top:12px">
+              </div>
+            </article>
+
+            <!-- ETAPA 2: EXTRAÇÃO E CONFERÊNCIA DOS TRAÇADOS -->
+            <article class="ecg-card" id="ecg-stage2-review" hidden>
+              <div class="ecg-review-header">
+                <div>
+                  <h2>Etapa 2 — Traçados Extraídos, Calibração e Auditoria de Fidelidade</h2>
+                  <p style="margin:0;color:var(--muted);font-size:13px">Confira pixel a pixel cada onda reconstruída sobre a fotografia original, utilize zoom/arraste e confirme a calibração do papel.</p>
+                </div>
+                <div class="ecg-review-modes" role="radiogroup" aria-label="Modo de visualização">
+                  <label style="font-size:12px;display:flex;align-items:center;gap:4px;cursor:pointer">
+                    <input type="radio" name="ecg-view-mode" value="overlay" checked> Sobreposição Real (Pixel a Pixel)
+                  </label>
+                  <label style="font-size:12px;display:flex;align-items:center;gap:4px;cursor:pointer">
+                    <input type="radio" name="ecg-view-mode" value="digital"> Traçado Digital
+                  </label>
+                  <label style="font-size:12px;display:flex;align-items:center;gap:4px;cursor:pointer">
+                    <input type="radio" name="ecg-view-mode" value="original"> Foto Recortada Original
+                  </label>
+                </div>
+              </div>
+
+              <!-- PAINEL DE CALIBRAÇÃO REAL E AUDITORIA TÉCNICA INDEPENDENTE -->
+              <div class="ecg-calibration-bar" id="ecg-calibration-bar">
+                <div class="ecg-cal-group">
+                  <span class="ecg-cal-label">Origem da Escala:</span>
+                  <strong id="ecg-cal-source-badge" class="ecg-cal-badge">Verificando grade...</strong>
+                </div>
+                <div class="ecg-cal-group">
+                  <label for="ecg-cal-speed">Velocidade:</label>
+                  <select id="ecg-cal-speed">
+                    <option value="25" selected>25 mm/s (padrão)</option>
+                    <option value="50">50 mm/s</option>
+                  </select>
+                </div>
+                <div class="ecg-cal-group">
+                  <label for="ecg-cal-gain">Ganho:</label>
+                  <select id="ecg-cal-gain">
+                    <option value="10" selected>10 mm/mV (N)</option>
+                    <option value="5">5 mm/mV (N/2)</option>
+                    <option value="20">20 mm/mV (2N)</option>
+                  </select>
+                </div>
+                <button id="ecg-btn-confirm-calibration" class="ecg-btn secondary" type="button" style="padding:7px 12px;font-size:12px">
+                  Confirmar Escala Manualmente
+                </button>
+              </div>
+
+              <!-- RESUMO DO AUDITOR TÉCNICO E LEGENDA VISUAL -->
+              <div class="ecg-audit-summary-bar" id="ecg-audit-summary-bar">
+                <div id="ecg-audit-summary-text" style="font-size:12.5px">
+                  <strong>Auditoria Técnica de Extração:</strong> Aguardando processamento das derivações...
+                </div>
+                <div class="ecg-overlay-legend">
+                  <span><i class="ecg-dot-trace"></i> Curva Extraída</span>
+                  <span><i class="ecg-dot-error"></i> Descontinuidade / Ruído</span>
+                  <span><i class="ecg-dot-gap"></i> Trecho Ausente / Interpolado</span>
+                </div>
+              </div>
+
+              <div id="ecg-missing-alert" class="ecg-alert" hidden></div>
+
+              <div id="ecg-review-grid" class="ecg-review-grid" style="margin-top:12px"></div>
+
+              <!-- PORTÃO DE SEGURANÇA PARA A ETAPA 3 -->
+              <div class="ecg-stage3-gate">
+                <div class="ecg-safety-alert">
+                  <strong>Atenção técnica e clínica obrigatória:</strong> O Índice Técnico (0–100) mede exclusivamente a cobertura de pixels, continuidade da curva e nitidez da grade (<code>40×Cobertura + 30×Alinhamento + 20×Continuidade + 10×Calibração</code>) e <strong>não equivale a uma porcentagem de fidelidade clínica</strong>. Medições que dependem de escala exigem calibração medida ou confirmada.
+                </div>
+                <button class="ecg-btn" id="ecg-btn-confirm-and-ai" type="button" style="font-size:14px;padding:12px 20px">
+                  Conferência Aprovada → Prosseguir para Etapa 3 (IA)
+                </button>
+              </div>
+            </article>
+
+            <!-- ETAPA 3: REVISÃO PELA IA -->
+            <article class="ecg-card" id="ecg-stage3-ai" hidden>
+              <h2>Etapa 3 — Integração Estruturada e Interpretação por IA</h2>
+              <p>Os sinais digitalizados, máscaras de validade, calibração e auditoria da Etapa 2 são verificados quanto à compatibilidade estrita com o classificador eletrocardiográfico.</p>
+              <div id="ecg-stage3-package-summary" class="ecg-pre" style="font-size:12px;margin-bottom:8px">Nenhum pacote de sinais carregado na sessão.</div>
+              <div id="ecg-stage3-compatibility-alert" class="ecg-alert" hidden></div>
+              <div class="ecg-actions">
+                <button class="ecg-btn" id="ecg-analyze">Executar Interpretação pelo Modelo Autoral</button>
+                <button class="ecg-btn secondary" id="ecg-analyze-visual-assist" type="button">Assistente Visual Auxiliar (Experimental — Revisão de Imagem)</button>
+              </div>
+              <div id="ecg-status" class="ecg-status" aria-live="polite"></div>
+              <div id="ecg-result-card" hidden style="margin-top:12px">
+                <h3>Resultado sugerido</h3>
+                <div id="ecg-result"></div>
+                <p class="ecg-status" style="margin-top:8px">Revisar todos os achados diretamente no ECG e correlacionar com o contexto clínico.</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- PAINEL 1: 7 PASSOS E CALCULADORAS -->
+          <div class="ecg-panel" data-ecg-panel="passos">
+            <div class="ecg-grid-2">
+              <article class="ecg-card">
+                <h3>Calculadora de FC e Intervalo QTc pelo Papel (25 mm/s)</h3>
+                <p>No padrão de 25 mm/s, cada quadradinho (1 mm) = <strong>0,04 s (40 ms)</strong> e cada quadradão (5 mm) = <strong>0,20 s (200 ms)</strong>.</p>
+                <div class="ecg-grid-2">
+                  <label class="ecg-field">Distância R-R (em mm / quadradinhos)<input id="ecg-rr-mm" type="number" min="3" max="100" step="0.5" placeholder="Ex.: 20 (= 4 quadradões)"></label>
+                  <label class="ecg-field">Intervalo QT (em mm / quadradinhos — opcional)<input id="ecg-qt-mm" type="number" min="4" max="30" step="0.5" placeholder="Ex.: 10 (= 400 ms)"></label>
+                </div>
+                <label class="ecg-field">Sexo do paciente (para limite de QTc)<select id="ecg-sex"><option value="m">Masculino (normal ≤ 450 ms)</option><option value="f">Feminino (normal ≤ 470 ms)</option></select></label>
+                <button class="ecg-btn" id="ecg-calc-btn" type="button">Calcular FC e QTc</button>
+                <div class="ecg-output" id="ecg-calc-out">Preencha a distância R-R em milímetros para calcular FC e QTc (Bazett, Fridericia e Hodges).</div>
+                <small style="color:var(--muted);font-size:11.5px">Regra rápida de bolso para QT: se o intervalo QT for menor que a metade do intervalo R-R (em FC normal), o QTc geralmente é normal.</small>
+              </article>
+
+              <article class="ecg-card">
+                <h3>Avaliador Rápido do Eixo Elétrico (QRS em DI, aVF e DII)</h3>
+                <p>Observe a polaridade predominante do complexo QRS nas derivações frontais <strong>DI</strong> e <strong>aVF</strong> (e <strong>DII</strong> se aVF for negativo):</p>
+                <div class="ecg-grid-3">
+                  <label class="ecg-field">QRS em DI<select id="ecg-axis-d1"><option value="pos">Positivo (+)</option><option value="neg">Negativo (−)</option></select></label>
+                  <label class="ecg-field">QRS em aVF<select id="ecg-axis-avf"><option value="pos">Positivo (+)</option><option value="neg">Negativo (−)</option></select></label>
+                  <label class="ecg-field">QRS em DII<select id="ecg-axis-d2"><option value="pos">Positivo (+)</option><option value="neg">Negativo (−)</option></select></label>
+                </div>
+                <button class="ecg-btn" id="ecg-axis-btn" type="button">Determinar Eixo Elétrico</button>
+                <div class="ecg-output" id="ecg-axis-out">Eixo Normal (−30° a +90°): QRS positivo em DI e positivo em DII/aVF.</div>
+              </article>
             </div>
-            <div id="ecg-file-name" class="ecg-status">Nenhum ECG selecionado.</div>
-            <div id="ecg-capture-metadata" class="ecg-status">Dimensões e qualidade da captura aparecerão aqui.</div>
-            <label class="ecg-review-check"><input id="ecg-review-confirm" type="checkbox"> Revisei a imagem original e confirmo que ela está legível para uma tentativa de interpretação.</label>
-            <img id="ecg-image-preview" alt="Prévia do ECG selecionado" style="display:none;max-width:100%;max-height:520px;border-radius:12px;border:1px solid var(--border);margin-top:12px">
-            <div id="ecg-status" class="ecg-status" aria-live="polite"></div>
-          </article>
-          <article class="ecg-card" id="ecg-result-card" hidden>
-            <h2>Resultado sugerido</h2>
-            <div id="ecg-result"></div>
-            <p class="ecg-status">Revisar todos os achados diretamente no ECG e correlacionar com o contexto clínico.</p>
-          </article>
+
+            <div class="ecg-grid-3">
+              <article class="ecg-card">
+                <h3><span class="ecg-step-badge">1</span>Identificação e Calibração</h3>
+                <ul class="ecg-list">
+                  <li><strong>Velocidade padrão:</strong> 25 mm/s e ganho <strong>N (10 mm/mV)</strong>.</li>
+                  <li><strong>Troca de eletrodos de MMSS (erro comum!):</strong> Onda P e QRS totalmente negativos em <strong>DI</strong> com <strong>aVR positivo</strong> (com progressão normal em V1–V6, diferenciando da dextrocardia!).</li>
+                </ul>
+              </article>
+              <article class="ecg-card">
+                <h3><span class="ecg-step-badge">2</span>Ritmo e Frequência</h3>
+                <ul class="ecg-list">
+                  <li><strong>Ritmo Sinusal:</strong> Onda P positiva em <strong>DI, DII e aVF</strong> e negativa em <strong>aVR</strong>, precedendo todo QRS com intervalo R-R regular.</li>
+                  <li><strong>Ritmo Irregular (FC em FA):</strong> Contar o número de complexos QRS em <strong>30 quadradões (6 segundos)</strong> e multiplicar por <strong>10</strong>!</li>
+                </ul>
+              </article>
+              <article class="ecg-card">
+                <h3><span class="ecg-step-badge">3</span>Onda P e Intervalo PR</h3>
+                <ul class="ecg-list">
+                  <li><strong>Onda P normal:</strong> duração &lt; 120 ms (3 mm) e amplitude &lt; 2,5 mm. (SAE: índice de Morris em V1 / P mitrale ≥ 120 ms em DII; SAD: P pulmonale apiculada &gt; 2,5 mm em DII).</li>
+                  <li><strong>Intervalo PR normal:</strong> <strong>120 a 200 ms (3 a 5 mm)</strong>. Se &lt; 120 ms + onda delta = <strong>Pré-excitação (WPW)</strong>. Se &gt; 200 ms = <strong>BAV de 1º grau</strong>.</li>
+                </ul>
+              </article>
+              <article class="ecg-card">
+                <h3><span class="ecg-step-badge">4</span>Complexo QRS e Sobrecargas</h3>
+                <ul class="ecg-list">
+                  <li><strong>Duração normal:</strong> &lt; 120 ms (&lt; 3 mm).</li>
+                  <li><strong>Sobrecarga de VE (SVE):</strong> <em>Sokolow-Lyon:</em> S(V1) + R(V5 ou V6) &gt; 35 mm; <em>Cornell:</em> R(aVL) + S(V3) &gt; 28 mm (H) ou &gt; 20 mm (M); <em>Peguero-Lo Presti:</em> maior S + S(V4) ≥ 28 mm (H) ou ≥ 23 mm (M).</li>
+                  <li><strong>Baixa voltagem:</strong> QRS &lt; 5 mm nas periféricas e &lt; 10 mm nas precordiais (pensar em <strong>Tamponamento Cardíaco / Derrame Pericárdico</strong>, DPOC, obesidade, mixedema ou amiloidose).</li>
+                </ul>
+              </article>
+              <article class="ecg-card">
+                <h3><span class="ecg-step-badge">5</span>Segmento ST e Onda Q</h3>
+                <ul class="ecg-list">
+                  <li><strong>Supra de ST no IAMCSST (medido no ponto J):</strong> ≥ 1 mm em 2 derivações contíguas (em <strong>V2–V3</strong>: ≥ 2 mm em homens ≥ 40a; ≥ 2,5 mm em homens &lt; 40a; ≥ 1,5 mm em mulheres; em <strong>V3R/V4R e V7–V9</strong>: ≥ 0,5 mm).</li>
+                  <li><strong>Onda Q patológica:</strong> duração ≥ 40 ms (1 mm) e amplitude &gt; 25% da onda R subsequente.</li>
+                </ul>
+              </article>
+              <article class="ecg-card">
+                <h3><span class="ecg-step-badge">6–7</span>Onda T e Intervalo QTc</h3>
+                <ul class="ecg-list">
+                  <li><strong>Onda T hiperaguda:</strong> ampla, simétrica e apiculada (fase hiperaguda do IAM ou hipercalemia).</li>
+                  <li><strong>Inversão simétrica profunda (&gt; 3 mm) em V2–V4:</strong> Síndrome de Wellens (suboclusão crítica de DA) ou hipertensão intracraniana (ondas T cerebrais).</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <!-- PAINEL 2: IAM E PAREDES -->
+          <div class="ecg-panel" data-ecg-panel="isquemia">
+            <article class="ecg-card">
+              <h3>Localização Topográfica do IAM com Supra de ST e Artéria Coronária Culpada</h3>
+              <div class="ecg-table-wrap">
+                <table class="ecg-table">
+                  <thead>
+                    <tr>
+                      <th>Parede / Território</th>
+                      <th>Derivações com Supra de ST</th>
+                      <th>Artéria Culpada Mais Provável</th>
+                      <th>Cuidados e Armadilhas Críticas no Plantão</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Anterosseptal / Anterior</strong></td>
+                      <td><strong>V1 a V4</strong></td>
+                      <td><strong>Descendente Anterior (DA)</strong></td>
+                      <td>Se supra em V1 &gt; V2 + supra em aVR e BRD novo: oclusão de <strong>DA proximal</strong> (antes da 1ª septal). Alto risco de disfunção de VE e choque cardiogênico.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Anterior Extenso</strong></td>
+                      <td><strong>V1 a V6 + DI e aVL</strong></td>
+                      <td><strong>Tronco da Coronária Esquerda (TCE)</strong> ou DA Proximal</td>
+                      <td>Imagens em espelho (infra de ST) em DII, DIII e aVF. Evitar betabloqueador venoso precoce pelo alto risco de Killip III/IV!</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Lateral Alta / Lateral</strong></td>
+                      <td><strong>DI e aVL</strong> (± V5–V6)</td>
+                      <td><strong>Circunflexa (CX)</strong> ou 1º Ramo Diagonal da DA</td>
+                      <td>O supra isolado em aVL com infra recíproco em DIII pode ser o único sinal inicial de oclusão de Diagonal/Circunflexa!</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Inferior</strong></td>
+                      <td><strong>DII, DIII e aVF</strong></td>
+                      <td><strong>Coronária Direita (CD — 80%)</strong> ou Circunflexa (20%)</td>
+                      <td><strong>Dica CD vs. CX:</strong> Supra em DIII &gt; DII + Infra em DI/aVL = <strong>Coronária Direita!</strong> OBRIGATÓRIO rodar <strong>V3R e V4R</strong> em todo IAM inferior!</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Ventrículo Direito (VD)</strong></td>
+                      <td><strong>V3R e V4R</strong> (≥ 0,5 a 1 mm) + DII, DIII, aVF</td>
+                      <td><strong>Coronária Direita Proximal</strong></td>
+                      <td>Tríade: Hipotensão + Turgência Jugular + Pulmões Limpos! <strong>CONTRAINDICADOS Nitratos, Morfina e Furosemida!</strong> Tratar hipotensão com expansão de SF 0,9%.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Dorsal / Posterior</strong></td>
+                      <td><strong>V7, V8 e V9</strong> (≥ 0,5 mm)<br><small>Espelho em V1–V3: Infra de ST horizontal + R ampla (R/S &gt; 1)</small></td>
+                      <td><strong>Circunflexa (CX)</strong> ou Coronária Direita</td>
+                      <td>Todo <strong>Infra de ST puro em V1–V3</strong> com onda R alta em V1–V2 deve ser investigado com derivações posteriores <strong>V7–V9</strong> (é equivalente de IAM com Supra!).</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+
+            <div class="ecg-grid-2">
+              <article class="ecg-card">
+                <h3>Padrões Equivalentes de Oclusão Coronariana Aguda (OCA — Sem Supra Clássico!)</h3>
+                <ul class="ecg-list">
+                  <li><strong>Padrão de De Winter (Oclusão subaguda de DA proximal):</strong> Infradesnivelamento do ponto J de 1–3 mm ascendente em <strong>V1 a V6</strong> continuando-se em <strong>ondas T gigantes, positivas e simétricas</strong>. Conduta: <strong>Cateterismo de Emergência Imediato!</strong></li>
+                  <li><strong>Síndrome de Wellens (Suboclusão crítica de DA proximal):</strong> Paciente com história de dor anginosa recente (geralmente sem dor no momento do ECG) apresentando <strong>ondas T bifásicas (Plus-Minus, Tipo A)</strong> ou <strong>profundamente invertidas e simétricas (Tipo B) em V2–V3</strong>. Contraindicado teste ergométrico → <strong>Cinecoronariografia precoce!</strong></li>
+                  <li><strong>Supra de aVR ≥ 1 mm + Infra Difuso em ≥ 6 derivações:</strong> Sugere suboclusão de <strong>Tronco da Coronária Esquerda (TCE)</strong>, doença triarterial grave ou isquemia circunferencial subendocárdica.</li>
+                </ul>
+              </article>
+
+              <article class="ecg-card">
+                <h3>Critérios de Sgarbossa Modificados por Smith (IAM no BRE ou Marcapasso)</h3>
+                <p>No Bloqueio de Ramo Esquerdo (BRE), a repolarização normal é <strong>discordante</strong> do QRS. Há IAM agudo se houver qualquer um dos 3 critérios:</p>
+                <ul class="ecg-list">
+                  <li><strong>1. Supra de ST Concordante ≥ 1 mm</strong> em qualquer derivação com QRS positivo (<strong>5 pontos</strong> — altíssima especificidade!).</li>
+                  <li><strong>2. Infra de ST Concordante ≥ 1 mm em V1, V2 ou V3</strong> (onde o QRS do BRE é negativo — <strong>3 pontos</strong>).</li>
+                  <li><strong>3. Discordância Excessiva (Modificação de Smith):</strong> Supra de ST discordante com razão <strong>|ST / S| ≥ 0,25 (25%)</strong> (ou ≥ 5 mm pelo critério original).</li>
+                </ul>
+                <div class="ecg-alert"><strong>Diferencial de Supra de ST: IAM vs. Pericardite Aguda:</strong> Na Pericardite Aguda o supra é <strong>difuso</strong> (côncavo, 'sorridente', respeitando apenas aVR e V1), há <strong>infradesnível do segmento PR</strong> (e supra de PR em aVR), ausência de imagem em espelho (exceto aVR) e <strong>Sinal de Spodick</strong> (segmento TP descendente).</div>
+              </article>
+            </div>
+          </div>
+
+          <!-- PAINEL 3: BLOQUEIOS E ELETRÓLITOS -->
+          <div class="ecg-panel" data-ecg-panel="bloqueios">
+            <div class="ecg-grid-2">
+              <article class="ecg-card">
+                <h3>Bloqueios Atrioventriculares (BAVs — Do Benigno ao Marcapasso)</h3>
+                <div class="ecg-table-wrap">
+                  <table class="ecg-table">
+                    <thead>
+                      <tr>
+                        <th>Tipo de BAV</th>
+                        <th>Critério Eletrocardiográfico</th>
+                        <th>Nível Anatômico e Conduta</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>BAV de 1º Grau</strong></td>
+                        <td>Intervalo PR fixo <strong>&gt; 200 ms (&gt; 5 mm)</strong>, mas toda onda P conduz um QRS (1:1).</td>
+                        <td>Nó AV (Supra-hissiano). Benigno; revisar drogas bradicardizantes (BB, BCC, digoxina).</td>
+                      </tr>
+                      <tr>
+                        <td><strong>BAV 2º Grau Mobitz I (Wenckebach)</strong></td>
+                        <td>Aumento progressivo do intervalo PR (e encurtamento do R-R) até que <strong>1 onda P é bloqueada</strong>.</td>
+                        <td>Nó AV (Supra-hissiano). Geralmente benigno / vagotônico (comum no IAM inferior). Responde à Atropina se sintomático.</td>
+                      </tr>
+                      <tr>
+                        <td><strong>BAV 2º Grau Mobitz II</strong></td>
+                        <td>Intervalo PR <strong>constante/fixo</strong> nas batidas conduzidas até que subitamente <strong>1 onda P falha em conduzir</strong> (QRS frequentemente largo).</td>
+                        <td><strong>Infra-hissiano (Sistema His-Purkinje)!</strong> Alto risco de progressão súbita para BAV Total / Assistolia → <strong>Indicação de Marcapasso Definitivo!</strong> (Evitar Atropina isolada; preparar MP transcutâneo).</td>
+                      </tr>
+                      <tr>
+                        <td><strong>BAV Total (3º Grau)</strong></td>
+                        <td><strong>Dissociação AV completa:</strong> ondas P regulares ('P-P constante') e complexos QRS regulares ('R-R constante', FC 20–45 bpm) batendo de forma totalmente independente (FC atrial &gt; FC ventricular).</td>
+                        <td>Emergência se instável: <strong>Marcapasso Transcutâneo</strong> + Epinefrina (2–10 mcg/min) ou Dopamina (5–20 mcg/kg/min) como ponte para Marcapasso Transvenoso/Definitivo.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+
+              <article class="ecg-card">
+                <h3>Bloqueios de Ramo (QRS ≥ 120 ms) e Distúrbios Eletrolíticos no ECG</h3>
+                <ul class="ecg-list">
+                  <li><strong>Bloqueio de Ramo Direito (BRD):</strong> QRS ≥ 120 ms + padrão <strong>rSR' ('orelha de coelho' / M) em V1–V2</strong> + onda <strong>S empastada/larga em DI e V6</strong>.</li>
+                  <li><strong>Bloqueio de Ramo Esquerdo (BRE):</strong> QRS ≥ 120 ms + padrão <strong>QS ou rS profundo em V1</strong> ('cenoura') + onda <strong>R ampla, pura e entalhada (em torre) em DI, aVL, V5 e V6</strong> + ausência de onda q septal em DI/V5/V6.</li>
+                  <li><strong>Hipercalemia Progressiva (K⁺ elevado):</strong> 1º) <strong>Onda T apiculada em 'tenda'</strong> (base estreita) → 2º) Alargamento do PR e achatamento/desaparecimento da onda P → 3º) <strong>Alargamento difuso do QRS</strong> → 4º) <strong>Padrão Sinusoidal</strong> (pré-PCR! Fazer Gluconato de Cálcio 10% 10–20 mL IV imediatamente!).</li>
+                  <li><strong>Hipocalemia (K⁺ baixo):</strong> Achatamento/inversão da onda T, infra de ST e surgimento de <strong>Onda U proeminente (&gt; 1 mm ou maior que a onda T em V2–V3)</strong>, com pseudo-prolongamento do intervalo QU.</li>
+                  <li><strong>Tromboembolismo Pulmonar (TEP Agudo):</strong> Achado mais comum = <strong>Taquicardia Sinusal</strong>; achado de sobrecarga aguda de VD = inversão de onda T de V1 a V4 + padrão clássico <strong>S1Q3T3 (McGinn-White)</strong> ou BRD novo.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <!-- PAINEL 4: TAQUIARRITMIAS -->
+          <div class="ecg-panel" data-ecg-panel="arritmias">
+            <article class="ecg-card">
+              <h3>Abordagem Sistemática das Taquiarritmias (FC ≥ 100–150 bpm)</h3>
+              <div class="ecg-alert"><strong>REGRA #1 DO ACLS (ESTÁVEL vs. INSTÁVEL):</strong> Se a taquiarritmia causa <strong>Choque/Hipotensão, Dor Torácica Isquêmica, Edema Agudo de Pulmão ou Rebaixamento Agudo do Sensório</strong> (os 4 Ds de instabilidade): realizar <strong>CARDIOVERSÃO ELÉTRICA SINCRONIZADA IMEDIATA</strong> sob sedoanalgesia (100 a 200 J bifásico; na TV polimórfica sem pulso ou instável = Desfibrilação não sincronizada 200 J)!</div>
+              <div class="ecg-table-wrap">
+                <table class="ecg-table">
+                  <thead>
+                    <tr>
+                      <th>Padrão do QRS e Regularidade</th>
+                      <th>Diagnóstico Principal e Pistas de ECG</th>
+                      <th>Conduta no Paciente Hemodinamicamente Estável</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>QRS Estreito (&lt; 120 ms) + REGULAR</strong></td>
+                      <td><strong>Taquicardia Supraventricular Paroxística (TSVP — TRN / TRAV):</strong> Início súbito, FC 150–250 bpm, ondas P retrógradas ocultas no QRS ou logo após (pseudo-r' em V1 e pseudo-s em DII/DIII/aVF).<br><em>Diferencial:</em> Flutter Atrial 2:1 (FC cravada em ~150 bpm com ondas F 'dente de serra' em DII/DIII/aVF).</td>
+                      <td><strong>1º) Manobra Vagal de Valsalva Modificada</strong> (soprar seringa de 10 mL por 15s sentado e deitar a 0° elevando as pernas a 45° por 15s — reverte até 43%!).<br><strong>2º) Adenosina IV em flush rápido:</strong> 6 mg IV em bolus na prega cubital + flush 20 mL SF (se não reverter em 1–2 min: 12 mg IV).</td>
+                    </tr>
+                    <tr>
+                      <td><strong>QRS Estreito (&lt; 120 ms) + IRREGULAR</strong></td>
+                      <td><strong>Fibrilação Atrial (FA):</strong> R-R irregularmente irregular sem ondas P distintas (tremor de linha de base / ondas f).<br><em>Diferencial:</em> Taquicardia Atrial Multifocal (≥ 3 morfologias diferentes de onda P — típica do DPOC grave).</td>
+                      <td><strong>Controle de FC (&lt; 110 bpm):</strong> Metoprolol 5 mg IV lento (repetir até 15 mg se FEVE preservada e sem congestão) OU Deslanosídeo 0,4 mg IV / Amiodarona se IC descompensada. Avaliar tempo (&lt; 48h vs &gt; 48h) e anticoagulação.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>QRS Largo (≥ 120 ms) + REGULAR</strong></td>
+                      <td><strong>Taquicardia Ventricular Monomórfica (TV — 80% dos casos!)</strong> vs. TSV com aberrância (20%).<br><strong>Critérios de Brugada / Vereckei a favor de TV:</strong> Ausência de complexo RS em todas as precordiais V1–V6, intervalo R ao pico da S &gt; 100 ms, Dissociação AV, batimentos de fusão/captura ou eixo extremo (−90° a ±180°).</td>
+                      <td><strong>Na dúvida, tratar SEMPRE como Taquicardia Ventricular!</strong><br><strong>Amiodarona 150 mg (1 ampola)</strong> diluída em 100 mL SG 5% correr IV em 10 minutos + manutenção (1 mg/min por 6h e 0,5 mg/min por 18h) ou Cardioversão Elétrica Sincronizada Eletiva (100 J). <strong>NUNCA fazer Verapamil em taquicardia de QRS largo!</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>QRS Largo (≥ 120 ms) + IRREGULAR</strong></td>
+                      <td><strong>1) Torsades de Pointes (TV Polimórfica com QTc longo):</strong> QRS que torce seu eixo ao redor da linha de base.<br><strong>2) FA Pré-Excitada (Wolff-Parkinson-White):</strong> R-R irregular, FC &gt; 200–250 bpm, QRS variando de largura com onda delta.</td>
+                      <td><strong>No Torsades de Pointes:</strong> <strong>Sulfato de Magnésio 2 g IV</strong> em 10–15 min + corrigir K⁺ (&gt; 4,5 mEq/L).<br><strong>Na FA com WPW:</strong> <strong>Cardioversão Elétrica Sincronizada!</strong> (PROSCRITOS Adenosina, Metoprolol, Verapamil, Diltiazem, Digoxina e Amiodarona — bloqueiam o nó AV e precipitam FV!).</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          </div>
+
+          <!-- PAINEL 5: GERADOR DE LAUDO -->
+          <div class="ecg-panel" data-ecg-panel="laudo">
+            <article class="ecg-card">
+              <h3>Construtor Rápido de Laudo Eletrocardiográfico para Evolução / Prontuário</h3>
+              <p>Selecione os parâmetros encontrados no traçado e copie o texto estruturado diretamente para a evolução médica:</p>
+              <div class="ecg-grid-2">
+                <label class="ecg-field">1. Ritmo Cardíaco
+                  <select id="rep-rhythm">
+                    <option value="Ritmo sinusal regular">Ritmo sinusal regular</option>
+                    <option value="Taquicardia sinusal">Taquicardia sinusal</option>
+                    <option value="Bradicardia sinusal">Bradicardia sinusal</option>
+                    <option value="Ritmo de Fibrilação Atrial (R-R irregularmente irregular, ausência de ondas P)">Fibrilação Atrial (FA)</option>
+                    <option value="Ritmo de Flutter Atrial (ondas F em serrilhado)">Flutter Atrial</option>
+                    <option value="Taquicardia Supraventricular regular de QRS estreito">Taquicardia Supraventricular (TSVP)</option>
+                    <option value="Ritmo de comando de Marcapasso Artificial">Ritmo de Marcapasso</option>
+                  </select>
+                </label>
+                <label class="ecg-field">2. Frequência Cardíaca (bpm)
+                  <input id="rep-fc" type="number" min="20" max="300" value="75">
+                </label>
+                <label class="ecg-field">3. Onda P e Intervalo PR
+                  <select id="rep-pr">
+                    <option value="Intervalo PR normal (120–200 ms), sem sinais de pré-excitação">PR normal (120–200 ms), sem pré-excitação</option>
+                    <option value="Intervalo PR prolongado (> 200 ms — BAV de 1º grau)">PR prolongado (&gt; 200 ms — BAV 1º grau)</option>
+                    <option value="Intervalo PR curto (< 120 ms) com presença de onda delta (pré-excitação ventricular)">PR curto (&lt; 120 ms) com onda delta (WPW)</option>
+                    <option value="Ondas P ausentes (substituídas por ondas fibrilatórias f)">Ondas P ausentes (FA)</option>
+                  </select>
+                </label>
+                <label class="ecg-field">4. Eixo Elétrico no Plano Frontal
+                  <select id="rep-axis">
+                    <option value="Eixo elétrico normal no plano frontal (entre -30° e +90°)">Eixo normal (−30° a +90°)</option>
+                    <option value="Desvio do eixo elétrico para a esquerda (além de -30° / BDAS)">Desvio do eixo para a esquerda (além de −30°)</option>
+                    <option value="Desvio do eixo elétrico para a direita (além de +90°)">Desvio do eixo para a direita (além de +90°)</option>
+                  </select>
+                </label>
+                <label class="ecg-field">5. Duração e Morfologia do QRS
+                  <select id="rep-qrs">
+                    <option value="QRS estreito (< 120 ms), amplitude e progressão de onda R preservadas em precordiais">QRS estreito (&lt; 120 ms), sem bloqueios de ramo</option>
+                    <option value="QRS alargado (>= 120 ms) com padrão de Bloqueio de Ramo Direito (rSR' em V1 e S empastada em V6)">Bloqueio de Ramo Direito (BRD)</option>
+                    <option value="QRS alargado (>= 120 ms) com padrão de Bloqueio de Ramo Esquerdo (QS em V1 e R ampla entalhada em DI/V6)">Bloqueio de Ramo Esquerdo (BRE)</option>
+                    <option value="Critérios de voltagem para Sobrecarga Ventricular Esquerda (Sokolow-Lyon / Cornell positivos)">Sobrecarga Ventricular Esquerda (SVE)</option>
+                  </select>
+                </label>
+                <label class="ecg-field">6. Segmento ST, Onda T e QTc
+                  <select id="rep-st">
+                    <option value="Segmento ST isoelétrico, sem supra ou infradesnivelamento agudo; ondas T fisiológicas">ST isoelétrico, sem correntes de lesão agudas</option>
+                    <option value="Alterações inespecíficas da repolarização ventricular">Alterações inespecíficas da repolarização</option>
+                    <option value="Supradesnivelamento do segmento ST sugestivo de corrente de lesão subepicárdica aguda">Supradesnivelamento agudo de ST (especificar parede abaixo)</option>
+                    <option value="Infradesnivelamento do segmento ST / inversão de onda T sugestivos de isquemia subendocárdica">Infradesnivelamento de ST / inversão de onda T</option>
+                  </select>
+                </label>
+              </div>
+              <div class="ecg-grid-2">
+                <label class="ecg-field">7. Intervalo QTc
+                  <select id="rep-qtc">
+                    <option value="Intervalo QTc dentro dos limites da normalidade">QTc normal (≤ 450–470 ms)</option>
+                    <option value="Intervalo QTc prolongado (monitorar eletrólitos e medicações)">QTc prolongado (&gt; 450–470 ms)</option>
+                  </select>
+                </label>
+                <label class="ecg-field">8. Observação / Conclusão Adicional (Opcional)
+                  <input id="rep-obs" type="text" placeholder="Ex.: Seriamento eletrocardiográfico + curva de troponina em andamento.">
+                </label>
+              </div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap">
+                <button class="ecg-btn" id="ecg-build-report" type="button">Gerar Laudo Estruturado</button>
+                <button class="ecg-btn" id="ecg-copy-report" type="button" style="background:var(--surface-2);color:var(--text);border:1px solid var(--border)">Copiar para o Prontuário</button>
+              </div>
+              <pre class="ecg-pre" id="ecg-report-output">ELETROCARDIOGRAMA DE 12 DERIVAÇÕES (25 mm/s · 10 mm/mV):
+• Ritmo e FC: Ritmo sinusal regular, FC ~75 bpm.
+• Ondas P e Intervalo PR: Intervalo PR normal (120–200 ms), sem sinais de pré-excitação.
+• Eixo e Complexo QRS: Eixo elétrico normal no plano frontal (entre -30° e +90°); QRS estreito (&lt; 120 ms), amplitude e progressão de onda R preservadas em precordiais.
+• Repolarização (ST-T) e QTc: Segmento ST isoelétrico, sem supra ou infradesnivelamento agudo; ondas T fisiológicas; Intervalo QTc dentro dos limites da normalidade.
+• Conclusão: Traçado eletrocardiográfico sem sinais de isquemia miocárdica aguda ou arritmias malignas no momento.</pre>
+            </article>
+          </div>
         </section>
       </div>
     </main>
@@ -195,12 +596,13 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
-  <script src="/assets/js/ecg-admin-guard.js?v=20261027-admin1"></script>
-  <script src="/assets/js/trabalho-ecg.js?v=20261027-admin1"></script>
+  <script src="/assets/js/trabalho-ecg.js?v=20261026"></script>
+  <script src="/assets/js/luria-rotate-controller.js?v=1"></script>
+  <script src="/assets/js/ecg-signal-extractor.js?v=1"></script>
+  <script src="/assets/js/ecg-cv-engine.js?v=1"></script>
+  <script src="/assets/js/ecg-smart-camera.js?v=1"></script>
+  <script src="/assets/js/ecg-smart-ui.js?v=1"></script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
-  <script defer src="/assets/js/ecg-reader.js?v=20261027-stage2"></script>
-  <script defer src="/assets/js/ecg-layout.js?v=20261027-layout1"></script>
-  <script defer src="/assets/js/ecg-frame-guide.js?v=20261027-guide1"></script>
-  <script defer src="/assets/js/ecg-camera-map.js?v=20261027-page3"></script>
+  <script defer src="/assets/js/ecg-reader.js?v=1"></script>
 </body>
 </html>
