@@ -752,13 +752,23 @@ body[data-page="trabalho_ecg"] #ecg-guided-camera-page[data-capture-mode="ultras
 }
 body[data-page="trabalho_ecg"] .ecg-guided-camera-footer {
   flex: 0 0 auto;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: left;
   min-height: 18px;
 }
 body[data-page="trabalho_ecg"] .ecg-guided-camera-footer p {
   margin: 0;
   color: #bfdbfe;
   font: 500 12px/1.35 system-ui,sans-serif;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-footer .ecg-btn {
+  flex: 0 0 auto;
+  min-height: 40px;
+  background: #2563eb !important;
+  color: #fff !important;
 }
 body[data-page="trabalho_ecg"] #ecg-normal-photo-page {
   padding: max(8px,env(safe-area-inset-top)) max(10px,env(safe-area-inset-right))
@@ -792,6 +802,7 @@ body[data-page="trabalho_ecg"] #ecg-normal-photo-page .ecg-normal-photo-frame im
   body[data-page="trabalho_ecg"] .ecg-guided-camera-header .ecg-btn { min-height: 30px; padding: 4px 10px; }
   body[data-page="trabalho_ecg"] .ecg-guided-camera-footer { min-height: 14px; }
   body[data-page="trabalho_ecg"] .ecg-guided-camera-footer p { font-size: 11px; }
+  body[data-page="trabalho_ecg"] .ecg-guided-camera-footer .ecg-btn { min-height: 30px; padding: 4px 10px; }
   body[data-page="trabalho_ecg"] .ecg-guided-camera-mount .ecg-hud-bottombar { max-height: 38%; }
   body[data-page="trabalho_ecg"] #ecg-normal-photo-page .ecg-normal-photo-main {
     gap: 6px;

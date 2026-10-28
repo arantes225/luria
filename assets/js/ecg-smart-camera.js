@@ -50,6 +50,14 @@
   function isVerifiedEcgScene(detection) {
     return hasCredibleEcgCandidates(detection, false);
   }
+  function isCaptureReadyScene(detection) {
+    if (!detection?.sheet?.found || detection.sheet.isCutOff || detection.sheet.hasSeverePerspective) return false;
+    const candidates = Math.max(Number(detection.waveformCandidateCount || 0),
+      Number(detection.detectedLayout?.validWaveformCells || 0));
+    // Taking a local photograph may be permissive; naming and measuring leads
+    // remains protected by the stricter full-resolution extraction gate.
+    return candidates >= 2 || (detection.calibration?.gridDetected === true && candidates >= 1);
+  }
 
   // Template positions are *not* lead identities. Never publish a named
   // signal merely because an ECG-looking curve occupies an expected slot.
@@ -92,6 +100,7 @@
     let verifiedSince = 0;
     let hudHasVerifiedPaper = false;
     let lastFrameAnalyzedAt = -Infinity;
+    let cameraTrack = null;
 
     // Estado de calibração global da sessão (medida da grade, confirmada pelo usuário ou presumida)
     let sessionCalibration = {
@@ -269,13 +278,24 @@
           audio: false, // RIGOROSAMENTE SEM ÁUDIO
           video: {
             facingMode: { ideal: "environment" },
-            width: { ideal: 1920, min: 1280 },
-            height: { ideal: 1080, min: 720 }
+            width: { ideal: 3840 },
+            height: { ideal: 2160 },
+            aspectRatio: { ideal: 16 / 9 }
           }
         };
 
         if (typeof navigator !== "undefined" && navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
           stream = await navigator.mediaDevices.getUserMedia(constraints);
+          cameraTrack = stream.getVideoTracks?.()[0] || null;
+          const capabilities = cameraTrack?.getCapabilities?.() || {};
+          const advanced = [];
+          if (capabilities.focusMode?.includes?.("continuous")) advanced.push({ focusMode: "continuous" });
+          if (capabilities.exposureMode?.includes?.("continuous")) advanced.push({ exposureMode: "continuous" });
+          if (capabilities.whiteBalanceMode?.includes?.("continuous")) advanced.push({ whiteBalanceMode: "continuous" });
+          if (advanced.length) {
+            try { await cameraTrack.applyConstraints({ advanced }); }
+            catch (_) { /* Capability reports are inconsistent across mobile browsers. */ }
+          }
           if (videoEl) {
             videoEl.srcObject = stream;
             videoEl.setAttribute("playsinline", "true");
@@ -302,6 +322,7 @@
         stream.getTracks().forEach(track => track.stop());
         stream = null;
       }
+      cameraTrack = null;
       if (rotateController) {
         rotateController.stop();
       }
@@ -329,20 +350,31 @@
 
       const { quality, isStable, motionBlur, docDetection } = result;
       const hasEcgEvidence = isVerifiedEcgScene(docDetection);
-      if (hasEcgEvidence) {
+      const captureReadyEvidence = isCaptureReadyScene(docDetection);
+      if (captureReadyEvidence) {
         if (!verifiedFrameCount) verifiedSince = Date.now();
         verifiedFrameCount = Math.min(10, verifiedFrameCount + 1);
       } else {
         verifiedFrameCount = 0;
         verifiedSince = 0;
       }
-      const sceneReady = hasEcgEvidence && verifiedFrameCount >= 4 &&
+      const sceneReady = captureReadyEvidence && verifiedFrameCount >= 4 &&
         Date.now() - verifiedSince >= 400;
-      setHudPaperVerified(sceneReady);
-      if (!hasEcgEvidence) {
+      setHudPaperVerified(hasEcgEvidence);
+      if (!docDetection?.sheet?.found) {
         currentSheetMap = null;
         setReticleStatus("searching");
-        setHudMessage("Nenhuma folha de ECG confirmada. Aponte para o exame inteiro, com a grade e os rótulos visíveis.");
+        setHudMessage("Procure uma superfície clara: coloque a folha inteira do ECG no quadro.");
+        return;
+      }
+      if (docDetection.sheet.isCutOff) {
+        setHudMessage("Afaste o celular até aparecerem as quatro bordas da folha.");
+        setReticleStatus("adjusting");
+        return;
+      }
+      if (docDetection.sheet.hasSeverePerspective) {
+        setHudMessage("Alinhe a câmera paralela ao papel para reduzir a perspectiva.");
+        setReticleStatus("adjusting");
         return;
       }
       if (mode === "ultrasensitive") {
@@ -371,31 +403,6 @@
         return;
       }
 
-      // No close-up fallback is allowed before a real ECG is verified.
-      // Otherwise a keyboard, table or text document can be mistaken for a lead.
-      if (!sceneReady) {
-        setHudMessage("Verificando a folha do ECG e a grade. Mantenha o exame inteiro no quadro.");
-        setReticleStatus("searching");
-        return;
-      }
-
-      // Atualiza o mapa espacial verdadeiro quando detectado
-      currentSheetMap = docDetection;
-
-      // 4. Orientação direcional em tempo real quando buscando derivação específica
-      if (mode === "ultrasensitive" && currentTargetLead && currentSheetMap) {
-        // O centro da tela é a posição observada da câmera; a região alvo é registrada entre quadros.
-        const currentCenter = { x: 0.5, y: 0.5 };
-        cameraSpatialTracker.lastRoiCenter = currentCenter;
-
-        const nav = cvEngine.computeNavigationGuidance(currentSheetMap, currentTargetLead, currentCenter, cameraSpatialTracker);
-        if (nav && nav.direction !== "aligned" && nav.direction !== "centered") {
-          setHudMessage(nav.instruction || nav.message);
-          setReticleStatus("adjusting");
-          return;
-        }
-      }
-
       // 5. Se a folha foi detectada, mas há movimento
       if (motionBlur || !isStable) {
         setHudMessage("Mantenha parado.");
@@ -405,9 +412,34 @@
 
       // 6. Se nitidez for insuficiente
       if (quality.sharpnessScore < 22) {
-        setHudMessage("Mantenha parado para focar...");
+        setHudMessage("Aproxime um pouco e mantenha parado até as linhas ficarem nítidas.");
         setReticleStatus("adjusting");
         return;
+      }
+
+      if (!captureReadyEvidence) {
+        currentSheetMap = null;
+        setReticleStatus("searching");
+        setHudMessage("Folha encontrada. Aproxime devagar até a grade e pelo menos dois traçados ficarem visíveis.");
+        return;
+      }
+
+      if (!sceneReady) {
+        setHudMessage("ECG encontrado. Mantenha o celular parado por um instante para a foto automática.");
+        setReticleStatus("stabilizing");
+        return;
+      }
+
+      currentSheetMap = docDetection;
+      if (mode === "ultrasensitive" && currentTargetLead && currentSheetMap) {
+        const currentCenter = { x: 0.5, y: 0.5 };
+        cameraSpatialTracker.lastRoiCenter = currentCenter;
+        const nav = cvEngine.computeNavigationGuidance(currentSheetMap, currentTargetLead, currentCenter, cameraSpatialTracker);
+        if (nav && nav.direction !== "aligned" && nav.direction !== "centered") {
+          setHudMessage(nav.instruction || nav.message);
+          setReticleStatus("adjusting");
+          return;
+        }
       }
 
       // 7. Enquadramento e estabilidade alcançados -> Captura Autônoma
@@ -665,23 +697,28 @@
     /**
      * Captura autônoma durante o loop de vídeo da Etapa 1.
      */
-    function performAutonomousCapture(isGlobalCapture, frameAnalysis = null) {
-      if (autoCaptureLock || !isVerifiedEcgScene(frameAnalysis?.docDetection) ||
-          verifiedFrameCount < 4 || Date.now() - verifiedSince < 400) return;
+    function performAutonomousCapture(isGlobalCapture, frameAnalysis = null, manual = false) {
+      if (autoCaptureLock || (!manual && (!isCaptureReadyScene(frameAnalysis?.docDetection) ||
+          verifiedFrameCount < 4 || Date.now() - verifiedSince < 400))) return;
       autoCaptureLock = true;
 
       const snapCanvas = document.createElement("canvas");
-      snapCanvas.width = canvasEl.width || 640;
-      snapCanvas.height = canvasEl.height || 360;
+      // The live analyzer intentionally uses a 1280 px working preview, but
+      // extraction must use the native video frame. Otherwise each cell in a
+      // 12-lead sheet receives too few pixels to preserve P/ST/T morphology.
+      snapCanvas.width = videoEl?.videoWidth || canvasEl.width || 640;
+      snapCanvas.height = videoEl?.videoHeight || canvasEl.height || 360;
       const snapCtx = snapCanvas.getContext("2d");
-      snapCtx.drawImage(canvasEl, 0, 0);
+      snapCtx.drawImage(videoEl?.videoWidth ? videoEl : canvasEl, 0, 0, snapCanvas.width, snapCanvas.height);
 
       triggerVisualFlash();
 
       const extractor = global.LuriaEcgSignalExtractor;
 
       // 1. Tentativa de captura múltipla (tanto no modo Rápido quanto no Ultrassensível se várias derivações estiverem visíveis!)
-      const multiResult = processPhotographCanvas(snapCanvas, { source: "autonomous_camera" });
+      const multiResult = processPhotographCanvas(snapCanvas, {
+        source: manual ? "manual_camera" : "autonomous_camera"
+      });
 
       if (multiResult.ok && multiResult.capturedCount > 0) {
         if (isGlobalCapture && multiResult.provisionalCount > 0) {
@@ -836,6 +873,16 @@
       setTimeout(() => {
         autoCaptureLock = false;
       }, 1300);
+    }
+
+    function captureCurrentFrame() {
+      if (!isCapturingActive || !videoEl?.videoWidth || autoCaptureLock) {
+        setHudMessage("A câmera ainda não está pronta. Aguarde a imagem aparecer.", true);
+        return false;
+      }
+      setHudMessage("Fotografando em resolução máxima e extraindo os traçados…", true);
+      performAutonomousCapture(mode === "fast", null, true);
+      return true;
     }
 
     function saveCloseUpLeadCapture(leadName, cropCanvas, roiW, roiH, roiX, roiY, extractionResult, leadIdentity) {
@@ -1091,6 +1138,7 @@
       resetCaptureSession,
       recaptureLead,
       processPhotographCanvas,
+      captureCurrentFrame,
       openReview: transitionToStage2,
       confirmUncertainLeadCapture,
       rejectUncertainLeadCapture,
@@ -1106,7 +1154,7 @@
     };
   }
 
-  global.LuriaEcgSceneGuard = { isVerifiedEcgScene, hasCredibleEcgCandidates, isSafeAutomaticLeadAssignment };
+  global.LuriaEcgSceneGuard = { isVerifiedEcgScene, isCaptureReadyScene, hasCredibleEcgCandidates, isSafeAutomaticLeadAssignment };
 
   global.LuriaSmartCamera = {
     createController: createSmartCameraController,
