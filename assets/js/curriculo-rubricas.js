@@ -39,7 +39,7 @@
     {id:'extensao',title:'Extensão e representação',tone:'rose',criteria:['extensao','representacao']},
     {id:'qualificacoes',title:'Qualificações e suporte à vida',tone:'indigo',criteria:['pos','suporte']}
   ];
-  for (const [institution,region] of [['UNIFESP','SP'],['FMABC','SP'],['Santa Casa SP','SP'],['SES-DF','DF'],['SES-PE','PE'],['USP-RP','SP'],['PSU-MG','MG'],['Santa Casa BH','MG'],['PUC-Campinas','SP'],['UNICAMP','SP'],['Einstein','SP'],['UFPA','PA'],['PSU-GO','GO'],['PUC-SP','SP']]) {
+  for (const [institution,region] of [['UNIFESP','SP'],['FMABC','SP'],['Santa Casa SP','SP'],['SES-PE','PE'],['USP-RP','SP'],['PSU-MG','MG'],['PUC-Campinas','SP'],['UNICAMP','SP'],['Einstein','SP'],['UFPA','PA'],['PSU-GO','GO'],['PUC-SP','SP']]) {
     window.LuriaCurriculoRubricas.push({ id:institution.toLowerCase().replace(/[^a-z0-9]/g,'-')+'-pending', title:institution+' · Edital a conferir', institution, region, status:'pending', scope:'A avaliação curricular e a edição vigente deste processo ainda precisam ser confirmadas em edital oficial.' });
   }
   const psu=window.LuriaCurriculoRubricas.find(row=>row.institution==='PSU-MG');
@@ -175,34 +175,6 @@
       {id:'qualificacoes',title:'Qualificações',tone:'indigo',criteria:['ufpa-idiomas']}
     ]
   });
-  const sesdf=window.LuriaCurriculoRubricas.find(row=>row.institution==='SES-DF');
-  Object.assign(sesdf,{
-    id:'ses-df-2026-v20260125',title:'SES-DF · 2026 · Residência médica',edition:'2026',
-    status:'reviewed',max:10,checkedAt:'2026-10-17',
-    source:'https://www.iades.com.br/inscricao/upload/1363/2025102112433125.pdf',
-    updates:'https://www.iades.com.br/inscricao/upload/1363/202601250836896.pdf',
-    listing:'https://www.iades.com.br/inscricao/ProcessoSeletivo.aspx?id=50c5b1b7af',
-    scope:'Matriz oficial mais recente disponível em 17/10/2026, com formulário retificado. A edição 2027 ainda não estava publicada; a avaliação curricular desta edição vale até 10 pontos.',
-    criteria:[
-      criterion('df-monitoria','Monitoria na graduação em Medicina',1,11,'Cada semestre acadêmico completo, com pelo menos 90 dias letivos, vale 0,5 ponto.',[part('df-monitoria','Semestre elegível de monitoria',.5,2)]),
-      criterion('df-extensao','Extensão extracurricular e estágios',1,11,'Teto conjunto das alíneas B, C e D. Cursos exigem pelo menos 20 horas; projetos, um semestre; estágios, blocos de 40 horas nas instituições previstas.',[part('df-curso','Curso de extensão de pelo menos 20 horas',.1,10),part('df-projeto','Semestre acadêmico de projeto de extensão',.5,2),part('df-estagio','Bloco de 40 horas de estágio elegível',.1,10)]),
-      criterion('df-eventos','Participação em eventos científicos',1,11,'Congresso, seminário, simpósio, fórum ou jornada científica na área médica.',[part('df-evento','Participação elegível',.1,10)]),
-      criterion('df-comunicacoes','Comunicações em eventos científicos',1,11,'Apresentação oral, painel, pôster, banner ou forma equivalente de comunicação na área médica.',[part('df-comunicacao','Comunicação elegível',.2,5)]),
-      criterion('df-artigos','Artigos científicos',1,11,'Teto conjunto das alíneas G e H. Artigos indexados exigem DOI, ISSN e uma das bases admitidas; resumos em anais não pontuam.',[part('df-artigo-indexado','Artigo indexado elegível',.5,2),part('df-artigo-nao-indexado','Artigo não indexado elegível',.2,5)]),
-      criterion('df-ic','Iniciação científica e programas equivalentes',1,12,'Cada semestre acadêmico completo, com pelo menos 90 dias letivos, vale 0,5 ponto.',[part('df-ic','Semestre elegível',.5,2)]),
-      criterion('df-premios','Premiação na área médica',.5,12,'Premiação comprovada na área médica, observadas as exclusões do edital.',[part('df-premio','Premiação elegível',.25,2)]),
-      criterion('df-rondon','Projeto Rondon',1,12,'Participação comprovada no projeto.',[part('df-rondon','Participação elegível',1)]),
-      criterion('df-sus','Experiência profissional no SUS',2,12,'Blocos completos de 5 meses, com pelo menos 20 horas semanais, em serviço vinculado ao SUS.',[part('df-sus','Bloco elegível de 5 meses',.5,4)]),
-      criterion('df-historico','Desempenho no internato',.5,12,'Histórico com conceito A ou superior, nota pelo menos 8 ou aproveitamento de pelo menos 80%.',[part('df-historico','Histórico acadêmico elegível',.5)])
-    ],
-    groups:[
-      {id:'formacao',title:'Formação',tone:'violet',criteria:['df-historico']},
-      {id:'pesquisa',title:'Pesquisa e publicações',tone:'amber',criteria:['df-ic','df-artigos','df-comunicacoes','df-premios']},
-      {id:'academicas',title:'Atividades acadêmicas',tone:'blue',criteria:['df-monitoria']},
-      {id:'eventos',title:'Eventos científicos',tone:'teal',criteria:['df-eventos']},
-      {id:'extensao',title:'Extensão e experiência',tone:'rose',criteria:['df-extensao','df-rondon','df-sus']}
-    ]
-  });
   const santacasasp=window.LuriaCurriculoRubricas.find(row=>row.institution==='Santa Casa SP');
   Object.assign(santacasasp,{
     id:'santa-casa-sp-2027-direto-v20260921',title:'Santa Casa SP · 2027 · Acesso direto',edition:'2027',
@@ -322,14 +294,154 @@
     source:'https://documento.vunesp.com.br/documento/stream/Nzc3MTg1NA%3d%3d',listing:'https://www.vunesp.com.br/FEAE2603',
     scope:'O edital oficial de 2027 prevê análise curricular, mas determina que as atividades e os respectivos pesos sejam publicados em aditivo específico. Esse aditivo ainda não constava nas publicações oficiais em 17/10/2026.'
   });
-  Object.assign(window.LuriaCurriculoRubricas.find(row=>row.institution==='Santa Casa BH'),{
-    id:'santa-casa-bh-2027-sem-curriculo-v20260909',title:'Santa Casa BH · 2027 · Sem análise curricular',edition:'2027',status:'not-required',checkedAt:'2026-10-17',
-    source:'https://arquivos1.ibgpconcursos.com.br/site/anexos/777/Edital%2005-2026%20Resid%C3%AAncia%20M%C3%A9dica_Retific%201.pdf',listing:'https://novo.ibgpconcursos.com.br/concurso.jsp?cod=777',
-    scope:'O edital consolidado de 2027 estabelece etapa única de prova objetiva. Não há análise curricular neste processo seletivo.'
-  });
+  // SES-PE: avaliação curricular comum aos programas de Residência Médica, item 9 do edital 2027.
   Object.assign(window.LuriaCurriculoRubricas.find(row=>row.institution==='SES-PE'),{
-    id:'ses-pe-2027-edital-aguardado-v20261017',title:'SES-PE · 2027 · Edital aguardado',edition:'2027',status:'pending',checkedAt:'2026-10-17',
-    listing:'https://portal.saude.pe.gov.br/saude-oferta-1-598-vagas-para-programas-de-residencias-em-saude-em-pernambuco/',
-    scope:'A SES-PE anunciou análise curricular para 2027 e informou que os editais seriam publicados até 20/10/2026. Em 17/10/2026, a matriz oficial ainda não estava disponível.'
+    id:'ses-pe-2027-r1-v20261020',title:'SES-PE / SUS-PE · 2027 · R1',edition:'2027',
+    status:'reviewed',max:100,checkedAt:'2026-10-28',
+    source:'https://www.upenet.com.br/concursos/2027/27_RED_MED/Edital-e-Anexos/EDITAL%20RESID%C3%8ANCIA%20M%C3%89DICA-SUS-PE%202027%20-%20PUBLICA%C3%87%C3%83O.pdf',
+    listing:'https://www.upenet.com.br/concursos/2027/27_RED_MED/?concurso=27_resid_Med',
+    scope:'Acesso direto (R1), item 9, pp. 11–13. Prova 90%, currículo 10%. Enviar cada comprovante no campo e PDF próprios durante a inscrição. Conferir a errata oficial de 23/10/2026 e exigências de assinatura, período, autoria e não sobreposição.',
+    criteria:[
+      {...criterion('pe-historico','Aproveitamento curricular (média geral)',30,12,'Média global na escala 0–10 ou equivalente. Documentos oficiais; em situações sem equivalência aceita, aplica-se a faixa de 5 pontos.',[
+        part('pe-h90','Média geral maior ou igual a 9,0',30),part('pe-h80','Média geral maior ou igual a 8,0 e menor que 9,0',20),part('pe-h70','Média geral maior ou igual a 7,0 e menor que 8,0',10),part('pe-houtro','Média inferior ou conceitos sem equivalência reconhecida',5)
+      ]),exclusive:true},
+      criterion('pe-monitoria','Monitoria e/ou PID',15,12,'5 pontos por semestre elegível; cada semestre deve ter ao menos 108 horas e comprovação institucional.',[part('pe-mon','Semestre elegível (mínimo de 108 h)',5,3)]),
+      criterion('pe-pesquisa','Iniciação científica (PIBIC, PIC, PIBITI, PIVIC)',15,12,'5 pontos por ano de projeto elegível. Ver requisitos de participação, duração, carga horária e documentação do item 9.7.',[part('pe-ic','Ano elegível de projeto de pesquisa',5,3)]),
+      criterion('pe-extensao','Extensão, PET-Saúde, PET ou VER-SUS',20,12,'5 pontos por semestre de atividade elegível, com documentos exigidos no item 9.7.',[part('pe-ext','Semestre elegível',5,4)]),
+      criterion('pe-artigo','Artigo publicado com orientador ou preceptor',5,12,'Artigo de saúde publicado com participação de orientador e/ou preceptor; verificar autoria, publicação e comprovantes.',[part('pe-art','Artigo elegível publicado',5)]),
+      criterion('pe-oral','Apresentação oral / comunicação coordenada',10,12,'2 pontos por trabalho em evento científico; até 5 trabalhos.',[part('pe-oral','Trabalho elegível apresentado oralmente',2,5)]),
+      criterion('pe-poster','Apresentação de pôster',5,12,'1 ponto por trabalho em evento científico; até 5 trabalhos.',[part('pe-post','Trabalho elegível apresentado em pôster',1,5)])
+    ],
+    groups:[
+      {id:'formacao',title:'Histórico escolar',tone:'violet',criteria:['pe-historico']},
+      {id:'academicas',title:'Monitoria e iniciação científica',tone:'blue',criteria:['pe-monitoria','pe-pesquisa']},
+      {id:'extensao',title:'Extensão e comunidade',tone:'rose',criteria:['pe-extensao']},
+      {id:'pesquisa',title:'Produção científica',tone:'amber',criteria:['pe-artigo','pe-oral','pe-poster']}
+    ]
+  });
+
+  const unifesp=window.LuriaCurriculoRubricas.find(row=>row.institution==='UNIFESP');
+  const unifespPdf='https://ipmeducacao.com.br/wp-content/uploads/2026/10/UFSP2602_224_20260923140351.pdf-1.pdf';
+  // Edital nº 690/2026, item 15.1.7 (a partir da página impressa 23).
+  // Sem transcrição individual validada, o programa é selecionável, mas SEM nota inventada.
+  const r1Names=[
+    'Acupuntura','Anestesiologia','Cirurgia Cardiovascular','Cirurgia Geral','Clínica Médica',
+    'Dermatologia','Genética Médica','Infectologia','Medicina de Emergência',
+    'Medicina de Família e Comunidade','Medicina de Tráfego','Medicina Esportiva',
+    'Medicina Intensiva','Medicina Preventiva e Social','Neurocirurgia','Neurologia',
+    'Obstetrícia e Ginecologia','Oftalmologia','Ortopedia e Traumatologia',
+    'Otorrinolaringologia','Patologia','Patologia Clínica e Medicina Laboratorial',
+    'Pediatria','Psiquiatria','Radiologia e Diagnóstico por Imagem','Radioterapia'
+  ];
+  const slug=text=>text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+  unifesp.specialties=r1Names.map(name=>({
+    id:'unifesp-2027-r1-'+slug(name),
+    title:'UNIFESP · 2027 · '+name+' (R1)',institution:'UNIFESP',region:'SP',edition:'2027',
+    specialty:name,status:'program-specific',checkedAt:'2026-10-28',
+    source:unifespPdf,listing:'https://www.vunesp.com.br/UFSP2602',
+    scope:'Quadro individual de '+name+' no item 15.1.7 do Edital nº 690/2026. A especialidade está cadastrada, mas seus subitens ainda precisam de transcrição e validação individual antes de liberar a nota. Não utilizar pontuação de outra especialidade.',
+    criteriaOverview:[
+      'Instituição de origem e desempenho acadêmico','Atividades científicas e publicações',
+      'Monitoria, extensão e atividades extracurriculares','Congressos e cursos',
+      'Representação, distinções e proficiência — conforme quadro individual'
+    ]
+  }));
+  const uniSelect=name=>unifesp.specialties.find(r=>r.specialty===name);
+  Object.assign(uniSelect('Cirurgia Geral'),{
+    status:'reviewed',max:12,
+    source:unifespPdf+'#page=28',
+    scope:'Acesso direto R1, edital 690/2026, pp. 28–30; oito itens, máximo bruto de 12 pontos. Nota final da etapa = pontos × 10 / 12 (truncada pela banca a duas casas). Atividades válidas uma vez, com comprovantes formais, e prazos mínimos previstos em cada item.',
+    criteria:[
+      criterion('uni-cg-centro','Formação em centro de excelência',2,28,'Cumulativamente: hospital de ensino, residência médica credenciada, residência multiprofissional e programa stricto sensu com mestrado e doutorado; todos comprovados.',[part('uni-cg-centro1','Todos os quatro requisitos comprovados',2)]),
+      {...criterion('uni-cg-artigos','Artigo MEDLINE/PubMed',2,29,'Pelo menos um artigo aceito formalmente ou publicado e indexado; pontua a melhor posição de autoria, uma única vez.',[part('uni-cg-art-12','Primeiro ou segundo autor',2),part('uni-cg-art-outro','Outra posição de autoria',1)]),exclusive:true},
+      {...criterion('uni-cg-congresso','Congresso nos últimos 2 anos',2,29,'Somente Congresso de sociedade médica elegível; jornadas, fóruns e seminários não são aceitos.',[part('uni-cg-cong-trab','Congresso com apresentação comprovada',2),part('uni-cg-cong-ouv','Congresso sem apresentação',1)]),exclusive:true},
+      criterion('uni-cg-rep','Representação estudantil/acadêmica',1,29,'Cargo formal por ao menos 12 meses ininterruptos.',[part('uni-cg-rep1','Cargo elegível e período comprovado',1)]),
+      {...criterion('uni-cg-ic','Iniciação científica',2,29,'Mínimo de 12 meses ininterruptos; projeto e bolsa documentalmente comprovados.',[part('uni-cg-ic-b','Com bolsa',2),part('uni-cg-ic-v','Voluntária',1)]),exclusive:true},
+      criterion('uni-cg-extra','Atividade extracurricular acadêmica',1,30,'Monitoria, liga, extensão ou voluntariado médico formal por pelo menos 12 meses ininterruptos; uma vez.',[part('uni-cg-extra1','Atividade elegível',1)]),
+      criterion('uni-cg-premio','Prêmio ou distinção acadêmica',1,30,'Prêmio científico de primeiro lugar, láurea ou distinção médica formal elegível.',[part('uni-cg-premio1','Prêmio ou distinção válida',1)]),
+      criterion('uni-cg-idioma','Proficiência em idioma estrangeiro',1,30,'Teste oficial no patamar exigido (ex.: TOEFL iBT ≥80 ou IELTS ≥6,5). Curso de idioma não substitui exame.',[part('uni-cg-idioma1','Exame de proficiência válido',1)])
+    ],
+    groups:[
+      {id:'formacao',title:'Instituição de origem',tone:'violet',criteria:['uni-cg-centro']},
+      {id:'pesquisa',title:'Pesquisa e publicações',tone:'amber',criteria:['uni-cg-artigos','uni-cg-ic']},
+      {id:'academicas',title:'Atividades acadêmicas',tone:'blue',criteria:['uni-cg-extra','uni-cg-rep']},
+      {id:'eventos',title:'Congressos e distinções',tone:'teal',criteria:['uni-cg-congresso','uni-cg-premio']},
+      {id:'qualificacoes',title:'Proficiência',tone:'indigo',criteria:['uni-cg-idioma']}
+    ]
+  });
+  Object.assign(uniSelect('Acupuntura'),{
+    status:'reviewed',max:10,source:unifespPdf+'#page=23',
+    scope:'Acesso direto R1, edital 690/2026, pp. 23–24. A confirmação de requisitos e a nota final cabem à banca. Nos itens por faixa, só a melhor alternativa pontua.',
+    criteria:[
+      criterion('uni-ac-instit','Instituição de origem',1,23,'O conceito ENAMED da instituição é multiplicado por 0,1; os demais requisitos exigem certificado institucional.',[
+        part('uni-ac-hosp','Hospital de ensino credenciado',.25),
+        part('uni-ac-rm','Programas de residência médica credenciados',.125),
+        part('uni-ac-pg','Pós-graduação stricto sensu credenciada',.125),
+        part('uni-ac-en1','Conceito ENAMED 1',.1),part('uni-ac-en2','Conceito ENAMED 2',.2),part('uni-ac-en3','Conceito ENAMED 3',.3),part('uni-ac-en4','Conceito ENAMED 4',.4),part('uni-ac-en5','Conceito ENAMED 5',.5)
+      ]),
+      criterion('uni-ac-historico','Desempenho acadêmico e duração do internato',1,24,'Nota e horas padronizadas pelo edital. Os dois indicadores, conjuntamente, valem até 1 ponto.',[
+        part('uni-ac-cr','Parcela de coeficiente de rendimento (até 0,5)',.5),part('uni-ac-int','Parcela da duração do internato (até 0,5)',.5)
+      ]),
+      criterion('uni-ac-rep','Representação estudantil',1,24,'Atividade institucional elegível, com comprovação.',[part('uni-ac-rep1','Representação comprovada',1)]),
+      {...criterion('uni-ac-ic','Iniciação científica',.5,24,'Apenas a faixa mais elevada de participação elegível.',[part('uni-ac-icb','Com bolsa',.5),part('uni-ac-icv','Sem bolsa',.25)]),exclusive:true},
+      {...criterion('uni-ac-pub','Produção científica (melhor publicação)',.5,24,'Apenas a melhor produção documentada.',[part('uni-ac-pub1','SciELO: primeiro autor',.5),part('uni-ac-pub2','SciELO: coautor',.25),part('uni-ac-pub3','Outras publicações',.1)]),exclusive:true},
+      criterion('uni-ac-mon','Monitoria',1,24,'Monitoria acadêmica institucional documentada.',[part('uni-ac-mon1','Monitoria elegível',1)]),
+      {...criterion('uni-ac-extra','Atividade extracurricular',1,24,'Liga, extensão ou estágio extracurricular, sem pontuar o mesmo comprovante mais de uma vez.',[
+        part('uni-ac-liga','Liga acadêmica',1),part('uni-ac-ext','Projeto de extensão',1),part('uni-ac-est','Estágio supervisionado não curricular',1)
+      ]),exclusive:true},
+      criterion('uni-ac-cong','Congressos e cursos de extensão',1,25,'Participação elegível conforme exigências do programa.',[part('uni-ac-cong1','Congresso ou curso elegível',1)]),
+      criterion('uni-ac-premio','Prêmio ou distinção acadêmica',1,25,'Prêmio ou distinção comprovada.',[part('uni-ac-premio1','Prêmio elegível',1)]),
+      {...criterion('uni-ac-comun','Atividades comunitárias, culturais ou esportivas',1,25,'Pontuação única pela participação documentada, sem cumulatividade dentro do item.',[part('uni-ac-comun1','Atividade comunitária',1),part('uni-ac-cult1','Atividade cultural ou esportiva',1)]),exclusive:true},
+      criterion('uni-ac-idioma','Língua estrangeira',1,26,'Proficiência com comprovação conforme o programa.',[part('uni-ac-idioma1','Idioma elegível',1)])
+    ],
+    groups:[
+      {id:'formacao',title:'Formação e histórico',tone:'violet',criteria:['uni-ac-instit','uni-ac-historico']},
+      {id:'pesquisa',title:'Pesquisa e publicações',tone:'amber',criteria:['uni-ac-ic','uni-ac-pub']},
+      {id:'academicas',title:'Monitorias e extensão',tone:'blue',criteria:['uni-ac-mon','uni-ac-extra','uni-ac-rep']},
+      {id:'eventos',title:'Congressos e prêmios',tone:'teal',criteria:['uni-ac-cong','uni-ac-premio']},
+      {id:'extensao',title:'Comunidade',tone:'rose',criteria:['uni-ac-comun']},
+      {id:'qualificacoes',title:'Línguas',tone:'indigo',criteria:['uni-ac-idioma']}
+    ]
+  });
+  // Para Clínica Médica, os itens que dependem de média padronizada são apresentados
+  // com a ressalva de que o candidato só deve selecionar a fração plena se a atingir.
+  Object.assign(uniSelect('Clínica Médica'),{
+    status:'reviewed',max:10,source:unifespPdf+'#page=30',
+    scope:'Acesso direto R1, edital 690/2026, pp. 30–32. Os subitens de histórico e internato envolvem conversão proporcional definida pela banca. Esta calculadora estima pontuação plena desses subitens, sem inferir dados da graduação.',
+    criteria:[
+      criterion('uni-cm-instit','Instituição de origem',1.75,30,'A nota da instituição no ENAMED é multiplicada por 0,1, e tem teto declarado de 0,75. Marque uma única faixa ENAMED.',[
+        part('uni-cm-hosp','Hospital de ensino credenciado',.5),part('uni-cm-rm','Residência médica credenciada',.25),part('uni-cm-pg','Pós-graduação stricto sensu',.25),
+        part('uni-cm-en1','ENAMED conceito 1',.1),part('uni-cm-en2','ENAMED conceito 2',.2),part('uni-cm-en3','ENAMED conceito 3',.3),part('uni-cm-en4','ENAMED conceito 4',.4),part('uni-cm-en5','ENAMED conceito 5',.5)
+      ]),
+      criterion('uni-cm-hist','Histórico e internato',1,31,'Coeficiente de rendimento e duração do internato são padronizados. Cada parcela tem teto 0,5; valores parciais devem ser conferidos pela banca.',[part('uni-cm-cr','Parcela plena de rendimento acadêmico',.5),part('uni-cm-internato','Parcela plena de duração do internato',.5)]),
+      criterion('uni-cm-repr','Representação estudantil',.5,31,'Participação em representação acadêmica elegível.',[part('uni-cm-rep1','Representação documentada',.5)]),
+      {...criterion('uni-cm-ic','Iniciação científica',.75,31,'Escolha apenas a melhor modalidade elegível.',[part('uni-cm-icb','Com bolsa',.75),part('uni-cm-icv','Sem bolsa',.5)]),exclusive:true},
+      {...criterion('uni-cm-pub','Produção científica (melhor artigo)',.75,31,'Somente a melhor publicação documentada.',[part('uni-cm-pub1','SciELO: primeiro autor',.75),part('uni-cm-pub2','SciELO: coautor',.5),part('uni-cm-pub3','Outra publicação',.25)]),exclusive:true},
+      criterion('uni-cm-mon','Monitoria',1,31,'Participação em monitoria elegível.',[part('uni-cm-mon1','Monitoria comprovada',1)]),
+      {...criterion('uni-cm-extra','Liga, extensão ou estágio extracurricular',1,31,'Item não cumulativo. Pontuar somente a melhor atividade.',[part('uni-cm-liga','Liga acadêmica',1),part('uni-cm-ext','Projeto de extensão',.75),part('uni-cm-est','Estágio supervisionado não curricular',.75)]),exclusive:true},
+      criterion('uni-cm-cong','Congressos e cursos',1,31,'Subitens cumulativos até 1 ponto: ACLS/ATLS e similares (0,4), curso certificado com mais de 8 h por sociedade reconhecida (0,3), congressos (0,3).',[part('uni-cm-acls','Suporte avançado à vida',.4),part('uni-cm-curso','Curso certificado elegível',.3),part('uni-cm-cong1','Congresso científico',.3)]),
+      criterion('uni-cm-premio','Prêmio acadêmico',.25,31,'Prêmios e distinções acadêmicas elegíveis.',[part('uni-cm-premio1','Prêmio comprovado',.25)]),
+      {...criterion('uni-cm-comun','Atividades comunitárias/culturais/esportivas',1,32,'Pontua a melhor atividade, sem cumulação.',[part('uni-cm-comun1','Atividade comunitária',1),part('uni-cm-cult1','Atividade cultural ou esportiva',1)]),exclusive:true},
+      {...criterion('uni-cm-idioma','Língua estrangeira',1,32,'Conferir nível de proficiência.',[part('uni-cm-idioma-a','Avançada',1),part('uni-cm-idioma-i','Intermediária',.5),part('uni-cm-idioma-b','Básica',.25)]),exclusive:true}
+    ],
+    groups:[
+      {id:'formacao',title:'Formação e histórico',tone:'violet',criteria:['uni-cm-instit','uni-cm-hist']},
+      {id:'pesquisa',title:'Pesquisa e produção',tone:'amber',criteria:['uni-cm-ic','uni-cm-pub']},
+      {id:'academicas',title:'Atividades acadêmicas',tone:'blue',criteria:['uni-cm-mon','uni-cm-extra','uni-cm-repr']},
+      {id:'eventos',title:'Congressos e prêmios',tone:'teal',criteria:['uni-cm-cong','uni-cm-premio']},
+      {id:'extensao',title:'Comunidade',tone:'rose',criteria:['uni-cm-comun']},
+      {id:'qualificacoes',title:'Proficiência',tone:'indigo',criteria:['uni-cm-idioma']}
+    ]
+  });
+  Object.assign(unifesp,{
+    id:'unifesp-2027-r1-especialidades',title:'UNIFESP · 2027 · Escolher especialidade R1',
+    edition:'2027',status:'program-specific',checkedAt:'2026-10-28',
+    source:unifespPdf,listing:'https://www.vunesp.com.br/UFSP2602',
+    scope:'Selecione uma especialidade de acesso direto (R1) para consultar o quadro próprio do edital 690/2026. Nunca aplique automaticamente a matriz de outra especialidade.'
+  });
+  Object.assign(window.LuriaCurriculoRubricas.find(row=>row.institution==='Einstein'),{
+    checkedAt:'2026-10-28',title:'Einstein · 2027 · Critérios publicados, pesos aguardados',
+    scope:'Edital 2027, item 7.2.6: análise curricular com peso 1 (10% da nota final). São avaliados: iniciação científica documentada (horas/semanas/meses de dedicação na graduação), publicações PubMed (primeiro ou último autor, coautor, DOI e JCR na data da publicação) e mestrado/doutorado finalizado ou em curso. Enviar um PDF único de até 10 MB, nomeado CPF_Nome Completo, entre 05 e 09/12/2026. O edital remete a tabela de pontuação a aditivo específico, não confirmado nas publicações consultadas em 28/10; não se deve estimar pesos inexistentes.',
+    criteriaOverview:['Iniciação científica documentada e tempo de dedicação','Publicações PubMed, autoria, DOI e impacto JCR','Mestrado/doutorado concluído ou em andamento','Pontuação unitária: aguardando aditivo oficial']
   });
 })();
