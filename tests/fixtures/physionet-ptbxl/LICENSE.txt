@@ -1,0 +1,23 @@
+/* tests/fixtures/physionet-ptbxl/LICENSE.txt
+   PhysioNet PTB-XL Dataset License and Citation Information.
+
+   Data Source:
+   PTB-XL, a large publicly available electrocardiography dataset (version 1.0.3).
+   PhysioNet URL: https://physionet.org/content/ptb-xl/1.0.3/
+   DOI: https://doi.org/10.13026/kfzx-aw45
+
+   License:
+   Creative Commons Attribution 4.0 International (CC BY 4.0)
+   https://creativecommons.org/licenses/by/4.0/
+
+   Attribution:
+   Wagner, P., Strodthoff, N., Bousseljot, R., Kreiseler, D., Lunze, F. I., Samek, W., & Schaeffter, T. (2020).
+   PTB-XL, a large publicly available electrocardiography dataset. Scientific Data, 7(1), 154.
+   Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000).
+   PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals.
+   Circulation [Online]. 101 (23), pp. e215–e220.
+
+   Usage in LURIA:
+   Sample records 00001_lr (Patient 15709) and 00002_lr (Patient 13243) are utilized strictly for offline
+   automated benchmark validation of the signal digitizer against ground-truth raw ADC waveforms.
+*/

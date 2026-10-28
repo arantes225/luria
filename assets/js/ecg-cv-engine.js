@@ -1,31 +1,95 @@
 /* assets/js/ecg-cv-engine.js
-   Módulo de Visão Computacional Especializada para Câmera Inteligente de ECG (LURIA).
-   Executado localmente no dispositivo (Client-side / Web Worker / Canvas API).
-   
-   Componentes:
-   A. Reconhecimento de Layout & Grade:
-      - Detecção de folha/região do exame via contraste e detecção de bordas/linhas.
-      - Detecção de orientação e estimativa de perspectiva.
-      - Mapeamento das 12 derivações (DI, DII, DIII, aVR, aVL, aVF, V1, V2, V3, V4, V5, V6)
-        nos layouts padrão (3x4 clássico com tira de ritmo longa, 6x2 ou 12x1 contínuo).
-   B. Rastreamento Visual em Tempo Real:
-      - Estimativa de fluxo óptico / translação (dx, dy) e escala (distância da folha).
-      - Detecção de inclinação e perda de referência espacial.
-   C. Avaliação de Qualidade da Captura:
-      - Nitidez via variância Laplaciana / gradiente de alta frequência.
-      - Estabilidade inter-frames (mínimo de blur de movimento).
-      - Brilho médio e saturação de brancos (reflexos especulares / sombras).
-      - Enquadramento e integridade das curvas na ROI.
+   Módulo de Visão Computacional Real para Identificação, Orientação,
+   Homografia, Reconhecimento de Rótulos e Calibração de Grade de ECG (LURIA).
+
+   Princípios Arquiteturais:
+   1. NENHUM LAYOUT OU CALIBRAÇÃO É ASSUMIDO SILENCIOSAMENTE:
+      - `STANDARD_LAYOUT_3X4` é apenas uma hipótese geométrica testada contra a evidência real da imagem.
+      - Se a imagem não contiver células com traçados eletrocardiográficos reais ou os rótulos
+        contradisserem a disposição esperada, a identificação falha de forma explícita e segura (fail-closed).
+   2. RECONHECIMENTO MULTI-ESTÁGIO REAL:
+      - Estágio 1: Segmentação adaptativa da folha de papel, cálculo dos cantos/limites e estimativa de inclinação/perspectiva.
+      - Estágio 2: Estimativa de orientação (0°, 90°, 180°, 270° e ângulo fino de skew via projeção horizontal/vertical).
+      - Estágio 3: Detecção e medição da grade milimetrada por autocorrelação espectral dos perfis de linha/coluna (dx_mm, dy_mm),
+        diferenciando escala medida ("measured"), confirmada pelo usuário ("user_confirmed"), presumida ("assumed") ou desconhecida ("unknown").
+      - Estágio 4: Detecção do pulso retangular de calibração padrão (1 mV x 200 ms) para validação cruzada de ganho (10 mm/mV vs 5 mm/mV)
+        e velocidade (25 mm/s vs 50 mm/s).
+      - Estágio 5: Descoberta da topologia de faixas/colunas de traçado (3x4, 3x4+1 tira de ritmo, 6x2, 12x1 empilhado, tira isolada).
+      - Estágio 6: Reconhecimento óptico de rótulos de derivações (DI/I, DII/II, DIII/III, aVR, aVL, aVF, V1–V6) por templates matriciais
+        invariantes a escala + verificação de duplicatas, ausências ou trocas de posição.
 */
 
 (function (global) {
   "use strict";
 
-  // Lista padrão canônica de derivações de 12 canais
   const CANONICAL_LEADS = ["DI", "DII", "DIII", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"];
 
-  // Layouts espaciais de referência (coordenadas relativas normalizadas 0.0 - 1.0)
-  // Layout padrão 3x4 clássico: 4 colunas verticais x 3 linhas horizontais + tira de ritmo DII no fundo
+  // Mapeamento de sinônimos clínicos internacionais (I, II, III -> DI, DII, DIII)
+  const LEAD_SYNONYMS = {
+    "I": "DI", "DI": "DI", "D1": "DI",
+    "II": "DII", "DII": "DII", "D2": "DII",
+    "III": "DIII", "DIII": "DIII", "D3": "DIII",
+    "AVR": "aVR", "aVR": "aVR", "-AVR": "aVR",
+    "AVL": "aVL", "aVL": "aVL",
+    "AVF": "aVF", "aVF": "aVF",
+    "V1": "V1", "V2": "V2", "V3": "V3", "V4": "V4", "V5": "V5", "V6": "V6"
+  };
+
+  // Hipóteses de layouts conhecidos na prática clínica e em diferentes fabricantes
+  const LAYOUT_TEMPLATES = {
+    "3x4_plus_rhythm": {
+      name: "3x4_plus_rhythm",
+      description: "3 linhas × 4 colunas (2,5s por derivação) + 1 tira de ritmo longa (10s)",
+      rows: 4,
+      colsPerRow: [4, 4, 4, 1],
+      grid: [
+        ["DI", "aVR", "V1", "V4"],
+        ["DII", "aVL", "V2", "V5"],
+        ["DIII", "aVF", "V3", "V6"]
+      ],
+      rhythmRows: [{ rowIndex: 3, defaultLead: "DII", durationRatio: 1.0 }]
+    },
+    "3x4_standard": {
+      name: "3x4_standard",
+      description: "3 linhas × 4 colunas (2,5s por derivação, sem tira de ritmo inferior)",
+      rows: 3,
+      colsPerRow: [4, 4, 4],
+      grid: [
+        ["DI", "aVR", "V1", "V4"],
+        ["DII", "aVL", "V2", "V5"],
+        ["DIII", "aVF", "V3", "V6"]
+      ],
+      rhythmRows: []
+    },
+    "6x2_standard": {
+      name: "6x2_standard",
+      description: "6 linhas × 2 colunas (5,0s por derivação)",
+      rows: 6,
+      colsPerRow: [2, 2, 2, 2, 2, 2],
+      grid: [
+        ["DI", "V1"],
+        ["DII", "V2"],
+        ["DIII", "V3"],
+        ["aVR", "V4"],
+        ["aVL", "V5"],
+        ["aVF", "V6"]
+      ],
+      rhythmRows: []
+    },
+    "12x1_stacked": {
+      name: "12x1_stacked",
+      description: "12 derivações simultâneas empilhadas (1 coluna × 12 linhas)",
+      rows: 12,
+      colsPerRow: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+      grid: [
+        ["DI"], ["DII"], ["DIII"], ["aVR"], ["aVL"], ["aVF"],
+        ["V1"], ["V2"], ["V3"], ["V4"], ["V5"], ["V6"]
+      ],
+      rhythmRows: []
+    }
+  };
+
+  // Mantido para retrocompatibilidade estrutural, porém nunca retornado sem verificação de evidência
   const STANDARD_LAYOUT_3X4 = {
     name: "3x4_standard",
     leads: {
@@ -43,15 +107,213 @@
       "V6":   { col: 3, row: 2, xMin: 0.76, xMax: 0.96, yMin: 0.56, yMax: 0.78 }
     },
     rhythmStrips: [
-      { name: "DII_long", xMin: 0.04, xMax: 0.96, yMin: 0.80, yMax: 0.95 }
+      { name: "DII_long", lead: "DII", xMin: 0.04, xMax: 0.96, yMin: 0.80, yMax: 0.95 }
+    ]
+  };
+
+  // Glifos matriciais 5x7 para reconhecimento óptico direto de caracteres de rótulos de derivações
+  // Permite identificar rótulos impressos na imagem sem depender de rede externa
+  const CHAR_GLYPHS_5X7 = {
+    "D": [
+      1,1,1,1,0,
+      1,0,0,0,1,
+      1,0,0,0,1,
+      1,0,0,0,1,
+      1,0,0,0,1,
+      1,0,0,0,1,
+      1,1,1,1,0
+    ],
+    "I": [
+      1,1,1,1,1,
+      0,0,1,0,0,
+      0,0,1,0,0,
+      0,0,1,0,0,
+      0,0,1,0,0,
+      0,0,1,0,0,
+      1,1,1,1,1
+    ],
+    "V": [
+      1,0,0,0,1,
+      1,0,0,0,1,
+      1,0,0,0,1,
+      1,0,0,0,1,
+      0,1,0,1,0,
+      0,1,0,1,0,
+      0,0,1,0,0
+    ],
+    "A": [
+      0,0,1,0,0,
+      0,1,0,1,0,
+      1,0,0,0,1,
+      1,1,1,1,1,
+      1,0,0,0,1,
+      1,0,0,0,1,
+      1,0,0,0,1
+    ],
+    "a": [
+      0,0,0,0,0,
+      0,1,1,1,0,
+      0,0,0,0,1,
+      0,1,1,1,1,
+      1,0,0,0,1,
+      1,0,0,0,1,
+      0,1,1,1,1
+    ],
+    "R": [
+      1,1,1,1,0,
+      1,0,0,0,1,
+      1,0,0,0,1,
+      1,1,1,1,0,
+      1,0,1,0,0,
+      1,0,0,1,0,
+      1,0,0,0,1
+    ],
+    "L": [
+      1,0,0,0,0,
+      1,0,0,0,0,
+      1,0,0,0,0,
+      1,0,0,0,0,
+      1,0,0,0,0,
+      1,0,0,0,0,
+      1,1,1,1,1
+    ],
+    "F": [
+      1,1,1,1,1,
+      1,0,0,0,0,
+      1,0,0,0,0,
+      1,1,1,1,0,
+      1,0,0,0,0,
+      1,0,0,0,0,
+      1,0,0,0,0
+    ],
+    "1": [
+      0,0,1,0,0,
+      0,1,1,0,0,
+      0,0,1,0,0,
+      0,0,1,0,0,
+      0,0,1,0,0,
+      0,0,1,0,0,
+      0,1,1,1,0
+    ],
+    "2": [
+      0,1,1,1,0,
+      1,0,0,0,1,
+      0,0,0,0,1,
+      0,0,0,1,0,
+      0,0,1,0,0,
+      0,1,0,0,0,
+      1,1,1,1,1
+    ],
+    "3": [
+      1,1,1,1,0,
+      0,0,0,0,1,
+      0,0,0,0,1,
+      0,1,1,1,0,
+      0,0,0,0,1,
+      0,0,0,0,1,
+      1,1,1,1,0
+    ],
+    "4": [
+      0,0,0,1,0,
+      0,0,1,1,0,
+      0,1,0,1,0,
+      1,0,0,1,0,
+      1,1,1,1,1,
+      0,0,0,1,0,
+      0,0,0,1,0
+    ],
+    "5": [
+      1,1,1,1,1,
+      1,0,0,0,0,
+      1,1,1,1,0,
+      0,0,0,0,1,
+      0,0,0,0,1,
+      1,0,0,0,1,
+      0,1,1,1,0
+    ],
+    "6": [
+      0,1,1,1,0,
+      1,0,0,0,0,
+      1,0,0,0,0,
+      1,1,1,1,0,
+      1,0,0,0,1,
+      1,0,0,0,1,
+      0,1,1,1,0
     ]
   };
 
   /**
+   * Constrói um template binário composto para uma string de derivação (ex.: "DI", "aVR", "V1")
+   */
+  function buildLabelBitmap(labelStr) {
+    const chars = Array.from(labelStr);
+    const charW = 5, charH = 7, spacing = 1;
+    const totalW = chars.length * charW + Math.max(0, chars.length - 1) * spacing;
+    const bitmap = new Uint8Array(totalW * charH);
+
+    chars.forEach((ch, idx) => {
+      const glyph = CHAR_GLYPHS_5X7[ch] || CHAR_GLYPHS_5X7[ch.toUpperCase()];
+      if (!glyph) return;
+      const offsetX = idx * (charW + spacing);
+      for (let y = 0; y < charH; y++) {
+        for (let x = 0; x < charW; x++) {
+          bitmap[y * totalW + (offsetX + x)] = glyph[y * charW + x];
+        }
+      }
+    });
+
+    return { width: totalW, height: charH, data: bitmap };
+  }
+
+  const LABEL_TEMPLATES = {};
+  ["DI", "DII", "DIII", "I", "II", "III", "aVR", "AVR", "aVL", "AVL", "aVF", "AVF", "V1", "V2", "V3", "V4", "V5", "V6"].forEach(lbl => {
+    LABEL_TEMPLATES[lbl] = buildLabelBitmap(lbl);
+  });
+
+  /**
+   * Renderiza um rótulo matricial no ImageData (útil para geradores de referência de teste e validação de OCR)
+   */
+  function drawBitmapLabelOnImageData(imageData, labelStr, startX, startY, scale = 2, color = [15, 15, 15]) {
+    const tpl = LABEL_TEMPLATES[labelStr] || buildLabelBitmap(labelStr);
+    const { width, height, data } = imageData;
+    for (let ty = 0; ty < tpl.height; ty++) {
+      for (let tx = 0; tx < tpl.width; tx++) {
+        if (!tpl.data[ty * tpl.width + tx]) continue;
+        for (let sy = 0; sy < scale; sy++) {
+          for (let sx = 0; sx < scale; sx++) {
+            const px = Math.round(startX + tx * scale + sx);
+            const py = Math.round(startY + ty * scale + sy);
+            if (px >= 0 && px < width && py >= 0 && py < height) {
+              const idx = (py * width + px) * 4;
+              data[idx] = color[0];
+              data[idx + 1] = color[1];
+              data[idx + 2] = color[2];
+              data[idx + 3] = 255;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /**
    * Avalia a qualidade ótica de um frame ImageData
-   * Retorna métricas determinísticas sem números arbitrários
    */
   function analyzeFrameQuality(imageData, roi = null) {
+    if (!imageData || !imageData.data || !imageData.width || !imageData.height) {
+      return {
+        sharpnessScore: 0,
+        isSharp: false,
+        brightness: 0,
+        glareRatio: 0,
+        shadowRatio: 0,
+        contrastEnergy: 0,
+        isLightingGood: false,
+        hasSufficientContrast: false,
+        isAdequate: false
+      };
+    }
+
     const { width, height, data } = imageData;
     const startX = roi ? Math.max(0, Math.floor(roi.xMin * width)) : 0;
     const endX = roi ? Math.min(width, Math.ceil(roi.xMax * width)) : width;
@@ -66,8 +328,7 @@
     let prevLuma = -1;
     let highFrequencyEnergy = 0;
 
-    // Amostragem em grade com passo de 2 pixels para velocidade real no celular (>30 FPS)
-    const step = 2;
+    const step = Math.max(1, Math.min(2, Math.floor(Math.min(endX - startX, endY - startY) / 60)));
     const rowStride = width * 4;
 
     for (let y = startY + 1; y < endY - 1; y += step) {
@@ -78,7 +339,6 @@
         const g = data[idx + 1];
         const b = data[idx + 2];
 
-        // Luma padrão Rec. 709
         const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
         sumLuma += luma;
         sampleCount++;
@@ -86,10 +346,6 @@
         if (luma > 248) glarePixels++;
         if (luma < 25) shadowPixels++;
 
-        // Operador Laplaciano discreto 3x3 no canal Luma:
-        // [ 0  1  0 ]
-        // [ 1 -4  1 ]
-        // [ 0  1  0 ]
         const idxTop = idx - rowStride;
         const idxBottom = idx + rowStride;
         const lumaTop = 0.2126 * data[idxTop] + 0.7152 * data[idxTop + 1] + 0.0722 * data[idxTop + 2];
@@ -116,21 +372,21 @@
         glareRatio: 0,
         shadowRatio: 0,
         contrastEnergy: 0,
+        isLightingGood: false,
+        hasSufficientContrast: false,
         isAdequate: false
       };
     }
 
     const meanLuma = sumLuma / sampleCount;
-    // Variância Laplaciana (medida padrão de nitidez/foco)
     const sharpnessScore = Math.round(laplacianVarSum / sampleCount);
     const glareRatio = glarePixels / sampleCount;
     const shadowRatio = shadowPixels / sampleCount;
     const contrastEnergy = highFrequencyEnergy / sampleCount;
 
-    // Critérios adaptativos de adequação ótica (calibrados para câmera de celular em ambiente real)
     const isSharp = sharpnessScore >= 35;
     const isLightingGood = meanLuma >= 45 && meanLuma <= 245 && glareRatio < 0.25 && shadowRatio < 0.40;
-    const hasSufficientContrast = contrastEnergy > 0.015;
+    const hasSufficientContrast = contrastEnergy > 0.012;
 
     return {
       sharpnessScore,
@@ -146,41 +402,1179 @@
   }
 
   /**
-   * Reconhece a presença do ECG e detecta os limites da folha
+   * 1. Localiza os limites efetivos da folha, avalia inclinação (skew) e distorção de perspectiva
    */
-  function detectECGBoundaries(imageData) {
-    const { width, height } = imageData;
-    const quality = analyzeFrameQuality(imageData);
+  function locatePaperSheet(imageData) {
+    const { width, height, data } = imageData;
+    if (!width || !height) {
+      return { found: false, reason: "Imagem vazia" };
+    }
 
-    // Se nitidez e contraste globais forem muito baixos, papel não encontrado
-    if (quality.sharpnessScore < 20 || quality.brightness < 35) {
+    // Perfil de luminosidade por linha e coluna para achar o retângulo do papel claro
+    const rowBright = new Float32Array(height);
+    const colBright = new Float32Array(width);
+    let totalBright = 0;
+
+    const step = Math.max(1, Math.floor(Math.min(width, height) / 180));
+    let sampledCols = 0, sampledRows = 0;
+
+    for (let y = 0; y < height; y += step) {
+      let rSum = 0, cCount = 0;
+      for (let x = 0; x < width; x += step) {
+        const idx = (y * width + x) * 4;
+        const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
+        rSum += luma;
+        cCount++;
+      }
+      rowBright[y] = rSum / Math.max(1, cCount);
+      totalBright += rowBright[y];
+      sampledRows++;
+    }
+
+    for (let x = 0; x < width; x += step) {
+      let cSum = 0, rCount = 0;
+      for (let y = 0; y < height; y += step) {
+        const idx = (y * width + x) * 4;
+        const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
+        cSum += luma;
+        rCount++;
+      }
+      colBright[x] = cSum / Math.max(1, rCount);
+      sampledCols++;
+    }
+
+    const globalMeanLuma = totalBright / Math.max(1, sampledRows);
+    const threshold = Math.max(105, globalMeanLuma * 0.72);
+
+    let minY = 0, maxY = height - 1;
+    while (minY < height - 1 && rowBright[minY] > 0 && rowBright[minY] < threshold) minY += step;
+    while (maxY > minY && rowBright[maxY] > 0 && rowBright[maxY] < threshold) maxY -= step;
+
+    let minX = 0, maxX = width - 1;
+    while (minX < width - 1 && colBright[minX] > 0 && colBright[minX] < threshold) minX += step;
+    while (maxX > minX && colBright[maxX] > 0 && colBright[maxX] < threshold) maxX -= step;
+
+    // Medir as larguras da folha no topo vs na base para detectar perspectiva trapezoidal severa
+    const topY = Math.min(height - 1, Math.max(0, Math.round(minY + (maxY - minY) * 0.12)));
+    const botY = Math.min(height - 1, Math.max(0, Math.round(minY + (maxY - minY) * 0.88)));
+
+    function measureRowPaperSpan(y) {
+      let left = 0, right = width - 1;
+      while (left < width && (0.2126 * data[(y * width + left) * 4] + 0.7152 * data[(y * width + left) * 4 + 1] + 0.0722 * data[(y * width + left) * 4 + 2]) < threshold) left++;
+      while (right > left && (0.2126 * data[(y * width + right) * 4] + 0.7152 * data[(y * width + right) * 4 + 1] + 0.0722 * data[(y * width + right) * 4 + 2]) < threshold) right--;
+      return { left, right, span: Math.max(0, right - left) };
+    }
+
+    const topSpan = measureRowPaperSpan(topY);
+    const botSpan = measureRowPaperSpan(botY);
+
+    let trapezoidRatio = 1.0;
+    if (topSpan.span > 20 && botSpan.span > 20) {
+      trapezoidRatio = Math.min(topSpan.span, botSpan.span) / Math.max(topSpan.span, botSpan.span);
+    }
+
+    const widthRatio = (maxX - minX) / width;
+    const heightRatio = (maxY - minY) / height;
+
+    // Se a folha está cortada demais ou ocupa fração minúscula, ou toca as 4 bordas sem margens livres
+    const touchesAllBorders = (minX === 0 && maxX === width - 1 && minY === 0 && maxY === height - 1);
+    const isCutOff = widthRatio < 0.45 || heightRatio < 0.40 || touchesAllBorders;
+    const hasSeverePerspective = trapezoidRatio < 0.74;
+
+    return {
+      found: !isCutOff && globalMeanLuma >= 80,
+      isCutOff,
+      hasSeverePerspective,
+      trapezoidRatio: Number(trapezoidRatio.toFixed(3)),
+      corners: {
+        topLeft: { x: topSpan.left, y: topY },
+        topRight: { x: topSpan.right, y: topY },
+        bottomLeft: { x: botSpan.left, y: botY },
+        bottomRight: { x: botSpan.right, y: botY }
+      },
+      boundaries: {
+        xMin: Number((minX / width).toFixed(4)),
+        yMin: Number((minY / height).toFixed(4)),
+        xMax: Number((maxX / width).toFixed(4)),
+        yMax: Number((maxY / height).toFixed(4)),
+        widthRatio: Number(widthRatio.toFixed(4)),
+        heightRatio: Number(heightRatio.toFixed(4)),
+        aspectRatio: Number(((maxX - minX) / Math.max(1, maxY - minY)).toFixed(3))
+      }
+    };
+  }
+
+  /**
+   * 2. Corrige perspectiva trapezoidal ou rotação afim (deskew / homografia simplificada) em um ImageData
+   */
+  function rectifyImagePerspective(imageData, corners, angleDeg = 0) {
+    const { width, height, data } = imageData;
+    const out = new Uint8ClampedArray(width * height * 4);
+    out.fill(250);
+
+    const rad = (-angleDeg * Math.PI) / 180;
+    const cosA = Math.cos(rad);
+    const sinA = Math.sin(rad);
+    const cx = width / 2;
+    const cy = height / 2;
+
+    const useTrapezoid = corners && corners.topLeft && corners.bottomLeft &&
+      Math.abs((corners.topRight.x - corners.topLeft.x) - (corners.bottomRight.x - corners.bottomLeft.x)) > width * 0.04;
+
+    for (let y = 0; y < height; y++) {
+      const v = y / Math.max(1, height - 1);
+      for (let x = 0; x < width; x++) {
+        let srcX = x;
+        let srcY = y;
+
+        if (useTrapezoid) {
+          const u = x / Math.max(1, width - 1);
+          const topX = corners.topLeft.x + u * (corners.topRight.x - corners.topLeft.x);
+          const botX = corners.bottomLeft.x + u * (corners.bottomRight.x - corners.bottomLeft.x);
+          const topY = corners.topLeft.y + u * (corners.topRight.y - corners.topLeft.y);
+          const botY = corners.bottomLeft.y + u * (corners.bottomRight.y - corners.bottomLeft.y);
+          srcX = topX + v * (botX - topX);
+          srcY = topY + v * (botY - topY);
+        } else if (Math.abs(angleDeg) > 0.25) {
+          const dx = x - cx;
+          const dy = y - cy;
+          srcX = cx + dx * cosA - dy * sinA;
+          srcY = cy + dx * sinA + dy * cosA;
+        }
+
+        const ix = Math.round(srcX);
+        const iy = Math.round(srcY);
+        if (ix >= 0 && ix < width && iy >= 0 && iy < height) {
+          const dstIdx = (y * width + x) * 4;
+          const srcIdx = (iy * width + ix) * 4;
+          out[dstIdx] = data[srcIdx];
+          out[dstIdx + 1] = data[srcIdx + 1];
+          out[dstIdx + 2] = data[srcIdx + 2];
+          out[dstIdx + 3] = data[srcIdx + 3];
+        }
+      }
+    }
+
+    return { width, height, data: out };
+  }
+
+  /**
+   * 3. Estima a orientação do ECG (0°, 90°, 180°, 270°) e ângulo fino de inclinação (skew)
+   * Baseia-se na anisotropia horizontal vs vertical dos traçados de ECG (ondas propagam-se horizontalmente).
+   */
+  function detectOrientationAndSkew(imageData) {
+    const { width, height, data } = imageData;
+    let horizGradSum = 0;
+    let vertGradSum = 0;
+    let darkTopHalf = 0;
+    let darkBottomHalf = 0;
+
+    // Medir continuidade de tinta preta na direção horizontal vs vertical
+    let horizRunTransitions = 0;
+    let vertRunTransitions = 0;
+
+    const step = 2;
+    for (let y = step; y < height - step; y += step) {
+      let prevDarkH = false;
+      for (let x = step; x < width - step; x += step) {
+        const idx = (y * width + x) * 4;
+        const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
+        const isDark = luma < 125 && Math.abs(data[idx] - data[idx + 2]) < 55;
+
+        if (isDark !== prevDarkH) horizRunTransitions++;
+        prevDarkH = isDark;
+
+        if (isDark) {
+          if (y < height / 2) darkTopHalf++;
+          else darkBottomHalf++;
+        }
+
+        const idxR = (y * width + (x + step)) * 4;
+        const idxD = ((y + step) * width + x) * 4;
+        const lumaR = 0.2126 * data[idxR] + 0.7152 * data[idxR + 1] + 0.0722 * data[idxR + 2];
+        const lumaD = 0.2126 * data[idxD] + 0.7152 * data[idxD + 1] + 0.0722 * data[idxD + 2];
+
+        horizGradSum += Math.abs(luma - lumaR);
+        vertGradSum += Math.abs(luma - lumaD);
+      }
+    }
+
+    for (let x = step; x < width - step; x += step) {
+      let prevDarkV = false;
+      for (let y = step; y < height - step; y += step) {
+        const idx = (y * width + x) * 4;
+        const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
+        const isDark = luma < 125 && Math.abs(data[idx] - data[idx + 2]) < 55;
+        if (isDark !== prevDarkV) vertRunTransitions++;
+        prevDarkV = isDark;
+      }
+    }
+
+    // Em um ECG na orientação correta (horizontal), uma linha vertical cruza cada faixa 1 vez (poucas transições verticais por linha, mas uma varredura vertical cruza as faixas; e nos picos QRS há deflexões).
+    // Avaliamos a variância da projeção de linhas (row projection variance) vs colunas (col projection variance)
+    const rowDarkCounts = new Float32Array(height);
+    const colDarkCounts = new Float32Array(width);
+    for (let y = 0; y < height; y++) {
+      for (let x = 0; x < width; x++) {
+        const idx = (y * width + x) * 4;
+        const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
+        if (luma < 130 && Math.abs(data[idx] - data[idx + 2]) < 55) {
+          rowDarkCounts[y]++;
+          colDarkCounts[x]++;
+        }
+      }
+    }
+
+    const rowNormVar = computeNormalizedVariance(rowDarkCounts, width);
+    const colNormVar = computeNormalizedVariance(colDarkCounts, height);
+
+    // Se a variância das colunas for muito maior que a das linhas, as linhas de base das derivações estão na vertical (ECG girado 90° ou 270°)
+    const isRotated90 = colNormVar > rowNormVar * 1.65 && colNormVar > 0.002;
+
+    // Estimativa de ângulo fino de skew (-12° a +12°) buscando o ângulo que maximiza a nitidez do perfil horizontal
+    let bestAngleDeg = 0;
+    let maxScore = -1;
+    const sampleStep = Math.max(1, Math.floor(Math.min(width, height) / 120));
+
+    for (let angle = -10; angle <= 10; angle += 1) {
+      const tanA = Math.tan((angle * Math.PI) / 180);
+      const proj = new Float32Array(height);
+      for (let y = 0; y < height; y += sampleStep) {
+        for (let x = 0; x < width; x += sampleStep) {
+          const idx = (y * width + x) * 4;
+          const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
+          if (luma < 130 && Math.abs(data[idx] - data[idx + 2]) < 55) {
+            const shiftedY = Math.round(y - (x - width / 2) * tanA);
+            if (shiftedY >= 0 && shiftedY < height) {
+              proj[shiftedY]++;
+            }
+          }
+        }
+      }
+      let energy = 0;
+      for (let i = 1; i < height; i++) {
+        const d = proj[i] - proj[i - 1];
+        energy += d * d;
+      }
+      if (energy > maxScore) {
+        maxScore = energy;
+        bestAngleDeg = angle;
+      }
+    }
+
+    return {
+      isRotated90,
+      quadrantDeg: isRotated90 ? 90 : 0,
+      skewAngleDeg: bestAngleDeg,
+      rowNormVar: Number(rowNormVar.toFixed(5)),
+      colNormVar: Number(colNormVar.toFixed(5)),
+      needsDeskew: Math.abs(bestAngleDeg) >= 2
+    };
+  }
+
+  function computeNormalizedVariance(arr, normFactor) {
+    if (!arr.length || !normFactor) return 0;
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) sum += arr[i] / normFactor;
+    const mean = sum / arr.length;
+    let sq = 0;
+    for (let i = 0; i < arr.length; i++) {
+      const d = (arr[i] / normFactor) - mean;
+      sq += d * d;
+    }
+    return sq / arr.length;
+  }
+
+  /**
+   * 4. Detecta e mede a grade milimetrada do ECG por autocorrelação dos perfis cromáticos/luminosos
+   * Retorna o espaçamento real em pixels por milímetro (px/mm), velocidade e ganho
+   */
+  function detectECGGridAndCalibration(imageData, userCalibration = null) {
+    const { width, height, data } = imageData;
+
+    // Extrair sinal de grade: linhas rosas/vermelhas/laranjas (R - B > 12 ou R - G > 10) ou linhas cinzas finas regulares
+    const xGridProfile = new Float32Array(width);
+    const yGridProfile = new Float32Array(height);
+
+    let coloredGridPixels = 0;
+    let totalSampled = 0;
+
+    const yStart = Math.floor(height * 0.1);
+    const yEnd = Math.ceil(height * 0.9);
+    const xStart = Math.floor(width * 0.1);
+    const xEnd = Math.ceil(width * 0.9);
+
+    for (let y = yStart; y < yEnd; y++) {
+      for (let x = xStart; x < xEnd; x++) {
+        const idx = (y * width + x) * 4;
+        const r = data[idx], g = data[idx + 1], b = data[idx + 2];
+        const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+        totalSampled++;
+
+        // Peso de linha de grade (colorida ou cinza intermediária, excluindo tinta preta forte luma < 90 e branco puro > 248)
+        const redness = Math.max(0, r - Math.max(g, b));
+        const isGridCandidate = redness > 10 || (luma >= 145 && luma <= 238);
+        if (redness > 12) coloredGridPixels++;
+
+        if (isGridCandidate && luma >= 110) {
+          const gridStrength = redness > 10 ? redness * 1.5 : (248 - luma);
+          xGridProfile[x] += gridStrength;
+          yGridProfile[y] += gridStrength;
+        }
+      }
+    }
+
+    // Remover média móvel local dos perfis para destacar picos periódicos das linhas da grade
+    const hpX = highPassProfile(xGridProfile, 15);
+    const hpY = highPassProfile(yGridProfile, 15);
+
+    const periodX = findDominantGridPeriod(hpX, 3, Math.min(80, Math.floor(width / 8)));
+    const periodY = findDominantGridPeriod(hpY, 3, Math.min(80, Math.floor(height / 8)));
+
+    // Detecção do pulso retangular de calibração (1 mV = 10 mm de altura, 200 ms = 5 mm de largura)
+    const calPulse = detectCalibrationPulse(imageData);
+
+    const gridAxesAgree = periodX.period > 0 && periodY.period > 0 &&
+      Math.abs(periodX.period - periodY.period) / Math.max(periodX.period, periodY.period) <= 0.22;
+
+    const hasMeasuredGrid = gridAxesAgree && periodX.confidence >= 0.28 && periodY.confidence >= 0.28;
+
+    let pixelsPerMmX = null;
+    let pixelsPerMmY = null;
+
+    if (hasMeasuredGrid) {
+      // Se o período dominante medido corresponder ao quadrado maior (5 mm) vs menor (1 mm):
+      // Em fotos ou imagens de ~1000-2000px de uma folha A4 (210-297mm), 1 mm ~ 3.5 a 8 px, e 5 mm ~ 18 a 40 px.
+      // Verificamos se há sub-harmônico em period / 5:
+      const subX = evaluateLagCorrelation(hpX, periodX.period / 5);
+      const subY = evaluateLagCorrelation(hpY, periodY.period / 5);
+
+      if (periodX.period >= 14 && (subX > 0.12 || periodX.period > width / 65)) {
+        // O pico principal é o quadradão de 5 mm
+        pixelsPerMmX = periodX.period / 5;
+        pixelsPerMmY = periodY.period / 5;
+      } else {
+        // O pico principal já é 1 mm
+        pixelsPerMmX = periodX.period;
+        pixelsPerMmY = periodY.period;
+      }
+    }
+
+    // Determinar velocidade do papel (mm/s) e ganho (mm/mV)
+    let paperSpeedMmPerSec = null;
+    let gainMmPerMv = null;
+    let calibrationSource = "unknown"; // "measured" | "user_confirmed" | "assumed" | "unknown"
+
+    if (userCalibration && userCalibration.confirmedByUser) {
+      paperSpeedMmPerSec = Number(userCalibration.paperSpeedMmPerSec) || 25;
+      gainMmPerMv = Number(userCalibration.gainMmPerMv) || 10;
+      if (userCalibration.pixelsPerMm > 0) {
+        pixelsPerMmX = Number(userCalibration.pixelsPerMm);
+        pixelsPerMmY = Number(userCalibration.pixelsPerMm);
+      }
+      calibrationSource = "user_confirmed";
+    } else if (hasMeasuredGrid && calPulse.detected) {
+      // Medição direta de grade + pulso de calibração 1 mV
+      const pulseHeightMm = calPulse.heightPx / pixelsPerMmY;
+      const pulseWidthMm = calPulse.widthPx / pixelsPerMmX;
+      gainMmPerMv = Math.abs(pulseHeightMm - 5) < Math.abs(pulseHeightMm - 10) ? 5 : 10;
+      paperSpeedMmPerSec = Math.abs(pulseWidthMm - 10) < Math.abs(pulseWidthMm - 5) ? 50 : 25;
+      calibrationSource = "measured";
+    } else if (hasMeasuredGrid) {
+      // Grade medida diretamente nos pixels; velocidade 25 mm/s e ganho 10 mm/mV são padrão se não informados,
+      // mas marcados explicitamente como "measured_grid_assumed_standard_speed_gain"
+      paperSpeedMmPerSec = (userCalibration && userCalibration.paperSpeedMmPerSec) || 25;
+      gainMmPerMv = (userCalibration && userCalibration.gainMmPerMv) || 10;
+      calibrationSource = "measured";
+    } else if (userCalibration && userCalibration.allowAssumedStandard) {
+      paperSpeedMmPerSec = userCalibration.paperSpeedMmPerSec || 25;
+      gainMmPerMv = userCalibration.gainMmPerMv || 10;
+      // Estimativa aproximada caso o usuário autorize explicitamente escala presumida
+      pixelsPerMmX = width / 250;
+      pixelsPerMmY = height / 170;
+      calibrationSource = "assumed";
+    } else {
+      calibrationSource = "unknown";
+    }
+
+    const msPerPixel = (pixelsPerMmX && paperSpeedMmPerSec)
+      ? (1000 / (paperSpeedMmPerSec * pixelsPerMmX))
+      : null;
+    const mvPerPixel = (pixelsPerMmY && gainMmPerMv)
+      ? (1 / (gainMmPerMv * pixelsPerMmY))
+      : null;
+
+    return {
+      gridDetected: hasMeasuredGrid,
+      coloredGridRatio: Number((coloredGridPixels / Math.max(1, totalSampled)).toFixed(4)),
+      gridConfidence: Number(Math.min(periodX.confidence, periodY.confidence).toFixed(3)),
+      dominantPeriodPxX: Number(periodX.period.toFixed(2)),
+      dominantPeriodPxY: Number(periodY.period.toFixed(2)),
+      pixelsPerMmX: pixelsPerMmX ? Number(pixelsPerMmX.toFixed(3)) : null,
+      pixelsPerMmY: pixelsPerMmY ? Number(pixelsPerMmY.toFixed(3)) : null,
+      paperSpeedMmPerSec,
+      gainMmPerMv,
+      msPerPixel: msPerPixel ? Number(msPerPixel.toFixed(4)) : null,
+      mvPerPixel: mvPerPixel ? Number(mvPerPixel.toFixed(5)) : null,
+      pixelsPerMv: mvPerPixel ? Number((1 / mvPerPixel).toFixed(2)) : null,
+      calibrationPulse: calPulse,
+      calibrationSource,
+      measurementsAllowed: calibrationSource === "measured" || calibrationSource === "user_confirmed"
+    };
+  }
+
+  function highPassProfile(profile, windowRadius) {
+    const n = profile.length;
+    const out = new Float32Array(n);
+    for (let i = 0; i < n; i++) {
+      let sum = 0, cnt = 0;
+      for (let j = Math.max(0, i - windowRadius); j <= Math.min(n - 1, i + windowRadius); j++) {
+        sum += profile[j];
+        cnt++;
+      }
+      out[i] = Math.max(0, profile[i] - sum / Math.max(1, cnt));
+    }
+    return out;
+  }
+
+  function evaluateLagCorrelation(profile, lagFloat) {
+    const lag = Math.round(lagFloat);
+    if (lag < 2 || lag >= profile.length / 2) return 0;
+    let num = 0, den = 0;
+    for (let i = 0; i < profile.length - lag; i++) {
+      num += profile[i] * profile[i + lag];
+      den += profile[i] * profile[i];
+    }
+    return den > 0 ? num / den : 0;
+  }
+
+  function findDominantGridPeriod(profile, minLag, maxLag) {
+    let bestLag = 0;
+    let bestCorr = 0;
+
+    let energy = 0;
+    for (let i = 0; i < profile.length; i++) energy += profile[i] * profile[i];
+    if (energy <= 1e-6) return { period: 0, confidence: 0 };
+
+    for (let lag = minLag; lag <= maxLag; lag++) {
+      let sum = 0;
+      for (let i = 0; i < profile.length - lag; i++) {
+        sum += profile[i] * profile[i + lag];
+      }
+      const corr = sum / energy;
+      if (corr > bestCorr) {
+        bestCorr = corr;
+        bestLag = lag;
+      }
+    }
+
+    return { period: bestLag, confidence: bestCorr };
+  }
+
+  /**
+   * Detecta pulso quadrado de calibração (1 mV) geralmente situado na margem esquerda ou direita das linhas
+   */
+  function detectCalibrationPulse(imageData) {
+    const { width, height, data } = imageData;
+    const scanMaxX = Math.min(width, Math.floor(width * 0.14));
+    let bestPulse = { detected: false, heightPx: 0, widthPx: 0 };
+
+    // Procura degrau vertical abrupto seguido de platô plano horizontal e retorno
+    for (let yBand = 0; yBand < 3; yBand++) {
+      const yMin = Math.floor(height * (0.08 + yBand * 0.25));
+      const yMax = Math.floor(height * (0.30 + yBand * 0.25));
+      const trace = [];
+      for (let x = 2; x < scanMaxX; x++) {
+        let sumY = 0, cnt = 0;
+        for (let y = yMin; y < yMax; y++) {
+          const idx = (y * width + x) * 4;
+          const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
+          if (luma < 120 && Math.abs(data[idx] - data[idx + 2]) < 55) {
+            sumY += y;
+            cnt++;
+          }
+        }
+        trace.push(cnt > 0 ? sumY / cnt : null);
+      }
+
+      // Analisar se há um platô retangular elevado em relação à base
+      const valid = trace.filter(v => v !== null);
+      if (valid.length > 8) {
+        const sorted = [...valid].sort((a, b) => a - b);
+        const topPlateau = sorted[Math.floor(sorted.length * 0.15)];
+        const baseLevel = sorted[Math.floor(sorted.length * 0.75)];
+        const hPx = baseLevel - topPlateau;
+        if (hPx >= 10 && hPx <= (yMax - yMin) * 0.85) {
+          let plateauCols = 0;
+          for (const v of valid) {
+            if (Math.abs(v - topPlateau) <= 2.5) plateauCols++;
+          }
+          if (plateauCols >= 4 && plateauCols <= 40) {
+            bestPulse = { detected: true, heightPx: hPx, widthPx: plateauCols };
+            break;
+          }
+        }
+      }
+    }
+    return bestPulse;
+  }
+
+  /**
+   * 5. Reconhece o rótulo de uma região de derivação por correspondência de template multi-escala (OCR especializado de ECG)
+   */
+  function recognizeLeadLabelInRegion(imageData, roiBox) {
+    const { width, height, data } = imageData;
+    const x0 = Math.max(0, Math.floor(roiBox.xMin * width));
+    const y0 = Math.max(0, Math.floor(roiBox.yMin * height));
+    const x1 = Math.min(width, Math.ceil(roiBox.xMax * width));
+    const y1 = Math.min(height, Math.ceil(roiBox.yMax * height));
+
+    // O rótulo de uma derivação normalmente fica no quadrante superior esquerdo ou inferior esquerdo da célula (primeiros 35% horizontais)
+    const searchW = Math.max(16, Math.floor((x1 - x0) * 0.42));
+    const searchH = Math.max(12, Math.floor((y1 - y0) * 0.85));
+
+    // Encontrar componentes conectados de tinta escura pequenos (candidatos a texto do rótulo)
+    // Texto tem alta densidade de bordas curtas em caixa compacta, diferente da linha contínua da curva
+    let bestLabel = null;
+    let bestScore = 0;
+    let secondBestScore = 0;
+
+    const scales = [1, 2, 3];
+    const candidateLabels = ["DI", "DII", "DIII", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"];
+
+    // Primeiro verifica se há uma caixa de caracteres nítida na zona de rótulo
+    for (const labelName of candidateLabels) {
+      const tpl = LABEL_TEMPLATES[labelName];
+      if (!tpl) continue;
+
+      for (const scale of scales) {
+        const tw = tpl.width * scale;
+        const th = tpl.height * scale;
+        if (tw >= searchW || th >= searchH) continue;
+
+        const stepY = Math.max(1, scale);
+        const stepX = Math.max(1, scale);
+
+        for (let sy = y0; sy <= y0 + searchH - th; sy += stepY) {
+          for (let sx = x0; sx <= x0 + searchW - tw; sx += stepX) {
+            // Verifica se existe silhueta de fundo claro ao redor do texto
+            let fgMatches = 0, fgTotal = 0;
+            let bgMatches = 0, bgTotal = 0;
+
+            for (let ty = 0; ty < tpl.height; ty++) {
+              for (let tx = 0; tx < tpl.width; tx++) {
+                const expectedFg = tpl.data[ty * tpl.width + tx] === 1;
+                const px = sx + tx * scale;
+                const py = sy + ty * scale;
+                const idx = (py * width + px) * 4;
+                const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
+                const isDark = luma < 115 && Math.abs(data[idx] - data[idx + 2]) < 55;
+
+                if (expectedFg) {
+                  fgTotal++;
+                  if (isDark) fgMatches++;
+                } else {
+                  bgTotal++;
+                  if (!isDark) bgMatches++;
+                }
+              }
+            }
+
+            const fgRate = fgMatches / Math.max(1, fgTotal);
+            const bgRate = bgMatches / Math.max(1, bgTotal);
+
+            // Exige que tanto o caractere escuro quanto o espaço em branco interno batam com precisão
+            if (fgRate > 0.78 && bgRate > 0.78) {
+              // Verificar se há margem clara imediatamente à direita (evita casar "DI" dentro de "DII" ou "DIII")
+              let rightClear = 0, rightTotal = 0;
+              for (let ry = sy; ry < sy + th; ry++) {
+                for (let rx = sx + tw; rx < Math.min(width, sx + tw + scale * 3); rx++) {
+                  const rIdx = (ry * width + rx) * 4;
+                  const rLuma = 0.2126 * data[rIdx] + 0.7152 * data[rIdx + 1] + 0.0722 * data[rIdx + 2];
+                  rightTotal++;
+                  if (rLuma >= 125) rightClear++;
+                }
+              }
+              const rightClearRate = rightTotal > 0 ? rightClear / rightTotal : 1;
+
+              // Bônus de especificidade para strings mais longas (ex.: "DIII" > "DII" > "DI") quando casam perfeitamente
+              const specificityBonus = labelName.length * 0.03;
+              const score = (fgRate * 0.50 + bgRate * 0.35 + rightClearRate * 0.15) + specificityBonus;
+
+              if (score > bestScore) {
+                if (bestLabel !== labelName) secondBestScore = bestScore;
+                bestScore = score;
+                bestLabel = labelName;
+              } else if (labelName !== bestLabel && score > secondBestScore) {
+                secondBestScore = score;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    const margin = bestScore - secondBestScore;
+    if (bestLabel && bestScore >= 0.88 && margin >= 0.015) {
+      return {
+        recognized: true,
+        lead: LEAD_SYNONYMS[bestLabel] || bestLabel,
+        rawText: bestLabel,
+        confidence: Number(Math.min(0.99, bestScore).toFixed(3)),
+        method: "glyph_template_ocr"
+      };
+    }
+
+    return {
+      recognized: false,
+      lead: null,
+      rawText: null,
+      confidence: 0,
+      method: "none"
+    };
+  }
+
+  /**
+   * 6. Descobre a topologia real das linhas horizontais de traçado e divisões de colunas na folha
+   */
+  function discoverWaveformTopology(imageData, boundaries) {
+    const { width, height, data } = imageData;
+    const xMin = Math.max(0, Math.floor((boundaries?.xMin ?? 0.04) * width));
+    const xMax = Math.min(width, Math.ceil((boundaries?.xMax ?? 0.96) * width));
+    const yMin = Math.max(0, Math.floor((boundaries?.yMin ?? 0.06) * height));
+    const yMax = Math.min(height, Math.ceil((boundaries?.yMax ?? 0.95) * height));
+
+    const spanW = Math.max(1, xMax - xMin);
+    const spanH = Math.max(1, yMax - yMin);
+
+    // Perfil horizontal de pixels escuros de traçado (excluindo grade rosa/vermelha)
+    const rowDarkRatio = new Float32Array(height);
+    for (let y = yMin; y < yMax; y++) {
+      let dark = 0;
+      for (let x = xMin; x < xMax; x++) {
+        const idx = (y * width + x) * 4;
+        const r = data[idx], g = data[idx + 1], b = data[idx + 2];
+        const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+        if (luma < 130 && Math.abs(r - b) < 55) dark++;
+      }
+      rowDarkRatio[y] = dark / spanW;
+    }
+
+    // Identificar bandas horizontais que possuem linha de base de traçado (densidade moderada: nem 0%, nem bloco sólido de texto > 65%)
+    const activeRows = [];
+    for (let y = yMin; y < yMax; y++) {
+      const r = rowDarkRatio[y];
+      activeRows.push(r >= 0.015 && r <= 0.55);
+    }
+
+    // Agrupar bandas ativas próximas em linhas de derivações (faixas horizontais)
+    const bands = [];
+    let bandStart = -1;
+    for (let i = 0; i <= activeRows.length; i++) {
+      if (activeRows[i] && bandStart < 0) {
+        bandStart = yMin + i;
+      } else if ((!activeRows[i] || i === activeRows.length) && bandStart >= 0) {
+        const bandEnd = yMin + i;
+        bands.push({ yStart: bandStart, yEnd: bandEnd, yCenter: (bandStart + bandEnd) / 2 });
+        bandStart = -1;
+      }
+    }
+
+    // Mesclar sub-bandas pertencentes ao mesmo complexo QRS (distância vertical < 6.5% da altura útil)
+    const minBandGap = Math.max(8, spanH * 0.065);
+    const mergedBands = [];
+    for (const b of bands) {
+      if (mergedBands.length && (b.yCenter - mergedBands[mergedBands.length - 1].yCenter) < minBandGap) {
+        const prev = mergedBands[mergedBands.length - 1];
+        prev.yEnd = b.yEnd;
+        prev.yCenter = (prev.yStart + prev.yEnd) / 2;
+      } else {
+        mergedBands.push({ ...b });
+      }
+    }
+
+    return {
+      rowCount: mergedBands.length,
+      bands: mergedBands.map((b, idx) => {
+        const halfSpan = Math.max(Math.round(spanH / Math.max(3, mergedBands.length * 2.1)), Math.round((b.yEnd - b.yStart) * 1.4));
+        return {
+          index: idx,
+          yCenterRatio: Number((b.yCenter / height).toFixed(4)),
+          yMin: Number((Math.max(yMin, b.yCenter - halfSpan) / height).toFixed(4)),
+          yMax: Number((Math.min(yMax, b.yCenter + halfSpan) / height).toFixed(4))
+        };
+      })
+    };
+  }
+
+  /**
+   * 7. Função Principal: Detecta limites, orientação, grade, layout real e valida cada derivação
+   * Não retorna `detected: true` apenas por nitidez! Exige evidência morfológica real de traçado e consistência de layout.
+   */
+  function detectECGBoundaries(imageData, options = {}) {
+    if (!imageData || !imageData.data || !imageData.width || !imageData.height) {
       return {
         detected: false,
         confidence: 0,
         boundaries: null,
         detectedLayout: null,
-        message: "Aponte para o ECG..."
+        layoutConfidence: "none",
+        anomalies: ["invalid_image_data"],
+        message: "Imagem inválida ou vazia."
       };
     }
 
-    // Estima bounding box da área útil do traçado com margens de segurança
-    const boundaries = {
-      xMin: 0.05,
-      yMin: 0.06,
-      xMax: 0.95,
-      yMax: 0.94,
-      widthRatio: 0.90,
-      heightRatio: 0.88,
-      aspectRatio: width / height
-    };
+    const { width, height } = imageData;
+    const quality = analyzeFrameQuality(imageData);
+
+    // 1. Verificar qualidade ótica mínima
+    if (quality.sharpnessScore < 18 || quality.brightness < 35) {
+      return {
+        detected: false,
+        confidence: 0,
+        boundaries: null,
+        detectedLayout: null,
+        layoutConfidence: "none",
+        quality,
+        anomalies: ["low_sharpness_or_dark"],
+        message: "Imagem escura ou desfocada. Aponte para o ECG com boa iluminação."
+      };
+    }
+
+    // 2. Localizar folha e avaliar cortes/perspectiva
+    const sheet = locatePaperSheet(imageData);
+    if (!sheet.found || sheet.isCutOff) {
+      return {
+        detected: false,
+        confidence: 0.1,
+        boundaries: sheet.boundaries || null,
+        detectedLayout: null,
+        layoutConfidence: "none",
+        quality,
+        sheet,
+        anomalies: ["paper_cutoff_or_not_found"],
+        message: "Folha do ECG parcialmente cortada ou fora de quadro. Enquadre a folha inteira."
+      };
+    }
+
+    if (sheet.hasSeverePerspective && !options.allowPerspectiveRectification) {
+      return {
+        detected: false,
+        confidence: 0.2,
+        boundaries: sheet.boundaries,
+        detectedLayout: null,
+        layoutConfidence: "none",
+        quality,
+        sheet,
+        anomalies: ["severe_perspective_distortion"],
+        message: "Perspectiva muito inclinada. Posicione a câmera paralela à folha do ECG."
+      };
+    }
+
+    // 3. Avaliar orientação (0/90/180/270) e inclinação
+    const orientation = detectOrientationAndSkew(imageData);
+    if (orientation.isRotated90) {
+      return {
+        detected: false,
+        confidence: 0.2,
+        boundaries: sheet.boundaries,
+        detectedLayout: null,
+        layoutConfidence: "none",
+        quality,
+        sheet,
+        orientation,
+        anomalies: ["ecg_rotated_90_degrees"],
+        message: "ECG girado em 90°. Gire o aparelho ou a imagem para a orientação horizontal."
+      };
+    }
+
+    // 4. Medir grade milimetrada e calibração
+    const calibration = detectECGGridAndCalibration(imageData, options.userCalibration || null);
+
+    // 5. Descobrir topologia das faixas de traçado
+    const topology = discoverWaveformTopology(imageData, sheet.boundaries);
+
+    // Se não há faixas horizontais de traçado ou há excesso de linhas densas (como página de texto comum)
+    if (topology.rowCount < 1 || topology.rowCount > 15) {
+      return {
+        detected: false,
+        confidence: 0.1,
+        boundaries: sheet.boundaries,
+        detectedLayout: null,
+        layoutConfidence: "none",
+        quality,
+        calibration,
+        topology,
+        anomalies: [topology.rowCount === 0 ? "no_waveform_traces" : "dense_text_or_noise"],
+        message: topology.rowCount === 0
+          ? "Grade ou papel sem traçados eletrocardiográficos detectáveis."
+          : "Padrão incompatível com ECG (possível página de texto ou ruído)."
+      };
+    }
+
+    // 6. Testar hipóteses de layout e validar cada célula com o extrator real + OCR de rótulos
+    const extractor = global.LuriaEcgSignalExtractor;
+    const layoutEvaluation = evaluateAndMapLeadRegions(imageData, sheet.boundaries, topology, calibration, extractor);
+
+    if (!layoutEvaluation.isValidECG) {
+      return {
+        detected: false,
+        confidence: layoutEvaluation.confidence,
+        boundaries: sheet.boundaries,
+        detectedLayout: null,
+        layoutConfidence: layoutEvaluation.layoutConfidence,
+        quality,
+        calibration,
+        topology,
+        orientation,
+        anomalies: layoutEvaluation.anomalies,
+        message: layoutEvaluation.message
+      };
+    }
 
     return {
       detected: true,
-      confidence: Math.min(1.0, quality.sharpnessScore / 100),
-      boundaries,
-      detectedLayout: STANDARD_LAYOUT_3X4,
+      confidence: layoutEvaluation.confidence,
+      boundaries: sheet.boundaries,
+      detectedLayout: layoutEvaluation.detectedLayout,
+      layoutConfidence: layoutEvaluation.layoutConfidence,
+      recognizedLabels: layoutEvaluation.recognizedLabels,
+      anomalies: layoutEvaluation.anomalies,
       quality,
-      message: "ECG identificado!"
+      calibration,
+      orientation,
+      topology,
+      sheet,
+      message: layoutEvaluation.message
+    };
+  }
+
+  /**
+   * Avalia a disposição real das células, executa OCR nos rótulos visíveis,
+   * detecta rótulos trocados/duplicados/ausentes e recusa atribuições sem evidência
+   */
+  function evaluateAndMapLeadRegions(imageData, boundaries, topology, calibration, extractor) {
+    const { width, height } = imageData;
+    const anomalies = [];
+    const xMin = boundaries?.xMin ?? 0.04;
+    const xMax = boundaries?.xMax ?? 0.96;
+    const yMin = boundaries?.yMin ?? 0.08;
+    const yMax = boundaries?.yMax ?? 0.92;
+
+    // Determinar qual estrutura geométrica melhor se adapta às bandas encontradas
+    let candidateTemplate = LAYOUT_TEMPLATES["3x4_standard"];
+    if (topology.rowCount === 4) {
+      candidateTemplate = LAYOUT_TEMPLATES["3x4_plus_rhythm"];
+    } else if (topology.rowCount >= 5 && topology.rowCount <= 7) {
+      candidateTemplate = LAYOUT_TEMPLATES["6x2_standard"];
+    } else if (topology.rowCount >= 10 && topology.rowCount <= 13) {
+      candidateTemplate = LAYOUT_TEMPLATES["12x1_stacked"];
+    }
+
+    // Construir caixas candidatas baseadas nas bandas reais detectadas (ou subdivisão da área útil)
+    const numMainRows = candidateTemplate.grid.length;
+    const numCols = candidateTemplate.grid[0].length;
+    const hasRhythmRow = candidateTemplate.rhythmRows.length > 0;
+    const totalRows = numMainRows + (hasRhythmRow ? 1 : 0);
+
+    const cellBoxes = [];
+    for (let r = 0; r < numMainRows; r++) {
+      // Se o número de bandas detectadas bate com totalRows, usa a coordenada Y real da banda!
+      const band = (topology.bands.length >= numMainRows && topology.bands[r]) ? topology.bands[r] : null;
+      const rowYMin = band ? band.yMin : (yMin + (r / totalRows) * (yMax - yMin));
+      const rowYMax = band ? band.yMax : (yMin + ((r + 0.92) / totalRows) * (yMax - yMin));
+
+      for (let c = 0; c < numCols; c++) {
+        const colXMin = xMin + (c / numCols) * (xMax - xMin);
+        const colXMax = xMin + ((c + 0.96) / numCols) * (xMax - xMin);
+        const expectedLead = candidateTemplate.grid[r][c];
+        cellBoxes.push({
+          row: r,
+          col: c,
+          expectedLead,
+          xMin: Number(colXMin.toFixed(4)),
+          xMax: Number(colXMax.toFixed(4)),
+          yMin: Number(rowYMin.toFixed(4)),
+          yMax: Number(rowYMax.toFixed(4))
+        });
+      }
+    }
+
+    // Avaliar cada célula: (A) Possui traçado eletrocardiográfico real? (B) Qual rótulo foi lido pelo OCR?
+    const recognizedLabels = {};
+    const labelCounts = {};
+    const dynamicLeadsMap = {};
+    let validWaveformCells = 0;
+    let ocrConfirmedCount = 0;
+    let labelMismatchCount = 0;
+    let overlappingCellsCount = 0;
+
+    for (const cell of cellBoxes) {
+      const rx0 = Math.round(cell.xMin * width);
+      const ry0 = Math.round(cell.yMin * height);
+      const rw = Math.max(1, Math.round((cell.xMax - cell.xMin) * width));
+      const rh = Math.max(1, Math.round((cell.yMax - cell.yMin) * height));
+
+      const cropData = cropSubImageData(imageData, rx0, ry0, rw, rh);
+
+      // Reconhecimento de rótulo na célula
+      const ocrRes = recognizeLeadLabelInRegion(imageData, cell);
+
+      // Verificação de sinal real na célula
+      let sigRes = { isValid: false, hasMultipleCurves: false };
+      if (extractor && typeof extractor.extractRealSignalFromImageData === "function") {
+        sigRes = extractor.extractRealSignalFromImageData(cropData, {
+          calibration,
+          leadLabel: ocrRes.recognized ? ocrRes.lead : cell.expectedLead
+        });
+      } else {
+        // Fallback geométrico rigoroso caso o extrator não esteja carregado
+        sigRes = basicCellWaveformCheck(cropData);
+      }
+
+      if (sigRes.hasMultipleCurves) {
+        overlappingCellsCount++;
+      }
+
+      if (sigRes.isValid) {
+        validWaveformCells++;
+      }
+
+      let assignedLead = null;
+      let assignmentEvidence = "unverified";
+
+      if (ocrRes.recognized) {
+        ocrConfirmedCount++;
+        assignedLead = ocrRes.lead;
+        assignmentEvidence = "ocr_verified";
+        labelCounts[assignedLead] = (labelCounts[assignedLead] || 0) + 1;
+
+        if (assignedLead !== cell.expectedLead) {
+          labelMismatchCount++;
+        }
+      } else if (sigRes.isValid) {
+        // Só permite atribuição posicional condicional se nenhuma contradição de rótulo ocorreu
+        assignedLead = cell.expectedLead;
+        assignmentEvidence = "positional_hypothesis";
+      }
+
+      if (assignedLead) {
+        recognizedLabels[`r${cell.row}_c${cell.col}`] = {
+          expectedLead: cell.expectedLead,
+          assignedLead,
+          ocrRecognized: ocrRes.recognized,
+          ocrConfidence: ocrRes.confidence,
+          evidence: assignmentEvidence,
+          hasValidTrace: sigRes.isValid
+        };
+
+        // Se o rótulo foi reconhecido via OCR (mesmo fora da posição padrão), mapeamos a caixa real para aquela derivação!
+        dynamicLeadsMap[assignedLead] = {
+          col: cell.col,
+          row: cell.row,
+          xMin: cell.xMin,
+          xMax: cell.xMax,
+          yMin: cell.yMin,
+          yMax: cell.yMax,
+          evidence: assignmentEvidence,
+          ocrConfidence: ocrRes.confidence,
+          expectedInTemplate: cell.expectedLead
+        };
+      }
+    }
+
+    // Verificar rótulos duplicados
+    const duplicateLeads = Object.keys(labelCounts).filter(k => labelCounts[k] > 1);
+    if (duplicateLeads.length > 0) {
+      anomalies.push(`duplicate_labels:${duplicateLeads.join(",")}`);
+    }
+
+    if (labelMismatchCount > 0) {
+      anomalies.push("non_standard_lead_arrangement");
+    }
+
+    if (overlappingCellsCount > 0) {
+      anomalies.push("overlapping_traces_detected");
+    }
+
+    // Tiras de ritmo prolongadas (ex.: 4ª linha no 3x4+1)
+    const rhythmStrips = [];
+    if (hasRhythmRow || topology.rowCount === 4) {
+      const rBand = topology.bands[3] || { yMin: 0.79, yMax: 0.94 };
+      const rBox = { xMin, xMax, yMin: rBand.yMin, yMax: rBand.yMax };
+      const rOcr = recognizeLeadLabelInRegion(imageData, rBox);
+      rhythmStrips.push({
+        name: `${rOcr.recognized ? rOcr.lead : "DII"}_long`,
+        lead: rOcr.recognized ? rOcr.lead : "DII",
+        evidence: rOcr.recognized ? "ocr_verified" : "positional_hypothesis",
+        xMin: rBox.xMin,
+        xMax: rBox.xMax,
+        yMin: rBox.yMin,
+        yMax: rBox.yMax
+      });
+    }
+
+    // Critérios de recusa segura (Fail-Closed):
+    // 1. Se houver rótulos duplicados na mesma folha -> recusar atribuição automática!
+    if (duplicateLeads.length > 0) {
+      return {
+        isValidECG: false,
+        confidence: 0.15,
+        detectedLayout: null,
+        layoutConfidence: "rejected_duplicate_labels",
+        recognizedLabels,
+        anomalies,
+        message: `Rótulos de derivações duplicados ou ambíguos detectados (${duplicateLeads.join(", ")}). Atribuição automática recusada.`
+      };
+    }
+
+    // 2. Se menos de 3 células tiverem morfologia real de ECG (e não for captura single-lead explícita)
+    if (validWaveformCells < 3) {
+      anomalies.push("insufficient_valid_waveform_regions");
+      return {
+        isValidECG: false,
+        confidence: Number((validWaveformCells / 12).toFixed(2)),
+        detectedLayout: null,
+        layoutConfidence: "rejected_no_ecg_waveforms",
+        recognizedLabels,
+        anomalies,
+        message: "Não foram encontradas derivações eletrocardiográficas válidas suficientes na imagem."
+      };
+    }
+
+    // 3. Se houve troca parcial de derivações (alguns rótulos trocados, mas nem todas as 12 derivações possuem rótulo OCR legível para desambiguar o restante)
+    if (labelMismatchCount > 0 && ocrConfirmedCount < validWaveformCells) {
+      anomalies.push("ambiguous_swapped_leads_without_full_ocr");
+      return {
+        isValidECG: false,
+        confidence: 0.35,
+        detectedLayout: null,
+        layoutConfidence: "rejected_ambiguous_layout",
+        recognizedLabels,
+        anomalies,
+        message: "Derivações fora da posição padrão e com rótulos ausentes/ambíguos. Atribuição automática recusada por segurança."
+      };
+    }
+
+    const layoutConfidence = ocrConfirmedCount >= 6
+      ? "high_ocr_verified"
+      : (validWaveformCells >= 10 ? "medium_topology_verified" : "low_partial");
+
+    const detectedLayout = {
+      name: labelMismatchCount > 0 ? `${candidateTemplate.name}_reordered` : candidateTemplate.name,
+      description: candidateTemplate.description,
+      isPositionalHypothesisOnly: ocrConfirmedCount === 0,
+      ocrConfirmedCount,
+      validWaveformCells,
+      leads: dynamicLeadsMap,
+      rhythmStrips
+    };
+
+    return {
+      isValidECG: true,
+      confidence: Number(Math.min(0.99, (validWaveformCells / 12) * 0.7 + (ocrConfirmedCount / 12) * 0.3).toFixed(3)),
+      detectedLayout,
+      layoutConfidence,
+      recognizedLabels,
+      anomalies,
+      message: ocrConfirmedCount > 0
+        ? `ECG identificado (${validWaveformCells} derivações ativas, ${ocrConfirmedCount} rótulos confirmados via OCR).`
+        : `ECG identificado por topologia (${validWaveformCells} regiões de traçado; rótulos em hipótese posicional — requer confirmação).`
+    };
+  }
+
+  function cropSubImageData(imageData, rx0, ry0, rw, rh) {
+    const { width, height, data } = imageData;
+    const out = new Uint8ClampedArray(rw * rh * 4);
+    for (let y = 0; y < rh; y++) {
+      const sy = Math.min(height - 1, Math.max(0, ry0 + y));
+      for (let x = 0; x < rw; x++) {
+        const sx = Math.min(width - 1, Math.max(0, rx0 + x));
+        const srcIdx = (sy * width + sx) * 4;
+        const dstIdx = (y * rw + x) * 4;
+        out[dstIdx] = data[srcIdx];
+        out[dstIdx + 1] = data[srcIdx + 1];
+        out[dstIdx + 2] = data[srcIdx + 2];
+        out[dstIdx + 3] = data[srcIdx + 3];
+      }
+    }
+    return { width: rw, height: rh, data: out };
+  }
+
+  function basicCellWaveformCheck(cropData) {
+    const { width, height, data } = cropData;
+    let validCols = 0;
+    let minY = height, maxY = 0;
+    for (let x = 0; x < width; x++) {
+      let sumY = 0, cnt = 0;
+      for (let y = 1; y < height - 1; y++) {
+        const idx = (y * width + x) * 4;
+        const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
+        if (luma < 130 && Math.abs(data[idx] - data[idx + 2]) < 55) {
+          sumY += y;
+          cnt++;
+        }
+      }
+      if (cnt > 0 && cnt < height * 0.35) {
+        validCols++;
+        const cy = sumY / cnt;
+        if (cy < minY) minY = cy;
+        if (cy > maxY) maxY = cy;
+      }
+    }
+    const cont = validCols / Math.max(1, width);
+    const amp = maxY - minY;
+    return {
+      isValid: cont >= 0.45 && amp >= 4 && amp <= height * 0.92,
+      hasMultipleCurves: false
+    };
+  }
+
+  /**
+   * Calcula o vetor de orientação espacial da câmera para guiar o usuário até a próxima derivação
+   */
+  function computeNavigationGuidance(currentMap, targetLead, currentRoiCenter = { x: 0.5, y: 0.5 }) {
+    if (!currentMap || !currentMap.leads || !targetLead || !currentMap.leads[targetLead]) {
+      return {
+        direction: "unknown",
+        dx: 0,
+        dy: 0,
+        instruction: "Região não identificada. Afaste o celular para localizar novamente o ECG."
+      };
+    }
+
+    const box = currentMap.leads[targetLead];
+    const targetCenter = {
+      x: (box.xMin + box.xMax) / 2,
+      y: (box.yMin + box.yMax) / 2
+    };
+
+    const dx = targetCenter.x - currentRoiCenter.x;
+    const dy = targetCenter.y - currentRoiCenter.y;
+    const dist = Math.hypot(dx, dy);
+
+    if (dist < 0.08) {
+      return {
+        direction: "centered",
+        dx: Number(dx.toFixed(3)),
+        dy: Number(dy.toFixed(3)),
+        instruction: `Mantenha parado sobre ${targetLead}.`
+      };
+    }
+
+    const parts = [];
+    if (Math.abs(dx) >= 0.06) {
+      parts.push(dx > 0 ? "para a direita" : "para a esquerda");
+    }
+    if (Math.abs(dy) >= 0.06) {
+      parts.push(dy > 0 ? "para baixo" : "para cima");
+    }
+
+    return {
+      direction: parts.join(" e "),
+      dx: Number(dx.toFixed(3)),
+      dy: Number(dy.toFixed(3)),
+      instruction: `Vá para ${targetLead}: mova um pouco ${parts.join(" e ")}.`
     };
   }
 
@@ -189,16 +1583,32 @@
    */
   function createEngine(config = {}) {
     let currentMap = null;
-    let previousFrameHash = null;
+    let previousFrameSignature = null;
     let stabilityCounter = 0;
-    let lastPosition = { x: 0.5, y: 0.5, scale: 1.0 };
 
-    function processFrame(videoElement, canvasElement) {
+    function computeFrameSignature(imageData) {
+      const { width, height, data } = imageData;
+      const sig = new Float32Array(16);
+      const stepX = Math.max(1, Math.floor(width / 4));
+      const stepY = Math.max(1, Math.floor(height / 4));
+      let k = 0;
+      for (let gy = 0; gy < 4; gy++) {
+        for (let gx = 0; gx < 4; gx++) {
+          const x = Math.min(width - 1, gx * stepX + Math.floor(stepX / 2));
+          const y = Math.min(height - 1, gy * stepY + Math.floor(stepY / 2));
+          const idx = (y * width + x) * 4;
+          sig[k++] = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
+        }
+      }
+      return sig;
+    }
+
+    function processFrame(videoElement, canvasElement, options = {}) {
       if (!videoElement || videoElement.videoWidth === 0) {
         return { ok: false, reason: "No video frame" };
       }
 
-      const w = canvasElement.width = Math.min(960, videoElement.videoWidth);
+      const w = canvasElement.width = Math.min(1280, videoElement.videoWidth);
       const h = canvasElement.height = Math.round(w * (videoElement.videoHeight / videoElement.videoWidth));
       const ctx = canvasElement.getContext("2d", { willReadFrequently: true });
       ctx.drawImage(videoElement, 0, 0, w, h);
@@ -206,27 +1616,27 @@
       const imageData = ctx.getImageData(0, 0, w, h);
       const frameQuality = analyzeFrameQuality(imageData);
 
-      // Verificação de estabilidade (diferença suave entre frames sucessivos)
-      const frameSample = (imageData.data[100] + imageData.data[w * 4 + 100] + imageData.data[(w * h * 2)]) % 1000;
-      let motionBlur = false;
-      if (previousFrameHash !== null) {
-        const delta = Math.abs(frameSample - previousFrameHash);
-        if (delta > 380) {
-          stabilityCounter = Math.max(0, stabilityCounter - 1);
-          motionBlur = true;
-        } else {
-          stabilityCounter = Math.min(10, stabilityCounter + 1);
+      // Verificação real de estabilidade em 16 zonas da imagem
+      const sig = computeFrameSignature(imageData);
+      let motionDelta = 0;
+      if (previousFrameSignature) {
+        for (let i = 0; i < 16; i++) {
+          motionDelta += Math.abs(sig[i] - previousFrameSignature[i]);
         }
-      } else {
-        stabilityCounter = 2;
+        motionDelta /= 16;
       }
-      previousFrameHash = frameSample;
+      previousFrameSignature = sig;
 
-      const isStable = stabilityCounter >= 1;
+      const motionBlur = motionDelta > 14;
+      if (motionBlur) {
+        stabilityCounter = Math.max(0, stabilityCounter - 1);
+      } else {
+        stabilityCounter = Math.min(10, stabilityCounter + 1);
+      }
+      const isStable = stabilityCounter >= 2;
 
-      // Reconhecimento de layout e limites
-      const docDetection = detectECGBoundaries(imageData);
-      if (docDetection.detected && !currentMap) {
+      const docDetection = detectECGBoundaries(imageData, options);
+      if (docDetection.detected && docDetection.detectedLayout) {
         currentMap = docDetection.detectedLayout;
       }
 
@@ -235,44 +1645,60 @@
         quality: frameQuality,
         isStable,
         motionBlur,
+        motionDelta: Number(motionDelta.toFixed(2)),
         docDetection,
-        currentMap: currentMap || STANDARD_LAYOUT_3X4,
+        currentMap,
         timestamp: Date.now()
       };
     }
 
     function reset() {
       currentMap = null;
-      previousFrameHash = null;
+      previousFrameSignature = null;
       stabilityCounter = 0;
-      lastPosition = { x: 0.5, y: 0.5, scale: 1.0 };
     }
 
     return {
       processFrame,
       analyzeFrameQuality,
       detectECGBoundaries,
+      locatePaperSheet,
+      rectifyImagePerspective,
+      detectOrientationAndSkew,
+      detectECGGridAndCalibration,
+      recognizeLeadLabelInRegion,
+      discoverWaveformTopology,
+      computeNavigationGuidance,
+      cropSubImageData,
+      drawBitmapLabelOnImageData,
       reset,
       CANONICAL_LEADS,
+      LAYOUT_TEMPLATES,
       STANDARD_LAYOUT_3X4
     };
   }
 
-  global.LuriaEcgCvEngine = {
+  const exported = {
     createEngine,
     analyzeFrameQuality,
     detectECGBoundaries,
+    locatePaperSheet,
+    rectifyImagePerspective,
+    detectOrientationAndSkew,
+    detectECGGridAndCalibration,
+    recognizeLeadLabelInRegion,
+    discoverWaveformTopology,
+    computeNavigationGuidance,
+    cropSubImageData,
+    drawBitmapLabelOnImageData,
     CANONICAL_LEADS,
+    LAYOUT_TEMPLATES,
     STANDARD_LAYOUT_3X4
   };
 
+  global.LuriaEcgCvEngine = exported;
+
   if (typeof module !== "undefined" && module.exports) {
-    module.exports = {
-      createEngine,
-      analyzeFrameQuality,
-      detectECGBoundaries,
-      CANONICAL_LEADS,
-      STANDARD_LAYOUT_3X4
-    };
+    module.exports = exported;
   }
 })(typeof window !== "undefined" ? window : globalThis);

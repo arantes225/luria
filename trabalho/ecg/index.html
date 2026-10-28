@@ -143,6 +143,22 @@
                     </div>
                     <button id="ecg-btn-cancel-camera" class="ecg-btn secondary" type="button" style="pointer-events:auto;margin-top:4px;padding:6px 12px;font-size:12px">Fechar Câmera</button>
                   </div>
+
+                  <!-- MODAL DE IDENTIFICAÇÃO INCERTA (MODO ULTRASSENSÍVEL) -->
+                  <div id="ecg-uncertain-modal" class="ecg-uncertain-modal" hidden style="pointer-events:auto">
+                    <strong>Identificação incerta da derivação</strong>
+                    <p style="margin:4px 0 8px;font-size:12px;color:#e2e8f0">O traçado foi localizado, mas o rótulo impresso não pôde ser confirmado automaticamente. Reenquadre incluindo o rótulo ou confirme a derivação manualmente:</p>
+                    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:center">
+                      <select id="ecg-uncertain-select" style="padding:6px 10px;border-radius:8px;background:#0f172a;color:#fff;border:1px solid rgba(255,255,255,0.25);font-weight:700">
+                        <option value="DI">DI</option><option value="DII">DII</option><option value="DIII">DIII</option>
+                        <option value="aVR">aVR</option><option value="aVL">aVL</option><option value="aVF">aVF</option>
+                        <option value="V1">V1</option><option value="V2">V2</option><option value="V3">V3</option>
+                        <option value="V4">V4</option><option value="V5">V5</option><option value="V6">V6</option>
+                      </select>
+                      <button id="ecg-btn-confirm-uncertain" class="ecg-btn" type="button" style="padding:6px 12px;font-size:12px">Confirmar Derivação</button>
+                      <button id="ecg-btn-reject-uncertain" class="ecg-btn secondary" type="button" style="padding:6px 12px;font-size:12px">Reenquadrar</button>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -161,19 +177,57 @@
             <article class="ecg-card" id="ecg-stage2-review" hidden>
               <div class="ecg-review-header">
                 <div>
-                  <h2>Etapa 2 — Traçados Extraídos e Conferência</h2>
-                  <p style="margin:0;color:var(--muted);font-size:13px">Confira cada onda reconstruída e compare diretamente com a região da fotografia original.</p>
+                  <h2>Etapa 2 — Traçados Extraídos, Calibração e Auditoria de Fidelidade</h2>
+                  <p style="margin:0;color:var(--muted);font-size:13px">Confira pixel a pixel cada onda reconstruída sobre a fotografia original, utilize zoom/arraste e confirme a calibração do papel.</p>
                 </div>
                 <div class="ecg-review-modes" role="radiogroup" aria-label="Modo de visualização">
                   <label style="font-size:12px;display:flex;align-items:center;gap:4px;cursor:pointer">
-                    <input type="radio" name="ecg-view-mode" value="overlay" checked> Sobreposição
+                    <input type="radio" name="ecg-view-mode" value="overlay" checked> Sobreposição Real (Pixel a Pixel)
                   </label>
                   <label style="font-size:12px;display:flex;align-items:center;gap:4px;cursor:pointer">
                     <input type="radio" name="ecg-view-mode" value="digital"> Traçado Digital
                   </label>
                   <label style="font-size:12px;display:flex;align-items:center;gap:4px;cursor:pointer">
-                    <input type="radio" name="ecg-view-mode" value="original"> Foto Original
+                    <input type="radio" name="ecg-view-mode" value="original"> Foto Recortada Original
                   </label>
+                </div>
+              </div>
+
+              <!-- PAINEL DE CALIBRAÇÃO REAL E AUDITORIA TÉCNICA INDEPENDENTE -->
+              <div class="ecg-calibration-bar" id="ecg-calibration-bar">
+                <div class="ecg-cal-group">
+                  <span class="ecg-cal-label">Origem da Escala:</span>
+                  <strong id="ecg-cal-source-badge" class="ecg-cal-badge">Verificando grade...</strong>
+                </div>
+                <div class="ecg-cal-group">
+                  <label for="ecg-cal-speed">Velocidade:</label>
+                  <select id="ecg-cal-speed">
+                    <option value="25" selected>25 mm/s (padrão)</option>
+                    <option value="50">50 mm/s</option>
+                  </select>
+                </div>
+                <div class="ecg-cal-group">
+                  <label for="ecg-cal-gain">Ganho:</label>
+                  <select id="ecg-cal-gain">
+                    <option value="10" selected>10 mm/mV (N)</option>
+                    <option value="5">5 mm/mV (N/2)</option>
+                    <option value="20">20 mm/mV (2N)</option>
+                  </select>
+                </div>
+                <button id="ecg-btn-confirm-calibration" class="ecg-btn secondary" type="button" style="padding:7px 12px;font-size:12px">
+                  Confirmar Escala Manualmente
+                </button>
+              </div>
+
+              <!-- RESUMO DO AUDITOR TÉCNICO E LEGENDA VISUAL -->
+              <div class="ecg-audit-summary-bar" id="ecg-audit-summary-bar">
+                <div id="ecg-audit-summary-text" style="font-size:12.5px">
+                  <strong>Auditoria Técnica de Extração:</strong> Aguardando processamento das derivações...
+                </div>
+                <div class="ecg-overlay-legend">
+                  <span><i class="ecg-dot-trace"></i> Curva Extraída</span>
+                  <span><i class="ecg-dot-error"></i> Descontinuidade / Ruído</span>
+                  <span><i class="ecg-dot-gap"></i> Trecho Ausente / Interpolado</span>
                 </div>
               </div>
 
@@ -184,20 +238,23 @@
               <!-- PORTÃO DE SEGURANÇA PARA A ETAPA 3 -->
               <div class="ecg-stage3-gate">
                 <div class="ecg-safety-alert">
-                  <strong>Atenção clínica obrigatória:</strong> A captura e digitalização automática não garantem acurácia diagnóstica isolada. A interpretação médica automatizada não substitui o julgamento profissional.
+                  <strong>Atenção técnica e clínica obrigatória:</strong> O Índice Técnico (0–100) mede exclusivamente a cobertura de pixels, continuidade da curva e nitidez da grade (<code>40×Cobertura + 30×Alinhamento + 20×Continuidade + 10×Calibração</code>) e <strong>não equivale a uma porcentagem de fidelidade clínica</strong>. Medições que dependem de escala exigem calibração medida ou confirmada.
                 </div>
                 <button class="ecg-btn" id="ecg-btn-confirm-and-ai" type="button" style="font-size:14px;padding:12px 20px">
-                  Conferência Aprovada → Prosseguir para Análise com IA
+                  Conferência Aprovada → Prosseguir para Etapa 3 (IA)
                 </button>
               </div>
             </article>
 
             <!-- ETAPA 3: REVISÃO PELA IA -->
             <article class="ecg-card" id="ecg-stage3-ai" hidden>
-              <h2>Etapa 3 — Análise do ECG por IA</h2>
-              <p>Os sinais digitais conferidos são interpretados pelos modelos especializados. Revise os achados e correlacione com a clínica.</p>
+              <h2>Etapa 3 — Integração Estruturada e Interpretação por IA</h2>
+              <p>Os sinais digitalizados, máscaras de validade, calibração e auditoria da Etapa 2 são verificados quanto à compatibilidade estrita com o classificador eletrocardiográfico.</p>
+              <div id="ecg-stage3-package-summary" class="ecg-pre" style="font-size:12px;margin-bottom:8px">Nenhum pacote de sinais carregado na sessão.</div>
+              <div id="ecg-stage3-compatibility-alert" class="ecg-alert" hidden></div>
               <div class="ecg-actions">
-                <button class="ecg-btn" id="ecg-analyze">Executar Interpretação por IA</button>
+                <button class="ecg-btn" id="ecg-analyze">Executar Interpretação pelo Modelo Autoral</button>
+                <button class="ecg-btn secondary" id="ecg-analyze-visual-assist" type="button">Assistente Visual Auxiliar (Experimental — Revisão de Imagem)</button>
               </div>
               <div id="ecg-status" class="ecg-status" aria-live="polite"></div>
               <div id="ecg-result-card" hidden style="margin-top:12px">

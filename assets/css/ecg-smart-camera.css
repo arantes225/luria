@@ -320,3 +320,166 @@
   line-height: 1.5;
   color: var(--text);
 }
+
+/* Modal de Identificação Incerta sobre o HUD */
+.ecg-uncertain-modal {
+  background: rgba(15, 23, 42, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(245, 158, 11, 0.55);
+  border-radius: 14px;
+  padding: 14px 18px;
+  color: #fff;
+  text-align: center;
+  max-width: 440px;
+  margin: 0 auto;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* Barra de Calibração Real e Auditoria na Etapa 2 */
+.ecg-calibration-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-size: 12.5px;
+}
+
+.ecg-cal-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ecg-cal-group select {
+  padding: 5px 9px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.ecg-cal-badge {
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 11.5px;
+  font-weight: 800;
+  background: rgba(59, 130, 246, 0.14);
+  color: #2563eb;
+}
+.ecg-cal-badge.is-measured,
+.ecg-cal-badge.is-confirmed {
+  background: rgba(16, 185, 129, 0.15);
+  color: #059669;
+}
+.ecg-cal-badge.is-assumed,
+.ecg-cal-badge.is-unknown {
+  background: rgba(245, 158, 11, 0.16);
+  color: #d97706;
+}
+
+.ecg-audit-summary-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+}
+
+.ecg-overlay-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.ecg-overlay-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.ecg-dot-trace,
+.ecg-dot-error,
+.ecg-dot-gap {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.ecg-dot-trace { background: #dc2626; }
+.ecg-dot-error { background: #f59e0b; }
+.ecg-dot-gap { background: #7c3aed; }
+
+/* Badges de Auditoria Técnica por Derivação */
+.ecg-audit-badge {
+  font-size: 10.5px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 6px;
+}
+.ecg-audit-badge.status-ok {
+  background: rgba(16, 185, 129, 0.15);
+  color: #059669;
+}
+.ecg-audit-badge.status-warn {
+  background: rgba(245, 158, 11, 0.18);
+  color: #b45309;
+}
+.ecg-audit-badge.status-err {
+  background: rgba(239, 68, 68, 0.15);
+  color: #dc2626;
+}
+
+.ecg-lead-meta {
+  font-size: 11px;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.ecg-zoom-controls {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.ecg-zoom-btn {
+  padding: 3px 7px;
+  font-size: 11px;
+  font-weight: 800;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  cursor: pointer;
+}
+.ecg-zoom-btn.is-active {
+  background: var(--accent, #184888);
+  color: #fff;
+  border-color: var(--accent, #184888);
+}
+
+.ecg-waveform-canvas {
+  cursor: grab;
+  touch-action: none;
+}
+.ecg-waveform-canvas:active {
+  cursor: grabbing;
+}
+
