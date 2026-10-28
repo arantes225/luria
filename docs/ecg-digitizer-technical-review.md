@@ -1,9 +1,9 @@
 # AUDITORIA TÉCNICA E REVISÃO DE LICENÇAS — LURIA ECG DIGITIZER & SCANNER INTELIGENTE
 
 **Repositório:** `arantes225/luria`  
-**Branch de trabalho:** `feature/ecg-smart-camera-redesign`  
+**Branch de trabalho:** `fix/ecg-e2e-contracts-and-calibration`  
 **Data da Auditoria e Validação:** 27 de Outubro de 2026  
-**Status do Pipeline:** Implementado, testado e validado contra ground-truth PhysioNet PTB-XL 1.0.3.
+**Status do Pipeline:** Implementado, testado e validado end-to-end (32/32 testes aprovados).
 
 ---
 
@@ -103,4 +103,50 @@ Executados via `node --test tests/work-ecg-smart-camera.test.cjs` (14 testes, 14
 13. **Ausência estrita de voz/áudio e síntese artificial:** Verificado em todo o código-fonte.
 14. **Reutilização do `LuriaRotateController`:** Validado no modo retrato.
 
-**Total de testes automatizados na suite:** 17 de 17 aprovados (100% de sucesso).
+## 5. RESULTADOS DA BATERIA DE TESTES DE INTEGRAÇÃO END-TO-END (15 CENÁRIOS)
+
+Executados via `node --test tests/ecg-e2e-integration.test.cjs` (15 cenários, 15 aprovados):
+
+1. **Cenário 1 — ECG legível com layout padrão e passagem do contrato de boundaries:** O reconhecedor retorna tanto `leads` quanto `detectedLayout.leads`, e `calibration` quanto `gridCalibration`. A câmera consome sem perda de propriedades.
+2. **Cenário 2 — Reconhecimento de layout alternativo 6x2:** Suporte formal e identificação geométrica de layouts clínicos de 6 linhas por 2 colunas.
+3. **Cenário 3 — Rótulos trocados (OCR identifica troca):** O OCR identifica incoerência posicional (ex.: derivação fora de ordem) e o auditor técnico marca como `"Revisão necessária"`.
+4. **Cenário 4 — Derivação ausente:** Falha ou ausência de uma das derivações impede o avanço indevido para a etapa de inferência clínica.
+5. **Cenário 5 — Fotografia cortada:** Bordas do exame cortadas ativam `isCutOff: true`, exigindo reenquadramento.
+6. **Cenário 6 — Reflexo intenso:** Flare/brilho excessivo na folha é reprovado pelo detector de qualidade ótica.
+7. **Cenário 7 — Calibração da grade sem pulso retangular é 'assumed', NÃO 'measured':** Detectar a grade milimetrada apenas mede o espaçamento em pixels por milímetro (`pixelsPerMm`), mas NÃO afere a velocidade do papel (25 mm/s vs 50 mm/s) nem o ganho (10 mm/mV vs 5 mm/mV). A escala é rigorosamente rotulada como `"assumed"`, a menos que um pulso padrão de 1 mV seja detectado ou o usuário confirme os valores.
+8. **Cenário 8 — Preservação da duração temporal física:** A duração física total (`recoveredDurationSeconds`) é preservada como `(width * msPerPixel) / 1000` e não é multiplicada pela taxa de continuidade válida, evitando o encurtamento artificial do tempo. A extensão com sinal válido é armazenada de forma independente em `validDurationSeconds`.
+9. **Cenário 9 — Duração desconhecida:** Quando `msPerPixel` não é informado ou mensurado, a duração permanece `null` e a frequência de amostragem padrão não é arbitrariamente assumida como 500 Hz.
+10. **Cenário 10 — Fluxo completo de 12 derivações até a Etapa 2:** Sessão de captura alimenta diretamente o pacote estruturado da Etapa 2 com os metadados unificados.
+11. **Cenário 11 — Falha no OCR do modo ultrassensível requer confirmação manual:** Se a leitura do rótulo for ambígua ou falhar, o sistema exibe "Identificação incerta" e solicita confirmação médica, nunca presumindo a próxima da fila.
+12. **Cenário 12 — Perda de referência espacial na navegação:** Se o rastreador perder a coerência espacial, instrui o médico a afastar o aparelho para reenquadrar o ECG por completo.
+13. **Cenário 13 — Recaptura pontual de derivação específica:** Permite recapturar apenas a derivação ruidosa sem descartar as demais já validadas.
+14. **Cenário 14 — Bloqueio categórico de inferência de 2,5 s no modelo autoral de 10 s:** Tentativas de enviar traçados de 2,5 s para um classificador desenhado para 10 s contínuos são estritamente bloqueadas com alerta visual explícito.
+15. **Cenário 15 — Ausência da Edge Function autoral 'ecg-signal-classifier':** A auditoria confirma que o repositório não possui a Edge Function `ecg-signal-classifier` em `supabase/functions/`. O sistema informa com transparência técnica a indisponibilidade do backend de sinal e recusa a simulação.
+
+---
+
+## 6. TABELA CONSOLIDADA DE EXECUÇÃO DE TESTES AUTOMATIZADOS
+
+| Suíte de Testes | Arquivo | Testes Executados | Sucessos | Falhas | Tempo Total |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| **Testes da Câmera & Adversariais** | `tests/work-ecg-smart-camera.test.cjs` | 14 | 14 | 0 | ~0.65 s |
+| **Benchmark Ground-Truth PhysioNet** | `tests/ecg-physionet-benchmark.test.cjs` | 3 | 3 | 0 | ~0.15 s |
+| **Integração End-to-End & Contratos** | `tests/ecg-e2e-integration.test.cjs` | 15 | 15 | 0 | ~1.70 s |
+| **TOTAL GERAL** | — | **32** | **32** | **0** | **~2.50 s** |
+
+---
+
+## 7. O QUE PODE SER COMPROVADO AUTOMATIZADAMENTE VS. O QUE DEPENDE DE AMBIENTE MÓVEL REAL
+
+### Comprovado Automatizadamente (em Node.js / CI):
+1. Todos os contratos de interface (`boundaries.leads`, `boundaries.detectedLayout.leads`, `calibration`, `gridCalibration`, OCR `lead`/`recognizedLead`).
+2. Robustez geométrica, OCR de matriz de pontos, classificação de grades e rejeição de entradas adversariais.
+3. Precisão quantitativa de extração frente ao dataset PhysioNet PTB-XL (MAE $0.0049\text{ mV}$, $r = 0.9982$).
+4. Fórmulas de duração física, validade temporal e recalibração dinâmica de escala.
+5. Regras de bloqueio de segurança (fail-closed) na ausência de derivações, ausência de 10 s ou ausência de backend autoral.
+
+### Depende de Validação em Dispositivo Móvel Real (Testes de Campo):
+1. **Performance da câmera a 60 fps em hardware de baixo custo:** A taxa de quadros e o tempo de processamento por frame (Canvas 2D / `getImageData`) dependem da GPU e CPU do dispositivo móvel.
+2. **Estabilidade de foco e auto-exposição sob iluminação hospitalar oscilante:** Requer teste com iluminação fluorescente e sombras de mão reais sobre o papel térmico.
+3. **Ergonomia dos gestos touch na Etapa 2:** Teste de usabilidade do Pinch-to-Zoom e Pan touch na sobreposição de traçados sobre a foto.
+

@@ -57,6 +57,12 @@
 
     // Mapa espacial verdadeiro das derivações construídos na Etapa 1
     let currentSheetMap = null;
+    let cameraSpatialTracker = {
+      referenceCorners: null,
+      lastRoiCenter: { x: 0.5, y: 0.5 },
+      trackingLost: false,
+      consecutiveUncertainFrames: 0
+    };
 
     // Estado de captura pendente de confirmação manual de identidade (quando OCR é incerto)
     let pendingUncertainCapture = null;
@@ -275,9 +281,17 @@
 
       // 4. Orientação direcional em tempo real quando buscando derivação específica
       if (mode === "ultrasensitive" && currentTargetLead && currentSheetMap) {
-        const nav = cvEngine.computeNavigationGuidance(currentSheetMap, currentTargetLead, { x: 0.5, y: 0.5 });
-        if (nav && nav.direction !== "aligned" && nav.direction !== "reframe") {
-          setHudMessage(nav.message);
+        // Estima centro atual baseado na localização da folha
+        let currentCenter = { x: 0.5, y: 0.5 };
+        if (docDetection.sheet?.boundaries) {
+          const b = docDetection.sheet.boundaries;
+          currentCenter = { x: (b.xMin + b.xMax) / 2, y: (b.yMin + b.yMax) / 2 };
+        }
+        cameraSpatialTracker.lastRoiCenter = currentCenter;
+
+        const nav = cvEngine.computeNavigationGuidance(currentSheetMap, currentTargetLead, currentCenter, cameraSpatialTracker);
+        if (nav && nav.direction !== "aligned" && nav.direction !== "centered") {
+          setHudMessage(nav.instruction || nav.message);
           setReticleStatus("adjusting");
           return;
         }
@@ -361,9 +375,10 @@
         }
       }
 
-      // Atualiza calibração da sessão se medida na grade
-      if (boundaries.gridCalibration) {
-        const gc = boundaries.gridCalibration;
+      // Atualiza calibração da sessão se medida na grade ou no objeto calibration
+      const detectedCal = boundaries.calibration || boundaries.gridCalibration || null;
+      if (detectedCal) {
+        const gc = detectedCal;
         if (gc.calibrationSource === "measured" || gc.calibrationSource === "user_confirmed") {
           sessionCalibration = {
             ...sessionCalibration,
@@ -387,13 +402,15 @@
 
       currentSheetMap = boundaries;
 
+      const leadsMap = boundaries.leads || boundaries.detectedLayout?.leads || null;
+
       // Se a imagem foi rejeitada (papel em branco, página de texto, grade vazia sem ECG, etc.)
-      if (!boundaries.detected || !boundaries.leads) {
+      if (!boundaries.detected || !leadsMap) {
         return {
           ok: false,
           capturedCount: 0,
           boundaries,
-          reason: boundaries.reason || "Não foi possível reconhecer um exame de ECG válido na imagem."
+          reason: boundaries.reason || boundaries.message || "Não foi possível reconhecer um exame de ECG válido na imagem."
         };
       }
 
@@ -403,7 +420,7 @@
       const anomalies = boundaries.anomalies || {};
 
       CANONICAL_LEADS.forEach(leadName => {
-        const box = boundaries.leads[leadName];
+        const box = leadsMap[leadName];
         if (!box) return;
 
         const roiX = Math.max(0, Math.round(box.xMin * snapCanvas.width));
@@ -608,9 +625,11 @@
           return;
         }
 
+        const detectedLead = labelRecognition.recognizedLead || labelRecognition.lead || null;
+
         // Verifica se o rótulo foi reconhecido com evidência suficiente
-        if (labelRecognition.recognizedLead && labelRecognition.confidence >= 0.68) {
-          const recognizedLead = labelRecognition.recognizedLead;
+        if (detectedLead && labelRecognition.confidence >= 0.68) {
+          const recognizedLead = detectedLead;
           saveCloseUpLeadCapture(recognizedLead, cropCanvas, roiW, roiH, roiX, roiY, extractionResult, {
             lead: recognizedLead,
             recognizedLead,
@@ -783,6 +802,18 @@
           const validSpanPx = leadInfo.cropWidth || (leadInfo.extractedSignal ? leadInfo.extractedSignal.length : 0);
           const durationSec = Number(((validSpanPx * sessionCalibration.msPerPixel) / 1000).toFixed(3));
           const effHz = durationSec > 0 ? Math.round(validSpanPx / durationSec) : null;
+
+          // Se o sinal medido tiver sido extraído em pixels e a calibração de ganho foi alterada, recalcular amplitude
+          const prevCal = leadInfo.calibration || {};
+          const prevGain = Number(prevCal.gainMmPerMv) || 10;
+          const newGain = gain;
+          if (prevGain !== newGain && Array.isArray(leadInfo.extractedSignal)) {
+            const gainRatio = prevGain / newGain;
+            leadInfo.extractedSignal = leadInfo.extractedSignal.map(v => (v === null || isNaN(v)) ? null : Number((v * gainRatio).toFixed(4)));
+            if (leadInfo.extraction) {
+              leadInfo.extraction.signal = leadInfo.extractedSignal;
+            }
+          }
 
           leadInfo.calibration = { ...sessionCalibration };
           leadInfo.durationSeconds = durationSec;

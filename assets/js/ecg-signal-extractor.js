@@ -722,7 +722,10 @@
 
     const calSource = calInfo?.calibrationSource || (legacyPixelsPerMv ? "assumed" : "unknown");
     const effectivePixelsPerMv = calInfo?.pixelsPerMv || legacyPixelsPerMv || (height * 0.35);
-    const msPerPixel = calInfo?.msPerPixel || null;
+    let msPerPixel = calInfo?.msPerPixel || null;
+    if (!msPerPixel && options.calibration?.msPerPixel) {
+      msPerPixel = options.calibration.msPerPixel;
+    }
 
     // Construir vetores de sinal e coordenadas exatas em pixels na imagem recortada
     const signalWithNulls = new Array(width);
@@ -792,8 +795,8 @@
     const limitations = [];
 
     if (msPerPixel && msPerPixel > 0) {
-      const totalSpanSeconds = (width * msPerPixel) / 1000;
-      recoveredDurationSeconds = Number(( totalSpanSeconds * continuityRatio ).toFixed(3));
+      const totalSpanSeconds = Number(((width * msPerPixel) / 1000).toFixed(3));
+      recoveredDurationSeconds = totalSpanSeconds; // A duração total física recuperada é a extensão em ms/s
       effectiveResolutionHz = Number((1000 / msPerPixel).toFixed(1));
     } else {
       limitations.push("Calibração temporal (mm/s ou px/mm) não confirmada; duração em segundos e taxa efetiva em Hz não determinadas.");
@@ -848,6 +851,8 @@
       recoveredDurationSeconds,
       effectiveResolutionHz,
       resampledDigitalRateHz: null, // Não atribuímos 500 Hz automaticamente!
+      validSamplesCount: gapResult.finalValidMask.filter(v => v === 1).length,
+      validDurationSeconds: msPerPixel ? Number(((gapResult.finalValidMask.filter(v => v === 1).length * msPerPixel) / 1000).toFixed(3)) : null,
       baselineY: Number(baselineY.toFixed(2)),
       peakToPeakMv: morph.peakToPeakMv,
       confidence: Number(Math.min(0.99, continuityRatio * 0.7 + meanInkScore * 0.3).toFixed(3)),
