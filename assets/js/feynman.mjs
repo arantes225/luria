@@ -226,6 +226,30 @@ async function finishSession() {
       if (sameDay && String(step?.href || "").startsWith("/feynman/")
           && (!expectedTopic || normalize(expectedTopic) === normalize(state.topic))) {
         guidedFeynmanCompleted = !!window.LuriaGuidedStudy?.completeActiveStep?.("feynman-assessed");
+        // Ao revisar, as lacunas do diagnóstico orientam a próxima etapa.
+        if (guidedFeynmanCompleted && active.activeIndex === 0 && active.plan?.mode === "review") {
+          const diagnostic = {
+            createdAt: active.plan.createdAt, topic: state.topic,
+            score: Number.isFinite(Number(report?.score)) ? Number(report.score) : null,
+            gaps: Array.isArray(report?.gaps) ? report.gaps.slice(0, 6) : [],
+            errors: Array.isArray(report?.errors) ? report.errors.slice(0, 6) : [],
+            next_steps: Array.isArray(report?.next_steps) ? report.next_steps.slice(0, 6) : [],
+            capturedAt: Date.now()
+          };
+          sessionStorage.setItem("luria:guided-study-diagnostic", JSON.stringify(diagnostic));
+          const userId = String(window.docmapUser?.id || active.plan.ownerId || "");
+          if (userId) {
+            const day = active.plan.day || new Date().toLocaleDateString("sv-SE");
+            const key = "luria:guided-study-daily:" + userId + ":" + day;
+            try {
+              const stored = JSON.parse(localStorage.getItem(key) || "null");
+              if (stored?.plan?.createdAt === active.plan.createdAt) {
+                stored.diagnostic = diagnostic;
+                localStorage.setItem(key, JSON.stringify(stored));
+              }
+            } catch { /* A avaliação permanece no armazenamento da sessão. */ }
+          }
+        }
       }
     } catch { /* Sessões avulsas não devem creditar missões diferentes. */ }
     sessionPanel.hidden = true; reportPanel.hidden = false;
@@ -233,7 +257,8 @@ async function finishSession() {
       const link = document.createElement("a");
       link.href = "/sessao-estudo/";
       link.dataset.backToDailyStudy = "1";
-      link.textContent = "Concluir missão do dia";
+      link.textContent = "Continuar revisão do dia";
+      if (JSON.parse(sessionStorage.getItem("luria:guided-study-active") || "null")?.activeIndex === 2) link.textContent = "Concluir missão do dia";
       link.className = "feynman-primary";
       reportPanel.querySelector(".feynman-report-actions")?.prepend(link);
     }
