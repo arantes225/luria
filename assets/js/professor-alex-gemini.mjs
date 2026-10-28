@@ -1,3 +1,5 @@
+import {getAlexConversation, rememberAlexTurn, clearAlexConversation} from './alex-conversation-history.mjs?v=20261028-1';
+
 // Secure Professor Alex front-end: only the user's Supabase JWT goes to our Edge Function.
 // The Gemini API key is read exclusively inside the Edge Function.
 const finalLayoutStyle = document.createElement("link");
@@ -12,13 +14,10 @@ const submit = form?.querySelector('button[type="submit"]');
 const fileInput = document.getElementById("alex-file");
 let alexUsageTimer = null;
 const sessionHistory = [];
+let renderedHistoryUser = null;
 let alexSiteIndexPromise = null;
 let liveTranscriptConfidence = null;
 let speechGeneration = 0;
-
-function shouldSendAlexHistory(text) {
-  return /\b(isso|nesse caso|e depois|por que|porque|qual deles|como diferencio|continue|aprofund|anterior)\b/i.test(String(text || ""));
-}
 
 function normalizeAlexSearch(value) {
   return String(value || "").toLocaleLowerCase("pt-BR")
@@ -300,6 +299,33 @@ function display(message, title = "Professor Alex", isError = false) {
   output?.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
+function restoreConversationView(userId) {
+  if (renderedHistoryUser === userId) return;
+  const restored = getAlexConversation(userId);
+  const feed = document.getElementById("alex-chat-feed");
+  if (feed && (restored.length || renderedHistoryUser)) feed.replaceChildren();
+  sessionHistory.splice(0, sessionHistory.length, ...restored);
+  renderedHistoryUser = userId;
+  for (const entry of restored) {
+    if (entry.role === "user") appendUserMessage(entry.text);
+    else display(entry.text, "Professor Alex");
+  }
+}
+
+if (window.supabaseClient?.auth) {
+  window.supabaseClient.auth.getSession()
+    .then(({data}) => { if (data?.session?.user?.id) restoreConversationView(data.session.user.id); })
+    .catch(() => {});
+}
+
+document.getElementById("alex-new-conversation")?.addEventListener("click", () => {
+  if (!renderedHistoryUser) return;
+  clearAlexConversation(renderedHistoryUser);
+  sessionHistory.length = 0;
+  document.getElementById("alex-chat-feed")?.replaceChildren();
+  display("Nova conversa iniciada. Sobre o que você quer conversar?", "Professor Alex");
+});
+
 function isStudyPlanningRequest(value) {
   const clean = String(value || "").toLocaleLowerCase("pt-BR").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ");
   return /\b(cronograma|aulas? (?:desta|da|por) semana|rodando em|lista de quest|lista de flashcard|criar quest|criar flashcard|selecionar apostila|estudar agora|mudar as aulas|ajustar.*cronograma)\b/.test(clean);
@@ -409,6 +435,22 @@ if (form) {
       return;
     }
 
+    // Resolve the account before reading history: no cross-account context leakage.
+    let session;
+    try {
+      const authResult = await client.auth.getSession();
+      session = authResult?.data?.session;
+      if (authResult?.error || !session?.access_token || !session?.user?.id) {
+        display(ERROR_MESSAGES.unauthorized, "Faça login", true);
+        return;
+      }
+    } catch {
+      display(ERROR_MESSAGES.unauthorized, "Faça login", true);
+      return;
+    }
+    restoreConversationView(session.user.id);
+    sessionHistory.splice(0, sessionHistory.length, ...getAlexConversation(session.user.id));
+
     const area = document.getElementById("alex-area")?.value || "";
     const topic = document.getElementById("alex-topic")?.value.trim() || "";
     const prompt = document.getElementById("alex-prompt")?.value.trim() || "";
@@ -431,7 +473,7 @@ if (form) {
       mode: isEstourado ? "estourado" : "normal",
       channel: isLiveActive ? "voice" : "chat",
       depth: document.querySelector('[data-alex-depth].is-active')?.dataset.alexDepth === "aula" ? "aula" : "rapida",
-      history: shouldSendAlexHistory(prompt) ? sessionHistory.slice(-4) : [],
+      history: sessionHistory.slice(-12),
     };
     if (isLiveActive && Number.isFinite(liveTranscriptConfidence)) payload.voice_confidence = liveTranscriptConfidence;
     const hasMaterial = Boolean(fileInput?.files?.[0]);
@@ -441,6 +483,7 @@ if (form) {
       const answer = fastSocialReply(prompt || topic, isEstourado);
       if (prompt) appendUserMessage(prompt);
       display(answer, "Professor Alex");
+      sessionHistory.splice(0, sessionHistory.length, ...rememberAlexTurn(session.user.id, prompt || topic, answer));
       const promptInput = document.getElementById("alex-prompt");
       if (prompt && promptInput?.value.trim() === prompt) promptInput.value = "";
       const mascot = document.getElementById("alex-mascot");
@@ -491,11 +534,6 @@ if (form) {
     }
 
     try {
-      const { data: { session }, error: sessionError } = await client.auth.getSession();
-      if (sessionError || !session?.access_token) {
-        display(ERROR_MESSAGES.unauthorized, "Faça login", true);
-        return;
-      }
       const material = await prepareFile(fileInput?.files?.[0]);
       if (material) payload.file = material;
       const { data, error } = await client.functions.invoke("professor-alex-gemini", { body: payload });
@@ -507,11 +545,7 @@ if (form) {
         return;
       }
       if (typeof data?.answer !== "string" || !data.answer.trim()) throw Error("empty_response");
-      if (prompt) {
-        sessionHistory.push({ role: "user", text: prompt });
-        sessionHistory.push({ role: "model", text: data.answer });
-        if (sessionHistory.length > 20) sessionHistory.splice(0, sessionHistory.length - 20);
-      }
+      sessionHistory.splice(0, sessionHistory.length, ...rememberAlexTurn(session.user.id, prompt || topic, data.answer));
       const promptInput = document.getElementById("alex-prompt");
       if (prompt && promptInput?.value.trim() === prompt) promptInput.value = "";
       // Modo ao vivo: texto acessível no chat e áudio automático. Chat comum: só texto.
