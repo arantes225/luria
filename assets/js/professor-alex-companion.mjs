@@ -1,4 +1,5 @@
 import './professor-alex-mascot.mjs?v=20261014-ready2';
+import {getAlexConversation, rememberAlexTurn, clearAlexConversation} from './alex-conversation-history.mjs?v=20261028-1';
 import {bindAlex} from './professor-alex-integration.mjs?v=20261014-ready2';
 
 const contexts = {
@@ -83,6 +84,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
       </form>
       <div class="alex-quick-actions">
         <button class="alex-live-quick" type="button">🎙️ Falar ao vivo</button>
+        <button class="alex-new-quick" type="button">Nova conversa</button>
         <a class="tutoring" href="/professor-alex/" hidden>Abrir tutoria completa</a>
       </div>
       <div class="help-actions">
@@ -341,6 +343,12 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
     quickMessages?.append(message);
     if (quickMessages) quickMessages.scrollTop = quickMessages.scrollHeight;
   };
+  for (const item of getAlexConversation(userId)) appendQuickMessage(item.text, item.role === 'user' ? 'user' : 'alex');
+  shadow.querySelector('.alex-new-quick')?.addEventListener('click', () => {
+    clearAlexConversation(userId);
+    quickMessages?.replaceChildren();
+    appendQuickMessage('Nova conversa iniciada. Pode perguntar!', 'alex');
+  }, opts);
   quickChat?.addEventListener('submit', async (e) => {
     e.preventDefault();
     const query = quickInput?.value?.trim();
@@ -354,7 +362,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
       const client = window.supabaseClient;
       if (!client?.functions) throw new Error('Conexão indisponível');
       const {data, error} = await client.functions.invoke('professor-alex-gemini', {
-        body: {request_id: crypto.randomUUID(), prompt: query, area: '', topic: '', intent: 'learn', mode: 'normal', channel: 'chat'}
+        body: {request_id: crypto.randomUUID(), prompt: query, area: '', topic: '', intent: 'learn', mode: 'normal', channel: 'chat', history: getAlexConversation(userId)}
       });
       if (error || !data?.answer) {
         let backendError = data?.error;
@@ -379,6 +387,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
       }
       quickMessages?.querySelector('.pending')?.remove();
       appendQuickMessage(data.answer, 'alex');
+      rememberAlexTurn(userId, query, data.answer);
       integration.react('explain');
     } catch (error) {
       quickMessages?.querySelector('.pending')?.remove();
