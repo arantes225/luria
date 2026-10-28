@@ -12,15 +12,15 @@ const css = fs.readFileSync(path.join(root,"assets/css/ecg-smart-camera.css"),"u
 function createScene(url = "https://www.resibulando.online/trabalho/ecg/") {
   const dom = new JSDOM(html,{url,runScripts:"outside-only"});
   const w=dom.window, d=w.document;
-  let controllerConfig, started=0, stopped=0;
+  let controllerConfig, started=0, stopped=0, currentMode = 'fast';
   w.matchMedia = () => ({matches:false});
   w.LuriaEcgSmartHint = {};
   w.LuriaSmartCamera = {createController: opts => {
     controllerConfig = opts;
     return {
-      startCamera: mode => {started++;opts.onStageChange(1);},
+      startCamera: mode => {started++;currentMode=mode;opts.onStageChange(1);},
       stopCamera: () => {stopped++;},
-      getCurrentMode: () => "fast",
+      getCurrentMode: () => currentMode,
       getCapturedLeads: () => [],
       getSessionStructuredPackage: () => ({calibration:{}}),
       setMode(){}, resetCaptureSession(){},
