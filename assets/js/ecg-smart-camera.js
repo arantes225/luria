@@ -20,6 +20,7 @@
   "use strict";
 
   const CANONICAL_LEADS = ["DI", "DII", "DIII", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"];
+  const contracts = global.LuriaEcgContracts || (typeof require === "function" ? require("./ecg-contracts.js") : null);
 
   function createSmartCameraController(options = {}) {
     const {
@@ -57,6 +58,13 @@
 
     // Mapa espacial verdadeiro das derivações construídos na Etapa 1
     let currentSheetMap = null;
+    let originalImageUrl = null;
+    let cameraSpatialTracker = {
+      referenceCorners: null,
+      lastRoiCenter: { x: 0.5, y: 0.5 },
+      trackingLost: false,
+      consecutiveUncertainFrames: 0
+    };
 
     // Estado de captura pendente de confirmação manual de identidade (quando OCR é incerto)
     let pendingUncertainCapture = null;
@@ -224,6 +232,11 @@
       if (!result || !result.ok) return;
 
       const { quality, isStable, motionBlur, docDetection } = result;
+      if (mode === "ultrasensitive") {
+        cvEngine.updateSpatialRegistration(cameraSpatialTracker,
+          docDetection?.detected ? docDetection.sheet : null,
+          docDetection?.detected ? (docDetection.leads || docDetection.detectedLayout?.leads) : null);
+      }
 
       // 1. Verificação de iluminação e reflexos severos
       if (!quality.isLightingGood) {
@@ -275,9 +288,13 @@
 
       // 4. Orientação direcional em tempo real quando buscando derivação específica
       if (mode === "ultrasensitive" && currentTargetLead && currentSheetMap) {
-        const nav = cvEngine.computeNavigationGuidance(currentSheetMap, currentTargetLead, { x: 0.5, y: 0.5 });
-        if (nav && nav.direction !== "aligned" && nav.direction !== "reframe") {
-          setHudMessage(nav.message);
+        // O centro da tela é a posição observada da câmera; a região alvo é registrada entre quadros.
+        const currentCenter = { x: 0.5, y: 0.5 };
+        cameraSpatialTracker.lastRoiCenter = currentCenter;
+
+        const nav = cvEngine.computeNavigationGuidance(currentSheetMap, currentTargetLead, currentCenter, cameraSpatialTracker);
+        if (nav && nav.direction !== "aligned" && nav.direction !== "centered") {
+          setHudMessage(nav.instruction || nav.message);
           setReticleStatus("adjusting");
           return;
         }
@@ -331,6 +348,7 @@
 
       const ctx = snapCanvas.getContext("2d");
       let fullImageData = ctx.getImageData(0, 0, snapCanvas.width, snapCanvas.height);
+      originalImageUrl = typeof snapCanvas.toDataURL === "function" ? snapCanvas.toDataURL("image/jpeg", 0.92) : null;
 
       // 1. Detecta limites reais, orientação, perspectiva, grade, calibração e rótulos
       let boundaries = cvEngine.detectECGBoundaries(fullImageData, {
@@ -361,9 +379,10 @@
         }
       }
 
-      // Atualiza calibração da sessão se medida na grade
-      if (boundaries.gridCalibration) {
-        const gc = boundaries.gridCalibration;
+      // Atualiza calibração da sessão se medida na grade ou no objeto calibration
+      const detectedCal = boundaries.calibration || boundaries.gridCalibration || null;
+      if (detectedCal) {
+        const gc = detectedCal;
         if (gc.calibrationSource === "measured" || gc.calibrationSource === "user_confirmed") {
           sessionCalibration = {
             ...sessionCalibration,
@@ -387,23 +406,25 @@
 
       currentSheetMap = boundaries;
 
+      const leadsMap = boundaries.leads || boundaries.detectedLayout?.leads || null;
+
       // Se a imagem foi rejeitada (papel em branco, página de texto, grade vazia sem ECG, etc.)
-      if (!boundaries.detected || !boundaries.leads) {
+      if (!boundaries.detected || !leadsMap) {
         return {
           ok: false,
           capturedCount: 0,
           boundaries,
-          reason: boundaries.reason || "Não foi possível reconhecer um exame de ECG válido na imagem."
+          reason: boundaries.reason || boundaries.message || "Não foi possível reconhecer um exame de ECG válido na imagem."
         };
       }
 
       // Processa cada região candidata identificada no mapa
       let newlyCapturedCount = 0;
       const newlyCapturedLeads = [];
-      const anomalies = boundaries.anomalies || {};
+      const anomalies = contracts.normalizeAnomalies(boundaries.anomalies);
 
       CANONICAL_LEADS.forEach(leadName => {
-        const box = boundaries.leads[leadName];
+        const box = leadsMap[leadName];
         if (!box) return;
 
         const roiX = Math.max(0, Math.round(box.xMin * snapCanvas.width));
@@ -421,26 +442,16 @@
         const roiImageData = cropCtx.getImageData(0, 0, roiW, roiH);
 
         // Verifica o rótulo específico e anomalias (troca ou duplicidade)
-        const labelInfo = boundaries.leadIdentities?.[leadName] || {
-          expectedLead: leadName,
-          recognizedLead: null,
-          confidence: 0,
-          method: "topology_hypothesis",
-          status: "unverified_hypothesis"
-        };
-
-        const isSwapped = (anomalies.swappedLeads || []).some(s => s.expected === leadName);
-        const isDuplicate = (anomalies.duplicateLabels || []).includes(leadName);
-
-        const leadIdentity = {
-          lead: isSwapped ? labelInfo.recognizedLead : leadName,
-          expectedLead: leadName,
-          recognizedLead: labelInfo.recognizedLead,
-          method: labelInfo.method || "topology_hypothesis",
-          confidence: labelInfo.confidence || (boundaries.confidence || 0.65),
-          confirmedByUser: Boolean(options.confirmedLead === leadName),
-          status: isSwapped ? "swapped_warning" : (isDuplicate ? "duplicate_warning" : labelInfo.status)
-        };
+        const regionAnomalies = anomalies.filter(a => a.lead === leadName || a.recognizedLead === leadName || a.expectedLead === leadName);
+        const leadIdentity = contracts.normalizeLeadIdentity({
+          ...(boundaries.leadIdentities?.[leadName] || {}),
+          lead: leadName,
+          expectedLead: boundaries.leadIdentities?.[leadName]?.expectedLead || box.expectedInTemplate || leadName,
+          region: boundaries.leadIdentities?.[leadName]?.region || box,
+          anomalies: regionAnomalies,
+          confirmedByUser: options.confirmedLead === leadName,
+          humanConfirmedLead: options.confirmedLead === leadName ? leadName : null
+        });
 
         const extractionResult = extractor.extractRealSignalFromImageData(roiImageData, {
           leadIdentity,
@@ -462,16 +473,6 @@
         const newIndex = extractionResult.audit?.technicalIndex || 0;
 
         if (extractionResult.isValid && extractionResult.signal && (!leadInfo.captured || newIndex >= prevIndex)) {
-          // Se houve troca de rótulo detectada (ex: V1 no lugar de DI), marca revisão obrigatória
-          if (isSwapped || isDuplicate) {
-            extractionResult.audit.status = "Revisão necessária";
-            extractionResult.audit.reasons.push(
-              isSwapped
-                ? `Rótulo reconhecido (${labelInfo.recognizedLead}) diverge da posição esperada (${leadName}).`
-                : `Rótulo duplicado detectado (${leadName}).`
-            );
-          }
-
           leadInfo.captured = true;
           leadInfo.status = "captured";
           leadInfo.leadIdentity = leadIdentity;
@@ -590,11 +591,16 @@
         const effectiveCal = gridCal.calibrationSource === "measured" ? gridCal : sessionCalibration;
 
         const extractionResult = extractor.extractRealSignalFromImageData(roiImageData, {
-          leadIdentity: {
+          leadIdentity: contracts.normalizeLeadIdentity({
             lead: labelRecognition.recognizedLead || currentTargetLead,
-            method: labelRecognition.recognizedLead ? labelRecognition.method : "unverified",
-            confidence: labelRecognition.confidence || 0
-          },
+            recognizedLead: labelRecognition.recognizedLead || labelRecognition.lead,
+            rawOcrText: labelRecognition.rawText,
+            expectedLead: currentTargetLead,
+            method: labelRecognition.recognizedLead ? labelRecognition.method : "topology_hypothesis",
+            ocrConfidence: labelRecognition.confidence || 0,
+            evidence: "positional_hypothesis",
+            region: { x: roiX, y: roiY, width: roiW, height: roiH }
+          }),
           regionBounds: { x: roiX, y: roiY, width: roiW, height: roiH },
           calibration: effectiveCal,
           provenance: { source: "ultrasensitive_closeup", timestamp: new Date().toISOString() }
@@ -608,17 +614,20 @@
           return;
         }
 
+        const detectedLead = labelRecognition.recognizedLead || labelRecognition.lead || null;
+
         // Verifica se o rótulo foi reconhecido com evidência suficiente
-        if (labelRecognition.recognizedLead && labelRecognition.confidence >= 0.68) {
-          const recognizedLead = labelRecognition.recognizedLead;
-          saveCloseUpLeadCapture(recognizedLead, cropCanvas, roiW, roiH, roiX, roiY, extractionResult, {
+        if (detectedLead && labelRecognition.confidence >= 0.68) {
+          const recognizedLead = detectedLead;
+          saveCloseUpLeadCapture(recognizedLead, cropCanvas, roiW, roiH, roiX, roiY, extractionResult, contracts.normalizeLeadIdentity({
             lead: recognizedLead,
             recognizedLead,
+            rawOcrText: labelRecognition.rawText,
             method: labelRecognition.method,
-            confidence: labelRecognition.confidence,
+            ocrConfidence: labelRecognition.confidence,
             confirmedByUser: false,
-            status: "verified_ocr"
-          });
+            region: { x: roiX, y: roiY, width: roiW, height: roiH }
+          }));
 
           pendingLeadQueue = CANONICAL_LEADS.filter(l => !capturedLeads.get(l).captured);
           updateHudProgress();
@@ -678,14 +687,14 @@
       const leadInfo = capturedLeads.get(leadName);
       if (!leadInfo) return false;
 
-      extractionResult.leadIdentity = leadIdentity;
+      extractionResult.leadIdentity = contracts.normalizeLeadIdentity(leadIdentity);
       if (global.LuriaEcgSignalExtractor && global.LuriaEcgSignalExtractor.auditExtractedLead) {
         extractionResult.audit = global.LuriaEcgSignalExtractor.auditExtractedLead(extractionResult);
       }
 
       leadInfo.captured = true;
       leadInfo.status = "captured";
-      leadInfo.leadIdentity = leadIdentity;
+      leadInfo.leadIdentity = extractionResult.leadIdentity;
       leadInfo.imageCropUrl = typeof cropCanvas.toDataURL === "function"
         ? cropCanvas.toDataURL("image/jpeg", 0.92)
         : null;
@@ -713,14 +722,17 @@
         : pendingUncertainCapture.suggestedLead;
 
       const { cropCanvas, roiW, roiH, roiX, roiY, extractionResult } = pendingUncertainCapture;
-      saveCloseUpLeadCapture(target, cropCanvas, roiW, roiH, roiX, roiY, extractionResult, {
+      saveCloseUpLeadCapture(target, cropCanvas, roiW, roiH, roiX, roiY, extractionResult, contracts.normalizeLeadIdentity({
         lead: target,
-        recognizedLead: target,
+        recognizedLead: extractionResult.leadIdentity?.recognizedLead || null,
+        expectedLead: extractionResult.leadIdentity?.expectedLead || null,
         method: "user_confirmed",
-        confidence: 0.9,
+        ocrConfidence: extractionResult.leadIdentity?.ocrConfidence || 0,
         confirmedByUser: true,
-        status: "user_confirmed"
-      });
+        humanConfirmedLead: target,
+        region: { x: roiX, y: roiY, width: roiW, height: roiH },
+        anomalies: extractionResult.leadIdentity?.anomalies || []
+      }));
 
       pendingUncertainCapture = null;
       pendingLeadQueue = CANONICAL_LEADS.filter(l => !capturedLeads.get(l).captured);
@@ -761,10 +773,13 @@
      * Atualiza a calibração confirmada pelo médico na Etapa 2 e recalcula durações/escalas e auditoria.
      */
     function setUserCalibration(calOptions = {}) {
-      const speed = Number(calOptions.paperSpeedMmPerSec) || 25;
-      const gain = Number(calOptions.gainMmPerMv) || 10;
-      const pxPerMmX = Number(calOptions.pixelsPerMmX) || sessionCalibration.pixelsPerMmX || 6.0;
-      const pxPerMmY = Number(calOptions.pixelsPerMmY) || sessionCalibration.pixelsPerMmY || pxPerMmX;
+      const speed = Number(calOptions.paperSpeedMmPerSec);
+      const gain = Number(calOptions.gainMmPerMv);
+      const pxPerMmX = Number(calOptions.pixelsPerMmX || sessionCalibration.pixelsPerMmX);
+      const pxPerMmY = Number(calOptions.pixelsPerMmY || sessionCalibration.pixelsPerMmY);
+      if (![25, 50].includes(speed) || ![5, 10].includes(gain) || !(pxPerMmX > 0 && pxPerMmY > 0)) {
+        return { ...sessionCalibration, error: "Escala inválida ou espaçamento da grade não medido. Reenquadre a grade antes de confirmar." };
+      }
 
       sessionCalibration = {
         paperSpeedMmPerSec: speed,
@@ -780,22 +795,17 @@
       const extractor = global.LuriaEcgSignalExtractor;
       capturedLeads.forEach(leadInfo => {
         if (leadInfo.captured && leadInfo.extraction) {
-          const validSpanPx = leadInfo.cropWidth || (leadInfo.extractedSignal ? leadInfo.extractedSignal.length : 0);
-          const durationSec = Number(((validSpanPx * sessionCalibration.msPerPixel) / 1000).toFixed(3));
-          const effHz = durationSec > 0 ? Math.round(validSpanPx / durationSec) : null;
-
-          leadInfo.calibration = { ...sessionCalibration };
-          leadInfo.durationSeconds = durationSec;
-          leadInfo.samplingRateHz = effHz;
-          leadInfo.effectiveResolutionHz = effHz;
-          leadInfo.extraction.calibration = { ...sessionCalibration };
-          leadInfo.extraction.recoveredDurationSeconds = durationSec;
-          leadInfo.extraction.effectiveResolutionHz = effHz;
-
-          if (extractor && extractor.auditExtractedLead) {
-            leadInfo.audit = extractor.auditExtractedLead(leadInfo.extraction);
-            leadInfo.extraction.audit = leadInfo.audit;
+          const recalculated = extractor?.recalibrateExtraction?.(leadInfo.extraction, sessionCalibration);
+          if (!recalculated) {
+            leadInfo.audit = { status: "Indeterminada", reasons: ["Pixels originais indisponíveis para recalcular a escala."], allowsAiModelInput: false };
+            return;
           }
+          leadInfo.extractedSignal = recalculated.signal;
+          leadInfo.calibration = recalculated.calibration;
+          leadInfo.durationSeconds = recalculated.recoveredDurationSeconds;
+          leadInfo.samplingRateHz = recalculated.effectiveResolutionHz;
+          leadInfo.effectiveResolutionHz = recalculated.effectiveResolutionHz;
+          leadInfo.audit = recalculated.audit;
         }
       });
 
@@ -810,7 +820,7 @@
       const extractor = global.LuriaEcgSignalExtractor;
       const extractionObjects = leadsArray
         .filter(l => l.captured && l.extraction)
-        .map(l => l.extraction);
+        .map(l => ({ lead: l.lead, audit: l.audit, extraction: l.extraction }));
 
       const globalAudit = (extractor && extractor.auditFullExtraction)
         ? extractor.auditFullExtraction(extractionObjects)
@@ -837,10 +847,13 @@
       return {
         timestamp: new Date().toISOString(),
         layoutId: currentSheetMap?.layoutId || "unknown",
+        originalImageUrl,
+        anomalies: contracts.normalizeAnomalies(currentSheetMap?.anomalies),
         calibration: { ...sessionCalibration },
         leads: leadsArray,
         signals: signalsByLead,
         validMasks: validMasksByLead,
+        samplingRateHz: null, // amostras espaciais nativas; reamostragem digital ainda não foi executada
         durationsSeconds: durationsByLead,
         globalAudit,
         limitations
@@ -848,6 +861,7 @@
     }
 
     function transitionToStage2() {
+      if (!Array.from(capturedLeads.values()).some(l => l.captured)) return false;
       currentStage = 2;
       const pkg = getSessionStructuredPackage();
       global.LuriaEcgSessionData = pkg;
@@ -855,6 +869,7 @@
       if (typeof onExtractComplete === "function") {
         onExtractComplete(Array.from(capturedLeads.values()), pkg);
       }
+      return true;
     }
 
     function recaptureLead(lead) {
@@ -884,14 +899,17 @@
       }
 
       const invalidLeads = CANONICAL_LEADS.filter(l => {
-        const st = capturedLeads.get(l)?.audit?.status;
-        return st === "Inválida" || st === "Indeterminada";
+        const item = capturedLeads.get(l);
+        return item?.audit?.status !== "Adequada tecnicamente" ||
+          item?.leadIdentity?.status !== "ocr_confirmed" ||
+          !Array.isArray(item?.extraction?.validMask) ||
+          item.extraction.validMask.length !== item.extraction.signal?.length;
       });
 
       if (invalidLeads.length > 0) {
         return {
           allowed: false,
-          reason: `As derivações (${invalidLeads.join(", ")}) foram classificadas como Inválidas ou Indeterminadas pela auditoria de fidelidade. Recapture-as antes de prosseguir.`
+          reason: `As derivações (${invalidLeads.join(", ")}) não têm identidade OCR, máscara e auditoria técnica suficientes. Revise ou recapture antes de prosseguir.`
         };
       }
 
@@ -917,6 +935,7 @@
       stopCamera,
       recaptureLead,
       processPhotographCanvas,
+      openReview: transitionToStage2,
       confirmUncertainLeadCapture,
       rejectUncertainLeadCapture,
       setUserCalibration,
@@ -942,3 +961,5 @@
     };
   }
 })(typeof window !== "undefined" ? window : globalThis);
+
+

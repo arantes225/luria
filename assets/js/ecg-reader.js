@@ -59,7 +59,7 @@
     }
 
     // 2. Verificação de calibração
-    if (cal.calibrationSource !== "measured" && !cal.confirmedByUser) {
+    if (!cal || (cal.calibrationSource !== "measured" && !cal.confirmedByUser)) {
       reasons.push("A calibração do exame não foi confirmada pelo usuário nem medida da grade.");
     }
 
@@ -68,26 +68,59 @@
     if (invalidLeads.length > 0) {
       reasons.push(`Derivações com auditoria técnica insatisfatória: ${invalidLeads.map(l => l.lead).join(", ")}.`);
     }
+    for (const lead of canonical) {
+      const entry = leads.find(l => l.lead === lead);
+      const signal = sessionPackage.signals?.[lead];
+      const mask = sessionPackage.validMasks?.[lead];
+      if (entry?.leadIdentity?.status !== "ocr_confirmed" || entry?.audit?.status !== "Adequada tecnicamente") {
+        reasons.push(`${lead}: identificação OCR ou auditoria insuficiente para inferência.`);
+      }
+      if (!Array.isArray(signal) || !Array.isArray(mask) || mask.length !== signal.length || mask.some(v => v !== 1) || signal.some(v => !Number.isFinite(v))) {
+        reasons.push(`${lead}: sinal contínuo e máscara integral não comprovados.`);
+      }
+    }
+    if (![100, 500].includes(sessionPackage.samplingRateHz)) {
+      reasons.push("Taxa digital comum de 100 ou 500 Hz não comprovada após reamostragem explícita.");
+    }
 
     // 4. Verificação de DURAÇÃO CONTÍNUA necessária pelo modelo autoral (10.0 s padrão PTB-XL)
     // No formato 3x4, cada derivação tem tipicamente ~2.5 segundos.
-    let minDuration = 10.0;
-    Object.keys(sessionPackage.durationsSeconds || {}).forEach(k => {
+    const durationKeys = Object.keys(sessionPackage.durationsSeconds || {});
+    if (durationKeys.length === 0) {
+      reasons.push("Nenhuma duração temporal pôde ser verificada para as derivações no pacote estruturado.");
+    }
+
+    let minDuration = Infinity;
+    durationKeys.forEach(k => {
       const dur = sessionPackage.durationsSeconds[k];
-      if (typeof dur === "number" && dur < minDuration) minDuration = dur;
+      if (typeof dur === "number" && !isNaN(dur)) {
+        if (dur < minDuration) minDuration = dur;
+      } else {
+        reasons.push(`Duração indeterminada ou inválida para a derivação ${k}.`);
+      }
     });
+
+    if (!Number.isFinite(minDuration)) {
+      minDuration = 0;
+    }
 
     const is10sComplete = minDuration >= 9.8;
     if (!is10sComplete) {
       reasons.push(
         `O classificador autoral de ECG requer 10,0 segundos contínuos para as 12 derivações (requisito WFDB/PTB-XL). ` +
-        `O traçado recuperado possui ${minDuration.toFixed(1)} segundos por derivação (formato de folha 3×4). ` +
+        `O traçado recuperado possui ${minDuration > 0 ? minDuration.toFixed(1) : "0.0"} segundos por derivação (formato de folha 3×4). ` +
         `A duplicação ou preenchimento artificial de 2,5 s para 10 s é expressamente proibida pelas diretrizes de fidelidade técnica.`
       );
     }
 
+    // Verifica disponibilidade do backend autoral
+    reasons.push(
+      "A Edge Function 'ecg-signal-classifier' (classificador autoral deep-learning de sinais brutos 12x10s) " +
+      "não foi verificada como disponível e autorizada neste ambiente. A inferência autoral de sinais permanece bloqueada."
+    );
+
     return {
-      compatible: reasons.length === 0,
+      compatible: false, // Bloqueio categórico
       reasons,
       minDuration,
       is10sComplete,
@@ -163,7 +196,7 @@
         body: {
           signals: pkg.signals,
           validMasks: pkg.validMasks,
-          samplingRateHz: 500,
+          samplingRateHz: pkg.samplingRateHz,
           calibration: pkg.calibration
         }
       });
@@ -275,3 +308,5 @@
     initStage3Package(window.LuriaEcgSessionData);
   }
 })();
+
+

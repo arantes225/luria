@@ -132,6 +132,7 @@ function loadLuriaScripts(context) {
   const rotateSrc = source("assets/js/luria-rotate-controller.js");
 
   vm.runInNewContext(rotateSrc, context);
+  vm.runInNewContext(source("assets/js/ecg-contracts.js"), context);
   vm.runInNewContext(extractorSrc, context);
   vm.runInNewContext(engineSrc, context);
   vm.runInNewContext(cameraSrc, context);
@@ -351,7 +352,7 @@ test("Adversarial 7: Rótulos trocados (ex: DI com aVR) -> Sinalização no audi
   };
 
   const audit = context.LuriaEcgSignalExtractor.auditExtractedLead(extObj);
-  assert.equal(audit.status, "Revisão necessária", "Derivação com divergência de rótulo exige revisão");
+  assert.equal(audit.status, "Indeterminada", "Derivação com divergência de rótulo exige resolução antes da auditoria");
 });
 
 test("Adversarial 8: ECG rotacionado em 90 graus -> Detecção de orientação", () => {
@@ -437,3 +438,5 @@ test("Adversarial 12: Rótulos duplicados na folha -> Detecção e sinalização
 
   assert.equal(bound.anomalies.duplicateLabels.includes("V1"), true, "Deve reportar rótulo V1 duplicado");
 });
+
+

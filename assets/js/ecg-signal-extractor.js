@@ -21,6 +21,7 @@
 
 (function (global) {
   "use strict";
+  const contracts = global.LuriaEcgContracts || (typeof require === "function" ? require("./ecg-contracts.js") : null);
 
   const AUDIT_STATUS = {
     ADEQUATE: "Adequada tecnicamente",
@@ -447,7 +448,7 @@
    */
   function auditExtractedLead(extractionResult) {
     const reasons = [];
-    const limitations = [...(extractionResult.limitations || [])];
+    const limitations = [...(extractionResult?.limitations || [])];
 
     if (!extractionResult || !extractionResult.isValid || !extractionResult.signal) {
       return {
@@ -463,16 +464,14 @@
 
     const cov = extractionResult.continuity || 0;
     const calSource = extractionResult.calibration?.calibrationSource || "unknown";
-    const idEvidence = extractionResult.leadIdentity?.evidence || "unverified";
+    const identity = contracts.normalizeLeadIdentity(extractionResult.leadIdentity || {});
+    const idEvidence = identity.evidence;
     const overlapRatio = extractionResult.trackingStats?.overlapRatio || 0;
     const jumpCount = (extractionResult.trackingErrors || []).length;
     const pixelAlignmentScore = extractionResult.pixelCorrespondence?.meanInkScore || 0;
 
     let needsReview = false;
-    if (extractionResult.leadIdentity?.status === "swapped_warning") {
-      needsReview = true;
-      reasons.push(`Alerta de rótulo divergente (${extractionResult.leadIdentity.recognizedLead || "desconhecido"} vs ${extractionResult.leadIdentity.expectedLead || "esperado"}).`);
-    }
+    if (identity.status === "conflicting") reasons.push(`Rótulo divergente: OCR ${identity.recognizedLead}, geometria ${identity.expectedLead}.`);
 
     // 1. Checar falhas críticas que tornam a derivação INVÁLIDA
 
@@ -504,8 +503,12 @@
     if (calSource === "unknown") {
       reasons.push("Escala de calibração (mm/s e mm/mV) desconhecida; medições absolutas bloqueadas.");
     }
-    if (idEvidence === "unverified") {
+    if (!identity.verified) {
       reasons.push("Identidade da derivação não pôde ser verificada.");
+    }
+    if (identity.anomalies.some(a => a.code === "duplicate_label")) reasons.push("Rótulo duplicado; associação da derivação não é única.");
+    if (Array.isArray(extractionResult.validMask) && extractionResult.validMask.length !== extractionResult.signal.length) {
+      reasons.push("Máscara de validade incompatível com o comprimento do sinal.");
     }
 
     // Cálculo transparente e determinístico do Índice Técnico Estrutural (0–100)
@@ -516,7 +519,9 @@
     const calComponent = (calSource === "measured" || calSource === "user_confirmed") ? 10 : (calSource === "assumed" ? 5 : 0);
     const technicalIndex = Math.round(covComponent + alignComponent + jumpPenalty + calComponent);
 
-    if (calSource === "unknown" && idEvidence === "unverified") {
+    if (calSource === "unknown" || identity.status === "unknown" || identity.status === "ambiguous" ||
+        identity.status === "conflicting" || identity.anomalies.some(a => a.code === "duplicate_label") ||
+        (Array.isArray(extractionResult.validMask) && extractionResult.validMask.length !== extractionResult.signal.length)) {
       return {
         status: AUDIT_STATUS.INDETERMINATE,
         technicalIndex,
@@ -545,6 +550,10 @@
       needsReview = true;
       reasons.push("Derivação atribuída por posição geométrica (rótulo OCR não confirmado — requer conferência visual).");
     }
+    if (identity.status === "manual_confirmed") {
+      needsReview = true;
+      reasons.push("Rótulo confirmado manualmente; a confirmação humana não substitui evidência automática de OCR.");
+    }
 
     if (needsReview) {
       return {
@@ -554,7 +563,7 @@
         reasons,
         limitations,
         allowsClinicalMeasurement: calSource === "measured" || calSource === "user_confirmed",
-        allowsAiModelInput: cov >= 0.70 && (calSource === "measured" || calSource === "user_confirmed")
+        allowsAiModelInput: false
       };
     }
 
@@ -588,17 +597,17 @@
     const {
       minContinuityThreshold = 0.42,
       leadLabel = options.leadIdentity?.lead || null,
-      leadEvidence = options.leadIdentity?.evidence || (options.leadIdentity?.verified ? "ocr_verified" : "positional_hypothesis"),
       regionBounds = null,
       provenance = "camera_or_upload_crop",
       calibration = null,
       pixelsPerMv: legacyPixelsPerMv = null
     } = options;
+    const leadIdentity = contracts.normalizeLeadIdentity({ ...(options.leadIdentity || {}), lead: leadLabel });
 
     if (width < 20 || height < 15) {
       const failObj = {
         isValid: false,
-        leadIdentity: { lead: leadLabel, evidence: leadEvidence, verified: false },
+        leadIdentity,
         regionBounds: regionBounds || { x: 0, y: 0, width, height },
         signal: null,
         curveCoordinatesPx: [],
@@ -629,7 +638,7 @@
     if (tracked.excessiveThicknessColumns > width * 0.18) {
       const failText = {
         isValid: false,
-        leadIdentity: { lead: leadLabel, evidence: leadEvidence, verified: false },
+        leadIdentity,
         regionBounds: regionBounds || { x: 0, y: 0, width, height },
         signal: null,
         curveCoordinatesPx: [],
@@ -654,7 +663,7 @@
       const failOverlap = {
         isValid: false,
         hasMultipleCurves: true,
-        leadIdentity: { lead: leadLabel, evidence: leadEvidence, verified: false },
+        leadIdentity,
         regionBounds: regionBounds || { x: 0, y: 0, width, height },
         signal: null,
         curveCoordinatesPx: [],
@@ -679,7 +688,7 @@
     if (continuityRatio < minContinuityThreshold || tracked.columnsWithInk < 15) {
       const failCont = {
         isValid: false,
-        leadIdentity: { lead: leadLabel, evidence: leadEvidence, verified: false },
+        leadIdentity,
         regionBounds: regionBounds || { x: 0, y: 0, width, height },
         signal: null,
         curveCoordinatesPx: [],
@@ -721,8 +730,13 @@
     }
 
     const calSource = calInfo?.calibrationSource || (legacyPixelsPerMv ? "assumed" : "unknown");
-    const effectivePixelsPerMv = calInfo?.pixelsPerMv || legacyPixelsPerMv || (height * 0.35);
-    const msPerPixel = calInfo?.msPerPixel || null;
+    const effectivePixelsPerMv = calInfo?.pixelsPerMv ||
+      (calInfo?.gainMmPerMv && calInfo?.pixelsPerMmY ? calInfo.gainMmPerMv * calInfo.pixelsPerMmY : null) ||
+      legacyPixelsPerMv || (height * 0.35);
+    let msPerPixel = calInfo?.msPerPixel || null;
+    if (!msPerPixel && options.calibration?.msPerPixel) {
+      msPerPixel = options.calibration.msPerPixel;
+    }
 
     // Construir vetores de sinal e coordenadas exatas em pixels na imagem recortada
     const signalWithNulls = new Array(width);
@@ -765,7 +779,7 @@
     if (!morph.isMorphologyValid) {
       const failMorph = {
         isValid: false,
-        leadIdentity: { lead: leadLabel, evidence: leadEvidence, verified: false },
+        leadIdentity,
         regionBounds: regionBounds || { x: 0, y: 0, width, height },
         signal: null,
         curveCoordinatesPx,
@@ -792,8 +806,8 @@
     const limitations = [];
 
     if (msPerPixel && msPerPixel > 0) {
-      const totalSpanSeconds = (width * msPerPixel) / 1000;
-      recoveredDurationSeconds = Number(( totalSpanSeconds * continuityRatio ).toFixed(3));
+      const totalSpanSeconds = Number(((width * msPerPixel) / 1000).toFixed(3));
+      recoveredDurationSeconds = totalSpanSeconds; // A duração total física recuperada é a extensão em ms/s
       effectiveResolutionHz = Number((1000 / msPerPixel).toFixed(1));
     } else {
       limitations.push("Calibração temporal (mm/s ou px/mm) não confirmada; duração em segundos e taxa efetiva em Hz não determinadas.");
@@ -810,11 +824,7 @@
 
     const resultObj = {
       isValid: true,
-      leadIdentity: {
-        lead: leadLabel,
-        evidence: leadEvidence,
-        verified: leadEvidence === "ocr_verified" || leadEvidence === "user_confirmed"
-      },
+      leadIdentity,
       regionBounds: regionBounds || { x: 0, y: 0, width, height },
       // `signal` preserva `null` nos trechos perdidos; `validSamplesOnly` fornece apenas as amostras reais medidas
       signal: signalWithNulls,
@@ -848,6 +858,8 @@
       recoveredDurationSeconds,
       effectiveResolutionHz,
       resampledDigitalRateHz: null, // Não atribuímos 500 Hz automaticamente!
+      validSamplesCount: gapResult.finalValidMask.filter(v => v === 1).length,
+      validDurationSeconds: msPerPixel ? Number(((gapResult.finalValidMask.filter(v => v === 1).length * msPerPixel) / 1000).toFixed(3)) : null,
       baselineY: Number(baselineY.toFixed(2)),
       peakToPeakMv: morph.peakToPeakMv,
       confidence: Number(Math.min(0.99, continuityRatio * 0.7 + meanInkScore * 0.3).toFixed(3)),
@@ -889,7 +901,11 @@
 
       const v0 = srcSignal[idx0];
       const v1 = srcSignal[idx1];
-      if (v0 === null || v1 === null || !Number.isFinite(v0) || !Number.isFinite(v1)) {
+      const needsNext = frac > 1e-9;
+      if (v0 === null || !Number.isFinite(v0) || extractionResult.validMask?.[idx0] !== 1 ||
+          extractionResult.interpolatedMask?.[idx0] === 1 ||
+          (needsNext && (v1 === null || !Number.isFinite(v1) || extractionResult.validMask?.[idx1] !== 1 ||
+            extractionResult.interpolatedMask?.[idx1] === 1))) {
         resampled[i] = null;
         resampledMask[i] = 0;
       } else {
@@ -906,6 +922,37 @@
       samples: resampled,
       validMask: Array.from(resampledMask)
     };
+  }
+
+  // Recalcula a partir dos pixels preservados; não acumula arredondamentos de uma escala anterior.
+  function recalibrateExtraction(extractionResult, calibration) {
+    const pxY = Number(calibration?.pixelsPerMmY);
+    const pxX = Number(calibration?.pixelsPerMmX);
+    const speed = Number(calibration?.paperSpeedMmPerSec);
+    const gain = Number(calibration?.gainMmPerMv);
+    if (!extractionResult?.isValid || !Array.isArray(extractionResult.curveCoordinatesPx) ||
+        !Number.isFinite(extractionResult.baselineY) || !(pxY > 0 && pxX > 0 && speed > 0 && gain > 0)) return null;
+    const pixelsPerMv = pxY * gain;
+    const msPerPixel = 1000 / (pxX * speed);
+    const signal = extractionResult.curveCoordinatesPx.map(point =>
+      Number.isFinite(point?.y) ? Number(((extractionResult.baselineY - point.y) / pixelsPerMv).toFixed(4)) : null);
+    const validMask = extractionResult.validMask || [];
+    const validSamplesCount = validMask.filter(v => v === 1).length;
+    const validValues = signal.filter((value, index) => validMask[index] === 1 && Number.isFinite(value));
+    extractionResult.signal = signal;
+    extractionResult.validSamplesOnly = validValues;
+    extractionResult.validSamplesCount = validSamplesCount;
+    extractionResult.recoveredDurationSeconds = Number((signal.length * msPerPixel / 1000).toFixed(3));
+    extractionResult.validDurationSeconds = Number((validSamplesCount * msPerPixel / 1000).toFixed(3));
+    extractionResult.effectiveResolutionHz = Number((1000 / msPerPixel).toFixed(1));
+    extractionResult.resampledDigitalRateHz = null;
+    extractionResult.calibration = { ...calibration, pixelsPerMv, msPerPixel,
+      measurementsAllowed: calibration.calibrationSource === "measured" || calibration.calibrationSource === "user_confirmed" };
+    let min = Infinity, max = -Infinity;
+    for (const value of validValues) { if (value < min) min = value; if (value > max) max = value; }
+    extractionResult.peakToPeakMv = validValues.length > 0 ? Number((max - min).toFixed(3)) : null;
+    extractionResult.audit = auditExtractedLead(extractionResult);
+    return extractionResult;
   }
 
   /**
@@ -958,6 +1005,7 @@
     auditExtractedLead,
     auditFullExtraction,
     extractRealSignalFromImageData,
+    recalibrateExtraction,
     resampleCalibratedSignal
   };
 
@@ -967,3 +1015,5 @@
     module.exports = exported;
   }
 })(typeof window !== "undefined" ? window : globalThis);
+
+
