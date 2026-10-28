@@ -37,6 +37,22 @@
       (detection.calibration?.gridDetected === true || ocrLabels >= 4));
   }
 
+  // Template positions are *not* lead identities. Never publish a named
+  // signal merely because an ECG-looking curve occupies an expected slot.
+  // Small bitmap OCR is provisional: accept only non-conflicting, strong
+  // exact matches to the expected label, with no sheet-level label ambiguity.
+  function isSafeAutomaticLeadAssignment(lead, identity, box, anomalies = []) {
+    const warnings = new Set(["duplicate_label", "label_conflict",
+      "ambiguous_swapped_leads_without_full_ocr", "non_standard_lead_arrangement"]);
+    if (anomalies.some(a => warnings.has(a.code))) return false;
+    if (!identity || !box || identity.status !== "ocr_confirmed") return false;
+    if (identity.recognizedLead !== lead || identity.expectedLead !== lead ||
+        box.expectedInTemplate !== lead) return false;
+    if (identity.method !== "glyph_template_ocr" || Number(identity.ocrConfidence) < 0.93) return false;
+    if (identity.anomalies?.some(a => warnings.has(a.code))) return false;
+    return true;
+  }
+
   function createSmartCameraController(options = {}) {
     const {
       videoEl,
@@ -502,9 +518,17 @@
       const newlyCapturedLeads = [];
       const anomalies = contracts.normalizeAnomalies(boundaries.anomalies);
 
+      let quarantinedCount = 0;
       CANONICAL_LEADS.forEach(leadName => {
         const box = leadsMap[leadName];
         if (!box) return;
+        const proposedIdentity = contracts.normalizeLeadIdentity(boundaries.leadIdentities?.[leadName] || {});
+        if (!isSafeAutomaticLeadAssignment(leadName, proposedIdentity, box, anomalies)) {
+          // Keep candidates in diagnostic boundaries only; don't create a
+          // misleading waveform labeled aVR/DII/V* from an ambiguous crop.
+          quarantinedCount++;
+          return;
+        }
 
         const roiX = Math.max(0, Math.round(box.xMin * snapCanvas.width));
         const roiY = Math.max(0, Math.round(box.yMin * snapCanvas.height));
@@ -588,6 +612,10 @@
         capturedCount: newlyCapturedCount,
         newlyCapturedLeads,
         totalCaptured: CANONICAL_LEADS.filter(l => capturedLeads.get(l).captured).length,
+        quarantinedCount,
+        reason: newlyCapturedCount === 0
+          ? "Derivações não atribuídas: rótulos ausentes, conflitantes ou insuficientemente confiáveis. A LURIA não vai adivinhar nomes por posição; ajuste a imagem ou recapture."
+          : null,
         boundaries
       };
     }
@@ -1031,7 +1059,7 @@
     };
   }
 
-  global.LuriaEcgSceneGuard = { isVerifiedEcgScene };
+  global.LuriaEcgSceneGuard = { isVerifiedEcgScene, isSafeAutomaticLeadAssignment };
 
   global.LuriaSmartCamera = {
     createController: createSmartCameraController,
