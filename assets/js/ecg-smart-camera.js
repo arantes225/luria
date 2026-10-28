@@ -25,7 +25,7 @@
   // Fail closed for LIVE automatic captures. Looking like lines is not proof
   // of an ECG: require a valid paper, >=3 waveform cells and either a measured
   // ECG grid or multiple independently recognized lead labels.
-  function hasCredibleEcgCandidates(detection, manualPaperSelection = false) {
+  function hasCredibleEcgCandidates(detection, manualPaperSelection = false, photoPreviewOnly = false) {
     if (!detection) return false;
     const sheet = detection.sheet;
     if (!manualPaperSelection && (!sheet?.found || sheet.isCutOff || sheet.hasSeverePerspective)) return false;
@@ -40,7 +40,12 @@
     return manualPaperSelection ||
       grid?.gridDetected === true ||
       Number(grid?.coloredGridRatio || 0) >= 0.012 ||
-      strongLabels >= 2;
+      strongLabels >= 2 ||
+      // On user-initiated photos, uncertain calibration must NOT prevent a
+      // clearly marked, non-clinical waveform preview.
+      (photoPreviewOnly && n >= 3 && sheet?.found === true) ||
+      // Live mode still needs stronger morphology if the grid is illegible.
+      (n >= 6 && detection.detected === true && sheet?.found === true);
   }
   function isVerifiedEcgScene(detection) {
     return hasCredibleEcgCandidates(detection, false);
@@ -512,7 +517,11 @@
       }
 
       const candidateMap = boundaries.candidateRegions || {};
-      const crediblePaper = hasCredibleEcgCandidates(boundaries, options.manualPaperCornersApplied === true);
+      const crediblePaper = hasCredibleEcgCandidates(
+        boundaries,
+        options.manualPaperCornersApplied === true,
+        options.source !== "autonomous_camera"
+      );
       const leadsMap = crediblePaper
         ? candidateMap
         : (boundaries.detected ? (boundaries.leads || boundaries.detectedLayout?.leads) : null);
