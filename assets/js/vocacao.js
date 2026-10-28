@@ -148,7 +148,7 @@
         '<p><strong>O que observar na prática:</strong> ' + (low.length
           ? 'tarefas relacionadas a ' + text(phrase(low).toLowerCase()) + ' apareceram menos nas suas escolhas. Veja como elas realmente entram na rotina.'
           : 'observe a divisão entre atendimentos, procedimentos, plantões e acompanhamento; a prática varia por serviço.') + '</p>' +
-        (follow ? '<p><strong>Possível aprofundamento:</strong> ' + text(follow.name) + ' (' + follow.years + ' ano' + (follow.years > 1 ? 's' : '') + ' adicional(is)). Exige formação prévia e requisitos próprios; é uma área de atuação, não uma quarta recomendação.</p>' : '') +
+        (follow ? '<p><strong>Possível aprofundamento:</strong> ' + text(follow.name) + ' (' + follow.years + (follow.years > 1 ? ' anos adicionais' : ' ano adicional') + '). Exige formação prévia e requisitos próprios; é uma área de atuação, não uma quarta recomendação.</p>' : '') +
         '<p><strong>Como testar:</strong> acompanhe um turno real, pergunte sobre a parte mais frequente (não só a mais interessante) do trabalho e compare com sua expectativa.</p>' +
       '</article>';
     }).join("");
