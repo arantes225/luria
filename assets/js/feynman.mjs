@@ -216,7 +216,27 @@ async function finishSession() {
     const report = data.report || JSON.parse(data.answer || "{}");
     renderReport(report);
     await persistSession("completed", report);
+    // A missão só avança com uma avaliação concluída e com o tema esperado.
+    let guidedFeynmanCompleted = false;
+    try {
+      const active = JSON.parse(sessionStorage.getItem("luria:guided-study-active") || "null");
+      const step = active?.plan?.steps?.[active.activeIndex];
+      const expectedTopic = String(active?.plan?.topic || new URL(step?.href || "", location.origin).searchParams.get("topic") || "").trim();
+      const sameDay = (active?.plan?.day || new Date(active?.plan?.createdAt).toLocaleDateString("sv-SE")) === new Date().toLocaleDateString("sv-SE");
+      if (sameDay && String(step?.href || "").startsWith("/feynman/")
+          && (!expectedTopic || normalize(expectedTopic) === normalize(state.topic))) {
+        guidedFeynmanCompleted = !!window.LuriaGuidedStudy?.completeActiveStep?.("feynman-assessed");
+      }
+    } catch { /* Sessões avulsas não devem creditar missões diferentes. */ }
     sessionPanel.hidden = true; reportPanel.hidden = false;
+    if (guidedFeynmanCompleted && !reportPanel.querySelector("[data-back-to-daily-study]")) {
+      const link = document.createElement("a");
+      link.href = "/sessao-estudo/";
+      link.dataset.backToDailyStudy = "1";
+      link.textContent = "Concluir missão do dia";
+      link.className = "feynman-primary";
+      reportPanel.querySelector(".feynman-report-actions")?.prepend(link);
+    }
     reportPanel.scrollIntoView({ behavior: "smooth", block: "start" });
   } catch (error) {
     state.finished = false;
