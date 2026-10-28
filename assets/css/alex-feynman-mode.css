@@ -1,0 +1,63 @@
+/* Feynman é um modo interno do Professor Alex, não uma página isolada. */
+body[data-page="professor_alex"] .alex-learning-modes {
+ display:flex;flex:0 1 auto;flex-wrap:wrap;align-items:center;gap:5px;
+ padding:4px;border:1px solid var(--border);border-radius:12px;
+ background:var(--surface);max-width:100%;
+}
+body[data-page="professor_alex"] .alex-learning-modes button {
+ min-height:37px;padding:7px 12px;border:0;border-radius:9px;
+ background:transparent;color:var(--text);font:inherit;font-size:12px;
+ font-weight:650;cursor:pointer;
+}
+body[data-page="professor_alex"] .alex-learning-modes button[aria-pressed="true"] {
+ background:var(--accent);color:#fff;
+}
+body[data-page="professor_alex"] .alex-feynman-panel[hidden],
+body[data-page="professor_alex"] .alex-chat-container[hidden] {
+ display:none!important;
+}
+body[data-page="professor_alex"] .alex-feynman-panel {
+ grid-column:2!important;grid-row:2!important;
+ min-width:0;min-height:0;overflow-y:auto;overflow-x:hidden;
+ scrollbar-gutter:stable;align-self:stretch;display:flex;flex-direction:column;gap:12px;
+ padding:0 5px 16px 0;
+}
+body[data-page="professor_alex"] .alex-feynman-panel .feynman-card,
+body[data-page="professor_alex"] .alex-feynman-panel .feynman-session,
+body[data-page="professor_alex"] .alex-feynman-panel .feynman-report {
+ flex:0 0 auto;
+}
+body[data-page="professor_alex"] .alex-feynman-intro {
+ padding:14px 18px;border:1px solid var(--border);border-radius:15px;
+ background:var(--surface);
+}
+body[data-page="professor_alex"] .alex-feynman-intro h2 {margin:0 0 5px;color:var(--text);font-size:16px;}
+body[data-page="professor_alex"] .alex-feynman-intro p {margin:0;color:var(--muted);font-size:12px;line-height:1.5;}
+body[data-page="professor_alex"] .alex-feynman-panel .feynman-modes {grid-template-columns:1fr;}
+body[data-page="professor_alex"] .alex-feynman-panel .feynman-modes label span {padding:11px;}
+body[data-page="professor_alex"] .alex-feynman-panel .feynman-feed {max-height:32vh;min-height:130px;}
+body[data-page="professor_alex"] .alex-feynman-panel .feynman-report-grid {grid-template-columns:1fr;}
+body[data-page="professor_alex"].alex-feynman-active .alex-mode-card {
+ flex-wrap:wrap!important;
+}
+body[data-page="professor_alex"].alex-feynman-active .alex-depth-toggle,
+body[data-page="professor_alex"].alex-feynman-active .alex-mode-card .alex-mode-switch,
+body[data-page="professor_alex"].alex-feynman-active .alex-mode-card .alex-mode-info {
+ display:none!important;
+}
+body[data-page="professor_alex"] #feynman-setup[hidden],
+body[data-page="professor_alex"] #feynman-session[hidden],
+body[data-page="professor_alex"] #feynman-report[hidden] {display:none!important;}
+@media(max-width:980px){
+ body[data-page="professor_alex"] .alex-learning-modes{flex:1 1 100%;justify-content:center}
+ body[data-page="professor_alex"] .alex-feynman-panel {grid-column:1!important;grid-row:3!important;overflow:visible;max-height:none;padding:0 0 28px;}
+ body[data-page="professor_alex"].alex-feynman-active .alex-central-stage{height:auto!important;grid-template-rows:auto auto auto!important;}
+ body[data-page="professor_alex"].alex-feynman-active .alex-page,
+ body[data-page="professor_alex"].alex-feynman-active .page{overflow-y:auto!important;}
+}
+@media(max-width:700px){
+ body[data-page="professor_alex"].alex-feynman-active .alex-mascot-card {grid-row:1!important;}
+ body[data-page="professor_alex"].alex-feynman-active .alex-mode-card {grid-row:2!important;}
+ body[data-page="professor_alex"] .alex-feynman-panel{grid-row:3!important;}
+ body[data-page="professor_alex"] .alex-feynman-panel .feynman-report{padding:16px;}
+}

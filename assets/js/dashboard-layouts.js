@@ -215,7 +215,7 @@
         <span class="dl-heading-icon" aria-hidden="true">${icon("target")}</span>
         <div><small>Sessão guiada</small><h3>Estudar agora</h3></div>
       </div>
-      <p>Escolha seu tempo. Alex organiza a sessão para você.</p>
+      <p>Estudo novo: Feynman no final. Revisão: Feynman logo no início.</p>
       <div class="dl-study-time-options" role="group" aria-label="Tempo disponível">
         <button type="button" data-luria-study-time="15">15 min</button>
         <button type="button" data-luria-study-time="30" class="active">30 min</button>

@@ -7954,7 +7954,7 @@ iniciarApp();
 (function loadLuriaCommandCenter(){
   if (document.querySelector('script[data-luria-command-center]')) return;
   const script = document.createElement('script');
-  script.src = '/assets/js/luria-command-center.js?v=20261026-topic-study';
+  script.src = '/assets/js/luria-command-center.js?v=20261028-daily-feynman';
   script.defer = true;
   script.dataset.luriaCommandCenter = '1';
   document.head.appendChild(script);

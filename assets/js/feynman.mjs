@@ -28,6 +28,7 @@ const modeLabels = { iniciante: "Aluno iniciante", questionador: "Aluno question
 const medicalTerms = ["sepse", "choque séptico", "insuficiência cardíaca", "síndrome coronariana", "diabetes mellitus", "hipertensão", "pneumonia", "tromboembolismo", "fisiopatologia", "hemodinâmica", "vasopressor", "noradrenalina", "lactato", "hipoperfusão", "taquicardia", "bradicardia", "dispneia", "edema", "hipoxemia", "insulina", "cetoacidose", "glomerular", "creatinina", "antibiótico"];
 
 let state = { topic: "", mode: "questionador", turns: [], seconds: SESSION_SECONDS, id: null, busy: false, finished: false };
+let modeVisible = new URLSearchParams(location.search).get("mode") === "feynman";
 let clockHandle = null;
 let recognition = null;
 let pendingTranscript = "";
@@ -65,7 +66,7 @@ function addMessage(role, text) {
   const article = document.createElement("article");
   article.className = `feynman-message feynman-message--${role === "user" ? "user" : "ai"}`;
   const label = document.createElement("span");
-  label.textContent = role === "user" ? "Você ensinando" : "Aluno IA";
+  label.textContent = role === "user" ? "Você ensinando" : "Alex · aluno";
   const copy = document.createElement("p");
   copy.textContent = text;
   article.append(label, copy);
@@ -135,7 +136,7 @@ function updateClock() {
 function startClock() {
   clearInterval(clockHandle);
   updateClock();
-  clockHandle = setInterval(() => { if (!state.busy && !state.finished) state.seconds -= 1; updateClock(); }, 1000);
+  clockHandle = setInterval(() => { if (modeVisible && !state.busy && !state.finished) state.seconds -= 1; updateClock(); }, 1000);
 }
 
 async function startSession() {
@@ -216,7 +217,52 @@ async function finishSession() {
     const report = data.report || JSON.parse(data.answer || "{}");
     renderReport(report);
     await persistSession("completed", report);
+    // A missão só avança com uma avaliação concluída e com o tema esperado.
+    let guidedFeynmanCompleted = false;
+    try {
+      const active = JSON.parse(sessionStorage.getItem("luria:guided-study-active") || "null");
+      const step = active?.plan?.steps?.[active.activeIndex];
+      const expectedTopic = String(active?.plan?.topic || new URL(step?.href || "", location.origin).searchParams.get("topic") || "").trim();
+      const sameDay = (active?.plan?.day || new Date(active?.plan?.createdAt).toLocaleDateString("sv-SE")) === new Date().toLocaleDateString("sv-SE");
+      if (sameDay && String(step?.href || "").startsWith("/feynman/")
+          && (!expectedTopic || normalize(expectedTopic) === normalize(state.topic))) {
+        guidedFeynmanCompleted = !!window.LuriaGuidedStudy?.completeActiveStep?.("feynman-assessed");
+        // Ao revisar, as lacunas do diagnóstico orientam a próxima etapa.
+        if (guidedFeynmanCompleted && active.activeIndex === 0 && active.plan?.mode === "review") {
+          const diagnostic = {
+            createdAt: active.plan.createdAt, topic: state.topic,
+            score: Number.isFinite(Number(report?.score)) ? Number(report.score) : null,
+            gaps: Array.isArray(report?.gaps) ? report.gaps.slice(0, 6) : [],
+            errors: Array.isArray(report?.errors) ? report.errors.slice(0, 6) : [],
+            next_steps: Array.isArray(report?.next_steps) ? report.next_steps.slice(0, 6) : [],
+            capturedAt: Date.now()
+          };
+          sessionStorage.setItem("luria:guided-study-diagnostic", JSON.stringify(diagnostic));
+          const userId = String(window.docmapUser?.id || active.plan.ownerId || "");
+          if (userId) {
+            const day = active.plan.day || new Date().toLocaleDateString("sv-SE");
+            const key = "luria:guided-study-daily:" + userId + ":" + day;
+            try {
+              const stored = JSON.parse(localStorage.getItem(key) || "null");
+              if (stored?.plan?.createdAt === active.plan.createdAt) {
+                stored.diagnostic = diagnostic;
+                localStorage.setItem(key, JSON.stringify(stored));
+              }
+            } catch { /* A avaliação permanece no armazenamento da sessão. */ }
+          }
+        }
+      }
+    } catch { /* Sessões avulsas não devem creditar missões diferentes. */ }
     sessionPanel.hidden = true; reportPanel.hidden = false;
+    if (guidedFeynmanCompleted && !reportPanel.querySelector("[data-back-to-daily-study]")) {
+      const link = document.createElement("a");
+      link.href = "/sessao-estudo/";
+      link.dataset.backToDailyStudy = "1";
+      link.textContent = "Continuar revisão do dia";
+      if (JSON.parse(sessionStorage.getItem("luria:guided-study-active") || "null")?.activeIndex === 2) link.textContent = "Concluir missão do dia";
+      link.className = "feynman-primary";
+      reportPanel.querySelector(".feynman-report-actions")?.prepend(link);
+    }
     reportPanel.scrollIntoView({ behavior: "smooth", block: "start" });
   } catch (error) {
     state.finished = false;
@@ -265,4 +311,11 @@ startButton.addEventListener("click", startSession);
 form.addEventListener("submit", sendExplanation);
 finishButton.addEventListener("click", finishSession);
 restartButton.addEventListener("click", () => { reportPanel.hidden = true; setup.hidden = false; topicInput.focus(); });
+document.addEventListener("alex:feynman-visibility",event=>{
+  modeVisible = !!event.detail?.visible;
+  if(!modeVisible){
+    recognition?.abort?.();
+    if ("speechSynthesis" in window) speechSynthesis.cancel();
+  }
+});
 window.addEventListener("beforeunload", () => { clearInterval(clockHandle); recognition?.abort?.(); });

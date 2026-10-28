@@ -84,8 +84,8 @@ test("capturing uses native dialog top layer and has no false lead or frame guid
 });
 
 test("installed PWA release and ECG assets are cache-busted together",()=>{
-  assert.match(worker,/const CACHE_VERSION = "luria-pwa-20261028-provisional-v4"/);
-  assert.match(pwa,/const release = "20261028-provisional-v4"/);
+  assert.match(worker,/const CACHE_VERSION = "luria-pwa-20261028-provisional-v7"/);
+  assert.match(pwa,/const release = "20261028-provisional-v7"/);
   assert.match(html,/ecg-smart-camera\.js\?v=7/);
   assert.match(html,/ecg-smart-ui\.js\?v=7/);
   assert.match(html,/ecg-smart-camera\.css\?v=6/);
