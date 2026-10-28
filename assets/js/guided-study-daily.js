@@ -67,7 +67,7 @@
    if(finale&&!finale.querySelector("[data-study-next]")){
     const nav=document.createElement("div");nav.dataset.studyNext="1";
     nav.style.cssText="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:16px";
-    const flash=document.createElement("a");flash.href="/flashcards/";flash.className="study-session-start";flash.textContent="Revisar flashcards";
+    const flash=document.createElement("a");flash.href=String(steps[2]?.reviewHref||"/flashcards/");flash.className="study-session-start";flash.textContent="Revisar flashcards";
     const home=document.createElement("a");home.href="/dashboard/";home.className="study-session-start";home.textContent="Voltar ao Dashboard";
     nav.append(flash,home);finale.append(nav);
    }
