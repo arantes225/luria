@@ -876,3 +876,5 @@
 
   bootWhenReady();
 })();
+
+;(() => { const script = document.createElement('script'); script.src = '/assets/js/study-side-by-side.js?v=20261028'; document.body.appendChild(script); })();
