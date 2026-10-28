@@ -892,3 +892,16 @@ body[data-ui-appearance="dark"] .cv-group {
     flex: 1 1 100%;
   }
 }
+
+/* UNIFESP R1: escolha de especialidade antes da matriz curricular. */
+.cv-specialty-picker {
+  margin: 14px 0 18px;
+  padding: 16px;
+  border: 1px solid var(--border-color, rgba(24,72,136,.22));
+  border-radius: 14px;
+  background: var(--surface-soft, rgba(24,72,136,.05));
+}
+.cv-specialty-picker .cv-field { display: flex; flex-direction: column; gap: 8px; }
+.cv-specialty-picker .cv-field > span { font-weight: 700; }
+.cv-specialty-picker select { width: 100%; min-height: 48px; font: inherit; border-radius: 9px; }
+.cv-specialty-picker > small { display: block; margin-top: 10px; line-height: 1.5; }
