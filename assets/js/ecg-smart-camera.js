@@ -22,6 +22,21 @@
   const CANONICAL_LEADS = ["DI", "DII", "DIII", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"];
   const contracts = global.LuriaEcgContracts || (typeof require === "function" ? require("./ecg-contracts.js") : null);
 
+  // Fail closed for LIVE automatic captures. Looking like lines is not proof
+  // of an ECG: require a valid paper, >=3 waveform cells and either a measured
+  // ECG grid or multiple independently recognized lead labels.
+  function isVerifiedEcgScene(detection) {
+    if (!detection?.detected || !detection.sheet?.found ||
+        detection.sheet.isCutOff || detection.sheet.hasSeverePerspective) return false;
+    const layout = detection.detectedLayout;
+    const leads = detection.leads || layout?.leads;
+    const validWaveforms = Number(layout?.validWaveformCells || 0);
+    const ocrLabels = Number(layout?.ocrConfirmedCount || 0);
+    return Boolean(layout && leads && Object.keys(leads).length >= 3 &&
+      validWaveforms >= 3 &&
+      (detection.calibration?.gridDetected === true || ocrLabels >= 4));
+  }
+
   function createSmartCameraController(options = {}) {
     const {
       videoEl,
@@ -43,6 +58,9 @@
     let animationFrameId = null;
     let isCapturingActive = false;
     let autoCaptureLock = false;
+    let verifiedFrameCount = 0;
+    let verifiedSince = 0;
+    let hudHasVerifiedPaper = false;
 
     // Estado de calibração global da sessão (medida da grade, confirmada pelo usuário ou presumida)
     let sessionCalibration = {
@@ -128,6 +146,16 @@
       }
     }
 
+    function setHudPaperVerified(verified) {
+      const changed = hudHasVerifiedPaper !== Boolean(verified);
+      hudHasVerifiedPaper = Boolean(verified);
+      if (!hudContainer || !changed) return;
+      for (const selector of [".ecg-hud-target-badge", ".ecg-hud-lead-badges", ".ecg-hud-counter", ".ecg-hud-progress-bar"]) {
+        const element = hudContainer.querySelector(selector);
+        if (element) element.hidden = !hudHasVerifiedPaper;
+      }
+    }
+
     function updateHudProgress() {
       if (!hudContainer) return;
       const countEl = hudContainer.querySelector(".ecg-hud-count");
@@ -167,6 +195,9 @@
       originalImageUrl = null;
       pendingUncertainCapture = null;
       autoCaptureLock = false;
+      verifiedFrameCount = 0;
+      verifiedSince = 0;
+      setHudPaperVerified(false);
       currentStage = 1;
       sessionCalibration = {
         paperSpeedMmPerSec: 25,
@@ -187,6 +218,10 @@
       currentStage = 1;
       autoCaptureLock = false;
       pendingUncertainCapture = null;
+      verifiedFrameCount = 0;
+      verifiedSince = 0;
+      hudHasVerifiedPaper = true; // force the first HUD transition
+      setHudPaperVerified(false);
       if (typeof onStageChange === "function") onStageChange(1);
 
       if (rotateController) {
@@ -258,6 +293,22 @@
       if (!result || !result.ok) return;
 
       const { quality, isStable, motionBlur, docDetection } = result;
+      const hasEcgEvidence = isVerifiedEcgScene(docDetection);
+      if (hasEcgEvidence) {
+        if (!verifiedFrameCount) verifiedSince = Date.now();
+        verifiedFrameCount = Math.min(10, verifiedFrameCount + 1);
+      } else {
+        verifiedFrameCount = 0;
+        verifiedSince = 0;
+      }
+      const sceneReady = hasEcgEvidence && verifiedFrameCount >= 4 &&
+        Date.now() - verifiedSince >= 400;
+      setHudPaperVerified(sceneReady);
+      if (!hasEcgEvidence) {
+        setReticleStatus("searching");
+        setHudMessage("Nenhuma folha de ECG confirmada. Aponte para o exame inteiro, com a grade e os rótulos visíveis.");
+        return;
+      }
       if (mode === "ultrasensitive") {
         cvEngine.updateSpatialRegistration(cameraSpatialTracker,
           docDetection?.detected ? docDetection.sheet : null,
@@ -284,27 +335,10 @@
         return;
       }
 
-      // 3. Verificação se o ECG foi identificado
-      if (!docDetection.detected) {
-        if (mode === "ultrasensitive") {
-          // No modo ultrassensível, podemos estar muito próximos de 1 ou 2 derivações
-          if (quality.sharpnessScore < 20) {
-            setHudMessage("Aproxime ou afaste um pouco para focar...");
-            setReticleStatus("adjusting");
-            return;
-          }
-          if (motionBlur || !isStable) {
-            setHudMessage("Mantenha parado.");
-            setReticleStatus("stabilizing");
-            return;
-          }
-          // Tenta capturar/identificar a região aproximada
-          setReticleStatus("aligned");
-          performAutonomousCapture(false, result);
-          return;
-        }
-
-        setHudMessage(docDetection.reason || "Região não identificada. Afaste o celular para localizar novamente o ECG.");
+      // No close-up fallback is allowed before a real ECG is verified.
+      // Otherwise a keyboard, table or text document can be mistaken for a lead.
+      if (!sceneReady) {
+        setHudMessage("Verificando a folha do ECG e a grade. Mantenha o exame inteiro no quadro.");
         setReticleStatus("searching");
         return;
       }
@@ -439,6 +473,11 @@
       }
 
       currentSheetMap = boundaries;
+      // Never let autonomous live capture bypass the document/grid/lead gate.
+      if (options.source === "autonomous_camera" && !isVerifiedEcgScene(boundaries)) {
+        return { ok: false, capturedCount: 0,
+          reason: "A folha e as derivações não foram confirmadas com segurança." };
+      }
 
       const leadsMap = boundaries.leads || boundaries.detectedLayout?.leads || null;
 
@@ -551,7 +590,8 @@
      * Captura autônoma durante o loop de vídeo da Etapa 1.
      */
     function performAutonomousCapture(isGlobalCapture, frameAnalysis = null) {
-      if (autoCaptureLock) return;
+      if (autoCaptureLock || !isVerifiedEcgScene(frameAnalysis?.docDetection) ||
+          verifiedFrameCount < 4 || Date.now() - verifiedSince < 400) return;
       autoCaptureLock = true;
 
       const snapCanvas = document.createElement("canvas");
@@ -984,6 +1024,8 @@
       updateHudProgress
     };
   }
+
+  global.LuriaEcgSceneGuard = { isVerifiedEcgScene };
 
   global.LuriaSmartCamera = {
     createController: createSmartCameraController,
