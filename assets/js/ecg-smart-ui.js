@@ -62,6 +62,7 @@
   const guidedPage = byId("ecg-guided-camera-page");
   const guidedMount = byId("ecg-guided-camera-mount");
   const guidedClose = byId("ecg-guided-close");
+  const guidedCapture = byId("ecg-guided-capture");
   const orientationHint = byId("ecg-guided-orientation");
   const appShell = document.querySelector(".app-shell");
   let lastGuidedFocus = null;
@@ -237,6 +238,7 @@
   }
   window.LuriaEcgStopScanner = stopGuidedScanner;
   guidedClose?.addEventListener("click", stopGuidedScanner);
+  guidedCapture?.addEventListener("click", () => cameraController?.captureCurrentFrame?.());
   guidedPage?.addEventListener("cancel", event => {
     event.preventDefault();
     stopGuidedScanner();

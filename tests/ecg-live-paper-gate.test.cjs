@@ -65,12 +65,21 @@ test("ECG paper with morphology and measured grid is allowed; OCR alternative is
 test("autonomous ECG capture cannot run without verified scene and temporal stability",()=>{
   assert.match(source,/verifiedFrameCount >= 4/);
   assert.match(source,/Date\.now\(\) - verifiedSince >= 400/);
-  assert.match(source,/if \(autoCaptureLock \|\| !isVerifiedEcgScene\(frameAnalysis\?\.docDetection\)/);
+  assert.match(source,/!isCaptureReadyScene\(frameAnalysis\?\.docDetection\)/);
   assert.match(source,/options\.source === "autonomous_camera" && !isVerifiedEcgScene\(boundaries\)/);
   const block = source.slice(source.indexOf("function processCurrentFrame()"),source.indexOf("function setReticleStatus("));
   assert.doesNotMatch(block,/if\s*\(!docDetection\.detected\)[\s\S]*?performAutonomousCapture\(false/);
-  assert.match(block,/if \(!hasEcgEvidence\)\s*\{/);
-  assert.match(source,/setHudPaperVerified\(sceneReady\)/);
+  assert.match(block,/if \(!captureReadyEvidence\)\s*\{/);
+  assert.match(source,/setHudPaperVerified\(hasEcgEvidence\)/);
+});
+
+test("scanner gives actionable framing guidance and always offers a manual photo fallback",()=>{
+  assert.match(html,/id="ecg-guided-capture"/);
+  assert.match(ui,/guidedCapture\?\.addEventListener\("click"/);
+  assert.match(source,/function captureCurrentFrame\(\)/);
+  assert.match(source,/Afaste o celular até aparecerem as quatro bordas/);
+  assert.match(source,/Alinhe a câmera paralela ao papel/);
+  assert.match(source,/Folha encontrada\. Aproxime devagar/);
 });
 
 test("capturing uses native dialog top layer and has no false lead or frame guide",()=>{
@@ -83,10 +92,18 @@ test("capturing uses native dialog top layer and has no false lead or frame guid
   assert.match(css,/#ecg-guided-camera-page::backdrop/);
 });
 
+test("automatic capture uses native camera resolution and requests continuous focus when available",()=>{
+  assert.match(source,/width:\s*\{ ideal: 3840 \}/);
+  assert.match(source,/focusMode\?\.includes\?\.\("continuous"\)/);
+  assert.match(source,/snapCanvas\.width = videoEl\?\.videoWidth/);
+  assert.match(source,/snapCtx\.drawImage\(videoEl\?\.videoWidth \? videoEl : canvasEl/);
+});
+
 test("installed PWA release and ECG assets are cache-busted together",()=>{
-  assert.match(worker,/const CACHE_VERSION = "luria-pwa-20261028-provisional-v4"/);
-  assert.match(pwa,/const release = "20261028-provisional-v4"/);
-  assert.match(html,/ecg-smart-camera\.js\?v=7/);
-  assert.match(html,/ecg-smart-ui\.js\?v=7/);
-  assert.match(html,/ecg-smart-camera\.css\?v=6/);
+  assert.match(worker,/const CACHE_VERSION = "luria-pwa-20261028-ecg-scanner-v6"/);
+  assert.match(pwa,/const release = "20261028-ecg-scanner-v6"/);
+  assert.match(html,/ecg-signal-extractor\.js\?v=4/);
+  assert.match(html,/ecg-smart-camera\.js\?v=8/);
+  assert.match(html,/ecg-smart-ui\.js\?v=8/);
+  assert.match(html,/ecg-smart-camera\.css\?v=7/);
 });

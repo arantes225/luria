@@ -196,6 +196,24 @@ function renderCalibratedLeadImage(signalMv, samplingRateHz, options = {}) {
   return { width, height, data, pxPerMm, baseY, pxPerMv };
 }
 
+function degradeAsMonochromePhonePhoto(image) {
+  const { width, height } = image;
+  const data = new Uint8ClampedArray(image.data.length);
+  for (let y = 0; y < height; y++) {
+    // Uneven illumination: darker at the lower-left, as in a phone shadow.
+    const rowShade = 1 - 0.22 * (y / Math.max(1, height - 1));
+    for (let x = 0; x < width; x++) {
+      const i = (y * width + x) * 4;
+      const gray = (image.data[i] * 299 + image.data[i + 1] * 587 + image.data[i + 2] * 114) / 1000;
+      const vignette = 1 - 0.10 * Math.abs((x / Math.max(1, width - 1)) - 0.5) * 2;
+      const value = Math.max(22, Math.min(248, gray * rowShade * vignette + 7));
+      data[i] = data[i + 1] = data[i + 2] = value;
+      data[i + 3] = 255;
+    }
+  }
+  return { width, height, data };
+}
+
 // -------------------------------------------------------------
 // TESTES DO BENCHMARK PHYSIONET
 // -------------------------------------------------------------
@@ -304,6 +322,27 @@ test("Benchmark 2: Digitalização e Comparação Quantitativa contra Ground-Tru
   assert.ok(extraction.continuity > 0.90, "Cobertura temporal deve ser > 90%");
   // O benchmark mede fidelidade do vetor renderizado; não fornece OCR de rótulo.
   assert.equal(extraction.audit.status, "Indeterminada");
+});
+
+test("Benchmark 2B: PTB-XL permanece rastreável em foto monocromática com sombra desigual", () => {
+  const context = loadBenchmarkEnvironment();
+  const rec = parseWfdbRecord("00002_lr");
+  const leadKey = rec.signals["II"] ? "II" : rec.leads[1];
+  const rawSignal = rec.signals[leadKey].slice(0, 250);
+  const clean = renderCalibratedLeadImage(rawSignal, 100, { paperSpeed: 25, gain: 10, pxPerMm: 6.0 });
+  const photographed = degradeAsMonochromePhonePhoto(clean);
+  const extraction = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData(photographed, {
+    leadIdentity: { lead: "DII", evidence: "benchmark_ptbxl_degraded", verified: true },
+    calibration: {
+      paperSpeedMmPerSec: 25, gainMmPerMv: 10, calibrationSource: "measured",
+      pixelsPerMmX: 6, pixelsPerMmY: 6, msPerPixel: 1000 / 150
+    }
+  });
+
+  assert.equal(extraction.isValid, true, extraction.message);
+  assert.ok(extraction.continuity > 0.88, `Cobertura degradada deve ser > 88% (obtido ${extraction.continuity})`);
+  assert.ok(extraction.pixelCorrespondence.meanInkScore > 0.20,
+    `A curva deve continuar ancorada na tinta real (obtido ${extraction.pixelCorrespondence.meanInkScore})`);
 });
 
 test("Benchmark 3: Taxa de Falsa Aceitação Zero (0%) em Exames Inválidos", () => {

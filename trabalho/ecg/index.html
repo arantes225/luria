@@ -20,11 +20,11 @@
   <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
   <link rel="stylesheet" href="/assets/css/luria-rotate-hint.css?v=1">
-  <link rel="stylesheet" href="/assets/css/ecg-smart-camera.css?v=6">
+  <link rel="stylesheet" href="/assets/css/ecg-smart-camera.css?v=7">
   <style>
     .ecg-shell{display:grid;gap:16px}
-    .ecg-tabs{display:flex;gap:8px;flex-wrap:wrap}
-    .ecg-tab{border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:12px;padding:9px 14px;font-weight:800;font-size:13px;cursor:pointer;transition:.15s}
+    .ecg-tabs{display:flex;gap:8px;flex-wrap:nowrap;overflow-x:auto;padding:2px 0 6px;scrollbar-width:thin}
+    .ecg-tab{flex:0 0 auto;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:12px;padding:9px 14px;font-weight:800;font-size:13px;cursor:pointer;transition:.15s}
     .ecg-tab.is-active{background:var(--accent);border-color:var(--accent);color:#fff}
     .ecg-panel{display:none;gap:14px}
     .ecg-panel.is-active{display:grid}
@@ -608,6 +608,7 @@
     <div id="ecg-guided-camera-mount" class="ecg-guided-camera-mount"></div>
     <footer class="ecg-guided-camera-footer">
       <p id="ecg-guided-orientation" role="status">Enquadre a folha inteira. A câmera funciona em pé ou deitada.</p>
+      <button type="button" id="ecg-guided-capture" class="ecg-btn">Fotografar agora</button>
     </footer>
   </dialog>
   <!-- Página de conferência da fotografia: independende do menu e sem filtros que alterem o ECG. -->
@@ -651,13 +652,13 @@
   <script src="/assets/js/trabalho-ecg.js?v=20261026"></script>
   <script src="/assets/js/luria-rotate-controller.js?v=1"></script>
   <script src="/assets/js/ecg-contracts.js?v=2"></script>
-  <script src="/assets/js/ecg-signal-extractor.js?v=3"></script>
+  <script src="/assets/js/ecg-signal-extractor.js?v=4"></script>
   <script src="/assets/js/ecg-cv-engine.js?v=5"></script>
-  <script src="/assets/js/ecg-smart-camera.js?v=7"></script>
-  <script src="/assets/js/ecg-smart-ui.js?v=7"></script>
+  <script src="/assets/js/ecg-smart-camera.js?v=8"></script>
+  <script src="/assets/js/ecg-smart-ui.js?v=8"></script>
   <script src="/assets/js/ecg-photo-perspective.js?v=2"></script>
   <script src="/assets/js/ecg-normal-photo.js?v=5"></script>
-  <script defer src="/assets/js/pwa.js?v=20261028-provisional-v4"></script>
+  <script defer src="/assets/js/pwa.js?v=20261028-ecg-scanner-v6"></script>
   <script defer src="/assets/js/ecg-reader.js?v=2"></script>
 </body>
 </html>
