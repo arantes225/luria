@@ -519,7 +519,7 @@
     const calComponent = (calSource === "measured" || calSource === "user_confirmed") ? 10 : (calSource === "assumed" ? 5 : 0);
     const technicalIndex = Math.round(covComponent + alignComponent + jumpPenalty + calComponent);
 
-    if (calSource === "unknown" || identity.status === "unknown" || identity.status === "ambiguous" ||
+    if (calSource === "unknown" || !identity.verified || identity.status === "unknown" || identity.status === "ambiguous" ||
         identity.status === "conflicting" || identity.anomalies.some(a => a.code === "duplicate_label") ||
         (Array.isArray(extractionResult.validMask) && extractionResult.validMask.length !== extractionResult.signal.length)) {
       return {
