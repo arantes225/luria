@@ -437,6 +437,35 @@
       {id:'qualificacoes',title:'Proficiência',tone:'indigo',criteria:['uni-cm-idioma']}
     ]
   });
+  // As oito especialidades seguintes reproduzem o mesmo quadro de pontos
+  // do item 15.1.7 (edital nº 690/2026). IDs separados preservam as respostas.
+  // A correspondência foi conferida pela leitura dos quadros individuais,
+  // não é uma regra geral para todas as especialidades da UNIFESP.
+  const matchingAcupunctureMatrices=[
+    ['Anestesiologia',25],['Cirurgia Cardiovascular',26],
+    ['Genética Médica',33],['Infectologia',35],
+    ['Medicina de Família e Comunidade',38],['Medicina de Tráfego',39],
+    ['Medicina Esportiva',41],['Medicina Preventiva e Social',44]
+  ];
+  for(const [specialty,page] of matchingAcupunctureMatrices){
+    const template=uniSelect('Acupuntura');
+    const row=uniSelect(specialty);
+    if(!row||!template)throw Error('Matriz UNIFESP ausente: '+specialty);
+    const prefix='uni-'+slug(specialty).replace(/-/g,'')+'-';
+    const rename=id=>id.replace(/^uni-ac-/,prefix);
+    Object.assign(row,{
+      status:'reviewed',max:10,
+      scope:'Acesso direto R1 — quadro específico de '+specialty+' no item 15.1.7 do edital nº 690/2026 (a partir da página '+page+'). Pontuação por categorias com teto 10. A pontuação da instituição exige comprovação e ENAMED com apenas uma faixa. Valores de histórico e internato devem ser apurados segundo as regras de padronização da banca.',
+      criteria:template.criteria.map(criterion=>({
+        ...criterion,id:rename(criterion.id),page,
+        parts:criterion.parts.map(part=>({...part,id:rename(part.id)}))
+      })),
+      groups:template.groups.map(group=>({
+        ...group,criteria:group.criteria.map(rename)
+      }))
+    });
+  }
+
   Object.assign(unifesp,{
     id:'unifesp-2027-r1-especialidades',title:'UNIFESP · 2027 · Escolher especialidade R1',
     edition:'2027',status:'program-specific',checkedAt:'2026-10-28',
