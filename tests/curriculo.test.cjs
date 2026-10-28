@@ -144,12 +144,13 @@ test('Lattes parses supported records, removes duplicates, requires review and r
   assert.throws(() => core.parseLattes('<!DOCTYPE x [<!ENTITY y SYSTEM "file:///secret">]><CURRICULO-VITAE/>',DOMParser));
   assert.throws(() => core.parseLattes('<CURRICULO-VITAE>',DOMParser));
 });
-function boot(userId='user-a', storage) {
+function boot(userId='user-a', storage, beforeReady) {
   const html = fs.readFileSync(path.join(root,'aplicar/curriculo/index.html'),'utf8');
   const dom = new JSDOM(html,{url:'https://luria.test/aplicar/curriculo/',runScripts:'outside-only'});
   const w = dom.window;
   if (storage) w.localStorage.setItem(`luria:curriculo:v1:${userId}`,storage);
   for (const script of ['curriculo-core','curriculo-rubricas','curriculo-pdf','curriculo']) w.eval(fs.readFileSync(path.join(root,`assets/js/${script}.js`),'utf8'));
+  beforeReady?.(w);
   w.dispatchEvent(new w.CustomEvent('docmap:ready',{detail:{user:{id:userId}}}));
   return w;
 }
@@ -286,15 +287,15 @@ test('PDF original: upload, abertura, download e remoção percorrem os handlers
 });
 
 test('PDF original continua acessível ao recarregar o cadastro na mesma conta', async () => {
-  const w = boot();
-  const doc = w.document;
   const file = { name: 'historico.pdf', type: 'application/pdf' };
-  w.indexedDB = {};
-  w.LuriaCurriculoPdf.getPdf = async owner => {
-    assert.equal(owner, 'user-a');
-    return { blob: file, name: file.name };
-  };
-  w.dispatchEvent(new w.CustomEvent('docmap:ready', { detail: { user: { id: 'user-a' } } }));
+  const w = boot('user-a', null, win => {
+    win.indexedDB = {};
+    win.LuriaCurriculoPdf.getPdf = async owner => {
+      assert.equal(owner, 'user-a');
+      return { blob: file, name: file.name };
+    };
+  });
+  const doc = w.document;
   await new Promise(resolve => setImmediate(resolve));
   assert.equal(doc.getElementById('cv-pdf-attached').hidden, false);
   assert.match(doc.getElementById('cv-pdf-filename').textContent, /historico.pdf/);
