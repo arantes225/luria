@@ -1171,7 +1171,25 @@
     }
 
     // 2. Localizar folha e avaliar cortes/perspectiva
-    const sheet = locatePaperSheet(imageData);
+    // When the user has already placed four corners and we have rectified
+    // the selected paper, it naturally touches every border of the output.
+    // The ordinary paper detector calls that a "cut-off" and previously
+    // rejected every such legitimate full-page photo before waveform search.
+    // The explicit quad only certifies the ROI, NOT any ECG morphology.
+    const sheet = options.paperAlreadyRectified === true
+      ? {
+          found:true, isCutOff:false, touchesAllBorders:true,
+          hasSeverePerspective:false, manuallyRectified:true,
+          corners:{
+            topLeft:{x:0,y:0}, topRight:{x:width-1,y:0},
+            bottomLeft:{x:0,y:height-1}, bottomRight:{x:width-1,y:height-1}
+          },
+          boundaries:{
+            xMin:.01,yMin:.01,xMax:.99,yMax:.99,
+            widthRatio:.98,heightRatio:.98,aspectRatio:width/height
+          }
+        }
+      : locatePaperSheet(imageData);
     if (!sheet.found || sheet.isCutOff) {
       return {
         detected: false,
