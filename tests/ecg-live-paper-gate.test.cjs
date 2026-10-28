@@ -22,6 +22,7 @@ const positive = () => ({
   sheet: {found:true,isCutOff:false,hasSeverePerspective:false},
   detectedLayout: {validWaveformCells:10,ocrConfirmedCount:2,leads:{DI:{},DII:{},DIII:{},aVR:{}}},
   leads: {DI:{},DII:{},DIII:{},aVR:{}},
+  candidateRegions: {DI:{},DII:{},DIII:{},aVR:{}},
   calibration: {gridDetected:true}
 });
 
@@ -52,9 +53,9 @@ test("ECG paper with morphology and measured grid is allowed; OCR alternative is
   assert.equal(verified(positive()),true);
   const withoutGrid=positive();
   withoutGrid.calibration.gridDetected=false;
-  withoutGrid.detectedLayout.ocrConfirmedCount=4;
+  withoutGrid.recognizedLabels = Object.fromEntries(["a","b"].map(k=>[k,{ocrRecognized:true,hasValidTrace:true}]));
   assert.equal(verified(withoutGrid),true);
-  withoutGrid.detectedLayout.ocrConfirmedCount=3;
+  withoutGrid.recognizedLabels = {a:{ocrRecognized:true,hasValidTrace:true}};
   assert.equal(verified(withoutGrid),false);
 });
 
@@ -80,9 +81,9 @@ test("capturing uses native dialog top layer and has no false lead or frame guid
 });
 
 test("installed PWA release and ECG assets are cache-busted together",()=>{
-  assert.match(worker,/const CACHE_VERSION = "luria-pwa-20261028-lead-safety-v3"/);
-  assert.match(pwa,/const release = "20261028-lead-safety-v3"/);
-  assert.match(html,/ecg-smart-camera\.js\?v=6/);
-  assert.match(html,/ecg-smart-ui\.js\?v=6/);
-  assert.match(html,/ecg-smart-camera\.css\?v=5/);
+  assert.match(worker,/const CACHE_VERSION = "luria-pwa-20261028-provisional-v4"/);
+  assert.match(pwa,/const release = "20261028-provisional-v4"/);
+  assert.match(html,/ecg-smart-camera\.js\?v=7/);
+  assert.match(html,/ecg-smart-ui\.js\?v=7/);
+  assert.match(html,/ecg-smart-camera\.css\?v=6/);
 });
