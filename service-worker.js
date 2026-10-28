@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261028-ecg-scanner-v6";
+const CACHE_VERSION = "luria-pwa-20261028-notes-recovery1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
