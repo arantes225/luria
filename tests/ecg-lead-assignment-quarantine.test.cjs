@@ -33,7 +33,7 @@ test("never assigns aVR to an aVF/III crop or geometric-only hypothesis", () => 
   assert.equal(guard("aVR",identity(),box,[{code:"label_conflict"}]),false);
 });
 test("candidate positions cannot enter the finalized lead map without an identity gate",()=>{
-  assert.match(mainFile,/if \(!isSafeAutomaticLeadAssignment\(leadName, proposedIdentity, box, anomalies\)\)/);
+  assert.match(mainFile,/let provisional = !isSafeAutomaticLeadAssignment\(leadName, proposedIdentity, box, anomalies\)/);
   assert.match(mainFile,/const other = cvEngine\.recognizeLeadLabelInRegion\(roiImageData/);
   assert.match(mainFile,/other\.recognizedLead !== leadName/);
   assert.match(mainFile,/maskPrintedHeader: true/);
