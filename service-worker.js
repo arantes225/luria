@@ -141,7 +141,7 @@ const INSTALL_PRECACHE = new Set([
   "/apostilas/",
   "/manifest.webmanifest?v=5",
   "/assets/vendor/supabase-2.110.6.js",
-  "/assets/js/pwa.js?v=20261028-ecg-reload2",
+  "/assets/js/pwa.js?v=20261028-ecg-fidelity-v9",
   "/assets/css/style.css?v=16.14-font-unified",
   "/assets/css/luria-brand-v5.css?v=20261005-global-v90",
   "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",
