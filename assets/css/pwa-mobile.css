@@ -4559,3 +4559,30 @@ body[data-page="flashcards"].flash-review-session-active .page #review-launcher{
     max-width:100%!important;
   }
 }
+
+/* LURIA ECG — Standalone PWA Camera & Workspace */
+html.pwa-standalone body[data-page="trabalho_ecg_captura"],
+html.pwa-v2-standalone body[data-page="trabalho_ecg_captura"] {
+  width: 100vw !important;
+  height: 100dvh !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: #000 !important;
+}
+
+html.pwa-standalone body[data-page="trabalho_ecg_captura"] .ecg-capture-app,
+html.pwa-v2-standalone body[data-page="trabalho_ecg_captura"] .ecg-capture-app {
+  width: 100vw !important;
+  height: 100dvh !important;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+html.pwa-standalone body[data-page="trabalho_ecg"] .main,
+html.pwa-v2-standalone body[data-page="trabalho_ecg"] .main {
+  padding-bottom: calc(var(--ui-bottom-navigation, 64px) + env(safe-area-inset-bottom, 0px) + 20px) !important;
+}
+

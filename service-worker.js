@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261026-security-weekly-off-topic-study-v1";
+const CACHE_VERSION = "luria-pwa-20261028-ecg-camera-v1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -39,7 +39,19 @@ const APP_SHELL = [
   "/trabalho/",
   "/trabalho/paciente/",
   "/trabalho/calculadora/",
-  "/trabalho/scores/",
+    "/trabalho/scores/",
+  "/trabalho/ecg/",
+  "/trabalho/ecg/captura/",
+  "/assets/css/ecg-smart-camera.css?v=2",
+  "/assets/css/luria-rotate-hint.css?v=2",
+  "/assets/js/luria-rotate-controller.js?v=2",
+  "/assets/js/ecg-contracts.js?v=3",
+  "/assets/js/ecg-signal-extractor.js?v=3",
+  "/assets/js/ecg-cv-engine.js?v=3",
+  "/assets/js/ecg-smart-camera.js?v=3",
+  "/assets/js/ecg-smart-ui.js?v=2",
+  "/assets/js/ecg-capture-page.js?v=1",
+  "/assets/js/trabalho-ecg.js?v=20261026",
   "/assets/js/clinical-calculators-expansion.js?v=20261024",
   "/assets/js/clinical-calculators-audit-batch1.js?v=20261024-batch1",
   "/assets/js/clinical-calculators-audit-batch2.js?v=20261024-batch2",
