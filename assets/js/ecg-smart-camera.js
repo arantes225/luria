@@ -381,9 +381,14 @@
         userCalibration: sessionCalibration.confirmedByUser ? sessionCalibration : options.userCalibration
       });
 
-      // Se a imagem estiver rotacionada ou com perspectiva severa e os cantos foram localizados, retifica
-      if (!options.manualPaperCornersApplied && boundaries.orientation && (boundaries.orientation.isRotated90 || Math.abs(boundaries.orientation.skewAngleDeg) > 1.5)) {
-        const corrAngle = boundaries.orientation.isRotated90 ? 90 : -boundaries.orientation.skewAngleDeg;
+      // The CV engine returns a plain {width,height,data} object, not a
+      // browser ImageData instance. Passing that object to putImageData()
+      // throws TypeError in real browsers (normal full-photo capture crash).
+      // Do not attempt a 90° rotation using this older same-size warp: it
+      // clips the ECG; instead report the orientation for user correction.
+      const skew = Number(boundaries.orientation?.skewAngleDeg);
+      if (!options.manualPaperCornersApplied && !boundaries.orientation?.isRotated90 &&
+          Number.isFinite(skew) && Math.abs(skew) > 1.5) {
         const rectified = cvEngine.rectifyImagePerspective(
           fullImageData,
           boundaries.sheet?.corners || {
@@ -392,13 +397,16 @@
             bottomLeft: { x: 0, y: fullImageData.height },
             bottomRight: { x: fullImageData.width, y: fullImageData.height }
           },
-          corrAngle
+          -skew
         );
-        if (rectified && rectified.width > 80 && rectified.height > 80) {
+        if (rectified && rectified.width > 80 && rectified.height > 80 &&
+            rectified.data?.length === rectified.width * rectified.height * 4) {
+          const corrected = ctx.createImageData(rectified.width, rectified.height);
+          corrected.data.set(rectified.data);
           snapCanvas.width = rectified.width;
           snapCanvas.height = rectified.height;
-          ctx.putImageData(rectified, 0, 0);
-          fullImageData = rectified;
+          snapCanvas.getContext("2d").putImageData(corrected, 0, 0);
+          fullImageData = corrected;
           boundaries = cvEngine.detectECGBoundaries(fullImageData, {
             userCalibration: sessionCalibration.confirmedByUser ? sessionCalibration : options.userCalibration
           });
