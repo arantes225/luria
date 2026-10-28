@@ -382,7 +382,7 @@
       });
 
       // Se a imagem estiver rotacionada ou com perspectiva severa e os cantos foram localizados, retifica
-      if (boundaries.orientation && (boundaries.orientation.isRotated90 || Math.abs(boundaries.orientation.skewAngleDeg) > 1.5)) {
+      if (!options.manualPaperCornersApplied && boundaries.orientation && (boundaries.orientation.isRotated90 || Math.abs(boundaries.orientation.skewAngleDeg) > 1.5)) {
         const corrAngle = boundaries.orientation.isRotated90 ? 90 : -boundaries.orientation.skewAngleDeg;
         const rectified = cvEngine.rectifyImagePerspective(
           fullImageData,
