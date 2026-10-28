@@ -34,6 +34,8 @@ const APP_SHELL = [
   "/estatisticas/",
   "/amigos/",
   "/apostilas/",
+  "/assets/css/apostila-paged-reader.css?v=20261028-reader1",
+  "/assets/js/apostila-paged-reader.js?v=20261028-reader1",
   "/assets/css/apostilas-hall.css?v=20261028-area-flow1",
   "/assets/js/apostilas-app.js?v=20261028-area-flow1",
   "/trabalho/",
