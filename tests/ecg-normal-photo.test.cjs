@@ -157,3 +157,48 @@ test("user can compare full photo without using selected paper corners", async (
   assert.equal(captured[0].paperSelection, "full_photo");
   e.dom.window.close();
 });
+
+
+test("rotating a full ECG photo updates visual orientation AND passes identical 90° to extraction", async () => {
+  const e = setup();
+  const file = new e.window.File([new Uint8Array(400)], "ecg.jpeg", {type:"image/jpeg"});
+  Object.defineProperty(e.fileInput, "files", {value:[file],configurable:true});
+  e.fileInput.dispatchEvent(new e.window.Event("change"));
+  await new Promise(resolve => setImmediate(resolve));
+  const whole = e.document.querySelector('input[name="ecg-photo-selection"][value="whole"]');
+  whole.checked = true; whole.dispatchEvent(new e.window.Event("change"));
+  e.document.getElementById("ecg-normal-photo-rotate-right").click();
+  assert.match(e.preview.style.transform,/rotate\(90deg\)/);
+  const frame=e.document.getElementById("ecg-normal-photo-frame");
+  assert.ok(parseInt(frame.style.height,10) > parseInt(frame.style.width,10),
+    "4032×3024 original photo is portrait after a quarter-turn");
+  let opts;
+  e.window.LuriaEcgProcessPhoto = async (_file,_mode,options) => {opts=options;return {ok:true}};
+  e.document.getElementById("ecg-normal-photo-process").click();
+  await new Promise(resolve => setImmediate(resolve));
+  assert.equal(opts.rotationDeg,90);
+  assert.equal(opts.paperSelection,"full_photo");
+  assert.equal(opts.corners,null);
+  e.dom.window.close();
+});
+
+test("rotation resets previous corner positions, preserving the paper-frame alignment", async () => {
+  const e=setup();
+  const file=new e.window.File([new Uint8Array(400)],"ecg.jpeg",{type:"image/jpeg"});
+  Object.defineProperty(e.fileInput,"files",{value:[file],configurable:true});
+  e.fileInput.dispatchEvent(new e.window.Event("change"));
+  await new Promise(resolve=>setImmediate(resolve));
+  const corner=e.document.querySelector('[data-ecg-corner="0"]');
+  corner.dispatchEvent(new e.window.KeyboardEvent("keydown",{key:"ArrowRight",bubbles:true}));
+  assert.notEqual(corner.style.left,"3%");
+  e.document.getElementById("ecg-normal-photo-rotate-left").click();
+  assert.equal(corner.style.left,"3%");
+  assert.match(e.preview.style.transform,/rotate\(270deg\)/);
+  let options;
+  e.window.LuriaEcgProcessPhoto=async(_file,_mode,opts)=>{options=opts;return{ok:true}};
+  e.document.getElementById("ecg-normal-photo-process").click();
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(options.rotationDeg,270);
+  assert.equal(options.corners.length,4);
+  e.dom.window.close();
+});
