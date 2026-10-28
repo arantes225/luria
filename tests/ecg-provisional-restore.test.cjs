@@ -78,7 +78,7 @@ test("keyboard, blank table and unverified paper never become provisional ECG le
   for (const change of [
     {sheet:{found:false}},
     {candidateRegions:{},waveformCandidateCount:0},
-    {calibration:{gridDetected:false,coloredGridRatio:0},recognizedLabels:{}}
+    {candidateRegions:{DI:{},DII:{}},waveformCandidateCount:2,calibration:{gridDetected:false,coloredGridRatio:0},recognizedLabels:{}}
   ]) {
     const {controller,guard,evidence}=scene(change);
     assert.equal(guard.isVerifiedEcgScene(evidence),false);
@@ -86,6 +86,15 @@ test("keyboard, blank table and unverified paper never become provisional ECG le
     assert.equal(result.ok,false);
     assert.equal(controller.getCapturedLeads().filter(l=>l.captured).length,0);
   }
+});
+test("non-calibrated ordinary ECG photo can preview waveform candidates but cannot certify any lead",()=>{
+  const {controller,guard,evidence}=scene({calibration:{gridDetected:false,coloredGridRatio:0}});
+  assert.equal(guard.isVerifiedEcgScene(evidence),false,"live verification remains strict");
+  const result=controller.processPhotographCanvas(makeCanvas(),{source:"normal_photo"});
+  assert.equal(result.ok,true);
+  assert.equal(result.provisionalCount,3);
+  assert.equal(result.totalCaptured,0);
+  assert.equal(controller.confirmExtractionAndEnableAI().allowed,false);
 });
 test("manual four-point paper selection permits preliminary review without pretending verified labels",()=>{
   const {controller}=scene({sheet:{found:false},calibration:{gridDetected:false,coloredGridRatio:0}});
