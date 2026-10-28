@@ -60,6 +60,8 @@ jobs:
         run: node --test tests/apostilas-justified-text.test.cjs
       - name: Verify typography and colored highlights in apostilas
         run: node --test tests/apostilas-reading-style.test.cjs
+      - name: Verify page-like reader and chapter navigation
+        run: node --test tests/apostilas-paged-reader.test.cjs
       - name: Audit all apostilas without blocking legacy books
         run: node scripts/audit-apostilas-batch.cjs
       - name: Run release-blocking frontend regressions
