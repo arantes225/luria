@@ -544,6 +544,20 @@
         cropCtx.drawImage(snapCanvas, roiX, roiY, roiW, roiH, 0, 0, roiW, roiH);
         const roiImageData = cropCtx.getImageData(0, 0, roiW, roiH);
 
+        // A misaligned cell can include the NEXT lead label in its middle
+        // (e.g. an "aVR" crop visually containing "III" and "aVF").
+        // An independent scan in the right half makes such crops ineligible
+        // for any automatic lead association.
+        if (typeof cvEngine.recognizeLeadLabelInRegion === "function") {
+          const other = cvEngine.recognizeLeadLabelInRegion(roiImageData, {
+            xMin: 0.36, yMin: 0, xMax: 1, yMax: 1
+          });
+          if (other.recognized && other.recognizedLead !== leadName) {
+            quarantinedCount++;
+            return;
+          }
+        }
+
         // Verifica o rótulo específico e anomalias (troca ou duplicidade)
         const regionAnomalies = anomalies.filter(a => a.lead === leadName || a.recognizedLead === leadName || a.expectedLead === leadName);
         const leadIdentity = contracts.normalizeLeadIdentity({
@@ -560,6 +574,7 @@
           leadIdentity,
           regionBounds: { x: roiX, y: roiY, width: roiW, height: roiH },
           calibration: sessionCalibration,
+          maskPrintedHeader: true,
           provenance: {
             source: options.source || "smart_camera",
             layoutId: boundaries.layoutId,
