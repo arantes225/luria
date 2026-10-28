@@ -83,12 +83,12 @@ function studyOwner(){return String(window.docmapUser?.id||"")}
 function studyDailyKey(){const owner=studyOwner();return owner?"luria:guided-study-daily:"+owner+":"+studyDay():null}
 function activityTopic(activity){
  const raw=String(activity?.theme||activity?.title||activity?.materia||activity?.area||"").trim();
- return isReviewActivity(activity)?raw.replace(/^(?:revis[aã]o(?:\\s+(?:de|do|da))?|revisar)\\s+/i,"").trim()||raw:raw;
+ return isReviewActivity(activity)?raw.replace(/^(?:revis[aã]o(?:\s+(?:de|do|da))?|revisar)\s+/i,"").trim()||raw:raw;
 }
 function isReviewActivity(activity){
  const kind=String(activity?.kind||"").toLowerCase();
  const title=String(activity?.title||"").trim();
- return kind==="subject_review"||/^(?:revis[aã]o|revisar)\\b/i.test(title);
+ return kind==="subject_review"||/^(?:revis[aã]o|revisar)\b/i.test(title);
 }
 function sessionSteps(minutes){
  const acts=todayActivities(),lesson=acts.find(a=>["lesson","subject_review"].includes(String(a?.kind||"")))||acts[0];
