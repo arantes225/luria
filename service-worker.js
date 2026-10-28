@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261028-vocacao-theme-v3";
+const CACHE_VERSION = "luria-pwa-20261028-aprender-cleanup-v8";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
