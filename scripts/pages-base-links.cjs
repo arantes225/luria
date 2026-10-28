@@ -22,9 +22,9 @@ function rewritePageHtml(html, filename) {
     fragment => {
       // Rewrite external script/style tag attributes but NEVER their inline
       // body: existing CSP hashes must continue to match byte for byte.
-      const opening = fragment.match(/^<(?:script|style)\\b[^>]*>/i);
-      const attribute = /(\\s(?:href|src|action|poster|data-src)\\s*=\\s*["'])\\/(?!\\/)/gi;
-      if (opening && /<\\/(?:script|style)>/i.test(fragment)) {
+      const opening = fragment.match(/^<(?:script|style)\b[^>]*>/i);
+      const attribute = /(\s(?:href|src|action|poster|data-src)\s*=\s*["'])\/(?!\/)/gi;
+      if (opening && /<\/(?:script|style)>/i.test(fragment)) {
         const corrected = opening[0].replace(attribute, "$1");
         return corrected + fragment.slice(opening[0].length);
       }
