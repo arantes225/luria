@@ -192,6 +192,8 @@ function bindNativeStudyPanels(){
   if(panel.dataset.luriaSessionState===state)return;
   let mins=30;
   const title=panel.querySelector("h3"),timeButtons=all("[data-luria-study-time]",panel);
+  const timeGroup=panel.querySelector(".dl-study-time-options");
+  if(timeGroup){timeGroup.hidden=state!=="idle";timeGroup.style.display=state==="idle"?"":"none"}
   if(title)title.textContent="Estudar agora";
   timeButtons.forEach(btn=>{
    btn.hidden=state!=="idle";
