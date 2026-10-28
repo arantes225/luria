@@ -6,7 +6,7 @@
   ]);
   const location = window.location;
   // Links antigos do Feynman devem abrir o modo interno do Professor Alex.
-  if (/^\\/feynman(?:\\/(?:index\\.html)?|\\.html)?$/.test(location.pathname)) {
+  if (/^\/feynman(?:\/(?:index\.html)?|\.html)?$/.test(location.pathname)) {
     const params = new URLSearchParams(location.search);
     params.set("mode","feynman");
     location.replace("/professor-alex/?" + params.toString() + location.hash);
