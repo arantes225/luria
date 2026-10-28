@@ -14,7 +14,7 @@
     if(currentUser===userId&&pendingStart){return pendingStart;}
     const ticket=++revision;currentUser=userId;companion?.destroy();companion=null;
     pendingStart=new Promise((resolve)=>{
-      import('/assets/js/professor-alex-companion.mjs?v=20261026-visible5')
+      import('/assets/js/professor-alex-companion.mjs?v=20261028-memory1')
         .then(({mountAlexCompanion})=>{
           if(ticket!==revision||window.LuriaSessionInvalidated){resolve(false);return;}
           if(!companion){
