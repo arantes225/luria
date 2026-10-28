@@ -365,6 +365,8 @@
 
       // Atualiza o mapa espacial verdadeiro quando detectado
       currentSheetMap = docDetection;
+      const sheetBounds = docDetection.sheet?.boundaries || docDetection.boundaries;
+      const sheetCorners = docDetection.sheet?.corners || null;
 
       // 4. Orientação direcional em tempo real quando buscando derivação específica
       if (mode === "ultrasensitive" && currentTargetLead && currentSheetMap) {
@@ -375,7 +377,7 @@
         const nav = cvEngine.computeNavigationGuidance(currentSheetMap, currentTargetLead, currentCenter, cameraSpatialTracker);
         if (nav && nav.direction !== "aligned" && nav.direction !== "centered") {
           setHudMessage(nav.instruction || nav.message);
-          setReticleStatus("adjusting");
+          setReticleStatus("adjusting", "LOCK_DOCUMENT", sheetCorners, sheetBounds);
           return;
         }
       }
@@ -383,19 +385,19 @@
       // 5. Se a folha foi detectada, mas há movimento
       if (motionBlur || !isStable) {
         setHudMessage("Mantenha parado.");
-        setReticleStatus("stabilizing");
+        setReticleStatus("stabilizing", "LOCK_DOCUMENT", sheetCorners, sheetBounds);
         return;
       }
 
       // 6. Se nitidez for insuficiente
       if (quality.sharpnessScore < 22) {
         setHudMessage("Mantenha parado para focar...");
-        setReticleStatus("adjusting");
+        setReticleStatus("adjusting", "DETECT_ECG_STRUCTURE", sheetCorners, sheetBounds);
         return;
       }
 
-      // 7. Enquadramento e estabilidade alcançados -> Captura Autônoma
-      setReticleStatus("aligned");
+      // 7. Enquadramento e estabilidade alcançados -> Captura Autônoma com moldura adaptada
+      setReticleStatus("aligned", "GUIDED_CAPTURE", sheetCorners, sheetBounds);
 
       if (mode === "fast") {
         setHudMessage("ECG identificado! Capturando e validando derivações...", true);
@@ -406,7 +408,7 @@
       }
     }
 
-    function setReticleStatus(status, macroState = null) {
+    function setReticleStatus(status, macroState = null, detectedCorners = null, boundaries = null) {
       if (!hudContainer) return;
       const reticle = hudContainer.querySelector(".ecg-hud-reticle") || hudContainer.querySelector(".ecg-hud-reticle-box");
       if (reticle) {
@@ -424,6 +426,33 @@
           if (macroMap[status]) {
             reticle.setAttribute("data-macro-state", macroMap[status]);
           }
+        }
+
+        // Adaptação Dinâmica do Enquadramento (Bounding Polygon / Box Adaptativo)
+        // O formato da folha observada determina a geometria da moldura
+        if (boundaries && boundaries.xMin !== undefined && boundaries.xMax !== undefined) {
+          const bw = (boundaries.xMax - boundaries.xMin) * 100;
+          const bh = (boundaries.yMax - boundaries.yMin) * 100;
+          const cx = ((boundaries.xMin + boundaries.xMax) / 2) * 100;
+          const cy = ((boundaries.yMin + boundaries.yMax) / 2) * 100;
+
+          // Suavização da moldura adaptativa
+          reticle.style.width = `clamp(120px, ${bw.toFixed(1)}%, 96vw)`;
+          reticle.style.height = `clamp(90px, ${bh.toFixed(1)}%, 92vh)`;
+          reticle.style.aspectRatio = "unset";
+          reticle.style.left = `${cx.toFixed(1)}%`;
+          reticle.style.top = `${cy.toFixed(1)}%`;
+          reticle.style.position = "absolute";
+          reticle.style.transform = "translate(-50%, -50%)";
+        } else if (status === "searching") {
+          // Campo amplo de busca sem impor formato estreito ao exame
+          reticle.style.width = "min(88vw, 760px)";
+          reticle.style.height = "min(80vh, 540px)";
+          reticle.style.aspectRatio = "unset";
+          reticle.style.left = "50%";
+          reticle.style.top = "50%";
+          reticle.style.position = "absolute";
+          reticle.style.transform = "translate(-50%, -50%)";
         }
       }
     }

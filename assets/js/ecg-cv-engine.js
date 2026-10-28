@@ -492,15 +492,26 @@
     const widthRatio = (maxX - minX) / width;
     const heightRatio = (maxY - minY) / height;
 
-    // Se a folha está cortada demais ou ocupa fração minúscula (< 45% largura ou < 40% altura),
-    // ou se o papel encosta exatamente nas 4 margens sem borda de mesa
-    const touchesAllBorders = (minX === 0 && maxX === width - 1 && minY === 0 && maxY === height - 1);
-    const isCutOff = (widthRatio < 0.45 || heightRatio < 0.40) || touchesAllBorders;
-    const hasSeverePerspective = trapezoidRatio < 0.74;
+    // Se a folha ocupa uma fração coerente da imagem (suportando papéis verticais A4, panorâmicos compridos ou tiras)
+    // O corte só é verdadeiro se o papel tocar nas bordas externas do frame sem margem
+    const touchesHorizontalBorders = (minX <= 2 && maxX >= width - 3);
+    const touchesVerticalBorders = (minY <= 2 && maxY >= height - 3);
+    const touchesAllBorders = touchesHorizontalBorders && touchesVerticalBorders;
+
+    // Diferentes formatos clínicos de ECG:
+    // - A4 vertical (wRatio ~0.35 a 0.70, hRatio ~0.60 a 0.95)
+    // - Panorâmico / Tira estreita (wRatio ~0.70 a 0.95, hRatio ~0.20 a 0.50)
+    // - Padrão 3x4 / 6x2 (wRatio ~0.45 a 0.95, hRatio ~0.35 a 0.90)
+    const areaRatio = (widthRatio * heightRatio);
+    const isTooSmall = areaRatio < 0.08; // Muito distante ou minúsculo
+    const isSeverelyTruncated = widthRatio < 0.30 || heightRatio < 0.20; // Folha cortada demais lateralmente ou verticalmente
+    const isCutOff = touchesAllBorders || isSeverelyTruncated || ((touchesHorizontalBorders && widthRatio > 0.97) || (touchesVerticalBorders && heightRatio > 0.97) && areaRatio > 0.90);
+    const hasSeverePerspective = trapezoidRatio < 0.68;
 
     return {
-      found: globalMeanLuma >= 80,
+      found: globalMeanLuma >= 75 && (maxX - minX) > 40 && (maxY - minY) > 30,
       isCutOff,
+      isTooSmall,
       touchesAllBorders,
       hasSeverePerspective,
       trapezoidRatio: Number(trapezoidRatio.toFixed(3)),
@@ -1872,14 +1883,14 @@
           direction: "approach",
           dx: Number(dx.toFixed(3)),
           dy: Number(dy.toFixed(3)),
-          instruction: `Aproxime um pouco o aparelho de ${targetLead}.`
+          instruction: `Aproxime o celular de ${targetLead}.`
         };
       } else if (scaleRatio > 1.35) {
         return {
           direction: "retreat",
           dx: Number(dx.toFixed(3)),
           dy: Number(dy.toFixed(3)),
-          instruction: `Afaste ligeiramente o aparelho de ${targetLead}.`
+          instruction: `Afaste o celular de ${targetLead}.`
         };
       }
       return {
@@ -1892,11 +1903,13 @@
 
     const parts = [];
     if (Math.abs(dx) >= 0.06) {
-      // dx > 0: o alvo está à direita do centro atual -> orientar o usuário a mover o celular para a direita
+      // dx > 0: o alvo está à direita do centro atual na imagem. Para centralizá-lo, o usuário deve mover o celular para a direita.
+      // dx < 0: o alvo está à esquerda do centro atual. O usuário deve mover o celular para a esquerda.
       parts.push(dx > 0 ? "para a direita" : "para a esquerda");
     }
     if (Math.abs(dy) >= 0.06) {
-      // dy > 0: o alvo está abaixo do centro atual -> orientar o usuário a mover o celular para baixo (desça)
+      // dy > 0: o alvo está abaixo do centro atual. Para centralizá-lo, o usuário deve descer o celular (mover para baixo).
+      // dy < 0: o alvo está acima do centro atual. Para centralizá-lo, o usuário deve subir o celular (mover para cima).
       parts.push(dy > 0 ? "para baixo" : "para cima");
     }
 
@@ -1904,7 +1917,7 @@
       direction: parts.join(" e "),
       dx: Number(dx.toFixed(3)),
       dy: Number(dy.toFixed(3)),
-      instruction: `Vá para ${targetLead}: mova ${parts.join(" e ")}.`
+      instruction: `Vá para ${targetLead}: mova o celular ${parts.join(" e ")}.`
     };
   }
 

@@ -62,11 +62,8 @@
         buttonText: "Manter vertical",
         shouldActivate: () => true,
         onDismiss: () => {
-          // Quando o usuário escolhe manter na vertical, apenas fecha a orientação
-          // e adapta a proporção do retículo se necessário
-          if (reticleEl) {
-            reticleEl.style.aspectRatio = "4 / 3";
-          }
+          // Quando o usuário escolhe manter na vertical, fecha o aviso de rotação
+          // e mantém a câmera aberta com a moldura livre e adaptativa
         }
       })
     : null;

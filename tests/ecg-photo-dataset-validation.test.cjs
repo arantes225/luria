@@ -155,6 +155,41 @@ test("Indicadores Fotográficos: Detecção de Documento e Rejeição Estrita de
   assert.equal(fpRate, 0, "Taxa de falsos positivos em objetos externos deve ser estritamente 0%");
 });
 
+test("Enquadramento Adaptativo: Suporte a múltiplos formatos (A4 vertical, horizontal, panorâmico/tira)", () => {
+  const env = createPhotographicTestEnv();
+  const cvEngine = env.LuriaEcgCvEngine.createEngine();
+
+  // Testar 3 formatos reais:
+  // 1. A4 Vertical (proporção ~1:1.41)
+  const vW = 400, vH = 560;
+  const vData = new Uint8ClampedArray(vW * vH * 4).fill(245);
+  // Bordas de mesa
+  for (let y = 0; y < vH; y++) for (let x = 0; x < vW; x++) {
+    if (x < 20 || x > vW - 20 || y < 20 || y > vH - 20) {
+      const idx = (y * vW + x) * 4;
+      vData[idx] = vData[idx + 1] = vData[idx + 2] = 40;
+    }
+  }
+  const sheetV = cvEngine.locatePaperSheet({ width: vW, height: vH, data: vData });
+  assert.equal(sheetV.found, true, "Deve detectar folha em formato A4 vertical");
+  assert.equal(sheetV.isCutOff, false, "A4 vertical centralizado não é considerado cortado");
+  assert.ok(sheetV.boundaries.aspectRatio < 0.85, "Proporção vertical deve ser < 1.0");
+
+  // 2. Panorâmico / Tira longa (proporção ~2.5:1)
+  const pW = 600, pH = 240;
+  const pData = new Uint8ClampedArray(pW * pH * 4).fill(245);
+  for (let y = 0; y < pH; y++) for (let x = 0; x < pW; x++) {
+    if (x < 25 || x > pW - 25 || y < 15 || y > pH - 15) {
+      const idx = (y * pW + x) * 4;
+      pData[idx] = pData[idx + 1] = pData[idx + 2] = 40;
+    }
+  }
+  const sheetP = cvEngine.locatePaperSheet({ width: pW, height: pH, data: pData });
+  assert.equal(sheetP.found, true, "Deve detectar papel panorâmico / tira longa");
+  assert.equal(sheetP.isCutOff, false, "Papel panorâmico não deve ser considerado cortado");
+  assert.ok(sheetP.boundaries.aspectRatio > 2.0, "Proporção panorâmica deve ser > 2.0");
+});
+
 test("Latência e Desempenho em Celulares Intermediários", () => {
   const env = createPhotographicTestEnv();
   const cvEngine = env.LuriaEcgCvEngine.createEngine();
