@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
   <link rel="stylesheet" href="/assets/css/luria-rotate-hint.css?v=1">
-  <link rel="stylesheet" href="/assets/css/ecg-smart-camera.css?v=2">
+  <link rel="stylesheet" href="/assets/css/ecg-smart-camera.css?v=3">
   <style>
     .ecg-shell{display:grid;gap:16px}
     .ecg-tabs{display:flex;gap:8px;flex-wrap:wrap}
@@ -603,8 +603,24 @@
       <button type="button" class="ecg-btn secondary" id="ecg-normal-photo-close">Fechar</button>
     </header>
     <main class="ecg-normal-photo-main">
-      <p>Confira se toda a folha, os rótulos e a grade estão visíveis. A foto original será preservada nesta etapa, sem filtros ou recortes automáticos.</p>
-      <img id="ecg-normal-photo-preview" alt="Fotografia original do ECG, sem filtros" hidden>
+      <p>Marque os quatro cantos reais do papel arrastando as bolinhas azuis. Inclua toda a grade e todos os rótulos, mas não a mesa ao redor. Se preferir, compare também o resultado da foto inteira.</p>
+      <div class="ecg-normal-photo-mode" role="group" aria-label="Selecionar área do exame">
+        <label><input type="radio" name="ecg-photo-selection" value="corners" checked> Delimitar papel (4 cantos)</label>
+        <label><input type="radio" name="ecg-photo-selection" value="whole"> Usar foto inteira (controle A/B)</label>
+        <button type="button" id="ecg-normal-photo-reset" class="ecg-btn secondary">Reiniciar cantos</button>
+      </div>
+      <div id="ecg-normal-photo-frame" class="ecg-normal-photo-frame" hidden>
+        <img id="ecg-normal-photo-preview" alt="Fotografia original do ECG, sem filtros" hidden>
+        <svg id="ecg-normal-photo-polygon" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">
+          <path id="ecg-normal-photo-dim" fill-rule="evenodd"></path>
+          <polygon id="ecg-normal-photo-outline"></polygon>
+        </svg>
+        <button type="button" class="ecg-photo-corner" data-ecg-corner="0" aria-label="Canto superior esquerdo"></button>
+        <button type="button" class="ecg-photo-corner" data-ecg-corner="1" aria-label="Canto superior direito"></button>
+        <button type="button" class="ecg-photo-corner" data-ecg-corner="2" aria-label="Canto inferior direito"></button>
+        <button type="button" class="ecg-photo-corner" data-ecg-corner="3" aria-label="Canto inferior esquerdo"></button>
+      </div>
+      <p id="ecg-normal-photo-corner-help" class="ecg-normal-photo-details" role="status">Arraste os quatro pontos para os cantos reais. Também é possível usar as setas do teclado quando um ponto estiver selecionado.</p>
       <p id="ecg-normal-photo-details" class="ecg-normal-photo-details" role="status" aria-live="polite"></p>
       <p id="ecg-normal-photo-error" class="ecg-normal-photo-error" role="alert" hidden></p>
     </main>
@@ -623,7 +639,8 @@
   <script src="/assets/js/ecg-cv-engine.js?v=2"></script>
   <script src="/assets/js/ecg-smart-camera.js?v=2"></script>
   <script src="/assets/js/ecg-smart-ui.js?v=3"></script>
-  <script src="/assets/js/ecg-normal-photo.js?v=1"></script>
+  <script src="/assets/js/ecg-photo-perspective.js?v=1"></script>
+  <script src="/assets/js/ecg-normal-photo.js?v=2"></script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
   <script defer src="/assets/js/ecg-reader.js?v=2"></script>
 </body>
