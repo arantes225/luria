@@ -11,7 +11,7 @@ function setup({rotated90 = false, skew = 3.5} = {}) {
   let calls = 0;
   let imageDataPut = 0;
   let rectifications = 0;
-  const width = 100, height = 80;
+  const width = 100, height = 96;
   const base = {width, height, data:new Uint8ClampedArray(width * height * 4)};
   const ctx = {
     getImageData: () => base,
