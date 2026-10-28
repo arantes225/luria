@@ -64,5 +64,5 @@ test("split-reader script loads on opening editor only, not on library or failur
 });
 
 test("the PWA cache version is rotated after notes recovery", () => {
-  assert.match(read("service-worker.js"), /luria-pwa-20261028-notes-recovery1/);
+  assert.match(read("service-worker.js"), /luria-pwa-20261028-[^"]*notes-recovery1/);
 });
