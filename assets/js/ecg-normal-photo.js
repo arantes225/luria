@@ -43,6 +43,7 @@
   }
   function choosePhoto() {
     if (working) return;
+    global.LuriaEcgStopScanner?.();
     input.value = "";
     // The iOS/Android camera app handles focus, exposure and full-resolution
     // capture. Desktop/browser fallback opens the standard image picker.
@@ -71,6 +72,8 @@
     const file = input.files?.[0];
     if (!file) return;
     if (!file.type.startsWith("image/") || file.size === 0 || file.size > LIMIT_BYTES) {
+      sourceFile = null;
+      btnProcess.disabled = true;
       if (page.hidden) {
         page.hidden = false;
         doc.body.classList.add("ecg-normal-photo-open");
