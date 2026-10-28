@@ -946,8 +946,10 @@
     extractionResult.validDurationSeconds = Number((validSamplesCount * msPerPixel / 1000).toFixed(3));
     extractionResult.effectiveResolutionHz = Number((1000 / msPerPixel).toFixed(1));
     extractionResult.resampledDigitalRateHz = null;
-    extractionResult.calibration = { ...calibration, pixelsPerMv, msPerPixel,
-      measurementsAllowed: calibration.calibrationSource === "measured" || calibration.calibrationSource === "user_confirmed" };
+    const normalizedCal = (global.LuriaEcgContracts && global.LuriaEcgContracts.normalizeCalibration)
+      ? global.LuriaEcgContracts.normalizeCalibration(calibration)
+      : { ...calibration, pixelsPerMv, msPerPixel, measurementsAllowed: calibration?.calibrationSource === "measured" || calibration?.calibrationSource === "user_confirmed" };
+    extractionResult.calibration = normalizedCal;
     let min = Infinity, max = -Infinity;
     for (const value of validValues) { if (value < min) min = value; if (value > max) max = value; }
     extractionResult.peakToPeakMv = validValues.length > 0 ? Number((max - min).toFixed(3)) : null;

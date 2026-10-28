@@ -592,4 +592,92 @@ test("Etapa 3 bloqueia o envio ao backend autoral não verificado", async () => 
   assert.equal(invokes, 0, "Clique não pode acionar backend não verificado, mesmo se disparado programaticamente");
 });
 
+test("E2E Cenário 15: Recalibração de ganho/velocidade recalcula amplitudes, durações e atualiza o pacote final", () => {
+  const { context } = createE2eEnvironment();
+  const camera = context.LuriaSmartCamera.createController({});
+  const extractor = context.LuriaEcgSignalExtractor;
+
+  // Registrar derivação DI com 25 mm/s e 10 mm/mV (6 px/mm)
+  // baselineY = 100, ponto Y = 70 (30 px acima da base = 30 / (10 * 6) = 0.5 mV)
+  const extractionMock = {
+    isValid: true,
+    baselineY: 100,
+    curveCoordinatesPx: [{ x: 0, y: 70 }, { x: 1, y: 70 }, { x: 2, y: 100 }],
+    validMask: [1, 1, 1],
+    limitations: [],
+    continuity: 1.0,
+    snrDb: 25,
+    leadIdentity: { lead: "DI", verified: true, status: "ocr_confirmed" }
+  };
+
+  const initialCal = {
+    paperSpeedMmPerSec: 25,
+    gainMmPerMv: 10,
+    pixelsPerMmX: 6.0,
+    pixelsPerMmY: 6.0,
+    gridDetected: true,
+    calibrationSource: "measured",
+    confirmedByUser: false
+  };
+
+  const initialExtraction = extractor.recalibrateExtraction(extractionMock, initialCal);
+  assert.equal(initialExtraction.signal[0], 0.5, "Amplitude inicial deve ser 0.5 mV para 10 mm/mV");
+
+  // Injetar na câmera simulando derivação capturada
+  camera.registerCapturedLeadForTest("DI", initialExtraction);
+
+  // Médico altera para ganho 20 mm/mV e velocidade 50 mm/s com grade de 6 px/mm
+  const updated = camera.setUserCalibration({
+    paperSpeedMmPerSec: 50,
+    gainMmPerMv: 20,
+    pixelsPerMmX: 6.0,
+    pixelsPerMmY: 6.0,
+    confirmedByUser: true
+  });
+
+  assert.equal(updated.calibrationSource, "user_confirmed");
+  assert.equal(updated.measurementsAllowed, true);
+
+  // Verificar se leadInfo.extractedSignal e leadInfo.extraction foram atualizados
+  const leads = camera.getCapturedLeads();
+  const di = leads.find(l => l.lead === "DI");
+  assert.ok(di, "DI deve estar presente");
+  // 30 px com ganho 20 mm/mV e pxY 6 -> 30 / (20 * 6) = 0.25 mV
+  assert.equal(di.extractedSignal[0], 0.25, "Amplitude recalculada para ganho 20 mm/mV deve ser 0.25 mV");
+
+  // Pacote estruturado deve refletir o sinal e metadados recalculados
+  const pkg = camera.getSessionStructuredPackage();
+  assert.equal(pkg.signals["DI"][0], 0.25, "Pacote final deve conter sinal recalculado");
+  assert.equal(pkg.calibration.paperSpeedMmPerSec, 50);
+  assert.equal(pkg.calibration.gainMmPerMv, 20);
+  assert.equal(pkg.calibration.confirmedByUser, true);
+});
+
+test("E2E Cenário 16: Pulso falso/artefato não habilita 'measured' e preserva exigência de validação", () => {
+  const { context } = createE2eEnvironment();
+  const contracts = context.LuriaEcgContracts;
+
+  // Pulso com alta confiança falsa mas sem grade milimetrada
+  const calNoGrid = contracts.normalizeCalibration({
+    gridDetected: false,
+    pulseDetected: true,
+    pulseConfidence: 0.95
+  });
+  assert.equal(calNoGrid.measurementsAllowed, false, "Sem grade medida, medições físicas devem ser bloqueadas");
+  assert.equal(calNoGrid.calibrationSource, "unknown");
+
+  // Grade medida mas com pulso de baixa confiança (< 0.70)
+  const calLowConfPulse = contracts.normalizeCalibration({
+    gridDetected: true,
+    pixelsPerMmX: 6.0,
+    pixelsPerMmY: 6.0,
+    paperSpeedMmPerSec: 25,
+    gainMmPerMv: 10,
+    pulseDetected: true,
+    pulseConfidence: 0.45
+  });
+  assert.equal(calLowConfPulse.measurementsAllowed, false, "Pulso incerto (<0.70) não permite medições");
+  assert.equal(calLowConfPulse.calibrationSource, "assumed");
+});
+
 

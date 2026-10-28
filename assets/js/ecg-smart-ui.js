@@ -14,6 +14,7 @@
   const btnStartFast = byId("ecg-btn-start-fast");
   const btnStartUltra = byId("ecg-btn-start-ultra");
   const btnCancelCamera = byId("ecg-btn-cancel-camera");
+  const btnToggleTorch = byId("ecg-btn-torch");
   const stage1Section = byId("ecg-stage1-capture");
   const stage2Section = byId("ecg-stage2-review");
   const stage3Section = byId("ecg-stage3-ai");
@@ -147,6 +148,18 @@
     }
   });
 
+  function checkTorchAvailability() {
+    if (!btnToggleTorch || !cameraController?.getCameraCapabilities) return;
+    setTimeout(() => {
+      const caps = cameraController.getCameraCapabilities();
+      if (caps && caps.torch) {
+        btnToggleTorch.style.display = "inline-flex";
+      } else {
+        btnToggleTorch.style.display = "none";
+      }
+    }, 500);
+  }
+
   // Botões de Inicialização da Câmera
   btnStartFast?.addEventListener("click", () => {
     stage1Section.hidden = false;
@@ -154,6 +167,7 @@
     stage3Section.hidden = true;
     cameraViewport.hidden = false;
     cameraController?.startCamera("fast");
+    checkTorchAvailability();
   });
 
   btnStartUltra?.addEventListener("click", () => {
@@ -162,11 +176,32 @@
     stage3Section.hidden = true;
     cameraViewport.hidden = false;
     cameraController?.startCamera("ultrasensitive");
+    checkTorchAvailability();
   });
 
   btnCancelCamera?.addEventListener("click", () => {
     cameraController?.stopCamera();
     cameraViewport.hidden = true;
+    if (btnToggleTorch) {
+      btnToggleTorch.style.display = "none";
+      btnToggleTorch.textContent = "🔦 Lanterna";
+    }
+  });
+
+  // Controle de lanterna integrado
+  let torchActive = false;
+  btnToggleTorch?.addEventListener("click", async () => {
+    if (!cameraController?.toggleTorch) return;
+    const res = await cameraController.toggleTorch(!torchActive);
+    if (res && res.ok) {
+      torchActive = Boolean(res.torch);
+      btnToggleTorch.textContent = torchActive ? "💡 Desativar" : "🔦 Lanterna";
+      btnToggleTorch.style.background = torchActive ? "var(--accent, #184888)" : "";
+      btnToggleTorch.style.color = torchActive ? "#fff" : "";
+    } else {
+      btnToggleTorch.title = res?.reason || res?.error || "Lanterna indisponível";
+      btnToggleTorch.style.opacity = "0.5";
+    }
   });
 
   // Processamento real ao carregar imagem via arquivo

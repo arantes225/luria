@@ -126,7 +126,10 @@
                 <div id="ecg-hud" class="ecg-hud-overlay">
                   <div class="ecg-hud-topbar">
                     <span class="ecg-hud-target-badge">ALVO: <span class="ecg-hud-target">DI</span></span>
-                    <span class="ecg-hud-counter">CAPTURADAS: <span class="ecg-hud-count">0 de 12</span></span>
+                    <div style="display:inline-flex;align-items:center;gap:6px">
+                      <button id="ecg-btn-torch" class="ecg-btn secondary" type="button" style="display:none;pointer-events:auto;padding:4px 8px;font-size:11px;line-height:1;border-radius:6px">🔦 Lanterna</button>
+                      <span class="ecg-hud-counter">CAPTURADAS: <span class="ecg-hud-count">0 de 12</span></span>
+                    </div>
                   </div>
 
                   <div class="ecg-hud-reticle-wrap">

@@ -740,9 +740,6 @@
     const periodX = findDominantGridPeriod(hpX, 3, Math.min(80, Math.floor(width / 8)));
     const periodY = findDominantGridPeriod(hpY, 3, Math.min(80, Math.floor(height / 8)));
 
-    // Detecção do pulso retangular de calibração (1 mV = 10 mm de altura, 200 ms = 5 mm de largura)
-    const calPulse = detectCalibrationPulse(imageData, effectiveSheetBoundaries);
-
     const gridAxesAgree = periodX.period > 0 && periodY.period > 0 &&
       Math.abs(periodX.period - periodY.period) / Math.max(periodX.period, periodY.period) <= 0.22;
 
@@ -768,6 +765,9 @@
         pixelsPerMmY = periodY.period;
       }
     }
+
+    // Detecção do pulso retangular de calibração passando a grade medida quando disponível
+    const calPulse = detectCalibrationPulse(imageData, effectiveSheetBoundaries, pixelsPerMmY);
 
     // Determinar velocidade do papel (mm/s) e ganho (mm/mV)
     let paperSpeedMmPerSec = null;
@@ -886,7 +886,7 @@
   /**
    * Detecta pulso quadrado de calibração (1 mV) geralmente situado na margem esquerda ou direita das linhas
    */
-  function detectCalibrationPulse(imageData, sheetBoundaries = null) {
+  function detectCalibrationPulse(imageData, sheetBoundaries = null, measuredGridPeriodPx = null) {
     const { width, height, data } = imageData;
     const xMinPaper = sheetBoundaries ? Math.max(0, Math.floor(sheetBoundaries.xMin * width)) : 0;
     const xMaxPaper = sheetBoundaries ? Math.min(width, Math.ceil(sheetBoundaries.xMax * width)) : width;
@@ -895,65 +895,209 @@
 
     const paperW = xMaxPaper - xMinPaper;
     const paperH = yMaxPaper - yMinPaper;
-    const scanMinX = xMinPaper + Math.max(4, Math.floor(paperW * 0.02));
-    const scanMaxX = Math.min(xMaxPaper, scanMinX + Math.floor(paperW * 0.12));
-    let bestPulse = { detected: false, heightPx: 0, widthPx: 0, confidence: 0 };
+    const scanMinX = xMinPaper + Math.max(4, Math.floor(paperW * 0.015));
+    const scanMaxX = Math.min(xMaxPaper, scanMinX + Math.floor(paperW * 0.16));
+    let bestPulse = {
+      detected: false,
+      heightPx: 0,
+      widthPx: 0,
+      confidence: 0,
+      status: "rejected", // "validated" | "geometrically_compatible" | "ambiguous" | "rejected"
+      evidence: {
+        hasVerticalRise: false,
+        hasVerticalFall: false,
+        plateauStability: 0,
+        baselineStability: 0,
+        gridConsistency: 0,
+        isolatedCandidate: true
+      }
+    };
 
-    if (scanMaxX <= scanMinX + 10 || paperH < 50) return bestPulse;
+    if (scanMaxX <= scanMinX + 15 || paperH < 50) return bestPulse;
+
+    const candidates = [];
 
     // Procura degrau vertical abrupto seguido de platô plano horizontal e retorno
     for (let yBand = 0; yBand < 3; yBand++) {
       const yMin = yMinPaper + Math.floor(paperH * (0.05 + yBand * 0.28));
       const yMax = yMinPaper + Math.floor(paperH * (0.28 + yBand * 0.28));
       const trace = [];
+      const density = [];
+
       for (let x = scanMinX; x < scanMaxX; x++) {
-        let sumY = 0, cnt = 0;
+        let sumY = 0, cnt = 0, edgeCount = 0;
+        let prevLuma = null;
         for (let y = yMin; y < yMax; y++) {
           const idx = (y * width + x) * 4;
           const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
+          if (prevLuma !== null && Math.abs(luma - prevLuma) > 60) edgeCount++;
+          prevLuma = luma;
           if (luma < 120 && Math.abs(data[idx] - data[idx + 2]) < 55) {
             sumY += y;
             cnt++;
           }
         }
         trace.push(cnt > 0 ? sumY / cnt : null);
+        density.push({ count: cnt, edges: edgeCount });
       }
 
-      // Analisar se há um platô retangular elevado em relação à base
-      // Um pulso verdadeiro tem: baseLevel -> subida vertical -> platô de 4 a 40 colunas -> descida vertical -> baseLevel
-      const valid = trace.filter(v => v !== null);
-      if (valid.length > 15) {
-        const sorted = [...valid].sort((a, b) => a - b);
-        const topPlateau = sorted[Math.floor(sorted.length * 0.15)];
-        const baseLevel = sorted[Math.floor(sorted.length * 0.85)];
-        const hPx = baseLevel - topPlateau;
-        if (hPx >= 15 && hPx <= (yMax - yMin) * 0.85) {
-          let plateauCols = 0;
-          let baselineCols = 0;
-          for (const v of valid) {
-            if (Math.abs(v - topPlateau) <= 2.5) plateauCols++;
-            if (Math.abs(v - baseLevel) <= 2.5) baselineCols++;
-          }
-          // Exige tanto platô quanto linha de base coexistindo antes/depois do pulso
-          if (plateauCols >= 6 && plateauCols <= 40 && baselineCols >= 8) {
-            // Cálculo objetivo da confiança do pulso retangular:
-            // Avalia nitidez do degrau e fração de colunas de platô + base em relação ao total amostrado
-            const regularity = (plateauCols + baselineCols) / Math.max(1, valid.length);
-            const heightScore = Math.min(1.0, hPx / 20.0);
-            const pulseConfidence = Number(Math.min(0.98, regularity * 0.5 + heightScore * 0.5).toFixed(3));
+      // Analisar perfil temporal de degrau retangular verdadeiro
+      // Um pulso verdadeiro tem: baseLevel -> subida vertical acentuada -> platô horizontal de 6 a 45 colunas -> descida vertical -> baseLevel
+      const validIndices = [];
+      for (let i = 0; i < trace.length; i++) {
+        if (trace[i] !== null) validIndices.push(i);
+      }
+      if (validIndices.length < 20) continue;
 
-            bestPulse = {
-              detected: true,
-              heightPx: hPx,
-              widthPx: plateauCols,
-              confidence: pulseConfidence
-            };
-            break;
+      const validValues = validIndices.map(i => trace[i]);
+      const sorted = [...validValues].sort((a, b) => a - b);
+      const topPlateau = sorted[Math.floor(sorted.length * 0.15)];
+      const baseLevel = sorted[Math.floor(sorted.length * 0.85)];
+      const hPx = baseLevel - topPlateau;
+
+      // Altura mínima exigida para 1 mV (5 mm ou 10 mm no papel)
+      if (hPx < 14 || hPx > (yMax - yMin) * 0.85) continue;
+
+      // Segmentar colunas consecutivas que residem no platô vs na linha de base
+      let longestPlateauRun = 0, currentPlateauRun = 0;
+      let plateauStart = -1, plateauEnd = -1;
+      let curStart = -1;
+
+      for (let idx = 0; idx < trace.length; idx++) {
+        const val = trace[idx];
+        if (val !== null && Math.abs(val - topPlateau) <= 3.0) {
+          if (currentPlateauRun === 0) curStart = idx;
+          currentPlateauRun++;
+          if (currentPlateauRun > longestPlateauRun) {
+            longestPlateauRun = currentPlateauRun;
+            plateauStart = curStart;
+            plateauEnd = idx;
           }
+        } else {
+          currentPlateauRun = 0;
         }
       }
+
+      // Requisitos geométricos para um pulso:
+      // 1. Largura do platô coerente: 6 a 50 colunas (corresponde a 100 ms a 250 ms em resoluções comuns)
+      if (longestPlateauRun < 6 || longestPlateauRun > 50 || plateauStart < 3 || plateauEnd >= trace.length - 3) {
+        continue;
+      }
+
+      // 2. Transições verticais (paredes de subida e descida íngremes nas bordas do platô)
+      // Antes de plateauStart deve haver transição abrupta de baseLevel para topPlateau em poucas colunas (<= 4 colunas)
+      let riseStep = 0;
+      for (let k = Math.max(0, plateauStart - 4); k < plateauStart; k++) {
+        if (trace[k] !== null && trace[k] > topPlateau + hPx * 0.55) {
+          riseStep++;
+        }
+      }
+      let fallStep = 0;
+      for (let k = plateauEnd + 1; k <= Math.min(trace.length - 1, plateauEnd + 4); k++) {
+        if (trace[k] !== null && trace[k] > topPlateau + hPx * 0.55) {
+          fallStep++;
+        }
+      }
+
+      const hasVerticalRise = riseStep >= 1;
+      const hasVerticalFall = fallStep >= 1;
+
+      // 3. Estabilidade do platô (baixo desvio padrão durante o topo)
+      let plateauVar = 0, pCount = 0;
+      for (let k = plateauStart; k <= plateauEnd; k++) {
+        if (trace[k] !== null) {
+          plateauVar += Math.pow(trace[k] - topPlateau, 2);
+          pCount++;
+        }
+      }
+      const plateauStd = pCount > 0 ? Math.sqrt(plateauVar / pCount) : 99;
+      const plateauStability = Math.max(0, 1 - (plateauStd / 3.0));
+
+      // 4. Estabilidade da linha de base antes e após o pulso
+      let baseCount = 0;
+      for (let k = 0; k < trace.length; k++) {
+        if (k < plateauStart - 2 || k > plateauEnd + 2) {
+          if (trace[k] !== null && Math.abs(trace[k] - baseLevel) <= 3.5) baseCount++;
+        }
+      }
+      const baselineStability = Math.min(1.0, baseCount / 10.0);
+
+      // 5. Rejeição de texto denso (caracteres têm múltiplos cruzamentos/bordas verticais e alta densidade)
+      let maxEdgesInPlateau = 0;
+      for (let k = plateauStart; k <= plateauEnd; k++) {
+        if (density[k]?.edges > maxEdgesInPlateau) maxEdgesInPlateau = density[k].edges;
+      }
+      const isTextOrArtifact = maxEdgesInPlateau > 8; // Texto tem muitas descontinuidades
+
+      if (isTextOrArtifact) continue;
+
+      // 6. Consistência com a grade de referência quando informada
+      let gridConsistency = 0.5; // neutro se desconhecido
+      if (measuredGridPeriodPx && Number.isFinite(measuredGridPeriodPx) && measuredGridPeriodPx > 0) {
+        // Pulso padrão de 1 mV tem 10 mm (2 quadradões) ou 5 mm (1 quadradão de 5 mm)
+        const expected10mmPx = measuredGridPeriodPx * 10;
+        const expected5mmPx = measuredGridPeriodPx * 5;
+        const diff10 = Math.abs(hPx - expected10mmPx) / expected10mmPx;
+        const diff5 = Math.abs(hPx - expected5mmPx) / expected5mmPx;
+        const bestDiff = Math.min(diff10, diff5);
+        gridConsistency = bestDiff < 0.25 ? Math.max(0, 1 - bestDiff * 2) : 0.1;
+      }
+
+      // Pontuação composta rigorosa
+      let score = 0;
+      if (hasVerticalRise) score += 0.25;
+      if (hasVerticalFall) score += 0.25;
+      score += plateauStability * 0.20;
+      score += baselineStability * 0.20;
+      score += gridConsistency * 0.10;
+
+      const candConfidence = Number(Math.min(0.98, Math.max(0, score)).toFixed(3));
+      let status = "rejected";
+      if (candConfidence >= 0.70 && hasVerticalRise && hasVerticalFall && plateauStability >= 0.5) {
+        status = (measuredGridPeriodPx && gridConsistency >= 0.6) ? "validated" : "geometrically_compatible";
+      } else if (candConfidence >= 0.45) {
+        status = "ambiguous";
+      }
+
+      candidates.push({
+        detected: candConfidence >= 0.45,
+        heightPx: hPx,
+        widthPx: longestPlateauRun,
+        confidence: candConfidence,
+        status,
+        yBand,
+        evidence: {
+          hasVerticalRise,
+          hasVerticalFall,
+          plateauStability: Number(plateauStability.toFixed(2)),
+          baselineStability: Number(baselineStability.toFixed(2)),
+          gridConsistency: Number(gridConsistency.toFixed(2)),
+          isolatedCandidate: true
+        }
+      });
     }
-    return bestPulse;
+
+    if (candidates.length === 0) return bestPulse;
+
+    // Verificar se há conflitos entre múltiplos candidatos discrepantes
+    if (candidates.length > 1) {
+      const heights = candidates.map(c => c.heightPx);
+      const minH = Math.min(...heights);
+      const maxH = Math.max(...heights);
+      if ((maxH - minH) / maxH > 0.35) {
+        // Múltiplos candidatos com alturas discordantes -> ambíguo/conflitante
+        candidates.forEach(c => {
+          c.evidence.isolatedCandidate = false;
+          c.confidence = Math.min(c.confidence, 0.49);
+          if (c.status === "validated" || c.status === "geometrically_compatible") {
+            c.status = "ambiguous";
+          }
+        });
+      }
+    }
+
+    candidates.sort((a, b) => b.confidence - a.confidence);
+    return candidates[0];
   }
 
   /**
@@ -1621,17 +1765,27 @@
   /**
    * Calcula o vetor de orientação espacial da câmera para guiar o usuário até a próxima derivação
    */
-  function updateSpatialRegistration(state, sheet, leadMap = null) {
+  function updateSpatialRegistration(state, sheet, leadMap = null, frameFeatureProfile = null) {
     const bounds = sheet?.boundaries || sheet;
     const valid = sheet?.found !== false && !sheet?.isCutOff && !sheet?.hasSeverePerspective &&
       bounds && [bounds.xMin, bounds.xMax, bounds.yMin, bounds.yMax].every(Number.isFinite) &&
       bounds.xMax - bounds.xMin >= 0.2 && bounds.yMax - bounds.yMin >= 0.2;
+
     if (!valid) {
+      // Se a folha inteira não está visível (ex.: aproximação / zoom sobre derivação específica),
+      // verificar se mantemos registro por coerência temporal com baixa taxa de incerteza
+      if (state.registered && state.consecutiveUncertainFrames < 4 && frameFeatureProfile) {
+        state.consecutiveUncertainFrames = (state.consecutiveUncertainFrames || 0) + 1;
+        state.isCloseUpMode = true;
+        return state;
+      }
       state.consecutiveUncertainFrames = (state.consecutiveUncertainFrames || 0) + 1;
       state.trackingLost = true;
       state.registered = false;
+      state.isCloseUpMode = false;
       return state;
     }
+
     if (!state.referenceBounds || !state.referenceLeadMap) {
       state.referenceBounds = { ...bounds };
       state.referenceLeadMap = leadMap ? { ...leadMap } : null;
@@ -1646,6 +1800,7 @@
     state.trackingLost = false;
     state.registered = Boolean(state.referenceLeadMap);
     state.consecutiveUncertainFrames = 0;
+    state.isCloseUpMode = false;
     return state;
   }
 
@@ -1687,7 +1842,28 @@
     const dy = targetCenter.y - effectiveCenter.y;
     const dist = Math.hypot(dx, dy);
 
+    // Comparar escala atual vs referência para orientação de aproximação/afastamento
+    const refW = ref.xMax - ref.xMin;
+    const curW = cur.xMax - cur.xMin;
+    const scaleRatio = curW / Math.max(0.1, refW);
+
     if (dist < 0.08) {
+      // Se centralizado, verificar se precisa aproximar para capturar detalhes da derivação
+      if (scaleRatio < 0.85) {
+        return {
+          direction: "approach",
+          dx: Number(dx.toFixed(3)),
+          dy: Number(dy.toFixed(3)),
+          instruction: `Aproxime um pouco o aparelho de ${targetLead}.`
+        };
+      } else if (scaleRatio > 1.35) {
+        return {
+          direction: "retreat",
+          dx: Number(dx.toFixed(3)),
+          dy: Number(dy.toFixed(3)),
+          instruction: `Afaste ligeiramente o aparelho de ${targetLead}.`
+        };
+      }
       return {
         direction: "centered",
         dx: Number(dx.toFixed(3)),
@@ -1698,9 +1874,11 @@
 
     const parts = [];
     if (Math.abs(dx) >= 0.06) {
+      // dx > 0: o alvo está à direita do centro atual -> orientar o usuário a mover o celular para a direita
       parts.push(dx > 0 ? "para a direita" : "para a esquerda");
     }
     if (Math.abs(dy) >= 0.06) {
+      // dy > 0: o alvo está abaixo do centro atual -> orientar o usuário a mover o celular para baixo (desça)
       parts.push(dy > 0 ? "para baixo" : "para cima");
     }
 
@@ -1708,7 +1886,7 @@
       direction: parts.join(" e "),
       dx: Number(dx.toFixed(3)),
       dy: Number(dy.toFixed(3)),
-      instruction: `Vá para ${targetLead}: mova um pouco ${parts.join(" e ")}.`
+      instruction: `Vá para ${targetLead}: mova ${parts.join(" e ")}.`
     };
   }
 
@@ -1825,6 +2003,7 @@
     discoverWaveformTopology,
     computeNavigationGuidance,
     updateSpatialRegistration,
+    detectCalibrationPulse,
     cropSubImageData,
     drawBitmapLabelOnImageData,
     CANONICAL_LEADS,

@@ -771,20 +771,20 @@
       const gain = Number(calOptions.gainMmPerMv);
       const pxPerMmX = Number(calOptions.pixelsPerMmX || sessionCalibration.pixelsPerMmX);
       const pxPerMmY = Number(calOptions.pixelsPerMmY || sessionCalibration.pixelsPerMmY);
-      if (![25, 50].includes(speed) || ![5, 10].includes(gain) || !(pxPerMmX > 0 && pxPerMmY > 0)) {
+      if (![25, 50].includes(speed) || ![5, 10, 20].includes(gain) || !(pxPerMmX > 0 && pxPerMmY > 0)) {
         return { ...sessionCalibration, error: "Escala inválida ou espaçamento da grade não medido. Reenquadre a grade antes de confirmar." };
       }
 
-      sessionCalibration = {
+      sessionCalibration = contracts.normalizeCalibration({
+        ...sessionCalibration,
         paperSpeedMmPerSec: speed,
         gainMmPerMv: gain,
         calibrationSource: calOptions.confirmedByUser ? "user_confirmed" : (sessionCalibration.calibrationSource || "assumed"),
         confirmedByUser: Boolean(calOptions.confirmedByUser),
         pixelsPerMmX: pxPerMmX,
         pixelsPerMmY: pxPerMmY,
-        msPerPixel: 1000 / (speed * pxPerMmX),
-        mvPerPixel: 1 / (gain * pxPerMmY)
-      };
+        gridDetected: Boolean(sessionCalibration.gridDetected)
+      });
 
       const extractor = global.LuriaEcgSignalExtractor;
       capturedLeads.forEach(leadInfo => {
@@ -795,6 +795,7 @@
             return;
           }
           leadInfo.extractedSignal = recalculated.signal;
+          leadInfo.extraction = recalculated; // sincronizar objeto de extração com nova calibração
           leadInfo.calibration = recalculated.calibration;
           leadInfo.durationSeconds = recalculated.recoveredDurationSeconds;
           leadInfo.samplingRateHz = recalculated.effectiveResolutionHz;
@@ -967,6 +968,18 @@
       getSessionStructuredPackage,
       confirmExtractionAndEnableAI,
       getCapturedLeads: () => Array.from(capturedLeads.values()),
+      registerCapturedLeadForTest: (leadName, extraction) => {
+        capturedLeads.set(leadName, {
+          lead: leadName,
+          captured: true,
+          extractedSignal: extraction.signal,
+          extraction,
+          audit: extraction.audit,
+          calibration: extraction.calibration,
+          durationSeconds: extraction.recoveredDurationSeconds,
+          effectiveResolutionHz: extraction.effectiveResolutionHz
+        });
+      },
       getCurrentStage: () => currentStage,
       setMode: m => { mode = m; },
       updateHudProgress,

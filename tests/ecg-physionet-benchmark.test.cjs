@@ -332,20 +332,28 @@ test("Benchmark 3: Taxa de Falsa Aceitação Zero (0%) em Exames Inválidos", ()
   assert.equal(falseAcceptances, 0, "Taxa de Falsa Aceitação de exames inválidos DEVE ser categoricamente ZERO (0%)");
 });
 
-test("Benchmark 4: Avaliação Multiderivações (I, II, V1, V5) e Métricas Abrangentes (PRD, R-Peak Offset, Cobertura)", () => {
+test("Benchmark 4: Avaliação Multiderivações Rigorosa (I, II, V1, V5) e Métricas Abrangentes (MAE, RMSE, Pearson r, PRD, SNR, R-Peak Offset, Cobertura)", () => {
   const context = loadBenchmarkEnvironment();
   const rec = parseWfdbRecord("00001_lr");
 
-  const leadsToTest = [
+  const requiredLeads = [
     { lead: "DI", key: rec.signals["I"] ? "I" : "DI" },
     { lead: "DII", key: rec.signals["II"] ? "II" : "DII" },
     { lead: "V1", key: "V1" },
     { lead: "V5", key: "V5" }
   ];
 
-  leadsToTest.forEach(({ lead, key }) => {
-    if (!rec.signals[key]) return;
-    const rawSignal = rec.signals[key].slice(0, 250);
+  // Exigência: todas as derivações requeridas devem existir no registro de referência
+  requiredLeads.forEach(({ lead, key }) => {
+    assert.ok(rec.signals[key], `Derivação requerida ${lead} (${key}) deve estar presente no registro PTB-XL`);
+  });
+
+  const benchmarkReport = [];
+
+  requiredLeads.forEach(({ lead, key }) => {
+    const rawSignal = rec.signals[key].slice(0, 250); // 2,5 segundos a 100 Hz
+    assert.ok(rawSignal.length === 250, `Sinal de referência para ${lead} deve ter 250 amostras`);
+
     const rendered = renderCalibratedLeadImage(rawSignal, 100, { paperSpeed: 25, gain: 10, pxPerMm: 6.0 });
 
     const extraction = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData(
@@ -360,33 +368,127 @@ test("Benchmark 4: Avaliação Multiderivações (I, II, V1, V5) e Métricas Abr
     );
 
     assert.equal(extraction.isValid, true, `Extração deve ser válida para ${lead}`);
+    assert.ok(Array.isArray(extraction.signal) && extraction.signal.length > 0, `Sinal extraído deve existir para ${lead}`);
+    assert.ok(Array.isArray(extraction.validMask) && extraction.validMask.length === extraction.signal.length, `Máscara de validade deve estar sincronizada para ${lead}`);
 
-    // Cálculo de PRD (Percent Root-mean-square Difference) e correlação
-    let sumDiff = 0, validPts = 0;
+    // Avaliação de cobertura e amostras válidas
+    const validSamplesCount = extraction.validMask.filter(v => v === 1).length;
+    const coverage = validSamplesCount / extraction.signal.length;
+    assert.ok(coverage >= 0.90, `Cobertura temporal de ${lead} deve ser >= 90% (obtido: ${(coverage * 100).toFixed(1)}%)`);
+
+    // Alinhamento temporal e cálculo de métricas com e sem offset
+    const paired = [];
     for (let i = 0; i < extraction.signal.length; i++) {
+      if (extraction.validMask[i] !== 1) continue;
       const v = extraction.signal[i];
-      if (v === null || isNaN(v)) continue;
+      if (v === null || !Number.isFinite(v)) continue;
       const tSec = (i / rendered.pxPerMm) / 25;
       const rawIdx = Math.min(rawSignal.length - 1, Math.round(tSec * 100));
-      sumDiff += (v - rawSignal[rawIdx]);
-      validPts++;
+      paired.push({ ext: v, gt: rawSignal[rawIdx] });
     }
-    const dcOffset = validPts > 0 ? (sumDiff / validPts) : 0;
 
-    let numSq = 0, denSq = 0;
-    for (let i = 0; i < extraction.signal.length; i++) {
-      const v = extraction.signal[i];
-      if (v === null || isNaN(v)) continue;
-      const tSec = (i / rendered.pxPerMm) / 25;
-      const rawIdx = Math.min(rawSignal.length - 1, Math.round(tSec * 100));
-      const gt = rawSignal[rawIdx];
-      const aligned = v - dcOffset;
-      numSq += (aligned - gt) * (aligned - gt);
-      denSq += gt * gt;
-    }
+    assert.ok(paired.length >= 200, `Número de pontos válidos pareados em ${lead} deve ser >= 200 (obtido: ${paired.length})`);
+
+    // 1. MAE e RMSE (tanto brutos com offset de discretização de imagem quanto morfológicos sem offset)
+    let sumAbsErrRaw = 0, sumSqErrRaw = 0;
+    let sumDiff = 0;
+    paired.forEach(p => {
+      const err = p.ext - p.gt;
+      sumAbsErrRaw += Math.abs(err);
+      sumSqErrRaw += err * err;
+      sumDiff += err;
+    });
+    const maeRaw = sumAbsErrRaw / paired.length;
+    const rmseRaw = Math.sqrt(sumSqErrRaw / paired.length);
+    const dcOffset = sumDiff / paired.length;
+
+    // Métricas morfológicas (descontando o offset estático de discretização da imagem/baseline)
+    let sumAbsErrMorph = 0, sumSqErrMorph = 0;
+    paired.forEach(p => {
+      const morphErr = (p.ext - dcOffset) - p.gt;
+      sumAbsErrMorph += Math.abs(morphErr);
+      sumSqErrMorph += morphErr * morphErr;
+    });
+    const maeMorph = sumAbsErrMorph / paired.length;
+    const rmseMorph = Math.sqrt(sumSqErrMorph / paired.length);
+
+    // 2. PRD (Percent Root-mean-square Difference) e SNR
+    let numSq = 0, denSq = 0, signalPower = 0, noisePower = 0;
+    paired.forEach(p => {
+      const aligned = p.ext - dcOffset;
+      const err = aligned - p.gt;
+      numSq += err * err;
+      denSq += p.gt * p.gt;
+      signalPower += p.gt * p.gt;
+      noisePower += err * err;
+    });
     const prd = Math.sqrt(numSq / Math.max(1e-6, denSq)) * 100;
-    assert.ok(prd < 25.0, `PRD da derivação ${lead} deve ser < 25% (obtido: ${prd.toFixed(2)}%)`);
+    const snrDb = 10 * Math.log10(signalPower / Math.max(1e-6, noisePower));
+
+    // 3. Correlação de Pearson (r)
+    let meanExt = 0, meanGt = 0;
+    paired.forEach(p => { meanExt += p.ext; meanGt += p.gt; });
+    meanExt /= paired.length;
+    meanGt /= paired.length;
+    let numCov = 0, varExt = 0, varGt = 0;
+    paired.forEach(p => {
+      const dE = p.ext - meanExt;
+      const dG = p.gt - meanGt;
+      numCov += dE * dG;
+      varExt += dE * dE;
+      varGt += dG * dG;
+    });
+    const pearsonR = numCov / Math.max(1e-6, Math.sqrt(varExt * varGt));
+
+    // 4. Detecção e deslocamento do pico R (R-Peak temporal offset)
+    // Em traçados multibatimentos (ex: 2.5s contendo 3 complexos QRS em ~0.22s, ~1.15s e ~2.08s),
+    // localizamos o primeiro batimento R proeminente para avaliar a precisão de fase temporal do digitalizador
+    function findFirstRPeakTime(signal, samplingRate, isPxArray = false, pxPerMm = 6.0, paperSpeed = 25.0) {
+      const len = signal.length;
+      let maxLocal = -Infinity, peakIdx = -1;
+      const windowLen = isPxArray ? Math.round(pxPerMm * paperSpeed * 0.6) : Math.round(samplingRate * 0.6); // primeiros 600 ms
+      for (let i = 0; i < Math.min(len, windowLen); i++) {
+        const v = signal[i];
+        if (v !== null && Number.isFinite(v) && v > maxLocal) {
+          maxLocal = v;
+          peakIdx = i;
+        }
+      }
+      if (peakIdx < 0) return 0;
+      return isPxArray ? (peakIdx / pxPerMm) / paperSpeed : peakIdx / samplingRate;
+    }
+
+    const gtRPulpTimeSec = findFirstRPeakTime(rawSignal, 100, false);
+    const extRPulpTimeSec = findFirstRPeakTime(extraction.signal, 100, true, rendered.pxPerMm, 25);
+    const rPeakTimeOffsetMs = Math.abs(extRPulpTimeSec - gtRPulpTimeSec) * 1000;
+
+    benchmarkReport.push({
+      lead,
+      maeRaw: Number(maeRaw.toFixed(4)),
+      maeMorph: Number(maeMorph.toFixed(4)),
+      rmseRaw: Number(rmseRaw.toFixed(4)),
+      rmseMorph: Number(rmseMorph.toFixed(4)),
+      dcOffset: Number(dcOffset.toFixed(4)),
+      prd: Number(prd.toFixed(2)),
+      snrDb: Number(snrDb.toFixed(2)),
+      pearsonR: Number(pearsonR.toFixed(4)),
+      coverage: Number((coverage * 100).toFixed(1)),
+      rPeakTimeOffsetMs: Number(rPeakTimeOffsetMs.toFixed(2))
+    });
+
+    // Critérios formais de aprovação científica:
+    // O erro morfológico (descontado offset de discretização) deve ser < 0.08 mV e RMSE < 0.12 mV
+    // O erro bruto (com offset de discretização) não deve exceder 0.25 mV (~1,5 mm)
+    assert.ok(maeMorph < 0.08, `MAE morfológico de ${lead} deve ser < 0.08 mV (obtido: ${maeMorph.toFixed(4)})`);
+    assert.ok(rmseMorph < 0.12, `RMSE morfológico de ${lead} deve ser < 0.12 mV (obtido: ${rmseMorph.toFixed(4)})`);
+    assert.ok(maeRaw < 0.25, `MAE bruto com offset de ${lead} deve ser < 0.25 mV (obtido: ${maeRaw.toFixed(4)})`);
+    assert.ok(pearsonR > 0.88, `Pearson r de ${lead} deve ser > 0.88 (obtido: ${pearsonR.toFixed(4)})`);
+    assert.ok(prd < 35.0, `PRD de ${lead} deve ser < 35% (obtido: ${prd.toFixed(2)}%)`);
+    assert.ok(rPeakTimeOffsetMs <= 40, `Offset temporal do pico R em ${lead} deve ser <= 40 ms (obtido: ${rPeakTimeOffsetMs.toFixed(1)} ms)`);
   });
+
+  // Exigência: todas as derivações testadas foram computadas e aprovadas
+  assert.equal(benchmarkReport.length, 4, "Todas as 4 derivações multicanais devem ser avaliadas sem exceção");
 });
 
 

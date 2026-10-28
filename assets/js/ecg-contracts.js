@@ -58,32 +58,69 @@
     const pulseDetected = Boolean(raw.calibrationPulse?.detected || raw.pulseDetected);
     const pulseConfidence = Number(raw.calibrationPulse?.confidence || raw.pulseConfidence || 0);
 
-    let paperSpeedMmPerSec = Number(raw.paperSpeedMmPerSec) || null;
-    let gainMmPerMv = Number(raw.gainMmPerMv) || null;
-    let pixelsPerMmX = Number(raw.pixelsPerMmX || raw.pixelsPerMm) || null;
-    let pixelsPerMmY = Number(raw.pixelsPerMmY || raw.pixelsPerMm) || null;
+    const rawSpeed = Number(raw.paperSpeedMmPerSec);
+    const rawGain = Number(raw.gainMmPerMv);
+    const rawPxX = Number(raw.pixelsPerMmX || raw.pixelsPerMm);
+    const rawPxY = Number(raw.pixelsPerMmY || raw.pixelsPerMm);
 
+    const hasValidSpeed = Number.isFinite(rawSpeed) && [25, 50].includes(rawSpeed);
+    const hasValidGain = Number.isFinite(rawGain) && [5, 10, 20].includes(rawGain);
+    const hasValidPxX = Number.isFinite(rawPxX) && rawPxX > 0.5 && rawPxX < 500;
+    const hasValidPxY = Number.isFinite(rawPxY) && rawPxY > 0.5 && rawPxY < 500;
+
+    let paperSpeedMmPerSec = hasValidSpeed ? rawSpeed : null;
+    let gainMmPerMv = hasValidGain ? rawGain : null;
+    let pixelsPerMmX = hasValidPxX ? rawPxX : null;
+    let pixelsPerMmY = hasValidPxY ? rawPxY : null;
+
+    // Diferenciação de origens individuais
+    const gridSpacingSource = (gridDetected && hasValidPxX && hasValidPxY) ? "measured" : "unknown";
+
+    let speedSource = "unknown";
+    if (raw.speedSource === "measured_pulse" && pulseDetected && pulseConfidence >= 0.70 && hasValidSpeed) {
+      speedSource = "measured_pulse";
+    } else if (confirmedByUser && hasValidSpeed) {
+      speedSource = "user_confirmed";
+    } else if (raw.speedSource === "assumed_standard" || (gridDetected && hasValidSpeed)) {
+      speedSource = "assumed_standard";
+    }
+
+    let gainSource = "unknown";
+    if (raw.gainSource === "measured_pulse" && pulseDetected && pulseConfidence >= 0.70 && hasValidGain) {
+      gainSource = "measured_pulse";
+    } else if (confirmedByUser && hasValidGain) {
+      gainSource = "user_confirmed";
+    } else if (raw.gainSource === "assumed_standard" || (gridDetected && hasValidGain)) {
+      gainSource = "assumed_standard";
+    }
+
+    // Origem global da calibração
     let calibrationSource = "unknown";
-    if (confirmedByUser) {
+    if (raw.calibrationSource === "conflicting" || raw.isConflicting) {
+      calibrationSource = "conflicting";
+    } else if (confirmedByUser && hasValidSpeed && hasValidGain && hasValidPxX && hasValidPxY) {
       calibrationSource = "user_confirmed";
-    } else if (gridDetected && pulseDetected && pulseConfidence >= 0.70) {
+    } else if (gridSpacingSource === "measured" && speedSource === "measured_pulse" && gainSource === "measured_pulse") {
       calibrationSource = "measured";
-    } else if (gridDetected || raw.calibrationSource === "assumed") {
+    } else if (gridSpacingSource === "measured" || raw.calibrationSource === "assumed") {
       calibrationSource = "assumed";
     }
 
-    const gridSpacingSource = gridDetected ? "measured" : "unknown";
-    const speedSource = (pulseDetected && pulseConfidence >= 0.70) ? "measured_pulse"
-      : (confirmedByUser ? "user_confirmed" : (gridDetected ? "assumed_standard" : "unknown"));
-    const gainSource = (pulseDetected && pulseConfidence >= 0.70) ? "measured_pulse"
-      : (confirmedByUser ? "user_confirmed" : (gridDetected ? "assumed_standard" : "unknown"));
+    const msPerPixel = (hasValidPxX && hasValidSpeed) ? Number((1000 / (paperSpeedMmPerSec * pixelsPerMmX)).toFixed(4)) : null;
+    const mvPerPixel = (hasValidPxY && hasValidGain) ? Number((1 / (gainMmPerMv * pixelsPerMmY)).toFixed(5)) : null;
+    const pixelsPerMv = (mvPerPixel && mvPerPixel > 0) ? Number((1 / mvPerPixel).toFixed(2)) : null;
 
-    const msPerPixel = (pixelsPerMmX && paperSpeedMmPerSec) ? Number((1000 / (paperSpeedMmPerSec * pixelsPerMmX)).toFixed(4)) : null;
-    const mvPerPixel = (pixelsPerMmY && gainMmPerMv) ? Number((1 / (gainMmPerMv * pixelsPerMmY)).toFixed(5)) : null;
-    const pixelsPerMv = mvPerPixel ? Number((1 / mvPerPixel).toFixed(2)) : null;
+    // Para permitir medições físicas:
+    // Deve haver escala geométrica comprovada (pixelsPerMmX e pixelsPerMmY válidos e positivos),
+    // velocidade e ganho válidos, msPerPixel e mvPerPixel calculáveis,
+    // e a calibração deve ser 'measured' ou 'user_confirmed' (não 'assumed', 'unknown' ou 'conflicting').
+    const measurementsAllowed = (calibrationSource === "measured" || calibrationSource === "user_confirmed") &&
+      hasValidPxX && hasValidPxY && hasValidSpeed && hasValidGain &&
+      Number.isFinite(msPerPixel) && msPerPixel > 0 &&
+      Number.isFinite(mvPerPixel) && mvPerPixel > 0;
 
     return {
-      gridDetected,
+      gridDetected: gridSpacingSource === "measured",
       pixelsPerMmX,
       pixelsPerMmY,
       paperSpeedMmPerSec,
@@ -96,8 +133,8 @@
       gridSpacingSource,
       speedSource,
       gainSource,
-      confirmedByUser,
-      measurementsAllowed: calibrationSource === "measured" || calibrationSource === "user_confirmed"
+      confirmedByUser: confirmedByUser && calibrationSource === "user_confirmed",
+      measurementsAllowed
     };
   }
 
