@@ -1249,9 +1249,12 @@
         boundaries: sheet.boundaries,
         detectedLayout: null,
         leads: {},
+        candidateRegions: layoutEvaluation.candidateRegions || {},
+        waveformCandidateCount: Number(layoutEvaluation.validWaveformCells || 0),
         leadIdentities: layoutEvaluation.leadIdentities || {},
         cellIdentities: layoutEvaluation.cellIdentities || {},
         layoutConfidence: layoutEvaluation.layoutConfidence,
+        sheet,
         quality,
         calibration,
         gridCalibration: calibration,
@@ -1272,6 +1275,8 @@
       boundaries: sheet.boundaries,
       detectedLayout: layoutEvaluation.detectedLayout,
       leads: leadsMap,
+      candidateRegions: layoutEvaluation.candidateRegions || {},
+      waveformCandidateCount: Number(layoutEvaluation.validWaveformCells || 0),
       leadIdentities: layoutEvaluation.leadIdentities || {},
       cellIdentities: layoutEvaluation.cellIdentities || {},
       layoutConfidence: layoutEvaluation.layoutConfidence,
@@ -1346,6 +1351,10 @@
     const cellIdentities = {};
     const labelCounts = {};
     const dynamicLeadsMap = {};
+    // Geometrically located traces are candidates, never named/verified leads.
+    // Preserve them even if the document OCR conflicts, so photos can be
+    // reviewed instead of returning the misleading "nothing found".
+    const candidateRegions = {};
     let validWaveformCells = 0;
     let ocrConfirmedCount = 0;
     let labelMismatchCount = 0;
@@ -1380,6 +1389,17 @@
 
       if (sigRes.isValid) {
         validWaveformCells++;
+        const slot = cell.expectedLead;
+        if (slot && !candidateRegions[slot]) {
+          candidateRegions[slot] = {
+            row: cell.row, col: cell.col, xMin: cell.xMin, xMax: cell.xMax,
+            yMin: cell.yMin, yMax: cell.yMax, expectedInTemplate: slot,
+            evidence: "unassigned_waveform_candidate",
+            // This text is diagnostic only; never use it to automatically
+            // rename the candidate into a confirmed canonical lead.
+            observedLabel: ocrRes.recognized ? ocrRes.lead : null
+          };
+        }
       }
 
       let assignedLead = null;
@@ -1481,6 +1501,8 @@
         isValidECG: false,
         confidence: 0.15,
         detectedLayout: null,
+        candidateRegions,
+        validWaveformCells,
         layoutConfidence: "rejected_duplicate_labels",
         recognizedLabels,
         leadIdentities,
@@ -1497,6 +1519,8 @@
         isValidECG: false,
         confidence: Number((validWaveformCells / 12).toFixed(2)),
         detectedLayout: null,
+        candidateRegions,
+        validWaveformCells,
         layoutConfidence: "rejected_no_ecg_waveforms",
         recognizedLabels,
         leadIdentities,
@@ -1516,6 +1540,8 @@
         isValidECG: false,
         confidence: 0.35,
         detectedLayout: null,
+        candidateRegions,
+        validWaveformCells,
         layoutConfidence: "rejected_ambiguous_layout",
         recognizedLabels,
         leadIdentities,
@@ -1535,12 +1561,15 @@
       isPositionalHypothesisOnly: ocrConfirmedCount === 0,
       ocrConfirmedCount,
       validWaveformCells,
+      candidateRegions,
       leads: dynamicLeadsMap,
       rhythmStrips
     };
 
     return {
       isValidECG: true,
+      candidateRegions,
+      validWaveformCells,
       confidence: Number(Math.min(0.99, (validWaveformCells / 12) * 0.7 + (ocrConfirmedCount / 12) * 0.3).toFixed(3)),
       detectedLayout,
       layoutConfidence,
