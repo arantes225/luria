@@ -5,6 +5,7 @@ const path = require('node:path');
 const vm = require('node:vm');
 const { JSDOM } = require('jsdom');
 const core = require('../assets/js/curriculo-core.js');
+const pdf = require('../assets/js/curriculo-pdf.js');
 const root = path.resolve(__dirname, '..');
 const sandbox = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root,'assets/js/curriculo-rubricas.js'),'utf8'),sandbox);
@@ -148,7 +149,7 @@ function boot(userId='user-a', storage) {
   const dom = new JSDOM(html,{url:'https://luria.test/aplicar/curriculo/',runScripts:'outside-only'});
   const w = dom.window;
   if (storage) w.localStorage.setItem(`luria:curriculo:v1:${userId}`,storage);
-  for (const script of ['curriculo-core','curriculo-rubricas','curriculo']) w.eval(fs.readFileSync(path.join(root,`assets/js/${script}.js`),'utf8'));
+  for (const script of ['curriculo-core','curriculo-rubricas','curriculo-pdf','curriculo']) w.eval(fs.readFileSync(path.join(root,`assets/js/${script}.js`),'utf8'));
   w.dispatchEvent(new w.CustomEvent('docmap:ready',{detail:{user:{id:userId}}}));
   return w;
 }
@@ -195,4 +196,38 @@ test('pending institutions never display invented grades and verified coverage i
   w.document.getElementById('cv-exam').dispatchEvent(new w.Event('change'));
   assert.match(w.document.getElementById('cv-score').textContent,/não possui análise curricular/);
   w.close();
+});
+
+
+test('currículo oferece importação PDF e exportação legível, mantendo XML e JSON', () => {
+  const w = boot();
+  const doc = w.document;
+  for (const id of ['cv-import-pdf','cv-pdf','cv-open-pdf','cv-remove-pdf','cv-export-pdf','cv-import','cv-lattes','cv-export']) {
+    assert.ok(doc.getElementById(id), `Controle ausente: ${id}`);
+  }
+  assert.match(doc.getElementById('cv-pdf').accept, /application\/pdf/);
+  assert.match(doc.getElementById('cv-export-pdf').textContent, /PDF/);
+  assert.match(doc.getElementById('cv-export').textContent, /JSON/);
+  w.close();
+});
+
+test('PDF heurístico só sugere atividades datadas sob uma seção identificável', () => {
+  const lines = [
+    'CURRÍCULO LATTES',
+    'Formação acadêmica/titulação',
+    '2019 - 2025 Graduação em Medicina pela Faculdade Exemplo.',
+    'Artigos completos publicados em periódicos',
+    '1. Maria Silva. Estudo de prevenção cardiovascular. Revista de Medicina, 2024.',
+    'Telefone: (61) 99999-9999',
+    '2024',
+    'Monitoria acadêmica',
+    '2023 - 2024 Monitoria de Clínica Médica na graduação.',
+    'Página 1 de 5'
+  ];
+  const items = pdf.parseLines(lines, (()=>{let n=0;return ()=>String(++n);})());
+  assert.equal(items.length, 3);
+  assert.deepEqual(items.map(item => item.category), ['formacao','artigo','monitoria']);
+  assert.deepEqual(items.map(item => item.year), ['2025','2024','2024']);
+  assert.ok(items.every(item => !item.reviewed && item.source === 'pdf'));
+  assert.equal(pdf.parseLines(['Currículo', '2025 - 2026 nome pessoa'], ()=>'test').length, 0);
 });
