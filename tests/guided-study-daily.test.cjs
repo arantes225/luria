@@ -20,8 +20,8 @@ test("estudo novo encerra com Feynman e revisão começa por diagnóstico Feynma
   const review=build([{kind:"subject_review",title:"Revisão de Sepse",activity_date:"2026-10-28"}])(time);
   assert.equal(normal.length,3);
   assert.equal(review.length,3);
-  assert.equal(normal[2].href.startsWith("/feynman/"),true);
-  assert.equal(review[0].href.startsWith("/feynman/"),true);
+  assert.equal(normal[2].href.startsWith("/professor-alex/?mode=feynman"),true);
+  assert.equal(review[0].href.startsWith("/professor-alex/?mode=feynman"),true);
   assert.match(review[0].href,/Sepse/);
   assert.match(review[2].href,/resolver-questoes/);
   assert.equal(normal.reduce((n,step)=>n+step.min,0),time===999?90:time);
@@ -42,8 +42,8 @@ test("o motor temático também diferencia estudo e revisão",async()=>{
  const build=vm.runInNewContext(source+"\ntopicStudySteps",ctx);
  const fresh=await build("Sepse",30,"new");
  const review=await build("Sepse",30,"review");
- assert.equal(fresh.steps[2].href.startsWith("/feynman/"),true);
- assert.equal(review.steps[0].href.startsWith("/feynman/"),true);
+ assert.equal(fresh.steps[2].href.startsWith("/professor-alex/?mode=feynman"),true);
+ assert.equal(review.steps[0].href.startsWith("/professor-alex/?mode=feynman"),true);
  assert.equal(review.steps[1].href,"/apostilas/sepse/");
  assert.match(review.steps[2].href,/resolver-questoes/);
  assert.equal(review.mode,"review");
@@ -72,6 +72,8 @@ test("a etapa Feynman só é concluída após relatório, mesmo tema e data", ()
  assert.match(feynman,/normalize\(expectedTopic\) === normalize\(state\.topic\)/);
  assert.match(feynman,/sameDay/);
  assert.match(feynman,/luria:guided-study-diagnostic/);
+ assert.ok(command.includes("/professor-alex/?mode=feynman"));
+ assert.ok(!command.includes('href:"/feynman/'));
  assert.match(feynman,/completeActiveStep\?\.\("feynman-assessed"\)/);
  assert.match(session,/Aprender\. Praticar\. Ensinar\./);
  assert.match(sessionController,/Diagnóstico Feynman · Onde focar sua revisão/);
