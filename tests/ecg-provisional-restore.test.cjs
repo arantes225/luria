@@ -111,5 +111,6 @@ test("UI marks positional names as hypotheses and requires an explicit per-lead 
   assert.match(ui,/hipótese pela posição/);
   assert.match(ui,/Confirmar como/);
   assert.match(ui,/rótulo não foi confirmado automaticamente/);
-  assert.match(ui,/if \(!leadInfo\.captured\) return/);
+  assert.match(ui,/if \(!leadInfo\.captured && !leadInfo\.imageCropUrl\) return/);
+  assert.match(ui,/Extração bloqueada — recapture esta região/);
 });
