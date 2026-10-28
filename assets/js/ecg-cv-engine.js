@@ -1507,7 +1507,10 @@
     }
 
     // 3. Se houve troca parcial de derivações (alguns rótulos trocados, mas nem todas as 12 derivações possuem rótulo OCR legível para desambiguar o restante)
-    if (labelMismatchCount > 0 && ocrConfirmedCount < validWaveformCells) {
+    // A label mismatch is never proof of a safely supported reordered layout.
+    // Reject even with 12 OCR matches: a wrongly cropped neighbouring label can
+    // make aVF appear in the position expected for aVR.
+    if (labelMismatchCount > 0) {
       anomalies.push({ code: "ambiguous_swapped_leads_without_full_ocr" });
       return {
         isValidECG: false,
