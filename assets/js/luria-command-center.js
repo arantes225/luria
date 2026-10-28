@@ -97,7 +97,7 @@ function sessionSteps(minutes){
  const feynmanMin=5,studyMin=Math.max(5,Math.floor((budget-feynmanMin)*.55)),practiceMin=budget-studyMin-feynmanMin;
  const study={title:topic?"Revisar: "+topic:"Revisar o tema de hoje",detail:"Priorize as lacunas apontadas pelo Alex e consulte o material apenas onde precisar.",min:studyMin,href:lesson?studyActivityHref(lesson):"/apostilas/"};
  const practice={title:"Praticar com questões",detail:"Verifique se corrigiu as lacunas identificadas.",min:practiceMin,href:"/resolver-questoes/?daily=1"};
- const diagnostic={title:"Feynman inicial · O que você lembra?",detail:"Explique o tema sem consultar e receba um diagnóstico antes de revisar.",min:feynmanMin,href:"/feynman/"+(topic?"?topic="+encodeURIComponent(topic):"")};
+ const diagnostic={title:"Feynman inicial · O que você lembra?",detail:"Explique o tema sem consultar e receba um diagnóstico antes de revisar.",min:feynmanMin,href:"/professor-alex/?mode=feynman"+(topic?"&topic="+encodeURIComponent(topic):"")};
  if(isReviewActivity(lesson))return [diagnostic,study,practice];
  return [
   {...study,title:topic?"Aprender: "+topic:"Aprender o tema de hoje",detail:topic?"Estude o material previsto no cronograma.":"Escolha uma apostila ou anotação para estudar."},
@@ -156,7 +156,7 @@ async function topicStudySteps(topic,minutes,mode="new"){
  const practice=data?.question_set_id
   ?{title:`Questões de ${subject}`,detail:`${Number(data.question_count)||0} questões sorteadas agora do banco LURIA.`,min:practiceMin,href:"/resolver-questoes/?set_id="+encodeURIComponent(data.question_set_id)}
   :{title:`Praticar ${subject}`,detail:"Abra a biblioteca e escolha questões deste assunto.",min:practiceMin,href:"/questoes-simulados/"};
- const feynman={title:review?`Feynman inicial · ${subject}`:`Ensinar ${subject} ao Alex · Método Feynman`,detail:review?"Sem consultar, explique o que lembra e descubra o que precisa revisar.":"Explique sem consultar, responda perguntas e descubra lacunas.",min:feynmanMin,href:"/feynman/?topic="+encodeURIComponent(subject)};
+ const feynman={title:review?`Feynman inicial · ${subject}`:`Ensinar ${subject} ao Alex · Método Feynman`,detail:review?"Sem consultar, explique o que lembra e descubra o que precisa revisar.":"Explique sem consultar, responda perguntas e descubra lacunas.",min:feynmanMin,href:"/professor-alex/?mode=feynman&topic="+encodeURIComponent(subject)};
  if(review) {
   study.detail=(booklet?.title?`Material: ${booklet.title}. `:"")+"Reforce os pontos identificados no diagnóstico Feynman.";
   practice.detail+=" Refaça conceitos que ainda não dominou.";
