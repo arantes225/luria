@@ -96,7 +96,7 @@ body[data-page="aprender"].luria-reader-paged .luria-reader-shell > .book-main {
   margin: 0 !important;
   padding: 32px clamp(20px, 4vw, 44px) !important;
   overflow-x: auto !important;
-  overflow-y: hidden !important;
+  overflow-y: auto !important; /* Permite rolagem pontual em diagramas indivisíveis. */
   scrollbar-width: none;
   background: linear-gradient(150deg,
     color-mix(in srgb, var(--accent) 2%, var(--surface)),
@@ -151,6 +151,9 @@ body[data-page="aprender"].luria-reader-paged .book-main .book-section p {
 body[data-page="aprender"].luria-reader-paged .book-main .book-section :is(p,li) {
   font-size: 16px !important;
   line-height: 1.86 !important;
+}
+body[data-page="aprender"].luria-reader-paged .book-main .book-section :is(p,li) strong {
+  font-weight: 650 !important;
 }
 body[data-page="aprender"].luria-reader-paged .book-main .book-section li {
   break-inside: auto;
