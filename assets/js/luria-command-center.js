@@ -81,15 +81,28 @@ function activityMinutes(activity){
 function studyDay(date=new Date()){return date.toLocaleDateString("sv-SE")}
 function studyOwner(){return String(window.docmapUser?.id||"")}
 function studyDailyKey(){const owner=studyOwner();return owner?"luria:guided-study-daily:"+owner+":"+studyDay():null}
+function activityTopic(activity){
+ const raw=String(activity?.theme||activity?.title||activity?.materia||activity?.area||"").trim();
+ return isReviewActivity(activity)?raw.replace(/^(?:revis[aã]o(?:\\s+(?:de|do|da))?|revisar)\\s+/i,"").trim()||raw:raw;
+}
+function isReviewActivity(activity){
+ const kind=String(activity?.kind||"").toLowerCase();
+ const title=String(activity?.title||"").trim();
+ return kind==="subject_review"||/^(?:revis[aã]o|revisar)\\b/i.test(title);
+}
 function sessionSteps(minutes){
  const acts=todayActivities(),lesson=acts.find(a=>["lesson","subject_review"].includes(String(a?.kind||"")))||acts[0];
- const topic=String(lesson?.title||lesson?.theme||lesson?.materia||"").trim();
+ const topic=activityTopic(lesson);
  const budget=minutes===999?Math.max(90,acts.reduce((sum,a)=>sum+activityMinutes(a),0)):Math.max(15,Number(minutes)||30);
- const third=5,first=Math.max(5,Math.floor((budget-third)*.55)),second=budget-first-third;
+ const feynmanMin=5,studyMin=Math.max(5,Math.floor((budget-feynmanMin)*.55)),practiceMin=budget-studyMin-feynmanMin;
+ const study={title:topic?"Revisar: "+topic:"Revisar o tema de hoje",detail:"Priorize as lacunas apontadas pelo Alex e consulte o material apenas onde precisar.",min:studyMin,href:lesson?studyActivityHref(lesson):"/apostilas/"};
+ const practice={title:"Praticar com questões",detail:"Verifique se corrigiu as lacunas identificadas.",min:practiceMin,href:"/resolver-questoes/?daily=1"};
+ const diagnostic={title:"Feynman inicial · O que você lembra?",detail:"Explique o tema sem consultar e receba um diagnóstico antes de revisar.",min:feynmanMin,href:"/feynman/"+(topic?"?topic="+encodeURIComponent(topic):"")};
+ if(isReviewActivity(lesson))return [diagnostic,study,practice];
  return [
-  {title:topic?"Aprender: "+topic:"Aprender o tema de hoje",detail:topic?"Retome o conteúdo previsto no cronograma.":"Escolha uma apostila ou anotação para estudar.",min:first,href:lesson?studyActivityHref(lesson):"/apostilas/"},
-  {title:"Praticar com questões",detail:"Teste o que entendeu e identifique lacunas antes de explicar.",min:second,href:"/resolver-questoes/?daily=1"},
-  {title:"Ensinar ao Alex · Método Feynman",detail:"Explique o tema sem consultar, responda perguntas e receba uma avaliação.",min:third,href:"/feynman/"+(topic?"?topic="+encodeURIComponent(topic):"")}
+  {...study,title:topic?"Aprender: "+topic:"Aprender o tema de hoje",detail:topic?"Estude o material previsto no cronograma.":"Escolha uma apostila ou anotação para estudar."},
+  {...practice,detail:"Teste o que entendeu e identifique lacunas antes de explicar."},
+  {...diagnostic,title:"Ensinar ao Alex · Método Feynman",detail:"Explique o tema sem consultar, responda perguntas e receba uma avaliação."}
  ];
 }
 function dailyGuidedSession(){
@@ -114,8 +127,8 @@ function studyBundleCounts(minutes){
  const available=minutes===999?90:Math.max(15,Number(minutes)||30);
  return {questions:available<=30?5:available<=60?10:15,flashcards:available<=30?8:available<=60?15:24};
 }
-function guidedPlan(steps,minutes,requestedMinutes,topic=""){
- const plan={minutes,requestedMinutes,topic:String(topic||"").trim(),steps,createdAt:Date.now(),day:studyDay(),ownerId:studyOwner()||null};
+function guidedPlan(steps,minutes,requestedMinutes,topic="",mode="new"){
+ const plan={minutes,requestedMinutes,topic:String(topic||"").trim(),mode:mode==="review"?"review":"new",steps,createdAt:Date.now(),day:studyDay(),ownerId:studyOwner()||null};
  try{
   sessionStorage.setItem("luria:guided-study-plan",JSON.stringify(plan));
   sessionStorage.removeItem("luria:guided-study-progress");
@@ -128,56 +141,65 @@ function guidedPlan(steps,minutes,requestedMinutes,topic=""){
 function safeStudyHref(value,fallback){
  try{const url=new URL(String(value||""),location.origin);return url.origin===location.origin?url.pathname+url.search+url.hash:fallback}catch{return fallback}
 }
-async function topicStudySteps(topic,minutes){
+async function topicStudySteps(topic,minutes,mode="new"){
  const subject=String(topic||"").trim();if(subject.length<2)throw new Error("Informe o assunto que você quer estudar.");
+ const review=mode==="review";
  const sb=window.supabaseClient;if(!sb)throw new Error("Entre novamente na LURIA para montar a sessão.");
  const counts=studyBundleCounts(minutes);
  const {data,error}=await sb.rpc("build_topic_study_session_v1",{p_topic:subject,p_question_count:counts.questions,p_flashcard_count:counts.flashcards});
  if(error)throw error;
- const requested=minutes===999?90:Math.max(15,Number(minutes)||30),third=5,first=Math.max(5,Math.floor((requested-third)*.55)),second=requested-first-third;
+ const requested=minutes===999?90:Math.max(15,Number(minutes)||30),feynmanMin=5,studyMin=Math.max(5,Math.floor((requested-feynmanMin)*.55)),practiceMin=requested-studyMin-feynmanMin;
  const cards=Array.isArray(data?.flashcards)?data.flashcards:[],cardIds=cards.map(card=>card?.id).filter(Boolean);
  const booklet=data?.apostila||null;
- const steps=[
-  {title:`Estudar ${subject}`,detail:booklet?.title?`Apostila selecionada: ${booklet.title}`:"Escolha a apostila ou anotação mais adequada ao tema.",min:first,href:safeStudyHref(booklet?.url,"/apostilas/")},
-  data?.question_set_id
-   ?{title:`Questões de ${subject}`,detail:`${Number(data.question_count)||0} questões sorteadas agora do banco LURIA.`,min:second,href:"/resolver-questoes/?set_id="+encodeURIComponent(data.question_set_id)}
-   :{title:`Praticar ${subject}`,detail:"Abra a biblioteca e escolha questões deste assunto.",min:second,href:"/questoes-simulados/"},
-  {title:`Ensinar ${subject} ao Alex · Método Feynman`,detail:"Explique sem consultar, responda perguntas e descubra lacunas. "+(cardIds.length?`Depois, revise ${cardIds.length} flashcards sugeridos.`:""),min:third,href:"/feynman/?topic="+encodeURIComponent(subject),reviewHref:cardIds.length?"/flashcards/?study_ids="+encodeURIComponent(cardIds.join(","))+"&study_topic="+encodeURIComponent(subject):"/flashcards/"}
- ];
- return {steps,planned:requested,bundle:data};
+ const reviewHref=cardIds.length?"/flashcards/?study_ids="+encodeURIComponent(cardIds.join(","))+"&study_topic="+encodeURIComponent(subject):"/flashcards/";
+ const study={title:`${review?"Revisar":"Estudar"} ${subject}`,detail:booklet?.title?`Apostila selecionada: ${booklet.title}`:"Escolha a apostila ou anotação mais adequada ao tema.",min:studyMin,href:safeStudyHref(booklet?.url,"/apostilas/")};
+ const practice=data?.question_set_id
+  ?{title:`Questões de ${subject}`,detail:`${Number(data.question_count)||0} questões sorteadas agora do banco LURIA.`,min:practiceMin,href:"/resolver-questoes/?set_id="+encodeURIComponent(data.question_set_id)}
+  :{title:`Praticar ${subject}`,detail:"Abra a biblioteca e escolha questões deste assunto.",min:practiceMin,href:"/questoes-simulados/"};
+ const feynman={title:review?`Feynman inicial · ${subject}`:`Ensinar ${subject} ao Alex · Método Feynman`,detail:review?"Sem consultar, explique o que lembra e descubra o que precisa revisar.":"Explique sem consultar, responda perguntas e descubra lacunas.",min:feynmanMin,href:"/feynman/?topic="+encodeURIComponent(subject)};
+ if(review) {
+  study.detail=(booklet?.title?`Material: ${booklet.title}. `:"")+"Reforce os pontos identificados no diagnóstico Feynman.";
+  practice.detail+=" Refaça conceitos que ainda não dominou.";
+  practice.reviewHref=reviewHref;
+ } else feynman.reviewHref=reviewHref;
+ return {steps:review?[feynman,study,practice]:[study,practice,feynman],planned:requested,bundle:data,mode:review?"review":"new"};
+}
+function scheduledStudyActivity(){
+ return todayActivities().find(item=>["lesson","subject_review"].includes(String(item?.kind||"")) )||null;
 }
 function scheduledStudyTopic(){
- const lesson=todayActivities().find(item=>["lesson","subject_review"].includes(String(item?.kind||"")));
- return String(lesson?.title||lesson?.theme||lesson?.materia||lesson?.area||"").trim();
+ return activityTopic(scheduledStudyActivity());
 }
 function openStudyChoice(initialMinutes=30){
- const o=modal("luria-study-choice-overlay","Estudar agora",'<p class="luria-study-choice-copy">Como você quer montar a sessão?</p><div class="luria-study-paths"><button type="button" data-study-path="schedule"><strong>Seguir o cronograma</strong><span>Usa a próxima aula planejada, questões reais e o método Feynman.</span></button><button type="button" data-study-path="topic"><strong>Estudar outro assunto</strong><span>Você escolhe o tema, pratica questões e ensina ao Alex sem mudar o cronograma.</span></button></div>');
+ const o=modal("luria-study-choice-overlay","Estudar agora",'<p class="luria-study-choice-copy">Como você quer estudar hoje?</p><div class="luria-study-paths"><button type="button" data-study-path="schedule"><strong>Seguir o cronograma</strong><span>Para revisões, Feynman vem primeiro. Para conteúdos novos, vem ao final.</span></button><button type="button" data-study-path="topic"><strong>Aprender outro assunto</strong><span>Estude o tema, pratique questões e explique ao Alex no final.</span></button><button type="button" data-study-path="review"><strong>Revisar um assunto</strong><span>Comece pelo Feynman para descobrir o que ainda precisa reforçar.</span></button></div>');
  $("[data-study-path='schedule']",o).onclick=()=>{o.remove();openSession(initialMinutes)};
- $("[data-study-path='topic']",o).onclick=()=>{o.remove();openTopicSession(initialMinutes)};
+ $("[data-study-path='topic']",o).onclick=()=>{o.remove();openTopicSession(initialMinutes,"new")};
+ $("[data-study-path='review']",o).onclick=()=>{o.remove();openTopicSession(initialMinutes,"review")};
 }
-function openTopicSession(initialMinutes=30){
+function openTopicSession(initialMinutes=30,mode="new"){
+ const review=mode==="review";
  let mins=Number(initialMinutes)||30;
- const o=modal("luria-topic-session-overlay","Estudar outro assunto",'<label class="luria-topic-study-field"><span>Qual assunto você quer estudar?</span><input id="luria-topic-study-input" type="text" maxlength="180" placeholder="Ex.: sepse, pré-eclâmpsia, insuficiência cardíaca" autocomplete="off"></label><div class="luria-session-times" aria-label="Tempo disponível"><button data-m="15">15 min</button><button data-m="30" class="active">30 min</button><button data-m="60">1 hora</button><button data-m="90">1h30</button><button data-m="120">2 horas</button></div><p id="luria-topic-study-status" class="luria-topic-study-status" role="status">A LURIA selecionará apostila e questões reais. A explicação Feynman encerra a missão.</p><div class="luria-intel-actions"><button id="luria-topic-study-start" class="luria-intel-button primary">Montar sessão</button></div>');
+ const o=modal("luria-topic-session-overlay",review?"Revisar assunto":"Aprender outro assunto",'<label class="luria-topic-study-field"><span>Qual assunto você quer '+(review?"revisar":"estudar")+'?</span><input id="luria-topic-study-input" type="text" maxlength="180" placeholder="Ex.: sepse, pré-eclâmpsia, insuficiência cardíaca" autocomplete="off"></label><div class="luria-session-times" aria-label="Tempo disponível"><button data-m="15">15 min</button><button data-m="30" class="active">30 min</button><button data-m="60">1 hora</button><button data-m="90">1h30</button><button data-m="120">2 horas</button></div><p id="luria-topic-study-status" class="luria-topic-study-status" role="status">'+(review?"Você explicará primeiro, depois revisará suas lacunas e praticará questões.":"A LURIA selecionará apostila e questões reais. A explicação Feynman encerra a missão.")+'</p><div class="luria-intel-actions"><button id="luria-topic-study-start" class="luria-intel-button primary">Montar '+(review?"revisão":"sessão")+'</button></div>');
  const input=$("#luria-topic-study-input",o),status=$("#luria-topic-study-status",o),start=$("#luria-topic-study-start",o);
  all("[data-m]",o).forEach(button=>{button.classList.toggle("active",Number(button.dataset.m)===mins);button.onclick=()=>{mins=Number(button.dataset.m);all("[data-m]",o).forEach(item=>item.classList.toggle("active",item===button))}});
- start.onclick=async()=>{const topic=input.value.trim();if(topic.length<2){status.textContent="Informe o assunto antes de continuar.";input.focus();return}start.disabled=true;status.textContent="Selecionando apostila, questões e flashcards…";try{const result=await topicStudySteps(topic,mins);guidedPlan(result.steps,result.planned,mins,topic);location.href="/sessao-estudo/"}catch(error){status.textContent=error?.message||"Não foi possível montar a sessão.";start.disabled=false}};
+ start.onclick=async()=>{const topic=input.value.trim();if(topic.length<2){status.textContent="Informe o assunto antes de continuar.";input.focus();return}start.disabled=true;status.textContent="Selecionando materiais e questões para o seu tema…";try{const result=await topicStudySteps(topic,mins,mode);guidedPlan(result.steps,result.planned,mins,topic,result.mode);location.href="/sessao-estudo/"}catch(error){status.textContent=error?.message||"Não foi possível montar a sessão.";start.disabled=false}};
  setTimeout(()=>input.focus(),40);
 }
 function openSession(initialMinutes=30){
- let mins=Number(initialMinutes)||30;const o=modal("luria-session-overlay","Seguir o cronograma",'<p style="margin:0;color:var(--muted);font-size:10px">A LURIA usa sua aula planejada, questões reais e uma explicação Feynman.</p><div class="luria-session-times"><button data-m="15">15 min</button><button data-m="30" class="active">30 min</button><button data-m="60">1 hora</button><button data-m="90">1h30</button><button data-m="120">2 horas</button><button data-m="999">Completar o dia</button></div><div id="luria-session-list" class="luria-session-list"></div><p id="luria-session-status" class="luria-topic-study-status" role="status"></p><div class="luria-intel-actions"><button id="luria-session-remix" class="luria-intel-button">Reorganizar</button><button id="luria-session-start" class="luria-intel-button primary">Iniciar sessão</button></div>');
+ let mins=Number(initialMinutes)||30;const o=modal("luria-session-overlay","Seguir o cronograma",'<p style="margin:0;color:var(--muted);font-size:10px">A LURIA começa revisões pelo Feynman e estudos novos pelo conteúdo.</p><div class="luria-session-times"><button data-m="15">15 min</button><button data-m="30" class="active">30 min</button><button data-m="60">1 hora</button><button data-m="90">1h30</button><button data-m="120">2 horas</button><button data-m="999">Completar o dia</button></div><div id="luria-session-list" class="luria-session-list"></div><p id="luria-session-status" class="luria-topic-study-status" role="status"></p><div class="luria-intel-actions"><button id="luria-session-remix" class="luria-intel-button">Reorganizar</button><button id="luria-session-start" class="luria-intel-button primary">Iniciar sessão</button></div>');
  const render=()=>{all("[data-m]",o).forEach(b=>{const selected=Number(b.dataset.m)===mins;b.classList.toggle("active",selected);b.setAttribute("aria-pressed",String(selected))});const s=sessionSteps(mins);o._steps=s;$("#luria-session-list",o).innerHTML=s.map((x,i)=>'<div class="luria-session-step"><b>'+(i+1)+'</b><div><strong>'+esc(x.title)+'</strong><small>'+esc(x.detail)+'</small></div><span>'+x.min+' min</span></div>').join("")};render();
  all("[data-m]",o).forEach(b=>b.onclick=()=>{mins=Number(b.dataset.m);all("[data-m]",o).forEach(x=>x.classList.toggle("active",x===b));render()});
   $("#luria-session-remix",o).onclick=render;$("#luria-session-start",o).onclick=async()=>{
-    const start=$("#luria-session-start",o),status=$("#luria-session-status",o),focus=scheduledStudyTopic();
+    const start=$("#luria-session-start",o),status=$("#luria-session-status",o),focus=scheduledStudyTopic(),mode=isReviewActivity(scheduledStudyActivity())?"review":"new";
     start.disabled=true;
     if(focus){
       status.textContent=`Selecionando materiais, questões e flashcards de ${focus}…`;
-      try{const result=await topicStudySteps(focus,mins);guidedPlan(result.steps,result.planned,mins,focus);location.href="/sessao-estudo/";return}catch(error){status.textContent="Não consegui montar o pacote temático. Mantive a sessão do cronograma."}
+      try{const result=await topicStudySteps(focus,mins,mode);guidedPlan(result.steps,result.planned,mins,focus,result.mode);location.href="/sessao-estudo/";return}catch(error){status.textContent="Não consegui montar o pacote temático. Mantive a sessão do cronograma."}
     }
    const steps=Array.isArray(o._steps)?o._steps:[];
     if(!steps.length){start.disabled=false;return}
    const planned=mins===999?steps.reduce((sum,x)=>sum+(Number(x.min)||0),0):mins;
-    guidedPlan(steps,planned,mins,focus);
+    guidedPlan(steps,planned,mins,focus,mode);
    location.href="/sessao-estudo/";
  };
 }
