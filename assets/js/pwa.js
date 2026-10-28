@@ -26,6 +26,9 @@
   }
 
   if (!("serviceWorker" in navigator)) return;
+  // The standalone /luria/ project URL is an online fallback; its legacy SW
+  // assumes origin-root URLs. Do not install a worker with invalid cache scope.
+  if (new URL(document.baseURI).pathname !== "/") return;
 
   const release = "20261013-width2";
   const refreshKey = "luria:pwa:activated:" + release;
