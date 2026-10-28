@@ -198,14 +198,17 @@
           }
         });
 
+        if (!result.ok || !cameraController.openReview()) {
+          if (missingAlert) {
+            missingAlert.hidden = false;
+            missingAlert.textContent = result.reason || "Nenhum traçado válido foi extraído desta imagem. Reenquadre ou escolha outra foto.";
+          }
+          return;
+        }
+
         const leads = cameraController.getCapturedLeads();
         currentLeadsData = leads;
         currentSessionPackage = cameraController.getSessionStructuredPackage();
-
-        stage1Section.hidden = true;
-        stage2Section.hidden = false;
-        stage3Section.hidden = true;
-        updateStepIndicators(2);
 
         updateCalibrationUI(currentSessionPackage.calibration);
         renderStage2Waveforms(leads);
@@ -225,6 +228,14 @@
       gainMmPerMv: gain,
       confirmedByUser: true
     });
+
+    if (updatedCal.error) {
+      if (missingAlert) {
+        missingAlert.hidden = false;
+        missingAlert.textContent = updatedCal.error;
+      }
+      return;
+    }
 
     updateCalibrationUI(updatedCal);
     currentLeadsData = cameraController.getCapturedLeads();
@@ -626,3 +637,5 @@
     ctx.stroke();
   }
 })();
+
+

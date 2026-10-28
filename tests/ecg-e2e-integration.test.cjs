@@ -138,6 +138,7 @@ function createE2eEnvironment() {
   const cameraSrc = source("assets/js/ecg-smart-camera.js");
   const readerSrc = source("assets/js/ecg-reader.js");
 
+  vm.runInNewContext(source("assets/js/ecg-contracts.js"), context);
   vm.runInNewContext(extractorSrc, context);
   vm.runInNewContext(engineSrc, context);
   vm.runInNewContext(cameraSrc, context);
@@ -219,6 +220,36 @@ function generateSynthesized12LeadImage(width = 800, height = 480) {
   return { width, height, data };
 }
 
+// Canvas de teste que recorta pixels reais da imagem. Apenas a API do DOM é simulada.
+function pixelCanvas(image = null) {
+  const canvas = { width: image?.width || 1, height: image?.height || 1,
+    pixels: image?.data || null, toDataURL: () => "data:image/jpeg;base64,test-only" };
+  canvas.getContext = () => ({
+    getImageData(x, y, w, h) {
+      const data = new Uint8ClampedArray(w * h * 4);
+      for (let row = 0; row < h; row++) for (let col = 0; col < w; col++) {
+        const src = ((y + row) * canvas.width + x + col) * 4;
+        const dst = (row * w + col) * 4;
+        if (canvas.pixels) data.set(canvas.pixels.subarray(src, src + 4), dst);
+      }
+      return { width: w, height: h, data };
+    },
+    drawImage(source, sx, sy, sw, sh, dx, dy, dw, dh) {
+      if (arguments.length === 3) { sx = 0; sy = 0; sw = source.width; sh = source.height; dx = 0; dy = 0; dw = sw; dh = sh; }
+      canvas.pixels = new Uint8ClampedArray(canvas.width * canvas.height * 4);
+      for (let row = 0; row < dh; row++) for (let col = 0; col < dw; col++) {
+        const sourceX = sx + Math.floor(col * sw / dw);
+        const sourceY = sy + Math.floor(row * sh / dh);
+        const src = (sourceY * source.width + sourceX) * 4;
+        const dst = ((dy + row) * canvas.width + dx + col) * 4;
+        canvas.pixels.set(source.pixels.subarray(src, src + 4), dst);
+      }
+    },
+    putImageData(data) { canvas.width = data.width; canvas.height = data.height; canvas.pixels = data.data; }
+  });
+  return canvas;
+}
+
 // -------------------------------------------------------------
 // BATERIA DE CENÁRIOS DE INTEGRAÇÃO END-TO-END
 // -------------------------------------------------------------
@@ -270,7 +301,7 @@ test("E2E Cenário 3: Rótulos trocados (OCR identifica troca) e auditoria técn
   };
 
   const audit = context.LuriaEcgSignalExtractor.auditExtractedLead(extResult);
-  assert.equal(audit.status, "Revisão necessária", "Rótulo trocado exige revisão obrigatória");
+  assert.equal(audit.status, "Indeterminada", "Rótulo conflitante não pode ser classificado como tecnicamente adequado");
   assert.ok(audit.reasons.some(r => r.includes("divergente")), "Deve documentar o alerta de rótulo divergente");
 });
 
@@ -356,6 +387,17 @@ test("E2E Cenário 8: Sinal com 2,5 segundos não deve ser multiplicado por cont
   assert.equal(ext.isValid, true, "Extração deve ser válida para traçado desenhado");
   // 375 px * (1000 / 150) ms/px = 2500 ms = 2.500 s
   assert.equal(ext.recoveredDurationSeconds, 2.5, "Duração total física não pode ser artificialmente encurtada pela cobertura");
+  const extractor = context.LuriaEcgSignalExtractor;
+  const cal25x10 = { paperSpeedMmPerSec: 25, gainMmPerMv: 10, pixelsPerMmX: 6, pixelsPerMmY: 6, calibrationSource: "user_confirmed" };
+  extractor.recalibrateExtraction(ext, cal25x10);
+  const amplitude10 = Math.max(...ext.signal.filter(Number.isFinite)) - Math.min(...ext.signal.filter(Number.isFinite));
+  const cal50x5 = { ...cal25x10, paperSpeedMmPerSec: 50, gainMmPerMv: 5 };
+  extractor.recalibrateExtraction(ext, cal50x5);
+  const amplitude5 = Math.max(...ext.signal.filter(Number.isFinite)) - Math.min(...ext.signal.filter(Number.isFinite));
+  assert.ok(Math.abs(amplitude5 / amplitude10 - 2) < 0.03, "Ganho 5 mm/mV deve dobrar a amplitude reconstruída em mV");
+  assert.equal(ext.recoveredDurationSeconds, 1.25, "50 mm/s deve reduzir a duração física pela metade");
+  assert.ok(ext.validDurationSeconds <= ext.recoveredDurationSeconds);
+  assert.equal(ext.effectiveResolutionHz, 300);
 });
 
 test("E2E Cenário 9: Duração desconhecida quando msPerPixel não é informado", () => {
@@ -369,38 +411,130 @@ test("E2E Cenário 9: Duração desconhecida quando msPerPixel não é informado
   assert.equal(ext.recoveredDurationSeconds, null, "Duração deve ser nula se a escala de tempo for desconhecida");
 });
 
-test("E2E Cenário 10: Fluxo completo de 12 derivações até a Etapa 2", () => {
+test("Reamostragem preserva máscara de lacuna interpolada e não fabrica amostras", () => {
   const { context } = createE2eEnvironment();
-  const controller = context.LuriaSmartCamera.createController({});
-  const leads = controller.getCapturedLeads();
-  assert.equal(leads.length, 12);
-  assert.equal(controller.getCurrentStage(), 1);
+  const result = context.LuriaEcgSignalExtractor.resampleCalibratedSignal({
+    isValid: true, signal: [0, 1, 2, 3], validMask: [1, 0, 1, 1], interpolatedMask: [0, 1, 0, 0],
+    calibration: { msPerPixel: 10 }, effectiveResolutionHz: 100
+  }, 100);
+  assert.equal(result.ok, true);
+  assert.deepEqual(Array.from(result.validMask), [1, 0, 1]);
+  assert.equal(result.samples[1], null);
 });
 
-test("E2E Cenário 11: Falha no OCR do modo ultrassensível requer confirmação manual ('Identificação incerta')", () => {
+test("E2E Cenário 10: imagem percorre reconhecimento, câmera, extração, auditoria e pacote", () => {
   const { context } = createE2eEnvironment();
-  let uncertainTriggered = false;
+  const image = generateSynthesized12LeadImage();
+  const initial = context.LuriaEcgCvEngine.detectECGBoundaries(image);
+  assert.equal(initial.detected, true);
+  for (const [lead, box] of Object.entries(initial.leads).filter(([_, region]) => region.row === 0)) {
+    const lx = Math.round(box.xMin * image.width) + 8;
+    const ly = Math.round(((box.yMin + box.yMax) / 2) * image.height) - 9;
+    for (let y = ly - 2; y < ly + 20; y++) for (let x = lx - 2; x < lx + 55; x++) {
+      const idx = (y * image.width + x) * 4;
+      image.data[idx] = 238; image.data[idx + 1] = 235; image.data[idx + 2] = 230;
+    }
+    context.LuriaEcgCvEngine.drawBitmapLabelOnImageData(image, box.expectedInTemplate || lead,
+      lx, ly, 2);
+  }
+  const recognized = context.LuriaEcgCvEngine.detectECGBoundaries(image);
+  assert.equal(recognized.detected, true, JSON.stringify({ reason: recognized.reason, anomalies: recognized.anomalies, labels: recognized.recognizedLabels }));
+  assert.ok(Object.values(recognized.leadIdentities).some(id => id.status === "ocr_confirmed"), JSON.stringify({ initial: initial.detectedLayout?.name, recognized: recognized.detectedLayout?.name, labels: recognized.recognizedLabels }));
+  context.document.createElement = tag => tag === "canvas" ? pixelCanvas() : { tagName: tag, style: {}, addEventListener() {} };
+  const controller = context.LuriaSmartCamera.createController({});
+  const result = controller.processPhotographCanvas(pixelCanvas(image), { source: "test_rendered_ecg" });
+  assert.equal(result.ok, true);
+  assert.ok(result.capturedCount > 0);
+  assert.equal(controller.openReview(), true);
+  const pkg = controller.getSessionStructuredPackage();
+  const captured = pkg.leads.filter(l => l.captured);
+  const ocrCaptured = captured.filter(l => l.leadIdentity.status === "ocr_confirmed");
+  assert.ok(ocrCaptured.length > 0, "Evidência OCR deve atravessar a câmera e chegar ao pacote");
+  assert.ok(ocrCaptured.every(l => l.extraction.leadIdentity.recognizedLead === l.lead), "Extrator deve preservar o rótulo lido");
+  assert.equal(controller.getCurrentStage(), 2);
+  assert.equal(captured.length, result.capturedCount);
+  for (const item of captured) {
+    assert.ok(item.extraction.signal.length > 0);
+    assert.equal(item.extraction.signal.length, item.extraction.validMask.length);
+    assert.deepEqual(item.extraction.leadIdentity, item.leadIdentity);
+    assert.deepEqual(pkg.signals[item.lead], item.extraction.signal);
+    assert.ok(item.audit.status);
+  }
+  assert.equal(controller.confirmExtractionAndEnableAI().allowed, false);
+});
 
-  const controller = context.LuriaSmartCamera.createController({
-    onUncertainIdentity: () => { uncertainTriggered = true; }
+test("OCR V3 em região DI bloqueia associação automática e preserva a divergência", () => {
+  const { context } = createE2eEnvironment();
+  const image = generateSynthesized12LeadImage();
+  const first = context.LuriaEcgCvEngine.detectECGBoundaries(image);
+  assert.equal(first.detected, true);
+  const box = first.leads.DI;
+  const lx = Math.round(box.xMin * image.width) + 8;
+  const ly = Math.round(((box.yMin + box.yMax) / 2) * image.height) - 9;
+  for (let y = ly - 2; y < ly + 20; y++) for (let x = lx - 2; x < lx + 55; x++) {
+    const idx = (y * image.width + x) * 4;
+    image.data[idx] = 238; image.data[idx + 1] = 235; image.data[idx + 2] = 230;
+  }
+  context.LuriaEcgCvEngine.drawBitmapLabelOnImageData(image, "V3", lx, ly, 2);
+  const detected = context.LuriaEcgCvEngine.detectECGBoundaries(image);
+  assert.equal(detected.detected, false);
+  assert.ok(detected.anomalies.some(a => a.code === "label_conflict"));
+  assert.ok(Object.values(detected.cellIdentities).some(id => id.expectedLead === "DI" && id.recognizedLead === "V3" && id.status === "conflicting"));
+  context.document.createElement = tag => tag === "canvas" ? pixelCanvas() : { tagName: tag, style: {}, addEventListener() {} };
+  const controller = context.LuriaSmartCamera.createController({});
+  const result = controller.processPhotographCanvas(pixelCanvas(image));
+  assert.equal(result.ok, false);
+  assert.equal(controller.getCapturedLeads().filter(l => l.captured).length, 0);
+  assert.ok(controller.getSessionStructuredPackage().originalImageUrl);
+});
+
+test("Contrato: OCR incerto e confirmação manual preservam incerteza e confiança original", () => {
+  const { context } = createE2eEnvironment();
+  const contracts = context.LuriaEcgContracts;
+  const hypothesis = contracts.normalizeLeadIdentity({ lead: "V3", expectedLead: "V3", method: "topology_hypothesis", evidence: "positional_hypothesis" });
+  assert.equal(hypothesis.status, "geometric_hypothesis");
+  const manual = contracts.normalizeLeadIdentity({ ...hypothesis, confirmedByUser: true, humanConfirmedLead: "V3" });
+  assert.equal(manual.status, "manual_confirmed");
+  assert.equal(manual.ocrConfidence, 0);
+  assert.equal(manual.verifiedAutomatically, false);
+  const audit = context.LuriaEcgSignalExtractor.auditExtractedLead({
+    isValid: true, signal: [0, 0.1, 0], validMask: [1, 1, 1], continuity: 1,
+    leadIdentity: manual, calibration: { calibrationSource: "measured" },
+    trackingErrors: [], pixelCorrespondence: { meanInkScore: 1 }
   });
-
-  controller.setMode("ultrasensitive");
-  // Simula captura de traçado válido onde o rótulo da derivação não pôde ser lido
-  assert.ok(controller);
+  assert.equal(audit.status, "Revisão necessária");
+  assert.equal(audit.allowsAiModelInput, false);
 });
 
 test("E2E Cenário 12: Perda de referência espacial na navegação gera instrução de reenquadramento", () => {
   const { context } = createE2eEnvironment();
-  const nav = context.LuriaEcgCvEngine.computeNavigationGuidance(
-    { leads: { DI: { xMin: 0, xMax: 0.25, yMin: 0, yMax: 0.3 } } },
-    "DI",
-    { x: 0.5, y: 0.5 },
-    { trackingLost: true }
-  );
-
-  assert.equal(nav.direction, "lost_reference");
-  assert.ok(nav.instruction.includes("Afaste o celular para reenquadrar"));
+  const cv = context.LuriaEcgCvEngine;
+  function frame(dx, dy, visible = true) {
+    const width = 1100, height = 700;
+    const data = new Uint8ClampedArray(width * height * 4);
+    for (let i = 0; i < width * height; i++) {
+      data[i * 4] = data[i * 4 + 1] = data[i * 4 + 2] = 35; data[i * 4 + 3] = 255;
+    }
+    if (visible) for (let y = 170 + dy; y < 530 + dy; y++) for (let x = 250 + dx; x < 850 + dx; x++) {
+      const i = (y * width + x) * 4;
+      data[i] = data[i + 1] = data[i + 2] = 238;
+    }
+    return { width, height, data };
+  }
+  const tracker = {};
+  const map = { DI: { xMin: 0.48, xMax: 0.52, yMin: 0.48, yMax: 0.52 } };
+  const update = (dx, dy, visible = true) => {
+    const sheet = cv.locatePaperSheet(frame(dx, dy, visible));
+    cv.updateSpatialRegistration(tracker, sheet, map);
+    return cv.computeNavigationGuidance({ leads: map }, "DI", { x: 0.5, y: 0.5 }, tracker);
+  };
+  assert.equal(update(0, 0).direction, "centered");
+  assert.ok(update(110, 0).dx > 0.08, "Quadro deslocado à direita deve mover a direção observada");
+  assert.ok(update(-110, 0).dx < -0.08, "Quadro deslocado à esquerda deve inverter a direção");
+  assert.ok(update(0, 75).dy > 0.08);
+  assert.ok(update(0, -75).dy < -0.08);
+  assert.equal(update(0, 0, false).direction, "lost_reference");
+  assert.equal(update(0, 0).direction, "centered", "Reenquadramento deve recuperar a referência");
 });
 
 test("E2E Cenário 13: Recaptura pontual de derivação específica", () => {
@@ -438,8 +572,24 @@ test("E2E Cenário 14: Tentativa de interpretar dados de 2,5 s no modelo autoral
   assert.ok(alertEl.innerHTML.includes("10,0 segundos contínuos"));
 });
 
-test("E2E Cenário 15: Ausência da Edge Function autoral 'ecg-signal-classifier' no backend mantém bloqueio transparente", () => {
-  const { context } = createE2eEnvironment();
-  const alertEl = context.document.getElementById("ecg-stage3-compatibility-alert");
-  assert.ok(alertEl);
+test("Etapa 3 bloqueia o envio ao backend autoral não verificado", async () => {
+  const { context, elements } = createE2eEnvironment();
+  let invokes = 0;
+  context.supabaseClient = { functions: { invoke: async () => { invokes++; return { data: { ok: true } }; } } };
+  const leads = context.LuriaSmartCamera.CANONICAL_LEADS;
+  const pkg = {
+    leads: leads.map(lead => ({ lead, leadIdentity: { status: "ocr_confirmed" }, audit: { status: "Adequada tecnicamente" } })),
+    signals: Object.fromEntries(leads.map(lead => [lead, Array(1000).fill(0)])),
+    validMasks: Object.fromEntries(leads.map(lead => [lead, Array(1000).fill(1)])),
+    durationsSeconds: Object.fromEntries(leads.map(lead => [lead, 10])),
+    samplingRateHz: 100,
+    calibration: { calibrationSource: "measured" }
+  };
+  context.LuriaEcgReaderInit(pkg);
+  const button = elements.get("ecg-analyze");
+  assert.equal(button.disabled, true);
+  await button.listeners.click[0]();
+  assert.equal(invokes, 0, "Clique não pode acionar backend não verificado, mesmo se disparado programaticamente");
 });
+
+

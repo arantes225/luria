@@ -21,6 +21,7 @@
 
 (function (global) {
   "use strict";
+  const contracts = global.LuriaEcgContracts || (typeof require === "function" ? require("./ecg-contracts.js") : null);
 
   const CANONICAL_LEADS = ["DI", "DII", "DIII", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"];
 
@@ -1147,7 +1148,7 @@
         boundaries: null,
         detectedLayout: null,
         layoutConfidence: "none",
-        anomalies: ["invalid_image_data"],
+        anomalies: [{ code: "invalid_image_data" }],
         message: "Imagem inválida ou vazia."
       };
     }
@@ -1164,7 +1165,7 @@
         detectedLayout: null,
         layoutConfidence: "none",
         quality,
-        anomalies: ["low_sharpness_or_dark"],
+        anomalies: [{ code: "low_sharpness_or_dark" }],
         message: "Imagem escura ou desfocada. Aponte para o ECG com boa iluminação."
       };
     }
@@ -1180,7 +1181,7 @@
         layoutConfidence: "none",
         quality,
         sheet,
-        anomalies: ["paper_cutoff_or_not_found"],
+        anomalies: [{ code: "paper_cutoff_or_not_found" }],
         message: "Folha do ECG parcialmente cortada ou fora de quadro. Enquadre a folha inteira."
       };
     }
@@ -1194,7 +1195,7 @@
         layoutConfidence: "none",
         quality,
         sheet,
-        anomalies: ["severe_perspective_distortion"],
+        anomalies: [{ code: "severe_perspective_distortion" }],
         message: "Perspectiva muito inclinada. Posicione a câmera paralela à folha do ECG."
       };
     }
@@ -1211,7 +1212,7 @@
         quality,
         sheet,
         orientation,
-        anomalies: ["ecg_rotated_90_degrees"],
+        anomalies: [{ code: "ecg_rotated_90_degrees" }],
         message: "ECG girado em 90°. Gire o aparelho ou a imagem para a orientação horizontal."
       };
     }
@@ -1236,7 +1237,7 @@
         calibration,
         gridCalibration: calibration,
         topology,
-        anomalies: [topology.rowCount === 0 ? "no_waveform_traces" : "dense_text_or_noise"],
+        anomalies: [{ code: topology.rowCount === 0 ? "no_waveform_traces" : "dense_text_or_noise" }],
         reason: topology.rowCount === 0
           ? "Grade ou papel sem traçados eletrocardiográficos detectáveis."
           : "Padrão incompatível com ECG (possível página de texto ou ruído).",
@@ -1257,14 +1258,16 @@
         boundaries: sheet.boundaries,
         detectedLayout: null,
         leads: {},
-        leadIdentities: {},
+        leadIdentities: layoutEvaluation.leadIdentities || {},
+        cellIdentities: layoutEvaluation.cellIdentities || {},
         layoutConfidence: layoutEvaluation.layoutConfidence,
         quality,
         calibration,
         gridCalibration: calibration,
         topology,
         orientation,
-        anomalies: layoutEvaluation.anomalies,
+        recognizedLabels: layoutEvaluation.recognizedLabels || {},
+        anomalies: contracts.normalizeAnomalies(layoutEvaluation.anomalies),
         reason: layoutEvaluation.message,
         message: layoutEvaluation.message
       };
@@ -1279,9 +1282,10 @@
       detectedLayout: layoutEvaluation.detectedLayout,
       leads: leadsMap,
       leadIdentities: layoutEvaluation.leadIdentities || {},
+      cellIdentities: layoutEvaluation.cellIdentities || {},
       layoutConfidence: layoutEvaluation.layoutConfidence,
       recognizedLabels: layoutEvaluation.recognizedLabels,
-      anomalies: layoutEvaluation.anomalies,
+      anomalies: contracts.normalizeAnomalies(layoutEvaluation.anomalies),
       quality,
       calibration,
       gridCalibration: calibration,
@@ -1347,6 +1351,8 @@
 
     // Avaliar cada célula: (A) Possui traçado eletrocardiográfico real? (B) Qual rótulo foi lido pelo OCR?
     const recognizedLabels = {};
+    const leadIdentities = {};
+    const cellIdentities = {};
     const labelCounts = {};
     const dynamicLeadsMap = {};
     let validWaveformCells = 0;
@@ -1403,18 +1409,36 @@
         assignmentEvidence = "positional_hypothesis";
       }
 
+      const cellKey = `r${cell.row}_c${cell.col}`;
+      const identity = contracts.normalizeLeadIdentity({
+        lead: assignedLead,
+        expectedLead: cell.expectedLead,
+        recognizedLead: ocrRes.recognized ? ocrRes.lead : null,
+        rawOcrText: ocrRes.rawText,
+        ocrConfidence: ocrRes.confidence,
+        method: ocrRes.recognized ? ocrRes.method : "topology_hypothesis",
+        evidence: assignmentEvidence,
+        region: { xMin: cell.xMin, xMax: cell.xMax, yMin: cell.yMin, yMax: cell.yMax, row: cell.row, col: cell.col }
+      });
+      cellIdentities[cellKey] = identity;
+      if (!ocrRes.recognized && sigRes.isValid) anomalies.push({ code: "missing_label", lead: assignedLead, region: identity.region });
+      if (identity.status === "conflicting") anomalies.push(...identity.anomalies);
+
       if (assignedLead) {
-        recognizedLabels[`r${cell.row}_c${cell.col}`] = {
+        recognizedLabels[cellKey] = {
           expectedLead: cell.expectedLead,
           assignedLead,
+          recognizedLead: ocrRes.recognized ? ocrRes.lead : null,
           ocrRecognized: ocrRes.recognized,
           ocrConfidence: ocrRes.confidence,
           evidence: assignmentEvidence,
-          hasValidTrace: sigRes.isValid
+          hasValidTrace: sigRes.isValid,
+          region: identity.region
         };
 
-        // Se o rótulo foi reconhecido via OCR (mesmo fora da posição padrão), mapeamos a caixa real para aquela derivação!
-        dynamicLeadsMap[assignedLead] = {
+        if (sigRes.isValid && !leadIdentities[assignedLead]) leadIdentities[assignedLead] = identity;
+        // Uma região sem traçado válido não pode preencher uma derivação capturada.
+        if (sigRes.isValid && !dynamicLeadsMap[assignedLead]) dynamicLeadsMap[assignedLead] = {
           col: cell.col,
           row: cell.row,
           xMin: cell.xMin,
@@ -1431,15 +1455,15 @@
     // Verificar rótulos duplicados
     const duplicateLeads = Object.keys(labelCounts).filter(k => labelCounts[k] > 1);
     if (duplicateLeads.length > 0) {
-      anomalies.push(`duplicate_labels:${duplicateLeads.join(",")}`);
+      duplicateLeads.forEach(lead => anomalies.push({ code: "duplicate_label", lead, detail: `OCR leu ${lead} em ${labelCounts[lead]} regiões.` }));
     }
 
     if (labelMismatchCount > 0) {
-      anomalies.push("non_standard_lead_arrangement");
+      anomalies.push({ code: "non_standard_lead_arrangement" });
     }
 
     if (overlappingCellsCount > 0) {
-      anomalies.push("overlapping_traces_detected");
+      anomalies.push({ code: "overlapping_traces_detected" });
     }
 
     // Tiras de ritmo prolongadas (ex.: 4ª linha no 3x4+1)
@@ -1468,6 +1492,8 @@
         detectedLayout: null,
         layoutConfidence: "rejected_duplicate_labels",
         recognizedLabels,
+        leadIdentities,
+        cellIdentities,
         anomalies,
         message: `Rótulos de derivações duplicados ou ambíguos detectados (${duplicateLeads.join(", ")}). Atribuição automática recusada.`
       };
@@ -1475,13 +1501,15 @@
 
     // 2. Se menos de 3 células tiverem morfologia real de ECG (e não for captura single-lead explícita)
     if (validWaveformCells < 3) {
-      anomalies.push("insufficient_valid_waveform_regions");
+      anomalies.push({ code: "insufficient_valid_waveform_regions" });
       return {
         isValidECG: false,
         confidence: Number((validWaveformCells / 12).toFixed(2)),
         detectedLayout: null,
         layoutConfidence: "rejected_no_ecg_waveforms",
         recognizedLabels,
+        leadIdentities,
+        cellIdentities,
         anomalies,
         message: "Não foram encontradas derivações eletrocardiográficas válidas suficientes na imagem."
       };
@@ -1489,13 +1517,15 @@
 
     // 3. Se houve troca parcial de derivações (alguns rótulos trocados, mas nem todas as 12 derivações possuem rótulo OCR legível para desambiguar o restante)
     if (labelMismatchCount > 0 && ocrConfirmedCount < validWaveformCells) {
-      anomalies.push("ambiguous_swapped_leads_without_full_ocr");
+      anomalies.push({ code: "ambiguous_swapped_leads_without_full_ocr" });
       return {
         isValidECG: false,
         confidence: 0.35,
         detectedLayout: null,
         layoutConfidence: "rejected_ambiguous_layout",
         recognizedLabels,
+        leadIdentities,
+        cellIdentities,
         anomalies,
         message: "Derivações fora da posição padrão e com rótulos ausentes/ambíguos. Atribuição automática recusada por segurança."
       };
@@ -1521,6 +1551,8 @@
       detectedLayout,
       layoutConfidence,
       recognizedLabels,
+      leadIdentities,
+      cellIdentities,
       anomalies,
       message: ocrConfirmedCount > 0
         ? `ECG identificado (${validWaveformCells} derivações ativas, ${ocrConfirmedCount} rótulos confirmados via OCR).`
@@ -1578,8 +1610,36 @@
   /**
    * Calcula o vetor de orientação espacial da câmera para guiar o usuário até a próxima derivação
    */
+  function updateSpatialRegistration(state, sheet, leadMap = null) {
+    const bounds = sheet?.boundaries || sheet;
+    const valid = sheet?.found !== false && !sheet?.isCutOff && !sheet?.hasSeverePerspective &&
+      bounds && [bounds.xMin, bounds.xMax, bounds.yMin, bounds.yMax].every(Number.isFinite) &&
+      bounds.xMax - bounds.xMin >= 0.2 && bounds.yMax - bounds.yMin >= 0.2;
+    if (!valid) {
+      state.consecutiveUncertainFrames = (state.consecutiveUncertainFrames || 0) + 1;
+      state.trackingLost = true;
+      state.registered = false;
+      return state;
+    }
+    if (!state.referenceBounds || !state.referenceLeadMap) {
+      state.referenceBounds = { ...bounds };
+      state.referenceLeadMap = leadMap ? { ...leadMap } : null;
+    }
+    state.currentBounds = { ...bounds };
+    state.referenceCorners = sheet?.corners || null;
+    state.motion = state.previousBounds ? {
+      dx: Number((((bounds.xMin + bounds.xMax) - (state.previousBounds.xMin + state.previousBounds.xMax)) / 2).toFixed(4)),
+      dy: Number((((bounds.yMin + bounds.yMax) - (state.previousBounds.yMin + state.previousBounds.yMax)) / 2).toFixed(4))
+    } : { dx: 0, dy: 0 };
+    state.previousBounds = { ...bounds };
+    state.trackingLost = false;
+    state.registered = Boolean(state.referenceLeadMap);
+    state.consecutiveUncertainFrames = 0;
+    return state;
+  }
+
   function computeNavigationGuidance(currentMap, targetLead, currentRoiCenter = { x: 0.5, y: 0.5 }, trackingState = {}) {
-    const leadsMap = currentMap?.leads || currentMap?.detectedLayout?.leads || null;
+    const leadsMap = trackingState.referenceLeadMap || currentMap?.leads || currentMap?.detectedLayout?.leads || null;
     if (!currentMap || !leadsMap || !targetLead || !leadsMap[targetLead]) {
       return {
         direction: "unknown",
@@ -1590,19 +1650,21 @@
     }
 
     // Se houver rastreamento de referência com perda de coerência (ex.: deslocamento não suportado)
-    if (trackingState.trackingLost) {
+    if (trackingState.trackingLost || !trackingState.registered || !trackingState.currentBounds || !trackingState.referenceBounds) {
       return {
         direction: "lost_reference",
         dx: 0,
         dy: 0,
-        instruction: "Referência espacial perdida. Afaste o celular para reenquadrar o ECG por completo."
+        instruction: "Referência espacial perdida. Afaste o celular para localizar novamente o ECG."
       };
     }
 
     const box = leadsMap[targetLead];
+    const ref = trackingState.referenceBounds;
+    const cur = trackingState.currentBounds;
     const targetCenter = {
-      x: (box.xMin + box.xMax) / 2,
-      y: (box.yMin + box.yMax) / 2
+      x: cur.xMin + (((box.xMin + box.xMax) / 2 - ref.xMin) / (ref.xMax - ref.xMin)) * (cur.xMax - cur.xMin),
+      y: cur.yMin + (((box.yMin + box.yMax) / 2 - ref.yMin) / (ref.yMax - ref.yMin)) * (cur.yMax - cur.yMin)
     };
 
     const effectiveCenter = {
@@ -1730,6 +1792,7 @@
       recognizeLeadLabelInRegion,
       discoverWaveformTopology,
       computeNavigationGuidance,
+      updateSpatialRegistration,
       cropSubImageData,
       drawBitmapLabelOnImageData,
       reset,
@@ -1750,6 +1813,7 @@
     recognizeLeadLabelInRegion,
     discoverWaveformTopology,
     computeNavigationGuidance,
+    updateSpatialRegistration,
     cropSubImageData,
     drawBitmapLabelOnImageData,
     CANONICAL_LEADS,
@@ -1763,3 +1827,5 @@
     module.exports = exported;
   }
 })(typeof window !== "undefined" ? window : globalThis);
+
+

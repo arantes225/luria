@@ -69,6 +69,7 @@ function loadBenchmarkEnvironment() {
 
   const extractorSrc = source("assets/js/ecg-signal-extractor.js");
   const engineSrc = source("assets/js/ecg-cv-engine.js");
+  vm.runInNewContext(source("assets/js/ecg-contracts.js"), context);
   vm.runInNewContext(extractorSrc, context);
   vm.runInNewContext(engineSrc, context);
 
@@ -301,7 +302,8 @@ test("Benchmark 2: Digitalização e Comparação Quantitativa contra Ground-Tru
   assert.ok(rmse < 0.12, `RMSE deve ser < 0.12 mV (obtido: ${rmse.toFixed(4)})`);
   assert.ok(pearsonR > 0.88, `Correlação r deve ser > 0.88 (obtido: ${pearsonR.toFixed(4)})`);
   assert.ok(extraction.continuity > 0.90, "Cobertura temporal deve ser > 90%");
-  assert.equal(extraction.audit.status, "Adequada tecnicamente");
+  // O benchmark mede fidelidade do vetor renderizado; não fornece OCR de rótulo.
+  assert.equal(extraction.audit.status, "Indeterminada");
 });
 
 test("Benchmark 3: Taxa de Falsa Aceitação Zero (0%) em Exames Inválidos", () => {
@@ -329,3 +331,5 @@ test("Benchmark 3: Taxa de Falsa Aceitação Zero (0%) em Exames Inválidos", ()
 
   assert.equal(falseAcceptances, 0, "Taxa de Falsa Aceitação de exames inválidos DEVE ser categoricamente ZERO (0%)");
 });
+
+

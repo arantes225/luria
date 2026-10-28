@@ -59,7 +59,7 @@
     }
 
     // 2. Verificação de calibração
-    if (cal.calibrationSource !== "measured" && !cal.confirmedByUser) {
+    if (!cal || (cal.calibrationSource !== "measured" && !cal.confirmedByUser)) {
       reasons.push("A calibração do exame não foi confirmada pelo usuário nem medida da grade.");
     }
 
@@ -67,6 +67,20 @@
     const invalidLeads = leads.filter(l => l.audit?.status === "Inválida" || l.audit?.status === "Indeterminada");
     if (invalidLeads.length > 0) {
       reasons.push(`Derivações com auditoria técnica insatisfatória: ${invalidLeads.map(l => l.lead).join(", ")}.`);
+    }
+    for (const lead of canonical) {
+      const entry = leads.find(l => l.lead === lead);
+      const signal = sessionPackage.signals?.[lead];
+      const mask = sessionPackage.validMasks?.[lead];
+      if (entry?.leadIdentity?.status !== "ocr_confirmed" || entry?.audit?.status !== "Adequada tecnicamente") {
+        reasons.push(`${lead}: identificação OCR ou auditoria insuficiente para inferência.`);
+      }
+      if (!Array.isArray(signal) || !Array.isArray(mask) || mask.length !== signal.length || mask.some(v => v !== 1) || signal.some(v => !Number.isFinite(v))) {
+        reasons.push(`${lead}: sinal contínuo e máscara integral não comprovados.`);
+      }
+    }
+    if (![100, 500].includes(sessionPackage.samplingRateHz)) {
+      reasons.push("Taxa digital comum de 100 ou 500 Hz não comprovada após reamostragem explícita.");
     }
 
     // 4. Verificação de DURAÇÃO CONTÍNUA necessária pelo modelo autoral (10.0 s padrão PTB-XL)
@@ -102,7 +116,7 @@
     // Verifica disponibilidade do backend autoral
     reasons.push(
       "A Edge Function 'ecg-signal-classifier' (classificador autoral deep-learning de sinais brutos 12x10s) " +
-      "não está implantada neste ambiente. A inferência autoral de sinais permanece rigorosamente bloqueada com transparência."
+      "não foi verificada como disponível e autorizada neste ambiente. A inferência autoral de sinais permanece bloqueada."
     );
 
     return {
@@ -182,7 +196,7 @@
         body: {
           signals: pkg.signals,
           validMasks: pkg.validMasks,
-          samplingRateHz: 500,
+          samplingRateHz: pkg.samplingRateHz,
           calibration: pkg.calibration
         }
       });
@@ -294,3 +308,5 @@
     initStage3Package(window.LuriaEcgSessionData);
   }
 })();
+
+
