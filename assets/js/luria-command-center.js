@@ -78,40 +78,50 @@ function activityMinutes(activity){
  const minimum=activity.kind==="lesson"?60:30;
  return Number.isFinite(estimate)&&estimate>0?Math.max(minimum,Math.ceil(estimate)):minimum;
 }
+function studyDay(date=new Date()){return date.toLocaleDateString("sv-SE")}
+function studyOwner(){return String(window.docmapUser?.id||"")}
+function studyDailyKey(){const owner=studyOwner();return owner?"luria:guided-study-daily:"+owner+":"+studyDay():null}
 function sessionSteps(minutes){
- const acts=todayActivities(),steps=[],budget=minutes===999?Infinity:minutes;let used=0;
- const add=(title,detail,min,href)=>{if(min>0&&used+min<=budget){steps.push({title,detail,min,href});used+=min}};
- const metric=id=>Number(String(window.luriaDashboardMetrics?.[id]??d.getElementById(id)?.textContent??"").match(/\d+/)?.[0]||0);
- // Reserve full activities first; short sessions never squeeze a lesson into 15 minutes.
- acts.forEach(a=>add(a.title||"Atividade do cronograma",a.area||"Atividade de hoje",activityMinutes(a),studyActivityHref(a)));
- if(metric("metric-errors"))add("Revisar erros","Abra diretamente as revisões pendentes de hoje.",Math.min(20,budget-used),"/caderno-erros/revisao/?mode=today");
- if(metric("metric-flashcards"))add("Flashcards vencidos","Revisão dos cartões pendentes.",Math.min(15,budget-used),"/flashcards/");
- if(metric("metric-questions")||steps.length<2)add("Questões direcionadas","Pratique questões no tempo disponível.",Math.min(30,budget-used),"/resolver-questoes/?daily=1");
- if(!steps.length)add("Revisão guiada","Comece com flashcards e siga para questões.",Math.min(20,budget),"/flashcards/");
- return steps;
+ const acts=todayActivities(),lesson=acts.find(a=>["lesson","subject_review"].includes(String(a?.kind||"")))||acts[0];
+ const topic=String(lesson?.title||lesson?.theme||lesson?.materia||"").trim();
+ const budget=minutes===999?Math.max(90,acts.reduce((sum,a)=>sum+activityMinutes(a),0)):Math.max(15,Number(minutes)||30);
+ const first=Math.max(5,Math.floor(budget*.4)),second=Math.max(5,Math.floor(budget*.35)),third=Math.max(5,budget-first-second);
+ return [
+  {title:topic?"Aprender: "+topic:"Aprender o tema de hoje",detail:topic?"Retome o conteúdo previsto no cronograma.":"Escolha uma apostila ou anotação para estudar.",min:first,href:lesson?studyActivityHref(lesson):"/apostilas/"},
+  {title:"Praticar com questões",detail:"Teste o que entendeu e identifique lacunas antes de explicar.",min:second,href:"/resolver-questoes/?daily=1"},
+  {title:"Ensinar ao Alex · Método Feynman",detail:"Explique o tema sem consultar, responda perguntas e receba uma avaliação.",min:third,href:"/feynman/"+(topic?"?topic="+encodeURIComponent(topic):"")}
+ ];
 }
-function activeGuidedSession(){
+function dailyGuidedSession(){
  try{
-   const plan=JSON.parse(sessionStorage.getItem("luria:guided-study-plan")||"null");
-   const steps=Array.isArray(plan?.steps)?plan.steps:[];
-   if(!plan?.createdAt||!steps.length)return null;
-   const progress=JSON.parse(sessionStorage.getItem("luria:guided-study-progress")||"null");
-   const completed=progress?.createdAt===plan.createdAt?Number(progress.completedThrough??-1):-1;
-   if(completed>=steps.length-1)return null;
-   return plan;
+  const key=studyDailyKey();
+  let plan=JSON.parse(sessionStorage.getItem("luria:guided-study-plan")||"null");
+  const record=key?JSON.parse(localStorage.getItem(key)||"null"):null;
+  const valid=p=>!!p?.createdAt&&Array.isArray(p.steps)&&p.steps.length===3
+   &&(p.day||studyDay(new Date(p.createdAt)))===studyDay()
+   &&(!p.ownerId||!studyOwner()||p.ownerId===studyOwner());
+  if(!valid(plan)){plan=valid(record?.plan)?record.plan:null;if(plan)sessionStorage.setItem("luria:guided-study-plan",JSON.stringify(plan));}
+  if(!plan)return null;
+  let progress=JSON.parse(sessionStorage.getItem("luria:guided-study-progress")||"null");
+  if(progress?.createdAt!==plan.createdAt)progress=record?.progress?.createdAt===plan.createdAt?record.progress:null;
+  if(progress?.createdAt===plan.createdAt)sessionStorage.setItem("luria:guided-study-progress",JSON.stringify(progress));
+  const completed=progress?.createdAt===plan.createdAt?Number(progress.completedThrough??-1):-1;
+  return {plan,completed,done:completed>=plan.steps.length-1};
  }catch{return null}
 }
+function activeGuidedSession(){const state=dailyGuidedSession();return state&&!state.done?state.plan:null}
 function studyBundleCounts(minutes){
  const available=minutes===999?90:Math.max(15,Number(minutes)||30);
  return {questions:available<=30?5:available<=60?10:15,flashcards:available<=30?8:available<=60?15:24};
 }
 function guidedPlan(steps,minutes,requestedMinutes,topic=""){
- const plan={minutes,requestedMinutes,topic:String(topic||"").trim(),steps,createdAt:Date.now()};
+ const plan={minutes,requestedMinutes,topic:String(topic||"").trim(),steps,createdAt:Date.now(),day:studyDay(),ownerId:studyOwner()||null};
  try{
   sessionStorage.setItem("luria:guided-study-plan",JSON.stringify(plan));
   sessionStorage.removeItem("luria:guided-study-progress");
   sessionStorage.removeItem("luria:guided-study-active");
   sessionStorage.removeItem("luria:guided-study-step-complete");
+  const key=studyDailyKey();if(key)localStorage.setItem(key,JSON.stringify({plan,progress:null}));
  }catch{}
  return plan;
 }
@@ -132,9 +142,7 @@ async function topicStudySteps(topic,minutes){
   data?.question_set_id
    ?{title:`Questões de ${subject}`,detail:`${Number(data.question_count)||0} questões sorteadas agora do banco LURIA.`,min:second,href:"/resolver-questoes/?set_id="+encodeURIComponent(data.question_set_id)}
    :{title:`Praticar ${subject}`,detail:"Abra a biblioteca e escolha questões deste assunto.",min:second,href:"/questoes-simulados/"},
-  cardIds.length
-   ?{title:`Flashcards de ${subject}`,detail:`${cardIds.length} flashcards sorteados agora para esta sessão.`,min:third,href:"/flashcards/?study_ids="+encodeURIComponent(cardIds.join(","))+"&study_topic="+encodeURIComponent(subject)}
-   :{title:`Explicar ${subject} para a IA`,detail:"Feche a sessão verificando o que você realmente entendeu.",min:third,href:"/feynman/?topic="+encodeURIComponent(subject)}
+  {title:`Ensinar ${subject} ao Alex · Método Feynman`,detail:"Explique sem consultar, responda perguntas e descubra lacunas. "+(cardIds.length?`Depois, revise ${cardIds.length} flashcards sugeridos.`:""),min:third,href:"/feynman/?topic="+encodeURIComponent(subject)}
  ];
  return {steps,planned:requested,bundle:data};
 }
@@ -179,38 +187,26 @@ function preExam(){
  const render=()=>{if(!dt.value){plan.innerHTML="";return}const days=Math.max(0,Math.ceil((new Date(dt.value+"T12:00:00")-new Date())/86400000));const intensity=days<=7?"intensiva":days<=21?"prioritária":"progressiva";plan.innerHTML='<div class="luria-session-step"><b>1</b><div><strong>Revisão '+intensity+'</strong><small>'+days+' dia'+(days===1?"":"s")+' até a prova · priorizar erros, flashcards vencidos e questões de menor desempenho.</small></div><span>'+Math.min(60,20+Math.max(0,21-days))+' min/dia</span></div>'};dt.onchange=render;render();$("#luria-preexam-save",o).onclick=()=>{localStorage.setItem("luria:preexam",JSON.stringify({name:n.value.trim(),date:dt.value,updatedAt:new Date().toISOString()}));o.remove()}
 }
 function bindNativeStudyPanels(){
- const active=activeGuidedSession();
- const state=active?"active":"idle";
+ const daily=dailyGuidedSession(),state=daily?(daily.done?"done":"active"):"idle";
  all("[data-luria-study-panel]").forEach(panel=>{
-   if(panel.dataset.luriaSessionState===state)return;
-   let mins=30;
-   const title=panel.querySelector("h3");
-   const timeButtons=all("[data-luria-study-time]",panel);
-   timeButtons.forEach(btn=>{
-     if(btn.hidden!==!!active)btn.hidden=!!active;
-     btn.onclick=()=>{
-       mins=Number(btn.dataset.luriaStudyTime)||30;
-       timeButtons.forEach(x=>{x.classList.toggle("active",x===btn);x.setAttribute("aria-pressed",String(x===btn))});
-     };
-   });
-   const start=panel.querySelector("[data-luria-study-start]");
-   if(active){
-     panel.classList.add("has-active-session");
-     if(title&&title.textContent!=="Voltar para a sessão")title.textContent="Voltar para a sessão";
-     if(start){
-       if(start.textContent!=="Voltar para a sessão")start.textContent="Voltar para a sessão";
-       start.onclick=()=>{location.href="/sessao-estudo/"};
-     }
-   }else{
-     panel.classList.remove("has-active-session");
-     if(title&&title.textContent!=="Estudar agora")title.textContent="Estudar agora";
-     if(start){
-       if(start.textContent!=="Estudar agora")start.textContent="Estudar agora";
-       start.onclick=()=>openStudyChoice(mins);
-     }
-   }
-   panel.dataset.luriaBound="1";
-   panel.dataset.luriaSessionState=state;
+  if(panel.dataset.luriaSessionState===state)return;
+  let mins=30;
+  const title=panel.querySelector("h3"),timeButtons=all("[data-luria-study-time]",panel);
+  if(title)title.textContent="Estudar agora";
+  timeButtons.forEach(btn=>{
+   btn.hidden=state!=="idle";
+   btn.onclick=()=>{
+    mins=Number(btn.dataset.luriaStudyTime)||30;
+    timeButtons.forEach(x=>{x.classList.toggle("active",x===btn);x.setAttribute("aria-pressed",String(x===btn))});
+   };
+  });
+  const start=panel.querySelector("[data-luria-study-start]");
+  panel.classList.toggle("has-active-session",state==="active");
+  if(start){
+   start.textContent=state==="active"?"Continuar estudo de hoje":state==="done"?"Ver estudo concluído":"Iniciar estudo de hoje";
+   start.onclick=state==="idle"?()=>openStudyChoice(mins):()=>{location.href="/sessao-estudo/"};
+  }
+  panel.dataset.luriaBound="1";panel.dataset.luriaSessionState=state;
  });
 }
 function commandCard(){
@@ -229,9 +225,9 @@ function commandCard(){
  action.type="button";
  action.className="dl-primary luria-dashboard-study-now";
  action.dataset.luriaStudyNowInline="1";
- const active=activeGuidedSession();
- action.textContent=active?"Voltar para a sessão":"Estudar agora";
-  action.onclick=()=>active?(location.href="/sessao-estudo/"):openStudyChoice(30);
+ const daily=dailyGuidedSession();
+ action.textContent=daily?(daily.done?"Ver estudo concluído":"Continuar estudo de hoje"):"Iniciar estudo de hoje";
+ action.onclick=()=>daily?(location.href="/sessao-estudo/"):openStudyChoice(30);
  const timeline=activityCard.querySelector(".dl-timeline,.dl-empty");
  activityCard.classList.add("luria-has-study-now");
  if(timeline?.parentNode) timeline.parentNode.appendChild(action);
