@@ -20,6 +20,9 @@
   async function readSavedPdf(owner) {
     originalPdf = null;
     refreshPdfControls();
+    // Em navegadores sem IndexedDB (ou prévias/testes sem persistência),
+    // não dispare uma Promise cujo erro chegaria depois do encerramento da página.
+    if (!window.indexedDB) return;
     try {
       const record = await pdfSupport.getPdf(owner);
       if (owner !== userId) return;
