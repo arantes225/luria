@@ -20,11 +20,13 @@
   const dim = byId("ecg-normal-photo-dim");
   const help = byId("ecg-normal-photo-corner-help");
   const resetButton = byId("ecg-normal-photo-reset");
+  const rotateLeft = byId("ecg-normal-photo-rotate-left");
+  const rotateRight = byId("ecg-normal-photo-rotate-right");
   const cornersButtons = Array.from(doc.querySelectorAll("[data-ecg-corner]"));
   const selectionRadios = Array.from(doc.querySelectorAll('input[name="ecg-photo-selection"]'));
   const perspective = global.LuriaEcgPhotoPerspective;
   if (![openButton, input, page, preview, details, error, btnClose, btnRetake, btnProcess, frame,
-         outline, dim, help, resetButton, perspective].every(Boolean) ||
+         outline, dim, help, resetButton, rotateLeft, rotateRight, perspective].every(Boolean) ||
       cornersButtons.length !== 4 || selectionRadios.length !== 2) return;
 
   let sourceFile = null;
@@ -71,15 +73,26 @@
   let selection = "corners";
   let photoWidth = 0;
   let photoHeight = 0;
+  let rotationQuarterTurns = 0;
 
   function layoutPhotoFrame() {
     if (!photoWidth || !photoHeight) return;
-    const ratio = photoWidth / photoHeight;
-    const availableW = Math.max(240, frame.parentElement?.clientWidth || 340);
-    const availableH = Math.min(680, Math.max(220, (global.innerHeight || 680) * .56));
+    const sideways = rotationQuarterTurns % 2 === 1;
+    const displayW = sideways ? photoHeight : photoWidth;
+    const displayH = sideways ? photoWidth : photoHeight;
+    const ratio = displayW / displayH;
+    const availableW = Math.max(180, frame.parentElement?.clientWidth || 340);
+    const availableH = Math.min(680, Math.max(170, (global.innerHeight || 680) * .56));
     const width = Math.max(1, Math.floor(Math.min(availableW, availableH * ratio)));
+    const height = Math.max(1, Math.round(width / ratio));
     frame.style.width = width + "px";
-    frame.style.height = Math.round(width / ratio) + "px";
+    frame.style.height = height + "px";
+    preview.style.position = "absolute";
+    preview.style.left = "50%";
+    preview.style.top = "50%";
+    preview.style.width = (sideways ? height : width) + "px";
+    preview.style.height = (sideways ? width : height) + "px";
+    preview.style.transform = "translate(-50%, -50%) rotate(" + (rotationQuarterTurns * 90) + "deg)";
   }
 
   function updateCorners() {
@@ -165,6 +178,17 @@
     });
   });
   resetButton.addEventListener("click", resetCorners);
+  function rotatePhoto(delta) {
+    if (!sourceFile || working) return;
+    rotationQuarterTurns = (rotationQuarterTurns + delta + 4) % 4;
+    layoutPhotoFrame();
+    resetCorners();
+    showError("");
+    details.textContent = formatDetails(sourceFile, photoWidth, photoHeight) +
+      " · Orientação escolhida: " + (rotationQuarterTurns * 90) + "°.";
+  }
+  rotateLeft.addEventListener("click", () => rotatePhoto(-1));
+  rotateRight.addEventListener("click", () => rotatePhoto(1));
   selectionRadios.forEach(radio => radio.addEventListener("change", () => {
     if (radio.checked) setSelection(radio.value);
   }));
@@ -251,6 +275,7 @@
       sourceFile = file;
       photoWidth = width;
       photoHeight = height;
+      rotationQuarterTurns = 0;
       details.textContent = formatDetails(file, width, height);
       frame.hidden = false;
       preview.hidden = false;
@@ -280,13 +305,15 @@
     btnProcess.disabled = true;
     btnClose.disabled = true;
     btnRetake.disabled = true;
+    rotateLeft.disabled = true;
+    rotateRight.disabled = true;
     showError("");
     details.textContent = "Extraindo o ECG a partir da foto original…";
     try {
       // Both A/B methods share the existing extraction and audit pipeline.
       const selectionOptions = selection === "corners"
-        ? { corners: perspective.cloneCorners(corners), paperSelection: "manual_four_corners" }
-        : { corners: null, paperSelection: "full_photo" };
+        ? { corners: perspective.cloneCorners(corners), paperSelection: "manual_four_corners", rotationDeg: rotationQuarterTurns * 90 }
+        : { corners: null, paperSelection: "full_photo", rotationDeg: rotationQuarterTurns * 90 };
       const result = await global.LuriaEcgProcessPhoto(sourceFile, "normal_photo", selectionOptions);
       if (!result?.ok) {
         showError(result?.reason || "Não foi possível extrair o ECG. Confira a folha e tente novamente.");
@@ -307,6 +334,8 @@
       btnProcess.disabled = !sourceFile;
       btnClose.disabled = false;
       btnRetake.disabled = false;
+      rotateLeft.disabled = false;
+      rotateRight.disabled = false;
     }
   });
 })(typeof window !== "undefined" ? window : globalThis);
