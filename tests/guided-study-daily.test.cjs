@@ -10,6 +10,7 @@ const daily = read("assets/js/guided-study-daily.js");
 const feynman = read("assets/js/feynman.mjs");
 const session = read("sessao-estudo/index.html");
 const dashboard = read("assets/js/dashboard-layouts.js");
+const sessionController = read("assets/js/guided-study-session-page.js");
 
 test("estudo novo encerra com Feynman e revisão começa por diagnóstico Feynman", () => {
  const fn=command.slice(command.indexOf("function activityTopic(activity){"),command.indexOf("function dailyGuidedSession(){"));
@@ -52,7 +53,7 @@ test("o Dashboard nunca substitui o card diário por Voltar para a sessão", () 
  assert.doesNotMatch(command,/Voltar para a sessão/);
  assert.match(command,/Continuar estudo de hoje/);
  assert.match(command,/Ver estudo concluído/);
- assert.match(dashboard,/Todo dia: aprenda, pratique e ensine/);
+ assert.match(dashboard,/Revisão: Feynman logo no início/);
  assert.match(command,/p\.day\|\|studyDay\(new Date\(p\.createdAt\)\)/);
 });
 
@@ -73,12 +74,14 @@ test("a etapa Feynman só é concluída após relatório, mesmo tema e data", ()
  assert.match(feynman,/luria:guided-study-diagnostic/);
  assert.match(feynman,/completeActiveStep\?\.\("feynman-assessed"\)/);
  assert.match(session,/Aprender\. Praticar\. Ensinar\./);
- assert.match(session,/Diagnóstico Feynman · Onde focar sua revisão/);
+ assert.match(sessionController,/Diagnóstico Feynman · Onde focar sua revisão/);
+ assert.match(session,/src="\/assets\/js\/guided-study-session-page\.js/);
+ assert.doesNotMatch(session,/<script>\s*\(function/);
  assert.match(daily,/active\.activeIndex===next/);
 });
 
 test("scripts atualizados mantêm sintaxe válida", () => {
- for(const file of ["assets/js/luria-command-center.js","assets/js/guided-study-daily.js","assets/js/dashboard-layouts.js","assets/js/feynman.mjs"]){
+ for(const file of ["assets/js/luria-command-center.js","assets/js/guided-study-daily.js","assets/js/dashboard-layouts.js","assets/js/feynman.mjs","assets/js/guided-study-session-page.js"]){
   assert.doesNotThrow(()=>new vm.Script(read(file),{filename:file}));
  }
 });
