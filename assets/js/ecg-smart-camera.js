@@ -443,7 +443,8 @@
 
       // 1. Detecta limites reais, orientação, perspectiva, grade, calibração e rótulos
       let boundaries = cvEngine.detectECGBoundaries(fullImageData, {
-        userCalibration: sessionCalibration.confirmedByUser ? sessionCalibration : options.userCalibration
+        userCalibration: sessionCalibration.confirmedByUser ? sessionCalibration : options.userCalibration,
+        paperAlreadyRectified: options.manualPaperCornersApplied === true
       });
 
       // The CV engine returns a plain {width,height,data} object, not a
