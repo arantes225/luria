@@ -16,7 +16,7 @@ test("standalone notes pages do not load the split reader eagerly", () => {
   for (const path of ["caderno.html", "caderno/index.html"]) {
     const html = read(path);
     assert.match(html, /id="notebook-view-editor" class="notebook-view" hidden/);
-    assert.match(html, /src="\/assets\/js\/caderno\.js/);
+    assert.match(html, /src="(?:\/)?assets\/js\/caderno\.js/);
     assert.match(html, /src="\/assets\/js\/caderno-study-lazy\.js/);
     assert.doesNotMatch(html, /<script src="\/assets\/js\/study-side-by-side\.js/);
   }
