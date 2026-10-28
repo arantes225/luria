@@ -26,6 +26,9 @@
   }
 
   if (!("serviceWorker" in navigator)) return;
+  // The standalone /luria/ project URL is an online fallback; its legacy SW
+  // assumes origin-root URLs. Do not install a worker with invalid cache scope.
+  if (new URL(document.baseURI).pathname !== "/") return;
 
   const release = "20261013-width2";
   const refreshKey = "luria:pwa:activated:" + release;
@@ -71,8 +74,8 @@
   async function registerLatestWorker() {
     try {
       registrationPromise ||= navigator.serviceWorker.register(
-        "/service-worker.js?v=" + release,
-        { scope: "/", updateViaCache: "none" }
+        (window.luriaSitePath?.("/service-worker.js?v=" + release) || "/service-worker.js?v=" + release),
+        { scope: (new URL(document.baseURI)).pathname, updateViaCache: "none" }
       );
       const registration = await registrationPromise;
       await registration.update();

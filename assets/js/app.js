@@ -4311,7 +4311,7 @@ function ensureNotificationCenter() {
   });
   document.getElementById("luria-profile-logout")?.addEventListener("click", async () => {
     try { await sb.auth.signOut(); } catch {}
-    window.location.href = "/login/";
+    window.location.href = (window.luriaSitePath?.("/login/") || "/login/");
   });
 
   if (page === "questoes") {
@@ -6429,7 +6429,7 @@ async function iniciarApp() {
   await authOwner?.ready;
   if (window.LuriaSessionInvalidated) return;
   if (user && authOwner && authOwner.ownerId !== user.id) {
-    window.location.replace(authOwner.ownerId ? window.location.href : "/login/");
+    window.location.replace(authOwner.ownerId ? window.location.href : (window.luriaSitePath?.("/login/") || "/login/"));
     return;
   }
   if (error || !data?.session) {
@@ -6437,7 +6437,7 @@ async function iniciarApp() {
       user = { id: 'dev-user-id', email: 'dev@luria.med.br' };
       window.docmapUser = user;
     } else {
-      window.location.replace("/login/");
+      window.location.replace(window.luriaSitePath?.("/login/") || "/login/");
       return;
     }
   }
@@ -6452,7 +6452,7 @@ async function iniciarApp() {
 
   if (page === "professor_alex") {
     if (accessState?.acessoAdmin !== true) {
-      window.location.replace("/dashboard/");
+      window.location.replace(window.luriaSitePath?.("/dashboard/") || "/dashboard/");
       return;
     }
   }
@@ -6469,7 +6469,7 @@ async function iniciarApp() {
       || ["plus", "pro", "betatester"].includes(workPlan);
 
     if (!workAllowed) {
-      window.location.replace("/dashboard/");
+      window.location.replace(window.luriaSitePath?.("/dashboard/") || "/dashboard/");
       return;
     }
   }
@@ -6612,7 +6612,7 @@ async function iniciarApp() {
         } catch (_) {}
 
         // Landing pública é a saída mais previsível no navegador e no PWA.
-        window.location.replace("/");
+        window.location.replace(window.luriaSitePath?.("/") || "/");
       }
     });
   }
@@ -6862,7 +6862,7 @@ iniciarApp();
 (function loadStudyPresence(){
   if(document.querySelector('script[data-luria-study-presence]'))return;
   const script=document.createElement('script');
-  script.src='/assets/js/social-presence.js?v=1';
+  script.src=window.luriaSitePath?.('/assets/js/social-presence.js?v=1') || '/assets/js/social-presence.js?v=1';
   script.dataset.luriaStudyPresence='true';
   script.defer=true;
   document.head.appendChild(script);
@@ -6871,7 +6871,7 @@ iniciarApp();
 (function loadFeedbackChecklist(){
   if(document.querySelector('script[data-luria-feedback-checklist]'))return;
   const script=document.createElement('script');
-  script.src='/assets/js/feedback-checklist.js?v=8';
+  script.src=window.luriaSitePath?.('/assets/js/feedback-checklist.js?v=8') || '/assets/js/feedback-checklist.js?v=8';
   script.dataset.luriaFeedbackChecklist='true';
   script.defer=true;
   document.head.appendChild(script);

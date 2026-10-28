@@ -37,6 +37,8 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Check JavaScript syntax
         run: node scripts/check-syntax.cjs
+      - name: Verify project Pages routes and asset paths
+        run: node --test tests/pages-base-links.test.cjs
       - name: Guard public-site artifact against internal files
         run: node --test tests/public-artifact-security.test.cjs
       - name: Check shared CSS and application routes
