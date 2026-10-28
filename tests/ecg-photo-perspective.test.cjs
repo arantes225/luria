@@ -1,7 +1,7 @@
 "use strict";
 const test = require("node:test");
 const assert = require("node:assert/strict");
-const { DEFAULT_CORNERS, cloneCorners, validateCorners, computeProjectiveMap, rectifyCanvas } =
+const { DEFAULT_CORNERS, cloneCorners, validateCorners, computeProjectiveMap, rectifyCanvas, rotateCanvasQuarter } =
   require("../assets/js/ecg-photo-perspective.js");
 
 const near = (a, b, epsilon = .002) => assert.ok(Math.abs(a-b) < epsilon, "Expected " + a + " ~= " + b);
@@ -69,4 +69,39 @@ test("rectification removes pixels outside selected quadrilateral", () => {
   } finally {
     global.document=oldDocument;
   }
+});
+
+
+test("quarter-turn rotation swaps native pixel dimensions instead of cropping paper", () => {
+  const oldDocument=global.document;
+  const transformations=[];
+  global.document={createElement: () => {
+    const canvas={width:0,height:0};
+    canvas.getContext=()=>({
+      set imageSmoothingEnabled(value){transformations.push(["smoothing",value]);},
+      translate(x,y){transformations.push(["translate",x,y]);},
+      rotate(rad){transformations.push(["rotate",rad]);},
+      drawImage(original){transformations.push(["draw",original.width,original.height]);}
+    });
+    return canvas;
+  }};
+  const source={width:400,height:200};
+  try {
+    assert.equal(rotateCanvasQuarter(source,0),source,"zero turns reuses original");
+    const clockwise=rotateCanvasQuarter(source,1);
+    assert.equal(clockwise.width,200);
+    assert.equal(clockwise.height,400);
+    assert.ok(transformations.some(t=>t[0]==="translate"&&t[1]===200&&t[2]===0));
+    near(transformations.find(t=>t[0]==="rotate")[1],Math.PI/2);
+    transformations.length=0;
+    const counterclockwise=rotateCanvasQuarter(source,-1);
+    assert.equal(counterclockwise.width,200);
+    assert.equal(counterclockwise.height,400);
+    assert.ok(transformations.some(t=>t[0]==="translate"&&t[1]===0&&t[2]===400));
+    near(transformations.find(t=>t[0]==="rotate")[1],-Math.PI/2);
+    const upsideDown=rotateCanvasQuarter(source,2);
+    assert.equal(upsideDown.width,400);
+    assert.equal(upsideDown.height,200);
+    assert.throws(()=>rotateCanvasQuarter(source,1.5),RangeError);
+  } finally {global.document=oldDocument;}
 });
