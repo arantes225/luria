@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261028-provisional-v5";
+const CACHE_VERSION = "luria-pwa-20261028-provisional-v6";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -76,7 +76,8 @@ const APP_SHELL = [
   "/assets/css/education-ui-v2.css?v=2",
   "/assets/css/feynman.css?v=20261026-1",
   "/assets/js/feynman.mjs?v=20261028-daily-feynman",
-  "/assets/js/guided-study-daily.js?v=20261028-daily-feynman",
+  "/assets/js/guided-study-daily.js?v=20261028-review-first",
+  "/assets/js/guided-study-session-page.js?v=20261028-review-first",
   "/assets/css/social-v3.css?v=2",
   "/assets/css/social-v4.css?v=9",
   "/assets/css/social-friends.css?v=12",
