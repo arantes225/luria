@@ -32,7 +32,8 @@
       if (!original) continue;
       const normalized = normalize(original);
       if (normalized.length < 5) continue;
-      const heading = categories.find(group =>
+      const containsYear = /(?:^|[^\d])(?:19|20)\d{2}(?=$|[^\d])/.test(original);
+      const heading = !containsYear && categories.find(group =>
         group.match.test(normalized)
         && (normalized.length < 95 || /^\d+\.?\s*formacao academica/.test(normalized)));
       if (heading) {
