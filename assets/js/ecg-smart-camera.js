@@ -110,7 +110,69 @@
       ? global.LuriaEcgCvEngine.createEngine()
       : null;
 
-    // Amortecedor temporal para mensagens visuais do HUD
+    let debugOverlayEl = options.debugOverlayEl || (hudContainer ? hudContainer.querySelector("#ecg-debug-canvas") : null);
+    let debugOverlayEnabled = false;
+
+    function renderDebugDiagnostics(result) {
+      if (!debugOverlayEnabled || !debugOverlayEl || !result) return;
+      const ctx = debugOverlayEl.getContext("2d");
+      const w = debugOverlayEl.width = videoEl.videoWidth || 640;
+      const h = debugOverlayEl.height = videoEl.videoHeight || 480;
+      ctx.clearRect(0, 0, w, h);
+
+      const doc = result.docDetection;
+      if (!doc) return;
+
+      // 1. Polígono da folha identificada
+      if (doc.sheet && doc.sheet.corners) {
+        const c = doc.sheet.corners;
+        ctx.strokeStyle = doc.detected ? "#10b981" : "#ef4444";
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.moveTo(c.topLeft.x, c.topLeft.y);
+        ctx.lineTo(c.topRight.x, c.topRight.y);
+        ctx.lineTo(c.bottomRight.x, c.bottomRight.y);
+        ctx.lineTo(c.bottomLeft.x, c.bottomLeft.y);
+        ctx.closePath();
+        ctx.stroke();
+
+        ctx.fillStyle = doc.detected ? "rgba(16, 185, 129, 0.12)" : "rgba(239, 68, 68, 0.15)";
+        ctx.fill();
+      }
+
+      // 2. Caixas das derivações e rótulos OCR
+      const leads = doc.leads || doc.detectedLayout?.leads || {};
+      Object.keys(leads).forEach(leadName => {
+        const box = leads[leadName];
+        if (!box) return;
+        const bx = box.xMin * w;
+        const by = box.yMin * h;
+        const bw = (box.xMax - box.xMin) * w;
+        const bh = (box.yMax - box.yMin) * h;
+
+        ctx.strokeStyle = "#38bdf8";
+        ctx.lineWidth = 1.5;
+        ctx.strokeRect(bx, by, bw, bh);
+
+        ctx.fillStyle = "rgba(15, 23, 42, 0.85)";
+        ctx.fillRect(bx, by, 38, 16);
+        ctx.fillStyle = "#38bdf8";
+        ctx.font = "bold 11px sans-serif";
+        ctx.fillText(leadName, bx + 4, by + 12);
+      });
+
+      // 3. Informações de Diagnóstico no topo
+      ctx.fillStyle = "rgba(15, 23, 42, 0.88)";
+      ctx.fillRect(8, 8, 280, 110);
+      ctx.fillStyle = "#fff";
+      ctx.font = "11px monospace";
+      ctx.fillText(`ESTADO: ${doc.state || (doc.detected ? "LOCKED" : "SEARCH")}`, 14, 24);
+      ctx.fillText(`LAYOUT: ${doc.detectedLayout?.name || "none"} (${doc.layoutConfidence || "none"})`, 14, 40);
+      ctx.fillText(`GRADE: ${doc.calibration?.calibrationSource || "unknown"} (dx:${doc.calibration?.pixelsPerMmX?.toFixed(1) || "?"}px)`, 14, 56);
+      ctx.fillText(`NITIDEZ: ${result.quality?.sharpnessScore?.toFixed(1) || 0} | LUMA: ${result.quality?.brightness?.toFixed(0) || 0}`, 14, 72);
+      ctx.fillText(`EVIDÊNCIA: ${doc.detected ? "APROVADA" : (doc.message || "Buscando...")}`, 14, 88);
+      ctx.fillText(`REFLEXO: ${((result.quality?.glareRatio || 0) * 100).toFixed(1)}%`, 14, 104);
+    }
     let lastHudMessage = "Localizando ECG...";
     let lastMessageTimestamp = 0;
     const MESSAGE_DEBOUNCE_MS = 550;
@@ -217,9 +279,22 @@
       }
     }
 
+    let isProcessingFrame = false;
+    let lastFrameProcessTime = 0;
+    const MIN_FRAME_INTERVAL_MS = 140; // ~7 FPS máximo para processamento CV pesado em celulares intermediários
+
     function scheduleLoop() {
       if (!isCapturingActive) return;
-      processCurrentFrame();
+      const now = (typeof performance !== "undefined" && typeof performance.now === "function") ? performance.now() : Date.now();
+      if (!isProcessingFrame && now - lastFrameProcessTime >= MIN_FRAME_INTERVAL_MS) {
+        lastFrameProcessTime = now;
+        isProcessingFrame = true;
+        try {
+          processCurrentFrame();
+        } finally {
+          isProcessingFrame = false;
+        }
+      }
       animationFrameId = requestAnimationFrame(scheduleLoop);
     }
 
@@ -232,6 +307,11 @@
       if (!result || !result.ok) return;
 
       const { quality, isStable, motionBlur, docDetection } = result;
+
+      // Executa depuração visual se habilitada (sem afetar lógica de algoritmo)
+      if (debugOverlayEnabled) {
+        renderDebugDiagnostics(result);
+      }
       if (mode === "ultrasensitive") {
         cvEngine.updateSpatialRegistration(cameraSpatialTracker,
           docDetection?.detected ? docDetection.sheet : null,
@@ -951,6 +1031,43 @@
       return track.getCapabilities() || {};
     }
 
+    async function setCameraZoom(zoomLevel) {
+      const track = getVideoTrack();
+      if (!track || typeof track.getCapabilities !== "function" || typeof track.applyConstraints !== "function") {
+        return { ok: false, reason: "Zoom API unsupported" };
+      }
+      const caps = track.getCapabilities() || {};
+      if (!caps.zoom) {
+        return { ok: false, reason: "Zoom hardware unavailable" };
+      }
+      const min = caps.zoom.min || 1;
+      const max = caps.zoom.max || 1;
+      const clamped = Math.max(min, Math.min(max, Number(zoomLevel)));
+      try {
+        await track.applyConstraints({ advanced: [{ zoom: clamped }] });
+        return { ok: true, zoom: clamped };
+      } catch (err) {
+        return { ok: false, error: err?.message || String(err) };
+      }
+    }
+
+    async function setCameraFocus(focusMode = "continuous") {
+      const track = getVideoTrack();
+      if (!track || typeof track.getCapabilities !== "function" || typeof track.applyConstraints !== "function") {
+        return { ok: false, reason: "Focus API unsupported" };
+      }
+      const caps = track.getCapabilities() || {};
+      if (!caps.focusMode || !caps.focusMode.includes(focusMode)) {
+        return { ok: false, reason: "Focus mode unsupported" };
+      }
+      try {
+        await track.applyConstraints({ advanced: [{ focusMode }] });
+        return { ok: true, focusMode };
+      } catch (err) {
+        return { ok: false, error: err?.message || String(err) };
+      }
+    }
+
     async function toggleTorch(enabled) {
       const track = getVideoTrack();
       if (!track || typeof track.getCapabilities !== "function" || typeof track.applyConstraints !== "function") {
@@ -999,6 +1116,14 @@
       updateHudProgress,
       getCameraCapabilities,
       toggleTorch,
+      setCameraZoom,
+      setCameraFocus,
+      toggleDebugOverlay: (enable) => {
+        debugOverlayEnabled = (typeof enable === "boolean") ? enable : !debugOverlayEnabled;
+        if (debugOverlayEl) debugOverlayEl.hidden = !debugOverlayEnabled;
+        return debugOverlayEnabled;
+      },
+      isDebugOverlayEnabled: () => debugOverlayEnabled,
       triggerManualCapture: () => {
         if (!videoEl || !canvasEl || !cvEngine) return false;
         const snapCanvas = document.createElement("canvas");

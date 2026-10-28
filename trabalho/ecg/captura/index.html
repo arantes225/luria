@@ -479,6 +479,7 @@
     <div class="ecg-capture-stage">
       <video id="ecg-video" playsinline muted></video>
       <canvas id="ecg-canvas-cv"></canvas>
+      <canvas id="ecg-debug-canvas" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:9" hidden></canvas>
       <div class="ecg-hud-flash" id="ecg-flash"></div>
 
       <div class="ecg-capture-hud" id="ecg-hud">
@@ -492,10 +493,17 @@
               <button type="button" class="ecg-hud-mode-btn is-active" id="ecg-mode-fast">Automático</button>
               <button type="button" class="ecg-hud-mode-btn" id="ecg-mode-ultra">Ultrassensível</button>
             </div>
+            <button type="button" class="ecg-hud-btn-back" id="ecg-btn-debug-toggle" style="display:none;font-size:11px;padding:4px 8px;background:rgba(220,38,38,0.3)" title="Diagnóstico de Depuração">
+              🐞 Diagnóstico
+            </button>
           </div>
 
           <div class="ecg-hud-top-right">
             <button id="ecg-btn-torch" class="ecg-hud-btn-icon" type="button" aria-label="Lanterna">🔦</button>
+            <div id="ecg-zoom-controls" style="display:none;align-items:center;gap:4px">
+              <button id="ecg-btn-zoom-1" class="ecg-hud-btn-back" type="button" style="padding:4px 8px;font-size:11px">1x</button>
+              <button id="ecg-btn-zoom-2" class="ecg-hud-btn-back" type="button" style="padding:4px 8px;font-size:11px">2x</button>
+            </div>
             <span class="ecg-hud-target-badge">ALVO: <span class="ecg-hud-target">DI</span></span>
           </div>
         </div>

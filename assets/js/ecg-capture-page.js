@@ -25,10 +25,32 @@
   const btnConfirmUncertain = byId("ecg-btn-confirm-uncertain");
   const btnRejectUncertain = byId("ecg-btn-reject-uncertain");
   const reticleEl = byId("ecg-reticle");
+  const btnDebugToggle = byId("ecg-btn-debug-toggle");
+  const zoomControls = byId("ecg-zoom-controls");
+  const btnZoom1 = byId("ecg-btn-zoom-1");
+  const btnZoom2 = byId("ecg-btn-zoom-2");
 
   let activeUncertainHandler = null;
   let activeMode = "fast";
   let torchActive = false;
+
+  // Verificação de modo de desenvolvimento/admin (ex: query param ?debug=true ou localStorage)
+  const isDebugAllowed = typeof window !== "undefined" && (
+    new URLSearchParams(window.location.search).get("debug") === "true" ||
+    window.location.hostname === "localhost" ||
+    window.location.hostname === "127.0.0.1" ||
+    localStorage.getItem("luria_ecg_debug") === "true"
+  );
+
+  if (btnDebugToggle && isDebugAllowed) {
+    btnDebugToggle.style.display = "inline-flex";
+    btnDebugToggle.addEventListener("click", () => {
+      if (cameraController?.toggleDebugOverlay) {
+        const enabled = cameraController.toggleDebugOverlay();
+        btnDebugToggle.style.background = enabled ? "#dc2626" : "rgba(220,38,38,0.3)";
+      }
+    });
+  }
 
   // Controlador de rotação LURIA integrado
   const rotateController = (global.LuriaRotateController && global.LuriaRotateController.create)
@@ -131,14 +153,21 @@
     }
   });
 
-  function checkTorchAvailability() {
-    if (!btnTorch || !cameraController?.getCameraCapabilities) return;
+  function checkHardwareCapabilities() {
+    if (!cameraController?.getCameraCapabilities) return;
     setTimeout(() => {
       const caps = cameraController.getCameraCapabilities();
-      if (caps && caps.torch) {
-        btnTorch.style.display = "inline-flex";
-      } else {
-        btnTorch.style.display = "none";
+      // Lanterna
+      if (btnTorch) {
+        btnTorch.style.display = (caps && caps.torch) ? "inline-flex" : "none";
+      }
+      // Zoom
+      if (zoomControls && caps && caps.zoom && caps.zoom.max > 1) {
+        zoomControls.style.display = "inline-flex";
+        btnZoom1?.addEventListener("click", () => cameraController.setCameraZoom?.(1));
+        btnZoom2?.addEventListener("click", () => cameraController.setCameraZoom?.(Math.min(2, caps.zoom.max)));
+      } else if (zoomControls) {
+        zoomControls.style.display = "none";
       }
     }, 600);
   }
@@ -156,7 +185,7 @@
   window.addEventListener("DOMContentLoaded", () => {
     if (cameraController) {
       cameraController.startCamera(activeMode);
-      checkTorchAvailability();
+      checkHardwareCapabilities();
     }
   });
 
