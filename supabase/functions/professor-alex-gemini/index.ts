@@ -253,7 +253,7 @@ Deno.serve(async (req: Request) => {
   const studyPlanning = experience === "alex" && isStudyPlanningRequest(prompt || topic);
   const modelToUse = Deno.env.get("ALEX_GEMINI_MODEL") || DEFAULT_MODEL;
   if (!/^gemini-(?:3[.\w-]*|2\.5-flash[\w-]*)$/.test(modelToUse)) return json({ error: "gemini_model_unavailable" }, 503, headers);
-  const rawHistory = Array.isArray(data.history) ? data.history.slice(-8) : [];
+  const rawHistory = Array.isArray(data.history) ? data.history.slice(-12) : [];
   if (!topic && !prompt) return json({ error: "empty_prompt" }, 400, headers);
 
   const voiceTranscript = prompt.toLocaleLowerCase("pt-BR").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[.\-]/g, " ").replace(/\s+/g, " ").trim();
@@ -275,7 +275,7 @@ Deno.serve(async (req: Request) => {
   for (const item of rawHistory) {
     if (item && typeof item === "object" && typeof item.text === "string" && item.text.trim()) {
       const role = item.role === "alex" || item.role === "model" ? "model" : "user";
-      contents.push({ role, parts: [{ text: item.text.trim().slice(0, 2000) }] });
+      contents.push({ role, parts: [{ text: item.text.trim().slice(0, 1800) }] });
     }
   }
 
