@@ -35,6 +35,9 @@
     body.apostila-reading-layout-v2 .book-toc-nav{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important}
     body.apostila-reading-layout-v2 .book-toc-link{display:flex!important;align-items:center!important;min-height:34px!important;padding:7px 9px!important;border:1px solid var(--border)!important;border-left:3px solid var(--accent)!important;border-radius:9px!important;background:var(--surface-2)!important;color:var(--text)!important;font-size:10.5px!important;line-height:1.25!important;text-decoration:none!important}
     body.apostila-reading-layout-v2 .book-toc-link:hover,body.apostila-reading-layout-v2 .book-toc-link.is-active{background:var(--accent-soft)!important;color:var(--accent)!important;border-color:color-mix(in srgb,var(--accent) 35%,var(--border))!important}
+    /* Mesmo alinhamento em apostilas HTML antigas sem a folha do renderer. */
+    body.apostila-reading-layout-v2 .book-main :is(.book-section,.mindmap-section){text-align:justify!important}
+    body.apostila-reading-layout-v2 .book-main :is(.book-section,.mindmap-section) :is(p,li,blockquote,figcaption,dd),body.apostila-reading-layout-v2 .book-main .book-hero > p,body.apostila-reading-layout-v2 .book-main .book-safety-note > span{text-align:justify!important;text-align-last:auto!important;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
     body.apostila-reading-layout-v2 .book-postit{z-index:40!important}
     @media(max-width:900px){
       body.apostila-reading-layout-v2 .book-page{display:flex!important;flex-direction:column!important;grid-template-columns:none!important;gap:12px!important;width:100%!important;max-width:100%!important;overflow:visible!important}
