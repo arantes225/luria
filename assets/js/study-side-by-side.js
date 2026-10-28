@@ -14,8 +14,8 @@
     .luria-dual-btn.secondary{background:var(--surface,#fff);color:var(--accent,#184888);border-color:var(--border,#ddd)}
     .luria-dual-btn:disabled{opacity:.5;cursor:not-allowed}
     .luria-dual-bar{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap;margin:8px 0}
-    .luria-dual-layout{--split:50;display:flex;width:100%;max-width:100%;height:calc(100dvh - 150px);min-height:300px;overflow:hidden}
-    .luria-dual-layout>.luria-dual-left{flex:0 0 calc(var(--split)*1% - 6px);width:0!important;height:100%;max-width:none!important;min-width:0!important;overflow:auto!important}
+    .luria-dual-layout{--split:50%;display:flex;width:100%;max-width:100%;height:calc(100dvh - 150px);min-height:300px;overflow:hidden}
+    .luria-dual-layout>.luria-dual-left{flex:0 0 calc(var(--split) - 6px);width:0!important;height:100%;max-width:none!important;min-width:0!important;overflow:auto!important}
     .luria-dual-layout>.luria-dual-divider{width:12px;flex:0 0 12px;background:var(--surface-2,#eef2f7);cursor:col-resize;touch-action:none;position:relative}
     .luria-dual-divider:after{content:"";position:absolute;left:4px;top:35%;height:30%;width:4px;border-radius:8px;background:#184888}
     .luria-dual-layout>.luria-dual-right{flex:1;min-width:0;border:1px solid var(--border,#ddd);border-radius:10px;overflow:hidden;background:var(--surface,#fff)}
@@ -32,7 +32,7 @@
     body.luria-dual-embedded .luria-dual-actions{display:none!important}
     @media (orientation:portrait) and (max-width:700px){
       .luria-dual-layout{flex-direction:column}
-      .luria-dual-layout>.luria-dual-left{flex:0 0 calc(var(--split)*1% - 6px);width:100%!important;height:0;min-height:0}
+      .luria-dual-layout>.luria-dual-left{flex:0 0 calc(var(--split) - 6px);width:100%!important;height:0;min-height:0}
       .luria-dual-layout>.luria-dual-divider{width:100%;height:12px;cursor:row-resize}
       .luria-dual-divider:after{top:4px;left:35%;width:30%;height:4px}
       .luria-dual-layout>.luria-dual-right{min-height:0;width:100%}
@@ -73,7 +73,7 @@
     for (const key of ["note_id", "topic_id"]) if (params.get(key)) u.searchParams.set(key, params.get(key));
     return u;
   }
-  function split(primary, destination, heading) {
+  function split(primary, destination, heading, onClose) {
     if (embedded || !primary || !destination) return null;
     const parent = primary.parentElement;
     const marker = document.createComment("split original position");
@@ -100,7 +100,7 @@
     try { ratio = Math.min(70, Math.max(30, Number(localStorage.getItem(storage)) || 50)); } catch {}
     const set = value => {
       ratio = Math.min(70, Math.max(30, Math.round(value)));
-      shell.style.setProperty("--split", String(ratio));
+      shell.style.setProperty("--split", String(ratio) + "%");
       divider.setAttribute("aria-valuenow", String(ratio));
     };
     divider.setAttribute("aria-valuemin", "30"); divider.setAttribute("aria-valuemax", "70");
@@ -125,6 +125,7 @@
     const teardown = () => {
       parent.insertBefore(primary, marker); primary.classList.remove("luria-dual-left");
       shell.remove(); bar.remove(); marker.remove(); document.body.classList.remove("luria-dual-active");
+      if (typeof onClose === "function") onClose();
     };
     close.addEventListener("click", teardown);
     return teardown;
@@ -141,7 +142,7 @@
     let teardown;
     divide.addEventListener("click", () => {
       if (teardown) { teardown(); teardown = null; divide.textContent = "Dividir tela"; }
-      else { teardown = split(page, notesUrl(), "Apostila + Anotações"); if (teardown) divide.textContent = "Fechar divisão"; }
+      else { teardown = split(page, notesUrl(), "Apostila + Anotações", () => { teardown = null; divide.textContent = "Dividir tela"; }); if (teardown) divide.textContent = "Fechar divisão"; }
     });
     return;
   }
@@ -193,7 +194,7 @@
     divide.addEventListener("click", async () => {
       if (teardown) { teardown(); teardown = null; divide.textContent = "Dividir tela"; return; }
       await refresh(); if (!target) return;
-      teardown = split(studio, withNoteId(new URL(target, location.origin)), "Anotações + Apostila");
+      teardown = split(studio, withNoteId(new URL(target, location.origin)), "Anotações + Apostila", () => { teardown = null; divide.textContent = "Dividir tela"; });
       if (teardown) divide.textContent = "Fechar divisão";
     });
     getCatalog().then(refresh);
