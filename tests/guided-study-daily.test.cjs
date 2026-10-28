@@ -11,19 +11,41 @@ const feynman = read("assets/js/feynman.mjs");
 const session = read("sessao-estudo/index.html");
 const dashboard = read("assets/js/dashboard-layouts.js");
 
-test("a missão diária tem três etapas e termina sempre com Feynman", () => {
- const functionText = command.slice(command.indexOf("function sessionSteps(minutes){"),command.indexOf("function dailyGuidedSession(){"));
- const context = {todayActivities:()=>[],activityMinutes:()=>30,studyActivityHref:()=>"/apostilas/"};
- const build = vm.runInNewContext(functionText+"\nsessionSteps",context);
+test("estudo novo encerra com Feynman e revisão começa por diagnóstico Feynman", () => {
+ const fn=command.slice(command.indexOf("function activityTopic(activity){"),command.indexOf("function dailyGuidedSession(){"));
+ const build=(activities)=>vm.runInNewContext(fn+"\nsessionSteps",{todayActivities:()=>activities,activityMinutes:()=>30,studyActivityHref:()=>"/caderno/"});
  for(const time of [15,30,60,90,120,999]){
-  const steps = build(time);
-  assert.equal(steps.length,3);
-  assert.equal(steps[2].href.startsWith("/feynman/"),true);
-  assert.equal(steps.reduce((total,step)=>total+step.min,0),time===999?90:time);
+  const normal=build([])(time);
+  const review=build([{kind:"subject_review",title:"Revisão de Sepse",activity_date:"2026-10-28"}])(time);
+  assert.equal(normal.length,3);
+  assert.equal(review.length,3);
+  assert.equal(normal[2].href.startsWith("/feynman/"),true);
+  assert.equal(review[0].href.startsWith("/feynman/"),true);
+  assert.match(review[0].href,/Sepse/);
+  assert.match(review[2].href,/resolver-questoes/);
+  assert.equal(normal.reduce((n,step)=>n+step.min,0),time===999?90:time);
+  assert.equal(review.reduce((n,step)=>n+step.min,0),time===999?90:time);
  }
  assert.match(command,/build_topic_study_session_v1/);
- assert.match(command,/reviewHref:cardIds\.length/);
- assert.match(command,/Ensinar \$\{subject\} ao Alex · Método Feynman/);
+ assert.match(command,/reviewHref=cardIds\.length/);
+ assert.match(command,/Feynman inicial/);
+ assert.match(command,/Revisar um assunto/);
+});
+
+test("o motor temático também diferencia estudo e revisão",async()=>{
+ const start=command.indexOf("function safeStudyHref(value,fallback){");
+ const end=command.indexOf("function scheduledStudyActivity(){",start);
+ const source=command.slice(start,end);
+ const mock={rpc:async()=>({data:{apostila:{title:"Sepse",url:"/apostilas/sepse/"},question_set_id:"fake-id",question_count:5,flashcards:[]},error:null})};
+ const ctx={window:{supabaseClient:mock},studyBundleCounts:()=>({questions:5,flashcards:8}),location:{origin:"https://luria.test"},URL,encodeURIComponent};
+ const build=vm.runInNewContext(source+"\ntopicStudySteps",ctx);
+ const fresh=await build("Sepse",30,"new");
+ const review=await build("Sepse",30,"review");
+ assert.equal(fresh.steps[2].href.startsWith("/feynman/"),true);
+ assert.equal(review.steps[0].href.startsWith("/feynman/"),true);
+ assert.equal(review.steps[1].href,"/apostilas/sepse/");
+ assert.match(review.steps[2].href,/resolver-questoes/);
+ assert.equal(review.mode,"review");
 });
 
 test("o Dashboard nunca substitui o card diário por Voltar para a sessão", () => {
@@ -48,8 +70,11 @@ test("a etapa Feynman só é concluída após relatório, mesmo tema e data", ()
  assert.match(feynman,/await persistSession\("completed", report\)/);
  assert.match(feynman,/normalize\(expectedTopic\) === normalize\(state\.topic\)/);
  assert.match(feynman,/sameDay/);
+ assert.match(feynman,/luria:guided-study-diagnostic/);
  assert.match(feynman,/completeActiveStep\?\.\("feynman-assessed"\)/);
  assert.match(session,/Aprender\. Praticar\. Ensinar\./);
+ assert.match(session,/Diagnóstico Feynman · Onde focar sua revisão/);
+ assert.match(daily,/active\.activeIndex===next/);
 });
 
 test("scripts atualizados mantêm sintaxe válida", () => {
