@@ -142,7 +142,7 @@ async function topicStudySteps(topic,minutes){
   data?.question_set_id
    ?{title:`Questões de ${subject}`,detail:`${Number(data.question_count)||0} questões sorteadas agora do banco LURIA.`,min:second,href:"/resolver-questoes/?set_id="+encodeURIComponent(data.question_set_id)}
    :{title:`Praticar ${subject}`,detail:"Abra a biblioteca e escolha questões deste assunto.",min:second,href:"/questoes-simulados/"},
-  {title:`Ensinar ${subject} ao Alex · Método Feynman`,detail:"Explique sem consultar, responda perguntas e descubra lacunas. "+(cardIds.length?`Depois, revise ${cardIds.length} flashcards sugeridos.`:""),min:third,href:"/feynman/?topic="+encodeURIComponent(subject)}
+  {title:`Ensinar ${subject} ao Alex · Método Feynman`,detail:"Explique sem consultar, responda perguntas e descubra lacunas. "+(cardIds.length?`Depois, revise ${cardIds.length} flashcards sugeridos.`:""),min:third,href:"/feynman/?topic="+encodeURIComponent(subject),reviewHref:cardIds.length?"/flashcards/?study_ids="+encodeURIComponent(cardIds.join(","))+"&study_topic="+encodeURIComponent(subject):"/flashcards/"}
  ];
  return {steps,planned:requested,bundle:data};
 }
