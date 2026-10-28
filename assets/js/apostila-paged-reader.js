@@ -43,6 +43,8 @@
     const toggle = bar.querySelector("[data-reader-toggle]");
     const nav = bar.querySelector("[data-reader-nav]");
     const slider = bar.querySelector(".luria-reader-jump");
+    main.setAttribute("tabindex", "0");
+    main.setAttribute("aria-label", "Texto da apostila: navegue por páginas com as setas");
     const prevs = shell.querySelectorAll("[data-reader-prev]");
     const nexts = shell.querySelectorAll("[data-reader-next]");
     const labels = shell.querySelectorAll("[data-reader-label]");
@@ -52,6 +54,7 @@
     let step = 0;
     let raf = 0;
     let scrollTimer = 0;
+    let hasNavigated = false;
 
     try {
       mode = localStorage.getItem("luria-apostila-reading-mode") === "continuous" ? "continuous" : "paged";
@@ -95,6 +98,7 @@
         total = Math.max(1, Math.min(1500, 1 + Math.round(Math.max(0, main.scrollWidth - main.clientWidth) / Math.max(1, step))));
         current = Math.max(0, Math.min(current, total - 1));
         main.scrollLeft = current * step;
+        if (location.hash && !hasNavigated) goHash(location.hash, false);
         updateControls();
       }));
     }
@@ -106,11 +110,12 @@
 
     function goPage(page, smooth = true) {
       if (!isPaged()) return;
+      hasNavigated = true;
       current = Math.max(0, Math.min(total - 1, Number(page) || 0));
       updateControls();
       if (typeof main.scrollTo === "function") {
         main.scrollTo({left: current * step, top: 0,
-          behavior: smooth && !matchMedia("(prefers-reduced-motion: reduce)").matches ? "smooth" : "instant"});
+          behavior: smooth && !(typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches) ? "smooth" : "auto"});
       } else {
         main.scrollLeft = current * step;
       }
