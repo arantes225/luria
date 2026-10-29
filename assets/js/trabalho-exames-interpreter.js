@@ -173,14 +173,15 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
        const head=`<div class="ex-card-head"><span class="ex-area-tag">${e(groupName(t.group))}</span><h4>${e(t.name)}</h4></div>`;
         const info=examDetails[t.id];
         const detailBlock=info?`<details class="ex-test-details"><summary>Entenda o exame</summary><div class="ex-test-details-content"><p><strong>Material</strong> ${e(info.sample)}</p><p><strong>Finalidade</strong> ${e(info.purpose)}</p><p><strong>Interpretação</strong> ${e(info.interpretation)}</p><p><strong>Cuidados</strong> ${e(info.caution)}</p><p><strong>Referências e unidade</strong> ${e(info.referencePolicy)} ${e(info.unitPolicy)}</p><a target="_blank" rel="noopener noreferrer" href="${e(info.sourceUrl)}">Fonte de orientação: ${e(info.sourceLabel)}</a><small>Fonte temática; não valida um intervalo universal nem substitui o laudo.</small></div></details>`:"";
-       const flag=patient?`<span class="ex-status ${s}" data-status>${({low:"Abaixo",high:"Acima",normal:"Na faixa informada",invalid:"Valor inválido",recorded:"Registrado"})[s]||""}</span>`:"";
-       const refBlock=`<div class="ex-card-reference"><small>Valor de referência</small><span class="ex-ref" ${patient?"data-ref":""}>${ref}${lim.diagnostic?"*":""}${flag}</span><small class="ex-ref-unit">${e(t.kind!=="numeric"?"Conforme método":t.unit)}</small></div>`;
+       const flag=patient?`<span class="ex-status ${s}" data-status>${({low:"Abaixo",high:"Acima",normal:"Na faixa informada",invalid:"Valor inválido",recorded:"Registrado","unit-mismatch":"Unidade divergente"})[s]||""}</span>`:"";
+       const refBlock=`<div class="ex-card-reference"><small>${t.kind==="numeric"?"Valor de referência":"Resultado conforme método"}</small><span class="ex-ref" ${patient?"data-ref":""}>${ref}${lim.diagnostic?"*":""}${flag}</span><small class="ex-ref-unit">${e(t.kind!=="numeric"?"Conforme método":t.unit)}</small></div>`;
        if(!patient)return `<article class="ex-test ex-card ex-reference-only" data-row="${e(t.id)}">${head}${refBlock}${detailBlock}</article>`;
        const inp=t.kind==="qual"
          ?`<select data-id="${e(t.id)}" data-field="value" aria-label="Resultado ${e(t.name)}"><option value="">Selecionar</option>${(t.options||["Negativo","Positivo","Não reagente","Reagente","Indeterminado","Não detectado","Detectado","Ausente","Presente","Traços"]).map(v=>`<option value="${v}" ${r.value===v?"selected":""}>${v}</option>`).join("")}</select>`
          :`<input data-id="${e(t.id)}" data-field="value" inputmode="${t.kind==="numeric"?"decimal":"text"}" autocomplete="off" placeholder="${t.kind==="numeric"?"—":"Conforme laudo"}" value="${e(r.value)}" aria-label="Resultado ${e(t.name)}">`;
        return `<article class="ex-test ex-card ex-patient-card" data-row="${e(t.id)}">${head}${refBlock}${detailBlock}<div class="ex-card-fields">
          <label>Resultado${inp}</label>
+         ${t.kind==="numeric"?`<label class="ex-unit-input">Unidade do laudo<input data-id="${e(t.id)}" data-field="unit" autocomplete="off" value="${e(r.unit||t.unit)}" aria-label="Unidade usada no laudo para ${e(t.name)}"></label>`:""}
          <label>Mín. do laudo<input data-id="${e(t.id)}" data-field="min" ${t.kind!=="numeric"?"disabled":""} placeholder="—" inputmode="decimal" value="${e(r.min)}" aria-label="Limite inferior para ${e(t.name)}"></label>
          <label>Máx. do laudo<input data-id="${e(t.id)}" data-field="max" ${t.kind!=="numeric"?"disabled":""} placeholder="—" inputmode="decimal" value="${e(r.max)}" aria-label="Limite superior para ${e(t.name)}"></label>
        </div></article>`;
@@ -199,7 +200,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     const ref=row.querySelector("[data-ref]");
     const rangeText=refLabel(lim);
     ref.firstChild.textContent=rangeText+(lim.diagnostic?"*":"");
-    const flag=row.querySelector("[data-status]");flag.className="ex-status "+s;flag.textContent=({low:"Abaixo",high:"Acima",normal:"Na faixa informada",invalid:"Valor inválido",recorded:"Registrado"})[s]||"";
+    const flag=row.querySelector("[data-status]");flag.className="ex-status "+s;flag.textContent=({low:"Abaixo",high:"Acima",normal:"Na faixa informada",invalid:"Valor inválido",recorded:"Registrado","unit-mismatch":"Unidade divergente"})[s]||"";
   }
   function values(){
     return [...byId.values()].filter(t=>{const v=itemState(t.id).value;return String(v).trim()!==""}).map(t=>({t,v:itemState(t.id).value,s:status(t),r:ranges(t)}));
@@ -267,18 +268,18 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     const plaq=reading("Plaquetas");if(plaq!==null&&plaq<20000)alerts.push("Plaquetas muito reduzidas; avaliar risco hemorrágico e confirmação.");
     if([glucose,reading("Glicemia casual")].some(v=>v!==null&&v<54))alerts.push("Glicemia em faixa de hipoglicemia clinicamente importante; verificar sintomas e agir segundo protocolo.");
     if(ph!==null&&(ph<7.1||ph>7.6))alerts.push("pH em faixa potencialmente crítica; avaliar paciente imediatamente.");
-    const lac=reading("Lactato");if(lac!==null&&lac>=4)alerts.push("Lactato ≥4,0 mmol/L: hipoperfusão tecidual grave / possível choque oculto; reavaliar hemodinâmica imediatamente.");
-    const fib=reading("Fibrinogênio");if(fib!==null&&fib<100)alerts.push("Fibrinogênio <100 mg/dL: alto risco hemorrágico / possível CIVD ou coagulopatia de consumo; avaliar reposição de crioprecipitado.");
+    const lac=reading("Lactato");if(lac!==null&&lac>=4)alerts.push("Lactato ≥4,0 mmol/L: resultado potencialmente crítico e inespecífico; investigar perfusão e outras causas de hiperlactatemia.");
+    const fib=reading("Fibrinogênio");if(fib!==null&&fib<100)alerts.push("Fibrinogênio <100 mg/dL: avaliar sangramento, causas de hipofibrinogenemia e protocolo institucional.");
     if(neut!==null&&neut<500)alerts.push("Neutropenia grave (<500/µL); se houver febre, tratar imediatamente como Neutropenia Febril.");
     return {findings,alerts};
   }
   function renderAnalysis(panel){
-    const data=values(),n=data.filter(x=>x.s==="low"||x.s==="high").length,invalid=data.filter(x=>x.s==="invalid"),{findings,alerts}=notes();
+    const data=values(),n=data.filter(x=>x.s==="low"||x.s==="high").length,invalid=data.filter(x=>x.s==="invalid"||x.s==="unit-mismatch"),{findings,alerts}=notes();
     panel.innerHTML=`<h3 class="ex-section-title">Interpretação integrada</h3><p class="ex-subtitle">Síntese por regras determinísticas. Não emprega modelo de IA, não fecha diagnósticos nem envia resultados para serviços externos.</p>
       <div class="ex-summary-grid"><div class="ex-metric"><strong>${data.length}</strong><span>resultados inseridos</span></div><div class="ex-metric"><strong>${n}</strong><span>fora da faixa informada</span></div><div class="ex-metric"><strong>${alerts.length}</strong><span>alertas de revisão urgente</span></div></div>
-      ${invalid.length?`<div class="ex-finding alert"><strong>Valores inválidos</strong>${invalid.map(x=>e(x.t.name)).join(", ")}. Use números com vírgula ou ponto.</div>`:""}
+      ${invalid.length?`<div class="ex-finding alert"><strong>Valores inválidos</strong>${invalid.map(x=>e(x.t.name)).join(", ")}. Corrija números, limites e unidades divergentes antes da interpretação.</div>`:""}
       <div class="ex-findings">${alerts.map(x=>`<div class="ex-finding alert"><strong>Possível achado crítico</strong>${e(x)}</div>`).join("")}${findings.map(x=>`<div class="ex-finding ${x.level==="warn"?"warn":""}"><strong>${e(x.title)}</strong>${e(x.body)}</div>`).join("")}</div>
-      <h3 class="ex-section-title" style="margin-top:19px">Resultados da sessão</h3>${!data.length?"<p class='ex-muted'>Preencha resultados em Consultar e preencher para gerar a síntese.</p>":`<div style="overflow-x:auto"><table class="ex-results-table"><thead><tr><th>Exame</th><th>Valor</th><th>Comparação</th></tr></thead><tbody>${data.map(x=>`<tr><td>${e(x.t.name)}</td><td>${e(x.v)} ${e(x.t.kind!=="numeric"?"":x.t.unit)}</td><td>${({low:"Abaixo",high:"Acima",normal:"Na faixa informada",recorded:"Sem referência validada",invalid:"Inválido"})[x.s]||"—"}</td></tr>`).join("")}</tbody></table></div>`}
+      <h3 class="ex-section-title" style="margin-top:19px">Resultados da sessão</h3>${!data.length?"<p class='ex-muted'>Preencha resultados em Consultar e preencher para gerar a síntese.</p>":`<div style="overflow-x:auto"><table class="ex-results-table"><thead><tr><th>Exame</th><th>Valor</th><th>Comparação</th></tr></thead><tbody>${data.map(x=>`<tr><td>${e(x.t.name)}</td><td>${e(x.v)} ${e(x.t.kind!=="numeric"?"":x.t.unit)}</td><td>${({low:"Abaixo",high:"Acima",normal:"Na faixa informada",recorded:"Registrado — sem faixa completa",invalid:"Inválido","unit-mismatch":"Unidade divergente"})[x.s]||"—"}</td></tr>`).join("")}</tbody></table></div>`}
       <label style="margin-top:15px">Observações clínicas (ficam apenas nesta sessão)<textarea id="ex-context" rows="3" placeholder="Queixa, sintomas, medicamentos, temporalidade; não inclua nome, CPF ou identificadores."></textarea></label>
       <div class="ex-actions"><button class="ex-btn" id="ex-copy" type="button">Copiar resumo</button><button class="ex-btn primary" id="ex-save" type="button">Registrar coleta nesta sessão</button><button class="ex-btn danger" id="ex-clear" type="button">Limpar sessão</button></div>
       <p class="ex-source-note">* Hemoglobina: limiar populacional de anemia da OMS 2024, não intervalo laboratorial universal. Exames qualitativos são apenas registrados; a interpretação depende do método e da situação clínica.</p>`;
@@ -291,7 +292,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     panel.querySelector("#ex-save").addEventListener("click",addSnapshot);panel.querySelector("#ex-clear").addEventListener("click",clear);
   }
   function addSnapshot(){
-    const data=values().filter(x=>x.s!=="invalid");
+    const data=values().filter(x=>x.s!=="invalid"&&x.s!=="unit-mismatch");
     if(!data.length){alert("Preencha ao menos um resultado válido antes de registrar a coleta.");return;}
     state.history.push({stamp:new Date().toLocaleString("pt-BR"),population:state.population,results:data.map(x=>({id:x.t.id,value:x.v,unit:x.t.unit}))});
     state.view="history";renderPanel();
