@@ -91,7 +91,7 @@
     choices.querySelectorAll(".voc-option").forEach(btn=>btn.addEventListener("click",()=>{
       const first=Number(btn.dataset.value);
       const old=answers[q.id];
-      answers[q.id]={first,second:old?.second===first?null:(old?.second??null),unfamiliar:!!old?.unfamiliar};
+      answers[q.id]={first,second:old?.second===first?null:(old?.second??null),unfamiliar:$("voc-unfamiliar").checked};
       save();renderQuestion();
     }));
     choices.querySelectorAll(".voc-secondary").forEach(btn=>btn.addEventListener("click",()=>{
@@ -251,7 +251,7 @@
   $("voc-next").addEventListener("click",next);
   $("voc-none").addEventListener("click",()=>{
     const id=currentQuestion().id,old=answers[id];
-    answers[id]={first:-1,second:null,unfamiliar:!!old?.unfamiliar};
+    answers[id]={first:-1,second:null,unfamiliar:$("voc-unfamiliar").checked};
     save();renderQuestion();
   });
   $("voc-unfamiliar").addEventListener("change",()=>{
