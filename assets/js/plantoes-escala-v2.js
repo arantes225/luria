@@ -70,7 +70,7 @@
   function updatePrice(){
     const hourly=$("shift-price-mode").value==="hour";
     $("shift-hour-wrap").hidden=!hourly;
-    calcValue();
+    if(hourly)calcValue();
   }
   function openModal(s=null,day=""){
     const dialog=$("shift-modal"),form=$("add-shift-form");
@@ -114,7 +114,7 @@
       error.textContent="Os valores precisam ser positivos e descontos + recebimento não podem ultrapassar o bruto.";return;
     }
     const s={...prior,id:editingId||`shift_${Date.now()}_${Math.random().toString(36).slice(2,8)}`,date,place,payer,
-      sector:$("shift-sector").value.trim(),startTime,endTime,endDate,duration:C.cents(duration/60),
+      sector:$("shift-sector").value.trim(),startTime,endTime,endDate,duration:duration/60,
       priceMode:$("shift-price-mode").value,hourRate:C.cents($("shift-hour-rate").value),value,withheldTax,payerFee,
       receivedAmount,expectedDate:$("shift-expected-date").value,
       receivedDate:prior?.receivedDate||"",status:$("shift-status").value,notes:$("shift-notes").value.trim()};
