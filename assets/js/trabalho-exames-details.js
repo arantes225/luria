@@ -35,7 +35,7 @@ for(const group of all){
     detailed[exam.id]={
       id:exam.id,group:group.name,
       sample:row[0],
-      purpose:item.purpose||"O exame "+exam.name+" é usado na "+row[1]+".",
+      purpose:item.purpose||"Aplicação clínica de "+exam.name+": "+row[1]+".",
       interpretation:item.interpret||row[2]+". "+RISKS[methodKind],
       caution,
       sourceLabel:source[0],sourceUrl:source[1],
