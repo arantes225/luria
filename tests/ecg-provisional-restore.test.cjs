@@ -96,6 +96,19 @@ test("non-calibrated ordinary ECG photo can preview waveform candidates but cann
   assert.equal(result.totalCaptured,0);
   assert.equal(controller.confirmExtractionAndEnableAI().allowed,false);
 });
+test("one real waveform region in a selected ECG photo opens a quarantined preview instead of 'no leads'",()=>{
+  const {controller,guard,evidence}=scene({
+    waveformCandidateCount:1,
+    candidateRegions:{DI:{xMin:.03,xMax:.3,yMin:.13,yMax:.39,row:0,col:0,expectedInTemplate:"DI"}}
+  });
+  assert.equal(guard.isVerifiedEcgScene(evidence),false,"captura automática continua exigindo múltiplas regiões");
+  const result=controller.processPhotographCanvas(makeCanvas(),{source:"normal_photo"});
+  assert.equal(result.ok,true,"foto selecionada com uma região real precisa abrir conferência, não ser descartada");
+  assert.equal(result.provisionalCount,1);
+  assert.equal(result.totalCaptured,0);
+  assert.deepEqual(Object.keys(controller.getSessionStructuredPackage().signals),[]);
+  assert.equal(controller.confirmExtractionAndEnableAI().allowed,false);
+});
 test("manual four-point paper selection permits preliminary review without pretending verified labels",()=>{
   const {controller}=scene({sheet:{found:false},calibration:{gridDetected:false,coloredGridRatio:0}});
   const result=controller.processPhotographCanvas(makeCanvas(),{source:"normal_photo_manual_four_corners",manualPaperCornersApplied:true});
