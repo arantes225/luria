@@ -215,7 +215,7 @@
 
   const renderRefs = (items) => {
     if (!Array.isArray(items) || !items.length) return "";
-    return `<section class="protocol-section protocol-refs"><h3>Referências oficiais</h3><div>${items.map((r) => `<a href="${esc(luriaSafeContentUrl(r.url) || '#')}" target="_blank" rel="noopener noreferrer">${esc(r.label || "Fonte oficial")}</a>`).join("")}</div></section>`;
+    return `<section class="protocol-section protocol-refs"><h3>Fontes e referências</h3><div>${items.map((r) => `<a href="${esc(luriaSafeContentUrl(r.url) || '#')}" target="_blank" rel="noopener noreferrer">${esc(r.label || "Fonte oficial")}</a>`).join("")}</div></section>`;
   };
 
   const filtered = () => {
@@ -317,9 +317,12 @@
         ${listSection("Quando suspeitar", r.suspicion)}
         ${listSection("Conduta inicial", r.initial_actions)}
         ${listSection("Exames dirigidos", r.exams)}
+        ${renderDecisionFlow(r.decision_flow)}
         ${listSection("Tratamento — orientação preliminar", r.treatment, "treatment")}
+        ${listSection("Situações especiais e contraindicações", r.special_situations)}
+        ${listSection("Monitorização e seguimento", r.follow_up)}
         ${Array.isArray(r.red_flags) && r.red_flags.length ? `<section class="protocol-section danger"><h3>Sinais de alarme</h3><ul>${r.red_flags.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></section>` : ""}
-        ${renderRefs(r.source_refs)}
+        ${Array.isArray(r.source_refs) && r.source_refs.length ? renderRefs(r.source_refs) : '<section class="protocol-section protocol-refs"><h3>Fontes e referências</h3><p>Referências individuais ainda não conferidas; não considerar esta ficha pronta.</p></section>'}
       `;
       return;
     }
