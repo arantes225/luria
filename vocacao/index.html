@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
   <link rel="stylesheet" href="/assets/css/education-pages-v2.css?v=1">
   <link rel="stylesheet" href="/assets/css/curriculo.css?v=1">
-  <link rel="stylesheet" href="/assets/css/vocacao.css?v=20261028-theme-v3">
+  <link rel="stylesheet" href="/assets/css/vocacao.css?v=20261028-vocational-v4">
   <link rel="canonical" href="/vocacao/">
   <script src="/assets/js/ui-routes.js?v=1"></script>
 </head>
@@ -53,20 +53,20 @@
         <section class="voc-hero" aria-labelledby="voc-title">
           <p class="voc-eyebrow">ORIENTAÇÃO DE CARREIRA</p>
           <h1 id="voc-title">Que tipo de Medicina combina com você?</h1>
-          <p>Escolha as atividades que você realmente gostaria de repetir no trabalho. Ao final, veja até três caminhos profissionais e entenda os motivos das sugestões. Não existe resposta certa.</p>
-          <div class="voc-meta"><span>30 situações reais de trabalho</span><span>4 escolhas simples por pergunta</span><span>~8–10 minutos</span></div>
+          <p>Explore suas preferências em situações concretas, dilemas de rotina e casos clínicos. O questionário aprofunda o que importa para você e apresenta até três caminhos justificados.</p>
+          <div class="voc-meta"><span>29 cenários de trabalho</span><span>3 etapas com aprofundamento</span><span>~12–15 minutos</span></div>
         </section>
         <section id="voc-intro" class="voc-panel" aria-labelledby="voc-start-title">
           <div class="voc-panel-copy">
             <p class="voc-kicker">COMO RESPONDER</p>
             <h2 id="voc-start-title">Escolha o trabalho que mais lhe interessa</h2>
-            <p>Imagine que você pode escolher como seria seu próximo turno. Em cada pergunta, selecione a alternativa que mais gostaria de vivenciar. Não precisa ter experiência na área: escolha o que desperta curiosidade, sem pensar em salário, prestígio ou concorrência.</p>
-            <p class="voc-scale-help">Você pode voltar e mudar respostas. O progresso permanece nesta aba enquanto ela estiver aberta.</p>
+            <p>Em cada situação, escolha a atividade que mais gostaria de realizar. Você pode marcar uma segunda preferência ou responder que ainda não sabe. O teste se adapta depois da primeira etapa, investiga custos reais da carreira e não depende de já ter realizado os procedimentos.</p>
+            <p class="voc-scale-help">As três etapas investigam tarefas, temas clínicos, dificuldades e prioridades. Você pode revisar respostas; se alterar as primeiras escolhas, as perguntas de aprofundamento poderão mudar. O progresso fica salvo apenas nesta aba.</p>
             <button id="voc-start" class="voc-button voc-button-primary" type="button">Começar o questionário <span aria-hidden="true">→</span></button>
           </div>
           <aside class="voc-method-note">
             <strong>Como o resultado é calculado</strong>
-            <p>As escolhas são comparadas com atividades e ambientes de trabalho associados às especialidades. A análise considera diferentes interesses profissionais, não apenas uma classificação entre clínica e cirurgia.</p>
+            <p>A primeira etapa investiga seu estilo profissional. Em seguida, perguntas adicionais são escolhidas conforme suas respostas, incluindo conteúdo clínico e compromissos difíceis da rotina. O relatório recupera exemplos concretos das suas escolhas.</p>
             <p>Este é um instrumento exploratório criado pela LURIA. O resultado não é diagnóstico, avaliação psicológica validada nem previsão de satisfação, desempenho ou aprovação na residência.</p>
             <a href="https://portal.cfm.org.br/buscar-normas-cfm-e-crm/" target="_blank" rel="noopener noreferrer">Consultar normas do CFM ↗</a>
           </aside>
@@ -90,19 +90,19 @@
         </section>
         <section id="voc-quiz" class="voc-panel" hidden aria-labelledby="voc-question">
           <div class="voc-quiz-head"><div><p id="voc-dimension" class="voc-kicker"></p><h2 id="voc-question" tabindex="-1"></h2></div><span id="voc-count" class="voc-count"></span></div>
-          <div id="voc-progress" class="voc-progress" role="progressbar" aria-label="Progresso do questionário" aria-valuemin="0" aria-valuemax="30" aria-valuenow="0"><span id="voc-progress-fill"></span></div>
-          <p class="voc-scale-help">Selecione uma alternativa. Todas são possibilidades válidas.</p>
-          <div id="voc-options" class="voc-options" role="group" aria-label="Escolha a atividade de sua preferência">
-            
-          </div>
+          <div id="voc-progress" class="voc-progress" role="progressbar" aria-label="Progresso do questionário" aria-valuemin="0" aria-valuemax="29" aria-valuenow="0"><span id="voc-progress-fill"></span></div>
+          <p class="voc-scale-help">Marque sua preferência principal. Se desejar, marque também uma segunda opção.</p>
+          <p id="voc-context" class="voc-scale-help"></p>
+          <div id="voc-options" class="voc-options" role="group" aria-label="Escolha a atividade de sua preferência"></div>
+          <div class="voc-extra-controls"><button id="voc-none" type="button" class="voc-none" aria-pressed="false">Ainda não sei / nenhuma me representa</button><label class="voc-unfamiliar"><input id="voc-unfamiliar" type="checkbox"> Ainda não vivenciei essa situação na prática</label></div>
           <p id="voc-error" class="voc-error" aria-live="polite"></p>
           <div class="voc-nav"><button id="voc-back" class="voc-button voc-button-secondary" type="button">← Anterior</button><button id="voc-next" class="voc-button voc-button-primary" type="button">Próxima →</button></div>
-          <p class="voc-keyboard-hint">Dica: use as teclas 1 a 4 para selecionar; depois clique em Próxima.</p>
+          <p class="voc-keyboard-hint">Dica: teclas 1–4 marcam sua preferência principal. Segunda preferência é opcional; você pode voltar e revisar.</p>
         </section>
         <section id="voc-results" class="voc-results" hidden aria-labelledby="voc-results-title"></section>
         <section class="voc-sources" aria-label="Fontes e metodologia">
           <details><summary>Fontes, metodologia e limites</summary><div>
-            <p>Metodologia: as alternativas de 30 situações profissionais alimentam 23 dimensões de interesse. O cálculo compara a frequência de escolhas com a frequência esperada das opções disponíveis para cada dimensão e as combina com perfis de atividades editoriais associados às especialidades. Não é um questionário psicométrico validado, não mede competência nem determina uma escolha profissional.</p>
+            <p>Metodologia: 16 cenários iniciais, 10 aprofundamentos selecionados com base nas escolhas e três verificações finais. O estudante pode indicar primeira e segunda preferência, incerteza e falta de experiência. O motor compara sinais de interesse nas dimensões profissionais, considera o conteúdo clínico citado nas escolhas e descreve evidências, possíveis atritos e limitações. O algoritmo não foi validado psicometricamente e não mede competência, personalidade clínica ou probabilidade de satisfação.</p>
             <p>Catálogo: 55 especialidades e 64 áreas de atuação reconhecidas pela Resolução CFM nº 2.472/2026, publicada em 28/10/2026. Os pré-requisitos e a oferta de vagas devem ser conferidos na norma e no edital vigentes. Áreas de atuação são apresentadas como possibilidades posteriores de formação, nunca como especialidades independentes.</p>
             <p><a href="https://portal.cfm.org.br/buscar-normas-cfm-e-crm/" target="_blank" rel="noopener noreferrer">Normas CFM (Resolução nº 2.472/2026)</a> · <a href="https://mecnormas.mec.gov.br/pesquisa/detalhar/2129" target="_blank" rel="noopener noreferrer">Normas da CNRM</a></p>
           </div></details>
@@ -114,8 +114,8 @@
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
   <script defer src="/assets/js/vocacao-data.js?v=20261028-v2"></script>
-  <script defer src="/assets/js/vocacao-engine.js?v=20261028-v2"></script>
-  <script defer src="/assets/js/vocacao.js?v=20261028-v2"></script>
+  <script defer src="/assets/js/vocacao-engine.js?v=20261028-v3"></script>
+  <script defer src="/assets/js/vocacao.js?v=20261028-v3"></script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>
