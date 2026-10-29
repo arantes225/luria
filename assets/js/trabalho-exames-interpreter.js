@@ -4,6 +4,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
   const root=document.getElementById("exam-tool");
   if(!root)return;
   const C=[...(window.LURIA_EXAM_CATALOG||[]),...(window.LURIA_EXAM_EXTRA_CATALOG||[])];
+  if(typeof window.LURIA_APPLY_EXAM_DETAILS==="function")window.LURIA_APPLY_EXAM_DETAILS();
   const byId=new Map(C.flatMap(g=>g.tests.map(t=>[t.id,t])));
   const examDetails=window.LURIA_EXAM_DETAILS||{};
   const state={group:"",kit:"",search:"",view:"catalog",mode:"reference",population:"adult-f",age:"",context:"",readings:{},history:[]};
