@@ -48,7 +48,7 @@ test("nenhuma cor temática fixa nos cartões, botões, perguntas ou relatório"
 });
 
 test("CSS novo possui versão no HTML e no cache offline", () => {
-  const cssAsset = "/assets/css/vocacao.css?v=20261028-theme-v3";
+  const cssAsset = "/assets/css/vocacao.css?v=20261028-vocational-v4";
   assert.ok(html.includes(cssAsset));
   assert.equal(sw.split(cssAsset).length - 1, 2, "pré-cache e app shell");
   assert.ok(sw.includes('luria-pwa-20261028-ecg-fidelity-v9'), "SW e registro do PWA mantêm a mesma versão");
