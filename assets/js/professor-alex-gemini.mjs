@@ -473,6 +473,7 @@ if (form) {
       mode: isEstourado ? "estourado" : "normal",
       channel: isLiveActive ? "voice" : "chat",
       depth: document.querySelector('[data-alex-depth].is-active')?.dataset.alexDepth === "aula" ? "aula" : "rapida",
+      voice_quality: document.getElementById("alex-natural-voice")?.checked ? "natural" : "fast",
       history: sessionHistory.slice(-12),
     };
     if (isLiveActive && Number.isFinite(liveTranscriptConfidence)) payload.voice_confidence = liveTranscriptConfidence;
@@ -502,11 +503,11 @@ if (form) {
     }
     // O índice da LURIA é apenas um reforço opcional. Perguntas médicas
     // gerais devem seguir para o tutor clínico completo.
-    const siteContext = isSocial || isPlanning ? null : await findAlexSiteContext([topic, prompt].filter(Boolean).join(" "));
-    if (siteContext && hasMaterial) {
-      payload.site_context = siteContext.context;
-      payload.site_sources = siteContext.sources;
-    }
+    // Don't fetch the full site index for ordinary questions: it is only useful when
+    // a study material is attached. Start it concurrently with file preparation.
+    const siteContextPromise = hasMaterial && !isSocial && !isPlanning
+      ? findAlexSiteContext([topic, prompt].filter(Boolean).join(" "))
+      : Promise.resolve(null);
 
     const oldText = submit?.textContent || "Perguntar";
     if (submit) {
@@ -534,8 +535,14 @@ if (form) {
     }
 
     try {
-      const material = await prepareFile(fileInput?.files?.[0]);
+      const [material, siteContext] = await Promise.all([
+        prepareFile(fileInput?.files?.[0]), siteContextPromise
+      ]);
       if (material) payload.file = material;
+      if (siteContext && material) {
+        payload.site_context = siteContext.context;
+        payload.site_sources = siteContext.sources;
+      }
       const { data, error } = await client.functions.invoke("professor-alex-gemini", { body: payload });
       if (error) throw error;
       if (data?.usage) renderUsage(data.usage);
