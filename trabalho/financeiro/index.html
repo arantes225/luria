@@ -19,7 +19,8 @@
   <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
   <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
-  <link rel="stylesheet" href="/assets/css/work-plantoes.css?v=20261026-v1">
+  <link rel="stylesheet" href="/assets/css/work-plantoes.css?v=20261029-v2">
+  <link rel="stylesheet" href="/assets/css/shift-manager-v2.css?v=20261029-v1">
 </head>
 <body data-page="trabalho_financeiro" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
@@ -44,6 +45,7 @@
         </section>
 
         <section class="shift-fin-shell">
+          <div class="shift-agenda-toolbar"><p class="fin-notice">Valores organizados por instituição pagadora. O depósito na conta pode diferir do bruto e do resultado líquido após tributos.</p><label class="shift-field-group">Mês de referência<input id="fin-month-select" type="month"></label></div>
           <!-- Métricas Financeiras do Mês -->
           <div>
             <h3 style="margin:0 0 10px;font-size:14px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em">Faturamento do Mês Vigente</h3>
@@ -98,28 +100,65 @@
             </div>
           </div>
 
+
+          <article class="fin-card">
+            <div><h2>Cobranças atrasadas</h2><p>Somente valores com data prevista anterior a hoje e ainda não recebidos.</p></div>
+            <div><strong class="stat-val fin-late" id="fin-overdue-total">R$ 0,00</strong><p id="fin-overdue-count"></p></div>
+          </article>
+          <!-- Detalhamento por Hospital/Instituição -->
+          <article class="fin-card">
+            <div>
+              <h2>Instituições e cobranças</h2>
+              <p>Cada instituição pagadora tem seu próprio bloco, prazo e histórico de pagamentos.</p>
+            </div>
+            <div id="fin-hospital-breakdown">
+              <!-- Preenchido dinamicamente por plantoes-financeiro.js -->
+            </div>
+          </article>
           <!-- Lista de Repasses Pendentes -->
           <article class="fin-card">
             <div>
-              <h2>Repasses Pendentes de Confirmação</h2>
-              <p>Plantões realizados ou agendados cujo repasse financeiro ainda não foi confirmado.</p>
+              <h2>Valores a receber por vencimento</h2>
+              <p>Plantões com saldo em aberto, ordenados pela data prevista de recebimento.</p>
             </div>
             <div id="fin-pending-table-container">
               <!-- Preenchido dinamicamente por plantoes-financeiro.js -->
             </div>
           </article>
 
-          <!-- Detalhamento por Hospital/Instituição -->
+
           <article class="fin-card">
-            <div>
-              <h2>Faturamento por Instituição / Hospital</h2>
-              <p>Distribuição do faturamento, carga horária e repasses por local de trabalho.</p>
+            <div><h2>Impostos, retenções e líquido estimado</h2><p>Configure a alíquota efetiva orientada por seu contador. Os cálculos são estimativas, não uma guia fiscal.</p></div>
+            <form id="fin-tax-form" class="shift-field-group">
+              <div class="fin-settings-grid">
+                <label>Tipo de contratação / regime
+                  <select id="fin-tax-regime">
+                    <option value="nao_informado">Não informado</option>
+                    <option value="simples">PJ · Simples Nacional</option>
+                    <option value="presumido">PJ · Lucro Presumido</option>
+                    <option value="real">PJ · Lucro Real</option>
+                    <option value="pf">Pessoa física / RPA</option>
+                    <option value="cooperativa">Cooperativa / intermediadora</option>
+                    <option value="custom">Personalizado</option>
+                  </select>
+                </label>
+                <label>Alíquota efetiva estimada (%)<input id="fin-tax-rate" type="number" min="0" max="100" step="any" placeholder="Informe com seu contador"></label>
+                <label>Custos administrativos mensais (R$)<input id="fin-tax-cost" type="number" min="0" step="any" placeholder="Contabilidade, etc."></label>
+              </div>
+              <div><button class="shift-form-submit" type="submit">Salvar configuração</button></div>
+            </form>
+            <div class="fin-tax-summary">
+              <div><small>Tributos já retidos pelo pagador</small><strong id="fin-tax-withheld">—</strong></div>
+              <div><small>Tributos adicionais a reservar (estimativa)</small><strong id="fin-tax-reserve">—</strong></div>
+              <div><small>Líquido mensal estimado após tributos e custos</small><strong id="fin-tax-net">—</strong></div>
             </div>
-            <div id="fin-hospital-breakdown">
-              <!-- Preenchido dinamicamente por plantoes-financeiro.js -->
-            </div>
+            <p class="fin-notice" id="fin-tax-info"></p>
+            <p class="fin-notice fin-late" id="fin-tax-extra"></p>
+            <p class="fin-notice">A alíquota não é definida automaticamente pelo regime: depende da receita global do CNPJ, fator R, atividades e despesas. Retenção tributária já antecipada não é subtraída novamente do líquido. O saldo financeiro por instituição também desconta as taxas de repasse declaradas.</p>
           </article>
         </section>
+        <dialog id="fin-institution-modal" class="shift-modal" aria-labelledby="fin-institution-name"><div class="shift-modal-header"><div><h2 id="fin-institution-name">Instituição</h2><p>Configure a regra padrão de recebimento desta instituição.</p></div><button id="fin-institution-close" type="button" aria-label="Fechar">✕</button></div><form id="fin-institution-form" class="shift-field-group"><label class="shift-field-group">Regra de pagamento<select id="fin-rule"><option value="none">Sem regra (data manual)</option><option value="next-month">Dia do mês seguinte</option><option value="days">Dias após o plantão</option></select></label><label class="shift-field-group">Dia do mês (1–31)<input id="fin-rule-day" type="number" min="1" max="31" value="15"></label><label class="shift-field-group">Dias após o plantão<input id="fin-rule-days" type="number" min="0" max="365" value="30"></label><label class="shift-field-group"><span><input id="fin-apply-missing" type="checkbox" checked> Aplicar somente aos plantões sem previsão cadastrada</span></label><p class="fin-notice">Datas já preenchidas não serão alteradas.</p><div class="shift-modal-actions"><button id="fin-institution-cancel" type="button" class="shift-action-btn">Cancelar</button><button type="submit" class="shift-form-submit">Salvar regra</button></div></form></dialog>
+        <dialog id="fin-payment-modal" class="shift-modal" aria-labelledby="fin-payment-title"><div class="shift-modal-header"><div><h2 id="fin-payment-title">Registrar recebimento</h2><p id="fin-pay-detail"></p></div><button id="fin-payment-close" type="button" aria-label="Fechar">✕</button></div><form id="fin-payment-form" class="shift-field-group"><label class="shift-field-group">Valor depositado agora (R$)<input id="fin-pay-amount" type="number" min="0.01" step="any" required></label><label class="shift-field-group">Data do depósito<input id="fin-pay-date" type="date" required></label><p class="fin-notice">Pagamentos parciais reduzem o saldo sem marcar o plantão como quitado.</p><p id="fin-pay-error" class="shift-error" role="alert"></p><div class="shift-modal-actions"><button id="fin-payment-cancel" type="button" class="shift-action-btn">Cancelar</button><button class="shift-form-submit" type="submit">Registrar pagamento</button></div></form></dialog>
       </div>
     </main>
   </div>
@@ -127,7 +166,8 @@
 <script src="/assets/js/supabase.js"></script>
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script src="/assets/js/shift-manager-security.js?v=4-fixed"></script>
-<script src="/assets/js/plantoes-financeiro.js?v=20261026-v1"></script>
+<script src="/assets/js/shift-manager-core.js?v=20261029-v1"></script>
+<script src="/assets/js/plantoes-financeiro-v2.js?v=20261029-v1"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>
