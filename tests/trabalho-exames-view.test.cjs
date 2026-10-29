@@ -58,8 +58,8 @@ test("Both clinical pages use same versioned assets and suppress duplicate top t
   for (const dir of ["exames", "laboratorio"]) {
     const html = fs.readFileSync(path.join(root, "trabalho", dir, "index.html"), "utf8");
     assert.match(html, /data-ui-heading="provided"/);
-    assert.match(html, /trabalho-exames-interpreter\.css\?v=20261024-b/);
-    assert.match(html, /trabalho-exames-interpreter\.js\?v=20261024-b/);
+    assert.match(html, /trabalho-exames-interpreter\.css\?v=20261029-cards/);
+    assert.match(html, /trabalho-exames-interpreter\.js\?v=20261029-cards/);
   }
 });
 
