@@ -54,7 +54,7 @@ test("scale: opens modal, saves flexible time/value, renders monthly and weekly,
   d.getElementById("add-shift-form").dispatchEvent(new w.Event("submit",{bubbles:true,cancelable:true}));
   const s=c.getShifts()[0];
   assert.ok(s);assert.equal(s.value,1437.6);assert.equal(s.payer,"Pagadora B");
-  assert.equal(s.duration,12.83);assert.equal(s.expectedDate,"2026-11-15");
+  assert.ok(Math.abs(s.duration-770/60)<1e-9);assert.equal(s.expectedDate,"2026-11-15");
   assert.match(d.getElementById("shifts-list-container").textContent,/Pagadora B/);
   d.getElementById("shift-view-week").click();assert.equal(d.getElementById("shift-view-week").getAttribute("aria-pressed"),"true");
   d.querySelector("[data-edit]").click();assert.equal(d.getElementById("shift-val").value,"1437.60");
