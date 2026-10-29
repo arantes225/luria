@@ -6,9 +6,13 @@ on:
     paths:
       - "professor-alex/**"
       - "assets/js/professor-alex-gemini.mjs"
+      - "assets/js/professor-alex-companion.mjs"
+      - "assets/js/alex-conversation-history.mjs"
       - "supabase/functions/professor-alex-gemini/**"
       - "db/professor_alex_daily_quota.sql"
       - "tests/professor-alex-gemini.test.cjs"
+      - "tests/professor-alex-prompt-fidelity.test.cjs"
+      - "tests/alex-conversation-history.test.cjs"
       - ".github/workflows/professor-alex-gemini.yml"
 
 permissions:
@@ -25,6 +29,8 @@ jobs:
           cache: npm
       - run: npm ci --ignore-scripts
       - run: node --check assets/js/professor-alex-gemini.mjs
-      - run: node --test tests/professor-alex-gemini.test.cjs
+      - run: node --check assets/js/professor-alex-companion.mjs
+      - run: node --check assets/js/alex-conversation-history.mjs
+      - run: node --test tests/professor-alex-gemini.test.cjs tests/professor-alex-prompt-fidelity.test.cjs tests/alex-conversation-history.test.cjs tests/alex-atomic-budget.test.cjs
       - run: node scripts/check-syntax.cjs
       - run: node scripts/sync-csp.cjs
