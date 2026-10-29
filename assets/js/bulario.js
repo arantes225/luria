@@ -1,4 +1,13 @@
 (()=>{
+  // ⚡ Bolt: Prevent main thread blocking on keystroke filtering
+  const debounce = (func, wait) => {
+    let timeout;
+    return function (...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+  };
+
   const search=document.getElementById('drug-search');
   const list=document.getElementById('drug-list');
   const detail=document.getElementById('drug-detail');
@@ -314,7 +323,8 @@
     });
   });
   window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(true); });
-  search.addEventListener('input',renderList);
+  // ⚡ Bolt: Debounce search input to reduce main thread blocking
+  search.addEventListener('input',debounce(renderList, 300));
   (async()=>{
     const localSeeds=Array.isArray(window.LURIA_BULARIO_SEEDS)?window.LURIA_BULARIO_SEEDS:[];
     const localProtoSeeds=Array.isArray(window.LURIA_PROTOCOL_SEEDS)?window.LURIA_PROTOCOL_SEEDS:[];
