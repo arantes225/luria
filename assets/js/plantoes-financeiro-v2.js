@@ -123,6 +123,7 @@
     if(!Number.isFinite(amount)||amount<=0||amount>remain+0.009){
       $("fin-pay-error").textContent=`Informe um valor positivo de até ${fmt(remain)}.`;return;
     }
+    s.payments=[...(Array.isArray(s.payments)?s.payments:[]),{amount,date:$("fin-pay-date").value||C.isoToday()}];
     s.receivedAmount=C.cents(C.num(s.receivedAmount)+amount);
     s.receivedDate=$("fin-pay-date").value||C.isoToday();
     s.status=C.outstanding(s)<=0.009?"pago":"pendente";
@@ -132,7 +133,7 @@
   function copyCharge(name){
     const list=shifts().filter(s=>(s.payer||s.place||"").toLowerCase()===name.toLowerCase()&&C.outstanding(s)>0.009);
     if(!list.length)return;
-    const message=`Olá! Gostaria de confirmar a previsão de pagamento dos seguintes plantões na instituição ${name}:\n${list.map(s=>`• ${C.formatDate(s.date)} – ${C.escapeHtml(s.place)} – ${fmt(C.outstanding(s))} (previsto ${C.formatDate(s.expectedDate)})`).join("\n")}\nTotal em aberto: ${fmt(sum(list,s=>C.outstanding(s)))}.\nPoderiam informar a data prevista para o repasse? Obrigado!`;
+    const message=`Olá! Gostaria de confirmar a previsão de pagamento dos seguintes plantões na instituição ${name}:\n${list.map(s=>`• ${C.formatDate(s.date)} – ${s.place} – ${fmt(C.outstanding(s))} (previsto ${C.formatDate(s.expectedDate)})`).join("\n")}\nTotal em aberto: ${fmt(sum(list,s=>C.outstanding(s)))}.\nPoderiam informar a data prevista para o repasse? Obrigado!`;
     // texto de cobrança é copiado, não enviado automaticamente a terceiros
     if(navigator.clipboard?.writeText)navigator.clipboard.writeText(message).then(()=>alert("Cobrança copiada. Revise antes de enviar."),()=>prompt("Copie a mensagem:",message));
     else prompt("Copie a mensagem:",message);
