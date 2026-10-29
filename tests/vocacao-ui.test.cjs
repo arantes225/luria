@@ -23,12 +23,13 @@ test("avaliação profunda: 29 respostas, segunda preferência e relatório espe
       $("voc-none").click();
       assert.equal($("voc-next").disabled,false);
     }else{
+      if(i===0) $("voc-unfamiliar").click();
       $("voc-options").querySelectorAll(".voc-option")[i%4].click();
       if(i===0){
         const others=$("voc-options").querySelectorAll(".voc-secondary");
         others[1].click();
         assert.equal($("voc-options").querySelectorAll(".voc-secondary")[1].getAttribute("aria-pressed"),"true");
-        $("voc-unfamiliar").click();
+        assert.equal($("voc-unfamiliar").checked,true,"o aluno pode sinalizar experiência antes de responder");
       }
       assert.equal($("voc-next").disabled,false);
     }
