@@ -67,10 +67,10 @@
       $("shift-val").value=C.cents(minutes/60*C.num($("shift-hour-rate").value)).toFixed(2);
     }
   }
-  function updatePrice(){
+  function updatePrice(recompute=true){
     const hourly=$("shift-price-mode").value==="hour";
     $("shift-hour-wrap").hidden=!hourly;
-    if(hourly)calcValue();
+    if(hourly&&recompute)calcValue();
   }
   function openModal(s=null,day=""){
     const dialog=$("shift-modal"),form=$("add-shift-form");
@@ -96,7 +96,7 @@
     $("shift-notes").value=s?.notes||"";
     $("shift-error").textContent="";
     if(!s)calcDue();
-    updatePrice(); 
+    updatePrice(false); 
     if(!dialog.open)dialog.showModal();
     $("shift-place").focus();
   }
