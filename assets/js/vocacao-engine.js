@@ -150,7 +150,7 @@
 
   function validResponse(answer) {
     return !!answer && Number.isInteger(answer.first) && answer.first>=-1 && answer.first<=3 &&
-      (answer.second==null || (Number.isInteger(answer.second) && answer.second>=0 && answer.second<=3 && answer.second!==answer.first)) &&
+      (answer.second==null || (answer.first>=0 && Number.isInteger(answer.second) && answer.second>=0 && answer.second<=3 && answer.second!==answer.first)) &&
       typeof answer.unfamiliar==="boolean";
   }
   const optionsBy = (id, response) => {
