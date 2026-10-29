@@ -4740,3 +4740,30 @@ html body[data-ui="v2"][data-page="caderno"] .main .note-editing-panel > .note-i
   html body[data-page="caderno"] .main #notebook-toolbar .note-type-tools select {max-width:110px!important;}
 }
 }
+
+/* Gerenciamento visível da conexão Notion na biblioteca de Anotações. */
+body[data-page="caderno"] .notebook-notion-first-connect-copy strong {
+  font-size: 13px !important;
+}
+body[data-page="caderno"] .notebook-notion-first-connect-copy span {
+  font-size: 11px !important;
+  line-height: 1.55 !important;
+}
+body[data-page="caderno"] .notebook-notion-first-connect-copy small {
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+body[data-page="caderno"] .notebook-notion-first-connect[data-connected="true"] {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+}
+body[data-page="caderno"] .notebook-notion-connect-actions {
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+body[data-page="caderno"] .notebook-notion-connect-actions [hidden] {display:none!important}
+@media(max-width:620px) {
+  body[data-page="caderno"] .notebook-notion-connect-actions {justify-content:flex-start}
+}
