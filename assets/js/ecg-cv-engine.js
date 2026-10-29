@@ -1513,6 +1513,7 @@
     let validWaveformCells = 0;
     let ocrConfirmedCount = 0;
     let labelMismatchCount = 0;
+    let ocrConflictCount = 0;
     let overlappingCellsCount = 0;
 
     for (const cell of cellBoxes) {
@@ -1562,13 +1563,25 @@
       let assignmentEvidence = "unverified";
 
       if (ocrRes.recognized) {
-        ocrConfirmedCount++;
-        assignedLead = ocrRes.lead;
-        assignmentEvidence = "ocr_verified";
-        labelCounts[assignedLead] = (labelCounts[assignedLead] || 0) + 1;
+        labelCounts[ocrRes.lead] = (labelCounts[ocrRes.lead] || 0) + 1;
 
-        if (assignedLead !== cell.expectedLead) {
+        if (ocrRes.lead === cell.expectedLead) {
+          ocrConfirmedCount++;
+          assignedLead = ocrRes.lead;
+          assignmentEvidence = "ocr_verified";
+        } else {
+          // A single bitmap-label read is not strong enough to erase a
+          // complete sheet with real waveform evidence. Keep the geometric
+          // candidate under its expected slot, preserve the contradictory OCR
+          // reading in the identity/audit, and require human confirmation.
+          // This avoids turning one V4/V1 glyph confusion into "no leads
+          // found" while still never publishing a named automatic signal.
           labelMismatchCount++;
+          ocrConflictCount++;
+          if (sigRes.isValid) {
+            assignedLead = cell.expectedLead;
+            assignmentEvidence = "positional_hypothesis";
+          }
         }
       } else if (sigRes.isValid) {
         // Só permite atribuição posicional condicional se nenhuma contradição de rótulo ocorreu
@@ -1626,7 +1639,7 @@
     }
 
     if (labelMismatchCount > 0) {
-      anomalies.push({ code: "non_standard_lead_arrangement" });
+      anomalies.push({ code: "ocr_label_conflict_requires_review" });
     }
 
     if (overlappingCellsCount > 0) {
@@ -1673,36 +1686,17 @@
       };
     }
 
-    // 3. Se houve troca parcial de derivações (alguns rótulos trocados, mas nem todas as 12 derivações possuem rótulo OCR legível para desambiguar o restante)
-    // A label mismatch is never proof of a safely supported reordered layout.
-    // Reject even with 12 OCR matches: a wrongly cropped neighbouring label can
-    // make aVF appear in the position expected for aVR.
-    if (labelMismatchCount > 0) {
-      anomalies.push({ code: "ambiguous_swapped_leads_without_full_ocr" });
-      return {
-        isValidECG: false,
-        confidence: 0.35,
-        detectedLayout: null,
-        candidateRegions,
-        validWaveformCells,
-        layoutConfidence: "rejected_ambiguous_layout",
-        recognizedLabels,
-        leadIdentities,
-        cellIdentities,
-        anomalies,
-        message: "Há um rótulo impresso fora da posição esperada. Os pixels foram preservados apenas para conferência; nenhuma derivação foi nomeada automaticamente."
-      };
-    }
-
     const layoutConfidence = ocrConfirmedCount >= 6
       ? "high_ocr_verified"
-      : (validWaveformCells >= 10 ? "medium_topology_verified" : "low_partial");
+      : (labelMismatchCount > 0 ? "topology_with_ocr_conflict"
+        : (validWaveformCells >= 10 ? "medium_topology_verified" : "low_partial"));
 
     const detectedLayout = {
-      name: labelMismatchCount > 0 ? `${candidateTemplate.name}_reordered` : candidateTemplate.name,
+      name: labelMismatchCount > 0 ? `${candidateTemplate.name}_ocr_review` : candidateTemplate.name,
       description: candidateTemplate.description,
-      isPositionalHypothesisOnly: ocrConfirmedCount === 0,
+      isPositionalHypothesisOnly: ocrConfirmedCount === 0 || labelMismatchCount > 0,
       ocrConfirmedCount,
+      ocrConflictCount,
       validWaveformCells,
       candidateRegions,
       leads: (duplicateLeads.length > 0 || labelMismatchCount > 0) ? candidateRegions : dynamicLeadsMap,
@@ -1720,7 +1714,9 @@
       leadIdentities,
       cellIdentities,
       anomalies,
-      message: ocrConfirmedCount > 0
+      message: labelMismatchCount > 0
+        ? `ECG identificado por topologia (${validWaveformCells} regiões de traçado). ${ocrConflictCount} leitura${ocrConflictCount === 1 ? "" : "s"} de rótulo divergente${ocrConflictCount === 1 ? " foi isolada" : "s foram isoladas"}; confira e confirme as derivações antes de qualquer uso clínico.`
+        : ocrConfirmedCount > 0
         ? `ECG identificado (${validWaveformCells} derivações ativas, ${ocrConfirmedCount} rótulos confirmados via OCR).`
         : `ECG identificado por topologia (${validWaveformCells} regiões de traçado; rótulos em hipótese posicional — requer confirmação).`
     };

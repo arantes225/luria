@@ -37,7 +37,7 @@ test("candidate positions cannot enter the finalized lead map without an identit
   assert.match(mainFile,/const other = cvEngine\.recognizeLeadLabelInRegion\(roiImageData/);
   assert.match(mainFile,/other\.recognizedLead !== leadName/);
   assert.match(mainFile,/maskPrintedHeader: true/);
-  assert.match(cvFile,/if \(labelMismatchCount > 0\) \{/);
+  assert.match(cvFile,/ocr_label_conflict_requires_review/);
 });
 test("printed label and calibration prefix are missing data, not traced into an artificial waveform",()=>{
   const width=200, height=50;

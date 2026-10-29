@@ -65,7 +65,8 @@
   // exact matches to the expected label, with no sheet-level label ambiguity.
   function isSafeAutomaticLeadAssignment(lead, identity, box, anomalies = []) {
     const warnings = new Set(["duplicate_label", "label_conflict",
-      "ambiguous_swapped_leads_without_full_ocr", "non_standard_lead_arrangement"]);
+      "ambiguous_swapped_leads_without_full_ocr", "non_standard_lead_arrangement",
+      "ocr_label_conflict_requires_review"]);
     if (anomalies.some(a => warnings.has(a.code))) return false;
     if (!identity || !box || identity.status !== "ocr_confirmed") return false;
     if (identity.recognizedLead !== lead || identity.expectedLead !== lead ||
