@@ -144,6 +144,10 @@
                 <button type="button" class="is-active" data-alex-depth="rapida" aria-pressed="true">Dúvida rápida</button>
                 <button type="button" data-alex-depth="aula" aria-pressed="false">Aula completa</button>
               </div>
+              <label for="alex-natural-voice" style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--text);cursor:pointer;grid-column:1/-1;">
+                <input type="checkbox" id="alex-natural-voice" style="accent-color:var(--accent);width:16px;height:16px;">
+                Voz natural em aulas ao vivo (pode demorar mais)
+              </label>
             </div>
 
             <!-- Chat Conversacional Unificado (Sem matérias nem selects rígidos) -->
@@ -194,7 +198,7 @@
                   <button type="button" id="alex-file-remove" aria-label="Remover anexo">×</button>
                 </div>
               </form>
-
+              <button id="alex-new-conversation" type="button" class="alex-action" style="margin:10px 0 0 auto;display:block;" aria-label="Iniciar nova conversa com o Professor Alex">Nova conversa</button>
             </div>
           </div>
         </section>
@@ -415,7 +419,7 @@
   </script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
   <!-- A conversa de voz é controlada exclusivamente por professor-alex-gemini.mjs. -->
-  <script type="module" src="/assets/js/professor-alex-gemini.mjs?v=20261026-rich-format1"></script>
+  <script type="module" src="/assets/js/professor-alex-gemini.mjs?v=20261028-fast1"></script>
   <script type="module" src="/assets/js/professor-alex-page.mjs?v=20261014-ready2"></script>
 </body>
 </html>
