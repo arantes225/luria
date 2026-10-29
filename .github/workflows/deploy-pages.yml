@@ -54,6 +54,8 @@ jobs:
         run: node --test tests/vocacao.test.cjs tests/vocacao-ui.test.cjs tests/vocacao-theme.test.cjs
       - name: Check CSP generation
         run: node scripts/sync-csp.cjs
+      - name: Verify Notion connect controls in both libraries
+        run: node --test tests/notion-library-connect.test.cjs
       - name: Validate social room permissions, client behavior and voice authorization
         run: node --test --test-isolation=none tests/social-database.test.cjs tests/social-room-features.test.cjs tests/social-voice-usage.test.cjs tests/social-ui.test.cjs tests/social-voice.test.cjs tests/social-voice-client.test.cjs tests/social-voice-site.test.cjs tests/social-pwa.test.cjs tests/social-production.test.cjs tests/social-group-community.test.cjs tests/social-group-community-ui.test.cjs tests/social-native-activities.test.cjs tests/social-native-activities-ui.test.cjs tests/stage82-ui.test.cjs tests/ui-stage22.test.cjs
       - name: Verify justified text in apostilas

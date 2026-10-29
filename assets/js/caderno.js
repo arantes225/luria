@@ -14607,6 +14607,7 @@ async function ensureNotionLibraryPages() {
     notionSourceState.connected = Boolean(state?.connected);
     notionSourceState.configured = Boolean(state?.configured);
     notionSourceState.workspaceName = state?.workspace_name || "";
+    updateNotionConnectionUi();
 
     if (!notionSourceState.connected) {
       notionSourceState.libraryLoaded = true;
@@ -17168,34 +17169,38 @@ function setNotebookSource() {
 }
 
 function updateNotionConnectionUi() {
+  const card = document.getElementById("notebook-notion-first-connect");
   const connect = document.getElementById("notebook-notion-connect");
-  const firstConnect = document.getElementById("notebook-notion-first-connect");
+  const refresh = document.getElementById("notebook-notion-refresh");
+  const disconnect = document.getElementById("notebook-notion-disconnect");
+  const title = document.getElementById("notebook-notion-connection-title");
+  const copy = document.getElementById("notebook-notion-connection-copy");
+  const status = document.getElementById("notebook-notion-connection-status");
+  const connected = Boolean(notionSourceState.connected);
+  const workspace = String(notionSourceState.workspaceName || "").trim();
 
-  if (notionSourceState.connected) {
+  if (connected) {
     try { localStorage.setItem("luria:notion:ever-connected", "1"); } catch {}
   }
+  let previousConnection = false;
+  try { previousConnection = localStorage.getItem("luria:notion:ever-connected") === "1"; } catch {}
 
-  let everConnected = false;
-  try {
-    everConnected = localStorage.getItem("luria:notion:ever-connected") === "1";
-  } catch {}
-
-  const shouldShowConnect = !notionSourceState.connected;
-
+  // Esta seção deve permanecer visível na biblioteca, mesmo quando conectada.
+  if (card) card.hidden = false;
   if (connect) {
-    connect.hidden = !shouldShowConnect;
-    connect.textContent = everConnected ? "Reconectar Notion" : "Conectar Notion";
+    connect.hidden = connected;
+    connect.textContent = previousConnection ? "Reconectar Notion" : "Conectar Notion";
   }
-
-  if (firstConnect) {
-    firstConnect.hidden = !shouldShowConnect;
-    const title = firstConnect.querySelector(".notebook-notion-first-connect-copy strong");
-    const copy = firstConnect.querySelector(".notebook-notion-first-connect-copy span");
-    if (title) title.textContent = everConnected ? "Reconectar Notion" : "Conectar Notion";
-    if (copy) copy.textContent = everConnected
-      ? "A conexão anterior não está ativa. Reconecte para voltar a exibir e editar suas páginas do Notion."
-      : "Conecte uma vez para trazer suas páginas para a biblioteca de Anotações.";
-  }
+  if (refresh) refresh.hidden = !connected;
+  if (disconnect) disconnect.hidden = !connected;
+  if (card) card.dataset.connected = String(connected);
+  if (title) title.textContent = connected ? "Notion conectado" : (previousConnection ? "Reconectar Notion" : "Conectar Notion");
+  if (copy) copy.textContent = connected
+    ? "As novas anotações criadas aqui podem ser armazenadas e editadas no seu Notion. As notas antigas não são migradas automaticamente."
+    : "Conecte sua conta para criar e editar novas anotações no Notion, sem depender da memória do Professor Alex.";
+  if (status) status.textContent = connected
+    ? "Conectado" + (workspace ? " · " + workspace : "")
+    : notionSourceState.configured ? "Não conectado" : "Conexão indisponível ou ainda não configurada";
 }
 
 function renderNotionPages(pages = notionSourceState.pages) {
@@ -17478,6 +17483,9 @@ async function disconnectNotion() {
 
 function wireNotionSourceEvents() {
   document.getElementById("notebook-notion-connect")?.addEventListener("click", connectNotion);
+  document.getElementById("notebook-notion-refresh")?.addEventListener("click", refreshNotionSource);
+  document.getElementById("notebook-notion-disconnect")?.addEventListener("click", disconnectNotion);
+  updateNotionConnectionUi();
 
   const params = new URLSearchParams(window.location.search);
   if (params.get("notion") === "connected") {

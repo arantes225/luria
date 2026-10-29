@@ -679,3 +679,32 @@
 .hall-btn {text-decoration:none;}
 #books-library-view .luria-back-button {border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border));font:inherit;cursor:pointer;}
 @media(max-width:640px){#books-library-view .active-area-banner{align-items:flex-start;flex-wrap:wrap;}}
+
+/* Notion: conexão fica na biblioteca da área, nunca no hall de escolha. */
+#books-library-view .books-notion-connection {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:15px 17px;
+  margin:6px 0 18px;
+  border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));
+  background:color-mix(in srgb,var(--accent) 4%,var(--surface));
+  border-radius:14px;
+}
+#books-library-view .books-notion-copy {display:grid;gap:4px;min-width:0}
+#books-library-view .books-notion-copy strong {font-size:14px;color:var(--text)}
+#books-library-view .books-notion-copy small,
+#books-library-view .books-notion-copy span {font-size:11px;color:var(--muted);line-height:1.45}
+#books-library-view .books-notion-action {
+  flex-shrink:0;cursor:pointer;
+  font:inherit;font-size:12px;font-weight:700;
+  padding:11px 14px;border:1px solid var(--accent);
+  border-radius:10px;background:var(--accent);color:#fff;
+  text-decoration:none;
+}
+#books-library-view .books-notion-action[hidden] {display:none!important}
+@media(max-width:650px) {
+  #books-library-view .books-notion-connection {align-items:stretch;flex-direction:column}
+  #books-library-view .books-notion-action {align-self:flex-start}
+}

@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
-  <link rel="stylesheet" href="assets/css/caderno.css?v=20261016-editor-tools">
+  <link rel="stylesheet" href="assets/css/caderno.css?v=20261029-notion1">
   <link rel="canonical" href="/caderno/">
 <script>(function(){try{if(location.pathname.endsWith("/caderno.html"))history.replaceState(null,"","/caderno/"+location.search+location.hash);}catch(e){}})();</script>
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20260928-anotacoes-size-v2">
@@ -283,13 +283,18 @@ body[data-page="caderno"] .note-outline-apostila #notebook-topic-panel-toggle{
             </div>
           </div>
 
-          <div id="notebook-notion-first-connect" class="notebook-notion-first-connect" hidden>
+          <section id="notebook-notion-first-connect" class="notebook-notion-first-connect" aria-label="Integração de anotações com Notion">
             <div class="notebook-notion-first-connect-copy">
-              <strong>Conectar Notion</strong>
-              <span>Conecte uma vez para trazer suas páginas para a biblioteca de Anotações.</span>
+              <strong id="notebook-notion-connection-title">Conectar Notion</strong>
+              <span id="notebook-notion-connection-copy">Conecte seu Notion para guardar e editar novas anotações no seu espaço de trabalho.</span>
+              <small id="notebook-notion-connection-status" role="status" aria-live="polite">Verificando conexão…</small>
             </div>
-            <button id="notebook-notion-connect" class="button primary compact-button" type="button">Conectar Notion</button>
-          </div>
+            <div class="notebook-notion-connect-actions">
+              <button id="notebook-notion-connect" class="button primary compact-button" type="button">Conectar Notion</button>
+              <button id="notebook-notion-refresh" class="button secondary compact-button" type="button" hidden>Atualizar páginas</button>
+              <button id="notebook-notion-disconnect" class="button secondary compact-button" type="button" hidden>Desconectar</button>
+            </div>
+          </section>
 
           <div class="notebook-library-search-controls">
             <div class="notebook-searchbar">
@@ -706,7 +711,7 @@ body[data-page="caderno"] .note-outline-apostila #notebook-topic-panel-toggle{
     }
   </style>
 
-<script src="assets/js/caderno.js?v=20261016-editor-tools"></script>
+<script src="assets/js/caderno.js?v=20261029-notion1"></script>
 <script src="assets/js/caderno-notion-editor-fix.js?v=7"></script>
 <script src="/assets/js/caderno-study-lazy.js?v=20261028-notes-recovery1"></script>
 <script src="assets/js/image-lightbox.js?v=1"></script>
