@@ -546,6 +546,11 @@ if (form) {
       const { data, error } = await client.functions.invoke("professor-alex-gemini", { body: payload });
       if (error) throw error;
       if (data?.usage) renderUsage(data.usage);
+      if (data?.accounting_pending) {
+        // Token accounting completes in the Edge background; refresh the meter
+        // shortly afterward without holding up the response.
+        window.setTimeout(() => refreshUsage().catch(() => {}), 1_300);
+      }
       if (typeof data?.clarification === "string" && data.clarification.trim()) {
         if (!isLiveActive) display(data.clarification, "Confirme a transcrição");
         else speakText(data.clarification);
