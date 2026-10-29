@@ -58,7 +58,7 @@ test("seleção de aprofundamento retorna dez perguntas distintas com diversidad
 test("o questionário não aceita respostas incompletas ou inválidas",()=>{
   assert.equal(engine.validResponse(answer(4)),false);
   assert.equal(engine.validResponse(answer(0,0)),false);
-  assert.equal(engine.validResponse(answer(-1,3)),true);
+  assert.equal(engine.validResponse(answer(-1,3)),false);
   assert.throws(()=>engine.selectAdaptive({}));
   assert.throws(()=>engine.calculate({},[]));
 });
