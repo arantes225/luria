@@ -48,7 +48,9 @@ test("Edge function integrates prompts module, multi-turn history, and configura
 
 test("Client maintains session history and calibrated voice parameters", () => {
   assert.match(clientFile, /sessionHistory/);
-  assert.match(clientFile, /history:\s*shouldSendAlexHistory\(prompt\) \? sessionHistory\.slice\(-4\) : \[\]/);
+  assert.match(clientFile, /history:\s*sessionHistory\.slice\(-12\)/);
+  assert.doesNotMatch(clientFile, /shouldSendAlexHistory/);
+  assert.match(clientFile, /rememberAlexTurn\(session\.user\.id/);
   assert.match(clientFile, /utterance\.rate = isEstourado \? 1\.25 : 1\.04/);
   assert.match(clientFile, /utterance\.pitch = isEstourado \? 0\.82 : 1\.0/);
 });
