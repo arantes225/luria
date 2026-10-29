@@ -89,7 +89,11 @@
         // fixed black threshold; the later long-line suppression removes a
         // grayscale grid that also passes this adaptive gate.
         if (!isColoredGrid && contrast >= 20 && luma < Math.min(218, localBg - 18)) {
-          inkStrength[y * width + x] = Math.min(1.0, contrast / 125);
+          // Keep the full contrast range. Saturating at ~125 levels made a
+          // dark grey grid indistinguishable from genuinely black waveform
+          // ink in phone photos, so the tracker could confidently follow the
+          // paper instead of the ECG.
+          inkStrength[y * width + x] = Math.min(1.0, contrast / 235);
         } else {
           inkStrength[y * width + x] = 0;
         }
@@ -117,7 +121,7 @@
       for (let bin = 0; bin < strengthHistogram.length; bin++) {
         cumulative += strengthHistogram[bin];
         if (cumulative >= target) {
-          denseInkFloor = Math.min(0.92, Math.max(0.78, bin / 63));
+          denseInkFloor = Math.min(0.86, Math.max(0.58, bin / 63));
           break;
         }
       }
@@ -140,6 +144,7 @@
         }
       }
     }
+
     const longRows = new Uint8Array(height);
     const longCols = new Uint8Array(width);
     for (let y = 0; y < height; y++) longRows[y] = rowInk[y] > width * 0.62 ? 1 : 0;
@@ -772,6 +777,33 @@
     // Estágio B: Rastreamento de curva
     const tracked = trackSignalCurve(imageData, prep, options);
     const continuityRatio = tracked.columnsWithInk / width;
+
+    // A lead crop that is almost entirely dark candidates is dominated by
+    // shadows, folds, text, or a very dense grid. It is safer to request a
+    // recapture than choose a plausible-looking line from that ambiguity.
+    if (prep.rawInkDensity > 0.25) {
+      const failDense = {
+        isValid: false,
+        leadIdentity,
+        regionBounds: regionBounds || { x: 0, y: 0, width, height },
+        signal: null,
+        curveCoordinatesPx: [],
+        validMask: Array.from(tracked.validMask),
+        interpolatedMask: [],
+        missingSegments: [],
+        trackingStats: { overlapRatio: tracked.overlapRatio, hasMultipleCurves: tracked.hasMultipleCurves },
+        calibration: calibration || { calibrationSource: "unknown", measurementsAllowed: false },
+        recoveredDurationSeconds: null,
+        effectiveResolutionHz: null,
+        confidence: 0.1,
+        continuity: Number(continuityRatio.toFixed(3)),
+        limitations: ["Densidade de tinta incompatível com uma derivação isolada; grade, sombra ou texto dominam a imagem."],
+        provenance,
+        message: "A imagem está visualmente densa demais para separar o traçado com segurança. Não foi desenhada uma curva; recapture com luz uniforme e sem reflexo."
+      };
+      failDense.audit = auditExtractedLead(failDense);
+      return failDense;
+    }
 
     // Verificar excesso de colunas densas (ex.: bloco de texto, listras verticais grossas ou manchas)
     if (tracked.excessiveThicknessColumns > width * 0.18) {
