@@ -127,3 +127,12 @@ body[data-page="trabalho_laboratorio"] .work-hub-navigation .work-hub-return{dis
   #exam-tool .ex-catalog-heading{gap:8px}
 }
 @media(prefers-reduced-motion:reduce){#exam-tool .ex-test.ex-card{transition:none}}
+
+#exam-tool .ex-test-details{border-top:1px solid var(--border,#dce5f0);padding-top:8px}
+#exam-tool .ex-test-details summary{cursor:pointer;font-weight:750;font-size:12px;line-height:1.5;color:var(--accent,#184888);padding:6px 0}
+#exam-tool .ex-test-details summary:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+#exam-tool .ex-test-details-content{display:grid;gap:10px;padding:10px 0;font-size:12px;line-height:1.55;color:var(--text,#142741)}
+#exam-tool .ex-test-details-content p{margin:0;overflow-wrap:anywhere}
+#exam-tool .ex-test-details-content strong{display:block;font-size:11px;color:var(--accent,#184888)}
+#exam-tool .ex-test-details-content a{font-size:11px;text-decoration:underline;overflow-wrap:anywhere}
+#exam-tool .ex-test-details-content small{font-size:10px;color:var(--muted,#67758b)}
