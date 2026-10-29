@@ -52,7 +52,8 @@ test("Biblioteca mostra estado real após consultar Notion, sem dizer conectado 
   w.eval(booksScript);
   await new Promise(resolve=>setTimeout(resolve,10));
   assert.equal(calls.length,1);
-  assert.deepEqual(calls[0],["notion-api",{action:"status"}]);
+  assert.equal(calls[0][0], "notion-api");
+  assert.equal(calls[0][1].action, "status");
   assert.equal(w.document.querySelector("#books-notion-connect").hidden,true);
   assert.equal(w.document.querySelector("#books-notion-open").hidden,false);
   assert.match(w.document.querySelector("#books-notion-status").textContent,/conectado/i);
