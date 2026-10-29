@@ -42,9 +42,9 @@
     button.disabled = true;
     notify("Iniciando conexão segura com o Notion…");
     try {
-      const callback = new URL(location.href);
-      callback.searchParams.set("notion", "connected");
-      const result = await invoke("notion-auth", {redirect_to:callback.origin+callback.pathname+callback.search});
+      // Retorno ao Caderno usa a rota OAuth já autorizada pela LURIA.
+      const callback = location.origin + "/caderno/?view=library&notion=connected";
+      const result = await invoke("notion-auth", {redirect_to:callback});
       if (!result?.url) throw Error("Notion ainda não configurado pelo administrador.");
       const target = new URL(result.url);
       if (target.protocol !== "https:" || !/(^|\.)notion\.so$/.test(target.hostname)
