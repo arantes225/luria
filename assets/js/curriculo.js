@@ -61,15 +61,18 @@
     box.replaceChildren();
     pending.forEach((item, index) => {
       const label = node('label', undefined, 'cv-item');
-      const text = node('span', `${item.title} · ${item.year || 'Ano não informado'} · ${core.categories[item.category] || 'Atividade'}`);
+      const text = node('span', `${item.title} · ${item.year || 'Ano não informado'} · ${core.categories[item.category] || 'Atividade'}${item.sourcePage ? ' · pág. ' + item.sourcePage : ''}`);
       const check = node('input');
       check.type = 'checkbox';
-      check.checked = true;
+      // O OCR pode confundir nomes, títulos e datas: exigimos seleção explícita.
+      check.checked = item.source !== 'pdf-ocr';
       check.dataset.importIndex = String(index);
       label.append(check, text);
       box.append(label);
     });
-    $('cv-import-description').textContent = `${pending.length} atividade(s) sugerida(s) a partir do ${sourceLabel}. Revise a categoria, o ano e o título antes de adicionar. Nenhuma atividade importada é marcada como conferida.`;
+    const optical = pending.some(item => item.source === 'pdf-ocr');
+    $('cv-import-description').textContent = `${pending.length} atividade(s) sugerida(s) a partir do ${sourceLabel}. Revise a categoria, o ano e o título antes de adicionar. Nenhuma atividade importada é marcada como conferida.` +
+      (optical ? ' Esta leitura visual pode conter erros; marque individualmente apenas as atividades que conferir no PDF original.' : '');
     $('cv-import-review').hidden = false;
     status(`${sourceLabel} lido. Revise as sugestões antes de adicioná-las.`);
   }
@@ -447,9 +450,16 @@
       try {
         const result = await pdfSupport.extract(file, status);
         if (owner !== userId) return;
-        if (result.items.length) showImportReview(result.items, 'PDF');
-        else if (!result.hasText) status('PDF anexado. Ele parece ser digitalizado, sem texto selecionável. Você pode abri-lo, mas deve cadastrar as atividades manualmente.');
-        else status('PDF anexado e disponível para abrir. Não foi possível identificar atividades estruturadas com segurança; adicione-as manualmente ou use o XML do Lattes.');
+        if (result.items.length) {
+          showImportReview(result.items, result.ocrUsed ? 'PDF Lattes (leitura visual/OCR)' : 'PDF');
+          if (result.partial) status('Leitura visual parcial: foram analisadas ' + result.pagesOcr + ' de ' + result.pages + ' páginas. Confira todas as sugestões antes de incluir.');
+        } else if (result.ocrUsed && result.hasText) {
+          status('O PDF foi lido por OCR em ' + result.pagesOcr + ' página(s), mas não foram identificadas atividades com segurança. Confira o original ou importe o XML Lattes.');
+        } else if (!result.hasText) {
+          status('PDF anexado. Não foi possível reconhecer o texto do documento digitalizado, nem mesmo por OCR. O original pode ser aberto; tente o XML do Lattes ou o cadastro manual.');
+        } else {
+          status('PDF anexado e disponível para abrir. Não foi possível identificar atividades estruturadas com segurança; adicione-as manualmente ou use o XML do Lattes.');
+        }
       } catch (error) {
         if (owner === userId) status('PDF anexado para visualização, mas a extração de atividades falhou: ' + error.message);
       }

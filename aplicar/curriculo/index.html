@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js https://cdn.jsdelivr.net/npm/jspdf@4.2.1/dist/jspdf.umd.min.js; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js https://cdn.jsdelivr.net/npm/tesseract.js@v5.1.1/dist/worker.min.js https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core.wasm.js https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core-simd.wasm.js https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core-lstm.wasm.js https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core-simd-lstm.wasm.js https://cdn.jsdelivr.net/npm/jspdf@4.2.1/dist/jspdf.umd.min.js 'wasm-unsafe-eval'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core.wasm https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core-simd.wasm https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core-lstm.wasm https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core-simd-lstm.wasm https://cdn.jsdelivr.net/npm/@tesseract.js-data/eng/4.0.0/eng.traineddata.gz https://cdn.jsdelivr.net/npm/@tesseract.js-data/eng/4.0.0_best_int/eng.traineddata.gz https://cdn.jsdelivr.net/npm/@tesseract.js-data/por/4.0.0/por.traineddata.gz https://cdn.jsdelivr.net/npm/@tesseract.js-data/por/4.0.0_best_int/por.traineddata.gz; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -96,7 +96,7 @@
                 <button id="cv-export-pdf" type="button">Baixar currículo em PDF</button>
                 <button id="cv-export" type="button">Backup de dados (JSON)</button>
               </div>
-              <small>Importe seu Lattes em XML ou um currículo em PDF (máx. 10 MB). O PDF fica salvo somente neste navegador, separado por conta. Arquivos em PDF podem ser abertos novamente; atividades sugeridas pela leitura de texto precisam ser revisadas e não são comprovantes de pontuação.</small>
+              <small>Importe seu Lattes em XML ou um currículo em PDF (máx. 10 MB). O PDF fica salvo somente neste navegador, separado por conta. Arquivos em PDF podem ser abertos novamente; a LURIA também tentará reconhecer visualmente páginas sem texto selecionável (OCR local, sem enviar o documento); revise as sugestões, que não substituem comprovantes nem garantem pontuação.</small>
               <div id="cv-pdf-attached" class="cv-pdf-attached" hidden>
                 <span id="cv-pdf-filename"></span>
                 <div class="cv-actions">
@@ -151,9 +151,10 @@
 <script src="/assets/js/app.js?v=20261026-checklist8"></script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
   <script src="/assets/js/luria-lazy-vendors.js?v=20261028-cvpdf"></script>
-  <script src="/assets/js/curriculo-pdf.js?v=20261028-cvpdf"></script>
+  <script src="/assets/js/curriculo-pdf-ocr.js?v=20261028-cvocr1"></script>
+  <script src="/assets/js/curriculo-pdf.js?v=20261028-cvocr1"></script>
   <script src="/assets/js/curriculo-core.js?v=20261017-matrizes2"></script>
   <script src="/assets/js/curriculo-rubricas.js?v=20261028-r1curriculos"></script>
-  <script src="/assets/js/curriculo.js?v=20261028-r1curriculos"></script>
+  <script src="/assets/js/curriculo.js?v=20261028-cvocr1"></script>
 </body>
 </html>
