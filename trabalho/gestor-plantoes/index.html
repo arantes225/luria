@@ -21,7 +21,7 @@
     .gm-hero{padding:22px 24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}\n    .gm-hero-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
     .gm-hero h2{margin:0 0 7px;font-size:24px}
     .gm-hero p{max-width:760px;margin:0;color:var(--muted);line-height:1.55}
-    .gm-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .gm-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
     .gm-card{min-height:205px;display:flex;flex-direction:column;padding:20px;border:1px solid var(--border);border-radius:17px;background:var(--surface);color:var(--text);text-decoration:none;box-shadow:0 6px 20px rgba(15,23,42,.035);transition:transform .15s,border-color .15s,box-shadow .15s}
     .gm-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 10px 28px rgba(15,23,42,.07)}
     .gm-icon{width:44px;height:44px;display:grid;place-items:center;margin-bottom:20px;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-size:21px;font-weight:900}
@@ -93,10 +93,16 @@
               <p>Divida horários e períodos do plantão entre os profissionais.</p>
               <span class="gm-open">Abrir divisor →</span>
             </a>
+            <a class="gm-card" href="/trabalho/financeiro/#instituicoes">
+              <span class="gm-icon" aria-hidden="true">▤</span>
+              <h3>Instituições e cobranças</h3>
+              <p>Consulte cada pagador, ajuste prazos e identifique cobranças pendentes.</p>
+              <span class="gm-open">Ver instituições →</span>
+            </a>
             <a class="gm-card" href="/trabalho/financeiro/">
               <span class="gm-icon" aria-hidden="true">$</span>
               <h3>Financeiro</h3>
-              <p>Acompanhe pagamentos, repasses e valores relacionados aos seus plantões.</p>
+              <p>Acompanhe recebimentos, descontos, impostos e valores líquidos estimados.</p>
               <span class="gm-open">Abrir financeiro →</span>
             </a>
           </div>
