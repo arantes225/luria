@@ -68,7 +68,7 @@
       [["Paciente recuperou independência após reabilitação.","function,followup,people"],["Pacientes com doenças crônicas alcançaram bom controle.","clinical,followup,people"],["Um serviço reduziu complicações com melhor processo.","systems,team,prevention"],["Um procedimento foi realizado com segurança e bom resultado.","hands,surgery,precision"]]],
     ["c15","Populações","Em que cenário você gostaria de adquirir experiência continuada?","Não é uma escolha definitiva de população: serve para aprofundar.",
       [["Cuidado neonatal, infantil e de adolescentes.","kids,people,highstakes","Pediatria"],["Saúde sexual, reprodutiva e assistência obstétrica.","women,people,clinical","Ginecologia e Obstetrícia"],["Adultos com múltiplas doenças complexas.","clinical,complex,diagnosis","Clínica Médica"],["Pacientes com sofrimento emocional persistente.","mental,followup,people","Psiquiatria"]]],
-    ["c16","Limites","Qual compromisso difícil parece mais aceitável para sua carreira?","Considere um sacrifício recorrente, não um caso excepcional.",
+    ["c16","Limites","Qual compromisso difícil você aceitaria ao escolher uma residência médica?","Considere um sacrifício recorrente, não um caso excepcional.",
       [["Muita escuta e documentação antes de perceber resultados.","people,followup,mental"],["Pressão temporal e decisões potencialmente irreversíveis.","acute,highstakes,team"],["Repetir treinamento técnico até atingir grande precisão.","hands,precision,surgery"],["Longos períodos interpretando dados com poucos encontros presenciais.","visual,technology,diagnosis"]]]
   ];
   const DEEP_ROWS = [
@@ -130,7 +130,7 @@
       [["Atenção primária, prevenção e comunidade.","community,clinical,prevention"],["Ambulatório de doenças complexas.","complex,diagnosis,followup"],["Serviço de reabilitação com equipe multidisciplinar.","function,team,people"],["Centro de exames com tecnologia especializada.","technology,visual,precision"]]]
   ];
   const END_ROWS = [
-    ["e01","Prioridades","Na carreira, o que você não gostaria de perder?","Escolha o elemento mais indispensável, mesmo que outros também importem.",
+    ["e01","Prioridades","Ao escolher sua residência, o que você não gostaria de perder?","Escolha o elemento mais indispensável, mesmo que outros também importem.",
       [["Vínculo e continuidade com pacientes.","people,followup,clinical"],["Autonomia técnica para intervir.","hands,precision,surgery"],["Questões clínicas difíceis para resolver.","diagnosis,complex,research"],["Atuação rápida quando alguém piora.","acute,team,highstakes"]]],
     ["e02","Limite pessoal","Se tivesse que reduzir uma parte da sua semana, qual reduziria primeiro?","Essa pergunta investiga incômodos, não competência.",
       [["Procedimentos técnicos longos.","clinical,people,followup"],["Consultas com muitos retornos.","hands,technology,precision"],["Plantões com urgências frequentes.","predictable,diagnosis,visual"],["Exames e laudos repetitivos.","people,clinical,function"]]],
