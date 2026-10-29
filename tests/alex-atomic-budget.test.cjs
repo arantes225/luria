@@ -62,13 +62,16 @@ test('SQL: public callers cannot execute reservation or settlement',async()=>{
   }
 });
 
-function edge({failure, count=100, total=120, accountingFailure=false, paidGate, onPaid}={}) {
+function edge({failure, count=100, total=120, accountingFailure=false, paidGate, onPaid, backgroundAccounting=false, settleGate}={}) {
   let handler, paid=0, counted=0;
+  const backgroundTasks = [];
   const code=stripTypeScriptTypes(fs.readFileSync(path.join(root,'supabase/functions/professor-alex-gemini/index.ts'),'utf8').replace(/^import .*createClient.*;\r?\n/m,'').replace(/^export /gm,''));
   const context={Request,Response,Headers,AbortSignal,DOMException,TextEncoder,crypto,console:{warn(){},error(){}},
+    ...(backgroundAccounting ? {EdgeRuntime:{waitUntil(promise){backgroundTasks.push(promise)}}} : {}),
     Deno:{env:{get:(key)=>({SUPABASE_URL:'https://db.invalid',SUPABASE_ANON_KEY:'anon',SUPABASE_SERVICE_ROLE_KEY:'service',CLIENT_GEMINI:'fake-key'})[key]},serve:fn=>handler=fn},
     createClient:()=>({auth:{getUser:async()=>({data:{user:{id:user}}})},rpc:async(name,args)=>{
       if(accountingFailure&&name==='settle_alex_budget') return {error:true};
+      if(name==='settle_alex_budget'&&settleGate) await settleGate;
       return rpc(name,args);
     }}),
     fetch:async(url,options)=>{
@@ -85,8 +88,26 @@ function edge({failure, count=100, total=120, accountingFailure=false, paidGate,
     }};
   vm.runInNewContext(code,context);
   const call=(n=1,prompt='pergunta',extra={})=>handler(new Request('https://edge.invalid',{method:'POST',headers:{authorization:'Bearer fake'},body:JSON.stringify({request_id:id(n),prompt,model:'expensive/arbitrary',...extra})}));
-  return {call,stats:()=>({paid,counted})};
+  return {call,stats:()=>({paid,counted}),backgroundTasks};
 }
+test('Edge: waitUntil serves text before background settlement and preserves the budget', async()=>{
+  let release;
+  const settleGate = new Promise(resolve=>{ release=resolve; });
+  const f = edge({backgroundAccounting:true, settleGate});
+  const response = await f.call();
+  const body = await response.json();
+  assert.equal(response.status, 200);
+  assert.equal(body.answer, 'Resposta');
+  assert.equal(body.accounting_pending, true);
+  assert.equal(body.usage, null);
+  assert.equal(f.backgroundTasks.length, 1);
+  // While accounting is pending the full reservation remains charged.
+  assert.equal((await usage()).remaining_tokens, 0);
+  release();
+  await Promise.all(f.backgroundTasks);
+  assert.equal((await usage()).used_tokens, 120);
+});
+
 test('Edge: social greeting returns immediately without paid generation or token reservation',async()=>{
   const f=edge();const response=await f.call(1,'oi');const body=await response.json();
   assert.equal(response.status,200);assert.equal(body.fast_path,true);assert.equal(body.model,'local-fast-path');
