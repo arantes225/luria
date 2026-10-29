@@ -17,14 +17,16 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     preop:{label:"Kit Pré-Operatório & Coagulação",ids:["g1t1","g1t2","g1t8","g1t14","g8t1","g8t2","g8t3","g8t5","g2t1","g2t2","g3t1","g3t2","g6t1"]}
   };
   const e=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-  const number=s=>{if(s===undefined||s===null||String(s).trim()==="")return null;const v=Number(String(s).replace(",",".").trim());return Number.isFinite(v)?v:null};
+  const number=s=>{if(s===undefined||s===null)return null;const raw=String(s).trim();if(!/^[+-]?(?:\d+(?:[.,]\d+)?|[.,]\d+)$/.test(raw))return null;const v=Number(raw.replace(",","."));return Number.isFinite(v)?v:null};
   const fmt=n=>Number.isFinite(n)?Number(n.toFixed(2)).toLocaleString("pt-BR"):"—";
   const compareNames=(a,b)=>a.localeCompare(b,"pt-BR",{sensitivity:"base",numeric:true});
   const normalize=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("pt-BR").trim();
   const groupName=id=>C.find(g=>g.id===id)?.name||"Outros";
   const isAdult=()=>state.population.startsWith("adult");
   const isGest=()=>state.population.startsWith("gest");
-  const itemState=id=>state.readings[id]||(state.readings[id]={value:"",min:"",max:""});
+  const itemState=id=>state.readings[id]||(state.readings[id]={value:"",min:"",max:"",unit:""});
+  const unitKey=s=>String(s||"").replace(/\s+/g,"").toLocaleLowerCase("pt-BR").replace("μ","µ");
+  const hasFixedUnit=t=>t.kind==="numeric"&&!/Conforme|\bou\b/i.test(t.unit);
   function ranges(t,useCustom=true){
     const r=itemState(t.id);
     if(t.kind!=="numeric")return {min:null,max:null,custom:false,available:false};
@@ -44,12 +46,16 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     const r=itemState(t.id);if(String(r.value).trim()==="")return "";
     if(t.kind!=="numeric")return "recorded";
     const v=number(r.value);if(v===null)return "invalid";
+    if(v<0&&t.name!=="Excesso de bases")return "invalid";
+    if(t.name==="pH"&&(v<=0||v>=14))return "invalid";
+    if((t.unit==="%"||t.unit==="pontos")&&v>100)return "invalid";
+    if(hasFixedUnit(t)&&r.unit&&unitKey(r.unit)!==unitKey(t.unit))return "unit-mismatch";
     const lim=ranges(t);if((String(r.min).trim()&&number(r.min)===null)||(String(r.max).trim()&&number(r.max)===null)||(lim.min!==null&&lim.max!==null&&lim.min>lim.max))return "invalid";if(lim.min!==null&&v<lim.min)return "low";
     if(lim.max!==null&&v>lim.max)return "high";
-    if(lim.available)return "normal";
+    if(lim.available&&lim.min!==null&&lim.max!==null)return "normal";
     return "recorded";
   }
-  function reading(name){const t=C.flatMap(g=>g.tests).find(t=>t.name===name);if(!t)return null;return number(itemState(t.id).value)}
+  function reading(name){const t=C.flatMap(g=>g.tests).find(t=>t.name===name);if(!t||t.kind!=="numeric")return null;const current=status(t);if(current==="invalid"||current==="unit-mismatch"||current==="")return null;return number(itemState(t.id).value)}
   function has(name){return reading(name)!==null}
   function renderLayout(){
   root.innerHTML=`<section class="luria-page-spotlight ex-title-card" aria-label="Cabeçalho de Exames"><div class="luria-page-spotlight-copy ex-title-copy"><h2>Exames</h2><small class="luria-page-spotlight-helper">Valores de referência laboratoriais, kits rápidos de plantão e interpretação integrada</small></div><a class="ex-back-link" href="/trabalho/" aria-label="Voltar à Central do Trabalho"><span aria-hidden="true">←</span> Voltar</a></section>
@@ -149,7 +155,8 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
      return pool.filter(t=>!q||normalize(t.name).includes(q)||normalize(groupName(t.group)).includes(q))
        .sort((a,b)=>compareNames(a.name,b.name)||a.id.localeCompare(b.id));
    }
-   function renderCatalog(panel){
+   function refLabel(lim){if(!lim.available)return "Conferir laudo";if(lim.min!==null&&lim.max!==null)return `${fmt(lim.min)} a ${fmt(lim.max)}`;if(lim.min!==null)return `≥ ${fmt(lim.min)}`;if(lim.max!==null)return `≤ ${fmt(lim.max)}`;return "Conferir laudo";}
+  function renderCatalog(panel){
      const items=matching(),selected=C.find(g=>String(g.id)===String(state.group));
      const patient=state.mode==="patient",kitObj=state.kit?KITS[state.kit]:null;
      const title=state.search?"Resultados da busca":kitObj?kitObj.label:selected?selected.name:"Todos os exames";
@@ -162,7 +169,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
      const rows=panel.querySelector("#ex-rows");
      rows.innerHTML=items.map(t=>{
        const r=itemState(t.id),lim=ranges(t,patient),s=patient?status(t):"";
-       const ref=lim.available?`${lim.min===null?"":fmt(lim.min)}${lim.min!==null&&lim.max!==null?" a ":""}${lim.max===null?"":fmt(lim.max)}`:"Conferir laudo";
+       const ref=refLabel(lim);
        const head=`<div class="ex-card-head"><span class="ex-area-tag">${e(groupName(t.group))}</span><h4>${e(t.name)}</h4></div>`;
         const info=examDetails[t.id];
         const detailBlock=info?`<details class="ex-test-details"><summary>Entenda o exame</summary><div class="ex-test-details-content"><p><strong>Material</strong> ${e(info.sample)}</p><p><strong>Finalidade</strong> ${e(info.purpose)}</p><p><strong>Interpretação</strong> ${e(info.interpretation)}</p><p><strong>Cuidados</strong> ${e(info.caution)}</p><p><strong>Referências e unidade</strong> ${e(info.referencePolicy)} ${e(info.unitPolicy)}</p><a target="_blank" rel="noopener noreferrer" href="${e(info.sourceUrl)}">Fonte de orientação: ${e(info.sourceLabel)}</a><small>Fonte temática; não valida um intervalo universal nem substitui o laudo.</small></div></details>`:"";
@@ -190,7 +197,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     const r=itemState(id);r[field]=evt.target.value;
     const t=byId.get(id),row=evt.target.closest(".ex-test"),lim=ranges(t),s=status(t);
     const ref=row.querySelector("[data-ref]");
-    const rangeText=lim.available?`${lim.min===null?"":fmt(lim.min)}${lim.min!==null&&lim.max!==null?" a ":""}${lim.max===null?"":fmt(lim.max)}`:"Conferir laudo";
+    const rangeText=refLabel(lim);
     ref.firstChild.textContent=rangeText+(lim.diagnostic?"*":"");
     const flag=row.querySelector("[data-status]");flag.className="ex-status "+s;flag.textContent=({low:"Abaixo",high:"Acima",normal:"Na faixa informada",invalid:"Valor inválido",recorded:"Registrado"})[s]||"";
   }
