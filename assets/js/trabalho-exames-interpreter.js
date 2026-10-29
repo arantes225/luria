@@ -5,6 +5,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
   if(!root)return;
   const C=[...(window.LURIA_EXAM_CATALOG||[]),...(window.LURIA_EXAM_EXTRA_CATALOG||[])];
   const byId=new Map(C.flatMap(g=>g.tests.map(t=>[t.id,t])));
+  const examDetails=window.LURIA_EXAM_DETAILS||{};
   const state={group:"",kit:"",search:"",view:"catalog",mode:"reference",population:"adult-f",age:"",context:"",readings:{},history:[]};
   const KITS={
     sepse:{label:"Kit Sepse & UTI",ids:["g1t1","g1t8","g1t14","g2t1","g2t2","g3t1","g3t2","g3t5","g4t1","g4t2","g4t3","g4t4","g4t8","g5t5","g5t6","g8t2","g8t3","g10t1","g10t4"]},
@@ -65,14 +66,14 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
       <button id="ex-patient-toggle" class="ex-btn primary ex-patient-button" type="button" aria-expanded="false" aria-controls="ex-patient-tabs">+ Adicionar resultados do paciente</button>
     </div>
     <details class="ex-panic-banner">
-      <summary><span>🚨 Tabela Rápida de Valores Críticos (Panic Values — Ação Imediata no Plantão)</span><small>Clique para abrir/fechar</small></summary>
+      <summary><span>🚨 Achados potencialmente críticos — avaliar contexto e protocolo local</span><small>Clique para abrir/fechar</small></summary>
       <div class="ex-panic-grid">
-        <div><strong>Potássio (K⁺)</strong><span>&lt; 2,5 ou &ge; 6,5 mmol/L &rarr; ECG imediato + Gluconato de Cálcio (se alto) ou reposição IV (se baixo)</span></div>
-        <div><strong>Sódio (Na⁺)</strong><span>&lt; 120 ou &gt; 160 mmol/L &rarr; Risco de edema cerebral / convulsão ou mielinólise (máx 8–10 mEq/24h)</span></div>
-        <div><strong>Hemoglobina / Plaquetas</strong><span>Hb &lt; 7,0 g/dL (gatilho transfusional) · Plaquetas &lt; 20.000/µL (risco de sangramento espontâneo)</span></div>
-        <div><strong>Gasometria Arterial</strong><span>pH &lt; 7,15 ou &gt; 7,60 · PaO₂ &lt; 55 mmHg · Lactato &ge; 4,0 mmol/L (hipoperfusão tecidual grave)</span></div>
+        <div><strong>Potássio (K⁺)</strong><span>&lt; 2,5 ou &ge; 6,5 mmol/L &rarr; avaliar ECG, sintomas, função renal, confirmar amostra e tratar conforme protocolo</span></div>
+        <div><strong>Sódio (Na⁺)</strong><span>&lt; 120 ou &gt; 160 mmol/L &rarr; avaliação clínica urgente; a velocidade de correção depende da duração, sintomas e riscos</span></div>
+        <div><strong>Hemoglobina / Plaquetas</strong><span>Hb &lt; 7,0 g/dL ou plaquetas muito baixas: avaliar gravidade, sangramento e critérios individuais de transfusão</span></div>
+        <div><strong>Gasometria Arterial</strong><span>pH &lt; 7,15 ou &gt; 7,60 · PaO₂ &lt; 55 mmHg · Lactato &ge; 4,0 mmol/L (avaliar hipóxia, hipoperfusão e causas alternativas)</span></div>
         <div><strong>Glicemia / Cálcio Iônico</strong><span>Glicose &lt; 54 mg/dL (hipoglicemia grave) ou &gt; 500 mg/dL · Ca²⁺ iônico &lt; 0,80 ou &gt; 1,60 mmol/L</span></div>
-        <div><strong>Coagulação / Neutrófilos</strong><span>INR &gt; 5,0 · Fibrinogênio &lt; 100 mg/dL (CIVD) · Neutrófilos &lt; 500/µL (Neutropenia grave)</span></div>
+        <div><strong>Coagulação / Neutrófilos</strong><span>INR &gt; 5,0 · Fibrinogênio &lt; 100 mg/dL (exige correlação clínica) · Neutrófilos &lt; 500/µL (neutropenia grave)</span></div>
       </div>
     </details>
     <div class="ex-tabs" id="ex-patient-tabs" role="tablist" aria-label="Ferramentas do paciente" hidden><button type="button" data-view="catalog" class="active">Resultados</button><button type="button" data-view="analysis">Interpretação integrada</button><button type="button" data-view="history">Coletas da sessão</button><button type="button" data-view="sources">Critérios e fontes</button></div>
@@ -162,13 +163,15 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
        const r=itemState(t.id),lim=ranges(t,patient),s=patient?status(t):"";
        const ref=lim.available?`${lim.min===null?"":fmt(lim.min)}${lim.min!==null&&lim.max!==null?" a ":""}${lim.max===null?"":fmt(lim.max)}`:"Conferir laudo";
        const head=`<div class="ex-card-head"><span class="ex-area-tag">${e(groupName(t.group))}</span><h4>${e(t.name)}</h4></div>`;
-       const flag=patient?`<span class="ex-status ${s}" data-status>${({low:"Abaixo",high:"Acima",normal:"Na faixa",invalid:"Valor inválido",recorded:"Registrado"})[s]||""}</span>`:"";
+        const info=examDetails[t.id];
+        const detailBlock=info?`<details class="ex-test-details"><summary>Entenda o exame</summary><div class="ex-test-details-content"><p><strong>Material</strong> ${e(info.sample)}</p><p><strong>Finalidade</strong> ${e(info.purpose)}</p><p><strong>Interpretação</strong> ${e(info.interpretation)}</p><p><strong>Cuidados</strong> ${e(info.caution)}</p><p><strong>Referências e unidade</strong> ${e(info.referencePolicy)} ${e(info.unitPolicy)}</p><a target="_blank" rel="noopener noreferrer" href="${e(info.sourceUrl)}">Fonte de orientação: ${e(info.sourceLabel)}</a><small>Fonte temática; não valida um intervalo universal nem substitui o laudo.</small></div></details>`:"";
+       const flag=patient?`<span class="ex-status ${s}" data-status>${({low:"Abaixo",high:"Acima",normal:"Na faixa informada",invalid:"Valor inválido",recorded:"Registrado"})[s]||""}</span>`:"";
        const refBlock=`<div class="ex-card-reference"><small>Valor de referência</small><span class="ex-ref" ${patient?"data-ref":""}>${ref}${lim.diagnostic?"*":""}${flag}</span><small class="ex-ref-unit">${e(t.kind!=="numeric"?"Conforme método":t.unit)}</small></div>`;
-       if(!patient)return `<article class="ex-test ex-card ex-reference-only" data-row="${e(t.id)}">${head}${refBlock}</article>`;
+       if(!patient)return `<article class="ex-test ex-card ex-reference-only" data-row="${e(t.id)}">${head}${refBlock}${detailBlock}</article>`;
        const inp=t.kind==="qual"
          ?`<select data-id="${e(t.id)}" data-field="value" aria-label="Resultado ${e(t.name)}"><option value="">Selecionar</option>${(t.options||["Negativo","Positivo","Não reagente","Reagente","Indeterminado","Não detectado","Detectado","Ausente","Presente","Traços"]).map(v=>`<option value="${v}" ${r.value===v?"selected":""}>${v}</option>`).join("")}</select>`
          :`<input data-id="${e(t.id)}" data-field="value" inputmode="${t.kind==="numeric"?"decimal":"text"}" autocomplete="off" placeholder="${t.kind==="numeric"?"—":"Conforme laudo"}" value="${e(r.value)}" aria-label="Resultado ${e(t.name)}">`;
-       return `<article class="ex-test ex-card ex-patient-card" data-row="${e(t.id)}">${head}${refBlock}<div class="ex-card-fields">
+       return `<article class="ex-test ex-card ex-patient-card" data-row="${e(t.id)}">${head}${refBlock}${detailBlock}<div class="ex-card-fields">
          <label>Resultado${inp}</label>
          <label>Mín. do laudo<input data-id="${e(t.id)}" data-field="min" ${t.kind!=="numeric"?"disabled":""} placeholder="—" inputmode="decimal" value="${e(r.min)}" aria-label="Limite inferior para ${e(t.name)}"></label>
          <label>Máx. do laudo<input data-id="${e(t.id)}" data-field="max" ${t.kind!=="numeric"?"disabled":""} placeholder="—" inputmode="decimal" value="${e(r.max)}" aria-label="Limite superior para ${e(t.name)}"></label>
@@ -188,7 +191,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     const ref=row.querySelector("[data-ref]");
     const rangeText=lim.available?`${lim.min===null?"":fmt(lim.min)}${lim.min!==null&&lim.max!==null?" a ":""}${lim.max===null?"":fmt(lim.max)}`:"Conferir laudo";
     ref.firstChild.textContent=rangeText+(lim.diagnostic?"*":"");
-    const flag=row.querySelector("[data-status]");flag.className="ex-status "+s;flag.textContent=({low:"Abaixo",high:"Acima",normal:"Na faixa",invalid:"Valor inválido",recorded:"Registrado"})[s]||"";
+    const flag=row.querySelector("[data-status]");flag.className="ex-status "+s;flag.textContent=({low:"Abaixo",high:"Acima",normal:"Na faixa informada",invalid:"Valor inválido",recorded:"Registrado"})[s]||"";
   }
   function values(){
     return [...byId.values()].filter(t=>{const v=itemState(t.id).value;return String(v).trim()!==""}).map(t=>({t,v:itemState(t.id).value,s:status(t),r:ranges(t)}));
@@ -233,21 +236,21 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     if([ascAlb,ascPmn,ascProt].some(x=>x!==null)){
       const saag=(albu!==null&&ascAlb!==null)?(albu-ascAlb):null;
       const pbe=ascPmn!==null&&ascPmn>=250;
-      add("Líquido Ascítico (GASA e PBE)",`${saag!==null?`Gradiente Soro-Ascite de Albumina (GASA) = ${fmt(saag)} g/dL (${saag>=1.1?"≥1,1 g/dL: sugere Hipertensão Portal (cirrose, IC, Budd-Chiari)":"<1,1 g/dL: sugere causa peritoneal/exsudativa (carcinomatose, TB, pancreatite, serosite)"}). `:""}${pbe?`Neutrófilos (PMN) = ${fmt(ascPmn)}/mm³ (≥250/mm³): critério diagnóstico de Peritonite Bacteriana Espontânea (PBE) — avaliar Ceftriaxona + Albumina IV conforme protocolo!`:"Se PMN <250/mm³, afastar PBE conforme culturas e clínica."}`,pbe?"warn":"info");
+      add("Líquido Ascítico (GASA e PBE)",`${saag!==null?`Gradiente Soro-Ascite de Albumina (GASA) = ${fmt(saag)} g/dL (${saag>=1.1?"≥1,1 g/dL: sugere Hipertensão Portal (cirrose, IC, Budd-Chiari)":"<1,1 g/dL: sugere causa peritoneal/exsudativa (carcinomatose, TB, pancreatite, serosite)"}). `:""}${pbe?`Neutrófilos (PMN) = ${fmt(ascPmn)}/mm³ (≥250/mm³): critério diagnóstico de Peritonite Bacteriana Espontânea (PBE) — exige avaliação clínica e tratamento conforme protocolo institucional;`:"Se PMN <250/mm³, afastar PBE conforme culturas e clínica."}`,pbe?"warn":"info");
     }
     const plProt=reading("Pleural proteínas"),plLdh=reading("Pleural DHL"),plPh=reading("Pleural pH"),plAda=reading("Pleural ADA"),sProt=reading("Proteínas totais"),sLdh=reading("DHL / LDH");
     if([plProt,plLdh,plPh,plAda].some(x=>x!==null)){
       const rProt=(plProt!==null&&sProt!==null&&sProt>0)?(plProt/sProt):null;
       const rLdh=(plLdh!==null&&sLdh!==null&&sLdh>0)?(plLdh/sLdh):null;
       const comp=(plPh!==null&&plPh<7.20)||(plLdh!==null&&plLdh>1000);
-      add("Líquido Pleural (Critérios de Light e Derrame Complicado)",`${rProt!==null?`Relação Proteína Pleural/Sérica = ${fmt(rProt)} (${rProt>0.5?">0,5: Exsudato":"≤0,5"}). `:""}${rLdh!==null?`Relação DHL Pleural/Sérico = ${fmt(rLdh)} (${rLdh>0.6?">0,6: Exsudato":"≤0,6"}). `:""}${comp?"ALERTA: pH pleural <7,20 ou DHL >1.000 UI/L em derrame parapneumônico indica Derrame Pleural Complicado / Empiema (indicação de drenagem torácica!). ":""}${plAda!==null&&plAda>40?"ADA pleural >40 U/L em exsudato linfocítico é altamente sugestivo de Tuberculose Pleural.":""}`,comp?"warn":"info");
+      add("Líquido Pleural (Critérios de Light e Derrame Complicado)",`${rProt!==null?`Relação Proteína Pleural/Sérica = ${fmt(rProt)} (${rProt>0.5?">0,5: Exsudato":"≤0,5"}). `:""}${rLdh!==null?`Relação DHL Pleural/Sérico = ${fmt(rLdh)} (${rLdh>0.6?">0,6: Exsudato":"≤0,6"}). `:""}${comp?"ALERTA: pH pleural <7,20 ou DHL >1.000 UI/L em derrame parapneumônico indica Derrame Pleural Complicado / Empiema (avaliar drenagem conforme quadro, imagem e protocolo). ":""}${plAda!==null&&plAda>40?"ADA pleural >40 U/L em exsudato linfocítico é altamente sugestivo de Tuberculose Pleural.":""}`,comp?"warn":"info");
     }
     const ck=reading("CK total");
-    if(ck!==null&&ck>=1000)add("Elevação importante de CK total (Rabdomiólise)",`CK total = ${fmt(ck)} U/L. Valores >1.000 U/L (>5x LSN) sugerem rabdomiólise (risco elevado de LRA pigmentar por mioglobinúria quando CK >5.000 U/L; monitorar diurese, potássio, cálcio, fósforo e hidratação vigorosa).`,"warn");
+    if(ck!==null&&ck>=1000)add("Elevação importante de CK total (Rabdomiólise)",`CK total = ${fmt(ck)} U/L. Valores >1.000 U/L (>5x LSN) sugerem rabdomiólise (avaliar risco de lesão renal aguda, diurese, eletrólitos e hidratação individualizada).`,"warn");
     const tsh=reading("TSH"),t4l=reading("T4 livre");
     if(tsh!==null||t4l!==null)add("Eixo Tireoidiano (TSH / T4 Livre)",`TSH ${tsh!==null?fmt(tsh)+" mUI/L":"não informado"}${t4l!==null?` · T4 livre ${fmt(t4l)} ng/dL`:""}. TSH elevado com T4L baixo sugere hipotireoidismo primário; TSH suprimido (<0,1) com T4L elevado sugere tireotoxicose/hipertireoidismo primário. Interpretar com faixa gestacional/etária do laboratório.`);
     const neut=reading("Neutrófilos absolutos");
-    if(neut!==null&&neut<1500)add(neut<500?"Neutropenia Grave (<500/µL)":"Neutropenia",`Neutrófilos absolutos = ${fmt(neut)}/µL. Se associada a febre (≥38,3°C única ou ≥38,0°C por 1h), configura emergência médica (Neutropenia Febril — iniciar Cefepima ou Piperacilina-Tazobactam na 1ª hora após hemoculturas!).`,neut<500?"warn":"info");
+    if(neut!==null&&neut<1500)add(neut<500?"Neutropenia Grave (<500/µL)":"Neutropenia",`Neutrófilos absolutos = ${fmt(neut)}/µL. Se associada a febre (≥38,3°C única ou ≥38,0°C por 1h), configura emergência médica (Neutropenia Febril — seguir protocolo institucional de neutropenia febril e antimicrobianos sem atrasos indevidos;).`,neut<500?"warn":"info");
     if(!findings.length&&data.length)add("Leitura inicial","Os resultados foram organizados abaixo. A ausência de um padrão nas regras disponíveis não exclui doença. Analise o conjunto, a variação temporal e as faixas do laboratório.");
     const alerts=[];
     if(potassium!==null&&(potassium<2.5||potassium>=6.5))alerts.push("Potássio em faixa potencialmente crítica; avaliação urgente, ECG e repetição conforme contexto.");
@@ -267,7 +270,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
       <div class="ex-summary-grid"><div class="ex-metric"><strong>${data.length}</strong><span>resultados inseridos</span></div><div class="ex-metric"><strong>${n}</strong><span>fora da faixa informada</span></div><div class="ex-metric"><strong>${alerts.length}</strong><span>alertas de revisão urgente</span></div></div>
       ${invalid.length?`<div class="ex-finding alert"><strong>Valores inválidos</strong>${invalid.map(x=>e(x.t.name)).join(", ")}. Use números com vírgula ou ponto.</div>`:""}
       <div class="ex-findings">${alerts.map(x=>`<div class="ex-finding alert"><strong>Possível achado crítico</strong>${e(x)}</div>`).join("")}${findings.map(x=>`<div class="ex-finding ${x.level==="warn"?"warn":""}"><strong>${e(x.title)}</strong>${e(x.body)}</div>`).join("")}</div>
-      <h3 class="ex-section-title" style="margin-top:19px">Resultados da sessão</h3>${!data.length?"<p class='ex-muted'>Preencha resultados em Consultar e preencher para gerar a síntese.</p>":`<div style="overflow-x:auto"><table class="ex-results-table"><thead><tr><th>Exame</th><th>Valor</th><th>Comparação</th></tr></thead><tbody>${data.map(x=>`<tr><td>${e(x.t.name)}</td><td>${e(x.v)} ${e(x.t.kind!=="numeric"?"":x.t.unit)}</td><td>${({low:"Abaixo",high:"Acima",normal:"Na faixa",recorded:"Sem referência validada",invalid:"Inválido"})[x.s]||"—"}</td></tr>`).join("")}</tbody></table></div>`}
+      <h3 class="ex-section-title" style="margin-top:19px">Resultados da sessão</h3>${!data.length?"<p class='ex-muted'>Preencha resultados em Consultar e preencher para gerar a síntese.</p>":`<div style="overflow-x:auto"><table class="ex-results-table"><thead><tr><th>Exame</th><th>Valor</th><th>Comparação</th></tr></thead><tbody>${data.map(x=>`<tr><td>${e(x.t.name)}</td><td>${e(x.v)} ${e(x.t.kind!=="numeric"?"":x.t.unit)}</td><td>${({low:"Abaixo",high:"Acima",normal:"Na faixa informada",recorded:"Sem referência validada",invalid:"Inválido"})[x.s]||"—"}</td></tr>`).join("")}</tbody></table></div>`}
       <label style="margin-top:15px">Observações clínicas (ficam apenas nesta sessão)<textarea id="ex-context" rows="3" placeholder="Queixa, sintomas, medicamentos, temporalidade; não inclua nome, CPF ou identificadores."></textarea></label>
       <div class="ex-actions"><button class="ex-btn" id="ex-copy" type="button">Copiar resumo</button><button class="ex-btn primary" id="ex-save" type="button">Registrar coleta nesta sessão</button><button class="ex-btn danger" id="ex-clear" type="button">Limpar sessão</button></div>
       <p class="ex-source-note">* Hemoglobina: limiar populacional de anemia da OMS 2024, não intervalo laboratorial universal. Exames qualitativos são apenas registrados; a interpretação depende do método e da situação clínica.</p>`;
