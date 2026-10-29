@@ -42,6 +42,7 @@
       buffer = [];
       if (joined.length < 25 || joined.length > 1400) return;
       if (junkLine.test(fold(joined)) || /https?:\/\/|telefone:|endereco profissional/i.test(joined)) return;
+      yearPattern.lastIndex = 0;
       const years = [...joined.matchAll(yearPattern)].map(hit => Number(hit[1]))
         .filter(year => year >= 1950 && year <= currentYear + 1);
       if (!years.length) return;
@@ -69,8 +70,7 @@
         const line = String(raw || '').replace(/[\u00a0\t]+/g, ' ').trim();
         if (!line) {
           // OCR tende a separar registros Lattes por linhas em branco.
-          if (buffer.join(' ').length >= 25 && yearPattern.test(buffer.join(' '))) finish();
-          yearPattern.lastIndex = 0;
+          if (buffer.join(' ').length >= 25 && /(?:19|20)\d{2}/.test(buffer.join(' '))) finish();
           continue;
         }
         const normal = fold(line.replace(/^\s*\d{1,3}[.)]\s*/, ''));
