@@ -105,7 +105,13 @@
         characters += pageRows.join('').length;
         lines.push(...pageRows);
       }
-      return { items: parseLines(lines), hasText: characters >= 40, pages: pdf.numPages };
+      // Ex.: Lattes impresso em PDF como contornos/imagens, sem glyphs extraíveis.
+      // O arquivo segue válido; OCR roda localmente e requer revisão humana.
+      if (characters < 40 && root.LuriaCurriculoPdfOcr?.recognizePdf) {
+        const recognized = await root.LuriaCurriculoPdfOcr.recognizePdf(pdf, progress);
+        return { ...recognized, pages: pdf.numPages };
+      }
+      return { items: parseLines(lines), hasText: characters >= 40, pages: pdf.numPages, ocrUsed: false };
     } finally { await pdf.destroy(); }
   }
 
