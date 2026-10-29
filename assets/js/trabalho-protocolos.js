@@ -234,7 +234,7 @@
     els.list.innerHTML = items.map((r) => `
       <button type="button" class="protocol-row ${String(selected) === String(r.id) ? "active" : ""}" data-id="${r.id}">
         <span><strong>${esc(r.title)}</strong><small>${esc(r.category)} · ${esc(r.setting)}</small></span>
-        <em class="${r.status === "verified" ? "ok" : "warn"}">${r.status === "verified" ? "Revisado" : "Em revisão"}</em>
+        <em class="${r.status === "verified" ? "ok" : "warn"}">${r.status === "verified" ? "Revisado" : (Array.isArray(r.tags) && r.tags.includes("conteudo-pendente") ? "Em elaboração" : "Em revisão")}</em>
       </button>`).join("");
     els.list.querySelectorAll("[data-id]").forEach((btn) => btn.addEventListener("click", () => {
       const rawId = btn.dataset.id; const found = rows.find((x) => String(x.id) === String(rawId)); selected = found ? found.id : rawId;
@@ -281,6 +281,23 @@
 
   function renderDetail(r) {
     if (!r) { els.detail.innerHTML = '<div class="protocol-placeholder">Selecione um protocolo.</div>'; return; }
+    // Conteudos apenas catalogados ainda nao sao protocolos clinicos: sem prescricao, alta ou copia.
+    if (Array.isArray(r.tags) && r.tags.includes("conteudo-pendente")) {
+      els.detail.innerHTML = `
+        <header class="protocol-detail-head">
+          <div>
+            <div class="protocol-chips"><span>${esc(r.category)}</span><span>${esc(r.setting)}</span><span class="warn">Em elaboração</span></div>
+            <h2>${esc(r.title)}</h2>
+            <p>${esc(r.summary || "")}</p>
+          </div>
+        </header>
+        <section class="protocol-section">
+          <h3>Conteúdo clínico ainda não disponível</h3>
+          <p>Este tema foi adicionado ao catálogo para futura elaboração. Diagnóstico, exames, tratamentos, doses, contraindicações e referências precisam de redação e revisão clínica independente. Não utilize esta ficha para prescrever, dar alta ou tomar decisões assistenciais.</p>
+        </section>
+      `;
+      return;
+    }
     const drugs = Array.isArray(r.linked_drug_terms) ? r.linked_drug_terms : [];
     const recipes = Array.isArray(r.linked_recipe_slugs) ? r.linked_recipe_slugs : [];
     els.detail.innerHTML = `
