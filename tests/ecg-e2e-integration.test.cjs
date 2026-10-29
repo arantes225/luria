@@ -356,6 +356,33 @@ test("E2E Cenário 7: Calibração da grade sem pulso retangular é 'assumed', N
   assert.equal(cal.calibrationSource, "assumed", "Deve ser classificada como 'assumed'");
 });
 
+test("Regressão: pontilhado fino da grade não reduz a escala de milímetro", () => {
+  const { context } = createE2eEnvironment();
+  const w = 600, h = 420;
+  const data = new Uint8ClampedArray(w * h * 4).fill(248);
+  // Textura pontilhada a cada 3 px, como fotografia de papel milimetrado.
+  for (let y = 18; y < h - 18; y += 3) for (let x = 18; x < w - 18; x += 3) {
+    const i = (y * w + x) * 4;
+    data[i] = data[i + 1] = data[i + 2] = 235;
+  }
+  // Linhas estruturais de cada quadrado grande (5 mm = 60 px).
+  for (let x = 30; x < w - 20; x += 60) for (let y = 18; y < h - 18; y++) {
+    const i = (y * w + x) * 4;
+    data[i] = data[i + 1] = data[i + 2] = 160;
+  }
+  for (let y = 30; y < h - 20; y += 60) for (let x = 18; x < w - 18; x++) {
+    const i = (y * w + x) * 4;
+    data[i] = data[i + 1] = data[i + 2] = 160;
+  }
+
+  const cal = context.LuriaEcgCvEngine.detectECGGridAndCalibration({ width: w, height: h, data });
+  assert.equal(cal.gridDetected, true);
+  assert.ok(cal.dominantPeriodPxX >= 55 && cal.dominantPeriodPxX <= 65,
+    "A escala precisa vir das linhas da grade, não do pontilhado interno");
+  assert.ok(cal.pixelsPerMmX >= 11 && cal.pixelsPerMmX <= 13,
+    "60 px por quadrado grande equivale a aproximadamente 12 px/mm");
+});
+
 test("E2E Cenário 8: Sinal com 2,5 segundos não deve ser multiplicado por continuidade para encurtar tempo", () => {
   const { context } = createE2eEnvironment();
   const w = 375, h = 180;

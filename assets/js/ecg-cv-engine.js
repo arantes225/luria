@@ -737,8 +737,21 @@
     const hpX = highPassProfile(xGridProfile, 15);
     const hpY = highPassProfile(yGridProfile, 15);
 
-    const periodX = findDominantGridPeriod(hpX, 3, Math.min(80, Math.floor(width / 8)));
-    const periodY = findDominantGridPeriod(hpY, 3, Math.min(80, Math.floor(height / 8)));
+    const dominantX = findDominantGridPeriod(hpX, 3, Math.min(80, Math.floor(width / 8)));
+    const dominantY = findDominantGridPeriod(hpY, 3, Math.min(80, Math.floor(height / 8)));
+
+    // The fine dotted texture inside a printed square often repeats every
+    // 2–4 pixels in a phone photo. It is not the ECG grid spacing. Measure a
+    // second, structural profile from the strongest recurring grid lines and
+    // prefer it only when both axes agree. This preserves normal scans while
+    // preventing a dotted pattern from shrinking the voltage scale by 4–5×.
+    const strongX = findStrongGridPeriod(xGridProfile, 5, Math.min(100, Math.floor(width / 7)));
+    const strongY = findStrongGridPeriod(yGridProfile, 5, Math.min(100, Math.floor(height / 7)));
+    const strongAxesAgree = strongX.period > 0 && strongY.period > 0 &&
+      Math.abs(strongX.period - strongY.period) / Math.max(strongX.period, strongY.period) <= 0.2;
+    const useStrongPeriod = strongAxesAgree && strongX.confidence >= 0.22 && strongY.confidence >= 0.22;
+    const periodX = useStrongPeriod ? strongX : dominantX;
+    const periodY = useStrongPeriod ? strongY : dominantY;
 
     // Detecção do pulso retangular de calibração (1 mV = 10 mm de altura, 200 ms = 5 mm de largura)
     const calPulse = detectCalibrationPulse(imageData, effectiveSheetBoundaries);
@@ -881,6 +894,55 @@
     }
 
     return { period: bestLag, confidence: bestCorr };
+  }
+
+  // Finds the spacing between recurring *grid lines*, rather than the spacing
+  // between dots that make up a grid. A percentile gate keeps text and the
+  // waveform out of this calibration-only measurement.
+  function findStrongGridPeriod(profile, minLag, maxLag) {
+    const sorted = Array.from(profile).sort((a, b) => a - b);
+    if (!sorted.length || sorted[sorted.length - 1] <= 1e-6) return { period: 0, confidence: 0 };
+    const threshold = sorted[Math.min(sorted.length - 1, Math.floor(sorted.length * 0.94))];
+    const peaks = [];
+    for (let i = 1; i < profile.length - 1; i++) {
+      if (profile[i] < threshold || profile[i] < profile[i - 1] || profile[i] < profile[i + 1]) continue;
+      if (peaks.length && i - peaks[peaks.length - 1].index < 3) {
+        if (profile[i] > peaks[peaks.length - 1].weight) peaks[peaks.length - 1] = { index: i, weight: profile[i] };
+      } else {
+        peaks.push({ index: i, weight: profile[i] });
+      }
+    }
+    if (peaks.length < 3) return { period: 0, confidence: 0 };
+
+    let bestPeriod = 0;
+    let bestScore = 0;
+    const maxWeight = Math.max(...peaks.map(p => p.weight));
+    for (let lag = minLag; lag <= maxLag; lag++) {
+      let matches = 0;
+      let weight = 0;
+      for (let i = 0; i < peaks.length; i++) {
+        const source = peaks[i];
+        for (let j = i + 1; j < peaks.length; j++) {
+          const target = peaks[j];
+          const distance = target.index - source.index;
+          if (distance > lag + 1) break;
+          if (Math.abs(distance - lag) <= 1) {
+            matches++;
+            weight += Math.sqrt(source.weight * target.weight) / Math.max(1, maxWeight);
+            break;
+          }
+        }
+      }
+      // Short dot-to-dot periods gain many accidental matches; demand that a
+      // substantial fraction of the expected grid lines supports the lag.
+      const expected = Math.max(2, Math.floor(profile.length / lag) - 1);
+      const score = weight / expected;
+      if (score > bestScore) {
+        bestScore = score;
+        bestPeriod = lag;
+      }
+    }
+    return { period: bestPeriod, confidence: Number(Math.min(1, bestScore).toFixed(4)) };
   }
 
   /**
