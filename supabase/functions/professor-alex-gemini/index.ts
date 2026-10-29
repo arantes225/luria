@@ -242,6 +242,9 @@ Deno.serve(async (req: Request) => {
   const intent = ["learn", "question", "material"].includes(String(data.intent)) ? String(data.intent) : "learn";
   const mode = (data.mode === "estourado") ? "estourado" : "normal";
   const channel = (data.channel === "voice") ? "voice" : "chat";
+  // Browser TTS is the fast default. Premium voice adds a serial Gemini request
+  // only when explicitly requested for a full lesson.
+  const voiceQuality = data.voice_quality === "natural" ? "natural" : "fast";
   const isVoiceInput = channel === "voice" || data.voice_input === true;
   const depth = data.depth === "aula" ? "aula" : "rapida";
   const sourceMode = data.source_mode === "luria_site" ? "luria_site" : "general";
@@ -462,7 +465,7 @@ Deno.serve(async (req: Request) => {
   let audioMimeType: string = "audio/wav";
   let audioError: string | null = null;
 
-  if (experience === "alex" && channel === "voice" && depth === "aula") {
+  if (experience === "alex" && channel === "voice" && depth === "aula" && voiceQuality === "natural") {
     try {
       const voiceText = answer
         .replace(/\*\*(.*?)\*\*/g, "$1")
@@ -544,7 +547,35 @@ Deno.serve(async (req: Request) => {
   const outputTokens = metadata.candidatesTokenCount;
   const totalTokens = metadata.totalTokenCount;
   const validUsage = [inputTokens, outputTokens, totalTokens].every((value) => Number.isSafeInteger(value) && value >= 0) && totalTokens >= inputTokens + outputTokens;
-  const usage = await settle(validUsage ? inputTokens : null, validUsage ? outputTokens : null, validUsage ? totalTokens : null);
+  const usageInputs = [
+    validUsage ? inputTokens : null,
+    validUsage ? outputTokens : null,
+    validUsage ? totalTokens : null,
+  ] as const;
+  // Supabase Edge keeps waitUntil promises alive after responding. The atomic
+  // reservation already protects the token budget; settlement can finish without
+  // delaying the learner's answer. In runtimes without waitUntil, preserve the
+  // original synchronous accounting path.
+  const edgeRuntime = (globalThis as typeof globalThis & {
+    EdgeRuntime?: { waitUntil(promise: Promise<unknown>): void };
+  }).EdgeRuntime;
+  if (typeof edgeRuntime?.waitUntil === "function") {
+    try {
+      edgeRuntime.waitUntil(
+        settle(...usageInputs).then((settledUsage) => {
+          if (!validUsage || !settledUsage || typeof settledUsage !== "object") {
+            // The full reservation remains charged on uncertainty; fail closed.
+            console.error("[alex-gemini] token_accounting_failure");
+          }
+        })
+      );
+      // Do not show a falsely empty battery while the reservation is settling.
+      return json({ answer, report, action_plan: actionPlan, audio: audioBase64, audioMimeType, audioError, model: modelToUse, usage: null, accounting_pending: true }, 200, headers);
+    } catch {
+      // Unsupported/failed scheduling: settle before replying.
+    }
+  }
+  const usage = await settle(...usageInputs);
   if (!validUsage || !usage || typeof usage !== "object") {
     console.error("[alex-gemini] token_accounting_failure");
     return json({ answer, report, action_plan: actionPlan, audio: audioBase64, audioMimeType, audioError, model: modelToUse, usage: initialUsage, accounting_pending: true }, 200, headers);
