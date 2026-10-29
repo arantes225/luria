@@ -495,7 +495,7 @@ test("E2E Cenário 10: imagem percorre reconhecimento, câmera, extração, audi
   assert.equal(controller.confirmExtractionAndEnableAI().allowed, false);
 });
 
-test("OCR V3 em região DI bloqueia associação automática e preserva a divergência", () => {
+test("OCR V3 em região DI mantém as prévias e bloqueia associação automática", () => {
   const { context } = createE2eEnvironment();
   const image = generateSynthesized12LeadImage();
   const first = context.LuriaEcgCvEngine.detectECGBoundaries(image);
@@ -509,8 +509,9 @@ test("OCR V3 em região DI bloqueia associação automática e preserva a diverg
   }
   context.LuriaEcgCvEngine.drawBitmapLabelOnImageData(image, "V3", lx, ly, 2);
   const detected = context.LuriaEcgCvEngine.detectECGBoundaries(image);
-  assert.equal(detected.detected, false);
+  assert.equal(detected.detected, true, "Um único conflito de OCR não pode apagar os traçados reais da folha");
   assert.ok(detected.anomalies.some(a => a.code === "label_conflict"));
+  assert.ok(detected.anomalies.some(a => a.code === "ocr_label_conflict_requires_review"));
   assert.ok(Object.values(detected.cellIdentities).some(id => id.expectedLead === "DI" && id.recognizedLead === "V3" && id.status === "conflicting"));
   context.document.createElement = tag => tag === "canvas" ? pixelCanvas() : { tagName: tag, style: {}, addEventListener() {} };
   const controller = context.LuriaSmartCamera.createController({});
@@ -518,10 +519,9 @@ test("OCR V3 em região DI bloqueia associação automática e preserva a diverg
   assert.equal(controller.getCapturedLeads().filter(l => l.status === "captured").length, 0,
     "OCR conflituoso não pode virar derivação clinicamente identificada");
   assert.equal(controller.confirmExtractionAndEnableAI().allowed, false);
-  if (result.ok) {
-    assert.ok(result.provisionalCount > 0, "Somente prévias sem rótulo poderão ser mostradas");
-    assert.deepEqual(Object.keys(controller.getSessionStructuredPackage().signals), []);
-  }
+  assert.equal(result.ok, true, "Prévia das regiões reais deve continuar disponível para conferência");
+  assert.ok(result.provisionalCount > 0, "Somente prévias sem rótulo poderão ser mostradas");
+  assert.deepEqual(Object.keys(controller.getSessionStructuredPackage().signals), []);
   assert.ok(controller.getSessionStructuredPackage().originalImageUrl);
 });
 
