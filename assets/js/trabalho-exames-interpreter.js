@@ -217,7 +217,16 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     if(sodium!==null&&(sodium<130||sodium>150))add("Distúrbio importante do sódio",`Sódio ${fmt(sodium)} mmol/L. Correlacionar com osmolaridade, volume, sintomas e evolução temporal. Evitar definir estratégia de correção por valor isolado.`,"warn");
     if(potassium!==null&&(potassium<3||potassium>5.5))add("Distúrbio do potássio",`Potássio ${fmt(potassium)} mmol/L. Confirmar amostra/hemólise, verificar função renal, medicamentos e ECG conforme gravidade.`,"warn");
     const a1c=reading("Hemoglobina glicada (HbA1c)"),glucose=reading("Glicemia em jejum");
-    if(!isGest()&&isAdult()&&(state.age===""||Number(state.age)>=18)&&((a1c!==null&&a1c>=6.5)||(glucose!==null&&glucose>=126)))add("Resultado em faixa diagnóstica para diabetes",`Critérios ADA para adultos não gestantes incluem HbA1c ≥6,5% ou glicemia de jejum ≥126 mg/dL. Na ausência de hiperglicemia inequívoca, confirmar conforme diretriz; verificar métodos e situações que alteram a HbA1c.`,"warn");
+    if(!isGest()&&isAdult()&&(state.age===""||Number(state.age)>=18)&&((a1c!==null&&a1c>=6.5)||(glucose!==null&&glucose>=126)))add("Resultado em faixa diagnóstica para diabetes",`Critérios SBD 2026 para adultos não gestantes incluem HbA1c ≥6,5% ou glicemia de jejum ≥126 mg/dL. Na ausência de hiperglicemia inequívoca, confirmar conforme diretriz; verificar métodos e situações que alteram a HbA1c.`,"warn");
+    if(isGest()){
+      const g2=reading("Glicemia TOTG 2 horas");
+      if(glucose!==null&&glucose>=92){
+        add("Glicemia de jejum na gestação",glucose>=126?"Valor em faixa que exige investigação de diabetes diagnosticado na gestação.":"Glicemia de jejum ≥92 mg/dL pode preencher critério laboratorial para diabetes gestacional conforme diretriz SBD; considerar idade gestacional e confirmação de informações da coleta.","warn");
+      }
+      if(g2!==null&&g2>=153){
+        add("Glicemia de 2 horas no TOTG durante a gestação",g2>=200?"Valor em faixa que exige investigação de diabetes diagnosticado na gestação.":"Se coletada no TOTG de 75 g entre 24–28 semanas, glicemia de 2 horas ≥153 mg/dL integra os critérios de diabetes gestacional. Verificar data, protocolo e condições de coleta.","warn");
+      }
+    }
     const ph=reading("pH"),bicarb=reading("HCO₃⁻ (gasometria)"),pco2=reading("PaCO₂");
     if(ph!==null&&bicarb!==null&&pco2!==null){
       if(ph<7.35&&bicarb<22){const winter=1.5*bicarb+8;add("Acidemia com componente metabólico",`PaCO₂ esperada pela fórmula de Winter: ${fmt(winter-2)}–${fmt(winter+2)} mmHg; observada ${fmt(pco2)} mmHg. Correlacionar diferença com possível distúrbio respiratório adicional.`,"warn");}
@@ -239,13 +248,13 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     const lcsLeuco=reading("Líquor leucócitos"),lcsProt=reading("Líquor proteínas"),lcsGlic=reading("Líquor glicose"),lcsLac=reading("Líquor lactato");
     if([lcsLeuco,lcsProt,lcsGlic,lcsLac].some(x=>x!==null)){
       const bact=(lcsLeuco!==null&&lcsLeuco>=500)||(lcsGlic!==null&&lcsGlic<40)||(lcsLac!==null&&lcsLac>=3.5);
-      add("Análise do Líquor (LCR)",bact?"Padrão com pleocitose acentuada, hipoglicorraquia (<40 mg/dL) e/ou lactato liquórico elevado (≥3,5 mmol/L): forte alerta para Meningite Bacteriana Aguda (correlacionar com diferencial de PMN, Gram e culturas).":"Correlacionar celularidade diferencial (PMN vs. linfomononuclear), proteínas e relação glicorraquia/glicemia simultânea (<0,4 sugere consumo bacteriano/fúngico/BK).",bact?"warn":"info");
+      add("Análise do Líquor (LCR)",bact?"Padrão com pleocitose acentuada, hipoglicorraquia (<40 mg/dL) e/ou lactato liquórico elevado (≥3,5 mmol/L): possível padrão de infecção do SNC que exige avaliação urgente; não é diagnóstico isolado de meningite bacteriana (correlacionar com diferencial de PMN, Gram e culturas).":"Correlacionar celularidade diferencial (PMN vs. linfomononuclear), proteínas e relação glicorraquia/glicemia simultânea (<0,4 sugere consumo bacteriano/fúngico/BK).",bact?"warn":"info");
     }
     const ascAlb=reading("Ascítico albumina"),ascPmn=reading("Ascítico neutrófilos"),ascProt=reading("Ascítico proteínas");
     if([ascAlb,ascPmn,ascProt].some(x=>x!==null)){
       const saag=(albu!==null&&ascAlb!==null)?(albu-ascAlb):null;
       const pbe=ascPmn!==null&&ascPmn>=250;
-      add("Líquido Ascítico (GASA e PBE)",`${saag!==null?`Gradiente Soro-Ascite de Albumina (GASA) = ${fmt(saag)} g/dL (${saag>=1.1?"≥1,1 g/dL: sugere Hipertensão Portal (cirrose, IC, Budd-Chiari)":"<1,1 g/dL: sugere causa peritoneal/exsudativa (carcinomatose, TB, pancreatite, serosite)"}). `:""}${pbe?`Neutrófilos (PMN) = ${fmt(ascPmn)}/mm³ (≥250/mm³): critério diagnóstico de Peritonite Bacteriana Espontânea (PBE) — exige avaliação clínica e tratamento conforme protocolo institucional;`:"Se PMN <250/mm³, afastar PBE conforme culturas e clínica."}`,pbe?"warn":"info");
+      add("Líquido Ascítico (GASA e PBE)",`${saag!==null?`Gradiente Soro-Ascite de Albumina (GASA) = ${fmt(saag)} g/dL (${saag>=1.1?"≥1,1 g/dL: sugere Hipertensão Portal (cirrose, IC, Budd-Chiari)":"<1,1 g/dL: sugere causa peritoneal/exsudativa (carcinomatose, TB, pancreatite, serosite)"}). `:""}${pbe?`Neutrófilos (PMN) = ${fmt(ascPmn)}/mm³ (≥250/mm³): critério diagnóstico de Peritonite Bacteriana Espontânea (PBE) — exige avaliação clínica e tratamento conforme protocolo institucional;`:"Se PMN <250/mm³, avaliar culturas e clínica; essa contagem não exclui toda infecção peritoneal."}`,pbe?"warn":"info");
     }
     const plProt=reading("Pleural proteínas"),plLdh=reading("Pleural DHL"),plPh=reading("Pleural pH"),plAda=reading("Pleural ADA"),sProt=reading("Proteínas totais"),sLdh=reading("DHL / LDH");
     if([plProt,plLdh,plPh,plAda].some(x=>x!==null)){
@@ -279,14 +288,14 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
       <div class="ex-summary-grid"><div class="ex-metric"><strong>${data.length}</strong><span>resultados inseridos</span></div><div class="ex-metric"><strong>${n}</strong><span>fora da faixa informada</span></div><div class="ex-metric"><strong>${alerts.length}</strong><span>alertas de revisão urgente</span></div></div>
       ${invalid.length?`<div class="ex-finding alert"><strong>Valores inválidos</strong>${invalid.map(x=>e(x.t.name)).join(", ")}. Corrija números, limites e unidades divergentes antes da interpretação.</div>`:""}
       <div class="ex-findings">${alerts.map(x=>`<div class="ex-finding alert"><strong>Possível achado crítico</strong>${e(x)}</div>`).join("")}${findings.map(x=>`<div class="ex-finding ${x.level==="warn"?"warn":""}"><strong>${e(x.title)}</strong>${e(x.body)}</div>`).join("")}</div>
-      <h3 class="ex-section-title" style="margin-top:19px">Resultados da sessão</h3>${!data.length?"<p class='ex-muted'>Preencha resultados em Consultar e preencher para gerar a síntese.</p>":`<div style="overflow-x:auto"><table class="ex-results-table"><thead><tr><th>Exame</th><th>Valor</th><th>Comparação</th></tr></thead><tbody>${data.map(x=>`<tr><td>${e(x.t.name)}</td><td>${e(x.v)} ${e(x.t.kind!=="numeric"?"":x.t.unit)}</td><td>${({low:"Abaixo",high:"Acima",normal:"Na faixa informada",recorded:"Registrado — sem faixa completa",invalid:"Inválido","unit-mismatch":"Unidade divergente"})[x.s]||"—"}</td></tr>`).join("")}</tbody></table></div>`}
+      <h3 class="ex-section-title" style="margin-top:19px">Resultados da sessão</h3>${!data.length?"<p class='ex-muted'>Preencha resultados em Consultar e preencher para gerar a síntese.</p>":`<div style="overflow-x:auto"><table class="ex-results-table"><thead><tr><th>Exame</th><th>Valor</th><th>Comparação</th></tr></thead><tbody>${data.map(x=>`<tr><td>${e(x.t.name)}</td><td>${e(x.v)} ${e(x.t.kind!=="numeric"?"":(itemState(x.t.id).unit||x.t.unit))}</td><td>${({low:"Abaixo",high:"Acima",normal:"Na faixa informada",recorded:"Registrado — sem faixa completa",invalid:"Inválido","unit-mismatch":"Unidade divergente"})[x.s]||"—"}</td></tr>`).join("")}</tbody></table></div>`}
       <label style="margin-top:15px">Observações clínicas (ficam apenas nesta sessão)<textarea id="ex-context" rows="3" placeholder="Queixa, sintomas, medicamentos, temporalidade; não inclua nome, CPF ou identificadores."></textarea></label>
       <div class="ex-actions"><button class="ex-btn" id="ex-copy" type="button">Copiar resumo</button><button class="ex-btn primary" id="ex-save" type="button">Registrar coleta nesta sessão</button><button class="ex-btn danger" id="ex-clear" type="button">Limpar sessão</button></div>
       <p class="ex-source-note">* Hemoglobina: limiar populacional de anemia da OMS 2024, não intervalo laboratorial universal. Exames qualitativos são apenas registrados; a interpretação depende do método e da situação clínica.</p>`;
     panel.querySelector("#ex-context").value=state.context;
     panel.querySelector("#ex-context").addEventListener("input",ev=>{state.context=ev.target.value});
     panel.querySelector("#ex-copy").addEventListener("click",async()=>{
-      const lines=["LURIA · APOIO À INTERPRETAÇÃO (não substitui avaliação médica)",`Perfil: ${state.population}`,`Idade: ${state.age||"não informada"}`,...data.map(x=>`${x.t.name}: ${x.v} ${x.t.kind!=="numeric"?"":x.t.unit} (${x.s})`),...alerts.map(x=>"ALERTA: "+x),...findings.map(x=>x.title+": "+x.body),"Contexto: "+state.context];
+      const lines=["LURIA · APOIO À INTERPRETAÇÃO (não substitui avaliação médica)",`Perfil: ${state.population}`,`Idade: ${state.age||"não informada"}`,...data.map(x=>`${x.t.name}: ${x.v} ${x.t.kind!=="numeric"?"":(itemState(x.t.id).unit||x.t.unit)} (${x.s})`),...alerts.map(x=>"ALERTA: "+x),...findings.map(x=>x.title+": "+x.body),"Contexto: "+state.context];
       try{await navigator.clipboard.writeText(lines.join("\n"));panel.querySelector("#ex-copy").textContent="Resumo copiado";}catch(_){panel.querySelector("#ex-copy").textContent="Não foi possível copiar";}
     });
     panel.querySelector("#ex-save").addEventListener("click",addSnapshot);panel.querySelector("#ex-clear").addEventListener("click",clear);
@@ -294,7 +303,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
   function addSnapshot(){
     const data=values().filter(x=>x.s!=="invalid"&&x.s!=="unit-mismatch");
     if(!data.length){alert("Preencha ao menos um resultado válido antes de registrar a coleta.");return;}
-    state.history.push({stamp:new Date().toLocaleString("pt-BR"),population:state.population,results:data.map(x=>({id:x.t.id,value:x.v,unit:x.t.unit}))});
+    state.history.push({stamp:new Date().toLocaleString("pt-BR"),population:state.population,results:data.map(x=>({id:x.t.id,value:x.v,unit:x.t.kind==="numeric"?(itemState(x.t.id).unit||x.t.unit):x.t.unit}))});
     state.view="history";renderPanel();
   }
   function renderHistory(panel){
