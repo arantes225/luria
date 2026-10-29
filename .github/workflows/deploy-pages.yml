@@ -49,7 +49,7 @@ jobs:
       - name: Test CSS ownership and legacy route aliases
         run: node --test tests/css-system.test.cjs tests/ui-routes.test.cjs tests/ui-startup.test.cjs tests/ui-final-refinement.test.cjs
       - name: Validate Aplicar curriculum and exam radar
-        run: node --test tests/curriculo.test.cjs tests/radar.test.cjs tests/pdf-layout-profiles.test.cjs
+        run: node --test tests/curriculo.test.cjs tests/curriculo-pdf-ocr.test.cjs tests/radar.test.cjs tests/pdf-layout-profiles.test.cjs
       - name: Validate vocational quiz and live theme colors
         run: node --test tests/vocacao.test.cjs tests/vocacao-ui.test.cjs tests/vocacao-theme.test.cjs
       - name: Check CSP generation
