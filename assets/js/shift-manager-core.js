@@ -60,7 +60,7 @@
   function paymentState(s,today=isoToday()) {
     if(s.status==="trocado")return "cedido";
     if(outstanding(s)<=0.009)return "recebido";
-    if(s.expectedDate && localDate(s.expectedDate) && s.expectedDate<today)return "atrasado";
+    if(s.date && s.date<=today && s.expectedDate && localDate(s.expectedDate) && s.expectedDate<today)return "atrasado";
     if(cents(s.receivedAmount)>0)return "parcial";
     if(s.expectedDate===today)return "vence";
     return "pendente";
@@ -102,7 +102,7 @@
     if(!a||!b||!/^\d{2}:\d{2}$/.test(startTime||"")||!/^\d{2}:\d{2}$/.test(endTime||""))return NaN;
     const [sh,sm]=startTime.split(":").map(Number),[eh,em]=endTime.split(":").map(Number);
     if(sh>23||eh>23||sm>59||em>59)return NaN;
-    let t=(b.getTime()+eh*60e4+em*6e4)-(a.getTime()+sh*60e4+sm*6e4);
+    let t=(b.getTime()+eh*36e5+em*6e4)-(a.getTime()+sh*36e5+sm*6e4);
     if(!endDate && t<=0)t+=864e5;
     return t/6e4;
   }
