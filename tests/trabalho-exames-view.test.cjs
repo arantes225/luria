@@ -62,10 +62,10 @@ test("Both clinical pages use same versioned assets and suppress duplicate top t
   for (const dir of ["exames", "laboratorio"]) {
     const html = fs.readFileSync(path.join(root, "trabalho", dir, "index.html"), "utf8");
     assert.match(html, /data-ui-heading="provided"/);
-    assert.match(html, /trabalho-exames-interpreter\.css\?v=20261029-audit1/);
+    assert.match(html, /trabalho-exames-interpreter\.css\?v=20261029-review2/);
     assert.match(html, /trabalho-exames-extra-catalog\.js\?v=20261029-extras/);
-    assert.match(html, /trabalho-exames-details\.js\?v=20261029-audit1/);
-    assert.match(html, /trabalho-exames-interpreter\.js\?v=20261029-audit1/);
+    assert.match(html, /trabalho-exames-details\.js\?v=20261029-review2/);
+    assert.match(html, /trabalho-exames-interpreter\.js\?v=20261029-review2/);
   }
 });
 
@@ -192,4 +192,71 @@ test("Clinical summaries do not hardcode drug administration for isolated critic
   assert.doesNotMatch(script,/ECG imediato \+ Gluconato de Cálcio/);
   assert.doesNotMatch(script,/iniciar Cefepima ou Piperacilina-Tazobactam na 1ª hora/);
   assert.doesNotMatch(script,/indicação de drenagem torácica!/);
+});
+
+test("Second audit does not claim normality when only a one-sided diagnostic limit exists",()=>{
+  const dom=openTool(),d=dom.window.document;
+  const label=d.querySelector('[data-row="g1t1"] .ex-ref');
+  assert.match(label.textContent,/≥\s*12/);
+  d.querySelector("#ex-patient-toggle").click();
+  const hb=d.querySelector('[data-id="g1t1"][data-field="value"]');
+  hb.value="14";hb.dispatchEvent(new dom.window.Event("input",{bubbles:true}));
+  assert.equal(d.querySelector('[data-row="g1t1"] [data-status]').textContent,"Registrado");
+  hb.value="10";hb.dispatchEvent(new dom.window.Event("input",{bubbles:true}));
+  assert.equal(d.querySelector('[data-row="g1t1"] [data-status]').textContent,"Abaixo");
+  dom.window.close();
+});
+
+test("Second audit prevents wrong-unit data from triggering sodium alerts",()=>{
+  const dom=openTool(),d=dom.window.document;
+  d.querySelector("#ex-patient-toggle").click();
+  const val=d.querySelector('[data-id="g3t1"][data-field="value"]');
+  const unit=d.querySelector('[data-id="g3t1"][data-field="unit"]');
+  assert.ok(unit);assert.equal(unit.value,"mmol/L");
+  val.value="170";val.dispatchEvent(new dom.window.Event("input",{bubbles:true}));
+  assert.equal(d.querySelector('[data-row="g3t1"] [data-status]').textContent,"Acima");
+  unit.value="mg/dL";unit.dispatchEvent(new dom.window.Event("input",{bubbles:true}));
+  assert.equal(d.querySelector('[data-row="g3t1"] [data-status]').textContent,"Unidade divergente");
+  d.querySelector("#ex-analyze").click();
+  assert.match(d.querySelector("#ex-panel").textContent,/Unidade divergente/);
+  assert.doesNotMatch(d.querySelector("#ex-panel .ex-findings").textContent,/Distúrbio importante do sódio|Sódio em faixa potencialmente crítica/);
+  dom.window.close();
+});
+
+test("Second audit rejects invalid and negative lab values before clinical inferences",()=>{
+  const dom=openTool(),d=dom.window.document;
+  d.querySelector("#ex-patient-toggle").click();
+  const pot=d.querySelector('[data-id="g3t2"][data-field="value"]');
+  pot.value="-8";pot.dispatchEvent(new dom.window.Event("input",{bubbles:true}));
+  assert.equal(d.querySelector('[data-row="g3t2"] [data-status]').textContent,"Valor inválido");
+  d.querySelector("#ex-analyze").click();
+  assert.doesNotMatch(d.querySelector("#ex-panel .ex-findings").textContent,/Distúrbio do potássio|Potássio em faixa potencialmente crítica/);
+  dom.window.close();
+});
+
+test("Second audit provides method-appropriate options and descriptive assay reports",()=>{
+  const dom=openTool(),d=dom.window.document;
+  const all=[...dom.window.LURIA_EXAM_CATALOG,...dom.window.LURIA_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
+  const named=n=>all.find(t=>t.name===n);
+  assert.equal(named("Anti-HBs").kind,"text");
+  assert.equal(named("IGRA para tuberculose").kind,"text");
+  assert.deepEqual(Array.from(named("Prova cruzada pré-transfusional").options),["Compatível","Incompatível","Indeterminado"]);
+  assert.deepEqual(Array.from(named("RT-PCR para SARS-CoV-2").options),["Detectado","Não detectado","Indeterminado"]);
+  d.querySelector("#ex-patient-toggle").click();
+  assert.equal(d.querySelector('[data-id="'+named("Anti-HBs").id+'"][data-field="value"]').getAttribute("inputmode"),"text");
+  assert.ok([...d.querySelector('[data-id="'+named("Prova cruzada pré-transfusional").id+'"][data-field="value"]').options].some(o=>o.value==="Compatível"));
+  dom.window.close();
+});
+
+test("Second audit adds gestational glucose context without diagnosing from isolated results",()=>{
+  const dom=openTool(),d=dom.window.document;
+  d.querySelector("#ex-patient-toggle").click();
+  const profile=d.querySelector("#ex-pop");
+  profile.value="gest-2";profile.dispatchEvent(new dom.window.Event("change",{bubbles:true}));
+  const val=d.querySelector('[data-id="g6t1"][data-field="value"]');
+  val.value="97";val.dispatchEvent(new dom.window.Event("input",{bubbles:true}));
+  d.querySelector("#ex-analyze").click();
+  assert.match(d.querySelector("#ex-panel .ex-findings").textContent,/Glicemia de jejum na gestação/);
+  assert.match(d.querySelector("#ex-panel .ex-findings").textContent,/92 mg\/dL/);
+  dom.window.close();
 });

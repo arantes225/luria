@@ -136,3 +136,8 @@ body[data-page="trabalho_laboratorio"] .work-hub-navigation .work-hub-return{dis
 #exam-tool .ex-test-details-content strong{display:block;font-size:11px;color:var(--accent,#184888)}
 #exam-tool .ex-test-details-content a{font-size:11px;text-decoration:underline;overflow-wrap:anywhere}
 #exam-tool .ex-test-details-content small{font-size:10px;color:var(--muted,#67758b)}
+
+/* Segunda auditoria: unidade do laudo visível nos exames numéricos. */
+#exam-tool .ex-unit-input{grid-column:1/-1}
+#exam-tool .ex-unit-input input{font-size:12px}
+#exam-tool .ex-status.unit-mismatch{font-weight:800;color:var(--danger,#b3261e)}
