@@ -164,9 +164,6 @@
     const top=report.top.map((s,i)=>{
       const aff=s.strengths.filter(t=>report.scores[t]>.03).slice(0,3);
       const fric=s.frictions.slice(0,2);
-      const area=s.areas.length?'<p><strong>Possíveis áreas de atuação após a formação:</strong> '+
-        s.areas.map(a=>html(a.name)).join("; ")+'. Verifique pré-requisitos e oferta oficial.</p>':
-        '<p><strong>Aprofundamento:</strong> explore a diversidade de cenários de prática dentro desta especialidade.</p>';
       const why=s.evidence.length?
         '<ul class="voc-evidence">'+s.evidence.map(e=>
           '<li><strong>'+html(e.section)+':</strong> “'+html(e.choice)+'”</li>').join("")+'</ul>':
@@ -176,15 +173,17 @@
           '. Vale verificar como isso aparece nos diferentes serviços.':
         'Não apareceu uma resistência clara às atividades gerais desta área. Ainda assim, converse sobre plantões, burocracia e a rotina predominante.';
       return '<article class="voc-match"><div class="voc-match-top"><h3>'+ (i+1)+
-        'ª hipótese · '+html(s.name)+'</h3><span class="voc-match-score">Caminho para explorar</span></div>'+
-        '<p><strong>Por que apareceu:</strong> seus interesses por '+
+        'ª indicação · Residência em '+html(s.name)+'</h3><span class="voc-match-score">Programa de residência</span></div>'+
+        '<p><strong>Por que esta residência apareceu:</strong> seus interesses por '+
           html(readable((aff.length?aff:s.strengths).map(label)).toLowerCase())+
-          ' se aproximam de tarefas frequentes em parte dos cenários desta especialidade.</p>'+
+          ' se aproximam de atividades associadas à formação nesta residência.</p>'+
         '<p><strong>O que você respondeu que sustenta essa hipótese:</strong></p>'+why+
         '<p><strong>Possível atrito com a rotina:</strong> '+friction+'</p>'+
-        '<p><strong>Trajetória:</strong> '+html(s.prerequisite)+' · programa da especialidade com '+
-          s.years+' ano'+(s.years===1?'':'s')+' (confira os editais vigentes).</p>'+area+
-        '<p><strong>Como conferir na prática:</strong> acompanhe um turno comum, converse com residentes sobre atividades repetitivas e registre o que voltaria a fazer.</p></article>';
+        '<p><strong>Ingresso na residência:</strong> '+(s.entry==="Acesso direto"?
+          'Acesso direto (R1), após a graduação.':
+          'Com pré-requisito: residência prévia em '+html(s.prerequisite)+'.')+
+          ' Confirme os requisitos e a duração no edital vigente.</p>'+
+        '<p><strong>Como conferir na prática:</strong> acompanhe um turno comum do programa, converse com residentes sobre atividades repetitivas e registre o que voltaria a fazer.</p></article>';
     }).join("");
     const difference=report.top.length>=2?
       '<p>As hipóteses se diferenciam principalmente pelo tipo de atividade. '+
@@ -196,7 +195,7 @@
       '. Essa combinação descreve preferências de trabalho, não um tipo fixo de personalidade.':
       'Suas escolhas ficaram distribuídas entre várias formas de exercer a Medicina. É mais útil vivenciar os cenários do que assumir uma conclusão agora.';
     results.innerHTML=
-      '<p class="voc-kicker">MAPA PROFISSIONAL · RESULTADO PERSONALIZADO</p>'+
+      '<p class="voc-kicker">MAPA DE RESIDÊNCIAS · RESULTADO PERSONALIZADO</p>'+
       '<h2 id="voc-results-title">O que realmente pesa na sua escolha</h2>'+
       '<p class="voc-result-intro">'+headline+'</p>'+
       sections("Seu jeito de raciocinar",'<p>Nas tarefas intelectuais, suas escolhas sugerem interesse em '+html(diagnostic)+
@@ -213,12 +212,12 @@
         html(less)+'</p>')+
       sections("Três exemplos das suas próprias escolhas",samples?'<ul class="voc-evidence">'+samples+'</ul>':
         '<p>Você marcou poucas preferências diretas; considere repetir o teste depois de vivenciar mais estágios.</p>')+
-      '<h2 class="voc-top-title">Até três caminhos para explorar</h2>'+
-      '<p class="voc-result-intro">A ordem é gerada por afinidades editoriais entre tarefas e especialidades, nunca por porcentagem de sucesso, inteligência, rendimento ou felicidade.</p>'+
+      '<h2 class="voc-top-title">Até três residências médicas para explorar</h2>'+
+      '<p class="voc-result-intro">As recomendações incluem apenas residências convencionais da curadoria LURIA, de acesso direto ou com pré-requisito. A ordem representa afinidades editoriais, nunca chance de aprovação, competência ou satisfação.</p>'+
       uncertain+'<div class="voc-match-list">'+top+'</div>'+
-      sections("Como diferenciar as três hipóteses",difference)+
+      sections("Como diferenciar as residências sugeridas",difference)+
       sections("Plano de validação no mundo real",'<p>Para cada hipótese: acompanhe ao menos um dia comum, converse com profissionais em início e meio de carreira, observe tarefas repetitivas e compare seu bem-estar ao final do turno. Refaça a avaliação após novas experiências; a ordem pode mudar.</p>')+
-      '<p class="voc-result-intro"><strong>Limitações:</strong> avaliação exploratória original da LURIA; não é teste psicométrico validado nem substitui orientação profissional. As associações são hipóteses de trabalho, e áreas de atuação exigem pré-requisitos próprios.</p>'+
+      '<p class="voc-result-intro"><strong>Limitações:</strong> avaliação exploratória da LURIA; não é teste psicométrico validado nem prevê aprovação. A inclusão no catálogo não garante vagas em todas as instituições ou anos. Confira os editais e a CNRM.</p>'+
       '<div class="voc-actions"><button id="voc-restart" class="voc-button voc-button-primary" type="button">Refazer desde o início</button>'+
       '<button id="voc-review" class="voc-button voc-button-secondary" type="button">Revisar respostas</button>'+
       '<a class="voc-button voc-button-secondary" href="/aplicar/">Voltar ao Aplicar</a></div>';
@@ -234,16 +233,14 @@
   }
   function renderCatalogue(){
     const query=($("voc-search").value||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
-    const type=$("voc-kind").value;
-    const items=[...engine.catalogue.specialties,...engine.catalogue.areas].filter(x=>
-      (type==="all"||x.type===type)&&
-      (x.name+" "+x.prerequisite).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().includes(query))
+    const items=engine.catalogue.residencies.filter(x=>
+      (x.name+" "+x.prerequisite+" "+x.entry).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().includes(query))
       .sort((a,b)=>a.name.localeCompare(b.name,"pt-BR"));
     $("voc-catalog-count").textContent=items.length+" resultado(s) no catálogo";
     $("voc-catalog-items").innerHTML=items.length?items.map(x=>
       '<article class="voc-catalog-item"><strong>'+html(x.name)+'</strong><span>'+
-      (x.type==="area"?"Área de atuação":"Especialidade")+' · '+x.years+' ano'+(x.years>1?"s":"")+
-      '</span><small>'+(x.type==="area"?"Pré-requisitos: ":"Ingresso: ")+html(x.prerequisite)+'</small></article>').join(""):
+      'Residência médica · '+x.entry+
+      '</span><small>'+(x.entry==="Acesso direto"?"Ingresso após a graduação":"Pré-requisito: "+html(x.prerequisite))+'</small></article>').join(""):
       '<p>Nenhum item encontrado. Tente outro termo.</p>';
   }
   $("voc-start").addEventListener("click",()=>{current=0;finish=false;save();showQuiz();});
@@ -259,7 +256,6 @@
     if(old){answers[id]={...old,unfamiliar:$("voc-unfamiliar").checked};save();}
   });
   $("voc-search").addEventListener("input",renderCatalogue);
-  $("voc-kind").addEventListener("change",renderCatalogue);
   $("voc-catalogue").addEventListener("toggle",()=>{if($("voc-catalogue").open)renderCatalogue();});
   document.addEventListener("keydown",event=>{
     if(quiz.hidden||event.altKey||event.metaKey||event.ctrlKey||
