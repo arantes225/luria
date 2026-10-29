@@ -38,7 +38,7 @@ test("core: records legacy payments, midnight crossing, payer calendar and no do
   assert.equal(c.expectedDate("2026-10-29",{paymentRule:"next-month",paymentDay:31}),"2026-11-30");
   assert.equal(c.expectedDate("2026-10-29",{paymentRule:"days",paymentDays:30}),"2026-11-28");
   assert.equal(c.outstanding({value:1500,withheldTax:100,payerFee:20,receivedAmount:500}),880);
-  assert.equal(c.paymentState({value:1500,withheldTax:100,payerFee:20,receivedAmount:500,expectedDate:"2026-10-10"},"2026-10-29"),"atrasado");
+  assert.equal(c.paymentState({date:"2026-10-10",value:1500,withheldTax:100,payerFee:20,receivedAmount:500,expectedDate:"2026-10-10"},"2026-10-29"),"atrasado");
 });
 test("scale: opens modal, saves flexible time/value, renders monthly and weekly, edits record",t=>{
   const dom=mount(files.scale,[files.core,files.scaleJS]);t.after(()=>dom.window.close());
