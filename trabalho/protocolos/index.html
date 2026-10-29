@@ -20,7 +20,7 @@
     .protocol-shell{display:grid;gap:16px}
     .protocol-hero{padding:22px;border:1px solid var(--border);border-radius:20px;background:linear-gradient(135deg,var(--surface),color-mix(in srgb,var(--theme,#184888) 5%,var(--surface)))}
     .protocol-hero h2{margin:0 0 7px;font-size:1.45rem}.protocol-hero p{margin:0;color:var(--muted);line-height:1.55;max-width:850px}
-    .protocol-controls{display:grid;grid-template-columns:minmax(220px,1fr) 240px auto;gap:10px;padding:12px;border:1px solid var(--border);border-radius:16px;background:var(--surface);align-items:center}
+    .protocol-controls{display:grid;grid-template-columns:minmax(220px,1fr) minmax(170px,240px) minmax(170px,240px) auto;gap:10px;padding:12px;border:1px solid var(--border);border-radius:16px;background:var(--surface);align-items:center}
     .protocol-controls input,.protocol-controls select{width:100%;min-height:42px;padding:0 12px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);font:inherit}
     #protocol-count{font-size:.8rem;color:var(--muted);font-weight:700;white-space:nowrap}
     .protocol-workspace{display:grid;grid-template-columns:minmax(290px,34%) minmax(0,1fr);gap:14px;align-items:start}
@@ -93,7 +93,8 @@
           </article>
           <section class="protocol-controls">
             <input id="protocol-search" type="search" autocomplete="off" placeholder="Buscar protocolo, sintoma, exame ou diagnóstico…">
-            <select id="protocol-category"><option value="">Todas as áreas</option></select>
+            <select id="protocol-category" aria-label="Selecionar área"><option value="">Todas as áreas</option></select>
+            <select id="protocol-batch" aria-label="Selecionar bloco de 50"><option value="">Todos os blocos</option></select>
             <span id="protocol-count">—</span>
           </section>
           <section class="protocol-workspace">
@@ -112,7 +113,7 @@
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script src="/assets/js/clinical-bridge.js?v=1"></script>
 <script src="/assets/js/trabalho-protocolos-seeds.js?v=20261026"></script>
-<script src="/assets/js/trabalho-protocolos.js?v=20261029-conteudo-pendente"></script>
+<script src="/assets/js/trabalho-protocolos.js?v=20261029-blocos-clinicos-4"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>
