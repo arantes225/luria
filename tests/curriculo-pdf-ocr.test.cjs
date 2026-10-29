@@ -141,5 +141,5 @@ test('Importação permite scripts/worker/modelo OCR sem liberar origens genéri
   assert.match(policy,/por\.traineddata\.gz/);
   assert.match(policy,/'wasm-unsafe-eval'/);
   assert.match(csp,/module\.exports\.resources\['aplicar\/curriculo\/index\.html'\] = \{scriptSrc: \[\.\.\.pdfScripts, \.\.\.ocrScripts, jsPdf\], connectSrc: ocrConnect, wasm: true\}/);
-  assert.doesNotMatch(policy,/https:\s*\/\//);
+  assert.doesNotMatch(policy,/https:\/\/\*/);
 });
