@@ -34,7 +34,7 @@ test("core: records legacy payments, midnight crossing, payer calendar and no do
   assert.equal(c.outstanding(c.getShifts()[0]),0);
   assert.equal(c.durationMinutes("2026-10-29","19:00","","07:00"),720);
   assert.equal(c.durationMinutes("2026-10-29","07:10","","19:15"),725);
-  assert.ok(Number.isNaN(c.durationMinutes("2026-10-29","19:00","2026-10-29","07:00"))===false);
+  assert.ok(c.durationMinutes("2026-10-29","19:00","2026-10-29","07:00")<0);
   assert.equal(c.expectedDate("2026-10-29",{paymentRule:"next-month",paymentDay:31}),"2026-11-30");
   assert.equal(c.expectedDate("2026-10-29",{paymentRule:"days",paymentDays:30}),"2026-11-28");
   assert.equal(c.outstanding({value:1500,withheldTax:100,payerFee:20,receivedAmount:500}),880);
