@@ -106,7 +106,7 @@ test("installed PWA release and ECG assets are cache-busted together",()=>{
   assert.equal(workerRelease, clientRelease, "Versões do PWA e do Service Worker devem ser iguais");
   assert.match(html,/ecg-signal-extractor\.js\?v=7/);
   assert.match(html,/ecg-cv-engine\.js\?v=9/);
-  assert.match(html,/ecg-smart-camera\.js\?v=10/);
+  assert.match(html,/ecg-smart-camera\.js\?v=11/);
   assert.match(html,/ecg-smart-ui\.js\?v=10/);
   assert.match(html,/ecg-smart-camera\.css\?v=7/);
 });

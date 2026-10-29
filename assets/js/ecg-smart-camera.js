@@ -31,10 +31,18 @@
     if (!manualPaperSelection && (!sheet?.found || sheet.isCutOff || sheet.hasSeverePerspective)) return false;
     const n = Math.max(Number(detection.waveformCandidateCount || 0),
       Number(detection.detectedLayout?.validWaveformCells || 0));
+    const candidateCount = Object.keys(detection.candidateRegions || {}).length;
+    const grid = detection.calibration;
+    const hasPartialPhotoCandidate = photoPreviewOnly && n >= 1 && candidateCount >= 1 &&
+      (manualPaperSelection || grid?.gridDetected === true || Number(grid?.coloredGridRatio || 0) >= 0.012);
     // Preserve independent signal evidence when simple template OCR disagrees;
     // never regard the mismatch as verified lead identity.
-    if (n < 3 || Object.keys(detection.candidateRegions || {}).length < 3) return false;
-    const grid = detection.calibration;
+    // A user-selected photo with one or two real regions deserves an explicit
+    // preliminary review, not the misleading "no leads" result. This never
+    // applies to autonomous capture and remains quarantined from named data,
+    // clinical measurements and AI input until the missing regions are
+    // recaptured/confirmed.
+    if ((n < 3 || candidateCount < 3) && !hasPartialPhotoCandidate) return false;
     const labels = detection.recognizedLabels || {};
     const strongLabels = Object.values(labels).filter(x => x?.ocrRecognized && x?.hasValidTrace).length;
     return manualPaperSelection ||
@@ -43,7 +51,8 @@
       strongLabels >= 2 ||
       // On user-initiated photos, uncertain calibration must NOT prevent a
       // clearly marked, non-clinical waveform preview.
-      (photoPreviewOnly && n >= 3 && sheet?.found === true) ||
+      (photoPreviewOnly && n >= 3 && candidateCount >= 3 && sheet?.found === true) ||
+      (hasPartialPhotoCandidate && sheet?.found === true) ||
       // Live mode still needs stronger morphology if the grid is illegible.
       (n >= 6 && detection.detected === true && sheet?.found === true);
   }
