@@ -271,48 +271,9 @@ body[data-page="aprender"] .book-main .book-section .reference-list li {
   document.head.appendChild(style);
   const highlightBtn=tools.querySelector('[data-apostila-highlight]');
   const postitBtn=tools.querySelector('[data-apostila-postit]');
-  const notionBtn=tools.querySelector('[data-apostila-notion]');
   const palette=tools.querySelector('[data-highlight-palette]');
   const postitPalette=tools.querySelector('[data-postit-palette]');
   let highlightColor='#ffd166';let postitShape='square';
-
-  if (notionBtn) {
-    // Verificar status do Notion e vincular evento de conexão
-    const checkNotion = async () => {
-      try {
-        const sb = window.supabaseClient;
-        if (!sb) return;
-        const { data } = await sb.functions.invoke("notion-api", { body: { action: "status" } });
-        if (data?.connected) {
-          notionBtn.textContent = "✓ Notion Conectado";
-          notionBtn.style.background = "#1b4d3e";
-          notionBtn.style.borderColor = "#2e7d32";
-        }
-      } catch (_) {}
-    };
-    checkNotion();
-
-    notionBtn.addEventListener('click', async () => {
-      try {
-        const sb = window.supabaseClient;
-        if (!sb) {
-          window.location.assign('/configuracoes/?section=perfil');
-          return;
-        }
-        notionBtn.disabled = true;
-        notionBtn.textContent = "Conectando...";
-        const redirectTo = window.location.href;
-        const { data, error } = await sb.functions.invoke("notion-auth", { body: { redirect_to: redirectTo } });
-        if (error || !data?.url) {
-          window.location.assign('/configuracoes/?section=perfil');
-          return;
-        }
-        window.location.assign(data.url);
-      } catch (_) {
-        window.location.assign('/configuracoes/?section=perfil');
-      }
-    });
-  }
   const base='luria:apostila:'+location.pathname.replace(/\/+$/,'');
   const highlightKey=base+':highlights:v1';
   const postitKey=base+':postits:v1';
