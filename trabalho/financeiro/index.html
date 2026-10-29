@@ -53,12 +53,12 @@
               <div class="shift-stat-card">
                 <span class="stat-label">Total Faturado</span>
                 <strong class="stat-val" id="fin-month-total">R$ 0,00</strong>
-                <span class="stat-sub">Mês atual</span>
+                <span class="stat-sub">Mês selecionado</span>
               </div>
               <div class="shift-stat-card">
                 <span class="stat-label">Valores Recebidos</span>
                 <strong class="stat-val text-success" id="fin-month-paid">R$ 0,00</strong>
-                <span class="stat-sub">Já compensados</span>
+                <span class="stat-sub">Depósitos dos plantões do mês de referência</span>
               </div>
               <div class="shift-stat-card">
                 <span class="stat-label">A Receber / Pendentes</span>
@@ -106,10 +106,10 @@
             <div><strong class="stat-val fin-late" id="fin-overdue-total">R$ 0,00</strong><p id="fin-overdue-count"></p></div>
           </article>
           <!-- Detalhamento por Hospital/Instituição -->
-          <article class="fin-card">
+          <article class="fin-card" id="instituicoes">
             <div>
               <h2>Instituições e cobranças</h2>
-              <p>Cada instituição pagadora tem seu próprio bloco, prazo e histórico de pagamentos.</p>
+              <p>Blocos com todos os plantões cadastrados (não apenas do mês selecionado), organizados por responsável pelo pagamento.</p>
             </div>
             <div id="fin-hospital-breakdown">
               <!-- Preenchido dinamicamente por plantoes-financeiro.js -->
