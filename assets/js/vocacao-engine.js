@@ -1,4 +1,4 @@
-/* LURIA · mapa profissional v3: cenários contextualizados e trilha adaptativa.
+/* LURIA · orientação para residências médicas: cenários e trilha adaptativa.
    Instrumento editorial exploratório, não avaliação psicológica validada. */
 (function (root, factory) {
   "use strict";
@@ -139,7 +139,7 @@
   ];
   const mk = (r) => ({
     id:r[0], group:r[1], text:r[2], context:r[3],
-    options:r[4].map((v,i)=>({ id:i, label:v[0], tags:v[1].split(","), targets:v[2] ? v[2].split(";") : [] }))
+    options:r[4].map((v,i)=>({ id:i, label:v[0], tags:v[1].split(","), targets:v[2] ? v[2].split(";").filter(name => catalogue.residencies.some(s => s.name === name)) : [] }))
   });
   const core = CORE_ROWS.map(mk);
   const deep = DEEP_ROWS.map(mk);
@@ -248,14 +248,11 @@
         .map(o=>({id,section:o.question.group,choice:o.label,question:o.question.text,
           relevance:o.tags.filter(t=>s.tags.includes(t)).length+(o.targets.includes(s.name)?3:0)})))
         .sort((a,b)=>b.relevance-a.relevance).slice(0,3);
-      const subareas=catalogue.areas.filter(a=>a.parents.includes(s.name))
-        .map(a=>({...a,affinity:a.tags.reduce((v,t)=>v+(scores[t]||0),0)/a.tags.length}))
-        .sort((a,b)=>b.affinity-a.affinity||a.name.localeCompare(b.name,"pt-BR")).slice(0,3);
-      return {...s,strengths,frictions,evidence,areas:subareas};
+      return {...s,strengths,frictions,evidence};
     });
     const firstGap=top.length>1 ? top[0].affinity-top[1].affinity:0;
     return {top,scores,ordered:positive,frictions:caution,responded,inexperienced,skipped,
-      close:firstGap<.095,version:"2026-10-28-v3",total,
+      close:firstGap<.095,version:"2026-10-29-residencias-v4",total,
       certainty:skipped>=7||inexperienced>=total*.55?"exploratorio":"orientativo",
       adaptations:sequence.slice(core.length,core.length+DEEP_COUNT)};
   }
