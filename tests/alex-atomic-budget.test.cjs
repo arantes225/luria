@@ -94,17 +94,24 @@ test('Edge: waitUntil serves text before background settlement and preserves the
   let release;
   const settleGate = new Promise(resolve=>{ release=resolve; });
   const f = edge({backgroundAccounting:true, settleGate});
-  const response = await f.call();
-  const body = await response.json();
-  assert.equal(response.status, 200);
-  assert.equal(body.answer, 'Resposta');
-  assert.equal(body.accounting_pending, true);
-  assert.equal(body.usage, null);
-  assert.equal(f.backgroundTasks.length, 1);
-  // While accounting is pending the full reservation remains charged.
-  assert.equal((await usage()).remaining_tokens, 0);
-  release();
-  await Promise.all(f.backgroundTasks);
+  try {
+    const response = await Promise.race([
+      f.call(),
+      new Promise((_,reject)=>setTimeout(()=>reject(new Error('Alex fast-response timeout')), 10_000))
+    ]);
+    const body = await response.json();
+    assert.equal(response.status, 200);
+    assert.equal(body.answer, 'Resposta');
+    assert.equal(body.accounting_pending, true);
+    assert.equal(body.usage, null);
+    assert.equal(f.backgroundTasks.length, 1);
+    // While accounting is pending the full reservation remains charged.
+    assert.equal((await usage()).remaining_tokens, 0);
+  } finally {
+    // Release the fake database gate even if the assertion fails.
+    release();
+    await Promise.allSettled(f.backgroundTasks);
+  }
   assert.equal((await usage()).used_tokens, 120);
 });
 
