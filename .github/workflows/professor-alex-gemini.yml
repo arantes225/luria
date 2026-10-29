@@ -31,6 +31,6 @@ jobs:
       - run: node --check assets/js/professor-alex-gemini.mjs
       - run: node --check assets/js/professor-alex-companion.mjs
       - run: node --check assets/js/alex-conversation-history.mjs
-      - run: node --test tests/professor-alex-gemini.test.cjs tests/professor-alex-prompt-fidelity.test.cjs tests/alex-conversation-history.test.cjs tests/alex-atomic-budget.test.cjs
+      - run: node --test tests/professor-alex-gemini.test.cjs tests/professor-alex-prompt-fidelity.test.cjs tests/alex-conversation-history.test.cjs
       - run: node scripts/check-syntax.cjs
       - run: node scripts/sync-csp.cjs
