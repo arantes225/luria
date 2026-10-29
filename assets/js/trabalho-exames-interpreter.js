@@ -3,7 +3,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
   "use strict";
   const root=document.getElementById("exam-tool");
   if(!root)return;
-  const C=window.LURIA_EXAM_CATALOG||[];
+  const C=[...(window.LURIA_EXAM_CATALOG||[]),...(window.LURIA_EXAM_EXTRA_CATALOG||[])];
   const byId=new Map(C.flatMap(g=>g.tests.map(t=>[t.id,t])));
   const state={group:"",kit:"",search:"",view:"catalog",mode:"reference",population:"adult-f",age:"",context:"",readings:{},history:[]};
   const KITS={
@@ -25,7 +25,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
   const itemState=id=>state.readings[id]||(state.readings[id]={value:"",min:"",max:""});
   function ranges(t,useCustom=true){
     const r=itemState(t.id);
-    if(t.kind==="qual")return {min:null,max:null,custom:false,available:false};
+    if(t.kind!=="numeric")return {min:null,max:null,custom:false,available:false};
     const overrideLow=number(r.min),overrideHigh=number(r.max);
     const custom=(overrideLow!==null||overrideHigh!==null);
     if(useCustom&&custom)return {min:overrideLow,max:overrideHigh,custom:true,available:true};
@@ -40,7 +40,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
   }
   function status(t){
     const r=itemState(t.id);if(String(r.value).trim()==="")return "";
-    if(t.kind==="qual")return "recorded";
+    if(t.kind!=="numeric")return "recorded";
     const v=number(r.value);if(v===null)return "invalid";
     const lim=ranges(t);if((String(r.min).trim()&&number(r.min)===null)||(String(r.max).trim()&&number(r.max)===null)||(lim.min!==null&&lim.max!==null&&lim.min>lim.max))return "invalid";if(lim.min!==null&&v<lim.min)return "low";
     if(lim.max!==null&&v>lim.max)return "high";
@@ -163,15 +163,15 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
        const ref=lim.available?`${lim.min===null?"":fmt(lim.min)}${lim.min!==null&&lim.max!==null?" a ":""}${lim.max===null?"":fmt(lim.max)}`:"Conferir laudo";
        const head=`<div class="ex-card-head"><span class="ex-area-tag">${e(groupName(t.group))}</span><h4>${e(t.name)}</h4></div>`;
        const flag=patient?`<span class="ex-status ${s}" data-status>${({low:"Abaixo",high:"Acima",normal:"Na faixa",invalid:"Valor inválido",recorded:"Registrado"})[s]||""}</span>`:"";
-       const refBlock=`<div class="ex-card-reference"><small>Valor de referência</small><span class="ex-ref" ${patient?"data-ref":""}>${ref}${lim.diagnostic?"*":""}${flag}</span><small class="ex-ref-unit">${e(t.unit==="qualitativo"?"Conforme método":t.unit)}</small></div>`;
+       const refBlock=`<div class="ex-card-reference"><small>Valor de referência</small><span class="ex-ref" ${patient?"data-ref":""}>${ref}${lim.diagnostic?"*":""}${flag}</span><small class="ex-ref-unit">${e(t.kind!=="numeric"?"Conforme método":t.unit)}</small></div>`;
        if(!patient)return `<article class="ex-test ex-card ex-reference-only" data-row="${e(t.id)}">${head}${refBlock}</article>`;
        const inp=t.kind==="qual"
-         ?`<select data-id="${e(t.id)}" data-field="value" aria-label="Resultado ${e(t.name)}"><option value="">Selecionar</option>${["Negativo","Positivo","Não reagente","Reagente","Indeterminado","Ausente","Presente","Traços"].map(v=>`<option value="${v}" ${r.value===v?"selected":""}>${v}</option>`).join("")}</select>`
-         :`<input data-id="${e(t.id)}" data-field="value" inputmode="decimal" autocomplete="off" placeholder="—" value="${e(r.value)}" aria-label="Resultado ${e(t.name)}">`;
+         ?`<select data-id="${e(t.id)}" data-field="value" aria-label="Resultado ${e(t.name)}"><option value="">Selecionar</option>${(t.options||["Negativo","Positivo","Não reagente","Reagente","Indeterminado","Não detectado","Detectado","Ausente","Presente","Traços"]).map(v=>`<option value="${v}" ${r.value===v?"selected":""}>${v}</option>`).join("")}</select>`
+         :`<input data-id="${e(t.id)}" data-field="value" inputmode="${t.kind==="numeric"?"decimal":"text"}" autocomplete="off" placeholder="${t.kind==="numeric"?"—":"Conforme laudo"}" value="${e(r.value)}" aria-label="Resultado ${e(t.name)}">`;
        return `<article class="ex-test ex-card ex-patient-card" data-row="${e(t.id)}">${head}${refBlock}<div class="ex-card-fields">
          <label>Resultado${inp}</label>
-         <label>Mín. do laudo<input data-id="${e(t.id)}" data-field="min" ${t.kind==="qual"?"disabled":""} placeholder="—" inputmode="decimal" value="${e(r.min)}" aria-label="Limite inferior para ${e(t.name)}"></label>
-         <label>Máx. do laudo<input data-id="${e(t.id)}" data-field="max" ${t.kind==="qual"?"disabled":""} placeholder="—" inputmode="decimal" value="${e(r.max)}" aria-label="Limite superior para ${e(t.name)}"></label>
+         <label>Mín. do laudo<input data-id="${e(t.id)}" data-field="min" ${t.kind!=="numeric"?"disabled":""} placeholder="—" inputmode="decimal" value="${e(r.min)}" aria-label="Limite inferior para ${e(t.name)}"></label>
+         <label>Máx. do laudo<input data-id="${e(t.id)}" data-field="max" ${t.kind!=="numeric"?"disabled":""} placeholder="—" inputmode="decimal" value="${e(r.max)}" aria-label="Limite superior para ${e(t.name)}"></label>
        </div></article>`;
      }).join("")||"<p class='ex-muted ex-no-results'>Nenhum exame encontrado. Experimente outra área ou termo de busca.</p>";
      if(!patient)return;
@@ -267,14 +267,14 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
       <div class="ex-summary-grid"><div class="ex-metric"><strong>${data.length}</strong><span>resultados inseridos</span></div><div class="ex-metric"><strong>${n}</strong><span>fora da faixa informada</span></div><div class="ex-metric"><strong>${alerts.length}</strong><span>alertas de revisão urgente</span></div></div>
       ${invalid.length?`<div class="ex-finding alert"><strong>Valores inválidos</strong>${invalid.map(x=>e(x.t.name)).join(", ")}. Use números com vírgula ou ponto.</div>`:""}
       <div class="ex-findings">${alerts.map(x=>`<div class="ex-finding alert"><strong>Possível achado crítico</strong>${e(x)}</div>`).join("")}${findings.map(x=>`<div class="ex-finding ${x.level==="warn"?"warn":""}"><strong>${e(x.title)}</strong>${e(x.body)}</div>`).join("")}</div>
-      <h3 class="ex-section-title" style="margin-top:19px">Resultados da sessão</h3>${!data.length?"<p class='ex-muted'>Preencha resultados em Consultar e preencher para gerar a síntese.</p>":`<div style="overflow-x:auto"><table class="ex-results-table"><thead><tr><th>Exame</th><th>Valor</th><th>Comparação</th></tr></thead><tbody>${data.map(x=>`<tr><td>${e(x.t.name)}</td><td>${e(x.v)} ${e(x.t.kind==="qual"?"":x.t.unit)}</td><td>${({low:"Abaixo",high:"Acima",normal:"Na faixa",recorded:"Sem referência validada",invalid:"Inválido"})[x.s]||"—"}</td></tr>`).join("")}</tbody></table></div>`}
+      <h3 class="ex-section-title" style="margin-top:19px">Resultados da sessão</h3>${!data.length?"<p class='ex-muted'>Preencha resultados em Consultar e preencher para gerar a síntese.</p>":`<div style="overflow-x:auto"><table class="ex-results-table"><thead><tr><th>Exame</th><th>Valor</th><th>Comparação</th></tr></thead><tbody>${data.map(x=>`<tr><td>${e(x.t.name)}</td><td>${e(x.v)} ${e(x.t.kind!=="numeric"?"":x.t.unit)}</td><td>${({low:"Abaixo",high:"Acima",normal:"Na faixa",recorded:"Sem referência validada",invalid:"Inválido"})[x.s]||"—"}</td></tr>`).join("")}</tbody></table></div>`}
       <label style="margin-top:15px">Observações clínicas (ficam apenas nesta sessão)<textarea id="ex-context" rows="3" placeholder="Queixa, sintomas, medicamentos, temporalidade; não inclua nome, CPF ou identificadores."></textarea></label>
       <div class="ex-actions"><button class="ex-btn" id="ex-copy" type="button">Copiar resumo</button><button class="ex-btn primary" id="ex-save" type="button">Registrar coleta nesta sessão</button><button class="ex-btn danger" id="ex-clear" type="button">Limpar sessão</button></div>
       <p class="ex-source-note">* Hemoglobina: limiar populacional de anemia da OMS 2024, não intervalo laboratorial universal. Exames qualitativos são apenas registrados; a interpretação depende do método e da situação clínica.</p>`;
     panel.querySelector("#ex-context").value=state.context;
     panel.querySelector("#ex-context").addEventListener("input",ev=>{state.context=ev.target.value});
     panel.querySelector("#ex-copy").addEventListener("click",async()=>{
-      const lines=["LURIA · APOIO À INTERPRETAÇÃO (não substitui avaliação médica)",`Perfil: ${state.population}`,`Idade: ${state.age||"não informada"}`,...data.map(x=>`${x.t.name}: ${x.v} ${x.t.kind==="qual"?"":x.t.unit} (${x.s})`),...alerts.map(x=>"ALERTA: "+x),...findings.map(x=>x.title+": "+x.body),"Contexto: "+state.context];
+      const lines=["LURIA · APOIO À INTERPRETAÇÃO (não substitui avaliação médica)",`Perfil: ${state.population}`,`Idade: ${state.age||"não informada"}`,...data.map(x=>`${x.t.name}: ${x.v} ${x.t.kind!=="numeric"?"":x.t.unit} (${x.s})`),...alerts.map(x=>"ALERTA: "+x),...findings.map(x=>x.title+": "+x.body),"Contexto: "+state.context];
       try{await navigator.clipboard.writeText(lines.join("\n"));panel.querySelector("#ex-copy").textContent="Resumo copiado";}catch(_){panel.querySelector("#ex-copy").textContent="Não foi possível copiar";}
     });
     panel.querySelector("#ex-save").addEventListener("click",addSnapshot);panel.querySelector("#ex-clear").addEventListener("click",clear);
