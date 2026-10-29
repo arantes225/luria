@@ -7,6 +7,7 @@ const { JSDOM } = require("jsdom");
 const root = path.resolve(__dirname, "..");
 const script = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-interpreter.js"), "utf8");
 const extraScript = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-extra-catalog.js"), "utf8");
+const detailsScript = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-details.js"), "utf8");
 
 function openTool() {
   const dom = new JSDOM('<!doctype html><html><body data-page="trabalho_exames"><div id="exam-tool"></div></body></html>', {
@@ -14,6 +15,7 @@ function openTool() {
     runScripts: "outside-only"
   });
   dom.window.eval(extraScript);
+  dom.window.eval(detailsScript);
   dom.window.eval(script);
   return dom;
 }
@@ -60,9 +62,10 @@ test("Both clinical pages use same versioned assets and suppress duplicate top t
   for (const dir of ["exames", "laboratorio"]) {
     const html = fs.readFileSync(path.join(root, "trabalho", dir, "index.html"), "utf8");
     assert.match(html, /data-ui-heading="provided"/);
-    assert.match(html, /trabalho-exames-interpreter\.css\?v=20261029-cards/);
+    assert.match(html, /trabalho-exames-interpreter\.css\?v=20261029-audit1/);
     assert.match(html, /trabalho-exames-extra-catalog\.js\?v=20261029-extras/);
-    assert.match(html, /trabalho-exames-interpreter\.js\?v=20261029-extras/);
+    assert.match(html, /trabalho-exames-details\.js\?v=20261029-audit1/);
+    assert.match(html, /trabalho-exames-interpreter\.js\?v=20261029-audit1/);
   }
 });
 
@@ -154,4 +157,39 @@ test("Newly added groups are filterable and remain alphabetical", () => {
   assert.deepEqual(names,[...names].sort(new Intl.Collator("pt-BR",{sensitivity:"base",numeric:true}).compare));
   assert.ok(names.includes("Cloreto no suor"));
   dom.window.close();
+});
+
+test("All 423 cards provide complete clinical education without invented new numeric ranges", () => {
+  const dom=openTool(), d=dom.window.document, metadata=dom.window.LURIA_EXAM_DETAILS;
+  const all=[...dom.window.LURIA_EXAM_CATALOG,...dom.window.LURIA_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
+  assert.equal(Object.keys(metadata).length,423);
+  assert.equal(d.querySelectorAll(".ex-test.ex-card .ex-test-details").length,423);
+  assert.ok(all.every(t=>metadata[t.id]&&["purpose","sample","interpretation","caution","sourceLabel","sourceUrl","referencePolicy","unitPolicy"].every(k=>typeof metadata[t.id][k]==="string"&&metadata[t.id][k].trim().length>5)));
+  assert.ok(all.every(t=>t.kind!=="numeric"||(t.unit!=="Conforme laudo"&&t.unit.trim().length>0)));
+  assert.ok(all.filter(t=>t.group>=21).every(t=>t.min==null&&t.max==null));
+  const hem=d.querySelector('[data-row="g1t1"] .ex-test-details');
+  assert.match(hem.textContent,/OMS|hemoglobina/i);
+  const href=hem.querySelector("a").getAttribute("href");
+  assert.match(href,/^https:\/\//);
+  dom.window.close();
+});
+test("Cultures, titers and specialized reports accept textual results without false normal flags", () => {
+  const dom=openTool(),d=dom.window.document;
+  d.querySelector("#ex-patient-toggle").click();
+  const ids=["g14t14","g17t11","g16t1","g18t5","g21t1"];
+  for (const id of ids) {
+    const el=d.querySelector('[data-id="'+id+'"][data-field="value"]');
+    assert.ok(el,id);
+    if(id==="g21t1"){assert.equal(el.tagName,"SELECT");el.value="AB+";}
+    else {assert.equal(el.tagName,"INPUT");assert.equal(el.getAttribute("inputmode"),"text");el.value="Laudo sob avaliação";}
+    el.dispatchEvent(new dom.window.Event("change",{bubbles:true}));
+    assert.equal(d.querySelector('[data-row="'+id+'"] [data-status]').textContent,"Registrado");
+  }
+  assert.equal(d.querySelectorAll(".ex-test.ex-card .ex-test-details").length,423);
+  dom.window.close();
+});
+test("Clinical summaries do not hardcode drug administration for isolated critical values",()=>{
+  assert.doesNotMatch(script,/ECG imediato \+ Gluconato de Cálcio/);
+  assert.doesNotMatch(script,/iniciar Cefepima ou Piperacilina-Tazobactam na 1ª hora/);
+  assert.doesNotMatch(script,/indicação de drenagem torácica!/);
 });
