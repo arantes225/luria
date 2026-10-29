@@ -1,4 +1,4 @@
-/* LURIA · mapa profissional v3: cenários contextualizados e trilha adaptativa.
+/* LURIA · orientação para residências médicas: cenários e trilha adaptativa.
    Instrumento editorial exploratório, não avaliação psicológica validada. */
 (function (root, factory) {
   "use strict";
@@ -68,7 +68,7 @@
       [["Paciente recuperou independência após reabilitação.","function,followup,people"],["Pacientes com doenças crônicas alcançaram bom controle.","clinical,followup,people"],["Um serviço reduziu complicações com melhor processo.","systems,team,prevention"],["Um procedimento foi realizado com segurança e bom resultado.","hands,surgery,precision"]]],
     ["c15","Populações","Em que cenário você gostaria de adquirir experiência continuada?","Não é uma escolha definitiva de população: serve para aprofundar.",
       [["Cuidado neonatal, infantil e de adolescentes.","kids,people,highstakes","Pediatria"],["Saúde sexual, reprodutiva e assistência obstétrica.","women,people,clinical","Ginecologia e Obstetrícia"],["Adultos com múltiplas doenças complexas.","clinical,complex,diagnosis","Clínica Médica"],["Pacientes com sofrimento emocional persistente.","mental,followup,people","Psiquiatria"]]],
-    ["c16","Limites","Qual compromisso difícil parece mais aceitável para sua carreira?","Considere um sacrifício recorrente, não um caso excepcional.",
+    ["c16","Limites","Qual compromisso difícil você aceitaria ao escolher uma residência médica?","Considere um sacrifício recorrente, não um caso excepcional.",
       [["Muita escuta e documentação antes de perceber resultados.","people,followup,mental"],["Pressão temporal e decisões potencialmente irreversíveis.","acute,highstakes,team"],["Repetir treinamento técnico até atingir grande precisão.","hands,precision,surgery"],["Longos períodos interpretando dados com poucos encontros presenciais.","visual,technology,diagnosis"]]]
   ];
   const DEEP_ROWS = [
@@ -130,7 +130,7 @@
       [["Atenção primária, prevenção e comunidade.","community,clinical,prevention"],["Ambulatório de doenças complexas.","complex,diagnosis,followup"],["Serviço de reabilitação com equipe multidisciplinar.","function,team,people"],["Centro de exames com tecnologia especializada.","technology,visual,precision"]]]
   ];
   const END_ROWS = [
-    ["e01","Prioridades","Na carreira, o que você não gostaria de perder?","Escolha o elemento mais indispensável, mesmo que outros também importem.",
+    ["e01","Prioridades","Ao escolher sua residência, o que você não gostaria de perder?","Escolha o elemento mais indispensável, mesmo que outros também importem.",
       [["Vínculo e continuidade com pacientes.","people,followup,clinical"],["Autonomia técnica para intervir.","hands,precision,surgery"],["Questões clínicas difíceis para resolver.","diagnosis,complex,research"],["Atuação rápida quando alguém piora.","acute,team,highstakes"]]],
     ["e02","Limite pessoal","Se tivesse que reduzir uma parte da sua semana, qual reduziria primeiro?","Essa pergunta investiga incômodos, não competência.",
       [["Procedimentos técnicos longos.","clinical,people,followup"],["Consultas com muitos retornos.","hands,technology,precision"],["Plantões com urgências frequentes.","predictable,diagnosis,visual"],["Exames e laudos repetitivos.","people,clinical,function"]]],
@@ -139,7 +139,7 @@
   ];
   const mk = (r) => ({
     id:r[0], group:r[1], text:r[2], context:r[3],
-    options:r[4].map((v,i)=>({ id:i, label:v[0], tags:v[1].split(","), targets:v[2] ? v[2].split(";") : [] }))
+    options:r[4].map((v,i)=>({ id:i, label:v[0], tags:v[1].split(","), targets:v[2] ? v[2].split(";").filter(name => catalogue.residencies.some(s => s.name === name)) : [] }))
   });
   const core = CORE_ROWS.map(mk);
   const deep = DEEP_ROWS.map(mk);
@@ -248,14 +248,11 @@
         .map(o=>({id,section:o.question.group,choice:o.label,question:o.question.text,
           relevance:o.tags.filter(t=>s.tags.includes(t)).length+(o.targets.includes(s.name)?3:0)})))
         .sort((a,b)=>b.relevance-a.relevance).slice(0,3);
-      const subareas=catalogue.areas.filter(a=>a.parents.includes(s.name))
-        .map(a=>({...a,affinity:a.tags.reduce((v,t)=>v+(scores[t]||0),0)/a.tags.length}))
-        .sort((a,b)=>b.affinity-a.affinity||a.name.localeCompare(b.name,"pt-BR")).slice(0,3);
-      return {...s,strengths,frictions,evidence,areas:subareas};
+      return {...s,strengths,frictions,evidence};
     });
     const firstGap=top.length>1 ? top[0].affinity-top[1].affinity:0;
     return {top,scores,ordered:positive,frictions:caution,responded,inexperienced,skipped,
-      close:firstGap<.095,version:"2026-10-28-v3",total,
+      close:firstGap<.095,version:"2026-10-29-residencias-v4",total,
       certainty:skipped>=7||inexperienced>=total*.55?"exploratorio":"orientativo",
       adaptations:sequence.slice(core.length,core.length+DEEP_COUNT)};
   }

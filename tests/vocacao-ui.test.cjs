@@ -37,6 +37,9 @@ test("avaliação profunda: 29 respostas, segunda preferência e relatório espe
   }
   assert.equal($("voc-results").hidden,false);
   assert.equal(window.document.querySelectorAll(".voc-match").length,3);
+  assert.match($("voc-results").textContent,/Até três residências médicas/);
+  assert.match($("voc-results").textContent,/Ingresso na residência/);
+  assert.doesNotMatch($("voc-results").textContent,/Possíveis áreas de atuação/);
   for(const phrase of ["Seu jeito de raciocinar","Sua relação com procedimentos","Pontos de atenção","Como diferenciar","respondeu","hipótese"]) {
     if(phrase==="respondeu")continue;
     assert.ok($("voc-results").textContent.includes(phrase),phrase);
@@ -63,12 +66,19 @@ test("retomar sessão e refazer com escolhas limpas",()=>{
   assert.equal(newRun.$("voc-next").disabled,false);
   newRun.dom.window.close();
 });
-test("catálogo completo pesquisável sem criar recomendações extras",()=>{
+test("catálogo pesquisável apresenta apenas residências convencionais",()=>{
   const {dom,window,$}=start();
   $("voc-search").dispatchEvent(new window.Event("input",{bubbles:true}));
-  assert.equal(window.document.querySelectorAll(".voc-catalog-item").length,119);
-  $("voc-search").value="cardiointensivismo";
+  assert.equal(window.document.querySelectorAll(".voc-catalog-item").length,46);
+  $("voc-search").value="cardiologia";
   $("voc-search").dispatchEvent(new window.Event("input",{bubbles:true}));
   assert.equal(window.document.querySelectorAll(".voc-catalog-item").length,1);
+  assert.match(window.document.querySelector(".voc-catalog-item").textContent,/Residência médica/);
+  $("voc-search").value="homeopatia";
+  $("voc-search").dispatchEvent(new window.Event("input",{bubbles:true}));
+  assert.equal(window.document.querySelectorAll(".voc-catalog-item").length,0);
+  $("voc-search").value="medicina legal";
+  $("voc-search").dispatchEvent(new window.Event("input",{bubbles:true}));
+  assert.equal(window.document.querySelectorAll(".voc-catalog-item").length,0);
   dom.window.close();
 });

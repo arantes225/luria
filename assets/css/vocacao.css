@@ -719,3 +719,6 @@ body[data-page="vocacao"] .voc-evidence strong {
     flex-direction: column;
   }
 }
+
+/* Catálogo v4: apenas residências, sem seletor de áreas de atuação. */
+body[data-page="vocacao"] .voc-catalogue-filters { grid-template-columns: minmax(0, 1fr); }

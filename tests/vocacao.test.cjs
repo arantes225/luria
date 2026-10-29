@@ -11,14 +11,27 @@ function simulate(selector) {
   for(const id of sequence) if(!answers[id])answers[id]=answer(selector(engine.questionIndex.get(id)));
   return {answers,sequence,report:engine.calculate(answers,sequence)};
 }
-test("catálogo brasileiro preserva 55 especialidades e 64 áreas",()=>{
-  assert.equal(data.specialties.length,55);
-  assert.equal(data.areas.length,64);
-  assert.equal(data.specialties.filter(s=>s.prerequisite==="Acesso direto").length,31);
-  assert.ok(data.areas.some(a=>a.name==="Cardiointensivismo"));
-  assert.ok(data.areas.some(a=>a.name==="Medicina Marítima e Hiperbárica"));
-  assert.equal(new Set(data.specialties.map(s=>s.id)).size,55);
-  assert.equal(new Set(data.areas.map(s=>s.id)).size,64);
+test("curadoria inclui apenas residências convencionais de acesso direto e com pré-requisito",()=>{
+  assert.equal(data.residencies.length,46);
+  assert.strictEqual(data.specialties,data.residencies);
+  assert.equal(data.areas.length,0);
+  assert.ok(data.residencies.every(s=>s.type==="residency"&&["Acesso direto","Com pré-requisito"].includes(s.entry)));
+  assert.equal(new Set(data.residencies.map(s=>s.id)).size,data.residencies.length);
+  for(const name of ["Clínica Médica","Cirurgia Geral","Pediatria","Ginecologia e Obstetrícia",
+    "Otorrinolaringologia","Psiquiatria","Cardiologia","Endocrinologia e Metabologia",
+    "Oftalmologia","Medicina do Trabalho","Cirurgia Plástica","Cirurgia Vascular",
+    "Cirurgia Cardiovascular","Urologia","Coloproctologia","Oncologia Clínica",
+    "Hematologia e Hemoterapia","Nefrologia","Pneumologia","Reumatologia","Geriatria"]){
+      assert.ok(data.residencies.some(s=>s.name===name),"residência ausente: "+name);
+  }
+  for(const name of ["Homeopatia","Medicina Legal e Perícia Médica","Acupuntura",
+    "Medicina do Tráfego","Endoscopia","Medicina Esportiva","Medicina Preventiva e Social",
+    "Nutrologia","Angiologia","Cardiointensivismo","Hemodinâmica e Cardiologia Intervencionista"]){
+      assert.ok(!data.residencies.some(s=>s.name===name),"não recomendar: "+name);
+  }
+  assert.equal(data.residencies.find(s=>s.name==="Pediatria").entry,"Acesso direto");
+  assert.equal(data.residencies.find(s=>s.name==="Cardiologia").entry,"Com pré-requisito");
+  assert.equal(data.residencies.find(s=>s.name==="Cirurgia Plástica").prerequisite,"Cirurgia Geral");
 });
 test("perguntas de três etapas não repetem nomes nem alternativas",()=>{
   assert.equal(engine.core.length,16);
@@ -69,9 +82,9 @@ test("três hipóteses no máximo sem percentuais de sucesso inventados",()=>{
     assert.equal(report.top.length,3);
     assert.equal(new Set(report.top.map(x=>x.name)).size,3);
     for(const specialty of report.top){
-      assert.equal(specialty.type,"specialty");
+      assert.equal(specialty.type,"residency");
       assert.ok(specialty.evidence.length<=3);
-      assert.ok(specialty.areas.every(a=>a.type==="area"&&a.parents.includes(specialty.name)));
+      assert.equal(Object.hasOwn(specialty,"areas"),false,"áreas não devem aparecer no relatório");
     }
     for(const score of Object.values(report.scores)){
       assert.ok(Number.isFinite(score));
