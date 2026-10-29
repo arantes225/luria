@@ -38,6 +38,8 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Check JavaScript syntax
         run: node scripts/check-syntax.cjs
+      - name: Test Gestor de Plantões calendar, payments and tax estimates
+        run: node --test tests/shift-manager-v2.test.cjs
       - name: Verify project Pages routes and asset paths
         run: node --test tests/pages-base-links.test.cjs
       - name: Guard public-site artifact against internal files
