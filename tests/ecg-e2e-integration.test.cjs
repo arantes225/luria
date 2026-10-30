@@ -383,6 +383,25 @@ test("Regressão: pontilhado fino da grade não reduz a escala de milímetro", (
     "60 px por quadrado grande equivale a aproximadamente 12 px/mm");
 });
 
+test("grade rosa com margens e múltiplos períodos conserva o espaçamento fundamental", () => {
+  const { context } = createE2eEnvironment();
+  const width = 965, height = 657;
+  const data = new Uint8ClampedArray(width * height * 4).fill(255);
+  for (let y = 27; y < 627; y++) for (let x = 50; x < 905; x++) {
+    if ((x - 50) % 19 < 2 || (y - 27) % 20 < 2) {
+      const i = (y * width + x) * 4;
+      data[i] = 228; data[i + 1] = 155; data[i + 2] = 178;
+    }
+  }
+  const image = {width, height, data};
+  const cal = context.LuriaEcgCvEngine.detectECGGridAndCalibration(image);
+  assert.equal(cal.gridDetected, true);
+  assert.ok(cal.pixelsPerMmX > 3.4 && cal.pixelsPerMmX < 4.3, JSON.stringify(cal));
+  assert.ok(cal.pixelsPerMmY > 3.4 && cal.pixelsPerMmY < 4.3, JSON.stringify(cal));
+  const extraction = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData(image);
+  assert.equal(extraction.isValid, false, "grade vazia continua sem ser um ECG");
+});
+
 test("E2E Cenário 8: Sinal com 2,5 segundos não deve ser multiplicado por continuidade para encurtar tempo", () => {
   const { context } = createE2eEnvironment();
   const w = 375, h = 180;

@@ -70,6 +70,7 @@
       bgLuminanceRows[y] = countBright > 0 ? (sumBright / countBright) : 235;
     }
 
+    let coloredGridPixelCount = 0;
     // 2. Separar tinta escura acromática da grade colorida (vermelha/rosa/laranja/verde) e do fundo
     for (let y = 0; y < height; y++) {
       for (let x = 0; x < width; x++) {
@@ -82,7 +83,9 @@
 
         // Penalizar cor saturada (grade vermelha/rosa tem R >> G, B)
         const chromaSpread = Math.max(Math.abs(r - g), Math.abs(r - b), Math.abs(g - b));
-        const isColoredGrid = (r - b > 38) || (chromaSpread > 55 && luma > 95);
+        const isColoredGrid = (r - b > 38) || (chromaSpread > 55 && luma > 95) ||
+          (r - g > 18 && r - b > 8 && r > g * 1.10 && luma > 95);
+        if (isColoredGrid) coloredGridPixelCount++;
 
         // Faded thermal printouts and monochrome scans often have traces well
         // above luma 165. Contrast to the local paper is more reliable than a
@@ -115,7 +118,7 @@
     }
     const rawInkDensity = inkPixelCount / Math.max(1, width * height);
     let denseInkFloor = 0;
-    if (rawInkDensity > 0.08 && inkPixelCount > 0) {
+    if (rawInkDensity > 0.08 && inkPixelCount > 0 && coloredGridPixelCount < width * height * 0.015) {
       const target = inkPixelCount * 0.88;
       let cumulative = 0;
       for (let bin = 0; bin < strengthHistogram.length; bin++) {
