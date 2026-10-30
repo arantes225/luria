@@ -452,6 +452,106 @@
     if (extra[id]) extra[id].allowZero = true;
   }
 
+
+  // Lote 6: ferramentas com unidades explícitas. Não substituir julgamento médico.
+  add("Endócrino","GMI","Indicador de Gerenciamento da Glicose (GMI)","Estimativa por média da monitorização contínua","gmi",
+    [num("mean","Glicose média obtida por CGM","mg/dL"),num("days","Duração dos dados de CGM","dias")],
+    "GMI (%) = 3,31 + 0,02392 × glicose média (mg/dL).",
+    v=>{need(+v.mean>=40&&+v.mean<=500&&+v.days>=10,"GMI exige glicose média de CGM e pelo menos 10 dias de dados.");return[3.31+0.02392*+v.mean,"%"];},
+    "Bergenstal RM et al. Diabetes Care 2018;41:2275–2280, PMID 30224348; SBD Diretriz 2026 (CGM).",
+    (n,u,v)=>"Estimativa por CGM; NÃO é a HbA1c laboratorial. Preferir 14 dias ou mais e ≥70% de dados válidos. Dados informados: "+v.days+" dia(s).");
+
+  add("Endócrino","CV-CGM","Coeficiente de variação da glicose","Variabilidade do sensor de glicose","glucosecv",
+    [num("mean","Glicose média do CGM","mg/dL"),num("sd","Desvio padrão das leituras","mg/dL")],
+    "CV (%) = 100 × desvio padrão / glicose média.",
+    v=>{need(+v.mean>0&&+v.sd>=0,"Média e desvio padrão inválidos.");return[100*+v.sd/+v.mean,"%"];},
+    "SBD Diretriz 2026; International Consensus on Time in Range, Diabetes Care 2019, PMC6973648.",
+    n=>"Métrica de variabilidade do CGM. Alvo usual de CV ≤36% para muitos adultos; interpretar adequação dos dados e hipoglicemia.");
+
+  add("Endócrino","TIR","Tempo no alvo da glicose (TIR)","Percentual de tempo de CGM na faixa definida","glucosetir",
+    [num("target","Tempo efetivo de CGM na faixa-alvo","minutos"),num("observed","Tempo total efetivamente registrado pelo CGM","minutos")],
+    "TIR (%) = 100 × minutos de CGM na faixa / minutos totais de CGM válidos.",
+    v=>{need(+v.target>=0&&+v.observed>0&&+v.target<=+v.observed,"Tempo na faixa não pode exceder tempo registrado.");return[100*+v.target/+v.observed,"%"];},
+    "SBD Diretriz 2026, monitorização de glicose intersticial; Diabetes Care 2026, Glycemic Goals.",
+    ()=>"Usar a faixa individualizada (habitualmente 70–180 mg/dL para muitos adultos). Esta ferramenta não lê dados do sensor nem valida intervalos de tempo; conferir cobertura.");
+
+  add("Epidemiologia","NNT","Número necessário para tratar (NNT)","Benefício absoluto comparando riscos binários","nnt",
+    [num("control","Risco do evento no grupo controle","%"),num("treated","Risco do evento no grupo tratado","%")],
+    "NNT = teto[1 / ((risco controle − risco tratado)/100)] para desfecho adverso e redução de risco positiva.",
+    v=>{need(+v.control>=0&&+v.control<=100&&+v.treated>=0&&+v.treated<=100&&+v.control>+v.treated,"NNT só se aplica aqui quando tratamento reduz o desfecho adverso.");return[Math.ceil(100/(+v.control-+v.treated)),"pacientes"];},
+    "NICE Glossary: number needed to treat; relação entre redução absoluta do risco e NNT.",
+    ()=>"A interpretação só é válida para o período de seguimento, população e evento especificados no estudo. Não comparar NNT de horizontes diferentes.");
+
+  add("Epidemiologia","Bayes","Probabilidade pós-teste","Estimativa bayesiana com razão de verossimilhança","posttestlr",
+    [num("pre","Probabilidade pré-teste","%"),num("lr","Razão de verossimilhança (LR+ ou LR−)","adimensional")],
+    "Odds pré = p/(1−p); odds pós = odds pré × LR; probabilidade pós = odds pós/(1 + odds pós).",
+    v=>{need(+v.pre>0&&+v.pre<100&&+v.lr>0,"Probabilidade deve estar entre 0 e 100% (exclusivo); LR deve ser >0.");const prior=+v.pre/(100-+v.pre),post=prior*+v.lr;return[100*post/(1+post),"%"];},
+    "Centre for Evidence-Based Medicine, likelihood ratios and post-test probability; relação de Bayes.",
+    ()=>"Usar razão de verossimilhança adequada ao teste, prevalência e população; não equivale a diagnóstico.");
+
+  add("Endócrino","FAI","Índice de Androgênios Livres (FAI)","Razão testosterona total/SHBG","freeandrogen",
+    [num("test","Testosterona total","nmol/L"),num("shbg","SHBG","nmol/L")],
+    "FAI = 100 × testosterona total (nmol/L)/SHBG (nmol/L).",
+    v=>{need(+v.test>=0&&+v.shbg>0,"Testosterona e SHBG inválidas.");return[100*+v.test/+v.shbg,""];},
+    "International Evidence-Based Guideline for PCOS 2023; índice de androgênios livres.",
+    ()=>"Não usar como diagnóstico isolado de hiperandrogenismo; precisão pode variar por sexo e concentração de SHBG.");
+
+  add("Hematologia","WBCc","Leucócitos corrigidos por eritroblastos","Corrige contagem leucocitária por nRBC/100 leucócitos","correctwbc",
+    [num("wbc","Leucócitos medidos","/µL"),num("nrbc","Eritroblastos observados por 100 leucócitos","nRBC/100 leucócitos")],
+    "Leucócitos corrigidos (/µL) = leucócitos medidos × 100 / (100 + nRBC/100 leucócitos).",
+    v=>{need(+v.wbc>=0&&+v.nrbc>=0,"Valores inválidos.");return[+v.wbc*100/(100+ +v.nrbc),"/µL"];},
+    "Regra hematológica clássica de correção de WBC quando o analisador inclui células nucleadas eritroides.",
+    ()=>"Somente se o método do hemograma requer essa correção. Equipamentos modernos podem fornecer WBC já corrigido.");
+
+  add("Terapia Intensiva","VIS","Vasoactive-Inotropic Score (VIS)","Intensidade numérica de suporte vasoativo em seis agentes","vis",
+    [num("dop","Dopamina","µg/kg/min"),num("dob","Dobutamina","µg/kg/min"),
+     num("epi","Adrenalina","µg/kg/min"),num("norepi","Noradrenalina","µg/kg/min"),
+     num("mil","Milrinona","µg/kg/min"),num("vaso","Vasopressina","unidades/kg/min")],
+    "VIS = dopamina + dobutamina + 100×adrenalina + 100×noradrenalina + 10×milrinona + 10000×vasopressina (U/kg/min).",
+    v=>{const a=['dop','dob','epi','norepi','mil','vaso'].map(k=>+v[k]);need(a.every(x=>x>=0&&Number.isFinite(x)),"Doses devem ser não negativas.");return[a[0]+a[1]+100*a[2]+100*a[3]+10*a[4]+10000*a[5],"pontos VIS"];},
+    "Gaies MG et al. Pediatr Crit Care Med 2010;11:234–238; estudo brasileiro Rev Assoc Med Bras 2023 VIS.",
+    ()=>"Vasopressina DEVE ser informada em U/kg/min, não mU/kg/min nem U/min. Não há corte prognóstico único entre populações.");
+
+  add("Cardiovascular","Qp/Qs","Relação Qp/Qs por Doppler","Fluxo pulmonar relativo ao fluxo sistêmico","qpqs",
+    [num("rvd","Diâmetro do RVOT","cm"),num("rvvti","VTI do RVOT","cm"),
+     num("lvd","Diâmetro do LVOT","cm"),num("lvvti","VTI do LVOT","cm")],
+    "Qp/Qs = [π(RVOT/2)²×VTI RVOT]/[π(LVOT/2)²×VTI LVOT].",
+    v=>{need(+v.rvd>0&&+v.rvvti>0&&+v.lvd>0&&+v.lvvti>0,"Medidas inválidas.");return[Math.pow(+v.rvd/+v.lvd,2)*(+v.rvvti/+v.lvvti),""];},
+    "ASE echocardiography shunt assessment; Doppler volumetric continuity.",
+    ()=>"Medição depende da geometria e localização de amostragem; regurgitações e alterações de fluxo podem invalidar inferência do shunt.");
+
+  add("Cardiovascular","RVSP","Pressão sistólica de VD estimada (RVSP)","Estimativa ecocardiográfica por jato de regurgitação tricúspide","rvsp",
+    [num("trv","Velocidade máxima da regurgitação tricúspide","m/s"),
+     num("rap","Pressão atrial direita estimada","mmHg")],
+    "RVSP (mmHg) ≈ 4×(velocidade TR)² + pressão atrial direita estimada.",
+    v=>{need(+v.trv>0&&+v.trv<8&&+v.rap>=0&&+v.rap<=30,"Velocidade/pressão atrial inválidas.");return[4*Math.pow(+v.trv,2)+ +v.rap,"mmHg"];},
+    "ASE Right Heart Guideline 2025, atualização disponível em asecho.org.",
+    ()=>"Não estimar na ausência de jato mensurável ou com obstrução da via de saída do VD; IT importante pode distorcer o resultado.");
+
+  add("Cardiovascular","AVA","Área valvar aórtica por continuidade","Área efetiva da válvula aórtica por VTI","avacontinuity",
+    [num("d","Diâmetro do LVOT","cm"),num("vl","VTI do LVOT","cm"),num("va","VTI do jato aórtico","cm")],
+    "AVA (cm²) = π×(LVOT/2)² × VTI LVOT / VTI aórtico.",
+    v=>{need(+v.d>0&&+v.d<5&&+v.vl>0&&+v.va>0,"Medidas inválidas.");return[Math.PI*Math.pow(+v.d/2,2)*+v.vl/+v.va,"cm²"];},
+    "EACVI/ASE Recommendations on Aortic Valve Stenosis, EHJ Cardiovasc Imaging 2017;18:254–275.",
+    ()=>"Depende de medidas técnicas adequadas, estado de fluxo e achados ecocardiográficos adicionais. Não diagnosticar estenose isoladamente.");
+
+  add("Terapia Intensiva","O2ER","Fração de extração de oxigênio","Diferença arterial-venosa de conteúdo de oxigênio","o2er",
+    [num("ca","Conteúdo arterial de oxigênio CaO₂","mL/dL"),num("cv","Conteúdo venoso misto de oxigênio CvO₂","mL/dL")],
+    "Extração de O₂ (%) = 100 × (CaO₂ − CvO₂) / CaO₂.",
+    v=>{need(+v.ca>0&&+v.cv>=0&&+v.cv<=+v.ca,"CaO₂ deve ser >0 e CvO₂ não pode excedê-lo nesse modelo.");return[100*(+v.ca-+v.cv)/+v.ca,"%"];},
+    "Fisiologia de Fick e conteúdo de oxigênio; relação de extração arterial-venosa.",
+    ()=>"O conteúdo venoso deve representar coleta venosa mista quando a interpretação exigir. Diferença não determina perfusão adequada sozinha.");
+
+  add("Terapia Intensiva","PCO2Δ","Gradiente venoarterial de PCO₂","Diferença entre PCO₂ venosa e arterial","pco2gap",
+    [num("pv","PCO₂ venosa","mmHg"),num("pa","PCO₂ arterial","mmHg")],
+    "Gradiente (mmHg) = PvCO₂ − PaCO₂.",
+    v=>{need(+v.pv>=0&&+v.pa>=0,"PCO₂ deve ser não negativa.");return[+v.pv-+v.pa,"mmHg"];},
+    "Fisiologia hemodinâmica de diferença venoarterial de CO₂.",
+    ()=>"Preferir amostras coletadas em intervalo próximo; PvCO₂ venosa central e venosa mista não são intercambiáveis.");
+
+  for (const id of ["glucosecv","glucosetir","nnt","freeandrogen","correctwbc","vis",
+                    "rvsp","o2er","pco2gap"]) if (extra[id]) extra[id].allowZero=true;
+
   for (const row of items) if (!C.some(x => x[4] === row[4])) C.push(row);
   for (const id of Object.keys(extra)) if (!defs[id]) defs[id] = extra[id];
   for (const id of Object.keys(msg)) if (!calcInterp[id]) calcInterp[id] = msg[id];
