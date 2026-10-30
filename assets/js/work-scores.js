@@ -1532,6 +1532,75 @@
     scores[idx]=item;
   }
 
+
+  // Lote 10 — tabelas explicitamente versionadas; substitui placeholders existentes.
+  const batch10Scores=[
+    {id:"apache2",name:"APACHE II — primeiras 24 horas na UTI",category:"Emergência",
+      aliases:"acute physiology chronic health apache 2 gravidade uti",
+      desc:"Índice de gravidade APACHE II: 12 variáveis fisiológicas, idade e doença crônica anterior à admissão, 0–71.",
+      tags:["UTI","Prognóstico"],custom:"apache2",auditDate:"2026-10-30",
+      reference:"Knaus WA et al. Crit Care Med. 1985;13:818–829. MSD Manual Professional, APACHE II Scoring System (tabela completa); OPAS APACHE II.",
+      safetyNote:"Utilizar o pior valor documentado de cada parâmetro nas primeiras 24 h após admissão à UTI, respeitando unidades e população. Pontos de creatinina dobram apenas em lesão renal aguda. Não converter o total isoladamente em chance de morte, nem limitar tratamento com ele."
+    },
+    {id:"possum",name:"POSSUM / P-POSSUM — cirurgia geral",category:"Cirurgia",
+      aliases:"prognóstico cirurgia operação mortalidade morbidade fisiológico Portsmouth",
+      desc:"Doze componentes fisiológicos e seis operatórios: escores POSSUM e estimativas logísticas de morbidade e mortalidade.",
+      tags:["Cirurgia","Risco operatório"],auditDate:"2026-10-30",
+      questions:[
+        q("Idade (anos)",[opt("Até 60",1),opt("61–70",2),opt("≥71",4)]),
+        q("Sinais cardíacos e radiografia de tórax",[opt("Sem insuficiência e radiografia normal",1),opt("Tratamento cardíaco/anti-hipertensivo, alterações leves",2),opt("Edema periférico, anticoagulação ou cardiomegalia discreta",4),opt("Turgência jugular importante ou cardiomegalia significativa",8)]),
+        q("Sintomas respiratórios e radiografia",[opt("Sem dispneia",1),opt("Dispneia aos esforços ou alteração pulmonar discreta",2),opt("Dispneia limitante ou alteração pulmonar moderada",4),opt("Dispneia em repouso, FR >30, fibrose ou consolidação",8)]),
+        q("Pressão sistólica (mmHg)",[opt("110–130",1),opt("100–109 ou 131–170",2),opt("90–99 ou ≥171",4),opt("≤89",8)]),
+        q("Pulso (bpm)",[opt("50–80",1),opt("40–49 ou 81–100",2),opt("101–120",4),opt("≤39 ou ≥121",8)]),
+        q("Glasgow",[opt("15",1),opt("12–14",2),opt("9–11",4),opt("3–8",8)]),
+        q("Hemoglobina (g/dL)",[opt("13–16",1),opt("11,5–12,9 ou 16,1–17",2),opt("10–11,4 ou 17,1–18",4),opt("<10 ou >18",8)]),
+        q("Leucócitos (×10³/µL)",[opt("4,0–10",1),opt("3,1–3,9 ou 10,1–20",2),opt("≤3,0 ou >20",4)]),
+        q("Ureia sérica (mmol/L; NÃO BUN)",[opt("≤7,5",1),opt(">7,5–10",2),opt(">10–15",4),opt(">15",8)]),
+        q("Sódio sérico (mmol/L)",[opt("≥136",1),opt("131–135",2),opt("126–130",4),opt("≤125",8)]),
+        q("Potássio sérico (mmol/L)",[opt("3,5–5,0",1),opt("3,2–3,4 ou 5,1–5,3",2),opt("2,9–3,1 ou 5,4–5,9",4),opt("≤2,8 ou ≥6,0",8)]),
+        q("Eletrocardiograma",[opt("Normal",1),opt("Fibrilação atrial com FC 60–90",4),opt("Qualquer outra anormalidade",8)]),
+        q("OPERAÇÃO: porte cirúrgico",[opt("Menor",1),opt("Intermediário",2),opt("Maior",4),opt("Maior + / muito grande",8)]),
+        q("OPERAÇÃO: número de procedimentos",[opt("Um",1),opt("Dois",4),opt("Três ou mais",8)]),
+        q("OPERAÇÃO: perda sanguínea estimada (mL)",[opt("≤100",1),opt("101–500",2),opt("501–999",4),opt("≥1000",8)]),
+        q("OPERAÇÃO: contaminação da cavidade peritoneal",[opt("Ausente",1),opt("Líquido seroso",2),opt("Pus localizado",4),opt("Conteúdo livre, sangue ou pus difuso",8)]),
+        q("OPERAÇÃO: malignidade",[opt("Ausente",1),opt("Tumor primário localizado",2),opt("Linfonodos comprometidos",4),opt("Metástases à distância",8)]),
+        q("OPERAÇÃO: urgência",[opt("Eletiva",1),opt("Urgência operada dentro de 24 h da admissão",4),opt("Emergência operada dentro de 2 h da admissão",8)])
+      ],
+      interpret:()=>"",
+      reference:"Copeland GP et al. Br J Surg. 1991;78:355–360; Prytherch DR et al. Br J Surg. 1998;85:1217–1220; J Clin Med. 2024;13:173 (tabelas); equações publicadas de POSSUM/P-POSSUM.",
+      safetyNote:"Dados completos de cirurgia efetivamente realizada e escala de gravidade operatória exigidos; não extrapolar diretamente entre especialidades. Probabilidades são médias populacionais históricas, NÃO predição determinística individual. Confirmar classificação clínica antes da escolha das faixas."
+    },
+    {id:"pews",name:"B-PEWS-Br — Brighton versão brasileira",category:"Pediatria",
+      aliases:"PEWS pediatrico alerta deterioração escore de Brighton",
+      desc:"PEWS adaptado ao contexto brasileiro: estado neurológico, sinais cardiovasculares e respiratórios e fator adicional.",
+      tags:["Pediatria","Enfermaria"],auditDate:"2026-10-30",
+      questions:[
+        q("Estado neurológico",[opt("Ativo e apropriado",0),opt("Sonolento ou hipoativo",1),opt("Irritado",2),opt("Letárgico, obnubilado ou resposta reduzida à dor",3)]),
+        q("Cardiovascular (considerar o PIOR achado; comparar FC com referência da idade)",[
+          opt("Corado/TEC 1–2 s, FC dentro da faixa",0),
+          opt("Pálido, TEC 3 s OU FC acima do limite superior",1),
+          opt("Moteado, TEC 4 s OU FC ≥20 acima do limite superior",2),
+          opt("Acinzentado/cianótico, TEC ≥5 s, FC ≥30 acima do limite ou bradicardia",3)
+        ]),
+        q("Respiratório (considerar o PIOR achado; usar referência etária)",[
+          opt("FR normal, sem esforço respiratório ou O₂",0),
+          opt("FR acima do normal, musculatura acessória, FiO₂ ≥30% OU O₂ ≥4 L/min",1),
+          opt("FR ≥20 acima do limite, retrações, FiO₂ ≥40% OU O₂ ≥6 L/min",2),
+          opt("FR ≤5 abaixo do limite inferior com retrações/gemência, FiO₂ ≥50% OU O₂ ≥8 L/min",3)
+        ]),
+        q("Adicional B-PEWS-Br: nebulização há até 15 minutos OU vômitos persistentes após cirurgia",[opt("Nenhum",0),opt("Um ou ambos os fatores",2)])
+      ],
+      interpret:n=>"B-PEWS-Br "+n+"/11: "+(n>=3?"pontuação de alerta para deterioração; comunicar equipe e seguir protocolo institucional.":"menor pontuação; continuar vigilância clínica seriada.") ,
+      reference:"Miranda JOF et al. Texto Contexto Enfermagem, 2019, 'Fatores associados à deterioração clínica...': Quadro 1 do BPEWS-Br; avaliação brasileira de 2025 em einstein.",
+      safetyNote:"Esta versão brasileira adiciona 2 pontos se pelo menos um fator extra está presente (total 0–11). Versões internacionais podem pontuar os dois fatores separadamente e chegar a 13. Não misturar versões; usar referência de FC/FR para a idade e resposta institucional."
+    }
+  ];
+  for (const item of batch10Scores){
+    const i=scores.findIndex(s=>s.id===item.id);
+    if(i<0||scores[i].custom!=="reference")throw Error("Lote 10: ID ausente ou já ativo: "+item.id);
+    scores[i]=item;
+  }
+
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
   const favKey = "luria:scores:favorites";
   const recentKey = "luria:scores:recent";
