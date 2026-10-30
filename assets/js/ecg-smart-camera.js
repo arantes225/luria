@@ -31,18 +31,10 @@
     if (!manualPaperSelection && (!sheet?.found || sheet.isCutOff || sheet.hasSeverePerspective)) return false;
     const n = Math.max(Number(detection.waveformCandidateCount || 0),
       Number(detection.detectedLayout?.validWaveformCells || 0));
-    const candidateCount = Object.keys(detection.candidateRegions || {}).length;
-    const grid = detection.calibration;
-    const hasPartialPhotoCandidate = photoPreviewOnly && n >= 1 && candidateCount >= 1 &&
-      (manualPaperSelection || grid?.gridDetected === true || Number(grid?.coloredGridRatio || 0) >= 0.012);
     // Preserve independent signal evidence when simple template OCR disagrees;
     // never regard the mismatch as verified lead identity.
-    // A user-selected photo with one or two real regions deserves an explicit
-    // preliminary review, not the misleading "no leads" result. This never
-    // applies to autonomous capture and remains quarantined from named data,
-    // clinical measurements and AI input until the missing regions are
-    // recaptured/confirmed.
-    if ((n < 3 || candidateCount < 3) && !hasPartialPhotoCandidate) return false;
+    if (n < 3 || Object.keys(detection.candidateRegions || {}).length < 3) return false;
+    const grid = detection.calibration;
     const labels = detection.recognizedLabels || {};
     const strongLabels = Object.values(labels).filter(x => x?.ocrRecognized && x?.hasValidTrace).length;
     return manualPaperSelection ||
@@ -51,8 +43,7 @@
       strongLabels >= 2 ||
       // On user-initiated photos, uncertain calibration must NOT prevent a
       // clearly marked, non-clinical waveform preview.
-      (photoPreviewOnly && n >= 3 && candidateCount >= 3 && sheet?.found === true) ||
-      (hasPartialPhotoCandidate && sheet?.found === true) ||
+      (photoPreviewOnly && n >= 3 && sheet?.found === true) ||
       // Live mode still needs stronger morphology if the grid is illegible.
       (n >= 6 && detection.detected === true && sheet?.found === true);
   }
@@ -74,8 +65,7 @@
   // exact matches to the expected label, with no sheet-level label ambiguity.
   function isSafeAutomaticLeadAssignment(lead, identity, box, anomalies = []) {
     const warnings = new Set(["duplicate_label", "label_conflict",
-      "ambiguous_swapped_leads_without_full_ocr", "non_standard_lead_arrangement",
-      "ocr_label_conflict_requires_review"]);
+      "ambiguous_swapped_leads_without_full_ocr", "non_standard_lead_arrangement"]);
     if (anomalies.some(a => warnings.has(a.code))) return false;
     if (!identity || !box || identity.status !== "ocr_confirmed") return false;
     if (identity.recognizedLead !== lead || identity.expectedLead !== lead ||
