@@ -2183,7 +2183,7 @@
     if (next === "alex") {
       loadAlexTokenSettings().catch(error => {
         console.error(error);
-        setAlexTokenStatus("Não foi possível carregar a configuração do Professor Alex.", "error");
+        setAlexTokenStatus("Não foi possível carregar a configuração do Leco.", "error");
       });
     }
 
@@ -5295,7 +5295,7 @@
     $("admin-load-alex-token-settings")?.addEventListener("click", () => {
       loadAlexTokenSettings().catch(error => {
         console.error(error);
-        setAlexTokenStatus("Não foi possível carregar a configuração do Professor Alex.", "error");
+        setAlexTokenStatus("Não foi possível carregar a configuração do Leco.", "error");
       });
     });
     $("admin-save-alex-token-settings")?.addEventListener("click", saveAlexTokenSettings);
