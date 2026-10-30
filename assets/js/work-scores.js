@@ -1287,6 +1287,19 @@
       reference:"Naranjo CA et al. Clin Pharmacol Ther 1981;30:239–245; NIH LiverTox NCBI Bookshelf NBK548069.",
       safetyNote:"Não realizar reexposição provocativa de rotina para pontuação. Método de apoio à farmacovigilância, não confirmação clínica definitiva."
     },
+
+    {id:"cam",name:"CAM — delirium (4 características)",category:"Geriatria",
+      aliases:"delirium confusão aguda avaliação cognitiva",desc:"Algoritmo estruturado CAM: características 1 e 2, além da 3 ou 4.",tags:["Geriatria","Enfermaria"],auditDate:"2026-10-30",
+      questions:[
+        q("1. Início agudo OU curso flutuante da alteração do estado mental",yesno()),
+        q("2. Desatenção",yesno()),
+        q("3. Pensamento desorganizado",yesno()),
+        q("4. Alteração do nível de consciência (não alerta)",yesno())
+      ],
+      interpret:n=>"CAM: quatro características. O resultado depende do padrão 1 + 2 + (3 ou 4), NÃO da soma.",
+      reference:"Inouye SK et al. Ann Intern Med 1990;113:941–948; Manual MSD para profissionais: método CAM.",
+      safetyNote:"Não usar soma aditiva. Requer observação estruturada e informações sobre mudança em relação ao basal. CAM não é CAM-ICU."
+    },
     {id:"isthdic",name:"ISTH DIC manifesta (2001)",category:"Hematologia",aliases:"CIVD coagulopatia fibrinogênio protrombina D-dímero",desc:"Escore ISTH 2001 para coagulação intravascular disseminada manifesta com doença predisponente.",tags:["Hematologia","UTI"],auditDate:"2026-10-30",
       questions:[
         q("Existe doença predisponente associada à CIVD?",[opt("Sim",0),opt("Não",-999)]),
@@ -1300,7 +1313,11 @@
       safetyNote:"Obrigatória doença predisponente; o sistema usa marcador de fibrina classificado pelo laboratório. Não diagnosticar CIVD sem contexto clínico e séries laboratoriais."
     }
   ];
-  for(const item of batch7Scores) if(!scores.some(s=>s.id===item.id))scores.push(item);
+  for(const item of batch7Scores){
+    const existingIndex=scores.findIndex(s=>s.id===item.id);
+    if(existingIndex<0)scores.push(item);
+    else if(scores[existingIndex].custom==="reference")scores[existingIndex]=item;
+  }
 
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
   const favKey = "luria:scores:favorites";
@@ -1455,6 +1472,13 @@
     if(s.id==="sic" && vals.length===3 && Number(vals[0])+Number(vals[1])<=2){
       const n=vals.reduce((a,v)=>a+Number(v),0);
       setResult(formatNum(n),"SIC não confirmado: além do total ≥4, plaquetas + INR devem somar mais que 2 pontos.","Conferir classificação de sepse e evolução clínica.");return;
+    }
+    if(s.id==="cam"){
+      const v=vals.map(Number);
+      const positive=v[0]===1&&v[1]===1&&(v[2]===1||v[3]===1);
+      setResult(positive?"CAM positivo":"CAM negativo",
+        positive?"Padrão CAM compatível com delirium, exigindo confirmação clínica, causas reversíveis e vigilância.":"Padrão CAM não preenchido; resultado negativo NÃO exclui delirium.",
+        "O algoritmo exige 1 + 2 + (3 ou 4), não a soma simples de características.");return;
     }
     if(s.id==="isthdic" && vals[0]==="-999"){
       setResult("Não aplicável","Escore ISTH de CIVD manifesta exige doença predisponente reconhecida.","Sem critério de elegibilidade, não somar os demais itens."); return;
