@@ -325,6 +325,133 @@
   dir("convkpa", "kPa", "Pressão (mmHg ↔ kPa)", "mmHg", "kPa", 0.13332, "mmHg", "kPa", S.conv);
   dir("convlb", "lb", "Peso (lb ↔ kg)", "lb", "kg", 0.45359, "lb", "kg", S.conv);
 
+
+  // Lote 5: fórmulas dimensionais com campos, unidades, referências e limites.
+  // Revisão clínica externa e teste E2E obrigatórios antes de exposição assistencial.
+  add("Metabólico","OSM-E","Osmolalidade efetiva / tonicidade","Contribuição osmoticamente efetiva de Na e glicose","tonicity",
+    [num("na","Sódio sérico","mEq/L"),num("glu","Glicose sérica","mg/dL")],
+    "Tonicidade calculada ≈ 2 × Na (mEq/L) + glicose (mg/dL) / 18.",
+    v=>{need(+v.na>=100&&+v.na<=190&&+v.glu>=0&&+v.glu<=2500,"Verifique Na e glicose.");return[2*+v.na+ +v.glu/18,"mOsm/L"];},
+    "ADA, Standards of Care in Diabetes: hyperglycemic crises; fórmula de tonicidade sérica.",
+    ()=> "Não equivale à osmolalidade total (que inclui ureia). Interpretar com exame clínico e osmolalidade medida.");
+
+  add("Renal","PROT24","Proteinúria em 24 horas","Excreção proteica diária a partir de concentração e volume","protein24h",
+    [num("prot","Proteína urinária","mg/dL"),num("vol","Volume urinário em 24 horas","mL")],
+    "mg/24h = proteína (mg/dL) × volume (mL) / 100.",
+    v=>{need(+v.prot>=0&&+v.vol>0&&+v.vol<=15000,"Concentração e volume inválidos.");return[+v.prot*+v.vol/100,"mg/24 h"];},
+    "KDIGO CKD Guideline 2024; conversão dimensional mg/dL × dL.",
+    ()=>"Interpretar com integridade da coleta e albuminúria; valor isolado não define doença renal.");
+
+  add("Renal","Na24","Sódio urinário em 24 horas","Quantidade diária excretada de sódio","na24h",
+    [num("na","Sódio urinário","mEq/L"),num("vol","Volume urinário em 24 horas","mL")],
+    "mEq/24h = Na urinário (mEq/L) × volume (mL) / 1000.",
+    v=>{need(+v.na>=0&&+v.vol>0&&+v.vol<=15000,"Concentração/volume inválidos.");return[+v.na*+v.vol/1000,"mEq/24 h"];},
+    "Conversão dimensional e avaliação de coleta urinária 24 h.",
+    ()=>"Coleta incompleta ou uso de diuréticos alteram a interpretação.");
+
+  add("Renal","Ca24","Cálcio urinário em 24 horas","Excreção diária de cálcio","ca24h",
+    [num("ca","Cálcio urinário","mg/dL"),num("vol","Volume urinário em 24 horas","mL")],
+    "mg/24h = cálcio urinário (mg/dL) × volume (mL) / 100.",
+    v=>{need(+v.ca>=0&&+v.vol>0&&+v.vol<=15000,"Concentração/volume inválidos.");return[+v.ca*+v.vol/100,"mg/24 h"];},
+    "AUA Medical Management of Kidney Stones, 2019; conversão dimensional.",
+    ()=>"Interpretar com ingestão de cálcio, sódio, função renal e qualidade da coleta.");
+
+  add("Renal","Ox24","Oxalato urinário em 24 horas","Excreção diária de oxalato","oxalate24h",
+    [num("ox","Oxalato urinário","mg/L"),num("vol","Volume urinário em 24 horas","mL")],
+    "mg/24h = oxalato (mg/L) × volume (mL) / 1000.",
+    v=>{need(+v.ox>=0&&+v.vol>0&&+v.vol<=15000,"Concentração/volume inválidos.");return[+v.ox*+v.vol/1000,"mg/24 h"];},
+    "AUA Medical Management of Kidney Stones, 2019; conversão dimensional.",
+    ()=>"Confirmar unidade do laboratório (mg/L vs mmol/L) e completude da coleta.");
+
+  add("Renal","FEUA","Fração de excreção de ácido úrico","Percentual de excreção renal de urato","feua",
+    [num("uu","Ácido úrico urinário","mg/dL"),num("pc","Creatinina plasmática","mg/dL"),num("pu","Ácido úrico plasmático","mg/dL"),num("uc","Creatinina urinária","mg/dL")],
+    "FEUA (%) = (urato urinário × creatinina plasmática)/(urato plasmático × creatinina urinária) × 100.",
+    v=>{need(+v.uu>=0&&+v.pc>0&&+v.pu>0&&+v.uc>0,"Valores inválidos/denominador zero.");return[(+v.uu*+v.pc)/(+v.pu*+v.uc)*100,"%"];},
+    "Equação padrão de excreção fracionária; correlacionar com função renal e estado volêmico.",
+    ()=>"Não usar FEUA isoladamente para confirmar SIADH ou outra causa de hiponatremia.");
+
+  add("Renal","FEPO4","Fração de excreção de fosfato","Avaliação da perda renal de fosfato","fepo4",
+    [num("uu","Fosfato urinário","mg/dL"),num("pc","Creatinina plasmática","mg/dL"),num("pu","Fosfato plasmático","mg/dL"),num("uc","Creatinina urinária","mg/dL")],
+    "FEPO₄ (%) = (fosfato urinário × creatinina plasmática)/(fosfato plasmático × creatinina urinária) × 100.",
+    v=>{need(+v.uu>=0&&+v.pc>0&&+v.pu>0&&+v.uc>0,"Valores inválidos/denominador zero.");return[(+v.uu*+v.pc)/(+v.pu*+v.uc)*100,"%"];},
+    "Equação padrão de excreção fracionária; interpretação de fosfatúria.",
+    ()=>"Interpretar com fosfatemia, PTH, FGF23 e função renal.");
+
+  add("Renal","FECa","Fração de excreção de cálcio","Excreção fracionária de cálcio","feca",
+    [num("uu","Cálcio urinário","mg/dL"),num("pc","Creatinina plasmática","mg/dL"),num("pu","Cálcio plasmático total","mg/dL"),num("uc","Creatinina urinária","mg/dL")],
+    "FECa (%) = (Ca urinário × Cr plasmática)/(Ca plasmático × Cr urinária) × 100.",
+    v=>{need(+v.uu>=0&&+v.pc>0&&+v.pu>0&&+v.uc>0,"Valores inválidos/denominador zero.");return[(+v.uu*+v.pc)/(+v.pu*+v.uc)*100,"%"];},
+    "Equação de clearance de cálcio/creatinina; revisar unidade e método de dosagem.",
+    ()=>"Não equivale ao CCCR sem ressalvas; interpretar cálcio sérico corrigido/ionizado e contexto.");
+
+  add("Renal","FEMg","Fração de excreção de magnésio","Avaliação de perdas renais de magnésio","femg",
+    [num("uu","Magnésio urinário","mg/dL"),num("pc","Creatinina plasmática","mg/dL"),num("pu","Magnésio plasmático total","mg/dL"),num("uc","Creatinina urinária","mg/dL")],
+    "FEMg (%) = (Mg urinário × Cr plasmática)/(0,7 × Mg plasmático × Cr urinária) × 100.",
+    v=>{need(+v.uu>=0&&+v.pc>0&&+v.pu>0&&+v.uc>0,"Valores inválidos/denominador zero.");return[(+v.uu*+v.pc)/(0.7*+v.pu*+v.uc)*100,"%"];},
+    "Equação convencional com fração plasmática filtrável de Mg estimada em 0,7.",
+    ()=>"A fração filtrável de 70% é aproximação, e a interpretação depende da função renal.");
+
+  add("Cardiovascular","PVR","Resistência vascular pulmonar","Cálculo hemodinâmico em unidades Wood","pvr",
+    [num("mpap","Pressão média da artéria pulmonar","mmHg"),num("pawp","Pressão de oclusão capilar pulmonar","mmHg"),num("co","Débito cardíaco","L/min")],
+    "PVR (Wood) = (mPAP − PAWP)/débito cardíaco.",
+    v=>{need(+v.mpap>=+v.pawp&&+v.pawp>=0&&+v.co>0,"Pressões/débito incompatíveis.");return[(+v.mpap-+v.pawp)/+v.co,"unidades Wood"];},
+    "ESC/ERS Pulmonary Hypertension Guidelines 2022, equação hemodinâmica.",
+    ()=>"Exige medidas hemodinâmicas adequadas; não diagnostica hipertensão pulmonar isoladamente.");
+
+  add("Cardiovascular","CPO","Cardiac Power Output","Potência cardíaca estimada","cpo",
+    [num("map","PAM","mmHg"),num("co","Débito cardíaco","L/min")],
+    "CPO (W) = PAM × débito cardíaco / 451.",
+    v=>{need(+v.map>0&&+v.co>0,"PAM/débito inválidos.");return[(+v.map*+v.co)/451,"W"];},
+    "Equação hemodinâmica clássica, conversão mmHg × L/min para watts.",
+    ()=>"Marcador hemodinâmico complementar; interpretar em conjunto com perfusão e medida do débito.");
+
+  add("Cardiovascular","LVOT","Débito cardíaco por LVOT/VTI","Débito ecocardiográfico a partir de volume sistólico","lvotco",
+    [num("d","Diâmetro de LVOT","cm"),num("vti","VTI de LVOT","cm"),num("hr","Frequência cardíaca","bpm")],
+    "Débito (L/min) = π × (diâmetro LVOT / 2)² × VTI × FC / 1000.",
+    v=>{need(+v.d>0&&+v.d<5&&+v.vti>0&&+v.hr>0,"Verifique diâmetro, VTI e FC.");return[Math.PI*Math.pow(+v.d/2,2)*+v.vti*+v.hr/1000,"L/min"];},
+    "ASE Echocardiography chamber quantification; equação de continuidade volumétrica.",
+    ()=>"Medida de LVOT deve ser tecnicamente adequada; erro de diâmetro é amplificado ao quadrado.");
+
+  add("Cardiovascular","BER","Gradiente Doppler (Bernoulli)","Estimativa de gradiente transvalvar","bernoulli",
+    [num("v","Velocidade máxima Doppler","m/s")],
+    "ΔP (mmHg) ≈ 4 × v².",
+    v=>{need(+v.v>=0&&+v.v<=12,"Velocidade fora de faixa plausível.");return[4*Math.pow(+v.v,2),"mmHg"];},
+    "Equação simplificada de Bernoulli para Doppler cardíaco.",
+    ()=>"O modelo simplificado pode ser inadequado quando a velocidade proximal é importante.");
+
+  add("Cardiovascular","JTc","Intervalo JT corrigido","Avaliação complementar da repolarização com QRS alargado","jtc",
+    [num("qtc","QTc medido ou calculado","ms"),num("qrs","Duração do QRS","ms")],
+    "JTc (ms) = QTc − QRS.",
+    v=>{need(+v.qtc>+v.qrs&&+v.qrs>0,"QTc deve exceder QRS.");return[+v.qtc-+v.qrs,"ms"];},
+    "Conceito de intervalo JT, AHA/ACCF/HRS ECG Standardization, Circulation 2009.",
+    ()=>"O JTc não tem ponto de corte universal; confirmar fórmula de correção e contexto clínico.");
+
+  add("Cardiovascular","FS","Fração de encurtamento ventricular","Fração de encurtamento linear sistólico","fracshort",
+    [num("dd","Diâmetro diastólico final do VE","mm"),num("ds","Diâmetro sistólico final do VE","mm")],
+    "FE (%) = (LVIDd − LVIDs)/LVIDd × 100.",
+    v=>{need(+v.dd>+v.ds&&+v.ds>0,"Diâmetros inválidos.");return[(+v.dd-+v.ds)/+v.dd*100,"%"];},
+    "ASE, ecocardiografia M-mode, fração de encurtamento.",
+    ()=>"Não substituir fração de ejeção; interpretação limitada em alteração segmentar de contratilidade.");
+
+  add("Infusão","DD-Age","D-dímero ajustado por idade","Limiar apenas para investigação em algoritmo apropriado de TEP","ddimerage",
+    [num("age","Idade","anos")],
+    "Limite de D-dímero (ng/mL FEU) = 500 até 50 anos; acima de 50, idade × 10.",
+    v=>{need(Number.isInteger(+v.age)&&+v.age>=18&&+v.age<=120,"Idade adulta inválida.");return[+v.age>50?+v.age*10:500,"ng/mL FEU"];},
+    "ADJUST-PE, JAMA 2014; AHA/ACC Acute PE Guideline 2026.",
+    ()=>"Apenas em algoritmo diagnóstico apropriado, com probabilidade pré-teste não alta e ensaio FEU. NÃO usar limiar FEU em resultado DDU.");
+
+  add("Antropometria","WHtR","Relação cintura/altura","Marcador antropométrico complementar","waistheight",
+    [num("waist","Circunferência da cintura","cm"),num("height","Estatura","cm")],
+    "Relação cintura/altura = cintura (cm) / altura (cm).",
+    v=>{need(+v.waist>0&&+v.height>0,"Medidas inválidas.");return[+v.waist/+v.height,""];},
+    "WHO waist and waist-hip ratio report, 2008; razão cintura/altura.",
+    ()=>"Interpretar conforme idade, população e contexto; não substitui avaliação do risco cardiometabólico.");
+
+  // Os instrumentos que admitem analito zero têm guarda explícita de denominador.
+  for (const id of ["tonicity","protein24h","na24h","ca24h","oxalate24h","feua","fepo4","feca","femg","bernoulli"]) {
+    if (extra[id]) extra[id].allowZero = true;
+  }
+
   for (const row of items) if (!C.some(x => x[4] === row[4])) C.push(row);
   for (const id of Object.keys(extra)) if (!defs[id]) defs[id] = extra[id];
   for (const id of Object.keys(msg)) if (!calcInterp[id]) calcInterp[id] = msg[id];
