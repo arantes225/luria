@@ -6,7 +6,7 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Professor Alex · LURIA</title>
+  <title>Leco · LURIA</title>
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
   <meta name="theme-color" content="#0A2342">
@@ -94,9 +94,9 @@
 
         <section class="alex-page" aria-labelledby="alex-title">
 
-          <section class="luria-page-spotlight" aria-label="Professor Alex">
+          <section class="luria-page-spotlight" aria-label="Leco">
             <div class="luria-page-spotlight-copy">
-              <strong>Professor Alex</strong>
+              <strong>Leco</strong>
               <small class="luria-page-spotlight-helper">Seu mentor inteligente para dúvidas, aulas do zero e análise de material clínico.</small>
             </div>
           </section>
@@ -114,11 +114,11 @@
                   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
                   <span id="alex-live-call-text">Conversar ao Vivo por Voz</span>
                 </button>
-                <button type="button" id="alex-stop-response" aria-label="Interromper Professor Alex" title="Interromper resposta" hidden style="display:none">■ Parar Alex</button>
+                <button type="button" id="alex-stop-response" aria-label="Interromper Leco" title="Interromper resposta" hidden style="display:none">■ Parar Leco</button>
               </div>
               <div class="alex-status-pill" id="alex-status-pill">
                 <span class="status-dot"></span>
-                <span id="alex-status-text">Professor Alex online e pronto para ensinar</span>
+                <span id="alex-status-text">Leco online e pronto para ensinar</span>
               </div>
               <div class="alex-mascot-stage-wrap">
                 <professor-alex-mascot id="alex-mascot" size="180" theme="auto" expression="happy" interactive="true"></professor-alex-mascot>
@@ -128,7 +128,7 @@
               </div>
             </div>
 
-            <!-- Controles compactos de resposta, acima do card do Alex. -->
+            <!-- Controles compactos de resposta, acima do card do Leco. -->
             <div class="alex-mode-card" id="alex-mode-card">
               <div class="alex-mode-info">
                 <div class="alex-mode-title-row">
@@ -152,15 +152,15 @@
 
             <!-- Chat Conversacional Unificado (Sem matérias nem selects rígidos) -->
             <div class="alex-chat-container">
-              <!-- Feed de Conversa / Chat com o Professor Alex -->
+              <!-- Feed de Conversa / Chat com o Leco -->
               <div class="alex-chat-feed" id="alex-chat-feed" aria-live="polite">
                 <div class="alex-msg alex-msg-alex">
                   <div class="alex-msg-header">
                     <span class="response-icon">🎓</span>
-                    <span>Professor Alex</span>
+                    <span>Leco</span>
                   </div>
                   <div class="alex-msg-bubble">
-                    Olá! Eu sou o Professor Alex, seu tutor médico na LURIA. Digite qualquer tema, dúvida clínica ou anexe um material de estudo abaixo para conversarmos!
+                    Olá! Eu sou o Leco, seu tutor médico na LURIA. Digite qualquer tema, dúvida clínica ou anexe um material de estudo abaixo para conversarmos!
                   </div>
                 </div>
               </div>
@@ -175,7 +175,7 @@
                     </svg>
                   </button>
 
-                  <textarea id="alex-prompt" class="alex-chat-input" rows="1" placeholder="Digite aqui" aria-label="Pergunta para o Professor Alex"></textarea>
+                  <textarea id="alex-prompt" class="alex-chat-input" rows="1" placeholder="Digite aqui" aria-label="Pergunta para o Leco"></textarea>
 
                   <button class="alex-voice-button" type="button" id="alex-voice-button" title="Ditado por voz" aria-label="Falar por voz">
                     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -198,7 +198,7 @@
                   <button type="button" id="alex-file-remove" aria-label="Remover anexo">×</button>
                 </div>
               </form>
-              <button id="alex-new-conversation" type="button" class="alex-action" style="margin:10px 0 0 auto;display:block;" aria-label="Iniciar nova conversa com o Professor Alex">Nova conversa</button>
+              <button id="alex-new-conversation" type="button" class="alex-action" style="margin:10px 0 0 auto;display:block;" aria-label="Iniciar nova conversa com o Leco">Nova conversa</button>
             </div>
           </div>
         </section>
@@ -288,7 +288,7 @@
         state.file = null;
         fileInput.value = "";
         attachPill.hidden = true;
-        statusText.textContent = "Professor Alex online e pronto para ensinar";
+        statusText.textContent = "Leco online e pronto para ensinar";
       });
 
       // Textarea auto-resize
@@ -348,12 +348,12 @@
         prompt.value = "";
         prompt.style.height = "auto";
 
-        // Animação do Alex: Pensando
+        // Animação do Leco: Pensando
         if (mascot && typeof mascot.playAnimation === "function") {
           mascot.expression = state.mode === "estourado" ? "angry" : "thoughtful";
           mascot.playAnimation("thinking");
         }
-        statusText.textContent = "Professor Alex formulando o raciocínio clínico...";
+        statusText.textContent = "Leco formulando o raciocínio clínico...";
         sendButton.disabled = true;
 
         setTimeout(() => {
@@ -364,7 +364,7 @@
           if (feed) {
             const response = document.createElement("div");
             response.className = "alex-msg alex-msg-alex alex-msg-structured";
-            response.innerHTML = `<div class="alex-msg-header"><span class="response-icon">🎓</span><span>Professor Alex · ${isEst ? "Modo Estourado" : "Modo Normal"}</span></div><div class="alex-msg-bubble"><strong>Conceito e raciocínio</strong><br>${isEst ? `Análise aprofundada de <strong>${escapeHtml(topicName)}</strong>: na fisiopatologia molecular e hemodinâmica, a cascata primária decorre da alteração estrutural progressiva, provocando elevação da pós-carga e remodelamento concêntrico.` : `Raciocínio inicial sobre <strong>${escapeHtml(topicName)}</strong>: identifique o mecanismo primário quebrado e como o organismo tenta compensar antes da descompensação clínica.`}<br><br><strong>Mecanismos e diferenciais</strong><br>${isEst ? `O contraste principal está na curva de pulso e na ausculta dinâmica: insuficiência cursa com pulso amplo, enquanto aqui aparece pulso <em>parvus et tardus</em>.` : `Separe achados agudos dos crônicos e contraste etiologias congênitas, bicuspidia e calcificação degenerativa conforme o contexto.`}<br><br><strong>Como cai na residência</strong><br>${isEst ? `As bancas exploram dispneia aos esforços ou síncope e pegadinhas de conduta com vasodilatadores ou nitratos.` : `A cobrança costuma combinar a tríade dispneia, angina e síncope, indicação cirúrgica ao início dos sintomas e ecocardiograma como exame inicial.`}<br><br><strong>Pulo do gato</strong><br>${isEst ? `<em>Sintoma em estenose grave exige raciocínio cirúrgico urgente.</em>` : `<em>Sintoma apareceu: reavalie indicação de intervenção e evite vasodilatação imprudente.</em>`}</div>`;
+            response.innerHTML = `<div class="alex-msg-header"><span class="response-icon">🎓</span><span>Leco · ${isEst ? "Modo Estourado" : "Modo Normal"}</span></div><div class="alex-msg-bubble"><strong>Conceito e raciocínio</strong><br>${isEst ? `Análise aprofundada de <strong>${escapeHtml(topicName)}</strong>: na fisiopatologia molecular e hemodinâmica, a cascata primária decorre da alteração estrutural progressiva, provocando elevação da pós-carga e remodelamento concêntrico.` : `Raciocínio inicial sobre <strong>${escapeHtml(topicName)}</strong>: identifique o mecanismo primário quebrado e como o organismo tenta compensar antes da descompensação clínica.`}<br><br><strong>Mecanismos e diferenciais</strong><br>${isEst ? `O contraste principal está na curva de pulso e na ausculta dinâmica: insuficiência cursa com pulso amplo, enquanto aqui aparece pulso <em>parvus et tardus</em>.` : `Separe achados agudos dos crônicos e contraste etiologias congênitas, bicuspidia e calcificação degenerativa conforme o contexto.`}<br><br><strong>Como cai na residência</strong><br>${isEst ? `As bancas exploram dispneia aos esforços ou síncope e pegadinhas de conduta com vasodilatadores ou nitratos.` : `A cobrança costuma combinar a tríade dispneia, angina e síncope, indicação cirúrgica ao início dos sintomas e ecocardiograma como exame inicial.`}<br><br><strong>Pulo do gato</strong><br>${isEst ? `<em>Sintoma em estenose grave exige raciocínio cirúrgico urgente.</em>` : `<em>Sintoma apareceu: reavalie indicação de intervenção e evite vasodilatação imprudente.</em>`}</div>`;
             feed.appendChild(response);
             feed.scrollTop = feed.scrollHeight;
           }
@@ -373,7 +373,7 @@
           if (mascot && typeof mascot.playAnimation === "function") {
             mascot.expression = isEst ? "angry" : "attentive";
             mascot.playAnimation("explaining");
-            statusText.textContent = isEst ? "💥 Professor Alex dissecando a fisiopatologia..." : "Professor Alex gesticulando e explicando o raciocínio...";
+            statusText.textContent = isEst ? "💥 Leco dissecando a fisiopatologia..." : "Leco gesticulando e explicando o raciocínio...";
             setTimeout(() => {
               if (typeof mascot.playAnimation === "function") {
                 mascot.playAnimation("point");
@@ -408,7 +408,7 @@
           const expressions = ["happy", "wink", "excited"];
           mascot.expression = expressions[clickCount % expressions.length];
           mascot.playAnimation(gestures[clickCount % gestures.length]);
-          statusText.textContent = "Professor Alex: Sempre pronto para ensinar! Envie sua dúvida abaixo.";
+          statusText.textContent = "Leco: Sempre pronto para ensinar! Envie sua dúvida abaixo.";
         });
       }
 
