@@ -902,7 +902,8 @@
   function findStrongGridPeriod(profile, minLag, maxLag) {
     const sorted = Array.from(profile).sort((a, b) => a - b);
     if (!sorted.length || sorted[sorted.length - 1] <= 1e-6) return { period: 0, confidence: 0 };
-    const threshold = sorted[Math.min(sorted.length - 1, Math.floor(sorted.length * 0.94))];
+    const threshold = Math.max(sorted[sorted.length - 1] * 0.35,
+      sorted[Math.min(sorted.length - 1, Math.floor(sorted.length * 0.94))]);
     const peaks = [];
     for (let i = 1; i < profile.length - 1; i++) {
       if (profile[i] < threshold || profile[i] < profile[i - 1] || profile[i] < profile[i + 1]) continue;
@@ -935,9 +936,12 @@
       }
       // Short dot-to-dot periods gain many accidental matches; demand that a
       // substantial fraction of the expected grid lines supports the lag.
-      const expected = Math.max(2, Math.floor(profile.length / lag) - 1);
+      // Normalize by eligible observed lines. Dividing by page/lag rewarded
+      // large harmonics (e.g. 95 px instead of the actual 19 px spacing).
+      const expected = Math.max(2, peaks.filter(p =>
+        p.index + lag <= peaks[peaks.length - 1].index + 1).length);
       const score = weight / expected;
-      if (score > bestScore) {
+      if (score > bestScore + 0.03) {
         bestScore = score;
         bestPeriod = lag;
       }
@@ -1301,6 +1305,31 @@
           }
         }
       : locatePaperSheet(imageData);
+    // Digital ECG exports often have white margins indistinguishable from
+    // the paper. Locate the printed colored grid inside those margins before
+    // dividing into lead columns. Require a two-dimensional grid-sized area.
+    const gridCols = new Uint32Array(width);
+    const gridRows = new Uint32Array(height);
+    for (let y = 0; y < height; y++) {
+      for (let x = 0; x < width; x++) {
+        const i = (y * width + x) * 4;
+        const r = imageData.data[i], g = imageData.data[i + 1], b = imageData.data[i + 2];
+        if (r - g > 18 && r - b > 8 && r > g * 1.10 && g > 95) {
+          gridCols[x]++; gridRows[y]++;
+        }
+      }
+    }
+    const gx = [], gy = [];
+    for (let x = 0; x < width; x++) if (gridCols[x] > height * 0.03) gx.push(x);
+    for (let y = 0; y < height; y++) if (gridRows[y] > width * 0.03) gy.push(y);
+    if (gx.length && gy.length && gx[gx.length - 1] - gx[0] > width * 0.6 &&
+        gy[gy.length - 1] - gy[0] > height * 0.5) {
+      sheet.boundaries = {
+        ...sheet.boundaries,
+        xMin: gx[0] / width, xMax: (gx[gx.length - 1] + 1) / width,
+        yMin: gy[0] / height, yMax: (gy[gy.length - 1] + 1) / height
+      };
+    }
     if (!sheet.found || sheet.isCutOff) {
       return {
         detected: false,
@@ -1474,8 +1503,12 @@
     let mainBands = topology.bands;
     if (candidateTemplate.name.startsWith("3x4") && topology.bands.length > 3) {
       let best = null;
-      for (let start = 0; start <= topology.bands.length - 3; start++) {
-        const group = topology.bands.slice(start, start + 3);
+      // QRS/T peaks and the paper border may create intervening bands.
+      // Evaluate ordered triples, rather than requiring adjacent detections.
+      for (let a = 0; a < topology.bands.length - 2; a++) {
+      for (let b = a + 1; b < topology.bands.length - 1; b++) {
+      for (let c = b + 1; c < topology.bands.length; c++) {
+        const group = [topology.bands[a], topology.bands[b], topology.bands[c]];
         const gapA = group[1].yCenterRatio - group[0].yCenterRatio;
         const gapB = group[2].yCenterRatio - group[1].yCenterRatio;
         const avgGap = (gapA + gapB) / 2;
@@ -1491,6 +1524,8 @@
         const score = regularity - continuity * 0.18 + earlyPagePrior;
         if (!best || score < best.score) best = { score, group };
       }
+      }
+      }
       if (best) mainBands = best.group;
     }
 
@@ -1498,8 +1533,17 @@
     for (let r = 0; r < numMainRows; r++) {
       // Se o número de bandas detectadas bate com totalRows, usa a coordenada Y real da banda!
       const band = (mainBands.length >= numMainRows && mainBands[r]) ? mainBands[r] : null;
-      const rowYMin = band ? band.yMin : (yMin + (r / totalRows) * (yMax - yMin));
-      const rowYMax = band ? band.yMax : (yMin + ((r + 0.92) / totalRows) * (yMax - yMin));
+      // Recompute vertical extent from the selected baselines, not the
+      // discarded intervening peak bands. Tall R/T waves need the space
+      // above their baseline; keep a smaller area below to avoid next row.
+      const rowGap = band && candidateTemplate.name.startsWith("3x4") && mainBands.length >= numMainRows
+        ? Math.min(...mainBands.slice(1, numMainRows).map((item, index) =>
+            item.yCenterRatio - mainBands[index].yCenterRatio))
+        : null;
+      const rowYMin = band ? Math.max(yMin, rowGap > 0 ? band.yCenterRatio - rowGap * 0.86 : band.yMin)
+        : (yMin + (r / totalRows) * (yMax - yMin));
+      const rowYMax = band ? Math.min(yMax, rowGap > 0 ? band.yCenterRatio + rowGap * 0.48 : band.yMax)
+        : (yMin + ((r + 0.92) / totalRows) * (yMax - yMin));
 
       for (let c = 0; c < numCols; c++) {
         const colXMin = xMin + (c / numCols) * (xMax - xMin);
@@ -1550,6 +1594,7 @@
           calibration,
           leadLabel: ocrRes.recognized ? ocrRes.lead : cell.expectedLead,
           allowOverlappingPreview: true,
+          maskPrintedHeader: true,
           allowDensePreview: options.allowDensePreview === true
         });
       } else {
