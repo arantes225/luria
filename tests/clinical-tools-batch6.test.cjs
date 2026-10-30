@@ -84,6 +84,6 @@ test('zero-allowed inputs and script references are explicit',()=>{
  const calcHtml=read('trabalho/calculadora/index.html');
  const scoreHtml=read('trabalho/scores/index.html');
  assert.match(calcHtml,/clinical-calculators-batch4\.js\?v=20261030-batch7/);
- assert.match(scoreHtml,/work-scores\.js\?v=20261030-batch7/);
+ assert.match(scoreHtml,/work-scores\.js\?v=20261030-batch8/);
  assert.match(calcHtml,/typeof d\.validate==='function'/);
 });
