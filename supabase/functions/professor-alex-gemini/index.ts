@@ -107,8 +107,8 @@ function normalizeSocialText(value: unknown) {
 
 function fastSocialReply(value: unknown, mode: string) {
   const clean = normalizeSocialText(value);
-  const social = /^(oi|ola|bom dia|boa tarde|boa noite|e ai|eai|fala ai|opa|tudo bem|como vai|valeu|obrigado|obrigada|tchau|ate logo|ate mais|beleza|tranquilo|mestre|alex|professor|eae)(\s+(alex|professor|mestre|amigo|cara))?$/i.test(clean)
-    || /^(oi|ola|bom dia|boa tarde|boa noite|opa|e ai|fala|valeu|obrigado|obrigada)\s+(alex|professor|mestre|amigo)/i.test(clean);
+  const social = /^(oi|ola|bom dia|boa tarde|boa noite|e ai|eai|fala ai|opa|tudo bem|como vai|valeu|obrigado|obrigada|tchau|ate logo|ate mais|beleza|tranquilo|mestre|alex|leco|professor|eae)(\s+(alex|leco|professor|mestre|amigo|cara))?$/i.test(clean)
+    || /^(oi|ola|bom dia|boa tarde|boa noite|opa|e ai|fala|valeu|obrigado|obrigada)\s+(alex|leco|professor|mestre|amigo)/i.test(clean);
   if (!social) return null;
   if (mode === "estourado") {
     if (/\b(obrigado|obrigada|valeu)\b/.test(clean)) return "Tá. Agora volta a estudar, porra.";
