@@ -918,6 +918,16 @@ function speakText(text, onComplete) {
 function initLiveVoiceMode() {
   if (!liveCallBtn) return;
   const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+  // The companion's "Falar ao vivo" shortcut navigates here with ?voice=1.
+  // A new page cannot inherit the tap's playback permission on iOS, so prompt
+  // for a real tap instead of silently behaving like text-only chat.
+  if (new URLSearchParams(window.location.search).get("voice") === "1") {
+    const status = document.getElementById("alex-status-text");
+    if (status) status.textContent = "🔊 Toque em Conversar ao Vivo por Voz para liberar o áudio no PWA.";
+    liveCallBtn.setAttribute("aria-describedby", "alex-status-text");
+    liveCallBtn.style.boxShadow = "0 0 0 3px var(--accent-soft)";
+    liveCallBtn.addEventListener("click", () => { liveCallBtn.style.boxShadow = ""; }, { once: true });
+  }
   if (!SpeechRec) {
     // iOS installed PWAs may lack SpeechRecognition while playback still works.
     // Keep live voice output available when questions are typed.
