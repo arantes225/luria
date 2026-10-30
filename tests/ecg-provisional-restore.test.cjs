@@ -24,6 +24,7 @@ function makeCanvas(w=480,h=240) {
   };
 }
 function scene(opts={}) {
+  const calls={engineOptions:[],extractorOptions:[]};
   const evidence={
     detected:false,
     reason:"OCR de labels conflitantes. Associação automática recusada.",
@@ -41,22 +42,25 @@ function scene(opts={}) {
   };
   Object.assign(evidence,opts);
   const cv={
-    detectECGBoundaries:()=>evidence,
+    detectECGBoundaries:(_image,options={})=>{calls.engineOptions.push(options);return evidence;},
     recognizeLeadLabelInRegion:()=>({recognized:false}),
     rectifyImagePerspective:()=>null
   };
   const extractor={
-    extractRealSignalFromImageData:()=>({
+    extractRealSignalFromImageData:(_image,options={})=>{
+      calls.extractorOptions.push(options);
+      return ({
       isValid:true,signal:[0,.1,.05,null],validMask:[1,1,1,0],
       audit:{status:"Indeterminada",technicalIndex:40,allowsAiModelInput:false},
       calibration:{calibrationSource:"assumed"},confidence:.8,
       recoveredDurationSeconds:null,effectiveResolutionHz:null
-    }),
+      });
+    },
     auditFullExtraction:()=>({overallStatus:"Indeterminada"})
   };
   const app={LuriaEcgContracts:contracts,LuriaEcgCvEngine:{createEngine:()=>cv},LuriaEcgSignalExtractor:extractor};
   vm.runInNewContext(controllerCode,{window:app,document:{createElement:()=>makeCanvas()},Date,console,setTimeout});
-  return {controller:app.LuriaSmartCamera.createController(),evidence,guard:app.LuriaEcgSceneGuard};
+  return {controller:app.LuriaSmartCamera.createController(),evidence,guard:app.LuriaEcgSceneGuard,calls};
 }
 test("photo with genuine paper and waveform candidates survives label OCR rejection",()=>{
   const {controller,guard,evidence}=scene();
@@ -105,6 +109,19 @@ test("manual four-point paper selection permits preliminary review without prete
   assert.equal(controller.confirmCandidateLead("DI").confirmed,true);
   assert.equal(controller.getCapturedLeads().find(item=>item.lead==="DI").leadIdentity.status,"manual_confirmed");
   assert.equal(controller.confirmExtractionAndEnableAI().allowed,false);
+});
+test("foto enviada pode pedir prévia densa, mas o scanner automático não pode",()=>{
+  const photo=scene();
+  photo.controller.processPhotographCanvas(makeCanvas(),{source:"normal_photo"});
+  assert.ok(photo.calls.engineOptions.every(options=>options.allowDensePreview===true));
+  assert.ok(photo.calls.engineOptions.every(options=>options.allowTopologyFallback===true));
+  assert.ok(photo.calls.extractorOptions.every(options=>options.allowDensePreview===true));
+
+  const scanner=scene();
+  scanner.controller.processPhotographCanvas(makeCanvas(),{source:"autonomous_camera"});
+  assert.ok(scanner.calls.engineOptions.every(options=>options.allowDensePreview===false));
+  assert.ok(scanner.calls.engineOptions.every(options=>options.allowTopologyFallback===false));
+  assert.ok(scanner.calls.extractorOptions.every(options=>options.allowDensePreview===false));
 });
 test("UI marks positional names as hypotheses and requires an explicit per-lead confirmation",()=>{
   const ui=fs.readFileSync(path.join(__dirname,"../assets/js/ecg-smart-ui.js"),"utf8");
