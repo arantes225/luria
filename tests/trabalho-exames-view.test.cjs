@@ -7,6 +7,7 @@ const { JSDOM } = require("jsdom");
 const root = path.resolve(__dirname, "..");
 const script = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-interpreter.js"), "utf8");
 const extraScript = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-extra-catalog.js"), "utf8");
+const curatedScripts = [1,2,3,4,5].map(i=>fs.readFileSync(path.join(root, `assets/js/trabalho-exames-curated-0${i}.js`), "utf8"));
 const detailsScript = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-details.js"), "utf8");
 
 function openTool() {
@@ -15,6 +16,7 @@ function openTool() {
     runScripts: "outside-only"
   });
   dom.window.eval(extraScript);
+  for(const code of curatedScripts)dom.window.eval(code);
   dom.window.eval(detailsScript);
   dom.window.eval(script);
   return dom;
@@ -64,8 +66,9 @@ test("Both clinical pages use same versioned assets and suppress duplicate top t
     assert.match(html, /data-ui-heading="provided"/);
     assert.match(html, /trabalho-exames-interpreter\.css\?v=20261029-review2/);
     assert.match(html, /trabalho-exames-extra-catalog\.js\?v=20261029-extras/);
-    assert.match(html, /trabalho-exames-details\.js\?v=20261029-review2/);
-    assert.match(html, /trabalho-exames-interpreter\.js\?v=20261029-review2/);
+    for(let i=1;i<=5;i++)assert.match(html,new RegExp(`trabalho-exames-curated-0${i}\\.js\\?v=20261030-individual`));
+    assert.match(html, /trabalho-exames-details\.js\?v=20261030-individual/);
+    assert.match(html, /trabalho-exames-interpreter\.js\?v=20261030-individual/);
   }
 });
 
@@ -258,5 +261,37 @@ test("Second audit adds gestational glucose context without diagnosing from isol
   d.querySelector("#ex-analyze").click();
   assert.match(d.querySelector("#ex-panel .ex-findings").textContent,/Glicemia de jejum na gestação/);
   assert.match(d.querySelector("#ex-panel .ex-findings").textContent,/92 mg\/dL/);
+  dom.window.close();
+});
+
+test("Every one of 423 exams has distinct authored clinical purpose and interpretation",()=>{
+  const dom=openTool(),d=dom.window.document,metadata=dom.window.LURIA_EXAM_DETAILS,audit=dom.window.LURIA_EXAM_CONTENT_AUDIT;
+  assert.deepEqual([audit.total,audit.filled,audit.missing.length],[423,423,0]);
+  const items=[...dom.window.LURIA_EXAM_CATALOG,...dom.window.LURIA_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
+  assert.equal(new Set(items.map(t=>t.id)).size,423);
+  assert.equal(Object.keys(dom.window.LURIA_EXAM_CURATED).length,423);
+  for(const t of items){
+    const m=metadata[t.id],curated=dom.window.LURIA_EXAM_CURATED[t.id];
+    assert.ok(m&&m.contentReviewed,t.id);
+    assert.equal(m.purpose,curated.purpose,t.id);
+    assert.equal(m.interpretation,curated.interpretation,t.id);
+    assert.ok(m.purpose.length>15&&m.interpretation.length>20,t.id);
+    assert.doesNotMatch(m.purpose,/^Aplicação clínica de /);
+  }
+  assert.equal(d.querySelectorAll(".ex-test-details").length,423);
+  dom.window.close();
+});
+
+test("Specific validated reference notes are displayed without fabricating reference limits",()=>{
+  const dom=openTool(),d=dom.window.document,audit=dom.window.LURIA_EXAM_CONTENT_AUDIT;
+  assert.equal(audit.filled,423);
+  const tests=[["Glicemia em jejum",/100.125/],["TFG estimada",/G3a/],["VDRL",/titula/],["Escore de Nugent em secreção vaginal",/0.3/]];
+  const all=[...dom.window.LURIA_EXAM_CATALOG,...dom.window.LURIA_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
+  for(const [name,regex] of tests){
+    const exam=all.find(t=>t.name===name),node=d.querySelector('[data-row="'+exam.id+'"] .ex-clinical-reference');
+    assert.ok(node,name);
+    assert.match(node.textContent,regex,name);
+  }
+  assert.ok(all.filter(t=>t.group>=21).every(t=>t.min===null&&t.max===null));
   dom.window.close();
 });
