@@ -1857,6 +1857,173 @@
       setResult('—','Preencha os quatro itens.','A classificação I–V depende dos três fatores BAP e da idade.');
     },
 
+
+    gold(f,s){
+      f.innerHTML=
+        selectField("Referência para classificação A/B/E","g_mode",[
+          opt("GOLD internacional 2026","gold2026"),opt("PCDT Ministério da Saúde Brasil 2025","pcdt2025")])+
+        field("VEF₁/CVF pós-broncodilatador (fração; ex.: 0.62)","g_ratio","number",'min="0" max="1" step="0.01"')+
+        field("VEF₁ pós-broncodilatador (% do previsto)","g_fev","number",'min="0" max="200" step="any"')+
+        selectField("Escala de sintomas utilizada","g_symmethod",[opt("mMRC (0–4)","mmrc"),opt("CAT/CAAT (0–40)","cat")])+
+        field("Pontuação da escala de sintomas","g_sym","number",'min="0" max="40" step="1"')+
+        field("Exacerbações MODERADAS nos últimos 12 meses (sem hospitalização)","g_mod","number",'min="0" max="100" step="1"')+
+        field("Exacerbações GRAVES com hospitalização nos últimos 12 meses","g_hosp","number",'min="0" max="100" step="1"');
+      const update=()=>{
+        const ids=["g_ratio","g_fev","g_sym","g_mod","g_hosp"];
+        const els=ids.map(id=>$("#"+id,f)),val=els.map(e=>Number(e.value));
+        const [ratio,fev,sym,moderate,hosp]=val;
+        const mode=$("#g_mode",f).value, method=$("#g_symmethod",f).value;
+        if(els.some(e=>e.value==="")||!val.every(Number.isFinite)||
+          ratio<=0||ratio>1||fev<=0||fev>200||
+          !Number.isInteger(sym)||sym<0||sym>(method==="mmrc"?4:40)||
+          ![moderate,hosp].every(x=>Number.isInteger(x)&&x>=0&&x<=100)){
+          setResult("—","Preencha espirometria pós-broncodilatador, sintomas e exacerbações.","A/CAT mMRC e exacerbações são contagens; não podem ser fracionárias.");return;
+        }
+        if(ratio>=0.70){
+          setResult("Sem obstrução confirmada pelo critério fixo",
+            "VEF₁/CVF pós-BD ≥0,70; não atribuir grau GOLD nem grupo A/B/E a partir destes dados.",
+            "Em jovens e idosos, e em quadros limítrofes, correlacione com limite inferior da normalidade e julgamento clínico.");return;
+        }
+        const grade=fev>=80?1:fev>=50?2:fev>=30?3:4;
+        const high=mode==="gold2026" ? moderate>=1||hosp>=1 : moderate>=2||hosp>=1;
+        const symptomatic=method==="mmrc"?sym>=2:sym>=10;
+        const group=high?"E":symptomatic?"B":"A";
+        const guide=mode==="gold2026"?"GOLD internacional 2026":"PCDT Brasil 2025";
+        setResult("GOLD "+grade+" | Grupo "+group,
+          guide+": obstrução de grau "+grade+" (VEF₁ "+fev+"% previsto) e classificação clínica "+group+". "+
+          (mode==="gold2026"?"Grupo E inclui ≥1 exacerbação moderada ou grave.":"Grupo E exige ≥2 moderadas ou ≥1 com hospitalização."),
+          "A/B/E não determina prescrição individual. Confirmar diagnóstico, técnica da espirometria, CAT/CAAT ou mMRC, tratamento prévio e comorbidades.");
+      };
+      $$("input,select",f).forEach(el=>el.onchange=el.oninput=update);
+      setResult("—","Preencha os campos para comparar GOLD 2026 e PCDT Brasil 2025.","Há uma diferença importante no limiar de grupo E.");
+    },
+    gina(f,s){
+      f.innerHTML=
+        selectField("Medicação de alívio utilizada","gi_relief",[
+          opt("SABA: salbutamol/fenoterol, etc.","saba"),
+          opt("ICS-formoterol de alívio (AIR/MART)","air"),
+          opt("Não usa medicação de alívio / desconhecido","other")])+
+        selectField("Sintomas diurnos >2 vezes/semana nas últimas 4 semanas?","gi_day",yesno())+
+        selectField("Algum despertar noturno relacionado à asma nas últimas 4 semanas?","gi_night",yesno())+
+        selectField("Limitação de atividades por asma nas últimas 4 semanas?","gi_activity",yesno())+
+        selectField("Quando utiliza SABA: precisou dele >2 vezes/semana nas últimas 4 semanas? (desconsiderar uso profilático pré-exercício)","gi_saba",[
+          opt("Não",0),opt("Sim",1),opt("Não aplicável: não usa SABA como alívio","na")]);
+      const update=()=>{
+        const relief=$("#gi_relief",f).value,
+              keys=["gi_day","gi_night","gi_activity","gi_saba"],
+              values=keys.map(id=>$("#"+id,f).value);
+        if(values.some(v=>v==="")){
+          setResult("—","Preencha o padrão dos sintomas nas últimas quatro semanas.","Usar versão oficial GINA 2026.");return;
+        }
+        const symptomCount=values.slice(0,3).reduce((a,b)=>a+Number(b),0);
+        if(relief!=="saba"){
+          if(values[3]!=="na"){
+            setResult("—","Marque o item SABA como 'não aplicável' para este tipo de alívio.","Não equiparar ICS-formoterol a SABA.");return;
+          }
+          setResult("Avaliação parcial: "+symptomCount+"/3 sinais",
+            "GINA 2026: três aspectos sintomáticos avaliados. Não atribuir categoria formal de 4 itens sem o componente SABA aplicável.",
+            "Avaliar frequência de uso de ICS-formoterol separadamente e fatores de risco para exacerbações.");return;
+        }
+        if(values[3]==="na"){
+          setResult("—","O paciente usa SABA como alívio: informe se necessitou >2 vezes/semana.","Não pontuar pré-exercício na frequência de SABA.");return;
+        }
+        const n=symptomCount+Number(values[3]);
+        setResult(n+"/4 critérios",
+          "GINA 2026: "+(n===0?"asma bem controlada":n<=2?"asma parcialmente controlada":"asma não controlada")+" por sintomas nas últimas quatro semanas.",
+          "Controle de sintomas não equivale a gravidade da asma e não exclui risco de exacerbação, mesmo se bem controlada.");
+      };
+      $$("select",f).forEach(el=>el.onchange=update);
+      setResult("—","Informe sintomas das últimas quatro semanas e medicamento de alívio.","GINA 2026 diferencia SABA de ICS-formoterol.");
+    },
+    pecarntce(f,s){
+      f.innerHTML=
+        field("Idade em meses completos (0–215)","pe_age","number",'min="0" max="215" step="1"')+
+        selectField("TCE contuso, atendimento inicial, GCS 14–15 e sem populações especiais?","pe_elig",[
+          opt("Sim, elegível",1),opt("Não / dúvida",0)])+
+        selectField("Glasgow","pe_gcs",[opt("14",14),opt("15",15)])+
+        selectField("Sinais de alteração do estado mental (agitação, sonolência, respostas lentas, perguntas repetitivas)?","pe_ams",yesno())+
+        selectField("Sinal de fratura (abaixo de 2 anos: palpável; a partir de 2 anos: base de crânio)?","pe_fracture",yesno())+
+        selectField("Mecanismo grave de trauma (considerar altura da queda por faixa etária)?","pe_mechanism",yesno())+
+        selectField("História de perda de consciência (menor de 2 anos: ≥5 s; a partir de 2 anos: qualquer duração)?","pe_loc",yesno())+
+        selectField("Sinal adicional 1: <2 anos hematoma não frontal; ≥2 anos vômitos","pe_sign1",yesno())+
+        selectField("Sinal adicional 2: <2 anos comportamento anormal referido pelos pais; ≥2 anos cefaleia intensa","pe_sign2",yesno());
+      const update=()=>{
+        const aEl=$("#pe_age",f),age=Number(aEl.value);
+        const keys=["pe_elig","pe_gcs","pe_ams","pe_fracture","pe_mechanism","pe_loc","pe_sign1","pe_sign2"];
+        const vals=keys.map(id=>$("#"+id,f).value);
+        if(aEl.value===""||!Number.isInteger(age)||age<0||age>=216||vals.some(x=>x==="")){
+          setResult("—","Informe idade em meses e todos os achados.","Aplicável apenas a menores de 18 anos com TCE contuso elegível.");return;
+        }
+        const [elig,gcs,ams,fracture,mechanism,loc,sign1,sign2]=vals.map(Number);
+        if(!elig){
+          setResult("Não aplicável","A população ou apresentação não atende aos critérios de elegibilidade definidos para esta ferramenta.",
+            "Casos especiais exigem avaliação própria de imagem e lesão não acidental.");return;
+        }
+        const ageBand=age<24?"menor de 2 anos":"2 a 17 anos";
+        const high=gcs===14||ams===1||fracture===1;
+        const intermediate=mechanism===1||loc===1||sign1===1||sign2===1;
+        const risk=high?"Alto risco":intermediate?"Risco intermediário":"Muito baixo risco pelo PECARN";
+        const guidance=high?"Achados de alto risco: avaliação urgente e considerar TC craniana conforme avaliação clínica."
+           :intermediate?"Achados de risco intermediário: observação clínica estruturada versus TC, conforme contexto."
+           :"Sem preditores PECARN selecionados: TC de rotina geralmente não indicada no cenário validado.";
+        setResult(risk,"PECARN "+ageBand+". "+guidance,
+          (age<3?"Em menores de três meses, a observação e a decisão de imagem exigem especial cautela. ":"")+
+          "Não é diagnóstico nem substitui avaliação de trauma, suspeita de maus-tratos, coagulopatia ou piora durante observação.");
+      };
+      $$("input,select",f).forEach(el=>el.onchange=el.oninput=update);
+      setResult("—","Informe a idade e os fatores de risco.","Os fatores 'sinal adicional' mudam conforme a idade: observe as legendas.");
+    },
+    mdq(f,s){
+      f.innerHTML=
+        field("Total de sintomas positivos após aplicar os 13 itens do MDQ original (0–13)","mdq_count","number",'min="0" max="13" step="1"')+
+        selectField("Dois ou mais dos sintomas ocorreram no mesmo período?","mdq_same",yesno())+
+        selectField("Prejuízo decorrente dos sintomas","mdq_impact",[
+          opt("Nenhum",0),opt("Pequeno",1),opt("Moderado",2),opt("Grave",3)]);
+      const update=()=>{
+        const el=$("#mdq_count",f),n=Number(el.value),same=$("#mdq_same",f).value,impact=$("#mdq_impact",f).value;
+        if(el.value===""||!Number.isInteger(n)||n<0||n>13||same===""||impact===""){
+          setResult("—","Informe número de itens positivos, simultaneidade e prejuízo.","O questionário deve ter sido administrado previamente em versão apropriada.");return;
+        }
+        const positive=n>=7&&same==="1"&&Number(impact)>=2;
+        setResult(positive?"Rastreio positivo":"Rastreio não positivo",
+          "MDQ: "+n+"/13 itens. "+(positive?"Critérios de triagem preenchidos.":"Não foram preenchidos os três requisitos combinados do rastreio."),
+          "Resultado não estabelece nem afasta transtorno bipolar; requer entrevista clínica e avaliação de risco.");
+      };
+      $$("input,select",f).forEach(el=>el.oninput=el.onchange=update);
+      setResult("—","Preencha após aplicação do questionário MDQ original.","Não reproduz perguntas do instrumento.");
+    },
+    duke(f,s){
+      f.innerHTML=
+        selectField("Todos os critérios principais e menores foram revisados conforme Duke-ISCVID 2023?","du_audit",[
+          opt("Sim",1),opt("Não / dados pendentes",0)])+
+        selectField("Há critério patológico DEFINITIVO confirmado por método apropriado?","du_pathology",yesno())+
+        field("Número de critérios MAIORES independentes confirmados","du_major","number",'min="0" max="3" step="1"')+
+        field("Número de critérios MENORES independentes confirmados","du_minor","number",'min="0" max="6" step="1"');
+      const update=()=>{
+        const mEl=$("#du_major",f),nEl=$("#du_minor",f);
+        const m=Number(mEl.value),n=Number(nEl.value),
+              audited=$("#du_audit",f).value,path=$("#du_pathology",f).value;
+        if(mEl.value===""||nEl.value===""||!Number.isInteger(m)||!Number.isInteger(n)||
+           m<0||m>3||n<0||n>6||audited===""||path===""){
+          setResult("—","Informe critério patológico, número de maiores/menores e completude da apuração.","Evitar contar duas vezes a mesma evidência microbiológica ou imagem.");return;
+        }
+        if(audited!=="1"){
+          setResult("Critérios incompletos","É necessário conferir os critérios 2023 antes de classificar endocardite.",
+            "Não usar contagem de achados ainda não adjudicados ou exames pendentes.");return;
+        }
+        const definite=path==="1"||m>=2||(m>=1&&n>=3)||n>=5;
+        const possible=!definite&&((m>=1&&n>=1)||n>=3);
+        const category=definite?"Definitiva pelos critérios":possible?"Possível pelos critérios":"Critérios clínicos não suficientes";
+        setResult(category,
+          "Duke-ISCVID 2023: "+m+" critério(s) maior(es) e "+n+" menor(es). "+
+          (path==="1"?"Critério patológico definitivo selecionado. ":"")+
+          "A classificação depende da adjudicação correta de cada achado.",
+          "Critérios 'rejeitada' têm regras adicionais. Classificação abaixo de possível não é exclusão clínica; consulte o documento original e infectologia.");
+      };
+      $$("input,select",f).forEach(el=>el.onchange=el.oninput=update);
+      setResult("—","Informe critérios já apurados conforme documento original.","Não faz interpretação independente de hemoculturas ou imagens.");
+    },
+
     reference(f,s){
       f.innerHTML='<div class="score-warning"><strong>Referência clínica — cálculo não habilitado.</strong> Esta ferramenta necessita de regras oficiais, tabelas completas ou aplicação por profissional treinado. Não há pontuação automatizada nesta versão.</div><p class="score-intro">'+esc(s.desc)+'</p><p><strong>Fonte para conferência:</strong> '+esc(s.reference)+'</p>';
       setResult("—","Não calcular nesta interface.","Use a diretriz original ou instrumento oficial. Não há validação automatizada para este item.");
