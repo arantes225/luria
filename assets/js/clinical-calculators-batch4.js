@@ -552,6 +552,94 @@
   for (const id of ["glucosecv","glucosetir","nnt","freeandrogen","correctwbc","vis",
                     "rvsp","o2er","pco2gap"]) if (extra[id]) extra[id].allowZero=true;
 
+
+  // Lote 7: fórmulas adicionais, sem card duplicado com os catálogos atuais.
+  add("Renal","UOsm","Osmolalidade urinária calculada","Estimativa a partir de eletrólitos, nitrogênio ureico e glicose urinários","urineosmol",
+    [num("na","Sódio urinário","mmol/L"),num("k","Potássio urinário","mmol/L"),
+     num("uun","NITROGÊNIO ureico urinário (UUN, não ureia)","mg/dL"),num("glu","Glicose urinária","mg/dL")],
+    "Osm urinária estimada = 2×(Na+K) + UUN(mg/dL)/2,8 + glicose(mg/dL)/18.",
+    v=>{const a=["na","k","uun","glu"].map(x=>+v[x]);need(a.every(x=>Number.isFinite(x)&&x>=0),"Os analitos não podem ser negativos.");return[2*(a[0]+a[1])+a[2]/2.8+a[3]/18,"mOsm/L"];},
+    "Nephrol Dial Transplant 2020;35:1827–1832, doi:10.1093/ndt/gfaa165 (equação de osm urinária).",
+    ()=>"Equação aproximada: não substitui osmolalidade medida. O campo é UUN, não ureia urinária em massa.");
+
+  add("Renal","UOsmΔ","Gap osmolal urinário","Osmolalidade medida menos a calculada","urinegap",
+    [num("meas","Osmolalidade urinária MEDIDA","mOsm/kg"),num("na","Sódio urinário","mmol/L"),num("k","Potássio urinário","mmol/L"),
+     num("uun","Nitrogênio ureico urinário (UUN)","mg/dL"),num("glu","Glicose urinária","mg/dL")],
+    "Gap urinário = osm medida − [2×(UNa+UK) + UUN/2,8 + glicose/18].",
+    v=>{const a=["meas","na","k","uun","glu"].map(x=>+v[x]);need(a.every(x=>Number.isFinite(x)&&x>=0),"Analitos/osmolalidade inválidos.");return[a[0]-(2*(a[1]+a[2])+a[3]/2.8+a[4]/18),"mOsm/kg (aprox.)"];},
+    "Nephrol Dial Transplant 2020;35:1827–1832; review PMC5757610.",
+    ()=>"Diferença entre unidades mOsm/kg e mOsm/L cria pequena aproximação. Não interpretar como amônio urinário exato; interferências por outros solutos.");
+
+  add("Renal","EFWC","Clearance de água livre de eletrólitos","Estimativa de perda/retensão urinária de água em 24 horas","efwc",
+    [num("vol","Diurese coletada em 24 h","mL/24 h"),num("un","Sódio urinário","mEq/L"),
+     num("uk","Potássio urinário","mEq/L"),num("pn","Sódio plasmático","mEq/L")],
+    "C H₂O(e) (mL/24 h) = volume urinário × [1 − (Na urinário + K urinário)/Na plasmático].",
+    v=>{need(+v.vol>0&&+v.un>=0&&+v.uk>=0&&+v.pn>0,"Vol, Na e K inválidos.");return[+v.vol*(1-(+v.un+ +v.uk)/+v.pn),"mL/24 h"];},
+    "Electrolyte-free water clearance: review PMC8784663; Nephrol Dial Transplant 2020;35:1827–1832.",
+    n=>(n>0?"Valor positivo: perda renal de água livre de eletrólitos. ":"Valor não positivo: retenção relativa de água livre de eletrólitos. ")+"Não prediz sozinho a mudança de natremia.");
+
+  add("Endócrino","TyG","Índice triglicerídeos–glicose (TyG)","Marcador indireto de resistência insulínica","tyg",
+    [num("tg","Triglicerídeos EM JEJUM","mg/dL"),num("glu","Glicose EM JEJUM","mg/dL")],
+    "Versão TyG = ln[(TG × glicose)/2], ambos em mg/dL. Log natural.",
+    v=>{need(+v.tg>0&&+v.glu>0,"Medidas em jejum devem ser >0.");return[Math.log(+v.tg*+v.glu/2),""];},
+    "Front Endocrinol (Lausanne) 2026;17:1793587, PMC13128429; versão ln[(TG×G)/2].",
+    ()=>"Existem fórmulas publicadas com parênteses diferentes (ln[TG×G]/2). Não comparar limiares entre versões. Sem corte universal.");
+
+  add("Endócrino","QUICKI","Índice QUICKI","Índice de sensibilidade à insulina a partir de glicose/insulina em jejum","quicki",
+    [num("glu","Glicose em jejum","mg/dL"),num("ins","Insulina em jejum","µU/mL")],
+    "QUICKI = 1/[log10(glicose em mg/dL) + log10(insulina em µU/mL)].",
+    v=>{need(+v.glu>0&&+v.ins>0&&Math.log10(+v.glu)+Math.log10(+v.ins)>0,"Glicose/insulina não admitem zero e o denominador deve ser >0.");return[1/(Math.log10(+v.glu)+Math.log10(+v.ins)),""];},
+    "Endotext NCBI Bookshelf NBK278954, tabela de índices de sensibilidade à insulina.",
+    ()=>"A medida é um marcador indireto e não um diagnóstico de resistência à insulina.");
+
+  add("Endócrino","HOMA-β","HOMA-beta clássico","Estimativa basal de função das células beta pancreáticas","homabeta",
+    [num("glu","Glicose em jejum","mg/dL"),num("ins","Insulina em jejum","µU/mL")],
+    "HOMA-β (%) = 360 × insulina (µU/mL) / [glicose (mg/dL) − 63].",
+    v=>{need(+v.glu>63&&+v.ins>0,"Fórmula não aplicável quando glicose ≤63 mg/dL ou insulina ≤0.");return[360*+v.ins/(+v.glu-63),"% (modelo clássico)"];},
+    "OPAS / PAHO HOMA-IR/HOMA-Beta tool; Endotext insulin sensitivity indices.",
+    ()=>"Marcador de modelo basal, não porcentagem direta de células beta funcionais; distinguir de HOMA2 computacional.");
+
+  add("Endócrino","MATS","Índice de Matsuda (TOTG)","Estimativa de sensibilidade insulínica com valores basais e médios do TOTG","matsuda",
+    [num("g0","Glicose de jejum","mg/dL"),num("i0","Insulina de jejum","µU/mL"),
+     num("gm","Glicose MÉDIA de todas as coletas do TOTG","mg/dL"),num("im","Insulina MÉDIA de todas as coletas do TOTG","µU/mL")],
+    "ISI = 10000 / raiz[(glicose 0 × insulina 0) × (glicose média × insulina média)].",
+    v=>{const a=["g0","i0","gm","im"].map(x=>+v[x]);need(a.every(x=>x>0),"Todas as medidas e médias devem ser >0.");return[10000/Math.sqrt(a.reduce((p,x)=>p*x,1)),""];},
+    "Matsuda M, DeFronzo RA. Diabetes Care 1999;22:1462–1470. PMID 10480510; Endotext NBK278954.",
+    ()=>"As médias devem usar todos os tempos previstos no protocolo de TOTG utilizado, não apenas 0 e 120 min. Não há ponto de corte universal.");
+
+  add("Pediatria","PN-RN","Perda de peso neonatal","Percentual de perda em relação ao peso ao nascer","newbornweightloss",
+    [num("birth","Peso ao nascer","g"),num("current","Peso atual","g")],
+    "Perda (%) = (peso ao nascer − peso atual) / peso ao nascer × 100.",
+    v=>{need(+v.birth>0&&+v.current>0&&+v.current<=+v.birth,"Peso atual maior que o peso ao nascer não é perda; use avaliação de ganho de peso.");return[(+v.birth-+v.current)/+v.birth*100,"%"];},
+    "ABM Clinical Protocol #3, revised 2017; equação de perda ponderal percentual.",
+    ()=>"Não existe um único limite de perda seguro para todos os recém-nascidos; correlacionar com idade pós-natal, diurese, oferta e curvas apropriadas.");
+
+  add("Pediatria","KCAL-RN","Aporte enteral neonatal (kcal/kg/dia)","Energia ingerida a partir de volume e densidade calórica","neonatalkcal",
+    [num("vol","Volume ingerido em 24 horas","mL"),num("density","Densidade energética da dieta","kcal/100 mL"),
+     num("weight","Peso atual","kg")],
+    "kcal/kg/dia = volume total (mL/dia) × (kcal/100 mL)/100 ÷ peso (kg).",
+    v=>{need(+v.vol>0&&+v.density>0&&+v.weight>0,"Volume, densidade e peso devem ser positivos.");return[+v.vol*+v.density/(100*+v.weight),"kcal/kg/dia"];},
+    "Conversão dimensional; Anvisa RDC 976/2025 e RDC 1003/2025 para composição de fórmulas infantis.",
+    ()=>"Calcular apenas a ingestão efetiva, não prescrever automaticamente meta calórica. Densidade depende de leite humano, fortificação e fórmula.");
+
+  add("Nutrição","BAL-N","Balanço nitrogenado estimado","Estimativa nutricional pelo aporte de proteína e nitrogênio ureico urinário","nitrogenbalance",
+    [num("protein","Proteína recebida","g/dia"),num("uun","Nitrogênio ureico urinário TOTAL 24 h","g/dia")],
+    "Balanço N (g/d) ≈ proteína g/d ÷ 6,25 − UUN g/d − 4 g/d (perdas adicionais estimadas).",
+    v=>{need(+v.protein>=0&&+v.uun>=0,"Aporte e UUN não podem ser negativos.");return[+v.protein/6.25-+v.uun-4,"g N/dia"];},
+    "National Kidney Foundation nutrition assessment pocket guide, capítulo Nitrogen Balance; ACCP PSAP Nutrition 2005.",
+    ()=>"Estimativa inadequada sem coleta urinária íntegra; o termo +4 g de perdas pode não valer em sepse, drenagens, diálise ou grandes perdas.");
+
+  add("Cardiovascular","PAPi","Pulmonary Artery Pulsatility Index","Pressão pulsátil pulmonar em relação à pressão atrial direita","papi",
+    [num("pas","Pressão sistólica da artéria pulmonar","mmHg"),
+     num("pad","Pressão diastólica da artéria pulmonar","mmHg"),
+     num("rap","Pressão atrial direita","mmHg")],
+    "PAPi = (PAP sistólica − PAP diastólica)/pressão atrial direita.",
+    v=>{need(+v.pas>+v.pad&&+v.pad>=0&&+v.rap>0,"Pressões inconsistentes ou pressão atrial direita igual a zero.");return[(+v.pas-+v.pad)/+v.rap,""];},
+    "StatPearls NCBI Bookshelf NBK557404, Right Heart Catheterization: PAPi.",
+    ()=>"Interpretar no contexto de cateterismo, choque, hipertensão pulmonar e função de VD; sem ponto de corte universal.");
+
+  for(const id of ["urineosmol","urinegap","efwc","nitrogenbalance"])if(extra[id])extra[id].allowZero=true;
+
   for (const row of items) if (!C.some(x => x[4] === row[4])) C.push(row);
   for (const id of Object.keys(extra)) if (!defs[id]) defs[id] = extra[id];
   for (const id of Object.keys(msg)) if (!calcInterp[id]) calcInterp[id] = msg[id];
