@@ -4,7 +4,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const root = path.resolve(__dirname, "..");
-const read = file => fs.readFileSync(path.join(root, file), "utf8");
+const read = file => fs.readFileSync(path.join(root, file), "utf8").replace(/\r\n/g, "\n");
 const css = read("assets/css/apostila-renderer.css");
 const tools = read("assets/js/apostila-tools.js");
 
