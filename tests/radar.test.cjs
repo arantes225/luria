@@ -34,8 +34,10 @@ test('Radar: area click shows specific subjects, bank and source filters stay in
     [...d.querySelectorAll('[data-radar-area]')].find(b=>b.textContent==='Pediatria').click();
     assert.equal(d.querySelector('#radar-area-title').textContent,'Pediatria');
     d.querySelector('#radar-search').value='zzzinexistente';d.querySelector('#radar-search').dispatchEvent(new w.Event('input'));
+    await new Promise(r=>setTimeout(r,350));
     assert.match(d.querySelector('#radar-list').textContent,/Nenhum tema encontrado/);
     d.querySelector('#radar-search').value='';d.querySelector('#radar-bank').value='CERMAM';d.querySelector('#radar-bank').dispatchEvent(new w.Event('change'));
+    await new Promise(r=>setTimeout(r,350));
     assert.equal(d.querySelector('#radar-source').value,'editorial');
     assert.equal(d.querySelectorAll('.radar-value').length,0);
     assert.ok(d.querySelectorAll('.radar-topic').length>0);
