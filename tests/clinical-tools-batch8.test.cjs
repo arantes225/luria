@@ -123,3 +123,43 @@ test('Score asset version updated for new batch',()=>{
   const h=read('trabalho/scores/index.html');
   assert.match(h,/work-scores\.js\?v=20261030-batch8/);
 });
+
+test('SCORAD original formula spans 0 through 103 with exact values',()=>{
+  const fields={
+    '#scorad_area':{value:'100'},
+    '#scorad_itch':{value:'10'},
+    '#scorad_sleep':{value:'10'}
+  };
+  for(let i=0;i<6;i++)fields['#scorad_b'+i]={value:'3'};
+  const f=makeForm(fields,Array.from({length:6},(_,i)=>'#scorad_b'+i));
+  const score=scores.find(x=>x.id==='scorad');
+  assert.ok(score && score.custom==='scorad');
+  customRender.scorad(f,score);
+  fields['#scorad_area'].oninput();
+  assert.equal(output['#score-value'].textContent,'103 / 103');
+  fields['#scorad_area'].value='0';
+  fields['#scorad_itch'].value='0';
+  fields['#scorad_sleep'].value='0';
+  for(let i=0;i<6;i++)fields['#scorad_b'+i].value='0';
+  fields['#scorad_area'].oninput();
+  assert.equal(output['#score-value'].textContent,'0 / 103');
+  fields['#scorad_area'].value='101';fields['#scorad_area'].oninput();
+  assert.equal(output['#score-value'].textContent,'—');
+});
+test('FIGO PALM-COEIN is multi-category, non-additive, never a risk score',()=>{
+  const figo=scores.find(x=>x.id==='palmcoein');
+  assert.ok(figo&&figo.custom!=='reference'&&figo.questions.length===9);
+  const multiple=evaluate('palmcoein',[1,0,1,0,0,0,0,1,0]);
+  assert.equal(multiple.value,'P, L, I');
+  assert.match(multiple.desc,/Categorias FIGO/);
+  const none=evaluate('palmcoein',Array(9).fill(0));
+  assert.match(none.value,/Sem categoria/);
+});
+test('Prior placeholders SCORAD and PALM-COEIN now active and unique',()=>{
+ for(const id of ['scorad','palmcoein']){
+   const xs=scores.filter(x=>x.id===id);assert.equal(xs.length,1);
+   assert.ok(xs[0].reference&&xs[0].safetyNote&&xs[0].auditDate);
+   assert.notEqual(xs[0].custom,'reference');
+ }
+ assert.equal(scores.filter(x=>x.custom==='reference').length,16);
+});
