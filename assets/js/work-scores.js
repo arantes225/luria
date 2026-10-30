@@ -1084,7 +1084,7 @@
       reference:"AASLD/EASL. Hepatic Encephalopathy in Chronic Liver Disease. Hepatology. 2014.",
       safetyNote:"Classificação clínica descritiva, não escore aditivo; outras causas de alteração do sensório devem ser pesquisadas."
     },
-    {id:"bap65",name:"BAP-65 — exacerbação de DPOC",category:"Respiratório",aliases:"DPOC exacerbação prognóstico",desc:"Estratifica gravidade em exacerbação aguda de DPOC.",tags:["Pneumologia","Plantão"],auditDate:"2026-10-30",
+    {id:"bap65",name:"BAP-65 — exacerbação de DPOC",category:"Respiratório",aliases:"DPOC exacerbação prognóstico",desc:"Estratifica gravidade em exacerbação aguda de DPOC.",tags:["Pneumologia","Plantão"],auditDate:"2026-10-30",custom:"bap65",
       questions:[q("BUN >25 mg/dL",yesno()),q("Alteração do estado mental",yesno()),q("FC >109 bpm",yesno()),q("Idade >65 anos",yesno())],
       interpret:n=>"BAP-65: "+n+" fatores de risco presentes. Esta SOMA não equivale à classe I–V do modelo original (que depende dos três critérios BAP e da idade). Não usar como classificação prognóstica.",
       reference:"Shorr AF et al. Chest. 2011;140:1177–1183.",
@@ -1255,7 +1255,28 @@
   function field(label,id,type="number",attrs=""){return `<div class="score-field"><label for="${id}">${label}</label><input id="${id}" type="${type}" ${attrs}></div>`;}
   function selectField(label,id,opts){return `<div class="score-field"><label for="${id}">${label}</label><select id="${id}"><option value="">Selecione…</option>${opts.map(o=>`<option value="${o.value}">${esc(o.text)}</option>`).join("")}</select></div>`;}
 
+
   const customRender={
+    bap65(f,s){
+      f.innerHTML=s.questions.map((qq,i)=>
+        '<div class="score-field"><label>'+esc(qq.label)+'</label>'+
+        '<select data-q="'+i+'"><option value="">Selecione…</option>'+
+        qq.options.map(o=>'<option value="'+o.value+'">'+esc(o.text)+'</option>').join('')+
+        '</select></div>'
+      ).join('');
+      const update=()=>{
+        const values=$('select',f).map(x=>x.value);
+        if(values.some(x=>x===''))return setResult('—','Preencha os quatro itens.','BAP-65: BUN, estado mental, pulso e idade.');
+        const bap=values.slice(0,3).reduce((sum,x)=>sum+Number(x),0);
+        const age=values[3]==='1';
+        const cls=bap===0?(age?'II':'I'):({1:'III',2:'IV',3:'V'}[bap]);
+        setResult('Classe '+cls,'BAP-65 classe '+cls+' para exacerbação de DPOC.',
+          'Classe de gravidade populacional; não substitui gasometria, ventilação, oximetria ou avaliação clínica.');
+      };
+      $('select',f).forEach(x=>x.onchange=update);
+      setResult('—','Preencha os quatro itens.','A classificação I–V depende dos três fatores BAP e da idade.');
+    },
+
     reference(f,s){
       f.innerHTML='<div class="score-warning"><strong>Referência clínica — cálculo não habilitado.</strong> Esta ferramenta necessita de regras oficiais, tabelas completas ou aplicação por profissional treinado. Não há pontuação automatizada nesta versão.</div><p class="score-intro">'+esc(s.desc)+'</p><p><strong>Fonte para conferência:</strong> '+esc(s.reference)+'</p>';
       setResult("—","Não calcular nesta interface.","Use a diretriz original ou instrumento oficial. Não há validação automatizada para este item.");
