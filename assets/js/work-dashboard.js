@@ -25,6 +25,7 @@
 
   const groups = [
     ['Consulta e prescrição', [
+      ['protocol', 'Anamnese IA', 'Organize relatos soltos em anamnese formal.', 'anamnese/', 'indigo'],
       ['rx', 'Bulário', 'Consulte medicamentos e apresentações.', 'bulario/', 'blue'],
       ['file', 'Prescrição', 'Organize suas prescrições.', 'prescricao/', 'green'],
       ['protocol', 'Cola rápida', 'Anotações com acesso temporário.', 'prontuario-rapido/', 'violet']

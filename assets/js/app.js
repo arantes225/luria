@@ -1375,6 +1375,7 @@ const PAGE_INFO = {
   admin: { title: "Admin", eyebrow: "Gestão LURIA", helper: "Gerencie conteúdo, acessos e operação da plataforma." },
   beta_testers: { title: "Beta Testers", eyebrow: "Feedback beta", helper: "Acompanhe sugestões e pontos de melhoria." },
   trabalho_dashboard: { title: "Dashboard", eyebrow: "Rotina clínica", helper: "Acesse rapidamente as ferramentas do seu dia." },
+  trabalho_anamnese: { title: "Organizador de Anamnese", eyebrow: "IA Clínica", helper: "Estruture dados soltos e transcrições em anamnese médica completa." },
   trabalho_paciente: { title: "Paciente — Central Clínica", eyebrow: "Contexto temporário", helper: "Organize uma avaliação sem substituir as ferramentas clínicas independentes." },
   trabalho_gestor_plantoes: { title: "Gestor de Plantões", eyebrow: "Escalas e plantões", helper: "Organize sua rotina de plantões em um só lugar." },
   trabalho_plantoes: { title: "Escala", eyebrow: "Plantões e horários", helper: "Visualize e organize seus plantões." },
@@ -1634,6 +1635,10 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
       ${String(page).startsWith("trabalho_") ? `
         <a class="nav-link ${page === "trabalho_dashboard" ? "active" : ""}" href="/trabalho/">
           <span class="nav-icon">◫</span><span>Dashboard</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_anamnese" ? "active" : ""}" href="/trabalho/anamnese/">
+          <span class="nav-icon">✦</span><span>Anamnese IA</span>
         </a>
 
         <a class="nav-link ${page === "trabalho_paciente" ? "active" : ""}" href="/trabalho/paciente/">
