@@ -1320,6 +1320,143 @@
     else if(scores[existingIndex].custom==="reference")scores[existingIndex]=item;
   }
 
+
+  // Lote 8: substitui fichas 'reference' existentes sem criar novos IDs.
+  // Fontes: TG18 (doi:10.1002/jhbp.509), KDIGO 2012/2024, PASI/SBD 2024.
+  const batch8PasiRegions=["Cabeça e pescoço","Membros superiores","Tronco","Membros inferiores"];
+  const batch8AreaOptions=[
+    opt("0% (sem lesão)",0),opt("1–9% da região",1),opt("10–29%",2),
+    opt("30–49%",3),opt("50–69%",4),opt("70–89%",5),opt("90–100%",6)
+  ];
+  const batch8IntensityOptions=[opt("Ausente",0),opt("Leve",1),opt("Moderada",2),opt("Grave",3),opt("Muito grave",4)];
+  const batch8Scores=[
+    {id:"pesi",name:"PESI completo — TEP confirmado",category:"Tromboembolismo",
+      aliases:"embolia pulmonar índice original PESI prognóstico",desc:"PESI original: idade exata em anos e dez fatores adicionais, classes prognósticas I–V.",tags:["Plantão","TEP"],auditDate:"2026-10-30",custom:"pesi",
+      questions:[
+        q("Sexo masculino",yesno(10)),q("Câncer ativo/recente ou metastático",yesno(30)),
+        q("Histórico de insuficiência cardíaca",yesno(10)),q("Doença pulmonar crônica",yesno(10)),
+        q("FC ≥110 bpm",yesno(20)),q("PAS <100 mmHg",yesno(30)),
+        q("FR ≥30 irpm",yesno(20)),q("Temperatura <36°C",yesno(20)),
+        q("Estado mental alterado",yesno(60)),q("Saturação arterial O₂ <90%",yesno(20))
+      ],
+      interpret:n=>n<=65?"Classe I (muito baixo risco).":n<=85?"Classe II (baixo risco).":n<=105?"Classe III (risco intermediário).":n<=125?"Classe IV (risco elevado).":"Classe V (risco muito elevado).",
+      reference:"Aujesky D et al. Am J Respir Crit Care Med. 2005;172:1041–1046; Michigan Medicine 2024, PESI Table 9, NCBI Bookshelf NBK611959.",
+      safetyNote:"Apenas em TEP confirmado, em adultos. Não indica alta nem exclui disfunção ventricular direita; usar Hestia, biomarcadores e avaliação clínica."
+    },
+    {id:"rockall",name:"Rockall completo (após endoscopia)",category:"Gastroenterologia",
+      aliases:"hemorragia digestiva alta HDA endoscopia",desc:"Rockall completo: componentes clínicos mais diagnóstico e estigmas endoscópicos, 0–11.",tags:["Gastroenterologia","Plantão"],auditDate:"2026-10-30",
+      questions:[
+        q("Idade",[opt("<60 anos",0),opt("60–79 anos",1),opt("≥80 anos",2)]),
+        q("Choque",[opt("PAS ≥100 e FC <100",0),opt("PAS ≥100 e FC ≥100",1),opt("PAS <100",2)]),
+        q("Comorbidade",[opt("Nenhuma comorbidade maior",0),opt("Insuficiência cardíaca, coronariopatia ou outra maior",2),opt("Falência renal/hepática ou neoplasia disseminada",3)]),
+        q("Diagnóstico endoscópico",[opt("Sem lesão, sem estigma, ou Mallory-Weiss",0),opt("Outras causas",1),opt("Neoplasia digestiva alta",2)]),
+        q("Estigmas endoscópicos",[opt("Ausentes ou ponto escuro isolado",0),opt("Sangue, coágulo aderido, vaso visível ou sangramento ativo",2)])
+      ],
+      interpret:n=>"Rockall completo "+n+"/11: pontuações mais altas indicam risco prognóstico maior. Não usar isoladamente para alta ou momento de endoscopia.",
+      reference:"Rockall TA et al. Gut. 1996;38:316–321; Guidelines for endoscopic management of nonvariceal upper GI bleeding (2025), Table 5.",
+      safetyNote:"Exige achados endoscópicos. O Rockall pré-endoscópico (somente 3 primeiros itens) não deve ser confundido com esta pontuação total."
+    },
+    {id:"tokyochole",name:"Tokyo TG18 — colecistite aguda",category:"Cirurgia",
+      aliases:"colecistite diagnostico gravidade cirurgia",desc:"Algoritmo TG18 de suspeita/confirmação e graduação de colecistite aguda.",tags:["Plantão","Cirurgia"],auditDate:"2026-10-30",
+      questions:[
+        q("Diagnóstico A: Murphy ou dor/massa/sensibilidade no hipocôndrio direito",yesno()),
+        q("Diagnóstico B: febre, PCR ou leucocitose",yesno()),
+        q("Diagnóstico C: imagem compatível com colecistite aguda",yesno()),
+        q("Grau II: leucócitos >18.000/mm³",yesno()),
+        q("Grau II: massa dolorosa palpável no hipocôndrio direito",yesno()),
+        q("Grau II: sintomas há >72 horas",yesno()),
+        q("Grau II: inflamação local intensa, abscesso, gangrena, enfisema ou peritonite biliar",yesno()),
+        q("Grau III: hipotensão requer dopamina ≥5 μg/kg/min ou qualquer noradrenalina",yesno()),
+        q("Grau III: redução do nível de consciência",yesno()),
+        q("Grau III: PaO₂/FiO₂ <300",yesno()),
+        q("Grau III: oligúria ou creatinina >2 mg/dL",yesno()),
+        q("Grau III: INR >1,5",yesno()),
+        q("Grau III: plaquetas <100.000/mm³",yesno())
+      ],
+      interpret:()=>"",
+      reference:"Tokyo Guidelines 2018; Yokoe M et al. J Hepatobiliary Pancreat Sci. 2018;25:41–54. doi:10.1002/jhbp.515.",
+      safetyNote:"A+B = suspeita; A+B+C = confirmação pelos critérios. Grau III se houver qualquer disfunção; Grau II se qualquer critério moderado. Requer exclusão de diagnósticos alternativos."
+    },
+    {id:"tokyocholang",name:"Tokyo TG18 — colangite aguda",category:"Cirurgia",
+      aliases:"colangite gravidade via biliar obstrucao",desc:"Algoritmo TG18 de suspeita/confirmação e graduação de colangite aguda.",tags:["Plantão","Cirurgia"],auditDate:"2026-10-30",
+      questions:[
+        q("Diagnóstico A: febre/calafrios OU leucócitos alterados/PCR elevada",yesno()),
+        q("Diagnóstico B: bilirrubina ≥2 mg/dL ou enzimas canaliculares/hepáticas >1,5×LSN",yesno()),
+        q("Diagnóstico C: dilatação da via biliar OU causa demonstrada na imagem",yesno()),
+        q("Grau II: leucócitos >12.000 ou <4.000/mm³",yesno()),
+        q("Grau II: temperatura ≥39°C",yesno()),
+        q("Grau II: idade ≥75 anos",yesno()),
+        q("Grau II: bilirrubina total ≥5 mg/dL",yesno()),
+        q("Grau II: albumina <70% do limite inferior da referência",yesno()),
+        q("Grau III: hipotensão requer dopamina ≥5 μg/kg/min ou qualquer noradrenalina",yesno()),
+        q("Grau III: alteração do nível de consciência",yesno()),
+        q("Grau III: PaO₂/FiO₂ <300",yesno()),
+        q("Grau III: oligúria ou creatinina >2 mg/dL",yesno()),
+        q("Grau III: INR >1,5",yesno()),
+        q("Grau III: plaquetas <100.000/mm³",yesno())
+      ],
+      interpret:()=>"",
+      reference:"Tokyo Guidelines 2018; Kiriyama S et al. J Hepatobiliary Pancreat Sci. 2018;25:17–30. doi:10.1002/jhbp.512.",
+      safetyNote:"Suspeita: A+(B ou C); confirmação: A+B+C. Grau II requer 2 dos 5 fatores; Grau III requer 1 disfunção. Reavaliar gravidade e sinais vitais."
+    },
+    {id:"kdigoaki",name:"KDIGO 2012 — lesão renal aguda",category:"Renal",
+      aliases:"LRA insuficiencia renal aguda estágios oliguria creatinina",desc:"Estadiamento por mudança aguda comprovada de creatinina, diurese e início de terapia renal substitutiva.",tags:["Plantão","Nefrologia"],auditDate:"2026-10-30",
+      questions:[
+        q("Creatinina: MAIOR critério agudo comprovado (Δ de 48 h ou razão em 7 dias)",[
+          opt("Sem aumento nos intervalos definidos",0),
+          opt("Δ ≥0,3 mg/dL em 48 h ou 1,5–1,9× a basal em até 7 dias",1),
+          opt("2,0–2,9× creatinina basal em até 7 dias",2),
+          opt("≥3× basal ou aumento agudo para ≥4,0 mg/dL",3)
+        ]),
+        q("Diurese por duração CONTÍNUA documentada",[
+          opt("Sem oligúria documentada suficiente",0),
+          opt("<0,5 mL/kg/h por 6 a <12 h",1),
+          opt("<0,5 mL/kg/h por ≥12 h",2),
+          opt("<0,3 mL/kg/h por ≥24 h OU anúria ≥12 h",3)
+        ]),
+        q("Terapia renal substitutiva iniciada por LRA",[opt("Não",0),opt("Sim",3)]),
+        q("Em menor de 18 anos, queda de TFG estimada para <35 mL/min/1,73m²",[opt("Não ou não se aplica",0),opt("Sim",3)])
+      ],
+      interpret:()=>"",
+      reference:"KDIGO Clinical Practice Guideline for Acute Kidney Injury (2012), capítulo 2.1, Tabela 2. National Kidney Foundation KDOQI Commentary 2013.",
+      safetyNote:"É obrigatório confirmar a janela de tempo e o valor basal. Usa-se o MAIOR estágio dos critérios, e não a soma. Sem documentação suficiente não é possível excluir LRA."
+    },
+    {id:"kdigockd",name:"KDIGO 2024 — DRC (CGA)",category:"Renal",
+      aliases:"doença renal cronica categoria G A albuminuria TFG",desc:"Classificação da DRC pelas categorias G de TFG e A de albuminúria, após comprovar cronicidade.",tags:["Ambulatório","Nefrologia"],auditDate:"2026-10-30",custom:"kdigockd",
+      reference:"KDIGO 2024 Clinical Practice Guideline for CKD. Kidney Int. 2024;105(Suppl 4S):S117–S314.",
+      safetyNote:"DRC exige anormalidade estrutural ou funcional por ≥3 meses. Categorias G1–G2 sem lesão renal persistente não confirmam DRC."
+    },
+    {id:"pasi",name:"PASI — psoríase (0–72)",category:"Dermatologia",
+      aliases:"psoriase extensão area eritema infiltração descamação",desc:"Índice de área e gravidade de psoríase por quatro regiões corporais, cada uma com peso próprio.",tags:["Dermatologia","Ambulatório"],auditDate:"2026-10-30",
+      questions:batch8PasiRegions.flatMap(region=>[
+        q(region+": área afetada",batch8AreaOptions),
+        q(region+": eritema",batch8IntensityOptions),
+        q(region+": espessura/infiltração",batch8IntensityOptions),
+        q(region+": descamação",batch8IntensityOptions)
+      ]),
+      interpret:()=>"",
+      reference:"Sociedade Brasileira de Dermatologia, Consenso Brasileiro de Psoríase 2024; DermNet, PASI Scoring.",
+      safetyNote:"PASI não considera sintomas subjetivos e pode subestimar doença em áreas especiais. Exige avaliação dermatológica das quatro regiões; não se aplica bem a eritrodermia."
+    },
+    {id:"abcde",name:"ABCDE — triagem de lesão pigmentada",category:"Dermatologia",
+      aliases:"melanoma assimetria borda cor diametro evolução",desc:"Checklist de sinais ABCDE para lembrar achados suspeitos em lesões pigmentadas.",tags:["Dermatologia","Ambulatório"],auditDate:"2026-10-30",
+      questions:[
+        q("A: assimetria",yesno()),q("B: bordas irregulares",yesno()),
+        q("C: múltiplas cores ou distribuição irregular",yesno()),
+        q("D: diâmetro >6 mm",yesno()),q("E: evolução/mudança da lesão",yesno())
+      ],
+      interpret:()=>"",
+      reference:"American Academy of Dermatology — ABCDEs of melanoma; Ministério da Saúde/INCA — identificação de sinais suspeitos de câncer da pele.",
+      safetyNote:"NÃO é escore numérico nem método para excluir melanoma. Um sinal pode justificar avaliação dermatológica; lesões pequenas e sem sinais ABCDE também podem ser melanoma."
+    }
+  ];
+  for(const item of batch8Scores){
+    const idx=scores.findIndex(s=>s.id===item.id);
+    if(idx<0)scores.push(item);
+    else if(scores[idx].custom==="reference")scores[idx]=item;
+    else throw Error("Lote 8: ID já implementado e não substituível: "+item.id);
+  }
+
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
   const favKey = "luria:scores:favorites";
   const recentKey = "luria:scores:recent";
