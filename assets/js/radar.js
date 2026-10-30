@@ -1,5 +1,16 @@
 (() => {
   'use strict';
+  // Optimization: Debounce function delays the execution of the render function
+  // until the user has stopped typing for the specified wait time.
+  // Impact: Reduces unnecessary UI re-renders and main thread blocking during fast typing,
+  // making the search experience smoother and reducing CPU/Memory usage.
+  function debounce(func, wait) {
+    let timeout;
+    return function(...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+  }
   const $ = id => document.getElementById(id);
   const areas = ['Clínica Médica', 'Cirurgia Geral', 'Pediatria', 'Ginecologia e Obstetrícia', 'Saúde Coletiva'];
   const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -66,7 +77,7 @@
       });
       $('radar-bank').addEventListener('change', selectBank);
       ['radar-profile', 'radar-source'].forEach(id => $(id).addEventListener('change', render));
-      $('radar-search').addEventListener('input', render);
+      $('radar-search').addEventListener('input', debounce(render, 300));
       $('radar-total').textContent = `${data.provas.length} provas`;
       $('radar-controls').disabled = false; selectBank();
     } catch {
