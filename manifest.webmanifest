@@ -1,7 +1,7 @@
 {
   "name": "LURIA — Aprenda. Conecte. Consolide.",
   "short_name": "LURIA",
-  "description": "Organize cronograma, revisões, caderno, flashcards, questões e desempenho em um único sistema de estudos.",
+  "description": "Organize cronograma, revisões, caderno, flashcards, questões, ECG e desempenho em um único sistema de estudos e plantão.",
   "id": "/",
   "start_url": "/dashboard/",
   "scope": "/",
@@ -12,12 +12,15 @@
   "lang": "pt-BR",
   "categories": [
     "education",
-    "productivity"
+    "productivity",
+    "medical"
   ],
   "shortcuts": [
     { "name": "Meu painel", "short_name": "Painel", "url": "/dashboard/" },
     { "name": "Meu cronograma", "short_name": "Cronograma", "url": "/cronograma/" },
-    { "name": "Revisar flashcards", "short_name": "Revisar", "url": "/flashcards/" }
+    { "name": "Revisar flashcards", "short_name": "Revisar", "url": "/flashcards/" },
+    { "name": "ECG no Plantão", "short_name": "ECG", "url": "/trabalho/ecg/" },
+    { "name": "Scanner de ECG", "short_name": "Scanner ECG", "url": "/trabalho/ecg/captura/" }
   ],
   "icons": [
     {

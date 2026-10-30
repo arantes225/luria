@@ -555,26 +555,38 @@
         const missing = leadInfo.extraction?.missingSegments || [];
         const errors = leadInfo.extraction?.trackingErrors || [];
 
-        // Curva extraída em vermelho de alto contraste
+        // Curva extraída em vermelho de alto contraste com suavização anti-serrilhado (spline quadrática)
         ctx.beginPath();
         ctx.lineWidth = 1.8;
         ctx.strokeStyle = "#dc2626";
+        ctx.lineJoin = "round";
+        ctx.lineCap = "round";
 
-        let first = true;
+        let prevPx = null, prevPy = null;
         for (let i = 0; i < coords.length; i++) {
           const pt = coords[i];
           if (pt && pt.y !== null && !isNaN(pt.y)) {
             const px = pt.x * scaleX;
             const py = pt.y * scaleY;
-            if (first) {
+            if (prevPx === null) {
               ctx.moveTo(px, py);
-              first = false;
             } else {
-              ctx.lineTo(px, py);
+              const midX = (prevPx + px) / 2;
+              const midY = (prevPy + py) / 2;
+              ctx.quadraticCurveTo(prevPx, prevPy, midX, midY);
             }
+            prevPx = px;
+            prevPy = py;
           } else {
-            first = true;
+            if (prevPx !== null) {
+              ctx.lineTo(prevPx, prevPy);
+              prevPx = null;
+              prevPy = null;
+            }
           }
+        }
+        if (prevPx !== null) {
+          ctx.lineTo(prevPx, prevPy);
         }
         ctx.stroke();
 
@@ -640,34 +652,48 @@
       ctx.stroke();
     }
 
-    renderCurveOnContext(ctx, leadInfo.extractedSignal, w, h, "#1e293b", 1.6);
+    renderCurveOnContext(ctx, leadInfo.extractedSignal, w, h, "#1e293b", 1.6, leadInfo.calibration || leadInfo.extraction?.calibration);
     ctx.restore();
   }
 
-  function renderCurveOnContext(ctx, signal, w, h, strokeColor, lineWidth) {
+  function renderCurveOnContext(ctx, signal, w, h, strokeColor, lineWidth, calibration = null) {
     if (!signal || signal.length === 0) return;
-    const centerY = h / 2 + 5;
-    const scaleY = 32;
+    const gainMm = calibration?.gainMmPerMv || 10;
+    const pxPerMm = calibration?.pixelsPerMmY || 4; // grid digital padrão usa 4px por mm (20px por bloco de 5mm)
+    const scaleY = gainMm * pxPerMm; // 40 px por mV na calibração de 10 mm/mV
+    const centerY = Math.round(h / 40) * 20 || Math.round(h / 2);
 
     ctx.beginPath();
-    ctx.lineWidth = lineWidth;
-    ctx.strokeStyle = strokeColor;
+    ctx.lineWidth = lineWidth || 1.6;
+    ctx.strokeStyle = strokeColor || "#1e293b";
+    ctx.lineJoin = "round";
+    ctx.lineCap = "round";
 
-    let first = true;
+    let prevX = null, prevY = null;
     for (let i = 0; i < signal.length; i++) {
       const val = signal[i];
       if (val === null || isNaN(val)) {
-        first = true;
+        if (prevX !== null) {
+          ctx.lineTo(prevX, prevY);
+          prevX = null;
+          prevY = null;
+        }
         continue;
       }
       const x = (i / signal.length) * w;
       const y = centerY - val * scaleY;
-      if (first) {
+      if (prevX === null) {
         ctx.moveTo(x, y);
-        first = false;
       } else {
-        ctx.lineTo(x, y);
+        const midX = (prevX + x) / 2;
+        const midY = (prevY + y) / 2;
+        ctx.quadraticCurveTo(prevX, prevY, midX, midY);
       }
+      prevX = x;
+      prevY = y;
+    }
+    if (prevX !== null) {
+      ctx.lineTo(prevX, prevY);
     }
     ctx.stroke();
   }

@@ -63,11 +63,13 @@
         const contrast = Math.max(0, localBg - luma);
 
         // Penalizar cor saturada (grade vermelha/rosa tem R >> G, B)
+        // Linhas de grade milimetrada vermelha/laranja possuem luminância intermediária/alta (luma > 85)
+        // Se a luma for escura (luma <= 85), trata-se de tinta escura do traçado passando sobre a grade!
         const chromaSpread = Math.max(Math.abs(r - g), Math.abs(r - b), Math.abs(g - b));
-        const isColoredGrid = (r - b > 38) || (chromaSpread > 55 && luma > 95);
+        const isColoredGrid = (luma > 85) && ((r - b > 34) || (chromaSpread > 48 && luma > 95));
 
-        if (!isColoredGrid && luma < Math.min(165, localBg - 32)) {
-          inkStrength[y * width + x] = Math.min(1.0, contrast / 160);
+        if (!isColoredGrid && luma < Math.min(168, localBg - 28)) {
+          inkStrength[y * width + x] = Math.min(1.0, contrast / 150);
         } else {
           inkStrength[y * width + x] = 0;
         }
@@ -196,60 +198,149 @@
       columnClusters[x] = validClusters;
     }
 
-    // Programação Dinâmica (Viterbi) para escolher o caminho ótimo contínuo entre os clusters de cada coluna
+    // Programação Dinâmica (Viterbi com Forward-Trellis e Backtracking)
+    // Constrói o caminho ótimo global entre os clusters de tinta através das colunas.
     const rawY = new Float32Array(width).fill(NaN);
     const validMask = new Uint8Array(width);
     const trackingErrors = [];
 
-    // Primeiro passe: selecionar o cluster mais coerente espacialmente em relação à linha de base e vizinhos
-    let prevY = prelimBaselineY;
+    // Estruturas de DP Trellis por coluna
+    const dpCost = new Array(width);
+    const dpParent = new Array(width);
+    const validColsList = [];
+    let lastValidX = null;
+
     for (let x = 0; x < width; x++) {
       const candidates = columnClusters[x];
       if (!candidates || candidates.length === 0) {
-        rawY[x] = NaN;
-        validMask[x] = 0;
         continue;
       }
+      validColsList.push(x);
+      dpCost[x] = new Float32Array(candidates.length);
+      dpParent[x] = new Int32Array(candidates.length).fill(-1);
 
-      // Escolher candidato que minimiza distância ao prevY e proximidade à linha de base preliminar, ponderado pela força da tinta
-      let bestCand = candidates[0];
-      let bestCost = Infinity;
-      for (const c of candidates) {
-        const jumpCost = Math.abs(c.yCenter - prevY) * 1.1;
-        const baseCost = Math.abs(c.yCenter - prelimBaselineY) * 0.35;
-        const cost = jumpCost + baseCost - c.weight * 2.5;
-        if (cost < bestCost) {
-          bestCost = cost;
-          bestCand = c;
+      if (lastValidX === null) {
+        // Primeira coluna com tinta
+        for (let cIdx = 0; cIdx < candidates.length; cIdx++) {
+          const c = candidates[cIdx];
+          dpCost[x][cIdx] = Math.abs(c.yCenter - prelimBaselineY) * 0.30 - c.weight * 2.5;
+        }
+      } else {
+        const prevCandidates = columnClusters[lastValidX];
+        const dx = x - lastValidX;
+
+        for (let cIdx = 0; cIdx < candidates.length; cIdx++) {
+          const c = candidates[cIdx];
+          let bestCost = Infinity;
+          let bestParentIdx = -1;
+
+          for (let pIdx = 0; pIdx < prevCandidates.length; pIdx++) {
+            const p = prevCandidates[pIdx];
+            // Distância vertical considerando sobreposição de segmento (span)
+            let dy = 0;
+            if (c.yEnd < p.yStart) {
+              dy = p.yStart - c.yEnd;
+            } else if (p.yEnd < c.yStart) {
+              dy = c.yStart - p.yEnd;
+            } else {
+              dy = 0; // segmentos se conectam verticalmente
+            }
+
+            const jumpCost = (Math.abs(c.yCenter - p.yCenter) * 1.05 + dy * 0.5) / Math.sqrt(dx);
+            const baseCost = Math.abs(c.yCenter - prelimBaselineY) * 0.20;
+            const nodeReward = -c.weight * 2.5;
+            const transCost = dpCost[lastValidX][pIdx] + jumpCost + baseCost + nodeReward;
+
+            if (transCost < bestCost) {
+              bestCost = transCost;
+              bestParentIdx = pIdx;
+            }
+          }
+
+          dpCost[x][cIdx] = bestCost;
+          dpParent[x][cIdx] = bestParentIdx;
+        }
+      }
+      lastValidX = x;
+    }
+
+    // Backtracking global a partir da última coluna válida
+    const chosenClusterMap = new Map();
+    if (lastValidX !== null && dpCost[lastValidX]) {
+      let bestTerminalIdx = 0;
+      let minTerminalCost = dpCost[lastValidX][0];
+      for (let k = 1; k < dpCost[lastValidX].length; k++) {
+        if (dpCost[lastValidX][k] < minTerminalCost) {
+          minTerminalCost = dpCost[lastValidX][k];
+          bestTerminalIdx = k;
         }
       }
 
-      // Preservação de picos estreitos do QRS:
-      // Se o segmento vertical na coluna tem espessura significativa (subida/descida rápida do QRS),
-      // usar a extremidade superior (onda R) ou inferior (onda Q/S) correspondente à deflexão!
-      let chosenY = bestCand.yCenter;
-      if (bestCand.span >= 3) {
-        const distTop = prelimBaselineY - bestCand.yStart;
-        const distBot = bestCand.yEnd - prelimBaselineY;
-        if (distTop > distBot * 1.35 && distTop > 3) {
-          chosenY = bestCand.yStart + 0.5;
-        } else if (distBot > distTop * 1.35 && distBot > 3) {
-          chosenY = bestCand.yEnd - 0.5;
+      let currX = lastValidX;
+      let currIdx = bestTerminalIdx;
+      // Percorre os antecessores da direita para a esquerda
+      for (let colIdx = validColsList.length - 1; colIdx >= 0; colIdx--) {
+        const x = validColsList[colIdx];
+        if (x !== currX) continue;
+
+        const cand = columnClusters[currX][currIdx];
+        chosenClusterMap.set(currX, cand);
+
+        const parentIdx = dpParent[currX][currIdx];
+        if (parentIdx >= 0 && colIdx > 0) {
+          currX = validColsList[colIdx - 1];
+          currIdx = parentIdx;
+        } else {
+          break;
+        }
+      }
+    }
+
+    // Segundo passe: calcular a coordenada sub-pixel de Y preservando a morfologia contínua do QRS
+    const sortedChosenCols = Array.from(chosenClusterMap.keys()).sort((a, b) => a - b);
+    for (let i = 0; i < sortedChosenCols.length; i++) {
+      const x = sortedChosenCols[i];
+      const cluster = chosenClusterMap.get(x);
+      const prevX = (i > 0) ? sortedChosenCols[i - 1] : null;
+      const nextX = (i < sortedChosenCols.length - 1) ? sortedChosenCols[i + 1] : null;
+
+      const prevCluster = prevX !== null ? chosenClusterMap.get(prevX) : null;
+      const nextCluster = nextX !== null ? chosenClusterMap.get(nextX) : null;
+
+      const prevY = prevCluster ? prevCluster.yCenter : prelimBaselineY;
+      const nextY = nextCluster ? nextCluster.yCenter : prelimBaselineY;
+
+      let chosenY = cluster.yCenter;
+
+      if (cluster.span >= 5) {
+        // Traço vertical extenso (típico de complexos QRS rápidos)
+        const isLocalPeak = (prevY > cluster.yStart + 2) && (nextY > cluster.yStart + 2);
+        const isLocalValley = (prevY < cluster.yEnd - 2) && (nextY < cluster.yEnd - 2);
+
+        if (isLocalPeak) {
+          chosenY = cluster.yStart + 0.5;
+        } else if (isLocalValley) {
+          chosenY = cluster.yEnd - 0.5;
+        } else {
+          const slopeTargetY = (prevY + nextY) / 2;
+          chosenY = Math.max(cluster.yStart + 0.5, Math.min(cluster.yEnd - 0.5, slopeTargetY));
         }
       }
 
-      // Verificar se houve salto abrupto suspeito (> 48% da altura em 1 coluna sem traço vertical conector)
-      if (x > 0 && validMask[x - 1] === 1 && Math.abs(chosenY - prevY) > height * 0.48 && bestCand.span < Math.abs(chosenY - prevY) * 0.5) {
-        trackingErrors.push({
-          x,
-          type: "discontinuity_jump",
-          deltaPx: Number(Math.abs(chosenY - prevY).toFixed(2))
-        });
+      // Detectar saltos anômalos de descontinuidade
+      if (prevX !== null && validMask[prevX] === 1) {
+        const deltaY = Math.abs(chosenY - rawY[prevX]);
+        if (deltaY > height * 0.48 && cluster.span < deltaY * 0.5) {
+          trackingErrors.push({
+            x,
+            type: "discontinuity_jump",
+            deltaPx: Number(deltaY.toFixed(2))
+          });
+        }
       }
 
       rawY[x] = chosenY;
       validMask[x] = 1;
-      prevY = chosenY;
     }
 
     return {
@@ -719,9 +810,30 @@
       }
     }
     validYList.sort((a, b) => a - b);
-    const baselineY = validYList.length > 0
+    const globalBaselineY = validYList.length > 0
       ? validYList[Math.floor(validYList.length / 2)]
       : height / 2;
+
+    // Estimativa robusta de inclinação linear (Tilt / Skew da folha)
+    // Coleta pontos isoelétricos próximos à mediana (< 6 px de desvio) para excluir picos de QRS
+    let sumX = 0, sumY = 0, sumXX = 0, sumXY = 0, nIso = 0;
+    const xMid = width / 2;
+    for (let x = 0; x < width; x++) {
+      const y = gapResult.finalY[x];
+      if (Number.isFinite(y) && Math.abs(y - globalBaselineY) <= 6) {
+        const dx = x - xMid;
+        sumX += dx;
+        sumY += (y - globalBaselineY);
+        sumXX += dx * dx;
+        sumXY += dx * (y - globalBaselineY);
+        nIso++;
+      }
+    }
+
+    const tiltSlope = (nIso >= 15 && sumXX > 100) ? (sumXY / sumXX) : 0;
+    // Só aplica compensação se houver inclinação perceptível (|tiltSlope| >= 0.006 e < 0.20)
+    const hasTilt = Math.abs(tiltSlope) >= 0.006 && Math.abs(tiltSlope) < 0.20;
+    const baselineY = globalBaselineY;
 
     // Determinar Calibração Real vs Desconhecida
     let calInfo = calibration;
@@ -748,7 +860,8 @@
     for (let x = 0; x < width; x++) {
       const yPx = gapResult.finalY[x];
       if (Number.isFinite(yPx)) {
-        const mv = Number(((baselineY - yPx) / effectivePixelsPerMv).toFixed(4));
+        const baselineAtX = hasTilt ? (globalBaselineY + tiltSlope * (x - xMid)) : globalBaselineY;
+        const mv = Number(((baselineAtX - yPx) / effectivePixelsPerMv).toFixed(4));
         signalWithNulls[x] = mv;
         numericSignalForCompat.push(mv);
         curveCoordinatesPx[x] = {

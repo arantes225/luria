@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">`r`n  <meta name="apple-mobile-web-app-capable" content="yes">`r`n  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">`r`n  <meta name="apple-mobile-web-app-title" content="ECG LURIA">`r`n  <meta name="mobile-web-app-capable" content="yes">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Câmera do Scanner · ECG LURIA</title>
+  <title>CÃ¢mera do Scanner Â· ECG LURIA</title>
   <meta name="theme-color" content="#030a16">
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/assets/css/luria-rotate-hint.css?v=2">
   <link rel="stylesheet" href="/assets/css/ecg-smart-camera.css?v=2">
   <style>
-    /* Reset total para aplicação de câmera em tela cheia */
+    /* Reset total para aplicaÃ§Ã£o de cÃ¢mera em tela cheia */
     *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
@@ -36,7 +36,7 @@
       display: none !important;
     }
 
-    /* Contêiner principal da câmera independente */
+    /* ContÃªiner principal da cÃ¢mera independente */
     .ecg-capture-app {
       position: fixed;
       inset: 0;
@@ -180,7 +180,7 @@
       display: none;
     }
 
-    /* Centro: Retículo e Mira */
+    /* Centro: RetÃ­culo e Mira */
     .ecg-hud-center {
       flex: 1;
       position: relative;
@@ -205,13 +205,13 @@
       border-color: rgba(255, 255, 255, 0.3);
       border-style: dashed;
     }
-    /* Estado Macro: Folha travada e estável */
+    /* Estado Macro: Folha travada e estÃ¡vel */
     .ecg-hud-reticle-box[data-macro-state="LOCK_DOCUMENT"] {
       border-color: rgba(56, 189, 248, 0.85);
       border-style: solid;
       box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.42), 0 0 20px rgba(56, 189, 248, 0.3);
     }
-    /* Estado Macro: Estrutura e derivações mapeadas */
+    /* Estado Macro: Estrutura e derivaÃ§Ãµes mapeadas */
     .ecg-hud-reticle-box[data-macro-state="MAP_LEADS"],
     .ecg-hud-reticle-box[data-macro-state="GUIDED_CAPTURE"] {
       border-color: rgba(16, 185, 129, 0.85);
@@ -354,7 +354,7 @@
       box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
     }
 
-    /* Modal de Derivação Incerta (Ultrassensível) */
+    /* Modal de DerivaÃ§Ã£o Incerta (UltrassensÃ­vel) */
     .ecg-uncertain-popup {
       position: absolute;
       top: 50%;
@@ -485,19 +485,19 @@
         <div class="ecg-hud-top">
           <div class="ecg-hud-top-left">
             <a href="/trabalho/ecg/" class="ecg-hud-btn-back" id="ecg-btn-exit" title="Voltar ao ECG">
-              ← Voltar ao ECG
+              â† Voltar ao ECG
             </a>
             <div class="ecg-hud-mode-pill">
-              <button type="button" class="ecg-hud-mode-btn is-active" id="ecg-mode-fast">Automático</button>
-              <button type="button" class="ecg-hud-mode-btn" id="ecg-mode-ultra">Ultrassensível</button>
+              <button type="button" class="ecg-hud-mode-btn is-active" id="ecg-mode-fast">AutomÃ¡tico</button>
+              <button type="button" class="ecg-hud-mode-btn" id="ecg-mode-ultra">UltrassensÃ­vel</button>
             </div>
-            <button type="button" class="ecg-hud-btn-back" id="ecg-btn-debug-toggle" style="display:none;font-size:11px;padding:4px 8px;background:rgba(220,38,38,0.3)" title="Diagnóstico de Depuração">
-              🐞 Diagnóstico
+            <button type="button" class="ecg-hud-btn-back" id="ecg-btn-debug-toggle" style="display:none;font-size:11px;padding:4px 8px;background:rgba(220,38,38,0.3)" title="DiagnÃ³stico de DepuraÃ§Ã£o">
+              ðŸž DiagnÃ³stico
             </button>
           </div>
 
           <div class="ecg-hud-top-right">
-            <button id="ecg-btn-torch" class="ecg-hud-btn-icon" type="button" aria-label="Lanterna">🔦</button>
+            <button id="ecg-btn-torch" class="ecg-hud-btn-icon" type="button" aria-label="Lanterna">ðŸ”¦</button>
             <div id="ecg-zoom-controls" style="display:none;align-items:center;gap:4px">
               <button id="ecg-btn-zoom-1" class="ecg-hud-btn-back" type="button" style="padding:4px 8px;font-size:11px">1x</button>
               <button id="ecg-btn-zoom-2" class="ecg-hud-btn-back" type="button" style="padding:4px 8px;font-size:11px">2x</button>
@@ -527,14 +527,14 @@
           </div>
 
           <div class="ecg-hud-actions-row">
-            <button class="ecg-btn-snap" id="ecg-btn-snap" type="button" aria-label="Capturar manualmente">📸</button>
+            <button class="ecg-btn-snap" id="ecg-btn-snap" type="button" aria-label="Capturar manualmente">ðŸ“¸</button>
           </div>
         </div>
 
-        <!-- MODAL DE DERIVAÇÃO INCERTA (ULTRASSENSÍVEL) -->
+        <!-- MODAL DE DERIVAÃ‡ÃƒO INCERTA (ULTRASSENSÃVEL) -->
         <div id="ecg-uncertain-modal" class="ecg-uncertain-popup" hidden>
-          <h3>Identificação incerta da derivação</h3>
-          <p>O traçado foi localizado, mas o rótulo impresso não pôde ser confirmado com confiança. Reenquadre ou confirme manualmente:</p>
+          <h3>IdentificaÃ§Ã£o incerta da derivaÃ§Ã£o</h3>
+          <p>O traÃ§ado foi localizado, mas o rÃ³tulo impresso nÃ£o pÃ´de ser confirmado com confianÃ§a. Reenquadre ou confirme manualmente:</p>
           <select id="ecg-uncertain-select">
             <option value="DI">DI</option><option value="DII">DII</option><option value="DIII">DIII</option>
             <option value="aVR">aVR</option><option value="aVL">aVL</option><option value="aVF">aVF</option>
@@ -552,11 +552,11 @@
 
   <!-- SCRIPTS ESSENCIAIS DO ECG -->
   <script src="/assets/js/luria-rotate-controller.js?v=2"></script>
-  <script src="/assets/js/ecg-contracts.js?v=3"></script>
-  <script src="/assets/js/ecg-signal-extractor.js?v=3"></script>
-  <script src="/assets/js/ecg-cv-engine.js?v=3"></script>
-  <script src="/assets/js/ecg-smart-camera.js?v=3"></script>
-  <script src="/assets/js/ecg-capture-page.js?v=1"></script>
+  <script src="/assets/js/ecg-contracts.js?v=4"></script>
+  <script src="/assets/js/ecg-signal-extractor.js?v=4"></script>
+  <script src="/assets/js/ecg-cv-engine.js?v=4"></script>
+  <script src="/assets/js/ecg-smart-camera.js?v=4"></script>
+  <script src="/assets/js/ecg-capture-page.js?v=2"></script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>
