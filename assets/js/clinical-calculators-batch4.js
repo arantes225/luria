@@ -310,11 +310,11 @@
     (n, u, v) => { const w = +v.w; return "Adrenalina diluída 1:10.000 (1 ampola + 9 mL SF): " + f(Math.min(0.1 * w, 10), 1) + " mL IV/IO | Amiodarona PCR: " + f(Math.min(5 * w, 300), 0) + " mg | Desfibrilação: 1º choque " + f(2 * w, 0) + " J → 2º choque " + f(4 * w, 0) + " J | Bolus cristaloide: " + f(20 * w, 0) + " mL."; });
 
   // ---------- Conversores ----------
-  const dir = (id, code, title, a, b, k, unitA, unitB, ref) => {
+  const dir = (id, code, title, a, b, k, unitA, unitB, ref, interp) => {
     add("Conversores", code, title, a + " ↔ " + b, id,
       [num("x", "Valor", ""), sel("d", "Conversão", a + " → " + b + "|" + b + " → " + a)],
       a + " × " + k + " = " + b.split(" ")[0] + " (fator " + k + ").",
-      v => v.d.indexOf(a) === 0 ? [+v.x * k, unitB] : [+v.x / k, unitA], ref);
+      v => v.d.indexOf(a) === 0 ? [+v.x * k, unitB] : [+v.x / k, unitA], ref, interp || ((n, u) => "Valor convertido: " + f(n, 2) + " " + u + " (conversão pelo fator oficial)."));
   };
   dir("convcr", "Cr", "Creatinina (mg/dL ↔ µmol/L)", "mg/dL", "µmol/L", 88.4, "mg/dL", "µmol/L", S.conv);
   dir("convbili", "Bili", "Bilirrubina (mg/dL ↔ µmol/L)", "mg/dL", "µmol/L", 17.1, "mg/dL", "µmol/L", S.conv);
@@ -324,6 +324,29 @@
   dir("convbun", "BUN", "Ureia ↔ BUN (mg/dL)", "ureia", "BUN", 1 / 2.14, "mg/dL de ureia", "mg/dL de BUN", S.conv);
   dir("convkpa", "kPa", "Pressão (mmHg ↔ kPa)", "mmHg", "kPa", 0.13332, "mmHg", "kPa", S.conv);
   dir("convlb", "lb", "Peso (lb ↔ kg)", "lb", "kg", 0.45359, "lb", "kg", S.conv);
+
+
+  const batch4MissingInterps = {
+    nonhdl: n => "Colesterol não-HDL: " + f(n, 1) + " mg/dL. Meta aterogênica secundária: < 100 mg/dL (risco intermediário), < 80 mg/dL (alto risco) e < 55 mg/dL (muito alto risco) pela Diretriz Brasileira de Dislipidemias.",
+    reticcorr: n => n > 2 ? "Índice de reticulócitos corrigido > 2%: resposta medular regenerativa/hiperproliferativa (hemólise aguda ou sangramento recente)." : "Índice de reticulócitos corrigido <= 2%: resposta medular hipoproliferativa (carência de ferro, B12/folato, aplasia ou disfunção renal).",
+    caconv: n => "Cálcio total convertido: " + f(n, 2) + ". Referência sérica usual em adultos: 2,15–2,55 mmol/L (8,6–10,2 mg/dL).",
+    plateletconv: n => "Plaquetas convertidas: " + f(n, 0) + ". Faixa de referência usual: 150.000 a 450.000/µL. Plaquetopenia < 100.000/µL; risco grave se < 20.000/µL.",
+    do2: n => n < 900 ? "DO₂ < 900 mL/min: oferta sistêmica de oxigênio reduzida; risco de hipóxia tecidual e acidose lática." : n <= 1100 ? "DO₂ dentro da faixa de normalidade (900–1100 mL/min)." : "DO₂ elevado (> 1100 mL/min): comum em estados hiperdinâmicos (sepse, cirrose, hipertireoidismo).",
+    minvent: n => n < 5 ? "Ventilação-minuto baixa (< 5 L/min): risco de hipoventilação alveolar e hipercapnia." : n <= 8 ? "Ventilação-minuto dentro da faixa normal em repouso (5–8 L/min)." : "Ventilação-minuto elevada (> 8–10 L/min): hiperventilação compensatória ou espaço morto aumentado.",
+    pedweight: n => "Peso estimado pela regra APLS: " + f(n, 1) + " kg. Ferramenta rápida para emergência pediátrica; conferir com fita de Broselow ou peso medido assim que estável.",
+    infdur: n => "Duração prevista da infusão: " + f(n, 2) + " horas (" + f(n * 60, 0) + " minutos).",
+    convcr: n => "Creatinina convertida: " + f(n, 1) + ". Referência usual: 0,6–1,2 mg/dL (53–106 µmol/L).",
+    convbili: n => "Bilirrubina convertida: " + f(n, 1) + ". Referência usual de bilirrubina total: 0,2–1,2 mg/dL (3,4–20,5 µmol/L).",
+    convchol: n => "Colesterol convertido: " + f(n, 2) + ". Interpretar conforme metas de risco cardiovascular.",
+    convtg: n => "Triglicerídeos convertidos: " + f(n, 2) + ". Normal em jejum < 150 mg/dL (< 1,7 mmol/L). Risco de pancreatite se > 500–1000 mg/dL.",
+    convlac: n => "Lactato convertido: " + f(n, 2) + ". Referência: < 2,0 mmol/L (< 18 mg/dL).",
+    convbun: n => "Conversão Ureia ↔ BUN: " + f(n, 1) + ". Relação estequiométrica: Ureia = BUN × 2,14.",
+    convkpa: n => "Pressão convertida: " + f(n, 2) + ".",
+    convlb: n => "Peso convertido: " + f(n, 2) + " (1 lb ≈ 0,4536 kg)."
+  };
+  for (const id of Object.keys(batch4MissingInterps)) {
+    if (!msg[id]) msg[id] = batch4MissingInterps[id];
+  }
 
   for (const row of items) if (!C.some(x => x[4] === row[4])) C.push(row);
   for (const id of Object.keys(extra)) if (!defs[id]) defs[id] = extra[id];

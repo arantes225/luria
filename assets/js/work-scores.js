@@ -879,7 +879,106 @@
       interpret:n=>`TIMI STEMI ${n}/14. Mortalidade estimada em 30 dias: ${n===0?"~0,8%":n===1?"~1,6%":n===2?"~2,2%":n===3?"~4,4%":n===4?"~7,3%":n===5?"~12,4%":n===6?"~16,1%":n===7?"~23,4%":n===8?"~26,8%":">35%"}.`,
       reference:"Morrow DA et al. Circulation. 2000;102:2031–2037.",
       safetyNote:"Não atrasar a reperfusão (angioplastia primária ou fibrinólise) para calcular escores prognósticos."},
-    {id:"centor",name:"Critérios de Centor / McIsaac (Faringoamigdalite)",category:"Infectologia",aliases:"amigdalite faringite estreptocócica streptococcus pyogenes",
+    {
+      id:"maddrey",name:"Função Discriminante de Maddrey (Hepatite Alcoólica)",category:"Gastroenterologia",aliases:"hepatite alcoólica cirrose fígado corticoide prednisolona",
+      desc:"Estratificação de gravidade e indicação de corticoterapia na hepatite alcoólica aguda.",tags:["Gastroenterologia","Hepatologia","Enfermaria"],
+      questions:[
+        q("Tempo de Protrombina (TP) do paciente (segundos)",[opt("Normal / até 13s",0),opt("14–17s (+1 a 4s acima do controle)",2),opt("18–21s (+5 a 8s acima do controle)",6),opt("≥22s (≥9s acima do controle)",10)]),
+        q("Bilirrubina Total sérica (mg/dL)",[opt("<5 mg/dL",2),opt("5–10 mg/dL",8),opt("10–15 mg/dL",13),opt("15–20 mg/dL",18),opt(">20 mg/dL",24)]),
+        q("Presença de Encefalopatia Hepática clínica",yesno(4))
+      ],
+      interpret:n=>n>=32?("Maddrey DF calculada ≥32 (grave): hepatite alcoólica aguda grave associada a mortalidade hospitalar de 30 a 50% em 28 dias. Indicação formal de corticoterapia com Prednisolona 40 mg/dia VO (ou Metilprednisolona 32 mg/dia IV) por 28 dias após descartar infecção bacteriana ativa e sangramento gastrointestinal. Reavaliar no D7 com o Escore de Lille."):("Maddrey DF <32 (não grave): hepatite alcoólica leve a moderada com baixa mortalidade precoce (<10%). Não há benefício comprovado de corticoterapia; manter suporte nutricional calórico-proteico, tiamina e abstinência alcoólica estrita."),
+      reference:"Maddrey WC et al. Gastroenterology. 1978;75:193–199; Carithers RL et al. Ann Intern Med. 1989;110:685–690.",
+      safetyNote:"Rastrear ativamente infecção (PBE, pneumonia, ITU) antes de prescrever corticoide no cirrótico."
+    },
+    {
+      id:"lille",name:"Modelo de Lille (Resposta ao Corticoide no D7)",category:"Gastroenterologia",aliases:"hepatite alcoólica lille corticoide prednisolona D7",
+      desc:"Avaliação prognóstica e de resposta à corticoterapia no 7º dia na hepatite alcoólica grave.",tags:["Gastroenterologia","Hepatologia","UTI"],
+      questions:[
+        q("Idade ≥ 45 anos",yesno(1)),
+        q("Creatinina sérica > 1,3 mg/dL",yesno(1)),
+        q("Albumina sérica < 2,5 g/dL",yesno(1)),
+        q("Bilirrubina no D7 NÃO caiu ou aumentou em relação ao D0",yesno(2)),
+        q("Tempo de Protrombina (INR) > 2,0",yesno(1))
+      ],
+      interpret:n=>n>=3?("Escore de Lille >0,45 (Não Respondedor): ausência de resposta terapêutica favorável ao corticoide no D7 e sobrevida em 6 meses <25%. RECOMENDAÇÃO: Interromper a corticoterapia imediatamente para prevenir sepse e infecções fúngicas fatais; discutir cuidados paliativos ou transplante hepático precoce."):("Escore de Lille ≤0,45 (Respondedor): excelente resposta ao corticoide com sobrevida em 6 meses >85%. RECOMENDAÇÃO: Manter Prednisolona 40 mg/dia até completar os 28 dias de tratamento, seguido de desmame gradual em 2 a 4 semanas."),
+      reference:"Louvet A et al. Hepatology. 2007;45:1348–1354.",
+      safetyNote:"A avaliação no 7º dia é mandatória em todos os pacientes que iniciaram corticoterapia para hepatite alcoólica."
+    },
+    {
+      id:"ranson",name:"Critérios de Ranson (Pancreatite Aguda)",category:"Gastroenterologia",aliases:"pancreatite aguda atlanta gravidade prognóstico",
+      desc:"Estratificação prognóstica e risco de mortalidade na pancreatite aguda na admissão e em 48h.",tags:["Cirurgia Geral","PS","Gastroenterologia"],
+      questions:[
+        q("Admissão: Idade > 55 anos",yesno(1)),
+        q("Admissão: Leucócitos > 16.000/mm³",yesno(1)),
+        q("Admissão: Glicemia > 200 mg/dL (sem diabetes prévio)",yesno(1)),
+        q("Admissão: LDH sérico > 350 UI/L",yesno(1)),
+        q("Admissão: AST / TGO > 250 U/L",yesno(1)),
+        q("48 horas: Queda do Hematócrito > 10 pontos percentuais",yesno(1)),
+        q("48 horas: Elevação do BUN > 5 mg/dL (Ureia > 11 mg/dL)",yesno(1)),
+        q("48 horas: Cálcio sérico < 8,0 mg/dL",yesno(1)),
+        q("48 horas: PaO₂ arterial < 60 mmHg",yesno(1)),
+        q("48 horas: Déficit de base > 4 mEq/L",yesno(1)),
+        q("48 horas: Sequestro volêmico estimado > 6.000 mL",yesno(1))
+      ],
+      interpret:n=>n<=2?("Ranson " + n + " pontos: Pancreatite aguda leve. Risco de mortalidade estimado em <1–2%. Manejo habitual seguro em enfermaria com hidratação e analgesia."):n<=4?("Ranson " + n + " pontos: Pancreatite aguda moderadamente grave. Mortalidade estimada em ~15%. Considerar leito monitorizado ou UTI."):n<=6?("Ranson " + n + " pontos: Pancreatite aguda grave. Mortalidade estimada em cerca de 40%. Internação obrigatória em UTI com ressuscitação volêmica vigorosa e vigilância de disfunções orgânicas."):("Ranson " + n + " pontos (≥7): Pancreatite aguda gravíssima. Mortalidade estimada em >50 a 100%. Alto risco de necrose pancreática infectada e choque distributivo."),
+      reference:"Ranson JH et al. Surg Gynecol Obstet. 1974;139:69–81.",
+      safetyNote:"Os critérios de Ranson só podem ser finalizados após 48 horas completas de evolução clínica."
+    },
+    {
+      id:"glasgow_imrie",name:"Escore de Glasgow-Imrie (Pancreatite Aguda)",category:"Gastroenterologia",aliases:"pancreatite aguda imrie glasgow gravidade",
+      desc:"Avaliação prognóstica em 48h para pancreatite aguda de etiologia biliar ou alcoólica.",tags:["PS","Gastroenterologia","Cirurgia"],
+      questions:[
+        q("PaO₂ arterial < 60 mmHg",yesno(1)),
+        q("Idade > 55 anos",yesno(1)),
+        q("Leucócitos > 15.000/mm³",yesno(1)),
+        q("Cálcio sérico < 8,0 mg/dL (2,0 mmol/L)",yesno(1)),
+        q("Ureia sérica > 45 mg/dL (BUN > 21 mg/dL)",yesno(1)),
+        q("LDH sérico > 600 UI/L",yesno(1)),
+        q("Albumina sérica < 3,2 g/dL",yesno(1)),
+        q("Glicemia > 180 mg/dL (10 mmol/L) sem diabetes prévio",yesno(1))
+      ],
+      interpret:n=>n>=3?("Glasgow-Imrie " + n + " pontos (≥3): Pancreatite aguda grave. Alto risco de complicações sistêmicas, necrose peripancreática e falência orgânica. Indicação de internação em leito de UTI."):("Glasgow-Imrie " + n + " pontos (0–2): Pancreatite aguda leve. Baixo risco de complicações maiores; monitorar hidratação e resposta clínica."),
+      reference:"Blamey SL, Imrie CW et al. Gut. 1984;25:1340–1346.",
+      safetyNote:"Avaliar o pior valor laboratorial obtido nas primeiras 48 horas da admissão."
+    },
+    {
+      id:"crusade",name:"Escore CRUSADE (Sangramento em SCA)",category:"Cardiologia",aliases:"sangramento SCA IAM infarto hemorragia anticoagulação",
+      desc:"Estratifica o risco de sangramento intra-hospitalar maior em pacientes com SCA sem supra de ST.",tags:["Cardiologia","UCO","Hemodinâmica"],
+      questions:[
+        q("Hematócrito basal",[opt("≥40%",0),opt("37–39,9%",2),opt("34–36,9%",3),opt("31–33,9%",7),opt("<31%",9)]),
+        q("Clearance de Creatinina (mL/min)",[opt(">60",0),opt("31–60",7),opt("15–30",17),opt("≤15 ou diálise",35)]),
+        q("Frequência Cardíaca na admissão",[opt("≤70 bpm",0),opt("71–80 bpm",1),opt("81–90 bpm",3),opt("91–100 bpm",6),opt("101–110 bpm",8),opt("111–120 bpm",10),opt("≥121 bpm",11)]),
+        q("Pressão Arterial Sistólica (PAS)",[opt("≥180 mmHg",1),opt("121–179 mmHg",0),opt("101–120 mmHg",3),opt("91–100 mmHg",5),opt("≤90 mmHg",10)]),
+        q("Sexo feminino",yesno(8)),
+        q("Sinais de Insuficiência Cardíaca à admissão (Killip > I)",yesno(7)),
+        q("Doença Vascular Prévia (IAM, DAP ou AVC)",yesno(6)),
+        q("Diabetes Mellitus",yesno(6))
+      ],
+      interpret:n=>n<=20?("CRUSADE " + n + " pontos: Risco muito baixo de sangramento maior (<3%). Estratégia antitrombótica plena padrão recomendada."):n<=30?("CRUSADE " + n + " pontos: Risco baixo de sangramento (3–5%)."):n<=40?("CRUSADE " + n + " pontos: Risco moderado de sangramento (5–8%). Ajustar rigorosamente doses de anticoagulantes por peso e função renal."):n<=50?("CRUSADE " + n + " pontos: Risco alto de sangramento (8–12%). Preferir acesso vascular radial na cineangiocoronariografia e considerar inibidor de bomba de prótons de rotina."):("CRUSADE " + n + " pontos (>50): Risco muito alto de sangramento (>12%). Preferir acesso radial, menor dose eficaz de anticoagulante, tempo restrito de DAPT e proteção gástrica estrita."),
+      reference:"Subherwal S et al. Circulation. 2009;119:1873–1882.",
+      safetyNote:"O escore não contraindica a terapia coronariana percutânea, mas alerta para medidas preventivas de hemorragia."
+    },
+    {
+      id:"dapt",name:"Escore DAPT (Duração da Dupla Antiagregação Pós-ICP)",category:"Cardiologia",aliases:"DAPT stent dupla antiagregação clopidogrel ticagrelor angioplastia",
+      desc:"Auxilia na decisão clínica sobre prolongar a DAPT além de 12 meses após implante de stent coronário.",tags:["Cardiologia","Hemodinâmica","Ambulatório"],
+      questions:[
+        q("Idade do paciente",[opt("<65 anos",0),opt("65–74 anos",-1),opt("≥75 anos",-2)]),
+        q("Tabagismo ativo atual",yesno(1)),
+        q("Diabetes Mellitus",yesno(1)),
+        q("IAM prévio ou IAM na apresentação",yesno(1)),
+        q("ICP prévia ou Stent prévio",yesno(1)),
+        q("Diâmetro do stent < 3 mm",yesno(1)),
+        q("Insuficiência Cardíaca ou FEVE < 30%",yesno(2)),
+        q("Tratamento de enxerto de veia safena (Ponte de Safena)",yesno(2)),
+        q("Stent farmacológico eluidor de paclitaxel",yesno(1))
+      ],
+      interpret:n=>n>=2?("Escore DAPT " + n + " (≥2): Relação risco-benefício FAVORÁVEL para DAPT estendida além de 12 meses (redução expressiva de IAM e trombose de stent que supera o risco hemorrágico). Considerar manter DAPT por até 30 meses sob vigilância clínica periódica."):("Escore DAPT " + n + " (<2): Relação risco-benefício DESFAVORÁVEL para DAPT estendida (aumento do risco de sangramento sem benefício isquêmico proporcional). Recomendado suspender o segundo antiagregante e manter monoterapia (AAS) com 12 meses."),
+      reference:"Yeh RW et al. JAMA. 2016;315(16):1735–1749.",
+      safetyNote:"Aplicar somente em pacientes que completaram 12 meses de DAPT sem eventos hemorrágicos ou isquêmicos maiores."
+    },
+
+    {id:"centor_strep",name:"Critérios de Centor / McIsaac (Faringoamigdalite)",category:"Infectologia",aliases:"amigdalite faringite estreptocócica streptococcus pyogenes",
       desc:"Probabilidade de faringoamigdalite bacteriana por Streptococcus pyogenes (Grupo A).",tags:["APS","PS","Infectologia"],
       questions:[
         q("Exsudato ou hipertrofia tonsilar",yesno(1)),
