@@ -98,5 +98,5 @@ for(const [id,args] of [
 test('Zero-permissive cards have explicit policy and asset versions match',()=>{
  for(const id of ['urineosmol','urinegap','efwc','nitrogenbalance'])assert.equal(defs[id].allowZero,true);
  assert.match(read('trabalho/calculadora/index.html'),/clinical-calculators-batch4\.js\?v=20261030-batch7/);
- assert.match(read('trabalho/scores/index.html'),/work-scores\.js\?v=20261030-batch8/);
+ assert.match(read('trabalho/scores/index.html'),/work-scores\.js\?v=20261030-batch9/);
 });
