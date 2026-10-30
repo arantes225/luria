@@ -1564,7 +1564,8 @@
         q("OPERAÇÃO: perda sanguínea estimada (mL)",[opt("≤100",1),opt("101–500",2),opt("501–999",4),opt("≥1000",8)]),
         q("OPERAÇÃO: contaminação da cavidade peritoneal",[opt("Ausente",1),opt("Líquido seroso",2),opt("Pus localizado",4),opt("Conteúdo livre, sangue ou pus difuso",8)]),
         q("OPERAÇÃO: malignidade",[opt("Ausente",1),opt("Tumor primário localizado",2),opt("Linfonodos comprometidos",4),opt("Metástases à distância",8)]),
-        q("OPERAÇÃO: urgência",[opt("Eletiva",1),opt("Urgência operada dentro de 24 h da admissão",4),opt("Emergência operada dentro de 2 h da admissão",8)])
+        q("OPERAÇÃO: urgência",[opt("Eletiva",1),opt("Urgência operada dentro de 24 h da admissão",4),opt("Emergência operada dentro de 2 h da admissão",8)]),
+        q("Os dados dos 18 componentes foram apurados em cirurgia já realizada?",[opt("Sim, dados completos",0),opt("Não / operação pendente / dados incompletos",-999)])
       ],
       interpret:()=>"",
       reference:"Copeland GP et al. Br J Surg. 1991;78:355–360; Prytherch DR et al. Br J Surg. 1998;85:1217–1220; J Clin Med. 2024;13:173 (tabelas); equações publicadas de POSSUM/P-POSSUM.",
@@ -1822,7 +1823,11 @@
 
 
     if(s.id==="possum"){
-      const n=vals.map(Number);
+      if(vals[18]!=="0"){
+        setResult("Incompleto","POSSUM/P-POSSUM exige operação realizada e dados completos de todos os 18 componentes.",
+          "Não calcular risco cirúrgico a partir de uma estimativa de perda sanguínea ou de contaminação ainda não observadas.");return;
+      }
+      const n=vals.slice(0,18).map(Number);
       const physiological=n.slice(0,12).reduce((a,x)=>a+x,0);
       const operative=n.slice(12).reduce((a,x)=>a+x,0);
       const logistic=logit=>logit>=0?1/(1+Math.exp(-logit)):Math.exp(logit)/(1+Math.exp(logit));
