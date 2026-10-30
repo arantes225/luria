@@ -1323,7 +1323,7 @@
   }
 
   function calculateGeneric(s){
-    const vals=$("#score-form select").map(x=>x.value);
+    const vals=$$("#score-form select").map(x=>x.value);
     const phqRisk=s.id==="phq9" && vals[8]!=="" && Number(vals[8])>0;
     if(vals.some(v=>v==="")){
       setResult("—",phqRisk?"Item 9 positivo: avaliar risco de suicídio/autolesão imediatamente, mesmo antes da pontuação total.":"Preencha todos os campos.","");
@@ -1379,7 +1379,7 @@
     },
     ihs4(f){
       f.innerHTML=field('Nódulos inflamatórios','ih_n','number','min="0" step="1"')+field('Abscessos','ih_a','number','min="0" step="1"')+field('Túneis drenantes','ih_t','number','min="0" step="1"');
-      $("input",f).forEach(el=>el.oninput=calcIHS4);
+      $$("input",f).forEach(el=>el.oninput=calcIHS4);
       setResult('—','Preencha três contagens inteiras.','Ausência de lesão deve ser registrada como zero.');
     },
     hints(f){
