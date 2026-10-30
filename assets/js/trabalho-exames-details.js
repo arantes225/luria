@@ -39,7 +39,7 @@ for(const group of all){
     else if(isSerology)caution+=" "+RISKS.serology;
     else if(isMolecular)caution+=" "+RISKS.molecular;
     else if(isDrug)caution+=" "+RISKS.drug;
-    const refKey=item.ref||row[4];
+    const refKey=refNote?refNote[1]:(item.ref||row[4]);
     const source=REFERENCES[refKey]||REFERENCES.medline;
     detailed[exam.id]={
       id:exam.id,group:group.name,
