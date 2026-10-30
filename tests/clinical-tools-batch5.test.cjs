@@ -76,9 +76,9 @@ test('UI calls calculator-specific validation and respects explicit zero policy'
   const html=read('trabalho/calculadora/index.html');
   assert.match(html,/typeof d\.validate==='function'/);
   assert.match(html,/d\.allowZero/);
-  assert.match(html,/clinical-calculators-batch4\.js\?v=20261030-batch5/);
+  assert.match(html,/clinical-calculators-batch4\.js\?v=20261030-batch6/);
   const scoreHtml=read('trabalho/scores/index.html');
-  assert.match(scoreHtml,/work-scores\.js\?v=20261030-batch5/);
+  assert.match(scoreHtml,/work-scores\.js\?v=20261030-batch6/);
 });
 
 test('Generic scores use querySelectorAll and BAP-65 has dedicated I–V classification',()=>{
