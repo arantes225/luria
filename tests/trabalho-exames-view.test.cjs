@@ -9,6 +9,7 @@ const script = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-interp
 const extraScript = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-extra-catalog.js"), "utf8");
 const curatedScripts = [1,2,3,4,5].map(i=>fs.readFileSync(path.join(root, `assets/js/trabalho-exames-curated-0${i}.js`), "utf8"));
 const preanalyticalScript = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-preanalytical.js"), "utf8");
+const extraPreanalyticalScripts = [1,2,3,4].map(i=>fs.readFileSync(path.join(root, `assets/js/trabalho-exames-preanalytical-extra-${i}.js`), "utf8"));
 const detailsScript = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-details.js"), "utf8");
 
 function openTool() {
@@ -19,6 +20,7 @@ function openTool() {
   dom.window.eval(extraScript);
   for(const code of curatedScripts)dom.window.eval(code);
   dom.window.eval(preanalyticalScript);
+  for(const code of extraPreanalyticalScripts)dom.window.eval(code);
   dom.window.eval(detailsScript);
   dom.window.eval(script);
   return dom;
@@ -70,8 +72,9 @@ test("Both clinical pages use same versioned assets and suppress duplicate top t
     assert.match(html, /trabalho-exames-extra-catalog\.js\?v=20261029-extras/);
     for(let i=1;i<=5;i++)assert.match(html,new RegExp(`trabalho-exames-curated-0${i}\\.js\\?v=20261030-individual`));
     assert.match(html, /trabalho-exames-preanalytical\.js\?v=20261030-prep1/);
-    assert.match(html, /trabalho-exames-details\.js\?v=20261030-prep1/);
-    assert.match(html, /trabalho-exames-interpreter\.js\?v=20261030-prep1/);
+    for(let i=1;i<=4;i++)assert.match(html,new RegExp(`trabalho-exames-preanalytical-extra-${i}\\.js\\?v=20261030-prep2`));
+    assert.match(html, /trabalho-exames-details\.js\?v=20261030-prep2/);
+    assert.match(html, /trabalho-exames-interpreter\.js\?v=20261030-prep2/);
   }
 });
 
@@ -303,8 +306,8 @@ test("Preanalytical fields exist for all 423 exams and distinguish specific from
   const dom=openTool(),d=dom.window.document,meta=dom.window.LURIA_EXAM_DETAILS,audit=dom.window.LURIA_EXAM_PREANALYTIC_AUDIT;
   assert.equal(audit.total,423);
   assert.equal(audit.specific+audit.general,423);
-  assert.ok(audit.specific>=240);
-  assert.ok(audit.general>0);
+  assert.equal(audit.specific,423);
+  assert.equal(audit.general,0);
   for(const [id,m] of Object.entries(meta)){
     for(const field of ["sample","preparation","analyticalMethod","preanalyticalInterference","preanalyticalSourceUrl"]){
       assert.ok(typeof m[field]==="string"&&m[field].length>20,id+":"+field);
@@ -339,5 +342,49 @@ test("Preanalytical source and overrides loaded on both pages before clinical de
     const h=fs.readFileSync(path.join(root,"trabalho",dir,"index.html"),"utf8");
     const pre=h.indexOf("trabalho-exames-preanalytical.js"),detail=h.indexOf("trabalho-exames-details.js"),interpreter=h.indexOf("trabalho-exames-interpreter.js");
     assert.ok(pre>0&&pre<detail&&detail<interpreter);
+  }
+});
+
+test("All 172 previously general exam preanalytics now use individual records",()=>{
+  const dom=openTool(),d=dom.window.document;
+  const extra=dom.window.LURIA_EXAM_PREANALYTIC_EXTRA||{};
+  const old=dom.window.LURIA_EXAM_PREANALYTIC?.exams||{};
+  const names=Object.keys(extra);
+  assert.equal(names.length,172);
+  assert.equal(new Set(names).size,172);
+  assert.ok(names.every(n=>!Object.hasOwn(old,n)));
+  const catalog=[...dom.window.LURIA_EXAM_CATALOG,...dom.window.LURIA_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
+  assert.ok(names.every(n=>catalog.some(t=>t.name===n)));
+  assert.equal(Object.keys(old).length+names.length,423);
+  const byName=n=>{const exam=catalog.find(e=>e.name===n);assert.ok(exam,n);return dom.window.LURIA_EXAM_DETAILS[exam.id];};
+  for(const n of names){
+    const meta=byName(n);
+    assert.deepEqual(Array.from(meta.preanalyticalSpecificFields).sort(),["interference","method","preparation","sample"],n);
+    for(const f of ["sample","preparation","analyticalMethod","preanalyticalInterference"])
+      assert.ok(typeof meta[f]==="string"&&meta[f].length>=25,n+":"+f);
+  }
+  assert.match(byName("Bilirrubina indireta").sample,/calculad/i);
+  assert.match(byName("Bacterioscopia com coloração de Gram").sample,/material do foco suspeito/i);
+  assert.match(byName("PCR para Pneumocystis jirovecii").sample,/respiratóri/i);
+  assert.match(byName("PCR HSV-1/2 de lesão genital").sample,/swab do fundo de lesão/i);
+  assert.match(byName("IGRA para tuberculose").sample,/tubos específicos/i);
+  assert.match(byName("Zinco sérico").sample,/livre de elementos-traço/i);
+  assert.match(byName("VHS").sample,/citrato ou EDTA/i);
+
+  assert.match(byName("IGRA para tuberculose").preparation,/incubação/i);
+  assert.match(byName("Beta-2-microglobulina urinária").preanalyticalInterference,/urina ácida/i);
+  assert.match(byName("Pesquisa PML-RARA por PCR").preparation,/promielocítica/i);
+  assert.match(byName("Metanefrinas plasmáticas livres").preparation,/decúbito/i);
+  assert.equal(d.querySelectorAll(".ex-test-details").length,423);
+  dom.window.close();
+});
+test("The extra preanalytics scripts load after base and before clinical detail interpreter",()=>{
+  for(const dir of ["exames","laboratorio"]){
+    const html=fs.readFileSync(path.join(root,"trabalho",dir,"index.html"),"utf8");
+    const b=html.indexOf("trabalho-exames-preanalytical.js");
+    const first=html.indexOf("trabalho-exames-preanalytical-extra-1.js");
+    const last=html.indexOf("trabalho-exames-preanalytical-extra-4.js");
+    const details=html.indexOf("trabalho-exames-details.js");
+    assert.ok(b>=0&&b<first&&first<last&&last<details);
   }
 });
