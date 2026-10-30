@@ -1179,7 +1179,7 @@
         q("SOFA de quatro componentes (respiratório, cardiovascular, hepático e renal)",[opt("0",0),opt("1",1),opt("≥2",2)])
       ],
       interpret:n=>n>=4?"SIC "+n+"/6: verificar também critério conjunto de coagulação e contexto de sepse.":"SIC "+n+"/6: abaixo do ponto de corte de SIC; reavaliar com evolução laboratorial.",
-      reference:"ISTH 2017/2025, J Thromb Haemost 2025, doi:10.1016/j.jtha.2025.03.011; PMC11415329.",
+      reference:"ISTH 2017/2025, J Thromb Haemost 2025, doi:10.1016/j.jtha.2025.03.038; PMC11415329.",
       safetyNote:"Somente no contexto de sepse. Para classificação SIC, total ≥4 e soma de plaquetas+INR >2. Não utilizar SOFA neurológico no item de disfunção orgânica."
     }
   ];
