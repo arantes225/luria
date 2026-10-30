@@ -1093,6 +1093,98 @@
   ];
   for (const item of batch5Scores) if (!scores.some(s=>s.id===item.id)) scores.push(item);
 
+
+  // Lote 6: instrumentos com critérios explícitos e versões de referência.
+  // Pontuação automatizada é apoio educacional; não equivale a validação assistencial.
+  const batch6Scores = [
+    {id:"mews",name:"MEWS (Subbe)",category:"Emergência",aliases:"deterioração clínica alerta precoce enfermaria",desc:"Modified Early Warning Score de cinco parâmetros; versão Subbe, 0–14.",tags:["Plantão","Enfermaria"],auditDate:"2026-10-30",
+      questions:[
+        q("Frequência respiratória (irpm)",[opt("<9",2),opt("9–14",0),opt("15–20",1),opt("21–29",2),opt("≥30",3)]),
+        q("Frequência cardíaca (bpm)",[opt("≤40",2),opt("41–50",1),opt("51–100",0),opt("101–110",1),opt("111–129",2),opt("≥130",3)]),
+        q("Pressão arterial sistólica (mmHg)",[opt("≤70",3),opt("71–80",2),opt("81–100",1),opt("101–199",0),opt("≥200",2)]),
+        q("Temperatura (°C)",[opt("<35,0",2),opt("35,0–38,4",0),opt("≥38,5",2)]),
+        q("Estado neurológico (AVPU)",[opt("Alerta",0),opt("Resposta à voz",1),opt("Resposta à dor",2),opt("Sem resposta",3)])
+      ],
+      interpret:n=>n>=5?"MEWS "+n+"/14: pontuação elevada; resposta clínica rápida conforme protocolo local.":"MEWS "+n+"/14: continuar monitorização e reavaliação conforme contexto; risco não é excluído por pontuação baixa.",
+      reference:"Subbe CP et al. QJM 2001;94:521–526; NIHR NCBI Bookshelf NBK602290, tabela MEWS.",
+      safetyNote:"Existem várias versões de MEWS. Esta versão exige os cinco parâmetros e não substitui NEWS2 nem protocolo institucional."
+    },
+    {id:"decaf",name:"DECAF — exacerbação DPOC",category:"Respiratório",aliases:"DPOC internação mortalidade eMRCD eosinopenia",desc:"Prediz mortalidade hospitalar em exacerbação de DPOC internada, 0–6.",tags:["Pneumologia","Plantão"],auditDate:"2026-10-30",
+      questions:[
+        q("Dispneia habitual eMRCD antes da exacerbação",[opt("eMRCD 1–4",0),opt("eMRCD 5a: confinado ao domicílio, lava-se e veste-se sozinho",1),opt("eMRCD 5b: necessita de ajuda para lavar-se ou vestir-se",2)]),
+        q("Eosinófilos <0,05 × 10⁹/L (menos de 50/µL)",yesno()),
+        q("Consolidação na radiografia de tórax",yesno()),
+        q("pH arterial <7,30",yesno()),
+        q("Fibrilação atrial atual ou histórica",yesno())
+      ],
+      interpret:n=>n<=1?"DECAF "+n+"/6: menor risco prognóstico no modelo.":n===2?"DECAF 2/6: risco intermediário no modelo.":"DECAF "+n+"/6: alto risco prognóstico; monitorização e avaliação de suporte.",
+      reference:"Steer J et al. Thorax 2012;67:970–976; PMC8004300, tabela DECAF.",
+      safetyNote:"Validado para pacientes hospitalizados com exacerbação de DPOC. Não representa critério automático de alta ou cuidado paliativo."
+    },
+    {id:"cpot",name:"CPOT — dor em terapia intensiva",category:"Emergência",aliases:"dor paciente crítico não comunicante ventilação",desc:"Critical-Care Pain Observation Tool: quatro domínios comportamentais, 0–8.",tags:["UTI","Dor"],auditDate:"2026-10-30",
+      questions:[
+        q("Expressão facial",[opt("Relaxada/neutra",0),opt("Tensão facial",1),opt("Careta/grimace",2)]),
+        q("Movimentos corporais",[opt("Ausência de movimentos espontâneos",0),opt("Proteção do local de dor",1),opt("Inquietação/agitação",2)]),
+        q("Tensão muscular",[opt("Relaxada",0),opt("Tensa ou rígida",1),opt("Muito tensa/rígida",2)]),
+        q("Sincronia ventilatória OU vocalização (escolher o grupo aplicável)",[opt("Ventilado: tolera ventilador/movimento",0),opt("Ventilado: tosse, mas tolera",1),opt("Ventilado: luta contra ventilador",2),opt("Não intubado: fala normal ou silêncio",0),opt("Não intubado: suspira ou geme",1),opt("Não intubado: chora ou soluça",2)])
+      ],
+      interpret:n=>"CPOT "+n+"/8: avalie alteração em relação ao basal e resposta à analgesia; não constitui intensidade autorreferida da dor.",
+      reference:"Gélinas C et al. Am J Crit Care 2006;15:420–427; WHO cancer pain guideline 2018, tabela CPOT.",
+      safetyNote:"Dor deve ser autorreferida quando possível. Pacientes não comunicantes exigem exame físico e avaliação de causas de agitação."
+    },
+    {id:"bps",name:"BPS — Behavioral Pain Scale",category:"Emergência",aliases:"dor ventilação mecânica paciente intubado",desc:"Avaliação comportamental de dor em pacientes críticos intubados, 3–12.",tags:["UTI","Dor"],auditDate:"2026-10-30",
+      questions:[
+        q("Expressão facial",[opt("Relaxada",1),opt("Parcialmente contraída",2),opt("Completamente contraída",3),opt("Careta",4)]),
+        q("Movimentos dos membros superiores",[opt("Sem movimentos",1),opt("Parcialmente flexionados",2),opt("Completamente flexionados com dedos fletidos",3),opt("Retração permanente",4)]),
+        q("Adaptação à ventilação mecânica",[opt("Tolera movimentos/ventilação",1),opt("Tosse, mas tolera boa parte do tempo",2),opt("Luta contra o ventilador",3),opt("Ventilação não controlável",4)])
+      ],
+      interpret:n=>"BPS "+n+"/12: valores maiores representam mais comportamentos compatíveis com dor; comparar com a avaliação anterior e o contexto.",
+      reference:"Payen JF et al. Crit Care Med 2001;29:2258–2263; KSCCM PADIS guideline, PMC8918705.",
+      safetyNote:"Esta versão é para pacientes intubados. Não aplicar automaticamente ao não intubado; não substitui relato da dor quando possível."
+    },
+    {id:"mnutric",name:"mNUTRIC — risco nutricional em UTI",category:"Emergência",aliases:"nutrição risco paciente crítico",desc:"Índice de risco nutricional modificado, sem IL-6, 0–9 pontos.",tags:["UTI","Nutrição"],auditDate:"2026-10-30",
+      questions:[
+        q("Idade",[opt("<50 anos",0),opt("50–74 anos",1),opt("≥75 anos",2)]),
+        q("APACHE II",[opt("<15",0),opt("15–19",1),opt("20–27",2),opt("≥28",3)]),
+        q("SOFA",[opt("<6",0),opt("6–9",1),opt("≥10",2)]),
+        q("Número de comorbidades",[opt("0–1",0),opt("≥2",1)]),
+        q("Tempo de internação hospitalar antes da UTI",[opt("0–1 dia",0),opt(">1 dia",1)])
+      ],
+      interpret:n=>n>=5?"mNUTRIC "+n+"/9: alto risco nutricional, requer avaliação especializada.":"mNUTRIC "+n+"/9: abaixo do ponto de corte usual, mas não exclui risco nutricional.",
+      reference:"Rahman A et al. Clin Nutr 2016;35:158–162; tabela de componentes de mNUTRIC, Sci Rep 2026.",
+      safetyNote:"Requer APACHE II e SOFA calculados corretamente. Não determina prescrição calórica ou proteica isoladamente."
+    },
+    {id:"oesil",name:"OESIL — síncope",category:"Cardiologia",aliases:"sincope mortalidade prognóstico ECG",desc:"Quatro preditores de mortalidade em 12 meses após síncope, 0–4.",tags:["Plantão","Síncope"],auditDate:"2026-10-30",
+      questions:[q("Idade >65 anos",yesno()),q("Doença cardiovascular prévia",yesno()),q("Síncope sem pródromos",yesno()),q("ECG alterado",yesno())],
+      interpret:n=>"OESIL "+n+"/4: maior pontuação relaciona-se a maior risco prognóstico; resultado não define alta, observação ou internação sozinho.",
+      reference:"Colivicchi F et al. Eur Heart J 2003;24:811–819; PMID 12727148.",
+      safetyNote:"Modelo histórico de prognóstico em síncope. Não substitui avaliação cardiológica, ECG ou algoritmos atuais."
+    },
+    {id:"smartcop",name:"SMART-COP — pneumonia",category:"Respiratório",aliases:"PAC pneumonia suporte ventilatório vasopressor",desc:"Prediz necessidade de suporte respiratório intensivo ou vasopressor na pneumonia comunitária, 0–11.",tags:["Plantão","Pneumonia"],auditDate:"2026-10-30",
+      questions:[
+        q("PAS <90 mmHg",yesno(2)),q("Envolvimento multilobar na imagem",yesno()),q("Albumina <3,5 g/dL",yesno()),
+        q("Taquipneia: ≤50 anos FR ≥25, >50 anos FR ≥30",yesno()),
+        q("FC ≥125 bpm",yesno()),q("Confusão aguda",yesno()),
+        q("Hipoxemia conforme idade: ≤50 anos, SpO₂ ≤93% ou PaO₂ <70; >50 anos, SpO₂ ≤90% ou PaO₂ <60; sob O₂ usar P/F <333 ou <250, respectivamente",yesno(2)),
+        q("pH arterial <7,35",yesno(2))
+      ],
+      interpret:n=>n>=5?"SMART-COP "+n+"/11: risco alto de necessidade de suporte intensivo no modelo.":n>=3?"SMART-COP "+n+"/11: pontuação associada a maior probabilidade de suporte intensivo.":"SMART-COP "+n+"/11: menor pontuação prognóstica, sem excluir deterioração.",
+      reference:"Charles PG et al. Clin Infect Dis 2008;47:375–384; revisão PMC7126707, quadro SMART-COP.",
+      safetyNote:"Requer pneumonia comunitária confirmada e critérios de idade corretamente aplicados. Não decidir internação/UTI apenas pelo escore."
+    },
+    {id:"sic",name:"SIC — coagulopatia associada à sepse",category:"Hematologia",aliases:"sepse coagulação plaquetas INR SOFA",desc:"ISTH SIC: plaquetas, INR e SOFA parcial (respiratório, circulatório, hepático e renal), 0–6.",tags:["UTI","Hematologia"],auditDate:"2026-10-30",
+      questions:[
+        q("Plaquetas (×10⁹/L)",[opt("≥150",0),opt("100–149",1),opt("<100",2)]),
+        q("INR",[opt("≤1,2",0),opt(">1,2 a 1,4",1),opt(">1,4",2)]),
+        q("SOFA de quatro componentes (respiratório, cardiovascular, hepático e renal)",[opt("0",0),opt("1",1),opt("≥2",2)])
+      ],
+      interpret:n=>n>=4?"SIC "+n+"/6: verificar também critério conjunto de coagulação e contexto de sepse.":"SIC "+n+"/6: abaixo do ponto de corte de SIC; reavaliar com evolução laboratorial.",
+      reference:"ISTH 2017/2025, J Thromb Haemost 2025, doi:10.1016/j.jtha.2025.03.011; PMC11415329.",
+      safetyNote:"Somente no contexto de sepse. Para classificação SIC, total ≥4 e soma de plaquetas+INR >2. Não utilizar SOFA neurológico no item de disfunção orgânica."
+    }
+  ];
+  for (const item of batch6Scores) if(!scores.some(s=>s.id===item.id))scores.push(item);
+
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
   const favKey = "luria:scores:favorites";
   const recentKey = "luria:scores:recent";
@@ -1242,6 +1334,10 @@
     }
     if(s.id==="perc"&&vals[vals.length-1]==="1"){
       setResult("Não aplicável","A probabilidade pré-teste de TEP não foi confirmada como baixa; PERC não pode excluir TEP.","Utilize algoritmo diagnóstico apropriado.");return;
+    }
+    if(s.id==="sic" && vals.length===3 && Number(vals[0])+Number(vals[1])<=2){
+      const n=vals.reduce((a,v)=>a+Number(v),0);
+      setResult(formatNum(n),"SIC não confirmado: além do total ≥4, plaquetas + INR devem somar mais que 2 pontos.","Conferir classificação de sepse e evolução clínica.");return;
     }
     const total=vals.reduce((a,v)=>a+Number(v),0);
     const note=phqRisk?"ATENÇÃO: item 9 positivo. Realizar avaliação clínica imediata de segurança; o total PHQ-9 não classifica risco suicida.":"Pontuação calculada a partir dos critérios selecionados.";
