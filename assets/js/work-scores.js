@@ -974,6 +974,125 @@
   ];
   for (const item of expansionScores) if (!scores.some(s=>s.id===item.id)) scores.push(item);
 
+
+  // Lote clínico 5: critérios com somas explícitas. Revisão independente pendente.
+  // Cada entrada tem ID estável, população-alvo, referência e limitações.
+  const batch5Scores = [
+    {id:"ariscat",name:"ARISCAT",category:"Anestesia",aliases:"risco pulmonar cirurgia pós operatório",desc:"Estratifica risco de complicações pulmonares após cirurgia não cardíaca.",tags:["Plantão","Pré-operatório"],auditDate:"2026-10-30",
+      questions:[
+        q("Idade",[opt("Até 50 anos",0),opt("51–80 anos",3),opt("Acima de 80 anos",16)]),
+        q("SpO₂ pré-operatória em ar ambiente",[opt("≥96%",0),opt("91–95%",8),opt("≤90%",24)]),
+        q("Infecção respiratória no último mês",yesno(17)),
+        q("Hemoglobina ≤10 g/dL",yesno(11)),
+        q("Local da incisão",[opt("Periférica ou outra",0),opt("Abdome superior",15),opt("Intratorácica",24)]),
+        q("Duração prevista da cirurgia",[opt("Menos de 2 horas",0),opt("2 a 3 horas",16),opt("Mais de 3 horas",23)]),
+        q("Cirurgia de emergência",yesno(8))
+      ],
+      interpret:n=>n<26?"ARISCAT "+n+": risco baixo.":n<45?"ARISCAT "+n+": risco intermediário.":"ARISCAT "+n+": risco alto de complicações pulmonares pós-operatórias.",
+      reference:"Canet J et al. Anesthesiology 2010;113:1338–1350; revisão brasileira Rev Col Bras Cir 2023, doi:10.1590/0100-6991e-20223125-en.",
+      safetyNote:"Usar em população e cirurgia compatíveis; não estima risco individual exato nem substitui avaliação anestésica."
+    },
+    {id:"aims65",name:"AIMS65",category:"Gastro/Hepato",aliases:"hemorragia digestiva alta prognóstico",desc:"Preditor de mortalidade hospitalar na hemorragia digestiva alta.",tags:["Plantão","Gastroenterologia"],auditDate:"2026-10-30",
+      questions:[q("Albumina <3,0 g/dL",yesno()),q("INR >1,5",yesno()),q("Alteração do estado mental (GCS <14)",yesno()),q("PAS ≤90 mmHg",yesno()),q("Idade ≥65 anos",yesno())],
+      interpret:n=>n>=2?"AIMS65 "+n+"/5: maior risco prognóstico; avaliação clínica e endoscópica urgente conforme estabilidade.":"AIMS65 "+n+"/5: menor pontuação prognóstica; não exclui necessidade de internação, transfusão ou endoscopia.",
+      reference:"Saltzman JR et al. Gastrointest Endosc. 2011;74:1215–1224.",
+      safetyNote:"Prognóstico hospitalar: não usar isoladamente para decisão de alta. Diferenciar de Glasgow-Blatchford."
+    },
+    {id:"hestia",name:"Critérios de Hestia",category:"Tromboembolismo",aliases:"TEP embolia pulmonar ambulatório internação",desc:"Avalia barreiras clínicas e sociais ao tratamento ambulatorial de TEP confirmado.",tags:["Plantão","TEP"],auditDate:"2026-10-30",
+      questions:[
+        q("Instabilidade hemodinâmica",yesno()),q("Necessidade de trombólise ou embolectomia",yesno()),
+        q("Sangramento ativo ou alto risco hemorrágico",yesno()),q("Necessidade de O₂ >24h para manter saturação >90%",yesno()),
+        q("TEP diagnosticado durante anticoagulação",yesno()),q("Dor intensa exigindo analgesia IV >24h",yesno()),
+        q("Motivo clínico ou social para internação >24h",yesno()),q("Clearance de creatinina <30 mL/min",yesno()),
+        q("Insuficiência hepática grave",yesno()),q("Gestação",yesno()),
+        q("História documentada de trombocitopenia induzida por heparina",yesno())
+      ],
+      interpret:n=>n===0?"Hestia negativo: sem critérios de exclusão identificados; apenas CONSIDERAR tratamento ambulatorial após avaliação completa.":"Hestia positivo ("+n+" critério(s)): há barreira(s) ao tratamento ambulatorial; considerar internação e avaliação individualizada.",
+      reference:"AHA/ACC et al. Pulmonary Embolism Guideline, JACC 2026, doi:10.1016/j.jacc.2025.11.005.",
+      safetyNote:"Somente após TEP confirmado. Não dá alta automática; avaliar gravidade de TEP, ventrículo direito, biomarcadores e condições de seguimento."
+    },
+    {id:"orbit",name:"ORBIT — risco hemorrágico",category:"Cardiologia",aliases:"fibrilação atrial anticoagulação sangramento",desc:"Cinco fatores para risco de sangramento maior em fibrilação atrial.",tags:["FA","Anticoagulação"],auditDate:"2026-10-30",
+      questions:[q("Idade ≥75 anos",yesno()),q("Hb reduzida/Ht reduzido ou história de anemia",[opt("Não",0),opt("Sim (Hb <13 homem / <12 mulher; Ht <40% homem / <36% mulher)",2)]),q("Sangramento prévio",[opt("Não",0),opt("Sim",2)]),q("TFG <60 mL/min/1,73 m²",yesno()),q("Uso de antiagregante plaquetário",yesno())],
+      interpret:n=>n<=2?"ORBIT "+n+"/7: faixa baixa de risco no modelo.":n===3?"ORBIT 3/7: risco intermediário.":"ORBIT "+n+"/7: risco mais alto; corrigir fatores modificáveis e acompanhar.",
+      reference:"O'Brien EC et al. Eur Heart J. 2015;36:3258–3264. PMC4670965.",
+      safetyNote:"Não negar anticoagulação exclusivamente pelo ORBIT. Considerar história clínica, riscos e benefício."
+    },
+    {id:"pram",name:"PRAM — asma pediátrica",category:"Pediatria",aliases:"asma criança crise sibilância",desc:"Gravidade clínica da exacerbação asmática pediátrica, 0–12 pontos.",tags:["Plantão","Pediatria"],auditDate:"2026-10-30",
+      questions:[
+        q("SpO₂",[opt("≥95%",0),opt("92–94%",1),opt("<92%",2)]),
+        q("Retração supraesternal",[opt("Ausente",0),opt("Presente",2)]),
+        q("Contração dos escalenos",[opt("Ausente",0),opt("Presente",2)]),
+        q("Entrada de ar",[opt("Normal",0),opt("Reduzida nas bases",1),opt("Reduzida em ápices e bases",2),opt("Mínima ou ausente",3)]),
+        q("Sibilos",[opt("Ausentes",0),opt("Apenas expiratórios",1),opt("Inspiratórios (com ou sem expiratórios)",2),opt("Audíveis sem estetoscópio ou tórax silencioso",3)])
+      ],
+      interpret:n=>n<=3?"PRAM "+n+"/12: exacerbação leve.":n<=7?"PRAM "+n+"/12: exacerbação moderada.":"PRAM "+n+"/12: exacerbação grave; avaliação urgente e monitorização.",
+      reference:"Canadian Paediatric Society, Managing an acute asthma exacerbation in children (2021); Ducharme FM et al. J Pediatr. 2008.",
+      safetyNote:"Avaliação pediátrica presencial; assimetria deve ser pontuada pelo lado mais afetado. Não atrasar tratamento de insuficiência respiratória."
+    },
+    {id:"sarcf",name:"SARC-F",category:"Geriatria",aliases:"sarcopenia perda muscular força idosos",desc:"Rastreio breve de sarcopenia com cinco domínios.",tags:["Geriatria","Ambulatório"],auditDate:"2026-10-30",
+      questions:[
+        q("Dificuldade para carregar cerca de 4,5 kg",[opt("Nenhuma",0),opt("Alguma",1),opt("Muita ou incapaz",2)]),
+        q("Dificuldade para atravessar um cômodo andando",[opt("Nenhuma",0),opt("Alguma",1),opt("Muita, usa auxílio ou incapaz",2)]),
+        q("Dificuldade para levantar-se de cadeira/cama",[opt("Nenhuma",0),opt("Alguma",1),opt("Muita ou precisa de ajuda",2)]),
+        q("Dificuldade para subir um lance de cerca de 10 degraus",[opt("Nenhuma",0),opt("Alguma",1),opt("Muita ou incapaz",2)]),
+        q("Quedas no último ano",[opt("Nenhuma",0),opt("1 a 3",1),opt("4 ou mais",2)])
+      ],
+      interpret:n=>n>=4?"SARC-F "+n+"/10: rastreio positivo; avaliar força muscular e critérios diagnósticos.":"SARC-F "+n+"/10: rastreio negativo; não exclui sarcopenia se houver suspeita clínica.",
+      reference:"Malmstrom TK, Morley JE. J Am Med Dir Assoc. 2013;14:531–532; NCBI Endotext, SARC-F.",
+      safetyNote:"Rastreio, não diagnóstico definitivo; sensibilidade limitada."
+    },
+    {id:"khorana",name:"Khorana — TEV no câncer",category:"Oncologia",aliases:"trombose câncer quimioterapia",desc:"Risco de tromboembolismo venoso em pacientes ambulatoriais com câncer iniciando tratamento sistêmico.",tags:["Oncologia","Trombose"],auditDate:"2026-10-30",
+      questions:[
+        q("Local primário do tumor",[opt("Outros",0),opt("Pulmão, linfoma, ginecológico, bexiga ou testículo",1),opt("Estômago ou pâncreas",2)]),
+        q("Plaquetas pré-tratamento ≥350.000/mm³",yesno()),
+        q("Hemoglobina <10 g/dL ou uso de agente estimulador de eritropoiese",yesno()),
+        q("Leucócitos pré-tratamento >11.000/mm³",yesno()),
+        q("IMC ≥35 kg/m²",yesno())
+      ],
+      interpret:n=>n===0?"Khorana 0: menor risco no modelo.":n===1?"Khorana 1: risco intermediário pelo modelo original.":"Khorana "+n+": risco elevado, considerando limiares ≥2 adotados em algumas diretrizes.",
+      reference:"Khorana AA et al. Blood 2008;111:4902–4907.",
+      safetyNote:"População: pacientes oncológicos ambulatoriais iniciando quimioterapia sistêmica. Não determina anticoagulação isoladamente."
+    },
+    {id:"plasmic",name:"PLASMIC",category:"Hematologia",aliases:"PTT ADAMTS13 microangiopatia trombótica",desc:"Estima probabilidade de deficiência grave de ADAMTS13 em suspeita de PTT.",tags:["Hematologia","Urgência"],auditDate:"2026-10-30",
+      questions:[
+        q("Plaquetas <30.000/mm³",yesno()),
+        q("Hemólise (reticulócitos >2,5%, haptoglobina indetectável OU bilirrubina indireta >2 mg/dL)",yesno()),
+        q("Ausência de câncer ativo",yesno()),
+        q("Ausência de transplante de órgão sólido ou células-tronco",yesno()),
+        q("VCM <90 fL",yesno()),
+        q("INR <1,5",yesno()),
+        q("Creatinina sérica <2 mg/dL",yesno())
+      ],
+      interpret:n=>n<=4?"PLASMIC "+n+"/7: menor probabilidade de deficiência grave de ADAMTS13.":n===5?"PLASMIC 5/7: probabilidade intermediária.":"PLASMIC "+n+"/7: alta probabilidade; acionar hematologia imediatamente.",
+      reference:"ISTH Guidelines for diagnosis of thrombotic thrombocytopenic purpura, J Thromb Haemost. 2020; PMC8146131.",
+      safetyNote:"Aplicar apenas em suspeita de microangiopatia trombótica. Pontuação baixa não exclui PTT; não atrasar abordagem urgente."
+    },
+    {id:"scorten",name:"SCORTEN",category:"Dermatologia",aliases:"necrólise epidérmica tóxica síndrome stevens johnson",desc:"Prognóstico populacional em síndrome de Stevens-Johnson/necrólise epidérmica tóxica.",tags:["Dermatologia","UTI"],auditDate:"2026-10-30",
+      questions:[
+        q("Idade ≥40 anos",yesno()),q("Neoplasia associada",yesno()),q("FC ≥120 bpm",yesno()),
+        q("Superfície epidérmica destacada ou comprometida ≥10%",yesno()),
+        q("BUN >28 mg/dL (não confundir com ureia)",yesno()),
+        q("Glicemia >250 mg/dL",yesno()),q("Bicarbonato sérico <20 mEq/L",yesno())
+      ],
+      interpret:n=>n<=1?"SCORTEN "+n+": faixa prognóstica inferior do modelo.":n===2?"SCORTEN 2: risco prognóstico aumentado.":"SCORTEN "+n+": risco prognóstico elevado; requer assistência especializada e reavaliação.",
+      reference:"Bastuji-Garin S et al. J Invest Dermatol. 2000;115:149–153; MSD Manual Professional, SCORTEN.",
+      safetyNote:"Prognóstico populacional, nunca critério de limitação de suporte. Avaliar evolução e repetir conforme protocolo."
+    },
+    {id:"westhaven",name:"West Haven — encefalopatia hepática",category:"Gastro/Hepato",aliases:"encefalopatia hepática cirrose",desc:"Graduação clínica de encefalopatia hepática.",tags:["Hepatologia","Enfermaria"],auditDate:"2026-10-30",
+      questions:[q("Classificação clínica",[opt("Grau 0: sem alterações identificáveis",0),opt("Grau I: alterações discretas de atenção/sono",1),opt("Grau II: letargia, desorientação temporal ou asterixis",2),opt("Grau III: sonolência marcada/desorientação importante",3),opt("Grau IV: coma",4)])],
+      interpret:n=>"West Haven grau "+n+". Investigar precipitantes e avaliar proteção de vias aéreas conforme gravidade.",
+      reference:"AASLD/EASL. Hepatic Encephalopathy in Chronic Liver Disease. Hepatology. 2014.",
+      safetyNote:"Classificação clínica descritiva, não escore aditivo; outras causas de alteração do sensório devem ser pesquisadas."
+    },
+    {id:"bap65",name:"BAP-65 — exacerbação de DPOC",category:"Respiratório",aliases:"DPOC exacerbação prognóstico",desc:"Estratifica gravidade em exacerbação aguda de DPOC.",tags:["Pneumologia","Plantão"],auditDate:"2026-10-30",
+      questions:[q("BUN >25 mg/dL",yesno()),q("Alteração do estado mental",yesno()),q("FC >109 bpm",yesno()),q("Idade >65 anos",yesno())],
+      interpret:n=>n>=3?"BAP-65 "+n+": múltiplos fatores associados a pior evolução.":"BAP-65 "+n+": interpretação prognóstica dependente do contexto clínico; não excluir gravidade pelo total.",
+      reference:"Shorr AF et al. Chest. 2011;140:1177–1183.",
+      safetyNote:"Não substitui gasometria, oximetria, exame clínico ou critérios de ventilação."
+    }
+  ];
+  for (const item of batch5Scores) if (!scores.some(s=>s.id===item.id)) scores.push(item);
+
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
   const favKey = "luria:scores:favorites";
   const recentKey = "luria:scores:recent";
