@@ -1457,6 +1457,39 @@
     else throw Error("Lote 8: ID já implementado e não substituível: "+item.id);
   }
 
+
+  // Lote 8B: formulário SCORAD e classificação FIGO PALM-COEIN.
+  const batch8bScores=[
+    {id:"scorad",name:"SCORAD — dermatite atópica",category:"Dermatologia",
+      aliases:"dermatite atopica extensão eritema crosta prurido sono",desc:"Avalia extensão, seis sinais de intensidade e sintomas subjetivos, 0–103.",tags:["Dermatologia","Pediatria"],auditDate:"2026-10-30",
+      custom:"scorad",reference:"Sociedade Brasileira de Pediatria, Guia prático de dermatite atópica (2017/2022); European Task Force on Atopic Dermatitis, Dermatology 1993;186:23–31.",
+      safetyNote:"Área corporal A precisa ser aferida pela regra dos nove (adaptada para crianças); seis sinais B são avaliados em lesão representativa. Não confundir SCORAD com EASI ou PO-SCORAD."
+    },
+    {id:"palmcoein",name:"FIGO PALM-COEIN — sangramento uterino anormal",category:"Ginecologia",
+      aliases:"sangramento uterino etiologia pólipo adenomiose leiomioma ovulação",desc:"Classificação etiológica FIGO dos possíveis contribuintes estruturais e não estruturais do sangramento uterino anormal.",tags:["Ginecologia","Ambulatório"],auditDate:"2026-10-30",
+      questions:[
+        q("P — pólipo endometrial ou endocervical",yesno()),
+        q("A — adenomiose",yesno()),
+        q("L — leiomioma",yesno()),
+        q("M — malignidade ou hiperplasia endometrial",yesno()),
+        q("C — coagulopatia",yesno()),
+        q("O — disfunção ovulatória",yesno()),
+        q("E — disfunção endometrial",yesno()),
+        q("I — causa iatrogênica (medicamentos e dispositivos)",yesno()),
+        q("N — ainda não classificado nas categorias acima",yesno())
+      ],
+      interpret:()=>"",
+      reference:"FIGO AUB Systems 1 and 2, atualização 2018; Contemporary evaluation of abnormal uterine bleeding, Int J Gynaecol Obstet 2024, PMC10952771.",
+      safetyNote:"PALM-COEIN NÃO é escore de pontos nem diagnóstico automático. Causas podem coexistir; requer exclusão de gestação e investigação adequada conforme idade e sinais de alarme."
+    }
+  ];
+  for(const item of batch8bScores){
+    const idx=scores.findIndex(s=>s.id===item.id);
+    if(idx<0)scores.push(item);
+    else if(scores[idx].custom==="reference")scores[idx]=item;
+    else throw Error("Lote 8B: ID já implementado: "+item.id);
+  }
+
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
   const favKey = "luria:scores:favorites";
   const recentKey = "luria:scores:recent";
@@ -1659,6 +1692,15 @@
         "A soma dos itens é ponderada pela região. Registro de atividade requer exame dermatológico; PASI não contempla sintomas subjetivos.");
       return;
     }
+
+    if(s.id==="palmcoein"){
+      const selected=vals.map(Number).flatMap((flag,i)=>flag?[["P","A","L","M","C","O","E","I","N"][i]]:[]);
+      const labels=["P: pólipo","A: adenomiose","L: leiomioma","M: malignidade/hiperplasia",
+        "C: coagulopatia","O: disfunção ovulatória","E: endometrial","I: iatrogênica","N: não classificada"];
+      setResult(selected.length?selected.join(", "):"Sem categoria selecionada",
+        selected.length?"Categorias FIGO indicadas pelo examinador: "+labels.filter((_,i)=>vals[i]==="1").join("; ")+".":"Nenhum contribuinte selecionado. Reavaliar anamnese, exame físico e exames pertinentes.",
+        "Não é uma pontuação nem prova diagnóstica. Mais de uma categoria PALM-COEIN pode coexistir.");return;
+    }
     if(s.id==="abcde"){
       const n=vals.filter(x=>x==="1").length;
       setResult(n?"Achado(s) suspeito(s)":"Sem sinais ABCDE selecionados",
@@ -1699,6 +1741,31 @@
       };
       $$("input,select",f).forEach(el=>el.onchange=el.oninput=update);
       setResult("—","Preencha idade exata e todos os critérios.","O PESI usa a idade em anos, não faixas aproximadas.");
+    },
+
+    scorad(f,s){
+      const signs=["Eritema","Edema/pápulas","Exsudação/crostas","Escoriação","Liquenificação","Ressecamento (área sem inflamação)"];
+      f.innerHTML=field("A: área corporal comprometida (%)","scorad_area","number",'min="0" max="100" step="any"')+
+        signs.map((label,i)=>selectField("B: "+label,"scorad_b"+i,[opt("Ausente",0),opt("Leve",1),opt("Moderada",2),opt("Grave",3)])).join("")+
+        field("C: prurido (0–10)","scorad_itch","number",'min="0" max="10" step="any"')+
+        field("C: prejuízo do sono (0–10)","scorad_sleep","number",'min="0" max="10" step="any"');
+      const update=()=>{
+        const e=$("#scorad_area",f), i=$("#scorad_itch",f), sl=$("#scorad_sleep",f);
+        const b=signs.map((_,j)=>$("#scorad_b"+j,f).value);
+        const n=Number(e.value),itch=Number(i.value),sleep=Number(sl.value);
+        if(e.value===""||i.value===""||sl.value===""||b.some(x=>x==="")||
+          ![n,itch,sleep].every(x=>Number.isFinite(x))||
+          n<0||n>100||itch<0||itch>10||sleep<0||sleep>10){
+          setResult("—","Preencha área (%) e seis sinais, prurido e sono.","Área corporal deve estar em 0–100% e sintomas em 0–10.");return;
+        }
+        const intensity=b.map(Number).reduce((a,x)=>a+x,0);
+        const score=Math.round((n/5+(7*intensity)/2+itch+sleep)*10)/10;
+        const severity=score<25?"leve":score<=50?"moderada":"grave";
+        setResult(formatNum(score)+" / 103","SCORAD "+severity+" na classificação convencional; correlacionar com áreas especiais, sinais de infecção e qualidade de vida.",
+          "SCORAD = A/5 + 7B/2 + C, com A=área %, B=soma de seis sinais (0–18) e C=prurido + sono (0–20).");
+      };
+      $$("input,select",f).forEach(el=>el.oninput=el.onchange=update);
+      setResult("—","Preencha todos os parâmetros.","Fórmula: SCORAD = A/5 + 7B/2 + C (0–103).");
     },
     kdigockd(f,s){
       f.innerHTML=
