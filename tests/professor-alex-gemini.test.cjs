@@ -81,7 +81,7 @@ test("Fast answer format is sent to server and controls output budget", () => {
   assert.match(edge, /generationConfig.thinkingConfig/);
   assert.doesNotMatch(edge, /topP: 0/);
   assert.match(client, /fastSocialReply/);
-  assert.match(client, /Aham… deixa eu pensar/);
+  assert.match(client, /speechStartWatchdog/);
   assert.match(edge, /model: "local-fast-path"/);
 });
 
