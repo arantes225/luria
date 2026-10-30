@@ -933,7 +933,7 @@ Texto Exato da Locução (Copiar para síntese):
           <div class="meta-ads-kpi-card">
             <span>Página de Captura</span>
             <strong>/black-november/</strong>
-            <small><a href="/black-november/" target="_blank" style="color:#38bdf8;">Abrir Landing Page ↗</a></small>
+            <small><a href="/black-november/" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Abrir Landing Page ↗</a></small>
           </div>
           <div class="meta-ads-kpi-card">
             <span>Validação Médica</span>
@@ -968,7 +968,7 @@ Texto Exato da Locução (Copiar para síntese):
               `).join("") : `
                 <tr>
                   <td colspan="6" style="text-align:center; padding:2rem; color:#94a3b8;">
-                    Nenhum lead registrado ainda. Divulgue o link <a href="/black-november/" target="_blank" style="color:#38bdf8;">/black-november/</a> para iniciar a captação!
+                    Nenhum lead registrado ainda. Divulgue o link <a href="/black-november/" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">/black-november/</a> para iniciar a captação!
                   </td>
                 </tr>
               `}
