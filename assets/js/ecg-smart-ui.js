@@ -14,6 +14,7 @@
   const btnStartFast = byId("ecg-btn-start-fast");
   const btnStartUltra = byId("ecg-btn-start-ultra");
   const btnCancelCamera = byId("ecg-btn-cancel-camera");
+  const btnToggleTorch = byId("ecg-btn-torch");
   const stage1Section = byId("ecg-stage1-capture");
   const stage2Section = byId("ecg-stage2-review");
   const stage3Section = byId("ecg-stage3-ai");
