@@ -1341,7 +1341,24 @@
     const calibration = detectECGGridAndCalibration(imageData, options.userCalibration || null, sheet.boundaries);
 
     // 5. Descobrir topologia das faixas de traçado
-    const topology = discoverWaveformTopology(imageData, sheet.boundaries);
+    let topology = discoverWaveformTopology(imageData, sheet.boundaries);
+
+    // A fotografia de um ECG pode perder as faixas no pré-processamento por
+    // sombra, grade muito marcada ou compressão. Para uma foto escolhida pelo
+    // usuário, uma grade medida permite testar a hipótese 3x4 diretamente.
+    // Isto não aceita a imagem por si só: cada célula ainda precisa recuperar
+    // um traçado real e pelo menos três células precisam passar. O scanner ao
+    // vivo jamais usa esta rota de recuperação.
+    const canTryMeasuredGridFallback = topology.rowCount === 0 &&
+      options.allowTopologyFallback === true && calibration.gridDetected === true;
+    if (canTryMeasuredGridFallback) {
+      topology = {
+        ...topology,
+        rowCount: 3,
+        bands: [],
+        fallbackFromMeasuredGrid: true
+      };
+    }
 
     // Se não há faixas horizontais de traçado ou há excesso de linhas densas (como página de texto comum)
     if (topology.rowCount < 1 || topology.rowCount > 15) {
@@ -1369,7 +1386,7 @@
 
     // 6. Testar hipóteses de layout e validar cada célula com o extrator real + OCR de rótulos
     const extractor = global.LuriaEcgSignalExtractor;
-    const layoutEvaluation = evaluateAndMapLeadRegions(imageData, sheet.boundaries, topology, calibration, extractor);
+    const layoutEvaluation = evaluateAndMapLeadRegions(imageData, sheet.boundaries, topology, calibration, extractor, options);
 
     if (!layoutEvaluation.isValidECG) {
       return {
@@ -1427,7 +1444,7 @@
    * Avalia a disposição real das células, executa OCR nos rótulos visíveis,
    * detecta rótulos trocados/duplicados/ausentes e recusa atribuições sem evidência
    */
-  function evaluateAndMapLeadRegions(imageData, boundaries, topology, calibration, extractor) {
+  function evaluateAndMapLeadRegions(imageData, boundaries, topology, calibration, extractor, options = {}) {
     const { width, height } = imageData;
     const anomalies = [];
     const xMin = boundaries?.xMin ?? 0.04;
@@ -1532,7 +1549,8 @@
         sigRes = extractor.extractRealSignalFromImageData(cropData, {
           calibration,
           leadLabel: ocrRes.recognized ? ocrRes.lead : cell.expectedLead,
-          allowOverlappingPreview: true
+          allowOverlappingPreview: true,
+          allowDensePreview: options.allowDensePreview === true
         });
       } else {
         // Fallback geométrico rigoroso caso o extrator não esteja carregado

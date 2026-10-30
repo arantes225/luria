@@ -479,9 +479,14 @@
       originalImageUrl = typeof snapCanvas.toDataURL === "function" ? snapCanvas.toDataURL("image/jpeg", 0.92) : null;
 
       // 1. Detecta limites reais, orientação, perspectiva, grade, calibração e rótulos
+      // A selected photograph can expose ambiguous, dense regions in the
+      // review screen. Automatic scanner capture retains the strict reject.
+      const allowDensePreview = options.source !== "autonomous_camera";
       let boundaries = cvEngine.detectECGBoundaries(fullImageData, {
         userCalibration: sessionCalibration.confirmedByUser ? sessionCalibration : options.userCalibration,
-        paperAlreadyRectified: options.manualPaperCornersApplied === true
+        paperAlreadyRectified: options.manualPaperCornersApplied === true,
+        allowDensePreview,
+        allowTopologyFallback: allowDensePreview
       });
 
       // The CV engine returns a plain {width,height,data} object, not a
@@ -511,7 +516,9 @@
           snapCanvas.getContext("2d").putImageData(corrected, 0, 0);
           fullImageData = corrected;
           boundaries = cvEngine.detectECGBoundaries(fullImageData, {
-            userCalibration: sessionCalibration.confirmedByUser ? sessionCalibration : options.userCalibration
+            userCalibration: sessionCalibration.confirmedByUser ? sessionCalibration : options.userCalibration,
+            allowDensePreview,
+            allowTopologyFallback: allowDensePreview
           });
         }
       }
@@ -631,6 +638,7 @@
           regionBounds: { x: roiX, y: roiY, width: roiW, height: roiH },
           calibration: sessionCalibration,
           allowOverlappingPreview: true,
+          allowDensePreview,
           maskPrintedHeader: true,
           provenance: {
             source: options.source || "smart_camera",
@@ -642,6 +650,13 @@
 
         const leadInfo = capturedLeads.get(leadName);
         if (!leadInfo) return;
+
+        // A dense preview is never a named, automatic clinical lead. It is
+        // intentionally kept as a candidate even if OCR happened to match.
+        if (extractionResult.denseInkPreview === true) {
+          if (!provisional) quarantinedCount++;
+          provisional = true;
+        }
 
         // Só substitui se ainda não estava capturada ou se a nova extração tem melhor índice técnico
         const prevIndex = leadInfo.audit?.technicalIndex || 0;

@@ -699,6 +699,11 @@
       reasons.push("Rótulo confirmado manualmente; a confirmação humana não substitui evidência automática de OCR.");
     }
 
+    if (extractionResult.denseInkPreview === true) {
+      needsReview = true;
+      reasons.push("Tinta/grade densa: curva disponibilizada apenas para conferência humana.");
+    }
+
     if (needsReview) {
       return {
         status: AUDIT_STATUS.REVIEW_REQUIRED,
@@ -706,7 +711,7 @@
         technicalIndexFormula: "40*Cobertura + 30*AlinhamentoPixel + 20*Continuidade + 10*Calibracao (Índice técnico estrutural; não é porcentagem de fidelidade clínica)",
         reasons,
         limitations,
-        allowsClinicalMeasurement: calSource === "measured" || calSource === "user_confirmed",
+        allowsClinicalMeasurement: extractionResult.denseInkPreview !== true && (calSource === "measured" || calSource === "user_confirmed"),
         allowsAiModelInput: false
       };
     }
@@ -778,10 +783,13 @@
     const tracked = trackSignalCurve(imageData, prep, options);
     const continuityRatio = tracked.columnsWithInk / width;
 
-    // A lead crop that is almost entirely dark candidates is dominated by
-    // shadows, folds, text, or a very dense grid. It is safer to request a
-    // recapture than choose a plausible-looking line from that ambiguity.
-    if (prep.rawInkDensity > 0.25) {
+    // A lead crop that is almost entirely dark is usually dominated by
+    // shadows, folds, text, or a very dense grid. Live automatic capture
+    // must reject it. A user-selected photograph may continue *only* as an
+    // explicitly quarantined preview, so the person can inspect/recapture it
+    // instead of receiving the misleading "no traces found" dead end.
+    const denseInkPreview = prep.rawInkDensity > 0.25 && options.allowDensePreview === true;
+    if (prep.rawInkDensity > 0.25 && !denseInkPreview) {
       const failDense = {
         isValid: false,
         leadIdentity,
@@ -982,6 +990,10 @@
     let effectiveResolutionHz = null;
     const limitations = [];
 
+    if (denseInkPreview) {
+      limitations.push("Região com tinta/grade densa: curva apresentada somente como prévia para conferência humana; medições e IA permanecem bloqueadas.");
+    }
+
     if (tracked.hasMultipleCurves) {
       limitations.push("Há múltiplos agrupamentos de tinta na região; o traçado é apenas uma prévia e exige conferência/recaptura.");
     }
@@ -1043,6 +1055,7 @@
       validDurationSeconds: msPerPixel ? Number(((gapResult.finalValidMask.filter(v => v === 1).length * msPerPixel) / 1000).toFixed(3)) : null,
       baselineY: Number(baselineY.toFixed(2)),
       peakToPeakMv: morph.peakToPeakMv,
+      denseInkPreview,
       confidence: Number(Math.min(0.99, continuityRatio * 0.7 + meanInkScore * 0.3).toFixed(3)),
       continuity: Number(continuityRatio.toFixed(3)),
       limitations,
