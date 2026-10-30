@@ -116,5 +116,5 @@ test('Duke possible and nondefinitive outcomes plus incomplete data',()=>{
  assert.equal(fill('duke',{...duke,du_minor:7}).value,'—');
 });
 test('Score route references the batch 9 version',()=>{
- assert.match(read('trabalho/scores/index.html'),/work-scores\.js\?v=20261030-batch9/);
+ assert.match(read('trabalho/scores/index.html'),/work-scores\.js\?v=20261030-batch10/);
 });
