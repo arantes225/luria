@@ -64,8 +64,8 @@ export class ProfessorAlexMascot extends HTMLElement {
   constructor() {
     super();this.attachShadow({mode:'open'});
     const link=document.createElement('link');link.rel='stylesheet';link.href=new URL('../css/professor-alex-mascot.css?v=20261015-focus-polish1',import.meta.url).href;
-    this.button=document.createElement('button');this.button.type='button';this.button.className='alex-surface';this.button.setAttribute('aria-label','Professor Alex: tocar para cumprimentar');
-    this.message=document.createElement('span');this.message.className='alex-fallback';this.message.textContent='Carregando Professor Alex 3D…';
+    this.button=document.createElement('button');this.button.type='button';this.button.className='alex-surface';this.button.setAttribute('aria-label','Leco: tocar para cumprimentar');
+    this.message=document.createElement('span');this.message.className='alex-fallback';this.message.textContent='Carregando Leco 3D…';
     this.button.append(this.message);this.shadowRoot.append(link,this.button);
     this._elapsed=0;this._last=0;this._visible=true;this._frame=0;this._gesture=null;this._faceMix=1;this._currentFace='happy';this._fromFace='happy';this._blinkAt=2+Math.random()*3;this._blinkStart=-10;this._pointer={x:0,y:0};this._look={x:0,y:0};this._openness=null;this._view={yaw:-.18,pitch:0};
     this._motion=()=>{this._reduced=this._media.matches;this._last=0;this._schedule();};
@@ -120,7 +120,7 @@ export class ProfessorAlexMascot extends HTMLElement {
   _syncProps() {
     const names={small:160,medium:320,large:520},size=names[this.size]||Number(this.size)||320;
     this.style.setProperty('--alex-size',clamp(size,80,900)+'px');
-    this.button.disabled=!this.interactive;this.button.setAttribute('aria-label',this.hasAttribute('draggable-companion')?'Alex: toque para ajuda, arraste para mover ou use as setas do teclado':this.interactive?'Professor Alex: tocar para cumprimentar':'Professor Alex, mascote 3D');
+    this.button.disabled=!this.interactive;this.button.setAttribute('aria-label',this.hasAttribute('draggable-companion')?'Leco: toque para ajuda, arraste para mover ou use as setas do teclado':this.interactive?'Leco: tocar para cumprimentar':'Leco, mascote 3D');
     if(!this.interactive)this._pointer={x:0,y:0};this._syncTheme();
   }
   _syncTheme() {
