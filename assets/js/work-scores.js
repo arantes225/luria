@@ -1049,7 +1049,7 @@
         q("Leucócitos pré-tratamento >11.000/mm³",yesno()),
         q("IMC ≥35 kg/m²",yesno())
       ],
-      interpret:n=>n===0?"Khorana 0: menor risco no modelo.":n===1?"Khorana 1: risco intermediário pelo modelo original.":"Khorana "+n+": risco elevado, considerando limiares ≥2 adotados em algumas diretrizes.",
+      interpret:n=>n===0?"Khorana 0: baixo risco no modelo original.":n<=2?"Khorana "+n+": risco intermediário na classificação original; alguns ensaios usam ≥2 como critério de elegibilidade.":"Khorana "+n+": alto risco na classificação original.",
       reference:"Khorana AA et al. Blood 2008;111:4902–4907.",
       safetyNote:"População: pacientes oncológicos ambulatoriais iniciando quimioterapia sistêmica. Não determina anticoagulação isoladamente."
     },
@@ -1086,7 +1086,7 @@
     },
     {id:"bap65",name:"BAP-65 — exacerbação de DPOC",category:"Respiratório",aliases:"DPOC exacerbação prognóstico",desc:"Estratifica gravidade em exacerbação aguda de DPOC.",tags:["Pneumologia","Plantão"],auditDate:"2026-10-30",
       questions:[q("BUN >25 mg/dL",yesno()),q("Alteração do estado mental",yesno()),q("FC >109 bpm",yesno()),q("Idade >65 anos",yesno())],
-      interpret:n=>n>=3?"BAP-65 "+n+": múltiplos fatores associados a pior evolução.":"BAP-65 "+n+": interpretação prognóstica dependente do contexto clínico; não excluir gravidade pelo total.",
+      interpret:n=>"BAP-65: "+n+" fatores de risco presentes. Esta SOMA não equivale à classe I–V do modelo original (que depende dos três critérios BAP e da idade). Não usar como classificação prognóstica.",
       reference:"Shorr AF et al. Chest. 2011;140:1177–1183.",
       safetyNote:"Não substitui gasometria, oximetria, exame clínico ou critérios de ventilação."
     }
