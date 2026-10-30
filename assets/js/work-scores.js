@@ -1191,6 +1191,7 @@
     {id:"ranson",name:"Ranson — pancreatite não biliar (48 h)",category:"Gastro/Hepato",
       aliases:"pancreatite aguda álcool prognóstico 48 horas",desc:"Onze critérios prognósticos da pancreatite aguda NÃO biliar, incluindo dados de admissão e primeiras 48 horas.",tags:["Gastroenterologia","Plantão"],auditDate:"2026-10-30",
       questions:[
+        q("Os parâmetros de admissão e das primeiras 48 horas já foram avaliados?",[opt("Sim, período de 48 horas concluído",0),opt("Não, escore ainda incompleto",-999)]),
         q("ADMISSÃO: idade >55 anos",yesno()),q("ADMISSÃO: leucócitos >16.000/mm³",yesno()),
         q("ADMISSÃO: glicose >200 mg/dL",yesno()),q("ADMISSÃO: AST >250 U/L",yesno()),
         q("ADMISSÃO: LDH >350 U/L",yesno()),
@@ -1472,6 +1473,9 @@
     if(s.id==="sic" && vals.length===3 && Number(vals[0])+Number(vals[1])<=2){
       const n=vals.reduce((a,v)=>a+Number(v),0);
       setResult(formatNum(n),"SIC não confirmado: além do total ≥4, plaquetas + INR devem somar mais que 2 pontos.","Conferir classificação de sepse e evolução clínica.");return;
+    }
+    if(s.id==="ranson" && vals[0]==="-999"){
+      setResult("Incompleto","Ranson não biliar precisa de dados de admissão e evolução em 48 horas.","Não atribua pontuação zero a exames não realizados.");return;
     }
     if(s.id==="cam"){
       const v=vals.map(Number);
