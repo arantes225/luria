@@ -1,6 +1,6 @@
 import {getAlexConversation, rememberAlexTurn, clearAlexConversation} from './alex-conversation-history.mjs?v=20261028-1';
 
-// Secure Professor Alex front-end: only the user's Supabase JWT goes to our Edge Function.
+// Secure Leco front-end: only the user's Supabase JWT goes to our Edge Function.
 // The Gemini API key is read exclusively inside the Edge Function.
 const finalLayoutStyle = document.createElement("link");
 finalLayoutStyle.rel = "stylesheet";
@@ -88,13 +88,13 @@ const ERROR_MESSAGES = {
   request_in_progress: "Uma resposta ainda está sendo processada. Aguarde antes de enviar outra pergunta.",
   duplicate_request: "Esta pergunta já foi processada ou está em processamento.",
   request_conflict: "Não foi possível confirmar esta solicitação. Atualize a página.",
-  unauthorized: "Entre na sua conta da LURIA para conversar com o Professor Alex.",
+  unauthorized: "Entre na sua conta da LURIA para conversar com o Leco.",
   empty_prompt: "Digite uma pergunta ou informe o tema que deseja estudar.",
   invalid_body: "Os dados da aula não puderam ser enviados. Tente novamente.",
   payload_too_large: "O material é muito grande. Utilize um PDF menor.",
   invalid_file: "O arquivo não pôde ser lido. Envie um PDF, TXT ou MD válido.",
   unsupported_file: "Formato não suportado. Converta o material para PDF, TXT ou MD.",
-  token_budget_reached: "Seu orçamento diário de tokens do Professor Alex terminou. Ele será renovado em até 24h.",
+  token_budget_reached: "Seu orçamento diário de tokens do Leco terminou. Ele será renovado em até 24h.",
   gemini_secret_missing: "A chave CLIENT_GEMINI ainda não está configurada neste projeto Supabase.",
   gemini_key_rejected: "O Google recusou o acesso à API. No AI Studio, confira a chave CLIENT_GEMINI, as permissões e as restrições da chave.",
   gemini_key_invalid: "A chave do Gemini é inválida, bloqueada ou expirou. Crie uma nova chave de autenticação no Google AI Studio e atualize CLIENT_GEMINI no Supabase.",
@@ -106,8 +106,8 @@ const ERROR_MESSAGES = {
   gemini_rate_limited: "O Gemini atingiu o limite de requisições. Tente novamente mais tarde.",
   gemini_unavailable: "O Gemini não conseguiu responder agora. Tente novamente.",
   empty_response: "O Gemini não retornou uma aula. Reformule sua pergunta.",
-  usage_limit_unavailable: "Não foi possível verificar o limite de uso do Professor Alex.",
-  backend_not_configured: "O backend do Professor Alex ainda não está configurado.",
+  usage_limit_unavailable: "Não foi possível verificar o limite de uso do Leco.",
+  backend_not_configured: "O backend do Leco ainda não está configurado.",
 };
 
 function ensureUsageStyles() {
@@ -260,17 +260,17 @@ function appendUserMessage(text) {
   feed.scrollTop = feed.scrollHeight;
 }
 
-function display(message, title = "Professor Alex", isError = false) {
+function display(message, title = "Leco", isError = false) {
   const feed = document.getElementById("alex-chat-feed");
   if (feed) {
     const existingThinking = document.getElementById("alex-thinking-msg");
     if (existingThinking) existingThinking.remove();
 
-    if (title === "Professor Alex está pensando") {
+    if (title === "Leco está pensando") {
       const thinking = document.createElement("div");
       thinking.id = "alex-thinking-msg";
       thinking.className = "alex-msg alex-msg-alex";
-      thinking.innerHTML = '<div class="alex-msg-header"><span class="response-icon">🎓</span><span>Professor Alex</span></div>' +
+      thinking.innerHTML = '<div class="alex-msg-header"><span class="response-icon">🎓</span><span>Leco</span></div>' +
         '<div class="alex-msg-bubble" style="opacity:0.85; font-style:italic;">' + escapeHtml(message) + '</div>';
       feed.appendChild(thinking);
       feed.scrollTop = feed.scrollHeight;
@@ -279,7 +279,7 @@ function display(message, title = "Professor Alex", isError = false) {
 
     const msg = document.createElement("div");
     msg.className = "alex-msg alex-msg-alex";
-    const headerTitle = isError ? 'Aviso' : 'Professor Alex';
+    const headerTitle = isError ? 'Aviso' : 'Leco';
     const errorStyle = isError ? ' style="border-left: 4px solid var(--danger);"' : '';
     msg.innerHTML = '<div class="alex-msg-header"><span class="response-icon">🎓</span><span>' + headerTitle + '</span></div>' +
       '<div class="alex-msg-bubble alex-rich-response"' + errorStyle + '>' + formatAlexResponse(message) + '</div>';
@@ -308,7 +308,7 @@ function restoreConversationView(userId) {
   renderedHistoryUser = userId;
   for (const entry of restored) {
     if (entry.role === "user") appendUserMessage(entry.text);
-    else display(entry.text, "Professor Alex");
+    else display(entry.text, "Leco");
   }
 }
 
@@ -323,7 +323,7 @@ document.getElementById("alex-new-conversation")?.addEventListener("click", () =
   clearAlexConversation(renderedHistoryUser);
   sessionHistory.length = 0;
   document.getElementById("alex-chat-feed")?.replaceChildren();
-  display("Nova conversa iniciada. Sobre o que você quer conversar?", "Professor Alex");
+  display("Nova conversa iniciada. Sobre o que você quer conversar?", "Leco");
 });
 
 function isStudyPlanningRequest(value) {
@@ -363,7 +363,7 @@ function renderStudyAction(plan) {
     try {
       const { data, error } = await client.functions.invoke("professor-alex-gemini", { body: { action: "apply_study_action", action_plan: plan } });
       if (error || !data?.action_result) throw error || Error("empty_action");
-      display(data.answer || "Alteração aplicada.", "Professor Alex");
+      display(data.answer || "Alteração aplicada.", "Leco");
       if (plan.type === "topic_bundle") {
         const result = data.action_result;
         const links = document.createElement("div");
@@ -386,7 +386,7 @@ function renderStudyAction(plan) {
       apply.disabled = false;
       cancel.disabled = false;
       apply.textContent = "Tentar novamente";
-      display("Não consegui aplicar essa proposta. Nada foi alterado.", "Professor Alex", true);
+      display("Não consegui aplicar essa proposta. Nada foi alterado.", "Leco", true);
     }
   };
 }
@@ -483,7 +483,7 @@ if (form) {
     if (isSocial && !hasMaterial) {
       const answer = fastSocialReply(prompt || topic, isEstourado);
       if (prompt) appendUserMessage(prompt);
-      display(answer, "Professor Alex");
+      display(answer, "Leco");
       sessionHistory.splice(0, sessionHistory.length, ...rememberAlexTurn(session.user.id, prompt || topic, answer));
       const promptInput = document.getElementById("alex-prompt");
       if (prompt && promptInput?.value.trim() === prompt) promptInput.value = "";
@@ -491,7 +491,7 @@ if (form) {
       if (mascot?.playAnimation) mascot.playAnimation(isEstourado ? "angry" : "wave");
       if (isLiveActive) {
         const statusText = document.getElementById("alex-status-text");
-        if (statusText) statusText.textContent = "🔊 Professor Alex respondendo...";
+        if (statusText) statusText.textContent = "🔊 Leco respondendo...";
         speakText(answer, () => {
           if (!isLiveActive) return;
           const currentStatus = document.getElementById("alex-status-text");
@@ -517,9 +517,9 @@ if (form) {
 
     if (isLiveActive) {
       const statusText = document.getElementById("alex-status-text");
-      if (statusText) statusText.textContent = "🤔 Professor Alex pensando na resposta...";
+      if (statusText) statusText.textContent = "🤔 Leco pensando na resposta...";
     } else {
-      display(payload.depth === "aula" ? "Preparando explicação detalhada…" : "Respondendo à sua pergunta…", "Professor Alex está pensando");
+      display(payload.depth === "aula" ? "Preparando explicação detalhada…" : "Respondendo à sua pergunta…", "Leco está pensando");
     }
     if (prompt) appendUserMessage(prompt);
     if (isLiveActive) speakText(isEstourado ? "Aham. Espera aí." : "Aham… deixa eu pensar.");
@@ -561,7 +561,7 @@ if (form) {
       const promptInput = document.getElementById("alex-prompt");
       if (prompt && promptInput?.value.trim() === prompt) promptInput.value = "";
       // Modo ao vivo: texto acessível no chat e áudio automático. Chat comum: só texto.
-      display(data.answer, payload.depth === "aula" ? "Aula com o Professor Alex" : "Professor Alex");
+      display(data.answer, payload.depth === "aula" ? "Aula com o Leco" : "Leco");
       if (data?.action_plan) renderStudyAction(data.action_plan);
       if (!isLiveActive) {
         if (mascot?.playAnimation) {
@@ -574,7 +574,7 @@ if (form) {
         }
       } else {
         const statusText = document.getElementById("alex-status-text");
-        if (statusText) statusText.textContent = "🔊 Professor Alex respondendo por voz (Puck)...";
+        if (statusText) statusText.textContent = "🔊 Leco respondendo por voz (Puck)...";
         const onFinishedSpeaking = () => {
           if (isLiveActive) {
             const currentStatus = document.getElementById("alex-status-text");
@@ -591,7 +591,7 @@ if (form) {
           playGeminiPuckAudio(data.audio, data.audioMimeType || "audio/wav", onFinishedSpeaking, data.answer);
         } else {
           if (statusText) statusText.textContent = data?.audioError === "device_tts_fast_path"
-            ? "🔊 Professor Alex respondendo..."
+            ? "🔊 Leco respondendo..."
             : "Voz do Gemini indisponível. Usando a voz do dispositivo.";
           speakText(data.answer, onFinishedSpeaking);
         }
@@ -882,7 +882,7 @@ function initLiveVoiceMode() {
     liveCallBtn.classList.remove("is-active");
     if (liveCallText) liveCallText.textContent = "Conversar ao Vivo por Voz";
     const statusText = document.getElementById("alex-status-text");
-    if (statusText) statusText.textContent = "Professor Alex online e pronto para ensinar";
+    if (statusText) statusText.textContent = "Leco online e pronto para ensinar";
   }
 
   startLiveListening = startListening;

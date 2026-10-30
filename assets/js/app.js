@@ -1361,7 +1361,7 @@ const PAGE_INFO = {
   jogos: { title: "Jogos", eyebrow: "Aprender jogando", helper: "Explore desafios e treine medicina de um jeito diferente." },
   "study-rats": { title: "Study Rats", eyebrow: "Jogos", helper: "Uma corrida médica pelo conhecimento." },
   caderno: { title: "Anotações", eyebrow: "Notas e materiais", helper: "Registre, organize e encontre o que importa." },
-  professor_alex: { title: "Professor Alex", eyebrow: "Aula guiada", helper: "Aprenda, tire dúvidas e transforme seu material em uma aula." },
+  professor_alex: { title: "Leco", eyebrow: "Aula guiada", helper: "Aprenda, tire dúvidas e transforme seu material em uma aula." },
   flashcards: { title: "Flashcards", eyebrow: "Revisão ativa", helper: "Revise no ritmo certo e fortaleça a memória." },
   erros: { title: "Caderno de erros", eyebrow: "Estudar", helper: "Transforme seus erros em revisão direcionada." },
   questoes: { title: "Questões e Simulados", eyebrow: "Prática e provas", helper: "Treine, meça seu desempenho e evolua." },
@@ -6442,7 +6442,7 @@ async function iniciarApp() {
     }
   }
 
-  // Professor Alex é recurso interno em desenvolvimento: acesso exclusivo de admin.
+  // Leco é recurso interno em desenvolvimento: acesso exclusivo de admin.
   let accessState = null;
 
   if (page === "professor_alex" || String(page).startsWith("trabalho_")) {

@@ -54,3 +54,12 @@ test("Client maintains session history and calibrated voice parameters", () => {
   assert.match(clientFile, /utterance\.rate = isEstourado \? 1\.25 : 1\.04/);
   assert.match(clientFile, /utterance\.pitch = isEstourado \? 0\.82 : 1\.0/);
 });
+
+
+test("Assistant is Leco while technical Alex identifiers remain compatible", () => {
+  assert.match(promptsFile, /Você é Leco, preceptor e tutor/);
+  assert.match(edgeFile, /Você é Leco, preceptor e tutor/);
+  assert.match(edgeFile, /alex\|leco\|professor\|mestre/);
+  assert.match(clientFile, /Leco está pensando/);
+  assert.doesNotMatch(promptsFile, /Você é o Professor Alex/);
+});

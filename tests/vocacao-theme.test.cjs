@@ -51,5 +51,9 @@ test("CSS novo possui versão no HTML e no cache offline", () => {
   const cssAsset = "/assets/css/vocacao.css?v=20261029-residencias-v1";
   assert.ok(html.includes(cssAsset));
   assert.equal(sw.split(cssAsset).length - 1, 2, "pré-cache e app shell");
-  assert.ok(sw.includes('luria-pwa-20261030-ecg-dense-preview-v14'), "SW e registro do PWA mantêm a mesma versão");
+  const pwa = fs.readFileSync("assets/js/pwa.js", "utf8");
+  const workerVersion = sw.match(/const CACHE_VERSION = "luria-pwa-([^"]+)"/)?.[1];
+  const clientVersion = pwa.match(/const release = "([^"]+)"/)?.[1];
+  assert.ok(workerVersion, "Service Worker deve ter versão");
+  assert.equal(workerVersion, clientVersion, "SW e registro do PWA mantêm a mesma versão");
 });

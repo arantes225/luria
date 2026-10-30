@@ -115,3 +115,11 @@ test("Edge background accounting preserves atomic reservation", () => {
   assert.match(edge, /accounting_pending: true/);
   assert.match(edge, /const usage = await settle\(\.\.\.usageInputs\)/);
 });
+
+
+test("Assistant is labeled Leco in chat while LURIA branding and legacy endpoint are preserved", () => {
+  assert.match(page, /<title>Leco · LURIA<\/title>/);
+  assert.match(page, /Eu sou o Leco/);
+  assert.doesNotMatch(page, /Professor Alex online/);
+  assert.match(client, /functions\.invoke\("professor-alex-gemini"/);
+});
