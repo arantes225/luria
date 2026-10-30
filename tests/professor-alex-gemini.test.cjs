@@ -93,3 +93,33 @@ test("Gemini 3.8 TTS stays available for lessons while quick voice replies avoid
   assert.match(edge, /audioError = "tts_unavailable"/);
   assert.doesNotMatch(client, /rememberVoiceReply/);
 });
+
+
+test("Fast Alex avoids blocking ordinary questions on the site index", () => {
+  assert.match(client, /const siteContextPromise = hasMaterial && !isSocial && !isPlanning/);
+  assert.match(client, /Promise\.all\(\[\s*prepareFile\(fileInput\?\.files\?\.\[0\]\), siteContextPromise/);
+  assert.match(client, /voice_quality: document\.getElementById\("alex-natural-voice"\)/);
+});
+
+test("Natural voice is opt-in and fast voice is immediate", () => {
+  assert.match(page, /id="alex-natural-voice"/);
+  assert.doesNotMatch(page, /id="alex-natural-voice"[^>]*checked/);
+  assert.match(edge, /voiceQuality = data\.voice_quality === "natural" \? "natural" : "fast"/);
+  assert.match(edge, /channel === "voice" && depth === "aula" && voiceQuality === "natural"/);
+  assert.match(edge, /audioError = "device_tts_fast_path"/);
+});
+
+test("Edge background accounting preserves atomic reservation", () => {
+  assert.match(edge, /reserve_alex_budget/);
+  assert.match(edge, /edgeRuntime\.waitUntil\(/);
+  assert.match(edge, /accounting_pending: true/);
+  assert.match(edge, /const usage = await settle\(\.\.\.usageInputs\)/);
+});
+
+
+test("Assistant is labeled Leco in chat while LURIA branding and legacy endpoint are preserved", () => {
+  assert.match(page, /<title>Leco · LURIA<\/title>/);
+  assert.match(page, /Eu sou o Leco/);
+  assert.doesNotMatch(page, /Professor Alex online/);
+  assert.match(client, /functions\.invoke\("professor-alex-gemini"/);
+});

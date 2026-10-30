@@ -168,6 +168,7 @@
   const els = {
     search: document.getElementById("protocol-search"),
     category: document.getElementById("protocol-category"),
+    batch: document.getElementById("protocol-batch"),
     list: document.getElementById("protocol-list"),
     detail: document.getElementById("protocol-detail"),
     count: document.getElementById("protocol-count"),
@@ -214,14 +215,16 @@
 
   const renderRefs = (items) => {
     if (!Array.isArray(items) || !items.length) return "";
-    return `<section class="protocol-section protocol-refs"><h3>Referências oficiais</h3><div>${items.map((r) => `<a href="${esc(luriaSafeContentUrl(r.url) || '#')}" target="_blank" rel="noopener noreferrer">${esc(r.label || "Fonte oficial")}</a>`).join("")}</div></section>`;
+    return `<section class="protocol-section protocol-refs"><h3>Fontes e referências</h3><div>${items.map((r) => `<a href="${esc(luriaSafeContentUrl(r.url) || '#')}" target="_blank" rel="noopener noreferrer">${esc(r.label || "Fonte oficial")}</a>`).join("")}</div></section>`;
   };
 
   const filtered = () => {
     const q = norm(els.search?.value);
     const category = els.category?.value || "";
+    const batch = els.batch?.value || "";
     return rows.filter((r) => {
       if (category && r.category !== category) return false;
+      if (batch && !(Array.isArray(r.tags) && r.tags.includes(batch))) return false;
       if (!q) return true;
       return norm([r.title,r.category,r.summary,...(r.tags||[]),JSON.stringify(r.suspicion||[]),JSON.stringify(r.exams||[])].join(" ")).includes(q);
     });
@@ -234,7 +237,7 @@
     els.list.innerHTML = items.map((r) => `
       <button type="button" class="protocol-row ${String(selected) === String(r.id) ? "active" : ""}" data-id="${r.id}">
         <span><strong>${esc(r.title)}</strong><small>${esc(r.category)} · ${esc(r.setting)}</small></span>
-        <em class="${r.status === "verified" ? "ok" : "warn"}">${r.status === "verified" ? "Revisado" : "Em revisão"}</em>
+        <em class="${r.status === "verified" ? "ok" : "warn"}">${r.status === "verified" ? "Revisado" : (Array.isArray(r.tags) && r.tags.includes("conteudo-pendente") ? "Em elaboração" : "Em revisão")}</em>
       </button>`).join("");
     els.list.querySelectorAll("[data-id]").forEach((btn) => btn.addEventListener("click", () => {
       const rawId = btn.dataset.id; const found = rows.find((x) => String(x.id) === String(rawId)); selected = found ? found.id : rawId;
@@ -281,6 +284,48 @@
 
   function renderDetail(r) {
     if (!r) { els.detail.innerHTML = '<div class="protocol-placeholder">Selecione um protocolo.</div>'; return; }
+    // Conteudos apenas catalogados ainda nao sao protocolos clinicos: sem prescricao, alta ou copia.
+    if (Array.isArray(r.tags) && r.tags.includes("conteudo-pendente")) {
+      els.detail.innerHTML = `
+        <header class="protocol-detail-head">
+          <div>
+            <div class="protocol-chips"><span>${esc(r.category)}</span><span>${esc(r.setting)}</span><span class="warn">Em elaboração</span></div>
+            <h2>${esc(r.title)}</h2>
+            <p>${esc(r.summary || "")}</p>
+          </div>
+        </header>
+        <section class="protocol-section">
+          <h3>Conteúdo clínico ainda não disponível</h3>
+          <p>Este tema foi adicionado ao catálogo para futura elaboração. Diagnóstico, exames, tratamentos, doses, contraindicações e referências precisam de redação e revisão clínica independente. Não utilize esta ficha para prescrever, dar alta ou tomar decisões assistenciais.</p>
+        </section>
+      `;
+      return;
+    }
+    // Rascunhos clinicos: leitura restrita a secoes editoriais, sem receita, orientacao
+    // de alta generica, calculadoras ou exportacao para prontuario.
+    if (Array.isArray(r.tags) && r.tags.includes("rascunho-clinico")) {
+      els.detail.innerHTML = `
+        <header class="protocol-detail-head"><div>
+          <div class="protocol-chips"><span>${esc(r.category)}</span><span>${esc(r.setting)}</span><span class="warn">Rascunho clínico — em revisão</span></div>
+          <h2>${esc(r.title)}</h2>
+          <p>${esc(r.summary || "")}</p>
+        </div></header>
+        <section class="protocol-section danger">
+          <h3>Atenção: conteúdo em revisão</h3>
+          <p>Ficha de estudo inicial, não validada para assistência, prescrição ou tomada de decisão clínica. Confirmar condutas, contraindicações, doses e fontes específicas antes de uso. Revisão por profissional habilitado pendente.</p>
+        </section>
+        ${listSection("Quando suspeitar", r.suspicion)}
+        ${listSection("Conduta inicial", r.initial_actions)}
+        ${listSection("Exames dirigidos", r.exams)}
+        ${renderDecisionFlow(r.decision_flow)}
+        ${listSection("Tratamento — orientação preliminar", r.treatment, "treatment")}
+        ${listSection("Situações especiais e contraindicações", r.special_situations)}
+        ${listSection("Monitorização e seguimento", r.follow_up)}
+        ${Array.isArray(r.red_flags) && r.red_flags.length ? `<section class="protocol-section danger"><h3>Sinais de alarme</h3><ul>${r.red_flags.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></section>` : ""}
+        ${Array.isArray(r.source_refs) && r.source_refs.length ? renderRefs(r.source_refs) : '<section class="protocol-section protocol-refs"><h3>Fontes e referências</h3><p>Referências individuais ainda não conferidas; não considerar esta ficha pronta.</p></section>'}
+      `;
+      return;
+    }
     const drugs = Array.isArray(r.linked_drug_terms) ? r.linked_drug_terms : [];
     const recipes = Array.isArray(r.linked_recipe_slugs) ? r.linked_recipe_slugs : [];
     els.detail.innerHTML = `
@@ -458,6 +503,16 @@ els.detail.querySelectorAll("[data-drug]").forEach((b) => b.addEventListener("cl
     if (localSeeds.length) rows.sort((a, b) => String(a.title || "").localeCompare(String(b.title || ""), "pt-BR"));
     const cats = [...new Set(rows.map((r) => r.category).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
     els.category.innerHTML = '<option value="">Todas as áreas</option>' + cats.map((c)=>`<option value="${esc(c)}">${esc(c)}</option>`).join("");
+    if (els.batch) {
+      const labels = [
+        ["bloco-01-de-04", "Bloco 1 · Emergência, cardio, pneumologia"],
+        ["bloco-02-de-04", "Bloco 2 · Gastro, nefro, neurologia"],
+        ["bloco-03-de-04", "Bloco 3 · Infectologia, pediatria"],
+        ["bloco-04-de-04", "Bloco 4 · GO, cirurgia, atenção primária"]
+      ];
+      els.batch.innerHTML = '<option value="">Todos os blocos</option>' +
+        labels.map(([key,label]) => `<option value="${esc(key)}">${esc(label)} (50)</option>`).join("");
+    }
     const params = new URLSearchParams(location.search);
     const wanted = params.get("protocol");
     const q = params.get("q");
@@ -467,6 +522,6 @@ els.detail.querySelectorAll("[data-drug]").forEach((b) => b.addEventListener("cl
     if (selected) renderDetail(rows.find((r)=>String(r.id)===String(selected)));
   }
 
-  [els.search,els.category].forEach((el)=>{el?.addEventListener("input",renderList);el?.addEventListener("change",renderList);});
+  [els.search,els.category,els.batch].forEach((el)=>{el?.addEventListener("input",renderList);el?.addEventListener("change",renderList);});
   load();
 })();

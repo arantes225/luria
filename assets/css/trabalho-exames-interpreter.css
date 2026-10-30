@@ -85,3 +85,59 @@ body[data-page="trabalho_laboratorio"] .work-hub-navigation .work-hub-return{dis
 #exam-tool .ex-panic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px;margin-top:10px;padding-top:10px;border-top:1px dashed color-mix(in srgb,#dc2626 25%,var(--border,#dce5f0))}
 #exam-tool .ex-panic-grid div{padding:8px 10px;border-radius:10px;background:var(--surface,#fff);border:1px solid var(--border,#dce5f0);font-size:11.5px;line-height:1.4}
 #exam-tool .ex-panic-grid strong{display:block;color:#991b1b;font-size:12px;margin-bottom:2px}
+
+/* Catálogo de exames em cards — área, busca e ordenação A–Z */
+#exam-tool .ex-layout.ex-catalog-layout{display:block;min-width:0}
+#exam-tool .ex-layout.ex-catalog-layout .ex-main{padding:20px;min-width:0}
+#exam-tool .ex-controls{grid-template-columns:minmax(220px,1.4fr) repeat(2,minmax(175px,1fr));gap:12px}
+#exam-tool .ex-controls label{font-size:12px;font-weight:750}
+#exam-tool .ex-controls select,#exam-tool .ex-controls input{min-height:44px;border-radius:12px}
+#exam-tool .ex-catalog-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:16px}
+#exam-tool .ex-catalog-heading .ex-subtitle{margin:6px 0 0}
+#exam-tool .ex-order-pill{display:inline-flex;align-items:center;justify-content:center;min-width:44px;padding:7px 11px;border-radius:999px;background:color-mix(in srgb,var(--accent,var(--theme,#184888)) 10%,var(--surface,#fff));border:1px solid color-mix(in srgb,var(--accent,var(--theme,#184888)) 24%,var(--border,#dce5f0));color:var(--accent,var(--theme,#184888));font-size:12px;font-weight:900;white-space:nowrap}
+#exam-tool .ex-card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,255px),1fr));gap:13px}
+#exam-tool .ex-test.ex-card{display:flex;flex-direction:column;align-items:stretch;gap:15px;min-width:0;min-height:162px;padding:17px;border:1px solid var(--border,#dce5f0);border-radius:16px;background:var(--surface,#fff);box-shadow:0 2px 8px rgba(17,48,89,.035);transition:border-color .15s ease,box-shadow .15s ease}
+#exam-tool .ex-test.ex-card:nth-child(odd){background:var(--surface,#fff)}
+#exam-tool .ex-test.ex-card:hover{border-color:color-mix(in srgb,var(--accent,var(--theme,#184888)) 35%,var(--border,#dce5f0));box-shadow:0 5px 18px rgba(17,48,89,.08)}
+#exam-tool .ex-card-head{display:grid;gap:10px;min-width:0}
+#exam-tool .ex-card-head h4{font-size:16px;font-weight:800;line-height:1.35;letter-spacing:-.01em;color:var(--text,#142741);margin:0;overflow-wrap:anywhere}
+#exam-tool .ex-area-tag{display:inline-flex;align-items:center;justify-self:start;max-width:100%;padding:5px 9px;border-radius:8px;background:color-mix(in srgb,var(--accent,var(--theme,#184888)) 8%,var(--surface-2,#f7f9fc));color:var(--accent,var(--theme,#184888));font-size:10px;font-weight:800;line-height:1.35;overflow-wrap:anywhere}
+#exam-tool .ex-card-reference{display:grid;align-content:end;gap:3px;margin-top:auto;padding-top:12px;border-top:1px solid var(--border,#dce5f0);min-width:0}
+#exam-tool .ex-card-reference>small:first-child{font-size:10px;font-weight:750;text-transform:uppercase;letter-spacing:.04em;color:var(--muted,#67758b)}
+#exam-tool .ex-test.ex-card .ex-ref{display:block;font-size:17px;font-weight:850;line-height:1.4;color:var(--text,#142741);overflow-wrap:anywhere}
+#exam-tool .ex-test.ex-card .ex-ref-unit{display:block;margin:0;font-size:11px;font-weight:500;color:var(--muted,#67758b)}
+#exam-tool .ex-test.ex-card .ex-status{display:block;margin-top:5px;font-size:11px}
+#exam-tool .ex-card-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;align-items:end}
+#exam-tool .ex-card-fields label{min-width:0;font-size:11px;color:var(--muted,#67758b)}
+#exam-tool .ex-card-fields label:first-child{grid-column:1/-1}
+#exam-tool .ex-card-fields input,#exam-tool .ex-card-fields select{min-height:40px;width:100%;border-radius:10px}
+#exam-tool .ex-no-results{grid-column:1/-1;padding:22px;border:1px dashed var(--border,#dce5f0);border-radius:13px;text-align:center}
+@media(max-width:900px){
+  #exam-tool .ex-controls{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #exam-tool .ex-controls label:first-child{grid-column:1/-1}
+  #exam-tool .ex-card-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,235px),1fr))}
+}
+@media(max-width:600px){
+  #exam-tool .ex-layout.ex-catalog-layout .ex-main{padding:14px}
+  #exam-tool .ex-controls{grid-template-columns:minmax(0,1fr);gap:10px}
+  #exam-tool .ex-controls label:first-child{grid-column:auto}
+  #exam-tool .ex-card-grid{grid-template-columns:1fr;gap:10px}
+  #exam-tool .ex-test.ex-card{min-height:0;padding:15px;gap:13px}
+  #exam-tool .ex-card-head h4{font-size:15px}
+  #exam-tool .ex-catalog-heading{gap:8px}
+}
+@media(prefers-reduced-motion:reduce){#exam-tool .ex-test.ex-card{transition:none}}
+
+#exam-tool .ex-test-details{border-top:1px solid var(--border,#dce5f0);padding-top:8px}
+#exam-tool .ex-test-details summary{cursor:pointer;font-weight:750;font-size:12px;line-height:1.5;color:var(--accent,#184888);padding:6px 0}
+#exam-tool .ex-test-details summary:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+#exam-tool .ex-test-details-content{display:grid;gap:10px;padding:10px 0;font-size:12px;line-height:1.55;color:var(--text,#142741)}
+#exam-tool .ex-test-details-content p{margin:0;overflow-wrap:anywhere}
+#exam-tool .ex-test-details-content strong{display:block;font-size:11px;color:var(--accent,#184888)}
+#exam-tool .ex-test-details-content a{font-size:11px;text-decoration:underline;overflow-wrap:anywhere}
+#exam-tool .ex-test-details-content small{font-size:10px;color:var(--muted,#67758b)}
+
+/* Segunda auditoria: unidade do laudo visível nos exames numéricos. */
+#exam-tool .ex-unit-input{grid-column:1/-1}
+#exam-tool .ex-unit-input input{font-size:12px}
+#exam-tool .ex-status.unit-mismatch{font-weight:800;color:var(--danger,#b3261e)}

@@ -1,11 +1,39 @@
-const test = require('node:test');
-const assert = require('node:assert/strict');
-const fs = require('node:fs');
-const path = require('node:path');
-const { JSDOM } = require('jsdom');
+"use strict";
+const test = require("node:test");
+const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const path = require("node:path");
+const { JSDOM } = require("jsdom");
+
+const root = path.resolve(__dirname, "..");
+const html = fs.readFileSync(path.join(root, "trabalho/ecg/index.html"), "utf8");
+const ui = fs.readFileSync(path.join(root, "assets/js/ecg-smart-ui.js"), "utf8");
+const camera = fs.readFileSync(path.join(root, "assets/js/ecg-smart-camera.js"), "utf8");
+
+test("current scanner exposes working entry, close and manual-capture controls", () => {
+  const dom = new JSDOM(html);
+  const document = dom.window.document;
+  for (const id of ["ecg-btn-normal-photo", "ecg-btn-start-fast", "ecg-btn-start-ultra",
+    "ecg-guided-camera-page", "ecg-guided-close", "ecg-guided-capture", "ecg-video"]) {
+    assert.ok(document.getElementById(id), `missing current ECG control #${id}`);
+  }
+  assert.match(ui, /btnStartFast\?\.addEventListener\("click"/);
+  assert.match(ui, /btnStartUltra\?\.addEventListener\("click"/);
+  assert.match(ui, /guidedClose\?\.addEventListener\("click"/);
+  assert.match(ui, /guidedCapture\?\.addEventListener\("click"/);
+  dom.window.close();
+});
+
+test("manual and automatic paths share native-resolution extraction without bypassing review", () => {
+  assert.match(camera, /function captureCurrentFrame\(\)/);
+  assert.match(camera, /performAutonomousCapture\(mode === "fast", null, true\)/);
+  assert.match(camera, /snapCanvas\.width = videoEl\?\.videoWidth/);
+  assert.match(camera, /processPhotographCanvas\(snapCanvas/);
+  assert.match(camera, /transitionToStage2\(\)/);
+  assert.match(camera, /options\.source === "autonomous_camera" && !isVerifiedEcgScene/);
+});
 
 test('standalone capture page (/trabalho/ecg/captura/) is independent, full-screen, isolated from LURIA menus, and stops tracks cleanly', async () => {
-  const root = path.resolve(__dirname, '..');
   const captureHtml = fs.readFileSync(path.join(root, 'trabalho/ecg/captura/index.html'), 'utf8');
   const contractsSrc = fs.readFileSync(path.join(root, 'assets/js/ecg-contracts.js'), 'utf8');
   const extractorSrc = fs.readFileSync(path.join(root, 'assets/js/ecg-signal-extractor.js'), 'utf8');
@@ -95,7 +123,6 @@ test('standalone capture page (/trabalho/ecg/captura/) is independent, full-scre
 });
 
 test('orientation hint on standalone capture dismisses and adapts aspect ratio on "Manter vertical"', async () => {
-  const root = path.resolve(__dirname, '..');
   const captureHtml = fs.readFileSync(path.join(root, 'trabalho/ecg/captura/index.html'), 'utf8');
   const rotateSrc = fs.readFileSync(path.join(root, 'assets/js/luria-rotate-controller.js'), 'utf8');
   const pageSrc = fs.readFileSync(path.join(root, 'assets/js/ecg-capture-page.js'), 'utf8');

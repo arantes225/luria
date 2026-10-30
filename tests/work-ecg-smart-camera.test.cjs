@@ -286,6 +286,30 @@ test("Adversarial 3: Grade milimetrada vazia (sem traçado de ECG) -> Rejeição
   assert.equal(ext.isValid, false, "Grade vazia não possui sinal elétrico");
 });
 
+test("Regressão: linha vertical da grade não vira pico vermelho artificial", () => {
+  const { context } = createMockEnvironment();
+  loadLuriaScripts(context);
+
+  const w = 160, h = 120;
+  const data = new Uint8ClampedArray(w * h * 4).fill(248);
+  for (let x = 5; x < w - 5; x++) {
+    const idx = (60 * w + x) * 4;
+    data[idx] = data[idx + 1] = data[idx + 2] = 15;
+  }
+  // Uma linha vertical cruza a linha de base, mas não representa um QRS.
+  for (let y = 25; y <= 74; y++) {
+    const idx = (y * w + 80) * 4;
+    data[idx] = data[idx + 1] = data[idx + 2] = 15;
+  }
+
+  const image = { width: w, height: h, data };
+  const extractor = context.LuriaEcgSignalExtractor;
+  const prep = extractor.preprocessLeadRegion(image);
+  const tracked = extractor.trackSignalCurve(image, prep);
+  assert.ok(Math.abs(tracked.rawY[80] - 60) < 2,
+    "O rastreador deve atravessar a linha de grade na continuidade real, sem saltar para sua extremidade");
+});
+
 test("Adversarial 4: Linhas pretas aleatórias e rabiscos não fisiológicos -> Rejeição", () => {
   const { context } = createMockEnvironment();
   loadLuriaScripts(context);
@@ -420,6 +444,13 @@ test("Adversarial 11: Duas curvas sobrepostas na mesma região -> Flag hasMultip
 
   const ext = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData({ width: w, height: h, data: overlapData });
   assert.ok(ext.hasMultipleCurves === true || ext.audit?.reasons?.some(r => r.includes("múltiplas") || r.includes("descontinuidade")), "Deve detectar múltiplas curvas ou descontinuidade");
+
+  const preview = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData(
+    { width: w, height: h, data: overlapData },
+    { allowOverlappingPreview: true }
+  );
+  assert.equal(preview.isValid, false, "Sobreposição catastrófica não pode ser promovida a prévia válida");
+  assert.deepEqual(Array.from(preview.curveCoordinatesPx), [], "Não deve desenhar linha falsa sobre a fotografia");
 });
 
 test("Adversarial 12: Rótulos duplicados na folha -> Detecção e sinalização", () => {

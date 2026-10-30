@@ -483,3 +483,411 @@
   cursor: grabbing;
 }
 
+
+
+/* Native still-photograph review. Independent, full-screen surface:
+   never crops or enhances raw pixels just for display. */
+.ecg-normal-photo-page[hidden] { display: none !important; }
+.ecg-normal-photo-page {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #091625;
+  color: #f8fafc;
+  height: 100vh;
+  height: 100dvh;
+  padding: max(12px, env(safe-area-inset-top)) 14px max(14px, env(safe-area-inset-bottom));
+  box-sizing: border-box;
+}
+body.ecg-normal-photo-open { overflow: hidden !important; }
+.ecg-normal-photo-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 2px 0 12px;
+}
+.ecg-normal-photo-head strong { color: #fff; font-size: 16px; }
+.ecg-normal-photo-head .ecg-btn.secondary,
+.ecg-normal-photo-actions .ecg-btn.secondary {
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.35);
+  background: rgba(255,255,255,.12);
+}
+.ecg-normal-photo-main {
+  min-height: 0;
+  flex: 1 1 auto;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px 0;
+}
+.ecg-normal-photo-main > p { margin: 0; font-size: 13px; line-height: 1.5; color: #cbd5e1; }
+.ecg-normal-photo-main > img {
+  display: block;
+  width: 100%;
+  min-height: 0;
+  max-height: min(70dvh, 780px);
+  flex: 1 1 auto;
+  object-fit: contain;
+  background: #152334;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 10px;
+}
+.ecg-normal-photo-main img[hidden] { display: none !important; }
+.ecg-normal-photo-main .ecg-normal-photo-details { color: #e2e8f0; }
+.ecg-normal-photo-main .ecg-normal-photo-error { color: #fecaca; font-weight: 700; }
+.ecg-normal-photo-actions { display: flex; gap: 10px; padding-top: 12px; }
+.ecg-normal-photo-actions .ecg-btn { flex: 1 1 0; min-height: 48px; }
+.ecg-normal-photo-actions button:disabled { opacity: .5; cursor: not-allowed; }
+@media (max-width: 500px) {
+  .ecg-normal-photo-actions { flex-direction: column; }
+  .ecg-normal-photo-main img { max-height: 62dvh; }
+}
+
+
+/* Accurate paper selection: the frame has the original photo aspect ratio.
+   Four targets sit on the same image-coordinate plane (no letterboxing). */
+.ecg-normal-photo-mode {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 15px;
+  align-items: center;
+}
+.ecg-normal-photo-mode label {
+  color: #f8fafc;
+  font-size: 12.5px;
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+  cursor: pointer;
+}
+.ecg-normal-photo-mode input { accent-color: #38bdf8; }
+.ecg-normal-photo-mode .ecg-btn { font-size: 12px; padding: 6px 10px; }
+.ecg-normal-photo-frame[hidden] { display: none !important; }
+.ecg-normal-photo-frame {
+  position: relative;
+  flex: 0 0 auto;
+  align-self: center;
+  max-width: 100%;
+  background: #0f172a;
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 4px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.ecg-normal-photo-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+  max-width: 100%;
+  object-fit: fill;
+  border: 0;
+  border-radius: 0;
+}
+.ecg-normal-photo-frame svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+#ecg-normal-photo-dim { fill: rgba(1, 10, 22, .5); }
+#ecg-normal-photo-outline {
+  fill: rgba(45, 212, 191, .07);
+  stroke: #60a5fa;
+  stroke-width: 2.5px;
+  vector-effect: non-scaling-stroke;
+  stroke-linejoin: round;
+}
+.ecg-photo-corner {
+  position: absolute;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: #2563eb;
+  box-shadow: 0 2px 10px rgba(0,0,0,.8);
+  transform: translate(-50%, -50%);
+  touch-action: none;
+  cursor: grab;
+  padding: 0;
+}
+.ecg-photo-corner:active { cursor: grabbing; background: #0891b2; }
+.ecg-photo-corner:focus-visible { outline: 3px solid #facc15; outline-offset: 3px; }
+.ecg-normal-photo-frame.is-whole-photo #ecg-normal-photo-polygon,
+.ecg-normal-photo-frame.is-whole-photo .ecg-photo-corner { display: none; }
+.ecg-normal-photo-frame.is-invalid #ecg-normal-photo-outline { stroke: #f87171; }
+
+
+/* ECG CAPTURE — fixed independent PWA surface, never educational content.
+   Same layout in browser, standalone PWA, portrait and landscape. */
+body[data-page="trabalho_ecg"].ecg-capture-active {
+  overflow: hidden !important;
+  overscroll-behavior: none !important;
+}
+body[data-page="trabalho_ecg"].ecg-capture-active > .app-shell,
+body[data-page="trabalho_ecg"].ecg-capture-active > #ui-mobile-navigation,
+body[data-page="trabalho_ecg"].ecg-capture-active > #ui-mobile-tools,
+body[data-page="trabalho_ecg"].ecg-capture-active > #luria-pwa-update-action {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+body[data-page="trabalho_ecg"].ecg-capture-active > #ui-mobile-navigation,
+body[data-page="trabalho_ecg"].ecg-capture-active > #ui-mobile-tools {
+  display: none !important;
+}
+
+/* All hidden ECG steps must stay hidden despite author-defined grid/flex rules. */
+body[data-page="trabalho_ecg"] :is(.ecg-panel,.ecg-card,.ecg-viewport-container,.ecg-guided-camera-page,.ecg-normal-photo-page)[hidden] {
+  display: none !important;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page[hidden] {
+  display: none !important;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page,
+body[data-page="trabalho_ecg"] #ecg-normal-photo-page {
+  z-index: 2147483600 !important;
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  isolation: isolate;
+  background: #061223 !important;
+  color: #f8fafc !important;
+  overflow: hidden !important;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: max(8px,env(safe-area-inset-top)) max(10px,env(safe-area-inset-right))
+    max(8px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-header {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 40px;
+  line-height: 1.25;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-header strong {
+  color: #fff !important;
+  font-size: clamp(13px, 2.3vw, 17px);
+}
+body[data-page="trabalho_ecg"] :is(.ecg-guided-camera-header,.ecg-normal-photo-head) .ecg-btn.secondary {
+  color: #fff !important;
+  background: #173354 !important;
+  border: 1px solid #6898c9 !important;
+  min-height: 40px;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-mount {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  overflow: hidden;
+  border-radius: 9px;
+  background: #020617;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-mount #ecg-camera-viewport {
+  flex: 1 1 auto;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  min-width: 0;
+  min-height: 0;
+  border: 0 !important;
+  border-radius: 9px;
+  aspect-ratio: auto !important;
+  overflow: hidden;
+  margin: 0 !important;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-mount #ecg-camera-viewport[hidden] {
+  display: none !important;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-mount .ecg-camera-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  background: #020617;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-mount .ecg-hud-overlay {
+  padding: clamp(6px,2vw,14px);
+  gap: 6px;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-mount .ecg-hud-topbar {
+  padding: 6px 8px;
+  font-size: 11px;
+  gap: 8px;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-mount .ecg-hud-bottombar {
+  max-height: min(45%, 170px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page[data-capture-mode="fast"] .ecg-hud-reticle-wrap {
+  /* A static ROI falsely implied a page boundary, especially on mobile. */
+  display: none !important;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page[data-capture-mode="ultrasensitive"] .ecg-hud-reticle-wrap {
+  width: 92%;
+  height: 76%;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-footer {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: left;
+  min-height: 18px;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-footer p {
+  margin: 0;
+  color: #bfdbfe;
+  font: 500 12px/1.35 system-ui,sans-serif;
+}
+body[data-page="trabalho_ecg"] .ecg-guided-camera-footer .ecg-btn {
+  flex: 0 0 auto;
+  min-height: 40px;
+  background: #2563eb !important;
+  color: #fff !important;
+}
+body[data-page="trabalho_ecg"] #ecg-normal-photo-page {
+  padding: max(8px,env(safe-area-inset-top)) max(10px,env(safe-area-inset-right))
+    max(8px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));
+}
+body[data-page="trabalho_ecg"] #ecg-normal-photo-page .ecg-normal-photo-main {
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+body[data-page="trabalho_ecg"] #ecg-normal-photo-page .ecg-normal-photo-main img {
+  object-fit: contain;
+}
+body[data-page="trabalho_ecg"] #ecg-normal-photo-page .ecg-normal-photo-frame img {
+  object-fit: fill; /* identical rectangle to four-corner coordinates */
+}
+@media (orientation: portrait) and (max-width: 650px) {
+  body[data-page="trabalho_ecg"] #ecg-guided-camera-page {
+    gap: 6px;
+  }
+  body[data-page="trabalho_ecg"] .ecg-guided-camera-mount .ecg-hud-bottombar {
+    max-height: 30%;
+  }
+}
+@media (orientation: landscape) and (max-height: 530px) {
+  body[data-page="trabalho_ecg"] #ecg-guided-camera-page {
+    padding: max(4px,env(safe-area-inset-top)) 8px max(4px,env(safe-area-inset-bottom));
+    gap: 3px;
+  }
+  body[data-page="trabalho_ecg"] .ecg-guided-camera-header { min-height: 30px; }
+  body[data-page="trabalho_ecg"] .ecg-guided-camera-header .ecg-btn { min-height: 30px; padding: 4px 10px; }
+  body[data-page="trabalho_ecg"] .ecg-guided-camera-footer { min-height: 14px; }
+  body[data-page="trabalho_ecg"] .ecg-guided-camera-footer p { font-size: 11px; }
+  body[data-page="trabalho_ecg"] .ecg-guided-camera-footer .ecg-btn { min-height: 30px; padding: 4px 10px; }
+  body[data-page="trabalho_ecg"] .ecg-guided-camera-mount .ecg-hud-bottombar { max-height: 38%; }
+  body[data-page="trabalho_ecg"] #ecg-normal-photo-page .ecg-normal-photo-main {
+    gap: 6px;
+    padding: 2px 0;
+  }
+  body[data-page="trabalho_ecg"] #ecg-normal-photo-page .ecg-normal-photo-actions {
+    padding-top: 4px;
+  }
+  body[data-page="trabalho_ecg"] #ecg-normal-photo-page .ecg-normal-photo-actions .ecg-btn {
+    min-height: 38px;
+  }
+}
+
+
+/* ECG PWA capture v5: native modal top-layer, never beneath work header/rail.
+   Display only the camera, one status message and an explicit close control. */
+body[data-page="trabalho_ecg"].ecg-capture-active > :not(#ecg-guided-camera-page):not(#ecg-normal-photo-page) {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+body[data-page="trabalho_ecg"].ecg-guided-capture-open > #ecg-guided-camera-page,
+body[data-page="trabalho_ecg"].ecg-normal-photo-open > #ecg-normal-photo-page {
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page::backdrop,
+body[data-page="trabalho_ecg"] #ecg-normal-photo-page::backdrop {
+  background: #061223;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page,
+body[data-page="trabalho_ecg"] #ecg-normal-photo-page {
+  border: 0 !important;
+  border-radius: 0 !important;
+  max-width: 100vw !important;
+  max-height: 100dvh !important;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page:not([open])[hidden],
+body[data-page="trabalho_ecg"] #ecg-normal-photo-page:not([open])[hidden] {
+  display: none !important;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page .ecg-hud-reticle-wrap {
+  display: none !important; /* Never present a fake paper rectangle over unrelated objects. */
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page :is(
+  .ecg-hud-target-badge, .ecg-hud-lead-badges, .ecg-hud-counter, .ecg-hud-progress-bar
+)[hidden] {
+  display: none !important;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page .ecg-hud-overlay {
+  justify-content: flex-end;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page .ecg-hud-bottombar {
+  align-items: center;
+  max-height: min(45%, 150px);
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page .ecg-hud-message-box {
+  width: min(100%, 560px);
+  min-height: 38px;
+  text-align: center;
+  margin-inline: auto;
+}
+body[data-page="trabalho_ecg"] #ecg-guided-camera-page #ecg-btn-cancel-camera {
+  display: none !important; /* Close control belongs in modal header, no duplicates. */
+}
+@media (orientation: landscape) and (max-height: 540px) {
+  body[data-page="trabalho_ecg"] #ecg-guided-camera-page .ecg-hud-lead-badges {
+    max-height: 27px;
+    overflow: auto;
+  }
+  body[data-page="trabalho_ecg"] #ecg-guided-camera-page .ecg-hud-message-box {
+    min-height: 30px;
+  }
+}
+
+/* Experimental waveform discovery: never imply an unconfirmed lead identity. */
+.ecg-provisional-warning {
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid rgba(245,158,11,.55);
+  border-radius: 8px;
+  background: color-mix(in srgb, #f59e0b 12%, transparent);
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.ecg-lead-card:has(.ecg-provisional-warning) .ecg-lead-title {
+  font-size: 13px;
+}

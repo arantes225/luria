@@ -356,6 +356,130 @@ test("E2E Cenário 7: Calibração da grade sem pulso retangular é 'assumed', N
   assert.equal(cal.calibrationSource, "assumed", "Deve ser classificada como 'assumed'");
 });
 
+test("Regressão: pontilhado fino da grade não reduz a escala de milímetro", () => {
+  const { context } = createE2eEnvironment();
+  const w = 600, h = 420;
+  const data = new Uint8ClampedArray(w * h * 4).fill(248);
+  // Textura pontilhada a cada 3 px, como fotografia de papel milimetrado.
+  for (let y = 18; y < h - 18; y += 3) for (let x = 18; x < w - 18; x += 3) {
+    const i = (y * w + x) * 4;
+    data[i] = data[i + 1] = data[i + 2] = 235;
+  }
+  // Linhas estruturais de cada quadrado grande (5 mm = 60 px).
+  for (let x = 30; x < w - 20; x += 60) for (let y = 18; y < h - 18; y++) {
+    const i = (y * w + x) * 4;
+    data[i] = data[i + 1] = data[i + 2] = 160;
+  }
+  for (let y = 30; y < h - 20; y += 60) for (let x = 18; x < w - 18; x++) {
+    const i = (y * w + x) * 4;
+    data[i] = data[i + 1] = data[i + 2] = 160;
+  }
+
+  const cal = context.LuriaEcgCvEngine.detectECGGridAndCalibration({ width: w, height: h, data });
+  assert.equal(cal.gridDetected, true);
+  assert.ok(cal.dominantPeriodPxX >= 55 && cal.dominantPeriodPxX <= 65,
+    "A escala precisa vir das linhas da grade, não do pontilhado interno");
+  assert.ok(cal.pixelsPerMmX >= 11 && cal.pixelsPerMmX <= 13,
+    "60 px por quadrado grande equivale a aproximadamente 12 px/mm");
+});
+
+test("uma tira longa percorre detecção e conferência sem criar 12 derivações", () => {
+  const { context } = createE2eEnvironment();
+  const engine = context.LuriaEcgCvEngine;
+  const strip = engine.cropSubImageData(generateSynthesized12LeadImage(), 50, 355, 700, 80);
+  const detected = engine.detectECGBoundaries(strip, {paperAlreadyRectified:true});
+  assert.equal(detected.detectedLayout?.documentType, "single_strip", detected.message);
+  assert.equal(detected.detectedLayout.columnCount, 1);
+  assert.equal(Object.keys(detected.candidateRegions).length, 1);
+  const edgeToEdge = engine.detectECGBoundaries(strip, {allowDensePreview:true});
+  assert.equal(edgeToEdge.detectedLayout?.documentType, "single_strip", edgeToEdge.message);
+  context.document.createElement = tag => tag === "canvas" ? pixelCanvas() : {style:{},addEventListener(){}};
+  const controller = context.LuriaSmartCamera.createController({});
+  const result = controller.processPhotographCanvas(pixelCanvas(strip), {
+    source:"normal_photo", manualPaperCornersApplied:true
+  });
+  assert.equal(result.ok, true, JSON.stringify(result));
+  assert.equal(controller.getCapturedLeads().filter(l=>l.captured).length, 1);
+  assert.equal(controller.openReview(), true);
+  assert.deepEqual(Object.keys(controller.getSessionStructuredPackage().signals), []);
+  assert.equal(controller.confirmExtractionAndEnableAI().allowed, false);
+  controller.resetCaptureSession();
+  assert.equal(controller.getCapturedLeads().filter(l=>l.captured).length, 0);
+});
+
+test("duas tiras são duas linhas de largura inteira; três tiras permitem corrigir ambiguidade", () => {
+  const { context } = createE2eEnvironment();
+  const engine = context.LuriaEcgCvEngine;
+  const strips = engine.cropSubImageData(generateSynthesized12LeadImage(), 50, 265, 700, 165);
+  const detected = engine.detectECGBoundaries(strips, {paperAlreadyRectified:true});
+  assert.equal(detected.detectedLayout?.mainRows, 2, detected.message);
+  assert.equal(detected.detectedLayout.columnCount, 1);
+  assert.equal(Object.keys(detected.candidateRegions).length, 2);
+  const full = generateSynthesized12LeadImage();
+  const rows = engine.discoverWaveformTopology(full, engine.locatePaperSheet(full).boundaries);
+  const corrected = engine.inferDocumentLayout(full, {xMin:0,xMax:1}, rows, {layoutHint:"3x1"});
+  assert.equal(corrected.mainRows, 3);
+  assert.equal(corrected.columnCount, 1);
+  assert.equal(corrected.documentType, "partial_ecg");
+  assert.equal(corrected.requiresLayoutConfirmation, false);
+});
+
+test("12 linhas empilhadas são 12x1 e preservam todas as regiões", () => {
+  const { context } = createE2eEnvironment();
+  const engine = context.LuriaEcgCvEngine;
+  const strip = engine.cropSubImageData(generateSynthesized12LeadImage(), 50, 355, 700, 80);
+  const width = 700, height = 1220;
+  const data = new Uint8ClampedArray(width * height * 4).fill(238);
+  for (let row = 0; row < 12; row++) for (let y = 0; y < strip.height; y++) {
+    data.set(strip.data.subarray(y * width * 4, (y + 1) * width * 4),
+      ((20 + row * 100 + y) * width) * 4);
+  }
+  const detected = engine.detectECGBoundaries({width,height,data}, {paperAlreadyRectified:true});
+  assert.equal(detected.topology.rowCount, 12);
+  assert.equal(detected.detectedLayout?.columnCount, 1, detected.message);
+  assert.equal(detected.detectedLayout.documentType, "full_ecg_candidate");
+  assert.equal(Object.keys(detected.candidateRegions).length, 12);
+});
+
+test("6 linhas com 2 colunas e 2 linhas com 6 colunas conservam 12 regiões", () => {
+  const { context } = createE2eEnvironment();
+  const engine = context.LuriaEcgCvEngine;
+  const strip = engine.cropSubImageData(generateSynthesized12LeadImage(), 50, 355, 700, 80);
+  for (const rows of [2, 6]) {
+    const width = 700, height = rows * 100 + 20;
+    const data = new Uint8ClampedArray(width * height * 4).fill(238);
+    for (let row = 0; row < rows; row++) for (let y = 0; y < strip.height; y++) {
+      data.set(strip.data.subarray(y * width * 4, (y + 1) * width * 4),
+        ((20 + row * 100 + y) * width) * 4);
+    }
+    const detected = engine.detectECGBoundaries({width,height,data}, {
+      paperAlreadyRectified:true, layoutHint: rows === 2 ? "2x6" : "auto"
+    });
+    assert.equal(detected.topology.rowCount, rows);
+    assert.equal(detected.detectedLayout?.columnCount, 12 / rows, detected.message);
+    assert.equal(Object.keys(detected.candidateRegions).length, 12);
+  }
+});
+
+test("grade rosa com margens e múltiplos períodos conserva o espaçamento fundamental", () => {
+  const { context } = createE2eEnvironment();
+  const width = 965, height = 657;
+  const data = new Uint8ClampedArray(width * height * 4).fill(255);
+  for (let y = 27; y < 627; y++) for (let x = 50; x < 905; x++) {
+    if ((x - 50) % 19 < 2 || (y - 27) % 20 < 2) {
+      const i = (y * width + x) * 4;
+      data[i] = 228; data[i + 1] = 155; data[i + 2] = 178;
+    }
+  }
+  const image = {width, height, data};
+  const cal = context.LuriaEcgCvEngine.detectECGGridAndCalibration(image);
+  assert.equal(cal.gridDetected, true);
+  assert.ok(cal.pixelsPerMmX > 3.4 && cal.pixelsPerMmX < 4.3, JSON.stringify(cal));
+  assert.ok(cal.pixelsPerMmY > 3.4 && cal.pixelsPerMmY < 4.3, JSON.stringify(cal));
+  const extraction = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData(image);
+  assert.equal(extraction.isValid, false, "grade vazia continua sem ser um ECG");
+});
+
 test("E2E Cenário 8: Sinal com 2,5 segundos não deve ser multiplicado por continuidade para encurtar tempo", () => {
   const { context } = createE2eEnvironment();
   const w = 375, h = 180;
@@ -457,7 +581,12 @@ test("E2E Cenário 10: imagem percorre reconhecimento, câmera, extração, audi
     assert.ok(item.extraction.signal.length > 0);
     assert.equal(item.extraction.signal.length, item.extraction.validMask.length);
     assert.deepEqual(item.extraction.leadIdentity, item.leadIdentity);
-    assert.deepEqual(pkg.signals[item.lead], item.extraction.signal);
+    if (item.status === "captured") {
+      assert.deepEqual(pkg.signals[item.lead], item.extraction.signal);
+    } else {
+      assert.equal(Object.prototype.hasOwnProperty.call(pkg.signals, item.lead), false,
+        "Traçado candidato sem rótulo confirmado não pode entrar no mapa clínico nomeado");
+    }
     assert.ok(item.audit.status);
   }
   assert.equal(controller.confirmExtractionAndEnableAI().allowed, false);
@@ -483,8 +612,13 @@ test("OCR V3 em região DI bloqueia associação automática e preserva a diverg
   context.document.createElement = tag => tag === "canvas" ? pixelCanvas() : { tagName: tag, style: {}, addEventListener() {} };
   const controller = context.LuriaSmartCamera.createController({});
   const result = controller.processPhotographCanvas(pixelCanvas(image));
-  assert.equal(result.ok, false);
-  assert.equal(controller.getCapturedLeads().filter(l => l.captured).length, 0);
+  assert.equal(controller.getCapturedLeads().filter(l => l.status === "captured").length, 0,
+    "OCR conflituoso não pode virar derivação clinicamente identificada");
+  assert.equal(controller.confirmExtractionAndEnableAI().allowed, false);
+  if (result.ok) {
+    assert.ok(result.provisionalCount > 0, "Somente prévias sem rótulo poderão ser mostradas");
+    assert.deepEqual(Object.keys(controller.getSessionStructuredPackage().signals), []);
+  }
   assert.ok(controller.getSessionStructuredPackage().originalImageUrl);
 });
 

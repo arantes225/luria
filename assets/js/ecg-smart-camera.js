@@ -22,6 +22,62 @@
   const CANONICAL_LEADS = ["DI", "DII", "DIII", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"];
   const contracts = global.LuriaEcgContracts || (typeof require === "function" ? require("./ecg-contracts.js") : null);
 
+  // Fail closed for LIVE automatic captures. Looking like lines is not proof
+  // of an ECG: require a valid paper, >=3 waveform cells and either a measured
+  // ECG grid or multiple independently recognized lead labels.
+  function hasCredibleEcgCandidates(detection, manualPaperSelection = false, photoPreviewOnly = false) {
+    if (!detection) return false;
+    const sheet = detection.sheet;
+    if (!manualPaperSelection && (!sheet?.found || sheet.isCutOff || sheet.hasSeverePerspective)) return false;
+    const n = Math.max(Number(detection.waveformCandidateCount || 0),
+      Number(detection.detectedLayout?.validWaveformCells || 0));
+    // Preserve independent signal evidence when simple template OCR disagrees;
+    // never regard the mismatch as verified lead identity.
+    const partialPhoto = photoPreviewOnly && detection.detectedLayout?.documentType &&
+      detection.detectedLayout.documentType !== "full_ecg_candidate";
+    const minimum = partialPhoto ? 1 : 3;
+    if (n < minimum || Object.keys(detection.candidateRegions || {}).length < minimum) return false;
+    const grid = detection.calibration;
+    const labels = detection.recognizedLabels || {};
+    const strongLabels = Object.values(labels).filter(x => x?.ocrRecognized && x?.hasValidTrace).length;
+    return manualPaperSelection ||
+      grid?.gridDetected === true ||
+      Number(grid?.coloredGridRatio || 0) >= 0.012 ||
+      strongLabels >= 2 ||
+      // On user-initiated photos, uncertain calibration must NOT prevent a
+      // clearly marked, non-clinical waveform preview.
+      (photoPreviewOnly && n >= minimum && sheet?.found === true) ||
+      // Live mode still needs stronger morphology if the grid is illegible.
+      (n >= 6 && detection.detected === true && sheet?.found === true);
+  }
+  function isVerifiedEcgScene(detection) {
+    return hasCredibleEcgCandidates(detection, false);
+  }
+  function isCaptureReadyScene(detection) {
+    if (!detection?.sheet?.found || detection.sheet.isCutOff || detection.sheet.hasSeverePerspective) return false;
+    const candidates = Math.max(Number(detection.waveformCandidateCount || 0),
+      Number(detection.detectedLayout?.validWaveformCells || 0));
+    // Taking a local photograph may be permissive; naming and measuring leads
+    // remains protected by the stricter full-resolution extraction gate.
+    return candidates >= 2 || (detection.calibration?.gridDetected === true && candidates >= 1);
+  }
+
+  // Template positions are *not* lead identities. Never publish a named
+  // signal merely because an ECG-looking curve occupies an expected slot.
+  // Small bitmap OCR is provisional: accept only non-conflicting, strong
+  // exact matches to the expected label, with no sheet-level label ambiguity.
+  function isSafeAutomaticLeadAssignment(lead, identity, box, anomalies = []) {
+    const warnings = new Set(["duplicate_label", "label_conflict",
+      "ambiguous_swapped_leads_without_full_ocr", "non_standard_lead_arrangement"]);
+    if (anomalies.some(a => warnings.has(a.code))) return false;
+    if (!identity || !box || identity.status !== "ocr_confirmed") return false;
+    if (identity.recognizedLead !== lead || identity.expectedLead !== lead ||
+        box.expectedInTemplate !== lead) return false;
+    if (identity.method !== "glyph_template_ocr" || Number(identity.ocrConfidence) < 0.93) return false;
+    if (identity.anomalies?.some(a => warnings.has(a.code))) return false;
+    return true;
+  }
+
   function createSmartCameraController(options = {}) {
     const {
       videoEl,
@@ -43,6 +99,11 @@
     let animationFrameId = null;
     let isCapturingActive = false;
     let autoCaptureLock = false;
+    let verifiedFrameCount = 0;
+    let verifiedSince = 0;
+    let hudHasVerifiedPaper = false;
+    let lastFrameAnalyzedAt = -Infinity;
+    let cameraTrack = null;
 
     // Estado de calibração global da sessão (medida da grade, confirmada pelo usuário ou presumida)
     let sessionCalibration = {
@@ -73,6 +134,7 @@
     const capturedLeads = new Map();
 
     function resetLeadsRegistry() {
+      capturedLeads.clear();
       CANONICAL_LEADS.forEach(lead => {
         capturedLeads.set(lead, {
           captured: false,
@@ -110,69 +172,7 @@
       ? global.LuriaEcgCvEngine.createEngine()
       : null;
 
-    let debugOverlayEl = options.debugOverlayEl || (hudContainer ? hudContainer.querySelector("#ecg-debug-canvas") : null);
-    let debugOverlayEnabled = false;
-
-    function renderDebugDiagnostics(result) {
-      if (!debugOverlayEnabled || !debugOverlayEl || !result) return;
-      const ctx = debugOverlayEl.getContext("2d");
-      const w = debugOverlayEl.width = videoEl.videoWidth || 640;
-      const h = debugOverlayEl.height = videoEl.videoHeight || 480;
-      ctx.clearRect(0, 0, w, h);
-
-      const doc = result.docDetection;
-      if (!doc) return;
-
-      // 1. Polígono da folha identificada
-      if (doc.sheet && doc.sheet.corners) {
-        const c = doc.sheet.corners;
-        ctx.strokeStyle = doc.detected ? "#10b981" : "#ef4444";
-        ctx.lineWidth = 3;
-        ctx.beginPath();
-        ctx.moveTo(c.topLeft.x, c.topLeft.y);
-        ctx.lineTo(c.topRight.x, c.topRight.y);
-        ctx.lineTo(c.bottomRight.x, c.bottomRight.y);
-        ctx.lineTo(c.bottomLeft.x, c.bottomLeft.y);
-        ctx.closePath();
-        ctx.stroke();
-
-        ctx.fillStyle = doc.detected ? "rgba(16, 185, 129, 0.12)" : "rgba(239, 68, 68, 0.15)";
-        ctx.fill();
-      }
-
-      // 2. Caixas das derivações e rótulos OCR
-      const leads = doc.leads || doc.detectedLayout?.leads || {};
-      Object.keys(leads).forEach(leadName => {
-        const box = leads[leadName];
-        if (!box) return;
-        const bx = box.xMin * w;
-        const by = box.yMin * h;
-        const bw = (box.xMax - box.xMin) * w;
-        const bh = (box.yMax - box.yMin) * h;
-
-        ctx.strokeStyle = "#38bdf8";
-        ctx.lineWidth = 1.5;
-        ctx.strokeRect(bx, by, bw, bh);
-
-        ctx.fillStyle = "rgba(15, 23, 42, 0.85)";
-        ctx.fillRect(bx, by, 38, 16);
-        ctx.fillStyle = "#38bdf8";
-        ctx.font = "bold 11px sans-serif";
-        ctx.fillText(leadName, bx + 4, by + 12);
-      });
-
-      // 3. Informações de Diagnóstico no topo
-      ctx.fillStyle = "rgba(15, 23, 42, 0.88)";
-      ctx.fillRect(8, 8, 280, 110);
-      ctx.fillStyle = "#fff";
-      ctx.font = "11px monospace";
-      ctx.fillText(`ESTADO: ${doc.state || (doc.detected ? "LOCKED" : "SEARCH")}`, 14, 24);
-      ctx.fillText(`LAYOUT: ${doc.detectedLayout?.name || "none"} (${doc.layoutConfidence || "none"})`, 14, 40);
-      ctx.fillText(`GRADE: ${doc.calibration?.calibrationSource || "unknown"} (dx:${doc.calibration?.pixelsPerMmX?.toFixed(1) || "?"}px)`, 14, 56);
-      ctx.fillText(`NITIDEZ: ${result.quality?.sharpnessScore?.toFixed(1) || 0} | LUMA: ${result.quality?.brightness?.toFixed(0) || 0}`, 14, 72);
-      ctx.fillText(`EVIDÊNCIA: ${doc.detected ? "APROVADA" : (doc.message || "Buscando...")}`, 14, 88);
-      ctx.fillText(`REFLEXO: ${((result.quality?.glareRatio || 0) * 100).toFixed(1)}%`, 14, 104);
-    }
+    // Amortecedor temporal para mensagens visuais do HUD
     let lastHudMessage = "Localizando ECG...";
     let lastMessageTimestamp = 0;
     const MESSAGE_DEBOUNCE_MS = 550;
@@ -190,6 +190,16 @@
       }
     }
 
+    function setHudPaperVerified(verified) {
+      const changed = hudHasVerifiedPaper !== Boolean(verified);
+      hudHasVerifiedPaper = Boolean(verified);
+      if (!hudContainer || !changed) return;
+      for (const selector of [".ecg-hud-target-badge", ".ecg-hud-lead-badges", ".ecg-hud-counter", ".ecg-hud-progress-bar"]) {
+        const element = hudContainer.querySelector(selector);
+        if (element) element.hidden = !hudHasVerifiedPaper;
+      }
+    }
+
     function updateHudProgress() {
       if (!hudContainer) return;
       const countEl = hudContainer.querySelector(".ecg-hud-count");
@@ -197,7 +207,7 @@
       const progressFill = hudContainer.querySelector(".ecg-hud-progress-fill");
       const badgeContainer = hudContainer.querySelector(".ecg-hud-lead-badges");
 
-      const capturedCount = CANONICAL_LEADS.filter(l => capturedLeads.get(l)?.captured).length;
+      const capturedCount = CANONICAL_LEADS.filter(l => capturedLeads.get(l)?.status === "captured").length;
 
       if (countEl) countEl.textContent = `${capturedCount} de 12`;
       if (targetEl) targetEl.textContent = currentTargetLead || "Completo";
@@ -208,7 +218,7 @@
         CANONICAL_LEADS.forEach(lead => {
           const info = capturedLeads.get(lead);
           const badge = document.createElement("span");
-          const stateClass = info.captured
+          const stateClass = info.status === "captured"
             ? "is-captured"
             : (lead === currentTargetLead ? "is-target" : "is-pending");
           badge.className = `ecg-lead-pill ${stateClass}`;
@@ -218,11 +228,46 @@
       }
     }
 
+    // New image = new technical session. Do not mix a previous scanner attempt
+    // with a later normal photo in the user's A/B comparison.
+    function resetCaptureSession() {
+      stopCamera();
+      resetLeadsRegistry();
+      pendingLeadQueue = [...CANONICAL_LEADS];
+      currentTargetLead = "DI";
+      currentSheetMap = null;
+      originalImageUrl = null;
+      pendingUncertainCapture = null;
+      autoCaptureLock = false;
+      verifiedFrameCount = 0;
+      verifiedSince = 0;
+      lastFrameAnalyzedAt = -Infinity;
+      setHudPaperVerified(false);
+      currentStage = 1;
+      sessionCalibration = {
+        paperSpeedMmPerSec: 25,
+        gainMmPerMv: 10,
+        calibrationSource: "unknown",
+        confirmedByUser: false,
+        pixelsPerMmX: null,
+        pixelsPerMmY: null,
+        msPerPixel: null,
+        mvPerPixel: null
+      };
+      global.LuriaEcgSessionData = null;
+      updateHudProgress();
+    }
+
     async function startCamera(preferredMode = "fast") {
       mode = preferredMode;
       currentStage = 1;
       autoCaptureLock = false;
       pendingUncertainCapture = null;
+      verifiedFrameCount = 0;
+      verifiedSince = 0;
+      lastFrameAnalyzedAt = -Infinity;
+      hudHasVerifiedPaper = true; // force the first HUD transition
+      setHudPaperVerified(false);
       if (typeof onStageChange === "function") onStageChange(1);
 
       if (rotateController) {
@@ -230,24 +275,31 @@
       }
 
       updateHudProgress();
-      if (mode === "ultrasensitive" && currentTargetLead) {
-        setHudMessage(`Vá para ${currentTargetLead}.`, true);
-      } else {
-        setHudMessage("Aponte para o ECG...", true);
-      }
+      setHudMessage("Aponte a câmera para uma folha de ECG inteira. Nenhum traçado será reconhecido sem confirmação da folha.", true);
 
       try {
         const constraints = {
           audio: false, // RIGOROSAMENTE SEM ÁUDIO
           video: {
             facingMode: { ideal: "environment" },
-            width: { ideal: 1920, min: 1280 },
-            height: { ideal: 1080, min: 720 }
+            width: { ideal: 3840 },
+            height: { ideal: 2160 },
+            aspectRatio: { ideal: 16 / 9 }
           }
         };
 
         if (typeof navigator !== "undefined" && navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
           stream = await navigator.mediaDevices.getUserMedia(constraints);
+          cameraTrack = stream.getVideoTracks?.()[0] || null;
+          const capabilities = cameraTrack?.getCapabilities?.() || {};
+          const advanced = [];
+          if (capabilities.focusMode?.includes?.("continuous")) advanced.push({ focusMode: "continuous" });
+          if (capabilities.exposureMode?.includes?.("continuous")) advanced.push({ exposureMode: "continuous" });
+          if (capabilities.whiteBalanceMode?.includes?.("continuous")) advanced.push({ whiteBalanceMode: "continuous" });
+          if (advanced.length) {
+            try { await cameraTrack.applyConstraints({ advanced }); }
+            catch (_) { /* Capability reports are inconsistent across mobile browsers. */ }
+          }
           if (videoEl) {
             videoEl.srcObject = stream;
             videoEl.setAttribute("playsinline", "true");
@@ -274,26 +326,20 @@
         stream.getTracks().forEach(track => track.stop());
         stream = null;
       }
+      cameraTrack = null;
       if (rotateController) {
         rotateController.stop();
       }
     }
 
-    let isProcessingFrame = false;
-    let lastFrameProcessTime = 0;
-    const MIN_FRAME_INTERVAL_MS = 140; // ~7 FPS máximo para processamento CV pesado em celulares intermediários
-
-    function scheduleLoop() {
+    function scheduleLoop(timestamp) {
       if (!isCapturingActive) return;
-      const now = (typeof performance !== "undefined" && typeof performance.now === "function") ? performance.now() : Date.now();
-      if (!isProcessingFrame && now - lastFrameProcessTime >= MIN_FRAME_INTERVAL_MS) {
-        lastFrameProcessTime = now;
-        isProcessingFrame = true;
-        try {
-          processCurrentFrame();
-        } finally {
-          isProcessingFrame = false;
-        }
+      // Heavy frame analysis every animation frame caused lag/stale HUD on
+      // mobile PWAs. ~5 FPS is sufficient for paper verification and stability.
+      const now = Number.isFinite(timestamp) ? timestamp : Date.now();
+      if (now - lastFrameAnalyzedAt >= 180) {
+        lastFrameAnalyzedAt = now;
+        processCurrentFrame();
       }
       animationFrameId = requestAnimationFrame(scheduleLoop);
     }
@@ -307,10 +353,33 @@
       if (!result || !result.ok) return;
 
       const { quality, isStable, motionBlur, docDetection } = result;
-
-      // Executa depuração visual se habilitada (sem afetar lógica de algoritmo)
-      if (debugOverlayEnabled) {
-        renderDebugDiagnostics(result);
+      const hasEcgEvidence = isVerifiedEcgScene(docDetection);
+      const captureReadyEvidence = isCaptureReadyScene(docDetection);
+      if (captureReadyEvidence) {
+        if (!verifiedFrameCount) verifiedSince = Date.now();
+        verifiedFrameCount = Math.min(10, verifiedFrameCount + 1);
+      } else {
+        verifiedFrameCount = 0;
+        verifiedSince = 0;
+      }
+      const sceneReady = captureReadyEvidence && verifiedFrameCount >= 4 &&
+        Date.now() - verifiedSince >= 400;
+      setHudPaperVerified(hasEcgEvidence);
+      if (!docDetection?.sheet?.found) {
+        currentSheetMap = null;
+        setReticleStatus("searching");
+        setHudMessage("Procure uma superfície clara: coloque a folha inteira do ECG no quadro.");
+        return;
+      }
+      if (docDetection.sheet.isCutOff) {
+        setHudMessage("Afaste o celular até aparecerem as quatro bordas da folha.");
+        setReticleStatus("adjusting");
+        return;
+      }
+      if (docDetection.sheet.hasSeverePerspective) {
+        setHudMessage("Alinhe a câmera paralela ao papel para reduzir a perspectiva.");
+        setReticleStatus("adjusting");
+        return;
       }
       if (mode === "ultrasensitive") {
         cvEngine.updateSpatialRegistration(cameraSpatialTracker,
@@ -332,72 +401,53 @@
       }
 
       // 2. Verificação de orientação (rotação de 90°/270° ou inclinação acentuada)
-      if (docDetection.orientation && docDetection.orientation.isRotated90) {
-        setHudMessage("ECG rotacionado em 90°. Gire o exame ou o celular para a horizontal.");
+      if (docDetection.orientation?.isRotated90 && !docDetection.detected) {
+        setHudMessage("Possível rotação do ECG. Confira a orientação da foto; não é preciso girar o celular para continuar.");
         setReticleStatus("adjusting");
         return;
-      }
-
-      // 3. Verificação se o ECG foi identificado
-      if (!docDetection.detected) {
-        if (mode === "ultrasensitive") {
-          // No modo ultrassensível, podemos estar muito próximos de 1 ou 2 derivações
-          if (quality.sharpnessScore < 20) {
-            setHudMessage("Aproxime ou afaste um pouco para focar...");
-            setReticleStatus("adjusting");
-            return;
-          }
-          if (motionBlur || !isStable) {
-            setHudMessage("Mantenha parado.");
-            setReticleStatus("stabilizing");
-            return;
-          }
-          // Tenta capturar/identificar a região aproximada
-          setReticleStatus("aligned");
-          performAutonomousCapture(false, result);
-          return;
-        }
-
-        setHudMessage(docDetection.reason || "Região não identificada. Afaste o celular para localizar novamente o ECG.");
-        setReticleStatus("searching");
-        return;
-      }
-
-      // Atualiza o mapa espacial verdadeiro quando detectado
-      currentSheetMap = docDetection;
-      const sheetBounds = docDetection.sheet?.boundaries || docDetection.boundaries;
-      const sheetCorners = docDetection.sheet?.corners || null;
-
-      // 4. Orientação direcional em tempo real quando buscando derivação específica
-      if (mode === "ultrasensitive" && currentTargetLead && currentSheetMap) {
-        // O centro da tela é a posição observada da câmera; a região alvo é registrada entre quadros.
-        const currentCenter = { x: 0.5, y: 0.5 };
-        cameraSpatialTracker.lastRoiCenter = currentCenter;
-
-        const nav = cvEngine.computeNavigationGuidance(currentSheetMap, currentTargetLead, currentCenter, cameraSpatialTracker);
-        if (nav && nav.direction !== "aligned" && nav.direction !== "centered") {
-          setHudMessage(nav.instruction || nav.message);
-          setReticleStatus("adjusting", "LOCK_DOCUMENT", sheetCorners, sheetBounds);
-          return;
-        }
       }
 
       // 5. Se a folha foi detectada, mas há movimento
       if (motionBlur || !isStable) {
         setHudMessage("Mantenha parado.");
-        setReticleStatus("stabilizing", "LOCK_DOCUMENT", sheetCorners, sheetBounds);
+        setReticleStatus("stabilizing");
         return;
       }
 
       // 6. Se nitidez for insuficiente
       if (quality.sharpnessScore < 22) {
-        setHudMessage("Mantenha parado para focar...");
-        setReticleStatus("adjusting", "DETECT_ECG_STRUCTURE", sheetCorners, sheetBounds);
+        setHudMessage("Aproxime um pouco e mantenha parado até as linhas ficarem nítidas.");
+        setReticleStatus("adjusting");
         return;
       }
 
-      // 7. Enquadramento e estabilidade alcançados -> Captura Autônoma com moldura adaptada
-      setReticleStatus("aligned", "GUIDED_CAPTURE", sheetCorners, sheetBounds);
+      if (!captureReadyEvidence) {
+        currentSheetMap = null;
+        setReticleStatus("searching");
+        setHudMessage("Folha encontrada. Aproxime devagar até a grade e pelo menos dois traçados ficarem visíveis.");
+        return;
+      }
+
+      if (!sceneReady) {
+        setHudMessage("ECG encontrado. Mantenha o celular parado por um instante para a foto automática.");
+        setReticleStatus("stabilizing");
+        return;
+      }
+
+      currentSheetMap = docDetection;
+      if (mode === "ultrasensitive" && currentTargetLead && currentSheetMap) {
+        const currentCenter = { x: 0.5, y: 0.5 };
+        cameraSpatialTracker.lastRoiCenter = currentCenter;
+        const nav = cvEngine.computeNavigationGuidance(currentSheetMap, currentTargetLead, currentCenter, cameraSpatialTracker);
+        if (nav && nav.direction !== "aligned" && nav.direction !== "centered") {
+          setHudMessage(nav.instruction || nav.message);
+          setReticleStatus("adjusting");
+          return;
+        }
+      }
+
+      // 7. Enquadramento e estabilidade alcançados -> Captura Autônoma
+      setReticleStatus("aligned");
 
       if (mode === "fast") {
         setHudMessage("ECG identificado! Capturando e validando derivações...", true);
@@ -408,52 +458,11 @@
       }
     }
 
-    function setReticleStatus(status, macroState = null, detectedCorners = null, boundaries = null) {
+    function setReticleStatus(status) {
       if (!hudContainer) return;
-      const reticle = hudContainer.querySelector(".ecg-hud-reticle") || hudContainer.querySelector(".ecg-hud-reticle-box");
+      const reticle = hudContainer.querySelector(".ecg-hud-reticle");
       if (reticle) {
         reticle.setAttribute("data-status", status);
-        if (macroState) {
-          reticle.setAttribute("data-macro-state", macroState);
-        } else {
-          // Mapeamento automático de status para data-macro-state
-          const macroMap = {
-            searching: "SEARCH_DOCUMENT",
-            adjusting: "LOCK_DOCUMENT",
-            stabilizing: "DETECT_ECG_STRUCTURE",
-            aligned: "GUIDED_CAPTURE"
-          };
-          if (macroMap[status]) {
-            reticle.setAttribute("data-macro-state", macroMap[status]);
-          }
-        }
-
-        // Adaptação Dinâmica do Enquadramento (Bounding Polygon / Box Adaptativo)
-        // O formato da folha observada determina a geometria da moldura
-        if (boundaries && boundaries.xMin !== undefined && boundaries.xMax !== undefined) {
-          const bw = (boundaries.xMax - boundaries.xMin) * 100;
-          const bh = (boundaries.yMax - boundaries.yMin) * 100;
-          const cx = ((boundaries.xMin + boundaries.xMax) / 2) * 100;
-          const cy = ((boundaries.yMin + boundaries.yMax) / 2) * 100;
-
-          // Suavização da moldura adaptativa
-          reticle.style.width = `clamp(120px, ${bw.toFixed(1)}%, 96vw)`;
-          reticle.style.height = `clamp(90px, ${bh.toFixed(1)}%, 92vh)`;
-          reticle.style.aspectRatio = "unset";
-          reticle.style.left = `${cx.toFixed(1)}%`;
-          reticle.style.top = `${cy.toFixed(1)}%`;
-          reticle.style.position = "absolute";
-          reticle.style.transform = "translate(-50%, -50%)";
-        } else if (status === "searching") {
-          // Campo amplo de busca sem impor formato estreito ao exame
-          reticle.style.width = "min(88vw, 760px)";
-          reticle.style.height = "min(80vh, 540px)";
-          reticle.style.aspectRatio = "unset";
-          reticle.style.left = "50%";
-          reticle.style.top = "50%";
-          reticle.style.position = "absolute";
-          reticle.style.transform = "translate(-50%, -50%)";
-        }
       }
     }
 
@@ -474,13 +483,25 @@
       originalImageUrl = typeof snapCanvas.toDataURL === "function" ? snapCanvas.toDataURL("image/jpeg", 0.92) : null;
 
       // 1. Detecta limites reais, orientação, perspectiva, grade, calibração e rótulos
+      // A selected photograph can expose ambiguous, dense regions in the
+      // review screen. Automatic scanner capture retains the strict reject.
+      const allowDensePreview = options.source !== "autonomous_camera";
       let boundaries = cvEngine.detectECGBoundaries(fullImageData, {
-        userCalibration: sessionCalibration.confirmedByUser ? sessionCalibration : options.userCalibration
+        userCalibration: sessionCalibration.confirmedByUser ? sessionCalibration : options.userCalibration,
+        paperAlreadyRectified: options.manualPaperCornersApplied === true,
+        layoutHint: options.layoutHint,
+        allowDensePreview,
+        allowTopologyFallback: allowDensePreview
       });
 
-      // Se a imagem estiver rotacionada ou com perspectiva severa e os cantos foram localizados, retifica
-      if (boundaries.orientation && (boundaries.orientation.isRotated90 || Math.abs(boundaries.orientation.skewAngleDeg) > 1.5)) {
-        const corrAngle = boundaries.orientation.isRotated90 ? 90 : -boundaries.orientation.skewAngleDeg;
+      // The CV engine returns a plain {width,height,data} object, not a
+      // browser ImageData instance. Passing that object to putImageData()
+      // throws TypeError in real browsers (normal full-photo capture crash).
+      // Do not attempt a 90° rotation using this older same-size warp: it
+      // clips the ECG; instead report the orientation for user correction.
+      const skew = Number(boundaries.orientation?.skewAngleDeg);
+      if (!options.manualPaperCornersApplied && !boundaries.orientation?.isRotated90 &&
+          Number.isFinite(skew) && Math.abs(skew) > 1.5) {
         const rectified = cvEngine.rectifyImagePerspective(
           fullImageData,
           boundaries.sheet?.corners || {
@@ -489,15 +510,21 @@
             bottomLeft: { x: 0, y: fullImageData.height },
             bottomRight: { x: fullImageData.width, y: fullImageData.height }
           },
-          corrAngle
+          -skew
         );
-        if (rectified && rectified.width > 80 && rectified.height > 80) {
+        if (rectified && rectified.width > 80 && rectified.height > 80 &&
+            rectified.data?.length === rectified.width * rectified.height * 4) {
+          const corrected = ctx.createImageData(rectified.width, rectified.height);
+          corrected.data.set(rectified.data);
           snapCanvas.width = rectified.width;
           snapCanvas.height = rectified.height;
-          ctx.putImageData(rectified, 0, 0);
-          fullImageData = rectified;
+          snapCanvas.getContext("2d").putImageData(corrected, 0, 0);
+          fullImageData = corrected;
           boundaries = cvEngine.detectECGBoundaries(fullImageData, {
-            userCalibration: sessionCalibration.confirmedByUser ? sessionCalibration : options.userCalibration
+            userCalibration: sessionCalibration.confirmedByUser ? sessionCalibration : options.userCalibration,
+            layoutHint: options.layoutHint,
+            allowDensePreview,
+            allowTopologyFallback: allowDensePreview
           });
         }
       }
@@ -505,28 +532,48 @@
       // Atualiza calibração da sessão se medida na grade ou no objeto calibration
       const detectedCal = boundaries.calibration || boundaries.gridCalibration || null;
       if (detectedCal) {
-        const normalized = contracts?.normalizeCalibration ? contracts.normalizeCalibration(detectedCal) : detectedCal;
-        if (normalized.calibrationSource === "measured" || normalized.calibrationSource === "user_confirmed") {
+        const gc = detectedCal;
+        if (gc.calibrationSource === "measured" || gc.calibrationSource === "user_confirmed") {
           sessionCalibration = {
             ...sessionCalibration,
-            ...normalized,
-            confirmedByUser: Boolean(normalized.confirmedByUser || sessionCalibration.confirmedByUser)
+            paperSpeedMmPerSec: gc.paperSpeedMmPerSec || sessionCalibration.paperSpeedMmPerSec,
+            gainMmPerMv: gc.gainMmPerMv || sessionCalibration.gainMmPerMv,
+            calibrationSource: gc.calibrationSource,
+            confirmedByUser: Boolean(gc.confirmedByUser || sessionCalibration.confirmedByUser),
+            pixelsPerMmX: gc.pixelsPerMmX,
+            pixelsPerMmY: gc.pixelsPerMmY,
+            msPerPixel: gc.msPerPixel,
+            mvPerPixel: gc.mvPerPixel
           };
         } else if (sessionCalibration.calibrationSource === "unknown") {
-          sessionCalibration = {
-            ...sessionCalibration,
-            ...normalized,
-            calibrationSource: normalized.calibrationSource || "assumed"
-          };
+          sessionCalibration.calibrationSource = gc.calibrationSource || "assumed";
+          sessionCalibration.pixelsPerMmX = gc.pixelsPerMmX;
+          sessionCalibration.pixelsPerMmY = gc.pixelsPerMmY;
+          sessionCalibration.msPerPixel = gc.msPerPixel;
+          sessionCalibration.mvPerPixel = gc.mvPerPixel;
         }
       }
 
       currentSheetMap = boundaries;
+      // Never let autonomous live capture bypass the document/grid/lead gate.
+      if (options.source === "autonomous_camera" && !isVerifiedEcgScene(boundaries)) {
+        return { ok: false, capturedCount: 0,
+          reason: "A folha e as derivações não foram confirmadas com segurança." };
+      }
 
-      const leadsMap = boundaries.leads || boundaries.detectedLayout?.leads || null;
+      const candidateMap = boundaries.candidateRegions || {};
+      const crediblePaper = hasCredibleEcgCandidates(
+        boundaries,
+        options.manualPaperCornersApplied === true,
+        options.source !== "autonomous_camera"
+      );
+      const leadsMap = crediblePaper
+        ? candidateMap
+        : (boundaries.detected ? (boundaries.leads || boundaries.detectedLayout?.leads) : null);
 
-      // Se a imagem foi rejeitada (papel em branco, página de texto, grade vazia sem ECG, etc.)
-      if (!boundaries.detected || !leadsMap) {
+      // Reject non-ECG scenes; identity conflict alone does not discard pixels
+      // when independently verified waveform and paper evidence exists.
+      if (!leadsMap || !Object.keys(leadsMap).length) {
         return {
           ok: false,
           capturedCount: 0,
@@ -540,9 +587,17 @@
       const newlyCapturedLeads = [];
       const anomalies = contracts.normalizeAnomalies(boundaries.anomalies);
 
-      CANONICAL_LEADS.forEach(leadName => {
-        const box = leadsMap[leadName];
+      let quarantinedCount = 0;
+      Object.entries(leadsMap).forEach(([leadName, box]) => {
         if (!box) return;
+        if (!capturedLeads.has(leadName)) capturedLeads.set(leadName, {
+          lead: leadName, captured: false, status: "pending", displayLabel: box.displayLabel
+        });
+        const proposedIdentity = contracts.normalizeLeadIdentity(boundaries.leadIdentities?.[leadName] || {});
+        let provisional = !isSafeAutomaticLeadAssignment(leadName, proposedIdentity, box, anomalies);
+        if (!CANONICAL_LEADS.includes(leadName) ||
+            boundaries.detectedLayout?.requiresLayoutConfirmation === true) provisional = true;
+        if (provisional) quarantinedCount++;
 
         const roiX = Math.max(0, Math.round(box.xMin * snapCanvas.width));
         const roiY = Math.max(0, Math.round(box.yMin * snapCanvas.height));
@@ -558,22 +613,43 @@
         cropCtx.drawImage(snapCanvas, roiX, roiY, roiW, roiH, 0, 0, roiW, roiH);
         const roiImageData = cropCtx.getImageData(0, 0, roiW, roiH);
 
+        // A misaligned cell can include the NEXT lead label in its middle
+        // (e.g. an "aVR" crop visually containing "III" and "aVF").
+        // An independent scan in the right half makes such crops ineligible
+        // for any automatic lead association.
+        if (typeof cvEngine.recognizeLeadLabelInRegion === "function") {
+          const other = cvEngine.recognizeLeadLabelInRegion(roiImageData, {
+            xMin: 0.36, yMin: 0, xMax: 1, yMax: 1
+          });
+          if (other.recognized && other.recognizedLead !== leadName) {
+            if (!provisional) quarantinedCount++;
+            provisional = true;
+          }
+        }
+
         // Verifica o rótulo específico e anomalias (troca ou duplicidade)
         const regionAnomalies = anomalies.filter(a => a.lead === leadName || a.recognizedLead === leadName || a.expectedLead === leadName);
-        const leadIdentity = contracts.normalizeLeadIdentity({
-          ...(boundaries.leadIdentities?.[leadName] || {}),
-          lead: leadName,
-          expectedLead: boundaries.leadIdentities?.[leadName]?.expectedLead || box.expectedInTemplate || leadName,
-          region: boundaries.leadIdentities?.[leadName]?.region || box,
-          anomalies: regionAnomalies,
-          confirmedByUser: options.confirmedLead === leadName,
-          humanConfirmedLead: options.confirmedLead === leadName ? leadName : null
-        });
+        const leadIdentity = provisional
+          ? contracts.normalizeLeadIdentity({
+              lead: leadName, expectedLead: leadName, recognizedLead: null,
+              method: "topology_hypothesis", evidence: "positional_hypothesis",
+              region: box, anomalies: regionAnomalies
+            })
+          : contracts.normalizeLeadIdentity({
+              ...(boundaries.leadIdentities?.[leadName] || {}),
+              lead: leadName,
+              expectedLead: boundaries.leadIdentities?.[leadName]?.expectedLead || box.expectedInTemplate || leadName,
+              region: boundaries.leadIdentities?.[leadName]?.region || box,
+              anomalies: regionAnomalies
+            });
 
         const extractionResult = extractor.extractRealSignalFromImageData(roiImageData, {
           leadIdentity,
           regionBounds: { x: roiX, y: roiY, width: roiW, height: roiH },
           calibration: sessionCalibration,
+          allowOverlappingPreview: true,
+          allowDensePreview,
+          maskPrintedHeader: true,
           provenance: {
             source: options.source || "smart_camera",
             layoutId: boundaries.layoutId,
@@ -585,13 +661,21 @@
         const leadInfo = capturedLeads.get(leadName);
         if (!leadInfo) return;
 
+        // A dense preview is never a named, automatic clinical lead. It is
+        // intentionally kept as a candidate even if OCR happened to match.
+        if (extractionResult.denseInkPreview === true) {
+          if (!provisional) quarantinedCount++;
+          provisional = true;
+        }
+
         // Só substitui se ainda não estava capturada ou se a nova extração tem melhor índice técnico
         const prevIndex = leadInfo.audit?.technicalIndex || 0;
         const newIndex = extractionResult.audit?.technicalIndex || 0;
 
         if (extractionResult.isValid && extractionResult.signal && (!leadInfo.captured || newIndex >= prevIndex)) {
           leadInfo.captured = true;
-          leadInfo.status = "captured";
+          leadInfo.status = provisional ? "provisional" : "captured";
+          leadInfo.candidateRegion = { row: box.row, col: box.col, observedLabel: box.observedLabel || null };
           leadInfo.leadIdentity = leadIdentity;
           leadInfo.imageCropUrl = typeof cropCanvas.toDataURL === "function"
             ? cropCanvas.toDataURL("image/jpeg", 0.92)
@@ -612,20 +696,37 @@
           newlyCapturedLeads.push(leadName);
         } else if (!leadInfo.captured) {
           leadInfo.status = "low_quality";
+          leadInfo.candidateRegion = { row: box.row, col: box.col, observedLabel: box.observedLabel || null };
+          leadInfo.leadIdentity = leadIdentity;
+          leadInfo.imageCropUrl = typeof cropCanvas.toDataURL === "function"
+            ? cropCanvas.toDataURL("image/jpeg", 0.92)
+            : null;
+          leadInfo.cropWidth = roiW;
+          leadInfo.cropHeight = roiH;
+          leadInfo.regionBounds = { x: roiX, y: roiY, width: roiW, height: roiH };
+          leadInfo.extractedSignal = null;
           leadInfo.extraction = extractionResult;
           leadInfo.audit = extractionResult.audit;
+          leadInfo.calibration = extractionResult.calibration;
+          leadInfo.confidence = extractionResult.confidence;
         }
       });
 
-      pendingLeadQueue = CANONICAL_LEADS.filter(l => !capturedLeads.get(l).captured);
+      pendingLeadQueue = CANONICAL_LEADS.filter(l => capturedLeads.get(l)?.status !== "captured");
       currentTargetLead = pendingLeadQueue[0] || null;
       updateHudProgress();
-
+      const confirmedCount = CANONICAL_LEADS.filter(l => capturedLeads.get(l)?.status === "captured").length;
+      const provisionalCount = Array.from(capturedLeads.values()).filter(l => l.status === "provisional").length;
       return {
-        ok: newlyCapturedCount > 0,
+        ok: newlyCapturedCount > 0 || provisionalCount > 0,
         capturedCount: newlyCapturedCount,
         newlyCapturedLeads,
-        totalCaptured: CANONICAL_LEADS.filter(l => capturedLeads.get(l).captured).length,
+        totalCaptured: confirmedCount,
+        provisionalCount,
+        quarantinedCount,
+        reason: newlyCapturedCount === 0 && provisionalCount === 0
+          ? "O ECG foi analisado, mas nenhum traçado pôde ser reconstruído. Confira a nitidez, a grade e o enquadramento."
+          : null,
         boundaries
       };
     }
@@ -633,24 +734,35 @@
     /**
      * Captura autônoma durante o loop de vídeo da Etapa 1.
      */
-    function performAutonomousCapture(isGlobalCapture, frameAnalysis = null) {
-      if (autoCaptureLock) return;
+    function performAutonomousCapture(isGlobalCapture, frameAnalysis = null, manual = false) {
+      if (autoCaptureLock || (!manual && (!isCaptureReadyScene(frameAnalysis?.docDetection) ||
+          verifiedFrameCount < 4 || Date.now() - verifiedSince < 400))) return;
       autoCaptureLock = true;
 
       const snapCanvas = document.createElement("canvas");
-      snapCanvas.width = canvasEl.width || 640;
-      snapCanvas.height = canvasEl.height || 360;
+      // The live analyzer intentionally uses a 1280 px working preview, but
+      // extraction must use the native video frame. Otherwise each cell in a
+      // 12-lead sheet receives too few pixels to preserve P/ST/T morphology.
+      snapCanvas.width = videoEl?.videoWidth || canvasEl.width || 640;
+      snapCanvas.height = videoEl?.videoHeight || canvasEl.height || 360;
       const snapCtx = snapCanvas.getContext("2d");
-      snapCtx.drawImage(canvasEl, 0, 0);
+      snapCtx.drawImage(videoEl?.videoWidth ? videoEl : canvasEl, 0, 0, snapCanvas.width, snapCanvas.height);
 
       triggerVisualFlash();
 
       const extractor = global.LuriaEcgSignalExtractor;
 
       // 1. Tentativa de captura múltipla (tanto no modo Rápido quanto no Ultrassensível se várias derivações estiverem visíveis!)
-      const multiResult = processPhotographCanvas(snapCanvas, { source: "autonomous_camera" });
+      const multiResult = processPhotographCanvas(snapCanvas, {
+        source: manual ? "manual_camera" : "autonomous_camera"
+      });
 
       if (multiResult.ok && multiResult.capturedCount > 0) {
+        if (isGlobalCapture && multiResult.provisionalCount > 0) {
+          setHudMessage("Traçados candidatos encontrados. Abrindo conferência sem atribuir nomes incertos.", true);
+          setTimeout(() => { stopCamera(); transitionToStage2(); }, 800);
+          return;
+        }
         if (multiResult.totalCaptured === 12) {
           setHudMessage("Todas as 12 derivações capturadas e validadas! Abrindo conferência...", true);
           setTimeout(() => {
@@ -800,6 +912,16 @@
       }, 1300);
     }
 
+    function captureCurrentFrame() {
+      if (!isCapturingActive || !videoEl?.videoWidth || autoCaptureLock) {
+        setHudMessage("A câmera ainda não está pronta. Aguarde a imagem aparecer.", true);
+        return false;
+      }
+      setHudMessage("Fotografando em resolução máxima e extraindo os traçados…", true);
+      performAutonomousCapture(mode === "fast", null, true);
+      return true;
+    }
+
     function saveCloseUpLeadCapture(leadName, cropCanvas, roiW, roiH, roiX, roiY, extractionResult, leadIdentity) {
       const leadInfo = capturedLeads.get(leadName);
       if (!leadInfo) return false;
@@ -874,6 +996,45 @@
       setHudMessage(`Vá para ${currentTargetLead || "DI"} e inclua o rótulo da derivação no quadro.`, true);
     }
 
+    /**
+     * Confirma, uma a uma, a identidade de uma região já extraída da folha.
+     * A confirmação não altera os pixels nem transforma qualidade ruim em boa.
+     */
+    function confirmCandidateLead(leadName) {
+      if (!CANONICAL_LEADS.includes(leadName)) return { confirmed: false, reason: "Derivação inválida." };
+      const leadInfo = capturedLeads.get(leadName);
+      if (!leadInfo?.captured || leadInfo.status !== "provisional") {
+        return { confirmed: false, reason: "Não há um traçado candidato pendente para esta derivação." };
+      }
+      const candidate = leadInfo.candidateRegion;
+      if (!candidate || currentSheetMap?.candidateRegions?.[leadName]?.expectedInTemplate !== leadName) {
+        return { confirmed: false, reason: "A posição desta região não corresponde ao layout exibido." };
+      }
+      const identity = contracts.normalizeLeadIdentity({
+        ...(leadInfo.leadIdentity || {}),
+        lead: leadName,
+        expectedLead: leadName,
+        recognizedLead: leadInfo.leadIdentity?.recognizedLead || null,
+        method: "user_confirmed",
+        confirmedByUser: true,
+        humanConfirmedLead: leadName,
+        region: leadInfo.leadIdentity?.region || currentSheetMap.candidateRegions[leadName]
+      });
+      leadInfo.leadIdentity = identity;
+      leadInfo.status = "captured";
+      if (leadInfo.extraction) {
+        leadInfo.extraction.leadIdentity = identity;
+        if (global.LuriaEcgSignalExtractor?.auditExtractedLead) {
+          leadInfo.audit = global.LuriaEcgSignalExtractor.auditExtractedLead(leadInfo.extraction);
+          leadInfo.extraction.audit = leadInfo.audit;
+        }
+      }
+      pendingLeadQueue = CANONICAL_LEADS.filter(lead => capturedLeads.get(lead)?.status !== "captured");
+      updateHudProgress();
+      global.LuriaEcgSessionData = getSessionStructuredPackage();
+      return { confirmed: true, lead: leadName };
+    }
+
     function triggerVisualFlash() {
       if (!hudContainer) return;
       const flashEl = hudContainer.querySelector(".ecg-hud-flash");
@@ -898,7 +1059,7 @@
         return { ...sessionCalibration, error: "Escala inválida ou espaçamento da grade não medido. Reenquadre a grade antes de confirmar." };
       }
 
-      sessionCalibration = contracts.normalizeCalibration({
+      sessionCalibration = contracts?.normalizeCalibration ? contracts.normalizeCalibration({
         ...sessionCalibration,
         paperSpeedMmPerSec: speed,
         gainMmPerMv: gain,
@@ -907,7 +1068,17 @@
         pixelsPerMmX: pxPerMmX,
         pixelsPerMmY: pxPerMmY,
         gridDetected: Boolean(sessionCalibration.gridDetected)
-      });
+      }) : {
+        ...sessionCalibration,
+        paperSpeedMmPerSec: speed,
+        gainMmPerMv: gain,
+        calibrationSource: calOptions.confirmedByUser ? "user_confirmed" : (sessionCalibration.calibrationSource || "assumed"),
+        confirmedByUser: Boolean(calOptions.confirmedByUser),
+        pixelsPerMmX: pxPerMmX,
+        pixelsPerMmY: pxPerMmY,
+        msPerPixel: 1000 / (speed * pxPerMmX),
+        mvPerPixel: 1 / (gain * pxPerMmY)
+      };
 
       const extractor = global.LuriaEcgSignalExtractor;
       capturedLeads.forEach(leadInfo => {
@@ -918,7 +1089,7 @@
             return;
           }
           leadInfo.extractedSignal = recalculated.signal;
-          leadInfo.extraction = recalculated; // sincronizar objeto de extração com nova calibração
+          leadInfo.extraction = recalculated;
           leadInfo.calibration = recalculated.calibration;
           leadInfo.durationSeconds = recalculated.recoveredDurationSeconds;
           leadInfo.samplingRateHz = recalculated.effectiveResolutionHz;
@@ -937,7 +1108,7 @@
       const leadsArray = Array.from(capturedLeads.values());
       const extractor = global.LuriaEcgSignalExtractor;
       const extractionObjects = leadsArray
-        .filter(l => l.captured && l.extraction)
+        .filter(l => l.captured && (l.status === "captured" || !l.status) && l.extraction)
         .map(l => ({ lead: l.lead, audit: l.audit, extraction: l.extraction }));
 
       const globalAudit = (extractor && extractor.auditFullExtraction)
@@ -950,7 +1121,7 @@
       const limitations = [];
 
       leadsArray.forEach(l => {
-        if (l.captured && l.extraction) {
+        if (l.captured && (l.status === "captured" || !l.status) && l.extraction) {
           signalsByLead[l.lead] = l.extractedSignal;
           validMasksByLead[l.lead] = l.extraction.validMask;
           durationsByLead[l.lead] = l.durationSeconds;
@@ -965,6 +1136,7 @@
       return {
         timestamp: new Date().toISOString(),
         layoutId: currentSheetMap?.layoutId || "unknown",
+        documentLayout: currentSheetMap?.detectedLayout || null,
         originalImageUrl,
         anomalies: contracts.normalizeAnomalies(currentSheetMap?.anomalies),
         calibration: { ...sessionCalibration },
@@ -1008,6 +1180,10 @@
      * e calibração confirmada/medida.
      */
     function confirmExtractionAndEnableAI() {
+      if (currentSheetMap?.detectedLayout?.documentType &&
+          currentSheetMap.detectedLayout.documentType !== "full_ecg_candidate") {
+        return {allowed: false, reason: "Esta imagem contém uma tira ou um ECG parcial. A extração está disponível para conferência; o modelo de 12 derivações exige um exame completo."};
+      }
       const missing = CANONICAL_LEADS.filter(l => !capturedLeads.get(l)?.captured);
       if (missing.length > 0) {
         return {
@@ -1018,8 +1194,9 @@
 
       const invalidLeads = CANONICAL_LEADS.filter(l => {
         const item = capturedLeads.get(l);
+        const identityStatus = item?.leadIdentity?.status;
         return item?.audit?.status !== "Adequada tecnicamente" ||
-          item?.leadIdentity?.status !== "ocr_confirmed" ||
+          (identityStatus !== "ocr_confirmed" && identityStatus !== "manual_confirmed") ||
           !Array.isArray(item?.extraction?.validMask) ||
           item.extraction.validMask.length !== item.extraction.signal?.length;
       });
@@ -1027,7 +1204,7 @@
       if (invalidLeads.length > 0) {
         return {
           allowed: false,
-          reason: `As derivações (${invalidLeads.join(", ")}) não têm identidade OCR, máscara e auditoria técnica suficientes. Revise ou recapture antes de prosseguir.`
+          reason: `As derivações (${invalidLeads.join(", ")}) não têm identidade confirmada, máscara e auditoria técnica suficientes. Revise ou recapture antes de prosseguir.`
         };
       }
 
@@ -1048,81 +1225,17 @@
       return { allowed: true, sessionPackage: pkg };
     }
 
-    function getVideoTrack() {
-      if (!stream) return null;
-      const tracks = stream.getVideoTracks();
-      return tracks && tracks.length > 0 ? tracks[0] : null;
-    }
-
-    function getCameraCapabilities() {
-      const track = getVideoTrack();
-      if (!track || typeof track.getCapabilities !== "function") return {};
-      return track.getCapabilities() || {};
-    }
-
-    async function setCameraZoom(zoomLevel) {
-      const track = getVideoTrack();
-      if (!track || typeof track.getCapabilities !== "function" || typeof track.applyConstraints !== "function") {
-        return { ok: false, reason: "Zoom API unsupported" };
-      }
-      const caps = track.getCapabilities() || {};
-      if (!caps.zoom) {
-        return { ok: false, reason: "Zoom hardware unavailable" };
-      }
-      const min = caps.zoom.min || 1;
-      const max = caps.zoom.max || 1;
-      const clamped = Math.max(min, Math.min(max, Number(zoomLevel)));
-      try {
-        await track.applyConstraints({ advanced: [{ zoom: clamped }] });
-        return { ok: true, zoom: clamped };
-      } catch (err) {
-        return { ok: false, error: err?.message || String(err) };
-      }
-    }
-
-    async function setCameraFocus(focusMode = "continuous") {
-      const track = getVideoTrack();
-      if (!track || typeof track.getCapabilities !== "function" || typeof track.applyConstraints !== "function") {
-        return { ok: false, reason: "Focus API unsupported" };
-      }
-      const caps = track.getCapabilities() || {};
-      if (!caps.focusMode || !caps.focusMode.includes(focusMode)) {
-        return { ok: false, reason: "Focus mode unsupported" };
-      }
-      try {
-        await track.applyConstraints({ advanced: [{ focusMode }] });
-        return { ok: true, focusMode };
-      } catch (err) {
-        return { ok: false, error: err?.message || String(err) };
-      }
-    }
-
-    async function toggleTorch(enabled) {
-      const track = getVideoTrack();
-      if (!track || typeof track.getCapabilities !== "function" || typeof track.applyConstraints !== "function") {
-        return { ok: false, reason: "Torch API unsupported" };
-      }
-      const caps = track.getCapabilities() || {};
-      if (!caps.torch) {
-        return { ok: false, reason: "Torch hardware unavailable" };
-      }
-      try {
-        const target = typeof enabled === "boolean" ? enabled : !track.getSettings?.().torch;
-        await track.applyConstraints({ advanced: [{ torch: target }] });
-        return { ok: true, torch: target };
-      } catch (err) {
-        return { ok: false, error: err?.message || String(err) };
-      }
-    }
-
     return {
       startCamera,
       stopCamera,
+      resetCaptureSession,
       recaptureLead,
       processPhotographCanvas,
+      captureCurrentFrame,
       openReview: transitionToStage2,
       confirmUncertainLeadCapture,
       rejectUncertainLeadCapture,
+      confirmCandidateLead,
       setUserCalibration,
       getSessionCalibration: () => ({ ...sessionCalibration }),
       getSessionStructuredPackage,
@@ -1132,6 +1245,7 @@
         capturedLeads.set(leadName, {
           lead: leadName,
           captured: true,
+          status: "captured",
           extractedSignal: extraction.signal,
           extraction,
           audit: extraction.audit,
@@ -1141,31 +1255,13 @@
         });
       },
       getCurrentStage: () => currentStage,
+      getCurrentMode: () => mode,
       setMode: m => { mode = m; },
-      updateHudProgress,
-      getCameraCapabilities,
-      toggleTorch,
-      setCameraZoom,
-      setCameraFocus,
-      toggleDebugOverlay: (enable) => {
-        debugOverlayEnabled = (typeof enable === "boolean") ? enable : !debugOverlayEnabled;
-        if (debugOverlayEl) debugOverlayEl.hidden = !debugOverlayEnabled;
-        return debugOverlayEnabled;
-      },
-      isDebugOverlayEnabled: () => debugOverlayEnabled,
-      triggerManualCapture: () => {
-        if (!videoEl || !canvasEl || !cvEngine) return false;
-        const snapCanvas = document.createElement("canvas");
-        snapCanvas.width = videoEl.videoWidth || 1920;
-        snapCanvas.height = videoEl.videoHeight || 1080;
-        const ctx = snapCanvas.getContext("2d");
-        ctx.drawImage(videoEl, 0, 0, snapCanvas.width, snapCanvas.height);
-        return processPhotographCanvas(snapCanvas, {
-          userCalibration: sessionCalibration.confirmedByUser ? sessionCalibration : null
-        });
-      }
+      updateHudProgress
     };
   }
+
+  global.LuriaEcgSceneGuard = { isVerifiedEcgScene, isCaptureReadyScene, hasCredibleEcgCandidates, isSafeAutomaticLeadAssignment };
 
   global.LuriaSmartCamera = {
     createController: createSmartCameraController,

@@ -53,7 +53,7 @@
     utterance.rate = 0.98;
     utterance.pitch = 1;
     utterance.onstart = () => {
-      statusText.textContent = "Professor Alex está respondendo por voz...";
+      statusText.textContent = "Leco está respondendo por voz...";
     };
     utterance.onend = () => {
       waitingForAnswer = false;
@@ -92,7 +92,7 @@
       prompt.value = text;
       resizePrompt();
       waitingForAnswer = true;
-      statusText.textContent = "Pergunta recebida. Professor Alex está formulando a resposta...";
+      statusText.textContent = "Pergunta recebida. Leco está formulando a resposta...";
       window.setTimeout(() => form.requestSubmit(), 0);
     });
     recognition.addEventListener("end", () => {

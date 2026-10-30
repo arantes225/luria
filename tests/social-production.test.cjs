@@ -1,4 +1,5 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),{execFileSync}=require('node:child_process');
+const {rewritePageHtml,rewritePageCss}=require('../scripts/pages-base-links.cjs');
 const root=path.resolve(__dirname,'..'),output=path.join(root,'build/pages');
 test('production artifact retains official data and domain while excluding backend and secret directories',()=>{
  execFileSync(process.execPath,['scripts/build-pages.cjs'],{cwd:root,timeout:60000});
@@ -16,6 +17,9 @@ test('production artifact retains official data and domain while excluding backe
  // The 3D mascot uses native ES modules. Verify the published artifact, not
  // just the source tree, so missing modules cannot silently hide Alex again.
  for(const file of ['professor-alex/index.html','assets/js/professor-alex-page.mjs','assets/js/professor-alex-mascot.mjs','assets/js/professor-alex-integration.mjs','assets/js/professor-alex-learn.mjs','assets/vendor/three.module.min.mjs','assets/vendor/three.core.min.mjs','assets/css/professor-alex-mascot.css','assets/css/professor-alex-page.css']){
-  assert.equal(read(file),fs.readFileSync(path.join(root,file),'utf8'),file);
+  const original=fs.readFileSync(path.join(root,file),'utf8');
+  const expected=file.endsWith('.html')?rewritePageHtml(original,file)
+    :file.endsWith('.css')?rewritePageCss(original,file):original;
+  assert.equal(read(file),expected,file);
  }
 });

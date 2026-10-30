@@ -6,7 +6,7 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Escala de Plantões · LURIA</title>
+  <title>Escala · LURIA</title>
   <meta name="theme-color" content="#184888">
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
@@ -19,7 +19,8 @@
   <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
   <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
-  <link rel="stylesheet" href="/assets/css/work-plantoes.css?v=20261030-v2">
+  <link rel="stylesheet" href="/assets/css/work-plantoes.css?v=20261029-v2">
+  <link rel="stylesheet" href="/assets/css/shift-manager-v2.css?v=20261029-v1">
 </head>
 <body data-page="trabalho_plantoes" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
@@ -39,121 +40,64 @@
         <section class="luria-page-spotlight" aria-label="Escala de Plantões">
           <div class="luria-page-spotlight-copy">
             <strong data-page-title>Escala de Plantões</strong>
-            <small class="luria-page-spotlight-helper">Gestão inteligente de turnos, visualização em lista/calendário, exportação para agenda (.ics) e detecção de conflitos.</small>
+            <small class="luria-page-spotlight-helper">Cadastre, acompanhe horas e controle o status da sua escala médica mensal.</small>
           </div>
         </section>
 
-        <section class="shift-escala-shell">
-          <!-- Métricas Resumidas -->
+
+        <section class="shift-escala-shell" aria-label="Escala e agenda de plantões">
           <div class="shift-stats-grid">
-            <div class="shift-stat-card">
-              <span class="stat-label">Plantões no Mês</span>
-              <strong class="stat-val" id="stat-total-shifts">0 plantões</strong>
-              <span class="stat-sub">Mês vigente</span>
-            </div>
-            <div class="shift-stat-card">
-              <span class="stat-label">Carga Horária</span>
-              <strong class="stat-val" id="stat-total-hours">0 horas</strong>
-              <span class="stat-sub">Tempo em serviço</span>
-            </div>
-            <div class="shift-stat-card">
-              <span class="stat-label">Previsão Faturada</span>
-              <strong class="stat-val" id="stat-total-earned">R$ 0,00</strong>
-              <span class="stat-sub">Valor bruto estimado</span>
-            </div>
-            <div class="shift-stat-card">
-              <span class="stat-label">Status de Pagamento</span>
-              <strong class="stat-val" id="stat-paid-count">0 pagos</strong>
-              <span class="stat-sub">Repasses confirmados</span>
-            </div>
+            <div class="shift-stat-card"><span class="stat-label">Plantões no mês</span><strong class="stat-val" id="stat-total-shifts">—</strong><span class="stat-sub">Mês em foco</span></div>
+            <div class="shift-stat-card"><span class="stat-label">Horas no mês</span><strong class="stat-val" id="stat-total-hours">—</strong><span class="stat-sub">Carga horária planejada</span></div>
+            <div class="shift-stat-card"><span class="stat-label">Bruto previsto</span><strong class="stat-val" id="stat-total-earned">—</strong><span class="stat-sub">Sem impostos e descontos</span></div>
+            <div class="shift-stat-card"><span class="stat-label">Recebidos</span><strong class="stat-val" id="stat-paid-count">—</strong><span class="stat-sub">Pagamentos confirmados</span></div>
           </div>
-
-          <!-- Layout Principal: Formulário + Lista / Calendário -->
-          <div class="shift-main-layout">
-            <!-- Formulário Novo Plantão -->
-            <article class="shift-form-card">
-              <div>
-                <h2>Adicionar Plantão</h2>
-                <p>Preencha os dados para registrar na sua escala local segura.</p>
+          <article class="fin-card shift-agenda-card">
+            <div class="shift-agenda-toolbar">
+              <div><h2>Minha escala</h2><p>Calendário mensal e planner semanal com os plantões da mesma agenda.</p></div>
+              <div class="shift-toolbar-actions">
+                <a class="shift-action-btn" href="/trabalho/financeiro/">Financeiro</a>
+                <button class="shift-form-submit" id="shift-add" type="button">＋ Adicionar plantão</button>
               </div>
-              <form id="add-shift-form" class="shift-field-group">
-                <label class="shift-field-group">Data
-                  <input type="date" id="shift-date" required>
-                </label>
-                <label class="shift-field-group">Hospital / Instituição
-                  <input type="text" id="shift-place" placeholder="Ex.: Hospital São Paulo" required>
-                </label>
-                <div class="shift-field-row">
-                  <label class="shift-field-group">Setor
-                    <input type="text" id="shift-sector" placeholder="Ex.: PS Adulto, UTI">
-                  </label>
-                  <label class="shift-field-group">Duração (Horas)
-                    <select id="shift-duration">
-                      <option value="6">6 horas</option>
-                      <option value="12" selected>12 horas</option>
-                      <option value="24">24 horas</option>
-                      <option value="8">8 horas</option>
-                    </select>
-                  </label>
-                </div>
-                <div class="shift-field-row">
-                  <label class="shift-field-group">Turno
-                    <select id="shift-type">
-                      <option value="Diurno (07h às 19h)" selected>Diurno (07h às 19h)</option>
-                      <option value="Noturno (19h às 07h)">Noturno (19h às 07h)</option>
-                      <option value="24h Corrido">24h Corrido</option>
-                      <option value="Matutino (07h às 13h)">Matutino (07h às 13h)</option>
-                      <option value="Vespertino (13h às 19h)">Vespertino (13h às 19h)</option>
-                    </select>
-                  </label>
-                  <label class="shift-field-group">Valor Previsto (R$)
-                    <input type="number" id="shift-val" placeholder="Ex.: 1500" step="50">
-                  </label>
-                </div>
-                <label class="shift-field-group">Situação Inicial
-                  <select id="shift-status">
-                    <option value="pendente" selected>Aguardando Repasse / A Pagar</option>
-                    <option value="pago">Pago / Repassado</option>
-                    <option value="trocado">Trocado / Cedido</option>
-                  </select>
-                </label>
-                <label class="shift-field-group">Observações / Colega de Troca
-                  <textarea id="shift-notes" placeholder="Ex.: Troca realizada com Dr. Marcos, repasse previsto até dia 20"></textarea>
-                </label>
-                <button type="submit" class="shift-form-submit">+ Salvar na Escala</button>
-              </form>
-            </article>
-
-            <!-- Painel de Visualização (Lista ou Calendário) -->
-            <article class="shift-list-card">
-              <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
-                <div>
-                  <h2>Seus Plantões Agendados</h2>
-                  <p>Acompanhamento cronológico com alertas inteligentes.</p>
-                </div>
-                <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
-                  <div class="shift-view-toggles">
-                    <button type="button" class="shift-view-btn active" id="view-toggle-list">📋 Lista</button>
-                    <button type="button" class="shift-view-btn" id="view-toggle-cal">📅 Calendário</button>
-                  </div>
-                  <button type="button" class="shift-action-btn" id="export-shifts-btn">Exportar CSV</button>
-                </div>
+            </div>
+            <div class="shift-agenda-controls">
+              <div class="shift-group-buttons" role="group" aria-label="Visualização da escala">
+                <button id="shift-view-month" type="button" aria-pressed="true">Mensal</button>
+                <button id="shift-view-week" type="button" aria-pressed="false">Semanal</button>
               </div>
-
-              <!-- Lista -->
-              <div id="shifts-list-wrapper">
-                <div id="shifts-list-container" class="shift-items-wrap">
-                  <!-- Inserido dinamicamente por plantoes-escala.js -->
-                </div>
+              <div class="shift-nav-controls">
+                <button id="shift-prev" type="button" aria-label="Período anterior">‹</button>
+                <strong id="shift-calendar-title" aria-live="polite"></strong>
+                <button id="shift-next" type="button" aria-label="Próximo período">›</button>
+                <button id="shift-today" type="button">Hoje</button>
               </div>
-
-              <!-- Calendário Mensal -->
-              <div id="shifts-calendar-wrapper" hidden>
-                <div id="shifts-calendar-container"></div>
-              </div>
-            </article>
-          </div>
+            </div>
+            <div id="shift-calendar" aria-label="Calendário de plantões"></div>
+          </article>
+          <article class="shift-list-card">
+            <div class="shift-agenda-toolbar"><div><h2>Plantões registrados</h2><p>Edite valores, confirme recebimentos ou remova registros.</p></div><button id="export-shifts-btn" class="shift-action-btn" type="button">Exportar CSV</button></div>
+            <div id="shifts-list-container" class="shift-items-wrap"></div>
+          </article>
         </section>
+        <datalist id="shift-institutions-options"></datalist>
+        <dialog id="shift-modal" class="shift-modal" aria-labelledby="shift-modal-title">
+          <div class="shift-modal-header"><div><h2 id="shift-modal-title">Adicionar plantão</h2><p>Todos os horários, valores e datas podem ser alterados.</p></div><button id="shift-modal-close" type="button" aria-label="Fechar formulário">✕</button></div>
+          <form id="add-shift-form" class="shift-field-group" novalidate>
+            <div class="shift-field-row"><label class="shift-field-group">Data do plantão<input id="shift-date" type="date" required></label><label class="shift-field-group">Setor<input id="shift-sector" type="text" placeholder="PS, UTI, enfermaria"></label></div>
+            <label class="shift-field-group">Hospital / local de trabalho<input id="shift-place" type="text" required maxlength="120" placeholder="Onde será realizado"></label>
+            <label class="shift-field-group">Instituição que pagará<input id="shift-payer" type="text" maxlength="120" placeholder="Se vazio, usa o hospital"></label>
+            <div class="shift-field-row"><label class="shift-field-group">Horário de início<input id="shift-start-time" type="time" value="07:00" required></label><label class="shift-field-group">Horário de término<input id="shift-end-time" type="time" value="19:00" required></label></div>
+            <label class="shift-field-group">Data do término (opcional)<input id="shift-end-date" type="date"><small>Sem data, horários iguais ou anteriores ao início indicam o dia seguinte.</small></label>
+            <div class="shift-field-row"><label class="shift-field-group">Forma de pagamento<select id="shift-price-mode"><option value="total">Valor total do plantão</option><option value="hour">Valor por hora</option></select></label><label class="shift-field-group" id="shift-hour-wrap" hidden>Valor por hora (R$)<input id="shift-hour-rate" type="number" min="0" step="any" inputmode="decimal" placeholder="120,00"></label></div>
+            <label class="shift-field-group">Valor bruto combinado (R$)<input id="shift-val" type="number" min="0" step="any" inputmode="decimal" required placeholder="1500,00"></label>
+            <label class="shift-field-group">Previsão de recebimento<input id="shift-expected-date" type="date"><small id="shift-due-hint">Configurável por instituição no Financeiro.</small></label>
+            <div class="shift-field-row"><label class="shift-field-group">Tributos retidos pelo pagador (R$)<input id="shift-withheld-tax" type="number" min="0" step="any" inputmode="decimal" placeholder="0,00"></label><label class="shift-field-group">Taxas retidas pelo pagador (R$)<input id="shift-payer-fee" type="number" min="0" step="any" inputmode="decimal" placeholder="0,00"></label></div>
+            <div class="shift-field-row"><label class="shift-field-group">Valor já depositado (R$)<input id="shift-received-amount" type="number" min="0" step="any" inputmode="decimal" placeholder="0,00"></label><label class="shift-field-group">Situação<select id="shift-status"><option value="pendente">Plantão a receber</option><option value="trocado">Cedido / sem cobrança</option></select></label></div>
+            <label class="shift-field-group">Observações<textarea id="shift-notes" maxlength="1000" placeholder="Troca, conferência, observações..."></textarea></label>
+            <p id="shift-error" class="shift-error" role="alert"></p>
+            <div class="shift-modal-actions"><button class="shift-action-btn" id="shift-cancel" type="button">Cancelar</button><button type="submit" class="shift-form-submit">Salvar plantão</button></div>
+          </form>
+        </dialog>
       </div>
     </main>
   </div>
@@ -161,7 +105,8 @@
 <script src="/assets/js/supabase.js"></script>
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script src="/assets/js/shift-manager-security.js?v=4-fixed"></script>
-<script src="/assets/js/plantoes-escala.js?v=20261030-v2"></script>
+<script src="/assets/js/shift-manager-core.js?v=20261029-v1"></script>
+<script src="/assets/js/plantoes-escala-v2.js?v=20261029-v1"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>

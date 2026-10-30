@@ -1,15 +1,81 @@
 (() => {
   'use strict';
   const core = window.LuriaCurriculo;
+  const pdfSupport = window.LuriaCurriculoPdf;
   const rubrics = window.LuriaCurriculoRubricas || [];
   const $ = id => document.getElementById(id);
   const form = $('cv-form');
   const curriculumPanel = $('cv-curriculum-panel');
   const curriculumToggle = $('cv-toggle');
   let userId = null;
-  let state = { items: [], answers: {} };
+  let state = { items: [], answers: {}, selectedSpecialty: '' };
   let pending = [];
   let busy = false;
+  let originalPdf = null;
+  function refreshPdfControls() {
+    const uploaded = Boolean(originalPdf?.blob);
+    $('cv-pdf-attached').hidden = !uploaded;
+    $('cv-pdf-filename').textContent = uploaded ? `PDF anexado: ${originalPdf.name || 'curriculo.pdf'}` : '';
+  }
+  async function readSavedPdf(owner) {
+    originalPdf = null;
+    refreshPdfControls();
+    // Em navegadores sem IndexedDB (ou prévias/testes sem persistência),
+    // não dispare uma Promise cujo erro chegaria depois do encerramento da página.
+    if (!window.indexedDB) return;
+    try {
+      const record = await pdfSupport.getPdf(owner);
+      if (owner !== userId) return;
+      originalPdf = record?.blob ? record : null;
+      refreshPdfControls();
+    } catch {
+      if (owner === userId) status('PDF salvo anteriormente indisponível neste navegador. Você ainda pode enviar outro arquivo.');
+    }
+  }
+  function openOriginalPdf(download) {
+    if (!originalPdf?.blob) return status('Envie um PDF para abri-lo.');
+    const url = URL.createObjectURL(originalPdf.blob);
+    const link = node('a');
+    link.href = url;
+    if (download) {
+      link.download = String(originalPdf.name || 'meu-curriculo.pdf').replace(/[/\\]/g, '_');
+    } else {
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    }
+    document.body.append(link);
+    link.click();
+    link.remove();
+    // A visualização de PDF em uma nova aba pode demorar a carregar.
+    setTimeout(() => URL.revokeObjectURL(url), 60000);
+  }
+  function showImportReview(items, sourceLabel) {
+    const known = new Set(state.items.map(core.identity));
+    pending = items.filter(item => !known.has(core.identity(item)));
+    if (!pending.length) {
+      $('cv-import-review').hidden = true;
+      status('Nenhuma atividade nova identificada. O arquivo original permanece disponível.');
+      return;
+    }
+    const box = $('cv-import-items');
+    box.replaceChildren();
+    pending.forEach((item, index) => {
+      const label = node('label', undefined, 'cv-item');
+      const text = node('span', `${item.title} · ${item.year || 'Ano não informado'} · ${core.categories[item.category] || 'Atividade'}${item.sourcePage ? ' · pág. ' + item.sourcePage : ''}`);
+      const check = node('input');
+      check.type = 'checkbox';
+      // O OCR pode confundir nomes, títulos e datas: exigimos seleção explícita.
+      check.checked = item.source !== 'pdf-ocr';
+      check.dataset.importIndex = String(index);
+      label.append(check, text);
+      box.append(label);
+    });
+    const optical = pending.some(item => item.source === 'pdf-ocr');
+    $('cv-import-description').textContent = `${pending.length} atividade(s) sugerida(s) a partir do ${sourceLabel}. Revise a categoria, o ano e o título antes de adicionar. Nenhuma atividade importada é marcada como conferida.` +
+      (optical ? ' Esta leitura visual pode conter erros; marque individualmente apenas as atividades que conferir no PDF original.' : '');
+    $('cv-import-review').hidden = false;
+    status(`${sourceLabel} lido. Revise as sugestões antes de adicioná-las.`);
+  }
   curriculumToggle?.addEventListener('click', () => {
     const willOpen = curriculumPanel.hidden;
     curriculumPanel.hidden = !willOpen;
@@ -67,7 +133,12 @@
     showMetaFields();
     form.hidden = false; form.elements.title.focus();
   }
-  const activeRubric = () => rubrics.find(row => row.id === $('cv-exam').value);
+  const selectedInstitution = () => rubrics.find(row => row.id === $('cv-exam').value);
+  // A instituição UNIFESP é um cartão; cada especialidade R1 tem sua própria matriz.
+  const activeRubric = () => {
+    const base = selectedInstitution();
+    return base?.specialties?.find(item => item.id === state.selectedSpecialty) || base;
+  };
   function selectRubric(id) {
     $('cv-exam').value = id;
     state.selectedExam = id;
@@ -76,8 +147,8 @@
   function renderInstitutions() {
     const box = $('cv-institutions'); box.replaceChildren();
     const reviewed = rubrics.filter(row => row.status === 'reviewed').length;
-    const notRequired = rubrics.filter(row => row.status === 'not-required').length;
-    $('cv-coverage').textContent = `${reviewed} matrizes calculáveis · ${notRequired} sem currículo · ${rubrics.length - reviewed - notRequired} aguardando complemento`;
+    const specialties = rubrics.find(row => row.institution === 'UNIFESP')?.specialties?.length || 0;
+    $('cv-coverage').textContent = `${reviewed} matrizes institucionais calculáveis · ${specialties} especialidades R1 na UNIFESP · confira critérios pendentes`;
     rubrics.forEach(rubric => {
       const card = node('button', undefined, 'cv-institution'); card.type = 'button';
       card.setAttribute('aria-pressed', String(rubric.id === $('cv-exam').value));
@@ -91,7 +162,8 @@
         pending: `${rubric.region} · ${rubric.edition || 'edição vigente'} · Edital aguardado`
       };
       copy.append(node('strong',rubric.institution),node('small',subtitles[rubric.status] || subtitles.pending));
-      const score = core.score(rubric,state.answers[rubric.id] || {});
+      const effective = rubric.specialties?.find(item => item.id === state.selectedSpecialty) || rubric;
+      const score = core.score(effective,state.answers[effective.id] || {});
       const displayValue = score ? (score.total/score.max*10).toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1}) : rubric.status === 'not-required' ? 'Sem' : '—';
       card.append(icon,copy,node('span',displayValue,'cv-institution-value'));
       if (score) card.setAttribute('aria-label',`${rubric.institution}: ${score.total.toLocaleString('pt-BR')} de ${score.max} pontos. Cartão convertido para escala de 0 a 10.`);
@@ -129,10 +201,31 @@
   }
   function renderRubric() {
     const rubric = activeRubric();
+    const institution = selectedInstitution();
     const source = $('cv-source'); source.replaceChildren();
     const rules = $('cv-rules'); rules.replaceChildren();
     if (!rubric) { renderScore(); return; }
     renderInstitutions();
+    if (institution?.specialties) {
+      const box = node('div', undefined, 'cv-specialty-picker');
+      const label = node('label', undefined, 'cv-field');
+      const title = node('span','Escolha sua especialidade R1 na UNIFESP');
+      const select = node('select'); select.id = 'cv-specialty'; select.setAttribute('aria-label','Escolha sua especialidade R1 na UNIFESP');
+      const placeholder=node('option','Selecione uma especialidade');placeholder.value='';select.append(placeholder);
+      institution.specialties.forEach(item => {
+        const option=node('option',item.specialty+(item.status === 'reviewed' ? ' · calculadora disponível' : ' · consultar edital'));
+        option.value=item.id;select.append(option);
+      });
+      select.value=state.selectedSpecialty || '';
+      select.addEventListener('change',()=>{
+        state.selectedSpecialty=select.value;
+        save();
+        renderRubric();
+      });
+      label.append(title,select);
+      box.append(label,node('small','A avaliação curricular é diferente em cada programa. A calculadora só aparece quando a matriz individual está validada.'));
+      source.append(box);
+    }
     const links = node('div', undefined, 'cv-actions');
     for (const [text, url] of [['Edital oficial',rubric.source],['Retificação',rubric.updates],['Publicações oficiais',rubric.listing]]) {
       if (!url) continue;
@@ -140,6 +233,12 @@
     }
     if (rubric.status !== 'reviewed') {
       source.append(node('p',rubric.scope));
+      if (rubric.criteriaOverview?.length) {
+        const heading=node('h3','Critérios descritos no edital');
+        const list=node('ul');
+        rubric.criteriaOverview.forEach(item=>list.append(node('li',item)));
+        source.append(heading,list);
+      }
       if (rubric.checkedAt) source.append(node('small', `Situação conferida em ${rubric.checkedAt.split('-').reverse().join('/')}.`));
       if (links.childElementCount) source.append(links);
       const pending = node('div',undefined,'cv-pending');
@@ -225,14 +324,16 @@
   }
   function ready(user) {
     if (!user?.id || user.id === userId) return;
-    userId = user.id; state = { items: [], answers: {} }; pending = [];
+    userId = user.id; state = { items: [], answers: {}, selectedSpecialty: '' }; pending = [];
     $('cv-exam').value = rubrics[0]?.id || '';
     $('cv-import-review').hidden = true; form.hidden = true;
     try {
       const saved = JSON.parse(localStorage.getItem(key()) || 'null');
       if (saved && Array.isArray(saved.items) && saved.items.length <= 5000 && saved.answers && typeof saved.answers === 'object') {
         state.items = saved.items.filter(item => item && typeof item.title === 'string' && typeof item.id === 'string' && Object.hasOwn(core.categories,item.category));
-        rubrics.forEach(rubric => {
+        const unifesp = rubrics.find(row=>row.institution==='UNIFESP');
+        state.selectedSpecialty = unifesp?.specialties?.some(item=>item.id===saved.selectedSpecialty) ? saved.selectedSpecialty : '';
+        rubrics.flatMap(row => row.specialties || [row]).forEach(rubric => {
           if (rubric.status !== 'reviewed') return;
           const answers = saved.answers[rubric.id];
           if (!answers || typeof answers !== 'object' || Array.isArray(answers)) return;
@@ -246,7 +347,8 @@
         if (rubrics.some(rubric=>rubric.id===saved.selectedExam)) { $('cv-exam').value = saved.selectedExam;state.selectedExam=saved.selectedExam; }
       }
     } catch { status('Não foi possível ler o currículo salvo. Você pode começar um novo cadastro.'); }
-    ['cv-add','cv-import','cv-lattes','cv-export','cv-exam'].forEach(id => { $(id).disabled = false; });
+    ['cv-add','cv-import','cv-lattes','cv-import-pdf','cv-pdf','cv-export-pdf','cv-export','cv-exam'].forEach(id => { $(id).disabled = false; });
+    void readSavedPdf(userId);
     renderItems(); renderRubric();
   }
   Object.entries(core.categories).forEach(([value,text]) => { const option = node('option',text); option.value = value; $('cv-category').append(option); });
@@ -282,6 +384,20 @@
   rubrics.forEach(rubric => { const option = node('option',rubric.title); option.value = rubric.id; $('cv-exam').append(option); });
   $('cv-add').addEventListener('click', () => editItem());
   $('cv-import').addEventListener('click', () => $('cv-lattes').click());
+  $('cv-import-pdf').addEventListener('click', () => $('cv-pdf').click());
+  $('cv-open-pdf').addEventListener('click', () => openOriginalPdf(false));
+  $('cv-download-pdf').addEventListener('click', () => openOriginalPdf(true));
+  $('cv-remove-pdf').addEventListener('click', async () => {
+    if (!userId || !originalPdf || busy) return;
+    const owner = userId;
+    try {
+      await pdfSupport.removePdf(owner);
+      if (owner !== userId) return;
+      originalPdf = null;
+      refreshPdfControls();
+      status('Arquivo PDF removido deste navegador. As atividades cadastradas foram preservadas.');
+    } catch (error) { status('Não foi possível remover o PDF: ' + error.message); }
+  });
   $('cv-cancel').addEventListener('click', () => { form.hidden = true; $('cv-add').focus(); });
   $('cv-exam').addEventListener('change', () => selectRubric($('cv-exam').value));
   form.addEventListener('submit', event => {
@@ -306,28 +422,103 @@
       if (encoding && !/^utf-?8$/i.test(encoding)) xml = new TextDecoder(encoding).decode(buffer);
       const items = core.parseLattes(xml, DOMParser);
       if (owner !== userId) return;
-      const known = new Set(state.items.map(core.identity)); pending = items.filter(item => !known.has(core.identity(item)));
-      if (!pending.length) { status('Nenhuma nova atividade compatível encontrada. Itens já cadastrados não são duplicados.'); return; }
-      const box = $('cv-import-items'); box.replaceChildren();
-      pending.forEach((item,index) => {
-        const label = node('label', undefined, 'cv-item'); const text = node('span', `${item.title} · ${item.year || 'Ano não informado'}`);
-        const check = node('input'); check.type = 'checkbox'; check.checked = true; check.dataset.importIndex = String(index); label.append(check,text); box.append(label);
-      });
-      $('cv-import-description').textContent = `${pending.length} nova(s) atividade(s). Selecione as que deseja incluir; depois confira os detalhes e os comprovantes.`;
-      $('cv-import-review').hidden = false; status('XML lido. Revise as atividades antes de adicioná-las.');
+      showImportReview(items, 'XML do Lattes');
     } catch (error) { status(`Não foi possível importar: ${error.message}`); }
     finally { busy = false; event.target.value = ''; }
+  });
+  $('cv-pdf').addEventListener('change', async event => {
+    const file = event.target.files?.[0];
+    if (!file || !userId || busy) return;
+    const owner = userId;
+    busy = true;
+    pending = [];
+    $('cv-import-review').hidden = true;
+    try {
+      await pdfSupport.checkPdf(file);
+      let persisted = true;
+      try {
+        await pdfSupport.storePdf(owner, file);
+      } catch {
+        persisted = false;
+      }
+      if (owner !== userId) return;
+      originalPdf = { blob: file, name: file.name };
+      refreshPdfControls();
+      status(persisted
+        ? 'PDF anexado neste navegador. Lendo as atividades…'
+        : 'PDF disponível nesta sessão. O navegador não permitiu salvá-lo para uso posterior.');
+      try {
+        const result = await pdfSupport.extract(file, status);
+        if (owner !== userId) return;
+        if (result.items.length) {
+          showImportReview(result.items, result.ocrUsed ? 'PDF Lattes (leitura visual/OCR)' : 'PDF');
+          if (result.partial) status('Leitura visual parcial: foram analisadas ' + result.pagesOcr + ' de ' + result.pages + ' páginas. Confira todas as sugestões antes de incluir.');
+        } else if (result.ocrUsed && result.hasText) {
+          status('O PDF foi lido por OCR em ' + result.pagesOcr + ' página(s), mas não foram identificadas atividades com segurança. Confira o original ou importe o XML Lattes.');
+        } else if (!result.hasText) {
+          status('PDF anexado. Não foi possível reconhecer o texto do documento digitalizado, nem mesmo por OCR. O original pode ser aberto; tente o XML do Lattes ou o cadastro manual.');
+        } else {
+          status('PDF anexado e disponível para abrir. Não foi possível identificar atividades estruturadas com segurança; adicione-as manualmente ou use o XML do Lattes.');
+        }
+      } catch (error) {
+        if (owner === userId) status('PDF anexado para visualização, mas a extração de atividades falhou: ' + error.message);
+      }
+    } catch (error) {
+      if (owner === userId) status('Não foi possível anexar o PDF: ' + error.message);
+    } finally {
+      busy = false;
+      event.target.value = '';
+    }
   });
   $('cv-import-confirm').addEventListener('click', () => {
     const selected = [...$('cv-import-items').querySelectorAll('input:checked')].map(input => pending[Number(input.dataset.importIndex)]).filter(Boolean);
     state.items = core.merge(state.items, selected); const saved = save(); pending = []; $('cv-import-review').hidden = true; renderItems(); if (saved) status(`${selected.length} atividade(s) adicionada(s). Revise os dados importados.`);
   });
   $('cv-import-cancel').addEventListener('click', () => { pending = []; $('cv-import-review').hidden = true; status('Importação cancelada.'); });
+  $('cv-export-pdf').addEventListener('click', async () => {
+    if (!userId || busy) return;
+    busy = true;
+    try {
+      await window.LuriaLazyVendors.ensure('jspdf');
+      if (!window.jspdf?.jsPDF) throw Error('Gerador de PDF indisponível.');
+      const doc = new window.jspdf.jsPDF({ unit: 'pt', format: 'a4', compress: true });
+      const margin = 42, maxWidth = 511, bottom = 790;
+      let y = 58;
+      const line = (text, size = 10, bold = false) => {
+        doc.setFont('helvetica', bold ? 'bold' : 'normal');
+        doc.setFontSize(size);
+        const rows = doc.splitTextToSize(String(text), maxWidth);
+        for (const row of rows) {
+          if (y > bottom) { doc.addPage(); y = 52; }
+          doc.text(row, margin, y);
+          y += size * 1.45;
+        }
+      };
+      line('LURIA | Meu currículo', 19, true);
+      y += 9;
+      line(`Emitido em ${new Date().toLocaleDateString('pt-BR')} | ${state.items.length} atividade(s)`, 10);
+      y += 20;
+      for (const item of state.items) {
+        line(`${core.categories[item.category] || 'Outra atividade'} · ${item.year || 'Ano não informado'}`, 10, true);
+        line(item.title, 11);
+        if (item.hours) line(`Carga horária: ${item.hours} h`);
+        if (item.evidence) line(`Comprovante informado: ${item.evidence}`);
+        line(item.reviewed ? 'Informações marcadas como conferidas pelo aluno' : 'Revisão pendente', 9);
+        y += 14;
+      }
+      if (y > bottom - 35) { doc.addPage(); y = 52; }
+      line('Documento gerado a partir das atividades cadastradas pelo aluno. Não substitui comprovantes nem validação oficial da banca.', 9);
+      doc.save('meu-curriculo-luria.pdf');
+      status('Currículo em PDF gerado. Confira os dados antes de usá-lo em processos seletivos.');
+    } catch (error) {
+      status('Não foi possível gerar o PDF: ' + error.message);
+    } finally { busy = false; }
+  });
   $('cv-export').addEventListener('click', () => {
     const blob = new Blob([JSON.stringify({ version:1, exportedAt:new Date().toISOString(), ...state },null,2)], { type:'application/json' });
     const url = URL.createObjectURL(blob); const link = node('a'); link.href = url; link.download = 'meu-curriculo-luria.json'; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
   });
-  ['cv-add','cv-import','cv-lattes','cv-export','cv-exam'].forEach(id => { $(id).disabled = true; });
+  ['cv-add','cv-import','cv-lattes','cv-import-pdf','cv-pdf','cv-export-pdf','cv-export','cv-exam'].forEach(id => { $(id).disabled = true; });
   renderItems(); renderRubric();
   window.addEventListener('docmap:ready', event => ready(event.detail?.user));
   ready(window.docmapUser);

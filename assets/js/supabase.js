@@ -196,7 +196,7 @@ window.supabaseClient = window.supabase.createClient(
     }
     window.dispatchEvent(new CustomEvent('luria:session-invalidated'));
     // Do not delete owner-scoped drafts or the new account's auth storage.
-    window.location.replace(nextId ? window.location.href : '/login/');
+    window.location.replace(nextId ? window.location.href : (window.luriaSitePath?.('/login/') || '/login/'));
   };
   const setOwner = id => {
     if (ownerId === id) return;

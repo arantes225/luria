@@ -11,12 +11,11 @@
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-  <script src="/assets/js/ui-routes.js?v=1"></script>
+<script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261025-work-spotlight">
-  <link rel="stylesheet" href="/assets/css/work-plantoes.css?v=20261030-v2">
   <style>
     .gm-shell{display:grid;gap:18px}
     .gm-hero{padding:22px 24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
@@ -63,30 +62,24 @@
     .text-success{color:#10b981!important}
     .text-warning{color:#f59e0b!important}
 
-    /* Grid de Módulos */
-    .gm-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-    .gm-card{min-height:210px;display:flex;flex-direction:column;padding:20px;border:1px solid var(--border);border-radius:17px;background:var(--surface);color:var(--text);text-decoration:none;box-shadow:0 6px 20px rgba(15,23,42,.035);transition:transform .15s,border-color .15s,box-shadow .15s}
+    .gm-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .gm-card{min-height:205px;display:flex;flex-direction:column;padding:20px;border:1px solid var(--border);border-radius:17px;background:var(--surface);color:var(--text);text-decoration:none;box-shadow:0 6px 20px rgba(15,23,42,.035);transition:transform .15s,border-color .15s,box-shadow .15s}
     .gm-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 10px 28px rgba(15,23,42,.07)}
-    .gm-icon{width:44px;height:44px;display:grid;place-items:center;margin-bottom:16px;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-size:20px;font-weight:900}
-    .gm-card h3{margin:0 0 6px;font-size:17px;font-weight:800}
+    .gm-icon{width:44px;height:44px;display:grid;place-items:center;margin-bottom:20px;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-size:21px;font-weight:900}
+    .gm-card h3{margin:0 0 7px;font-size:18px}
     .gm-card p{margin:0;color:var(--muted);font-size:12px;line-height:1.5}
-    .gm-open{margin-top:auto;padding-top:16px;color:var(--accent);font-size:11.5px;font-weight:850}
-
-    /* Segurança */
+    .gm-open{margin-top:auto;padding-top:18px;color:var(--accent);font-size:11px;font-weight:850}
     .gm-security-row{display:flex;justify-content:flex-end}
-    .gm-security-card{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;padding:14px 18px;border:1px solid var(--border);border-radius:15px;background:var(--surface)}
-    .gm-security-copy{min-width:0}
-    .gm-security-copy strong{display:block;font-size:13.5px;font-weight:800}
-    .gm-security-copy span{display:block;margin-top:3px;color:var(--muted);font-size:11.5px;line-height:1.4}
-    .gm-security-actions{display:flex;gap:8px;flex-wrap:wrap}
-    .gm-security-action{min-height:38px;padding:0 14px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font-size:11.5px;font-weight:850;cursor:pointer}
-    .gm-security-action:hover{border-color:var(--accent);color:var(--accent)}
-
-    @media(max-width:1020px){.gm-grid{grid-template-columns:repeat(2,1fr)}.gm-summary-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:680px){.gm-grid{grid-template-columns:1fr}.gm-summary-grid{grid-template-columns:1fr}.gm-security-card{flex-direction:column;align-items:flex-start}.gm-security-actions{width:100%}.gm-security-action{width:100%}}
+    .gm-security-card{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;padding:14px 16px;border:1px solid var(--border);border-radius:15px;background:var(--surface)}
+    .gm-security-copy{min-width:0}.gm-security-copy strong{display:block;font-size:14px}.gm-security-copy span{display:block;margin-top:3px;color:var(--muted);font-size:11px;line-height:1.4}
+    .gm-security-actions{display:flex;gap:8px;flex-wrap:wrap}.gm-security-action{min-height:38px;padding:0 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font-size:11px;font-weight:850;cursor:pointer}.gm-security-action:hover{border-color:var(--accent);color:var(--accent)}
+    @media(max-width:700px){.gm-security-card{align-items:flex-start;flex-direction:column}.gm-security-actions{width:100%}.gm-security-action{flex:1}}
+    @media(max-width:900px){.gm-grid{grid-template-columns:1fr}.gm-summary-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:540px){.gm-summary-grid{grid-template-columns:1fr}}
+    @media(max-width:700px){.gm-hero{padding:17px}.gm-card{min-height:150px;padding:16px}.gm-icon{margin-bottom:14px}}
   </style>
-  <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
-  <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
+<link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
+<link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
 </head>
 <body data-page="trabalho_gestor_plantoes" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
@@ -107,57 +100,54 @@
         <section class="luria-page-spotlight" aria-label="Gestor de Plantões">
           <div class="luria-page-spotlight-copy">
             <strong data-page-title>Gestor de Plantões</strong>
-            <small class="luria-page-spotlight-helper">Organize sua rotina, escalas, descanso de equipe e faturamento em um só lugar.</small>
+            <small class="luria-page-spotlight-helper">Organize sua rotina de plantões, escalas e repasses em um só lugar.</small>
           </div>
         </section>
 
         <section class="gm-shell">
-          <!-- Hero -->
           <article class="gm-hero">
             <h2>Gestor de Plantões</h2>
-            <p>Seu centro de controle integrado: acompanhamento em tempo real do plantão ativo, divisão inteligente de descanso, escala mensal e gestão financeira de repasses.</p>
+            <p>Escala interativa, divisão inteligente de descanso da equipe e controle financeiro de repasses reunidos em um único lugar.</p>
           </article>
 
           <!-- Radar Inteligente de Plantão Ao Vivo -->
           <div id="gm-smart-radar" class="gm-radar-wrap"></div>
 
-          <!-- Métricas Rápidas do Mês -->
+          <!-- Métricas Resumidas do Mês -->
           <div id="gm-summary-metrics" class="gm-summary-grid"></div>
 
-          <!-- Grid de Módulos Especializados -->
           <div class="gm-grid">
             <a class="gm-card" href="/trabalho/plantoes/">
               <span class="gm-icon" aria-hidden="true">▦</span>
               <h3>Escala</h3>
-              <p>Organize datas, horários, hospitais, setores e visualização em calendário mensal.</p>
+              <p>Organize seus plantões, calendário mensal e semanal, datas, horários e locais de trabalho.</p>
               <span class="gm-open">Abrir escala →</span>
             </a>
             <a class="gm-card" href="/trabalho/divisor-plantao/">
               <span class="gm-icon" aria-hidden="true">÷</span>
               <h3>Divisor de Plantão</h3>
-              <p>Distribua horários de descanso com régua visual, presets inteligentes e cópia para WhatsApp.</p>
+              <p>Divida horários e períodos do plantão entre os profissionais de forma exata e igualitária.</p>
               <span class="gm-open">Abrir divisor →</span>
             </a>
-            <a class="gm-card" href="/trabalho/passometro/">
-              <span class="gm-icon" aria-hidden="true">📋</span>
-              <h3>Passagem de Plantão</h3>
-              <p>Organize leitos, intercorrências, pendências de exames e checklist de pacientes.</p>
-              <span class="gm-open">Abrir passômetro →</span>
+            <a class="gm-card" href="/trabalho/financeiro/#instituicoes">
+              <span class="gm-icon" aria-hidden="true">▤</span>
+              <h3>Instituições e cobranças</h3>
+              <p>Consulte cada pagador, ajuste prazos e identifique cobranças pendentes.</p>
+              <span class="gm-open">Ver instituições →</span>
             </a>
             <a class="gm-card" href="/trabalho/financeiro/">
               <span class="gm-icon" aria-hidden="true">$</span>
-              <h3>Financeiro & Repasses</h3>
-              <p>Controle previsões de repasse, valores recebidos, pendências por hospital e remuneração/hora.</p>
+              <h3>Financeiro</h3>
+              <p>Acompanhe recebimentos, descontos, impostos e valores líquidos estimados.</p>
               <span class="gm-open">Abrir financeiro →</span>
             </a>
           </div>
 
-          <!-- Card de Proteção / Segurança -->
           <div class="gm-security-row">
             <div class="gm-security-card">
               <div class="gm-security-copy">
                 <strong>Segurança do Gestor de Plantões</strong>
-                <span>Troque o PIN, configure autenticação biométrica/senha ou proteja o acesso a valores financeiros.</span>
+                <span>Troque o PIN, altere o tipo de proteção, use a senha da conta ou remova a proteção quando quiser.</span>
               </div>
               <div class="gm-security-actions">
                 <button id="gm-security" class="gm-security-action" type="button">Segurança</button>
@@ -172,6 +162,7 @@
 <script src="/assets/js/supabase.js?v=auth4"></script>
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script src="/assets/js/shift-manager-security.js?v=4-fixed"></script>
+<script src="/assets/js/shift-manager-core.js?v=20261029-v1"></script>
 <script src="/assets/js/gestor-plantoes-hub.js?v=20261030-v1"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>

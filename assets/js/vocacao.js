@@ -1,210 +1,272 @@
 (() => {
   "use strict";
-
-  const dimensions = {
-    R: { name: "Realista", short: "Prática, procedimentos e ação", desc: "Interesse por atividades práticas, instrumentação e intervenção direta." },
-    I: { name: "Investigativa", short: "Investigação e raciocínio", desc: "Interesse por investigar mecanismos, integrar evidências e resolver problemas complexos." },
-    A: { name: "Artística", short: "Criação e problemas abertos", desc: "Interesse por abordagens abertas, comunicação criativa e adaptação a situações singulares." },
-    S: { name: "Social", short: "Relação e cuidado contínuo", desc: "Interesse por escuta, cuidado longitudinal, ensino e colaboração próxima." },
-    E: { name: "Empreendedora", short: "Liderança e coordenação", desc: "Interesse por liderar equipes, negociar prioridades e mobilizar mudanças." },
-    C: { name: "Convencional", short: "Método e organização", desc: "Interesse por processos estruturados, precisão, dados e protocolos." }
+  const engine=window.LuriaVocacaoEngine;
+  if(!engine||!engine.selectAdaptive||!engine.catalogue) {
+    console.error("LURIA Vocação: avaliação indisponível.");
+    return;
+  }
+  const $=id=>document.getElementById(id);
+  const intro=$("voc-intro"),quiz=$("voc-quiz"),results=$("voc-results"),choices=$("voc-options");
+  const storageKey="luria.vocacao.v3.session";
+  let sequence=engine.core.map(q=>q.id);
+  let answers={}, current=0, finish=false;
+  const html=value=>String(value??"").replace(/[&<>"']/g,char=>({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+  }[char]));
+  const label=tag=>(engine.labels[tag]||[tag])[0];
+  const description=tag=>(engine.labels[tag]||["",tag])[1];
+  const readable=values=>{
+    const parts=values.filter(Boolean);
+    return parts.length<=1?(parts[0]||""):parts.slice(0,-1).join(", ")+" e "+parts[parts.length-1];
   };
-
-  const items = [
-    ["R", "Realizar procedimentos manuais delicados que exigem treino e precisão."],
-    ["R", "Atuar em situações clínicas que pedem uma resposta prática e imediata."],
-    ["R", "Usar equipamentos e instrumentos para diagnosticar ou tratar pacientes."],
-    ["R", "Acompanhar uma intervenção do preparo até a recuperação inicial."],
-    ["R", "Trabalhar em ambientes nos quais movimento e ação façam parte da rotina."],
-    ["R", "Executar técnicas com as mãos e aprimorá-las com prática repetida."],
-    ["I", "Investigar um diagnóstico quando os achados não apontam para uma única causa."],
-    ["I", "Relacionar dados clínicos, exames e mecanismos de doença para explicar um caso."],
-    ["I", "Ler estudos científicos e usar evidências para rever uma conduta."],
-    ["I", "Aprofundar-se em uma pergunta clínica até compreender os detalhes do problema."],
-    ["I", "Interpretar imagens, lâminas ou resultados laboratoriais para responder a uma dúvida."],
-    ["I", "Participar de pesquisa ou de projetos que avaliem resultados em saúde."],
-    ["A", "Lidar com casos únicos que exigem adaptar a abordagem, em vez de seguir uma sequência fixa."],
-    ["A", "Explicar questões complexas de maneiras diferentes para cada pessoa."],
-    ["A", "Construir um plano de cuidado que combine opções e objetivos pouco padronizados."],
-    ["A", "Trabalhar com problemas em que há mais de uma resposta razoável."],
-    ["A", "Encontrar formas novas de melhorar a experiência de pacientes e equipes."],
-    ["A", "Combinar áreas de conhecimento para responder a necessidades pouco comuns."],
-    ["S", "Acompanhar uma pessoa e sua família ao longo de diferentes fases da vida."],
-    ["S", "Escutar com atenção preocupações que não aparecem nos exames."],
-    ["S", "Ajudar pacientes a compreender opções e participar das decisões sobre o cuidado."],
-    ["S", "Ensinar pacientes, estudantes ou colegas em conversas individuais ou em grupo."],
-    ["S", "Coordenar o cuidado com profissionais de diferentes áreas."],
-    ["S", "Trabalhar com prevenção e promoção de saúde junto a pessoas ou comunidades."],
-    ["E", "Organizar uma equipe para responder a uma demanda clínica importante."],
-    ["E", "Tomar decisões e definir prioridades quando há pouco tempo ou recursos limitados."],
-    ["E", "Negociar um plano de cuidado entre necessidades diferentes de pacientes e serviços."],
-    ["E", "Liderar iniciativas para mudar um processo que prejudica o cuidado."],
-    ["E", "Representar uma equipe ou serviço em reuniões e decisões institucionais."],
-    ["E", "Assumir responsabilidade pela coordenação de um serviço ou projeto."],
-    ["C", "Conferir informações clínicas e registros com atenção a detalhes."],
-    ["C", "Trabalhar com protocolos e critérios definidos para reduzir erros."],
-    ["C", "Organizar dados e resultados para acompanhar padrões ao longo do tempo."],
-    ["C", "Manter documentação clara e consistente para apoiar a continuidade do cuidado."],
-    ["C", "Revisar um processo passo a passo para encontrar falhas ou inconsistências."],
-    ["C", "Usar listas, fluxos ou sistemas de classificação para orientar decisões complexas."]
-  ].map(([dimension, text], index) => ({ id: index, dimension, text }));
-
-  // Áreas de acesso direto: catálogo do ENARE 2025/2026 e atualização das normas CNRM.
-  // Os pares RIASEC são hipóteses de exploração baseadas em tarefas típicas; ainda não passaram por validação com especialistas ou residentes.
-  const specialties = [
-    ["Acupuntura", "R I", "Intervenção terapêutica e avaliação clínica."],
-    ["Anestesiologia", "R I", "Procedimentos, monitorização e decisões em tempo real."],
-    ["Cirurgia Geral", "R I", "Procedimentos, resolução prática e raciocínio diagnóstico."],
-    ["Clínica Médica", "I S", "Investigação diagnóstica e cuidado abrangente de adultos."],
-    ["Dermatologia", "I R", "Reconhecimento de padrões e procedimentos ambulatoriais."],
-    ["Genética Médica", "I S", "Investigação diagnóstica, aconselhamento e cuidado familiar."],
-    ["Homeopatia", "S I", "Consulta clínica e compreensão individualizada de sintomas."],
-    ["Infectologia", "I S", "Raciocínio diagnóstico, terapêutico e prevenção de infecções."],
-    ["Medicina de Emergência", "R I", "Avaliação rápida e intervenções em quadros agudos."],
-    ["Medicina de Família e Comunidade", "S I", "Cuidado contínuo, integral e próximo do território."],
-    ["Medicina do Esporte", "R S", "Avaliação funcional, prevenção e retorno à atividade."],
-    ["Medicina do Trabalho", "S C", "Cuidado, prevenção e acompanhamento de saúde ocupacional."],
-    ["Medicina de Tráfego", "C I", "Avaliação clínica e aplicação de critérios de aptidão."],
-    ["Medicina Física e Reabilitação", "S R", "Reabilitação, função e planos de cuidado individualizados."],
-    ["Medicina Intensiva", "R I", "Monitorização, decisões complexas e cuidado de alta intensidade."],
-    ["Medicina Legal e Perícia Médica", "I C", "Análise técnica, documentação e aplicação de critérios."],
-    ["Medicina Nuclear", "I C", "Métodos diagnósticos e terapêuticos com tecnologia e precisão."],
-    ["Medicina Preventiva e Social", "I S", "Epidemiologia, saúde coletiva e organização do cuidado."],
-    ["Neurocirurgia", "R I", "Procedimentos de alta complexidade e raciocínio neuroanatômico."],
-    ["Neurologia", "I S", "Localização diagnóstica e acompanhamento de condições neurológicas."],
-    ["Ginecologia e Obstetrícia", "R S", "Procedimentos, saúde reprodutiva e cuidado em diferentes fases."],
-    ["Oftalmologia", "R I", "Exame especializado, procedimentos e uso de equipamentos."],
-    ["Ortopedia e Traumatologia", "R I", "Avaliação musculoesquelética, trauma e procedimentos."],
-    ["Otorrinolaringologia", "R I", "Diagnóstico por exame direto e procedimentos especializados."],
-    ["Patologia", "I C", "Análise de tecidos, investigação diagnóstica e precisão."],
-    ["Patologia Clínica / Medicina Laboratorial", "I C", "Interpretação de exames, qualidade e sistemas laboratoriais."],
-    ["Pediatria", "S I", "Cuidado de crianças e adolescentes, prevenção e orientação familiar."],
-    ["Psiquiatria", "S I", "Escuta clínica, compreensão diagnóstica e cuidado longitudinal."],
-    ["Radiologia e Diagnóstico por Imagem", "I C", "Interpretação de imagens, tecnologia e precisão diagnóstica."],
-    ["Radioterapia", "I R", "Planejamento terapêutico técnico e cuidado oncológico."]
-  ].map(([name, code, focus]) => ({ name, code: code.split(" "), focus }));
-
-  const questionDimensionOrder = new Map(["R", "I", "S", "C", "A", "E"].map((key, index) => [key, index]));
-  items.sort((a, b) => (a.id % 6) - (b.id % 6) || questionDimensionOrder.get(a.dimension) - questionDimensionOrder.get(b.dimension));
-  const answers = Array(items.length).fill(null);
-  let current = 0;
-
-  const $ = (id) => document.getElementById(id);
-  const intro = $("voc-intro");
-  const quiz = $("voc-quiz");
-  const results = $("voc-results");
-  const optionBox = $("voc-options");
-
-  function renderQuestion() {
-    const item = items[current];
-    $("voc-dimension").textContent = "PREFERÊNCIAS DE TRABALHO";
-    $("voc-question").textContent = item.text;
-    $("voc-count").textContent = `${current + 1} de ${items.length}`;
-    $("voc-progress").setAttribute("aria-valuenow", String(current + 1));
-    $("voc-progress-fill").style.width = `${((current + 1) / items.length) * 100}%`;
-    $("voc-back").disabled = current === 0;
-    $("voc-next").textContent = current === items.length - 1 ? "Ver meu mapa →" : "Próxima →";
-    $("voc-error").textContent = "";
-    syncAnswerChoices(answers[current]);
+  const percent=n=>Math.min(100,Math.round(n/engine.total*100));
+  function validSaved(s) {
+    if(!s||typeof s!=="object"||!Array.isArray(s.sequence)||typeof s.answers!=="object")return false;
+    const ids=s.sequence, base=engine.core.map(q=>q.id);
+    if(ids.length!==base.length&&ids.length!==engine.total)return false;
+    if(!base.every((id,i)=>ids[i]===id))return false;
+    if(ids.length===engine.total){
+      try{engine.createSequence(s.answers,ids.slice(base.length,base.length+engine.DEEP_COUNT));}
+      catch(_){return false;}
+    }
+    if(new Set(ids).size!==ids.length)return false;
+    if(Object.entries(s.answers).some(([id,v])=>!ids.includes(id)||!engine.validResponse(v)))return false;
+    if(!Number.isInteger(s.current)||s.current<0||s.current>=ids.length)return false;
+    return typeof s.finish==="boolean";
   }
-
-  function syncAnswerChoices(selectedValue) {
-    optionBox.querySelectorAll(".voc-option").forEach((button) => {
-      const selected = selectedValue !== null && Number(button.dataset.value) === selectedValue;
-      button.setAttribute("aria-pressed", String(selected));
-    });
+  function restore(){
+    try {
+      const saved=JSON.parse(sessionStorage.getItem(storageKey)||"null");
+      if(!validSaved(saved))return false;
+      sequence=saved.sequence;
+      answers=saved.answers;
+      current=saved.current;
+      finish=saved.finish;
+      return true;
+    }catch(_){return false;}
   }
-
-  function advanceQuestion() {
-    if (current === items.length - 1) {
-      renderResults();
+  function save(){
+    try{sessionStorage.setItem(storageKey,JSON.stringify({sequence,answers,current,finish}));}
+    catch(_){}
+  }
+  function stage(value){
+    intro.hidden=value!=="intro";
+    quiz.hidden=value!=="quiz";
+    results.hidden=value!=="results";
+  }
+  function currentQuestion(){
+    return engine.questionIndex.get(sequence[current]);
+  }
+  function phase(index=current) {
+    if(index<engine.core.length)return ["ETAPA 1 DE 3 · SUA PRÁTICA","Entender preferências e estilo de trabalho"];
+    if(index<engine.core.length+engine.DEEP_COUNT)return ["ETAPA 2 DE 3 · APROFUNDAMENTO","Questões selecionadas pelo seu perfil inicial"];
+    return ["ETAPA 3 DE 3 · AJUSTE FINO","Prioridades reais e limites de rotina"];
+  }
+  function renderQuestion(){
+    const q=currentQuestion();
+    if(!q){stage("intro");return;}
+    const selected=answers[q.id]||null;
+    const [section,subtitle]=phase();
+    $("voc-dimension").textContent=section;
+    $("voc-question").textContent=q.text;
+    $("voc-count").textContent=(current+1)+" / "+engine.total;
+    $("voc-progress").setAttribute("aria-valuemax",String(engine.total));
+    $("voc-progress").setAttribute("aria-valuenow",String(current+1));
+    $("voc-progress-fill").style.width=percent(current+1)+"%";
+    $("voc-context").textContent=q.context+" "+subtitle+".";
+    $("voc-back").disabled=current===0;
+    $("voc-next").disabled=!selected;
+    $("voc-next").textContent=current===engine.total-1?"Gerar relatório personalizado →":"Continuar →";
+    $("voc-error").textContent="";
+    choices.innerHTML=q.options.map((o,i)=>{
+      const main=selected?.first===i,secondary=selected?.second===i;
+      return '<div class="voc-choice"><button type="button" class="voc-option" data-value="'+i+'" aria-pressed="'+main+'">'+
+        '<strong class="voc-option-letter" aria-hidden="true">'+String.fromCharCode(65+i)+'</strong><span>'+html(o.label)+'</span>'+
+        '<span class="voc-choice-state">'+(main?'Preferência principal':secondary?'Segunda preferência':'')+'</span></button>'+
+        '<button type="button" class="voc-secondary" data-value="'+i+'" aria-pressed="'+secondary+'"'+
+        (!selected||selected.first===-1||main?' disabled':'')+'>'+(secondary?'✓ Também escolheria':'Também consideraria')+'</button></div>';
+    }).join("");
+    $("voc-none").setAttribute("aria-pressed",String(selected?.first===-1));
+    $("voc-unfamiliar").checked=!!selected?.unfamiliar;
+    choices.querySelectorAll(".voc-option").forEach(btn=>btn.addEventListener("click",()=>{
+      const first=Number(btn.dataset.value);
+      const old=answers[q.id];
+      answers[q.id]={first,second:old?.second===first?null:(old?.second??null),unfamiliar:$("voc-unfamiliar").checked};
+      save();renderQuestion();
+    }));
+    choices.querySelectorAll(".voc-secondary").forEach(btn=>btn.addEventListener("click",()=>{
+      const second=Number(btn.dataset.value),old=answers[q.id];
+      if(!old||old.first<0||old.first===second)return;
+      answers[q.id]={...old,second:old.second===second?null:second};
+      save();renderQuestion();
+    }));
+  }
+  function showQuiz(focus=true){
+    stage("quiz");renderQuestion();
+    if(focus) {
+      $("voc-question").focus({preventScroll:true});
+      quiz.scrollIntoView({block:"start",behavior:"smooth"});
+    }
+  }
+  function adapt(){
+    const desired=engine.selectAdaptive(answers);
+    const old=sequence.slice(engine.core.length,engine.core.length+engine.DEEP_COUNT);
+    const changed=desired.some((id,i)=>id!==old[i])||old.length!==desired.length;
+    if(changed) {
+      const keep=new Set([...engine.core.map(q=>q.id),...desired,...engine.end.map(q=>q.id)]);
+      answers=Object.fromEntries(Object.entries(answers).filter(([id])=>keep.has(id)));
+      // Respostas de aprofundamento permanecem apenas quando a pergunta ainda está na trilha.
+      sequence=engine.createSequence(answers,desired);
+    }
+  }
+  function next(){
+    if(!engine.validResponse(answers[currentQuestion().id])){
+      $("voc-error").textContent="Escolha uma preferência ou a opção 'ainda não sei' para continuar.";
       return;
     }
-    current += 1;
-    renderQuestion();
-    $("voc-question").focus();
-  }
-
-  function chooseAnswer(value) {
-    answers[current] = value;
-    syncAnswerChoices(value);
-    $("voc-error").textContent = "";
-    advanceQuestion();
-  }
-
-  optionBox.querySelectorAll(".voc-option").forEach((button) => {
-    button.addEventListener("click", () => {
-      chooseAnswer(Number(button.dataset.value));
-    });
-  });
-
-  function calculate() {
-    const sums = Object.fromEntries(Object.keys(dimensions).map((key) => [key, { sum: 0, count: 0 }]));
-    items.forEach((item, index) => {
-      sums[item.dimension].sum += answers[index];
-      sums[item.dimension].count += 1;
-    });
-    const scores = Object.fromEntries(Object.entries(sums).map(([key, value]) => [key, Math.round(((value.sum - value.count) / (value.count * 4)) * 100)]));
-    return { scores, order: Object.keys(scores).sort((a, b) => scores[b] - scores[a] || a.localeCompare(b)) };
-  }
-
-  function renderResults() {
-    const { scores, order } = calculate();
-    const profile = order.slice(0, 3).join("");
-    const matches = specialties.map((specialty) => ({
-      ...specialty,
-      score: Math.round(specialty.code.reduce((sum, key) => sum + scores[key], 0) / specialty.code.length)
-    })).sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, "pt-BR"));
-
-    const scoreCards = order.map((key) => `<div class="voc-score"><div class="voc-score-head"><span><strong>${key}</strong> · ${dimensions[key].name}</span><strong>${scores[key]}%</strong></div><div class="voc-score-track" aria-label="${dimensions[key].name}: ${scores[key]}%"><span style="width:${scores[key]}%"></span></div><small>${dimensions[key].desc}</small></div>`).join("");
-    const topMatches = matches.slice(0, 5).map((area) => `<article class="voc-match"><div class="voc-match-top"><h3>${area.name}</h3><span class="voc-match-score">${area.score}%</span></div><p>${area.focus}</p><p>Interesses relacionados: ${area.code.map((key) => dimensions[key].name).join(" + ")}</p></article>`).join("");
-    const allAreas = matches.map((area) => `<li><strong>${area.name}</strong><span> · Índice ${area.score}% · RIASEC ${area.code.join("")}</span></li>`).join("");
-    results.innerHTML = `
-      <p class="voc-kicker">SEU MAPA DE INTERESSES</p>
-      <h2 id="voc-results-title">Seu perfil combina curiosidades diferentes</h2>
-      <p class="voc-code" aria-label="Código de interesses ${profile.split("").join(", ")}">${profile.split("").join(" · ")}</p>
-      <p class="voc-result-intro">As três letras destacam as dimensões mais altas neste questionário. Veja abaixo as seis pontuações e áreas de acesso direto com interesses de trabalho relacionados. As áreas não são uma previsão de satisfação ou desempenho; leia os pontos de contato e use-os para escolher o que pesquisar, conversar e vivenciar.</p>
-      <h2>Seu perfil RIASEC</h2><div class="voc-score-grid">${scoreCards}</div>
-      <h2>Áreas para explorar primeiro</h2><div class="voc-match-list">${topMatches}</div>
-      <details class="voc-all-areas"><summary>Ver as 30 áreas de acesso direto incluídas</summary><ul>${allAreas}</ul></details>
-      <p class="voc-result-intro">A pontuação ao lado de cada área é a média das dimensões RIASEC associadas às atividades típicas descritas. É um índice exploratório criado para esta página, não uma medida validada de compatibilidade. Empates e diferenças pequenas não devem ser interpretados como preferência firme.</p>
-      <div class="voc-actions"><button id="voc-restart" class="voc-button voc-button-primary" type="button">Refazer questionário</button><a class="voc-button voc-button-secondary" href="/dashboard/">Voltar ao dashboard</a></div>`;
-    results.hidden = false;
-    quiz.hidden = true;
-    results.scrollIntoView({ behavior: "smooth", block: "start" });
-    $("voc-restart").addEventListener("click", () => {
-      answers.fill(null);
-      current = 0;
-      results.hidden = true;
-      quiz.hidden = false;
-      renderQuestion();
-      $("voc-question").focus();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  }
-
-  $("voc-start").addEventListener("click", () => {
-    intro.hidden = true;
-    quiz.hidden = false;
-    renderQuestion();
-    $("voc-question").focus();
-  });
-  $("voc-back").addEventListener("click", () => {
-    if (current > 0) { current -= 1; renderQuestion(); $("voc-question").focus(); }
-  });
-  $("voc-next").addEventListener("click", () => {
-    if (answers[current] === null) {
-      $("voc-error").textContent = "Escolha uma opção para continuar.";
-      optionBox.querySelector("button")?.focus();
+    if(current===engine.core.length-1)adapt();
+    if(current===sequence.length-1&&sequence.length===engine.total){
+      try{renderResults();}catch(error){$("voc-error").textContent="Não foi possível concluir a análise. Revise suas respostas.";console.error(error);}
       return;
     }
-    if (current === items.length - 1) { renderResults(); return; }
-    current += 1;
-    renderQuestion();
-    $("voc-question").focus();
+    current=Math.min(current+1,sequence.length-1);
+    finish=false;save();showQuiz();
+  }
+  function sections(title,body){
+    return '<section class="voc-report-section"><h3>'+html(title)+'</h3>'+body+'</section>';
+  }
+  function chosenSamples(ids,max=3){
+    return ids.map(id=>{
+      const q=engine.questionIndex.get(id);
+      const a=answers[id];
+      return q&&a?.first>=0?{q,text:q.options[a.first].label}:null;
+    }).filter(Boolean).slice(0,max);
+  }
+  function scoreGroups(report,tags){
+    return tags.slice().sort((a,b)=>(report.scores[b]||0)-(report.scores[a]||0));
+  }
+  function produceNarrative(report,tags){
+    const values=scoreGroups(report,tags).filter(t=>report.scores[t]>.06).slice(0,3);
+    return values.length?readable(values.map(label)).toLowerCase():"preferências variadas, sem um padrão dominante";
+  }
+  function renderResults(){
+    const report=engine.calculate(answers,sequence);
+    const chosen=report.ordered.slice(0,5);
+    const diagnostic=produceNarrative(report,["diagnosis","complex","clinical","research","precision"]);
+    const procedural=produceNarrative(report,["hands","surgery","technology","visual","function"]);
+    const routine=produceNarrative(report,["acute","highstakes","predictable","followup","team"]);
+    const people=produceNarrative(report,["kids","women","elderly","mental","people","community"]);
+    const weak=report.frictions.slice(0,3);
+    const samples=chosenSamples(sequence,3).map(s=>'<li><strong>'+html(s.q.group)+':</strong> '+html(s.text)+'</li>').join("");
+    const less=report.skipped||report.inexperienced?
+      'Em '+report.inexperienced+' pergunta(s), você marcou que ainda não teve experiência prática; '+report.skipped+
+      ' ficaram sem preferência. Isso reduz a segurança de interpretações mais específicas.':"Você conseguiu expressar uma preferência em todas as etapas.";
+    const top=report.top.map((s,i)=>{
+      const aff=s.strengths.filter(t=>report.scores[t]>.03).slice(0,3);
+      const fric=s.frictions.slice(0,2);
+      const why=s.evidence.length?
+        '<ul class="voc-evidence">'+s.evidence.map(e=>
+          '<li><strong>'+html(e.section)+':</strong> “'+html(e.choice)+'”</li>').join("")+'</ul>':
+        '<p>Suas respostas gerais sugerem esse caminho, mas faltaram exemplos específicos desta prática.</p>';
+      const friction=fric.length?
+        'O teste mostrou menos preferência por '+html(readable(fric.map(label)).toLowerCase())+
+          '. Vale verificar como isso aparece nos diferentes serviços.':
+        'Não apareceu uma resistência clara às atividades gerais desta área. Ainda assim, converse sobre plantões, burocracia e a rotina predominante.';
+      return '<article class="voc-match"><div class="voc-match-top"><h3>'+ (i+1)+
+        'ª indicação · Residência em '+html(s.name)+'</h3><span class="voc-match-score">Programa de residência</span></div>'+
+        '<p><strong>Por que esta residência apareceu:</strong> seus interesses por '+
+          html(readable((aff.length?aff:s.strengths).map(label)).toLowerCase())+
+          ' se aproximam de atividades associadas à formação nesta residência.</p>'+
+        '<p><strong>O que você respondeu que sustenta essa hipótese:</strong></p>'+why+
+        '<p><strong>Possível atrito com a rotina:</strong> '+friction+'</p>'+
+        '<p><strong>Ingresso na residência:</strong> '+(s.entry==="Acesso direto"?
+          'Acesso direto (R1), após a graduação.':
+          'Com pré-requisito: residência prévia em '+html(s.prerequisite)+'.')+
+          ' Confirme os requisitos e a duração no edital vigente.</p>'+
+        '<p><strong>Como conferir na prática:</strong> acompanhe um turno comum do programa, converse com residentes sobre atividades repetitivas e registre o que voltaria a fazer.</p></article>';
+    }).join("");
+    const difference=report.top.length>=2?
+      '<p>As hipóteses se diferenciam principalmente pelo tipo de atividade. '+
+      html(report.top.map(s=>s.name+': '+readable(s.strengths.slice(0,2).map(label)).toLowerCase()).join(" • "))+
+      '. Explore essas diferenças no serviço, não apenas no conteúdo teórico.</p>':"";
+    const uncertain=report.close?'<p><strong>Empate prático:</strong> as primeiras hipóteses tiveram sinais próximos neste modelo exploratório. Não há base para afirmar que a primeira seja superior à segunda.</p>':'';
+    const headline=chosen.length?
+      'Você se interessou por '+html(readable(chosen.slice(0,3).map(label)).toLowerCase())+
+      '. Essa combinação descreve preferências de trabalho, não um tipo fixo de personalidade.':
+      'Suas escolhas ficaram distribuídas entre várias formas de exercer a Medicina. É mais útil vivenciar os cenários do que assumir uma conclusão agora.';
+    results.innerHTML=
+      '<p class="voc-kicker">MAPA DE RESIDÊNCIAS · RESULTADO PERSONALIZADO</p>'+
+      '<h2 id="voc-results-title">O que realmente pesa na sua escolha</h2>'+
+      '<p class="voc-result-intro">'+headline+'</p>'+
+      sections("Seu jeito de raciocinar",'<p>Nas tarefas intelectuais, suas escolhas sugerem interesse em '+html(diagnostic)+
+        '. Observe se gosta de investigar hipóteses por muito tempo ou prefere que o raciocínio leve rapidamente a uma ação.</p>')+
+      sections("Sua relação com procedimentos e tecnologia",'<p>Nas alternativas práticas, você privilegiou '+html(procedural)+
+        '. Isso não mede habilidade manual: mostra o tipo de competência que deseja desenvolver.</p>')+
+      sections("O ritmo de trabalho que merece testar",'<p>Em dilemas de rotina, apareceram '+html(routine)+
+        '. O mesmo campo pode ter agendas muito diferentes conforme subárea, vínculo e local.</p>')+
+      sections("Pessoas e situações de cuidado",'<p>Entre os contextos de assistência, você demonstrou preferência por '+
+        html(people)+'. Faixa etária e tipo de vínculo não determinam uma especialidade isoladamente.</p>')+
+      sections("Pontos de atenção e incerteza",'<p>'+
+        (weak.length?'Você escolheu menos atividades ligadas a '+html(readable(weak.map(label)).toLowerCase())+
+        '. Isso não significa falta de aptidão; pode indicar um esforço de rotina a investigar. ':'')+
+        html(less)+'</p>')+
+      sections("Três exemplos das suas próprias escolhas",samples?'<ul class="voc-evidence">'+samples+'</ul>':
+        '<p>Você marcou poucas preferências diretas; considere repetir o teste depois de vivenciar mais estágios.</p>')+
+      '<h2 class="voc-top-title">Até três residências médicas para explorar</h2>'+
+      '<p class="voc-result-intro">As recomendações incluem apenas residências convencionais da curadoria LURIA, de acesso direto ou com pré-requisito. A ordem representa afinidades editoriais, nunca chance de aprovação, competência ou satisfação.</p>'+
+      uncertain+'<div class="voc-match-list">'+top+'</div>'+
+      sections("Como diferenciar as residências sugeridas",difference)+
+      sections("Plano de validação no mundo real",'<p>Para cada residência sugerida: acompanhe ao menos um dia comum, converse com residentes e especialistas, observe tarefas repetitivas e compare seu bem-estar ao final do turno. Refaça a avaliação após novas experiências; a ordem pode mudar.</p>')+
+      '<p class="voc-result-intro"><strong>Limitações:</strong> avaliação exploratória da LURIA; não é teste psicométrico validado nem prevê aprovação. A inclusão no catálogo não garante vagas em todas as instituições ou anos. Confira os editais e a CNRM.</p>'+
+      '<div class="voc-actions"><button id="voc-restart" class="voc-button voc-button-primary" type="button">Refazer desde o início</button>'+
+      '<button id="voc-review" class="voc-button voc-button-secondary" type="button">Revisar respostas</button>'+
+      '<a class="voc-button voc-button-secondary" href="/aplicar/">Voltar ao Aplicar</a></div>';
+    finish=true;stage("results");save();
+    results.scrollIntoView({block:"start",behavior:"smooth"});
+    $("voc-restart").addEventListener("click",reset);
+    $("voc-review").addEventListener("click",()=>{current=0;finish=false;save();showQuiz();});
+  }
+  function reset(){
+    answers={};current=0;finish=false;sequence=engine.core.map(q=>q.id);
+    try{sessionStorage.removeItem(storageKey);}catch(_){}
+    showQuiz();
+  }
+  function renderCatalogue(){
+    const query=($("voc-search").value||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
+    const items=engine.catalogue.residencies.filter(x=>
+      (x.name+" "+x.prerequisite+" "+x.entry).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().includes(query))
+      .sort((a,b)=>a.name.localeCompare(b.name,"pt-BR"));
+    $("voc-catalog-count").textContent=items.length+" resultado(s) no catálogo";
+    $("voc-catalog-items").innerHTML=items.length?items.map(x=>
+      '<article class="voc-catalog-item"><strong>'+html(x.name)+'</strong><span>'+
+      'Residência médica · '+x.entry+
+      '</span><small>'+(x.entry==="Acesso direto"?"Ingresso após a graduação":"Pré-requisito: "+html(x.prerequisite))+'</small></article>').join(""):
+      '<p>Nenhum item encontrado. Tente outro termo.</p>';
+  }
+  $("voc-start").addEventListener("click",()=>{current=0;finish=false;save();showQuiz();});
+  $("voc-back").addEventListener("click",()=>{if(current>0){current--;finish=false;save();showQuiz();}});
+  $("voc-next").addEventListener("click",next);
+  $("voc-none").addEventListener("click",()=>{
+    const id=currentQuestion().id,old=answers[id];
+    answers[id]={first:-1,second:null,unfamiliar:$("voc-unfamiliar").checked};
+    save();renderQuestion();
   });
-  document.addEventListener("keydown", (event) => {
-    if (quiz.hidden || event.repeat || !/^[1-5]$/.test(event.key)) return;
-    chooseAnswer(Number(event.key));
+  $("voc-unfamiliar").addEventListener("change",()=>{
+    const id=currentQuestion().id,old=answers[id];
+    if(old){answers[id]={...old,unfamiliar:$("voc-unfamiliar").checked};save();}
   });
+  $("voc-search").addEventListener("input",renderCatalogue);
+  $("voc-catalogue").addEventListener("toggle",()=>{if($("voc-catalogue").open)renderCatalogue();});
+  document.addEventListener("keydown",event=>{
+    if(quiz.hidden||event.altKey||event.metaKey||event.ctrlKey||
+      ["INPUT","TEXTAREA","SELECT"].includes(document.activeElement?.tagName))return;
+    if(/^[1-4]$/.test(event.key)&&document.activeElement?.tagName!=="BUTTON"){
+      const target=choices.querySelectorAll(".voc-option")[Number(event.key)-1];
+      target?.click();
+    } else if(event.key==="Enter"&&document.activeElement?.tagName!=="BUTTON")next();
+  });
+  if(restore()){
+    if(finish&&sequence.length===engine.total){try{renderResults();}catch(_){finish=false;showQuiz(false);}}
+    else showQuiz(false);
+  } else stage("intro");
 })();

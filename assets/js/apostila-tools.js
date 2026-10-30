@@ -23,12 +23,149 @@
     body.apostila-reading-layout-v2 .book-color-dot.is-active{box-shadow:0 0 0 2px var(--surface),0 0 0 4px var(--accent)!important}
     body.apostila-reading-layout-v2 .book-highlight{background:var(--book-highlight-color,#ffd166)!important;color:#14243a!important;text-shadow:none!important;border-radius:3px!important;padding:0 .05em!important;box-decoration-break:clone!important;-webkit-box-decoration-break:clone!important}
     body.apostila-reading-layout-v2 .book-toc-block{order:2!important;margin:0!important;padding:22px 26px!important;border:1px solid var(--border)!important;border-radius:18px!important;background:var(--surface)!important;box-shadow:0 8px 22px rgba(15,35,66,.04)!important;scroll-margin-top:14px!important}
+    body.apostila-reading-layout-v2 .book-hero>.book-toc-block{position:relative!important;z-index:1!important;box-sizing:border-box!important;width:100%!important;margin:20px 0 0!important;padding:18px 0 0!important;border:0!important;border-top:1px solid rgba(255,255,255,.32)!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+    body.apostila-reading-layout-v2 .book-hero .book-toc-kicker{color:rgba(255,255,255,.78)!important}
+    body.apostila-reading-layout-v2 .book-hero .book-toc-block h2{color:#fff!important}
+    body.apostila-reading-layout-v2 .book-hero .book-toc-description{color:rgba(255,255,255,.86)!important}
+    body.apostila-reading-layout-v2 .book-hero .book-toc-link{border:1px solid rgba(255,255,255,.3)!important;border-left:3px solid rgba(255,255,255,.8)!important;background:rgba(255,255,255,.13)!important;color:#fff!important}
+    body.apostila-reading-layout-v2 .book-hero .book-toc-link:hover,body.apostila-reading-layout-v2 .book-hero .book-toc-link:focus-visible,body.apostila-reading-layout-v2 .book-hero .book-toc-link.is-active{background:#fff!important;border-color:#fff!important;color:#184888!important}
     body.apostila-reading-layout-v2 .book-toc-kicker{display:block!important;margin-bottom:4px!important;color:var(--accent)!important;font-size:9px!important;font-weight:700!important;letter-spacing:.08em!important;text-transform:uppercase!important}
     body.apostila-reading-layout-v2 .book-toc-block h2{margin:0 0 6px!important;font-size:22px!important;line-height:1.15!important}
     body.apostila-reading-layout-v2 .book-toc-description{margin:0 0 16px!important;color:var(--muted)!important;font-size:11px!important;line-height:1.5!important}
     body.apostila-reading-layout-v2 .book-toc-nav{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important}
     body.apostila-reading-layout-v2 .book-toc-link{display:flex!important;align-items:center!important;min-height:34px!important;padding:7px 9px!important;border:1px solid var(--border)!important;border-left:3px solid var(--accent)!important;border-radius:9px!important;background:var(--surface-2)!important;color:var(--text)!important;font-size:10.5px!important;line-height:1.25!important;text-decoration:none!important}
     body.apostila-reading-layout-v2 .book-toc-link:hover,body.apostila-reading-layout-v2 .book-toc-link.is-active{background:var(--accent-soft)!important;color:var(--accent)!important;border-color:color-mix(in srgb,var(--accent) 35%,var(--border))!important}
+    /* Mesmo alinhamento em apostilas HTML antigas sem a folha do renderer. */
+    body.apostila-reading-layout-v2 .book-main :is(.book-section,.mindmap-section){text-align:justify!important}
+    body.apostila-reading-layout-v2 .book-main :is(.book-section,.mindmap-section) :is(p,li,blockquote,figcaption,dd),body.apostila-reading-layout-v2 .book-main .book-hero > p,body.apostila-reading-layout-v2 .book-main .book-safety-note > span{text-align:justify!important;text-align-last:auto!important;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+
+/* LURIA | Leitura editorial confortável + acentos cromáticos por tema.
+   Compartilhado entre o leitor JSON e as apostilas HTML tradicionais. */
+body[data-page="aprender"] .book-main {
+  gap: clamp(18px, 2.8vw, 30px) !important;
+}
+body[data-page="aprender"] .book-main :is(.book-section,.mindmap-section) {
+  border-top: 3px solid color-mix(in srgb, var(--accent) 45%, var(--border)) !important;
+  background: linear-gradient(155deg,
+    color-mix(in srgb, var(--accent) 3%, var(--surface)) 0%,
+    var(--surface) 34%) !important;
+}
+body[data-page="aprender"] .book-main .book-section {
+  padding: clamp(26px, 2.8vw, 36px) clamp(21px, 3vw, 42px) !important;
+}
+body[data-page="aprender"] .book-main .book-section > h2 {
+  margin: 0 0 25px !important;
+  padding: 10px 14px !important;
+  border: 0 !important;
+  border-left: 4px solid var(--accent) !important;
+  border-radius: 0 12px 12px 0;
+  background: linear-gradient(90deg,
+    color-mix(in srgb, var(--accent) 11%, var(--surface)),
+    transparent 96%) !important;
+  color: var(--accent-strong, var(--accent)) !important;
+  font-size: clamp(22px, 2.2vw, 25px) !important;
+  line-height: 1.3 !important;
+}
+body[data-page="aprender"] .book-main .book-section > h3 {
+  margin: 30px 0 14px !important;
+  color: var(--accent-strong, var(--accent)) !important;
+  font-size: 18px !important;
+  line-height: 1.38 !important;
+}
+body[data-page="aprender"] .book-main .book-section > h4 {
+  margin: 23px 0 12px !important;
+  color: var(--accent) !important;
+  font-size: 16px !important;
+}
+body[data-page="aprender"] .book-main :is(.book-section,.mindmap-section) :is(p,li,blockquote,dd) {
+  font-size: 15.6px !important;
+  line-height: 1.82 !important;
+  letter-spacing: 0 !important;
+}
+body[data-page="aprender"] .book-main .book-section p {
+  margin-bottom: 22px !important;
+}
+body[data-page="aprender"] .book-main .book-section p + p {
+  margin-top: 4px !important;
+}
+body[data-page="aprender"] .book-main .book-section :is(ul,ol):not(.reference-list) {
+  margin-top: 15px !important;
+  margin-bottom: 24px !important;
+}
+body[data-page="aprender"] .book-main .book-section li {
+  margin-bottom: 10px !important;
+}
+body[data-page="aprender"] .book-main .book-section li + li {
+  margin-top: 5px !important;
+}
+body[data-page="aprender"] .book-main .book-section blockquote {
+  margin: 22px 0 !important;
+  padding: 12px 18px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  background: color-mix(in srgb, var(--accent) 5%, var(--surface));
+}
+/* Os destaques ganham identidade sem transformar a página em um mosaico. */
+body[data-page="aprender"] .book-main :is(.book-mini,.drive-block,.clinical-card) {
+  border-left: 4px solid color-mix(in srgb, var(--success, #158064) 72%, var(--accent)) !important;
+  background: color-mix(in srgb, var(--success, #158064) 6%, var(--surface)) !important;
+}
+body[data-page="aprender"] .book-main .clinical-case {
+  border-left: 4px solid var(--accent) !important;
+  background: color-mix(in srgb, var(--accent) 6%, var(--surface)) !important;
+}
+body[data-page="aprender"] .book-main .book-callout:not(.book-alert) {
+  border-color: color-mix(in srgb, var(--gold, #d6a34a) 38%, var(--border)) !important;
+  background: color-mix(in srgb, var(--gold, #d6a34a) 9%, var(--surface)) !important;
+}
+body[data-page="aprender"] .book-main .book-cai-na-prova {
+  border-left: 4px solid var(--accent) !important;
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface)) !important;
+}
+body[data-page="aprender"] .book-main .book-section :is(.book-mini,.flow-step,.mechanism-step,.reference-list,table,figure,.book-toc-block) :is(p,li,blockquote,dd) {
+  font-size: 13.5px !important;
+  line-height: 1.65 !important;
+  margin-bottom: 9px !important;
+}
+body[data-page="aprender"] .book-main .book-section :is(.book-callout,.drive-block,.clinical-card,.clinical-case) :is(p,li) {
+  font-size: 14.5px !important;
+  line-height: 1.72 !important;
+  margin-bottom: 12px !important;
+}
+body[data-page="aprender"] .book-main .book-section .clinical-list li {
+  font-size: 15px !important;
+  line-height: 1.75 !important;
+}
+body[data-page="aprender"] .book-main .book-section .reference-list li {
+  margin: 0 0 8px !important;
+}
+@media (max-width: 640px) {
+  body[data-page="aprender"] .book-main .book-section {
+    padding: 24px 18px !important;
+  }
+  body[data-page="aprender"] .book-main .book-section > h2 {
+    font-size: 21px !important;
+    padding: 9px 11px !important;
+  }
+  body[data-page="aprender"] .book-main :is(.book-section,.mindmap-section) :is(p,li,blockquote,dd) {
+    font-size: 15px !important;
+    line-height: 1.76 !important;
+  }
+  body[data-page="aprender"] .book-main .book-section p {
+    margin-bottom: 20px !important;
+  }
+  body[data-page="aprender"] .book-main .book-section :is(.book-mini,.flow-step,.mechanism-step,.reference-list,table,figure,.book-toc-block) :is(p,li,blockquote,dd) {
+    font-size: 13.3px !important;
+    line-height: 1.64 !important;
+    margin-bottom: 8px !important;
+  }
+  body[data-page="aprender"] .book-main .book-section :is(.book-callout,.drive-block,.clinical-card,.clinical-case) :is(p,li) {
+    font-size: 14.1px !important;
+    line-height: 1.68 !important;
+    margin-bottom: 10px !important;
+  }
+}
+
     body.apostila-reading-layout-v2 .book-postit{z-index:40!important}
     @media(max-width:900px){
       body.apostila-reading-layout-v2 .book-page{display:flex!important;flex-direction:column!important;grid-template-columns:none!important;gap:12px!important;width:100%!important;max-width:100%!important;overflow:visible!important}
@@ -46,10 +183,21 @@
   const originalLinks=[...document.querySelectorAll('.book-outline-nav .book-outline-link')];
   const uniqueLinks=[];
   const seenLinks=new Set();
+  // As apostilas antigas podem usar links absolutos para a própria página.
+  const normalizedPath=path=>path.replace(/\/index\.html$/i,'/').replace(/\/?$/,'/');
   originalLinks.forEach(sourceLink=>{
-    const href=sourceLink.getAttribute('href')||'';
+    const rawHref=sourceLink.getAttribute('href')||'';
     const label=sourceLink.textContent.trim();
-    if(!href.startsWith('#')||!label||seenLinks.has(href))return;
+    if(!label)return;
+    let href;
+    try{
+      const url=new URL(rawHref,location.href);
+      if(url.origin!==location.origin||normalizedPath(url.pathname)!==normalizedPath(location.pathname))return;
+      const targetId=decodeURIComponent(url.hash.slice(1));
+      if(!targetId||!document.getElementById(targetId))return;
+      href='#'+targetId;
+    }catch{return;}
+    if(seenLinks.has(href))return;
     seenLinks.add(href);
     uniqueLinks.push({href,label});
   });
@@ -79,7 +227,14 @@
     tocNav.appendChild(link);
   });
   toc.append(kicker,tocTitle,description,tocNav);
-  if(hero)hero.insertAdjacentElement('afterend',toc);else main.insertAdjacentElement('afterbegin',toc);
+  // O sumário integra o primeiro bloco (capa) e não ocupa mais um card independente.
+  if(hero){
+    const introEnd=hero.querySelector('.book-meta-row')||hero.querySelector('p')||hero.querySelector('h1');
+    if(introEnd)introEnd.insertAdjacentElement('afterend',toc);else hero.appendChild(toc);
+  }else{
+    const firstBlock=main.querySelector(':scope > .book-section, :scope > .mindmap-section')||main.firstElementChild;
+    if(firstBlock)firstBlock.prepend(toc);else main.prepend(toc);
+  }
 
   const outline=document.querySelector('.book-outline');
   outline?.replaceChildren();
@@ -116,48 +271,9 @@
   document.head.appendChild(style);
   const highlightBtn=tools.querySelector('[data-apostila-highlight]');
   const postitBtn=tools.querySelector('[data-apostila-postit]');
-  const notionBtn=tools.querySelector('[data-apostila-notion]');
   const palette=tools.querySelector('[data-highlight-palette]');
   const postitPalette=tools.querySelector('[data-postit-palette]');
   let highlightColor='#ffd166';let postitShape='square';
-
-  if (notionBtn) {
-    // Verificar status do Notion e vincular evento de conexão
-    const checkNotion = async () => {
-      try {
-        const sb = window.supabaseClient;
-        if (!sb) return;
-        const { data } = await sb.functions.invoke("notion-api", { body: { action: "status" } });
-        if (data?.connected) {
-          notionBtn.textContent = "✓ Notion Conectado";
-          notionBtn.style.background = "#1b4d3e";
-          notionBtn.style.borderColor = "#2e7d32";
-        }
-      } catch (_) {}
-    };
-    checkNotion();
-
-    notionBtn.addEventListener('click', async () => {
-      try {
-        const sb = window.supabaseClient;
-        if (!sb) {
-          window.location.assign('/configuracoes/?section=perfil');
-          return;
-        }
-        notionBtn.disabled = true;
-        notionBtn.textContent = "Conectando...";
-        const redirectTo = window.location.href;
-        const { data, error } = await sb.functions.invoke("notion-auth", { body: { redirect_to: redirectTo } });
-        if (error || !data?.url) {
-          window.location.assign('/configuracoes/?section=perfil');
-          return;
-        }
-        window.location.assign(data.url);
-      } catch (_) {
-        window.location.assign('/configuracoes/?section=perfil');
-      }
-    });
-  }
   const base='luria:apostila:'+location.pathname.replace(/\/+$/,'');
   const highlightKey=base+':highlights:v1';
   const postitKey=base+':postits:v1';
@@ -852,3 +968,7 @@
 
   bootWhenReady();
 })();
+
+;(() => { const script = document.createElement('script'); script.src = '/assets/js/study-side-by-side.js?v=20261028'; document.body.appendChild(script); })();
+
+;(() => { const script = document.createElement('script'); script.src = '/assets/js/apostila-paged-reader.js?v=20261028-reader1'; document.body.appendChild(script); })();

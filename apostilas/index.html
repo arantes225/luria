@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261005-apostilas-library">
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
-  <link rel="stylesheet" href="/assets/css/apostilas-hall.css?v=20261025-hall3">
+  <link rel="stylesheet" href="/assets/css/apostilas-hall.css?v=20261029-protect-books1">
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/apostilas/">
 </head>
@@ -31,11 +31,11 @@
         <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
         <div class="page-heading">
           <span class="eyebrow">Conteúdo LURIA</span>
-          <h1>Apostilas</h1>
+          <h1 id="books-page-title">Apostilas</h1>
         </div>
       </header>
 
-      <section class="books-page">
+      <section class="books-page" id="books-hall-view" aria-label="Hall das apostilas">
         <!-- Spotlight da Página -->
         <section class="luria-page-spotlight" aria-label="Apostilas">
           <div class="luria-page-spotlight-copy">
@@ -51,15 +51,6 @@
           <span>Voltar para Aprender</span>
         </a>
 
-        <!-- 1. Buscador posicionado em cima dos 6 botões -->
-        <section class="books-toolbar" aria-label="Buscar apostilas">
-          <label class="books-search">
-            <svg class="books-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-            <input id="books-search-input" type="search" placeholder="Buscar tema, subárea ou área médica..." autocomplete="off" aria-label="Buscar apostilas">
-          </label>
-          <span class="books-search-count" id="books-search-count">Carregando apostilas...</span>
-        </section>
-
         <!-- 2. Hall com os 6 botões das Grandes Áreas -->
         <section class="books-hall-section" aria-label="Hall de Áreas Médicas">
           <div class="books-hall-head">
@@ -67,9 +58,25 @@
               <span class="books-hall-eyebrow">Grandes Áreas Médicas</span>
               <h2 class="books-hall-title">Selecione uma área para navegar</h2>
             </div>
-            <button type="button" class="books-hall-meta-btn is-active" id="hall-all-btn" aria-pressed="true">Ver todas as áreas</button>
           </div>
           <div class="hall-grid" id="hall-grid" role="group" aria-label="6 Grandes Áreas da Medicina"></div>
+        </section>
+      </section>
+
+      <!-- Biblioteca exclusiva da área selecionada -->
+      <section class="books-page" id="books-library-view" aria-label="Biblioteca da área médica" hidden>
+        <button type="button" class="luria-back-button" id="books-back-hall" aria-label="Voltar ao hall das áreas médicas">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span>Voltar às áreas médicas</span>
+        </button>
+
+        <!-- 1. Buscador posicionado em cima dos 6 botões -->
+        <section class="books-toolbar" aria-label="Buscar apostilas">
+          <label class="books-search">
+            <svg class="books-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input id="books-search-input" type="search" placeholder="Buscar temas ou subáreas desta área..." autocomplete="off" aria-label="Buscar apostilas">
+          </label>
+          <span class="books-search-count" id="books-search-count">Carregando apostilas...</span>
         </section>
 
         <!-- Banner de Filtro Ativo -->
@@ -78,17 +85,8 @@
             <strong id="active-banner-title">Área selecionada</strong>
             <small id="active-banner-subtitle">Exibindo apostilas agrupadas por subáreas.</small>
           </div>
-          <button type="button" class="banner-clear-btn" id="clear-active-area">Ver todas as áreas ✕</button>
+          <button type="button" class="banner-clear-btn" id="clear-active-area">← Voltar ao hall</button>
         </div>
-
-        <!-- Seção: Mais Recentes -->
-        <section class="library-section" id="recent-section">
-          <div class="library-section-head">
-            <div><span class="library-section-eyebrow">Destaques</span><h2>Apostilas Recentes</h2></div>
-            <small id="recent-count"></small>
-          </div>
-          <div class="books-row" id="recent-grid"></div>
-        </section>
 
         <!-- Seção: Biblioteca Completa Agrupada por Subáreas -->
         <section class="library-section">
@@ -107,7 +105,7 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js?v=auth4"></script>
 <script src="/assets/js/app.js?v=20261026-checklist8"></script>
-  <script src="/assets/js/apostilas-app.js?v=20261025-hall3"></script>
+  <script src="/assets/js/apostilas-app.js?v=20261028-area-flow1"></script>
   <script src="/assets/js/study-mode.js?v=20261007-taxonomy5"></script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
   <script src="/assets/js/cronograma-base-data.js?v=20261014"></script>

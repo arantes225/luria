@@ -37,6 +37,7 @@
     const { width, height, data } = imageData;
     const inkStrength = new Float32Array(width * height);
     const bgLuminance = new Float32Array(width);
+    const bgLuminanceRows = new Float32Array(height);
 
     // 1. Estimar luminância de fundo por coluna (mediana aproximada/percentil 75) para compensar sombras suaves
     for (let x = 0; x < width; x++) {
@@ -52,6 +53,24 @@
       bgLuminance[x] = countBright > 0 ? (sumBright / countBright) : 235;
     }
 
+    // A single background estimate per column does not compensate the common
+    // phone-photo case where a hand/cellphone casts a horizontal shadow over
+    // only part of the sheet. Combine independent row and column estimates so
+    // the ink threshold follows smooth two-dimensional illumination changes.
+    for (let y = 0; y < height; y++) {
+      let sumBright = 0, countBright = 0;
+      for (let x = 0; x < width; x += 2) {
+        const idx = (y * width + x) * 4;
+        const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
+        if (luma > 125) {
+          sumBright += luma;
+          countBright++;
+        }
+      }
+      bgLuminanceRows[y] = countBright > 0 ? (sumBright / countBright) : 235;
+    }
+
+    let coloredGridPixelCount = 0;
     // 2. Separar tinta escura acromática da grade colorida (vermelha/rosa/laranja/verde) e do fundo
     for (let y = 0; y < height; y++) {
       for (let x = 0; x < width; x++) {
@@ -59,19 +78,88 @@
         const r = data[idx], g = data[idx + 1], b = data[idx + 2];
         const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
 
-        const localBg = bgLuminance[x];
+        const localBg = (bgLuminance[x] + bgLuminanceRows[y]) * 0.5;
         const contrast = Math.max(0, localBg - luma);
 
         // Penalizar cor saturada (grade vermelha/rosa tem R >> G, B)
-        // Linhas de grade milimetrada vermelha/laranja possuem luminância intermediária/alta (luma > 85)
-        // Se a luma for escura (luma <= 85), trata-se de tinta escura do traçado passando sobre a grade!
         const chromaSpread = Math.max(Math.abs(r - g), Math.abs(r - b), Math.abs(g - b));
-        const isColoredGrid = (luma > 85) && ((r - b > 34) || (chromaSpread > 48 && luma > 95));
+        const isColoredGrid = (r - b > 38) || (chromaSpread > 55 && luma > 95) ||
+          (r - g > 18 && r - b > 8 && r > g * 1.10 && luma > 95);
+        if (isColoredGrid) coloredGridPixelCount++;
 
-        if (!isColoredGrid && luma < Math.min(168, localBg - 28)) {
-          inkStrength[y * width + x] = Math.min(1.0, contrast / 150);
+        // Faded thermal printouts and monochrome scans often have traces well
+        // above luma 165. Contrast to the local paper is more reliable than a
+        // fixed black threshold; the later long-line suppression removes a
+        // grayscale grid that also passes this adaptive gate.
+        if (!isColoredGrid && contrast >= 20 && luma < Math.min(218, localBg - 18)) {
+          // Keep the full contrast range. Saturating at ~125 levels made a
+          // dark grey grid indistinguishable from genuinely black waveform
+          // ink in phone photos, so the tracker could confidently follow the
+          // paper instead of the ECG.
+          inkStrength[y * width + x] = Math.min(1.0, contrast / 235);
         } else {
           inkStrength[y * width + x] = 0;
+        }
+      }
+    }
+
+    // Monochrome photographs can make the paper grid achromatic. In that
+    // case a fixed contrast gate admits thousands of grey grid pixels and the
+    // tracker sees a different "curve" on almost every row. Detect that dense
+    // regime and retain only the darkest 12% of candidate ink. Sparse/faded
+    // ECGs keep the permissive threshold above.
+    let inkPixelCount = 0;
+    const strengthHistogram = new Uint32Array(64);
+    for (let i = 0; i < inkStrength.length; i++) {
+      const strength = inkStrength[i];
+      if (strength <= 0) continue;
+      inkPixelCount++;
+      strengthHistogram[Math.min(63, Math.floor(strength * 63))]++;
+    }
+    const rawInkDensity = inkPixelCount / Math.max(1, width * height);
+    let denseInkFloor = 0;
+    if (rawInkDensity > 0.08 && inkPixelCount > 0 && coloredGridPixelCount < width * height * 0.015) {
+      const target = inkPixelCount * 0.88;
+      let cumulative = 0;
+      for (let bin = 0; bin < strengthHistogram.length; bin++) {
+        cumulative += strengthHistogram[bin];
+        if (cumulative >= target) {
+          denseInkFloor = Math.min(0.86, Math.max(0.58, bin / 63));
+          break;
+        }
+      }
+      for (let i = 0; i < inkStrength.length; i++) {
+        if (inkStrength[i] > 0 && inkStrength[i] < denseInkFloor) inkStrength[i] = 0;
+      }
+    }
+
+    // Suppress long straight grayscale grid lines. Color is insufficient for
+    // black-and-white scans, but grid lines occupy most of a complete row or
+    // column while an ECG trace normally does not. Only reduce their weight;
+    // intersections with genuine dark ink remain available to the tracker.
+    const rowInk = new Uint32Array(height);
+    const colInk = new Uint32Array(width);
+    for (let y = 0; y < height; y++) {
+      for (let x = 0; x < width; x++) {
+        if (inkStrength[y * width + x] >= 0.14) {
+          rowInk[y]++;
+          colInk[x]++;
+        }
+      }
+    }
+
+    const longRows = new Uint8Array(height);
+    const longCols = new Uint8Array(width);
+    for (let y = 0; y < height; y++) longRows[y] = rowInk[y] > width * 0.62 ? 1 : 0;
+    for (let x = 0; x < width; x++) longCols[x] = colInk[x] > height * 0.62 ? 1 : 0;
+    for (let y = 0; y < height; y++) {
+      for (let x = 0; x < width; x++) {
+        // Preserve genuinely dark, long iso-electric ECG segments. A gray
+        // grid is low-contrast; a printed black trace remains strong even if
+        // it happens to occupy much of one row.
+        const index = y * width + x;
+        if ((longRows[y] || longCols[x]) && inkStrength[index] < 0.55) {
+          inkStrength[index] *= 0.08;
         }
       }
     }
@@ -107,11 +195,29 @@
       }
     }
 
+    // In full-sheet captures the left edge of every proposed lead cell may
+    // include a lead label or a calibration rectangle, both strong false
+    // "waves". Exclude this prefix from signal tracing only; keep source
+    // photograph untouched and preserve the omitted samples as missing.
+    if (options.maskPrintedHeader === true) {
+      const prefix = Math.min(Math.floor(width * 0.12), Math.max(0, width - 30));
+      for (let y = 0; y < height; y++) {
+        for (let x = 0; x < prefix; x++) {
+          const index = y * width + x;
+          inkStrength[index] = 0;
+          textMask[index] = 1;
+        }
+      }
+    }
+
     return {
       inkStrength,
       textMask,
       bgLuminance,
-      prelimBaselineY: prelimY
+      bgLuminanceRows,
+      prelimBaselineY: prelimY,
+      rawInkDensity: Number(rawInkDensity.toFixed(4)),
+      denseInkFloor: Number(denseInkFloor.toFixed(3))
     };
   }
 
@@ -198,149 +304,99 @@
       columnClusters[x] = validClusters;
     }
 
-    // Programação Dinâmica (Viterbi com Forward-Trellis e Backtracking)
-    // Constrói o caminho ótimo global entre os clusters de tinta através das colunas.
+    // Programação Dinâmica (Viterbi) para escolher o caminho global entre
+    // os clusters. The former implementation was greedy (only `prevY`), so a
+    // single grid/text pixel could divert every following column. Keeping a
+    // small beam of complete paths makes the decision reversible.
     const rawY = new Float32Array(width).fill(NaN);
     const validMask = new Uint8Array(width);
     const trackingErrors = [];
 
-    // Estruturas de DP Trellis por coluna
-    const dpCost = new Array(width);
-    const dpParent = new Array(width);
-    const validColsList = [];
-    let lastValidX = null;
-
+    const statesByColumn = new Array(width);
+    let previousStates = [];
     for (let x = 0; x < width; x++) {
-      const candidates = columnClusters[x];
-      if (!candidates || candidates.length === 0) {
-        continue;
-      }
-      validColsList.push(x);
-      dpCost[x] = new Float32Array(candidates.length);
-      dpParent[x] = new Int32Array(candidates.length).fill(-1);
-
-      if (lastValidX === null) {
-        // Primeira coluna com tinta
-        for (let cIdx = 0; cIdx < candidates.length; cIdx++) {
-          const c = candidates[cIdx];
-          dpCost[x][cIdx] = Math.abs(c.yCenter - prelimBaselineY) * 0.30 - c.weight * 2.5;
+      const candidates = columnClusters[x] || [];
+      const states = [];
+      for (let ci = 0; ci < candidates.length; ci++) {
+        const c = candidates[ci];
+        const darknessReward = Math.min(9, c.weight * 2.2 + c.maxW * 2.5);
+        const baselineCost = Math.abs(c.yCenter - prelimBaselineY) * 0.045;
+        let bestCost = baselineCost - darknessReward;
+        let bestPrev = -1;
+        if (previousStates.length) {
+          bestCost = Infinity;
+          for (let pi = 0; pi < previousStates.length; pi++) {
+            const p = previousStates[pi];
+            const dy = Math.abs(c.yCenter - p.y);
+            // A vertical cluster can physically connect a QRS jump. Penalize
+            // only the distance not covered by that ink segment.
+            const connectedJump = Math.max(0, dy - c.span * 0.8);
+            // Dark grid intersections can be locally stronger than the ECG.
+            // Make an unsupported jump substantially more expensive, while a
+            // genuinely connected near-vertical QRS remains discounted by
+            // the cluster span above.
+            const transition = connectedJump * 0.75 + Math.min(dy, height * 0.2) * 0.05;
+            const cost = p.cost + transition + baselineCost - darknessReward;
+            if (cost < bestCost) { bestCost = cost; bestPrev = pi; }
+          }
         }
-      } else {
-        const prevCandidates = columnClusters[lastValidX];
-        const dx = x - lastValidX;
+        states.push({ cost: bestCost, prev: bestPrev, cluster: c, y: c.yCenter });
+      }
+      statesByColumn[x] = states;
+      previousStates = states;
+    }
 
-        for (let cIdx = 0; cIdx < candidates.length; cIdx++) {
-          const c = candidates[cIdx];
-          let bestCost = Infinity;
-          let bestParentIdx = -1;
-
-          for (let pIdx = 0; pIdx < prevCandidates.length; pIdx++) {
-            const p = prevCandidates[pIdx];
-            // Distância vertical considerando sobreposição de segmento (span)
-            let dy = 0;
-            if (c.yEnd < p.yStart) {
-              dy = p.yStart - c.yEnd;
-            } else if (p.yEnd < c.yStart) {
-              dy = c.yStart - p.yEnd;
+    // Backtrack each contiguous run (gaps intentionally stay missing).
+    let runEnd = width - 1;
+    while (runEnd >= 0) {
+      while (runEnd >= 0 && statesByColumn[runEnd].length === 0) runEnd--;
+      if (runEnd < 0) break;
+      let runStart = runEnd;
+      while (runStart > 0 && statesByColumn[runStart - 1].length > 0) runStart--;
+      let stateIndex = 0;
+      for (let i = 1; i < statesByColumn[runEnd].length; i++) {
+        if (statesByColumn[runEnd][i].cost < statesByColumn[runEnd][stateIndex].cost) stateIndex = i;
+      }
+      for (let x = runEnd; x >= runStart; x--) {
+        const state = statesByColumn[x][stateIndex] || statesByColumn[x][0];
+        const c = state.cluster;
+        const prevY = x > runStart && state.prev >= 0
+          ? statesByColumn[x - 1][state.prev]?.y
+          : null;
+        const nextY = x < runEnd && validMask[x + 1] ? rawY[x + 1] : null;
+        let chosenY = c.yCenter;
+        // Normal print thickness is commonly 2-4 px after downscaling. Treat
+        // only substantially taller segments as a near-vertical QRS stroke;
+        // otherwise alternating top/bottom edges creates artificial jitter.
+        if (c.span >= Math.max(5, height * 0.04)) {
+          const reference = Number.isFinite(nextY) ? nextY : prevY;
+          if (Number.isFinite(reference)) {
+            // Enter a steep stroke through the end that is actually connected
+            // to the neighbouring sample. Choosing the farthest end turns a
+            // single vertical grid line into a false full-height QRS spike.
+            const topDistance = Math.abs(c.yStart - reference);
+            const bottomDistance = Math.abs(c.yEnd - reference);
+            if (reference >= c.yStart && reference <= c.yEnd) {
+              chosenY = reference;
             } else {
-              dy = 0; // segmentos se conectam verticalmente
-            }
-
-            const jumpCost = (Math.abs(c.yCenter - p.yCenter) * 1.05 + dy * 0.5) / Math.sqrt(dx);
-            const baseCost = Math.abs(c.yCenter - prelimBaselineY) * 0.20;
-            const nodeReward = -c.weight * 2.5;
-            const transCost = dpCost[lastValidX][pIdx] + jumpCost + baseCost + nodeReward;
-
-            if (transCost < bestCost) {
-              bestCost = transCost;
-              bestParentIdx = pIdx;
+              chosenY = topDistance <= bottomDistance ? c.yStart + 0.5 : c.yEnd - 0.5;
             }
           }
-
-          dpCost[x][cIdx] = bestCost;
-          dpParent[x][cIdx] = bestParentIdx;
         }
+        rawY[x] = chosenY;
+        validMask[x] = 1;
+        stateIndex = state.prev >= 0 ? state.prev : 0;
       }
-      lastValidX = x;
+      runEnd = runStart - 1;
     }
 
-    // Backtracking global a partir da última coluna válida
-    const chosenClusterMap = new Map();
-    if (lastValidX !== null && dpCost[lastValidX]) {
-      let bestTerminalIdx = 0;
-      let minTerminalCost = dpCost[lastValidX][0];
-      for (let k = 1; k < dpCost[lastValidX].length; k++) {
-        if (dpCost[lastValidX][k] < minTerminalCost) {
-          minTerminalCost = dpCost[lastValidX][k];
-          bestTerminalIdx = k;
-        }
+    for (let x = 1; x < width; x++) {
+      if (!validMask[x] || !validMask[x - 1]) continue;
+      const delta = Math.abs(rawY[x] - rawY[x - 1]);
+      const cluster = statesByColumn[x].find(s => Math.abs(s.y - rawY[x]) < 1)?.cluster;
+      if (delta > height * 0.48 && (!cluster || cluster.span < delta * 0.5)) {
+        trackingErrors.push({ x, type: "discontinuity_jump", deltaPx: Number(delta.toFixed(2)) });
       }
-
-      let currX = lastValidX;
-      let currIdx = bestTerminalIdx;
-      // Percorre os antecessores da direita para a esquerda
-      for (let colIdx = validColsList.length - 1; colIdx >= 0; colIdx--) {
-        const x = validColsList[colIdx];
-        if (x !== currX) continue;
-
-        const cand = columnClusters[currX][currIdx];
-        chosenClusterMap.set(currX, cand);
-
-        const parentIdx = dpParent[currX][currIdx];
-        if (parentIdx >= 0 && colIdx > 0) {
-          currX = validColsList[colIdx - 1];
-          currIdx = parentIdx;
-        } else {
-          break;
-        }
-      }
-    }
-
-    // Segundo passe: calcular a coordenada sub-pixel de Y preservando a morfologia contínua do QRS
-    const sortedChosenCols = Array.from(chosenClusterMap.keys()).sort((a, b) => a - b);
-    for (let i = 0; i < sortedChosenCols.length; i++) {
-      const x = sortedChosenCols[i];
-      const cluster = chosenClusterMap.get(x);
-      const prevX = (i > 0) ? sortedChosenCols[i - 1] : null;
-      const nextX = (i < sortedChosenCols.length - 1) ? sortedChosenCols[i + 1] : null;
-
-      const prevCluster = prevX !== null ? chosenClusterMap.get(prevX) : null;
-      const nextCluster = nextX !== null ? chosenClusterMap.get(nextX) : null;
-
-      const prevY = prevCluster ? prevCluster.yCenter : prelimBaselineY;
-      const nextY = nextCluster ? nextCluster.yCenter : prelimBaselineY;
-
-      let chosenY = cluster.yCenter;
-
-      if (cluster.span >= 5) {
-        // Traço vertical extenso (típico de complexos QRS rápidos)
-        const isLocalPeak = (prevY > cluster.yStart + 2) && (nextY > cluster.yStart + 2);
-        const isLocalValley = (prevY < cluster.yEnd - 2) && (nextY < cluster.yEnd - 2);
-
-        if (isLocalPeak) {
-          chosenY = cluster.yStart + 0.5;
-        } else if (isLocalValley) {
-          chosenY = cluster.yEnd - 0.5;
-        } else {
-          const slopeTargetY = (prevY + nextY) / 2;
-          chosenY = Math.max(cluster.yStart + 0.5, Math.min(cluster.yEnd - 0.5, slopeTargetY));
-        }
-      }
-
-      // Detectar saltos anômalos de descontinuidade
-      if (prevX !== null && validMask[prevX] === 1) {
-        const deltaY = Math.abs(chosenY - rawY[prevX]);
-        if (deltaY > height * 0.48 && cluster.span < deltaY * 0.5) {
-          trackingErrors.push({
-            x,
-            type: "discontinuity_jump",
-            deltaPx: Number(deltaY.toFixed(2))
-          });
-        }
-      }
-
-      rawY[x] = chosenY;
-      validMask[x] = 1;
     }
 
     return {
@@ -610,7 +666,7 @@
     const calComponent = (calSource === "measured" || calSource === "user_confirmed") ? 10 : (calSource === "assumed" ? 5 : 0);
     const technicalIndex = Math.round(covComponent + alignComponent + jumpPenalty + calComponent);
 
-    if (calSource === "unknown" || identity.status === "unknown" || identity.status === "ambiguous" ||
+    if (calSource === "unknown" || !identity.verified || identity.status === "unknown" || identity.status === "ambiguous" ||
         identity.status === "conflicting" || identity.anomalies.some(a => a.code === "duplicate_label") ||
         (Array.isArray(extractionResult.validMask) && extractionResult.validMask.length !== extractionResult.signal.length)) {
       return {
@@ -646,6 +702,11 @@
       reasons.push("Rótulo confirmado manualmente; a confirmação humana não substitui evidência automática de OCR.");
     }
 
+    if (extractionResult.denseInkPreview === true) {
+      needsReview = true;
+      reasons.push("Tinta/grade densa: curva disponibilizada apenas para conferência humana.");
+    }
+
     if (needsReview) {
       return {
         status: AUDIT_STATUS.REVIEW_REQUIRED,
@@ -653,7 +714,7 @@
         technicalIndexFormula: "40*Cobertura + 30*AlinhamentoPixel + 20*Continuidade + 10*Calibracao (Índice técnico estrutural; não é porcentagem de fidelidade clínica)",
         reasons,
         limitations,
-        allowsClinicalMeasurement: calSource === "measured" || calSource === "user_confirmed",
+        allowsClinicalMeasurement: extractionResult.denseInkPreview !== true && (calSource === "measured" || calSource === "user_confirmed"),
         allowsAiModelInput: false
       };
     }
@@ -725,6 +786,36 @@
     const tracked = trackSignalCurve(imageData, prep, options);
     const continuityRatio = tracked.columnsWithInk / width;
 
+    // A lead crop that is almost entirely dark is usually dominated by
+    // shadows, folds, text, or a very dense grid. Live automatic capture
+    // must reject it. A user-selected photograph may continue *only* as an
+    // explicitly quarantined preview, so the person can inspect/recapture it
+    // instead of receiving the misleading "no traces found" dead end.
+    const denseInkPreview = prep.rawInkDensity > 0.25 && options.allowDensePreview === true;
+    if (prep.rawInkDensity > 0.25 && !denseInkPreview) {
+      const failDense = {
+        isValid: false,
+        leadIdentity,
+        regionBounds: regionBounds || { x: 0, y: 0, width, height },
+        signal: null,
+        curveCoordinatesPx: [],
+        validMask: Array.from(tracked.validMask),
+        interpolatedMask: [],
+        missingSegments: [],
+        trackingStats: { overlapRatio: tracked.overlapRatio, hasMultipleCurves: tracked.hasMultipleCurves },
+        calibration: calibration || { calibrationSource: "unknown", measurementsAllowed: false },
+        recoveredDurationSeconds: null,
+        effectiveResolutionHz: null,
+        confidence: 0.1,
+        continuity: Number(continuityRatio.toFixed(3)),
+        limitations: ["Densidade de tinta incompatível com uma derivação isolada; grade, sombra ou texto dominam a imagem."],
+        provenance,
+        message: "A imagem está visualmente densa demais para separar o traçado com segurança. Não foi desenhada uma curva; recapture com luz uniforme e sem reflexo."
+      };
+      failDense.audit = auditExtractedLead(failDense);
+      return failDense;
+    }
+
     // Verificar excesso de colunas densas (ex.: bloco de texto, listras verticais grossas ou manchas)
     if (tracked.excessiveThicknessColumns > width * 0.18) {
       const failText = {
@@ -749,8 +840,12 @@
       return failText;
     }
 
-    // Verificar sobreposição de duas derivações na mesma janela
-    if (tracked.hasMultipleCurves) {
+    // Verificar sobreposição de duas derivações na mesma janela. A opção de
+    // prévia serve apenas para casos limítrofes; uma região em que mais da
+    // metade das colunas contém curvas concorrentes é incompatível com uma
+    // extração fiel e nunca deve produzir uma linha vermelha convincente.
+    const catastrophicOverlap = tracked.overlapRatio > 0.55;
+    if (tracked.hasMultipleCurves && (!options.allowOverlappingPreview || catastrophicOverlap)) {
       const failOverlap = {
         isValid: false,
         hasMultipleCurves: true,
@@ -769,7 +864,9 @@
         continuity: Number(continuityRatio.toFixed(3)),
         limitations: ["Região contém duas ou mais curvas simultâneas sobrepostas."],
         provenance,
-        message: "Foram detectadas múltiplas curvas sobrepostas nesta região. Recapture enquadrando uma derivação por vez."
+        message: catastrophicOverlap
+          ? "A grade, sombras ou outros traçados dominaram esta região. Não foi desenhada uma curva para evitar uma extração falsa. Recapture com a folha plana, bem iluminada e preenchendo a moldura."
+          : "Foram detectadas múltiplas curvas sobrepostas nesta região. Recapture enquadrando uma derivação por vez."
       };
       failOverlap.audit = auditExtractedLead(failOverlap);
       return failOverlap;
@@ -810,30 +907,9 @@
       }
     }
     validYList.sort((a, b) => a - b);
-    const globalBaselineY = validYList.length > 0
+    const baselineY = validYList.length > 0
       ? validYList[Math.floor(validYList.length / 2)]
       : height / 2;
-
-    // Estimativa robusta de inclinação linear (Tilt / Skew da folha)
-    // Coleta pontos isoelétricos próximos à mediana (< 6 px de desvio) para excluir picos de QRS
-    let sumX = 0, sumY = 0, sumXX = 0, sumXY = 0, nIso = 0;
-    const xMid = width / 2;
-    for (let x = 0; x < width; x++) {
-      const y = gapResult.finalY[x];
-      if (Number.isFinite(y) && Math.abs(y - globalBaselineY) <= 6) {
-        const dx = x - xMid;
-        sumX += dx;
-        sumY += (y - globalBaselineY);
-        sumXX += dx * dx;
-        sumXY += dx * (y - globalBaselineY);
-        nIso++;
-      }
-    }
-
-    const tiltSlope = (nIso >= 15 && sumXX > 100) ? (sumXY / sumXX) : 0;
-    // Só aplica compensação se houver inclinação perceptível (|tiltSlope| >= 0.006 e < 0.20)
-    const hasTilt = Math.abs(tiltSlope) >= 0.006 && Math.abs(tiltSlope) < 0.20;
-    const baselineY = globalBaselineY;
 
     // Determinar Calibração Real vs Desconhecida
     let calInfo = calibration;
@@ -860,8 +936,7 @@
     for (let x = 0; x < width; x++) {
       const yPx = gapResult.finalY[x];
       if (Number.isFinite(yPx)) {
-        const baselineAtX = hasTilt ? (globalBaselineY + tiltSlope * (x - xMid)) : globalBaselineY;
-        const mv = Number(((baselineAtX - yPx) / effectivePixelsPerMv).toFixed(4));
+        const mv = Number(((baselineY - yPx) / effectivePixelsPerMv).toFixed(4));
         signalWithNulls[x] = mv;
         numericSignalForCompat.push(mv);
         curveCoordinatesPx[x] = {
@@ -917,6 +992,14 @@
     let recoveredDurationSeconds = null;
     let effectiveResolutionHz = null;
     const limitations = [];
+
+    if (denseInkPreview) {
+      limitations.push("Região com tinta/grade densa: curva apresentada somente como prévia para conferência humana; medições e IA permanecem bloqueadas.");
+    }
+
+    if (tracked.hasMultipleCurves) {
+      limitations.push("Há múltiplos agrupamentos de tinta na região; o traçado é apenas uma prévia e exige conferência/recaptura.");
+    }
 
     if (msPerPixel && msPerPixel > 0) {
       const totalSpanSeconds = Number(((width * msPerPixel) / 1000).toFixed(3));
@@ -975,6 +1058,7 @@
       validDurationSeconds: msPerPixel ? Number(((gapResult.finalValidMask.filter(v => v === 1).length * msPerPixel) / 1000).toFixed(3)) : null,
       baselineY: Number(baselineY.toFixed(2)),
       peakToPeakMv: morph.peakToPeakMv,
+      denseInkPreview,
       confidence: Number(Math.min(0.99, continuityRatio * 0.7 + meanInkScore * 0.3).toFixed(3)),
       continuity: Number(continuityRatio.toFixed(3)),
       limitations,
@@ -1059,10 +1143,8 @@
     extractionResult.validDurationSeconds = Number((validSamplesCount * msPerPixel / 1000).toFixed(3));
     extractionResult.effectiveResolutionHz = Number((1000 / msPerPixel).toFixed(1));
     extractionResult.resampledDigitalRateHz = null;
-    const normalizedCal = (global.LuriaEcgContracts && global.LuriaEcgContracts.normalizeCalibration)
-      ? global.LuriaEcgContracts.normalizeCalibration(calibration)
-      : { ...calibration, pixelsPerMv, msPerPixel, measurementsAllowed: calibration?.calibrationSource === "measured" || calibration?.calibrationSource === "user_confirmed" };
-    extractionResult.calibration = normalizedCal;
+    extractionResult.calibration = { ...calibration, pixelsPerMv, msPerPixel,
+      measurementsAllowed: calibration.calibrationSource === "measured" || calibration.calibrationSource === "user_confirmed" };
     let min = Infinity, max = -Infinity;
     for (const value of validValues) { if (value < min) min = value; if (value > max) max = value; }
     extractionResult.peakToPeakMv = validValues.length > 0 ? Number((max - min).toFixed(3)) : null;

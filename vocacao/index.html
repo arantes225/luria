@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#0A2342">
-  <title>Mapa de interesses · LURIA</title>
+  <title>Qual residência médica escolher? · LURIA</title>
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
   <link rel="stylesheet" href="/assets/css/education-pages-v2.css?v=1">
   <link rel="stylesheet" href="/assets/css/curriculo.css?v=1">
-  <link rel="stylesheet" href="/assets/css/vocacao.css?v=2">
+  <link rel="stylesheet" href="/assets/css/vocacao.css?v=20261029-residencias-v1">
   <link rel="canonical" href="/vocacao/">
   <script src="/assets/js/ui-routes.js?v=1"></script>
 </head>
@@ -36,7 +36,7 @@
         <section class="luria-page-spotlight" aria-label="Mapa de Interesses">
           <div class="luria-page-spotlight-copy">
             <strong>Mapa de Interesses</strong>
-            <small class="luria-page-spotlight-helper">Explore sua vocação e descubra afinidades com diferentes especialidades médicas através do modelo RIASEC.</small>
+            <small class="luria-page-spotlight-helper">Explore diferentes formas de exercer a Medicina com perguntas claras sobre atividades, pacientes e rotina.</small>
           </div>
         </section>
 
@@ -51,47 +51,56 @@
         </div>
 
         <section class="voc-hero" aria-labelledby="voc-title">
-          <p class="voc-eyebrow">ORIENTAÇÃO DE CARREIRA</p>
-          <h1 id="voc-title">Um mapa para explorar sua prática médica</h1>
-          <p>Reflita sobre atividades que despertam seu interesse e veja quais áreas de acesso direto compartilham esse perfil. Não existe uma resposta certa nem uma especialidade “ideal”.</p>
-          <div class="voc-meta"><span>36 afirmações</span><span>6 dimensões de interesse</span><span>~7 minutos</span></div>
+          <p class="voc-eyebrow">ESCOLHA DA RESIDÊNCIA MÉDICA</p>
+          <h1 id="voc-title">Qual residência médica combina com você?</h1>
+          <p>Explore seus interesses em situações clínicas e rotinas reais. Ao final, veja até três residências médicas convencionais — de acesso direto ou com pré-requisito — com justificativas personalizadas.</p>
+          <div class="voc-meta"><span>29 cenários de trabalho</span><span>3 etapas com aprofundamento</span><span>~12–15 minutos</span></div>
         </section>
         <section id="voc-intro" class="voc-panel" aria-labelledby="voc-start-title">
           <div class="voc-panel-copy">
             <p class="voc-kicker">COMO RESPONDER</p>
-            <h2 id="voc-start-title">Pense no que você gostaria de fazer</h2>
-            <p>Para cada atividade, indique quanto ela lhe interessaria no trabalho médico, mesmo que ainda não tenha tido oportunidade de experimentá-la. Avalie interesse, não habilidade, prestígio ou chance de aprovação.</p>
-            <div class="voc-scale-preview" aria-label="Escala de respostas de 1 a 5"><span>1 · Nada</span><span>2 · Pouco</span><span>3 · Talvez</span><span>4 · Muito</span><span>5 · Bastante</span></div>
+            <h2 id="voc-start-title">Descubra quais residências vale a pena explorar</h2>
+            <p>Em cada situação, escolha a atividade que mais gostaria de realizar. Você pode marcar uma segunda preferência ou responder que ainda não sabe. O teste se adapta depois da primeira etapa, investiga os desafios das residências e não depende de já ter realizado procedimentos.</p>
+            <p class="voc-scale-help">As três etapas investigam tarefas, temas clínicos, dificuldades e prioridades. Você pode revisar respostas; se alterar as primeiras escolhas, as perguntas de aprofundamento poderão mudar. O progresso fica salvo apenas nesta aba.</p>
             <button id="voc-start" class="voc-button voc-button-primary" type="button">Começar o questionário <span aria-hidden="true">→</span></button>
           </div>
           <aside class="voc-method-note">
             <strong>Como o resultado é calculado</strong>
-            <p>As respostas formam seis pontuações RIASEC — Realista, Investigativa, Artística, Social, Empreendedora e Convencional — um modelo de interesses profissionais com pesquisa psicométrica publicada.</p>
-            <p>As atividades foram adaptadas para contextos médicos. Esta adaptação e a correspondência entre dimensões e especialidades são exploratórias; não foram validadas como teste clínico nem como preditoras de satisfação ou desempenho na residência.</p>
-            <a href="https://www.onetcenter.org/reports/IP_Manual.html" target="_blank" rel="noopener noreferrer">Manual técnico do O*NET Interest Profiler ↗</a>
+            <p>A primeira etapa investiga seu estilo profissional. Em seguida, perguntas adicionais são escolhidas conforme suas respostas, incluindo conteúdo clínico e compromissos difíceis da rotina. O relatório recupera exemplos concretos das suas escolhas.</p>
+            <p>Este é um instrumento exploratório criado pela LURIA. O resultado não é diagnóstico, avaliação psicológica validada nem previsão de satisfação, desempenho ou aprovação na residência.</p>
+            <a href="https://portal.cfm.org.br/buscar-normas-cfm-e-crm/" target="_blank" rel="noopener noreferrer">Consultar normas do CFM ↗</a>
           </aside>
+          <details id="voc-catalogue" class="voc-catalogue">
+            <summary>Consultar residências médicas incluídas na avaliação</summary>
+            <div class="voc-catalogue-body">
+              <p>Seleção editorial de residências médicas convencionais. Inclui programas de acesso direto e especialidades que exigem residência prévia. Não inclui áreas de atuação sem residência correspondente nem todas as especialidades reconhecidas pelo CFM.</p>
+              <label for="voc-search">Pesquisar residência ou pré-requisito</label>
+              <div class="voc-catalogue-filters">
+                <input id="voc-search" type="search" placeholder="Ex.: pediatria, cirurgia, cardio" autocomplete="off">
+                
+              </div>
+              <p id="voc-catalog-count" class="voc-scale-help" aria-live="polite"></p>
+              <div id="voc-catalog-items" class="voc-catalog-items"></div>
+            </div>
+          </details>
         </section>
         <section id="voc-quiz" class="voc-panel" hidden aria-labelledby="voc-question">
           <div class="voc-quiz-head"><div><p id="voc-dimension" class="voc-kicker"></p><h2 id="voc-question" tabindex="-1"></h2></div><span id="voc-count" class="voc-count"></span></div>
-          <div class="voc-progress" role="progressbar" aria-label="Progresso do questionário" aria-valuemin="0" aria-valuemax="36" aria-valuenow="0"><span id="voc-progress-fill"></span></div>
-          <p class="voc-scale-help">Quanto interesse essa atividade desperta em você?</p>
-          <div id="voc-options" class="voc-options" role="group" aria-label="Sua resposta">
-            <button class="voc-option" type="button" data-value="1" aria-pressed="false" aria-label="1: Não me interessa"><strong>1</strong><span>Não me interessa</span></button>
-            <button class="voc-option" type="button" data-value="2" aria-pressed="false" aria-label="2: Pouco interesse"><strong>2</strong><span>Pouco interesse</span></button>
-            <button class="voc-option" type="button" data-value="3" aria-pressed="false" aria-label="3: Ainda não sei"><strong>3</strong><span>Ainda não sei</span></button>
-            <button class="voc-option" type="button" data-value="4" aria-pressed="false" aria-label="4: Tenho interesse"><strong>4</strong><span>Tenho interesse</span></button>
-            <button class="voc-option" type="button" data-value="5" aria-pressed="false" aria-label="5: Muito interesse"><strong>5</strong><span>Muito interesse</span></button>
-          </div>
+          <div id="voc-progress" class="voc-progress" role="progressbar" aria-label="Progresso do questionário" aria-valuemin="0" aria-valuemax="29" aria-valuenow="0"><span id="voc-progress-fill"></span></div>
+          <p class="voc-scale-help">Marque sua preferência principal. Se desejar, marque também uma segunda opção.</p>
+          <p id="voc-context" class="voc-scale-help"></p>
+          <div id="voc-options" class="voc-options" role="group" aria-label="Escolha a atividade de sua preferência"></div>
+          <div class="voc-extra-controls"><button id="voc-none" type="button" class="voc-none" aria-pressed="false">Ainda não sei / nenhuma me representa</button><label class="voc-unfamiliar"><input id="voc-unfamiliar" type="checkbox"> Ainda não vivenciei essa situação na prática</label></div>
           <p id="voc-error" class="voc-error" aria-live="polite"></p>
           <div class="voc-nav"><button id="voc-back" class="voc-button voc-button-secondary" type="button">← Anterior</button><button id="voc-next" class="voc-button voc-button-primary" type="button">Próxima →</button></div>
-          <p class="voc-keyboard-hint">Dica: você pode responder com as teclas 1 a 5.</p>
+          <p class="voc-keyboard-hint">Dica: teclas 1–4 marcam sua preferência principal. Segunda preferência é opcional; você pode voltar e revisar.</p>
         </section>
         <section id="voc-results" class="voc-results" hidden aria-labelledby="voc-results-title"></section>
         <section class="voc-sources" aria-label="Fontes e metodologia">
           <details><summary>Fontes, metodologia e limites</summary><div>
-            <p>Modelo de interesses: RIASEC de John Holland, base teórica do O*NET Interest Profiler. O instrumento original possui manual técnico com estudos sobre desenvolvimento de itens, confiabilidade e validade. Este questionário é uma adaptação contextual independente e não deve ser confundido com a versão oficial do O*NET nem com uma avaliação psicológica validada no Brasil.</p>
-            <p>Lista de áreas: catálogo de programas de Residência Médica de acesso direto do ENARE 2026 e normas da CNRM. A oferta efetiva e os requisitos devem ser conferidos no edital vigente de cada instituição.</p>
-            <p><a href="https://www.onetcenter.org/reports/IP_Manual.html" target="_blank" rel="noopener noreferrer">O*NET Interest Profiler Technical Manual</a> · <a href="https://mecnormas.mec.gov.br/pesquisa/detalhar/2129" target="_blank" rel="noopener noreferrer">Normas CNRM no MEC</a> · <a href="https://enare2026.conhecimento.fgv.br/vagas/medica-acesso-direto/" target="_blank" rel="noopener noreferrer">Vagas do ENARE 2026</a></p>
+            <p>Metodologia: 16 cenários iniciais, 10 aprofundamentos selecionados com base nas escolhas e três verificações finais. O estudante pode indicar primeira e segunda preferência, incerteza e falta de experiência. O motor compara sinais de interesse nas dimensões profissionais, considera o conteúdo clínico citado nas escolhas e descreve evidências, possíveis atritos e limitações. O algoritmo não foi validado psicometricamente e não mede competência, personalidade clínica ou probabilidade de satisfação.</p>
+            <p>Escopo: a LURIA recomenda somente residências médicas convencionais selecionadas por curadoria, incluindo subespecialidades clínicas e cirúrgicas com pré-requisito. Homeopatia e Medicina Legal e Perícia Médica foram excluídas desta curadoria, assim como especialidades pouco usuais e áreas de atuação sem residência equivalente. A inclusão não confirma vagas em uma instituição específica. Consulte a CNRM e cada edital para confirmar credenciamento, ingresso, pré-requisitos e duração.</p>
+            <p><a href="https://mecnormas.mec.gov.br/pesquisa/detalhar/2129" target="_blank" rel="noopener noreferrer">Normas da CNRM (acesso e pré-requisitos)</a> · <a href="https://portal.mec.gov.br/sesu-secretaria-de-educacao-superior/apresentacao/30000-uncategorised/71531-matrizes-de-competencias-aprovadas-pela-cnrm" target="_blank" rel="noopener noreferrer">Matrizes de competências</a></p>
           </div></details>
         </section>
       </div>
@@ -100,7 +109,9 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
-  <script defer src="/assets/js/vocacao.js?v=2"></script>
+  <script defer src="/assets/js/vocacao-data.js?v=20261029-residencias-v1"></script>
+  <script defer src="/assets/js/vocacao-engine.js?v=20261029-residencias-v1"></script>
+  <script defer src="/assets/js/vocacao.js?v=20261029-residencias-v1"></script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>

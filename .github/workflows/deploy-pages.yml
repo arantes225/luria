@@ -16,9 +16,10 @@ permissions:
   id-token: write
 
 concurrency:
-  # PR validation must never cancel the production deployment (or the other way around).
+  # PR checks can be superseded, but production uploads must finish before newer deployments.
+  # Otherwise frequent commits cancel GitHub Pages during the final upload.
   group: pages-${{ github.event_name == 'pull_request' && format('pr-{0}', github.event.pull_request.number) || 'deploy' }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   quality:
@@ -37,18 +38,34 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Check JavaScript syntax
         run: node scripts/check-syntax.cjs
+      - name: Test Gestor de Plantões calendar, payments and tax estimates
+        run: node --test tests/shift-manager-v2.test.cjs
+      - name: Verify project Pages routes and asset paths
+        run: node --test tests/pages-base-links.test.cjs
       - name: Guard public-site artifact against internal files
         run: node --test tests/public-artifact-security.test.cjs
+      - name: Verify ECG normal photo and guided scanner remain independent
+        run: node --test --test-isolation=none tests/ecg-normal-photo.test.cjs tests/ecg-photo-perspective.test.cjs tests/ecg-photo-canvas-regression.test.cjs tests/ecg-pwa-capture-isolation.test.cjs tests/ecg-live-paper-gate.test.cjs tests/ecg-lead-assignment-quarantine.test.cjs tests/ecg-provisional-restore.test.cjs tests/ecg-e2e-integration.test.cjs tests/ecg-physionet-benchmark.test.cjs tests/work-ecg-smart-camera.test.cjs
       - name: Check shared CSS and application routes
         run: node scripts/check-css.cjs
       - name: Test CSS ownership and legacy route aliases
         run: node --test tests/css-system.test.cjs tests/ui-routes.test.cjs tests/ui-startup.test.cjs tests/ui-final-refinement.test.cjs
       - name: Validate Aplicar curriculum and exam radar
-        run: node --test tests/curriculo.test.cjs tests/radar.test.cjs tests/pdf-layout-profiles.test.cjs
+        run: node --test tests/curriculo.test.cjs tests/curriculo-pdf-ocr.test.cjs tests/radar.test.cjs tests/pdf-layout-profiles.test.cjs
+      - name: Validate vocational quiz and live theme colors
+        run: node --test tests/vocacao.test.cjs tests/vocacao-ui.test.cjs tests/vocacao-theme.test.cjs
       - name: Check CSP generation
         run: node scripts/sync-csp.cjs
+      - name: Verify Notion connect controls in both libraries
+        run: node --test tests/notion-library-connect.test.cjs
       - name: Validate social room permissions, client behavior and voice authorization
         run: node --test --test-isolation=none tests/social-database.test.cjs tests/social-room-features.test.cjs tests/social-voice-usage.test.cjs tests/social-ui.test.cjs tests/social-voice.test.cjs tests/social-voice-client.test.cjs tests/social-voice-site.test.cjs tests/social-pwa.test.cjs tests/social-production.test.cjs tests/social-group-community.test.cjs tests/social-group-community-ui.test.cjs tests/social-native-activities.test.cjs tests/social-native-activities-ui.test.cjs tests/stage82-ui.test.cjs tests/ui-stage22.test.cjs
+      - name: Verify justified text in apostilas
+        run: node --test tests/apostilas-justified-text.test.cjs
+      - name: Verify typography and colored highlights in apostilas
+        run: node --test tests/apostilas-reading-style.test.cjs
+      - name: Verify page-like reader and chapter navigation
+        run: node --test tests/apostilas-paged-reader.test.cjs
       - name: Audit all apostilas without blocking legacy books
         run: node scripts/audit-apostilas-batch.cjs
       - name: Run release-blocking frontend regressions
@@ -72,7 +89,7 @@ jobs:
       - name: Install locked test dependencies
         run: npm ci --ignore-scripts
       - name: Run outstanding editorial and external PIN tests
-        run: node --test --test-isolation=none tests/apostilas-batch.test.cjs tests/quick-chart-daily-code.test.cjs tests/quick-chart-pairing.test.cjs
+        run: node --test --test-isolation=none tests/apostilas-batch.test.cjs tests/quick-chart-daily-code.test.cjs tests/quick-chart-pairing.test.cjs tests/notes-independent.test.cjs
   deploy:
     if: github.event_name != 'pull_request'
     needs: [quality, historical-regressions]

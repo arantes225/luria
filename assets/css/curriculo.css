@@ -862,3 +862,46 @@ body[data-ui-appearance="dark"] .cv-group {
     gap: 4px;
   }
 }
+
+/* Currículo PDF: arquivo original anexado e acessível em desktop e celular. */
+.cv-pdf-attached {
+  display: grid;
+  gap: 10px;
+  padding: 14px 16px;
+  border: 1px solid var(--color-border-interactive);
+  border-radius: 12px;
+  background: var(--color-primary-subtle);
+  min-width: 0;
+}
+.cv-pdf-attached > span {
+  font-size: 13px;
+  font-weight: 650;
+  color: var(--color-text-primary);
+  overflow-wrap: anywhere;
+}
+.cv-pdf-attached .cv-actions {
+  gap: 8px;
+}
+.cv-page .cv-pdf-attached button {
+  min-height: 38px;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+@media (max-width: 560px) {
+  .cv-pdf-attached .cv-actions > button {
+    flex: 1 1 100%;
+  }
+}
+
+/* UNIFESP R1: escolha de especialidade antes da matriz curricular. */
+.cv-specialty-picker {
+  margin: 14px 0 18px;
+  padding: 16px;
+  border: 1px solid var(--border-color, rgba(24,72,136,.22));
+  border-radius: 14px;
+  background: var(--surface-soft, rgba(24,72,136,.05));
+}
+.cv-specialty-picker .cv-field { display: flex; flex-direction: column; gap: 8px; }
+.cv-specialty-picker .cv-field > span { font-weight: 700; }
+.cv-specialty-picker select { width: 100%; min-height: 48px; font: inherit; border-radius: 9px; }
+.cv-specialty-picker > small { display: block; margin-top: 10px; line-height: 1.5; }

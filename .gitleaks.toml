@@ -4,11 +4,13 @@ title = "LURIA - Gitleaks secret scanning"
 [extend]
 useDefault = true
 
-# Allow only known, non-secret literal values; keep all other default rules.
+# Allow only explicit known public identifiers and nonsecret localStorage keys.
 [allowlist]
-description = "Public Supabase identifiers and non-secret calculator preference key"
+description = "Public identifiers and browser localStorage keys"
 regexTarget = "secret"
 regexes = [
   '''^sb_publishable_[A-Za-z0-9_-]{20,}$''',
-  '''^luria_calc_favorites_v1$'''
+  '''^luria_calc_favorites_v1$''',
+  '''^luria_plantoes_shifts_v1$''',
+  '''^luria_plantoes_institutions_v1$'''
 ]

@@ -10,6 +10,7 @@ module.exports.resources = Object.fromEntries(
   ['cronograma.html', 'cronograma/index.html'].map(page => [page, {scriptSrc: pdfScripts}])
 );
 const jsPdf = 'https://cdn.jsdelivr.net/npm/jspdf@4.2.1/dist/jspdf.umd.min.js';
+// Currículo PDF também usa OCR quando o Lattes foi impresso sem camada de texto.
 // These are the existing Tesseract 5 loader's 5.1.1 runtime paths, including
 // SIMD/non-SIMD and LSTM/legacy variants chosen according to browser support.
 const ocrCore = ['tesseract-core', 'tesseract-core-simd', 'tesseract-core-lstm', 'tesseract-core-simd-lstm']
@@ -24,6 +25,7 @@ const ocrConnect = [
   ...['eng', 'por'].flatMap(language => ['4.0.0', '4.0.0_best_int'].map(model =>
     'https://cdn.jsdelivr.net/npm/@tesseract.js-data/' + language + '/' + model + '/' + language + '.traineddata.gz'))
 ];
+module.exports.resources['aplicar/curriculo/index.html'] = {scriptSrc: [...pdfScripts, ...ocrScripts, jsPdf], connectSrc: ocrConnect, wasm: true};
 for (const page of ['caderno-erros.html', 'caderno-erros/index.html']) {
   module.exports.resources[page] = {scriptSrc: [...ocrScripts, jsPdf], connectSrc: ocrConnect, wasm: true};
 }

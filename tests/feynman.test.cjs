@@ -11,8 +11,9 @@ const edge = read("supabase/functions/professor-alex-gemini/index.ts");
 const migration = read("supabase/migrations/20261026110000_feynman_sessions.sql");
 const learn = read("aprender/index.html");
 
-test("Feynman is a distinct five-minute learning experience in Aprender", () => {
-  assert.match(learn, /href="\/feynman\/"/);
+test("Feynman remains available for review without a separate card in Aprender", () => {
+  assert.doesNotMatch(learn, /href="\/feynman\/"/);
+  assert.doesNotMatch(read("assets/js/ui-navigation-v2.js"), /"\/feynman\/","Ensine para aprender"/);
   assert.match(page, /Você é o professor agora/);
   assert.match(page, /Aluno iniciante/);
   assert.match(page, /Aluno questionador/);
