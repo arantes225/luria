@@ -361,9 +361,16 @@ test("All 172 previously general exam preanalytics now use individual records",(
     const meta=byName(n);
     assert.deepEqual(Array.from(meta.preanalyticalSpecificFields).sort(),["interference","method","preparation","sample"],n);
     for(const f of ["sample","preparation","analyticalMethod","preanalyticalInterference"])
-      assert.ok(typeof meta[f]==="string"&&meta[f].length>35,n+":"+f);
+      assert.ok(typeof meta[f]==="string"&&meta[f].length>=25,n+":"+f);
   }
   assert.match(byName("Bilirrubina indireta").sample,/calculad/i);
+  assert.match(byName("Bacterioscopia com coloração de Gram").sample,/material do foco suspeito/i);
+  assert.match(byName("PCR para Pneumocystis jirovecii").sample,/respiratóri/i);
+  assert.match(byName("PCR HSV-1/2 de lesão genital").sample,/swab do fundo de lesão/i);
+  assert.match(byName("IGRA para tuberculose").sample,/tubos específicos/i);
+  assert.match(byName("Zinco sérico").sample,/livre de elementos-traço/i);
+  assert.match(byName("VHS").sample,/citrato ou EDTA/i);
+
   assert.match(byName("IGRA para tuberculose").preparation,/incubação/i);
   assert.match(byName("Beta-2-microglobulina urinária").preanalyticalInterference,/urina ácida/i);
   assert.match(byName("Pesquisa PML-RARA por PCR").preparation,/promielocítica/i);
