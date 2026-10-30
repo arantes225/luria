@@ -61,6 +61,7 @@ test("photo remains local, user previews original and explicitly processes via t
   assert.match(e.document.getElementById("ecg-normal-photo-details").textContent, /4032 × 3024 px/);
   assert.equal(e.preview.hidden, false);
   assert.equal(calls.length, 0, "no extraction until user confirms");
+  e.document.getElementById("ecg-photo-layout").value = "3x1";
   e.document.getElementById("ecg-normal-photo-process").click();
   await new Promise(resolve => setImmediate(resolve));
   assert.equal(calls.length, 1);
@@ -68,6 +69,7 @@ test("photo remains local, user previews original and explicitly processes via t
   assert.equal(calls[0][1], "normal_photo");
   assert.equal(calls[0][2]?.corners?.length, 4);
   assert.equal(calls[0][2]?.paperSelection, "manual_four_corners");
+  assert.equal(calls[0][2]?.layoutHint, "3x1", "a correção de formato chega ao extrator");
   assert.equal(page.hidden, true);
   assert.ok(e.revoked > 0, "object URL released after confirmation");
   e.dom.window.close();

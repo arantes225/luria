@@ -383,6 +383,84 @@ test("Regressão: pontilhado fino da grade não reduz a escala de milímetro", (
     "60 px por quadrado grande equivale a aproximadamente 12 px/mm");
 });
 
+test("uma tira longa percorre detecção e conferência sem criar 12 derivações", () => {
+  const { context } = createE2eEnvironment();
+  const engine = context.LuriaEcgCvEngine;
+  const strip = engine.cropSubImageData(generateSynthesized12LeadImage(), 50, 355, 700, 80);
+  const detected = engine.detectECGBoundaries(strip, {paperAlreadyRectified:true});
+  assert.equal(detected.detectedLayout?.documentType, "single_strip", detected.message);
+  assert.equal(detected.detectedLayout.columnCount, 1);
+  assert.equal(Object.keys(detected.candidateRegions).length, 1);
+  const edgeToEdge = engine.detectECGBoundaries(strip, {allowDensePreview:true});
+  assert.equal(edgeToEdge.detectedLayout?.documentType, "single_strip", edgeToEdge.message);
+  context.document.createElement = tag => tag === "canvas" ? pixelCanvas() : {style:{},addEventListener(){}};
+  const controller = context.LuriaSmartCamera.createController({});
+  const result = controller.processPhotographCanvas(pixelCanvas(strip), {
+    source:"normal_photo", manualPaperCornersApplied:true
+  });
+  assert.equal(result.ok, true, JSON.stringify(result));
+  assert.equal(controller.getCapturedLeads().filter(l=>l.captured).length, 1);
+  assert.equal(controller.openReview(), true);
+  assert.deepEqual(Object.keys(controller.getSessionStructuredPackage().signals), []);
+  assert.equal(controller.confirmExtractionAndEnableAI().allowed, false);
+  controller.resetCaptureSession();
+  assert.equal(controller.getCapturedLeads().filter(l=>l.captured).length, 0);
+});
+
+test("duas tiras são duas linhas de largura inteira; três tiras permitem corrigir ambiguidade", () => {
+  const { context } = createE2eEnvironment();
+  const engine = context.LuriaEcgCvEngine;
+  const strips = engine.cropSubImageData(generateSynthesized12LeadImage(), 50, 265, 700, 165);
+  const detected = engine.detectECGBoundaries(strips, {paperAlreadyRectified:true});
+  assert.equal(detected.detectedLayout?.mainRows, 2, detected.message);
+  assert.equal(detected.detectedLayout.columnCount, 1);
+  assert.equal(Object.keys(detected.candidateRegions).length, 2);
+  const full = generateSynthesized12LeadImage();
+  const rows = engine.discoverWaveformTopology(full, engine.locatePaperSheet(full).boundaries);
+  const corrected = engine.inferDocumentLayout(full, {xMin:0,xMax:1}, rows, {layoutHint:"3x1"});
+  assert.equal(corrected.mainRows, 3);
+  assert.equal(corrected.columnCount, 1);
+  assert.equal(corrected.documentType, "partial_ecg");
+  assert.equal(corrected.requiresLayoutConfirmation, false);
+});
+
+test("12 linhas empilhadas são 12x1 e preservam todas as regiões", () => {
+  const { context } = createE2eEnvironment();
+  const engine = context.LuriaEcgCvEngine;
+  const strip = engine.cropSubImageData(generateSynthesized12LeadImage(), 50, 355, 700, 80);
+  const width = 700, height = 1220;
+  const data = new Uint8ClampedArray(width * height * 4).fill(238);
+  for (let row = 0; row < 12; row++) for (let y = 0; y < strip.height; y++) {
+    data.set(strip.data.subarray(y * width * 4, (y + 1) * width * 4),
+      ((20 + row * 100 + y) * width) * 4);
+  }
+  const detected = engine.detectECGBoundaries({width,height,data}, {paperAlreadyRectified:true});
+  assert.equal(detected.topology.rowCount, 12);
+  assert.equal(detected.detectedLayout?.columnCount, 1, detected.message);
+  assert.equal(detected.detectedLayout.documentType, "full_ecg_candidate");
+  assert.equal(Object.keys(detected.candidateRegions).length, 12);
+});
+
+test("6 linhas com 2 colunas e 2 linhas com 6 colunas conservam 12 regiões", () => {
+  const { context } = createE2eEnvironment();
+  const engine = context.LuriaEcgCvEngine;
+  const strip = engine.cropSubImageData(generateSynthesized12LeadImage(), 50, 355, 700, 80);
+  for (const rows of [2, 6]) {
+    const width = 700, height = rows * 100 + 20;
+    const data = new Uint8ClampedArray(width * height * 4).fill(238);
+    for (let row = 0; row < rows; row++) for (let y = 0; y < strip.height; y++) {
+      data.set(strip.data.subarray(y * width * 4, (y + 1) * width * 4),
+        ((20 + row * 100 + y) * width) * 4);
+    }
+    const detected = engine.detectECGBoundaries({width,height,data}, {
+      paperAlreadyRectified:true, layoutHint: rows === 2 ? "2x6" : "auto"
+    });
+    assert.equal(detected.topology.rowCount, rows);
+    assert.equal(detected.detectedLayout?.columnCount, 12 / rows, detected.message);
+    assert.equal(Object.keys(detected.candidateRegions).length, 12);
+  }
+});
+
 test("grade rosa com margens e múltiplos períodos conserva o espaçamento fundamental", () => {
   const { context } = createE2eEnvironment();
   const width = 965, height = 657;

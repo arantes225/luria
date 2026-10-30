@@ -276,6 +276,7 @@
       photoWidth = width;
       photoHeight = height;
       rotationQuarterTurns = 0;
+      if (byId("ecg-photo-layout")) byId("ecg-photo-layout").value = "auto";
       details.textContent = formatDetails(file, width, height);
       frame.hidden = false;
       preview.hidden = false;
@@ -314,6 +315,7 @@
       const selectionOptions = selection === "corners"
         ? { corners: perspective.cloneCorners(corners), paperSelection: "manual_four_corners", rotationDeg: rotationQuarterTurns * 90 }
         : { corners: null, paperSelection: "full_photo", rotationDeg: rotationQuarterTurns * 90 };
+      selectionOptions.layoutHint = byId("ecg-photo-layout")?.value || "auto";
       const result = await global.LuriaEcgProcessPhoto(sourceFile, "normal_photo", selectionOptions);
       if (!result?.ok) {
         showError(result?.reason || "Não foi possível extrair o ECG. Confira a folha e tente novamente.");
