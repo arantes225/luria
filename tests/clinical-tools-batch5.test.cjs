@@ -80,3 +80,13 @@ test('UI calls calculator-specific validation and respects explicit zero policy'
   const scoreHtml=read('trabalho/scores/index.html');
   assert.match(scoreHtml,/work-scores\.js\?v=20261030-batch5/);
 });
+
+test('Generic scores use querySelectorAll and BAP-65 has dedicated I–V classification',()=>{
+  assert.match(scoreSource,/const vals=\$\$\("#score-form select"\)\.map\(x=>x\.value\)/);
+  const bap=scores.find(x=>x.id==='bap65');
+  assert.equal(bap.custom,'bap65');
+  assert.match(scoreSource,/bap65\(f,s\)/);
+  assert.match(scoreSource,/bap===0\?\(age\?'II':'I'\)/);
+  const aims=scores.find(x=>x.id==='aims65');
+  assert.ok(aims.questions.some(x=>x.label==='Idade >65 anos'));
+});
