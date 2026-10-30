@@ -3,13 +3,13 @@ import {getAlexConversation, rememberAlexTurn, clearAlexConversation} from './al
 import {bindAlex} from './professor-alex-integration.mjs?v=20261014-ready2';
 
 const contexts = {
-  dashboard: ['Professor Alex', 'Converse comigo por aqui ou abra a tutoria completa para estudar com mais profundidade.', '/professor-alex/', 'Abrir tutoria completa'],
+  dashboard: ['Leco', 'Converse comigo por aqui ou abra a tutoria completa para estudar com mais profundidade.', '/professor-alex/', 'Abrir tutoria completa'],
   aprender: ['Como você quer aprender?', 'Explore as apostilas, suas anotações ou o estudo guiado.', '/apostilas/', 'Abrir apostilas'],
   flashcards: ['Revisão com flashcards', 'Tente lembrar antes de revelar a resposta e avalie como foi sua recordação.', '/consolidar/', 'Ver atividades de revisão'],
   questoes: ['Treino com questões', 'Leia o enunciado com atenção e revise o raciocínio depois da resposta.', '/consolidar/', 'Ver atividades de revisão'],
   caderno: ['Suas anotações', 'Organize conceitos com suas próprias palavras para facilitar a revisão.', '/aprender/', 'Voltar a Aprender'],
   cronograma: ['Seu planejamento', 'Distribua estudo e revisão em blocos que caibam na sua rotina.', '/aprender/', 'Escolher uma atividade'],
-  professor_alex: ['Professor Alex', 'Tire dúvidas, converse com IA e aprenda qualquer assunto do zero.', '/aprender/', 'Voltar a Aprender']
+  professor_alex: ['Leco', 'Tire dúvidas, converse com IA e aprenda qualquer assunto do zero.', '/aprender/', 'Voltar a Aprender']
 };
 
 export function mountAlexCompanion({userId, isAdmin=false}={}) {
@@ -71,15 +71,15 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
       }
     </style>
     <div class="alex-tickle-bubble" hidden></div>
-    <div class="help" hidden role="region" aria-label="Ajuda do Alex">
+    <div class="help" hidden role="region" aria-label="Ajuda do Leco">
       <button class="close" aria-label="Fechar ajuda">×</button>
       <h2></h2>
       <p></p>
       <div class="alex-quick-messages" aria-live="polite">
-        <div class="alex-quick-message alex">Olá! Sou o Professor Alex. Qual dúvida médica você quer estudar?</div>
+        <div class="alex-quick-message alex">Olá! Sou o Leco. Qual dúvida médica você quer estudar?</div>
       </div>
       <form class="alex-quick-chat">
-        <input type="text" class="alex-quick-input" placeholder="Tire uma dúvida com o Alex..." maxlength="200" aria-label="Dúvida para o Alex" />
+        <input type="text" class="alex-quick-input" placeholder="Tire uma dúvida com o Leco..." maxlength="200" aria-label="Dúvida para o Leco" />
         <button type="submit" class="alex-quick-send">Perguntar</button>
       </form>
       <div class="alex-quick-actions">
@@ -88,12 +88,12 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
         <a class="tutoring" href="/professor-alex/" hidden>Abrir tutoria completa</a>
       </div>
       <div class="help-actions">
-        <button class="recharge-btn" type="button">🔋 Mandar Alex recarregar</button>
-        <button class="minimize" type="button">Minimizar Alex</button>
+        <button class="recharge-btn" type="button">🔋 Mandar Leco recarregar</button>
+        <button class="minimize" type="button">Minimizar Leco</button>
       </div>
     </div>
     <div class="robot"></div>
-    <button class="restore" hidden aria-label="Restaurar Alex">⚡ Alex</button>
+    <button class="restore" hidden aria-label="Restaurar Leco">⚡ Leco</button>
   `;
 
   const robot = shadow.querySelector('.robot');
@@ -305,7 +305,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
   // Context copy
   const context = contexts[document.body.dataset.page] || [
     'Estou por aqui',
-    'Use esta página para seguir sua atividade. Você pode mover ou falar com o Alex a qualquer momento.',
+    'Use esta página para seguir sua atividade. Você pode mover ou falar com o Leco a qualquer momento.',
     '/dashboard/',
     'Abrir meu painel'
   ];
@@ -331,7 +331,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
     alex.button?.focus();
   }, opts);
 
-  // Chat compacto: responde no próprio painel usando o mesmo backend seguro do Alex.
+  // Chat compacto: responde no próprio painel usando o mesmo backend seguro do Leco.
   const quickChat = shadow.querySelector('.alex-quick-chat');
   const quickInput = shadow.querySelector('.alex-quick-input');
   const quickSend = shadow.querySelector('.alex-quick-send');
@@ -373,17 +373,17 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
           } catch (_) { /* Preserve the friendly fallback below. */ }
         }
         const messages = {
-          unauthorized: 'Entre na sua conta da LURIA para conversar com o Professor Alex.',
-          gemini_secret_missing: 'O backend do Professor Alex está sem a configuração do Gemini.',
+          unauthorized: 'Entre na sua conta da LURIA para conversar com o Leco.',
+          gemini_secret_missing: 'O backend do Leco está sem a configuração do Gemini.',
           gemini_key_rejected: 'A configuração da API do Gemini foi recusada. Tente novamente mais tarde.',
           gemini_key_invalid: 'A chave da API do Gemini está inválida ou expirada.',
           gemini_rate_limited: 'O Gemini atingiu o limite de requisições. Tente novamente mais tarde.',
           gemini_connection_failed: 'O Supabase não conseguiu se comunicar com o Gemini. Tente novamente.',
           gemini_unavailable: 'O Gemini está temporariamente indisponível. Tente novamente em instantes.',
-          usage_limit_unavailable: 'Não foi possível verificar o limite de uso do Professor Alex.',
-          token_budget_reached: 'O limite diário do Professor Alex foi atingido. Tente novamente amanhã.'
+          usage_limit_unavailable: 'Não foi possível verificar o limite de uso do Leco.',
+          token_budget_reached: 'O limite diário do Leco foi atingido. Tente novamente amanhã.'
         };
-        throw new Error(messages[backendError] || 'Não foi possível concluir a resposta do Professor Alex.');
+        throw new Error(messages[backendError] || 'Não foi possível concluir a resposta do Leco.');
       }
       quickMessages?.querySelector('.pending')?.remove();
       appendQuickMessage(data.answer, 'alex');
@@ -391,7 +391,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
       integration.react('explain');
     } catch (error) {
       quickMessages?.querySelector('.pending')?.remove();
-      appendQuickMessage(error?.message || 'Não foi possível concluir a resposta do Professor Alex.', 'error');
+      appendQuickMessage(error?.message || 'Não foi possível concluir a resposta do Leco.', 'error');
       integration.react('error');
     } finally {
       if (quickSend) quickSend.disabled = false;
