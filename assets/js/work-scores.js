@@ -993,7 +993,7 @@
       safetyNote:"Usar em população e cirurgia compatíveis; não estima risco individual exato nem substitui avaliação anestésica."
     },
     {id:"aims65",name:"AIMS65",category:"Gastro/Hepato",aliases:"hemorragia digestiva alta prognóstico",desc:"Preditor de mortalidade hospitalar na hemorragia digestiva alta.",tags:["Plantão","Gastroenterologia"],auditDate:"2026-10-30",
-      questions:[q("Albumina <3,0 g/dL",yesno()),q("INR >1,5",yesno()),q("Alteração do estado mental (GCS <14)",yesno()),q("PAS ≤90 mmHg",yesno()),q("Idade ≥65 anos",yesno())],
+      questions:[q("Albumina <3,0 g/dL",yesno()),q("INR >1,5",yesno()),q("Alteração do estado mental (GCS <14)",yesno()),q("PAS ≤90 mmHg",yesno()),q("Idade >65 anos",yesno())],
       interpret:n=>n>=2?"AIMS65 "+n+"/5: maior risco prognóstico; avaliação clínica e endoscópica urgente conforme estabilidade.":"AIMS65 "+n+"/5: menor pontuação prognóstica; não exclui necessidade de internação, transfusão ou endoscopia.",
       reference:"Saltzman JR et al. Gastrointest Endosc. 2011;74:1215–1224.",
       safetyNote:"Prognóstico hospitalar: não usar isoladamente para decisão de alta. Diferenciar de Glasgow-Blatchford."
