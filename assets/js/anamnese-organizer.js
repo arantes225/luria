@@ -10,10 +10,20 @@
   // Configuração padrão ou salva
   const getCustomEndpoint = () => localStorage.getItem(ENDPOINT_KEY) || '';
   const setCustomEndpoint = (url) => {
-    if (!url) {
+    if (!url || !url.trim()) {
       localStorage.removeItem(ENDPOINT_KEY);
-    } else {
-      localStorage.setItem(ENDPOINT_KEY, url.trim());
+      return { success: true };
+    }
+    const trimmed = url.trim();
+    try {
+      const parsed = new URL(trimmed);
+      if (parsed.protocol !== 'https:') {
+        return { success: false, error: 'Por motivos de segurança e sigilo médico, o endpoint deve obrigatoriamente utilizar protocolo seguro HTTPS.' };
+      }
+      localStorage.setItem(ENDPOINT_KEY, trimmed);
+      return { success: true };
+    } catch {
+      return { success: false, error: 'URL do endpoint inválida. Forneça uma URL completa começando com https://' };
     }
   };
 
@@ -282,7 +292,12 @@
       });
 
       btnSaveEndpoint?.addEventListener('click', () => {
-        setCustomEndpoint(customEndpointInput.value);
+        const result = setCustomEndpoint(customEndpointInput.value);
+        if (!result.success) {
+          alert(result.error);
+          customEndpointInput.focus();
+          return;
+        }
         showToast('Configuração de endpoint salva!');
         renderUI();
       });
@@ -392,7 +407,8 @@
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
     };
 
     renderUI();
