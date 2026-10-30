@@ -8,6 +8,7 @@ const root = path.resolve(__dirname, "..");
 const script = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-interpreter.js"), "utf8");
 const extraScript = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-extra-catalog.js"), "utf8");
 const curatedScripts = [1,2,3,4,5].map(i=>fs.readFileSync(path.join(root, `assets/js/trabalho-exames-curated-0${i}.js`), "utf8"));
+const preanalyticalScript = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-preanalytical.js"), "utf8");
 const detailsScript = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-details.js"), "utf8");
 
 function openTool() {
@@ -17,6 +18,7 @@ function openTool() {
   });
   dom.window.eval(extraScript);
   for(const code of curatedScripts)dom.window.eval(code);
+  dom.window.eval(preanalyticalScript);
   dom.window.eval(detailsScript);
   dom.window.eval(script);
   return dom;
@@ -67,8 +69,9 @@ test("Both clinical pages use same versioned assets and suppress duplicate top t
     assert.match(html, /trabalho-exames-interpreter\.css\?v=20261029-review2/);
     assert.match(html, /trabalho-exames-extra-catalog\.js\?v=20261029-extras/);
     for(let i=1;i<=5;i++)assert.match(html,new RegExp(`trabalho-exames-curated-0${i}\\.js\\?v=20261030-individual`));
-    assert.match(html, /trabalho-exames-details\.js\?v=20261030-individual/);
-    assert.match(html, /trabalho-exames-interpreter\.js\?v=20261030-individual/);
+    assert.match(html, /trabalho-exames-preanalytical\.js\?v=20261030-prep1/);
+    assert.match(html, /trabalho-exames-details\.js\?v=20261030-prep1/);
+    assert.match(html, /trabalho-exames-interpreter\.js\?v=20261030-prep1/);
   }
 });
 
@@ -294,4 +297,47 @@ test("Specific validated reference notes are displayed without fabricating refer
   }
   assert.ok(all.filter(t=>t.group>=21).every(t=>t.min===null&&t.max===null));
   dom.window.close();
+});
+
+test("Preanalytical fields exist for all 423 exams and distinguish specific from area guidance",()=>{
+  const dom=openTool(),d=dom.window.document,meta=dom.window.LURIA_EXAM_DETAILS,audit=dom.window.LURIA_EXAM_PREANALYTIC_AUDIT;
+  assert.equal(audit.total,423);
+  assert.equal(audit.specific+audit.general,423);
+  assert.ok(audit.specific>=240);
+  assert.ok(audit.general>0);
+  for(const [id,m] of Object.entries(meta)){
+    for(const field of ["sample","preparation","analyticalMethod","preanalyticalInterference","preanalyticalSourceUrl"]){
+      assert.ok(typeof m[field]==="string"&&m[field].length>20,id+":"+field);
+    }
+    assert.match(m.preanalyticalSourceUrl,/^https:\/\//);
+    assert.ok(Array.isArray(m.preanalyticalSpecificFields));
+  }
+  assert.equal(d.querySelectorAll(".ex-test-details").length,423);
+  assert.equal(d.querySelectorAll(".ex-clinical-source").length,423);
+  dom.window.close();
+});
+
+test("Specimen and collection guidance distinguish calculated, noninvasive and specialized tests",()=>{
+  const dom=openTool(),d=dom.window.document;
+  const all=[...dom.window.LURIA_EXAM_CATALOG,...dom.window.LURIA_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
+  const find=name=>{const t=all.find(t=>t.name===name);assert.ok(t,name);return dom.window.LURIA_EXAM_DETAILS[t.id];};
+  assert.match(find("TFG estimada").sample,/calculado/i);
+  assert.match(find("FiO₂").sample,/não é exame sanguíneo/i);
+  assert.match(find("Cortisol salivar noturno").sample,/saliva/i);
+  assert.match(find("Hemocultura").sample,/frascos de hemocultura/i);
+  assert.match(find("Prova cruzada pré-transfusional").preparation,/receptor/i);
+  assert.match(find("DNA fetal livre circulante (NIPT)").sample,/materno/i);
+  assert.match(find("Cloreto no suor").sample,/suor/i);
+  assert.match(find("Glicemia em jejum").preparation,/8 a 12 horas/i);
+  assert.match(find("Dímero D").preanalyticalInterference,/FEU e DDU/i);
+  assert.match(d.querySelector('[data-row="g6t1"] .ex-test-details-content').textContent,/Preparo e coleta|Interferências pré-analíticas/);
+  dom.window.close();
+});
+
+test("Preanalytical source and overrides loaded on both pages before clinical details",()=>{
+  for(const dir of ["exames","laboratorio"]){
+    const h=fs.readFileSync(path.join(root,"trabalho",dir,"index.html"),"utf8");
+    const pre=h.indexOf("trabalho-exames-preanalytical.js"),detail=h.indexOf("trabalho-exames-details.js"),interpreter=h.indexOf("trabalho-exames-interpreter.js");
+    assert.ok(pre>0&&pre<detail&&detail<interpreter);
+  }
 });
