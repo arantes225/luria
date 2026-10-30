@@ -1185,6 +1185,123 @@
   ];
   for (const item of batch6Scores) if(!scores.some(s=>s.id===item.id))scores.push(item);
 
+
+  // Lote 7: scores com versões identificadas, limites de aplicabilidade e referências.
+  const batch7Scores=[
+    {id:"ranson",name:"Ranson — pancreatite não biliar (48 h)",category:"Gastro/Hepato",
+      aliases:"pancreatite aguda álcool prognóstico 48 horas",desc:"Onze critérios prognósticos da pancreatite aguda NÃO biliar, incluindo dados de admissão e primeiras 48 horas.",tags:["Gastroenterologia","Plantão"],auditDate:"2026-10-30",
+      questions:[
+        q("ADMISSÃO: idade >55 anos",yesno()),q("ADMISSÃO: leucócitos >16.000/mm³",yesno()),
+        q("ADMISSÃO: glicose >200 mg/dL",yesno()),q("ADMISSÃO: AST >250 U/L",yesno()),
+        q("ADMISSÃO: LDH >350 U/L",yesno()),
+        q("ATÉ 48H: queda do hematócrito >10 pontos percentuais",yesno()),
+        q("ATÉ 48H: aumento do BUN >5 mg/dL após hidratação (não ureia)",yesno()),
+        q("ATÉ 48H: cálcio sérico <8 mg/dL",yesno()),
+        q("ATÉ 48H: PaO₂ <60 mmHg",yesno()),
+        q("ATÉ 48H: déficit de base >4 mEq/L",yesno()),
+        q("ATÉ 48H: sequestro de líquidos >6 L",yesno())
+      ],
+      interpret:n=>"Ranson não biliar "+n+"/11 após 48 h. "+(n>=3?"Pontuação associada a maior gravidade.":"Menor pontuação no modelo histórico; não exclui complicações.")+" Avaliar Atlanta revisada, falência orgânica e evolução clínica.",
+      reference:"Ranson JHC et al. Surg Gynecol Obstet 1974;139:69–81; review PMC9227091, tabela de critérios não biliares.",
+      safetyNote:"SÓ válido após avaliação dos 11 parâmetros no período de 48 h e na pancreatite não biliar. Para pancreatite biliar há limiares e número de critérios diferentes; não preencher item ausente como 'Não'."
+    },
+    {id:"haps",name:"HAPS — pancreatite aguda",category:"Gastro/Hepato",aliases:"pancreatite leve admissão baixo risco",desc:"Critérios de admissão para identificar curso potencialmente não grave de pancreatite aguda.",tags:["Gastroenterologia","Plantão"],auditDate:"2026-10-30",
+      questions:[
+        q("Defesa abdominal ou dor à descompressão presente",yesno()),
+        q("Hematócrito acima/fora da faixa normal para o laboratório e população",yesno()),
+        q("Creatinina sérica acima da faixa normal do laboratório",yesno())
+      ],
+      interpret:n=>n===0?"HAPS com os três critérios favoráveis: provável curso não grave na população validada; manter avaliação clínica.":"HAPS não favorável ("+n+" marcador(es) presente(s)): não classifica como provável curso benigno, sem confirmar gravidade.",
+      reference:"Lankisch PG et al. Clin Gastroenterol Hepatol 2009;7:702–705. PMID:19245846.",
+      safetyNote:"Marcadores em admissão e faixas de referência do laboratório; não é uma escala de mortalidade. HAPS positivo não dispensa investigação, hidratação ou reavaliação."
+    },
+    {id:"imrie",name:"Glasgow–Imrie modificado (48 h)",category:"Gastro/Hepato",aliases:"PANCREAS pancreatite aguda glasgow",desc:"Oito preditores de gravidade nas primeiras 48 horas de pancreatite aguda.",tags:["Gastroenterologia","Plantão"],auditDate:"2026-10-30",
+      questions:[
+        q("PaO₂ <60 mmHg (8 kPa)",yesno()),q("Idade >55 anos",yesno()),
+        q("Leucócitos >15.000/mm³",yesno()),
+        q("Cálcio sérico <8 mg/dL",yesno()),
+        q("BUN >45 mg/dL (ou ureia >96 mg/dL)",yesno()),
+        q("LDH >600 U/L",yesno()),
+        q("Albumina sérica <3,2 g/dL",yesno()),
+        q("Glicose sérica >180 mg/dL",yesno())
+      ],
+      interpret:n=>"Glasgow–Imrie modificado "+n+"/8: "+(n>=3?"faixa associada a pancreatite aguda potencialmente grave.":"abaixo do corte histórico para gravidade; requer monitorização clínica.") ,
+      reference:"Imrie CW et al. Br J Surg 1978;65:337–341; versão modificada em JAMA Surg 2000 (Imrie Scoring System).",
+      safetyNote:"Escolhida a versão MODIFICADA com 8 critérios, sem transaminases. Avaliar durante as primeiras 48 horas; não equiparar com Ranson."
+    },
+    {id:"adrop",name:"A-DROP — pneumonia",category:"Respiratório",aliases:"pneumonia japonesa gravidade idoso jrs",desc:"Cinco componentes de gravidade de pneumonia adquirida na comunidade segundo JRS.",tags:["Pneumonia","Plantão"],auditDate:"2026-10-30",
+      questions:[
+        q("Idade: homem ≥70 anos ou mulher ≥75 anos",yesno()),
+        q("Desidratação clínica ou BUN ≥21 mg/dL",yesno()),
+        q("SpO₂ ≤90% ou PaO₂ ≤60 mmHg",yesno()),
+        q("Alteração do nível de consciência",yesno()),
+        q("PAS ≤90 mmHg",yesno())
+      ],
+      interpret:n=>"A-DROP "+n+"/5: "+(n===0?"leve pelo modelo":n<=2?"moderada":n===3?"grave":"muito grave")+". Se houver CHOQUE, considerar extremamente grave independentemente do total.",
+      reference:"Japanese Respiratory Society adult pneumonia guideline 2024; J Respir Infect Chemother 2025; review PMC11904445.",
+      safetyNote:"Os limiares são específicos do A-DROP (não CURB-65). Choque prevalece sobre pontuação e exige avaliação emergencial."
+    },
+    {id:"cds",name:"Clinical Dehydration Scale — pediatria",category:"Pediatria",aliases:"desidratação gastroenterite criança escore clínico",desc:"Quatro sinais clínicos para apoiar avaliação de desidratação infantil, 0–8 pontos.",tags:["Pediatria","Plantão"],auditDate:"2026-10-30",
+      questions:[
+        q("Aparência geral",[opt("Normal",0),opt("Sedenta/inquieta ou letárgica, porém irrita-se ao toque",1),opt("Sonolenta, hipotônica, fria ou sudorética",2)]),
+        q("Olhos",[opt("Normais",0),opt("Pouco fundos",1),opt("Muito fundos",2)]),
+        q("Mucosas",[opt("Úmidas",0),opt("Pegajosas",1),opt("Ressecadas",2)]),
+        q("Lágrimas",[opt("Presentes",0),opt("Diminuídas",1),opt("Ausentes",2)])
+      ],
+      interpret:n=>"CDS "+n+"/8: "+(n===0?"sem sinais clínicos na escala":n<=4?"sinais compatíveis com desidratação leve":"sinais compatíveis com desidratação moderada/importante")+". Correlacionar com perda ponderal e perfusão.",
+      reference:"Children's Mercy, Acute Gastroenteritis Clinical Dehydration Assessment; Goldman RD et al. Pediatrics 2008.",
+      safetyNote:"Não substitui avaliação de choque, perfusão e peso prévio. Paciente gravemente comprometido exige abordagem imediata."
+    },
+    {id:"cows",name:"COWS — abstinência de opioides",category:"Psiquiatria",aliases:"opioides abstinência buprenorfina escala",desc:"Escala clínica de abstinência de opioides de 11 itens, 0–48.",tags:["Psiquiatria","Plantão"],auditDate:"2026-10-30",
+      questions:[
+        q("Pulso em repouso após 1 minuto",[opt("≤80 bpm",0),opt("81–100",1),opt("101–120",2),opt(">120",4)]),
+        q("Sudorese nos últimos 30 minutos",[opt("Nenhuma",0),opt("Calafrio/rubor subjetivo",1),opt("Rosto úmido",2),opt("Gotas na testa",3),opt("Suor escorrendo",4)]),
+        q("Inquietação observada",[opt("Fica quieto",0),opt("Relata inquietação, consegue ficar parado",1),opt("Movimentos frequentes",3),opt("Incapaz de manter-se parado",5)]),
+        q("Tamanho pupilar",[opt("Normal ou miótico",0),opt("Possivelmente maior que esperado",1),opt("Moderadamente dilatado",2),opt("Muito dilatado",5)]),
+        q("Dor óssea ou articular atribuível à abstinência",[opt("Ausente",0),opt("Desconforto difuso leve",1),opt("Dor difusa intensa",2),opt("Esfrega articulações ou incapaz de permanecer quieto",4)]),
+        q("Rinorreia ou lacrimejamento não explicados por outra causa",[opt("Ausentes",0),opt("Congestão/olhos úmidos",1),opt("Coriza/lágrimas",2),opt("Intensos e contínuos",4)]),
+        q("Sintomas gastrointestinais últimos 30 minutos",[opt("Ausentes",0),opt("Cólicas",1),opt("Náusea ou fezes amolecidas",2),opt("Vômito ou diarreia",3),opt("Episódios múltiplos",5)]),
+        q("Tremor com mãos estendidas",[opt("Ausente",0),opt("Palpável, não visível",1),opt("Visível discreto",2),opt("Intenso/contrações",4)]),
+        q("Bocejos observados",[opt("Nenhum",0),opt("1–2",1),opt("≥3",2),opt("Vários por minuto",4)]),
+        q("Ansiedade/irritabilidade",[opt("Ausente",0),opt("Subjetiva discreta",1),opt("Evidente",2),opt("Compromete avaliação",4)]),
+        q("Piloereção",[opt("Ausente",0),opt("Arrepio visível/palpável",3),opt("Proeminente",5)])
+      ],
+      interpret:n=>"COWS "+n+"/48: "+(n<=4?"sem abstinência ou mínima":n<=12?"leve":n<=24?"moderada":n<=36?"moderadamente intensa":"grave")+".",
+      reference:"Wesson DR, Ling W. J Psychoactive Drugs 2003;35:253–259; National Institute on Drug Abuse, COWS clinical scale.",
+      safetyNote:"Só pontuar manifestações relacionadas à abstinência, não a febre, ansiedade primária ou outras causas. Não iniciar automaticamente buprenorfina por pontuação isolada."
+    },
+    {id:"naranjo",name:"Algoritmo de Naranjo — reação adversa",category:"Infectologia",aliases:"farmacovigilância causalidade RAM medicamentos",desc:"Dez perguntas para estimativa estruturada de causalidade de reação adversa medicamentosa.",tags:["Farmacovigilância","Segurança"],auditDate:"2026-10-30",
+      questions:[
+        q("Relatos anteriores conclusivos da reação",[opt("Sim",1),opt("Não",0),opt("Desconhecido",0)]),
+        q("Evento ocorreu após administrar medicamento suspeito",[opt("Sim",2),opt("Não",-1),opt("Desconhecido",0)]),
+        q("Melhorou após suspender medicamento ou antagonizar",[opt("Sim",1),opt("Não",0),opt("Desconhecido",0)]),
+        q("Retornou após reintrodução do medicamento",[opt("Sim",2),opt("Não",-1),opt("Desconhecido",0)]),
+        q("Existem outras causas independentes plausíveis",[opt("Sim",-1),opt("Não",2),opt("Desconhecido",0)]),
+        q("Reapareceu após administração de placebo",[opt("Sim",-1),opt("Não",1),opt("Desconhecido",0)]),
+        q("Concentração tóxica do medicamento detectada",[opt("Sim",1),opt("Não",0),opt("Desconhecido",0)]),
+        q("Resposta variou de acordo com a dose",[opt("Sim",1),opt("Não",0),opt("Desconhecido",0)]),
+        q("Houve reação semelhante em exposição anterior",[opt("Sim",1),opt("Não",0),opt("Desconhecido",0)]),
+        q("Há evidência objetiva de confirmação",[opt("Sim",1),opt("Não",0),opt("Desconhecido",0)])
+      ],
+      interpret:n=>"Naranjo "+n+": causalidade "+(n>=9?"definida":n>=5?"provável":n>=1?"possível":"duvidosa")+" pelo algoritmo; interpretação não substitui avaliação especializada.",
+      reference:"Naranjo CA et al. Clin Pharmacol Ther 1981;30:239–245; NIH LiverTox NCBI Bookshelf NBK548069.",
+      safetyNote:"Não realizar reexposição provocativa de rotina para pontuação. Método de apoio à farmacovigilância, não confirmação clínica definitiva."
+    },
+    {id:"isthdic",name:"ISTH DIC manifesta (2001)",category:"Hematologia",aliases:"CIVD coagulopatia fibrinogênio protrombina D-dímero",desc:"Escore ISTH 2001 para coagulação intravascular disseminada manifesta com doença predisponente.",tags:["Hematologia","UTI"],auditDate:"2026-10-30",
+      questions:[
+        q("Existe doença predisponente associada à CIVD?",[opt("Sim",0),opt("Não",-999)]),
+        q("Plaquetas (×10⁹/L)",[opt("≥100",0),opt("≥50 e <100",1),opt("<50",2)]),
+        q("Marcadores de fibrina (D-dímero/FDP), conforme laboratório",[opt("Sem aumento",0),opt("Aumento moderado",2),opt("Aumento acentuado",3)]),
+        q("Prolongamento do TP acima do controle",[opt("<3 segundos",0),opt("≥3 e <6 segundos",1),opt("≥6 segundos",2)]),
+        q("Fibrinogênio plasmático",[opt("≥1 g/L (≥100 mg/dL)",0),opt("<1 g/L (<100 mg/dL)",1)])
+      ],
+      interpret:n=>n>=5?"ISTH-CIVD "+n+"/8: compatível com CIVD manifesta em contexto clínico apropriado; reavaliar diariamente.":"ISTH-CIVD "+n+"/8: abaixo do corte para CIVD manifesta; se suspeita persistir, repetir em 1–2 dias.",
+      reference:"ISTH overt DIC criteria; British Committee for Standards in Haematology Br J Haematol 2009 doi:10.1111/j.1365-2141.2009.07600.x.",
+      safetyNote:"Obrigatória doença predisponente; o sistema usa marcador de fibrina classificado pelo laboratório. Não diagnosticar CIVD sem contexto clínico e séries laboratoriais."
+    }
+  ];
+  for(const item of batch7Scores) if(!scores.some(s=>s.id===item.id))scores.push(item);
+
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
   const favKey = "luria:scores:favorites";
   const recentKey = "luria:scores:recent";
@@ -1338,6 +1455,9 @@
     if(s.id==="sic" && vals.length===3 && Number(vals[0])+Number(vals[1])<=2){
       const n=vals.reduce((a,v)=>a+Number(v),0);
       setResult(formatNum(n),"SIC não confirmado: além do total ≥4, plaquetas + INR devem somar mais que 2 pontos.","Conferir classificação de sepse e evolução clínica.");return;
+    }
+    if(s.id==="isthdic" && vals[0]==="-999"){
+      setResult("Não aplicável","Escore ISTH de CIVD manifesta exige doença predisponente reconhecida.","Sem critério de elegibilidade, não somar os demais itens."); return;
     }
     const total=vals.reduce((a,v)=>a+Number(v),0);
     const note=phqRisk?"ATENÇÃO: item 9 positivo. Realizar avaliação clínica imediata de segurança; o total PHQ-9 não classifica risco suicida.":"Pontuação calculada a partir dos critérios selecionados.";
