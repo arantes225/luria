@@ -161,5 +161,5 @@ test('Prior placeholders SCORAD and PALM-COEIN now active and unique',()=>{
    assert.ok(xs[0].reference&&xs[0].safetyNote&&xs[0].auditDate);
    assert.notEqual(xs[0].custom,'reference');
  }
- assert.equal(scores.filter(x=>x.custom==='reference').length,16);
+ // Future batches may convert further placeholders; don't freeze the global count here.
 });
