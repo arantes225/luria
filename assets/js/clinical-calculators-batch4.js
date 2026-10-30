@@ -325,6 +325,321 @@
   dir("convkpa", "kPa", "Pressão (mmHg ↔ kPa)", "mmHg", "kPa", 0.13332, "mmHg", "kPa", S.conv);
   dir("convlb", "lb", "Peso (lb ↔ kg)", "lb", "kg", 0.45359, "lb", "kg", S.conv);
 
+
+  // Lote 5: fórmulas dimensionais com campos, unidades, referências e limites.
+  // Revisão clínica externa e teste E2E obrigatórios antes de exposição assistencial.
+  add("Metabólico","OSM-E","Osmolalidade efetiva / tonicidade","Contribuição osmoticamente efetiva de Na e glicose","tonicity",
+    [num("na","Sódio sérico","mEq/L"),num("glu","Glicose sérica","mg/dL")],
+    "Tonicidade calculada ≈ 2 × Na (mEq/L) + glicose (mg/dL) / 18.",
+    v=>{need(+v.na>=100&&+v.na<=190&&+v.glu>=0&&+v.glu<=2500,"Verifique Na e glicose.");return[2*+v.na+ +v.glu/18,"mOsm/L"];},
+    "ADA, Standards of Care in Diabetes: hyperglycemic crises; fórmula de tonicidade sérica.",
+    ()=> "Não equivale à osmolalidade total (que inclui ureia). Interpretar com exame clínico e osmolalidade medida.");
+
+  add("Renal","PROT24","Proteinúria em 24 horas","Excreção proteica diária a partir de concentração e volume","protein24h",
+    [num("prot","Proteína urinária","mg/dL"),num("vol","Volume urinário em 24 horas","mL")],
+    "mg/24h = proteína (mg/dL) × volume (mL) / 100.",
+    v=>{need(+v.prot>=0&&+v.vol>0&&+v.vol<=15000,"Concentração e volume inválidos.");return[+v.prot*+v.vol/100,"mg/24 h"];},
+    "KDIGO CKD Guideline 2024; conversão dimensional mg/dL × dL.",
+    ()=>"Interpretar com integridade da coleta e albuminúria; valor isolado não define doença renal.");
+
+  add("Renal","Na24","Sódio urinário em 24 horas","Quantidade diária excretada de sódio","na24h",
+    [num("na","Sódio urinário","mEq/L"),num("vol","Volume urinário em 24 horas","mL")],
+    "mEq/24h = Na urinário (mEq/L) × volume (mL) / 1000.",
+    v=>{need(+v.na>=0&&+v.vol>0&&+v.vol<=15000,"Concentração/volume inválidos.");return[+v.na*+v.vol/1000,"mEq/24 h"];},
+    "Conversão dimensional e avaliação de coleta urinária 24 h.",
+    ()=>"Coleta incompleta ou uso de diuréticos alteram a interpretação.");
+
+  add("Renal","Ca24","Cálcio urinário em 24 horas","Excreção diária de cálcio","ca24h",
+    [num("ca","Cálcio urinário","mg/dL"),num("vol","Volume urinário em 24 horas","mL")],
+    "mg/24h = cálcio urinário (mg/dL) × volume (mL) / 100.",
+    v=>{need(+v.ca>=0&&+v.vol>0&&+v.vol<=15000,"Concentração/volume inválidos.");return[+v.ca*+v.vol/100,"mg/24 h"];},
+    "AUA Medical Management of Kidney Stones, 2019; conversão dimensional.",
+    ()=>"Interpretar com ingestão de cálcio, sódio, função renal e qualidade da coleta.");
+
+  add("Renal","Ox24","Oxalato urinário em 24 horas","Excreção diária de oxalato","oxalate24h",
+    [num("ox","Oxalato urinário","mg/L"),num("vol","Volume urinário em 24 horas","mL")],
+    "mg/24h = oxalato (mg/L) × volume (mL) / 1000.",
+    v=>{need(+v.ox>=0&&+v.vol>0&&+v.vol<=15000,"Concentração/volume inválidos.");return[+v.ox*+v.vol/1000,"mg/24 h"];},
+    "AUA Medical Management of Kidney Stones, 2019; conversão dimensional.",
+    ()=>"Confirmar unidade do laboratório (mg/L vs mmol/L) e completude da coleta.");
+
+  add("Renal","FEUA","Fração de excreção de ácido úrico","Percentual de excreção renal de urato","feua",
+    [num("uu","Ácido úrico urinário","mg/dL"),num("pc","Creatinina plasmática","mg/dL"),num("pu","Ácido úrico plasmático","mg/dL"),num("uc","Creatinina urinária","mg/dL")],
+    "FEUA (%) = (urato urinário × creatinina plasmática)/(urato plasmático × creatinina urinária) × 100.",
+    v=>{need(+v.uu>=0&&+v.pc>0&&+v.pu>0&&+v.uc>0,"Valores inválidos/denominador zero.");return[(+v.uu*+v.pc)/(+v.pu*+v.uc)*100,"%"];},
+    "Equação padrão de excreção fracionária; correlacionar com função renal e estado volêmico.",
+    ()=>"Não usar FEUA isoladamente para confirmar SIADH ou outra causa de hiponatremia.");
+
+  add("Renal","FEPO4","Fração de excreção de fosfato","Avaliação da perda renal de fosfato","fepo4",
+    [num("uu","Fosfato urinário","mg/dL"),num("pc","Creatinina plasmática","mg/dL"),num("pu","Fosfato plasmático","mg/dL"),num("uc","Creatinina urinária","mg/dL")],
+    "FEPO₄ (%) = (fosfato urinário × creatinina plasmática)/(fosfato plasmático × creatinina urinária) × 100.",
+    v=>{need(+v.uu>=0&&+v.pc>0&&+v.pu>0&&+v.uc>0,"Valores inválidos/denominador zero.");return[(+v.uu*+v.pc)/(+v.pu*+v.uc)*100,"%"];},
+    "Equação padrão de excreção fracionária; interpretação de fosfatúria.",
+    ()=>"Interpretar com fosfatemia, PTH, FGF23 e função renal.");
+
+  add("Renal","FECa","Fração de excreção de cálcio","Excreção fracionária de cálcio","feca",
+    [num("uu","Cálcio urinário","mg/dL"),num("pc","Creatinina plasmática","mg/dL"),num("pu","Cálcio plasmático total","mg/dL"),num("uc","Creatinina urinária","mg/dL")],
+    "FECa (%) = (Ca urinário × Cr plasmática)/(Ca plasmático × Cr urinária) × 100.",
+    v=>{need(+v.uu>=0&&+v.pc>0&&+v.pu>0&&+v.uc>0,"Valores inválidos/denominador zero.");return[(+v.uu*+v.pc)/(+v.pu*+v.uc)*100,"%"];},
+    "Equação de clearance de cálcio/creatinina; revisar unidade e método de dosagem.",
+    ()=>"Não equivale ao CCCR sem ressalvas; interpretar cálcio sérico corrigido/ionizado e contexto.");
+
+  add("Renal","FEMg","Fração de excreção de magnésio","Avaliação de perdas renais de magnésio","femg",
+    [num("uu","Magnésio urinário","mg/dL"),num("pc","Creatinina plasmática","mg/dL"),num("pu","Magnésio plasmático total","mg/dL"),num("uc","Creatinina urinária","mg/dL")],
+    "FEMg (%) = (Mg urinário × Cr plasmática)/(0,7 × Mg plasmático × Cr urinária) × 100.",
+    v=>{need(+v.uu>=0&&+v.pc>0&&+v.pu>0&&+v.uc>0,"Valores inválidos/denominador zero.");return[(+v.uu*+v.pc)/(0.7*+v.pu*+v.uc)*100,"%"];},
+    "Equação convencional com fração plasmática filtrável de Mg estimada em 0,7.",
+    ()=>"A fração filtrável de 70% é aproximação, e a interpretação depende da função renal.");
+
+  add("Cardiovascular","PVR","Resistência vascular pulmonar","Cálculo hemodinâmico em unidades Wood","pvr",
+    [num("mpap","Pressão média da artéria pulmonar","mmHg"),num("pawp","Pressão de oclusão capilar pulmonar","mmHg"),num("co","Débito cardíaco","L/min")],
+    "PVR (Wood) = (mPAP − PAWP)/débito cardíaco.",
+    v=>{need(+v.mpap>=+v.pawp&&+v.pawp>=0&&+v.co>0,"Pressões/débito incompatíveis.");return[(+v.mpap-+v.pawp)/+v.co,"unidades Wood"];},
+    "ESC/ERS Pulmonary Hypertension Guidelines 2022, equação hemodinâmica.",
+    ()=>"Exige medidas hemodinâmicas adequadas; não diagnostica hipertensão pulmonar isoladamente.");
+
+  add("Cardiovascular","CPO","Cardiac Power Output","Potência cardíaca estimada","cpo",
+    [num("map","PAM","mmHg"),num("co","Débito cardíaco","L/min")],
+    "CPO (W) = PAM × débito cardíaco / 451.",
+    v=>{need(+v.map>0&&+v.co>0,"PAM/débito inválidos.");return[(+v.map*+v.co)/451,"W"];},
+    "Equação hemodinâmica clássica, conversão mmHg × L/min para watts.",
+    ()=>"Marcador hemodinâmico complementar; interpretar em conjunto com perfusão e medida do débito.");
+
+  add("Cardiovascular","LVOT","Débito cardíaco por LVOT/VTI","Débito ecocardiográfico a partir de volume sistólico","lvotco",
+    [num("d","Diâmetro de LVOT","cm"),num("vti","VTI de LVOT","cm"),num("hr","Frequência cardíaca","bpm")],
+    "Débito (L/min) = π × (diâmetro LVOT / 2)² × VTI × FC / 1000.",
+    v=>{need(+v.d>0&&+v.d<5&&+v.vti>0&&+v.hr>0,"Verifique diâmetro, VTI e FC.");return[Math.PI*Math.pow(+v.d/2,2)*+v.vti*+v.hr/1000,"L/min"];},
+    "ASE Echocardiography chamber quantification; equação de continuidade volumétrica.",
+    ()=>"Medida de LVOT deve ser tecnicamente adequada; erro de diâmetro é amplificado ao quadrado.");
+
+  add("Cardiovascular","BER","Gradiente Doppler (Bernoulli)","Estimativa de gradiente transvalvar","bernoulli",
+    [num("v","Velocidade máxima Doppler","m/s")],
+    "ΔP (mmHg) ≈ 4 × v².",
+    v=>{need(+v.v>=0&&+v.v<=12,"Velocidade fora de faixa plausível.");return[4*Math.pow(+v.v,2),"mmHg"];},
+    "Equação simplificada de Bernoulli para Doppler cardíaco.",
+    ()=>"O modelo simplificado pode ser inadequado quando a velocidade proximal é importante.");
+
+  add("Cardiovascular","JTc","Intervalo JT corrigido","Avaliação complementar da repolarização com QRS alargado","jtc",
+    [num("qtc","QTc medido ou calculado","ms"),num("qrs","Duração do QRS","ms")],
+    "JTc (ms) = QTc − QRS.",
+    v=>{need(+v.qtc>+v.qrs&&+v.qrs>0,"QTc deve exceder QRS.");return[+v.qtc-+v.qrs,"ms"];},
+    "Conceito de intervalo JT, AHA/ACCF/HRS ECG Standardization, Circulation 2009.",
+    ()=>"O JTc não tem ponto de corte universal; confirmar fórmula de correção e contexto clínico.");
+
+  add("Cardiovascular","FS","Fração de encurtamento ventricular","Fração de encurtamento linear sistólico","fracshort",
+    [num("dd","Diâmetro diastólico final do VE","mm"),num("ds","Diâmetro sistólico final do VE","mm")],
+    "FE (%) = (LVIDd − LVIDs)/LVIDd × 100.",
+    v=>{need(+v.dd>+v.ds&&+v.ds>0,"Diâmetros inválidos.");return[(+v.dd-+v.ds)/+v.dd*100,"%"];},
+    "ASE, ecocardiografia M-mode, fração de encurtamento.",
+    ()=>"Não substituir fração de ejeção; interpretação limitada em alteração segmentar de contratilidade.");
+
+  add("Infusão","DD-Age","D-dímero ajustado por idade","Limiar apenas para investigação em algoritmo apropriado de TEP","ddimerage",
+    [num("age","Idade","anos")],
+    "Limite de D-dímero (ng/mL FEU) = 500 até 50 anos; acima de 50, idade × 10.",
+    v=>{need(Number.isInteger(+v.age)&&+v.age>=18&&+v.age<=120,"Idade adulta inválida.");return[+v.age>50?+v.age*10:500,"ng/mL FEU"];},
+    "ADJUST-PE, JAMA 2014; AHA/ACC Acute PE Guideline 2026.",
+    ()=>"Apenas em algoritmo diagnóstico apropriado, com probabilidade pré-teste não alta e ensaio FEU. NÃO usar limiar FEU em resultado DDU.");
+
+  add("Antropometria","WHtR","Relação cintura/altura","Marcador antropométrico complementar","waistheight",
+    [num("waist","Circunferência da cintura","cm"),num("height","Estatura","cm")],
+    "Relação cintura/altura = cintura (cm) / altura (cm).",
+    v=>{need(+v.waist>0&&+v.height>0,"Medidas inválidas.");return[+v.waist/+v.height,""];},
+    "WHO waist and waist-hip ratio report, 2008; razão cintura/altura.",
+    ()=>"Interpretar conforme idade, população e contexto; não substitui avaliação do risco cardiometabólico.");
+
+  // Os instrumentos que admitem analito zero têm guarda explícita de denominador.
+  for (const id of ["tonicity","protein24h","na24h","ca24h","oxalate24h","feua","fepo4","feca","femg","bernoulli"]) {
+    if (extra[id]) extra[id].allowZero = true;
+  }
+
+
+  // Lote 6: ferramentas com unidades explícitas. Não substituir julgamento médico.
+  add("Endócrino","GMI","Indicador de Gerenciamento da Glicose (GMI)","Estimativa por média da monitorização contínua","gmi",
+    [num("mean","Glicose média obtida por CGM","mg/dL"),num("days","Duração dos dados de CGM","dias")],
+    "GMI (%) = 3,31 + 0,02392 × glicose média (mg/dL).",
+    v=>{need(+v.mean>=40&&+v.mean<=500&&+v.days>=10,"GMI exige glicose média de CGM e pelo menos 10 dias de dados.");return[3.31+0.02392*+v.mean,"%"];},
+    "Bergenstal RM et al. Diabetes Care 2018;41:2275–2280, PMID 30224348; SBD Diretriz 2026 (CGM).",
+    (n,u,v)=>"Estimativa por CGM; NÃO é a HbA1c laboratorial. Preferir 14 dias ou mais e ≥70% de dados válidos. Dados informados: "+v.days+" dia(s).");
+
+  add("Endócrino","CV-CGM","Coeficiente de variação da glicose","Variabilidade do sensor de glicose","glucosecv",
+    [num("mean","Glicose média do CGM","mg/dL"),num("sd","Desvio padrão das leituras","mg/dL")],
+    "CV (%) = 100 × desvio padrão / glicose média.",
+    v=>{need(+v.mean>0&&+v.sd>=0,"Média e desvio padrão inválidos.");return[100*+v.sd/+v.mean,"%"];},
+    "SBD Diretriz 2026; International Consensus on Time in Range, Diabetes Care 2019, PMC6973648.",
+    n=>"Métrica de variabilidade do CGM. Alvo usual de CV ≤36% para muitos adultos; interpretar adequação dos dados e hipoglicemia.");
+
+  add("Endócrino","TIR","Tempo no alvo da glicose (TIR)","Percentual de tempo de CGM na faixa definida","glucosetir",
+    [num("target","Tempo efetivo de CGM na faixa-alvo","minutos"),num("observed","Tempo total efetivamente registrado pelo CGM","minutos")],
+    "TIR (%) = 100 × minutos de CGM na faixa / minutos totais de CGM válidos.",
+    v=>{need(+v.target>=0&&+v.observed>0&&+v.target<=+v.observed,"Tempo na faixa não pode exceder tempo registrado.");return[100*+v.target/+v.observed,"%"];},
+    "SBD Diretriz 2026, monitorização de glicose intersticial; Diabetes Care 2026, Glycemic Goals.",
+    ()=>"Usar a faixa individualizada (habitualmente 70–180 mg/dL para muitos adultos). Esta ferramenta não lê dados do sensor nem valida intervalos de tempo; conferir cobertura.");
+
+  add("Epidemiologia","NNT","Número necessário para tratar (NNT)","Benefício absoluto comparando riscos binários","nnt",
+    [num("control","Risco do evento no grupo controle","%"),num("treated","Risco do evento no grupo tratado","%")],
+    "NNT = teto[1 / ((risco controle − risco tratado)/100)] para desfecho adverso e redução de risco positiva.",
+    v=>{need(+v.control>=0&&+v.control<=100&&+v.treated>=0&&+v.treated<=100&&+v.control>+v.treated,"NNT só se aplica aqui quando tratamento reduz o desfecho adverso.");return[Math.ceil(100/(+v.control-+v.treated)),"pacientes"];},
+    "NICE Glossary: number needed to treat; relação entre redução absoluta do risco e NNT.",
+    ()=>"A interpretação só é válida para o período de seguimento, população e evento especificados no estudo. Não comparar NNT de horizontes diferentes.");
+
+  add("Epidemiologia","Bayes","Probabilidade pós-teste","Estimativa bayesiana com razão de verossimilhança","posttestlr",
+    [num("pre","Probabilidade pré-teste","%"),num("lr","Razão de verossimilhança (LR+ ou LR−)","adimensional")],
+    "Odds pré = p/(1−p); odds pós = odds pré × LR; probabilidade pós = odds pós/(1 + odds pós).",
+    v=>{need(+v.pre>0&&+v.pre<100&&+v.lr>0,"Probabilidade deve estar entre 0 e 100% (exclusivo); LR deve ser >0.");const prior=+v.pre/(100-+v.pre),post=prior*+v.lr;return[100*post/(1+post),"%"];},
+    "Centre for Evidence-Based Medicine, likelihood ratios and post-test probability; relação de Bayes.",
+    ()=>"Usar razão de verossimilhança adequada ao teste, prevalência e população; não equivale a diagnóstico.");
+
+  add("Endócrino","FAI","Índice de Androgênios Livres (FAI)","Razão testosterona total/SHBG","freeandrogen",
+    [num("test","Testosterona total","nmol/L"),num("shbg","SHBG","nmol/L")],
+    "FAI = 100 × testosterona total (nmol/L)/SHBG (nmol/L).",
+    v=>{need(+v.test>=0&&+v.shbg>0,"Testosterona e SHBG inválidas.");return[100*+v.test/+v.shbg,""];},
+    "International Evidence-Based Guideline for PCOS 2023; índice de androgênios livres.",
+    ()=>"Não usar como diagnóstico isolado de hiperandrogenismo; precisão pode variar por sexo e concentração de SHBG.");
+
+  add("Hematologia","WBCc","Leucócitos corrigidos por eritroblastos","Corrige contagem leucocitária por nRBC/100 leucócitos","correctwbc",
+    [num("wbc","Leucócitos medidos","/µL"),num("nrbc","Eritroblastos observados por 100 leucócitos","nRBC/100 leucócitos")],
+    "Leucócitos corrigidos (/µL) = leucócitos medidos × 100 / (100 + nRBC/100 leucócitos).",
+    v=>{need(+v.wbc>=0&&+v.nrbc>=0,"Valores inválidos.");return[+v.wbc*100/(100+ +v.nrbc),"/µL"];},
+    "Regra hematológica clássica de correção de WBC quando o analisador inclui células nucleadas eritroides.",
+    ()=>"Somente se o método do hemograma requer essa correção. Equipamentos modernos podem fornecer WBC já corrigido.");
+
+  add("Terapia Intensiva","VIS","Vasoactive-Inotropic Score (VIS)","Intensidade numérica de suporte vasoativo em seis agentes","vis",
+    [num("dop","Dopamina","µg/kg/min"),num("dob","Dobutamina","µg/kg/min"),
+     num("epi","Adrenalina","µg/kg/min"),num("norepi","Noradrenalina","µg/kg/min"),
+     num("mil","Milrinona","µg/kg/min"),num("vaso","Vasopressina","unidades/kg/min")],
+    "VIS = dopamina + dobutamina + 100×adrenalina + 100×noradrenalina + 10×milrinona + 10000×vasopressina (U/kg/min).",
+    v=>{const a=['dop','dob','epi','norepi','mil','vaso'].map(k=>+v[k]);need(a.every(x=>x>=0&&Number.isFinite(x)),"Doses devem ser não negativas.");return[a[0]+a[1]+100*a[2]+100*a[3]+10*a[4]+10000*a[5],"pontos VIS"];},
+    "Gaies MG et al. Pediatr Crit Care Med 2010;11:234–238; estudo brasileiro Rev Assoc Med Bras 2023 VIS.",
+    ()=>"Vasopressina DEVE ser informada em U/kg/min, não mU/kg/min nem U/min. Não há corte prognóstico único entre populações.");
+
+  add("Cardiovascular","Qp/Qs","Relação Qp/Qs por Doppler","Fluxo pulmonar relativo ao fluxo sistêmico","qpqs",
+    [num("rvd","Diâmetro do RVOT","cm"),num("rvvti","VTI do RVOT","cm"),
+     num("lvd","Diâmetro do LVOT","cm"),num("lvvti","VTI do LVOT","cm")],
+    "Qp/Qs = [π(RVOT/2)²×VTI RVOT]/[π(LVOT/2)²×VTI LVOT].",
+    v=>{need(+v.rvd>0&&+v.rvvti>0&&+v.lvd>0&&+v.lvvti>0,"Medidas inválidas.");return[Math.pow(+v.rvd/+v.lvd,2)*(+v.rvvti/+v.lvvti),""];},
+    "ASE echocardiography shunt assessment; Doppler volumetric continuity.",
+    ()=>"Medição depende da geometria e localização de amostragem; regurgitações e alterações de fluxo podem invalidar inferência do shunt.");
+
+  add("Cardiovascular","RVSP","Pressão sistólica de VD estimada (RVSP)","Estimativa ecocardiográfica por jato de regurgitação tricúspide","rvsp",
+    [num("trv","Velocidade máxima da regurgitação tricúspide","m/s"),
+     num("rap","Pressão atrial direita estimada","mmHg")],
+    "RVSP (mmHg) ≈ 4×(velocidade TR)² + pressão atrial direita estimada.",
+    v=>{need(+v.trv>0&&+v.trv<8&&+v.rap>=0&&+v.rap<=30,"Velocidade/pressão atrial inválidas.");return[4*Math.pow(+v.trv,2)+ +v.rap,"mmHg"];},
+    "ASE Right Heart Guideline 2025, atualização disponível em asecho.org.",
+    ()=>"Não estimar na ausência de jato mensurável ou com obstrução da via de saída do VD; IT importante pode distorcer o resultado.");
+
+  add("Cardiovascular","AVA","Área valvar aórtica por continuidade","Área efetiva da válvula aórtica por VTI","avacontinuity",
+    [num("d","Diâmetro do LVOT","cm"),num("vl","VTI do LVOT","cm"),num("va","VTI do jato aórtico","cm")],
+    "AVA (cm²) = π×(LVOT/2)² × VTI LVOT / VTI aórtico.",
+    v=>{need(+v.d>0&&+v.d<5&&+v.vl>0&&+v.va>0,"Medidas inválidas.");return[Math.PI*Math.pow(+v.d/2,2)*+v.vl/+v.va,"cm²"];},
+    "EACVI/ASE Recommendations on Aortic Valve Stenosis, EHJ Cardiovasc Imaging 2017;18:254–275.",
+    ()=>"Depende de medidas técnicas adequadas, estado de fluxo e achados ecocardiográficos adicionais. Não diagnosticar estenose isoladamente.");
+
+  add("Terapia Intensiva","O2ER","Fração de extração de oxigênio","Diferença arterial-venosa de conteúdo de oxigênio","o2er",
+    [num("ca","Conteúdo arterial de oxigênio CaO₂","mL/dL"),num("cv","Conteúdo venoso misto de oxigênio CvO₂","mL/dL")],
+    "Extração de O₂ (%) = 100 × (CaO₂ − CvO₂) / CaO₂.",
+    v=>{need(+v.ca>0&&+v.cv>=0&&+v.cv<=+v.ca,"CaO₂ deve ser >0 e CvO₂ não pode excedê-lo nesse modelo.");return[100*(+v.ca-+v.cv)/+v.ca,"%"];},
+    "Fisiologia de Fick e conteúdo de oxigênio; relação de extração arterial-venosa.",
+    ()=>"O conteúdo venoso deve representar coleta venosa mista quando a interpretação exigir. Diferença não determina perfusão adequada sozinha.");
+
+  add("Terapia Intensiva","PCO2Δ","Gradiente venoarterial de PCO₂","Diferença entre PCO₂ venosa e arterial","pco2gap",
+    [num("pv","PCO₂ venosa","mmHg"),num("pa","PCO₂ arterial","mmHg")],
+    "Gradiente (mmHg) = PvCO₂ − PaCO₂.",
+    v=>{need(+v.pv>=0&&+v.pa>=0,"PCO₂ deve ser não negativa.");return[+v.pv-+v.pa,"mmHg"];},
+    "Fisiologia hemodinâmica de diferença venoarterial de CO₂.",
+    ()=>"Preferir amostras coletadas em intervalo próximo; PvCO₂ venosa central e venosa mista não são intercambiáveis.");
+
+  for (const id of ["glucosecv","glucosetir","nnt","freeandrogen","correctwbc","vis",
+                    "rvsp","o2er","pco2gap"]) if (extra[id]) extra[id].allowZero=true;
+
+
+  // Lote 7: fórmulas adicionais, sem card duplicado com os catálogos atuais.
+  add("Renal","UOsm","Osmolalidade urinária calculada","Estimativa a partir de eletrólitos, nitrogênio ureico e glicose urinários","urineosmol",
+    [num("na","Sódio urinário","mmol/L"),num("k","Potássio urinário","mmol/L"),
+     num("uun","NITROGÊNIO ureico urinário (UUN, não ureia)","mg/dL"),num("glu","Glicose urinária","mg/dL")],
+    "Osm urinária estimada = 2×(Na+K) + UUN(mg/dL)/2,8 + glicose(mg/dL)/18.",
+    v=>{const a=["na","k","uun","glu"].map(x=>+v[x]);need(a.every(x=>Number.isFinite(x)&&x>=0),"Os analitos não podem ser negativos.");return[2*(a[0]+a[1])+a[2]/2.8+a[3]/18,"mOsm/L"];},
+    "Nephrol Dial Transplant 2020;35:1827–1832, doi:10.1093/ndt/gfaa165 (equação de osm urinária).",
+    ()=>"Equação aproximada: não substitui osmolalidade medida. O campo é UUN, não ureia urinária em massa.");
+
+  add("Renal","UOsmΔ","Gap osmolal urinário","Osmolalidade medida menos a calculada","urinegap",
+    [num("meas","Osmolalidade urinária MEDIDA","mOsm/kg"),num("na","Sódio urinário","mmol/L"),num("k","Potássio urinário","mmol/L"),
+     num("uun","Nitrogênio ureico urinário (UUN)","mg/dL"),num("glu","Glicose urinária","mg/dL")],
+    "Gap urinário = osm medida − [2×(UNa+UK) + UUN/2,8 + glicose/18].",
+    v=>{const a=["meas","na","k","uun","glu"].map(x=>+v[x]);need(a.every(x=>Number.isFinite(x)&&x>=0),"Analitos/osmolalidade inválidos.");return[a[0]-(2*(a[1]+a[2])+a[3]/2.8+a[4]/18),"mOsm/kg (aprox.)"];},
+    "Nephrol Dial Transplant 2020;35:1827–1832; review PMC5757610.",
+    ()=>"Diferença entre unidades mOsm/kg e mOsm/L cria pequena aproximação. Não interpretar como amônio urinário exato; interferências por outros solutos.");
+
+  add("Renal","EFWC","Clearance de água livre de eletrólitos","Estimativa de perda/retensão urinária de água em 24 horas","efwc",
+    [num("vol","Diurese coletada em 24 h","mL/24 h"),num("un","Sódio urinário","mEq/L"),
+     num("uk","Potássio urinário","mEq/L"),num("pn","Sódio plasmático","mEq/L")],
+    "C H₂O(e) (mL/24 h) = volume urinário × [1 − (Na urinário + K urinário)/Na plasmático].",
+    v=>{need(+v.vol>0&&+v.un>=0&&+v.uk>=0&&+v.pn>0,"Vol, Na e K inválidos.");return[+v.vol*(1-(+v.un+ +v.uk)/+v.pn),"mL/24 h"];},
+    "Electrolyte-free water clearance: review PMC8784663; Nephrol Dial Transplant 2020;35:1827–1832.",
+    n=>(n>0?"Valor positivo: perda renal de água livre de eletrólitos. ":"Valor não positivo: retenção relativa de água livre de eletrólitos. ")+"Não prediz sozinho a mudança de natremia.");
+
+  add("Endócrino","TyG","Índice triglicerídeos–glicose (TyG)","Marcador indireto de resistência insulínica","tyg",
+    [num("tg","Triglicerídeos EM JEJUM","mg/dL"),num("glu","Glicose EM JEJUM","mg/dL")],
+    "Versão TyG = ln[(TG × glicose)/2], ambos em mg/dL. Log natural.",
+    v=>{need(+v.tg>0&&+v.glu>0,"Medidas em jejum devem ser >0.");return[Math.log(+v.tg*+v.glu/2),""];},
+    "Front Endocrinol (Lausanne) 2026;17:1793587, PMC13128429; versão ln[(TG×G)/2].",
+    ()=>"Existem fórmulas publicadas com parênteses diferentes (ln[TG×G]/2). Não comparar limiares entre versões. Sem corte universal.");
+
+  add("Endócrino","QUICKI","Índice QUICKI","Índice de sensibilidade à insulina a partir de glicose/insulina em jejum","quicki",
+    [num("glu","Glicose em jejum","mg/dL"),num("ins","Insulina em jejum","µU/mL")],
+    "QUICKI = 1/[log10(glicose em mg/dL) + log10(insulina em µU/mL)].",
+    v=>{need(+v.glu>0&&+v.ins>0&&Math.log10(+v.glu)+Math.log10(+v.ins)>0,"Glicose/insulina não admitem zero e o denominador deve ser >0.");return[1/(Math.log10(+v.glu)+Math.log10(+v.ins)),""];},
+    "Endotext NCBI Bookshelf NBK278954, tabela de índices de sensibilidade à insulina.",
+    ()=>"A medida é um marcador indireto e não um diagnóstico de resistência à insulina.");
+
+  add("Endócrino","HOMA-β","HOMA-beta clássico","Estimativa basal de função das células beta pancreáticas","homabeta",
+    [num("glu","Glicose em jejum","mg/dL"),num("ins","Insulina em jejum","µU/mL")],
+    "HOMA-β (%) = 360 × insulina (µU/mL) / [glicose (mg/dL) − 63].",
+    v=>{need(+v.glu>63&&+v.ins>0,"Fórmula não aplicável quando glicose ≤63 mg/dL ou insulina ≤0.");return[360*+v.ins/(+v.glu-63),"% (modelo clássico)"];},
+    "OPAS / PAHO HOMA-IR/HOMA-Beta tool; Endotext insulin sensitivity indices.",
+    ()=>"Marcador de modelo basal, não porcentagem direta de células beta funcionais; distinguir de HOMA2 computacional.");
+
+  add("Endócrino","MATS","Índice de Matsuda (TOTG)","Estimativa de sensibilidade insulínica com valores basais e médios do TOTG","matsuda",
+    [num("g0","Glicose de jejum","mg/dL"),num("i0","Insulina de jejum","µU/mL"),
+     num("gm","Glicose MÉDIA de todas as coletas do TOTG","mg/dL"),num("im","Insulina MÉDIA de todas as coletas do TOTG","µU/mL")],
+    "ISI = 10000 / raiz[(glicose 0 × insulina 0) × (glicose média × insulina média)].",
+    v=>{const a=["g0","i0","gm","im"].map(x=>+v[x]);need(a.every(x=>x>0),"Todas as medidas e médias devem ser >0.");return[10000/Math.sqrt(a.reduce((p,x)=>p*x,1)),""];},
+    "Matsuda M, DeFronzo RA. Diabetes Care 1999;22:1462–1470. PMID 10480510; Endotext NBK278954.",
+    ()=>"As médias devem usar todos os tempos previstos no protocolo de TOTG utilizado, não apenas 0 e 120 min. Não há ponto de corte universal.");
+
+  add("Pediatria","PN-RN","Perda de peso neonatal","Percentual de perda em relação ao peso ao nascer","newbornweightloss",
+    [num("birth","Peso ao nascer","g"),num("current","Peso atual","g")],
+    "Perda (%) = (peso ao nascer − peso atual) / peso ao nascer × 100.",
+    v=>{need(+v.birth>0&&+v.current>0&&+v.current<=+v.birth,"Peso atual maior que o peso ao nascer não é perda; use avaliação de ganho de peso.");return[(+v.birth-+v.current)/+v.birth*100,"%"];},
+    "ABM Clinical Protocol #3, revised 2017; equação de perda ponderal percentual.",
+    ()=>"Não existe um único limite de perda seguro para todos os recém-nascidos; correlacionar com idade pós-natal, diurese, oferta e curvas apropriadas.");
+
+  add("Pediatria","KCAL-RN","Aporte enteral neonatal (kcal/kg/dia)","Energia ingerida a partir de volume e densidade calórica","neonatalkcal",
+    [num("vol","Volume ingerido em 24 horas","mL"),num("density","Densidade energética da dieta","kcal/100 mL"),
+     num("weight","Peso atual","kg")],
+    "kcal/kg/dia = volume total (mL/dia) × (kcal/100 mL)/100 ÷ peso (kg).",
+    v=>{need(+v.vol>0&&+v.density>0&&+v.weight>0,"Volume, densidade e peso devem ser positivos.");return[+v.vol*+v.density/(100*+v.weight),"kcal/kg/dia"];},
+    "Conversão dimensional; Anvisa RDC 976/2025 e RDC 1003/2025 para composição de fórmulas infantis.",
+    ()=>"Calcular apenas a ingestão efetiva, não prescrever automaticamente meta calórica. Densidade depende de leite humano, fortificação e fórmula.");
+
+  add("Nutrição","BAL-N","Balanço nitrogenado estimado","Estimativa nutricional pelo aporte de proteína e nitrogênio ureico urinário","nitrogenbalance",
+    [num("protein","Proteína recebida","g/dia"),num("uun","Nitrogênio ureico urinário TOTAL 24 h","g/dia")],
+    "Balanço N (g/d) ≈ proteína g/d ÷ 6,25 − UUN g/d − 4 g/d (perdas adicionais estimadas).",
+    v=>{need(+v.protein>=0&&+v.uun>=0,"Aporte e UUN não podem ser negativos.");return[+v.protein/6.25-+v.uun-4,"g N/dia"];},
+    "National Kidney Foundation nutrition assessment pocket guide, capítulo Nitrogen Balance; ACCP PSAP Nutrition 2005.",
+    ()=>"Estimativa inadequada sem coleta urinária íntegra; o termo +4 g de perdas pode não valer em sepse, drenagens, diálise ou grandes perdas.");
+
+  add("Cardiovascular","PAPi","Pulmonary Artery Pulsatility Index","Pressão pulsátil pulmonar em relação à pressão atrial direita","papi",
+    [num("pas","Pressão sistólica da artéria pulmonar","mmHg"),
+     num("pad","Pressão diastólica da artéria pulmonar","mmHg"),
+     num("rap","Pressão atrial direita","mmHg")],
+    "PAPi = (PAP sistólica − PAP diastólica)/pressão atrial direita.",
+    v=>{need(+v.pas>+v.pad&&+v.pad>=0&&+v.rap>0,"Pressões inconsistentes ou pressão atrial direita igual a zero.");return[(+v.pas-+v.pad)/+v.rap,""];},
+    "StatPearls NCBI Bookshelf NBK557404, Right Heart Catheterization: PAPi.",
+    ()=>"Interpretar no contexto de cateterismo, choque, hipertensão pulmonar e função de VD; sem ponto de corte universal.");
+
+  for(const id of ["urineosmol","urinegap","efwc","nitrogenbalance"])if(extra[id])extra[id].allowZero=true;
+
   for (const row of items) if (!C.some(x => x[4] === row[4])) C.push(row);
   for (const id of Object.keys(extra)) if (!defs[id]) defs[id] = extra[id];
   for (const id of Object.keys(msg)) if (!calcInterp[id]) calcInterp[id] = msg[id];
