@@ -102,17 +102,18 @@ test('APACHE II rejects invalid or missing clinical values',()=>{
   }
 });
 test('POSSUM requires all eighteen components with explicit ranges',()=>{
-  const s=scoreById('possum');assert.equal(s.questions.length,18);
+  const s=scoreById('possum');assert.equal(s.questions.length,19);
   const minima=s.questions.map(q=>Math.min(...q.options.map(o=>Number(o.value))));
   const maxima=s.questions.map(q=>Math.max(...q.options.map(o=>Number(o.value))));
   assert.equal(minima.slice(0,12).reduce((a,b)=>a+b,0),12);
-  assert.equal(minima.slice(12).reduce((a,b)=>a+b,0),6);
+  assert.equal(minima.slice(12,18).reduce((a,b)=>a+b,0),6);
   assert.equal(maxima.slice(0,12).reduce((a,b)=>a+b,0),88);
-  assert.equal(maxima.slice(12).reduce((a,b)=>a+b,0),48);
-  assert.equal(calculate('possum',[...Array(17).fill(1),'']).value,'—');
+  assert.equal(maxima.slice(12,18).reduce((a,b)=>a+b,0),48);
+  assert.equal(calculate('possum',[...Array(17).fill(1),'',0]).value,'—');
+  assert.equal(calculate('possum',[...Array(18).fill(1),-999]).value,'Incompleto');
 });
 test('P-POSSUM uses exact regression coefficients and subtotals',()=>{
-  const vals=[...Array(12).fill(1),...Array(6).fill(1)];
+  const vals=[...Array(12).fill(1),...Array(6).fill(1),0];
   const result=calculate('possum',vals);
   const risk=100/(1+Math.exp(-(-9.065+0.1692*12+0.1550*6)));
   assert.equal(result.value,'P-POSSUM: '+risk.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})+'% mortalidade');
