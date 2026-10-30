@@ -522,7 +522,7 @@ if (form) {
       display(payload.depth === "aula" ? "Preparando explicação detalhada…" : "Respondendo à sua pergunta…", "Leco está pensando");
     }
     if (prompt) appendUserMessage(prompt);
-    if (isLiveActive) speakText(isEstourado ? "Aham. Espera aí." : "Aham… deixa eu pensar.");
+    // Avoid cancel/speak races on mobile Safari while the real answer is in flight.
 
     const mascot = document.getElementById("alex-mascot");
     if (mascot?.playAnimation) {
