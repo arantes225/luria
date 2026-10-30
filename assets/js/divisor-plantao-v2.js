@@ -5,6 +5,20 @@
   const toMin=v=>{const [h,m]=String(v||"00:00").split(":").map(Number);return h*60+m;};
   const clock=m=>{const day=Math.floor(m/1440),n=((m%1440)+1440)%1440;return `${String(Math.floor(n/60)).padStart(2,"0")}:${String(n%60).padStart(2,"0")}${day>0?` (+${day} dia${day>1?"s":""})`:""}`;};
   const formatDuration=m=>`${Math.floor(m/60)}h${m%60?`${String(m%60).padStart(2,"0")}min`:""}`;
+
+  const PALETTE = [
+    { bg: "#3b82f6", text: "#fff" },
+    { bg: "#10b981", text: "#fff" },
+    { bg: "#8b5cf6", text: "#fff" },
+    { bg: "#f59e0b", text: "#fff" },
+    { bg: "#ec4899", text: "#fff" },
+    { bg: "#06b6d4", text: "#fff" },
+    { bg: "#14b8a6", text: "#fff" },
+    { bg: "#f97316", text: "#fff" }
+  ];
+
+  let currentCalculatedSlots = [];
+
   function settings(){
     const start=$("div-start").value;
     const hours=Number($("div-hours").value);
@@ -41,6 +55,77 @@
     $("div-custom-feedback").textContent=parts.some(x=>!Number.isFinite(x))?"Há períodos inválidos. Informe horas e minutos inteiros.":diff===0?"Todas as horas do plantão estão distribuídas.":diff>0?`Faltam ${formatDuration(diff)} para cobrir o plantão.`:`A divisão excede o plantão em ${formatDuration(-diff)}.`;
     $("div-custom-feedback").classList.toggle("fin-late",diff!==0);
   }
+
+  function renderTimeline(startMin, totalMin, slots, names, docs, mode) {
+    const track = $("div-timeline-bar");
+    if (!track) return;
+    track.innerHTML = "";
+    currentCalculatedSlots = [];
+
+    let elapsed = 0;
+    slots.forEach((min, i) => {
+      const name = names[i % docs] || `Plantonista ${i % docs + 1}`;
+      const color = PALETTE[i % PALETTE.length];
+      const sMin = startMin + elapsed;
+      const eMin = sMin + min;
+      const pct = (min / totalMin) * 100;
+
+      currentCalculatedSlots.push({ name, startMin: sMin, endMin: eMin, durMin: min, color });
+
+      const block = document.createElement("div");
+      block.className = "div-timeline-block";
+      block.style.width = `${pct}%`;
+      block.style.background = color.bg;
+      block.style.color = color.text;
+      block.title = `${name}: ${clock(sMin)} - ${clock(eMin)} (${formatDuration(min)})`;
+      block.innerHTML = `
+        <span class="div-timeline-label">${escapeHtml(name)}</span>
+        <span class="div-timeline-sub">${clock(sMin)} - ${clock(eMin)}</span>
+      `;
+      track.appendChild(block);
+      elapsed += min;
+    });
+
+    updateNowIndicator(startMin, totalMin);
+  }
+
+  function updateNowIndicator(startMin, totalMin) {
+    const nowIndicator = $("div-timeline-now");
+    const nowBanner = $("div-now-status");
+    if (!nowIndicator) return;
+
+    const now = new Date();
+    const nowMin = now.getHours() * 60 + now.getMinutes();
+
+    let elapsed = nowMin - startMin;
+    if (elapsed < 0) elapsed += 1440;
+
+    if (elapsed >= 0 && elapsed <= totalMin) {
+      const pct = (elapsed / totalMin) * 100;
+      nowIndicator.style.display = "block";
+      nowIndicator.style.left = `${pct}%`;
+
+      let cur = 0;
+      const activeSlot = currentCalculatedSlots.find(s => {
+        const sRel = cur;
+        const eRel = cur + s.durMin;
+        cur += s.durMin;
+        return elapsed >= sRel && elapsed < eRel;
+      });
+
+      if (nowBanner && activeSlot) {
+        nowBanner.hidden = false;
+        nowBanner.innerHTML = `
+          <span class="div-now-pulse"></span>
+          <span><strong>Momento Atual (${clock(nowMin)}):</strong> Repouso de <strong>${escapeHtml(activeSlot.name)}</strong> até às ${clock(activeSlot.endMin)}</span>
+        `;
+      }
+    } else {
+      nowIndicator.style.display = "none";
+      if (nowBanner) nowBanner.hidden = true;
+    }
+  }
+
   function calculate(){
     const {start,startMin,totalMin,docs,names,mode}=settings(),out=$("div-output");
     const error=$("div-feedback");
@@ -62,7 +147,35 @@
       elapsed+=min;
     });
     out.textContent=lines.join("\n");
+    renderTimeline(startMin, totalMin, slots, names, docs, mode);
   }
+
+  function applyPreset(preset) {
+    const startInput = $("div-start");
+    const hoursInput = $("div-hours");
+    const modeInput = $("div-mode");
+
+    if (preset === "noturno-12") {
+      if (startInput) startInput.value = "19:00";
+      if (hoursInput) hoursInput.value = "12";
+      if (modeInput) modeInput.value = "blocos";
+    } else if (preset === "diurno-12") {
+      if (startInput) startInput.value = "07:00";
+      if (hoursInput) hoursInput.value = "12";
+      if (modeInput) modeInput.value = "blocos";
+    } else if (preset === "24h") {
+      if (startInput) startInput.value = "07:00";
+      if (hoursInput) hoursInput.value = "24";
+      if (modeInput) modeInput.value = "rodadas";
+    } else if (preset === "noturno-rodadas") {
+      if (startInput) startInput.value = "19:00";
+      if (hoursInput) hoursInput.value = "12";
+      if (modeInput) modeInput.value = "rodadas";
+    }
+    renderCustom();
+    calculate();
+  }
+
   function init(){
     if(!$("div-calc-btn"))return;
     ["div-mode","div-docs","div-hours","div-names"].forEach(id=>$(id).addEventListener("change",renderCustom));
@@ -77,9 +190,24 @@
     $("div-calc-btn").addEventListener("click",calculate);
     $("div-copy-btn").addEventListener("click",async()=>{
       if(!$("div-output").textContent)return;
-      try{await navigator.clipboard.writeText($("div-output").textContent);$("div-copy-btn").textContent="Copiado!";setTimeout(()=>$("div-copy-btn").textContent="Copiar divisão",1500);}catch(_){alert("Não foi possível copiar automaticamente. Selecione o resultado para copiar.");}
+      try{
+        await navigator.clipboard.writeText($("div-output").textContent);
+        $("div-copy-btn").textContent="Copiado para o WhatsApp!";
+        setTimeout(()=>$("div-copy-btn").textContent="Copiar Divisão",1500);
+      }catch(_){
+        alert("Não foi possível copiar automaticamente. Selecione o resultado para copiar.");
+      }
     });
+
+    document.querySelectorAll(".div-quick-preset-btn").forEach(btn => {
+      btn.addEventListener("click", () => applyPreset(btn.dataset.preset));
+    });
+
     renderCustom();calculate();
+    setInterval(() => {
+      const {startMin, totalMin} = settings();
+      updateNowIndicator(startMin, totalMin);
+    }, 60000);
   }
   document.addEventListener("DOMContentLoaded",init);
   window.LuriaShiftDivisor={even,formatDuration};
