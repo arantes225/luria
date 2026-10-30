@@ -632,6 +632,39 @@ let currentPuckSource = null;
 let liveAudioContext = null;
 let audioPlaybackPending = false;
 let playbackGeneration = 0;
+let activeSpeechUtterance = null;
+let speechStartWatchdog = null;
+
+// On iOS/PWA the Web Speech API can refuse an asynchronous utterance after
+// network activity. Offer a user-gesture retry instead of silently hanging.
+function showSpeechRetry(text, onComplete) {
+  let button = document.getElementById("alex-voice-retry");
+  if (!button) {
+    button = document.createElement("button");
+    button.id = "alex-voice-retry";
+    button.type = "button";
+    button.className = "alex-action";
+    button.style.cssText = "min-height:40px;padding:0 12px;border:1px solid var(--accent);color:var(--text);background:var(--surface);border-radius:10px";
+    (liveCallBtn?.parentElement || document.getElementById("alex-mascot-card"))?.appendChild(button);
+  }
+  button.textContent = "🔊 Toque para ativar a voz";
+  button.hidden = false;
+  button.onclick = () => {
+    button.hidden = true;
+    // A microphone session must not record the assistant replaying its answer.
+    if (liveRecognition) {
+      try { liveRecognition.abort(); } catch {}
+      liveRecognition = null;
+    }
+    unlockLiveAudio();
+    speakText(text, onComplete);
+  };
+}
+
+function hideSpeechRetry() {
+  const button = document.getElementById("alex-voice-retry");
+  if (button) button.hidden = true;
+}
 
 function setStopResponseVisible(visible) {
   if (!stopResponseBtn) return;
@@ -648,7 +681,7 @@ function unlockLiveAudio() {
     if (!liveAudioContext || liveAudioContext.state === "closed") {
       liveAudioContext = new Context();
     }
-    if (liveAudioContext.state === "suspended") {
+    if (liveAudioContext.state !== "running") {
       liveAudioContext.resume().catch(() => {});
     }
     const silent = liveAudioContext.createBufferSource();
@@ -663,6 +696,10 @@ function unlockLiveAudio() {
 function stopCurrentVoicePlayback() {
   playbackGeneration += 1;
   speechGeneration += 1;
+  clearTimeout(speechStartWatchdog);
+  speechStartWatchdog = null;
+  activeSpeechUtterance = null;
+  hideSpeechRetry();
   audioPlaybackPending = false;
   if (currentPuckSource) {
     try { currentPuckSource.onended = null; currentPuckSource.stop(); } catch {}
@@ -726,11 +763,25 @@ async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackTe
   // Compatível com WAV unário do Gemini 3.8. A sessão de áudio já começou no clique.
   if (liveAudioContext) {
     try {
-      if (liveAudioContext.state === "suspended") await liveAudioContext.resume();
+      if (liveAudioContext.state !== "running") await liveAudioContext.resume();
+      if (liveAudioContext.state !== "running") throw new Error("audio_context_not_running");
       const raw = atob(base64Audio);
       const bytes = new Uint8Array(raw.length);
       for (let i = 0; i < raw.length; i++) bytes[i] = raw.charCodeAt(i);
-      const decoded = await liveAudioContext.decodeAudioData(bytes.buffer);
+      // Gemini can return signed 16-bit PCM instead of a WAV container.
+      // decodeAudioData does not accept raw PCM on Safari or Chrome.
+      let decoded;
+      if (/^audio\/pcm(?:;|$)/i.test(mimeType || "")) {
+        const rate = Number(/rate=(\d+)/i.exec(mimeType)?.[1] || 24000);
+        if (rate < 8000 || rate > 96000 || bytes.length < 2) throw new Error("invalid_pcm_audio");
+        const count = Math.floor(bytes.length / 2);
+        decoded = liveAudioContext.createBuffer(1, count, rate);
+        const samples = decoded.getChannelData(0);
+        const pcm = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
+        for (let i = 0; i < count; i++) samples[i] = pcm.getInt16(i * 2, true) / 32768;
+      } else {
+        decoded = await liveAudioContext.decodeAudioData(bytes.buffer);
+      }
       if (!isLiveActive || generation !== playbackGeneration) return;
       const source = liveAudioContext.createBufferSource();
       source.buffer = decoded;
@@ -761,15 +812,13 @@ async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackTe
 }
 
 function speakText(text, onComplete) {
+  const status = document.getElementById("alex-status-text");
   if (!("speechSynthesis" in window) || typeof window.SpeechSynthesisUtterance !== "function") {
-    const status = document.getElementById("alex-status-text");
-    if (status) status.textContent = "Este navegador não oferece síntese de voz. A resposta está no chat.";
+    if (status) status.textContent = "Este navegador não suporta voz do dispositivo. Ative voz natural em uma aula ao vivo.";
     audioPlaybackPending = false;
     if (onComplete) onComplete();
     return;
   }
-  const generation = ++speechGeneration;
-  window.speechSynthesis.cancel();
 
   const plainText = String(text || "")
     .replace(/\*\*(.*?)\*\*/g, "$1")
@@ -778,11 +827,17 @@ function speakText(text, onComplete) {
     .replace(/\[(.*?)\]\(.*?\)/g, "$1")
     .replace(/<[^>]*>/g, "")
     .trim();
-
   if (!plainText) {
     if (onComplete) onComplete();
     return;
   }
+
+  const generation = ++speechGeneration;
+  clearTimeout(speechStartWatchdog);
+  speechStartWatchdog = null;
+  activeSpeechUtterance = null;
+  hideSpeechRetry();
+  try { window.speechSynthesis.cancel(); } catch {}
 
   const modeToggle = document.getElementById("alex-mode-toggle");
   const isEstourado = (modeToggle?.getAttribute("aria-checked") === "true") ||
@@ -791,8 +846,8 @@ function speakText(text, onComplete) {
 
   audioPlaybackPending = true;
   const utterance = new SpeechSynthesisUtterance(plainText);
+  activeSpeechUtterance = utterance; // keep a strong reference; iOS may GC queued utterances
   utterance.lang = "pt-BR";
-  // Cadência e tom calibrados conforme especificação do AI Studio:
   utterance.rate = isEstourado ? 1.25 : 1.04;
   utterance.pitch = isEstourado ? 0.82 : 1.0;
 
@@ -803,9 +858,31 @@ function speakText(text, onComplete) {
   } catch {}
 
   const mascot = document.getElementById("alex-mascot");
+  let speechDone = false;
+  let speechStarted = false;
+  const releaseSpeech = () => {
+    clearTimeout(speechStartWatchdog);
+    speechStartWatchdog = null;
+    activeSpeechUtterance = null;
+    audioPlaybackPending = false;
+    setStopResponseVisible(false);
+    if (mascot) mascot.speaking = false;
+  };
+  const failSpeech = error => {
+    if (speechDone || generation !== speechGeneration) return;
+    speechDone = true;
+    releaseSpeech();
+    if (status) status.textContent = "⚠️ A resposta chegou, mas o áudio foi bloqueado. Toque para ativar a voz.";
+    console.warn("[Leco Voice] Não foi possível iniciar a fala:", error || "audio_blocked");
+    showSpeechRetry(plainText, onComplete);
+  };
   utterance.onstart = () => {
     if (generation !== speechGeneration) return;
+    speechStarted = true;
+    clearTimeout(speechStartWatchdog);
+    speechStartWatchdog = null;
     setStopResponseVisible(true);
+    if (status) status.textContent = "🔊 Leco está falando...";
     if (mascot) {
       mascot.speaking = true;
       if (typeof mascot.playAnimation === "function") {
@@ -814,33 +891,37 @@ function speakText(text, onComplete) {
       }
     }
   };
-
-  let speechDone = false;
-  const endSpeech = () => {
+  utterance.onend = () => {
     if (speechDone || generation !== speechGeneration) return;
     speechDone = true;
-    audioPlaybackPending = false;
-    setStopResponseVisible(false);
-    if (mascot) mascot.speaking = false;
+    releaseSpeech();
     if (onComplete) onComplete();
   };
-
-  utterance.onend = endSpeech;
-  utterance.onerror = () => {
-    const status = document.getElementById("alex-status-text");
-    if (status) status.textContent = "Não foi possível reproduzir áudio. Verifique o volume e as permissões do navegador.";
-    endSpeech();
-  };
-  window.speechSynthesis.speak(utterance);
+  utterance.onerror = event => failSpeech(event?.error || "tts_error");
+  try {
+    window.speechSynthesis.speak(utterance);
+    if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+    // Some installed Safari PWAs neither start nor fire onerror after an async
+    // call. Never leave the live session in an indefinite "speaking" state.
+    speechStartWatchdog = setTimeout(() => {
+      if (generation !== speechGeneration || speechDone || speechStarted) return;
+      try { window.speechSynthesis.resume(); } catch {}
+      speechStartWatchdog = setTimeout(() => {
+        if (!speechStarted) failSpeech("speech_start_timeout");
+      }, 3500);
+    }, 4500);
+  } catch (error) {
+    failSpeech(error?.name || "speak_failed");
+  }
 }
 
 function initLiveVoiceMode() {
   if (!liveCallBtn) return;
   const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
   if (!SpeechRec) {
-    liveCallBtn.title = "Navegador não suporta reconhecimento de voz contínuo.";
-    liveCallBtn.style.opacity = "0.7";
-    return;
+    // iOS installed PWAs may lack SpeechRecognition while playback still works.
+    // Keep live voice output available when questions are typed.
+    liveCallBtn.title = "Ativar respostas em voz alta. O microfone contínuo não está disponível neste navegador.";
   }
 
   liveCallBtn.addEventListener("click", () => {
@@ -855,13 +936,18 @@ function initLiveVoiceMode() {
     liveCallBtn.classList.add("is-active");
     if (liveCallText) liveCallText.textContent = "Encerrar Conversa ao Vivo";
     const statusText = document.getElementById("alex-status-text");
-    if (statusText) statusText.textContent = "🎙️ Conversa ao vivo ativa! Fale sua dúvida clínica...";
+    if (statusText) statusText.textContent = SpeechRec
+      ? "🔊 Ativando voz do Leco..." : "🔊 Voz ativa! Digite uma pergunta para ouvir a resposta.";
     const mascot = document.getElementById("alex-mascot");
     if (mascot && typeof mascot.playAnimation === "function") {
       mascot.expression = "attentive";
       mascot.playAnimation("listening");
     }
-    startListening();
+    // First utterance must originate in the click gesture on mobile Safari.
+    // Do not listen until the greeting finishes (avoids recording Leco's voice).
+    speakText(SpeechRec ? "Pronto! Pode perguntar." : "Voz ativada. Digite sua pergunta.", () => {
+      if (isLiveActive && SpeechRec) startListening();
+    });
   }
 
   function stopLiveMode() {
@@ -887,7 +973,7 @@ function initLiveVoiceMode() {
 
   startLiveListening = startListening;
   function startListening() {
-    if (!isLiveActive || liveRecognition || audioPlaybackPending || currentPuckSource || currentPuckAudio || submit?.disabled) return;
+    if (!SpeechRec || !isLiveActive || liveRecognition || audioPlaybackPending || currentPuckSource || currentPuckAudio || submit?.disabled) return;
     try {
       liveRecognition = new SpeechRec();
       const recognition = liveRecognition;
