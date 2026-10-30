@@ -104,6 +104,7 @@ test("Voice mode works with typed prompts even without browser speech recognitio
   assert.match(src, /speakText\(SpeechRec \? "Pronto! Pode perguntar\."/);
   assert.match(src, /if \(!SpeechRec \|\| !isLiveActive/);
   assert.match(src, /showSpeechRetry\(plainText, onComplete\)/);
+  assert.ok(src.includes('new URLSearchParams(window.location.search).get("voice") === "1"'));
   assert.doesNotMatch(src, /if \(isLiveActive\) speakText\(isEstourado \?/);
 });
 
