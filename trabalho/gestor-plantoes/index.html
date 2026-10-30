@@ -11,35 +11,82 @@
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-<script src="/assets/js/ui-routes.js?v=1"></script>
+  <script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261025-work-spotlight">
+  <link rel="stylesheet" href="/assets/css/work-plantoes.css?v=20261030-v2">
   <style>
-    .gm-shell{display:grid;gap:16px}
-    .gm-hero{padding:22px 24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}\n    .gm-hero-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
-    .gm-hero h2{margin:0 0 7px;font-size:24px}
-    .gm-hero p{max-width:760px;margin:0;color:var(--muted);line-height:1.55}
-    .gm-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-    .gm-card{min-height:205px;display:flex;flex-direction:column;padding:20px;border:1px solid var(--border);border-radius:17px;background:var(--surface);color:var(--text);text-decoration:none;box-shadow:0 6px 20px rgba(15,23,42,.035);transition:transform .15s,border-color .15s,box-shadow .15s}
+    .gm-shell{display:grid;gap:18px}
+    .gm-hero{padding:22px 24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+    .gm-hero h2{margin:0 0 7px;font-size:24px;font-weight:900}
+    .gm-hero p{max-width:760px;margin:0;color:var(--muted);line-height:1.55;font-size:13.5px}
+
+    /* Radar ao Vivo */
+    .gm-radar-wrap{display:grid;gap:12px}
+    .gm-radar-card{padding:20px 24px;border-radius:18px;border:1px solid var(--border);background:var(--surface);display:grid;gap:14px;box-shadow:0 8px 30px rgba(0,0,0,.04);position:relative;overflow:hidden}
+    .gm-radar-card.live{border-color:rgba(16,185,129,.4);background:radial-gradient(ellipse at top left,rgba(16,185,129,.07),transparent 65%),var(--surface)}
+    .gm-radar-card.upcoming{border-color:rgba(59,130,246,.35);background:radial-gradient(ellipse at top left,rgba(59,130,246,.06),transparent 65%),var(--surface)}
+    .gm-radar-card.empty{border-style:dashed}
+    
+    .gm-radar-badge-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .gm-radar-live-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;background:rgba(16,185,129,.15);color:#10b981;font-size:11px;font-weight:900;letter-spacing:0.04em}
+    .gm-radar-upcoming-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;background:rgba(59,130,246,.15);color:#3b82f6;font-size:11px;font-weight:900;letter-spacing:0.04em}
+    .gm-radar-pulse{width:7px;height:7px;border-radius:50%;background:#10b981;box-shadow:0 0 0 0 rgba(16,185,129,.7);animation:gm-pulse 1.8s infinite}
+    @keyframes gm-pulse{0%{transform:scale(.95);box-shadow:0 0 0 0 rgba(16,185,129,.7)}70%{transform:scale(1);box-shadow:0 0 0 8px rgba(16,185,129,0)}100%{transform:scale(.95);box-shadow:0 0 0 0 rgba(16,185,129,0)}}
+    .gm-radar-time{font-size:12px;color:var(--muted);font-weight:700}
+
+    .gm-radar-body{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+    .gm-radar-info h3{margin:0 0 4px;font-size:20px;font-weight:900;color:var(--text)}
+    .gm-radar-info p{margin:0;color:var(--muted);font-size:13px}
+    .gm-radar-metric{text-align:right}
+    .gm-radar-metric strong{display:block;font-size:26px;font-weight:950;color:var(--text);line-height:1}
+    .gm-radar-metric small{display:block;margin-top:4px;font-size:11px;color:var(--muted);text-transform:uppercase;font-weight:700}
+    .gm-radar-metric.countdown strong{font-size:20px;color:var(--accent)}
+
+    .gm-radar-progress-bar{height:6px;border-radius:999px;background:var(--surface-2);overflow:hidden}
+    .gm-radar-progress-fill{height:100%;background:linear-gradient(90deg,#10b981,#059669);border-radius:999px;transition:width .4s}
+
+    .gm-radar-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .gm-radar-btn{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 14px;border-radius:10px;font-size:12px;font-weight:800;text-decoration:none;cursor:pointer;transition:transform .12s,background .12s}
+    .gm-radar-btn:hover{transform:translateY(-1px)}
+    .gm-radar-btn.primary{background:var(--accent);color:#fff;border:1px solid var(--accent)}
+    .gm-radar-btn.secondary{background:var(--surface-2);color:var(--text);border:1px solid var(--border)}
+
+    /* Resumo Rápido */
+    .gm-summary-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+    .gm-summary-card{padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:var(--surface);display:flex;flex-direction:column;gap:4px}
+    .gm-sum-label{font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--muted);letter-spacing:0.04em}
+    .gm-sum-val{font-size:19px;font-weight:900;color:var(--text)}
+    .gm-sum-sub{font-size:11px;color:var(--muted)}
+    .text-success{color:#10b981!important}
+    .text-warning{color:#f59e0b!important}
+
+    /* Grid de Módulos */
+    .gm-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+    .gm-card{min-height:210px;display:flex;flex-direction:column;padding:20px;border:1px solid var(--border);border-radius:17px;background:var(--surface);color:var(--text);text-decoration:none;box-shadow:0 6px 20px rgba(15,23,42,.035);transition:transform .15s,border-color .15s,box-shadow .15s}
     .gm-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 10px 28px rgba(15,23,42,.07)}
-    .gm-icon{width:44px;height:44px;display:grid;place-items:center;margin-bottom:20px;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-size:21px;font-weight:900}
-    .gm-card h3{margin:0 0 7px;font-size:18px}
+    .gm-icon{width:44px;height:44px;display:grid;place-items:center;margin-bottom:16px;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-size:20px;font-weight:900}
+    .gm-card h3{margin:0 0 6px;font-size:17px;font-weight:800}
     .gm-card p{margin:0;color:var(--muted);font-size:12px;line-height:1.5}
-    .gm-open{margin-top:auto;padding-top:18px;color:var(--accent);font-size:11px;font-weight:850}
+    .gm-open{margin-top:auto;padding-top:16px;color:var(--accent);font-size:11.5px;font-weight:850}
+
+    /* Segurança */
     .gm-security-row{display:flex;justify-content:flex-end}
-    .gm-security-card{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;padding:14px 16px;border:1px solid var(--border);border-radius:15px;background:var(--surface)}
-    .gm-security-copy{min-width:0}.gm-security-copy strong{display:block;font-size:14px}.gm-security-copy span{display:block;margin-top:3px;color:var(--muted);font-size:11px;line-height:1.4}
-    .gm-security-actions{display:flex;gap:8px;flex-wrap:wrap}.gm-security-action{min-height:38px;padding:0 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font-size:11px;font-weight:850;cursor:pointer}.gm-security-action:hover{border-color:var(--accent);color:var(--accent)}
-    @media(max-width:700px){.gm-security-card{align-items:flex-start;flex-direction:column}.gm-security-actions{width:100%}.gm-security-action{flex:1}}
-    @media(max-width:900px){.gm-grid{grid-template-columns:1fr}}
-    @media(max-width:700px){.gm-hero{padding:17px}.gm-card{min-height:150px;padding:16px}.gm-icon{margin-bottom:14px}}
+    .gm-security-card{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;padding:14px 18px;border:1px solid var(--border);border-radius:15px;background:var(--surface)}
+    .gm-security-copy{min-width:0}
+    .gm-security-copy strong{display:block;font-size:13.5px;font-weight:800}
+    .gm-security-copy span{display:block;margin-top:3px;color:var(--muted);font-size:11.5px;line-height:1.4}
+    .gm-security-actions{display:flex;gap:8px;flex-wrap:wrap}
+    .gm-security-action{min-height:38px;padding:0 14px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font-size:11.5px;font-weight:850;cursor:pointer}
+    .gm-security-action:hover{border-color:var(--accent);color:var(--accent)}
+
+    @media(max-width:1020px){.gm-grid{grid-template-columns:repeat(2,1fr)}.gm-summary-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:680px){.gm-grid{grid-template-columns:1fr}.gm-summary-grid{grid-template-columns:1fr}.gm-security-card{flex-direction:column;align-items:flex-start}.gm-security-actions{width:100%}.gm-security-action{width:100%}}
   </style>
-<link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
-<link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
-
-
+  <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
+  <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
 </head>
 <body data-page="trabalho_gestor_plantoes" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
@@ -60,45 +107,62 @@
         <section class="luria-page-spotlight" aria-label="Gestor de Plantões">
           <div class="luria-page-spotlight-copy">
             <strong data-page-title>Gestor de Plantões</strong>
-            <small class="luria-page-spotlight-helper">Organize sua rotina de plantões em um só lugar.</small>
+            <small class="luria-page-spotlight-helper">Organize sua rotina, escalas, descanso de equipe e faturamento em um só lugar.</small>
           </div>
         </section>
 
         <section class="gm-shell">
+          <!-- Hero -->
           <article class="gm-hero">
             <h2>Gestor de Plantões</h2>
-            <p>Escala, divisão de plantão e controle financeiro reunidos em um único lugar.</p>
+            <p>Seu centro de controle integrado: acompanhamento em tempo real do plantão ativo, divisão inteligente de descanso, escala mensal e gestão financeira de repasses.</p>
           </article>
-          <div class="gm-security-row">
-            <div class="gm-security-card">
-              <div class="gm-security-copy">
-                <strong>Segurança do Gestor de Plantões</strong>
-                <span>Troque o PIN, altere o tipo de proteção, use a senha da conta ou remova a proteção quando quiser.</span>
-              </div>
-              <div class="gm-security-actions">
-                <button id="gm-security" class="gm-security-action" type="button">Segurança</button>
-              </div>
-            </div>
-          </div>
+
+          <!-- Radar Inteligente de Plantão Ao Vivo -->
+          <div id="gm-smart-radar" class="gm-radar-wrap"></div>
+
+          <!-- Métricas Rápidas do Mês -->
+          <div id="gm-summary-metrics" class="gm-summary-grid"></div>
+
+          <!-- Grid de Módulos Especializados -->
           <div class="gm-grid">
             <a class="gm-card" href="/trabalho/plantoes/">
               <span class="gm-icon" aria-hidden="true">▦</span>
               <h3>Escala</h3>
-              <p>Organize seus plantões, datas, horários e locais de trabalho.</p>
+              <p>Organize datas, horários, hospitais, setores e visualização em calendário mensal.</p>
               <span class="gm-open">Abrir escala →</span>
             </a>
             <a class="gm-card" href="/trabalho/divisor-plantao/">
               <span class="gm-icon" aria-hidden="true">÷</span>
               <h3>Divisor de Plantão</h3>
-              <p>Divida horários e períodos do plantão entre os profissionais.</p>
+              <p>Distribua horários de descanso com régua visual, presets inteligentes e cópia para WhatsApp.</p>
               <span class="gm-open">Abrir divisor →</span>
+            </a>
+            <a class="gm-card" href="/trabalho/passometro/">
+              <span class="gm-icon" aria-hidden="true">📋</span>
+              <h3>Passagem de Plantão</h3>
+              <p>Organize leitos, intercorrências, pendências de exames e checklist de pacientes.</p>
+              <span class="gm-open">Abrir passômetro →</span>
             </a>
             <a class="gm-card" href="/trabalho/financeiro/">
               <span class="gm-icon" aria-hidden="true">$</span>
-              <h3>Financeiro</h3>
-              <p>Acompanhe pagamentos, repasses e valores relacionados aos seus plantões.</p>
+              <h3>Financeiro & Repasses</h3>
+              <p>Controle previsões de repasse, valores recebidos, pendências por hospital e remuneração/hora.</p>
               <span class="gm-open">Abrir financeiro →</span>
             </a>
+          </div>
+
+          <!-- Card de Proteção / Segurança -->
+          <div class="gm-security-row">
+            <div class="gm-security-card">
+              <div class="gm-security-copy">
+                <strong>Segurança do Gestor de Plantões</strong>
+                <span>Troque o PIN, configure autenticação biométrica/senha ou proteja o acesso a valores financeiros.</span>
+              </div>
+              <div class="gm-security-actions">
+                <button id="gm-security" class="gm-security-action" type="button">Segurança</button>
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -108,6 +172,7 @@
 <script src="/assets/js/supabase.js?v=auth4"></script>
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script src="/assets/js/shift-manager-security.js?v=4-fixed"></script>
+<script src="/assets/js/gestor-plantoes-hub.js?v=20261030-v1"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>

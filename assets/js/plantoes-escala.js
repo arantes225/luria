@@ -35,11 +35,13 @@
     return isoDate;
   }
 
+  let activeView = "list"; // 'list' ou 'calendar'
+  let currentMonthOffset = 0; // 0 = mês atual
+
   function renderStats(shifts) {
-    const totalCount = shifts.length;
     const now = new Date();
     const currentYear = now.getFullYear();
-    const currentMonth = now.getMonth(); // 0-indexed
+    const currentMonth = now.getMonth();
 
     const thisMonthShifts = shifts.filter(s => {
       if (!s.date) return false;
@@ -62,6 +64,17 @@
     if (elPaidCount) elPaidCount.textContent = `${paidShifts} de ${thisMonthShifts.length} pagos`;
   }
 
+  function checkConflicts(shift, allShifts) {
+    const conflicts = [];
+    allShifts.forEach(other => {
+      if (other.id === shift.id) return;
+      if (other.date === shift.date) {
+        conflicts.push(`Mesmo dia: plantão concorrente em ${other.place}`);
+      }
+    });
+    return conflicts;
+  }
+
   function renderList(shifts) {
     const listEl = document.getElementById("shifts-list-container");
     if (!listEl) return;
@@ -77,12 +90,12 @@
       return;
     }
 
-    // Ordenar por data decrescente
     const sorted = [...shifts].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
 
     listEl.innerHTML = sorted.map((s, idx) => {
       const statusBadgeClass = s.status === "pago" ? "status-paid" : s.status === "trocado" ? "status-swapped" : "status-pending";
       const statusLabel = s.status === "pago" ? "Pago" : s.status === "trocado" ? "Trocado / Cedido" : "Aguardando Repasse";
+      const conflicts = checkConflicts(s, shifts);
 
       return `
         <div class="shift-item-card" data-id="${s.id || idx}">
@@ -97,10 +110,17 @@
               <span class="shift-status-badge ${statusBadgeClass}">${statusLabel}</span>
             </div>
           </div>
+          ${conflicts.length ? `<div class="shift-conflict-warning">⚠️ Alerta de escala: ${conflicts.join(", ")}</div>` : ""}
           ${s.notes ? `<div class="shift-item-notes">${escapeHtml(s.notes)}</div>` : ""}
           <div class="shift-item-actions">
             <button class="shift-action-btn" type="button" data-action="toggle-status" data-id="${s.id}">
               ${s.status === "pago" ? "Marcar como Pendente" : "Marcar como Pago"}
+            </button>
+            <button class="shift-action-btn" type="button" data-action="duplicate" data-id="${s.id}">
+              Duplicar
+            </button>
+            <button class="shift-action-btn" type="button" data-action="ics" data-id="${s.id}">
+              📅 Adicionar à Agenda
             </button>
             <button class="shift-action-btn danger" type="button" data-action="delete" data-id="${s.id}">
               Remover
@@ -109,6 +129,117 @@
         </div>
       `;
     }).join("");
+  }
+
+  function renderCalendar(shifts) {
+    const calendarContainer = document.getElementById("shifts-calendar-container");
+    if (!calendarContainer) return;
+
+    const baseDate = new Date();
+    baseDate.setMonth(baseDate.getMonth() + currentMonthOffset);
+    const year = baseDate.getFullYear();
+    const month = baseDate.getMonth();
+
+    const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const firstDayIndex = new Date(year, month, 1).getDay();
+
+    const shiftsInMonth = shifts.filter(s => {
+      if (!s.date) return false;
+      const [y, m] = s.date.split("-").map(Number);
+      return y === year && m === month + 1;
+    });
+
+    let daysHtml = "";
+    // Dias em branco antes do dia 1
+    for (let i = 0; i < firstDayIndex; i++) {
+      daysHtml += `<div class="cal-day empty"></div>`;
+    }
+
+    const todayStr = new Date().toISOString().split("T")[0];
+
+    for (let d = 1; d <= daysInMonth; d++) {
+      const dayIso = `${year}-${String(month + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+      const dayShifts = shiftsInMonth.filter(s => s.date === dayIso);
+      const isToday = dayIso === todayStr;
+
+      daysHtml += `
+        <div class="cal-day ${isToday ? "today" : ""} ${dayShifts.length ? "has-shift" : ""}">
+          <div class="cal-day-num">${d}</div>
+          <div class="cal-day-shifts">
+            ${dayShifts.map(s => `
+              <div class="cal-chip ${s.status === "pago" ? "paid" : "pending"}" title="${s.place} (${s.duration}h - ${formatBRL(s.value)})">
+                <strong>${escapeHtml(s.place.substring(0, 14))}</strong>
+                <small>${s.duration}h • ${formatBRL(s.value)}</small>
+              </div>
+            `).join("")}
+          </div>
+        </div>
+      `;
+    }
+
+    calendarContainer.innerHTML = `
+      <div class="cal-header">
+        <button type="button" class="shift-action-btn" id="cal-prev-month">◀ Mês Anterior</button>
+        <strong class="cal-title">${monthNames[month]} de ${year}</strong>
+        <button type="button" class="shift-action-btn" id="cal-next-month">Próximo Mês ▶</button>
+      </div>
+      <div class="cal-weekdays">
+        <span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span>
+      </div>
+      <div class="cal-grid">
+        ${daysHtml}
+      </div>
+    `;
+
+    document.getElementById("cal-prev-month")?.addEventListener("click", () => {
+      currentMonthOffset--;
+      renderCalendar(getShifts());
+    });
+    document.getElementById("cal-next-month")?.addEventListener("click", () => {
+      currentMonthOffset++;
+      renderCalendar(getShifts());
+    });
+  }
+
+  function downloadIcs(shift) {
+    if (!shift.date) return;
+    const [y, m, d] = shift.date.split("-");
+    const dur = Number(shift.duration) || 12;
+    let startHour = "070000";
+    let endHour = "190000";
+
+    const t = (shift.shiftType || "").toLowerCase();
+    if (t.includes("noturno")) {
+      startHour = "190000";
+      endHour = "070000";
+    }
+
+    const startIso = `${y}${m}${d}T${startHour}`;
+    const endIso = `${y}${m}${d}T${endHour}`;
+
+    const icsContent = [
+      "BEGIN:VCALENDAR",
+      "VERSION:2.0",
+      "PRODID:-//LURIA Gestor de Plantoes//BR",
+      "BEGIN:VEVENT",
+      `SUMMARY:Plantão: ${shift.place} (${shift.sector || ""})`,
+      `DESCRIPTION:Turno de ${dur}h - ${shift.shiftType}. Previsto: ${formatBRL(shift.value)}. Obs: ${shift.notes || ""}`,
+      `LOCATION:${shift.place}`,
+      `DTSTART:${startIso}`,
+      `DTEND:${endIso}`,
+      "STATUS:CONFIRMED",
+      "END:VEVENT",
+      "END:VCALENDAR"
+    ].join("\r\n");
+
+    const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `plantao_${shift.date}_${shift.place.replace(/\s+/g, "_")}.ics`;
+    a.click();
+    URL.revokeObjectURL(url);
   }
 
   function escapeHtml(str) {
@@ -123,11 +254,9 @@
   function setupEvents() {
     const form = document.getElementById("add-shift-form");
     if (form) {
-      // Set default date to today
       const dateInput = document.getElementById("shift-date");
       if (dateInput && !dateInput.value) {
-        const today = new Date().toISOString().split("T")[0];
-        dateInput.value = today;
+        dateInput.value = new Date().toISOString().split("T")[0];
       }
 
       form.addEventListener("submit", (e) => {
@@ -164,8 +293,8 @@
 
         renderStats(current);
         renderList(current);
+        renderCalendar(current);
 
-        // Reset fields
         document.getElementById("shift-place").value = "";
         document.getElementById("shift-sector").value = "";
         document.getElementById("shift-val").value = "";
@@ -189,15 +318,54 @@
             saveShifts(shifts);
             renderStats(shifts);
             renderList(shifts);
+            renderCalendar(shifts);
           }
+        } else if (action === "duplicate") {
+          const shift = shifts.find(s => s.id === id);
+          if (shift) {
+            const copy = { ...shift, id: "shift_" + Date.now() + "_" + Math.random().toString(36).substring(2, 7) };
+            shifts.push(copy);
+            saveShifts(shifts);
+            renderStats(shifts);
+            renderList(shifts);
+            renderCalendar(shifts);
+          }
+        } else if (action === "ics") {
+          const shift = shifts.find(s => s.id === id);
+          if (shift) downloadIcs(shift);
         } else if (action === "delete") {
           if (confirm("Deseja realmente remover este plantão da sua escala?")) {
             const filtered = shifts.filter(s => s.id !== id);
             saveShifts(filtered);
             renderStats(filtered);
             renderList(filtered);
+            renderCalendar(filtered);
           }
         }
+      });
+    }
+
+    // Toggle de Visualização (Lista vs Calendário)
+    const toggleListBtn = document.getElementById("view-toggle-list");
+    const toggleCalBtn = document.getElementById("view-toggle-cal");
+    const listWrapper = document.getElementById("shifts-list-wrapper");
+    const calWrapper = document.getElementById("shifts-calendar-wrapper");
+
+    if (toggleListBtn && toggleCalBtn) {
+      toggleListBtn.addEventListener("click", () => {
+        activeView = "list";
+        toggleListBtn.classList.add("active");
+        toggleCalBtn.classList.remove("active");
+        if (listWrapper) listWrapper.hidden = false;
+        if (calWrapper) calWrapper.hidden = true;
+      });
+      toggleCalBtn.addEventListener("click", () => {
+        activeView = "calendar";
+        toggleCalBtn.classList.add("active");
+        toggleListBtn.classList.remove("active");
+        if (listWrapper) listWrapper.hidden = true;
+        if (calWrapper) calWrapper.hidden = false;
+        renderCalendar(getShifts());
       });
     }
 
@@ -229,6 +397,7 @@
     const shifts = getShifts();
     renderStats(shifts);
     renderList(shifts);
+    renderCalendar(shifts);
     setupEvents();
   });
 })();

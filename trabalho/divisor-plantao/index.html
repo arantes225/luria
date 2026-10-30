@@ -11,28 +11,64 @@
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-<script src="/assets/js/ui-routes.js?v=1"></script>
+  <script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261025-work-spotlight">
   <style>
-    .shift-shell{display:grid;gap:16px}
-    .shift-card{padding:20px;border:1px solid var(--border);border-radius:18px;background:var(--surface);display:grid;gap:14px}
-    .shift-card h2{margin:0;font-size:20px}
+    .shift-shell{display:grid;gap:18px}
+    .shift-card{padding:22px;border:1px solid var(--border);border-radius:18px;background:var(--surface);display:grid;gap:16px;box-shadow:0 6px 24px rgba(0,0,0,.03)}
+    .shift-card h2{margin:0;font-size:20px;font-weight:900}
     .shift-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
+    
+    /* Presets Rápidos */
+    .div-presets-bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .div-presets-title{font-size:11.5px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em}
+    .div-quick-preset-btn{min-height:32px;padding:0 12px;border-radius:8px;border:1px solid var(--border);background:var(--surface-2);color:var(--text);font-size:11.5px;font-weight:750;cursor:pointer;transition:all .12s}
+    .div-quick-preset-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+
     .shift-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-    .shift-field{display:grid;gap:6px;font-size:12.5px;font-weight:700}
+    .shift-field{display:grid;gap:6px;font-size:12px;font-weight:750}
     .shift-field input,.shift-field select{min-height:42px;padding:0 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2);color:var(--text);font:inherit}
-    .shift-actions{display:flex;gap:10px;flex-wrap:wrap}
-    .shift-btn{min-height:40px;padding:0 16px;border-radius:10px;border:1px solid var(--accent);background:var(--accent);color:#fff;font-weight:800;font-size:13px;cursor:pointer}
+    
+    /* Banner do Momento Atual */
+    .div-now-status{display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid rgba(16,185,129,.35);background:rgba(16,185,129,.08);color:var(--text);font-size:12.5px}
+    .div-now-pulse{width:8px;height:8px;border-radius:50%;background:#10b981;box-shadow:0 0 0 0 rgba(16,185,129,.7);animation:div-pulse 1.8s infinite}
+    @keyframes div-pulse{0%{transform:scale(.95);box-shadow:0 0 0 0 rgba(16,185,129,.7)}70%{transform:scale(1);box-shadow:0 0 0 8px rgba(16,185,129,0)}100%{transform:scale(.95);box-shadow:0 0 0 0 rgba(16,185,129,0)}}
+
+    /* Régua Visual Interativa */
+    .div-timeline-section{display:grid;gap:8px}
+    .div-timeline-title{font-size:12px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em}
+    .div-timeline-track{position:relative;height:52px;border-radius:12px;overflow:hidden;background:var(--surface-2);display:flex;border:1px solid var(--border)}
+    .div-timeline-block{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;min-width:0;padding:4px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;transition:filter .12s}
+    .div-timeline-block:hover{filter:brightness(1.1)}
+    .div-timeline-label{font-size:11.5px;font-weight:900;line-height:1.2;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+    .div-timeline-sub{font-size:10px;opacity:.9;line-height:1.2}
+    .div-timeline-now{position:absolute;top:0;bottom:0;width:3px;background:#ef4444;box-shadow:0 0 8px rgba(239,68,68,.8);z-index:2;pointer-events:none}
+
+    /* Cards de Slots */
+    .div-cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+    .div-slot-card{padding:14px;border-radius:12px;background:var(--surface-2);border:1px solid var(--border);display:grid;gap:6px}
+    .div-slot-head{display:flex;justify-content:space-between;align-items:center}
+    .div-slot-head strong{font-size:13.5px;font-weight:850}
+    .div-slot-badge{padding:2px 8px;border-radius:6px;background:rgba(0,0,0,.08);font-size:10.5px;font-weight:800}
+    .div-slot-time{font-size:12.5px;font-weight:800;color:var(--text)}
+    .div-slot-meta{font-size:11px;color:var(--muted)}
+
+    /* Ações e Output */
+    .shift-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .shift-btn{min-height:42px;padding:0 18px;border-radius:10px;border:1px solid var(--accent);background:var(--accent);color:#fff;font-weight:850;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all .12s}
+    .shift-btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
     .shift-btn.secondary{background:var(--surface-2);color:var(--text);border-color:var(--border)}
-    .shift-output{margin:0;padding:16px;border-radius:14px;border:1px solid var(--border);background:var(--surface-2);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:13px;line-height:1.6;white-space:pre-wrap}
-    @media(max-width:820px){.shift-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:520px){.shift-grid{grid-template-columns:1fr}}
+    .shift-btn.copied{background:#10b981;border-color:#10b981;color:#fff}
+    .shift-output{margin:0;padding:18px;border-radius:14px;border:1px solid var(--border);background:var(--surface-2);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:13px;line-height:1.65;white-space:pre-wrap;box-shadow:inset 0 2px 6px rgba(0,0,0,.03)}
+
+    @media(max-width:860px){.shift-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:540px){.shift-grid{grid-template-columns:1fr}.shift-actions{flex-direction:column;width:100%}.shift-btn{width:100%;justify-content:center}}
   </style>
-<link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
-<link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
+  <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
+  <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
 </head>
 <body data-page="trabalho_divisor_plantao" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
@@ -53,16 +89,26 @@
         <section class="luria-page-spotlight" aria-label="Divisor de Plantão">
           <div class="luria-page-spotlight-copy">
             <strong data-page-title>Divisor de Plantão</strong>
-            <small class="luria-page-spotlight-helper">Distribua horários de descanso e cobertura de forma exata e igualitária.</small>
+            <small class="luria-page-spotlight-helper">Distribua horários de descanso e cobertura da equipe de forma igualitária com régua visual interativa.</small>
           </div>
         </section>
 
         <section class="shift-shell">
           <article class="shift-card">
             <div>
-              <h2>Calculadora de Divisão de Horários e Descanso</h2>
-              <p>Informe o horário de início, a duração total do plantão e o número de plantonistas para calcular automaticamente os turnos de cobertura/descanso ao minuto.</p>
+              <h2>Divisão de Turnos e Repouso da Equipe</h2>
+              <p>Configure a equipe, a duração e visualize a distribuição gráfica exata minuto a minuto para envio rápido no grupo de WhatsApp do plantão.</p>
             </div>
+
+            <!-- Presets de 1 clique -->
+            <div class="div-presets-bar">
+              <span class="div-presets-title">Atalhos Rápidos:</span>
+              <button type="button" class="div-quick-preset-btn" data-preset="noturno-12">🌙 Noturno 12h (19h-07h)</button>
+              <button type="button" class="div-quick-preset-btn" data-preset="diurno-12">☀️ Diurno 12h (07h-19h)</button>
+              <button type="button" class="div-quick-preset-btn" data-preset="noturno-rodadas">🔄 Noturno Fracionado (2 Rodadas)</button>
+              <button type="button" class="div-quick-preset-btn" data-preset="24h">⏱️ 24 Horas Corrido</button>
+            </div>
+
             <div class="shift-grid">
               <label class="shift-field">Horário de início
                 <input id="div-start" type="time" value="19:00">
@@ -72,25 +118,47 @@
                   <option value="6">6 horas</option>
                   <option value="12" selected>12 horas</option>
                   <option value="24">24 horas</option>
+                  <option value="8">8 horas</option>
                 </select>
               </label>
               <label class="shift-field">Nº de plantonistas
-                <input id="div-docs" type="number" min="2" max="12" value="2">
+                <input id="div-docs" type="number" min="1" max="12" value="2">
               </label>
               <label class="shift-field">Formato da divisão
                 <select id="div-mode">
-                  <option value="blocos" selected>Bloco único corrido por pessoa</option>
+                  <option value="blocos" selected>Bloco único por pessoa</option>
                   <option value="rodadas">Fracionado em 2 rodadas</option>
                 </select>
               </label>
             </div>
-            <label class="shift-field">Nomes dos plantonistas (opcional — separados por vírgula)
-              <input id="div-names" type="text" placeholder="Ex.: Dra. Ana, Dr. Bruno, Dra. Carla">
+
+            <label class="shift-field">Nomes dos plantonistas (separados por vírgula)
+              <input id="div-names" type="text" placeholder="Ex.: Dr. Roberto, Dra. Paula, Dr. Lucas">
             </label>
-            <div class="shift-actions">
-              <button class="shift-btn" id="div-calc-btn" type="button">Calcular Divisão</button>
-              <button class="shift-btn secondary" id="div-copy-btn" type="button">Copiar Divisão</button>
+
+            <!-- Banner Tempo Real -->
+            <div id="div-now-status" class="div-now-status" hidden></div>
+
+            <!-- Régua Visual -->
+            <div class="div-timeline-section">
+              <span class="div-timeline-title">Régua Visual de Descanso</span>
+              <div class="div-timeline-track">
+                <div id="div-timeline-bar" style="display:flex;width:100%;height:100%"></div>
+                <div id="div-timeline-now" class="div-timeline-now" style="display:none" title="Momento Atual"></div>
+              </div>
             </div>
+
+            <!-- Cards Detalhados dos Plantonistas -->
+            <div id="div-cards-grid" class="div-cards-grid"></div>
+
+            <div class="shift-actions">
+              <button class="shift-btn" id="div-copy-btn" type="button">
+                <span>📱</span> Copiar para WhatsApp
+              </button>
+              <button class="shift-btn secondary" id="div-calc-btn" type="button">Recalcular</button>
+            </div>
+
+            <!-- Texto Formatado Pronto -->
             <pre class="shift-output" id="div-output"></pre>
           </article>
         </section>
@@ -101,7 +169,7 @@
 <script src="/assets/js/supabase.js"></script>
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script src="/assets/js/shift-manager-security.js?v=4-fixed"></script>
-<script src="/assets/js/divisor-plantao.js?v=20261026"></script>
+<script src="/assets/js/divisor-plantao.js?v=20261030-v2"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>

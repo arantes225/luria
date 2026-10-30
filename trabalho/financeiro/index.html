@@ -19,7 +19,34 @@
   <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
   <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
-  <link rel="stylesheet" href="/assets/css/work-plantoes.css?v=20261026-v1">
+  <link rel="stylesheet" href="/assets/css/work-plantoes.css?v=20261030-v2">
+  <style>
+    .fin-hosp-list{display:grid;gap:12px}
+    .fin-hosp-card{padding:16px 18px;border:1px solid var(--border);border-radius:14px;background:var(--surface-2);display:grid;gap:10px}
+    .fin-hosp-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+    .fin-hosp-name{font-size:16px;font-weight:850;color:var(--text);display:block}
+    .fin-hosp-meta{font-size:11.5px;color:var(--muted);display:block;margin-top:2px}
+    .fin-hosp-val{font-size:18px;font-weight:900;color:var(--text);display:block}
+    .fin-hosp-pct{font-size:11px;color:var(--muted);font-weight:700}
+    
+    .fin-hosp-bar-track{height:6px;border-radius:999px;background:var(--surface);overflow:hidden}
+    .fin-hosp-bar-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--accent),#3b82f6);transition:width .4s}
+    
+    .fin-hosp-badges{display:flex;gap:8px;flex-wrap:wrap}
+    .badge-tag{padding:2px 8px;border-radius:6px;font-size:11px;font-weight:800}
+    .badge-tag.paid{background:rgba(16,185,129,.15);color:#10b981}
+    .badge-tag.pending{background:rgba(245,158,11,.15);color:#f59e0b}
+
+    /* Tabela de Repasses */
+    .fin-table-card{overflow-x:auto}
+    .fin-table{width:100%;border-collapse:collapse;font-size:12.5px;text-align:left}
+    .fin-table th{padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);font-size:11px;font-weight:800;text-transform:uppercase}
+    .fin-table td{padding:12px;border-bottom:1px solid var(--border);color:var(--text)}
+    .fin-table tr:hover td{background:var(--surface-2)}
+    
+    .fin-filters-bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+    .fin-select{min-height:36px;padding:0 12px;border-radius:8px;border:1px solid var(--border);background:var(--surface-2);color:var(--text);font:inherit;font-size:12px;font-weight:700}
+  </style>
 </head>
 <body data-page="trabalho_financeiro" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
@@ -38,15 +65,15 @@
         </header>
         <section class="luria-page-spotlight" aria-label="Financeiro">
           <div class="luria-page-spotlight-copy">
-            <strong data-page-title>Financeiro</strong>
-            <small class="luria-page-spotlight-helper">Controle de faturamento, repasses recebidos, valores a receber e remuneração média da sua escala.</small>
+            <strong data-page-title>Financeiro & Repasses</strong>
+            <small class="luria-page-spotlight-helper">Controle de faturamento, repasses recebidos, valores a receber por instituição e remuneração média da sua escala.</small>
           </div>
         </section>
 
         <section class="shift-fin-shell">
           <!-- Métricas Financeiras do Mês -->
           <div>
-            <h3 style="margin:0 0 10px;font-size:14px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em">Faturamento do Mês Vigente</h3>
+            <h3 style="margin:0 0 10px;font-size:13px;font-weight:850;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em">Faturamento do Mês Vigente</h3>
             <div class="shift-stats-grid">
               <div class="shift-stat-card">
                 <span class="stat-label">Total Faturado</span>
@@ -73,7 +100,7 @@
 
           <!-- Métricas Globais Acumuladas -->
           <div>
-            <h3 style="margin:0 0 10px;font-size:14px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em">Consolidado Acumulado</h3>
+            <h3 style="margin:0 0 10px;font-size:13px;font-weight:850;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em">Consolidado Acumulado</h3>
             <div class="shift-stats-grid">
               <div class="shift-stat-card">
                 <span class="stat-label">Total Geral</span>
@@ -98,26 +125,51 @@
             </div>
           </div>
 
-          <!-- Lista de Repasses Pendentes -->
+          <!-- Breakdown por Hospital -->
           <article class="fin-card">
             <div>
-              <h2>Repasses Pendentes de Confirmação</h2>
-              <p>Plantões realizados ou agendados cujo repasse financeiro ainda não foi confirmado.</p>
+              <h2>Distribuição por Hospital & Instituição Pagadora</h2>
+              <p>Média de remuneração por hora trabalhada e volume de repasses pendentes por local de trabalho.</p>
             </div>
-            <div id="fin-pending-table-container">
-              <!-- Preenchido dinamicamente por plantoes-financeiro.js -->
+            <div id="fin-hospital-breakdown" class="fin-hosp-list">
+              <!-- Inserido dinamicamente por plantoes-financeiro.js -->
             </div>
           </article>
 
-          <!-- Detalhamento por Hospital/Instituição -->
-          <article class="fin-card">
-            <div>
-              <h2>Faturamento por Instituição / Hospital</h2>
-              <p>Distribuição do faturamento, carga horária e repasses por local de trabalho.</p>
+          <!-- Tabela de Acompanhamento e Baixa Rápida de Repasses -->
+          <article class="fin-card fin-table-card">
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+              <div>
+                <h2>Acompanhamento e Baixa de Repasses</h2>
+                <p>Confirme pagamentos ou filtre plantões com repasse em aberto.</p>
+              </div>
+              <div class="fin-filters-bar">
+                <select id="fin-filter-hospital" class="fin-select">
+                  <option value="all">Todos os Hospitais</option>
+                </select>
+                <select id="fin-filter-status" class="fin-select">
+                  <option value="all">Todos os Status</option>
+                  <option value="pending">Apenas Pendentes</option>
+                  <option value="paid">Apenas Quitados</option>
+                </select>
+              </div>
             </div>
-            <div id="fin-hospital-breakdown">
-              <!-- Preenchido dinamicamente por plantoes-financeiro.js -->
-            </div>
+            <table class="fin-table">
+              <thead>
+                <tr>
+                  <th>Data</th>
+                  <th>Hospital</th>
+                  <th>Setor</th>
+                  <th>Carga</th>
+                  <th>Valor</th>
+                  <th>Status</th>
+                  <th>Ação Rápida</th>
+                </tr>
+              </thead>
+              <tbody id="fin-pending-table-body">
+                <!-- Inserido dinamicamente por plantoes-financeiro.js -->
+              </tbody>
+            </table>
           </article>
         </section>
       </div>
@@ -127,7 +179,7 @@
 <script src="/assets/js/supabase.js"></script>
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script src="/assets/js/shift-manager-security.js?v=4-fixed"></script>
-<script src="/assets/js/plantoes-financeiro.js?v=20261026-v1"></script>
+<script src="/assets/js/plantoes-financeiro.js?v=20261030-v2"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>

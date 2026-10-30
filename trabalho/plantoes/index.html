@@ -6,7 +6,7 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Escala · LURIA</title>
+  <title>Escala de Plantões · LURIA</title>
   <meta name="theme-color" content="#184888">
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
   <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
-  <link rel="stylesheet" href="/assets/css/work-plantoes.css?v=20261026-v1">
+  <link rel="stylesheet" href="/assets/css/work-plantoes.css?v=20261030-v2">
 </head>
 <body data-page="trabalho_plantoes" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
@@ -39,22 +39,22 @@
         <section class="luria-page-spotlight" aria-label="Escala de Plantões">
           <div class="luria-page-spotlight-copy">
             <strong data-page-title>Escala de Plantões</strong>
-            <small class="luria-page-spotlight-helper">Cadastre, acompanhe horas e controle o status da sua escala médica mensal.</small>
+            <small class="luria-page-spotlight-helper">Gestão inteligente de turnos, visualização em lista/calendário, exportação para agenda (.ics) e detecção de conflitos.</small>
           </div>
         </section>
 
         <section class="shift-escala-shell">
-          <!-- Estatísticas do Mês -->
+          <!-- Métricas Resumidas -->
           <div class="shift-stats-grid">
             <div class="shift-stat-card">
               <span class="stat-label">Plantões no Mês</span>
               <strong class="stat-val" id="stat-total-shifts">0 plantões</strong>
-              <span class="stat-sub">Mês atual</span>
+              <span class="stat-sub">Mês vigente</span>
             </div>
             <div class="shift-stat-card">
               <span class="stat-label">Carga Horária</span>
               <strong class="stat-val" id="stat-total-hours">0 horas</strong>
-              <span class="stat-sub">Total acumulado</span>
+              <span class="stat-sub">Tempo em serviço</span>
             </div>
             <div class="shift-stat-card">
               <span class="stat-label">Previsão Faturada</span>
@@ -68,13 +68,13 @@
             </div>
           </div>
 
-          <!-- Layout Principal: Formulário + Lista -->
+          <!-- Layout Principal: Formulário + Lista / Calendário -->
           <div class="shift-main-layout">
             <!-- Formulário Novo Plantão -->
             <article class="shift-form-card">
               <div>
                 <h2>Adicionar Plantão</h2>
-                <p>Insira os dados do plantão para registro local seguro.</p>
+                <p>Preencha os dados para registrar na sua escala local segura.</p>
               </div>
               <form id="add-shift-form" class="shift-field-group">
                 <label class="shift-field-group">Data
@@ -120,21 +120,36 @@
                 <label class="shift-field-group">Observações / Colega de Troca
                   <textarea id="shift-notes" placeholder="Ex.: Troca realizada com Dr. Marcos, repasse previsto até dia 20"></textarea>
                 </label>
-                <button type="submit" class="shift-form-submit">Salvar na Escala</button>
+                <button type="submit" class="shift-form-submit">+ Salvar na Escala</button>
               </form>
             </article>
 
-            <!-- Lista de Plantões -->
+            <!-- Painel de Visualização (Lista ou Calendário) -->
             <article class="shift-list-card">
-              <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+              <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
                 <div>
                   <h2>Seus Plantões Agendados</h2>
-                  <p>Histórico e status ordenados cronologicamente.</p>
+                  <p>Acompanhamento cronológico com alertas inteligentes.</p>
                 </div>
-                <button type="button" class="shift-action-btn" id="export-shifts-btn">Exportar CSV</button>
+                <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+                  <div class="shift-view-toggles">
+                    <button type="button" class="shift-view-btn active" id="view-toggle-list">📋 Lista</button>
+                    <button type="button" class="shift-view-btn" id="view-toggle-cal">📅 Calendário</button>
+                  </div>
+                  <button type="button" class="shift-action-btn" id="export-shifts-btn">Exportar CSV</button>
+                </div>
               </div>
-              <div id="shifts-list-container" class="shift-items-wrap">
-                <!-- Inserido dinamicamente por plantoes-escala.js -->
+
+              <!-- Lista -->
+              <div id="shifts-list-wrapper">
+                <div id="shifts-list-container" class="shift-items-wrap">
+                  <!-- Inserido dinamicamente por plantoes-escala.js -->
+                </div>
+              </div>
+
+              <!-- Calendário Mensal -->
+              <div id="shifts-calendar-wrapper" hidden>
+                <div id="shifts-calendar-container"></div>
               </div>
             </article>
           </div>
@@ -146,7 +161,7 @@
 <script src="/assets/js/supabase.js"></script>
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script src="/assets/js/shift-manager-security.js?v=4-fixed"></script>
-<script src="/assets/js/plantoes-escala.js?v=20261026-v1"></script>
+<script src="/assets/js/plantoes-escala.js?v=20261030-v2"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>
