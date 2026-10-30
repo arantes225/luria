@@ -1820,6 +1820,22 @@
       return;
     }
 
+
+    if(s.id==="possum"){
+      const n=vals.map(Number);
+      const physiological=n.slice(0,12).reduce((a,x)=>a+x,0);
+      const operative=n.slice(12).reduce((a,x)=>a+x,0);
+      const logistic=logit=>logit>=0?1/(1+Math.exp(-logit)):Math.exp(logit)/(1+Math.exp(logit));
+      const pp=100*logistic(-9.065+.1692*physiological+.1550*operative);
+      const morbidity=100*logistic(-5.91+.16*physiological+.19*operative);
+      const mortality=100*logistic(-7.04+.13*physiological+.16*operative);
+      const fixed=x=>x.toLocaleString("pt-BR",{maximumFractionDigits:2,minimumFractionDigits:2});
+      setResult("P-POSSUM: "+fixed(pp)+"% mortalidade",
+        "POSSUM fisiológico "+physiological+" / operatório "+operative+
+        ". Morbidade POSSUM estimada: "+fixed(morbidity)+"%. Mortalidade POSSUM histórica: "+fixed(mortality)+"%.",
+        "Riscos estimados por regressão logística populacional; exigem cirurgia realizada e classificação completa dos 18 critérios. Não são probabilidades individuais validadas para todas as especialidades.");
+      return;
+    }
     const total=vals.reduce((a,v)=>a+Number(v),0);
     const note=phqRisk?"ATENÇÃO: item 9 positivo. Realizar avaliação clínica imediata de segurança; o total PHQ-9 não classifica risco suicida.":"Pontuação calculada a partir dos critérios selecionados.";
     setResult(formatNum(total),s.interpret(total),note);
@@ -2093,6 +2109,89 @@
       setResult("—","Informe critérios já apurados conforme documento original.","Não faz interpretação independente de hemoculturas ou imagens.");
     },
 
+
+    apache2(f,s){
+      const numberField=(label,id,unit,attrs)=>field(label+(unit?" ("+unit+")":""),id,"number",attrs||'step="any"');
+      f.innerHTML=
+        '<div class="score-warning"><strong>Primeiras 24 horas de UTI:</strong> selecione ou digite o pior valor medido de cada variável nesse intervalo. Não registrar valor ausente como normal.</div>'+
+        numberField("Idade em anos","ap_age","anos",'min="18" max="120" step="1"')+
+        numberField("Temperatura central / retal (pior valor)","ap_temp","°C",'min="25" max="45" step="any"')+
+        numberField("Pressão arterial média (pior valor)","ap_map","mmHg",'min="0" max="250" step="any"')+
+        numberField("Frequência cardíaca (pior valor)","ap_hr","bpm",'min="0" max="300" step="1"')+
+        numberField("Frequência respiratória (pior valor)","ap_rr","irpm",'min="0" max="120" step="1"')+
+        numberField("FiO₂ correspondente à oxigenação (como fração 0,21–1)","ap_fio","fração",'min="0.21" max="1" step="any"')+
+        numberField("PaO₂ medida (se FiO₂ <0,50)","ap_pao","mmHg",'min="0" max="500" step="any"')+
+        numberField("Gradiente alvéolo-arterial de O₂ medido/calculado (se FiO₂ ≥0,50)","ap_aa","mmHg",'min="0" max="900" step="any"')+
+        selectField("Variável de equilíbrio ácido-base","ap_acidmode",[opt("pH arterial da gasometria","ph"),opt("HCO₃ venoso — alternativa somente se gasometria arterial indisponível","hco")])+
+        numberField("pH arterial (se selecionado acima)","ap_ph","pH",'min="6.5" max="8.2" step="any"')+
+        numberField("HCO₃ venoso (se selecionado acima)","ap_hco","mEq/L",'min="0" max="80" step="any"')+
+        numberField("Sódio sérico (pior valor)","ap_na","mmol/L",'min="80" max="220" step="any"')+
+        numberField("Potássio sérico (pior valor)","ap_k","mmol/L",'min="1" max="10" step="any"')+
+        numberField("Creatinina sérica (pior valor)","ap_cr","mg/dL",'min="0.1" max="30" step="any"')+
+        selectField("Há falência renal AGUDA que justifica dobrar pontos da creatinina?","ap_arf",yesno())+
+        numberField("Hematócrito (pior valor)","ap_hct","%",'min="1" max="90" step="any"')+
+        numberField("Leucócitos totais (×10³/µL) (pior valor)","ap_wbc","10³/µL",'min="0.01" max="200" step="any"')+
+        numberField("Glasgow observado (pior estado)","ap_gcs","3–15",'min="3" max="15" step="1"')+
+        selectField("Insuficiência orgânica CRÔNICA grave ou imunossupressão prévia à admissão?","ap_chronic",[
+          opt("Ausente (0 pontos)",0),
+          opt("Presente, pós-operatório ELETIVO (2 pontos)",2),
+          opt("Presente, paciente NÃO operatório ou pós-operatório de EMERGÊNCIA (5 pontos)",5)
+        ]);
+      const bins={
+        temp:t=>t>=41?4:t>=39?3:t>=38.5?1:t>=36?0:t>=34?1:t>=32?2:t>=30?3:4,
+        map:t=>t>=160?4:t>=130?3:t>=110?2:t>=70?0:t>=50?2:4,
+        hr:t=>t>=180?4:t>=140?3:t>=110?2:t>=70?0:t>=55?2:t>=40?3:4,
+        rr:t=>t>=50?4:t>=35?3:t>=25?1:t>=12?0:t>=10?1:t>=6?2:4,
+        na:t=>t>=180?4:t>=160?3:t>=155?2:t>=150?1:t>=130?0:t>=120?2:t>=111?3:4,
+        k:t=>t>=7?4:t>=6?3:t>=5.5?1:t>=3.5?0:t>=3?1:t>=2.5?2:4,
+        cr:t=>t>=3.5?4:t>=2?3:t>=1.5?2:t>=.6?0:2,
+        hct:t=>t>=60?4:t>=50?2:t>=46?1:t>=30?0:t>=20?2:4,
+        wbc:t=>t>=40?4:t>=20?2:t>=15?1:t>=3?0:t>=1?2:4,
+        ph:t=>t>=7.70?4:t>=7.60?3:t>=7.50?1:t>=7.33?0:t>=7.25?2:t>=7.15?3:4,
+        hco:t=>t>=52?4:t>=41?3:t>=32?1:t>=22?0:t>=18?2:t>=15?3:4
+      };
+      const update=()=>{
+        const raw=id=>$("#ap_"+id,f).value;
+        const required=["age","temp","map","hr","rr","fio","na","k","cr","hct","wbc","gcs"];
+        if(required.some(x=>raw(x)==="")||["arf","chronic","acidmode"].some(x=>raw(x)==="")){
+          setResult("—","Preencha os parâmetros de UTI, idade e condições crônicas.","Não usar resultado com valores faltantes.");return;
+        }
+        const get=k=>Number(raw(k)),a=get("age"),t=get("temp"),map=get("map"),hr=get("hr"),
+          rr=get("rr"),fio=get("fio"),na=get("na"),k=get("k"),cr=get("cr"),hct=get("hct"),
+          wbc=get("wbc"),gcs=get("gcs"),arf=get("arf"),chronic=get("chronic");
+        const nums=[a,t,map,hr,rr,fio,na,k,cr,hct,wbc,gcs];
+        const valid=nums.every(Number.isFinite)&&Number.isInteger(a)&&a>=18&&a<=120&&
+          t>=25&&t<=45&&map>=0&&map<=250&&
+          Number.isInteger(hr)&&hr>=0&&hr<=300&&Number.isInteger(rr)&&rr>=0&&rr<=120&&
+          fio>=0.21&&fio<=1&&na>=80&&na<=220&&k>=1&&k<=10&&cr>=.1&&cr<=30&&
+          hct>=1&&hct<=90&&wbc>=.01&&wbc<=200&&Number.isInteger(gcs)&&gcs>=3&&gcs<=15;
+        if(!valid){setResult("—","Há valores fisiológicos ou unidades fora do intervalo previsto.","Revise valores e unidades; não arredonde dados para forçar faixas.");return;}
+        const oxygenKey=fio>=.5?"aa":"pao",oxRaw=raw(oxygenKey);
+        if(oxRaw===""){setResult("—","Informe oxigenação correspondente à FiO₂ utilizada.","Para FiO₂ ≥0,50 usar gradiente A-a; para FiO₂ <0,50 usar PaO₂.");return;}
+        const ox=Number(oxRaw);
+        if(!Number.isFinite(ox)||ox<0||ox>(oxygenKey==="aa"?900:500)){
+          setResult("—","Valor de oxigenação incompatível.","Conferir gradiente A-a ou PaO₂ em mmHg.");return;
+        }
+        const mode=raw("acidmode"),acidRaw=raw(mode);
+        if(acidRaw===""){setResult("—","Informe a gasometria ou o bicarbonato conforme opção selecionada.","HCO₃ venoso somente se pH arterial indisponível.");return;}
+        const acid=Number(acidRaw);
+        if(!Number.isFinite(acid)||(mode==="ph"?(acid<6.5||acid>8.2):(acid<0||acid>80))){
+          setResult("—","Parâmetro ácido-base incompatível.","Rever pH ou HCO₃ e unidades.");return;
+        }
+        const oxPoints=oxygenKey==="aa"?(ox>=500?4:ox>=350?3:ox>=200?2:0)
+          :(ox<55?4:ox<=60?3:ox<=70?1:0);
+        const crBase=bins.cr(cr),crPoints=crBase*(arf?2:1);
+        const rawScore=bins.temp(t)+bins.map(map)+bins.hr(hr)+bins.rr(rr)+
+          oxPoints+bins[mode](acid)+bins.na(na)+bins.k(k)+crPoints+bins.hct(hct)+bins.wbc(wbc)+(15-gcs);
+        const agePts=a>=75?6:a>=65?5:a>=55?3:a>=45?2:0;
+        const total=rawScore+agePts+chronic;
+        setResult(String(total)+" / 71",
+          "APACHE II: fisiologia "+rawScore+" + idade "+agePts+" + condição crônica "+chronic+". Total "+total+".",
+          "Índice de gravidade de população de UTI; não calcula mortalidade individual nem determina limitação terapêutica.");
+      };
+      $$("input,select",f).forEach(el=>el.onchange=el.oninput=update);
+      setResult("—","Preencha os piores valores das primeiras 24 horas de UTI.","Nunca registrar ausência de exame como valor normal.");
+    },
     reference(f,s){
       f.innerHTML='<div class="score-warning"><strong>Referência clínica — cálculo não habilitado.</strong> Esta ferramenta necessita de regras oficiais, tabelas completas ou aplicação por profissional treinado. Não há pontuação automatizada nesta versão.</div><p class="score-intro">'+esc(s.desc)+'</p><p><strong>Fonte para conferência:</strong> '+esc(s.reference)+'</p>';
       setResult("—","Não calcular nesta interface.","Use a diretriz original ou instrumento oficial. Não há validação automatizada para este item.");
