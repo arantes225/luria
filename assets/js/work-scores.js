@@ -1624,6 +1624,49 @@
     if(s.id==="isthdic" && vals[0]==="-999"){
       setResult("Não aplicável","Escore ISTH de CIVD manifesta exige doença predisponente reconhecida.","Sem critério de elegibilidade, não somar os demais itens."); return;
     }
+
+    // Lote 8: algoritmos não aditivos. Jamais interpretar estes campos como soma de pontos.
+    if(s.id==="tokyochole" || s.id==="tokyocholang"){
+      const a=vals.map(Number), chole=s.id==="tokyochole";
+      const diag=chole
+        ? (a[0]&&a[1]?(a[2]?"Critérios TG18 preenchidos para confirmação":"Suspeita TG18"): "Critérios diagnósticos TG18 não preenchidos")
+        : (a[0]&&(a[1]||a[2])?(a[1]&&a[2]?"Critérios TG18 preenchidos para confirmação":"Suspeita TG18"):"Critérios diagnósticos TG18 não preenchidos");
+      const qualifies=chole?(a[0]&&a[1]):(a[0]&&(a[1]||a[2]));
+      const moderate=a.slice(3,chole?7:8).reduce((t,x)=>t+x,0);
+      const severe=a.slice(chole?7:8).some(x=>x===1);
+      const grade=!qualifies?"Gravidade não classificada: falta critério diagnóstico"
+        :severe?"Gravidade TG18: grau III (disfunção orgânica)"
+        :moderate >= (chole?1:2)?"Gravidade TG18: grau II (moderada)"
+        :"Gravidade TG18: grau I (leve pelos critérios preenchidos)";
+      setResult(chole?"TG18 colecistite":"TG18 colangite",diag+". "+grade+".",
+        "Requer confirmação clínica, diferenciais e reavaliação. A gravidade é classificada somente quando os requisitos de suspeita foram satisfeitos.");
+      return;
+    }
+    if(s.id==="kdigoaki"){
+      const v=vals.map(Number), stage=Math.max(...v);
+      setResult(stage?"KDIGO LRA "+stage:"Sem critério KDIGO documentado",
+        stage?"Estágio "+stage+" (maior critério entre creatinina, diurese, terapia renal substitutiva e TFG pediátrica).":"Os critérios selecionados não demonstram LRA, mas dados incompletos não a excluem.",
+        "Aumento de creatinina precisa ser documentado em 48h ou 7 dias. Estágio não é a soma e NÃO pode ser usado sem dados cronológicos válidos.");
+      return;
+    }
+    if(s.id==="pasi"){
+      const weights=[0.1,0.2,0.3,0.4]; let total=0;
+      for(let i=0;i<4;i++){
+        const j=i*4;total+=weights[i]*Number(vals[j])*(Number(vals[j+1])+Number(vals[j+2])+Number(vals[j+3]));
+      }
+      total=Math.round(total*10)/10;
+      setResult(formatNum(total)+" / 72","PASI calculado a partir de extensão e intensidade das lesões nas quatro regiões. Interpretar extensão, área especial e impacto funcional.",
+        "A soma dos itens é ponderada pela região. Registro de atividade requer exame dermatológico; PASI não contempla sintomas subjetivos.");
+      return;
+    }
+    if(s.id==="abcde"){
+      const n=vals.filter(x=>x==="1").length;
+      setResult(n?"Achado(s) suspeito(s)":"Sem sinais ABCDE selecionados",
+        n?n+" sinal(is) ABCDE presente(s). Avaliar dermatologicamente; evolução e características adicionais são relevantes.":"Ausência dos sinais do checklist não afasta melanoma.",
+        "ABCDE é uma lista descritiva e não uma pontuação de risco, teste diagnóstico ou indicativo isolado de biópsia.");
+      return;
+    }
+
     const total=vals.reduce((a,v)=>a+Number(v),0);
     const note=phqRisk?"ATENÇÃO: item 9 positivo. Realizar avaliação clínica imediata de segurança; o total PHQ-9 não classifica risco suicida.":"Pontuação calculada a partir dos critérios selecionados.";
     setResult(formatNum(total),s.interpret(total),note);
@@ -1637,7 +1680,54 @@
   function selectField(label,id,opts){return `<div class="score-field"><label for="${id}">${label}</label><select id="${id}"><option value="">Selecione…</option>${opts.map(o=>`<option value="${o.value}">${esc(o.text)}</option>`).join("")}</select></div>`;}
 
 
+
   const customRender={
+    pesi(f,s){
+      f.innerHTML=field("Idade exata (anos)","pesi_age","number",'min="18" max="120" step="1"')+
+        s.questions.map((qq,i)=>'<div class="score-field"><label for="pesi_q'+i+'">'+esc(qq.label)+'</label><select id="pesi_q'+i+'"><option value="">Selecione…</option>'+
+          qq.options.map(o=>'<option value="'+o.value+'">'+esc(o.text)+'</option>').join("")+'</select></div>').join("");
+      const update=()=>{
+        const input=$("#pesi_age",f);
+        const v=$$("select",f).map(x=>x.value);
+        const age=Number(input.value);
+        if(input.value===""||!Number.isInteger(age)||age<18||age>120||v.some(x=>x==="")){
+          setResult("—","Preencha idade exata (18–120 anos) e todos os critérios.","Não usar idade aproximada; o PESI original utiliza um ponto por ano de idade.");return;
+        }
+        const score=age+v.reduce((a,x)=>a+Number(x),0);
+        setResult(score+" pontos",s.interpret(score),
+          "Prognóstico em TEP confirmado. PESI não exclui contraindicações ao tratamento ambulatorial.");
+      };
+      $$("input,select",f).forEach(el=>el.onchange=el.oninput=update);
+      setResult("—","Preencha idade exata e todos os critérios.","O PESI usa a idade em anos, não faixas aproximadas.");
+    },
+    kdigockd(f,s){
+      f.innerHTML=
+        field("TFG estimada (mL/min/1,73 m²)","ckd_gfr","number",'min="0" max="200" step="any"')+
+        field("Relação albumina/creatinina urinária (mg/g)","ckd_acr","number",'min="0" max="200000" step="any"')+
+        selectField("Anormalidade renal documentada por 3 meses ou mais?","ckd_duration",[opt("Sim",1),opt("Não / não é possível comprovar",0)])+
+        selectField("Outro marcador de lesão renal persistente (ex.: estrutural ou sedimento)?","ckd_marker",[opt("Não ou desconhecido",0),opt("Sim",1)])+
+        field("Causa conhecida (opcional)","ckd_cause","text",'maxlength="100" placeholder="Ex.: nefropatia diabética"');
+      const update=()=>{
+        const gEl=$("#ckd_gfr",f),aEl=$("#ckd_acr",f);
+        const duration=$("#ckd_duration",f).value,marker=$("#ckd_marker",f).value;
+        const g=Number(gEl.value), a=Number(aEl.value);
+        if(gEl.value===""||aEl.value===""||!Number.isFinite(g)||!Number.isFinite(a)||
+           g<0||g>200||a<0||a>200000||duration===""||marker===""){
+          setResult("—","Informe TFG, RAC em mg/g e cronicidade.","Não confundir RAC mg/g com mg/mmol ou mg/L.");return;
+        }
+        const gc=g>=90?"G1":g>=60?"G2":g>=45?"G3a":g>=30?"G3b":g>=15?"G4":"G5";
+        const ac=a<30?"A1":a<=300?"A2":"A3";
+        const hasMarker=a>=30||marker==="1";
+        const condition=duration==="1"&&(g<60||hasMarker);
+        const cause=$("#ckd_cause",f).value.trim();
+        const note=condition?"Cronicidade e alterações são compatíveis com classificação KDIGO de DRC.":"Os dados não confirmam DRC nesta interface; investigar persistência e outras causas.";
+        setResult(gc+" "+ac,note+(cause?" Causa informada: "+cause+".":""),
+          "Classificação CGA precisa de causa, TFG e albuminúria; G1–G2 A1 sem lesão persistente não estabelecem DRC.");
+      };
+      $$("input,select",f).forEach(el=>el.onchange=el.oninput=update);
+      setResult("—","Preencha TFG, RAC e cronicidade.","Somente valores persistentes permitem classificar doença renal crônica.");
+    },
+
     bap65(f,s){
       f.innerHTML=s.questions.map((qq,i)=>
         '<div class="score-field"><label>'+esc(qq.label)+'</label>'+
@@ -1646,7 +1736,7 @@
         '</select></div>'
       ).join('');
       const update=()=>{
-        const values=$('select',f).map(x=>x.value);
+        const values=$$('select',f).map(x=>x.value);
         if(values.some(x=>x===''))return setResult('—','Preencha os quatro itens.','BAP-65: BUN, estado mental, pulso e idade.');
         const bap=values.slice(0,3).reduce((sum,x)=>sum+Number(x),0);
         const age=values[3]==='1';
@@ -1654,7 +1744,7 @@
         setResult('Classe '+cls,'BAP-65 classe '+cls+' para exacerbação de DPOC.',
           'Classe de gravidade populacional; não substitui gasometria, ventilação, oximetria ou avaliação clínica.');
       };
-      $('select',f).forEach(x=>x.onchange=update);
+      $$('select',f).forEach(x=>x.onchange=update);
       setResult('—','Preencha os quatro itens.','A classificação I–V depende dos três fatores BAP e da idade.');
     },
 
