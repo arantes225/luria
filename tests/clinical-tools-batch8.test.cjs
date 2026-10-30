@@ -121,7 +121,7 @@ test('KDIGO CKD displays G/A and does not confirm without 3 months or injury mar
 });
 test('Score asset version updated for new batch',()=>{
   const h=read('trabalho/scores/index.html');
-  assert.match(h,/work-scores\.js\?v=20261030-batch9/);
+  assert.match(h,/work-scores\.js\?v=20261030-batch10/);
 });
 
 test('SCORAD original formula spans 0 through 103 with exact values',()=>{
