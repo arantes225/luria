@@ -1490,6 +1490,48 @@
     else throw Error("Lote 8B: ID já implementado: "+item.id);
   }
 
+
+  // Lote 9 — converte somente fichas de referência, preservando os IDs existentes.
+  // Não copiar questionários protegidos: MDQ e Duke requerem apuração externa dos critérios.
+  const batch9Scores=[
+    {id:"gold",name:"GOLD 2026 / PCDT 2025 — DPOC",category:"Respiratório",
+      aliases:"espirometria A B E obstrução CAAT CAT mMRC PCDT SUS GOLD",desc:"Classifica grau espirométrico e grupo A/B/E por duas versões explicitamente distintas: GOLD 2026 e PCDT brasileiro 2025.",
+      tags:["DPOC","Pneumologia"],custom:"gold",auditDate:"2026-10-30",
+      reference:"GOLD Report 2026, goldcopd.org/2026-gold-report-and-pocket-guide/; Ministério da Saúde, PCDT DPOC, Portaria Conjunta nº 29/2025, Quadro 3.",
+      safetyNote:"Aplica-se após confirmação clínica e espirométrica de DPOC. GOLD 2026: grupo E a partir de 1 exacerbação moderada ou grave; PCDT Brasil 2025: ≥2 moderadas ou ≥1 grave. Não prescrever tratamento automaticamente. Classificação ABE é orientada a início terapêutico; reavaliar seguimento individualmente."
+    },
+    {id:"gina",name:"GINA 2026 — controle dos sintomas de asma",category:"Respiratório",
+      aliases:"asma sintomas controle gina 2026 SABA formoterol despertares",desc:"Avaliação dos últimos 28 dias: sintomas diurnos, despertar noturno, limitação de atividade e uso de SABA quando aplicável.",
+      tags:["Asma","Ambulatório"],custom:"gina",auditDate:"2026-10-30",
+      reference:"Global Initiative for Asthma (GINA). Summary Guide 2026, Table 2, ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf.",
+      safetyNote:"Não é ACT/ACQ. A regra GINA de 0/1–2/3–4 se refere aos QUATRO itens para quem utiliza SABA como alívio. Uso de ICS-formoterol sob demanda não deve ser pontuado como SABA; avaliar frequência do anti-inflamatório separadamente. Risco de exacerbação deve ser avaliado mesmo com poucos sintomas."
+    },
+    {id:"pecarntce",name:"PECARN — TCE pediátrico (duas faixas)",category:"Pediatria",
+      aliases:"trauma craniano criança tomografia observação PECARN TCE",desc:"Classifica fatores de risco de lesão craniana clinicamente importante em TCE contuso, com regras distintas para menores de 2 anos e ≥2 anos.",
+      tags:["Pediatria","Plantão"],custom:"pecarntce",auditDate:"2026-10-30",
+      reference:"Kuppermann N et al. Lancet. 2009;374:1160–1170. doi:10.1016/S0140-6736(09)61558-0; CHOP Acute Head Trauma Clinical Pathway; ACR Appropriateness Criteria Head Trauma-Child.",
+      safetyNote:"Somente TCE contuso em menores de 18 anos com GCS 14–15 e avaliação inicial adequada. Suspeita de maus-tratos, coagulopatia/anticoagulação, trauma penetrante e casos fora da população validada exigem decisão independente. Categoria intermediária é observação versus TC, não alta automática."
+    },
+    {id:"mdq",name:"MDQ — apuração do rastreio de bipolaridade",category:"Psiquiatria",
+      aliases:"mood disorder questionnaire bipolar mania hipomania rastreamento",desc:"Verifica somente a regra de pontuação do Mood Disorder Questionnaire após preenchimento do instrumento validado original, sem reproduzir suas perguntas.",
+      tags:["Psiquiatria","Ambulatório"],custom:"mdq",auditDate:"2026-10-30",
+      reference:"Hirschfeld RMA et al. Am J Psychiatry. 2000;157:1873–1875. doi:10.1176/appi.ajp.157.11.1873; NIH NINDS, MDQ scoring and psychometric properties.",
+      safetyNote:"Necessário aplicar previamente o instrumento MDQ integral em versão autorizada/validada. ≥7 de 13 itens, simultaneidade e prejuízo moderado/grave indicam rastreio positivo, não diagnóstico. Sensibilidade varia por contexto e transtorno bipolar II."
+    },
+    {id:"duke",name:"Duke-ISCVID 2023 — classificação de endocardite",category:"Infectologia",
+      aliases:"endocardite infecciosa maiores menores ecocardiografia hemoculturas",desc:"Classificador da combinação de critérios patológicos, maiores e menores previamente apurados conforme Duke-ISCVID 2023.",
+      tags:["Infectologia","Cardiologia"],custom:"duke",auditDate:"2026-10-30",
+      reference:"Fowler VG et al. Clin Infect Dis. 2023;77:518–526. doi:10.1093/cid/ciad271; ISCVID Duke-2023 Table 1.",
+      safetyNote:"É essencial apurar e validar cada critério no documento oficial; este módulo NÃO interpreta sozinho hemoculturas, PCR molecular, ecocardiografia nem PET/TC. Classificação por número de critérios não exclui endocardite quando a avaliação está incompleta. Não usar para suspender antibióticos ou excluir diagnósticos."
+    }
+  ];
+  for(const item of batch9Scores){
+    const idx=scores.findIndex(s=>s.id===item.id);
+    if(idx<0)throw Error("Lote 9: a ficha original não existe: "+item.id);
+    if(scores[idx].custom!=="reference")throw Error("Lote 9: impedida substituição de score já funcional: "+item.id);
+    scores[idx]=item;
+  }
+
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
   const favKey = "luria:scores:favorites";
   const recentKey = "luria:scores:recent";
