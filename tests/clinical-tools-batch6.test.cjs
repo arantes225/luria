@@ -83,7 +83,7 @@ test('zero-allowed inputs and script references are explicit',()=>{
   assert.equal(defs[id].allowZero,true,id);
  const calcHtml=read('trabalho/calculadora/index.html');
  const scoreHtml=read('trabalho/scores/index.html');
- assert.match(calcHtml,/clinical-calculators-batch4\.js\?v=20261030-batch6/);
- assert.match(scoreHtml,/work-scores\.js\?v=20261030-batch6/);
+ assert.match(calcHtml,/clinical-calculators-batch4\.js\?v=20261030-batch7/);
+ assert.match(scoreHtml,/work-scores\.js\?v=20261030-batch7/);
  assert.match(calcHtml,/typeof d\.validate==='function'/);
 });
