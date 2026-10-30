@@ -88,7 +88,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
         <a class="tutoring" href="/professor-alex/" hidden>Abrir tutoria completa</a>
       </div>
       <div class="help-actions">
-        <button class="recharge-btn" type="button">🔋 Mandar Leco recarregar</button>
+        <button class="recharge-btn" type="button">🔋 Mandar o Leco recarregar</button>
         <button class="minimize" type="button">Minimizar Leco</button>
       </div>
     </div>
