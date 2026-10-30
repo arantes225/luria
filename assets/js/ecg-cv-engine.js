@@ -386,8 +386,13 @@
     const contrastEnergy = highFrequencyEnergy / sampleCount;
 
     const isSharp = sharpnessScore >= 35;
-    const isLightingGood = meanLuma >= 45 && meanLuma <= 245 && glareRatio < 0.25 && shadowRatio < 0.40;
     const hasSufficientContrast = contrastEnergy > 0.012;
+    // O reflexo especular destrói o contraste e apaga o traçado.
+    // Já documentos digitais limpos e escaneamentos possuem fundo branco (luma > 248) normal de papel,
+    // que não deve ser confundido com reflexo quando há nitidez e contraste suficientes.
+    const isCleanDigitalDoc = meanLuma > 200 && isSharp && hasSufficientContrast;
+    const maxGlareRatio = isCleanDigitalDoc ? 0.88 : 0.25;
+    const isLightingGood = meanLuma >= 45 && meanLuma <= 250 && glareRatio < maxGlareRatio && shadowRatio < 0.40;
 
     return {
       sharpnessScore,
@@ -1038,16 +1043,23 @@
   function recognizeLeadLabelInRegion(imageData, roiBox, options = {}) {
     const canonicalExpected = LEAD_SYNONYMS[options.expectedLead] || options.expectedLead;
     if (canonicalExpected && !options.candidateLabels) {
+      const variants = Object.entries(LEAD_SYNONYMS)
+        .filter(([syn, target]) => target === canonicalExpected)
+        .map(([syn]) => syn);
       const expectedResult = recognizeLeadLabelInRegion(imageData, roiBox, {
-        candidateLabels: [canonicalExpected],
+        candidateLabels: variants.length ? variants : [canonicalExpected],
         scales: [1, 2, 3]
       });
       if (expectedResult.recognized) return expectedResult;
       // Sonda curta para contradições explícitas. Ela mantém o fail-closed
       // (ex.: V3 impresso na célula de DI) sem repetir o OCR completo e lento.
+      const contradictionLabels = [
+        "DI", "I", "DII", "II", "DIII", "III",
+        "aVR", "AVR", "aVL", "AVL", "aVF", "AVF",
+        "V1", "V2", "V3", "V4", "V5", "V6"
+      ].filter(label => (LEAD_SYNONYMS[label] || label) !== canonicalExpected);
       return recognizeLeadLabelInRegion(imageData, roiBox, {
-        candidateLabels: ["DI", "DII", "DIII", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"]
-          .filter(label => label !== canonicalExpected),
+        candidateLabels: contradictionLabels,
         scales: [2]
       });
     }
@@ -1071,7 +1083,7 @@
     // Na folha completa, testar apenas o rótulo esperado reduz a busca em 12×
     // e impede que um trecho da grade seja promovido a uma derivação diferente.
     const candidateLabels = options.candidateLabels ||
-      ["DI", "DII", "DIII", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"];
+      ["DI", "I", "DII", "II", "DIII", "III", "aVR", "AVR", "aVL", "AVL", "aVF", "AVF", "V1", "V2", "V3", "V4", "V5", "V6"];
 
     // Primeiro verifica se há uma caixa de caracteres nítida na zona de rótulo
     for (const labelName of candidateLabels) {
@@ -1231,14 +1243,18 @@
     const strongest = Math.max(0, ...selected.map(b => b.score));
     const baselines = selected.filter(b => {
       if (b.score < Math.max(0.22, strongest * 0.46)) return false;
-      // A border is straight over almost the entire width. Position alone
-      // cannot reject it: a real twelfth lead often occupies the last 6%.
+      // Linhas de borda ou moldura de grade correm junto às bordas do papel/área útil (< 6% ou > 93%)
+      // e são escuras de ponta a ponta (> 80%). Traçados de ECG mesmo retos têm margens ou excursões.
+      const isNearEdge = (b.yCenter / height) < 0.06 || (b.yCenter / height) > 0.93 ||
+                         (b.yCenter - yMin) < spanH * 0.04 || (yMax - b.yCenter) < spanH * 0.04;
+      const maxAllowedDarkRatio = isNearEdge ? 0.80 : 0.92;
+
       let exactDark = 0;
       for (let x = xMin; x < xMax; x++) {
         const i = (b.yCenter * width + x) * 4;
         if (data[i] < 130 && data[i + 1] < 130 && data[i + 2] < 130) exactDark++;
       }
-      return exactDark / spanW < 0.94;
+      return (exactDark / spanW) < maxAllowedDarkRatio;
     });
 
     return {
@@ -1570,14 +1586,27 @@
       // Recompute vertical extent from the selected baselines, not the
       // discarded intervening peak bands. Tall R/T waves need the space
       // above their baseline; keep a smaller area below to avoid next row.
-      const rowGap = band && candidateTemplate.name.startsWith("3x4") && mainBands.length >= numMainRows
-        ? Math.min(...mainBands.slice(1, numMainRows).map((item, index) =>
-            item.yCenterRatio - mainBands[index].yCenterRatio))
+      const is3x4 = candidateTemplate.name.startsWith("3x4") && numMainRows >= 3;
+      const rowGap = band && is3x4 && mainBands.length >= numMainRows
+        ? (mainBands.length > 1
+            ? (mainBands[numMainRows - 1].yCenterRatio - mainBands[0].yCenterRatio) / (numMainRows - 1)
+            : 0.18)
         : null;
-      const rowYMin = band ? Math.max(yMin, rowGap > 0 ? band.yCenterRatio - rowGap * 0.86 : band.yMin)
-        : (yMin + (r / totalRows) * (yMax - yMin));
-      const rowYMax = band ? Math.min(yMax, rowGap > 0 ? band.yCenterRatio + rowGap * 0.48 : band.yMax)
-        : (yMin + ((r + 0.92) / totalRows) * (yMax - yMin));
+      const prevCenter = (r > 0 && mainBands[r - 1])
+        ? mainBands[r - 1].yCenterRatio
+        : (band && rowGap ? band.yCenterRatio - rowGap : yMin);
+      const nextCenter = (r < numMainRows - 1 && mainBands[r + 1])
+        ? mainBands[r + 1].yCenterRatio
+        : (hasRhythmRow && topology.bands[numMainRows]
+            ? topology.bands[numMainRows].yCenterRatio
+            : (band && rowGap ? band.yCenterRatio + rowGap : yMax));
+
+      const rowYMin = (band && is3x4)
+        ? Math.max(yMin, (prevCenter + band.yCenterRatio) / 2)
+        : (band ? band.yMin : (yMin + (r / totalRows) * (yMax - yMin)));
+      const rowYMax = (band && is3x4)
+        ? Math.min(yMax, (band.yCenterRatio + nextCenter) / 2)
+        : (band ? band.yMax : (yMin + ((r + 0.96) / totalRows) * (yMax - yMin)));
 
       for (let c = 0; c < numCols; c++) {
         const colXMin = xMin + (c / numCols) * (xMax - xMin);
