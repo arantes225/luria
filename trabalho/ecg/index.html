@@ -620,6 +620,20 @@
     <main class="ecg-normal-photo-main">
       <p>Marque os quatro cantos reais do papel arrastando as bolinhas azuis. Inclua toda a grade e todos os rótulos, mas não a mesa ao redor. Se preferir, compare também o resultado da foto inteira.</p>
       <div class="ecg-normal-photo-mode" role="group" aria-label="Selecionar área do exame">
+        <label>Formato da imagem
+          <select id="ecg-photo-layout">
+            <option value="auto">Detectar automaticamente</option>
+            <option value="1x1">Uma derivação longa</option>
+            <option value="2x1">Duas tiras longas</option>
+            <option value="3x1">Três tiras longas</option>
+            <option value="4x1">Quatro tiras longas</option>
+            <option value="6x1">Seis tiras longas</option>
+            <option value="3x4">ECG: 3 linhas × 4 colunas</option>
+            <option value="6x2">ECG: 6 linhas × 2 colunas</option>
+            <option value="12x1">ECG: 12 linhas × 1 coluna</option>
+            <option value="2x6">ECG: 2 linhas × 6 colunas</option>
+          </select>
+        </label>
         <label><input type="radio" name="ecg-photo-selection" value="corners" checked> Delimitar papel (4 cantos)</label>
         <label><input type="radio" name="ecg-photo-selection" value="whole"> Usar foto inteira (controle A/B)</label>
         <button type="button" id="ecg-normal-photo-rotate-left" class="ecg-btn secondary" aria-label="Girar foto 90 graus para a esquerda">↺ Girar esquerda</button>
@@ -653,11 +667,11 @@
   <script src="/assets/js/luria-rotate-controller.js?v=1"></script>
   <script src="/assets/js/ecg-contracts.js?v=2"></script>
   <script src="/assets/js/ecg-signal-extractor.js?v=9"></script>
-  <script src="/assets/js/ecg-cv-engine.js?v=12"></script>
-  <script src="/assets/js/ecg-smart-camera.js?v=13"></script>
-  <script src="/assets/js/ecg-smart-ui.js?v=10"></script>
+  <script src="/assets/js/ecg-cv-engine.js?v=13"></script>
+  <script src="/assets/js/ecg-smart-camera.js?v=14"></script>
+  <script src="/assets/js/ecg-smart-ui.js?v=11"></script>
   <script src="/assets/js/ecg-photo-perspective.js?v=2"></script>
-  <script src="/assets/js/ecg-normal-photo.js?v=5"></script>
+  <script src="/assets/js/ecg-normal-photo.js?v=6"></script>
   <script defer src="/assets/js/pwa.js?v=20261030-ecg-dense-preview-v14"></script>
   <script defer src="/assets/js/ecg-reader.js?v=2"></script>
 </body>

@@ -352,6 +352,7 @@
 
           const result = cameraController.processPhotographCanvas(snapCanvas, {
             source: manualSelection ? "normal_photo_manual_four_corners" : source,
+            layoutHint: photoOptions.layoutHint,
             manualPaperCornersApplied: manualSelection,
             userCalibration: {
               paperSpeedMmPerSec: Number(calSpeedSelect?.value) || 25,
@@ -373,6 +374,9 @@
           if (missingAlert) missingAlert.hidden = true;
           if (captureSource) captureSource.textContent = "Origem: " + (source === "normal_photo" ? (manualSelection ? "Foto normal (4 cantos ajustados)" : "Foto normal (integral)") : "Imagem importada") + " · rotação " + rotationDeg + "° · " + originalW + " × " + originalH + " px (original) · " + snapCanvas.width + " × " + snapCanvas.height + " px (análise).";
           const leads = cameraController.getCapturedLeads();
+          const layout = result.boundaries?.detectedLayout;
+          if (captureSource && layout) captureSource.textContent += " Formato: " + layout.description +
+            (layout.requiresLayoutConfirmation ? " — hipótese; confira linhas e colunas." : ".");
           currentLeadsData = leads;
           currentSessionPackage = cameraController.getSessionStructuredPackage();
           updateCalibrationUI(currentSessionPackage.calibration);
@@ -517,10 +521,10 @@
 
       const title = document.createElement("strong");
       title.className = "ecg-lead-title";
-      title.textContent = provisional
+      title.textContent = leadInfo.displayLabel || (provisional
         ? `${leadInfo.lead} — hipótese pela posição · região ` + ((leadInfo.candidateRegion?.row ?? 0) + 1) +
           "/" + ((leadInfo.candidateRegion?.col ?? 0) + 1)
-        : leadInfo.lead;
+        : leadInfo.lead);
       titleWrap.appendChild(title);
 
       // Badge de status do auditor independente
@@ -556,7 +560,7 @@
       });
       head.appendChild(zoomControls);
       card.appendChild(head);
-      if (provisional) {
+      if (provisional && !leadInfo.displayLabel) {
         const warning = document.createElement("p");
         warning.className = "ecg-provisional-warning";
         warning.textContent = `Os pixels foram extraídos da posição esperada para ${leadInfo.lead}, mas o rótulo não foi confirmado automaticamente. Compare com a fotografia original antes de confirmar.`;
@@ -610,7 +614,7 @@
       });
       actions.appendChild(btnRecapture);
 
-      if (provisional) {
+      if (provisional && !leadInfo.displayLabel) {
         const btnConfirmLead = document.createElement("button");
         btnConfirmLead.type = "button";
         btnConfirmLead.className = "ecg-btn";

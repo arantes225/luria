@@ -33,7 +33,10 @@
       Number(detection.detectedLayout?.validWaveformCells || 0));
     // Preserve independent signal evidence when simple template OCR disagrees;
     // never regard the mismatch as verified lead identity.
-    if (n < 3 || Object.keys(detection.candidateRegions || {}).length < 3) return false;
+    const partialPhoto = photoPreviewOnly && detection.detectedLayout?.documentType &&
+      detection.detectedLayout.documentType !== "full_ecg_candidate";
+    const minimum = partialPhoto ? 1 : 3;
+    if (n < minimum || Object.keys(detection.candidateRegions || {}).length < minimum) return false;
     const grid = detection.calibration;
     const labels = detection.recognizedLabels || {};
     const strongLabels = Object.values(labels).filter(x => x?.ocrRecognized && x?.hasValidTrace).length;
@@ -43,7 +46,7 @@
       strongLabels >= 2 ||
       // On user-initiated photos, uncertain calibration must NOT prevent a
       // clearly marked, non-clinical waveform preview.
-      (photoPreviewOnly && n >= 3 && sheet?.found === true) ||
+      (photoPreviewOnly && n >= minimum && sheet?.found === true) ||
       // Live mode still needs stronger morphology if the grid is illegible.
       (n >= 6 && detection.detected === true && sheet?.found === true);
   }
@@ -131,6 +134,7 @@
     const capturedLeads = new Map();
 
     function resetLeadsRegistry() {
+      capturedLeads.clear();
       CANONICAL_LEADS.forEach(lead => {
         capturedLeads.set(lead, {
           captured: false,
@@ -485,6 +489,7 @@
       let boundaries = cvEngine.detectECGBoundaries(fullImageData, {
         userCalibration: sessionCalibration.confirmedByUser ? sessionCalibration : options.userCalibration,
         paperAlreadyRectified: options.manualPaperCornersApplied === true,
+        layoutHint: options.layoutHint,
         allowDensePreview,
         allowTopologyFallback: allowDensePreview
       });
@@ -517,6 +522,7 @@
           fullImageData = corrected;
           boundaries = cvEngine.detectECGBoundaries(fullImageData, {
             userCalibration: sessionCalibration.confirmedByUser ? sessionCalibration : options.userCalibration,
+            layoutHint: options.layoutHint,
             allowDensePreview,
             allowTopologyFallback: allowDensePreview
           });
@@ -582,11 +588,15 @@
       const anomalies = contracts.normalizeAnomalies(boundaries.anomalies);
 
       let quarantinedCount = 0;
-      CANONICAL_LEADS.forEach(leadName => {
-        const box = leadsMap[leadName];
+      Object.entries(leadsMap).forEach(([leadName, box]) => {
         if (!box) return;
+        if (!capturedLeads.has(leadName)) capturedLeads.set(leadName, {
+          lead: leadName, captured: false, status: "pending", displayLabel: box.displayLabel
+        });
         const proposedIdentity = contracts.normalizeLeadIdentity(boundaries.leadIdentities?.[leadName] || {});
         let provisional = !isSafeAutomaticLeadAssignment(leadName, proposedIdentity, box, anomalies);
+        if (!CANONICAL_LEADS.includes(leadName) ||
+            boundaries.detectedLayout?.requiresLayoutConfirmation === true) provisional = true;
         if (provisional) quarantinedCount++;
 
         const roiX = Math.max(0, Math.round(box.xMin * snapCanvas.width));
@@ -706,7 +716,7 @@
       currentTargetLead = pendingLeadQueue[0] || null;
       updateHudProgress();
       const confirmedCount = CANONICAL_LEADS.filter(l => capturedLeads.get(l)?.status === "captured").length;
-      const provisionalCount = CANONICAL_LEADS.filter(l => capturedLeads.get(l)?.status === "provisional").length;
+      const provisionalCount = Array.from(capturedLeads.values()).filter(l => l.status === "provisional").length;
       return {
         ok: newlyCapturedCount > 0 || provisionalCount > 0,
         capturedCount: newlyCapturedCount,
@@ -1115,6 +1125,7 @@
       return {
         timestamp: new Date().toISOString(),
         layoutId: currentSheetMap?.layoutId || "unknown",
+        documentLayout: currentSheetMap?.detectedLayout || null,
         originalImageUrl,
         anomalies: contracts.normalizeAnomalies(currentSheetMap?.anomalies),
         calibration: { ...sessionCalibration },
@@ -1158,6 +1169,10 @@
      * e calibração confirmada/medida.
      */
     function confirmExtractionAndEnableAI() {
+      if (currentSheetMap?.detectedLayout?.documentType &&
+          currentSheetMap.detectedLayout.documentType !== "full_ecg_candidate") {
+        return {allowed: false, reason: "Esta imagem contém uma tira ou um ECG parcial. A extração está disponível para conferência; o modelo de 12 derivações exige um exame completo."};
+      }
       const missing = CANONICAL_LEADS.filter(l => !capturedLeads.get(l)?.captured);
       if (missing.length > 0) {
         return {

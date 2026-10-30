@@ -1208,7 +1208,7 @@
     }
 
     const candidates = [];
-    const headerCutoff = yMin + spanH * 0.055;
+    const headerCutoff = yMin + spanH * 0.015;
     for (let y = Math.ceil(headerCutoff) + 2; y < yMax - 2; y++) {
       const score = (rowOccupancy[y - 1] + rowOccupancy[y] + rowOccupancy[y + 1]) / 3;
       if (score >= 0.16 && score >= rowOccupancy[y - 2] && score >= rowOccupancy[y + 2]) {
@@ -1216,29 +1216,36 @@
       }
     }
     candidates.sort((a, b) => b.score - a.score);
-    const minBandGap = Math.max(10, spanH * 0.085);
+    const minBandGap = Math.max(8, spanH * 0.045);
     const selected = [];
     for (const candidate of candidates) {
       if (selected.every(item => Math.abs(item.yCenter - candidate.yCenter) >= minBandGap)) {
         selected.push(candidate);
       }
-      if (selected.length >= 12) break;
+      if (selected.length >= 16) break;
     }
     selected.sort((a, b) => a.yCenter - b.yCenter);
 
-    // Fallback proporcional: ainda permite revisão manual sem inventar nomes.
-    if (selected.length < 3) {
-      for (let i = 0; i < 3; i++) {
-        selected.push({ yCenter: yMin + spanH * (0.24 + i * 0.24), score: 0 });
+    // Weak peaks are usually QRS/T excursions between actual baselines.
+    // Never manufacture three rows when the image contains a single strip.
+    const strongest = Math.max(0, ...selected.map(b => b.score));
+    const baselines = selected.filter(b => {
+      if (b.score < Math.max(0.22, strongest * 0.46)) return false;
+      // A border is straight over almost the entire width. Position alone
+      // cannot reject it: a real twelfth lead often occupies the last 6%.
+      let exactDark = 0;
+      for (let x = xMin; x < xMax; x++) {
+        const i = (b.yCenter * width + x) * 4;
+        if (data[i] < 130 && data[i + 1] < 130 && data[i + 2] < 130) exactDark++;
       }
-      selected.sort((a, b) => a.yCenter - b.yCenter);
-    }
+      return exactDark / spanW < 0.94;
+    });
 
     return {
-      rowCount: selected.length,
-      bands: selected.map((b, idx) => {
-        const prevGap = idx > 0 ? b.yCenter - selected[idx - 1].yCenter : spanH / Math.max(3, selected.length);
-        const nextGap = idx < selected.length - 1 ? selected[idx + 1].yCenter - b.yCenter : prevGap;
+      rowCount: baselines.length,
+      bands: baselines.map((b, idx) => {
+        const prevGap = idx > 0 ? b.yCenter - baselines[idx - 1].yCenter : spanH / Math.max(1, baselines.length);
+        const nextGap = idx < baselines.length - 1 ? baselines[idx + 1].yCenter - b.yCenter : prevGap;
         const halfSpan = Math.max(12, Math.min(prevGap, nextGap) * 0.43);
         return {
           index: idx,
@@ -1330,6 +1337,12 @@
         yMin: gy[0] / height, yMax: (gy[gy.length - 1] + 1) / height
       };
     }
+    // A user-selected strip/export may fill the whole bitmap. Touching all
+    // four edges does not by itself mean that the waveform was cut off.
+    if (options.allowDensePreview === true && sheet.found && sheet.touchesAllBorders) {
+      sheet.isCutOff = false;
+      sheet.photoFillsFrame = true;
+    }
     if (!sheet.found || sheet.isCutOff) {
       return {
         detected: false,
@@ -1370,24 +1383,7 @@
     const calibration = detectECGGridAndCalibration(imageData, options.userCalibration || null, sheet.boundaries);
 
     // 5. Descobrir topologia das faixas de traçado
-    let topology = discoverWaveformTopology(imageData, sheet.boundaries);
-
-    // A fotografia de um ECG pode perder as faixas no pré-processamento por
-    // sombra, grade muito marcada ou compressão. Para uma foto escolhida pelo
-    // usuário, uma grade medida permite testar a hipótese 3x4 diretamente.
-    // Isto não aceita a imagem por si só: cada célula ainda precisa recuperar
-    // um traçado real e pelo menos três células precisam passar. O scanner ao
-    // vivo jamais usa esta rota de recuperação.
-    const canTryMeasuredGridFallback = topology.rowCount === 0 &&
-      options.allowTopologyFallback === true && calibration.gridDetected === true;
-    if (canTryMeasuredGridFallback) {
-      topology = {
-        ...topology,
-        rowCount: 3,
-        bands: [],
-        fallbackFromMeasuredGrid: true
-      };
-    }
+    const topology = discoverWaveformTopology(imageData, sheet.boundaries);
 
     // Se não há faixas horizontais de traçado ou há excesso de linhas densas (como página de texto comum)
     if (topology.rowCount < 1 || topology.rowCount > 15) {
@@ -1473,6 +1469,52 @@
    * Avalia a disposição real das células, executa OCR nos rótulos visíveis,
    * detecta rótulos trocados/duplicados/ausentes e recusa atribuições sem evidência
    */
+  function inferDocumentLayout(imageData, boundaries, topology, options = {}) {
+    const count = topology.bands.length;
+    const requested = /^(1|2|3|4|6|12)x(1|2|4|6)$/.exec(options.layoutHint || "");
+    let rows = count, cols = 1, rhythmCount = 0, uncertain = false;
+    if (requested && Number(requested[1]) * Number(requested[2]) <= 12) {
+      rows = Number(requested[1]); cols = Number(requested[2]);
+      if (rows === 3 && cols === 4) rhythmCount = Math.max(0, count - rows);
+    } else if (count === 12) {
+      rows = 12;
+    } else if (count === 6) {
+      rows = 6; cols = 2; uncertain = true;
+    } else if (count >= 3 && count <= 5) {
+      // Test interior printed labels before choosing a column hypothesis.
+      const votes = {2: 0, 4: 0};
+      for (const columns of [2, 4]) for (const band of topology.bands.slice(0, 3)) {
+        for (let col = 1; col < columns; col++) {
+          const xMin = boundaries.xMin + col / columns * (boundaries.xMax - boundaries.xMin);
+          const label = recognizeLeadLabelInRegion(imageData, {
+            xMin, xMax: Math.min(boundaries.xMax, xMin + (boundaries.xMax - boundaries.xMin) / columns * 0.3),
+            yMin: band.yMin, yMax: band.yCenterRatio
+          });
+          if (label.recognized) votes[columns]++;
+        }
+      }
+      cols = votes[2] >= 2 && votes[2] > votes[4] ? 2 : 4;
+      rows = 3;
+      rhythmCount = Math.max(0, count - rows);
+      uncertain = Math.max(votes[2], votes[4]) < 2;
+    }
+    const known = rows === 3 && cols === 4 ? LAYOUT_TEMPLATES[rhythmCount ? "3x4_plus_rhythm" : "3x4_standard"]
+      : rows === 6 && cols === 2 ? LAYOUT_TEMPLATES["6x2_standard"]
+      : rows === 12 && cols === 1 ? LAYOUT_TEMPLATES["12x1_stacked"] : null;
+    const documentType = rows * cols === 12 ? "full_ecg_candidate"
+      : rows === 1 && cols === 1 ? "single_strip" : "partial_ecg";
+    return {
+      ...(known || {}), name: known?.name || `${rows}x${cols}_traces`,
+      description: `${rows} linha(s) × ${cols} coluna(s)` + (rhythmCount ? ` + ${rhythmCount} tira(s) longa(s)` : ""),
+      grid: known?.grid || Array.from({length: rows}, () => Array(cols).fill(null)),
+      rhythmRows: rhythmCount ? Array.from({length: rhythmCount}, (_, i) => ({rowIndex: rows + i})) : [],
+      rowCount: rows + rhythmCount, mainRows: rows, columnCount: cols, rhythmCount,
+      documentType, uncertain, evidence: requested ? "user_selected_layout" : uncertain ? "geometric_hypothesis" : "observed_rows",
+      alternatives: uncertain ? [`${count}x1`, `${rows}x${cols}`] : [],
+      requiresLayoutConfirmation: uncertain
+    };
+  }
+
   function evaluateAndMapLeadRegions(imageData, boundaries, topology, calibration, extractor, options = {}) {
     const { width, height } = imageData;
     const anomalies = [];
@@ -1484,15 +1526,7 @@
     // Layouts paisagem com 3–8 faixas são quase sempre 3×4 com zero ou mais
     // tiras de ritmo. O código anterior convertia qualquer folha de 5–7 faixas
     // em 6×2, inclusive fotos reais 3×4 + três ritmos.
-    const paperAspect = ((xMax - xMin) * width) / Math.max(1, (yMax - yMin) * height);
-    let candidateTemplate = LAYOUT_TEMPLATES["3x4_standard"];
-    if (paperAspect >= 1.18 && topology.rowCount >= 4 && topology.rowCount <= 8) {
-      candidateTemplate = LAYOUT_TEMPLATES["3x4_plus_rhythm"];
-    } else if (paperAspect < 1.18 && topology.rowCount >= 5 && topology.rowCount <= 7) {
-      candidateTemplate = LAYOUT_TEMPLATES["6x2_standard"];
-    } else if (topology.rowCount >= 10 && topology.rowCount <= 13) {
-      candidateTemplate = LAYOUT_TEMPLATES["12x1_stacked"];
-    }
+    const candidateTemplate = inferDocumentLayout(imageData, boundaries, topology, options);
 
     // Construir caixas candidatas baseadas nas bandas reais detectadas (ou subdivisão da área útil)
     const numMainRows = candidateTemplate.grid.length;
@@ -1550,6 +1584,7 @@
         const colXMax = xMin + ((c + 0.96) / numCols) * (xMax - xMin);
         const expectedLead = candidateTemplate.grid[r][c];
         cellBoxes.push({
+          slot: expectedLead || `trace_${r + 1}_${c + 1}`,
           row: r,
           col: c,
           expectedLead,
@@ -1608,12 +1643,13 @@
 
       if (sigRes.isValid) {
         validWaveformCells++;
-        const slot = cell.expectedLead;
+        const slot = cell.slot;
         if (slot && !candidateRegions[slot]) {
           candidateRegions[slot] = {
             row: cell.row, col: cell.col, xMin: cell.xMin, xMax: cell.xMax,
             yMin: cell.yMin, yMax: cell.yMax, expectedInTemplate: slot,
             evidence: "unassigned_waveform_candidate",
+            displayLabel: cell.expectedLead ? null : `Traçado ${cell.row + 1}.${cell.col + 1}`,
             // This text is diagnostic only; never use it to automatically
             // rename the candidate into a confirmed canonical lead.
             observedLabel: ocrRes.recognized ? ocrRes.lead : null
@@ -1701,7 +1737,7 @@
     if (hasRhythmRow || topology.rowCount >= 4) {
       const lastMainY = mainBands[numMainRows - 1]?.yCenterRatio || 0;
       const rhythmBands = topology.bands.filter(band => band.yCenterRatio > lastMainY + 0.04);
-      (rhythmBands.length ? rhythmBands : [{ yMin: 0.79, yMax: 0.94 }]).forEach((rBand, index) => {
+      rhythmBands.forEach((rBand, index) => {
         const rBox = { xMin, xMax, yMin: rBand.yMin, yMax: rBand.yMax };
         const rOcr = recognizeLeadLabelInRegion(imageData, rBox);
         rhythmStrips.push({
@@ -1710,6 +1746,17 @@
           evidence: rOcr.recognized ? "ocr_verified" : "unassigned_rhythm_candidate",
           xMin: rBox.xMin, xMax: rBox.xMax, yMin: rBox.yMin, yMax: rBox.yMax
         });
+        const crop = cropSubImageData(imageData, Math.round(rBox.xMin * width), Math.round(rBox.yMin * height),
+          Math.round((rBox.xMax - rBox.xMin) * width), Math.round((rBox.yMax - rBox.yMin) * height));
+        const trace = extractor?.extractRealSignalFromImageData?.(crop, {
+          calibration, allowOverlappingPreview: true, maskPrintedHeader: true,
+          allowDensePreview: options.allowDensePreview === true
+        });
+        if (trace?.isValid) candidateRegions[`rhythm_${index + 1}`] = {
+          ...rBox, row: numMainRows + index, col: 0, expectedInTemplate: null,
+          displayLabel: `Tira longa ${index + 1}`, observedLabel: rOcr.recognized ? rOcr.lead : null,
+          evidence: "unassigned_rhythm_candidate"
+        };
       });
     }
 
@@ -1719,7 +1766,8 @@
     // disponíveis como candidatas para conferência humana.
 
     // 2. Se menos de 3 células tiverem morfologia real de ECG (e não for captura single-lead explícita)
-    if (validWaveformCells < 3) {
+    const minimumRegions = candidateTemplate.documentType === "full_ecg_candidate" ? 3 : 1;
+    if (validWaveformCells < minimumRegions) {
       anomalies.push({ code: "insufficient_valid_waveform_regions" });
       return {
         isValidECG: false,
@@ -1760,6 +1808,10 @@
       : (validWaveformCells >= 10 ? "medium_topology_verified" : "low_partial");
 
     const detectedLayout = {
+      ...candidateTemplate,
+      requiresLayoutConfirmation: candidateTemplate.requiresLayoutConfirmation &&
+        new Set(Object.values(recognizedLabels).filter(label => label.ocrRecognized &&
+          label.recognizedLead === label.expectedLead).map(label => label.region.col)).size < 2,
       name: labelMismatchCount > 0 ? `${candidateTemplate.name}_reordered` : candidateTemplate.name,
       description: candidateTemplate.description,
       isPositionalHypothesisOnly: ocrConfirmedCount === 0,
@@ -2018,6 +2070,7 @@
       detectECGGridAndCalibration,
       recognizeLeadLabelInRegion,
       discoverWaveformTopology,
+      inferDocumentLayout,
       computeNavigationGuidance,
       updateSpatialRegistration,
       cropSubImageData,
@@ -2039,6 +2092,7 @@
     detectECGGridAndCalibration,
     recognizeLeadLabelInRegion,
     discoverWaveformTopology,
+    inferDocumentLayout,
     computeNavigationGuidance,
     updateSpatialRegistration,
     cropSubImageData,
