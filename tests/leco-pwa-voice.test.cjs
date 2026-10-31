@@ -138,8 +138,14 @@ test("PCM response is decoded separately from WAV and playback is guarded", () =
   assert.ok(src.includes("speechFinishWatchdog"));
 });
 
+test("Zero or stale speech recognition confidence cannot block voice answers", () => {
+  assert.match(src, /liveTranscriptConfidence > 0 && liveTranscriptConfidence <= 1/);
+  assert.match(src, /liveTranscriptConfidence = null;\n    const hasMaterial/);
+  assert.match(src, /Number\.isFinite\(confidence\) && confidence > 0 && confidence <= 1/);
+});
+
 test("Installed PWA references updated voice script and cache release", () => {
-  const release = "20261030-leco-voice3";
+  const release = "20261030-leco-voice4";
   assert.ok(worker.includes("luria-pwa-" + release));
   assert.ok(pwa.includes('const release = "' + release + '"'));
   assert.ok(page.includes("/assets/js/pwa.js?v=" + release));
