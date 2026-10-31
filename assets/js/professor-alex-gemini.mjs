@@ -511,7 +511,9 @@ if (form) {
     const hasMaterial = Boolean(fileInput?.files?.[0]);
     const isSocial = isSocialOrGreeting(prompt || topic);
     const isPlanning = isStudyPlanningRequest(prompt || topic);
-    if (isSocial && !hasMaterial) {
+    // Voice always goes through the authenticated backend TTS path; a local
+    // social shortcut returns text only and is silent in installed iOS PWAs.
+    if (isSocial && !hasMaterial && !isLiveActive) {
       const answer = fastSocialReply(prompt || topic, isEstourado);
       if (prompt) appendUserMessage(prompt);
       display(answer, "Leco");
