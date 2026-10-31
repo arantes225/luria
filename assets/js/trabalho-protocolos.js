@@ -354,6 +354,9 @@ function getProtocolCalculators(r) {
     search: document.getElementById("protocol-search"),
     category: document.getElementById("protocol-category"),
     batch: document.getElementById("protocol-batch"),
+    pagePrev: document.getElementById("protocol-page-prev"),
+    pageNext: document.getElementById("protocol-page-next"),
+    pageLabel: document.getElementById("protocol-page-label"),
     list: document.getElementById("protocol-list"),
     detail: document.getElementById("protocol-detail"),
     count: document.getElementById("protocol-count"),
@@ -403,37 +406,100 @@ function getProtocolCalculators(r) {
     return `<section class="protocol-section protocol-refs"><h3>Fontes e referências</h3><div>${items.map((r) => `<a href="${esc(luriaSafeContentUrl(r.url) || '#')}" target="_blank" rel="noopener noreferrer">${esc(r.label || "Fonte oficial")}</a>`).join("")}</div></section>`;
   };
 
-  const filtered = () => {
-    const q = norm(els.search?.value);
-    const category = els.category?.value || "";
-    const batch = els.batch?.value || "";
-    return rows.filter((r) => {
-      if (category && r.category !== category) return false;
-      if (batch && !(Array.isArray(r.tags) && r.tags.includes(batch))) return false;
-      if (!q) return true;
-      return norm([r.title,r.category,r.summary,...(r.tags||[]),JSON.stringify(r.suspicion||[]),JSON.stringify(r.exams||[])].join(" ")).includes(q);
-    });
-  };
 
+  const PAGE_SIZE = 40;
+  let page = 0, totalMatches = 0, listRequest = 0, detailRequest = 0;
   function renderList() {
-    const items = filtered();
-    els.count.textContent = `${items.length} protocolo${items.length === 1 ? "" : "s"}`;
-    els.empty.hidden = items.length > 0;
-    els.list.innerHTML = items.map((r) => `
-      <button type="button" class="protocol-row ${String(selected) === String(r.id) ? "active" : ""}" data-id="${r.id}">
-        <span><strong>${esc(r.title)}</strong><small>${esc(r.category)} · ${esc(r.setting)}</small></span>
-        <em class="${r.status === "verified" ? "ok" : "warn"}">${r.status === "verified" ? "Revisado" : (Array.isArray(r.tags) && r.tags.includes("conteudo-pendente") ? "Em elaboração" : "Em revisão")}</em>
-      </button>`).join("");
-    els.list.querySelectorAll("[data-id]").forEach((btn) => btn.addEventListener("click", () => {
-      const rawId = btn.dataset.id; const found = rows.find((x) => String(x.id) === String(rawId)); selected = found ? found.id : rawId;
+    els.count.textContent = String(totalMatches) + (totalMatches === 1 ? " protocolo" : " protocolos");
+    els.empty.hidden = rows.length > 0;
+    els.list.innerHTML = rows.map((r) =>
+      '<button type="button" class="protocol-row' + (String(selected) === String(r.id) ? ' active' : '') + '" data-id="' + esc(r.id) + '">' +
+        '<span><strong>' + esc(r.title) + '</strong><small>' + esc(r.category) + ' · ' + esc(r.setting) +
+        (r.cid10_primary ? ' · CID-10 ' + esc(r.cid10_primary) : '') + '</small></span>' +
+        '<em class="' + (r.status === 'verified' ? 'ok' : 'warn') + '">' +
+        (r.status === 'verified' ? 'Revisado' : (Array.isArray(r.tags) && r.tags.includes('conteudo-pendente') ? 'Em elaboração' : 'Em revisão')) +
+        '</em></button>'
+    ).join("");
+    els.list.querySelectorAll("[data-id]").forEach((btn) => btn.addEventListener("click", () => openProtocol(btn.dataset.id)));
+    if (els.pagePrev) els.pagePrev.disabled = page <= 0;
+    if (els.pageNext) els.pageNext.disabled = (page + 1) * PAGE_SIZE >= totalMatches;
+    if (els.pageLabel) els.pageLabel.textContent = totalMatches ?
+      "Página " + (page + 1) + " de " + Math.ceil(totalMatches / PAGE_SIZE) : "Nenhum resultado";
+  }
+
+  async function openProtocol(idOrSlug, bySlug = false) {
+    const ticket = ++detailRequest;
+    selected = idOrSlug;
+    renderList();
+    els.detail.innerHTML = '<div class="protocol-placeholder">Carregando a ficha selecionada…</div>';
+    if (!sb) {
+      const local = rows.find((x) => String(x.id) === String(idOrSlug) || x.slug === idOrSlug);
+      if (local) renderDetail(local);
+      else els.detail.textContent = "Protocolo não disponível.";
+      return;
+    }
+    try {
+      let request = sb.from("clinical_protocols").select("*");
+      request = bySlug ? request.eq("slug", idOrSlug) : request.eq("id", idOrSlug);
+      const result = await request.single();
+      if (ticket !== detailRequest) return;
+      if (result.error || !result.data) throw result.error || Error("Ficha não localizada");
+      const data = result.data;
+      selected = data.id;
+      recipesBank = [];
+      const linked = Array.isArray(data.linked_recipe_slugs) ? data.linked_recipe_slugs.filter(Boolean) : [];
+      if (data.status === "verified" && linked.length) {
+        const recipes = await sb.from("recipe_bank").select("*").in("slug", linked);
+        if (ticket !== detailRequest) return;
+        if (!recipes.error) recipesBank = recipes.data || [];
+      }
+      renderDetail(data);
       renderList();
-      renderDetail(rows.find((x) => String(x.id) === String(selected)));
-      if (matchMedia("(max-width:900px)").matches) els.detail.scrollIntoView({behavior:"smooth",block:"start"});
-    }));
-    if ((!selected || !items.some((x) => String(x.id) === String(selected))) && items[0]) {
-      selected = items[0].id;
+      if (typeof matchMedia === "function" && matchMedia("(max-width:900px)").matches) els.detail.scrollIntoView({behavior:"smooth",block:"start"});
+    } catch (err) {
+      if (ticket !== detailRequest) return;
+      console.error("[Traube] Falha ao abrir ficha", err);
+      els.detail.innerHTML = '<div class="protocol-placeholder">Não foi possível carregar esta ficha. Tente novamente.</div>';
+    }
+  }
+
+  async function loadPage(reset = false) {
+    if (reset) page = 0;
+    const ticket = ++listRequest;
+    selected = null;
+    ++detailRequest;
+    els.detail.innerHTML = '<div class="protocol-placeholder">Clique em um protocolo para consultar sua ficha.</div>';
+    els.list.innerHTML = '<div class="protocol-placeholder">Consultando títulos…</div>';
+    if (!sb) {
+      const local = Array.isArray(window.LURIA_PROTOCOL_SEEDS) ? window.LURIA_PROTOCOL_SEEDS : [];
+      const queryText = norm(els.search?.value);
+      const result = local.filter((r) => (!els.category.value || r.category === els.category.value) &&
+        (!els.batch?.value || (r.tags || []).includes(els.batch.value)) &&
+        (!queryText || norm((r.title || "") + " " + (r.cid10_primary || "")).includes(queryText)));
+      totalMatches = result.length;
+      rows = result.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
       renderList();
-      renderDetail(items[0]);
+      return;
+    }
+    try {
+      let req = sb.from("clinical_protocols").select("id,slug,title,category,setting,status,tags,cid10_primary,cid10_description", {count:"exact"});
+      const cat = els.category?.value || "", batch = els.batch?.value || "";
+      const q = (els.search?.value || "").trim().replace(/[,()*%\\]/g," ").slice(0,90).trim();
+      if (cat) req = req.eq("category", cat);
+      if (batch) req = req.contains("tags", [batch]);
+      if (q) req = req.or("title.ilike.%" + q + "%,cid10_primary.ilike.%" + q + "%,cid10_description.ilike.%" + q + "%");
+      const result = await req.order("title", {ascending:true}).range(page * PAGE_SIZE, (page + 1) * PAGE_SIZE - 1);
+      if (ticket !== listRequest) return;
+      if (result.error) throw result.error;
+      rows = result.data || [];
+      totalMatches = result.count ?? rows.length;
+      renderList();
+    } catch (err) {
+      if (ticket !== listRequest) return;
+      console.error("[Traube] Falha na listagem paginada",err);
+      rows = [];
+      els.list.innerHTML = '<div class="protocol-placeholder">Falha ao consultar o catálogo. Verifique sua conexão.</div>';
+      els.count.textContent = "—";
     }
   }
 
@@ -476,6 +542,7 @@ function getProtocolCalculators(r) {
           <div>
             <div class="protocol-chips"><span>${esc(r.category)}</span><span>${esc(r.setting)}</span><span class="warn">Em elaboração</span></div>
             <h2>${esc(r.title)}</h2>
+          ${r.cid10_primary ? `<p><strong>CID-10:</strong> ${esc(r.cid10_primary)} · ${esc(r.cid10_description || "")}${r.cid10_mapping_status !== "validated" ? " · Código sujeito à revisão" : ""}</p>` : ""}
             <p>${esc(r.summary || "")}</p>
           </div>
         </header>
@@ -493,6 +560,7 @@ function getProtocolCalculators(r) {
         <header class="protocol-detail-head"><div>
           <div class="protocol-chips"><span>${esc(r.category)}</span><span>${esc(r.setting)}</span><span class="warn">Rascunho clínico — em revisão</span></div>
           <h2>${esc(r.title)}</h2>
+          ${r.cid10_primary ? `<p><strong>CID-10:</strong> ${esc(r.cid10_primary)} · ${esc(r.cid10_description || "")}${r.cid10_mapping_status !== "validated" ? " · Código sujeito à revisão" : ""}</p>` : ""}
           <p>${esc(r.summary || "")}</p>
         </div></header>
         <section class="protocol-section danger">
@@ -518,6 +586,7 @@ function getProtocolCalculators(r) {
         <div>
           <div class="protocol-chips"><span>${esc(r.category)}</span><span>${esc(r.setting)}</span><span class="${r.status === "verified" ? "ok" : "warn"}">${r.status === "verified" ? "Revisado" : "Em revisão"}</span></div>
           <h2>${esc(r.title)}</h2>
+          ${r.cid10_primary ? `<p><strong>CID-10:</strong> ${esc(r.cid10_primary)} · ${esc(r.cid10_description || "")}${r.cid10_mapping_status !== "validated" ? " · Código sujeito à revisão" : ""}</p>` : ""}
           <p>${esc(r.summary || "")}</p>
         </div>
         <div class="protocol-actions">
@@ -801,52 +870,38 @@ els.detail.querySelectorAll("[data-drug]").forEach((b) => b.addEventListener("cl
     }));
   }
 
+
   async function load() {
-    const localSeeds = Array.isArray(window.LURIA_PROTOCOL_SEEDS) ? window.LURIA_PROTOCOL_SEEDS : [];
-    const localRecipes = Array.isArray(window.LURIA_RECIPE_SEEDS) ? window.LURIA_RECIPE_SEEDS : [];
-    if (!sb && !localSeeds.length) { els.list.innerHTML = '<div class="protocol-placeholder">Não foi possível conectar.</div>'; return; }
-    let data = [], error = null, rBank = [];
-    if (sb) {
-      try {
-        const [pRes, rRes] = await Promise.all([
-          sb.from("clinical_protocols").select("*").order("title"),
-          sb.from("recipe_bank").select("*")
-        ]);
-        data = pRes?.data || [];
-        error = pRes?.error || null;
-        rBank = rRes?.data || [];
-      } catch (err) {
-        error = err;
-      }
-    }
-    const existingRecSlugs = new Set((rBank || []).map((r) => r.slug).filter(Boolean));
-    recipesBank = [...(rBank || []), ...localRecipes.filter((s) => !existingRecSlugs.has(s.slug))];
-    if (error && !localSeeds.length) { console.error(error); els.list.innerHTML = '<div class="protocol-placeholder">Não foi possível carregar os protocolos.</div>'; return; }
-    const dbRows = data || [];
-    const existingSlugs = new Set(dbRows.map((r) => r.slug).filter(Boolean));
-    rows = [...dbRows, ...localSeeds.filter((s) => !existingSlugs.has(s.slug))];
-    if (localSeeds.length) rows.sort((a, b) => String(a.title || "").localeCompare(String(b.title || ""), "pt-BR"));
-    const cats = [...new Set(rows.map((r) => r.category).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
-    els.category.innerHTML = '<option value="">Todas as áreas</option>' + cats.map((c)=>`<option value="${esc(c)}">${esc(c)}</option>`).join("");
+    const cats = ["Clínica Médica","APH / Emergência","Pediatria","Ginecologia e Obstetrícia","Cirurgia Geral",
+      "Infectologia","Infectologia / Pneumologia","Procedimentos / Protocolos Transversais","Dermatologia","Psiquiatria"];
+    els.category.innerHTML = '<option value="">Todas as áreas</option>' + cats.sort((a,b)=>a.localeCompare(b,"pt-BR"))
+      .map(c=>'<option value="' + esc(c) + '">' + esc(c) + '</option>').join("");
     if (els.batch) {
       const labels = [
-        ["bloco-01-de-04", "Bloco 1 · Emergência, cardio, pneumologia"],
-        ["bloco-02-de-04", "Bloco 2 · Gastro, nefro, neurologia"],
-        ["bloco-03-de-04", "Bloco 3 · Infectologia, pediatria"],
-        ["bloco-04-de-04", "Bloco 4 · GO, cirurgia, atenção primária"]
+        ["bloco-01-de-04","Bloco 1 · Emergência, cardio, pneumologia"],
+        ["bloco-02-de-04","Bloco 2 · Gastro, nefro, neurologia"],
+        ["bloco-03-de-04","Bloco 3 · Infectologia, pediatria"],
+        ["bloco-04-de-04","Bloco 4 · GO, cirurgia, atenção primária"],
+        ["expansao-1700-20261031","Expansão CID-10 · 1.080 temas em elaboração"]
       ];
       els.batch.innerHTML = '<option value="">Todos os blocos</option>' +
-        labels.map(([key,label]) => `<option value="${esc(key)}">${esc(label)} (50)</option>`).join("");
+        labels.map(pair => '<option value="' + esc(pair[0]) + '">' + esc(pair[1]) + '</option>').join("");
     }
     const params = new URLSearchParams(location.search);
-    const wanted = params.get("protocol");
     const q = params.get("q");
     if (q) els.search.value = q;
-    selected = rows.find((r) => r.slug === wanted)?.id || rows.find((r)=>norm(r.title).includes(norm(q||"")))?.id || rows[0]?.id || null;
-    renderList();
-    if (selected) renderDetail(rows.find((r)=>String(r.id)===String(selected)));
+    await loadPage(true);
+    const wanted = params.get("protocol");
+    if (wanted) await openProtocol(wanted,true);
   }
 
-  [els.search,els.category,els.batch].forEach((el)=>{el?.addEventListener("input",renderList);el?.addEventListener("change",renderList);});
+  let searchDebounce;
+  els.search?.addEventListener("input", () => {
+    clearTimeout(searchDebounce);
+    searchDebounce = setTimeout(() => loadPage(true), 240);
+  });
+  [els.category,els.batch].forEach(el=>el?.addEventListener("change", () => loadPage(true)));
+  els.pagePrev?.addEventListener("click", () => { if (page > 0) {page--;loadPage();} });
+  els.pageNext?.addEventListener("click", () => { if ((page + 1) * PAGE_SIZE < totalMatches) {page++;loadPage();} });
   load();
 })();
