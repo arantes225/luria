@@ -105,7 +105,39 @@
     {label:['ANTES DO','JANTAR'],w:32},{label:['2h APÓS','JANTAR'],w:32},
     {label:['AO','DEITAR'],w:31},{label:['OBSERVAÇÕES'],w:55}
   ];
-  function buildPdf(doc) {
+  // Same-origin icon already used by the project's branding; never substitute a generic symbol.
+  async function loadOfficialLogo() {
+    const image = await new Promise((resolve,reject)=>{
+      const img = new Image();
+      img.onload=()=>resolve(img);
+      img.onerror=()=>reject(new Error('Logo oficial indisponível. Confira o arquivo no site.'));
+      img.src='/assets/img/logos/logo-icone-original.png';
+    });
+    const source=document.createElement('canvas');
+    source.width=image.naturalWidth;source.height=image.naturalHeight;
+    const ctx=source.getContext('2d',{willReadFrequently:true});
+    if(!ctx) throw new Error('O navegador não conseguiu preparar a logo.');
+    ctx.drawImage(image,0,0);
+    const rgba=ctx.getImageData(0,0,source.width,source.height).data;
+    let minX=source.width,minY=source.height,maxX=-1,maxY=-1;
+    for(let y=0;y<source.height;y++)for(let x=0;x<source.width;x++){
+      if(rgba[(y*source.width+x)*4+3]<20)continue;
+      minX=Math.min(minX,x);minY=Math.min(minY,y);maxX=Math.max(maxX,x);maxY=Math.max(maxY,y);
+    }
+    if(maxX<minX||maxY<minY)throw new Error('Imagem de logo sem pixels visíveis.');
+    const icon=document.createElement('canvas');
+    const side=Math.max(maxX-minX+1,maxY-minY+1);
+    icon.width=768;icon.height=768;
+    icon.getContext('2d').drawImage(source,minX,minY,side,side,0,0,768,768);
+    const watermark=document.createElement('canvas');
+    watermark.width=768;watermark.height=768;
+    const mark=watermark.getContext('2d');
+    mark.globalAlpha=0.10;
+    mark.drawImage(icon,0,0);
+    return {icon:icon.toDataURL('image/png'),watermark:watermark.toDataURL('image/png')};
+  }
+
+  function buildPdf(doc,brand) {
     // A4 landscape, 1 page. Only three identifying fields: full name, start date, stamp.
     const W=297,M=12,BLUE=[24,72,136],TEXT=[27,42,61],SUB=[86,103,127],BORDER=[190,203,219];
     const text=(value,x,y,size=9,color=TEXT,weight='normal',opts={})=>{
@@ -117,8 +149,10 @@
     };
     doc.setFillColor(255,255,255);doc.rect(0,0,W,210,'F');
     doc.setFillColor(...BLUE);doc.rect(0,0,W,4,'F');
-    text('TRAUBE',M,17,17,BLUE,'bold');
-    text('REGISTRO DE GLICEMIA CAPILAR | 7 DIAS',M+43,17,12,TEXT,'bold');
+    doc.addImage(brand.icon,'PNG',M,6.2,17,17);
+    text('TRAUBE',M+20,17,17,BLUE,'bold');
+    doc.setDrawColor(...BORDER);doc.setLineWidth(.55);doc.line(M+54,10.4,M+54,22);
+    text('DIÁRIO GLICÊMICO · 7 DIAS',M+60,17,12,TEXT,'bold');
     text('Nome completo:',M,33,10,TEXT,'bold');
     line(M+32,34,W-M-89,34);
     text('Data inicial:',W-M-85,33,10,TEXT,'bold');
@@ -135,6 +169,12 @@
     for(let i=0;i<7;i++){
       const y=tableY+headH+i*rowH;
       if(i%2){doc.setFillColor(247,249,253);doc.rect(M,y,273,rowH,'F');}
+    }
+    // Watermark from the identical official logo at precisely 10% alpha.
+    const watermarkSize=145;
+    doc.addImage(brand.watermark,'PNG',(W-watermarkSize)/2,57,watermarkSize,watermarkSize);
+    for(let i=0;i<7;i++){
+      const y=tableY+headH+i*rowH;
       let cx=M;
       paperCols.forEach((col,j)=>{
         doc.setDrawColor(...BORDER);doc.setLineWidth(.25);doc.rect(cx,y,col.w,rowH);
@@ -158,7 +198,8 @@
       const Doc=window.jspdf?.jsPDF;
       if(!Doc)throw new Error('O navegador não conseguiu carregar o PDF.');
       const doc=new Doc({orientation:'landscape',unit:'mm',format:'a4',compress:true});
-      buildPdf(doc);
+      const brand=await loadOfficialLogo();
+      buildPdf(doc,brand);
       doc.save('Traube_Diario_Glicemico_7_dias.pdf');
       note('Modelo de 7 dias gerado em 1 página. Imprima em A4 horizontal e entregue ao paciente.');
     }catch(e){note('Não foi possível gerar o PDF: '+String(e?.message||e));}
