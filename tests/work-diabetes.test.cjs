@@ -60,10 +60,10 @@ test('Paper diary uses browser PDF generator and a manual transcription-only wor
   assert.match(script, /id="dm-download-paper"/);
   assert.match(script, /id="dm-paper-grid"/);
   assert.match(script, /id="dm-create-paper-grid"/);
-  assert.match(pdf, /Array\.from\(\{length:14\}/);
+  assert.match(pdf, /Array\.from\(\{length:7\}/);
   assert.match(pdf, /const timeSlots/);
   assert.match(pdf, /new Doc\(\{orientation:'landscape',unit:'mm',format:'a4'/);
-  assert.match(pdf, /Nenhuma medição foi salva na LURIA/);
+  assert.match(pdf, /Nenhuma medição foi salva na Traube/);
   assert.doesNotMatch(pdf, /localStorage|sessionStorage|\.from\('.*'\)\.insert/);
   assert.doesNotMatch(pdf, /recognize|OCR|Tesseract/i);
   assert.match(pdf, /formula injection/);
