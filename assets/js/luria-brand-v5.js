@@ -22,7 +22,10 @@
     const continuationCss = document.createElement("link");
     continuationCss.id = "luria-review-continuation-css";
     continuationCss.rel = "stylesheet";
-    continuationCss.href = "/assets/css/review-continuation-20261022.css?v=20261025-review-fixes3";
+    // Keep other areas' CSS stable; only the Leco PWA card needs a fresh stylesheet.
+    const continuationVersion = document.body?.dataset.page === "professor_alex"
+      ? "20261031-leco-actions-center1" : "20261025-review-fixes3";
+    continuationCss.href = "/assets/css/review-continuation-20261022.css?v=" + continuationVersion;
     document.head.appendChild(continuationCss);
     const continuationScript = document.createElement("script");
     continuationScript.id = "luria-review-continuation";
