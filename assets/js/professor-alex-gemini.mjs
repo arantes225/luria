@@ -898,7 +898,7 @@ async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackTe
 // Short utterances avoid the iOS Web Speech long-text stall. Each chunk
 // has start + completion timeouts so the mic never waits forever for onend.
 function splitSpeechIntoChunks(text, maxLength = 180) {
-  const words = String(text || "").split(/\\s+/).filter(Boolean);
+  const words = String(text || "").split(/\s+/).filter(Boolean);
   const chunks = [];
   let chunk = "";
   for (const word of words) {
@@ -920,10 +920,10 @@ function splitSpeechIntoChunks(text, maxLength = 180) {
 function speakText(text, onComplete) {
   const status = document.getElementById("alex-status-text");
   const plainText = String(text || "")
-    .replace(/\\*\\*(.*?)\\*\\*/g, "$1")
-    .replace(/\\*(.*?)\\*/g, "$1")
-    .replace(/#{1,6}\\s+/g, "")
-    .replace(/\\[(.*?)\\]\\(.*?\\)/g, "$1")
+    .replace(/\*\*(.*?)\*\*/g, "$1")
+    .replace(/\*(.*?)\*/g, "$1")
+    .replace(/#{1,6}\s+/g, "")
+    .replace(/\[(.*?)\]\(.*?\)/g, "$1")
     .replace(/<[^>]*>/g, "")
     .trim();
   if (!plainText) {
