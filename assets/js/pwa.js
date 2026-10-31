@@ -30,7 +30,7 @@
   // assumes origin-root URLs. Do not install a worker with invalid cache scope.
   if (new URL(document.baseURI).pathname !== "/") return;
 
-  const release = "20261030-gestor-dashboard-v3";
+  const release = "20261030-leco-voice3";
   const refreshKey = "luria:pwa:activated:" + release;
   let reloadPending = false;
   const hadController = !!navigator.serviceWorker.controller;
