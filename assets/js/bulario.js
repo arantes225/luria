@@ -213,7 +213,7 @@
 
   function renderDetail(row){
     if(!row){detail.innerHTML='<div class="empty">Selecione um medicamento.</div>';closeMobileDetail();return}
-    const d=row.data||{},formulations=Array.isArray(d.formulations)?d.formulations:[],hasCompletePosology=formulations.length>0&&formulations.every(f=>['dose_text','interval_text','route','duration_text','max_daily_text','administration','cautions','prescription_type'].every(k=>String(f?.[k]||'').trim())),ready=d.status==='posology_verified'||hasCompletePosology,summary=d.status==='verified';
+    const d=row.data||{},formulations=Array.isArray(d.formulations)?d.formulations:[],hasCompletePosology=formulations.length>0&&formulations.every(f=>['dose_text','interval_text','route','duration_text','max_daily_text','administration','cautions','prescription_type'].every(k=>String(f?.[k]||'').trim())),ready=d.status==='posology_verified'&&hasCompletePosology&&d.prescription_copy_blocked!==true&&d.catalog_only!==true,summary=d.status==='verified';
     const products=Array.isArray(d.products)?d.products:[];
     const brands=commercialNames(row);
     const diseases=Array.isArray(d.diseases)?d.diseases:[];
@@ -222,7 +222,7 @@
     detail.innerHTML=`${mobileDetailBar(row)}<header class="rx-detail-head"><div class="drug-kicker">${ready?'Ficha de posologia por apresentação':summary?'Resumo da bula':'Ficha em revisão'}</div><h2>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</h2><p class="drug-sub">${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<strong>Nome comercial/referência:</strong> ${esc(row.name)} · `:''}${esc(d.therapeutic_class||row.pharmacological_class||'Classe a confirmar')}</p></header>
       <div class="rx-bridge-actions">
         ${relatedProtocols.map(p=>`<button type="button" data-open-protocol="${esc(p.slug)}">Abrir protocolo: ${esc(p.title)}</button>`).join("")}
-        <button type="button" class="secondary" data-send-note="1">${window.LuriaClinicalBridge?.inPrescriptionFlow?.() ? "Adicionar à prescrição" : "Enviar à Cola Rápida"}</button>
+        ${window.LuriaClinicalBridge?.inPrescriptionFlow?.()&&!ready?'<span class="rx-note">Ficha pendente de validação: inclusão em prescrição desabilitada.</span>':`<button type="button" class="secondary" data-send-note="1">${window.LuriaClinicalBridge?.inPrescriptionFlow?.() ? "Adicionar à prescrição" : "Enviar à Cola Rápida"}</button>`}
       </div>
       <section class="rx-section"><div class="rx-section-head"><h3>Principais indicações</h3></div>${diseases.length?`<div class="rx-tags">${diseases.map(item=>`<span>${esc(item)}</span>`).join('')}</div>`:'<p class="rx-note">Indicações ainda não vinculadas nesta ficha.</p>'}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Nomes comerciais e produtos</h3></div>${brands.length?`<div class="rx-tags">${brands.map(name=>`<span>${esc(name)}</span>`).join('')}</div>`:'<p class="rx-note">Nenhum nome comercial vinculado a esta ficha ainda.</p>'}${products.length?`<div class="rx-products">${products.map(p=>`<span><b>${esc(p.name)}</b> · ${esc(p.type)} · ${esc(p.presentation)}</span>`).join('')}</div>`:''}<p class="rx-note">Os nomes associados não comprovam registro vigente nem permitem intercambiar doses, vias ou apresentações.</p></section>
@@ -237,31 +237,31 @@
       <section class="rx-section">
         <div class="rx-section-head"><h3>Modelo de Prescrição Pronta</h3><span>Cópia rápida</span></div>
         <div style="background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:12px;display:grid;gap:8px">
-          <pre id="rx-copy-text" style="margin:0;font-family:inherit;font-size:13px;line-height:1.45;white-space:pre-wrap;color:var(--text);font-weight:600">${esc(generatePrescriptionTemplate(row, formulations[0]))}</pre>
+${ready?`          <pre id="rx-copy-text" style="margin:0;font-family:inherit;font-size:13px;line-height:1.45;white-space:pre-wrap;color:var(--text);font-weight:600">${esc(generatePrescriptionTemplate(row, formulations[0]))}</pre>
           <div style="display:flex;gap:8px">
             <button type="button" id="rx-copy-prescription-btn" style="padding:7px 12px;border-radius:8px;border:1px solid var(--accent);background:color-mix(in srgb,var(--accent) 10%,var(--surface));color:var(--accent);font-weight:700;font-size:12px;cursor:pointer">Copiar prescrição formatada 📋</button>
-          </div>
+          </div>`:'<p class="rx-note">Prescrição indisponível até revisão individual da apresentação e validação da posologia.</p>'}
         </div>
       </section>
 
       <section class="rx-section">
         <div class="rx-section-head"><h3>Diluição, Estabilidade & Compatibilidade em Y</h3></div>
-        <div class="rx-grid">
+        ${ready?`<div class="rx-grid">
           ${field('Diluentes compatíveis', getInfusionDetails(row, formulations[0]).diluents)}
           ${field('Velocidade / Infusão', getInfusionDetails(row, formulations[0]).rate)}
           ${field('Compatibilidade em Y', getInfusionDetails(row, formulations[0]).compatibility)}
           ${field('Estabilidade & Armazenamento', getInfusionDetails(row, formulations[0]).stability)}
-        </div>
+        </div>`:'<p class="rx-note">Diluição, velocidade, compatibilidade e estabilidade pendentes de conferência na bula individual.</p>'}
       </section>
 
       <section class="rx-section">
         <div class="rx-section-head"><h3>Gestação, Lactação & Segurança Fetal</h3></div>
-        <div class="rx-grid">
+        ${ready?`<div class="rx-grid">
           ${field('Classificação de risco', getPregnancyProfile(row).category)}
           ${field('Uso na gestação', getPregnancyProfile(row).pregnancy)}
           ${field('Lactação / Leite materno', getPregnancyProfile(row).lactation)}
           ${field('Alternativas de 1ª linha', getPregnancyProfile(row).alternatives)}
-        </div>
+        </div>`:'<p class="rx-note">Dados de gestação e lactação pendentes de validação por apresentação. Não inferir segurança pela ausência de informação.</p>'}
       </section>
 
       <section class="rx-section"><div class="rx-section-head"><h3>Fonte e revisão</h3></div><p class="rx-note">${d.reviewed_at?`Fonte consultada em ${esc(d.reviewed_at)}. `:''}A ficha não substitui avaliação de contraindicações, interações e função renal.</p><a href="${esc(luriaSafeContentUrl(d.leaflet_url)||'https://consultas.anvisa.gov.br/#/bulario/')}" target="_blank" rel="noopener noreferrer">${d.leaflet_url?'Abrir bula completa':'Pesquisar no Bulário da Anvisa'} ↗</a></section>`;
