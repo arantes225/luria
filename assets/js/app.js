@@ -1,4 +1,13 @@
 
+// Nome visível da plataforma: Traube. Os identificadores técnicos legados permanecem estáveis.
+(function applyTraubeDisplayName() {
+  if (typeof document === 'undefined') return;
+  const original = document.title || '';
+  document.title = original.replace(/(\s*[·|—-]\s*)LURIA$/i, '$1Traube');
+  const installedTitle = document.querySelector('meta[name="apple-mobile-web-app-title"]');
+  if (installedTitle && /^LURIA$/i.test(installedTitle.content)) installedTitle.content = 'Traube';
+})();
+
 // Sidebar mobile/PWA unificado: uma única dimensão em todas as páginas.
 (function ensureUnifiedMobileSidebar() {
   if (document.getElementById("luria-unified-mobile-sidebar")) return;
