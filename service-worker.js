@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261031-ecg-v6";
+const CACHE_VERSION = "traube-pwa-20261031-ecg-v7";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";

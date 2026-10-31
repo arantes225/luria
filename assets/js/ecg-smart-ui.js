@@ -827,22 +827,16 @@
             if (prevPx === null) {
               ctx.moveTo(px, py);
             } else {
-              const midX = (prevPx + px) / 2;
-              const midY = (prevPy + py) / 2;
-              ctx.quadraticCurveTo(prevPx, prevPy, midX, midY);
+              ctx.lineTo(px, py);
             }
             prevPx = px;
             prevPy = py;
           } else {
             if (prevPx !== null) {
-              ctx.lineTo(prevPx, prevPy);
               prevPx = null;
               prevPy = null;
             }
           }
-        }
-        if (prevPx !== null) {
-          ctx.lineTo(prevPx, prevPy);
         }
         ctx.stroke();
 
@@ -930,7 +924,6 @@
       const val = signal[i];
       if (val === null || isNaN(val)) {
         if (prevX !== null) {
-          ctx.lineTo(prevX, prevY);
           prevX = null;
           prevY = null;
         }
@@ -941,15 +934,10 @@
       if (prevX === null) {
         ctx.moveTo(x, y);
       } else {
-        const midX = (prevX + x) / 2;
-        const midY = (prevY + y) / 2;
-        ctx.quadraticCurveTo(prevX, prevY, midX, midY);
+        ctx.lineTo(x, y);
       }
       prevX = x;
       prevY = y;
-    }
-    if (prevX !== null) {
-      ctx.lineTo(prevX, prevY);
     }
     ctx.stroke();
   }

@@ -284,7 +284,18 @@
       }
 
       // Filtrar clusters gigantes que ocupam mais de 45% da altura (bordas verticais pretas ou manchas borradas)
-      const validClusters = clusters.filter(c => c.span <= Math.max(8, height * 0.45));
+      // e pontas de ondas R/S de linhas vizinhas que tocam a borda superior/inferior desconectadas da linha de base
+      const validClusters = clusters.filter(c => {
+        if (c.span > Math.max(8, height * 0.45)) return false;
+        const hasCloserCluster = clusters.some(other =>
+          other !== c &&
+          other.span <= Math.max(8, height * 0.45) &&
+          Math.abs(other.yCenter - prelimBaselineY) + 8 < Math.abs(c.yCenter - prelimBaselineY)
+        );
+        if (c.yStart <= 3 && (c.yEnd < prelimBaselineY - height * 0.22 || hasCloserCluster)) return false;
+        if (c.yEnd >= height - 4 && hasCloserCluster && c.yStart > prelimBaselineY + height * 0.18) return false;
+        return true;
+      });
       if (clusters.some(c => c.span > Math.max(10, height * 0.45))) {
         excessiveThicknessColumns++;
       }
@@ -357,35 +368,78 @@
       for (let i = 1; i < statesByColumn[runEnd].length; i++) {
         if (statesByColumn[runEnd][i].cost < statesByColumn[runEnd][stateIndex].cost) stateIndex = i;
       }
+      const selectedClusters = new Array(width);
       for (let x = runEnd; x >= runStart; x--) {
         const state = statesByColumn[x][stateIndex] || statesByColumn[x][0];
-        const c = state.cluster;
-        const prevY = x > runStart && state.prev >= 0
-          ? statesByColumn[x - 1][state.prev]?.y
-          : null;
-        const nextY = x < runEnd && validMask[x + 1] ? rawY[x + 1] : null;
+        selectedClusters[x] = state.cluster;
+        validMask[x] = 1;
+        stateIndex = state.prev >= 0 ? state.prev : 0;
+      }
+
+      const isExtremum = new Uint8Array(width);
+      for (let x = runStart; x <= runEnd; x++) {
+        const c = selectedClusters[x];
+        const prevC = x > runStart ? selectedClusters[x - 1] : null;
+        const nextC = x < runEnd ? selectedClusters[x + 1] : null;
         let chosenY = c.yCenter;
-        // Normal print thickness is commonly 2-4 px after downscaling. Treat
-        // only substantially taller segments as a near-vertical QRS stroke;
-        // otherwise alternating top/bottom edges creates artificial jitter.
-        if (c.span >= Math.max(5, height * 0.04)) {
-          const reference = Number.isFinite(nextY) ? nextY : prevY;
-          if (Number.isFinite(reference)) {
-            // Enter a steep stroke through the end that is actually connected
-            // to the neighbouring sample. Choosing the farthest end turns a
-            // single vertical grid line into a false full-height QRS spike.
-            const topDistance = Math.abs(c.yStart - reference);
-            const bottomDistance = Math.abs(c.yEnd - reference);
-            if (reference >= c.yStart && reference <= c.yEnd) {
-              chosenY = reference;
-            } else {
-              chosenY = topDistance <= bottomDistance ? c.yStart + 0.5 : c.yEnd - 0.5;
-            }
+
+        if (c.maxW >= 0.40) {
+          const neighborUp = (prevC && prevC.yStart < prelimBaselineY - 2.5) ||
+                             (nextC && nextC.yStart < prelimBaselineY - 2.5);
+          const neighborDown = (prevC && prevC.yEnd > prelimBaselineY + 2.5) ||
+                               (nextC && nextC.yEnd > prelimBaselineY + 2.5);
+          const upExcursion = prelimBaselineY - c.yStart;
+          const downExcursion = c.yEnd - prelimBaselineY;
+
+          const isUpPeak = upExcursion > 3 && neighborUp &&
+            c.yStart <= (prevC ? prevC.yStart + 1 : Infinity) &&
+            c.yStart <= (nextC ? nextC.yStart + 1 : Infinity) &&
+            upExcursion >= downExcursion * 0.85;
+
+          const isDownTrough = !isUpPeak && downExcursion > 3 && neighborDown &&
+            c.yEnd >= (prevC ? prevC.yEnd - 1 : -Infinity) &&
+            c.yEnd >= (nextC ? nextC.yEnd - 1 : -Infinity) &&
+            downExcursion >= upExcursion * 0.85;
+
+          if (isUpPeak) {
+            chosenY = c.yStart + 0.5;
+            isExtremum[x] = 1;
+          } else if (isDownTrough) {
+            chosenY = c.yEnd - 0.5;
+            isExtremum[x] = 1;
           }
         }
         rawY[x] = chosenY;
-        validMask[x] = 1;
-        stateIndex = state.prev >= 0 ? state.prev : 0;
+      }
+
+      // Segunda passagem para colunas de transição íngreme (flancos QRS ou artefato vertical isolado)
+      for (let x = runEnd; x >= runStart; x--) {
+        if (isExtremum[x]) continue;
+        const c = selectedClusters[x];
+        if (c.span >= Math.max(5, height * 0.04)) {
+          const prevC = x > runStart ? selectedClusters[x - 1] : null;
+          const nextC = x < runEnd ? selectedClusters[x + 1] : null;
+          const prevY = x > runStart ? rawY[x - 1] : null;
+          const nextY = x < runEnd ? rawY[x + 1] : null;
+          const neighborActive = (prevC && (prevC.yStart < prelimBaselineY - 3 || prevC.yEnd > prelimBaselineY + 3)) ||
+                                 (nextC && (nextC.yStart < prelimBaselineY - 3 || nextC.yEnd > prelimBaselineY + 3));
+
+          if ( neighborActive && Number.isFinite(prevY) && Number.isFinite(nextY) ) {
+            const midY = 0.5 * (prevY + nextY);
+            rawY[x] = Math.max(c.yStart + 0.5, Math.min(c.yEnd - 0.5, midY));
+          } else {
+            const reference = Number.isFinite(nextY) ? nextY : prevY;
+            if (Number.isFinite(reference)) {
+              const topDistance = Math.abs(c.yStart - reference);
+              const bottomDistance = Math.abs(c.yEnd - reference);
+              if (reference >= c.yStart && reference <= c.yEnd) {
+                rawY[x] = reference;
+              } else {
+                rawY[x] = topDistance <= bottomDistance ? c.yStart + 0.5 : c.yEnd - 0.5;
+              }
+            }
+          }
+        }
       }
       runEnd = runStart - 1;
     }

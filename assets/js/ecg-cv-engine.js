@@ -287,50 +287,48 @@
   // Templates de rótulos sans-serif anti-aliased reais (padrão clínico 10–20px de eletrocardiógrafos reais)
   const SANS_LABEL_TEMPLATES = {
     I: buildRowsTemplate([
-      "......",
-      "......",
-      "..##..",
-      "..##..",
-      "..##..",
-      "..##..",
-      "..##..",
-      "..##..",
-      "..##..",
-      "..##..",
-      "..##..",
-      "..##..",
-      "......",
-      "......"
+      ".........",
+      "...   ...",
+      "... # ...",
+      "... # ...",
+      "... # ...",
+      "... # ...",
+      "... # ...",
+      "... # ...",
+      "... # ...",
+      "... # ...",
+      "...   ...",
+      "...   ...",
+      "........."
     ], true),
     II: buildRowsTemplate([
-      ".........",
-      ".........",
-      "..##..#..",
-      "..##..#..",
-      "..##..#..",
-      "..##..#..",
-      "..##..#..",
-      "..##..#..",
-      "..##..#..",
-      "..##..#..",
-      "..##..#..",
-      "..##..#..",
-      ".........",
-      "........."
+      "............",
+      "...  ..  ...",
+      "... #..# ...",
+      "... #..# ...",
+      "... #..# ...",
+      "... #..# ...",
+      "... #..# ...",
+      "... #..# ...",
+      "... #..# ...",
+      "... #..# ...",
+      "...  ..  ...",
+      "...  ..  ...",
+      "............"
     ], true),
     III: buildRowsTemplate([
       "................",
-      "................",
-      "..##..#...#.....",
-      "..##..#...#.....",
-      "..##..#...#.....",
-      "..##..#...#.....",
-      "..##..#...#.....",
-      "..##..#...#.....",
-      "..##..#...#.....",
-      "..##..#...#.....",
-      "..##..#...#.....",
-      "......#.........",
+      "...  ..   .. ...",
+      "... #..# ..# ...",
+      "... #..# ..# ...",
+      "... #..# ..# ...",
+      "... #..# ..# ...",
+      "... #..# ..# ...",
+      "... #..# ..# ...",
+      "... #..# ..# ...",
+      "... #..# ..# ...",
+      "...  ..   .. ...",
+      "...  ..   .. ...",
       "................"
     ], true),
     aVR: buildRowsTemplate([
@@ -414,6 +412,20 @@
       "...##..........#",
       "...##.........##",
       "....#.....#####.",
+      "................"
+    ], false),
+    V3_RECT: buildRowsTemplate([
+      "................",
+      ".#......#..####.",
+      ".#.....##.....##",
+      ".##....#......##",
+      "..#....#......##",
+      "..##...#....###.",
+      "..##..........##",
+      "...#...........#",
+      "...##..........#",
+      "...##.........##",
+      "....#......####.",
       "................"
     ], false),
     V4: buildRowsTemplate([
@@ -1361,7 +1373,8 @@
     }
 
     // Segunda passagem: templates sans-serif anti-aliased de eletrocardiógrafos reais (10px–20px)
-    const sansSearchW = Math.min(x1 - x0, Math.max(16, Math.floor((x1 - x0) * 0.28)));
+    const sansX0 = Math.max(0, x0 - 2);
+    const sansSearchW = Math.min(x1 - sansX0, Math.max(16, Math.floor((x1 - x0) * 0.28) + (x0 - sansX0)));
     const sansSearchH = Math.min(y1 - y0, Math.max(14, Math.floor((y1 - y0) * 0.55)));
     const isRightHalfScan = (roiBox.xMin ?? 0) >= 0.30;
 
@@ -1377,7 +1390,7 @@
         const prefOff = ly * (sansSearchW + 1);
         let acc = 0;
         for (let lx = 0; lx < sansSearchW; lx++) {
-          const px = x0 + lx;
+          const px = sansX0 + lx;
           const idx = (py * width + px) * 4;
           const r = data[idx], g = data[idx + 1], b = data[idx + 2];
           const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
@@ -1393,10 +1406,13 @@
         const isContradictionProbe = candidateLabels.length > 4 && options.scales && options.scales.length === 1;
         const sansScales = isContradictionProbe ? [1] : [1, 1.4];
 
-        for (const labelName of candidateLabels) {
-          const tpl = SANS_LABEL_TEMPLATES[labelName];
-          if (!tpl) continue;
-          if (isRightHalfScan && (labelName === "I" || labelName === "II" || labelName === "III")) continue;
+        for (const baseLabelName of candidateLabels) {
+          const tplKeys = baseLabelName === "V3" ? ["V3", "V3_RECT"] : [baseLabelName];
+          for (const tplKey of tplKeys) {
+            const labelName = baseLabelName;
+            const tpl = SANS_LABEL_TEMPLATES[tplKey];
+            if (!tpl) continue;
+            if (isRightHalfScan && (labelName === "I" || labelName === "II" || labelName === "III")) continue;
 
           for (const scale of sansScales) {
             const tw = Math.round(tpl.width * scale);
@@ -1411,11 +1427,10 @@
 
               for (let lx = 0; lx <= sansSearchW - tw; lx++) {
                 // Filtro rápido O(1): precisa haver tinta na linha central da caixa do template
-                if (rowPrefix[midPrefOff + lx + tw] - rowPrefix[midPrefOff + lx] < 2) continue;
+                if (rowPrefix[midPrefOff + lx + tw] - rowPrefix[midPrefOff + lx] < 1) continue;
                 // Filtro rápido O(1) para fosso superior estrito em I, II, III
                 if (tpl.requireStrictMoat) {
-                  if ((rowPrefix[top0PrefOff + lx + tw] - rowPrefix[top0PrefOff + lx]) > 0 ||
-                      (rowPrefix[top1PrefOff + lx + tw] - rowPrefix[top1PrefOff + lx]) > 0) {
+                  if ((rowPrefix[top0PrefOff + lx + tw] - rowPrefix[top0PrefOff + lx]) > 0) {
                     continue;
                   }
                 }
@@ -1441,8 +1456,7 @@
                       if (!isDark) {
                         bgMatches++;
                       } else if (tpl.requireStrictMoat) {
-                        const maxBottomRow = labelName === "III" ? tpl.height - 1 : tpl.height - 2;
-                        if (ty < 2 || ty >= maxBottomRow || tx < 2 || tx >= tpl.width - 3) {
+                        if (ty < 1 || ty >= tpl.height - 1 || tx < 3 || tx >= tpl.width - 3) {
                           moatViolation = true;
                           break;
                         }
@@ -1470,6 +1484,7 @@
                 }
               }
             }
+          }
           }
         }
       }
@@ -1536,11 +1551,17 @@
       rowOccupancy[y] = occupied / binCount;
     }
 
+    const smoothedOccupancy = new Float32Array(height);
+    for (let y = Math.max(1, yMin); y < Math.min(height - 1, yMax); y++) {
+      smoothedOccupancy[y] = (rowOccupancy[y - 1] + rowOccupancy[y] + rowOccupancy[y + 1]) / 3;
+    }
+
     const candidates = [];
     const headerCutoff = yMin + spanH * 0.015;
     for (let y = Math.ceil(headerCutoff) + 2; y < yMax - 2; y++) {
-      const score = (rowOccupancy[y - 1] + rowOccupancy[y] + rowOccupancy[y + 1]) / 3;
-      if (score >= 0.16 && score >= rowOccupancy[y - 2] && score >= rowOccupancy[y + 2]) {
+      const score = smoothedOccupancy[y];
+      if (score >= 0.16 && score >= smoothedOccupancy[y - 1] && score >= smoothedOccupancy[y + 1] &&
+          score >= smoothedOccupancy[y - 2] && score >= smoothedOccupancy[y + 2]) {
         candidates.push({ yCenter: y, score });
       }
     }
@@ -1927,7 +1948,7 @@
         ? Math.max(yMin, band.yCenterRatio - (band.yCenterRatio - prevCenter) * 0.65)
         : (band ? band.yMin : (yMin + (r / totalRows) * (yMax - yMin)));
       const rowYMax = (band && is3x4)
-        ? Math.min(yMax, band.yCenterRatio + (nextCenter - band.yCenterRatio) * 0.42)
+        ? Math.min(yMax, band.yCenterRatio + (nextCenter - band.yCenterRatio) * 0.62)
         : (band ? band.yMax : (yMin + ((r + 0.96) / totalRows) * (yMax - yMin)));
 
       for (let c = 0; c < numCols; c++) {
