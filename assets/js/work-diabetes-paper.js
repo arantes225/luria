@@ -132,7 +132,7 @@
     const watermark=document.createElement('canvas');
     watermark.width=768;watermark.height=768;
     const mark=watermark.getContext('2d');
-    mark.globalAlpha=0.10;
+    mark.globalAlpha=0.05;
     mark.drawImage(icon,0,0);
     return {icon:icon.toDataURL('image/png'),watermark:watermark.toDataURL('image/png')};
   }
