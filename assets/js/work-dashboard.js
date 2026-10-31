@@ -31,6 +31,7 @@
       ['protocol', 'Cola rápida', 'Anotações com acesso temporário.', 'prontuario-rapido/', 'violet']
     ]],
     ['Avaliação e apoio clínico', [
+      ['droplet', 'Diabetes', 'Diretrizes, medicamentos e simulador educacional de HbA1c.', 'diabetes/', 'blue'],
       ['calc', 'Calculadoras', 'Acesse as calculadoras clínicas.', 'calculadora/', 'orange'],
       ['shield', 'Scores', 'Consulte escores e classificações.', 'scores/', 'cyan'],
       ['steth', 'Diagnóstico por Sintomas', 'Explore o apoio ao raciocínio clínico.', 'diagnostico/', 'teal'],
