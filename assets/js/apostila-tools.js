@@ -1,6 +1,6 @@
 (() => {
-  if (window.LuriaApostilaTools) return;
-  window.LuriaApostilaTools = true;
+  if (window.TraubeApostilaTools) return;
+  window.TraubeApostilaTools = true;
   const main=document.querySelector('.book-main');
   const outlineHead=document.querySelector('.book-outline-head');
   if(!main||!outlineHead)return;
@@ -173,7 +173,7 @@
     .apostila-approved-figure figcaption{margin-top:10px;color:var(--muted);font-size:10.5px;line-height:1.52;text-align:left}
     .apostila-approved-figure figcaption strong{color:var(--text);font-weight:600}
     .apostila-approved-figure-source{display:inline-block;margin-top:5px;color:var(--accent);font-size:9px;text-decoration:none}
-    /* Tamanho clínico LURIA: nunca usar altura de imagem para inflar a apostila. */
+    /* Tamanho clínico TRAUBE: nunca usar altura de imagem para inflar a apostila. */
     .book-curated-clinical-image{width:min(100%,520px)!important;max-width:520px!important;box-sizing:border-box;margin:16px auto 22px!important}
     .book-curated-clinical-image img{max-height:340px!important;object-fit:contain!important}
     .apostila-approved-figure{width:min(100%,480px)!important;max-width:480px!important;box-sizing:border-box;margin:18px auto 22px!important}

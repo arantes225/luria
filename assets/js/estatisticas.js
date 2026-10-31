@@ -1683,7 +1683,7 @@
 
   function switchTab(tab) {
     const detailedAllowed =
-      window.LuriaEntitlements?.enabled(
+      window.TraubeEntitlements?.enabled(
         "advanced_statistics"
       ) === true;
 
@@ -1759,7 +1759,7 @@
     wire();
 
     const detailedAllowed =
-      window.LuriaEntitlements?.enabled(
+      window.TraubeEntitlements?.enabled(
         "advanced_statistics"
       ) === true;
 

@@ -30,7 +30,7 @@ test('quick chart waits for in-flight save before clear and preserves edits made
 });
 
 async function managerFixture(signInImmediately=false){
- const {ownerFixture}=require('./fixtures/app-client.cjs');const f=ownerFixture(signInImmediately?null:"A"),c=f.context;await c.LuriaLocalOwnerStore.ready;
+ const {ownerFixture}=require('./fixtures/app-client.cjs');const f=ownerFixture(signInImmediately?null:"A"),c=f.context;await c.TraubeLocalOwnerStore.ready;
  const elements={},requests=[],loads=[];
  const el=id=>elements[id]??={value:'',textContent:'',disabled:false,addEventListener(type,fn){this[type]=fn}};
  c.document={getElementById:el};c.location={search:'',origin:'https://fixture.invalid'};

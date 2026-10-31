@@ -8,7 +8,7 @@ function fixture(t,page='flashcards'){
  const dom=new JSDOM(`<body data-ui-nav="v2" data-ui-context="study" ${page==='dashboard'?'id="luria-dashboard" data-dashboard-view="pending"':''}><div class="app-shell"><main class="main">Modelo inicial</main></div></body>`,{url:'https://luria.test/'+page+'/?source=test#section',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:new VirtualConsole()});
  const w=dom.window,b=w.document.body;let owner=null;
  w.matchMedia=()=>({matches:false,addEventListener(){}});
- w.LuriaLocalOwnerStore={read:()=>owner?JSON.stringify({appearance:'dark',identity:'pink'}):null};
+ w.TraubeLocalOwnerStore={read:()=>owner?JSON.stringify({appearance:'dark',identity:'pink'}):null};
  w.eval(theme);t.after(()=>w.close());
  return {w,b,account:()=>{owner='A';b.classList.add('app-ready');w.dispatchEvent(new w.Event('docmap:ready'));},navigation:()=>{b.dataset.uiNavigationReady='true';w.dispatchEvent(new w.Event('luria:ui-navigation-ready'));}};
 }

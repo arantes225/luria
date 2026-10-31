@@ -1,4 +1,4 @@
-# LURIA — iluminação dos ratinhos e editor compacto
+# TRAUBE — iluminação dos ratinhos e editor compacto
 
 Branch: codex/social-reference-composition. Checkpoint anterior: a4a00d77.
 

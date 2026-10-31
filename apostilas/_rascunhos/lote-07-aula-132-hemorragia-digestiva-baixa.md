@@ -1,7 +1,7 @@
-# LURIA — Lote 7 · Aula 132
+# TRAUBE — Lote 7 · Aula 132
 # Hemorragia Digestiva Baixa: da hematoquezia à hemostasia
 **Área:** Cirurgia Geral / Gastroenterologia / Emergência. **Estado:** RASCUNHO ORIGINAL, NÃO PUBLICADO. **Data:** 14/10/2026.  
-**Fontes centrais:** ACG 2023 *Management of Patients With Acute Lower Gastrointestinal Bleeding* e ESGE 2021 *Diagnosis and management of acute lower gastrointestinal bleeding*. O acervo LURIA possui aula 127 sobre HDA; a presente diferencia sangramento do intestino grosso/delgado e manejo de hematoquezia, sem reproduzir úlcera/varizes. A aula 136, “Hemorragia digestiva”, deverá servir como integração e não terceiro livro igual.
+**Fontes centrais:** ACG 2023 *Management of Patients With Acute Lower Gastrointestinal Bleeding* e ESGE 2021 *Diagnosis and management of acute lower gastrointestinal bleeding*. O acervo TRAUBE possui aula 127 sobre HDA; a presente diferencia sangramento do intestino grosso/delgado e manejo de hematoquezia, sem reproduzir úlcera/varizes. A aula 136, “Hemorragia digestiva”, deverá servir como integração e não terceiro livro igual.
 
 ## 0. Etapa zero
 **Inventário:** não existe diretório específico HDB entre as apostilas publicadas no repo consultado. **Google Drive:** busca por “hemorragia digestiva baixa” não localizou apostila HDB equivalente. Foi aberto “01 - ENDOSCOPIA - ULCERA PEPTICA.pdf”, aproximadamente 9 mil caracteres, que é comparativo **apenas de HDA**, útil para registrar fronteira curricular mas não para fundamentar HDB. Os materiais específicos encontrados anteriormente sobre HDA varicosa também não suprem HDB. **Limitação editorial explícita:** benchmark de HDB integral não encontrado, etapa zero específica pendente; não inventar autoria Estratégia MED nem afirmar equivalência. A base científica desta redação deriva de ACG/ESGE (pesquisas oficiais), separada dos resumos do Drive.
@@ -169,7 +169,7 @@ Imagens clínicas reais somente após autoria/licença comercial, pertinência, 
 ## 14. Fontes científicas
 - ACG. *Management of Patients With Acute Lower Gastrointestinal Bleeding: An Updated ACG Guideline*. Am J Gastroenterol 2023. Conferir acesso à edição integral na revisão final. https://gi.org/journals-publications/ebgi/stratifying-the-risk-of-bleeding-in-lower-gi-bleeding/
 - ESGE. *Diagnosis and management of acute lower gastrointestinal bleeding*. Endoscopy 2021;53:850–868. https://www.esge.com/diagnosis-and-management-of-acute-lower-gastrointestinal-bleeding-esge-guideline
-- LURIA. \`apostilas/_rascunhos/lote-07-aula-127-hemorragia-digestiva-alta.md\` — diferencial alto, sem duplicar tratamento.
+- TRAUBE. \`apostilas/_rascunhos/lote-07-aula-127-hemorragia-digestiva-alta.md\` — diferencial alto, sem duplicar tratamento.
 
 ## 15. Checklist pendente
 - [x] História, anatomia, diferenciais, risco, CTA/colonoscopia, tratamento, 4 casos e 6 questões.
@@ -183,7 +183,7 @@ Imagens clínicas reais somente após autoria/licença comercial, pertinência, 
 
 ---
 
-# LURIA — APROFUNDAMENTO CLÍNICO E ENDOSCÓPICO
+# TRAUBE — APROFUNDAMENTO CLÍNICO E ENDOSCÓPICO
 **Rodada editorial:** 14/10/2026. Base científica principal: ACG 2023 e ESGE 2021; o material correlato “Úlcera péptica” do Drive compara somente **hemorragia digestiva alta**. O capítulo a seguir é produção original de HDB e deixa explícito onde essa falta de benchmark específico permanece. Nenhum texto ou imagem do Drive foi reproduzido.
 
 ## 16. Hemorragia baixa em três cenários: a gravidade decide a sequência

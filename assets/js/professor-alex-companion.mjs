@@ -2,7 +2,7 @@ import './professor-alex-mascot.mjs?v=20261014-ready2';
 import {bindAlex} from './professor-alex-integration.mjs?v=20261014-ready2';
 
 const contexts={
- dashboard:['Seu dia na LURIA','Escolha uma atividade ou confira seu progresso.','/aprender/','Explorar formas de aprender'],
+ dashboard:['Seu dia na TRAUBE','Escolha uma atividade ou confira seu progresso.','/aprender/','Explorar formas de aprender'],
  aprender:['Como você quer aprender?','Explore as apostilas, suas anotações ou o estudo guiado.','/apostilas/','Abrir apostilas'],
  flashcards:['Revisão com flashcards','Tente lembrar antes de revelar a resposta e avalie como foi sua recordação.','/consolidar/','Ver atividades de revisão'],
  questoes:['Treino com questões','Leia o enunciado com atenção e revise o raciocínio depois da resposta.','/consolidar/','Ver atividades de revisão'],

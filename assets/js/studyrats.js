@@ -4,7 +4,7 @@ function sharedStudyratsStatus(message,kind){
  if(sharedStudyratsGroupId&&status){status.textContent=message;status.dataset.error=String(kind==='error');}
  else setFriendsStatus(message,kind);
 }
-window.LuriaGroupRats={
+window.TraubeGroupRats={
  mount(groupId,slot,admin){
   const card=document.getElementById('studyrats-card');
   const legacy=document.getElementById('community-competition-legacy');
@@ -263,10 +263,10 @@ function sharedStudyratsRenderRatPicker(){
   if(!host)return;
 
   const variantsAllowed =
-    window.LuriaEntitlements?.enabled('studyrats_variants') === true;
+    window.TraubeEntitlements?.enabled('studyrats_variants') === true;
 
   const accessoriesAllowed =
-    window.LuriaEntitlements?.enabled('studyrats_accessories') === true;
+    window.TraubeEntitlements?.enabled('studyrats_accessories') === true;
 
   const availableVariants =
     variantsAllowed
@@ -339,9 +339,9 @@ async function sharedStudyratsSaveVariant(variant){
 
   if(
     next!=='blue'
-    && window.LuriaEntitlements?.enabled('studyrats_variants') !== true
+    && window.TraubeEntitlements?.enabled('studyrats_variants') !== true
   ){
-    window.LuriaDialog?.alert('Seu plano libera apenas o ratinho azul.');
+    window.TraubeDialog?.alert('Seu plano libera apenas o ratinho azul.');
     return;
   }
   if(next===sharedStudyratsMyVariant)return;
@@ -374,9 +374,9 @@ async function sharedStudyratsSaveAccessory(accessory){
 
   if(
     next!=='none'
-    && window.LuriaEntitlements?.enabled('studyrats_accessories') !== true
+    && window.TraubeEntitlements?.enabled('studyrats_accessories') !== true
   ){
-    window.LuriaDialog?.alert('Acessórios não estão disponíveis no seu plano.');
+    window.TraubeDialog?.alert('Acessórios não estão disponíveis no seu plano.');
     return;
   }
   if(next===sharedStudyratsMyAccessory)return;
@@ -440,7 +440,7 @@ function sharedStudyratsGroup(rows){
     }
     map.get(row.challenge_id).participants.push({
       id:row.participant_user_id,
-      name:row.participant_name||'Usuário LURIA',
+      name:row.participant_name||'Usuário TRAUBE',
       variant:row.participant_user_id===sharedStudyratsProfileOwner?sharedStudyratsMyVariant:sharedStudyratVariant(row.studyrat_variant||'blue').id,
       accessory:row.participant_user_id===sharedStudyratsProfileOwner?sharedStudyratsMyAccessory:sharedStudyratAccessory(row.studyrat_accessory||'none').id,
       accessoryX:row.participant_user_id===sharedStudyratsProfileOwner?sharedStudyratsMyAccessoryX:Number(row.studyrat_accessory_x)||0,
@@ -595,8 +595,8 @@ function sharedStudyratsRender(){
 
   host.querySelectorAll('[data-delete-studyrat]').forEach(function(btn){
     btn.addEventListener('click',async function(){
-      if(window.LuriaDialog&&window.LuriaDialog.confirm){
-        const ok=await window.LuriaDialog.confirm('Apagar este desafio do Studyrats?');
+      if(window.TraubeDialog&&window.TraubeDialog.confirm){
+        const ok=await window.TraubeDialog.confirm('Apagar este desafio do Studyrats?');
         if(!ok)return;
       }
       const result=await window.supabaseClient.rpc('delete_studyrats_challenge',{p_challenge_id:btn.dataset.deleteStudyrat});

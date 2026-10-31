@@ -1,6 +1,6 @@
 (() => {
  'use strict';
- if(window.LuriaVoice)return;
+ if(window.TraubeVoice)return;
  let pc=null,stream=null,room=null,clientId=null,broadcast=null,heartbeat=null,queue=Promise.resolve(),subscribed=new Set(),muted=false,generation=0,joining=false,iceExpiresAt=0;
  const $=id=>document.getElementById(id);
  // GitHub Pages has no server routes; staging builds use their same-origin proxy.
@@ -122,6 +122,6 @@
   if(oldContext?.room&&oldContext.clientId){remember(oldContext);try{await api('leave',{},oldContext,unloading);forget(oldContext);}catch{}}
   await oldBroadcast?.send({type:'broadcast',event:'voice-changed',payload:{}}).catch(()=>{});
  }
- window.LuriaVoice={join,leave,sync,mute,toggleMute:()=>mute(!muted),toggleListening:()=>listen(!listeningMuted),playIncoming,changeDevice,setPushToTalk:async value=>{pushToTalk=!!value;await mute(true);notify();},pushToTalk:async pressed=>{if(pushToTalk&&pc)await mute(!pressed);},getState:state};
+ window.TraubeVoice={join,leave,sync,mute,toggleMute:()=>mute(!muted),toggleListening:()=>listen(!listeningMuted),playIncoming,changeDevice,setPushToTalk:async value=>{pushToTalk=!!value;await mute(true);notify();},pushToTalk:async pressed=>{if(pushToTalk&&pc)await mute(!pressed);},getState:state};
  window.addEventListener('pagehide',()=>{leave({unloading:true}).catch(()=>{});});
 })();

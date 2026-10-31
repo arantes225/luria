@@ -85,7 +85,7 @@ test('statistics theme repaint preserves chart data and does not repeat database
   t.after(() => w.close());
   w.eval(fs.readFileSync('tests/fixtures/supabase-browser.js','utf8'));
   w.docmapUser = w.__fixtureOwner;
-  w.LuriaEntitlements = {enabled:() => true};
+  w.TraubeEntitlements = {enabled:() => true};
   let queries = 0;
   const from = w.supabaseClient.from;
   w.supabaseClient.from = (...args) => {queries++; return from(...args);};

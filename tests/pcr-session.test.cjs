@@ -24,7 +24,7 @@ function fixture(t,{history=false,drafts=['A'],initialAuth=null,globalOwnership=
   w.setTimeout=(fn,ms)=>{timeouts.set(++sequence,{fn,ms});return sequence;};w.clearTimeout=id=>timeouts.delete(id);
   let audioGate=null;
   w.Audio=class{constructor(){this.pauses=0;audio.push(this);}setAttribute(){}play(){return audioGate?audioGate.promise:Promise.resolve();}pause(){this.pauses++;}};
-  w.LuriaLocalOwnerStore={ownerId:owner,ready:Promise.resolve(owner)};
+  w.TraubeLocalOwnerStore={ownerId:owner,ready:Promise.resolve(owner)};
   for(const id of drafts)w.localStorage.setItem('luria_pcr_draft_v1_'+id,JSON.stringify(draft(id)));
   w.supabaseClient={auth:{onAuthStateChange(listener){authListener=listener;return{data:{subscription:{unsubscribe(){}}}};},getSession(){const id=owner;const gate=authQueue.shift();return gate?gate.promise:Promise.resolve({data:{session:id?{user:{id}}:null}});}},
     rpc(name,args){rpcCalls.push({name,args,authOwner:owner});const gate=rpcQueue.shift();return gate?gate.promise:Promise.resolve({data:args.payload.id,error:null});},
@@ -38,7 +38,7 @@ function fixture(t,{history=false,drafts=['A'],initialAuth=null,globalOwnership=
   w.eval(read('assets/js/pcr-store.js'));
   w.eval(read(history?'assets/js/pcr-history.js':'assets/js/trabalho-pcr.js'));
   return {w,errors,intervals,timeouts,rpcCalls,queries,loads,authQueue,rpcQueue,audio,pdfCalls,
-    change(id){owner=id;if(globalOwnership)authListener(id?'SIGNED_IN':'SIGNED_OUT',id?{user:{id}}:null);else{w.LuriaLocalOwnerStore.ownerId=id;w.dispatchEvent(new w.CustomEvent('luria:owner-changed',{detail:{ownerId:id}}));}},
+    change(id){owner=id;if(globalOwnership)authListener(id?'SIGNED_IN':'SIGNED_OUT',id?{user:{id}}:null);else{w.TraubeLocalOwnerStore.ownerId=id;w.dispatchEvent(new w.CustomEvent('luria:owner-changed',{detail:{ownerId:id}}));}},
     input(id,value){const el=w.document.getElementById(id);el.value=value;el.dispatchEvent(new w.Event('input',{bubbles:true}));},
     click(id){w.document.getElementById(id).click();},
     advance(ms){now+=ms;for(const timer of [...intervals.values()])if(timer.ms===1000)timer.fn();},
@@ -151,9 +151,9 @@ test('PCR history closes owner A edit dialog and ignores late update completion 
 });
 test('PCR store rejects mismatched draft writes and invalidates saves even after A-B-A',async t=>{
   const f=fixture(t,{drafts:['A','B']});await settle();
-  assert.throws(()=>f.w.LuriaPCRStore.writeDraft('B',draft('B')),/sessão mudou/);
+  assert.throws(()=>f.w.TraubePCRStore.writeDraft('B',draft('B')),/sessão mudou/);
   const gate=deferred();f.rpcQueue.push(gate);
-  const result=f.w.LuriaPCRStore.save(draft('A')).then(()=>null,error=>error);await settle();
+  const result=f.w.TraubePCRStore.save(draft('A')).then(()=>null,error=>error);await settle();
   f.change('B');await settle();f.change('A');await settle();gate.resolve({data:'record-A'});
   assert.match((await result).message,/sessão mudou/);assert.ok(f.w.localStorage.getItem('luria_pcr_draft_v1_A'));
 });

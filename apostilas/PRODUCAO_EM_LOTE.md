@@ -1,4 +1,4 @@
-# Produção em lote — Apostilas LURIA
+# Produção em lote — Apostilas TRAUBE
 
 Atualizado em 13/10/2026.
 
@@ -18,17 +18,17 @@ A avaliação de autossuficiência requer julgamento clínico/editorial e não p
 
 ## Etapa zero — leitura comparativa no Google Drive (obrigatória)
 
-**Antes de qualquer produção ou edição de apostila, pesquisar e abrir ao menos uma apostila correlata no Google Drive, priorizando materiais do Estratégia MED com autoria realmente identificada.** Conferir sumário, abrangência, profundidade, fluxogramas, quadros, imagens, casos e técnica de exposição. Abrir também uma apostila LURIA já padronizada, para não quebrar a identidade visual da plataforma. Se nenhum material semelhante estiver acessível, interromper e solicitar acesso; não assumir que a busca por nome equivale a ter lido a fonte.
+**Antes de qualquer produção ou edição de apostila, pesquisar e abrir ao menos uma apostila correlata no Google Drive, priorizando materiais do Estratégia MED com autoria realmente identificada.** Conferir sumário, abrangência, profundidade, fluxogramas, quadros, imagens, casos e técnica de exposição. Abrir também uma apostila TRAUBE já padronizada, para não quebrar a identidade visual da plataforma. Se nenhum material semelhante estiver acessível, interromper e solicitar acesso; não assumir que a busca por nome equivale a ter lido a fonte.
 
 Preencher o registro comparativo antes de alterar o HTML:
 
 | Campo | Registro exigido |
 | --- | --- |
-| Apostila LURIA | Tema e caminho do arquivo |
+| Apostila TRAUBE | Tema e caminho do arquivo |
 | Material do Drive consultado | Nome, link e autoria institucional confirmada (ou não identificada) |
 | Consulta | Data e partes realmente examinadas |
 | Estrutura pedagógica | Tópicos, tabelas, imagens, fluxos, casos e extensão relativa |
-| Lacunas da LURIA | Conceitos ausentes, ensino insuficiente, diagnóstico, condutas, exceções e referências |
+| Lacunas da TRAUBE | Conceitos ausentes, ensino insuficiente, diagnóstico, condutas, exceções e referências |
 | Aplicação original | O que será incluído/melhorado sem cópia de texto, imagens, tabelas ou identidade de terceiros |
 | Verificação de saída | 60K úteis; autossuficiência; deduplicação; diretrizes atuais; testes e layout desktop/PWA |
 
@@ -36,7 +36,7 @@ O comparativo serve para **não esquecer matérias e entregar qualidade superior
 
 ## Etapa 0 — consulta obrigatória ao Google Drive
 
-**Toda criação ou edição médica começa pela leitura de uma apostila comparável no Drive, preferencialmente do Estratégia MED.** Antes de redigir, buscar o tema e sinônimos; confirmar a procedência; abrir e estudar índice, capítulos, quadros, fluxogramas e casos. Só achar o título não conta. Montar matriz de comparação (Drive × LURIA × diretrizes atuais) e plano de lacunas por capítulo. O material de cursinho orienta abrangência e estilo didático, mas deve resultar em texto, imagens e esquemas originais, sem cópia ou paráfrase próxima.
+**Toda criação ou edição médica começa pela leitura de uma apostila comparável no Drive, preferencialmente do Estratégia MED.** Antes de redigir, buscar o tema e sinônimos; confirmar a procedência; abrir e estudar índice, capítulos, quadros, fluxogramas e casos. Só achar o título não conta. Montar matriz de comparação (Drive × TRAUBE × diretrizes atuais) e plano de lacunas por capítulo. O material de cursinho orienta abrangência e estilo didático, mas deve resultar em texto, imagens e esquemas originais, sem cópia ou paráfrase próxima.
 
 Se a referência do tema não existir, ler a mais próxima, indicar a limitação e não declarar a etapa cumprida integralmente sem fonte adequada. Se não houver acesso a qualquer referência útil, manter status de revisão parcial em vez de concluída. Registrar título, origem verificada, data, conteúdo realmente inspecionado, lacunas e ajustes, sem publicar URLs/IDs privados do Drive em arquivos públicos.
 

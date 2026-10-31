@@ -2,7 +2,7 @@
   "use strict";
   const KEY = "luria-clinical-transfer-v1";
   const PRESCRIPTION_KEY = "luria-prescription-draft-v1";
-  const owned = window.LuriaLocalOwnerStore;
+  const owned = window.TraubeLocalOwnerStore;
   const safe = (v) => String(v ?? "").trim();
   const write = (payload) => {
     try { return !!owned?.write(KEY, JSON.stringify({ ...payload, created_at: new Date().toISOString() }), sessionStorage); }
@@ -33,7 +33,7 @@
       return true;
     } catch (_) { return false; }
   };
-  window.LuriaClinicalBridge = {
+  window.TraubeClinicalBridge = {
     key: KEY,
     prescriptionKey: PRESCRIPTION_KEY,
     save(payload) { return write(payload || {}); },

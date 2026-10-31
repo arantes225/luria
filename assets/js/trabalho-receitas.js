@@ -297,9 +297,9 @@
 
     const copy = els.detail.querySelector('[data-copy-current="1"]');
     if (copyEnabled) copy?.addEventListener("click", () => copyRecipe(recipe));
-    els.detail.querySelector('[data-open-protocol="1"]')?.addEventListener("click", () => window.LuriaClinicalBridge?.openProtocol(relatedProtocol.slug));
-    els.detail.querySelector('[data-send-note="1"]')?.addEventListener("click", () => window.LuriaClinicalBridge?.toQuickChart({type:"recipe",slug:recipe.slug,title:recipe.title,text:recipeText(recipe),source:"Tratamentos gerais LURIA"}));
-    els.detail.querySelectorAll("[data-open-drug]").forEach((btn) => btn.addEventListener("click", () => window.LuriaClinicalBridge?.openDrug(btn.dataset.openDrug)));
+    els.detail.querySelector('[data-open-protocol="1"]')?.addEventListener("click", () => window.TraubeClinicalBridge?.openProtocol(relatedProtocol.slug));
+    els.detail.querySelector('[data-send-note="1"]')?.addEventListener("click", () => window.TraubeClinicalBridge?.toQuickChart({type:"recipe",slug:recipe.slug,title:recipe.title,text:recipeText(recipe),source:"Tratamentos gerais TRAUBE"}));
+    els.detail.querySelectorAll("[data-open-drug]").forEach((btn) => btn.addEventListener("click", () => window.TraubeClinicalBridge?.openDrug(btn.dataset.openDrug)));
   }
 
   async function load() {
@@ -316,7 +316,7 @@
     ]);
 
     if (error) {
-      console.error("[LURIA recipes]", error);
+      console.error("[TRAUBE recipes]", error);
       els.list.innerHTML = '<div class="recipe-error">Não foi possível carregar as receitas agora.</div>';
       return;
     }

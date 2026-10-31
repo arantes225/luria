@@ -1,4 +1,4 @@
-# Regra editorial de imagens — Apostilas LURIA
+# Regra editorial de imagens — Apostilas TRAUBE
 
 ## Objetivo
 Toda imagem precisa acelerar a compreensão clínica. A imagem não pode obrigar o estudante a traduzir texto, decifrar legendas estrangeiras ou interromper o fluxo da apostila.
@@ -10,11 +10,11 @@ Toda imagem precisa acelerar a compreensão clínica. A imagem não pode obrigar
 4. Quando houver duas imagens de qualidade semelhante, priorizar a versão em português.
 5. Imagens clínicas reais, exames, histologia, ultrassom, ECG, RX, TC, colposcopia e fotografias podem ser usadas independentemente do idioma da fonte, desde que o foco principal seja o achado visual.
 6. Se uma imagem em inglês for claramente superior às opções em português, ela pode ser aprovada e publicada.
-7. Quando fizer sentido, pode-se futuramente criar uma adaptação LURIA em português, mas isso não é requisito para usar a imagem original.
+7. Quando fizer sentido, pode-se futuramente criar uma adaptação TRAUBE em português, mas isso não é requisito para usar a imagem original.
 
 ## Hierarquia de preferência
 1. Esquema/algoritmo em português de fonte brasileira confiável.
-2. Esquema autoral LURIA em português baseado em fontes confiáveis.
+2. Esquema autoral TRAUBE em português baseado em fontes confiáveis.
 3. Imagem clínica real ou exame de alta qualidade.
 4. Esquema estrangeiro sem texto ou com símbolos universalmente compreensíveis.
 5. Esquema em inglês de alta qualidade, quando não houver alternativa em português equivalente ou superior.

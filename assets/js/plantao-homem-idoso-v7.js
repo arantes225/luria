@@ -1,4 +1,4 @@
-/* LURIA · Homem idoso V7, aprovado: base fixa; só tórax e região ocular animam. */
+/* TRAUBE · Homem idoso V7, aprovado: base fixa; só tórax e região ocular animam. */
 (()=>{
   "use strict";
   const base=document.getElementById("plantao-patient-image");

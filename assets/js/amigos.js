@@ -44,7 +44,7 @@ function renderFriendPreview(friend=null,message=""){
     <div class="friend-preview-card">
       <span class="friend-avatar">${fEsc((friend.display_name||"U").charAt(0).toUpperCase())}</span>
       <span class="friend-copy">
-        <strong>${fEsc(friend.display_name||"Usuário LURIA")}</strong>
+        <strong>${fEsc(friend.display_name||"Usuário TRAUBE")}</strong>
         <small>ID ${fEsc(friend.luria_id||"")}</small>
       </span>
     </div>`;
@@ -90,29 +90,29 @@ function renderFriendsList(){
       <div class="friend-main">
         ${friendAvatar(friend)}
         <span class="friend-copy">
-          <strong>${fEsc(friend.display_name||"Usuário LURIA")}</strong>
+          <strong>${fEsc(friend.display_name||"Usuário TRAUBE")}</strong>
           <small>ID ${fEsc(friend.luria_id||"")}</small>
           <small data-friend-presence="${fEsc(friend.user_id)}">Status privado</small>
         </span>
       </div>
       <div class="friends-actions">
         <button class="button secondary" type="button" data-study-friend="${fEsc(friend.user_id)}"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h7l2 2 2-2h7v15h-7l-2 2-2-2H3V5Zm9 2v15"/></svg>Estudar junto</button>
-        <details class="sv-friend-options"><summary aria-label="Opções de ${fEsc(friend.display_name||"Usuário LURIA")}">⋯</summary><div class="sv-friend-menu"><button class="button secondary" type="button" data-profile-friend="${fEsc(friend.user_id)}">Perfil</button>
+        <details class="sv-friend-options"><summary aria-label="Opções de ${fEsc(friend.display_name||"Usuário TRAUBE")}">⋯</summary><div class="sv-friend-menu"><button class="button secondary" type="button" data-profile-friend="${fEsc(friend.user_id)}">Perfil</button>
         <button class="button secondary" type="button" data-remove-friend="${fEsc(friend.user_id)}">Remover</button>
         <button class="button secondary" type="button" data-block-friend="${fEsc(friend.user_id)}">Bloquear</button></div></details>
       </div>
-    </div>`).join(""):friendsEmptyState(query?'Nenhum amigo encontrado.':'Sua turma começa com um convite',query?'Tente outro nome ou ID LURIA.':'Adicione sua turma pelo ID LURIA.',query?'search':'people');
+    </div>`).join(""):friendsEmptyState(query?'Nenhum amigo encontrado.':'Sua turma começa com um convite',query?'Tente outro nome ou ID TRAUBE.':'Adicione sua turma pelo ID TRAUBE.',query?'search':'people');
 
   host.querySelectorAll("[data-remove-friend]").forEach(btn=>btn.addEventListener("click",async()=>{
-    if(!await window.LuriaDialog.confirm("Remover esta pessoa da sua lista de amigos?"))return;
+    if(!await window.TraubeDialog.confirm("Remover esta pessoa da sua lista de amigos?"))return;
     const {error}=await friendsSb.rpc("remove_friend",{p_friend_user_id:btn.dataset.removeFriend});
     if(error){setFriendsStatus(error.message,"error");return;}
     await loadFriends();renderStudyratsFriendOptions();setFriendsStatus("Amigo removido.","success");
   }));
-  host.querySelectorAll('[data-study-friend]').forEach(btn=>btn.addEventListener('click',()=>window.LuriaSocial?.inviteFriend(btn.dataset.studyFriend)));
-  host.querySelectorAll('[data-profile-friend]').forEach(btn=>btn.addEventListener('click',()=>window.LuriaSocial?.showProfile(btn.dataset.profileFriend)));
-  host.querySelectorAll('[data-block-friend]').forEach(btn=>btn.addEventListener('click',()=>window.LuriaSocial?.block(btn.dataset.blockFriend)));
-  window.LuriaSocial?.updateFriendPresence();
+  host.querySelectorAll('[data-study-friend]').forEach(btn=>btn.addEventListener('click',()=>window.TraubeSocial?.inviteFriend(btn.dataset.studyFriend)));
+  host.querySelectorAll('[data-profile-friend]').forEach(btn=>btn.addEventListener('click',()=>window.TraubeSocial?.showProfile(btn.dataset.profileFriend)));
+  host.querySelectorAll('[data-block-friend]').forEach(btn=>btn.addEventListener('click',()=>window.TraubeSocial?.block(btn.dataset.blockFriend)));
+  window.TraubeSocial?.updateFriendPresence();
 }
 
 async function loadInbox(){
@@ -126,7 +126,7 @@ async function loadInbox(){
         <span class="friend-avatar">${fEsc((item.sender_name||"U").charAt(0).toUpperCase())}</span>
         <span class="friend-copy">
           <strong>${fEsc(item.title|| (item.resource_type==="flashcard_deck"?"Deck de Flashcards":"Caderno compartilhado"))}</strong>
-          <small>De ${fEsc(item.sender_name||"Usuário LURIA")} · ID ${fEsc(item.sender_luria_id||"")}</small>
+          <small>De ${fEsc(item.sender_name||"Usuário TRAUBE")} · ID ${fEsc(item.sender_luria_id||"")}</small>
         </span>
       </div>
       <div class="friends-actions">
@@ -154,16 +154,16 @@ async function loadInbox(){
 async function addFriend(){
   const input=document.getElementById("friend-id-input");
   const value=input.value.trim().toUpperCase();
-  if(!value){setFriendsStatus("Digite o ID LURIA.","error");return;}
+  if(!value){setFriendsStatus("Digite o ID TRAUBE.","error");return;}
   const button=document.getElementById("add-friend");button.disabled=true;
   try{
     let friend=pendingFriendLookup;
     if(!friend||String(friend.luria_id||"").toUpperCase()!==value)friend=await lookupFriendById(value);
-    if(!friend)throw new Error("ID LURIA não encontrado.");
+    if(!friend)throw new Error("ID TRAUBE não encontrado.");
     const {error}=await friendsSb.rpc("add_friend_by_luria_id",{p_luria_id:value});if(error)throw error;
     input.value="";pendingFriendLookup=null;renderFriendPreview();await loadFriends();
-    setFriendsStatus(`Solicitação enviada para ${friend.display_name||"Usuário LURIA"}.`,"success");
-    window.LuriaSocial?.refreshSocial();
+    setFriendsStatus(`Solicitação enviada para ${friend.display_name||"Usuário TRAUBE"}.`,"success");
+    window.TraubeSocial?.refreshSocial();
   }catch(error){console.error(error);setFriendsStatus(error.message||"Não foi possível adicionar.","error");}
   finally{button.disabled=false;}
 }
@@ -197,8 +197,8 @@ function renderStudyratsFriendOptions(){
   const host=document.getElementById("studyrats-friends");if(!host)return;
   host.innerHTML=friendsRowsCache.length?friendsRowsCache.map(friend=>`
     <label class="studyrats-friend-option">
-      <input type="checkbox" value="${fEsc(friend.user_id)}" data-name="${fEsc(friend.display_name||"Usuário LURIA")}">
-      <span class="studyrats-friend-chip"><span class="friend-avatar">${fEsc((friend.display_name||"U").charAt(0).toUpperCase())}</span>${fEsc(friend.display_name||"Usuário LURIA")}</span>
+      <input type="checkbox" value="${fEsc(friend.user_id)}" data-name="${fEsc(friend.display_name||"Usuário TRAUBE")}">
+      <span class="studyrats-friend-chip"><span class="friend-avatar">${fEsc((friend.display_name||"U").charAt(0).toUpperCase())}</span>${fEsc(friend.display_name||"Usuário TRAUBE")}</span>
     </label>`).join(""):'<span class="friends-empty">Adicione amigos para incluí-los na corrida.</span>';
 }
 function formatStudyratsDate(date){
@@ -240,7 +240,7 @@ function renderStudyrats(){
     </article>`;
   }).join("");
   host.querySelectorAll("[data-delete-studyrat]").forEach(btn=>btn.addEventListener("click",async()=>{
-    if(window.LuriaDialog?.confirm && !await window.LuriaDialog.confirm("Apagar este desafio do Studyrats?"))return;
+    if(window.TraubeDialog?.confirm && !await window.TraubeDialog.confirm("Apagar este desafio do Studyrats?"))return;
     saveStudyrats(getStudyrats().filter(x=>x.id!==btn.dataset.deleteStudyrat));renderStudyrats();
   }));
 }
@@ -277,8 +277,8 @@ async function initFriends(){
   friendInput?.addEventListener("keydown",e=>{if(e.key==="Enter")addFriend();});
   document.getElementById("copy-my-id")?.addEventListener("click",async()=>{
     const id=document.getElementById("my-luria-id").textContent.trim();
-    try{await navigator.clipboard.writeText(id);setFriendsStatus("Seu ID LURIA foi copiado.","success");}
-    catch{await window.LuriaDialog.prompt("Copie seu ID LURIA:",id);}
+    try{await navigator.clipboard.writeText(id);setFriendsStatus("Seu ID TRAUBE foi copiado.","success");}
+    catch{await window.TraubeDialog.prompt("Copie seu ID TRAUBE:",id);}
   });
   window.initSharedStudyrats?.();
   try{await Promise.all([loadOwnId(),loadFriends(),loadInbox()]);}

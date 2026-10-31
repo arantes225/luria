@@ -2432,7 +2432,7 @@ html[data-theme="dark"] .error-cat-spotlight,body.theme-dark .error-cat-spotligh
 }
 
 
-/* v18.7 — seletor de Área no padrão visual do LURIA */
+/* v18.7 — seletor de Área no padrão visual do TRAUBE */
 .error-library-area-field{
   min-width:170px;
 }
@@ -3159,7 +3159,7 @@ body.theme-dark .error-cat-timer span,
 }
 
 
-/* LURIA Erros v18.13 — métricas um pouco maiores para a esquerda e para baixo */
+/* TRAUBE Erros v18.13 — métricas um pouco maiores para a esquerda e para baixo */
 body[data-page="erros"] .error-metrics{
   width:calc(100% + 12px)!important;
   margin-left:-12px!important;
@@ -3763,7 +3763,7 @@ body[data-page="erros"] .luria-error-review-align > :last-child{
 }
 
 
-/* LURIA SCROLLBAR — NO ARROW BUTTONS HARD LOCK v2026.10.05
+/* TRAUBE SCROLLBAR — NO ARROW BUTTONS HARD LOCK v2026.10.05
    Remove qualquer botão/seta nativa de scrollbar em TODA área rolável. */
 html::-webkit-scrollbar-button,
 body::-webkit-scrollbar-button,

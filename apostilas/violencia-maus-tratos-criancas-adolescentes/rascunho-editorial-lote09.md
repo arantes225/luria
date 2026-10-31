@@ -1,7 +1,7 @@
-# LURIA | Aula 163 — Violência e maus-tratos contra crianças e adolescentes
+# TRAUBE | Aula 163 — Violência e maus-tratos contra crianças e adolescentes
 
 **Área:** Pediatria • Interfaces: Medicina Preventiva, Medicina Legal, Urgência, Psiquiatria e Medicina de Família  
-**Lote:** 09 — aula 163 do cronograma LURIA  
+**Lote:** 09 — aula 163 do cronograma TRAUBE  
 **Versão:** rascunho editorial científico 01 — 14/10/2026  
 **Estado:** em desenvolvimento; não publicado nem validado como material final.  
 **Recorte:** assistência clínica e proteção no Brasil; envolve menores de 18 anos.
@@ -222,7 +222,7 @@ Complicações imediatas: hemorragia, lesão neurológica, fratura, infecção, 
 
 O prognóstico depende de gravidade, duração, momento da identificação, continuidade da exposição e existência de adultos e serviços protetores. **A proteção precoce e o cuidado longitudinal podem modificar trajetórias de sofrimento.** Não reduzir seguimento apenas à cicatrização de lesões físicas.
 
-## 16. Casos clínicos LURIA comentados
+## 16. Casos clínicos TRAUBE comentados
 
 ### Caso 1 — Equimose em lactente sem mobilidade
 **Cenário:** menina de 3 meses é levada à emergência por “mancha roxa” na orelha; pais descrevem batida no berço durante brincadeira, sem observador direto. Nega febre; exame revela também lesão oral discreta.
@@ -417,7 +417,7 @@ Na publicação: ilustrações originais ou autorizadas, licença documentada, d
 - [ ] Validar rotinas e posologias pediátricas de PEP no protocolo vigente (não presumir dose de adulto).
 - [ ] Confirmar atualizações normativas e materiais SBP lançados após a revisão.
 - [ ] Produzir e aprovar diagramas e imagens WebP.
-- [ ] Converter ao formato nativo do renderizador LURIA, verificar navegação/desktop/PWA.
+- [ ] Converter ao formato nativo do renderizador TRAUBE, verificar navegação/desktop/PWA.
 - [ ] Revisão editorial e científica por profissional responsável; checagem de links.
 - [ ] Elevar a profundidade aos parâmetros do lead_apostilas sem repetição artificial.
 
@@ -712,4 +712,4 @@ Este adendo transforma a apostila em um material mais completo sobre clínica, d
 8. Conferir acessibilidade, responsividade e indexação no formato nativo do site.
 9. Manter registro de revisão das referências e responsáveis pelo parecer médico.
 
-**Nota:** Este arquivo permanece identificado como rascunho editorial da LURIA. Não há certificação de prontidão nem publicação na interface.
+**Nota:** Este arquivo permanece identificado como rascunho editorial da TRAUBE. Não há certificação de prontidão nem publicação na interface.

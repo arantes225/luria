@@ -1412,7 +1412,7 @@ img { max-width: 100%; }
 
 
 /* =========================================================
-   LURIA VISIBLE GOLD DETAILS
+   TRAUBE VISIBLE GOLD DETAILS
    ========================================================= */
 .preview-streak {
   border-color: rgba(212, 175, 55, .52);
@@ -1471,7 +1471,7 @@ optgroup {
   font-style: normal !important;
 }
 
-/* LURIA — uppercase + 15% */
+/* TRAUBE — uppercase + 15% */
 .landing-brand strong {
   text-transform: uppercase !important;
   font-size: 18.4px !important; /* 16px + 15% */
@@ -1485,7 +1485,7 @@ optgroup {
 
 
 
-/* LURIA — identidade do tema claro baseada no azul dos callouts */
+/* TRAUBE — identidade do tema claro baseada no azul dos callouts */
 .landing-brand strong,
 .preview-brand-row strong,
 .footer-brand strong,
@@ -1496,7 +1496,7 @@ optgroup {
 }
 
 
-/* LURIA — HIERARQUIA DE BOTÕES DA LANDING */
+/* TRAUBE — HIERARQUIA DE BOTÕES DA LANDING */
 .landing-button.primary {
   background: var(--landing-button-primary) !important;
   border-color: var(--landing-button-primary) !important;

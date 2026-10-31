@@ -7,7 +7,7 @@ function fixture(t,{preference='cards',presentation=false}={}){
   const dom=new JSDOM(html,{url:'https://luria.test/dashboard/',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:new VirtualConsole()});
   const w=dom.window,d=w.document;let id=null,settle;
   const storage=new Map([['luria:dashboard-layout:A',preference]]);
-  w.LuriaLocalOwnerStore={get ownerId(){return id;},ready:new Promise(resolve=>{settle=resolve}),key:base=>id?base+':'+id:null,read:base=>id?storage.get(base+':'+id):null,write:()=>true,remove:()=>{}};
+  w.TraubeLocalOwnerStore={get ownerId(){return id;},ready:new Promise(resolve=>{settle=resolve}),key:base=>id?base+':'+id:null,read:base=>id?storage.get(base+':'+id):null,write:()=>true,remove:()=>{}};
   if(presentation)d.body.dataset.dashboardPresentationReady='true';
   w.eval(preferenceCode);w.eval(cardsCode);
   t.after(()=>w.close());

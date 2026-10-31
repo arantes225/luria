@@ -7,17 +7,17 @@ const {ownerFixture,source,storage}=require('./fixtures/app-client.cjs');
 test('local clinical drafts isolate accounts and never adopt unknown legacy data',async()=>{
   const f=ownerFixture(),c=f.context;
   c.localStorage.setItem('luria-prescription-draft-v1','UNKNOWN LEGACY');
-  await c.LuriaLocalOwnerStore.ready;
+  await c.TraubeLocalOwnerStore.ready;
   vm.runInContext(source('assets/js/clinical-bridge.js'),c);
-  assert.equal(c.LuriaClinicalBridge.appendPrescription({text:'A PRIVATE'}),true);
-  assert.equal(c.LuriaLocalOwnerStore.read('luria-prescription-draft-v1'),'A PRIVATE');
-  c.LuriaClinicalBridge.save({text:'A TRANSFER'});
-  f.change('B');assert.equal(c.LuriaClinicalBridge.peek(),null);
-  assert.equal(c.LuriaLocalOwnerStore.read('luria-prescription-draft-v1'),null);
-  c.LuriaClinicalBridge.appendPrescription({text:'B PRIVATE'});
-  f.change('A');assert.equal(c.LuriaLocalOwnerStore.read('luria-prescription-draft-v1'),'A PRIVATE');
+  assert.equal(c.TraubeClinicalBridge.appendPrescription({text:'A PRIVATE'}),true);
+  assert.equal(c.TraubeLocalOwnerStore.read('luria-prescription-draft-v1'),'A PRIVATE');
+  c.TraubeClinicalBridge.save({text:'A TRANSFER'});
+  f.change('B');assert.equal(c.TraubeClinicalBridge.peek(),null);
+  assert.equal(c.TraubeLocalOwnerStore.read('luria-prescription-draft-v1'),null);
+  c.TraubeClinicalBridge.appendPrescription({text:'B PRIVATE'});
+  f.change('A');assert.equal(c.TraubeLocalOwnerStore.read('luria-prescription-draft-v1'),'A PRIVATE');
   assert.equal(c.localStorage.getItem('luria-prescription-draft-v1'),'UNKNOWN LEGACY');
-  f.change(null);assert.equal(c.LuriaClinicalBridge.appendPrescription({text:'SIGNED OUT'}),false);
+  f.change(null);assert.equal(c.TraubeClinicalBridge.appendPrescription({text:'SIGNED OUT'}),false);
 });
 test('each PDF loader explicitly disables PDF.js evaluation',()=>{
   for(const file of ['assets/js/cronograma.js','assets/js/onboarding.js','assets/js/questoes-simulados.js']) {
@@ -42,6 +42,6 @@ test('late initial Auth lookup cannot restore ownership after sign-out',async()=
  const c={window:null,localStorage:storage(),sessionStorage:storage(),CustomEvent:function(){},dispatchEvent(){}};c.window=c;
  c.supabase={createClient:()=>({auth:{onAuthStateChange:fn=>{listener=fn},getSession:()=>new Promise(done=>{resolve=done})}})};
  vm.runInNewContext(source('assets/js/supabase.js'),c);
- listener('SIGNED_OUT',null);resolve({data:{session:{user:{id:'OLD'}}}});await c.LuriaLocalOwnerStore.ready;
- assert.equal(c.LuriaLocalOwnerStore.ownerId,null);assert.equal(c.LuriaLocalOwnerStore.key('private'),null);
+ listener('SIGNED_OUT',null);resolve({data:{session:{user:{id:'OLD'}}}});await c.TraubeLocalOwnerStore.ready;
+ assert.equal(c.TraubeLocalOwnerStore.ownerId,null);assert.equal(c.TraubeLocalOwnerStore.key('private'),null);
 });

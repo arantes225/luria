@@ -30,7 +30,7 @@ const observer = `window.__cspObserved=[];document.addEventListener('securitypol
   };
 }`;
 function samplePdf() {
-  const content = 'BT /F1 18 Tf 30 100 Td (LURIA CSP TEST 123) Tj ET';
+  const content = 'BT /F1 18 Tf 30 100 Td (TRAUBE CSP TEST 123) Tj ET';
   const objects = ['<< /Type /Catalog /Pages 2 0 R >>', '<< /Type /Pages /Kids [3 0 R] /Count 1 >>',
     '<< /Type /Page /Parent 2 0 R /MediaBox [0 0 300 180] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>',
     '<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>', '<< /Length ' + content.length + ' >>\nstream\n' + content + '\nendstream'];
@@ -71,13 +71,13 @@ const probe = `(() => {
         }
         if(window.Tesseract){
           const worker=await Tesseract.createWorker('eng+por',1);
-          try{const canvas=document.createElement('canvas');canvas.width=800;canvas.height=150;const ctx=canvas.getContext('2d');ctx.fillStyle='white';ctx.fillRect(0,0,800,150);ctx.fillStyle='black';ctx.font='48px sans-serif';ctx.fillText('LURIA CSP TEST 123',20,90);const result=await worker.recognize(canvas);if(!result.data.text.includes('CSP'))throw Error('OCR text missing');passed.push('OCR/Worker/WASM eng+por');}finally{await worker.terminate();}
+          try{const canvas=document.createElement('canvas');canvas.width=800;canvas.height=150;const ctx=canvas.getContext('2d');ctx.fillStyle='white';ctx.fillRect(0,0,800,150);ctx.fillStyle='black';ctx.font='48px sans-serif';ctx.fillText('TRAUBE CSP TEST 123',20,90);const result=await worker.recognize(canvas);if(!result.data.text.includes('CSP'))throw Error('OCR text missing');passed.push('OCR/Worker/WASM eng+por');}finally{await worker.terminate();}
         }
         if(window.initSqlJs){const SQL=await initSqlJs({locateFile:name=>'https://cdn.jsdelivr.net/npm/sql.js@1.11.0/dist/'+name});const db=new SQL.Database();try{if(db.exec('SELECT 123')[0].values[0][0]!==123)throw Error('SQLite query failed');passed.push('SQLite/WASM');}finally{db.close();}}
         let renderedCanvas;
-        if(window.html2canvas){const target=document.createElement('div');target.textContent='LURIA CSP TEST';target.style.cssText='width:300px;padding:20px;background:white;color:black';document.body.appendChild(target);try{renderedCanvas=await html2canvas(target);if(!renderedCanvas.width||!renderedCanvas.height)throw Error('Canvas empty');passed.push('html2canvas');}finally{target.remove();}}
-        if(window.jspdf){const pdf=new jspdf.jsPDF();pdf.text('LURIA CSP TEST',10,10);if(renderedCanvas)pdf.addImage(renderedCanvas.toDataURL('image/png'),'PNG',10,20,80,20);if(pdf.output('blob').size<100)throw Error('PDF export empty');passed.push('jsPDF');}
-        if(window.html2pdf){const target=document.createElement('div');target.textContent='LURIA CSP TEST';document.body.appendChild(target);try{const pdf=await html2pdf().from(target).toPdf().get('pdf');if(pdf.output('blob').size<100)throw Error('PDF export empty');passed.push('html2pdf');}finally{target.remove();}}
+        if(window.html2canvas){const target=document.createElement('div');target.textContent='TRAUBE CSP TEST';target.style.cssText='width:300px;padding:20px;background:white;color:black';document.body.appendChild(target);try{renderedCanvas=await html2canvas(target);if(!renderedCanvas.width||!renderedCanvas.height)throw Error('Canvas empty');passed.push('html2canvas');}finally{target.remove();}}
+        if(window.jspdf){const pdf=new jspdf.jsPDF();pdf.text('TRAUBE CSP TEST',10,10);if(renderedCanvas)pdf.addImage(renderedCanvas.toDataURL('image/png'),'PNG',10,20,80,20);if(pdf.output('blob').size<100)throw Error('PDF export empty');passed.push('jsPDF');}
+        if(window.html2pdf){const target=document.createElement('div');target.textContent='TRAUBE CSP TEST';document.body.appendChild(target);try{const pdf=await html2pdf().from(target).toPdf().get('pdf');if(pdf.output('blob').size<100)throw Error('PDF export empty');passed.push('html2pdf');}finally{target.remove();}}
         output.textContent='PASS: '+passed.join(', ');
       }catch(error){output.textContent='FAIL: '+error.message;}finally{button.disabled=false;}
     });

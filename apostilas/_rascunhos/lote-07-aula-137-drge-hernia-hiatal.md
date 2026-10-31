@@ -1,15 +1,15 @@
-# LURIA — Lote 7 · Aula 137
+# TRAUBE — Lote 7 · Aula 137
 # Doença do refluxo gastroesofágico (DRGE) e hérnia hiatal
 
 **Área:** Cirurgia Geral / Gastroenterologia. **Situação:** rascunho autoral em revisão, **não publicado**.  
 **Data-base:** 14/10/2026. Fontes centrais: ACG GERD 2022, Lyon Consensus 2.0 (2024), SAGES *Guidelines for Surgical Treatment of Hiatal Hernias* 2024 e SAGES tratamento cirúrgico da DRGE 2021/multissocietário 2022.
 
 ## 0. Etapa zero — comparação e lacunas
-**Inventário LURIA:** não há pasta específica de DRGE ou hérnia hiatal no índice principal de apostilas. Os temas úlcera/HDA da aula 127 e doenças de esôfago podem citar sintomas de refluxo, mas não constituem capítulo focado em fisiologia antirrefluxo, testes de refluxo e cirurgia hiatal.
+**Inventário TRAUBE:** não há pasta específica de DRGE ou hérnia hiatal no índice principal de apostilas. Os temas úlcera/HDA da aula 127 e doenças de esôfago podem citar sintomas de refluxo, mas não constituem capítulo focado em fisiologia antirrefluxo, testes de refluxo e cirurgia hiatal.
 
 **Google Drive — benchmark efetivamente aberto e lido:** “DOENÇA DO REFLUXO GASTROESOFÁGICO.pdf”, aproximadamente **1.647 caracteres** extraídos, é um mapa-resumo de sintomas típicos/atípicos, IBP, pHmetria, motilidade, Barrett, hérnia e cirurgia. Ele menciona tempo de exposição ácida >6%, mas não ensina adequadamente a interpretação de pHmetria inconclusiva, as diferenças entre teste **com** e **sem** IBP, a distinção de hérnia deslizante versus paraesofágica nem os critérios de avaliação pré-operatória. Também foi lido “02 - ESTOMAGO 1 DISPEPSIA, FISIOLOGIA GASTRICA E IBPS.pdf” em levantamento de material correlato, mas não assumido como benchmark equivalente. **Autoria Estratégia MED não comprovada**. Nenhuma frase, tabela ou imagem foi copiada.
 
-**Apostila LURIA de referência visual auditada:** \`apostilas/infertilidade-conjugal/index.html\` já contém índice hierárquico, resumos rápidos, mecanismos, clínica, diagnóstico e casos; o HTML não será alterado e foi usado apenas como referência da profundidade e da organização, sem importar seus estilos para Markdown.
+**Apostila TRAUBE de referência visual auditada:** \`apostilas/infertilidade-conjugal/index.html\` já contém índice hierárquico, resumos rápidos, mecanismos, clínica, diagnóstico e casos; o HTML não será alterado e foi usado apenas como referência da profundidade e da organização, sem importar seus estilos para Markdown.
 
 ## 1. Definição clínica, do mecanismo ao sofrimento
 O refluxo gastroesofágico é o movimento retrógrado do conteúdo gástrico para o esôfago. Episódios fisiológicos ocorrem, especialmente após refeições. **DRGE** existe quando o refluxo causa sintomas incômodos e/ou complicações, com evidência clínica ou objetiva adequada. Não basta ter um episódio de pH baixo para declarar doença, e a presença de piroses não prova que cada sensação se deve ao ácido.
@@ -227,7 +227,7 @@ Cada exame requer fonte, licença para uso comercial e validação clínica; nã
 5. SAGES. Multi-Society Consensus Conference and Guideline on Treatment of GERD. 2022. https://www.sages.org/publications/guidelines/multi-society-consensus-conference-and-guideline-on-the-treatment-of-gerd/
 
 ## 16. Auditoria parcial
-- [x] Leitura do PDF correlato no Drive (mapa curto) e comparação com LURIA padronizada.
+- [x] Leitura do PDF correlato no Drive (mapa curto) e comparação com TRAUBE padronizada.
 - [x] Fisiologia, clínica, critérios, testes on/off IBP, hérnias, manejo, cirurgia, 4 casos e 6 questões comentadas.
 - [ ] Aprofundar epidemiologia brasileira, estudo funcional esofágico, Barrett por risco, técnicas cirúrgicas e complicações de reoperação.
 - [ ] Validar doses completas/ajuste e acesso brasileiro, fontes nacionais e consensos brasileiros.
@@ -240,7 +240,7 @@ Cada exame requer fonte, licença para uso comercial e validação clínica; nã
 ---
 
 # APROFUNDAMENTO EDITORIAL — NÚCLEO CLÍNICO AVANÇADO
-**Inserção revisional de 14/10/2026, preservando integralmente o rascunho inicial.** Os capítulos seguintes ampliam os mecanismos, a interpretação de testes e a decisão terapêutica com exemplos. São conteúdo didático LURIA, não transcrição de fonte comparativa. A numeração 17–27 indica continuidade após a primeira versão. A revisão profissional e as imagens licenciadas ainda são obrigatórias.
+**Inserção revisional de 14/10/2026, preservando integralmente o rascunho inicial.** Os capítulos seguintes ampliam os mecanismos, a interpretação de testes e a decisão terapêutica com exemplos. São conteúdo didático TRAUBE, não transcrição de fonte comparativa. A numeração 17–27 indica continuidade após a primeira versão. A revisão profissional e as imagens licenciadas ainda são obrigatórias.
 
 ## 17. Como a anatomia da junção explica os diferentes fenótipos da DRGE
 

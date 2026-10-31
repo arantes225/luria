@@ -1,4 +1,4 @@
-# LURIA — Aula 162 | Nódulos e câncer de tireoide
+# TRAUBE — Aula 162 | Nódulos e câncer de tireoide
 **Lote 09 · Cirurgia Geral / Cabeça e Pescoço · Rascunho editorial 01 · 14/10/2026**
 
 > Material autoral em construção, não publicado como apostila final. Diretrizes e documentos institucionais devem ser confrontados com protocolos locais e decisão multidisciplinar. O presente texto aborda sobretudo adultos.
@@ -52,7 +52,7 @@ Radioiodo não é rotina para todo carcinoma diferenciado. Após cirurgia, estra
 ## 7. Populações especiais
 **Gestantes:** cintilografia contraindicada; US e avaliação clínica orientam, e cirurgia muitas vezes pode aguardar o pós-parto em doença estável, mas agressividade e progressão mudam a decisão. **Crianças:** risco e critérios de abordagem diferem dos de adultos, não transpor mecanicamente ACR TI-RADS. **Idosos e frágeis:** ponderar riscos de cirurgia e do excesso de investigação com benefício potencial. **Paciente com MEN2:** necessidade de investigação de RET e aconselhamento genético.
 
-## 8. Algoritmo LURIA
+## 8. Algoritmo TRAUBE
 Nódulo detectado → história/exame + **TSH** → TSH baixo? avaliar autonomia por cintilografia quando possível → US cervical com categoria de risco e linfonodos → há critérios para PAAF? → Bethesda → I repetir/avaliar; II vigiar conforme risco; III/IV investigação adicional ou lobectomia conforme decisão compartilhada; V/VI encaminhar para avaliação oncológica cirúrgica → após tratamento, estratificar risco, definir TSH, radioiodo (se indicado) e seguimento.
 
 ## 9. Quatro casos clínicos comentados
@@ -90,7 +90,7 @@ Nódulo detectado → história/exame + **TSH** → TSH baixo? avaliar autonomia
 - [ ] Acrescentar riscos Bethesda por categoria com contexto de prevalência.
 - [ ] Curar imagens acadêmicas com licença e versões WebP otimizadas.
 - [ ] Auditoria científica por responsável antes de publicação.
-- [ ] Transformar em `content.json` no renderer LURIA e testar no PWA.
+- [ ] Transformar em `content.json` no renderer TRAUBE e testar no PWA.
 - [ ] Ampliar o corpo textual até o padrão de profundidade premium, sem inflar superficialmente.
 
 **Status final deste arquivo: rascunho aproveitável, não apostila premium finalizada.**

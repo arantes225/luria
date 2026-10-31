@@ -1,4 +1,4 @@
-# LURIA — Lote 07 / Aula 121
+# TRAUBE — Lote 07 / Aula 121
 ## Infecção do trato urinário e pielonefrite
 **Estado editorial:** RASCUNHO PARCIAL — não publicado, não validado para apostila premium.  
 **Base curricular:** `assets/js/cronograma-base-data.js`, aula 121.  
@@ -40,7 +40,7 @@ A diretriz IDSA 2025 apoia, em pacientes selecionados com ITU complicada/pielone
 - [x] Tabelas diagnósticas, prevenção, acompanhamento e algoritmos de UBS, pronto atendimento e hospital incluídos; testar aplicação clínica.
 - [x] Seis casos clínicos comentados completos incluídos; revisão clínica editorial ainda pendente.
 - [x] Oito questões autorais comentadas com justificativa de todas as alternativas.
-- [ ] Comparativo PARCIAL de dois PDFs do Drive concluído, sem material integralmente equivalente; falta registro de comparação com a LURIA padronizada.
+- [ ] Comparativo PARCIAL de dois PDFs do Drive concluído, sem material integralmente equivalente; falta registro de comparação com a TRAUBE padronizada.
 - [ ] Fontes brasileiras prioritárias identificadas (FEBRASGO, SBP e MS); revisão médica formal e licença/imagens permanecem pendentes.
 - [ ] Arquivo já excede 60 mil caracteres totais, mas ainda falta aferir 60 mil caracteres *didáticos úteis*, auditar redundância e revisão técnica/editorial.
 
@@ -62,7 +62,7 @@ A pesquisa no Google Drive por “pielonefrite”, “infecção urinária”, �
 
 **b) “02 - ASSISTENCIA AO PRE-NATAL.pdf”** — texto extenso de pré-natal, com indicação de exames iniciais e referência a urina tipo 1 e urocultura. O foco é obstétrico amplo, não a infectologia urinária. Há detalhes perinatais e calendários que podem estar desatualizados em relação a publicações do Ministério da Saúde posteriores à sua elaboração. Foi utilizado para mapear a presença de bacteriúria assintomática no seguimento da gestação, não para definir isoladamente a conduta clínica contemporânea. **Autoria institucional não verificada.**
 
-**Comparação de cobertura com a LURIA:** o rascunho original da aula 121 continha fisiologia introdutória, distinção básica entre cistite e pielonefrite e noções de cultura/tratamento, mas não ensinava coleta correta, diagnóstico em populações especiais, sepse obstrutiva, farmacologia por síndrome, prevenção de recorrência, seguimento, casos e questões. Estes são os alvos do presente desenvolvimento original. Não copiar figuras, texto nem tabelas dos PDFs.
+**Comparação de cobertura com a TRAUBE:** o rascunho original da aula 121 continha fisiologia introdutória, distinção básica entre cistite e pielonefrite e noções de cultura/tratamento, mas não ensinava coleta correta, diagnóstico em populações especiais, sepse obstrutiva, farmacologia por síndrome, prevenção de recorrência, seguimento, casos e questões. Estes são os alvos do presente desenvolvimento original. Não copiar figuras, texto nem tabelas dos PDFs.
 
 **Fontes primárias clínicas deste desenvolvimento:** EAU *Urological Infections* edição 2026; IDSA 2025 *Complicated UTI* (seleção, troca IV/VO e duração); IDSA 2019 *Asymptomatic Bacteriuria*; FEBRASGO protocolo Obstetrícia nº 9, 3ª edição de 2024; SBP Nefrologia, *Infecção urinária: diagnóstico, investigação e prevenção* (2023). A EAU oferece algoritmo de cistite e pielonefrite e exemplos de posologia para adultos, **não** é normativa única brasileira. As rotinas de gestação diferem entre instituições, inclusive no calendário de novas uroculturas; sempre nomear a diretriz empregada.
 
@@ -528,7 +528,7 @@ D. Presumir pielonefrite crônica em toda mulher com recorrência.
 
 **Gabarito B.** A prevenção deve ser individualizada e proporcional; mulheres pós-menopausa podem se beneficiar de estratégias locais. **A** promove resistência. **C** trata colonização e exames isolados. **D** transforma cistite recorrente em doença renal sem evidência. **Conceito:** recorrência exige plano longitudinal e documentação, não exposição antibiótica ilimitada.
 
-## 25. Pulo do Gato LURIA — revisão de alta utilidade
+## 25. Pulo do Gato TRAUBE — revisão de alta utilidade
 
 **1. Infecção localizada e sistêmica são síndromes diferentes.** A EAU 2026 enfatiza sinais sistêmicos; “ter bactéria na urina” não define a topografia nem a gravidade. Disúria isolada e febre com dor lombar exigem estratégias terapêuticas distintas.
 
@@ -608,7 +608,7 @@ Estas candidatas são especificações de busca e aprovação, não imagens enco
 - [ ] Quantificar caracteres **didáticos líquidos**, excluindo menus, listas de pendência, citações e bibliografia; a mera extensão Markdown não equivale a qualidade.
 - [ ] Cotejar profundidade e capítulos com uma apostila realmente equivalente do Google Drive; os dois materiais abertos foram correlatos mas não equivalentes.
 - [ ] Pesquisar e validar dez imagens candidatas reais ou figuras originais, revisar licenças e enviar ao Admin para aprovação; preservar imagens já aprovadas.
-- [ ] Rodar validações sintáticas e inspeção visual quando texto for convertido/integrado no formato final da LURIA.
+- [ ] Rodar validações sintáticas e inspeção visual quando texto for convertido/integrado no formato final da TRAUBE.
 - [ ] Testar resolução de questões externas adicionais apenas pelo material; expandir capítulos onde o teste revelar lacunas.
 - [ ] Confirmar atualização 2026 de todas as fontes e disponibilidade de medicamentos no SUS/local.
 

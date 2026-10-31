@@ -1,4 +1,4 @@
-/* LURIA Flashcards v21 — rebuild */
+/* TRAUBE Flashcards v21 — rebuild */
 body[data-page="flashcards"] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){width:100%;max-width:1320px}
 .flash-dashboard-overview{display:none!important}
 .flash-tabs{position:sticky;top:10px;z-index:30;display:flex!important;width:max-content;gap:5px;margin:8px 0 18px;padding:5px!important;border:1px solid var(--border)!important;border-radius:14px!important;background:color-mix(in srgb,var(--surface) 94%,transparent)!important;backdrop-filter:blur(18px)}
@@ -33,7 +33,7 @@ body.flash-review-session-active .sidebar:where(:not(body[data-ui-nav="v2"], bod
 @media(max-width:950px){.flash-deck-grid,.flash-add-hub{grid-template-columns:1fr!important}.library-filters{grid-template-columns:1fr 1fr!important}.review-focus-toolbar{grid-template-columns:1fr 1fr!important}.review-card{min-height:360px!important;padding:38px 28px!important}}
 @media(max-width:620px){.flash-tabs{width:100%;overflow-x:auto}.flash-tab{flex:1;white-space:nowrap;padding:0 10px!important}.library-filters{grid-template-columns:1fr!important}.flash-deck-grid{grid-template-columns:1fr!important}.review-card{min-height:330px!important;padding:32px 18px!important}.rating-actions{grid-template-columns:1fr!important}.flash-subject-row{grid-template-columns:1fr auto}.flash-subject-due{display:none}}
 
-/* LURIA Flashcards v22 — reference-driven decks */
+/* TRAUBE Flashcards v22 — reference-driven decks */
 .flash-section[data-flash-section="library"]>.panel{max-width:none!important}
 .flash-library-hero{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin:2px 0 16px;padding:4px 5px 15px;border-bottom:1px solid var(--border)}
 .flash-library-hero h2{margin:0;font-size:30px;letter-spacing:-.04em}.flash-library-hero p{margin:5px 0 0;color:var(--muted);font-size:10px}
@@ -61,7 +61,7 @@ body.flash-review-session-active .sidebar:where(:not(body[data-ui-nav="v2"], bod
 @media(max-width:850px){.flash-deck-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.library-filters{grid-template-columns:1fr 1fr!important}.library-filters>input{grid-column:1/-1}.flash-library-hero{align-items:flex-start;flex-direction:column}}
 @media(max-width:560px){.flash-deck-cards{grid-template-columns:1fr}.library-filters{grid-template-columns:1fr!important}.library-filters>input{grid-column:auto}.flash-library-hero h2{font-size:24px}.flash-library-hero-actions{width:100%}.flash-library-hero-actions .button{flex:1}.flash-ref-deck{min-height:176px}}
 
-/* LURIA Flashcards v23 — faithful deck library */
+/* TRAUBE Flashcards v23 — faithful deck library */
 body[data-page="flashcards"] .flash-section[data-flash-section="library"]{margin-top:-4px}
 body[data-page="flashcards"] .flash-section[data-flash-section="library"]>.panel{padding:0!important}
 .flash-library-hero{align-items:center!important;margin:0 0 6px!important;padding:5px 4px 17px!important}
@@ -86,7 +86,7 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]>.panel
 @media(max-width:560px){.flash-deck-cards{grid-template-columns:1fr!important}}
 
 
-/* v23.1 — Adicionar segue o mesmo padrão visual das abas LURIA */
+/* v23.1 — Adicionar segue o mesmo padrão visual das abas TRAUBE */
 .flash-tabs{display:flex!important;align-items:center!important;gap:26px!important;border-bottom:1px solid var(--border)!important;padding:0!important;margin:0 0 20px!important;overflow-x:auto!important}
 .flash-tabs .flash-tab{position:relative!important;min-height:43px!important;padding:0 2px!important;border:0!important;background:transparent!important;border-radius:0!important;color:var(--muted)!important;font-size:11px!important;font-weight:720!important;box-shadow:none!important}
 .flash-tabs .flash-tab:hover{color:var(--text)!important}.flash-tabs .flash-tab.active{color:var(--accent)!important;background:transparent!important}
@@ -103,7 +103,7 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]>.panel
 .flash-library-hero-actions{display:none!important}
 
 
-/* v23.3 — switch LURIA uniforme (mesmo padrão do Cronograma) */
+/* v23.3 — switch TRAUBE uniforme (mesmo padrão do Cronograma) */
 .flash-tabs{display:inline-flex!important;width:auto!important;align-items:center!important;gap:3px!important;padding:3px!important;margin:0 0 18px!important;border:1px solid var(--border)!important;border-radius:11px!important;background:var(--surface-2)!important;overflow:visible!important}
 .flash-tabs .flash-tab{position:static!important;min-height:36px!important;height:36px!important;padding:0 14px!important;border:0!important;border-radius:8px!important;background:transparent!important;color:var(--muted)!important;font-size:11px!important;font-weight:800!important;box-shadow:none!important}
 .flash-tabs .flash-tab:after{display:none!important}
@@ -334,7 +334,7 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]{margin
 }
 
 
-/* LURIA Flashcards v25 — revisão de hoje */
+/* TRAUBE Flashcards v25 — revisão de hoje */
 .flash-section[data-flash-section="review"] .flash-review-panel{max-width:1240px!important}
 .flash-review-header{
   display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;align-items:end!important;
@@ -392,7 +392,7 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]{margin
 }
 
 
-/* LURIA Flashcards v26 — decks com acabamento azul de caderno */
+/* TRAUBE Flashcards v26 — decks com acabamento azul de caderno */
 .flash-ref-deck{
   overflow:hidden!important;
   border:1px solid color-mix(in srgb,var(--accent) 26%,var(--border))!important;
@@ -434,7 +434,7 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]{margin
 .flash-ref-fill{background:var(--accent)!important}
 
 
-/* LURIA Flashcards v28 — sessão de revisão visível */
+/* TRAUBE Flashcards v28 — sessão de revisão visível */
 body.flash-review-session-active .flash-section[data-flash-section="review"]{
   display:block!important;
   visibility:visible!important;
@@ -470,7 +470,7 @@ body.flash-review-session-active .page:where(:not(body[data-ui-nav="v2"], body[d
 }
 
 
-/* LURIA Flashcards v29 — Revisões do dia compacta, estilo Caderno de Erros */
+/* TRAUBE Flashcards v29 — Revisões do dia compacta, estilo Caderno de Erros */
 .review-launcher{
   min-height:0!important;
   padding:12px 14px!important;
@@ -503,7 +503,7 @@ body.flash-review-session-active .page:where(:not(body[data-ui-nav="v2"], body[d
 }
 
 
-/* LURIA Flashcards v30 — barra Revisões do dia em destaque */
+/* TRAUBE Flashcards v30 — barra Revisões do dia em destaque */
 .flash-review-panel{padding-top:10px!important}
 .flash-review-progress-only{display:none!important}
 .review-launcher{margin-top:0!important}
@@ -527,7 +527,7 @@ body.flash-review-session-active .page:where(:not(body[data-ui-nav="v2"], body[d
 }
 
 
-/* LURIA Flashcards v31 — impede flash da interface legada durante inicialização */
+/* TRAUBE Flashcards v31 — impede flash da interface legada durante inicialização */
 body.flash-v21-booting .flash-tabs,
 body.flash-v21-booting [data-flash-section],
 body.flash-v21-booting .flash-dashboard-overview{visibility:hidden!important;opacity:0!important}
@@ -535,7 +535,7 @@ body:not(.flash-v21-booting) .flash-tabs,
 body:not(.flash-v21-booting) [data-flash-section]{transition:opacity .12s ease}
 
 
-/* LURIA Flashcards v30 — decks idênticos aos cadernos de Anotações / Caderno de Erros */
+/* TRAUBE Flashcards v30 — decks idênticos aos cadernos de Anotações / Caderno de Erros */
 :is(.flash-section[data-flash-section="library"],.flash-review-hub) .flash-ref-deck{
   position:relative!important;
   min-width:0!important;
@@ -690,7 +690,7 @@ body:not(.flash-v21-booting) [data-flash-section]{transition:opacity .12s ease}
 }
 
 
-/* LURIA Flashcards v31 — revisão no mesmo tom do Caderno de Erros */
+/* TRAUBE Flashcards v31 — revisão no mesmo tom do Caderno de Erros */
 .flash-section[data-flash-section="review"] .flash-review-panel{
   max-width:1240px!important;
   padding:0!important;
@@ -1165,7 +1165,7 @@ body.theme-dark[data-page="flashcards"] .flash-top-spotlight-timer span{
 }
 
 
-/* LURIA Flashcards v35 — switch à esquerda + métricas rápidas à direita */
+/* TRAUBE Flashcards v35 — switch à esquerda + métricas rápidas à direita */
 body[data-page="flashcards"] .flash-control-row{
   display:flex!important;
   align-items:stretch!important;
@@ -1278,7 +1278,7 @@ body[data-page="flashcards"] .flash-review-hub h2{
 }
 
 
-/* LURIA Flashcards v36 — métricas rápidas altas */
+/* TRAUBE Flashcards v36 — métricas rápidas altas */
 body[data-page="flashcards"] .flash-quick-metrics{
   min-height:96px!important;
   padding:14px 18px!important;
@@ -1332,7 +1332,7 @@ body[data-page="flashcards"] .flash-quick-metrics-grid small{
 }
 
 
-/* LURIA Flashcards v37 — métricas rápidas no padrão do Caderno de Erros */
+/* TRAUBE Flashcards v37 — métricas rápidas no padrão do Caderno de Erros */
 body[data-page="flashcards"] .flash-control-row{
   align-items:stretch!important;
 }
@@ -1417,7 +1417,7 @@ body[data-page="flashcards"] .flash-quick-metrics-grid>div:nth-child(4) small::a
 }
 
 
-/* LURIA Flashcards v38 — copia visual exata do painel "Métricas rápidas" do Caderno de Erros */
+/* TRAUBE Flashcards v38 — copia visual exata do painel "Métricas rápidas" do Caderno de Erros */
 body[data-page="flashcards"] .flash-control-row{
   align-items:flex-start!important;
 }
@@ -1571,7 +1571,7 @@ body[data-page="flashcards"] .flash-quick-metrics-grid{
 }
 
 
-/* LURIA Flashcards v39 — Métricas rápidas maiores e mais informativas */
+/* TRAUBE Flashcards v39 — Métricas rápidas maiores e mais informativas */
 body[data-page="flashcards"] .flash-quick-metrics{
   width:390px!important;
   min-width:390px!important;
@@ -1668,7 +1668,7 @@ body[data-page="flashcards"] .flash-metric-detail small{
 
 
 /* =========================================================
-   LURIA Flashcards v40 — Métricas Rápidas = Caderno de Erros
+   TRAUBE Flashcards v40 — Métricas Rápidas = Caderno de Erros
    Espelha visualmente o bloco .error-quick-metrics v18.17.
    ========================================================= */
 body[data-page="flashcards"] .flash-quick-metrics{

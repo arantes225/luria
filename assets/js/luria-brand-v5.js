@@ -62,10 +62,10 @@
 
     if (
       title.textContent
-      !== "LURIA"
+      !== "TRAUBE"
     ) {
       title.textContent =
-        "LURIA";
+        "TRAUBE";
     }
 
     let subtitle =
@@ -154,7 +154,7 @@
         "luria-brand-logo";
 
       logo.alt =
-        "Logo LURIA";
+        "Logo TRAUBE";
 
       const copy =
         brand.querySelector(

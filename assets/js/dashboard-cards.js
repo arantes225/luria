@@ -6,7 +6,7 @@
   const cards = [...panel.querySelectorAll("[data-dashboard-app]")];
   const status = document.getElementById("dashboard-apps-status");
   const valid = value => value === "classic" || value === "cards";
-  const ownerStore = window.LuriaLocalOwnerStore;
+  const ownerStore = window.TraubeLocalOwnerStore;
   let ownerReady = !ownerStore?.ready || !!ownerStore.ownerId;
   const loading = document.getElementById("dashboard-loading");
   const main = document.getElementById("dashboard-content");
@@ -34,12 +34,12 @@
   function restore() {
     // A missing owner during Auth initialization is not a Classic preference.
     if (!ownerReady && !ownerStore?.ownerId) { pending(); return; }
-    show(window.LuriaDashboardPreference?.read());
+    show(window.TraubeDashboardPreference?.read());
     if (status) status.textContent = "";
   }
   function updateAccess() {
-    const signedIn = !!window.docmapUser && !!window.LuriaLocalOwnerStore?.ownerId
-      && window.docmapUser.id === window.LuriaLocalOwnerStore.ownerId;
+    const signedIn = !!window.docmapUser && !!window.TraubeLocalOwnerStore?.ownerId
+      && window.docmapUser.id === window.TraubeLocalOwnerStore.ownerId;
     for (const card of cards) {
       const feature = card.dataset.dashboardFeature;
       const checking = !signedIn || (feature && window.docmapIsAdmin !== true && !window.docmapEntitlements);
@@ -63,7 +63,7 @@
     event.preventDefault();
     const message = card.querySelector("[data-dashboard-access]").textContent;
     if (status) status.textContent = message;
-    window.LuriaDialog?.alert(message);
+    window.TraubeDialog?.alert(message);
   }, true);
   window.addEventListener("docmap:ready", () => { restore(); updateAccess(); });
   window.addEventListener("docmap:access-updated", updateAccess);
@@ -72,7 +72,7 @@
   window.addEventListener("luria:dashboard-presentation-ready", restore);
   window.addEventListener("pageshow", () => { restore(); updateAccess(); });
   window.addEventListener("storage", event => {
-    if (event.key === null || event.key === window.LuriaDashboardPreference?.key()) restore();
+    if (event.key === null || event.key === window.TraubeDashboardPreference?.key()) restore();
   });
   restore();
   updateAccess();

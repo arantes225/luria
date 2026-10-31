@@ -1368,7 +1368,7 @@
       customer.plan = previousPlan;
       select.value = previousPlan;
       select.classList.add("is-error");
-      window.LuriaDialog?.alert(`Não foi possível alterar o plano: ${error.message}`);
+      window.TraubeDialog?.alert(`Não foi possível alterar o plano: ${error.message}`);
     } finally {
       select.disabled = false;
       select.classList.remove("is-saving");
@@ -1780,7 +1780,7 @@
       loadQuestionFactoryQuality(),
       loadClinicalImageReviewQueue(),
       loadApostilaImageReviewQueue(),
-      window.LuriaAdminEditais?.load?.() || Promise.resolve()
+      window.TraubeAdminEditais?.load?.() || Promise.resolve()
     ]);
   }
 
@@ -2082,9 +2082,9 @@
 
     if (
       next === "editais"
-      && window.LuriaAdminEditais?.load
+      && window.TraubeAdminEditais?.load
     ) {
-      window.LuriaAdminEditais.load().catch(
+      window.TraubeAdminEditais.load().catch(
         error => console.warn(
           "Não foi possível carregar os editais administrativos:",
           error
@@ -3247,11 +3247,11 @@
   }
 
   function buildBoardGenerationPrompt(item, context = {}) {
-    return window.LuriaQuestionPrompts.generation(item, context);
+    return window.TraubeQuestionPrompts.generation(item, context);
   }
 
   function buildBoardSegmentPrompt(item, stage, context = {}) {
-    return window.LuriaQuestionPrompts.segment(item, stage, context);
+    return window.TraubeQuestionPrompts.segment(item, stage, context);
   }
 
   function questionFactoryStageMeta(stage) {
@@ -3314,7 +3314,7 @@
         "MODO DE EXECUÇÃO — CHATGPT · REVISÃO INDEPENDENTE",
         "============================================================",
         "Este fluxo usa ChatGPT com acesso autorizado ao Supabase e não depende de API externa de auditor.",
-        "Use a sua conexão autenticada ao Supabase da LURIA/Studyos.",
+        "Use a sua conexão autenticada ao Supabase da TRAUBE/Studyos.",
         "Endereço obrigatório: " + blockCode + ".",
         "Antes de qualquer auditoria, releia o Supabase e confirme batch_code, block_code, question_id e item_version atuais.",
         "Não use uma cópia das questões colada neste prompt como fonte de verdade.",
@@ -3367,7 +3367,7 @@
     const batchCode = saved.batch_code || ("L"+String(batch).padStart(3,"0"));
     return {
       prompt_workspace_url: saved.workspace_url || defaultQuestionFactoryWorkspaceUrl(),
-      prompt_source_instruction: saved.source_instruction || `Use a conexão autenticada ao Supabase da LURIA/Studyos. Localize o lote ${batchCode}, abra exatamente o block_code indicado e leia somente as questões e item_version atuais necessárias para a etapa. Em revisão independente, ignore memória, histórico e conclusões anteriores.`,
+      prompt_source_instruction: saved.source_instruction || `Use a conexão autenticada ao Supabase da TRAUBE/Studyos. Localize o lote ${batchCode}, abra exatamente o block_code indicado e leia somente as questões e item_version atuais necessárias para a etapa. Em revisão independente, ignore memória, histórico e conclusões anteriores.`,
       prompt_return_instruction: saved.return_instruction || `Grave o resultado no mesmo lote ${batchCode}, associado ao block_code e à etapa exatos, usando SOMENTE o RPC/importador controlado da etapa. Depois confirme a persistência com review_coverage e block_tracker. Não invente sucesso se a escrita falhar.`
     };
   }
@@ -3416,10 +3416,10 @@
     }
 
     if (["perplexity_initial","perplexity_reaudit"].includes(block.next_stage)
-        && (window.LuriaQuestionPrompts.independentReviewCycle || window.LuriaQuestionPrompts.perplexityCycle)) {
+        && (window.TraubeQuestionPrompts.independentReviewCycle || window.TraubeQuestionPrompts.perplexityCycle)) {
       const afterCorrection = block.next_stage === "perplexity_reaudit"
         || String(block.latest_review_stage || "") === "chatgpt_correction_review";
-      const fn = window.LuriaQuestionPrompts.independentReviewCycle || window.LuriaQuestionPrompts.perplexityCycle;
+      const fn = window.TraubeQuestionPrompts.independentReviewCycle || window.TraubeQuestionPrompts.perplexityCycle;
       return fn(style, ctx, afterCorrection);
     }
 
@@ -3427,8 +3427,8 @@
       return buildBoardSegmentPrompt(style, "blind_resolution", ctx);
     }
 
-    if (block.next_stage === "chatgpt_adjudication" && window.LuriaQuestionPrompts.chatgptCorrectionCycle) {
-      return window.LuriaQuestionPrompts.chatgptCorrectionCycle(style, ctx);
+    if (block.next_stage === "chatgpt_adjudication" && window.TraubeQuestionPrompts.chatgptCorrectionCycle) {
+      return window.TraubeQuestionPrompts.chatgptCorrectionCycle(style, ctx);
     }
 
     if (["human_review","block_complete"].includes(block.next_stage)) {
@@ -3602,8 +3602,8 @@
         const slug = String(item.exam_style || `banca-${index+1}`).replace(/[^a-z0-9]/gi,"-").toLowerCase();
         const masterPromptId = `qf-dashboard-${slug}-master`;
         const globalPromptId = `qf-dashboard-${slug}-global-contract`;
-        const globalPromptText = window.LuriaQuestionPrompts.globalContract
-          ? window.LuriaQuestionPrompts.globalContract()
+        const globalPromptText = window.TraubeQuestionPrompts.globalContract
+          ? window.TraubeQuestionPrompts.globalContract()
           : "";
         const promptStages = [
           ["01","Gerar 200 questões",null,"chatgpt"],
@@ -4184,7 +4184,7 @@
     try {
       // Exporta internamente a versão completa para descobrir, com segurança, quais
       // question_id + version ainda estão pendentes. Nada disso vai para o clipboard
-      // na etapa cega: a whitelist LuriaQuestionPrompts.blind() é aplicada depois.
+      // na etapa cega: a whitelist TraubeQuestionPrompts.blind() é aplicada depois.
       const { data, error } = await sb.rpc("admin_export_question_factory", {
         p_batch_number: Number(batchNumber),
         p_block_number: Number(blockNumber),
@@ -4219,7 +4219,7 @@
           }));
 
       const copiedQuestions = stage === "blind_resolution"
-        ? window.LuriaQuestionPrompts.blind(selected)
+        ? window.TraubeQuestionPrompts.blind(selected)
         : selected;
 
       const payload = {

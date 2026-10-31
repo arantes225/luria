@@ -15,7 +15,7 @@ jobs:
           cp -R assets/img export/assets-img
       - uses: actions/upload-artifact@v4
         with:
-          name: LURIA-imagens-site
+          name: TRAUBE-imagens-site
           path: export/assets-img
           if-no-files-found: error
           retention-days: 1

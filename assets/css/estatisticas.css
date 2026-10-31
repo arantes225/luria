@@ -370,7 +370,7 @@
 .error-status{font-size:7px;font-weight:800}.error-status.danger{color:var(--danger,#e34b62)}.error-status.ok{color:#15956b}
 @media(max-width:900px){.error-ref-summary{grid-template-columns:repeat(2,minmax(0,1fr))!important}.error-ref-card,.error-ref-critical,.error-ref-insights{grid-column:span 12!important}}
 
-/* v23.1 — switch Estatísticas no padrão LURIA / Cronograma */
+/* v23.1 — switch Estatísticas no padrão TRAUBE / Cronograma */
 .stats-tabs-shell{
   display:inline-flex!important;
   width:auto!important;
@@ -782,7 +782,7 @@
   line-height:15px!important;
 }
 
-/* v25 — switches Estatísticas no padrão oficial LURIA/Cronograma */
+/* v25 — switches Estatísticas no padrão oficial TRAUBE/Cronograma */
 .stats-controls-row{
   display:flex!important;
   align-items:center!important;
@@ -863,7 +863,7 @@
   box-shadow:none!important;
 }
 
-/* v25.2 — switches Estatísticas ligeiramente maiores, mantendo padrão LURIA */
+/* v25.2 — switches Estatísticas ligeiramente maiores, mantendo padrão TRAUBE */
 .stats-tabs-shell,.stats-range{
   padding:4px!important;
   gap:4px!important;

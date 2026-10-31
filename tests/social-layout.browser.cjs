@@ -51,7 +51,7 @@ const mime={'.html':'text/html','.css':'text/css','.js':'application/javascript'
  await page.locator('#social-message-text').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,'room-chat-mobile.png')});
  await context.addInitScript(()=>Object.defineProperty(navigator,'standalone',{get:()=>true}));
  const installed=await context.newPage();installed.on('pageerror',e=>errors.push(e.message));await installed.setViewportSize({width:390,height:844});await installed.goto('https://luria.test/amigos/');await installed.locator('.sr-lane').first().waitFor();
- await installed.evaluate(()=>{window.LuriaEntitlements.enabled=()=>true;});await installed.locator('#studyrats-toggle-customize').click();
+ await installed.evaluate(()=>{window.TraubeEntitlements.enabled=()=>true;});await installed.locator('#studyrats-toggle-customize').click();
  await installed.locator('#studyrats-preview-large-stage').waitFor();assert.equal(await installed.locator('[data-studyrat-variant]').count(),10);assert.equal(await installed.locator('[data-studyrat-accessory]').count(),18);
  await installed.waitForFunction(()=>[...document.querySelectorAll('#studyrats-rat-picker-options img,#studyrats-accessory-picker-options img')].every(i=>i.complete&&i.naturalWidth>0));
  await installed.screenshot({path:path.join(out,'customizer-pwa.png')});

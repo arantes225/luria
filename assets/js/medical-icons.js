@@ -1,5 +1,5 @@
-/* LURIA Medical Icons — biblioteca SVG global e autoral */
-window.LuriaMedicalIcons=(()=>{
+/* TRAUBE Medical Icons — biblioteca SVG global e autoral */
+window.TraubeMedicalIcons=(()=>{
   const b='viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"';
   const p={
     clinic:'<path d="M6 3v5a6 6 0 0 0 12 0V3"/><path d="M8 3v4a4 4 0 0 0 8 0V3"/><path d="M12 13v3a4 4 0 0 0 8 0v-2"/><circle cx="20" cy="12" r="2"/>',
@@ -70,4 +70,4 @@ window.LuriaMedicalIcons=(()=>{
   };
   return{resolve,svg,apply,paths:p,rules};
 })();
-document.addEventListener('DOMContentLoaded',()=>window.LuriaMedicalIcons?.apply?.());
+document.addEventListener('DOMContentLoaded',()=>window.TraubeMedicalIcons?.apply?.());

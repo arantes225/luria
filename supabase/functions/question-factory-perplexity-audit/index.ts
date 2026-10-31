@@ -463,7 +463,7 @@ function auditPrompt(q: any, blind: any, profile: any) {
     scientific_source_strategy: profile?.scientific_source_strategy || "",
   };
   return [
-    "CONTRATO LURIA 3.4 — AUDITORIA CIENTÍFICA/EDITORIAL INDEPENDENTE.",
+    "CONTRATO TRAUBE 3.4 — AUDITORIA CIENTÍFICA/EDITORIAL INDEPENDENTE.",
     "A resposta cega abaixo é IMUTÁVEL. Não a altere para coincidir com o gabarito.",
     "Use pesquisa web e leitura/fetch das fontes. Fonte apenas citada pela questão NÃO conta como verificada.",
     "Só marque source_verification_status=VERIFIED quando localizar fonte autoritativa/primária, confirmar documento/ano/seção e verificar que a recomendação sustenta exatamente a decisão/gabarito.",
@@ -803,7 +803,7 @@ Deno.serve(withCors(async (req) => {
       apiKey,
       prompt: blindPrompt(q),
       instructions: "Você é um médico revisor independente. Resolva apenas a questão recebida, sem qualquer gabarito oculto. Produza JSON válido conforme o schema.",
-      schemaName: "LuriaBlindResolution",
+      schemaName: "TraubeBlindResolution",
       schema: BLIND_SCHEMA,
       useWeb: false,
     });
@@ -828,7 +828,7 @@ Deno.serve(withCors(async (req) => {
       apiKey,
       prompt: auditPrompt(q, blindReview, item.style_profile || {}),
       instructions: "Você é um auditor médico adversarial e editorial. Pesquise fontes autoritativas, abra/fetch URLs relevantes e só declare VERIFIED com comprovação. Produza exatamente um parecer completo em JSON conforme o schema.",
-      schemaName: "LuriaPerplexityAudit",
+      schemaName: "TraubePerplexityAudit",
       schema: AUDIT_SCHEMA,
       useWeb: true,
     });

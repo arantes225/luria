@@ -426,7 +426,7 @@ body.plantao-monitor-open{overflow:hidden}
 }
 
 
-/* v4.5 — filtros da Sala de Emergência no padrão visual LURIA */
+/* v4.5 — filtros da Sala de Emergência no padrão visual TRAUBE */
 .plantao-filters{
   display:flex;
   gap:10px;
@@ -696,7 +696,7 @@ body.plantao-monitor-open{overflow:hidden}
 }
 
 
-/* Filtros da Sala de Emergência no padrão visual da LURIA */
+/* Filtros da Sala de Emergência no padrão visual da TRAUBE */
 .plantao-filters{display:flex;gap:12px;align-items:end;flex-wrap:wrap;margin:0 0 18px}
 .plantao-site-filter{display:flex;flex-direction:column;gap:6px;min-width:210px}
 .plantao-filter-label{font-size:.82rem;font-weight:700;color:var(--muted,#667085)}
@@ -1184,7 +1184,7 @@ body.plantao-phone-mode .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-
 }
 
 
-/* v5.1 — subabas de Intervenções e Exames no padrão visual LURIA */
+/* v5.1 — subabas de Intervenções e Exames no padrão visual TRAUBE */
 .plantao-intervention-tabs{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
@@ -1454,7 +1454,7 @@ body.plantao-phone-mode .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-
 }
 
 
-/* v6.3 — Telefone do Plantão integrado aos temas LURIA */
+/* v6.3 — Telefone do Plantão integrado aos temas TRAUBE */
 .plantao-phone-device,
 .plantao-phone-shell{
   border-color:color-mix(in srgb,var(--text) 82%,var(--accent) 18%);
@@ -1856,7 +1856,7 @@ body.plantao-phone-mode #plantao-telefone{
 }
 
 
-/* v6.7 — LuriaZap 100% sincronizado com o tema do site */
+/* v6.7 — TraubeZap 100% sincronizado com o tema do site */
 body[data-page="plantao"] .plantao-phone-device,
 body[data-page="plantao"] .plantao-phone-shell{
   border-color:color-mix(in srgb,var(--text) 78%,var(--accent) 22%)!important;
@@ -1972,7 +1972,7 @@ body[data-page="plantao"] .plantao-phone-notch{
 }
 
 
-/* Plantão · confirmação final no layout LURIA */
+/* Plantão · confirmação final no layout TRAUBE */
 .plantao-confirm-overlay{
   position:fixed;
   inset:0;
@@ -2029,7 +2029,7 @@ body[data-page="plantao"] .plantao-phone-notch{
 }
 
 
-/* v6.8 — marca LuriaZap no topo da lista de conversas */
+/* v6.8 — marca TraubeZap no topo da lista de conversas */
 body[data-page="plantao"] .plantao-phone-inbox-head{
   grid-template-columns:30px minmax(0,1fr) 30px;
   min-height:82px;
@@ -2124,7 +2124,7 @@ body[data-page="plantao"] .plantao-phone-brand-name{
   }
 }
 
-/* v6.9 — LuriaZap com acabamento de smartphone realista */
+/* v6.9 — TraubeZap com acabamento de smartphone realista */
 body.plantao-phone-mode{
   --luria-phone-frame:#07111d;
   --luria-phone-metal:#9ba9b8;
@@ -2380,7 +2380,7 @@ body.plantao-phone-mode .plantao-phone-page-back{
   }
 }
 
-/* v7.0 — No PWA, o LuriaZap vira a própria tela do aparelho */
+/* v7.0 — No PWA, o TraubeZap vira a própria tela do aparelho */
 .pwa-standalone body.plantao-phone-mode{
   min-height:100dvh;
   overflow:hidden;
@@ -2450,7 +2450,7 @@ body.plantao-phone-mode .plantao-phone-page-back{
     max(10px,env(safe-area-inset-left));
 }
 
-/* v7.1 — Caso em andamento destacado no topo do LuriaZap */
+/* v7.1 — Caso em andamento destacado no topo do TraubeZap */
 body[data-page="plantao"] .plantao-phone-resume-card{
   display:grid;
   grid-template-columns:minmax(0,1fr) auto;
@@ -2536,7 +2536,7 @@ body[data-page="plantao"] .plantao-phone-resume-button:focus-visible{
 @media(max-width:680px){.plantao-library-head{align-items:stretch;flex-direction:column}.plantao-random-case{width:100%}}
 
 
-/* LuriaZap v6 — busca, nova conversa e composer estilo mensageiro */
+/* TraubeZap v6 — busca, nova conversa e composer estilo mensageiro */
 .plantao-phone-inbox-head{grid-template-columns:32px minmax(0,1fr) auto}
 .plantao-phone-inbox-actions{display:flex;align-items:center;gap:3px}
 .plantao-phone-inbox-actions button{
@@ -2590,7 +2590,7 @@ body[data-page="plantao"] .plantao-phone-resume-button:focus-visible{
 :root[data-theme="pink"] .plantao-phone-compose-form button{background:#e7357d}
 
 
-/* LuriaZap — legibilidade reforçada */
+/* TraubeZap — legibilidade reforçada */
 body[data-page="plantao"] .plantao-phone-brand-name{
   font-size:20px!important;
   font-weight:800;
@@ -2650,7 +2650,7 @@ body[data-page="plantao"] .plantao-phone-conversation{
 }
 
 
-/* LuriaZap — ação flutuante de nova conversa */
+/* TraubeZap — ação flutuante de nova conversa */
 body[data-page="plantao"] .plantao-phone-inbox-actions #plantao-phone-new-chat{display:none!important}
 body[data-page="plantao"] .plantao-phone-new-chat-fab{
   position:absolute;
@@ -3066,7 +3066,7 @@ html:not(.pwa-standalone) .plantao-pwa-patient-tab{
 }
 
 
-/* LuriaZap · viewport travado, sem rolagem da página */
+/* TraubeZap · viewport travado, sem rolagem da página */
 html:has(body.plantao-phone-mode),
 body.plantao-phone-mode{
   height:100%;
@@ -3134,7 +3134,7 @@ body.plantao-phone-mode #plantao-telefone .plantao-phone-device{
 }
 
 
-/* LuriaZap — cabeçalho da conversa e aulas longas */
+/* TraubeZap — cabeçalho da conversa e aulas longas */
 body[data-page="plantao"] .plantao-phone-contact-copy,
 body[data-page="plantao"] .plantao-phone-chat-head .plantao-phone-contact-copy{
   text-align:left!important;
@@ -3152,7 +3152,7 @@ body[data-page="plantao"] .plantao-phone-bubble span{
 }
 
 
-/* LuriaZap — mini-retratos de contatos */
+/* TraubeZap — mini-retratos de contatos */
 body[data-page="plantao"] .plantao-phone-conversation-avatar,
 body[data-page="plantao"] .plantao-phone-contact-avatar{
   overflow:hidden;
@@ -3273,7 +3273,7 @@ body[data-page="plantao"] .plantao-phone-contact-avatar .plantao-phone-portrait{
 }
 
 
-/* LuriaZap · aparelho sem caixa/sombra retangular externa */
+/* TraubeZap · aparelho sem caixa/sombra retangular externa */
 body.plantao-phone-mode #plantao-telefone .plantao-phone-layout>.plantao-phone-station{
   padding:0!important;
   background:transparent!important;
@@ -3292,7 +3292,7 @@ body.plantao-phone-mode #plantao-telefone .plantao-phone-device{
 }
 
 
-/* LuriaZap — fotos históricas de perfil */
+/* TraubeZap — fotos históricas de perfil */
 body[data-page="plantao"] .plantao-phone-portrait-image{
   display:block;
   width:100%;
@@ -3308,7 +3308,7 @@ body[data-page="plantao"] .plantao-phone-contact-avatar{
 }
 
 
-/* LuriaZap — botão flutuante para futura criação de aulas com IA */
+/* TraubeZap — botão flutuante para futura criação de aulas com IA */
 body[data-page="plantao"] .plantao-phone-inbox{
   position:relative;
 }
@@ -3345,7 +3345,7 @@ body[data-page="plantao"] .plantao-phone-new-chat-fab:focus-visible{
 }
 
 
-/* LuriaZap — barra de status mais legível */
+/* TraubeZap — barra de status mais legível */
 body[data-page="plantao"] .plantao-phone-statusbar{
   font-size:14px!important;
   font-weight:900!important;
@@ -3561,7 +3561,7 @@ html:not(.pwa-standalone) .plantao-patient-sheet-hda p{
   }
 }
 
-/* LuriaZap · busca com filtro por área */
+/* TraubeZap · busca com filtro por área */
 .plantao-phone-search-wrap{
   display:grid;
   grid-template-columns:1fr;
@@ -3609,7 +3609,7 @@ html:not(.pwa-standalone) .plantao-patient-sheet-hda p{
 }
 
 
-/* v9.0 — LuriaZap must never block global navigation */
+/* v9.0 — TraubeZap must never block global navigation */
 body.plantao-phone-mode .sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   z-index:130!important;
 }
@@ -3790,7 +3790,7 @@ body.plantao-phone-mode .sidebar-desktop-toggle{
 }
 
 
-/* LuriaZap — ênfase tipográfica nas conversas */
+/* TraubeZap — ênfase tipográfica nas conversas */
 body[data-page="plantao"] .plantao-phone-bubble strong,
 body[data-page="plantao"] .plantao-phone-bubble b{
   display:inline;
@@ -3806,7 +3806,7 @@ body[data-page="plantao"] .plantao-phone-bubble p b{
 }
 
 
-/* LuriaZap — contraste dark + scrollbar temática */
+/* TraubeZap — contraste dark + scrollbar temática */
 :root[data-theme="dark"] body.plantao-phone-mode #plantao-telefone .plantao-phone-layout>.plantao-phone-station{
   padding:6px!important;
   border:1px solid rgba(255,255,255,.18)!important;
@@ -3898,7 +3898,7 @@ body[data-page="plantao"] .plantao-phone-new-chat-fab{
 }
 
 
-/* v9.8 — moldura do LuriaZap mais próxima de um iPhone real */
+/* v9.8 — moldura do TraubeZap mais próxima de um iPhone real */
 body.plantao-phone-mode .plantao-phone-device{
   position:relative!important;
   border:3px solid #101216!important;
@@ -4171,7 +4171,7 @@ body.theme-dark.plantao-module-entry .plantao-cases-section-head h2,
 .plantao-ref-header .plantao-ref-brand{justify-self:start}
 .plantao-ref-header .plantao-ref-actions{justify-self:end}
 
-/* Linguagem visual nativa da LURIA: container discreto + abas retangulares arredondadas. */
+/* Linguagem visual nativa da TRAUBE: container discreto + abas retangulares arredondadas. */
 .plantao-native-switch-wrap{
   max-width:1420px;
   margin:0 auto;
@@ -4407,7 +4407,7 @@ body.plantao-module-entry:not(.sidebar-hidden) #sidebar.sidebar:where(:not(body[
 }
 
 
-/* === Sala de Emergência · native LURIA shell v9 === */
+/* === Sala de Emergência · native TRAUBE shell v9 === */
 /* Volta a usar a mesma estrutura do restante do site. */
 body.plantao-module-entry .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   display:grid!important;
@@ -5920,7 +5920,7 @@ body.plantao-module-entry .plantao-record-button{
 
 
 /* === Sala de Emergência · themed featured hero v28 === */
-/* Cabeçalho no mesmo padrão das demais páginas do LURIA. */
+/* Cabeçalho no mesmo padrão das demais páginas do TRAUBE. */
 body.plantao-module-entry .plantao-standard-topbar{
   display:flex!important;
   visibility:visible!important;
@@ -7248,7 +7248,7 @@ body.plantao-module-entry .plantao-practice-back-row{margin:2px 0 12px!important
 }
 
 
-/* v48 — ícones SVG no padrão visual do LURIA */
+/* v48 — ícones SVG no padrão visual do TRAUBE */
 body.plantao-module-entry .plantao-today-icon svg{
   display:block;
   width:20px;
@@ -7486,7 +7486,7 @@ html[data-theme="pink"] body.plantao-module-entry .plantao-featured-case{
 }
 
 
-/* Sala de Emergência v52 — revela o pattern global da LURIA como nas demais páginas */
+/* Sala de Emergência v52 — revela o pattern global da TRAUBE como nas demais páginas */
 body.plantao-module-entry{
   background:var(--bg)!important;
 }
@@ -7800,7 +7800,7 @@ body[data-page="plantao"]:has(#plantao-simulator:not([hidden])) .topbar .page-he
  }
 }
 
-/* Sala de Emergência v57 — cabeçalho longitudinal padrão LURIA */
+/* Sala de Emergência v57 — cabeçalho longitudinal padrão TRAUBE */
 @media(min-width:941px){
  body.plantao-module-entry #plantao-library{
    grid-template-columns:minmax(0,1fr) 330px!important;
@@ -8050,7 +8050,7 @@ body[data-page="plantao"]:has(#plantao-simulator:not([hidden])) .topbar .page-he
 }
 
 
-/* LuriaZap v60 — isolamento de módulo + avatar médico/médica consistente. */
+/* TraubeZap v60 — isolamento de módulo + avatar médico/médica consistente. */
 body[data-plantao-entry="phone"] .plantao-hero,
 body[data-plantao-entry="phone"] .plantao-mode-menu,
 body[data-plantao-entry="phone"] #plantao-emergency-panel,

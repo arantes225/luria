@@ -1,7 +1,7 @@
 const SUPABASE_URL = "https://sxdsfklllilhdyuamvvg.supabase.co";
 const SUPABASE_KEY = "sb_publishable_AQ5-Pn1knmBhSFyt5aMtjQ_XQynLJ_L";
 
-const LURIA_AUTH_SESSION_ONLY_KEY = "luria-auth-session-only";
+const TRAUBE_AUTH_SESSION_ONLY_KEY = "luria-auth-session-only";
 
 const luriaAuthStorage = {
   getItem(key) {
@@ -21,7 +21,7 @@ const luriaAuthStorage = {
     let sessionOnly = false;
 
     try {
-      sessionOnly = sessionStorage.getItem(LURIA_AUTH_SESSION_ONLY_KEY) === "1";
+      sessionOnly = sessionStorage.getItem(TRAUBE_AUTH_SESSION_ONLY_KEY) === "1";
     } catch (_) {}
 
     if (sessionOnly) {
@@ -52,20 +52,20 @@ const luriaAuthStorage = {
   }
 };
 
-window.LuriaAuthStorage = {
+window.TraubeAuthStorage = {
   setRememberMe(remember) {
     try {
       if (remember) {
-        sessionStorage.removeItem(LURIA_AUTH_SESSION_ONLY_KEY);
+        sessionStorage.removeItem(TRAUBE_AUTH_SESSION_ONLY_KEY);
       } else {
-        sessionStorage.setItem(LURIA_AUTH_SESSION_ONLY_KEY, "1");
+        sessionStorage.setItem(TRAUBE_AUTH_SESSION_ONLY_KEY, "1");
       }
     } catch (_) {}
   },
 
   isSessionOnly() {
     try {
-      return sessionStorage.getItem(LURIA_AUTH_SESSION_ONLY_KEY) === "1";
+      return sessionStorage.getItem(TRAUBE_AUTH_SESSION_ONLY_KEY) === "1";
     } catch (_) {
       return false;
     }
@@ -113,7 +113,7 @@ window.supabaseClient = window.supabase.createClient(
     },
     remove(base, storage = localStorage) { const k = key(base); if (k) storage.removeItem(k); }
   };
-  window.LuriaLocalOwnerStore = api;
+  window.TraubeLocalOwnerStore = api;
   window.supabaseClient.auth.onAuthStateChange((_event, session) => { authRevision += 1; setOwner(session?.user?.id || null); });
   const initialRevision = authRevision;
   api.ready = window.supabaseClient.auth.getSession().then(({data,error}) => {

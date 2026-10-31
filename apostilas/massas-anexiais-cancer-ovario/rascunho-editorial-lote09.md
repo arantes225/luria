@@ -1,12 +1,12 @@
-# LURIA — Aula 174 | Massas anexiais e câncer de ovário
+# TRAUBE — Aula 174 | Massas anexiais e câncer de ovário
 
 **Área:** Ginecologia e Obstetrícia — Ginecologia, Ultrassonografia, Urgências Ginecológicas e Oncologia  
 **Lote 09 · Tema 174/180 · Versão editorial 15/10/2026**  
-**Status:** material autoral em elaboração, não validado por ginecologista oncológico, sem imagens licenciadas ou integração na interface LURIA.
+**Status:** material autoral em elaboração, não validado por ginecologista oncológico, sem imagens licenciadas ou integração na interface TRAUBE.
 
 **Normas de referência:** Ministério da Saúde/INCA; DDT brasileira Neoplasia Maligna Epitelial de Ovário (Portaria Conjunta SAS/SCTIE/MS nº 1, de 07/01/2019, versão catalogada em 2026); ACR O-RADS US v2022 (publicação explicativa Radiology 2023); consenso ESGO–ESMO–ESP 2024; recomendações de preservação de fertilidade ESGO–ESHRE–ESGE 2024. Fontes internacionais atualizam a discussão técnica sem afirmar disponibilidade automática no SUS.
 
-> **Pulo do Gato LURIA:** Uma massa anexial exige responder **três perguntas em ordem**: há **urgência** (gestação ectópica, torção, hemorragia, abscesso)? Há **risco de malignidade** (morfologia, idade, fatores genéticos, ascite, componentes sólidos)? Qual conduta oferece o melhor equilíbrio entre **segurança oncológica e preservação de função/fertilidade**? O **CA-125 não faz diagnóstico de câncer sozinho** e ultrassom Doppler com fluxo preservado **não exclui torção**.
+> **Pulo do Gato TRAUBE:** Uma massa anexial exige responder **três perguntas em ordem**: há **urgência** (gestação ectópica, torção, hemorragia, abscesso)? Há **risco de malignidade** (morfologia, idade, fatores genéticos, ascite, componentes sólidos)? Qual conduta oferece o melhor equilíbrio entre **segurança oncológica e preservação de função/fertilidade**? O **CA-125 não faz diagnóstico de câncer sozinho** e ultrassom Doppler com fluxo preservado **não exclui torção**.
 
 ## 1. Objetivos de aprendizagem
 
@@ -420,7 +420,7 @@ Em doença avançada, ascite sintomática, obstrução intestinal maligna, dor, 
 
 **Comunicação:** explicar diferença entre “massa complexa com suspeita de malignidade” e “câncer confirmado”; discutir procedimentos diagnósticos e tempo, opções de terapia e incertezas. Não prometer que retirar ambos os ovários é inevitável antes de conhecer histologia, nem prometer preservação de fertilidade se não houver segurança.
 
-## 23. Algoritmos de conduta LURIA
+## 23. Algoritmos de conduta TRAUBE
 
 ### Fluxo A — Dor pélvica aguda + massa anexial
 Sinais vitais, perfusão, analgesia e avaliação de gestação → **instabilidade/peritonismo?** reanimação + cirurgia → **β-hCG positivo?** avaliar ectópica e estabilidade → **dor súbita unilateral/vômitos?** torção até excluir, Doppler não afasta → **febre/corrimento e massa inflamatória?** ATO, antibiótico + avaliar drenagem → **cisto hemorrágico estável?** observação/retorno conforme gravidade → reavaliar.
@@ -1281,7 +1281,7 @@ As imagens são **candidatas a aprovação**, não arquivos já obtidos ou incor
 3. Converter exames para **WebP** sem apagar estrutura importante; garantir opções de ampliação em tela pequena. Imagens de ECG/exame seguem teto técnico de mídia estabelecido no produto, priorizando legibilidade quando houver conflito.
 4. Registrar alt text (ex.: “US transvaginal de ovário esquerdo com cisto unilocular anecoico sem septos”), fonte, autor, licença, revisor, data e eventual número de edição O-RADS.
 5. Imagens reais de pacientes só entram com desidentificação adequada, direitos de publicação e documentação editorial; fotos íntimas não são necessárias para esta aula.
-6. Fila de aprovação da LURIA antes do commit do arquivo WebP; uma proposta de figura não é sinônimo de imagem aprovada.
+6. Fila de aprovação da TRAUBE antes do commit do arquivo WebP; uma proposta de figura não é sinônimo de imagem aprovada.
 7. O papel de cada figura deve ser preciso: explicar diagnóstico diferencial, mostrar exame ou alterar decisão. Não inserir foto decorativa genérica.
 8. Nos fluxos FIGO/O-RADS, indicar versão/ano e atualizar quando houver revisão normativa.
 
@@ -1314,7 +1314,7 @@ As imagens são **candidatas a aprovação**, não arquivos já obtidos ou incor
 - [ ] Conferir números de FIGO e atualização de biomarcadores/manutenção por subtipo e linha de tratamento.
 - [ ] Revisar dose, elegibilidade e disponibilidade de platina/taxano, bevacizumabe e PARP no SUS/serviço.
 - [ ] Obter licenças de exames reais e produzir diagramas, comprimir WebP, inserir legenda e alt text.
-- [ ] Converter Markdown para HTML/content.json nativo LURIA e indexar módulo no cronograma/site.
+- [ ] Converter Markdown para HTML/content.json nativo TRAUBE e indexar módulo no cronograma/site.
 - [ ] Realizar auditoria visual, responsividade PWA, links, navegação e acessibilidade.
 - [ ] Aprovação final médica/editorial e registro de versão; material atual não deve ser tratado como diretriz assistencial publicada.
 

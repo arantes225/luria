@@ -2,11 +2,11 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-M25Uw1Oid6o91B9TQoEUHtTRfUJ1wUdwsdYFYWkQ1MY=' https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-eLIEx6tIuRkwRjryaXtAbfL+AYuoCAIJbeYrrBlPPP0=' https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Passômetro · LURIA</title>
+  <title>Passômetro · TRAUBE</title>
   <meta name="theme-color" content="#184888">
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
@@ -203,7 +203,7 @@
       .pm-dialog-actions button{min-height:44px}
     }
 
-    /* Passômetro v2 — biblioteca no padrão LURIA / Modo Estudos */
+    /* Passômetro v2 — biblioteca no padrão TRAUBE / Modo Estudos */
     .pm-page{max-width:1180px!important;gap:20px!important}
     .pm-list{display:grid;gap:14px}
     .pm-home-head{align-items:center!important;padding:0 2px}
@@ -513,7 +513,7 @@
       padding-top:8px!important;
     }
 
-    /* Modais/formulários: superfícies e controles iguais ao restante da LURIA */
+    /* Modais/formulários: superfícies e controles iguais ao restante da TRAUBE */
     .pm-dialog{
       border-radius:16px!important;
       box-shadow:var(--shadow)!important;
@@ -585,7 +585,7 @@
       background:var(--accent)!important;
     }
 
-    /* Um pouco mais de profundidade sem fugir do padrão LURIA */
+    /* Um pouco mais de profundidade sem fugir do padrão TRAUBE */
     .pm-overview-card{
       border-color:color-mix(in srgb,var(--border) 88%,var(--accent) 12%)!important;
       background:
@@ -1525,33 +1525,33 @@
 
     function localDecks(){
       try{
-        const key=window.LuriaLocalOwnerStore.key(STORAGE_KEY,state.userId);
+        const key=window.TraubeLocalOwnerStore.key(STORAGE_KEY,state.userId);
         const parsed=JSON.parse((key?localStorage.getItem(key):null)||"[]");
         return Array.isArray(parsed)?parsed:[];
       }catch{return [];}
     }
     function persistLocal(){
-      const key=window.LuriaLocalOwnerStore.key(STORAGE_KEY,state.userId);
+      const key=window.TraubeLocalOwnerStore.key(STORAGE_KEY,state.userId);
       if(key) localStorage.setItem(key,JSON.stringify(state.decks));
     }
     function syncMeta(owner=state.userId){
       try{
-        const key=window.LuriaLocalOwnerStore.key(STORAGE_KEY+":sync",owner);
+        const key=window.TraubeLocalOwnerStore.key(STORAGE_KEY+":sync",owner);
         const value=JSON.parse((key?localStorage.getItem(key):null)||"{}");
         return {dirty:value.dirty||{},deleted:value.deleted||{},known:value.known||{}};
       }catch{return {dirty:{},deleted:{},known:{}};}
     }
     function persistSyncMeta(meta,owner=state.userId){
-      const key=window.LuriaLocalOwnerStore.key(STORAGE_KEY+":sync",owner);
+      const key=window.TraubeLocalOwnerStore.key(STORAGE_KEY+":sync",owner);
       if(key)localStorage.setItem(key,JSON.stringify(meta));
     }
     function serializeDeck(id,owner,operation){
-      const epoch=window.LuriaLocalOwnerStore.epoch;
+      const epoch=window.TraubeLocalOwnerStore.epoch;
       state.syncWrites ||= new Map();
       const key=owner+":"+id;
       const previous=state.syncWrites.get(key)||Promise.resolve();
       const pending=previous.catch(()=>{}).then(async()=>{
-        if(window.LuriaLocalOwnerStore.ownerId!==owner||window.LuriaLocalOwnerStore.epoch!==epoch)return false;
+        if(window.TraubeLocalOwnerStore.ownerId!==owner||window.TraubeLocalOwnerStore.epoch!==epoch)return false;
         return operation();
       });
       state.syncWrites.set(key,pending);
@@ -1570,8 +1570,8 @@
       return Number(deck?.updatedAt||deck?.createdAt||0);
     }
     async function currentUserId({refresh=false}={}){
-      await window.LuriaLocalOwnerStore.ready;
-      return window.LuriaLocalOwnerStore.ownerId;
+      await window.TraubeLocalOwnerStore.ready;
+      return window.TraubeLocalOwnerStore.ownerId;
     }
     async function upsertDeck(deck,expectedUserId=state.userId){
       const userId=await currentUserId();
@@ -1615,13 +1615,13 @@
     async function refreshFromCloud({migrateLocal=false}={}){
       const userId=await currentUserId({refresh:true});
       if(!userId||state.userId!==userId) return false;
-      const epoch=window.LuriaLocalOwnerStore.epoch;
+      const epoch=window.TraubeLocalOwnerStore.epoch;
       const {data,error}=await window.supabaseClient
         .from(SYNC_TABLE)
         .select("deck_id,payload,updated_at")
         .eq("user_id",userId);
       if(error) throw error;
-      if(window.LuriaLocalOwnerStore.ownerId!==userId||window.LuriaLocalOwnerStore.epoch!==epoch) return false;
+      if(window.TraubeLocalOwnerStore.ownerId!==userId||window.TraubeLocalOwnerStore.epoch!==epoch) return false;
 
       const remote=(data||[]).map(row=>{
         const d=(row.payload&&typeof row.payload==="object")?row.payload:{};
@@ -1660,7 +1660,7 @@
           }
         }
       }
-      if(window.LuriaLocalOwnerStore.ownerId===userId){
+      if(window.TraubeLocalOwnerStore.ownerId===userId){
         const latest=syncMeta(userId);
         for(const d of remote){latest.known[d.id]=true;}
         persistSyncMeta(latest,userId);
@@ -1677,8 +1677,8 @@
       }
     }
     async function load(){
-      await window.LuriaLocalOwnerStore.ready;
-      state.userId=window.LuriaLocalOwnerStore.ownerId;
+      await window.TraubeLocalOwnerStore.ready;
+      state.userId=window.TraubeLocalOwnerStore.ownerId;
       state.decks=pruneExpired(localDecks());
       persistLocal();
       renderDecks();
@@ -1821,7 +1821,7 @@
       const critical=pts.filter(p=>p.priority==="red").length;
       const stage=$("#pm-export-stage");
       stage.innerHTML='<section class="pm-export-sheet">'+
-        '<div class="pm-export-head"><h1>Passômetro · LURIA</h1><p>'+esc(deck.hospital)+' · '+esc(fmtDate(deck.date))+' · '+esc([deck.sector,deck.shift].filter(Boolean).join(" · ")||"Setor não informado")+'</p></div>'+
+        '<div class="pm-export-head"><h1>Passômetro · TRAUBE</h1><p>'+esc(deck.hospital)+' · '+esc(fmtDate(deck.date))+' · '+esc([deck.sector,deck.shift].filter(Boolean).join(" · ")||"Setor não informado")+'</p></div>'+
         '<div class="pm-export-summary"><div><span>Pacientes</span><b>'+pts.length+'</b></div><div><span>Pendências</span><b>'+pending+'</b></div><div><span>Antibiótico</span><b>'+atb+'</b></div><div><span>Críticos</span><b>'+critical+'</b></div></div>'+
         pts.map(p=>{
           const diet=p.diet==="Outra"?(p.dietOther||"Outra"):p.diet;
@@ -1860,7 +1860,7 @@
             '<div class="pm-export-observation"><b>OBS:</b> '+esc(displayValue(p.viewObservation,""))+'</div>'+
           '</article>';
         }).join("")+
-        '<div class="pm-export-foot">Documento gerado pelo Passômetro LURIA. Pode conter dados clínicos sensíveis. Confirme o destinatário e siga as regras de privacidade e segurança da sua instituição.</div>'+
+        '<div class="pm-export-foot">Documento gerado pelo Passômetro TRAUBE. Pode conter dados clínicos sensíveis. Confirme o destinatário e siga as regras de privacidade e segurança da sua instituição.</div>'+
       '</section>';
       return stage.querySelector(".pm-export-sheet");
     }
@@ -2220,7 +2220,7 @@
       clearTimeout(state.syncTimer);
       for(const timer of state.syncTimers?.values()||[])clearTimeout(timer);
       state.syncTimers?.clear();
-      state.userId=window.LuriaLocalOwnerStore.ownerId;
+      state.userId=window.TraubeLocalOwnerStore.ownerId;
       state.activeDeckId=null;
       state.editingDeckId=null;
       state.editingPatientId=null;

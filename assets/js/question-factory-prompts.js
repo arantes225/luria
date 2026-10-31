@@ -6,7 +6,7 @@
   const rubric = { scientific:25, answer_key:20, answer_source:15, distractors:10, explanations:10, style:10, writing:5, difficulty:5 };
   const editable = ['enunciado','alternativa_a','alternativa_b','alternativa_c','alternativa_d','gabarito','explicacao_a','explicacao_b','explicacao_c','explicacao_d','mensagem_chave','area','tema','subtema','dificuldade','fonte_instituicao','fonte_documento','fonte_ano','fonte_url','answer_source_institution','answer_source_document','answer_source_year','answer_source_url','answer_source_section','answer_source_note'];
   const stringify = value => JSON.stringify(value, null, 2);
-  const rules = `CONTRATO LURIA ${VERSION}
+  const rules = `CONTRATO TRAUBE ${VERSION}
 Exatamente quatro alternativas A-D em TODAS as bancas; nunca penalizar essa adaptação.
 Uma única melhor resposta; dados suficientes; contexto coerente; conteúdo autoral.
 PULO DO GATO OBRIGATÓRIO: toda questão deve conter mensagem_chave preenchida como o “Pulo do Gato” — UMA frase curta, específica e memorável que, se o aluno tivesse acabado de ouvir antes da prova, seria suficiente para levá-lo à resposta correta daquela questão. Não escrever resumo genérico, definição ampla, repetição do gabarito ou conselho vago; capturar exatamente o discriminador decisivo do item.
@@ -130,9 +130,9 @@ Somente perfis ainda não aprovados devem registrar edição, URL oficial, IDs/p
     const isIndependentChatGPTStage = ['blind_resolution','perplexity_initial','perplexity_reaudit','lot_perplexity_final'].includes(stage);
     const workspace = ctx.prompt_workspace_url || ctx.workspace_url || 'https://www.resibulando.online/admin/';
     const source = ctx.prompt_source_instruction || (blockCode
-      ? `Entre no Admin da LURIA → Fábrica de questões → lote ${batchCode} → bloco ${blockCode}. Leia somente as questões e versões atuais necessárias à etapa. Em revisão independente, ignore memória e qualquer parecer/conclusão anterior.`
+      ? `Entre no Admin da TRAUBE → Fábrica de questões → lote ${batchCode} → bloco ${blockCode}. Leia somente as questões e versões atuais necessárias à etapa. Em revisão independente, ignore memória e qualquer parecer/conclusão anterior.`
       : batchCode
-        ? `Entre no Admin da LURIA → Fábrica de questões → lote ${batchCode}. Trabalhe exclusivamente nesse lote e nas versões atuais.`
+        ? `Entre no Admin da TRAUBE → Fábrica de questões → lote ${batchCode}. Trabalhe exclusivamente nesse lote e nas versões atuais.`
         : 'Prompt-modelo sem lote/bloco vinculado: não executar nem persistir até receber endereço operacional concreto.');
     const destination = ctx.prompt_return_instruction || (blockCode
       ? `Grave o resultado exclusivamente no lote ${batchCode}, bloco ${blockCode}, na etapa indicada, usando apenas o importador/RPC controlado da Fábrica.`
@@ -371,7 +371,7 @@ Executar a resolução cega das questões ATUAIS do bloco operacional indicado a
 
 MODO OPERACIONAL OBRIGATÓRIO
 1. Entre no workspace/site informado em ENDEREÇO OPERACIONAL.
-2. Abra o Admin da LURIA → Fábrica de questões.
+2. Abra o Admin da TRAUBE → Fábrica de questões.
 3. Localize EXATAMENTE:
    - lote: ${ctx.batch_code || (ctx.batch_number == null ? 'NÃO VINCULADO' : 'L'+String(Number(ctx.batch_number)).padStart(3,'0'))}
    - bloco: ${ctx.block_code || ((ctx.batch_code || (ctx.batch_number == null ? null : 'L'+String(Number(ctx.batch_number)).padStart(3,'0'))) && ctx.block_number != null ? (ctx.batch_code || 'L'+String(Number(ctx.batch_number)).padStart(3,'0'))+'-B'+String(Number(ctx.block_number)).padStart(2,'0') : 'NÃO VINCULADO')}
@@ -495,7 +495,7 @@ REGRA MÁXIMA — REVISÃO CEGA:
 - Trate cada versão atual como se estivesse vendo-a pela primeira vez.
 - A memória do modelo NÃO é fonte.
 - Não tente confirmar nem contradizer deliberadamente o parecer anterior.
-- Use somente a versão atual consultada nesta execução, o Contrato LURIA e fontes verificáveis abertas nesta execução.
+- Use somente a versão atual consultada nesta execução, o Contrato TRAUBE e fontes verificáveis abertas nesta execução.
 
 ENDEREÇO:
 - Lote: ${batchCode || 'NÃO VINCULADO'}
@@ -562,5 +562,5 @@ REGRA DE SAÍDA:
   const globalContract=()=>rules;
   const api={VERSION,rubric,editable,generation,segment,perplexityCycle,independentReviewCycle,chatgptCorrectionCycle,blind,globalContract};
   if(typeof module!=='undefined'&&module.exports)module.exports=api;
-  root.LuriaQuestionPrompts=api;
+  root.TraubeQuestionPrompts=api;
 })(typeof window!=='undefined'?window:globalThis);

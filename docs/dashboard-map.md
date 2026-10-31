@@ -1,4 +1,4 @@
-# Mapa oficial do Dashboard — LURIA
+# Mapa oficial do Dashboard — TRAUBE
 
 Este arquivo existe para evitar confusão entre os arquivos que participam do Dashboard.
 
@@ -82,7 +82,7 @@ Responsável por:
 ## Arquivos compartilhados que afetam o Dashboard
 
 ### 5. `assets/js/app.js`
-**Função:** shell global do LURIA.
+**Função:** shell global do TRAUBE.
 
 Afeta o Dashboard em:
 - autenticação;

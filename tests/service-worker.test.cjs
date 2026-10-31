@@ -202,7 +202,7 @@ test('apostila navigation fetches the existing index route but preserves the com
 
 test('weekly prefetch accepts only same-origin client/public JSON URLs and omits cookies', async () => {
   const f = workerFixture({ fetch: async req => resource(req, '{}') });
-  const data = { type: 'LURIA_PREFETCH_WEEKLY_CONTENT', urls: ['/content/weekly/2026-W40/questions-g1-v1.json',
+  const data = { type: 'TRAUBE_PREFETCH_WEEKLY_CONTENT', urls: ['/content/weekly/2026-W40/questions-g1-v1.json',
     '/content/weekly/private.json?token=secret', 'https://evil.org/content/weekly/a.json', '/admin/', '/content/weekly/a.js'] };
   await f.dispatch('message', { data, source: { url: 'https://evil.org/' } }).done();
   assert.equal(f.calls.length, 0);

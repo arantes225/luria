@@ -38,7 +38,7 @@ function book(){
 test("Gerador de lote cria apostila extensa com navegação, referências e estilos compartilhados",()=>{
   const output=buildBook(template,book());
   assert.ok(output.characters>=60000);
-  assert.ok(output.html.includes('<title>Tema de teste · LURIA</title>'));
+  assert.ok(output.html.includes('<title>Tema de teste · TRAUBE</title>'));
   assert.ok(output.html.includes('href="/apostilas/tema-de-teste/"'));
   assert.ok(output.html.includes('href="#capitulo-7"'));
   assert.ok(output.html.includes("apostila-luria-book.css"));
@@ -213,7 +213,7 @@ test("Imagens sem licenca nao aparecem e exames reais licenciados substituem som
   assert.ok(!tools.includes("Fluxograma em português de manejo da rotura prematura de membranas ovulares"));
   const clim=JSON.parse(read("apostilas/climaterio-menopausa/content.json"));
   const fs=clim.q.find(x=>x[0]==="fisiopatologia");
-  assert.ok(fs?.[2]?.some(x=>x[0]==="x"&&x[1].includes("Fluxo fisiopatológico autoral LURIA")));
+  assert.ok(fs?.[2]?.some(x=>x[0]==="x"&&x[1].includes("Fluxo fisiopatológico autoral TRAUBE")));
 });
 
 test("Vitalidade fetal preserva exame real licenciado e raciocinio clinico contextualizado",()=>{
@@ -543,8 +543,8 @@ test("Sexualidade feminina e masculina sao apostilas independentes e pesquisavei
   const female=read("apostilas/sexualidade/index.html");
   const male=read("apostilas/sexualidade-masculina/index.html");
   const library=read("apostilas/index.html");
-  assert.match(female,/<title>Sexualidade Feminina · LURIA<\/title>/);
-  assert.match(male,/<title>Sexualidade Masculina · LURIA<\/title>/);
+  assert.match(female,/<title>Sexualidade Feminina · TRAUBE<\/title>/);
+  assert.match(male,/<title>Sexualidade Masculina · TRAUBE<\/title>/);
   assert.doesNotMatch(female,/id="medicina-sexual-masculina-2026"/,
     "A apostila feminina não deve embutir o conteúdo masculino");
   assert.match(female,/href="\/apostilas\/sexualidade-masculina\/"/);

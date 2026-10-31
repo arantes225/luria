@@ -140,7 +140,7 @@
   function clearPhoneDraft(){
     const key=phoneDraftKey();
     if(!key) return;
-    try{localStorage.removeItem(key);}catch(error){console.warn("LuriaZap: não foi possível limpar o rascunho local.",error);}
+    try{localStorage.removeItem(key);}catch(error){console.warn("TraubeZap: não foi possível limpar o rascunho local.",error);}
   }
 
   function persistPhoneDraft(){
@@ -161,7 +161,7 @@
         expiresAt:now+PHONE_DRAFT_TTL_MS
       }));
     }catch(error){
-      console.warn("LuriaZap: não foi possível salvar o progresso local.",error);
+      console.warn("TraubeZap: não foi possível salvar o progresso local.",error);
     }
   }
 
@@ -322,7 +322,7 @@
       return;
     }
     state.cases=Array.isArray(casesRes.data)?casesRes.data:[];
-    if(window.LuriaRoomEmbed?.kind==="simulator"&&window.LuriaRoomEmbed.caseId)state.cases=state.cases.filter(item=>String(item.id)===window.LuriaRoomEmbed.caseId);
+    if(window.TraubeRoomEmbed?.kind==="simulator"&&window.TraubeRoomEmbed.caseId)state.cases=state.cases.filter(item=>String(item.id)===window.TraubeRoomEmbed.caseId);
 
     const sessionsRes = await sb.from("clinical_case_sessions")
       .select("id,case_id,status,started_at,completed_at,score,result,attempt_count")
@@ -340,10 +340,10 @@
       .limit(1)
       .maybeSingle();
     state.activeSession = activeSessionRes.error ? null : (activeSessionRes.data || null);
-    if(window.LuriaRoomEmbed?.kind==="simulator" && state.activeSession && (state.activeSession.case_id!==window.LuriaRoomEmbed.caseId || new Date(state.activeSession.started_at)<new Date(window.LuriaRoomEmbed.activityCreatedAt)))state.activeSession=null;
+    if(window.TraubeRoomEmbed?.kind==="simulator" && state.activeSession && (state.activeSession.case_id!==window.TraubeRoomEmbed.caseId || new Date(state.activeSession.started_at)<new Date(window.TraubeRoomEmbed.activityCreatedAt)))state.activeSession=null;
 
     const resumeCard=$("plantao-resume-card");
-    if(resumeCard && state.activeSession?.case_id && (!window.LuriaRoomEmbed?.caseId || state.activeSession.case_id===window.LuriaRoomEmbed.caseId)){
+    if(resumeCard && state.activeSession?.case_id && (!window.TraubeRoomEmbed?.caseId || state.activeSession.case_id===window.TraubeRoomEmbed.caseId)){
       const resumeCase=state.cases.find(item=>String(item.id)===String(state.activeSession.case_id));
       const resumeTitle=$("plantao-resume-title");
       const resumeMeta=$("plantao-resume-meta");
@@ -992,7 +992,7 @@
     $("plantao-phone-inbox").hidden=true;
     $("plantao-phone-station").hidden=false;
     $("plantao-phone-requester").textContent="Nova conversa";
-    $("plantao-phone-context").textContent="Luria IA";
+    $("plantao-phone-context").textContent="Traube IA";
     const body=$("plantao-phone-chat-body");
     if(body){
       body.innerHTML='<div class="plantao-phone-new-chat-empty"><strong>Nova conversa</strong><span>Digite uma mensagem para deixar esta tela pronta para a integração com IA.</span></div>';
@@ -1017,7 +1017,7 @@
       .select("*").single();
     if(error){console.error("Telefone: não foi possível iniciar a sessão",error);return;}
     state.phoneSession=session;
-    window.LuriaStudyTimer?.start("luria_zap", { sourceId: session.id, materia: item.title || item.specialty || "Luria Zap" });
+    window.TraubeStudyTimer?.start("luria_zap", { sourceId: session.id, materia: item.title || item.specialty || "Traube Zap" });
     savePlantaoView({mode:"phone",section:"phone",phoneCaseId:item.id,clinicalSessionId:null,clinicalCaseId:null});
     const firstLessonStep=lessonMode ? item.ai_context.lesson_flow[0] : null;
     const openingText=[
@@ -4640,7 +4640,7 @@
     state.busy=false;
     state.session=data;
     window.dispatchEvent(new CustomEvent("luria:clinical-session",{detail:{id:data.id,case_id:data.case_id,status:data.status}}));
-    window.LuriaStudyTimer?.start("plantao", { sourceId: data.id, materia: item.presentation?.chief_complaint || item.title || "Plantão" });
+    window.TraubeStudyTimer?.start("plantao", { sourceId: data.id, materia: item.presentation?.chief_complaint || item.title || "Plantão" });
     savePlantaoView({
       mode:"emergency",
       section:"plantao-simulator",

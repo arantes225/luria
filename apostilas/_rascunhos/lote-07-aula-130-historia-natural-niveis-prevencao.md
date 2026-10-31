@@ -1,14 +1,14 @@
-# LURIA — LOTE 07 | AULA 130
+# TRAUBE — LOTE 07 | AULA 130
 # História natural da doença e níveis de prevenção — da exposição ao cuidado longitudinal
 
 **Área:** Medicina Preventiva / Saúde Coletiva / Atenção Primária  
 **Situação:** RASCUNHO ORIGINAL EM REVISÃO, NÃO PUBLICADO.  
-**Data:** 14/10/2026. Fonte curricular: cronograma LURIA, aula 130.  
+**Data:** 14/10/2026. Fonte curricular: cronograma TRAUBE, aula 130.  
 **Recorte editorial:** esta aula explica **história natural da doença, períodos pré-patogênico/patogênico, níveis de prevenção, doença versus experiência de adoecimento e organização de cuidado longitudinal**. A aula **125** já detalha rastreamento, acurácia, sobrediagnóstico e prevenção quaternária — não duplicar aqui o tratado desses temas. A aula 85/90/95/100 do cronograma cobrirá medidas epidemiológicas e desempenho dos testes em profundidade.
 
 ## 0. Etapa zero — inventário e comparação
 
-Não foi identificado diretório específico “história natural da doença” no inventário principal das apostilas LURIA examinado em 14/10/2026. Existe, entretanto, rascunho da **aula 125** sobre rastreamento/prevenção quaternária, cuja abrangência foi revista para distinguir escopos: a presente aula trata da **posição temporal da intervenção em relação à doença** e da relação com organização da APS; a 125 detalha **benefício-dano dos testes preventivos** e seus vieses.
+Não foi identificado diretório específico “história natural da doença” no inventário principal das apostilas TRAUBE examinado em 14/10/2026. Existe, entretanto, rascunho da **aula 125** sobre rastreamento/prevenção quaternária, cuja abrangência foi revista para distinguir escopos: a presente aula trata da **posição temporal da intervenção em relação à doença** e da relação com organização da APS; a 125 detalha **benefício-dano dos testes preventivos** e seus vieses.
 
 **Drive pesquisado:** “história natural”, “níveis de prevenção”, “medicina preventiva”, “prevenção primária”. Não foi localizado livro integral desse tema. Foram abertos e lidos:
 - “SUS.pdf”, aprox. 2,7 mil caracteres, com princípios de universalidade, integralidade e equidade, organização assistencial e participação social;
@@ -310,7 +310,7 @@ D. Prevenção primordial por evitar exposição social inicial.
 11. Diagrama de uma linha de cuidado integrada no SUS.
 12. Cartão de raciocínio autoral “qual é a doença-alvo da intervenção?”.
 
-A LURIA pode produzir esquemas originais internamente. Imagens clínicas reais deverão passar por fonte, licença de uso comercial, créditos, eventual consentimento, tamanho WebP, qualidade e aprovação Admin. Nenhuma imagem do Drive foi copiada.
+A TRAUBE pode produzir esquemas originais internamente. Imagens clínicas reais deverão passar por fonte, licença de uso comercial, créditos, eventual consentimento, tamanho WebP, qualidade e aprovação Admin. Nenhuma imagem do Drive foi copiada.
 
 ## 17. Referências
 - Leavell HR, Clark EG. *Preventive Medicine for the Doctor in His Community: An Epidemiologic Approach.* Obra histórica que fundamenta modelo de níveis de prevenção; conferir edição exata na bibliografia definitiva.
@@ -318,7 +318,7 @@ A LURIA pode produzir esquemas originais internamente. Imagens clínicas reais d
 - WONCA — conceito histórico de prevenção quaternária, discutido criticamente na revisão acima.
 - Ministério da Saúde. Portal de PCDT e políticas de atenção integral do SUS. https://www.gov.br/saude/pt-br/assuntos/pcdt
 - USPSTF. **Grade Definitions** — avaliação de benefício líquido como exemplo metodológico, não substitui diretrizes brasileiras. https://www.uspreventiveservicestaskforce.org/uspstf/about-uspstf/methods-and-processes/grade-definitions/
-- LURIA. Aula 125, *Rastreamento e prevenção quaternária* — material interno autoral correlato; sem repetição de procedimentos ou calendários.
+- TRAUBE. Aula 125, *Rastreamento e prevenção quaternária* — material interno autoral correlato; sem repetição de procedimentos ou calendários.
 
 ## 18. Pendências de qualidade para aprovação
 - [x] Modelo histórico, determinantes sociais, fases naturais, prevenção primordial/primária/secundária/terciária/quaternária.

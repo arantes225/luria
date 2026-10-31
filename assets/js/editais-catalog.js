@@ -204,7 +204,7 @@
           console.error(error);
           button.disabled = false;
           button.textContent = original;
-          window.LuriaDialog?.alert?.("Não foi possível adicionar este edital às suas provas.");
+          window.TraubeDialog?.alert?.("Não foi possível adicionar este edital às suas provas.");
         }
       });
     });
@@ -278,7 +278,7 @@
     return loadingPromise;
   }
 
-  window.loadLuriaExamCatalog = loadCatalog;
+  window.loadTraubeExamCatalog = loadCatalog;
 
   $("catalog-search")?.addEventListener("input", renderCatalog);
   $("catalog-uf")?.addEventListener("change", renderCatalog);

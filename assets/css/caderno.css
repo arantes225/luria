@@ -3169,7 +3169,7 @@
 }
 
 
-/* CADERNO v18.4 — linha decorativa com símbolo LURIA */
+/* CADERNO v18.4 — linha decorativa com símbolo TRAUBE */
 .notebook-editor .notebook-divider.arabesque {
   color: transparent !important;
 }
@@ -3316,7 +3316,7 @@
 }
 .notebook-paper.paper-luria::after,
 .note-page.paper-luria::after{
-  content:"LURIA  •  LURIA  •  LURIA";display:block;text-align:center;color:color-mix(in srgb,var(--accent) 38%,transparent);letter-spacing:.22em;font-size:9px;margin:28px 0
+  content:"TRAUBE  •  TRAUBE  •  TRAUBE";display:block;text-align:center;color:color-mix(in srgb,var(--accent) 38%,transparent);letter-spacing:.22em;font-size:9px;margin:28px 0
 }
 .notebook-paper,
 .note-page{position:relative}
@@ -3994,7 +3994,7 @@ body[data-page="caderno"] #notebook-inspector-edit > span{
 }
 
 
-/* LURIA — compactação final dos menus do editor */
+/* TRAUBE — compactação final dos menus do editor */
 body[data-page="caderno"] .notebook-tool-menu button,
 body[data-page="caderno"] .note-more-menu > button,
 body[data-page="caderno"] .note-more-menu > .notebook-tool-menu-wrap > button {
@@ -4117,7 +4117,7 @@ body[data-page="caderno"] #notebook-more-menu .notebook-emoji-menu button {
 }
 
 
-/* LURIA — Editar/Salvar das ações rápidas */
+/* TRAUBE — Editar/Salvar das ações rápidas */
 body[data-page="caderno"] .note-actions-card #notebook-inspector-edit{
   width:100%!important;
   min-width:0!important;
@@ -4188,7 +4188,7 @@ body[data-page="caderno"] .note-actions-card #notebook-inspector-edit.is-saving-
 .notebook-book-menu-popover button.danger{color:#b42318}
 
 
-/* LURIA — fontes de Anotações / Notion */
+/* TRAUBE — fontes de Anotações / Notion */
 body[data-page="caderno"] .notebook-source-switch{
   display:inline-flex;
   align-items:center;
@@ -4320,7 +4320,7 @@ body[data-page="caderno"] .notebook-notion-card-actions button:hover{background:
 }
 
 
-/* LURIA — leitor nativo para páginas do Notion */
+/* TRAUBE — leitor nativo para páginas do Notion */
 body[data-page="caderno"] .notebook-notion-connect-actions{
   display:flex;
   align-items:center;
@@ -4446,7 +4446,7 @@ body[data-page="caderno"] .notebook-notion-reader.is-editing .notebook-notion-re
 }
 
 
-/* LURIA — correção final do botão Salvar em Ações rápidas */
+/* TRAUBE — correção final do botão Salvar em Ações rápidas */
 body[data-page="caderno"] .note-actions-card #notebook-inspector-edit,
 body[data-page="caderno"] .note-actions-card #notebook-inspector-edit.is-saving-toggle{
   width:100%!important;

@@ -216,7 +216,7 @@ Verificações executadas:
 - PDF.js/worker extraiu texto do PDF sintético em Cronograma e Questões;
   OCR real eng+por/worker/WASM passou em Caderno de Erros e Questões.
   O upload de imagem pelo formulário de Caderno de Erros extraiu
-  `LURIA CSP TEST 123`. Formulários de criação dos dois módulos abriram.
+  `TRAUBE CSP TEST 123`. Formulários de criação dos dois módulos abriram.
 - Cronograma: navegação entre meses e formulário manual com confirmação
   de adição no backend simulado; listener da base verificado por callback spy.
 - Flashcards: SQLite/WASM e jsPDF passaram; revisão abriu e exibiu a resposta.

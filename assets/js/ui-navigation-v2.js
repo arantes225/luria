@@ -140,7 +140,7 @@
     }
     const legacyThemes = document.querySelector('.theme-options');
     if (!work && legacyThemes && !legacyThemes.previousElementSibling?.classList.contains("ui-profile-themes")) legacyThemes.before(themes());
-    window.LuriaUITheme?.refresh();
+    window.TraubeUITheme?.refresh();
   }
   function enhanceStreak(sidebar, center) {
     if (work || body.dataset.uiAdmin === "v2" || !center) return;
@@ -149,7 +149,7 @@
       indicator = document.createElement("span"); indicator.id = "ui-topbar-streak";
       indicator.className = "ui-topbar-streak";
       indicator.innerHTML = flame + '<span class="ui-topbar-streak-value" data-streak-value>—</span><span class="ui-topbar-streak-unit">dias</span>';
-      indicator.title = "Sua sequência de dias no Luria"; center.prepend(indicator);
+      indicator.title = "Sua sequência de dias no Traube"; center.prepend(indicator);
     }
     const source = sidebar?.querySelector("[data-sidebar-streak-card] [data-streak-value]");
     const count = window.luriaCurrentStreak;
@@ -243,7 +243,7 @@
     if (!workHub || !bar) return;
     const brand = bar.querySelector(".ui-topbar-brand");
     set(brand, "href", "/trabalho/");
-    set(brand, "aria-label", "LURIA — Central do Trabalho");
+    set(brand, "aria-label", "TRAUBE — Central do Trabalho");
     let links = bar.querySelector(".work-hub-navigation");
     if (!links) {
       links = document.createElement("nav");

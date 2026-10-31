@@ -1,4 +1,4 @@
-/* LURIA · Mulher idosa V16 aprovada: mesma paciente, olhos em canvas e tórax localizado.
+/* TRAUBE · Mulher idosa V16 aprovada: mesma paciente, olhos em canvas e tórax localizado.
    Carregamento sob demanda pelo loader; fontes extraídas do HTML V16 aprovado. */
 (()=>{
 "use strict";

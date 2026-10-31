@@ -83,12 +83,12 @@ async function connectSettingsNotion() {
   } catch (error) {
     console.error("Connect Notion settings:", error);
     if (button) button.disabled = false;
-    window.LuriaDialog?.alert?.(error?.message || "Não foi possível conectar o Notion.");
+    window.TraubeDialog?.alert?.(error?.message || "Não foi possível conectar o Notion.");
   }
 }
 
 async function disconnectSettingsNotion() {
-  const ok = await window.LuriaDialog?.confirm?.("Desconectar o Notion desta conta?");
+  const ok = await window.TraubeDialog?.confirm?.("Desconectar o Notion desta conta?");
   if (ok === false) return;
 
   const button = document.getElementById("settings-notion-disconnect");
@@ -99,7 +99,7 @@ async function disconnectSettingsNotion() {
     await refreshSettingsNotionConnection();
   } catch (error) {
     console.error("Disconnect Notion settings:", error);
-    window.LuriaDialog?.alert?.(error?.message || "Não foi possível desconectar o Notion.");
+    window.TraubeDialog?.alert?.(error?.message || "Não foi possível desconectar o Notion.");
   } finally {
     if (button) button.disabled = false;
   }
@@ -1881,7 +1881,7 @@ function syncTargetExamUi() {
 
 function renderTargetExamOptions() {
   const grid = document.getElementById("target-exam-grid");
-  const exams = [...(window.LuriaExamPriority?.exams || [])]
+  const exams = [...(window.TraubeExamPriority?.exams || [])]
     .sort((a,b)=>String(a).localeCompare(String(b),"pt-BR",{sensitivity:"base"}));
   if (!grid) return;
 
@@ -1943,14 +1943,14 @@ async function loadTargetExams() {
     return;
   }
 
-  targetExamOrder = window.LuriaExamPriority?.sanitizeExams(data?.target_exams || []) || [];
+  targetExamOrder = window.TraubeExamPriority?.sanitizeExams(data?.target_exams || []) || [];
   syncTargetExamUi();
 }
 
 async function saveTargetExams() {
   if (!settingsUser) return;
 
-  const targetExams = window.LuriaExamPriority?.sanitizeExams(selectedTargetExams()) || [];
+  const targetExams = window.TraubeExamPriority?.sanitizeExams(selectedTargetExams()) || [];
   const button = document.getElementById("save-target-exams");
   if (button) button.disabled = true;
   setTargetExamsStatus("Salvando...");

@@ -1,4 +1,4 @@
-/* LuriaZap only. This bridge layer precedes navigation and defeats the legacy
+/* TraubeZap only. This bridge layer precedes navigation and defeats the legacy
    phone locks without changing shared Plantão styles or script-owned states. */
 @layer luria-ui-luriazap {
   body[data-plantao-entry="phone"][data-ui="v2"] {

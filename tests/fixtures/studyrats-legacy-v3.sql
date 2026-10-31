@@ -22,7 +22,7 @@ AS $function$
       c.created_at,
       case when c.deadline < current_date then 'finished' else c.status end::text status,
       sp.user_id participant_user_id,
-      coalesce(p.display_name,'Usuário LURIA') participant_name,
+      coalesce(p.display_name,'Usuário TRAUBE') participant_name,
       coalesce(p.studyrat_variant,'brown')::text studyrat_variant,
       coalesce(p.studyrat_accessory,'none')::text studyrat_accessory,
       case

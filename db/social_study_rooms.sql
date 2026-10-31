@@ -179,7 +179,7 @@ create or replace function private.create_studyrats_challenge_v2(p_title text,p_
   insert into public.studyrats_participants(challenge_id,user_id) values(challenge,uid);
   foreach friend in array coalesce(p_friend_user_ids,'{}') loop
    if friend=uid then continue; end if;
-   if not exists(select 1 from private.my_friends() f where f.user_id=friend) then raise exception 'Participante não é seu amigo no LURIA'; end if;
+   if not exists(select 1 from private.my_friends() f where f.user_id=friend) then raise exception 'Participante não é seu amigo no TRAUBE'; end if;
    insert into public.studyrats_participants(challenge_id,user_id) values(challenge,friend) on conflict do nothing;
   end loop;
   return challenge;

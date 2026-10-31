@@ -1,4 +1,4 @@
-# LURIA — Lote 7 · Aula 134
+# TRAUBE — Lote 7 · Aula 134
 # Síndrome dos ovários policísticos — auditoria e bloco adicional de questões
 
 **Status:** COMPLEMENTO EDITORIAL EM RASCUNHO, NÃO INTEGRADO/NÃO PUBLICADO.  
@@ -6,7 +6,7 @@
 **Fonte científica primária:** *International Evidence-based Guideline for the Assessment and Management of PCOS* (2023), elaborada pela colaboração internacional liderada por Monash/ASRM/ESHRE. **Fonte comparativa Drive:** “01 - RESUMO - SINDROME DOS OVARIOS POLICISTICOS.pdf”, aberto e lido, 10.545 caracteres extraídos; não comprova autoria Estratégia MED e não será copiado.
 
 ## 0. Por que não criar novo livro?
-O HTML da LURIA já continha aproximadamente **57,6 mil caracteres de marcação e 31 mil caracteres de texto bruto extraído**, títulos sobre fisiopatologia, clínica, critérios diagnósticos adultos e adolescentes, hiperandrogenismo, AMH/ultrassom, saúde metabólica, anticoncepção, metformina, GLP-1, proteção endometrial e indução ovulatória com letrozol. **Cinco casos clínicos** foram identificados pelo índice. A seção de fixação não mostrou títulos padronizados de questões com alternativas e justificativas; a lacuna é a consolidação por questões de decisão clínica. As contagens de caracteres não equivalem a conteúdo útil validado.
+O HTML da TRAUBE já continha aproximadamente **57,6 mil caracteres de marcação e 31 mil caracteres de texto bruto extraído**, títulos sobre fisiopatologia, clínica, critérios diagnósticos adultos e adolescentes, hiperandrogenismo, AMH/ultrassom, saúde metabólica, anticoncepção, metformina, GLP-1, proteção endometrial e indução ovulatória com letrozol. **Cinco casos clínicos** foram identificados pelo índice. A seção de fixação não mostrou títulos padronizados de questões com alternativas e justificativas; a lacuna é a consolidação por questões de decisão clínica. As contagens de caracteres não equivalem a conteúdo útil validado.
 
 **Terminologia:** o site emprega “Síndrome Ovariana Metabólica Poliendócrina (SOMP)” como adaptação editorial. A denominação médica consagrada em documentos científicos é **Síndrome dos Ovários Policísticos (SOP; PCOS em inglês)**. Recomendo apresentar os dois nomes quando necessário, deixando claro que **“SOMP” é rótulo editorial local**, não um novo diagnóstico com critérios independentes. Evitar alterar automaticamente URLs, títulos ou material já publicado sem revisão.
 
@@ -98,7 +98,7 @@ D. Fazer histerectomia preventiva a todas.
 
 ## 5. Fontes
 - Teede HJ et al. *Recommendations From the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome*. Hum Reprod. 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/
-- \`apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html\` — livro autoral LURIA já existente, auditado e preservado.
+- \`apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html\` — livro autoral TRAUBE já existente, auditado e preservado.
 - Drive “01 - RESUMO - SINDROME DOS OVARIOS POLICISTICOS.pdf” — benchmark parcial de 10,5 mil caracteres, não fonte para cópia.
 - Diretrizes FEBRASGO para SOP: localizar texto completo e ano da edição antes de integração de regimes nacionais.
 

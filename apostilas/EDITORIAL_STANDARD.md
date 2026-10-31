@@ -1,16 +1,16 @@
-# Padrão editorial das Apostilas LURIA
+# Padrão editorial das Apostilas TRAUBE
 
 ## Etapa zero obrigatória: benchmark no Drive (prioridade Estratégia MED)
 
-**ANTES de criar, ampliar ou editar conteúdo médico de qualquer apostila LURIA, buscar, abrir e ler uma apostila semelhante no Google Drive conectado. Priorizar materiais do Estratégia MED quando a autoria for verificável.** Esta regra também vale ao continuar revisões previamente iniciadas. Localizar o nome de um arquivo na busca, sem examinar o conteúdo, não satisfaz a etapa.
+**ANTES de criar, ampliar ou editar conteúdo médico de qualquer apostila TRAUBE, buscar, abrir e ler uma apostila semelhante no Google Drive conectado. Priorizar materiais do Estratégia MED quando a autoria for verificável.** Esta regra também vale ao continuar revisões previamente iniciadas. Localizar o nome de um arquivo na busca, sem examinar o conteúdo, não satisfaz a etapa.
 
 **Roteiro de execução obrigatório:**
 1. Pesquisar o nome exato, sinônimos, siglas e condições correlatas no Drive; preferir apostila completa do Estratégia MED com tema equivalente. Confirmar a instituição por elementos do arquivo, não apenas deduzir pelo nome ou pelo padrão numérico.
 2. Abrir e inspecionar efetivamente o material: sumário, cobertura de tópicos, profundidade, sequenciamento pedagógico, tabelas, fluxogramas, diagramas, casos, imagens clínicas e questões.
-3. Comparar a apostila existente da LURIA com o material do Drive e diretrizes científicas atuais. Elaborar matriz de lacunas por capítulo: presente e bom / superficial / ausente / redundante / possivelmente desatualizado; localizar exatamente onde cada melhoria deve entrar.
-4. **Criar conteúdo inteiramente original.** Usar o cursinho como referência de cobertura e didática, jamais copiar ou parafrasear de perto seus textos, questões, figuras, tabelas, imagens ou projeto gráfico protegido. Para fatos médicos, doses e condutas, confirmar nas diretrizes oficiais e bibliografia científica vigente. Preservar o visual próprio da LURIA.
+3. Comparar a apostila existente da TRAUBE com o material do Drive e diretrizes científicas atuais. Elaborar matriz de lacunas por capítulo: presente e bom / superficial / ausente / redundante / possivelmente desatualizado; localizar exatamente onde cada melhoria deve entrar.
+4. **Criar conteúdo inteiramente original.** Usar o cursinho como referência de cobertura e didática, jamais copiar ou parafrasear de perto seus textos, questões, figuras, tabelas, imagens ou projeto gráfico protegido. Para fatos médicos, doses e condutas, confirmar nas diretrizes oficiais e bibliografia científica vigente. Preservar o visual próprio da TRAUBE.
 5. Se não houver referência exatamente equivalente, examinar o material mais próximo e declarar quais tópicos ele não cobre. Se não for possível abrir nenhum comparável adequado, registrar a lacuna e **não certificar** a revisão como finalizada; trabalho preparatório ainda pode prosseguir desde que seja identificado como parcial.
-6. Ao fim, conferir que o estudante aprende integralmente com **somente a apostila LURIA**, dentro do padrão de 60.000 caracteres didáticos úteis, sem redundâncias nem transformar tabelas, esquemas e fluxos em textos longos.
+6. Ao fim, conferir que o estudante aprende integralmente com **somente a apostila TRAUBE**, dentro do padrão de 60.000 caracteres didáticos úteis, sem redundâncias nem transformar tabelas, esquemas e fluxos em textos longos.
 7. Registrar no controle editorial o nome da referência, data, se foi de fato aberta/lida, tópicos comparados, matriz de lacunas, mudanças realizadas e pendências. Não colocar identificadores ou URLs de documentos privados do Drive no GitHub público.
 
 **Exceção restrita:** ajustes puramente técnicos (CSS, scripts e links sem alteração médica) podem reutilizar a comparação já registrada para a mesma apostila. Qualquer mudança substantiva de conteúdo exige repetir a etapa zero.
@@ -25,19 +25,19 @@
 
 ### Passos obrigatórios antes de começar a editar
 1. Buscar no Drive pelo tema exato, sinônimos, siglas, doenças fundamentais e especialidade; identificar um documento correspondente. Abrir o arquivo e **examinar efetivamente seu conteúdo**, não apenas nome, miniatura ou resultado de pesquisa. Se necessário, conferir páginas e elementos visuais para compreender a estrutura didática.
-2. Levantar sumário, sequência de raciocínio, tópicos, nível de aprofundamento, tabelas, mapas, imagens diagnósticas, algoritmos, casos clínicos e aplicação em prova. Comparar com a apostila LURIA existente e registrar **lacunas concretas e pontos fortes a preservar**.
-3. Usar a comparação como **benchmark de escopo e experiência de aprendizagem**, não como licença para copiar: escrever texto, tabelas, casos, diagramas e elementos gráficos originais da LURIA; não transcrever, parafrasear de perto, replicar ilustrações ou publicar imagens de terceiros sem licença e aprovação.
+2. Levantar sumário, sequência de raciocínio, tópicos, nível de aprofundamento, tabelas, mapas, imagens diagnósticas, algoritmos, casos clínicos e aplicação em prova. Comparar com a apostila TRAUBE existente e registrar **lacunas concretas e pontos fortes a preservar**.
+3. Usar a comparação como **benchmark de escopo e experiência de aprendizagem**, não como licença para copiar: escrever texto, tabelas, casos, diagramas e elementos gráficos originais da TRAUBE; não transcrever, parafrasear de perto, replicar ilustrações ou publicar imagens de terceiros sem licença e aprovação.
 4. Atualizar decisões clínicas com documentos científicos primários e diretrizes vigentes, prioritariamente FEBRASGO, Ministério da Saúde e sociedades relevantes. Material de cursinho serve para comparação pedagógica; não substitui conferência técnica.
 5. Registrar para rastreabilidade: nome e link do(s) documento(s) consultado(s), origem editorial confirmada ou não, data da consulta, escopo efetivamente examinado, lacunas identificadas e medidas aplicadas. **Não marcar a apostila como revisada sem referência comparativa do Drive registrada.**
-6. Preservar o padrão de design LURIA: conferir primeiro apostila semelhante **já padronizada no próprio site**, além do benchmark do Drive, para garantir menus, tipografia, espaçamentos, tabelas, diagramas, identidade visual e responsividade desktop/PWA. O livro de terceiros nunca deve ser reproduzido visualmente de modo a confundir a identidade das marcas.
+6. Preservar o padrão de design TRAUBE: conferir primeiro apostila semelhante **já padronizada no próprio site**, além do benchmark do Drive, para garantir menus, tipografia, espaçamentos, tabelas, diagramas, identidade visual e responsividade desktop/PWA. O livro de terceiros nunca deve ser reproduzido visualmente de modo a confundir a identidade das marcas.
 
-**Teste de saída:** matriz de cobertura e questões respondíveis somente com a LURIA, pelo menos 60.000 caracteres úteis e não repetitivos, fontes e doses revisadas, visuais de ensino adequados, imagens aprovadas, layout responsivo e registro do Drive. Extensão não suprime nenhuma dessas exigências.
+**Teste de saída:** matriz de cobertura e questões respondíveis somente com a TRAUBE, pelo menos 60.000 caracteres úteis e não repetitivos, fontes e doses revisadas, visuais de ensino adequados, imagens aprovadas, layout responsivo e registro do Drive. Extensão não suprime nenhuma dessas exigências.
 
 ---
 
 ## Regra inegociável — autossuficiência integral para estudo de residência
 
-**Um estudante que comece sem conhecer a matéria deve conseguir aprendê-la do básico à profundidade exigida nas provas de residência médica usando somente esta apostila.** A apostila LURIA é o material principal e suficiente de estudo do tema; o aluno não deve precisar comprar cursinho, consultar livro-texto, pesquisar na internet ou abrir outra apostila para completar fundamentos, entender mecanismos, interpretar exames ou justificar uma conduta. Referências científicas permanecem obrigatórias para rastreabilidade e atualização editorial, não como substitutas de explicações ausentes.
+**Um estudante que comece sem conhecer a matéria deve conseguir aprendê-la do básico à profundidade exigida nas provas de residência médica usando somente esta apostila.** A apostila TRAUBE é o material principal e suficiente de estudo do tema; o aluno não deve precisar comprar cursinho, consultar livro-texto, pesquisar na internet ou abrir outra apostila para completar fundamentos, entender mecanismos, interpretar exames ou justificar uma conduta. Referências científicas permanecem obrigatórias para rastreabilidade e atualização editorial, não como substitutas de explicações ausentes.
 
 ### O que a autossuficiência exige na prática
 1. **Ensinar pré-requisitos no momento em que forem necessários.** Explicar termos, anatomia, fisiologia, exames e farmacologia indispensáveis antes de utilizá-los em decisões clínicas; conceitos transversais podem receber remissão interna funcional somente se já tiverem sido efetivamente ensinados nesta mesma apostila.
@@ -112,7 +112,7 @@ Cada apostila deve ser escrita como se fosse o principal e, se necessário, o ú
    - pontos de prova e armadilhas frequentes.
 6. Tabelas, algoritmos, fluxogramas e callouts devem complementar o texto, nunca substituir explicações necessárias.
 7. A leitura deve permitir que o aluno entenda **por que** uma conduta é tomada, não apenas qual é a conduta.
-8. Sempre que houver material interno LURIA/Drive sobre o tema, ele deve ser consultado para entender cobertura, sequência e estilo didático. Conteúdo desatualizado não deve ser perpetuado quando diretrizes mais recentes divergirem.
+8. Sempre que houver material interno TRAUBE/Drive sobre o tema, ele deve ser consultado para entender cobertura, sequência e estilo didático. Conteúdo desatualizado não deve ser perpetuado quando diretrizes mais recentes divergirem.
 9. Referências devem aparecer em lista organizada, priorizando diretrizes, consensos e entidades brasileiras quando disponíveis.
 10. Se um subtópico introduzir uma nova entidade clínica (por exemplo, hipoglicemia), tratá-la como um mini-capítulo completo: definição, fisiopatologia, quadro clínico, diagnóstico, classificação quando aplicável, tratamento e prevenção/seguimento.
 
@@ -200,11 +200,11 @@ Antes de publicar, comparar a apostila com as mais completas da biblioteca. Cont
 - Terapias: indicação, mecanismo, escolha, contraindicações, riscos, doses **quando verificadas**, ajustes/monitorização, falha, alternativas e seguimento.
 - Acrescentar casos clínicos comentados e diferenciais quando forem didáticos; não confundir hipótese de prova com protocolo clínico.
 - Revisar diretrizes oficiais e consensos atuais, com preferência pelo contexto brasileiro; descrever divergências relevantes de forma transparente.
-- Cada caderno deve ter seções/subseções lógicas e índice funcional. **Preservar URLs, IDs de seções relevantes, o renderer, a identidade LURIA, a interface responsiva e os recursos de leitura/estudo.** Não modificar a autoria/atribuição original sem orientação expressa.
+- Cada caderno deve ter seções/subseções lógicas e índice funcional. **Preservar URLs, IDs de seções relevantes, o renderer, a identidade TRAUBE, a interface responsiva e os recursos de leitura/estudo.** Não modificar a autoria/atribuição original sem orientação expressa.
 - Não marcar o caderno como "60K revisado" antes da verificação objetiva da extensão **e** de uma revisão clínica e pedagógica humana/editorial.
 
 ### Continuidade rigorosa do fluxo de imagens estabelecido
-1. **Reutilizar inicialmente as imagens já aprovadas no acervo LURIA**, mantendo seus vínculos e posicionamento; não descartar aprovações anteriores por causa da revisão textual.
+1. **Reutilizar inicialmente as imagens já aprovadas no acervo TRAUBE**, mantendo seus vínculos e posicionamento; não descartar aprovações anteriores por causa da revisão textual.
 2. Identificar lacunas didáticas por capítulo e pesquisar candidatas em **fontes reais rastreáveis** (sociedades médicas, governo, universidades, atlas de licença compatível). Priorizar esquemas técnicos fiéis para processos; **fotografias clínicas reais**, e não esquemas inventados, quando aparência macroscópica/lesão/dispositivo for o objeto do aprendizado.
 3. Não criar radiografias, ECGs, fotos clínicas ou exames artificiais fingindo serem achados reais. Não usar imagens decorativas ou documentos inteiros quando a figura isolada basta.
 4. Candidatas novas → \`apostila_image_review_queue\` do Supabase, com URL, autoria/origem, licença, legenda, texto alternativo, seção exata e justificativa. Buscar ao menos 10 candidatas por caderno, sem obrigatoriedade de publicar 10.
@@ -217,7 +217,7 @@ Antes de publicar, comparar a apostila com as mais completas da biblioteca. Cont
 - [ ] Conteúdo realmente desenvolvido com >= 60.000 caracteres úteis aferidos.
 - [ ] Revisão item a item de cobertura, lacunas, lógica fisiopatológica, diagnóstico, conduta e atualização.
 - [ ] Referências pertinentes, verificáveis, incluídas junto às recomendações e na bibliografia.
-- [ ] Capítulos completos, índice/âncoras e layout LURIA/PWA preservados.
+- [ ] Capítulos completos, índice/âncoras e layout TRAUBE/PWA preservados.
 - [ ] Imagens aprovadas preservadas; candidatas adicionais curadas pelo Admin, não publicadas automaticamente.
 - [ ] Teste de abertura do arquivo principal, CSS/JS, índice e imagens no desktop e PWA.
 - [ ] Revisão clínica antes de carimbar a edição como concluída.
@@ -229,7 +229,7 @@ Antes de publicar, comparar a apostila com as mais completas da biblioteca. Cont
 
 ## Diretriz irrevogável — aprofundar SEM desmontar os recursos visuais
 
-**Correção expressa do escopo feita pelo responsável pela LURIA em 12/10/2026: o mínimo vigente de 60.000 caracteres significa ADICIONAR aprofundamento ao material existente, nunca trocar seus esquemas por texto corrido. Quanto mais visual, melhor, desde que seja didaticamente correto e legível.**
+**Correção expressa do escopo feita pelo responsável pela TRAUBE em 12/10/2026: o mínimo vigente de 60.000 caracteres significa ADICIONAR aprofundamento ao material existente, nunca trocar seus esquemas por texto corrido. Quanto mais visual, melhor, desde que seja didaticamente correto e legível.**
 
 ### Regra de preservação visual (obrigatória para os 25 cadernos e todos os futuros)
 1. **Não excluir, simplificar ou transformar em parágrafos** os mapas mentais, esquemas anatômicos, esquemas fisiológicos/fisiopatológicos, fluxogramas, algoritmos clínicos, gráficos, tabelas, quadros comparativos, caixas de atenção, callouts, cards, pulo do gato, recursos interativos e figuras que já existem. Preservar também os estilos CSS, IDs, interações, cores, composição responsiva e disposição visual desses componentes.
@@ -239,7 +239,7 @@ Antes de publicar, comparar a apostila com as mais completas da biblioteca. Cont
 5. Quando um callout, destaque ou **Pulo do Gato** já existir, mantê-lo e enriquecer a explicação ao redor. Não converter callouts em parágrafos sem identidade visual. Evitar simplesmente repetir o callout em uma nova seção textual.
 6. Preservar os **mapas mentais** e, quando houver lacunas, adicionar ramificações relevantes e uma leitura guiada do mapa. Não substituí-los por sumários em texto.
 7. Preservar toda imagem já aprovada, incluindo o local de inserção, salvo correção de erro comprovado; imagens adicionais seguem rigorosamente o fluxo de curadoria/aprovação do Admin, com preferência por esquemas reais, técnicos e fotos clínicas reais quando pertinentes.
-8. Adicionar **novos elementos visuais** quando houver ganho didático real: sequências de mecanismo, mapas conceituais, diagramas de decisão, tabelas de diferenciais, comparações lado a lado, gráficos de tendências e esquemas de exames. Elementos HTML/CSS/SVG desenhados no site devem ser acessíveis, ter bom contraste, continuar legíveis no PWA e obedecer ao padrão visual LURIA.
+8. Adicionar **novos elementos visuais** quando houver ganho didático real: sequências de mecanismo, mapas conceituais, diagramas de decisão, tabelas de diferenciais, comparações lado a lado, gráficos de tendências e esquemas de exames. Elementos HTML/CSS/SVG desenhados no site devem ser acessíveis, ter bom contraste, continuar legíveis no PWA e obedecer ao padrão visual TRAUBE.
 9. **Contagem de caracteres**: os 60.000 caracteres mínimos vêm exclusivamente de aprofundamento didático substancial; **não** é necessário nem desejável aumentar o número de caracteres às custas do conteúdo visual. Tampouco contar classes, tags, JS ou SVG como caracteres didáticos para atingir a meta.
 10. Antes e depois de cada alteração, registrar/verificar um inventário dos componentes visuais: quantidade, tipo, âncora, funcionamento, renderização em tela larga e no PWA. Fazer comparação visual para garantir que os elementos foram mantidos e que não apareceram overflow, imagens quebradas, callouts ocultos ou alterações de proporção.
 11. Só remover ou substituir um esquema existente quando for **objetivamente incorreto, inseguro ou duplicado**, justificando a mudança e, preferencialmente, corrigindo-o **na mesma linguagem visual**, preservando a experiência do estudante. Nunca fazer remoções em massa como parte de uma conversão para formato de livro.
@@ -260,15 +260,15 @@ Uma apostila revisada só pode ser considerada concluída se:
 
 ## Referência visual de cursinho — Drive, auditoria de 12/10/2026
 
-A pedido do responsável pela LURIA, foram examinados diretamente os PDFs disponibilizados no Drive:
+A pedido do responsável pela TRAUBE, foram examinados diretamente os PDFs disponibilizados no Drive:
 - \`02 - CORRIMENTOS VAGINAIS .pdf\`: **10 páginas**, composição em **duas colunas**, hierarquia cromática viva, quadro inicial com fluxograma diagnóstico, texto curto em blocos, gráficos, esquemas de microbiota e epitélio, imagem de microscopia real, comparativos e pequenos destaques.
 - \`02 - ASSISTENCIA AO PRE-NATAL.pdf\`: **8 páginas**, duas colunas, visão de alto rendimento na abertura, tabelas compactas, ilustrações clínicas, esquemas, caixas realçadas e subtítulos frequentes.
 - Como controle, outras três referências consultadas (\`01 - IAMCSST.pdf\`, \`01 - CIRURGIA CARDIACA - DOENCA DA AORTA.pdf\`, \`12 - ABDOME AGUDO OBSTRUTIVO.pdf\`) tinham 9, 10 e 4 páginas. **Não afirmar que essas referências específicas possuem 40–60 páginas**, pois não possuem.
 
-**O que se deve emular:** princípios gerais de linguagem editorial de cursinho de medicina — fragmentação pedagógica, duas colunas em páginas impressas quando couber, ótima densidade informativa, figuras orientadas por raciocínio, quadros de prova, distinção clínica e algoritmos reais. **Não copiar texto, ilustrações proprietárias, logotipos, assinatura de marca, composição idêntica ou elementos gráficos protegidos dos arquivos externos.** Manter identidade azul/rosa/escuro e visual LURIA.
+**O que se deve emular:** princípios gerais de linguagem editorial de cursinho de medicina — fragmentação pedagógica, duas colunas em páginas impressas quando couber, ótima densidade informativa, figuras orientadas por raciocínio, quadros de prova, distinção clínica e algoritmos reais. **Não copiar texto, ilustrações proprietárias, logotipos, assinatura de marca, composição idêntica ou elementos gráficos protegidos dos arquivos externos.** Manter identidade azul/rosa/escuro e visual TRAUBE.
 
 ### Formato digital e impressão
-1. O site LURIA é **responsivo e de rolagem contínua**, portanto **não converter todo o conteúdo em cartões enormes nem fixar dimensões A4 na tela do PWA**. Na versão desktop, usar ocasionalmente duas colunas internas quando isso melhora leituras comparativas; em telas estreitas, empilhar em uma coluna sem reduzir legibilidade.
+1. O site TRAUBE é **responsivo e de rolagem contínua**, portanto **não converter todo o conteúdo em cartões enormes nem fixar dimensões A4 na tela do PWA**. Na versão desktop, usar ocasionalmente duas colunas internas quando isso melhora leituras comparativas; em telas estreitas, empilhar em uma coluna sem reduzir legibilidade.
 2. No modo impressão/PDF, contemplar **paginação A4 com aproximadamente 40–60 páginas para temas completos que justifiquem essa extensão**, nunca fabricar folhas vazias, divisões forçadas ou letra ampliada artificialmente apenas para aumentar o contador. O número de páginas é consequência de texto científico consistente + diagramas, imagens, tabelas e espaços de leitura.
 3. **Preservar mapas mentais, callouts, Pulo do Gato, gráficos, tabelas, fluxos e imagens** antes de qualquer ajuste. Exemplo de capítulo: breve conceito desenvolvido, **esquema causal**, quadro de diferencial, leitura da imagem, algoritmo de decisão comentado e um caso comentado.
 4. **Evitar "textões":** apresentar preferencialmente dois ou três parágrafos articulados e então o recurso visual adequado. O requisito mínimo de 60.000 caracteres continua válido para o caderno integral, mas o material deve distribuí-los ao longo das seções e **nunca cumpri-lo com blocos massivos ao final**.
@@ -279,7 +279,7 @@ A pedido do responsável pela LURIA, foram examinados diretamente os PDFs dispon
 9. **Aprovação editorial final requer comparação visual de antes/depois**, manutenção dos elementos originais e avaliação de uma amostra de tela mobile + desktop + exportação/print.
 10. O nível de aprofundamento não será medido por total de páginas isoladamente, mas também pela completude, legibilidade, valor pedagógico e fidelidade às diretrizes atuais.
 
-**Meta de percepção:** parecer uma apostila de cursinho premium com identidade própria da LURIA, não um artigo científico corrido, não um livro tradicional de colunas imensas de texto, nem uma cópia do material de terceiros.
+**Meta de percepção:** parecer uma apostila de cursinho premium com identidade própria da TRAUBE, não um artigo científico corrido, não um livro tradicional de colunas imensas de texto, nem uma cópia do material de terceiros.
 
 
 ---
@@ -291,7 +291,7 @@ O responsável rejeitou expressamente a repetição de imagens para aumentar pá
 **Novos critérios de revisão obrigatória:**
 1. **Uma função pedagógica por figura.** Nunca duplicar em HTML uma imagem já injetada pela fila de aprovadas; reconhecer URL de origem e equivalentes otimizados. Não inserir imagens de mesmo significado repetidamente apenas para alongar a página.
 2. **Sem galerias, pares automáticos ou quatro imagens agrupadas.** Figuras devem ser posicionadas junto ao parágrafo, subtópico ou exame que explicam, com legenda que ensine o que observar. Figura complementar no máximo uma por seção que já contenha figura, salvo exceção justificada por tópicos distintos.
-3. **Dimensões padrão LURIA**: figura clínica em largura usual de cerca de 480–520 px no desktop, altura proporcional, limite aproximado de 320–340 px na visualização comum, e 100% responsiva no PWA; maior apenas quando necessária para leitura de detalhes. A imagem original é expansível, não deve ser esticada ou achatada.
+3. **Dimensões padrão TRAUBE**: figura clínica em largura usual de cerca de 480–520 px no desktop, altura proporcional, limite aproximado de 320–340 px na visualização comum, e 100% responsiva no PWA; maior apenas quando necessária para leitura de detalhes. A imagem original é expansível, não deve ser esticada ou achatada.
 4. **Aprofundamento integrado, não anexado em camadas.** Não acumular seções repetidas no fim sob títulos genéricos como "Capítulos aprofundados", "Estudo etiológico" e "Aprofundamento". Cada explicação entra no capítulo da sua entidade, respeitando a sequência conceito → mecanismo → clínica → diagnóstico → diferencial → tratamento → complicação → seguimento. Referências devem encerrar o caderno.
 5. **Texto e recursos visuais complementares.** Intercalar explicações com tabelas, diagramas, fluxos, cards e callouts originais, evitando longos blocos contínuos. Tabelas precisam ter relevância e interpretação, não são tabelas decorativas.
 6. **A contagem de 60.000 caracteres é piso de texto útil, não meta de altura.** Excluir repetições textuais, CSS/JS, sumário, referências e artifícios gráficos. Nunca criar páginas ou imagens para completar uma métrica.
@@ -333,7 +333,7 @@ Diretriz expressa do responsável (12/10/2026): **não fragmentar diagnóstico, 
 
 A apostila deve ter identidade gráfica consistente, leitura agradável e **relação clara entre tipo de bloco e função didática**. Não é permitido inflar comprimento com repetição visual.
 
-**Paleta editorial LURIA**: azul de marca como cor estrutural (`#184888`); rosa suave para candidíase (`#b95780`), verde-azulado para vaginose (`#138a88`), violeta para tricomoníase (`#7962bd`), âmbar como destaque exclusivo da revisão de fixação. Usar combinações acessíveis no escuro e no PWA, evitando depender da cor como única forma de distinção.
+**Paleta editorial TRAUBE**: azul de marca como cor estrutural (`#184888`); rosa suave para candidíase (`#b95780`), verde-azulado para vaginose (`#138a88`), violeta para tricomoníase (`#7962bd`), âmbar como destaque exclusivo da revisão de fixação. Usar combinações acessíveis no escuro e no PWA, evitando depender da cor como única forma de distinção.
 
 **Hierarquia**
 - Título de capítulo e faixa de subtópico devem comunicar onde o leitor está.
@@ -358,7 +358,7 @@ Comparação feita com os PDFs de referência da pasta do responsável ("02 - CO
 
 **O que NÃO replicar literalmente:** corpo de texto de aproximadamente 9 pt em duas colunas do PDF impresso (pequeno para leitura no PWA), uso repetitivo de um mesmo destaque colorido em blocos contíguos, páginas criadas artificialmente ou quatro imagens na mesma faixa.
 
-**Escala para leitura digital na LURIA (desktop):**
+**Escala para leitura digital na TRAUBE (desktop):**
 - Texto-base: referência 14–14,5 px, entrelinhas ~1,68–1,72 e linhas preferencialmente até ~82 caracteres; evitar parágrafos intermináveis.
 - H2: ~22 px, H3 da unidade clínica: ~16–17 px, H4 interno: ~14–14,5 px. Não duplicar subtítulos como "Tratamento" imediatamente seguido de "Tratamento — esquemas" sem motivo clínico.
 - Respiração vertical: aproximadamente 15 px após parágrafos, 20–23 px entre unidades clínicas e cerca de 24–28 px de margem interna nos blocos brancos. Um elemento visual deve apoiar a explicação, não impor espaços vazios.
@@ -373,7 +373,7 @@ Comparação feita com os PDFs de referência da pasta do responsável ("02 - CO
 
 ## Critério de suficiência para questões — estudo por material único
 
-**Obrigatório nas revisões médicas da LURIA:** o caderno deve permitir ao estudante compreender o tema sem consultar outro material de base. Não basta alcançar 60.000 caracteres ou citar uma doença: o ensino deve conectar mecanismo, manifestações, interpretação dos testes, escolhas terapêuticas e consequências, incluindo recorrência e complicações quando forem relevantes.
+**Obrigatório nas revisões médicas da TRAUBE:** o caderno deve permitir ao estudante compreender o tema sem consultar outro material de base. Não basta alcançar 60.000 caracteres ou citar uma doença: o ensino deve conectar mecanismo, manifestações, interpretação dos testes, escolhas terapêuticas e consequências, incluindo recorrência e complicações quando forem relevantes.
 
 A qualidade deve ser avaliada por perguntas clínicas reais que o material permite responder, e não por número de páginas. Antes da publicação, conferir:
 - se a fisiologia e as definições necessárias ao raciocínio estão presentes, sem blocos vazios e sem repetir a mesma explicação;
@@ -394,7 +394,7 @@ A qualidade deve ser avaliada por perguntas clínicas reais que o material permi
 
 Ao ampliar todas as apostilas para no mínimo 60 mil caracteres didáticos (e mais, quando necessário), **não sacrificar profundidade clínica para economizar bytes**. O conteúdo útil permanece no HTML, com estrutura semântica; peso e latência devem ser otimizados por recursos compartilhados, compressão e cache.
 
-- **Não repetir CSS extenso em cada HTML.** Utilizar `/assets/css/apostila-luria-book.css` como folha comum para as páginas que adotarem o template editorial LURIA. O caminho foi introduzido em Vulvovaginites em 13/10/2026. Verificar compatibilidade de seletores antes de migrar outras apostilas. Atualizar `?v=` ao alterar regras que afetam leitores com cache.
+- **Não repetir CSS extenso em cada HTML.** Utilizar `/assets/css/apostila-luria-book.css` como folha comum para as páginas que adotarem o template editorial TRAUBE. O caminho foi introduzido em Vulvovaginites em 13/10/2026. Verificar compatibilidade de seletores antes de migrar outras apostilas. Atualizar `?v=` ao alterar regras que afetam leitores com cache.
 - **Manter a página HTML autossuficiente em conteúdo**, mas não em folhas de estilo repetidas. Os arquivos de CSS/JS externos devem ser reutilizados por todas as apostilas. Não duplicar bibliotecas em cada capítulo.
 - **Abrir sob demanda.** O aluno baixa o HTML da apostila que abriu, e não toda a biblioteca. Nunca colocar centenas de capítulos no `APP_SHELL` do service worker para instalação do PWA. O cache de navegação pode manter as últimas páginas visitadas dentro de limites; um eventual modo de leitura offline em lote precisa ser seletivo, explícito e mostrar o tamanho estimado.
 - **Imagens são normalmente o maior fator de crescimento.** Preferir WebP com o limite já estabelecido e `loading="lazy"`, exceto imagens críticas acima da dobra; não incorporar base64 no HTML nem baixar antecipadamente uma galeria de conteúdo ainda não vista. Preservar atribuição e fidelidade clínica.

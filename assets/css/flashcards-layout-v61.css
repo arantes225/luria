@@ -1,4 +1,4 @@
-/* LURIA Flashcards v61 — revisão estrutural da página
+/* TRAUBE Flashcards v61 — revisão estrutural da página
    Camada final e isolada para impedir sobreposição entre regras históricas. */
 
 body[data-page="flashcards"] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){

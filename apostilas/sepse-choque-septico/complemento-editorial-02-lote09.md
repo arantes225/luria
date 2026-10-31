@@ -1,5 +1,5 @@
 # Aula 161 · Complemento editorial 02 — Sepse e choque séptico
-**LURIA · Lote 09 · 14/10/2026 · Material complementar em revisão**
+**TRAUBE · Lote 09 · 14/10/2026 · Material complementar em revisão**
 
 Este capítulo estende o arquivo `rascunho-editorial-lote09.md`; não substitui a versão principal nem autoriza publicação sem revisão médica e integração editorial. Escopo: sepse no adulto. Particularidades pediátricas pertencem à aula de urgências pediátricas.
 

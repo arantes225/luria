@@ -15,7 +15,7 @@ function fixture({owner='A',storage=new Map(),failure=false,entitlements=null,ad
   const w=dom.window,d=w.document;let id=owner;
   d.body.dataset.dashboardPresentationReady='true';
   w.docmapUser=owner?{id:owner}:null;w.docmapEntitlements=entitlements;w.docmapIsAdmin=admin;
-  w.LuriaLocalOwnerStore={
+  w.TraubeLocalOwnerStore={
     get ownerId(){return id;},key:base=>id?base+':'+id:null,
     read:base=>{if(failure)throw Error('Storage blocked');return storage.get(base+':'+id);},
     write:(base,value)=>{if(failure)throw Error('Storage full');if(!id)return false;storage.set(base+':'+id,value);return true;},
@@ -26,7 +26,7 @@ function fixture({owner='A',storage=new Map(),failure=false,entitlements=null,ad
   const root=d.createElement('div');root.id='dashboard-alternative';root.innerHTML='<button id="classic-action">Existing action</button>';d.querySelector('.topbar').after(root);
   let actions=0;const original=root.firstElementChild;original.onclick=()=>actions++;
   const settingsDom=new JSDOM(settingsHtml);d.body.insertAdjacentHTML('beforeend',settingsDom.window.document.querySelector('.dashboard-layout-setting').outerHTML);settingsDom.window.close();
-  const alerts=[];w.LuriaDialog={alert:message=>alerts.push(message)};
+  const alerts=[];w.TraubeDialog={alert:message=>alerts.push(message)};
   w.eval(featureCheck);w.eval(preferenceCode);w.eval(settingsCode);w.eval(code);
   return {dom,w,d,storage,root,original,metrics,alerts,actions:()=>actions,
     choose:view=>d.querySelector(`#dashboard-layout-options input[value="${view}"]`).click(),
@@ -71,13 +71,13 @@ test('blocked storage rejects an unsaved selection and keeps the safe Classic fa
   const f=fixture({failure:true});try{
     f.choose('cards');assert.equal(f.d.body.dataset.dashboardView,'classic');assert.equal(f.d.querySelector('input:checked').value,'classic');
     assert.match(f.d.getElementById('dashboard-layout-status').textContent,/Não foi possível salvar/);
-    assert.equal(f.w.LuriaDashboardPreference.write('2'),false);
+    assert.equal(f.w.TraubeDashboardPreference.write('2'),false);
   }finally{f.dom.window.close();}
 });
 test('cleanup failure cannot invalidate an already saved Cards preference',()=>{
   const f=fixture({storage:new Map([[preference+':A','cards']])});try{
-    f.w.LuriaLocalOwnerStore.remove=()=>{throw Error('Cleanup blocked');};
-    assert.equal(f.w.LuriaDashboardPreference.read(),'cards');
+    f.w.TraubeLocalOwnerStore.remove=()=>{throw Error('Cleanup blocked');};
+    assert.equal(f.w.TraubeDashboardPreference.read(),'cards');
   }finally{f.dom.window.close();}
 });
 test('all card actions use existing access decisions without duplicate legacy alerts',()=>{

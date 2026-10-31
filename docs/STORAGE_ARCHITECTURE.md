@@ -1,8 +1,8 @@
-# LURIA — Arquitetura de Storage
+# TRAUBE — Arquitetura de Storage
 
 ## Estado atual
 
-O LURIA usa uma camada central em:
+O TRAUBE usa uma camada central em:
 
 - `assets/js/storage-router.js`
 
@@ -30,7 +30,7 @@ Quando um provider externo for ativado, a camada aceita referências auto-descri
 luria-storage://<provider>/<bucket>/<path>
 ```
 
-Assim o LURIA sabe exatamente onde procurar o arquivo. Não é necessário tentar vários bancos sequencialmente.
+Assim o TRAUBE sabe exatamente onde procurar o arquivo. Não é necessário tentar vários bancos sequencialmente.
 
 ## Regra de compatibilidade
 
@@ -73,7 +73,7 @@ Para um segundo projeto privado, usar uma ponte segura, por exemplo:
 A camada expõe:
 
 ```js
-LuriaStorage.registerSupabaseProvider("media", client);
+TraubeStorage.registerSupabaseProvider("media", client);
 ```
 
 Para uma arquitetura com backend/proxy, estender o router com um provider próprio em vez de expor credenciais privadas.
@@ -83,7 +83,7 @@ Para uma arquitetura com backend/proxy, estender o router com um provider própr
 Exemplo conceitual:
 
 ```js
-LuriaStorage.configureRoute("flashcard_images", {
+TraubeStorage.configureRoute("flashcard_images", {
   provider: "media",
   bucket: "flashcard-images"
 });

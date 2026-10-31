@@ -2,11 +2,11 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-/3TH36ObEP4knlJZxjo0yI44ZoRxztPVYk78QEp3Z3Y='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-JlNj9CQfzROMR1OTsX3Y6/vAnuIwjNKy1Uc8P0MqUG4='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Apostilas · LURIA</title>
+  <title>Apostilas · TRAUBE</title>
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <meta name="theme-color" content="#0A2342">
@@ -73,7 +73,7 @@
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div>
     <main class="main"><div class="page">
-      <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">Conteúdo LURIA</span><h1>Apostilas</h1></div></header>
+      <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">Conteúdo TRAUBE</span><h1>Apostilas</h1></div></header>
       <section class="books-page">
         <section class="luria-page-spotlight" aria-label="Apostilas">
           <div class="luria-page-spotlight-copy">
@@ -243,7 +243,7 @@
       a.className="book-card";
       a.href=book.content_url||"#";
       a.dataset.search=norm([book.area,book.materia,book.tema,book.titulo].filter(Boolean).join(" "));
-      a.innerHTML='<div class="book-card-top"><span class="book-card-icon">'+bookIcon+'</span></div><div class="book-meta"><span class="book-area"></span><span class="book-subarea"></span><strong class="book-title"></strong><small class="book-foot">Apostila LURIA</small></div>';
+      a.innerHTML='<div class="book-card-top"><span class="book-card-icon">'+bookIcon+'</span></div><div class="book-meta"><span class="book-area"></span><span class="book-subarea"></span><strong class="book-title"></strong><small class="book-foot">Apostila TRAUBE</small></div>';
       a.querySelector(".book-area").textContent=book.area||"Sem área";
       a.querySelector(".book-subarea").textContent=book.materia||"";
       a.querySelector(".book-title").textContent=book.tema||book.titulo||"Apostila";
@@ -340,7 +340,7 @@
       const byUrl=new Map();
       [contracepcao,trabalhoPartoPrematuro,cicloHho,sexualidade,sexualidadeMasculina,ist,cancerMama,cancerColo,climaterioMenopausa,hipertensaoGestacao,parto,somp,pilot,...remote].forEach(book=>{if(book.content_url&&!byUrl.has(book.content_url))byUrl.set(book.content_url,book)});
       books=[...byUrl.values()].map(book=>{
-        const taxonomy=window.LuriaMedicalTaxonomy;
+        const taxonomy=window.TraubeMedicalTaxonomy;
         if(!taxonomy)return book;
         const fixed=taxonomy.normalizeClassification(book.area,book.materia);
         return {...book,area:fixed.area||book.area,materia:fixed.materia||book.materia};

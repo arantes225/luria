@@ -6603,7 +6603,7 @@
   ],
   "batch_code": "L001",
   "block_code": "L001-B01",
-  "snapshot_kind": "LURIA_QUESTION_FACTORY_PUBLIC_SNAPSHOT",
+  "snapshot_kind": "TRAUBE_QUESTION_FACTORY_PUBLIC_SNAPSHOT",
   "snapshot_note": "Public bridge snapshot. Use question_id + item_version exactly as published.",
   "review_stage_options": [
     "perplexity_initial",

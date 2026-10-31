@@ -1,7 +1,7 @@
 (() => {
   "use strict";
   const sb = window.supabaseClient;
-  const bridge = window.LuriaClinicalBridge;
+  const bridge = window.TraubeClinicalBridge;
   const els = {
     search: document.getElementById("protocol-search"),
     category: document.getElementById("protocol-category"),
@@ -160,7 +160,7 @@
     els.detail.querySelectorAll("[data-drug]").forEach((b) => b.addEventListener("click", () => bridge?.openDrug(b.dataset.drug)));
     els.detail.querySelector("[data-open-recipe]")?.addEventListener("click", () => bridge?.openRecipe(recipes[0]));
     els.detail.querySelector("[data-send-note]")?.addEventListener("click", () => bridge?.toQuickChart({
-      type:"protocol", slug:r.slug, title:r.title, text:protocolText(r), source:"Protocolos LURIA"
+      type:"protocol", slug:r.slug, title:r.title, text:protocolText(r), source:"Protocolos TRAUBE"
     }));
   }
 

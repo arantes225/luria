@@ -1,8 +1,8 @@
-# LURIA | Lote 7 — Aula 125
+# TRAUBE | Lote 7 — Aula 125
 # Rastreamento, prevenção quaternária e cuidado baseado em valor
 
 > **STATUS: RASCUNHO DE APOSTILA EM DESENVOLVIMENTO — NÃO PUBLICADO/NÃO CERTIFICADO.**  
-> Data: 14/10/2026. Área: Medicina Preventiva. Vinculação: aula 125 do cronograma-base da LURIA.  
+> Data: 14/10/2026. Área: Medicina Preventiva. Vinculação: aula 125 do cronograma-base da TRAUBE.  
 > Objetivo: ensinar princípios do rastreamento com aplicação às normas brasileiras vigentes, decisões compartilhadas e prevenção de dano iatrogênico. Em políticas de rastreio, confirmar sempre o ano/versão e a disponibilidade local: inclusão de exame na tabela SUS não equivale automaticamente a programa universal plenamente implementado.
 
 ## Etapa zero — benchmark de amplitude e lacunas
@@ -11,7 +11,7 @@ Pesquisados no Drive materiais de “rastreamento”, “screening”, “preven
 
 **Lacuna importante nas referências comparativas:** o material do colo indica início/periodicidade citológica antigos e descreve rastreamento predominantemente por Papanicolau, sem incorporar as Diretrizes Brasileiras de rastreamento organizado por teste molecular de DNA-HPV de 2025. O resumo de mastologia cita mamografia de rastreamento de 50–69 anos no SUS, enquanto nota técnica do Ministério da Saúde divulgada em setembro de 2025 passou a recomendar **50–74 anos, a cada dois anos** para população de risco habitual. Assim, o comparativo é útil sobretudo para explicitar que materiais de cursinho rapidamente envelhecem em temas normativos.
 
-**Inventário LURIA:** não foi identificada pasta específica com este nome no diretório nominal de apostilas examinado; produzir em rascunho. A inexistência do diretório não prova ausência total de conteúdo relacionado em capítulos de outras apostilas.
+**Inventário TRAUBE:** não foi identificada pasta específica com este nome no diretório nominal de apostilas examinado; produzir em rascunho. A inexistência do diretório não prova ausência total de conteúdo relacionado em capítulos de outras apostilas.
 
 ## 1. Por que rastrear exige uma justificativa mais forte do que diagnosticar?
 

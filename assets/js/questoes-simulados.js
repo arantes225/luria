@@ -2,10 +2,10 @@ const qsSb = window.supabaseClient;
 
 let qsOpenRevision = 0, qsLoadRevision = 0, qsSavingAnswerKey = false;
 function qsRequestContext() {
-  return {userId: qsState.user?.id, epoch: window.LuriaLocalOwnerStore?.epoch};
+  return {userId: qsState.user?.id, epoch: window.TraubeLocalOwnerStore?.epoch};
 }
 function qsContextIsCurrent(context) {
-  const owner = window.LuriaLocalOwnerStore;
+  const owner = window.TraubeLocalOwnerStore;
   return !!context.userId && qsState.user?.id === context.userId
     && (!owner || (owner.ownerId === context.userId && owner.epoch === context.epoch));
 }
@@ -83,7 +83,7 @@ const qsResolutionState = {
 };
 
 let AREA_OPTIONS =
-  window.LuriaStudyMode
+  window.TraubeStudyMode
     ?.generalAreasFor(
       window.luriaStudyMode
       || "medicine"
@@ -263,7 +263,7 @@ function switchQsAddMode(
   mode
 ) {
   const automaticAllowed =
-    window.LuriaEntitlements?.enabled(
+    window.TraubeEntitlements?.enabled(
       "automatic_questions"
     ) === true;
 
@@ -3826,7 +3826,7 @@ async function ocrQuestionLineRecordsFromCanvas(
   canvas,
   pageNumber
 ) {
-  try { await window.LuriaLazyVendors.ensure("tesseract"); } catch { return []; }
+  try { await window.TraubeLazyVendors.ensure("tesseract"); } catch { return []; }
 
   if (
     !window.Tesseract
@@ -4429,7 +4429,7 @@ async function extractQuestionsFromPdf(
   file,
   options = {}
 ) {
-  await window.LuriaLazyVendors.ensure("pdfjs");
+  await window.TraubeLazyVendors.ensure("pdfjs");
 
   if (!window.pdfjsLib) {
     throw new Error(
@@ -4998,17 +4998,17 @@ async function createQuestionSet(title, file) {
   A leitura ocorre localmente no navegador.
 */
 
-const LURIA_IMAGE_TARGET_BYTES =
+const TRAUBE_IMAGE_TARGET_BYTES =
   100 * 1024;
 
-const LURIA_IMAGE_SOFT_MAX_BYTES =
+const TRAUBE_IMAGE_SOFT_MAX_BYTES =
   150 * 1024;
 
-const LURIA_IMAGE_MAX_DIMENSION =
+const TRAUBE_IMAGE_MAX_DIMENSION =
   1100;
 
 
-async function compressLuriaImageBlob(
+async function compressTraubeImageBlob(
   sourceBlob
 ) {
   if (
@@ -5028,7 +5028,7 @@ async function compressLuriaImageBlob(
   */
   if (
     sourceBlob.size
-    <= LURIA_IMAGE_TARGET_BYTES
+    <= TRAUBE_IMAGE_TARGET_BYTES
   ) {
     return sourceBlob;
   }
@@ -5196,7 +5196,7 @@ async function compressLuriaImageBlob(
         */
         if (
           candidate.size
-            <= LURIA_IMAGE_SOFT_MAX_BYTES
+            <= TRAUBE_IMAGE_SOFT_MAX_BYTES
           && quality >= 0.64
           && maxDimension >= 900
         ) {
@@ -5213,7 +5213,7 @@ async function compressLuriaImageBlob(
 
         if (
           candidate.size
-          <= LURIA_IMAGE_TARGET_BYTES
+          <= TRAUBE_IMAGE_TARGET_BYTES
         ) {
           bitmap.close?.();
 
@@ -7910,7 +7910,7 @@ async function loadQuestionOverview() {
 
 async function loadSets() {
   const revision = ++qsLoadRevision;
-  await window.LuriaLocalOwnerStore?.ready;
+  await window.TraubeLocalOwnerStore?.ready;
   const context = qsRequestContext();
   if (revision !== qsLoadRevision || !qsContextIsCurrent(context)) return false;
   const [
@@ -8609,7 +8609,7 @@ async function deleteSelectedSets() {
   updateSetBulkToolbar();
 
   try {
-    const confirmed = await window.LuriaDialog.confirm(
+    const confirmed = await window.TraubeDialog.confirm(
       `Excluir ${ids.length} lista${ids.length === 1 ? "" : "s"} e suas questões?`
     );
     if (!confirmed) return;
@@ -9095,7 +9095,7 @@ function renderHomeDashboard() {
       nextSubtitle.textContent =
         answered > 0
           ? "Você já começou este simulado. Continue de onde parou."
-          : "Simulado pronto para resolução no LURIA.";
+          : "Simulado pronto para resolução no TRAUBE.";
     }
 
     if (nextDate) {
@@ -9453,7 +9453,7 @@ async function attachGalleryImageUrls(
 async function extractOfficialAnswerKeyFromPdfBlob(
   blob
 ) {
-  await window.LuriaLazyVendors.ensure("pdfjs");
+  await window.TraubeLazyVendors.ensure("pdfjs");
 
   if (!window.pdfjsLib) {
     return {};
@@ -9668,7 +9668,7 @@ async function ensureOfficialAnswerKey() {
 
 async function openSet(setId) {
   const revision = ++qsOpenRevision;
-  await window.LuriaLocalOwnerStore?.ready;
+  await window.TraubeLocalOwnerStore?.ready;
   const context = qsRequestContext();
   if (revision !== qsOpenRevision || !qsContextIsCurrent(context)) return;
   const isCurrent = () => revision === qsOpenRevision && qsContextIsCurrent(context);
@@ -10258,7 +10258,7 @@ function renderErrorImagePicker(
         <div>
           <strong>Imagem para o Caderno de Erros</strong>
           <small>
-            Escolha livremente entre todos os recortes detectados. O LURIA mantém inclusive imagens repetidas, ruins ou sobrepostas para você decidir.
+            Escolha livremente entre todos os recortes detectados. O TRAUBE mantém inclusive imagens repetidas, ruins ou sobrepostas para você decidir.
           </small>
         </div>
 
@@ -12841,7 +12841,7 @@ function parseAnswerDigitText(
 
 
 async function createAnswerDigitWorker() {
-  try { await window.LuriaLazyVendors.ensure("tesseract"); } catch { return null; }
+  try { await window.TraubeLazyVendors.ensure("tesseract"); } catch { return null; }
 
   if (
     !window.Tesseract
@@ -13168,7 +13168,7 @@ async function recognizeAnswerGridByNumber(
   fileCount,
   sequenceStartIndex = 0
 ) {
-  await window.LuriaLazyVendors.ensure("tesseract");
+  await window.TraubeLazyVendors.ensure("tesseract");
 
   if (
     !window.Tesseract
@@ -16834,7 +16834,7 @@ async function deleteSet(setId) {
   if (!set) return;
 
   const confirmed =
-    await window.LuriaDialog.confirm(
+    await window.TraubeDialog.confirm(
       `Excluir "${set.title}" e o gabarito associado?`
     );
 
@@ -17197,15 +17197,15 @@ async function initQuestionSets() {
     window.docmapUser;
 
   const mode =
-    await window.LuriaStudyMode
+    await window.TraubeStudyMode
       ?.load?.();
 
   if (
-    window.LuriaStudyMode
+    window.TraubeStudyMode
       ?.generalAreasFor
   ) {
     AREA_OPTIONS =
-      window.LuriaStudyMode
+      window.TraubeStudyMode
         .generalAreasFor(
           mode
           || window.luriaStudyMode
@@ -17255,7 +17255,7 @@ async function initQuestionSets() {
   );
 
   const automaticAllowed =
-    window.LuriaEntitlements?.enabled(
+    window.TraubeEntitlements?.enabled(
       "automatic_questions"
     ) === true;
 

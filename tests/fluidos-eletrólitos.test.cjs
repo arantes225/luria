@@ -6,7 +6,7 @@ const vm = require('node:vm');
 const source = fs.readFileSync('assets/js/fluidos-eletrólitos.js', 'utf8');
 const context = { window: {}, document: { querySelector: () => null, querySelectorAll: () => [] } };
 vm.runInNewContext(source, context, { filename: 'fluidos-eletrólitos.js' });
-const calc = context.window.LURIA_FLUIDS.calc;
+const calc = context.window.TRAUBE_FLUIDS.calc;
 
 test('fluid calculators return deterministic values', () => {
   assert.equal(calc.maintenance(25), 65);

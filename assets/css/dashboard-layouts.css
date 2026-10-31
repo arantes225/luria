@@ -1071,7 +1071,7 @@ body[data-dashboard-layout="5"] .dl5-bottom{
 
 
 /* =========================================================
-   DASHBOARDS — tipografia oficial LURIA
+   DASHBOARDS — tipografia oficial TRAUBE
    Uniformiza todos os layouts com a fonte-base original do site.
    ========================================================= */
 body[data-page="dashboard"],
@@ -1568,7 +1568,7 @@ body[data-dashboard-layout="4"] .dl-layout-4 .dl-cat-content{
 }
 
 
-/* Dashboards — usar exclusivamente o cabeçalho global LURIA (Timer + sino + L). */
+/* Dashboards — usar exclusivamente o cabeçalho global TRAUBE (Timer + sino + L). */
 body[data-page="dashboard"][data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   display:flex!important;
   visibility:visible!important;
@@ -4677,7 +4677,7 @@ body[data-page="dashboard"][data-dashboard-layout="2"] .dl-upcoming .dl-activity
 
 
 /* =========================================================
-   LURIA STUDY NOW NATIVE PANELS
+   TRAUBE STUDY NOW NATIVE PANELS
    ========================================================= */
 .dl-study-now{
   min-width:0;
@@ -5528,7 +5528,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 }
 
 
-/* LURIA SHELL — AUTHORITATIVE SAME-COLOR OVERRIDE v10 — 2026-10-04 */
+/* TRAUBE SHELL — AUTHORITATIVE SAME-COLOR OVERRIDE v10 — 2026-10-04 */
 :root,
 :root[data-theme="light"]{
   --luria-shell-theme:#184888;

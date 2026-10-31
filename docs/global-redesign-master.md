@@ -14,7 +14,7 @@ Atividades: social-native-activities.js possui criação manual de questões, de
 
 Quatro paletas atualizadas no CSS compartilhado, sem novo mecanismo de temas. Moldura desacoplada da cor dos botões: azul claro #184888, azul escuro #102A4C, rosa claro #B2577D, rosa escuro #412439; geometria preservada. Temas escuros agora usam marinho/ameixa em vez de superfícies quase pretas comuns.
 
-Tokens de teal/sálvia/violeta/coral/âmbar adaptados por identidade e luminosidade. Tokens contextuais para questões, flashcards, erros, apostilas, notas, LuriaZap, Alex, amigos, grupos, salas, ratos, simulador e ofensiva. Variantes opt-in de cards, ações contextuais, estados, modais e ícones. Fonte Inter e escala existentes preservadas; botões recebem arredondamento, padding e transições uniformes. A adoção e revisão de cada página permanece separada: tokens não significam redesign completo.
+Tokens de teal/sálvia/violeta/coral/âmbar adaptados por identidade e luminosidade. Tokens contextuais para questões, flashcards, erros, apostilas, notas, TraubeZap, Alex, amigos, grupos, salas, ratos, simulador e ofensiva. Variantes opt-in de cards, ações contextuais, estados, modais e ícones. Fonte Inter e escala existentes preservadas; botões recebem arredondamento, padding e transições uniformes. A adoção e revisão de cada página permanece separada: tokens não significam redesign completo.
 
 Testes: contraste AA de textos, textos secundários, ações e complementares nos quatro temas; verificação de moldura e persistência inalteradas. Conferência visual real pendente na homologação autorizada. Produção não publicada.
 
@@ -31,7 +31,7 @@ Testes: contraste AA de textos, textos secundários, ações e complementares no
 | Simulador nas salas | Implementada | Pendente investigação de estado/rota | Motor preservado |
 | Dashboard/Consolidar/Cronograma | Implementada | Pendente revisão individual | Pendente |
 | Questões/Flashcards/Caderno de Erros | Implementada | Pendente revisão individual | Pendente |
-| Apostilas/Anotações/Alex/LuriaZap | Implementada | Pendente revisão individual | Pendente |
+| Apostilas/Anotações/Alex/TraubeZap | Implementada | Pendente revisão individual | Pendente |
 | Simulador/Estatísticas/Trabalho | Implementada | Pendente revisão individual | Lógica clínica preservada |
 | Perfil/Admin/Configurações/Editais/Planos/secundárias | Implementada | Pendente revisão individual | Pendente |
 
@@ -39,7 +39,7 @@ Não há declaração de conclusão global. Sem publicação em produção, sem 
 
 ## Etapa 2 — Aprender implementada
 
-Nova composição do card Alex com mascote oficial, formulário existente, sugestões que levam à tutoria real e anexos preservados. Apostilas, Anotações e LuriaZap adotam variantes da fundação com cores e ilustrações SVG próprias. O contador estático incorreto de uma apostila foi substituído por ação de biblioteca. Permissão admin do Alex mantida. Cinco testes de fundação/integração passaram. CSS educacional passa a respeitar componentes opt-in, eliminando o reset monocromático dessas variantes em vez de acumular sobrescritas. Validação visual real aguarda homologação.
+Nova composição do card Alex com mascote oficial, formulário existente, sugestões que levam à tutoria real e anexos preservados. Apostilas, Anotações e TraubeZap adotam variantes da fundação com cores e ilustrações SVG próprias. O contador estático incorreto de uma apostila foi substituído por ação de biblioteca. Permissão admin do Alex mantida. Cinco testes de fundação/integração passaram. CSS educacional passa a respeitar componentes opt-in, eliminando o reset monocromático dessas variantes em vez de acumular sobrescritas. Validação visual real aguarda homologação.
 
 ## Continuação — 15/10: entrada da comunidade
 - Fundação e Aprender publicadas somente na homologação: versão Cloudflare `054c97c2-c5e1-4946-baee-8a9f42f174c2`.
@@ -70,7 +70,7 @@ Nova composição do card Alex com mascote oficial, formulário existente, suges
 
 ## Bloco Grupos + Study Rats — implementação local integrada
 - Corridas novas recebem group_id; corridas antigas permanecem com group_id NULL, sem reassociação nem exclusão automática. Fonte aditiva em supabase/migrations/20261015153559_social_group_studyrats.sql, ainda sem aplicação remota ou migração timestampada pelo CLI.
-- RPC group_studyrats valida associação ao Grupo, modo competitivo e papel de administrador na criação. Participação é voluntária; é exigido o compartilhamento real do status de estudo. Métricas vêm das consultas originais da LURIA, filtradas por membros atuais, privacidade e bloqueios. Não se utiliza retenção por autoavaliação como taxa objetiva de acertos.
+- RPC group_studyrats valida associação ao Grupo, modo competitivo e papel de administrador na criação. Participação é voluntária; é exigido o compartilhamento real do status de estudo. Métricas vêm das consultas originais da TRAUBE, filtradas por membros atuais, privacidade e bloqueios. Não se utiliza retenção por autoavaliação como taxa objetiva de acertos.
 - Leituras v2/v3 antigas ficam restritas às corridas legadas. A função usada por RLS passa a exigir acesso ao Grupo competitivo para as novas corridas. O comando antigo de exclusão também fica restrito às corridas legadas, preservando as novas corridas contra esse caminho alternativo.
 - O novo ranking usa somente até 50 competições recentes do Grupo por leitura. As métricas suportadas neste bloco são questões respondidas, flashcards revisados, dias de estudo e aulas concluídas. Taxa objetiva de acertos, tempo efetivo, metas e presets de período ainda exigem implementação/validação própria.
 - Navegação do Grupo exibe Study Rats apenas quando competitivo e com capacidade confirmada pelo backend. A mesma instância original da pista/personalização é movida para dentro do Grupo; não há duplicação de IDs, mascotes, acessórios ou previews. Sai da comunidade e retorna ao container oculto de compatibilidade ao fechar/alterar o Grupo.

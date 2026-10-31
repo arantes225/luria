@@ -1,4 +1,4 @@
-# LURIA — Fluidos e eletrólitos
+# TRAUBE — Fluidos e eletrólitos
 
 ## Escopo e status
 
@@ -29,7 +29,7 @@ Ajudar o estudante/profissional a estruturar os cinco objetivos da terapia IV: r
 - Eletrólitos concentrados, aditivos em bolsa, correções rápidas e protocolos de alto risco ficam fora da primeira versão.
 - Cada protocolo deve declarar população, exclusões, monitorização, gatilhos de interrupção e necessidade de avaliação sênior.
 - Não fazer arredondamentos silenciosos; mostrar casas, unidade e fonte da fórmula.
-- Sem publicação clínica até: testes automatizados, revisão clínica independente, revisão farmacêutica quando houver soluções/medicamentos, teste de acessibilidade, teste de regressão do shell LURIA e aprovação institucional documentada.
+- Sem publicação clínica até: testes automatizados, revisão clínica independente, revisão farmacêutica quando houver soluções/medicamentos, teste de acessibilidade, teste de regressão do shell TRAUBE e aprovação institucional documentada.
 
 ## Próximas fases de implementação
 

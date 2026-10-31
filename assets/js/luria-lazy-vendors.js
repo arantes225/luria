@@ -1,4 +1,4 @@
-/* Bibliotecas opcionais da LURIA: carregamento único e sob demanda.
+/* Bibliotecas opcionais da TRAUBE: carregamento único e sob demanda.
  * As URLs precisam constar na CSP da página consumidora.
  * Não altera dependências do núcleo (autenticação, navegação, Supabase).
  */
@@ -79,7 +79,7 @@
     return promise;
   }
 
-  window.LuriaLazyVendors = Object.freeze({
+  window.TraubeLazyVendors = Object.freeze({
     ensure(names) {
       const list = Array.isArray(names) ? names : [names];
       return Promise.all(list.map(load)).then(() => undefined);

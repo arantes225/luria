@@ -13,7 +13,7 @@ const block=b=>{
 const article=data=>{
   if(data.article_html)return data.article_html;
   const h=data.h||[], heroClass=h[4]?" "+h[4]:"";
-  let out='<section class="book-hero'+heroClass+'" aria-label="Identificação da apostila"><span class="book-badge">'+(h[0]||"Apostila LURIA")+"</span><h1>"+(h[1]||data.t||"")+"</h1><p>"+(h[2]||"")+'</p><div class="book-meta-row">'+(h[3]||[]).map(x=>"<span>"+x+"</span>").join("")+"</div></section>";
+  let out='<section class="book-hero'+heroClass+'" aria-label="Identificação da apostila"><span class="book-badge">'+(h[0]||"Apostila TRAUBE")+"</span><h1>"+(h[1]||data.t||"")+"</h1><p>"+(h[2]||"")+'</p><div class="book-meta-row">'+(h[3]||[]).map(x=>"<span>"+x+"</span>").join("")+"</div></section>";
   for(const s of data.q||[]){out+='<section id="'+s[0]+'" class="book-section'+(s[1]?" "+s[1]:"")+'">'+(s[2]||[]).map(block).join("")+"</section>"}
   return out;
 };
@@ -25,10 +25,10 @@ const bind=()=>{
  document.addEventListener("click",e=>{const b=e.target.closest(".fixation-toggle");if(!b)return;const a=b.closest(".fixation-item")?.querySelector(".fixation-answer");if(!a)return;const show=a.hidden;a.hidden=!show;b.textContent=show?"Ocultar resposta":"Mostrar resposta";b.setAttribute("aria-expanded",String(show))});
 };
 fetch(source,{credentials:"same-origin"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(async d=>{
- document.title=(d.t||d.title)+" · LURIA";
+ document.title=(d.t||d.title)+" · TRAUBE";
  const p=d.p||d.pageTitle||d.t||d.title;
- document.getElementById("apostila-root").innerHTML='<div class="app-shell"><aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div><main class="main"><div class="page"><header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">Apostila LURIA</span><h1>'+esc(p)+'</h1></div></header><section class="book-page"><aside class="book-outline" aria-label="Estrutura da apostila"><a class="book-outline-back" href="/apostilas/"><span aria-hidden="true">←</span> Voltar</a><div class="book-outline-head"><small>Apostila atual</small><strong>Estrutura do conteúdo</strong></div><nav class="book-outline-nav">'+outline(d)+'</nav></aside><article class="book-main">'+article(d)+"</article></section></div></main></div>";
+ document.getElementById("apostila-root").innerHTML='<div class="app-shell"><aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div><main class="main"><div class="page"><header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">Apostila TRAUBE</span><h1>'+esc(p)+'</h1></div></header><section class="book-page"><aside class="book-outline" aria-label="Estrutura da apostila"><a class="book-outline-back" href="/apostilas/"><span aria-hidden="true">←</span> Voltar</a><div class="book-outline-head"><small>Apostila atual</small><strong>Estrutura do conteúdo</strong></div><nav class="book-outline-nav">'+outline(d)+'</nav></aside><article class="book-main">'+article(d)+"</article></section></div></main></div>";
  bind();
  for(const src of ["/assets/js/luria-brand-v5.js?v=12","/assets/vendor/supabase-2.110.6.js","/assets/js/supabase.js?v=auth4","/assets/js/app.js?v=20261004-global-shell-v74","/assets/js/pwa.js?v=6-apostilas-library-fix","/assets/js/apostila-tools.js?v=10-semantic-json"])await loadScript(src);
-}).catch(err=>{document.getElementById("apostila-root").innerHTML='<main class="main"><div class="page"><section class="book-section"><h2>Apostila indisponível no momento</h2><p>Não foi possível carregar o conteúdo. Atualize a página para tentar novamente.</p></section></div></main>';console.error("[LURIA apostila renderer]",err)});
+}).catch(err=>{document.getElementById("apostila-root").innerHTML='<main class="main"><div class="page"><section class="book-section"><h2>Apostila indisponível no momento</h2><p>Não foi possível carregar o conteúdo. Atualize a página para tentar novamente.</p></section></div></main>';console.error("[TRAUBE apostila renderer]",err)});
 })();

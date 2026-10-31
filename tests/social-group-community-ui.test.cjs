@@ -5,7 +5,7 @@ test('group workspace has real content tabs, escaped messages and drafts that su
  const {w,d,errors}=page(t,'amigos/index.html'),calls=[];let fail=false,denied=false;
  const g='aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa',uid='11111111-1111-4111-8111-111111111111';
  const snapshot={group:{id:g,name:'Minha comunidade',area:'Clínica',description:'Troca de conhecimento',role:'admin'},members:[{user_id:uid,name:'Ana',role:'admin'}],entries:[{id:'bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb',kind:'chat',user_id:uid,display_name:'Ana',body:'<script>invadir()</script>',created_at:'2026-10-14T12:00:00Z'}]};
- w.docmapUser={id:uid};w.LuriaDialog={confirm:async()=>false,prompt:async()=>null};w.LuriaSocial={command:async()=>{},refreshSocial:async()=>{}};
+ w.docmapUser={id:uid};w.TraubeDialog={confirm:async()=>false,prompt:async()=>null};w.TraubeSocial={command:async()=>{},refreshSocial:async()=>{}};
  w.supabaseClient={rpc:async(name,args)=>{calls.push(args);if(denied)return {error:{message:'Acesso restrito aos membros do grupo'}};if(args.p_action==='create'){if(fail)return {error:{message:'Conexão interrompida'}};snapshot.entries.push({...args.p_payload,user_id:uid,display_name:'Ana',created_at:'2026-10-14T13:00:00Z'});return {data:{id:args.p_payload.id}};}return {data:structuredClone(snapshot)};},channel:()=>({on(){return this;},subscribe(){return this;}}),removeChannel:async()=>{}};
  d.getElementById('social-groups').innerHTML=`<details><summary data-group-open="${g}">Abrir comunidade</summary></details>`;
  w.eval(read('assets/js/social-group-community.js'));

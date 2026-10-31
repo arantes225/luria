@@ -652,7 +652,7 @@
 
     /* Posição dos controles superiores é definida no CSS global carregado no <head>. */
 
-/* Iniciais: peso forte padronizado em todo o LURIA. */
+/* Iniciais: peso forte padronizado em todo o TRAUBE. */
     .luria-profile-toggle,
     .user-avatar {
       font-weight:950 !important;
@@ -846,7 +846,7 @@
 
 
   style.textContent += `
-    /* LURIA global trays — always above page content and simulator overlays. */
+    /* TRAUBE global trays — always above page content and simulator overlays. */
     .topbar,
     .topbar-actions,
     .luria-notifications,
@@ -1164,8 +1164,8 @@ const PAGE_INFO = {
   estatisticas: { title: "Estatísticas", eyebrow: "Seu desempenho", helper: "Acompanhe sua evolução e ajuste sua estratégia." },
   editais: { title: "Editais / Provas", eyebrow: "Provas e editais", helper: "Centralize datas, provas e informações importantes." },
   amigos: { title: "Amigos", eyebrow: "Rede de estudos", helper: "Estude junto, compartilhe e acompanhe sua rede." },
-  configuracoes: { title: "Configurações", eyebrow: "Sua conta", helper: "Personalize sua experiência no LURIA." },
-  admin: { title: "Admin", eyebrow: "Gestão LURIA", helper: "Gerencie conteúdo, acessos e operação da plataforma." },
+  configuracoes: { title: "Configurações", eyebrow: "Sua conta", helper: "Personalize sua experiência no TRAUBE." },
+  admin: { title: "Admin", eyebrow: "Gestão TRAUBE", helper: "Gerencie conteúdo, acessos e operação da plataforma." },
   beta_testers: { title: "Beta Testers", eyebrow: "Feedback beta", helper: "Acompanhe sugestões e pontos de melhoria." },
   trabalho_dashboard: { title: "Dashboard", eyebrow: "Rotina clínica", helper: "Acesse rapidamente as ferramentas do seu dia." },
   trabalho_gestor_plantoes: { title: "Gestor de Plantões", eyebrow: "Escalas e plantões", helper: "Organize sua rotina de plantões em um só lugar." },
@@ -1313,7 +1313,7 @@ function getProfileTitle(gender) {
   return "";
 }
 
-const LURIA_ICON_PATHS = {
+const TRAUBE_ICON_PATHS = {
   dashboard: '<rect x="3" y="4" width="7" height="7" rx="1.5"/><rect x="14" y="4" width="7" height="7" rx="1.5"/><rect x="3" y="15" width="7" height="5" rx="1.5"/><rect x="14" y="15" width="7" height="5" rx="1.5"/>',
   calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/>',
   clipboard: '<rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m9 14 2 2 4-4"/>',
@@ -1331,11 +1331,11 @@ const LURIA_ICON_PATHS = {
 };
 
 function luriaIcon(name, className = "") {
-  const path = LURIA_ICON_PATHS[name] || LURIA_ICON_PATHS.file;
+  const path = TRAUBE_ICON_PATHS[name] || TRAUBE_ICON_PATHS.file;
   return `<svg class="luria-ui-icon ${className}" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${path}</svg>`;
 }
 
-window.LuriaIcon = luriaIcon;
+window.TraubeIcon = luriaIcon;
 
 function luriaUserInitials(user, profile = null) {
   const fallbackName = user?.email
@@ -1365,7 +1365,7 @@ function luriaUserInitials(user, profile = null) {
   return `${first}${last}` || first || "U";
 }
 
-function updateLuriaProfileInitials(user = window.docmapUser, profile = window.docmapProfile) {
+function updateTraubeProfileInitials(user = window.docmapUser, profile = window.docmapProfile) {
   const toggle = document.getElementById("luria-profile-toggle");
   if (!toggle) return;
 
@@ -1375,7 +1375,7 @@ function updateLuriaProfileInitials(user = window.docmapUser, profile = window.d
 }
 
 function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = null) {
-  const isLuriaZap = page === "plantao" && document.body.dataset.plantaoEntry === "phone";
+  const isTraubeZap = page === "plantao" && document.body.dataset.plantaoEntry === "phone";
   const sidebarPlan = String(entitlements?.plan || window.docmapPlan || "").trim().toLowerCase();
   const canAccessWork = isAdmin === true || ["plus", "pro", "betatester"].includes(sidebarPlan);
   const fallbackName = user.email
@@ -1407,11 +1407,11 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           id="luria-brand-logo"
           class="brand-logo-single luria-theme-logo"
           src="${luriaLogoSourceForTheme(document.documentElement.dataset.theme || "light")}"
-          alt="Logo LURIA"
+          alt="Logo TRAUBE"
         >
 
         <span class="brand-copy">
-          <strong>LURIA</strong>
+          <strong>TRAUBE</strong>
           <small>Aprenda. Conecte. Consolide.</small>
         </span>
       </a>
@@ -1479,12 +1479,12 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${luriaIcon("target")}</span><span>Desafio Diário</span>
         </a>
 
-        <a class="nav-link ${page === "plantao" && !isLuriaZap ? "active" : ""}" href="/plantao/sala-emergencia/">
+        <a class="nav-link ${page === "plantao" && !isTraubeZap ? "active" : ""}" href="/plantao/sala-emergencia/">
           <span class="nav-icon">${luriaIcon("stethoscope")}</span><span>Simulador de Emergência</span>
         </a>
 
-        <a class="nav-link ${isLuriaZap ? "active" : ""}" href="/plantao/luriazap/">
-          <span class="nav-icon"><svg class="luria-ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg></span><span>LuriaZap</span>
+        <a class="nav-link ${isTraubeZap ? "active" : ""}" href="/plantao/luriazap/">
+          <span class="nav-icon"><svg class="luria-ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg></span><span>TraubeZap</span>
         </a>
 
         <a class="nav-link ${page === "estatisticas" ? "active" : ""}" href="/estatisticas/">
@@ -1598,7 +1598,7 @@ function luriaLogoSourceForTheme(theme) {
 }
 
 
-function updateLuriaLogo(theme) {
+function updateTraubeLogo(theme) {
   const logo =
     document.getElementById(
       "luria-brand-logo"
@@ -1627,7 +1627,7 @@ function applyResolvedTheme(theme) {
   document.documentElement.dataset.theme =
     theme;
 
-  updateLuriaLogo(
+  updateTraubeLogo(
     theme
   );
 }
@@ -1785,7 +1785,7 @@ async function carregarAudioTracks() {
 
   if (error) {
     console.warn(
-      "Não foi possível carregar os sons do LURIA:",
+      "Não foi possível carregar os sons do TRAUBE:",
       error.message
     );
     return [];
@@ -3387,7 +3387,7 @@ function luriaTopControlsPositionKey() {
   return `luria:top-controls-position:v1:${userId}`;
 }
 
-function readLuriaTopControlsPosition() {
+function readTraubeTopControlsPosition() {
   try {
     const raw = localStorage.getItem(luriaTopControlsPositionKey());
     if (!raw) return null;
@@ -3399,7 +3399,7 @@ function readLuriaTopControlsPosition() {
   }
 }
 
-function saveLuriaTopControlsPosition(position) {
+function saveTraubeTopControlsPosition(position) {
   try {
     localStorage.setItem(
       luriaTopControlsPositionKey(),
@@ -3411,7 +3411,7 @@ function saveLuriaTopControlsPosition(position) {
   } catch {}
 }
 
-function applyLuriaTopControlsPosition(center, position) {
+function applyTraubeTopControlsPosition(center, position) {
   if (!center || !position || window.innerWidth < 981) return;
 
   const rect = center.getBoundingClientRect();
@@ -3428,7 +3428,7 @@ function applyLuriaTopControlsPosition(center, position) {
   center.dataset.luriaCustomPosition = "1";
 }
 
-function resetLuriaTopControlsPosition(center) {
+function resetTraubeTopControlsPosition(center) {
   try {
     localStorage.removeItem(luriaTopControlsPositionKey());
   } catch {}
@@ -3441,10 +3441,10 @@ function resetLuriaTopControlsPosition(center) {
   if (center) delete center.dataset.luriaCustomPosition;
 }
 
-function wireLuriaTopControlsDrag(center) {
+function wireTraubeTopControlsDrag(center) {
   if (!center) return;
   try { localStorage.removeItem(luriaTopControlsPositionKey()); } catch {}
-  resetLuriaTopControlsPosition(center);
+  resetTraubeTopControlsPosition(center);
 }
 
 function ensureNotificationCenter() {
@@ -3628,7 +3628,7 @@ function ensureNotificationCenter() {
         <div>
           <strong>Notificações</strong>
           <small id="luria-notification-subtitle">
-            Novidades do LURIA
+            Novidades do TRAUBE
           </small>
         </div>
 
@@ -3663,7 +3663,7 @@ function ensureNotificationCenter() {
   topbar.appendChild(
     center
   );
-  updateLuriaProfileInitials();
+  updateTraubeProfileInitials();
 
   // Pomodoro é exclusivo do ambiente Estudos.
   if (String(page).startsWith("trabalho_")) {
@@ -3672,7 +3672,7 @@ function ensureNotificationCenter() {
 
   // Controles do topo são fixos ao cabeçalho; remove qualquer posição antiga salva.
   try { localStorage.removeItem(luriaTopControlsPositionKey()); } catch {}
-  resetLuriaTopControlsPosition(center);
+  resetTraubeTopControlsPosition(center);
 
   const pomodoroToggle = document.getElementById("luria-pomodoro-toggle");
   const pomodoroPanel = document.getElementById("luria-pomodoro-panel");
@@ -4108,7 +4108,7 @@ function ensureNotificationCenter() {
       ?.addEventListener(
         "click",
         async () => {
-          await window.LuriaDialog?.alert?.(
+          await window.TraubeDialog?.alert?.(
             "Você pode adicionar simulados automaticamente por PDF ou criar um simulado manual informando o número de questões. Depois, abra o simulado e registre o gabarito ou marque as questões erradas para acompanhar seu desempenho."
           );
 
@@ -4782,10 +4782,10 @@ function prepararMobileMenu() {
 
 
 /* =========================================================
-   LURIA — CALENDÁRIO GLOBAL
+   TRAUBE — CALENDÁRIO GLOBAL
    ========================================================= */
 
-function ensureLuriaCalendar(input = null) {
+function ensureTraubeCalendar(input = null) {
   let popover =
     document.getElementById(
       "luria-calendar"
@@ -4834,7 +4834,7 @@ function ensureLuriaCalendar(input = null) {
 }
 
 
-function parseLuriaDate(
+function parseTraubeDate(
   value
 ) {
   const match =
@@ -4884,7 +4884,7 @@ function luriaDateIso(
 }
 
 
-function openLuriaCalendar(
+function openTraubeCalendar(
   input
 ) {
   if (
@@ -4898,10 +4898,10 @@ function openLuriaCalendar(
   }
 
   const popover =
-    ensureLuriaCalendar(input);
+    ensureTraubeCalendar(input);
 
   const selected =
-    parseLuriaDate(
+    parseTraubeDate(
       input.value
     );
 
@@ -5003,7 +5003,7 @@ function openLuriaCalendar(
       new Date();
 
     const currentSelected =
-      parseLuriaDate(
+      parseTraubeDate(
         input.value
       );
 
@@ -5216,7 +5216,7 @@ function openLuriaCalendar(
 }
 
 
-function wireLuriaDateInputs() {
+function wireTraubeDateInputs() {
   document.addEventListener(
     "click",
     event => {
@@ -5234,7 +5234,7 @@ function wireLuriaDateInputs() {
         input.blur();
       } catch {}
 
-      openLuriaCalendar(
+      openTraubeCalendar(
         input
       );
     },
@@ -5243,15 +5243,15 @@ function wireLuriaDateInputs() {
 }
 
 
-wireLuriaDateInputs();
+wireTraubeDateInputs();
 
 
 
 /* =========================================================
-   LURIA — SELETOR GLOBAL DE HORA
+   TRAUBE — SELETOR GLOBAL DE HORA
    ========================================================= */
 
-function ensureLuriaTimePicker(input = null) {
+function ensureTraubeTimePicker(input = null) {
   let popover = document.getElementById("luria-time-picker");
   const host = input?.closest?.("dialog[open]") || document.body;
 
@@ -5304,10 +5304,10 @@ function ensureLuriaTimePicker(input = null) {
   return popover;
 }
 
-function openLuriaTimePicker(input) {
+function openTraubeTimePicker(input) {
   if (!input || input.disabled || input.readOnly) return;
 
-  const popover = ensureLuriaTimePicker(input);
+  const popover = ensureTraubeTimePicker(input);
   const hour = popover.querySelector("[data-time-hour]");
   const minute = popover.querySelector("[data-time-minute]");
 
@@ -5377,17 +5377,17 @@ document.addEventListener("click", event => {
   event.preventDefault();
   event.stopPropagation();
   try { input.blur(); } catch {}
-  openLuriaTimePicker(input);
+  openTraubeTimePicker(input);
 }, true);
 
 
 /* =========================================================
-   LURIA — DIÁLOGOS GLOBAIS
+   TRAUBE — DIÁLOGOS GLOBAIS
    Substitui alert/confirm/prompt nativos por uma interface
    consistente em todas as páginas que carregam app.js.
    ========================================================= */
 
-function ensureLuriaDialog() {
+function ensureTraubeDialog() {
   let dialog =
     document.getElementById(
       "luria-global-dialog"
@@ -5414,7 +5414,7 @@ function ensureLuriaDialog() {
         <img class="luria-global-dialog-logo" src="/assets/img/logos/logo-icone-original.png?v=luria10" alt="">
       </div>
       <div class="luria-global-dialog-copy">
-        <span class="luria-global-dialog-eyebrow">LURIA</span>
+        <span class="luria-global-dialog-eyebrow">TRAUBE</span>
         <h2 class="luria-global-dialog-title">Confirmar ação</h2>
         <p class="luria-global-dialog-message"></p>
       </div>
@@ -5437,13 +5437,13 @@ function ensureLuriaDialog() {
 }
 
 
-function openLuriaDialog({
+function openTraubeDialog({
   type = "alert",
   message = "",
   defaultValue = ""
 } = {}) {
   const dialog =
-    ensureLuriaDialog();
+    ensureTraubeDialog();
 
   const title =
     dialog.querySelector(
@@ -5624,11 +5624,11 @@ function openLuriaDialog({
 }
 
 
-window.LuriaDialog = {
+window.TraubeDialog = {
   alert(
     message
   ) {
-    return openLuriaDialog({
+    return openTraubeDialog({
       type:
         "alert",
       message
@@ -5638,7 +5638,7 @@ window.LuriaDialog = {
   confirm(
     message
   ) {
-    return openLuriaDialog({
+    return openTraubeDialog({
       type:
         "confirm",
       message
@@ -5649,7 +5649,7 @@ window.LuriaDialog = {
     message,
     defaultValue = ""
   ) {
-    return openLuriaDialog({
+    return openTraubeDialog({
       type:
         "prompt",
       message,
@@ -5662,27 +5662,27 @@ window.LuriaDialog = {
 /*
   Compatibilidade global:
   scripts antigos continuam chamando alert/confirm/prompt,
-  mas passam a receber o visual LURIA. Confirm/prompt são
-  assíncronos; novas telas devem preferir window.LuriaDialog.
+  mas passam a receber o visual TRAUBE. Confirm/prompt são
+  assíncronos; novas telas devem preferir window.TraubeDialog.
 */
 window.luriaAlert =
-  window.LuriaDialog.alert;
+  window.TraubeDialog.alert;
 
 window.luriaConfirm =
-  window.LuriaDialog.confirm;
+  window.TraubeDialog.confirm;
 
 window.luriaPrompt =
-  window.LuriaDialog.prompt;
+  window.TraubeDialog.prompt;
 
 /*
   Ponte para código legado: evita qualquer popup nativo mesmo antes
   de cada fluxo antigo ser migrado. Os handlers novos devem usar
-  LuriaDialog diretamente para aguardar a resposta.
+  TraubeDialog diretamente para aguardar a resposta.
 */
 window.alert = function luriaLegacyAlert(
   message
 ) {
-  window.LuriaDialog.alert(
+  window.TraubeDialog.alert(
     message
   );
 
@@ -5833,7 +5833,7 @@ function limiteFeature(
 }
 
 
-window.LuriaEntitlements = {
+window.TraubeEntitlements = {
   enabled(featureKey) {
     return temFeature(
       window.docmapEntitlements,
@@ -6017,7 +6017,7 @@ function aplicarEntitlementsNaNavegacao(
               (event) => {
                 event.preventDefault();
 
-                window.LuriaDialog.alert(
+                window.TraubeDialog.alert(
                   "Este recurso está disponível no plano Plus."
                 );
               }
@@ -6035,7 +6035,7 @@ async function carregarBootstrap(userId) {
   try {
     const { data, error } = await sb.rpc("luria_bootstrap");
     if (error || !data) {
-      if (error) console.warn("Não foi possível carregar o bootstrap da LURIA:", error.message);
+      if (error) console.warn("Não foi possível carregar o bootstrap da TRAUBE:", error.message);
       return null;
     }
 
@@ -6068,7 +6068,7 @@ async function carregarBootstrap(userId) {
       theme
     };
   } catch (error) {
-    console.warn("Não foi possível carregar o bootstrap da LURIA:", error);
+    console.warn("Não foi possível carregar o bootstrap da TRAUBE:", error);
     return null;
   }
 }
@@ -6168,7 +6168,7 @@ async function prepararAdminNavigation(acessoAdmin = null) {
 
 function carregarOnboardingGlobal() {
   if (
-    window.LuriaOnboarding
+    window.TraubeOnboarding
     || document.getElementById("luria-onboarding-script")
   ) {
     return Promise.resolve();
@@ -6282,7 +6282,7 @@ async function iniciarApp() {
     );
     renderizarOfensivaGlobal();
 
-  updateLuriaLogo(
+  updateTraubeLogo(
     document.documentElement.dataset.theme
     || "light"
   );
@@ -6409,7 +6409,7 @@ async function iniciarApp() {
     data.session;
   window.docmapProfile =
     cachedProfile;
-  updateLuriaProfileInitials(user, cachedProfile);
+  updateTraubeProfileInitials(user, cachedProfile);
   window.docmapEntitlements =
     cachedEntitlements;
   window.docmapPlan =
@@ -6426,7 +6426,7 @@ async function iniciarApp() {
   // Se o script já estiver presente, o evento docmap:ready abaixo dispara o prefetch.
   // Caso contrário, ele é injetado e usa window.docmapUser ao terminar de carregar.
   if (
-    !window.LuriaWeeklyContent
+    !window.TraubeWeeklyContent
     && !document.querySelector(
       'script[data-luria-weekly-content]'
     )
@@ -6496,7 +6496,7 @@ async function iniciarApp() {
 
         window.docmapProfile =
           finalProfile;
-        updateLuriaProfileInitials(user, finalProfile);
+        updateTraubeProfileInitials(user, finalProfile);
         window.docmapEntitlements =
           finalEntitlements;
         window.docmapIsAdmin =
@@ -6642,15 +6642,15 @@ iniciarApp();
   document.head.appendChild(script);
 })();
 
-(function installLuriaStudyTimer(){
-  if (window.LuriaStudyTimer) return;
+(function installTraubeStudyTimer(){
+  if (window.TraubeStudyTimer) return;
   const KEY="luria:active-study-session:v1", IDLE_MS=15*60*1000;
-  const owned=window.LuriaLocalOwnerStore, flights=new Map(), unpersisted=new Set(), completed=new Set();
+  const owned=window.TraubeLocalOwnerStore, flights=new Map(), unpersisted=new Set(), completed=new Set();
   let state=null, idleHandle=null, starts=Promise.resolve();
   const now=()=>Date.now();
   const read=()=>{try{const value=JSON.parse(owned?.read(KEY)||"null");return value?.ownerId===owned?.ownerId?value:null}catch{return null}};
   function write(){
-    try{if(state){const key=owned?.key(KEY,state.ownerId);if(key){localStorage.setItem(key,JSON.stringify(state));unpersisted.delete(state.sessionId);}}}catch(error){unpersisted.add(state.sessionId);console.warn("LURIA: falha ao guardar sessão local",error);}
+    try{if(state){const key=owned?.key(KEY,state.ownerId);if(key){localStorage.setItem(key,JSON.stringify(state));unpersisted.delete(state.sessionId);}}}catch(error){unpersisted.add(state.sessionId);console.warn("TRAUBE: falha ao guardar sessão local",error);}
   }
   const elapsed=()=>state ? Math.max(0,Math.floor(((state.accumulatedMs||0)+(state.running?now()-state.segmentStartedAt:0))/1000)) : 0;
   function notify(reason,detail={}){window.dispatchEvent(new CustomEvent("luria:study-timer",{detail:{reason,...detail}}));}
@@ -6686,7 +6686,7 @@ iniciarApp();
     };
     const promise=Promise.resolve().then(()=>window.navigator?.locks
       ? window.navigator.locks.request("luria:study:"+snapshot.ownerId,run) : run())
-      .catch(error=>{console.warn("LURIA: não foi possível registrar tempo de estudo",error);notify("persist_failed");return false;})
+      .catch(error=>{console.warn("TRAUBE: não foi possível registrar tempo de estudo",error);notify("persist_failed");return false;})
       .finally(()=>flights.delete(snapshot.sessionId));
     flights.set(snapshot.sessionId,promise);return promise;
   }
@@ -6714,7 +6714,7 @@ iniciarApp();
   restore();owned?.ready.then(restore);window.addEventListener("luria:owner-changed",restore);
   window.addEventListener("storage",event=>{if(event.key===owned?.key(KEY))restore();});
   ["pointerdown","keydown","touchstart","input","change"].forEach(ev=>document.addEventListener(ev,touch,{passive:true,capture:true}));
-  window.LuriaStudyTimer={start,pause,resume,finish:flush,touch,setExternalQuestions,getState:()=>state,getElapsedSeconds:elapsed};
+  window.TraubeStudyTimer={start,pause,resume,finish:flush,touch,setExternalQuestions,getState:()=>state,getElapsedSeconds:elapsed};
 })();
 
 /* PWA global topbar v30 — compact, aligned and scrolls with the page */
@@ -7087,8 +7087,8 @@ iniciarApp();
     overlay.innerHTML = `
       <form class="luria-beta-feedback-card" id="luria-beta-feedback-form">
         <span class="luria-beta-feedback-kicker">Beta Tester</span>
-        <h2 id="luria-beta-feedback-title">Como está sua experiência com o LURIA?</h2>
-        <p>Seu feedback periódico ajuda a definir os próximos ajustes. Para continuar usando o LURIA, responda os dois campos abaixo.</p>
+        <h2 id="luria-beta-feedback-title">Como está sua experiência com o TRAUBE?</h2>
+        <p>Seu feedback periódico ajuda a definir os próximos ajustes. Para continuar usando o TRAUBE, responda os dois campos abaixo.</p>
         <div class="luria-beta-feedback-fields">
           <label class="luria-beta-feedback-field">
             <span>O que já está bom?</span>
@@ -7201,7 +7201,7 @@ iniciarApp();
 
 
 
-/* LURIA_BACK_SWITCH_BUTTONS_V1 */
+/* TRAUBE_BACK_SWITCH_BUTTONS_V1 */
 (function(){
   function syncBackButtons(){
     document.querySelectorAll('button,a,[role="button"]').forEach(function(el){
@@ -7218,7 +7218,7 @@ iniciarApp();
 })();
 
 
-/* LURIA_TOP_CONTROLS_LOCKED_V66 */
+/* TRAUBE_TOP_CONTROLS_LOCKED_V66 */
 (function(){
   const style=document.createElement("style");
   style.id="luria-top-controls-locked-v66";
@@ -7670,7 +7670,7 @@ iniciarApp();
 })();
 
 
-/* LURIA v2026.10.02 — padroniza listas clicáveis e menus de opção do site. */
+/* TRAUBE v2026.10.02 — padroniza listas clicáveis e menus de opção do site. */
 (function luriaNormalizeClickableListsV1(){
   const tag=(root=document)=>{
     root.querySelectorAll?.("select:not([multiple])").forEach(el=>el.classList.add("luria-site-select"));
@@ -7701,8 +7701,8 @@ iniciarApp();
 })();
 
 
-/* LURIA intelligence / command center layer */
-(function loadLuriaCommandCenter(){
+/* TRAUBE intelligence / command center layer */
+(function loadTraubeCommandCenter(){
   if (document.querySelector('script[data-luria-command-center]')) return;
   const script = document.createElement('script');
   script.src = '/assets/js/luria-command-center.js?v=20261004-search-removed-v44';
@@ -8070,10 +8070,10 @@ iniciarApp();
 
 
 
-/* LURIA guided study — strict step completion v1 */
+/* TRAUBE guided study — strict step completion v1 */
 (function installGuidedStudyCompletion(){
-  if(window.LuriaGuidedStudy?.completeActiveStep)return;
-  const api=window.LuriaGuidedStudy||{};
+  if(window.TraubeGuidedStudy?.completeActiveStep)return;
+  const api=window.TraubeGuidedStudy||{};
   api.completeActiveStep=function(source){
     try{
       const active=JSON.parse(sessionStorage.getItem("luria:guided-study-active")||"null");
@@ -8087,11 +8087,11 @@ iniciarApp();
       return true;
     }catch{return false}
   };
-  window.LuriaGuidedStudy=api;
+  window.TraubeGuidedStudy=api;
 })();
 
 
-/* LURIA GLOBAL DESKTOP SHELL CHROME v1 — 2026-10-04 */
+/* TRAUBE GLOBAL DESKTOP SHELL CHROME v1 — 2026-10-04 */
 (() => {
   if (window.__luriaGlobalDesktopShellChrome) return;
   window.__luriaGlobalDesktopShellChrome = true;
@@ -8130,7 +8130,7 @@ iniciarApp();
 })();
 
 
-/* LURIA GLOBAL MASTER CSS ENSURE v96 — 2026-10-05
+/* TRAUBE GLOBAL MASTER CSS ENSURE v96 — 2026-10-05
    Reutiliza a folha global já presente no <head>. Nunca injeta uma segunda
    cópia depois do CSS específico da página, pois isso altera a cascata e causa layout shift. */
 (() => {
@@ -8182,7 +8182,7 @@ iniciarApp();
 
 
 /* PWA layout rescue v34 — normalização global após os refinamentos desktop */
-(function installLuriaPwaLayoutRescue(){
+(function installTraubePwaLayoutRescue(){
   if(document.getElementById("luria-pwa-layout-rescue-v34")) return;
   const style=document.createElement("style");
   style.id="luria-pwa-layout-rescue-v34";
@@ -8490,8 +8490,8 @@ iniciarApp();
 })();
 
 
-/* LURIA PWA SIDEBAR FOOTER FIX v37 — 2026-10-08 */
-(function installLuriaPwaSidebarFooterFixV37(){
+/* TRAUBE PWA SIDEBAR FOOTER FIX v37 — 2026-10-08 */
+(function installTraubePwaSidebarFooterFixV37(){
   if(document.getElementById("luria-pwa-sidebar-footer-fix-v37"))return;
   const style=document.createElement("style");
   style.id="luria-pwa-sidebar-footer-fix-v37";

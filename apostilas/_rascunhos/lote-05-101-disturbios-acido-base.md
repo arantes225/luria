@@ -1,4 +1,4 @@
-# LURIA — Apostila 101: Distúrbios ácido-base e interpretação sistemática da gasometria
+# TRAUBE — Apostila 101: Distúrbios ácido-base e interpretação sistemática da gasometria
 
 **Lote editorial:** 5, tema 101 de 260 · **Área:** Clínica Médica e Medicina Intensiva · **Situação:** RASCUNHO ORIGINAL, NÃO APROVADO OU PUBLICADO · **Data de preparação:** 14/10/2026.
 
@@ -6,7 +6,7 @@
 
 ## 0. Auditoria inicial obrigatória — o que existia, o que foi lido e o que precisa ser corrigido
 
-### 0.1. Relação com a biblioteca LURIA
+### 0.1. Relação com a biblioteca TRAUBE
 
 O índice do Lote 5 identifica o tema **101 — Distúrbios ácido-base**. A inspeção prévia da listagem \`apostilas/\` não encontrou uma pasta publicada com esse título. Entretanto, a apostila **096 — Distúrbios hidroeletrolíticos** já apresenta aspectos de pH, osmolaridade, sódio, potássio e função renal. Este texto novo deve ser independente para explicar todos os conceitos acidobásicos fundamentais, mas **não deve repetir** a farmacoterapia detalhada dos eletrólitos que pertence à 096. O conteúdo anterior não foi apagado.
 
@@ -14,9 +14,9 @@ O modelo visual da apostila \`apostilas/amniorrexe-prematura/index.html\` foi ef
 
 ### 0.2. Etapa zero — benchmarking com documentos reais do Drive
 
-**Material A — \`07 - GASOMETRIA ARTERIAL - PARTE 1.pdf\`.** Arquivo aberto e lido integralmente como texto (~6,7 mil caracteres). Aborda tampão CO₂/HCO₃⁻, pH, PaCO₂, bicarbonato, acidoses e alcaloses, fórmula de Winter e compensação respiratória. Problemas detectados: a compensação da **acidose respiratória crônica** foi descrita em um ponto como aumento de apenas 2 mEq/L de bicarbonato por 10 mmHg de CO₂; valores de referência e cálculos foram misturados; a fórmula de ânion gap foi impressa de modo inconsistente em um trecho. A apostila LURIA ensinará compensação crônica aproximada de **3,5–4 mEq/L por 10 mmHg** de aumento de PaCO₂, com referência atual independente.
+**Material A — \`07 - GASOMETRIA ARTERIAL - PARTE 1.pdf\`.** Arquivo aberto e lido integralmente como texto (~6,7 mil caracteres). Aborda tampão CO₂/HCO₃⁻, pH, PaCO₂, bicarbonato, acidoses e alcaloses, fórmula de Winter e compensação respiratória. Problemas detectados: a compensação da **acidose respiratória crônica** foi descrita em um ponto como aumento de apenas 2 mEq/L de bicarbonato por 10 mmHg de CO₂; valores de referência e cálculos foram misturados; a fórmula de ânion gap foi impressa de modo inconsistente em um trecho. A apostila TRAUBE ensinará compensação crônica aproximada de **3,5–4 mEq/L por 10 mmHg** de aumento de PaCO₂, com referência atual independente.
 
-**Material B — \`08 - GASOMETRIA ARTERIAL - PARTE 2.pdf\`.** Arquivo aberto e lido integralmente como texto (~8,9 mil caracteres). Aborda ânion gap corrigido por albumina, relação delta, acidose tubular renal, ânion gap urinário e cloro urinário na alcalose metabólica. Divergências identificadas: uso de denominadores 24 e 25 mEq/L em pontos diferentes, limiares rígidos de cloro urinário sem alerta de efeito de diuréticos e simplificação excessiva de interpretação do gap urinário. A redação LURIA esclarecerá dependência de laboratório, limitações e contexto clínico.
+**Material B — \`08 - GASOMETRIA ARTERIAL - PARTE 2.pdf\`.** Arquivo aberto e lido integralmente como texto (~8,9 mil caracteres). Aborda ânion gap corrigido por albumina, relação delta, acidose tubular renal, ânion gap urinário e cloro urinário na alcalose metabólica. Divergências identificadas: uso de denominadores 24 e 25 mEq/L em pontos diferentes, limiares rígidos de cloro urinário sem alerta de efeito de diuréticos e simplificação excessiva de interpretação do gap urinário. A redação TRAUBE esclarecerá dependência de laboratório, limitações e contexto clínico.
 
 **Material C — \`06 - DIABETES - EMERGENCIAS HIPERGLICEMICAS (CAD E EHH).pdf\`.** Foi aberto e lido como complemento contextual, principalmente para interpretação de CAD, beta-hidroxibutirato, cetose e acidose. Os critérios antigos de CAD enfatizam glicemia >250 mg/dL e usam o ânion gap como critério de resolução; **não reproduzir isso como definição atual**: o consenso ADA/EASD 2024 adotou glicemia ≥200 mg/dL ou história prévia de diabetes, com cetose e acidose, e recomenda beta-hidroxibutirato como indicador central. Não copiar protocolo de insulina/fluido desse resumo sem validação vigente.
 
@@ -32,7 +32,7 @@ O modelo visual da apostila \`apostilas/amniorrexe-prematura/index.html\` foi ef
 
 ### 0.4. Matriz de cobertura
 
-| Competência | Benchmark do Drive | Objetivo LURIA |
+| Competência | Benchmark do Drive | Objetivo TRAUBE |
 |---|---|---|
 | Fisiologia CO₂–HCO₃⁻ | Resumo | Ensinar equação, pulmão, rim e tempo de compensação |
 | Leitura da gasometria | Presente | Algoritmo em etapas, com ressalvas de exame venoso/arterial |
@@ -94,7 +94,7 @@ Esses intervalos são **referências, não limites universais**. Idade, gravidez
 
 Amostra colhida de acesso com infusão contaminante, demora de processamento, bolha de ar, heparina excessiva ou identificação incorreta podem produzir leituras enganosas. Se pH, PaCO₂ e HCO₃⁻ não se relacionam fisiologicamente pela equação esperada, ou diferem drasticamente da situação clínica, verificar exame antes de definir diagnóstico raro. Não atrasar suporte de pessoa instável por preciosismo laboratorial.
 
-## 3. Leitura em seis etapas — algoritmo original LURIA
+## 3. Leitura em seis etapas — algoritmo original TRAUBE
 
 **Etapa 1 — paciente e segurança.** Há choque, alteração de consciência, trabalho respiratório grave, arritmia, intoxicação ou insuficiência respiratória? Tratar prioridades ABC ao mesmo tempo que se interpreta o exame. A gasometria nunca autoriza ignorar hipoxemia ou instabilidade.
 
@@ -681,6 +681,6 @@ E. O cloro urinário decide sozinho a dose de bicarbonato IV.
 - Acrescentar casos sequenciais com resolução integral, exames seriados, pelo menos quatro questões complexas com misturas ácido-base e interpretações.
 - Validar referências nacionais adicionais, esquemas terapêuticos aplicáveis no Brasil e corrigir qualquer desatualização.
 - Consolidar textos sem repetição, medir caracteres didáticos úteis, produzir imagens e submetê-las à curadoria do Admin.
-- Fazer revisão independente por clínico/nefrologista/intensivista, matriz de autossuficiência com âncoras internas, migração para renderer LURIA e inspeção desktop/PWA.
+- Fazer revisão independente por clínico/nefrologista/intensivista, matriz de autossuficiência com âncoras internas, migração para renderer TRAUBE e inspeção desktop/PWA.
 
 **Status:** manuscrito educacional em elaboração; doses e decisões práticas exigem protocolo de serviço e revisão clínica antes de publicação comercial.

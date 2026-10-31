@@ -238,7 +238,7 @@ self.addEventListener("activate", event => {
 
 self.addEventListener("message", event => {
   const data = event.data || {};
-  if (data.type !== "LURIA_PREFETCH_WEEKLY_CONTENT") return;
+  if (data.type !== "TRAUBE_PREFETCH_WEEKLY_CONTENT") return;
   // Only a same-origin client can ask for the existing public weekly packages.
   if (!event.source?.url || new URL(event.source.url).origin !== self.location.origin) return;
   const requests = (Array.isArray(data.urls) ? data.urls : []).slice(0, 12).flatMap(value => {

@@ -1,4 +1,4 @@
-# LURIA — LOTE 07 | AULA 128
+# TRAUBE — LOTE 07 | AULA 128
 # Sepse e choque séptico pediátrico — reconhecimento e ressuscitação conforme 2026
 
 **Área:** Pediatria / Emergência / Terapia Intensiva  
@@ -8,11 +8,11 @@
 
 ## 0. Antes de escrever: auditoria de sobreposição e referências de Drive
 
-**Auditoria na LURIA:** em “apostilas/sepse-choque-septico/” já existem os rascunhos “rascunho-editorial-lote09.md” e “complemento-editorial-02-lote09.md”, ambos de **sepse no adulto (aula 161)**, que descrevem SOFA, qSOFA, lactato e protocolos de adulto. Eles foram lidos. A segunda versão afirma explicitamente que particularidades pediátricas pertencem a outro capítulo. **Não alterar esses arquivos e não copiar SOFA adulto para uma criança.** Este livro trata apenas do universo pediátrico; sepse neonatal e prematuridade têm ainda algoritmos próprios.
+**Auditoria na TRAUBE:** em “apostilas/sepse-choque-septico/” já existem os rascunhos “rascunho-editorial-lote09.md” e “complemento-editorial-02-lote09.md”, ambos de **sepse no adulto (aula 161)**, que descrevem SOFA, qSOFA, lactato e protocolos de adulto. Eles foram lidos. A segunda versão afirma explicitamente que particularidades pediátricas pertencem a outro capítulo. **Não alterar esses arquivos e não copiar SOFA adulto para uma criança.** Este livro trata apenas do universo pediátrico; sepse neonatal e prematuridade têm ainda algoritmos próprios.
 
 **Pesquisa e leitura no Drive:** não foi localizado título equivalente de “sepse pediátrica e choque séptico” com abordagem integral. Foram abertos “Sepse neonatal.pdf” (~2 mil caracteres), que lista fatores materno-neonatais e agentes do período neonatal, e “01 - RESUMO - PEDIATRIA - INTENSIVA - SEDOANALGESIA E SRI.pdf” (~15 mil caracteres), que aborda analgesia, sedação, intubação e ventilação/risco de eventos adversos. Ambos são **referências parciais**. A autoria institucional Estratégia MED não foi comprovada. O material neonatal tem critérios e esquemas que não podem ser extrapolados para qualquer criança de três anos; o resumo de sedoanalgesia não é diretriz específica de sepse. Os PDFs não são fonte de doses nem figuras reproduzíveis.
 
-**Matriz de lacunas identificadas no conteúdo correlato da LURIA:** ausência de classificação pediátrica Phoenix, diferenças de protocolos entre serviços com e sem leitos intensivos, contextualização da hipotensão tardia, limites dos bolus de cristalóide, atualização de 2026 sobre início precoce de drogas vasoativas e incerteza sobre epinefrina versus norepinefrina, princípios de controle de foco e seguimento funcional.
+**Matriz de lacunas identificadas no conteúdo correlato da TRAUBE:** ausência de classificação pediátrica Phoenix, diferenças de protocolos entre serviços com e sem leitos intensivos, contextualização da hipotensão tardia, limites dos bolus de cristalóide, atualização de 2026 sobre início precoce de drogas vasoativas e incerteza sobre epinefrina versus norepinefrina, princípios de controle de foco e seguimento funcional.
 
 ## 1. Entender a resposta à infecção no desenvolvimento infantil
 
@@ -166,7 +166,7 @@ Petéquias, púrpura, alteração neurológica, convulsão e choque exigem abord
 
 **Raciocínio crítico:** diagnóstico diferencial não significa protelar antibiótico em choque com infecção provável. Significa procurar simultaneamente causas coexistentes e condições que requerem terapia imediata distinta.
 
-## 10. Algoritmo textual de emergência pediátrica LURIA
+## 10. Algoritmo textual de emergência pediátrica TRAUBE
 
 1. Criança agudamente doente → **ABCDE**, avaliação rápida de respiração, consciência, perfusão, glicemia, contexto infeccioso e sinais de perigo.
 2. Suspeita de choque/infeção com disfunção → acionar equipe de ressuscitação/UTI e organizar transferência conforme estrutura.
@@ -279,7 +279,7 @@ C. Vitamina C/tiamina são terapia comprovada universal para sepse.
 D. SSC 2026 sugere não usar hidrocortisona rotineira após estabilização; insuficiência adrenal conhecida/suspeita é situação específica.
 **Gabarito D.** Corticoide não é padrão em todo choque; **A** generaliza, **B** atrasa tratamento quando insuficiência adrenal real é suspeita e **C** atribui benefício universal sem evidência. **Conceito:** intervenções adjuvantes devem ter indicação e evidência própria.
 
-## 13. Pérolas LURIA e prevenção de erros
+## 13. Pérolas TRAUBE e prevenção de erros
 
 1. Criança hipoperfundida com PA “normal” pode estar em choque; **hipotensão não é requisito de entrada na ressuscitação**.
 2. Febre + taquicardia isoladas podem ser SIRS, não prova de sepse.

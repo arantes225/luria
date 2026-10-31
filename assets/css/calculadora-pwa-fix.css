@@ -1,4 +1,4 @@
-/* LURIA · Calculadoras — dialog responsivo e seguro para iOS PWA
+/* TRAUBE · Calculadoras — dialog responsivo e seguro para iOS PWA
    Isolado na pagina: nao altera os demais modais do Trabalho. */
 body[data-page="trabalho_calculadora"] .calc-modal,
 body[data-page="trabalho_calculadora"] .calc-modal *,

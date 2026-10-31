@@ -1,4 +1,4 @@
--- LURIA Plantão / Casos Clínicos
+-- TRAUBE Plantão / Casos Clínicos
 -- Estrutura de conteúdo versionável + sessões por usuário.
 
 create extension if not exists pgcrypto;

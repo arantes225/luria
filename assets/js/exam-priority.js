@@ -1,5 +1,5 @@
 (function(){
-  const raw=window.LURIA_EXAM_PRIORITY_DATA||{exams:[],themes:[]};
+  const raw=window.TRAUBE_EXAM_PRIORITY_DATA||{exams:[],themes:[]};
   const exams=raw.exams||[];
   const normalize=(value)=>String(value||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
   const records=(raw.themes||[]).map((row)=>({
@@ -78,8 +78,8 @@
   }
 
   // Gancho futuro: a IA poderá registrar equivalências entre títulos de cursinhos e o tema canônico.
-  // Ex.: LuriaExamPriority.registerAlias("SCA: diagnóstico e manejo","Síndromes coronarianas agudas")
-  window.LuriaExamPriority={
+  // Ex.: TraubeExamPriority.registerAlias("SCA: diagnóstico e manejo","Síndromes coronarianas agudas")
+  window.TraubeExamPriority={
     exams:[...exams],
     positionWeights:[...POSITION_WEIGHTS],
     normalize,

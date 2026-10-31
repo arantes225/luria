@@ -1,15 +1,15 @@
-# LURIA | Lote 7 — Aula 122
+# TRAUBE | Lote 7 — Aula 122
 # Perfuração de víscera oca e abdome agudo perfurativo
 
 > **ESTADO EDITORIAL: RASCUNHO AVANÇADO EM DESENVOLVIMENTO; NÃO PUBLICADO; NÃO CERTIFICADO PELO PROMPT MAGNO.**  
-> Data da revisão inicial: 14/10/2026. Área: Cirurgia Geral. Lote de aulas 121–140 do cronograma-base da LURIA.  
+> Data da revisão inicial: 14/10/2026. Área: Cirurgia Geral. Lote de aulas 121–140 do cronograma-base da TRAUBE.  
 > Este caderno é material educacional. Decisões reais devem seguir avaliação de cirurgia de emergência, estabilidade do paciente e protocolos institucionais.  
 > **Controle de qualidade:** revisar dosagens específicas e referências nacionais; auditar 60 mil caracteres úteis, desempenho em casos inéditos e layout desktop/PWA antes de promover para produção.
 
 ## Registro obrigatório da etapa zero — benchmark pedagógico
 
 - **Material do Google Drive efetivamente aberto:** “13 - ABDOME AGUDO PERFURATIVO.pdf”, texto recuperado e lido em 14/10/2026. Cerca de 4 mil caracteres de tópicos sobre úlcera perfurada, pneumoperitônio, sítios gastrointestinais, achados radiográficos e cirurgia. O próprio texto exibe identificação de circulação “Medicina livre”; **não foi verificada autoria da Estratégia MED**.
-- **Comparação com LURIA:** a pasta “apostilas/perfuracao-de-viscera-oca” não estava presente no inventário nominal consultado. Este rascunho inaugura cobertura específica, sem modificar apostilas aprovadas nem copiar estrutura textual ou figuras do comparativo.
+- **Comparação com TRAUBE:** a pasta “apostilas/perfuracao-de-viscera-oca” não estava presente no inventário nominal consultado. Este rascunho inaugura cobertura específica, sem modificar apostilas aprovadas nem copiar estrutura textual ou figuras do comparativo.
 - **Lacunas do benchmark:** diferenças entre perfuração livre, bloqueada, contida e retroperitoneal; fisiologia do peritônio; interpretação e limitações da radiografia e TC; raciocínio por topografia; sepse e controle de foco; critérios rigorosos para não operar; papel e limitações de laparoscopia; câncer em úlcera gástrica; manejo das perfurações colônicas; seguimento e antibiótico segundo controle de foco; questões e casos com resolução de cada alternativa.
 - **Cautela científica:** o comparativo traz porcentagens etiológicas muito categóricas para H. pylori e recomendações cirúrgicas uniformes para perfurações esofágicas. Essas afirmações não são reproduzidas como verdades universais: a indicação depende da etiologia, topografia, viabilidade e estabilidade, com atualização em fontes primárias.
 - **Fontes clínicas verificadas separadamente:** WSES, diretrizes sobre úlcera péptica perfurada (2020) e infecções intra-abdominais (2017). São referências de princípios, não substituem protocolos do serviço e literatura mais nova específica para cada sítio.

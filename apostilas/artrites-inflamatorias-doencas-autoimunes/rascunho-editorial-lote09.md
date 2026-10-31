@@ -1,4 +1,4 @@
-# LURIA | Aula 171 — Artrites inflamatórias e doenças autoimunes
+# TRAUBE | Aula 171 — Artrites inflamatórias e doenças autoimunes
 
 **Área do cronograma:** Clínica Médica — Reumatologia  
 **Lote:** 09 · Aula 171 de 180 · **Versão editorial:** 14/10/2026  
@@ -6,7 +6,7 @@
 **Estado de publicação:** RASCUNHO EDITORIAL; não publicado no site, não validado por reumatologista.  
 **Base documental brasileira:** PCDT Artrite Reumatoide — Portaria Conjunta SAES/SCTIE nº 33, de **19/01/2026** (página atualizada em 19/05/2026); PCDT Artrite Psoriásica atualizado em 23/01/2026; PCDT Espondilite Ancilosante alterado em 18/06/2025; PCDT Lúpus Eritematoso Sistêmico com anexo alterado em 16/11/2022; PCDT de Vasculites ANCA publicado em novembro de 2025; PCDT de Esclerose Sistêmica com alteração de 2022.
 
-> **Pulo do Gato LURIA:** **dor articular não é sinônimo de artrite**, FAN positivo não equivale a lúpus, FR positivo não confirma artrite reumatoide e ácido úrico elevado não prova gota. Em uma articulação agudamente quente e inchada, **excluir artrite séptica vem antes de corticoide ou de chamar de crise autoimune**.
+> **Pulo do Gato TRAUBE:** **dor articular não é sinônimo de artrite**, FAN positivo não equivale a lúpus, FR positivo não confirma artrite reumatoide e ácido úrico elevado não prova gota. Em uma articulação agudamente quente e inchada, **excluir artrite séptica vem antes de corticoide ou de chamar de crise autoimune**.
 
 ## 1. Objetivos clínicos e roteiro de estudo
 
@@ -150,7 +150,7 @@ Dor torácica e dispneia podem representar serosite, cardiopatia não inflamató
 | HLA-B27 | Modifica probabilidade de espondiloartrite axial conforme quadro | Não é teste confirmatório; muitos positivos nunca adoecem |
 | Antifosfolípides | Avaliar SAF em trombose/obstetrícia sugestiva e LES selecionado | Positividade transitória não fecha SAF; persistência e critérios clínicos importam |
 
-**Regra LURIA:** exames devem **testar hipóteses que nasceram do quadro clínico**, não gerar diagnóstico por varredura indiscriminada de autoanticorpos.
+**Regra TRAUBE:** exames devem **testar hipóteses que nasceram do quadro clínico**, não gerar diagnóstico por varredura indiscriminada de autoanticorpos.
 
 ### 7.3. Exames de imagem
 
@@ -510,7 +510,7 @@ AINEs, corticoides e classes-alvo apresentam diferentes efeitos CV/renais. AR e 
 ### Fenômenos de sobreposição
 Pessoas podem preencher elementos de LES, esclerose sistêmica, miopatia, AR ou Sjögren; doenças mistas/sobreposição existem. A presença de um autoanticorpo isolado não autoriza inventar síndrome completa. O plano deve ser orientado pelo órgão e pelo risco real.
 
-## 26. Algoritmos LURIA — da queixa à decisão
+## 26. Algoritmos TRAUBE — da queixa à decisão
 
 ### A. Articulação quente e inchada em poucas horas
 
@@ -821,7 +821,7 @@ Os casos são inteiramente **fictícios e autorais** para ensino de reumatologia
 **Por que este caso importa:** Uma gestação segura em LES é planejada com controle da doença e ajuste de fármacos; suspensão total por conta própria pode ser perigosa.
 
 
-## 32. Questões autorais LURIA — 18 questões de prova corrigidas por alternativa
+## 32. Questões autorais TRAUBE — 18 questões de prova corrigidas por alternativa
 
 Questões inéditas para estudo. Cada alternativa contém justificativa, seguida de mini-revisão. A pontuação de critérios, doses e regulamentações devem ser revalidadas na revisão médica final da versão publicada.
 
@@ -1225,7 +1225,7 @@ A prioridade é usar imagens reais de ultrassom, radiografia, RM, TC, microscopi
 | 13 | TCAR em doença intersticial associada a autoimunidade | Padrão de alterações intersticiais com contexto clínico. | TC real com procedência, legenda e exclusão de diagnósticos diferenciais. |
 | 14 | Angioimagem de grandes vasos na arterite de Takayasu | Demonstra estenoses e alteração vascular em regiões pertinentes. | Exame real institucional licenciado. |
 | 15 | Púrpura palpável em vasculite de pequenos vasos | Padrão morfológico e topográfico, com limitações. | Fotografia dermatológica clínica autorizada. |
-| 16 | Hierarquia da abordagem da monoartrite aguda | Derrame → punção → cultura/Gram/cristais → antibiótico/drenagem se sepse. | Fluxograma original LURIA baseado na SANJO. |
+| 16 | Hierarquia da abordagem da monoartrite aguda | Derrame → punção → cultura/Gram/cristais → antibiótico/drenagem se sepse. | Fluxograma original TRAUBE baseado na SANJO. |
 | 17 | Treat-to-target na AR | Linha do tempo de avaliação da atividade, resposta, ajuste e remissão. | Diagrama autoral com referência PCDT AR 2026. |
 | 18 | Quadro de screening pré-biológico | TB, hepatites, vacinas, exames basais, gravidez e comorbidades. | Tabela visual original com checagem farmacêutica. |
 
@@ -1234,7 +1234,7 @@ A prioridade é usar imagens reais de ultrassom, radiografia, RM, TC, microscopi
 1. Selecionar exames autênticos de fonte hospitalar/universitária ou atlas com direito de reprodução, com **legenda interpretativa**, não somente título da doença.
 2. Não assumir que PDF de diretriz ou figura encontrada em site institucional permite reutilização comercial sem verificar licença/autorização.
 3. Em fotos clínicas, exigir consentimento/anonimização e incluir pele de diferentes tonalidades para evitar viés diagnóstico.
-4. Converter imagens aprovadas em WebP com limite de peso correspondente ao tipo de mídia LURIA; manter nitidez de RX, TC, RM e microscopia.
+4. Converter imagens aprovadas em WebP com limite de peso correspondente ao tipo de mídia TRAUBE; manter nitidez de RX, TC, RM e microscopia.
 5. Criar alternativa textual que descreva achados e suas limitações.
 6. Conferir responsive/PWA e garantir ampliação dos exames com legenda acessível.
 7. Registrar autor/origem, licença, data, capítulo, revisão médica e versão de arquivo.
@@ -1265,7 +1265,7 @@ A prioridade é usar imagens reais de ultrassom, radiografia, RM, TC, microscopi
 - [ ] Revisão por reumatologista e farmacêutico clínico, especialmente doses e contraindicações.
 - [ ] Conferência atualizada de PCDTs e incorporação de fármacos.
 - [ ] Obtenção, licença, otimização e aprovação das imagens.
-- [ ] Transformação para HTML/content.json conforme padrão nativo da LURIA.
+- [ ] Transformação para HTML/content.json conforme padrão nativo da TRAUBE.
 - [ ] Teste visual e de acessibilidade desktop/PWA.
 - [ ] Validação da integração ao cronograma, às questões e à busca do site.
 
@@ -1470,7 +1470,7 @@ As dezoito questões anteriores formam o bloco principal; as seis questões adic
 
 A **EULAR 2025 Update**, publicada em 13/03/2026 e no periódico *Annals of the Rheumatic Diseases* em junho de 2026, reduziu recomendações terapêuticas de AR a nove itens mais princípios gerais. Ela reforça metotrexato como início usual, idealmente associado a glicocorticoide por **curto período e com desmame planejado**, e, quando resposta permanece insuficiente após **três a seis meses**, adicionar biológico conforme risco e contexto. Inibidores JAK exigem avaliação cuidadosa de eventos cardiovasculares maiores, malignidade e tromboembolismo. Após remissão sustentada, redução gradual pode ser discutida, mas interrupção completa aumenta risco de flare.
 
-**Não confundir recomendação internacional com rol de acesso do SUS.** Para prescrição e elegibilidade na LURIA, consultar primeiro a **Portaria Conjunta SAES/SCTIE nº 33/2026 e respectivo PCDT**. Sequências e fármacos disponíveis podem diferir das diretrizes EULAR.
+**Não confundir recomendação internacional com rol de acesso do SUS.** Para prescrição e elegibilidade na TRAUBE, consultar primeiro a **Portaria Conjunta SAES/SCTIE nº 33/2026 e respectivo PCDT**. Sequências e fármacos disponíveis podem diferir das diretrizes EULAR.
 
 **Referência específica:** Smolen JS et al. EULAR recommendations for the management of rheumatoid arthritis with synthetic and biologic disease-modifying antirheumatic drugs: 2025 update. *Ann Rheum Dis*. 2026;85:991–1009. DOI: https://doi.org/10.1016/j.ard.2026.01.023 ; PubMed: https://pubmed.ncbi.nlm.nih.gov/41826212/ .
 
@@ -1494,7 +1494,7 @@ A **EULAR 2025 Update**, publicada em 13/03/2026 e no periódico *Annals of the 
 - [ ] Revisão independente por reumatologia e farmácia clínica de posologias, interações e critérios do PCDT.
 - [ ] Revisão especialista de emergências de vasculite/LES, diagnósticos por anticorpos e risco gestacional.
 - [ ] Curadoria de fonte, licença, nitidez, aprovação e compressão WebP das 18 candidatas.
-- [ ] Conversão para renderer nativo LURIA (HTML/content.json), incluindo índice, questionários e legendas.
+- [ ] Conversão para renderer nativo TRAUBE (HTML/content.json), incluindo índice, questionários e legendas.
 - [ ] Testes visuais de desktop/PWA, links, acessibilidade, navegação e desempenho.
 - [ ] Registro de aprovador, data e versão para atualização contínua.
 

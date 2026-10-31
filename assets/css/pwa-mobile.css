@@ -1,4 +1,4 @@
-/* LURIA PWA mobile refinements — loaded after page-specific CSS */
+/* TRAUBE PWA mobile refinements — loaded after page-specific CSS */
 @media (max-width: 760px) {
   /* Global PWA density */
   .pwa-standalone body[data-page="cronograma"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
@@ -4432,7 +4432,7 @@ body[data-page="cronograma"] .page #week-planner .week-matrix-cell{cursor:defaul
 body[data-page="flashcards"].flash-review-session-active .page #review-launcher{display:none!important}
 
 
-/* LURIA PWA global normalization v35 */
+/* TRAUBE PWA global normalization v35 */
 @media (max-width: 980px) {
   .pwa-standalone body,
   html.pwa-standalone body {

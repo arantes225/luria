@@ -47,7 +47,7 @@
     notice.setAttribute("aria-live", "polite");
     notice.style.cssText = "position:fixed;bottom:calc(var(--ui-bottom-navigation,env(safe-area-inset-bottom,0px)) + 12px);left:12px;right:12px;z-index:2147483646;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-radius:16px;background:#172033;color:#fff;box-shadow:0 8px 32px #0004;font:14px system-ui";
     const message = document.createElement("span");
-    message.textContent = "Atualização do LURIA disponível.";
+    message.textContent = "Atualização do TRAUBE disponível.";
     const button = document.createElement("button");
     button.type = "button";
     button.textContent = "Atualizar agora";
@@ -78,7 +78,7 @@
       await registration.update();
     } catch (error) {
       registrationPromise = null;
-      console.warn("Não foi possível atualizar o PWA do LURIA:", error);
+      console.warn("Não foi possível atualizar o PWA do TRAUBE:", error);
     }
   }
 

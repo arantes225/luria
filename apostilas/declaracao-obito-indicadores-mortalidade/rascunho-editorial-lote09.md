@@ -1,4 +1,4 @@
-# LURIA — Aula 175 | Declaração de óbito e indicadores de mortalidade
+# TRAUBE — Aula 175 | Declaração de óbito e indicadores de mortalidade
 
 **Área:** Medicina Preventiva, Saúde Coletiva, Epidemiologia, Medicina Legal, Obstetrícia e Pediatria  
 **Lote 09 · Aula 175 de 180 · Versão editorial: 15/10/2026**  
@@ -6,7 +6,7 @@
 
 **Base prioritária:** Ministério da Saúde — *Declaração de Óbito: Manual de Instruções para Preenchimento* (página oficial atualizada em 10/07/2026); manual de vigilância do óbito de causa natural inespecífica (2024); Resolução CFM nº 1.779/2005; Portaria SVS/MS nº 116/2009; Código de Ética Médica (Resolução CFM nº 2.217/2018); SIM e SINASC; Lei nº 15.139/2025 e Portaria GM/MS nº 10.273/2026 (luto materno e parental).
 
-> **Pulo do Gato LURIA:** Na DO, a **causa imediata aparece na primeira linha da Parte I; a causa básica inicia a cadeia de eventos e ocupa a última linha utilizada da Parte I**. A Parte II reúne condições contribuintes que não integram diretamente essa cadeia. **Parada cardiorrespiratória é mecanismo terminal, não causa básica de morte.** Nas provas de indicadores, pergunte sempre: “qual é o numerador, qual é o denominador, qual o multiplicador e qual o período?”
+> **Pulo do Gato TRAUBE:** Na DO, a **causa imediata aparece na primeira linha da Parte I; a causa básica inicia a cadeia de eventos e ocupa a última linha utilizada da Parte I**. A Parte II reúne condições contribuintes que não integram diretamente essa cadeia. **Parada cardiorrespiratória é mecanismo terminal, não causa básica de morte.** Nas provas de indicadores, pergunte sempre: “qual é o numerador, qual é o denominador, qual o multiplicador e qual o período?”
 
 ## 1. Objetivos de aprendizagem e relevância clínica
 
@@ -545,7 +545,7 @@ A lei e a portaria de 2025/2026 fortalecem acolhimento, privacidade, possibilida
 
 Não dizer “foi só um aborto”, “vocês são jovens e podem tentar de novo” ou “não há o que fazer porque não completou 20 semanas”. Tais frases confundem classificação de vigilância com experiência humana e podem ampliar sofrimento. Oferecer opções compatíveis com cultura, religião, desejo e segurança.
 
-## 22. Algoritmos LURIA em fluxo textual
+## 22. Algoritmos TRAUBE em fluxo textual
 
 ### Fluxo A — Qual serviço deve emitir DO?
 
@@ -670,7 +670,7 @@ Verificar mesma definição, período e unidade de residência → calcular taxa
 - [x] Curadoria planejada de 15 diagramas (seção 29), com produção e licença ainda pendentes.
 - [ ] Revisão por médico com experiência em emissão de DO e codificador SIM.
 - [ ] Revisão legislativa/federativa e de humanização do luto.
-- [ ] Integração HTML/content.json no renderizador LURIA e PWA.
+- [ ] Integração HTML/content.json no renderizador TRAUBE e PWA.
 - [ ] Validação de conteúdo, links e testes de acessibilidade antes de publicar.
 
 **O material ainda não corresponde a DO oficial preenchida e não deve ser usado para emitir documento médico sem conferência da legislação e procedimentos locais.**
@@ -1344,14 +1344,14 @@ O tema exige mais **diagramas, linhas do tempo e fluxos de causalidade** que ima
 
 - Usar **dados fictícios** em qualquer DO ilustrativa; nunca mostrar números de formulário e dados reais de familiares.
 - Revisar causa básica/imediata e os intervalos nos desenhos com codificador do SIM.
-- Fazer diagramas acessíveis em cores LURIA e alternativa textual longa, especialmente fórmulas.
+- Fazer diagramas acessíveis em cores TRAUBE e alternativa textual longa, especialmente fórmulas.
 - Checar direitos autorais de captura do formulário oficial e preferir **recriação de esquema educativo**, citando o manual.
 - Converter diagramas para WebP quando forem imagens, manter vetor-fonte quando possível e evitar compressão que destrua texto pequeno.
 - Em fluxos legais, identificar **norma, data de revisão e diferença entre obrigação de DO, definição biológica de óbito e direitos da família**.
 - Separar no app fluxogramas clínicos, tabelas numéricas e questões; validar responsividade e leitura no PWA.
 - Não alegar que as imagens já foram integradas; as 15 propostas aguardam seleção/autoria/licença.
 
-## 30. Integração curricular e prática LURIA
+## 30. Integração curricular e prática TRAUBE
 
 A aula 175 apoia diretamente a **aula 170 (Ética médica, sigilo e prontuário)** porque a documentação de morte deve ser verdadeira, protegida e rastreável; a **aula 163 (Violência contra crianças)** quando há suspeita de causa externa; a **aula 168 (Adolescência)** na atenção a gestante adolescente; a **aula 173 (Urgências pediátricas)** no cuidado neonatal fora da sala de parto; e a **aula 180 (Cuidados paliativos)** no diálogo com familiares e decisões proporcionais.
 
@@ -1404,7 +1404,7 @@ Todo item de cálculo deve informar período, mesmo território, faixa etária/c
 - [ ] Validar integralmente recortes estatísticos e fórmulas sob a versão do MS/RIPSA adotada, incluindo perdas fetais antes do limiar.
 - [ ] Revisão editorial da clareza dos casos e da precisão das causas naturais/externalidades.
 - [ ] Produção, licenciamento e aprovação das 15 imagens/diagramas.
-- [ ] Converter para HTML/content.json no padrão LURIA, indexar no cronograma e testar PWA/desktop.
+- [ ] Converter para HTML/content.json no padrão TRAUBE, indexar no cronograma e testar PWA/desktop.
 - [ ] Conferir todos os links das referências e registrar auditoria científica com data/responsável.
 - [ ] Não declarar o rascunho como formulário oficial preenchido ou protocolo médico obrigatório.
 
