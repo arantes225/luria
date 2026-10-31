@@ -54,6 +54,8 @@ for (const page of ['caderno.html', 'caderno/index.html']) {
 module.exports.resources['trabalho/passometro/index.html'] = {scriptSrc: [
   'https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js'
 ]};
+// PDF gerado localmente na página Diabetes: somente o jsPDF versionado e auditado.
+module.exports.resources['trabalho/diabetes/index.html'] = {scriptSrc: [jsPdf]};
 for (const page of ['trabalho/pcr/executar/index.html', 'trabalho/pcr/historico/index.html']) {
   // Same reviewed jsPDF version as the lazy loader and other PDF consumers.
   module.exports.resources[page] = {scriptSrc: ['https://cdn.jsdelivr.net/npm/jspdf@4.2.1/dist/jspdf.umd.min.js']};
