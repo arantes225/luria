@@ -111,11 +111,12 @@ test("Server proposes CEP -> sepse only for an actual STT result and validates m
 });
 
 test("PWA and accessible styling have a consistent fresh release",()=>{
-  const release="20261030-leco-stt-v1";
-  assert.ok(page.includes("professor-alex-gemini.mjs?v="+release));
-  assert.ok(page.includes("pwa.js?v="+release));
-  assert.ok(pwa.includes('const release = "'+release+'"'));
-  assert.ok(sw.includes('CACHE_VERSION = "luria-pwa-'+release+'"'));
+  const voiceRelease="20261030-leco-stt-v1";
+  const shellRelease="20261031-leco-actions-center1";
+  assert.ok(page.includes("professor-alex-gemini.mjs?v="+voiceRelease));
+  assert.ok(page.includes("pwa.js?v="+shellRelease));
+  assert.ok(pwa.includes('const release = "'+shellRelease+'"'));
+  assert.ok(sw.includes('CACHE_VERSION = "luria-pwa-'+shellRelease+'"'));
   assert.ok(client.includes("professor-alex-layout-20261021.css?v=stt1"));
   assert.ok(css.includes(".alex-stt-correction-apply:focus-visible"));
   assert.ok(css.includes("@media(max-width:600px)"));
