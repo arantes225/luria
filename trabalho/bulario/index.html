@@ -6,7 +6,7 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Bulário · LURIA</title>
+  <title>Bulário · TRAUBE</title>
   <meta name="theme-color" content="#184888">
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
@@ -20,7 +20,29 @@
     .bulario{display:grid;gap:14px}.bulario-head{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.bulario-chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:2px}.bulario-chip{padding:7px 12px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:12px;font-weight:750;cursor:pointer;transition:all .15s ease}.bulario-chip:hover,.bulario-chip.is-active{background:var(--accent,#184888);border-color:var(--accent,#184888);color:#fff}
     .bulario-search{flex:1;min-width:220px;padding:12px 14px;border:1px solid var(--border);border-radius:14px;background:var(--surface);color:var(--text)}
     .bulario-count{font-size:13px;color:var(--muted)}.bulario-layout{display:grid;grid-template-columns:1fr;gap:14px;align-items:start}
-    .drug-list{display:grid;gap:7px;max-height:250px;overflow:auto;padding:2px 2px 4px}.drug-row{width:100%;text-align:left;padding:12px 14px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);cursor:pointer}
+    .group{margin:18px 0 24px}
+    .group:first-of-type{margin-top:4px}
+    .group-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:10px}
+    .group-head h2{font-size:16px;font-weight:700;margin:0;color:var(--text)}
+    .group-head p{margin:2px 0 0;color:var(--muted);font-size:12px}
+    .group-head .count{background:var(--surface-2);border:1px solid var(--border);border-radius:999px;padding:4px 10px;color:var(--muted);font-size:12px;font-weight:700}
+    .calc-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .calc-card{position:relative;width:100%;display:block;border:1px solid var(--border);border-radius:16px;background:var(--surface);color:var(--text);text-align:left;overflow:hidden;box-sizing:border-box;transition:border-color .18s ease,transform .18s ease,background .18s ease,box-shadow .18s ease}
+    .calc-card:hover{border-color:color-mix(in srgb,var(--accent,#184888) 40%,var(--border));transform:translateY(-1px);box-shadow:0 6px 18px color-mix(in srgb,var(--accent,#184888) 8%,transparent)}
+    .calc-card-main{display:grid!important;grid-template-columns:48px minmax(0,1fr) 28px!important;align-items:center!important;width:100%!important;min-height:92px;padding:12px 14px!important;border:0!important;background:transparent!important;color:inherit!important;text-align:left!important;cursor:pointer;border-radius:16px;box-sizing:border-box}
+    .calc-card-main:focus-visible{outline:3px solid color-mix(in srgb,var(--accent,#184888) 25%,transparent);outline-offset:-3px}
+    .calc-code{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:color-mix(in srgb,var(--accent,#184888) 10%,var(--surface));color:var(--accent,#184888);font-size:11px;font-weight:800;letter-spacing:.02em;text-transform:uppercase;flex-shrink:0}
+    .calc-copy{min-width:0!important;padding:0 10px;text-align:left!important}
+    .calc-copy strong{display:block;font-size:15px;font-weight:750;line-height:1.28;color:var(--text)}
+    .calc-copy .drug-row-description{display:block;color:var(--muted);font-size:11.5px;margin-top:2px}
+    .calc-purpose{display:block!important;margin-top:4px!important;color:var(--muted)!important;font-size:11.5px!important;line-height:1.35!important}
+    .calc-purpose b{color:var(--text);font-weight:700}
+    .calc-meta{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:6px}
+    .calc-badge{display:inline-flex;align-items:center;min-height:22px;padding:2px 8px;border-radius:999px;background:var(--surface-2);color:var(--muted);font-size:10.5px;font-weight:700;border:1px solid var(--border)}
+    .calc-arrow{font-size:22px;color:var(--muted);justify-self:end}
+    .drug-row[aria-current="true"]{background:color-mix(in srgb,var(--accent,#184888) 8%,var(--surface))!important;border-color:var(--accent,#184888)!important;box-shadow:inset 3px 0 var(--accent,#184888)!important}
+    .drug-list{display:block;width:100%;max-height:none;overflow:visible;padding:2px}
+    @media(max-width:980px){.calc-list{grid-template-columns:1fr}}
     .drug-row[aria-current="true"]{border-color:var(--accent);box-shadow:inset 3px 0 var(--accent)}.drug-row strong,.drug-row small{display:block}.drug-row small{color:var(--muted);margin-top:3px;line-height:1.35}
     .drug-detail{padding:22px;border:1px solid var(--border);border-radius:18px;background:var(--surface);min-height:240px;display:grid;gap:14px}.drug-detail h2{margin:4px 0;font-size:1.55rem}.drug-detail h3{margin:0;font-size:1.05rem}
     .drug-detail p{line-height:1.5}.drug-detail a{color:var(--accent);font-weight:700}.drug-kicker{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}.drug-sub{color:var(--muted);margin:3px 0 0}
@@ -339,15 +361,18 @@
             <input id="drug-search" class="bulario-search" type="search" placeholder="Buscar medicamento, classe ou princípio ativo" autocomplete="off">
             <span id="drug-count" class="bulario-count"></span>
           </div>
-          <div id="drug-class-chips" class="bulario-chips" role="toolbar" aria-label="Filtrar por classe terapêutica">
+          <div id="drug-class-chips" class="bulario-chips" role="toolbar" aria-label="Filtrar por categoria clínica">
             <button type="button" class="bulario-chip is-active" data-class-chip="">Todos</button>
-            <button type="button" class="bulario-chip" data-class-chip="vasoativos">Vasoativos & Choque</button>
-            <button type="button" class="bulario-chip" data-class-chip="sri">SRI, Sedação & Analgesia</button>
-            <button type="button" class="bulario-chip" data-class-chip="cardiologia">Cardiologia & Arritmias</button>
-            <button type="button" class="bulario-chip" data-class-chip="antitromboticos">Antitrombóticos & Trombólise</button>
-            <button type="button" class="bulario-chip" data-class-chip="antimicrobianos">Antimicrobianos</button>
-            <button type="button" class="bulario-chip" data-class-chip="eletrolitos">Eletrólitos & Obstetrícia</button>
-            <button type="button" class="bulario-chip" data-class-chip="antidotos">Antídotos & Toxicologia</button>
+            <button type="button" class="bulario-chip" data-class-chip="cardiovascular">Cardiovascular</button>
+            <button type="button" class="bulario-chip" data-class-chip="renal">Renal</button>
+            <button type="button" class="bulario-chip" data-class-chip="hepatico">Hepático</button>
+            <button type="button" class="bulario-chip" data-class-chip="antimicrobianos">Antibióticos & Antimicrobianos</button>
+            <button type="button" class="bulario-chip" data-class-chip="anti-inflamatorios">Anti-inflamatórios</button>
+            <button type="button" class="bulario-chip" data-class-chip="opioides">Opioides</button>
+            <button type="button" class="bulario-chip" data-class-chip="sedacao">Sedação & Neuro</button>
+            <button type="button" class="bulario-chip" data-class-chip="antidotos">Antídotos & Tox</button>
+            <button type="button" class="bulario-chip" data-class-chip="respiratorio">Respiratório</button>
+            <button type="button" class="bulario-chip" data-class-chip="endocrino">Endócrino</button>
           </div>
           <div class="bulario-layout"><div id="drug-list" class="drug-list"><div class="empty">Carregando medicamentos…</div></div><article id="drug-detail" class="drug-detail"><div class="empty">Selecione um medicamento.</div></article></div>
         </section>

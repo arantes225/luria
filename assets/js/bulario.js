@@ -34,19 +34,188 @@
     if(!items.length)return `<p class="rx-note">${esc(emptyText)}</p>`;
     return `<div class="rx-clinical-list">${items.map(item=>`<div class="rx-clinical-item">${esc(item)}</div>`).join('')}</div>`;
   };
+  const CATEGORY_MAP = [
+    { id: 'cardiovascular', name: 'Cardiovascular', desc: 'Vasoativos, anti-hipertensivos, antiarrítmicos e anticoagulantes' },
+    { id: 'renal', name: 'Renal & Hidroeletrolítico', desc: 'Diuréticos, eletrólitos e reposições' },
+    { id: 'hepatico', name: 'Gastrointestinal & Hepático', desc: 'Antieméticos, antiulcerosos e suporte digestivo/hepático' },
+    { id: 'antimicrobianos', name: 'Antimicrobianos', desc: 'Antibióticos, antifúngicos e antivirais' },
+    { id: 'anti-inflamatorios', name: 'Anti-inflamatórios', desc: 'Analgésicos, AINEs e corticosteroides' },
+    { id: 'opioides', name: 'Opioides', desc: 'Analgésicos opioides e agonistas centrais' },
+    { id: 'sedacao', name: 'Sedação & Neurologia', desc: 'Indutores, sedativos, bloqueadores e anticonvulsivantes' },
+    { id: 'antidotos', name: 'Antídotos & Toxicologia', desc: 'Reversores, antídotos e suporte toxicológico' },
+    { id: 'respiratorio', name: 'Respiratório', desc: 'Broncodilatadores e agentes inalatórios' },
+    { id: 'endocrino', name: 'Endócrino & Metabólico', desc: 'Insulinas e hipoglicemiantes' },
+    { id: 'outros', name: 'Outros Medicamentos', desc: 'Outras apresentações e especialidades' }
+  ];
+
+  function getDrugCategory(d){
+    const norm = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const name = norm(d.name + ' ' + (d.active_ingredient || ''));
+    const tClass = norm(d.therapeutic_class || '');
+    const pClass = norm(d.pharmacological_class || '');
+    const dClass = norm(d.data?.therapeutic_class || '');
+
+    if (name.includes('fentanil') || name.includes('morfina') || name.includes('tramadol') || name.includes('metadona') || name.includes('codeina') || (tClass.includes('opioide') && !name.includes('naloxona'))) return 'opioides';
+    if (tClass.includes('antimicrobian') || pClass.includes('antimicrobian') || dClass.includes('antimicrobian') ||
+        name.includes('ceftriaxona') || name.includes('amoxicilina') || name.includes('meropenem') ||
+        name.includes('ciprofloxacino') || name.includes('azitromicina') || name.includes('vancomicina') ||
+        name.includes('piperacilina') || name.includes('oxacilina') || name.includes('cefepima') ||
+        name.includes('clindamicina') || name.includes('nitrofurantoina') || name.includes('cefalexina') ||
+        name.includes('cefazolina') || name.includes('sulfametoxazol') || name.includes('metronidazol') ||
+        name.includes('levofloxacino')) return 'antimicrobianos';
+    if (name.includes('dipirona') || name.includes('paracetamol') || name.includes('ibuprofeno') ||
+        name.includes('cetoprofeno') || name.includes('prednisona') || name.includes('hidrocortisona') ||
+        name.includes('dexametasona') || tClass.includes('aine') || tClass.includes('anti-inflamator') ||
+        tClass.includes('analgesicos e antit') || tClass.includes('cortico')) return 'anti-inflamatorios';
+    if (name.includes('ondansetrona') || name.includes('metoclopramida') || name.includes('omeprazol') ||
+        name.includes('escopolamina') || name.includes('lactulose') || name.includes('ranitidina') ||
+        tClass.includes('gastro') || tClass.includes('antiemetico') || tClass.includes('antiespasmodico')) return 'hepatico';
+    if (name.includes('furosemida') || name.includes('espironolactona') || name.includes('hidroclorotiazida') ||
+        name.includes('potassio') || name.includes('bicarbonato') || name.includes('glicose') ||
+        name.includes('magnesio') || name.includes('gluconato de calcio') || tClass.includes('diuretico') ||
+        tClass.includes('eletrolito') || tClass.includes('nutricional')) return 'renal';
+    if (tClass.includes('vasoativo') || tClass.includes('cardio') || tClass.includes('hipertens') ||
+        tClass.includes('trombo') || tClass.includes('anticoagul') || name.includes('noradrenalina') ||
+        name.includes('adrenalina') || name.includes('dobutamina') || name.includes('vasopressina') ||
+        name.includes('nitroprussiato') || name.includes('nitroglicerina') || name.includes('amiodarona') ||
+        name.includes('adenosina') || name.includes('metoprolol') || name.includes('deslanosideo') ||
+        name.includes('captopril') || name.includes('losartana') || name.includes('anlodipino') ||
+        name.includes('hidralazina') || name.includes('nifedipino') || name.includes('atropina') ||
+        name.includes('enoxaparina') || name.includes('alteplase') || name.includes('clopidogrel') ||
+        name.includes('rivaroxabana') || name.includes('apixabana') || name.includes('aas') ||
+        name.includes('acido acetilsalicilico')) return 'cardiovascular';
+    if (name.includes('propofol') || name.includes('etomidato') || name.includes('cetamina') ||
+        name.includes('midazolam') || name.includes('diazepam') || name.includes('haloperidol') ||
+        name.includes('rocuronio') || name.includes('succinilcolina') || name.includes('fenitoina') ||
+        name.includes('levetiracetam') || tClass.includes('sedacao') || tClass.includes('sri') ||
+        tClass.includes('neurolog') || tClass.includes('psiquiatr')) return 'sedacao';
+    if (name.includes('naloxona') || name.includes('flumazenil') || name.includes('acetilcisteina') ||
+        name.includes('tranexamico') || tClass.includes('antidoto') || tClass.includes('toxicolog') ||
+        tClass.includes('reversor')) return 'antidotos';
+    if (name.includes('salbutamol') || name.includes('ipratropio') || tClass.includes('pneumo') ||
+        tClass.includes('broncodilatador')) return 'respiratorio';
+    if (name.includes('insulina') || name.includes('metformina') || tClass.includes('endocrin') ||
+        tClass.includes('diabetico')) return 'endocrino';
+    return 'outros';
+  }
+
+  function drugCode(name){
+    const clean=String(name||'MED').replace(/[^a-zA-ZÀ-ÿ0-9]/g,'').toUpperCase();
+    return clean.slice(0,3)||'MED';
+  }
+
+  function getDrugPurpose(row){
+    const d=row.data||{};
+    if(d.indication) return d.indication;
+    if(Array.isArray(d.diseases)&&d.diseases.length) return d.diseases.slice(0,2).join(', ');
+    if(row.therapeutic_class) return row.therapeutic_class;
+    return 'Consulte posologia e informações clínicas';
+  }
+
+  function renderCard(row){
+    const catId = getDrugCategory(row);
+    const catObj = CATEGORY_MAP.find(c => c.id === catId) || { name: 'Geral' };
+    const code = drugCode(row.active_ingredient || row.name);
+    const purpose = getDrugPurpose(row);
+    const st = status(row);
+    const formCount = row.data?.formulations?.length || 0;
+    const formText = st === 2 ? `${formCount} apresentaç${formCount === 1 ? 'ão' : 'ões'}` : (st === 1 ? 'Resumo da bula' : '');
+
+    return `<article class="calc-card" data-drug-card="${row.id}">` +
+      `<button type="button" class="calc-card-main drug-row" data-id="${row.id}" aria-current="${String(row.id)===String(selected)}" aria-label="${esc(row.active_ingredient||row.name)}">` +
+        `<span class="calc-code" aria-hidden="true">${esc(code)}</span>` +
+        `<span class="calc-copy drug-row-content">` +
+          `<strong>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</strong>` +
+          (row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<span class="drug-row-description">Nome comercial/referência: ${esc(row.name)}</span>`:'') +
+          `<span class="calc-purpose"><b>Serve para:</b> ${esc(purpose)}</span>` +
+          `<span class="calc-meta">` +
+            `<span class="calc-badge">${esc(catObj.name)}</span>` +
+            (formText ? `<span class="drug-row-presentations calc-badge">${esc(formText)}</span>` : '') +
+          `</span>` +
+        `</span>` +
+        `<span class="calc-arrow" aria-hidden="true">›</span>` +
+      `</button>` +
+    `</article>`;
+  }
+
   function renderList(){
     const term=search.value.trim().toLocaleLowerCase('pt-BR');
     const matches=rows.filter(row=>{
+      const rowCat = getDrugCategory(row);
       if(activeChip){
-        const hay=normStr([row.therapeutic_class,row.pharmacological_class,row.data?.therapeutic_class,...(row.data?.diseases||[])].join(' '));
-        if(!hay.includes(activeChip)) return false;
+        if(rowCat !== activeChip) {
+          const hay=normStr([row.therapeutic_class,row.pharmacological_class,row.data?.therapeutic_class,...(row.data?.diseases||[])].join(' '));
+          if(!hay.includes(activeChip)) return false;
+        }
       }
       if(!term) return true;
       return [row.name,row.active_ingredient,row.therapeutic_class,row.pharmacological_class,...(row.data?.diseases||[])].some(value=>String(value||'').toLocaleLowerCase('pt-BR').includes(term));
     });
     matches.sort((a,b)=>status(b)-status(a)||String(a.name||'').localeCompare(String(b.name||''),'pt-BR'));
     count.textContent=`${matches.length} medicamento${matches.length===1?'':'s'}`;
-    list.innerHTML=matches.map(row=>`<button type="button" class="drug-row" data-id="${row.id}" aria-current="${String(row.id)===String(selected)}"><span class="drug-row-content"><strong>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</strong><small>${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<span class="drug-row-description">Nome comercial/referência: ${esc(row.name)}</span>`:''}${status(row)===2?`<span class="drug-row-presentations">${row.data.formulations?.length||0} apresentaç${row.data.formulations?.length===1?'ão':'ões'}</span>`:status(row)===1?'<span class="drug-row-description">Resumo da bula</span>':''}</small></span></button>`).join('')||'<div class="empty">Nenhum medicamento encontrado.</div>';
+
+    if(!matches.length){
+      list.innerHTML='<div class="empty">Nenhum medicamento encontrado.</div>';
+      return;
+    }
+
+    if(activeChip){
+      const catObj = CATEGORY_MAP.find(c => c.id === activeChip);
+      const title = catObj ? catObj.name : 'Medicamentos Selecionados';
+      const desc = catObj ? catObj.desc : '';
+      list.innerHTML = `<section class="group">` +
+        `<div class="group-head">` +
+          `<div>` +
+            `<h2>${esc(title)}</h2>` +
+            (desc ? `<p>${esc(desc)}</p>` : '') +
+          `</div>` +
+          `<span class="count">${matches.length}</span>` +
+        `</div>` +
+        `<div class="calc-list">${matches.map(renderCard).join('')}</div>` +
+      `</section>`;
+      return;
+    }
+
+    if(term){
+      list.innerHTML = `<section class="group">` +
+        `<div class="group-head">` +
+          `<div>` +
+            `<h2>Resultados da busca</h2>` +
+            `<p>Medicamentos correspondentes a "${esc(search.value.trim())}"</p>` +
+          `</div>` +
+          `<span class="count">${matches.length}</span>` +
+        `</div>` +
+        `<div class="calc-list">${matches.map(renderCard).join('')}</div>` +
+      `</section>`;
+      return;
+    }
+
+    const grouped = new Map();
+    CATEGORY_MAP.forEach(c => grouped.set(c.id, []));
+
+    matches.forEach(row => {
+      const catId = getDrugCategory(row);
+      if (!grouped.has(catId)) grouped.set(catId, []);
+      grouped.get(catId).push(row);
+    });
+
+    const sections = [];
+    CATEGORY_MAP.forEach(cat => {
+      const groupRows = grouped.get(cat.id) || [];
+      if (!groupRows.length) return;
+      sections.push(`<section class="group" data-category="${cat.id}">` +
+        `<div class="group-head">` +
+          `<div>` +
+            `<h2>${esc(cat.name)}</h2>` +
+            `<p>${esc(cat.desc)}</p>` +
+          `</div>` +
+          `<span class="count">${groupRows.length}</span>` +
+        `</div>` +
+        `<div class="calc-list">${groupRows.map(renderCard).join('')}</div>` +
+      `</section>`);
+    });
+
+    list.innerHTML = sections.join('');
   }
   function calculator(formulation,index){
     const c=formulation.calculator;
@@ -252,7 +421,7 @@
     });
     detail.querySelectorAll("[data-open-protocol]").forEach(btn=>btn.addEventListener("click",()=>window.LuriaClinicalBridge?.openProtocol(btn.dataset.openProtocol)));
     detail.querySelector("[data-send-note=\"1\"]")?.addEventListener("click",(event)=>{
-      const ok=window.LuriaClinicalBridge?.toQuickChart({type:"drug",title:row.active_ingredient||row.name,text:drugText(row),source:"Bulário LURIA"});
+      const ok=window.LuriaClinicalBridge?.toQuickChart({type:"drug",title:row.active_ingredient||row.name,text:drugText(row),source:"Bulário TRAUBE"});
       if(window.LuriaClinicalBridge?.inPrescriptionFlow?.() && ok){
         const btn=event.currentTarget;
         const old=btn.textContent;
