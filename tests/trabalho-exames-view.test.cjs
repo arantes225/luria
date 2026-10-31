@@ -10,6 +10,7 @@ const extraScript = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-e
 const curatedScripts = [1,2,3,4,5].map(i=>fs.readFileSync(path.join(root, `assets/js/trabalho-exames-curated-0${i}.js`), "utf8"));
 const preanalyticalScript = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-preanalytical.js"), "utf8");
 const extraPreanalyticalScripts = [1,2,3,4].map(i=>fs.readFileSync(path.join(root, `assets/js/trabalho-exames-preanalytical-extra-${i}.js`), "utf8"));
+const pendingScript = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-pending-catalog.js"), "utf8");
 const detailsScript = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-details.js"), "utf8");
 
 function openTool() {
@@ -21,6 +22,7 @@ function openTool() {
   for(const code of curatedScripts)dom.window.eval(code);
   dom.window.eval(preanalyticalScript);
   for(const code of extraPreanalyticalScripts)dom.window.eval(code);
+  dom.window.eval(pendingScript);
   dom.window.eval(detailsScript);
   dom.window.eval(script);
   return dom;
@@ -68,13 +70,14 @@ test("Both clinical pages use same versioned assets and suppress duplicate top t
   for (const dir of ["exames", "laboratorio"]) {
     const html = fs.readFileSync(path.join(root, "trabalho", dir, "index.html"), "utf8");
     assert.match(html, /data-ui-heading="provided"/);
-    assert.match(html, /trabalho-exames-interpreter\.css\?v=20261029-review2/);
+    assert.match(html, /trabalho-exames-interpreter\.css\?v=20261030-pending1/);
     assert.match(html, /trabalho-exames-extra-catalog\.js\?v=20261029-extras/);
     for(let i=1;i<=5;i++)assert.match(html,new RegExp(`trabalho-exames-curated-0${i}\\.js\\?v=20261030-individual`));
     assert.match(html, /trabalho-exames-preanalytical\.js\?v=20261030-prep1/);
     for(let i=1;i<=4;i++)assert.match(html,new RegExp(`trabalho-exames-preanalytical-extra-${i}\\.js\\?v=20261030-prep2`));
+    assert.match(html, /trabalho-exames-pending-catalog\.js\?v=20261030-pending1/);
     assert.match(html, /trabalho-exames-details\.js\?v=20261030-prep2/);
-    assert.match(html, /trabalho-exames-interpreter\.js\?v=20261030-prep2/);
+    assert.match(html, /trabalho-exames-interpreter\.js\?v=20261030-pending1/);
   }
 });
 
@@ -387,4 +390,62 @@ test("The extra preanalytics scripts load after base and before clinical detail 
     const details=html.indexOf("trabalho-exames-details.js");
     assert.ok(b>=0&&b<first&&first<last&&last<details);
   }
+});
+
+test("602 distinct exam names were added only as pending registry; 423 interpreted tests stay intact",()=>{
+ const dom=openTool(),d=dom.window.document;
+ const pending=dom.window.LURIA_EXAM_PENDING_CATALOG;
+ const audit=dom.window.LURIA_EXAM_PENDING_AUDIT;
+ assert.equal(audit.raw,602);
+ assert.equal(audit.added,602);
+ assert.equal(audit.skipped.length,0);
+ assert.equal(pending.length,602);
+ const normalize=x=>x.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("pt-BR").replace(/[^\p{L}\p{N}]+/gu," ").trim();
+ const old=[...dom.window.LURIA_EXAM_CATALOG,...dom.window.LURIA_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
+ assert.equal(old.length,423);
+ const names=[...old.map(t=>t.name),...pending.map(t=>t.name)];
+ assert.equal(new Set(names.map(normalize)).size,1025);
+ assert.equal(new Set(pending.map(t=>t.id)).size,602);
+ assert.equal(d.querySelectorAll(".ex-test.ex-card").length,423);
+ assert.equal(d.querySelectorAll(".ex-pending-card").length,602);
+ assert.equal(d.querySelectorAll(".ex-pending-card .ex-completion-status").length,602);
+ assert.equal(d.querySelectorAll(".ex-pending-card input, .ex-pending-card select").length,0);
+ assert.match(d.querySelector(".ex-catalog-heading").textContent,/1025 exames/);
+ dom.window.close();
+});
+
+test("Any exam that says Conferir laudo or depends on unfilled reference carries A completar",()=>{
+ const dom=openTool(),d=dom.window.document;
+ const incomplete=[...d.querySelectorAll(".ex-test.ex-card")].filter(row=>/Conferir laudo|Conforme laudo|Vem no laudo/i.test(row.querySelector(".ex-ref")?.textContent||""));
+ assert.ok(incomplete.length>150);
+ for(const row of incomplete)assert.equal(row.querySelector(".ex-completion-status")?.textContent,"A completar",row.dataset.row);
+ assert.ok(d.querySelector('[data-row="g21t6"] .ex-completion-status'),"Extra exam without laboratory reference should remain pending");
+ dom.window.close();
+});
+
+test("Pending names obey search, group filter and only-completion toggle without patient inputs",()=>{
+ const dom=openTool(),d=dom.window.document;
+ const search=d.querySelector("#ex-search"),group=d.querySelector("#ex-area");
+ search.value="Biópsia líquida";search.dispatchEvent(new dom.window.Event("input",{bubbles:true}));
+ assert.equal(d.querySelectorAll(".ex-pending-card").length,1);
+ assert.match(d.querySelector(".ex-pending-card h4").textContent,/Biópsia líquida/);
+ search.value="";search.dispatchEvent(new dom.window.Event("input",{bubbles:true}));
+ group.value="34";group.dispatchEvent(new dom.window.Event("change",{bubbles:true}));
+ assert.equal(d.querySelectorAll(".ex-pending-card").length,24);
+ const only=d.querySelector("#ex-only-pending");only.checked=true;only.dispatchEvent(new dom.window.Event("change",{bubbles:true}));
+ assert.equal(d.querySelectorAll(".ex-pending-card").length,24);
+ assert.ok([...d.querySelectorAll(".ex-test.ex-card")].every(row=>row.querySelector(".ex-completion-status")));
+ d.querySelector("#ex-patient-toggle").click();
+ assert.equal(d.querySelectorAll(".ex-pending-card").length,24);
+ assert.equal(d.querySelectorAll(".ex-pending-card input, .ex-pending-card select").length,0);
+ dom.window.close();
+});
+
+test("Both exam pages load pending names before clinical interpreter and use updated styling",()=>{
+ for(const dir of ["exames","laboratorio"]){
+  const s=fs.readFileSync(path.join(root,"trabalho",dir,"index.html"),"utf8");
+  const pending=s.indexOf("trabalho-exames-pending-catalog.js"),interpreter=s.indexOf("trabalho-exames-interpreter.js");
+  assert.ok(pending>0&&pending<interpreter);
+  assert.match(s,/trabalho-exames-interpreter\.css\?v=20261030-pending1/);
+ }
 });
