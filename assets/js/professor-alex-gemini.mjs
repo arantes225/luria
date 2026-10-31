@@ -993,7 +993,7 @@ function speakText(text, onComplete) {
     const utterance = new SpeechSynthesisUtterance(content);
     activeSpeechUtterance = utterance; // Safari GC protection
     utterance.lang = "pt-BR";
-    utterance.rate = isEstourado ? 1.25 : 1.06;
+    utterance.rate = isEstourado ? 1.25 : 1.04;
     utterance.pitch = isEstourado ? 0.82 : 1.0;
     try {
       const voices = window.speechSynthesis.getVoices?.() || [];
