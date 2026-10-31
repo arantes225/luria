@@ -59,6 +59,28 @@
     .protocol-placeholder,.protocol-empty{padding:22px;text-align:center;color:var(--muted)}.protocol-empty{margin:12px;border:1px dashed var(--border);border-radius:12px}
     @media(max-width:900px){.protocol-controls{grid-template-columns:1fr 1fr}.protocol-controls input{grid-column:1/-1}.protocol-workspace{grid-template-columns:1fr}.protocol-list-panel{max-height:none}.protocol-detail{position:static;min-height:0}}
     @media(max-width:600px){.protocol-controls{grid-template-columns:1fr}.protocol-controls input{grid-column:auto}.protocol-detail-head{display:grid}.protocol-actions{justify-content:stretch}.protocol-actions button{flex:1}.protocol-detail{padding:15px}}
+    .protocol-hero{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .protocol-hero a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;border-radius:12px;background:var(--theme,#184888);color:#fff;font-weight:800;text-decoration:none}
+    .protocol-workspace{grid-template-columns:minmax(0,1fr)}
+    .protocol-list-panel{max-height:none;padding:12px;border:0;background:transparent;overflow:visible}
+    .protocol-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+    .protocol-row{display:grid;grid-template-columns:44px minmax(0,1fr) 18px;align-items:center;min-height:104px;gap:12px;padding:13px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:0 2px 7px rgba(15,35,65,.035);transition:transform .18s,border-color .18s,box-shadow .18s}
+    .protocol-row:hover,.protocol-row.active{transform:translateY(-2px);border-color:var(--theme,#184888);box-shadow:0 8px 18px rgba(15,35,65,.1)}
+    .protocol-row:focus-visible{outline:3px solid var(--theme,#184888);outline-offset:2px}
+    .protocol-row .protocol-card-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:color-mix(in srgb,var(--theme,#184888) 10%,var(--surface));color:var(--theme,#184888);font-size:19px}
+    .protocol-row .protocol-card-copy{min-width:0}.protocol-row strong{font-size:15px}.protocol-row small{font-size:12px;line-height:1.35}
+    .protocol-row em{width:max-content;font-size:10px;padding:4px 8px}.protocol-row .protocol-card-arrow{color:var(--muted);font-size:24px}
+    .protocol-detail{position:static;min-height:0;border:0;border-radius:0;overflow:visible}
+    .protocol-modal[hidden]{display:none}.protocol-modal{position:fixed;inset:0;z-index:2000;display:grid;place-items:center;padding:clamp(8px,3vw,24px)}
+    .protocol-modal-backdrop{position:absolute;inset:0;background:rgba(10,22,42,.7)}
+    .protocol-modal-card{position:relative;width:min(100%,1080px);max-height:min(92vh,980px);display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--border);border-radius:20px;background:var(--surface);box-shadow:0 25px 70px rgba(0,0,0,.3)}
+    .protocol-modal-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 18px;border-bottom:1px solid var(--border)}
+    .protocol-modal-head strong{font-size:13px;color:var(--muted)}.protocol-modal-head button{width:40px;height:40px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2);color:var(--text);font-size:24px;cursor:pointer}
+    .protocol-modal-body{overflow-y:auto;overscroll-behavior:contain;padding:0 18px 20px}
+    body.protocol-modal-open{overflow:hidden}
+    .protocol-actions button:disabled,.integrated-recipe-copy-btn:disabled{opacity:.45;cursor:not-allowed}
+    @media(max-width:1050px){.protocol-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:700px){.protocol-list{grid-template-columns:1fr}.protocol-list-panel{padding:0}.protocol-row{min-height:90px}}
   </style>
 <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
 <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
@@ -88,8 +110,9 @@
 
         <section class="protocol-shell">
           <article class="protocol-hero">
-            <h2>Protocolos Clínicos & Tratamentos Gerais</h2>
-            <p>Fluxos operacionais para usar durante o atendimento: quando suspeitar, quais exames pedir, como interpretar, tratar, acompanhar e quando encaminhar. Medicamentos abrem direto no Bulário e os esquemas relacionados conversam com Tratamentos gerais.</p>
+            <div><h2>Protocolos Clínicos & Tratamentos Gerais</h2>
+            <p>Consulte cada condição, seus exames e tratamentos. Fichas em elaboração permanecem identificadas.</p></div>
+            <a href="/trabalho/meus-receituarios/">Meus receituários</a>
           </article>
           <section class="protocol-controls">
             <input id="protocol-search" type="search" autocomplete="off" placeholder="Buscar protocolo, sintoma, exame ou diagnóstico…">
@@ -103,11 +126,17 @@
               <nav class="protocol-pagination" aria-label="Páginas de protocolos" style="display:flex;align-items:center;justify-content:center;gap:10px;padding:12px 4px;flex-wrap:wrap"><button type="button" id="protocol-page-prev" disabled>Anterior</button><span id="protocol-page-label" aria-live="polite">Página 1</span><button type="button" id="protocol-page-next">Próxima</button></nav>
               <div id="protocol-empty" class="protocol-empty" hidden>Nenhum protocolo encontrado.</div>
             </div>
-            <article id="protocol-detail" class="protocol-detail"><div class="protocol-placeholder">Selecione um protocolo.</div></article>
           </section>
         </section>
       </div>
     </main>
+  </div>
+  <div id="protocol-modal" class="protocol-modal" hidden>
+    <div class="protocol-modal-backdrop" data-close-protocol></div>
+    <section class="protocol-modal-card" role="dialog" aria-modal="true" aria-label="Ficha do protocolo">
+      <header class="protocol-modal-head"><strong>Ficha clínica</strong><button type="button" data-close-protocol aria-label="Fechar ficha">×</button></header>
+      <div class="protocol-modal-body"><article id="protocol-detail" class="protocol-detail"><div class="protocol-placeholder">Carregando…</div></article></div>
+    </section>
   </div>
 <script src="/assets/vendor/supabase-2.110.6.js"></script>
 <script src="/assets/js/supabase.js"></script>

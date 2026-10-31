@@ -38,6 +38,8 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Check JavaScript syntax
         run: node scripts/check-syntax.cjs
+      - name: Validate private recipes and protocol copy behavior
+        run: node --test tests/recipe-workflow.test.cjs
       - name: Test Gestor de Plantões calendar, payments and tax estimates
         run: node --test tests/shift-manager-v2.test.cjs
       - name: Verify project Pages routes and asset paths
@@ -123,3 +125,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+

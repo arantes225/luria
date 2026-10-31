@@ -1,93 +1,22 @@
 
-  function synthesizeRecipe(r) {
-    const routes = [];
-    const orientations = [];
-
-    if (Array.isArray(r.treatment) && r.treatment.length) {
-      r.treatment.forEach(grp => {
-        const routeName = grp.regimen || grp.title || "Uso Clínico / Prescrição Direcionada";
-        const items = (grp.items || []).map(itemText => {
-          const parts = String(itemText).split(":");
-          if (parts.length > 1) {
-            return {
-              drug: parts[0].trim(),
-              quantity: "",
-              directions: parts.slice(1).join(":").trim()
-            };
-          }
-          return {
-            drug: String(itemText).trim(),
-            quantity: "",
-            directions: "Conforme avaliação médica e evolução clínica"
-          };
-        });
-        if (items.length) {
-          routes.push({
-            route: routeName,
-            mode: "standard",
-            items: items
-          });
-        }
-      });
-    }
-
-    if (Array.isArray(r.follow_up)) {
-      r.follow_up.forEach(f => {
-        (f.items || []).forEach(it => orientations.push(String(it)));
-      });
-    }
-    if (Array.isArray(r.special_situations)) {
-      r.special_situations.forEach(s => {
-        (s.items || []).forEach(it => orientations.push(String(it)));
-      });
-    }
-    if (!orientations.length) {
-      orientations.push("Seguir posologia com rigor de horários e completar a duração total estipulada.");
-      orientations.push("Retornar imediatamente ao serviço de emergência em caso de febre persistente, dispneia súbita, dor torácica ou piora clínica.");
-    }
-
-    return {
-      id: "synth-" + (r.slug || r.id),
-      slug: "synth-" + (r.slug || r.id),
-      title: "Receita & Prescrição Pronta — " + (r.title || "Conduta Clínica"),
-      status: "verified",
-      is_synthesized: true,
-      data: {
-        copy_ready: true,
-        routes: routes.length ? routes : [
-          {
-            route: "Prescrição Médica",
-            mode: "standard",
-            items: [{ drug: r.title, quantity: "1 tratamento", directions: "Conforme protocolo clínico institucional." }]
-          }
-        ],
-        orientations: orientations
-      }
-    };
-  }
-
   function getMatchedRecipes(r, recipesBank, norm) {
     const slugs = Array.isArray(r.linked_recipe_slugs) ? r.linked_recipe_slugs : [];
-    let matched = (recipesBank || []).filter(rb => 
-      slugs.includes(rb.slug) || 
-      norm(rb.title).includes(norm(r.title)) || 
-      norm(r.title).includes(norm(rb.title))
+    return (recipesBank || []).filter(rb =>
+      slugs.includes(rb.slug) && rb.status === "verified" && rb.data?.copy_ready === true
     );
-    if (!matched.length) {
-      matched = [synthesizeRecipe(r)];
-    }
-    return matched;
   }
 
-  function formatRecipeCleanText(rec) {
+  function formatRecipeCleanText(rec, selected) {
     const data = rec.data || {};
     const routes = Array.isArray(data.routes) ? data.routes : [];
     const lines = [rec.title.toUpperCase(), ""];
-    routes.forEach(rt => {
+    routes.forEach((rt, routeIndex) => {
+      const chosen = (rt.items || []).map((it, itemIndex) => ({it, itemIndex}))
+        .filter(({itemIndex}) => selected.has(routeIndex + ":" + itemIndex));
+      if (!chosen.length) return;
       lines.push(String(rt.route || "USO").toUpperCase() + ":");
-      (rt.items || []).forEach((it, i) => {
-        const prefix = rt.mode === "alternatives" ? (i + 1) + "ª OPÇÃO) " : (i + 1) + ") ";
-        lines.push(prefix + (it.drug || "Medicamento") + (it.quantity ? " — " + it.quantity : ""));
+      chosen.forEach(({it}, i) => {
+        lines.push((i + 1) + ") " + (it.drug || "Medicamento") + (it.quantity ? " — " + it.quantity : ""));
         if (it.directions) lines.push("   " + it.directions);
       });
       lines.push("");
@@ -101,6 +30,7 @@
 
   function renderIntegratedRecipes(r, recipesBank, norm, esc) {
     const matchedRecipes = getMatchedRecipes(r, recipesBank, norm);
+    if (!matchedRecipes.length) return "";
 
     return `
       <section class="protocol-section" style="border:2px solid color-mix(in srgb,var(--theme,#184888) 35%,var(--border));background:color-mix(in srgb,var(--theme,#184888) 3%,var(--surface));box-shadow:0 4px 16px rgba(0,0,0,0.04)">
@@ -109,7 +39,7 @@
             <h3 style="margin:0;font-size:1.1rem;display:flex;align-items:center;gap:8px;color:var(--text)">
               <span>📋</span> Receita & Prescrição Pronta
             </h3>
-            <span style="font-size:12.5px;color:var(--muted)">Pronta para copiar e colar no prontuário/PEP, com posologia completa e orientações</span>
+            <span style="font-size:12.5px;color:var(--muted)">Marque os medicamentos desejados; as orientações acompanham a cópia.</span>
           </div>
           <div style="display:flex;align-items:center;gap:8px">
             <span style="padding:4px 8px;border-radius:999px;font-size:11px;font-weight:800;background:var(--surface);border:1px solid var(--border);color:var(--theme,#184888)">
@@ -126,8 +56,8 @@
                 <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
                   <strong style="font-size:14.5px;color:var(--theme,#184888)">${esc(rec.title)}</strong>
                   <div style="display:flex;gap:6px">
-                    <button type="button" class="integrated-recipe-copy-btn" data-recipe-index="${rIdx}" style="padding:8px 14px;border-radius:8px;border:1px solid var(--theme,#184888);background:color-mix(in srgb,var(--theme,#184888) 12%,var(--surface));color:var(--theme,#184888);font-size:12.5px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:6px">
-                      <span>📋</span> Copiar Receita Pronta
+                    <button type="button" class="integrated-recipe-copy-btn" data-recipe-index="${rIdx}" disabled style="padding:8px 14px;border-radius:8px;border:1px solid var(--theme,#184888);background:color-mix(in srgb,var(--theme,#184888) 12%,var(--surface));color:var(--theme,#184888);font-size:12.5px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:6px">
+                      <span>📋</span> Copiar selecionados + orientações
                     </button>
                   </div>
                 </div>
@@ -135,11 +65,12 @@
                   <div style="padding:10px 12px;border-radius:8px;background:var(--surface-2);border-left:3.5px solid var(--theme,#184888);display:grid;gap:6px">
                     <span style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--theme,#184888)">${esc(rt.route || 'USO')}</span>
                     ${(rt.items || []).map((it, itIdx) => `
-                      <div style="font-size:13px;line-height:1.5">
-                        <strong>${rt.mode === 'alternatives' ? (itIdx + 1) + 'ª OPÇÃO: ' : ''}${esc(it.drug || 'Medicamento')}</strong>
+                      <label style="display:flex;gap:9px;align-items:start;font-size:13px;line-height:1.5">
+                        <input type="checkbox" data-recipe-med="${rIdx}" data-route-index="${routes.indexOf(rt)}" data-item-index="${itIdx}" aria-label="Selecionar ${esc(it.drug || 'Medicamento')}" style="margin-top:3px">
+                        <span><strong>${rt.mode === 'alternatives' ? (itIdx + 1) + 'ª OPÇÃO: ' : ''}${esc(it.drug || 'Medicamento')}</strong>
                         ${it.quantity ? ' — <span style="color:var(--muted);font-weight:600">' + esc(it.quantity) + '</span>' : ''}
-                        ${it.directions ? '<p style="margin:3px 0 0;font-size:12.5px;color:var(--text)">' + esc(it.directions) + '</p>' : ''}
-                      </div>
+                        ${it.directions ? '<small style="display:block;margin:3px 0 0;font-size:12.5px;color:var(--text)">' + esc(it.directions) + '</small>' : ''}</span>
+                      </label>
                     `).join('')}
                   </div>
                 `).join('')}
@@ -159,193 +90,6 @@
     `;
   }
 
-function getProtocolCalculators(r) {
-    const slug = (r.slug || '').toLowerCase();
-    const title = (r.title || '').toLowerCase();
-    const cat = (r.category || '').toLowerCase();
-    const sections = [];
-
-    // 1. Calculadora Universal: Posologia Pediátrica e Ajuste por Peso (mg/kg)
-    sections.push(`
-      <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;display:grid;gap:10px">
-        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px">
-          <strong style="font-size:13.5px;color:var(--theme,#184888);display:flex;align-items:center;gap:6px">
-            <span>⚖️</span> Calculadora de Dose por Peso (mg/kg) & Posologia
-          </strong>
-          <span style="font-size:11px;font-weight:700;color:var(--muted)">Pediátrico & Adulto</span>
-        </div>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;align-items:end">
-          <label style="display:grid;gap:4px;font-size:12px;color:var(--text)">
-            <span>Peso (kg):</span>
-            <input type="number" class="calc-weight-input" min="1" max="250" step="0.5" placeholder="Ex: 20" style="padding:6px 8px;border-radius:6px;border:1px solid var(--border);background:var(--surface-2);font-size:13px;width:100%">
-          </label>
-          <label style="display:grid;gap:4px;font-size:12px;color:var(--text)">
-            <span>Dose (mg/kg):</span>
-            <input type="number" class="calc-dose-input" min="0.1" max="500" step="0.1" placeholder="Ex: 15" style="padding:6px 8px;border-radius:6px;border:1px solid var(--border);background:var(--surface-2);font-size:13px;width:100%">
-          </label>
-          <label style="display:grid;gap:4px;font-size:12px;color:var(--text)">
-            <span>Apresentação (mg/mL):</span>
-            <input type="number" class="calc-conc-input" min="0.1" max="1000" step="0.1" placeholder="Ex: 50" style="padding:6px 8px;border-radius:6px;border:1px solid var(--border);background:var(--surface-2);font-size:13px;width:100%">
-          </label>
-          <button type="button" class="btn-calculate-dose" style="padding:8px 12px;border-radius:6px;background:var(--theme,#184888);color:#fff;border:none;font-size:12px;font-weight:700;cursor:pointer;height:34px">
-            Calcular Dose
-          </button>
-        </div>
-        <div class="calc-dose-result" style="display:none;padding:8px 12px;border-radius:8px;background:var(--surface-2);border-left:3px solid var(--theme,#184888);font-size:13px;line-height:1.4"></div>
-      </div>
-    `);
-
-    // 2. Calculadora de Função Renal e Ajuste de Drogas (Cockcroft-Gault)
-    sections.push(`
-      <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;display:grid;gap:10px">
-        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px">
-          <strong style="font-size:13.5px;color:var(--theme,#184888);display:flex;align-items:center;gap:6px">
-            <span>🧪</span> Clearance de Creatinina (Cockcroft-Gault) & Ajuste Renal
-          </strong>
-          <span style="font-size:11px;font-weight:700;color:var(--muted)">Ajuste Farmacológico</span>
-        </div>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;align-items:end">
-          <label style="display:grid;gap:4px;font-size:12px;color:var(--text)">
-            <span>Idade (anos):</span>
-            <input type="number" class="calc-cg-age" min="18" max="120" placeholder="Ex: 65" style="padding:6px 8px;border-radius:6px;border:1px solid var(--border);background:var(--surface-2);font-size:13px;width:100%">
-          </label>
-          <label style="display:grid;gap:4px;font-size:12px;color:var(--text)">
-            <span>Peso (kg):</span>
-            <input type="number" class="calc-cg-weight" min="30" max="250" placeholder="Ex: 70" style="padding:6px 8px;border-radius:6px;border:1px solid var(--border);background:var(--surface-2);font-size:13px;width:100%">
-          </label>
-          <label style="display:grid;gap:4px;font-size:12px;color:var(--text)">
-            <span>Creatinina (mg/dL):</span>
-            <input type="number" class="calc-cg-cr" min="0.2" max="20" step="0.01" placeholder="Ex: 1.2" style="padding:6px 8px;border-radius:6px;border:1px solid var(--border);background:var(--surface-2);font-size:13px;width:100%">
-          </label>
-          <label style="display:grid;gap:4px;font-size:12px;color:var(--text)">
-            <span>Sexo:</span>
-            <select class="calc-cg-sex" style="padding:6px 8px;border-radius:6px;border:1px solid var(--border);background:var(--surface-2);font-size:13px;width:100%">
-              <option value="m">Masculino</option>
-              <option value="f">Feminino</option>
-            </select>
-          </label>
-          <button type="button" class="btn-calculate-cg" style="padding:8px 12px;border-radius:6px;background:var(--theme,#184888);color:#fff;border:none;font-size:12px;font-weight:700;cursor:pointer;height:34px">
-            Calcular ClCr
-          </button>
-        </div>
-        <div class="calc-cg-result" style="display:none;padding:8px 12px;border-radius:8px;background:var(--surface-2);border-left:3px solid var(--theme,#184888);font-size:13px;line-height:1.4"></div>
-      </div>
-    `);
-
-    // 3. Calculadoras Específicas por Protocolo
-    if (slug.includes('sepse') || title.includes('sepse') || title.includes('choque')) {
-      sections.push(`
-        <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;display:grid;gap:8px">
-          <strong style="font-size:13.5px;color:var(--theme,#184888)">Ressuscitação Volêmica Inicial na Sepse (30 mL/kg)</strong>
-          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
-            <span style="font-size:12.5px">Informe o peso:</span>
-            <input type="number" class="calc-sepsis-kg" min="20" max="200" placeholder="Peso em kg" style="padding:5px 8px;border-radius:6px;border:1px solid var(--border);width:110px">
-            <button type="button" class="btn-calc-sepsis" style="padding:5px 12px;border-radius:6px;background:var(--theme,#184888);color:#fff;border:none;font-size:12px;font-weight:700;cursor:pointer">Calcular Volume</button>
-            <span class="calc-sepsis-output" style="font-size:13px;font-weight:700;color:var(--theme,#184888)"></span>
-          </div>
-        </div>
-      `);
-    }
-
-    if (slug.includes('fibrilacao-atrial') || title.includes('fibrilação atrial')) {
-      sections.push(`
-        <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;display:grid;gap:8px">
-          <strong style="font-size:13.5px;color:var(--theme,#184888)">CHA₂DS₂-VASc (Risco Tromboembólico na FA)</strong>
-          <div style="display:grid;gap:6px;font-size:13px" class="traube-calc-inputs">
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="chads-item"> IC / Disfunção VE (+1)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="chads-item"> Hipertensão arterial (+1)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="2" class="chads-item"> Idade ≥ 75 anos (+2)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="chads-item"> Diabetes Mellitus (+1)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="2" class="chads-item"> AVC / AIT / Tromboembolismo prévio (+2)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="chads-item"> Doença vascular (IAM, DAP ou placa aórtica) (+1)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="chads-item"> Idade entre 65–74 anos (+1)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="chads-item"> Sexo feminino (+1)</label>
-          </div>
-          <div style="margin-top:6px;padding:8px 10px;border-radius:8px;background:var(--surface-2);border-left:3px solid var(--theme,#184888)">
-            <strong style="display:block;font-size:13px" id="chads-score-display">Pontuação: 0 pontos</strong>
-            <span style="font-size:12px;color:var(--muted)" id="chads-rec-display">Escore 0 (homem) ou 1 (mulher): Anticoagulação não recomendada.</span>
-          </div>
-        </div>
-      `);
-    }
-
-    if (slug.includes('pneumonia') || title.includes('pneumonia')) {
-      sections.push(`
-        <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;display:grid;gap:8px">
-          <strong style="font-size:13.5px;color:var(--theme,#184888)">CURB-65 (Estratificação de Gravidade na PAC)</strong>
-          <div style="display:grid;gap:6px;font-size:13px" class="traube-curb-inputs">
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="curb-item"> <strong>C</strong> - Confusão mental aguda (+1)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="curb-item"> <strong>U</strong> - Ureia sérica > 50 mg/dL (+1)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="curb-item"> <strong>R</strong> - Frequência respiratória ≥ 30 irpm (+1)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="curb-item"> <strong>B</strong> - PA sistólica < 90 ou diastólica ≤ 60 mmHg (+1)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="curb-item"> <strong>65</strong> - Idade ≥ 65 anos (+1)</label>
-          </div>
-          <div style="margin-top:6px;padding:8px 10px;border-radius:8px;background:var(--surface-2);border-left:3px solid var(--theme,#184888)">
-            <strong style="display:block;font-size:13px" id="curb-score-display">Pontuação: 0 pontos</strong>
-            <span style="font-size:12px;color:var(--muted)" id="curb-rec-display">CURB 0-1: Baixo risco. Tratamento ambulatorial seguro.</span>
-          </div>
-        </div>
-      `);
-    }
-
-    if (slug.includes('tromboembolismo') || slug.includes('tep') || title.includes('tromboembolismo pulmonar')) {
-      sections.push(`
-        <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;display:grid;gap:8px">
-          <strong style="font-size:13.5px;color:var(--theme,#184888)">Escore de Wells para TEP</strong>
-          <div style="display:grid;gap:6px;font-size:13px" class="traube-wells-inputs">
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="3" class="wells-item"> Sinais/sintomas clínicos de TVP (+3,0)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="3" class="wells-item"> TEP é a principal suspeita (+3,0)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1.5" class="wells-item"> FC > 100 bpm (+1,5)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1.5" class="wells-item"> Imobilização ≥ 3 dias ou cirurgia prévia (+1,5)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1.5" class="wells-item"> TVP/TEP prévio documentado (+1,5)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="wells-item"> Hemoptise (+1,0)</label>
-            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="wells-item"> Câncer ativo (+1,0)</label>
-          </div>
-          <div style="margin-top:6px;padding:8px 10px;border-radius:8px;background:var(--surface-2);border-left:3px solid var(--theme,#184888)">
-            <strong style="display:block;font-size:13px" id="wells-score-display">Pontuação: 0 pontos</strong>
-            <span style="font-size:12px;color:var(--muted)" id="wells-rec-display">Wells ≤ 4: TEP improvável. Solicitar D-Dímero.</span>
-          </div>
-        </div>
-      `);
-    }
-
-    return `
-      <section class="protocol-section" style="border:2px solid color-mix(in srgb,var(--theme,#184888) 35%,var(--border));background:color-mix(in srgb,var(--theme,#184888) 2.5%,var(--surface))">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
-          <div>
-            <h3 style="margin:0;font-size:1.05rem;display:flex;align-items:center;gap:8px">
-              <span>🧮</span> Calculadoras de Dose, Ajuste Renal & Escores Clínicos
-            </h3>
-            <span style="font-size:12px;color:var(--muted)">Cálculo dinâmico imediato à beira-leito</span>
-          </div>
-        </div>
-        <div style="display:grid;gap:12px">
-          ${sections.join('')}
-        </div>
-      </section>
-    `;
-  }
-
-  function getDischargeInstructions(r) {
-    return `
-      <section class="protocol-section" style="border-left: 4px solid var(--theme,#184888)">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-          <h3 style="margin:0">Orientações de Alta ao Paciente & Sinais de Alarme</h3>
-          <span style="font-size:11px;font-weight:800;color:var(--theme,#184888)">Educação & Segurança</span>
-        </div>
-        <div style="background:var(--surface-2);padding:12px;border-radius:12px;font-size:13px;line-height:1.55" id="protocol-discharge-text">
-          <p style="margin:0 0 6px"><strong>1. Cuidados domiciliares:</strong> Seguir a posologia prescrita com rigor de horários e completar a duração total estipulada mesmo que haja melhora precoce dos sintomas.</p>
-          <p style="margin:0 0 6px"><strong>2. Sinais de Alarme para Retorno Imediato:</strong> Febre persistente ou refratária aos antitérmicos, falta de ar (dispneia progressiva), dor torácica súbita, sonolência excessiva ou confusão mental, incapacidade de ingerir líquidos por vômitos incoercíveis, e sangramentos não usuais.</p>
-          <p style="margin:0"><strong>3. Reavaliação Programada:</strong> Retornar à unidade básica ou ambulatório de referência em 48 a 72 horas para confirmação da melhora clínica e revisão dos exames complementares solicitados.</p>
-        </div>
-        <div style="margin-top:8px">
-          <button type="button" id="copy-discharge-btn" style="padding:6px 12px;border-radius:8px;border:1px solid var(--border);background:var(--surface);font-size:12px;font-weight:700;color:var(--text);cursor:pointer">Copiar orientações de alta para a receita 📋</button>
-        </div>
-      </section>
-    `;
-  }
-
-
 (() => {
   "use strict";
   const sb = window.supabaseClient;
@@ -358,11 +102,20 @@ function getProtocolCalculators(r) {
     pageNext: document.getElementById("protocol-page-next"),
     pageLabel: document.getElementById("protocol-page-label"),
     list: document.getElementById("protocol-list"),
+    modal: document.getElementById("protocol-modal"),
     detail: document.getElementById("protocol-detail"),
     count: document.getElementById("protocol-count"),
     empty: document.getElementById("protocol-empty")
   };
   let rows = [], selected = null, recipesBank = [];
+  const recipeSelections = new Map();
+  let previousFocus = null;
+  function closeModal() {
+    ++detailRequest;
+    if (els.modal) els.modal.hidden = true;
+    document.body.classList.remove("protocol-modal-open");
+    previousFocus?.focus?.();
+  }
 
   const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const norm = (v) => String(v ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -414,11 +167,11 @@ function getProtocolCalculators(r) {
     els.empty.hidden = rows.length > 0;
     els.list.innerHTML = rows.map((r) =>
       '<button type="button" class="protocol-row' + (String(selected) === String(r.id) ? ' active' : '') + '" data-id="' + esc(r.id) + '">' +
-        '<span><strong>' + esc(r.title) + '</strong><small>' + esc(r.category) + ' · ' + esc(r.setting) +
-        (r.cid10_primary ? ' · CID-10 ' + esc(r.cid10_primary) : '') + '</small></span>' +
+        '<span class="protocol-card-icon" aria-hidden="true">✚</span><span class="protocol-card-copy"><strong>' + esc(r.title) + '</strong><small>' + esc(r.category) +
+        (r.cid10_primary ? ' · CID-10 ' + esc(r.cid10_primary) : '') + '</small>' +
         '<em class="' + (r.status === 'verified' ? 'ok' : 'warn') + '">' +
         (r.status === 'verified' ? 'Revisado' : (Array.isArray(r.tags) && r.tags.includes('conteudo-pendente') ? 'Em elaboração' : 'Em revisão')) +
-        '</em></button>'
+        '</em></span><span class="protocol-card-arrow" aria-hidden="true">›</span></button>'
     ).join("");
     els.list.querySelectorAll("[data-id]").forEach((btn) => btn.addEventListener("click", () => openProtocol(btn.dataset.id)));
     if (els.pagePrev) els.pagePrev.disabled = page <= 0;
@@ -429,7 +182,12 @@ function getProtocolCalculators(r) {
 
   async function openProtocol(idOrSlug, bySlug = false) {
     const ticket = ++detailRequest;
+    previousFocus = document.activeElement;
+    if (els.modal) els.modal.hidden = false;
+    document.body.classList.add("protocol-modal-open");
+    els.modal?.querySelector('button[data-close-protocol]')?.focus();
     selected = idOrSlug;
+    recipeSelections.clear();
     renderList();
     els.detail.innerHTML = '<div class="protocol-placeholder">Carregando a ficha selecionada…</div>';
     if (!sb) {
@@ -455,7 +213,7 @@ function getProtocolCalculators(r) {
       }
       renderDetail(data);
       renderList();
-      if (typeof matchMedia === "function" && matchMedia("(max-width:900px)").matches) els.detail.scrollIntoView({behavior:"smooth",block:"start"});
+      els.modal?.querySelector(".protocol-modal-body")?.scrollTo?.(0, 0);
     } catch (err) {
       if (ticket !== detailRequest) return;
       console.error("[Traube] Falha ao abrir ficha", err);
@@ -468,6 +226,8 @@ function getProtocolCalculators(r) {
     const ticket = ++listRequest;
     selected = null;
     ++detailRequest;
+    if (els.modal) els.modal.hidden = true;
+    document.body.classList.remove("protocol-modal-open");
     els.detail.innerHTML = '<div class="protocol-placeholder">Clique em um protocolo para consultar sua ficha.</div>';
     els.list.innerHTML = '<div class="protocol-placeholder">Consultando títulos…</div>';
     if (!sb) {
@@ -533,6 +293,28 @@ function getProtocolCalculators(r) {
     return lines.join("\n").trim();
   }
 
+  function examText(r) {
+    const groups = Array.isArray(r.exams) ? r.exams : [];
+    const lines = groups.flatMap((group) => {
+      const items = Array.isArray(group.items) ? group.items.filter(Boolean) : [];
+      return items.length ? [group.title || group.regimen || "Exames", ...items.map((item) => "- " + item)] : [];
+    });
+    return lines.length ? "EXAMES — " + r.title + "\n\n" + lines.join("\n") : "";
+  }
+
+  async function copyText(text, button, success) {
+    if (!text || !navigator.clipboard?.writeText) return;
+    try {
+      await navigator.clipboard.writeText(text);
+      const old = button.textContent;
+      button.textContent = success;
+      setTimeout(() => { button.textContent = old; }, 1800);
+    } catch (error) {
+      console.error("[Traube] Não foi possível copiar", error);
+      button.textContent = "Falha ao copiar";
+    }
+  }
+
   function renderDetail(r) {
     if (!r) { els.detail.innerHTML = '<div class="protocol-placeholder">Selecione um protocolo.</div>'; return; }
     // Conteudos apenas catalogados ainda nao sao protocolos clinicos: sem prescricao, alta ou copia.
@@ -590,7 +372,8 @@ function getProtocolCalculators(r) {
           <p>${esc(r.summary || "")}</p>
         </div>
         <div class="protocol-actions">
-          <button type="button" data-copy-main-recipe style="background:var(--theme,#184888);color:#fff;font-weight:700">📋 Copiar Receita Pronta</button>
+          ${getMatchedRecipes(r, recipesBank, norm).length ? '<button type="button" data-copy-main-recipe disabled>📋 Copiar receita selecionada</button>' : ""}
+          ${r.status === "verified" && examText(r) ? '<button type="button" class="secondary" data-copy-exams>Copiar exames</button>' : ""}
           ${recipes.length ? `<button type="button" class="secondary" data-open-recipe>Ver no Banco</button>` : ""}
           <button type="button" class="secondary" data-send-note>Enviar à Cola Rápida</button>
         </div>
@@ -602,8 +385,6 @@ function getProtocolCalculators(r) {
       ${renderImages(r.image_assets)}
       ${renderDecisionFlow(r.decision_flow)}
       ${listSection("Tratamento complementar", r.treatment, "treatment")}
-      ${getProtocolCalculators(r)}
-      ${getDischargeInstructions(r)}
       ${drugs.length ? `
         <section class="protocol-section" style="border-left:4px solid var(--theme,#184888)">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:6px">
@@ -644,98 +425,6 @@ function getProtocolCalculators(r) {
       dialog.showModal();
     }));
     
-    // Listener do CHA2DS2-VASc
-    const chadsBoxes = els.detail.querySelectorAll('.chads-item');
-    if (chadsBoxes.length) {
-      const updateChads = () => {
-        let pts = 0;
-        chadsBoxes.forEach(b => { if (b.checked) pts += Number(b.dataset.pts); });
-        const disp = els.detail.querySelector('#chads-score-display');
-        const rec = els.detail.querySelector('#chads-rec-display');
-        if (disp) disp.textContent = 'Pontuação: ' + pts + ' ponto' + (pts === 1 ? '' : 's');
-        if (rec) {
-          if (pts === 0) rec.textContent = 'Escore 0: Baixo risco. Anticoagulação oral não recomendada.';
-          else if (pts === 1) rec.textContent = 'Escore 1: Risco intermediário. Considerar anticoagulação oral individualizada (preferir DOAC).';
-          else rec.textContent = 'Escore ≥ 2: Alto risco de AVC embólico. Anticoagulação oral formalmente recomendada (DOAC de preferência ou Varfarina com INR 2-3).';
-        }
-      };
-      chadsBoxes.forEach(b => b.addEventListener('change', updateChads));
-    }
-
-    // Listener do CURB-65
-    const curbBoxes = els.detail.querySelectorAll('.curb-item');
-    if (curbBoxes.length) {
-      const updateCurb = () => {
-        let pts = 0;
-        curbBoxes.forEach(b => { if (b.checked) pts += Number(b.dataset.pts); });
-        const disp = els.detail.querySelector('#curb-score-display');
-        const rec = els.detail.querySelector('#curb-rec-display');
-        if (disp) disp.textContent = 'Pontuação: ' + pts + ' ponto' + (pts === 1 ? '' : 's');
-        if (rec) {
-          if (pts <= 1) rec.textContent = 'CURB 0-1: Baixo risco. Manejo ambulatorial seguro (Amoxicilina ou Macrolídeo).';
-          else if (pts === 2) rec.textContent = 'CURB 2: Risco moderado. Considerar internação em enfermaria ou observação estrita.';
-          else rec.textContent = 'CURB ≥ 3: Pneumonia grave. Internação hospitalar obrigatória; avaliar critérios para UTI imediata se CURB 4-5.';
-        }
-      };
-      curbBoxes.forEach(b => b.addEventListener('change', updateCurb));
-    }
-
-    // Listener da Calculadora de mg/kg
-    els.detail.querySelector('.btn-calculate-dose')?.addEventListener('click', () => {
-      const w = Number(els.detail.querySelector('.calc-weight-input')?.value);
-      const doseMg = Number(els.detail.querySelector('.calc-dose-input')?.value);
-      const conc = Number(els.detail.querySelector('.calc-conc-input')?.value);
-      const out = els.detail.querySelector('.calc-dose-result');
-      if (!w || !doseMg || w <= 0 || doseMg <= 0) {
-        if (out) { out.style.display = 'block'; out.innerHTML = '<strong>Atenção:</strong> Preencha peso e dose/kg válidos.'; }
-        return;
-      }
-      const totalMg = (w * doseMg).toFixed(1);
-      let html = '<strong>Dose Total Calculada:</strong> ' + totalMg + ' mg por dose (' + doseMg + ' mg/kg × ' + w + ' kg).';
-      if (conc && conc > 0) {
-        const totalMl = (totalMg / conc).toFixed(2);
-        html += '<br><strong>Volume a Administrar:</strong> ' + totalMl + ' mL (na concentração de ' + conc + ' mg/mL).';
-      }
-      if (out) { out.style.display = 'block'; out.innerHTML = html; }
-    });
-
-    // Listener da Calculadora Cockcroft-Gault
-    els.detail.querySelector('.btn-calculate-cg')?.addEventListener('click', () => {
-      const age = Number(els.detail.querySelector('.calc-cg-age')?.value);
-      const w = Number(els.detail.querySelector('.calc-cg-weight')?.value);
-      const cr = Number(els.detail.querySelector('.calc-cg-cr')?.value);
-      const sex = els.detail.querySelector('.calc-cg-sex')?.value;
-      const out = els.detail.querySelector('.calc-cg-result');
-      if (!age || !w || !cr || cr <= 0) {
-        if (out) { out.style.display = 'block'; out.innerHTML = '<strong>Atenção:</strong> Preencha idade, peso e creatinina válidos.'; }
-        return;
-      }
-      let clcr = ((140 - age) * w) / (72 * cr);
-      if (sex === 'f') clcr *= 0.85;
-      const val = clcr.toFixed(1);
-      let faixa = '';
-      if (clcr >= 90) faixa = 'Função renal normal (ClCr ≥ 90 mL/min). Em geral, não requer redução posológica.';
-      else if (clcr >= 60) faixa = 'Disfunção leve (ClCr 60–89 mL/min). Checar bulário para fármacos de margem estreita.';
-      else if (clcr >= 30) faixa = 'Disfunção moderada (ClCr 30–59 mL/min). Ajuste de intervalo ou dose necessário para a maioria dos antimicrobianos.';
-      else if (clcr >= 15) faixa = 'Disfunção grave (ClCr 15–29 mL/min). Redução importante de dose obrigatória e monitorar toxicidade.';
-      else faixa = 'Insuficiência renal terminal / dialítica (ClCr < 15 mL/min). Dose pós-hemodiálise indicada para fármacos dialisáveis.';
-      
-      if (out) {
-        out.style.display = 'block';
-        out.innerHTML = '<strong>Clearance Estimado: ' + val + ' mL/min</strong><br><span style="color:var(--text)">' + faixa + '</span>';
-      }
-    });
-
-    // Listener de volume na sepse
-    els.detail.querySelector('.btn-calc-sepsis')?.addEventListener('click', () => {
-      const kg = Number(els.detail.querySelector('.calc-sepsis-kg')?.value);
-      const out = els.detail.querySelector('.calc-sepsis-output');
-      if (kg && kg > 0) {
-        const vol = (kg * 30).toLocaleString('pt-BR');
-        if (out) out.textContent = 'Volume total: ' + vol + ' mL de cristaloide balanceado (Ringer Lactato) nas primeiras 3 horas.';
-      }
-    });
-
     // Listener do Modal de Detalhes Rápidos do Medicamento
     els.detail.querySelectorAll('[data-quick-drug]').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -768,8 +457,6 @@ function getProtocolCalculators(r) {
               <div><strong>Indicação Clínica:</strong> ${esc(dt.indication || 'Uso conforme protocolo.')}</div>
               ${f.dose_text ? `<div style="padding:8px 10px;border-radius:8px;background:var(--surface-2);border-left:3px solid var(--theme,#184888)"><strong>Posologia Habitual:</strong> ${esc(f.dose_text)}</div>` : ''}
               ${dt.contraindications && dt.contraindications.length ? `<div style="color:var(--danger,#b91c1c)"><strong>Contraindicações:</strong> ${dt.contraindications.map(c => esc(c)).join('; ')}</div>` : ''}
-              ${dt.renal_adjustment ? `<div><strong>Ajuste Renal:</strong> ${esc(dt.renal_adjustment)}</div>` : ''}
-              ${dt.hepatic_adjustment ? `<div><strong>Ajuste Hepático:</strong> ${esc(dt.hepatic_adjustment)}</div>` : ''}
               ${dt.pregnancy_category ? `<div><strong>Gestação:</strong> ${esc(dt.pregnancy_category)} ${dt.pregnancy_text ? '— ' + esc(dt.pregnancy_text) : ''}</div>` : ''}
               ${dt.compatible_diluents ? `<div><strong>Diluição & Compatibilidade:</strong> ${esc(dt.compatible_diluents)}</div>` : ''}
               ${dt.antidote && dt.antidote.length ? `<div style="padding:6px 10px;border-radius:6px;background:color-mix(in srgb,var(--theme,#184888) 8%,var(--surface))"><strong>Antídoto / Extravasamento:</strong> ${dt.antidote.map(a => esc(a)).join(' ')}</div>` : ''}
@@ -803,35 +490,28 @@ function getProtocolCalculators(r) {
       });
     });
 
-    // Listener do Wells TEP
-    const wellsBoxes = els.detail.querySelectorAll('.wells-item');
-    if (wellsBoxes.length) {
-      const updateWells = () => {
-        let pts = 0;
-        wellsBoxes.forEach(b => { if (b.checked) pts += Number(b.dataset.pts); });
-        const disp = els.detail.querySelector('#wells-score-display');
-        const rec = els.detail.querySelector('#wells-rec-display');
-        if (disp) disp.textContent = 'Pontuação: ' + pts.toFixed(1) + ' pontos';
-        if (rec) {
-          if (pts <= 4) rec.textContent = 'Wells ≤ 4 pontos: TEP improvável. Solicitar D-Dímero de alta sensibilidade; se negativo descarta TEP.';
-          else rec.textContent = 'Wells > 4 pontos: TEP provável (alta suspeita). Indicar Angio-TC de tórax imediata e considerar anticoagulação plena empírica se não houver sangramento.';
-        }
-      };
-      wellsBoxes.forEach(b => b.addEventListener('change', updateWells));
-    }
+    els.detail.querySelectorAll('[data-recipe-med]').forEach(box => box.addEventListener('change', () => {
+      const recIndex = Number(box.dataset.recipeMed);
+      const routeIndex = Number(box.dataset.routeIndex);
+      const itemIndex = Number(box.dataset.itemIndex);
+      const matched = getMatchedRecipes(r, recipesBank, norm);
+      const route = matched[recIndex]?.data?.routes?.[routeIndex];
+      if (!route) return;
+      const chosen = recipeSelections.get(recIndex) || new Set();
+      if (box.checked && route.mode === "alternatives") {
+        els.detail.querySelectorAll('[data-recipe-med="' + recIndex + '"][data-route-index="' + routeIndex + '"]')
+          .forEach(other => { if (other !== box) { other.checked = false; chosen.delete(routeIndex + ":" + other.dataset.itemIndex); } });
+      }
+      const key = routeIndex + ":" + itemIndex;
+      if (box.checked) chosen.add(key); else chosen.delete(key);
+      recipeSelections.set(recIndex, chosen);
+      els.detail.querySelector('[data-recipe-index="' + recIndex + '"]').disabled = chosen.size === 0;
+      const main = els.detail.querySelector('[data-copy-main-recipe]');
+      if (main && recIndex === 0) main.disabled = chosen.size === 0;
+    }));
+    els.detail.querySelector('[data-copy-exams]')?.addEventListener('click', (event) =>
+      copyText(examText(r), event.currentTarget, "Exames copiados ✓"));
 
-    // Copiar orientações de alta
-    els.detail.querySelector('#copy-discharge-btn')?.addEventListener('click', (e) => {
-      const txt = els.detail.querySelector('#protocol-discharge-text')?.innerText || '';
-      navigator.clipboard?.writeText(txt).then(() => {
-        const btn = e.currentTarget;
-        const old = btn.textContent;
-        btn.textContent = 'Orientações copiadas! ✓';
-        setTimeout(() => { btn.textContent = old; }, 1500);
-      });
-    });
-
-    
     // Listener de cópia da receita integrada
     els.detail.querySelectorAll('.integrated-recipe-copy-btn').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -840,12 +520,8 @@ function getProtocolCalculators(r) {
         const targetRec = matched[idx];
         if (!targetRec) return;
 
-        const fullTxt = formatRecipeCleanText(targetRec);
-        navigator.clipboard?.writeText(fullTxt).then(() => {
-          const oldTxt = btn.innerHTML;
-          btn.innerHTML = "<span>✓</span> Receita Copiada!";
-          setTimeout(() => { btn.innerHTML = oldTxt; }, 1800);
-        });
+        const chosen = recipeSelections.get(idx);
+        if (chosen?.size) copyText(formatRecipeCleanText(targetRec, chosen), btn, "Receita copiada ✓");
       });
     });
 
@@ -853,15 +529,9 @@ function getProtocolCalculators(r) {
     els.detail.querySelector('[data-copy-main-recipe]')?.addEventListener('click', () => {
       const matched = getMatchedRecipes(r, recipesBank, norm);
       if (!matched.length) return;
-      const fullTxt = formatRecipeCleanText(matched[0]);
-      navigator.clipboard?.writeText(fullTxt).then(() => {
-        const topBtn = els.detail.querySelector('[data-copy-main-recipe]');
-        if (topBtn) {
-          const oldText = topBtn.innerHTML;
-          topBtn.innerHTML = "<span>✓</span> Copiado!";
-          setTimeout(() => { topBtn.innerHTML = oldText; }, 1800);
-        }
-      });
+      const chosen = recipeSelections.get(0);
+      if (chosen?.size) copyText(formatRecipeCleanText(matched[0], chosen),
+        els.detail.querySelector('[data-copy-main-recipe]'), "Receita copiada ✓");
     });
 els.detail.querySelectorAll("[data-drug]").forEach((b) => b.addEventListener("click", () => bridge?.openDrug(b.dataset.drug)));
     els.detail.querySelector("[data-open-recipe]")?.addEventListener("click", () => bridge?.openRecipe(recipes[0]));
@@ -901,7 +571,10 @@ els.detail.querySelectorAll("[data-drug]").forEach((b) => b.addEventListener("cl
     searchDebounce = setTimeout(() => loadPage(true), 240);
   });
   [els.category,els.batch].forEach(el=>el?.addEventListener("change", () => loadPage(true)));
+  els.modal?.querySelectorAll("[data-close-protocol]").forEach(el => el.addEventListener("click", closeModal));
+  document.addEventListener("keydown", event => { if (event.key === "Escape" && els.modal && !els.modal.hidden) closeModal(); });
   els.pagePrev?.addEventListener("click", () => { if (page > 0) {page--;loadPage();} });
   els.pageNext?.addEventListener("click", () => { if ((page + 1) * PAGE_SIZE < totalMatches) {page++;loadPage();} });
   load();
 })();
+
