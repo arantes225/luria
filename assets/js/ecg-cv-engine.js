@@ -271,6 +271,195 @@
     LABEL_TEMPLATES[lbl] = buildLabelBitmap(lbl);
   });
 
+  function buildRowsTemplate(rows, requireStrictMoat = false) {
+    const h = rows.length;
+    const w = rows[0].length;
+    const data = new Int8Array(w * h);
+    for (let y = 0; y < h; y++) {
+      for (let x = 0; x < w; x++) {
+        const ch = rows[y][x];
+        data[y * w + x] = ch === "#" ? 1 : (ch === "." ? -1 : 0);
+      }
+    }
+    return { width: w, height: h, data, requireStrictMoat };
+  }
+
+  // Templates de rótulos sans-serif anti-aliased reais (padrão clínico 10–20px de eletrocardiógrafos reais)
+  const SANS_LABEL_TEMPLATES = {
+    I: buildRowsTemplate([
+      "......",
+      "......",
+      "..##..",
+      "..##..",
+      "..##..",
+      "..##..",
+      "..##..",
+      "..##..",
+      "..##..",
+      "..##..",
+      "..##..",
+      "..##..",
+      "......",
+      "......"
+    ], true),
+    II: buildRowsTemplate([
+      ".........",
+      ".........",
+      "..##..#..",
+      "..##..#..",
+      "..##..#..",
+      "..##..#..",
+      "..##..#..",
+      "..##..#..",
+      "..##..#..",
+      "..##..#..",
+      "..##..#..",
+      "..##..#..",
+      ".........",
+      "........."
+    ], true),
+    III: buildRowsTemplate([
+      "................",
+      "................",
+      "..##..#...#.....",
+      "..##..#...#.....",
+      "..##..#...#.....",
+      "..##..#...#.....",
+      "..##..#...#.....",
+      "..##..#...#.....",
+      "..##..#...#.....",
+      "..##..#...#.....",
+      "..##..#...#.....",
+      "......#.........",
+      "................"
+    ], true),
+    aVR: buildRowsTemplate([
+      "..........................",
+      ".........#......#..####...",
+      ".........##....##..##.###.",
+      ".........##....##..#...##.",
+      "..#####...#....#...#...##.",
+      "......#...#...##...#...##.",
+      "....####..#...##...#####..",
+      "..######......#....#..##..",
+      ".##...##....###....#...##.",
+      ".##...##....##.....#....#.",
+      "..######....##.....#....##",
+      ".........................."
+    ], false),
+    aVL: buildRowsTemplate([
+      ".........................",
+      ".........##.....#..#.....",
+      ".........#.....##..#.....",
+      "...###...##....#...#.....",
+      ".....##...#...##...#.....",
+      "......##......##...#.....",
+      "..######..#...#....#.....",
+      ".##...##....###....#.....",
+      ".##...##....###....#.....",
+      "..######....##.....#####.",
+      "...##..............#####.",
+      "........................."
+    ], false),
+    aVF: buildRowsTemplate([
+      ".........................",
+      ".........#......#..#####.",
+      ".........#.....##..#.....",
+      "..####....#....#...#.....",
+      ".....##...#...##...#.....",
+      "......##..#...##...#####.",
+      "..######..##..#....#.....",
+      "..#...##...####....#.....",
+      ".##...##...####....#.....",
+      "..######...###.....#.....",
+      "...##.......#............",
+      "........................."
+    ], false),
+    V1: buildRowsTemplate([
+      ".................",
+      ".#......#..###...",
+      ".#.....##..###...",
+      ".##....#....##...",
+      "..#...##.....#...",
+      "..#...##.....#...",
+      "..##..#......#...",
+      "...#.##......#...",
+      "...####......#...",
+      "...###......##...",
+      "....##.....#####.",
+      "................."
+    ], false),
+    V2: buildRowsTemplate([
+      "...............",
+      "#......#..###..",
+      "#.....##.######",
+      "##....##.....##",
+      "##....#......##",
+      ".#....#......##",
+      ".##.........###",
+      "..#..#.....####",
+      "..##.#....##..#",
+      "..####...##..##",
+      "...##....######",
+      "..............."
+    ], false),
+    V3: buildRowsTemplate([
+      "................",
+      ".#.....##.######",
+      ".##....##.....##",
+      ".##....#......##",
+      "..#....#....###.",
+      "..##........###.",
+      "..##..........##",
+      "...##..........#",
+      "...##.........##",
+      "....#.....#####.",
+      "................"
+    ], false),
+    V4: buildRowsTemplate([
+      "................",
+      ".#.....#.....##.",
+      ".#.....#....###.",
+      "......##...####.",
+      "..#...##...#.##.",
+      "..#...#...#..##.",
+      ".....##..##..##.",
+      "...#.#...#######",
+      "...###......###.",
+      "...###.......##.",
+      "...##........##.",
+      "................"
+    ], false),
+    V5: buildRowsTemplate([
+      "................",
+      ".#.....#..#####.",
+      ".......#..#.....",
+      "......##..#.....",
+      ".##...#...####..",
+      "..#..##......##.",
+      "..#..##.......##",
+      "..##.#........##",
+      "...###........##",
+      "...###....#.###.",
+      "....#.....####..",
+      "................"
+    ], false),
+    V6: buildRowsTemplate([
+      "................",
+      "............###.",
+      ".......#...####.",
+      "......##..#.....",
+      "......##..#.....",
+      "..#...#..######.",
+      "..#..##..##...##",
+      "..##.##..##...##",
+      "..####....#...##",
+      "...###....##..##",
+      "...##......####.",
+      "................"
+    ], false)
+  };
+
   /**
    * Renderiza um rótulo matricial no ImageData (útil para geradores de referência de teste e validação de OCR)
    */
@@ -499,10 +688,10 @@
       hasSeverePerspective,
       trapezoidRatio: Number(trapezoidRatio.toFixed(3)),
       corners: {
-        topLeft: { x: topSpan.left, y: topY },
-        topRight: { x: topSpan.right, y: topY },
-        bottomLeft: { x: botSpan.left, y: botY },
-        bottomRight: { x: botSpan.right, y: botY }
+        topLeft: { x: topSpan.left, y: minY },
+        topRight: { x: topSpan.right, y: minY },
+        bottomLeft: { x: botSpan.left, y: maxY },
+        bottomRight: { x: botSpan.right, y: maxY }
       },
       boundaries: {
         xMin: Number((minX / width).toFixed(4)),
@@ -1171,6 +1360,134 @@
       };
     }
 
+    // Segunda passagem: templates sans-serif anti-aliased de eletrocardiógrafos reais (10px–20px)
+    const sansSearchW = Math.min(x1 - x0, Math.max(16, Math.floor((x1 - x0) * 0.28)));
+    const sansSearchH = Math.min(y1 - y0, Math.max(14, Math.floor((y1 - y0) * 0.55)));
+    const isRightHalfScan = (roiBox.xMin ?? 0) >= 0.30;
+
+    if (sansSearchW >= 12 && sansSearchH >= 12) {
+      // Pré-computa mapa binário de tinta escura e soma acumulada por linha (O(W*H) único por chamada)
+      const darkGrid = new Uint8Array(sansSearchW * sansSearchH);
+      const rowPrefix = new Int32Array(sansSearchH * (sansSearchW + 1));
+      let totalDarkInZone = 0;
+
+      for (let ly = 0; ly < sansSearchH; ly++) {
+        const py = y0 + ly;
+        const rowOff = ly * sansSearchW;
+        const prefOff = ly * (sansSearchW + 1);
+        let acc = 0;
+        for (let lx = 0; lx < sansSearchW; lx++) {
+          const px = x0 + lx;
+          const idx = (py * width + px) * 4;
+          const r = data[idx], g = data[idx + 1], b = data[idx + 2];
+          const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+          const dark = (luma < 150 && (r - g) < 25 && Math.abs(r - b) < 55) ? 1 : 0;
+          darkGrid[rowOff + lx] = dark;
+          acc += dark;
+          rowPrefix[prefOff + lx + 1] = acc;
+        }
+        totalDarkInZone += acc;
+      }
+
+      if (totalDarkInZone >= 12) {
+        const isContradictionProbe = candidateLabels.length > 4 && options.scales && options.scales.length === 1;
+        const sansScales = isContradictionProbe ? [1] : [1, 1.4];
+
+        for (const labelName of candidateLabels) {
+          const tpl = SANS_LABEL_TEMPLATES[labelName];
+          if (!tpl) continue;
+          if (isRightHalfScan && (labelName === "I" || labelName === "II" || labelName === "III")) continue;
+
+          for (const scale of sansScales) {
+            const tw = Math.round(tpl.width * scale);
+            const th = Math.round(tpl.height * scale);
+            if (tw >= sansSearchW || th >= sansSearchH) continue;
+            const midRowOffset = Math.floor(th / 2);
+
+            for (let ly = 0; ly <= sansSearchH - th; ly++) {
+              const midPrefOff = (ly + midRowOffset) * (sansSearchW + 1);
+              const top0PrefOff = ly * (sansSearchW + 1);
+              const top1PrefOff = (ly + 1) * (sansSearchW + 1);
+
+              for (let lx = 0; lx <= sansSearchW - tw; lx++) {
+                // Filtro rápido O(1): precisa haver tinta na linha central da caixa do template
+                if (rowPrefix[midPrefOff + lx + tw] - rowPrefix[midPrefOff + lx] < 2) continue;
+                // Filtro rápido O(1) para fosso superior estrito em I, II, III
+                if (tpl.requireStrictMoat) {
+                  if ((rowPrefix[top0PrefOff + lx + tw] - rowPrefix[top0PrefOff + lx]) > 0 ||
+                      (rowPrefix[top1PrefOff + lx + tw] - rowPrefix[top1PrefOff + lx]) > 0) {
+                    continue;
+                  }
+                }
+
+                let fgMatches = 0, fgTotal = 0;
+                let bgMatches = 0, bgTotal = 0;
+                let moatViolation = false;
+
+                for (let ty = 0; ty < tpl.height && !moatViolation; ty++) {
+                  const gy = Math.min(sansSearchH - 1, ly + Math.round(ty * scale));
+                  const gRowOff = gy * sansSearchW;
+                  for (let tx = 0; tx < tpl.width; tx++) {
+                    const expected = tpl.data[ty * tpl.width + tx];
+                    if (expected === 0) continue;
+                    const gx = Math.min(sansSearchW - 1, lx + Math.round(tx * scale));
+                    const isDark = darkGrid[gRowOff + gx] === 1;
+
+                    if (expected === 1) {
+                      fgTotal++;
+                      if (isDark) fgMatches++;
+                    } else {
+                      bgTotal++;
+                      if (!isDark) {
+                        bgMatches++;
+                      } else if (tpl.requireStrictMoat) {
+                        const maxBottomRow = labelName === "III" ? tpl.height - 1 : tpl.height - 2;
+                        if (ty < 2 || ty >= maxBottomRow || tx < 2 || tx >= tpl.width - 3) {
+                          moatViolation = true;
+                          break;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                if (moatViolation) continue;
+                const fgRate = fgMatches / Math.max(1, fgTotal);
+                const bgRate = bgMatches / Math.max(1, bgTotal);
+
+                if (fgRate > 0.80 && bgRate > 0.84) {
+                  const specificityBonus = labelName.length * 0.03;
+                  const score = (fgRate * 0.55 + bgRate * 0.45) + specificityBonus;
+                  const canonicalCandidate = LEAD_SYNONYMS[labelName] || labelName;
+                  const canonicalBest = LEAD_SYNONYMS[bestLabel] || bestLabel;
+                  if (score > bestScore) {
+                    if (canonicalBest && canonicalBest !== canonicalCandidate) secondBestScore = bestScore;
+                    bestScore = score;
+                    bestLabel = labelName;
+                  } else if (canonicalBest !== canonicalCandidate && score > secondBestScore) {
+                    secondBestScore = score;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    const sansMargin = bestScore - secondBestScore;
+    if (bestLabel && bestScore >= 0.88 && sansMargin >= 0.015) {
+      const canonicalLead = LEAD_SYNONYMS[bestLabel] || bestLabel;
+      return {
+        recognized: true,
+        lead: canonicalLead,
+        recognizedLead: canonicalLead,
+        rawText: bestLabel,
+        confidence: Number(Math.min(0.99, bestScore).toFixed(3)),
+        method: "glyph_template_ocr"
+      };
+    }
+
     return {
       recognized: false,
       lead: null,
@@ -1352,6 +1669,11 @@
         xMin: gx[0] / width, xMax: (gx[gx.length - 1] + 1) / width,
         yMin: gy[0] / height, yMax: (gy[gy.length - 1] + 1) / height
       };
+      if (sheet.touchesAllBorders && gx[0] >= 4 && gx[gx.length - 1] <= width - 5 &&
+          gy[0] >= 4 && gy[gy.length - 1] <= height - 5) {
+        sheet.isCutOff = false;
+        sheet.photoFillsFrame = true;
+      }
     }
     // A user-selected strip/export may fill the whole bitmap. Touching all
     // four edges does not by itself mean that the waveform was cut off.
@@ -1602,10 +1924,10 @@
             : (band && rowGap ? band.yCenterRatio + rowGap : yMax));
 
       const rowYMin = (band && is3x4)
-        ? Math.max(yMin, (prevCenter + band.yCenterRatio) / 2)
+        ? Math.max(yMin, band.yCenterRatio - (band.yCenterRatio - prevCenter) * 0.65)
         : (band ? band.yMin : (yMin + (r / totalRows) * (yMax - yMin)));
       const rowYMax = (band && is3x4)
-        ? Math.min(yMax, (band.yCenterRatio + nextCenter) / 2)
+        ? Math.min(yMax, band.yCenterRatio + (nextCenter - band.yCenterRatio) * 0.42)
         : (band ? band.yMax : (yMin + ((r + 0.96) / totalRows) * (yMax - yMin)));
 
       for (let c = 0; c < numCols; c++) {
@@ -1767,8 +2089,13 @@
       const lastMainY = mainBands[numMainRows - 1]?.yCenterRatio || 0;
       const rhythmBands = topology.bands.filter(band => band.yCenterRatio > lastMainY + 0.04);
       rhythmBands.forEach((rBand, index) => {
-        const rBox = { xMin, xMax, yMin: rBand.yMin, yMax: rBand.yMax };
+        const rYMin = Math.max(yMin, Number(((lastMainY + rBand.yCenterRatio) / 2).toFixed(4)));
+        const rYMax = Math.min(yMax, rBand.yMax);
+        const rBox = { xMin, xMax, yMin: rYMin, yMax: rYMax };
         const rOcr = recognizeLeadLabelInRegion(imageData, rBox);
+        const rDisplayLabel = rOcr.recognized
+          ? `Tira longa ${index + 1} (${rOcr.lead})`
+          : `Tira longa ${index + 1}`;
         rhythmStrips.push({
           name: `${rOcr.recognized ? rOcr.lead : `rhythm_${index + 1}`}_long`,
           lead: rOcr.recognized ? rOcr.lead : null,
@@ -1783,8 +2110,8 @@
         });
         if (trace?.isValid) candidateRegions[`rhythm_${index + 1}`] = {
           ...rBox, row: numMainRows + index, col: 0, expectedInTemplate: null,
-          displayLabel: `Tira longa ${index + 1}`, observedLabel: rOcr.recognized ? rOcr.lead : null,
-          evidence: "unassigned_rhythm_candidate"
+          displayLabel: rDisplayLabel, observedLabel: rOcr.recognized ? rOcr.lead : null,
+          evidence: rOcr.recognized ? "ocr_verified" : "unassigned_rhythm_candidate"
         };
       });
     }

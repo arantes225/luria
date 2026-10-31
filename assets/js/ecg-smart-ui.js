@@ -516,7 +516,10 @@
     if (!reviewGrid) return;
     reviewGrid.innerHTML = "";
 
-    let hasMissing = leads.some(info => info.status !== "captured");
+    let hasMissing = leads.some(info => {
+      const isAuxiliary = Boolean(info.displayLabel) || String(info.lead).startsWith("rhythm_");
+      return !isAuxiliary && info.status !== "captured";
+    });
     let adequateCount = 0;
     let reviewCount = 0;
     let invalidCount = 0;
@@ -524,7 +527,8 @@
 
     leads.forEach(leadInfo => {
       if (!leadInfo.captured && !leadInfo.imageCropUrl) return; // No giant cards without evidence.
-      const provisional = leadInfo.status === "provisional";
+      const isAuxiliaryStrip = Boolean(leadInfo.displayLabel) || String(leadInfo.lead).startsWith("rhythm_");
+      const provisional = leadInfo.status === "provisional" && !isAuxiliaryStrip;
       if (provisional) candidateCount++;
       const card = document.createElement("article");
       card.className = "ecg-lead-card";
@@ -938,7 +942,7 @@
         ctx.moveTo(x, y);
       } else {
         const midX = (prevX + x) / 2;
-        const midY = (prevPy + y) / 2;
+        const midY = (prevY + y) / 2;
         ctx.quadraticCurveTo(prevX, prevY, midX, midY);
       }
       prevX = x;

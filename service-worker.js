@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261031-leco-actions-center1";
+const CACHE_VERSION = "luria-pwa-20261031-ecg-v6";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";

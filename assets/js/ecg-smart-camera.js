@@ -629,7 +629,9 @@
 
         // Verifica o rótulo específico e anomalias (troca ou duplicidade)
         const regionAnomalies = anomalies.filter(a => a.lead === leadName || a.recognizedLead === leadName || a.expectedLead === leadName);
-        const leadIdentity = provisional
+        const isOcrVerifiedAuxiliary = !CANONICAL_LEADS.includes(leadName) &&
+          box.evidence === "ocr_verified" && Boolean(box.observedLabel);
+        const leadIdentity = (provisional && !isOcrVerifiedAuxiliary)
           ? contracts.normalizeLeadIdentity({
               lead: leadName, expectedLead: leadName, recognizedLead: null,
               method: "topology_hypothesis", evidence: "positional_hypothesis",
@@ -637,8 +639,12 @@
             })
           : contracts.normalizeLeadIdentity({
               ...(boundaries.leadIdentities?.[leadName] || {}),
-              lead: leadName,
-              expectedLead: boundaries.leadIdentities?.[leadName]?.expectedLead || box.expectedInTemplate || leadName,
+              lead: box.observedLabel || leadName,
+              recognizedLead: box.observedLabel || boundaries.leadIdentities?.[leadName]?.recognizedLead || leadName,
+              expectedLead: box.observedLabel || boundaries.leadIdentities?.[leadName]?.expectedLead || box.expectedInTemplate || leadName,
+              method: boundaries.leadIdentities?.[leadName]?.method || "glyph_template_ocr",
+              evidence: boundaries.leadIdentities?.[leadName]?.evidence || "ocr_verified",
+              ocrConfidence: boundaries.leadIdentities?.[leadName]?.ocrConfidence || 0.95,
               region: boundaries.leadIdentities?.[leadName]?.region || box,
               anomalies: regionAnomalies
             });
