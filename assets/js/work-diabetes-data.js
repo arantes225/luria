@@ -23,7 +23,11 @@ window.LuriaDiabetesData = {
       "hypo": "Baixo",
       "notes": "Atenção à tolerabilidade gastrointestinal, vitamina B12 e TFGe; a redução não é calculada por dose.",
       "source": "https://diretriz.diabetes.org.br/manejo-do-diabetes-mellitus-tipo-2/",
-      "renal": "Não usar se TFGe <30; revisar limite de dose entre 30–45."
+      "renal": "Não usar se TFGe <30; revisar limite de dose entre 30–45.",
+      "starter": [
+        "500 mg/dia",
+        "850 mg/dia"
+      ]
     },
     {
       "id": "metformina-xr",
@@ -44,7 +48,11 @@ window.LuriaDiabetesData = {
       "hypo": "Baixo",
       "notes": "Formulação de liberação estendida; eficácia por dose não está modelada.",
       "source": "https://diretriz.diabetes.org.br/manejo-do-diabetes-mellitus-tipo-2/",
-      "renal": "Não usar se TFGe <30; revisar limite de dose entre 30–45."
+      "renal": "Não usar se TFGe <30; revisar limite de dose entre 30–45.",
+      "starter": [
+        "500 mg/dia",
+        "750 mg/dia"
+      ]
     },
     {
       "id": "dapagliflozina",
@@ -116,7 +124,11 @@ window.LuriaDiabetesData = {
       "hypo": "Baixo",
       "notes": "Pode exigir ajuste renal; não associar rotineiramente a agonistas GLP-1.",
       "source": "https://diretriz.diabetes.org.br/manejo-do-diabetes-mellitus-tipo-2/",
-      "renal": "Ajuste de dose conforme TFGe."
+      "renal": "Ajuste de dose conforme TFGe.",
+      "starter": [
+        "25 mg/dia",
+        "50 mg/dia"
+      ]
     },
     {
       "id": "linagliptina",
@@ -170,7 +182,11 @@ window.LuriaDiabetesData = {
       "hypo": "Baixo",
       "notes": "Ajustar conforme função renal e bula.",
       "source": "https://diretriz.diabetes.org.br/manejo-do-diabetes-mellitus-tipo-2/",
-      "renal": "Ajuste renal."
+      "renal": "Ajuste renal.",
+      "starter": [
+        "6,25 mg/dia",
+        "12,5 mg/dia"
+      ]
     },
     {
       "id": "saxagliptina",
