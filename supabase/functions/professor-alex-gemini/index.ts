@@ -126,7 +126,7 @@ function fastSocialReply(value: unknown, mode: string) {
 
 function isStudyPlanningRequest(value: unknown) {
   const clean = normalizeSocialText(value);
-  return /\b(cronograma|aulas? (?:desta|da|por) semana|rodando em|lista de quest|lista de flashcard|criar quest|criar flashcard|selecionar apostila|estudar agora|mudar as aulas|ajustar.*cronograma)\b/.test(clean);
+  return /\b(cronograma|planejamento|planejar estudos?|organizar (?:meus? )?estudos?|reorganizar (?:minha )?semana|aulas? (?:desta|da|por) semana|rodando em|lista(?:s)? de quest|lista(?:s)? de flashcard|questoes? (?:sobre|de|para|do)|flashcards? (?:sobre|de|para|do)|criar quest|criar flashcard|selecionar apostila|estudar agora|mudar as aulas|ajustar.*cronograma|montar.*(?:quest|flashcard)|gerar.*(?:quest|flashcard))\b/.test(clean);
 }
 
 type StudyAction = {
@@ -152,11 +152,14 @@ function sanitizeStudyAction(value: unknown): StudyAction | null {
     if (!/^\d{4}-\d{2}-\d{2}$/.test(start_date) || !/^\d{4}-\d{2}-\d{2}$/.test(end_date)) return null;
     return { type, topic, start_date, end_date, lessons_per_day: Math.max(1, Math.min(5, Number(item.lessons_per_day) || 1)) };
   }
-  return { type, topic, question_count: Math.max(0, Math.min(50, Number(item.question_count) || 10)), flashcard_count: Math.max(0, Math.min(80, Number(item.flashcard_count) || 15)) };
+  const question_count = Math.max(0, Math.min(50, Number(item.question_count ?? 10) || 0));
+  const flashcard_count = Math.max(0, Math.min(80, Number(item.flashcard_count ?? 15) || 0));
+  if (question_count === 0 && flashcard_count === 0) return null;
+  return { type, topic, question_count, flashcard_count };
 }
 
 function studyPlannerInstruction(today: string, channel: string) {
-  return `${ALEX_NORMAL_MODE_PROMPT}\n\nVocê também organiza estudos dentro da LURIA. Hoje é ${today}. Interprete o pedido e responda SOMENTE em JSON válido, sem markdown, neste formato: {"answer":"resumo curto em português pedindo confirmação antes de mudar dados","proposal":{"type":"schedule_focus ou topic_bundle","topic":"assunto","start_date":"YYYY-MM-DD ou omitir","end_date":"YYYY-MM-DD ou omitir","lessons_per_day":1,"question_count":10,"flashcard_count":15}}. Para mudança de cronograma use schedule_focus, datas exatas e no máximo 32 dias. Para lista de questões, flashcards ou apostila use topic_bundle. Nunca diga que aplicou; você apenas preparou uma proposta. ${channel === "voice" ? "A resposta falada deve continuar curta." : ""}`;
+  return `${ALEX_NORMAL_MODE_PROMPT}\n\nVocê também organiza estudos dentro da LURIA. Hoje é ${today}. Interprete o pedido e responda SOMENTE em JSON válido, sem markdown, neste formato: {"answer":"resumo curto em português pedindo confirmação antes de mudar dados","proposal":{"type":"schedule_focus ou topic_bundle","topic":"assunto","start_date":"YYYY-MM-DD ou omitir","end_date":"YYYY-MM-DD ou omitir","lessons_per_day":1,"question_count":10,"flashcard_count":15}}. Para mudança de cronograma use schedule_focus, datas exatas e no máximo 32 dias. Para lista de questões, flashcards ou apostila use topic_bundle. Se o aluno pedir apenas questões, defina flashcard_count:0. Se pedir apenas flashcards, defina question_count:0. Nunca invente questões ou flashcards: a plataforma seleciona somente itens existentes compatíveis com o tema, com limite de 50 questões e 80 flashcards por ação. Se o aluno pedir alteração de cronograma, preserve os dias de estudo e mostre o período. Nunca afirme que aplicou ou criou itens até o usuário tocar em Confirmar e aplicar; você apenas preparou uma proposta. Ações administrativas, pagamentos, dados de outros alunos e exclusão irreversível não são permitidos por esta função. ${channel === "voice" ? "A resposta falada deve continuar curta." : ""}`;
 }
 
 function getFeynmanSystemInstruction(action: string, learnerMode: string, topic: string, channel: string) {
