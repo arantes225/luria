@@ -3,7 +3,37 @@
   const list=document.getElementById('drug-list');
   const detail=document.getElementById('drug-detail');
   const count=document.getElementById('drug-count');
-  let rows=[], protocols=[], selected=null, activeChip=""; const normStr=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+  let rows=[], protocols=[], selected=null, activeChip="";
+  const normStr=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("pt-BR").trim();
+  const commercialNames=row=>{
+    const data=row?.data||{};
+    const entries=[
+      ...(Array.isArray(data.products)?data.products.map(item=>typeof item==="string"?item:item?.name):[]),
+      ...(Array.isArray(data.brand_catalog)?data.brand_catalog.map(item=>typeof item==="string"?item:item?.name):[]),
+      ...(Array.isArray(data.commercial_names)?data.commercial_names:[]),
+      ...(Array.isArray(data.brand_names)?data.brand_names:[]),
+      ...(Array.isArray(data.brands)?data.brands:[]),
+      data.commercial_name,data.brand_name
+    ];
+    const seen=new Set();
+    return entries.map(item=>typeof item==="string"?item:item?.name).map(item=>String(item||"").trim()).filter(item=>{
+      const key=normStr(item);
+      if(!key||seen.has(key))return false;
+      seen.add(key);
+      return true;
+    });
+  };
+  const searchRank=(row,term)=>{
+    if(!term)return 0;
+    const primary=[row.name,row.active_ingredient].map(normStr).filter(Boolean);
+    const brands=commercialNames(row).map(normStr);
+    const related=[row.therapeutic_class,row.pharmacological_class,...(Array.isArray(row.data?.diseases)?row.data.diseases:[])].map(normStr);
+    if(primary.some(value=>value===term)||brands.some(value=>value===term))return 0;
+    if(primary.some(value=>value.startsWith(term))||brands.some(value=>value.startsWith(term)))return 1;
+    if(primary.some(value=>value.includes(term))||brands.some(value=>value.includes(term)))return 2;
+    if(related.some(value=>value.includes(term)))return 3;
+    return Infinity;
+  };
   const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const number=value=>new Intl.NumberFormat('pt-BR',{maximumFractionDigits:2}).format(value);
   const status=row=>row.data?.status==='posology_verified'?2:row.data?.status==='verified'?1:0;
@@ -35,18 +65,23 @@
     return `<div class="rx-clinical-list">${items.map(item=>`<div class="rx-clinical-item">${esc(item)}</div>`).join('')}</div>`;
   };
   function renderList(){
-    const term=search.value.trim().toLocaleLowerCase('pt-BR');
-    const matches=rows.filter(row=>{
+    const term=normStr(search.value);
+    const ranked=rows.map(row=>{
       if(activeChip){
-        const hay=normStr([row.therapeutic_class,row.pharmacological_class,row.data?.therapeutic_class,...(row.data?.diseases||[])].join(' '));
-        if(!hay.includes(activeChip)) return false;
+        const d=Array.isArray(row.data?.diseases)?row.data.diseases:[];
+        const hay=normStr([row.therapeutic_class,row.pharmacological_class,row.data?.therapeutic_class,...d].join(' '));
+        if(!hay.includes(activeChip))return null;
       }
-      if(!term) return true;
-      return [row.name,row.active_ingredient,row.therapeutic_class,row.pharmacological_class,...(row.data?.diseases||[])].some(value=>String(value||'').toLocaleLowerCase('pt-BR').includes(term));
-    });
-    matches.sort((a,b)=>status(b)-status(a)||String(a.name||'').localeCompare(String(b.name||''),'pt-BR'));
-    count.textContent=`${matches.length} medicamento${matches.length===1?'':'s'}`;
-    list.innerHTML=matches.map(row=>`<button type="button" class="drug-row" data-id="${row.id}" aria-current="${String(row.id)===String(selected)}"><span class="drug-row-content"><strong>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</strong><small>${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<span class="drug-row-description">Nome comercial/referência: ${esc(row.name)}</span>`:''}${status(row)===2?`<span class="drug-row-presentations">${row.data.formulations?.length||0} apresentaç${row.data.formulations?.length===1?'ão':'ões'}</span>`:status(row)===1?'<span class="drug-row-description">Resumo da bula</span>':''}</small></span></button>`).join('')||'<div class="empty">Nenhum medicamento encontrado.</div>';
+      const rank=searchRank(row,term);
+      return Number.isFinite(rank)?{row,rank}:null;
+    }).filter(Boolean);
+    ranked.sort((a,b)=>a.rank-b.rank||status(b.row)-status(a.row)||String(a.row.name||'').localeCompare(String(b.row.name||''),'pt-BR'));
+    const visible=ranked.slice(0,120);
+    count.textContent=`${ranked.length} medicamento${ranked.length===1?'':'s'}${ranked.length>visible.length?` · exibindo ${visible.length}; refine a busca`:''}`;
+    list.innerHTML=visible.map(({row})=>{
+      const brands=commercialNames(row).slice(0,3).join(' · ');
+      return `<button type="button" class="drug-row" data-id="${esc(row.id)}" aria-current="${String(row.id)===String(selected)}"><span class="drug-row-content"><strong>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</strong><small>${row.name&&row.active_ingredient&&normStr(row.name)!==normStr(row.active_ingredient)?`<span class="drug-row-description">Nome comercial/referência: ${esc(row.name)}</span>`:''}${brands?`<span class="drug-row-description">Nomes comerciais: ${esc(brands)}</span>`:''}${status(row)===2?`<span class="drug-row-presentations">${row.data.formulations?.length||0} apresentaç${row.data.formulations?.length===1?'ão':'ões'}</span>`:status(row)===1?'<span class="drug-row-description">Resumo da bula</span>':''}</small></span></button>`;
+    }).join('')||'<div class="empty">Nenhum medicamento encontrado.</div>';
   }
   function calculator(formulation,index){
     const c=formulation.calculator;
@@ -180,6 +215,7 @@
     if(!row){detail.innerHTML='<div class="empty">Selecione um medicamento.</div>';closeMobileDetail();return}
     const d=row.data||{},formulations=Array.isArray(d.formulations)?d.formulations:[],hasCompletePosology=formulations.length>0&&formulations.every(f=>['dose_text','interval_text','route','duration_text','max_daily_text','administration','cautions','prescription_type'].every(k=>String(f?.[k]||'').trim())),ready=d.status==='posology_verified'||hasCompletePosology,summary=d.status==='verified';
     const products=Array.isArray(d.products)?d.products:[];
+    const brands=commercialNames(row);
     const diseases=Array.isArray(d.diseases)?d.diseases:[];
     const keys=[row.active_ingredient,row.name].map(v=>String(v||"").toLocaleLowerCase("pt-BR"));
     const relatedProtocols=protocols.filter(p=>Array.isArray(p.linked_drug_terms)&&p.linked_drug_terms.some(term=>{const t=String(term||"").toLocaleLowerCase("pt-BR");return keys.some(k=>k&&(k.includes(t)||t.includes(k)));}));
@@ -189,7 +225,7 @@
         <button type="button" class="secondary" data-send-note="1">${window.LuriaClinicalBridge?.inPrescriptionFlow?.() ? "Adicionar à prescrição" : "Enviar à Cola Rápida"}</button>
       </div>
       <section class="rx-section"><div class="rx-section-head"><h3>Principais indicações</h3></div>${diseases.length?`<div class="rx-tags">${diseases.map(item=>`<span>${esc(item)}</span>`).join('')}</div>`:'<p class="rx-note">Indicações ainda não vinculadas nesta ficha.</p>'}</section>
-      <section class="rx-section"><div class="rx-section-head"><h3>Nomes e produtos</h3></div>${products.length?`<div class="rx-products">${products.map(p=>`<span><b>${esc(p.name)}</b> · ${esc(p.type)} · ${esc(p.presentation)}</span>`).join('')}</div>`:`<p class="rx-note">${esc(row.name)}${row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?` · princípio ativo: ${esc(row.active_ingredient)}`:''}. Outras marcas e genéricos ainda não vinculados.</p>`}</section>
+      <section class="rx-section"><div class="rx-section-head"><h3>Nomes comerciais e produtos</h3></div>${brands.length?`<div class="rx-tags">${brands.map(name=>`<span>${esc(name)}</span>`).join('')}</div>`:'<p class="rx-note">Nenhum nome comercial vinculado a esta ficha ainda.</p>'}${products.length?`<div class="rx-products">${products.map(p=>`<span><b>${esc(p.name)}</b> · ${esc(p.type)} · ${esc(p.presentation)}</span>`).join('')}</div>`:''}<p class="rx-note">Os nomes associados não comprovam registro vigente nem permitem intercambiar doses, vias ou apresentações.</p></section>
       ${ready?`<div class="rx-presentation-layout">${presentationPicker(formulations)}<div id="rx-active-presentation">${formulations.length?formulationCard(formulations[0],0):''}</div></div>`:`<section class="rx-card"><h3>Prescrição</h3><p class="rx-note">Dose, intervalo, via, limite diário e ajustes desta apresentação ainda não foram conferidos. Consulte a bula antes de prescrever.</p>${d.indication?`<div class="rx-field"><span>Indicação resumida</span><b>${esc(d.indication)}</b></div>`:''}${d.presentation?`<div class="rx-field"><span>Apresentação</span><b>${esc(d.presentation)}</b></div>`:''}</section>`}
       <section class="rx-section"><div class="rx-section-head"><h3>Contraindicações</h3></div>${clinicalList(d.contraindications||d.contraindication,'Sem contraindicações específicas cadastradas. Avaliar histórico de hipersensibilidade, gestação e condições individuais.')}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Ajuste renal (ClCr / TFG / Diálise)</h3></div><p class="rx-note" style="margin:0;font-size:13.5px;line-height:1.55;font-weight:600">${esc(d.renal_adjustment||d.renal||'Sem diretriz de ajuste renal cadastrada. Avaliar clearance de creatinina antes da prescrição em insuficiência renal.')}</p></section>
@@ -322,7 +358,19 @@
     if(window.supabaseClient){
       try{
         const [bRes,pRes]=await Promise.all([
-          window.supabaseClient.from('bulario_catalog').select('id,name,active_ingredient,therapeutic_class,pharmacological_class,data').order('name').limit(1000),
+          (async()=>{
+            const pageSize=500,all=[];
+            for(let offset=0;offset<20000;offset+=pageSize){
+              const result=await window.supabaseClient.from('bulario_catalog')
+                .select('id,name,active_ingredient,therapeutic_class,pharmacological_class,data')
+                .order('id',{ascending:true}).range(offset,offset+pageSize-1);
+              if(result.error)throw result.error;
+              const page=result.data||[];
+              all.push(...page);
+              if(page.length<pageSize)return {data:all,error:null};
+            }
+            throw new Error('Limite de segurança do carregamento do Bulário excedido.');
+          })(),
           window.supabaseClient.from('clinical_protocols').select('slug,title,linked_drug_terms').order('title')
         ]);
         data=bRes?.data||[];error=bRes?.error||null;protocolRows=pRes?.data||[];
@@ -337,9 +385,8 @@
     const q=new URLSearchParams(location.search).get('q')?.trim();
     if(q){
       search.value=q;
-      const term=q.toLocaleLowerCase('pt-BR');
-      const hit=rows.find(row=>[row.name,row.active_ingredient].some(v=>String(v||'').toLocaleLowerCase('pt-BR')===term))
-        || rows.find(row=>[row.name,row.active_ingredient].some(v=>String(v||'').toLocaleLowerCase('pt-BR').includes(term)));
+      const term=normStr(q);
+      const hit=rows.map(row=>({row,rank:searchRank(row,term)})).filter(item=>Number.isFinite(item.rank)).sort((a,b)=>a.rank-b.rank||status(b.row)-status(a.row))[0]?.row;
       selected=hit?.id||rows[0]?.id;
     }else selected=rows.find(row=>row.id===363)?.id||rows[0]?.id;
     renderList();renderDetail(rows.find(row=>String(row.id)===String(selected)));})();
