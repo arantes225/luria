@@ -507,7 +507,9 @@ if (form) {
       voice_quality: document.getElementById("alex-natural-voice")?.checked ? "natural" : "fast",
       history: sessionHistory.slice(-12),
     };
-    if (isLiveActive && Number.isFinite(liveTranscriptConfidence)) payload.voice_confidence = liveTranscriptConfidence;
+    if (isLiveActive && Number.isFinite(liveTranscriptConfidence) && liveTranscriptConfidence > 0 && liveTranscriptConfidence <= 1) payload.voice_confidence = liveTranscriptConfidence;
+    // Confidence belongs to one transcript only. Never apply an earlier voice score to a typed follow-up.
+    liveTranscriptConfidence = null;
     const hasMaterial = Boolean(fileInput?.files?.[0]);
     const isSocial = isSocialOrGreeting(prompt || topic);
     const isPlanning = isStudyPlanningRequest(prompt || topic);
@@ -1171,7 +1173,8 @@ function initLiveVoiceMode() {
         }
         if (finalText) {
           submitted = true;
-          liveTranscriptConfidence = Number.isFinite(confidence) ? confidence : null;
+          // iOS and some Web Speech engines report 0 when confidence is unknown.
+          liveTranscriptConfidence = Number.isFinite(confidence) && confidence > 0 && confidence <= 1 ? confidence : null;
           liveRecognition = null;
           try { recognition.abort(); } catch {}
           const input = document.getElementById("alex-prompt");
