@@ -4,7 +4,7 @@ import {getAlexConversation, rememberAlexTurn, clearAlexConversation} from './al
 // The Gemini API key is read exclusively inside the Edge Function.
 const finalLayoutStyle = document.createElement("link");
 finalLayoutStyle.rel = "stylesheet";
-finalLayoutStyle.href = "/assets/css/professor-alex-layout-20261021.css?v=2";
+finalLayoutStyle.href = "/assets/css/professor-alex-layout-20261021.css?v=stt1";
 document.head.appendChild(finalLayoutStyle);
 const form = document.getElementById("alex-form");
 const output = document.getElementById("alex-output");
