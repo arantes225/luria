@@ -4,7 +4,7 @@
   let ownerGeneration = 0;
   window.addEventListener("luria:owner-changed", () => { ownerGeneration += 1; });
   function assertSession(generation, ownerId) {
-    const owned = window.LuriaLocalOwnerStore;
+    const owned = window.TraubeLocalOwnerStore;
     if (generation !== ownerGeneration || (owned && ownerId && owned.ownerId !== ownerId)) {
       throw new Error("A sessão mudou. Retome a PCR na conta correspondente.");
     }
@@ -12,7 +12,7 @@
   const key = userId => "luria_pcr_draft_v1_" + userId;
   async function user() {
     const generation = ownerGeneration;
-    await window.LuriaLocalOwnerStore?.ready;
+    await window.TraubeLocalOwnerStore?.ready;
     const { data, error } = await sb.auth.getSession();
     if (error) throw error;
     if (!data?.session?.user?.id) throw new Error("Entre na sua conta para salvar a PCR.");
@@ -60,7 +60,7 @@
       y += 3;
     };
     const date = value => value ? new Date(value).toLocaleString("pt-BR") : "Não informado";
-    doc.setFontSize(18); write("LURIA · Registro de PCR", true); doc.setFontSize(10);
+    doc.setFontSize(18); write("TRAUBE · Registro de PCR", true); doc.setFontSize(10);
     write("Paciente: " + (patient.initials || "Não informado"), true);
     write("Nascimento: " + (patient.birth_date ? patient.birth_date.split("-").reverse().join("/") : "Não informado"));
     write("Início: " + date(record.started_at) + " · RCE: " + date(record.ended_at));
@@ -69,8 +69,8 @@
     write("Informações do atendimento", true); write(record.care_info || "Não informadas");
     write("Linha do tempo", true);
     [...(record.events || [])].reverse().forEach(event => write(event.clock + " · " + event.elapsed + " · " + event.action + (event.detail ? " — " + event.detail : "")));
-    doc.setFontSize(8); write("Registro gerado pelo LURIA. Conferir o registro clínico institucional.");
+    doc.setFontSize(8); write("Registro gerado pelo TRAUBE. Conferir o registro clínico institucional.");
     doc.save("luria-pcr-" + record.id + ".pdf");
   }
-  window.LuriaPCRStore = {user,readDraft,writeDraft,removeDraft,save,pdf};
+  window.TraubePCRStore = {user,readDraft,writeDraft,removeDraft,save,pdf};
 })();

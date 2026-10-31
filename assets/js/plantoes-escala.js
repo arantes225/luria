@@ -221,7 +221,7 @@
     const icsContent = [
       "BEGIN:VCALENDAR",
       "VERSION:2.0",
-      "PRODID:-//LURIA Gestor de Plantoes//BR",
+      "PRODID:-//TRAUBE Gestor de Plantoes//BR",
       "BEGIN:VEVENT",
       `SUMMARY:Plantão: ${shift.place} (${shift.sector || ""})`,
       `DESCRIPTION:Turno de ${dur}h - ${shift.shiftType}. Previsto: ${formatBRL(shift.value)}. Obs: ${shift.notes || ""}`,

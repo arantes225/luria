@@ -4,7 +4,7 @@
   if(document.body?.dataset.uiNav!=="v2")return;
   let companion=null,currentUser=null,revision=0,pendingStart=null;
   const start=async (event={})=>{
-    if(window.LuriaSessionInvalidated)return false;
+    if(window.TraubeSessionInvalidated)return false;
     // ui-navigation is deferred on many pages. It can start after the auth
     // event has already fired, especially when returning from the PWA cache.
     const user=event.detail?.user||window.docmapUser||window.docmapSession?.user;
@@ -16,7 +16,7 @@
     pendingStart=new Promise((resolve)=>{
       import('/assets/js/professor-alex-companion.mjs?v=20261028-memory1')
         .then(({mountAlexCompanion})=>{
-          if(ticket!==revision||window.LuriaSessionInvalidated){resolve(false);return;}
+          if(ticket!==revision||window.TraubeSessionInvalidated){resolve(false);return;}
           if(!companion){
             companion=mountAlexCompanion({userId,isAdmin});
           }
@@ -71,10 +71,10 @@
 
   // Presentation of the existing destinations, not a second router or access model.
   let mobileSignature = "", sheetTrigger = null, lastMobileState = null;
-  const navIcon = name => window.LuriaIcon?.(name) || icon('<rect x="4" y="4" width="16" height="16" rx="3"/>');
+  const navIcon = name => window.TraubeIcon?.(name) || icon('<rect x="4" y="4" width="16" height="16" rx="3"/>');
   const visibleSource = node => node && !node.closest('[hidden]') && node.getAttribute("aria-hidden") !== "true";
   function mobileEligible() {
-    return !window.LuriaSessionInvalidated && narrow.matches
+    return !window.TraubeSessionInvalidated && narrow.matches
       && ["study", "work"].includes(body.dataset.uiContext) && body.dataset.uiAdmin !== "v2"
       && body.classList.contains("app-ready") && !!window.docmapUser?.id
       && window.parent === window && !document.documentElement.classList.contains("room-native-embed");
@@ -123,7 +123,7 @@
     const get = href => sources.find(source => source.getAttribute("href") === href);
     const disabled = entry => entry.source?.getAttribute("aria-disabled") === "true"
       || entry.source?.classList.contains("nav-feature-locked")
-      || !!entry.feature && window.docmapIsAdmin !== true && window.LuriaEntitlements?.enabled(entry.feature) !== true;
+      || !!entry.feature && window.docmapIsAdmin !== true && window.TraubeEntitlements?.enabled(entry.feature) !== true;
     const entry = (href,label,visual,group,source,feature) => ({href,label,visual,group,source,feature});
     const main = work ? [
       entry("/trabalho/","Início","dashboard","",get("/trabalho/")),
@@ -158,7 +158,7 @@
         ["/plantao/sala-emergencia/","Simulador de Emergência","stethoscope","/plantao/sala-emergencia/","plantao",categories[1]],
         ["/questoes-simulados/","Questões e Simulados","file","/consolidar/","questions",categories[1]],
         ["/caderno-erros/","Caderno de Erros","clipboard","/consolidar/","error_notebook",categories[1]],
-        ["/plantao/luriazap/","LuriaZap","users","/aprender/","plantao",categories[1]]
+        ["/plantao/luriazap/","TraubeZap","users","/aprender/","plantao",categories[1]]
       ]) if (get(parent)) extra.push(entry(href,label,visual,group,get(parent),feature));
     }
     const settings = document.querySelector('#luria-profile-menu a[href="/configuracoes/"]');
@@ -286,7 +286,7 @@
     }
     const legacyThemes = document.querySelector('.theme-options');
     if (!work && legacyThemes && !legacyThemes.previousElementSibling?.classList.contains("ui-profile-themes")) legacyThemes.before(themes());
-    window.LuriaUITheme?.refresh();
+    window.TraubeUITheme?.refresh();
   }
   function enhanceStreak(sidebar, center) {
     if (work || body.dataset.uiAdmin === "v2" || !center) return;
@@ -297,7 +297,7 @@
       indicator = document.createElement("span"); indicator.id = "ui-topbar-streak";
       indicator.className = "ui-topbar-streak";
       indicator.innerHTML = flame + '<span class="ui-topbar-streak-value" data-streak-value>—</span><span class="ui-topbar-streak-unit">dias</span>';
-      indicator.title = "Sua sequência de dias no Luria"; center.prepend(indicator);
+      indicator.title = "Sua sequência de dias no Traube"; center.prepend(indicator);
     }
     const source = sidebar?.querySelector("[data-sidebar-streak-card] [data-streak-value]");
     const count = window.luriaCurrentStreak;
@@ -398,7 +398,7 @@
     if (!workHub || !bar) return;
     const brand = bar.querySelector(".ui-topbar-brand");
     set(brand, "href", "/trabalho/");
-    set(brand, "aria-label", "LURIA — Central do Trabalho");
+    set(brand, "aria-label", "TRAUBE — Central do Trabalho");
     let links = bar.querySelector(".work-hub-navigation");
     if (!links) {
       links = document.createElement("nav");
@@ -509,7 +509,7 @@
   document.addEventListener("click", event => {
     const mobileLink=event.target.closest?.('[data-mobile-link]');
     if(mobileLink){
-      if(mobileLink.getAttribute("aria-disabled")==="true"){event.preventDefault();event.stopImmediatePropagation();closeMobileTools(false);window.LuriaDialog?.alert("Este recurso está indisponível para sua conta.");return;}
+      if(mobileLink.getAttribute("aria-disabled")==="true"){event.preventDefault();event.stopImmediatePropagation();closeMobileTools(false);window.TraubeDialog?.alert("Este recurso está indisponível para sua conta.");return;}
       closeMobileTools(false);return;
     }
     if(event.target.closest?.('[data-mobile-close]')){event.preventDefault();closeMobileTools();return;}

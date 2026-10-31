@@ -1,5 +1,5 @@
 /* ==============================================================================
-   LURIA — Navegação Interna da Seção Aplicar
+   TRAUBE — Navegação Interna da Seção Aplicar
    Gerencia abas (Editais, Vocação e Radar de Provas), sincronização com URL e PWA.
    ============================================================================== */
 
@@ -101,7 +101,7 @@
   }
 
   // Exportação pública para permitir alternância programática
-  window.LuriaAplicarNav = Object.freeze({
+  window.TraubeAplicarNav = Object.freeze({
     activate: activateTab,
     getActive: getActiveTabFromUrl
   });

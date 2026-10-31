@@ -90,13 +90,13 @@ export const ReelCommercialV1: React.FC = () => {
         );
       })}
 
-      {/* 3. True 3D Smartphone Scene (Three.js WebGL with Authentic LURIA UI & Layers) */}
+      {/* 3. True 3D Smartphone Scene (Three.js WebGL with Authentic TRAUBE UI & Layers) */}
       <Phone3DScene />
 
       {/* 4. Kinetic Motion Typography Overlays */}
 
       {/* ======================================================== */}
-      {/* SCENE 1 (Frames 10 to 95): "LURIA" Grand Cinema Entrance */}
+      {/* SCENE 1 (Frames 10 to 95): "TRAUBE" Grand Cinema Entrance */}
       {/* ======================================================== */}
       <Sequence from={10} durationInFrames={85}>
         {(() => {
@@ -143,7 +143,7 @@ export const ReelCommercialV1: React.FC = () => {
                   `
                 }}
               >
-                LURIA
+                TRAUBE
               </div>
               <div
                 style={{
@@ -444,7 +444,7 @@ export const ReelCommercialV1: React.FC = () => {
                   marginTop: 16
                 }}
               >
-                {['Apostilas', 'Minhas anotações', 'LuriaZap'].map((tool, idx) => {
+                {['Apostilas', 'Minhas anotações', 'TraubeZap'].map((tool, idx) => {
                   const pillSp = spring({
                     frame: localFrame - idx * 8,
                     fps,
@@ -505,7 +505,7 @@ export const ReelCommercialV1: React.FC = () => {
                 zIndex: 35
               }}
             >
-              {/* LURIA Medical Knot Logo */}
+              {/* TRAUBE Medical Knot Logo */}
               <div
                 style={{
                   width: 80,
@@ -528,7 +528,7 @@ export const ReelCommercialV1: React.FC = () => {
                 />
               </div>
 
-              {/* LURIA Title */}
+              {/* TRAUBE Title */}
               <div
                 style={{
                   fontSize: 44,
@@ -538,7 +538,7 @@ export const ReelCommercialV1: React.FC = () => {
                   textShadow: '0 0 30px rgba(56, 189, 248, 0.7)'
                 }}
               >
-                LURIA
+                TRAUBE
               </div>
 
               {/* Tagline */}

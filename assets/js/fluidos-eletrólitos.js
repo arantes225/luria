@@ -19,7 +19,7 @@
     metAlkPco2:hco3=>0.7*(hco3-24)+40,
     holidaySegar24:w=>w<=10?100*w:w<=20?1000+50*(w-10):1500+20*(w-20)
   };
-  window.LURIA_FLUIDS={calc};
+  window.TRAUBE_FLUIDS={calc};
   qa('[data-fluids-tab]').forEach(tab=>tab.addEventListener('click',()=>{qa('[data-fluids-tab]').forEach(x=>x.classList.toggle('is-active',x===tab));qa('[data-fluids-panel]').forEach(x=>x.classList.toggle('is-active',x.dataset.fluidsPanel===tab.dataset.fluidsTab));}));
   qa('[data-alert]').forEach(x=>x.addEventListener('change',()=>{const messages=qa('[data-alert]:checked').map(a=>a.dataset.message);const el=q('#fluid-alerts');el.classList.toggle('has-alert',messages.length>0);el.textContent=messages.length?messages.map(m=>`• ${m}`).join('\n'):'Nenhum alerta selecionado.';}));
   qa('[data-calc]').forEach(btn=>btn.addEventListener('click',()=>{const c=btn.dataset.calc;

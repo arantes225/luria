@@ -1,6 +1,6 @@
 /* Importação local de currículos em PDF para Aplicar / Currículo.
  * O original fica no IndexedDB deste dispositivo, por conta, sem upload para terceiros.
- * A extração de texto usa o PDF.js opcional já empregado pela LURIA.
+ * A extração de texto usa o PDF.js opcional já empregado pela TRAUBE.
  */
 ((root) => {
   'use strict';
@@ -86,8 +86,8 @@
 
   async function extract(file, progress = () => {}) {
     await checkPdf(file);
-    if (!root.LuriaLazyVendors?.ensure) throw Error('Leitor de PDF indisponível. Recarregue a página.');
-    await root.LuriaLazyVendors.ensure('pdfjs');
+    if (!root.TraubeLazyVendors?.ensure) throw Error('Leitor de PDF indisponível. Recarregue a página.');
+    await root.TraubeLazyVendors.ensure('pdfjs');
     if (!root.pdfjsLib?.getDocument) throw Error('A biblioteca de leitura de PDF não carregou.');
     root.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
     const pdf = await root.pdfjsLib.getDocument({
@@ -107,8 +107,8 @@
       }
       // Ex.: Lattes impresso em PDF como contornos/imagens, sem glyphs extraíveis.
       // O arquivo segue válido; OCR roda localmente e requer revisão humana.
-      if (characters < 40 && root.LuriaCurriculoPdfOcr?.recognizePdf) {
-        const recognized = await root.LuriaCurriculoPdfOcr.recognizePdf(pdf, progress);
+      if (characters < 40 && root.TraubeCurriculoPdfOcr?.recognizePdf) {
+        const recognized = await root.TraubeCurriculoPdfOcr.recognizePdf(pdf, progress);
         return { ...recognized, pages: pdf.numPages };
       }
       return { items: parseLines(lines), hasText: characters >= 40, pages: pdf.numPages, ocrUsed: false };
@@ -161,5 +161,5 @@
   }
   const api = { MAX_BYTES, parseLines, checkPdf, extract, storePdf, getPdf, removePdf };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
-  else root.LuriaCurriculoPdf = api;
+  else root.TraubeCurriculoPdf = api;
 })(globalThis);

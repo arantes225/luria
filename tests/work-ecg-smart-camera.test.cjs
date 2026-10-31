@@ -125,7 +125,7 @@ function createMockEnvironment() {
   return { context, elements };
 }
 
-function loadLuriaScripts(context) {
+function loadTraubeScripts(context) {
   const extractorSrc = source("assets/js/ecg-signal-extractor.js");
   const engineSrc = source("assets/js/ecg-cv-engine.js");
   const cameraSrc = source("assets/js/ecg-smart-camera.js");
@@ -205,12 +205,12 @@ test("1. Ausência estrita de síntese de voz, áudio e de geradores de ondas ar
   assert.equal(/synthesizeValidatedWaveform/i.test(readerSrc), false);
 });
 
-test("2. Reutilização fiel da animação de rotação (LuriaRotateController)", () => {
+test("2. Reutilização fiel da animação de rotação (TraubeRotateController)", () => {
   const { context } = createMockEnvironment();
-  loadLuriaScripts(context);
+  loadTraubeScripts(context);
 
-  const ctrl = context.LuriaRotateController.create({
-    brandText: "LURIA · TEST",
+  const ctrl = context.TraubeRotateController.create({
+    brandText: "TRAUBE · TEST",
     headingText: "Gire o celular",
     shouldActivate: () => true
   });
@@ -229,23 +229,23 @@ test("2. Reutilização fiel da animação de rotação (LuriaRotateController)"
 
 test("Adversarial 1: Papel em branco (sem traçado e sem grade) -> Rejeição estrita", () => {
   const { context } = createMockEnvironment();
-  loadLuriaScripts(context);
+  loadTraubeScripts(context);
 
   const w = 400, h = 300;
   const blankData = new Uint8ClampedArray(w * h * 4).fill(250);
   const img = { width: w, height: h, data: blankData };
 
-  const bound = context.LuriaEcgCvEngine.detectECGBoundaries(img);
+  const bound = context.TraubeEcgCvEngine.detectECGBoundaries(img);
   assert.equal(bound.detected, false, "Papel em branco não pode ser detectado como ECG");
 
-  const ext = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData(img);
+  const ext = context.TraubeEcgSignalExtractor.extractRealSignalFromImageData(img);
   assert.equal(ext.isValid, false, "Extrator não pode validar papel em branco");
   assert.equal(ext.signal, null);
 });
 
 test("Adversarial 2: Página de texto comum (livro/artigo) -> Rejeição por densidade/topologia", () => {
   const { context } = createMockEnvironment();
-  loadLuriaScripts(context);
+  loadTraubeScripts(context);
 
   const w = 400, h = 300;
   const textData = new Uint8ClampedArray(w * h * 4).fill(250);
@@ -263,32 +263,32 @@ test("Adversarial 2: Página de texto comum (livro/artigo) -> Rejeição por den
   }
 
   const img = { width: w, height: h, data: textData };
-  const bound = context.LuriaEcgCvEngine.detectECGBoundaries(img);
+  const bound = context.TraubeEcgCvEngine.detectECGBoundaries(img);
   assert.equal(bound.detected, false, "Página de texto denso deve ser rejeitada como ECG");
 
-  const ext = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData(img);
+  const ext = context.TraubeEcgSignalExtractor.extractRealSignalFromImageData(img);
   assert.equal(ext.isValid, false, "Texto comum deve ser rejeitado pelo extrator");
 });
 
 test("Adversarial 3: Grade milimetrada vazia (sem traçado de ECG) -> Rejeição", () => {
   const { context } = createMockEnvironment();
-  loadLuriaScripts(context);
+  loadTraubeScripts(context);
 
   const w = 400, h = 300;
   const gridData = new Uint8ClampedArray(w * h * 4);
   drawGrid(gridData, w, h, 6);
 
   const img = { width: w, height: h, data: gridData };
-  const bound = context.LuriaEcgCvEngine.detectECGBoundaries(img);
+  const bound = context.TraubeEcgCvEngine.detectECGBoundaries(img);
   assert.equal(bound.detected, false, "Grade vazia sem traçado não pode ser aceita como exame");
 
-  const ext = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData(img);
+  const ext = context.TraubeEcgSignalExtractor.extractRealSignalFromImageData(img);
   assert.equal(ext.isValid, false, "Grade vazia não possui sinal elétrico");
 });
 
 test("Regressão: linha vertical da grade não vira pico vermelho artificial", () => {
   const { context } = createMockEnvironment();
-  loadLuriaScripts(context);
+  loadTraubeScripts(context);
 
   const w = 160, h = 120;
   const data = new Uint8ClampedArray(w * h * 4).fill(248);
@@ -303,7 +303,7 @@ test("Regressão: linha vertical da grade não vira pico vermelho artificial", (
   }
 
   const image = { width: w, height: h, data };
-  const extractor = context.LuriaEcgSignalExtractor;
+  const extractor = context.TraubeEcgSignalExtractor;
   const prep = extractor.preprocessLeadRegion(image);
   const tracked = extractor.trackSignalCurve(image, prep);
   assert.ok(Math.abs(tracked.rawY[80] - 60) < 2,
@@ -312,7 +312,7 @@ test("Regressão: linha vertical da grade não vira pico vermelho artificial", (
 
 test("Adversarial 4: Linhas pretas aleatórias e rabiscos não fisiológicos -> Rejeição", () => {
   const { context } = createMockEnvironment();
-  loadLuriaScripts(context);
+  loadTraubeScripts(context);
 
   const w = 200, h = 100;
   const scribData = new Uint8ClampedArray(w * h * 4).fill(245);
@@ -329,33 +329,33 @@ test("Adversarial 4: Linhas pretas aleatórias e rabiscos não fisiológicos -> 
   }
 
   const img = { width: w, height: h, data: scribData };
-  const ext = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData(img);
+  const ext = context.TraubeEcgSignalExtractor.extractRealSignalFromImageData(img);
   assert.equal(ext.isValid, false, "Rabiscos em X não fisiológicos devem ser rejeitados");
 });
 
 test("Adversarial 5: Foto parcialmente cortada (bordas faltantes) -> Detecção de corte", () => {
   const { context } = createMockEnvironment();
-  loadLuriaScripts(context);
+  loadTraubeScripts(context);
 
   const w = 300, h = 200;
   const data = new Uint8ClampedArray(w * h * 4).fill(240);
   // Simula papel encostando nas 4 margens sem borda de mesa
-  const paper = context.LuriaEcgCvEngine.locatePaperSheet({ width: w, height: h, data });
+  const paper = context.TraubeEcgCvEngine.locatePaperSheet({ width: w, height: h, data });
   assert.equal(paper.isCutOff, true, "Imagem sem bordas livres deve ser sinalizada como isCutOff");
 });
 
 test("Adversarial 6: Derivações fora de posição -> Detecção de anomalia", () => {
   const { context } = createMockEnvironment();
-  loadLuriaScripts(context);
+  loadTraubeScripts(context);
 
   // Se o OCR reconhece V1 na posição correspondente a DIII
-  const reg = context.LuriaEcgCvEngine.createEngine();
+  const reg = context.TraubeEcgCvEngine.createEngine();
   assert.ok(reg);
 });
 
 test("Adversarial 7: Rótulos trocados (ex: DI com aVR) -> Sinalização no auditor", () => {
   const { context } = createMockEnvironment();
-  loadLuriaScripts(context);
+  loadTraubeScripts(context);
 
   // Teste direto de auditoria de derivação trocada
   const extObj = {
@@ -375,13 +375,13 @@ test("Adversarial 7: Rótulos trocados (ex: DI com aVR) -> Sinalização no audi
     calibration: { calibrationSource: "measured" }
   };
 
-  const audit = context.LuriaEcgSignalExtractor.auditExtractedLead(extObj);
+  const audit = context.TraubeEcgSignalExtractor.auditExtractedLead(extObj);
   assert.equal(audit.status, "Indeterminada", "Derivação com divergência de rótulo exige resolução antes da auditoria");
 });
 
 test("Adversarial 8: ECG rotacionado em 90 graus -> Detecção de orientação", () => {
   const { context } = createMockEnvironment();
-  loadLuriaScripts(context);
+  loadTraubeScripts(context);
 
   // Cria imagem com traços verticais simulando ECG rotacionado 90°
   const w = 240, h = 320;
@@ -393,15 +393,15 @@ test("Adversarial 8: ECG rotacionado em 90 graus -> Detecção de orientação",
     }
   }
 
-  const orient = context.LuriaEcgCvEngine.detectOrientationAndSkew({ width: w, height: h, data: rotData });
+  const orient = context.TraubeEcgCvEngine.detectOrientationAndSkew({ width: w, height: h, data: rotData });
   assert.equal(orient.isRotated90, true, "Traçado com faixas verticais deve indicar rotação em 90°");
 });
 
 test("Adversarial 9: Perspectiva acentuada -> Falha ou necessidade de retificação", () => {
   const { context } = createMockEnvironment();
-  loadLuriaScripts(context);
+  loadTraubeScripts(context);
 
-  const rect = context.LuriaEcgCvEngine.rectifyImagePerspective(
+  const rect = context.TraubeEcgCvEngine.rectifyImagePerspective(
     { width: 100, height: 100, data: new Uint8ClampedArray(100 * 100 * 4).fill(240) },
     {
       topLeft: { x: 20, y: 10 },
@@ -416,7 +416,7 @@ test("Adversarial 9: Perspectiva acentuada -> Falha ou necessidade de retificaç
 
 test("Adversarial 10: Curvas borradas / manchadas -> Rejeição por descontinuidade", () => {
   const { context } = createMockEnvironment();
-  loadLuriaScripts(context);
+  loadTraubeScripts(context);
 
   // Mancha larga difusa contínua
   const w = 150, h = 80;
@@ -428,13 +428,13 @@ test("Adversarial 10: Curvas borradas / manchadas -> Rejeição por descontinuid
     }
   }
 
-  const ext = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData({ width: w, height: h, data: blurData });
+  const ext = context.TraubeEcgSignalExtractor.extractRealSignalFromImageData({ width: w, height: h, data: blurData });
   assert.equal(ext.isValid, false, "Mancha difusa cinza sem traço fino deve ser rejeitada");
 });
 
 test("Adversarial 11: Duas curvas sobrepostas na mesma região -> Flag hasMultipleCurves", () => {
   const { context } = createMockEnvironment();
-  loadLuriaScripts(context);
+  loadTraubeScripts(context);
 
   const w = 140, h = 90;
   const overlapData = new Uint8ClampedArray(w * h * 4).fill(245);
@@ -442,10 +442,10 @@ test("Adversarial 11: Duas curvas sobrepostas na mesma região -> Flag hasMultip
   drawWaveform(overlapData, w, h, 10, 130, 30, 12);
   drawWaveform(overlapData, w, h, 10, 130, 70, 12);
 
-  const ext = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData({ width: w, height: h, data: overlapData });
+  const ext = context.TraubeEcgSignalExtractor.extractRealSignalFromImageData({ width: w, height: h, data: overlapData });
   assert.ok(ext.hasMultipleCurves === true || ext.audit?.reasons?.some(r => r.includes("múltiplas") || r.includes("descontinuidade")), "Deve detectar múltiplas curvas ou descontinuidade");
 
-  const preview = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData(
+  const preview = context.TraubeEcgSignalExtractor.extractRealSignalFromImageData(
     { width: w, height: h, data: overlapData },
     { allowOverlappingPreview: true }
   );
@@ -455,7 +455,7 @@ test("Adversarial 11: Duas curvas sobrepostas na mesma região -> Flag hasMultip
 
 test("Adversarial 12: Rótulos duplicados na folha -> Detecção e sinalização", () => {
   const { context } = createMockEnvironment();
-  loadLuriaScripts(context);
+  loadTraubeScripts(context);
 
   const bound = {
     detected: true,

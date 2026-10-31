@@ -1,7 +1,7 @@
 (() => {
   "use strict";
   const sb = window.supabaseClient;
-  const ownerStore = window.LuriaLocalOwnerStore;
+  const ownerStore = window.TraubeLocalOwnerStore;
   const output = document.getElementById("quick-chart-daily-code");
   const dayLabel = document.getElementById("quick-chart-daily-day");
   const status = document.getElementById("quick-chart-daily-status");

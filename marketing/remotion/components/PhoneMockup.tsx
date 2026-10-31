@@ -53,7 +53,7 @@ export const PhoneMockup: React.FC<PhoneMockupProps> = ({ videoSrc }) => {
         }}
       />
 
-      {/* Moldura externa do smartphone (alumínio premium com contorno característico azul LURIA) */}
+      {/* Moldura externa do smartphone (alumínio premium com contorno característico azul TRAUBE) */}
       <div
         style={{
           position: 'absolute',

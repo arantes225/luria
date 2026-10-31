@@ -1,15 +1,15 @@
 /*
- * LURIA Marketing Studio — backend fictício para capturas de tela.
+ * TRAUBE Marketing Studio — backend fictício para capturas de tela.
  *
  * Este arquivo substitui /assets/js/supabase.js SOMENTE dentro do navegador de
  * captura (via Playwright route). Nenhuma requisição chega ao Supabase real.
  * Todos os nomes, números e conteúdos são fictícios e não pertencem a alunos.
  *
- * O cenário é injetado em window.__LURIA_MARKETING_SCENARIO (addInitScript).
+ * O cenário é injetado em window.__TRAUBE_MARKETING_SCENARIO (addInitScript).
  * As cenas podem alterar dados em tempo real via window.__marketing.
  */
 (() => {
-  const scenario = window.__LURIA_MARKETING_SCENARIO || {};
+  const scenario = window.__TRAUBE_MARKETING_SCENARIO || {};
   const log = (window.__marketingLog = window.__marketingLog || []);
   const owner = {
     id: '00000000-0000-4000-8000-00000000a11a',
@@ -127,7 +127,7 @@
   // Garante entitlements globais caso a interface consulte antes ou depois do bootstrap
   window.docmapEntitlements = entitlementPayload;
   if (isAdminFlag) window.docmapIsAdmin = true;
-  window.LuriaEntitlements = {
+  window.TraubeEntitlements = {
     enabled: () => true,
     limit: (_k, fallback = null) => fallback
   };

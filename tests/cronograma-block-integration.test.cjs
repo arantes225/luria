@@ -17,7 +17,7 @@ test("imports spreadsheet block headings and schedules their lessons from the ch
     window: {
       supabaseClient: null,
       docmapUser: null,
-      LuriaBlockScheduler: require("../assets/js/schedule-block-import.js"),
+      TraubeBlockScheduler: require("../assets/js/schedule-block-import.js"),
       addEventListener() {}
     },
     document: {

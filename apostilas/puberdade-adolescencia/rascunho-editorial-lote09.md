@@ -1,11 +1,11 @@
-# LURIA | Aula 168 — Puberdade e adolescência: desenvolvimento, endocrinologia e atenção integral
+# TRAUBE | Aula 168 — Puberdade e adolescência: desenvolvimento, endocrinologia e atenção integral
 
 **Área:** Pediatria — Endocrinologia pediátrica e Medicina do Adolescente  
 **Lote 09 • Tema 168/180 • Versão editorial de 14/10/2026**  
-**Estado:** rascunho substancial ainda não revisado clinicamente, não publicado no catálogo LURIA.  
+**Estado:** rascunho substancial ainda não revisado clinicamente, não publicado no catálogo TRAUBE.  
 **Escopo:** adolescência como fase biopsicossocial e puberdade como processo biológico de maturação sexual e aceleração do crescimento. Dados clínicos apresentados por anatomia e processo fisiológico; acolhimento individual e respeito à diversidade.
 
-> **Pulo do Gato LURIA:** Em puberdade, **idade + velocidade de crescimento + estágio de Tanner + sequência dos sinais + idade óssea** frequentemente esclarecem mais que um hormônio isolado. Na consulta do adolescente, **vínculo, confidencialidade e avaliação de segurança** são tão importantes quanto o exame físico.
+> **Pulo do Gato TRAUBE:** Em puberdade, **idade + velocidade de crescimento + estágio de Tanner + sequência dos sinais + idade óssea** frequentemente esclarecem mais que um hormônio isolado. Na consulta do adolescente, **vínculo, confidencialidade e avaliação de segurança** são tão importantes quanto o exame físico.
 
 ## 1. Objetivos de aprendizagem
 
@@ -360,7 +360,7 @@ Perguntar diretamente e com calma sobre ideação, intenção, planejamento, mei
 
 Suspeitar quando houver lesões incompatíveis com mecanismo, revelação espontânea, alterações abruptas de comportamento e situação de risco atual, sem usar marcador isolado para definir autoria. Acolher relato, registrar fatos objetivamente, evitar entrevistas repetidas e encaminhar à rede protetiva. O atendimento clínico não depende de prova policial ou boletim de ocorrência.
 
-A **Aula 163 da LURIA (Violência e maus-tratos contra crianças e adolescentes)** aprofunda investigação, comunicação ao Conselho Tutelar, notificação SINAN e cuidado de vítimas; não duplicar aqui o conteúdo pericial. O foco desta aula é reconhecer a necessidade de proteção durante a consulta integral.
+A **Aula 163 da TRAUBE (Violência e maus-tratos contra crianças e adolescentes)** aprofunda investigação, comunicação ao Conselho Tutelar, notificação SINAN e cuidado de vítimas; não duplicar aqui o conteúdo pericial. O foco desta aula é reconhecer a necessidade de proteção durante a consulta integral.
 
 ## 20. Situações que exigem ação urgente
 
@@ -376,7 +376,7 @@ A **Aula 163 da LURIA (Violência e maus-tratos contra crianças e adolescentes)
 | Suspeita de violência sexual recente | Trauma, IST, gravidez, risco de reexposição | Acolhimento e cuidados tempo-dependentes, rede de proteção |
 | Atraso puberal e perda ponderal importante | Doença crônica, transtorno alimentar, doença endócrina | Avaliar gravidade, nutrição e endocrinologia, sem banalização |
 
-## 21. Algoritmos de conduta LURIA
+## 21. Algoritmos de conduta TRAUBE
 
 ### Fluxo A — Desenvolvimento puberal antes da faixa esperada
 
@@ -1022,12 +1022,12 @@ As questões são inéditas e foram criadas para consolidar o capítulo. Coment�
 
 ## 27. Curadoria de imagens médicas e diagramas — 14 candidatas
 
-A imagem só entra se trouxer ganho didático verificável. As propostas abaixo são **candidatas**, não provas de que a LURIA já tenha obtido licenças ou inserido os arquivos. Em tema que envolve menores, priorizar curvas, RX, RM, US e desenhos clínicos sem conteúdo íntimo identificável.
+A imagem só entra se trouxer ganho didático verificável. As propostas abaixo são **candidatas**, não provas de que a TRAUBE já tenha obtido licenças ou inserido os arquivos. Em tema que envolve menores, priorizar curvas, RX, RM, US e desenhos clínicos sem conteúdo íntimo identificável.
 
 | Nº | Candidata | Legenda/função didática | Origem e licença |
 |---|---|---|---|
 | 1 | Curvas de estatura por idade 5–19 anos | Gráfico oficial OMS, com dois exemplos de trajetória longitudinal. | Site OMS / Ministério da Saúde / Caderneta do Adolescente; licença a conferir. |
-| 2 | Velocidade de crescimento no período puberal | Curvas por idade e marco puberal, mostrando pico mais cedo em meninas e mais tarde em meninos. | Diagrama original LURIA baseado em referências de endocrinologia pediátrica. |
+| 2 | Velocidade de crescimento no período puberal | Curvas por idade e marco puberal, mostrando pico mais cedo em meninas e mais tarde em meninos. | Diagrama original TRAUBE baseado em referências de endocrinologia pediátrica. |
 | 3 | Eixo hipotálamo–hipófise–gônadas | Fluxograma GnRH–LH/FSH–gônadas e feedback de esteroides, com adrenarca em ramo independente. | Ilustração autoral; evitar copiar gráficos com direitos reservados. |
 | 4 | Tanner feminino educativo | Cinco esquemas clínicos de maturação mamária, sem fotos reais nem nudez de menores. | Diagrama médico esquemático de fonte acadêmica licenciada; revisão pediátrica. |
 | 5 | Tanner masculino educativo | Cinco estágios representados em desenho não erotizado, orientado por volume testicular e pelos. | Diagrama original de desenvolvimento anatômico não explícito para público universitário. |
@@ -1035,7 +1035,7 @@ A imagem só entra se trouxer ganho didático verificável. As propostas abaixo 
 | 7 | Idade óssea radiográfica | RX mão/punho esquerdo real com epífises e metáfises identificadas; legenda das limitações. | Artigo acadêmico com imagem de licença verificada ou imagem institucional autorizada. |
 | 8 | RM de hamartoma hipotalâmico | RM real de lesão central associada a PPC, com localização anatômica. | Artigo científico de acesso e permissão verificáveis; não usar como representação universal. |
 | 9 | Ultrassonografia pélvica puberal | US do útero/ovário, comparação de órgãos pré-púberes e puberais, em casos didáticos. | Banco acadêmico com licença, sem inferir diagnóstico apenas de US. |
-| 10 | Fluxograma PPC versus PPP | Entrada idade/sinal/velocidade → LH e idade óssea → imagens/etiologia → seguimento/tratamento. | Arte original LURIA baseada no PCDT nacional. |
+| 10 | Fluxograma PPC versus PPP | Entrada idade/sinal/velocidade → LH e idade óssea → imagens/etiologia → seguimento/tratamento. | Arte original TRAUBE baseada no PCDT nacional. |
 | 11 | Fluxograma atraso puberal | Sem telarca/testículo ≥4mL → diferenciais constitucionais, centrais e primários. | Diagrama autoral para leitura de provas. |
 | 12 | Saúde menstrual pós-menarca | Linha do tempo de irregularidades admissíveis vs indicadores de investigação. | Infográfico original baseado em ACOG e diretriz SOP 2023. |
 | 13 | HEEADSSS/consulta confidencial | Mapa de domínios psicossociais e fatores protetores. | Diagrama original sem fotos de adolescentes identificáveis. |
@@ -1045,7 +1045,7 @@ A imagem só entra se trouxer ganho didático verificável. As propostas abaixo 
 
 1. Priorizar imagens de exame com procedência confiável e licença verificável, por exemplo, radiografia de idade óssea de publicação científica de acesso aberto; **não** basta o site ser gratuito.
 2. Garantir legenda clínica com principais sinais, limitações da imagem e diagnóstico diferencial; evitar usar um exame fictício como se fosse de paciente real.
-3. Converter para WebP mantendo qualidade de linhas epifisárias, dados de crescimento e achados ultrassonográficos, respeitando limites de peso da LURIA.
+3. Converter para WebP mantendo qualidade de linhas epifisárias, dados de crescimento e achados ultrassonográficos, respeitando limites de peso da TRAUBE.
 4. Incluir alt text, fonte, responsável pela revisão, licença e contexto do capítulo.
 5. Não inserir fotos reais de desenvolvimento genital ou mamário de menores se um esquema didático atende ao objetivo.
 6. No PWA, assegurar carregamento progressivo e possibilidade de ampliar exames relevantes sem deformações.
@@ -1080,7 +1080,7 @@ A imagem só entra se trouxer ganho didático verificável. As propostas abaixo 
 - [ ] Selecionar, licenciar, comprimir e inserir 10+ imagens que acrescentem valor real; diagrama de Tanner deve ser apropriado e não conter fotografias íntimas de menores.
 - [ ] Revisar medicamentos ginecológicos/dermatológicos por contraindicações e dosagens antes de tornar prescricional.
 - [ ] Verificar coerência entre esta aula e a de violências (163), mantendo referência cruzada sem duplicação.
-- [ ] Converter para formato nativo da LURIA (HTML/content.json conforme padrão) e testar desktop/PWA, índice, links e desempenho.
+- [ ] Converter para formato nativo da TRAUBE (HTML/content.json conforme padrão) e testar desktop/PWA, índice, links e desempenho.
 - [ ] Realizar revisão de língua, precisão do risco e linguagem inclusiva.
 - [ ] Confirmar contagem e extensão útil sem repetição artificial e arquivar registro de revisão.
 

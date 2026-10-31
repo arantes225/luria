@@ -139,7 +139,7 @@
   }
 
   const exported = { LEADS, canonicalLead, normalizeAnomalies, normalizeLeadIdentity, normalizeCalibration };
-  global.LuriaEcgContracts = exported;
+  global.TraubeEcgContracts = exported;
   if (typeof module !== "undefined" && module.exports) module.exports = exported;
 })(typeof window !== "undefined" ? window : globalThis);
 

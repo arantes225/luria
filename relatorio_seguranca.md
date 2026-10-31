@@ -1,4 +1,4 @@
-# LURIA — Auditoria de segredos e plano de resposta
+# TRAUBE — Auditoria de segredos e plano de resposta
 
 **Escopo:** repositório `arantes225/luria`, incluindo histórico Git e prevenção de novos vazamentos.  
 **Estado:** investigação e mitigação parcial; **não** declarar incidente resolvido sem validação dos provedores.  

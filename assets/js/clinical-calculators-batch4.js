@@ -1,4 +1,4 @@
-/* LURIA | Calculadoras clinicas - lote 4 (expansao), 2026-10-26.
+/* TRAUBE | Calculadoras clinicas - lote 4 (expansao), 2026-10-26.
  * Carregar DEPOIS de clinical-calculators-audit-batch3.js (que valida a ordem do catalogo).
  * Apoio matematico: NAO prescreve, NAO substitui protocolo institucional nem julgamento clinico.
  * Revisao assistencial externa pendente antes de uso em producao.

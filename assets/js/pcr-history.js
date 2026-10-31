@@ -1,13 +1,13 @@
 (() => {
   "use strict";
-  const sb = window.supabaseClient, store = window.LuriaPCRStore;
+  const sb = window.supabaseClient, store = window.TraubePCRStore;
   const $ = id => document.getElementById(id);
   const esc = value => String(value ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
   const fmt = value => value ? new Date(value).toLocaleString("pt-BR") : "Não informado";
   let owner, patients = [], records = [], editing = null, busy = false;
   let generation = 0;
   const current = (version, id) => version === generation && owner?.id === id
-    && (!window.LuriaLocalOwnerStore || window.LuriaLocalOwnerStore.ownerId === id);
+    && (!window.TraubeLocalOwnerStore || window.TraubeLocalOwnerStore.ownerId === id);
   async function sessionCurrent(version, id) {
     if (!current(version, id)) return false;
     const user = await store.user();

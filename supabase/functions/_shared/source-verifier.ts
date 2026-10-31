@@ -104,7 +104,7 @@ export async function urlReachable(value: string, options: VerifierOptions = {})
       const visit = method + " " + url.href;
       if (visited.has(visit)) return false;
       visited.add(visit);
-      const headers: Record<string, string> = { "User-Agent": "LURIA-Source-Verifier/1.0" };
+      const headers: Record<string, string> = { "User-Agent": "TRAUBE-Source-Verifier/1.0" };
       if (method === "GET") headers.Range = "bytes=0-4095";
       const response = await fetchSource(url.href, {
         method, redirect: "manual", headers, signal: controller.signal,

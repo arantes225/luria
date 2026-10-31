@@ -1,4 +1,4 @@
-# LURIA · Pacote Completo de Produção Audiovisual
+# TRAUBE · Pacote Completo de Produção Audiovisual
 **Campanha Oficial:** Black November 2026 · Semana 1 (Crescimento Orgânico & Autoridade)  
 **Peça 02 / 27 · Terça-feira, 27 de Outubro de 2026**  
 **Formato:** Reels / Shorts / TikTok (Vertical 9:16)  
@@ -108,7 +108,7 @@
   - `JÁ VIU ISSO NO PS? 👇`
   - `COMPARTILHE COM SUA DUPLA 👥`
 * **Motion Graphics & B-Roll:**
-  - Logo minimalista da LURIA no topo direito em fade-in.
+  - Logo minimalista da TRAUBE no topo direito em fade-in.
   - Animação do botão de aviãozinho (compartilhar) e salvar piscando.
 * **Áudio & SFX:**
   - `00:24.2` ➔ *Pop* suave.

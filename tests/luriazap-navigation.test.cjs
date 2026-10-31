@@ -20,7 +20,7 @@ function fixture(page, entry) {
   return dom;
 }
 
-test('LuriaZap has its own active study link without activating the simulator', () => {
+test('TraubeZap has its own active study link without activating the simulator', () => {
   for (const [page, entry, active] of [
     ['plantao', 'phone', '/plantao/luriazap/'],
     ['plantao', 'emergency', '/plantao/sala-emergencia/'],
@@ -32,7 +32,7 @@ test('LuriaZap has its own active study link without activating the simulator', 
       assert.equal(links.length, 1);
       assert.equal(links[0].getAttribute('href'), active);
       assert.equal(d.querySelectorAll('nav a[href="/plantao/luriazap/"]').length, 1);
-      assert.equal(d.querySelector('nav a[href="/plantao/luriazap/"]').textContent.trim(), 'LuriaZap');
+      assert.equal(d.querySelector('nav a[href="/plantao/luriazap/"]').textContent.trim(), 'TraubeZap');
     } finally { dom.window.close(); }
   }
   const work = fixture('trabalho_dashboard');
@@ -45,7 +45,7 @@ test('the independent link retains the existing Plantão entitlement gate', () =
     const dom = fixture('plantao', 'phone'), w = dom.window;
     try {
       w.temFeature = (_, key) => key === 'plantao' && enabled;
-      w.LuriaDialog = {alert(){}};
+      w.TraubeDialog = {alert(){}};
       const mapping = source.match(/const PLUS_NAV_FEATURES = \{[\s\S]*?\n\};/)[0];
       w.eval(mapping + '\n' + gate + '\naplicarEntitlementsNaNavegacao({});');
       for (const href of ['/plantao/luriazap/', '/plantao/sala-emergencia/']) {

@@ -343,7 +343,7 @@ async function loadErrorAreas() {
     || "medicine";
 
   allErrorAreas =
-    window.LuriaStudyMode
+    window.TraubeStudyMode
       ?.generalAreasFor(
         mode
       )
@@ -526,7 +526,7 @@ async function signedErrorImage(
     data,
     error
   } =
-    await window.LuriaStorage.createSignedUrl(
+    await window.TraubeStorage.createSignedUrl(
       "error_images",
       key,
       3600
@@ -786,17 +786,17 @@ function loadImageElement(
 
 
 
-const LURIA_IMAGE_TARGET_BYTES =
+const TRAUBE_IMAGE_TARGET_BYTES =
   100 * 1024;
 
-const LURIA_IMAGE_SOFT_MAX_BYTES =
+const TRAUBE_IMAGE_SOFT_MAX_BYTES =
   150 * 1024;
 
-const LURIA_IMAGE_MAX_DIMENSION =
+const TRAUBE_IMAGE_MAX_DIMENSION =
   1100;
 
 
-async function compressLuriaImageBlob(
+async function compressTraubeImageBlob(
   sourceBlob
 ) {
   if (
@@ -816,7 +816,7 @@ async function compressLuriaImageBlob(
   */
   if (
     sourceBlob.size
-    <= LURIA_IMAGE_TARGET_BYTES
+    <= TRAUBE_IMAGE_TARGET_BYTES
   ) {
     return sourceBlob;
   }
@@ -984,7 +984,7 @@ async function compressLuriaImageBlob(
         */
         if (
           candidate.size
-            <= LURIA_IMAGE_SOFT_MAX_BYTES
+            <= TRAUBE_IMAGE_SOFT_MAX_BYTES
           && quality >= 0.64
           && maxDimension >= 900
         ) {
@@ -1001,7 +1001,7 @@ async function compressLuriaImageBlob(
 
         if (
           candidate.size
-          <= LURIA_IMAGE_TARGET_BYTES
+          <= TRAUBE_IMAGE_TARGET_BYTES
         ) {
           bitmap.close?.();
 
@@ -1086,7 +1086,7 @@ async function compressErrorImage(
 
 
   const blob =
-    await compressLuriaImageBlob(
+    await compressTraubeImageBlob(
       file
     );
 
@@ -1582,7 +1582,7 @@ async function downloadStoredErrorImage(
     data,
     error
   } =
-    await window.LuriaStorage.download("error_images", path);
+    await window.TraubeStorage.download("error_images", path);
 
 
   if (error) {
@@ -1618,7 +1618,7 @@ async function deleteStoredErrorImage(item, options = {}) {
 
   if (updateError) throw updateError;
 
-  const { error: storageError } = await window.LuriaStorage.remove("error_images",[oldPath]);
+  const { error: storageError } = await window.TraubeStorage.remove("error_images",[oldPath]);
 
   if (storageError) {
     console.warn(
@@ -1703,7 +1703,7 @@ async function deleteEditingErrorImage() {
 
   if (!item?.question_image_path) return;
 
-  const confirmed = await window.LuriaDialog.confirm(
+  const confirmed = await window.TraubeDialog.confirm(
     "Excluir a imagem deste item? O arquivo será apagado do Storage."
   );
   if (!confirmed) return;
@@ -1756,7 +1756,7 @@ async function uploadErrorImage(
     )}.${extension}`;
 
 
-  const { error, reference } = await window.LuriaStorage.upload("error_images",
+  const { error, reference } = await window.TraubeStorage.upload("error_images",
         path,
         finalFile,
         {
@@ -2365,7 +2365,7 @@ async function saveNewError() {
 
 
     if (imagePath) {
-      await window.LuriaStorage.remove("error_images",[
+      await window.TraubeStorage.remove("error_images",[
           imagePath
         ]);
     }
@@ -3166,7 +3166,7 @@ function populateLibraryAreas() {
     || "medicine";
 
   const areas =
-    window.LuriaStudyMode
+    window.TraubeStudyMode
       ?.generalAreasFor(
         mode
       )
@@ -3710,7 +3710,7 @@ async function deleteErrorFromLibrary(
   }
 
 
-  const confirmed = await window.LuriaDialog.confirm(
+  const confirmed = await window.TraubeDialog.confirm(
       "Excluir este item do Caderno de Erros permanentemente? Esta ação não pode ser desfeita."
     );
 
@@ -3761,7 +3761,7 @@ async function deleteErrorFromLibrary(
       error:
         storageError
     } =
-      await window.LuriaStorage.remove("error_images",[
+      await window.TraubeStorage.remove("error_images",[
           item.question_image_path
         ]);
 
@@ -3999,7 +3999,7 @@ function errorPdfNewPage(
 ) {
   doc.addPage();
 
-  window.LuriaPdfBranding
+  window.TraubePdfBranding
     ?.decoratePage(
       doc,
       state.assets,
@@ -4192,13 +4192,13 @@ async function exportSelectedErrorsPdf() {
     });
 
     const assets =
-      await window.LuriaPdfBranding
+      await window.TraubePdfBranding
         ?.getAssets?.();
 
     const headerSubtitle =
       `${items.length} item${items.length === 1 ? "" : "s"} selecionado${items.length === 1 ? "" : "s"}`;
 
-    window.LuriaPdfBranding
+    window.TraubePdfBranding
       ?.decoratePage(
         doc,
         assets,
@@ -4361,7 +4361,7 @@ async function exportSelectedErrorsPdf() {
         7;
     }
 
-    window.LuriaPdfBranding
+    window.TraubePdfBranding
       ?.finalize(
         doc
       );
@@ -4389,7 +4389,7 @@ async function deleteSelectedErrors() {
   }
 
 
-  const confirmed = await window.LuriaDialog.confirm(
+  const confirmed = await window.TraubeDialog.confirm(
       `Excluir ${ids.length} item${ids.length === 1 ? "" : "s"} do Caderno permanentemente?`
     );
 
@@ -4458,7 +4458,7 @@ async function deleteSelectedErrors() {
       error:
         storageError
     } =
-      await window.LuriaStorage.remove("error_images",
+      await window.TraubeStorage.remove("error_images",
           paths
         );
 
@@ -4887,7 +4887,7 @@ async function importErrorRows() {
 
 
 function errorAreaIcon(area){
-  if(window.LuriaMedicalIcons?.svg) return window.LuriaMedicalIcons.svg(area);
+  if(window.TraubeMedicalIcons?.svg) return window.TraubeMedicalIcons.svg(area);
   return "";
 }
 function errorState(item){
@@ -4961,14 +4961,14 @@ function renderErrorHomeExtras(){
 async function deleteErrorNotebook(area,name){
   const rows=errorLibraryItems.filter(i=>(i.area||"Sem área")===area && (i.materia||i.theme||"Geral")===name);
   if(!rows.length)return;
-  const ok=await window.LuriaDialog.confirm(`Excluir o caderno “${name}” inteiro, com ${rows.length} erro${rows.length===1?"":"s"}? Esta ação não pode ser desfeita.`);
+  const ok=await window.TraubeDialog.confirm(`Excluir o caderno “${name}” inteiro, com ${rows.length} erro${rows.length===1?"":"s"}? Esta ação não pode ser desfeita.`);
   if(!ok)return;
   setErrorLibraryStatus("Excluindo caderno...");
   const ids=rows.map(i=>i.id);
   const {error}=await errorSb.from("error_notebook").delete().in("id",ids);
   if(error){setErrorLibraryStatus(`Não foi possível excluir: ${error.message}`,"error");return}
   const paths=rows.map(i=>i.question_image_path).filter(Boolean);
-  if(paths.length) await window.LuriaStorage.remove("error_images",paths);
+  if(paths.length) await window.TraubeStorage.remove("error_images",paths);
   setErrorLibraryStatus("Caderno excluído.","success");
   await Promise.all([loadErrorMetrics(),loadErrorAreas(),loadErrorLibrary(),loadErrorQueue()]);
 }

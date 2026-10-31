@@ -1,4 +1,4 @@
-/* LURIA Calculadoras: visualizacao de datas independente da largura intrinseca do iOS WebKit.
+/* TRAUBE Calculadoras: visualizacao de datas independente da largura intrinseca do iOS WebKit.
  * O input date nativo continua ativo (inclusive para FormData, validacao e seletor do sistema).
  */
 (() => {

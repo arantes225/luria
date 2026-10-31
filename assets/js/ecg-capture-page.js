@@ -2,7 +2,7 @@
    Controlador da Página Independente de Captura com Câmera (/trabalho/ecg/captura/).
    - Gerencia a inicialização e desligamento limpo dos tracks da câmera.
    - Conecta a Câmera Inteligente (Modo Rápido / Ultrassensível).
-   - Controla o LuriaRotateController com a opção "Continuar na vertical".
+   - Controla o TraubeRotateController com a opção "Continuar na vertical".
    - Armazena a sessão capturada no sessionStorage ('luria_ecg_session') e redireciona para /trabalho/ecg/#revisao.
    - Garante que a câmera seja parada ao clicar em "Voltar ao ECG" ou descarregar a página.
 */
@@ -52,10 +52,10 @@
     });
   }
 
-  // Controlador de rotação LURIA integrado
-  const rotateController = (global.LuriaRotateController && global.LuriaRotateController.create)
-    ? global.LuriaRotateController.create({
-        brandText: "LURIA · CÂMERA INTELIGENTE DE ECG",
+  // Controlador de rotação TRAUBE integrado
+  const rotateController = (global.TraubeRotateController && global.TraubeRotateController.create)
+    ? global.TraubeRotateController.create({
+        brandText: "TRAUBE · CÂMERA INTELIGENTE DE ECG",
         headingText: "Gire o celular",
         messageText: "Para uma captura adequada das 12 derivações, posicione o aparelho na horizontal.",
         tipText: "Se a tela não virar, desative o bloqueio de orientação do aparelho.",
@@ -69,8 +69,8 @@
     : null;
 
   // Criação do controlador da câmera
-  const cameraController = (global.LuriaSmartCamera && global.LuriaSmartCamera.createController)
-    ? global.LuriaSmartCamera.createController({
+  const cameraController = (global.TraubeSmartCamera && global.TraubeSmartCamera.createController)
+    ? global.TraubeSmartCamera.createController({
         videoEl,
         canvasEl,
         hudContainer,
@@ -187,7 +187,7 @@
   });
 
   // Exportação para testes
-  global.LuriaCapturePage = {
+  global.TraubeCapturePage = {
     getCameraController: () => cameraController,
     getRotateController: () => rotateController,
     stop: () => cameraController?.stopCamera()

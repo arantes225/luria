@@ -43,7 +43,7 @@ const totals={apostilas:metrics.length,htmlBytes:metrics.reduce((n,r)=>n+r.htmlB
   sharedCss:metrics.filter(x=>x.format==="content-json"||!x.warnings.includes("css_legado")).length};
 if(process.argv.includes("--json"))console.log(JSON.stringify({totals,metrics},null,2));
 else{
-  console.log("Auditoria LURIA em lote",totals);
+  console.log("Auditoria TRAUBE em lote",totals);
   for(const item of metrics)console.log(item.apostila.padEnd(50),String(item.contentChars).padStart(7),
     item.format,item.warnings.length?item.warnings.join(", "):"sem alertas");
   console.log("Mínimo editorial vigente: 60.000 caracteres úteis por caderno. As métricas são triagem e não certificam qualidade médica ou ausência de repetição.");

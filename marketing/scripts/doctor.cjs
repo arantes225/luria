@@ -1,6 +1,6 @@
 'use strict';
 /*
- * Script de diagnóstico do ambiente do LURIA Marketing Studio.
+ * Script de diagnóstico do ambiente do TRAUBE Marketing Studio.
  *
  * Uso:
  *   node scripts/doctor.cjs
@@ -10,7 +10,7 @@ const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 const { MARKETING, REPO, chromePath, ffmpegPath } = require('./lib/common.cjs');
 
-console.log('=== LURIA MARKETING STUDIO — DIAGNÓSTICO DO SISTEMA ===\n');
+console.log('=== TRAUBE MARKETING STUDIO — DIAGNÓSTICO DO SISTEMA ===\n');
 
 let allOk = true;
 

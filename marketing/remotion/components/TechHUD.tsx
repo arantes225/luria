@@ -131,7 +131,7 @@ export const TechHUD: React.FC<TechHUDProps> = ({
               boxShadow: blink ? '0 0 10px #4ade80' : 'none'
             }}
           />
-          <span>LURIA // {moduleName}</span>
+          <span>TRAUBE // {moduleName}</span>
         </div>
 
         <div style={{ color: 'rgba(129, 222, 250, 0.75)', fontVariantNumeric: 'tabular-nums' }}>
@@ -165,7 +165,7 @@ export const TechHUD: React.FC<TechHUDProps> = ({
         />
       </div>
 
-      {/* Top Glowing Central Luria Emblem */}
+      {/* Top Glowing Central Traube Emblem */}
       <div
         style={{
           position: 'absolute',

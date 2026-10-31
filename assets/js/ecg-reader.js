@@ -2,7 +2,7 @@
    Orquestrador da Etapa 3 — Integração Estruturada e Interpretação por IA.
 
    Princípios de Segurança e Integridade:
-   1. Consome os dados verdadeiramente estruturados da Etapa 2 (window.LuriaEcgSessionData):
+   1. Consome os dados verdadeiramente estruturados da Etapa 2 (window.TraubeEcgSessionData):
       - leads, signals, validMask, calibration, samplingRateHz, recoveredDurationSeconds, audit, limitations.
    2. Validação Rigorosa de Pré-requisitos para o Modelo Autoral:
       - O modelo autoral deep-learning para ECG de 12 derivações exige sinal digital contínuo de 10 segundos
@@ -133,7 +133,7 @@
    */
   function initStage3Package(sessionPackage) {
     if (!sessionPackage) {
-      sessionPackage = window.LuriaEcgSessionData || null;
+      sessionPackage = window.TraubeEcgSessionData || null;
     }
 
     if (!sessionPackage) {
@@ -165,7 +165,7 @@
         compatAlert.innerHTML =
           `<strong>Classificador Autoral Bloqueado por Requisito Técnico:</strong><br>` +
           reasons.map(r => `• ${r}`).join("<br>") +
-          `<br><small style="margin-top:4px;display:block">Para laudar clinicamente o ECG, utilize o <strong>Gerador de Laudo Estruturado</strong> da LURIA ou revise as derivações no painel de visualização.</small>`;
+          `<br><small style="margin-top:4px;display:block">Para laudar clinicamente o ECG, utilize o <strong>Gerador de Laudo Estruturado</strong> da TRAUBE ou revise as derivações no painel de visualização.</small>`;
       }
       setStatus("Interpretação pelo modelo autoral bloqueada: requisitos de duração e calibração não atendidos.", "error");
     } else {
@@ -180,7 +180,7 @@
 
   // Submissão ao classificador autoral (quando 100% compatível com sinais de 10s)
   btnAnalyze?.addEventListener("click", async () => {
-    const pkg = window.LuriaEcgSessionData;
+    const pkg = window.TraubeEcgSessionData;
     const { compatible, reasons } = evaluateAuthorialModelCompatibility(pkg);
 
     if (!compatible) {
@@ -189,7 +189,7 @@
     }
 
     btnAnalyze.disabled = true;
-    setStatus("Processando sinais digitais no modelo autoral LURIA...", "");
+    setStatus("Processando sinais digitais no modelo autoral TRAUBE...", "");
 
     try {
       const response = await client.functions.invoke("ecg-signal-classifier", {
@@ -205,7 +205,7 @@
         throw new Error(response.data?.error || "Serviço do classificador autoral temporariamente indisponível.");
       }
 
-      renderAnalysisResult(response.data.result, "Classificador Autoral LURIA (Sinais Digitais)");
+      renderAnalysisResult(response.data.result, "Classificador Autoral TRAUBE (Sinais Digitais)");
       setStatus("Classificação por sinais concluída com sucesso.", "ok");
     } catch (err) {
       setStatus(`Erro no classificador autoral: ${err.message}`, "error");
@@ -301,11 +301,11 @@
     resultCard.hidden = false;
   }
 
-  window.LuriaEcgReaderInit = initStage3Package;
+  window.TraubeEcgReaderInit = initStage3Package;
 
   // Se já houver sessão carregada ao abrir o script
-  if (window.LuriaEcgSessionData) {
-    initStage3Package(window.LuriaEcgSessionData);
+  if (window.TraubeEcgSessionData) {
+    initStage3Package(window.TraubeEcgSessionData);
   }
 })();
 

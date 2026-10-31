@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  const sb=window.supabaseClient,owned=window.LuriaLocalOwnerStore;
+  const sb=window.supabaseClient,owned=window.TraubeLocalOwnerStore;
   const $=id=>document.getElementById(id);
   const state=$("quick-chart-fixed-state"),status=$("quick-chart-access-status");
   const pin=$("quick-chart-fixed-pin"),confirmPin=$("quick-chart-fixed-confirm");
@@ -8,12 +8,12 @@
   const requests=$("quick-chart-pair-requests"),sessions=$("quick-chart-active-sessions"),inbox=$("quick-chart-inbox-list");
   if(!sb||![state,status,pin,confirmPin,save,revoke,requests,sessions,inbox].every(Boolean))return;
   const endpoint="https://sxdsfklllilhdyuamvvg.supabase.co/functions/v1/external-quick-chart-pair";
-  const key=window.LuriaSupabasePublishableKey || sb.supabaseKey;
+  const key=window.TraubeSupabasePublishableKey || sb.supabaseKey;
   let owner="",epoch=0,timer=null,configured=false,working=false;
   const clock=v=>new Date(v).toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"});
   async function call(action,payload={}){
     const {data}=await sb.auth.getSession();
-    if(!data?.session?.access_token)throw Error("Entre na LURIA para administrar os acessos.");
+    if(!data?.session?.access_token)throw Error("Entre na TRAUBE para administrar os acessos.");
     const r=await fetch(endpoint,{method:"POST",cache:"no-store",headers:{"Content-Type":"application/json",
       "apikey":key,"Authorization":"Bearer "+data.session.access_token},
       body:JSON.stringify({...payload,action})});

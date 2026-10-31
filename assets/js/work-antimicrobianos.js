@@ -1,5 +1,5 @@
 /**
- * LURIA Antimicrobianos 2.0 - Core Interactive & Intelligence Engine
+ * TRAUBE Antimicrobianos 2.0 - Core Interactive & Intelligence Engine
  * Features:
  * - Smart Empiric Assistant with clinical decision tree
  * - Live Renal Clearance & Antimicrobial Dose Adjuster (Cockcroft-Gault)

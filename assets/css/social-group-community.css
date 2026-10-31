@@ -1,4 +1,4 @@
-/* A community workspace inside the existing LURIA shell. */
+/* A community workspace inside the existing TRAUBE shell. */
 @layer luria-ui-education {
 body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-composition {
  &.group-community-open .luria-page-spotlight {display:none!important;}

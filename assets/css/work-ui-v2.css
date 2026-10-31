@@ -667,7 +667,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
     gap: 24px !important;
     display: grid !important;
   }
-  /* LURIA standard spotlight preserved in work pages */
+  /* TRAUBE standard spotlight preserved in work pages */
   body[data-ui-work="v2"] .work-dashboard-head {
     margin: 0 0 24px !important;
     padding: 0 !important;

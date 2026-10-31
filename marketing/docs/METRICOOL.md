@@ -1,6 +1,6 @@
 # RELATÓRIO TÉCNICO: INTEGRAÇÃO OFICIAL METRICOOL MCP
 
-Este documento consolida a investigação técnica e implementação da integração com o servidor oficial MCP (Model Context Protocol) da Metricool para a plataforma médica **LURIA**.
+Este documento consolida a investigação técnica e implementação da integração com o servidor oficial MCP (Model Context Protocol) da Metricool para a plataforma médica **TRAUBE**.
 
 ---
 
@@ -24,7 +24,7 @@ Este documento consolida a investigação técnica e implementação da integra�
 * **Plano Gratuito (Free) vs. Pago (Advanced/Custom):**
   * O acesso ao endpoint remoto MCP (`https://ai.metricool.com/mcp`) está disponível em **todos os planos, inclusive no plano Free** da Metricool, respeitando a cota mensal da conta (até 20 posts agendados/mês no plano gratuito).
   * A alternativa local em linha de comando baseada no pacote Python PyPI (`mcp-metricool`) requer plano **Advanced ou Custom**, pois consome internamente a API REST v2 (`https://app.metricool.com/api/v2/*`).
-  * **Decisão LURIA:** Priorizar o conector oficial HTTP/SSE remoto e a camada de simulação local sem custos.
+  * **Decisão TRAUBE:** Priorizar o conector oficial HTTP/SSE remoto e a camada de simulação local sem custos.
 
 ---
 
@@ -63,7 +63,7 @@ A inspeção da biblioteca oficial revelou as 28 ferramentas disponibilizadas:
 
 ---
 
-## 5. Implementação no LURIA Marketing Studio
+## 5. Implementação no TRAUBE Marketing Studio
 
 A pasta `marketing/metricool/` implementa:
 

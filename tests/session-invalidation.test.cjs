@@ -17,25 +17,25 @@ function fixture(t,initial='A') {
 for(const next of [null,'B']) test(`identity A -> ${next}: globals, private UI and late writes are invalidated`,async t=>{
   const {w,change,resolveInitial}=fixture(t);
   for(const key of ['docmapUser','docmapSession','docmapProfile','docmapEntitlements','docmapPlan','docmapIsAdmin'])w[key]={id:'A',private:true};
-  assert(w.LuriaLocalOwnerStore.write('draft','PRIVATE A'));
+  assert(w.TraubeLocalOwnerStore.write('draft','PRIVATE A'));
   change(next);
-  assert.equal(w.LuriaSessionInvalidated,true);
+  assert.equal(w.TraubeSessionInvalidated,true);
   assert.equal(w.document.documentElement.style.visibility,'hidden');assert.equal(w.document.body.inert,true);
   assert.equal(w.document.documentElement.style.display,'none','descendants cannot override an inherited visibility value');
   assert(!w.document.body.classList.contains('app-ready'));
   for(const key of ['docmapUser','docmapSession','docmapProfile','docmapEntitlements','docmapPlan','docmapIsAdmin']) {
     w[key]={id:'A'};assert.equal(w[key],null,'late callback cannot restore private globals');
   }
-  assert.equal(w.LuriaLocalOwnerStore.write('draft','LATE A'),false);
+  assert.equal(w.TraubeLocalOwnerStore.write('draft','LATE A'),false);
   assert.equal(w.localStorage.getItem('draft:A'),'PRIVATE A');assert.equal(w.localStorage.getItem('draft:B'),null);
   resolveInitial({data:{session:{user:{id:'A'}}}});await turn();
-  assert.equal(w.LuriaLocalOwnerStore.ownerId,next);
+  assert.equal(w.TraubeLocalOwnerStore.ownerId,next);
 });
 test('initial authentication and refresh of same identity keep the document usable',async t=>{
   const {w,change,resolveInitial}=fixture(t);
   w.docmapUser={id:'A'};change('A');resolveInitial({data:{session:{user:{id:'A'}}}});await turn();
-  assert(!w.LuriaSessionInvalidated);assert.equal(w.docmapUser.id,'A');assert.equal(w.document.documentElement.style.visibility,'');
-  assert(w.LuriaLocalOwnerStore.write('draft','ok'));
+  assert(!w.TraubeSessionInvalidated);assert.equal(w.docmapUser.id,'A');assert.equal(w.document.documentElement.style.visibility,'');
+  assert(w.TraubeLocalOwnerStore.write('draft','ok'));
 });
 test('BFCache rechecks the current identity before revealing a restored document',async t=>{
   const {w,resolveInitial,change}=fixture(t);resolveInitial({data:{session:{user:{id:'A'}}}});await turn();
@@ -45,5 +45,5 @@ test('BFCache rechecks the current identity before revealing a restored document
   w.dispatchEvent(event);change('A');resolveRefresh({data:{session:{user:{id:'A'}}}});await turn();
   assert.equal(w.document.documentElement.style.display,'','same-owner refresh cannot leave the restored document blank');
   w.supabaseClient.auth.getSession=async()=>({data:{session:{user:{id:'B'}}}});
-  w.dispatchEvent(event);await turn();assert.equal(w.LuriaSessionInvalidated,true);assert.equal(w.document.documentElement.style.visibility,'hidden');
+  w.dispatchEvent(event);await turn();assert.equal(w.TraubeSessionInvalidated,true);assert.equal(w.document.documentElement.style.visibility,'hidden');
 });

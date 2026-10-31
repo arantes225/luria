@@ -1,4 +1,4 @@
-# LURIA | Aula 179 — Câncer de endométrio
+# TRAUBE | Aula 179 — Câncer de endométrio
 
 **Ginecologia e Obstetrícia · Ginecologia Oncológica · Patologia · Genética Médica · Saúde Coletiva**  
 **Lote 09 — Aula 179 de 180 · Edição autoral de 15/10/2026**  
@@ -6,7 +6,7 @@
 
 **Fontes de referência e atualização:** INCA, *Câncer do corpo do útero* e *Estimativa 2026–2028*; ACOG, atualização de **abril/julho de 2026** para sangramento pós-menopausa; ACOG, EIN/hiperplasia atípica (2023); FIGO, estadiamento **2023**; ESGO–ESTRO–ESP, diretrizes de carcinoma endometrial **2025**; ESGO–ESHRE–ESGE, preservação de fertilidade **2023**; NCI PDQ, tratamento do carcinoma endometrial. Princípios internacionais de fármacos ou acesso não substituem diretrizes e incorporação/financiamento do SUS.
 
-> **Pulo do Gato LURIA:** **Qualquer sangramento após a menopausa exige investigação**, mesmo com pouco sangue, colo do útero normal ou ultrassom “tranquilizador”. O diagnóstico é **histológico**; ultrassonografia orienta, mas não fecha câncer. No tratamento, já não basta escrever “estágio I, grau 2”: são decisivos **FIGO 2023 + histologia + invasão miometrial + LVSI + classificação molecular (POLE, MMR, p53, NSMP)** e, na ESGO 2025, refinamentos por grau e receptor de estrogênio nos NSMP.
+> **Pulo do Gato TRAUBE:** **Qualquer sangramento após a menopausa exige investigação**, mesmo com pouco sangue, colo do útero normal ou ultrassom “tranquilizador”. O diagnóstico é **histológico**; ultrassonografia orienta, mas não fecha câncer. No tratamento, já não basta escrever “estágio I, grau 2”: são decisivos **FIGO 2023 + histologia + invasão miometrial + LVSI + classificação molecular (POLE, MMR, p53, NSMP)** e, na ESGO 2025, refinamentos por grau e receptor de estrogênio nos NSMP.
 
 ## 1. Objetivos de aprendizagem
 
@@ -25,7 +25,7 @@ O aluno deve conseguir:
 11. Manejar seguimento, complicações, recidiva, menopausa cirúrgica e cuidados paliativos.
 12. Resolver casos e questões clínico-prognósticas de prova sem cair em armadilhas de conduta.
 
-**Articulação curricular:** a apostila de *Sangramento Uterino Anormal* existente no repositório LURIA aborda PALM-COEIN e a triagem inicial, com câncer apenas como uma das causas. Esta aula é o núcleo específico de **neoplasia endometrial**; a aula 169 trata de neoplasias mamárias; a 174, de ovário; a 164, de colo uterino; a 180, de cuidados paliativos. Evitar duplicação dos conteúdos de base e criar vínculos entre capítulos após integração nativa.
+**Articulação curricular:** a apostila de *Sangramento Uterino Anormal* existente no repositório TRAUBE aborda PALM-COEIN e a triagem inicial, com câncer apenas como uma das causas. Esta aula é o núcleo específico de **neoplasia endometrial**; a aula 169 trata de neoplasias mamárias; a 174, de ovário; a 164, de colo uterino; a 180, de cuidados paliativos. Evitar duplicação dos conteúdos de base e criar vínculos entre capítulos após integração nativa.
 
 ## 2. Anatomia funcional: por que o endométrio sangra?
 
@@ -170,7 +170,7 @@ O **ACOG Committee Opinion 734 de 2018**, reafirmado em 2023, aceitava **ultrass
 
 Em **16/04/2026**, ACOG anunciou **Clinical Practice Update**, publicado em *Obstetrics & Gynecology*, julho de 2026 (DOI 10.1097/AOG.0000000000006275), recomendando **combinar US transvaginal e amostragem de tecido endometrial na avaliação inicial da maioria das pacientes com sangramento pós-menopausa**, pois a estratégia só por espessura pode perder neoplasias. É uma **mudança real** e não pode ser ensinada como se a regra de 2018 fosse a única atual.
 
-### 9.2. Como aplicar na LURIA sem extrapolar contexto
+### 9.2. Como aplicar na TRAUBE sem extrapolar contexto
 
 - Qualquer sangramento pós-menopausa merece avaliação por ginecologia e exclusão adequada de malignidade.
 - A US transvaginal continua útil para medir eco, identificar pólipos/miomas/alterações anexiais e orientar procedimento.
@@ -472,7 +472,7 @@ Podem representar tumores primários simultâneos ou disseminação, com consequ
 ### 23.8. Gestação
 Carcinoma endometrial na gestação é raro e exige individualização rigorosa; lesões decidualizadas/gestacionais e outras causas podem gerar diagnóstico diferencial. Biópsia/histeroscopia devem respeitar confirmação de gestação e avaliação obstétrica; não aplicar investigação pós-menopausa a gestante.
 
-## 24. Algoritmos LURIA
+## 24. Algoritmos TRAUBE
 
 ### Fluxo A — Sangramento pós-menopausa
 Confirmar origem vaginal/uterina e estabilidade → fatores de risco e exame especular → **encaminhar investigação endometrial** com US TV e amostragem histológica na maioria conforme ACOG 2026 → **biópsia insuficiente/negativa + sangramento persistente ou imagem focal?** histeroscopia/biópsia dirigida → carcinoma/EIN? discutir oncoginecologia → não encerrar apenas pelo “eco ≤4 mm”.
@@ -569,8 +569,8 @@ Carcinoma endometrial → IHQ MMR → expressão preservada? sem evidência tumo
 10. **ESGO–ESHRE–ESGE. Guidelines for fertility-sparing treatment of patients with endometrial carcinoma**, 2023. Índice institucional: https://www.esgo.org/guidelines/search-guidelines/endometrial/
 11. **NCI. Endometrial Cancer Treatment (PDQ), Health Professional Version.** https://www.cancer.gov/types/uterine/hp/endometrial-treatment-pdq
 12. **Conitec/MS. Índice de DDT oncológicas**, modificado em 14/09/2026; conferir atos específicos por tecnologia. https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas/ddt
-13. **LURIA. Sangramento Uterino Anormal**, apostila complementar existente no repositório. https://github.com/arantes225/luria/blob/main/apostilas/sangramento-uterino-anormal/index.html
-14. **LURIA. Câncer do colo uterino/HPV**, manter distição anatômica, etiológica e programa de rastreamento. https://github.com/arantes225/luria/tree/main/apostilas/cancer-colo-utero-hpv
+13. **TRAUBE. Sangramento Uterino Anormal**, apostila complementar existente no repositório. https://github.com/arantes225/luria/blob/main/apostilas/sangramento-uterino-anormal/index.html
+14. **TRAUBE. Câncer do colo uterino/HPV**, manter distição anatômica, etiológica e programa de rastreamento. https://github.com/arantes225/luria/tree/main/apostilas/cancer-colo-utero-hpv
 
 ### Nota de compatibilidade Brasil–internacional
 
@@ -1332,7 +1332,7 @@ A lista é **planejamento editorial**, não imagens já obtidas ou aprovadas. Bu
 - **WebP e PWA:** preservar detalhes diagnósticos e texto, adicionar alt text, dimensionamento responsivo e link para fonte.
 - **Admin Aprovar:** sem licença ou qualidade suficiente, a figura permanece somente candidata.
 
-## 32. Integração com currículo LURIA e proposta de flashcards
+## 32. Integração com currículo TRAUBE e proposta de flashcards
 
 A apostila **Sangramento Uterino Anormal** permanece dona do conteúdo de PALM–COEIN, fisiologia menstrual e manejo do sangramento geral; esta aula é o módulo específico de oncoginecologia endometrial. Conectar com aulas 164 (colo do útero), 174 (ovário), 170 (sigilo e prontuário), 177 (complicações) e 180 (paliativos). A classificação molecular também fundamenta questões direcionadas, flashcards e comentários do Professor Alex.
 

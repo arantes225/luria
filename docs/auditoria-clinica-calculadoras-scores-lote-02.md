@@ -1,4 +1,4 @@
-# LURIA — auditoria das calculadoras, lote 2/6 (31–60)
+# TRAUBE — auditoria das calculadoras, lote 2/6 (31–60)
 
 **Data:** 24 de outubro de 2026  
 **Repositório:** `arantes225/luria`, branch `main`  

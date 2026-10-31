@@ -1,11 +1,11 @@
-# LURIA — Aula 173 | Urgências pediátricas e suporte básico/avançado de vida
+# TRAUBE — Aula 173 | Urgências pediátricas e suporte básico/avançado de vida
 
 **Área:** Pediatria · Emergência · Terapia Intensiva · Sala de Emergência  
 **Lote 09, aula 173/180 — redação de 14/10/2026**  
-**Estado:** rascunho editorial de estudo, sem revisão clínica independente, sem publicação no renderizador LURIA.  
+**Estado:** rascunho editorial de estudo, sem revisão clínica independente, sem publicação no renderizador TRAUBE.  
 **Fontes prioritárias verificadas:** AHA/AAP 2025 Pediatric BLS/PALS; Surviving Sepsis Campaign **pediátrica 2026** (23/03/2026); GINA **2026**; ISPAD 2022 para cetoacidose; diretrizes de anafilaxia e materiais do Ministério da Saúde/SBP conforme condição.
 
-> **Pulo do Gato LURIA:** A parada cardíaca pediátrica costuma ser o desfecho de **falência respiratória ou choque não revertidos**, e não uma fibrilação ventricular primária. O melhor algoritmo começa **antes de a criança parar**. Oxigenar/ventilar, reconhecer má perfusão e reavaliar em ciclos curtos salva vidas.
+> **Pulo do Gato TRAUBE:** A parada cardíaca pediátrica costuma ser o desfecho de **falência respiratória ou choque não revertidos**, e não uma fibrilação ventricular primária. O melhor algoritmo começa **antes de a criança parar**. Oxigenar/ventilar, reconhecer má perfusão e reavaliar em ciclos curtos salva vidas.
 
 **Aviso de segurança clínica:** protocolos e doses neste material destinam-se a profissionais treinados e estudantes supervisionados. Em atendimento real, conferir peso atual ou estimado por método validado, concentração do produto, via, máxima por dose, bomba, alergias, comorbidades e protocolo do serviço. Doses para anafilaxia **não** são intercambiáveis com adrenalina de PCR. Não prescrever usando este rascunho como fonte única.
 
@@ -126,7 +126,7 @@ A **AHA/AAP 2025 não recomenda mais a técnica com dois dedos no esterno de lac
 1. **dois polegares envolvendo o tórax** (2-thumb encircling hands) quando a anatomia permite; ou
 2. **base de uma mão sobre esterno** (heel of one hand), especialmente quando não se consegue envolver o tórax.
 
-Para crianças maiores, uma ou duas mãos podem ser adequadas de acordo com tamanho e capacidade de alcançar profundidade e frequência. Documentos de 2020 e apostilas antigas podem ainda ensinar “dois dedos para socorrista único”; atualizar a LURIA para a recomendação de 2025 e explicitar diferença histórica evita respostas contraditórias.
+Para crianças maiores, uma ou duas mãos podem ser adequadas de acordo com tamanho e capacidade de alcançar profundidade e frequência. Documentos de 2020 e apostilas antigas podem ainda ensinar “dois dedos para socorrista único”; atualizar a TRAUBE para a recomendação de 2025 e explicitar diferença histórica evita respostas contraditórias.
 
 ### 6.4. Ventilação é central
 
@@ -472,7 +472,7 @@ Antes de cada plantão com risco pediátrico, conferir tamanho de máscara, ambu
 
 **Cuidado:** números fornecidos como resumo acadêmico não dispensam ler algoritmo oficial integral para a faixa etária e situação; máximos, repetições e apresentações precisam ser conferidos no local.
 
-## 27. Fluxogramas textuais LURIA
+## 27. Fluxogramas textuais TRAUBE
 
 ### A. Criança não responsiva
 Cena segura → chamar ajuda/DEA → avaliar respiração, pulso até 10 s por profissional → **sem pulso claro**: RCP de qualidade + ventilação → ritmo chocável? **FV/TVSP:** choque 2 J/kg, ciclos RCP; **assistolia/AESP:** epinefrina precoce, RCP, Hs/Ts → ROSC? estabilizar pós-PCR e UTI.
@@ -577,7 +577,7 @@ Na alta, revisar tratamento, imunizações, dieta/reabilitação, sinais de aler
 - [ ] Revisão de cada dose de medicamento por pediatra emergencista e farmacêutico clínico.
 - [ ] Conferência das atualizações brasileiras de convulsão, bronquiolite, anafilaxia, trauma, ventilação e CAD.
 - [ ] Confirmação de links e licenças de imagens.
-- [ ] Conversão ao formato nativo da LURIA, testes desktop/PWA e cronograma.
+- [ ] Conversão ao formato nativo da TRAUBE, testes desktop/PWA e cronograma.
 - [ ] Aprovação clínica independente antes de publicação.
 
 
@@ -785,9 +785,9 @@ Os casos são fictícios e autorais. A condução de emergências reais exige eq
 
 
 
-## 34. Questões autorais LURIA — 20 questões com todas as alternativas comentadas
+## 34. Questões autorais TRAUBE — 20 questões com todas as alternativas comentadas
 
-Questões originais de residência/internato no padrão LURIA. Cada item possui justificativa individual de A a D e mini-revisão; não são cópias de questões de provas oficiais.
+Questões originais de residência/internato no padrão TRAUBE. Cada item possui justificativa individual de A a D e mini-revisão; não são cópias de questões de provas oficiais.
 
 ### Questão 1 — Compressão no lactente — AHA 2025
 
@@ -1217,7 +1217,7 @@ O objetivo é ensinar gestos de suporte de vida e interpretação clínica com i
 
 | Nº | Item | O que a imagem precisa ensinar | Procedência e validação |
 |---|---|---|---|
-| 1 | TAP — triângulo de avaliação pediátrica | Infográfico original com aparência, trabalho respiratório e circulação da pele | Diagrama LURIA; revisão por pediatra emergencista; sem rosto identificável |
+| 1 | TAP — triângulo de avaliação pediátrica | Infográfico original com aparência, trabalho respiratório e circulação da pele | Diagrama TRAUBE; revisão por pediatra emergencista; sem rosto identificável |
 | 2 | Compressão de lactente — AHA 2025 | Dois esquemas da base de uma mão e dos dois polegares circundando tórax | Desenho autoral com referência AHA/AAP 2025; não reproduzir figura protegida sem licença |
 | 3 | RCP sem/ com via aérea avançada | Tabela 30:2, 15:2 e ventilação 20–30/min, além de pausas mínimas | Fluxo original com delimitação de puberdade e sala de parto |
 | 4 | PCR pediátrica chocável e não chocável | Algoritmo autoral 2 J/kg, 4 J/kg, epinefrina e causas reversíveis | Adaptado em texto, validar sequência fiel à AHA 2025 |
@@ -1241,7 +1241,7 @@ O objetivo é ensinar gestos de suporte de vida e interpretação clínica com i
 1. Conferir licença de cada figura original AHA, SCCM, GINA, ISPAD ou artigo antes de incorporar; site público não implica reprodução irrestrita. Para algoritmos, gerar arte **original** com citação e sem cópia literal do layout.
 2. Exames de RX, TC, gases e ECG devem ter origem, legenda contextualizada e distinção entre dados reais e simulados.
 3. Não utilizar fotos de pacientes pediátricos identificáveis quando um desenho didático sem identificação ensina a técnica adequadamente.
-4. Adotar WebP e respeitar limites da LURIA para exames, preservando traçados/achados diagnósticos.
+4. Adotar WebP e respeitar limites da TRAUBE para exames, preservando traçados/achados diagnósticos.
 5. Atribuir alt text semântico e legenda contendo diagnóstico diferencial e limitações.
 6. Confirmar em revisão independente que a figura representa a **diretriz 2025/2026**, não esquema antigo reciclado.
 7. Testar responsividade, ampliação, contraste, carregamento PWA e acessibilidade após integração.
@@ -1299,7 +1299,7 @@ Para criança de 20 kg: desfibrilação em FV/TVSP inicial **40 J**, segunda **8
 - [ ] Validar contracepções/restrições em gestantes adolescentes somente onde pertinente a emergências.
 - [ ] Validar doses de broncodilatador, magnésio, anticonvulsivantes, glicose e hidrocortisona por idade/peso antes de transformar capítulo em prescrição.
 - [ ] Selecionar e licenciar imagens e produzir diagramas originais, converter em WebP, revisar pelo menos 10 aprovadas.
-- [ ] Converter rascunho para HTML/content.json do renderizador LURIA, com índice e módulos de questões.
+- [ ] Converter rascunho para HTML/content.json do renderizador TRAUBE, com índice e módulos de questões.
 - [ ] Executar testes de desktop/PWA, navegação, alt text e desempenho.
 - [ ] Obter aprovação clínica e documental antes de marcar como apostila publicada.
 

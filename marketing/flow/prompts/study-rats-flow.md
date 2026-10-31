@@ -1,4 +1,4 @@
-# PROMPTS CINEMATOGRÁFICOS GOOGLE FLOW — STUDY RATS (LURIA)
+# PROMPTS CINEMATOGRÁFICOS GOOGLE FLOW — STUDY RATS (TRAUBE)
 
 > **Instruções de Uso no Google Flow / Veo:**
 > 1. Copie o prompt em inglês na ferramenta oficial do Google Flow.
@@ -53,7 +53,7 @@ unprofessional behavior, stethoscope tangled, empty plastic cups, goofy smiles, 
 
 ## Cena 3 — Detalhe Médico Premium (Transição / B-Roll)
 
-* **Objetivo dramático:** Reforçar a autoridade e o padrão técnico da plataforma médica LURIA.
+* **Objetivo dramático:** Reforçar a autoridade e o padrão técnico da plataforma médica TRAUBE.
 * **Duração indicada:** 3 a 5 segundos.
 * **Formato:** Vertical 9:16 (1080 × 1920).
 * **Enquadramento:** Macro / Close-up detalhado.

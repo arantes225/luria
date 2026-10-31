@@ -1323,7 +1323,7 @@ async function loadDashboardWeekActivity() {
     .lt("started_at", end.toISOString());
 
   if (error) {
-    console.warn("LURIA: não foi possível carregar o histórico semanal de estudo", error);
+    console.warn("TRAUBE: não foi possível carregar o histórico semanal de estudo", error);
     window.luriaDashboardWeekActivity = { status: "unavailable", dates: [] };
     return;
   }
@@ -2603,7 +2603,7 @@ async function deleteManagedEvent(
   closeManagedEventMenus();
 
   const confirmed =
-    await window.LuriaDialog.confirm(
+    await window.TraubeDialog.confirm(
       `Apagar "${item.title || "Evento"}" da agenda?`
     );
 
@@ -2663,7 +2663,7 @@ async function deleteSelectedManagedEvents() {
   }
 
   const confirmed =
-    await window.LuriaDialog.confirm(
+    await window.TraubeDialog.confirm(
       `Apagar ${ids.length} evento${ids.length === 1 ? "" : "s"} selecionado${ids.length === 1 ? "" : "s"}?`
     );
 

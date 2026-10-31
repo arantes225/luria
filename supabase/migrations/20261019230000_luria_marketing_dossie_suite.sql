@@ -1,5 +1,5 @@
 -- ==============================================================================
--- LURIA MARKETING & GROWTH SUITE - DOSSIE BLACK NOVEMBER 2026
+-- TRAUBE MARKETING & GROWTH SUITE - DOSSIE BLACK NOVEMBER 2026
 -- Tabelas: Campanhas, Conteúdos, Leads, Consentimentos, Eventos e Métricas
 -- ==============================================================================
 

@@ -17,8 +17,8 @@ async function fixture(t){
   });queue=work.catch(()=>{});return work.then(data=>({data,error:null}),error=>({data:null,error:{message:error.message}}));
  };
  const channels=[];
- w.docmapUser={id:A};w.LuriaDialog={confirm:async()=>true,prompt:async()=>null,alert:async()=>{}};
- w.LuriaVoice={leave:async()=>{},mute(){},join:async()=>{},sync:async()=>{}};
+ w.docmapUser={id:A};w.TraubeDialog={confirm:async()=>true,prompt:async()=>null,alert:async()=>{}};
+ w.TraubeVoice={leave:async()=>{},mute(){},join:async()=>{},sync:async()=>{}};
  w.HTMLDialogElement.prototype.showModal=function(){this.open=true;};w.HTMLDialogElement.prototype.close=function(){this.open=false;};
  w.supabaseClient={rpc:dispatch,realtime:{setAuth:async()=>{}},auth:{getSession:async()=>({data:{session:{access_token:'test'}}})},
   from:()=>({select(){return this;},eq(){return this;},maybeSingle:async()=>({data:{luria_id:'OWNER001',studyrat_variant:'blue'},error:null})}),
@@ -34,78 +34,78 @@ test('social UI persists actual rooms and messages through RPCs, never local dem
  assert.doesNotMatch(d.body.textContent,/Carla Monteiro|ENEM 2024|Mariana Costa/);
  d.getElementById('friends-create-room-toggle').click();await x.settle();assert.equal(d.getElementById('social-dialog').open,true);
  const form=d.getElementById('social-dialog-form');form.elements.name.value='Turma <script>alert(1)</script>';form.elements.visibility.value='public';form.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await x.settle();
- const state=w.LuriaSocial.getState();assert(state.room.id);assert.equal(d.getElementById('social-dialog').open,false);assert.equal(d.getElementById('community-rooms-panel').hidden,false);assert.equal(d.getElementById('social-room').hidden,false);
+ const state=w.TraubeSocial.getState();assert(state.room.id);assert.equal(d.getElementById('social-dialog').open,false);assert.equal(d.getElementById('community-rooms-panel').hidden,false);assert.equal(d.getElementById('social-room').hidden,false);
  assert.equal(d.getElementById('social-room-title').querySelector('script'),null);assert.match(d.getElementById('social-room-title').textContent,/<script>/);
  assert.equal(w.localStorage.getItem('luria:study-rooms'),null);assert.equal(x.channels.find(c=>c.name.startsWith('study-room:')).config.config.private,true);
  const input=d.getElementById('social-message-text');input.value='<img src=x onerror=alert(1)> https://example.com @Bruno';d.getElementById('social-message-form').dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();
  assert.equal(d.querySelector('#social-messages img'),null);assert.match(d.getElementById('social-messages').textContent,/<img/);assert.equal(d.querySelector('#social-messages a').rel,'noopener noreferrer');
  await f.as(A);assert.equal((await f.command('messages',{room_id:state.room.id})).length,1);
- await w.LuriaSocial.leave();assert.equal(d.getElementById('social-room').hidden,true);assert.match(d.getElementById('social-rooms').textContent,/Turma/);
- await w.LuriaSocial.enter({room_id:state.room.id});assert.match(d.getElementById('social-messages').textContent,/<img/);assert.deepEqual(x.errors,[]);
+ await w.TraubeSocial.leave();assert.equal(d.getElementById('social-room').hidden,true);assert.match(d.getElementById('social-rooms').textContent,/Turma/);
+ await w.TraubeSocial.enter({room_id:state.room.id});assert.match(d.getElementById('social-messages').textContent,/<img/);assert.deepEqual(x.errors,[]);
 });
 test('room configuration, agenda and confirmed quiz responses execute their real shared commands',async t=>{
- const x=await fixture(t),{w,d,f}=x;const created=await w.LuriaSocial.command('create_room',{name:'Revisão compartilhada',visibility:'public'});await w.LuriaSocial.enter({room_id:created.id});
- d.getElementById('social-room-settings').click();await x.settle();const form=d.getElementById('social-dialog-form');form.elements.objective.value='Revisar ECG';form.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await x.settle();assert.equal(w.LuriaSocial.getState().room.objective,'Revisar ECG');
- d.getElementById('social-checklist-text').value='Interpretação inicial';d.getElementById('social-agenda-at').value='2026-10-15T14:00';d.getElementById('social-checklist-form').dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await x.settle();assert.equal(w.LuriaSocial.getState().checklist.length,1);assert.equal(w.LuriaSocial.getState().checklist[0].duration_minutes,25);
- await w.LuriaSocial.command('session_start',{room_id:created.id,mode:'together'});await w.LuriaSocial.command('quiz_start',{room_id:created.id,set_id:SET,duration:90});await w.LuriaSocial.enter({room_id:created.id});await x.settle();
- d.querySelector('[data-answer="B"]').click();await x.settle();assert.equal(w.LuriaSocial.getState().quiz.my_choice,null);assert.equal(d.getElementById('social-answer-submit').disabled,false);
- d.getElementById('social-answer-submit').click();await x.settle();assert.equal(w.LuriaSocial.getState().quiz.my_choice,'B');assert(w.LuriaSocial.getState().quiz.revealed_at);await f.as(A);assert.equal((await f.snapshot(created.id)).quiz.answer,'B');
- await w.LuriaSocial.leave();assert.deepEqual(x.errors,[]);
+ const x=await fixture(t),{w,d,f}=x;const created=await w.TraubeSocial.command('create_room',{name:'Revisão compartilhada',visibility:'public'});await w.TraubeSocial.enter({room_id:created.id});
+ d.getElementById('social-room-settings').click();await x.settle();const form=d.getElementById('social-dialog-form');form.elements.objective.value='Revisar ECG';form.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await x.settle();assert.equal(w.TraubeSocial.getState().room.objective,'Revisar ECG');
+ d.getElementById('social-checklist-text').value='Interpretação inicial';d.getElementById('social-agenda-at').value='2026-10-15T14:00';d.getElementById('social-checklist-form').dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await x.settle();assert.equal(w.TraubeSocial.getState().checklist.length,1);assert.equal(w.TraubeSocial.getState().checklist[0].duration_minutes,25);
+ await w.TraubeSocial.command('session_start',{room_id:created.id,mode:'together'});await w.TraubeSocial.command('quiz_start',{room_id:created.id,set_id:SET,duration:90});await w.TraubeSocial.enter({room_id:created.id});await x.settle();
+ d.querySelector('[data-answer="B"]').click();await x.settle();assert.equal(w.TraubeSocial.getState().quiz.my_choice,null);assert.equal(d.getElementById('social-answer-submit').disabled,false);
+ d.getElementById('social-answer-submit').click();await x.settle();assert.equal(w.TraubeSocial.getState().quiz.my_choice,'B');assert(w.TraubeSocial.getState().quiz.revealed_at);await f.as(A);assert.equal((await f.snapshot(created.id)).quiz.answer,'B');
+ await w.TraubeSocial.leave();assert.deepEqual(x.errors,[]);
 });
 test('social UI preserves failed drafts and isolates them by account and room',async t=>{
- const x=await fixture(t),{w,d}=x;const created=await w.LuriaSocial.command('create_room',{name:'Revisão',visibility:'private'});await w.LuriaSocial.enter({room_id:created.id});
+ const x=await fixture(t),{w,d}=x;const created=await w.TraubeSocial.command('create_room',{name:'Revisão',visibility:'private'});await w.TraubeSocial.enter({room_id:created.id});
  const input=d.getElementById('social-message-text');input.value='Mensagem importante';input.dispatchEvent(new w.Event('input',{bubbles:true}));x.fail(true);
  d.getElementById('social-message-form').dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();assert.equal(input.value,'Mensagem importante');assert.match(d.getElementById('social-send-status').textContent,/rascunho/);
  x.fail(false);d.getElementById('social-message-form').dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();
  const sends=x.calls.filter(c=>c.name==='social_command'&&c.args.p_action==='send_message');assert.equal(sends.length,2);assert.equal(sends[0].args.p_payload.client_id,sends[1].args.p_payload.client_id);assert.equal(input.value,'');
- w.LuriaLocalOwnerStore={ownerId:B};w.dispatchEvent(new w.Event('luria:owner-changed'));await x.settle();assert.equal(w.LuriaSocial.getState(),null);assert.equal(d.getElementById('social-messages').textContent,'');
+ w.TraubeLocalOwnerStore={ownerId:B};w.dispatchEvent(new w.Event('luria:owner-changed'));await x.settle();assert.equal(w.TraubeSocial.getState(),null);assert.equal(d.getElementById('social-messages').textContent,'');
 });
 
 test('visual mode controls and modal agenda preserve the room channel and confirmed persisted state',async t=>{
- const x=await fixture(t),{w,d}=x;const created=await w.LuriaSocial.command('create_room',{name:'Sala de revisão visual',visibility:'private'});await w.LuriaSocial.enter({room_id:created.id});
- const count=x.channels.length;let voiceLeaves=0;w.LuriaVoice.leave=async()=>{voiceLeaves++;};
+ const x=await fixture(t),{w,d}=x;const created=await w.TraubeSocial.command('create_room',{name:'Sala de revisão visual',visibility:'private'});await w.TraubeSocial.enter({room_id:created.id});
+ const count=x.channels.length;let voiceLeaves=0;w.TraubeVoice.leave=async()=>{voiceLeaves++;};
  assert.equal(d.body.classList.contains('social-in-room'),true);assert.equal(d.querySelector('.social-chat .social-voice'),null);
- d.querySelector('[data-study-mode="focus"]').click();await x.settle();assert.equal(w.LuriaSocial.getState().room.mode,'focus');assert.equal(d.getElementById('social-room').dataset.mode,'focus');assert.equal(x.channels.length,count);assert.equal(voiceLeaves,0);
+ d.querySelector('[data-study-mode="focus"]').click();await x.settle();assert.equal(w.TraubeSocial.getState().room.mode,'focus');assert.equal(d.getElementById('social-room').dataset.mode,'focus');assert.equal(x.channels.length,count);assert.equal(voiceLeaves,0);
  d.querySelector('[data-open-dialog="social-agenda-dialog"]').click();assert.equal(d.getElementById('social-agenda-dialog').open,true);
- d.getElementById('social-checklist-text').value='Revisar atividade';d.getElementById('social-checklist-form').dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();assert.equal(d.getElementById('social-agenda-dialog').open,false);assert.equal(w.LuriaSocial.getState().checklist.length,1);
+ d.getElementById('social-checklist-text').value='Revisar atividade';d.getElementById('social-checklist-form').dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();assert.equal(d.getElementById('social-agenda-dialog').open,false);assert.equal(w.TraubeSocial.getState().checklist.length,1);
  d.querySelector('[data-agenda-edit]').click();await x.settle();assert.equal(d.getElementById('social-agenda-dialog').open,true);assert.equal(d.getElementById('social-checklist-text').value,'Revisar atividade');
- w.LuriaSocialView.close('social-agenda-dialog');d.getElementById('social-session-start').click();await x.settle();assert.equal(w.LuriaSocial.getState().session.mode,'focus');assert.equal(d.querySelector('[data-study-mode="review"]').disabled,true);assert.equal(x.channels.length,count);assert.equal(voiceLeaves,0);
+ w.TraubeSocialView.close('social-agenda-dialog');d.getElementById('social-session-start').click();await x.settle();assert.equal(w.TraubeSocial.getState().session.mode,'focus');assert.equal(d.querySelector('[data-study-mode="review"]').disabled,true);assert.equal(x.channels.length,count);assert.equal(voiceLeaves,0);
  d.getElementById('social-chat-toggle').click();assert.equal(d.getElementById('social-chat-toggle').getAttribute('aria-expanded'),'true');
  d.getElementById('social-leave').click();await x.settle();assert.equal(d.body.classList.contains('social-in-room'),false);assert.deepEqual(x.errors,[]);
 });
 
 test('room music shares only Jam links without an embedded player',async t=>{
- const x=await fixture(t),{w,d}=x;const created=await w.LuriaSocial.command('create_room',{name:'Jam da turma',visibility:'private'});await w.LuriaSocial.enter({room_id:created.id});
+ const x=await fixture(t),{w,d}=x;const created=await w.TraubeSocial.command('create_room',{name:'Jam da turma',visibility:'private'});await w.TraubeSocial.enter({room_id:created.id});
  assert.equal(d.getElementById('social-spotify-form'),null);assert.equal(d.querySelector('.sv-music iframe'),null);
  d.getElementById('social-jam-url').value='https://spotify.link/abc123';d.getElementById('social-jam-form').dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();
  assert.equal(d.querySelector('#social-jam a').href,'https://spotify.link/abc123');
  d.querySelector('[data-study-mode="review"]').click();await x.settle();assert.equal(d.querySelector('#social-jam a').href,'https://spotify.link/abc123');
- await w.LuriaSocial.leave();assert.match(d.getElementById('social-jam-wall').textContent,/Jam da turma/);assert.equal(d.querySelector('#social-jam-wall a').href,'https://spotify.link/abc123');await w.LuriaSocial.enter({room_id:created.id});
+ await w.TraubeSocial.leave();assert.match(d.getElementById('social-jam-wall').textContent,/Jam da turma/);assert.equal(d.querySelector('#social-jam-wall a').href,'https://spotify.link/abc123');await w.TraubeSocial.enter({room_id:created.id});
  d.getElementById('social-jam-clear').click();await x.settle();assert.equal(d.querySelector('#social-jam a'),null);
- await w.LuriaSocial.leave();assert.deepEqual(x.errors,[]);
+ await w.TraubeSocial.leave();assert.deepEqual(x.errors,[]);
 });
 
 test('social UI sends invitations, renders real groups and filters existing friends without inventing presence',async t=>{
  const x=await fixture(t),{w,d}=x;
  d.getElementById('friend-id-input').value='FRIEND02';d.getElementById('add-friend').click();await x.settle();assert.match(d.getElementById('social-requests').textContent,/Aguardando aceite/);assert.doesNotMatch(d.getElementById('friends-list').textContent,/Bruno/);
  d.getElementById('friends-search').value='Nome inexistente';d.getElementById('friends-search').dispatchEvent(new w.Event('input'));assert.match(d.getElementById('friends-list').textContent,/Nenhum amigo encontrado/);
- await w.LuriaSocial.command('create_group',{name:'Clínica médica',area:'Medicina',objective:'Revisar toda semana'});await w.LuriaSocial.refreshSocial();assert.match(d.getElementById('social-groups').textContent,/Clínica médica/);assert.equal(d.getElementById('social-room-group').options.length,2);assert.deepEqual(x.errors,[]);
+ await w.TraubeSocial.command('create_group',{name:'Clínica médica',area:'Medicina',objective:'Revisar toda semana'});await w.TraubeSocial.refreshSocial();assert.match(d.getElementById('social-groups').textContent,/Clínica médica/);assert.equal(d.getElementById('social-room-group').options.length,2);assert.deepEqual(x.errors,[]);
 });
 test('rat catalog restores the server-supported original ears accessory and keeps both offset formats',async t=>{
  const {w}=await fixture(t);const ears=w.sharedStudyratAccessory('mouse-ears');assert.equal(ears.id,'mouse-ears');assert.match(ears.src,/mouse-ears-headband\.webp/);
- w.LuriaEntitlements={enabled:()=>true};let stored={x:7.2,y:5,v:1};
+ w.TraubeEntitlements={enabled:()=>true};let stored={x:7.2,y:5,v:1};
  w.supabaseClient.from=()=>({select(){return this;},eq(){return this;},maybeSingle:async()=>({data:{studyrat_variant:'blue',studyrat_accessory:'mouse-ears',studyrat_accessory_offsets:{'mouse-ears':stored}},error:null})});
  await w.sharedStudyratsLoadMyVariant();let offset=w.sharedStudyratsCurrentAccessoryOffset('mouse-ears');assert.equal(offset.x,.1);assert.equal(offset.y,.1);
  stored={x:.3,y:-.2,v:2};await w.sharedStudyratsLoadMyVariant();offset=w.sharedStudyratsCurrentAccessoryOffset('mouse-ears');assert.equal(offset.x,.3);assert.equal(offset.y,-.2);
 });
 
 test('leaving for the hall stops voice before releasing participation and tab navigation exits the room',async t=>{
- const x=await fixture(t),{w,d}=x;const created=await w.LuriaSocial.command('create_room',{name:'Saída da chamada',visibility:'private'});await w.LuriaSocial.enter({room_id:created.id});
- let stopped=false,resolveVoice;w.LuriaVoice.leave=()=>{stopped=true;return new Promise(resolve=>{resolveVoice=resolve;});};
+ const x=await fixture(t),{w,d}=x;const created=await w.TraubeSocial.command('create_room',{name:'Saída da chamada',visibility:'private'});await w.TraubeSocial.enter({room_id:created.id});
+ let stopped=false,resolveVoice;w.TraubeVoice.leave=()=>{stopped=true;return new Promise(resolve=>{resolveVoice=resolve;});};
  const before=x.calls.filter(c=>c.args?.p_action==='leave_room').length;
  d.getElementById('community-tab-rooms').click();assert.equal(stopped,true);assert.equal(d.getElementById('social-room').hidden,true);assert.equal(x.calls.filter(c=>c.args?.p_action==='leave_room').length,before);
- w.LuriaVoice.leave=async()=>{};resolveVoice();await x.settle();assert.equal(w.LuriaSocial.getState(),null);assert.equal(x.calls.filter(c=>c.args?.p_action==='leave_room').length,before+1);assert.equal(w.location.hash,'#community-rooms');
- await w.LuriaSocial.enter({room_id:created.id});d.getElementById('community-tab-friends').click();await x.settle();assert.equal(w.LuriaSocial.getState(),null);assert.equal(w.location.hash,'#community-friends');assert.deepEqual(x.errors,[]);
+ w.TraubeVoice.leave=async()=>{};resolveVoice();await x.settle();assert.equal(w.TraubeSocial.getState(),null);assert.equal(x.calls.filter(c=>c.args?.p_action==='leave_room').length,before+1);assert.equal(w.location.hash,'#community-rooms');
+ await w.TraubeSocial.enter({room_id:created.id});d.getElementById('community-tab-friends').click();await x.settle();assert.equal(w.TraubeSocial.getState(),null);assert.equal(w.location.hash,'#community-friends');assert.deepEqual(x.errors,[]);
 });
 
 test('friends stage opens the original invitation flow in a dialog and navigates three areas by keyboard',async t=>{
@@ -115,24 +115,24 @@ test('friends stage opens the original invitation flow in a dialog and navigates
 });
 
 test('group cards use real members, searchable names and the existing history and member operations',async t=>{
- const x=await fixture(t),{w,d}=x;const g=await w.LuriaSocial.command('create_group',{name:'Cardio <teste>',area:'Clínica médica',objective:'Revisar diretrizes'});await w.LuriaSocial.refreshSocial();
+ const x=await fixture(t),{w,d}=x;const g=await w.TraubeSocial.command('create_group',{name:'Cardio <teste>',area:'Clínica médica',objective:'Revisar diretrizes'});await w.TraubeSocial.refreshSocial();
  d.getElementById('community-tab-groups').click();const card=d.querySelector('.sg-card');assert.match(card.textContent,/Cardio <teste>/);assert.equal(card.querySelector('teste'),null);assert.match(card.textContent,/1 membro/);
  const search=d.getElementById('sg-search');search.value='Outro';search.dispatchEvent(new w.Event('input'));await x.settle();assert.equal(card.hidden,true);assert.equal(d.getElementById('sg-search-empty').hidden,false);
  search.value='Cardio';search.dispatchEvent(new w.Event('input'));await x.settle();assert.equal(card.hidden,false);card.querySelector('details').open=true;
  card.querySelector('[data-group-members]').click();await x.settle();assert.match(d.getElementById('social-group-members-'+g.id).textContent,/Administrador/);assert(x.calls.some(c=>c.args?.p_action==='group_members'));
  card.querySelector('[data-group-history]').click();await x.settle();assert.match(d.getElementById('social-group-members-'+g.id).textContent,/Nenhuma sessão/);
- await w.LuriaSocial.refreshSocial();assert.equal(d.querySelector('.sg-details').open,true);assert.deepEqual(x.errors,[]);
+ await w.TraubeSocial.refreshSocial();assert.equal(d.querySelector('.sg-details').open,true);assert.deepEqual(x.errors,[]);
 });
 
 test('saved rat appearance stays consistent across preview and race even when item changes are locked',async t=>{
- const {w,d}=await fixture(t);w.LuriaEntitlements={enabled:()=>false};w.supabaseClient.from=()=>({select(){return this;},eq(){return this;},maybeSingle:async()=>({data:{studyrat_variant:'pink',studyrat_accessory:'wizard-hat',studyrat_accessory_offsets:{'wizard-hat':{x:.12,y:-.08,v:2}}},error:null})});
+ const {w,d}=await fixture(t);w.TraubeEntitlements={enabled:()=>false};w.supabaseClient.from=()=>({select(){return this;},eq(){return this;},maybeSingle:async()=>({data:{studyrat_variant:'pink',studyrat_accessory:'wizard-hat',studyrat_accessory_offsets:{'wizard-hat':{x:.12,y:-.08,v:2}}},error:null})});
  await w.sharedStudyratsLoadMyVariant();const grouped=w.sharedStudyratsGroup([{challenge_id:'test',participant_user_id:A,participant_name:'Ana',studyrat_variant:'brown',progress:0}]);const rat=grouped[0].participants[0];assert.equal(rat.variant,'pink');assert.equal(rat.accessory,'wizard-hat');assert.equal(rat.accessoryX,.12);assert.equal(rat.accessoryY,-.08);assert.match(d.getElementById('studyrats-home-preview-stage').innerHTML,/ratinho_rosa_choque/);
  await w.sharedStudyratsSaveVariant('green');assert.match(d.getElementById('studyrats-home-preview-stage').innerHTML,/ratinho_rosa_choque/);
 });
 
 test('room design keeps grouped form validation and real group creation without unavailable activities',async t=>{
  const x=await fixture(t),{w,d}=x;d.getElementById('social-group-create').click();await x.settle();const form=d.getElementById('social-dialog-form');assert.equal(form.elements.name.disabled,false);assert.equal(form.elements.description.disabled,false);assert.equal(form.elements.area.disabled,false);assert.equal(form.elements.capacity.disabled,true);form.elements.name.value='Grupo do formulário';form.dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();assert.match(d.getElementById('social-groups').textContent,/Grupo do formulário/);
- d.getElementById('friends-create-room-toggle').click();await x.settle();assert.equal(form.elements.capacity.disabled,false);form.elements.name.value='Sala do formulário';form.elements.mode.value='focus';form.dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();assert.equal(w.LuriaSocial.getState().room.mode,'focus');assert.equal(d.querySelectorAll('[data-study-mode]').length,4);assert.equal(d.querySelectorAll('[data-study-mode="flashcards"],[data-study-mode="simulation"]').length,0);await w.LuriaSocial.leave();assert.equal(d.querySelector('.sl-room-card').dataset.roomMode,'focus');assert.match(d.querySelector('.sl-room-cover').textContent,/Foco/);assert.deepEqual(x.errors,[]);
+ d.getElementById('friends-create-room-toggle').click();await x.settle();assert.equal(form.elements.capacity.disabled,false);form.elements.name.value='Sala do formulário';form.elements.mode.value='focus';form.dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();assert.equal(w.TraubeSocial.getState().room.mode,'focus');assert.equal(d.querySelectorAll('[data-study-mode]').length,4);assert.equal(d.querySelectorAll('[data-study-mode="flashcards"],[data-study-mode="simulation"]').length,0);await w.TraubeSocial.leave();assert.equal(d.querySelector('.sl-room-card').dataset.roomMode,'focus');assert.match(d.querySelector('.sl-room-cover').textContent,/Foco/);assert.deepEqual(x.errors,[]);
 });
 
 test('compact viewport updates preserve the chat draft and composer through keyboard resize',async t=>{

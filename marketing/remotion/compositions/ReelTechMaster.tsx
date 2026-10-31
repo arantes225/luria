@@ -181,7 +181,7 @@ export const ReelTechMaster: React.FC = () => {
         })()}
       </Sequence>
 
-      {/* SCENE 2: APRENDA & LURIAZAP (Frames 270 to 445) */}
+      {/* SCENE 2: APRENDA & TRAUBEZAP (Frames 270 to 445) */}
       <Sequence from={270} durationInFrames={175}>
         {(() => {
           const localFrame = frame - 270;

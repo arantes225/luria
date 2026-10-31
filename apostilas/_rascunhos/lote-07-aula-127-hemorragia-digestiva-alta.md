@@ -1,4 +1,4 @@
-# LURIA — LOTE 07 | AULA 127
+# TRAUBE — LOTE 07 | AULA 127
 # Hemorragia Digestiva Alta: abordagem por síndrome, etiologia e risco
 
 **Área:** Cirurgia Geral / Gastroenterologia / Emergência  
@@ -10,7 +10,7 @@
 
 ## 0. Etapa zero: fontes de comparação realmente lidas e limites
 
-**Inventário LURIA:** não havia diretório específico desta apostila na listagem nominal disponível em 14/10/2026. Houve criação de conteúdo sobre cirrose na aula 126 como referência correlata, mas não um texto autossuficiente de HDA. Evitar publicação de versão com terapêutica repetitiva e divergente.
+**Inventário TRAUBE:** não havia diretório específico desta apostila na listagem nominal disponível em 14/10/2026. Houve criação de conteúdo sobre cirrose na aula 126 como referência correlata, mas não um texto autossuficiente de HDA. Evitar publicação de versão com terapêutica repetitiva e divergente.
 
 **Benchmarks lidos no Google Drive:**
 - “06 - GASTRO - HDA E SINDROME HEPATOPULMONAR.pdf”, aproximadamente 6,7 mil caracteres. Foco quase exclusivo em HDA varicosa, compressão esplâncnica, profilaxia, ligadura e TIPS, associado a capítulo de síndrome hepatopulmonar. Traz simplificações como “betabloqueador para todos com hipertensão portal” sem abordar contraindicações, hipotensão ou decisão por HPCS em contexto específico.

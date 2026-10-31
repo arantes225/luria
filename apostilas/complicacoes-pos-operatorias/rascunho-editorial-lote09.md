@@ -1,14 +1,14 @@
-# LURIA — Aula 177 | Complicações pós-operatórias
+# TRAUBE — Aula 177 | Complicações pós-operatórias
 
 **Área:** Cirurgia Geral · Perioperatório · Cirurgia Colorretal · Terapia Intensiva · Segurança do Paciente  
 **Lote 09 — Aula 177 de 180 | Versão editorial 15/10/2026**  
-**Status:** rascunho médico-científico autoral, não submetido a revisão clínica independente, não inserido no renderizador PWA da LURIA.
+**Status:** rascunho médico-científico autoral, não submetido a revisão clínica independente, não inserido no renderizador PWA da TRAUBE.
 
 **Referências de alta prioridade verificadas em 15/10/2026:** ANVISA — Nota Técnica GVIMS/GGTES/DIRE3 nº 03/2026, republicada em 14/07/2026 (critérios de IRAS); Protocolo 2 de Prevenção de Infecção de Sítio Cirúrgico publicado em 28/01/2026; ERAS Society 2025 para cirurgia colorretal; Surgical Infection Society 2024 para infecção intra-abdominal; consenso francês de fístula de anastomose baixa 2025; AHA/ACC 2024 de manejo cardiovascular perioperatório, reafirmada válida na página profissional da AHA em 2026; ASH 2021 para tromboprofilaxia em cirurgia oncológica.
 
 **Limite curricular:** a aula 172 cobre princípios de oncologia cirúrgica, incluindo prevenção de complicações. A aula 177 aprofunda **reconhecimento, diagnóstico diferencial, estratificação de gravidade e conduta diante de complicações já instaladas**. A aula 161 trata de sepse sistêmica e choque séptico, com algoritmos complementares; a aula 173 detalha urgências pediátricas, sem transposição automática de doses adultas.
 
-> **Pulo do Gato LURIA:** No pós-operatório, **taquicardia persistente inexplicada é um sinal de alarme**, muitas vezes antes de febre, hipotensão ou peritonite. Diante de deterioração, priorize **ABCDE, hemorragia, sepse com foco não controlado, tromboembolismo, isquemia miocárdica e insuficiência respiratória**. A frase “é só resposta inflamatória da cirurgia” só é defensável depois de avaliar gravidade e causas perigosas.
+> **Pulo do Gato TRAUBE:** No pós-operatório, **taquicardia persistente inexplicada é um sinal de alarme**, muitas vezes antes de febre, hipotensão ou peritonite. Diante de deterioração, priorize **ABCDE, hemorragia, sepse com foco não controlado, tromboembolismo, isquemia miocárdica e insuficiência respiratória**. A frase “é só resposta inflamatória da cirurgia” só é defensável depois de avaliar gravidade e causas perigosas.
 
 **Nota de segurança:** não aplicar algoritmos deste rascunho como prescrição autônoma. Antibióticos, anticoagulação, exames contrastados, manejo de feridas e reoperações dependem de avaliação cirúrgica imediata, procedimentos realizados, estabilidade, função renal/hepática e protocolo hospitalar. Quando há peritonite, choque, evisceração, isquemia ou hemorragia ativa, exames não devem atrasar ressuscitação e controle de foco.
 
@@ -506,7 +506,7 @@ As complicações não terminam na porta do hospital: ISC tardia, TEV, desidrata
 
 **Consulta de retorno** deve abordar patologia cirúrgica, ferida/drenos, medicamentos, dieta/estoma, mobilidade e próximos passos oncológicos quando houver. Um paciente de alto risco sem transporte/contato precisa de plano de seguimento mais seguro.
 
-## 24. Algoritmos LURIA de conduta
+## 24. Algoritmos TRAUBE de conduta
 
 ### A. Taquicardia e deterioração pós-operatória
 Repetir sinais, perfusão, dor, consciência e SpO₂ → ABCDE, ECG, glicemia e acesso → procurar **hemorragia, sepse/fístula, TEP, IAM, hipoxemia e distúrbio metabólico** → instabilidade/peritonite/sangramento ativo? ressuscitar e equipe para procedimento imediato → estável? exames orientados (hemograma, lactato, TC abdomen/pelve, angio-TC pulmonar, troponina/ECG, etc.) → reavaliar em minutos e documentar plano.
@@ -621,7 +621,7 @@ Abertura fascial/viscera exposta → equipe cirúrgica urgente, jejum e acesso �
 - [x] Curadoria planejada de 22 imagens/diagramas — seção 30; licenças/WebP ainda pendentes.
 - [ ] Revisão independente por cirurgião geral, cirurgião colorretal e infectologista/CCIH, com conferência de medicamentos.
 - [ ] Checar precisão de cada classificação, escala e possível divergência da literatura.
-- [ ] Converter para HTML/content.json nativo LURIA e integrar ao cronograma.
+- [ ] Converter para HTML/content.json nativo TRAUBE e integrar ao cronograma.
 - [ ] Verificar desktop/PWA, acessibilidade, links e revisão editorial final.
 
 **Este conteúdo não se destina a prescrição ou decisão cirúrgica sem supervisão e protocolos locais.**
@@ -829,7 +829,7 @@ Os 14 casos abaixo são **inteiramente fictícios e autorais**. O objetivo é si
 
 
 
-## 29. Questões autorais LURIA — 22 problemas de conduta e segurança
+## 29. Questões autorais TRAUBE — 22 problemas de conduta e segurança
 
 As 22 questões abaixo são autorais, em estilo internato/ENAMED/residência, com **comentário para cada alternativa** e mini-revisão. Os cenários são hipotéticos, sem pacientes reais; doses e condutas dependem de elegibilidade e protocolo.
 
@@ -1332,13 +1332,13 @@ As 22 questões abaixo são autorais, em estilo internato/ENAMED/residência, co
 2. Excluir nome, data de nascimento, prontuário, hospital e metadados identificáveis de pessoas em exames.
 3. Conferir lado anatômico, janela de TC, setas e legendas com radiologista/cirurgião.
 4. Não criar exames radiológicos artificiais e chamá-los de casos reais; usar esquemas desenhados e rotulados quando imagem legítima não estiver disponível.
-5. Otimizar em WebP preservando a anatomia, com limite conforme tipo de imagem definido na LURIA; não prejudicar leitura por compressão agressiva.
-6. Testar contraste e legibilidade em tema azul/branco/escuro da LURIA e no PWA.
+5. Otimizar em WebP preservando a anatomia, com limite conforme tipo de imagem definido na TRAUBE; não prejudicar leitura por compressão agressiva.
+6. Testar contraste e legibilidade em tema azul/branco/escuro da TRAUBE e no PWA.
 7. Fornecer legenda que responda pergunta clínica e texto alternativo acessível.
 8. Submeter à fila de aprovação do Admin e registrar procedência, revisão e versão de diretriz quando aplicável.
 9. Não inferir aprovação/publicação de imagem a partir de criação de rascunho Markdown.
 
-## 31. Integração com outros módulos LURIA
+## 31. Integração com outros módulos TRAUBE
 
 **Aula 161 — Sepse e choque séptico:** aprofundar triagem de disfunção orgânica, vasopressores, antimicrobianos e ressuscitação. Esta aula 177 cobre o que o cirurgião precisa acrescentar: **controle do foco, anatomia e reoperação**.  
 **Aula 162 — Nódulos e câncer de tireoide:** complementa risco de hipocalcemia, hematoma cervical compressivo e paralisia de nervo recorrente.  
@@ -1397,7 +1397,7 @@ As 22 questões abaixo são autorais, em estilo internato/ENAMED/residência, co
 - [ ] Checagem de fontes nacionais específicas por procedimento, atualizações de IRAS e resistência local.
 - [ ] Verificar cada questão e cenário frente a protocolos brasileiros e condições de acesso.
 - [ ] Produzir ou licenciar, legendar, comprimir e aprovar as 22 imagens candidatas.
-- [ ] Converter o Markdown para **HTML/content.json nativo da LURIA** com índice navegável, crosslinks, imagens reais e resolução de exercícios.
+- [ ] Converter o Markdown para **HTML/content.json nativo da TRAUBE** com índice navegável, crosslinks, imagens reais e resolução de exercícios.
 - [ ] Testar desktop/PWA, acessibilidade, imagens e navegação.
 - [ ] Registrar revisão científica com responsável, data e versão. Um commit no GitHub não prova validação assistencial.
 

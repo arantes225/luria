@@ -124,7 +124,7 @@ test("Quick kits keep alphabetical order and patient entry inside cards", () => 
 
 test("All 170 additional exams belong to 17 unique areas and avoid generic reference limits", () => {
   const dom = openTool();
-  const base=dom.window.LURIA_EXAM_CATALOG,extra=dom.window.LURIA_EXAM_EXTRA_CATALOG;
+  const base=dom.window.TRAUBE_EXAM_CATALOG,extra=dom.window.TRAUBE_EXAM_EXTRA_CATALOG;
   const combined=[...base,...extra];
   assert.equal(base.length,20);
   assert.equal(extra.length,17);
@@ -172,8 +172,8 @@ test("Newly added groups are filterable and remain alphabetical", () => {
 });
 
 test("All 423 cards provide complete clinical education without invented new numeric ranges", () => {
-  const dom=openTool(), d=dom.window.document, metadata=dom.window.LURIA_EXAM_DETAILS;
-  const all=[...dom.window.LURIA_EXAM_CATALOG,...dom.window.LURIA_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
+  const dom=openTool(), d=dom.window.document, metadata=dom.window.TRAUBE_EXAM_DETAILS;
+  const all=[...dom.window.TRAUBE_EXAM_CATALOG,...dom.window.TRAUBE_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
   assert.equal(Object.keys(metadata).length,423);
   assert.equal(d.querySelectorAll(".ex-test.ex-card .ex-test-details").length,423);
   assert.ok(all.every(t=>metadata[t.id]&&["purpose","sample","interpretation","caution","sourceLabel","sourceUrl","referencePolicy","unitPolicy"].every(k=>typeof metadata[t.id][k]==="string"&&metadata[t.id][k].trim().length>5)));
@@ -248,7 +248,7 @@ test("Second audit rejects invalid and negative lab values before clinical infer
 
 test("Second audit provides method-appropriate options and descriptive assay reports",()=>{
   const dom=openTool(),d=dom.window.document;
-  const all=[...dom.window.LURIA_EXAM_CATALOG,...dom.window.LURIA_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
+  const all=[...dom.window.TRAUBE_EXAM_CATALOG,...dom.window.TRAUBE_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
   const named=n=>all.find(t=>t.name===n);
   assert.equal(named("Anti-HBs").kind,"text");
   assert.equal(named("IGRA para tuberculose").kind,"text");
@@ -274,13 +274,13 @@ test("Second audit adds gestational glucose context without diagnosing from isol
 });
 
 test("Every one of 423 exams has distinct authored clinical purpose and interpretation",()=>{
-  const dom=openTool(),d=dom.window.document,metadata=dom.window.LURIA_EXAM_DETAILS,audit=dom.window.LURIA_EXAM_CONTENT_AUDIT;
+  const dom=openTool(),d=dom.window.document,metadata=dom.window.TRAUBE_EXAM_DETAILS,audit=dom.window.TRAUBE_EXAM_CONTENT_AUDIT;
   assert.deepEqual([audit.total,audit.filled,audit.missing.length],[423,423,0]);
-  const items=[...dom.window.LURIA_EXAM_CATALOG,...dom.window.LURIA_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
+  const items=[...dom.window.TRAUBE_EXAM_CATALOG,...dom.window.TRAUBE_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
   assert.equal(new Set(items.map(t=>t.id)).size,423);
-  assert.equal(Object.keys(dom.window.LURIA_EXAM_CURATED).length,423);
+  assert.equal(Object.keys(dom.window.TRAUBE_EXAM_CURATED).length,423);
   for(const t of items){
-    const m=metadata[t.id],curated=dom.window.LURIA_EXAM_CURATED[t.id];
+    const m=metadata[t.id],curated=dom.window.TRAUBE_EXAM_CURATED[t.id];
     assert.ok(m&&m.contentReviewed,t.id);
     assert.equal(m.purpose,curated.purpose,t.id);
     assert.equal(m.interpretation,curated.interpretation,t.id);
@@ -292,10 +292,10 @@ test("Every one of 423 exams has distinct authored clinical purpose and interpre
 });
 
 test("Specific validated reference notes are displayed without fabricating reference limits",()=>{
-  const dom=openTool(),d=dom.window.document,audit=dom.window.LURIA_EXAM_CONTENT_AUDIT;
+  const dom=openTool(),d=dom.window.document,audit=dom.window.TRAUBE_EXAM_CONTENT_AUDIT;
   assert.equal(audit.filled,423);
   const tests=[["Glicemia em jejum",/100.125/],["TFG estimada",/G3a/],["VDRL",/titula/],["Escore de Nugent em secreção vaginal",/0.3/]];
-  const all=[...dom.window.LURIA_EXAM_CATALOG,...dom.window.LURIA_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
+  const all=[...dom.window.TRAUBE_EXAM_CATALOG,...dom.window.TRAUBE_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
   for(const [name,regex] of tests){
     const exam=all.find(t=>t.name===name),node=d.querySelector('[data-row="'+exam.id+'"] .ex-clinical-reference');
     assert.ok(node,name);
@@ -306,7 +306,7 @@ test("Specific validated reference notes are displayed without fabricating refer
 });
 
 test("Preanalytical fields exist for all 423 exams and distinguish specific from area guidance",()=>{
-  const dom=openTool(),d=dom.window.document,meta=dom.window.LURIA_EXAM_DETAILS,audit=dom.window.LURIA_EXAM_PREANALYTIC_AUDIT;
+  const dom=openTool(),d=dom.window.document,meta=dom.window.TRAUBE_EXAM_DETAILS,audit=dom.window.TRAUBE_EXAM_PREANALYTIC_AUDIT;
   assert.equal(audit.total,423);
   assert.equal(audit.specific+audit.general,423);
   assert.equal(audit.specific,423);
@@ -325,8 +325,8 @@ test("Preanalytical fields exist for all 423 exams and distinguish specific from
 
 test("Specimen and collection guidance distinguish calculated, noninvasive and specialized tests",()=>{
   const dom=openTool(),d=dom.window.document;
-  const all=[...dom.window.LURIA_EXAM_CATALOG,...dom.window.LURIA_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
-  const find=name=>{const t=all.find(t=>t.name===name);assert.ok(t,name);return dom.window.LURIA_EXAM_DETAILS[t.id];};
+  const all=[...dom.window.TRAUBE_EXAM_CATALOG,...dom.window.TRAUBE_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
+  const find=name=>{const t=all.find(t=>t.name===name);assert.ok(t,name);return dom.window.TRAUBE_EXAM_DETAILS[t.id];};
   assert.match(find("TFG estimada").sample,/calculado/i);
   assert.match(find("FiO₂").sample,/não é exame sanguíneo/i);
   assert.match(find("Cortisol salivar noturno").sample,/saliva/i);
@@ -350,16 +350,16 @@ test("Preanalytical source and overrides loaded on both pages before clinical de
 
 test("All 172 previously general exam preanalytics now use individual records",()=>{
   const dom=openTool(),d=dom.window.document;
-  const extra=dom.window.LURIA_EXAM_PREANALYTIC_EXTRA||{};
-  const old=dom.window.LURIA_EXAM_PREANALYTIC?.exams||{};
+  const extra=dom.window.TRAUBE_EXAM_PREANALYTIC_EXTRA||{};
+  const old=dom.window.TRAUBE_EXAM_PREANALYTIC?.exams||{};
   const names=Object.keys(extra);
   assert.equal(names.length,172);
   assert.equal(new Set(names).size,172);
   assert.ok(names.every(n=>!Object.hasOwn(old,n)));
-  const catalog=[...dom.window.LURIA_EXAM_CATALOG,...dom.window.LURIA_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
+  const catalog=[...dom.window.TRAUBE_EXAM_CATALOG,...dom.window.TRAUBE_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
   assert.ok(names.every(n=>catalog.some(t=>t.name===n)));
   assert.equal(Object.keys(old).length+names.length,423);
-  const byName=n=>{const exam=catalog.find(e=>e.name===n);assert.ok(exam,n);return dom.window.LURIA_EXAM_DETAILS[exam.id];};
+  const byName=n=>{const exam=catalog.find(e=>e.name===n);assert.ok(exam,n);return dom.window.TRAUBE_EXAM_DETAILS[exam.id];};
   for(const n of names){
     const meta=byName(n);
     assert.deepEqual(Array.from(meta.preanalyticalSpecificFields).sort(),["interference","method","preparation","sample"],n);
@@ -394,14 +394,14 @@ test("The extra preanalytics scripts load after base and before clinical detail 
 
 test("602 distinct exam names were added only as pending registry; 423 interpreted tests stay intact",()=>{
  const dom=openTool(),d=dom.window.document;
- const pending=dom.window.LURIA_EXAM_PENDING_CATALOG;
- const audit=dom.window.LURIA_EXAM_PENDING_AUDIT;
+ const pending=dom.window.TRAUBE_EXAM_PENDING_CATALOG;
+ const audit=dom.window.TRAUBE_EXAM_PENDING_AUDIT;
  assert.equal(audit.raw,602);
  assert.equal(audit.added,602);
  assert.equal(audit.skipped.length,0);
  assert.equal(pending.length,602);
  const normalize=x=>x.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("pt-BR").replace(/[^\p{L}\p{N}]+/gu," ").trim();
- const old=[...dom.window.LURIA_EXAM_CATALOG,...dom.window.LURIA_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
+ const old=[...dom.window.TRAUBE_EXAM_CATALOG,...dom.window.TRAUBE_EXAM_EXTRA_CATALOG].flatMap(g=>g.tests);
  assert.equal(old.length,423);
  const names=[...old.map(t=>t.name),...pending.map(t=>t.name)];
  assert.equal(new Set(names.map(normalize)).size,1025);

@@ -1,4 +1,4 @@
--- LURIA 3.4 — Perplexity initial review-only persistence
+-- TRAUBE 3.4 — Perplexity initial review-only persistence
 -- Applied to Studyos on 2026-09-24.
 --
 -- Guarantees:

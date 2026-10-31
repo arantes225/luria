@@ -4,7 +4,7 @@ import path from 'path';
 // Script para verificar e buscar substitutas válidas no Wikimedia Commons
 // para as imagens candidatas que retornaram 404.
 
-const USER_AGENT = 'LuriaBot/1.0 (editorial@luria.med.br)';
+const USER_AGENT = 'TraubeBot/1.0 (editorial@luria.med.br)';
 
 async function checkUrl(url) {
   try {

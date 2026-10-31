@@ -33,7 +33,7 @@ export const ReelStudyRats: React.FC = () => {
     moduleName = 'STUDY_RATS // METAS_REAIS';
     activeStep = 2;
   } else {
-    moduleName = 'LURIA // CONSOLIDE';
+    moduleName = 'TRAUBE // CONSOLIDE';
     activeStep = 3;
   }
 

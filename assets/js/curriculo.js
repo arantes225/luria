@@ -1,8 +1,8 @@
 (() => {
   'use strict';
-  const core = window.LuriaCurriculo;
-  const pdfSupport = window.LuriaCurriculoPdf;
-  const rubrics = window.LuriaCurriculoRubricas || [];
+  const core = window.TraubeCurriculo;
+  const pdfSupport = window.TraubeCurriculoPdf;
+  const rubrics = window.TraubeCurriculoRubricas || [];
   const $ = id => document.getElementById(id);
   const form = $('cv-form');
   const curriculumPanel = $('cv-curriculum-panel');
@@ -479,7 +479,7 @@
     if (!userId || busy) return;
     busy = true;
     try {
-      await window.LuriaLazyVendors.ensure('jspdf');
+      await window.TraubeLazyVendors.ensure('jspdf');
       if (!window.jspdf?.jsPDF) throw Error('Gerador de PDF indisponível.');
       const doc = new window.jspdf.jsPDF({ unit: 'pt', format: 'a4', compress: true });
       const margin = 42, maxWidth = 511, bottom = 790;
@@ -494,7 +494,7 @@
           y += size * 1.45;
         }
       };
-      line('LURIA | Meu currículo', 19, true);
+      line('TRAUBE | Meu currículo', 19, true);
       y += 9;
       line(`Emitido em ${new Date().toLocaleDateString('pt-BR')} | ${state.items.length} atividade(s)`, 10);
       y += 20;

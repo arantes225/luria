@@ -12,10 +12,10 @@ const worker = fs.readFileSync(path.join(__dirname, "../service-worker.js"), "ut
 const ui = fs.readFileSync(path.join(__dirname, "../assets/js/ecg-smart-ui.js"), "utf8");
 
 function guard() {
-  const fakeGlobal = {LuriaEcgContracts:{normalizeAnomalies:x=>x||[]}};
+  const fakeGlobal = {TraubeEcgContracts:{normalizeAnomalies:x=>x||[]}};
   vm.runInNewContext(source, {window:fakeGlobal,Date,console});
-  assert.equal(typeof fakeGlobal.LuriaEcgSceneGuard.isVerifiedEcgScene,"function");
-  return fakeGlobal.LuriaEcgSceneGuard.isVerifiedEcgScene;
+  assert.equal(typeof fakeGlobal.TraubeEcgSceneGuard.isVerifiedEcgScene,"function");
+  return fakeGlobal.TraubeEcgSceneGuard.isVerifiedEcgScene;
 }
 const positive = () => ({
   detected: true,

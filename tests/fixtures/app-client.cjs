@@ -13,7 +13,7 @@ function ownerFixture(initial='A') {
   let epoch=0;
   const key=(base,id=user)=>id?base+':'+encodeURIComponent(id):null;
   context.supabaseClient=context.supabase.createClient();
-  context.LuriaLocalOwnerStore={get ownerId(){return user},get epoch(){return epoch},key,
+  context.TraubeLocalOwnerStore={get ownerId(){return user},get epoch(){return epoch},key,
     ready:Promise.resolve(user),read(base){return user?context.localStorage.getItem(key(base)):null},
     write(base,value){if(!user)return false;context.localStorage.setItem(key(base),value);return true},
     remove(base){if(user)context.localStorage.removeItem(key(base))}};

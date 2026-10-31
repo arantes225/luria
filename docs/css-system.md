@@ -1,4 +1,4 @@
-# Base visual do LURIA
+# Base visual do TRAUBE
 
 Todas as páginas da aplicação carregam **`assets/css/ui-app.css` uma única vez,
 antes dos estilos de página**. Isso declara a ordem das layers antes que algum
@@ -63,7 +63,7 @@ A base consolidada agora também controla a moldura e a rolagem interna descrita
 Os CSS ativos foram reduzidos de **73 para 55**, sem mudar as regras ou sua ordem nas 96 páginas HTML. A base compartilhada é carregada por uma única URL, sem cinco downloads adicionais por imports.
 
 - `ui-app.css`: incorpora foundations, controles, navegação de Trabalho, navegação da aplicação e componentes comuns. As seções internas mantêm a ordem das layers.
-- `plantao.css`: base compartilhada do Plantão e comportamento PWA, usada pela emergência e pelo LuriaZap.
+- `plantao.css`: base compartilhada do Plantão e comportamento PWA, usada pela emergência e pelo TraubeZap.
 - `emergency-case.css`: paciente, paisagem e variantes de mulher adulta/homem idoso, em sua ordem original.
 - `admin.css`: administração e gerenciamento administrativo de editais.
 - `editais-provas.css`: apresentação de provas e catálogo.

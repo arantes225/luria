@@ -3,7 +3,7 @@
   "use strict";
   const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
   function locate(image, mode = "map") {
-    const layout = (typeof window !== "undefined" ? window.LuriaEcgLayout?.detect(image) : null) ||
+    const layout = (typeof window !== "undefined" ? window.TraubeEcgLayout?.detect(image) : null) ||
       (typeof require === "function" ? require("./ecg-layout.js").detect(image) : null);
     if (!image?.data || !layout?.bands?.length) return { found: false, instruction: "Não localizei o traçado. Afaste um pouco e enquadre o ECG com boa luz." };
     const { data, width, height } = image;
@@ -52,5 +52,5 @@
   }
   const api = { locate };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
-  if (typeof window !== "undefined") window.LuriaEcgFrameGuide = api;
+  if (typeof window !== "undefined") window.TraubeEcgFrameGuide = api;
 })();

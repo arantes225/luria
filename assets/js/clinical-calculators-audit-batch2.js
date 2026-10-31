@@ -1,4 +1,4 @@
-/* LURIA | Revisão clínica de calculadoras 31–60 | 2026-10-24.
+/* TRAUBE | Revisão clínica de calculadoras 31–60 | 2026-10-24.
  * Uso: após módulo de expansão, sem modificar o CSP inline.
  * Cálculos educacionais/de apoio, NÃO prescrição, diagnóstico ou validação regulatória.
  */

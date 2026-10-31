@@ -12,7 +12,7 @@ Publicado somente em `https://luria-homologacao.lfab225.workers.dev/amigos/`, ve
 
 ## Arquitetura preservada
 
-Site estático com shell, temas, timer global, fontes e ícones compartilhados. Amigos conserva seus IDs, handlers e contratos. Salas utiliza os RPCs existentes no Supabase, mensagens persistentes e canais privados de presença/Realtime; estudo efetivo continua vinculado aos registros reais da LURIA. Voz utiliza o Worker existente, Cloudflare SFU e TURN, sem áudio pelo Supabase. Permissões, RLS, respostas protegidas até a revelação e limites de voz permanecem na implementação existente.
+Site estático com shell, temas, timer global, fontes e ícones compartilhados. Amigos conserva seus IDs, handlers e contratos. Salas utiliza os RPCs existentes no Supabase, mensagens persistentes e canais privados de presença/Realtime; estudo efetivo continua vinculado aos registros reais da TRAUBE. Voz utiliza o Worker existente, Cloudflare SFU e TURN, sem áudio pelo Supabase. Permissões, RLS, respostas protegidas até a revelação e limites de voz permanecem na implementação existente.
 
 `social-v4.css` é isolado à página. `social-view.js` cuida da apresentação e delega ações aos controles existentes, sem criar canais, timers, mídia ou sistemas paralelos. Os modos usam o comando existente de atualização de sala e não desmontam a conexão. Eventos internos cancelados por troca de contexto deixam de exibir um erro de autenticação enganoso; resultados antigos continuam descartados.
 

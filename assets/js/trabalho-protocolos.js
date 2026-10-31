@@ -349,7 +349,7 @@ function getProtocolCalculators(r) {
 (() => {
   "use strict";
   const sb = window.supabaseClient;
-  const bridge = window.LuriaClinicalBridge;
+  const bridge = window.TraubeClinicalBridge;
   const els = {
     search: document.getElementById("protocol-search"),
     category: document.getElementById("protocol-category"),
@@ -471,7 +471,7 @@ function getProtocolCalculators(r) {
     els.detail.innerHTML = '<div class="protocol-placeholder">Clique em um protocolo para consultar sua ficha.</div>';
     els.list.innerHTML = '<div class="protocol-placeholder">Consultando títulos…</div>';
     if (!sb) {
-      const local = Array.isArray(window.LURIA_PROTOCOL_SEEDS) ? window.LURIA_PROTOCOL_SEEDS : [];
+      const local = Array.isArray(window.TRAUBE_PROTOCOL_SEEDS) ? window.TRAUBE_PROTOCOL_SEEDS : [];
       const queryText = norm(els.search?.value);
       const result = local.filter((r) => (!els.category.value || r.category === els.category.value) &&
         (!els.batch?.value || (r.tags || []).includes(els.batch.value)) &&
@@ -616,7 +616,7 @@ function getProtocolCalculators(r) {
                 <button type="button" data-quick-drug="${esc(d)}" style="padding:6px 10px;background:none;border:none;font-size:12.5px;font-weight:700;color:var(--theme,#184888);cursor:pointer;display:flex;align-items:center;gap:4px">
                   <span>ℹ️</span> ${esc(d)}
                 </button>
-                <button type="button" data-drug="${esc(d)}" title="Ver no Bulário LURIA" style="padding:6px 8px;border:none;border-left:1px solid var(--border);background:var(--surface-2);font-size:11px;color:var(--muted);cursor:pointer">
+                <button type="button" data-drug="${esc(d)}" title="Ver no Bulário TRAUBE" style="padding:6px 8px;border:none;border-left:1px solid var(--border);background:var(--surface-2);font-size:11px;color:var(--muted);cursor:pointer">
                   ↗
                 </button>
               </div>
@@ -740,7 +740,7 @@ function getProtocolCalculators(r) {
     els.detail.querySelectorAll('[data-quick-drug]').forEach(btn => {
       btn.addEventListener('click', () => {
         const term = btn.dataset.quickDrug;
-        const bSeeds = Array.isArray(window.LURIA_BULARIO_SEEDS) ? window.LURIA_BULARIO_SEEDS : [];
+        const bSeeds = Array.isArray(window.TRAUBE_BULARIO_SEEDS) ? window.TRAUBE_BULARIO_SEEDS : [];
         const normStr = (v) => String(v ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
         const q = normStr(term);
         const drug = bSeeds.find(d => {
@@ -866,7 +866,7 @@ function getProtocolCalculators(r) {
 els.detail.querySelectorAll("[data-drug]").forEach((b) => b.addEventListener("click", () => bridge?.openDrug(b.dataset.drug)));
     els.detail.querySelector("[data-open-recipe]")?.addEventListener("click", () => bridge?.openRecipe(recipes[0]));
     els.detail.querySelector("[data-send-note]")?.addEventListener("click", () => bridge?.toQuickChart({
-      type:"protocol", slug:r.slug, title:r.title, text:protocolText(r), source:"Protocolos LURIA"
+      type:"protocol", slug:r.slug, title:r.title, text:protocolText(r), source:"Protocolos TRAUBE"
     }));
   }
 

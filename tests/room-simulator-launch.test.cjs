@@ -4,7 +4,7 @@ const source=read('assets/js/plantao.js');
 const openRoomCase=declaration(source,'openRoomCase','  ');
 function fixture(embed,activeSession=null,restore=true){
  const starts=[],restores=[];const state={cases:[{id:'shared-case'}],activeSession};
- const open=new Function('window','state','startCase','restoreClinicalSession',openRoomCase+';return openRoomCase;')({LuriaRoomEmbed:embed},state,async id=>starts.push(id),async(session,mode)=>{restores.push({session,mode});return restore;});
+ const open=new Function('window','state','startCase','restoreClinicalSession',openRoomCase+';return openRoomCase;')({TraubeRoomEmbed:embed},state,async id=>starts.push(id),async(session,mode)=>{restores.push({session,mode});return restore;});
  return {open,starts,restores};
 }
 test('standalone simulator retains its case library',async()=>{

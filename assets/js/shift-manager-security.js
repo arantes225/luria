@@ -102,7 +102,7 @@
     document.getElementById("gsm-gate-copy").textContent =
       m === "pin" ? "Digite o PIN de 4 dígitos do Gestor de Plantões." :
       m === "cola" ? "Digite o senha fixa de 4 dígitos mostrado na Cola Rápida." :
-      "Digite a senha da sua conta LURIA.";
+      "Digite a senha da sua conta TRAUBE.";
     setTimeout(() => { (m === "account" ? document.getElementById("gsm-gate-password") : document.getElementById("gsm-gate-pin"))?.focus(); }, 50);
   }
 
@@ -168,7 +168,7 @@
           <label class="gsm-option"><input type="radio" name="gsm-mode" value="none"><span><strong>Sem senha</strong><small>Abre direto enquanto sua conta estiver conectada.</small></span></label>
           <label class="gsm-option"><input type="radio" name="gsm-mode" value="pin"><span><strong>PIN próprio de 4 dígitos</strong><small>Crie um PIN exclusivo para o Gestor de Plantões neste dispositivo.</small></span></label>
           <label class="gsm-option"><input type="radio" name="gsm-mode" value="cola"><span><strong>Senha fixa da Cola Rápida</strong><small>Digite o código rotativo mostrado na Cola Rápida da sua conta.</small></span></label>
-          <label class="gsm-option"><input type="radio" name="gsm-mode" value="account"><span><strong>Senha da conta</strong><small>Pede novamente a senha da sua conta LURIA ao entrar.</small></span></label>
+          <label class="gsm-option"><input type="radio" name="gsm-mode" value="account"><span><strong>Senha da conta</strong><small>Pede novamente a senha da sua conta TRAUBE ao entrar.</small></span></label>
         </div>
         <div id="gsm-pin-fields" class="gsm-setup-fields" hidden>
           <div class="gsm-field"><label>Novo PIN</label><input id="gsm-new-pin" data-pin type="text" inputmode="numeric" maxlength="4" autocomplete="new-password"></div>

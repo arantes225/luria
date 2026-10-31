@@ -28,7 +28,7 @@ function preflight(origin = official, method = 'POST', headers = sdkHeaders) {
 for (const [i, name] of names.entries()) {
   test(`${name}: exact production/CNAME origins and complete SDK preflight`, async () => {
     const { handler } = fixture().function(name);
-    for (const origin of [official, cname, 'https://WWW.LURIAMEDICINA.COM.BR:443']) {
+    for (const origin of [official, cname, 'https://WWW.TRAUBEMEDICINA.COM.BR:443']) {
       const response = await handler(preflight(origin));
       assert.equal(response.status, 200);
       assert.equal(await response.text(), 'ok');

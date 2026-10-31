@@ -1,7 +1,7 @@
 (() => {
   "use strict";
   const sb=window.supabaseClient;
-  const owned=window.LuriaLocalOwnerStore;
+  const owned=window.TraubeLocalOwnerStore;
   const $=id=>document.getElementById(id);
   const output=$("quick-chart-daily-code"),expiry=$("quick-chart-daily-day");
   const status=$("quick-chart-daily-status"),copy=$("quick-chart-copy-daily-code");
@@ -18,7 +18,7 @@
   }
   async function call(action,body={}){
     const {data}=await sb.auth.getSession();
-    if(!data?.session?.access_token)throw Error("Faça login na LURIA para continuar.");
+    if(!data?.session?.access_token)throw Error("Faça login na TRAUBE para continuar.");
     const response=await fetch(endpoint,{method:"POST",cache:"no-store",
       headers:{"Content-Type":"application/json","apikey":key,"Authorization":"Bearer "+data.session.access_token},
       body:JSON.stringify({...body,action})});

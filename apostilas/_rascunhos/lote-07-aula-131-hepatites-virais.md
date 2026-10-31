@@ -1,10 +1,10 @@
-# LURIA — Lote 7 · Aula 131
+# TRAUBE — Lote 7 · Aula 131
 # Hepatites virais A, B, C, D e E: raciocínio clínico, sorologia e seguimento
 **Status:** RASCUNHO CIENTÍFICO ORIGINAL; não publicado nem validado para uso prescritivo. **Data:** 14/10/2026.  
 **Norma editorial:** \`lead.apostilas.txt\`; comparação com a aula 126 (cirrose), evitando repetir integralmente hipertensão portal, ascite e HRS.
 
 ## 0. Etapa zero e atualização
-O repositório LURIA não possuía pasta específica de “hepatites-virais” na listagem principal de apostilas. Foi lido no Drive “08 - HEPATITES VIRAIS.pdf” (14.845 caracteres extraídos): organiza A–E, sorologias do HBV, HCV e hepatite D, mas usa atalhos excessivamente rígidos sobre aminotransferases, marcadores de replicação e decisão de tratar. **Não copiar texto, figura nem fluxograma** e não presumir autoria do material de referência: o documento apresenta marca de circulação “Medicina livre”. Referências clínicas principais são os PCDTs brasileiros de hepatite B e C, atualizações disponibilizadas pelo Ministério da Saúde em 2026, guias de diagnóstico das hepatites e recomendações internacionais quando úteis. Os PDFs dos PCDTs e suas versões integrais precisam de conferência específica antes de tabelas nacionais completas de medicamentos.
+O repositório TRAUBE não possuía pasta específica de “hepatites-virais” na listagem principal de apostilas. Foi lido no Drive “08 - HEPATITES VIRAIS.pdf” (14.845 caracteres extraídos): organiza A–E, sorologias do HBV, HCV e hepatite D, mas usa atalhos excessivamente rígidos sobre aminotransferases, marcadores de replicação e decisão de tratar. **Não copiar texto, figura nem fluxograma** e não presumir autoria do material de referência: o documento apresenta marca de circulação “Medicina livre”. Referências clínicas principais são os PCDTs brasileiros de hepatite B e C, atualizações disponibilizadas pelo Ministério da Saúde em 2026, guias de diagnóstico das hepatites e recomendações internacionais quando úteis. Os PDFs dos PCDTs e suas versões integrais precisam de conferência específica antes de tabelas nacionais completas de medicamentos.
 
 Apostilas correlatas no acervo: aula 126 trata de cirrose e complicações; \`hiv-infeccoes-oportunistas\` e \`infeccoes-gestacao-transmissao-vertical\` podem compartilhar tópicos, mas não substituem um livro focado em sorologia e terapêutica de hepatites virais. O programa curricular mantém tema autônomo pela prevalência de questões de interpretação de exames.
 
@@ -182,7 +182,7 @@ A. Alta porque a ALT caiu. B. Hepatite benigna por regra. C. Apenas repetir tran
 - PCDT do SUS tem precedência na disponibilidade/doses, não automaticamente guideline estrangeira.
 
 ## 14. Camada visual proposta (nenhuma imagem incorporada)
-1. Esquema original anatômico lobular hepatocitário. 2. Linha temporal de HBV com HBsAg/anti-HBc/anti-HBs. 3. Matriz sorológica digital interativa não dependente de foto. 4. Fluxo anti-HCV→RNA. 5. Diagrama HDV usando envelope HBsAg. 6. Mapa conceitual HAV/HEV transmissão e controle. 7. US hepático normal versus cirrótico (fonte licenciada). 8. Quadro LURIA de sinais de falência hepática. 9. Ilustração original de imunoprofilaxia HBV vertical. 10. Diagrama de testes em janela sorológica. 11. Algoritmo HCV com/sem cirrose. 12. Diagrama de vacinação e imunossupressão HBV.
+1. Esquema original anatômico lobular hepatocitário. 2. Linha temporal de HBV com HBsAg/anti-HBc/anti-HBs. 3. Matriz sorológica digital interativa não dependente de foto. 4. Fluxo anti-HCV→RNA. 5. Diagrama HDV usando envelope HBsAg. 6. Mapa conceitual HAV/HEV transmissão e controle. 7. US hepático normal versus cirrótico (fonte licenciada). 8. Quadro TRAUBE de sinais de falência hepática. 9. Ilustração original de imunoprofilaxia HBV vertical. 10. Diagrama de testes em janela sorológica. 11. Algoritmo HCV com/sem cirrose. 12. Diagrama de vacinação e imunossupressão HBV.
 
 **Todas são ideias a produzir/localizar com licença de uso comercial e aprovação Admin; nenhum arquivo clínico encontrado foi reproduzido do Drive.**
 
@@ -191,7 +191,7 @@ A. Alta porque a ALT caiu. B. Hepatite benigna por regra. C. Apenas repetir tran
 - Ministério da Saúde. *PCDT Hepatite C e Coinfecções*, portal atualizado em julho/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-e-coinfeccoes/view
 - Ministério da Saúde. *Manual Técnico para o Diagnóstico das Hepatites Virais*, portal de publicações 2026. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/hepatites/hepatites-virais
 - OMS/WHO. Diretrizes sobre hepatites e diagnóstico HBV/HDV; consultar versão integral antes da edição final.
-- LURIA. \`apostilas/_rascunhos/lote-07-aula-126-cirrose-complicacoes.md\` — contexto de fibrose/cirrose.
+- TRAUBE. \`apostilas/_rascunhos/lote-07-aula-126-cirrose-complicacoes.md\` — contexto de fibrose/cirrose.
 
 ## 16. Checklist de certificação pendente
 - [x] Benchmark específico do tema lido, autoria não presumida, diferenças identificadas.
@@ -208,7 +208,7 @@ A. Alta porque a ALT caiu. B. Hepatite benigna por regra. C. Apenas repetir tran
 
 ---
 
-# APROFUNDAMENTO LURIA — HEPATITES VIRAIS A–E
+# APROFUNDAMENTO TRAUBE — HEPATITES VIRAIS A–E
 **Revisão editorial:** 15/10/2026. **Escopo:** continuar o rascunho original das seções 0–16 sem apagar informações válidas; integrar o raciocínio dos vírus A, B, C, D e E com etiologias de lesão hepática aguda, doenças crônicas, gravidez, imunossupressão e saúde coletiva. Benchmark Drive “08 - HEPATITES VIRAIS.pdf” **relido** (14.845 caracteres de texto extraído); trata sorologias B, quadros agudos e esquemas históricos, mas alguns atalhos necessitam correção pela fisiopatologia e PCDTs. Não foi demonstrada autoria do material de referência. Fontes de verificação independentes: PCDT **hepatite B e coinfecções** do MS (anexo alterado em 04/07/2024), PCDT **hepatite C e coinfecções** formalizado pela Portaria SCTIE/MS nº39 de **20/07/2026**, OMS hepatite B 2024 e guias brasileiros de diagnóstico/vigilância. Não indicar terapêutica individual sem verificar o texto integral de cada PCDT e os dados clínicos necessários.
 
 ## 17. O hepatócito não adoece da mesma forma nos cinco vírus

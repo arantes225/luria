@@ -39,7 +39,7 @@ async function database(){
  insert into public.profiles(user_id,luria_id,display_name,specialty,studyrat_variant,studyrat_accessory,studyrat_accessory_offsets) values('${A}','OWNER001','Ana','Clínica','blue','crown','{"crown":{"x":0.2,"y":0.1,"v":2}}'),('${B}','FRIEND02','Bruno','Clínica','brown','none','{}'),('${C}','FRIEND03','Caio','Clínica','pink','none','{}');
  insert into public.friendships(user_id,friend_user_id) values('${A}','${C}');
  insert into public.question_sets values('${SET}','${A}','Lista existente');
- insert into public.question_items values('${Q}','${SET}','${A}',0,'Enunciado real','{"A":"Alternativa A","B":"Alternativa B"}','B','Comentário LURIA','{"A":"Explicação A","B":"Explicação B"}','Referência original','Clínica','Cardiologia',null);
+ insert into public.question_items values('${Q}','${SET}','${A}',0,'Enunciado real','{"A":"Alternativa A","B":"Alternativa B"}','B','Comentário TRAUBE','{"A":"Explicação A","B":"Explicação B"}','Referência original','Clínica','Cardiologia',null);
  `);
  await db.exec(fs.readFileSync('db/social_study_rooms.sql','utf8'));
  await db.exec(fs.readFileSync('db/social_room_features.sql','utf8'));

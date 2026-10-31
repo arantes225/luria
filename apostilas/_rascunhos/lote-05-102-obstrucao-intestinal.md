@@ -1,10 +1,10 @@
-# LURIA — Apostila 102: Obstrução intestinal e abdome agudo obstrutivo
+# TRAUBE — Apostila 102: Obstrução intestinal e abdome agudo obstrutivo
 
 **Lote:** 5 — tema 102 de 260 · **Área:** Cirurgia Geral e Emergências · **Status:** manuscrito original **EM ELABORAÇÃO**, não aprovado e não publicado · **Etapa zero:** 14/10/2026.
 
 **Propósito:** ensinar a reconhecer obstrução verdadeira, diferenciar delgado de cólon, separar causas mecânicas de íleo/pseudo-obstrução e decidir com segurança quando observar, descomprimir, operar ou encaminhar. O texto não substitui protocolo assistencial de cirurgia de urgência ou revisão por cirurgião habilitado.
 
-## 0. Auditoria inicial: acervo LURIA, materiais do Drive e referências clínicas
+## 0. Auditoria inicial: acervo TRAUBE, materiais do Drive e referências clínicas
 
 ### 0.1. Inventário antes da redação
 
@@ -33,7 +33,7 @@ A referência visual \`apostilas/amniorrexe-prematura/index.html\` foi inspecion
 
 ### 0.4. Matriz curricular da apostila
 
-| Competência | Resumo do Drive | Meta da LURIA |
+| Competência | Resumo do Drive | Meta da TRAUBE |
 |---|---|---|
 | Anatomia e mecanismo | Lista de achados | Explicar pressão, distensão, perfusão e isquemia |
 | Diagnóstico clínico | Tríade | Cronologia, localização, exame de hérnias, causas atípicas |

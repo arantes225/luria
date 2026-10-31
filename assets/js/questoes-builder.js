@@ -1,4 +1,4 @@
-/* Criador de listas do banco oficial LURIA.
+/* Criador de listas do banco oficial TRAUBE.
    Os filtros usam apenas questões autorizadas pelo catálogo RPC; lotes não publicados
    continuam indisponíveis. Nunca consulta question_bank diretamente no navegador. */
 (() => {
@@ -108,7 +108,7 @@
   }
   function currentUserId() { return window.docmapUser?.id || state.userId; }
   function contextValid() {
-    const owner = window.LuriaLocalOwnerStore;
+    const owner = window.TraubeLocalOwnerStore;
     return !!state.userId && currentUserId() === state.userId &&
       (!owner || (owner.ownerId === state.userId && owner.epoch === state.ownerEpoch));
   }
@@ -179,16 +179,16 @@
   }
   function displayTitle() {
     const selected = [subthemeEl?.value, themeEl.value, subjectEl?.value, areaEl.value].find(v => v && v !== "all");
-    return selected ? "Treino focado: " + selected : "Treino geral LURIA";
+    return selected ? "Treino focado: " + selected : "Treino geral TRAUBE";
   }
   async function load() {
     try {
-      await window.LuriaLocalOwnerStore?.ready;
+      await window.TraubeLocalOwnerStore?.ready;
       const response = await sb.auth.getUser();
       const user = response.data?.user;
       if (!user) throw new Error("Faça login para criar sua lista.");
       state.userId = user.id;
-      state.ownerEpoch = window.LuriaLocalOwnerStore?.epoch ?? null;
+      state.ownerEpoch = window.TraubeLocalOwnerStore?.epoch ?? null;
       inform("Carregando a distribuição real de questões...");
       let {data, error} = await sb.rpc("user_question_bank_list_catalog_v2");
       if (error) {
@@ -247,7 +247,7 @@
       if (!contextValid()) throw new Error("A conta ativa mudou. A operação foi cancelada.");
       const rows = selected.map((q, index) => ({
         user_id: userId, set_id: setId, question_number: index + 1, order_index: index + 1,
-        question_bank_id: q.question_id, source_label: q.source_label || "Banco LURIA",
+        question_bank_id: q.question_id, source_label: q.source_label || "Banco TRAUBE",
         stem: q.enunciado,
         raw_text: q.enunciado,
         alternatives: { A: q.alternativa_a, B: q.alternativa_b, C: q.alternativa_c, D: q.alternativa_d },

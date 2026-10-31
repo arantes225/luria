@@ -50,7 +50,7 @@ test("PIN fixo não é emitido nem renovado ao abrir ou focar o app",async()=>{
   const cache={},get=id=>cache[id]??=element(id),listeners={},actions=[];
   const owner={ownerId:"ownerA",ready:Promise.resolve()};
   const ctx={
-    window:{LuriaLocalOwnerStore:owner,
+    window:{TraubeLocalOwnerStore:owner,
       supabaseClient:{auth:{getSession:async()=>({data:{session:{access_token:"jwt"}}})}},
       addEventListener(k,cb){listeners[k]=cb},setInterval:()=>1,clearInterval() {},confirm:()=>true
     },

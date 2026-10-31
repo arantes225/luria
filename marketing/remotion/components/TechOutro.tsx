@@ -51,7 +51,7 @@ export const TechOutro: React.FC = () => {
         );
       })}
 
-      {/* Central Glowing LURIA Emblem */}
+      {/* Central Glowing TRAUBE Emblem */}
       <div
         style={{
           position: 'absolute',
@@ -94,7 +94,7 @@ export const TechOutro: React.FC = () => {
             textShadow: '0 4px 30px rgba(0, 0, 0, 0.6)'
           }}
         >
-          LURIA
+          TRAUBE
         </div>
         <div
           style={{
@@ -214,7 +214,7 @@ export const TechOutro: React.FC = () => {
           transform: `scale(${interpolate(spButton, [0, 1], [0.85, 1]) + Math.sin(time * 4) * 0.02})`
         }}
       >
-        CONHEÇA A LURIA →
+        CONHEÇA A TRAUBE →
       </div>
     </div>
   );

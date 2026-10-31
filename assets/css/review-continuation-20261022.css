@@ -1,5 +1,5 @@
 /* Follow-up visual corrections from the second product review.  The rules are
-   page-scoped and only adjust presentation around the existing LURIA markup. */
+   page-scoped and only adjust presentation around the existing TRAUBE markup. */
 
 /* Shared title cards and back actions. */
 body .luria-page-spotlight.review-title-card {
@@ -241,7 +241,7 @@ body[data-page="erros"] #error-daily-card .error-review-home-buttons {
   }
 }
 
-/* LuriaZap phone copy must never paint over another row. */
+/* TraubeZap phone copy must never paint over another row. */
 body[data-page="plantao"] .plantao-phone-conversation {
   min-height: 116px !important;
 }

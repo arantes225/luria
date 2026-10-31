@@ -16,7 +16,7 @@
   --landing-success: #0F766E;
   --landing-shadow: 0 20px 50px rgba(15, 35, 66, .09), inset 0 1px 0 rgba(255, 255, 255, .9);
   --landing-radius: 22px;
-  --font-ui: "Luria Inter", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-ui: "Traube Inter", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --brand-light-blue: var(--landing-accent);
   --landing-button-primary: var(--landing-accent);
   --landing-button-primary-hover: var(--landing-accent-strong);
@@ -1422,7 +1422,7 @@ img { max-width: 100%; }
 
 
 /* =========================================================
-   LURIA VISIBLE GOLD DETAILS
+   TRAUBE VISIBLE GOLD DETAILS
    ========================================================= */
 .preview-streak {
   border-color: rgba(212, 175, 55, .52);
@@ -1481,7 +1481,7 @@ optgroup {
   font-style: normal !important;
 }
 
-/* LURIA — uppercase + 15% */
+/* TRAUBE — uppercase + 15% */
 .landing-brand strong {
   text-transform: uppercase !important;
   font-size: 18.4px !important; /* 16px + 15% */
@@ -1495,7 +1495,7 @@ optgroup {
 
 
 
-/* LURIA — identidade do tema claro baseada no azul dos callouts */
+/* TRAUBE — identidade do tema claro baseada no azul dos callouts */
 .landing-brand strong,
 .preview-brand-row strong,
 .footer-brand strong,
@@ -1506,7 +1506,7 @@ optgroup {
 }
 
 
-/* LURIA — HIERARQUIA DE BOTÕES DA LANDING */
+/* TRAUBE — HIERARQUIA DE BOTÕES DA LANDING */
 .landing-button.primary {
   background: var(--landing-button-primary) !important;
   border-color: var(--landing-button-primary) !important;

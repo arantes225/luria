@@ -1,4 +1,4 @@
-# LURIA — Aula 170 | Ética médica, sigilo profissional e prontuário
+# TRAUBE — Aula 170 | Ética médica, sigilo profissional e prontuário
 
 **Medicina Preventiva · Bioética · Medicina Legal · Saúde Digital · Segurança do Paciente**  
 **Lote 09 | Aula 170 de 180 | Rascunho editorial — 14/10/2026**
@@ -7,7 +7,7 @@
 
 **Status:** material de estudo em elaboração; não substituir parecer jurídico institucional, orientação de CRM ou política de prontuário local. Antes da publicação, os textos de atos normativos e sua vigência devem ser revalidados.
 
-> **Pulo do Gato LURIA:** O prontuário é instrumento assistencial, legal, científico e sigiloso. **O direito de acesso à informação do paciente não significa circulação irrestrita do prontuário por qualquer interessado.** O sigilo é a regra; as exceções exigem fundamento específico, finalidade legítima e compartilhamento mínimo necessário.
+> **Pulo do Gato TRAUBE:** O prontuário é instrumento assistencial, legal, científico e sigiloso. **O direito de acesso à informação do paciente não significa circulação irrestrita do prontuário por qualquer interessado.** O sigilo é a regra; as exceções exigem fundamento específico, finalidade legítima e compartilhamento mínimo necessário.
 
 ## 1. Por que este tema aparece tanto em provas e no plantão
 
@@ -239,7 +239,7 @@ Não confundir autonomia progressiva com maioridade civil. A possibilidade de o 
 
 **Risco de suicídio:** ideação com plano e meios, intoxicação ou risco concreto exige avaliação emergencial e medidas de proteção. Informar limites do sigilo e envolver rede segura em medida proporcional, sem prometer confidencialidade absoluta que impeça socorro.
 
-**Violência infantil:** o profissional não precisa atribuir culpa e nem confirmar autoria para fazer comunicação de suspeita prevista no ECA. É indispensável registrar dados objetivos, tratar a criança e seguir a rede. Consulte também as aulas 163 e 168 da LURIA, que abordam proteção e consulta do adolescente em detalhe.
+**Violência infantil:** o profissional não precisa atribuir culpa e nem confirmar autoria para fazer comunicação de suspeita prevista no ECA. É indispensável registrar dados objetivos, tratar a criança e seguir a rede. Consulte também as aulas 163 e 168 da TRAUBE, que abordam proteção e consulta do adolescente em detalhe.
 
 ## 12. Pacientes incapazes, acompanhantes e responsáveis
 
@@ -386,7 +386,7 @@ Dados de prontuário não podem ser usados livremente em aulas ou artigos só po
 
 Uma fotografia pode revelar identificação por rosto, tatuagem, característica rara, ambiente, metadados e contexto temporal. Evitar câmeras pessoais, compartilhamento em grupos de mensagens e armazenamento sem autorização institucional. As regras de publicidade CFM nº 2.336/2023 não dispensam proteção de dados nem autorizam uso irrestrito de imagens médicas.
 
-**Para a LURIA:** imagens de ECG, RX, TC e lesões reais devem ter procedência e licença/editoria adequadas; anonimizar identificadores clínicos e preservar legenda factual. Imagens de pacientes, especialmente de menores ou partes íntimas, exigem cautela especial e nunca devem ser recolhidas informalmente para enriquecer apostilas.
+**Para a TRAUBE:** imagens de ECG, RX, TC e lesões reais devem ter procedência e licença/editoria adequadas; anonimizar identificadores clínicos e preservar legenda factual. Imagens de pacientes, especialmente de menores ou partes íntimas, exigem cautela especial e nunca devem ser recolhidas informalmente para enriquecer apostilas.
 
 ### Caso fictício versus caso real
 
@@ -505,7 +505,7 @@ Um prontuário bom não precisa de páginas de texto padronizado, mas deve permi
 - [x] Telemedicina, pesquisa, ensino e publicidade.
 - [x] Guarda/descarte com atualização CFM de 2026.
 - [x] Tabelas e fluxos didáticos.
-- [x] Casos clínico-éticos em padrão LURIA — 12 situações (seção 27).
+- [x] Casos clínico-éticos em padrão TRAUBE — 12 situações (seção 27).
 - [x] Questões autorais com alternativas explicadas — 18 questões (seção 28).
 - [x] Planejamento de 14 figuras autorais; produção e revisão jurídica ainda pendentes (seção 29).
 - [ ] Conferir artigos individualmente no CEM e notas recentes para correção de citações.
@@ -518,7 +518,7 @@ Um prontuário bom não precisa de páginas de texto padronizado, mas deve permi
 
 ---
 
-## 27. Casos clínico-éticos LURIA — diagnóstico do dilema, raciocínio e providências
+## 27. Casos clínico-éticos TRAUBE — diagnóstico do dilema, raciocínio e providências
 
 Os casos são fictícios e didáticos. Algumas respostas jurídicas dependem de circunstâncias adicionais, da norma vigente e da atuação de direção técnica/assessoria jurídica; não converter casos em parecer vinculante.
 
@@ -1084,9 +1084,9 @@ Neste tema, imagens clínicas reais agregam menos que fluxos normativos, modelos
 - Cada figura deve demonstrar decisão concreta, não decorar uma página.
 - O exame final de acessibilidade inclui contraste, leitura linear e facilidade de navegação por teclado.
 
-## 30. Integração da aula 170 com a LURIA e segurança digital
+## 30. Integração da aula 170 com a TRAUBE e segurança digital
 
-O conteúdo alimentará futuros recursos da plataforma (flashcards, questões, caderno de erros e ferramentas de estudo), mas **a apostila não é autorização para a LURIA coletar prontuários de pacientes reais**. Qualquer integração de dados de saúde reais em um produto educacional ou em ferramentas de IA exige análise própria de finalidade, base legal, minimização, segurança e papéis de agentes de tratamento.
+O conteúdo alimentará futuros recursos da plataforma (flashcards, questões, caderno de erros e ferramentas de estudo), mas **a apostila não é autorização para a TRAUBE coletar prontuários de pacientes reais**. Qualquer integração de dados de saúde reais em um produto educacional ou em ferramentas de IA exige análise própria de finalidade, base legal, minimização, segurança e papéis de agentes de tratamento.
 
 ### Regras de design para o conteúdo didático
 

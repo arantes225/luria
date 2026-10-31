@@ -1,5 +1,5 @@
 (() => {
-  const store = window.LuriaPCRStore;
+  const store = window.TraubePCRStore;
   let generation = 0, stopSession = () => {};
   const $ = id => document.getElementById(id);
   // Clone the static causes panel once, before owner-scoped listeners are bound.
@@ -70,7 +70,7 @@
   const beatMs = Math.round(60000 / BPM);
   const listeners = new AbortController();
   const pendingTimers = new Set();
-  const current = () => version === generation && (!window.LuriaLocalOwnerStore || window.LuriaLocalOwnerStore.ownerId === owner.id);
+  const current = () => version === generation && (!window.TraubeLocalOwnerStore || window.TraubeLocalOwnerStore.ownerId === owner.id);
   function listen(target, type, handler) {
     target.addEventListener(type, (...args) => { if (current()) return handler(...args); }, {signal:listeners.signal});
   }

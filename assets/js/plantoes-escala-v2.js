@@ -1,6 +1,6 @@
 (function scaleModule() {
   "use strict";
-  const C=window.LuriaShiftCore;
+  const C=window.TraubeShiftCore;
   if(!C)return;
   const $=id=>document.getElementById(id);
   const fmt=t=>C.formatMoney(t);

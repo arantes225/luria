@@ -3,8 +3,8 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs'),crypto=require('node:crypto');
 const {JSDOM,VirtualConsole}=require('jsdom');
 const {read,declaration}=require('./fixtures/frontend.cjs');
-const bundle=process.env.LURIA_JSPDF_TEST_BUNDLE;
-const options={skip:bundle?false:'Set LURIA_JSPDF_TEST_BUNDLE to the reviewed jsPDF 4.2.1 UMD; no network during tests'};
+const bundle=process.env.TRAUBE_JSPDF_TEST_BUNDLE;
+const options={skip:bundle?false:'Set TRAUBE_JSPDF_TEST_BUNDLE to the reviewed jsPDF 4.2.1 UMD; no network during tests'};
 // Generate a valid synthetic PNG (including CRCs), not a truncated fixture.
 const zlib=require('node:zlib');
 function chunk(type,data){const name=Buffer.from(type),length=Buffer.alloc(4),crc=Buffer.alloc(4);length.writeUInt32BE(data.length);crc.writeUInt32BE(zlib.crc32(Buffer.concat([name,data])));return Buffer.concat([length,name,data,crc]);}
@@ -25,7 +25,7 @@ test('real jsPDF runs Flashcards/Errors image layout helpers and produces PDF by
   const w=fixture(t);
   for(const [file,name] of [['assets/js/flashcards.js','flashPdfAddImage'],['assets/js/caderno-erros.js','errorPdfAddImage']]) {
     w.eval(declaration(read(file),name));const doc=new w.jspdf.jsPDF({unit:'mm',format:'a4'});const state={y:20};
-    doc.text('LURIA — revisão',16,15);w[name](doc,{dataUrl:png,width:1,height:1},state);
+    doc.text('TRAUBE — revisão',16,15);w[name](doc,{dataUrl:png,width:1,height:1},state);
     assert(state.y>20);const output=doc.output();assert.match(output,/^%PDF-/);assert.match(output,/\/Subtype \/Image/);assert(output.length>3000);
   }
 });
@@ -38,7 +38,7 @@ test('real jsPDF preserves Caderno multi-page canvas slicing and PCR export API'
   assert(doc.getNumberOfPages()>1);assert.match(doc.output(),/^%PDF-/);
   const saved=[];const Real=w.jspdf.jsPDF;
   w.jspdf.jsPDF=function(...args){const result=new Real(...args);result.save=name=>saved.push({name,pdf:result.output()});return result;};
-  w.LuriaLocalOwnerStore={ownerId:'synthetic'};w.eval(read('assets/js/pcr-store.js'));
-  w.LuriaPCRStore.pdf({id:'synthetic',mode:'adult',events:[],shock_count:0,care_info:'Dados sintéticos'}, {initials:'QA'});
+  w.TraubeLocalOwnerStore={ownerId:'synthetic'};w.eval(read('assets/js/pcr-store.js'));
+  w.TraubePCRStore.pdf({id:'synthetic',mode:'adult',events:[],shock_count:0,care_info:'Dados sintéticos'}, {initials:'QA'});
   assert.equal(saved[0].name,'luria-pcr-synthetic.pdf');assert.match(saved[0].pdf,/^%PDF-/);
 });

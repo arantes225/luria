@@ -1,5 +1,5 @@
 @layer luria-ui-startup {
-/* Only an original LURIA module framed by its admitted room gets this class. */
+/* Only an original TRAUBE module framed by its admitted room gets this class. */
 html.room-native-embed {height:auto!important;min-height:100%!important;overflow:auto!important;}
 html.room-native-embed body {min-width:0!important;min-height:100dvh!important;height:auto!important;max-height:none!important;overflow:visible!important;background:var(--color-surface)!important;}
 html.room-native-embed .page {height:auto!important;max-height:none!important;overflow:visible!important;}

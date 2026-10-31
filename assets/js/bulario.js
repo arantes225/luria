@@ -186,7 +186,7 @@
     detail.innerHTML=`${mobileDetailBar(row)}<header class="rx-detail-head"><div class="drug-kicker">${ready?'Ficha de posologia por apresentação':summary?'Resumo da bula':'Ficha em revisão'}</div><h2>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</h2><p class="drug-sub">${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<strong>Nome comercial/referência:</strong> ${esc(row.name)} · `:''}${esc(d.therapeutic_class||row.pharmacological_class||'Classe a confirmar')}</p></header>
       <div class="rx-bridge-actions">
         ${relatedProtocols.map(p=>`<button type="button" data-open-protocol="${esc(p.slug)}">Abrir protocolo: ${esc(p.title)}</button>`).join("")}
-        <button type="button" class="secondary" data-send-note="1">${window.LuriaClinicalBridge?.inPrescriptionFlow?.() ? "Adicionar à prescrição" : "Enviar à Cola Rápida"}</button>
+        <button type="button" class="secondary" data-send-note="1">${window.TraubeClinicalBridge?.inPrescriptionFlow?.() ? "Adicionar à prescrição" : "Enviar à Cola Rápida"}</button>
       </div>
       <section class="rx-section"><div class="rx-section-head"><h3>Principais indicações</h3></div>${diseases.length?`<div class="rx-tags">${diseases.map(item=>`<span>${esc(item)}</span>`).join('')}</div>`:'<p class="rx-note">Indicações ainda não vinculadas nesta ficha.</p>'}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Nomes e produtos</h3></div>${products.length?`<div class="rx-products">${products.map(p=>`<span><b>${esc(p.name)}</b> · ${esc(p.type)} · ${esc(p.presentation)}</span>`).join('')}</div>`:`<p class="rx-note">${esc(row.name)}${row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?` · princípio ativo: ${esc(row.active_ingredient)}`:''}. Outras marcas e genéricos ainda não vinculados.</p>`}</section>
@@ -250,10 +250,10 @@
         setTimeout(() => { btn.textContent = old; }, 1500);
       });
     });
-    detail.querySelectorAll("[data-open-protocol]").forEach(btn=>btn.addEventListener("click",()=>window.LuriaClinicalBridge?.openProtocol(btn.dataset.openProtocol)));
+    detail.querySelectorAll("[data-open-protocol]").forEach(btn=>btn.addEventListener("click",()=>window.TraubeClinicalBridge?.openProtocol(btn.dataset.openProtocol)));
     detail.querySelector("[data-send-note=\"1\"]")?.addEventListener("click",(event)=>{
-      const ok=window.LuriaClinicalBridge?.toQuickChart({type:"drug",title:row.active_ingredient||row.name,text:drugText(row),source:"Bulário LURIA"});
-      if(window.LuriaClinicalBridge?.inPrescriptionFlow?.() && ok){
+      const ok=window.TraubeClinicalBridge?.toQuickChart({type:"drug",title:row.active_ingredient||row.name,text:drugText(row),source:"Bulário TRAUBE"});
+      if(window.TraubeClinicalBridge?.inPrescriptionFlow?.() && ok){
         const btn=event.currentTarget;
         const old=btn.textContent;
         btn.textContent="Adicionado ✓";
@@ -316,8 +316,8 @@
   window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(true); });
   search.addEventListener('input',renderList);
   (async()=>{
-    const localSeeds=Array.isArray(window.LURIA_BULARIO_SEEDS)?window.LURIA_BULARIO_SEEDS:[];
-    const localProtoSeeds=Array.isArray(window.LURIA_PROTOCOL_SEEDS)?window.LURIA_PROTOCOL_SEEDS:[];
+    const localSeeds=Array.isArray(window.TRAUBE_BULARIO_SEEDS)?window.TRAUBE_BULARIO_SEEDS:[];
+    const localProtoSeeds=Array.isArray(window.TRAUBE_PROTOCOL_SEEDS)?window.TRAUBE_PROTOCOL_SEEDS:[];
     let data=[],error=null,protocolRows=[];
     if(window.supabaseClient){
       try{

@@ -1,13 +1,13 @@
-# LURIA — Lote 7 · Aula 138
+# TRAUBE — Lote 7 · Aula 138
 # Crises convulsivas e estado de mal epiléptico — Pediatria e Emergência
 
 **Área:** Pediatria / Neurologia / Atendimento de Emergência. **Estado:** rascunho original em revisão, NÃO PUBLICADO. **Atualizado:** 14/10/2026.  
 **Fontes prioritárias:** PCDT de Epilepsia do Ministério da Saúde, anexo alterado **05/05/2026**; NICE NG217, tratamento de status (atualizado 2025); AES guideline de status convulsivo (2016) como base clássica; fluxograma CHOP pediátrico atualizado; NHS GGC Pediatric Status Epilepticus 05/05/2026. O escopo é acima do período neonatal; neonatal exige protocolo específico.
 
 ## 0. Auditoria anterior à redação
-**LURIA:** não foi identificada pasta exclusiva de crises/estado de mal entre apostilas publicadas; aula 133 já aborda crises em meningite e encefalite, mas não substitui diferencial epileptológico nem algoritmo de crise prolongada. A aula 123 trata lactente febril e deve ajudar a definir probabilidade de infecção invasiva; não equivale a crise convulsiva simples.
+**TRAUBE:** não foi identificada pasta exclusiva de crises/estado de mal entre apostilas publicadas; aula 133 já aborda crises em meningite e encefalite, mas não substitui diferencial epileptológico nem algoritmo de crise prolongada. A aula 123 trata lactente febril e deve ajudar a definir probabilidade de infecção invasiva; não equivale a crise convulsiva simples.
 
-**Google Drive:** busca por “estado de mal epiléptico”, “epilepsia”, “convulsões” não localizou um capítulo de neuropediatria equivalente. Foi **aberto e lido** “09 - CIRURGIA ANESTESICOS LOCAIS.pdf” (~5,5 mil caracteres), um material **somente correlato**, cujo tópico de intoxicação sistêmica de anestésico local inclui sintomas premonitórios, crises convulsivas e colapso cardiovascular; sua abordagem de EMEs é superficial/fora de escopo. Não transcrever esse resumo nem usar seus valores de doses sem conferir diretriz apropriada. A etapa zero equivalente permanece **pendente** e não será certificada como concluída integralmente. Não se atribui autoria material de referência sem comprovação. Uma apostila LURIA já padronizada de outra matéria, \`apostilas/infertilidade-conjugal/index.html\`, foi lida como modelo editorial geral, sem reutilizar estrutura gráfica protegida de terceiros.
+**Google Drive:** busca por “estado de mal epiléptico”, “epilepsia”, “convulsões” não localizou um capítulo de neuropediatria equivalente. Foi **aberto e lido** “09 - CIRURGIA ANESTESICOS LOCAIS.pdf” (~5,5 mil caracteres), um material **somente correlato**, cujo tópico de intoxicação sistêmica de anestésico local inclui sintomas premonitórios, crises convulsivas e colapso cardiovascular; sua abordagem de EMEs é superficial/fora de escopo. Não transcrever esse resumo nem usar seus valores de doses sem conferir diretriz apropriada. A etapa zero equivalente permanece **pendente** e não será certificada como concluída integralmente. Não se atribui autoria material de referência sem comprovação. Uma apostila TRAUBE já padronizada de outra matéria, \`apostilas/infertilidade-conjugal/index.html\`, foi lida como modelo editorial geral, sem reutilizar estrutura gráfica protegida de terceiros.
 
 ## 1. Definir corretamente crise, epilepsia e estado de mal
 **Crise epiléptica** é manifestação transitória de atividade neuronal anormal excessiva ou síncrona, com sintomas motores, sensitivos, autonômicos, cognitivos ou comportamentais. **Convulsão** é a expressão motora evidente em parte das crises; **nem toda crise epiléptica causa abalos**. Crise focal com alteração comportamental, ausência ou atividade não convulsiva podem ser esquecidas se o clínico só procurar movimentos tônico-clônicos.
@@ -146,7 +146,7 @@ Adolescente com convulsão e Na 116 mEq/L. Qual raciocínio?
 A. Epilepsia crônica é diagnóstico automático. B. Apenas sedação prolongada. C. Trata-se provável crise aguda sintomática, exigindo manejo seguro da hiponatremia grave além do controle da crise. D. Não é urgência.  
 **Gabarito C.** O distúrbio causal requer correção e monitorização. **A** infere epilepsia sem evidência; **B** não corrige causa; **D** ignora risco. **Pulo:** reverter causa metabólica.
 
-## 12. Pérolas LURIA e resumo
+## 12. Pérolas TRAUBE e resumo
 - Crise epiléptica pode ser não convulsiva; convulsão não define epilepsia.
 - Em EME tônico-clônico, cinco minutos é limiar para tratar; 30 min não é “tempo para esperar”.
 - Não inserir objetos na boca, não conter membros e não dar medicação oral durante crise.
@@ -328,7 +328,7 @@ Convulsão em gestante/puérpera pode representar **eclâmpsia**, mesmo sem ante
 
 ## 21. Classificação ILAE 2025 — atualização obrigatória do vocabulário
 
-A **International League Against Epilepsy** publicou em **23 de abril de 2025** uma revisão operacional da classificação dos tipos de crise (Beniczky et al., *Epilepsia* 2025, DOI 10.1111/epi.18338). A aula original apresentou nomes baseados em 2017 por familiaridade de prova e prática, mas uma apostila LURIA atualizada em 2026 precisa explicitar o que mudou. **A versão de 2025 mantém a arquitetura geral, não transforma tipos de crise em doenças novas e não substitui a classificação de síndromes epilépticas.**
+A **International League Against Epilepsy** publicou em **23 de abril de 2025** uma revisão operacional da classificação dos tipos de crise (Beniczky et al., *Epilepsia* 2025, DOI 10.1111/epi.18338). A aula original apresentou nomes baseados em 2017 por familiaridade de prova e prática, mas uma apostila TRAUBE atualizada em 2026 precisa explicitar o que mudou. **A versão de 2025 mantém a arquitetura geral, não transforma tipos de crise em doenças novas e não substitui a classificação de síndromes epilépticas.**
 
 ### 21.1. Quatro classes principais, em vez de assumir sempre um início documentado
 1. **Focal:** crise de rede localizada em um hemisfério, com propagação possível; consciência pode estar preservada ou comprometida.

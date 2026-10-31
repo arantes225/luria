@@ -128,7 +128,7 @@ const ERROR_MESSAGES = {
   request_in_progress: "Uma resposta ainda está sendo processada. Aguarde antes de enviar outra pergunta.",
   duplicate_request: "Esta pergunta já foi processada ou está em processamento.",
   request_conflict: "Não foi possível confirmar esta solicitação. Atualize a página.",
-  unauthorized: "Entre na sua conta da LURIA para conversar com o Leco.",
+  unauthorized: "Entre na sua conta da TRAUBE para conversar com o Leco.",
   empty_prompt: "Digite uma pergunta ou informe o tema que deseja estudar.",
   invalid_body: "Os dados da aula não puderam ser enviados. Tente novamente.",
   payload_too_large: "O material é muito grande. Utilize um PDF menor.",
@@ -141,7 +141,7 @@ const ERROR_MESSAGES = {
   gemini_billing_required: "O Google exige uma configuração de faturamento ou quota neste projeto. Verifique o projeto associado à chave no AI Studio.",
   gemini_model_unavailable: "O modelo configurado não está disponível para esta chave. Confira os modelos habilitados no projeto do Google AI Studio.",
   gemini_api_disabled: "A API Gemini não está habilitada no projeto Google associado à chave.",
-  gemini_invalid_request: "O Google recusou o formato da requisição. Informe o erro ao suporte da LURIA.",
+  gemini_invalid_request: "O Google recusou o formato da requisição. Informe o erro ao suporte da TRAUBE.",
   gemini_connection_failed: "O Supabase não conseguiu se comunicar com o Google. Tente novamente.",
   gemini_rate_limited: "O Gemini atingiu o limite de requisições. Tente novamente mais tarde.",
   gemini_unavailable: "O Gemini não conseguiu responder agora. Tente novamente.",
@@ -612,7 +612,7 @@ if (form) {
       }
       return;
     }
-    // O índice da LURIA é apenas um reforço opcional. Perguntas médicas
+    // O índice da TRAUBE é apenas um reforço opcional. Perguntas médicas
     // gerais devem seguir para o tutor clínico completo.
     // Don't fetch the full site index for ordinary questions: it is only useful when
     // a study material is attached. Start it concurrently with file preparation.

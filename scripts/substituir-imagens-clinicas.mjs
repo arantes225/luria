@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const USER_AGENT = 'LuriaBot/1.0 (editorial@luria.med.br)';
+const USER_AGENT = 'TraubeBot/1.0 (editorial@luria.med.br)';
 
 // Mapeamento semântico de termos de busca em inglês para a Wikimedia Commons
 function getSearchQuery(title, didactic) {

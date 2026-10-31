@@ -373,7 +373,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
           } catch (_) { /* Preserve the friendly fallback below. */ }
         }
         const messages = {
-          unauthorized: 'Entre na sua conta da LURIA para conversar com o Leco.',
+          unauthorized: 'Entre na sua conta da TRAUBE para conversar com o Leco.',
           gemini_secret_missing: 'O backend do Leco está sem a configuração do Gemini.',
           gemini_key_rejected: 'A configuração da API do Gemini foi recusada. Tente novamente mais tarde.',
           gemini_key_invalid: 'A chave da API do Gemini está inválida ou expirada.',

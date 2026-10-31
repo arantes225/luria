@@ -1,4 +1,4 @@
-# Central social LURIA — auditoria de 13/10/2026
+# Central social TRAUBE — auditoria de 13/10/2026
 
 Repositório: `arantes225/luria`, base `main`. Não houve alteração ou publicação no ambiente remoto.
 
@@ -14,14 +14,14 @@ Repositório: `arantes225/luria`, base `main`. Não houve alteração ou publica
 - Supabase confirmado por inspeção **somente de leitura** do catálogo: RLS nas tabelas sociais existentes; RPCs públicas invocam funções privilegiadas no schema `private`. Não existem grupos, salas nem chat persistente.
 - Amizades atuais são arestas sem aceite. Migrar mantendo arestas existentes aceitas; pedidos novos precisam de aprovação.
 - Exemplos de salas, grupos, convites e sugestões são fictícios. Salas locais guardam apenas nome/código/data em `luria:study-rooms`, sem controle de acesso ou colaboração.
-- `LuriaStudyTimer` em `app.js`: sessão individual persistente, pausa por inatividade, gravação em `study_sessions`, continuidade entre páginas. Reutilizar para tempo efetivo; timer coletivo representa a fase da sessão, sem pontuação duplicada.
+- `TraubeStudyTimer` em `app.js`: sessão individual persistente, pausa por inatividade, gravação em `study_sessions`, continuidade entre páginas. Reutilizar para tempo efetivo; timer coletivo representa a fase da sessão, sem pontuação duplicada.
 - Questões: `question_sets` e `question_items` individuais, `question_bank` central. Não ampliar RLS individual para expor gabaritos; resolução coletiva precisa de projeção no servidor que omite respostas até a revelação.
 - PWA: `service-worker.js`, shell pré-cacheado, limites de cache e rotas canônicas. Realtime e voz exigem conectividade.
 - Há Supabase Edge Functions. Não há Worker/SFU de voz configurado no repositório. Segredos e autorização SFU devem ficar no servidor.
 
 ## Preservação e reutilização
 
-Logo LURIA, sprites e personalizações, desafios e regras, dados de amizades e compartilhamentos, timer e métricas individuais, banco/listas de questões, autenticação, navegação, temas e componentes globais. Novos estilos ficam restritos à página social.
+Logo TRAUBE, sprites e personalizações, desafios e regras, dados de amizades e compartilhamentos, timer e métricas individuais, banco/listas de questões, autenticação, navegação, temas e componentes globais. Novos estilos ficam restritos à página social.
 
 ## Implementação proposta
 

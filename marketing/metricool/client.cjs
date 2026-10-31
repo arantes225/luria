@@ -37,7 +37,7 @@ class MetricoolMcpClient {
         ok: false,
         fallback: true,
         message: 'Metricool não autenticado. Configure OAuth ou defina METRICOOL_API_TOKEN.',
-        brands: [{ id: 'mock-brand-luria', label: 'LURIA Medicina (Simulado)', timezone: 'America/Sao_Paulo' }]
+        brands: [{ id: 'mock-brand-luria', label: 'TRAUBE Medicina (Simulado)', timezone: 'America/Sao_Paulo' }]
       };
     }
     // Chamada oficial ao tool get_brands do MCP Metricool

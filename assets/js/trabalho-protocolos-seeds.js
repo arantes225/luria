@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  window.LURIA_PROTOCOL_SEEDS = [
+  window.TRAUBE_PROTOCOL_SEEDS = [
   {
     "id": "seed-sepse",
     "slug": "sepse-e-choque-septico-ssc-2021",
@@ -3467,7 +3467,7 @@
   }
 ];
 
-  window.LURIA_RECIPE_SEEDS = [
+  window.TRAUBE_RECIPE_SEEDS = [
   {
     "id": "rec-seed-sepse",
     "slug": "prescricao-sepse-hora-1",

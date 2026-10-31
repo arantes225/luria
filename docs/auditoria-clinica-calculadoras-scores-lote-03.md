@@ -1,4 +1,4 @@
-# LURIA — auditoria clínica, lote 3/6 (ferramentas 61–90)
+# TRAUBE — auditoria clínica, lote 3/6 (ferramentas 61–90)
 
 **Data:** 24/10/2026  
 **Abrangência:** 11 calculadoras finais (61–71) + 19 escores iniciais (01–19).  

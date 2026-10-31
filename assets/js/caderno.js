@@ -828,7 +828,7 @@ async function createNotebookShareLink(
 
   if (error) {
     console.error(error);
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       `Não foi possível compartilhar: ${error.message}`
     );
     return;
@@ -856,7 +856,7 @@ async function createNotebookShareLink(
       "saved"
     );
   } catch {
-    await window.LuriaDialog.prompt(
+    await window.TraubeDialog.prompt(
       "Copie o link do material:",
       url.toString()
     );
@@ -1289,7 +1289,7 @@ async function materializeNotebookImagesForShare(
 
 async function createNotebookBundleToken(
   entries,
-  title = "Cadernos LURIA",
+  title = "Cadernos TRAUBE",
   mode = "view"
 ) {
   const owned =
@@ -1361,7 +1361,7 @@ async function openNotebookShareDialog(
     return;
   }
 
-  if (!window.LuriaSharing) {
+  if (!window.TraubeSharing) {
     setSaveStatus(
       "O compartilhamento não carregou. Atualize a página.",
       "error"
@@ -1397,7 +1397,7 @@ async function openNotebookShareDialog(
       );
     };
 
-  await window.LuriaSharing.open({
+  await window.TraubeSharing.open({
     title,
 
     count:
@@ -1458,7 +1458,7 @@ async function openNotebookShareDialog(
           );
 
         } catch {
-          await window.LuriaDialog.prompt(
+          await window.TraubeDialog.prompt(
             "Copie o link:",
             url.toString()
           );
@@ -1500,7 +1500,7 @@ async function openNotebookShareDialog(
         }
 
         setSaveStatus(
-          "Material enviado dentro do LURIA",
+          "Material enviado dentro do TRAUBE",
           "saved"
         );
       },
@@ -1566,7 +1566,7 @@ async function redeemNotebookBundleFromUrl() {
   if (error) {
     console.error(error);
 
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       `Não foi possível adicionar os cadernos: ${error.message}`
     );
 
@@ -1607,7 +1607,7 @@ async function redeemNotebookShareFromUrl() {
     return null;
   }
 
-  const personalize = await window.LuriaDialog.confirm(
+  const personalize = await window.TraubeDialog.confirm(
       "Deseja personalizar este material?\n\nOK = adicionar e editar em cima\nCancelar = adicionar somente para leitura"
     );
 
@@ -1630,7 +1630,7 @@ async function redeemNotebookShareFromUrl() {
 
   if (error) {
     console.error(error);
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       `Não foi possível adicionar o material: ${error.message}`
     );
     return null;
@@ -3435,7 +3435,7 @@ async function renameCurrentNotebookTitle(nextTitle) {
   }
 
   if (current.note?.is_shared) {
-    window.LuriaDialog?.alert?.("O título de um caderno compartilhado não pode ser renomeado por aqui.");
+    window.TraubeDialog?.alert?.("O título de um caderno compartilhado não pode ser renomeado por aqui.");
     renderDocument();
     return;
   }
@@ -3954,7 +3954,7 @@ async function createFreePage() {
 
   } catch (error) {
     console.error(error);
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       `Não foi possível criar a página: ${error?.message || "erro desconhecido"}`
     );
   } finally {
@@ -5923,7 +5923,7 @@ async function addNotebookImages(
     Math.max(
       0,
       Number(
-        window.LuriaEntitlements
+        window.TraubeEntitlements
           ?.limit(
             "notebook_images",
             2
@@ -5942,7 +5942,7 @@ async function addNotebookImages(
   if (
     remaining <= 0
   ) {
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       `Este caderno já possui o máximo de ${maxImages} imagem${maxImages === 1 ? "" : "s"}.`
     );
 
@@ -5982,7 +5982,7 @@ async function addNotebookImages(
     ).length
     > remaining
   ) {
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       `Você pode adicionar no máximo ${maxImages} imagem${maxImages === 1 ? "" : "s"} por caderno. Serão inseridas apenas ${remaining}.`
     );
   }
@@ -14515,7 +14515,7 @@ async function chooseNotionPageDestination(pageId) {
   dialog.innerHTML =
     '<form method="dialog" class="notebook-notion-move-form">'+
       '<div class="notebook-modal-head"><div><span class="badge accent">Notion</span><h2>Mover página</h2></div><button type="button" class="notebook-modal-close" data-notion-move-cancel>×</button></div>'+
-      '<p class="notebook-move-copy">Escolha onde esta página deve aparecer dentro da LURIA.</p>'+
+      '<p class="notebook-move-copy">Escolha onde esta página deve aparecer dentro da TRAUBE.</p>'+
       '<label class="notebook-modal-field"><span>Área</span><input id="notion-move-area" list="notion-move-areas" autocomplete="off" required><datalist id="notion-move-areas">'+areas.map(value=>'<option value="'+escapeHtml(value)+'"></option>').join("")+'</datalist></label>'+
       '<label class="notebook-modal-field"><span>Caderno</span><input id="notion-move-subject" list="notion-move-subjects" autocomplete="off" required><datalist id="notion-move-subjects"></datalist></label>'+
       '<div class="notebook-modal-actions"><button type="button" class="button secondary" data-notion-move-cancel>Cancelar</button><button type="submit" class="button primary">Mover</button></div>'+
@@ -14551,7 +14551,7 @@ async function chooseNotionPageDestination(pageId) {
       setSaveStatus("Página movida para "+area+" · "+materia,"saved");
     } catch (error) {
       console.error(error);
-      window.LuriaDialog?.alert?.("Não foi possível mover a página: "+(error?.message||"erro desconhecido"));
+      window.TraubeDialog?.alert?.("Não foi possível mover a página: "+(error?.message||"erro desconhecido"));
     }
   });
 
@@ -14579,7 +14579,7 @@ async function deleteNotionInboxPage(pageId) {
   const page = (notionSourceState.pages || []).find(item => String(item.id) === String(pageId));
   if (!page) return;
 
-  const ok = await window.LuriaDialog?.confirm?.(
+  const ok = await window.TraubeDialog?.confirm?.(
     'Apagar "'+(page.title || "esta página")+'" diretamente do Notion? Ela será enviada para a lixeira do Notion.'
   );
   if (ok === false) return;
@@ -14639,8 +14639,8 @@ function renderLibrary() {
     ["Preventiva","SUS"],["Preventiva","Epidemiologia"],["Preventiva","Atenção Primária"]
   ];
 
-  const areaIcon = area => window.LuriaMedicalIcons?.svg
-    ? window.LuriaMedicalIcons.svg(area)
+  const areaIcon = area => window.TraubeMedicalIcons?.svg
+    ? window.TraubeMedicalIcons.svg(area)
     : '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l2-4 3 8 2-4h7"/></svg>';
 
   const subjectFor = entry => entry.note?.materia || entry.topic?.materia || "Outros";
@@ -14725,10 +14725,10 @@ function renderLibrary() {
     closeNotionInboxMenus();
     try{
       await hideNotionInboxPage(button.dataset.notionInboxHide);
-      setSaveStatus("Página ocultada da LURIA","saved");
+      setSaveStatus("Página ocultada da TRAUBE","saved");
     }catch(error){
       console.error(error);
-      window.LuriaDialog?.alert?.("Não foi possível ocultar a página: "+(error?.message||"erro desconhecido"));
+      window.TraubeDialog?.alert?.("Não foi possível ocultar a página: "+(error?.message||"erro desconhecido"));
     }
   }));
 
@@ -14741,7 +14741,7 @@ function renderLibrary() {
       setSaveStatus("Página apagada do Notion","saved");
     }catch(error){
       console.error(error);
-      window.LuriaDialog?.alert?.("Não foi possível apagar a página: "+(error?.message||"erro desconhecido"));
+      window.TraubeDialog?.alert?.("Não foi possível apagar a página: "+(error?.message||"erro desconhecido"));
     }
   }));
 
@@ -14776,7 +14776,7 @@ function renderLibrary() {
         setSaveStatus("Página do Notion organizada em "+subject,"saved");
       }catch(error){
         console.error(error);
-        window.LuriaDialog?.alert?.("Não foi possível mover a página do Notion: "+(error?.message||"erro desconhecido"));
+        window.TraubeDialog?.alert?.("Não foi possível mover a página do Notion: "+(error?.message||"erro desconhecido"));
       }
     });
   });
@@ -14804,21 +14804,21 @@ function renderLibrary() {
     const pages=(realByArea.get(area)||[]).filter(e=>subjectFor(e)===subject);
     closeBookMenus();
     if(!pages.length){
-      await window.LuriaDialog?.alert?.("Crie ao menos uma página neste caderno antes de renomeá-lo.");
+      await window.TraubeDialog?.alert?.("Crie ao menos uma página neste caderno antes de renomeá-lo.");
       return;
     }
-    const next=String(await window.LuriaDialog.prompt("Novo nome do caderno:",subject)||"").trim();
+    const next=String(await window.TraubeDialog.prompt("Novo nome do caderno:",subject)||"").trim();
     if(!next || next===subject)return;
     const owned=pages.filter(e=>!e.note?.is_shared && e.note?.user_id===notebookState.user?.id);
     if(!owned.length){
-      await window.LuriaDialog?.alert?.("Este caderno não pode ser renomeado porque você não é o proprietário.");
+      await window.TraubeDialog?.alert?.("Este caderno não pode ser renomeado porque você não é o proprietário.");
       return;
     }
     const ids=owned.map(e=>e.note.id);
     const {data,error}=await notebookSb.from("study_notes").update({materia:next}).in("id",ids).eq("user_id",notebookState.user.id).select("id,materia,updated_at");
     if(error){
       console.error(error);
-      await window.LuriaDialog?.alert?.("Não foi possível renomear o caderno: "+error.message);
+      await window.TraubeDialog?.alert?.("Não foi possível renomear o caderno: "+error.message);
       return;
     }
     (data||[]).forEach(row=>{
@@ -14835,21 +14835,21 @@ function renderLibrary() {
     const pages=(realByArea.get(area)||[]).filter(e=>subjectFor(e)===subject);
     closeBookMenus();
     if(!pages.length){
-      await window.LuriaDialog?.alert?.("Este caderno ainda não possui páginas para apagar.");
+      await window.TraubeDialog?.alert?.("Este caderno ainda não possui páginas para apagar.");
       return;
     }
     const owned=pages.filter(e=>!e.note?.is_shared && e.note?.user_id===notebookState.user?.id);
     if(!owned.length){
-      await window.LuriaDialog?.alert?.("Este caderno não pode ser apagado porque você não é o proprietário.");
+      await window.TraubeDialog?.alert?.("Este caderno não pode ser apagado porque você não é o proprietário.");
       return;
     }
-    const confirmed=await window.LuriaDialog.confirm('Apagar o caderno "'+subject+'" e '+owned.length+' página'+(owned.length===1?"":"s")+'? Esta ação não pode ser desfeita.');
+    const confirmed=await window.TraubeDialog.confirm('Apagar o caderno "'+subject+'" e '+owned.length+' página'+(owned.length===1?"":"s")+'? Esta ação não pode ser desfeita.');
     if(!confirmed)return;
     const ids=owned.map(e=>e.note.id);
     const {error}=await notebookSb.from("study_notes").delete().in("id",ids).eq("user_id",notebookState.user.id);
     if(error){
       console.error(error);
-      await window.LuriaDialog?.alert?.("Não foi possível apagar o caderno: "+error.message);
+      await window.TraubeDialog?.alert?.("Não foi possível apagar o caderno: "+error.message);
       return;
     }
     owned.forEach(entry=>{
@@ -14886,7 +14886,7 @@ function renderLibrary() {
   }));
   list.querySelectorAll("[data-notebook-add-subject]").forEach(button=>button.addEventListener("click",async()=>{
     const area=decodeURIComponent(button.dataset.notebookAddSubject||"");
-    const subject=String(await window.LuriaDialog.prompt("Nome da matéria:","")||"").trim();
+    const subject=String(await window.TraubeDialog.prompt("Nome da matéria:","")||"").trim();
     if(!subject)return;
 
     openFreePageModal();
@@ -16099,7 +16099,7 @@ function addNotebookCanvasToPdf(
       "MEDIUM"
     );
 
-    window.LuriaPdfBranding
+    window.TraubePdfBranding
       ?.decoratePage(
         doc,
         assets,
@@ -16224,7 +16224,7 @@ function addNotebookStructuredFallback(
 
   const decorate =
     () => {
-      window.LuriaPdfBranding
+      window.TraubePdfBranding
         ?.decoratePage(
           doc,
           assets,
@@ -16410,7 +16410,7 @@ async function exportSelectedPdf() {
   if (
     !jsPDF
   ) {
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       "Não foi possível carregar o exportador de PDF."
     );
 
@@ -16458,7 +16458,7 @@ async function exportSelectedPdf() {
   try {
     try {
       assets =
-        await window.LuriaPdfBranding
+        await window.TraubePdfBranding
           ?.getAssets?.();
     } catch (
       brandingError
@@ -16512,7 +16512,7 @@ async function exportSelectedPdf() {
       }
     }
 
-    window.LuriaPdfBranding
+    window.TraubePdfBranding
       ?.finalize(
         doc
       );
@@ -16527,7 +16527,7 @@ async function exportSelectedPdf() {
       error
     );
 
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       `Não foi possível gerar o PDF: ${error.message || "erro desconhecido"}`
     );
   }
@@ -16681,7 +16681,7 @@ async function deleteCurrentNotebook() {
   if (
     !current?.note?.id
   ) {
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       "Este caderno ainda não possui conteúdo salvo para apagar."
     );
 
@@ -16690,7 +16690,7 @@ async function deleteCurrentNotebook() {
     return;
   }
 
-  const confirmed = await window.LuriaDialog.confirm(
+  const confirmed = await window.TraubeDialog.confirm(
       `Apagar "${current.title}"? Esta ação não pode ser desfeita.`
     );
 
@@ -16729,7 +16729,7 @@ async function deleteCurrentNotebook() {
       error
     );
 
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       `Não foi possível apagar: ${error.message}`
     );
 
@@ -16918,7 +16918,7 @@ async function deleteSelectedNotes() {
   }
 
 
-  const confirmed = await window.LuriaDialog.confirm(
+  const confirmed = await window.TraubeDialog.confirm(
       `${parts.join(". ")}. Continuar?`
     );
 
@@ -16967,7 +16967,7 @@ async function deleteSelectedNotes() {
         deleteOwnedError
       );
 
-      window.LuriaDialog.alert(
+      window.TraubeDialog.alert(
         `Não foi possível apagar seus cadernos: ${deleteOwnedError.message}`
       );
 
@@ -17031,7 +17031,7 @@ async function deleteSelectedNotes() {
         error
       );
 
-      window.LuriaDialog.alert(
+      window.TraubeDialog.alert(
         `Não foi possível remover o material compartilhado: ${error.message}`
       );
 
@@ -17213,7 +17213,7 @@ function renderNotionPages(pages = notionSourceState.pages) {
   );
 
   if (!notionSourceState.connected) {
-    list.innerHTML = '<div class="notebook-notion-empty"><strong>Notion ainda não conectado</strong><span>Se você já usa Notion, conecte sua conta. Os cadernos nativos da LURIA continuam funcionando normalmente.</span></div>';
+    list.innerHTML = '<div class="notebook-notion-empty"><strong>Notion ainda não conectado</strong><span>Se você já usa Notion, conecte sua conta. Os cadernos nativos da TRAUBE continuam funcionando normalmente.</span></div>';
     return;
   }
 
@@ -17228,7 +17228,7 @@ function renderNotionPages(pages = notionSourceState.pages) {
       '<div class="notebook-notion-card-copy"><strong>'+escapeHtml(page.title || "Página sem título")+'</strong>'+
       '<span>'+escapeHtml(page.path || "Notion")+'</span></div>'+
       '<div class="notebook-notion-card-actions">'+
-      '<button type="button" data-notion-open="'+id+'">Abrir na LURIA</button>'+
+      '<button type="button" data-notion-open="'+id+'">Abrir na TRAUBE</button>'+
       '</div></article>';
   }).join("");
 
@@ -17364,7 +17364,7 @@ async function saveNotionEdit() {
     }
   } catch (error) {
     console.error("Notion save:", error);
-    window.LuriaDialog?.alert?.(
+    window.TraubeDialog?.alert?.(
       /permission|capabilit|unauthor/i.test(String(error?.message || ""))
         ? "A conexão do Notion precisa ter permissão para atualizar conteúdo."
         : (error?.message || "Não foi possível salvar as alterações no Notion.")
@@ -17385,7 +17385,7 @@ async function addNotionParagraph() {
     await openNotionPage(notionSourceState.currentPage);
     beginNotionEdit();
   } catch (error) {
-    window.LuriaDialog?.alert?.(error?.message || "Não foi possível adicionar um parágrafo.");
+    window.TraubeDialog?.alert?.(error?.message || "Não foi possível adicionar um parágrafo.");
   }
 }
 
@@ -17445,7 +17445,7 @@ async function connectNotion() {
       const state = await invokeNotionFunction("notion-api", { action: "status" });
       notionSourceState.configured = Boolean(state?.configured);
       if (!notionSourceState.configured) {
-        await window.LuriaDialog?.alert?.("Integração do Notion ainda não configurada pelo administrador.");
+        await window.TraubeDialog?.alert?.("Integração do Notion ainda não configurada pelo administrador.");
         return;
       }
     }
@@ -17461,12 +17461,12 @@ async function connectNotion() {
       /non-2xx|notion_not_configured|NOTION_CLIENT_ID|503/i.test(message)
         ? "Integração do Notion ainda não configurada pelo administrador."
         : (message || "Não foi possível iniciar a conexão com o Notion.");
-    window.LuriaDialog?.alert?.(friendly);
+    window.TraubeDialog?.alert?.(friendly);
   }
 }
 
 async function disconnectNotion() {
-  const ok = await window.LuriaDialog?.confirm?.("Desconectar o Notion desta conta?");
+  const ok = await window.TraubeDialog?.confirm?.("Desconectar o Notion desta conta?");
   if (ok === false) return;
 
   try {
@@ -17477,7 +17477,7 @@ async function disconnectNotion() {
     updateNotionConnectionUi();
     renderNotionPages([]);
   } catch (error) {
-    window.LuriaDialog?.alert?.(error?.message || "Não foi possível desconectar o Notion.");
+    window.TraubeDialog?.alert?.(error?.message || "Não foi possível desconectar o Notion.");
   }
 }
 
@@ -18998,7 +18998,7 @@ function wireEvents() {
               Math.max(
                 0,
                 Number(
-                  window.LuriaEntitlements
+                  window.TraubeEntitlements
                     ?.limit(
                       "notebook_images",
                       2
@@ -19011,7 +19011,7 @@ function wireEvents() {
               notebookImageCount()
               >= maxImages
             ) {
-              window.LuriaDialog.alert(
+              window.TraubeDialog.alert(
                 `Este caderno já possui o máximo de ${maxImages} imagem${maxImages === 1 ? "" : "s"}.`
               );
 
@@ -19168,7 +19168,7 @@ function wireEvents() {
       }
       const noteId = getCurrentDocument()?.note?.id;
       if (!noteId) {
-        window.LuriaDialog.alert("Salve a anotação antes de compartilhar.");
+        window.TraubeDialog.alert("Salve a anotação antes de compartilhar.");
         return;
       }
       const entry = getCurrentDocument();
@@ -19178,7 +19178,7 @@ function wireEvents() {
       );
     } catch (error) {
       console.error(error);
-      window.LuriaDialog.alert("Não foi possível compartilhar esta anotação.");
+      window.TraubeDialog.alert("Não foi possível compartilhar esta anotação.");
     }
   });
 
@@ -19188,14 +19188,14 @@ function wireEvents() {
       await deleteCurrentNotebook();
     } catch (error) {
       console.error(error);
-      window.LuriaDialog.alert("Não foi possível excluir esta anotação.");
+      window.TraubeDialog.alert("Não foi possível excluir esta anotação.");
     }
   });
 
   document.getElementById("notebook-inspector-flashcards")?.addEventListener("click", async () => {
     const current = getCurrentDocument();
     if (!current) {
-      window.LuriaDialog.alert("Abra uma anotação antes de transformar em flashcard.");
+      window.TraubeDialog.alert("Abra uma anotação antes de transformar em flashcard.");
       return;
     }
 
@@ -19381,7 +19381,7 @@ function wireEvents() {
         await openNotebookShareDialog(
           entries,
           entries.length === 1
-            ? entries[0]?.title || "Caderno LURIA"
+            ? entries[0]?.title || "Caderno TRAUBE"
             : "Cadernos selecionados"
         );
       }
@@ -20070,7 +20070,7 @@ function ensureNotebookSideTools() {
   col.append(outline,core,quick); col.classList.add("with-side-tools");
   quick.querySelector('[data-quick="save"]').onclick=()=>saveCurrentNotebook(true);
   quick.querySelector('[data-quick="library"]').onclick=()=>switchView("library");
-  quick.querySelector('[data-quick="share"]').onclick=()=>{const d=getCurrentDocument();const e=getLibraryEntries().find(x=>x.note?.id===d?.note?.id);if(e)openNotebookShareDialog([e],e.title||"Caderno LURIA")};
+  quick.querySelector('[data-quick="share"]').onclick=()=>{const d=getCurrentDocument();const e=getLibraryEntries().find(x=>x.note?.id===d?.note?.id);if(e)openNotebookShareDialog([e],e.title||"Caderno TRAUBE")};
   quick.querySelector('[data-quick="pdf"]').onclick=()=>{const d=getCurrentDocument();if(d?.note){notebookState.librarySelected=new Set([d.note.id]);exportSelectedPdf();}};
   document.getElementById("notebook-editor")?.addEventListener("input",()=>{refreshNotebookOutline();renderTopicList();});
 }

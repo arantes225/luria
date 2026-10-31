@@ -167,7 +167,7 @@
     @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-aside{position:static;grid-template-columns:120px minmax(0,1fr);align-items:start}.book-cover{width:120px}.book-back{align-self:start}.flow{grid-template-columns:1fr}.meal-flow{grid-template-columns:repeat(3,1fr)}.mechanism-chain{grid-template-columns:1fr 1fr}.book-grid-2,.complication-grid{grid-template-columns:1fr}}@media(max-width:560px){.book-aside{grid-template-columns:1fr}.book-cover{width:150px}.book-hero h1{font-size:25px}.book-section{padding:16px}.meal-flow{grid-template-columns:repeat(2,1fr)}}
   
 
-/* LURIA — leitura contínua e sumário acessível sem empurrar as últimas seções para fora da tela */
+/* TRAUBE — leitura contínua e sumário acessível sem empurrar as últimas seções para fora da tela */
 .book-outline{top:8px;max-height:calc(100dvh - 16px);padding:10px;overflow-y:auto;overscroll-behavior:contain}
 .book-outline-back{width:100%;height:32px;min-height:32px;margin-bottom:7px;padding:0 8px;font-size:9px}
 .book-outline-head{padding:3px 3px 7px}.book-outline-head small{font-size:7px}.book-outline-head strong{font-size:10.5px}
@@ -321,7 +321,7 @@
 
 
 
-/* --- PADRÃO EDITORIAL ESTRATÉGIA MED / LURIA OURO --- */
+/* --- PADRÃO EDITORIAL ESTRATÉGIA MED / TRAUBE OURO --- */
 .book-cai-na-prova {
   margin: 22px 0;
   padding: 20px 22px;
@@ -389,7 +389,7 @@ body[data-page="aprender"] .book-main .book-safety-note > span {
 }
 
 
-/* LURIA | Leitura editorial confortável + acentos cromáticos por tema.
+/* TRAUBE | Leitura editorial confortável + acentos cromáticos por tema.
    Compartilhado entre o leitor JSON e as apostilas HTML tradicionais. */
 body[data-page="aprender"] .book-main {
   gap: clamp(18px, 2.8vw, 30px) !important;

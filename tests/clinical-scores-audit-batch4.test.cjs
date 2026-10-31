@@ -1,5 +1,5 @@
 'use strict';
-/* LURIA — auditoria escores 20–49 (30 ferramentas).
+/* TRAUBE — auditoria escores 20–49 (30 ferramentas).
  * Executar: node --test tests/clinical-scores-audit-batch4.test.cjs
  * Atenção: testes estruturais e de regressão NÃO são validação prospectiva.
  */

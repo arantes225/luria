@@ -1,6 +1,6 @@
 # Importar dados do PhysioNet para Cloudflare R2
 
-Este fluxo foi preparado para a LURIA sem alterar a aplicacao em producao.
+Este fluxo foi preparado para a TRAUBE sem alterar a aplicacao em producao.
 
 ## Preparacao (uma unica vez)
 

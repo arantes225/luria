@@ -6,7 +6,7 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 
 function drawStatusBar(ctx: CanvasRenderingContext2D, width: number, h: number) {
   ctx.save();
-  // 0. Status bar background in deep institutional blue #184888 matching the LURIA topbar
+  // 0. Status bar background in deep institutional blue #184888 matching the TRAUBE topbar
   ctx.fillStyle = '#184888';
   ctx.fillRect(0, 0, width, h);
 
@@ -261,8 +261,8 @@ export const Phone3DScene: React.FC = () => {
     cardApostilasShadow: THREE.Mesh;
     cardAnotacoesMesh: THREE.Mesh;
     cardAnotacoesShadow: THREE.Mesh;
-    cardLuriazapMesh: THREE.Mesh;
-    cardLuriazapShadow: THREE.Mesh;
+    cardTraubezapMesh: THREE.Mesh;
+    cardTraubezapShadow: THREE.Mesh;
     // Lights
     sheenLight: THREE.PointLight;
     screenLight: THREE.PointLight;
@@ -306,7 +306,7 @@ export const Phone3DScene: React.FC = () => {
           texCardAgenda,
           texCardApostilas,
           texCardAnotacoes,
-          texCardLuriazap,
+          texCardTraubezap,
           texShadow
         ] = await Promise.all([
           loadImage(staticFile('commercial/dashboard-content.png')),
@@ -474,8 +474,8 @@ export const Phone3DScene: React.FC = () => {
           390 * sX,
           210.98 * sY
         );
-        const { card: cardLuriazapMesh, shadow: cardLuriazapShadow } = createCardMesh(
-          texCardLuriazap,
+        const { card: cardTraubezapMesh, shadow: cardTraubezapShadow } = createCardMesh(
+          texCardTraubezap,
           390 * sX,
           210.98 * sY
         );
@@ -500,8 +500,8 @@ export const Phone3DScene: React.FC = () => {
           cardApostilasShadow,
           cardAnotacoesMesh,
           cardAnotacoesShadow,
-          cardLuriazapMesh,
-          cardLuriazapShadow,
+          cardTraubezapMesh,
+          cardTraubezapShadow,
           sheenLight,
           screenLight
         };
@@ -550,8 +550,8 @@ export const Phone3DScene: React.FC = () => {
       cardApostilasShadow,
       cardAnotacoesMesh,
       cardAnotacoesShadow,
-      cardLuriazapMesh,
-      cardLuriazapShadow,
+      cardTraubezapMesh,
+      cardTraubezapShadow,
       sheenLight,
       screenLight
     } = stateRef.current;
@@ -615,7 +615,7 @@ export const Phone3DScene: React.FC = () => {
       });
       sheenLight.position.x = interpolate(frame, [50, 110], [-6, 6]);
     }
-    // SCENE 2: DASHBOARD REAL DA LURIA (Frames 120 to 305 / 4.0-10.16s)
+    // SCENE 2: DASHBOARD REAL DA TRAUBE (Frames 120 to 305 / 4.0-10.16s)
     else if (frame < 305) {
       screenWake = 1;
       const dashFrame = frame - 120;
@@ -894,14 +894,14 @@ export const Phone3DScene: React.FC = () => {
     if (aprenderFade > 0.5) {
       updateCard(cardApostilasMesh, cardApostilasShadow, statusBarPt + 64 + 133.59 + 210.98 / 2, apostilasElev, 0);
       updateCard(cardAnotacoesMesh, cardAnotacoesShadow, statusBarPt + 64 + 360.58 + 210.98 / 2, anotacoesElev, 0);
-      updateCard(cardLuriazapMesh, cardLuriazapShadow, statusBarPt + 64 + 587.56 + 210.98 / 2, luriazapElev, 0);
+      updateCard(cardTraubezapMesh, cardTraubezapShadow, statusBarPt + 64 + 587.56 + 210.98 / 2, luriazapElev, 0);
     } else {
       cardApostilasMesh.visible = false;
       cardApostilasShadow.visible = false;
       cardAnotacoesMesh.visible = false;
       cardAnotacoesShadow.visible = false;
-      cardLuriazapMesh.visible = false;
-      cardLuriazapShadow.visible = false;
+      cardTraubezapMesh.visible = false;
+      cardTraubezapShadow.visible = false;
     }
 
     renderer.render(scene, camera);

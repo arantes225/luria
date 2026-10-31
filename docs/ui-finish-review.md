@@ -14,7 +14,7 @@ Base: `12323159`. Revisão local iniciada em 20/10/2026, sem alterações preexi
 
 Larguras amostradas: 1440, 1280, 768, 390 e 320 px. Quatro temas conferidos em amostras dos componentes alterados; não foi executado o produto cartesiano de todas as rotas, larguras e temas. Páginas públicas mantêm sua própria apresentação. Nos Flashcards foram conferidos desktop, notebook, tablet e mobile; na comunidade, também navegação entre Amigos, Grupos e Salas em 320 px.
 
-Dados de conta e respostas remotas eram sintéticos em servidor de prévia isolado. Não houve validação do backend real. PCR foi inspecionado em seus estados iniciais, sem aplicação de condutas. LuriaZap foi visto sem conversas; não certifica conversas reais. Vários módulos do Trabalho são atualmente páginas de apresentação, preservadas.
+Dados de conta e respostas remotas eram sintéticos em servidor de prévia isolado. Não houve validação do backend real. PCR foi inspecionado em seus estados iniciais, sem aplicação de condutas. TraubeZap foi visto sem conversas; não certifica conversas reais. Vários módulos do Trabalho são atualmente páginas de apresentação, preservadas.
 
 ## Corrigido e validado visualmente
 

@@ -48,7 +48,7 @@
   function restoreTheme() {
     preference = null;
     try {
-      const saved = JSON.parse(window.LuriaLocalOwnerStore?.read(preferenceKey) || "null");
+      const saved = JSON.parse(window.TraubeLocalOwnerStore?.read(preferenceKey) || "null");
       if (valid(saved)) preference = saved;
     } catch { /* Unavailable/malformed storage keeps the account theme. */ }
     syncTheme();
@@ -59,7 +59,7 @@
   window.addEventListener("luria:owner-changed", restoreTheme);
   window.addEventListener("docmap:ready", restoreTheme);
   window.addEventListener("storage", event => {
-    if (event.key === window.LuriaLocalOwnerStore?.key(preferenceKey)) restoreTheme();
+    if (event.key === window.TraubeLocalOwnerStore?.key(preferenceKey)) restoreTheme();
   });
   function chooseTheme(event) {
     const button = event.target.closest("[data-ui-theme-control]");
@@ -72,12 +72,12 @@
     preference = next;
     syncTheme();
     let saved = false;
-    try { saved = window.LuriaLocalOwnerStore?.write(preferenceKey, JSON.stringify(next)) === true; } catch {}
+    try { saved = window.TraubeLocalOwnerStore?.write(preferenceKey, JSON.stringify(next)) === true; } catch {}
     const status = document.getElementById("ui-theme-status");
     if (status) status.textContent = saved ? "Tema salvo neste dispositivo para sua conta." : "Tema aplicado. Não foi possível salvar neste dispositivo.";
   }
   body.addEventListener("click", chooseTheme);
-  window.LuriaUITheme = Object.freeze({refresh:syncTheme});
+  window.TraubeUITheme = Object.freeze({refresh:syncTheme});
   let showing = false;
   function canShowPage() {
     if (!body.isConnected || document.readyState === "loading" || !body.classList.contains("app-ready") || body.dataset.uiNavigationReady !== "true") return false;

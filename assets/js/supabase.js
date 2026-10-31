@@ -2,9 +2,9 @@ const SUPABASE_URL = "https://sxdsfklllilhdyuamvvg.supabase.co";
 const SUPABASE_KEY = "sb_publishable_AQ5-Pn1knmBhSFyt5aMtjQ_XQynLJ_L";
 
 // Publishable public key is intentionally client-visible (not a service credential).
-window.LuriaSupabasePublishableKey = SUPABASE_KEY;
+window.TraubeSupabasePublishableKey = SUPABASE_KEY;
 
-const LURIA_AUTH_SESSION_ONLY_KEY = "luria-auth-session-only";
+const TRAUBE_AUTH_SESSION_ONLY_KEY = "luria-auth-session-only";
 
 const luriaAuthStorage = {
   getItem(key) {
@@ -24,7 +24,7 @@ const luriaAuthStorage = {
     let sessionOnly = false;
 
     try {
-      sessionOnly = sessionStorage.getItem(LURIA_AUTH_SESSION_ONLY_KEY) === "1";
+      sessionOnly = sessionStorage.getItem(TRAUBE_AUTH_SESSION_ONLY_KEY) === "1";
     } catch (_) {}
 
     if (sessionOnly) {
@@ -55,20 +55,20 @@ const luriaAuthStorage = {
   }
 };
 
-window.LuriaAuthStorage = {
+window.TraubeAuthStorage = {
   setRememberMe(remember) {
     try {
       if (remember) {
-        sessionStorage.removeItem(LURIA_AUTH_SESSION_ONLY_KEY);
+        sessionStorage.removeItem(TRAUBE_AUTH_SESSION_ONLY_KEY);
       } else {
-        sessionStorage.setItem(LURIA_AUTH_SESSION_ONLY_KEY, "1");
+        sessionStorage.setItem(TRAUBE_AUTH_SESSION_ONLY_KEY, "1");
       }
     } catch (_) {}
   },
 
   isSessionOnly() {
     try {
-      return sessionStorage.getItem(LURIA_AUTH_SESSION_ONLY_KEY) === "1";
+      return sessionStorage.getItem(TRAUBE_AUTH_SESSION_ONLY_KEY) === "1";
     } catch (_) {
       return false;
     }
@@ -183,8 +183,8 @@ window.supabaseClient = window.supabase.createClient(
 (() => {
   let ownerId = null, epoch = 0, authRevision = 0;
   const invalidateDocument = nextId => {
-    if (window.LuriaSessionInvalidated) return;
-    window.LuriaSessionInvalidated = true;
+    if (window.TraubeSessionInvalidated) return;
+    window.TraubeSessionInvalidated = true;
     document.documentElement.style.setProperty('visibility', 'hidden', 'important');
     document.documentElement.style.setProperty('display', 'none', 'important');
     document.body?.classList.remove('app-ready');
@@ -206,7 +206,7 @@ window.supabaseClient = window.supabase.createClient(
     if (previousId || (window.docmapUser?.id && window.docmapUser.id !== id)) invalidateDocument(id);
     window.dispatchEvent(new CustomEvent("luria:owner-changed", {detail:{ownerId,previousId,epoch}}));
   };
-  const key = (base, id = ownerId) => !window.LuriaSessionInvalidated && id ? base + ":" + encodeURIComponent(id) : null;
+  const key = (base, id = ownerId) => !window.TraubeSessionInvalidated && id ? base + ":" + encodeURIComponent(id) : null;
   const api = {
     get ownerId() { return ownerId; },
     get epoch() { return epoch; },
@@ -222,7 +222,7 @@ window.supabaseClient = window.supabase.createClient(
     },
     remove(base, storage = localStorage) { const k = key(base); if (k) storage.removeItem(k); }
   };
-  window.LuriaLocalOwnerStore = api;
+  window.TraubeLocalOwnerStore = api;
   window.supabaseClient.auth.onAuthStateChange((_event, session) => { authRevision += 1; setOwner(session?.user?.id || null); });
   const initialRevision = authRevision;
   api.ready = window.supabaseClient.auth.getSession().then(({data,error}) => {
@@ -230,13 +230,13 @@ window.supabaseClient = window.supabase.createClient(
     return ownerId;
   }).catch(() => ownerId);
   window.addEventListener('pageshow', async event => {
-    if (!event.persisted || !ownerId || window.LuriaSessionInvalidated) return;
+    if (!event.persisted || !ownerId || window.TraubeSessionInvalidated) return;
     document.documentElement.style.setProperty('visibility', 'hidden', 'important');
     document.documentElement.style.setProperty('display', 'none', 'important');
     const revision = authRevision;
     try {
       const {data,error} = await window.supabaseClient.auth.getSession();
-      if (window.LuriaSessionInvalidated) return;
+      if (window.TraubeSessionInvalidated) return;
       if (revision !== authRevision) {
         // A same-owner token refresh superseded this lookup. Identity changes
         // already invalidated the document synchronously in setOwner.

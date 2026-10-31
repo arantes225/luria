@@ -41,7 +41,7 @@ test('A telemetry failure does not disguise a confirmed question registration or
 test('External registration validates totals and ignores a response from a previous account',async t=>{
  const gate=deferred(),{api,w,d,writes}=registration(t,{write:async()=>{await gate.promise;return {data:{id:'saved-1'},error:null}}});
  d.getElementById('question-correct').value='11';await api.saveQuestionSession({preventDefault(){}});assert.equal(writes.length,0);
- d.getElementById('question-correct').value='7';const save=api.saveQuestionSession({preventDefault(){}});await flush();w.LuriaLocalOwnerStore.ownerId='owner-2';w.LuriaLocalOwnerStore.epoch++;gate.resolve();await save;
+ d.getElementById('question-correct').value='7';const save=api.saveQuestionSession({preventDefault(){}});await flush();w.TraubeLocalOwnerStore.ownerId='owner-2';w.TraubeLocalOwnerStore.epoch++;gate.resolve();await save;
  assert.equal(d.getElementById('question-total').value,'10');assert.equal(d.getElementById('save-question-session').disabled,false);
  await api.saveQuestionSession({preventDefault(){}});assert.equal(writes.length,1);
 });
@@ -75,9 +75,9 @@ test('Opening an older list cannot overwrite a newer list or reopen a closed rea
 
 test('Library initialization waits for the established account; closing cancels a pending open',async t=>{
  const gate=deferred(),{api,w,queries}=management(t);
- w.LuriaLocalOwnerStore={ownerId:null,epoch:0,ready:gate.promise};
+ w.TraubeLocalOwnerStore={ownerId:null,epoch:0,ready:gate.promise};
  const load=api.loadSets(),open=api.openSet('s1');api.closeCurrentSet();await flush();assert.equal(queries.length,0);
- w.LuriaLocalOwnerStore.ownerId='owner-1';w.LuriaLocalOwnerStore.epoch=1;gate.resolve();await Promise.all([load,open]);
+ w.TraubeLocalOwnerStore.ownerId='owner-1';w.TraubeLocalOwnerStore.epoch=1;gate.resolve();await Promise.all([load,open]);
  assert.equal(api.state.sets[0].metrics.correct,0);assert.equal(api.state.currentSet,null);assert(queries.length>0);
 });
 
@@ -97,7 +97,7 @@ test('Manual saves coalesce, recover from thrown network failure and ignore comp
 
 test('Library navigation preserves the active manual set and an owner change blocks old writes',async t=>{
  const {api,d,w,writes}=management(t);await api.openSet('s1');api.switchQsMode('library');assert.equal(api.state.currentSet.id,'s1');
- w.LuriaLocalOwnerStore.ownerId='owner-2';w.LuriaLocalOwnerStore.epoch++;await api.saveAnswerKey();assert.equal(writes.length,0);assert.match(d.getElementById('qs-answer-status').textContent,/sessão/);
+ w.TraubeLocalOwnerStore.ownerId='owner-2';w.TraubeLocalOwnerStore.epoch++;await api.saveAnswerKey();assert.equal(writes.length,0);assert.match(d.getElementById('qs-answer-status').textContent,/sessão/);
 });
 
 test('Pending answer cannot change or submit twice while the network request is active',async t=>{
@@ -141,7 +141,7 @@ test('A save without an acknowledgement does not reveal or count the selected an
 
 test('An account switch ignores a late saved answer and blocks further writes from the old reader',async t=>{
  const gate=deferred(),{w,d,writes}=await resolver(t,{write:async row=>{await gate.promise;return {data:row,error:null}}});
- click(d,'A');d.getElementById('qr-confirm').click();await flush();w.LuriaLocalOwnerStore.ownerId='owner-2';w.LuriaLocalOwnerStore.epoch++;
+ click(d,'A');d.getElementById('qr-confirm').click();await flush();w.TraubeLocalOwnerStore.ownerId='owner-2';w.TraubeLocalOwnerStore.epoch++;
  w.dispatchEvent(new w.CustomEvent('luria:owner-changed',{detail:{ownerId:'owner-2'}}));gate.resolve();await flush();
  assert(d.getElementById('qr-layout').hidden);assert.match(d.getElementById('qr-loading').textContent,/sessão/i);
  d.getElementById('qr-confirm').click();await flush();assert.equal(writes.length,1);

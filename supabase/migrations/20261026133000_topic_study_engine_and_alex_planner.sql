@@ -84,7 +84,7 @@ begin
       pulo_do_gato, area, materia, topic, subtopic, difficulty
     )
     select
-      v_user, v_set_id, ordinal, ordinal, id, coalesce(nullif(source_label, ''), 'Banco LURIA'),
+      v_user, v_set_id, ordinal, ordinal, id, coalesce(nullif(source_label, ''), 'Banco TRAUBE'),
       enunciado, enunciado,
       jsonb_build_object('A', alternativa_a, 'B', alternativa_b, 'C', alternativa_c, 'D', alternativa_d),
       gabarito,
@@ -260,6 +260,6 @@ revoke all on function public.alex_schedule_focus_v1(text, date, date, integer, 
 grant execute on function public.alex_schedule_focus_v1(text, date, date, integer, boolean) to authenticated;
 
 comment on function public.build_topic_study_session_v1(text, integer, integer) is
-  'Builds an authenticated user-owned study bundle from random real LURIA questions and flashcards plus a matching published booklet.';
+  'Builds an authenticated user-owned study bundle from random real TRAUBE questions and flashcards plus a matching published booklet.';
 comment on function public.alex_schedule_focus_v1(text, date, date, integer, boolean) is
   'Previews or applies a user-owned schedule focus while preserving configured theory-study weekdays.';

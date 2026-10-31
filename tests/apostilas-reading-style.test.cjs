@@ -7,7 +7,7 @@ const root = path.resolve(__dirname, "..");
 const read = name => fs.readFileSync(path.join(root, name), "utf8");
 const rendererCSS = read("assets/css/apostila-renderer.css");
 const sharedTools = read("assets/js/apostila-tools.js");
-const startTag = "/* LURIA | Leitura editorial confortável + acentos cromáticos por tema.";
+const startTag = "/* TRAUBE | Leitura editorial confortável + acentos cromáticos por tema.";
 const sharedStyle = rendererCSS.slice(rendererCSS.indexOf(startTag));
 const testsCSS = sharedTools.slice(sharedTools.indexOf(startTag), sharedTools.indexOf("    body.apostila-reading-layout-v2 .book-postit{z-index:40!important}"));
 

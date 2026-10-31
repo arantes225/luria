@@ -17,7 +17,7 @@ export const TechConstellation: React.FC = () => {
   const nodes = [
     { label: 'Caderno de erros', x: 440, y: 760, delay: 0 },
     { label: 'Anotações & Resumos', x: 740, y: 910, delay: 4 },
-    { label: 'LuriaZap', x: 800, y: 1210, delay: 8 },
+    { label: 'TraubeZap', x: 800, y: 1210, delay: 8 },
     { label: 'Flashcards', x: 680, y: 1440, delay: 12 },
     { label: 'Questões & Simulados', x: 340, y: 1420, delay: 16 },
     { label: 'Study Rats', x: 260, y: 1020, delay: 20 }
@@ -120,7 +120,7 @@ export const TechConstellation: React.FC = () => {
         })}
       </svg>
 
-      {/* Central Hub Node (LURIA Emblem) */}
+      {/* Central Hub Node (TRAUBE Emblem) */}
       <div
         style={{
           position: 'absolute',
@@ -169,7 +169,7 @@ export const TechConstellation: React.FC = () => {
             zIndex: 2
           }}
         >
-          LURIA // NÚCLEO
+          TRAUBE // NÚCLEO
         </div>
       </div>
 

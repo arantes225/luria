@@ -204,7 +204,7 @@ const LiveMedicalMonitorHUD: React.FC<{
               letterSpacing: 1.5
             }}
           >
-            MONITOR MULTIPARAMÉTRICO LURIA
+            MONITOR MULTIPARAMÉTRICO TRAUBE
           </span>
           <span
             style={{
@@ -527,7 +527,7 @@ export const ReelSimuladorTech: React.FC = () => {
         />
       </div>
 
-      {/* Header Tecnológico LURIA */}
+      {/* Header Tecnológico TRAUBE */}
       <div
         style={{
           position: 'absolute',
@@ -557,7 +557,7 @@ export const ReelSimuladorTech: React.FC = () => {
             style={{ width: 36, height: 36, borderRadius: 8 }}
           />
           <span style={{ fontWeight: 900, fontSize: 24, letterSpacing: 1.5, color: '#ffffff' }}>
-            LURIA
+            TRAUBE
           </span>
           <span
             style={{
@@ -741,7 +741,7 @@ const Act1EnteringSite: React.FC<{ frame: number; fps: number }> = ({ frame, fps
         </div>
       </div>
 
-      {/* Mockup 3D da Home LURIA */}
+      {/* Mockup 3D da Home TRAUBE */}
       {frame >= 35 && (
         <div
           style={{
@@ -775,11 +775,11 @@ const Act1EnteringSite: React.FC<{ frame: number; fps: number }> = ({ frame, fps
             <div style={{ width: 13, height: 13, borderRadius: '50%', backgroundColor: '#febc2e' }} />
             <div style={{ width: 13, height: 13, borderRadius: '50%', backgroundColor: '#28c840' }} />
             <div style={{ marginLeft: 18, color: '#94a3b8', fontSize: 15, fontWeight: 600 }}>
-              LURIA · Aprenda. Conecte. Consolide.
+              TRAUBE · Aprenda. Conecte. Consolide.
             </div>
           </div>
 
-          {/* Conteúdo Hero da Plataforma LURIA */}
+          {/* Conteúdo Hero da Plataforma TRAUBE */}
           <div style={{ padding: '44px 48px', position: 'relative' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 42 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
@@ -788,7 +788,7 @@ const Act1EnteringSite: React.FC<{ frame: number; fps: number }> = ({ frame, fps
                   style={{ height: 48, width: 'auto' }}
                 />
                 <div>
-                  <div style={{ fontSize: 26, fontWeight: 900, color: '#0b2347' }}>LURIA</div>
+                  <div style={{ fontSize: 26, fontWeight: 900, color: '#0b2347' }}>TRAUBE</div>
                   <div style={{ fontSize: 14, color: '#475569', fontWeight: 600 }}>
                     Ecossistema de Alta Performance Médica
                   </div>
@@ -920,7 +920,7 @@ const Act1EnteringSite: React.FC<{ frame: number; fps: number }> = ({ frame, fps
 
       {/* Legenda Kinetic Ato 1 */}
       <BottomKineticCaption
-        badge="PASSO 01 // PLATAFORMA LURIA"
+        badge="PASSO 01 // PLATAFORMA TRAUBE"
         lead="Entre no site e acesse o"
         highlight="ecossistema médico completo."
       />
@@ -1426,7 +1426,7 @@ const Act4TechOutro: React.FC<{ frame: number; fps: number }> = ({ frame, fps })
             marginBottom: 24
           }}
         >
-          ● SIMULADOR DE EMERGÊNCIA LURIA
+          ● SIMULADOR DE EMERGÊNCIA TRAUBE
         </div>
 
         <h1

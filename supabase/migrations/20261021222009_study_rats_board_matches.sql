@@ -88,8 +88,8 @@ returns jsonb language sql stable security definer set search_path = '' as $$
   select coalesce(jsonb_agg(jsonb_build_object(
     'id', m.id, 'mode', m.mode, 'status', m.status,
     'host_id', m.host_id, 'guest_id', m.guest_id, 'invited_id', m.invited_id,
-    'host_name', coalesce(h.display_name, 'Jogador LURIA'),
-    'guest_name', coalesce(g.display_name, 'Jogador LURIA'),
+    'host_name', coalesce(h.display_name, 'Jogador TRAUBE'),
+    'guest_name', coalesce(g.display_name, 'Jogador TRAUBE'),
     'host_house', m.host_house, 'guest_house', m.guest_house,
     'host_question', m.host_question, 'guest_question', m.guest_question,
     'created_at', m.created_at

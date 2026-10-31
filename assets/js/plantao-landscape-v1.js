@@ -1,4 +1,4 @@
-/* LURIA: modo paisagem guiado apenas durante casos no PWA de celular. */
+/* TRAUBE: modo paisagem guiado apenas durante casos no PWA de celular. */
 (()=>{
   "use strict";
   const simulator=document.getElementById("plantao-simulator");
@@ -12,7 +12,7 @@
   guide.setAttribute("aria-labelledby","luria-rotate-heading");
   guide.hidden=true;
   guide.innerHTML='<div class="luria-rotate-panel">'+
-    '<div class="luria-rotate-brand">LURIA · SALA DE EMERGÊNCIA</div>'+
+    '<div class="luria-rotate-brand">TRAUBE · SALA DE EMERGÊNCIA</div>'+
     '<div class="luria-rotate-graphic" aria-hidden="true"><span class="luria-rotate-phone"></span></div>'+
     '<h2 id="luria-rotate-heading">Gire o celular</h2>'+
     '<p>Para iniciar o atendimento, coloque o aparelho na horizontal.</p>'+

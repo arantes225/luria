@@ -1,4 +1,4 @@
-# AUDITORIA TÉCNICA E REVISÃO DE LICENÇAS — LURIA ECG DIGITIZER & SCANNER INTELIGENTE
+# AUDITORIA TÉCNICA E REVISÃO DE LICENÇAS — TRAUBE ECG DIGITIZER & SCANNER INTELIGENTE
 
 **Repositório:** `arantes225/luria`  
 **Branch de trabalho:** `fix/ecg-e2e-contracts-and-calibration`  
@@ -11,12 +11,12 @@
 
 A auditoria direta dos repositórios de referência upstream identificou e corrigiu imprecisões severas presentes em relatórios preliminares. Abaixo está o mapeamento verificado individualmente arquivo por arquivo:
 
-| Repositório / Referência | Licença do Código-Fonte | Licença de Pesos / Modelos | Licença dos Datasets | Dependências Críticas | Restrições Comerciais e Conclusão de Integração na LURIA |
+| Repositório / Referência | Licença do Código-Fonte | Licença de Pesos / Modelos | Licença dos Datasets | Dependências Críticas | Restrições Comerciais e Conclusão de Integração na TRAUBE |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`felixkrones/ECG-Digitiser`** | **BSD-2-Clause** (`LICENSE`) | Não distribuídos comercialmente; treinados em dados sintéticos + PTB-XL | `ecg-image-kit` (BSD-3-Clause) e PTB-XL (CC BY 4.0) | Inclui **fork de `nnU-Net`** (Apache-2.0), PyTorch, OpenCV, SciPy | **Estudado conceitualmente, código não copiado.** O uso de fork interno de nnU-Net e modelos pesados de U-Net inviabiliza inferência em tempo real no browser em dispositivos móveis. |
-| **`hengck23/kaggle-physionet-ecg-image-digitization`** | **MIT License** (`LICENSE` explícito no root: `Copyright (c) 2026 hengck23`) *(Corrigido: anteriormente rotulado erroneamente como "sem licença")* | Modelos treinados em pipelines da competição Kaggle | Sinais PhysioNet / Kaggle | PyTorch, `timm`, OpenCV, Albumentations | **Estudado para arquitetura de extração.** Código sob licença MIT permissiva. Implementação na LURIA foi escrita nativamente em JavaScript (Viterbi + Dynamic Programming) para zero dependência de servidor Python na digitalização. |
+| **`hengck23/kaggle-physionet-ecg-image-digitization`** | **MIT License** (`LICENSE` explícito no root: `Copyright (c) 2026 hengck23`) *(Corrigido: anteriormente rotulado erroneamente como "sem licença")* | Modelos treinados em pipelines da competição Kaggle | Sinais PhysioNet / Kaggle | PyTorch, `timm`, OpenCV, Albumentations | **Estudado para arquitetura de extração.** Código sob licença MIT permissiva. Implementação na TRAUBE foi escrita nativamente em JavaScript (Viterbi + Dynamic Programming) para zero dependência de servidor Python na digitalização. |
 | **`dangnh0611/kaggle_ecg_digitization`** | **MIT License** (`LICENSE`) | Pesos externos hospedados no Kaggle / Google Drive | Dados de competição PhysioNet | `MINIMA-RoMa` para pseudo-labeling, backbones `timm` (CoaT, ConvNeXt, VGG19), PyTorch Lightning | **Incompatível para execução direta em tempo real.** Pipeline exige GPU de 48 GB de VRAM para ensemble. Seus conceitos de pseudo-rotulação orientaram o script de treino para Google Colab (`scripts/colab/luria_ecg_digitizer_training.py`). |
-| **`Ahus-AIM/Open-ECG-Digitizer`** | **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** (`LICENSE`) *(Corrigido com máxima severidade: anteriormente rotulado erroneamente como "Apache-2.0")* | Sujeitos aos termos virais da CC BY-SA 4.0 | CC BY-SA 4.0 | OpenCV, Python, NumPy | **PROIBIDA QUALQUER CÓPIA DE CÓDIGO OU PESOS NA LURIA.** A licença CC BY-SA 4.0 é estritamente **copyleft (ShareAlike)**, exigindo que qualquer trabalho derivado seja publicado integralmente sob os mesmos termos abertos. Nenhum código, método ou peso desta biblioteca foi incorporado. |
+| **`Ahus-AIM/Open-ECG-Digitizer`** | **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** (`LICENSE`) *(Corrigido com máxima severidade: anteriormente rotulado erroneamente como "Apache-2.0")* | Sujeitos aos termos virais da CC BY-SA 4.0 | CC BY-SA 4.0 | OpenCV, Python, NumPy | **PROIBIDA QUALQUER CÓPIA DE CÓDIGO OU PESOS NA TRAUBE.** A licença CC BY-SA 4.0 é estritamente **copyleft (ShareAlike)**, exigindo que qualquer trabalho derivado seja publicado integralmente sob os mesmos termos abertos. Nenhum código, método ou peso desta biblioteca foi incorporado. |
 | **PhysioNet PTB-XL v1.0.3** | CC BY 4.0 | N/A (Sinais brutos WFDB) | **CC BY 4.0** | Formato WFDB padrão | **Licença 100% permissiva com atribuição.** Utilizada como banco de validação quantitativa offline em `tests/fixtures/physionet-ptbxl/` com arquivo explícito de citação `LICENSE.txt`. |
 
 ---
@@ -64,7 +64,7 @@ Para total transparência com os auditores técnicos e usuários:
      - Bloqueio rígido do classificador autoral quando os requisitos do modelo não são atendidos (o modelo autoral exige sinal contínuo de 10,0 s para as 12 derivações a 100/500 Hz; recortes 3x4 fornecem ~2,5 s). É estritamente proibido inventar ou duplicar 2,5 s para simular 10 s, e o sistema jamais substitui silenciosamente o modelo autoral por IA multimodal.
 
 3. **Preparado para Treinamento Futuro em Nuvem (`scripts/colab/`):**
-   - Arquitetura PyTorch compacta `LuriaCompactEcgNet` e pipeline de geração sintética documentados em `scripts/colab/luria_ecg_digitizer_training.py` prontos para execução em Google Colab com GPU, sem simular pesos inexistentes.
+   - Arquitetura PyTorch compacta `TraubeCompactEcgNet` e pipeline de geração sintética documentados em `scripts/colab/luria_ecg_digitizer_training.py` prontos para execução em Google Colab com GPU, sem simular pesos inexistentes.
 
 ---
 
@@ -72,7 +72,7 @@ Para total transparência com os auditores técnicos e usuários:
 
 O benchmark automatizado (`tests/ecg-physionet-benchmark.test.cjs`) validou a extração direta contra sinais de Ground-Truth de 12 canais do registro `00001_lr` da base PTB-XL:
 
-| Métrica Avaliada | Critério Exigido | Resultado Obtido na LURIA | Status |
+| Métrica Avaliada | Critério Exigido | Resultado Obtido na TRAUBE | Status |
 | :--- | :--- | :--- | :--- |
 | **MAE (Erro Médio Absoluto)** | $< 0.080\text{ mV}$ | **$0.0049\text{ mV}$** | **Aprovado com folga** |
 | **RMSE (Raiz do Erro Quadrático Médio)** | $< 0.120\text{ mV}$ | **$0.0062\text{ mV}$** | **Aprovado com folga** |
@@ -101,7 +101,7 @@ Executados via `node --test tests/work-ecg-smart-camera.test.cjs` (14 testes, 14
 11. **Duas curvas sobrepostas na mesma região:** Detectadas com flag `hasMultipleCurves: true`.
 12. **Rótulos duplicados (ex.: múltiplos V1):** Identificados e sinalizados no relatório de anomalias.
 13. **Ausência estrita de voz/áudio e síntese artificial:** Verificado em todo o código-fonte.
-14. **Reutilização do `LuriaRotateController`:** Validado no modo retrato.
+14. **Reutilização do `TraubeRotateController`:** Validado no modo retrato.
 
 ## 5. RESULTADOS DA BATERIA DE TESTES DE INTEGRAÇÃO END-TO-END (15 CENÁRIOS)
 

@@ -1,4 +1,4 @@
-# LURIA — Aula 161 | Sepse e choque séptico
+# TRAUBE — Aula 161 | Sepse e choque séptico
 > **Status:** rascunho editorial científico, ainda não publicado no catálogo. Revisão de 14/10/2026.
 > **Público:** internato, ENAMED, residência e pronto atendimento.
 > **Fontes centrais:** ILAS (Brasil, protocolo institucional, 2018; conferir revisões mais recentes) e Surviving Sepsis Campaign 2026.
@@ -40,7 +40,7 @@ Colher hemograma, eletrólitos, ureia e creatinina, bilirrubinas, coagulograma, 
 ## 7. Complicações e suporte
 Complicações incluem SDRA, lesão renal aguda, coagulação intravascular disseminada, encefalopatia, disfunção miocárdica e síndrome pós-sepse. Suporte respiratório, renal e hemodinâmico deve seguir indicação individual. Corticosteroide IV pode ser considerado em choque séptico com necessidade persistente de vasopressores, segundo recomendações atuais; a indicação não se estende automaticamente à sepse sem choque. Evitar estratégias inespecíficas sem evidência de benefício.
 
-## 8. Fluxograma LURIA
+## 8. Fluxograma TRAUBE
 **Infecção suspeita + deterioração clínica** → avaliar disfunção orgânica e perfusão → **choque/hipoperfusão?** → tratamento imediato simultâneo (culturas sem atraso, antibiótico, cristaloide guiado por reavaliação, noradrenalina quando indicada, controle de foco) → reavaliar resposta frequentemente → ajustar antimicrobiano, suporte e destino. **Sem choque e diagnóstico incerto?** investigação clínica rápida, reconhecer diferenciais e decidir antibiótico conforme a probabilidade e janela recomendada.
 
 ## 9. Casos clínicos comentados
@@ -57,7 +57,7 @@ Paciente de 59 anos apresenta peritonite, taquipneia, PAM baixa e lactato elevad
 ### Caso 4 — Ressuscitação em paciente com insuficiência cardíaca
 Mulher de 79 anos, fração de ejeção reduzida, pneumonia, extremidades frias e hipotensão. A necessidade de ressuscitação não desaparece pela cardiopatia, mas cada carga de cristaloide deve ser seguida de avaliação clínica, pulmonar e de responsividade, com início precoce de vasopressor quando indicado. **Por que importa:** excesso de fluidos pode piorar edema pulmonar, enquanto pouca ressuscitação perpetua hipoperfusão.
 
-## 10. Questões autorais LURIA — com justificativas
+## 10. Questões autorais TRAUBE — com justificativas
 
 **Q1.** Qual descrição é mais adequada? A) Infecção com febre; B) Infecção e dois critérios SIRS; C) Disfunção orgânica ameaçadora à vida por resposta desregulada à infecção; D) Lactato sempre >4. **Gabarito C.** A e B não exigem disfunção; D é falso, pois lactato não é requisito para toda sepse. Revisão: reconhecer disfunção orgânica mesmo sem choque.
 

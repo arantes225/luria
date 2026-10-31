@@ -3,7 +3,7 @@
   const base = "luria:dashboard-layout";
   const valid = value => value === "classic" || value === "cards";
   function read() {
-    const store = window.LuriaLocalOwnerStore;
+    const store = window.TraubeLocalOwnerStore;
     if (!store?.ownerId) return "classic";
     try {
       const value = store.read(base);
@@ -18,10 +18,10 @@
   function write(value) {
     if (!valid(value)) return false;
     try {
-      if (window.LuriaLocalOwnerStore?.write(base, value) !== true) return false;
+      if (window.TraubeLocalOwnerStore?.write(base, value) !== true) return false;
       window.dispatchEvent(new CustomEvent("luria:dashboard-layout-changed"));
       return true;
     } catch { return false; }
   }
-  window.LuriaDashboardPreference = { read, write, key: () => window.LuriaLocalOwnerStore?.key(base) };
+  window.TraubeDashboardPreference = { read, write, key: () => window.TraubeLocalOwnerStore?.key(base) };
 })();

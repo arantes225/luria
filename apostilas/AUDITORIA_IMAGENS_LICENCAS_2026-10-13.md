@@ -4,7 +4,7 @@ Esta auditoria distingue **imagem aprovada para revisão editorial** de **autori
 
 | ID no Supabase | Apostila | Figura | Referência conhecida | Pendência / próximo passo |
 |---|---|---|---|---|
-| 94 | Amniorrexe prematura | Fluxograma de conduta | Passei Direto | Autoria, atualização clínica e licença de reprodução não demonstradas. Elaborar algoritmo original LURIA validado por diretrizes. |
+| 94 | Amniorrexe prematura | Fluxograma de conduta | Passei Direto | Autoria, atualização clínica e licença de reprodução não demonstradas. Elaborar algoritmo original TRAUBE validado por diretrizes. |
 | 96 | Amniorrexe prematura | Teste de cristalização | Eu Médico Residente | Licença de reprodução não demonstrada. Procurar fotografia real com licença explícita. |
 | 98 | Amniorrexe prematura | Histologia de corioamnionite | PMC4774647 | Verificar licença específica da figura antes de redistribuir; acesso a artigo não basta. |
 | 78 | Climatério e menopausa | Esquema KNDy | Nature Reviews Endocrinology | Autorização para reutilização não comprovada. Substituir por esquema original. |

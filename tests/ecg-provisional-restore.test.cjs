@@ -58,9 +58,9 @@ function scene(opts={}) {
     },
     auditFullExtraction:()=>({overallStatus:"Indeterminada"})
   };
-  const app={LuriaEcgContracts:contracts,LuriaEcgCvEngine:{createEngine:()=>cv},LuriaEcgSignalExtractor:extractor};
+  const app={TraubeEcgContracts:contracts,TraubeEcgCvEngine:{createEngine:()=>cv},TraubeEcgSignalExtractor:extractor};
   vm.runInNewContext(controllerCode,{window:app,document:{createElement:()=>makeCanvas()},Date,console,setTimeout});
-  return {controller:app.LuriaSmartCamera.createController(),evidence,guard:app.LuriaEcgSceneGuard,calls};
+  return {controller:app.TraubeSmartCamera.createController(),evidence,guard:app.TraubeEcgSceneGuard,calls};
 }
 test("photo with genuine paper and waveform candidates survives label OCR rejection",()=>{
   const {controller,guard,evidence}=scene();

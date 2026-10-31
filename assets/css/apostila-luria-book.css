@@ -98,7 +98,7 @@
     .fixation-answer{margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);border-radius:0 9px 9px 0;background:color-mix(in srgb,var(--accent) 6%,var(--surface));font-size:12.2px;line-height:1.55}
     .fixation-answer[hidden]{display:none}
   
-/* material de estudo LURIA: quadro visual complementar, responsivo e imprimível */
+/* material de estudo TRAUBE: quadro visual complementar, responsivo e imprimível */
 .luria-visual-module{border-top:4px solid var(--accent)}
 .luria-visual-intro{font-size:12.6px!important;color:var(--muted)}
 .luria-study-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0}
@@ -125,7 +125,7 @@
     .luria-disease-unit figure{break-inside:avoid;margin:14px auto 20px!important}
     @media(max-width:560px){.luria-disease-unit{padding:12px 0}.luria-disease-unit-title{font-size:15px!important}}
 
-/* Editorial LURIA — um vocabulário visual por função, não um card por frase */
+/* Editorial TRAUBE — um vocabulário visual por função, não um card por frase */
 #candida{--luria-chapter-tone:#b95780;--luria-chapter-soft:#f9edf2}
 #vaginose{--luria-chapter-tone:#138a88;--luria-chapter-soft:#eaf8f5}
 #tricomoníase{--luria-chapter-tone:#7962bd;--luria-chapter-soft:#f2eefb}
@@ -214,7 +214,7 @@
 }
 @media print{.luria-foundation-row,.luria-life-row,.luria-consult-steps li{break-inside:avoid}}
 
-/* Revisão tipográfica final LURIA — ritmo de leitura 2026-10-13 */
+/* Revisão tipográfica final TRAUBE — ritmo de leitura 2026-10-13 */
 .book-main{gap:16px}
 .book-section{padding:26px 30px 28px}
 .book-section h2{font-size:22px;line-height:1.31;margin:0 0 18px;font-weight:660;letter-spacing:-.014em}

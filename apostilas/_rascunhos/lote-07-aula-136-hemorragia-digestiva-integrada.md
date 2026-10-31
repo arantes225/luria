@@ -1,4 +1,4 @@
-# LURIA — LOTE 7 · AULA 136
+# TRAUBE — LOTE 7 · AULA 136
 # Hemorragia digestiva: integração clínica, localização e decisões da emergência
 
 **Área:** Clínica Médica / Gastroenterologia / Urgência  
@@ -8,7 +8,7 @@
 
 ## 0. Etapa zero — comparativos reais
 
-**Acervo LURIA auditado:** os rascunhos específicos das aulas 127 e 132 já existem em `apostilas/_rascunhos`; o primeiro aborda HDA varicosa/úlcera, Forrest, endoscopia e TIPS; o segundo cobre divertículos, angiodisplasias, colites, colonoscopia, angio-TC e embolização. Não foi identificado diretório HTML autônomo de hemorragia digestiva geral na listagem principal.
+**Acervo TRAUBE auditado:** os rascunhos específicos das aulas 127 e 132 já existem em `apostilas/_rascunhos`; o primeiro aborda HDA varicosa/úlcera, Forrest, endoscopia e TIPS; o segundo cobre divertículos, angiodisplasias, colites, colonoscopia, angio-TC e embolização. Não foi identificado diretório HTML autônomo de hemorragia digestiva geral na listagem principal.
 
 **Drive consultado antes da redação:** aberto e lido “01 - ENDOSCOPIA - ULCERA PEPTICA.pdf” (~9.035 caracteres extraídos), com fisiologia gástrica, H. pylori e classificação Forrest. As buscas “hemorragia digestiva” e “sangramento intestinal” não localizaram um volume integrador alto/baixo equivalente; materiais de HDA varicosa e úlcera péptica foram lidos em rodadas anteriores. São **benchmarks parciais, sem comprovação de autoria material de referência**. Não reutilizar figuras nem copiar expressões do resumo. A comparação mostra lacuna de fluxo integrador: a decisão de localizar foco ocorre **após** reconhecer choque, risco de aspiração e risco trombótico.
 
@@ -180,7 +180,7 @@ A. Considerar intestino delgado e exames como cápsula/enteroscopia conforme cen
 **Gabarito A.** Delgado/lesões intermitentes permanecem possíveis. **B/C/D** negligenciam causa orgânica. **Mini-revisão:** rever qualidade e completar estudo.
 
 ## 11. Imagens/esquemas candidatos — sem publicação
-1. Linha anatômica do Treitz ao reto. 2. Esquema de circulação GI e trânsito do sangue. 3. Fotografia endoscópica de úlcera Forrest Ia sob licença. 4. EDA de varizes esofágicas sob licença. 5. Colonoscopia de sangramento diverticular sob licença. 6. Colonoscopia de angiodisplasia sob licença. 7. CTA de extravasamento colônico sob licença. 8. Angiografia de embolização sob licença. 9. Quadro LURIA das janelas EDA/colonoscopia. 10. Diagrama ABCDE de hemorragia. 11. Fluxo de antitrombóticos. 12. Anatomia do delgado/cápsula. **Nenhuma imagem real obtida ou liberada para uso comercial; buscar candidatos com autoria e aprovação Admin.**
+1. Linha anatômica do Treitz ao reto. 2. Esquema de circulação GI e trânsito do sangue. 3. Fotografia endoscópica de úlcera Forrest Ia sob licença. 4. EDA de varizes esofágicas sob licença. 5. Colonoscopia de sangramento diverticular sob licença. 6. Colonoscopia de angiodisplasia sob licença. 7. CTA de extravasamento colônico sob licença. 8. Angiografia de embolização sob licença. 9. Quadro TRAUBE das janelas EDA/colonoscopia. 10. Diagrama ABCDE de hemorragia. 11. Fluxo de antitrombóticos. 12. Anatomia do delgado/cápsula. **Nenhuma imagem real obtida ou liberada para uso comercial; buscar candidatos com autoria e aprovação Admin.**
 
 ## 12. Referências verificáveis
 1. Laine L et al. ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding. *Am J Gastroenterol*, 2021. https://pubmed.ncbi.nlm.nih.gov/33929377/
@@ -201,7 +201,7 @@ A. Considerar intestino delgado e exames como cápsula/enteroscopia conforme cen
 ---
 
 # CAMADA INTEGRADORA AVANÇADA — A HEMORRAGIA COMO SÍNDROME
-**Aprofundamento de 14/10/2026.** A organização é original LURIA e complementa, sem copiar, os rascunhos 127 e 132. As referências internacionais não substituem protocolos assistenciais brasileiros de hemoterapia, cirurgia, endoscopia ou anticoagulação.
+**Aprofundamento de 14/10/2026.** A organização é original TRAUBE e complementa, sem copiar, os rascunhos 127 e 132. As referências internacionais não substituem protocolos assistenciais brasileiros de hemoterapia, cirurgia, endoscopia ou anticoagulação.
 
 ## 14. Anatomia funcional: onde sangue se transforma em sintoma
 

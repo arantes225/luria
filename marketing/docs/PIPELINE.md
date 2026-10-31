@@ -1,6 +1,6 @@
-# LURIA MARKETING STUDIO — MANUAL COMPLETO DO PIPELINE
+# TRAUBE MARKETING STUDIO — MANUAL COMPLETO DO PIPELINE
 
-Sistema automatizado de produção de conteúdo (Instagram Reels e carrosséis) para a plataforma médica **LURIA**, operando 100% em ambiente local, sem alterar o site em produção e sem custos de API.
+Sistema automatizado de produção de conteúdo (Instagram Reels e carrosséis) para a plataforma médica **TRAUBE**, operando 100% em ambiente local, sem alterar o site em produção e sem custos de API.
 
 ---
 
@@ -51,7 +51,7 @@ marketing/
 │   ├── config.json           # Configurações de modo seguro
 │   └── plan.cjs              # Inspeciona rascunhos e previne duplicatas
 ├── public/                   # Assets públicos consumidos pelo Remotion
-│   ├── assets/logos/         # Logomarcas oficiais da LURIA
+│   ├── assets/logos/         # Logomarcas oficiais da TRAUBE
 │   ├── audio/                # Trilha sonora ambiente médica sintetizada
 │   └── captures/             # Gravações de tela brutas em MP4
 ├── remotion/                 # Estúdio de montagem de vídeo em React/TypeScript
@@ -59,7 +59,7 @@ marketing/
 │   │   ├── Background.tsx    # Fundo médico com grid sutil e gradiente
 │   │   ├── BrandHeader.tsx   # Logo oficial, badge e categoria
 │   │   ├── OutroCard.tsx     # Card final com CTA e resibulando.online
-│   │   ├── PhoneMockup.tsx   # Smartphone com contorno azul LURIA e tela real
+│   │   ├── PhoneMockup.tsx   # Smartphone com contorno azul TRAUBE e tela real
 │   │   ├── ProgressBar.tsx   # Barra de progresso superior do Reel
 │   │   └── Subtitles.tsx     # Legendas dinâmicas no terço inferior seguro
 │   ├── compositions/         # Composições de 30 segundos
@@ -88,7 +88,7 @@ Execute os comandos a partir da pasta `marketing/`:
 | Comando | Descrição |
 | :--- | :--- |
 | `npm run doctor` | Verifica a integridade da stack, binários FFmpeg e navegador. |
-| `npm run capture` | Grava automaticamente a interface real da LURIA com dados fictícios. |
+| `npm run capture` | Grava automaticamente a interface real da TRAUBE com dados fictícios. |
 | `npm run capture:list` | Lista todos os cenários de captura disponíveis. |
 | `npm run music` | Sintetiza a trilha sonora ambiente oficial de 30s (livre de royalties). |
 | `npm run render` | Renderiza o Reel MP4 (1080x1920, 30s) e a Capa com o Remotion. |

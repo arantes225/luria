@@ -1,5 +1,5 @@
 /* ==============================================================================
-   LURIA — Módulo VOCAÇÃO (Orientação de Carreira Médica)
+   TRAUBE — Módulo VOCAÇÃO (Orientação de Carreira Médica)
    Questionário de afinidade, catálogo oficial de especialidades (CFM 2.330/2023),
    comparador lado a lado e persistência segura no Supabase.
    ============================================================================== */
@@ -779,7 +779,7 @@
         <div>
           <div class="vocacao-card-top">
             <div class="vocacao-card-icon">
-              ${window.LuriaMedicalIcons?.svg ? window.LuriaMedicalIcons.svg(spec.area.toLowerCase()) : (window.LuriaMedicalIcons?.icon ? window.LuriaMedicalIcons.icon(spec.area.toLowerCase()) : "✚")}
+              ${window.TraubeMedicalIcons?.svg ? window.TraubeMedicalIcons.svg(spec.area.toLowerCase()) : (window.TraubeMedicalIcons?.icon ? window.TraubeMedicalIcons.icon(spec.area.toLowerCase()) : "✚")}
             </div>
             <span class="aplicar-badge">${spec.years} anos</span>
           </div>
@@ -1021,7 +1021,7 @@
     initVocacao();
   }
 
-  window.LuriaVocacao = Object.freeze({
+  window.TraubeVocacao = Object.freeze({
     getSpecialties: () => [...SPECIALTIES_DB],
     getQuestions: () => [...QUIZ_QUESTIONS],
     calculate: calculateVocationalAffinity

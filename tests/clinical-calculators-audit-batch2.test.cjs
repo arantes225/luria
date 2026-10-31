@@ -1,5 +1,5 @@
 'use strict';
-/* LURIA: 2ª auditoria, calculadoras 31–60.
+/* TRAUBE: 2ª auditoria, calculadoras 31–60.
  * node --test tests/clinical-calculators-audit-batch2.test.cjs
  * Testes aritméticos e limites; não constituem validação clínica prospectiva.
  */

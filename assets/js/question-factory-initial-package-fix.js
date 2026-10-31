@@ -38,7 +38,7 @@
     if (!scope) return;
 
     const sb = window.supabaseClient;
-    const prompts = window.LuriaQuestionPrompts;
+    const prompts = window.TraubeQuestionPrompts;
     if (!sb || !prompts?.segment) {
       window.alert("A fábrica ainda não terminou de carregar. Atualize a página e tente novamente.");
       return;

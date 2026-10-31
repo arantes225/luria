@@ -39,7 +39,7 @@ export const BrandHeader: React.FC<BrandHeaderProps> = ({
         transform: `translateY(${translateY}px)`
       }}
     >
-      {/* Linha superior: Logo da LURIA e Badge de funcionalidade */}
+      {/* Linha superior: Logo da TRAUBE e Badge de funcionalidade */}
       <div
         style={{
           display: 'flex',
@@ -66,7 +66,7 @@ export const BrandHeader: React.FC<BrandHeaderProps> = ({
               color: THEME.colors.primaryDark
             }}
           >
-            LURIA
+            TRAUBE
           </span>
         </div>
 

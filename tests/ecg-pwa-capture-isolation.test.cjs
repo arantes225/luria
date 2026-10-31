@@ -14,8 +14,8 @@ function createScene(url = "https://www.resibulando.online/trabalho/ecg/") {
   const w=dom.window, d=w.document;
   let controllerConfig, started=0, stopped=0, currentMode = 'fast';
   w.matchMedia = () => ({matches:false});
-  w.LuriaEcgSmartHint = {};
-  w.LuriaSmartCamera = {createController: opts => {
+  w.TraubeEcgSmartHint = {};
+  w.TraubeSmartCamera = {createController: opts => {
     controllerConfig = opts;
     return {
       startCamera: mode => {started++;currentMode=mode;opts.onStageChange(1);},

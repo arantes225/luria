@@ -1,6 +1,6 @@
 (function financeModule(){
   "use strict";
-  const C=window.LuriaShiftCore;
+  const C=window.TraubeShiftCore;
   if(!C)return;
   const $=id=>document.getElementById(id),fmt=C.formatMoney;
   let editingPayer="",editingShift="";

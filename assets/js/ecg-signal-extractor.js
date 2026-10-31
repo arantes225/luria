@@ -1,5 +1,5 @@
 /* assets/js/ecg-signal-extractor.js
-   Digitalizador Estruturado e Auditor Técnico de Fidelidade para ECG (LURIA).
+   Digitalizador Estruturado e Auditor Técnico de Fidelidade para ECG (TRAUBE).
 
    Princípios Obrigatórios:
    1. TOTALMENTE BASEADO EM PIXELS REAIS: Proibido fabricar ondas matemáticas ou preencher lacunas silenciosamente.
@@ -21,7 +21,7 @@
 
 (function (global) {
   "use strict";
-  const contracts = global.LuriaEcgContracts || (typeof require === "function" ? require("./ecg-contracts.js") : null);
+  const contracts = global.TraubeEcgContracts || (typeof require === "function" ? require("./ecg-contracts.js") : null);
 
   const AUDIT_STATUS = {
     ADEQUATE: "Adequada tecnicamente",
@@ -913,8 +913,8 @@
 
     // Determinar Calibração Real vs Desconhecida
     let calInfo = calibration;
-    if (!calInfo && global.LuriaEcgCvEngine && typeof global.LuriaEcgCvEngine.detectECGGridAndCalibration === "function") {
-      calInfo = global.LuriaEcgCvEngine.detectECGGridAndCalibration(imageData);
+    if (!calInfo && global.TraubeEcgCvEngine && typeof global.TraubeEcgCvEngine.detectECGGridAndCalibration === "function") {
+      calInfo = global.TraubeEcgCvEngine.detectECGGridAndCalibration(imageData);
     }
 
     const calSource = calInfo?.calibrationSource || (legacyPixelsPerMv ? "assumed" : "unknown");
@@ -1206,7 +1206,7 @@
     resampleCalibratedSignal
   };
 
-  global.LuriaEcgSignalExtractor = exported;
+  global.TraubeEcgSignalExtractor = exported;
 
   if (typeof module !== "undefined" && module.exports) {
     module.exports = exported;

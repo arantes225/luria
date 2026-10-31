@@ -45,7 +45,7 @@ async function community(t, hash = '') {
   w.history.replaceState(null, '', '/amigos/' + hash);
   let friends = [{user_id:'friend-1',display_name:'Amiga de teste',luria_id:'FRIEND01'}];
   w.docmapUser = {id:'owner'};
-  w.LuriaDialog = {confirm:async()=>true};
+  w.TraubeDialog = {confirm:async()=>true};
   w.supabaseClient = {
     rpc:async(name,args)=>{
       calls.push({name,args});

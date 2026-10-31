@@ -1,5 +1,5 @@
 /* assets/js/ecg-smart-camera.js
-   Controlador Autônomo da Câmera Inteligente de ECG (LURIA).
+   Controlador Autônomo da Câmera Inteligente de ECG (TRAUBE).
 
    Princípios Fundamentais:
    1. TOTALMENTE SEM VOZ/ÁUDIO: Toda a interação é puramente visual (HUD na tela, mira, setas, badges).
@@ -11,7 +11,7 @@
         zoom/pan, confirmação de calibração, marcação de trechos ausentes/interpolados e erros de rastreamento).
       - Etapa 3: Revisão pela IA (ativada SOMENTE após conferência, validação de calibração e verificação estrita
         de compatibilidade com o protocolo do modelo autoral).
-   3. REUTILIZAÇÃO EXATA da animação de girar o aparelho (LuriaRotateController) quando em modo retrato.
+   3. REUTILIZAÇÃO EXATA da animação de girar o aparelho (TraubeRotateController) quando em modo retrato.
    4. MODO ULTRASSENSÍVEL COM VERIFICAÇÃO DE IDENTIDADE: Nunca presume silenciosamente que a imagem atual
       corresponde à próxima derivação da fila sem reconhecimento do rótulo ou confirmação manual explícita.
 */
@@ -20,7 +20,7 @@
   "use strict";
 
   const CANONICAL_LEADS = ["DI", "DII", "DIII", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"];
-  const contracts = global.LuriaEcgContracts || (typeof require === "function" ? require("./ecg-contracts.js") : null);
+  const contracts = global.TraubeEcgContracts || (typeof require === "function" ? require("./ecg-contracts.js") : null);
 
   // Fail closed for LIVE automatic captures. Looking like lines is not proof
   // of an ECG: require a valid paper, >=3 waveform cells and either a measured
@@ -168,8 +168,8 @@
     let pendingLeadQueue = [...CANONICAL_LEADS];
     let currentTargetLead = "DI";
 
-    const cvEngine = (typeof global.LuriaEcgCvEngine !== "undefined")
-      ? global.LuriaEcgCvEngine.createEngine()
+    const cvEngine = (typeof global.TraubeEcgCvEngine !== "undefined")
+      ? global.TraubeEcgCvEngine.createEngine()
       : null;
 
     // Amortecedor temporal para mensagens visuais do HUD
@@ -254,7 +254,7 @@
         msPerPixel: null,
         mvPerPixel: null
       };
-      global.LuriaEcgSessionData = null;
+      global.TraubeEcgSessionData = null;
       updateHudProgress();
     }
 
@@ -308,7 +308,7 @@
           }
         }
       } catch (err) {
-        console.warn("[LURIA-ECG] Erro ao acessar câmera nativa:", err);
+        console.warn("[TRAUBE-ECG] Erro ao acessar câmera nativa:", err);
         setHudMessage("Permissão de câmera necessária ou dispositivo incompatível.", true);
       }
 
@@ -473,7 +473,7 @@
      * Quando uma única fotografia contém múltiplas derivações legíveis, processa TODAS individualmente.
      */
     function processPhotographCanvas(snapCanvas, options = {}) {
-      const extractor = global.LuriaEcgSignalExtractor;
+      const extractor = global.TraubeEcgSignalExtractor;
       if (!cvEngine || !extractor) {
         return { ok: false, capturedCount: 0, reason: "Motores de visão/extração indisponíveis." };
       }
@@ -750,7 +750,7 @@
 
       triggerVisualFlash();
 
-      const extractor = global.LuriaEcgSignalExtractor;
+      const extractor = global.TraubeEcgSignalExtractor;
 
       // 1. Tentativa de captura múltipla (tanto no modo Rápido quanto no Ultrassensível se várias derivações estiverem visíveis!)
       const multiResult = processPhotographCanvas(snapCanvas, {
@@ -927,8 +927,8 @@
       if (!leadInfo) return false;
 
       extractionResult.leadIdentity = contracts.normalizeLeadIdentity(leadIdentity);
-      if (global.LuriaEcgSignalExtractor && global.LuriaEcgSignalExtractor.auditExtractedLead) {
-        extractionResult.audit = global.LuriaEcgSignalExtractor.auditExtractedLead(extractionResult);
+      if (global.TraubeEcgSignalExtractor && global.TraubeEcgSignalExtractor.auditExtractedLead) {
+        extractionResult.audit = global.TraubeEcgSignalExtractor.auditExtractedLead(extractionResult);
       }
 
       leadInfo.captured = true;
@@ -1024,14 +1024,14 @@
       leadInfo.status = "captured";
       if (leadInfo.extraction) {
         leadInfo.extraction.leadIdentity = identity;
-        if (global.LuriaEcgSignalExtractor?.auditExtractedLead) {
-          leadInfo.audit = global.LuriaEcgSignalExtractor.auditExtractedLead(leadInfo.extraction);
+        if (global.TraubeEcgSignalExtractor?.auditExtractedLead) {
+          leadInfo.audit = global.TraubeEcgSignalExtractor.auditExtractedLead(leadInfo.extraction);
           leadInfo.extraction.audit = leadInfo.audit;
         }
       }
       pendingLeadQueue = CANONICAL_LEADS.filter(lead => capturedLeads.get(lead)?.status !== "captured");
       updateHudProgress();
-      global.LuriaEcgSessionData = getSessionStructuredPackage();
+      global.TraubeEcgSessionData = getSessionStructuredPackage();
       return { confirmed: true, lead: leadName };
     }
 
@@ -1080,7 +1080,7 @@
         mvPerPixel: 1 / (gain * pxPerMmY)
       };
 
-      const extractor = global.LuriaEcgSignalExtractor;
+      const extractor = global.TraubeEcgSignalExtractor;
       capturedLeads.forEach(leadInfo => {
         if (leadInfo.captured && leadInfo.extraction) {
           const recalculated = extractor?.recalibrateExtraction?.(leadInfo.extraction, sessionCalibration);
@@ -1106,7 +1106,7 @@
      */
     function getSessionStructuredPackage() {
       const leadsArray = Array.from(capturedLeads.values());
-      const extractor = global.LuriaEcgSignalExtractor;
+      const extractor = global.TraubeEcgSignalExtractor;
       const extractionObjects = leadsArray
         .filter(l => l.captured && (l.status === "captured" || !l.status) && l.extraction)
         .map(l => ({ lead: l.lead, audit: l.audit, extraction: l.extraction }));
@@ -1154,7 +1154,7 @@
       if (!Array.from(capturedLeads.values()).some(l => l.captured)) return false;
       currentStage = 2;
       const pkg = getSessionStructuredPackage();
-      global.LuriaEcgSessionData = pkg;
+      global.TraubeEcgSessionData = pkg;
       if (typeof onStageChange === "function") onStageChange(2);
       if (typeof onExtractComplete === "function") {
         onExtractComplete(Array.from(capturedLeads.values()), pkg);
@@ -1217,7 +1217,7 @@
 
       currentStage = 3;
       const pkg = getSessionStructuredPackage();
-      global.LuriaEcgSessionData = pkg;
+      global.TraubeEcgSessionData = pkg;
 
       if (typeof onStageChange === "function") onStageChange(3);
       if (typeof onIaReviewReady === "function") onIaReviewReady(pkg);
@@ -1261,9 +1261,9 @@
     };
   }
 
-  global.LuriaEcgSceneGuard = { isVerifiedEcgScene, isCaptureReadyScene, hasCredibleEcgCandidates, isSafeAutomaticLeadAssignment };
+  global.TraubeEcgSceneGuard = { isVerifiedEcgScene, isCaptureReadyScene, hasCredibleEcgCandidates, isSafeAutomaticLeadAssignment };
 
-  global.LuriaSmartCamera = {
+  global.TraubeSmartCamera = {
     createController: createSmartCameraController,
     CANONICAL_LEADS
   };

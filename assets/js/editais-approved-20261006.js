@@ -12,7 +12,7 @@
     const own=q('#editais-own-content');
     if(!own || q('.ed-approved-hero')) return;
 
-    /* Hero and catalog link now handled via standard Luria Spotlight header */
+    /* Hero and catalog link now handled via standard Traube Spotlight header */
 
     const head=q('.exam-create-head',own);
     if(head && !q('.ed-new-exam',head)){

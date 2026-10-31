@@ -1,7 +1,7 @@
 /* One social client for Amigos and Salas. Persisted state always comes from authenticated RPCs. */
 (() => {
  'use strict';
- if(window.LuriaSocial)return;
+ if(window.TraubeSocial)return;
  const $=id=>document.getElementById(id), esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const modes={free:'Estudo livre',focus:'Foco',together:'Questões em grupo',review:'Revisão compartilhada'};
  const icons={room:'<path d="M4 20V5a1 1 0 0 1 1-1h14v16M9 20V9h6v11M13 14h.01M3 20h18"/>',people:'<circle cx="9" cy="8" r="3"/><path d="M3 20v-3a5 5 0 0 1 10 0v3M16 5a3 3 0 0 1 0 6M17 14a4 4 0 0 1 4 4v2"/>',lock:'<rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/>',mic:'<rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M9 22h6"/>',focus:'<circle cx="12" cy="13" r="8"/><path d="M9 2h6M12 5v-3M12 9v5l3 2"/>',rat:'<path d="M4 14a8 8 0 0 1 15-3l2 4-3 3H9a5 5 0 0 1-5-4ZM8 7a3 3 0 1 1 4-3M15 6a3 3 0 1 1 4 3M4 14c-5-2-3-6-1-6M15 12h.01M5 21h13"/>'};
@@ -26,7 +26,7 @@
  const on=(id,event,handler)=>$(id)?.addEventListener(event,e=>{if(event==='submit')e.preventDefault();Promise.resolve().then(()=>handler(e)).catch(failure);});
  const wire=(root,attribute,handler)=>root?.querySelectorAll(`[${attribute}]`).forEach(button=>button.addEventListener('click',()=>Promise.resolve(handler(button.getAttribute(attribute),button)).catch(failure)));
  async function run(button,work){if(button?.disabled)return; if(button)button.disabled=true;try{return await work();}finally{if(button)button.disabled=false;}}
- async function copy(text){try{await navigator.clipboard.writeText(text);status('Convite copiado.');}catch{await window.LuriaDialog.prompt('Copie o convite:',text);}}
+ async function copy(text){try{await navigator.clipboard.writeText(text);status('Convite copiado.');}catch{await window.TraubeDialog.prompt('Copie o convite:',text);}}
  function invitation(kind,code){const u=new URL('/amigos/',location.origin);u.searchParams.set(kind==='group'?'group_invite':'invite',code);u.hash='#community-rooms';return u.href;}
  const emptyState=(name,title,copy)=>`<div class="friends-empty sc-social-empty">${icon(name)}<strong>${esc(title)}</strong><p>${esc(copy)}</p></div>`;
  async function refreshSocial(){
@@ -53,15 +53,15 @@
   wire($('social-groups'),'data-group-rooms',async()=>{window.dispatchEvent(new Event('luria:open-rooms'));$('social-room-scope').value='groups';await refreshHall();});
   wire($('social-groups'),'data-group-history',async id=>{const host=$('social-group-members-'+id);host.hidden=false;const history=await command('group_history',{group_id:id});host.innerHTML=history.length?history.map(s=>`<div class="social-row"><span class="social-row-copy"><strong>${esc(s.room_name)}</strong><small>${modes[s.mode]} · ${new Date(s.created_at).toLocaleDateString('pt-BR')} · ${s.status==='finished'?'Concluída':'Em andamento'}</small><small>${esc(s.objective)}</small></span></div>`).join(''):'<p>Nenhuma sessão do grupo registrada ainda.</p>';});
   wire($('social-groups'),'data-group-invite',async id=>{const g=groups.find(g=>g.id===id);let code=g.invite;if(!code)code=(await command('group_invite',{group_id:id})).code;await copy(invitation('group',code));});
-  wire($('social-groups'),'data-group-goal',async id=>{const value=await window.LuriaDialog.prompt('Objetivo compartilhado:',groups.find(g=>g.id===id)?.objective||'');if(value!==null){await command('group_update',{group_id:id,objective:value});await refreshSocial();}});
+  wire($('social-groups'),'data-group-goal',async id=>{const value=await window.TraubeDialog.prompt('Objetivo compartilhado:',groups.find(g=>g.id===id)?.objective||'');if(value!==null){await command('group_update',{group_id:id,objective:value});await refreshSocial();}});
   wire($('social-groups'),'data-group-members',async id=>{
    const host=$('social-group-members-'+id);host.hidden=!host.hidden;if(host.hidden)return;
    const members=await command('group_members',{group_id:id}),g=groups.find(g=>g.id===id);
    host.innerHTML=members.map(m=>`<div class="social-row sg-member">${avatar(m.name)}<span class="social-row-copy">${esc(m.name)} · ${m.role==='admin'?'Administrador':'Participante'}</span>${g.role==='admin'&&g.owner_id!==m.user_id?`<button class="button secondary" data-group-role="${esc(m.user_id)}" type="button">${m.role==='admin'?'Tornar participante':'Tornar administrador'}</button><button class="button secondary" data-group-remove="${esc(m.user_id)}" type="button">Remover</button>`:''}</div>`).join('');
    wire(host,'data-group-role',async uid=>{await command('group_admin',{group_id:id,user_id:uid,admin:members.find(m=>m.user_id===uid).role!=='admin'});await refreshSocial();});
-   wire(host,'data-group-remove',async uid=>{if(await window.LuriaDialog.confirm('Remover este participante do grupo?')){await command('group_remove',{group_id:id,user_id:uid});await refreshSocial();}});
+   wire(host,'data-group-remove',async uid=>{if(await window.TraubeDialog.confirm('Remover este participante do grupo?')){await command('group_remove',{group_id:id,user_id:uid});await refreshSocial();}});
   });
-  on('social-group-join','click',async()=>{const code=await window.LuriaDialog.prompt('Código de convite do grupo:','');if(code){await command('join_group',{code:parseCode(code,'group_invite')});await refreshSocial();}});
+  on('social-group-join','click',async()=>{const code=await window.TraubeDialog.prompt('Código de convite do grupo:','');if(code){await command('join_group',{code:parseCode(code,'group_invite')});await refreshSocial();}});
  }
  async function updateFriendPresence(){
   if(!owner||!window.supabaseClient.realtime)return;
@@ -123,7 +123,7 @@
  async function teardownRoom(){
   document.body.classList.remove('social-in-room');
   saveDraft();epoch++;snapshotFlight=null;needsRefresh=false;clearTimeout(refreshTimer);clearInterval(tickTimer);tickTimer=null;
-  typingTimers.forEach(t=>clearTimeout(t));typingTimers.clear();await window.LuriaVoice?.leave();
+  typingTimers.forEach(t=>clearTimeout(t));typingTimers.clear();await window.TraubeVoice?.leave();
   const old=channel;channel=null;if(old)await window.supabaseClient.removeChannel(old);
   roomId=null;state=null;presence={};messages=[];replyTo=null;pendingFile=null;pendingSend=null;unread=0;
   agendaEdit=null;materialUpload=null;quizChoice=null;quizCount=null;quizFinished=null;
@@ -142,8 +142,8 @@
  }
  function leave({navigateHall=true}={}){
   if(leaveFlight)return leaveFlight;
-  if(!roomId){window.LuriaVoice?.leave();return Promise.resolve();}const id=roomId;
-  const voiceEnd=window.LuriaVoice?.leave();
+  if(!roomId){window.TraubeVoice?.leave();return Promise.resolve();}const id=roomId;
+  const voiceEnd=window.TraubeVoice?.leave();
   $('social-room').hidden=true;$('community-rooms').hidden=false;
   document.body.classList.remove('social-in-room');
   if(navigateHall)history.replaceState(null,'',location.pathname+location.search+'#community-rooms');
@@ -173,7 +173,7 @@
    if(e!==epoch||!state?.members.some(m=>m.user_id===payload?.user_id)||payload.user_id===owner.id)return;
    clearTimeout(typingTimers.get(payload.user_id));typingTimers.set(payload.user_id,setTimeout(()=>{typingTimers.delete(payload.user_id);renderTyping();},3000));renderTyping();
   });
-  channel.on('broadcast',{event:'voice-changed'},()=>window.LuriaVoice?.sync().catch(failure));
+  channel.on('broadcast',{event:'voice-changed'},()=>window.TraubeVoice?.sync().catch(failure));
   channel.subscribe(async result=>{
    if(e!==epoch||id!==roomId)return;
    $('social-connection').textContent=result==='SUBSCRIBED'?'Conectado em tempo real':result==='CLOSED'?'Conexão encerrada':'Reconectando… suas mensagens continuam guardadas.';
@@ -182,9 +182,9 @@
  }
  function renderTyping(){$('social-typing').textContent=Array.from(typingTimers.keys()).map(uid=>state?.members.find(m=>m.user_id===uid)?.name).filter(Boolean).join(', ')+(typingTimers.size?' está digitando…':'');}
  function renderParticipants(){
-  if(!state)return;const members=state.members||[],voice=window.LuriaVoice?.getState?.()||{};
+  if(!state)return;const members=state.members||[],voice=window.TraubeVoice?.getState?.()||{};
   $('social-participants').innerHTML=members.map(m=>{const online=!!presence[m.user_id]?.length,studying=m.share_status&&presence[m.user_id]?.some(p=>p.studying),responded=state.quiz?.responded?.includes(m.user_id),inVoice=voice.active&&(m.user_id===owner.id||(voice.users||[]).includes(m.user_id)),speaks=(voice.speaking||[]).includes(m.user_id);return `<div class="social-participant ${speaks?'is-speaking':''}" data-participant="${esc(m.user_id)}">${avatar(m.name,m.avatar_url)}<span><strong>${esc(m.name)}${m.role==='admin'?'<span class="sv-admin-mark" title="Administrador">'+icon('crown')+'</span>':''}</strong><small>${responded?'Resposta enviada':studying?'Estudando':online?'Online':'Fora da sala'}</small>${inVoice?'<small data-voice-indicator>'+icon('mic')+(speaks?'Falando':m.user_id===owner.id&&voice.muted?'Microfone desligado':'Na voz')+'</small>':''}</span><span class="social-presence-dot ${online?'online':''}" aria-label="${online?'Online':'Offline'}"></span>${state.is_admin&&m.user_id!==state.room.owner_id&&m.user_id!==owner.id?`<details class="sv-participant-options"><summary aria-label="Opções de ${esc(m.name)}">⋯</summary><div class="sv-participant-menu"><button class="button secondary" data-kick="${esc(m.user_id)}" type="button">Remover participante</button>${state.room.owner_id===owner.id?`<button type="button" class="button secondary" data-room-role="${esc(m.user_id)}">${m.role==='admin'?'Retirar administrador':'Tornar administrador'}</button>`:''}</div></details>`:''}</div>`;}).join('');
-  wire($('social-participants'),'data-kick',async uid=>{if(await window.LuriaDialog.confirm('Remover este participante da sala?')){await roomCommand('kick',{user_id:uid});await refreshRoom();}});
+  wire($('social-participants'),'data-kick',async uid=>{if(await window.TraubeDialog.confirm('Remover este participante da sala?')){await roomCommand('kick',{user_id:uid});await refreshRoom();}});
   wire($('social-participants'),'data-room-role',async uid=>{await roomCommand('room_admin',{user_id:uid,admin:members.find(m=>m.user_id===uid).role!=='admin'});await refreshRoom();});
   if($('social-online-count'))$('social-online-count').textContent=members.filter(m=>!!presence[m.user_id]?.length).length+' online';
   if($('social-voice-count'))$('social-voice-count').textContent=voice.active?(1+(voice.users||[]).filter(uid=>uid!==owner.id).length)+' na voz':'Voz opcional';
@@ -199,17 +199,17 @@
   $('social-session-goal').textContent=session?.objective||room.objective||'Defina seu objetivo e comece a estudar.';
   $('social-invite').hidden=!admin;$('social-room-admin').hidden=!admin;$('social-voice-join').disabled=!room.voice_enabled;
   $('social-room-settings').hidden=!admin;if($('social-goal-edit'))$('social-goal-edit').hidden=!admin;if($('social-strip-invite'))$('social-strip-invite').hidden=!admin;if($('social-music-share'))$('social-music-share').hidden=!admin;$('social-room').dataset.mode=session?.mode||room.mode;
-  if(!room.voice_enabled&&window.LuriaVoice?.getState?.().active)window.LuriaVoice.leave();
-  if(!window.LuriaVoice?.getState?.().active)$('social-voice-status').textContent=room.voice_enabled?'Voz opcional. O chat funciona mesmo sem microfone.':'Voz desabilitada nesta sala.';
+  if(!room.voice_enabled&&window.TraubeVoice?.getState?.().active)window.TraubeVoice.leave();
+  if(!window.TraubeVoice?.getState?.().active)$('social-voice-status').textContent=room.voice_enabled?'Voz opcional. O chat funciona mesmo sem microfone.':'Voz desabilitada nesta sala.';
   $('social-quiz').hidden=(session?.mode||room.mode)!=='together';$('social-quiz-start').hidden=!admin||!session;
   if(admin&&(session?.mode||room.mode)==='together'&&!$('social-question-list').options.length)roomCommand('quiz_lists').then(rows=>{$('social-question-list').innerHTML=rows.map(s=>`<option value="${esc(s.id)}">${esc(s.title)}</option>`).join('');}).catch(failure);
   $('social-checklist').innerHTML=(state.checklist||[]).slice().sort((a,b)=>(a.scheduled_at||a.created_at).localeCompare(b.scheduled_at||b.created_at)).map(c=>`<div class="social-row"><label class="social-check social-row-copy"><input type="checkbox" data-checklist="${esc(c.id)}" ${c.completed?'checked':''}><span>${esc(c.title)}<small>${c.scheduled_at?esc(new Date(c.scheduled_at).toLocaleString('pt-BR')):'Horário livre'}${c.duration_minutes?' · '+Number(c.duration_minutes)+' min':''} · ${c.completed?'Concluída':'A fazer'}</small></span></label>${admin||c.created_by===owner.id?`<button class="button secondary" type="button" data-agenda-edit="${esc(c.id)}">Editar</button><button class="button secondary" type="button" data-agenda-remove="${esc(c.id)}">Remover</button>`:''}</div>`).join('')||`<div class="sc-room-empty">${icon('focus')}<strong>Um passo de cada vez</strong><p>Adicione as etapas que a turma vai estudar.</p></div>`;
   wire($('social-checklist'),'data-agenda-edit',id=>{const task=state.checklist.find(c=>c.id===id);agendaEdit=id;$('social-checklist-text').value=task.title;const at=task.scheduled_at?new Date(task.scheduled_at):null;$('social-agenda-at').value=at?new Date(at.getTime()-at.getTimezoneOffset()*60000).toISOString().slice(0,16):'';$('social-agenda-duration').value=task.duration_minutes||25;$('social-checklist-form').querySelector('button[type="submit"]').textContent='Salvar atividade';$('social-agenda-cancel').hidden=false;window.dispatchEvent(new CustomEvent('luria:visual-open',{detail:'social-agenda-dialog'}));$('social-checklist-text').focus();});
-  wire($('social-checklist'),'data-agenda-remove',async id=>{if(await window.LuriaDialog.confirm('Remover esta atividade da agenda?')){await roomFeatures('agenda_remove',{id});await refreshRoom();}});
+  wire($('social-checklist'),'data-agenda-remove',async id=>{if(await window.TraubeDialog.confirm('Remover esta atividade da agenda?')){await roomFeatures('agenda_remove',{id});await refreshRoom();}});
   $('social-checklist').querySelectorAll('[data-checklist]').forEach(input=>input.addEventListener('change',()=>roomCommand('checklist_toggle',{id:input.dataset.checklist,completed:input.checked}).then(refreshRoom).catch(error=>{input.checked=!input.checked;failure(error);}))); 
   $('social-resources').innerHTML=(state.resources||[]).map(r=>`<div class="social-row">${icon('material')}<div class="social-row-copy">${r.attachment_path?`<button type="button" class="button secondary" data-material-open="${esc(r.id)}">${esc(r.title)}</button>`:`<a href="${esc(safeUrl(r.url)||'#')}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>`}<small>${esc({link:'Link',pdf:'PDF',apostila:'Apostila',notes:'Anotações',questions:'Questões',flashcards:'Flashcards',notion:'Notion'}[r.kind]||'Material')} · ${esc(state.members.find(m=>m.user_id===r.created_by)?.name||'Compartilhado na sala')}${r.review_on?' · Revisar em '+esc(r.review_on):''}</small></div>${admin||r.created_by===owner.id?`<button class="button secondary" type="button" data-material-remove="${esc(r.id)}">Remover</button>`:''}</div>`).join('')||`<div class="sc-room-empty">${icon('material')}<strong>O conhecimento da turma, reunido</strong><p>Compartilhe uma lista, flashcards, anotações ou um PDF autorizado.</p></div>`;
   wire($('social-resources'),'data-material-open',id=>openAttachment(state.resources.find(r=>r.id===id)?.attachment_path));
-  wire($('social-resources'),'data-material-remove',async id=>{if(await window.LuriaDialog.confirm('Remover o vínculo deste material da sala?')){await roomFeatures('material_remove',{id});await refreshRoom();}});
+  wire($('social-resources'),'data-material-remove',async id=>{if(await window.TraubeDialog.confirm('Remover o vínculo deste material da sala?')){await roomFeatures('material_remove',{id});await refreshRoom();}});
   $('social-session-history').innerHTML=(state.history||[]).map(s=>`<div class="social-row"><span class="social-row-copy">${modes[s.mode]} · ${new Date(s.created_at).toLocaleDateString('pt-BR')}<small>${esc(s.objective)}</small></span></div>`).join('')||'<p>Nenhuma sessão concluída ainda.</p>';
   $('social-jam-form').hidden=!admin;
   $('social-music-share').hidden=!admin;
@@ -244,7 +244,7 @@
   if(quizChoice?.id!==q.id||q.my_choice||q.revealed_at)quizChoice=null;
   if(quizCount?.id!==q.id){quizCount={id:q.id,total:null};const room=roomId;roomFeatures('quiz_info').then(info=>{if(room===roomId&&state.quiz?.id===q.id){quizCount={id:q.id,total:info.total};renderQuiz();}}).catch(failure);}
   const selected=q.my_choice||quizChoice?.choice;
-  host.innerHTML=`<p>Questão ${Number(q.ordinal)+1}${quizCount?.total?' de '+Number(quizCount.total):''}${quizFinished===q.set_id?' · Lista concluída':''}</p><p class="social-question-stem">${esc(q.stem)}</p><p>${q.answered}/${q.total} responderam · <span id="social-quiz-time"></span></p>`+opts.map(([letter,text])=>`<button type="button" class="social-answer" data-correct="${!!q.revealed_at&&q.answer===letter}" data-answer="${letter}" aria-pressed="${selected===letter}" ${q.my_choice||q.revealed_at||!q.eligible?'disabled':''}><strong>${letter}.</strong> ${esc(text)}</button>`).join('')+(!q.my_choice&&!q.revealed_at&&q.eligible?`<button id="social-answer-submit" class="button primary" type="button" ${quizChoice?'':'disabled'}>Enviar resposta</button>`:'')+(q.revealed_at?`<div class="social-question-stem"><p>Gabarito: ${esc(q.answer||'Não informado na lista')}</p><section class="sv-question-comment"><h4>Comentário LURIA</h4><p>${esc(q.comment||'Comentário não disponível nesta lista.')}</p></section>${Object.entries(q.explanations||{}).map(([letter,text])=>`<p><strong>${esc(letter)}.</strong> ${esc(typeof text==='string'?text:text?.text||'')}</p>`).join('')}<p>Referência: ${esc(q.source||'Não informada na lista')}</p><div>${(q.results||[]).map(r=>`<p>${esc(state.members.find(m=>m.user_id===r.user_id)?.name||'Participante')}: ${esc(r.choice)} · ${r.correct?'Correta':'Revisar'}</p>`).join('')}</div></div>`:'<p>As respostas e justificativas ficam ocultas até todos responderem ou o prazo terminar.</p>');
+  host.innerHTML=`<p>Questão ${Number(q.ordinal)+1}${quizCount?.total?' de '+Number(quizCount.total):''}${quizFinished===q.set_id?' · Lista concluída':''}</p><p class="social-question-stem">${esc(q.stem)}</p><p>${q.answered}/${q.total} responderam · <span id="social-quiz-time"></span></p>`+opts.map(([letter,text])=>`<button type="button" class="social-answer" data-correct="${!!q.revealed_at&&q.answer===letter}" data-answer="${letter}" aria-pressed="${selected===letter}" ${q.my_choice||q.revealed_at||!q.eligible?'disabled':''}><strong>${letter}.</strong> ${esc(text)}</button>`).join('')+(!q.my_choice&&!q.revealed_at&&q.eligible?`<button id="social-answer-submit" class="button primary" type="button" ${quizChoice?'':'disabled'}>Enviar resposta</button>`:'')+(q.revealed_at?`<div class="social-question-stem"><p>Gabarito: ${esc(q.answer||'Não informado na lista')}</p><section class="sv-question-comment"><h4>Comentário TRAUBE</h4><p>${esc(q.comment||'Comentário não disponível nesta lista.')}</p></section>${Object.entries(q.explanations||{}).map(([letter,text])=>`<p><strong>${esc(letter)}.</strong> ${esc(typeof text==='string'?text:text?.text||'')}</p>`).join('')}<p>Referência: ${esc(q.source||'Não informada na lista')}</p><div>${(q.results||[]).map(r=>`<p>${esc(state.members.find(m=>m.user_id===r.user_id)?.name||'Participante')}: ${esc(r.choice)} · ${r.correct?'Correta':'Revisar'}</p>`).join('')}</div></div>`:'<p>As respostas e justificativas ficam ocultas até todos responderem ou o prazo terminar.</p>');
   if(q.revealed_at){const summary=document.createElement('p');summary.textContent=`${(q.results||[]).filter(r=>r.correct).length} de ${q.total} participantes acertaram esta questão.`;host.append(summary);
    for(const ref of q.references||[]){const p=document.createElement('p');p.textContent=[ref.institution,ref.document,ref.year,ref.section].filter(Boolean).join(' · ');const url=safeUrl(ref.url);if(url){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Consultar referência';p.append(' ',a);}host.append(p);}
   }
@@ -286,7 +286,7 @@
   $('social-messages').innerHTML=messages.length?messages.filter(m=>!(social?.blocks||[]).some(b=>b.user_id===m.user_id)).map(m=>{const reply=messages.find(x=>x.id===m.reply_to);const counts={thanks:0,agree:0,celebrate:0};for(const r of m.reactions||[])counts[r.reaction]=(counts[r.reaction]||0)+1;return `<article class="social-message ${m.user_id===owner.id?'is-mine':''}"><header>${avatar(m.display_name,m.avatar_url)}<strong>${esc(m.display_name||'Participante')}</strong><time datetime="${esc(m.created_at)}">${new Date(m.created_at).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})}</time></header>${m.reply_to?`<blockquote>${esc(reply?.body?.slice(0,100)||'Mensagem anterior')}</blockquote>`:''}<p>${messageText(m.body)}</p>${m.attachment_path?`<button type="button" data-attachment="${esc(m.id)}">${esc(m.attachment_name||'Abrir anexo')}</button>`:''}<div><button type="button" data-reply="${esc(m.id)}" aria-label="Responder mensagem" title="Responder">${icon('reply')}</button>${Object.entries({thanks:'Obrigado',agree:'Concordo',celebrate:'Celebrar'}).map(([key,label])=>`<button type="button" data-reaction="${esc(m.id)}:${key}" aria-label="${label}" title="${label}" data-count="${counts[key]}">${icon(key)}${counts[key]?' '+counts[key]:''}</button>`).join('')}${state?.is_admin?`<button type="button" data-moderate="${esc(m.id)}" aria-label="Moderar mensagem" title="Moderar">⋯</button>`:''}</div></article>`;}).join(''):`<div class="sc-room-empty">${icon('people')}<strong>A conversa começa com você.</strong><p>Troque ideias e combine o próximo passo com a turma.</p></div>`;
   wire($('social-messages'),'data-reply',id=>{replyTo=id;$('social-reply').hidden=false;$('social-reply').textContent='Respondendo: '+(messages.find(m=>m.id===id)?.body?.slice(0,100)||'Anexo');const b=document.createElement('button');b.type='button';b.textContent='Cancelar';b.className='button secondary';b.addEventListener('click',()=>{replyTo=null;$('social-reply').hidden=true;});$('social-reply').append(b);$('social-message-text').focus();});
   wire($('social-messages'),'data-reaction',async value=>{const[id,reaction]=value.split(':');await roomCommand('reaction',{id,reaction});await loadMessage(id);});
-  wire($('social-messages'),'data-moderate',async id=>{if(await window.LuriaDialog.confirm('Remover o conteúdo desta mensagem?')){await roomCommand('moderate_message',{id});await loadMessage(id);}});
+  wire($('social-messages'),'data-moderate',async id=>{if(await window.TraubeDialog.confirm('Remover o conteúdo desta mensagem?')){await roomCommand('moderate_message',{id});await loadMessage(id);}});
   wire($('social-messages'),'data-attachment',async id=>{const m=messages.find(m=>m.id===id);const {data,error}=await window.supabaseClient.storage.from('study-room-attachments').createSignedUrl(m.attachment_path,60);if(error)throw error;const url=safeUrl(data.signedUrl);if(url)window.open(url,'_blank','noopener,noreferrer');});
  }
  async function validateFile(file){
@@ -311,13 +311,13 @@
   });
  }
  async function study(){
-  const timer=window.LuriaStudyTimer;if(!timer)throw new Error('Timer de estudo indisponível. Atualize a página.');
+  const timer=window.TraubeStudyTimer;if(!timer)throw new Error('Timer de estudo indisponível. Atualize a página.');
   const current=timer.getState();if(current?.sourceId===roomId){if(!await timer.finish('room_study_finished'))throw new Error('Não foi possível registrar seu estudo. Tente novamente.');$('social-study-toggle').textContent='Registrar meu estudo';await refreshRoom();}
   else{const started=await timer.start('study',{sourceId:roomId,area:state.room.area,materia:state.room.subject});if(started?.sourceId!==roomId)throw new Error('Finalize sua sessão atual antes de iniciar outra.');$('social-study-toggle').textContent='Concluir e registrar estudo';}
   await channel?.track({user_id:owner.id,studying:!!timer.getState()?.running,silent:$('social-silent').checked});
  }
- async function block(user_id){if(!await window.LuriaDialog.confirm('Bloquear esta pessoa? A amizade será removida.'))return;await command('block',{user_id});await window.loadFriends();await refreshSocial();}
- async function showProfile(user_id){const p=await command('profile',{user_id});await window.LuriaDialog.alert(`${p.name||'Usuário LURIA'}\nID ${p.luria_id||''}\n${p.specialty||'Especialidade não informada'}`);}
+ async function block(user_id){if(!await window.TraubeDialog.confirm('Bloquear esta pessoa? A amizade será removida.'))return;await command('block',{user_id});await window.loadFriends();await refreshSocial();}
+ async function showProfile(user_id){const p=await command('profile',{user_id});await window.TraubeDialog.alert(`${p.name||'Usuário TRAUBE'}\nID ${p.luria_id||''}\n${p.specialty||'Especialidade não informada'}`);}
  async function inviteFriend(){window.dispatchEvent(new Event('luria:open-rooms'));if(state?.invite)await copy(invitation('room',state.invite));else{status('Crie uma sala e compartilhe o convite com seu amigo.');openCreate('room');}}
  async function adminSnapshot(){
   const data=await rpc('social_rooms_admin',{p_action:'snapshot',p_payload:{}}),form=$('social-admin-form');
@@ -336,15 +336,15 @@
   for(const id of ['social-room-search','social-room-mode','social-room-scope'])on(id,'input',()=>{clearTimeout(filterTimer);filterTimer=setTimeout(()=>refreshHall().catch(failure),220);});
   on('sg-search','input',filterGroups);
   on('social-rooms-more','click',()=>refreshHall(true));on('social-leave','click',leave);on('social-invite','click',()=>copy(invitation('room',state.invite)));
-  on('social-invite-revoke','click',async()=>{if(await window.LuriaDialog.confirm('Revogar o convite atual e gerar outro?')){const {code}=await roomCommand('renew_invite');state.invite=code;await copy(invitation('room',code));}});
-  on('social-room-archive','click',async()=>{if(await window.LuriaDialog.confirm('Arquivar esta sala e encerrar a sessão? O histórico será preservado.')){await window.LuriaVoice?.leave();await roomCommand('archive_room');await teardownRoom();$('social-room').hidden=true;$('community-rooms').hidden=false;await refreshHall();}});
-  on('social-privacy-save','click',async()=>{await command('privacy',{discoverable:$('social-discoverable').checked,share_status:$('social-share-status').checked});await window.LuriaStudyPresence?.refresh();status('Preferências salvas.');});
+  on('social-invite-revoke','click',async()=>{if(await window.TraubeDialog.confirm('Revogar o convite atual e gerar outro?')){const {code}=await roomCommand('renew_invite');state.invite=code;await copy(invitation('room',code));}});
+  on('social-room-archive','click',async()=>{if(await window.TraubeDialog.confirm('Arquivar esta sala e encerrar a sessão? O histórico será preservado.')){await window.TraubeVoice?.leave();await roomCommand('archive_room');await teardownRoom();$('social-room').hidden=true;$('community-rooms').hidden=false;await refreshHall();}});
+  on('social-privacy-save','click',async()=>{await command('privacy',{discoverable:$('social-discoverable').checked,share_status:$('social-share-status').checked});await window.TraubeStudyPresence?.refresh();status('Preferências salvas.');});
   on('social-session-start','click',async e=>run(e.target,async()=>{await roomCommand('session_start',{mode:$('social-session-mode').value});await refreshRoom();}));
   on('social-session-mode','change',async()=>{if(!state?.is_admin||state.session)return;await roomFeatures('room_update',{mode:$('social-session-mode').value});await refreshRoom();});
   on('social-session-pause','click',async()=>{await roomCommand(state.session?.status==='paused'?'session_resume':'session_pause');await refreshRoom();});
   on('social-session-next','click',async()=>{await roomCommand('session_next');await refreshRoom();});on('social-session-end','click',async()=>{await roomCommand('session_end');await refreshRoom();});
   on('social-study-toggle','click',study);
-  on('social-silent','change',async()=>{if($('social-silent').checked)window.LuriaVoice?.mute(true);await channel?.track({user_id:owner.id,studying:!!window.LuriaStudyTimer?.getState()?.running,silent:$('social-silent').checked});});
+  on('social-silent','change',async()=>{if($('social-silent').checked)window.TraubeVoice?.mute(true);await channel?.track({user_id:owner.id,studying:!!window.TraubeStudyTimer?.getState()?.running,silent:$('social-silent').checked});});
   const resetAgenda=()=>{agendaEdit=null;$('social-checklist-form').reset();$('social-checklist-form').querySelector('button[type="submit"]').textContent='Adicionar';$('social-agenda-cancel').hidden=true;};
   on('social-agenda-cancel','click',resetAgenda);
   on('social-checklist-form','submit',async e=>{e.preventDefault();const at=$('social-agenda-at').value;await roomFeatures(agendaEdit?'agenda_edit':'agenda_add',{id:agendaEdit,title:$('social-checklist-text').value,scheduled_at:at?new Date(at).toISOString():null,duration_minutes:Number($('social-agenda-duration').value)||null});resetAgenda();window.dispatchEvent(new CustomEvent('luria:visual-close',{detail:'social-agenda-dialog'}));await refreshRoom();});
@@ -360,10 +360,10 @@
   on('social-message-text','input',()=>{saveDraft();if(channel&&Date.now()-lastTyping>1500){lastTyping=Date.now();return channel.send({type:'broadcast',event:'typing',payload:{user_id:owner.id}});}});
   on('social-message-file','change',async e=>{const file=e.target.files[0];if(file){await validateFile(file);pendingFile=file;$('social-send-status').textContent='Anexo: '+file.name;}else pendingFile=null;});
   $('social-messages').addEventListener('scroll',()=>{const log=$('social-messages');if(log.scrollHeight-log.scrollTop-log.clientHeight<50){unread=0;updateUnread();}}, { passive: true });
-  on('social-voice-join','click',async e=>run(e.target.closest('button'),()=>window.LuriaVoice.join(roomId,channel)));on('social-voice-mute','click',()=>window.LuriaVoice.toggleMute());on('social-voice-leave','click',()=>window.LuriaVoice.leave());
-  on('social-voice-listen','click',()=>window.LuriaVoice.toggleListening());on('social-voice-play','click',()=>window.LuriaVoice.playIncoming());on('social-voice-device','change',e=>window.LuriaVoice.changeDevice(e.target.value));
-  on('social-voice-ptt','change',async e=>{await window.LuriaVoice.setPushToTalk(e.target.checked);$('social-voice-hold').hidden=!e.target.checked;$('social-voice-mute').disabled=e.target.checked;});
-  const hold=$('social-voice-hold'),speak=value=>window.LuriaVoice.pushToTalk(value).catch(failure);
+  on('social-voice-join','click',async e=>run(e.target.closest('button'),()=>window.TraubeVoice.join(roomId,channel)));on('social-voice-mute','click',()=>window.TraubeVoice.toggleMute());on('social-voice-leave','click',()=>window.TraubeVoice.leave());
+  on('social-voice-listen','click',()=>window.TraubeVoice.toggleListening());on('social-voice-play','click',()=>window.TraubeVoice.playIncoming());on('social-voice-device','change',e=>window.TraubeVoice.changeDevice(e.target.value));
+  on('social-voice-ptt','change',async e=>{await window.TraubeVoice.setPushToTalk(e.target.checked);$('social-voice-hold').hidden=!e.target.checked;$('social-voice-mute').disabled=e.target.checked;});
+  const hold=$('social-voice-hold'),speak=value=>window.TraubeVoice.pushToTalk(value).catch(failure);
   hold?.addEventListener('pointerdown',e=>{e.preventDefault();hold.setPointerCapture?.(e.pointerId);speak(true);});for(const type of ['pointerup','pointercancel','lostpointercapture','blur'])hold?.addEventListener(type,()=>speak(false));
   hold?.addEventListener('keydown',e=>{if([' ','Enter'].includes(e.key)){e.preventDefault();if(!e.repeat)speak(true);}});hold?.addEventListener('keyup',e=>{if([' ','Enter'].includes(e.key)){e.preventDefault();speak(false);}});
   window.addEventListener('luria:voice-state',renderParticipants);
@@ -383,7 +383,7 @@
   try{if(await rpc('is_admin')===true){$('social-admin').hidden=false;await adminSnapshot();}}catch(error){failure(error);}
   socialChannel=window.supabaseClient.channel('social-user:'+owner.id).on('postgres_changes',{event:'*',schema:'public',table:'friendships'},()=>{refreshSocial().catch(failure);window.loadFriends().catch(failure);}).subscribe();
  }
- window.LuriaSocial={init,refreshSocial,refreshHall,updateFriendPresence,enter,leave,block,showProfile,inviteFriend,openCreate,getState:()=>state,refreshRoom,command,icon};
- window.addEventListener('luria:owner-changed',async()=>{if(owner&&window.LuriaLocalOwnerStore?.ownerId!==owner.id){await teardownRoom();if(socialChannel)await window.supabaseClient.removeChannel(socialChannel);for(const c of friendChannels.values())await window.supabaseClient.removeChannel(c);friendChannels.clear();owner=null;for(const id of ['social-rooms','social-messages','social-groups','social-requests','social-suggestions','social-blocks'])$(id).textContent='';$('social-room').hidden=true;$('community-rooms').hidden=false;}});
+ window.TraubeSocial={init,refreshSocial,refreshHall,updateFriendPresence,enter,leave,block,showProfile,inviteFriend,openCreate,getState:()=>state,refreshRoom,command,icon};
+ window.addEventListener('luria:owner-changed',async()=>{if(owner&&window.TraubeLocalOwnerStore?.ownerId!==owner.id){await teardownRoom();if(socialChannel)await window.supabaseClient.removeChannel(socialChannel);for(const c of friendChannels.values())await window.supabaseClient.removeChannel(c);friendChannels.clear();owner=null;for(const id of ['social-rooms','social-messages','social-groups','social-requests','social-suggestions','social-blocks'])$(id).textContent='';$('social-room').hidden=true;$('community-rooms').hidden=false;}});
  if(window.docmapUser)init();else window.addEventListener('docmap:ready',init,{once:true});
 })();

@@ -1,4 +1,4 @@
--- Applied to LURIA production in migration 20261026045644.
+-- Applied to TRAUBE production in migration 20261026045644.
 -- Before: any authenticated user could read, create, alter or delete marketing campaign records.
 -- After: only administrators can manage marketing_post_assets (role AND is_admin()).
 ALTER POLICY "Authenticated users can manage marketing_post_assets"

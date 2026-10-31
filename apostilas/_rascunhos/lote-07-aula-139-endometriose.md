@@ -1,11 +1,11 @@
-# LURIA — Lote 7 · Aula 139
+# TRAUBE — Lote 7 · Aula 139
 # Endometriose: dor pélvica, doença profunda e fertilidade
 
 **Área:** Ginecologia e Obstetrícia / Cirurgia Ginecológica. **Estado:** rascunho original, **NÃO INTEGRADO/NÃO PUBLICADO**.  
 **Marco científico:** ESHRE *Endometriosis Guideline* 2022; NICE NG73 diagnóstico e tratamento atualizado em novembro/2024; FEBRASGO Position Statement nº 4/2026, publicado em **maio/2026** na revista *Femina*, sobre **infertilidade associada à endometriose**. A literatura brasileira atual orienta aplicação nacional, enquanto tratamentos de fertilidade e acesso SUS exigem avaliação regional.
 
 ## 0. Etapa zero — preservar o que já existe, identificar material comparativo
-**Auditoria LURIA:** não havia diretório independente endometriose na listagem principal de apostilas. O HTML **\`apostilas/infertilidade-conjugal/index.html\`** foi efetivamente aberto e inspecionado; tem aproximadamente 87,7 mil caracteres de HTML, 51,7 mil de texto bruto e cerca de **20 menções a endometriose**, sobretudo como causa de infertilidade, sem substituir livro sobre fisiopatologia, imagem dirigida, dor e cirurgia de doença profunda. A apostila **\`apostilas/cervicites-doenca-inflamatoria-pelvica/index.html\`** foi aberta; DIP aparece como diferencial de dor e infertilidade, com menções limitadas a endometriose. **Preservar ambos os HTMLs**, não sobrescrever nem criar cópia de infertilidade conjugal.
+**Auditoria TRAUBE:** não havia diretório independente endometriose na listagem principal de apostilas. O HTML **\`apostilas/infertilidade-conjugal/index.html\`** foi efetivamente aberto e inspecionado; tem aproximadamente 87,7 mil caracteres de HTML, 51,7 mil de texto bruto e cerca de **20 menções a endometriose**, sobretudo como causa de infertilidade, sem substituir livro sobre fisiopatologia, imagem dirigida, dor e cirurgia de doença profunda. A apostila **\`apostilas/cervicites-doenca-inflamatoria-pelvica/index.html\`** foi aberta; DIP aparece como diferencial de dor e infertilidade, com menções limitadas a endometriose. **Preservar ambos os HTMLs**, não sobrescrever nem criar cópia de infertilidade conjugal.
 
 **Google Drive:** busca específica por “endometriose” não localizou apostila exclusivamente dedicada; **foi aberto e lido** “Doença Inflamatória Pélvica.pdf” (~2,8 mil caracteres), que apenas menciona endometriose no diferencial de infertilidade tubária e dor crônica, mas não oferece diagnóstico, estadiamento nem tratamento da endometriose. O comparativo é **parcial** e a autoria de material de referência não foi demonstrada. Não copiar figuras/textos nem declarar etapa zero equivalente integralmente cumprida. Como fontes principais independentes, foram consultadas diretrizes ESHRE/NICE e documento FEBRASGO publicado em maio/2026; esse posicionamento brasileiro sobre infertilidade **não substitui** protocolo integral para todos os fenótipos de dor.
 
@@ -197,7 +197,7 @@ Mulher com endometriose operada mantém dor, mas RM não mostra doença profunda
 A. Dor é necessariamente inventada. B. Todo caso precisa de reoperação imediata. C. Dor é proporcional diretamente à área de lesão. D. Sensibilização, assoalho pélvico, condições coexistentes e doença superficial podem explicar, justificando avaliação multidisciplinar.  
 **Gabarito D.** Dor envolve sistema nervoso e outras causas; RM normal não exclui todo fenótipo. **A/B/C** desconsideram mecanismos. **Pulo:** dor é desfecho clínico multifatorial.
 
-## 15. Pulo do Gato LURIA — alta retenção
+## 15. Pulo do Gato TRAUBE — alta retenção
 1. Endometriose peritoneal superficial pode ter US/RM normais.
 2. **Não usar CA-125** como exame confirmatório.
 3. **NICE 2024:** oferecer US-TV à suspeita, inclusive exame físico normal, respeitando recusa/adequação.
@@ -219,8 +219,8 @@ A. Dor é necessariamente inventada. B. Todo caso precisa de reoperação imedia
 1. ESHRE. *Endometriosis: guideline*. 2022. https://academic.oup.com/hropen/article/2022/2/hoac009/6537540
 2. NICE NG73. *Endometriosis: diagnosis and management*, diagnóstico atualizado em novembro/2024. https://www.nice.org.uk/guidance/ng73/chapter/Recommendations
 3. Silva Filho AL, Lamaita RM, Podgaec S, et al. FEBRASGO Position Statement nº 4/2026. *Diagnóstico e manejo da infertilidade associada à endometriose*. *Femina*. 2026;54(3):199–214. Publicado em 05/05/2026. DOI: 10.61622/0100-7254543202606. https://femina.org.br/article/diagnostico-e-manejo-da-infertilidade-associada-a-endometriose-numero-4-2026/ (página editorial estável; PDF indexado em FEBRASGO não pôde ser aberto diretamente na checagem).
-4. LURIA. \`apostilas/infertilidade-conjugal/index.html\`, livro já existente e preservado.
-5. LURIA. \`apostilas/cervicites-doenca-inflamatoria-pelvica/index.html\`, diferencial de dor pélvica revisado.
+4. TRAUBE. \`apostilas/infertilidade-conjugal/index.html\`, livro já existente e preservado.
+5. TRAUBE. \`apostilas/cervicites-doenca-inflamatoria-pelvica/index.html\`, diferencial de dor pélvica revisado.
 
 ## 18. Checklist
 - [x] Inventário do HTML, comparação Drive parcial, fontes 2022/2024/2026.
@@ -269,7 +269,7 @@ Dor abdominal aguda em gestante em idade reprodutiva não pode receber rótulo d
 A proposta terapêutica depende de localização, idade, desejo reprodutivo e risco de procedimento, não de uma competição entre rótulos.
 
 ### 19.5. DIP versus endometriose: o que não pode ser perdido
-A doença inflamatória pélvica decorre de infecção/inflamação do trato genital superior e pode produzir dor, febre, corrimento, sangramento e infertilidade por lesão tubária. História sexual/IST, secreção mucopurulenta, dor à mobilização de colo e marcadores inflamatórios podem favorecer DIP, mas ausência de febre não exclui infecção. **Infecção e endometriose podem coexistir.** A aula já publicada LURIA de DIP fornece tratamento microbiológico; a presente aula enfatiza diferenciação e não deve reproduzir todo esquema antibiótico.
+A doença inflamatória pélvica decorre de infecção/inflamação do trato genital superior e pode produzir dor, febre, corrimento, sangramento e infertilidade por lesão tubária. História sexual/IST, secreção mucopurulenta, dor à mobilização de colo e marcadores inflamatórios podem favorecer DIP, mas ausência de febre não exclui infecção. **Infecção e endometriose podem coexistir.** A aula já publicada TRAUBE de DIP fornece tratamento microbiológico; a presente aula enfatiza diferenciação e não deve reproduzir todo esquema antibiótico.
 
 ## 20. Imagem de endometriose como problema anatômico, não teste mágico
 
@@ -404,7 +404,7 @@ Idade materna/qualidade oocitária, reserva, alterações tubárias, infertilida
 ### 24.3. Qual contribuição do posicionamento FEBRASGO nº 4/2026?
 O documento brasileiro afirma que a infertilidade relacionada à endometriose é multifatorial e a investigação deve começar com clínica estruturada e **US transvaginal experiente**; RM é complementar. Em inférteis assintomáticas com imagem normal, laparoscopia diagnóstica de rotina não é recomendada. A decisão por cirurgia versus reprodução assistida considera idade, reserva, infertilidade concomitante, dor e riscos.
 
-O posicionamento foi publicado em *Femina* em 05/05/2026 e também em edição científica em inglês; sua aplicação na LURIA deve evitar copiar gráficos/fluxogramas protegidos e restringir inferências ao contexto de infertilidade. O estudo de casais com endometriose pode ser aprofundado pela apostila LURIA **Infertilidade Conjugal**, sem necessidade de duplicar o livro inteiro aqui.
+O posicionamento foi publicado em *Femina* em 05/05/2026 e também em edição científica em inglês; sua aplicação na TRAUBE deve evitar copiar gráficos/fluxogramas protegidos e restringir inferências ao contexto de infertilidade. O estudo de casais com endometriose pode ser aprofundado pela apostila TRAUBE **Infertilidade Conjugal**, sem necessidade de duplicar o livro inteiro aqui.
 
 ### 24.4. A conduta frente a estágios I/II é diferente de doença profunda
 ESHRE considera que cirurgia operatória pode ser opção em infertilidade associada a estágios I/II, com evidência de benefício modesto de gravidez em certos cenários; não equivale a operar em toda pessoa com endometriose mínima. Em doença profunda, benefício reprodutivo isolado da cirurgia é menos definido; em pessoa sintomática que deseja gestar, cirurgia pode ser considerada por dor/anatomia/risco, mas a eficácia em fertilidade não deve ser superprometida.
@@ -548,7 +548,7 @@ A. Laparoscopia proibida. B. US transvaginal capaz de excluir todas as formas. C
 
 ## 29. Auditoria editorial da continuação
 - [x] Relidos três resumos correlatos do Drive; nenhum equivale a livro-texto de endometriose, portanto benchmark completo segue **pendente**.
-- [x] Comparação com HTML LURIA de infertilidade existente, preservado sem alteração.
+- [x] Comparação com HTML TRAUBE de infertilidade existente, preservado sem alteração.
 - [x] Incluídos capítulos originais de diferencial clínico, técnicas de imagem/mapeamento, decisão terapêutica por objetivo, cirurgia e fertilidade.
 - [x] Cinco casos inéditos e oito questões inéditas com comentários de todas as alternativas, além das existentes.
 - [ ] Faltam farmacologia brasileira com apresentação/posologia, segurança em gestação, adolescência e comorbidades.

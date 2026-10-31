@@ -16,7 +16,7 @@ export const Background: React.FC = () => {
         fontFamily: THEME.fonts.main
       }}
     >
-      {/* Gradiente radial superior suave com azul LURIA */}
+      {/* Gradiente radial superior suave com azul TRAUBE */}
       <div
         style={{
           position: 'absolute',

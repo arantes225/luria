@@ -1,5 +1,5 @@
 /* assets/js/ecg-smart-ui.js
-   Orquestrador da Interface do Usuário do ECG Inteligente (LURIA).
+   Orquestrador da Interface do Usuário do ECG Inteligente (TRAUBE).
    Conecta a Câmera Inteligente, os Modos Rápido/Ultrassensível,
    o Renderizador da Etapa 2 (Traçados Extraídos, Sobreposição Pixel a Pixel Real, Zoom/Pan,
    Calibração e Auditoria de Fidelidade) e o Portão de Segurança da Etapa 3 (IA).
@@ -109,7 +109,7 @@
     // layers and dynamically inserted navigation (unlike fixed z-index).
     if (typeof guidedPage.showModal === "function" && !guidedPage.open) {
       try { guidedPage.showModal(); }
-      catch (error) { console.warn("[LURIA ECG] Falha ao abrir modal nativo; usando fallback.", error); }
+      catch (error) { console.warn("[TRAUBE ECG] Falha ao abrir modal nativo; usando fallback.", error); }
     }
     cameraViewport.hidden = false;
     guidedPage.dataset.captureMode = mode;
@@ -152,8 +152,8 @@
   window.visualViewport?.addEventListener?.("resize", updateGuidedOrientation, { passive: true });
 
   // Inicializa a Câmera Inteligente
-  const cameraController = (window.LuriaSmartCamera && window.LuriaSmartCamera.createController)
-    ? window.LuriaSmartCamera.createController({
+  const cameraController = (window.TraubeSmartCamera && window.TraubeSmartCamera.createController)
+    ? window.TraubeSmartCamera.createController({
         videoEl,
         canvasEl,
         hudContainer,
@@ -175,8 +175,8 @@
         onIaReviewReady: pkg => {
           currentSessionPackage = pkg;
           stage3Section.hidden = false;
-          if (typeof window.LuriaEcgReaderInit === "function") {
-            window.LuriaEcgReaderInit(pkg);
+          if (typeof window.TraubeEcgReaderInit === "function") {
+            window.TraubeEcgReaderInit(pkg);
           }
           stage3Section.scrollIntoView({ behavior: "smooth" });
         },
@@ -249,7 +249,7 @@
     cameraController?.stopCamera();
     exitGuidedCapture();
   }
-  window.LuriaEcgStopScanner = stopGuidedScanner;
+  window.TraubeEcgStopScanner = stopGuidedScanner;
   guidedClose?.addEventListener("click", stopGuidedScanner);
   guidedCapture?.addEventListener("click", () => cameraController?.captureCurrentFrame?.());
   guidedPage?.addEventListener("cancel", event => {
@@ -353,7 +353,7 @@
             finish({ ok: false, reason: "Rotação inválida. Escolha os botões de girar a foto novamente." });
             return;
           }
-          const perspective = window.LuriaEcgPhotoPerspective;
+          const perspective = window.TraubeEcgPhotoPerspective;
           if (rotationDeg && !perspective?.rotateCanvasQuarter) {
             finish({ ok: false, reason: "Rotação de imagem indisponível. Reabra a página do ECG." });
             return;
@@ -412,7 +412,7 @@
           renderStage2Waveforms(leads);
           finish({ ok: true, capturedCount: result.capturedCount, totalCaptured: result.totalCaptured, originalWidth: originalW, originalHeight: originalH, analysedWidth: workW, analysedHeight: workH });
         } catch (exception) {
-          console.warn("[LURIA ECG] Falha técnica na etapa", stage, exception);
+          console.warn("[TRAUBE ECG] Falha técnica na etapa", stage, exception);
           const memoryError = /out.of.memory|allocation|memory|quota/i.test(String(exception?.message || ""));
           const reason = memoryError
             ? "A memória do aparelho não foi suficiente para processar a foto. Feche aplicativos pesados ou experimente outra imagem."
@@ -424,7 +424,7 @@
     });
   }
 
-  window.LuriaEcgProcessPhoto = processPhotoFile;
+  window.TraubeEcgProcessPhoto = processPhotoFile;
 
   const inputImage = byId("ecg-image");
   inputImage?.addEventListener("change", async () => {

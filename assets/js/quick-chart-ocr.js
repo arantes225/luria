@@ -104,8 +104,8 @@
       const canvas = await drawSource(file);
       if (ticket !== sequence) return;
       message("Carregando o leitor de texto… (a primeira vez pode exigir internet)");
-      if (!window.LuriaLazyVendors?.ensure) throw new Error("Leitor OCR indisponível. Atualize a página.");
-      await window.LuriaLazyVendors.ensure("tesseract");
+      if (!window.TraubeLazyVendors?.ensure) throw new Error("Leitor OCR indisponível. Atualize a página.");
+      await window.TraubeLazyVendors.ensure("tesseract");
       if (ticket !== sequence) return;
       // Tesseract.js roda no navegador: apenas o texto confirmado entra no caderno.
       worker = await window.Tesseract.createWorker("por+eng", 1, {

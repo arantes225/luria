@@ -18,12 +18,12 @@ test('failed leave survives reload, retries only the owning account and releases
    return{ok:status===200,status,json:async()=>result};
   };w.eval(read('assets/js/social-voice.js'));
  };
- const first=page(t,'amigos/index.html').w;setup(first);await first.LuriaVoice.join(A,{send:async()=>{}});const oldClient=leases.get(A);assert.equal(first.sessionStorage.getItem('luria:voice:pending-leaves'),null);
- offline=true;await first.LuriaVoice.leave();const saved=first.sessionStorage.getItem('luria:voice:pending-leaves');assert(saved.includes(oldClient));assert.doesNotMatch(saved,/private-jwt|Bearer|credential/);assert.equal(first.LuriaVoice.getState().active,false);
+ const first=page(t,'amigos/index.html').w;setup(first);await first.TraubeVoice.join(A,{send:async()=>{}});const oldClient=leases.get(A);assert.equal(first.sessionStorage.getItem('luria:voice:pending-leaves'),null);
+ offline=true;await first.TraubeVoice.leave();const saved=first.sessionStorage.getItem('luria:voice:pending-leaves');assert(saved.includes(oldClient));assert.doesNotMatch(saved,/private-jwt|Bearer|credential/);assert.equal(first.TraubeVoice.getState().active,false);
  const next=page(t,'amigos/index.html').w;setup(next);next.sessionStorage.setItem('luria:voice:pending-leaves',saved);offline=false;user=B;
- await next.LuriaVoice.join(A,{send:async()=>{}});assert.equal(leases.get(A),oldClient);assert(!calls.some(c=>c.user===B&&c.action==='leave'&&c.client===oldClient));await next.LuriaVoice.leave();
- user=A;await next.LuriaVoice.join(A,{send:async()=>{}});assert.notEqual(leases.get(A),oldClient);const cleanup=calls.findLastIndex(c=>c.user===A&&c.action==='leave'&&c.client===oldClient);const newJoin=calls.findLastIndex(c=>c.user===A&&c.action==='join');assert(cleanup<newJoin);assert.equal(next.sessionStorage.getItem('luria:voice:pending-leaves'),null);await next.LuriaVoice.leave();
- offline=true;await assert.rejects(next.LuriaVoice.join(A,{send:async()=>{}}),/conexão de rede foi interrompida/);assert.equal(next.LuriaVoice.getState().active,false);
+ await next.TraubeVoice.join(A,{send:async()=>{}});assert.equal(leases.get(A),oldClient);assert(!calls.some(c=>c.user===B&&c.action==='leave'&&c.client===oldClient));await next.TraubeVoice.leave();
+ user=A;await next.TraubeVoice.join(A,{send:async()=>{}});assert.notEqual(leases.get(A),oldClient);const cleanup=calls.findLastIndex(c=>c.user===A&&c.action==='leave'&&c.client===oldClient);const newJoin=calls.findLastIndex(c=>c.user===A&&c.action==='join');assert(cleanup<newJoin);assert.equal(next.sessionStorage.getItem('luria:voice:pending-leaves'),null);await next.TraubeVoice.leave();
+ offline=true;await assert.rejects(next.TraubeVoice.join(A,{send:async()=>{}}),/conexão de rede foi interrompida/);assert.equal(next.TraubeVoice.getState().active,false);
 });
 test('voice client captures audio only, stops both normal and late captures and never clears a newer call',async t=>{
  const {w}=page(t,'amigos/index.html');const calls=[],captureRequests=[];
@@ -39,14 +39,14 @@ test('voice client captures audio only, stops both normal and late captures and 
  w.supabaseClient={auth:{getSession:async()=>({data:{session:{access_token:'test'}}})}};
  w.fetch=async(url,options)=>{calls.push({url,body:JSON.parse(options.body),keepalive:options.keepalive});return{ok:true,status:200,json:async()=>url.endsWith('/ice')?{iceServers:[{urls:'turns:turn.cloudflare.com:443?transport=tcp',username:'temporary',credential:'temporary-password'}]}:url.endsWith('/heartbeat')?{peers:[]}:url.endsWith('/publish')?{sessionDescription:{type:'answer',sdp:'m=audio'}}:{sessionId:'fake'}};};
  w.eval(read('assets/js/social-voice.js'));const channel={send:async()=>{}};
- const old=w.LuriaVoice.join(A,channel);await tick();assert.equal(captureRequests.length,1);await w.LuriaVoice.leave();
- const current=w.LuriaVoice.join(B,channel);await tick();captureRequests[1](media(second));await current;assert.equal(w.LuriaVoice.getState().active,true);
+ const old=w.TraubeVoice.join(A,channel);await tick();assert.equal(captureRequests.length,1);await w.TraubeVoice.leave();
+ const current=w.TraubeVoice.join(B,channel);await tick();captureRequests[1](media(second));await current;assert.equal(w.TraubeVoice.getState().active,true);
  captureRequests[0](media(first));await old;assert.equal(first.stopped,true);assert.equal(second.stopped,false);
  assert.equal(second.enabled,false);assert.equal(replacements.at(-1),null);assert.equal(parameters.at(-1).encodings[0].maxBitrate,64000);assert.equal(parameters.at(-1).encodings[0].dtx,'enabled');
- await w.LuriaVoice.mute(false);assert.equal(second.enabled,true);assert.equal(replacements.at(-1),second);await w.LuriaVoice.setPushToTalk(true);assert.equal(second.enabled,false);await w.LuriaVoice.pushToTalk(true);assert.equal(second.enabled,true);await w.LuriaVoice.pushToTalk(false);assert.equal(replacements.at(-1),null);
- w.LuriaVoice.mute(true);assert.equal(second.enabled,false);
+ await w.TraubeVoice.mute(false);assert.equal(second.enabled,true);assert.equal(replacements.at(-1),second);await w.TraubeVoice.setPushToTalk(true);assert.equal(second.enabled,false);await w.TraubeVoice.pushToTalk(true);assert.equal(second.enabled,true);await w.TraubeVoice.pushToTalk(false);assert.equal(replacements.at(-1),null);
+ w.TraubeVoice.mute(true);assert.equal(second.enabled,false);
  w.supabaseClient.auth.getSession=()=>{throw new Error('Unload must not wait for auth');};w.dispatchEvent(new w.Event('pagehide'));
- assert.equal(second.stopped,true);assert.equal(w.LuriaVoice.getState().active,false);assert(calls.some(c=>c.url.endsWith('/leave')&&c.url.includes('/'+B+'/')&&c.keepalive===true));await tick();
+ assert.equal(second.stopped,true);assert.equal(w.TraubeVoice.getState().active,false);assert(calls.some(c=>c.url.endsWith('/leave')&&c.url.includes('/'+B+'/')&&c.keepalive===true));await tick();
  assert(calls.filter(c=>c.url.endsWith('/leave')).some(c=>c.url.includes('/'+A+'/')));assert(calls.filter(c=>c.url.endsWith('/leave')).some(c=>c.url.includes('/'+B+'/')));
 });
 
@@ -65,10 +65,10 @@ test('ICE gathering keeps available routes when another TURN port stalls and can
   };
   w.AbortSignal.timeout=()=>undefined;w.supabaseClient={auth:{getSession:async()=>({data:{session:{access_token:'test'}}})}};
   w.fetch=async(url,options)=>{calls.push({url,body:JSON.parse(options.body)});return{ok:true,status:200,json:async()=>url.endsWith('/ice')?{iceServers:[{urls:'turns:turn.cloudflare.com:443?transport=tcp'}]}:url.endsWith('/heartbeat')?{peers:[]}:url.endsWith('/publish')?{sessionDescription:{type:'answer',sdp:'m=audio'}}:{sessionId:'fixture'}};};
-  w.eval(read('assets/js/social-voice.js'));const joining=w.LuriaVoice.join(A,{send:async()=>{}});const outcome=joining.then(()=>null,error=>error);await tick();assert(!calls.some(c=>c.url.endsWith('/join')));
-  if(mode==='closed')await w.LuriaVoice.leave();else [...timers.values()].find(timer=>timer.delay===(mode==='relay'?800:10000)).fn();
+  w.eval(read('assets/js/social-voice.js'));const joining=w.TraubeVoice.join(A,{send:async()=>{}});const outcome=joining.then(()=>null,error=>error);await tick();assert(!calls.some(c=>c.url.endsWith('/join')));
+  if(mode==='closed')await w.TraubeVoice.leave();else [...timers.values()].find(timer=>timer.delay===(mode==='relay'?800:10000)).fn();
   const error=await outcome;
-  if(['partial','relay'].includes(mode)){assert.equal(error,null);assert(calls.some(c=>c.url.endsWith('/publish')&&c.body.sessionDescription.sdp.includes(candidate)));await w.LuriaVoice.leave();}
+  if(['partial','relay'].includes(mode)){assert.equal(error,null);assert(calls.some(c=>c.url.endsWith('/publish')&&c.body.sessionDescription.sdp.includes(candidate)));await w.TraubeVoice.leave();}
   else{assert(!calls.some(c=>c.url.endsWith('/join')));assert(stopped);if(mode==='empty')assert.match(error.message,/Não foi encontrada uma rota/);else assert.equal(error,null);}
   assert.equal(connection.handlers.get('icecandidate').size,0);assert.equal(connection.handlers.get('icegatheringstatechange').size,0);assert.equal(timers.size,0);
  });
@@ -85,6 +85,6 @@ test('voice prepares the offer before allocating SFU and waits for transport bef
  };
  w.AbortSignal.timeout=()=>undefined;w.supabaseClient={auth:{getSession:async()=>({data:{session:{access_token:'test'}}})}};
  w.fetch=async(url)=>{calls.push(url);if(url.endsWith('/join'))assert(connection.localDescription);return{ok:true,status:200,json:async()=>url.endsWith('/ice')?{iceServers:[{urls:'turns:turn.cloudflare.com:443?transport=tcp',credential:'temporary-'+(++iceRequests)}],expiresAt:Date.now()+(iceRequests===1?1:600000)}:url.endsWith('/heartbeat')?{peers:[]}:url.endsWith('/publish')?{sessionDescription:{type:'answer',sdp:'m=audio'}}:{sessionId:'fixture'}};};
- w.eval(read('assets/js/social-voice.js'));const joining=w.LuriaVoice.join(A,{send:async()=>{throw new w.TypeError('Load failed');}});await tick();assert(calls.some(url=>url.endsWith('/publish')));await w.LuriaVoice.sync();assert(!calls.some(url=>url.endsWith('/heartbeat')));
- connection.connectionState='connected';for(const fn of [...connection.handlers.get('connectionstatechange')])fn();await joining;assert(calls.some(url=>url.endsWith('/heartbeat')));assert.equal(iceRequests,2);assert.equal(connection.refreshed,true);assert.equal(connection.config.iceServers[0].credential,'temporary-2');await w.LuriaVoice.leave();
+ w.eval(read('assets/js/social-voice.js'));const joining=w.TraubeVoice.join(A,{send:async()=>{throw new w.TypeError('Load failed');}});await tick();assert(calls.some(url=>url.endsWith('/publish')));await w.TraubeVoice.sync();assert(!calls.some(url=>url.endsWith('/heartbeat')));
+ connection.connectionState='connected';for(const fn of [...connection.handlers.get('connectionstatechange')])fn();await joining;assert(calls.some(url=>url.endsWith('/heartbeat')));assert.equal(iceRequests,2);assert.equal(connection.refreshed,true);assert.equal(connection.config.iceServers[0].credential,'temporary-2');await w.TraubeVoice.leave();
 });

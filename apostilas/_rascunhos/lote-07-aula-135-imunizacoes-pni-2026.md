@@ -1,10 +1,10 @@
-# LURIA — Lote 7 · Aula 135
+# TRAUBE — Lote 7 · Aula 135
 # Imunizações e Programa Nacional de Imunizações (PNI) — Brasil, outubro de 2026
 **Área:** Medicina Preventiva / Pediatria / APS. **Status:** RASCUNHO ORIGINAL EM REVISÃO, NÃO PUBLICADO.  
 **Corte de atualização:** 14/10/2026. **Fonte normativa prioritária:** Ministério da Saúde, *Calendário Nacional de Vacinação 2026*, *Instrução Normativa 2026* e calendários técnicos por faixa etária, páginas oficiais atualizadas em julho–outubro de 2026. **Importante:** informações de calendário, incorporação e transição de estoques mudam; qualquer tabela impressa deve exibir data de conferência e exigir cotejo com o sistema PNI do território antes da prescrição.
 
 ## 0. Etapa zero — por que os resumos antigos são perigosos
-A LURIA não apresentava pasta específica de imunizações/PNI no inventário principal. A comparação foi **efetivamente realizada** mediante leitura de “Imunizações .pdf” no Google Drive (cerca de 2.867 caracteres), explicitamente identificado como **“Calendário PNI 2020”**, e “SUS.pdf” para os princípios organizativos. Esses arquivos são referências **parciais e antigas**; autoria institucional da material de referência não foi comprovada. O resumo 2020 cita VOP aos 15 meses, esquemas antigos de rotavírus, vacinação HPV em duas doses para faixa antiga, meningocócica C no reforço de 12 meses e pneumocócica 10-valente como esquema único. **Não adotar nenhum desses itens como norma automática de 2026.**
+A TRAUBE não apresentava pasta específica de imunizações/PNI no inventário principal. A comparação foi **efetivamente realizada** mediante leitura de “Imunizações .pdf” no Google Drive (cerca de 2.867 caracteres), explicitamente identificado como **“Calendário PNI 2020”**, e “SUS.pdf” para os princípios organizativos. Esses arquivos são referências **parciais e antigas**; autoria institucional da material de referência não foi comprovada. O resumo 2020 cita VOP aos 15 meses, esquemas antigos de rotavírus, vacinação HPV em duas doses para faixa antiga, meningocócica C no reforço de 12 meses e pneumocócica 10-valente como esquema único. **Não adotar nenhum desses itens como norma automática de 2026.**
 
 O Ministério da Saúde disponibilizou calendário da criança atualizado em **29/07/2026**, instrução normativa de 2026 e calendário de gestantes atualizado em **13/10/2026**. A vacina pneumocócica **VPC20** foi incorporada em 2026 com fase de transição de estoques da VPC10: a página oficial pode mostrar VPC20 em algumas idades e VPC10 em dose intermediária enquanto se executa esquema misto. A SBP publicou calendário 2026/2027 em julho/2026 e confirmou a transição; suas recomendações profissionais podem divergir de acesso e intervalos prioritários do SUS. **Não confundir recomendação da SBP com esquema disponibilizado universalmente pelo PNI**.
 
@@ -209,7 +209,7 @@ A. Adiar todas as vacinas por três meses. B. Aplicar somente depois de hemogram
 - [ ] Desenvolver figuras originais e validar licenças de uso comercial antes de integrar.
 - [ ] Revisão médica, checagem normativa final em data de publicação, integração e teste PWA.
 
-**Estado final do documento:** rascunho; não certifica calendário de aplicação e não foi integrado à biblioteca LURIA.
+**Estado final do documento:** rascunho; não certifica calendário de aplicação e não foi integrado à biblioteca TRAUBE.
 
 
 ---

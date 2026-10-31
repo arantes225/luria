@@ -3,7 +3,7 @@
  'use strict';
  const base=document.getElementById('plantao-patient-image');
  const scene=base?.closest('.plantao-scene');
- if(!base||!scene||!window.LuriaPatient||!window.LURIA_CHARACTERS)return;
+ if(!base||!scene||!window.TraubePatient||!window.TRAUBE_CHARACTERS)return;
  const groups=[
   [/elderly-woman|mulher[-_]idosa/i,3],
   [/elderly-man|homem[-_]idoso/i,2],
@@ -25,7 +25,7 @@
   let src=base.getAttribute('src')||'';try{src=decodeURIComponent(src)}catch{}
   const entry=groups.find(([pattern])=>pattern.test(src));
   if(!entry||/ambulancia|ambulance|\/plantao\/aph\//.test(src)){remove();return}
-  const index=entry[1],config=window.LURIA_CHARACTERS[index];
+  const index=entry[1],config=window.TRAUBE_CHARACTERS[index];
   const value=base.dataset.luriaRr;
   const rr=value!==undefined&&value!==''&&Number.isFinite(Number(value))?Number(value):17;
   const eyes=base.dataset.luriaEyes||(/closed|fechad|dormindo|sleep/i.test(src)?'closed':'auto');
@@ -37,7 +37,7 @@
   canvas.dataset.characterId=config.id;
   canvas.addEventListener('patienterror',()=>{remove();console.error('Não foi possível carregar o personagem original.')},{once:true});
   base.before(canvas);
-  rig=new window.LuriaPatient(canvas,config,options);
+  rig=new window.TraubePatient(canvas,config,options);
   const instance=rig;
   function ready(){
    if(rig!==instance)return;

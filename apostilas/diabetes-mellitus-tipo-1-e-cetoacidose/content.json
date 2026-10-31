@@ -7,7 +7,7 @@
   "a": "Pediatria",
   "m": "Pediatria",
   "h": [
-    "Apostila LURIA",
+    "Apostila TRAUBE",
     "Diabetes Mellitus Tipo 1 e Cetoacidose Diabética",
     "Tratado Completo de Endocrinologia e Terapia Intensiva Pediátrica: Autoimunidade, Autoanticorpos (Anti-GAD, IA2, ZnT8, IAA), Fisiopatologia da CAD, Protocolo Rígido de Hidratação 24-48h, Insulina Contínua sem Bolus, Reposição de Potássio, Manejo Hiperosmolar do Edema Cerebral, Esquema Basal-Bolus, CGM, Lua de Mel e Complicações Crônicas",
     [
@@ -48,7 +48,7 @@
     ],
     [
       "manejo-ambulatorial-do-dm1-tecnologias-e-checklist-luria",
-      "8. Manejo Ambulatorial Crônico do DM1: Insulinoterapia Basal-Bolus, Monitorização Contínua, Tecnologias e Checklist LURIA"
+      "8. Manejo Ambulatorial Crônico do DM1: Insulinoterapia Basal-Bolus, Monitorização Contínua, Tecnologias e Checklist TRAUBE"
     ],
     [
       "complicacoes-cronicas-triagem-e-sindrome-honeymoon",
@@ -860,7 +860,7 @@
       [
         [
           "2",
-          "8. Manejo Ambulatorial Crônico do DM1: Insulinoterapia Basal-Bolus, Monitorização Contínua, Tecnologias e Checklist LURIA"
+          "8. Manejo Ambulatorial Crônico do DM1: Insulinoterapia Basal-Bolus, Monitorização Contínua, Tecnologias e Checklist TRAUBE"
         ],
         [
           "p",
@@ -974,7 +974,7 @@
         ],
         [
           "4",
-          "Checklist de Alta Retenção LURIA: Os 10 Mandamentos da CAD Pediátrica"
+          "Checklist de Alta Retenção TRAUBE: Os 10 Mandamentos da CAD Pediátrica"
         ],
         [
           "o",

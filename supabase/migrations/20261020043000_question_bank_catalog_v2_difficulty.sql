@@ -38,7 +38,7 @@ revoke all on function public.user_question_bank_list_catalog_v2() from public, 
 grant execute on function public.user_question_bank_list_catalog_v2() to authenticated;
 
 comment on function public.user_question_bank_list_catalog_v2() is
-  'Catálogo de listas LURIA: mantém os lotes autorizados e acrescenta dificuldade e ID do subtema.';
+  'Catálogo de listas TRAUBE: mantém os lotes autorizados e acrescenta dificuldade e ID do subtema.';
 
 -- Quando o criador informa a chave e a taxonomia da questão oficial, não
 -- sobrescrever esses campos com NULL: o banco fonte é protegido por RLS.

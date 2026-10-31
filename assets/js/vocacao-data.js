@@ -1,4 +1,4 @@
-/* Curadoria LURIA de programas de residência médica de especialidades convencionais.
+/* Curadoria TRAUBE de programas de residência médica de especialidades convencionais.
    Lista editorial deliberadamente mais restrita que as especialidades reconhecidas pelo CFM.
    Programas ofertados e regras de acesso devem ser confirmados na CNRM e nos editais.
    As tags são hipóteses editoriais sobre rotinas, NÃO critérios validados. */
@@ -6,7 +6,7 @@
   "use strict";
   const data = factory();
   if (typeof module !== "undefined" && module.exports) module.exports = data;
-  if (root) root.LuriaVocacaoData = data;
+  if (root) root.TraubeVocacaoData = data;
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
   "use strict";
   const specRows = [
@@ -69,7 +69,7 @@
     // Alias interno para preservar a interface do motor de afinidade.
     specialties: residencies,
     areas: [],
-    scope: "Residências médicas convencionais selecionadas pela LURIA",
+    scope: "Residências médicas convencionais selecionadas pela TRAUBE",
     source: "CNRM/MEC — confirmar programa, acesso e duração no edital vigente",
     updated: "2026-10-29"
   });

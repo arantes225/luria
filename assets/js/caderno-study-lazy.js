@@ -1,4 +1,4 @@
-/* LURIA: a biblioteca de anotações deve abrir mesmo se o leitor lado a lado falhar. */
+/* TRAUBE: a biblioteca de anotações deve abrir mesmo se o leitor lado a lado falhar. */
 (() => {
   "use strict";
   const editorView = document.getElementById("notebook-view-editor");
@@ -11,7 +11,7 @@
     script.src = "/assets/js/study-side-by-side.js?v=20261028-notes-recovery1";
     script.async = true;
     script.addEventListener("error", () => {
-      console.warn("LURIA: modo dividido indisponível, editor de anotações preservado.");
+      console.warn("TRAUBE: modo dividido indisponível, editor de anotações preservado.");
     }, { once: true });
     document.body.appendChild(script);
   }
@@ -41,11 +41,11 @@
       if (topic || note) {
         clearInterval(interval);
         Promise.resolve(topic ? openTopic(topic.id) : openFreeNote(note.id))
-          .catch(error => console.warn("LURIA: anotação existente não pôde ser aberta.", error));
+          .catch(error => console.warn("TRAUBE: anotação existente não pôde ser aberta.", error));
       } else if (tries >= 20) clearInterval(interval);
     } catch (error) {
       clearInterval(interval);
-      console.warn("LURIA: vínculo de apostila indisponível.", error);
+      console.warn("TRAUBE: vínculo de apostila indisponível.", error);
     }
   }, 200);
 })();

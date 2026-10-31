@@ -52,7 +52,7 @@ function renderCurrent(){
     document.getElementById("error-review-progress").textContent=`${reviewItems.length} de ${reviewItems.length}`;
     renderSidebars();
     if(reviewItems.length&&reviewCompleted>=reviewItems.length){
-      window.LuriaGuidedStudy?.completeActiveStep?.("error-review-complete");
+      window.TraubeGuidedStudy?.completeActiveStep?.("error-review-complete");
     }
     return
   }

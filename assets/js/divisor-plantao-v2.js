@@ -210,5 +210,5 @@
     }, 60000);
   }
   document.addEventListener("DOMContentLoaded",init);
-  window.LuriaShiftDivisor={even,formatDuration};
+  window.TraubeShiftDivisor={even,formatDuration};
 })();

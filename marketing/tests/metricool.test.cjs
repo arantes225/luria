@@ -37,7 +37,7 @@ test('Metricool: gera payload de rascunho compatível com Instagram Reels em mod
   const client = new MetricoolMcpClient();
   const res = await client.createSchedulePost({
     date: '2026-10-20T18:00:00Z',
-    caption: 'Legenda de rascunho para Reel da LURIA #ResidenciaMedica',
+    caption: 'Legenda de rascunho para Reel da TRAUBE #ResidenciaMedica',
     mediaUrls: ['https://storage.resibulando.online/marketing/reel-studyrats.mp4'],
     isDraft: true
   });

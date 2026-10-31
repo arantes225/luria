@@ -183,7 +183,7 @@ let browser;
     await page.locator('button[type="submit"]').click();
     const correct = await page.evaluate(
       () =>
-        LuriaGameContent.questions.find(
+        TraubeGameContent.questions.find(
           (q) => q.prompt === document.querySelector("h2.g-case").textContent,
         ).answer,
     );
@@ -283,7 +283,7 @@ let browser;
     );
     await screenshot("escape-first-room");
     for (let i = 0; i < 9; i++) {
-      const s = await page.evaluate((i) => LuriaGameContent.adventure[i], i);
+      const s = await page.evaluate((i) => TraubeGameContent.adventure[i], i);
       if (s.type === "sort") await solve();
       else if (s.type === "select")
         for (const answer of s.answers)

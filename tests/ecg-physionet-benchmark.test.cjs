@@ -5,7 +5,7 @@
  * Protocolo de Validação:
  * 1. Decodifica os sinais WFDB brutos (formato 16 bits little-endian, ganho 1000 ADC/mV, 100 Hz, 12 derivações).
  * 2. Renderiza imagens eletrocardiográficas calibradas (25 mm/s, 10 mm/mV, 6 px/mm) com grade milimetrada e rótulos.
- * 3. Submete as imagens geradas ao motor de extração real (LuriaEcgCvEngine + LuriaEcgSignalExtractor).
+ * 3. Submete as imagens geradas ao motor de extração real (TraubeEcgCvEngine + TraubeEcgSignalExtractor).
  * 4. Calcula métricas quantitativas objetivas comparando o sinal extraído com o Ground-Truth:
  *    - MAE (Erro Médio Absoluto em mV)
  *    - RMSE (Raiz do Erro Quadrático Médio em mV)
@@ -244,7 +244,7 @@ test("Benchmark 2: Digitalização e Comparação Quantitativa contra Ground-Tru
     pxPerMm: 6.0
   });
 
-  const extraction = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData(
+  const extraction = context.TraubeEcgSignalExtractor.extractRealSignalFromImageData(
     { width: rendered.width, height: rendered.height, data: rendered.data },
     {
       leadIdentity: { lead: "DI", evidence: "benchmark_ptbxl", verified: true },
@@ -331,7 +331,7 @@ test("Benchmark 2B: PTB-XL permanece rastreável em foto monocromática com somb
   const rawSignal = rec.signals[leadKey].slice(0, 250);
   const clean = renderCalibratedLeadImage(rawSignal, 100, { paperSpeed: 25, gain: 10, pxPerMm: 6.0 });
   const photographed = degradeAsMonochromePhonePhoto(clean);
-  const extraction = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData(photographed, {
+  const extraction = context.TraubeEcgSignalExtractor.extractRealSignalFromImageData(photographed, {
     leadIdentity: { lead: "DII", evidence: "benchmark_ptbxl_degraded", verified: true },
     calibration: {
       paperSpeedMmPerSec: 25, gainMmPerMv: 10, calibrationSource: "measured",
@@ -360,7 +360,7 @@ test("Benchmark 3: Taxa de Falsa Aceitação Zero (0%) em Exames Inválidos", ()
       const g = renderCalibratedLeadImage(new Float32Array(250).fill(0), 100, { pxPerMm: 6.0 });
       inp.data = g.data;
     }
-    const res = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData({
+    const res = context.TraubeEcgSignalExtractor.extractRealSignalFromImageData({
       width: 200, height: 100, data: inp.data
     });
     if (res.isValid && res.audit?.status === "Adequada tecnicamente") {
@@ -395,7 +395,7 @@ test("Benchmark 4: Avaliação Multiderivações Rigorosa (I, II, V1, V5) e Mét
 
     const rendered = renderCalibratedLeadImage(rawSignal, 100, { paperSpeed: 25, gain: 10, pxPerMm: 6.0 });
 
-    const extraction = context.LuriaEcgSignalExtractor.extractRealSignalFromImageData(
+    const extraction = context.TraubeEcgSignalExtractor.extractRealSignalFromImageData(
       { width: rendered.width, height: rendered.height, data: rendered.data },
       {
         leadIdentity: { lead, evidence: "benchmark_ptbxl", verified: true },

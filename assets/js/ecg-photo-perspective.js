@@ -1,4 +1,4 @@
-/* LURIA ECG: explicit manual paper quadrilateral, safe perspective projection.
+/* TRAUBE ECG: explicit manual paper quadrilateral, safe perspective projection.
    All coordinates are normalized to ORIGINAL decoded image orientation (0..1).
    Never hallucinates leads, calibration, waveforms, or missing signal.
    This module is not a clinical signal validation tool. */
@@ -153,6 +153,6 @@
   }
 
   const api = { DEFAULT_CORNERS, cloneCorners, validateCorners, computeProjectiveMap, rectifyCanvas, rotateCanvasQuarter };
-  global.LuriaEcgPhotoPerspective = api;
+  global.TraubeEcgPhotoPerspective = api;
   if (typeof module !== "undefined" && module.exports) module.exports = api;
 })(typeof window !== "undefined" ? window : globalThis);

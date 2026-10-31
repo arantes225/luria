@@ -1,4 +1,4 @@
-/* LURIA · Gestante V1.
+/* TRAUBE · Gestante V1.
  * Mantem o quadro original imovel; respiracao e olhos em camadas isoladas.
  * Suporta imagem horizontal da web e vertical do PWA.
  */

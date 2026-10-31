@@ -8,7 +8,7 @@
   let user=null;
   let portal=null;
   let username="";
-  const owned=window.LuriaLocalOwnerStore;
+  const owned=window.TraubeLocalOwnerStore;
   let operations=Promise.resolve(),generation=0,loading=true,initializationVersion=-1;
   const current=(owner,version)=>owned?.ownerId===owner&&generation===version;
   function enqueue(operation){const pending=operations.then(operation,operation);operations=pending.catch(()=>{});return pending;}
@@ -48,7 +48,7 @@
     }
     note.value=String(portal?.content?.note||"");
     const shouldImport=new URLSearchParams(location.search).get("import")==="1";
-    const incoming=shouldImport?window.LuriaClinicalBridge?.consume():null;
+    const incoming=shouldImport?window.TraubeClinicalBridge?.consume():null;
     if(incoming?.text){
       const block=[incoming.title?String(incoming.title).toUpperCase():"",String(incoming.text||"")].filter(Boolean).join("\n");
       note.value=note.value.trim()?note.value.trimEnd()+"\n\n──────────\n"+block:block;

@@ -84,7 +84,7 @@ async function main() {
   fs.mkdirSync(outDir, { recursive: true });
   const outFile = path.join(outDir, 'luria-ambient-focus-30s.mp3');
 
-  console.log('Sintetizando trilha sonora ambiente para LURIA (30s, 48kHz stereo)...');
+  console.log('Sintetizando trilha sonora ambiente para TRAUBE (30s, 48kHz stereo)...');
   const pcm = synthesize();
 
   const ffmpeg = ffmpegPath();

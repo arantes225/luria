@@ -43,7 +43,7 @@
   const refs = (ids) =>
     `<div class="g-refs">Fontes: ${(ids || [])
       .map((id) => {
-        const ref = window.LuriaGameContent.sources[id];
+        const ref = window.TraubeGameContent.sources[id];
         return ref
           ? `<a href="${esc(ref.url)}" target="_blank" rel="noopener noreferrer">${esc(ref.title)}</a>`
           : "";
@@ -59,7 +59,7 @@
   function read() {
     try {
       const value = JSON.parse(
-        window.LuriaLocalOwnerStore?.read(storeKey) || "{}",
+        window.TraubeLocalOwnerStore?.read(storeKey) || "{}",
       );
       return value && typeof value === "object" && !Array.isArray(value)
         ? value
@@ -69,7 +69,7 @@
     }
   }
   function record(game, mode, result) {
-    const owned = window.LuriaLocalOwnerStore;
+    const owned = window.TraubeLocalOwnerStore;
     if (!owned?.ownerId) return { saved: false, best: false };
     const data = read(),
       key = game + ":" + mode,
@@ -180,7 +180,7 @@
     window.addEventListener("docmap:ready", ready);
     ready();
   }
-  window.LuriaGames = Object.freeze({
+  window.TraubeGames = Object.freeze({
     root,
     esc,
     shuffle,

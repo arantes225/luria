@@ -1,4 +1,4 @@
-# Fábrica de Questões LURIA — contrato 2.0
+# Fábrica de Questões TRAUBE — contrato 2.0
 
 Atualizado em 23/09/2026. Este documento substitui as instruções operacionais anteriores. Histórico de pilotos e versões permanece no histórico do Git e nos registros de calibração; não constitui identidade de banca.
 

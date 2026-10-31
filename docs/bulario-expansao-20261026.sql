@@ -1,5 +1,5 @@
 -- ==============================================================================
--- LURIA: EXPANSÃO DO BULÁRIO CLÍNICO (RENAME & EMERGÊNCIA / MEDICINA INTENSIVA)
+-- TRAUBE: EXPANSÃO DO BULÁRIO CLÍNICO (RENAME & EMERGÊNCIA / MEDICINA INTENSIVA)
 -- Data: 2026-10-26
 -- Instruções: Aplicar via Supabase (execute_sql) sob revisão farmacêutica/médica.
 -- Status padrão: 'verified' (conferido, sem motor automatizado de dosagem pediátrica)

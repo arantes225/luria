@@ -1,4 +1,4 @@
-# LURIA — Aula 178 | Intoxicações exógenas na infância
+# TRAUBE — Aula 178 | Intoxicações exógenas na infância
 
 **Área:** Pediatria · Emergência · Toxicologia Clínica · Saúde Coletiva e Segurança Infantil  
 **Lote 09 — Aula 178/180 | Versão editorial: 15/10/2026**  
@@ -6,7 +6,7 @@
 
 **Bases nacionais:** Sociedade Brasileira de Pediatria (SBP), *Intoxicações Agudas na Infância* (setembro/2025); SBP, orientações de segurança e prevenção; Ministério da Saúde, VIGIPEQ/SINAN (notificação compulsória de intoxicação exógena), lista atualizada em janeiro/2026. **Bases complementares internacionais:** RCH Melbourne, guias pediátricos de toxicologia e intoxicações específicas; consenso EUA/Canadá para paracetamol (JAMA Network Open, 2023). Adotar procedimentos e apresentações disponíveis no Brasil, sob apoio do CIATox.
 
-> **Pulo do Gato LURIA:** Numa intoxicação pediátrica, **trate a criança, não apenas a embalagem ou um valor laboratorial isolado**. Primeiro ABCDE, glicemia e ECG quando indicado; depois reconstrua substância, **concentração, dose em mg/kg, horário e formulação**, identifique a toxíndrome, contate o **CIATox (0800 722 6001)** e decida exames/antídoto/descontaminação específicos. **Jamais induzir vômito; carvão ativado não é antídoto universal.**
+> **Pulo do Gato TRAUBE:** Numa intoxicação pediátrica, **trate a criança, não apenas a embalagem ou um valor laboratorial isolado**. Primeiro ABCDE, glicemia e ECG quando indicado; depois reconstrua substância, **concentração, dose em mg/kg, horário e formulação**, identifique a toxíndrome, contate o **CIATox (0800 722 6001)** e decida exames/antídoto/descontaminação específicos. **Jamais induzir vômito; carvão ativado não é antídoto universal.**
 
 **AVISO DE SEGURANÇA:** material educacional para treinamento de profissionais supervisionados. Não deve ser utilizado como instrução de automedicação, procedimento doméstico ou prescrição independente. Em exposição real, chamar serviço de emergência conforme gravidade e CIATox. A escolha de antídotos, doses e diluições é condicionada a avaliação médica, peso aferido/estimado validamente, via aérea, farmacologia, disponibilidade e monitorização. Algumas drogas e quantidades perigosas variam por apresentação, liberação prolongada, coingestão e função orgânica.
 
@@ -454,7 +454,7 @@ Registrar agente, circunstância (acidental, erro terapêutico, violência, inte
 
 **A tabela é resumo acadêmico, não prescrição.** Antídotos como HIET e emulsão lipídica possuem risco importante e devem ser administrados por centro especializado. Nem todos os fármacos estão disponíveis em toda instituição do SUS.
 
-## 24. Algoritmos LURIA — raciocínio passo a passo
+## 24. Algoritmos TRAUBE — raciocínio passo a passo
 
 ### Fluxo A — Criança com suspeita de ingestão
 ABCDE e risco da cena → glicemia, SpO₂, ECG quando agente/gravidade indicam → coletar frasco/rótulo, peso e dose **máxima plausível** → avaliar toxíndrome/coingestão → CIATox → descontaminação **somente** se benefício previsto e via aérea segura → exames/antídoto específicos → reavaliação e período de observação guiado por agente → plano de segurança/notificação.
@@ -784,7 +784,7 @@ Os 14 cenários abaixo são **fictícios e autorais**. Nenhuma quantidade/dose d
 
 
 
-## 30. Questões autorais LURIA — alternativas comentadas individualmente
+## 30. Questões autorais TRAUBE — alternativas comentadas individualmente
 
 As 22 questões são originais e apresentam distratores clinicamente plausíveis. Comentários refletem as referências citadas até 15/10/2026, sem substituir protocolos de emergência. Dados numéricos são **fictícios**.
 
@@ -1320,7 +1320,7 @@ Nenhum dos 22 itens foi inserido ou aprovado nesta fase. Cada exame real demanda
 - [ ] Revisão de links e normativas SINAN/violência na data de publicação.
 - [ ] Produzir/licenciar 22 visuais, legendar, otimizar e aprovar.
 - [ ] Converter Markdown em **content.json/HTML nativo**, registrar a apostila no cronograma e criar índice/crosslinks.
-- [ ] Testar UI LURIA em desktop e PWA, tabelas, equações e legibilidade de ECG/radiologia.
+- [ ] Testar UI TRAUBE em desktop e PWA, tabelas, equações e legibilidade de ECG/radiologia.
 - [ ] Parecer de revisão científica com responsável e versão, antes de classificar como conteúdo de orientação assistencial.
 
 **Estado atual:** material editorial robusto, apto a revisão médica e integração posterior. Não substitui telefonema ao CIATox e protocolos assistenciais em intoxicação real.

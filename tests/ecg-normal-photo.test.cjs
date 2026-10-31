@@ -49,7 +49,7 @@ test("photo remains local, user previews original and explicitly processes via t
   const file = new e.window.File([new Uint8Array(2000)], "ecg.jpg", { type: "image/jpeg" });
   Object.defineProperty(e.fileInput, "files", { value: [file], configurable: true });
   const calls = [];
-  e.window.LuriaEcgProcessPhoto = async (received, mode, options) => {
+  e.window.TraubeEcgProcessPhoto = async (received, mode, options) => {
     calls.push([received, mode, options]);
     return { ok: true, capturedCount: 5 };
   };
@@ -78,7 +78,7 @@ test("photo remains local, user previews original and explicitly processes via t
 test("invalid picture is not handed to the digitizer and can be replaced", () => {
   const e = setup();
   let calls = 0;
-  e.window.LuriaEcgProcessPhoto = () => { calls++; };
+  e.window.TraubeEcgProcessPhoto = () => { calls++; };
   const invalid = new e.window.File(["hello"], "text.txt", { type: "text/plain" });
   Object.defineProperty(e.fileInput, "files", { value: [invalid], configurable: true });
   e.fileInput.dispatchEvent(new e.window.Event("change"));
@@ -91,7 +91,7 @@ test("the controller can reset the photo test without borrowing prior lead state
   const code = fs.readFileSync(path.join(root, "assets/js/ecg-smart-camera.js"), "utf8");
   const ctx = { window: {}, Date, console };
   vm.runInNewContext(code, ctx);
-  const controller = ctx.window.LuriaSmartCamera.createController();
+  const controller = ctx.window.TraubeSmartCamera.createController();
   assert.equal(controller.getCapturedLeads().length, 12);
   assert.equal(typeof controller.resetCaptureSession, "function");
   controller.setMode("photo");
@@ -102,7 +102,7 @@ test("the controller can reset the photo test without borrowing prior lead state
 
 test("source keeps the photo unfiltered and camera takes a real picture", () => {
   const main = fs.readFileSync(path.join(root, "assets/js/ecg-smart-ui.js"), "utf8");
-  assert.match(main, /window\.LuriaEcgProcessPhoto\s*=\s*processPhotoFile/);
+  assert.match(main, /window\.TraubeEcgProcessPhoto\s*=\s*processPhotoFile/);
   assert.match(main, /source === "normal_photo" \? "photo" : "fast"/);
   assert.match(main, /cameraController\.resetCaptureSession/);
   assert.doesNotMatch(photoCode, /fetch\(|supabaseClient|localStorage|sessionStorage|enhanceImage|filterImage/);
@@ -148,7 +148,7 @@ test("user can compare full photo without using selected paper corners", async (
   radio.dispatchEvent(new e.window.Event("change"));
   assert.equal(e.document.getElementById("ecg-normal-photo-frame").classList.contains("is-whole-photo"), true);
   const captured = [];
-  e.window.LuriaEcgProcessPhoto = async (f, mode, opts) => {
+  e.window.TraubeEcgProcessPhoto = async (f, mode, opts) => {
     captured.push(opts);
     return { ok: true };
   };
@@ -175,7 +175,7 @@ test("rotating a full ECG photo updates visual orientation AND passes identical 
   assert.ok(parseInt(frame.style.height,10) > parseInt(frame.style.width,10),
     "4032×3024 original photo is portrait after a quarter-turn");
   let opts;
-  e.window.LuriaEcgProcessPhoto = async (_file,_mode,options) => {opts=options;return {ok:true}};
+  e.window.TraubeEcgProcessPhoto = async (_file,_mode,options) => {opts=options;return {ok:true}};
   e.document.getElementById("ecg-normal-photo-process").click();
   await new Promise(resolve => setImmediate(resolve));
   assert.equal(opts.rotationDeg,90);
@@ -197,7 +197,7 @@ test("rotation resets previous corner positions, preserving the paper-frame alig
   assert.equal(corner.style.left,"3%");
   assert.match(e.preview.style.transform,/rotate\(270deg\)/);
   let options;
-  e.window.LuriaEcgProcessPhoto=async(_file,_mode,opts)=>{options=opts;return{ok:true}};
+  e.window.TraubeEcgProcessPhoto=async(_file,_mode,opts)=>{options=opts;return{ok:true}};
   e.document.getElementById("ecg-normal-photo-process").click();
   await new Promise(resolve=>setImmediate(resolve));
   assert.equal(options.rotationDeg,270);

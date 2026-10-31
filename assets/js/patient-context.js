@@ -37,7 +37,7 @@
   const problems = [
     ["hiponatremia","Hiponatremia"],["hipocalemia","Hipocalemia"],["sepse","Sepse"],["insuficiencia-renal","Insuficiência renal"],["desidratacao","Desidratação"],["dispneia","Dispneia"],["dor-toracica","Dor torácica"],["acido-base","Distúrbios ácido-base"],["outro","Outro problema"]
   ];
-  window.LuriaPatientToolRegistry = registry;
+  window.TraubePatientToolRegistry = registry;
   const formatDate = value => { try { return new Intl.DateTimeFormat("pt-BR", { dateStyle:"short", timeStyle:"short" }).format(new Date(value)); } catch { return value || "—"; } };
   const latest = (state, type) => [...state.measurements].filter(item => item.type === type).sort((a,b) => String(b.observedAt).localeCompare(String(a.observedAt)))[0];
   const val = (state,type,unit) => { const item=latest(state,type); return item ? `${item.value} ${item.unit || unit || ""}`.trim() : "Não informado"; };
@@ -51,7 +51,7 @@
     savePlan(plan) { return update(state => { state.plan={...state.plan,...plan}; state.timeline.unshift({id:uid("EVT"),at:now(),kind:"plan",title:"Plano clínico atualizado",detail:"Informações explicitamente selecionadas pelo usuário."}); }); },
     addTimeline(title,detail) { return update(state => state.timeline.unshift({id:uid("EVT"),at:now(),kind:"note",title,detail})); }
   };
-  window.LuriaPatientContext = stateApi;
+  window.TraubePatientContext = stateApi;
   if (!page) return;
   const root = page.querySelector("#patient-app");
   if (!root) return;

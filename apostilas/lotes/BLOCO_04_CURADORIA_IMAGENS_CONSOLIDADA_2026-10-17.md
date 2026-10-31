@@ -4,7 +4,7 @@
 
 
 **Data:** 17 de Outubro de 2026
-**Diretoria Editorial e Científica:** LURIA
+**Diretoria Editorial e Científica:** TRAUBE
 **Regra Editorial:** Todas as imagens devem possuir licença de uso aberta (Creative Commons CC BY, CC BY-SA, CC0 ou Domínio Público) ou esquemas vetoriais autorais. Nenhuma imagem provisória é embutida diretamente nos HTMLs sem a prévia revisão e homologação pelo Painel Administrativo.
 
 ---

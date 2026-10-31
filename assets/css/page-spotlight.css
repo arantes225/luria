@@ -1,4 +1,4 @@
-/* LURIA page spotlight — padrão único oficial do Dashboard */
+/* TRAUBE page spotlight — padrão único oficial do Dashboard */
 :root{
   --luria-page-card-height:138px;
   --luria-page-card-pad-y:24px;
@@ -431,7 +431,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
 /* Obsolete QS card illustration overrides removed to preserve Lumina UI action buttons */
 
 /* ==========================================================================
-   LURIA UNIVERSAL PRIMARY BUTTON GRADIENT UNIFICATION (THEME LUMINA)
+   TRAUBE UNIVERSAL PRIMARY BUTTON GRADIENT UNIFICATION (THEME LUMINA)
    Guarantees that all primary buttons, CTAs, and key actions use the
    authentic Lumina blue gradient (linear-gradient(135deg, #184888, #2563EB))
    with white text, 12px rounded corners, and elevation.

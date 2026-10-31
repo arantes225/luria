@@ -1,4 +1,4 @@
-# Central de jogos LURIA — implementação para revisão
+# Central de jogos TRAUBE — implementação para revisão
 
 Três experiências individuais implementadas em HTML, CSS, SVG e JavaScript nativos, com links ativos na central. Branch `feat/central-jogos-completa`, baseada em `d7dc563786147a089a71d264247ad899d6e57576`. Não houve merge ou publicação em produção.
 
@@ -17,7 +17,7 @@ Os três jogos incluem retorno à central, estados vazios, adaptação às quatr
 - Foram inspecionadas as páginas Aprender, Consolidar, Estatísticas, Jogos e Study Rats, os estilos globais e o shell v2. A plataforma usa páginas estáticas e scripts compartilhados; o build de GitHub Pages copia os arquivos públicos rastreados pelo Git.
 - `ui-app.css` fornece tokens de quatro temas, navegação e camadas CSS. As novas folhas têm seletores restritos a `.luria-game`. As correções de tipografia utilizam a camada existente apenas dentro dessas raízes.
 - As páginas novas mantêm o mesmo `data-page="jogos"`, carregam `app.js`, `supabase.js`, `ui-theme-v2.js`, `ui-navigation-v2.js` e `pwa.js`. O jogo inicializa após a autenticação existente (`docmap:ready`). Nenhuma nova regra de acesso foi criada.
-- `LuriaLocalOwnerStore` já fornece armazenamento vinculado à conta. Foram adicionados apenas recordes locais, sem fallback para um armazenamento compartilhado entre usuários. Falha de armazenamento não impede jogar e é informada no resultado.
+- `TraubeLocalOwnerStore` já fornece armazenamento vinculado à conta. Foram adicionados apenas recordes locais, sem fallback para um armazenamento compartilhado entre usuários. Falha de armazenamento não impede jogar e é informada no resultado.
 - Flashcards possuem `front_text`/`back_text`, metadados de especialidade e bibliotecas pessoais/sistema/compartilhadas. Existem pacotes públicos em `content/weekly/`. As questões têm fluxos próprios de importação/geração/revisão; `clinical_protocols` armazena protocolos com seções e decisões. Não existe nesses formatos uma garantia automática de quatro distratores adequados ou de ordem clínica exclusiva.
 - Por essa razão, esta versão usa **conteúdo local inicial**, separado do motor: 30 perguntas, nove sequências e nove cenas. Não há integração de conteúdo privado, conversão automática de flashcards ou cópia de questões de bancos externos. A interface informa esse limite.
 - Os recursos específicos só são solicitados ao abrir cada página. O único ajuste no service worker acrescenta a central e as três rotas à lista pública e atualiza sua versão. Não aumenta o conjunto de instalação antecipada nem armazena dados clínicos privados. A recuperação offline verificada é dos recursos públicos após visita; a autenticação offline completa continua dependente do comportamento global existente.

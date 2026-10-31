@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "Calendário Editorial Oficial LURIA",
+  "name": "Calendário Editorial Oficial TRAUBE",
   "timezone": "America/Sao_Paulo",
   "lastUpdated": "2026-10-15T18:45:00-03:00",
   "posts": [
@@ -9,13 +9,13 @@
       "theme": "Study Rats — Corrida de Estudos e Comunidade",
       "contentType": "reel_feature",
       "plannedDate": "2026-10-19T18:00:00-03:00",
-      "title": "Study Rats: seu progresso real ganha companhia na LURIA",
+      "title": "Study Rats: seu progresso real ganha companhia na TRAUBE",
       "script": {
         "hook": "Estudar para a residência médica não precisa ser solitário.",
         "problem": "O isolamento e a sobrecarga diária diminuem a consistência e a motivação do médico residente.",
         "solution": "No Study Rats, seu estudo real (flashcards, questões e simulados) avança seu ratinho na pista junto com seus amigos.",
         "demonstration": "Gravação real da interface: escolha de variantes e acessórios, criação de desafio em grupo e corrida ao vivo.",
-        "cta": "Monte seu grupo de estudos na LURIA. Acesse resibulando.online pelo link da bio."
+        "cta": "Monte seu grupo de estudos na TRAUBE. Acesse resibulando.online pelo link da bio."
       },
       "scientificSources": [
         "Bandura A. Social Foundations of Thought and Action: A Social Cognitive Theory. Prentice-Hall, 1986 (Peer Accountability and Gamification in Adult Learning).",
@@ -28,11 +28,11 @@
         "format": "9:16 vertical (1080x1920)"
       },
       "flowPromptsFile": "flow/prompts/study-rats-flow.md",
-      "caption": "Estudar para as provas de residência médica exige consistência. Mas consistência não precisa significar solidão.\n\n🐀 Conheça o STUDY RATS na LURIA: o recurso da nossa comunidade onde seu avanço diário em flashcards e questões se transforma em uma corrida amigável de estudos.\n\n✨ Como funciona:\n1. Personalize seu corredor com variantes e acessórios exclusivos.\n2. Crie desafios temáticos com seus colegas (ex.: Semana de Cardiologia, Pediatria ou Clínica Geral).\n3. Acompanhe o circuito em tempo real: cada passo conta e o ritmo do seu grupo impulsiona a sua aprovação.\n\nNenhuma pontuação artificial. Seu progresso clínico real em boa companhia.\n\n🔗 Conheça a LURIA e experimente agora: link na bio (resibulando.online)\n\n#ResidenciaMedica #Medicina #LURIA #StudyRats #EstudosMedicos #Enamed #MedLife #FlashcardsMedicina #SimuladosMedicos",
+      "caption": "Estudar para as provas de residência médica exige consistência. Mas consistência não precisa significar solidão.\n\n🐀 Conheça o STUDY RATS na TRAUBE: o recurso da nossa comunidade onde seu avanço diário em flashcards e questões se transforma em uma corrida amigável de estudos.\n\n✨ Como funciona:\n1. Personalize seu corredor com variantes e acessórios exclusivos.\n2. Crie desafios temáticos com seus colegas (ex.: Semana de Cardiologia, Pediatria ou Clínica Geral).\n3. Acompanhe o circuito em tempo real: cada passo conta e o ritmo do seu grupo impulsiona a sua aprovação.\n\nNenhuma pontuação artificial. Seu progresso clínico real em boa companhia.\n\n🔗 Conheça a TRAUBE e experimente agora: link na bio (resibulando.online)\n\n#ResidenciaMedica #Medicina #TRAUBE #StudyRats #EstudosMedicos #Enamed #MedLife #FlashcardsMedicina #SimuladosMedicos",
       "hashtags": [
         "#ResidenciaMedica",
         "#Medicina",
-        "#LURIA",
+        "#TRAUBE",
         "#StudyRats",
         "#EstudosMedicos",
         "#Enamed",
@@ -53,8 +53,8 @@
         "hook": "Paciente hipotenso, taquipneico e confuso na triagem. Qual o seu primeiro passo?",
         "problem": "Cada hora de atraso no início do antimicrobiano adequado no choque séptico eleva a mortalidade em até 7.6%.",
         "solution": "Pacote da 1ª Hora do Surviving Sepsis Campaign: lactato, hemoculturas antes do antibiótico, antimicrobiano de amplo espectro, cristaloides 30 ml/kg se hipotensão/lactato ≥ 4 mmol/L e vasopressor para PAM ≥ 65 mmHg.",
-        "demonstration": "Simulador da Sala de Emergência e Caderno de Erros da LURIA resolvendo o caso passo a passo.",
-        "cta": "Pratique cenários reais de emergência na LURIA. Link na bio."
+        "demonstration": "Simulador da Sala de Emergência e Caderno de Erros da TRAUBE resolvendo o caso passo a passo.",
+        "cta": "Pratique cenários reais de emergência na TRAUBE. Link na bio."
       },
       "scientificSources": [
         "Evans L, Rhodes A, Alhazzani W, et al. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021. Intensive Care Med. 2021;47(11):1181-1247.",
@@ -67,14 +67,14 @@
         "format": "9:16 vertical (1080x1920)"
       },
       "flowPromptsFile": "flow/prompts/sepse-emergencia-flow.md",
-      "caption": "Sepse é tempo-dependente. Você domina as metas da primeira hora?\n\nSegundo o Surviving Sepsis Campaign 2021, o reconhecimento precoce e o pacote da 1ª hora reduzem desfechos desfavoráveis:\n\n1️⃣ Mensurar lactato sérico (remensurar se inicial > 2 mmol/L).\n2️⃣ Coletar 2 pares de hemoculturas antes do início do antimicrobiano (sem atrasar a terapia por mais de 45 min).\n3️⃣ Iniciar antimicrobiano intravenoso de amplo espectro na primeira hora.\n4️⃣ Iniciar infusão rápida de 30 mL/kg de cristaloide balanceado se hipotensão ou lactato ≥ 4 mmol/L.\n5️⃣ Noradrenalina como vasopressor de 1ª escolha se PAM < 65 mmHg refratária à reposição volêmica inicial.\n\nTreine casos clínicos comentados e simulações de plantão na LURIA.\n\n🔗 resibulando.online\n\n#MedicinaDeEmergencia #Sepse #SurvivingSepsis #UTI #ResidenciaMedica #LURIA #PlantaoMedico #ClinicaMedica",
+      "caption": "Sepse é tempo-dependente. Você domina as metas da primeira hora?\n\nSegundo o Surviving Sepsis Campaign 2021, o reconhecimento precoce e o pacote da 1ª hora reduzem desfechos desfavoráveis:\n\n1️⃣ Mensurar lactato sérico (remensurar se inicial > 2 mmol/L).\n2️⃣ Coletar 2 pares de hemoculturas antes do início do antimicrobiano (sem atrasar a terapia por mais de 45 min).\n3️⃣ Iniciar antimicrobiano intravenoso de amplo espectro na primeira hora.\n4️⃣ Iniciar infusão rápida de 30 mL/kg de cristaloide balanceado se hipotensão ou lactato ≥ 4 mmol/L.\n5️⃣ Noradrenalina como vasopressor de 1ª escolha se PAM < 65 mmHg refratária à reposição volêmica inicial.\n\nTreine casos clínicos comentados e simulações de plantão na TRAUBE.\n\n🔗 resibulando.online\n\n#MedicinaDeEmergencia #Sepse #SurvivingSepsis #UTI #ResidenciaMedica #TRAUBE #PlantaoMedico #ClinicaMedica",
       "hashtags": [
         "#MedicinaDeEmergencia",
         "#Sepse",
         "#SurvivingSepsis",
         "#UTI",
         "#ResidenciaMedica",
-        "#LURIA",
+        "#TRAUBE",
         "#PlantaoMedico"
       ],
       "status": "draft",
@@ -90,9 +90,9 @@
       "script": {
         "hook": "Você resolve 50 questões por dia mas continua errando os mesmos conceitos?",
         "problem": "O estudo passivo de resolução sem retenção de distratores gera falsa sensação de domínio.",
-        "solution": "Na LURIA, cada questão resolvida alimenta automaticamente seu Caderno de Erros e gera flashcards direcionados para revisão espaçada.",
+        "solution": "Na TRAUBE, cada questão resolvida alimenta automaticamente seu Caderno de Erros e gera flashcards direcionados para revisão espaçada.",
         "demonstration": "Interface de Questões & Simulados com comentários detalhados dos professores e marcação inteligente.",
-        "cta": "Estude com método. Acesse a LURIA em resibulando.online."
+        "cta": "Estude com método. Acesse a TRAUBE em resibulando.online."
       },
       "scientificSources": [
         "Roediger HL 3rd, Karpicke JD. Test-enhanced learning: taking memory tests improves long-term retention. Psychol Sci. 2006;17(3):249-255.",
@@ -105,12 +105,12 @@
         "format": "9:16 vertical (1080x1920)"
       },
       "flowPromptsFile": null,
-      "caption": "Resolver questões é fundamental. Mas aprender com o erro é o que garante a vaga na residência.\n\n💡 O ciclo de estudo eficiente comprovado pelas ciências cognitivas (Testing Effect):\n• Testagem ativa\n• Feedback imediato com análise de cada alternativa\n• Registro sistemático da lacuna de conhecimento\n• Revisão espaçada do distrator que induziu ao erro\n\nNa LURIA, suas questões se integram automaticamente ao seu Caderno de Erros e ao Cronograma inteligente.\n\n🔗 Conheça a plataforma: resibulando.online\n\n#QuestoesDeResidencia #ResidenciaMedica #SimuladosMedicos #LURIA #CadernoDeErros #Enamed #EstudoAtivo",
+      "caption": "Resolver questões é fundamental. Mas aprender com o erro é o que garante a vaga na residência.\n\n💡 O ciclo de estudo eficiente comprovado pelas ciências cognitivas (Testing Effect):\n• Testagem ativa\n• Feedback imediato com análise de cada alternativa\n• Registro sistemático da lacuna de conhecimento\n• Revisão espaçada do distrator que induziu ao erro\n\nNa TRAUBE, suas questões se integram automaticamente ao seu Caderno de Erros e ao Cronograma inteligente.\n\n🔗 Conheça a plataforma: resibulando.online\n\n#QuestoesDeResidencia #ResidenciaMedica #SimuladosMedicos #TRAUBE #CadernoDeErros #Enamed #EstudoAtivo",
       "hashtags": [
         "#QuestoesDeResidencia",
         "#ResidenciaMedica",
         "#SimuladosMedicos",
-        "#LURIA",
+        "#TRAUBE",
         "#CadernoDeErros",
         "#EstudoAtivo"
       ],
@@ -128,8 +128,8 @@
         "hook": "Déficit neurológico súbito iniciado há 2 horas. Tomografia sem sangramento. Quais os critérios de trombólise?",
         "problem": "Dúvidas sobre contraindicações absolutas e relativas geram atrasos na reperfusão cerebral.",
         "solution": "Revisão prática da janela de 4.5 horas para rtPA (alteplase / tenecteplase) e critérios de trombectomia mecânica até 24 horas (DAWN/DEFUSE-3).",
-        "demonstration": "Flashcard LURIA com critérios de exclusão e conduta imediata na Sala de Emergência.",
-        "cta": "Domine condutas neurológicas na LURIA."
+        "demonstration": "Flashcard TRAUBE com critérios de exclusão e conduta imediata na Sala de Emergência.",
+        "cta": "Domine condutas neurológicas na TRAUBE."
       },
       "scientificSources": [
         "Powers WJ, Rabinstein AA, Ackerson T, et al. Guidelines for the Early Management of Patients With Acute Ischemic Stroke: 2019 Update. Stroke. 2019;50(12):e344-e418.",
@@ -142,13 +142,13 @@
         "format": "9:16 vertical (1080x1920)"
       },
       "flowPromptsFile": null,
-      "caption": "No AVC isquêmico agudo, cada minuto de isquemia consome 1.9 milhão de neurônios. Memorize as janelas essenciais:\n\n⏱️ Trombólise Intravenosa (Alteplase 0,9 mg/kg ou Tenecteplase):\n• Janela: até 4,5 horas do início dos sintomas (ou último visto bem)\n• Alvo pressórico pré-trombólise: PA < 185/110 mmHg\n• Excluir hemorragia na TC de crânio e hipoglicemia (< 50 mg/dL)\n\n⏱️ Trombectomia Mecânica:\n• Janela convencional: até 6 horas para oclusão de grandes vasos da circulação anterior\n• Janela estendida (6 a 24 horas): selecionados por mismatch clínico-radiológico (DAWN / DEFUSE-3)\n\nRevise neurologia de emergência com os flashcards ativos da LURIA.\n\n🔗 resibulando.online\n\n#AVC #Neurologia #EmergenciaMedica #ResidenciaMedica #LURIA #Stroke #Trombolise",
+      "caption": "No AVC isquêmico agudo, cada minuto de isquemia consome 1.9 milhão de neurônios. Memorize as janelas essenciais:\n\n⏱️ Trombólise Intravenosa (Alteplase 0,9 mg/kg ou Tenecteplase):\n• Janela: até 4,5 horas do início dos sintomas (ou último visto bem)\n• Alvo pressórico pré-trombólise: PA < 185/110 mmHg\n• Excluir hemorragia na TC de crânio e hipoglicemia (< 50 mg/dL)\n\n⏱️ Trombectomia Mecânica:\n• Janela convencional: até 6 horas para oclusão de grandes vasos da circulação anterior\n• Janela estendida (6 a 24 horas): selecionados por mismatch clínico-radiológico (DAWN / DEFUSE-3)\n\nRevise neurologia de emergência com os flashcards ativos da TRAUBE.\n\n🔗 resibulando.online\n\n#AVC #Neurologia #EmergenciaMedica #ResidenciaMedica #TRAUBE #Stroke #Trombolise",
       "hashtags": [
         "#AVC",
         "#Neurologia",
         "#EmergenciaMedica",
         "#ResidenciaMedica",
-        "#LURIA",
+        "#TRAUBE",
         "#Stroke"
       ],
       "status": "draft",

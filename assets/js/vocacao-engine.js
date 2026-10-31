@@ -1,12 +1,12 @@
-/* LURIA · orientação para residências médicas: cenários e trilha adaptativa.
+/* TRAUBE · orientação para residências médicas: cenários e trilha adaptativa.
    Instrumento editorial exploratório, não avaliação psicológica validada. */
 (function (root, factory) {
   "use strict";
   const catalogue = typeof module !== "undefined" && module.exports
-    ? require("./vocacao-data.js") : root.LuriaVocacaoData;
+    ? require("./vocacao-data.js") : root.TraubeVocacaoData;
   const value = factory(catalogue);
   if (typeof module !== "undefined" && module.exports) module.exports = value;
-  if (root) root.LuriaVocacaoEngine = value;
+  if (root) root.TraubeVocacaoEngine = value;
 })(typeof globalThis !== "undefined" ? globalThis : this, function (catalogue) {
   "use strict";
   const labels = {

@@ -1,4 +1,4 @@
-# LURIA — Lote 7: auditoria de integração das aulas 124, 129 e 134
+# TRAUBE — Lote 7: auditoria de integração das aulas 124, 129 e 134
 
 **Data da auditoria:** 15/10/2026  
 **Natureza:** inspeção da estrutura **real** do HTML publicado e dos três complementos Markdown existentes, sem alteração nas apostilas publicadas.  
@@ -63,7 +63,7 @@
 1. Preservar os cinco **flash-tests** de fixação e seu JS; eles são úteis e têm interação própria.
 2. **Acrescentar novo agrupamento de oito questões comentadas dentro da seção existente `#questoes`**, depois do `<ol class="fixation-list">`. Criar classes distintas da lista atual se necessário, sem sobrescrever o handler `fixation-toggle`.
 3. Garantir comentários individualizados de A/B/C/D e enunciados suficientemente diferentes dos cinco itens rápidos existentes.
-4. Preservar a distinção diagnóstica **adulta vs adolescente**, uso do AMH/ultrassom e critérios de exclusão de tumores produtores de andrógenos. Confirmar uso da nomenclatura "SOMP" da LURIA e "SOP/PCOS" nas referências sem renomear arbitrariamente rotas existentes.
+4. Preservar a distinção diagnóstica **adulta vs adolescente**, uso do AMH/ultrassom e critérios de exclusão de tumores produtores de andrógenos. Confirmar uso da nomenclatura "SOMP" da TRAUBE e "SOP/PCOS" nas referências sem renomear arbitrariamente rotas existentes.
 5. Conferir diretriz internacional de SOP 2023 e fontes brasileiras de terapia e fertilidade antes da integração; evitar prescrição de metformina/GLP-1/antiandrógeno genérica sem contraindicações e contexto.
 
 ## 5. Requisitos técnicos comuns antes de qualquer alteração em HTML publicado

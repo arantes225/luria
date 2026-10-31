@@ -1,4 +1,4 @@
-# Voz das salas LURIA
+# Voz das salas TRAUBE
 
 Atualização de 14/10/2026: publicação em produção autorizada pelo usuário. O serviço separado `luria-study-voice` usa `wrangler.production.toml` e o Supabase oficial; ver [registro de produção](../../docs/social-production.md). As seções abaixo registram a preparação e os testes anteriores em homologação.
 
@@ -6,7 +6,7 @@ Este Worker faz apenas sinalização e autorização. O áudio trafega diretamen
 
 ## Configuração de homologação
 
-1. Ter um projeto Supabase de homologação com o schema atual da LURIA, sem copiar dados pessoais de produção. Aplicar `db/social_study_rooms.sql` nesse ambiente e conferir as políticas, grants e a publicação Realtime.
+1. Ter um projeto Supabase de homologação com o schema atual da TRAUBE, sem copiar dados pessoais de produção. Aplicar `db/social_study_rooms.sql` nesse ambiente e conferir as políticas, grants e a publicação Realtime.
 2. Criar um app SFU no Cloudflare autorizado pelo responsável pela conta. Configurar `SFU_APP_ID` e cadastrar `SFU_APP_SECRET` como secret do Worker. Nunca colocar o secret no HTML, JavaScript público ou `wrangler.toml`.
 3. Preencher `SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY` e `ALLOWED_ORIGINS` com valores do ambiente de teste. A chave Supabase é pública; não se usa `service_role` neste Worker.
 4. Configurar a binding `ROOM_VOICE` e sua migration de Durable Object, já descritas em `wrangler.toml`.
