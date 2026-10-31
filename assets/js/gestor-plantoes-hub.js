@@ -62,10 +62,10 @@
             </div>
             <div class="gm-radar-metric">
               <strong>${remainingHours}h</strong>
-              <small>restantes</small>
+              <small>restantes (${pct}% concluído)</small>
             </div>
           </div>
-          <div class="gm-radar-progress-bar">
+          <div class="gm-radar-progress-bar" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100">
             <div class="gm-radar-progress-fill" style="width: ${pct}%"></div>
           </div>
           <div class="gm-radar-actions">
@@ -101,7 +101,7 @@
             </div>
           </div>
           <div class="gm-radar-actions">
-            <a href="/trabalho/plantoes/" class="gm-radar-btn secondary">Ver Escala Completa</a>
+            <button type="button" class="gm-radar-btn secondary" onclick="document.getElementById('shift-calendar')?.scrollIntoView({behavior:'smooth'})">Ver Escala Semanal</button>
             <a href="/trabalho/divisor-descanso/" class="gm-radar-btn secondary">Planejar Descanso</a>
           </div>
         </div>
@@ -115,7 +115,7 @@
               <p>Cadastre sua escala para ativar os alertas ao vivo, previsões de repasses e métricas financeiras.</p>
             </div>
             <div class="gm-radar-actions">
-              <a href="/trabalho/plantoes/" class="gm-radar-btn primary">+ Adicionar Plantão</a>
+              <button type="button" class="gm-radar-btn primary" onclick="document.getElementById('shift-add')?.click() || document.getElementById('shift-modal')?.showModal()">+ Adicionar Plantão</button>
             </div>
           </div>
         </div>
@@ -131,34 +131,59 @@
     const now = new Date();
     const currentMonthKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
 
-    const thisMonth = shifts.filter(s => s.date?.slice(0, 7) === currentMonthKey && s.status !== "trocado");
+    // 1. Plantões no mês (contagem realizada/escalada no mês de referência) e valor total acumulado para receber
+    const shiftsInCurrentMonth = shifts.filter(s => s.date?.slice(0, 7) === currentMonthKey && s.status !== "trocado");
+    const countShiftsCurrentMonth = shiftsInCurrentMonth.length;
+    const totalAccumulatedToReceive = shifts.filter(s => s.status !== "trocado").reduce((acc, s) => acc + C.outstanding(s), 0);
 
-    const totalHours = thisMonth.reduce((acc, s) => acc + C.num(s.duration), 0);
-    const totalEarned = thisMonth.reduce((acc, s) => acc + C.num(s.value), 0);
-    const paidShifts = thisMonth.filter(s => C.paymentState(s) === "recebido");
-    const totalReceived = thisMonth.reduce((acc, s) => acc + C.num(s.receivedAmount), 0);
-    const totalOutstanding = thisMonth.reduce((acc, s) => acc + C.outstanding(s), 0);
+    // 2. Previsão bruta (recebimento NESTE mês, baseado na data de previsão de recebimento)
+    const dueThisMonth = shifts.filter(s => {
+      if (s.status === "trocado") return false;
+      const targetDate = s.expectedDate || s.date;
+      return targetDate && targetDate.slice(0, 7) === currentMonthKey;
+    });
+
+    const grossForecastThisMonth = dueThisMonth.reduce((acc, s) => acc + C.num(s.value), 0);
+
+    // 3. Previsão líquida (descontando retenções fiscais/alíquota configurada e taxas de repasse)
+    const taxSettings = C.getTaxSettings ? C.getTaxSettings() : { estimatedRate: null, monthlyCosts: 0 };
+    const effectiveRate = taxSettings && typeof taxSettings.estimatedRate === "number" ? taxSettings.estimatedRate : 0;
+    const withheldTaxThisMonth = dueThisMonth.reduce((acc, s) => acc + C.num(s.withheldTax), 0);
+    const feesThisMonth = dueThisMonth.reduce((acc, s) => acc + C.num(s.payerFee), 0);
+    const estimatedTaxTotal = (grossForecastThisMonth * effectiveRate) / 100;
+    const netForecastThisMonth = Math.max(0, grossForecastThisMonth - Math.max(withheldTaxThisMonth, estimatedTaxTotal) - feesThisMonth);
+
+    // 4. Já recebido neste mês
+    const receivedThisMonth = dueThisMonth.reduce((acc, s) => acc + C.num(s.receivedAmount), 0);
+
+    // 5. A receber neste mês (saldo pendente de plantões previstos para este mês)
+    const outstandingThisMonth = dueThisMonth.reduce((acc, s) => acc + C.outstanding(s), 0);
 
     summaryContainer.innerHTML = `
       <div class="gm-summary-card">
         <span class="gm-sum-label">Plantões no Mês</span>
-        <strong class="gm-sum-val">${thisMonth.length}</strong>
-        <span class="gm-sum-sub">${totalHours.toLocaleString("pt-BR", {maximumFractionDigits: 1})}h trabalhadas</span>
+        <strong class="gm-sum-val">${countShiftsCurrentMonth}</strong>
+        <span class="gm-sum-sub">${C.formatMoney(totalAccumulatedToReceive)} a receber geral</span>
       </div>
       <div class="gm-summary-card">
         <span class="gm-sum-label">Previsão Bruta</span>
-        <strong class="gm-sum-val">${C.formatMoney(totalEarned)}</strong>
-        <span class="gm-sum-sub">Mês atual</span>
+        <strong class="gm-sum-val">${C.formatMoney(grossForecastThisMonth)}</strong>
+        <span class="gm-sum-sub">Recebimento neste mês</span>
       </div>
       <div class="gm-summary-card">
-        <span class="gm-sum-label">Já em Conta</span>
-        <strong class="gm-sum-val text-success">${C.formatMoney(totalReceived)}</strong>
-        <span class="gm-sum-sub">${paidShifts.length} de ${thisMonth.length} quitados</span>
+        <span class="gm-sum-label">Previsão Líquida</span>
+        <strong class="gm-sum-val text-success">${C.formatMoney(netForecastThisMonth)}</strong>
+        <span class="gm-sum-sub">${effectiveRate > 0 ? (effectiveRate + '% aliq. est.') : 'Líquido estimado'}</span>
+      </div>
+      <div class="gm-summary-card">
+        <span class="gm-sum-label">Já Recebido</span>
+        <strong class="gm-sum-val text-success">${C.formatMoney(receivedThisMonth)}</strong>
+        <span class="gm-sum-sub">Depositado do mês</span>
       </div>
       <div class="gm-summary-card">
         <span class="gm-sum-label">A Receber</span>
-        <strong class="gm-sum-val text-warning">${C.formatMoney(totalOutstanding)}</strong>
-        <span class="gm-sum-sub">Saldo pendente</span>
+        <strong class="gm-sum-val text-warning">${C.formatMoney(outstandingThisMonth)}</strong>
+        <span class="gm-sum-sub">Saldo em aberto</span>
       </div>
     `;
   }

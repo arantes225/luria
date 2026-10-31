@@ -1,7 +1,10 @@
 
 /* Gestor de Plantões v2 — utiliza somente tokens dos temas da LURIA */
 .shift-agenda-card{min-width:0}
-.shift-agenda-toolbar,.shift-agenda-controls,.shift-toolbar-actions,.shift-nav-controls,.shift-group-buttons,.shift-modal-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.shift-agenda-toolbar,.shift-agenda-controls,.shift-toolbar-actions,.shift-nav-controls,.shift-group-buttons,.shift-modal-actions{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.shift-agenda-controls{margin:10px 0 16px;padding:12px 14px;background:var(--surface-2);border-radius:12px;border:1px solid var(--border)}
+.shift-group-buttons{gap:8px}
+.shift-nav-controls{gap:10px}
 .shift-toolbar-actions .shift-form-submit{min-height:40px}
 .shift-nav-controls strong{min-width:170px;text-align:center;text-transform:capitalize}
 .shift-nav-controls button,.shift-group-buttons button,.shift-week-head button{min-height:38px;min-width:38px;border:1px solid var(--border);border-radius:9px;background:var(--surface-2);color:var(--text);cursor:pointer}
@@ -22,7 +25,8 @@
 .shift-week-planner{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
 .shift-week-column{min-width:0;min-height:230px;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--surface)}
 .shift-week-head{display:flex;align-items:center;justify-content:space-between;gap:3px;padding:9px;background:var(--surface-2);font-size:12px}
-.shift-week-head button{min-width:28px;min-height:28px;font-size:20px}
+.shift-week-head button{min-width:32px;min-height:32px;font-size:18px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;transition:background 0.15s}
+.shift-week-head button:hover{background:var(--accent-soft);color:var(--accent)}
 .shift-week-agenda{display:grid;align-content:start;gap:8px;padding:8px}
 .shift-week-agenda>p{margin:0;color:var(--muted);font-size:12px}
 .shift-week-block{display:grid;gap:4px;padding-bottom:8px;border-bottom:1px solid var(--border)}
