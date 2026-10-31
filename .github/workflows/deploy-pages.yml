@@ -38,6 +38,8 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Check JavaScript syntax
         run: node scripts/check-syntax.cjs
+      - name: Validate private recipes and protocol copy behavior
+        run: node --test tests/recipe-workflow.test.cjs
       - name: Test Gestor de Plantões calendar, payments and tax estimates
         run: node --test tests/shift-manager-v2.test.cjs
       - name: Verify project Pages routes and asset paths
@@ -70,8 +72,6 @@ jobs:
         run: node scripts/audit-apostilas-batch.cjs
       - name: Run release-blocking frontend regressions
         run: node --test --test-isolation=none tests/stage77-functional.test.cjs tests/stage77-questions.test.cjs tests/stage77-integrity.test.cjs tests/client-persistence.test.cjs tests/quick-chart.test.cjs tests/quick-chart-ocr.test.cjs tests/quick-chart-fixed-access.test.cjs tests/lazy-vendors.test.cjs tests/sheetjs-mini.test.cjs tests/professor-alex-integration.test.cjs tests/professor-alex-startup.test.cjs tests/trabalho-exames.test.cjs tests/trabalho-exames-view.test.cjs tests/frontend-xss.test.cjs
-      - name: Validate private recipes and protocol copy behavior
-        run: node --test tests/recipe-workflow.test.cjs
       - name: Validate schedule block imports
         run: node --test tests/schedule-block-import.test.cjs tests/cronograma-block-integration.test.cjs tests/cronograma-activity-actions.test.cjs
   # Editorial, image-license and external pairing regressions are release gates.
