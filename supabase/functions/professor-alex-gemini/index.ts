@@ -225,7 +225,7 @@ function parseModelPhoneticCorrection(answer: string, transcript: string): Phone
   if (normal(recognized) === normal(correctedTerm)) return null;
   // The model may suggest a clinical term, but it cannot choose an arbitrary
   // command to be executed by the one-tap confirmation button.
-  if (!/^[\\p{L}\\p{M}\\p{N}\\s-]{3,70}$/u.test(correctedTerm) || !/\\p{L}/u.test(correctedTerm)) return null;
+  if (!/^[\p{L}\p{M}\p{N}\s-]{3,70}$/u.test(correctedTerm) || !/\p{L}/u.test(correctedTerm)) return null;
   return makePhoneticCorrection(recognized, correctedTerm, "Me explica sobre " + correctedTerm);
 }
 
