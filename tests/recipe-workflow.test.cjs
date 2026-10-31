@@ -25,6 +25,7 @@ test("protocol cards load details on demand; selected medicine and orientations 
     status:"verified",tags:[],summary:"Resumo",linked_recipe_slugs:["recipe"],exams:[{title:"Exames iniciais",items:["Hemograma","PCR"]}],
     linked_drug_terms:[],source_refs:[],treatment:[],follow_up:[]
   };
+  const draft = {...protocol,id:2,slug:"draft",title:"Tema em revisão",status:"review_needed",tags:["rascunho-clinico"]};
   const recipe = {
     id:5,slug:"recipe",title:"Modelo exemplo",status:"verified",
     data:{copy_ready:true,routes:[{route:"Via oral",mode:"alternatives",items:[
@@ -35,8 +36,8 @@ test("protocol cards load details on demand; selected medicine and orientations 
   w.supabaseClient = {from(table) {
     const query = {table,filters:{},select(columns){queries.push([table,columns]);return this;},
       eq(key,value){this.filters[key]=value;return this;},order(){return this;},
-      range(){return Promise.resolve({data:[protocol],count:1,error:null});},
-      single(){return Promise.resolve({data:protocol,error:null});},
+      range(){return Promise.resolve({data:[protocol,draft],count:2,error:null});},
+      single(){return Promise.resolve({data:this.filters.id === "2" ? draft : protocol,error:null});},
       in(){return Promise.resolve({data:[recipe],error:null});},
       contains(){return this;},or(){return this;}};
     return query;
@@ -45,7 +46,7 @@ test("protocol cards load details on demand; selected medicine and orientations 
   await tick();
   assert.equal(queries.length,1);
   assert.match(queries[0][1],/^id,slug,title/);
-  assert.equal(w.document.querySelectorAll(".protocol-row").length,1);
+  assert.equal(w.document.querySelectorAll(".protocol-row").length,2);
   w.document.querySelector(".protocol-row").click();
   await tick(); await tick();
   assert.equal(w.document.getElementById("protocol-modal").hidden,false);
@@ -70,6 +71,10 @@ test("protocol cards load details on demand; selected medicine and orientations 
   assert.doesNotMatch(copied[1],/Paracetamol/);
   w.document.querySelector("button[data-close-protocol]").click();
   assert.equal(w.document.getElementById("protocol-modal").hidden,true);
+  w.document.querySelectorAll(".protocol-row")[1].click();
+  await tick();
+  assert.equal(w.document.querySelector("[data-copy-main-recipe]"),null);
+  assert.equal(w.document.querySelector("[data-copy-exams]"),null);
   dom.window.close();
 });
 
