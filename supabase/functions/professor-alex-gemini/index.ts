@@ -159,7 +159,7 @@ function sanitizeStudyAction(value: unknown): StudyAction | null {
 }
 
 function studyPlannerInstruction(today: string, channel: string) {
-  return `${ALEX_NORMAL_MODE_PROMPT}\n\nVocê também organiza estudos dentro da LURIA. Hoje é ${today}. Interprete o pedido e responda SOMENTE em JSON válido, sem markdown, neste formato: {"answer":"resumo curto em português pedindo confirmação antes de mudar dados","proposal":{"type":"schedule_focus ou topic_bundle","topic":"assunto","start_date":"YYYY-MM-DD ou omitir","end_date":"YYYY-MM-DD ou omitir","lessons_per_day":1,"question_count":10,"flashcard_count":15}}. Para mudança de cronograma use schedule_focus, datas exatas e no máximo 32 dias. Para lista de questões, flashcards ou apostila use topic_bundle. Se o aluno pedir apenas questões, defina flashcard_count:0. Se pedir apenas flashcards, defina question_count:0. Nunca invente questões ou flashcards: a plataforma seleciona somente itens existentes compatíveis com o tema, com limite de 50 questões e 80 flashcards por ação. Se o aluno pedir alteração de cronograma, preserve os dias de estudo e mostre o período. Nunca afirme que aplicou ou criou itens até o usuário tocar em Confirmar e aplicar; você apenas preparou uma proposta. Ações administrativas, pagamentos, dados de outros alunos e exclusão irreversível não são permitidos por esta função. ${channel === "voice" ? "A resposta falada deve continuar curta." : ""}`;
+  return `${ALEX_NORMAL_MODE_PROMPT}\n\nVocê também organiza estudos dentro da LURIA. Hoje é ${today}. Interprete o pedido e responda SOMENTE em JSON válido, sem markdown, neste formato: {"answer":"resumo curto em português pedindo confirmação antes de mudar dados","proposal":{"type":"schedule_focus ou topic_bundle","topic":"assunto","start_date":"YYYY-MM-DD ou omitir","end_date":"YYYY-MM-DD ou omitir","lessons_per_day":1,"question_count":10,"flashcard_count":15}}. Para mudança de cronograma use schedule_focus, datas exatas e no máximo 32 dias. Para lista de questões, flashcards ou apostila use topic_bundle. Se o aluno pedir apenas questões, defina flashcard_count:0. Se pedir apenas flashcards, defina question_count:0. Nunca invente questões ou flashcards: a plataforma seleciona somente itens existentes compatíveis com o tema, com limite de 50 questões e 80 flashcards por ação. Se o aluno pedir alteração de cronograma, preserve os dias de estudo e mostre o período. Caso o período, tema ou quantidade indispensável não esteja claro, responda com uma pergunta curta e proposal:null; não invente datas ou disciplinas. Nunca afirme que aplicou ou criou itens até o usuário tocar em Confirmar e aplicar; você apenas preparou uma proposta. Ações administrativas, pagamentos, dados de outros alunos e exclusão irreversível não são permitidos por esta função. ${channel === "voice" ? "A resposta falada deve continuar curta." : ""}`;
 }
 
 function getFeynmanSystemInstruction(action: string, learnerMode: string, topic: string, channel: string) {
@@ -453,8 +453,10 @@ Deno.serve(async (req: Request) => {
       const parsed = JSON.parse(answer);
       actionPlan = sanitizeStudyAction(parsed?.proposal);
       answer = String(parsed?.answer || "Preparei uma proposta para você confirmar.").trim().slice(0, 1000);
-      if (!actionPlan) throw Error("invalid proposal");
-      if (actionPlan.type === "schedule_focus") {
+      // An underspecified command must be answered as a clarification, not an
+      // invalid plan. Never apply anything without a valid sanitized proposal.
+      if (!actionPlan && answer.length < 3) throw Error("invalid proposal");
+      if (actionPlan?.type === "schedule_focus") {
         const preview = await userClient.rpc("alex_schedule_focus_v1", { p_focus: actionPlan.topic, p_start_date: actionPlan.start_date, p_end_date: actionPlan.end_date, p_lessons_per_day: actionPlan.lessons_per_day, p_apply: false });
         if (!preview.error) actionPlan = { ...actionPlan, preview: preview.data };
       }
