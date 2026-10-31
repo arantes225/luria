@@ -12,7 +12,6 @@
   if (!btn || !createBtn || !tableRoot || !exportBtn || !startInput || !status) return;
   const timeSlots = [
     ['jejum','Jejum'],
-    ['apos_cafe','2h após café'],
     ['antes_almoco','Antes almoço'],
     ['apos_almoco','2h após almoço'],
     ['antes_jantar','Antes jantar'],
@@ -101,68 +100,55 @@
     note('CSV exportado para o dispositivo. Nenhuma medição foi salva na LURIA.');
   });
   const paperCols=[
-    {label:['DATA'],w:25},{label:['JEJUM'],w:25},{label:['2h APÓS','CAFÉ'],w:27},
-    {label:['ANTES DO','ALMOÇO'],w:27},{label:['2h APÓS','ALMOÇO'],w:28},
-    {label:['ANTES DO','JANTAR'],w:27},{label:['2h APÓS','JANTAR'],w:28},
-    {label:['AO','DEITAR'],w:25},{label:['OUTROS / SINTOMAS','HORÁRIO / OBSERVAÇÕES'],w:61}
+    {label:['DIA'],w:28},{label:['JEJUM'],w:31},
+    {label:['ANTES DO','ALMOÇO'],w:32},{label:['2h APÓS','ALMOÇO'],w:32},
+    {label:['ANTES DO','JANTAR'],w:32},{label:['2h APÓS','JANTAR'],w:32},
+    {label:['AO','DEITAR'],w:31},{label:['OBSERVAÇÕES'],w:55}
   ];
   function buildPdf(doc) {
-    const W=297,H=210,M=12,BLUE=[24,72,136],TEXT=[27,42,61],SUB=[86,103,127],BORDER=[203,215,232],PALE=[244,248,254];
-    function text(t,x,y,size=9,color=TEXT,weight='normal',opt){
+    // A4 landscape, 1 page. Only three identifying fields: full name, start date, stamp.
+    const W=297,M=12,BLUE=[24,72,136],TEXT=[27,42,61],SUB=[86,103,127],BORDER=[190,203,219];
+    const text=(value,x,y,size=9,color=TEXT,weight='normal',opts={})=>{
       doc.setFont('helvetica',weight);doc.setFontSize(size);doc.setTextColor(...color);
-      doc.text(t,x,y,opt||{});
+      doc.text(value,x,y,opts);
+    };
+    const line=(x1,y1,x2,y2)=>{
+      doc.setDrawColor(...BORDER);doc.setLineWidth(.3);doc.line(x1,y1,x2,y2);
+    };
+    doc.setFillColor(255,255,255);doc.rect(0,0,W,210,'F');
+    doc.setFillColor(...BLUE);doc.rect(0,0,W,4,'F');
+    text('TRAUBE',M,17,17,BLUE,'bold');
+    text('REGISTRO DE GLICEMIA CAPILAR | 7 DIAS',M+43,17,12,TEXT,'bold');
+    text('Nome completo:',M,33,10,TEXT,'bold');
+    line(M+32,34,W-M-89,34);
+    text('Data inicial:',W-M-85,33,10,TEXT,'bold');
+    line(W-M-60,34,W-M,34);
+    text('Anote apenas as medidas solicitadas pelo médico, em mg/dL. Após refeição: 2h do início.',M,43,8.5,SUB);
+    const tableY=49, headH=14, rowH=14.5;
+    doc.setFillColor(...BLUE);doc.rect(M,tableY,273,headH,'F');
+    let x=M;
+    for(const col of paperCols){
+      const mid=tableY+7, isTwo=col.label.length>1;
+      col.label.forEach((label,j)=>text(label,x+col.w/2,mid+(j-(col.label.length-1)/2)*4.1+1,7.6,[255,255,255],'bold',{align:'center'}));
+      x+=col.w;
     }
-    function line(x1,y1,x2,y2){
-      doc.setDrawColor(...BORDER);doc.setLineWidth(0.25);doc.line(x1,y1,x2,y2);
+    for(let i=0;i<7;i++){
+      const y=tableY+headH+i*rowH;
+      if(i%2){doc.setFillColor(247,249,253);doc.rect(M,y,273,rowH,'F');}
+      let cx=M;
+      paperCols.forEach((col,j)=>{
+        doc.setDrawColor(...BORDER);doc.setLineWidth(.25);doc.rect(cx,y,col.w,rowH);
+        if(j===0)text('Dia '+(i+1),cx+col.w/2,y+8.4,8.6,SUB,'bold',{align:'center'});
+        cx+=col.w;
+      });
     }
-    function field(label,x,y,end){
-      text(label,x,y,8,SUB,'bold');const start=x+doc.getTextWidth(label)+3;
-      line(start,y+1,end,y+1);
-    }
-    {
-      doc.setFillColor(255,255,255);doc.rect(0,0,W,H,'F');
-      doc.setFillColor(...BLUE);doc.rect(0,0,W,5,'F');
-      text('LURIA',M,15.5,14,BLUE,'bold');
-      text('|  DIÁRIO DE GLICEMIA CAPILAR',M+29,15.5,12.5,TEXT,'bold');
-      doc.setFillColor(...PALE);doc.roundedRect(W-M-30,9.5,30,10.2,4.2,4.2,'F');
-      text('7 DIAS',W-M-15,16,8.5,BLUE,'bold',{align:'center'});
-      text('Preencha à mão: valores em mg/dL somente nos horários indicados pelo médico.',M,23,8.4,SUB);
-      field('Paciente:',M,31,M+113);
-      field('Período:',M+118,31,M+192);
-      field('Médico(a):',M+197,31,W-M);
-      field('Medicamentos em uso / dose:',M,39,M+167);
-      field('Orientações de horários:',M+172,39,W-M);
-      doc.setFillColor(...PALE);doc.roundedRect(M,43,273,8.4,2.7,2.7,'F');
-      text('Não precisa preencher todos os campos. 2h após = 2h após início da refeição.',M+3,48.5,8.2,BLUE,'bold');
-      const top=56,header=13.9,rowH=14.8;
-      doc.setFillColor(...BLUE);doc.rect(M,top,273,header,'F');
-      let x=M;
-      for(const col of paperCols){
-        const yc=col.label.length===1?63.5:61;
-        col.label.forEach((t,k)=>text(t,x+col.w/2,yc+k*4.3,col.w>58?7.2:7.7,[255,255,255],'bold',{align:'center'}));
-        x+=col.w;
-      }
-      for(let i=0;i<7;i++) {
-        const y=top+header+i*rowH;
-        if(i%2) {doc.setFillColor(250,252,255);doc.rect(M,y,273,rowH,'F');}
-        let xx=M;
-        for(let col=0;col<paperCols.length;col++) {
-          const cw=paperCols[col].w;
-          doc.setDrawColor(...BORDER);doc.setLineWidth(.23);doc.rect(xx,y,cw,rowH);
-          if(col===0){text('Dia '+String(i+1).padStart(2,'0'),xx+2,y+5.6,7.5,SUB,'bold');line(xx+2,y+10.8,xx+cw-2,y+10.8);}
-          else if(col!==paperCols.length-1)line(xx+2.3,y+11.3,xx+cw-2.3,y+11.3);
-          xx+=cw;
-        }
-      }
-      const bottom=top+header+7*rowH;
-      doc.setDrawColor(...BORDER);doc.setLineWidth(.3);
-      doc.roundedRect(M,bottom+3.6,273,16.6,2.6,2.6);
-      text('Observações da semana (alimentação, atividade, sintomas ou ocorrências):',M+3,bottom+9,8,SUB,'bold');
-      line(M+3,bottom+13.8,W-M-3,bottom+13.8);
-      text('Leve esta folha à consulta. Não ajuste medicamentos por conta própria.',M,204,7.6,SUB);
-      text('LURIA  •  Registro manual  •  1 página / 7 dias',W-M,204,7.2,SUB,'normal',{align:'right'});
-    }
+    const boxY=174,boxX=W-M-81,boxW=81,boxH=25;
+    doc.setDrawColor(...BORDER);doc.setLineWidth(.5);
+    doc.roundedRect(boxX,boxY,boxW,boxH,2.5,2.5);
+    text('Carimbo do médico',boxX+3,boxY+5,8.4,SUB,'bold');
+    text('Levar esta folha à consulta.',M,194,9,SUB);
   }
+
   btn.addEventListener('click',async () => {
     btn.disabled=true;
     const old=btn.textContent;btn.textContent='Gerando PDF…';
@@ -173,7 +159,7 @@
       if(!Doc)throw new Error('O navegador não conseguiu carregar o PDF.');
       const doc=new Doc({orientation:'landscape',unit:'mm',format:'a4',compress:true});
       buildPdf(doc);
-      doc.save('LURIA_Diario_Glicemico_7_dias.pdf');
+      doc.save('Traube_Diario_Glicemico_7_dias.pdf');
       note('Modelo de 7 dias gerado em 1 página. Imprima em A4 horizontal e entregue ao paciente.');
     }catch(e){note('Não foi possível gerar o PDF: '+String(e?.message||e));}
     finally{btn.disabled=false;btn.textContent=old;}
