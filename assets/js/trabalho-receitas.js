@@ -25,6 +25,7 @@
   let all = [];
   let protocols = [];
   let selectedId = null;
+  let selectedMeds = new Set(); // Seleção individual em cada receituário; nunca compartilhada entre fichas.
 
   function esc(value) {
     return String(value ?? "")
@@ -42,50 +43,42 @@
       .toLowerCase();
   }
 
-  function recipeText(recipe) {
+
+  function recipeText(recipe, selected = selectedMeds) {
     const data = recipe.data || {};
     const routes = Array.isArray(data.routes) ? data.routes : [];
-    const lines = [recipe.title.toUpperCase(), ""];
-
-    routes.forEach((route) => {
+    const lines = [String(recipe.title || "Receituário").toUpperCase(), ""];
+    routes.forEach((route, ri) => {
+      const items = (route.items || []).filter((item, i) => selected.has(ri + ":" + i));
+      if (!items.length) return;
       lines.push(String(route.route || "USO").toUpperCase() + ":");
-      const items = route.items || [];
-      const alternatives = route.mode === "alternatives";
       items.forEach((item, index) => {
-        if (alternatives && index > 0) lines.push("OU");
-        const qty = item.quantity ? ` — ${item.quantity}` : "";
-        const prefix = alternatives ? `${index + 1}ª OPÇÃO)` : `${index + 1})`;
-        lines.push(`${prefix} ${item.drug || "Medicamento"}${qty}`);
-        if (item.directions) lines.push(`   ${item.directions}`);
+        lines.push((index + 1) + ") " + String(item.drug || "Medicamento") +
+          (item.quantity ? " — " + item.quantity : ""));
+        if (item.directions) lines.push("   " + item.directions);
         lines.push("");
       });
     });
-
-    const orientations = Array.isArray(data.orientations) ? data.orientations : [];
-    if (orientations.length) {
-      lines.push("ORIENTAÇÕES:");
-      orientations.forEach((x) => lines.push(`- ${x}`));
-      lines.push("");
-    }
-
-    const followUp = Array.isArray(data.follow_up) ? data.follow_up : [];
-    if (followUp.length) {
-      lines.push("REAVALIAÇÃO:");
-      followUp.forEach((x) => lines.push(`- ${x}`));
-      lines.push("");
-    }
-
-    const warnings = Array.isArray(data.warnings) ? data.warnings : [];
-    if (warnings.length) {
-      lines.push("SINAIS DE ALARME / ATENÇÃO:");
-      warnings.forEach((x) => lines.push(`- ${x}`));
-    }
-
+    // Orientações entram automaticamente, independentemente das escolhas de medicamentos.
+    const blocks = [
+      ["ORIENTAÇÕES:",data.orientations],
+      ["REAVALIAÇÃO:",data.follow_up],
+      ["SINAIS DE ALARME / ATENÇÃO:",data.warnings]
+    ];
+    blocks.forEach((block) => {
+      const values = Array.isArray(block[1]) ? block[1] : [];
+      if (values.length) {
+        lines.push(block[0]);
+        values.forEach(x=>lines.push("- " + String(x)));
+        lines.push("");
+      }
+    });
     return lines.join("\n").trim();
   }
 
   async function copyRecipe(recipe) {
     if (recipe.status !== "verified" || recipe.data?.copy_ready !== true) return;
+    if (!selectedMeds.size) return;
     const text = recipeText(recipe);
     try {
       await navigator.clipboard.writeText(text);
@@ -163,6 +156,7 @@
     els.list.querySelectorAll("[data-recipe-id]").forEach((btn) => {
       btn.addEventListener("click", () => {
         selectedId = Number(btn.dataset.recipeId);
+        selectedMeds = new Set();
         renderList();
         renderDetail(all.find((x) => x.id === selectedId));
         if (window.matchMedia("(max-width: 900px)").matches) {
@@ -173,10 +167,12 @@
 
     if (!selectedId && items[0]) {
       selectedId = items[0].id;
+      selectedMeds = new Set();
       renderList();
       renderDetail(items[0]);
     } else if (selectedId && !items.some((x) => x.id === selectedId) && items[0]) {
       selectedId = items[0].id;
+      selectedMeds = new Set();
       renderList();
       renderDetail(items[0]);
     }
@@ -192,29 +188,27 @@
     `;
   }
 
-  function renderVerifiedRoutes(data) {
+
+  function renderVerifiedRoutes(data, canSelect) {
     const routes = Array.isArray(data.routes) ? data.routes : [];
     if (!routes.length) return "";
-    return routes.map((route) => `
-      <section class="recipe-route">
-        <div class="recipe-route-title">${esc(route.route || "Uso")}</div>
-        <div class="recipe-med-list">
-          ${((route.items || []).map((item, i) => `
-            ${route.mode === "alternatives" && i > 0 ? '<div class="recipe-or-divider" aria-label="ou">OU</div>' : ""}
-            <article class="recipe-med">
-              <div class="recipe-med-head">
-                <span class="recipe-med-num">${route.mode === "alternatives" ? `${i + 1}ª` : i + 1}</span>
-                <div>
-                  <button type="button" class="recipe-drug-link" data-open-drug="${esc(item.drug || "Medicamento")}">${esc(item.drug || "Medicamento")} ↗</button>
-                  ${item.quantity ? `<span>${esc(item.quantity)}</span>` : ""}
-                </div>
-              </div>
-              ${item.directions ? `<p>${esc(item.directions)}</p>` : ""}
-            </article>
-          `).join(""))}
-        </div>
-      </section>
-    `).join("");
+    return routes.map((route, ri) =>
+      '<section class="recipe-route"><div class="recipe-route-title">' + esc(route.route || "Uso") +
+      (route.mode === "alternatives" ? ' · Escolha uma alternativa' : '') + '</div><div class="recipe-med-list">' +
+      (route.items || []).map((item, i) => {
+        const key = ri + ":" + i;
+        const choice = canSelect ? '<label class="recipe-drug-choice" style="display:inline-flex;align-items:center;gap:6px;cursor:pointer;margin-right:10px">' +
+          '<input type="checkbox" data-med-route="' + ri + '" data-med-index="' + i + '"' +
+          (selectedMeds.has(key) ? ' checked' : '') + ' aria-label="Selecionar ' + esc(item.drug || "Medicamento") + '"> Selecionar</label>' : '';
+        return (route.mode === "alternatives" && i > 0 ? '<div class="recipe-or-divider" aria-label="ou">OU</div>' : '') +
+          '<article class="recipe-med"><div class="recipe-med-head">' +
+          '<span class="recipe-med-num">' + (route.mode === "alternatives" ? (i + 1) + "ª" : i + 1) + '</span><div>' +
+          choice + '<button type="button" class="recipe-drug-link" data-open-drug="' +
+          esc(item.drug || "Medicamento") + '">' + esc(item.drug || "Medicamento") + ' ↗</button>' +
+          (item.quantity ? '<span>' + esc(item.quantity) + '</span>' : '') + '</div></div>' +
+          (item.directions ? '<p>' + esc(item.directions) + '</p>' : '') + '</article>';
+      }).join("") + '</div></section>'
+    ).join("");
   }
 
   function renderSourceRegimen(data) {
@@ -257,6 +251,7 @@
     const data = recipe.data || {};
     const s = STATUS[recipe.status] || STATUS.review_needed;
     const copyEnabled = recipe.status === "verified" && data.copy_ready === true;
+    const canCopySelection = copyEnabled && selectedMeds.size > 0;
     const relatedProtocol = protocols.find((p) => Array.isArray(p.linked_recipe_slugs) && p.linked_recipe_slugs.includes(recipe.slug));
 
     els.detail.innerHTML = `
@@ -273,15 +268,16 @@
         <div class="recipe-head-actions">
           ${relatedProtocol ? '<button class="recipe-copy-btn recipe-protocol-btn" type="button" data-open-protocol="1">Abrir protocolo</button>' : ""}
           <button class="recipe-copy-btn recipe-note-btn" type="button" data-send-note="1">Enviar à Cola Rápida</button>
-          <button class="recipe-copy-btn" type="button" data-copy-current="1" ${copyEnabled ? "" : "disabled"}>
-            ${copyEnabled ? "Copiar receita" : "Aguardando revisão"}
+          <button class="recipe-copy-btn" type="button" data-copy-current="1" ${canCopySelection ? "" : "disabled"}>
+            ${!copyEnabled ? "Aguardando revisão" : canCopySelection ? "Copiar receita + orientações" : "Selecione medicamentos"}
           </button>
         </div>
       </div>
 
       <div class="recipe-status-note ${s.cls}">${esc(s.help)}</div>
 
-      ${renderVerifiedRoutes(data)}
+      ${copyEnabled ? `<p class="recipe-selection-hint" style="margin:10px 0">Marque os medicamentos desejados. Nas alternativas (OU), selecione apenas um. As orientações e os sinais de alarme serão copiados automaticamente.</p>` : ""}
+      ${renderVerifiedRoutes(data, copyEnabled)}
       ${data.eligibility ? `<section class="recipe-detail-section info"><h3>Quando este esquema se aplica</h3><p>${esc(data.eligibility)}</p></section>` : ""}
       ${listBlock("Pontos-chave do protocolo", data.key_corrections, "info")}
       ${listBlock("Orientações", data.orientations)}
@@ -297,8 +293,16 @@
 
     const copy = els.detail.querySelector('[data-copy-current="1"]');
     if (copyEnabled) copy?.addEventListener("click", () => copyRecipe(recipe));
+    els.detail.querySelectorAll("input[data-med-route][data-med-index]").forEach((box) => box.addEventListener("change", () => {
+      const ri = Number(box.dataset.medRoute), ii = Number(box.dataset.medIndex), key = ri + ":" + ii;
+      if (box.checked && data.routes?.[ri]?.mode === "alternatives") {
+        for (const saved of [...selectedMeds]) if (saved.startsWith(ri + ":")) selectedMeds.delete(saved);
+      }
+      if (box.checked) selectedMeds.add(key); else selectedMeds.delete(key);
+      renderDetail(recipe);
+    }));
     els.detail.querySelector('[data-open-protocol="1"]')?.addEventListener("click", () => window.LuriaClinicalBridge?.openProtocol(relatedProtocol.slug));
-    els.detail.querySelector('[data-send-note="1"]')?.addEventListener("click", () => window.LuriaClinicalBridge?.toQuickChart({type:"recipe",slug:recipe.slug,title:recipe.title,text:recipeText(recipe),source:"Tratamentos gerais LURIA"}));
+    els.detail.querySelector('[data-send-note="1"]')?.addEventListener("click", () => window.LuriaClinicalBridge?.toQuickChart({type:"recipe",slug:recipe.slug,title:recipe.title,text:copyEnabled && selectedMeds.size ? recipeText(recipe) : (recipe.title + "\nEm revisão / sem medicamentos selecionados: não utilizar como prescrição automática."),source:"Tratamentos gerais LURIA"}));
     els.detail.querySelectorAll("[data-open-drug]").forEach((btn) => btn.addEventListener("click", () => window.LuriaClinicalBridge?.openDrug(btn.dataset.openDrug)));
   }
 
