@@ -76,6 +76,8 @@ test('Traube diary has only required identifying fields and one paper week', () 
   assert.match(paper, /Carimbo do médico/);
   assert.match(paper, /TRAUBE/);
   assert.match(paper, /Traube_Diario_Glicemico_7_dias\.pdf/);
+ assert.match(paper, /Leve a folha preenchida na próxima consulta/);
+ assert.match(paper, /M,194,9\.8,BLUE,'bold'/);
   assert.doesNotMatch(paper, /Medicamentos em uso|Médico\(a\):|Período:|Orientações de horários:/);
   assert.doesNotMatch(paper, /doc\.addPage\(/);
   assert.match(script, /Baixar PDF · 7 dias/);
