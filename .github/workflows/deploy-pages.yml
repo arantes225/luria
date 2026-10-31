@@ -38,6 +38,8 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Check JavaScript syntax
         run: node scripts/check-syntax.cjs
+      - name: Verify Bulário commercial-name search and full-catalog pagination
+        run: node --test tests/bulario-brand-search.test.cjs
       - name: Test Gestor de Plantões calendar, payments and tax estimates
         run: node --test tests/shift-manager-v2.test.cjs
       - name: Verify project Pages routes and asset paths
