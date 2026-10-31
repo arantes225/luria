@@ -68,3 +68,18 @@ test('Paper diary uses browser PDF generator and a manual transcription-only wor
   assert.doesNotMatch(pdf, /recognize|OCR|Tesseract/i);
   assert.match(pdf, /formula injection/);
 });
+
+test('Traube diary has only required identifying fields and one paper week', () => {
+  const paper=read('assets/js/work-diabetes-paper.js');
+  assert.match(paper, /'Nome completo:'|Nome completo:/);
+  assert.match(paper, /Data inicial:/);
+  assert.match(paper, /Carimbo do médico/);
+  assert.match(paper, /TRAUBE/);
+  assert.match(paper, /Traube_Diario_Glicemico_7_dias\.pdf/);
+  assert.doesNotMatch(paper, /Medicamentos em uso|Médico\(a\):|Período:|Orientações de horários:/);
+  assert.doesNotMatch(paper, /doc\.addPage\(/);
+  assert.match(script, /Baixar PDF · 7 dias/);
+  assert.doesNotMatch(script, /14 dias/);
+  assert.equal(JSON.parse(read('manifest.webmanifest')).short_name, 'Traube');
+  assert.match(read('assets/js/app.js'), /<strong>TRAUBE<\/strong>/);
+});
