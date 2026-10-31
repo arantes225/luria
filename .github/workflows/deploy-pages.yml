@@ -54,6 +54,8 @@ jobs:
         run: node --test tests/curriculo.test.cjs tests/curriculo-pdf-ocr.test.cjs tests/radar.test.cjs tests/pdf-layout-profiles.test.cjs
       - name: Validate vocational quiz and live theme colors
         run: node --test tests/vocacao.test.cjs tests/vocacao-ui.test.cjs tests/vocacao-theme.test.cjs
+      - name: Verify Diabetes hub, printable diary and work navigation
+        run: node --test --test-isolation=none tests/work-diabetes.test.cjs tests/work-hub.test.cjs
       - name: Check CSP generation
         run: node scripts/sync-csp.cjs
       - name: Verify Notion connect controls in both libraries
