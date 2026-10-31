@@ -80,6 +80,7 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 const DEFAULT_MODEL = "gemini-3.5-flash-lite";
 const TTS_MODEL = "gemini-3.8-flash-tts";
+const FAST_TTS_MODEL = "gemini-3.8-flash-lite-tts";
 const MAX_PDF_BASE64 = 6_000_000; // ~4.5MB of raw PDF
 const MAX_BODY_BYTES = 6_500_000;
 const MAX_SITE_CONTEXT_CHARS = 6_000;
@@ -126,7 +127,7 @@ function fastSocialReply(value: unknown, mode: string) {
 
 function isStudyPlanningRequest(value: unknown) {
   const clean = normalizeSocialText(value);
-  return /\b(cronograma|aulas? (?:desta|da|por) semana|rodando em|lista de quest|lista de flashcard|criar quest|criar flashcard|selecionar apostila|estudar agora|mudar as aulas|ajustar.*cronograma)\b/.test(clean);
+  return /\b(cronograma|planejamento|planejar estudos?|organizar (?:meus? )?estudos?|reorganizar (?:minha )?semana|aulas? (?:desta|da|por) semana|rodando em|lista(?:s)? de quest|lista(?:s)? de flashcard|questoes? (?:sobre|de|para|do)|flashcards? (?:sobre|de|para|do)|criar quest|criar flashcard|selecionar apostila|estudar agora|mudar as aulas|ajustar.*cronograma|montar.*(?:quest|flashcard)|gerar.*(?:quest|flashcard))\b/.test(clean);
 }
 
 type StudyAction = {
@@ -152,11 +153,14 @@ function sanitizeStudyAction(value: unknown): StudyAction | null {
     if (!/^\d{4}-\d{2}-\d{2}$/.test(start_date) || !/^\d{4}-\d{2}-\d{2}$/.test(end_date)) return null;
     return { type, topic, start_date, end_date, lessons_per_day: Math.max(1, Math.min(5, Number(item.lessons_per_day) || 1)) };
   }
-  return { type, topic, question_count: Math.max(0, Math.min(50, Number(item.question_count) || 10)), flashcard_count: Math.max(0, Math.min(80, Number(item.flashcard_count) || 15)) };
+  const question_count = Math.max(0, Math.min(50, Number(item.question_count ?? 10) || 0));
+  const flashcard_count = Math.max(0, Math.min(80, Number(item.flashcard_count ?? 15) || 0));
+  if (question_count === 0 && flashcard_count === 0) return null;
+  return { type, topic, question_count, flashcard_count };
 }
 
 function studyPlannerInstruction(today: string, channel: string) {
-  return `${ALEX_NORMAL_MODE_PROMPT}\n\nVocê também organiza estudos dentro da LURIA. Hoje é ${today}. Interprete o pedido e responda SOMENTE em JSON válido, sem markdown, neste formato: {"answer":"resumo curto em português pedindo confirmação antes de mudar dados","proposal":{"type":"schedule_focus ou topic_bundle","topic":"assunto","start_date":"YYYY-MM-DD ou omitir","end_date":"YYYY-MM-DD ou omitir","lessons_per_day":1,"question_count":10,"flashcard_count":15}}. Para mudança de cronograma use schedule_focus, datas exatas e no máximo 32 dias. Para lista de questões, flashcards ou apostila use topic_bundle. Nunca diga que aplicou; você apenas preparou uma proposta. ${channel === "voice" ? "A resposta falada deve continuar curta." : ""}`;
+  return `${ALEX_NORMAL_MODE_PROMPT}\n\nVocê também organiza estudos dentro da LURIA. Hoje é ${today}. Interprete o pedido e responda SOMENTE em JSON válido, sem markdown, neste formato: {"answer":"resumo curto em português pedindo confirmação antes de mudar dados","proposal":{"type":"schedule_focus ou topic_bundle","topic":"assunto","start_date":"YYYY-MM-DD ou omitir","end_date":"YYYY-MM-DD ou omitir","lessons_per_day":1,"question_count":10,"flashcard_count":15}}. Para mudança de cronograma use schedule_focus, datas exatas e no máximo 32 dias. Para lista de questões, flashcards ou apostila use topic_bundle. Se o aluno pedir apenas questões, defina flashcard_count:0. Se pedir apenas flashcards, defina question_count:0. Nunca invente questões ou flashcards: a plataforma seleciona somente itens existentes compatíveis com o tema, com limite de 50 questões e 80 flashcards por ação. Se o aluno pedir alteração de cronograma, preserve os dias de estudo e mostre o período. Caso o período, tema ou quantidade indispensável não esteja claro, responda com uma pergunta curta e proposal:null; não invente datas ou disciplinas. Nunca afirme que aplicou ou criou itens até o usuário tocar em Confirmar e aplicar; você apenas preparou uma proposta. Ações administrativas, pagamentos, dados de outros alunos e exclusão irreversível não são permitidos por esta função. ${channel === "voice" ? "A resposta falada deve continuar curta." : ""}`;
 }
 
 function getFeynmanSystemInstruction(action: string, learnerMode: string, topic: string, channel: string) {
@@ -242,8 +246,8 @@ Deno.serve(async (req: Request) => {
   const intent = ["learn", "question", "material"].includes(String(data.intent)) ? String(data.intent) : "learn";
   const mode = (data.mode === "estourado") ? "estourado" : "normal";
   const channel = (data.channel === "voice") ? "voice" : "chat";
-  // Browser TTS is the fast default. Premium voice adds a serial Gemini request
-  // only when explicitly requested for a full lesson.
+  // The PWA must receive real, server-generated audio for every voice answer.
+  // Browser speech is only a fallback: mobile Safari may silently block it.
   const voiceQuality = data.voice_quality === "natural" ? "natural" : "fast";
   const isVoiceInput = channel === "voice" || data.voice_input === true;
   const depth = data.depth === "aula" ? "aula" : "rapida";
@@ -267,7 +271,7 @@ Deno.serve(async (req: Request) => {
     return json({ clarification: "Não entendi bem esse termo. Pode repetir devagar ou digitar a palavra? Não vou elaborar uma resposta antes de confirmar.", clarification_code: "low_transcription_confidence" }, 200, headers);
   }
   const socialReply = experience === "alex" ? fastSocialReply(prompt || topic, mode) : null;
-  if (socialReply && (data.file === undefined || data.file === null)) {
+  if (socialReply && channel !== "voice" && (data.file === undefined || data.file === null)) {
     return json({ answer: socialReply, audio: null, audioError: channel === "voice" ? "device_tts_fast_path" : null, model: "local-fast-path", usage: null, fast_path: true }, 200, headers);
   }
   if (!Deno.env.get("CLIENT_GEMINI")) return json({ error: "gemini_secret_missing" }, 503, headers);
@@ -450,8 +454,10 @@ Deno.serve(async (req: Request) => {
       const parsed = JSON.parse(answer);
       actionPlan = sanitizeStudyAction(parsed?.proposal);
       answer = String(parsed?.answer || "Preparei uma proposta para você confirmar.").trim().slice(0, 1000);
-      if (!actionPlan) throw Error("invalid proposal");
-      if (actionPlan.type === "schedule_focus") {
+      // An underspecified command must be answered as a clarification, not an
+      // invalid plan. Never apply anything without a valid sanitized proposal.
+      if (!actionPlan && answer.length < 3) throw Error("invalid proposal");
+      if (actionPlan?.type === "schedule_focus") {
         const preview = await userClient.rpc("alex_schedule_focus_v1", { p_focus: actionPlan.topic, p_start_date: actionPlan.start_date, p_end_date: actionPlan.end_date, p_lessons_per_day: actionPlan.lessons_per_day, p_apply: false });
         if (!preview.error) actionPlan = { ...actionPlan, preview: preview.data };
       }
@@ -465,7 +471,7 @@ Deno.serve(async (req: Request) => {
   let audioMimeType: string = "audio/wav";
   let audioError: string | null = null;
 
-  if (experience === "alex" && channel === "voice" && depth === "aula" && voiceQuality === "natural") {
+  if (experience === "alex" && channel === "voice") {
     try {
       const voiceText = answer
         .replace(/\*\*(.*?)\*\*/g, "$1")
@@ -473,10 +479,12 @@ Deno.serve(async (req: Request) => {
         .replace(/#{1,6}\s+/g, "")
         .replace(/\[(.*?)\]\(.*?\)/g, "$1")
         .replace(/<[^>]*>/g, "")
-        .slice(0, 1500)
+        .slice(0, voiceQuality === "natural" && depth === "aula" ? 1500 : 900)
         .trim();
 
-      const ttsModel = Deno.env.get("ALEX_TTS_MODEL") || TTS_MODEL;
+      const ttsModel = voiceQuality === "natural" && depth === "aula"
+        ? (Deno.env.get("ALEX_TTS_MODEL") || TTS_MODEL)
+        : (Deno.env.get("ALEX_FAST_TTS_MODEL") || FAST_TTS_MODEL);
       // Gemini 3.8 TTS usa Interactions API. O endpoint generateContent com
       // campos legados pode retornar 400 sem áudio mesmo com texto válido.
       const ttsResponse = await fetch("https://generativelanguage.googleapis.com/v1beta/interactions", {
@@ -498,7 +506,7 @@ Deno.serve(async (req: Request) => {
           response_format: { type: "audio" },
           generation_config: { speech_config: [{ voice: "Puck" }] }
         }),
-        signal: AbortSignal.timeout(10_000),
+        signal: AbortSignal.timeout(voiceQuality === "natural" && depth === "aula" ? 10_000 : 8_000),
       });
 
       if (ttsResponse.ok) {
@@ -525,10 +533,6 @@ Deno.serve(async (req: Request) => {
       audioError = "tts_unavailable";
       console.warn("[alex-gemini] TTS failure:", ttsErr instanceof Error ? ttsErr.name : "unknown");
     }
-  } else if (channel === "voice") {
-    // Respostas rápidas chegam imediatamente ao cliente e usam a síntese do
-    // dispositivo. Evita bloquear o texto aguardando uma segunda chamada de IA.
-    audioError = "device_tts_fast_path";
   }
 
   let report: Record<string, unknown> | null = null;
