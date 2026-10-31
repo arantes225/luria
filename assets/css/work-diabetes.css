@@ -1,0 +1,96 @@
+/* LURIA Diabetes • isolated UI; honors existing theme variables */
+.diabetes-app{--dm-accent:var(--theme,#184888);color:var(--text);max-width:1440px;margin:0 auto;padding:0 0 48px;display:grid;gap:18px}
+.diabetes-app *{box-sizing:border-box}
+.diabetes-app [hidden]{display:none!important}
+.diabetes-app :is(button,input,select,textarea){font:inherit}
+.diabetes-app :focus-visible{outline:3px solid color-mix(in srgb,var(--dm-accent) 65%,white);outline-offset:3px}
+.diabetes-loading{padding:28px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.dm-hero,.dm-panel,.dm-card,.dm-notice{background:var(--surface);border:1px solid var(--border);border-radius:18px}
+.dm-hero{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding:26px;background:linear-gradient(120deg,var(--surface) 30%,color-mix(in srgb,var(--dm-accent) 10%,var(--surface)))}
+.dm-eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.11em;font-weight:800;color:var(--dm-accent)}
+.dm-hero h2{font-size:clamp(1.5rem,2.7vw,2.2rem);line-height:1.1;margin:8px 0 12px;color:var(--text)}
+.dm-hero p{margin:0;color:var(--muted);line-height:1.65;max-width:800px}
+.dm-hero-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}
+.dm-btn,.dm-link-btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;text-decoration:none;border:1px solid var(--border);background:var(--surface-2);color:var(--text);font-weight:750;border-radius:11px;min-height:42px;padding:9px 14px;cursor:pointer;transition:background .15s,border-color .15s}
+.dm-btn:hover,.dm-link-btn:hover{background:color-mix(in srgb,var(--dm-accent) 9%,var(--surface));border-color:var(--dm-accent)}
+.dm-btn.primary,.dm-link-btn.primary{color:white;background:var(--dm-accent);border-color:var(--dm-accent)}
+.dm-btn.primary:hover,.dm-link-btn.primary:hover{filter:brightness(.92)}
+.dm-nav{display:flex;gap:7px;overflow-x:auto;padding:3px 2px 11px;scrollbar-width:thin}
+.dm-nav button{flex:0 0 auto;min-height:39px;padding:9px 13px;border-radius:999px;background:var(--surface);color:var(--muted);border:1px solid var(--border);cursor:pointer;font-size:.85rem;font-weight:700;white-space:nowrap}
+.dm-nav button[aria-selected="true"]{background:var(--dm-accent);border-color:var(--dm-accent);color:#fff}
+.dm-view{display:grid;gap:15px}
+.dm-section-head{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:13px}
+.dm-section-head h3{font-size:1.35rem;margin:0 0 6px;color:var(--text)}
+.dm-section-head p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.dm-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.dm-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.dm-grid.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.dm-card{padding:17px;min-width:0;display:grid;gap:10px;align-content:start}
+.dm-card h4{font-size:1rem;line-height:1.3;margin:0;color:var(--text)}
+.dm-card p,.dm-card small{color:var(--muted);line-height:1.52;margin:0}
+.dm-card .dm-tag{justify-self:start}
+.dm-card .dm-link-btn{justify-self:start;margin-top:auto}
+.dm-card-click{cursor:pointer;color:inherit;text-decoration:none}
+.dm-card-click:hover{border-color:var(--dm-accent);background:color-mix(in srgb,var(--dm-accent) 5%,var(--surface))}
+.dm-card-icon{display:grid;place-items:center;align-self:start;width:42px;height:42px;background:color-mix(in srgb,var(--dm-accent) 10%,var(--surface));border-radius:13px;color:var(--dm-accent);font-size:22px}
+.dm-tag{display:inline-block;padding:5px 9px;border:1px solid var(--border);background:var(--surface-2);border-radius:999px;color:var(--muted);font-size:11px;font-weight:750}
+.dm-tag.warning{background:color-mix(in srgb,#e9a83a 12%,var(--surface));color:var(--text)}
+.dm-tag.success{background:color-mix(in srgb,#1d9667 13%,var(--surface));color:var(--text)}
+.dm-panel{padding:21px;min-width:0}
+.dm-panel h4{margin:0 0 13px;font-size:1.04rem}
+.dm-panel p{line-height:1.58}
+.dm-notice{padding:14px 17px;display:flex;gap:11px;align-items:flex-start;line-height:1.5;color:var(--muted)}
+.dm-notice strong{color:var(--text)}
+.dm-notice.attention{border-color:color-mix(in srgb,#c9851c 43%,var(--border))}
+.dm-form-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.dm-field{display:grid;align-content:start;gap:6px;min-width:0}
+.dm-field>label{font-weight:750;font-size:.83rem;color:var(--text)}
+.dm-field input,.dm-field select,.dm-field textarea,.dm-filter{width:100%;border:1px solid var(--border);background:var(--surface-2);color:var(--text);padding:11px 12px;min-height:43px;border-radius:11px}
+.dm-field small{font-size:11px;color:var(--muted);line-height:1.4}
+.dm-med-picker{display:grid;grid-template-columns:minmax(200px,2fr) minmax(160px,1fr) auto;gap:11px;align-items:end}
+.dm-med-picker .dm-btn{min-height:43px}
+.dm-row{display:flex;gap:10px;align-items:center;justify-content:space-between}
+.dm-row.wrap{flex-wrap:wrap}
+.dm-separator{border:0;border-top:1px solid var(--border);margin:16px 0}
+.dm-selected{display:grid;gap:8px}
+.dm-selected-item{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:11px}
+.dm-selected-item strong{display:block;font-size:.92rem}
+.dm-selected-item small{color:var(--muted)}
+.dm-remove{border-radius:9px;border:1px solid var(--border);color:var(--text);background:var(--surface);padding:7px 10px;cursor:pointer;min-height:36px}
+.dm-metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.dm-metric{padding:15px;background:var(--surface-2);border-radius:13px;min-width:0}
+.dm-metric span{font-size:.76rem;color:var(--muted);display:block}
+.dm-metric strong{display:block;font-weight:850;font-size:clamp(1.25rem,2vw,1.8rem);line-height:1.35;color:var(--text);font-variant-numeric:tabular-nums}
+.dm-muted{font-size:.83rem;color:var(--muted);line-height:1.55}
+.dm-result{display:grid;gap:13px}
+.dm-result-key{font-size:1.15rem;font-weight:850;color:var(--text);margin:0}
+.dm-callout{padding:13px;border-radius:12px;background:color-mix(in srgb,var(--dm-accent) 7%,var(--surface));border:1px solid color-mix(in srgb,var(--dm-accent) 17%,var(--border));line-height:1.55}
+.dm-warning-list{margin:0;padding-left:21px;color:var(--text);line-height:1.65}
+.dm-warning-list li{margin:5px 0}
+.dm-pharm-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.dm-pharm-card{border:1px solid var(--border);border-radius:14px;padding:15px;background:var(--surface);display:grid;gap:10px;min-width:0}
+.dm-pharm-card h4{margin:0 0 4px;font-size:1rem}
+.dm-pharm-card p{margin:0;color:var(--muted);line-height:1.45;font-size:.86rem}
+.dm-pharm-card dl{display:grid;grid-template-columns:110px 1fr;gap:6px 12px;font-size:.8rem;margin:0}
+.dm-pharm-card dt{color:var(--muted)}.dm-pharm-card dd{margin:0;color:var(--text);overflow-wrap:anywhere}
+.dm-search-panel{display:grid;gap:12px}
+.dm-search-panel input{width:100%;border:1px solid var(--border);background:var(--surface);color:var(--text);padding:12px 14px;border-radius:12px;min-height:44px}
+.dm-topics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.dm-topic{border:1px solid var(--border);border-radius:12px;background:var(--surface);padding:13px;display:grid;gap:7px}
+.dm-topic h4{margin:0;font-size:.96rem}
+.dm-topic p{margin:0;color:var(--muted);font-size:.81rem;line-height:1.5}
+.dm-topic a{color:var(--dm-accent);font-weight:750;text-decoration:none;font-size:.82rem}
+.dm-topic a:hover{text-decoration:underline}
+.dm-quick-links{display:flex;flex-wrap:wrap;gap:9px}
+.dm-quick-links a{color:var(--dm-accent);text-decoration:none;border:1px solid var(--border);padding:10px 12px;border-radius:10px;font-weight:750;background:var(--surface)}
+.dm-quick-links a:hover{border-color:var(--dm-accent)}
+.dm-cgm-bar{display:flex;width:100%;height:23px;border-radius:9px;overflow:hidden}
+.dm-cgm-bar>span{height:100%}
+.dm-table{width:100%;border-collapse:collapse;color:var(--text)}
+.dm-table th,.dm-table td{font-size:.84rem;text-align:left;padding:11px;border-bottom:1px solid var(--border);vertical-align:top}
+.dm-table th{color:var(--muted);font-size:.74rem;letter-spacing:.03em}
+.dm-empty{padding:15px;border-radius:12px;background:var(--surface-2);color:var(--muted);font-size:.9rem;line-height:1.55}
+.dm-source a{overflow-wrap:anywhere;color:var(--dm-accent)}
+@media(max-width:1100px){.dm-grid.four{grid-template-columns:repeat(2,minmax(0,1fr))}.dm-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:750px){.diabetes-app{gap:13px}.dm-hero{padding:18px;display:grid}.dm-hero-actions{justify-content:flex-start}.dm-grid,.dm-grid.two,.dm-grid.four,.dm-pharm-grid,.dm-topics,.dm-form-grid,.dm-metric-grid{grid-template-columns:1fr}.dm-med-picker{grid-template-columns:1fr}.dm-panel{padding:16px}.dm-nav{margin-right:-12px;padding-right:12px}.dm-selected-item{align-items:flex-start}.dm-pharm-card dl{grid-template-columns:90px 1fr}.dm-table th,.dm-table td{font-size:.74rem;padding:8px 5px}}
+@media(prefers-reduced-motion:reduce){.diabetes-app *{transition:none!important;scroll-behavior:auto!important}}
