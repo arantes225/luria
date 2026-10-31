@@ -38,3 +38,25 @@ test('installed safe-area styles are static, detection keeps JS free of layout C
   assert.doesNotMatch(pwa,/createElement\(["']style["']\)/);
   assert.match(fs.readFileSync('assets/css/ui-app.css','utf8'),/safe-area-inset-top/);
 });
+
+test('Leco mascot card keeps every voice action centered on desktop and mobile',()=>{
+  const css=fs.readFileSync('assets/css/review-continuation-20261022.css','utf8');
+  const rules=postcss.parse(css);
+  let found=false;
+  rules.walkRules(rule=>{
+    if(rule.selector.trim()!=='html body[data-page="professor_alex"] .alex-top-action-bar')return;
+    const properties=Object.fromEntries(rule.nodes.filter(node=>node.type==='decl').map(node=>[node.prop,node.value]));
+    assert.equal(properties['justify-content'],'center');
+    assert.equal(properties['align-items'],'center');
+    assert.equal(properties['flex-wrap'],'wrap');
+    assert.equal(properties['width'],'100%');
+    assert.equal(properties['gap'],'10px');
+    found=true;
+  });
+  assert.ok(found,'Leco action bar has a page-scoped centering rule');
+  const brand=fs.readFileSync('assets/js/luria-brand-v5.js','utf8');
+  const page=fs.readFileSync('professor-alex/index.html','utf8');
+  assert.match(brand,/20261031-leco-actions-center1/);
+  assert.match(page,/luria-brand-v5\.js\?v=20261031-leco-actions-center1/);
+  assert.match(page,/pwa\.js\?v=20261031-leco-actions-center1/);
+});
