@@ -18,6 +18,23 @@ let renderedHistoryUser = null;
 let alexSiteIndexPromise = null;
 let liveTranscriptConfidence = null;
 let liveTranscriptFromSpeech = false;
+
+// The small mic button uses the page's dictation recognizer, separate from
+// live conversation. Both must mark actual STT turns for phonetic correction.
+window.addEventListener("luria:leco:dictation", event => {
+  const transcript = String(event?.detail?.transcript || "").trim();
+  if (!transcript) return;
+  liveTranscriptFromSpeech = true;
+  const confidence = Number(event?.detail?.confidence);
+  liveTranscriptConfidence = Number.isFinite(confidence) && confidence > 0 && confidence <= 1 ? confidence : null;
+});
+document.getElementById("alex-prompt")?.addEventListener("input", () => {
+  // If someone edits the dictation before sending, treat their new text as
+  // intentional typing, not an uncertain transcription.
+  if (!liveTranscriptFromSpeech) return;
+  liveTranscriptFromSpeech = false;
+  liveTranscriptConfidence = null;
+});
 let speechGeneration = 0;
 let conversationTurn = 0;
 let activeResponseController = null;
