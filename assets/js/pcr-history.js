@@ -149,7 +149,7 @@
       if(initial && !owner)location.replace("/login/?next="+encodeURIComponent("/trabalho/pcr/historico/"));
     }
   }
-  window.addEventListener("luria:owner-changed",()=>{activate();});
+  window.addEventListener("traube:owner-changed",()=>{activate();});
   window.addEventListener("pagehide",()=>{
     generation += 1; owner=null; patients=[]; records=[]; editing=null;
     $("pcr-history-list").replaceChildren(); $("pcr-edit-fields").replaceChildren();

@@ -20,14 +20,14 @@
         panels[index].inert = !active;
       });
       
-      window.dispatchEvent(new CustomEvent('luria:community-tab',{detail:{area}}));
+      window.dispatchEvent(new CustomEvent('traube:community-tab',{detail:{area}}));
     }
     const fromHash = () => {
-      if(!location.hash.startsWith('#room='))window.dispatchEvent(new CustomEvent('luria:room-exit'));
+      if(!location.hash.startsWith('#room='))window.dispatchEvent(new CustomEvent('traube:room-exit'));
       activate(location.hash === "#community-rooms" || location.hash.startsWith("#room=") ? "rooms" : location.hash === "#community-groups" ? "groups" : "friends");
     };
     function navigate(area, leaveRoom = false) {
-      if(leaveRoom)window.dispatchEvent(new CustomEvent('luria:room-exit'));
+      if(leaveRoom)window.dispatchEvent(new CustomEvent('traube:room-exit'));
       activate(area);
       const hash = "#community-" + area;
       // The page has <base href="/">; bare fragments would otherwise open the root.
@@ -52,7 +52,7 @@
     });
     window.addEventListener("hashchange", fromHash);
     window.addEventListener("popstate", fromHash);
-    window.addEventListener("luria:open-rooms", () => navigate("rooms"));
+    window.addEventListener("traube:open-rooms", () => navigate("rooms"));
     document.addEventListener("click", event => {
       const btn = event.target.closest("[data-open-community]");
       if (btn) {
@@ -65,7 +65,7 @@
       event.preventDefault();
       navigate("friends", true);
       const panel = document.getElementById("friends-ref-add-panel");
-      window.dispatchEvent(new CustomEvent("luria:visual-open",{detail:"sf-add-dialog"}));
+      window.dispatchEvent(new CustomEvent("traube:visual-open",{detail:"sf-add-dialog"}));
       document.getElementById("community-friends")?.scrollIntoView({ behavior: "smooth", block: "start" });
       document.getElementById("friend-id-input")?.focus({ preventScroll: true });
     });

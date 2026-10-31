@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-CcdaurabFHt8p/RzxHCquLDzqXh7Lv2/SW40tpNzDM8='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'none'; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-Kh9aJrQYcXOj7THWOFTTkBnCh70VMpZasNpzunHJPEY='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'none'; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Gestante animada — prévia TRAUBE</title>
 <link rel="stylesheet" href="/assets/css/emergency-case.css?v=20261014-pregnant1">
@@ -38,7 +38,7 @@ button[aria-pressed=true]{background:#184888;color:white;border-color:#184888}
 </div>
 <div id="plantao-simulator">
   <section class="plantao-scene" aria-label="Gestante no leito">
-    <img id="plantao-patient-image" src="/assets/img/plantao/gestante_acordada_triste_1300x900_100kb.webp" data-luria-eyes="auto" data-luria-rr="16" alt="Gestante acordada no leito" width="1300" height="900">
+    <img id="plantao-patient-image" src="/assets/img/plantao/gestante_acordada_triste_1300x900_100kb.webp" data-traube-eyes="auto" data-traube-rr="16" alt="Gestante acordada no leito" width="1300" height="900">
   </section>
 </div>
 <p class="help">A imagem principal fica parada. Somente a região dos olhos e o tórax/abdômen recebem movimento. Os botões simulam a consciência e a frequência respiratória do atendimento.</p>
@@ -49,10 +49,10 @@ button[aria-pressed=true]{background:#184888;color:white;border-color:#184888}
 const img=document.getElementById("plantao-patient-image");
 const scene=img.closest(".plantao-scene");
 function setGroup(ids,selected){ids.forEach(id=>document.getElementById(id).setAttribute("aria-pressed",String(id===selected)))}
-document.getElementById("eyes-auto").onclick=()=>{img.dataset.luriaEyes="auto";setGroup(["eyes-auto","eyes-closed"],"eyes-auto")};
-document.getElementById("eyes-closed").onclick=()=>{img.dataset.luriaEyes="closed";setGroup(["eyes-auto","eyes-closed"],"eyes-closed")};
+document.getElementById("eyes-auto").onclick=()=>{img.dataset.traubeEyes="auto";setGroup(["eyes-auto","eyes-closed"],"eyes-auto")};
+document.getElementById("eyes-closed").onclick=()=>{img.dataset.traubeEyes="closed";setGroup(["eyes-auto","eyes-closed"],"eyes-closed")};
 for(const [id,rr] of [["rr-normal",16],["rr-fast",26],["rr-stop",0]]) {
- document.getElementById(id).onclick=()=>{img.dataset.luriaRr=String(rr);setGroup(["rr-normal","rr-fast","rr-stop"],id)}
+ document.getElementById(id).onclick=()=>{img.dataset.traubeRr=String(rr);setGroup(["rr-normal","rr-fast","rr-stop"],id)}
 }
 document.getElementById("mode").onclick=e=>{
  const portrait=e.currentTarget.getAttribute("aria-pressed")!=="true";

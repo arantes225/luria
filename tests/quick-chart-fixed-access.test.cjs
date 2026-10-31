@@ -97,5 +97,5 @@ test("API usa hash com salt, exige aprovação por PC e revogação invalidante"
   assert.match(mobile,/id="quick-chart-active-sessions"/);
   assert.match(mobile,/quick-chart-ocr\.js/);
   assert.match(desktop,/role="tablist"/);
-  assert.match(desktop,/maxlength="4" name="luria-access-code"/);
+  assert.match(desktop,/maxlength="4" name="traube-access-code"/);
 });

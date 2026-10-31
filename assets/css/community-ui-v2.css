@@ -1,5 +1,5 @@
 /* Community presentation only. RPCs, rat controls and room storage retain their owners. */
-@layer luria-ui-education {
+@layer traube-ui-education {
   body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .community-page {display:block!important;}
   body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .community-header {display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1.5rem;}
   body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .community-header h1 {margin:.375rem 0 .5rem;}

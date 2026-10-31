@@ -28,6 +28,6 @@ Capturas reais: browser-results/native-activities e browser-results/group-commun
 - A revisão coletiva de flashcards não altera automaticamente o agendamento individual de repetição espaçada; a interface informa isso.
 - Materiais de grupos neste bloco aceitam links HTTPS; upload de arquivos para o grupo não foi implementado.
 - Advisor trouxe apenas informação de RLS sem políticas para a tabela privada de respostas (acesso direto intencionalmente revogado). Avisos antigos de outras áreas permanecem fora do escopo.
-- Configuração Plus e concessão de 7 dias à conta luriamed ocorreram somente na homologação, com aprovação explícita. Nenhum plano de produção foi alterado.
+- Configuração Plus e concessão de 7 dias à conta traubemed ocorreram somente na homologação, com aprovação explícita. Nenhum plano de produção foi alterado.
 
 Git push local falhou no gerenciador de credenciais do Windows. Publicação realizada pela integração GitHub, com comparação integral de tree e atualização sem force mediante SHA esperado. O primeiro pacote excedeu o orçamento da revisão automática e não executou; divisão por arquivos resolveu o limite, sem desativar a revisão.

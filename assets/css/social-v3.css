@@ -1,10 +1,10 @@
 /* Scoped social presentation. Shared shell, tokens and sprite geometry remain owned by TRAUBE. */
-@layer luria-ui-education {
+@layer traube-ui-education {
  body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3 {
   .social-heading,.social-card-head,.social-room-header {display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;}
   .social-heading {float:right;margin:0 0 8px 8px;}
   .social-heading p {display:none;}
-  .luria-page-spotlight-helper {display:none!important;}
+  .traube-page-spotlight-helper {display:none!important;}
   .social-heading p,.social-card-head p,.social-room-header p {margin:4px 0;color:var(--color-text-secondary);font-size:13px;line-height:1.5;}
   .community-nav {display:inline-flex!important;flex-wrap:nowrap!important;margin-bottom:8px;width:auto;height:auto!important;max-height:none!important;overflow:visible!important;position:static!important;}
   .community-nav a[aria-selected="true"] {background:var(--color-surface)!important;color:var(--color-primary)!important;border-color:var(--color-border)!important;}

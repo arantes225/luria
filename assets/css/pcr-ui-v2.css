@@ -1,5 +1,5 @@
 /* Opt-in visual layer outranks legacy locks; business and clinical states retain their existing owners. */
-@layer luria-pcr-ui {
+@layer traube-pcr-ui {
  body[data-ui-pcr="v2"]{--pcr-critical:#B40000;font-family:var(--ui-font-family)!important}
  body[data-ui-pcr="v2"] :is(.pcr-page,.pcr-entry,.pcr-history-page,.pcr-column,.pcr-column>*,.pcr-controlbar>*,.pcr-statusbar>*){min-width:0!important;box-sizing:border-box!important}
  body[data-ui-pcr="v2"] .pcr-page{display:grid!important;grid-template-rows:none!important;gap:16px!important}

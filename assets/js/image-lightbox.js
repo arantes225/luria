@@ -21,8 +21,8 @@
     }
 
     if (
-      img.id === "luria-brand-logo"
-      || img.classList.contains("luria-theme-logo")
+      img.id === "traube-brand-logo"
+      || img.classList.contains("traube-theme-logo")
       || img.classList.contains("brand-logo-single")
     ) {
       return false;

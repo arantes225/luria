@@ -26,7 +26,7 @@
   }
 
   if (!("serviceWorker" in navigator)) return;
-  // The standalone /luria/ project URL is an online fallback; its legacy SW
+  // The standalone /traube/ project URL is an online fallback; its legacy SW
   // assumes origin-root URLs. Do not install a worker with invalid cache scope.
   if (new URL(document.baseURI).pathname !== "/") return;
 
@@ -35,7 +35,7 @@
 
   
 
-  const refreshKey = "luria:pwa:activated:" + release;
+  const refreshKey = "traube:pwa:activated:" + release;
   let reloadPending = false;
   const hadController = !!navigator.serviceWorker.controller;
 
@@ -47,9 +47,9 @@
   }
 
   function showUpdateAction() {
-    if (document.getElementById("luria-pwa-update-action")) return;
+    if (document.getElementById("traube-pwa-update-action")) return;
     const notice = document.createElement("aside");
-    notice.id = "luria-pwa-update-action";
+    notice.id = "traube-pwa-update-action";
     notice.setAttribute("role", "status");
     notice.setAttribute("aria-live", "polite");
     notice.style.cssText = "position:fixed;bottom:calc(var(--ui-bottom-navigation,env(safe-area-inset-bottom,0px)) + 12px);left:12px;right:12px;z-index:2147483646;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-radius:16px;background:#172033;color:#fff;box-shadow:0 8px 32px #0004;font:14px system-ui";
@@ -78,7 +78,7 @@
   async function registerLatestWorker() {
     try {
       registrationPromise ||= navigator.serviceWorker.register(
-        (window.luriaSitePath?.("/service-worker.js?v=" + release) || "/service-worker.js?v=" + release),
+        (window.traubeSitePath?.("/service-worker.js?v=" + release) || "/service-worker.js?v=" + release),
         { scope: (new URL(document.baseURI)).pathname, updateViaCache: "none" }
       );
       const registration = await registrationPromise;

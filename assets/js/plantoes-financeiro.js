@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const STORAGE_KEY = "luria_plantoes_shifts_v1";
+  const STORAGE_KEY = "traube_plantoes_shifts_v1";
 
   function getShifts() {
     try {

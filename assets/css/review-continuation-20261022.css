@@ -2,24 +2,24 @@
    page-scoped and only adjust presentation around the existing TRAUBE markup. */
 
 /* Shared title cards and back actions. */
-body .luria-page-spotlight.review-title-card {
+body .traube-page-spotlight.review-title-card {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
   gap: 18px !important;
 }
-body .luria-page-spotlight.review-title-card .luria-page-spotlight-copy {
+body .traube-page-spotlight.review-title-card .traube-page-spotlight-copy {
   min-width: 0 !important;
 }
-body .luria-page-spotlight.review-title-card .review-back-in-spotlight {
+body .traube-page-spotlight.review-title-card .review-back-in-spotlight {
   margin: 0 0 0 auto !important;
   flex: 0 0 auto !important;
 }
 
-@layer luria-ui-education {
+@layer traube-ui-education {
   /* Back actions moved into the title card must fit its content on mobile. */
   @media(max-width:720px) {
-    body[data-ui="v2"][data-ui-context="study"] .main .luria-page-spotlight.review-title-card {
+    body[data-ui="v2"][data-ui-context="study"] .main .traube-page-spotlight.review-title-card {
       height:auto!important;
       max-height:none!important;
       min-height:118px!important;
@@ -28,12 +28,12 @@ body .luria-page-spotlight.review-title-card .review-back-in-spotlight {
       justify-content:flex-start!important;
       gap:16px!important;
     }
-    body[data-ui="v2"][data-ui-context="study"] .main .review-title-card .luria-page-spotlight-copy {
+    body[data-ui="v2"][data-ui-context="study"] .main .review-title-card .traube-page-spotlight-copy {
       flex:0 1 auto!important;
       width:100%!important;
       min-width:0!important;
     }
-    body[data-ui="v2"][data-ui-context="study"] .main .review-title-card .luria-back-button {
+    body[data-ui="v2"][data-ui-context="study"] .main .review-title-card .traube-back-button {
       align-self:flex-start!important;
       margin:0!important;
       max-width:100%!important;
@@ -161,7 +161,7 @@ body[data-page="erros"] #error-daily-review-open {
   min-height: 48px !important;
   border-radius: 999px !important;
   background: var(--ui-pill-gradient, linear-gradient(135deg, #4fc3f7, #7687ff)) !important;
-  color: var(--luria-btn-text-blue, #08101f) !important;
+  color: var(--traube-btn-text-blue, #08101f) !important;
   border-color: transparent !important;
   font-weight: 800 !important;
 }
@@ -275,7 +275,7 @@ body[data-page="jogos"] .e-back-button,
 body[data-page="jogos"] .g-button:not(.g-secondary) {
   border-radius: 999px !important;
   background: var(--ui-pill-gradient, linear-gradient(135deg, #4fc3f7, #7687ff)) !important;
-  color: var(--luria-btn-text-blue, #08101f) !important;
+  color: var(--traube-btn-text-blue, #08101f) !important;
   border-color: transparent !important;
   font-weight: 800 !important;
 }
@@ -371,7 +371,7 @@ body[data-page="study-rats"] .sr-hall-button--secondary {
   border-color: transparent !important;
   border-radius: 12px !important;
   background: var(--ui-pill-gradient, linear-gradient(135deg, #4fc3f7, #7687ff)) !important;
-  color: var(--luria-btn-text-blue, #08101f) !important;
+  color: var(--traube-btn-text-blue, #08101f) !important;
   font-weight: 800 !important;
   box-shadow: 0 8px 20px color-mix(in srgb, var(--accent, #4fc3f7) 26%, transparent) !important;
 }
@@ -382,8 +382,8 @@ body[data-page="study-rats"] .sr-hall-button--secondary:hover:not(:disabled) {
 }
 
 @media (max-width: 720px) {
-  body .luria-page-spotlight.review-title-card { align-items: flex-start !important; flex-direction: column !important; }
-  body .luria-page-spotlight.review-title-card .review-back-in-spotlight { margin: 0 !important; }
+  body .traube-page-spotlight.review-title-card { align-items: flex-start !important; flex-direction: column !important; }
+  body .traube-page-spotlight.review-title-card .review-back-in-spotlight { margin: 0 !important; }
   body[data-page="jogos"] .g-top { align-items: flex-start !important; flex-direction: column !important; }
   body[data-page="jogos"] .g-top .g-edition { margin-left: auto !important; }
   body[data-page="jogos"] .games-section-label { align-items: flex-start !important; flex-direction: column !important; gap: 4px !important; }
@@ -454,7 +454,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .month-planner > :las
 /* Aprender: every action is a filled button using its card's theme color. */
 body[data-page="aprender"] .learn-tools .tool-card[data-resource="apostilas"] { --tool-accent: #2387d9; }
 body[data-page="aprender"] .learn-tools .tool-card[data-resource="notes"] { --tool-accent: #7657c7; }
-body[data-page="aprender"] .learn-tools .tool-card[data-resource="luriazap"] { --tool-accent: #16a394; }
+body[data-page="aprender"] .learn-tools .tool-card[data-resource="traubezap"] { --tool-accent: #16a394; }
 body[data-page="aprender"] .learn-tools .tool-card[data-resource="feynman"] { --tool-accent: #e07a32; }
 body[data-page="aprender"] .learn-tools .tool-card .tool-cta {
   background: linear-gradient(135deg, color-mix(in srgb, var(--tool-accent, var(--accent)) 78%, white), var(--tool-accent, var(--accent))) !important;
@@ -480,7 +480,7 @@ body[data-ui="v2"][data-ui-context="study"][data-page="aprender"] .main .learn-t
   background-color: #7657c7 !important;
   color: #fff !important;
 }
-body[data-ui="v2"][data-ui-context="study"][data-page="aprender"] .main .learn-tools .tool-card[data-resource="luriazap"] .tool-cta {
+body[data-ui="v2"][data-ui-context="study"][data-page="aprender"] .main .learn-tools .tool-card[data-resource="traubezap"] .tool-cta {
   background: #16a394 !important;
   background-color: #16a394 !important;
   color: #fff !important;

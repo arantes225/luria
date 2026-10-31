@@ -70,8 +70,8 @@ import { createClient } from "npm:@supabase/supabase-js@2.110.6";
 // inlined prompts.ts
 
 const ALLOWED_ORIGINS = new Set([
-  "https://www.luriamedicina.com.br",
-  "https://luriamedicina.com.br",
+  "https://www.traubemedicina.com.br",
+  "https://traubemedicina.com.br",
   "https://resibulando.online",
   "https://www.resibulando.online",
   "https://arantes225.github.io",
@@ -300,7 +300,7 @@ Deno.serve(async (req: Request) => {
   const voiceQuality = data.voice_quality === "natural" ? "natural" : "fast";
   const isVoiceInput = data.voice_input === true;
   const depth = data.depth === "aula" ? "aula" : "rapida";
-  const sourceMode = data.source_mode === "luria_site" ? "luria_site" : "general";
+  const sourceMode = data.source_mode === "traube_site" ? "traube_site" : "general";
   const siteContext = String(data.site_context || "").trim().slice(0, MAX_SITE_CONTEXT_CHARS);
   const voiceConfidence = data.voice_confidence == null ? NaN : Number(data.voice_confidence);
   const area = String(data.area || "").trim().slice(0, 120);
@@ -366,10 +366,10 @@ Deno.serve(async (req: Request) => {
     }
   }
 
-  if (sourceMode === "luria_site" && !siteContext && (file === undefined || file === null)) {
+  if (sourceMode === "traube_site" && !siteContext && (file === undefined || file === null)) {
     return json({ clarification: "Não encontrei esse termo no conteúdo da TRAUBE. Reformule a pergunta ou indique a matéria.", clarification_code: "site_content_not_found" }, 200, headers);
   }
-  if (sourceMode === "luria_site" && siteContext) {
+  if (sourceMode === "traube_site" && siteContext) {
     userParts.unshift({ text: "Trechos recuperados exclusivamente do acervo público da TRAUBE. Use somente estes trechos como base factual; se forem insuficientes, diga isso em vez de completar com conhecimento externo:\n" + siteContext });
   }
 
@@ -384,7 +384,7 @@ Deno.serve(async (req: Request) => {
     ? getFeynmanSystemInstruction(feynmanAction, feynmanMode, topic || "tema médico", channel)
     : getAlexSystemInstruction(mode, channel) + (depth === "aula"
       ? "\n\nFORMATO AULA COMPLETA: quando o aluno pedir ensino médico, explique com raciocínio clínico, fisiopatologia, diagnóstico, conduta e exemplos pertinentes. Não force uma aula em cumprimentos ou conversas sociais."
-      : "\n\nFORMATO DÚVIDA RÁPIDA: priorize uma resposta imediata, direta e natural. Cumprimentos: uma frase curta. Dúvida factual simples: até três frases. Só aprofunde se a pergunta realmente exigir, sem comprometer segurança clínica.") + (sourceMode === "luria_site" ? "\n\nFONTE RESTRITA: responda somente com base nos trechos do acervo TRAUBE enviados nesta requisição. Não use busca externa nem preencha lacunas com uma aula genérica." : "");
+      : "\n\nFORMATO DÚVIDA RÁPIDA: priorize uma resposta imediata, direta e natural. Cumprimentos: uma frase curta. Dúvida factual simples: até três frases. Só aprofunde se a pergunta realmente exigir, sem comprometer segurança clínica.") + (sourceMode === "traube_site" ? "\n\nFONTE RESTRITA: responda somente com base nos trechos do acervo TRAUBE enviados nesta requisição. Não use busca externa nem preencha lacunas com uma aula genérica." : "");
 
   // Detect other likely phonetic ambiguities in the existing Gemini response,
   // without an additional provider call or guessing a diagnosis automatically.

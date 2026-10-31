@@ -24,7 +24,7 @@ function fixture() {
       }
     }
   };
-  vm.runInNewContext(source('assets/js/luria-lazy-vendors.js'), { window, document });
+  vm.runInNewContext(source('assets/js/traube-lazy-vendors.js'), { window, document });
   return { scripts, window };
 }
 
@@ -123,9 +123,9 @@ test('All supported page entrypoints defer optional libraries to their import/ex
   for (const [page, file] of pages) {
     const html = source(page);
     const scriptSrc = [...html.matchAll(/<script\b[^>]*\bsrc="([^"]+)"[^>]*>/g)].map(m => m[1]);
-    assert.ok(scriptSrc.some(s => s.includes('luria-lazy-vendors.js')), page + ': missing loader');
+    assert.ok(scriptSrc.some(s => s.includes('traube-lazy-vendors.js')), page + ': missing loader');
     assert.ok(scriptSrc.some(s => s.includes(path.basename(file))), page + ': missing entrypoint');
-    assert.ok(scriptSrc.findIndex(s => s.includes('luria-lazy-vendors.js'))
+    assert.ok(scriptSrc.findIndex(s => s.includes('traube-lazy-vendors.js'))
       < scriptSrc.findIndex(s => s.includes(path.basename(file))), page + ': loader must execute first');
     assert.equal(scriptSrc.some(src => optional.test(src)), false, page + ': eager optional dependency');
   }

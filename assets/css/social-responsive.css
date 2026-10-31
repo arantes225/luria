@@ -1,5 +1,5 @@
 /* Cross-theme compact/PWA refinements. No global shell or account state changes. */
-@layer luria-ui-education {
+@layer traube-ui-education {
 body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1 {
  :is(.social-row-copy,.friend-copy,.sg-title,.social-room-card,.sv-room-identity)>:is(strong,h3,p) {overflow-wrap:anywhere;}
  :is(.sv-dialog,#social-dialog) {max-width:calc(100vw - 24px);max-height:calc(100dvh - 32px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));overscroll-behavior:contain;scroll-padding-block:16px;}

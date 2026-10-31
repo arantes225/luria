@@ -2,14 +2,14 @@
   "use strict";
   const sb = window.supabaseClient;
   let ownerGeneration = 0;
-  window.addEventListener("luria:owner-changed", () => { ownerGeneration += 1; });
+  window.addEventListener("traube:owner-changed", () => { ownerGeneration += 1; });
   function assertSession(generation, ownerId) {
     const owned = window.TraubeLocalOwnerStore;
     if (generation !== ownerGeneration || (owned && ownerId && owned.ownerId !== ownerId)) {
       throw new Error("A sessão mudou. Retome a PCR na conta correspondente.");
     }
   }
-  const key = userId => "luria_pcr_draft_v1_" + userId;
+  const key = userId => "traube_pcr_draft_v1_" + userId;
   async function user() {
     const generation = ownerGeneration;
     await window.TraubeLocalOwnerStore?.ready;
@@ -70,7 +70,7 @@
     write("Linha do tempo", true);
     [...(record.events || [])].reverse().forEach(event => write(event.clock + " · " + event.elapsed + " · " + event.action + (event.detail ? " — " + event.detail : "")));
     doc.setFontSize(8); write("Registro gerado pelo TRAUBE. Conferir o registro clínico institucional.");
-    doc.save("luria-pcr-" + record.id + ".pdf");
+    doc.save("traube-pcr-" + record.id + ".pdf");
   }
   window.TraubePCRStore = {user,readDraft,writeDraft,removeDraft,save,pdf};
 })();

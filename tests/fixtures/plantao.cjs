@@ -24,7 +24,7 @@ async function fixture({cases=defaultCases,session=null}={}){
  win.setInterval=()=>1;
  win.HTMLElement.prototype.scrollIntoView=function(){};
  const shellSource=fs.readFileSync(path.join(root,'assets/js/app.js'),'utf8');
- const urlStart=shellSource.indexOf('function luriaSafeContentUrl(');
+ const urlStart=shellSource.indexOf('function traubeSafeContentUrl(');
  win.eval(shellSource.slice(urlStart,shellSource.indexOf('\nfunction escapeHtml(',urlStart)));
  win.eval(fs.readFileSync(path.join(root,'assets/js/plantao.js'),'utf8'));
  await new Promise(r=>setTimeout(r,0));

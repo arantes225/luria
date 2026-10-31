@@ -688,7 +688,7 @@ body[data-page="editais"] .editais-title-spotlight-label{
   letter-spacing:.08em;
   text-transform:uppercase;
 }
-body[data-page="editais"] .editais-title-spotlight .luria-page-spotlight-copy strong{
+body[data-page="editais"] .editais-title-spotlight .traube-page-spotlight-copy strong{
   font-size:32px!important;
   line-height:1.08!important;
   font-weight:900!important;
@@ -701,7 +701,7 @@ body[data-page="editais"] .editais-title-spotlight .luria-page-spotlight-copy st
     max-height:118px!important;
     padding:20px!important;
   }
-  body[data-page="editais"] .editais-title-spotlight .luria-page-spotlight-copy strong{
+  body[data-page="editais"] .editais-title-spotlight .traube-page-spotlight-copy strong{
     font-size:25px!important;
   }
 }

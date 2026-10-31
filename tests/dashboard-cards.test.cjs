@@ -9,7 +9,7 @@ const preferenceCode=fs.readFileSync('assets/js/dashboard-preferences.js','utf8'
 const settingsCode=fs.readFileSync('assets/js/dashboard-layout-settings.js','utf8');
 const app=fs.readFileSync('assets/js/app.js','utf8');
 const featureCheck=app.slice(app.indexOf('function temFeature('),app.indexOf('function limiteFeature('));
-const preference='luria:dashboard-layout';
+const preference='traube:dashboard-layout';
 function fixture({owner='A',storage=new Map(),failure=false,entitlements=null,admin=false}={}) {
   const dom=new JSDOM(html,{runScripts:'outside-only',pretendToBeVisual:true,url:'http://fixture.invalid/dashboard/'});
   const w=dom.window,d=w.document;let id=owner;
@@ -22,7 +22,7 @@ function fixture({owner='A',storage=new Map(),failure=false,entitlements=null,ad
     remove:base=>storage.delete(base+':'+id)
   };
   w.fetch=()=>{throw Error('Presentation must not fetch');};
-  const metrics={answered:12};w.luriaDashboardMetrics=metrics;
+  const metrics={answered:12};w.traubeDashboardMetrics=metrics;
   const root=d.createElement('div');root.id='dashboard-alternative';root.innerHTML='<button id="classic-action">Existing action</button>';d.querySelector('.topbar').after(root);
   let actions=0;const original=root.firstElementChild;original.onclick=()=>actions++;
   const settingsDom=new JSDOM(settingsHtml);d.body.insertAdjacentHTML('beforeend',settingsDom.window.document.querySelector('.dashboard-layout-setting').outerHTML);settingsDom.window.close();
@@ -30,7 +30,7 @@ function fixture({owner='A',storage=new Map(),failure=false,entitlements=null,ad
   w.eval(featureCheck);w.eval(preferenceCode);w.eval(settingsCode);w.eval(code);
   return {dom,w,d,storage,root,original,metrics,alerts,actions:()=>actions,
     choose:view=>d.querySelector(`#dashboard-layout-options input[value="${view}"]`).click(),
-    owner:value=>{id=value;w.docmapUser=value?{id:value}:null;w.dispatchEvent(new w.Event('luria:owner-changed'));}};
+    owner:value=>{id=value;w.docmapUser=value?{id:value}:null;w.dispatchEvent(new w.Event('traube:owner-changed'));}};
 }
 test('only two Settings choices; changing preference preserves classic DOM, actions and metrics',()=>{
   const f=fixture();try{
@@ -39,7 +39,7 @@ test('only two Settings choices; changing preference preserves classic DOM, acti
     assert.equal(f.d.body.dataset.dashboardView,'classic');
     for(let i=0;i<10;i++){f.choose('cards');f.choose('classic');}
     f.original.click();assert.equal(f.actions(),1);assert.equal(f.root.firstElementChild,f.original);
-    assert.equal(f.w.luriaDashboardMetrics,f.metrics);assert.deepEqual(f.metrics,{answered:12});
+    assert.equal(f.w.traubeDashboardMetrics,f.metrics);assert.deepEqual(f.metrics,{answered:12});
     f.choose('cards');assert.equal(f.d.getElementById('dashboard-apps').hidden,false);
     assert.equal(f.d.querySelector('#dashboard-layout-options input:checked').value,'cards');
   }finally{f.dom.window.close();}
@@ -58,12 +58,12 @@ test('Settings and Dashboard share one preference across reload, accounts and st
 });
 test('numeric retired and invalid preferences migrate to Classic; guests and temporary selector are not adopted',()=>{
   for(const old of ['1','2','3','4','5','0','broken','',null]){
-    const storage=new Map([['luria:dashboard-view:v1:A','cards'],[preference+':guest','cards']]);
+    const storage=new Map([['traube:dashboard-view:v1:A','cards'],[preference+':guest','cards']]);
     if(old!==null)storage.set(preference+':A',old);
     const f=fixture({storage});try{
       assert.equal(f.d.body.dataset.dashboardView,'classic');assert.equal(f.d.querySelector('input:checked').value,'classic');
       if(old!==null)assert.equal(storage.get(preference+':A'),'classic');
-      assert(!storage.has('luria:dashboard-view:v1:A'));assert.equal(storage.get(preference+':guest'),'cards');
+      assert(!storage.has('traube:dashboard-view:v1:A'));assert.equal(storage.get(preference+':guest'),'cards');
     }finally{f.dom.window.close();}
   }
 });
@@ -108,12 +108,12 @@ test('the actual renderer retains Classic agenda, study session, streak and prog
   assert(!/function layout[2345]\(/.test(renderer));
   for(const value of ['1','2','3','4','5','classic','cards']){
     const f=fixture({storage:new Map([[preference+':A',value]])});try{
-      f.root.remove();f.w.luriaCurrentStreak=3;f.w.luriaDashboardAreaSummary=[{area:'Clínica',completed:2,total:4}];
+      f.root.remove();f.w.traubeCurrentStreak=3;f.w.traubeDashboardAreaSummary=[{area:'Clínica',completed:2,total:4}];
       f.w.eval(renderer);const root=f.d.getElementById('dashboard-alternative');
       assert.equal(root.dataset.rendered,'true');assert(root.querySelector('.dl-layout-1'));
-      assert(root.querySelector('[data-luria-study-start]'));assert(root.querySelector('.dl-agenda-large'));
+      assert(root.querySelector('[data-traube-study-start]'));assert(root.querySelector('.dl-agenda-large'));
       assert.match(root.querySelector('.dl-streak').textContent,/3 dias seguidos/);assert.match(root.querySelector('.dl-areas').textContent,/50%/);
-      const action=root.querySelector('[data-luria-study-start]');f.w.dispatchEvent(new f.w.Event('docmap:ready'));assert.equal(root.querySelector('[data-luria-study-start]'),action);
+      const action=root.querySelector('[data-traube-study-start]');f.w.dispatchEvent(new f.w.Event('docmap:ready'));assert.equal(root.querySelector('[data-traube-study-start]'),action);
       assert.equal(f.d.body.dataset.dashboardView,value==='cards'?'cards':'classic');
     }finally{f.dom.window.close();}
   }

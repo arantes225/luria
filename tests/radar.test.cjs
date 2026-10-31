@@ -19,7 +19,7 @@ test('Radar: same-source rankings preserve counts and ties without percentages o
   }
 });
 test('Radar: area click shows specific subjects, bank and source filters stay independent',async()=>{
-  const dom=new JSDOM(fs.readFileSync(path.join(root,'aplicar/radar/index.html'),'utf8'),{url:'https://luria.invalid/aplicar/radar/',runScripts:'outside-only'});
+  const dom=new JSDOM(fs.readFileSync(path.join(root,'aplicar/radar/index.html'),'utf8'),{url:'https://traube.invalid/aplicar/radar/',runScripts:'outside-only'});
   try{
     const {window:w}=dom;w.fetch=async()=>({ok:true,json:async()=>data});
     w.eval(fs.readFileSync(path.join(root,'assets/js/radar.js'),'utf8'));

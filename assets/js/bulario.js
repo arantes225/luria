@@ -77,7 +77,7 @@
       </section>
       <p class="rx-alert"><strong>Conferir antes de prescrever:</strong> ${esc(f.cautions)}</p>
       ${calculator(f,i)}
-      <a href="${esc(luriaSafeContentUrl(f.source_url) || "#")}" target="_blank" rel="noopener noreferrer">Bula desta apresentação ↗</a>
+      <a href="${esc(traubeSafeContentUrl(f.source_url) || "#")}" target="_blank" rel="noopener noreferrer">Bula desta apresentação ↗</a>
     </section>`;
   }
   function bindPresentationCalculator(container,formulations){
@@ -228,7 +228,7 @@
         </div>
       </section>
 
-      <section class="rx-section"><div class="rx-section-head"><h3>Fonte e revisão</h3></div><p class="rx-note">${d.reviewed_at?`Fonte consultada em ${esc(d.reviewed_at)}. `:''}A ficha não substitui avaliação de contraindicações, interações e função renal.</p><a href="${esc(luriaSafeContentUrl(d.leaflet_url)||'https://consultas.anvisa.gov.br/#/bulario/')}" target="_blank" rel="noopener noreferrer">${d.leaflet_url?'Abrir bula completa':'Pesquisar no Bulário da Anvisa'} ↗</a></section>`;
+      <section class="rx-section"><div class="rx-section-head"><h3>Fonte e revisão</h3></div><p class="rx-note">${d.reviewed_at?`Fonte consultada em ${esc(d.reviewed_at)}. `:''}A ficha não substitui avaliação de contraindicações, interações e função renal.</p><a href="${esc(traubeSafeContentUrl(d.leaflet_url)||'https://consultas.anvisa.gov.br/#/bulario/')}" target="_blank" rel="noopener noreferrer">${d.leaflet_url?'Abrir bula completa':'Pesquisar no Bulário da Anvisa'} ↗</a></section>`;
     detail.querySelector('[data-bulario-mobile-close="1"]')?.addEventListener('click',()=>closeMobileDetail(false));
     const activePresentation=detail.querySelector('#rx-active-presentation');
     detail.querySelectorAll('.rx-presentation-tab').forEach(tab=>tab.addEventListener('click',()=>{

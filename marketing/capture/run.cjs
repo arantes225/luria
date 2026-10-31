@@ -36,7 +36,7 @@ async function captureOne(browser, scene, formatName, opts) {
   await context.addInitScript(({ scenario, pointer }) => {
     window.__TRAUBE_MARKETING_SCENARIO = scenario;
     window.__MK_POINTER = pointer;
-    try { localStorage.setItem('luria:onboarding:done', '1'); } catch {}
+    try { localStorage.setItem('traube:onboarding:done', '1'); } catch {}
   }, { scenario: scene.scenario || {}, pointer: fmt.pointer });
   await context.addInitScript(OVERLAY);
   await isolate(context, report);

@@ -1,5 +1,5 @@
 /* Stage 4 — rooms presentation, preserving session and media controllers. */
-@layer luria-ui-education {
+@layer traube-ui-education {
 body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1 {
  &.social-in-room .community-nav {display:none!important;}
  #community-rooms>.social-card-head {padding:16px;border:1px solid var(--color-border);border-radius:14px;background:color-mix(in srgb,var(--sf-teal) 6%,var(--color-surface));gap:12px;margin-bottom:12px;}
@@ -76,7 +76,7 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
 }
 
 /* Reference composition: community surfaces, preserving existing controls. */
-@layer luria-ui-education {
+@layer traube-ui-education {
 body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1.social-composition {
 
  #community-rooms>.social-card-head {position:relative;overflow:hidden;min-height:150px;padding:24px!important;border:0;border-radius:20px;background:color-mix(in srgb,var(--sf-violet) 8%,var(--color-surface));align-items:center;margin-bottom:18px;}
@@ -225,7 +225,7 @@ body[data-page="amigos"]:not(.social-in-room) .community-nav {
 .community-shortcut-card .button {
   align-self: flex-start;
   border-radius: 12px !important;
-  background: var(--ui-pill-gradient, var(--luria-btn-grad-blue-light, linear-gradient(135deg, #184888, #2563EB))) !important;
+  background: var(--ui-pill-gradient, var(--traube-btn-grad-blue-light, linear-gradient(135deg, #184888, #2563EB))) !important;
   color: #ffffff !important;
   font-weight: 750 !important;
   font-size: 11.5px !important;
@@ -241,7 +241,7 @@ body[data-page="amigos"]:not(.social-in-room) .community-nav {
   transform: translateY(-1px) !important;
 }
 
-body[data-page="amigos"] .luria-back-button {
+body[data-page="amigos"] .traube-back-button {
   display: inline-flex !important;
   align-items: center !important;
   gap: 6px !important;
@@ -256,7 +256,7 @@ body[data-page="amigos"] .luria-back-button {
   cursor: pointer !important;
   transition: transform 0.16s ease, border-color 0.16s ease, color 0.16s ease !important;
 }
-body[data-page="amigos"] .luria-back-button:hover {
+body[data-page="amigos"] .traube-back-button:hover {
   transform: translateX(-2px) !important;
   border-color: var(--accent, #0077ff) !important;
   color: var(--accent, #0077ff) !important;

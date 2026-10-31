@@ -137,7 +137,7 @@
             ${row.edital_url ? `
               <a
                 class="button secondary catalog-open-edital"
-                href="${escapeHtml(luriaSafeContentUrl(row.edital_url) || '#')}"
+                href="${escapeHtml(traubeSafeContentUrl(row.edital_url) || '#')}"
                 target="_blank"
                 rel="noopener noreferrer"
               >

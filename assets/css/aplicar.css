@@ -3,7 +3,7 @@
    Estilos visuais premium, compatíveis com os 4 temas TRAUBE e PWA mobile.
    ============================================================================== */
 
-@layer luria-ui-education {
+@layer traube-ui-education {
   /* Layout Base da Página Aplicar */
   body[data-ui="v2"][data-page="aplicar"] .aplicar-page {
     display: block !important;

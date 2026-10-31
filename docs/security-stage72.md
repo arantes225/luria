@@ -44,7 +44,7 @@ Nos links com `target="_blank"`, foi comprovada a aceitação de esquemas perigo
 | 30 | Cronograma, Dashboard e registro de questões → escape/números/rotas fixas → cards/formulários | Protegido | Sem alteração de regras ou cálculos |
 | 31 | Estatísticas → chamadores escapam rótulos, formatam números e geram spans constantes → tabelas | Protegido | O helper de tabela aceita HTML intencional; rastreados os chamadores, sem escape indiscriminado |
 | 32 | Onboarding/configurações → escape, estado controlado ou restauração de conteúdo previamente limpo → formulários | Protegido | Sem mudanças em preferências/persistência |
-| 33 | Pesquisa e atalhos → rotas fixas + `encodeURIComponent`, textos escapados → `luria-command-center`, links | Protegido | Rotas construídas internamente; não aceita URL externa como rota |
+| 33 | Pesquisa e atalhos → rotas fixas + `encodeURIComponent`, textos escapados → `traube-command-center`, links | Protegido | Rotas construídas internamente; não aceita URL externa como rota |
 | 34 | Histórico/execução PCR → escape/textContent + dados por proprietário → cards/modais/logs | Protegido | Isolamento da 7.1 preservado; testes PCR repetidos |
 | 35 | Scores e campos textuais de conteúdo clínico → catálogo estático/escape/textContent/números → controles/resultados | Protegido | Fórmulas e conteúdo não alterados; exceções do Bulário tratadas acima |
 | 36 | Shell/navegação/layouts → strings constantes/ícones de catálogo → templates DOM | Estático confiável | `innerHTML` estático não convertido indiscriminadamente |
@@ -55,7 +55,7 @@ Nos links com `target="_blank"`, foi comprovada a aceitação de esquemas perigo
 
 Quatro causas principais: HTML remoto não sanitizado; parser ativo usado apenas para ler títulos; escape HTML confundido com validação de URL; dados JSON interpolados em atributos sem escape. O desembrulhamento do sanitizador também foi mantido no documento inerte.
 
-- `assets/js/app.js`: único validador reutilizado `luriaSafeContentUrl`; notificações. HTTP/HTTPS sem credenciais são aceitos; caminhos locais absolutos/fragments/query são opcionais e restritos à mesma origem; `mailto` somente quando solicitado. Esquemas executáveis, controles, barras invertidas e URLs relativas a protocolo são rejeitados. Retorna a URL original válida, seguida de escape no contexto HTML.
+- `assets/js/app.js`: único validador reutilizado `traubeSafeContentUrl`; notificações. HTTP/HTTPS sem credenciais são aceitos; caminhos locais absolutos/fragments/query são opcionais e restritos à mesma origem; `mailto` somente quando solicitado. Esquemas executáveis, controles, barras invertidas e URLs relativas a protocolo são rejeitados. Retorna a URL original válida, seguida de escape no contexto HTML.
 - `assets/js/caderno.js`: sanitização antes de inserir HTML remoto; parser inerte; allowlist de tags, atributos e classes; eliminação de eventos, contêineres ativos e namespaces estrangeiros. Modo Notion mantém links seguros, código, blocos, imagens e identificadores necessários para salvar edições.
 - `assets/js/caderno-notion-editor-fix.js`: aplica o mesmo sanitizador à carga no editor principal; sem mudar chamadas de integração.
 - `assets/js/admin.js`, `assets/js/admin-editais.js`, `assets/js/apostila-tools.js`, `assets/js/editais-catalog.js`, `assets/js/editais.js`, `assets/js/trabalho-protocolos.js`, `assets/js/trabalho-receitas.js`, `assets/js/plantao.js`: URL validada nos pontos de apresentação identificados.

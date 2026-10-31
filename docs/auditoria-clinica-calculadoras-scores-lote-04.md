@@ -1,7 +1,7 @@
 # TRAUBE — Auditoria clínica de escores, lote 4/6 (escores 20–49)
 
 **Data:** 24/10/2026  
-**Repositório:** `arantes225/luria` — branch `main`  
+**Repositório:** `arantes225/traube` — branch `main`  
 **Escopo:** 30 instrumentos conforme a ordem real do catálogo de `assets/js/work-scores.js`.  
 **Ações:** revisar critérios, classificação, população-alvo, restrições, documentação e fontes; corrigir falhas confirmadas; escrever testes de regressão.  
 **Limite:** suporte ao raciocínio médico, sem autorização para usar pontuação sem validação independente em pacientes reais.
@@ -46,7 +46,7 @@
 - Código revisado: `assets/js/work-scores.js` com metadados `auditDate` e `safetyNote` para os 30 instrumentos; novo formulário completo/estruturado de fatores do Caprini, blocos para HINTS e CIWA-Ar.
 - Teste de regressão: `tests/clinical-scores-audit-batch4.test.cjs`.
 - Cache busting: `trabalho/scores/index.html` aponta a `work-scores.js?v=20261024-audit-batch4`.
-- Service worker: `luria-pwa-20261024-clinical-audit-batch4`.
+- Service worker: `traube-pwa-20261024-clinical-audit-batch4`.
 - **63/63 testes no lote 4 passaram em execução JavaScript isolada.** Inclui 30 verificações por instrumento, 23 testes de limites de soma, 10 testes de estrutura/contexto (incluindo Caprini/HINTS/CIWA-Ar).
 - **221/221 verificações acumuladas dos quatro lotes passaram** em avaliação JavaScript isolada; não são testes clínicos ponta a ponta.
 - **Ainda não confirmado:** CI, publicação no domínio, integração visual em navegador/PWA, teste de acessibilidade e comparação de todos os casos com instrumentação de referência.

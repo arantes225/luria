@@ -215,7 +215,7 @@ for(const url of workPages){
 if(url==="/trabalho/prontuario/"){await page.goto(base+url,{waitUntil:"domcontentloaded"});await page.waitForTimeout(300);}
 else await goto(url);
 await noOverflow(url);
-if(!url.includes("/pcr/executar")&&url!=="/trabalho/prontuario/")assert.ok(await page.locator(".luria-page-spotlight").isVisible(),"Work heading "+url);
+if(!url.includes("/pcr/executar")&&url!=="/trabalho/prontuario/")assert.ok(await page.locator(".traube-page-spotlight").isVisible(),"Work heading "+url);
 await page.screenshot({path:"browser-results/"+url.replaceAll("/","_")+"-"+viewport.width+".png",fullPage:true});
 }
 console.log("PASS Work pages and mobile layouts "+viewport.width);
@@ -237,7 +237,7 @@ assert.match(await page.locator("#pcr-log").innerText(),/Choque/);
 await page.evaluate(()=>localStorage.removeItem("fixture-save-fail"));await page.locator("#pcr-rosc").click();
 await page.waitForURL("**/trabalho/pcr/historico/**");await page.locator(".pcr-patient-card h2").filter({hasText:"A.B."}).waitFor();
 assert.equal(await page.locator(".pcr-history-record").count(),1,"Retry must not duplicate PCR");
-const download=page.waitForEvent("download");await page.locator("[data-pdf]").click();assert.match((await download).suggestedFilename(),/luria-pcr.*pdf/);
+const download=page.waitForEvent("download");await page.locator("[data-pdf]").click();assert.match((await download).suggestedFilename(),/traube-pcr.*pdf/);
 await page.locator(".pcr-patient-card>.pcr-record-menu").count(); // menus sit in the headers
 await page.locator(".pcr-patient-card>header .pcr-record-menu summary").click();
 await page.locator("[data-edit-patient]").click();await page.locator('[name="initials"]').fill("C.D.");await page.locator("#pcr-edit-save").click();await page.locator(".pcr-patient-card h2").filter({hasText:"C.D."}).waitFor();

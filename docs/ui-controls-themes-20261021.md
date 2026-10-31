@@ -9,7 +9,7 @@ não foram convertidos indiscriminadamente em botões principais.
 
 - Havia um segundo sistema de cores no CSS de revisão, com quatro blocos repetidos
   que forçavam texto e traços de ícones escuros. Removido esse trecho; o padrão
-  agora fica na camada `luria-ui-controls` do entrypoint compartilhado.
+  agora fica na camada `traube-ui-controls` do entrypoint compartilhado.
 - Botões de Amigos tinham gradientes azuis literais. Agora usam o mesmo token de
   gradiente das demais ações, inclusive em Grupos, Salas e diálogos.
 - O Alex podia priorizar o tema legado sobre as dimensões atuais de aparência e

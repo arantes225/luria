@@ -2,7 +2,7 @@
   "use strict";
 
   const MANIFEST_URL = "/content/weekly/manifest.json";
-  const MANIFEST_CACHE_KEY = "luria:weekly-content:manifest";
+  const MANIFEST_CACHE_KEY = "traube:weekly-content:manifest";
   const MANIFEST_TTL_MS = 6 * 60 * 60 * 1000;
   const GROUP_COUNT_FALLBACK = 3;
 

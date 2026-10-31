@@ -18,7 +18,7 @@ const catalog = [
 ];
 const settle = () => new Promise(resolve => setTimeout(resolve, 20));
 
-async function open(url = "https://luria.local/apostilas/") {
+async function open(url = "https://traube.local/apostilas/") {
   const dom = new JSDOM(html, { url, runScripts:"outside-only" });
   const { window } = dom;
   window.scrollTo = () => {};
@@ -64,7 +64,7 @@ test("Selecionar uma área abre apenas a biblioteca da área, com URL dedicada",
 });
 
 test("A busca só filtra a área selecionada e pode ser limpa sem sair dela", async () => {
-  const dom = await open("https://luria.local/apostilas/?area=ginecologia-obstetricia");
+  const dom = await open("https://traube.local/apostilas/?area=ginecologia-obstetricia");
   try {
     const { window } = dom, d = window.document;
     assert.equal(d.querySelector("#books-library-view").hidden, false);
@@ -80,7 +80,7 @@ test("A busca só filtra a área selecionada e pode ser limpa sem sair dela", as
 });
 
 test("Área sem conteúdo mostra estado vazio e permite voltar ao hall", async () => {
-  const dom = await open("https://luria.local/apostilas/?area=psiquiatria");
+  const dom = await open("https://traube.local/apostilas/?area=psiquiatria");
   try {
     const { window } = dom, d = window.document;
     assert.equal(d.querySelector("#books-library-view").hidden, false);

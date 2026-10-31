@@ -862,7 +862,7 @@
     initRadar();
   }
 
-  window.addEventListener("luria:aplicar-tab-changed", event => {
+  window.addEventListener("traube:aplicar-tab-changed", event => {
     if (event.detail?.activeTab === "radar") {
       renderRadar();
     }

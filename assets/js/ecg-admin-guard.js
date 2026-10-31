@@ -40,7 +40,7 @@
     if (gate) gate.hidden = true;
     body.classList.remove("is-admin-pending");
     body.classList.add("is-admin-authorized");
-    document.dispatchEvent(new CustomEvent("luria:ecg-admin-ready"));
+    document.dispatchEvent(new CustomEvent("traube:ecg-admin-ready"));
   } catch (_) {
     deny("Não foi possível confirmar a permissão administrativa.");
   }

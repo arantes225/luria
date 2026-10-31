@@ -8,7 +8,7 @@ Branch: `codex/social-visual-refinement`. Base reversível: `754cd7d9`, com árv
 
 Antes da alteração, os arquivos publicados de social-v3, social-rooms e social-voice foram comparados à referência `9d2c0dd7`: conteúdo idêntico. Essa equivalência não atribui retrospectivamente a publicação anterior ao commit. Evidência local em `browser-results/social-visual/baseline.json`.
 
-Publicado somente em `https://luria-homologacao.lfab225.workers.dev/amigos/`, versão do site `a5e56ba2-60f6-44d8-98f3-30ac090d62cd`. Nenhum deploy de produção, migração, alteração de credenciais ou publicação do Worker de voz nesta revisão.
+Publicado somente em `https://traube-homologacao.lfab225.workers.dev/amigos/`, versão do site `a5e56ba2-60f6-44d8-98f3-30ac090d62cd`. Nenhum deploy de produção, migração, alteração de credenciais ou publicação do Worker de voz nesta revisão.
 
 ## Arquitetura preservada
 

@@ -83,7 +83,7 @@
       "Decisões difíceis na indução — comparação entre métodos e avaliação de segurança"
     ],
     [
-      "luria-livro-etiologias-inducao-do-trabalho-de-parto",
+      "traube-livro-etiologias-inducao-do-trabalho-de-parto",
       "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta"
     ],
     [
@@ -205,11 +205,11 @@
         ],
         [
           "raw",
-          "<figure data-luria-curated-image=\"Oxytocin.svg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Oxytocin.svg\" alt=\"Administração escalonada de ocitocina endovenosa em bomba de infusão\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Administração escalonada de ocitocina endovenosa em bomba de infusão</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AOxytocin.svg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Calvero. ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+          "<figure data-traube-curated-image=\"Oxytocin.svg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Oxytocin.svg\" alt=\"Administração escalonada de ocitocina endovenosa em bomba de infusão\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Administração escalonada de ocitocina endovenosa em bomba de infusão</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AOxytocin.svg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Calvero. ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
           "raw",
-          "<figure data-luria-curated-image=\"Foley_catheter_inflated_and_deflated_EN.svg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Foley%20catheter%20inflated%20and%20deflated%20EN.svg\" alt=\"Balão transcervical com cateter de Foley para preparo do colo desfavorável\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Balão transcervical com cateter de Foley para preparo do colo desfavorável</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AFoley%20catheter%20inflated%20and%20deflated%20EN.svg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Olek Remesz (wiki-pl: Orem, commons: Orem) ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+          "<figure data-traube-curated-image=\"Foley_catheter_inflated_and_deflated_EN.svg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Foley%20catheter%20inflated%20and%20deflated%20EN.svg\" alt=\"Balão transcervical com cateter de Foley para preparo do colo desfavorável\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Balão transcervical com cateter de Foley para preparo do colo desfavorável</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AFoley%20catheter%20inflated%20and%20deflated%20EN.svg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Olek Remesz (wiki-pl: Orem, commons: Orem) ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
           "u",
@@ -1281,7 +1281,7 @@
       ]
     ],
     [
-      "luria-livro-etiologias-inducao-do-trabalho-de-parto",
+      "traube-livro-etiologias-inducao-do-trabalho-de-parto",
       0,
       [
         [

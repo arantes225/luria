@@ -1,15 +1,15 @@
 /* TRAUBE page spotlight — padrão único oficial do Dashboard */
 :root{
-  --luria-page-card-height:138px;
-  --luria-page-card-pad-y:24px;
-  --luria-page-card-pad-x:28px;
-  --luria-page-card-radius:15px;
-  --luria-page-card-title:32px;
-  --luria-page-card-gap:14px;
+  --traube-page-card-height:138px;
+  --traube-page-card-pad-y:24px;
+  --traube-page-card-pad-x:28px;
+  --traube-page-card-radius:15px;
+  --traube-page-card-title:32px;
+  --traube-page-card-gap:14px;
 }
 
 /* The games also use the heading relocated from the shell, not only spotlights. */
-@layer luria-ui-education {
+@layer traube-ui-education {
   body[data-ui="v2"][data-ui-context="study"]:is([data-page="jogos"],[data-page="study-rats"]) .main .page > :is(.ui-page-heading,.games-spotlight) {
     display:flex!important;
     flex-direction:column!important;
@@ -22,14 +22,14 @@
     box-sizing:border-box!important;
   }
   body[data-ui="v2"][data-ui-context="study"]:is([data-page="jogos"],[data-page="study-rats"]) .main .page > .ui-page-heading :is(h1,.eyebrow) {margin:0!important;}
-  body[data-ui="v2"][data-ui-context="study"] .books-page .luria-page-spotlight .library-book-link {color:#fff!important;text-decoration:underline!important;text-underline-offset:3px;}
-  body[data-ui="v2"][data-page="professor_alex"] .luria-page-spotlight-copy :is(strong,small,.luria-page-spotlight-helper) {color:#fff!important;}
+  body[data-ui="v2"][data-ui-context="study"] .books-page .traube-page-spotlight .library-book-link {color:#fff!important;text-decoration:underline!important;text-underline-offset:3px;}
+  body[data-ui="v2"][data-page="professor_alex"] .traube-page-spotlight-copy :is(strong,small,.traube-page-spotlight-helper) {color:#fff!important;}
   @media(max-width:680px) {
     body[data-ui="v2"][data-ui-context="study"]:is([data-page="jogos"],[data-page="study-rats"]) .main .page > :is(.ui-page-heading,.games-spotlight) {padding:18px 20px!important;}
   }
 }
 
-body:not(.schedule-settings-embed) .luria-page-spotlight{
+body:not(.schedule-settings-embed) .traube-page-spotlight{
   position:relative!important;
   display:flex!important;
   align-items:center!important;
@@ -48,12 +48,12 @@ body:not(.schedule-settings-embed) .luria-page-spotlight{
   color:#fff!important;
   box-shadow:0 10px 30px rgba(17,65,130,.12)!important;
 }
-body:not(.schedule-settings-embed) .luria-page-spotlight::after,
-body:not(.schedule-settings-embed) .luria-page-spotlight::before{
+body:not(.schedule-settings-embed) .traube-page-spotlight::after,
+body:not(.schedule-settings-embed) .traube-page-spotlight::before{
   display:none!important;
   content:none!important;
 }
-body:not(.schedule-settings-embed) .luria-page-spotlight-copy{
+body:not(.schedule-settings-embed) .traube-page-spotlight-copy{
   position:relative!important;
   z-index:2!important;
   min-width:0!important;
@@ -63,7 +63,7 @@ body:not(.schedule-settings-embed) .luria-page-spotlight-copy{
   align-items:flex-start!important;
   justify-content:center!important;
 }
-body:not(.schedule-settings-embed) .luria-page-spotlight-copy > strong{
+body:not(.schedule-settings-embed) .traube-page-spotlight-copy > strong{
   display:block!important;
   margin:0!important;
   color:#fff!important;
@@ -72,7 +72,7 @@ body:not(.schedule-settings-embed) .luria-page-spotlight-copy > strong{
   line-height:1.15!important;
   letter-spacing:-.6px!important;
 }
-body:not(.schedule-settings-embed) .luria-page-spotlight-copy :is(small,.luria-page-spotlight-helper,p){
+body:not(.schedule-settings-embed) .traube-page-spotlight-copy :is(small,.traube-page-spotlight-helper,p){
   display:block!important;
   margin:6px 0 0 0!important;
   font-size:12.5px!important;
@@ -83,25 +83,25 @@ body:not(.schedule-settings-embed) .luria-page-spotlight-copy :is(small,.luria-p
   word-break:normal!important;
   overflow-wrap:break-word!important;
 }
-:root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight,
-body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight,
-body[data-ui-appearance="dark"]:not(.schedule-settings-embed) .luria-page-spotlight{
+:root[data-theme="dark"] body:not(.schedule-settings-embed) .traube-page-spotlight,
+body.theme-dark:not(.schedule-settings-embed) .traube-page-spotlight,
+body[data-ui-appearance="dark"]:not(.schedule-settings-embed) .traube-page-spotlight{
   background:var(--ui-frame-bg, linear-gradient(135deg, #091A33 0%, #102C57 50%, #184888 100%))!important;
   color:#fff!important;
   border-color:rgba(255,255,255,0.14)!important;
   box-shadow:0 10px 30px rgba(0,0,0,.22)!important;
 }
-:root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight::after,
-body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight::after,
-body[data-ui-appearance="dark"]:not(.schedule-settings-embed) .luria-page-spotlight::after,
-:root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight::before,
-body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight::before,
-body[data-ui-appearance="dark"]:not(.schedule-settings-embed) .luria-page-spotlight::before{
+:root[data-theme="dark"] body:not(.schedule-settings-embed) .traube-page-spotlight::after,
+body.theme-dark:not(.schedule-settings-embed) .traube-page-spotlight::after,
+body[data-ui-appearance="dark"]:not(.schedule-settings-embed) .traube-page-spotlight::after,
+:root[data-theme="dark"] body:not(.schedule-settings-embed) .traube-page-spotlight::before,
+body.theme-dark:not(.schedule-settings-embed) .traube-page-spotlight::before,
+body[data-ui-appearance="dark"]:not(.schedule-settings-embed) .traube-page-spotlight::before{
   display:none!important;
   content:none!important;
 }
-:root[data-theme="leila-mood"] body:not(.schedule-settings-embed) .luria-page-spotlight,
-body[data-ui-identity="pink"]:not(.schedule-settings-embed) .luria-page-spotlight{
+:root[data-theme="leila-mood"] body:not(.schedule-settings-embed) .traube-page-spotlight,
+body[data-ui-identity="pink"]:not(.schedule-settings-embed) .traube-page-spotlight{
   background:var(--ui-frame-bg, linear-gradient(135deg, #4A153B 0%, #882E56 50%, #B2577D 100%))!important;
   border-color:rgba(255,255,255,0.18)!important;
 }
@@ -120,19 +120,19 @@ body[data-page="aplicar"] .topbar .page-heading,
 body[data-page="editais"] .topbar .page-heading,
 body[data-page="cronograma"] .topbar .page-heading,
 body[data-page="professor_alex"] .topbar .page-heading,
-body:has(.luria-page-spotlight) .topbar .page-heading,
-body:has(.luria-page-spotlight) .page-heading,
+body:has(.traube-page-spotlight) .topbar .page-heading,
+body:has(.traube-page-spotlight) .page-heading,
 body .topbar .page-heading:empty,
 body .topbar .page-heading:has(h1:empty):not(:has(h1:not(:empty))) {display:none!important}
 
 /* Supressão global estrita de callouts, badges e segundas linhas no topo de títulos */
-.luria-page-spotlight-label,
+.traube-page-spotlight-label,
 .schedule-top-spotlight-label,
 .qs-spotlight-eyebrow,
 .qs-page-spotlight-eyebrow,
-.luria-page-spotlight-copy [class*="label"],
-.luria-page-spotlight-copy [class*="eyebrow"],
-.luria-page-spotlight-copy .badge,
+.traube-page-spotlight-copy [class*="label"],
+.traube-page-spotlight-copy [class*="eyebrow"],
+.traube-page-spotlight-copy .badge,
 .schedule-top-spotlight-copy [class*="label"],
 .schedule-top-spotlight-copy [class*="eyebrow"] {
   display:none!important;
@@ -144,10 +144,10 @@ body .topbar .page-heading:has(h1:empty):not(:has(h1:not(:empty))) {display:none
 }
 
 /* Títulos com rigorosa formatação de 1 linha em cima e 1 embaixo */
-.luria-page-spotlight-copy strong {
+.traube-page-spotlight-copy strong {
   display: block !important;
   margin: 0 !important;
-  font-size: var(--luria-page-card-title, 26px) !important;
+  font-size: var(--traube-page-card-title, 26px) !important;
   line-height: 1.15 !important;
   font-weight: 850 !important;
   letter-spacing: -0.025em !important;
@@ -156,8 +156,8 @@ body .topbar .page-heading:has(h1:empty):not(:has(h1:not(:empty))) {display:none
   text-overflow: ellipsis !important;
 }
 
-.luria-page-spotlight-copy small,
-.luria-page-spotlight-copy .luria-page-spotlight-helper {
+.traube-page-spotlight-copy small,
+.traube-page-spotlight-copy .traube-page-spotlight-helper {
   display: block !important;
   margin-top: 4px !important;
   font-size: 13px !important;
@@ -169,12 +169,12 @@ body .topbar .page-heading:has(h1:empty):not(:has(h1:not(:empty))) {display:none
 }
 
 /* Ocultar qualquer 2ª descrição ou texto extra dentro do spotlight */
-.luria-page-spotlight-copy > :is(p, small, span):not(:first-of-type):not(strong) {
+.traube-page-spotlight-copy > :is(p, small, span):not(:first-of-type):not(strong) {
   display: none !important;
 }
 
 /* Botão padrão elegante de voltar para subpáginas e telas aninhadas */
-.luria-back-button {
+.traube-back-button {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
@@ -198,31 +198,31 @@ body .topbar .page-heading:has(h1:empty):not(:has(h1:not(:empty))) {display:none
   white-space: nowrap !important;
   flex-shrink: 0 !important;
 }
-.luria-back-button:hover {
+.traube-back-button:hover {
   background: var(--color-surface-elevated, var(--surface-2, #f8fafc)) !important;
   border-color: var(--color-primary, var(--accent, #0284c7)) !important;
   color: var(--color-primary, var(--accent, #0284c7)) !important;
   transform: translateX(-2px) !important;
 }
-.luria-back-button svg {
+.traube-back-button svg {
   flex-shrink: 0 !important;
   width: 18px !important;
   height: 18px !important;
   transition: transform 0.15s ease !important;
 }
-.luria-back-button:hover svg {
+.traube-back-button:hover svg {
   transform: translateX(-2px) !important;
 }
 
 body[data-page="flashcards"] .flash-top-spotlight{display:none!important}
 body[data-page="caderno"] #notebook-view-library>.notebook-view-head{display:none!important}
 @media(max-width:700px){
-  body:not(.schedule-settings-embed) .luria-page-spotlight{min-height:118px;padding:20px}
-  body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{font-size:25px}
+  body:not(.schedule-settings-embed) .traube-page-spotlight{min-height:118px;padding:20px}
+  body:not(.schedule-settings-embed) .traube-page-spotlight-copy strong{font-size:25px}
 }
 
 /* v2 — cabeçalhos destacados do site seguem a mesma proporção de Anotações. */
-body .luria-page-spotlight,
+body .traube-page-spotlight,
 body .stats-hero,
 body .daily-hero,
 body .flash-top-spotlight{
@@ -230,14 +230,14 @@ body .flash-top-spotlight{
 }
 
 /* Quando há o novo spotlight compartilhado, o hero antigo não dita altura do topo. */
-body:has(.luria-page-spotlight) .stats-hero,
-body:has(.luria-page-spotlight) .daily-hero,
-body:has(.luria-page-spotlight) .flash-top-spotlight{
+body:has(.traube-page-spotlight) .stats-hero,
+body:has(.traube-page-spotlight) .daily-hero,
+body:has(.traube-page-spotlight) .flash-top-spotlight{
   min-height:0;
 }
 
 /* A faixa superior do conteúdo passa a usar a mesma largura/proporção visual. */
-body:not(.schedule-settings-embed) .page > .luria-page-spotlight{
+body:not(.schedule-settings-embed) .page > .traube-page-spotlight{
   width:100%;
   max-width:100%;
 }
@@ -252,25 +252,25 @@ body:not(.schedule-settings-embed) .topbar{
 
 @media(max-width:700px){
   :root{
-    --luria-page-card-height:118px;
-    --luria-page-card-pad-y:20px;
-    --luria-page-card-pad-x:20px;
-    --luria-page-card-title:27px;
+    --traube-page-card-height:118px;
+    --traube-page-card-pad-y:20px;
+    --traube-page-card-pad-x:20px;
+    --traube-page-card-title:27px;
   }
-  body:not(.schedule-settings-embed) .luria-page-spotlight{
+  body:not(.schedule-settings-embed) .traube-page-spotlight{
     height:118px!important;
     min-height:118px!important;
     max-height:118px!important;
     padding:20px!important;
   }
-  body:not(.schedule-settings-embed) .luria-page-spotlight-copy > strong{
+  body:not(.schedule-settings-embed) .traube-page-spotlight-copy > strong{
     font-size:27px!important;
   }
 }
 
 /* Padrão soberano do Dashboard em todas as páginas */
-body:not(.schedule-settings-embed) .page > .luria-page-spotlight,
-body:not(.schedule-settings-embed) .page .luria-page-spotlight{
+body:not(.schedule-settings-embed) .page > .traube-page-spotlight,
+body:not(.schedule-settings-embed) .page .traube-page-spotlight{
   width:100%!important;
   max-width:none!important;
   min-width:0!important;
@@ -284,11 +284,11 @@ body:not(.schedule-settings-embed) .page .luria-page-spotlight{
   flex:0 0 auto!important;
   align-self:stretch!important;
 }
-body:not(.schedule-settings-embed) .luria-page-spotlight-copy{
+body:not(.schedule-settings-embed) .traube-page-spotlight-copy{
   margin:0!important;
   padding:0!important;
 }
-body:not(.schedule-settings-embed) .luria-page-spotlight-copy > strong{
+body:not(.schedule-settings-embed) .traube-page-spotlight-copy > strong{
   margin:0!important;
   font-size:32px!important;
   line-height:1.08!important;
@@ -296,15 +296,15 @@ body:not(.schedule-settings-embed) .luria-page-spotlight-copy > strong{
   letter-spacing:-.8px!important;
 }
 @media(max-width:700px){
-  body:not(.schedule-settings-embed) .page > .luria-page-spotlight,
-  body:not(.schedule-settings-embed) .page .luria-page-spotlight{
+  body:not(.schedule-settings-embed) .page > .traube-page-spotlight,
+  body:not(.schedule-settings-embed) .page .traube-page-spotlight{
     height:118px!important;
     min-height:118px!important;
     max-height:118px!important;
     padding:20px!important;
     flex-basis:auto!important;
   }
-  body:not(.schedule-settings-embed) .luria-page-spotlight-copy > strong{
+  body:not(.schedule-settings-embed) .traube-page-spotlight-copy > strong{
     font-size:27px!important;
   }
 }
@@ -450,7 +450,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   .alex-action.primary,
   .qs-v17-start-button,
   .game-action-btn.primary,
-  .luria-daily-review-primary,
+  .traube-daily-review-primary,
   .exam-link-button:first-of-type,
   .ed-primary-action,
   .ed-new-exam,
@@ -467,7 +467,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   .external-savebar button,
   .temp-note-savebar .primary,
   .quick-chart-pin-setup button,
-  .luria-intel-button.primary,
+  .traube-intel-button.primary,
   .plantao-featured-start.button.primary,
   .plantao-phone-compose-form button,
   .plantao-phone-resume-button,
@@ -508,7 +508,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   .alex-action.primary,
   .qs-v17-start-button,
   .game-action-btn.primary,
-  .luria-daily-review-primary,
+  .traube-daily-review-primary,
   .exam-link-button:first-of-type,
   .ed-primary-action,
   .ed-new-exam,
@@ -525,7 +525,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   .external-savebar button,
   .temp-note-savebar .primary,
   .quick-chart-pin-setup button,
-  .luria-intel-button.primary,
+  .traube-intel-button.primary,
   .plantao-featured-start.button.primary,
   .plantao-phone-compose-form button,
   .plantao-phone-resume-button,
@@ -563,7 +563,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   .alex-action.primary,
   .qs-v17-start-button,
   .game-action-btn.primary,
-  .luria-daily-review-primary,
+  .traube-daily-review-primary,
   .exam-link-button:first-of-type,
   .ed-primary-action,
   .ed-new-exam,
@@ -580,7 +580,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   .external-savebar button,
   .temp-note-savebar .primary,
   .quick-chart-pin-setup button,
-  .luria-intel-button.primary,
+  .traube-intel-button.primary,
   .plantao-featured-start.button.primary,
   .plantao-phone-compose-form button,
   .plantao-phone-resume-button,
@@ -617,7 +617,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   .alex-action.primary,
   .qs-v17-start-button,
   .game-action-btn.primary,
-  .luria-daily-review-primary,
+  .traube-daily-review-primary,
   .exam-link-button:first-of-type,
   .ed-primary-action,
   .ed-new-exam,
@@ -634,7 +634,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   .external-savebar button,
   .temp-note-savebar .primary,
   .quick-chart-pin-setup button,
-  .luria-intel-button.primary,
+  .traube-intel-button.primary,
   .plantao-featured-start.button.primary,
   .plantao-phone-compose-form button,
   .plantao-phone-resume-button,
@@ -660,11 +660,11 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
 /* Botão do Alex habilitado na topbar */
 
 /* O mascote lateral sai da lateral em Aprender e Professor Alex (reside no card dedicado) */
-body[data-page="aprender"] luria-alex-companion,
-body[data-page="professor_alex"] luria-alex-companion,
-body[data-ui-context="work"] luria-alex-companion,
-body[data-ui-work="v2"] luria-alex-companion,
-body[data-page^="trabalho_"] luria-alex-companion {
+body[data-page="aprender"] traube-alex-companion,
+body[data-page="professor_alex"] traube-alex-companion,
+body[data-ui-context="work"] traube-alex-companion,
+body[data-ui-work="v2"] traube-alex-companion,
+body[data-page^="trabalho_"] traube-alex-companion {
   display: none !important;
   visibility: hidden !important;
   width: 0 !important;

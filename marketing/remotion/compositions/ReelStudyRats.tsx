@@ -126,7 +126,7 @@ export const ReelStudyRats: React.FC = () => {
       }}
     >
       {/* 30s High-Energy Soundtrack */}
-      <Audio src={staticFile('audio/luria-soundtrack-full-30s.mp3')} volume={0.88} />
+      <Audio src={staticFile('audio/traube-soundtrack-full-30s.mp3')} volume={0.88} />
 
       {/* Cyber Medical Grid & Holographic Radar Atmosphere */}
       <TechBackground />

@@ -209,8 +209,8 @@ function setTaxonomyChip(
 }
 
 function switchFlashTab(tabName) {
-  if (typeof window.luriaFlashShow === "function") {
-    window.luriaFlashShow(tabName);
+  if (typeof window.traubeFlashShow === "function") {
+    window.traubeFlashShow(tabName);
     return;
   }
 
@@ -869,8 +869,8 @@ async function setReviewImage(
 
 function reviewSessionStorageKey() {
   return flashUser
-    ? `luria:flash-review-session:${flashUser.id}`
-    : "luria:flash-review-session";
+    ? `traube:flash-review-session:${flashUser.id}`
+    : "traube:flash-review-session";
 }
 
 function formatReviewClock(totalSeconds) {
@@ -3904,7 +3904,7 @@ function renderAnkiDeckMap() {
                 )}"
                 data-anki-deck-area="${index}"
                 list="medical-areas"
-                data-luria-area-input
+                data-traube-area-input
                 placeholder="Área no TRAUBE"
               >
             </label>
@@ -5013,7 +5013,7 @@ function populateLibraryAreas() {
     select.value;
 
   const mode =
-    window.luriaStudyMode
+    window.traubeStudyMode
     || "medicine";
 
   const areas =
@@ -6209,7 +6209,7 @@ async function exportSelectedFlashcardsPdf() {
         doc
       );
 
-    doc.save(`luria-flashcards-${todayISO()}.pdf`);
+    doc.save(`traube-flashcards-${todayISO()}.pdf`);
     setLibraryStatus("PDF exportado.", "success");
   } catch (error) {
     console.error(error);
@@ -6835,7 +6835,7 @@ function renderLibraryDecks() {
   }
 
   const mode =
-    window.luriaStudyMode
+    window.traubeStudyMode
     || "medicine";
 
   const configuredAreas =
@@ -7866,7 +7866,7 @@ function wireLibrary() {
 }
 
 window.addEventListener(
-  "luria:study-mode",
+  "traube:study-mode",
   () => {
     populateLibraryAreas();
 
@@ -7886,9 +7886,9 @@ function consumeNotebookFlashcardDraft() {
   let draft = null;
 
   try {
-    const raw = localStorage.getItem("luria:flashcard-draft-from-notebook");
+    const raw = localStorage.getItem("traube:flashcard-draft-from-notebook");
     if (raw) draft = JSON.parse(raw);
-    localStorage.removeItem("luria:flashcard-draft-from-notebook");
+    localStorage.removeItem("traube:flashcard-draft-from-notebook");
   } catch {}
 
   if (!draft) return;

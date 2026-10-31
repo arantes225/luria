@@ -21,11 +21,11 @@ Base: `fix/ecg-e2e-contracts-and-calibration` (`2957e7384b36f94f3f8f28e56f26606b
 - A sequência espacial transladada testa bordas de folha detectadas em quadros sintéticos. Aproximação forte sem folha inteira produz “referência espacial perdida”; não há homografia robusta nem validação com movimento físico de smartphone.
 - `technicalIndex` é índice experimental de estrutura de pixels, sem equivalência a porcentagem de fidelidade clínica.
 - Não há fotografias hospitalares com sinal de referência, anotações visuais por paciente nem medições em iOS/Android neste ambiente. Faltam MAE, RMSE, SNR, correlação, cobertura, erro de calibração, identidade e falsa aceitação em **conjunto fotográfico independente**.
-- As listas de Edge Functions dos projetos Supabase conectados **Studyos** e **luria-homologacao** foram consultadas; `ecg-signal-classifier` não aparece em nenhuma. Outros ambientes não foram inspecionados. O fluxo autoral continua bloqueado. Nenhum modelo de interpretação foi criado.
+- As listas de Edge Functions dos projetos Supabase conectados **Studyos** e **traube-homologacao** foram consultadas; `ecg-signal-classifier` não aparece em nenhuma. Outros ambientes não foram inspecionados. O fluxo autoral continua bloqueado. Nenhum modelo de interpretação foi criado.
 
 ## Dados exigidos para o treino visual
 
-`scripts/colab/luria_ecg_digitizer_training.py` requer `manifest.json`, lista de registros com `image_path`, `patient_id`, `lead` canônica e `bbox` normalizada `[x0,y0,x1,y1]` referente ao **recorte visual**. As imagens precisam conter rótulo visível e localização anotada, com variedade de layouts, iluminação, perspectiva, fabricantes e calibrações, além de direitos de uso documentados. O script separa pacientes entre treino, validação e teste retido. Arquivos `.hea/.dat` isolados servem ao benchmark sintético de digitalização e não fornecem rótulos visuais.
+`scripts/colab/traube_ecg_digitizer_training.py` requer `manifest.json`, lista de registros com `image_path`, `patient_id`, `lead` canônica e `bbox` normalizada `[x0,y0,x1,y1]` referente ao **recorte visual**. As imagens precisam conter rótulo visível e localização anotada, com variedade de layouts, iluminação, perspectiva, fabricantes e calibrações, além de direitos de uso documentados. O script separa pacientes entre treino, validação e teste retido. Arquivos `.hea/.dat` isolados servem ao benchmark sintético de digitalização e não fornecem rótulos visuais.
 
 ## Pendências de validação
 

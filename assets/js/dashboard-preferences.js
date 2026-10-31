@@ -1,6 +1,6 @@
 /* One account-scoped preference shared by Settings and the Study Dashboard. */
 (() => {
-  const base = "luria:dashboard-layout";
+  const base = "traube:dashboard-layout";
   const valid = value => value === "classic" || value === "cards";
   function read() {
     const store = window.TraubeLocalOwnerStore;
@@ -11,7 +11,7 @@
       // Never interpret those as the new Cards view or adopt a guest preference.
       if (value !== null && value !== undefined && !valid(value)) store.write(base, "classic");
       // Retire the temporary Dashboard-only selector; it is no longer a source of truth.
-      try { store.remove?.("luria:dashboard-view:v1"); } catch { /* Cleanup cannot invalidate a saved choice. */ }
+      try { store.remove?.("traube:dashboard-view:v1"); } catch { /* Cleanup cannot invalidate a saved choice. */ }
       return valid(value) ? value : "classic";
     } catch { return "classic"; }
   }
@@ -19,7 +19,7 @@
     if (!valid(value)) return false;
     try {
       if (window.TraubeLocalOwnerStore?.write(base, value) !== true) return false;
-      window.dispatchEvent(new CustomEvent("luria:dashboard-layout-changed"));
+      window.dispatchEvent(new CustomEvent("traube:dashboard-layout-changed"));
       return true;
     } catch { return false; }
   }

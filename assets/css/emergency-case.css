@@ -1,64 +1,64 @@
 
 /* plantao-paciente-v7.css — estilos do módulo */
 /* Paciente adulto V7: referencial unico para foto, torax e olhos */
-.plantao-scene.luria-adult-v7{position:relative;isolation:isolate;overflow:hidden}
-#plantao-simulator .plantao-scene>.luria-v7-rig[hidden]{display:none!important}
-#plantao-simulator .plantao-scene.luria-adult-v7>.luria-v7-rig{display:block;position:absolute;z-index:2;pointer-events:none;overflow:visible;border:0;padding:0;margin:0;max-width:none;transform:none}
-#plantao-simulator .luria-v7-rig>img{position:absolute;display:block;max-width:none!important;max-height:none!important;object-fit:fill!important;object-position:center!important;aspect-ratio:auto!important;pointer-events:none;user-select:none;-webkit-user-drag:none;box-shadow:none;border:0}
-#plantao-simulator .luria-v7-rig .luria-v7-chest{left:19.375%;top:37.7778%;width:61.875%;height:52.7778%;transform-origin:50% 55%;animation:luriaV7OnlyChest 3.5s ease-in-out infinite}
-@keyframes luriaV7OnlyChest{0%,100%{transform:scale(1)}50%{transform:scale(1.007,1.025)}}
-#plantao-simulator .luria-v7-rig .luria-v7-eyes{left:31.4375%;top:13.1111%;width:15.75%;height:12.4444%;opacity:0;animation:luriaV7OnlyBlink 5.7s steps(1,end) infinite}
-@keyframes luriaV7OnlyBlink{0%,45%,48%,100%{opacity:0}46%,47%{opacity:1}}
-#plantao-simulator .plantao-scene.luria-adult-v7[data-luria-eyes="closed"] .luria-v7-eyes{opacity:1!important;animation:none!important}
-#plantao-simulator .plantao-scene.luria-adult-v7[data-luria-breath="stopped"] .luria-v7-chest{animation:none!important}
-#plantao-simulator .plantao-scene.luria-adult-v7 .plantao-monitor-dock{z-index:6}
-#plantao-simulator .plantao-scene.luria-adult-v7 .plantao-consciousness{z-index:7}
+.plantao-scene.traube-adult-v7{position:relative;isolation:isolate;overflow:hidden}
+#plantao-simulator .plantao-scene>.traube-v7-rig[hidden]{display:none!important}
+#plantao-simulator .plantao-scene.traube-adult-v7>.traube-v7-rig{display:block;position:absolute;z-index:2;pointer-events:none;overflow:visible;border:0;padding:0;margin:0;max-width:none;transform:none}
+#plantao-simulator .traube-v7-rig>img{position:absolute;display:block;max-width:none!important;max-height:none!important;object-fit:fill!important;object-position:center!important;aspect-ratio:auto!important;pointer-events:none;user-select:none;-webkit-user-drag:none;box-shadow:none;border:0}
+#plantao-simulator .traube-v7-rig .traube-v7-chest{left:19.375%;top:37.7778%;width:61.875%;height:52.7778%;transform-origin:50% 55%;animation:traubeV7OnlyChest 3.5s ease-in-out infinite}
+@keyframes traubeV7OnlyChest{0%,100%{transform:scale(1)}50%{transform:scale(1.007,1.025)}}
+#plantao-simulator .traube-v7-rig .traube-v7-eyes{left:31.4375%;top:13.1111%;width:15.75%;height:12.4444%;opacity:0;animation:traubeV7OnlyBlink 5.7s steps(1,end) infinite}
+@keyframes traubeV7OnlyBlink{0%,45%,48%,100%{opacity:0}46%,47%{opacity:1}}
+#plantao-simulator .plantao-scene.traube-adult-v7[data-traube-eyes="closed"] .traube-v7-eyes{opacity:1!important;animation:none!important}
+#plantao-simulator .plantao-scene.traube-adult-v7[data-traube-breath="stopped"] .traube-v7-chest{animation:none!important}
+#plantao-simulator .plantao-scene.traube-adult-v7 .plantao-monitor-dock{z-index:6}
+#plantao-simulator .plantao-scene.traube-adult-v7 .plantao-consciousness{z-index:7}
 @media(max-width:700px){
- body[data-page="plantao"] #plantao-simulator:not([hidden]) .plantao-scene.luria-adult-v7>img#plantao-patient-image{
+ body[data-page="plantao"] #plantao-simulator:not([hidden]) .plantao-scene.traube-adult-v7>img#plantao-patient-image{
   display:block!important;position:absolute!important;inset:0!important;
   width:100%!important;height:100%!important;min-height:100%!important;max-height:none!important;
   object-fit:cover!important;object-position:35% 50%!important;aspect-ratio:auto!important;transform:none!important;
  }
 }
 @media(prefers-reduced-motion:reduce){
- #plantao-simulator .luria-v7-rig .luria-v7-chest,
- #plantao-simulator .luria-v7-rig .luria-v7-eyes{animation:none!important}
+ #plantao-simulator .traube-v7-rig .traube-v7-chest,
+ #plantao-simulator .traube-v7-rig .traube-v7-eyes{animation:none!important}
 }
 
 /* plantao-landscape-v1.css — estilos do módulo */
 /* TRAUBE · Sala de Emergencia: entrada guiada em paisagem no PWA móvel. */
-#luria-landscape-hint[hidden]{display:none!important}
-#luria-landscape-hint{
+#traube-landscape-hint[hidden]{display:none!important}
+#traube-landscape-hint{
   position:fixed!important;inset:0!important;z-index:2147483000!important;
   display:flex!important;align-items:center;justify-content:center;
   box-sizing:border-box;padding:max(26px,env(safe-area-inset-top)) max(25px,env(safe-area-inset-right)) max(26px,env(safe-area-inset-bottom)) max(25px,env(safe-area-inset-left));
   background:rgba(3,15,29,.93);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
   color:#fff;text-align:center;
 }
-#luria-landscape-hint .luria-rotate-panel{width:min(100%,380px);display:flex;align-items:center;flex-direction:column;gap:13px}
-#luria-landscape-hint .luria-rotate-brand{font:700 12px/1.3 ui-sans-serif,system-ui,sans-serif;letter-spacing:.2em;color:#8fc2f5}
-#luria-landscape-hint .luria-rotate-graphic{position:relative;width:128px;height:120px;margin:10px auto;display:grid;place-items:center}
-#luria-landscape-hint .luria-rotate-phone{width:52px;height:91px;border:4px solid #c9e5ff;border-radius:13px;position:relative;box-shadow:0 0 0 9px rgba(69,145,229,.10);animation:luria-turn-hint 3s ease-in-out infinite}
-#luria-landscape-hint .luria-rotate-phone::before{content:"";position:absolute;width:15px;height:4px;top:6px;left:50%;transform:translateX(-50%);border-radius:4px;background:#8fc2f5}
-#luria-landscape-hint .luria-rotate-phone::after{content:"";position:absolute;bottom:6px;left:50%;width:8px;height:8px;border:2px solid #8fc2f5;border-radius:50%;transform:translateX(-50%)}
-#luria-landscape-hint h2{font:700 clamp(24px,6vw,32px)/1.14 ui-sans-serif,system-ui,sans-serif;margin:4px 0 0;color:#fff;letter-spacing:-.035em}
-#luria-landscape-hint p{font:400 14px/1.5 ui-sans-serif,system-ui,sans-serif;margin:0;max-width:300px;color:#b7d0e8}
-#luria-landscape-hint .luria-rotate-tip{font-size:12px;color:#8caac7}
-#luria-landscape-hint button{margin-top:14px;border:1px solid rgba(176,208,242,.42);border-radius:12px;background:rgba(255,255,255,.08);color:#fff;font:600 13px/1 ui-sans-serif,system-ui,sans-serif;min-height:44px;padding:12px 22px}
-@keyframes luria-turn-hint{0%,18%,85%,100%{transform:rotate(0)}42%,66%{transform:rotate(-90deg)}}
-@media(prefers-reduced-motion:reduce){#luria-landscape-hint .luria-rotate-phone{animation:none;transform:rotate(-90deg)}}
+#traube-landscape-hint .traube-rotate-panel{width:min(100%,380px);display:flex;align-items:center;flex-direction:column;gap:13px}
+#traube-landscape-hint .traube-rotate-brand{font:700 12px/1.3 ui-sans-serif,system-ui,sans-serif;letter-spacing:.2em;color:#8fc2f5}
+#traube-landscape-hint .traube-rotate-graphic{position:relative;width:128px;height:120px;margin:10px auto;display:grid;place-items:center}
+#traube-landscape-hint .traube-rotate-phone{width:52px;height:91px;border:4px solid #c9e5ff;border-radius:13px;position:relative;box-shadow:0 0 0 9px rgba(69,145,229,.10);animation:traube-turn-hint 3s ease-in-out infinite}
+#traube-landscape-hint .traube-rotate-phone::before{content:"";position:absolute;width:15px;height:4px;top:6px;left:50%;transform:translateX(-50%);border-radius:4px;background:#8fc2f5}
+#traube-landscape-hint .traube-rotate-phone::after{content:"";position:absolute;bottom:6px;left:50%;width:8px;height:8px;border:2px solid #8fc2f5;border-radius:50%;transform:translateX(-50%)}
+#traube-landscape-hint h2{font:700 clamp(24px,6vw,32px)/1.14 ui-sans-serif,system-ui,sans-serif;margin:4px 0 0;color:#fff;letter-spacing:-.035em}
+#traube-landscape-hint p{font:400 14px/1.5 ui-sans-serif,system-ui,sans-serif;margin:0;max-width:300px;color:#b7d0e8}
+#traube-landscape-hint .traube-rotate-tip{font-size:12px;color:#8caac7}
+#traube-landscape-hint button{margin-top:14px;border:1px solid rgba(176,208,242,.42);border-radius:12px;background:rgba(255,255,255,.08);color:#fff;font:600 13px/1 ui-sans-serif,system-ui,sans-serif;min-height:44px;padding:12px 22px}
+@keyframes traube-turn-hint{0%,18%,85%,100%{transform:rotate(0)}42%,66%{transform:rotate(-90deg)}}
+@media(prefers-reduced-motion:reduce){#traube-landscape-hint .traube-rotate-phone{animation:none;transform:rotate(-90deg)}}
 
 /* Para outros módulos e para navegadores desktop: estilo original intacto. */
 @media(orientation:landscape) and (max-height:620px) and (max-width:1150px){
- body.luria-case-landscape{overflow:hidden!important;overscroll-behavior:none!important;background:#06182d!important}
- body.luria-case-landscape #plantao-simulator:not([hidden]){
+ body.traube-case-landscape{overflow:hidden!important;overscroll-behavior:none!important;background:#06182d!important}
+ body.traube-case-landscape #plantao-simulator:not([hidden]){
   position:fixed!important;inset:0!important;z-index:11000!important;
   display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:45px minmax(0,1fr)!important;
   width:100vw!important;height:100dvh!important;min-height:0!important;max-height:100dvh!important;
   padding:0!important;margin:0!important;gap:0!important;overflow:hidden!important;border:0!important;background:#06182d!important
  }
- body.luria-case-landscape #plantao-simulator:not([hidden])>.plantao-patient-card{display:none!important}
- body.luria-case-landscape #plantao-simulator:not([hidden])>.plantao-sim-top{
+ body.traube-case-landscape #plantao-simulator:not([hidden])>.plantao-patient-card{display:none!important}
+ body.traube-case-landscape #plantao-simulator:not([hidden])>.plantao-sim-top{
   position:relative!important;inset:auto!important;z-index:20!important;
   display:grid!important;grid-template-columns:auto minmax(0,1fr) auto auto!important;align-items:center!important;
   grid-row:1!important;grid-column:1!important;min-height:45px!important;height:45px!important;
@@ -66,52 +66,52 @@
   border:0!important;border-bottom:1px solid rgba(146,201,250,.22)!important;border-radius:0!important;
   background:#071c35!important;gap:12px!important;box-sizing:border-box!important
  }
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-sim-top #plantao-back{
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-sim-top #plantao-back{
   display:block!important;grid-column:1!important;position:static!important;transform:none!important;
   padding:7px 12px!important;height:34px!important;min-height:34px!important;width:auto!important;
   border-radius:10px!important;font-size:11px!important;white-space:nowrap!important;color:#fff!important;
   text-indent:0!important;background:#15365b!important
  }
- body.luria-case-landscape #plantao-back::after{display:none!important;content:none!important}
- body.luria-case-landscape .plantao-sim-top .plantao-pwa-case-summary{
+ body.traube-case-landscape #plantao-back::after{display:none!important;content:none!important}
+ body.traube-case-landscape .plantao-sim-top .plantao-pwa-case-summary{
   display:flex!important;flex-direction:row!important;gap:7px!important;align-items:center!important;
   grid-column:2!important;min-width:0!important;margin:0!important;color:#e6f3ff!important;overflow:hidden!important
  }
- body.luria-case-landscape .plantao-sim-top .plantao-pwa-case-summary span{font-size:10px!important;flex:none}
- body.luria-case-landscape .plantao-sim-top .plantao-pwa-case-summary strong{display:block!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;font-size:12px!important}
- body.luria-case-landscape .plantao-sim-top .plantao-clock{
+ body.traube-case-landscape .plantao-sim-top .plantao-pwa-case-summary span{font-size:10px!important;flex:none}
+ body.traube-case-landscape .plantao-sim-top .plantao-pwa-case-summary strong{display:block!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;font-size:12px!important}
+ body.traube-case-landscape .plantao-sim-top .plantao-clock{
   grid-column:3!important;grid-row:1!important;display:flex!important;gap:6px!important;align-items:center!important;color:#fff!important;margin:0!important;white-space:nowrap!important
  }
- body.luria-case-landscape .plantao-sim-top .plantao-clock span{display:none!important}
- body.luria-case-landscape .plantao-sim-top .plantao-clock strong{margin:0!important;font-size:17px!important;color:#fff!important}
- body.luria-case-landscape .plantao-sim-top .plantao-pwa-live{grid-column:4!important;font-size:10px!important;white-space:nowrap!important}
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-bedside{
+ body.traube-case-landscape .plantao-sim-top .plantao-clock span{display:none!important}
+ body.traube-case-landscape .plantao-sim-top .plantao-clock strong{margin:0!important;font-size:17px!important;color:#fff!important}
+ body.traube-case-landscape .plantao-sim-top .plantao-pwa-live{grid-column:4!important;font-size:10px!important;white-space:nowrap!important}
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-bedside{
   grid-row:2!important;grid-column:1!important;display:block!important;position:relative!important;
   width:100%!important;height:100%!important;min-height:0!important;max-height:none!important;
   padding:0!important;margin:0!important;overflow:hidden!important;background:#071a30!important;border:0!important
  }
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-action-rail{
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-action-rail{
   position:absolute!important;inset:0 auto 0 0!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;
   width:138px!important;height:100%!important;max-width:138px!important;min-width:0!important;
   box-sizing:border-box!important;margin:0!important;padding:6px 5px 7px max(5px,env(safe-area-inset-left))!important;
   border:0!important;border-right:1px solid rgba(142,197,240,.30)!important;z-index:14!important;background:#091e37!important;overflow:hidden!important;
   pointer-events:auto!important
  }
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-score-live{display:none!important}
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-pwa-patient-tab{
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-score-live{display:none!important}
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-pwa-patient-tab{
   position:relative!important;inset:auto!important;display:block!important;transform:none!important;
   flex:0 0 30px!important;width:100%!important;min-width:0!important;height:30px!important;min-height:30px!important;max-height:30px!important;
   padding:2px 6px!important;margin:0 0 5px!important;border-radius:9px!important;font-size:11px!important;
   color:#fff!important;background:#214d79!important;z-index:2!important;pointer-events:auto!important
  }
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-action-tabs{
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-action-tabs{
   position:relative!important;inset:auto!important;transform:none!important;
   flex:1 1 auto!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
   grid-template-rows:repeat(3,minmax(0,1fr))!important;gap:5px!important;
   min-height:0!important;width:100%!important;height:auto!important;padding:0!important;margin:0!important;
   overflow-y:auto!important;overflow-x:hidden!important;pointer-events:auto!important;align-content:stretch!important
  }
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-action-tabs .plantao-action-tab{
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-action-tabs .plantao-action-tab{
   position:relative!important;inset:auto!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;
   grid-column:auto!important;grid-row:auto!important;transform:none!important;
   display:flex!important;align-items:center!important;justify-content:center!important;flex-direction:column!important;
@@ -120,91 +120,91 @@
   border-radius:9px!important;background:#153554!important;color:#e4f4ff!important;border:1px solid rgba(140,189,233,.38)!important;
   white-space:normal!important;text-align:center!important;font-size:9px!important;line-height:1.13!important;pointer-events:auto!important
  }
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-action-tab>span:first-child{font-size:19px!important;line-height:1!important}
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-scene{
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-action-tab>span:first-child{font-size:19px!important;line-height:1!important}
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-scene{
   position:absolute!important;top:0!important;right:0!important;bottom:0!important;left:138px!important;
   width:auto!important;height:100%!important;min-height:0!important;max-height:none!important;
   padding:0!important;margin:0!important;border:0!important;border-radius:0!important;overflow:hidden!important;background:#102d49!important
  }
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-scene>img#plantao-patient-image{
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-scene>img#plantao-patient-image{
   position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-height:none!important;
   display:block!important;object-fit:cover!important;object-position:43% 50%!important;aspect-ratio:auto!important
  }
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-scene>.plantao-monitor-dock{
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-scene>.plantao-monitor-dock{
   position:absolute!important;inset:6px max(7px,env(safe-area-inset-right)) 6px auto!important;
   z-index:8!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:5px!important;
   width:clamp(204px,32%,254px)!important;min-width:0!important;max-width:254px!important;height:auto!important;min-height:0!important;
   padding:0!important;margin:0!important;overflow:visible!important;box-sizing:border-box!important;background:transparent!important
  }
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-monitor-dock>.plantao-monitor{
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-monitor-dock>.plantao-monitor{
   position:relative!important;inset:auto!important;transform:none!important;flex:0 0 min(58%,211px)!important;
   display:grid!important;grid-template-columns:minmax(0,1fr) 56px!important;grid-template-rows:repeat(3,minmax(0,1fr)) 19px!important;
   width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;max-width:none!important;min-width:0!important;
   margin:0!important;padding:5px!important;gap:2px!important;aspect-ratio:auto!important;
   border:3px solid #93c4e9!important;border-radius:12px!important;background:#051624!important;box-shadow:0 6px 18px rgba(0,0,0,.34)!important;
  }
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-monitor-dock>.plantao-feed{
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-monitor-dock>.plantao-feed{
   position:relative!important;inset:auto!important;transform:none!important;flex:1 1 auto!important;
   display:block!important;width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;
   overflow-y:auto!important;overscroll-behavior:contain!important;-webkit-overflow-scrolling:touch;
   padding:7px 9px!important;margin:0!important;border:1px solid rgba(134,195,239,.34)!important;border-radius:11px!important;
   background:rgba(5,20,36,.95)!important;color:#e8f4ff!important
  }
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-feed .plantao-section-head h2{font-size:11px!important;color:#d8edff!important;margin:0!important}
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-feed-list{max-height:none!important;margin-top:5px!important;gap:4px!important;overflow:visible!important}
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-feed-item{padding:5px 6px!important;font-size:10px!important}
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-feed-item p{font-size:10px!important;line-height:1.25!important;margin:3px 0 0!important}
- body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-patient-image{z-index:0!important}
- body.luria-case-landscape #plantao-simulator:not([hidden]) .luria-v7-rig{z-index:1!important}
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-monitor-dock{z-index:8!important}
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-action-drawer:not([hidden]),
- body.luria-case-landscape #plantao-action-drawer.plantao-action-drawer-pwa-portal:not([hidden]){
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-feed .plantao-section-head h2{font-size:11px!important;color:#d8edff!important;margin:0!important}
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-feed-list{max-height:none!important;margin-top:5px!important;gap:4px!important;overflow:visible!important}
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-feed-item{padding:5px 6px!important;font-size:10px!important}
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-feed-item p{font-size:10px!important;line-height:1.25!important;margin:3px 0 0!important}
+ body.traube-case-landscape #plantao-simulator:not([hidden]) #plantao-patient-image{z-index:0!important}
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .traube-v7-rig{z-index:1!important}
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-monitor-dock{z-index:8!important}
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-action-drawer:not([hidden]),
+ body.traube-case-landscape #plantao-action-drawer.plantao-action-drawer-pwa-portal:not([hidden]){
   position:fixed!important;z-index:30000!important;top:48px!important;left:max(7px,env(safe-area-inset-left))!important;
   right:max(7px,env(safe-area-inset-right))!important;bottom:7px!important;display:flex!important;flex-direction:column!important;
   width:auto!important;height:auto!important;max-width:none!important;min-height:0!important;max-height:none!important;overflow:hidden!important;
   padding:10px!important;border-radius:16px!important;background:#101e31!important;color:#fff!important
  }
- body.luria-case-landscape #plantao-action-drawer[hidden]{display:none!important}
- body.luria-case-landscape #plantao-action-drawer .plantao-actions{min-height:0!important;overflow-y:auto!important;flex:1 1 auto!important}
- body.luria-case-landscape #plantao-action-drawer .plantao-drawer-head{flex:0 0 auto!important}
+ body.traube-case-landscape #plantao-action-drawer[hidden]{display:none!important}
+ body.traube-case-landscape #plantao-action-drawer .plantao-actions{min-height:0!important;overflow-y:auto!important;flex:1 1 auto!important}
+ body.traube-case-landscape #plantao-action-drawer .plantao-drawer-head{flex:0 0 auto!important}
 }
 @media(orientation:landscape) and (max-height:375px) and (max-width:1150px){
- body.luria-case-landscape #plantao-simulator:not([hidden]){grid-template-rows:39px minmax(0,1fr)!important}
- body.luria-case-landscape #plantao-simulator:not([hidden])>.plantao-sim-top{height:39px!important;min-height:39px!important;max-height:39px!important}
- body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-monitor-dock>.plantao-monitor{flex-basis:57%!important}
+ body.traube-case-landscape #plantao-simulator:not([hidden]){grid-template-rows:39px minmax(0,1fr)!important}
+ body.traube-case-landscape #plantao-simulator:not([hidden])>.plantao-sim-top{height:39px!important;min-height:39px!important;max-height:39px!important}
+ body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-monitor-dock>.plantao-monitor{flex-basis:57%!important}
 }
 
 /* plantao-landscape-v2.css — estilos do módulo */
 /* TRAUBE — Sala de Emergência em paisagem, revisão dos menus iOS.
    Ativo apenas durante um caso aberto; Biblioteca/Debriefing não são alterados. */
 
-/* O shell V2 declara !important dentro de @layer luria-ui-navigation.
+/* O shell V2 declara !important dentro de @layer traube-ui-navigation.
    As regras de ocultação precisam fazer parte DA MESMA layer. */
-@layer luria-ui-navigation {
+@layer traube-ui-navigation {
   @media (orientation: landscape) and (max-height: 620px) and (max-width: 1150px) {
-    html:has(body.luria-case-landscape) {
+    html:has(body.traube-case-landscape) {
       height:100%!important;
       min-height:100%!important;
       overflow:hidden!important;
       scroll-padding:0!important;
     }
-    body[data-ui-nav="v2"].luria-case-landscape {
+    body[data-ui-nav="v2"].traube-case-landscape {
       --ui-bottom-navigation:0px!important;
       --ui-nav-height:0px!important;
       overflow:hidden!important;
       height:100dvh!important;
       min-height:100dvh!important;
     }
-    body[data-ui-nav="v2"].luria-case-landscape #ui-mobile-navigation,
-    body[data-ui-nav="v2"].luria-case-landscape .ui-mobile-navigation,
-    body[data-ui-nav="v2"].luria-case-landscape .topbar,
-    body[data-ui-nav="v2"].luria-case-landscape #sidebar,
-    body[data-ui-nav="v2"].luria-case-landscape #sidebar-backdrop {
+    body[data-ui-nav="v2"].traube-case-landscape #ui-mobile-navigation,
+    body[data-ui-nav="v2"].traube-case-landscape .ui-mobile-navigation,
+    body[data-ui-nav="v2"].traube-case-landscape .topbar,
+    body[data-ui-nav="v2"].traube-case-landscape #sidebar,
+    body[data-ui-nav="v2"].traube-case-landscape #sidebar-backdrop {
       display:none!important;
       visibility:hidden!important;
       pointer-events:none!important;
     }
-    body[data-ui-nav="v2"].luria-case-landscape .app-shell {
+    body[data-ui-nav="v2"].traube-case-landscape .app-shell {
       margin:0!important;
       padding:0!important;
       width:100vw!important;
@@ -212,7 +212,7 @@
       min-height:0!important;
       overflow:hidden!important;
     }
-    body[data-ui-nav="v2"].luria-case-landscape .main {
+    body[data-ui-nav="v2"].traube-case-landscape .main {
       margin:0!important;
       padding:0!important;
       width:100%!important;
@@ -221,7 +221,7 @@
       border-radius:0!important;
       overflow:hidden!important;
     }
-    body[data-ui-nav="v2"].luria-case-landscape .main>.page {
+    body[data-ui-nav="v2"].traube-case-landscape .main>.page {
       margin:0!important;
       padding:0!important;
       padding-bottom:0!important;
@@ -235,22 +235,22 @@
 }
 @media(orientation:landscape) and (max-height:620px) and (max-width:1150px) {
   /* Evita a barra escura global cobrindo o jogo, também no shell antigo. */
-  body.luria-case-landscape .ui-mobile-navigation,
-  body.luria-case-landscape #ui-mobile-navigation,
-  body.luria-case-landscape>.app-shell .topbar {
+  body.traube-case-landscape .ui-mobile-navigation,
+  body.traube-case-landscape #ui-mobile-navigation,
+  body.traube-case-landscape>.app-shell .topbar {
     display:none!important;
   }
-  body.luria-case-landscape #plantao-simulator:not([hidden]) {
-    --luria-rail-w:clamp(148px,20vw,174px);
+  body.traube-case-landscape #plantao-simulator:not([hidden]) {
+    --traube-rail-w:clamp(148px,20vw,174px);
   }
-  body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-action-rail {
+  body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-action-rail {
     left:0!important;
     right:auto!important;
     top:0!important;
     bottom:0!important;
-    width:var(--luria-rail-w)!important;
-    max-width:var(--luria-rail-w)!important;
-    min-width:var(--luria-rail-w)!important;
+    width:var(--traube-rail-w)!important;
+    max-width:var(--traube-rail-w)!important;
+    min-width:var(--traube-rail-w)!important;
     padding:6px 7px 6px max(7px,env(safe-area-inset-left))!important;
     gap:0!important;
     display:flex!important;
@@ -258,7 +258,7 @@
     overflow:hidden!important;
     box-sizing:border-box!important;
   }
-  body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-pwa-patient-tab {
+  body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-pwa-patient-tab {
     display:flex!important;
     align-items:center!important;
     justify-content:center!important;
@@ -278,7 +278,7 @@
     white-space:nowrap!important;
     overflow:hidden!important;
   }
-  body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs {
+  body.traube-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs {
     display:grid!important;
     grid-template-columns:minmax(0,1fr)!important;
     grid-template-rows:none!important;
@@ -297,8 +297,8 @@
     scrollbar-width:none;
     align-content:stretch!important;
   }
-  body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs::-webkit-scrollbar {display:none}
-  body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs .plantao-action-tab {
+  body.traube-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs::-webkit-scrollbar {display:none}
+  body.traube-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs .plantao-action-tab {
     position:relative!important;
     inset:auto!important;
     top:auto!important;
@@ -334,12 +334,12 @@
     overflow-wrap:normal!important;
     box-sizing:border-box!important;
   }
-  body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs .plantao-action-tab:where(:hover,:focus-visible,[aria-expanded="true"],.active) {
+  body.traube-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs .plantao-action-tab:where(:hover,:focus-visible,[aria-expanded="true"],.active) {
     background:#1c5b94!important;
     border-color:#90c4f3!important;
     color:#fff!important;
   }
-  body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs .plantao-action-tab>span:first-child {
+  body.traube-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs .plantao-action-tab>span:first-child {
     display:inline-flex!important;
     align-items:center!important;
     justify-content:center!important;
@@ -350,7 +350,7 @@
     line-height:1!important;
     text-align:center!important;
   }
-  body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs .plantao-action-tab>span:last-child {
+  body.traube-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs .plantao-action-tab>span:last-child {
     display:block!important;
     flex:1 1 auto!important;
     min-width:0!important;
@@ -365,30 +365,30 @@
     word-break:normal!important;
     hyphens:auto!important;
   }
-  body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-scene {
-    left:var(--luria-rail-w)!important;
-    width:calc(100% - var(--luria-rail-w))!important;
+  body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-scene {
+    left:var(--traube-rail-w)!important;
+    width:calc(100% - var(--traube-rail-w))!important;
   }
-  body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-monitor-dock>.plantao-monitor {
+  body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-monitor-dock>.plantao-monitor {
     z-index:8!important;
   }
   /* O drawer continua funcional, acima do cenário e sem barra global. */
-  body.luria-case-landscape #plantao-action-drawer:not([hidden]){
+  body.traube-case-landscape #plantao-action-drawer:not([hidden]){
     max-height:calc(100dvh - 55px)!important;
   }
 }
 @media(orientation:landscape) and (max-height:355px) and (max-width:1150px){
-  body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-pwa-patient-tab{
+  body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-pwa-patient-tab{
     flex-basis:30px!important;
     min-height:30px!important;
     height:30px!important;
     max-height:30px!important;
   }
-  body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs{
+  body.traube-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs{
     grid-auto-rows:minmax(31px,1fr)!important;
     gap:3px!important;
   }
-  body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs .plantao-action-tab{
+  body.traube-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs .plantao-action-tab{
     min-height:31px!important;
     padding:3px 6px!important;
   }
@@ -397,14 +397,14 @@
 /* plantao-mulher-adulta-v5.css — estilos do módulo */
 /* TRAUBE · Mulher adulta: imagem V5 aprovada, piscada V8 mais macia: a foto e a cama ficam imóveis.
    Apenas o recorte real dos olhos pisca suavemente e o tórax respira. */
-#plantao-simulator .plantao-scene.luria-woman-v5{position:relative;isolation:isolate;overflow:hidden}
-#plantao-simulator .plantao-scene > .luria-woman-v5-rig[hidden]{display:none!important}
-#plantao-simulator .plantao-scene.luria-woman-v5 > .luria-woman-v5-rig{
+#plantao-simulator .plantao-scene.traube-woman-v5{position:relative;isolation:isolate;overflow:hidden}
+#plantao-simulator .plantao-scene > .traube-woman-v5-rig[hidden]{display:none!important}
+#plantao-simulator .plantao-scene.traube-woman-v5 > .traube-woman-v5-rig{
   display:block!important;position:absolute!important;z-index:2!important;
   pointer-events:none!important;overflow:visible!important;border:0!important;
   padding:0!important;margin:0!important;max-width:none!important;transform:none!important;
 }
-#plantao-simulator .luria-woman-v5-rig>img{
+#plantao-simulator .traube-woman-v5-rig>img{
   position:absolute!important;display:block!important;max-width:none!important;
   max-height:none!important;object-fit:fill!important;object-position:center!important;
   aspect-ratio:auto!important;pointer-events:none!important;user-select:none!important;
@@ -412,22 +412,22 @@
   border-radius:0!important;padding:0!important;margin:0!important;
   right:auto!important;bottom:auto!important;
 }
-#plantao-simulator .luria-woman-v5-rig .luria-woman-v5-chest{
+#plantao-simulator .traube-woman-v5-rig .traube-woman-v5-chest{
   left:25.717703%!important;top:38.257173%!important;
   width:50.239234%!important;height:49.415515%!important;
-  transform-origin:50% 58%;animation:luriaWomanV5Breathe 3.5s ease-in-out infinite;
+  transform-origin:50% 58%;animation:traubeWomanV5Breathe 3.5s ease-in-out infinite;
 }
-@keyframes luriaWomanV5Breathe{
+@keyframes traubeWomanV5Breathe{
   0%,100%{transform:scale(1)}
   50%{transform:scale(1.007,1.025)}
 }
-#plantao-simulator .luria-woman-v5-rig .luria-woman-v5-eyes{
+#plantao-simulator .traube-woman-v5-rig .traube-woman-v5-eyes{
   left:33.492823%!important;top:11.689692%!important;
   width:17.344498%!important;height:20.191286%!important;
-  opacity:0;animation:luriaWomanV5Blink 6.1s ease-in-out infinite;
+  opacity:0;animation:traubeWomanV5Blink 6.1s ease-in-out infinite;
   transition:opacity 590ms cubic-bezier(.42,0,.58,1);
 }
-@keyframes luriaWomanV5Blink{
+@keyframes traubeWomanV5Blink{
   0%,42.7%,52.2%,100%{opacity:0}
   44.3%{opacity:.08}
   45.5%{opacity:.24}
@@ -437,38 +437,38 @@
   49.5%{opacity:.24}
   50.7%{opacity:.08}
 }
-#plantao-simulator .plantao-scene.luria-woman-v5[data-luria-eyes="closed"] .luria-woman-v5-eyes{
+#plantao-simulator .plantao-scene.traube-woman-v5[data-traube-eyes="closed"] .traube-woman-v5-eyes{
   opacity:1!important;animation:none!important;
 }
-#plantao-simulator .plantao-scene.luria-woman-v5[data-luria-breath="stopped"] .luria-woman-v5-chest{
+#plantao-simulator .plantao-scene.traube-woman-v5[data-traube-breath="stopped"] .traube-woman-v5-chest{
   animation:none!important;
 }
-#plantao-simulator .plantao-scene.luria-woman-v5 .plantao-monitor-dock{z-index:8}
-#plantao-simulator .plantao-scene.luria-woman-v5 .plantao-consciousness{z-index:9}
+#plantao-simulator .plantao-scene.traube-woman-v5 .plantao-monitor-dock{z-index:8}
+#plantao-simulator .plantao-scene.traube-woman-v5 .plantao-consciousness{z-index:9}
 @media(orientation:landscape) and (max-height:620px) and (max-width:1150px){
-  body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-scene.luria-woman-v5>img#plantao-patient-image{
+  body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-scene.traube-woman-v5>img#plantao-patient-image{
     object-fit:cover!important;object-position:44% 50%!important;
   }
-  body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-scene.luria-woman-v5>.luria-woman-v5-rig{
+  body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-scene.traube-woman-v5>.traube-woman-v5-rig{
     z-index:2!important;
   }
 }
 @media(prefers-reduced-motion:reduce){
-  #plantao-simulator .luria-woman-v5-rig .luria-woman-v5-chest,
-  #plantao-simulator .luria-woman-v5-rig .luria-woman-v5-eyes{animation:none!important}
+  #plantao-simulator .traube-woman-v5-rig .traube-woman-v5-chest,
+  #plantao-simulator .traube-woman-v5-rig .traube-woman-v5-eyes{animation:none!important}
 }
 
 /* plantao-homem-idoso-v7.css — estilos do módulo */
 /* TRAUBE · Homem idoso V7: foto estável, respiração localizada e piscada macia.
  * Geometria acompanha a imagem original de 1672x941 em web e PWA. */
-#plantao-simulator .plantao-scene.luria-elderly-man-v7{position:relative;isolation:isolate;overflow:hidden}
-#plantao-simulator .plantao-scene>.luria-elderly-man-v7-rig[hidden]{display:none!important}
-#plantao-simulator .plantao-scene.luria-elderly-man-v7>.luria-elderly-man-v7-rig{
+#plantao-simulator .plantao-scene.traube-elderly-man-v7{position:relative;isolation:isolate;overflow:hidden}
+#plantao-simulator .plantao-scene>.traube-elderly-man-v7-rig[hidden]{display:none!important}
+#plantao-simulator .plantao-scene.traube-elderly-man-v7>.traube-elderly-man-v7-rig{
   display:block!important;position:absolute!important;z-index:2!important;
   pointer-events:none!important;overflow:visible!important;border:0!important;
   padding:0!important;margin:0!important;max-width:none!important;transform:none!important;
 }
-#plantao-simulator .luria-elderly-man-v7-rig>img{
+#plantao-simulator .traube-elderly-man-v7-rig>img{
   position:absolute!important;display:block!important;max-width:none!important;
   max-height:none!important;object-fit:fill!important;object-position:center!important;
   aspect-ratio:auto!important;pointer-events:none!important;user-select:none!important;
@@ -476,23 +476,23 @@
   border-radius:0!important;padding:0!important;margin:0!important;
   right:auto!important;bottom:auto!important;
 }
-#plantao-simulator .luria-elderly-man-v7-rig .luria-elderly-man-v7-chest{
+#plantao-simulator .traube-elderly-man-v7-rig .traube-elderly-man-v7-chest{
   left:14.952153%!important;top:44.633369%!important;
   width:69.976077%!important;height:53.134963%!important;
-  transform-origin:50% 58%;animation:luriaElderlyManV7Breathe 3.9s ease-in-out infinite;
+  transform-origin:50% 58%;animation:traubeElderlyManV7Breathe 3.9s ease-in-out infinite;
 }
-@keyframes luriaElderlyManV7Breathe{
+@keyframes traubeElderlyManV7Breathe{
   0%,100%{transform:scale(1)}
   50%{transform:scale(1.006,1.022)}
 }
-#plantao-simulator .luria-elderly-man-v7-rig .luria-elderly-man-v7-eyes{
+#plantao-simulator .traube-elderly-man-v7-rig .traube-elderly-man-v7-eyes{
   left:33.492823%!important;top:12.752391%!important;
   width:26.913876%!important;height:29.755579%!important;
   opacity:0;
-  animation:luriaElderlyManV7Blink 5.8s ease-in-out infinite;
+  animation:traubeElderlyManV7Blink 5.8s ease-in-out infinite;
   transition:opacity 420ms cubic-bezier(.25,.46,.45,.94);
 }
-@keyframes luriaElderlyManV7Blink{
+@keyframes traubeElderlyManV7Blink{
   0%,43.4%,50.8%,100%{opacity:0}
   44.8%{opacity:.08}
   45.8%{opacity:.26}
@@ -502,25 +502,25 @@
   49.2%{opacity:.26}
   50.2%{opacity:.08}
 }
-#plantao-simulator .plantao-scene.luria-elderly-man-v7[data-luria-eyes="closed"] .luria-elderly-man-v7-eyes{
+#plantao-simulator .plantao-scene.traube-elderly-man-v7[data-traube-eyes="closed"] .traube-elderly-man-v7-eyes{
   opacity:1!important;animation:none!important;
 }
-#plantao-simulator .plantao-scene.luria-elderly-man-v7[data-luria-breath="stopped"] .luria-elderly-man-v7-chest{
+#plantao-simulator .plantao-scene.traube-elderly-man-v7[data-traube-breath="stopped"] .traube-elderly-man-v7-chest{
   animation:none!important;
 }
-#plantao-simulator .plantao-scene.luria-elderly-man-v7 .plantao-monitor-dock{z-index:8}
-#plantao-simulator .plantao-scene.luria-elderly-man-v7 .plantao-consciousness{z-index:9}
+#plantao-simulator .plantao-scene.traube-elderly-man-v7 .plantao-monitor-dock{z-index:8}
+#plantao-simulator .plantao-scene.traube-elderly-man-v7 .plantao-consciousness{z-index:9}
 @media(orientation:landscape) and (max-height:620px) and (max-width:1150px){
-  body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-scene.luria-elderly-man-v7>img#plantao-patient-image{
+  body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-scene.traube-elderly-man-v7>img#plantao-patient-image{
     object-fit:cover!important;object-position:49% 50%!important;
   }
-  body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-scene.luria-elderly-man-v7>.luria-elderly-man-v7-rig{
+  body.traube-case-landscape #plantao-simulator:not([hidden]) .plantao-scene.traube-elderly-man-v7>.traube-elderly-man-v7-rig{
     z-index:2!important;
   }
 }
 @media(prefers-reduced-motion:reduce){
-  #plantao-simulator .luria-elderly-man-v7-rig .luria-elderly-man-v7-chest,
-  #plantao-simulator .luria-elderly-man-v7-rig .luria-elderly-man-v7-eyes{animation:none!important}
+  #plantao-simulator .traube-elderly-man-v7-rig .traube-elderly-man-v7-chest,
+  #plantao-simulator .traube-elderly-man-v7-rig .traube-elderly-man-v7-eyes{animation:none!important}
 }
 
 
@@ -528,15 +528,15 @@
  * A fotografia principal nunca e animada ou trocada para simular as palpebras.
  * Camadas suaves adaptadas aos enquadramentos web (1300x900) e PWA (941x1672).
  */
-#plantao-simulator .plantao-scene.luria-pregnant-v1{
+#plantao-simulator .plantao-scene.traube-pregnant-v1{
   position:relative;
   isolation:isolate;
   overflow:hidden;
 }
-#plantao-simulator .plantao-scene>.luria-pregnant-v1-rig[hidden]{
+#plantao-simulator .plantao-scene>.traube-pregnant-v1-rig[hidden]{
   display:none!important;
 }
-#plantao-simulator .plantao-scene.luria-pregnant-v1>.luria-pregnant-v1-rig{
+#plantao-simulator .plantao-scene.traube-pregnant-v1>.traube-pregnant-v1-rig{
   display:block!important;
   position:absolute!important;
   z-index:2!important;
@@ -548,8 +548,8 @@
   max-width:none!important;
   transform:none!important;
 }
-#plantao-simulator .luria-pregnant-v1-rig .luria-pregnant-v1-breath,
-#plantao-simulator .luria-pregnant-v1-rig .luria-pregnant-v1-eyes{
+#plantao-simulator .traube-pregnant-v1-rig .traube-pregnant-v1-breath,
+#plantao-simulator .traube-pregnant-v1-rig .traube-pregnant-v1-eyes{
   position:absolute!important;
   display:block!important;
   inset:0!important;
@@ -558,7 +558,7 @@
   pointer-events:none!important;
   overflow:visible!important;
 }
-#plantao-simulator .luria-pregnant-v1-rig img{
+#plantao-simulator .traube-pregnant-v1-rig img{
   display:block!important;
   position:absolute!important;
   inset:0!important;
@@ -579,22 +579,22 @@
   -webkit-user-drag:none!important;
 }
 /* Mascara fixa, borda difusa: move apenas o conteudo do torax e barriga. */
-#plantao-simulator .luria-pregnant-v1-rig .luria-pregnant-v1-breath{
+#plantao-simulator .traube-pregnant-v1-rig .traube-pregnant-v1-breath{
   -webkit-mask-image:radial-gradient(ellipse 29% 32% at 53% 59%,#000 20%,rgba(0,0,0,.85) 50%,transparent 95%);
   mask-image:radial-gradient(ellipse 29% 32% at 53% 59%,#000 20%,rgba(0,0,0,.85) 50%,transparent 95%);
 }
-#plantao-simulator .luria-pregnant-v1-breath>img{
+#plantao-simulator .traube-pregnant-v1-breath>img{
   transform-origin:52% 69%;
-  animation:luriaPregnantV1Breathe 3.75s ease-in-out infinite;
+  animation:traubePregnantV1Breathe 3.75s ease-in-out infinite;
   animation-duration:inherit;
   will-change:transform;
 }
-@keyframes luriaPregnantV1Breathe{
+@keyframes traubePregnantV1Breathe{
   0%,100%{transform:scale(1)}
   50%{transform:scale(1.004,1.020)}
 }
 /* Duas areas pequenas de olho, nunca o rosto inteiro. */
-#plantao-simulator .luria-pregnant-v1-rig .luria-pregnant-v1-eyes{
+#plantao-simulator .traube-pregnant-v1-rig .traube-pregnant-v1-eyes{
   -webkit-mask-image:
     radial-gradient(ellipse 3.3% 2.4% at 39.7% 35.5%,#000 18%,rgba(0,0,0,.9) 40%,transparent 100%),
     radial-gradient(ellipse 3.1% 2.35% at 43.8% 33.9%,#000 18%,rgba(0,0,0,.9) 40%,transparent 100%);
@@ -602,10 +602,10 @@
     radial-gradient(ellipse 3.3% 2.4% at 39.7% 35.5%,#000 18%,rgba(0,0,0,.9) 40%,transparent 100%),
     radial-gradient(ellipse 3.1% 2.35% at 43.8% 33.9%,#000 18%,rgba(0,0,0,.9) 40%,transparent 100%);
   opacity:0;
-  animation:luriaPregnantV1Blink 6.4s linear infinite;
+  animation:traubePregnantV1Blink 6.4s linear infinite;
   will-change:opacity;
 }
-@keyframes luriaPregnantV1Blink{
+@keyframes traubePregnantV1Blink{
   0%,42%,52%,100%{opacity:0}
   44%{opacity:.08}
   45.3%{opacity:.28}
@@ -615,20 +615,20 @@
   50.5%{opacity:.22}
   51.5%{opacity:.04}
 }
-#plantao-simulator .plantao-scene.luria-pregnant-v1[data-luria-eyes="closed"] .luria-pregnant-v1-eyes{
+#plantao-simulator .plantao-scene.traube-pregnant-v1[data-traube-eyes="closed"] .traube-pregnant-v1-eyes{
   opacity:1!important;
   animation:none!important;
 }
-#plantao-simulator .plantao-scene.luria-pregnant-v1[data-luria-breath="stopped"] .luria-pregnant-v1-breath>img{
+#plantao-simulator .plantao-scene.traube-pregnant-v1[data-traube-breath="stopped"] .traube-pregnant-v1-breath>img{
   animation:none!important;
   transform:none!important;
 }
 /* No PWA original a composicao e vertical e a mascara acompanha o rosto. */
-#plantao-simulator .luria-pregnant-v1-rig[data-variant="portrait"] .luria-pregnant-v1-breath{
+#plantao-simulator .traube-pregnant-v1-rig[data-variant="portrait"] .traube-pregnant-v1-breath{
   -webkit-mask-image:radial-gradient(ellipse 34% 19% at 52% 59%,#000 20%,rgba(0,0,0,.85) 50%,transparent 95%);
   mask-image:radial-gradient(ellipse 34% 19% at 52% 59%,#000 20%,rgba(0,0,0,.85) 50%,transparent 95%);
 }
-#plantao-simulator .luria-pregnant-v1-rig[data-variant="portrait"] .luria-pregnant-v1-eyes{
+#plantao-simulator .traube-pregnant-v1-rig[data-variant="portrait"] .traube-pregnant-v1-eyes{
   -webkit-mask-image:
     radial-gradient(ellipse 4.15% 1.65% at 42.3% 39.2%,#000 22%,transparent 100%),
     radial-gradient(ellipse 3.8% 1.6% at 47.3% 38.35%,#000 22%,transparent 100%);
@@ -636,20 +636,20 @@
     radial-gradient(ellipse 4.15% 1.65% at 42.3% 39.2%,#000 22%,transparent 100%),
     radial-gradient(ellipse 3.8% 1.6% at 47.3% 38.35%,#000 22%,transparent 100%);
 }
-#plantao-simulator .luria-pregnant-v1-rig[data-variant="portrait"] .luria-pregnant-v1-eyes img{
+#plantao-simulator .traube-pregnant-v1-rig[data-variant="portrait"] .traube-pregnant-v1-eyes img{
   transform:translate(0,3.1%);
 }
-#plantao-simulator .plantao-scene.luria-pregnant-v1 .plantao-monitor-dock{z-index:8}
-#plantao-simulator .plantao-scene.luria-pregnant-v1 .plantao-consciousness{z-index:9}
-.patient-dead #plantao-simulator .luria-pregnant-v1-rig,
-#plantao-simulator.patient-dead .luria-pregnant-v1-rig{
+#plantao-simulator .plantao-scene.traube-pregnant-v1 .plantao-monitor-dock{z-index:8}
+#plantao-simulator .plantao-scene.traube-pregnant-v1 .plantao-consciousness{z-index:9}
+.patient-dead #plantao-simulator .traube-pregnant-v1-rig,
+#plantao-simulator.patient-dead .traube-pregnant-v1-rig{
   filter:grayscale(1) brightness(.72);
 }
 @media(prefers-reduced-motion:reduce){
-  #plantao-simulator .luria-pregnant-v1-rig .luria-pregnant-v1-eyes{
+  #plantao-simulator .traube-pregnant-v1-rig .traube-pregnant-v1-eyes{
     animation:none!important;opacity:0;
   }
-  #plantao-simulator .luria-pregnant-v1-rig .luria-pregnant-v1-breath>img{
+  #plantao-simulator .traube-pregnant-v1-rig .traube-pregnant-v1-breath>img{
     animation:none!important;transform:none!important;
   }
 }

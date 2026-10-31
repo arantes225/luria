@@ -54,7 +54,7 @@ test("guidance is a body sibling, NOT a child of the educational ECG panel", () 
 });
 
 test("guided camera close stops stream and returns normal PWA navigation state", () => {
-  const x=createScene("https://arantes225.github.io/luria/trabalho/ecg/");
+  const x=createScene("https://arantes225.github.io/traube/trabalho/ecg/");
   x.d.getElementById("ecg-btn-start-ultra").click();
   assert.equal(x.d.getElementById("ecg-guided-camera-page").dataset.captureMode,"ultrasensitive");
   x.d.getElementById("ecg-guided-close").click();

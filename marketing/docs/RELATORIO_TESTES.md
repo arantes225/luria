@@ -46,7 +46,7 @@
   * Duração: **30.016 segundos** (900 quadros @ 30.0 fps)
   * Codec de Vídeo: **H.264 (High Profile, YUV420p, CRF 16)**
   * Codec de Áudio: **AAC 48.000 Hz estéreo (192 kbps)**
-  * Áudio: Trilha sonora ambiente médica sintetizada em código (`marketing/public/audio/luria-ambient-focus-30s.mp3`), livre para uso comercial (CC0).
+  * Áudio: Trilha sonora ambiente médica sintetizada em código (`marketing/public/audio/traube-ambient-focus-30s.mp3`), livre para uso comercial (CC0).
   * Legendas: 5 cartões dinâmicos com tipografia Inter, palavras-chave em azul ciano, posicionados acima da barra de navegação do Instagram.
 * **Capa Oficial:**
   * Arquivo: `marketing/dist/covers/reelstudyrats-cover.png`

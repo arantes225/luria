@@ -1,4 +1,4 @@
-@layer luria-patient-v2 {
+@layer traube-patient-v2 {
   body[data-page="trabalho_paciente"] { --patient-ink:#16324f; --patient-muted:#64748b; --patient-line:#dfe7ef; --patient-soft:#f5f8fb; --patient-blue:#184888; --patient-green:#287a57; }
   body[data-page="trabalho_paciente"] .patient-page { max-width:1480px; padding-bottom:3rem; }
   body[data-page="trabalho_paciente"] .patient-hero { align-items:center; margin:0 0 1.1rem; }

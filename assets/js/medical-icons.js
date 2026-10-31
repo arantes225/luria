@@ -63,8 +63,8 @@ window.TraubeMedicalIcons=(()=>{
   const resolve=v=>{const n=norm(v);const found=rules.find(([,rx])=>rx.test(n));return found?found[0]:fallbacks[hash(n)%fallbacks.length]};
   const svg=v=>'<svg '+b+'>'+p[resolve(v)]+'</svg>';
   const apply=(root=document)=>{
-    root.querySelectorAll?.('[data-luria-medical-icon]').forEach(el=>{
-      const name=el.getAttribute('data-luria-medical-icon')||el.getAttribute('data-area')||el.textContent||'';
+    root.querySelectorAll?.('[data-traube-medical-icon]').forEach(el=>{
+      const name=el.getAttribute('data-traube-medical-icon')||el.getAttribute('data-area')||el.textContent||'';
       el.innerHTML=svg(name);
     });
   };

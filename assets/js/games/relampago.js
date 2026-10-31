@@ -19,7 +19,7 @@
   const mode = () =>
     [selection.specialty, selection.level, selection.duration].join("|");
   const top = () =>
-    '<div class="g-top"><a class="g-back luria-back-button" href="/jogos/">← Central de jogos</a><span class="g-edition">01 / Agilidade clínica</span></div>';
+    '<div class="g-top"><a class="g-back traube-back-button" href="/jogos/">← Central de jogos</a><span class="g-edition">01 / Agilidade clínica</span></div>';
   const art =
     '<div class="g-hero-art r-art" aria-hidden="true"><div class="r-orbit"><span class="r-orbit-label">FOCO · PRECISÃO · RITMO</span><svg viewBox="0 0 120 120"><path d="M68 8 27 65h29l-5 47 42-62H64z" fill="currentColor"/></svg><span class="r-seconds">90<span>segundos para desafiar seu raciocínio</span></span></div><span class="r-chip r-chip-one">+ rapidez</span><span class="r-chip r-chip-two">× combo</span></div>';
   function stop() {
@@ -203,7 +203,7 @@
     root.querySelector('[data-action="again"]').onclick = setup;
     G.focusTitle();
     window.dispatchEvent(
-      new CustomEvent("luria:game-completed", {
+      new CustomEvent("traube:game-completed", {
         detail: {
           game: "relampago",
           contentVersion: C.version,
@@ -237,7 +237,7 @@
     stop();
     run = null;
   });
-  window.addEventListener("luria:owner-changed", () => {
+  window.addEventListener("traube:owner-changed", () => {
     stop();
     run = null;
     setup();

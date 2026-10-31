@@ -605,6 +605,6 @@ function wireExternalQuestionsTimer() {
     else await window.TraubeStudyTimer?.start("external_questions", { allowIdle: true });
     render();
   });
-  window.addEventListener("luria:study-timer", render);
+  window.addEventListener("traube:study-timer", render);
   render();
 }

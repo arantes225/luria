@@ -5,8 +5,8 @@ update storage.buckets
 set file_size_limit = 81920
 where id = 'docmap';
 
-drop policy if exists luria_image_size_cap_insert on storage.objects;
-create policy luria_image_size_cap_insert on storage.objects as restrictive
+drop policy if exists traube_image_size_cap_insert on storage.objects;
+create policy traube_image_size_cap_insert on storage.objects as restrictive
 for insert to authenticated
 with check (
   bucket_id = 'docmap'
@@ -21,8 +21,8 @@ with check (
   )
 );
 
-drop policy if exists luria_image_size_cap_update on storage.objects;
-create policy luria_image_size_cap_update on storage.objects as restrictive
+drop policy if exists traube_image_size_cap_update on storage.objects;
+create policy traube_image_size_cap_update on storage.objects as restrictive
 for update to authenticated
 using (
   bucket_id = 'docmap'

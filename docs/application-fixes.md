@@ -104,7 +104,7 @@ Não existiam configurações de lint/typecheck/build da aplicação para execut
 
 ## Dados locais e riscos de regressão
 
-As chaves antigas `luria:passometro:v1`, `luria-prescription-draft-v1`, `luria:active-study-session:v1` e `luria-clinical-transfer-v1` permanecem intactas. Chaves novas recebem sufixo do UID validado por Auth. Não foi executada migração de dados: conteúdo cujo dono não pode ser comprovado não aparece automaticamente na conta atual nem é enviado ao servidor.
+As chaves antigas `traube:passometro:v1`, `traube-prescription-draft-v1`, `traube:active-study-session:v1` e `traube-clinical-transfer-v1` permanecem intactas. Chaves novas recebem sufixo do UID validado por Auth. Não foi executada migração de dados: conteúdo cujo dono não pode ser comprovado não aparece automaticamente na conta atual nem é enviado ao servidor.
 
 Uma recuperação futura deve preservar uma cópia original, verificar o proprietário de cada item e usar uma rotina separada aprovada. Não orientar usuários a copiar toda a chave antiga para a conta atual. Cache antigo pode continuar ocupando armazenamento até uma decisão autorizada de recuperação/remoção.
 

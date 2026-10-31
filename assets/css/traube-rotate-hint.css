@@ -1,12 +1,12 @@
-/* assets/css/luria-rotate-hint.css
+/* assets/css/traube-rotate-hint.css
    Estilos padronizados da animação de girar o aparelho (TRAUBE)
    Reutilizado pelo simulador de emergência e pelo leitor/scanner inteligente de ECG.
 */
-.luria-rotate-dialog[hidden] {
+.traube-rotate-dialog[hidden] {
   display: none !important;
 }
 
-.luria-rotate-dialog {
+.traube-rotate-dialog {
   position: fixed !important;
   inset: 0 !important;
   z-index: 2147483000 !important;
@@ -22,7 +22,7 @@
   text-align: center;
 }
 
-.luria-rotate-dialog .luria-rotate-panel {
+.traube-rotate-dialog .traube-rotate-panel {
   width: min(100%, 380px);
   display: flex;
   align-items: center;
@@ -30,14 +30,14 @@
   gap: 13px;
 }
 
-.luria-rotate-dialog .luria-rotate-brand {
+.traube-rotate-dialog .traube-rotate-brand {
   font: 700 12px/1.3 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   letter-spacing: 0.2em;
   color: #8fc2f5;
   text-transform: uppercase;
 }
 
-.luria-rotate-dialog .luria-rotate-graphic {
+.traube-rotate-dialog .traube-rotate-graphic {
   position: relative;
   width: 128px;
   height: 120px;
@@ -46,17 +46,17 @@
   place-items: center;
 }
 
-.luria-rotate-dialog .luria-rotate-phone {
+.traube-rotate-dialog .traube-rotate-phone {
   width: 52px;
   height: 91px;
   border: 4px solid #c9e5ff;
   border-radius: 13px;
   position: relative;
   box-shadow: 0 0 0 9px rgba(69, 145, 229, 0.10);
-  animation: luria-turn-hint 3s ease-in-out infinite;
+  animation: traube-turn-hint 3s ease-in-out infinite;
 }
 
-.luria-rotate-dialog .luria-rotate-phone::before {
+.traube-rotate-dialog .traube-rotate-phone::before {
   content: "";
   position: absolute;
   width: 15px;
@@ -68,7 +68,7 @@
   background: #8fc2f5;
 }
 
-.luria-rotate-dialog .luria-rotate-phone::after {
+.traube-rotate-dialog .traube-rotate-phone::after {
   content: "";
   position: absolute;
   bottom: 6px;
@@ -80,26 +80,26 @@
   transform: translateX(-50%);
 }
 
-.luria-rotate-dialog h2 {
+.traube-rotate-dialog h2 {
   font: 700 clamp(24px, 6vw, 32px)/1.14 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   margin: 4px 0 0;
   color: #fff;
   letter-spacing: -0.035em;
 }
 
-.luria-rotate-dialog p {
+.traube-rotate-dialog p {
   font: 400 14px/1.5 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   margin: 0;
   max-width: 300px;
   color: #b7d0e8;
 }
 
-.luria-rotate-dialog .luria-rotate-tip {
+.traube-rotate-dialog .traube-rotate-tip {
   font-size: 12px;
   color: #8caac7;
 }
 
-.luria-rotate-dialog button {
+.traube-rotate-dialog button {
   margin-top: 14px;
   border: 1px solid rgba(176, 208, 242, 0.42);
   border-radius: 12px;
@@ -112,11 +112,11 @@
   transition: background-color 0.15s ease;
 }
 
-.luria-rotate-dialog button:hover {
+.traube-rotate-dialog button:hover {
   background: rgba(255, 255, 255, 0.16);
 }
 
-@keyframes luria-turn-hint {
+@keyframes traube-turn-hint {
   0%, 18%, 85%, 100% {
     transform: rotate(0);
   }
@@ -126,7 +126,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .luria-rotate-dialog .luria-rotate-phone {
+  .traube-rotate-dialog .traube-rotate-phone {
     animation: none;
     transform: rotate(-90deg);
   }

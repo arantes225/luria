@@ -64,7 +64,7 @@ async function runWeeklyAutomation() {
 
   // 3. Garantir trilha sonora ambiente oficial
   console.log('\n[Etapa 3/6] Verificando trilha sonora oficial...');
-  const musicPath = path.join(MARKETING, 'public', 'audio', 'luria-ambient-focus-30s.mp3');
+  const musicPath = path.join(MARKETING, 'public', 'audio', 'traube-ambient-focus-30s.mp3');
   if (!fs.existsSync(musicPath)) {
     console.log('Trilha não encontrada; gerando com síntese harmônica...');
     const { synthesize } = require('../scripts/generate-music.cjs');

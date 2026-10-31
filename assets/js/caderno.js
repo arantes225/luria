@@ -489,8 +489,8 @@ function getCurrentDocument() {
 
 function notebookTopicPanelKey() {
   return notebookState.user?.id
-    ? `luria:notebook-topic-panel:${notebookState.user.id}`
-    : "luria:notebook-topic-panel";
+    ? `traube:notebook-topic-panel:${notebookState.user.id}`
+    : "traube:notebook-topic-panel";
 }
 
 
@@ -917,14 +917,14 @@ async function syncNotebookImageRefsFromHtml(
   const assetIds =
     Array.from(
       host.querySelectorAll(
-        "img[data-luria-asset-id]"
+        "img[data-traube-asset-id]"
       )
     )
       .map(
         image =>
           String(
             image.getAttribute(
-              "data-luria-asset-id"
+              "data-traube-asset-id"
             )
             || ""
           )
@@ -1055,7 +1055,7 @@ async function materializeNotebookImagesForShare(
     const existingId =
       String(
         image.getAttribute(
-          "data-luria-asset-id"
+          "data-traube-asset-id"
         )
         || ""
       );
@@ -1211,7 +1211,7 @@ async function materializeNotebookImagesForShare(
     );
 
     image.setAttribute(
-      "data-luria-asset-id",
+      "data-traube-asset-id",
       assetId
     );
 
@@ -1791,7 +1791,7 @@ function sanitizeHtml(
           const value = child.getAttribute(name);
           if (value !== null && /^[a-z0-9_-]{1,100}$/i.test(value)) notionAttributes.push([name,value]);
         }
-        if (child.tagName === "A") keepHref = luriaSafeContentUrl(child.getAttribute("href"), {relative:true,mailto:true});
+        if (child.tagName === "A") keepHref = traubeSafeContentUrl(child.getAttribute("href"), {relative:true,mailto:true});
         keepClass = [...child.classList].filter(name => ["notebook-callout-content", "notebook-callout-icon", "notebook-study-block", "important", "warning", "memory"].includes(name)).join(" ");
       }
 
@@ -2083,7 +2083,7 @@ function sanitizeHtml(
               src
             );
 
-        const validNotionImage = notion && Boolean(luriaSafeContentUrl(src, {relative:true}));
+        const validNotionImage = notion && Boolean(traubeSafeContentUrl(src, {relative:true}));
         const validInternalImage =
           /^\/assets\/img\/[a-z0-9_\-./% ]+\.(?:png|jpe?g|webp|gif|svg)(?:\?.*)?$/i
             .test(
@@ -2093,7 +2093,7 @@ function sanitizeHtml(
         keepImageAssetId =
           String(
             child.getAttribute(
-              "data-luria-asset-id"
+              "data-traube-asset-id"
             )
             || ""
           )
@@ -2205,7 +2205,7 @@ function sanitizeHtml(
           )
         ) {
           child.setAttribute(
-            "data-luria-asset-id",
+            "data-traube-asset-id",
             keepImageAssetId
           );
         }
@@ -3011,7 +3011,7 @@ function prepareNotebookLazyImageHtml(
         }
 
         image.setAttribute(
-          "data-luria-lazy-src",
+          "data-traube-lazy-src",
           src
         );
 
@@ -3054,13 +3054,13 @@ function notebookHtmlForSave(
 
   clone
     .querySelectorAll(
-      "img[data-luria-lazy-src]"
+      "img[data-traube-lazy-src]"
     )
     .forEach(
       image => {
         const source =
           image.getAttribute(
-            "data-luria-lazy-src"
+            "data-traube-lazy-src"
           );
 
         if (source) {
@@ -3071,7 +3071,7 @@ function notebookHtmlForSave(
         }
 
         image.removeAttribute(
-          "data-luria-lazy-src"
+          "data-traube-lazy-src"
         );
 
         image.classList.remove(
@@ -3106,18 +3106,18 @@ function loadNotebookImageOnDemand(
 
   const source =
     image.getAttribute(
-      "data-luria-lazy-src"
+      "data-traube-lazy-src"
     );
 
   if (
     !source
     || image.dataset
-      .luriaLoaded === "1"
+      .traubeLoaded === "1"
   ) {
     return;
   }
 
-  image.dataset.luriaLoaded =
+  image.dataset.traubeLoaded =
     "1";
 
   image.classList.add(
@@ -3141,7 +3141,7 @@ function loadNotebookImageOnDemand(
 
   image.onerror =
     () => {
-      image.dataset.luriaLoaded =
+      image.dataset.traubeLoaded =
         "0";
 
       image.classList.remove(
@@ -3934,7 +3934,7 @@ async function createFreePage() {
         area:area || "Página livre",
         materia,
         content_html:"",
-        storage_source:"luria"
+        storage_source:"traube"
       })
       .select("id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at,storage_source,notion_page_id,notion_url,notion_last_edited_time")
       .single();
@@ -4596,7 +4596,7 @@ function insertDivider(
     safeStyle ===
       "arabesque"
       ? `
-          <div class="notebook-divider arabesque" contenteditable="false"><span class="notebook-divider-luria" aria-hidden="true"></span></div>
+          <div class="notebook-divider arabesque" contenteditable="false"><span class="notebook-divider-traube" aria-hidden="true"></span></div>
           <p><br></p>
         `
       : `
@@ -14565,7 +14565,7 @@ async function hideNotionInboxPage(pageId) {
   if (!page) return;
 
   await invokeNotionFunction("notion-api", {
-    action:"hide_page_luria",
+    action:"hide_page_traube",
     page_id:page.id,
     title:page.title || "Página do Notion",
     url:page.url || null
@@ -14748,7 +14748,7 @@ function renderLibrary() {
   list.querySelectorAll("[data-notion-drag-page]").forEach(card=>{
     card.addEventListener("dragstart",event=>{
       event.dataTransfer.effectAllowed="move";
-      event.dataTransfer.setData("text/x-luria-notion-page",card.dataset.notionDragPage||"");
+      event.dataTransfer.setData("text/x-traube-notion-page",card.dataset.notionDragPage||"");
       card.classList.add("is-dragging");
     });
     card.addEventListener("dragend",()=>card.classList.remove("is-dragging"));
@@ -14756,7 +14756,7 @@ function renderLibrary() {
 
   list.querySelectorAll("[data-subject-card]").forEach(card=>{
     card.addEventListener("dragover",event=>{
-      if(!event.dataTransfer.types.includes("text/x-luria-notion-page"))return;
+      if(!event.dataTransfer.types.includes("text/x-traube-notion-page"))return;
       event.preventDefault();
       event.dataTransfer.dropEffect="move";
       card.classList.add("is-notion-drop-target");
@@ -14767,7 +14767,7 @@ function renderLibrary() {
     card.addEventListener("drop",async event=>{
       event.preventDefault();
       card.classList.remove("is-notion-drop-target");
-      const pageId=event.dataTransfer.getData("text/x-luria-notion-page");
+      const pageId=event.dataTransfer.getData("text/x-traube-notion-page");
       if(!pageId)return;
       const [area,subject]=decodeURIComponent(card.dataset.subjectCard||"").split("|||");
       try{
@@ -16518,7 +16518,7 @@ async function exportSelectedPdf() {
       );
 
     doc.save(
-      "luria-cadernos.pdf"
+      "traube-cadernos.pdf"
     );
   }
 
@@ -17180,10 +17180,10 @@ function updateNotionConnectionUi() {
   const workspace = String(notionSourceState.workspaceName || "").trim();
 
   if (connected) {
-    try { localStorage.setItem("luria:notion:ever-connected", "1"); } catch {}
+    try { localStorage.setItem("traube:notion:ever-connected", "1"); } catch {}
   }
   let previousConnection = false;
-  try { previousConnection = localStorage.getItem("luria:notion:ever-connected") === "1"; } catch {}
+  try { previousConnection = localStorage.getItem("traube:notion:ever-connected") === "1"; } catch {}
 
   // Esta seção deve permanecer visível na biblioteca, mesmo quando conectada.
   if (card) card.hidden = false;
@@ -17254,7 +17254,7 @@ async function openNotionPage(page) {
   modal.hidden = false;
   if (title) title.textContent = page?.title || "Página do Notion";
   if (updated) updated.textContent = "";
-  if (original) original.href = luriaSafeContentUrl(page?.url) || "#";
+  if (original) original.href = traubeSafeContentUrl(page?.url) || "#";
   content.innerHTML = '<div class="notebook-notion-empty"><strong>Carregando página...</strong><span>O conteúdo continua armazenado no Notion.</span></div>';
 
   try {
@@ -17269,7 +17269,7 @@ async function openNotionPage(page) {
         ? "Atualizado no Notion em " + dt.toLocaleString("pt-BR")
         : "Conteúdo carregado diretamente do Notion";
     }
-    if (original) original.href = luriaSafeContentUrl(remote.url || page.url) || "#";
+    if (original) original.href = traubeSafeContentUrl(remote.url || page.url) || "#";
 
     content.innerHTML = remote.html ? sanitizeHtml(remote.html, {notion:true}) : '<div class="notebook-notion-empty"><strong>Página vazia</strong></div>';
     document.querySelector(".notebook-notion-reader")?.classList.remove("is-editing");
@@ -17999,7 +17999,7 @@ function wireEvents() {
         const image =
           event.target
             ?.closest?.(
-              "img[data-luria-lazy-src]"
+              "img[data-traube-lazy-src]"
             );
 
         if (
@@ -18013,7 +18013,7 @@ function wireEvents() {
 
         if (
           image.dataset
-            .luriaLoaded !== "1"
+            .traubeLoaded !== "1"
         ) {
           event.preventDefault();
           loadNotebookImageOnDemand(
@@ -19213,7 +19213,7 @@ function wireEvents() {
       : (current.note?.materia || "");
 
     try {
-      localStorage.setItem("luria:flashcard-draft-from-notebook", JSON.stringify({
+      localStorage.setItem("traube:flashcard-draft-from-notebook", JSON.stringify({
         area: current.area || "",
         materia: subject,
         front: current.title || "Anotação",
@@ -20039,13 +20039,13 @@ function startNotebookRealtime() {
 
 function notebookPaperKey() {
   const doc=getCurrentDocument();
-  return "luria:notebook-paper:"+(doc?.note?.id || doc?.topic?.id || "draft");
+  return "traube:notebook-paper:"+(doc?.note?.id || doc?.topic?.id || "draft");
 }
 function applyNotebookPaperStyle(style) {
   const paper=document.querySelector(".note-page, .notebook-paper");
   if(!paper)return;
-  const normalized=["white","lined","dotted","luria"].includes(style)?style:"white";
-  paper.classList.remove("paper-white","paper-lined","paper-dotted","paper-luria");
+  const normalized=["white","lined","dotted","traube"].includes(style)?style:"white";
+  paper.classList.remove("paper-white","paper-lined","paper-dotted","paper-traube");
   paper.classList.add("paper-"+normalized);
   paper.dataset.paperStyle=normalized;
   try{localStorage.setItem(notebookPaperKey(),normalized)}catch{}
@@ -20442,7 +20442,7 @@ else {
 
 }
 /* v23.4 — checklist local por anotação */
-(()=>{const KEY="luria:notebook-study-tasks";const load=()=>{try{return JSON.parse(localStorage.getItem(KEY)||"{}")}catch{return{}}};const save=v=>localStorage.setItem(KEY,JSON.stringify(v));const noteKey=()=>{try{const d=getCurrentDocument();return String(d?.note?.id||d?.topic?.id||d?.title||"default")}catch{return"default"}};
+(()=>{const KEY="traube:notebook-study-tasks";const load=()=>{try{return JSON.parse(localStorage.getItem(KEY)||"{}")}catch{return{}}};const save=v=>localStorage.setItem(KEY,JSON.stringify(v));const noteKey=()=>{try{const d=getCurrentDocument();return String(d?.note?.id||d?.topic?.id||d?.title||"default")}catch{return"default"}};
 function renderStudyTasks(){const root=document.getElementById("notebook-study-tasks");if(!root)return;const all=load(),key=noteKey(),items=all[key]||[];root.innerHTML=items.length?items.map((t,i)=>'<label class="note-study-task"><input type="checkbox" data-study-task="'+i+'" '+(t.done?'checked':'')+'><span>'+escapeHtml(String(t.text||""))+'</span><button type="button" data-study-task-delete="'+i+'" aria-label="Remover tarefa">×</button></label>').join(""):'<div class="note-task-empty">Nenhuma tarefa adicionada</div>'}
 function openStudyTaskModal(){
   const modal=document.getElementById("notebook-task-modal");

@@ -41,7 +41,7 @@ test("Gerador de lote cria apostila extensa com navegação, referências e esti
   assert.ok(output.html.includes('<title>Tema de teste · TRAUBE</title>'));
   assert.ok(output.html.includes('href="/apostilas/tema-de-teste/"'));
   assert.ok(output.html.includes('href="#capitulo-7"'));
-  assert.ok(output.html.includes("apostila-luria-book.css"));
+  assert.ok(output.html.includes("apostila-traube-book.css"));
   assert.equal((output.html.match(/<article class="book-main">/g)||[]).length,1);
   assert.equal((output.html.match(/<img\b/gi)||[]).length,0,
     "Apostilas novas não devem embutir figuras pendentes");

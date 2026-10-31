@@ -109,7 +109,7 @@
     try{await enqueue(()=>current(owner,version)?load():undefined);}
     catch(error){if(current(owner,version)){console.error(error);setStatus("Não foi possível carregar o caderno.");}}
   }
-  window.addEventListener("luria:owner-changed",()=>{
+  window.addEventListener("traube:owner-changed",()=>{
     generation++;loading=true;user=null;portal=null;username="";note.value="";
     renderAddress();renderExpiry();setStatus(owned.ownerId?"Carregando…":"Entre na sua conta.");
     if(owned.ownerId)init();

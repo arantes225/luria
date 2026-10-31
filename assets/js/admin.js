@@ -1649,7 +1649,7 @@
   }
 
   const ADMIN_PIN_GRACE_MS = 30 * 60 * 1000;
-  const ADMIN_PIN_GRACE_KEY = "luria-admin-pin-unlocked-until";
+  const ADMIN_PIN_GRACE_KEY = "traube-admin-pin-unlocked-until";
 
   function adminPinGraceStorageKey() {
     const userId = String(window.docmapUser?.id || "admin");
@@ -2208,7 +2208,7 @@
     }
 
     try {
-      sessionStorage.setItem("luria-admin-view", next);
+      sessionStorage.setItem("traube-admin-view", next);
     } catch (_) {}
   }
 
@@ -2230,7 +2230,7 @@
 
     let initial = location.hash === "#beta" ? "beta" : "metrics";
     try {
-      const saved = sessionStorage.getItem("luria-admin-view");
+      const saved = sessionStorage.getItem("traube-admin-view");
       if (location.hash !== "#beta" && ["metrics", "factory", "editais", "plans", "alex", "plantao", "images"].includes(saved)) {
         initial = saved;
       }
@@ -5084,7 +5084,7 @@
         if (error) { window.alert(error.message); return; }
         const blob = new Blob([JSON.stringify(data,null,2)], {type:"application/json"});
         const url = URL.createObjectURL(blob); const link = document.createElement("a");
-        link.href=url; link.download=`luria-lote-${batch}-bloco-${block}-${mode}.json`;
+        link.href=url; link.download=`traube-lote-${batch}-bloco-${block}-${mode}.json`;
         document.body.appendChild(link); link.click(); link.remove(); setTimeout(()=>URL.revokeObjectURL(url),1000);
         return;
       }
@@ -5597,13 +5597,13 @@
     }
     list.innerHTML = rows.map(row => {
       const asset = row.proposed_asset && typeof row.proposed_asset === "object" ? row.proposed_asset : {};
-      const src = luriaSafeContentUrl(asset.src, {relative:true});
+      const src = traubeSafeContentUrl(asset.src, {relative:true});
       const safePreview = src && (/^\/?assets\//.test(src) || /^https:\/\/sxdsfklllilhdyuamvvg\.supabase\.co\//.test(src) || /^https:\/\/upload\.wikimedia\.org\//.test(src) || /^https:\/\/commons\.wikimedia\.org\//.test(src) || /^https:\/\/wwwn\.cdc\.gov\//.test(src) || /^https:\/\/media\.springernature\.com\//.test(src));
       const preview = safePreview
         ? '<img src="' + esc(src) + '" alt="' + esc(asset.alt || row.modality || "Imagem clínica") + '">'
         : '<span>Prévia indisponível no Admin. Abra a fonte original para revisar.</span>';
       const protocol = row.clinical_protocols;
-      const sourceUrl = luriaSafeContentUrl(row.source_url);
+      const sourceUrl = traubeSafeContentUrl(row.source_url);
       const source = sourceUrl
         ? '<a href="' + esc(sourceUrl) + '" target="_blank" rel="noopener">Abrir fonte original</a>'
         : '<span>Fonte sem URL registrada</span>';
@@ -5786,11 +5786,11 @@
     }
   }
 
-  function luriaSafeImageSrc(value) {
+  function traubeSafeImageSrc(value) {
     const raw = String(value ?? "").trim();
     if (!raw) return "";
     if (/^data:image\/(?:svg\+xml|png|jpeg|webp);/i.test(raw)) return raw;
-    return luriaSafeContentUrl(raw, {relative:true});
+    return traubeSafeContentUrl(raw, {relative:true});
   }
 
   function renderApostilaImageReviewQueue() {
@@ -5835,11 +5835,11 @@
     }
     list.innerHTML = rows.map(row => {
       const asset = row.proposed_asset && typeof row.proposed_asset === "object" ? row.proposed_asset : {};
-      const src = luriaSafeImageSrc(asset.src);
+      const src = traubeSafeImageSrc(asset.src);
       const preview = src
         ? '<img loading="lazy" src="' + esc(src) + '" alt="' + esc(asset.alt || asset.title || "Imagem candidata") + '" data-admin-image-fallback="true"><div class="admin-image-placeholder-fallback" style="display:none;width:100%;height:140px;align-items:center;justify-content:center;background:var(--surface-muted,#f3f4f6);color:var(--text-muted,#6b7280);font-size:12px;text-align:center;padding:8px;border-radius:8px;border:1px dashed var(--border,#d1d5db)"><span>Imagem indisponível na fonte externa<br><small style=\'opacity:.8\'>Clique em Abrir fonte ou aguarde substituição</small></span></div>'
         : '<span>Prévia indisponível.</span>';
-      const sourceUrl = luriaSafeContentUrl(row.source_url);
+      const sourceUrl = traubeSafeContentUrl(row.source_url);
       const source = sourceUrl
         ? '<a href="' + esc(sourceUrl) + '" target="_blank" rel="noopener">Abrir fonte original</a>'
         : '<span>Fonte sem URL registrada</span>';
@@ -5949,7 +5949,7 @@
       const expand = event.target.closest("[data-apostila-image-expand]");
       if (expand) {
         const row = apostilaImageReviewRows.find(item => Number(item.id) === Number(expand.dataset.apostilaImageExpand));
-        const src = luriaSafeImageSrc(row?.proposed_asset?.src);
+        const src = traubeSafeImageSrc(row?.proposed_asset?.src);
         if (src) {
           const modal = ensureAdminImageLightbox();
           const img = modal.querySelector("img");
@@ -5991,8 +5991,8 @@
     if (!/^[a-zA-Z][a-zA-Z0-9_-]{0,90}$/.test(section)) throw Error("Candidata " + index + ": target_section inválida.");
     const asset = raw.proposed_asset;
     if (!asset || typeof asset !== "object" || Array.isArray(asset)) throw Error("Candidata " + index + ": proposed_asset ausente.");
-    const src = luriaSafeImageSrc(String(asset.src || "").trim());
-    const original = luriaSafeContentUrl(String(raw.source_url || "").trim());
+    const src = traubeSafeImageSrc(String(asset.src || "").trim());
+    const original = traubeSafeContentUrl(String(raw.source_url || "").trim());
     if (!src || !original || !String(asset.alt || "").trim()
       || !String(raw.source_name || "").trim() || !String(raw.source_license || "").trim()) {
       throw Error("Candidata " + index + ": informe imagem, alt, URL, nome e licença da fonte.");

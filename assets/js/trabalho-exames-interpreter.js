@@ -60,7 +60,7 @@ window.TRAUBE_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id
   function reading(name){const t=C.flatMap(g=>g.tests).find(t=>t.name===name);if(!t||t.kind!=="numeric")return null;const current=status(t);if(current==="invalid"||current==="unit-mismatch"||current==="")return null;return number(itemState(t.id).value)}
   function has(name){return reading(name)!==null}
   function renderLayout(){
-  root.innerHTML=`<section class="luria-page-spotlight ex-title-card" aria-label="Cabeçalho de Exames"><div class="luria-page-spotlight-copy ex-title-copy"><h2>Exames</h2><small class="luria-page-spotlight-helper">Valores de referência laboratoriais, kits rápidos de plantão e interpretação integrada</small></div><a class="ex-back-link" href="/trabalho/" aria-label="Voltar à Central do Trabalho"><span aria-hidden="true">←</span> Voltar</a></section>
+  root.innerHTML=`<section class="traube-page-spotlight ex-title-card" aria-label="Cabeçalho de Exames"><div class="traube-page-spotlight-copy ex-title-copy"><h2>Exames</h2><small class="traube-page-spotlight-helper">Valores de referência laboratoriais, kits rápidos de plantão e interpretação integrada</small></div><a class="ex-back-link" href="/trabalho/" aria-label="Voltar à Central do Trabalho"><span aria-hidden="true">←</span> Voltar</a></section>
     <div class="ex-toolbar">
       <div class="ex-kits-bar" role="toolbar" aria-label="Kits rápidos de plantão">
         <span class="ex-kits-label">Rotinas Rápidas:</span>

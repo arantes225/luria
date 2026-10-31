@@ -86,7 +86,7 @@ async function entrar(event) {
     return;
   }
 
-  window.location.replace(window.luriaSitePath?.("/dashboard/") || "/dashboard/");
+  window.location.replace(window.traubeSitePath?.("/dashboard/") || "/dashboard/");
 }
 
 async function entrarComPasskey() {
@@ -115,7 +115,7 @@ async function entrarComPasskey() {
     }
 
     if (data?.session) {
-      window.location.replace(window.luriaSitePath?.("/dashboard/") || "/dashboard/");
+      window.location.replace(window.traubeSitePath?.("/dashboard/") || "/dashboard/");
       return;
     }
 
@@ -168,7 +168,7 @@ async function criarConta() {
     }
 
     if (data.session) {
-      window.location.replace(window.luriaSitePath?.("/dashboard/") || "/dashboard/");
+      window.location.replace(window.traubeSitePath?.("/dashboard/") || "/dashboard/");
       return;
     }
 
@@ -198,7 +198,7 @@ async function criarConta() {
     }
 
     if (data?.session) {
-      window.location.replace(window.luriaSitePath?.("/dashboard/") || "/dashboard/");
+      window.location.replace(window.traubeSitePath?.("/dashboard/") || "/dashboard/");
     }
   } catch (error) {
     if (isNetworkError(error)) {
@@ -213,7 +213,7 @@ async function entrarComGoogle() {
   mostrarMensagem("Redirecionando para o Google...");
 
   try {
-    const redirectTo = window.location.origin + (window.luriaSitePath?.("/dashboard/?google_auth=1") || "/dashboard/?google_auth=1");
+    const redirectTo = window.location.origin + (window.traubeSitePath?.("/dashboard/?google_auth=1") || "/dashboard/?google_auth=1");
     const { data, error } = await sb.auth.signInWithOAuth({
       provider: "google",
       options: {

@@ -129,7 +129,7 @@
   }
   save.addEventListener("click",setPIN);
   revoke.addEventListener("click",revokeAll);
-  window.addEventListener("luria:owner-changed",()=>{
+  window.addEventListener("traube:owner-changed",()=>{
     epoch++;configured=false;owner="";pin.value="";confirmPin.value="";
     if(timer)window.clearInterval(timer);timer=null;
     state.textContent="Consultando segurança…";status.textContent="";

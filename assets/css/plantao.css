@@ -2127,9 +2127,9 @@ body[data-page="plantao"] .plantao-phone-brand-name{
 
 /* v6.9 — TraubeZap com acabamento de smartphone realista */
 body.plantao-phone-mode{
-  --luria-phone-frame:#07111d;
-  --luria-phone-metal:#9ba9b8;
-  --luria-phone-glass:#07182d;
+  --traube-phone-frame:#07111d;
+  --traube-phone-metal:#9ba9b8;
+  --traube-phone-glass:#07182d;
 }
 body.plantao-phone-mode #plantao-library{
   align-items:start;
@@ -2180,7 +2180,7 @@ body.plantao-phone-mode .plantao-phone-device{
   width:100%;
   max-width:none;
   aspect-ratio:10/18.25;
-  border:5px solid var(--luria-phone-frame)!important;
+  border:5px solid var(--traube-phone-frame)!important;
   border-radius:49px;
   background:#020811!important;
   padding:4px;
@@ -3650,7 +3650,7 @@ body.plantao-phone-mode .sidebar-desktop-toggle{
     -webkit-backdrop-filter:blur(10px);
   }
   body.plantao-phone-mode .topbar .page-heading,
-  body.plantao-phone-mode .topbar .luria-notifications{
+  body.plantao-phone-mode .topbar .traube-notifications{
     display:none!important;
   }
 }
@@ -4590,7 +4590,7 @@ body.plantao-module-entry .plantao-standard-topbar .page-heading h1{
   line-height:1.15!important;
   color:var(--text)!important;
 }
-body.plantao-module-entry .plantao-standard-topbar .luria-notifications{
+body.plantao-module-entry .plantao-standard-topbar .traube-notifications{
   display:flex!important;
   align-items:center!important;
   gap:12px!important;
@@ -4601,9 +4601,9 @@ body.plantao-module-entry .plantao-standard-topbar .luria-notifications{
   z-index:2147482500!important;
   overflow:visible!important;
 }
-body.plantao-module-entry .plantao-standard-topbar .luria-pomodoro-top,
-body.plantao-module-entry .plantao-standard-topbar .luria-profile-top,
-body.plantao-module-entry .plantao-standard-topbar .luria-notification-toggle{
+body.plantao-module-entry .plantao-standard-topbar .traube-pomodoro-top,
+body.plantao-module-entry .plantao-standard-topbar .traube-profile-top,
+body.plantao-module-entry .plantao-standard-topbar .traube-notification-toggle{
   display:flex!important;
   visibility:visible!important;
   opacity:1!important;
@@ -4612,7 +4612,7 @@ body.plantao-module-entry .plantao-standard-topbar .luria-notification-toggle{
   body.plantao-module-entry .plantao-standard-topbar{
     align-items:center!important;
   }
-  body.plantao-module-entry .plantao-standard-topbar .luria-notifications{
+  body.plantao-module-entry .plantao-standard-topbar .traube-notifications{
     top:0!important;
     align-self:center!important;
   }
@@ -6106,8 +6106,8 @@ body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-s
   font-size:clamp(24px,4vw,32px)!important;
   line-height:1.12!important;
 }
-body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar #luria-notifications,
-body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .luria-notifications{
+body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar #traube-notifications,
+body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .traube-notifications{
   display:flex!important;
   visibility:visible!important;
   opacity:1!important;
@@ -6117,18 +6117,18 @@ body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-s
   align-self:flex-start!important;
   top:0!important;
 }
-body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .luria-pomodoro-top,
-body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .luria-notification-toggle,
-body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .luria-profile-top{
+body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .traube-pomodoro-top,
+body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .traube-notification-toggle,
+body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .traube-profile-top{
   display:flex!important;
   visibility:visible!important;
   opacity:1!important;
 }
 
 /* Mantém os menus do timer, sino e perfil acima do card de destaque. */
-body.plantao-module-entry .luria-pomodoro-panel,
-body.plantao-module-entry .luria-notification-panel,
-body.plantao-module-entry .luria-profile-menu{
+body.plantao-module-entry .traube-pomodoro-panel,
+body.plantao-module-entry .traube-notification-panel,
+body.plantao-module-entry .traube-profile-menu{
   z-index:2147483000!important;
 }
 
@@ -6137,7 +6137,7 @@ body.plantao-module-entry .luria-profile-menu{
     min-height:54px!important;
     align-items:center!important;
   }
-  body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .luria-notifications{
+  body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .traube-notifications{
     align-self:center!important;
   }
 }
@@ -8164,7 +8164,7 @@ body.plantao-module-entry[data-case-library-view="osce"] .plantao-cases-section-
 
 /* PLANTAO — GLOBAL SHELL COMPATIBILITY v63 — 2026-10-04 */
 @media (min-width:981px){
-  body.plantao-module-entry.luria-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.plantao-module-entry.traube-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:grid!important;
     grid-template-columns:270px minmax(0,1fr)!important;
     height:calc(100dvh - 15px)!important;
@@ -8174,7 +8174,7 @@ body.plantao-module-entry[data-case-library-view="osce"] .plantao-cases-section-
     overflow:hidden!important;
   }
 
-  body.plantao-module-entry.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.plantao-module-entry.traube-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:block!important;
     position:relative!important;
     top:auto!important;
@@ -8189,7 +8189,7 @@ body.plantao-module-entry[data-case-library-view="osce"] .plantao-cases-section-
     overflow:visible!important;
   }
 
-  body.plantao-module-entry.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.plantao-module-entry.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:block!important;
     width:auto!important;
     max-width:none!important;
@@ -8201,7 +8201,7 @@ body.plantao-module-entry[data-case-library-view="osce"] .plantao-cases-section-
     background:var(--surface)!important;
   }
 
-  body.plantao-module-entry.luria-global-shell-mounted .page.plantao-page{
+  body.plantao-module-entry.traube-global-shell-mounted .page.plantao-page{
     display:block!important;
     width:calc(100% - 12px)!important;
     max-width:calc(100% - 12px)!important;
@@ -8214,14 +8214,14 @@ body.plantao-module-entry[data-case-library-view="osce"] .plantao-cases-section-
     background:transparent!important;
   }
 
-  body.plantao-module-entry.luria-global-shell-mounted > .app-shell > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.plantao-module-entry.luria-global-shell-mounted > .app-shell > header.topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.plantao-module-entry.traube-global-shell-mounted > .app-shell > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.plantao-module-entry.traube-global-shell-mounted > .app-shell > header.topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:flex!important;
     visibility:visible!important;
     opacity:1!important;
   }
 
-  body.plantao-module-entry.luria-global-shell-mounted .sidebar-desktop-toggle{
+  body.plantao-module-entry.traube-global-shell-mounted .sidebar-desktop-toggle{
     display:none!important;
   }
 }

@@ -6,45 +6,45 @@
   if (!book && !notes) return;
   const params = new URLSearchParams(location.search);
   const embedded = params.get("embedded") === "1";
-  if (embedded) document.body.classList.add("luria-dual-embedded");
+  if (embedded) document.body.classList.add("traube-dual-embedded");
   const styles = document.createElement("style");
   styles.textContent = `
-    .luria-dual-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-    .luria-dual-btn{min-height:36px;padding:8px 12px;background:#184888;color:#fff;border:1px solid #184888;border-radius:9px;cursor:pointer;font:inherit;font-weight:650;font-size:12px}
-    .luria-dual-btn.secondary{background:var(--surface,#fff);color:var(--accent,#184888);border-color:var(--border,#ddd)}
-    .luria-dual-btn:disabled{opacity:.5;cursor:not-allowed}
-    .luria-dual-bar{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap;margin:8px 0}
-    .luria-dual-layout{--split:50%;display:flex;width:100%;max-width:100%;height:calc(100dvh - 150px);min-height:300px;overflow:hidden}
-    .luria-dual-layout>.luria-dual-left{flex:0 0 calc(var(--split) - 6px);width:0!important;height:100%;max-width:none!important;min-width:0!important;overflow:auto!important}
-    .luria-dual-layout>.luria-dual-divider{width:12px;flex:0 0 12px;background:var(--surface-2,#eef2f7);cursor:col-resize;touch-action:none;position:relative}
-    .luria-dual-divider:after{content:"";position:absolute;left:4px;top:35%;height:30%;width:4px;border-radius:8px;background:#184888}
-    .luria-dual-layout>.luria-dual-right{flex:1;min-width:0;border:1px solid var(--border,#ddd);border-radius:10px;overflow:hidden;background:var(--surface,#fff)}
-    .luria-dual-right iframe{display:block;width:100%;height:100%;border:0}
-    body.luria-dual-active .page{width:100%!important;max-width:100%!important}
-    body.luria-dual-active .book-page.luria-dual-left{grid-template-columns:minmax(0,1fr) 100px!important;gap:8px!important}
-    body.luria-dual-active .note-studio.luria-dual-left{grid-template-columns:minmax(0,1fr)!important;padding:4px!important}
-    body.luria-dual-active .note-studio .note-tree,body.luria-dual-active .note-studio .note-info{display:none!important}
-    body.luria-dual-active .note-studio .note-canvas{min-width:0!important}
-    body.luria-dual-embedded .sidebar,body.luria-dual-embedded .sidebar-backdrop,body.luria-dual-embedded .topbar,body.luria-dual-embedded .luria-page-spotlight,body.luria-dual-embedded .note-back-library,body.luria-dual-embedded .note-tree,body.luria-dual-embedded .note-info,body.luria-dual-embedded .book-outline{display:none!important}
-    body.luria-dual-embedded .app-shell,body.luria-dual-embedded .main,body.luria-dual-embedded .page,body.luria-dual-embedded .note-studio-wrap{display:block!important;grid-template-columns:minmax(0,1fr)!important;margin:0!important;padding:0!important;width:100%!important;max-width:none!important;min-height:0!important}
-    body.luria-dual-embedded .note-studio,body.luria-dual-embedded .book-page{display:block!important;padding:6px!important;width:100%!important;max-width:none!important}
-    body.luria-dual-embedded .book-main,body.luria-dual-embedded .note-canvas,body.luria-dual-embedded .notebook-editor{width:100%!important;max-width:none!important;min-width:0!important}
-    body.luria-dual-embedded .luria-dual-actions{display:none!important}
+    .traube-dual-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+    .traube-dual-btn{min-height:36px;padding:8px 12px;background:#184888;color:#fff;border:1px solid #184888;border-radius:9px;cursor:pointer;font:inherit;font-weight:650;font-size:12px}
+    .traube-dual-btn.secondary{background:var(--surface,#fff);color:var(--accent,#184888);border-color:var(--border,#ddd)}
+    .traube-dual-btn:disabled{opacity:.5;cursor:not-allowed}
+    .traube-dual-bar{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap;margin:8px 0}
+    .traube-dual-layout{--split:50%;display:flex;width:100%;max-width:100%;height:calc(100dvh - 150px);min-height:300px;overflow:hidden}
+    .traube-dual-layout>.traube-dual-left{flex:0 0 calc(var(--split) - 6px);width:0!important;height:100%;max-width:none!important;min-width:0!important;overflow:auto!important}
+    .traube-dual-layout>.traube-dual-divider{width:12px;flex:0 0 12px;background:var(--surface-2,#eef2f7);cursor:col-resize;touch-action:none;position:relative}
+    .traube-dual-divider:after{content:"";position:absolute;left:4px;top:35%;height:30%;width:4px;border-radius:8px;background:#184888}
+    .traube-dual-layout>.traube-dual-right{flex:1;min-width:0;border:1px solid var(--border,#ddd);border-radius:10px;overflow:hidden;background:var(--surface,#fff)}
+    .traube-dual-right iframe{display:block;width:100%;height:100%;border:0}
+    body.traube-dual-active .page{width:100%!important;max-width:100%!important}
+    body.traube-dual-active .book-page.traube-dual-left{grid-template-columns:minmax(0,1fr) 100px!important;gap:8px!important}
+    body.traube-dual-active .note-studio.traube-dual-left{grid-template-columns:minmax(0,1fr)!important;padding:4px!important}
+    body.traube-dual-active .note-studio .note-tree,body.traube-dual-active .note-studio .note-info{display:none!important}
+    body.traube-dual-active .note-studio .note-canvas{min-width:0!important}
+    body.traube-dual-embedded .sidebar,body.traube-dual-embedded .sidebar-backdrop,body.traube-dual-embedded .topbar,body.traube-dual-embedded .traube-page-spotlight,body.traube-dual-embedded .note-back-library,body.traube-dual-embedded .note-tree,body.traube-dual-embedded .note-info,body.traube-dual-embedded .book-outline{display:none!important}
+    body.traube-dual-embedded .app-shell,body.traube-dual-embedded .main,body.traube-dual-embedded .page,body.traube-dual-embedded .note-studio-wrap{display:block!important;grid-template-columns:minmax(0,1fr)!important;margin:0!important;padding:0!important;width:100%!important;max-width:none!important;min-height:0!important}
+    body.traube-dual-embedded .note-studio,body.traube-dual-embedded .book-page{display:block!important;padding:6px!important;width:100%!important;max-width:none!important}
+    body.traube-dual-embedded .book-main,body.traube-dual-embedded .note-canvas,body.traube-dual-embedded .notebook-editor{width:100%!important;max-width:none!important;min-width:0!important}
+    body.traube-dual-embedded .traube-dual-actions{display:none!important}
     @media (orientation:portrait) and (max-width:700px){
-      .luria-dual-layout{flex-direction:column}
-      .luria-dual-layout>.luria-dual-left{flex:0 0 calc(var(--split) - 6px);width:100%!important;height:0;min-height:0}
-      .luria-dual-layout>.luria-dual-divider{width:100%;height:12px;cursor:row-resize}
-      .luria-dual-divider:after{top:4px;left:35%;width:30%;height:4px}
-      .luria-dual-layout>.luria-dual-right{min-height:0;width:100%}
-      body.luria-dual-active .book-page.luria-dual-left{display:block!important}
-      body.luria-dual-active .book-outline{display:none!important}
+      .traube-dual-layout{flex-direction:column}
+      .traube-dual-layout>.traube-dual-left{flex:0 0 calc(var(--split) - 6px);width:100%!important;height:0;min-height:0}
+      .traube-dual-layout>.traube-dual-divider{width:100%;height:12px;cursor:row-resize}
+      .traube-dual-divider:after{top:4px;left:35%;width:30%;height:4px}
+      .traube-dual-layout>.traube-dual-right{min-height:0;width:100%}
+      body.traube-dual-active .book-page.traube-dual-left{display:block!important}
+      body.traube-dual-active .book-outline{display:none!important}
     }
   `;
   document.head.appendChild(styles);
   const makeButton = (text, secondary) => {
     const el = document.createElement("button");
     el.type = "button"; el.textContent = text;
-    el.className = "luria-dual-btn" + (secondary ? " secondary" : "");
+    el.className = "traube-dual-btn" + (secondary ? " secondary" : "");
     return el;
   };
   const norm = value => String(value || "").normalize("NFD")
@@ -78,24 +78,24 @@
     const parent = primary.parentElement;
     const marker = document.createComment("split original position");
     parent.insertBefore(marker, primary);
-    const bar = document.createElement("div"); bar.className = "luria-dual-bar";
+    const bar = document.createElement("div"); bar.className = "traube-dual-bar";
     const label = document.createElement("strong"); label.textContent = heading;
-    const actions = document.createElement("div"); actions.className = "luria-dual-actions";
+    const actions = document.createElement("div"); actions.className = "traube-dual-actions";
     const reset = makeButton("50/50", true), close = makeButton("Fechar divisão");
     actions.append(reset, close); bar.append(label, actions);
-    const shell = document.createElement("div"); shell.className = "luria-dual-layout";
-    primary.classList.add("luria-dual-left");
-    const divider = document.createElement("div"); divider.className = "luria-dual-divider";
+    const shell = document.createElement("div"); shell.className = "traube-dual-layout";
+    primary.classList.add("traube-dual-left");
+    const divider = document.createElement("div"); divider.className = "traube-dual-divider";
     divider.tabIndex = 0; divider.setAttribute("role", "separator");
     divider.setAttribute("aria-label", "Ajustar espaço da apostila e das anotações");
-    const aside = document.createElement("div"); aside.className = "luria-dual-right";
+    const aside = document.createElement("div"); aside.className = "traube-dual-right";
     const iframe = document.createElement("iframe");
     const url = new URL(destination, location.origin); url.searchParams.set("embedded", "1");
     iframe.src = url.toString(); iframe.title = book ? "Anotações TRAUBE" : "Apostila TRAUBE";
     aside.append(iframe); shell.append(primary, divider, aside);
     parent.insertBefore(bar, marker); parent.insertBefore(shell, marker);
-    document.body.classList.add("luria-dual-active");
-    const storage = "luria:study-split-ratio";
+    document.body.classList.add("traube-dual-active");
+    const storage = "traube:study-split-ratio";
     let ratio = 50;
     try { ratio = Math.min(70, Math.max(30, Number(localStorage.getItem(storage)) || 50)); } catch {}
     const set = value => {
@@ -132,8 +132,8 @@
         else alert("Não foi possível salvar as anotações.");
         return;
       }
-      parent.insertBefore(primary, marker); primary.classList.remove("luria-dual-left");
-      shell.remove(); bar.remove(); marker.remove(); document.body.classList.remove("luria-dual-active");
+      parent.insertBefore(primary, marker); primary.classList.remove("traube-dual-left");
+      shell.remove(); bar.remove(); marker.remove(); document.body.classList.remove("traube-dual-active");
       if (typeof onClose === "function") onClose();
     };
     close.addEventListener("click", teardown);
@@ -159,7 +159,7 @@
     const identity = document.querySelector(".note-editor-identity");
     const studio = document.querySelector(".note-studio");
     if (!identity || !studio) return;
-    const actions = document.createElement("div"); actions.className = "luria-dual-actions";
+    const actions = document.createElement("div"); actions.className = "traube-dual-actions";
     const open = makeButton("Ver apostila"), divide = makeButton("Dividir tela", true);
     actions.append(open, divide); identity.append(actions);
     let target = "", teardown;

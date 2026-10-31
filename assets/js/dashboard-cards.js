@@ -78,9 +78,9 @@
   }, true);
   window.addEventListener("docmap:ready", () => { restore(); updateAccess(); });
   window.addEventListener("docmap:access-updated", updateAccess);
-  window.addEventListener("luria:owner-changed", () => { restore(); updateAccess(); });
-  window.addEventListener("luria:dashboard-layout-changed", restore);
-  window.addEventListener("luria:dashboard-presentation-ready", restore);
+  window.addEventListener("traube:owner-changed", () => { restore(); updateAccess(); });
+  window.addEventListener("traube:dashboard-layout-changed", restore);
+  window.addEventListener("traube:dashboard-presentation-ready", restore);
   window.addEventListener("pageshow", () => { restore(); updateAccess(); });
   window.addEventListener("storage", event => {
     if (event.key === null || event.key === window.TraubeDashboardPreference?.key()) restore();

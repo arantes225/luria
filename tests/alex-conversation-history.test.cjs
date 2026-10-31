@@ -40,7 +40,7 @@ test('Alex bounds the context window, supports reset, and expires old sessions',
   assert.equal(history[0].text, 'Pergunta 2');
   clearAlexConversation(USER_A);
   assert.deepEqual(getAlexConversation(USER_A), []);
-  values.set('luria:alex:conversation:v1:' + USER_A, JSON.stringify({updatedAt:Date.now() - 13*60*60*1000, messages:history}));
+  values.set('traube:alex:conversation:v1:' + USER_A, JSON.stringify({updatedAt:Date.now() - 13*60*60*1000, messages:history}));
   assert.deepEqual(getAlexConversation(USER_A), []);
 });
 

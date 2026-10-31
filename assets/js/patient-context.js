@@ -1,7 +1,7 @@
 /* Temporary patient workspace. Clinical calculations remain owned by the
  * existing tools; this module only stores explicit context and provenance. */
 (() => {
-  const KEY = "luria:temporary-patient:v1";
+  const KEY = "traube:temporary-patient:v1";
   const page = document.querySelector('body[data-page="trabalho_paciente"]');
   const safe = value => String(value ?? "").replace(/[&<>\"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;",'\"':"&quot;", "'":"&#39;"}[char]));
   const normalize = value => String(value ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
@@ -18,10 +18,10 @@
   const write = state => {
     state.updatedAt = now();
     try { sessionStorage.setItem(KEY, JSON.stringify(state)); } catch { return false; }
-    window.dispatchEvent(new CustomEvent("luria:patient-context-changed", { detail:{ state:clone(state) } }));
+    window.dispatchEvent(new CustomEvent("traube:patient-context-changed", { detail:{ state:clone(state) } }));
     return true;
   };
-  const clear = () => { try { sessionStorage.removeItem(KEY); } catch {} window.dispatchEvent(new CustomEvent("luria:patient-context-changed", { detail:{ state:emptyState() } })); };
+  const clear = () => { try { sessionStorage.removeItem(KEY); } catch {} window.dispatchEvent(new CustomEvent("traube:patient-context-changed", { detail:{ state:emptyState() } })); };
   const update = updater => { const state = read(); updater(state); write(state); return clone(state); };
   const typeLabels = { weight:"Peso", height:"Altura", sodium:"Sódio", potassium:"Potássio", creatinine:"Creatinina", glucose:"Glicose", lactate:"Lactato", urineOutput:"Diurese", other:"Outro" };
   const registry = [
@@ -74,6 +74,6 @@
     bindTools();
   };
   const bindTools = () => root.querySelectorAll("[data-add-result]").forEach(button => button.addEventListener("click", () => { const tool=registry.find(item=>item.id===button.dataset.addResult); if(!tool)return; stateApi.addResult({title:tool.name,value:"Marcador adicionado para revisão",category:tool.category,source:tool.id});render(); }));
-  window.addEventListener("luria:patient-context-changed", render);
+  window.addEventListener("traube:patient-context-changed", render);
   render();
 })();

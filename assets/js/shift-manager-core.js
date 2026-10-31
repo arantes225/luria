@@ -1,8 +1,8 @@
 (function shiftCoreModule() {
   "use strict";
-  const SHIFT_KEY = "luria_plantoes_shifts_v1";
-  const INSTITUTION_KEY = "luria_plantoes_institutions_v1";
-  const TAX_KEY = "luria_plantoes_tax_settings_v1";
+  const SHIFT_KEY = "traube_plantoes_shifts_v1";
+  const INSTITUTION_KEY = "traube_plantoes_institutions_v1";
+  const TAX_KEY = "traube_plantoes_tax_settings_v1";
   const num = (v) => Number.isFinite(Number(v)) ? Number(v) : 0;
   const cents = (v) => Math.round((num(v) + Number.EPSILON) * 100) / 100;
   function read(key, fallback) {
@@ -12,7 +12,7 @@
   function write(key, value) {
     try {
       localStorage.setItem(key, JSON.stringify(value));
-      window.dispatchEvent(new CustomEvent("luria:plantoes:changed"));
+      window.dispatchEvent(new CustomEvent("traube:plantoes:changed"));
       return true;
     } catch (_) {
       alert("Não foi possível salvar os dados neste dispositivo. Verifique o armazenamento disponível.");

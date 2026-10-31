@@ -18,11 +18,11 @@ test('failed leave survives reload, retries only the owning account and releases
    return{ok:status===200,status,json:async()=>result};
   };w.eval(read('assets/js/social-voice.js'));
  };
- const first=page(t,'amigos/index.html').w;setup(first);await first.TraubeVoice.join(A,{send:async()=>{}});const oldClient=leases.get(A);assert.equal(first.sessionStorage.getItem('luria:voice:pending-leaves'),null);
- offline=true;await first.TraubeVoice.leave();const saved=first.sessionStorage.getItem('luria:voice:pending-leaves');assert(saved.includes(oldClient));assert.doesNotMatch(saved,/private-jwt|Bearer|credential/);assert.equal(first.TraubeVoice.getState().active,false);
- const next=page(t,'amigos/index.html').w;setup(next);next.sessionStorage.setItem('luria:voice:pending-leaves',saved);offline=false;user=B;
+ const first=page(t,'amigos/index.html').w;setup(first);await first.TraubeVoice.join(A,{send:async()=>{}});const oldClient=leases.get(A);assert.equal(first.sessionStorage.getItem('traube:voice:pending-leaves'),null);
+ offline=true;await first.TraubeVoice.leave();const saved=first.sessionStorage.getItem('traube:voice:pending-leaves');assert(saved.includes(oldClient));assert.doesNotMatch(saved,/private-jwt|Bearer|credential/);assert.equal(first.TraubeVoice.getState().active,false);
+ const next=page(t,'amigos/index.html').w;setup(next);next.sessionStorage.setItem('traube:voice:pending-leaves',saved);offline=false;user=B;
  await next.TraubeVoice.join(A,{send:async()=>{}});assert.equal(leases.get(A),oldClient);assert(!calls.some(c=>c.user===B&&c.action==='leave'&&c.client===oldClient));await next.TraubeVoice.leave();
- user=A;await next.TraubeVoice.join(A,{send:async()=>{}});assert.notEqual(leases.get(A),oldClient);const cleanup=calls.findLastIndex(c=>c.user===A&&c.action==='leave'&&c.client===oldClient);const newJoin=calls.findLastIndex(c=>c.user===A&&c.action==='join');assert(cleanup<newJoin);assert.equal(next.sessionStorage.getItem('luria:voice:pending-leaves'),null);await next.TraubeVoice.leave();
+ user=A;await next.TraubeVoice.join(A,{send:async()=>{}});assert.notEqual(leases.get(A),oldClient);const cleanup=calls.findLastIndex(c=>c.user===A&&c.action==='leave'&&c.client===oldClient);const newJoin=calls.findLastIndex(c=>c.user===A&&c.action==='join');assert(cleanup<newJoin);assert.equal(next.sessionStorage.getItem('traube:voice:pending-leaves'),null);await next.TraubeVoice.leave();
  offline=true;await assert.rejects(next.TraubeVoice.join(A,{send:async()=>{}}),/conexão de rede foi interrompida/);assert.equal(next.TraubeVoice.getState().active,false);
 });
 test('voice client captures audio only, stops both normal and late captures and never clears a newer call',async t=>{

@@ -3,7 +3,7 @@
    - Gerencia a inicialização e desligamento limpo dos tracks da câmera.
    - Conecta a Câmera Inteligente (Modo Rápido / Ultrassensível).
    - Controla o TraubeRotateController com a opção "Continuar na vertical".
-   - Armazena a sessão capturada no sessionStorage ('luria_ecg_session') e redireciona para /trabalho/ecg/#revisao.
+   - Armazena a sessão capturada no sessionStorage ('traube_ecg_session') e redireciona para /trabalho/ecg/#revisao.
    - Garante que a câmera seja parada ao clicar em "Voltar ao ECG" ou descarregar a página.
 */
 
@@ -39,7 +39,7 @@
     new URLSearchParams(window.location.search).get("debug") === "true" ||
     window.location.hostname === "localhost" ||
     window.location.hostname === "127.0.0.1" ||
-    localStorage.getItem("luria_ecg_debug") === "true"
+    localStorage.getItem("traube_ecg_debug") === "true"
   );
 
   if (btnDebugToggle && isDebugAllowed) {
@@ -80,8 +80,8 @@
         },
         onExtractComplete: (leads, pkg) => {
           try {
-            sessionStorage.setItem("luria_ecg_session", JSON.stringify(pkg));
-            sessionStorage.setItem("luria_ecg_leads", JSON.stringify(leads));
+            sessionStorage.setItem("traube_ecg_session", JSON.stringify(pkg));
+            sessionStorage.setItem("traube_ecg_leads", JSON.stringify(leads));
           } catch (e) {
             console.warn("Falha ao salvar sessão de ECG no sessionStorage:", e);
           }

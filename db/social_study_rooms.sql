@@ -144,11 +144,11 @@ $$;
 revoke all on function private.social_alternatives(jsonb) from public,anon,authenticated;
 
 -- Keep the current public RPC signatures. Preserve old accepted edges.
-create or replace function private.add_friend_by_luria_id(p_luria_id text) returns uuid language plpgsql security definer set search_path='' as $$
+create or replace function private.add_friend_by_traube_id(p_traube_id text) returns uuid language plpgsql security definer set search_path='' as $$
  declare friend uuid;
  begin
   perform private.social_rate('friend_request',20,3600);
-  select p.user_id into friend from public.profiles p where p.luria_id=upper(trim(p_luria_id));
+  select p.user_id into friend from public.profiles p where p.traube_id=upper(trim(p_traube_id));
   if friend is null or friend=auth.uid() or private.social_blocked(friend) then raise exception 'Perfil indisponível'; end if;
   perform pg_advisory_xact_lock(hashtext(least(friend::text,auth.uid()::text)),hashtext(greatest(friend::text,auth.uid()::text)));
   if exists(select 1 from public.friendships f where (f.user_id=auth.uid() and f.friend_user_id=friend) or (f.friend_user_id=auth.uid() and f.user_id=friend)) then return friend; end if;
@@ -156,14 +156,14 @@ create or replace function private.add_friend_by_luria_id(p_luria_id text) retur
   return friend;
  end;
 $$;
-create or replace function private.my_friends() returns table(user_id uuid,luria_id text,display_name text,specialty text,created_at timestamptz) language sql stable security definer set search_path='' as $$
+create or replace function private.my_friends() returns table(user_id uuid,traube_id text,display_name text,specialty text,created_at timestamptz) language sql stable security definer set search_path='' as $$
  with edges as (
   select f.friend_user_id friend_id,f.created_at from public.friendships f where f.user_id=(select auth.uid()) and f.status='accepted'
   union all select f.user_id,f.created_at from public.friendships f where f.friend_user_id=(select auth.uid()) and f.status='accepted'
- ) select p.user_id,p.luria_id,p.display_name,p.specialty,min(e.created_at) from edges e join public.profiles p on p.user_id=e.friend_id where not private.social_blocked(p.user_id) group by p.user_id,p.luria_id,p.display_name,p.specialty order by min(e.created_at) desc;
+ ) select p.user_id,p.traube_id,p.display_name,p.specialty,min(e.created_at) from edges e join public.profiles p on p.user_id=e.friend_id where not private.social_blocked(p.user_id) group by p.user_id,p.traube_id,p.display_name,p.specialty order by min(e.created_at) desc;
 $$;
-create or replace function private.lookup_luria_user(p_luria_id text) returns table(user_id uuid,luria_id text,display_name text,specialty text) language sql stable security definer set search_path='' as $$
- select p.user_id,p.luria_id,p.display_name,p.specialty from public.profiles p where p.luria_id=upper(trim(p_luria_id)) and p.user_id<>(select auth.uid()) and not private.social_blocked(p.user_id) limit 1;
+create or replace function private.lookup_traube_user(p_traube_id text) returns table(user_id uuid,traube_id text,display_name text,specialty text) language sql stable security definer set search_path='' as $$
+ select p.user_id,p.traube_id,p.display_name,p.specialty from public.profiles p where p.traube_id=upper(trim(p_traube_id)) and p.user_id<>(select auth.uid()) and not private.social_blocked(p.user_id) limit 1;
 $$;
 
 -- New requests must not be usable to enroll an unconsenting user in a race.
@@ -225,12 +225,12 @@ create function private.social_snapshot(p_room_id uuid default null) returns jso
   if p_room_id is null then
    select jsonb_build_object('discoverable',social_discoverable,'share_status',share_study_status) into result from public.profiles where user_id=auth.uid();
    result=coalesce(result,'{}')||jsonb_build_object(
-    'requests',(select coalesce(jsonb_agg(jsonb_build_object('id',f.id,'incoming',f.friend_user_id=auth.uid(),'user_id',p.user_id,'name',p.display_name,'luria_id',p.luria_id)),'[]') from public.friendships f join public.profiles p on p.user_id=case when f.user_id=auth.uid() then f.friend_user_id else f.user_id end where (f.user_id=auth.uid() or f.friend_user_id=auth.uid()) and f.status='pending' and not private.social_blocked(p.user_id)),
+    'requests',(select coalesce(jsonb_agg(jsonb_build_object('id',f.id,'incoming',f.friend_user_id=auth.uid(),'user_id',p.user_id,'name',p.display_name,'traube_id',p.traube_id)),'[]') from public.friendships f join public.profiles p on p.user_id=case when f.user_id=auth.uid() then f.friend_user_id else f.user_id end where (f.user_id=auth.uid() or f.friend_user_id=auth.uid()) and f.status='pending' and not private.social_blocked(p.user_id)),
     'groups',(select coalesce(jsonb_agg(to_jsonb(g)||jsonb_build_object('role',m.role,'members',(select count(*) from public.study_group_members where group_id=g.id),'invite',case when m.role='admin' then (select code from private.social_group_invites where group_id=g.id and expires_at>now()) end)),'[]') from public.study_groups g join public.study_group_members m on m.group_id=g.id and m.user_id=auth.uid() where not private.social_blocked(g.owner_id)),
     'friends',(select coalesce(jsonb_agg(to_jsonb(f)||jsonb_build_object('avatar_url',p.avatar_url,'share_status',p.share_study_status)),'[]') from private.my_friends() f join public.profiles p on p.user_id=f.user_id),
     'blocks',(select coalesce(jsonb_agg(jsonb_build_object('user_id',b.blocked_user_id,'name',p.display_name)),'[]') from public.user_blocks b left join public.profiles p on p.user_id=b.blocked_user_id where b.user_id=auth.uid()),
     'suggestions',(select coalesce(jsonb_agg(to_jsonb(s)),'[]') from (
-     select p.user_id,p.display_name,p.luria_id,p.specialty,
+     select p.user_id,p.display_name,p.traube_id,p.specialty,
       (select count(*) from public.study_group_members theirs join public.study_group_members mine on theirs.group_id=mine.group_id and mine.user_id=auth.uid() where theirs.user_id=p.user_id) as shared_groups
      from public.profiles p where p.social_discoverable and p.user_id<>auth.uid() and not private.social_blocked(p.user_id)
       and not exists(select 1 from public.friendships f where (f.user_id=auth.uid() and f.friend_user_id=p.user_id) or (f.friend_user_id=auth.uid() and f.user_id=p.user_id))
@@ -292,7 +292,7 @@ create function private.social_command(p_action text,p_payload jsonb default '{}
    update public.profiles set social_discoverable=coalesce((p_payload->>'discoverable')::boolean,false),share_study_status=coalesce((p_payload->>'share_status')::boolean,false) where user_id=uid; return '{}';
   elsif p_action='profile' then
    if private.social_blocked(target) or not exists(select 1 from private.my_friends() f where f.user_id=target) then raise exception 'Perfil indisponível'; end if;
-   return (select jsonb_build_object('name',display_name,'luria_id',luria_id,'specialty',specialty,'avatar_url',avatar_url) from public.profiles where user_id=target);
+   return (select jsonb_build_object('name',display_name,'traube_id',traube_id,'specialty',specialty,'avatar_url',avatar_url) from public.profiles where user_id=target);
   elsif p_action='friend_accept' then
    update public.friendships set status='accepted' where id=(p_payload->>'id')::uuid and friend_user_id=uid and status='pending' and not private.social_blocked(user_id); return '{}';
   elsif p_action='friend_decline' then

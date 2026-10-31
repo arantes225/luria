@@ -39,7 +39,7 @@ test('standalone capture page (/trabalho/ecg/captura/) is independent, full-scre
   const extractorSrc = fs.readFileSync(path.join(root, 'assets/js/ecg-signal-extractor.js'), 'utf8');
   const cvEngineSrc = fs.readFileSync(path.join(root, 'assets/js/ecg-cv-engine.js'), 'utf8');
   const cameraSrc = fs.readFileSync(path.join(root, 'assets/js/ecg-smart-camera.js'), 'utf8');
-  const rotateSrc = fs.readFileSync(path.join(root, 'assets/js/luria-rotate-controller.js'), 'utf8');
+  const rotateSrc = fs.readFileSync(path.join(root, 'assets/js/traube-rotate-controller.js'), 'utf8');
   const pageSrc = fs.readFileSync(path.join(root, 'assets/js/ecg-capture-page.js'), 'utf8');
 
   const dom = new JSDOM(captureHtml, {
@@ -124,7 +124,7 @@ test('standalone capture page (/trabalho/ecg/captura/) is independent, full-scre
 
 test('orientation hint on standalone capture dismisses and adapts aspect ratio on "Manter vertical"', async () => {
   const captureHtml = fs.readFileSync(path.join(root, 'trabalho/ecg/captura/index.html'), 'utf8');
-  const rotateSrc = fs.readFileSync(path.join(root, 'assets/js/luria-rotate-controller.js'), 'utf8');
+  const rotateSrc = fs.readFileSync(path.join(root, 'assets/js/traube-rotate-controller.js'), 'utf8');
   const pageSrc = fs.readFileSync(path.join(root, 'assets/js/ecg-capture-page.js'), 'utf8');
 
   const dom = new JSDOM(captureHtml, {
@@ -153,7 +153,7 @@ test('orientation hint on standalone capture dismisses and adapts aspect ratio o
   assert.notEqual(dialog, null);
   assert.equal(dialog.hidden, false, 'Rotate dialog should appear in portrait mode');
 
-  const dismissBtn = dialog.querySelector('.luria-rotate-action');
+  const dismissBtn = dialog.querySelector('.traube-rotate-action');
   assert.notEqual(dismissBtn, null);
   assert.equal(dismissBtn.textContent, 'Manter vertical');
 

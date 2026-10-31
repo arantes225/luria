@@ -1,6 +1,6 @@
 create schema if not exists private;
 
-create or replace function private.luria_topic_matches(p_topic text, p_haystack text)
+create or replace function private.traube_topic_matches(p_topic text, p_haystack text)
 returns boolean
 language plpgsql
 immutable
@@ -26,7 +26,7 @@ begin
 end;
 $function$;
 
-revoke all on function private.luria_topic_matches(text, text) from public, anon, authenticated;
+revoke all on function private.traube_topic_matches(text, text) from public, anon, authenticated;
 
 create or replace function public.build_topic_study_session_v1(
   p_topic text,
@@ -71,7 +71,7 @@ begin
       left join public.question_sources s on s.id = b.source_id
       where b.gabarito is not null
         and b.enunciado is not null
-        and private.luria_topic_matches(v_topic, concat_ws(' ', a.name, t.name, st.name))
+        and private.traube_topic_matches(v_topic, concat_ws(' ', a.name, t.name, st.name))
       order by random()
       limit v_question_count
     ), numbered as (
@@ -116,7 +116,7 @@ begin
       from public.flashcards f
       where f.active
         and (f.library_scope = 'system' or f.user_id = v_user)
-        and private.luria_topic_matches(v_topic, concat_ws(' ', f.area, f.materia, f.theme))
+        and private.traube_topic_matches(v_topic, concat_ws(' ', f.area, f.materia, f.theme))
       order by random()
       limit v_flashcard_count
     ) picked;
@@ -133,9 +133,9 @@ begin
   into v_apostila
   from public.apostilas a
   where a.is_published
-    and private.luria_topic_matches(v_topic, concat_ws(' ', a.area, a.materia, a.tema, a.titulo))
+    and private.traube_topic_matches(v_topic, concat_ws(' ', a.area, a.materia, a.tema, a.titulo))
   order by
-    case when private.luria_topic_matches(v_topic, a.tema) then 0 else 1 end,
+    case when private.traube_topic_matches(v_topic, a.tema) then 0 else 1 end,
     a.titulo
   limit 1;
 
@@ -192,7 +192,7 @@ begin
   from public.study_topics t
   where t.user_id = v_user and t.completed_at is null
     and t.scheduled_date between p_start_date and p_end_date
-    and not private.luria_topic_matches(v_focus, concat_ws(' ', t.area, t.materia, t.theme));
+    and not private.traube_topic_matches(v_focus, concat_ws(' ', t.area, t.materia, t.theme));
 
   with study_dates as (
     select day::date as study_date
@@ -210,7 +210,7 @@ begin
       ) as ordinal
     from public.study_topics t
     where t.user_id = v_user and t.completed_at is null
-      and private.luria_topic_matches(v_focus, concat_ws(' ', t.area, t.materia, t.theme))
+      and private.traube_topic_matches(v_focus, concat_ws(' ', t.area, t.materia, t.theme))
   )
   select coalesce(jsonb_agg(jsonb_build_object(
     'topic_id', c.id,

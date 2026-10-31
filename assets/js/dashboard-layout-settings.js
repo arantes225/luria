@@ -21,8 +21,8 @@
 
   load();
   window.addEventListener("docmap:ready", load);
-  window.addEventListener("luria:owner-changed", load);
-  window.addEventListener("luria:dashboard-layout-changed", load);
+  window.addEventListener("traube:owner-changed", load);
+  window.addEventListener("traube:dashboard-layout-changed", load);
   window.addEventListener("pageshow", load);
   window.addEventListener("storage", event => {
     if (event.key === null || event.key === window.TraubeDashboardPreference?.key()) load();
@@ -38,7 +38,7 @@
   if (!options) return;
 
   function key() {
-    return `luria:work-dashboard-layout:${window.docmapUser?.id || "guest"}`;
+    return `traube:work-dashboard-layout:${window.docmapUser?.id || "guest"}`;
   }
 
   function load() {

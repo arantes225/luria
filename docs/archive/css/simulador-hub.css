@@ -376,7 +376,7 @@ html[data-theme="leila-mood"] .sim-hero-logo{
 .sim-hero-zap{
   background:
     linear-gradient(90deg,rgba(49,126,192,.94) 0%,rgba(55,137,202,.84) 42%,rgba(55,137,202,.34) 66%,rgba(55,137,202,.04) 100%),
-    url("/assets/img/plantao/luriazap-card-bg.webp") center/cover no-repeat!important;
+    url("/assets/img/plantao/traubezap-card-bg.webp") center/cover no-repeat!important;
 }
 .sim-hero-emergency .sim-hero-art,
 .sim-hero-zap .sim-hero-art{
@@ -516,7 +516,7 @@ html[data-theme="leila-mood"]{
       var(--sim-zap-tint-mid) 46%,
       var(--sim-zap-tint-end) 100%
     ),
-    url("/assets/img/plantao/luriazap-card-bg.webp")!important;
+    url("/assets/img/plantao/traubezap-card-bg.webp")!important;
   background-size:cover!important;
   background-position:center!important;
   background-repeat:no-repeat!important;
@@ -988,7 +988,7 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
       color-mix(in srgb,var(--accent) 44%,transparent) 72%,
       color-mix(in srgb,var(--accent) 12%,transparent) 100%
     ),
-    url("/assets/img/plantao/luriazap-card-bg.webp")!important;
+    url("/assets/img/plantao/traubezap-card-bg.webp")!important;
   background-size:cover!important;
   background-position:center!important;
   background-repeat:no-repeat!important;
@@ -1189,7 +1189,7 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
       rgba(185,69,121,.30) 72%,
       rgba(185,69,121,.06) 100%
     ),
-    url("/assets/img/plantao/luriazap-card-bg-pink.webp")!important;
+    url("/assets/img/plantao/traubezap-card-bg-pink.webp")!important;
   background-size:cover!important;
   background-position:center!important;
   background-repeat:no-repeat!important;
@@ -1536,7 +1536,7 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
     overflow:hidden!important;
   }
   body[data-page="plantao"] .sim-hub-topbar,
-  body[data-page="plantao"] .luria-page-spotlight{
+  body[data-page="plantao"] .traube-page-spotlight{
     flex:0 0 auto!important;
   }
   body[data-page="plantao"] .sim-practice-grid{

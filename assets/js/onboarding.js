@@ -1,6 +1,6 @@
 (() => {
-  const KEY_PREFIX = "luria:onboarding:v1:";
-  const CHALLENGE_PREFIX = "luria:discover:v1:";
+  const KEY_PREFIX = "traube:onboarding:v1:";
+  const CHALLENGE_PREFIX = "traube:discover:v1:";
   const page = document.body.dataset.page || "dashboard";
 
   const ROUTES = {
@@ -116,13 +116,13 @@
   function onCorrectPage(step){ return page === step.page; }
 
   function ensureStyles(){
-    let l=document.getElementById("luria-onboarding-css");
+    let l=document.getElementById("traube-onboarding-css");
     if(l){
       if(!String(l.href||"").includes("v=2.0")) l.href="/assets/css/onboarding.css?v=2.1";
       return;
     }
     l=document.createElement("link");
-    l.id="luria-onboarding-css";
+    l.id="traube-onboarding-css";
     l.rel="stylesheet";
     l.href="/assets/css/onboarding.css?v=2.1";
     document.head.appendChild(l);
@@ -132,19 +132,19 @@
     ensureStyles();
     clearOverlay();
     const overlay=document.createElement("div");
-    overlay.id="luria-onboarding-overlay";
-    overlay.className="luria-onboarding-mode";
+    overlay.id="traube-onboarding-overlay";
+    overlay.className="traube-onboarding-mode";
     overlay.innerHTML=`
-      <div class="luria-onboarding-dim"></div>
-      <section class="luria-onboarding-card luria-onboarding-mode-card" role="dialog" aria-label="Escolher onboarding">
+      <div class="traube-onboarding-dim"></div>
+      <section class="traube-onboarding-card traube-onboarding-mode-card" role="dialog" aria-label="Escolher onboarding">
         <span class="eyebrow">Primeiros passos</span>
         <h2>Como você quer conhecer o TRAUBE?</h2>
         <p>Você pode fazer o tour completo ou uma versão resumida. O guia de Questões e Simulados continuará disponível dentro da própria página.</p>
-        <div class="luria-onboarding-mode-grid">
+        <div class="traube-onboarding-mode-grid">
           <button type="button" data-mode="full"><strong>Onboarding completo</strong><small>Passa por todas as áreas, botões principais e fluxos.</small></button>
           <button type="button" data-mode="summary"><strong>Onboarding resumido</strong><small>Mostra só o essencial, com atenção especial aos simulados.</small></button>
         </div>
-        ${existing?'<button type="button" class="luria-onboarding-cancel" data-mode-cancel>Cancelar</button>':""}
+        ${existing?'<button type="button" class="traube-onboarding-cancel" data-mode-cancel>Cancelar</button>':""}
       </section>`;
     document.body.appendChild(overlay);
     overlay.querySelectorAll("[data-mode]").forEach(btn=>btn.onclick=()=>{
@@ -244,7 +244,7 @@
           </ul>
           <h2>Diagnóstico</h2>
           <p>Confirmar medidas adequadas em ocasiões distintas e, quando indicado, complementar com medidas fora do consultório.</p>
-          <div class="notebook-divider arabesque" contenteditable="false"><span class="notebook-divider-luria" aria-hidden="true"></span></div>
+          <div class="notebook-divider arabesque" contenteditable="false"><span class="notebook-divider-traube" aria-hidden="true"></span></div>
           <h2>Tratamento</h2>
           <p><strong>Medidas não farmacológicas:</strong> redução de sódio, atividade física, controle de peso e alimentação adequada.</p>
           <p><strong>Farmacológico:</strong> individualizar conforme risco cardiovascular, comorbidades e níveis pressóricos.</p>
@@ -740,7 +740,7 @@
   }
 
   async function loadOnboardingPdfBytes(){
-    if(window.__luriaOnboardingPdfBytes) return window.__luriaOnboardingPdfBytes;
+    if(window.__traubeOnboardingPdfBytes) return window.__traubeOnboardingPdfBytes;
 
     const response=await fetch("/assets/onboarding/simulado-onboarding.b64?v=1",{cache:"force-cache"});
     if(!response.ok) throw new Error("PDF de onboarding indisponível.");
@@ -753,7 +753,7 @@
       bytes[i]=binary.charCodeAt(i);
     }
 
-    window.__luriaOnboardingPdfBytes=bytes;
+    window.__traubeOnboardingPdfBytes=bytes;
     return bytes;
   }
 
@@ -1520,33 +1520,33 @@
     }
     const liberated = s.phase==="explore";
     if(liberated){
-      target.classList.remove("luria-onboarding-target");
-      target.classList.add("luria-onboarding-target-clear");
+      target.classList.remove("traube-onboarding-target");
+      target.classList.add("traube-onboarding-target-clear");
       target.style.setProperty("box-shadow","0 0 0 2px color-mix(in srgb,var(--accent,#184888) 58%,transparent)","important");
       target.style.setProperty("filter","none","important");
       target.style.setProperty("opacity","1","important");
     }else{
-      target.classList.remove("luria-onboarding-target-clear");
-      target.classList.add("luria-onboarding-target");
+      target.classList.remove("traube-onboarding-target-clear");
+      target.classList.add("traube-onboarding-target");
       target.style.removeProperty("box-shadow");
       target.style.removeProperty("filter");
       target.style.removeProperty("opacity");
     }
 
     const overlay=document.createElement("div");
-    overlay.id="luria-onboarding-overlay";
+    overlay.id="traube-onboarding-overlay";
     overlay.classList.toggle("is-exploring",liberated);
-    document.body.classList.toggle("luria-onboarding-exploring",liberated);
+    document.body.classList.toggle("traube-onboarding-exploring",liberated);
     overlay.classList.remove("card-top");
     overlay.innerHTML=`
-      ${liberated ? "" : '<div class="luria-onboarding-dim"></div>'}
-      <section class="luria-onboarding-card" role="dialog" aria-label="Onboarding TRAUBE">
-        <div class="luria-onboarding-progress"><span>Conhecendo o TRAUBE</span><strong>${s.step+1} de ${steps.length}</strong></div>
-        <div class="luria-onboarding-bar"><i style="width:${((s.step+1)/steps.length)*100}%"></i></div>
+      ${liberated ? "" : '<div class="traube-onboarding-dim"></div>'}
+      <section class="traube-onboarding-card" role="dialog" aria-label="Onboarding TRAUBE">
+        <div class="traube-onboarding-progress"><span>Conhecendo o TRAUBE</span><strong>${s.step+1} de ${steps.length}</strong></div>
+        <div class="traube-onboarding-bar"><i style="width:${((s.step+1)/steps.length)*100}%"></i></div>
         <h2>${step.title}</h2>
         <p>${step.text}</p>
         
-        <div class="luria-onboarding-actions">
+        <div class="traube-onboarding-actions">
           <button type="button" data-onboarding-skip>Pular onboarding</button>
           <div>
             <button type="button" data-onboarding-back ${s.step===0?"disabled":""}>Voltar</button>
@@ -1558,7 +1558,7 @@
 
     // Regra de posicionamento: o card fica embaixo por padrão.
     // Ele só sobe se a posição inferior realmente invadir a área destacada.
-    const onboardingCard=overlay.querySelector(".luria-onboarding-card");
+    const onboardingCard=overlay.querySelector(".traube-onboarding-card");
     const placeOnboardingCard=()=>{
       overlay.classList.remove("card-top");
       if(!onboardingCard || !target) return;
@@ -1595,11 +1595,11 @@
   }
 
   function clearOverlay(){
-    document.body.classList.remove("luria-onboarding-exploring");
-    document.getElementById("luria-onboarding-overlay")?.remove();
-    document.querySelectorAll(".luria-onboarding-target,.luria-onboarding-target-clear").forEach(el=>{
-      el.classList.remove("luria-onboarding-target");
-      el.classList.remove("luria-onboarding-target-clear");
+    document.body.classList.remove("traube-onboarding-exploring");
+    document.getElementById("traube-onboarding-overlay")?.remove();
+    document.querySelectorAll(".traube-onboarding-target,.traube-onboarding-target-clear").forEach(el=>{
+      el.classList.remove("traube-onboarding-target");
+      el.classList.remove("traube-onboarding-target-clear");
       el.style.removeProperty("box-shadow");
       el.style.removeProperty("filter");
       el.style.removeProperty("opacity");
@@ -1641,7 +1641,7 @@
     if(page!=="configuracoes") return;
 
     const nativeButton =
-      document.getElementById("restart-luria-onboarding");
+      document.getElementById("restart-traube-onboarding");
 
     if(nativeButton){
       nativeButton.onclick=restart;
@@ -1652,7 +1652,7 @@
     const host=document.querySelector(".settings-page, .page");
     if(!host) return;
     const b=document.createElement("button");
-    b.type="button"; b.dataset.restartOnboarding="1"; b.className="luria-restart-onboarding";
+    b.type="button"; b.dataset.restartOnboarding="1"; b.className="traube-restart-onboarding";
     b.textContent="Refazer onboarding";
     b.onclick=restart; host.appendChild(b);
   }
@@ -1667,7 +1667,7 @@
     if(current[name]) return;
     current[name]=true;
     try{ localStorage.setItem(CHALLENGE_PREFIX+userId(),JSON.stringify(current)); }catch{}
-    document.getElementById("luria-discover-card")?.remove();
+    document.getElementById("traube-discover-card")?.remove();
     renderChallenges();
   }
 
@@ -1716,7 +1716,7 @@
     if(page!=="dashboard") return;
     const s=status();
     if(!s.completed) return;
-    if(document.getElementById("luria-discover-card")) return;
+    if(document.getElementById("traube-discover-card")) return;
     const done=challengeState();
     const items=[
       ["schedule","Criar seu primeiro cronograma"],
@@ -1728,8 +1728,8 @@
     ];
     const count=items.filter(([k])=>done[k]).length;
     const card=document.createElement("section");
-    card.id="luria-discover-card"; card.className="panel luria-discover-card";
-    card.innerHTML='<div class="luria-discover-head"><div><span class="eyebrow">Primeiros passos</span><h2>Conheça o TRAUBE</h2><p>Complete os desafios usando sua própria conta.</p></div><strong>'+count+' de 6</strong></div><div class="luria-discover-progress"><i style="width:'+(count/6*100)+'%"></i></div><div class="luria-discover-list">'+items.map(([k,l])=>'<div class="'+(done[k]?'done':'')+'"><span>'+(done[k]?'✓':'○')+'</span><span>'+l+'</span></div>').join("")+'</div>';
+    card.id="traube-discover-card"; card.className="panel traube-discover-card";
+    card.innerHTML='<div class="traube-discover-head"><div><span class="eyebrow">Primeiros passos</span><h2>Conheça o TRAUBE</h2><p>Complete os desafios usando sua própria conta.</p></div><strong>'+count+' de 6</strong></div><div class="traube-discover-progress"><i style="width:'+(count/6*100)+'%"></i></div><div class="traube-discover-list">'+items.map(([k,l])=>'<div class="'+(done[k]?'done':'')+'"><span>'+(done[k]?'✓':'○')+'</span><span>'+l+'</span></div>').join("")+'</div>';
     const target=document.querySelector(".dashboard-page, .page");
     target?.insertBefore(card,target.children[1]||null);
   }
@@ -1762,22 +1762,22 @@
 
     const target=resolveTarget(step.target)||document.querySelector(".main")||document.body;
     target.scrollIntoView({behavior:"smooth",block:"center"});
-    target.classList.add("luria-onboarding-target");
+    target.classList.add("traube-onboarding-target");
     const overlay=document.createElement("div");
-    overlay.id="luria-onboarding-overlay"; overlay.className="is-exploring";
-    document.body.classList.add("luria-onboarding-exploring");
-    overlay.innerHTML=`<section class="luria-onboarding-card" role="dialog" aria-label="Ajuda de simulados">
-      <div class="luria-onboarding-progress"><span>Guia de Simulados</span><strong>${questionsGuideIndex+1} de ${QUESTIONS_GUIDE.length}</strong></div>
-      <div class="luria-onboarding-bar"><i style="width:${((questionsGuideIndex+1)/QUESTIONS_GUIDE.length)*100}%"></i></div>
+    overlay.id="traube-onboarding-overlay"; overlay.className="is-exploring";
+    document.body.classList.add("traube-onboarding-exploring");
+    overlay.innerHTML=`<section class="traube-onboarding-card" role="dialog" aria-label="Ajuda de simulados">
+      <div class="traube-onboarding-progress"><span>Guia de Simulados</span><strong>${questionsGuideIndex+1} de ${QUESTIONS_GUIDE.length}</strong></div>
+      <div class="traube-onboarding-bar"><i style="width:${((questionsGuideIndex+1)/QUESTIONS_GUIDE.length)*100}%"></i></div>
       <h2>${step.title}</h2><p>${step.text}</p>
-      <small class="luria-onboarding-explore-note">A página permanece transparente e utilizável durante este guia.</small>
-      <div class="luria-onboarding-actions"><button type="button" data-guide-close>Fechar</button><div><button type="button" data-guide-back ${questionsGuideIndex===0?"disabled":""}>Voltar</button><button type="button" class="primary" data-guide-next>${questionsGuideIndex===QUESTIONS_GUIDE.length-1?"Concluir":"Próximo"}</button></div></div>
+      <small class="traube-onboarding-explore-note">A página permanece transparente e utilizável durante este guia.</small>
+      <div class="traube-onboarding-actions"><button type="button" data-guide-close>Fechar</button><div><button type="button" data-guide-back ${questionsGuideIndex===0?"disabled":""}>Voltar</button><button type="button" class="primary" data-guide-next>${questionsGuideIndex===QUESTIONS_GUIDE.length-1?"Concluir":"Próximo"}</button></div></div>
     </section>`;
     document.body.appendChild(overlay);
 
     // No Guia de Simulados vale a mesma regra do onboarding:
     // manter o card embaixo e movê-lo para cima somente se cobrir o alvo.
-    const guideCard=overlay.querySelector(".luria-onboarding-card");
+    const guideCard=overlay.querySelector(".traube-onboarding-card");
     const positionGuideCard=()=>{
       overlay.classList.remove("card-top");
       if(!guideCard || !target) return;
@@ -1803,7 +1803,7 @@
     if(page!=="questoes"||document.getElementById("qs-onboarding-help")) return;
 
     const notificationCenter =
-      document.getElementById("luria-notifications");
+      document.getElementById("traube-notifications");
 
     const host =
       notificationCenter
@@ -1826,7 +1826,7 @@
   }
 
   document.addEventListener("click",event=>{
-    const restartButton=event.target.closest?.("#restart-luria-onboarding,[data-restart-onboarding]");
+    const restartButton=event.target.closest?.("#restart-traube-onboarding,[data-restart-onboarding]");
     if(!restartButton) return;
     restart(event);
   });

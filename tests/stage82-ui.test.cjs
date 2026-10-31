@@ -43,19 +43,19 @@ const { page, read, settle } = require('./fixtures/frontend.cjs');
 async function community(t, hash = '') {
   const f = page(t, 'amigos/index.html'), {w,d} = f, calls = [];
   w.history.replaceState(null, '', '/amigos/' + hash);
-  let friends = [{user_id:'friend-1',display_name:'Amiga de teste',luria_id:'FRIEND01'}];
+  let friends = [{user_id:'friend-1',display_name:'Amiga de teste',traube_id:'FRIEND01'}];
   w.docmapUser = {id:'owner'};
   w.TraubeDialog = {confirm:async()=>true};
   w.supabaseClient = {
     rpc:async(name,args)=>{
       calls.push({name,args});
       if(name==='my_friends')return {data:friends,error:null};
-      if(name==='lookup_luria_user')return {data:[{user_id:'friend-2',display_name:'Novo amigo',luria_id:'FRIEND02'}],error:null};
-      if(name==='add_friend_by_luria_id')friends=[...friends,{user_id:'friend-2',display_name:'Novo amigo',luria_id:args.p_luria_id}];
+      if(name==='lookup_traube_user')return {data:[{user_id:'friend-2',display_name:'Novo amigo',traube_id:'FRIEND02'}],error:null};
+      if(name==='add_friend_by_traube_id')friends=[...friends,{user_id:'friend-2',display_name:'Novo amigo',traube_id:args.p_traube_id}];
       if(name==='remove_friend')friends=friends.filter(f=>f.user_id!==args.p_friend_user_id);
       return {data:[],error:null};
     },
-    from:()=>({select(){return this},eq(){return this},maybeSingle:async()=>({data:{luria_id:'OWNER001',studyrat_variant:'blue'},error:null})}),
+    from:()=>({select(){return this},eq(){return this},maybeSingle:async()=>({data:{traube_id:'OWNER001',studyrat_variant:'blue'},error:null})}),
     channel:()=>({on(){return this},subscribe(){return this}}), removeChannel(){}
   };
   w.eval(read('assets/js/studyrats.js'));
@@ -104,7 +104,7 @@ test('community: existing add/remove and challenge submission retain their RPC p
   assert.match(d.getElementById('friends-list').textContent,/Amiga de teste/);
   const input=d.getElementById('friend-id-input');input.value='FRIEND02';
   d.getElementById('add-friend').click();await tick();
-  assert.equal(calls.filter(c=>c.name==='add_friend_by_luria_id').length,1);
+  assert.equal(calls.filter(c=>c.name==='add_friend_by_traube_id').length,1);
   assert.match(d.getElementById('friends-list').textContent,/Novo amigo/);
   d.querySelector('[data-remove-friend="friend-2"]').click();await tick();
   assert.equal(calls.filter(c=>c.name==='remove_friend').length,1);

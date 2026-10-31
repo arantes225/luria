@@ -104,7 +104,7 @@ async function newContext(browser, report, scenario) {
     window.__MK_POINTER = 'touch';
     // PWA instalado: o app já possui o modo "standalone" (barra inferior, área segura).
     try { Object.defineProperty(navigator, 'standalone', { value: true }); } catch {}
-    try { localStorage.setItem('luria:onboarding:done', '1'); } catch {}
+    try { localStorage.setItem('traube:onboarding:done', '1'); } catch {}
     const css = document.createElement('style');
     css.textContent = 'html{scrollbar-width:none}::-webkit-scrollbar{display:none}*{caret-color:transparent}';
     document.addEventListener('DOMContentLoaded', () => document.head.appendChild(css));
@@ -138,7 +138,7 @@ async function waitReady(page, rootSel) {
   // Remove da captura elementos flutuantes/ferramentas internas que não fazem parte da narrativa.
   await page.evaluate(() => {
     const hide = (el) => el && el.style.setProperty('display', 'none', 'important');
-    document.querySelectorAll('luria-alex-companion, #beta-testers-nav-link, #admin-nav-link, .sidebar-footer').forEach(hide);
+    document.querySelectorAll('traube-alex-companion, #beta-testers-nav-link, #admin-nav-link, .sidebar-footer').forEach(hide);
   });
   await applySafeArea(page);
   await page.waitForTimeout(600);
@@ -237,7 +237,7 @@ async function capturePage(browser, name, url, rootSel, selectors, extra) {
       }
     });
     summary.aprender = await capturePage(browser, 'aprender', '/aprender/', '.learn-tools .tool-card', {
-      spotlight: '.luria-page-spotlight', alex: '.alex-hero:not([hidden])', tools: '.learn-tools', tool: '.tool-card'
+      spotlight: '.traube-page-spotlight', alex: '.alex-hero:not([hidden])', tools: '.learn-tools', tool: '.tool-card'
     });
   } finally { await browser.close(); }
 

@@ -59,12 +59,12 @@
       "Failed to load resource: the server responded with a status of 404 (Not Found)"
     ],
     "failedRequests": [
-      "https://luria.test/assets/img/logos/logo-icone-original.png?v=luria9 net::ERR_ABORTED"
+      "https://traube.test/assets/img/logos/logo-icone-original.png?v=traube9 net::ERR_ABORTED"
     ],
     "blocked": [],
     "missing": [
-      "/assets/img/plantao/luria-homem-idoso-v7-torax.webp",
-      "/assets/img/plantao/luria-homem-idoso-v7-olhos-fechados.webp"
+      "/assets/img/plantao/traube-homem-idoso-v7-torax.webp",
+      "/assets/img/plantao/traube-homem-idoso-v7-olhos-fechados.webp"
     ],
     "fixtureUnhandled": [
       {

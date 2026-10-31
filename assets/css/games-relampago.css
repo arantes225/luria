@@ -1,15 +1,15 @@
-.luria-game[data-game="relampago"] {
+.traube-game[data-game="relampago"] {
   --g-accent: var(--color-warning);
   --g-soft: var(--color-warning-surface);
 }
-.luria-game .r-art {
+.traube-game .r-art {
   position: relative;
   display: grid;
   place-items: center;
   min-height: 290px;
   color: var(--color-warning);
 }
-.luria-game .r-orbit {
+.traube-game .r-orbit {
   border: 1px solid var(--color-border);
   border-radius: 50%;
   width: 290px;
@@ -27,25 +27,25 @@
     inset 0 0 0 18px var(--color-surface),
     inset 0 0 0 19px var(--color-border);
 }
-.luria-game .r-orbit svg {
+.traube-game .r-orbit svg {
   width: 90px;
   height: 90px;
   filter: drop-shadow(0 6px 10px #b4762c30);
 }
-.luria-game .r-orbit-label {
+.traube-game .r-orbit-label {
   font-size: 8px;
   letter-spacing: 0.18em;
   margin-bottom: 12px;
   color: var(--color-text-secondary);
 }
-.luria-game .r-seconds {
+.traube-game .r-seconds {
   font-size: 42px;
   font-weight: 800;
   letter-spacing: -0.06em;
   line-height: 1.1;
   text-align: center;
 }
-.luria-game .r-seconds span {
+.traube-game .r-seconds span {
   display: block;
   font-size: 10px;
   letter-spacing: 0;
@@ -55,7 +55,7 @@
   margin-top: 6px;
   color: var(--color-text-secondary);
 }
-.luria-game .r-chip {
+.traube-game .r-chip {
   position: absolute;
   padding: 9px 15px;
   border: 1px solid var(--color-border);
@@ -65,63 +65,63 @@
   font-weight: 700;
   box-shadow: var(--ui-shadow);
 }
-.luria-game .r-chip-one {
+.traube-game .r-chip-one {
   top: 36px;
   right: 3%;
   transform: rotate(8deg);
 }
-.luria-game .r-chip-two {
+.traube-game .r-chip-two {
   bottom: 40px;
   left: 0;
   transform: rotate(-9deg);
 }
-.luria-game .r-stage {
+.traube-game .r-stage {
   min-height: 470px;
 }
-.luria-game .r-urgent #r-clock {
+.traube-game .r-urgent #r-clock {
   color: var(--color-danger);
 }
-.luria-game .r-urgent .g-progress span {
+.traube-game .r-urgent .g-progress span {
   background: var(--color-danger);
 }
-.luria-game .r-breakdown {
+.traube-game .r-breakdown {
   margin-top: 24px;
 }
 @media (max-width: 600px) {
-  .luria-game .r-art {
+  .traube-game .r-art {
     min-height: 180px;
     height: 180px;
   }
-  .luria-game .r-orbit {
+  .traube-game .r-orbit {
     width: 180px;
     height: 180px;
     box-shadow:
       inset 0 0 0 9px var(--color-surface),
       inset 0 0 0 10px var(--color-border);
   }
-  .luria-game .r-orbit svg {
+  .traube-game .r-orbit svg {
     width: 46px;
     height: 46px;
   }
-  .luria-game .r-orbit-label {
+  .traube-game .r-orbit-label {
     font-size: 6px;
     margin-bottom: 4px;
   }
-  .luria-game .r-seconds {
+  .traube-game .r-seconds {
     font-size: 31px;
   }
-  .luria-game .r-seconds span {
+  .traube-game .r-seconds span {
     font-size: 8px;
     max-width: 120px;
   }
-  .luria-game .r-chip {
+  .traube-game .r-chip {
     font-size: 10px;
     padding: 6px 9px;
   }
-  .luria-game .r-chip-one {
+  .traube-game .r-chip-one {
     top: 12px;
   }
-  .luria-game .r-chip-two {
+  .traube-game .r-chip-two {
     bottom: 8px;
   }
 }

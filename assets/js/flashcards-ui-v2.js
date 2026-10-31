@@ -6,7 +6,7 @@
   back.type = 'button'; back.className = 'button secondary ui-flash-back';
   back.textContent = '← Voltar aos flashcards'; back.hidden = true;
   document.querySelector('[data-flash-section]')?.before(back);
-  back.addEventListener('click', () => window.luriaFlashShow?.('review'));
+  back.addEventListener('click', () => window.traubeFlashShow?.('review'));
   function syncBack() {
     back.hidden = body.classList.contains('flash-review-session-active')
       || !document.querySelector('[data-flash-section]:is([data-flash-section="create"],[data-flash-section="import"],[data-flash-section="library"]).active');

@@ -93,8 +93,8 @@ test("Voice_input is true only for recognized microphone messages, never correct
   assert.match(client,/liveTranscriptFromSpeech = true;\s*if \(input\) input.value = finalText/);
   assert.match(client,/liveTranscriptFromSpeech = false;\s*input.value = correctedPrompt/);
   assert.match(edge,/const isVoiceInput = data.voice_input === true/);
-  assert.match(page,/new CustomEvent\("luria:leco:dictation"/);
-  assert.match(client,/window\.addEventListener\("luria:leco:dictation"/);
+  assert.match(page,/new CustomEvent\("traube:leco:dictation"/);
+  assert.match(client,/window\.addEventListener\("traube:leco:dictation"/);
   assert.match(client,/document\.getElementById\("alex-prompt"\)\?\.addEventListener\("input"/);
 });
 
@@ -116,7 +116,7 @@ test("PWA and accessible styling have a consistent fresh release",()=>{
   assert.ok(page.includes("professor-alex-gemini.mjs?v="+voiceRelease));
   assert.ok(page.includes("pwa.js?v="+shellRelease));
   assert.ok(pwa.includes('const release = "'+shellRelease+'"'));
-  assert.ok(sw.includes('CACHE_VERSION = "luria-pwa-'+shellRelease+'"'));
+  assert.ok(sw.includes('CACHE_VERSION = "traube-pwa-'+shellRelease+'"'));
   assert.ok(client.includes("professor-alex-layout-20261021.css?v=stt1"));
   assert.ok(css.includes(".alex-stt-correction-apply:focus-visible"));
   assert.ok(css.includes("@media(max-width:600px)"));

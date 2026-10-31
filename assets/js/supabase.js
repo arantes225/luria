@@ -4,9 +4,9 @@ const SUPABASE_KEY = "sb_publishable_AQ5-Pn1knmBhSFyt5aMtjQ_XQynLJ_L";
 // Publishable public key is intentionally client-visible (not a service credential).
 window.TraubeSupabasePublishableKey = SUPABASE_KEY;
 
-const TRAUBE_AUTH_SESSION_ONLY_KEY = "luria-auth-session-only";
+const TRAUBE_AUTH_SESSION_ONLY_KEY = "traube-auth-session-only";
 
-const luriaAuthStorage = {
+const traubeAuthStorage = {
   getItem(key) {
     try {
       const sessionValue = sessionStorage.getItem(key);
@@ -80,7 +80,7 @@ window.supabaseClient = window.supabase.createClient(
   SUPABASE_KEY,
   {
     auth: {
-      storage: luriaAuthStorage,
+      storage: traubeAuthStorage,
       persistSession: true,
       autoRefreshToken: true,
       experimental: {
@@ -94,7 +94,7 @@ window.supabaseClient = window.supabase.createClient(
 /* Sitewide image upload cap and low-resolution review signal. */
 (() => {
   const client = window.supabaseClient;
-  if (!client?.storage || client.storage.__luriaImageGuard) return;
+  if (!client?.storage || client.storage.__traubeImageGuard) return;
   const CAP = 80 * 1024;
   const originalFrom = client.storage.from.bind(client.storage);
   const imageExtensions = [".avif", ".gif", ".jpg", ".jpeg", ".png", ".svg", ".webp", ".bmp", ".tif", ".tiff"];
@@ -176,7 +176,7 @@ window.supabaseClient = window.supabase.createClient(
     };
     return storageBucket;
   };
-  client.storage.__luriaImageGuard = true;
+  client.storage.__traubeImageGuard = true;
 })();
 
 // Ownership is established by Auth, never by an unscoped legacy draft.
@@ -194,9 +194,9 @@ window.supabaseClient = window.supabase.createClient(
     for (const name of ['docmapUser', 'docmapSession', 'docmapProfile', 'docmapEntitlements', 'docmapPlan', 'docmapIsAdmin']) {
       Object.defineProperty(window, name, { configurable: false, get: () => null, set: () => {} });
     }
-    window.dispatchEvent(new CustomEvent('luria:session-invalidated'));
+    window.dispatchEvent(new CustomEvent('traube:session-invalidated'));
     // Do not delete owner-scoped drafts or the new account's auth storage.
-    window.location.replace(nextId ? window.location.href : (window.luriaSitePath?.('/login/') || '/login/'));
+    window.location.replace(nextId ? window.location.href : (window.traubeSitePath?.('/login/') || '/login/'));
   };
   const setOwner = id => {
     if (ownerId === id) return;
@@ -204,7 +204,7 @@ window.supabaseClient = window.supabase.createClient(
     ownerId = id;
     epoch += 1;
     if (previousId || (window.docmapUser?.id && window.docmapUser.id !== id)) invalidateDocument(id);
-    window.dispatchEvent(new CustomEvent("luria:owner-changed", {detail:{ownerId,previousId,epoch}}));
+    window.dispatchEvent(new CustomEvent("traube:owner-changed", {detail:{ownerId,previousId,epoch}}));
   };
   const key = (base, id = ownerId) => !window.TraubeSessionInvalidated && id ? base + ":" + encodeURIComponent(id) : null;
   const api = {

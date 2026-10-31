@@ -9,7 +9,7 @@
     if (root === "/" || path === withoutSlash || path.startsWith(root)) return path;
     return root + path.slice(1);
   }
-  window.luriaSitePath = route;
+  window.traubeSitePath = route;
 
   // Existing app widgets inject new absolute-root anchors after page load.
   // Correct those only on click, preserving modifier keys and browser behavior.

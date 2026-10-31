@@ -36,9 +36,9 @@
   }
 
   function injectStyles(){
-    if (document.getElementById("luria-google-calendar-style")) return;
+    if (document.getElementById("traube-google-calendar-style")) return;
     const style = document.createElement("style");
-    style.id = "luria-google-calendar-style";
+    style.id = "traube-google-calendar-style";
     style.textContent = `
       .google-calendar-card{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 14px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2)}
       .google-calendar-copy{display:grid;gap:3px;min-width:0}

@@ -7,8 +7,8 @@ test('production artifact retains official data and domain while excluding backe
  assert.equal(read('CNAME').trim(),'www.resibulando.online');
  assert.match(read('assets/js/supabase.js'),/sxdsfklllilhdyuamvvg\.supabase\.co/);
  assert.doesNotMatch(read('assets/js/supabase.js'),/kvprgusgfptslbhigsab/);
- assert.match(read('assets/js/social-voice.js'),/https:\/\/luria-study-voice\.lfab225\.workers\.dev\/api\/study-voice/);
- for(const file of ['amigos.html','amigos/index.html'])assert.match(read(file),/connect-src[^;]+https:\/\/luria-study-voice\.lfab225\.workers\.dev/);
+ assert.match(read('assets/js/social-voice.js'),/https:\/\/traube-study-voice\.lfab225\.workers\.dev\/api\/study-voice/);
+ for(const file of ['amigos.html','amigos/index.html'])assert.match(read(file),/connect-src[^;]+https:\/\/traube-study-voice\.lfab225\.workers\.dev/);
  for(const file of ['.git','.dev.vars','.dev.vars.production','cloudflare','db','supabase','docs','tests','scripts','node_modules','package-lock.json'])assert.equal(fs.existsSync(path.join(output,file)),false,file);
  assert.ok(fs.existsSync(path.join(output,'apostilas/pre-natal-baixo-risco/index.html')));
  assert.ok(fs.existsSync(path.join(output,'assets/img/logos/logo-principal.png')));

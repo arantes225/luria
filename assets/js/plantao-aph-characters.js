@@ -46,8 +46,8 @@
       scene.style.setProperty('--aph-eye-mask',rig.mask);
       scene.style.setProperty('--aph-blink-delay',`${-Math.random()*7.6}s`);
     }
-    const eyesClosed=state==='fechado'||base.dataset.luriaEyes==='closed';
-    const rr=Number(base.dataset.luriaRr);
+    const eyesClosed=state==='fechado'||base.dataset.traubeEyes==='closed';
+    const rr=Number(base.dataset.traubeRr);
     scene.classList.add('aph-active');
     scene.classList.toggle('aph-eyes-closed',eyesClosed);
     scene.classList.toggle('aph-no-breath',!Number.isFinite(rr)||rr<=0);
@@ -57,7 +57,7 @@
     const closedSource=root+key+'-fechado.webp?v=20261021';
     if(blink.getAttribute('src')!==closedSource)blink.src=closedSource;
   }
-  new MutationObserver(sync).observe(base,{attributes:true,attributeFilter:['src','data-luria-eyes','data-luria-rr']});
+  new MutationObserver(sync).observe(base,{attributes:true,attributeFilter:['src','data-traube-eyes','data-traube-rr']});
   window.addEventListener('pagehide',clear);
   window.addEventListener('pageshow',sync);
   sync();

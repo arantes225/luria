@@ -17,7 +17,7 @@ const assert=require('node:assert/strict');
    const mime={'.html':'text/html','.js':'application/javascript','.css':'text/css','.svg':'image/svg+xml','.png':'image/png','.woff2':'font/woff2'};
    return route.fulfill({body:fs.readFileSync(file),contentType:mime[path.extname(file)]||'application/octet-stream'});
   });
-  await context.route('**/assets/js/supabase.js*',r=>r.fulfill({contentType:'application/javascript',body:fs.readFileSync('tests/fixtures/supabase-browser.js','utf8').replace('rpc:async(name,args={})=>{','rpc:async(name,args={})=>{ if(name==="luria_bootstrap") return {data:null,error:null};')}));
+  await context.route('**/assets/js/supabase.js*',r=>r.fulfill({contentType:'application/javascript',body:fs.readFileSync('tests/fixtures/supabase-browser.js','utf8').replace('rpc:async(name,args={})=>{','rpc:async(name,args={})=>{ if(name==="traube_bootstrap") return {data:null,error:null};')}));
   await context.route('**/assets/js/onboarding.js*',r=>r.fulfill({contentType:'application/javascript',body:''}));
   const page=await context.newPage();
   page.on('pageerror',error=>console.log('PAGE ERROR',error.message));

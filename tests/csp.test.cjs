@@ -9,7 +9,7 @@ const root = path.join(__dirname, '..');
 
 for (const file of pages) test('CSP: ' + file, () => {
   const html = fs.readFileSync(path.join(root, file), 'utf8');
-  const dom = new JSDOM(html, { url: 'https://luria.invalid/' + file });
+  const dom = new JSDOM(html, { url: 'https://traube.invalid/' + file });
   try {
     const doc = dom.window.document;
     const meta = doc.querySelector('meta[http-equiv="Content-Security-Policy"]');
@@ -42,7 +42,7 @@ for (const file of pages) test('CSP: ' + file, () => {
     assert.ok(!directives['script-src'].includes("'sha256-" + crypto.createHash('sha256').update(arbitrary).digest('base64') + "'"));
     for (const script of doc.scripts) {
       if (script.hasAttribute('src')) {
-        if (new URL(script.src).origin === 'https://luria.invalid') {
+        if (new URL(script.src).origin === 'https://traube.invalid') {
           assert.ok(fs.existsSync(path.join(root, decodeURIComponent(new URL(script.src).pathname))), script.src);
         } else {
           assert.ok((resources.scriptSrc || []).includes(script.getAttribute('src')), script.src);
@@ -159,7 +159,7 @@ for (const slug of ['infeccoes-sexualmente-transmissiveis','vulvovaginites']) {
       const dom=new JSDOM('<base href="/"><a class="book-outline-link" href="#tricomon%C3%ADase">Encoded</a>'
         +'<a class="book-outline-link" href="#tricomoníase">Accent</a>'
         +'<a class="book-outline-link" href="#%E0%A4%A">Malformed</a>'
-        +'<section id="tricomoníase"></section>',{url:'https://luria.invalid/'+page+suffix+'?origin=test#tricomon%C3%ADase',runScripts:'outside-only'});
+        +'<section id="tricomoníase"></section>',{url:'https://traube.invalid/'+page+suffix+'?origin=test#tricomon%C3%ADase',runScripts:'outside-only'});
       try {
         const w=dom.window,scrolled=[],observed=[];
         let callback;
@@ -189,7 +189,7 @@ for (const slug of ['infeccoes-sexualmente-transmissiveis','vulvovaginites']) {
 test('Amenorreia chapter links stay on its document despite the root base and index alias', () => {
   const html=fs.readFileSync(path.join(root,'apostilas/amenorreia/index.html'),'utf8');
   for(const suffix of ['', 'index.html']) {
-    const dom=new JSDOM(html,{url:'https://luria.invalid/apostilas/amenorreia/'+suffix});
+    const dom=new JSDOM(html,{url:'https://traube.invalid/apostilas/amenorreia/'+suffix});
     try {
       const doc=dom.window.document;
       assert.equal(doc.querySelector('base').getAttribute('href'),'/');

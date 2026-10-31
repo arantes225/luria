@@ -17,7 +17,7 @@ body[data-page="editais"] .exam-mode-tabs {
   display: none !important;
 }
 
-body[data-page="editais"] .luria-page-spotlight {
+body[data-page="editais"] .traube-page-spotlight {
   display: flex !important;
 }
 
@@ -25,7 +25,7 @@ body[data-page="editais"] .editais-own-content {
   display: block !important;
 }
 
-body[data-page="editais"] .luria-back-button {
+body[data-page="editais"] .traube-back-button {
   display: inline-flex !important;
   align-items: center !important;
   gap: 6px !important;
@@ -39,7 +39,7 @@ body[data-page="editais"] .luria-back-button {
   text-decoration: none !important;
   transition: transform 0.16s ease, border-color 0.16s ease, color 0.16s ease !important;
 }
-body[data-page="editais"] .luria-back-button:hover {
+body[data-page="editais"] .traube-back-button:hover {
   transform: translateX(-2px) !important;
   border-color: var(--accent) !important;
   color: var(--accent) !important;

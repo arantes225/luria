@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-JLCm4GHCdqz4gM7y4nEpsXh8O0K3Rc7dbY4IPg+Ypzw='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-yK99VpATex2eKFhFdZetBp0ChutPMdmAAJZ2fkOvPwY='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -13,9 +13,9 @@
 <script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="/assets/css/style.css?v=20261026-checklist8">
-  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
+  <link rel="stylesheet" href="/assets/css/traube-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261005-learning-hubs">
-<script defer src="/assets/js/luria-brand-v5.js?v=20261025-review-fixes3"></script>
+<script defer src="/assets/js/traube-brand-v5.js?v=20261025-review-fixes3"></script>
   <link rel="canonical" href="/aprender/">
 
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
@@ -35,10 +35,10 @@
         </header>
 
         <section class="learn-page" aria-label="Aprender">
-          <section class="luria-page-spotlight" aria-label="Aprender">
-        <div class="luria-page-spotlight-copy">
+          <section class="traube-page-spotlight" aria-label="Aprender">
+        <div class="traube-page-spotlight-copy">
           <strong>Aprender</strong>
-          <small class="luria-page-spotlight-helper">Escolha como você quer aprender agora.</small>
+          <small class="traube-page-spotlight-helper">Escolha como você quer aprender agora.</small>
         </div>
       </section>
 
@@ -80,7 +80,7 @@
               <span class="tool-cta">Abrir →</span>
             </a>
 
-            <a class="tool-card" href="/plantao/luriazap/" data-resource="luriazap">
+            <a class="tool-card" href="/plantao/traubezap/" data-resource="traubezap">
               <span class="tool-icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5Z"/><path d="M8 9h8M8 12h6"/></svg></span>
               <h3>TraubeZap</h3>
               <p>Estudo guiado, passo a passo.</p>
@@ -115,8 +115,8 @@
         const file = fileInput.files?.[0] || null;
         if (fileName) fileName.textContent = file ? file.name : "Você também pode anexar seu material.";
         try {
-          if (file) sessionStorage.setItem("luria:alex:pending-file-name", file.name);
-          else sessionStorage.removeItem("luria:alex:pending-file-name");
+          if (file) sessionStorage.setItem("traube:alex:pending-file-name", file.name);
+          else sessionStorage.removeItem("traube:alex:pending-file-name");
         } catch {}
       });
       window.addEventListener("docmap:ready", e => applyAdminVisibility(e.detail?.isAdmin), { passive:true });

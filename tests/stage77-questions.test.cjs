@@ -142,7 +142,7 @@ test('A save without an acknowledgement does not reveal or count the selected an
 test('An account switch ignores a late saved answer and blocks further writes from the old reader',async t=>{
  const gate=deferred(),{w,d,writes}=await resolver(t,{write:async row=>{await gate.promise;return {data:row,error:null}}});
  click(d,'A');d.getElementById('qr-confirm').click();await flush();w.TraubeLocalOwnerStore.ownerId='owner-2';w.TraubeLocalOwnerStore.epoch++;
- w.dispatchEvent(new w.CustomEvent('luria:owner-changed',{detail:{ownerId:'owner-2'}}));gate.resolve();await flush();
+ w.dispatchEvent(new w.CustomEvent('traube:owner-changed',{detail:{ownerId:'owner-2'}}));gate.resolve();await flush();
  assert(d.getElementById('qr-layout').hidden);assert.match(d.getElementById('qr-loading').textContent,/sessão/i);
  d.getElementById('qr-confirm').click();await flush();assert.equal(writes.length,1);
 });

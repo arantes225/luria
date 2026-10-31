@@ -48,7 +48,7 @@ test('Gerador usa o leitor real, interpreta entidades e recusa sobrescrever livr
  const mod=await import('../scripts/bloco-04-utils.mjs');
  assert.equal(mod.extractVisibleTextFromJson({q:[['referencias',0,[['p','referência']]],['mapa-mental',0,[['p','resumo']]],['conteudo',0,[['p','A &lt; B &#8804; C']]]]}),'A < B ≤ C');
  assert.equal(mod.extractVisibleTextFromHtml('<article><script>lixo()</script><p>A &le; B</p><section class="book-hero">capa</section></article>'),'A ≤ B');
- const temp=fs.mkdtempSync(path.join(os.tmpdir(),'luria-quality-')),cwd=process.cwd();try{process.chdir(temp);const book=structuredClone(read('sindromes-coronarianas-agudas'));book.s='teste-leitor';book.t='Leitor de validação';mod.saveBook(book);
+ const temp=fs.mkdtempSync(path.join(os.tmpdir(),'traube-quality-')),cwd=process.cwd();try{process.chdir(temp);const book=structuredClone(read('sindromes-coronarianas-agudas'));book.s='teste-leitor';book.t='Leitor de validação';mod.saveBook(book);
   const index=fs.readFileSync('apostilas/teste-leitor/index.html','utf8');assert.match(index,/data-apostila-content="\/apostilas\/teste-leitor\/content.json"/);assert.match(index,/apostila-renderer\.js/);assert.doesNotMatch(index,/apostila-v2\.js|css\/apostila\.css/);
   for(const m of index.matchAll(/(?:src|href)="(\/assets\/[^"?]+)/g))assert.ok(fs.existsSync(path.join(root,m[1])),m[1]);
   const previous=fs.readFileSync('apostilas/teste-leitor/content.json');assert.throws(()=>mod.saveBook(book),/conteúdo existente/);assert.deepEqual(fs.readFileSync('apostilas/teste-leitor/content.json'),previous);

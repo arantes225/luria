@@ -7,7 +7,7 @@
   let selection = { specialty: "Misto", level: "1" },
     run = null;
   const top = () =>
-    '<div class="g-top"><a class="g-back luria-back-button" href="/jogos/">← Central de jogos</a><span class="g-edition">02 / Raciocínio em ordem</span></div>';
+    '<div class="g-top"><a class="g-back traube-back-button" href="/jogos/">← Central de jogos</a><span class="g-edition">02 / Raciocínio em ordem</span></div>';
   const art =
     '<div class="g-hero-art s-art" aria-hidden="true"><div class="s-connection"></div><div class="s-art-card"><b>01</b><span>Reconhecer o contexto</span><i>✓</i></div><div class="s-art-card"><b>02</b><span>Conectar as decisões</span><i>✓</i></div><div class="s-art-card"><b>03</b><span>Reavaliar a resposta</span><i>↗</i></div><span class="s-art-note">CADA ETAPA TEM UM PORQUÊ</span></div>';
   function setup() {
@@ -172,11 +172,11 @@
     root.querySelector("button").onclick = setup;
     G.focusTitle();
     window.dispatchEvent(
-      new CustomEvent("luria:game-completed", {
+      new CustomEvent("traube:game-completed", {
         detail: { game: "sequencia", contentVersion: C.version, score },
       }),
     );
   }
-  window.addEventListener("luria:owner-changed", setup);
+  window.addEventListener("traube:owner-changed", setup);
   G.boot(setup);
 })();

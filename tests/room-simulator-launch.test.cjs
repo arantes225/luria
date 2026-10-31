@@ -23,5 +23,5 @@ test('room simulator resumes only its matching active session',async()=>{
 });
 test('failed restoration follows the existing start path and exit follows session cleanup',async()=>{
  const f=fixture({kind:'simulator',caseId:'shared-case'},{case_id:'shared-case'},false);await f.open();assert.deepEqual(f.starts,['shared-case']);
- const back=declaration(source,'backToLibrary','  ');assert(back.indexOf('luria:clinical-exit')>back.indexOf('showLibrary'));
+ const back=declaration(source,'backToLibrary','  ');assert(back.indexOf('traube:clinical-exit')>back.indexOf('showLibrary'));
 });

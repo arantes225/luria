@@ -30,7 +30,7 @@ const metrics=dirs.map(folder=>{
   if(!/reference-list/.test(source))warnings.push("referencias_nao_padronizadas");
   if(!/(caso|vinheta|fixa[cç]|quest[aã]o)/i.test(text))warnings.push("sem_casos_explicitos");
   if(!/(complica[cç]|seguimento|recorr[eê]ncia)/i.test(text))warnings.push("complicacoes_e_seguimento");
-  if(!data&&!html.includes("apostila-luria-book.css"))warnings.push("css_legado");
+  if(!data&&!html.includes("apostila-traube-book.css"))warnings.push("css_legado");
   for(const link of links)if(!ids.has(link))warnings.push("ancora_ausente:"+link);
   return {apostila:path.basename(folder),format:data?"content-json":"html",
     htmlBytes:Buffer.byteLength(html)+(data?fs.statSync(jsonFile).size:0),

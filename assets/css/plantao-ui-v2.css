@@ -1,5 +1,5 @@
 /* Emergency presentation only. Clinical state, event IDs and monitor signal colors stay unchanged. */
-@layer luria-ui-emergency {
+@layer traube-ui-emergency {
   body[data-ui="v2"][data-plantao-entry="emergency"] {color:var(--color-text-primary)!important;font-family:var(--ui-font-family)!important;line-height:1.5!important;}
   body[data-ui="v2"][data-plantao-entry="emergency"]::before, body[data-ui="v2"][data-plantao-entry="emergency"]::after {display:none!important;}
   body[data-ui="v2"][data-plantao-entry="emergency"] [hidden][hidden] {display:none!important;}
@@ -74,9 +74,9 @@
   body[data-ui="v2"][data-plantao-entry="emergency"] .plantao-difficulty-content {display:flex!important;flex-wrap:wrap!important;gap:1rem!important;justify-content:center!important;}
   body[data-ui="v2"][data-plantao-entry="emergency"] .plantao-library-metrics > div {display:grid!important;gap:.5rem!important;}
   body[data-ui="v2"][data-plantao-entry="emergency"] .plantao-library-metrics > div:last-child strong {font-size:1.125rem!important;}
-  body[data-ui="v2"][data-plantao-entry="emergency"] #luria-osce-entry {background:var(--color-surface)!important;color:var(--color-text-primary)!important;border:1px solid var(--color-border)!important;border-radius:12px!important;padding:1rem!important;}
-  body[data-ui="v2"][data-plantao-entry="emergency"] #luria-osce-entry :is(strong,span,small) {font-size:.875rem!important;line-height:1.5!important;}
-  body[data-ui="v2"][data-plantao-entry="emergency"] #luria-osce-entry .luria-osce-entry-cta {min-height:44px!important;background:var(--color-primary)!important;color:var(--color-primary-foreground)!important;}
+  body[data-ui="v2"][data-plantao-entry="emergency"] #traube-osce-entry {background:var(--color-surface)!important;color:var(--color-text-primary)!important;border:1px solid var(--color-border)!important;border-radius:12px!important;padding:1rem!important;}
+  body[data-ui="v2"][data-plantao-entry="emergency"] #traube-osce-entry :is(strong,span,small) {font-size:.875rem!important;line-height:1.5!important;}
+  body[data-ui="v2"][data-plantao-entry="emergency"] #traube-osce-entry .traube-osce-entry-cta {min-height:44px!important;background:var(--color-primary)!important;color:var(--color-primary-foreground)!important;}
   body[data-ui="v2"][data-plantao-entry="emergency"] .plantao-cases-section-head h2 {font-size:1.375rem!important;line-height:1.4!important;color:var(--color-text-primary)!important;margin:.5rem 0!important;}
   body[data-ui="v2"][data-plantao-entry="emergency"] .plantao-cases-section-head > strong {font-size:.875rem!important;color:var(--color-text-secondary)!important;}
   body[data-ui="v2"][data-plantao-entry="emergency"] .plantao-record-chief {height:auto!important;min-height:0!important;max-height:none!important;padding:0 0 .75rem!important;margin:0!important;border-color:var(--color-border)!important;}

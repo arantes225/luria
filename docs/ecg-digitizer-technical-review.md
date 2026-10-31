@@ -1,6 +1,6 @@
 # AUDITORIA TÉCNICA E REVISÃO DE LICENÇAS — TRAUBE ECG DIGITIZER & SCANNER INTELIGENTE
 
-**Repositório:** `arantes225/luria`  
+**Repositório:** `arantes225/traube`  
 **Branch de trabalho:** `fix/ecg-e2e-contracts-and-calibration`  
 **Data da Auditoria e Validação:** 27 de Outubro de 2026  
 **Status do Pipeline:** Implementado, testado e validado end-to-end (32/32 testes aprovados).
@@ -15,7 +15,7 @@ A auditoria direta dos repositórios de referência upstream identificou e corri
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`felixkrones/ECG-Digitiser`** | **BSD-2-Clause** (`LICENSE`) | Não distribuídos comercialmente; treinados em dados sintéticos + PTB-XL | `ecg-image-kit` (BSD-3-Clause) e PTB-XL (CC BY 4.0) | Inclui **fork de `nnU-Net`** (Apache-2.0), PyTorch, OpenCV, SciPy | **Estudado conceitualmente, código não copiado.** O uso de fork interno de nnU-Net e modelos pesados de U-Net inviabiliza inferência em tempo real no browser em dispositivos móveis. |
 | **`hengck23/kaggle-physionet-ecg-image-digitization`** | **MIT License** (`LICENSE` explícito no root: `Copyright (c) 2026 hengck23`) *(Corrigido: anteriormente rotulado erroneamente como "sem licença")* | Modelos treinados em pipelines da competição Kaggle | Sinais PhysioNet / Kaggle | PyTorch, `timm`, OpenCV, Albumentations | **Estudado para arquitetura de extração.** Código sob licença MIT permissiva. Implementação na TRAUBE foi escrita nativamente em JavaScript (Viterbi + Dynamic Programming) para zero dependência de servidor Python na digitalização. |
-| **`dangnh0611/kaggle_ecg_digitization`** | **MIT License** (`LICENSE`) | Pesos externos hospedados no Kaggle / Google Drive | Dados de competição PhysioNet | `MINIMA-RoMa` para pseudo-labeling, backbones `timm` (CoaT, ConvNeXt, VGG19), PyTorch Lightning | **Incompatível para execução direta em tempo real.** Pipeline exige GPU de 48 GB de VRAM para ensemble. Seus conceitos de pseudo-rotulação orientaram o script de treino para Google Colab (`scripts/colab/luria_ecg_digitizer_training.py`). |
+| **`dangnh0611/kaggle_ecg_digitization`** | **MIT License** (`LICENSE`) | Pesos externos hospedados no Kaggle / Google Drive | Dados de competição PhysioNet | `MINIMA-RoMa` para pseudo-labeling, backbones `timm` (CoaT, ConvNeXt, VGG19), PyTorch Lightning | **Incompatível para execução direta em tempo real.** Pipeline exige GPU de 48 GB de VRAM para ensemble. Seus conceitos de pseudo-rotulação orientaram o script de treino para Google Colab (`scripts/colab/traube_ecg_digitizer_training.py`). |
 | **`Ahus-AIM/Open-ECG-Digitizer`** | **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** (`LICENSE`) *(Corrigido com máxima severidade: anteriormente rotulado erroneamente como "Apache-2.0")* | Sujeitos aos termos virais da CC BY-SA 4.0 | CC BY-SA 4.0 | OpenCV, Python, NumPy | **PROIBIDA QUALQUER CÓPIA DE CÓDIGO OU PESOS NA TRAUBE.** A licença CC BY-SA 4.0 é estritamente **copyleft (ShareAlike)**, exigindo que qualquer trabalho derivado seja publicado integralmente sob os mesmos termos abertos. Nenhum código, método ou peso desta biblioteca foi incorporado. |
 | **PhysioNet PTB-XL v1.0.3** | CC BY 4.0 | N/A (Sinais brutos WFDB) | **CC BY 4.0** | Formato WFDB padrão | **Licença 100% permissiva com atribuição.** Utilizada como banco de validação quantitativa offline em `tests/fixtures/physionet-ptbxl/` com arquivo explícito de citação `LICENSE.txt`. |
 
@@ -64,7 +64,7 @@ Para total transparência com os auditores técnicos e usuários:
      - Bloqueio rígido do classificador autoral quando os requisitos do modelo não são atendidos (o modelo autoral exige sinal contínuo de 10,0 s para as 12 derivações a 100/500 Hz; recortes 3x4 fornecem ~2,5 s). É estritamente proibido inventar ou duplicar 2,5 s para simular 10 s, e o sistema jamais substitui silenciosamente o modelo autoral por IA multimodal.
 
 3. **Preparado para Treinamento Futuro em Nuvem (`scripts/colab/`):**
-   - Arquitetura PyTorch compacta `TraubeCompactEcgNet` e pipeline de geração sintética documentados em `scripts/colab/luria_ecg_digitizer_training.py` prontos para execução em Google Colab com GPU, sem simular pesos inexistentes.
+   - Arquitetura PyTorch compacta `TraubeCompactEcgNet` e pipeline de geração sintética documentados em `scripts/colab/traube_ecg_digitizer_training.py` prontos para execução em Google Colab com GPU, sem simular pesos inexistentes.
 
 ---
 

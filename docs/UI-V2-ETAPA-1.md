@@ -17,7 +17,7 @@ Inter variável hospedada localmente, com nome exclusivo `Traube Inter`: não su
 
 Dois atributos independentes no body: `data-ui-appearance="light|dark"` e `data-ui-identity="blue|pink"`. Um conjunto de estilos produz as quatro combinações. Os dois controles locais substituem a apresentação do seletor de tema no perfil somente no Dashboard.
 
-Preferência visual em `luria:dashboard-ui:v2`, via API existente `TraubeLocalOwnerStore`, isolada por conta/dispositivo. Ausência de preferência mantém a correspondência do tema legado: claro→claro/azul, escuro→escuro/azul, Leila Mood/rosa→claro/rosa. Preferências legadas não são sobrescritas; `html[data-theme]` não é modificado pelo adaptador. Não há escrita em Supabase. Falha de armazenamento informa que o tema foi aplicado sem ser salvo.
+Preferência visual em `traube:dashboard-ui:v2`, via API existente `TraubeLocalOwnerStore`, isolada por conta/dispositivo. Ausência de preferência mantém a correspondência do tema legado: claro→claro/azul, escuro→escuro/azul, Leila Mood/rosa→claro/rosa. Preferências legadas não são sobrescritas; `html[data-theme]` não é modificado pelo adaptador. Não há escrita em Supabase. Falha de armazenamento informa que o tema foi aplicado sem ser salvo.
 
 As numerosas regras legadas com `!important` exigem especificidade local elevada; a repetição do ID nos seletores funciona como ponte de compatibilidade. Essa dívida fica confinada ao CSS do piloto; os arquivos compartilhados permanecem intactos.
 

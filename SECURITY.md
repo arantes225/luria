@@ -1,6 +1,6 @@
 # Política de Segurança · TRAUBE Platform
 
-A segurança, confidencialidade e integridade dos dados dos nossos usuários e conteúdos médicos são prioridades fundamentais da plataforma **TRAUBE** (`arantes225/luria`).
+A segurança, confidencialidade e integridade dos dados dos nossos usuários e conteúdos médicos são prioridades fundamentais da plataforma **TRAUBE** (`arantes225/traube`).
 
 ---
 

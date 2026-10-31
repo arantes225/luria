@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-dvubu+G3O6LQaPzIoW9yNJ+z4SdMJHziPDraFzAVc7I=' 'sha256-59UMdteIantgnQhdFl0AyCwNmMpP9EWMcmmliSNLEnQ='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-dvubu+G3O6LQaPzIoW9yNJ+z4SdMJHziPDraFzAVc7I=' 'sha256-8iQ4E+1GWtrL9TJ1EPPNYRn+/kvUCrOL//9swYnOsD4='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -14,12 +14,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="TRAUBE">
   <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" type="image/png" href="assets/img/logos/favicon.png?v=luria2">
+  <link rel="icon" type="image/png" href="assets/img/logos/favicon.png?v=traube2">
 <script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="assets/css/style.css?v=20261005-thumb-only-global">
-  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261004-global-shell-v74">
-<script defer src="assets/js/luria-brand-v5.js?v=12"></script>
+  <link rel="stylesheet" href="/assets/css/traube-brand-v5.css?v=20261004-global-shell-v74">
+<script defer src="assets/js/traube-brand-v5.js?v=12"></script>
 
   <style>
     /* Aula mais discreta */
@@ -563,7 +563,7 @@
 
         const esc = value => String(value ?? "").replace(/[&<>"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[char]));
         let plan = null;
-        try { plan = JSON.parse(sessionStorage.getItem("luria:guided-study-plan") || "null"); } catch {}
+        try { plan = JSON.parse(sessionStorage.getItem("traube:guided-study-plan") || "null"); } catch {}
         const steps = (Array.isArray(plan?.steps) ? plan.steps : []).slice(0,3);
         const host = document.getElementById("guided-study-session");
         const list = document.getElementById("guided-study-list");
@@ -579,13 +579,13 @@
 
         let completedThrough = -1;
         try {
-          const saved = JSON.parse(sessionStorage.getItem("luria:guided-study-progress") || "null");
+          const saved = JSON.parse(sessionStorage.getItem("traube:guided-study-progress") || "null");
           if (saved?.createdAt === plan?.createdAt) completedThrough = Number(saved.completedThrough ?? -1);
-          const active = JSON.parse(sessionStorage.getItem("luria:guided-study-active") || "null");
+          const active = JSON.parse(sessionStorage.getItem("traube:guided-study-active") || "null");
           if (active?.plan?.createdAt === plan?.createdAt && Number.isInteger(active.activeIndex)) {
             completedThrough = Math.max(completedThrough, active.activeIndex);
-            sessionStorage.setItem("luria:guided-study-progress", JSON.stringify({createdAt:plan.createdAt,completedThrough}));
-            sessionStorage.removeItem("luria:guided-study-active");
+            sessionStorage.setItem("traube:guided-study-progress", JSON.stringify({createdAt:plan.createdAt,completedThrough}));
+            sessionStorage.removeItem("traube:guided-study-active");
             if (banner) {
               banner.innerHTML = '<div><strong>Etapa '+(active.activeIndex+1)+' concluída</strong><small>Boa. A próxima etapa foi liberada.</small></div><span>✓</span>';
               banner.classList.add("is-visible");
@@ -613,7 +613,7 @@
           list.hidden = true;
           progress.querySelectorAll(".guided-study-progress-step").forEach(el => el.classList.add("is-done"));
           finale?.classList.add("is-visible");
-          try { localStorage.removeItem("luria:guided-timer"); } catch {}
+          try { localStorage.removeItem("traube:guided-timer"); } catch {}
         }
 
         list.querySelectorAll("[data-guided-index]").forEach(button => button.addEventListener("click", () => {
@@ -622,16 +622,16 @@
           if (!step?.href || index !== currentIndex) return;
           const totalMinutes = Math.max(1, Number(plan?.minutes) || Number(step.min) || 1);
           try {
-            const existingTimer = JSON.parse(localStorage.getItem("luria:guided-timer") || "null");
+            const existingTimer = JSON.parse(localStorage.getItem("traube:guided-timer") || "null");
             if (!existingTimer?.active) {
-              localStorage.setItem("luria:guided-timer", JSON.stringify({
+              localStorage.setItem("traube:guided-timer", JSON.stringify({
                 startedAt: Date.now(),
                 durationSeconds: Math.round(totalMinutes * 60),
                 title: step.title || "Sessão de estudo",
                 active: true
               }));
             }
-            sessionStorage.setItem("luria:guided-study-active", JSON.stringify({plan,activeIndex:index}));
+            sessionStorage.setItem("traube:guided-study-active", JSON.stringify({plan,activeIndex:index}));
           } catch {}
           window.location.href = step.href;
         }));

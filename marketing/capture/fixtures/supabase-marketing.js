@@ -13,11 +13,11 @@
   const log = (window.__marketingLog = window.__marketingLog || []);
   const owner = {
     id: '00000000-0000-4000-8000-00000000a11a',
-    email: 'demo@luria.invalid',
+    email: 'demo@traube.invalid',
     user_metadata: { display_name: scenario.ownerName || 'Lia' }
   };
   window.__fixtureOwner = owner;
-  try { localStorage.setItem('luria:shift-manager:security-mode:' + owner.id, 'none'); } catch {}
+  try { localStorage.setItem('traube:shift-manager:security-mode:' + owner.id, 'none'); } catch {}
 
   const today = new Date().toISOString().slice(0, 10);
   const daysFromNow = n => new Date(Date.now() + n * 86400000).toISOString().slice(0, 10);
@@ -26,7 +26,7 @@
   const friends = (scenario.friends || []).map((f, i) => ({
     user_id: f.id || ('00000000-0000-4000-8000-0000000000' + String(10 + i)),
     display_name: f.name,
-    luria_id: f.luriaId || ('DEMO' + String(1000 + i)),
+    traube_id: f.traubeId || ('DEMO' + String(1000 + i)),
     studyrat_variant: f.variant || 'blue',
     studyrat_accessory: f.accessory || 'none',
     avatar_url: null
@@ -79,7 +79,7 @@
       user_id: owner.id,
       display_name: owner.user_metadata.display_name,
       username: 'demo',
-      luria_id: 'DEMO0001',
+      traube_id: 'DEMO0001',
       gender: 'other',
       specialty: 'Clínica médica',
       studyrat_variant: scenario.ownerVariant || 'blue',
@@ -170,7 +170,7 @@
   }
 
   const rpcHandlers = {
-    luria_bootstrap: () => ({
+    traube_bootstrap: () => ({
       entitlements: entitlementPayload,
       profile: state.profile,
       is_admin: isAdminFlag,

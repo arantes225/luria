@@ -62,14 +62,14 @@
 
   const PHONE_DRAFT_TTL_MS = 6 * 60 * 60 * 1000;
   const PHONE_PERSONAS = [
-    {name:"Dr. Hipócrates",avatar:"/assets/img/luriazap/hipocrates.webp"},
-    {name:"Dr. Galeno",avatar:"/assets/img/luriazap/galeno.webp"},
-    {name:"Dr. Avicena",avatar:"/assets/img/luriazap/avicena.webp"},
-    {name:"Dr. Louis Pasteur",avatar:"/assets/img/luriazap/louis-pasteur.webp"},
-    {name:"Dra. Florence Nightingale",avatar:"/assets/img/luriazap/florence-nightingale.webp"},
-    {name:"Dra. Hildegarda de Bingen",avatar:"/assets/img/luriazap/hildegard-von-bingen.webp"},
-    {name:"Dra. Ada Lovelace",avatar:"/assets/img/luriazap/ada-lovelace.webp"},
-    {name:"Dra. Mary Anning",avatar:"/assets/img/luriazap/mary-anning.webp"}
+    {name:"Dr. Hipócrates",avatar:"/assets/img/traubezap/hipocrates.webp"},
+    {name:"Dr. Galeno",avatar:"/assets/img/traubezap/galeno.webp"},
+    {name:"Dr. Avicena",avatar:"/assets/img/traubezap/avicena.webp"},
+    {name:"Dr. Louis Pasteur",avatar:"/assets/img/traubezap/louis-pasteur.webp"},
+    {name:"Dra. Florence Nightingale",avatar:"/assets/img/traubezap/florence-nightingale.webp"},
+    {name:"Dra. Hildegarda de Bingen",avatar:"/assets/img/traubezap/hildegard-von-bingen.webp"},
+    {name:"Dra. Ada Lovelace",avatar:"/assets/img/traubezap/ada-lovelace.webp"},
+    {name:"Dra. Mary Anning",avatar:"/assets/img/traubezap/mary-anning.webp"}
   ];
 
   function phonePersona(item,index=0){
@@ -134,7 +134,7 @@
 
 
   function phoneDraftKey(){
-    return state.user?.id ? `luria:plantao:luriazap:draft:${state.user.id}` : null;
+    return state.user?.id ? `traube:plantao:traubezap:draft:${state.user.id}` : null;
   }
 
   function clearPhoneDraft(){
@@ -215,7 +215,7 @@
   }
 
   function plantaoViewKey(){
-    return state.user?.id ? "luria:plantao:view:"+state.user.id : "luria:plantao:view";
+    return state.user?.id ? "traube:plantao:view:"+state.user.id : "traube:plantao:view";
   }
 
   function savePlantaoView(patch={}){
@@ -551,16 +551,16 @@
       return female ? "/assets/img/plantao/patient-frontal-elderly-woman-awake.webp" : "/assets/img/plantao/patient-frontal-elderly-man-awake.webp";
     }
     if(specialty.includes("cirurg") || title.includes("trauma") || title.includes("abdominal")) {
-      return female ? "/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp" : "/assets/img/plantao/luria-homem-adulto-v7-aberto.webp";
+      return female ? "/assets/img/plantao/traube-mulher-adulta-v5-aberto.webp" : "/assets/img/plantao/traube-homem-adulto-v7-aberto.webp";
     }
-    return female || index%2 ? "/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp" : "/assets/img/plantao/luria-homem-adulto-v7-aberto.webp";
+    return female || index%2 ? "/assets/img/plantao/traube-mulher-adulta-v5-aberto.webp" : "/assets/img/plantao/traube-homem-adulto-v7-aberto.webp";
   }
 
   function plantaoReferenceFaceCrop(src){
     const file=String(src||"").split("/").pop();
     const presets={
-      "luria-homem-adulto-v7-aberto.webp":{x:50,y:24,scale:2.05},
-      "luria-mulher-adulta-v5-aberto.webp":{x:43,y:24,scale:2.08},
+      "traube-homem-adulto-v7-aberto.webp":{x:50,y:24,scale:2.05},
+      "traube-mulher-adulta-v5-aberto.webp":{x:43,y:24,scale:2.08},
       "patient-frontal-elderly-woman-awake.webp":{x:50,y:23,scale:2.0},
       "patient-frontal-elderly-man-awake.webp":{x:50,y:24,scale:2.02},
       "patient-frontal-girl-awake.webp":{x:50,y:25,scale:2.12},
@@ -1035,7 +1035,7 @@
       .select("*").single();
     if(error){console.error("Telefone: não foi possível iniciar a sessão",error);return;}
     state.phoneSession=session;
-    window.TraubeStudyTimer?.start("luria_zap", { sourceId: session.id, materia: item.title || item.specialty || "Traube Zap" });
+    window.TraubeStudyTimer?.start("traube_zap", { sourceId: session.id, materia: item.title || item.specialty || "Traube Zap" });
     savePlantaoView({mode:"phone",section:"phone",phoneCaseId:item.id,clinicalSessionId:null,clinicalCaseId:null});
     const firstLessonStep=lessonMode ? item.ai_context.lesson_flow[0] : null;
     const openingText=[
@@ -2822,8 +2822,8 @@
     girl:{awake:"/assets/img/plantao pwa/patient-frontal-girl-awake-pwa.webp",closed:"/assets/img/plantao pwa/patient-frontal-girl-closed-pwa.webp"},
     boy:{awake:"assets/img/plantao pwa/13-menino-acordado.webp",closed:"assets/img/plantao pwa/09-menino-olhos-fechados.webp"},
     pregnant:{awake:"/assets/img/plantao pwa/patient-frontal-pregnant-awake-pwa.webp",closed:"/assets/img/plantao pwa/patient-frontal-pregnant-closed-pwa.webp"},
-    woman:{awake:"/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp",closed:"/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp"},
-    man:{awake:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp",closed:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp"},
+    woman:{awake:"/assets/img/plantao/traube-mulher-adulta-v5-aberto.webp",closed:"/assets/img/plantao/traube-mulher-adulta-v5-aberto.webp"},
+    man:{awake:"/assets/img/plantao/traube-homem-adulto-v7-aberto.webp",closed:"/assets/img/plantao/traube-homem-adulto-v7-aberto.webp"},
     elderlyWoman:{awake:"/assets/img/plantao pwa/patient-frontal-elderly-woman-awake-pwa.webp",closed:"/assets/img/plantao pwa/patient-frontal-elderly-woman-closed-pwa.webp"},
     elderlyMan:{awake:"/assets/img/plantao pwa/patient-frontal-elderly-man-awake-pwa.webp",closed:"/assets/img/plantao pwa/patient-frontal-elderly-man-closed-pwa.webp"}
   };
@@ -2929,7 +2929,7 @@
     const oldMaleImage=/homem-adulto/.test(String(state.current?.presentation?.patient_image||""));
     const isPediatric=normalizeLabel(state.current?.specialty||"").includes("pedi");
     if((specifiedMale || oldMaleImage) && !isPediatric && (!Number.isFinite(age) || age>=13)){
-      return {patient_image:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp",unconscious_image:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp"};
+      return {patient_image:"/assets/img/plantao/traube-homem-adulto-v7-aberto.webp",unconscious_image:"/assets/img/plantao/traube-homem-adulto-v7-aberto.webp"};
     }
 
     // Mulher adulta V5 aprovada: foto fixa, olhos/respiração via overlays sincronizados.
@@ -2947,7 +2947,7 @@
       && !/pos-parto|puerper/.test(clinicalText);
     if((femaleSex||specifiedWomanImage) && !isWomanPediatric && !pregnantWoman
        && !isDisasterCase(state.current)){
-      return {patient_image:"/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp",unconscious_image:"/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp"};
+      return {patient_image:"/assets/img/plantao/traube-mulher-adulta-v5-aberto.webp",unconscious_image:"/assets/img/plantao/traube-mulher-adulta-v5-aberto.webp"};
     }
 
     const pwaPair=pwaPatientImagePair();
@@ -4243,7 +4243,7 @@
     };
     const {error}=await sb.from("clinical_case_sessions").update(payload).eq("id",state.session.id);
     if (error) { console.warn("Plantão: não foi possível persistir a sessão",error); return false; }
-    if(extra.status)window.dispatchEvent(new CustomEvent("luria:clinical-session",{detail:{id:state.session.id,case_id:state.session.case_id,status:extra.status}}));
+    if(extra.status)window.dispatchEvent(new CustomEvent("traube:clinical-session",{detail:{id:state.session.id,case_id:state.session.case_id,status:extra.status}}));
     return true;
   }
 
@@ -4304,7 +4304,7 @@
       started_at:sessionRow.started_at,
       completed_at:sessionRow.completed_at||null
     };
-    window.dispatchEvent(new CustomEvent("luria:clinical-session",{detail:{id:state.session.id,case_id:state.session.case_id,status:state.session.status}}));
+    window.dispatchEvent(new CustomEvent("traube:clinical-session",{detail:{id:state.session.id,case_id:state.session.case_id,status:state.session.status}}));
     state.elapsed=Number(saved.elapsed_seconds||0)/60 || Number(sessionRow.elapsed_minutes||0) || 0;
     state.score=Number(sessionRow.score||0);
     state.vitals={...(saved.vitals||item.initial_vitals||{})};
@@ -4582,7 +4582,7 @@
     if(explain) explain.innerHTML='<section class="plantao-understand-topic"><h3>Como funciona a cena?</h3><p>'+esc(d.explanation||"A estação avalia comando inicial, START, intervenções salvadoras e ordem de evacuação. O objetivo não é completar um atendimento hospitalar individual, mas organizar recursos escassos para o maior benefício coletivo.")+'</p></section>';
     const caseSources=(state.current.source_refs && state.current.source_refs.length) ? state.current.source_refs : (d.protocol_audit?.primary_source ? [d.protocol_audit.primary_source] : []);
     const sources=$("plantao-sources");
-    if(sources) sources.innerHTML=caseSources.map(src=>'<a href="'+esc(luriaSafeContentUrl(src.url) || '#')+'" target="_blank" rel="noopener noreferrer">'+esc(src.title)+'</a>').join("");
+    if(sources) sources.innerHTML=caseSources.map(src=>'<a href="'+esc(traubeSafeContentUrl(src.url) || '#')+'" target="_blank" rel="noopener noreferrer">'+esc(src.title)+'</a>').join("");
   }
 
   async function finishDisasterCase(){
@@ -4674,7 +4674,7 @@
     }
     state.busy=false;
     state.session=data;
-    window.dispatchEvent(new CustomEvent("luria:clinical-session",{detail:{id:data.id,case_id:data.case_id,status:data.status}}));
+    window.dispatchEvent(new CustomEvent("traube:clinical-session",{detail:{id:data.id,case_id:data.case_id,status:data.status}}));
     window.TraubeStudyTimer?.start("plantao", { sourceId: data.id, materia: item.presentation?.chief_complaint || item.title || "Plantão" });
     savePlantaoView({
       mode:"emergency",
@@ -5152,7 +5152,7 @@
     const dangerActionsEl=$("plantao-danger-actions"); if(dangerActionsEl) dangerActionsEl.innerHTML=danger.join("");
 
     const caseSources=(state.current.source_refs && state.current.source_refs.length) ? state.current.source_refs : (d.protocol_audit?.primary_source ? [d.protocol_audit.primary_source] : []);
-    const sourcesEl=$("plantao-sources"); if(sourcesEl) sourcesEl.innerHTML=caseSources.map(src=>`<a href="${esc(luriaSafeContentUrl(src.url) || '#')}" target="_blank" rel="noopener noreferrer">${esc(src.title)}</a>`).join("");
+    const sourcesEl=$("plantao-sources"); if(sourcesEl) sourcesEl.innerHTML=caseSources.map(src=>`<a href="${esc(traubeSafeContentUrl(src.url) || '#')}" target="_blank" rel="noopener noreferrer">${esc(src.title)}</a>`).join("");
   }
 
   async function pruneCaseHistory(caseId) {
@@ -5173,7 +5173,7 @@
     if(!sessionId || state.session?.status==="completed") return true;
     const {error}=await sb.rpc("discard_clinical_case_session",{p_session_id:sessionId});
     if(error){console.warn("Plantão: não foi possível descartar a sessão incompleta",error);return false;}
-    window.dispatchEvent(new CustomEvent("luria:clinical-session",{detail:{id:sessionId,case_id:state.session.case_id,status:"discarded"}}));
+    window.dispatchEvent(new CustomEvent("traube:clinical-session",{detail:{id:sessionId,case_id:state.session.case_id,status:"discarded"}}));
     state.session=null;
     return true;
   }
@@ -5193,7 +5193,7 @@
     $("plantao-action-drawer").hidden=true;
     $("plantao-action-tabs").inert=false;
     show("plantao-library");
-    if(window.TraubeRoomEmbed?.kind==="simulator")window.dispatchEvent(new Event("luria:clinical-exit"));
+    if(window.TraubeRoomEmbed?.kind==="simulator")window.dispatchEvent(new Event("traube:clinical-exit"));
   }
 
   document.addEventListener("click",async event=>{

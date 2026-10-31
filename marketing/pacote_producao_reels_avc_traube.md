@@ -148,5 +148,5 @@ Somente após afastar a hipoglicemia (ou com HGT normal), o protocolo de AVC é 
 Qual foi o caso mais desafiador de AVC que você já atendeu no internato ou plantão? Comente aqui embaixo! 👇
 
 ---
-#medicina #residencia #emergenciamedica #avc #prontosocorro #internatomedico #enare #estudantedemedicina #neurologia #luria
+#medicina #residencia #emergenciamedica #avc #prontosocorro #internatomedico #enare #estudantedemedicina #neurologia #traube
 ```

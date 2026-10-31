@@ -317,7 +317,7 @@ export const Phone3DScene: React.FC = () => {
           loadTexture(staticFile('commercial/cards/dash-agenda.png')),
           loadTexture(staticFile('commercial/cards/aprender-apostilas.png')),
           loadTexture(staticFile('commercial/cards/aprender-anotacoes.png')),
-          loadTexture(staticFile('commercial/cards/aprender-luriazap.png')),
+          loadTexture(staticFile('commercial/cards/aprender-traubezap.png')),
           loadTexture(staticFile('commercial/cards/card-shadow.png'))
         ]);
 
@@ -578,7 +578,7 @@ export const Phone3DScene: React.FC = () => {
     let aprenderFade = 0;
     let apostilasElev = 0;
     let anotacoesElev = 0;
-    let luriazapElev = 0;
+    let traubezapElev = 0;
 
     // ==========================================
     // SCENE TIMELINE (0 to 540 Frames / 18.0s)
@@ -753,13 +753,13 @@ export const Phone3DScene: React.FC = () => {
       }
 
       if (learnFrame >= 38 && learnFrame < 85) {
-        luriazapElev = spring({
+        traubezapElev = spring({
           frame: learnFrame - 38,
           fps,
           config: { damping: 15, stiffness: 85 }
         });
       } else if (learnFrame >= 85) {
-        luriazapElev = interpolate(learnFrame, [85, 95], [1, 0], {
+        traubezapElev = interpolate(learnFrame, [85, 95], [1, 0], {
           extrapolateLeft: 'clamp',
           extrapolateRight: 'clamp'
         });
@@ -894,7 +894,7 @@ export const Phone3DScene: React.FC = () => {
     if (aprenderFade > 0.5) {
       updateCard(cardApostilasMesh, cardApostilasShadow, statusBarPt + 64 + 133.59 + 210.98 / 2, apostilasElev, 0);
       updateCard(cardAnotacoesMesh, cardAnotacoesShadow, statusBarPt + 64 + 360.58 + 210.98 / 2, anotacoesElev, 0);
-      updateCard(cardTraubezapMesh, cardTraubezapShadow, statusBarPt + 64 + 587.56 + 210.98 / 2, luriazapElev, 0);
+      updateCard(cardTraubezapMesh, cardTraubezapShadow, statusBarPt + 64 + 587.56 + 210.98 / 2, traubezapElev, 0);
     } else {
       cardApostilasMesh.visible = false;
       cardApostilasShadow.visible = false;

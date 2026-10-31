@@ -4,7 +4,7 @@
   const $ = (id) => document.getElementById(id);
 
   const ADMIN_PIN_GRACE_MS = 30 * 60 * 1000;
-  const ADMIN_PIN_GRACE_KEY = "luria-admin-pin-unlocked-until";
+  const ADMIN_PIN_GRACE_KEY = "traube-admin-pin-unlocked-until";
 
   const state = {
     user: null,
@@ -132,7 +132,7 @@ Direção Vocal & Acústica (Para Gemini Audio / Studio Voice):
 Texto Exato da Locução (Copiar para síntese):
 "${narrationBody}"`;
 
-    const captionPrompt = `🚨 ${post.title}\n\n${post.script}\n\n⚡ Destaques de Prova e Plantão:\n${keywords.map(k => `• ${k}`).join("\n")}\n\n💡 Na TRAUBE, você transforma cada questão resolvida e cada detalhe clínico em memória de longo prazo com repetição espaçada e Caderno de Erros automatizado.\n\n🎯 ${post.cta}!\n🔗 Acesse o link da bio e libere 15 dias gratuitos na TRAUBE (sem cartão de crédito).\n\n#medicina #residenciamedica #internato #plantao #emergenciamedica #enare #uspsp #luria`;
+    const captionPrompt = `🚨 ${post.title}\n\n${post.script}\n\n⚡ Destaques de Prova e Plantão:\n${keywords.map(k => `• ${k}`).join("\n")}\n\n💡 Na TRAUBE, você transforma cada questão resolvida e cada detalhe clínico em memória de longo prazo com repetição espaçada e Caderno de Erros automatizado.\n\n🎯 ${post.cta}!\n🔗 Acesse o link da bio e libere 15 dias gratuitos na TRAUBE (sem cartão de crédito).\n\n#medicina #residenciamedica #internato #plantao #emergenciamedica #enare #uspsp #traube`;
 
     return { videoPrompt, audioPrompt, captionPrompt };
   }
@@ -354,7 +354,7 @@ Texto Exato da Locução (Copiar para síntese):
     const dbRow = state.postAssetsMap[post.id] || {};
     let localOverride = {};
     try {
-      localOverride = JSON.parse(localStorage.getItem(`luria_post_asset_${post.id}`) || "{}");
+      localOverride = JSON.parse(localStorage.getItem(`traube_post_asset_${post.id}`) || "{}");
     } catch (_) {}
 
     const defaults = getDefaultPromptsForPost(post);
@@ -448,7 +448,7 @@ Texto Exato da Locução (Copiar para síntese):
 
     state.postAssetsMap[postId] = updated;
     try {
-      localStorage.setItem(`luria_post_asset_${postId}`, JSON.stringify(updated));
+      localStorage.setItem(`traube_post_asset_${postId}`, JSON.stringify(updated));
     } catch (_) {}
 
     const btn = $("btn-save-prompts");
@@ -527,7 +527,7 @@ Texto Exato da Locução (Copiar para síntese):
 
       state.postAssetsMap[postId] = updated;
       try {
-        localStorage.setItem(`luria_post_asset_${postId}`, JSON.stringify(updated));
+        localStorage.setItem(`traube_post_asset_${postId}`, JSON.stringify(updated));
       } catch (_) {}
 
       if (sb) {
@@ -587,7 +587,7 @@ Texto Exato da Locução (Copiar para síntese):
 
       state.postAssetsMap[postId] = updated;
       try {
-        localStorage.setItem(`luria_post_asset_${postId}`, JSON.stringify(updated));
+        localStorage.setItem(`traube_post_asset_${postId}`, JSON.stringify(updated));
       } catch (_) {}
 
       if (sb) {

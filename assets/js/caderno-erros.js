@@ -339,7 +339,7 @@ async function loadErrorMetrics() {
 
 async function loadErrorAreas() {
   const mode =
-    window.luriaStudyMode
+    window.traubeStudyMode
     || "medicine";
 
   allErrorAreas =
@@ -2553,7 +2553,7 @@ function renderCurrentError() {
   if(errorIndex>=errorQueue.length){stage.hidden=true;empty.hidden=false;document.getElementById("error-position").textContent=`${errorQueue.length} / ${errorQueue.length}`;document.getElementById("error-progress-copy").textContent="revisão concluída";renderReviewSidebars();return}
   empty.hidden=true;stage.hidden=false;const item=errorQueue[errorIndex],remaining=errorQueue.length-errorIndex;
   document.getElementById("error-position").textContent=`${errorIndex+1} de ${errorQueue.length}`;document.getElementById("error-progress-copy").textContent=`${remaining} restante${remaining===1?"":"s"}`;
-  stage.innerHTML=`<div class="review-focus-meta"><span>${errorLibraryEscape(item.area||"Sem área")}</span><span>${errorLibraryEscape(item.materia||item.theme||"Revisão")}</span></div><section class="review-flashcard"><div class="review-cat-badge" role="img" aria-label="Pulo do Gato"><span class="review-cat-brand"><img class="review-cat-light" src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp?v=20260924e" alt=""><img class="review-cat-dark" src="/assets/img/pulo%20do%20gato/luria_gato_tema_escuro.webp?v=20260924e" alt=""><img class="review-cat-pink" src="/assets/img/pulo%20do%20gato/luria_gato_tema_rosa.webp?v=20260924e" alt=""></span><span>Pulo do Gato</span></div><div id="error-ccq" class="review-ccq">${errorLibraryEscape(item.ccq||"Sem Pulo do Gato")}</div></section><section id="error-details" class="review-details" hidden><h3>Questão original</h3><p id="error-question">${errorLibraryEscape(item.question_text||"Questão não informada.")}</p><div class="review-answer"><strong>Resposta correta</strong><p id="error-correct-answer">${errorLibraryEscape(item.correct_answer||"—")}</p></div>${item.what_i_thought?`<div id="error-thought-block"><strong>O que eu pensei</strong><p id="error-thought">${errorLibraryEscape(item.what_i_thought)}</p></div>`:""}</section><div class="review-focus-actions"><button id="mark-error-read" class="button primary" type="button">✓ Entendi</button><button id="open-error" class="button secondary" type="button">Ver questão</button></div><span id="error-status" class="error-status" aria-live="polite"></span>`;
+  stage.innerHTML=`<div class="review-focus-meta"><span>${errorLibraryEscape(item.area||"Sem área")}</span><span>${errorLibraryEscape(item.materia||item.theme||"Revisão")}</span></div><section class="review-flashcard"><div class="review-cat-badge" role="img" aria-label="Pulo do Gato"><span class="review-cat-brand"><img class="review-cat-light" src="/assets/img/pulo%20do%20gato/traube_gato_tema_claro.webp?v=20260924e" alt=""><img class="review-cat-dark" src="/assets/img/pulo%20do%20gato/traube_gato_tema_escuro.webp?v=20260924e" alt=""><img class="review-cat-pink" src="/assets/img/pulo%20do%20gato/traube_gato_tema_rosa.webp?v=20260924e" alt=""></span><span>Pulo do Gato</span></div><div id="error-ccq" class="review-ccq">${errorLibraryEscape(item.ccq||"Sem Pulo do Gato")}</div></section><section id="error-details" class="review-details" hidden><h3>Questão original</h3><p id="error-question">${errorLibraryEscape(item.question_text||"Questão não informada.")}</p><div class="review-answer"><strong>Resposta correta</strong><p id="error-correct-answer">${errorLibraryEscape(item.correct_answer||"—")}</p></div>${item.what_i_thought?`<div id="error-thought-block"><strong>O que eu pensei</strong><p id="error-thought">${errorLibraryEscape(item.what_i_thought)}</p></div>`:""}</section><div class="review-focus-actions"><button id="mark-error-read" class="button primary" type="button">✓ Entendi</button><button id="open-error" class="button secondary" type="button">Ver questão</button></div><span id="error-status" class="error-status" aria-live="polite"></span>`;
   document.getElementById("open-error")?.addEventListener("click",toggleErrorDetails);document.getElementById("mark-error-read")?.addEventListener("click",markCurrentErrorRead);renderReviewSidebars();
 }
 
@@ -3162,7 +3162,7 @@ function populateLibraryAreas() {
     select.value;
 
   const mode =
-    window.luriaStudyMode
+    window.traubeStudyMode
     || "medicine";
 
   const areas =
@@ -4366,7 +4366,7 @@ async function exportSelectedErrorsPdf() {
         doc
       );
 
-    doc.save(`luria-caderno-erros-${errorTodayISO()}.pdf`);
+    doc.save(`traube-caderno-erros-${errorTodayISO()}.pdf`);
     setErrorLibraryStatus("PDF exportado.", "success");
   } catch (error) {
     console.error(error);
@@ -5851,7 +5851,7 @@ wireErrorNavigationRecovery();
    ========================================================= */
 
 window.addEventListener(
-  "luria:study-mode",
+  "traube:study-mode",
   () => {
     loadErrorAreas();
     populateLibraryAreas();
@@ -5949,7 +5949,7 @@ if (window.docmapUser) {
       const buttons=[...box.querySelectorAll("button")];
       if(buttons.length>=3){
         buttons.slice(0,3).forEach(btn=>{
-          btn.classList.add("luria-error-review-align");
+          btn.classList.add("traube-error-review-align");
           btn.style.textAlign="left";
         });
         return;

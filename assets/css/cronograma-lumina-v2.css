@@ -1604,7 +1604,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-today-head .a
 
 @media(max-width:680px) {
   body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-today-head > :is(.agenda-today-title-wrap,.agenda-activity-view-switch) {flex:none;max-width:100%;}
-  @layer luria-ui-education {
+  @layer traube-ui-education {
     body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight {flex-wrap:nowrap!important;height:auto!important;}
   }
 }

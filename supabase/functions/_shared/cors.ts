@@ -1,6 +1,6 @@
 // Official production origin and the exact domain still configured in CNAME.
 const ALLOWED_ORIGINS = new Set([
-  "https://www.luriamedicina.com.br",
+  "https://www.traubemedicina.com.br",
   "https://www.resibulando.online",
 ]);
 

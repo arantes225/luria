@@ -14,7 +14,7 @@
   display: none !important;
 }
 
-.brand .luria-theme-logo {
+.brand .traube-theme-logo {
   position: static !important;
   inset: auto !important;
 
@@ -41,12 +41,12 @@
     filter .18s ease;
 }
 
-.brand:hover .luria-theme-logo {
+.brand:hover .traube-theme-logo {
   transform: scale(1.05);
 }
 
 :root[data-theme="dark"]
-.brand .luria-theme-logo {
+.brand .traube-theme-logo {
   filter:
     drop-shadow(
       0 4px 14px
@@ -55,7 +55,7 @@
 }
 
 :root[data-theme="leila-mood"]
-.brand .luria-theme-logo {
+.brand .traube-theme-logo {
   filter:
     drop-shadow(
       0 4px 14px
@@ -84,12 +84,12 @@
 }
 
 /* Caso algum CSS antigo tente exibir imagens extras */
-.brand > img:not(.luria-theme-logo):not(#luria-brand-logo) {
+.brand > img:not(.traube-theme-logo):not(#traube-brand-logo) {
   display: none !important;
 }
 
 @media (max-width: 700px) {
-  .brand .luria-theme-logo {
+  .brand .traube-theme-logo {
     width: 54px !important;
     height: 54px !important;
     flex-basis: 54px !important;
@@ -111,14 +111,14 @@
 
 /* TRAUBE v57 — posição global estável dos controles superiores */
 :root{
-  --luria-top-controls-top:10px;
-  --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
+  --traube-top-controls-top:10px;
+  --traube-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
 }
 @media (min-width:981px){
-  body:not([data-page="dashboard"]) .topbar .luria-notifications{
+  body:not([data-page="dashboard"]) .topbar .traube-notifications{
     position:fixed!important;
-    top:var(--luria-top-controls-top)!important;
-    right:var(--luria-top-controls-right)!important;
+    top:var(--traube-top-controls-top)!important;
+    right:var(--traube-top-controls-right)!important;
     bottom:auto!important;
     left:auto!important;
     margin:0!important;
@@ -141,10 +141,10 @@
     align-items:flex-start!important;
     overflow:visible!important;
   }
-  body:not([data-page="dashboard"]) .topbar .luria-notifications{
+  body:not([data-page="dashboard"]) .topbar .traube-notifications{
     position:fixed!important;
-    top:var(--luria-top-controls-top)!important;
-    right:var(--luria-top-controls-right)!important;
+    top:var(--traube-top-controls-top)!important;
+    right:var(--traube-top-controls-right)!important;
     bottom:auto!important;
     left:auto!important;
     display:flex!important;
@@ -157,7 +157,7 @@
     animation:none!important;
     z-index:245!important;
   }
-  body:not([data-page="dashboard"]) .luria-pomodoro-toggle{
+  body:not([data-page="dashboard"]) .traube-pomodoro-toggle{
     min-width:164px!important;
     height:48px!important;
     min-height:48px!important;
@@ -166,19 +166,19 @@
     border-radius:12px!important;
     box-sizing:border-box!important;
   }
-  body:not([data-page="dashboard"]) .luria-pomodoro-icon,
-  body:not([data-page="dashboard"]) .luria-pomodoro-icon svg{
+  body:not([data-page="dashboard"]) .traube-pomodoro-icon,
+  body:not([data-page="dashboard"]) .traube-pomodoro-icon svg{
     width:22px!important;
     height:22px!important;
   }
-  body:not([data-page="dashboard"]) .luria-pomodoro-copy strong{
+  body:not([data-page="dashboard"]) .traube-pomodoro-copy strong{
     font-size:13px!important;
   }
-  body:not([data-page="dashboard"]) .luria-pomodoro-copy small{
+  body:not([data-page="dashboard"]) .traube-pomodoro-copy small{
     font-size:11px!important;
   }
-  body:not([data-page="dashboard"]) .luria-notification-toggle,
-  body:not([data-page="dashboard"]) .luria-profile-toggle{
+  body:not([data-page="dashboard"]) .traube-notification-toggle,
+  body:not([data-page="dashboard"]) .traube-profile-toggle{
     width:48px!important;
     height:48px!important;
     min-width:48px!important;
@@ -186,12 +186,12 @@
     border-radius:12px!important;
     box-sizing:border-box!important;
   }
-  body:not([data-page="dashboard"]) .luria-notification-toggle svg,
-  body:not([data-page="dashboard"]) #luria-notification-toggle svg{
+  body:not([data-page="dashboard"]) .traube-notification-toggle svg,
+  body:not([data-page="dashboard"]) #traube-notification-toggle svg{
     width:20px!important;
     height:20px!important;
   }
-  body:not([data-page="dashboard"]) .luria-profile-toggle{
+  body:not([data-page="dashboard"]) .traube-profile-toggle{
     font-size:17px!important;
   }
 }
@@ -218,16 +218,16 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar:where(:not(bo
 
 /* TRAUBE v59 — alinhamento global definitivo dos controles do topo */
 @media (min-width:981px){
-  body:not([data-page="dashboard"]) .topbar .luria-notifications{
-    top:var(--luria-top-controls-top,0px)!important;
-    right:var(--luria-top-controls-right,max(34px, calc((100vw - 1320px) / 2)))!important;
+  body:not([data-page="dashboard"]) .topbar .traube-notifications{
+    top:var(--traube-top-controls-top,0px)!important;
+    right:var(--traube-top-controls-right,max(34px, calc((100vw - 1320px) / 2)))!important;
     display:flex!important;
     align-items:center!important;
     gap:10px!important;
   }
-  body:not([data-page="dashboard"]) .topbar .luria-pomodoro-top,
-  body:not([data-page="dashboard"]) .topbar .luria-notification-toggle,
-  body:not([data-page="dashboard"]) .topbar .luria-profile-top{
+  body:not([data-page="dashboard"]) .topbar .traube-pomodoro-top,
+  body:not([data-page="dashboard"]) .topbar .traube-notification-toggle,
+  body:not([data-page="dashboard"]) .topbar .traube-profile-top{
     margin-top:0!important;
     transform:none!important;
     translate:none!important;
@@ -239,10 +239,10 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar:where(:not(bo
 /* TRAUBE v60 — controles alinhados à largura real de 1320px da página */
 @media (min-width:981px){
   :root{
-    --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
+    --traube-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
   }
-  body:not([data-page="dashboard"]) .topbar .luria-notifications{
-    right:var(--luria-top-controls-right)!important;
+  body:not([data-page="dashboard"]) .topbar .traube-notifications{
+    right:var(--traube-top-controls-right)!important;
   }
 }
 
@@ -250,12 +250,12 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar:where(:not(bo
 /* TRAUBE v61 — restaura altura anterior e mantém deslocamento à esquerda */
 @media (min-width:981px){
   :root{
-    --luria-top-controls-top:10px;
-    --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
+    --traube-top-controls-top:10px;
+    --traube-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
   }
-  body:not([data-page="dashboard"]) .topbar .luria-notifications{
-    top:var(--luria-top-controls-top)!important;
-    right:var(--luria-top-controls-right)!important;
+  body:not([data-page="dashboard"]) .topbar .traube-notifications{
+    top:var(--traube-top-controls-top)!important;
+    right:var(--traube-top-controls-right)!important;
   }
 }
 
@@ -263,12 +263,12 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar:where(:not(bo
 /* TRAUBE v62 — deslocamento horizontal real dos controles do topo */
 @media (min-width:981px){
   :root{
-    --luria-top-controls-top:10px;
-    --luria-top-controls-right:154px;
+    --traube-top-controls-top:10px;
+    --traube-top-controls-right:154px;
   }
-  body:not([data-page="dashboard"]) .topbar .luria-notifications{
-    top:var(--luria-top-controls-top)!important;
-    right:var(--luria-top-controls-right)!important;
+  body:not([data-page="dashboard"]) .topbar .traube-notifications{
+    top:var(--traube-top-controls-top)!important;
+    right:var(--traube-top-controls-right)!important;
   }
 }
 
@@ -276,12 +276,12 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar:where(:not(bo
 /* TRAUBE v64 — controles ancorados pela direita na borda real do card de conteúdo */
 @media (min-width:981px){
   :root{
-    --luria-top-controls-top:10px;
-    --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
+    --traube-top-controls-top:10px;
+    --traube-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
   }
-  body:not([data-page="dashboard"]) .topbar .luria-notifications{
-    top:var(--luria-top-controls-top)!important;
-    right:var(--luria-top-controls-right)!important;
+  body:not([data-page="dashboard"]) .topbar .traube-notifications{
+    top:var(--traube-top-controls-top)!important;
+    right:var(--traube-top-controls-right)!important;
   }
 }
 
@@ -292,7 +292,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar:where(:not(bo
    ========================================================= */
 
 /* A antiga alça de edição/arraste nunca aparece. */
-.luria-top-controls-drag-handle{
+.traube-top-controls-drag-handle{
   display:none!important;
 }
 
@@ -308,9 +308,9 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar:where(:not(bo
 }
 
 /* O grupo deixa de ser fixed/floating e volta ao fluxo do cabeçalho. */
-.topbar .luria-notifications,
-body:not([data-page="dashboard"]) .topbar .luria-notifications,
-body[data-page="dashboard"] .topbar .luria-notifications{
+.topbar .traube-notifications,
+body:not([data-page="dashboard"]) .topbar .traube-notifications,
+body[data-page="dashboard"] .topbar .traube-notifications{
   position:static!important;
   inset:auto!important;
   top:auto!important;
@@ -330,8 +330,8 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 }
 
 /* Elimina qualquer efeito residual de posição personalizada antiga. */
-.luria-notifications[data-luria-custom-position],
-.luria-notifications.luria-top-controls-dragging{
+.traube-notifications[data-traube-custom-position],
+.traube-notifications.traube-top-controls-dragging{
   position:static!important;
   top:auto!important;
   right:auto!important;
@@ -341,13 +341,13 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 }
 
 /* Mantém os menus do timer/notificações/perfil sobre o conteúdo quando abertos. */
-.luria-pomodoro-top,
-.luria-profile-top{
+.traube-pomodoro-top,
+.traube-profile-top{
   position:relative!important;
 }
-.luria-pomodoro-panel,
-.luria-profile-menu,
-.luria-notification-panel{
+.traube-pomodoro-panel,
+.traube-profile-menu,
+.traube-notification-panel{
   z-index:500!important;
 }
 
@@ -372,8 +372,8 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     padding:5px 0!important;
     background:var(--bg)!important;
   }
-  .topbar .luria-notifications,
-  html.pwa-standalone body .topbar .luria-notifications{
+  .topbar .traube-notifications,
+  html.pwa-standalone body .topbar .traube-notifications{
     position:static!important;
     top:auto!important;
     right:auto!important;
@@ -390,8 +390,8 @@ body[data-page="dashboard"] .topbar .luria-notifications{
    ========================================================= */
 @media(min-width:981px){
   :root{
-    --luria-top-controls-top:10px;
-    --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
+    --traube-top-controls-top:10px;
+    --traube-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
   }
 
   .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
@@ -400,12 +400,12 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     z-index:240!important;
   }
 
-  .topbar .luria-notifications,
-  body:not([data-page="dashboard"]) .topbar .luria-notifications,
-  body[data-page="dashboard"] .topbar .luria-notifications{
+  .topbar .traube-notifications,
+  body:not([data-page="dashboard"]) .topbar .traube-notifications,
+  body[data-page="dashboard"] .topbar .traube-notifications{
     position:fixed!important;
-    top:var(--luria-top-controls-top)!important;
-    right:var(--luria-top-controls-right)!important;
+    top:var(--traube-top-controls-top)!important;
+    right:var(--traube-top-controls-right)!important;
     bottom:auto!important;
     left:auto!important;
     margin:0!important;
@@ -415,10 +415,10 @@ body[data-page="dashboard"] .topbar .luria-notifications{
   }
 }
 
-.luria-top-controls-drag-handle{
+.traube-top-controls-drag-handle{
   display:none!important;
 }
-.luria-notifications{
+.traube-notifications{
   cursor:default!important;
 }
 
@@ -437,9 +437,9 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     background:var(--bg)!important;
   }
 
-  .topbar .luria-notifications,
-  body:not([data-page="dashboard"]) .topbar .luria-notifications,
-  body[data-page="dashboard"] .topbar .luria-notifications{
+  .topbar .traube-notifications,
+  body:not([data-page="dashboard"]) .topbar .traube-notifications,
+  body[data-page="dashboard"] .topbar .traube-notifications{
     position:static!important;
     inset:auto!important;
     margin-left:auto!important;
@@ -466,17 +466,17 @@ body[data-page="dashboard"] .topbar .luria-notifications{
    ========================================================= */
 @media(min-width:981px){
   :root{
-    --luria-top-controls-top:10px;
-    --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
+    --traube-top-controls-top:10px;
+    --traube-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
   }
 
-  body .topbar .luria-notifications,
-  body:not([data-page="dashboard"]) .topbar .luria-notifications,
-  body[data-page="dashboard"] .topbar .luria-notifications,
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar .luria-notifications{
+  body .topbar .traube-notifications,
+  body:not([data-page="dashboard"]) .topbar .traube-notifications,
+  body[data-page="dashboard"] .topbar .traube-notifications,
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar .traube-notifications{
     position:fixed!important;
-    top:var(--luria-top-controls-top)!important;
-    right:var(--luria-top-controls-right)!important;
+    top:var(--traube-top-controls-top)!important;
+    right:var(--traube-top-controls-right)!important;
     bottom:auto!important;
     left:auto!important;
     margin:0!important;
@@ -490,9 +490,9 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 }
 
 @media(max-width:980px){
-  body .topbar .luria-notifications,
-  body[data-page="dashboard"] .topbar .luria-notifications,
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar .luria-notifications{
+  body .topbar .traube-notifications,
+  body[data-page="dashboard"] .topbar .traube-notifications,
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar .traube-notifications{
     position:static!important;
     inset:auto!important;
     margin-left:auto!important;
@@ -508,16 +508,16 @@ body[data-page="dashboard"] .topbar .luria-notifications{
    ========================================================= */
 @media(min-width:981px){
   :root{
-    --luria-top-controls-top:28px;
-    --luria-top-controls-right:28px;
+    --traube-top-controls-top:28px;
+    --traube-top-controls-right:28px;
   }
 
-  .topbar .luria-notifications,
-  body:not([data-page="dashboard"]) .topbar .luria-notifications,
-  body[data-page="dashboard"] .topbar .luria-notifications{
+  .topbar .traube-notifications,
+  body:not([data-page="dashboard"]) .topbar .traube-notifications,
+  body[data-page="dashboard"] .topbar .traube-notifications{
     position:fixed!important;
-    top:var(--luria-top-controls-top)!important;
-    right:var(--luria-top-controls-right)!important;
+    top:var(--traube-top-controls-top)!important;
+    right:var(--traube-top-controls-right)!important;
     bottom:auto!important;
     left:auto!important;
     margin:0!important;
@@ -529,8 +529,8 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 /* PWA/mobile segue a margem do Dashboard mobile. */
 @media(max-width:980px){
-  .topbar .luria-notifications,
-  html.pwa-standalone body .topbar .luria-notifications{
+  .topbar .traube-notifications,
+  html.pwa-standalone body .topbar .traube-notifications{
     right:20px!important;
   }
 }
@@ -552,7 +552,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     box-sizing:border-box!important;
   }
 
-  body:not([data-page="dashboard"]) .topbar .luria-notifications{
+  body:not([data-page="dashboard"]) .topbar .traube-notifications{
     top:28px!important;
   }
 }
@@ -620,7 +620,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     z-index:240!important;
   }
 
-  body:not([data-page="dashboard"]) .topbar .luria-notifications{
+  body:not([data-page="dashboard"]) .topbar .traube-notifications{
     position:fixed!important;
     top:28px!important;
     right:max(34px, calc((100vw - 1320px) / 2))!important;
@@ -640,7 +640,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
   }
 
   body:not([data-page="dashboard"]) .page > :is(
-    .luria-page-spotlight,
+    .traube-page-spotlight,
     .schedule-top-spotlight,
     .error-cat-spotlight,
     .schedule-stack,
@@ -680,7 +680,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     display:none!important;
   }
 
-  body:not([data-page="dashboard"]) .topbar .luria-notifications{
+  body:not([data-page="dashboard"]) .topbar .traube-notifications{
     position:static!important;
     inset:auto!important;
     width:100%!important;
@@ -694,7 +694,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     z-index:auto!important;
   }
 
-  body:not([data-page="dashboard"]) .luria-pomodoro-toggle{
+  body:not([data-page="dashboard"]) .traube-pomodoro-toggle{
     min-width:184px!important;
     width:184px!important;
     height:58px!important;
@@ -703,25 +703,25 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     border-radius:16px!important;
   }
 
-  body:not([data-page="dashboard"]) .luria-pomodoro-icon,
-  body:not([data-page="dashboard"]) .luria-pomodoro-icon svg{
+  body:not([data-page="dashboard"]) .traube-pomodoro-icon,
+  body:not([data-page="dashboard"]) .traube-pomodoro-icon svg{
     width:28px!important;
     height:28px!important;
   }
 
-  body:not([data-page="dashboard"]) .luria-pomodoro-copy strong{
+  body:not([data-page="dashboard"]) .traube-pomodoro-copy strong{
     font-size:16px!important;
     line-height:1.05!important;
   }
 
-  body:not([data-page="dashboard"]) .luria-pomodoro-copy small{
+  body:not([data-page="dashboard"]) .traube-pomodoro-copy small{
     margin-top:4px!important;
     font-size:13px!important;
     line-height:1!important;
   }
 
-  body:not([data-page="dashboard"]) .luria-notification-toggle,
-  body:not([data-page="dashboard"]) .luria-profile-toggle{
+  body:not([data-page="dashboard"]) .traube-notification-toggle,
+  body:not([data-page="dashboard"]) .traube-profile-toggle{
     width:58px!important;
     height:58px!important;
     min-width:58px!important;
@@ -729,12 +729,12 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     border-radius:16px!important;
   }
 
-  body:not([data-page="dashboard"]) .luria-notification-toggle svg{
+  body:not([data-page="dashboard"]) .traube-notification-toggle svg{
     width:22px!important;
     height:22px!important;
   }
 
-  body:not([data-page="dashboard"]) .luria-profile-toggle{
+  body:not([data-page="dashboard"]) .traube-profile-toggle{
     font-size:19px!important;
   }
 
@@ -774,15 +774,15 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 /* v74 — fallback CSS: controles com escala real do Dashboard */
 @media(min-width:981px){
-  body:not([data-page="dashboard"]) .luria-pomodoro-toggle{
+  body:not([data-page="dashboard"]) .traube-pomodoro-toggle{
     height:43px!important;
     min-height:43px!important;
     min-width:156px!important;
     width:auto!important;
     padding:0 12px!important;
   }
-  body:not([data-page="dashboard"]) .luria-notification-toggle,
-  body:not([data-page="dashboard"]) .luria-profile-toggle{
+  body:not([data-page="dashboard"]) .traube-notification-toggle,
+  body:not([data-page="dashboard"]) .traube-profile-toggle{
     width:43px!important;
     height:43px!important;
     min-width:43px!important;
@@ -793,7 +793,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 /* v75 — largura do Timer igual à proporção do Dashboard */
 @media(min-width:981px){
-  body:not([data-page="dashboard"]) .luria-pomodoro-toggle{
+  body:not([data-page="dashboard"]) .traube-pomodoro-toggle{
     width:auto!important;
     min-width:0!important;
     max-width:none!important;
@@ -829,7 +829,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     translate:none!important;
   }
 
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar .luria-notifications{
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar .traube-notifications{
     position:absolute!important;
     top:6px!important;
     right:0!important;
@@ -875,29 +875,29 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   inset:-14%!important;
   z-index:-1!important;
   pointer-events:none!important;
-  background-image:var(--luria-pattern-image)!important;
+  background-image:var(--traube-pattern-image)!important;
   background-repeat:repeat!important;
-  background-size:var(--luria-pattern-size) var(--luria-pattern-size)!important;
+  background-size:var(--traube-pattern-size) var(--traube-pattern-size)!important;
   transform:rotate(-8deg) scale(1.08)!important;
   transform-origin:center!important;
 }
 body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
   background-position:0 0!important;
-  opacity:var(--luria-pattern-opacity)!important;
+  opacity:var(--traube-pattern-opacity)!important;
 }
 body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
-  background-position:calc(var(--luria-pattern-size) / 2) calc(var(--luria-pattern-size) / 2)!important;
-  opacity:var(--luria-pattern-opacity)!important;
+  background-position:calc(var(--traube-pattern-size) / 2) calc(var(--traube-pattern-size) / 2)!important;
+  opacity:var(--traube-pattern-opacity)!important;
 }
 
 
 /* TRAUBE HOSTINGER-LIKE SHELL v1 — 2026-10-04 */
 :root{
-  --luria-shell-blue:#184888;
-  --luria-shell-blue-2:#184888;
-  --luria-shell-radius:24px;
-  --luria-shell-edge:6px;
-  --luria-shell-top:70px;
+  --traube-shell-blue:#184888;
+  --traube-shell-blue-2:#184888;
+  --traube-shell-radius:24px;
+  --traube-shell-edge:6px;
+  --traube-shell-top:70px;
 }
 
 /* Desktop/web: a aplicação inteira vira um shell, com cabeçalho azul cheio
@@ -913,10 +913,10 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     width:auto!important;
     min-height:calc(100vh - 20px)!important;
     margin:10px!important;
-    padding:var(--luria-shell-top) var(--luria-shell-edge) var(--luria-shell-edge)!important;
+    padding:var(--traube-shell-top) var(--traube-shell-edge) var(--traube-shell-edge)!important;
     overflow:visible!important;
-    border-radius:var(--luria-shell-radius)!important;
-    background:linear-gradient(90deg,var(--luria-shell-blue),var(--luria-shell-blue-2))!important;
+    border-radius:var(--traube-shell-radius)!important;
+    background:linear-gradient(90deg,var(--traube-shell-blue),var(--traube-shell-blue-2))!important;
     box-shadow:0 12px 34px rgba(15,103,238,.18)!important;
   }
 
@@ -925,9 +925,9 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     content:""!important;
     position:absolute!important;
     inset:0 0 auto 0!important;
-    height:calc(var(--luria-shell-top) + 8px)!important;
-    border-radius:var(--luria-shell-radius) var(--luria-shell-radius) 18px 18px!important;
-    background:linear-gradient(90deg,var(--luria-shell-blue),var(--luria-shell-blue-2))!important;
+    height:calc(var(--traube-shell-top) + 8px)!important;
+    border-radius:var(--traube-shell-radius) var(--traube-shell-radius) 18px 18px!important;
+    background:linear-gradient(90deg,var(--traube-shell-blue),var(--traube-shell-blue-2))!important;
     pointer-events:none!important;
     z-index:0!important;
   }
@@ -977,7 +977,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   /* A logo passa a morar visualmente dentro da faixa azul superior. */
   body #sidebar.sidebar .sidebar-top{
     position:absolute!important;
-    top:calc(-1 * var(--luria-shell-top) + 8px)!important;
+    top:calc(-1 * var(--traube-shell-top) + 8px)!important;
     left:10px!important;
     right:10px!important;
     height:54px!important;
@@ -995,7 +995,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     gap:9px!important;
     color:#fff!important;
   }
-  body #sidebar.sidebar .brand .luria-theme-logo{
+  body #sidebar.sidebar .brand .traube-theme-logo{
     width:46px!important;
     height:46px!important;
     flex:0 0 46px!important;
@@ -1049,7 +1049,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   body:not([data-page="dashboard"]) .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   body[data-page="dashboard"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:absolute!important;
-    top:calc(-1 * var(--luria-shell-top) + 7px)!important;
+    top:calc(-1 * var(--traube-shell-top) + 7px)!important;
     left:0!important;
     right:0!important;
     width:auto!important;
@@ -1067,9 +1067,9 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 
   body .topbar .page-heading{display:none!important}
 
-  body .topbar .luria-notifications,
-  body:not([data-page="dashboard"]) .topbar .luria-notifications,
-  body[data-page="dashboard"] .topbar .luria-notifications{
+  body .topbar .traube-notifications,
+  body:not([data-page="dashboard"]) .topbar .traube-notifications,
+  body[data-page="dashboard"] .topbar .traube-notifications{
     position:static!important;
     inset:auto!important;
     margin:0 0 0 auto!important;
@@ -1082,12 +1082,12 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   }
 
   /* controles da faixa superior: aspecto translúcido como a referência */
-  body .topbar .luria-pomodoro-toggle,
-  body .topbar .luria-notification-toggle,
-  body .topbar .luria-profile-toggle,
+  body .topbar .traube-pomodoro-toggle,
+  body .topbar .traube-notification-toggle,
+  body .topbar .traube-profile-toggle,
   body .topbar [data-global-search-trigger],
   body .topbar .global-search-trigger,
-  body .topbar .luria-global-search-trigger{
+  body .topbar .traube-global-search-trigger{
     border:1px solid rgba(255,255,255,.24)!important;
     background:rgba(255,255,255,.10)!important;
     color:#fff!important;
@@ -1095,15 +1095,15 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     backdrop-filter:blur(8px)!important;
     -webkit-backdrop-filter:blur(8px)!important;
   }
-  body .topbar .luria-pomodoro-toggle:hover,
-  body .topbar .luria-notification-toggle:hover,
-  body .topbar .luria-profile-toggle:hover{
+  body .topbar .traube-pomodoro-toggle:hover,
+  body .topbar .traube-notification-toggle:hover,
+  body .topbar .traube-profile-toggle:hover{
     background:rgba(255,255,255,.18)!important;
     border-color:rgba(255,255,255,.38)!important;
     color:#fff!important;
   }
-  body .topbar .luria-pomodoro-copy strong,
-  body .topbar .luria-pomodoro-copy small,
+  body .topbar .traube-pomodoro-copy strong,
+  body .topbar .traube-pomodoro-copy small,
   body .topbar svg{color:#fff!important}
   body .topbar svg{stroke:currentColor!important}
 
@@ -1149,24 +1149,24 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 /* TRAUBE SHELL — THEME COLORS v4 — 2026-10-04 */
 :root,
 :root[data-theme="light"]{
-  --luria-shell-theme:#184888;
-  --luria-shell-theme-2:#123A70;
+  --traube-shell-theme:#184888;
+  --traube-shell-theme-2:#123A70;
 }
 :root[data-theme="dark"]{
-  --luria-shell-theme:#142A44;
-  --luria-shell-theme-2:#0D1B30;
+  --traube-shell-theme:#142A44;
+  --traube-shell-theme-2:#0D1B30;
 }
 :root[data-theme="leila-mood"]{
-  --luria-shell-theme:#CB3F83;
-  --luria-shell-theme-2:#A92F6E;
+  --traube-shell-theme:#CB3F83;
+  --traube-shell-theme-2:#A92F6E;
 }
 
 @media (min-width:981px){
   body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
-    background:linear-gradient(90deg,var(--luria-shell-theme),var(--luria-shell-theme-2))!important;
+    background:linear-gradient(90deg,var(--traube-shell-theme),var(--traube-shell-theme-2))!important;
   }
   body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
-    background:linear-gradient(90deg,var(--luria-shell-theme),var(--luria-shell-theme-2))!important;
+    background:linear-gradient(90deg,var(--traube-shell-theme),var(--traube-shell-theme-2))!important;
   }
 }
 
@@ -1174,13 +1174,13 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 /* TRAUBE SHELL — EXACT COLOR MATCH v5 — 2026-10-04 */
 :root,
 :root[data-theme="light"]{
-  --luria-shell-theme:#184888;
+  --traube-shell-theme:#184888;
 }
 :root[data-theme="dark"]{
-  --luria-shell-theme:#142A44;
+  --traube-shell-theme:#142A44;
 }
 :root[data-theme="leila-mood"]{
-  --luria-shell-theme:#CB3F83;
+  --traube-shell-theme:#CB3F83;
 }
 
 @media (min-width:981px){
@@ -1188,8 +1188,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   body,
   body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
-    background:var(--luria-shell-theme)!important;
-    background-color:var(--luria-shell-theme)!important;
+    background:var(--traube-shell-theme)!important;
+    background-color:var(--traube-shell-theme)!important;
     background-image:none!important;
   }
 }
@@ -1198,21 +1198,21 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 /* TRAUBE SHELL — SOLID COLOR NO GRADIENT v6 — 2026-10-04 */
 :root,
 :root[data-theme="light"]{
-  --luria-shell-theme:#184888;
+  --traube-shell-theme:#184888;
 }
 :root[data-theme="dark"]{
-  --luria-shell-theme:#142A44;
+  --traube-shell-theme:#142A44;
 }
 :root[data-theme="leila-mood"]{
-  --luria-shell-theme:#CB3F83;
+  --traube-shell-theme:#CB3F83;
 }
 @media (min-width:981px){
   html,
   body,
   body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
-    background:var(--luria-shell-theme)!important;
-    background-color:var(--luria-shell-theme)!important;
+    background:var(--traube-shell-theme)!important;
+    background-color:var(--traube-shell-theme)!important;
     background-image:none!important;
   }
 }
@@ -1225,12 +1225,12 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   }
 
   body .topbar :is(
-    .luria-pomodoro-toggle,
-    .luria-notification-toggle,
-    .luria-profile-toggle,
+    .traube-pomodoro-toggle,
+    .traube-notification-toggle,
+    .traube-profile-toggle,
     [data-global-search-trigger],
     .global-search-trigger,
-    .luria-global-search-trigger
+    .traube-global-search-trigger
   ){
     background:rgba(255,255,255,.10)!important;
     border-color:rgba(255,255,255,.28)!important;
@@ -1239,12 +1239,12 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   }
 
   body .topbar :is(
-    .luria-pomodoro-toggle,
-    .luria-notification-toggle,
-    .luria-profile-toggle,
+    .traube-pomodoro-toggle,
+    .traube-notification-toggle,
+    .traube-profile-toggle,
     [data-global-search-trigger],
     .global-search-trigger,
-    .luria-global-search-trigger
+    .traube-global-search-trigger
   ):hover{
     background:rgba(255,255,255,.17)!important;
     border-color:rgba(255,255,255,.40)!important;
@@ -1256,13 +1256,13 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 /* TRAUBE SHELL — AUTHORITATIVE SAME-COLOR OVERRIDE v10 — 2026-10-04 */
 :root,
 :root[data-theme="light"]{
-  --luria-shell-theme:#184888;
+  --traube-shell-theme:#184888;
 }
 :root[data-theme="dark"]{
-  --luria-shell-theme:#142A44;
+  --traube-shell-theme:#142A44;
 }
 :root[data-theme="leila-mood"]{
-  --luria-shell-theme:#CB3F83;
+  --traube-shell-theme:#CB3F83;
 }
 @media (min-width:981px){
   html,
@@ -1273,8 +1273,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   body[data-page="dashboard"][data-dashboard-layout],
   body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
-    background:var(--luria-shell-theme)!important;
-    background-color:var(--luria-shell-theme)!important;
+    background:var(--traube-shell-theme)!important;
+    background-color:var(--traube-shell-theme)!important;
     background-image:none!important;
   }
 }
@@ -1283,7 +1283,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 /* TRAUBE TIMER PANEL — CLEAN LAYOUT v11 — 2026-10-04 */
 @media (min-width:981px){
   /* Ajuste visual isolado do painel aberto do Timer/Pomodoro. */
-  body .luria-pomodoro-panel{
+  body .traube-pomodoro-panel{
     width:288px!important;
     padding:16px!important;
     border:1px solid var(--border)!important;
@@ -1294,7 +1294,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     box-sizing:border-box!important;
   }
 
-  body .luria-pomodoro-panel header{
+  body .traube-pomodoro-panel header{
     display:flex!important;
     align-items:center!important;
     justify-content:space-between!important;
@@ -1302,7 +1302,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     padding:0!important;
   }
 
-  body .luria-pomodoro-panel header strong{
+  body .traube-pomodoro-panel header strong{
     display:block!important;
     margin:0!important;
     color:var(--text)!important;
@@ -1311,7 +1311,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     line-height:1.2!important;
   }
 
-  body .luria-pomodoro-panel header small{
+  body .traube-pomodoro-panel header small{
     display:block!important;
     margin-top:3px!important;
     color:var(--muted)!important;
@@ -1320,7 +1320,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     line-height:1.2!important;
   }
 
-  body .luria-timer-switch{
+  body .traube-timer-switch{
     display:grid!important;
     grid-template-columns:1fr 1fr!important;
     gap:6px!important;
@@ -1331,7 +1331,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     background:var(--surface-2)!important;
   }
 
-  body .luria-timer-switch button{
+  body .traube-timer-switch button{
     min-height:34px!important;
     padding:0 10px!important;
     border:0!important;
@@ -1343,13 +1343,13 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     line-height:1!important;
   }
 
-  body .luria-timer-switch button[aria-pressed="true"]{
+  body .traube-timer-switch button[aria-pressed="true"]{
     background:var(--surface)!important;
     color:var(--accent)!important;
     box-shadow:0 1px 4px rgba(15,23,42,.08)!important;
   }
 
-  body .luria-pomodoro-time{
+  body .traube-pomodoro-time{
     margin:2px 0 6px!important;
     color:var(--text)!important;
     font-size:36px!important;
@@ -1360,7 +1360,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     white-space:nowrap!important;
   }
 
-  body .luria-stopwatch-note{
+  body .traube-stopwatch-note{
     display:block!important;
     margin:0 0 14px!important;
     color:var(--muted)!important;
@@ -1370,13 +1370,13 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     text-align:left!important;
   }
 
-  body .luria-pomodoro-fields{
+  body .traube-pomodoro-fields{
     display:grid!important;
     gap:8px!important;
     margin:0 0 14px!important;
   }
 
-  body .luria-pomodoro-fields label{
+  body .traube-pomodoro-fields label{
     display:flex!important;
     align-items:center!important;
     justify-content:space-between!important;
@@ -1388,7 +1388,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     font-weight:600!important;
   }
 
-  body .luria-pomodoro-fields label > span:last-child{
+  body .traube-pomodoro-fields label > span:last-child{
     display:flex!important;
     align-items:center!important;
     gap:6px!important;
@@ -1396,7 +1396,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     font-weight:500!important;
   }
 
-  body .luria-pomodoro-fields input{
+  body .traube-pomodoro-fields input{
     width:68px!important;
     height:36px!important;
     min-height:36px!important;
@@ -1412,16 +1412,16 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     box-sizing:border-box!important;
   }
 
-  body .luria-pomodoro-actions,
-  body .luria-stopwatch-actions{
+  body .traube-pomodoro-actions,
+  body .traube-stopwatch-actions{
     display:grid!important;
     grid-template-columns:repeat(3,minmax(0,1fr))!important;
     gap:8px!important;
     margin:0!important;
   }
 
-  body .luria-pomodoro-actions button,
-  body .luria-stopwatch-actions button{
+  body .traube-pomodoro-actions button,
+  body .traube-stopwatch-actions button{
     min-width:0!important;
     min-height:38px!important;
     padding:0 10px!important;
@@ -1436,24 +1436,24 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     box-sizing:border-box!important;
   }
 
-  body #luria-stopwatch-start,
-  body #luria-pomodoro-start{
+  body #traube-stopwatch-start,
+  body #traube-pomodoro-start{
     border-color:var(--accent)!important;
     background:var(--accent)!important;
     color:#fff!important;
   }
 
-  body #luria-stopwatch-pause:disabled,
-  body .luria-pomodoro-actions button:disabled{
+  body #traube-stopwatch-pause:disabled,
+  body .traube-pomodoro-actions button:disabled{
     opacity:.48!important;
     cursor:default!important;
   }
 
-  body .luria-pomodoro-modes{
+  body .traube-pomodoro-modes{
     margin:0 0 12px!important;
   }
 
-  body .luria-pomodoro-status{
+  body .traube-pomodoro-status{
     margin-top:9px!important;
     min-height:0!important;
     color:var(--muted)!important;
@@ -1465,7 +1465,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 
 /* TRAUBE TOPBAR — SEARCH ICON + ALEX v12 — 2026-10-04 */
 @media (min-width:981px){
-  body .topbar #luria-global-search.luria-search-icon-only{
+  body .topbar #traube-global-search.traube-search-icon-only{
     display:grid!important;
     place-items:center!important;
     width:43px!important;
@@ -1488,12 +1488,12 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     -webkit-backdrop-filter:blur(8px)!important;
   }
 
-  body .topbar #luria-global-search.luria-search-icon-only:hover{
+  body .topbar #traube-global-search.traube-search-icon-only:hover{
     background:rgba(255,255,255,.17)!important;
     border-color:rgba(255,255,255,.40)!important;
   }
 
-  body .topbar #luria-global-search.luria-search-icon-only .luria-command-search-icon{
+  body .topbar #traube-global-search.traube-search-icon-only .traube-command-search-icon{
     display:block!important;
     width:19px!important;
     height:19px!important;
@@ -1506,11 +1506,11 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     stroke-linejoin:round!important;
   }
 
-  body .topbar #luria-global-search.luria-search-icon-only > span{
+  body .topbar #traube-global-search.traube-search-icon-only > span{
     display:none!important;
   }
 
-  body .topbar .luria-alex-topbar{
+  body .topbar .traube-alex-topbar{
     display:flex!important;
     align-items:center!important;
     justify-content:center!important;
@@ -1535,7 +1535,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     -webkit-backdrop-filter:blur(8px)!important;
   }
 
-  body .topbar .luria-alex-topbar:hover{
+  body .topbar .traube-alex-topbar:hover{
     background:rgba(255,255,255,.17)!important;
     border-color:rgba(255,255,255,.40)!important;
     color:#fff!important;
@@ -1547,15 +1547,15 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 /* TRAUBE GLOBAL HEADER — DASHBOARD SETTINGS EVERYWHERE v68 — 2026-10-04 */
 @media (min-width:981px){
   /* Mesma escala de logo aprovada no Dashboard. */
-  body #sidebar.sidebar .brand .luria-theme-logo,
-  body #sidebar.sidebar #luria-brand-logo{
+  body #sidebar.sidebar .brand .traube-theme-logo,
+  body #sidebar.sidebar #traube-brand-logo{
     width:48.4px!important;
     height:48.4px!important;
     flex:0 0 48.4px!important;
   }
 
   /* Mesmo conjunto compacto de controles em todas as páginas. */
-  body .topbar .luria-notifications{
+  body .topbar .traube-notifications{
     display:flex!important;
     align-items:center!important;
     justify-content:flex-end!important;
@@ -1563,9 +1563,9 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     margin-left:auto!important;
   }
 
-  body .topbar .luria-pomodoro-toggle,
-  body .topbar .luria-notification-toggle,
-  body .topbar .luria-profile-toggle{
+  body .topbar .traube-pomodoro-toggle,
+  body .topbar .traube-notification-toggle,
+  body .topbar .traube-profile-toggle{
     height:43px!important;
     min-height:43px!important;
     box-sizing:border-box!important;
@@ -1578,8 +1578,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     -webkit-backdrop-filter:blur(8px)!important;
   }
 
-  body .topbar .luria-notification-toggle,
-  body .topbar .luria-profile-toggle{
+  body .topbar .traube-notification-toggle,
+  body .topbar .traube-profile-toggle{
     width:43px!important;
     min-width:43px!important;
     max-width:43px!important;
@@ -1589,16 +1589,16 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     line-height:1!important;
   }
 
-  body .topbar .luria-pomodoro-toggle:hover,
-  body .topbar .luria-notification-toggle:hover,
-  body .topbar .luria-profile-toggle:hover,
-  body .topbar .luria-alex-topbar:hover{
+  body .topbar .traube-pomodoro-toggle:hover,
+  body .topbar .traube-notification-toggle:hover,
+  body .topbar .traube-profile-toggle:hover,
+  body .topbar .traube-alex-topbar:hover{
     background:rgba(255,255,255,.17)!important;
     border-color:rgba(255,255,255,.40)!important;
   }
 
   /* Alex fica no bloco da direita em todas as páginas. */
-  body .topbar .luria-alex-topbar{
+  body .topbar .traube-alex-topbar{
     display:flex!important;
     align-items:center!important;
     justify-content:center!important;
@@ -1625,10 +1625,10 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   }
 
   /* A busca visual foi removida: Ctrl/Cmd + K continua disponível. */
-  body .topbar #luria-global-search,
+  body .topbar #traube-global-search,
   body .topbar [data-global-search-trigger],
   body .topbar .global-search-trigger,
-  body .topbar .luria-global-search-trigger{
+  body .topbar .traube-global-search-trigger{
     display:none!important;
   }
 }
@@ -1636,9 +1636,9 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 
 /* TRAUBE GLOBAL MASTER SHELL v69 — 2026-10-04 */
 :root,
-:root[data-theme="light"]{--luria-master-shell:#184888}
-:root[data-theme="dark"]{--luria-master-shell:#142A44}
-:root[data-theme="leila-mood"]{--luria-master-shell:#CB3F83}
+:root[data-theme="light"]{--traube-master-shell:#184888}
+:root[data-theme="dark"]{--traube-master-shell:#142A44}
+:root[data-theme="leila-mood"]{--traube-master-shell:#CB3F83}
 
 @media (min-width:981px){
   html,
@@ -1646,7 +1646,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     width:100%!important;
     min-height:100%!important;
     margin:0!important;
-    background:var(--luria-master-shell)!important;
+    background:var(--traube-master-shell)!important;
     overflow:hidden!important;
   }
 
@@ -1666,7 +1666,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     border:0!important;
     border-radius:24px!important;
     outline:0!important;
-    background:var(--luria-master-shell)!important;
+    background:var(--traube-master-shell)!important;
     background-image:none!important;
     box-shadow:none!important;
     box-sizing:border-box!important;
@@ -1682,7 +1682,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     border:0!important;
     border-radius:24px 24px 0 0!important;
     outline:0!important;
-    background:var(--luria-master-shell)!important;
+    background:var(--traube-master-shell)!important;
     background-image:none!important;
     box-shadow:none!important;
     pointer-events:none!important;
@@ -1696,7 +1696,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 
   /* Sidebar fixa no shell: apenas o conteúdo principal rola. */
   body #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body #sidebar.sidebar.luria-global-shell-sidebar{
+  body #sidebar.sidebar.traube-global-shell-sidebar{
     position:relative!important;
     inset:auto!important;
     display:block!important;
@@ -1773,8 +1773,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     min-width:0!important;
   }
 
-  body #sidebar.sidebar .brand .luria-theme-logo,
-  body #sidebar.sidebar #luria-brand-logo{
+  body #sidebar.sidebar .brand .traube-theme-logo,
+  body #sidebar.sidebar #traube-brand-logo{
     display:block!important;
     width:48.4px!important;
     height:48.4px!important;
@@ -1840,7 +1840,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   /* Topbar portalizada na faixa azul, igual à do Dashboard. */
   body .app-shell > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   body .app-shell > .topbar.dashboard-shell-topbar,
-  body .app-shell > .topbar.luria-global-shell-topbar{
+  body .app-shell > .topbar.traube-global-shell-topbar{
     position:absolute!important;
     top:8px!important;
     left:270px!important;
@@ -1872,7 +1872,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     display:none!important;
   }
 
-  body .app-shell > .topbar .luria-notifications{
+  body .app-shell > .topbar .traube-notifications{
     position:static!important;
     inset:auto!important;
     display:flex!important;
@@ -1889,23 +1889,23 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     z-index:auto!important;
   }
 
-  body .app-shell > .topbar .luria-alex-topbar{
+  body .app-shell > .topbar .traube-alex-topbar{
     order:1!important;
   }
-  body .app-shell > .topbar .luria-pomodoro-top{
+  body .app-shell > .topbar .traube-pomodoro-top{
     order:2!important;
   }
-  body .app-shell > .topbar #luria-notification-toggle{
+  body .app-shell > .topbar #traube-notification-toggle{
     order:3!important;
   }
-  body .app-shell > .topbar .luria-profile-top{
+  body .app-shell > .topbar .traube-profile-top{
     order:4!important;
   }
 
-  body .app-shell > .topbar .luria-alex-topbar,
-  body .app-shell > .topbar .luria-pomodoro-toggle,
-  body .app-shell > .topbar .luria-notification-toggle,
-  body .app-shell > .topbar .luria-profile-toggle{
+  body .app-shell > .topbar .traube-alex-topbar,
+  body .app-shell > .topbar .traube-pomodoro-toggle,
+  body .app-shell > .topbar .traube-notification-toggle,
+  body .app-shell > .topbar .traube-profile-toggle{
     height:43px!important;
     min-height:43px!important;
     margin:0!important;
@@ -1919,7 +1919,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     -webkit-backdrop-filter:blur(8px)!important;
   }
 
-  body .app-shell > .topbar .luria-alex-topbar{
+  body .app-shell > .topbar .traube-alex-topbar{
     display:flex!important;
     align-items:center!important;
     justify-content:center!important;
@@ -1931,7 +1931,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     line-height:1!important;
   }
 
-  body .app-shell > .topbar .luria-pomodoro-toggle{
+  body .app-shell > .topbar .traube-pomodoro-toggle{
     display:flex!important;
     align-items:center!important;
     justify-content:center!important;
@@ -1939,8 +1939,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     padding:0 10px!important;
   }
 
-  body .app-shell > .topbar .luria-notification-toggle,
-  body .app-shell > .topbar .luria-profile-toggle{
+  body .app-shell > .topbar .traube-notification-toggle,
+  body .app-shell > .topbar .traube-profile-toggle{
     display:grid!important;
     place-items:center!important;
     width:43px!important;
@@ -1950,7 +1950,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     line-height:1!important;
   }
 
-  body .app-shell > .topbar .luria-notification-toggle svg{
+  body .app-shell > .topbar .traube-notification-toggle svg{
     display:block!important;
     width:20px!important;
     height:20px!important;
@@ -1958,7 +1958,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     transform:none!important;
   }
 
-  body .app-shell > .topbar .luria-profile-toggle{
+  body .app-shell > .topbar .traube-profile-toggle{
     font-size:16px!important;
     text-align:center!important;
   }
@@ -1967,26 +1967,26 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     color:#fff!important;
   }
 
-  body .app-shell > .topbar .luria-alex-topbar:hover,
-  body .app-shell > .topbar .luria-pomodoro-toggle:hover,
-  body .app-shell > .topbar .luria-notification-toggle:hover,
-  body .app-shell > .topbar .luria-profile-toggle:hover{
+  body .app-shell > .topbar .traube-alex-topbar:hover,
+  body .app-shell > .topbar .traube-pomodoro-toggle:hover,
+  body .app-shell > .topbar .traube-notification-toggle:hover,
+  body .app-shell > .topbar .traube-profile-toggle:hover{
     background:rgba(255,255,255,.17)!important;
     border-color:rgba(255,255,255,.40)!important;
   }
 
   /* Busca visual removida em todas as páginas; atalho permanece. */
-  body .app-shell > .topbar #luria-global-search,
+  body .app-shell > .topbar #traube-global-search,
   body .app-shell > .topbar [data-global-search-trigger],
   body .app-shell > .topbar .global-search-trigger,
-  body .app-shell > .topbar .luria-global-search-trigger{
+  body .app-shell > .topbar .traube-global-search-trigger{
     display:none!important;
   }
 }
 
 /* Mobile/PWA continua usando seu layout próprio. */
 @media (max-width:980px){
-  body .app-shell > .topbar.luria-global-shell-topbar{
+  body .app-shell > .topbar.traube-global-shell-topbar{
     position:sticky!important;
     top:0!important;
   }
@@ -2134,8 +2134,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     overflow:visible!important;
   }
 
-  body #sidebar.sidebar .brand .luria-theme-logo,
-  body #sidebar.sidebar #luria-brand-logo{
+  body #sidebar.sidebar .brand .traube-theme-logo,
+  body #sidebar.sidebar #traube-brand-logo{
     display:block!important;
     width:48.4px!important;
     height:48.4px!important;
@@ -2174,54 +2174,54 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 /* TRAUBE HEADER — WHITE LOGO + ALL-WHITE TIMER v73 — 2026-10-04 */
 @media (min-width:981px){
   /* Logo sempre branca na faixa superior. */
-  body #sidebar.sidebar .brand .luria-theme-logo,
-  body #sidebar.sidebar #luria-brand-logo{
+  body #sidebar.sidebar .brand .traube-theme-logo,
+  body #sidebar.sidebar #traube-brand-logo{
     filter:brightness(0) invert(1)!important;
     opacity:1!important;
   }
 
   /* Timer inteiro branco: ícone, título e tempo/subtítulo. */
-  body .app-shell > .topbar .luria-pomodoro-toggle,
-  body .topbar .luria-pomodoro-toggle{
+  body .app-shell > .topbar .traube-pomodoro-toggle,
+  body .topbar .traube-pomodoro-toggle{
     color:#fff!important;
     border-color:rgba(255,255,255,.28)!important;
     background:rgba(255,255,255,.10)!important;
   }
 
-  body .app-shell > .topbar .luria-pomodoro-toggle *,
-  body .topbar .luria-pomodoro-toggle *{
+  body .app-shell > .topbar .traube-pomodoro-toggle *,
+  body .topbar .traube-pomodoro-toggle *{
     color:#fff!important;
   }
 
-  body .app-shell > .topbar .luria-pomodoro-copy,
-  body .app-shell > .topbar .luria-pomodoro-copy strong,
-  body .app-shell > .topbar .luria-pomodoro-copy small,
-  body .topbar .luria-pomodoro-copy,
-  body .topbar .luria-pomodoro-copy strong,
-  body .topbar .luria-pomodoro-copy small{
+  body .app-shell > .topbar .traube-pomodoro-copy,
+  body .app-shell > .topbar .traube-pomodoro-copy strong,
+  body .app-shell > .topbar .traube-pomodoro-copy small,
+  body .topbar .traube-pomodoro-copy,
+  body .topbar .traube-pomodoro-copy strong,
+  body .topbar .traube-pomodoro-copy small{
     color:#fff!important;
     opacity:1!important;
   }
 
-  body .app-shell > .topbar .luria-pomodoro-icon,
-  body .app-shell > .topbar .luria-pomodoro-icon svg,
-  body .topbar .luria-pomodoro-icon,
-  body .topbar .luria-pomodoro-icon svg{
+  body .app-shell > .topbar .traube-pomodoro-icon,
+  body .app-shell > .topbar .traube-pomodoro-icon svg,
+  body .topbar .traube-pomodoro-icon,
+  body .topbar .traube-pomodoro-icon svg{
     color:#fff!important;
     stroke:#fff!important;
     fill:none!important;
     opacity:1!important;
   }
 
-  body .app-shell > .topbar .luria-pomodoro-icon svg *,
-  body .topbar .luria-pomodoro-icon svg *{
+  body .app-shell > .topbar .traube-pomodoro-icon svg *,
+  body .topbar .traube-pomodoro-icon svg *{
     stroke:#fff!important;
   }
 
-  body .app-shell > .topbar .luria-pomodoro-toggle:hover,
-  body .app-shell > .topbar .luria-pomodoro-toggle[aria-expanded="true"],
-  body .topbar .luria-pomodoro-toggle:hover,
-  body .topbar .luria-pomodoro-toggle[aria-expanded="true"]{
+  body .app-shell > .topbar .traube-pomodoro-toggle:hover,
+  body .app-shell > .topbar .traube-pomodoro-toggle[aria-expanded="true"],
+  body .topbar .traube-pomodoro-toggle:hover,
+  body .topbar .traube-pomodoro-toggle[aria-expanded="true"]{
     color:#fff!important;
     background:rgba(255,255,255,.17)!important;
     border-color:rgba(255,255,255,.40)!important;
@@ -2231,13 +2231,13 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 
 /* TRAUBE GLOBAL SHELL HARD LOCK v75 — 2026-10-04 */
 @media (min-width:981px){
-  body.luria-global-shell-mounted{
+  body.traube-global-shell-mounted{
     overflow:hidden!important;
-    background:var(--luria-master-shell,#184888)!important;
+    background:var(--traube-master-shell,#184888)!important;
   }
 
-  body.luria-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     display:grid!important;
     grid-template-columns:270px minmax(0,1fr)!important;
@@ -2251,19 +2251,19 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     overflow:hidden!important;
     border:0!important;
     border-radius:24px!important;
-    background:var(--luria-master-shell,#184888)!important;
+    background:var(--traube-master-shell,#184888)!important;
     box-shadow:none!important;
     box-sizing:border-box!important;
   }
 
-  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
+  body.traube-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     content:""!important;
     display:block!important;
     position:absolute!important;
     inset:0 0 auto 0!important;
     height:70px!important;
     border-radius:24px 24px 0 0!important;
-    background:var(--luria-master-shell,#184888)!important;
+    background:var(--traube-master-shell,#184888)!important;
     background-image:none!important;
     transform:none!important;
     opacity:1!important;
@@ -2271,14 +2271,14 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     z-index:0!important;
   }
 
-  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
+  body.traube-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
   }
 
-  body.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:block!important;
     position:relative!important;
     inset:auto!important;
@@ -2304,7 +2304,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     z-index:2!important;
   }
 
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:block!important;
     position:relative!important;
     width:auto!important;
@@ -2324,7 +2324,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     z-index:2!important;
   }
 
-  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:block!important;
     width:calc(100% - 12px)!important;
     max-width:calc(100% - 12px)!important;
@@ -2340,30 +2340,30 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
   }
 
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar{
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar{
     width:7px!important;
     height:7px!important;
     background:transparent!important;
   }
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-track,
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-track-piece,
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-corner{
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-track,
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-track-piece,
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-corner{
     background:transparent!important;
     border:0!important;
     box-shadow:none!important;
   }
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-thumb{
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-thumb{
     background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
     border:0!important;
     border-radius:999px!important;
   }
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-button{
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-button{
     display:none!important;
     width:0!important;
     height:0!important;
   }
 
-  body.luria-global-shell-mounted #sidebar.sidebar .sidebar-top{
+  body.traube-global-shell-mounted #sidebar.sidebar .sidebar-top{
     display:flex!important;
     position:absolute!important;
     top:-58px!important;
@@ -2378,8 +2378,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     z-index:2147483000!important;
   }
 
-  body.luria-global-shell-mounted #sidebar.sidebar .brand .luria-theme-logo,
-  body.luria-global-shell-mounted #sidebar.sidebar #luria-brand-logo{
+  body.traube-global-shell-mounted #sidebar.sidebar .brand .traube-theme-logo,
+  body.traube-global-shell-mounted #sidebar.sidebar #traube-brand-logo{
     display:block!important;
     width:48.4px!important;
     height:48.4px!important;
@@ -2391,8 +2391,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     visibility:visible!important;
   }
 
-  body.luria-global-shell-mounted .app-shell > .topbar.luria-global-shell-topbar,
-  body.luria-global-shell-mounted .app-shell > .topbar.dashboard-shell-topbar{
+  body.traube-global-shell-mounted .app-shell > .topbar.traube-global-shell-topbar,
+  body.traube-global-shell-mounted .app-shell > .topbar.dashboard-shell-topbar{
     display:flex!important;
     position:absolute!important;
     top:8px!important;
@@ -2418,11 +2418,11 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     z-index:2147483200!important;
   }
 
-  body.luria-global-shell-mounted .app-shell > .topbar .page-heading{
+  body.traube-global-shell-mounted .app-shell > .topbar .page-heading{
     display:none!important;
   }
 
-  body.luria-global-shell-mounted .app-shell > .topbar .luria-notifications{
+  body.traube-global-shell-mounted .app-shell > .topbar .traube-notifications{
     display:flex!important;
     position:static!important;
     inset:auto!important;
@@ -2437,11 +2437,11 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     opacity:1!important;
   }
 
-  body.luria-global-shell-mounted .app-shell > .topbar .luria-pomodoro-toggle,
-  body.luria-global-shell-mounted .app-shell > .topbar .luria-pomodoro-toggle *,
-  body.luria-global-shell-mounted .app-shell > .topbar .luria-pomodoro-icon,
-  body.luria-global-shell-mounted .app-shell > .topbar .luria-pomodoro-icon svg,
-  body.luria-global-shell-mounted .app-shell > .topbar .luria-pomodoro-icon svg *{
+  body.traube-global-shell-mounted .app-shell > .topbar .traube-pomodoro-toggle,
+  body.traube-global-shell-mounted .app-shell > .topbar .traube-pomodoro-toggle *,
+  body.traube-global-shell-mounted .app-shell > .topbar .traube-pomodoro-icon,
+  body.traube-global-shell-mounted .app-shell > .topbar .traube-pomodoro-icon svg,
+  body.traube-global-shell-mounted .app-shell > .topbar .traube-pomodoro-icon svg *{
     color:#fff!important;
     stroke:#fff!important;
   }
@@ -2451,67 +2451,67 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 /* TRAUBE TIMER — WHITE OUTSIDE, READABLE PANEL v76 — 2026-10-04 */
 @media (min-width:981px){
   /* Botão fechado do Timer: absolutamente tudo branco sobre a faixa azul. */
-  body .topbar .luria-pomodoro-toggle,
-  body .app-shell > .topbar .luria-pomodoro-toggle{
+  body .topbar .traube-pomodoro-toggle,
+  body .app-shell > .topbar .traube-pomodoro-toggle{
     color:#fff!important;
   }
 
-  body .topbar .luria-pomodoro-toggle .luria-pomodoro-copy,
-  body .topbar .luria-pomodoro-toggle .luria-pomodoro-copy strong,
-  body .topbar .luria-pomodoro-toggle .luria-pomodoro-copy small,
-  body .app-shell > .topbar .luria-pomodoro-toggle .luria-pomodoro-copy,
-  body .app-shell > .topbar .luria-pomodoro-toggle .luria-pomodoro-copy strong,
-  body .app-shell > .topbar .luria-pomodoro-toggle .luria-pomodoro-copy small{
+  body .topbar .traube-pomodoro-toggle .traube-pomodoro-copy,
+  body .topbar .traube-pomodoro-toggle .traube-pomodoro-copy strong,
+  body .topbar .traube-pomodoro-toggle .traube-pomodoro-copy small,
+  body .app-shell > .topbar .traube-pomodoro-toggle .traube-pomodoro-copy,
+  body .app-shell > .topbar .traube-pomodoro-toggle .traube-pomodoro-copy strong,
+  body .app-shell > .topbar .traube-pomodoro-toggle .traube-pomodoro-copy small{
     color:#fff!important;
     opacity:1!important;
   }
 
-  body .topbar .luria-pomodoro-toggle .luria-pomodoro-icon,
-  body .topbar .luria-pomodoro-toggle .luria-pomodoro-icon svg,
-  body .topbar .luria-pomodoro-toggle .luria-pomodoro-icon svg *,
-  body .app-shell > .topbar .luria-pomodoro-toggle .luria-pomodoro-icon,
-  body .app-shell > .topbar .luria-pomodoro-toggle .luria-pomodoro-icon svg,
-  body .app-shell > .topbar .luria-pomodoro-toggle .luria-pomodoro-icon svg *{
+  body .topbar .traube-pomodoro-toggle .traube-pomodoro-icon,
+  body .topbar .traube-pomodoro-toggle .traube-pomodoro-icon svg,
+  body .topbar .traube-pomodoro-toggle .traube-pomodoro-icon svg *,
+  body .app-shell > .topbar .traube-pomodoro-toggle .traube-pomodoro-icon,
+  body .app-shell > .topbar .traube-pomodoro-toggle .traube-pomodoro-icon svg,
+  body .app-shell > .topbar .traube-pomodoro-toggle .traube-pomodoro-icon svg *{
     color:#fff!important;
     stroke:#fff!important;
     opacity:1!important;
   }
 
   /* Painel aberto: volta a obedecer as cores do tema e nunca herda branco do topo. */
-  body .luria-pomodoro-panel,
-  body .luria-pomodoro-panel *{
+  body .traube-pomodoro-panel,
+  body .traube-pomodoro-panel *{
     color:var(--color-text-primary,var(--text))!important;
   }
 
-  body .luria-pomodoro-panel header strong,
-  body .luria-pomodoro-panel .luria-pomodoro-time{
+  body .traube-pomodoro-panel header strong,
+  body .traube-pomodoro-panel .traube-pomodoro-time{
     color:var(--color-text-primary,var(--text))!important;
   }
 
-  body .luria-pomodoro-panel header small,
-  body .luria-pomodoro-panel .luria-stopwatch-note,
-  body .luria-pomodoro-panel .luria-pomodoro-status,
-  body .luria-pomodoro-panel .luria-pomodoro-fields label,
-  body .luria-pomodoro-panel .luria-timer-switch button:not([aria-pressed="true"]),
-  body .luria-pomodoro-panel .luria-pomodoro-modes button:not([aria-pressed="true"]){
+  body .traube-pomodoro-panel header small,
+  body .traube-pomodoro-panel .traube-stopwatch-note,
+  body .traube-pomodoro-panel .traube-pomodoro-status,
+  body .traube-pomodoro-panel .traube-pomodoro-fields label,
+  body .traube-pomodoro-panel .traube-timer-switch button:not([aria-pressed="true"]),
+  body .traube-pomodoro-panel .traube-pomodoro-modes button:not([aria-pressed="true"]){
     color:var(--color-text-secondary,var(--muted))!important;
   }
 
-  body .luria-pomodoro-panel .luria-timer-switch button[aria-pressed="true"]{
+  body .traube-pomodoro-panel .traube-timer-switch button[aria-pressed="true"]{
     color:var(--accent)!important;
   }
 
-  body .luria-pomodoro-panel .luria-pomodoro-modes button[aria-pressed="true"],
-  body .luria-pomodoro-panel .luria-pomodoro-save{
+  body .traube-pomodoro-panel .traube-pomodoro-modes button[aria-pressed="true"],
+  body .traube-pomodoro-panel .traube-pomodoro-save{
     color:#fff!important;
   }
 
-  body .luria-pomodoro-panel input{
+  body .traube-pomodoro-panel input{
     color:var(--text)!important;
     background:var(--surface)!important;
   }
 
-  body .luria-pomodoro-panel button:not(.luria-pomodoro-save):not([aria-pressed="true"]){
+  body .traube-pomodoro-panel button:not(.traube-pomodoro-save):not([aria-pressed="true"]){
     color:var(--text)!important;
   }
 }
@@ -2520,9 +2520,9 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 /* TRAUBE DARK SHELL — STATIC EDGES + INNER LOGO PATTERN v77 — 2026-10-04 */
 @media (min-width:981px){
   /* A moldura externa deve ser totalmente estática. */
-  body.luria-global-shell-mounted,
-  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
+  body.traube-global-shell-mounted,
+  body.traube-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     transform:none!important;
     translate:none!important;
     animation:none!important;
@@ -2530,8 +2530,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     background-position:0 0!important;
   }
 
-  body.luria-global-shell-mounted::before,
-  body.luria-global-shell-mounted::after{
+  body.traube-global-shell-mounted::before,
+  body.traube-global-shell-mounted::after{
     content:none!important;
     display:none!important;
     animation:none!important;
@@ -2539,9 +2539,9 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     transform:none!important;
   }
 
-  :root[data-theme="dark"] body.luria-global-shell-mounted,
-  :root[data-theme="dark"] body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  :root[data-theme="dark"] body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
+  :root[data-theme="dark"] body.traube-global-shell-mounted,
+  :root[data-theme="dark"] body.traube-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  :root[data-theme="dark"] body.traube-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background:#142A44!important;
     background-color:#142A44!important;
     background-image:none!important;
@@ -2550,7 +2550,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   }
 
   /* O pattern passa a existir SOMENTE dentro do painel principal. */
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     isolation:isolate!important;
     overflow:hidden!important;
@@ -2558,7 +2558,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     background-image:none!important;
   }
 
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     content:""!important;
     display:block!important;
     position:absolute!important;
@@ -2575,30 +2575,30 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     transition:none!important;
   }
 
-  :root[data-theme="dark"] body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
+  :root[data-theme="dark"] body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background-image:url("/assets/img/logos/logo-icone-azul-claro.png?v=inner-pattern-v77")!important;
     background-size:132px 132px!important;
     background-position:0 0!important;
     opacity:.038!important;
   }
 
-  :root[data-theme="leila-mood"] body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
+  :root[data-theme="leila-mood"] body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background-image:url("/assets/img/logos/logo-icone-rosa-escuro.png?v=inner-pattern-v77")!important;
     background-size:132px 132px!important;
     background-position:0 0!important;
     opacity:.024!important;
   }
 
-  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     z-index:1!important;
     background:transparent!important;
   }
 
   /* Nada pode animar a borda/cantos externos no tema escuro. */
-  :root[data-theme="dark"] body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  :root[data-theme="dark"] body.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  :root[data-theme="dark"] body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  :root[data-theme="dark"] body.traube-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  :root[data-theme="dark"] body.traube-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  :root[data-theme="dark"] body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     outline:0!important;
     box-shadow:none!important;
     transition:none!important;
@@ -2610,7 +2610,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 /* TRAUBE GLOBAL CONTENT PATTERN — EXACT DASHBOARD v78 — 2026-10-04 */
 @media (min-width:981px){
   /* Fora do Dashboard, replica EXATAMENTE o pattern aprovado da página inicial. */
-  body.luria-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     isolation:isolate!important;
     background-color:var(--surface)!important;
@@ -2626,7 +2626,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     background-position:0 0,0 0,69px 69px!important;
   }
 
-  :root[data-theme="dark"] body.luria-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  :root[data-theme="dark"] body.traube-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background-image:
       linear-gradient(
         color-mix(in srgb,var(--surface) 92%,transparent),
@@ -2636,7 +2636,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
       url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v37")!important;
   }
 
-  :root[data-theme="leila-mood"] body.luria-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  :root[data-theme="leila-mood"] body.traube-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background-image:
       linear-gradient(
         color-mix(in srgb,var(--surface) 92.5%,transparent),
@@ -2647,8 +2647,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   }
 
   /* Remove o pattern alternativo que tinha sido colocado via pseudo-elemento. */
-  body.luria-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
-  body.luria-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
+  body.traube-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body.traube-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
     background:none!important;
@@ -2657,7 +2657,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   }
 
   /* O conteúdo fica acima do fundo, como no Dashboard. */
-  body.luria-global-shell-mounted:not([data-page="dashboard"]) .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted:not([data-page="dashboard"]) .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     z-index:1!important;
     background:transparent!important;
@@ -2668,24 +2668,24 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 
 /* TRAUBE v80 — conteúdo sempre acima da camada de pattern/logos */
 @media (min-width:981px){
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     isolation:isolate!important;
   }
 
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     z-index:0!important;
     pointer-events:none!important;
   }
 
-  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     z-index:10!important;
     isolation:isolate!important;
   }
 
-  body.luria-global-shell-mounted .main > .page > *{
+  body.traube-global-shell-mounted .main > .page > *{
     position:relative;
     z-index:1;
   }
@@ -2695,35 +2695,35 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 /* TRAUBE v81 — corrige a fita inferior global do shell.
    O painel principal agora ocupa a base inteira; a borda azul não corta o último callout. */
 @media (min-width:981px){
-  body.luria-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-bottom:0!important;
   }
 
-  body.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:100%!important;
     min-height:0!important;
   }
 
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-radius:0 18px 21px 0!important;
   }
 
-  body.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-radius:18px 0 0 21px!important;
   }
 
-  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     z-index:20!important;
     padding-bottom:18px!important;
     scroll-padding-bottom:18px!important;
   }
 
-  body.luria-global-shell-mounted .main > .page > *{
+  body.traube-global-shell-mounted .main > .page > *{
     position:relative;
     z-index:2;
   }
@@ -2734,23 +2734,23 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
    A faixa azul inferior deixa de recortar o conteúdo: o painel branco cobre a base
    e a rolagem acontece dentro da página, acima do fundo decorativo. */
 @media (min-width:981px){
-  body.luria-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     /* azul só no topo; não existe mais pintura azul na base do shell */
     background:transparent!important;
     padding-bottom:0!important;
     overflow:visible!important;
   }
 
-  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
+  body.traube-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     /* mantém apenas a faixa azul superior */
     z-index:0!important;
   }
 
-  body.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     /* os painéis internos passam a ocupar até a borda inferior real */
     align-self:stretch!important;
     height:auto!important;
@@ -2759,16 +2759,16 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     z-index:2!important;
   }
 
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     overflow:hidden!important;
     border-radius:0 18px 24px 0!important;
   }
 
-  body.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-radius:18px 0 0 24px!important;
   }
 
-  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:100%!important;
     max-height:100%!important;
     min-height:0!important;
@@ -2781,7 +2781,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   }
 
   /* Nenhum container de página pode ser recortado pela borda inferior do shell. */
-  body.luria-global-shell-mounted .main > .page > :last-child{
+  body.traube-global-shell-mounted .main > .page > :last-child{
     margin-bottom:0!important;
   }
 }
@@ -2792,7 +2792,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
    janela menor, deixando uma faixa fixa acima e abaixo. O scrollport agora
    ocupa 100% da altura; o respiro passa para dentro da própria página. */
 @media (min-width:981px){
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-top:0!important;
     padding-bottom:0!important;
     border-top:0!important;
@@ -2801,7 +2801,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     box-shadow:none!important;
   }
 
-  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:100%!important;
     max-height:100%!important;
     min-height:0!important;
@@ -2823,8 +2823,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     box-sizing:border-box!important;
   }
 
-  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
-  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
+  body.traube-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body.traube-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
   }
@@ -2836,14 +2836,14 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
    Assim não existe faixa fixa superior/inferior atravessando os callouts. */
 @media (min-width:981px){
   /* Restaura o shell normal: a alteração anterior na base não era a causa. */
-  body.luria-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
-    background:var(--luria-master-shell,#184888)!important;
+  body.traube-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+    background:var(--traube-master-shell,#184888)!important;
     overflow:hidden!important;
   }
 
   /* Mesmo princípio do Dashboard 1: a camada que contém os cards não os recorta. */
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     isolation:isolate!important;
     height:100%!important;
@@ -2861,7 +2861,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   }
 
   /* A página vira apenas conteúdo em fluxo normal, sem viewport próprio. */
-  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:block!important;
     width:calc(100% - 12px)!important;
     max-width:calc(100% - 12px)!important;
@@ -2887,41 +2887,41 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   }
 
   /* Igual ao Dashboard 1: decoração atrás, conteúdo sempre à frente. */
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     z-index:0!important;
     pointer-events:none!important;
   }
 
-  body.luria-global-shell-mounted .main > .page > *{
+  body.traube-global-shell-mounted .main > .page > *{
     position:relative;
     z-index:1;
   }
 
-  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
-  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
+  body.traube-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body.traube-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
   }
 
-  body.luria-global-shell-mounted .main::-webkit-scrollbar{
+  body.traube-global-shell-mounted .main::-webkit-scrollbar{
     width:7px!important;
     height:7px!important;
     background:transparent!important;
   }
-  body.luria-global-shell-mounted .main::-webkit-scrollbar-track,
-  body.luria-global-shell-mounted .main::-webkit-scrollbar-track-piece,
-  body.luria-global-shell-mounted .main::-webkit-scrollbar-corner{
+  body.traube-global-shell-mounted .main::-webkit-scrollbar-track,
+  body.traube-global-shell-mounted .main::-webkit-scrollbar-track-piece,
+  body.traube-global-shell-mounted .main::-webkit-scrollbar-corner{
     background:transparent!important;
     border:0!important;
     box-shadow:none!important;
   }
-  body.luria-global-shell-mounted .main::-webkit-scrollbar-thumb{
+  body.traube-global-shell-mounted .main::-webkit-scrollbar-thumb{
     background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
     border:0!important;
     border-radius:999px!important;
   }
-  body.luria-global-shell-mounted .main::-webkit-scrollbar-button{
+  body.traube-global-shell-mounted .main::-webkit-scrollbar-button{
     display:none!important;
     width:0!important;
     height:0!important;
@@ -2934,13 +2934,13 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
    o conteúdo da .page rola por dentro. O pattern pertence ao painel,
    não a uma segunda janela de conteúdo. */
 @media (min-width:981px){
-  body.luria-global-shell-mounted{
+  body.traube-global-shell-mounted{
     overflow:hidden!important;
-    background:var(--luria-master-shell,#184888)!important;
+    background:var(--traube-master-shell,#184888)!important;
   }
 
-  body.luria-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     display:grid!important;
     grid-template-columns:270px minmax(0,1fr)!important;
@@ -2954,30 +2954,30 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     overflow:hidden!important;
     border:0!important;
     border-radius:24px!important;
-    background:var(--luria-master-shell,#184888)!important;
+    background:var(--traube-master-shell,#184888)!important;
     box-shadow:none!important;
     box-sizing:border-box!important;
   }
 
   /* filete azul igual dos dois lados e também na base */
-  body.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:100%!important;
     min-height:0!important;
     align-self:stretch!important;
     margin:0!important;
   }
 
-  body.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.traube-global-shell-mounted.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-radius:18px 0 0 18px!important;
   }
 
   /* o container branco NÃO rola */
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     isolation:isolate!important;
     padding:0!important;
@@ -2991,7 +2991,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   }
 
   /* somente o conteúdo interno rola; sem criar uma segunda "janela" */
-  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     z-index:20!important;
     display:block!important;
@@ -3018,37 +3018,37 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
   }
 
-  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
-  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
+  body.traube-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body.traube-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
   }
 
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar{
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar{
     width:7px!important;
     height:7px!important;
     background:transparent!important;
   }
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-track,
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-track-piece,
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-corner{
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-track,
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-track-piece,
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-corner{
     background:transparent!important;
     border:0!important;
     box-shadow:none!important;
   }
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-thumb{
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-thumb{
     background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
     border:0!important;
     border-radius:999px!important;
   }
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-button{
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-button{
     display:none!important;
     width:0!important;
     height:0!important;
   }
 
   /* v84 colocou o scroll no .main; desativa isso definitivamente. */
-  body.luria-global-shell-mounted .main::-webkit-scrollbar{
+  body.traube-global-shell-mounted .main::-webkit-scrollbar{
     width:0!important;
     height:0!important;
     display:none!important;
@@ -3115,7 +3115,7 @@ body *::-webkit-scrollbar-button:end{
    Mantém a barra dentro do callout/painel branco, sem tocar a moldura azul.
    O trilho fica totalmente transparente para não deformar a borda direita. */
 @media (min-width:981px){
-  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:calc(100% - 8px)!important;
     max-width:calc(100% - 8px)!important;
     margin:0 8px 0 0!important;
@@ -3126,15 +3126,15 @@ body *::-webkit-scrollbar-button:end{
     scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
   }
 
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar{
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar{
     width:7px!important;
     height:7px!important;
     background:transparent!important;
   }
 
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-track,
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-track-piece,
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-corner{
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-track,
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-track-piece,
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-corner{
     background:transparent!important;
     background-color:transparent!important;
     border:0!important;
@@ -3142,7 +3142,7 @@ body *::-webkit-scrollbar-button:end{
     box-shadow:none!important;
   }
 
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-thumb{
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-thumb{
     background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
     border:0!important;
     border-radius:999px!important;
@@ -3155,14 +3155,14 @@ body *::-webkit-scrollbar-button:end{
    A barra fica alguns pixels para dentro da borda arredondada, nunca sobre o filete azul.
    Trilho/canto continuam totalmente transparentes. */
 @media (min-width:981px){
-  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-right:6px!important;
     background-color:var(--surface)!important;
     overflow:hidden!important;
     box-sizing:border-box!important;
   }
 
-  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:100%!important;
     max-width:100%!important;
     height:100%!important;
@@ -3175,19 +3175,19 @@ body *::-webkit-scrollbar-button:end{
     scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
   }
 
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar{
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar{
     width:7px!important;
     background:transparent!important;
   }
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-track,
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-track-piece,
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-corner{
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-track,
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-track-piece,
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-corner{
     background:transparent!important;
     background-color:transparent!important;
     border:0!important;
     box-shadow:none!important;
   }
-  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-thumb{
+  body.traube-global-shell-mounted .main > .page::-webkit-scrollbar-thumb{
     background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
     border:0!important;
     border-radius:999px!important;
@@ -3196,9 +3196,9 @@ body *::-webkit-scrollbar-button:end{
 
 
 /* TRAUBE v87 — logo única e compacta em todas as páginas */
-body #sidebar.sidebar .brand .luria-theme-logo,
-body #sidebar.sidebar .brand #luria-brand-logo,
-body #sidebar.sidebar #luria-brand-logo{
+body #sidebar.sidebar .brand .traube-theme-logo,
+body #sidebar.sidebar .brand #traube-brand-logo,
+body #sidebar.sidebar #traube-brand-logo{
   width:46px!important;
   height:46px!important;
   min-width:46px!important;
@@ -3245,7 +3245,7 @@ body #sidebar.sidebar #luria-brand-logo{
     overflow:visible!important;
   }
 
-  body #sidebar.sidebar .luria-mode-footer-switch{
+  body #sidebar.sidebar .traube-mode-footer-switch{
     position:absolute!important;
     left:0!important;
     right:0!important;
@@ -3319,7 +3319,7 @@ body #sidebar.sidebar #luria-brand-logo{
     overflow:visible!important;
   }
 
-  html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch{
+  html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch{
     position:absolute!important;
     left:0!important;
     right:0!important;
@@ -3406,7 +3406,7 @@ body *::-webkit-scrollbar-button:end{
 @media (min-width:981px){
   /* Dashboard: a sidebar deve medir o painel branco real, não 100dvh.
      Isso impede Ofensiva + botão Estudos de descerem quando o chrome global monta. */
-  body.luria-global-shell-mounted[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     top:auto!important;
     bottom:auto!important;
@@ -3420,8 +3420,8 @@ body *::-webkit-scrollbar-button:end{
     overflow:hidden!important;
   }
 
-  body.luria-global-shell-mounted[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar .sidebar-footer,
-  body.luria-global-shell-mounted[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar .sidebar-footer-study{
+  body.traube-global-shell-mounted[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar .sidebar-footer,
+  body.traube-global-shell-mounted[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar .sidebar-footer-study{
     position:absolute!important;
     left:18px!important;
     right:18px!important;
@@ -3438,43 +3438,43 @@ body *::-webkit-scrollbar-button:end{
 
   /* Cronograma: remove a exceção antiga que deixava a moldura externa transparente/branca.
      Usa exatamente a mesma cor do shell global. */
-  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed){
-    background:var(--luria-shell-theme,#184888)!important;
-    background-color:var(--luria-shell-theme,#184888)!important;
+  body.traube-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed){
+    background:var(--traube-shell-theme,#184888)!important;
+    background-color:var(--traube-shell-theme,#184888)!important;
     background-image:none!important;
   }
 
-  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
-    background:var(--luria-shell-theme,#184888)!important;
-    background-color:var(--luria-shell-theme,#184888)!important;
+  body.traube-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+    background:var(--traube-shell-theme,#184888)!important;
+    background-color:var(--traube-shell-theme,#184888)!important;
     background-image:none!important;
     border:0!important;
     outline:0!important;
     box-shadow:none!important;
   }
 
-  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
+  body.traube-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     content:""!important;
     display:block!important;
-    background:var(--luria-shell-theme,#184888)!important;
-    background-color:var(--luria-shell-theme,#184888)!important;
+    background:var(--traube-shell-theme,#184888)!important;
+    background-color:var(--traube-shell-theme,#184888)!important;
     background-image:none!important;
   }
 
-  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
+  body.traube-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
   }
 
-  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background:var(--sidebar)!important;
   }
 
-  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background-color:var(--surface)!important;
   }
 
-  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
+  body.traube-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background:transparent!important;
   }
 }
@@ -3485,23 +3485,23 @@ body *::-webkit-scrollbar-button:end{
    Estatísticas é a única régua visual dos cabeçalhos de página.
    ========================================================= */
 :root{
-  --luria-title-card-h:138px;
-  --luria-title-card-py:24px;
-  --luria-title-card-px:28px;
-  --luria-title-card-radius:15px;
-  --luria-title-card-bottom:14px;
-  --luria-title-size:32px;
-  --luria-title-line:1.08;
-  --luria-title-weight:900;
-  --luria-title-tracking:-.8px;
-  --luria-title-kicker-size:9px;
-  --luria-title-sub-size:11px;
-  --luria-title-copy-gap:7px;
+  --traube-title-card-h:138px;
+  --traube-title-card-py:24px;
+  --traube-title-card-px:28px;
+  --traube-title-card-radius:15px;
+  --traube-title-card-bottom:14px;
+  --traube-title-size:32px;
+  --traube-title-line:1.08;
+  --traube-title-weight:900;
+  --traube-title-tracking:-.8px;
+  --traube-title-kicker-size:9px;
+  --traube-title-sub-size:11px;
+  --traube-title-copy-gap:7px;
 }
 
 /* Todos os cards de título conhecidos usam exatamente a mesma caixa. */
 html body:not(.schedule-settings-embed) :is(
-  .luria-page-spotlight,
+  .traube-page-spotlight,
   .schedule-top-spotlight,
   .error-cat-spotlight,
   .flash-top-spotlight,
@@ -3512,14 +3512,14 @@ html body:not(.schedule-settings-embed) :is(
   width:100%!important;
   max-width:none!important;
   min-width:0!important;
-  height:var(--luria-title-card-h)!important;
-  min-height:var(--luria-title-card-h)!important;
-  max-height:var(--luria-title-card-h)!important;
-  flex:0 0 var(--luria-title-card-h)!important;
-  margin:0 0 var(--luria-title-card-bottom) 0!important;
-  padding:var(--luria-title-card-py) var(--luria-title-card-px)!important;
+  height:var(--traube-title-card-h)!important;
+  min-height:var(--traube-title-card-h)!important;
+  max-height:var(--traube-title-card-h)!important;
+  flex:0 0 var(--traube-title-card-h)!important;
+  margin:0 0 var(--traube-title-card-bottom) 0!important;
+  padding:var(--traube-title-card-py) var(--traube-title-card-px)!important;
   box-sizing:border-box!important;
-  border-radius:var(--luria-title-card-radius)!important;
+  border-radius:var(--traube-title-card-radius)!important;
   display:flex!important;
   align-items:center!important;
   justify-content:space-between!important;
@@ -3530,7 +3530,7 @@ html body:not(.schedule-settings-embed) :is(
 
 /* Mesma régua interna do copy de Estatísticas. */
 html body:not(.schedule-settings-embed) :is(
-  .luria-page-spotlight-copy,
+  .traube-page-spotlight-copy,
   .schedule-top-spotlight-copy,
   .error-cat-spotlight-copy,
   .flash-top-spotlight-copy,
@@ -3551,7 +3551,7 @@ html body:not(.schedule-settings-embed) :is(
 
 /* Título: mesma fonte, peso, tamanho, tracking e line-height. */
 html body:not(.schedule-settings-embed) :is(
-  .luria-page-spotlight-copy,
+  .traube-page-spotlight-copy,
   .schedule-top-spotlight-copy,
   .error-cat-spotlight-copy,
   .flash-top-spotlight-copy,
@@ -3563,16 +3563,16 @@ html body:not(.schedule-settings-embed) :is(
   margin:0!important;
   padding:0!important;
   font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important;
-  font-size:var(--luria-title-size)!important;
-  line-height:var(--luria-title-line)!important;
-  font-weight:var(--luria-title-weight)!important;
-  letter-spacing:var(--luria-title-tracking)!important;
+  font-size:var(--traube-title-size)!important;
+  line-height:var(--traube-title-line)!important;
+  font-weight:var(--traube-title-weight)!important;
+  letter-spacing:var(--traube-title-tracking)!important;
   text-transform:none!important;
 }
 
 /* Label/eyebrow: distância e tipografia únicas. */
 html body:not(.schedule-settings-embed) :is(
-  .luria-page-spotlight-copy,
+  .traube-page-spotlight-copy,
   .schedule-top-spotlight-copy,
   .error-cat-spotlight-copy,
   .flash-top-spotlight-copy,
@@ -3583,7 +3583,7 @@ html body:not(.schedule-settings-embed) :is(
   margin:0 0 6px!important;
   padding:0!important;
   font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important;
-  font-size:var(--luria-title-kicker-size)!important;
+  font-size:var(--traube-title-kicker-size)!important;
   line-height:1.1!important;
   font-weight:500!important;
   letter-spacing:.09em!important;
@@ -3591,7 +3591,7 @@ html body:not(.schedule-settings-embed) :is(
 
 /* Subtítulo/helper: mesma distância do título em qualquer página. */
 html body:not(.schedule-settings-embed) :is(
-  .luria-page-spotlight-copy,
+  .traube-page-spotlight-copy,
   .schedule-top-spotlight-copy,
   .error-cat-spotlight-copy,
   .flash-top-spotlight-copy,
@@ -3599,10 +3599,10 @@ html body:not(.schedule-settings-embed) :is(
   .stats-hero-copy
 ) > :is(small,p,[class*="helper"],[class*="subtitle"]){
   display:block!important;
-  margin:var(--luria-title-copy-gap) 0 0!important;
+  margin:var(--traube-title-copy-gap) 0 0!important;
   padding:0!important;
   font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important;
-  font-size:var(--luria-title-sub-size)!important;
+  font-size:var(--traube-title-sub-size)!important;
   line-height:1.4!important;
   font-weight:400!important;
   letter-spacing:0!important;
@@ -3610,9 +3610,9 @@ html body:not(.schedule-settings-embed) :is(
 
 /* Amigos: título/subtítulo seguem a mesma régua tipográfica mesmo no hero próprio. */
 html body .friends-ref-hero-copy > h2{
-  margin:var(--luria-title-copy-gap) 0 0!important;
+  margin:var(--traube-title-copy-gap) 0 0!important;
   font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important;
-  font-size:var(--luria-title-sub-size)!important;
+  font-size:var(--traube-title-sub-size)!important;
   line-height:1.4!important;
   font-weight:400!important;
   letter-spacing:0!important;
@@ -3621,11 +3621,11 @@ html body .friends-ref-hero-copy > h2{
 /* Mobile mantém exatamente a mesma proporção usada em Estatísticas. */
 @media(max-width:700px){
   :root{
-    --luria-title-card-h:118px;
-    --luria-title-card-py:20px;
-    --luria-title-card-px:20px;
-    --luria-title-size:25px;
-    --luria-title-sub-size:10px;
+    --traube-title-card-h:118px;
+    --traube-title-card-py:20px;
+    --traube-title-card-px:20px;
+    --traube-title-size:25px;
+    --traube-title-sub-size:10px;
   }
 }
 

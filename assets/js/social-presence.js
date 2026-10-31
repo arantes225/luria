@@ -15,8 +15,8 @@
   channel.subscribe(result=>{if(result==='SUBSCRIBED'&&g===generation)publish().catch(()=>{});});
  }
  window.TraubeStudyPresence={refresh:start,stop};
- window.addEventListener('luria:study-timer',()=>publish().catch(()=>{}));
- window.addEventListener('luria:owner-changed',()=>stop().catch(()=>{}));
+ window.addEventListener('traube:study-timer',()=>publish().catch(()=>{}));
+ window.addEventListener('traube:owner-changed',()=>stop().catch(()=>{}));
  window.addEventListener('pagehide',()=>stop().catch(()=>{}));
  if(window.docmapUser)start().catch(()=>{});else window.addEventListener('docmap:ready',()=>start().catch(()=>{}),{once:true});
 })();

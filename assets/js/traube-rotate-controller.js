@@ -1,4 +1,4 @@
-/* assets/js/luria-rotate-controller.js
+/* assets/js/traube-rotate-controller.js
    Controlador universal reutilizável da animação de girar o aparelho (TRAUBE).
    Utilizado pelo simulador de emergência e pelo leitor/scanner inteligente de ECG.
 */
@@ -23,23 +23,23 @@
     function buildDOM() {
       if (guide) return guide;
       guide = document.createElement("div");
-      guide.className = "luria-rotate-dialog";
+      guide.className = "traube-rotate-dialog";
       guide.setAttribute("role", "dialog");
       guide.setAttribute("aria-modal", "true");
       guide.setAttribute("aria-label", headingText);
       guide.hidden = true;
 
       guide.innerHTML =
-        '<div class="luria-rotate-panel">' +
-          '<div class="luria-rotate-brand">' + escapeHtml(brandText) + '</div>' +
-          '<div class="luria-rotate-graphic" aria-hidden="true"><span class="luria-rotate-phone"></span></div>' +
+        '<div class="traube-rotate-panel">' +
+          '<div class="traube-rotate-brand">' + escapeHtml(brandText) + '</div>' +
+          '<div class="traube-rotate-graphic" aria-hidden="true"><span class="traube-rotate-phone"></span></div>' +
           '<h2>' + escapeHtml(headingText) + '</h2>' +
           '<p>' + escapeHtml(messageText) + '</p>' +
-          (tipText ? '<p class="luria-rotate-tip">' + escapeHtml(tipText) + '</p>' : '') +
-          (buttonText ? '<button type="button" class="luria-rotate-action">' + escapeHtml(buttonText) + '</button>' : '') +
+          (tipText ? '<p class="traube-rotate-tip">' + escapeHtml(tipText) + '</p>' : '') +
+          (buttonText ? '<button type="button" class="traube-rotate-action">' + escapeHtml(buttonText) + '</button>' : '') +
         '</div>';
 
-      const btn = guide.querySelector(".luria-rotate-action");
+      const btn = guide.querySelector(".traube-rotate-action");
       if (btn) {
         btn.addEventListener("click", () => {
           userDismissed = true;

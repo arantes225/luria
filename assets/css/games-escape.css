@@ -1,8 +1,8 @@
-.luria-game[data-game="escape"] {
+.traube-game[data-game="escape"] {
   --g-accent: var(--color-accent);
   --g-soft: var(--color-primary-subtle);
 }
-.luria-game .e-page-title-card {
+.traube-game .e-page-title-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,8 +14,8 @@
   background: linear-gradient(125deg, var(--color-surface), var(--color-primary-subtle));
   box-shadow: var(--ui-shadow);
 }
-.luria-game .e-page-title-brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
-.luria-game .e-page-title-icon {
+.traube-game .e-page-title-brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.traube-game .e-page-title-icon {
   display: grid;
   width: 48px;
   height: 48px;
@@ -29,7 +29,7 @@
   font-weight: 800;
   box-shadow: 0 8px 18px #18488812;
 }
-.luria-game .e-page-title-copy > span {
+.traube-game .e-page-title-copy > span {
   display: block;
   margin-bottom: 5px;
   color: var(--color-primary-text);
@@ -38,10 +38,10 @@
   letter-spacing: .12em;
   text-transform: uppercase;
 }
-.luria-game .e-page-title-card h1 { margin: 0; font-size: clamp(23px, 3vw, 34px); letter-spacing: -.04em; }
-.luria-game .e-page-title-card p { margin: 5px 0 0; color: var(--color-text-secondary); font-size: 13px; }
-.luria-game .e-page-title-actions { display: flex; align-items: center; justify-content: flex-end; gap: 12px; flex-wrap: wrap; }
-.luria-game .e-back-button {
+.traube-game .e-page-title-card h1 { margin: 0; font-size: clamp(23px, 3vw, 34px); letter-spacing: -.04em; }
+.traube-game .e-page-title-card p { margin: 5px 0 0; color: var(--color-text-secondary); font-size: 13px; }
+.traube-game .e-page-title-actions { display: flex; align-items: center; justify-content: flex-end; gap: 12px; flex-wrap: wrap; }
+.traube-game .e-back-button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -57,52 +57,52 @@
   text-decoration: none;
   white-space: nowrap;
 }
-.luria-game .e-back-button:hover { border-color: var(--color-primary); background: var(--color-primary-subtle); }
-.luria-game .e-back-button b { font-size: 18px; line-height: 1; }
-.luria-game .e-hero {
+.traube-game .e-back-button:hover { border-color: var(--color-primary); background: var(--color-primary-subtle); }
+.traube-game .e-back-button b { font-size: 18px; line-height: 1; }
+.traube-game .e-hero {
   background: linear-gradient(
     125deg,
     var(--color-surface),
     var(--color-primary-subtle)
   );
 }
-.luria-game .e-illustration {
+.traube-game .e-illustration {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-width: 0;
 }
-.luria-game .e-illustration svg {
+.traube-game .e-illustration svg {
   width: 100%;
   max-width: 430px;
   filter: drop-shadow(0 16px 20px #18488812);
 }
-.luria-game .e-hospital-label {
+.traube-game .e-hospital-label {
   font-size: 8px;
   letter-spacing: 0.15em;
   color: var(--color-primary-text);
 }
-.luria-game .e-intro {
+.traube-game .e-intro {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
   margin-top: 16px;
 }
-.luria-game .e-intro p {
+.traube-game .e-intro p {
   margin-top: 8px;
   max-width: 650px;
 }
-.luria-game .e-intro .g-button {
+.traube-game .e-intro .g-button {
   flex: none;
 }
-.luria-game .e-chapters {
+.traube-game .e-chapters {
   display: flex;
   gap: 10px;
   margin-bottom: 18px;
 }
-.luria-game .e-chapters > span {
+.traube-game .e-chapters > span {
   display: flex;
   align-items: center;
   gap: 9px;
@@ -113,21 +113,21 @@
   font-size: 11px;
   color: var(--color-text-secondary);
 }
-.luria-game .e-chapters b {
+.traube-game .e-chapters b {
   font-size: 12px;
 }
-.luria-game .e-chapter-active {
+.traube-game .e-chapter-active {
   background: var(--color-primary-subtle);
   color: var(--color-primary-text) !important;
   border-color: var(--color-primary) !important;
 }
-.luria-game .e-layout {
+.traube-game .e-layout {
   display: grid;
   grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.35fr);
   gap: 18px;
   align-items: start;
 }
-.luria-game .e-map {
+.traube-game .e-map {
   background: linear-gradient(
     150deg,
     var(--color-surface),
@@ -136,7 +136,7 @@
   position: sticky;
   top: 20px;
 }
-.luria-game .e-map-title {
+.traube-game .e-map-title {
   display: flex;
   gap: 7px;
   align-items: center;
@@ -145,27 +145,27 @@
   margin-bottom: 24px;
   flex-wrap: wrap;
 }
-.luria-game .e-map-title small {
+.traube-game .e-map-title small {
   width: 100%;
   font-weight: 400;
   font-size: 10px;
   margin-left: 16px;
   color: var(--color-text-secondary);
 }
-.luria-game .e-beacon {
+.traube-game .e-beacon {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: var(--color-success);
 }
-.luria-game .e-floor {
+.traube-game .e-floor {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
   transform: perspective(900px) rotateX(8deg) rotateZ(-3deg);
   padding: 8px 2px 18px;
 }
-.luria-game .e-room {
+.traube-game .e-room {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -184,29 +184,29 @@
   line-height: 1.25;
   box-shadow: 2px 4px 8px #1848880a;
 }
-.luria-game .e-room small {
+.traube-game .e-room small {
   font-size: 8px;
   font-weight: 400;
 }
-.luria-game .e-room-icon {
+.traube-game .e-room-icon {
   font-size: 18px;
   line-height: 1.1;
 }
-.luria-game .e-room-current {
+.traube-game .e-room-current {
   border-color: var(--color-primary);
   color: var(--color-primary-text);
   background: var(--color-primary-subtle);
   transform: translateY(-5px);
 }
-.luria-game .e-room-done {
+.traube-game .e-room-done {
   border-color: var(--color-success);
   color: var(--color-success);
 }
-.luria-game .e-map > .g-button {
+.traube-game .e-map > .g-button {
   width: 100%;
   font-size: 11px;
 }
-.luria-game .e-journey {
+.traube-game .e-journey {
   position: relative;
   height: 218px;
   overflow: hidden;
@@ -215,7 +215,7 @@
   border-radius: 12px;
   background: var(--color-primary-subtle);
 }
-.luria-game .e-journey-stage {
+.traube-game .e-journey-stage {
   position: sticky;
   top: 16px;
   align-self: start;
@@ -223,13 +223,13 @@
   margin: 0;
   box-shadow: var(--ui-shadow);
 }
-.luria-game .e-journey-stage .e-journey-wall { inset: 0 0 78px; }
-.luria-game .e-journey-stage .e-journey-floor { height: 78px; }
-.luria-game .e-journey-stage .e-journey-route { bottom: 78px; }
-.luria-game .e-journey-stage .e-journey-doctor { bottom: 60px; }
-.luria-game .e-journey-stage .e-journey-contact { bottom: 68px; }
-.luria-game .e-journey-stage .e-journey-status { right: 16px; bottom: 15px; left: 16px; font-size: 12px; }
-.luria-game .e-journey-wall {
+.traube-game .e-journey-stage .e-journey-wall { inset: 0 0 78px; }
+.traube-game .e-journey-stage .e-journey-floor { height: 78px; }
+.traube-game .e-journey-stage .e-journey-route { bottom: 78px; }
+.traube-game .e-journey-stage .e-journey-doctor { bottom: 60px; }
+.traube-game .e-journey-stage .e-journey-contact { bottom: 68px; }
+.traube-game .e-journey-stage .e-journey-status { right: 16px; bottom: 15px; left: 16px; font-size: 12px; }
+.traube-game .e-journey-wall {
   position: absolute;
   inset: 0 0 53px;
   display: flex;
@@ -237,8 +237,8 @@
   align-items: center;
   background: linear-gradient(var(--color-primary-subtle), var(--color-surface-elevated));
 }
-.luria-game .e-journey-wall::before,
-.luria-game .e-journey-wall::after {
+.traube-game .e-journey-wall::before,
+.traube-game .e-journey-wall::after {
   position: absolute;
   bottom: 0;
   display: grid;
@@ -250,64 +250,64 @@
   text-align: center;
   content: "";
 }
-.luria-game .e-journey[data-scene="arrival"] .e-journey-wall { background: linear-gradient(135deg, #dce9f8, #f8f3e8); }
-.luria-game .e-journey[data-scene="arrival"] .e-journey-wall::before { left: 5%; width: 29%; height: 52px; border-radius: 8px 8px 0 0; background: #38648a; box-shadow: 18px -22px 0 -9px #d8af6c; content: "RECEPÇÃO"; }
-.luria-game .e-journey[data-scene="identity"] .e-journey-wall { background: linear-gradient(135deg, #d8f0ef, #e7eefb); }
-.luria-game .e-journey[data-scene="identity"] .e-journey-wall::before { left: 10%; width: 38px; height: 55px; border: 5px solid #405d7d; border-radius: 6px; background: #73c8c2; box-shadow: 11px 12px 0 -5px #405d7d, 58px 20px 0 -8px #f5f9fb; content: ""; }
-.luria-game .e-journey[data-scene="identity"] .e-journey-wall::after { right: 8%; width: 84px; height: 37px; border-radius: 7px 7px 0 0; background: #758fa8; content: "LEITO"; }
-.luria-game .e-journey[data-scene="hands"] .e-journey-wall { background: linear-gradient(135deg, #d9f4fa, #e9f8f0); }
-.luria-game .e-journey[data-scene="hands"] .e-journey-wall::before { left: 8%; width: 64px; height: 30px; border: 7px solid #6c99af; border-top: 0; border-radius: 0 0 22px 22px; background: #b9ebf1; box-shadow: 100px 0 0 -7px #b9ebf1, 100px 0 0 0 #6c99af; content: ""; }
-.luria-game .e-journey[data-scene="hands"] .e-journey-wall::after { right: 7%; width: 36px; height: 66px; border-radius: 8px 8px 3px 3px; background: #54a9bd; box-shadow: -7px -10px 0 -5px #fff; content: "SABÃO"; }
-.luria-game .e-journey[data-scene="dengue"] .e-journey-wall { background: linear-gradient(135deg, #f7e5dd, #e8edf8); }
-.luria-game .e-journey[data-scene="dengue"] .e-journey-wall::before { left: 7%; width: 112px; height: 32px; border: 5px solid #5d7899; border-radius: 9px 9px 2px 2px; background: #f8fbff; box-shadow: 74px -20px 0 -14px #d58c73; content: "OBSERVAÇÃO"; }
-.luria-game .e-journey[data-scene="dengue"] .e-journey-wall::after { right: 10%; width: 31px; height: 47px; border: 4px solid #4b6280; border-radius: 5px; background: #80c4b7; content: ""; }
-.luria-game .e-journey[data-scene="glucose"] .e-journey-wall { background: linear-gradient(135deg, #e7ddf5, #edf4fb); }
-.luria-game .e-journey[data-scene="glucose"] .e-journey-wall::before { left: 8%; width: 42px; height: 62px; border-radius: 5px 5px 0 0; background: #8266a7; box-shadow: 54px 12px 0 -3px #f8fafc, 54px 12px 0 1px #9aaabd; content: ""; }
-.luria-game .e-journey[data-scene="glucose"] .e-journey-wall::after { right: 7%; width: 93px; height: 38px; border-radius: 7px 7px 0 0; background: #6b7793; content: "CONSULTÓRIO"; }
-.luria-game .e-journey[data-scene="time-out"] .e-journey-wall { background: radial-gradient(circle at 50% 10%, #fff5c7, #c9e3e8 50%, #e8f2f4); }
-.luria-game .e-journey[data-scene="time-out"] .e-journey-wall::before { left: 14%; width: 100px; height: 34px; border: 6px solid #607a92; border-radius: 30px 30px 4px 4px; background: #d3ece9; box-shadow: 0 -38px 0 -12px #fff2b0; content: "MESA CIRÚRGICA"; }
-.luria-game .e-journey[data-scene="time-out"] .e-journey-wall::after { right: 8%; width: 38px; height: 65px; border-radius: 7px 7px 0 0; background: #5b8a93; content: ""; }
-.luria-game .e-journey[data-scene="recheck"] .e-journey-wall { background: linear-gradient(135deg, #d9ebf6, #f4eddf); }
-.luria-game .e-journey[data-scene="recheck"] .e-journey-wall::before { left: 7%; width: 45px; height: 62px; border: 5px solid #415d7c; border-radius: 6px; background: #6dc4bd; box-shadow: 76px 16px 0 -7px #e9d48a; content: ""; }
-.luria-game .e-journey[data-scene="recheck"] .e-journey-wall::after { right: 9%; width: 89px; height: 37px; border-radius: 7px 7px 0 0; background: #6d8c9d; content: "REAVALIAÇÃO"; }
-.luria-game .e-journey[data-scene="handoff"] .e-journey-wall { background: linear-gradient(135deg, #ebe0cc, #e7ecf6); }
-.luria-game .e-journey[data-scene="handoff"] .e-journey-wall::before { left: 8%; width: 120px; height: 42px; border-radius: 7px 7px 0 0; background: #8d715d; box-shadow: 23px -18px 0 -11px #d7ad77, 70px -18px 0 -11px #5b8ea5; content: "PASSAGEM DE TURNO"; }
-.luria-game .e-journey[data-scene="handoff"] .e-journey-wall::after { right: 9%; width: 27px; height: 57px; border-radius: 14px 14px 3px 3px; background: #fff; box-shadow: -37px 0 0 #59a0ad; content: ""; }
-.luria-game .e-journey[data-scene="ending"] .e-journey-wall { background: linear-gradient(135deg, #ffddaa, #c7e5ed 58%, #edf5f8); }
-.luria-game .e-journey[data-scene="ending"] .e-journey-wall::before { left: 9%; width: 78px; height: 105px; border: 7px solid #59768e; border-bottom: 0; background: #80b8c2; content: "SAÍDA"; }
-.luria-game .e-journey[data-scene="ending"] .e-journey-wall::after { right: 9%; bottom: 45px; width: 35px; height: 35px; border-radius: 50%; background: #ffd36b; box-shadow: 0 0 0 12px #ffd36b55; content: ""; }
-.luria-game .e-room-set { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
-.luria-game .e-prop { position: absolute; display: block; }
-.luria-game .e-clock { top: 21px; left: 46%; width: 24px; height: 24px; border: 3px solid #56758f; border-radius: 50%; background: #fff; box-shadow: 8px 8px 0 -7px #56758f; }
-.luria-game .e-reception-chair { right: 22%; bottom: 0; width: 38px; height: 31px; border-radius: 12px 12px 2px 2px; background: #d7ad77; box-shadow: 6px 29px 0 -4px #6f5a50; }
-.luria-game .e-reception-screen { top: 22px; right: 12%; width: 42px; height: 24px; border: 4px solid #546f87; border-radius: 4px; background: #eaf8fb; }
-.luria-game .e-iv-stand { right: 24%; bottom: 0; width: 4px; height: 80px; background: #7d99ad; box-shadow: -8px 78px 0 -6px #7d99ad, 8px 78px 0 -6px #7d99ad; }
-.luria-game .e-iv-stand::before { position: absolute; top: 7px; left: -7px; width: 18px; height: 20px; border-radius: 3px; background: #f7f9fb; box-shadow: inset 0 0 0 1px #85b4c1; content: ""; }
-.luria-game .e-pulse-screen { top: 35px; left: 29%; width: 30px; height: 20px; border: 3px solid #4b627d; border-radius: 3px; background: repeating-linear-gradient(135deg, #143e55 0 4px, #83d4c4 4px 7px, #143e55 7px 10px); }
-.luria-game .e-bed-rail { right: 19%; bottom: 8px; width: 89px; height: 13px; border: 4px solid #607c95; border-bottom: 0; border-radius: 7px 7px 0 0; }
-.luria-game .e-tap { top: 46px; left: 28%; width: 29px; height: 23px; border: 6px solid #5c8497; border-bottom: 0; border-radius: 15px 15px 0 0; }
-.luria-game .e-tap::after { position: absolute; right: -17px; bottom: -9px; width: 27px; height: 6px; border-radius: 9px; background: #5c8497; content: ""; }
-.luria-game .e-water-drop { top: 76px; left: 40%; width: 10px; height: 15px; border-radius: 70% 30% 70% 30%; background: #69c9d7; transform: rotate(45deg); animation: e-water-drop 1.3s ease-in-out infinite; }
-.luria-game .e-towel { right: 19%; bottom: 5px; width: 22px; height: 50px; border-radius: 3px; background: repeating-linear-gradient(90deg, #fff 0 4px, #d9edf1 4px 7px); }
-.luria-game .e-iv-bag { top: 29px; right: 27%; width: 21px; height: 29px; border: 2px solid #80a6b5; border-radius: 4px; background: #d6f1ed; box-shadow: 9px 31px 0 -7px #80a6b5; }
-.luria-game .e-vitals { top: 34px; right: 13%; width: 32px; height: 25px; border: 4px solid #435f7b; border-radius: 4px; background: linear-gradient(145deg, #2c6b68 0 45%, #8de1cd 47% 52%, #2c6b68 54%); }
-.luria-game .e-pillow { right: 37%; bottom: 24px; width: 45px; height: 24px; border-radius: 11px; background: #fff; box-shadow: 7px 18px 0 -8px #adc1cf; }
-.luria-game .e-glucometer { top: 43px; left: 27%; width: 22px; height: 39px; border-radius: 5px; background: #fff; box-shadow: inset 0 0 0 3px #6b7793, inset 0 10px #73c9bd; }
-.luria-game .e-chart { right: 24%; bottom: 14px; width: 31px; height: 41px; border: 2px solid #8fa3b4; border-radius: 3px; background: repeating-linear-gradient(#fff 0 7px, #8fc1ce 7px 9px); transform: rotate(8deg); }
-.luria-game .e-cabinet { top: 28px; right: 9%; width: 32px; height: 73px; border-radius: 4px; background: #9e84b6; box-shadow: inset 0 34px #bfa7ce, inset 15px 0 #8b71a2; }
-.luria-game .e-surgical-light { top: 6px; left: 44%; width: 52px; height: 52px; border: 7px solid #6f91a0; border-radius: 50%; background: radial-gradient(circle, #fff 0 34%, #ffe89c 36% 48%, #fff 50%); box-shadow: 0 0 20px #fff3b0; }
-.luria-game .e-instrument-table { right: 21%; bottom: 3px; width: 78px; height: 27px; border-radius: 5px 5px 0 0; background: #7895a1; box-shadow: 11px 27px 0 -8px #647d89, 58px 27px 0 -8px #647d89; }
-.luria-game .e-sterile-tray { right: 29%; bottom: 29px; width: 45px; height: 7px; border-radius: 9px; background: #e6f7f4; box-shadow: 11px -9px 0 -4px #d3b272, 25px -9px 0 -4px #d3b272; }
-.luria-game .e-stethoscope { left: 27%; bottom: 11px; width: 32px; height: 38px; border: 4px solid #487a8d; border-top: 0; border-radius: 0 0 50% 50%; transform: rotate(-18deg); }
-.luria-game .e-handoff-notes { right: 25%; bottom: 14px; width: 35px; height: 43px; border-radius: 3px; background: repeating-linear-gradient(#fff 0 8px, #8ab8c6 8px 10px); transform: rotate(6deg); }
-.luria-game .e-coffee { right: 17%; bottom: 13px; width: 21px; height: 25px; border-radius: 3px 3px 7px 7px; background: #fff; box-shadow: inset 0 7px #8e6248, 21px 5px 0 -8px #fff; }
-.luria-game .e-shift-board { top: 27px; left: 28%; width: 65px; height: 39px; border: 5px solid #8a715a; border-radius: 3px; background: repeating-linear-gradient(#f9f2dd 0 9px, #c7a783 9px 11px); }
-.luria-game .e-exit-sign { top: 19px; left: 34%; padding: 4px 8px; border-radius: 3px; background: #36845e; color: #fff; font-size: 8px; font-weight: 800; content: ""; }
-.luria-game .e-exit-sign::after { content: "SAÍDA"; }
-.luria-game .e-plant { right: 20%; bottom: 0; width: 9px; height: 40px; background: #91735d; box-shadow: -15px -24px 0 -4px #6eae80, 11px -33px 0 -4px #6eae80, 23px -15px 0 -4px #6eae80; }
-.luria-game .e-sunbeam { top: 28px; right: 35%; width: 65px; height: 88px; background: linear-gradient(120deg, transparent 20%, #fff6ba99 50%, transparent 75%); transform: skewX(-15deg); }
+.traube-game .e-journey[data-scene="arrival"] .e-journey-wall { background: linear-gradient(135deg, #dce9f8, #f8f3e8); }
+.traube-game .e-journey[data-scene="arrival"] .e-journey-wall::before { left: 5%; width: 29%; height: 52px; border-radius: 8px 8px 0 0; background: #38648a; box-shadow: 18px -22px 0 -9px #d8af6c; content: "RECEPÇÃO"; }
+.traube-game .e-journey[data-scene="identity"] .e-journey-wall { background: linear-gradient(135deg, #d8f0ef, #e7eefb); }
+.traube-game .e-journey[data-scene="identity"] .e-journey-wall::before { left: 10%; width: 38px; height: 55px; border: 5px solid #405d7d; border-radius: 6px; background: #73c8c2; box-shadow: 11px 12px 0 -5px #405d7d, 58px 20px 0 -8px #f5f9fb; content: ""; }
+.traube-game .e-journey[data-scene="identity"] .e-journey-wall::after { right: 8%; width: 84px; height: 37px; border-radius: 7px 7px 0 0; background: #758fa8; content: "LEITO"; }
+.traube-game .e-journey[data-scene="hands"] .e-journey-wall { background: linear-gradient(135deg, #d9f4fa, #e9f8f0); }
+.traube-game .e-journey[data-scene="hands"] .e-journey-wall::before { left: 8%; width: 64px; height: 30px; border: 7px solid #6c99af; border-top: 0; border-radius: 0 0 22px 22px; background: #b9ebf1; box-shadow: 100px 0 0 -7px #b9ebf1, 100px 0 0 0 #6c99af; content: ""; }
+.traube-game .e-journey[data-scene="hands"] .e-journey-wall::after { right: 7%; width: 36px; height: 66px; border-radius: 8px 8px 3px 3px; background: #54a9bd; box-shadow: -7px -10px 0 -5px #fff; content: "SABÃO"; }
+.traube-game .e-journey[data-scene="dengue"] .e-journey-wall { background: linear-gradient(135deg, #f7e5dd, #e8edf8); }
+.traube-game .e-journey[data-scene="dengue"] .e-journey-wall::before { left: 7%; width: 112px; height: 32px; border: 5px solid #5d7899; border-radius: 9px 9px 2px 2px; background: #f8fbff; box-shadow: 74px -20px 0 -14px #d58c73; content: "OBSERVAÇÃO"; }
+.traube-game .e-journey[data-scene="dengue"] .e-journey-wall::after { right: 10%; width: 31px; height: 47px; border: 4px solid #4b6280; border-radius: 5px; background: #80c4b7; content: ""; }
+.traube-game .e-journey[data-scene="glucose"] .e-journey-wall { background: linear-gradient(135deg, #e7ddf5, #edf4fb); }
+.traube-game .e-journey[data-scene="glucose"] .e-journey-wall::before { left: 8%; width: 42px; height: 62px; border-radius: 5px 5px 0 0; background: #8266a7; box-shadow: 54px 12px 0 -3px #f8fafc, 54px 12px 0 1px #9aaabd; content: ""; }
+.traube-game .e-journey[data-scene="glucose"] .e-journey-wall::after { right: 7%; width: 93px; height: 38px; border-radius: 7px 7px 0 0; background: #6b7793; content: "CONSULTÓRIO"; }
+.traube-game .e-journey[data-scene="time-out"] .e-journey-wall { background: radial-gradient(circle at 50% 10%, #fff5c7, #c9e3e8 50%, #e8f2f4); }
+.traube-game .e-journey[data-scene="time-out"] .e-journey-wall::before { left: 14%; width: 100px; height: 34px; border: 6px solid #607a92; border-radius: 30px 30px 4px 4px; background: #d3ece9; box-shadow: 0 -38px 0 -12px #fff2b0; content: "MESA CIRÚRGICA"; }
+.traube-game .e-journey[data-scene="time-out"] .e-journey-wall::after { right: 8%; width: 38px; height: 65px; border-radius: 7px 7px 0 0; background: #5b8a93; content: ""; }
+.traube-game .e-journey[data-scene="recheck"] .e-journey-wall { background: linear-gradient(135deg, #d9ebf6, #f4eddf); }
+.traube-game .e-journey[data-scene="recheck"] .e-journey-wall::before { left: 7%; width: 45px; height: 62px; border: 5px solid #415d7c; border-radius: 6px; background: #6dc4bd; box-shadow: 76px 16px 0 -7px #e9d48a; content: ""; }
+.traube-game .e-journey[data-scene="recheck"] .e-journey-wall::after { right: 9%; width: 89px; height: 37px; border-radius: 7px 7px 0 0; background: #6d8c9d; content: "REAVALIAÇÃO"; }
+.traube-game .e-journey[data-scene="handoff"] .e-journey-wall { background: linear-gradient(135deg, #ebe0cc, #e7ecf6); }
+.traube-game .e-journey[data-scene="handoff"] .e-journey-wall::before { left: 8%; width: 120px; height: 42px; border-radius: 7px 7px 0 0; background: #8d715d; box-shadow: 23px -18px 0 -11px #d7ad77, 70px -18px 0 -11px #5b8ea5; content: "PASSAGEM DE TURNO"; }
+.traube-game .e-journey[data-scene="handoff"] .e-journey-wall::after { right: 9%; width: 27px; height: 57px; border-radius: 14px 14px 3px 3px; background: #fff; box-shadow: -37px 0 0 #59a0ad; content: ""; }
+.traube-game .e-journey[data-scene="ending"] .e-journey-wall { background: linear-gradient(135deg, #ffddaa, #c7e5ed 58%, #edf5f8); }
+.traube-game .e-journey[data-scene="ending"] .e-journey-wall::before { left: 9%; width: 78px; height: 105px; border: 7px solid #59768e; border-bottom: 0; background: #80b8c2; content: "SAÍDA"; }
+.traube-game .e-journey[data-scene="ending"] .e-journey-wall::after { right: 9%; bottom: 45px; width: 35px; height: 35px; border-radius: 50%; background: #ffd36b; box-shadow: 0 0 0 12px #ffd36b55; content: ""; }
+.traube-game .e-room-set { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+.traube-game .e-prop { position: absolute; display: block; }
+.traube-game .e-clock { top: 21px; left: 46%; width: 24px; height: 24px; border: 3px solid #56758f; border-radius: 50%; background: #fff; box-shadow: 8px 8px 0 -7px #56758f; }
+.traube-game .e-reception-chair { right: 22%; bottom: 0; width: 38px; height: 31px; border-radius: 12px 12px 2px 2px; background: #d7ad77; box-shadow: 6px 29px 0 -4px #6f5a50; }
+.traube-game .e-reception-screen { top: 22px; right: 12%; width: 42px; height: 24px; border: 4px solid #546f87; border-radius: 4px; background: #eaf8fb; }
+.traube-game .e-iv-stand { right: 24%; bottom: 0; width: 4px; height: 80px; background: #7d99ad; box-shadow: -8px 78px 0 -6px #7d99ad, 8px 78px 0 -6px #7d99ad; }
+.traube-game .e-iv-stand::before { position: absolute; top: 7px; left: -7px; width: 18px; height: 20px; border-radius: 3px; background: #f7f9fb; box-shadow: inset 0 0 0 1px #85b4c1; content: ""; }
+.traube-game .e-pulse-screen { top: 35px; left: 29%; width: 30px; height: 20px; border: 3px solid #4b627d; border-radius: 3px; background: repeating-linear-gradient(135deg, #143e55 0 4px, #83d4c4 4px 7px, #143e55 7px 10px); }
+.traube-game .e-bed-rail { right: 19%; bottom: 8px; width: 89px; height: 13px; border: 4px solid #607c95; border-bottom: 0; border-radius: 7px 7px 0 0; }
+.traube-game .e-tap { top: 46px; left: 28%; width: 29px; height: 23px; border: 6px solid #5c8497; border-bottom: 0; border-radius: 15px 15px 0 0; }
+.traube-game .e-tap::after { position: absolute; right: -17px; bottom: -9px; width: 27px; height: 6px; border-radius: 9px; background: #5c8497; content: ""; }
+.traube-game .e-water-drop { top: 76px; left: 40%; width: 10px; height: 15px; border-radius: 70% 30% 70% 30%; background: #69c9d7; transform: rotate(45deg); animation: e-water-drop 1.3s ease-in-out infinite; }
+.traube-game .e-towel { right: 19%; bottom: 5px; width: 22px; height: 50px; border-radius: 3px; background: repeating-linear-gradient(90deg, #fff 0 4px, #d9edf1 4px 7px); }
+.traube-game .e-iv-bag { top: 29px; right: 27%; width: 21px; height: 29px; border: 2px solid #80a6b5; border-radius: 4px; background: #d6f1ed; box-shadow: 9px 31px 0 -7px #80a6b5; }
+.traube-game .e-vitals { top: 34px; right: 13%; width: 32px; height: 25px; border: 4px solid #435f7b; border-radius: 4px; background: linear-gradient(145deg, #2c6b68 0 45%, #8de1cd 47% 52%, #2c6b68 54%); }
+.traube-game .e-pillow { right: 37%; bottom: 24px; width: 45px; height: 24px; border-radius: 11px; background: #fff; box-shadow: 7px 18px 0 -8px #adc1cf; }
+.traube-game .e-glucometer { top: 43px; left: 27%; width: 22px; height: 39px; border-radius: 5px; background: #fff; box-shadow: inset 0 0 0 3px #6b7793, inset 0 10px #73c9bd; }
+.traube-game .e-chart { right: 24%; bottom: 14px; width: 31px; height: 41px; border: 2px solid #8fa3b4; border-radius: 3px; background: repeating-linear-gradient(#fff 0 7px, #8fc1ce 7px 9px); transform: rotate(8deg); }
+.traube-game .e-cabinet { top: 28px; right: 9%; width: 32px; height: 73px; border-radius: 4px; background: #9e84b6; box-shadow: inset 0 34px #bfa7ce, inset 15px 0 #8b71a2; }
+.traube-game .e-surgical-light { top: 6px; left: 44%; width: 52px; height: 52px; border: 7px solid #6f91a0; border-radius: 50%; background: radial-gradient(circle, #fff 0 34%, #ffe89c 36% 48%, #fff 50%); box-shadow: 0 0 20px #fff3b0; }
+.traube-game .e-instrument-table { right: 21%; bottom: 3px; width: 78px; height: 27px; border-radius: 5px 5px 0 0; background: #7895a1; box-shadow: 11px 27px 0 -8px #647d89, 58px 27px 0 -8px #647d89; }
+.traube-game .e-sterile-tray { right: 29%; bottom: 29px; width: 45px; height: 7px; border-radius: 9px; background: #e6f7f4; box-shadow: 11px -9px 0 -4px #d3b272, 25px -9px 0 -4px #d3b272; }
+.traube-game .e-stethoscope { left: 27%; bottom: 11px; width: 32px; height: 38px; border: 4px solid #487a8d; border-top: 0; border-radius: 0 0 50% 50%; transform: rotate(-18deg); }
+.traube-game .e-handoff-notes { right: 25%; bottom: 14px; width: 35px; height: 43px; border-radius: 3px; background: repeating-linear-gradient(#fff 0 8px, #8ab8c6 8px 10px); transform: rotate(6deg); }
+.traube-game .e-coffee { right: 17%; bottom: 13px; width: 21px; height: 25px; border-radius: 3px 3px 7px 7px; background: #fff; box-shadow: inset 0 7px #8e6248, 21px 5px 0 -8px #fff; }
+.traube-game .e-shift-board { top: 27px; left: 28%; width: 65px; height: 39px; border: 5px solid #8a715a; border-radius: 3px; background: repeating-linear-gradient(#f9f2dd 0 9px, #c7a783 9px 11px); }
+.traube-game .e-exit-sign { top: 19px; left: 34%; padding: 4px 8px; border-radius: 3px; background: #36845e; color: #fff; font-size: 8px; font-weight: 800; content: ""; }
+.traube-game .e-exit-sign::after { content: "SAÍDA"; }
+.traube-game .e-plant { right: 20%; bottom: 0; width: 9px; height: 40px; background: #91735d; box-shadow: -15px -24px 0 -4px #6eae80, 11px -33px 0 -4px #6eae80, 23px -15px 0 -4px #6eae80; }
+.traube-game .e-sunbeam { top: 28px; right: 35%; width: 65px; height: 88px; background: linear-gradient(120deg, transparent 20%, #fff6ba99 50%, transparent 75%); transform: skewX(-15deg); }
 @keyframes e-water-drop { 0%, 100% { transform: translateY(0) rotate(45deg); opacity: .35; } 50% { transform: translateY(18px) rotate(45deg); opacity: 1; } }
-.luria-game .e-journey-window {
+.traube-game .e-journey-window {
   width: 15%;
   height: 55px;
   border: 5px solid var(--color-surface);
@@ -315,7 +315,7 @@
   background: var(--color-surface-elevated);
   box-shadow: inset 0 0 0 2px var(--color-border);
 }
-.luria-game .e-journey-sign {
+.traube-game .e-journey-sign {
   position: absolute;
   z-index: 1;
   top: 14px;
@@ -333,9 +333,9 @@
   line-height: 1.2;
   text-align: center;
 }
-.luria-game .e-journey-from { left: 5%; }
-.luria-game .e-journey-to { right: 5%; }
-.luria-game .e-journey-route {
+.traube-game .e-journey-from { left: 5%; }
+.traube-game .e-journey-to { right: 5%; }
+.traube-game .e-journey-route {
   position: absolute;
   z-index: 1;
   right: 11%;
@@ -345,13 +345,13 @@
   overflow: hidden;
   pointer-events: none;
 }
-.luria-game .e-journey-route::before,
-.luria-game .e-journey-route::after {
+.traube-game .e-journey-route::before,
+.traube-game .e-journey-route::after {
   position: absolute;
   opacity: 0;
   content: "";
 }
-.luria-game .e-journey-running .e-journey-route::before {
+.traube-game .e-journey-running .e-journey-route::before {
   right: 0;
   bottom: 6px;
   left: 0;
@@ -360,7 +360,7 @@
   background: radial-gradient(ellipse at center, #ffffffcc 0 16%, transparent 18%) 0 0 / 54px 28px repeat-x;
   animation: e-footsteps .42s linear infinite;
 }
-.luria-game .e-journey-running .e-journey-route::after {
+.traube-game .e-journey-running .e-journey-route::after {
   bottom: 4px;
   left: 5%;
   width: 28px;
@@ -371,7 +371,7 @@
   box-shadow: 36px -14px 0 -6px #fff, 80px 5px 0 -9px #fff, 125px -18px 0 -11px #fff;
   animation: e-run-spark 1s linear infinite;
 }
-.luria-game .e-journey-floor {
+.traube-game .e-journey-floor {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -380,7 +380,7 @@
   border-top: 6px solid var(--color-border);
   background: var(--color-surface-elevated);
 }
-.luria-game .e-journey-doctor {
+.traube-game .e-journey-doctor {
   position: absolute;
   z-index: 2;
   bottom: 35px;
@@ -388,8 +388,8 @@
   width: 64px;
   height: 100px;
 }
-.luria-game .e-journey-doctor svg { display: block; width: 100%; height: 100%; }
-.luria-game .e-journey-contact {
+.traube-game .e-journey-doctor svg { display: block; width: 100%; height: 100%; }
+.traube-game .e-journey-contact {
   position: absolute;
   z-index: 2;
   right: 8%;
@@ -401,41 +401,41 @@
   align-items: center;
   color: var(--color-text-primary);
 }
-.luria-game .e-contact-head {
+.traube-game .e-contact-head {
   width: 22px;
   height: 22px;
   border-radius: 50%;
   background: #d6a17f;
 }
-.luria-game .e-contact-body {
+.traube-game .e-contact-body {
   width: 29px;
   height: 39px;
   margin-top: 2px;
   border-radius: 7px 7px 3px 3px;
   background: var(--color-primary);
 }
-.luria-game .e-contact-coat { background: var(--color-surface); border: 1px solid var(--color-border); }
-.luria-game .e-journey-contact small { font-size: 9px; line-height: 1.4; }
-.luria-game .e-journey-running .e-journey-doctor {
+.traube-game .e-contact-coat { background: var(--color-surface); border: 1px solid var(--color-border); }
+.traube-game .e-journey-contact small { font-size: 9px; line-height: 1.4; }
+.traube-game .e-journey-running .e-journey-doctor {
   animation: e-doctor-cross 2.2s ease-in-out both;
 }
-.luria-game .e-journey-running .e-doctor-leg-front {
+.traube-game .e-journey-running .e-doctor-leg-front {
   transform-origin: 28px 68px;
   animation: e-doctor-stride .28s ease-in-out infinite alternate;
 }
-.luria-game .e-journey-running .e-doctor-leg-back {
+.traube-game .e-journey-running .e-doctor-leg-back {
   transform-origin: 35px 68px;
   animation: e-doctor-stride .28s ease-in-out infinite alternate-reverse;
 }
-.luria-game .e-journey-running .e-doctor-arm-front {
+.traube-game .e-journey-running .e-doctor-arm-front {
   transform-origin: 22px 40px;
   animation: e-doctor-stride .28s ease-in-out infinite alternate-reverse;
 }
-.luria-game .e-journey-running .e-doctor-arm-back {
+.traube-game .e-journey-running .e-doctor-arm-back {
   transform-origin: 42px 40px;
   animation: e-doctor-stride .28s ease-in-out infinite alternate;
 }
-.luria-game .e-journey-status {
+.traube-game .e-journey-status {
   position: absolute;
   z-index: 3;
   right: 8px;
@@ -458,14 +458,14 @@
 @keyframes e-footsteps { from { background-position: 0 0; } to { background-position: 54px 0; } }
 @keyframes e-run-spark { from { transform: translateX(-25px) scale(.5); opacity: 0; } 25% { opacity: .75; } to { transform: translateX(260px) scale(1.7); opacity: 0; } }
 @media (prefers-reduced-motion: reduce) {
-  .luria-game .e-journey-running .e-journey-doctor {
+  .traube-game .e-journey-running .e-journey-doctor {
     animation: none;
     left: calc(75% - 64px);
   }
-  .luria-game .e-journey-running .e-doctor-leg,
-  .luria-game .e-journey-running .e-doctor-arm { animation: none; }
+  .traube-game .e-journey-running .e-doctor-leg,
+  .traube-game .e-journey-running .e-doctor-arm { animation: none; }
 }
-.luria-game .e-narrative {
+.traube-game .e-narrative {
   display: flex;
   align-items: flex-start;
   gap: 12px;
@@ -476,21 +476,21 @@
   font-size: 14px;
   line-height: 1.7;
 }
-.luria-game .e-narrator {
+.traube-game .e-narrator {
   color: var(--color-primary-text);
   font-size: 21px;
 }
-.luria-game .e-story > h3 {
+.traube-game .e-story > h3 {
   font-size: 14px;
   line-height: 1.5;
 }
-.luria-game .e-decisions {
+.traube-game .e-decisions {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-top: 18px;
 }
-.luria-game .e-decision {
+.traube-game .e-decision {
   display: flex;
   align-items: center;
   text-align: left;
@@ -504,7 +504,7 @@
   font-size: 13px;
   line-height: 1.5;
 }
-.luria-game .e-decision-symbol {
+.traube-game .e-decision-symbol {
   display: grid;
   place-items: center;
   width: 28px;
@@ -515,96 +515,96 @@
   flex: none;
   font-size: 17px;
 }
-.luria-game .e-decision:hover:not(:disabled) {
+.traube-game .e-decision:hover:not(:disabled) {
   border-color: var(--color-primary);
 }
 @media (max-width: 1050px) {
-  .luria-game .e-layout {
+  .traube-game .e-layout {
     grid-template-columns: 1fr;
   }
-  .luria-game .e-map {
+  .traube-game .e-map {
     position: static;
   }
-  .luria-game .e-floor {
+  .traube-game .e-floor {
     grid-template-columns: repeat(9, minmax(0, 1fr));
     transform: none;
     gap: 5px;
     padding-bottom: 10px;
   }
-  .luria-game .e-room {
+  .traube-game .e-room {
     font-size: 8px;
     min-height: 74px;
   }
-  .luria-game .e-room small {
+  .traube-game .e-room small {
     display: none;
   }
-  .luria-game .e-map .g-progress,
-  .luria-game .e-map > .g-note {
+  .traube-game .e-map .g-progress,
+  .traube-game .e-map > .g-note {
     display: none;
   }
-  .luria-game .e-map > .g-button {
+  .traube-game .e-map > .g-button {
     width: auto;
     margin-top: 12px;
   }
-  .luria-game .e-map-title {
+  .traube-game .e-map-title {
     margin-bottom: 10px;
   }
 }
 @media (max-width: 600px) {
-  .luria-game .e-page-title-card { align-items: flex-start; flex-direction: column; padding: 17px; }
-  .luria-game .e-page-title-actions { width: 100%; justify-content: space-between; }
-  .luria-game .e-page-title-copy p { font-size: 12px; }
-  .luria-game .e-page-title-icon { width: 42px; height: 42px; border-radius: 13px; font-size: 22px; }
-  .luria-game .e-intro {
+  .traube-game .e-page-title-card { align-items: flex-start; flex-direction: column; padding: 17px; }
+  .traube-game .e-page-title-actions { width: 100%; justify-content: space-between; }
+  .traube-game .e-page-title-copy p { font-size: 12px; }
+  .traube-game .e-page-title-icon { width: 42px; height: 42px; border-radius: 13px; font-size: 22px; }
+  .traube-game .e-intro {
     align-items: stretch;
     flex-direction: column;
     gap: 14px;
   }
-  .luria-game .e-illustration svg {
+  .traube-game .e-illustration svg {
     max-height: 170px;
   }
-  .luria-game .e-chapters {
+  .traube-game .e-chapters {
     gap: 5px;
   }
-  .luria-game .e-chapters > span {
+  .traube-game .e-chapters > span {
     flex-direction: column;
     align-items: flex-start;
     font-size: 9px;
     padding: 9px;
     gap: 4px;
   }
-  .luria-game .e-floor {
+  .traube-game .e-floor {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 5px;
   }
-  .luria-game .e-room {
+  .traube-game .e-room {
     min-height: 43px;
     padding: 4px;
     border-bottom-width: 4px;
     flex-direction: row;
     font-size: 8px;
   }
-  .luria-game .e-room-current {
+  .traube-game .e-room-current {
     transform: none;
   }
-  .luria-game .e-room-icon {
+  .traube-game .e-room-icon {
     font-size: 12px;
   }
-  .luria-game .e-map {
+  .traube-game .e-map {
     padding: 14px;
   }
-  .luria-game .e-map > h3 {
+  .traube-game .e-map > h3 {
     font-size: 14px;
   }
-  .luria-game .e-map > .g-subtle {
+  .traube-game .e-map > .g-subtle {
     display: none;
   }
-  .luria-game .e-narrative {
+  .traube-game .e-narrative {
     padding: 14px;
     font-size: 13px;
     margin: 18px 0;
   }
-  .luria-game .e-decision {
+  .traube-game .e-decision {
     padding: 11px;
     font-size: 12px;
   }

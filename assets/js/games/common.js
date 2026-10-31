@@ -55,7 +55,7 @@
     `<div class="g-metric"><strong>${esc(value)}</strong><span>${esc(label)}</span></div>`;
   const note =
     '<p class="g-note">Acervo inicial educativo, com curadoria separada da mecânica. Não substitui protocolos assistenciais. Recordes pessoais ficam nesta conta e neste dispositivo, sem sincronização.</p>';
-  const storeKey = "luria:games:v1";
+  const storeKey = "traube:games:v1";
   function read() {
     try {
       const value = JSON.parse(

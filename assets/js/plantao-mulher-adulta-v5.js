@@ -5,15 +5,15 @@
   const scene=base?.closest(".plantao-scene");
   if(!scene)return;
   const rig=document.createElement("div");
-  rig.className="luria-woman-v5-rig";
+  rig.className="traube-woman-v5-rig";
   rig.hidden=true;
   const assets=[
-    ["chest","luria-mulher-adulta-v5-torax.webp"],
-    ["eyes","luria-mulher-adulta-v5-olhos-fechados.webp"]
+    ["chest","traube-mulher-adulta-v5-torax.webp"],
+    ["eyes","traube-mulher-adulta-v5-olhos-fechados.webp"]
   ];
   for(const [kind,file] of assets){
     const img=document.createElement("img");
-    img.className="luria-woman-v5-"+kind;
+    img.className="traube-woman-v5-"+kind;
     img.src="/assets/img/plantao/"+file;
     img.alt="";
     img.draggable=false;
@@ -22,7 +22,7 @@
     rig.appendChild(img);
   }
   scene.appendChild(rig);
-  const chest=rig.querySelector(".luria-woman-v5-chest");
+  const chest=rig.querySelector(".traube-woman-v5-chest");
   const fraction=value=>{
     const t=String(value||"center").toLowerCase();
     if(t==="left"||t==="top")return 0;
@@ -35,8 +35,8 @@
   function render(){
     pending=false;
     const src=base.getAttribute("src")||"";
-    const active=/luria-mulher-adulta-v5-aberto\.webp(?:\?|$)/.test(src);
-    scene.classList.toggle("luria-woman-v5",active);
+    const active=/traube-mulher-adulta-v5-aberto\.webp(?:\?|$)/.test(src);
+    scene.classList.toggle("traube-woman-v5",active);
     rig.hidden=!active;
     if(!active)return;
     const box=base.getBoundingClientRect(),parent=scene.getBoundingClientRect();
@@ -53,15 +53,15 @@
     rig.style.top=(box.top-parent.top+(box.height-ih)*fraction(positions[1]||"center"))+"px";
     rig.style.width=iw+"px";
     rig.style.height=ih+"px";
-    scene.dataset.luriaEyes=base.dataset.luriaEyes||"auto";
-    const rr=Number.parseFloat(base.dataset.luriaRr);
-    scene.dataset.luriaBreath=Number.isFinite(rr)&&rr<=0?"stopped":"active";
+    scene.dataset.traubeEyes=base.dataset.traubeEyes||"auto";
+    const rr=Number.parseFloat(base.dataset.traubeRr);
+    scene.dataset.traubeBreath=Number.isFinite(rr)&&rr<=0?"stopped":"active";
     // Continua acompanhando a frequência respiratória calculada pelo simulador.
     chest.style.animationDuration=(rr>0?Math.max(.75,Math.min(9,60/rr)):3.5)+"s";
   }
   function schedule(){if(!pending){pending=true;requestAnimationFrame(render)}}
   new MutationObserver(schedule).observe(base,{
-    attributes:true,attributeFilter:["src","data-luria-eyes","data-luria-rr"]
+    attributes:true,attributeFilter:["src","data-traube-eyes","data-traube-rr"]
   });
   if(window.ResizeObserver){
     const observer=new ResizeObserver(schedule);

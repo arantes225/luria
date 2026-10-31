@@ -1,5 +1,5 @@
 {
-  "name": "luria-client-checks",
+  "name": "traube-client-checks",
   "private": true,
   "scripts": {
     "test": "node --test --test-isolation=none tests/*.test.cjs",

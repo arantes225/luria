@@ -43,7 +43,7 @@ Evidência desktop: [tabela e distribuição dos cards](ui-stage81-desktop.png).
 - `assets/css/estatisticas.css` — somente regras do painel de Flashcards.
 - `assets/js/caderno-notion-editor-fix.js` — composição do painel com os mesmos nós e posicionamento dos menus; integração Notion inalterada.
 - `assets/js/questoes-simulados.js` — fechamento do contêiner do card.
-- `assets/js/luria-command-center.js` — opt-out e montagem única dos aprimoramentos do comentário.
+- `assets/js/traube-command-center.js` — opt-out e montagem única dos aprimoramentos do comentário.
 - `assets/js/flashcards-ui-v2.js` — retorno usando o controlador existente.
 - `assets/js/caderno-erros.js` — diálogo da criação usando o formulário existente.
 - `resolver-questoes/index.html` — navegador mobile, acessibilidade, comentário e hash CSP.

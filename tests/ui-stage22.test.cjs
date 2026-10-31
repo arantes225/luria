@@ -24,10 +24,10 @@ test('community layout keeps friend lookup/addition and challenge, customization
   let friends = [], additions = 0;
   w.supabaseClient.rpc = async (name, args) => {
     if (name === 'my_friends') return {data:friends, error:null};
-    if (name === 'lookup_luria_user') return {data:[{user_id:'friend-1',display_name:'Amigo de teste',luria_id:'FRND1234'}],error:null};
-    if (name === 'add_friend_by_luria_id') {
-      assert.equal(args.p_luria_id,'FRND1234'); additions++;
-      friends = [{user_id:'friend-1',display_name:'Amigo de teste',luria_id:'FRND1234'}];
+    if (name === 'lookup_traube_user') return {data:[{user_id:'friend-1',display_name:'Amigo de teste',traube_id:'FRND1234'}],error:null};
+    if (name === 'add_friend_by_traube_id') {
+      assert.equal(args.p_traube_id,'FRND1234'); additions++;
+      friends = [{user_id:'friend-1',display_name:'Amigo de teste',traube_id:'FRND1234'}];
       return {data:null,error:null};
     }
     return originalRpc(name,args);
@@ -35,7 +35,7 @@ test('community layout keeps friend lookup/addition and challenge, customization
   w.eval(fs.readFileSync('assets/js/studyrats.js','utf8'));
   w.eval(fs.readFileSync('assets/js/amigos.js','utf8'));
   await settle(); await settle();
-  assert.equal(d.getElementById('my-luria-id').textContent,'TEST1234');
+  assert.equal(d.getElementById('my-traube-id').textContent,'TEST1234');
   assert.equal(d.getElementById('friends-ref-add-panel').hidden,false);
   assert.equal(d.getElementById('friends-inbox').hidden,false);
   d.getElementById('friend-id-input').value = 'FRND1234';
@@ -122,12 +122,12 @@ test('statistics theme repaint preserves chart data and does not repeat database
 });
 
 test('profile polish preserves existing menu nodes and handlers without duplicating icons', async t => {
-  const dom = new JSDOM('<body data-ui-nav="v2" data-ui-context="study"><div class="app-shell"><aside id="sidebar"></aside><header class="topbar"><button id="luria-profile-toggle">T</button><div id="luria-profile-menu" hidden><a href="/configuracoes/#perfil">Perfil</a><button data-restart-onboarding>Refazer onboarding</button><a href="/configuracoes/">Configurações</a><button id="luria-profile-logout">Sair</button></div></header><main class="main"><div class="page"></div></main></div></body>', {url:'http://fixture.invalid/',runScripts:'outside-only',pretendToBeVisual:true});
+  const dom = new JSDOM('<body data-ui-nav="v2" data-ui-context="study"><div class="app-shell"><aside id="sidebar"></aside><header class="topbar"><button id="traube-profile-toggle">T</button><div id="traube-profile-menu" hidden><a href="/configuracoes/#perfil">Perfil</a><button data-restart-onboarding>Refazer onboarding</button><a href="/configuracoes/">Configurações</a><button id="traube-profile-logout">Sair</button></div></header><main class="main"><div class="page"></div></main></div></body>', {url:'http://fixture.invalid/',runScripts:'outside-only',pretendToBeVisual:true});
   const w=dom.window,d=w.document;
   t.after(()=>w.close());
   w.matchMedia=()=>({matches:false,addEventListener(){}});
-  const toggle=d.getElementById('luria-profile-toggle'), menu=d.getElementById('luria-profile-menu');
-  const restart=d.querySelector('[data-restart-onboarding]'),logout=d.getElementById('luria-profile-logout');
+  const toggle=d.getElementById('traube-profile-toggle'), menu=d.getElementById('traube-profile-menu');
+  const restart=d.querySelector('[data-restart-onboarding]'),logout=d.getElementById('traube-profile-logout');
   let restarts=0,logouts=0;
   toggle.addEventListener('click',()=>{menu.hidden=!menu.hidden;});
   restart.addEventListener('click',()=>{restarts++;});logout.addEventListener('click',()=>{logouts++;});
@@ -135,7 +135,7 @@ test('profile polish preserves existing menu nodes and handlers without duplicat
   for(let i=0;i<5;i++) await new Promise(resolve=>w.setTimeout(resolve,20));
   assert.equal(d.querySelectorAll('.ui-profile-account-item').length,4);
   assert.equal(d.querySelectorAll('.ui-profile-item-icon').length,4);
-  assert.equal(d.getElementById('luria-profile-logout'),logout);
+  assert.equal(d.getElementById('traube-profile-logout'),logout);
   assert.equal(d.querySelector('[data-restart-onboarding]'),restart);
   toggle.click();restart.click();logout.click();
   assert.equal(restarts,1);assert.equal(logouts,1);

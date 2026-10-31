@@ -9,7 +9,7 @@ Implementação local de 12/10/2026. Seleção exclusiva em Configurações → 
 
 ## Preferência e migração
 
-Um único controlador `dashboard-preferences.js` usa `TraubeLocalOwnerStore` e a chave existente `luria:dashboard-layout:<conta>`. Valores canônicos: `classic` e `cards`. Valores numéricos antigos (1–5) ou inválidos são normalizados para `classic`, preservando a antiga Opção 1. O número 2 antigo não ativa a nova Cards. Sem preferência ou com storage indisponível, Clássica é o fallback. A escolha temporária `luria:dashboard-view:v1:<conta>` é retirada e não participa da seleção. Preferências de guest não são importadas nem gravadas. Falhas de gravação deixam a seleção anterior e exibem mensagem. Eventos de conta, storage e pageshow atualizam a seleção.
+Um único controlador `dashboard-preferences.js` usa `TraubeLocalOwnerStore` e a chave existente `traube:dashboard-layout:<conta>`. Valores canônicos: `classic` e `cards`. Valores numéricos antigos (1–5) ou inválidos são normalizados para `classic`, preservando a antiga Opção 1. O número 2 antigo não ativa a nova Cards. Sem preferência ou com storage indisponível, Clássica é o fallback. A escolha temporária `traube:dashboard-view:v1:<conta>` é retirada e não participa da seleção. Preferências de guest não são importadas nem gravadas. Falhas de gravação deixam a seleção anterior e exibem mensagem. Eventos de conta, storage e pageshow atualizam a seleção.
 
 ## Arquivos
 
@@ -23,7 +23,7 @@ Um único controlador `dashboard-preferences.js` usa `TraubeLocalOwnerStore` e a
 
 - Oito testes novos aprovados: duas opções, preservação de DOM/dados/listeners, persistência/reload, isolamento por conta, storage events, migração de valores 1–5/inválidos, falha de storage, regras de acesso, 14 rotas/categorias, CSP preservada e renderizador Clássico real.
 - `node --test --test-isolation=none tests/dashboard-cards.test.cjs tests/dashboard-ui.test.cjs`: 23 aprovados, uma falha preexistente no teste genérico de CSS (`html body[data-page="trabalho_bulario"] .drug-list`). Arquivo do Trabalho não modificado. Oito testes novos reexecutados após o último ajuste de pageshow: 8/8.
-- Sintaxe dos quatro JS alterados e dos scripts inline das duas páginas conferida. Git diff e diff --check revisados. Não há IDs novos duplicados. Configurações já continha o ID duplicado `restart-luria-onboarding`; sem relação com o seletor, preservado fora deste escopo.
+- Sintaxe dos quatro JS alterados e dos scripts inline das duas páginas conferida. Git diff e diff --check revisados. Não há IDs novos duplicados. Configurações já continha o ID duplicado `restart-traube-onboarding`; sem relação com o seletor, preservado fora deste escopo.
 - Chromium local: desktop 1440×900 e mobile 390×844; quatro temas na Dashboard, seletor claro/escuro, dimensões consistentes, ausência de overflow horizontal, seleção nativa por teclado e foco visível. Clássica abre seus componentes reais; Cards permanece após recarregar e navegar. Os 14 links foram clicados e seus destinos conferidos.
 - Console da Dashboard e Configurações sem erros/avisos nos fluxos registrados.
 

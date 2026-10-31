@@ -164,9 +164,9 @@ test('Lattes parses supported records, removes duplicates, requires review and r
 });
 function boot(userId='user-a', storage, beforeReady) {
   const html = fs.readFileSync(path.join(root,'aplicar/curriculo/index.html'),'utf8');
-  const dom = new JSDOM(html,{url:'https://luria.test/aplicar/curriculo/',runScripts:'outside-only'});
+  const dom = new JSDOM(html,{url:'https://traube.test/aplicar/curriculo/',runScripts:'outside-only'});
   const w = dom.window;
-  if (storage) w.localStorage.setItem(`luria:curriculo:v1:${userId}`,storage);
+  if (storage) w.localStorage.setItem(`traube:curriculo:v1:${userId}`,storage);
   for (const script of ['curriculo-core','curriculo-rubricas','curriculo-pdf','curriculo']) w.eval(fs.readFileSync(path.join(root,`assets/js/${script}.js`),'utf8'));
   beforeReady?.(w);
   w.dispatchEvent(new w.CustomEvent('docmap:ready',{detail:{user:{id:userId}}}));
@@ -181,22 +181,22 @@ test('manual CRUD stays scoped to the account, survives reload and renders hosti
   form.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));
   assert.equal(w.document.querySelectorAll('#cv-items article').length,1);
   assert.equal(w.document.querySelector('#cv-items img'),null);
-  const saved=w.localStorage.getItem('luria:curriculo:v1:user-a');
+  const saved=w.localStorage.getItem('traube:curriculo:v1:user-a');
   assert.equal(JSON.parse(saved).items.length,1);
   const reloaded=boot('user-a',saved);
   assert.equal(reloaded.document.querySelectorAll('#cv-items article').length,1);
   w.dispatchEvent(new w.CustomEvent('docmap:ready',{detail:{user:{id:'user-b'}}}));
   assert.equal(w.document.querySelectorAll('#cv-items article').length,0);
-  assert.equal(w.localStorage.getItem('luria:curriculo:v1:user-b'),null);
+  assert.equal(w.localStorage.getItem('traube:curriculo:v1:user-b'),null);
   reloaded.document.querySelector('#cv-items button[aria-label^="Excluir"]').click();
-  assert.equal(JSON.parse(reloaded.localStorage.getItem('luria:curriculo:v1:user-a')).items.length,0);
+  assert.equal(JSON.parse(reloaded.localStorage.getItem('traube:curriculo:v1:user-a')).items.length,0);
   w.close(); reloaded.close();
 });
 test('rubric changes persist and malformed saved answers recover', () => {
   const w = boot('user-a',JSON.stringify({items:[],answers:{[rubric.id]:null}}));
   const input=w.document.querySelector('[data-part="s1"]'); input.value='2'; input.dispatchEvent(new w.Event('input'));
   assert.match(w.document.getElementById('cv-score').textContent,/4 \/ 100/);
-  assert.equal(JSON.parse(w.localStorage.getItem('luria:curriculo:v1:user-a')).answers[rubric.id].s1,2);
+  assert.equal(JSON.parse(w.localStorage.getItem('traube:curriculo:v1:user-a')).answers[rubric.id].s1,2);
   w.close();
 });
 test('institutions filter removed processes and show UNIFESP specialty picker',()=>{
@@ -212,7 +212,7 @@ test('institutions filter removed processes and show UNIFESP specialty picker',(
   select.value=surgery.value;select.dispatchEvent(new w.Event('change'));
   assert.equal(d.getElementById('cv-rules').querySelectorAll('input').length>0,true);
   assert.match(d.getElementById('cv-score').textContent,/\/ 12/);
-  assert.equal(JSON.parse(w.localStorage.getItem('luria:curriculo:v1:user-a')).selectedSpecialty,surgery.value);
+  assert.equal(JSON.parse(w.localStorage.getItem('traube:curriculo:v1:user-a')).selectedSpecialty,surgery.value);
   w.close();
 });
 
@@ -269,7 +269,7 @@ test('PDF original: upload, abertura, download e remoção percorrem os handlers
   w.TraubeCurriculoPdf.removePdf = async owner => { removedOwner = owner; };
   w.URL.createObjectURL = blob => {
     assert.equal(blob, file);
-    return 'blob:https://luria.test/teste-original';
+    return 'blob:https://traube.test/teste-original';
   };
   w.URL.revokeObjectURL = () => {};
   w.HTMLAnchorElement.prototype.click = function () {
@@ -338,7 +338,7 @@ test('Exportar currículo em PDF executa geração e download, não backup JSON'
   }};
   doc.getElementById('cv-export-pdf').click();
   await new Promise(resolve => setImmediate(resolve));
-  assert.deepEqual(output.filenames, ['meu-curriculo-luria.pdf']);
+  assert.deepEqual(output.filenames, ['meu-curriculo-traube.pdf']);
   assert.ok(output.lines.some(line => line.includes('Monitoria em Clínica Médica')));
   assert.match(doc.getElementById('cv-status').textContent, /PDF gerado/);
   w.close();

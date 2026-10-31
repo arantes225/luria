@@ -28,7 +28,7 @@
     if (directStudy && grid.firstElementChild !== directStudy) grid.prepend(directStudy);
     if (directAgenda && directStudy && directStudy.nextElementSibling !== directAgenda) directStudy.after(directAgenda);
     const nextCard = root.querySelector(".dl5-next");
-    const nextStudy = nextCard?.querySelector("[data-luria-study-panel]");
+    const nextStudy = nextCard?.querySelector("[data-traube-study-panel]");
     if (nextStudy && nextCard.firstElementChild !== nextStudy) nextCard.prepend(nextStudy);
     const layout5 = root.querySelector(".dl5-shell");
     const main5 = layout5?.querySelector(".dl5-mid");
@@ -40,7 +40,7 @@
     const study = (pair || root.querySelector(".dl-grid"))?.querySelector(":scope > .dl-study-now-card");
     if (study && study.parentElement.firstElementChild !== study) study.parentElement.prepend(study);
     root.querySelectorAll("h3").forEach(title => {
-      if (title.closest("[data-luria-study-panel]")) {
+      if (title.closest("[data-traube-study-panel]")) {
         title.setAttribute("role", "heading");
         title.setAttribute("aria-level", "2");
         return;
@@ -50,7 +50,7 @@
       heading.append(...title.childNodes);
       title.replaceWith(heading);
     });
-    root.querySelectorAll("[data-luria-study-time]").forEach(button => {
+    root.querySelectorAll("[data-traube-study-time]").forEach(button => {
       const selected = String(button.classList.contains("active"));
       if (button.getAttribute("aria-pressed") !== selected) button.setAttribute("aria-pressed", selected);
     });
@@ -76,7 +76,7 @@
     syncReviews();
     if (root.dataset.rendered === "true" && body.dataset.dashboardPresentationReady !== "true") {
       body.dataset.dashboardPresentationReady = "true";
-      window.dispatchEvent(new Event("luria:dashboard-presentation-ready"));
+      window.dispatchEvent(new Event("traube:dashboard-presentation-ready"));
     }
   }
   function refineCards(root) {
@@ -112,7 +112,7 @@
   function syncStreakActivity(card) {
     const week = card.querySelector(".dl-weekdays, .dl5-week");
     if (!week) return;
-    const history = window.luriaDashboardWeekActivity;
+    const history = window.traubeDashboardWeekActivity;
     const hasHistory = history?.status === "available" && Array.isArray(history.dates);
     if (!week.dataset.uiWeek) {
       week.dataset.uiWeek = "true";
@@ -208,17 +208,17 @@
     if (!review) return;
     for (const [id, metric] of [["ui-review-flashcards", "metric-flashcards"], ["ui-review-errors", "metric-errors"]]) {
       const output = document.getElementById(id);
-      const value = window.luriaDashboardMetrics?.[metric];
+      const value = window.traubeDashboardMetrics?.[metric];
       const text = value === undefined || value === null ? "—" : (String(value).match(/^\s*[\d.,\u00A0\s]+/)?.[0].trim() || String(value));
       if (output && output.textContent !== text) output.textContent = text;
       output?.setAttribute("aria-label", value === undefined || value === null ? "Dados indisponíveis" : String(value));
     }
     const lessons = document.getElementById("ui-review-lessons");
-    const completed = window.luriaDashboardTodayLessons?.completed;
+    const completed = window.traubeDashboardTodayLessons?.completed;
     const lessonText = completed === undefined || completed === null ? "—" : String(completed);
     if (lessons && lessons.textContent !== lessonText) lessons.textContent = lessonText;
     const copy = document.getElementById("ui-review-copy");
-    const message = window.luriaDashboardMetrics?.["metric-flashcards"] === undefined
+    const message = window.traubeDashboardMetrics?.["metric-flashcards"] === undefined
       ? "Aguardando os dados das suas revisões."
       : "Consulte seus flashcards e os erros registrados para planejar a revisão.";
     if (copy && copy.textContent !== message) copy.textContent = message;
@@ -244,7 +244,7 @@
   }
   document.addEventListener("DOMContentLoaded", observeContent, {once: true});
   if (document.readyState !== "loading") observeContent();
-  window.addEventListener("luria:dashboard-data", () => {
+  window.addEventListener("traube:dashboard-data", () => {
     syncReviews();
     syncStreaks();
   });
@@ -254,7 +254,7 @@
     // Closed overlays can remain in the DOM; only a visible modal may disable
     // the application. Always repair stale inert state, even when activeDialog
     // and overlay are both null (common after iOS back-forward restoration).
-    const overlay = [...document.querySelectorAll("#luria-session-overlay, #luria-search-overlay")]
+    const overlay = [...document.querySelectorAll("#traube-session-overlay, #traube-search-overlay")]
       .filter(node => node.isConnected && !node.hidden && !node.closest("[hidden]") &&
         getComputedStyle(node).display !== "none" &&
         getComputedStyle(node).visibility !== "hidden").at(-1) || null;
@@ -274,9 +274,9 @@
     const dialog = overlay.querySelector('[role="dialog"]');
     const title = overlay.querySelector("h2");
     if (title && dialog) { title.id = `${overlay.id}-title`; dialog.setAttribute("aria-labelledby", title.id); }
-    const search = overlay.querySelector("#luria-search-input");
+    const search = overlay.querySelector("#traube-search-input");
     if (search) search.setAttribute("aria-label", "Buscar páginas e ferramentas");
-    (search || overlay.querySelector(".luria-intel-close"))?.focus();
+    (search || overlay.querySelector(".traube-intel-close"))?.focus();
   }
   new MutationObserver(syncDialog).observe(body, {
     childList: true, subtree: true, attributes: true, attributeFilter: ["hidden", "style"]
@@ -311,7 +311,7 @@
   window.addEventListener("docmap:ready", syncNavigation);
   document.addEventListener("keydown", event => {
     if (activeDialog) {
-      if (event.key === "Escape") { event.preventDefault(); activeDialog.querySelector(".luria-intel-close")?.click(); return; }
+      if (event.key === "Escape") { event.preventDefault(); activeDialog.querySelector(".traube-intel-close")?.click(); return; }
       if (event.key === "Tab") {
         const controls = [...activeDialog.querySelectorAll('a[href],button:not([disabled]),input,select,textarea')].filter(node => node.getClientRects().length && !node.hidden);
         if (event.shiftKey && document.activeElement === controls[0]) { event.preventDefault(); controls.at(-1)?.focus(); }
@@ -321,7 +321,7 @@
     }
     if (body.dataset.uiNav === "v2") return;
     if (event.key === "Escape") {
-      for (const [panelId, triggerId] of [["luria-profile-menu", "luria-profile-toggle"], ["luria-pomodoro-panel", "luria-pomodoro-toggle"], ["luria-notification-panel", "luria-notification-toggle"]]) {
+      for (const [panelId, triggerId] of [["traube-profile-menu", "traube-profile-toggle"], ["traube-pomodoro-panel", "traube-pomodoro-toggle"], ["traube-notification-panel", "traube-notification-toggle"]]) {
         const panel = document.getElementById(panelId);
         const trigger = document.getElementById(triggerId);
         if (panel && !panel.hidden && trigger) { trigger.click(); trigger.focus(); }

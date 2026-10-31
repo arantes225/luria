@@ -226,7 +226,7 @@ test("owner changes discard active rounds instead of assigning them to the next 
   const g = game(t, "relampago");
   g.submit();
   g.w.TraubeLocalOwnerStore.ownerId = "b";
-  g.w.dispatchEvent(new g.w.CustomEvent("luria:owner-changed"));
+  g.w.dispatchEvent(new g.w.CustomEvent("traube:owner-changed"));
   g.tick(100000);
   assert.ok(g.d.querySelector("form"));
   assert.equal(g.storage.size, 0);

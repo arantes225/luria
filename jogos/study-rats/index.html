@@ -14,13 +14,13 @@
 <link rel="preload" href="/assets/fonts/inter/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
 <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
-<link id="luria-global-master-css" rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
+<link id="traube-global-master-css" rel="stylesheet" href="/assets/css/traube-brand-v5.css?v=20261005-global-v90">
 <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
 <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261005-learning-hubs">
 <link rel="canonical" href="/jogos/study-rats/">
 <link rel="stylesheet" href="/jogos/study-rats/hall.css?v=20261021-hall1">
 <script src="/assets/js/ui-routes.js?v=1"></script>
-<script defer src="/assets/js/luria-brand-v5.js?v=20261025-review-fixes3"></script>
+<script defer src="/assets/js/traube-brand-v5.js?v=20261025-review-fixes3"></script>
 <style id="study-rats-page-shell-css">
 /* Deliberately scoped to this new route: the site's global shell owns navigation. */
 body[data-page="study-rats"] .sr-page { width:100%;max-width:1880px;min-width:0; }
@@ -44,7 +44,7 @@ body[data-page="study-rats"] #study-rats-host[hidden],body[data-page="study-rats
         <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
         <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
       </header>
-      <a href="/jogos/" class="luria-back-button" aria-label="Voltar para Jogos">
+      <a href="/jogos/" class="traube-back-button" aria-label="Voltar para Jogos">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
         <span>Voltar para Jogos</span>
       </a>
@@ -56,7 +56,7 @@ body[data-page="study-rats"] #study-rats-host[hidden],body[data-page="study-rats
   </main>
 </div>
 <template id="study-rats-template"><style>
-:host{--blue:var(--color-primary,#2e77ff);--deep:var(--color-primary-text,#0f2a5e);--ink:var(--color-text-primary,#16315e);--line:var(--color-border,#d8e6fb);--bg:var(--color-background,#eef5ff);--card:var(--color-surface-solid,#fff);--text2:var(--color-text-secondary,#657b9b);--glow:var(--color-primary-subtle,#86b9ff);--gold:#ffbb42;--teal:#35c4b4;--luria-surface:var(--color-surface-solid,#fff);--luria-surface-subtle:var(--color-surface-elevated,#eef5ff);--luria-text:var(--color-text-primary,#16315e);--luria-muted:var(--color-text-secondary,#657b9b);--luria-border:var(--color-border,#d8e6fb);--luria-accent:var(--color-primary,#2e77ff);--luria-accent-soft:var(--color-primary-subtle,#e7f0ff);--luria-positive:#32b883;--luria-negative:#f37979}
+:host{--blue:var(--color-primary,#2e77ff);--deep:var(--color-primary-text,#0f2a5e);--ink:var(--color-text-primary,#16315e);--line:var(--color-border,#d8e6fb);--bg:var(--color-background,#eef5ff);--card:var(--color-surface-solid,#fff);--text2:var(--color-text-secondary,#657b9b);--glow:var(--color-primary-subtle,#86b9ff);--gold:#ffbb42;--teal:#35c4b4;--traube-surface:var(--color-surface-solid,#fff);--traube-surface-subtle:var(--color-surface-elevated,#eef5ff);--traube-text:var(--color-text-primary,#16315e);--traube-muted:var(--color-text-secondary,#657b9b);--traube-border:var(--color-border,#d8e6fb);--traube-accent:var(--color-primary,#2e77ff);--traube-accent-soft:var(--color-primary-subtle,#e7f0ff);--traube-positive:#32b883;--traube-negative:#f37979}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 20% 0%,#7bb7ff 0,#3e87f0 18%,#1758c6 52%,#0b3a95 78%,#082e78 100%);color:var(--ink);font-family:Inter,"Segoe UI",system-ui,-apple-system,sans-serif;font-size:14px}button{font:inherit;cursor:pointer}button:disabled{cursor:not-allowed;opacity:.55}button:focus-visible,[tabindex]:focus-visible{outline:3px solid #ffb02e;outline-offset:3px}.shell{margin:12px;min-height:calc(100vh - 24px);border-radius:30px;overflow:hidden;background:linear-gradient(180deg,#fffefb,#f5f9ff);display:grid;grid-template-columns:191px minmax(0,1fr);box-shadow:0 34px 92px rgba(5,43,109,.42),inset 0 1px 0 rgba(255,255,255,.82);border:1px solid rgba(255,255,255,.42)}.sidebar{background:linear-gradient(180deg,#ffffff,#f8fbff);border-right:1px solid #e5edfa;display:flex;flex-direction:column;padding:23px 14px;min-width:0}.brand{display:flex;align-items:center;gap:10px;padding:4px 9px 40px;color:#0a3076}.brand-icon{width:36px;height:36px;display:grid;place-items:center;font-size:25px;color:#1c6eef;background:#edf4ff;border-radius:12px}.brand-name{font-weight:950;letter-spacing:1px;font-size:24px;line-height:1}.brand-tag{font-size:8px;letter-spacing:1px;color:#7e96b7;font-weight:800}.nav{display:grid;gap:8px}.nav-item{display:flex;align-items:center;gap:12px;padding:12px 13px;border-radius:14px;font-size:13px;font-weight:700;color:#6b82a5}.nav-item .navicon{font-size:19px;width:23px;text-align:center}.nav-item.active{color:#2163dc;background:#e7f0ff}.nav-caption{margin-top:auto;color:#91a4be;font-size:11px;text-align:center;line-height:1.6}.main{min-width:0;display:flex;flex-direction:column}.top{height:62px;background:#fff;border-bottom:1px solid #e5edf9;display:flex;align-items:center;justify-content:space-between;padding:0 24px;gap:12px}.breadcrumbs{font-size:13px;font-weight:750;color:#8699b4}.breadcrumbs b{color:#193d7a}.top-meta{display:flex;align-items:center;gap:14px;font-size:12px;color:#375987;font-weight:700}.timer-pill{padding:9px 14px;border-radius:99px;background:#eef5ff;white-space:nowrap}.top-user{width:34px;height:34px;border-radius:50%;background:#e6efff;display:grid;place-items:center;border:2px solid white;box-shadow:0 0 0 1px #cfddf2}.content{width:100%;max-width:1870px;margin:0 auto;padding:21px 20px 26px;min-width:0}.page-header{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:16px}.page-heading{display:flex;gap:13px;align-items:center;min-width:0}.page-icon{width:53px;height:53px;display:grid;place-items:center;font-size:29px;background:radial-gradient(circle at 30% 25%,#fffdf8,#deecff 70%,#cfe0ff);color:#2073e9;border-radius:18px;flex:none;box-shadow:0 10px 22px rgba(41,103,220,.14)}.page-header h1{font-size:29px;line-height:1.12;letter-spacing:-1px;margin:0;color:#102e66;font-weight:900}.page-header p{color:#7189aa;margin:5px 0 0;font-size:13px}.page-actions{display:flex;gap:8px;align-items:center}.room{border:1px solid #dae6f9;padding:9px 12px;background:linear-gradient(180deg,#fffefb,#ffffff);border-radius:13px;font-size:12px;font-weight:800;white-space:nowrap;box-shadow:0 8px 20px rgba(17,67,130,.08)}.btn{border:0;background:#246af0;color:white;font-weight:800;border-radius:13px;box-shadow:0 5px 14px #246af026;padding:12px 16px}.btn-secondary{background:#eff5ff;border:1px solid #d9e6fc;color:#2460cd;box-shadow:none}.btn-sm{padding:9px 12px;font-size:12px}.grid-game{display:grid;grid-template-columns:minmax(0,1fr) minmax(295px,330px);grid-template-areas:"board side" "players side";gap:12px 16px;align-items:start}.board-panel{grid-area:board}.players{grid-area:players}.side-panels{grid-area:side}.board-panel{min-width:0;overflow:hidden;border-radius:26px;background:linear-gradient(180deg,#ffffff,#fcfdfd);border:1px solid #d8e6fb;box-shadow:0 22px 52px rgba(17,67,130,.16),inset 0 1px 0 rgba(255,255,255,.95)}.board-hud{display:flex;justify-content:space-between;gap:10px;padding:12px 14px;align-items:center;background:linear-gradient(180deg,#fffefb,#f6f9ff)}.hud-left{display:flex;gap:9px;align-items:center;min-width:0}.eyebrow{font-size:10px;color:#7992b6;text-transform:uppercase;letter-spacing:1px;font-weight:900}.hud-strong{font-weight:900;color:#173976;font-size:13px}.hud-right{display:flex;gap:7px;align-items:center}.chip{padding:7px 11px;border-radius:999px;background:linear-gradient(180deg,#eff5ff,#e5efff);font-size:11px;color:#2957a1;font-weight:850;white-space:nowrap;box-shadow:inset 0 0 0 1px #d6e6ff}.board-canvas{position:relative;background:linear-gradient(180deg,#d7f0ff 0%,#d7f1e3 18%,#9adab8 58%,#76c79f 100%);overflow:hidden;user-select:none;touch-action:none}.board-canvas svg{width:100%;display:block;aspect-ratio:1120 / 730;max-height:calc(100vh - 233px);min-height:0;background:linear-gradient(180deg,#d7f0ff,#bde7cf);touch-action:none}.board-canvas .board-overlay{position:absolute;z-index:3;bottom:12px;left:12px;display:flex;align-items:center;gap:9px;pointer-events:none}.onboard-note{background:rgba(16,42,96,.88);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.28);color:white;border-radius:14px;font-size:11px;font-weight:750;padding:10px 13px;max-width:280px;box-shadow:0 8px 24px rgba(2,35,72,.18)}.zoom-stack{position:absolute;right:12px;bottom:12px;z-index:5;display:flex;gap:5px}.zoom-stack button{width:40px;height:40px;background:linear-gradient(180deg,#ffffff,#f3f8ff);box-shadow:0 10px 22px rgba(29,75,75,.18);border:1px solid #d6e3ef;border-radius:13px;color:#2258a2;font-size:20px;font-weight:900}.zoom-stack button:last-child{font-size:18px}.board-bottom{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:12px 14px;background:linear-gradient(180deg,#ffffff,#f7fbff)}.progress-info{min-width:0;display:flex;align-items:center;gap:8px;font-size:11px;font-weight:800;color:#5273a3}.progress-info strong{color:#2065df}.progress-track{height:7px;width:clamp(70px,10vw,180px);border-radius:99px;background:#e6effa;overflow:hidden}.progress-track>div{height:100%;background:linear-gradient(90deg,#31b8ac,#266cf0);border-radius:99px;transition:width .5s}.players{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:11px}.player{display:flex;align-items:center;gap:8px;background:linear-gradient(180deg,#fffefb,#f8fbff);border:1px solid #dfe9f7;border-radius:17px;padding:9px 11px;min-width:0;box-shadow:0 10px 24px rgba(20,58,112,.09)}.player.yourturn{border-color:#6d9bff;box-shadow:0 0 0 2px #e3edff,0 10px 26px rgba(37,108,245,.15);background:linear-gradient(180deg,#ffffff,#f0f6ff)}.player img{width:34px;height:34px;flex:none;border-radius:50%;object-fit:cover;border:2px solid white;box-shadow:0 1px 7px #1236631c}.player-text{min-width:0;line-height:1.3}.player .pname{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:11px;color:#17376d;font-weight:900}.player .pscore{font-size:10px;color:#7890b0}.side-panels{display:flex;flex-direction:column;gap:11px;min-width:0}.quiz{border:1px solid #dce8fb;background:linear-gradient(180deg,#fffefb,#fbfdff);border-radius:24px;box-shadow:0 18px 42px rgba(20,57,101,.13);overflow:hidden}.quiz-head{padding:16px 17px 11px;display:flex;align-items:center;justify-content:space-between;gap:8px;background:linear-gradient(180deg,#ffffff,#f6faff)}.quiz-title{color:#163976;font-size:16px;font-weight:900}.round-badge{padding:7px 10px;border-radius:8px;background:#edf4ff;color:#3371db;font-size:11px;font-weight:850;white-space:nowrap}.question-area{padding:4px 16px 16px}.tags{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 12px}.tag{background:#eaf3ff;color:#2467d4;border-radius:50px;font-size:10px;font-weight:850;padding:6px 9px}.tag.alt{background:#fff2da;color:#b87a0d}.question{font-size:16px;line-height:1.45;font-weight:850;color:#153265;margin:0 0 14px}.answers{display:grid;gap:8px}.answer{width:100%;display:flex;align-items:center;gap:9px;padding:10px 11px;border:1px solid #dfe8f7;background:#f9fbff;border-radius:11px;text-align:left;color:#335071;font-size:12px;line-height:1.35;min-height:47px}.answer .letter{width:27px;height:27px;display:grid;place-items:center;flex:none;border-radius:9px;background:#e9f1ff;font-weight:900;color:#3766b2;font-size:13px}.answer.selected{background:#e9f2ff;border-color:#4c8bff;box-shadow:0 0 0 1px #4c8bff}.answer.selected .letter{background:#286cf3;color:white}.answer.good{background:#e7fbf2;border-color:#32b883}.answer.bad{background:#fff0f0;border-color:#f37979}.quiz-submit{width:100%;margin-top:13px}.feedback{margin-top:10px;border-radius:11px;padding:11px 12px;font-size:12px;line-height:1.42;display:none}.feedback.show{display:block}.feedback.good{background:#eafaf3;color:#167b57}.feedback.bad{background:#fff2ed;color:#b84c35}.info-panel{background:linear-gradient(180deg,#fffefb,#ffffff);border:1px solid #dfe9fa;border-radius:18px;padding:14px 15px;box-shadow:0 12px 28px rgba(18,54,93,.07)}.section-head{display:flex;gap:7px;align-items:center;justify-content:space-between;font-weight:900;color:#193c7c;font-size:13px;margin-bottom:12px}.mini-steps{display:flex;gap:6px;flex-wrap:wrap}.mini-step{font-size:11px;display:flex;align-items:center;gap:6px;background:#eef5ff;padding:7px 9px;border-radius:8px;color:#42669b;font-weight:750}.rules{font-size:11px;color:#6d85a7;line-height:1.55;margin:0}.game-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px;font-size:11px;color:#8298b5}.hidden-mobile{display:inline}#toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,15px);opacity:0;pointer-events:none;background:#112f65;color:#fff;padding:11px 18px;border-radius:13px;font-size:13px;font-weight:800;z-index:50;box-shadow:0 12px 40px #0d276752;transition:opacity .25s,transform .25s}#toast.show{opacity:1;transform:translate(-50%,0)}
 /* CSS explicitly prevents giant desktop-width canvas on phones */
 @media(max-width:1180px){.shell{grid-template-columns:67px minmax(0,1fr)}.sidebar{padding:20px 6px}.brand{justify-content:center;padding:0 0 30px}.brand-name-wrap,.nav-item .label,.nav-caption{display:none}.nav-item{justify-content:center;padding:12px 4px}.nav-item .navicon{font-size:20px}.content{padding:16px}.grid-game{grid-template-columns:minmax(0,1fr) 300px;gap:12px}.players{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -80,13 +80,13 @@ body[data-page="study-rats"] #study-rats-host[hidden],body[data-page="study-rats
 .landmark-windows i{display:block;width:14px;height:15px;border:2px solid white;border-radius:3px;background:linear-gradient(145deg,#b6eaff,#75b9d8);box-shadow:inset 0 0 0 1px #5688a3}
 .landmark-entry{position:absolute;left:45px;top:68px;width:15px;height:20px;border:2px solid #f9fcff;border-bottom:0;border-radius:6px 6px 0 0;background:linear-gradient(130deg,var(--roof-light),var(--roof-dark));z-index:7}
 .landmark-sign{position:absolute;bottom:-5px;left:-12px;width:132px;min-height:30px;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:4px 8px;line-height:1.02;text-align:center;white-space:normal;color:white;background:linear-gradient(180deg,var(--roof-light),var(--roof-dark));font-size:12px;font-weight:1000;letter-spacing:.15px;border-radius:11px;border:2px solid #fff;box-shadow:0 5px 12px rgba(20,52,94,.34);text-shadow:0 1px 2px rgba(10,24,50,.45);z-index:9}
-.landmark.is-luria .landmark-house{width:125px;height:103px;margin-bottom:12px}
-.landmark.is-luria .landmark-wall{width:104px;height:63px;left:8px;top:28px}
-.landmark.is-luria .landmark-roof{width:122px;height:45px;top:-1px}
-.landmark.is-luria .landmark-crest{left:36px;top:40px;width:48px;height:29px;border-radius:8px;font-size:12px;letter-spacing:1.2px}
-.landmark.is-luria .landmark-windows{left:17px;top:70px;gap:37px}
-.landmark.is-luria .landmark-entry{left:56px;top:71px}
-.landmark.is-luria .landmark-sign{left:-2px;width:128px;min-height:28px;bottom:-8px;font-size:13px}
+.landmark.is-traube .landmark-house{width:125px;height:103px;margin-bottom:12px}
+.landmark.is-traube .landmark-wall{width:104px;height:63px;left:8px;top:28px}
+.landmark.is-traube .landmark-roof{width:122px;height:45px;top:-1px}
+.landmark.is-traube .landmark-crest{left:36px;top:40px;width:48px;height:29px;border-radius:8px;font-size:12px;letter-spacing:1.2px}
+.landmark.is-traube .landmark-windows{left:17px;top:70px;gap:37px}
+.landmark.is-traube .landmark-entry{left:56px;top:71px}
+.landmark.is-traube .landmark-sign{left:-2px;width:128px;min-height:28px;bottom:-8px;font-size:13px}
 .landmark-fo .landmark::after{content:"";position:absolute;width:13px;height:13px;top:19px;right:15px;border-radius:50%;background:#fff7c8;box-shadow:0 0 13px 3px #ffe19a;opacity:.58}
 /* A premium board rather than a flat field. */
 .board-panel{border-radius:25px;box-shadow:0 24px 50px #0e3a771f;isolation:isolate}
@@ -109,7 +109,7 @@ body[data-page="study-rats"] #study-rats-host[hidden],body[data-page="study-rats
 .landmark-crest{box-shadow:0 4px 7px #12345c33,inset 0 1px 0 #ffffff80}
 .landmark-plinth{background:linear-gradient(180deg,#fff9df,#ddcf9b);box-shadow:0 4px 0 #c4b489,0 8px 13px #14354c40}
 .landmark-sign{letter-spacing:.05px;font-size:12px;text-shadow:0 1px 2px #152a4680;box-shadow:0 5px 11px #14345e52}
-.landmark.is-luria .landmark-sign{letter-spacing:1px}
+.landmark.is-traube .landmark-sign{letter-spacing:1px}
 .landmark-house{transition:transform .2s ease}
 
 
@@ -138,7 +138,7 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
 .landmark-wall{background:linear-gradient(135deg,#fff9e9,#ecf5f1 50%,#d2e0ee)!important}
 .landmark-crest{border-color:#fffdf2;box-shadow:0 2px 9px #15447875, inset 0 1px 0 #fff8!important}
 .landmark-sign{border-color:#fffaf1!important;box-shadow:0 5px 9px #0e365966!important}
-.landmark.is-luria .landmark-house{transform:perspective(350px) rotateX(6deg) scale(1.1)!important}
+.landmark.is-traube .landmark-house{transform:perspective(350px) rotateX(6deg) scale(1.1)!important}
 .tile{cursor:pointer;transition:filter .16s}
 .tile:hover{filter:brightness(1.10) drop-shadow(0 4px 3px #183f6d55)}
 .board-special-legend{font-size:10px!important;border-radius:99px!important}
@@ -163,27 +163,27 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
 /* -------------------------------------------------------------
    V11 — Adaptação visual ao design system vigente da TRAUBE.
    Referências: assets/css/style.css, assets/css/ui-app.css,
-   assets/css/luria-brand-v5.css (repositório arantes225/luria).
+   assets/css/traube-brand-v5.css (repositório arantes225/traube).
    Intencionalmente não altera #boardSvg, #world, .tile,
    .landmark, .board-canvas, .board-overlay, casas nem animações.
    ------------------------------------------------------------- */
 :host {
-  --luria-bg: var(--color-background, #f7f9fc);
-  --luria-surface: var(--color-surface-solid, #fff);
-  --luria-surface-subtle: var(--color-surface-elevated, #f1f5f9);
-  --luria-text: var(--color-text-primary, #10243e);
-  --luria-muted: var(--color-text-secondary, #5f6f82);
-  --luria-border: var(--color-border, #d9e2ec);
-  --luria-accent: var(--color-primary, #184888);
-  --luria-accent-strong: var(--color-primary-hover, #123a70);
-  --luria-accent-soft: var(--color-primary-subtle, #e7eef7);
-  --luria-positive: var(--color-success, #16815c);
-  --luria-negative: var(--color-danger, #c83e4d);
-  --luria-shadow: var(--ui-shadow, 0 10px 30px rgba(11,31,59,.07));
-  --luria-font: Inter, 'Segoe UI', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --traube-bg: var(--color-background, #f7f9fc);
+  --traube-surface: var(--color-surface-solid, #fff);
+  --traube-surface-subtle: var(--color-surface-elevated, #f1f5f9);
+  --traube-text: var(--color-text-primary, #10243e);
+  --traube-muted: var(--color-text-secondary, #5f6f82);
+  --traube-border: var(--color-border, #d9e2ec);
+  --traube-accent: var(--color-primary, #184888);
+  --traube-accent-strong: var(--color-primary-hover, #123a70);
+  --traube-accent-soft: var(--color-primary-subtle, #e7eef7);
+  --traube-positive: var(--color-success, #16815c);
+  --traube-negative: var(--color-danger, #c83e4d);
+  --traube-shadow: var(--ui-shadow, 0 10px 30px rgba(11,31,59,.07));
+  --traube-font: Inter, 'Segoe UI', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background: transparent;
-  color: var(--luria-text);
-  font-family: var(--luria-font);
+  color: var(--traube-text);
+  font-family: var(--traube-font);
   font-weight: 400;
 }
 :host .shell {
@@ -192,20 +192,20 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
   border: 0;
   border-radius: 28px;
   grid-template-columns: 216px minmax(0,1fr);
-  background: var(--luria-surface);
+  background: var(--traube-surface);
   box-shadow: 0 12px 42px rgba(5,27,65,.16);
 }
 :host .sidebar {
   padding: 26px 13px 18px;
   background: #FFFFFF;
-  border-right: 1px solid var(--luria-border);
+  border-right: 1px solid var(--traube-border);
 }
 :host .brand {
   display: flex;
   align-items: center;
   gap: 0;
   padding: 3px 11px 36px;
-  color: var(--luria-accent);
+  color: var(--traube-accent);
   min-height: 70px;
 }
 :host .brand-icon {display:none}
@@ -214,7 +214,7 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
   font-weight: 780;
   letter-spacing: -.055em;
   line-height: 1;
-  color: var(--luria-accent);
+  color: var(--traube-accent);
 }
 :host .brand-tag {
   margin-top: 6px;
@@ -240,12 +240,12 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
   color: #657B98;
 }
 :host .nav-item.active {
-  color: var(--luria-accent);
-  background: var(--luria-accent-soft);
+  color: var(--traube-accent);
+  background: var(--traube-accent-soft);
   font-weight: 670;
   box-shadow: none;
 }
-:host .nav-item.active .navicon {color: var(--luria-accent)}
+:host .nav-item.active .navicon {color: var(--traube-accent)}
 :host .nav-caption {
   margin-top: auto;
   border-top: 1px solid #EDF0F5;
@@ -256,13 +256,13 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
   font-weight: 450;
 }
 :host .main {
-  background: var(--luria-surface);
+  background: var(--traube-surface);
   min-width: 0;
 }
 :host .top {
   height: 65px;
   padding: 0 23px;
-  border-bottom: 1px solid var(--luria-border);
+  border-bottom: 1px solid var(--traube-border);
   background: #FFFFFF;
 }
 :host .breadcrumbs {
@@ -270,7 +270,7 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
   font-size: 13px;
   font-weight: 470;
 }
-:host .breadcrumbs b {color: var(--luria-accent);font-weight: 650}
+:host .breadcrumbs b {color: var(--traube-accent);font-weight: 650}
 :host .top-meta {gap: 16px;color: #63788F;font-weight: 480}
 :host .timer-pill {
   min-width: 116px;
@@ -279,7 +279,7 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
   gap: 7px;
   background: #F0F4F9;
   border: 1px solid #E5EAF1;
-  color: var(--luria-accent);
+  color: var(--traube-accent);
   border-radius: 16px;
   padding: 8px 12px;
   font-size: 13px;
@@ -295,7 +295,7 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
 :host .content {
   max-width: 1780px;
   padding: 18px 19px 22px;
-  background: var(--luria-surface);
+  background: var(--traube-surface);
 }
 :host .page-header {
   margin-bottom: 15px;
@@ -304,19 +304,19 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
 :host .page-icon {
   width: 48px;height:48px;
   border-radius: 14px;
-  background: var(--luria-accent-soft);
+  background: var(--traube-accent-soft);
   box-shadow: none;
   font-size: 24px;
 }
 :host .page-header h1 {
   font-size: clamp(24px,2.3vw,29px);
   font-weight: 680;
-  color: var(--luria-text);
+  color: var(--traube-text);
   letter-spacing: -.035em;
 }
 :host .page-header p {
   margin: 5px 0 0;
-  color: var(--luria-muted);
+  color: var(--traube-muted);
   font-size: 12.5px;
   font-weight: 430;
   line-height: 1.4;
@@ -334,9 +334,9 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
   font-weight: 650;
 }
 :host .btn {
-  background: var(--luria-accent);
+  background: var(--traube-accent);
   color: white;
-  border: 1px solid var(--luria-accent);
+  border: 1px solid var(--traube-accent);
   box-shadow: none;
   border-radius: 11px;
   font-size: 13px;
@@ -344,13 +344,13 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
   padding: 11px 15px;
   transition: background .15s, transform .15s;
 }
-:host .btn:hover:not(:disabled){background:var(--luria-accent-strong);transform:translateY(-1px)}
+:host .btn:hover:not(:disabled){background:var(--traube-accent-strong);transform:translateY(-1px)}
 :host .btn-secondary {
-  color: var(--luria-accent);
+  color: var(--traube-accent);
   background: white;
   border: 1px solid #CFD9E6;
 }
-:host .btn-secondary:hover:not(:disabled){background:var(--luria-accent-soft);color:var(--luria-accent-strong)}
+:host .btn-secondary:hover:not(:disabled){background:var(--traube-accent-soft);color:var(--traube-accent-strong)}
 :host .btn-sm{padding:9px 13px;font-size:12px}
 :host .grid-game {
   grid-template-columns: minmax(0,1fr) minmax(286px,325px);
@@ -359,8 +359,8 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
 /* Only adjust framing around the board: internal SVG, scenery, tiles and tokens stay intact. */
 :host .board-panel {
   border-radius: 18px;
-  border: 1px solid var(--luria-border);
-  box-shadow: var(--luria-shadow);
+  border: 1px solid var(--traube-border);
+  box-shadow: var(--traube-shadow);
 }
 :host .players{gap:8px;margin-top:0}
 :host .player {
@@ -371,12 +371,12 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
   padding: 10px 10px;
   gap: 9px;
 }
-:host .player:nth-child(1) { --player-accent: var(--luria-accent, #4f8cff); }
-:host .player:nth-child(2) { --player-accent: color-mix(in srgb, var(--luria-accent, #4f8cff) 62%, #e47b9d); }
-:host .player:nth-child(3) { --player-accent: color-mix(in srgb, var(--luria-accent, #4f8cff) 58%, #63b58d); }
-:host .player:nth-child(4) { --player-accent: color-mix(in srgb, var(--luria-accent, #4f8cff) 55%, #c7974b); }
-:host .player { border-left: 4px solid color-mix(in srgb, var(--player-accent) 78%, var(--luria-border)); }
-:host .player .pname { color: color-mix(in srgb, var(--player-accent) 70%, var(--luria-text)) !important; }
+:host .player:nth-child(1) { --player-accent: var(--traube-accent, #4f8cff); }
+:host .player:nth-child(2) { --player-accent: color-mix(in srgb, var(--traube-accent, #4f8cff) 62%, #e47b9d); }
+:host .player:nth-child(3) { --player-accent: color-mix(in srgb, var(--traube-accent, #4f8cff) 58%, #63b58d); }
+:host .player:nth-child(4) { --player-accent: color-mix(in srgb, var(--traube-accent, #4f8cff) 55%, #c7974b); }
+:host .player { border-left: 4px solid color-mix(in srgb, var(--player-accent) 78%, var(--traube-border)); }
+:host .player .pname { color: color-mix(in srgb, var(--player-accent) 70%, var(--traube-text)) !important; }
 :host .player.yourturn {
   border-color: #ACC5E3;
   box-shadow: 0 0 0 1px #E2EBF5;
@@ -384,7 +384,7 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
 }
 :host .player img{width:36px;height:36px;box-shadow:none;border:1px solid #E7EDF5}
 :host .player .pname{
-  color:var(--luria-text);
+  color:var(--traube-text);
   font-size:11.5px;
   font-weight:650;
 }
@@ -397,9 +397,9 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
 :host .side-panels{gap:9px}
 :host .quiz {
   border-radius: 16px;
-  border: 1px solid var(--luria-border);
+  border: 1px solid var(--traube-border);
   background: #FFFFFF;
-  box-shadow: var(--luria-shadow);
+  box-shadow: var(--traube-shadow);
 }
 :host .quiz-head{
   padding: 15px 15px 11px;
@@ -407,14 +407,14 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
   border-bottom:1px solid #EEF1F5;
 }
 :host .quiz-title{
-  color: var(--luria-text);
+  color: var(--traube-text);
   font-size:14px;
   font-weight:680;
 }
 :host .round-badge{
   border-radius:10px;
-  background: var(--luria-accent-soft);
-  color: var(--luria-accent);
+  background: var(--traube-accent-soft);
+  color: var(--traube-accent);
   box-shadow: none;
   font-weight: 650;
 }
@@ -422,14 +422,14 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
 :host .tags{margin:2px 0 11px;gap:6px}
 :host .tag{
   background:#EDF3FA;
-  color:var(--luria-accent);
+  color:var(--traube-accent);
   font-size:10px;
   font-weight:620;
   padding:6px 9px;
 }
 :host .tag.alt{background:#FFF6E7;color:#8C611E}
 :host .question{
-  color:var(--luria-text);
+  color:var(--traube-text);
   font-size:15px;
   font-weight:650;
   line-height:1.48;
@@ -460,12 +460,12 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
 }
 :host .answer.selected{
   background:#E8EFF8;
-  border-color:var(--luria-accent);
+  border-color:var(--traube-accent);
   box-shadow:0 0 0 1px #C2D1E4;
 }
-:host .answer.selected .letter{background:var(--luria-accent);color:#FFFFFF}
-:host .answer.good{background:#EBF6EF;border-color:var(--luria-positive)}
-:host .answer.bad{background:#FFF0F1;border-color:var(--luria-negative)}
+:host .answer.selected .letter{background:var(--traube-accent);color:#FFFFFF}
+:host .answer.good{background:#EBF6EF;border-color:var(--traube-positive)}
+:host .answer.bad{background:#FFF0F1;border-color:var(--traube-negative)}
 :host .quiz-submit{
   width:100%;
   padding:12px 13px;
@@ -486,13 +486,13 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
 :host .feedback{border-radius:10px;font-size:12px}
 :host .info-panel{
   background:white;
-  border:1px solid var(--luria-border);
+  border:1px solid var(--traube-border);
   border-radius:15px;
   padding:15px 15px;
-  box-shadow:var(--luria-shadow);
+  box-shadow:var(--traube-shadow);
 }
 :host .section-head{
-  color:var(--luria-text);
+  color:var(--traube-text);
   font-size:13px;
   font-weight:660;
 }
@@ -504,7 +504,7 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
   font-weight:540;
 }
 :host .rules{
-  color:var(--luria-muted);
+  color:var(--traube-muted);
   font-size:11px;
   line-height:1.58;
   font-weight:430;
@@ -515,13 +515,13 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
   color:#91A0AF;
   font-weight:420;
 }
-:host #toast{background:var(--luria-accent);font-weight:570}
+:host #toast{background:var(--traube-accent);font-weight:570}
 @media(max-width:1180px){
   :host .shell{grid-template-columns:68px minmax(0,1fr)}
   :host .sidebar{padding:18px 8px}
   :host .brand{padding:4px 0 25px;justify-content:center;min-height:60px}
   :host .brand-name-wrap{display:none}
-  :host .brand-icon{display:grid;align-items:center;justify-content:center;background:var(--luria-accent-soft);color:var(--luria-accent);width:36px;height:36px;border-radius:11px;font-size:22px}
+  :host .brand-icon{display:grid;align-items:center;justify-content:center;background:var(--traube-accent-soft);color:var(--traube-accent);width:36px;height:36px;border-radius:11px;font-size:22px}
   :host .nav-item{justify-content:center;padding:11px 5px}
   :host .nav-item .navicon{width:auto}
   :host .grid-game{grid-template-columns:minmax(0,1fr) 300px;gap:9px}
@@ -560,34 +560,34 @@ body{background:radial-gradient(ellipse at 25% -10%,#70a8ff,#347ae7 31%,#134cae 
 }
 
 
-:host{display:block;width:100%;min-width:0;font-family:var(--ui-font-family,Inter,"Segoe UI",system-ui,sans-serif);color:var(--luria-text);}
+:host{display:block;width:100%;min-width:0;font-family:var(--ui-font-family,Inter,"Segoe UI",system-ui,sans-serif);color:var(--traube-text);}
 .content{max-width:1880px;min-width:0;margin:0 auto;padding:10px 0 14px;}
 @media(max-width:850px){.content{padding:8px 0 16px;}}
 
 /* The template is a Shadow DOM: these tokens inherit all four TRAUBE palettes. */
-:host .board-panel,:host .quiz,:host .info-panel,:host .player,:host .btn-secondary,:host .answer{background:var(--luria-surface);color:var(--luria-text);border-color:var(--luria-border)}
-:host .room,:host .mini-step,:host .tag,:host .answer .letter{background:var(--luria-surface-subtle);color:var(--luria-muted);border-color:var(--luria-border)}
-:host .answer:hover:not(:disabled),:host .answer.selected{background:var(--luria-accent-soft);border-color:var(--luria-accent)}
-:host .answer.good{background:var(--color-success-surface,#ebf6ef);border-color:var(--luria-positive)}
-:host .answer.bad{background:var(--color-danger-surface,#fff0f1);border-color:var(--luria-negative)}
+:host .board-panel,:host .quiz,:host .info-panel,:host .player,:host .btn-secondary,:host .answer{background:var(--traube-surface);color:var(--traube-text);border-color:var(--traube-border)}
+:host .room,:host .mini-step,:host .tag,:host .answer .letter{background:var(--traube-surface-subtle);color:var(--traube-muted);border-color:var(--traube-border)}
+:host .answer:hover:not(:disabled),:host .answer.selected{background:var(--traube-accent-soft);border-color:var(--traube-accent)}
+:host .answer.good{background:var(--color-success-surface,#ebf6ef);border-color:var(--traube-positive)}
+:host .answer.bad{background:var(--color-danger-surface,#fff0f1);border-color:var(--traube-negative)}
 :host .btn{color:var(--color-primary-foreground,#fff)}
-:host .btn-secondary{color:var(--luria-accent)}
+:host .btn-secondary{color:var(--traube-accent)}
 :host .quiz-submit{color:var(--color-primary-foreground,#fff)!important}
-:host .page-header p,:host .player .pscore,:host .rules,:host .game-foot{color:var(--luria-muted)}
-:host .dice-panel{background:var(--luria-surface-subtle);border-color:var(--luria-border)}
-:host .dice-panel{display:flex;align-items:center;gap:12px;border:1px solid;border-radius:13px;padding:9px 12px;margin:1px 0 13px;color:var(--luria-text);font-size:12px;font-weight:750}
+:host .page-header p,:host .player .pscore,:host .rules,:host .game-foot{color:var(--traube-muted)}
+:host .dice-panel{background:var(--traube-surface-subtle);border-color:var(--traube-border)}
+:host .dice-panel{display:flex;align-items:center;gap:12px;border:1px solid;border-radius:13px;padding:9px 12px;margin:1px 0 13px;color:var(--traube-text);font-size:12px;font-weight:750}
 :host .dice-panel{flex-direction:column;justify-content:center;text-align:center;min-height:126px;padding:16px 14px;margin:10px auto 16px}
-:host .dice-visual{font-size:68px;line-height:1;color:var(--luria-accent);display:inline-block;transform-origin:center;text-shadow:0 8px 18px color-mix(in srgb, var(--luria-accent) 26%, transparent)}
-:host .dice-copy{font-size:12px;line-height:1.35;color:var(--luria-muted)}
+:host .dice-visual{font-size:68px;line-height:1;color:var(--traube-accent);display:inline-block;transform-origin:center;text-shadow:0 8px 18px color-mix(in srgb, var(--traube-accent) 26%, transparent)}
+:host .dice-copy{font-size:12px;line-height:1.35;color:var(--traube-muted)}
 :host .dice-visual.is-rolling{animation:studyRatsDie .15s ease-in-out infinite alternate}
 @keyframes studyRatsDie{to{transform:rotate(18deg) scale(1.12)}}
-:host .page-header h1,:host .quiz-title,:host .section-head,:host .hud-strong,:host .question,:host .player .pname{color:var(--luria-text)}
-:host .board-hud,:host .board-bottom,:host .quiz-head{background:var(--luria-surface-subtle);border-color:var(--luria-border)}
-:host .chip,:host .round-badge,:host .timer-pill{background:var(--luria-surface-subtle);color:var(--luria-text);box-shadow:inset 0 0 0 1px var(--luria-border)}
-:host .answer{background:var(--luria-surface-subtle);color:var(--luria-text)}
-:host .tag,:host .mini-step{color:var(--luria-text)}
-:host .btn:not(.btn-secondary){background:var(--ui-pill-gradient,linear-gradient(135deg,#4fc3f7,#7687ff));color:var(--luria-btn-text-blue,#08101f)!important;border-color:transparent}
-:host .quiz-submit{background:var(--ui-pill-gradient,linear-gradient(135deg,#4fc3f7,#7687ff));color:var(--luria-btn-text-blue,#08101f)!important;border-color:transparent}
+:host .page-header h1,:host .quiz-title,:host .section-head,:host .hud-strong,:host .question,:host .player .pname{color:var(--traube-text)}
+:host .board-hud,:host .board-bottom,:host .quiz-head{background:var(--traube-surface-subtle);border-color:var(--traube-border)}
+:host .chip,:host .round-badge,:host .timer-pill{background:var(--traube-surface-subtle);color:var(--traube-text);box-shadow:inset 0 0 0 1px var(--traube-border)}
+:host .answer{background:var(--traube-surface-subtle);color:var(--traube-text)}
+:host .tag,:host .mini-step{color:var(--traube-text)}
+:host .btn:not(.btn-secondary){background:var(--ui-pill-gradient,linear-gradient(135deg,#4fc3f7,#7687ff));color:var(--traube-btn-text-blue,#08101f)!important;border-color:transparent}
+:host .quiz-submit{background:var(--ui-pill-gradient,linear-gradient(135deg,#4fc3f7,#7687ff));color:var(--traube-btn-text-blue,#08101f)!important;border-color:transparent}
 :host button[hidden]{display:none!important}
 </style><main class="content"><div class="page-header"><div class="page-heading"><div class="page-icon">🎲</div><div><h1>Study Rats</h1><p>O parque médico da TRAUBE: um tabuleiro com jardins, 60 casas e surpresas.</p></div></div><div class="page-actions"><span class="room">SALA DEMO · SR-6042</span><button class="btn btn-secondary btn-sm" id="inviteBtn">♟ Chamar amigos</button><button class="btn btn-sm" id="newGameBtn">＋ Novo jogo</button><button class="btn btn-secondary btn-sm" id="resetBtn">↻ Reiniciar</button></div></div>
 <div class="grid-game"><section class="board-panel" aria-label="Tabuleiro 60 casas"><div class="board-hud"><div class="hud-left"><span style="font-size:22px">🏁</span><div><div class="eyebrow">Partida demonstrativa · 4 jogadores</div><div class="hud-strong" id="hudStatus">Sua vez de responder e avançar</div></div></div><div class="hud-right"><span class="chip board-special-legend"><span class="legend-up">↗ Avance</span><span class="legend-down">↩ Volte</span></span><span class="chip">60 casas</span><span class="chip" id="hudRound">Rodada 01</span></div></div><div class="board-canvas" id="boardCanvas"><svg id="boardSvg" viewBox="0 0 1120 730" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tabuleiro ilustrado com 60 casas coloridas interativas e ratinhos em movimento"><defs><linearGradient id="grass" x2=".9" y2="1"><stop stop-color="#d9f3d3"/><stop offset=".55" stop-color="#a9ddae"/><stop offset="1" stop-color="#76c6a3"/></linearGradient><linearGradient id="water" x2=".2" y2="1"><stop stop-color="#8ce5f4"/><stop offset="1" stop-color="#399acb"/></linearGradient><linearGradient id="tileShine" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#fff" stop-opacity=".68"/><stop offset=".5" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><linearGradient id="tileRim" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#dbe7ff"/></linearGradient><linearGradient id="tileShadowFill" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#173d6d" stop-opacity=".34"/><stop offset="1" stop-color="#173d6d" stop-opacity=".08"/></linearGradient><radialGradient id="tileGlow"><stop stop-color="#ffffff" stop-opacity=".55"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient><linearGradient id="roof" x2=".2" y2="1"><stop stop-color="#d8e8f5"/><stop offset="1" stop-color="#7ca1c6"/></linearGradient><linearGradient id="goldLine" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#ffe9a8"/><stop offset="1" stop-color="#d4a230"/></linearGradient><radialGradient id="sunGlow"><stop stop-color="#fff3bd" stop-opacity=".7"/><stop offset="1" stop-color="#fff3bd" stop-opacity="0"/></radialGradient><linearGradient id="wall" x2=".1" y2="1"><stop stop-color="#fffefa"/><stop offset="1" stop-color="#dbe6e5"/></linearGradient><radialGradient id="tree"><stop stop-color="#75db83"/><stop offset=".7" stop-color="#319f5b"/><stop offset="1" stop-color="#217651"/></radialGradient><radialGradient id="sceneLight"><stop stop-color="#f6ffe7" stop-opacity=".7"/><stop offset="1" stop-color="#f6ffe7" stop-opacity="0"/></radialGradient><filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#184658" flood-opacity=".26"/></filter><filter id="tileShadow"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#2a5868" flood-opacity=".24"/></filter><filter id="tokenShadow"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#0a3855" flood-opacity=".45"/></filter><pattern id="lawn" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M 0 14 Q7 10 14 14 M16 26 q5 -3 10 0" fill="none" stroke="#4da66c" stroke-width=".8" opacity=".17"/></pattern></defs><g id="world"><g id="scenery"></g><g id="trackUnder"></g><g id="track"></g><g id="landmarks"></g><g id="tokens"></g></g></svg><div class="board-overlay"><div class="onboard-note" id="mapHint">Parque TRAUBE · 60 casas · 7 surpresas</div></div><div class="zoom-stack"><button id="zoomIn" aria-label="Aumentar zoom">+</button><button id="zoomOut" aria-label="Diminuir zoom">−</button><button id="zoomReset" aria-label="Centralizar tabuleiro">⌖</button></div></div><div class="board-bottom"><div class="progress-info"><span>🐭 Seu ratinho</span><strong id="yourHouse">Casa 1/60</strong><div class="progress-track"><div id="progressBar" style="width:1.67%"></div></div></div><button id="showMove" class="btn btn-secondary btn-sm">▶ Testar +5 casas</button></div></section>

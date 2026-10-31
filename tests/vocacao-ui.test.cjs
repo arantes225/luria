@@ -4,7 +4,7 @@ const fs=require("node:fs");
 const {JSDOM}=require("jsdom");
 function start(){
   const html=fs.readFileSync("vocacao/index.html","utf8");
-  const dom=new JSDOM(html,{url:"https://luria.test/vocacao/",runScripts:"outside-only"});
+  const dom=new JSDOM(html,{url:"https://traube.test/vocacao/",runScripts:"outside-only"});
   const {window}=dom;
   window.HTMLElement.prototype.scrollIntoView=function(){};
   for(const file of ["assets/js/vocacao-data.js","assets/js/vocacao-engine.js","assets/js/vocacao.js"])
@@ -55,11 +55,11 @@ test("retomar sessão e refazer com escolhas limpas",()=>{
   $("voc-start").click();
   $("voc-options").querySelector(".voc-option").click();
   assert.equal($("voc-next").disabled,false);
-  const saved=window.sessionStorage.getItem("luria.vocacao.v3.session");
+  const saved=window.sessionStorage.getItem("traube.vocacao.v3.session");
   assert.ok(saved);
   dom.window.close();
   const newRun=start();
-  newRun.window.sessionStorage.setItem("luria.vocacao.v3.session",saved);
+  newRun.window.sessionStorage.setItem("traube.vocacao.v3.session",saved);
   // Código é avaliado de novo após a sessão restaurada.
   newRun.window.eval(fs.readFileSync("assets/js/vocacao.js","utf8"));
   assert.equal(newRun.$("voc-quiz").hidden,false);

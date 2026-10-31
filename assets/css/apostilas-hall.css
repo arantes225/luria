@@ -8,12 +8,12 @@
   padding-bottom: 40px;
 }
 
-.books-page > .luria-page-spotlight {
+.books-page > .traube-page-spotlight {
   margin: 0 !important;
 }
 
 /* Back button */
-.luria-back-button {
+.traube-back-button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -28,7 +28,7 @@
   transition: background 150ms ease, transform 150ms ease;
 }
 
-.luria-back-button:hover {
+.traube-back-button:hover {
   background: color-mix(in srgb, var(--accent, #155dfc) 14%, transparent);
   transform: translateX(-2px);
 }
@@ -677,5 +677,5 @@
 /* Tela inicial = hall; biblioteca só aparece após escolher uma área. */
 .books-page[hidden], .active-area-banner[hidden], .library-section[hidden] {display:none!important;}
 .hall-btn {text-decoration:none;}
-#books-library-view .luria-back-button {border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border));font:inherit;cursor:pointer;}
+#books-library-view .traube-back-button {border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border));font:inherit;cursor:pointer;}
 @media(max-width:640px){#books-library-view .active-area-banner{align-items:flex-start;flex-wrap:wrap;}}

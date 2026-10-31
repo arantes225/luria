@@ -68,9 +68,9 @@ body[data-page="trabalho_laboratorio"] .work-hub-navigation .work-hub-return{dis
 }
 
 /* Cabecalho alinhado ao spotlight padrao do Modo Trabalho */
-#exam-tool .luria-page-spotlight.ex-title-card .ex-title-copy h2{margin:0;color:#fff;font-size:26px;font-weight:900;line-height:1.15;letter-spacing:-.6px}
-#exam-tool .luria-page-spotlight.ex-title-card .ex-back-link{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3);color:#fff}
-#exam-tool .luria-page-spotlight.ex-title-card .ex-back-link:hover{background:rgba(255,255,255,.24);border-color:#fff;color:#fff}
+#exam-tool .traube-page-spotlight.ex-title-card .ex-title-copy h2{margin:0;color:#fff;font-size:26px;font-weight:900;line-height:1.15;letter-spacing:-.6px}
+#exam-tool .traube-page-spotlight.ex-title-card .ex-back-link{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3);color:#fff}
+#exam-tool .traube-page-spotlight.ex-title-card .ex-back-link:hover{background:rgba(255,255,255,.24);border-color:#fff;color:#fff}
 
 /* Kits Rapidos de Plantao e Tabela de Valores Criticos */
 #exam-tool .ex-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;min-height:42px}

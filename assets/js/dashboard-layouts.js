@@ -4,7 +4,7 @@
   const root = document.createElement("div");
   root.id = "dashboard-alternative";
   root.setAttribute("aria-live", "off");
-  const spotlight = page.querySelector(".luria-page-spotlight");
+  const spotlight = page.querySelector(".traube-page-spotlight");
   const topbar = page.querySelector(".topbar");
   if (spotlight) spotlight.after(root);
   else if (topbar) topbar.after(root);
@@ -21,7 +21,7 @@
     .replaceAll("&", "&amp;").replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
   const text = (id, fallback = "—") => {
-    const stateValue = window.luriaDashboardMetrics?.[id];
+    const stateValue = window.traubeDashboardMetrics?.[id];
     if (stateValue !== null && stateValue !== undefined && String(stateValue).trim()) return String(stateValue).trim();
     return document.getElementById(id)?.textContent?.trim() || fallback;
   };
@@ -30,8 +30,8 @@
   const readableDate = (date) => new Intl.DateTimeFormat("pt-BR", { weekday: "long", day: "numeric", month: "long" }).format(date);
   const shortDate = (value) => new Intl.DateTimeFormat("pt-BR", { day: "2-digit", month: "short" }).format(new Date(`${value}T12:00:00`));
   const items = () => (typeof agendaState === "object" && Array.isArray(agendaState.items) ? agendaState.items : []);
-  const upcomingItems = () => Array.isArray(window.luriaDashboardUpcomingAgenda)
-    ? window.luriaDashboardUpcomingAgenda
+  const upcomingItems = () => Array.isArray(window.traubeDashboardUpcomingAgenda)
+    ? window.traubeDashboardUpcomingAgenda
     : items();
   const upcoming = (limit = 4) => upcomingItems()
     .filter((item) => item.activity_date >= dayISO(new Date()))
@@ -41,18 +41,18 @@
   const snap = () => {
     const [done, total] = text("metric-lessons-progress-copy", "0/0").split("/").map(number);
     const progress = total ? Math.round(done / total * 100) : 0;
-    const today = window.luriaDashboardTodayLessons || { completed: 0, total: 0 };
+    const today = window.traubeDashboardTodayLessons || { completed: 0, total: 0 };
     return {
       done, total, progress, today,
-      streak: Number(window.luriaCurrentStreak || 0),
+      streak: Number(window.traubeCurrentStreak || 0),
       flashcards: number(text("metric-flashcards", "0")),
       errors: number(text("metric-errors", "0")),
       hours: text("metric-hours", "0h"),
       retention: text("metric-retention"),
       simulations: text("metric-simulations-accuracy"),
-      ccq: window.luriaDashboardCcq?.text || "Seu Pulo do Gato aparecerá aqui.",
-      ccqArea: window.luriaDashboardCcq?.area || "",
-      areas: window.luriaDashboardAreaSummary || [],
+      ccq: window.traubeDashboardCcq?.text || "Seu Pulo do Gato aparecerá aqui.",
+      ccqArea: window.traubeDashboardCcq?.area || "",
+      areas: window.traubeDashboardAreaSummary || [],
       questions: number(text("metric-questions", "0")),
       simulationsCount: number(text("metric-simulations", "0")),
       challengeAccuracy: dailyChallengeAccuracy
@@ -87,10 +87,10 @@
   }
 
   function greeting() {
-    return `<section class="luria-page-spotlight luria-dashboard-spotlight dl-dashboard-title-card" aria-label="Dashboard">
-      <div class="luria-page-spotlight-copy">
+    return `<section class="traube-page-spotlight traube-dashboard-spotlight dl-dashboard-title-card" aria-label="Dashboard">
+      <div class="traube-page-spotlight-copy">
         <strong>Dashboard</strong>
-        <small class="luria-page-spotlight-helper">Seu dia de estudos em um só lugar.</small>
+        <small class="traube-page-spotlight-helper">Seu dia de estudos em um só lugar.</small>
       </div>
     </section>`;
   }
@@ -206,25 +206,25 @@
   }
 
   function cat(data, compact = false) {
-    return `<section class="dl-card dl-cat ${compact ? "dl-cat-compact" : ""}">${heading(icon("cat"), "Pulo do Gato do dia")}<div class="dl-cat-content"><span class="dashboard-cat-symbol" role="img" aria-label="Pulo do Gato"><img class="cat-symbol-light" src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp?v=20260924d" alt=""><img class="cat-symbol-dark" src="/assets/img/pulo%20do%20gato/luria_gato_tema_escuro.webp?v=20260924d" alt=""><img class="cat-symbol-pink" src="/assets/img/pulo%20do%20gato/luria_gato_tema_rosa.webp?v=20260924d" alt=""></span><div><p>${escape(data.ccq)}</p>${data.ccqArea ? `<small>${escape(data.ccqArea)}</small>` : ""}</div></div></section>`;
+    return `<section class="dl-card dl-cat ${compact ? "dl-cat-compact" : ""}">${heading(icon("cat"), "Pulo do Gato do dia")}<div class="dl-cat-content"><span class="dashboard-cat-symbol" role="img" aria-label="Pulo do Gato"><img class="cat-symbol-light" src="/assets/img/pulo%20do%20gato/traube_gato_tema_claro.webp?v=20260924d" alt=""><img class="cat-symbol-dark" src="/assets/img/pulo%20do%20gato/traube_gato_tema_escuro.webp?v=20260924d" alt=""><img class="cat-symbol-pink" src="/assets/img/pulo%20do%20gato/traube_gato_tema_rosa.webp?v=20260924d" alt=""></span><div><p>${escape(data.ccq)}</p>${data.ccqArea ? `<small>${escape(data.ccqArea)}</small>` : ""}</div></div></section>`;
   }
 
   function studyNowPanel(compact = false) {
-    return `<section class="dl-study-now${compact ? " is-compact" : ""}" data-luria-study-panel>
+    return `<section class="dl-study-now${compact ? " is-compact" : ""}" data-traube-study-panel>
       <div class="dl-study-now-head">
         <span class="dl-heading-icon" aria-hidden="true">${icon("target")}</span>
         <div><small>Sessão guiada</small><h3>Estudar agora</h3></div>
       </div>
       <p>Escolha seu tempo. Leco organiza a sessão para você.</p>
       <div class="dl-study-time-options" role="group" aria-label="Tempo disponível">
-        <button type="button" data-luria-study-time="15">15 min</button>
-        <button type="button" data-luria-study-time="30" class="active">30 min</button>
-        <button type="button" data-luria-study-time="60">1 hora</button>
-        <button type="button" data-luria-study-time="90">1h30</button>
-        <button type="button" data-luria-study-time="120">2 horas</button>
-        <button type="button" data-luria-study-time="999">Completar o dia</button>
+        <button type="button" data-traube-study-time="15">15 min</button>
+        <button type="button" data-traube-study-time="30" class="active">30 min</button>
+        <button type="button" data-traube-study-time="60">1 hora</button>
+        <button type="button" data-traube-study-time="90">1h30</button>
+        <button type="button" data-traube-study-time="120">2 horas</button>
+        <button type="button" data-traube-study-time="999">Completar o dia</button>
       </div>
-      <button type="button" class="dl-primary dl-study-now-start" data-luria-study-start>Estudar agora</button>
+      <button type="button" class="dl-primary dl-study-now-start" data-traube-study-start>Estudar agora</button>
     </section>`;
   }
 
@@ -232,7 +232,7 @@
     const today = new Date();
     const todayISO = dayISO(today);
     const todayItems = items().filter((item) => item.activity_date === todayISO);
-    const dayLessons = window.luriaDashboardDayLessons?.[todayISO] || { completed: 0, total: 0 };
+    const dayLessons = window.traubeDashboardDayLessons?.[todayISO] || { completed: 0, total: 0 };
     const done = dayLessons.completed; const total = dayLessons.total;
     const pct = total ? Math.round(done / total * 100) : 0;
     return `<div class="dl-grid dl-layout-1"><div class="dl-agenda-study-pair dl-agenda-study-pair-1"><section class="dl-card dl-agenda-large">${heading(icon("calendar"), "Atividades de hoje", "/cronograma/")}${activityList(todayItems, 10, false)}</section><section class="dl-card dl-study-now-card dl-study-now-card-main">${studyNowPanel()}</section></div><div class="dl-side"><section class="dl-card dl-day-summary">${heading(icon("clipboard"), "Resumo do dia")}<div class="dl-summary-body">${ring(pct, `${pct}%`, "aulas concluídas")}<div><strong>${total} aula${total === 1 ? "" : "s"} hoje</strong><span>${done} concluída${done === 1 ? "" : "s"}</span><span>${todayItems.length} atividade${todayItems.length === 1 ? "" : "s"} na agenda</span></div></div></section>${streak(data)}</div>${areas(data)}${cat(data, true)}</div>`;
@@ -321,7 +321,7 @@
     controls.id = "dl-topbar-controls";
     controls.className = "dl-topbar-controls";
     controls.innerHTML = `<div class="dl-timer dl-stopwatch"><span class="dl-timer-icon" aria-hidden="true">◷</span><span class="dl-timer-time">00:00</span><button type="button" class="dl-timer-toggle" aria-label="Iniciar cronômetro">▶</button><button type="button" class="dl-timer-reset" aria-label="Zerar cronômetro">⌄</button></div>`;
-    topbar.insertBefore(controls, topbar.querySelector(".luria-notifications"));
+    topbar.insertBefore(controls, topbar.querySelector(".traube-notifications"));
     const stopwatch = controls.querySelector(".dl-stopwatch");
     let seconds = 0, watchInterval = null;
     const watchDisplay = stopwatch.querySelector(".dl-timer-time");
@@ -375,7 +375,7 @@
     }
     schedule();
   });
-  window.addEventListener("luria:dashboard-data", schedule);
+  window.addEventListener("traube:dashboard-data", schedule);
   window.addEventListener("docmap:ready", () => { apply(); enhanceShell(); loadDailyChallengeAccuracy(); }, { once: true });
   apply();
   enhanceShell();
@@ -393,9 +393,9 @@
         align-items:center!important;
       }
       html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .menu-open,
-      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-pomodoro-toggle,
-      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notification-toggle,
-      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle{
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-pomodoro-toggle,
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-notification-toggle,
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-profile-toggle{
         width:44px!important;
         height:44px!important;
         min-width:44px!important;
@@ -416,7 +416,7 @@
         font-size:21px!important;
         line-height:1!important;
       }
-      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications{
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-notifications{
         position:relative!important;
         inset:auto!important;
         height:44px!important;
@@ -428,8 +428,8 @@
         margin:0 0 0 auto!important;
         transform:none!important;
       }
-      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-pomodoro-top,
-      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-top{
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-pomodoro-top,
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-profile-top{
         height:44px!important;
         min-height:44px!important;
         display:flex!important;
@@ -437,16 +437,16 @@
         align-self:center!important;
         margin:0!important;
       }
-      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-pomodoro-icon,
-      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-pomodoro-icon svg{
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-pomodoro-icon,
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-pomodoro-icon svg{
         width:22px!important;
         height:22px!important;
       }
-      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notification-toggle svg{
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-notification-toggle svg{
         width:22px!important;
         height:22px!important;
       }
-      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle{
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-profile-toggle{
         font-size:22px!important;
         line-height:1!important;
       }

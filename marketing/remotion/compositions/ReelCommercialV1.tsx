@@ -37,7 +37,7 @@ export const ReelCommercialV1: React.FC = () => {
       }}
     >
       {/* 1. Official High-Energy Soundtrack (Synced to transitions & beat drops) */}
-      <Audio src={staticFile('audio/luria-soundtrack-full-30s.mp3')} volume={0.92} />
+      <Audio src={staticFile('audio/traube-soundtrack-full-30s.mp3')} volume={0.92} />
 
       {/* 2. Cinematic Deep Medical Ambient Background */}
       <div
@@ -569,7 +569,7 @@ export const ReelCommercialV1: React.FC = () => {
                   boxShadow: '0 0 35px rgba(24, 72, 136, 0.8)'
                 }}
               >
-                luria.med.br • Link na bio
+                traube.med.br • Link na bio
               </div>
             </div>
           );

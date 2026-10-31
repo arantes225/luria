@@ -1,5 +1,5 @@
 /* Study Rats stage 3. Original sprite composition and progress rules preserved. */
-@layer luria-ui-education {
+@layer traube-ui-education {
 body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1 {
  #studyrats-card {border-top:3px solid color-mix(in srgb,var(--sf-violet) 45%,var(--color-border))!important;}
  #studyrats-card .friends-ref-studyrats-head {align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:18px;}
@@ -53,7 +53,7 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
 }
 
 /* Reference composition: community surfaces, preserving existing controls. */
-@layer luria-ui-education {
+@layer traube-ui-education {
 body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1.social-composition {
 
  #studyrats-card {grid-column:1/-1;grid-row:3;padding:22px!important;border:1px solid var(--color-border)!important;border-radius:20px!important;background:var(--color-surface)!important;box-shadow:none!important;}
@@ -89,7 +89,7 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
 }
 }
 
-@layer luria-ui-education {
+@layer traube-ui-education {
 body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1.social-composition {
  #studyrats-customizer {border-radius:18px;background:var(--color-surface-elevated);}
  #studyrats-customizer .studyrats-rat-picker-controls {padding:16px;border:1px solid var(--color-border);border-radius:14px;background:var(--color-surface);}

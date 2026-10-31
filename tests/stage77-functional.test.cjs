@@ -123,7 +123,7 @@ test('Admin monetary conversion accepts BRL and rejects invalid values rather th
 
 test('Missing legacy resources are removed; monitor selects the actual patient image',t=>{
  assert.equal(read('ambientacao.html').includes('assets/css/ambientacao.css'),false);
- for(const file of ['plantao.html','plantao/sala-emergencia/index.html','plantao/luriazap/index.html']){
+ for(const file of ['plantao.html','plantao/sala-emergencia/index.html','plantao/traubezap/index.html']){
   const {w,d}=page(t,file);assert.equal(read(file).includes('assets/img/plantao/awake.webp'),false);
   assert.equal(d.getElementById('plantao-patient-image').hasAttribute('src'),false);
   const monitor=read('assets/js/plantao-monitor.js');

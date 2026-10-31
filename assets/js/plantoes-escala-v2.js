@@ -129,7 +129,7 @@
     const fields=s=>[s.date,s.startTime,s.endDate,s.endTime,s.place,s.payer,s.sector,s.duration,s.value,s.withheldTax,s.payerFee,s.receivedAmount,s.expectedDate,s.notes];
     const csv=[header,...shifts.map(fields)].map(row=>row.map(v=>`"${String(v==null?"":v).replace(/"/g,'""')}"`).join(";")).join("\r\n");
     const url=URL.createObjectURL(new Blob(["\ufeff"+csv],{type:"text/csv;charset=utf-8"}));
-    const a=document.createElement("a");a.href=url;a.download=`luria_escala_${C.isoToday()}.csv`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+    const a=document.createElement("a");a.href=url;a.download=`traube_escala_${C.isoToday()}.csv`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   }
   function init(){
     if(!$("shift-calendar"))return;

@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-Is6jYtJtfp6v4GyKaoM3F+dZoMTxWHxBFiEfa7vVzmE=' 'sha256-9epazHXJrc/oKo5vaIVCUyJ8eXBrmS4akNte7LRPJl8='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-Is6jYtJtfp6v4GyKaoM3F+dZoMTxWHxBFiEfa7vVzmE=' 'sha256-zfhIt+BKV49D8/M0ygSTnJ1wYIKPQDihrW8wgW75lN4='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,10 +21,10 @@
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
 
-  <link id="luria-global-master-css" rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
+  <link id="traube-global-master-css" rel="stylesheet" href="/assets/css/traube-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/dashboard-layouts.css?v=20261020-card-grid-all">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261018-dashboard1">
-<script defer src="/assets/js/luria-brand-v5.js?v=20261021-dashboard-layout2"></script>
+<script defer src="/assets/js/traube-brand-v5.js?v=20261021-dashboard-layout2"></script>
   <link rel="canonical" href="/dashboard/">
 <script>(function(){try{if(location.pathname.endsWith("/dashboard.html"))history.replaceState(null,"","/dashboard/"+location.search+location.hash);}catch(e){}})();</script>
 <script src="/assets/js/medical-icons.js?v=2.0"></script>
@@ -47,7 +47,7 @@ body[data-page="dashboard"] .ui-page-header{
 
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
 </head>
-<body data-ui-nav="v2" data-ui-context="study" id="luria-dashboard" data-page="dashboard" data-ui="v2">
+<body data-ui-nav="v2" data-ui-context="study" id="traube-dashboard" data-page="dashboard" data-ui="v2">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
 <script defer src="/assets/js/ui-navigation-v2.js?v=20261021-chat1"></script>
   <a class="ui-skip-link" href="/dashboard/#dashboard-content">Ir para o conteúdo</a>
@@ -59,10 +59,10 @@ body[data-page="dashboard"] .ui-page-header{
     <main id="dashboard-content" class="main" tabindex="-1">
       <div class="page">
 
-        <section class="luria-page-spotlight luria-dashboard-spotlight" aria-label="Dashboard">
-          <div class="luria-page-spotlight-copy">
+        <section class="traube-page-spotlight traube-dashboard-spotlight" aria-label="Dashboard">
+          <div class="traube-page-spotlight-copy">
             <strong>Dashboard</strong>
-            <small class="luria-page-spotlight-helper">Seu dia de estudos em um só lugar.</small>
+            <small class="traube-page-spotlight-helper">Seu dia de estudos em um só lugar.</small>
           </div>
         </section>
 
@@ -109,7 +109,7 @@ body[data-page="dashboard"] .ui-page-header{
       var root=document.getElementById("dashboard-alternative");
       if((!root||!root.innerHTML.trim())&&fallback) fallback.hidden=false;
     });
-    window.addEventListener("luria:dashboard-data",function(){
+    window.addEventListener("traube:dashboard-data",function(){
       clearTimeout(timer);
       if(fallback) fallback.hidden=true;
     });

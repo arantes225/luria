@@ -4,14 +4,14 @@ const html=fs.readFileSync('dashboard/index.html','utf8');
 const cardsCode=fs.readFileSync('assets/js/dashboard-cards.js','utf8');
 const preferenceCode=fs.readFileSync('assets/js/dashboard-preferences.js','utf8');
 function fixture(t,{preference='cards',presentation=false}={}){
-  const dom=new JSDOM(html,{url:'https://luria.test/dashboard/',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:new VirtualConsole()});
+  const dom=new JSDOM(html,{url:'https://traube.test/dashboard/',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:new VirtualConsole()});
   const w=dom.window,d=w.document;let id=null,settle;
-  const storage=new Map([['luria:dashboard-layout:A',preference]]);
+  const storage=new Map([['traube:dashboard-layout:A',preference]]);
   w.TraubeLocalOwnerStore={get ownerId(){return id;},ready:new Promise(resolve=>{settle=resolve}),key:base=>id?base+':'+id:null,read:base=>id?storage.get(base+':'+id):null,write:()=>true,remove:()=>{}};
   if(presentation)d.body.dataset.dashboardPresentationReady='true';
   w.eval(preferenceCode);w.eval(cardsCode);
   t.after(()=>w.close());
-  return {w,d,resolve:async()=>{id='A';settle(id);await Promise.resolve();},ready:()=>{d.body.dataset.dashboardPresentationReady='true';w.dispatchEvent(new w.Event('luria:dashboard-presentation-ready'));}};
+  return {w,d,resolve:async()=>{id='A';settle(id);await Promise.resolve();},ready:()=>{d.body.dataset.dashboardPresentationReady='true';w.dispatchEvent(new w.Event('traube:dashboard-presentation-ready'));}};
 }
 test('saved Cards is never preceded by Classic while Auth resolves the account',async t=>{
   const f=fixture(t);assert.equal(f.d.body.dataset.dashboardView,'pending');

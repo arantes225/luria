@@ -118,7 +118,7 @@
     catch{status.textContent="Selecione os dígitos exibidos para copiar.";}
   });
   document.addEventListener("visibilitychange",()=>{if(!document.hidden)refresh();});
-  window.addEventListener("luria:owner-changed",()=>{
+  window.addEventListener("traube:owner-changed",()=>{
     epoch++;owner="";issuing=false;
     if(timer)window.clearInterval(timer);timer=null;
     wipe("Atualizando conta…");

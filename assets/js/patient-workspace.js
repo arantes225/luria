@@ -7,7 +7,7 @@
  * opened in a panel while their calculations remain owned by their modules.
  */
 (() => {
-  const KEY = "luria:temporary-patient:v1";
+  const KEY = "traube:temporary-patient:v1";
   const page = document.querySelector('body[data-page="trabalho_paciente"]');
   const safe = value => String(value ?? "").replace(/[&<>\"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[char]));
   const normalize = value => String(value ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
@@ -35,8 +35,8 @@
     return state;
   };
   const read = () => { try { return migrate(JSON.parse(sessionStorage.getItem(KEY) || "null")); } catch { return emptyState(); } };
-  const write = state => { state.updatedAt = now(); try { sessionStorage.setItem(KEY,JSON.stringify(state)); } catch { return false; } window.dispatchEvent(new CustomEvent("luria:patient-context-changed",{detail:{state:clone(state)}})); return true; };
-  const clear = () => { try { sessionStorage.removeItem(KEY); } catch {} window.dispatchEvent(new CustomEvent("luria:patient-context-changed",{detail:{state:emptyState()}})); };
+  const write = state => { state.updatedAt = now(); try { sessionStorage.setItem(KEY,JSON.stringify(state)); } catch { return false; } window.dispatchEvent(new CustomEvent("traube:patient-context-changed",{detail:{state:clone(state)}})); return true; };
+  const clear = () => { try { sessionStorage.removeItem(KEY); } catch {} window.dispatchEvent(new CustomEvent("traube:patient-context-changed",{detail:{state:emptyState()}})); };
   const update = updater => { const state=read(); updater(state); write(state); return clone(state); };
   const addEvent = (state,kind,title,detail) => state.timeline.unshift({id:uid("EVT"),at:now(),kind,title,detail});
   const typeLabels = {weight:"Peso",height:"Altura",sodium:"Sódio",potassium:"Potássio",creatinine:"Creatinina",glucose:"Glicose",lactate:"Lactato",urineOutput:"Diurese",heartRate:"Frequência cardíaca",systolicBP:"PA sistólica",diastolicBP:"PA diastólica",temperature:"Temperatura",oxygenSat:"SpO₂",other:"Outro"};
@@ -101,6 +101,6 @@
     root.querySelector("[data-close-tool]")?.addEventListener("click",()=>{const dialog=root.querySelector("#patient-tool-dialog");if(typeof dialog.close === "function") dialog.close();else dialog.removeAttribute("open");});
     bindTools();
   };
-  window.addEventListener("luria:patient-context-changed",render);
+  window.addEventListener("traube:patient-context-changed",render);
   render();
 })();

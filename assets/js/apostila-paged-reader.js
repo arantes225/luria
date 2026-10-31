@@ -15,34 +15,34 @@
   document.head.appendChild(stylesheet);
 
   function init() {
-    if (!main.isConnected || main.closest(".luria-reader-shell")) return;
+    if (!main.isConnected || main.closest(".traube-reader-shell")) return;
     const shell = document.createElement("div");
-    shell.className = "luria-reader-shell";
+    shell.className = "traube-reader-shell";
     const bar = document.createElement("div");
-    bar.className = "luria-reader-toolbar";
+    bar.className = "traube-reader-toolbar";
     bar.setAttribute("role", "group");
     bar.setAttribute("aria-label", "Controles de leitura da apostila");
     bar.innerHTML =
-      '<div class="luria-reader-heading"><strong>Leitura da apostila</strong><small>Formato de livro digital</small></div>' +
-      '<div class="luria-reader-controls"><button type="button" class="luria-reader-btn luria-reader-toggle" data-reader-toggle aria-pressed="true">Leitura contínua</button>' +
-      '<nav class="luria-reader-navigation" data-reader-nav aria-label="Navegar entre páginas">' +
-      '<button type="button" class="luria-reader-btn" data-reader-prev aria-label="Página anterior">← Anterior</button>' +
-      '<span class="luria-reader-page-label" data-reader-label aria-live="polite">Página 1 de 1</span>' +
-      '<input class="luria-reader-jump" type="range" min="1" max="1" value="1" aria-label="Ir para página da apostila">' +
-      '<button type="button" class="luria-reader-btn" data-reader-next aria-label="Próxima página">Próxima →</button></nav></div>';
+      '<div class="traube-reader-heading"><strong>Leitura da apostila</strong><small>Formato de livro digital</small></div>' +
+      '<div class="traube-reader-controls"><button type="button" class="traube-reader-btn traube-reader-toggle" data-reader-toggle aria-pressed="true">Leitura contínua</button>' +
+      '<nav class="traube-reader-navigation" data-reader-nav aria-label="Navegar entre páginas">' +
+      '<button type="button" class="traube-reader-btn" data-reader-prev aria-label="Página anterior">← Anterior</button>' +
+      '<span class="traube-reader-page-label" data-reader-label aria-live="polite">Página 1 de 1</span>' +
+      '<input class="traube-reader-jump" type="range" min="1" max="1" value="1" aria-label="Ir para página da apostila">' +
+      '<button type="button" class="traube-reader-btn" data-reader-next aria-label="Próxima página">Próxima →</button></nav></div>';
     const footer = document.createElement("nav");
-    footer.className = "luria-reader-footer";
+    footer.className = "traube-reader-footer";
     footer.setAttribute("aria-label", "Navegação inferior entre páginas");
     footer.innerHTML =
-      '<button type="button" class="luria-reader-btn" data-reader-prev aria-label="Página anterior">← Anterior</button>' +
-      '<span class="luria-reader-page-label" data-reader-label aria-live="off">Página 1 de 1</span>' +
-      '<button type="button" class="luria-reader-btn" data-reader-next aria-label="Próxima página">Próxima →</button>';
+      '<button type="button" class="traube-reader-btn" data-reader-prev aria-label="Página anterior">← Anterior</button>' +
+      '<span class="traube-reader-page-label" data-reader-label aria-live="off">Página 1 de 1</span>' +
+      '<button type="button" class="traube-reader-btn" data-reader-next aria-label="Próxima página">Próxima →</button>';
 
     main.parentNode.insertBefore(shell, main);
     shell.append(bar, main, footer);
     const toggle = bar.querySelector("[data-reader-toggle]");
     const nav = bar.querySelector("[data-reader-nav]");
-    const slider = bar.querySelector(".luria-reader-jump");
+    const slider = bar.querySelector(".traube-reader-jump");
     main.setAttribute("tabindex", "0");
     main.setAttribute("aria-label", "Texto da apostila: navegue por páginas com as setas");
     const prevs = shell.querySelectorAll("[data-reader-prev]");
@@ -57,11 +57,11 @@
     let hasNavigated = false;
 
     try {
-      mode = localStorage.getItem("luria-apostila-reading-mode") === "continuous" ? "continuous" : "paged";
+      mode = localStorage.getItem("traube-apostila-reading-mode") === "continuous" ? "continuous" : "paged";
     } catch {}
     if (new URLSearchParams(location.search).get("embedded") === "1") mode = "continuous";
 
-    const isPaged = () => mode === "paged" && !document.body.classList.contains("luria-dual-active");
+    const isPaged = () => mode === "paged" && !document.body.classList.contains("traube-dual-active");
     function updateControls() {
       const active = isPaged();
       nav.hidden = !active;
@@ -83,10 +83,10 @@
       const right = parseFloat(style.paddingRight) || 0;
       const column = Math.max(220, main.clientWidth - left - right);
       step = column + gap;
-      main.style.setProperty("--luria-column-width", column + "px");
-      main.style.setProperty("--luria-column-gap", gap + "px");
+      main.style.setProperty("--traube-column-width", column + "px");
+      main.style.setProperty("--traube-column-gap", gap + "px");
       const pageHeight = Math.max(430, Math.min(920, window.innerHeight - (window.innerWidth <= 640 ? 220 : 250)));
-      main.style.setProperty("--luria-reader-height", pageHeight + "px");
+      main.style.setProperty("--traube-reader-height", pageHeight + "px");
     }
 
     function measure() {
@@ -123,9 +123,9 @@
 
     function setMode(next, persist = true) {
       mode = next === "continuous" ? "continuous" : "paged";
-      document.body.classList.toggle("luria-reader-paged", mode === "paged");
+      document.body.classList.toggle("traube-reader-paged", mode === "paged");
       if (persist) {
-        try { localStorage.setItem("luria-apostila-reading-mode", mode); } catch {}
+        try { localStorage.setItem("traube-apostila-reading-mode", mode); } catch {}
       }
       if (mode === "paged") {
         current = 0;
@@ -217,7 +217,7 @@
     }
     if (typeof MutationObserver !== "undefined") {
       const observer = new MutationObserver(() => {
-        if (!document.body.classList.contains("luria-dual-active")) requestMeasure();
+        if (!document.body.classList.contains("traube-dual-active")) requestMeasure();
         updateControls();
       });
       observer.observe(document.body, {attributes:true, attributeFilter:["class"]});

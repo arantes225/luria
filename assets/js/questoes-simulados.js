@@ -85,7 +85,7 @@ const qsResolutionState = {
 let AREA_OPTIONS =
   window.TraubeStudyMode
     ?.generalAreasFor(
-      window.luriaStudyMode
+      window.traubeStudyMode
       || "medicine"
     )
   || [
@@ -15860,7 +15860,7 @@ function errorNotebookSkipStorageKey(
     return null;
   }
 
-  return `luria:error-notebook-skips:${qsState.user.id}:${setId}`;
+  return `traube:error-notebook-skips:${qsState.user.id}:${setId}`;
 }
 
 
@@ -17364,13 +17364,13 @@ async function initQuestionSets() {
       window.TraubeStudyMode
         .generalAreasFor(
           mode
-          || window.luriaStudyMode
+          || window.traubeStudyMode
           || "medicine"
         );
   }
 
   window.addEventListener(
-    "luria:study-mode",
+    "traube:study-mode",
     (event) => {
       AREA_OPTIONS =
         event.detail?.generalAreas

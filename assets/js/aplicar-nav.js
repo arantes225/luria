@@ -52,7 +52,7 @@
     }
 
     // Dispara evento para que os módulos internos (Vocação, Radar, Editais) possam se recalibrar
-    window.dispatchEvent(new CustomEvent("luria:aplicar-tab-changed", {
+    window.dispatchEvent(new CustomEvent("traube:aplicar-tab-changed", {
       detail: { activeTab: tabId }
     }));
   }

@@ -2,7 +2,7 @@
 
 Registro da entrega inicial em homologação. A publicação posterior autorizada pelo usuário está descrita em [social-production.md](social-production.md); as migrações incrementais citadas abaixo foram movidas para supabase/staging-migrations.
 
-O usuário priorizou implementar as funcionalidades no layout atual e revisar o desenho depois. Esta entrega foi publicada somente em https://luria-homologacao.lfab225.workers.dev/amigos/. Não houve publicação em produção, push ou alteração do banco de produção.
+O usuário priorizou implementar as funcionalidades no layout atual e revisar o desenho depois. Esta entrega foi publicada somente em https://traube-homologacao.lfab225.workers.dev/amigos/. Não houve publicação em produção, push ou alteração do banco de produção.
 
 ## Implementado nesta etapa
 

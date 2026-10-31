@@ -20,13 +20,13 @@ async function controlledFailure(value){await fetch('/__pwa_control?failure='+va
 let registration;
 document.querySelector('#register').addEventListener('click',async()=>{try{
   output.textContent='Registrando';
-  await write('luria-pwa-v281-mobile-flow-static','/assets/css/ui-app.css?v=stage75','legacy');
-  await write('luria-weekly-content-v1','/content/weekly/old.json','{}','application/json');
+  await write('traube-pwa-v281-mobile-flow-static','/assets/css/ui-app.css?v=stage75','legacy');
+  await write('traube-weekly-content-v1','/content/weekly/old.json','{}','application/json');
   registration=await navigator.serviceWorker.register('/service-worker.js',{scope:'/',updateViaCache:'none'});
   await navigator.serviceWorker.ready;await waitForController(()=>!!navigator.serviceWorker.controller);
   await waitForActivation(navigator.serviceWorker.controller);
   const names=await caches.keys();
-  assert(!names.includes('luria-pwa-v281-mobile-flow-static')&&!names.includes('luria-weekly-content-v1'),'PASS: registro, ativação e limpeza dos caches antigos');
+  assert(!names.includes('traube-pwa-v281-mobile-flow-static')&&!names.includes('traube-weekly-content-v1'),'PASS: registro, ativação e limpeza dos caches antigos');
   assert(navigator.serviceWorker.controller.state==='activated','PASS: página controlada pelo worker real');
   document.querySelector('#run').disabled=false;
 }catch(error){output.textContent+='\\nFAIL: '+error.message;}});
@@ -36,7 +36,7 @@ document.querySelector('#run').addEventListener('click',async()=>{try{
   const js='/assets/js/weekly-content.js?v=stage75';
   assert((await fetch(js)).status===200,'PASS: JavaScript público online');
   const page=await fetch('/flashcards/');assert(page.status===200&&await page.text(),'PASS: HTML público online');
-  const current='luria-pwa-v282-cache-security';
+  const current='traube-pwa-v282-cache-security';
   await write(current+'-static','/assets/css/ui-app.css','old');
   await write(current+'-runtime','/assets/css/ui-app.css?v=stage75-new','new');
   // Disable HTTP cache for synthetic account requests: this suite isolates the
@@ -71,14 +71,14 @@ document.querySelector('#update').addEventListener('click',async()=>{try{
   await waitForController(()=>!!navigator.serviceWorker.controller&&navigator.serviceWorker.controller!==old);
   await waitForActivation(navigator.serviceWorker.controller);
   const names=await caches.keys();
-  assert(!names.includes('luria-pwa-v282-cache-security-runtime'),'PASS: atualização remove o runtime da versão anterior');
+  assert(!names.includes('traube-pwa-v282-cache-security-runtime'),'PASS: atualização remove o runtime da versão anterior');
   assert(names.some(name=>name.includes('fixture-update')),'PASS: nova versão ativa com namespace próprio');
   assert(document.querySelector('textarea').value==='Anotação sintética preservada','PASS: atualização não recarrega a página');
   output.textContent+='\\nRESULTADO: todas as verificações Chromium passaram';
 }catch(error){output.textContent+='\\nFAIL: '+error.message;}});
 document.querySelector('#cleanup').addEventListener('click',async()=>{try{
   for(const reg of await navigator.serviceWorker.getRegistrations())await reg.unregister();
-  for(const name of await caches.keys())if(name.startsWith('luria-'))await caches.delete(name);
+  for(const name of await caches.keys())if(name.startsWith('traube-'))await caches.delete(name);
   output.textContent+='\\nLimpeza da origem descartável concluída';
 }catch(error){output.textContent+='\\nFAIL: '+error.message;}});
 document.addEventListener('securitypolicyviolation',()=>{document.body.dataset.cspError='true';});
@@ -99,7 +99,7 @@ const server = http.createServer((req, res) => {
   }
   if (url.pathname === '/__pwa_probe.js') return send('text/javascript', probe, 'no-store');
   if (url.pathname === '/') return send('text/html', '<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="'+csp+'"><title>Traube — verificação PWA isolada</title></head><body><h1>Etapa 7.5 — Chromium isolado</h1><p>Worker real, dados sintéticos e falhas de rede controladas.</p><button id="register">1. Registrar worker</button><button id="run" disabled>2. Verificar cache e segurança</button><button id="update" disabled>3. Verificar atualização</button><button id="cleanup">4. Limpar origem de teste</button><p><textarea>Anotação sintética preservada</textarea></p><pre><output>Aguardando registro</output></pre><button id="fail-navigation">Simular falha para navegação</button><button id="restore-network">Restaurar rede</button><p><a href="/dashboard/?v=stage75-navigation">Navegação sintética pública</a></p><script src="/__pwa_probe.js"></script></body></html>', 'no-store');
-  if (url.pathname === '/service-worker.js') return send('text/javascript', revision === 1 ? source : source.replace('luria-pwa-v282-cache-security', 'luria-pwa-v282-cache-security-fixture-update'), 'no-store');
+  if (url.pathname === '/service-worker.js') return send('text/javascript', revision === 1 ? source : source.replace('traube-pwa-v282-cache-security', 'traube-pwa-v282-cache-security-fixture-update'), 'no-store');
   if (failing) return req.socket.destroy();
   if (url.pathname === '/dashboard/' && url.searchParams.get('v') === 'stage75-navigation') return send('text/html', '<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="'+csp+'"><title>Navegação sintética</title></head><body><h1>Navegação sintética renderizada</h1><p>Documento público retornado pelo worker real.</p><a href="/">Voltar ao teste</a></body></html>', 'public, max-age=0');
   if (req.headers.authorization) return send('text/css', req.headers.authorization.replace('Bearer ', ''), 'private, no-store');

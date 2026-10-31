@@ -42,7 +42,7 @@
       const { data, error } = await sb.auth.getSession();
       if (error || !data.session) return;
 
-      window.location.replace(window.luriaSitePath?.("/dashboard/") || "/dashboard/");
+      window.location.replace(window.traubeSitePath?.("/dashboard/") || "/dashboard/");
     } catch (error) {
       console.warn("Não foi possível verificar a sessão na landing page:", error);
     }

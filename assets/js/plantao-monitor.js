@@ -98,8 +98,8 @@
     if (motionImg && src && motionImg.getAttribute('src') !== src) motionImg.src = src;
     if (img) {
       img.alt = `Ilustração do paciente ${unconscious ? 'desacordado' : 'acordado'} no leito`;
-      img.dataset.luriaEyes=unconscious?"closed":"auto";
-      img.dataset.luriaRr=String(vitals.rr??"");
+      img.dataset.traubeEyes=unconscious?"closed":"auto";
+      img.dataset.traubeRr=String(vitals.rr??"");
     }
     const badge = document.getElementById('plantao-consciousness');
     if (badge) {

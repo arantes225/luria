@@ -1550,7 +1550,7 @@ body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-heatmap
 [data-stats-panel="flashcards"] #flash-subject-table .stats-table :is(th,td):first-child {min-width:10rem;white-space:normal;}
 
 /* General statistics: content-sized cards keep wide data inside their panels. */
-@layer luria-ui-education {
+@layer traube-ui-education {
   body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-layout {
     display:grid!important;
     grid-template-columns:repeat(2,minmax(0,1fr))!important;

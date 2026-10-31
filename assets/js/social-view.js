@@ -24,9 +24,9 @@
   const options=$('social-voice-options')?.querySelector('summary');if(options&&!options.querySelector('svg')){options.setAttribute('aria-label','Configurações de áudio');options.title='Configurações de áudio';options.innerHTML=svg('settings');}
  }
  const actions=$('social-message-form')?.querySelector('.social-actions');if(actions){const attach=actions.querySelector('label');const input=attach.querySelector('input');attach.setAttribute('aria-label','Anexar arquivo');attach.title='Anexar arquivo';attach.replaceChildren();attach.insertAdjacentHTML('beforeend',svg('attach'));attach.append(input);const send=actions.querySelector('button[type="submit"]');send.setAttribute('aria-label','Enviar mensagem');send.title='Enviar mensagem';send.innerHTML=svg('send');}
- window.addEventListener('luria:room-rendered',()=>{modes();controls();resize();});window.addEventListener('luria:voice-state',controls);
- window.addEventListener('luria:visual-close',e=>close(e.detail));window.addEventListener('luria:visual-open',e=>open(e.detail));
- window.addEventListener('luria:community-tab',e=>{const heading=document.querySelector('.luria-page-spotlight-copy strong');if(heading)heading.textContent=e.detail.area==='rooms'?'Salas':e.detail.area==='groups'?'Grupos':'Amigos';});
+ window.addEventListener('traube:room-rendered',()=>{modes();controls();resize();});window.addEventListener('traube:voice-state',controls);
+ window.addEventListener('traube:visual-close',e=>close(e.detail));window.addEventListener('traube:visual-open',e=>open(e.detail));
+ window.addEventListener('traube:community-tab',e=>{const heading=document.querySelector('.traube-page-spotlight-copy strong');if(heading)heading.textContent=e.detail.area==='rooms'?'Salas':e.detail.area==='groups'?'Grupos':'Amigos';});
  // Keep the compact chat inside the visible viewport when the mobile keyboard opens.
  const viewport=window.visualViewport;let viewportFrame=0,viewportKey='';
  function measureViewport(){viewportFrame=0;const height=Math.max(0,Math.round(viewport?.height||window.innerHeight)),top=Math.max(0,Math.round(viewport?.offsetTop||0));const key=height+':'+top;if(key===viewportKey)return;viewportKey=key;document.body.style.setProperty('--sl-visible-height',height+'px');document.body.style.setProperty('--sl-visible-top',top+'px');document.body.classList.toggle('sl-short-viewport',height<420);}

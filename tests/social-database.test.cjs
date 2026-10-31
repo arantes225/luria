@@ -13,7 +13,7 @@ test('social database: real PostgreSQL authorization, preservation, concurrency 
   await as(null);await assert.rejects(command('create_room',{name:'Denied'}),/Autenticação/);await assert.rejects(snapshot(),/Autenticação/);
  });
  await t.test('pending requests require recipient acceptance, blocks remove edges and suggestions require opt in',async()=>{
-  await as(A);await db.query('select private.add_friend_by_luria_id($1)',['FRIEND02']);
+  await as(A);await db.query('select private.add_friend_by_traube_id($1)',['FRIEND02']);
   assert.equal((await snapshot()).requests[0].incoming,false);
   const pending=(await snapshot()).requests[0];await command('friend_accept',{id:pending.id});assert.equal((await snapshot()).requests.length,1);
   await as(B);await command('friend_accept',{id:pending.id});assert.equal((await snapshot()).requests.length,0);

@@ -100,7 +100,7 @@ test("automatic capture uses native camera resolution and requests continuous fo
 });
 
 test("installed PWA release and ECG assets are cache-busted together",()=>{
-  const workerRelease = worker.match(/const CACHE_VERSION = "luria-pwa-([^"]+)"/)?.[1];
+  const workerRelease = worker.match(/const CACHE_VERSION = "traube-pwa-([^"]+)"/)?.[1];
   const clientRelease = pwa.match(/const release = "([^"]+)"/)?.[1];
   assert.ok(workerRelease, "O Service Worker deve possuir identificador de versão");
   assert.equal(workerRelease, clientRelease, "Versões do PWA e do Service Worker devem ser iguais");

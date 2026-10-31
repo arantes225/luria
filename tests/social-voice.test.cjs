@@ -5,7 +5,7 @@ test('voice authorization, audio-only signaling, room isolation, single connecti
  const {default:worker,RoomVoice}=await import('../cloudflare/study-voice/worker.mjs');
  const original=global.fetch;t.after(()=>{global.fetch=original;});let sessions=0,closes=0,alarms=[],stored={};
  const ctx={blockConcurrencyWhile:fn=>fn(),storage:{get:async key=>stored[key],put:async(k,v)=>{stored[k]=v;},setAlarm:async when=>alarms.push(when),deleteAlarm:async()=>{}}};
- const env={ALLOWED_ORIGINS:'https://luria.test',SUPABASE_URL:'https://db.test',SUPABASE_PUBLISHABLE_KEY:'public-test-key',SFU_APP_ID:'test-app',SFU_APP_SECRET:'test-secret',VOICE_ACCOUNTING_KEY:'server-accounting-secret'};
+ const env={ALLOWED_ORIGINS:'https://traube.test',SUPABASE_URL:'https://db.test',SUPABASE_PUBLISHABLE_KEY:'public-test-key',SFU_APP_ID:'test-app',SFU_APP_SECRET:'test-secret',VOICE_ACCOUNTING_KEY:'server-accounting-secret'};
  let active=A;
  global.fetch=async(url,options={})=>{
   if(url==='https://db.test/auth/v1/user')return Response.json({id:active});
@@ -21,7 +21,7 @@ test('voice authorization, audio-only signaling, room isolation, single connecti
   return Response.json({});
  };
  const object=new RoomVoice(ctx,env);await new Promise(r=>setImmediate(r));env.ROOM_VOICE={idFromName:name=>{assert.equal(name,ROOM);return name;},get:()=>({fetch:(url,options)=>object.fetch(new Request(url,options))})};
- const request=async(action,body={},origin='https://luria.test')=>worker.fetch(new Request(`https://voice.test/rooms/${ROOM}/${action}`,{method:'POST',headers:{Origin:origin,Authorization:'Bearer fixture','Content-Type':'application/json'},body:JSON.stringify({client_id:active,...body})}),env);
+ const request=async(action,body={},origin='https://traube.test')=>worker.fetch(new Request(`https://voice.test/rooms/${ROOM}/${action}`,{method:'POST',headers:{Origin:origin,Authorization:'Bearer fixture','Content-Type':'application/json'},body:JSON.stringify({client_id:active,...body})}),env);
  await t.test('reject unknown origin and nonmembers before SFU allocation',async()=>{
   assert.equal((await request('join',{},'https://evil.test')).status,403);active=C;assert.equal((await request('join')).status,403);assert.equal(sessions,0);active=A;
   assert.equal((await request('ice',{},'https://evil.test')).status,403);active=C;assert.equal((await request('ice')).status,403);active=A;
@@ -29,7 +29,7 @@ test('voice authorization, audio-only signaling, room isolation, single connecti
  await t.test('serialize concurrent joins and disallow duplicate tabs',async()=>{
   const results=await Promise.all([request('join'),request('join')]);assert.equal(results[0].status,200);assert.equal(results[1].status,200);assert.equal(sessions,1);
   assert.equal((await request('join',{client_id:C})).status,409);
-  const prefixed=await worker.fetch(new Request(`https://voice.test/api/study-voice/rooms/${ROOM}/heartbeat`,{method:'POST',headers:{Origin:'https://luria.test',Authorization:'Bearer fixture'},body:JSON.stringify({client_id:A})}),env);assert.equal(prefixed.status,200);
+  const prefixed=await worker.fetch(new Request(`https://voice.test/api/study-voice/rooms/${ROOM}/heartbeat`,{method:'POST',headers:{Origin:'https://traube.test',Authorization:'Bearer fixture'},body:JSON.stringify({client_id:A})}),env);assert.equal(prefixed.status,200);
  });
  await t.test('publish microphone; forbid arbitrary remote session IDs and foreign room publishers',async()=>{
   assert.equal((await request('publish',{sessionDescription:SDP,mid:'0'})).status,200);active=B;await request('join');await request('publish',{sessionDescription:SDP,mid:'0'});

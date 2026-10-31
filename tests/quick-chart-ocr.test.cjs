@@ -94,7 +94,7 @@ test("Troca de conta apaga prévia e interrompe OCR", async () => {
   const f=fixture();
   f.node("quick-chart-ocr-text").value="DADO PRIVADO";
   f.node("quick-chart-ocr-preview").hidden=false;
-  f.events["luria:owner-changed"]();
+  f.events["traube:owner-changed"]();
   assert.equal(f.node("quick-chart-ocr-text").value,"");
   assert.equal(f.node("quick-chart-ocr-preview").hidden,true);
 });

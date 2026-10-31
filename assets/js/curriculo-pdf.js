@@ -6,7 +6,7 @@
   'use strict';
   const MAX_BYTES = 10 * 1024 * 1024;
   const MAX_PAGES = 150;
-  const DB_NAME = 'luria-curriculo-pdfs-v1';
+  const DB_NAME = 'traube-curriculo-pdfs-v1';
   const STORE = 'curriculos';
   const categories = [
     { category: 'artigo', match: /artigos? completos? publicados?|producao bibliografica.*periodic|publicacoes? em periodicos?/ },

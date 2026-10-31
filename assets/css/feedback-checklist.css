@@ -1,5 +1,5 @@
 /* Consolidated visual corrections from the product review checklist. */
-@layer luria-feedback {
+@layer traube-feedback {
   #week-today { display:none !important; }
   body[data-page="cronograma"] .topbar.dashboard-shell-topbar::after { content:none !important; }
   /* The schedule header is a first-class title card, including cached markup

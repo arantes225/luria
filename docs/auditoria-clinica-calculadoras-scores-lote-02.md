@@ -1,7 +1,7 @@
 # TRAUBE — auditoria das calculadoras, lote 2/6 (31–60)
 
 **Data:** 24 de outubro de 2026  
-**Repositório:** `arantes225/luria`, branch `main`  
+**Repositório:** `arantes225/traube`, branch `main`  
 **Escopo:** calculadoras na posição 31–60 do catálogo real, de SpO₂/FiO₂ a projeção de idade gestacional por ultrassonografia.  
 **Método:** verificação da fórmula, homogeneidade de unidades, limites e valores zero/negativos, população de aplicação, interpretação, referências e riscos em uso assistencial. Ajustes carregados pela página sem reescrever script CSP inline.  
 **Atenção:** nenhuma calculadora foi certificada como dispositivo médico. Os resultados de doses, infusões e ventilação são auxiliares e **não fornecem indicação de tratamento ou prescrição**.

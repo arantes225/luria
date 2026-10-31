@@ -56,7 +56,7 @@
       script.src = resource.src;
       script.async = true;
       if (resource.integrity) { script.integrity = resource.integrity; script.crossOrigin = "anonymous"; }
-      script.dataset.luriaOptionalLibrary = name;
+      script.dataset.traubeOptionalLibrary = name;
       script.onload = () => {
         if (name === "xlsx-full" && window.XLSX?.read && window.XLSX?.utils?.sheet_to_json) {
           loadedVendors.add("xlsx-full");

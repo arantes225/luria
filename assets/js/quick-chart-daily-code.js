@@ -84,7 +84,7 @@
     }
   });
 
-  window.addEventListener("luria:owner-changed", () => {
+  window.addEventListener("traube:owner-changed", () => {
     generation++;
     pending = false;
     clear("Atualizando acesso…");
