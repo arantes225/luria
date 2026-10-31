@@ -757,7 +757,7 @@ async function signedFlashImage(path) {
   const {
     data,
     error
-  } = await window.LuriaStorage.createSignedUrl(
+  } = await window.TraubeStorage.createSignedUrl(
     "flashcard_images",
     key,
     60 * 60
@@ -1380,7 +1380,7 @@ async function renderCurrentReview() {
           : "nenhum card pendente";
 
     if(reviewQueue.length){
-      window.LuriaGuidedStudy?.completeActiveStep?.("flashcards-review-complete");
+      window.TraubeGuidedStudy?.completeActiveStep?.("flashcards-review-complete");
     }
 
     return;
@@ -2086,7 +2086,7 @@ async function uploadFlashImage(
   const path =
     `${flashUser.id}/flashcards/${crypto.randomUUID()}-${side}-${safeName}`;
 
-  const { error, reference } = await window.LuriaStorage.upload("flashcard_images",
+  const { error, reference } = await window.TraubeStorage.upload("flashcard_images",
       path,
       optimizedFile,
       {
@@ -2721,7 +2721,7 @@ function wireCreate() {
           Math.max(
             0,
             Number(
-              window.LuriaEntitlements
+              window.TraubeEntitlements
                 ?.limit(
                   "flashcard_images",
                   2
@@ -2858,7 +2858,7 @@ function wireCreate() {
           console.error(error);
 
           if (uploadedPaths.length) {
-            await window.LuriaStorage.remove("flashcard_images",
+            await window.TraubeStorage.remove("flashcard_images",
                 uploadedPaths
               );
           }
@@ -3439,7 +3439,7 @@ function readAnkiDeckMap(
 async function openAnkiDatabase(
   file
 ) {
-  await window.LuriaLazyVendors.ensure(["jszip", "sqljs"]);
+  await window.TraubeLazyVendors.ensure(["jszip", "sqljs"]);
 
   if (
     !window.JSZip
@@ -3527,7 +3527,7 @@ async function openAnkiDatabase(
   if (
     candidate.compressed
   ) {
-    await window.LuriaLazyVendors.ensure("fzstd");
+    await window.TraubeLazyVendors.ensure("fzstd");
     if (
       !window.fzstd
       ?.decompress
@@ -3905,7 +3905,7 @@ function renderAnkiDeckMap() {
                 data-anki-deck-area="${index}"
                 list="medical-areas"
                 data-luria-area-input
-                placeholder="Área no LURIA"
+                placeholder="Área no TRAUBE"
               >
             </label>
 
@@ -4260,7 +4260,7 @@ function renderImportPreview(
 async function parseSpreadsheetImport(
   file
 ) {
-  await window.LuriaLazyVendors.ensureSpreadsheet(file?.name);
+  await window.TraubeLazyVendors.ensureSpreadsheet(file?.name);
 
   const buffer =
     await file.arrayBuffer();
@@ -5017,7 +5017,7 @@ function populateLibraryAreas() {
     || "medicine";
 
   const areas =
-    window.LuriaStudyMode
+    window.TraubeStudyMode
       ?.generalAreasFor(
         mode
       )
@@ -5542,7 +5542,7 @@ async function deleteFlashcardFromLibrary(
 
 
   if (card.shared) {
-    const confirmed = await window.LuriaDialog.confirm(
+    const confirmed = await window.TraubeDialog.confirm(
         "Remover este flashcard compartilhado da sua biblioteca? O original continuará com o autor."
       );
 
@@ -5608,7 +5608,7 @@ async function deleteFlashcardFromLibrary(
   }
 
 
-  const confirmed = await window.LuriaDialog.confirm(
+  const confirmed = await window.TraubeDialog.confirm(
       "Excluir este flashcard permanentemente? Esta ação não pode ser desfeita."
     );
 
@@ -5666,7 +5666,7 @@ async function deleteFlashcardFromLibrary(
       error:
         storageError
     } =
-      await window.LuriaStorage.remove("flashcard_images",
+      await window.TraubeStorage.remove("flashcard_images",
           storagePaths
         );
 
@@ -5813,7 +5813,7 @@ async function flashPdfImageData(path) {
       }
       blob = await response.blob();
     } else {
-      const { data, error } = await window.LuriaStorage.download("flashcard_images", path);
+      const { data, error } = await window.TraubeStorage.download("flashcard_images", path);
       if (error) throw error;
       blob = data;
     }
@@ -5849,7 +5849,7 @@ function flashPdfNewPage(
 ) {
   doc.addPage();
 
-  window.LuriaPdfBranding
+  window.TraubePdfBranding
     ?.decoratePage(
       doc,
       state.assets,
@@ -6021,7 +6021,7 @@ async function exportSelectedFlashcardsPdf() {
 
   const ids = Array.from(selectedFlashcardIds);
   if (!ids.length) return;
-  try { await window.LuriaLazyVendors.ensure("jspdf"); } catch (error) { setLibraryStatus(error.message || "Não foi possível carregar o gerador de PDF.", "error"); return; }
+  try { await window.TraubeLazyVendors.ensure("jspdf"); } catch (error) { setLibraryStatus(error.message || "Não foi possível carregar o gerador de PDF.", "error"); return; }
 
   if (!window.jspdf?.jsPDF) {
     setLibraryStatus("Gerador de PDF não carregou. Atualize a página.", "error");
@@ -6045,13 +6045,13 @@ async function exportSelectedFlashcardsPdf() {
     });
 
     const assets =
-      await window.LuriaPdfBranding
+      await window.TraubePdfBranding
         ?.getAssets?.();
 
     const headerSubtitle =
       `${cards.length} flashcard${cards.length === 1 ? "" : "s"} selecionado${cards.length === 1 ? "" : "s"}`;
 
-    window.LuriaPdfBranding
+    window.TraubePdfBranding
       ?.decoratePage(
         doc,
         assets,
@@ -6204,7 +6204,7 @@ async function exportSelectedFlashcardsPdf() {
         7;
     }
 
-    window.LuriaPdfBranding
+    window.TraubePdfBranding
       ?.finalize(
         doc
       );
@@ -6267,7 +6267,7 @@ async function deleteSelectedFlashcards() {
 
 
   if (
-    !await window.LuriaDialog.confirm(
+    !await window.TraubeDialog.confirm(
       `${parts.join(". ")}. Continuar?`
     )
   ) {
@@ -6334,7 +6334,7 @@ async function deleteSelectedFlashcards() {
         error:
           storageError
       } =
-        await window.LuriaStorage.remove("flashcard_images",
+        await window.TraubeStorage.remove("flashcard_images",
             paths
           );
 
@@ -6550,7 +6550,7 @@ ${
 
                 ${card.system ? `
                   <span>Livre acesso</span>
-                  <span>Biblioteca oficial LURIA</span>
+                  <span>Biblioteca oficial TRAUBE</span>
                   <span>Sistema</span>
                 ` : `
                   <span>
@@ -6839,7 +6839,7 @@ function renderLibraryDecks() {
     || "medicine";
 
   const configuredAreas =
-    window.LuriaStudyMode
+    window.TraubeStudyMode
       ?.generalAreasFor(
         mode
       )
@@ -7097,7 +7097,7 @@ async function createFlashcardShareToken(cards, title) {
 
       p_title:
         title
-        || "Deck LURIA"
+        || "Deck TRAUBE"
     }
   );
 
@@ -7166,7 +7166,7 @@ async function openFlashShareDialog(
     return;
   }
 
-  if (!window.LuriaSharing) {
+  if (!window.TraubeSharing) {
     setLibraryStatus(
       "O compartilhamento não carregou. Atualize a página.",
       "error"
@@ -7191,7 +7191,7 @@ async function openFlashShareDialog(
       return cachedToken;
     };
 
-  await window.LuriaSharing.open({
+  await window.TraubeSharing.open({
     title:
       title
       || "Flashcards selecionados",
@@ -7227,7 +7227,7 @@ async function openFlashShareDialog(
           );
 
         } catch {
-          await window.LuriaDialog.prompt(
+          await window.TraubeDialog.prompt(
             "Copie o link:",
             url.toString()
           );
@@ -7267,7 +7267,7 @@ async function openFlashShareDialog(
         }
 
         setLibraryStatus(
-          "Deck enviado dentro do LURIA.",
+          "Deck enviado dentro do TRAUBE.",
           "success"
         );
       },
@@ -7718,7 +7718,7 @@ function wireLibrary() {
         const materia = document.getElementById("library-materia")?.value;
         await shareFlashcardDeck(
           cards,
-          [area,materia].filter(Boolean).join(" · ") || "Deck LURIA"
+          [area,materia].filter(Boolean).join(" · ") || "Deck TRAUBE"
         );
       }
     );
@@ -7881,7 +7881,7 @@ window.addEventListener(
 
 
 
-/* LURIA_FLASHCARD_NOTEBOOK_HANDOFF_V1 */
+/* TRAUBE_FLASHCARD_NOTEBOOK_HANDOFF_V1 */
 function consumeNotebookFlashcardDraft() {
   let draft = null;
 

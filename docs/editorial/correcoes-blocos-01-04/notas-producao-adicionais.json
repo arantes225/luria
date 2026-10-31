@@ -118,7 +118,7 @@
       "section": "referencias",
       "block": [
         "p",
-        "<strong>Status editorial:</strong> rascunho de ensino autoral e isolado, sujeito à revisão de legislação consolidada e especificidades municipais, validação de autossuficiência, QA de questões e referências, auditoria semântica, revisão de imagens/diagramas e teste de renderer desktop/PWA. Não criar index.html nem incluir catálogo até certificação, conforme normas da LURIA."
+        "<strong>Status editorial:</strong> rascunho de ensino autoral e isolado, sujeito à revisão de legislação consolidada e especificidades municipais, validação de autossuficiência, QA de questões e referências, auditoria semântica, revisão de imagens/diagramas e teste de renderer desktop/PWA. Não criar index.html nem incluir catálogo até certificação, conforme normas da TRAUBE."
       ]
     },
     {
@@ -126,7 +126,7 @@
       "section": "sec-24-controle-de-qualidade-e-pendencias-objetivas",
       "block": [
         "p",
-        "<strong>Não realizado / ainda necessário:</strong> revisão clínico-pediátrica especializada de pontos de rastreio e suplementação; validação jurídica da norma de transporte na data da publicação; leitura de apostila correlata <em>completa</em> de acidentes no Drive (não encontrada; material principal de crescimento/obesidade é <strong>parcial</strong> para o tema); seleção e aprovação de imagens reais; criação de diagramas; conversão para HTML seguindo padrão LURIA; inspeção desktop/PWA; teste humano de autossuficiência da apostila; revisão final de linguagem e possíveis redundâncias."
+        "<strong>Não realizado / ainda necessário:</strong> revisão clínico-pediátrica especializada de pontos de rastreio e suplementação; validação jurídica da norma de transporte na data da publicação; leitura de apostila correlata <em>completa</em> de acidentes no Drive (não encontrada; material principal de crescimento/obesidade é <strong>parcial</strong> para o tema); seleção e aprovação de imagens reais; criação de diagramas; conversão para HTML seguindo padrão TRAUBE; inspeção desktop/PWA; teste humano de autossuficiência da apostila; revisão final de linguagem e possíveis redundâncias."
       ]
     },
     {
@@ -183,7 +183,7 @@
         ],
         [
           "4",
-          "0.1 Conferência do acervo LURIA"
+          "0.1 Conferência do acervo TRAUBE"
         ],
         [
           "4",
@@ -191,14 +191,14 @@
         ],
         [
           "p",
-          "Também foi examinada a estrutura de uma apostila já presente na LURIA — <strong>Assistência ao Parto, Vigilância Intraparto e Partograma</strong> — para identificar a organização em sumário lateral, capítulos numerados, quadros, casos e estilo próprio; não reutilizar seu conteúdo médico."
+          "Também foi examinada a estrutura de uma apostila já presente na TRAUBE — <strong>Assistência ao Parto, Vigilância Intraparto e Partograma</strong> — para identificar a organização em sumário lateral, capítulos numerados, quadros, casos e estilo próprio; não reutilizar seu conteúdo médico."
         ],
         [
           "t",
           [
             "Domínio",
             "Material comparativo",
-            "Necessidade da LURIA neste tema"
+            "Necessidade da TRAUBE neste tema"
           ],
           [
             [
@@ -261,7 +261,7 @@
     },
     {
       "slug": "principios-de-tecnica-cirurgica",
-      "html": "<p>Foi lido no Drive o PDF <em>12 - CIRURGIA PLASTICA - PRINCIPAIS RETALHOS.pdf</em>. É referência <strong>adjacente, não equivalente</strong>: seu conteúdo enfatiza classificação vascular, exemplos reconstrutores e complicações de retalhos, mas não abrange a técnica operatória geral, instrumental, hemostasia, dissecção, síntese e segurança cirúrgica. O documento apresenta indicação de compartilhamento informal e não teve autoria original institucional confirmada; nenhuma imagem ou texto foi reproduzido. A LURIA foi conferida em apostila publicada de assistência ao parto quanto a componentes editoriais. Uma comparação integral com apostila didática específica de técnica operatória permanece pendente, portanto não se declara a etapa zero totalmente satisfeita.</p>"
+      "html": "<p>Foi lido no Drive o PDF <em>12 - CIRURGIA PLASTICA - PRINCIPAIS RETALHOS.pdf</em>. É referência <strong>adjacente, não equivalente</strong>: seu conteúdo enfatiza classificação vascular, exemplos reconstrutores e complicações de retalhos, mas não abrange a técnica operatória geral, instrumental, hemostasia, dissecção, síntese e segurança cirúrgica. O documento apresenta indicação de compartilhamento informal e não teve autoria original institucional confirmada; nenhuma imagem ou texto foi reproduzido. A TRAUBE foi conferida em apostila publicada de assistência ao parto quanto a componentes editoriais. Uma comparação integral com apostila didática específica de técnica operatória permanece pendente, portanto não se declara a etapa zero totalmente satisfeita.</p>"
     },
     {
       "slug": "principios-de-tecnica-cirurgica",
@@ -273,7 +273,7 @@
     },
     {
       "slug": "tecnica-cirurgica",
-      "html": "<p>Foi lido no Drive o PDF <em>12 - CIRURGIA PLASTICA - PRINCIPAIS RETALHOS.pdf</em>. É referência <strong>adjacente, não equivalente</strong>: seu conteúdo enfatiza classificação vascular, exemplos reconstrutores e complicações de retalhos, mas não abrange a técnica operatória geral, instrumental, hemostasia, dissecção, síntese e segurança cirúrgica. O documento apresenta indicação de compartilhamento informal e não teve autoria original institucional confirmada; nenhuma imagem ou texto foi reproduzido. A LURIA foi conferida em apostila publicada de assistência ao parto quanto a componentes editoriais. Uma comparação integral com apostila didática específica de técnica operatória permanece pendente, portanto não se declara a etapa zero totalmente satisfeita.</p>"
+      "html": "<p>Foi lido no Drive o PDF <em>12 - CIRURGIA PLASTICA - PRINCIPAIS RETALHOS.pdf</em>. É referência <strong>adjacente, não equivalente</strong>: seu conteúdo enfatiza classificação vascular, exemplos reconstrutores e complicações de retalhos, mas não abrange a técnica operatória geral, instrumental, hemostasia, dissecção, síntese e segurança cirúrgica. O documento apresenta indicação de compartilhamento informal e não teve autoria original institucional confirmada; nenhuma imagem ou texto foi reproduzido. A TRAUBE foi conferida em apostila publicada de assistência ao parto quanto a componentes editoriais. Uma comparação integral com apostila didática específica de técnica operatória permanece pendente, portanto não se declara a etapa zero totalmente satisfeita.</p>"
     },
     {
       "slug": "tecnica-cirurgica",

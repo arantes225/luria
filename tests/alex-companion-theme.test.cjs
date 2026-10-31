@@ -5,8 +5,8 @@ test('floating Alex stays above mobile navigation and recovers space when it dis
  const {w,d,errors}=page(t,'amigos/index.html');
  w.innerHeight=844;w.innerWidth=390;
  w.customElements.define('professor-alex-mascot',class extends w.HTMLElement {setDragMotion(){} _resize(){} _schedule(){}});
- Object.defineProperty(w.HTMLElement.prototype,'offsetHeight',{get(){return this.tagName==='LURIA-ALEX-COMPANION'?96:0;}});
- Object.defineProperty(w.HTMLElement.prototype,'offsetWidth',{get(){return this.tagName==='LURIA-ALEX-COMPANION'?96:0;}});
+ Object.defineProperty(w.HTMLElement.prototype,'offsetHeight',{get(){return this.tagName==='TRAUBE-ALEX-COMPANION'?96:0;}});
+ Object.defineProperty(w.HTMLElement.prototype,'offsetWidth',{get(){return this.tagName==='TRAUBE-ALEX-COMPANION'?96:0;}});
  const nav=d.createElement('nav');nav.id='ui-mobile-navigation';let height=76;nav.getBoundingClientRect=()=>({height});d.body.append(nav);
  const source=read('assets/js/professor-alex-companion.mjs').replace(/^import .*;\r?\n/gm,'').replace(/^export /gm,'').replaceAll('import.meta.url',JSON.stringify('https://fixture.invalid/assets/js/professor-alex-companion.mjs'));
  w.eval('const bindAlex=()=>({react(){},destroy(){}});\n'+source);

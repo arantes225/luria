@@ -99,7 +99,7 @@ function validate() {
 }
 
 function main() {
-  console.log('Validando conformidade do Calendário Editorial LURIA...');
+  console.log('Validando conformidade do Calendário Editorial TRAUBE...');
   const res = validate();
 
   if (res.warnings.length) {

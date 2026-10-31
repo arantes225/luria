@@ -1,4 +1,4 @@
-# LURIA — CURADORIA VISUAL E DE IMAGENS CONSOLIDADA DO BLOCO 3 (AULAS 047 A 069)
+# TRAUBE — CURADORIA VISUAL E DE IMAGENS CONSOLIDADA DO BLOCO 3 (AULAS 047 A 069)
 
 > Estado revisto em 17/10/2026: planejamento de recursos visuais. As fontes, atribuições e licenças abaixo são declarações ainda não validadas nesta revisão. Linhas genéricas não representam imagens selecionadas nem aprovadas; sem URL da obra e comprovação de direitos, não importar como aprovação no Admin.
 

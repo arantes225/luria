@@ -1,6 +1,6 @@
 'use strict';
 /*
- * Exibe o status consolidado do Calendário Editorial da LURIA.
+ * Exibe o status consolidado do Calendário Editorial da TRAUBE.
  *
  * Uso:
  *   node calendar/status.cjs
@@ -17,7 +17,7 @@ function main() {
     return;
   }
 
-  console.log(`=== CALENDÁRIO EDITORIAL LURIA ===`);
+  console.log(`=== CALENDÁRIO EDITORIAL TRAUBE ===`);
   console.log(`Versão: ${cal.version} | Fuso: ${cal.timezone} | Total de postagens: ${cal.posts.length}\n`);
 
   const counts = { draft: 0, produced: 0, approved: 0, scheduled: 0, published: 0 };

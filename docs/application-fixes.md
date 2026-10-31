@@ -1,4 +1,4 @@
-# Luria — relatório das correções da aplicação
+# Traube — relatório das correções da aplicação
 
 Data: 09/10/2026. Base: `b17c47b5d8b697a5074543be05fb859cb2fd7b05`. A árvore do repositório estava limpa antes da implementação.
 

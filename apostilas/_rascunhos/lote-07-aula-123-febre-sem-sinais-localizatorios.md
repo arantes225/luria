@@ -1,8 +1,8 @@
-# LURIA | Lote 7 — Aula 123
+# TRAUBE | Lote 7 — Aula 123
 # Febre sem sinais localizatórios na infância
 
 > **STATUS: RASCUNHO CLÍNICO-EDITORIAL PARCIAL — SEM PUBLICAÇÃO.**  
-> Início: 14/10/2026. Área: Pediatria. Fonte curricular: cronograma-base da LURIA, aula 123.  
+> Início: 14/10/2026. Área: Pediatria. Fonte curricular: cronograma-base da TRAUBE, aula 123.  
 > A terminologia “febre sem sinais localizatórios” (FSSL) se refere a febre aguda sem causa identificada após história e exame físico adequados. Não confundir com febre de origem indeterminada, que exige outra duração e investigação.  
 > **Atenção:** condutas pediátricas variam por faixa etária e local. O algoritmo da AAP para 8–60 dias tem critérios rigorosos de inclusão e não deve ser extrapolado a toda criança febril. Doses, pontos de corte e protocolos institucionais devem ser revisados antes de publicação.
 
@@ -10,7 +10,7 @@
 
 Pesquisados no Google Drive materiais de febre, febre sem foco e pediatria. **Não foi identificado um caderno de FSSL diretamente equivalente.** Foi aberto e lido “Pneumonia Comunitária na Pediatria.pdf” (resumo de ~1,2 mil caracteres sobre febre, taquipneia, hipoxemia, consolidação e critérios de internação); material de autoria nominal Maysa Mismetti, **sem comprovação de que seja material de referência**. Também foi lido “Imunizações .pdf” (resumo do PNI 2020, ~2,9 mil caracteres), usado somente como contraste para lembrar que **calendário vacinal antigo não pode ser considerado protocolo atual**. Esses arquivos são comparativos **parciais**, não equivalem a guia de FSSL e não fundamentam recomendações médicas deste texto. As fontes clínicas centrais estão discriminadas adiante (SBP, Ministério da Saúde/AIDPI, AAP).
 
-**Apostila LURIA preexistente:** nenhuma pasta de mesmo título foi vista na listagem nominal de apostilas; criar rascunho sem substituir arquivo existente. **Limitação editorial:** etapa zero específica não plenamente cumprida; manter rascunho não certificado até localizar fonte comparativa mais apropriada.
+**Apostila TRAUBE preexistente:** nenhuma pasta de mesmo título foi vista na listagem nominal de apostilas; criar rascunho sem substituir arquivo existente. **Limitação editorial:** etapa zero específica não plenamente cumprida; manter rascunho não certificado até localizar fonte comparativa mais apropriada.
 
 ## Objetivos de aprendizagem
 Ao final do estudo, o aluno deve reconhecer uma criança potencialmente séptica antes de localizar o foco, aplicar faixas etárias específicas, distinguir exames úteis de exames de baixo valor, diagnosticar ITU quando a febre não tem foco aparente, reconhecer suspeita de meningite e fazer planos de retorno seguros para crianças estáveis.

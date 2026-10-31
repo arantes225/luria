@@ -1,6 +1,6 @@
 'use strict';
 /*
- * Importador e mesclador de itens do Calendário Editorial existente da LURIA.
+ * Importador e mesclador de itens do Calendário Editorial existente da TRAUBE.
  *
  * Suporta importação a partir de JSON ou Markdown com deduplicação automática.
  *
@@ -49,7 +49,7 @@ function main() {
       scientificSources: post.scientificSources || [],
       visualAssets: post.visualAssets || {},
       caption: post.caption || '',
-      hashtags: post.hashtags || ['#ResidenciaMedica', '#LURIA'],
+      hashtags: post.hashtags || ['#ResidenciaMedica', '#TRAUBE'],
       status: 'draft',
       approved: false,
       publicationLink: null

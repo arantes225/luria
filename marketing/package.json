@@ -1,7 +1,7 @@
 {
   "name": "luria-marketing-studio",
   "private": true,
-  "description": "Pipeline local de producao de conteudo (Reels/carrosseis) da LURIA. Isolado do site publicado.",
+  "description": "Pipeline local de producao de conteudo (Reels/carrosseis) da TRAUBE. Isolado do site publicado.",
   "type": "commonjs",
   "engines": {
     "node": ">=24.0.0"

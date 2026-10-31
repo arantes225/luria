@@ -115,8 +115,8 @@
     uterus: '<path d="M8 8c-1-3-4-4-6-2 0 3 2 6 5 6m9-4c1-3 4-4 6-2 0 3-2 6-5 6M8 8c0 3 1 5 4 5s4-2 4-5m-9 4c0 5 3 6 5 6s5-1 5-6m-5 6v4"/>'
   };
   function icon(name) {
-    if (typeof window.LuriaIcon === "function") {
-      return window.LuriaIcon(name, `dl-icon dl-icon-${name}`);
+    if (typeof window.TraubeIcon === "function") {
+      return window.TraubeIcon(name, `dl-icon dl-icon-${name}`);
     }
     return `<svg class="dl-icon dl-icon-${name}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${iconPaths[name] || iconPaths.file}</svg>`;
   }

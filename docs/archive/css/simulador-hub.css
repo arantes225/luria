@@ -1233,7 +1233,7 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
 }
 
 
-/* v24 — resumo compacto à direita + Estatísticas sob LuriaZap */
+/* v24 — resumo compacto à direita + Estatísticas sob TraubeZap */
 @media(min-width:961px){
   body[data-page="plantao"] .sim-stats-strip-compact{
     width:calc(50% - 7px)!important;
@@ -1291,7 +1291,7 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
 }
 
 
-/* v25 — coluna direita contínua: LuriaZap, métricas e estatísticas */
+/* v25 — coluna direita contínua: TraubeZap, métricas e estatísticas */
 @media(min-width:961px){
   body[data-page="plantao"] .sim-lower-grid{
     display:grid!important;

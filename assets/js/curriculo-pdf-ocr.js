@@ -96,9 +96,9 @@
   }
 
   async function recognizePdf(pdf, progress = () => {}) {
-    if (!root.LuriaLazyVendors?.ensure) throw Error('Leitor OCR indisponível. Atualize a página.');
+    if (!root.TraubeLazyVendors?.ensure) throw Error('Leitor OCR indisponível. Atualize a página.');
     progress('O PDF não possui texto selecionável. Preparando leitura visual (OCR) no dispositivo…');
-    await root.LuriaLazyVendors.ensure('tesseract');
+    await root.TraubeLazyVendors.ensure('tesseract');
     if (typeof root.Tesseract?.createWorker !== 'function') {
       throw Error('Não foi possível iniciar o reconhecimento visual. Confira a conexão e tente novamente.');
     }
@@ -152,5 +152,5 @@
   }
   const api = {MAX_OCR_PAGES, parseOcrText, recognizePdf};
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
-  else root.LuriaCurriculoPdfOcr = api;
+  else root.TraubeCurriculoPdfOcr = api;
 })(globalThis);

@@ -1,4 +1,4 @@
-/* LURIA: apostila <-> anotacoes, com opcao de leitura lado a lado. */
+/* TRAUBE: apostila <-> anotacoes, com opcao de leitura lado a lado. */
 (() => {
   "use strict";
   const book = document.querySelector(".book-page .book-main");
@@ -68,7 +68,7 @@
     u.searchParams.set("view", "library");
     u.searchParams.set("apostila", location.pathname);
     const heading = document.querySelector(".book-hero h1")?.textContent?.trim() ||
-      document.title.replace(/\s*[·|]\s*LURIA.*$/i, "").trim();
+      document.title.replace(/\s*[·|]\s*TRAUBE.*$/i, "").trim();
     u.searchParams.set("titulo", heading);
     for (const key of ["note_id", "topic_id"]) if (params.get(key)) u.searchParams.set(key, params.get(key));
     return u;
@@ -91,7 +91,7 @@
     const aside = document.createElement("div"); aside.className = "luria-dual-right";
     const iframe = document.createElement("iframe");
     const url = new URL(destination, location.origin); url.searchParams.set("embedded", "1");
-    iframe.src = url.toString(); iframe.title = book ? "Anotações LURIA" : "Apostila LURIA";
+    iframe.src = url.toString(); iframe.title = book ? "Anotações TRAUBE" : "Apostila TRAUBE";
     aside.append(iframe); shell.append(primary, divider, aside);
     parent.insertBefore(bar, marker); parent.insertBefore(shell, marker);
     document.body.classList.add("luria-dual-active");
@@ -124,11 +124,11 @@
     reset.addEventListener("click", () => { set(50); try { localStorage.setItem(storage, "50"); } catch {} });
     const teardown = async () => {
       try {
-        if (typeof window.LuriaStudySave === "function" && !(await window.LuriaStudySave())) return;
-        const embeddedSave = iframe.contentWindow?.LuriaStudySave;
+        if (typeof window.TraubeStudySave === "function" && !(await window.TraubeStudySave())) return;
+        const embeddedSave = iframe.contentWindow?.TraubeStudySave;
         if (typeof embeddedSave === "function" && !(await embeddedSave())) return;
       } catch (error) {
-        if (window.LuriaDialog?.alert) window.LuriaDialog.alert(error?.message || "Salve as anotações antes de fechar a divisão.");
+        if (window.TraubeDialog?.alert) window.TraubeDialog.alert(error?.message || "Salve as anotações antes de fechar a divisão.");
         else alert("Não foi possível salvar as anotações.");
         return;
       }
@@ -187,7 +187,7 @@
         }
         return true;
       } catch (e) {
-        if (window.LuriaDialog?.alert) window.LuriaDialog.alert(e?.message || "Não foi possível salvar a anotação.");
+        if (window.TraubeDialog?.alert) window.TraubeDialog.alert(e?.message || "Não foi possível salvar a anotação.");
         else alert("Não foi possível salvar a anotação. Salve antes de sair.");
         return false;
       }
@@ -206,7 +206,7 @@
       teardown = split(studio, withNoteId(new URL(target, location.origin)), "Anotações + Apostila", () => { teardown = null; divide.textContent = "Dividir tela"; });
       if (teardown) divide.textContent = "Fechar divisão";
     });
-    window.LuriaStudySave = safeSave;
+    window.TraubeStudySave = safeSave;
     getCatalog().then(refresh);
     const title = document.getElementById("notebook-document-title");
     if (title) new MutationObserver(() => { if (!teardown) refresh(); })

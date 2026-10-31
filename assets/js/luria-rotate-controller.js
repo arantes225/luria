@@ -1,5 +1,5 @@
 /* assets/js/luria-rotate-controller.js
-   Controlador universal reutilizável da animação de girar o aparelho (LURIA).
+   Controlador universal reutilizável da animação de girar o aparelho (TRAUBE).
    Utilizado pelo simulador de emergência e pelo leitor/scanner inteligente de ECG.
 */
 (function (global) {
@@ -7,7 +7,7 @@
 
   function createRotateController(options = {}) {
     const {
-      brandText = "LURIA · ECG INTELIGENTE",
+      brandText = "TRAUBE · ECG INTELIGENTE",
       headingText = "Gire o celular",
       messageText = "Coloque o aparelho na horizontal para uma melhor captura do traçado.",
       tipText = "Se a tela não virar, desative o bloqueio de orientação do aparelho.",
@@ -151,7 +151,7 @@
     };
   }
 
-  global.LuriaRotateController = {
+  global.TraubeRotateController = {
     create: createRotateController
   };
 

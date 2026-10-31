@@ -1056,7 +1056,7 @@ body.app-ready .app-shell .main:where(:not(body[data-ui-nav="v2"], body[data-ui-
 
 
 /* =========================================================
-   LURIA — BRANDING FINAL
+   TRAUBE — BRANDING FINAL
    ========================================================= */
 
 /* ---------------------------------------------------------
@@ -1257,7 +1257,7 @@ body.app-ready .app-shell .main:where(:not(body[data-ui-nav="v2"], body[data-ui-
 
 
 /* =========================================================
-   LURIA — HOTFIX DE LOGO
+   TRAUBE — HOTFIX DE LOGO
    ========================================================= */
 
 .brand-logo-single {
@@ -1565,7 +1565,7 @@ body.sidebar-hidden
 
 
 /* =========================================================
-   LURIA GOLD ACCENTS — uso seletivo, premium e acadêmico
+   TRAUBE GOLD ACCENTS — uso seletivo, premium e acadêmico
    ========================================================= */
 .streak-mini {
   --sidebar-streak-main: #f59e0b;
@@ -1761,7 +1761,7 @@ optgroup {
   font-style: normal !important;
 }
 
-/* LURIA — tipografia oficial em toda a interface.
+/* TRAUBE — tipografia oficial em toda a interface.
    Exceções: conteúdo autoral editável e blocos técnicos/monospace. */
 body :where(
   div, span, p, a, button, input, select, textarea, optgroup, option,
@@ -1786,7 +1786,7 @@ body .caderno-editor-content * {
   font-family: inherit !important;
 }
 
-/* LURIA — SIDEBAR GLOBAL */
+/* TRAUBE — SIDEBAR GLOBAL */
 .sidebar .brand .brand-copy strong {
   font-size: 20.7px !important;
   line-height: 1.1 !important;
@@ -1797,7 +1797,7 @@ body .caderno-editor-content * {
 
 
 
-/* LURIA — identidade do tema claro baseada no azul dos callouts */
+/* TRAUBE — identidade do tema claro baseada no azul dos callouts */
 :root,
 :root[data-theme="light"] {
   --brand-light-blue: #184888;
@@ -1815,7 +1815,7 @@ body .caderno-editor-content * {
 
 
 /* =========================================================
-   LURIA — HIERARQUIA DE BOTÕES NO TEMA CLARO
+   TRAUBE — HIERARQUIA DE BOTÕES NO TEMA CLARO
    ========================================================= */
 :root,
 :root[data-theme="light"] {
@@ -1889,7 +1889,7 @@ body .caderno-editor-content * {
 
 
 /* =========================================================
-   LURIA — PWA MOBILE: CRONOGRAMA + ESTATÍSTICAS
+   TRAUBE — PWA MOBILE: CRONOGRAMA + ESTATÍSTICAS
    Layout específico do app instalado em telas pequenas.
    ========================================================= */
 @media (max-width: 760px) {
@@ -2279,7 +2279,7 @@ body .caderno-editor-content * {
 
 
 /* =========================================================
-   LURIA — FILE INPUT PREMIUM
+   TRAUBE — FILE INPUT PREMIUM
    Melhora visual global para "Escolher arquivo"
    ========================================================= */
 input[type="file"] {
@@ -2405,7 +2405,7 @@ input[type="file"]:focus-visible::file-selector-button {
 
 
 /* =========================================================
-   LURIA — PATTERN DE FUNDO GLOBAL
+   TRAUBE — PATTERN DE FUNDO GLOBAL
    Símbolos inclinados com fileiras intercaladas.
    ========================================================= */
 
@@ -2524,7 +2524,7 @@ body > footer {
 
 
 /* =========================================================
-   LURIA — CENTRAL GLOBAL DE NOTIFICAÇÕES
+   TRAUBE — CENTRAL GLOBAL DE NOTIFICAÇÕES
    ========================================================= */
 
 .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)) {
@@ -2919,7 +2919,7 @@ body > footer {
 
 
 /* =========================================================
-   LURIA — DIÁLOGOS GLOBAIS
+   TRAUBE — DIÁLOGOS GLOBAIS
    ========================================================= */
 .luria-global-dialog{
   width:min(430px,calc(100vw - 28px));
@@ -3049,7 +3049,7 @@ body[data-page="dashboard"] .calendar-add-event {
 
 
 /* =========================================================
-   LURIA — CALENDÁRIO
+   TRAUBE — CALENDÁRIO
    ========================================================= */
 .luria-calendar{
   position:fixed;
@@ -3115,7 +3115,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 }
 
 
-/* Calendário LURIA — acabamento visual do tema */
+/* Calendário TRAUBE — acabamento visual do tema */
 .luria-calendar{
   border-radius:18px!important;
   background:var(--surface)!important;
@@ -3247,7 +3247,7 @@ body[data-page="cronograma"] .luria-calendar .luria-calendar-days button{
 }
 
 
-/* LURIA — seletor de hora do Adicionar evento */
+/* TRAUBE — seletor de hora do Adicionar evento */
 .luria-time-picker{
   position:fixed;
   z-index:100001;
@@ -3390,7 +3390,7 @@ body.auth-page>.auth-card{
 
 
 /* =========================================================
-   LURIA — CABEÇALHO/CARD SUPERIOR GLOBAL v53
+   TRAUBE — CABEÇALHO/CARD SUPERIOR GLOBAL v53
    Referência geométrica: card "Anotações"
    ========================================================= */
 :root{
@@ -3437,7 +3437,7 @@ body.auth-page>.auth-card{
 }
 
 
-/* LURIA v54 — cards/callouts superiores: azul oficial da marca apenas no tema claro */
+/* TRAUBE v54 — cards/callouts superiores: azul oficial da marca apenas no tema claro */
 :root[data-theme="light"]{
   --luria-top-callout-blue:#184888;
 }
@@ -3513,7 +3513,7 @@ body.auth-page>.auth-card{
 }
 
 
-/* LURIA v55 — cards/callouts superiores também unificados no tema escuro */
+/* TRAUBE v55 — cards/callouts superiores também unificados no tema escuro */
 :root[data-theme="dark"] .luria-page-spotlight,
 :root[data-theme="dark"] .daily-hero,
 :root[data-theme="dark"] .stats-hero,
@@ -3576,7 +3576,7 @@ body.theme-dark .error-cat-spotlight{
 }
 
 
-/* v2026.09.29 — switches/segmented controls maiores em todo o LURIA */
+/* v2026.09.29 — switches/segmented controls maiores em todo o TRAUBE */
 :root{
   --luria-switch-font-size: 16px;
   --luria-switch-height: 46px;
@@ -4475,7 +4475,7 @@ small,
 
 
 /* =========================================================
-   LURIA v2026.09.29 — DASHBOARD COMO RÉGUA GLOBAL
+   TRAUBE v2026.09.29 — DASHBOARD COMO RÉGUA GLOBAL
    Geometria de referência do Dashboard:
    margem lateral 28px / card 138px / padding 24x28 / raio 15px
    ========================================================= */
@@ -4559,7 +4559,7 @@ body:not([data-page="dashboard"]) :is(
 
 
 /* =========================================================
-   LURIA v2026.09.29 — TIPOGRAFIA ÚNICA DOS CARDS DE TÍTULO
+   TRAUBE v2026.09.29 — TIPOGRAFIA ÚNICA DOS CARDS DE TÍTULO
    Um único padrão para eyebrow + título + helper.
    ========================================================= */
 :root{
@@ -4698,7 +4698,7 @@ body:not([data-page="dashboard"]) :is(
 
 
 /* =========================================================
-   LURIA LOGIN — fundo branco texturizado com logos repetidas
+   TRAUBE LOGIN — fundo branco texturizado com logos repetidas
    Correção v2026-09-29
    ========================================================= */
 body.auth-page{
@@ -4773,7 +4773,7 @@ html,body,button,input,select,textarea,option,h1,h2,h3,h4,h5,h6,p,span,small,str
 }
 button,input,select,textarea{font-family:var(--luria-font)!important}
 
-/* v2026.09.29 — eyebrows/kickers leves no padrão LURIA */
+/* v2026.09.29 — eyebrows/kickers leves no padrão TRAUBE */
 .qs-home-kicker,.qs-home-eyebrow,.error-home-eyebrow,.flash-top-spotlight-label,.eyebrow,[class*="eyebrow"],[class*="kicker"]{
   font-family:var(--luria-font)!important;
   font-weight:400!important;
@@ -4781,7 +4781,7 @@ button,input,select,textarea{font-family:var(--luria-font)!important}
 }
 
 
-/* LURIA v16.13 — tipografia única global.
+/* TRAUBE v16.13 — tipografia única global.
    A referência oficial é a tipografia usada em Questões do dia / subtítulo.
    Esta regra fica por último para neutralizar fontes locais antigas. */
 :root{--font-ui:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important}
@@ -4790,7 +4790,7 @@ body [contenteditable="true"],body [contenteditable="true"] *,body .note-editor-
 body :where(code,pre,kbd,samp),body :where(code,pre,kbd,samp) *{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace!important}
 
 /* =========================================================
-   v2026.10.02 — SCROLLBAR GLOBAL LURIA
+   v2026.10.02 — SCROLLBAR GLOBAL TRAUBE
    Referência visual: scrollbar dos decks de Flashcards
    ========================================================= */
 html,
@@ -4821,7 +4821,7 @@ body *::-webkit-scrollbar-thumb{
 
 
 /* =========================================================
-   v2026.10.02 — LISTAS CLICÁVEIS / DROPDOWNS NO PADRÃO LURIA
+   v2026.10.02 — LISTAS CLICÁVEIS / DROPDOWNS NO PADRÃO TRAUBE
    ========================================================= */
 .luria-site-select{
   appearance:none!important;
@@ -4913,7 +4913,7 @@ body *::-webkit-scrollbar-thumb{
 }
 
 
-/* LURIA v2026.10.04 — tipografia global mais leve em botões e callouts.
+/* TRAUBE v2026.10.04 — tipografia global mais leve em botões e callouts.
    Exceções visuais: Flashcards, Questões e Simulados e Caderno de Erros mantêm
    seus pesos próprios onde o destaque faz parte do design. */
 body:not([data-page="flashcards"]):not([data-page="questoes"]):not([data-page="erros"]) button,
@@ -4927,7 +4927,7 @@ body:not([data-page="flashcards"]):not([data-page="questoes"]):not([data-page="e
 
 
 
-/* LURIA SCROLLBAR — THUMB ONLY v1 — 2026-10-04 */
+/* TRAUBE SCROLLBAR — THUMB ONLY v1 — 2026-10-04 */
 /* Scrollbar global: sem setas, sem trilho/fundo — apenas a barra móvel. */
 *{
   scrollbar-width:thin;
@@ -4988,7 +4988,7 @@ body:not([data-page="flashcards"]):not([data-page="questoes"]):not([data-page="e
 
 
 /* =========================================================
-   LURIA GLOBAL — TRUE THUMB-ONLY SCROLLBAR v2026.10.05
+   TRAUBE GLOBAL — TRUE THUMB-ONLY SCROLLBAR v2026.10.05
    Todas as áreas roláveis usam somente o thumb.
    Trilho/cantos/botões são transparentes e não reservam faixa no layout.
    ========================================================= */
@@ -5070,7 +5070,7 @@ body *::-webkit-resizer{
 }
 
 
-/* LURIA SCROLLBAR — NO ARROW BUTTONS HARD LOCK v2026.10.05
+/* TRAUBE SCROLLBAR — NO ARROW BUTTONS HARD LOCK v2026.10.05
    Remove qualquer botão/seta nativa de scrollbar em TODA área rolável. */
 html::-webkit-scrollbar-button,
 body::-webkit-scrollbar-button,

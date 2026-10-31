@@ -1,6 +1,6 @@
 /* assets/js/ecg-cv-engine.js
    Módulo de Visão Computacional Real para Identificação, Orientação,
-   Homografia, Reconhecimento de Rótulos e Calibração de Grade de ECG (LURIA).
+   Homografia, Reconhecimento de Rótulos e Calibração de Grade de ECG (TRAUBE).
 
    Princípios Arquiteturais:
    1. NENHUM LAYOUT OU CALIBRAÇÃO É ASSUMIDO SILENCIOSAMENTE:
@@ -21,7 +21,7 @@
 
 (function (global) {
   "use strict";
-  const contracts = global.LuriaEcgContracts || (typeof require === "function" ? require("./ecg-contracts.js") : null);
+  const contracts = global.TraubeEcgContracts || (typeof require === "function" ? require("./ecg-contracts.js") : null);
 
   const CANONICAL_LEADS = ["DI", "DII", "DIII", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"];
 
@@ -1426,7 +1426,7 @@
     }
 
     // 6. Testar hipóteses de layout e validar cada célula com o extrator real + OCR de rótulos
-    const extractor = global.LuriaEcgSignalExtractor;
+    const extractor = global.TraubeEcgSignalExtractor;
     const layoutEvaluation = evaluateAndMapLeadRegions(imageData, sheet.boundaries, topology, calibration, extractor, options);
 
     if (!layoutEvaluation.isValidECG) {
@@ -2131,7 +2131,7 @@
     STANDARD_LAYOUT_3X4
   };
 
-  global.LuriaEcgCvEngine = exported;
+  global.TraubeEcgCvEngine = exported;
 
   if (typeof module !== "undefined" && module.exports) {
     module.exports = exported;

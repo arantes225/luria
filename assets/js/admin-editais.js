@@ -240,7 +240,7 @@
             <div class="admin-edital-footer">
               <small>
                 O PDF capturado automaticamente serve apenas como referência no Admin.
-                Só o link salvo por você em “Link oficial do edital” aparece no LURIA.
+                Só o link salvo por você em “Link oficial do edital” aparece no TRAUBE.
               </small>
 
               <div class="admin-edital-publish-actions">
@@ -447,7 +447,7 @@
       } catch (error) {
         console.error(error);
         deleteButton.disabled = false;
-        window.LuriaDialog?.alert?.("Não foi possível apagar o edital.");
+        window.TraubeDialog?.alert?.("Não foi possível apagar o edital.");
       }
 
       return;
@@ -462,12 +462,12 @@
       if (!item) return;
 
       if (item.review_status !== "reviewed") {
-        window.LuriaDialog?.alert?.("Salve a revisão do edital antes de publicar.");
+        window.TraubeDialog?.alert?.("Salve a revisão do edital antes de publicar.");
         return;
       }
 
       if (!item.edital_url) {
-        window.LuriaDialog?.alert?.("Informe o link oficial do edital antes de publicar.");
+        window.TraubeDialog?.alert?.("Informe o link oficial do edital antes de publicar.");
         return;
       }
 
@@ -490,7 +490,7 @@
         console.error(error);
         publishButton.disabled = false;
         publishButton.textContent = original;
-        window.LuriaDialog?.alert?.("Não foi possível publicar o edital.");
+        window.TraubeDialog?.alert?.("Não foi possível publicar o edital.");
       }
 
       return;
@@ -534,7 +534,7 @@
   $("admin-editais-search")?.addEventListener("input", render);
   $("admin-editais-filter")?.addEventListener("change", render);
 
-  window.LuriaAdminEditais = {
+  window.TraubeAdminEditais = {
     load,
     refresh: () => load(true),
     get pendingCount() {

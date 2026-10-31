@@ -10,9 +10,9 @@ const cvFile = fs.readFileSync(path.join(__dirname, "../assets/js/ecg-cv-engine.
 const extractor = require("../assets/js/ecg-signal-extractor.js");
 
 function identityGuard() {
-  const app = { LuriaEcgContracts: require("../assets/js/ecg-contracts.js") };
+  const app = { TraubeEcgContracts: require("../assets/js/ecg-contracts.js") };
   vm.runInNewContext(mainFile, { window: app, Date, console });
-  return app.LuriaEcgSceneGuard.isSafeAutomaticLeadAssignment;
+  return app.TraubeEcgSceneGuard.isSafeAutomaticLeadAssignment;
 }
 function identity(lead="aVR", expected=lead, confidence=.98) {
   return {status:"ocr_confirmed",recognizedLead:lead,expectedLead:expected,

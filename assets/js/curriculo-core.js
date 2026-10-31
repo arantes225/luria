@@ -85,5 +85,5 @@
   }
   const api = { categories, identity, merge, parseLattes, score, suggestFmusp };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
-  else root.LuriaCurriculo = api;
+  else root.TraubeCurriculo = api;
 })(globalThis);

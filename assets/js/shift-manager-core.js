@@ -113,7 +113,7 @@
       monthlyCosts:Math.max(0,cents(raw.monthlyCosts))};
   }
   function saveTaxSettings(settings){return write(TAX_KEY,settings);}
-  window.LuriaShiftCore={SHIFT_KEY,getShifts,saveShifts,formatMoney,formatDate,isoToday,localDate,escapeHtml,
+  window.TraubeShiftCore={SHIFT_KEY,getShifts,saveShifts,formatMoney,formatDate,isoToday,localDate,escapeHtml,
     cents,num,payableGross,outstanding,paymentState,getInstitutions,saveInstitution,expectedDate,
     durationMinutes,getTaxSettings,saveTaxSettings};
 })();

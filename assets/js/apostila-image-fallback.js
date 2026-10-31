@@ -1,7 +1,7 @@
 (() => {
   'use strict';
-  if (window.LuriaApostilaImageFallback) return;
-  window.LuriaApostilaImageFallback = true;
+  if (window.TraubeApostilaImageFallback) return;
+  window.TraubeApostilaImageFallback = true;
 
   // Images hosted by third parties sometimes need their canonical address.
   // Retry the SAME documented medical image; never substitute a different picture.

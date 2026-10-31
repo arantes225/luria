@@ -1,4 +1,4 @@
-# LURIA | Aula 172 — Princípios de oncologia cirúrgica
+# TRAUBE | Aula 172 — Princípios de oncologia cirúrgica
 
 **Área:** Cirurgia Geral — Oncologia Cirúrgica  
 **Currículo:** Lote 09, aula 172/180  
@@ -6,7 +6,7 @@
 **Escopo:** tomada de decisão, diagnóstico e estadiamento oncológico, ressecabilidade, cirurgia curativa e paliativa, margens, linfonodos, planejamento multimodal, segurança perioperatória e seguimento.  
 **Status:** RASCUNHO editorial — não validado por cirurgião oncológico nem publicado. Doses de fármacos oncológicos, margens em centímetros e esquemas por tipo tumoral dependem de diretrizes específicas e atualização contínua.
 
-> **Pulo do Gato LURIA:** A melhor cirurgia oncológica não é necessariamente a maior. É aquela que alcança o **objetivo correto** — curativo, diagnóstico, de controle local ou paliativo — com ressecção adequada ao tumor, estratégia linfonodal e multimodal apropriadas e morbidade proporcional. **Ressecabilidade anatômica não é igual a operabilidade clínica nem a benefício oncológico.**
+> **Pulo do Gato TRAUBE:** A melhor cirurgia oncológica não é necessariamente a maior. É aquela que alcança o **objetivo correto** — curativo, diagnóstico, de controle local ou paliativo — com ressecção adequada ao tumor, estratégia linfonodal e multimodal apropriadas e morbidade proporcional. **Ressecabilidade anatômica não é igual a operabilidade clínica nem a benefício oncológico.**
 
 ## 1. Objetivos práticos
 
@@ -490,7 +490,7 @@ A política de câncer inclui rastreamento e detecção precoce em ações espec
 
 **Cuidado com marcos temporais:** não afirmar que o tempo clínico ideal de todo câncer é idêntico ao prazo legal máximo. Tumores com obstrução, perfuração, hemorragia, compressão ou agressividade elevada demandam urgência diferente.
 
-## 30. Fluxos de decisão LURIA
+## 30. Fluxos de decisão TRAUBE
 
 ### Fluxo A — Massa suspeita sem diagnóstico
 
@@ -693,7 +693,7 @@ Todos os casos abaixo são **fictícios**, com finalidade didática. A conduta r
 
 **Exames e interpretação:** Revisar biópsia original e marcadores, marcações/clips, exames de resposta, decisão de conservação versus mastectomia, avaliação axilar conforme critérios PCDT e equipe.
 
-**Conduta inicial:** Planejar cirurgia e axila sem assumir cura pela resposta clínica; orientar anatomopatologia da peça, terapia sistêmica e radioterapia conforme achados. Consultar módulo 167 LURIA.
+**Conduta inicial:** Planejar cirurgia e axila sem assumir cura pela resposta clínica; orientar anatomopatologia da peça, terapia sistêmica e radioterapia conforme achados. Consultar módulo 167 TRAUBE.
 
 **Seguimento e avaliação de resultados:** Revisão de pCR/resíduo, margens, linfonodos, reabilitação e vigilância.
 
@@ -1185,7 +1185,7 @@ Esta camada visual é uma **lista de candidatas** e não indica arquivos já ins
 
 | Nº | Figura candidata | Função | Fonte/condição |
 |---|---|---|---|
-| 1 | Anatomia de progressão tumoral epitelial | Esquema de epitélio normal → displasia → carcinoma in situ → invasão estromal. | Ilustração original LURIA, revisão anatomopatológica. |
+| 1 | Anatomia de progressão tumoral epitelial | Esquema de epitélio normal → displasia → carcinoma in situ → invasão estromal. | Ilustração original TRAUBE, revisão anatomopatológica. |
 | 2 | Rotas de disseminação do câncer | Fluxograma linfática, hematogênica, perineural, contígua e transcelômica. | Diagrama autoral com exemplos por tumor. |
 | 3 | Imagem de sarcoma profundo em RM | Massa profunda de coxa com relação a fáscia, vasos e trajeto planejado de biópsia. | RM clínica real autorizada de instituição especializada; legenda com limitações. |
 | 4 | Core biópsia guiada por ultrassom | Imagem de agulha e alvo, destacando integridade de planos. | Imagem de procedência hospitalar com licença ou diagrama próprio. |
@@ -1208,7 +1208,7 @@ Esta camada visual é uma **lista de candidatas** e não indica arquivos já ins
 
 1. Verificar procedência, licença de reprodução e autorização de uso em plataforma educacional/comercial.
 2. Preservar contexto e achados verdadeiros: não atribuir diagnóstico a exame sem confirmação de origem.
-3. Converter imagens aprovadas a WebP com nitidez suficiente e orçamento de mídia LURIA; radiologia não deve perder detalhes finos.
+3. Converter imagens aprovadas a WebP com nitidez suficiente e orçamento de mídia TRAUBE; radiologia não deve perder detalhes finos.
 4. Criar alt text que descreva conteúdo e limite de cada exame; cores não podem ser o único modo de distinguir margens ou caminhos.
 5. Conferir figuras em desktop e PWA, legibilidade ao ampliar, orientação de peça, escalas e responsividade.
 6. Marcar esquemas como ilustrações, não exames de pacientes.
@@ -1225,7 +1225,7 @@ Esta camada visual é uma **lista de candidatas** e não indica arquivos já ins
 - Extensão de margens e indicação de linfonodo sentinela não são universais; verificar pelo tumor, estádio e terapia prévia.
 - ERAS e ESPEN aplicam práticas por especialidade e situação clínica, não ordem para alimentar precocemente todo paciente instável.
 - Avaliação da operabilidade e consentimento exige abordagem individual e revisão de segurança/anestesia.
-- A lista visual ainda não constitui seleção/licenciamento, nem o arquivo Markdown está integrado ao renderizador da LURIA.
+- A lista visual ainda não constitui seleção/licenciamento, nem o arquivo Markdown está integrado ao renderizador da TRAUBE.
 - Regras sobre acesso ao tratamento no SUS devem ser confirmadas com leis e normativas atuais do serviço.
 
 ### Checklist de publicação

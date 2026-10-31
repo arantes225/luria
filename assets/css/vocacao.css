@@ -1,4 +1,4 @@
-/* LURIA · Vocação médica
+/* TRAUBE · Vocação médica
    Consome exclusivamente os tokens de ui-app.css no BODY.
    O tema é controlado por data-ui-appearance (light/dark) e
    data-ui-identity (blue/pink), não por :root[data-theme]. */
@@ -157,7 +157,7 @@ body[data-page="vocacao"] :is(.voc-method-note a, .voc-sources a) {
   text-underline-offset: 3px;
 }
 
-/* Controles globais da LURIA (sem cores fixas no claro, escuro ou rosa). */
+/* Controles globais da TRAUBE (sem cores fixas no claro, escuro ou rosa). */
 body[data-page="vocacao"] .voc-button {
   min-height: 46px;
   padding: 11px 20px;

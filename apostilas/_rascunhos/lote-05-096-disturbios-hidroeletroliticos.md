@@ -1,4 +1,4 @@
-# LURIA — Apostila 096: Distúrbios hidroeletrolíticos
+# TRAUBE — Apostila 096: Distúrbios hidroeletrolíticos
 
 **Lote:** 5 — tema 096 de 260 · **Área:** Clínica Médica
 **Estado editorial:** rascunho parcial original; **NÃO APROVADO** para publicação ou prescrição.
@@ -15,7 +15,7 @@
 
 Os três materiais são comparações **parciais**; o projeto não possui, entre os documentos efetivamente abertos neste turno, um livro-texto comparável cobrindo por completo os cinco eixos eletrolíticos. Por isso a etapa zero **não certifica equivalência pedagógica integral** e a apostila deve permanecer em revisão.
 
-**Referência de identidade LURIA:** o padrão do repositório, especialmente a apostila \`apostilas/amniorrexe-prematura/index.html\` e a estrutura de livros com introdução, mapa de decisão, capítulos, quadros, casos, questões e fontes. Nenhum HTML médico existente foi substituído.
+**Referência de identidade TRAUBE:** o padrão do repositório, especialmente a apostila \`apostilas/amniorrexe-prematura/index.html\` e a estrutura de livros com introdução, mapa de decisão, capítulos, quadros, casos, questões e fontes. Nenhum HTML médico existente foi substituído.
 
 ### Diretrizes e documentos primários para conferência
 
@@ -26,7 +26,7 @@ Os três materiais são comparações **parciais**; o projeto não possui, entre
 
 ### Matriz de lacunas detectadas antes da redação
 
-| Competência | Materiais comparativos do Drive | Necessidade do texto LURIA |
+| Competência | Materiais comparativos do Drive | Necessidade do texto TRAUBE |
 |---|---|---|
 | Osmolalidade e tonicidade | Insuficiente | Explicar água corporal, gradiente osmótico e hiperglicemia |
 | Hiponatremia | Citada indiretamente | Distinguir pseudohiponatremia, hipertônica e hipotônica; urina e tratamento |
@@ -160,7 +160,7 @@ O cálcio sérico total inclui a fração ligada a proteínas e a forma livre (i
 
 ### Armadilha eletrocardiográfica
 
-A referência curta do Drive cita valores de “QT em milissegundos” com magnitude evidentemente incompatível (por exemplo, 0,40 milissegundo), o que pode confundir segundos, milissegundos e correção para frequência cardíaca. Na LURIA, qualquer valor de QT deve ter unidade e método verificados. O **QTc** pode variar com fórmula usada e frequência cardíaca; não diagnosticar distúrbio de cálcio por um único QT calculado sem interpretar o ECG e dosagem ionizada.
+A referência curta do Drive cita valores de “QT em milissegundos” com magnitude evidentemente incompatível (por exemplo, 0,40 milissegundo), o que pode confundir segundos, milissegundos e correção para frequência cardíaca. Na TRAUBE, qualquer valor de QT deve ter unidade e método verificados. O **QTc** pode variar com fórmula usada e frequência cardíaca; não diagnosticar distúrbio de cálcio por um único QT calculado sem interpretar o ECG e dosagem ionizada.
 
 ## 8. Magnésio e fósforo: distúrbios frequentemente esquecidos
 
@@ -408,7 +408,7 @@ Carga de sódio por soluções hipertônicas ou administração inadequada de bi
 
 Por décadas, recomendações para hipernatremia **crônica ou de duração desconhecida** adotaram redução de Na geralmente não superior a cerca de **0,5 mmol/L/h** (aproximadamente 10–12 mmol/L ao dia) por extrapolação, sobretudo, de experiência pediátrica. Em hipernatremia aguda causada por carga de sódio, o tratamento pode ser mais rápido em situações apropriadas. Estudos observacionais e metanálise de 2025 em **adultos hospitalizados** não demonstraram maior taxa de complicações neurológicas com reduções mais rápidas dentro dos grupos avaliados e levantaram a hipótese de risco do tratamento excessivamente lento.
 
-Há um detalhe central: **observação de associação não equivale a provar causalidade ou definir novo limite universal**. A idade, duração real, causa, adaptação cerebral, gravidade e vieses de seleção mudam o significado desses resultados. A LURIA não deve apresentar “0,5 mmol/L/h” como verdade incontestável para todo adulto, nem anunciar que taxas elevadas são universalmente seguras. Em contexto clínico, a escolha deve seguir condição, protocolos e acompanhamento laboratorial; crianças têm considerações distintas, que não são extrapoladas automaticamente da literatura adulta.
+Há um detalhe central: **observação de associação não equivale a provar causalidade ou definir novo limite universal**. A idade, duração real, causa, adaptação cerebral, gravidade e vieses de seleção mudam o significado desses resultados. A TRAUBE não deve apresentar “0,5 mmol/L/h” como verdade incontestável para todo adulto, nem anunciar que taxas elevadas são universalmente seguras. Em contexto clínico, a escolha deve seguir condição, protocolos e acompanhamento laboratorial; crianças têm considerações distintas, que não são extrapoladas automaticamente da literatura adulta.
 
 **Referências:** Yun et al., *Evaluation and management of hypernatremia in adults: clinical perspectives*, 2023, https://pmc.ncbi.nlm.nih.gov/articles/PMC10175862/ ; Kitisin et al., revisão sistemática de correção da hipernatremia em adultos, *Journal of Critical Care* 2025;87:155012, https://pubmed.ncbi.nlm.nih.gov/39765195/.
 
@@ -801,7 +801,7 @@ E. Todo paciente com DRC tem indicação automática de calcitriol em dose alta.
 
 
 
-Este manuscrito **ainda não** satisfaz o conjunto de requisitos de uma apostila LURIA finalizada. Falta, de forma prioritária:
+Este manuscrito **ainda não** satisfaz o conjunto de requisitos de uma apostila TRAUBE finalizada. Falta, de forma prioritária:
 
 1. Referência educacional integral ou conjunto suficiente de apostilas no Drive para comparação de escopo completo; comparar também com fontes nacionais específicas.
 2. Fisiologia renal e endócrina aprofundada, quadro diagnóstico de Na baseado em osmolalidade urinária/volemia, e avaliação de hiperaldosteronismo e perdas de K.

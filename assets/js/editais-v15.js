@@ -642,7 +642,7 @@
 
   function openExamEditor(id, focusScore = false) {
     if (typeof window.openExamDialog !== "function") {
-      window.LuriaDialog.alert("Não foi possível abrir a edição desta prova.");
+      window.TraubeDialog.alert("Não foi possível abrir a edição desta prova.");
       return;
     }
 
@@ -670,7 +670,7 @@
 
     const label = data?.institution || "esta prova";
 
-    const confirmed = await window.LuriaDialog.confirm(
+    const confirmed = await window.TraubeDialog.confirm(
       `Excluir "${label}"?\n\nOs simulados vinculados não serão apagados; apenas deixarão de ficar vinculados à prova.`
     );
 
@@ -682,7 +682,7 @@
       .eq("id", id);
 
     if (error) {
-      window.LuriaDialog.alert(`Não foi possível excluir: ${error.message}`);
+      window.TraubeDialog.alert(`Não foi possível excluir: ${error.message}`);
       return;
     }
 

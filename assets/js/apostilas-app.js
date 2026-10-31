@@ -1,5 +1,5 @@
 /**
- * LURIA - Apostilas Hub & Hall Navigator
+ * TRAUBE - Apostilas Hub & Hall Navigator
  * Suporte completo ao Hall com 6 Grandes Áreas da Medicina:
  * 1. Clínica Médica
  * 2. Cirurgia Geral
@@ -82,7 +82,7 @@
       <div class="book-meta">
         <span class="book-subarea">${escapeHtml(book.materia || "Geral")}</span>
         <strong class="book-title">${escapeHtml(book.tema || book.titulo || "Apostila")}</strong>
-        <small class="book-foot">Apostila LURIA • Acessar ↗</small>
+        <small class="book-foot">Apostila TRAUBE • Acessar ↗</small>
       </div>
     `;
     return a;
@@ -112,7 +112,7 @@
     if (libraryView) libraryView.hidden = !inLibrary;
     const pageTitle = document.getElementById("books-page-title");
     if (pageTitle) pageTitle.textContent = inLibrary ? currentActiveArea : "Apostilas";
-    document.title = inLibrary ? currentActiveArea + " · Apostilas · LURIA" : "Apostilas · LURIA";
+    document.title = inLibrary ? currentActiveArea + " · Apostilas · TRAUBE" : "Apostilas · TRAUBE";
   }
 
   function navigateToArea(areaName, { replace = false, fromHistory = false } = {}) {
@@ -256,7 +256,7 @@
         baseCatalog = await resp.json();
       }
     } catch (e) {
-      console.warn("LURIA: Falha ao carregar apostilas-catalogo.json, usando fallback em memória", e);
+      console.warn("TRAUBE: Falha ao carregar apostilas-catalogo.json, usando fallback em memória", e);
     }
 
     // 2. Mescla com eventuais apostilas dinâmicas publicadas no Supabase

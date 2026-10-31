@@ -1,8 +1,8 @@
-# LURIA ECG — Comparativo Foto normal vs Scanner guiado (piloto)
+# TRAUBE ECG — Comparativo Foto normal vs Scanner guiado (piloto)
 
 ## Objetivo
 
-Verificar se fotografar o ECG com o aplicativo nativo de camera do aparelho (sem identificacao dinamica de derivações) gera imagens melhores do que o scanner guiado atual da LURIA. Ambas as capturas seguem **o mesmo motor atual** de deteccao de folha, layout, extracao, auditoria e revisao. Portanto, melhorias atribuiveis ao modo de captura podem ser estudadas separadamente das falhas do extrator.
+Verificar se fotografar o ECG com o aplicativo nativo de camera do aparelho (sem identificacao dinamica de derivações) gera imagens melhores do que o scanner guiado atual da TRAUBE. Ambas as capturas seguem **o mesmo motor atual** de deteccao de folha, layout, extracao, auditoria e revisao. Portanto, melhorias atribuiveis ao modo de captura podem ser estudadas separadamente das falhas do extrator.
 
 ### Modos
 

@@ -143,7 +143,7 @@ export const ReelCover: React.FC = () => {
             />
             <div>
               <div style={{ fontSize: 18, fontWeight: 800, color: '#ffffff' }}>
-                Conheça a LURIA
+                Conheça a TRAUBE
               </div>
               <div style={{ fontSize: 13, color: '#87b1dd' }}>
                 A plataforma médica do futuro

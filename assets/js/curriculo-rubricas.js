@@ -2,7 +2,7 @@
 (() => {
   const part = (id, label, points, limit = 1) => ({ id, label, points, limit });
   const criterion = (id, title, max, page, note, parts) => ({ id, title, max, page, note, parts });
-  window.LuriaCurriculoRubricas = [{
+  window.TraubeCurriculoRubricas = [{
     id: 'fmusp-2027-direto-v20261007', title: 'FMUSP / FUVEST · 2027 · Acesso direto',
     status: 'reviewed', max: 100, checkedAt: '2026-10-16',
     source: 'https://www.fuvest.br/wp-content/uploads/rm2027-edital-02-2026.pdf',
@@ -27,11 +27,11 @@
       criterion('representacao','Representação estudantil',3,35,'Exclui ligas. Conferir entidade, instituição, período, função e carga horária no certificado.',[part('r1','Pelo menos 2 anos / 4 semestres',3),part('r2','Pelo menos 1 ano / 2 semestres',1)])
     ]
   }];
-  window.LuriaCurriculoRubricas[0].criteria.find(row => row.id === 'docentes').exclusive = true;
-  window.LuriaCurriculoRubricas[0].institution = 'USP-SP';
-  window.LuriaCurriculoRubricas[0].region = 'SP';
-  window.LuriaCurriculoRubricas[0].edition = '2027';
-  window.LuriaCurriculoRubricas[0].groups = [
+  window.TraubeCurriculoRubricas[0].criteria.find(row => row.id === 'docentes').exclusive = true;
+  window.TraubeCurriculoRubricas[0].institution = 'USP-SP';
+  window.TraubeCurriculoRubricas[0].region = 'SP';
+  window.TraubeCurriculoRubricas[0].edition = '2027';
+  window.TraubeCurriculoRubricas[0].groups = [
     {id:'formacao',title:'Instituição de formação',tone:'violet',criteria:['instituicao','hospital','docentes']},
     {id:'pesquisa',title:'Pesquisa e publicações',tone:'amber',criteria:['pesquisa','artigos']},
     {id:'academicas',title:'Atividades acadêmicas',tone:'blue',criteria:['monitoria']},
@@ -40,9 +40,9 @@
     {id:'qualificacoes',title:'Qualificações e suporte à vida',tone:'indigo',criteria:['pos','suporte']}
   ];
   for (const [institution,region] of [['UNIFESP','SP'],['FMABC','SP'],['Santa Casa SP','SP'],['SES-PE','PE'],['USP-RP','SP'],['PSU-MG','MG'],['PUC-Campinas','SP'],['UNICAMP','SP'],['Einstein','SP'],['UFPA','PA'],['PSU-GO','GO'],['PUC-SP','SP']]) {
-    window.LuriaCurriculoRubricas.push({ id:institution.toLowerCase().replace(/[^a-z0-9]/g,'-')+'-pending', title:institution+' · Edital a conferir', institution, region, status:'pending', scope:'A avaliação curricular e a edição vigente deste processo ainda precisam ser confirmadas em edital oficial.' });
+    window.TraubeCurriculoRubricas.push({ id:institution.toLowerCase().replace(/[^a-z0-9]/g,'-')+'-pending', title:institution+' · Edital a conferir', institution, region, status:'pending', scope:'A avaliação curricular e a edição vigente deste processo ainda precisam ser confirmadas em edital oficial.' });
   }
-  const psu=window.LuriaCurriculoRubricas.find(row=>row.institution==='PSU-MG');
+  const psu=window.TraubeCurriculoRubricas.find(row=>row.institution==='PSU-MG');
   Object.assign(psu,{
     id:'psu-mg-2027-direto-v20260924', title:'PSU-MG / AREMG · 2027 · Entrada direta',edition:'2027',
     status:'reviewed',max:13,checkedAt:'2026-10-17',
@@ -74,7 +74,7 @@
     ]
   });
   psu.criteria.forEach((row,index)=>{row.number=['1.1','1.2','2','3','4','5','6','7','8','9','10','11'][index];});
-  const usprp=window.LuriaCurriculoRubricas.find(row=>row.institution==='USP-RP');
+  const usprp=window.TraubeCurriculoRubricas.find(row=>row.institution==='USP-RP');
   Object.assign(usprp,{
     id:'usp-rp-2027-direto-v20260922', title:'USP-RP / HCFMRP · 2027 · Acesso direto', edition:'2027',
     status:'reviewed',max:10,checkedAt:'2026-10-17',
@@ -99,7 +99,7 @@
     ]
   });
   usprp.criteria.find(row=>row.id==='rp-enamed').exclusive=true;
-  const pucsp=window.LuriaCurriculoRubricas.find(row=>row.institution==='PUC-SP');
+  const pucsp=window.TraubeCurriculoRubricas.find(row=>row.institution==='PUC-SP');
   Object.assign(pucsp,{
     id:'puc-sp-2027-direto-v20260904',title:'PUC-SP · 2027 · Área básica e acesso direto',edition:'2027',
     status:'reviewed',max:100,checkedAt:'2026-10-17',
@@ -126,7 +126,7 @@
       {id:'qualificacoes',title:'Qualificações',tone:'indigo',criteria:['pucsp-idioma']}
     ]
   });
-  const unicamp=window.LuriaCurriculoRubricas.find(row=>row.institution==='UNICAMP');
+  const unicamp=window.TraubeCurriculoRubricas.find(row=>row.institution==='UNICAMP');
   Object.assign(unicamp,{
     id:'unicamp-2027-direto-v20260916',title:'UNICAMP · 2027 · Acesso direto',edition:'2027',
     status:'reviewed',max:100,checkedAt:'2026-10-17',
@@ -153,7 +153,7 @@
       {id:'extensao',title:'Extensão e representação',tone:'rose',criteria:['unicamp-extensao','unicamp-representacao','unicamp-entidades']}
     ]
   });
-  const ufpa=window.LuriaCurriculoRubricas.find(row=>row.institution==='UFPA');
+  const ufpa=window.TraubeCurriculoRubricas.find(row=>row.institution==='UFPA');
   Object.assign(ufpa,{
     id:'ufpa-2026-v20250918',title:'UFPA · 2026 · Residência médica',edition:'2026',
     status:'reviewed',max:100,checkedAt:'2026-10-17',
@@ -175,7 +175,7 @@
       {id:'qualificacoes',title:'Qualificações',tone:'indigo',criteria:['ufpa-idiomas']}
     ]
   });
-  const santacasasp=window.LuriaCurriculoRubricas.find(row=>row.institution==='Santa Casa SP');
+  const santacasasp=window.TraubeCurriculoRubricas.find(row=>row.institution==='Santa Casa SP');
   Object.assign(santacasasp,{
     id:'santa-casa-sp-2027-direto-v20260921',title:'Santa Casa SP · 2027 · Acesso direto',edition:'2027',
     status:'reviewed',max:10,checkedAt:'2026-10-17',
@@ -200,7 +200,7 @@
       {id:'eventos',title:'Congressos e jornadas',tone:'teal',criteria:['scsp-eventos']}
     ]
   });
-  const psugo=window.LuriaCurriculoRubricas.find(row=>row.institution==='PSU-GO');
+  const psugo=window.TraubeCurriculoRubricas.find(row=>row.institution==='PSU-GO');
   Object.assign(psugo,{
     id:'psu-go-2027-direto-v20260924',title:'PSU-GO · 2027 · Entrada direta',edition:'2027',
     status:'reviewed',max:10,checkedAt:'2026-10-17',
@@ -228,7 +228,7 @@
       {id:'eventos',title:'Eventos e suporte à vida',tone:'teal',criteria:['go-eventos','go-suporte']}
     ]
   });
-  const puccampinas=window.LuriaCurriculoRubricas.find(row=>row.institution==='PUC-Campinas');
+  const puccampinas=window.TraubeCurriculoRubricas.find(row=>row.institution==='PUC-Campinas');
   Object.assign(puccampinas,{
     id:'puc-campinas-2027-direto-v20260915',title:'PUC-Campinas · 2027 · Acesso direto',edition:'2027',
     status:'reviewed',max:100,checkedAt:'2026-10-17',
@@ -260,7 +260,7 @@
       {id:'qualificacoes',title:'Proficiência',tone:'indigo',criteria:['puccamp-ingles']}
     ]
   });
-  const fmabc=window.LuriaCurriculoRubricas.find(row=>row.institution==='FMABC');
+  const fmabc=window.TraubeCurriculoRubricas.find(row=>row.institution==='FMABC');
   Object.assign(fmabc,{
     id:'fmabc-2027-direto-v20260923',title:'FMABC · 2027 · Acesso direto',edition:'2027',
     status:'reviewed',max:10,checkedAt:'2026-10-17',
@@ -284,18 +284,18 @@
       {id:'qualificacoes',title:'Proficiência',tone:'indigo',criteria:['fmabc-ingles']}
     ]
   });
-  Object.assign(window.LuriaCurriculoRubricas.find(row=>row.institution==='UNIFESP'),{
+  Object.assign(window.TraubeCurriculoRubricas.find(row=>row.institution==='UNIFESP'),{
     id:'unifesp-2027-por-programa-v20260923',title:'UNIFESP · 2027 · Matrizes por programa',edition:'2027',status:'program-specific',checkedAt:'2026-10-17',
     source:'https://documento.vunesp.com.br/documento/stream/Nzg4NzcyOA%3d%3d',listing:'https://www.vunesp.com.br/UFSP2602',
     scope:'O edital oficial de 2027 traz matrizes diferentes para cada programa e especialidade. Uma nota única para UNIFESP seria incorreta; o simulador por especialidade será liberado quando essa seleção for adicionada.'
   });
-  Object.assign(window.LuriaCurriculoRubricas.find(row=>row.institution==='Einstein'),{
+  Object.assign(window.TraubeCurriculoRubricas.find(row=>row.institution==='Einstein'),{
     id:'einstein-2027-pesos-pendentes-v20260803',title:'Einstein · 2027 · Pesos ainda não publicados',edition:'2027',status:'weights-pending',checkedAt:'2026-10-17',
     source:'https://documento.vunesp.com.br/documento/stream/Nzc3MTg1NA%3d%3d',listing:'https://www.vunesp.com.br/FEAE2603',
     scope:'O edital oficial de 2027 prevê análise curricular, mas determina que as atividades e os respectivos pesos sejam publicados em aditivo específico. Esse aditivo ainda não constava nas publicações oficiais em 17/10/2026.'
   });
   // SES-PE: avaliação curricular comum aos programas de Residência Médica, item 9 do edital 2027.
-  Object.assign(window.LuriaCurriculoRubricas.find(row=>row.institution==='SES-PE'),{
+  Object.assign(window.TraubeCurriculoRubricas.find(row=>row.institution==='SES-PE'),{
     id:'ses-pe-2027-r1-v20261020',title:'SES-PE / SUS-PE · 2027 · R1',edition:'2027',
     status:'reviewed',max:100,checkedAt:'2026-10-28',
     source:'https://www.upenet.com.br/concursos/2027/27_RED_MED/Edital-e-Anexos/EDITAL%20RESID%C3%8ANCIA%20M%C3%89DICA-SUS-PE%202027%20-%20PUBLICA%C3%87%C3%83O.pdf',
@@ -320,7 +320,7 @@
     ]
   });
 
-  const unifesp=window.LuriaCurriculoRubricas.find(row=>row.institution==='UNIFESP');
+  const unifesp=window.TraubeCurriculoRubricas.find(row=>row.institution==='UNIFESP');
   const unifespPdf='https://ipmeducacao.com.br/wp-content/uploads/2026/10/UFSP2602_224_20260923140351.pdf-1.pdf';
   // Edital nº 690/2026, item 15.1.7 (a partir da página impressa 23).
   // Sem transcrição individual validada, o programa é selecionável, mas SEM nota inventada.
@@ -472,7 +472,7 @@
     source:unifespPdf,listing:'https://www.vunesp.com.br/UFSP2602',
     scope:'Selecione uma especialidade de acesso direto (R1) para consultar o quadro próprio do edital 690/2026. Nunca aplique automaticamente a matriz de outra especialidade.'
   });
-  Object.assign(window.LuriaCurriculoRubricas.find(row=>row.institution==='Einstein'),{
+  Object.assign(window.TraubeCurriculoRubricas.find(row=>row.institution==='Einstein'),{
     checkedAt:'2026-10-28',title:'Einstein · 2027 · Critérios publicados, pesos aguardados',
     scope:'Edital 2027, item 7.2.6: análise curricular com peso 1 (10% da nota final). São avaliados: iniciação científica documentada (horas/semanas/meses de dedicação na graduação), publicações PubMed (primeiro ou último autor, coautor, DOI e JCR na data da publicação) e mestrado/doutorado finalizado ou em curso. Enviar um PDF único de até 10 MB, nomeado CPF_Nome Completo, entre 05 e 09/12/2026. O edital remete a tabela de pontuação a aditivo específico, não confirmado nas publicações consultadas em 28/10; não se deve estimar pesos inexistentes.',
     criteriaOverview:['Iniciação científica documentada e tempo de dedicação','Publicações PubMed, autoria, DOI e impacto JCR','Mestrado/doutorado concluído ou em andamento','Pontuação unitária: aguardando aditivo oficial']

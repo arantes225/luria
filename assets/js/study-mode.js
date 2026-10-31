@@ -139,7 +139,7 @@
     return "medicine";
   }
 
-  window.LuriaMedicalTaxonomy = {
+  window.TraubeMedicalTaxonomy = {
     AREAS: [...AREAS],
     SUBJECTS_BY_AREA,
     canonicalArea,
@@ -147,7 +147,7 @@
     normalizeClassification
   };
 
-  window.LuriaStudyMode = {
+  window.TraubeStudyMode = {
     AREAS: { medicine: [...AREAS] },
     GENERAL_AREAS: { medicine: [...AREAS] },
     normalizeMode: () => "medicine",

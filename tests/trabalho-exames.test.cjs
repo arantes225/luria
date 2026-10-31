@@ -8,7 +8,7 @@ const root = path.resolve(__dirname, "..");
 const script = fs.readFileSync(path.join(root, "assets/js/trabalho-exames-interpreter.js"), "utf8");
 const context = { window: {}, document: { getElementById: () => null } };
 vm.runInNewContext(script, context, { timeout: 2500, filename: "trabalho-exames-interpreter.js" });
-const catalog = context.window.LURIA_EXAM_CATALOG;
+const catalog = context.window.TRAUBE_EXAM_CATALOG;
 const testsList = Array.from(catalog, g => Array.from(g.tests)).flat();
 test("20 painéis e 253 parâmetros distintos", () => {
   assert.equal(catalog.length, 20);

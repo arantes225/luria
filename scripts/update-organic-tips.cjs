@@ -1,5 +1,5 @@
 // ==============================================================================
-// LURIA MARKETING - TAREFA AGENDADA SEMANAL DE DICAS DE CRESCIMENTO ORGÂNICO
+// TRAUBE MARKETING - TAREFA AGENDADA SEMANAL DE DICAS DE CRESCIMENTO ORGÂNICO
 // Pode ser executada localmente via Node ou por GitHub Actions cron schedule.
 // ==============================================================================
 

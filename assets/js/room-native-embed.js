@@ -7,7 +7,7 @@
  const room=frame.dataset.roomId,kind=frame.dataset.nativeKind,caseId=frame.dataset.caseId||null;
  const uuid=/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
  if(!uuid.test(room||'')||!['questions','flashcards','simulator'].includes(kind)||caseId&&!uuid.test(caseId))return;
- window.LuriaRoomEmbed=Object.freeze({roomId:room,kind,caseId,activityCreatedAt:frame.dataset.activityCreatedAt||null});
+ window.TraubeRoomEmbed=Object.freeze({roomId:room,kind,caseId,activityCreatedAt:frame.dataset.activityCreatedAt||null});
  document.documentElement.classList.add('room-native-embed');
  // The room retains its global companion; the nested module needs no second one.
  function removeNestedCompanion(){const existing=document.querySelector('professor-alex-mascot');if(existing){existing.remove();return;}const observer=new MutationObserver(()=>{const companion=document.querySelector('professor-alex-mascot');if(companion){companion.remove();observer.disconnect();}});observer.observe(document.body,{childList:true});window.addEventListener('pagehide',()=>observer.disconnect(),{once:true});}

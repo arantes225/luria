@@ -1,8 +1,8 @@
 (() => {
   "use strict";
-  const engine=window.LuriaVocacaoEngine;
+  const engine=window.TraubeVocacaoEngine;
   if(!engine||!engine.selectAdaptive||!engine.catalogue) {
-    console.error("LURIA Vocação: avaliação indisponível.");
+    console.error("TRAUBE Vocação: avaliação indisponível.");
     return;
   }
   const $=id=>document.getElementById(id);
@@ -213,11 +213,11 @@
       sections("Três exemplos das suas próprias escolhas",samples?'<ul class="voc-evidence">'+samples+'</ul>':
         '<p>Você marcou poucas preferências diretas; considere repetir o teste depois de vivenciar mais estágios.</p>')+
       '<h2 class="voc-top-title">Até três residências médicas para explorar</h2>'+
-      '<p class="voc-result-intro">As recomendações incluem apenas residências convencionais da curadoria LURIA, de acesso direto ou com pré-requisito. A ordem representa afinidades editoriais, nunca chance de aprovação, competência ou satisfação.</p>'+
+      '<p class="voc-result-intro">As recomendações incluem apenas residências convencionais da curadoria TRAUBE, de acesso direto ou com pré-requisito. A ordem representa afinidades editoriais, nunca chance de aprovação, competência ou satisfação.</p>'+
       uncertain+'<div class="voc-match-list">'+top+'</div>'+
       sections("Como diferenciar as residências sugeridas",difference)+
       sections("Plano de validação no mundo real",'<p>Para cada residência sugerida: acompanhe ao menos um dia comum, converse com residentes e especialistas, observe tarefas repetitivas e compare seu bem-estar ao final do turno. Refaça a avaliação após novas experiências; a ordem pode mudar.</p>')+
-      '<p class="voc-result-intro"><strong>Limitações:</strong> avaliação exploratória da LURIA; não é teste psicométrico validado nem prevê aprovação. A inclusão no catálogo não garante vagas em todas as instituições ou anos. Confira os editais e a CNRM.</p>'+
+      '<p class="voc-result-intro"><strong>Limitações:</strong> avaliação exploratória da TRAUBE; não é teste psicométrico validado nem prevê aprovação. A inclusão no catálogo não garante vagas em todas as instituições ou anos. Confira os editais e a CNRM.</p>'+
       '<div class="voc-actions"><button id="voc-restart" class="voc-button voc-button-primary" type="button">Refazer desde o início</button>'+
       '<button id="voc-review" class="voc-button voc-button-secondary" type="button">Revisar respostas</button>'+
       '<a class="voc-button voc-button-secondary" href="/aplicar/">Voltar ao Aplicar</a></div>';

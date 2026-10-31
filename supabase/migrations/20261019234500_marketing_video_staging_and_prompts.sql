@@ -1,5 +1,5 @@
 -- ==============================================================================
--- LURIA MARKETING VIDEO STAGING & AUTO-CLEANUP (0 MB STORAGE FOOTPRINT)
+-- TRAUBE MARKETING VIDEO STAGING & AUTO-CLEANUP (0 MB STORAGE FOOTPRINT)
 -- ==============================================================================
 
 INSERT INTO storage.buckets (id, name, public, file_size_limit, allowed_mime_types)

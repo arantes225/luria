@@ -1,4 +1,4 @@
-# LURIA — Apostila 104: Hemorragia pós-parto
+# TRAUBE — Apostila 104: Hemorragia pós-parto
 **Lote:** 5 (093–115) · **Estado:** manuscrito inicial, NÃO APROVADO nem publicado · **Data da auditoria:** 14/10/2026.
 **Objetivo:** produzir capítulo autossuficiente e original sobre hemorragia pós-parto (HPP), articulado com a apostila de assistência ao parto, mas com profundidade própria em reconhecimento, ressuscitação hemostática e controle do foco.
 
@@ -6,7 +6,7 @@
 
 **Referência efetivamente aberta no Google Drive:** “04 - HEMORRAGIA POS PARTO.pdf”, resumo extenso (~13 mil caracteres de texto extraído), com seções de definição, fatores de risco, prevenção, identificação da perda, índice de choque, quatro T, uterotônicos, ácido tranexâmico, procedimentos e sequência de abordagem. O arquivo traz marca de redistribuição “Medicina livre”, mas **a instituição autora e a procedência editorial original não foram comprovadas**; não será chamado de material de referência, nem utilizado para reprodução de material protegido. URL do arquivo privado omitida do repositório público.
 
-**LURIA existente inspecionada:** \`apostilas/assistencia-ao-parto/index.html\` (~83,8 mil caracteres de HTML). Contém seção introdutória de HPP, causas pelos quatro T, vigilância intraparto e prevenção; merece preservação. O propósito desta apostila 104 é expandir **diagnóstico e resposta à emergência hemorrágica**, sem copiar aquela abordagem geral nem substituir o arquivo existente. As duas apostilas deverão se remeter mutuamente na integração final.
+**TRAUBE existente inspecionada:** \`apostilas/assistencia-ao-parto/index.html\` (~83,8 mil caracteres de HTML). Contém seção introdutória de HPP, causas pelos quatro T, vigilância intraparto e prevenção; merece preservação. O propósito desta apostila 104 é expandir **diagnóstico e resposta à emergência hemorrágica**, sem copiar aquela abordagem geral nem substituir o arquivo existente. As duas apostilas deverão se remeter mutuamente na integração final.
 
 **Fontes clínicas primárias para este início:**
 - World Health Organization, FIGO e ICM. *Consolidated guidelines for the prevention, diagnosis and treatment of postpartum haemorrhage* (2025). https://www.who.int/publications/i/item/9789240115637
@@ -238,7 +238,7 @@ Não confundir anemia fisiológica por hemodiluição com deficiência de ferro;
 
 Cicatriz uterina anterior, placenta prévia e achados ultrassonográficos suspeitos de implantação anormal exigem avaliação em serviço experiente. Uma cesárea em que se tenta remover à força uma placenta invasiva pode precipitar sangramento catastrófico. A conduta deve ser planejada previamente com obstetrícia, anestesia, banco de sangue e cirurgia capaz de controlar a hemorragia; em cenários selecionados, uma estratégia com placenta deixada *in situ* durante procedimento planejado pode ser mais segura que extração inadequada. Essa situação não deve ser confundida com retenção placentária comum após parto vaginal, embora ambas pertençam didaticamente ao grupo “tecido”.
 
-O planejamento precisa abordar acesso a hemocomponentes, instrumentação, possibilidade de histerectomia e consentimento esclarecido. A comunicação inclui fertilidade futura, risco de lesão urológica e necessidade de internação prolongada quando pertinentes. A apostila final deve cruzar esse tópico com os materiais de placenta prévia e cirurgia obstétrica existentes na LURIA, sem duplicar seus capítulos de anatomia ou técnicas operatórias.
+O planejamento precisa abordar acesso a hemocomponentes, instrumentação, possibilidade de histerectomia e consentimento esclarecido. A comunicação inclui fertilidade futura, risco de lesão urológica e necessidade de internação prolongada quando pertinentes. A apostila final deve cruzar esse tópico com os materiais de placenta prévia e cirurgia obstétrica existentes na TRAUBE, sem duplicar seus capítulos de anatomia ou técnicas operatórias.
 
 ### 10.3. Uterotônico profilático: qual a distinção entre indicação e disponibilidade?
 
@@ -733,7 +733,7 @@ Esses itens só poderão tornar-se candidatas formais à fila do Admin após reg
 
 ### 21.1. Teste de autossuficiência
 
-A versão final deverá ser respondível sem buscar fora da LURIA. Para aprovação editorial, um revisor diferente do redator deve verificar:
+A versão final deverá ser respondível sem buscar fora da TRAUBE. Para aprovação editorial, um revisor diferente do redator deve verificar:
 
 1. Consegue definir HPP e explicar por que o limiar de 300 mL + alteração hemodinâmica é distinto de 500 mL isolados?
 2. Consegue explicar tônus uterino normal, atonia e quatro T?
@@ -746,7 +746,7 @@ A versão final deverá ser respondível sem buscar fora da LURIA. Para aprovaç
 9. Identifica indicações gerais de intervenção cirúrgica e causas que não melhoram com massagem?
 10. Consegue orientar seguimento após HPP, anemia, evento traumático e sangramento secundário?
 
-**Status editorial:** estes testes são um roteiro para auditoria humana e não representam aprovação já obtida. A redação precisa ainda ser checada integralmente contra fontes nacionais e internacionais, além de passar pela deduplicação e pela adaptação ao renderizador da LURIA.
+**Status editorial:** estes testes são um roteiro para auditoria humana e não representam aprovação já obtida. A redação precisa ainda ser checada integralmente contra fontes nacionais e internacionais, além de passar pela deduplicação e pela adaptação ao renderizador da TRAUBE.
 
 
 ### Nota técnica de reconciliação OMS 2025 × práticas brasileiras

@@ -1,7 +1,7 @@
 (() => {
   "use strict";
-  const G = window.LuriaGames,
-    C = window.LuriaGameContent,
+  const G = window.TraubeGames,
+    C = window.TraubeGameContent,
     root = G.root;
   if (root?.dataset.game !== "sequencia") return;
   let selection = { specialty: "Misto", level: "1" },

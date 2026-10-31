@@ -5,14 +5,14 @@
 /* ui-v2-foundations.css — base compartilhada */
 /* Foundations are opt-in. The unique font name cannot replace legacy Inter. */
 @font-face {
-  font-family: "Luria Inter";
+  font-family: "Traube Inter";
   src: url("/assets/fonts/inter/InterVariable.woff2") format("woff2");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 body[data-ui="v2"], body[data-ui-shell="v2"] {
-  --ui-font-family: "Luria Inter", Inter, system-ui, sans-serif;
+  --ui-font-family: "Traube Inter", Inter, system-ui, sans-serif;
   --ui-space-1: .25rem; --ui-space-2: .5rem; --ui-space-3: .75rem;
   --ui-space-4: 1rem; --ui-space-6: 1.5rem; --ui-space-8: 2rem; --ui-space-12: 3rem;
   --ui-radius-control: .75rem; --ui-radius-card: 1.375rem; --ui-radius-dialog: 1.5rem;
@@ -828,7 +828,7 @@ body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
 
     /* Posição dos controles superiores é definida no CSS global carregado no <head>. */
 
-/* Iniciais: peso forte padronizado em todo o LURIA. */
+/* Iniciais: peso forte padronizado em todo o TRAUBE. */
     .luria-profile-toggle,
     .user-avatar {
       font-weight:950 !important;
@@ -980,7 +980,7 @@ body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
     }
 
 
-    /* LURIA global trays — always above page content and simulator overlays. */
+    /* TRAUBE global trays — always above page content and simulator overlays. */
     .topbar-actions, .luria-notifications, .luria-pomodoro-top, .luria-profile-top {
       overflow:visible!important;
     }

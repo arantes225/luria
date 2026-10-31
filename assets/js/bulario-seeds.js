@@ -1,6 +1,6 @@
 (function () {
   "use strict";
-  window.LURIA_BULARIO_SEEDS = [
+  window.TRAUBE_BULARIO_SEEDS = [
   {
     "id": "seed-drug-noradrenalina",
     "name": "Noradrenalina (Hemitartarato de Norepinefrina)",

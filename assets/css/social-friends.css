@@ -1,4 +1,4 @@
-/* Friends stage 1. Shared shell, identity and appearance remain owned by LURIA. */
+/* Friends stage 1. Shared shell, identity and appearance remain owned by TRAUBE. */
 @layer luria-ui-education {
 body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1 {
  --sf-teal:light-dark(#167d79,#64c8ba);--sf-violet:light-dark(#7560ad,#baa1e1);--sf-warm:light-dark(#a96836,#d4ac78);

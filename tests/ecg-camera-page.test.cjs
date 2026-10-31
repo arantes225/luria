@@ -33,7 +33,7 @@ test("manual and automatic paths share native-resolution extraction without bypa
   assert.match(camera, /options\.source === "autonomous_camera" && !isVerifiedEcgScene/);
 });
 
-test('standalone capture page (/trabalho/ecg/captura/) is independent, full-screen, isolated from LURIA menus, and stops tracks cleanly', async () => {
+test('standalone capture page (/trabalho/ecg/captura/) is independent, full-screen, isolated from TRAUBE menus, and stops tracks cleanly', async () => {
   const captureHtml = fs.readFileSync(path.join(root, 'trabalho/ecg/captura/index.html'), 'utf8');
   const contractsSrc = fs.readFileSync(path.join(root, 'assets/js/ecg-contracts.js'), 'utf8');
   const extractorSrc = fs.readFileSync(path.join(root, 'assets/js/ecg-signal-extractor.js'), 'utf8');
@@ -49,7 +49,7 @@ test('standalone capture page (/trabalho/ecg/captura/) is independent, full-scre
   const { window } = dom;
   const { document } = window;
 
-  // 1. Verificar isolamento estrito contra menus/barras da LURIA
+  // 1. Verificar isolamento estrito contra menus/barras da TRAUBE
   assert.equal(document.getElementById('sidebar'), null, 'Standalone capture page must have NO #sidebar');
   assert.equal(document.querySelector('.ui-mobile-navigation'), null, 'Standalone capture page must have NO .ui-mobile-navigation');
   assert.equal(document.querySelector('.ui-mobile-tools'), null, 'Standalone capture page must have NO .ui-mobile-tools');
@@ -112,7 +112,7 @@ test('standalone capture page (/trabalho/ecg/captura/) is independent, full-scre
   window.document.dispatchEvent(new window.Event('DOMContentLoaded'));
   await new Promise(resolve => setTimeout(resolve, 50));
 
-  const controller = window.LuriaCapturePage.getCameraController();
+  const controller = window.TraubeCapturePage.getCameraController();
   assert.notEqual(controller, null, 'CameraController should be initialized');
 
   // 3. Teste de parada limpa ao sair
@@ -145,7 +145,7 @@ test('orientation hint on standalone capture dismisses and adapts aspect ratio o
   window.eval(rotateSrc);
   window.eval(pageSrc);
 
-  const rotateCtrl = window.LuriaCapturePage.getRotateController();
+  const rotateCtrl = window.TraubeCapturePage.getRotateController();
   assert.notEqual(rotateCtrl, null);
 
   rotateCtrl.start();

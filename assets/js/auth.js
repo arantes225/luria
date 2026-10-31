@@ -53,7 +53,7 @@ async function tentarLogin(email, password) {
 async function entrar(event) {
   event.preventDefault();
 
-  window.LuriaAuthStorage?.setRememberMe(lembrarInput?.checked !== false);
+  window.TraubeAuthStorage?.setRememberMe(lembrarInput?.checked !== false);
 
   const email = emailInput.value.trim();
   const password = senhaInput.value;
@@ -90,7 +90,7 @@ async function entrar(event) {
 }
 
 async function entrarComPasskey() {
-  window.LuriaAuthStorage?.setRememberMe(lembrarInput?.checked !== false);
+  window.TraubeAuthStorage?.setRememberMe(lembrarInput?.checked !== false);
 
   if (!passkeyButton || !window.PublicKeyCredential || !sb?.auth?.signInWithPasskey) {
     mostrarMensagem("Este dispositivo ou navegador não oferece suporte a Passkeys.", "error");
@@ -208,7 +208,7 @@ async function criarConta() {
 })();
 
 async function entrarComGoogle() {
-  window.LuriaAuthStorage?.setRememberMe(lembrarInput?.checked !== false);
+  window.TraubeAuthStorage?.setRememberMe(lembrarInput?.checked !== false);
   setCarregando(true);
   mostrarMensagem("Redirecionando para o Google...");
 

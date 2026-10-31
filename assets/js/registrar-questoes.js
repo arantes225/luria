@@ -1,7 +1,7 @@
 const questionsSb = window.supabaseClient;
 let questionSessionSaving = false;
 function questionOwnerIsCurrent(userId, epoch) {
-  const owner = window.LuriaLocalOwnerStore;
+  const owner = window.TraubeLocalOwnerStore;
   return questionsState.user?.id === userId
     && (!owner || (owner.ownerId === userId && owner.epoch === epoch));
 }
@@ -147,8 +147,8 @@ function renderQuestionDayBanner() {
 }
 
 async function loadQuestionSessions() {
-  await window.LuriaLocalOwnerStore?.ready;
-  const userId = questionsState.user?.id, epoch = window.LuriaLocalOwnerStore?.epoch;
+  await window.TraubeLocalOwnerStore?.ready;
+  const userId = questionsState.user?.id, epoch = window.TraubeLocalOwnerStore?.epoch;
   if (!userId || !questionOwnerIsCurrent(userId, epoch)) return;
   const { data, error } = await questionsSb
     .from("question_sessions")
@@ -367,7 +367,7 @@ function renderHistory() {
 async function saveQuestionSession(event) {
   event.preventDefault();
   if (questionSessionSaving) return;
-  const userId = questionsState.user?.id, epoch = window.LuriaLocalOwnerStore?.epoch;
+  const userId = questionsState.user?.id, epoch = window.TraubeLocalOwnerStore?.epoch;
   if (!userId || !questionOwnerIsCurrent(userId, epoch)) {
     setQuestionStatus("Sua sessão mudou. Atualize a página antes de registrar.", "error");
     return;
@@ -462,10 +462,10 @@ async function saveQuestionSession(event) {
 
   let timingSaved = true;
   try {
-  if (durationMinutes !== null && durationMinutes > 0 && window.LuriaStudyTimer) {
-    const active = window.LuriaStudyTimer.getState?.();
+  if (durationMinutes !== null && durationMinutes > 0 && window.TraubeStudyTimer) {
+    const active = window.TraubeStudyTimer.getState?.();
     if (active?.kind === "external_questions") {
-      timingSaved = await window.LuriaStudyTimer.finish("external_questions_registered") !== false;
+      timingSaved = await window.TraubeStudyTimer.finish("external_questions_registered") !== false;
     } else {
       const {error: timingError} = await questionsSb.from("study_sessions").insert({
         user_id: userId,
@@ -593,16 +593,16 @@ function wireExternalQuestionsTimer() {
   if (!button || button.dataset.externalTimerWired === "1") return;
   button.dataset.externalTimerWired = "1";
   const render = () => {
-    const active = window.LuriaStudyTimer?.getState?.();
+    const active = window.TraubeStudyTimer?.getState?.();
     const on = active?.kind === "external_questions" && active?.running;
     button.textContent = on ? "Pausar questões externas" : "Estou fazendo questões externas";
     button.setAttribute("aria-pressed", String(!!on));
   };
   button.addEventListener("click", async () => {
-    const active = window.LuriaStudyTimer?.getState?.();
-    if (active?.kind === "external_questions" && active?.running) window.LuriaStudyTimer.pause("manual");
-    else if (active?.kind === "external_questions") window.LuriaStudyTimer.resume();
-    else await window.LuriaStudyTimer?.start("external_questions", { allowIdle: true });
+    const active = window.TraubeStudyTimer?.getState?.();
+    if (active?.kind === "external_questions" && active?.running) window.TraubeStudyTimer.pause("manual");
+    else if (active?.kind === "external_questions") window.TraubeStudyTimer.resume();
+    else await window.TraubeStudyTimer?.start("external_questions", { allowIdle: true });
     render();
   });
   window.addEventListener("luria:study-timer", render);

@@ -1,4 +1,4 @@
-# LURIA | Lote 7 — Aula 124
+# TRAUBE | Lote 7 — Aula 124
 # Sangramento uterino anormal — complemento de avaliação e decisões clínicas
 
 > **STATUS: COMPLEMENTO ORIGINAL PARA REVISÃO, NÃO INTEGRADO AO HTML.**  
@@ -8,13 +8,13 @@
 
 ## Diagnóstico inicial da apostila existente
 
-O livro LURIA já apresenta classificação PALM-COEIN, fisiologia da hemostasia endometrial, diagnóstico, sangramento agudo, tratamento crônico, causas estruturais, adolescentes, perimenopausa, anemia, referências e **seis vinhetas clínicas**. A extração preliminar de seu HTML revelou aproximadamente 55 mil caracteres de texto, mas **isso não equivale** a 55 mil caracteres didáticos originais aprovados: o texto extraído inclui elementos de navegação, títulos e repetições. Há seção de casos, porém **nenhuma seção de questões comentadas foi identificada pela busca textual simples**. Não substituir os casos existentes; ampliar a avaliação formativa.
+O livro TRAUBE já apresenta classificação PALM-COEIN, fisiologia da hemostasia endometrial, diagnóstico, sangramento agudo, tratamento crônico, causas estruturais, adolescentes, perimenopausa, anemia, referências e **seis vinhetas clínicas**. A extração preliminar de seu HTML revelou aproximadamente 55 mil caracteres de texto, mas **isso não equivale** a 55 mil caracteres didáticos originais aprovados: o texto extraído inclui elementos de navegação, títulos e repetições. Há seção de casos, porém **nenhuma seção de questões comentadas foi identificada pela busca textual simples**. Não substituir os casos existentes; ampliar a avaliação formativa.
 
 ### Comparação do Drive
 Foi reaberto e lido “02 - CANCER DE ENDOMETRIO.pdf”, resumo de cerca de 9,6 mil caracteres com ênfase em sangramento pós-menopausa, hiperplasia, risco de malignidade, avaliação histológica e tratamento oncológico. Trata-se de **referência comparativa parcial**, não de apostila completa de PALM-COEIN; não há comprovação de autoria institucional material de referência. As limitações mais importantes do comparativo são a necessidade de contextualizar amostragem endometrial, subtipos patológicos, desejo reprodutivo e diferentes cenários de sangramento; não copiar tabelas, texto nem figura do material.
 
 ### Fontes principais e observação de atualização
-A apostila LURIA já cita protocolo FEBRASGO/Femina de 2026. Verificação adicional: “Sangramento uterino anormal”, *Femina* 2026, vol. 54, nº 3, p. 227–235, protocolo FEBRASGO nº 80. Página da editora contém incongruência tipográfica nos números de páginas em alguns campos; usar edição/paginação confirmada no documento antes de finalizar a bibliografia. A Portaria SCTIE/MS nº 101, de 8/01/2026, **incorpora no SUS** ácido tranexâmico e DIU-LNG **em condições específicas de leiomioma com sangramento intenso**, segundo elegibilidade indicada, sem significar autorização universal a qualquer pessoa com SUA.
+A apostila TRAUBE já cita protocolo FEBRASGO/Femina de 2026. Verificação adicional: “Sangramento uterino anormal”, *Femina* 2026, vol. 54, nº 3, p. 227–235, protocolo FEBRASGO nº 80. Página da editora contém incongruência tipográfica nos números de páginas em alguns campos; usar edição/paginação confirmada no documento antes de finalizar a bibliografia. A Portaria SCTIE/MS nº 101, de 8/01/2026, **incorpora no SUS** ácido tranexâmico e DIU-LNG **em condições específicas de leiomioma com sangramento intenso**, segundo elegibilidade indicada, sem significar autorização universal a qualquer pessoa com SUA.
 
 ## 1. Matriz de raciocínio clínico da avaliação
 

@@ -1,6 +1,6 @@
-# Política de Segurança · LURIA Platform
+# Política de Segurança · TRAUBE Platform
 
-A segurança, confidencialidade e integridade dos dados dos nossos usuários e conteúdos médicos são prioridades fundamentais da plataforma **LURIA** (`arantes225/luria`).
+A segurança, confidencialidade e integridade dos dados dos nossos usuários e conteúdos médicos são prioridades fundamentais da plataforma **TRAUBE** (`arantes225/luria`).
 
 ---
 
@@ -8,7 +8,7 @@ A segurança, confidencialidade e integridade dos dados dos nossos usuários e c
 
 | Componente | Versão Suportada | Status |
 | :--- | :--- | :--- |
-| **LURIA Web Client (`main`)** | Latest release / produção | :white_check_mark: Suportado |
+| **TRAUBE Web Client (`main`)** | Latest release / produção | :white_check_mark: Suportado |
 | **Supabase Database & Edge Functions** | PostgreSQL 17 / Supabase GA | :white_check_mark: Suportado |
 | **Branches de desenvolvimento / experimentais** | Não estável | :x: Não suportado |
 
@@ -37,7 +37,7 @@ Incentivamos a colaboração da comunidade e pesquisadores de segurança éticos
 
 ## 3. Diretrizes de Arquitetura e Controles de Defesa Ativa
 
-O ecossistema LURIA adota o modelo de defesa em profundidade (*Defense in Depth*):
+O ecossistema TRAUBE adota o modelo de defesa em profundidade (*Defense in Depth*):
 
 1. **Row Level Security (RLS):**
    - Todas as tabelas no esquema `public` possuem RLS estritamente habilitado (`rowsecurity = true`).

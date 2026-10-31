@@ -40,7 +40,7 @@ function fixture() {
     }},
     window: {
       addEventListener(type, fn) { events[type] = fn; },
-      LuriaLazyVendors: { async ensure(name) {assert.equal(name,"tesseract");loaded++;} },
+      TraubeLazyVendors: { async ensure(name) {assert.equal(name,"tesseract");loaded++;} },
       Tesseract: { async createWorker(language, mode, config) {
         assert.equal(language,"por+eng");
         assert.equal(mode,1);

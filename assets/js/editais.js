@@ -393,7 +393,7 @@ async function deleteSelectedExams() {
   }
 
 
-  const confirmed = await window.LuriaDialog.confirm(
+  const confirmed = await window.TraubeDialog.confirm(
       `Excluir ${ids.length} prova${ids.length === 1 ? "" : "s"}? Os simulados vinculados não serão apagados.`
     );
 
@@ -418,7 +418,7 @@ async function deleteSelectedExams() {
 
 
   if (error) {
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       `Não foi possível excluir: ${error.message}`
     );
 
@@ -617,7 +617,7 @@ async function updateExamStatusInline(
         previous;
     }
 
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       `Não foi possível alterar o status: ${error.message}`
     );
 
@@ -1957,7 +1957,7 @@ async function deleteExam(
   }
 
 
-  const confirmed = await window.LuriaDialog.confirm(
+  const confirmed = await window.TraubeDialog.confirm(
       `Excluir "${exam.institution}"?\n\nOs simulados vinculados não serão apagados; apenas deixarão de ficar vinculados à prova.`
     );
 
@@ -1982,7 +1982,7 @@ async function deleteExam(
 
 
   if (error) {
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       `Não foi possível excluir: ${error.message}`
     );
 
@@ -2212,11 +2212,11 @@ function activateEditaisSource(
     === "catalog"
   ) {
     if (
-      typeof window.loadLuriaExamCatalog
+      typeof window.loadTraubeExamCatalog
       === "function"
     ) {
       window
-        .loadLuriaExamCatalog()
+        .loadTraubeExamCatalog()
         .catch(
           (error) => {
             console.warn(

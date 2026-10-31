@@ -1,4 +1,4 @@
-# Auditoria clínica da LURIA — Lote 01/06 (calculadoras 1–30)
+# Auditoria clínica da TRAUBE — Lote 01/06 (calculadoras 1–30)
 
 **Data:** 24 de outubro de 2026  
 **Escopo:** 30 primeiras calculadoras na ordem de `C` em `trabalho/calculadora/index.html`, de CKD-EPI 2021 a índice ROX.  

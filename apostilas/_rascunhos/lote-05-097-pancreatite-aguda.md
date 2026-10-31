@@ -1,11 +1,11 @@
-# LURIA — Apostila 097 | Pancreatite aguda: diagnóstico, tratamento e abordagem cirúrgica
+# TRAUBE — Apostila 097 | Pancreatite aguda: diagnóstico, tratamento e abordagem cirúrgica
 
 > **Situação:** manuscrito original em elaboração, **não aprovado nem publicado**.  
 > **Lote:** 5 (temas 093–115) · **Área:** Cirurgia Geral com interfaces em gastroenterologia, emergência, medicina intensiva e radiologia.  
 > **Início da produção:** 14/10/2026.  
 > **Regra:** ensino para residência e internato; não converter em prescrição ou protocolo assistencial sem validação clínica independente e verificação institucional.
 
-## 0. Auditoria inicial obrigatória: acervo LURIA, Drive e diretrizes
+## 0. Auditoria inicial obrigatória: acervo TRAUBE, Drive e diretrizes
 
 ### 0.1. O que havia antes de escrever
 
@@ -13,7 +13,7 @@ Na listagem da pasta \`apostilas/\` do repositório \`arantes225/luria\`, foram 
 
 O arquivo de planejamento \`apostilas/_rascunhos/lote-05-inventario.md\` classificava o tema **097 — Pancreatite aguda cirúrgica** como pendente de inspeção. O escopo editorial correto é **pancreatite aguda: diagnóstico, estratificação, tratamento clínico e intervenções endoscópicas/cirúrgicas**, não apenas uma lista de indicações operatórias: a maioria dos pacientes não precisa de cirurgia durante a inflamação aguda.
 
-**Padrão LURIA inspecionado:** \`apostilas/amniorrexe-prematura/index.html\`, apostila com estrutura de leitura longa e navegação padronizada. Preservar o sistema existente, incluindo a regra de imagens no Admin, em vez de inserir fotografias/figuras não licenciadas no HTML.
+**Padrão TRAUBE inspecionado:** \`apostilas/amniorrexe-prematura/index.html\`, apostila com estrutura de leitura longa e navegação padronizada. Preservar o sistema existente, incluindo a regra de imagens no Admin, em vez de inserir fotografias/figuras não licenciadas no HTML.
 
 ### 0.2. Material correlato efetivamente lido no Drive
 
@@ -21,7 +21,7 @@ O arquivo de planejamento \`apostilas/_rascunhos/lote-05-inventario.md\` classif
 2. **\`01 - ABDOME AGUDO - INTRODUCAO.pdf\`** (~3,9 mil caracteres). Situa pancreatite no diagnóstico diferencial do abdome agudo, mas generaliza \`antibiótico e cirurgia\` para abdome agudo inflamatório, o que seria incorreto como regra de pancreatite aguda.
 3. **\`07 - ABDOME AGUDO INFLAMATORIO - COLEDOCOLITIASE.pdf\`** (~2,9 mil caracteres). Apresenta vias biliares, critérios de risco de cálculo no colédoco e modalidades de diagnóstico/terapia. É comparativo secundário; **CPRE terapêutica seletiva** e avaliação de colangite serão ensinadas sem transportar diretamente tabelas do PDF.
 
-Nenhuma tabela, foto, ilustração nem formulação textual desses três materiais foi copiada. A comparação serviu para registrar conceitos que precisariam estar na LURIA, corrigindo simplificações por meio de diretrizes.
+Nenhuma tabela, foto, ilustração nem formulação textual desses três materiais foi copiada. A comparação serviu para registrar conceitos que precisariam estar na TRAUBE, corrigindo simplificações por meio de diretrizes.
 
 ### 0.3. Fontes clínicas usadas nesta versão
 
@@ -35,7 +35,7 @@ Nenhuma tabela, foto, ilustração nem formulação textual desses três materia
 
 ### 0.4. Matriz de cobertura curricular e riscos de redundância
 
-| Competência para prova/prática | Situação no PDF comparativo | Plano LURIA |
+| Competência para prova/prática | Situação no PDF comparativo | Plano TRAUBE |
 |---|---|---|
 | Critérios diagnósticos 2 de 3 | Presente em resumo | Explicar critérios e armadilhas dos exames |
 | Reconhecimento das causas | Parcial | Litíase/microlitíase, álcool, TG, fármacos, cálcio, pós-CPRE, genética |
@@ -433,7 +433,7 @@ Este material é **rascunho parcial**, apesar dos capítulos clínicos e recurso
 
 Durante muitos anos, ensinou-se que o caráter inflamatório com perda de líquidos para o terceiro espaço justificava “hidratação vigorosa” quase universal na pancreatite aguda. A fisiologia da hipovolemia continua correta, mas a inferência terapêutica **mais líquido é necessariamente melhor** foi contestada por evidência randomizada. O ensaio multicêntrico **WATERFALL**, publicado no *New England Journal of Medicine* em 2022, comparou estratégias guiadas de reposição agressiva e moderada com Ringer lactato na apresentação inicial da pancreatite.
 
-No braço agressivo, o protocolo de pesquisa utilizou bolus de 20 mL/kg seguidos de 3 mL/kg/h; no moderado, bolus inicial de 10 mL/kg apenas quando havia hipovolemia, ou nenhum bolus na normovolemia, com manutenção inicial de 1,5 mL/kg/h. **Essas doses descrevem o estudo e não são uma receita universal da LURIA.** O tratamento foi reavaliado nos tempos predefinidos conforme a evolução. A análise interina de 249 pacientes levou à interrupção precoce por diferença de segurança.
+No braço agressivo, o protocolo de pesquisa utilizou bolus de 20 mL/kg seguidos de 3 mL/kg/h; no moderado, bolus inicial de 10 mL/kg apenas quando havia hipovolemia, ou nenhum bolus na normovolemia, com manutenção inicial de 1,5 mL/kg/h. **Essas doses descrevem o estudo e não são uma receita universal da TRAUBE.** O tratamento foi reavaliado nos tempos predefinidos conforme a evolução. A análise interina de 249 pacientes levou à interrupção precoce por diferença de segurança.
 
 O achado principal é instrutivo: **sobrecarga volêmica ocorreu em 20,5% no braço agressivo e 6,3% no moderado**; não houve benefício demonstrado no desfecho de pancreatite moderadamente grave/grave, que ocorreu em 22,1% e 17,3%, respectivamente, diferença sem significância estatística. Interrupção precoce limita interpretações sobre subgrupos e não autoriza tratar um paciente em choque com volumes insuficientes. Em pessoas com insuficiência cardíaca, DRC, idosos frágeis e insuficiência respiratória, a vigilância de congestão é especialmente importante.
 
@@ -512,7 +512,7 @@ Na pancreatite associada a TG muito alto, o suporte inicial segue os mesmos pila
 
 ### 23.2. Pancreatite durante gestação
 
-Na gravidez, cálculos biliares e hipertrigliceridemia devem ser lembrados. Investigação e tratamento consideram idade gestacional, imagem sem radiação quando viável, fisiologia materna e repercussão fetal. Não adiar tratamento de colangite ou choque para evitar qualquer procedimento; urgência materna também ameaça o feto. Decisão sobre intervenção endoscópica ou cirúrgica exige obstetrícia e equipe experiente. O material da LURIA deve evitar duplicar de modo integral os capítulos de litíase, vias biliares e urgências obstétricas já existentes, mas pode remeter a eles durante integração.
+Na gravidez, cálculos biliares e hipertrigliceridemia devem ser lembrados. Investigação e tratamento consideram idade gestacional, imagem sem radiação quando viável, fisiologia materna e repercussão fetal. Não adiar tratamento de colangite ou choque para evitar qualquer procedimento; urgência materna também ameaça o feto. Decisão sobre intervenção endoscópica ou cirúrgica exige obstetrícia e equipe experiente. O material da TRAUBE deve evitar duplicar de modo integral os capítulos de litíase, vias biliares e urgências obstétricas já existentes, mas pode remeter a eles durante integração.
 
 ### 23.3. Crianças e adolescentes
 
@@ -598,7 +598,7 @@ E. TC obrigatória para autorizar alimentação oral.
 
 **Gabarito: C.** **A** e **B** usam exame sem pergunta clínica; **C** alinha-se a ACG 2024; **D** confunde escore clínico e imagem; **E** aplica jejum/imagem como condição sem base. **Mini-revisão:** exames devem mudar diagnóstico ou conduta, não servir como ritual.
 
-## 26. Checagem integrada do raciocínio — dez erros que a LURIA não deve perpetuar
+## 26. Checagem integrada do raciocínio — dez erros que a TRAUBE não deve perpetuar
 
 | Erro comum | Substituição correta e justificativa |
 |---|---|

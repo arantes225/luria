@@ -65,9 +65,9 @@ test('PDF sem camada de texto ativa OCR; PDF normal continua no caminho textual'
   const resultOcr = {items:[{category:'curso',title:'Curso de ECG',year:'2023',source:'pdf-ocr'}],hasText:true,pagesOcr:2,ocrUsed:true};
   const document = {numPages:2,getPage:async()=>pdfPage([]),destroy:async()=>{destroyed++;}};
   await withGlobals({
-    LuriaLazyVendors:{ensure:async()=>{}},
+    TraubeLazyVendors:{ensure:async()=>{}},
     pdfjsLib:{GlobalWorkerOptions:{},getDocument:()=>({promise:Promise.resolve(document)})},
-    LuriaCurriculoPdfOcr:{recognizePdf:async()=>{called++;return resultOcr;}}
+    TraubeCurriculoPdfOcr:{recognizePdf:async()=>{called++;return resultOcr;}}
   }, async()=>{
     const extracted = await pdf.extract(mockFile());
     assert.equal(called, 1);
@@ -77,12 +77,12 @@ test('PDF sem camada de texto ativa OCR; PDF normal continua no caminho textual'
     assert.equal(extracted.items.length, 1);
   });
   await withGlobals({
-    LuriaLazyVendors:{ensure:async()=>{}},
+    TraubeLazyVendors:{ensure:async()=>{}},
     pdfjsLib:{GlobalWorkerOptions:{},getDocument:()=>({promise:Promise.resolve({
       numPages:1,getPage:async()=>pdfPage([{str:'Formação complementar',transform:[1,0,0,1,0,100]},{str:'Curso de ECG com certificação, 2023.',transform:[1,0,0,1,0,90]}]),
       destroy:async()=>{}
     })})},
-    LuriaCurriculoPdfOcr:{recognizePdf:async()=>{called++;}}
+    TraubeCurriculoPdfOcr:{recognizePdf:async()=>{called++;}}
   }, async()=>{
     const extracted = await pdf.extract(mockFile());
     assert.equal(called, 1, 'PDF textual não deve acionar OCR');
@@ -97,7 +97,7 @@ test('Reconhecimento visual renderiza uma página por vez, atualiza progresso e 
   const fakePdf={numPages:2,getPage:async()=>pdfPage([])};
   const fakeCanvas={width:0,height:0,getContext:()=>({})};
   await withGlobals({
-    LuriaLazyVendors:{ensure:async(name)=>{assert.equal(name,'tesseract');}},
+    TraubeLazyVendors:{ensure:async(name)=>{assert.equal(name,'tesseract');}},
     Tesseract:{createWorker:async(language,model)=>{
       models.push([language,model]);
       return {
@@ -128,7 +128,7 @@ test('Segurança de OCR: limite para PDFs longos e sem adicionar pontuação aut
   assert.match(code, /Nenhuma atividade importada é marcada como conferida/);
   assert.match(code, /revise/i);
   const pdfCode=read('assets/js/curriculo-pdf.js');
-  assert.match(pdfCode, /characters < 40 && root\.LuriaCurriculoPdfOcr/);
+  assert.match(pdfCode, /characters < 40 && root\.TraubeCurriculoPdfOcr/);
 });
 
 test('Importação permite scripts/worker/modelo OCR sem liberar origens genéricas', () => {

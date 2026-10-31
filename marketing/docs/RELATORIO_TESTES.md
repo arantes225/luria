@@ -1,4 +1,4 @@
-# RELATÓRIO DE AUDITORIA E TESTES — LURIA MARKETING STUDIO
+# RELATÓRIO DE AUDITORIA E TESTES — TRAUBE MARKETING STUDIO
 
 **Data:** 15 de Outubro de 2026  
 **Ambiente:** Windows 11 x64, Node.js v24.21.0, Google Chrome / Chromium  
@@ -25,7 +25,7 @@
 * **Segurança de Dados:** Injeção de backend fictício (`marketing/capture/fixtures/supabase-marketing.js`) substituindo `/assets/js/supabase.js`.
   * Requisições externas para `supabase.co` foram **bloqueadas por software**.
   * Todos os usuários (Ana, Bruno, Caio, Duda) e a usuária ativa ("Você") são sintéticos.
-  * Zero acesso ou exposição de dados reais de alunos da LURIA.
+  * Zero acesso ou exposição de dados reais de alunos da TRAUBE.
 * **Resultados da Gravação:**
   * Resolução capturada: 390 × 844 @ 2x DPR (780 × 1688 físico).
   * Duração da cena gravada: 33.7 segundos (1.013 quadros screencast).

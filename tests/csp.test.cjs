@@ -83,11 +83,11 @@ test('calendar base action uses the migrated listener and the existing global ca
   const dom = new JSDOM('<button id="apply-base-schedule">Base</button>', {runScripts: 'outside-only'});
   try {
     let calls = 0;
-    dom.window.applyLuriaGenericSchedule = () => { calls++; };
+    dom.window.applyTraubeGenericSchedule = () => { calls++; };
     dom.window.eval(source.slice(start, end) + '\nbindBaseScheduleButton();');
     dom.window.document.getElementById('apply-base-schedule').click();
     assert.equal(calls, 1);
-    delete dom.window.applyLuriaGenericSchedule;
+    delete dom.window.applyTraubeGenericSchedule;
     dom.window.document.getElementById('apply-base-schedule').click();
     assert.equal(calls, 1);
   } finally { dom.window.close(); }

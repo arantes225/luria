@@ -318,7 +318,7 @@
     } catch (error) {
       console.error("Save Notion main editor:", error);
       setSaveStatus("Erro ao salvar no Notion", "error");
-      window.LuriaDialog?.alert?.(error?.message || "Não foi possível salvar no Notion.");
+      window.TraubeDialog?.alert?.(error?.message || "Não foi possível salvar no Notion.");
     }
   };
 })();

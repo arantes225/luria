@@ -199,7 +199,7 @@ AS $function$
 declare
   v_sender_name text;
 begin
-  select coalesce(nullif(trim(display_name), ''), 'Um usuário LURIA')
+  select coalesce(nullif(trim(display_name), ''), 'Um usuário TRAUBE')
     into v_sender_name
   from public.profiles
   where user_id = new.user_id;
@@ -215,8 +215,8 @@ begin
   values(
     new.friend_user_id,
     'friend_added',
-    'Novo amigo no LURIA',
-    coalesce(v_sender_name, 'Um usuário LURIA') || ' adicionou você aos amigos.',
+    'Novo amigo no TRAUBE',
+    coalesce(v_sender_name, 'Um usuário TRAUBE') || ' adicionou você aos amigos.',
     '/amigos/',
     jsonb_build_object(
       'friendship_id', new.id,
@@ -312,7 +312,7 @@ AS $function$
       c.created_at,
       case when c.deadline < CURRENT_DATE then 'finished' else c.status end::text status,
       sp.user_id participant_user_id,
-      coalesce(p.display_name,'Usuário LURIA') participant_name,
+      coalesce(p.display_name,'Usuário TRAUBE') participant_name,
       coalesce(p.studyrat_variant,'brown')::text studyrat_variant,
       coalesce(p.studyrat_accessory,'none')::text studyrat_accessory,
       case c.challenge_type

@@ -4,7 +4,7 @@ const vm=require('node:vm');
 const {ownerFixture,source}=require('./fixtures/app-client.cjs');
 const turn=()=>new Promise(resolve=>setImmediate(resolve));
 async function passometroFixture() {
-  const f=ownerFixture(),c=f.context;await c.LuriaLocalOwnerStore.ready;
+  const f=ownerFixture(),c=f.context;await c.TraubeLocalOwnerStore.ready;
   const timers=new Map(),cloud=new Map(),writes=[];let sequence=0;
   Object.assign(c,{STORAGE_KEY:'luria:passometro:v1',SYNC_TABLE:'fixture',RETENTION_MS:1e12,state:{decks:[],userId:'A',syncTimer:null},renderDecks(){},$:()=>({hidden:false,reset(){},replaceChildren(){}}),closeDialog(){},resetPatientForm(){},setTimeout:fn=>{timers.set(++sequence,fn);return sequence},clearTimeout:id=>timers.delete(id)});
   c.supabaseClient.from=()=>({select:()=>({eq:async(_,id)=>({data:[...cloud.values()].filter(x=>x.user_id===id)})}),upsert:async row=>{writes.push(row);cloud.set(row.user_id+':'+row.deck_id,{...row});return {}},delete:()=>({eq:(_,owner)=>({eq:async(_,id)=>{cloud.delete(owner+':'+id);return {}}})})});
@@ -27,22 +27,22 @@ test('Passometro drops a queued write after changing accounts',async()=>{
   const f=await passometroFixture();f.context.queueDeckSync(deck('A_PENDING'));f.change('B');await f.tick();assert.equal(f.writes.length,0);
 });
 async function timerFixture() {
-  const f=ownerFixture(),c=f.context;await c.LuriaLocalOwnerStore.ready;
+  const f=ownerFixture(),c=f.context;await c.TraubeLocalOwnerStore.ready;
   const inserts=[];let clock=Date.now(),fail=false;
   c.Date=class extends Date{static now(){return clock}};
   c.document={addEventListener(){}};c.setTimeout=()=>1;c.clearTimeout=()=>{};c.crypto=require('node:crypto').webcrypto;
   c.supabaseClient.from=()=>({insert:async p=>{inserts.push(p);return {error:fail?{message:'FAKE_FAILURE',code:'23514'}:null}}});
-  const app=source('assets/js/app.js'),a=app.indexOf('(function installLuriaStudyTimer()');
+  const app=source('assets/js/app.js'),a=app.indexOf('(function installTraubeStudyTimer()');
   vm.runInContext(app.slice(a,app.indexOf('})();',a)+5),c);await turn();
   return {...f,inserts,advance:ms=>{clock+=ms},fail:value=>{fail=value}};
 }
 test('timer never adopts an unowned session and restores the right owner',async()=>{
-  const f=await timerFixture(),c=f.context,t=c.LuriaStudyTimer;
+  const f=await timerFixture(),c=f.context,t=c.TraubeStudyTimer;
   await t.start('A_STUDY');f.advance(2000);t.pause();f.change('B');assert.equal(t.getState(),null);
   f.change('A');assert.equal(t.getState().kind,'A_STUDY');assert.equal(t.getElapsedSeconds(),2);
 });
 test('timer coalesces concurrent finishes and retains a failed session before starting another',async()=>{
-  const f=await timerFixture(),t=f.context.LuriaStudyTimer;
+  const f=await timerFixture(),t=f.context.TraubeStudyTimer;
   await t.start('FIRST');f.advance(5000);
   await Promise.all([t.finish(),t.finish()]);assert.equal(f.inserts.length,1);assert.equal(t.getState(),null);
   await t.start('UNSAVED');f.advance(3000);f.fail(true);await t.start('REPLACEMENT');
@@ -50,7 +50,7 @@ test('timer coalesces concurrent finishes and retains a failed session before st
   f.fail(false);await t.start('REPLACEMENT');assert.equal(t.getState().kind,'REPLACEMENT');
 });
 test('timer response for A cannot clear a new session belonging to B',async()=>{
-  const f=await timerFixture(),c=f.context,t=c.LuriaStudyTimer;let resolve;
+  const f=await timerFixture(),c=f.context,t=c.TraubeStudyTimer;let resolve;
   c.supabaseClient.from=()=>({insert:()=>new Promise(done=>{resolve=done})});
   await t.start('A');f.advance(2000);const pending=t.finish();await turn();
   f.change('B');await t.start('B');resolve({error:null});await pending;
@@ -58,7 +58,7 @@ test('timer response for A cannot clear a new session belonging to B',async()=>{
 });
 
 test('timer retains an ambiguous insert across retry and reload without sending it again',async()=>{
-  const f=await timerFixture(),c=f.context,t=c.LuriaStudyTimer;
+  const f=await timerFixture(),c=f.context,t=c.TraubeStudyTimer;
   c.supabaseClient.from=()=>({insert:async p=>{f.inserts.push(p);throw Error('Response lost after commit');}});
   await t.start('UNCERTAIN');f.advance(2000);await t.finish();await t.finish();
   assert.equal(f.inserts.length,1);assert.equal(t.getState().persistenceState,'uncertain');
@@ -84,8 +84,8 @@ test('Passometro retains failed writes and retries after reconnect',async()=>{
 });
 test('timer does not discard an in-memory session when local storage refuses writes',async()=>{
   const f=await timerFixture(),c=f.context;c.localStorage.setItem=()=>{throw new Error('FAKE_QUOTA')};
-  await c.LuriaStudyTimer.start('UNSAVED');f.advance(2000);await c.LuriaStudyTimer.start('NEW');
-  assert.equal(c.LuriaStudyTimer.getState().kind,'UNSAVED');assert.equal(f.inserts.length,0);
+  await c.TraubeStudyTimer.start('UNSAVED');f.advance(2000);await c.TraubeStudyTimer.start('NEW');
+  assert.equal(c.TraubeStudyTimer.getState().kind,'UNSAVED');assert.equal(f.inserts.length,0);
 });
 module.exports={passometroFixture,timerFixture,deck,turn};
 
@@ -96,7 +96,7 @@ test('Passometro refuses a stale migration snapshot after a local tombstone',asy
  assert.equal(f.writes.length,0);assert.equal(f.cloud.size,0);
 });
 test('timer never inserts twice when cleanup fails after the server acknowledges',async()=>{
- const f=await timerFixture(),c=f.context,t=c.LuriaStudyTimer;
+ const f=await timerFixture(),c=f.context,t=c.TraubeStudyTimer;
  await t.start('CLEANUP');f.advance(2000);
  const remove=c.localStorage.removeItem;c.localStorage.removeItem=()=>{throw Error('FAKE_QUOTA')};
  assert.equal(await t.finish(),false);assert.equal(f.inserts.length,1);assert.equal(t.getState().kind,'CLEANUP');

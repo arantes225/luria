@@ -1,4 +1,4 @@
-# Luria — Etapa 1: Design System e Dashboard
+# Traube — Etapa 1: Design System e Dashboard
 
 Implementação local em `ui-ux-redesign`, sobre `5cc7d37e`. Sem commit, push ou deploy.
 
@@ -13,11 +13,11 @@ Implementação local em `ui-ux-redesign`, sobre `5cc7d37e`. Sem commit, push ou
 
 Tokens semânticos de fundo, superfícies, texto, identidade, bordas interativas, foco, sucesso, informação, atenção, erro e desabilitado. Espaçamento em 4/8/12/16/24/32/48 px; controles de 44 px; raios 8/12/16 px; sidebar 264 px; conteúdo máximo 1280 px. Escala tipográfica responsiva com métricas tabulares.
 
-Inter variável hospedada localmente, com nome exclusivo `Luria Inter`: não substitui fontes já usadas em páginas protegidas. Paletas derivadas das referências aprovadas; botões claros usam texto escuro no tema escuro. Seleção usa borda e `aria-pressed`, além da cor; mensagens apresentam texto explícito.
+Inter variável hospedada localmente, com nome exclusivo `Traube Inter`: não substitui fontes já usadas em páginas protegidas. Paletas derivadas das referências aprovadas; botões claros usam texto escuro no tema escuro. Seleção usa borda e `aria-pressed`, além da cor; mensagens apresentam texto explícito.
 
 Dois atributos independentes no body: `data-ui-appearance="light|dark"` e `data-ui-identity="blue|pink"`. Um conjunto de estilos produz as quatro combinações. Os dois controles locais substituem a apresentação do seletor de tema no perfil somente no Dashboard.
 
-Preferência visual em `luria:dashboard-ui:v2`, via API existente `LuriaLocalOwnerStore`, isolada por conta/dispositivo. Ausência de preferência mantém a correspondência do tema legado: claro→claro/azul, escuro→escuro/azul, Leila Mood/rosa→claro/rosa. Preferências legadas não são sobrescritas; `html[data-theme]` não é modificado pelo adaptador. Não há escrita em Supabase. Falha de armazenamento informa que o tema foi aplicado sem ser salvo.
+Preferência visual em `luria:dashboard-ui:v2`, via API existente `TraubeLocalOwnerStore`, isolada por conta/dispositivo. Ausência de preferência mantém a correspondência do tema legado: claro→claro/azul, escuro→escuro/azul, Leila Mood/rosa→claro/rosa. Preferências legadas não são sobrescritas; `html[data-theme]` não é modificado pelo adaptador. Não há escrita em Supabase. Falha de armazenamento informa que o tema foi aplicado sem ser salvo.
 
 As numerosas regras legadas com `!important` exigem especificidade local elevada; a repetição do ID nos seletores funciona como ponte de compatibilidade. Essa dívida fica confinada ao CSS do piloto; os arquivos compartilhados permanecem intactos.
 
@@ -60,7 +60,7 @@ Evidências locais ignoradas pelo Git: `.audit-artifacts/ui-v2/screenshots/` (qu
 
 ## Proteção e limites
 
-`index.html`, Simulador de Emergência, Mini-OSCE, LuriaZap, scripts/estilos compartilhados, motores, banco, workflows e Service Worker sem alterações. Nas quatro entradas protegidas, navegação local confirmou ausência de marcador v2 e de import dos novos recursos. Comparação visual de entrada e inspeção de dependências complementam o isolamento; capturas com estados assíncronos diferentes não permitem afirmar equivalência pixel a pixel nem cobertura de todos os fluxos clínicos.
+`index.html`, Simulador de Emergência, Mini-OSCE, TraubeZap, scripts/estilos compartilhados, motores, banco, workflows e Service Worker sem alterações. Nas quatro entradas protegidas, navegação local confirmou ausência de marcador v2 e de import dos novos recursos. Comparação visual de entrada e inspeção de dependências complementam o isolamento; capturas com estados assíncronos diferentes não permitem afirmar equivalência pixel a pixel nem cobertura de todos os fluxos clínicos.
 
 Pendências anteriores, sem correção nesta etapa:
 

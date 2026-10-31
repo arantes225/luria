@@ -1,4 +1,4 @@
--- Applied in LURIA production as migration 20261026064732.
+-- Applied in TRAUBE production as migration 20261026064732.
 -- The Apostilas hub reads public.apostilas at runtime; these two existing
 -- independent public books had not been registered in that catalog.
 INSERT INTO public.apostilas (area,materia,tema,titulo,cover_key,content_url,is_published)

@@ -5,7 +5,7 @@ async function resolver(t,{items,attempts=[],write,readError,readHang=false,dail
  w.history.replaceState(null,'',daily?'?daily=1':'?set_id=s1');
  if(readHang){const schedule=w.setTimeout.bind(w);w.setTimeout=(fn,ms)=>schedule(fn,ms===8000?0:ms)}
  const owner={id:'owner-1'},writes=[];
- w.LuriaLocalOwnerStore={ownerId:owner.id,epoch:1,ready:Promise.resolve()};
+ w.TraubeLocalOwnerStore={ownerId:owner.id,epoch:1,ready:Promise.resolve()};
  const sets=daily?[{id:'s1',title:'Lote 1 — questões aprovadas',status:'ready'},{id:'s2',title:'Lote 2 — questões aprovadas',status:'ready'}]:[{id:'s1',title:'Simulado de teste'}];
  const db={question_sets:sets,question_items:items||[
   {id:'q1',set_id:'s1',stem:'Primeira questão',alternatives:{A:'Um',B:'Dois'},official_answer:'A'},
@@ -30,7 +30,7 @@ async function resolver(t,{items,attempts=[],write,readError,readHang=false,dail
   }).then(resolve,reject)}
  }
  w.supabaseClient={auth:{getUser:async()=>({data:{user:owner}})},from:table=>new Query(table),storage:{from:()=>({createSignedUrls:async()=>({data:[]})})}};
- const completed=[];w.LuriaGuidedStudy={completeActiveStep:reason=>completed.push(reason)};
+ const completed=[];w.TraubeGuidedStudy={completeActiveStep:reason=>completed.push(reason)};
  const script=[...d.scripts].find(s=>s.textContent.includes('const DAILY_LIMIT=50')).textContent;
  w.eval(script);for(let i=0;i<5;i++)await settle();if(readHang)await new Promise(resolve=>setTimeout(resolve,10));
  return {...fixture,writes,completed,db};
@@ -55,7 +55,7 @@ function management(t,{write,readQuery,attempts=[],file='questoes-simulados/inde
    return result||{data:(db[this.table]||[]).filter(row=>this.filters.every(([key,value])=>row[key]===value)),error:null};
   }).then(resolve,reject)}
  }
- w.supabaseClient={from:table=>new Query(table)};w.LuriaLocalOwnerStore={ownerId:'owner-1',epoch:1};
+ w.supabaseClient={from:table=>new Query(table)};w.TraubeLocalOwnerStore={ownerId:'owner-1',epoch:1};
  for(const name of ['renderHomeDashboard','renderSimulationLibrary','updateSetBulkToolbar','clearAnswerScreenshotMemory','placeAnswerPanelBelowPerformance','bindErrorImagePickerEvents','refreshErrorImagePicker'])w[name]=()=>{};
  w.attachQuestionImageUrls=async rows=>rows;w.attachGalleryImageUrls=async rows=>rows;w.loadQuestionOverview=async()=>{};w.renderErrorImagePicker=()=>'';
  const names=['qsEscape','setImportStatus','setAnswerStatus','accuracy','areaOptionsHtml','correctOptionHtml','questionExcerpt','currentWrongIds','updateLiveSummary','errorNotebookSkipStorageKey','loadErrorNotebookSkips','persistErrorNotebookSkips','isErrorNotebookSkipped','setErrorNotebookSkipped','readWrongMetadata','loadSets','openSet','saveAnswerKey','closeCurrentSet','renderQuestions','renderSetHistory','switchQsMode'];
@@ -65,9 +65,9 @@ function management(t,{write,readQuery,attempts=[],file='questoes-simulados/inde
 }
 function registration(t,{write}={}){
  const fixture=page(t,'registrar-questoes/index.html'),{w,d}=fixture,writes=[],db=[];
- w.LuriaLocalOwnerStore={ownerId:'owner-1',epoch:1};
+ w.TraubeLocalOwnerStore={ownerId:'owner-1',epoch:1};
  let running=false;const timerCalls=[];
- w.LuriaStudyTimer={getState:()=>running?{kind:'external_questions',running:true}:null,start:async()=>{timerCalls.push('start');running=true},pause:()=>{timerCalls.push('pause');running=false},finish:async()=>true};
+ w.TraubeStudyTimer={getState:()=>running?{kind:'external_questions',running:true}:null,start:async()=>{timerCalls.push('start');running=true},pause:()=>{timerCalls.push('pause');running=false},finish:async()=>true};
  w.supabaseClient={from:table=>{let payload;const query={
   insert(row){payload=row;return this},select(){return this},single(){return this},order(){return this},limit(){return this},eq(){return this},
   then(resolve,reject){return Promise.resolve().then(async()=>{

@@ -1,4 +1,4 @@
-# Política editorial LURIA — imagens clínicas (2026-10-07)
+# Política editorial TRAUBE — imagens clínicas (2026-10-07)
 
 ## Regra mandatória
 * Priorizar **fotografias e registros clínicos autênticos**: exame físico, lesões, corrimentos, cervicite, ultrassonografia, radiografias, mamografia, ressonância, histopatologia, equipamentos, contraceptivos e procedimentos, sempre com fonte e permissão de reutilização conferidas.

@@ -1,4 +1,4 @@
--- Applied to LURIA production by Supabase migration 20261026043517.
+-- Applied to TRAUBE production by Supabase migration 20261026043517.
 -- Marketing asset read access stays public; mutations require the existing
 -- server-checked administrator function instead of any authenticated session.
 

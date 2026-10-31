@@ -95,7 +95,7 @@
     }
 
     lines.push(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
-    lines.push(`_Organizado via LURIA Gestor de Plantões_`);
+    lines.push(`_Organizado via TRAUBE Gestor de Plantões_`);
 
     const out = q("#div-output");
     if (out) out.textContent = lines.join("\n");

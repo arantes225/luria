@@ -9,7 +9,7 @@ const pdf = require('../assets/js/curriculo-pdf.js');
 const root = path.resolve(__dirname, '..');
 const sandbox = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root,'assets/js/curriculo-rubricas.js'),'utf8'),sandbox);
-const rubric = sandbox.window.LuriaCurriculoRubricas[0];
+const rubric = sandbox.window.TraubeCurriculoRubricas[0];
 test('FMUSP caps every group and applies ENAMED before the final 100 cap', () => {
   const answers = {};
   rubric.criteria.forEach(row => row.parts.forEach(part => { answers[part.id] = 999; }));
@@ -39,7 +39,7 @@ test('suggestions require reviewed eligibility data and never infer it from a La
   assert.equal(core.score(rubric,suggested).total,7);
 });
 test('PSU-MG preserves the official 13-point scale and exclusive academic bands',()=>{
-  const psu=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='PSU-MG');
+  const psu=sandbox.window.TraubeCurriculoRubricas.find(row=>row.institution==='PSU-MG');
   assert.match(psu.updates,/Retificacao2aosEditaisdoPSUMG2027-20261006110849\.pdf/);
   assert.match(psu.criteria.find(row=>row.id==='mg-cursos').note,/últimos 5 anos/);
   assert.match(psu.criteria.find(row=>row.id==='mg-cursos').note,/não valem documentos de instituições de ensino/);
@@ -49,7 +49,7 @@ test('PSU-MG preserves the official 13-point scale and exclusive academic bands'
   assert.equal(core.score(psu,{'mg-liga1':1,'mg-repr':1}).total,1.1);
 });
 test('USP-RP uses the official 10-point curriculum matrix and block ceilings',()=>{
-  const rp=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='USP-RP');
+  const rp=sandbox.window.TraubeCurriculoRubricas.find(row=>row.institution==='USP-RP');
   assert.equal(rp.status,'reviewed');
   assert.match(rp.source,/E3650239202610417\.pdf/);
   const answers={};rp.criteria.forEach(row=>row.parts.forEach(part=>{answers[part.id]=999;}));
@@ -57,7 +57,7 @@ test('USP-RP uses the official 10-point curriculum matrix and block ceilings',()
   assert.equal(core.score(rp,{['rp-hospital']:1,['rp-pos5']:1,['rp-pos24']:1,['rp-e5']:1}).subtotal,1.5);
 });
 test('PUC-SP uses the official 100-point access-direct matrix',()=>{
-  const puc=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='PUC-SP');
+  const puc=sandbox.window.TraubeCurriculoRubricas.find(row=>row.institution==='PUC-SP');
   assert.equal(puc.status,'reviewed');
   assert.match(puc.source,/Edital-RM-2027-ABAD\.pdf/);
   const answers={};puc.criteria.forEach(row=>row.parts.forEach(part=>{answers[part.id]=999;}));
@@ -65,7 +65,7 @@ test('PUC-SP uses the official 100-point access-direct matrix',()=>{
   assert.equal(core.score(puc,{['pucsp-mon6']:1,['pucsp-ic12']:1,['pucsp-idioma']:2}).total,15);
 });
 test('PSU-GO uses its own official 10-point entry-direct matrix',()=>{
-  const go=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='PSU-GO');
+  const go=sandbox.window.TraubeCurriculoRubricas.find(row=>row.institution==='PSU-GO');
   assert.equal(go.status,'reviewed');
   assert.match(go.source,/EntradaDiretaPSUGO2027/);
   const answers={};go.criteria.forEach(row=>row.parts.forEach(part=>{answers[part.id]=999;}));
@@ -73,7 +73,7 @@ test('PSU-GO uses its own official 10-point entry-direct matrix',()=>{
   assert.equal(core.score(go,{['go-monitoria']:2,['go-publicacao']:2,['go-estagio']:1}).total,2);
 });
 test('UNICAMP uses the official 100-point 2027 access-direct matrix',()=>{
-  const unicamp=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='UNICAMP');
+  const unicamp=sandbox.window.TraubeCurriculoRubricas.find(row=>row.institution==='UNICAMP');
   assert.equal(unicamp.status,'reviewed');
   assert.match(unicamp.source,/001-Edital-Acesso-Direto-2027\.pdf/);
   const answers={};unicamp.criteria.forEach(row=>row.parts.forEach(part=>{answers[part.id]=999;}));
@@ -81,7 +81,7 @@ test('UNICAMP uses the official 100-point 2027 access-direct matrix',()=>{
   assert.equal(core.score(unicamp,{['unicamp-doutorado']:1,['unicamp-mestrado']:1,['unicamp-scielo']:2}).total,25);
 });
 test('UFPA identifies its latest official edition and preserves the 100-point ceiling',()=>{
-  const ufpa=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='UFPA');
+  const ufpa=sandbox.window.TraubeCurriculoRubricas.find(row=>row.institution==='UFPA');
   assert.equal(ufpa.status,'reviewed');
   assert.equal(ufpa.edition,'2026');
   assert.match(ufpa.source,/ANEXO-II-FICHA-AVALIACAO-CURRICULO\.pdf/);
@@ -91,7 +91,7 @@ test('UFPA identifies its latest official edition and preserves the 100-point ce
 });
 
 test('Santa Casa SP uses the official 2027 access-direct group only',()=>{
-  const sc=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='Santa Casa SP');
+  const sc=sandbox.window.TraubeCurriculoRubricas.find(row=>row.institution==='Santa Casa SP');
   assert.equal(sc.status,'reviewed');
   assert.equal(sc.edition,'2027');
   assert.match(sc.source,/scmsp126\/edital_de_abertura_21_09_26_publicar_2\.pdf/);
@@ -100,7 +100,7 @@ test('Santa Casa SP uses the official 2027 access-direct group only',()=>{
   assert.equal(core.score(sc,{['scsp-enamed5']:1,['scsp-enamed4']:1,['scsp-anais1']:1,['scsp-anais2']:1}).total,3);
 });
 test('PUC-Campinas applies the official 2027 access-direct matrix and disciplinary deductions',()=>{
-  const puc=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='PUC-Campinas');
+  const puc=sandbox.window.TraubeCurriculoRubricas.find(row=>row.institution==='PUC-Campinas');
   assert.equal(puc.status,'reviewed');
   assert.match(puc.source,/PUCCampinas27_ResidenciaMedica\.pdf/);
   const answers={};puc.criteria.forEach(row=>row.parts.forEach(part=>{answers[part.id]=999;}));
@@ -111,7 +111,7 @@ test('PUC-Campinas applies the official 2027 access-direct matrix and disciplina
   assert.equal(core.score(puc,{['puccamp-enamed3']:1,['puccamp-enamed4']:1}).total,4);
 });
 test('FMABC uses the official 10-point 2027 access-direct matrix',()=>{
-  const fmabc=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='FMABC');
+  const fmabc=sandbox.window.TraubeCurriculoRubricas.find(row=>row.institution==='FMABC');
   assert.equal(fmabc.status,'reviewed');
   assert.match(fmabc.source,/d16d85c3-794c-489e-b76d-72695ca65753\.pdf/);
   const answers={};fmabc.criteria.forEach(row=>row.parts.forEach(part=>{answers[part.id]=999;}));
@@ -119,7 +119,7 @@ test('FMABC uses the official 10-point 2027 access-direct matrix',()=>{
   assert.equal(core.score(fmabc,{['fmabc-progresso']:1,['fmabc-mon-ano']:1,['fmabc-artigo2']:1,['fmabc-artigo1']:1}).total,3);
 });
 test('SES-PE 2027 uses the official 100-point R1 table and exclusive grade bands',()=>{
-  const pe=sandbox.window.LuriaCurriculoRubricas.find(r=>r.institution==='SES-PE');
+  const pe=sandbox.window.TraubeCurriculoRubricas.find(r=>r.institution==='SES-PE');
   assert.equal(pe.status,'reviewed');assert.equal(pe.max,100);assert.equal(pe.edition,'2027');
   const all={};pe.criteria.forEach(r=>r.parts.forEach(p=>{all[p.id]=p.limit;}));
   assert.equal(core.score(pe,all).total,100);
@@ -127,7 +127,7 @@ test('SES-PE 2027 uses the official 100-point R1 table and exclusive grade bands
   assert.equal(core.score(pe,{'pe-mon':3,'pe-ic':3,'pe-ext':4,'pe-art':1,'pe-oral':5,'pe-post':5}).total,70);
 });
 test('UNIFESP lists all 26 direct-entry specialties and uses independent matrices',()=>{
-  const all=sandbox.window.LuriaCurriculoRubricas;
+  const all=sandbox.window.TraubeCurriculoRubricas;
   assert.equal(all.some(r=>r.institution==='SES-DF'),false);
   assert.equal(all.some(r=>r.institution==='Santa Casa BH'),false);
   const uni=all.find(r=>r.institution==='UNIFESP');
@@ -145,7 +145,7 @@ test('UNIFESP lists all 26 direct-entry specialties and uses independent matrice
   assert.equal(core.score(med,{'uni-cm-en1':1,'uni-cm-en5':1}).total,.5);
 });
 test('Einstein reflects the exact announced criteria without inventing item weights',()=>{
-  const ei=sandbox.window.LuriaCurriculoRubricas.find(r=>r.institution==='Einstein');
+  const ei=sandbox.window.TraubeCurriculoRubricas.find(r=>r.institution==='Einstein');
   assert.equal(ei.status,'weights-pending');
   assert.match(ei.scope,/PubMed/);
   assert.match(ei.scope,/JCR/);
@@ -261,12 +261,12 @@ test('PDF original: upload, abertura, download e remoção percorrem os handlers
     slice: () => ({ arrayBuffer: async () => Uint8Array.from([37,80,68,70,45]).buffer }),
     arrayBuffer: async () => Uint8Array.from([37,80,68,70,45]).buffer
   };
-  w.LuriaCurriculoPdf.storePdf = async (owner, original) => {
+  w.TraubeCurriculoPdf.storePdf = async (owner, original) => {
     storedOwner = owner;
     assert.equal(original, file);
   };
-  w.LuriaCurriculoPdf.extract = async () => ({ items: [], hasText: false, pages: 1 });
-  w.LuriaCurriculoPdf.removePdf = async owner => { removedOwner = owner; };
+  w.TraubeCurriculoPdf.extract = async () => ({ items: [], hasText: false, pages: 1 });
+  w.TraubeCurriculoPdf.removePdf = async owner => { removedOwner = owner; };
   w.URL.createObjectURL = blob => {
     assert.equal(blob, file);
     return 'blob:https://luria.test/teste-original';
@@ -306,7 +306,7 @@ test('PDF original continua acessível ao recarregar o cadastro na mesma conta',
   const file = { name: 'historico.pdf', type: 'application/pdf' };
   const w = boot('user-a', null, win => {
     win.indexedDB = {};
-    win.LuriaCurriculoPdf.getPdf = async owner => {
+    win.TraubeCurriculoPdf.getPdf = async owner => {
       assert.equal(owner, 'user-a');
       return { blob: file, name: file.name };
     };
@@ -327,7 +327,7 @@ test('Exportar currículo em PDF executa geração e download, não backup JSON'
   form.elements.year.value = '2025';
   form.dispatchEvent(new w.Event('submit', { bubbles: true, cancelable: true }));
   const output = { lines: [], filenames: [] };
-  w.LuriaLazyVendors = { ensure: async name => assert.equal(name, 'jspdf') };
+  w.TraubeLazyVendors = { ensure: async name => assert.equal(name, 'jspdf') };
   w.jspdf = { jsPDF: class {
     setFont() {}
     setFontSize() {}

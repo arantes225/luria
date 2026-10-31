@@ -1,6 +1,6 @@
 // Prompt Mestre Oficial do Leco (Sincronizado com Google AI Studio)
 
-export const ALEX_CORE_IDENTITY = `Você é Leco, preceptor e tutor de medicina de inteligência clínica da plataforma brasileira LURIA.
+export const ALEX_CORE_IDENTITY = `Você é Leco, preceptor e tutor de medicina de inteligência clínica da plataforma brasileira TRAUBE.
 Sua regra suprema e inviolável é que você é um amigo próximo que também é professor de medicina, e não um robô corporativo que transforma toda conversa em aula.
 É jovem, inteligente, didático, descontraído, bem-humorado e parceiro de estudos do aluno.
 Nunca envie mensagens de boas-vindas institucionais.
@@ -160,7 +160,7 @@ function sanitizeStudyAction(value: unknown): StudyAction | null {
 }
 
 function studyPlannerInstruction(today: string, channel: string) {
-  return `${ALEX_NORMAL_MODE_PROMPT}\n\nVocê também organiza estudos dentro da LURIA. Hoje é ${today}. Interprete o pedido e responda SOMENTE em JSON válido, sem markdown, neste formato: {"answer":"resumo curto em português pedindo confirmação antes de mudar dados","proposal":{"type":"schedule_focus ou topic_bundle","topic":"assunto","start_date":"YYYY-MM-DD ou omitir","end_date":"YYYY-MM-DD ou omitir","lessons_per_day":1,"question_count":10,"flashcard_count":15}}. Para mudança de cronograma use schedule_focus, datas exatas e no máximo 32 dias. Para lista de questões, flashcards ou apostila use topic_bundle. Se o aluno pedir apenas questões, defina flashcard_count:0. Se pedir apenas flashcards, defina question_count:0. Nunca invente questões ou flashcards: a plataforma seleciona somente itens existentes compatíveis com o tema, com limite de 50 questões e 80 flashcards por ação. Se o aluno pedir alteração de cronograma, preserve os dias de estudo e mostre o período. Caso o período, tema ou quantidade indispensável não esteja claro, responda com uma pergunta curta e proposal:null; não invente datas ou disciplinas. Nunca afirme que aplicou ou criou itens até o usuário tocar em Confirmar e aplicar; você apenas preparou uma proposta. Ações administrativas, pagamentos, dados de outros alunos e exclusão irreversível não são permitidos por esta função. ${channel === "voice" ? "A resposta falada deve continuar curta." : ""}`;
+  return `${ALEX_NORMAL_MODE_PROMPT}\n\nVocê também organiza estudos dentro da TRAUBE. Hoje é ${today}. Interprete o pedido e responda SOMENTE em JSON válido, sem markdown, neste formato: {"answer":"resumo curto em português pedindo confirmação antes de mudar dados","proposal":{"type":"schedule_focus ou topic_bundle","topic":"assunto","start_date":"YYYY-MM-DD ou omitir","end_date":"YYYY-MM-DD ou omitir","lessons_per_day":1,"question_count":10,"flashcard_count":15}}. Para mudança de cronograma use schedule_focus, datas exatas e no máximo 32 dias. Para lista de questões, flashcards ou apostila use topic_bundle. Se o aluno pedir apenas questões, defina flashcard_count:0. Se pedir apenas flashcards, defina question_count:0. Nunca invente questões ou flashcards: a plataforma seleciona somente itens existentes compatíveis com o tema, com limite de 50 questões e 80 flashcards por ação. Se o aluno pedir alteração de cronograma, preserve os dias de estudo e mostre o período. Caso o período, tema ou quantidade indispensável não esteja claro, responda com uma pergunta curta e proposal:null; não invente datas ou disciplinas. Nunca afirme que aplicou ou criou itens até o usuário tocar em Confirmar e aplicar; você apenas preparou uma proposta. Ações administrativas, pagamentos, dados de outros alunos e exclusão irreversível não são permitidos por esta função. ${channel === "voice" ? "A resposta falada deve continuar curta." : ""}`;
 }
 
 function getFeynmanSystemInstruction(action: string, learnerMode: string, topic: string, channel: string) {
@@ -169,7 +169,7 @@ function getFeynmanSystemInstruction(action: string, learnerMode: string, topic:
     : learnerMode === "banca"
       ? "Represente uma banca oral respeitosa e exigente: cobre precisão, justificativa, aplicação clínica e relações fisiopatológicas."
       : "Represente um aluno questionador com conhecimento básico: explore mecanismos, relações causais e consequências clínicas.";
-  const shared = `MÉTODO FEYNMAN DA LURIA. Tema: ${topic}. O usuário é o professor e você é o aluno. ${persona}
+  const shared = `MÉTODO FEYNMAN DA TRAUBE. Tema: ${topic}. O usuário é o professor e você é o aluno. ${persona}
 Rigor médico: aceite sinônimos, siglas reconhecidas e explicações cientificamente equivalentes. Baseie correções em fontes oficiais brasileiras, diretrizes de sociedades médicas e consensos internacionais reconhecidos. Não trate divergência de redação como erro. Se a segurança for insuficiente, declare a incerteza.
 Observe internamente acertos, omissões, contradições, erros e relações fisiopatológicas, mas não interrompa a cada detalhe. Nunca invente fonte ou diretriz específica.`;
   if (action === "finish") {
@@ -285,7 +285,7 @@ Deno.serve(async (req: Request) => {
       ? await userClient.rpc("alex_schedule_focus_v1", { p_focus: action.topic, p_start_date: action.start_date, p_end_date: action.end_date, p_lessons_per_day: action.lessons_per_day, p_apply: true })
       : await userClient.rpc("build_topic_study_session_v1", { p_topic: action.topic, p_question_count: action.question_count, p_flashcard_count: action.flashcard_count });
     if (call.error) return json({ error: "study_action_failed" }, 400, headers);
-    const answer = action.type === "schedule_focus" ? "Pronto. Ajustei o cronograma conforme a proposta confirmada." : "Pronto. Montei a lista com conteúdo real da LURIA.";
+    const answer = action.type === "schedule_focus" ? "Pronto. Ajustei o cronograma conforme a proposta confirmada." : "Pronto. Montei a lista com conteúdo real da TRAUBE.";
     return json({ answer, action_result: call.data, model: "local-action", usage: null }, 200, headers);
   }
 
@@ -367,10 +367,10 @@ Deno.serve(async (req: Request) => {
   }
 
   if (sourceMode === "luria_site" && !siteContext && (file === undefined || file === null)) {
-    return json({ clarification: "Não encontrei esse termo no conteúdo da LURIA. Reformule a pergunta ou indique a matéria.", clarification_code: "site_content_not_found" }, 200, headers);
+    return json({ clarification: "Não encontrei esse termo no conteúdo da TRAUBE. Reformule a pergunta ou indique a matéria.", clarification_code: "site_content_not_found" }, 200, headers);
   }
   if (sourceMode === "luria_site" && siteContext) {
-    userParts.unshift({ text: "Trechos recuperados exclusivamente do acervo público da LURIA. Use somente estes trechos como base factual; se forem insuficientes, diga isso em vez de completar com conhecimento externo:\n" + siteContext });
+    userParts.unshift({ text: "Trechos recuperados exclusivamente do acervo público da TRAUBE. Use somente estes trechos como base factual; se forem insuficientes, diga isso em vez de completar com conhecimento externo:\n" + siteContext });
   }
 
   contents.push({ role: "user", parts: userParts });
@@ -384,7 +384,7 @@ Deno.serve(async (req: Request) => {
     ? getFeynmanSystemInstruction(feynmanAction, feynmanMode, topic || "tema médico", channel)
     : getAlexSystemInstruction(mode, channel) + (depth === "aula"
       ? "\n\nFORMATO AULA COMPLETA: quando o aluno pedir ensino médico, explique com raciocínio clínico, fisiopatologia, diagnóstico, conduta e exemplos pertinentes. Não force uma aula em cumprimentos ou conversas sociais."
-      : "\n\nFORMATO DÚVIDA RÁPIDA: priorize uma resposta imediata, direta e natural. Cumprimentos: uma frase curta. Dúvida factual simples: até três frases. Só aprofunde se a pergunta realmente exigir, sem comprometer segurança clínica.") + (sourceMode === "luria_site" ? "\n\nFONTE RESTRITA: responda somente com base nos trechos do acervo LURIA enviados nesta requisição. Não use busca externa nem preencha lacunas com uma aula genérica." : "");
+      : "\n\nFORMATO DÚVIDA RÁPIDA: priorize uma resposta imediata, direta e natural. Cumprimentos: uma frase curta. Dúvida factual simples: até três frases. Só aprofunde se a pergunta realmente exigir, sem comprometer segurança clínica.") + (sourceMode === "luria_site" ? "\n\nFONTE RESTRITA: responda somente com base nos trechos do acervo TRAUBE enviados nesta requisição. Não use busca externa nem preencha lacunas com uma aula genérica." : "");
 
   // Detect other likely phonetic ambiguities in the existing Gemini response,
   // without an additional provider call or guessing a diagnosis automatically.

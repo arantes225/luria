@@ -1,5 +1,5 @@
 /**
- * LURIA - Organizador Inteligente de Anamnese
+ * TRAUBE - Organizador Inteligente de Anamnese
  * Processa informações clínicas soltas/desestruturadas em seções formais de anamnese médica.
  * Pronto para conectar com modelo próprio de IA via Endpoint REST ou mock local contextual.
  */

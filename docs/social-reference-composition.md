@@ -59,7 +59,7 @@ Pasta: browser-results/reference-composition/.
 - desktop-rats-*.png e mobile-rats-*.png.
 - mobile-Amigos-*.png, mobile-Grupos-*.png e mobile-Salas-*.png (390×844).
 - mobile-chat.png, add-friend-modal.png e customizer.png.
-A comparação anterior/depois envolve ambientes e contas diferentes; os dados reais não foram alterados para igualá-los. As imagens de referência não são apresentadas como screenshots da LURIA.
+A comparação anterior/depois envolve ambientes e contas diferentes; os dados reais não foram alterados para igualá-los. As imagens de referência não são apresentadas como screenshots da TRAUBE.
 
 ## Limites e pendências
 - Emulação de viewport não equivale a Safari/iPhone/Android físicos ou PWA instalado. Teclado físico/virtual real, rotação e suspensão ainda precisam de conferência em dispositivos.

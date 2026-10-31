@@ -1,4 +1,4 @@
-# LURIA — Aula 166 | HIV, aids e infecções oportunistas
+# TRAUBE — Aula 166 | HIV, aids e infecções oportunistas
 
 **Clínica Médica · Infectologia · Medicina Preventiva · Urgência e Emergência**  
 **Lote 09 — Aula 166/180 · Revisão editorial inicial em 14/10/2026**  
@@ -355,7 +355,7 @@ O HIV não causa diretamente todas as neoplasias, mas a imunodeficiência e a pr
 
 - **Sarcoma de Kaposi:** associado a HHV-8; lesões cutâneas violáceas, mucosas e doença visceral. Biópsia quando indicada; tratamento depende de extensão e imunidade, incluindo TARV e quimioterapia em casos selecionados.
 - **Linfomas não Hodgkin e linfoma primário SNC:** apresentar-se com sintomas B, massa, citopenias ou lesão neurológica. Investigar com imagem e histologia; lesão cerebral única em anel não deve ser tratada indefinidamente como toxoplasmose.
-- **Câncer do colo do útero:** lesões de HPV persistente exigem rastreamento/seguimento específicos de imunossupressão; conectividade com a apostila de oncoginecologia LURIA.
+- **Câncer do colo do útero:** lesões de HPV persistente exigem rastreamento/seguimento específicos de imunossupressão; conectividade com a apostila de oncoginecologia TRAUBE.
 - **Câncer anal e outros tumores:** risco pode ser elevado em determinadas populações; considerar protocolos de rastreio e avaliação dirigidos por contexto.
 
 A investigação oncológica não deve ser retardada por receio de examinar pessoa com HIV. O cuidado inclui tratamento antineoplásico adequado, revisão de interações com TARV, prevenção de OI e suporte nutricional/psicológico.
@@ -414,7 +414,7 @@ A vacinação é componente central. Planejar hepatite A/B, influenza, COVID-19,
 
 Após exposição conhecida, investigar TB ativa e critérios de TPT. Testes de infecção latente negativos não afastam TB ativa e podem ter sensibilidade reduzida com imunodeficiência. Contatos domiciliares e vulnerabilidades exigem abordagem intersetorial e orientação preventiva.
 
-## 24. Algoritmos clínicos LURIA
+## 24. Algoritmos clínicos TRAUBE
 
 ### Algoritmo A — Novo diagnóstico de HIV
 
@@ -525,7 +525,7 @@ O PCDT brasileiro (R1–R2) é a fonte primária para esquemas e programas do SU
 - [x] Questões autorais com comentários de cada alternativa (seção 31).
 - [x] Plano de 12 imagens candidatas; aprovação de licenças ainda pendente (seção 32).
 - [ ] Checagem especializada de doses por função renal, gestação e interações.
-- [ ] Auditoria final e transformação para formato content.json usado pelo renderizador LURIA.
+- [ ] Auditoria final e transformação para formato content.json usado pelo renderizador TRAUBE.
 - [ ] Revisão médica independente antes de considerar apta à publicação.
 
 **Este material é rascunho para aprendizado e curadoria. Não confundir conclusão de texto com aprovação clínica ou integração ao site.**
@@ -678,9 +678,9 @@ Os casos abaixo são **fictícios e autorais**. Cada cenário deve ser interpret
 **Por que este caso importa:** A cronologia após início de TARV é pista, mas SIRI é diagnóstico de exclusão.
 
 
-## 31. Questões autorais LURIA — com correção de todas as alternativas
+## 31. Questões autorais TRAUBE — com correção de todas as alternativas
 
-As questões são originais para o projeto editorial LURIA. A correção explicita por que cada alternativa está correta ou incorreta e encerra com uma mini-revisão.
+As questões são originais para o projeto editorial TRAUBE. A correção explicita por que cada alternativa está correta ou incorreta e encerra com uma mini-revisão.
 
 ### Questão 1 — Início da TARV
 
@@ -1085,7 +1085,7 @@ O plano prioriza exames reais quando acrescentam conhecimento diagnóstico, e **
 - Para radiologia e fundo de olho, exigir procedência, qualidade técnica e licença de reutilização; nunca inventar exame real.
 - Priorizar Ministério da Saúde, sociedades científicas, hospital universitário, atlas clínico de acesso autorizado e publicações com autorização editorial.
 - Legendas devem descrever achado verificável, diagnósticos diferenciais e limitações, não apenas o nome da doença.
-- Converter mídia aprovada para WebP com resolução legível e peso compatível com a LURIA; não comprometer nitidez de detalhes diagnósticos.
+- Converter mídia aprovada para WebP com resolução legível e peso compatível com a TRAUBE; não comprometer nitidez de detalhes diagnósticos.
 - Incluir descrição alternativa, informações de fonte/licença e posição adequada nos capítulos.
 - Testar falhas de carregamento, responsividade e acessibilidade antes de publicação.
 

@@ -1,4 +1,4 @@
-# LURIA — Public release and credential incident playbook
+# TRAUBE — Public release and credential incident playbook
 
 ## Important limitations
 

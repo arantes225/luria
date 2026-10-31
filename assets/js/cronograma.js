@@ -375,7 +375,7 @@ function currentImportMode() {
 
 function refreshBlockImportPlan() {
   const panel = document.getElementById("block-import-panel");
-  const scheduler = window.LuriaBlockScheduler;
+  const scheduler = window.TraubeBlockScheduler;
   if (!panel || !scheduler) return;
 
   const rows = scheduleState.parsedRows;
@@ -586,7 +586,7 @@ function parseWorkbookRows(matrix, sheetName) {
   }
 
   const parsed = [];
-  const blockParser = window.LuriaBlockScheduler?.parseBlockNumber;
+  const blockParser = window.TraubeBlockScheduler?.parseBlockNumber;
   let currentBlock = blockParser?.(sheetName) ? sheetName : "";
 
   for (
@@ -1331,7 +1331,7 @@ function syncImportModeToRows(
     );
 
   const hasNumberedBlock = lessons.some((row) =>
-    Boolean(window.LuriaBlockScheduler?.parseBlockNumber(row.bloco))
+    Boolean(window.TraubeBlockScheduler?.parseBlockNumber(row.bloco))
   );
 
   setPdfModeState(
@@ -2891,7 +2891,7 @@ function parseGenericPdfLines({
       );
 
     if (/^(?:bloco|semana|m[oó]dulo|m[eê]s)\s/i.test(text)
-        && window.LuriaBlockScheduler?.parseBlockNumber(text)) {
+        && window.TraubeBlockScheduler?.parseBlockNumber(text)) {
       block = text.trim();
       continue;
     }
@@ -2982,7 +2982,7 @@ function parseGenericPdfLines({
 async function parsePdfFile(
   file
 ) {
-  await window.LuriaLazyVendors.ensure("pdfjs");
+  await window.TraubeLazyVendors.ensure("pdfjs");
 
   if (
     !window.pdfjsLib
@@ -3267,7 +3267,7 @@ async function parsePdfFile(
 async function parseWorkbookFile(
   file
 ) {
-  await window.LuriaLazyVendors.ensureSpreadsheet(file?.name);
+  await window.TraubeLazyVendors.ensureSpreadsheet(file?.name);
 
   const buffer =
     await file
@@ -4847,7 +4847,7 @@ function renderWeeklyOverview() {
           + (key === "errors" ? errorItemsOnDate(date).length : 0);
         return '<div class="week-matrix-cell" data-planner-date="'+toISODateSchedule(date)+'" aria-label="'+label+', '+date.toLocaleDateString("pt-BR")+': '+count+' atividade(s)">'+(count ? '<span class="week-dot kind-'+key+'" aria-hidden="true"></span><span class="week-activity-count">'+count+'</span>' : '<span class="week-activity-count empty">0</span>')+'</div>';
       }).join("");
-      const categoryIcon = window.LuriaIcon ? window.LuriaIcon(iconName, "week-category-svg") : '<span class="week-legend kind-'+key+'"></span>';
+      const categoryIcon = window.TraubeIcon ? window.TraubeIcon(iconName, "week-category-svg") : '<span class="week-legend kind-'+key+'"></span>';
       return '<div class="week-matrix-label week-category-label"><span class="week-category-icon kind-'+key+'">'+categoryIcon+'</span><strong>'+label+'</strong></div>'+cells;
     }).join("") + '</div></div>';
 }
@@ -5268,7 +5268,7 @@ async function saveHistoricalPlannerEdit(event) {
   const area = cleanText(document.getElementById("schedule-history-edit-area").value) || null;
   const date = document.getElementById("schedule-history-edit-date").value;
   if (!title || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
-    window.LuriaDialog.alert("Preencha o título e a data.");
+    window.TraubeDialog.alert("Preencha o título e a data.");
     return;
   }
   const save = document.getElementById("schedule-history-edit-save");
@@ -5283,16 +5283,16 @@ async function saveHistoricalPlannerEdit(event) {
       .update(values).eq("id", editing.id).eq("user_id", scheduleState.user.id).select("id");
     if (error) throw error;
     if (!data?.length) throw new Error("O registro não foi encontrado ou não há permissão para editá-lo.");
-    if (!isTopic && window.LuriaGoogleCalendar?.pushEvent) {
-      try { await window.LuriaGoogleCalendar.pushEvent(editing.id); }
+    if (!isTopic && window.TraubeGoogleCalendar?.pushEvent) {
+      try { await window.TraubeGoogleCalendar.pushEvent(editing.id); }
       catch (error) { console.warn("Não foi possível sincronizar com o Google Agenda", error); googleSyncError = true; }
     }
     closeHistoricalPlannerEditor();
     await loadTopics();
-    if (googleSyncError) window.LuriaDialog.alert("Alteração salva na LURIA, mas a sincronização com o Google Agenda falhou. Tente sincronizar novamente.");
+    if (googleSyncError) window.TraubeDialog.alert("Alteração salva na TRAUBE, mas a sincronização com o Google Agenda falhou. Tente sincronizar novamente.");
   } catch (error) {
     console.error("Erro ao editar atividade", error);
-    window.LuriaDialog.alert("Não foi possível salvar: " + error.message);
+    window.TraubeDialog.alert("Não foi possível salvar: " + error.message);
   } finally {
     save.disabled = false;
   }
@@ -5669,7 +5669,7 @@ async function distributeDeckTopics() {
       .join(" · ");
 
   const confirmed =
-    await window.LuriaDialog.confirm(
+    await window.TraubeDialog.confirm(
       `Distribuir ${deck.length} aula${deck.length === 1 ? "" : "s"} do Deck no planejador, em ordem de importação? Dias: ${dayLabels}. Limite: ${maxPerDay} aula${maxPerDay === 1 ? "" : "s"} por dia.`
     );
 
@@ -5984,23 +5984,23 @@ async function loadSchedulePreferences() {
   }
 
   scheduleState.targetExams =
-    window.LuriaExamPriority?.sanitizeExams(
+    window.TraubeExamPriority?.sanitizeExams(
       data?.target_exams || []
     ) || [];
 
-  window.LuriaStudyMode?.apply("medicine");
+  window.TraubeStudyMode?.apply("medicine");
   renderBaseSchedulePreview();
 }
 
 function currentBaseScheduleRows() {
-  const data = window.LURIA_BASE_SCHEDULES || {};
+  const data = window.TRAUBE_BASE_SCHEDULES || {};
   const rows = data.medicine || [];
 
-  if (!scheduleState.targetExams.length || !window.LuriaExamPriority) {
+  if (!scheduleState.targetExams.length || !window.TraubeExamPriority) {
     return rows;
   }
 
-  return window.LuriaExamPriority.sortRows(
+  return window.TraubeExamPriority.sortRows(
     rows,
     scheduleState.targetExams
   );
@@ -6086,14 +6086,14 @@ function renderBaseSchedulePreview() {
 
   container.innerHTML = rows.map((row, index) => {
     const priority = row.examPriority
-      || window.LuriaExamPriority?.evaluate(
+      || window.TraubeExamPriority?.evaluate(
         row.theme,
         row.area,
         scheduleState.targetExams
       );
 
     const priorityLabel =
-      window.LuriaExamPriority?.label(priority) || "";
+      window.TraubeExamPriority?.label(priority) || "";
 
     const priorityBadge = priorityLabel
       ? `<em class="exam-priority-badge ${priority.tier}">${priorityLabel} · ${priority.coverage}/${priority.total}</em>`
@@ -6359,7 +6359,7 @@ async function applyBaseSchedule() {
       .join(", ");
 
 
-  const confirmed = await window.LuriaDialog.confirm(
+  const confirmed = await window.TraubeDialog.confirm(
       `Adicionar ${distributed.length} aula${distributed.length === 1 ? "" : "s"} do cronograma genérico de ${modeLabel}?\n\nDias de aula: ${studyDaysLabel}\nData limite: ${formatDateLabelSchedule(endValue)}`
     );
 
@@ -6501,8 +6501,8 @@ async function applyBaseSchedule() {
 }
 
 
-window.applyLuriaGenericSchedule =
-  async function applyLuriaGenericScheduleSafe() {
+window.applyTraubeGenericSchedule =
+  async function applyTraubeGenericScheduleSafe() {
     try {
       await applyBaseSchedule();
     } catch (error) {
@@ -7065,7 +7065,7 @@ async function returnSelectedThemesToDeck() {
       );
 
   if (!eligible.length) {
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       "Nenhuma das aulas selecionadas pode ser removida para o deck."
     );
 
@@ -7075,7 +7075,7 @@ async function returnSelectedThemesToDeck() {
   }
 
 
-  const confirmed = await window.LuriaDialog.confirm(
+  const confirmed = await window.TraubeDialog.confirm(
       `Remover ${eligible.length} aula${eligible.length === 1 ? "" : "s"} selecionada${eligible.length === 1 ? "" : "s"} das datas atuais e enviar para o Deck não programado?`
     );
 
@@ -7125,7 +7125,7 @@ async function returnSelectedThemesToDeck() {
       error
     );
 
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       `Não foi possível remover as aulas para o deck: ${error.message}`
     );
 
@@ -7157,11 +7157,11 @@ async function markSelectedThemesAlreadyDone() {
   const withDate = selectedTopics.filter((topic) => Boolean(topic.scheduled_date));
 
   if (!withDate.length) {
-    window.LuriaDialog.alert("As aulas selecionadas estão no deck e não possuem data no cronograma.");
+    window.TraubeDialog.alert("As aulas selecionadas estão no deck e não possuem data no cronograma.");
     return;
   }
 
-  const confirmed = await window.LuriaDialog.confirm(`Marcar ${withDate.length} aula${withDate.length === 1 ? "" : "s"} como já feita${withDate.length === 1 ? "" : "s"} usando exatamente as datas em que estão agendadas no cronograma?`);
+  const confirmed = await window.TraubeDialog.confirm(`Marcar ${withDate.length} aula${withDate.length === 1 ? "" : "s"} como já feita${withDate.length === 1 ? "" : "s"} usando exatamente as datas em que estão agendadas no cronograma?`);
   if (!confirmed) return;
 
   const button = document.getElementById("theme-done-selected");
@@ -7175,11 +7175,11 @@ async function markSelectedThemesAlreadyDone() {
     const skipped = Number(data?.skipped || 0);
     scheduleState.selectedThemeIds.clear();
     closeThemeBulkMenu();
-    window.LuriaDialog.alert(`${marked} aula${marked === 1 ? "" : "s"} marcada${marked === 1 ? "" : "s"} como já feita${marked === 1 ? "" : "s"}.${skipped ? ` ${skipped} selecionada${skipped === 1 ? "" : "s"} não tinham data ou já estavam concluídas.` : ""}`);
+    window.TraubeDialog.alert(`${marked} aula${marked === 1 ? "" : "s"} marcada${marked === 1 ? "" : "s"} como já feita${marked === 1 ? "" : "s"}.${skipped ? ` ${skipped} selecionada${skipped === 1 ? "" : "s"} não tinham data ou já estavam concluídas.` : ""}`);
     await loadTopics();
   } catch (error) {
     console.error(error);
-    window.LuriaDialog.alert(`Não foi possível marcar as aulas: ${error.message}`);
+    window.TraubeDialog.alert(`Não foi possível marcar as aulas: ${error.message}`);
   } finally {
     if (button) button.disabled = false;
   }
@@ -7198,7 +7198,7 @@ async function deleteSelectedThemes() {
   }
 
 
-  const confirmed = await window.LuriaDialog.confirm(
+  const confirmed = await window.TraubeDialog.confirm(
       `Excluir ${ids.length} aula${ids.length === 1 ? "" : "s"} permanentemente do cronograma?`
     );
 
@@ -7246,7 +7246,7 @@ async function deleteSelectedThemes() {
     );
 
 
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       `Não foi possível excluir as aulas selecionadas: ${error.message}`
     );
 
@@ -7687,7 +7687,7 @@ async function saveEditedScheduleEvent(
     || "";
 
   if (!title || !eventDate) {
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       "Preencha o título e a data do evento."
     );
     return;
@@ -7755,21 +7755,21 @@ async function saveEditedScheduleEvent(
   if (error) {
     console.error(error);
 
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       `Não foi possível salvar o evento: ${error.message}`
     );
     return;
   }
 
-  if (window.LuriaGoogleCalendar?.pushEvent) {
+  if (window.TraubeGoogleCalendar?.pushEvent) {
     try {
-      await window.LuriaGoogleCalendar.pushEvent(
+      await window.TraubeGoogleCalendar.pushEvent(
         eventId
       );
     } catch (googleError) {
       console.error(googleError);
-      window.LuriaDialog.alert(
-        "O evento foi salvo na LURIA, mas não foi possível atualizar o Google Agenda agora. Use “Sincronizar agora” para tentar novamente."
+      window.TraubeDialog.alert(
+        "O evento foi salvo na TRAUBE, mas não foi possível atualizar o Google Agenda agora. Use “Sincronizar agora” para tentar novamente."
       );
     }
   }
@@ -7948,14 +7948,14 @@ function renderThemeLibrary() {
           ? `Bloco ${topic.bloco}`
           : "";
 
-      const examPriority = window.LuriaExamPriority?.evaluate(
+      const examPriority = window.TraubeExamPriority?.evaluate(
         topic.theme,
         topic.area,
         scheduleState.targetExams
       );
 
       const examPriorityLabel =
-        window.LuriaExamPriority?.label(examPriority) || "";
+        window.TraubeExamPriority?.label(examPriority) || "";
 
       return `
         <article class="theme-library-row ${scheduleState.themeSelectionMode ? "with-selection selection-mode" : ""} ${isCompleted ? "completed" : ""}">
@@ -8130,7 +8130,7 @@ function renderThemeLibrary() {
           }
 
 
-          const confirmed = await window.LuriaDialog.confirm(
+          const confirmed = await window.TraubeDialog.confirm(
               `Remover "${topic.theme}" da data atual e enviar para o Deck não programado?`
             );
 
@@ -8205,7 +8205,7 @@ function switchScheduleAddMode(
   mode
 ) {
   const automaticAllowed =
-    window.LuriaEntitlements?.enabled(
+    window.TraubeEntitlements?.enabled(
       "automatic_schedule"
     ) === true;
 
@@ -8968,7 +8968,7 @@ function wireDynamicInteractions() {
       const date = input?.value;
 
       if (!date) {
-        window.LuriaDialog.alert("Escolha uma data.");
+        window.TraubeDialog.alert("Escolha uma data.");
         return;
       }
 
@@ -8992,17 +8992,17 @@ function wireDynamicInteractions() {
   document.querySelectorAll("[data-agenda-select]").forEach(input=>input.addEventListener("change",()=>{input.checked?scheduleState.agendaSelected.add(input.dataset.agendaSelect):scheduleState.agendaSelected.delete(input.dataset.agendaSelect);updateAgendaSelectedCount();}));
   const selectAll=document.getElementById("agenda-select-all"); if(selectAll) selectAll.onchange=()=>{document.querySelectorAll("[data-agenda-select]").forEach(input=>{input.checked=selectAll.checked;selectAll.checked?scheduleState.agendaSelected.add(input.dataset.agendaSelect):scheduleState.agendaSelected.delete(input.dataset.agendaSelect)});updateAgendaSelectedCount();};
   const bulkUpdate=async(mode)=>{
-    const keys=[...scheduleState.agendaSelected]; if(!keys.length){window.LuriaDialog?.alert("Selecione pelo menos uma atividade.");return;}
+    const keys=[...scheduleState.agendaSelected]; if(!keys.length){window.TraubeDialog?.alert("Selecione pelo menos uma atividade.");return;}
     const date=document.getElementById("agenda-bulk-date")?.value;
-    if(mode==="date"&&!date){window.LuriaDialog?.alert("Escolha a nova data.");return;}
+    if(mode==="date"&&!date){window.TraubeDialog?.alert("Escolha a nova data.");return;}
     if(mode==="complete-today"||mode==="complete-origin"){
       const topics=keys.filter(key=>key.startsWith("topic:")).map(key=>scheduleState.topics.find(topic=>String(topic.id)===key.slice(6))).filter(Boolean);
-      if(!topics.length){window.LuriaDialog?.alert("Selecione pelo menos uma aula para concluir.");return;}
+      if(!topics.length){window.TraubeDialog?.alert("Selecione pelo menos uma aula para concluir.");return;}
       const studiedOn=mode==="complete-today"?todayScheduleISO():null;
       const datesWithoutOrigin=topics.filter(topic=>!studiedOn&&!(topic.studied_on||topic.original_date||topic.scheduled_date));
-      if(datesWithoutOrigin.length){window.LuriaDialog?.alert("Uma ou mais aulas não têm data de origem. Mova-as ou conclua-as individualmente.");return;}
+      if(datesWithoutOrigin.length){window.TraubeDialog?.alert("Uma ou mais aulas não têm data de origem. Mova-as ou conclua-as individualmente.");return;}
       const modeLabel=mode==="complete-today"?"hoje":"na data de origem";
-      const confirmed=await window.LuriaDialog.confirm("Concluir "+topics.length+" aula"+(topics.length===1?"":"s")+" "+modeLabel+" e agendar as revisões?");
+      const confirmed=await window.TraubeDialog.confirm("Concluir "+topics.length+" aula"+(topics.length===1?"":"s")+" "+modeLabel+" e agendar as revisões?");
       if(!confirmed)return;
       try{
         for(const topic of topics){
@@ -9012,7 +9012,7 @@ function wireDynamicInteractions() {
         }
         scheduleState.agendaSelected.clear();
         await loadTopics();
-      }catch(error){console.error(error);window.LuriaDialog?.alert("Não foi possível concluir as aulas e agendar as revisões.");}
+      }catch(error){console.error(error);window.TraubeDialog?.alert("Não foi possível concluir as aulas e agendar as revisões.");}
       return;
     }
     for(const key of keys){const [source,id]=key.split(":");
@@ -9027,15 +9027,15 @@ function wireDynamicInteractions() {
   const bulkDate=document.getElementById("agenda-bulk-reschedule");if(bulkDate)bulkDate.onclick=()=>bulkUpdate("date");
   const bulkCompleteToday=document.getElementById("agenda-bulk-complete-today");if(bulkCompleteToday)bulkCompleteToday.onclick=()=>bulkUpdate("complete-today");
   const bulkCompleteOrigin=document.getElementById("agenda-bulk-complete-origin");if(bulkCompleteOrigin)bulkCompleteOrigin.onclick=()=>bulkUpdate("complete-origin");
-  const bulkDeck=document.getElementById("agenda-bulk-deck");if(bulkDeck)bulkDeck.onclick=async()=>{const keys=[...scheduleState.agendaSelected].filter(k=>k.startsWith("topic:"));if(!keys.length){window.LuriaDialog?.alert("Selecione pelo menos uma aula para remover ao deck.");return;}for(const key of keys){const id=key.split(":")[1];await scheduleSb.from("study_topics").update({status:"deck",scheduled_date:null}).eq("id",id).eq("user_id",scheduleState.user.id);}scheduleState.agendaSelected.clear();await loadTopics();};
-  const bulkDelete=document.getElementById("agenda-bulk-delete");if(bulkDelete)bulkDelete.onclick=async()=>{const keys=[...scheduleState.agendaSelected];if(!keys.length){window.LuriaDialog?.alert("Selecione pelo menos uma atividade.");return;}if(!confirm("Apagar "+keys.length+" atividade(s)? Esta ação não pode ser desfeita."))return;for(const key of keys){const [source,id]=key.split(":");if(source==="topic")await scheduleSb.from("study_topics").delete().eq("id",id).eq("user_id",scheduleState.user.id);if(source==="event")await scheduleSb.from("schedule_events").delete().eq("id",id).eq("user_id",scheduleState.user.id);if(source==="error")await scheduleSb.from("error_notebook").delete().eq("id",id).eq("user_id",scheduleState.user.id);}scheduleState.agendaSelected.clear();await loadTopics();};
+  const bulkDeck=document.getElementById("agenda-bulk-deck");if(bulkDeck)bulkDeck.onclick=async()=>{const keys=[...scheduleState.agendaSelected].filter(k=>k.startsWith("topic:"));if(!keys.length){window.TraubeDialog?.alert("Selecione pelo menos uma aula para remover ao deck.");return;}for(const key of keys){const id=key.split(":")[1];await scheduleSb.from("study_topics").update({status:"deck",scheduled_date:null}).eq("id",id).eq("user_id",scheduleState.user.id);}scheduleState.agendaSelected.clear();await loadTopics();};
+  const bulkDelete=document.getElementById("agenda-bulk-delete");if(bulkDelete)bulkDelete.onclick=async()=>{const keys=[...scheduleState.agendaSelected];if(!keys.length){window.TraubeDialog?.alert("Selecione pelo menos uma atividade.");return;}if(!confirm("Apagar "+keys.length+" atividade(s)? Esta ação não pode ser desfeita."))return;for(const key of keys){const [source,id]=key.split(":");if(source==="topic")await scheduleSb.from("study_topics").delete().eq("id",id).eq("user_id",scheduleState.user.id);if(source==="event")await scheduleSb.from("schedule_events").delete().eq("id",id).eq("user_id",scheduleState.user.id);if(source==="error")await scheduleSb.from("error_notebook").delete().eq("id",id).eq("user_id",scheduleState.user.id);}scheduleState.agendaSelected.clear();await loadTopics();};
   const bindMonthFilter=(id,key)=>{const el=document.getElementById(id);if(!el)return;el.value=scheduleState[key]||"all";el.onchange=()=>{scheduleState[key]=el.value;renderMonthPlanner();wireDynamicInteractions();};};
   const monthItems=[...scheduleState.topics.map(x=>({area:x.area,theme:x.theme})),...scheduleState.events.map(x=>({area:x.area,theme:x.title})),...scheduleState.errorItems.map(x=>({area:x.area,theme:x.theme||x.materia}))];
   fillCronogramaFilter("month-filter-area",monthItems.map(x=>x.area),scheduleState.monthAreaFilter,"Todas as áreas");
   fillCronogramaFilter("month-filter-theme",monthItems.map(x=>x.theme),scheduleState.monthThemeFilter,"Todos os temas");
   bindMonthFilter("month-filter-area","monthAreaFilter");bindMonthFilter("month-filter-theme","monthThemeFilter");bindMonthFilter("month-filter-type","monthFilter");
 
-  // Espelha os selects funcionais em listas clicáveis no padrão visual do LURIA.
+  // Espelha os selects funcionais em listas clicáveis no padrão visual do TRAUBE.
   document.querySelectorAll(".month-filter-group[data-month-filter]").forEach((group)=>{
     const select=document.getElementById(group.dataset.monthFilter);
     const trigger=group.querySelector(".month-filter-trigger");
@@ -9094,7 +9094,7 @@ function wireDynamicInteractions() {
         else if(source==="error"){ const result=await scheduleSb.from("error_notebook").update({due_date:date}).eq("id",id).eq("user_id",scheduleState.user.id); error=result.error; }
         if(error) throw error;
         await loadTopics();
-      }catch(err){ console.error(err); window.LuriaDialog?.alert("Não foi possível alterar a data."); }
+      }catch(err){ console.error(err); window.TraubeDialog?.alert("Não foi possível alterar a data."); }
       finally{ button.disabled=false; }
     });
   });
@@ -9116,7 +9116,7 @@ function wireDynamicInteractions() {
 
       if (!topic) return;
 
-      const confirmed = await window.LuriaDialog.confirm(
+      const confirmed = await window.TraubeDialog.confirm(
         `Remover "${topic.theme}" desta data e enviar para o Deck não programado?`
       );
 
@@ -9138,7 +9138,7 @@ function wireDynamicInteractions() {
   document.querySelectorAll("[data-start-study-topic]").forEach((link) => {
     link.addEventListener("click", () => {
       const topic = scheduleState.topics.find((item) => item.id === link.dataset.startStudyTopic);
-      window.LuriaStudyTimer?.start("lesson", { sourceId: topic?.id, area: topic?.area || null, materia: topic?.materia || topic?.theme || null });
+      window.TraubeStudyTimer?.start("lesson", { sourceId: topic?.id, area: topic?.area || null, materia: topic?.materia || topic?.theme || null });
     });
   });
 
@@ -9186,7 +9186,7 @@ async function renderScheduleStudyInsights(period){
   const periodLabel=mode==="month"?"Neste mês":mode==="year"?"Neste ano":"Nesta semana";
   const periodText=totalEl.parentElement?.querySelector("span"); if(periodText)periodText.textContent=periodLabel;
   const {data,error}=await scheduleSb.from("study_sessions").select("started_at,duration_seconds,activity_kind,area,materia").eq("user_id",scheduleState.user.id).gte("started_at",start.toISOString()).lt("started_at",end.toISOString());
-  if(error){console.warn("LURIA: não foi possível carregar tempo do cronograma",error);return;}
+  if(error){console.warn("TRAUBE: não foi possível carregar tempo do cronograma",error);return;}
   const rows=data||[], buckets=Array(labels.length).fill(0), byCategory=new Map();
   rows.forEach(row=>{
     const sec=Math.max(0,Number(row.duration_seconds)||0), d=new Date(row.started_at), idx=bucketIndex(d);
@@ -9292,7 +9292,7 @@ async function scheduleTopic(topicId, date) {
 
   if (error) {
     console.error(error);
-    window.LuriaDialog.alert(`Não foi possível agendar: ${error.message}`);
+    window.TraubeDialog.alert(`Não foi possível agendar: ${error.message}`);
     return;
   }
 
@@ -9314,7 +9314,7 @@ async function returnTopicToDeck(topicId) {
 
   if (error) {
     console.error(error);
-    window.LuriaDialog.alert(`Não foi possível devolver ao deck: ${error.message}`);
+    window.TraubeDialog.alert(`Não foi possível devolver ao deck: ${error.message}`);
     return;
   }
 
@@ -9326,7 +9326,7 @@ async function completeTopic(topicId) {
 
   if (!topic) return;
 
-  const confirmed = await window.LuriaDialog.confirm(
+  const confirmed = await window.TraubeDialog.confirm(
     `Concluir "${topic.theme}"? As revisões da matéria serão distribuídas automaticamente.`
   );
 
@@ -9338,7 +9338,7 @@ async function completeTopic(topicId) {
 
   if (error) {
     console.error(error);
-    window.LuriaDialog.alert(`Não foi possível concluir: ${error.message}`);
+    window.TraubeDialog.alert(`Não foi possível concluir: ${error.message}`);
     return;
   }
 
@@ -9397,11 +9397,11 @@ async function submitAlreadyDone(event) {
 
   if (error) {
     console.error(error);
-    window.LuriaDialog.alert(`Não foi possível marcar como já feita: ${error.message}`);
+    window.TraubeDialog.alert(`Não foi possível marcar como já feita: ${error.message}`);
     return;
   }
 
-  window.LuriaDialog.alert(
+  window.TraubeDialog.alert(
     `"${topic?.theme || "Aula"}" foi marcada como já feita. As revisões foram distribuídas na agenda.`
   );
 
@@ -9413,7 +9413,7 @@ async function deleteTopic(topicId) {
 
   if (!topic) return;
 
-  const confirmed = await window.LuriaDialog.confirm(
+  const confirmed = await window.TraubeDialog.confirm(
     `Excluir "${topic.theme}" do cronograma?`
   );
 
@@ -9427,7 +9427,7 @@ async function deleteTopic(topicId) {
 
   if (error) {
     console.error(error);
-    window.LuriaDialog.alert(`Não foi possível excluir: ${error.message}`);
+    window.TraubeDialog.alert(`Não foi possível excluir: ${error.message}`);
     return;
   }
 
@@ -9451,7 +9451,7 @@ async function deleteScheduleEvent(
   }
 
 
-  const confirmed = await window.LuriaDialog.confirm(
+  const confirmed = await window.TraubeDialog.confirm(
       `Excluir "${event.title}" do cronograma?`
     );
 
@@ -9463,16 +9463,16 @@ async function deleteScheduleEvent(
 
   if (
     event?.metadata?.google_event_id
-    && window.LuriaGoogleCalendar?.deleteLinkedEvent
+    && window.TraubeGoogleCalendar?.deleteLinkedEvent
   ) {
     try {
-      await window.LuriaGoogleCalendar.deleteLinkedEvent(
+      await window.TraubeGoogleCalendar.deleteLinkedEvent(
         event.metadata.google_event_id
       );
     } catch (googleError) {
       console.error(googleError);
-      window.LuriaDialog.alert(
-        "Não foi possível excluir este evento do Google Agenda. A exclusão na LURIA foi cancelada para evitar dessincronização."
+      window.TraubeDialog.alert(
+        "Não foi possível excluir este evento do Google Agenda. A exclusão na TRAUBE foi cancelada para evitar dessincronização."
       );
       return;
     }
@@ -9498,7 +9498,7 @@ async function deleteScheduleEvent(
       error
     );
 
-    window.LuriaDialog.alert(
+    window.TraubeDialog.alert(
       `Não foi possível excluir: ${error.message}`
     );
 
@@ -9836,8 +9836,8 @@ async function reorganizeAdvancedLessons() {
     return;
   }
 
-  const confirmed = await window.LuriaDialog.confirm(
-      "Adiantar o cronograma agora? O LURIA compactará as aulas futuras para frente, usando no máximo 3 dias de aula por semana e respeitando o máximo diário configurado."
+  const confirmed = await window.TraubeDialog.confirm(
+      "Adiantar o cronograma agora? O TRAUBE compactará as aulas futuras para frente, usando no máximo 3 dias de aula por semana e respeitando o máximo diário configurado."
     );
 
   if (!confirmed) {
@@ -10213,7 +10213,7 @@ async function initCronograma() {
   ]);
 
   const automaticAllowed =
-    window.LuriaEntitlements?.enabled("automatic_schedule") === true;
+    window.TraubeEntitlements?.enabled("automatic_schedule") === true;
 
   const automaticButton =
     document.querySelector('[data-schedule-add-mode="automatic"]');
@@ -10241,7 +10241,7 @@ if (window.docmapUser) {
 
 function bindBaseScheduleButton() {
   document.getElementById("apply-base-schedule")?.addEventListener("click", () => {
-    window.applyLuriaGenericSchedule && window.applyLuriaGenericSchedule();
+    window.applyTraubeGenericSchedule && window.applyTraubeGenericSchedule();
   });
 }
 if (document.readyState === "loading") {

@@ -28,7 +28,7 @@ function set(w,id,value,kind="change"){
 }
 test("core: records legacy payments, midnight crossing, payer calendar and no double retention",t=>{
   const dom=mount(files.scale,[files.core]);t.after(()=>dom.window.close());
-  const w=dom.window,c=w.LuriaShiftCore;
+  const w=dom.window,c=w.TraubeShiftCore;
   w.localStorage.setItem(c.SHIFT_KEY,JSON.stringify([{id:"old",date:"2026-10-10",place:"Hosp A",value:1500,duration:12,status:"pago"}]));
   assert.equal(c.getShifts()[0].receivedAmount,1500);
   assert.equal(c.outstanding(c.getShifts()[0]),0);
@@ -42,7 +42,7 @@ test("core: records legacy payments, midnight crossing, payer calendar and no do
 });
 test("scale: opens modal, saves flexible time/value, renders monthly and weekly, edits record",t=>{
   const dom=mount(files.scale,[files.core,files.scaleJS]);t.after(()=>dom.window.close());
-  const w=dom.window,c=w.LuriaShiftCore,d=w.document;
+  const w=dom.window,c=w.TraubeShiftCore,d=w.document;
   d.getElementById("shift-add").click();assert.equal(d.getElementById("shift-modal").open,true);
   set(w,"shift-date","2026-10-29");
   set(w,"shift-place","Hosp A");
@@ -61,7 +61,7 @@ test("scale: opens modal, saves flexible time/value, renders monthly and weekly,
 });
 test("finance: grouped payers, tax estimates, partial payment and remaining balance",t=>{
   const dom=mount(files.finance,[files.core,files.financeJS]);t.after(()=>dom.window.close());
-  const w=dom.window,c=w.LuriaShiftCore,d=w.document;
+  const w=dom.window,c=w.TraubeShiftCore,d=w.document;
   c.saveShifts([{id:"t1",date:"2026-10-03",place:"Hosp A",payer:"Grupo X",value:1500,withheldTax:100,payerFee:20,receivedAmount:500,expectedDate:"2026-10-15",duration:12,status:"pendente"},{id:"t2",date:"2026-10-04",place:"Hosp B",payer:"Grupo Y",value:1000,withheldTax:0,payerFee:0,receivedAmount:0,expectedDate:"2026-11-15",duration:8,status:"pendente"}]);
   set(w,"fin-month-select","2026-10");
   assert.match(d.getElementById("fin-hospital-breakdown").textContent,/Grupo X/);

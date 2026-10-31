@@ -1,4 +1,4 @@
-/* LURIA | Auditoria clínica 1/6 (calculadoras 01–30) | 2026-10-24.
+/* TRAUBE | Auditoria clínica 1/6 (calculadoras 01–30) | 2026-10-24.
  * Corrige limites de aplicação e protege a interpretação. Apoio clínico; não prescreve.
  * Carregado depois de clinical-calculators-expansion.js, antes das bibliotecas da página.
  */

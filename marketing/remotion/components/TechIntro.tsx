@@ -167,7 +167,7 @@ export const TechIntro: React.FC = () => {
               letterSpacing: '1px'
             }}
           >
-            Conheça a LURIA →
+            Conheça a TRAUBE →
           </span>
         </div>
       </div>

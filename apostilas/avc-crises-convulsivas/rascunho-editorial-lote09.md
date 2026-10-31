@@ -1,12 +1,12 @@
-# LURIA — Aula 176 | Acidente vascular cerebral e crises convulsivas
+# TRAUBE — Aula 176 | Acidente vascular cerebral e crises convulsivas
 
 **Clínica Médica · Neurologia · Urgência e Emergência · Terapia Intensiva**  
 **Lote 09 — Aula 176/180 · Versão editorial 15/10/2026**  
-**Status:** rascunho técnico-educacional, sem validação médica independente, não publicado na interface LURIA.
+**Status:** rascunho técnico-educacional, sem validação médica independente, não publicado na interface TRAUBE.
 
 **Atualização de alto impacto:** AHA/ASA **2026** atualizou manejo do AVC isquêmico agudo; o Ministério da Saúde mantém PCDT de AVC isquêmico agudo aprovado pela Portaria Conjunta SAES/SECTICS/MS nº 29, de **12/12/2023**; o **PCDT Epilepsia brasileiro teve alteração em 05/05/2026**. Recomendações AHA internacionais sobre tenecteplase, janelas de tratamento e trombectomia não significam automaticamente incorporação/rotina em qualquer serviço SUS.
 
-> **Pulo do Gato LURIA:** **Déficit neurológico focal súbito é AVC até prova em contrário; checar glicemia e horário do último momento em que o paciente estava bem.** Na primeira hora, a pergunta decisiva é **“há hemorragia na TC?”** para escolher reperfusão versus controle de sangramento. **Crise convulsiva não exclui AVC**, e **paralisia de Todd não deve ser diagnosticada antes de excluir uma lesão vascular** em quem tem déficit persistente.
+> **Pulo do Gato TRAUBE:** **Déficit neurológico focal súbito é AVC até prova em contrário; checar glicemia e horário do último momento em que o paciente estava bem.** Na primeira hora, a pergunta decisiva é **“há hemorragia na TC?”** para escolher reperfusão versus controle de sangramento. **Crise convulsiva não exclui AVC**, e **paralisia de Todd não deve ser diagnosticada antes de excluir uma lesão vascular** em quem tem déficit persistente.
 
 ## 1. Competências do estudante
 
@@ -454,7 +454,7 @@ Hipoxemia, trauma, aspiração, rabdomiólise, acidose transitória, hipertermia
 ### 24.3. Prognóstico
 No AVC, depende de gravidade inicial, idade, reperfusão, volume/localização, colaterais, complicações e reabilitação. Em epilepsia, depende de síndrome, etiologia, resposta aos primeiros tratamentos e comorbidades. **Uma TC inicial normal não garante bom prognóstico**, e EEG com alteração não define incapacidade futura sem contexto.
 
-## 25. Algoritmos LURIA — conduta passo a passo
+## 25. Algoritmos TRAUBE — conduta passo a passo
 
 ### A. Déficit focal súbito
 Triagem FAST/BE-FAST → marcar último momento bem → ABCDE, glicemia, NIHSS, anticoagulantes → **TC sem contraste urgente** → sangue? **sim:** via HIC/HSA, PA/reversão/neurocirurgia → **não:** AVCi/AIT, angio-TC para grande vaso quando indicada → déficit incapacitante e elegível <4,5h? IVT por protocolo → grande vaso em janela? considerar EVT → se não candidato, tratamento clínico e prevenção → reabilitação/seguimento.
@@ -1192,7 +1192,7 @@ Os itens listados são **candidatos editoriais**. Os exames reais devem ser obti
 - Creditar origem, licença, revisão e data das diretrizes em algoritmos.
 - Converter imagens estáticas para WebP, preservando resolução diagnóstica e traçado do EEG.
 - Fornecer alt text detalhado para quem não consegue enxergar imagem e esquema textual de algoritmo.
-- Aprovar imagens individualmente no Admin antes de integrá-las ao renderizador da LURIA.
+- Aprovar imagens individualmente no Admin antes de integrá-las ao renderizador da TRAUBE.
 - Se a imagem real apropriada não puder ser licenciada, usar diagrama autoral **rotulado como esquemático**, nunca como exame real.
 
 ## 33. Auditoria científica e editorial consolidada

@@ -79,7 +79,7 @@ Arquivos de teste executados: `app-security`, `frontend-xss`, `anki-security`, `
 
 PGlite 0.3.14 e PostCSS 8.5.30, já declarados no projeto, foram disponibilizados apenas em diretório temporário. A execução SQL usa as tabelas/funções reais relevantes das migrações; dependências administrativas não relacionadas foram excluídas do fixture. PGlite é uma instância local serializada: não substitui testes com conexões concorrentes no PostgreSQL/Supabase implantado. A Edge real é executada com I/O de provedor simulado. Nenhuma consulta SSRF real a IP privado foi realizada.
 
-Para reproduzir: `NODE_PATH` deve incluir os módulos de teste declarados; `LURIA_JSPDF_TEST_BUNDLE` aponta para o UMD revisado 4.2.1 cujo SHA-384 é conferido pelo teste. Sem essa variável, o teste de biblioteca real informa skip explícito. Em ambiente sem restrições de spawn, executar Node 24 com `node --test --test-isolation=none` e os arquivos acima. O sincronizador é `node scripts/sync-csp.cjs`. Sintaxe dos nove JS/MJS alterados, parsing dos TypeScript alterados e `git diff --check` foram conferidos; parsing Node não é typecheck do Deno.
+Para reproduzir: `NODE_PATH` deve incluir os módulos de teste declarados; `TRAUBE_JSPDF_TEST_BUNDLE` aponta para o UMD revisado 4.2.1 cujo SHA-384 é conferido pelo teste. Sem essa variável, o teste de biblioteca real informa skip explícito. Em ambiente sem restrições de spawn, executar Node 24 com `node --test --test-isolation=none` e os arquivos acima. O sincronizador é `node scripts/sync-csp.cjs`. Sintaxe dos nove JS/MJS alterados, parsing dos TypeScript alterados e `git diff --check` foram conferidos; parsing Node não é typecheck do Deno.
 
 ## Implantação manual e limites de validação
 

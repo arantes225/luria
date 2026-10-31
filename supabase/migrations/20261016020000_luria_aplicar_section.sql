@@ -1,5 +1,5 @@
 -- ==============================================================================
--- Migração LURIA: Seção Aplicar (Vocação & Radar de Provas)
+-- Migração TRAUBE: Seção Aplicar (Vocação & Radar de Provas)
 -- Arquivo: supabase/migrations/20261016020000_luria_aplicar_section.sql
 -- ==============================================================================
 

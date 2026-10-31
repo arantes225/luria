@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Auditoria preliminar de densidade editorial das Apostilas LURIA.
+ * Auditoria preliminar de densidade editorial das Apostilas TRAUBE.
  * Uso: node scripts/audit-apostilas-60k.mjs [--json] [--fail]
  *
  * Estima apenas caracteres legíveis do artigo principal / seções JSON.

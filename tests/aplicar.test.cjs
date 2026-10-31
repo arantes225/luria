@@ -40,7 +40,7 @@ test('Estrutura HTML e acessibilidade de aplicar/index.html', () => {
 test('Navegação e sidebar em app.js', () => {
   const appJs = fs.readFileSync('assets/js/app.js', 'utf8');
   assert(appJs.includes('href="/aplicar/"'), 'Sidebar deve possuir link para /aplicar/');
-  assert(appJs.includes('compass:'), 'LURIA_ICON_PATHS deve conter ícone compass');
+  assert(appJs.includes('compass:'), 'TRAUBE_ICON_PATHS deve conter ícone compass');
   assert(appJs.includes('aplicar: {'), 'PAGE_CONFIG deve conter configuração para aplicar');
 });
 
@@ -50,7 +50,7 @@ test('Motor do módulo Vocação e metodologia de afinidade', () => {
     window: {
       addEventListener: () => {},
       dispatchEvent: () => {},
-      LuriaMedicalIcons: { icon: () => '<svg></svg>' }
+      TraubeMedicalIcons: { icon: () => '<svg></svg>' }
     },
     document: {
       readyState: 'complete',
@@ -63,13 +63,13 @@ test('Motor do módulo Vocação e metodologia de afinidade', () => {
   vm.createContext(sandbox);
   vm.runInContext(vocacaoCode, sandbox);
 
-  const LuriaVocacao = sandbox.window.LuriaVocacao;
-  assert(LuriaVocacao, 'LuriaVocacao deve estar disponível globalmente');
+  const TraubeVocacao = sandbox.window.TraubeVocacao;
+  assert(TraubeVocacao, 'TraubeVocacao deve estar disponível globalmente');
 
-  const specialties = LuriaVocacao.getSpecialties();
+  const specialties = TraubeVocacao.getSpecialties();
   assert(Array.isArray(specialties) && specialties.length >= 15, 'Deve carregar catálogo de especialidades');
 
-  const questions = LuriaVocacao.getQuestions();
+  const questions = TraubeVocacao.getQuestions();
   assert.equal(questions.length, 10, 'Deve conter 10 dimensões clínicas no questionário');
 
   // Testar cálculo de afinidade com respostas simuladas
@@ -86,7 +86,7 @@ test('Motor do módulo Vocação e metodologia de afinidade', () => {
     q10_formation: 'opt_long_subspecialty'
   };
 
-  const result = LuriaVocacao.calculate(mockAnswers);
+  const result = TraubeVocacao.calculate(mockAnswers);
   assert(result.topMatches && result.topMatches.length > 0, 'Deve retornar topMatches');
   assert(result.topMatches[0].affinityScore >= 50 && result.topMatches[0].affinityScore <= 100, 'Score deve ser percentual calibrado');
   // Para respostas estritamente cirúrgicas/agudas, Cirurgia Geral deve figurar no topo
@@ -100,7 +100,7 @@ test('Motor do módulo Radar de Provas e dados estatísticos auditáveis', () =>
     window: {
       addEventListener: () => {},
       dispatchEvent: () => {},
-      LuriaMedicalIcons: { icon: () => '<svg></svg>' }
+      TraubeMedicalIcons: { icon: () => '<svg></svg>' }
     },
     document: {
       readyState: 'complete',
@@ -112,10 +112,10 @@ test('Motor do módulo Radar de Provas e dados estatísticos auditáveis', () =>
   vm.createContext(sandbox);
   vm.runInContext(radarCode, sandbox);
 
-  const LuriaRadar = sandbox.window.LuriaRadar;
-  assert(LuriaRadar, 'LuriaRadar deve estar disponível globalmente');
+  const TraubeRadar = sandbox.window.TraubeRadar;
+  assert(TraubeRadar, 'TraubeRadar deve estar disponível globalmente');
 
-  const dataset = LuriaRadar.getData();
+  const dataset = TraubeRadar.getData();
   assert(Array.isArray(dataset) && dataset.length >= 20, 'Deve conter dataset oficial de questões auditadas');
 
   // Verificar consistência metodológica: taxa = (questões / total) * 100

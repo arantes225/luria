@@ -16,7 +16,7 @@
       const image = new Image();
       image.crossOrigin = "anonymous";
       image.onload = () => resolve(image);
-      image.onerror = () => reject(new Error("Não foi possível carregar a logo do LURIA."));
+      image.onerror = () => reject(new Error("Não foi possível carregar a logo do TRAUBE."));
       image.src = src;
     });
   }
@@ -98,7 +98,7 @@
     doc.setTextColor(...BRAND.blue);
     doc.setFont("helvetica", "bold");
     doc.setFontSize(11.5);
-    doc.text("LURIA", 28, 11.7);
+    doc.text("TRAUBE", 28, 11.7);
 
     doc.setTextColor(...BRAND.muted);
     doc.setFont("helvetica", "normal");
@@ -137,7 +137,7 @@
     doc.setTextColor(...BRAND.muted);
     doc.setFont("helvetica", "normal");
     doc.setFontSize(6.8);
-    doc.text("LURIA", 14, pageHeight - 6.3);
+    doc.text("TRAUBE", 14, pageHeight - 6.3);
     doc.text(
       `${pageNumber} / ${totalPages}`,
       pageWidth - 14,
@@ -157,7 +157,7 @@
     }
   }
 
-  window.LuriaPdfBranding = {
+  window.TraubePdfBranding = {
     BRAND,
     getAssets,
     decoratePage,

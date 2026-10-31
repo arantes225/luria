@@ -9,7 +9,7 @@ Implementação local de 12/10/2026. Seleção exclusiva em Configurações → 
 
 ## Preferência e migração
 
-Um único controlador `dashboard-preferences.js` usa `LuriaLocalOwnerStore` e a chave existente `luria:dashboard-layout:<conta>`. Valores canônicos: `classic` e `cards`. Valores numéricos antigos (1–5) ou inválidos são normalizados para `classic`, preservando a antiga Opção 1. O número 2 antigo não ativa a nova Cards. Sem preferência ou com storage indisponível, Clássica é o fallback. A escolha temporária `luria:dashboard-view:v1:<conta>` é retirada e não participa da seleção. Preferências de guest não são importadas nem gravadas. Falhas de gravação deixam a seleção anterior e exibem mensagem. Eventos de conta, storage e pageshow atualizam a seleção.
+Um único controlador `dashboard-preferences.js` usa `TraubeLocalOwnerStore` e a chave existente `luria:dashboard-layout:<conta>`. Valores canônicos: `classic` e `cards`. Valores numéricos antigos (1–5) ou inválidos são normalizados para `classic`, preservando a antiga Opção 1. O número 2 antigo não ativa a nova Cards. Sem preferência ou com storage indisponível, Clássica é o fallback. A escolha temporária `luria:dashboard-view:v1:<conta>` é retirada e não participa da seleção. Preferências de guest não são importadas nem gravadas. Falhas de gravação deixam a seleção anterior e exibem mensagem. Eventos de conta, storage e pageshow atualizam a seleção.
 
 ## Arquivos
 

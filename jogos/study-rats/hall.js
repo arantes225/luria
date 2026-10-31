@@ -13,7 +13,7 @@
     <div class="sr-hall-grid">
       <section class="sr-hall-card" aria-labelledby="sr-friends-heading">
         <span class="sr-hall-icon" aria-hidden="true">♟</span><h3 id="sr-friends-heading">Com amigos</h3>
-        <p>Convide uma pessoa da sua lista do LURIA. A partida começa quando ela aceitar.</p>
+        <p>Convide uma pessoa da sua lista do TRAUBE. A partida começa quando ela aceitar.</p>
         <button class="sr-hall-button" id="sr-show-friends" type="button">Escolher amigo</button>
       </section>
       <section class="sr-hall-card" aria-labelledby="sr-random-heading">
@@ -29,7 +29,7 @@
     </div>
     <section class="sr-hall-detail" id="sr-friends-panel" aria-labelledby="sr-friends-list-heading" hidden>
       <h3 id="sr-friends-list-heading">Escolha um amigo</h3>
-      <p class="sr-hall-help">Somente amigos já adicionados no LURIA aparecem aqui.</p>
+      <p class="sr-hall-help">Somente amigos já adicionados no TRAUBE aparecem aqui.</p>
       <div class="sr-friends" id="sr-friends-list"></div>
       <p class="sr-hall-help" id="sr-friends-empty" hidden>Você ainda não tem amigos disponíveis. <a href="/amigos/">Abra Amigos</a> para adicionar alguém.</p>
     </section>
@@ -60,7 +60,7 @@
   }
   function onlineReady() {
     if (sb && userId) return true;
-    status('Entre na sua conta LURIA para jogar com outras pessoas. A demonstração continua disponível.', true);
+    status('Entre na sua conta TRAUBE para jogar com outras pessoas. A demonstração continua disponível.', true);
     return false;
   }
   async function rpc(name, args = {}) {
@@ -186,7 +186,7 @@
         const button = document.createElement('button');
         button.type = 'button'; button.className = 'sr-friend-choice';
         const label = document.createElement('span');
-        const name = document.createElement('strong'); name.textContent = friend.display_name || 'Amigo LURIA';
+        const name = document.createElement('strong'); name.textContent = friend.display_name || 'Amigo TRAUBE';
         const id = document.createElement('small'); id.textContent = friend.luria_id ? `ID ${friend.luria_id}` : 'Convidar para jogar';
         label.append(name, id); button.append(label);
         button.addEventListener('click', () => startOnline('friends', friend.user_id));

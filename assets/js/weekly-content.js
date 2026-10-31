@@ -91,7 +91,7 @@
         || registration?.installing;
 
       worker?.postMessage({
-        type: "LURIA_PREFETCH_WEEKLY_CONTENT",
+        type: "TRAUBE_PREFETCH_WEEKLY_CONTENT",
         urls,
         week: manifest.week || null
       });
@@ -122,7 +122,7 @@
     return { manifest, group, groupIndex };
   }
 
-  window.LuriaWeeklyContent = {
+  window.TraubeWeeklyContent = {
     loadManifest,
     prefetchForUser,
     getAssignedPackages,

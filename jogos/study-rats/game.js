@@ -108,7 +108,7 @@ function drawLandmarks(){
  const target=srShadow.getElementById('landmarks');
  const houses=[
   {x:249,y:206,title:'CLÍNICA',sign:'CLÍNICA',symbol:'✚',light:'#73c0ed',dark:'#2d76b9'},
-  {x:561,y:204,title:'LURIA',sign:'LURIA',symbol:'',light:'#498deb',dark:'#164c9c',luria:true},
+  {x:561,y:204,title:'TRAUBE',sign:'TRAUBE',symbol:'',light:'#498deb',dark:'#164c9c',luria:true},
   {x:866,y:206,title:'CIRURGIA',sign:'CIRURGIA',symbol:'✚',light:'#58c9d6',dark:'#2389a1'},
   {x:241,y:386,title:'PEDIATRIA',sign:'PEDIATRIA',symbol:'♥',light:'#f6b380',dark:'#c76f56'},
   {x:558,y:388,title:'BIBLIOTECA',sign:'BIBLIOTECA',symbol:'✦',light:'#b2a0e7',dark:'#7063b7'},
@@ -123,7 +123,7 @@ function drawLandmarks(){
    el.className='landmark'+(h.luria?' is-luria':'');
    el.style.setProperty('--roof-light',h.light);
    el.style.setProperty('--roof-dark',h.dark);
-   const mark=h.luria?'LURIA':h.symbol;
+   const mark=h.luria?'TRAUBE':h.symbol;
    el.innerHTML=`<div class="landmark-shadow"></div><div class="landmark-plinth"></div><div class="landmark-house"><div class="landmark-wall"></div><div class="landmark-roof"></div><div class="landmark-crest">${mark}</div><div class="landmark-windows"><i></i><i></i></div><div class="landmark-entry"></div><div class="landmark-sign">${h.sign||h.title}</div></div>`;
    foreign.appendChild(el);
  });
@@ -294,7 +294,7 @@ if(onlineSession){
   $('.board-hud .eyebrow').textContent='Partida online · 2 jogadores';
   $('.info-panel .section-head span:last-child').textContent='Modo online';
   $('.rules').textContent='Acerte a carta para lançar o dado e avançar. Casas verdes fazem avançar; casas vermelhas fazem voltar. Cada jogador responde no próprio dispositivo.';
-  $('.game-foot span:first-child').textContent='Partida online do Study Rats · LURIA Jogos';
+  $('.game-foot span:first-child').textContent='Partida online do Study Rats · TRAUBE Jogos';
   $('#showMove').hidden=true;
   $('#resetBtn').hidden=true;
   $('#inviteBtn').hidden=true;

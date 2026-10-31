@@ -1,4 +1,4 @@
-# LURIA — Auditoria clínica de escores, lote 4/6 (escores 20–49)
+# TRAUBE — Auditoria clínica de escores, lote 4/6 (escores 20–49)
 
 **Data:** 24/10/2026  
 **Repositório:** `arantes225/luria` — branch `main`  

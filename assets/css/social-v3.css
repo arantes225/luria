@@ -1,4 +1,4 @@
-/* Scoped social presentation. Shared shell, tokens and sprite geometry remain owned by LURIA. */
+/* Scoped social presentation. Shared shell, tokens and sprite geometry remain owned by TRAUBE. */
 @layer luria-ui-education {
  body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3 {
   .social-heading,.social-card-head,.social-room-header {display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;}

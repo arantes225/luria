@@ -68,7 +68,7 @@ body[data-page="aprender"] .alex-open-tutoring:hover { filter: none !important; 
 body[data-page="professor_alex"] .alex-send-button,
 body[data-page="professor_alex"] .alex-send-button:hover { color: #fff !important; background: var(--accent) !important; border-color: var(--accent) !important; }
 
-/* LuriaZap: the phone remains contained by the viewport and conversation rows
+/* TraubeZap: the phone remains contained by the viewport and conversation rows
    reserve vertical space for every text line. */
 body[data-page="plantao"] .luria-page-spotlight { display: none !important; }
 body[data-page="plantao"] .plantao-phone-layout { width: min(100%, 980px) !important; margin-inline: auto !important; }
@@ -209,7 +209,7 @@ body[data-page="dashboard"] #ui-review-summary .ui-quick-metric {
   justify-content: space-between !important;
 }
 
-/* LuriaZap: every preview stays inside its callout and wraps predictably. */
+/* TraubeZap: every preview stays inside its callout and wraps predictably. */
 body[data-page="plantao"] .plantao-phone-conversation {
   min-height: 124px !important;
   align-items: flex-start !important;

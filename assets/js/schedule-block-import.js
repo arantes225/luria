@@ -1,7 +1,7 @@
 (function (root, factory) {
   const scheduler = factory();
   if (typeof module === "object" && module.exports) module.exports = scheduler;
-  if (root) root.LuriaBlockScheduler = scheduler;
+  if (root) root.TraubeBlockScheduler = scheduler;
 })(typeof window !== "undefined" ? window : globalThis, function () {
   "use strict";
 

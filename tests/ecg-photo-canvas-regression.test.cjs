@@ -37,12 +37,12 @@ function setup({rotated90 = false, skew = 3.5} = {}) {
     }
   };
   const fakeGlobal = {
-    LuriaEcgContracts: {normalizeAnomalies: a => a || []},
-    LuriaEcgSignalExtractor: {},
-    LuriaEcgCvEngine: {createEngine:() => cv}
+    TraubeEcgContracts: {normalizeAnomalies: a => a || []},
+    TraubeEcgSignalExtractor: {},
+    TraubeEcgCvEngine: {createEngine:() => cv}
   };
   vm.runInNewContext(source, {window:fakeGlobal,Date, console});
-  const controller = fakeGlobal.LuriaSmartCamera.createController();
+  const controller = fakeGlobal.TraubeSmartCamera.createController();
   const canvas = {
     width,height,
     getContext:() => ctx,

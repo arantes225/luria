@@ -41,7 +41,7 @@ Alterados:
 - Três novos testes passaram: amizade e controles da comunidade, biblioteca vazia e repintura de gráficos sem mudança de dados/novas consultas.
 - Sintaxe dos dois JavaScripts alterados e git diff --check sem erros.
 - Nenhum ID anterior removido em Amigos (44 na página canônica, 34 no espelho) ou Simulador (137).
-- Diff vazio para index.html, Mini-OSCE, LuriaZap, motor/controladores clínicos, casos e cliente Supabase. As páginas protegidas não importam os arquivos v2 modificados.
+- Diff vazio para index.html, Mini-OSCE, TraubeZap, motor/controladores clínicos, casos e cliente Supabase. As páginas protegidas não importam os arquivos v2 modificados.
 
 ## Limites e pendências
 - Integrações testadas com dados locais simulados; não houve validação de backend real ou de todos os casos clínicos em execução.

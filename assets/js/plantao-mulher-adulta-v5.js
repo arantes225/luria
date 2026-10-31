@@ -1,4 +1,4 @@
-/* LURIA · Mulher adulta V5. Mesma base para olhos abertos/fechados. */
+/* TRAUBE · Mulher adulta V5. Mesma base para olhos abertos/fechados. */
 (()=>{
   "use strict";
   const base=document.getElementById("plantao-patient-image");

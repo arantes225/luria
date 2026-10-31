@@ -881,7 +881,7 @@
       refs: ["dengueaps"],
     },
   ];
-  window.LuriaGameContent = Object.freeze({
+  window.TraubeGameContent = Object.freeze({
     version: 1,
     status: "initial",
     sources,

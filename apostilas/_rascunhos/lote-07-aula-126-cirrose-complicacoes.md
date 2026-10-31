@@ -1,4 +1,4 @@
-# LURIA — LOTE 07 | AULA 126
+# TRAUBE — LOTE 07 | AULA 126
 # Cirrose hepática: da fibrose à hipertensão portal e às complicações
 
 **Área:** Clínica Médica — Gastroenterologia/Hepatologia  
@@ -9,14 +9,14 @@
 
 ## 0. Etapa zero: inventário, benchmark e cautelas editoriais
 
-**Inventário LURIA.** Na listagem de diretórios de apostilas verificada em 14/10/2026, não havia livro independente de “cirrose”; há cobertura parcial de sepse, sangramento e outros temas. A aula 127 do lote cobre HDA com maior profundidade; não reproduzir integralmente sua terapêutica aqui. A aula 131 tratará etiologias virais com maior detalhe.
+**Inventário TRAUBE.** Na listagem de diretórios de apostilas verificada em 14/10/2026, não havia livro independente de “cirrose”; há cobertura parcial de sepse, sangramento e outros temas. A aula 127 do lote cobre HDA com maior profundidade; não reproduzir integralmente sua terapêutica aqui. A aula 131 tratará etiologias virais com maior detalhe.
 
 **Material do Drive efetivamente aberto e lido:**
 1. “04 - GASTRO - ASCITE + PBE.pdf”, aproximadamente 7,6 mil caracteres extraídos. Inclui GASA, ascite, PBE, profilaxia, ascite refratária e hidrotórax, mas oferece cobertura abreviada da fisiopatologia, da seleção de albumina e do controle de foco.
 2. “05 - GASTRO - ENCEFALOPATIA HEPATICA SINDROME HEPATORRENAL.pdf”, aproximadamente 8,2 mil caracteres extraídos. Abrange alterações neurológicas, precipitantes, lactulose/rifaximina e HRS, mas segue **algoritmo histórico de suspensão de diuréticos + 48 h de albumina como requisito diagnóstico**, que não deve ser ensinado como exigência universal após consenso ADQI–ICA de 2024.
 3. “06 - GASTRO - HDA E SINDROME HEPATOPULMONAR.pdf”, aproximadamente 6,7 mil caracteres. Aborda sangramento varicoso, profilaxia e síndrome hepatopulmonar, sem integrar avaliação prognóstica, etiologias completas ou avaliação longitudinal do paciente cirrótico.
 
-Esses textos são **benchmarks de organização**, e não fontes normativas ou autorização para copiar trechos/figuras. Os arquivos exibem identificação de circulação “Medicina livre”; **a autoria da material de referência não foi comprovada**. A análise LURIA é de ausência de título equivalente, não de ausência absoluta de qualquer informação sobre cirrose em todo o site.
+Esses textos são **benchmarks de organização**, e não fontes normativas ou autorização para copiar trechos/figuras. Os arquivos exibem identificação de circulação “Medicina livre”; **a autoria da material de referência não foi comprovada**. A análise TRAUBE é de ausência de título equivalente, não de ausência absoluta de qualquer informação sobre cirrose em todo o site.
 
 **Diferenças que este livro deve ensinar de modo mais seguro:**
 - GASA elevado identifica componente de hipertensão portal e não deve ser chamado simplesmente de “transudato” como se classificação por exsudato bastasse.
@@ -686,7 +686,7 @@ A. Dreno torácico contínuo obrigatório como primeira linha. B. Hipertensão p
 11. Imagem real/diagrama da TIPS e relação portal-cava.
 12. Quadro original compensação → descompensação → recompensação.
 
-**Regra do acervo LURIA:** essas são *especificações*; nenhuma imagem está liberada, convertida a WebP ou inserida neste rascunho. Confirmar autoria, licença para uso comercial, procedência clínica, resolução, crédito e aprovação Admin, sem copiar as imagens dos PDFs do Drive.
+**Regra do acervo TRAUBE:** essas são *especificações*; nenhuma imagem está liberada, convertida a WebP ou inserida neste rascunho. Confirmar autoria, licença para uso comercial, procedência clínica, resolução, crédito e aprovação Admin, sem copiar as imagens dos PDFs do Drive.
 
 ## 17. Referências verificadas e hierarquia
 **Brasil**
@@ -705,7 +705,7 @@ A. Dreno torácico contínuo obrigatório como primeira linha. B. Hipertensão p
 
 ## 17A. Fontes diretamente conferidas na revisão de 15/10/2026 e comparação editorial
 
-**Etapa zero:** relidos do Drive antes das mudanças: "04 - GASTRO - ASCITE + PBE.pdf" (7.629 caracteres extraídos), "05 - GASTRO - ENCEFALOPATIA HEPATICA SINDROME HEPATORRENAL.pdf" (8.159) e "06 - GASTRO - HDA E SINDROME HEPATOPULMONAR.pdf" (6.654). Confrontados com a versão prévia LURIA de 53.172 caracteres. Os três resumos trazem dicas úteis, mas **não compõem um livro-texto único autossuficiente; autoria material de referência não comprovada**. Algumas simplificações foram corrigidas: GASA não é classificação transudato/exsudato de Light; albumina por dois dias não é pré-requisito obrigatório para HRS-AKI de 2024; não há profilaxia antibiótica crônica de PBE para toda ascite com proteína baixa isoladamente; restrição proteica na encefalopatia não é tratamento de rotina. **Nada foi copiado dos PDFs comparativos, inclusive figuras.**
+**Etapa zero:** relidos do Drive antes das mudanças: "04 - GASTRO - ASCITE + PBE.pdf" (7.629 caracteres extraídos), "05 - GASTRO - ENCEFALOPATIA HEPATICA SINDROME HEPATORRENAL.pdf" (8.159) e "06 - GASTRO - HDA E SINDROME HEPATOPULMONAR.pdf" (6.654). Confrontados com a versão prévia TRAUBE de 53.172 caracteres. Os três resumos trazem dicas úteis, mas **não compõem um livro-texto único autossuficiente; autoria material de referência não comprovada**. Algumas simplificações foram corrigidas: GASA não é classificação transudato/exsudato de Light; albumina por dois dias não é pré-requisito obrigatório para HRS-AKI de 2024; não há profilaxia antibiótica crônica de PBE para toda ascite com proteína baixa isoladamente; restrição proteica na encefalopatia não é tratamento de rotina. **Nada foi copiado dos PDFs comparativos, inclusive figuras.**
 
 **Fontes clínicas primárias:**
 - de Franchis R et al. **Baveno VII — Renewing consensus in portal hypertension**. *J Hepatol*. 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/
@@ -751,7 +751,7 @@ A. Dreno torácico contínuo obrigatório como primeira linha. B. Hipertensão p
 **Estado após continuação: RASCUNHO AVANÇADO, NÃO CERTIFICADO E NÃO PUBLICADO.**
 
 ## 18. Auditoria parcial e questões abertas
-- [x] Inventário de existência na LURIA, comparativos do Drive efetivamente lidos, autoria de benchmark tratada com cautela.
+- [x] Inventário de existência na TRAUBE, comparativos do Drive efetivamente lidos, autoria de benchmark tratada com cautela.
 - [x] Fisiologia, hipertensão portal, insuficiência hepatocelular e ponte causal entre complicações.
 - [x] Avaliação inicial, etiologia, escalas, paracentese, GASA, PBE, ascite refratária, EH, HRS 2024, varizes e seguimento.
 - [x] 4 casos completos e 6 questões comentadas com todas as alternativas.
@@ -759,9 +759,9 @@ A. Dreno torácico contínuo obrigatório como primeira linha. B. Hipertensão p
 - [ ] Ampliar epidemiologia e dados de prognóstico segundo população brasileira sem inventar percentuais.
 - [ ] Aprofundar exames complementares do fígado por etiologia, e escore MELD versão aplicável no SUS.
 - [ ] Validar tratamento com doses completas, disponibilidade brasileira, contraindicações de cada medicamento e algoritmo de PBE comunitária/nosocomial.
-- [ ] Leitura médico-editorial formal, revisão do protocolo SES-DF/Ebserh e comparação com apostila LURIA equivalente quando possível.
+- [ ] Leitura médico-editorial formal, revisão do protocolo SES-DF/Ebserh e comparação com apostila TRAUBE equivalente quando possível.
 - [x] Ultrapassado **60 mil caracteres brutos** com acréscimos clínicos pertinentes; a contagem de 60 mil **úteis** e a autossuficiência ainda exigem auditoria independente.
 - [ ] Selecionar imagens clínicas com licença, converter WebP, aprovar no Admin e testar desktop/PWA.
 - [ ] Auditoria de prova: seis questões devem ser respondíveis após leitura do corpo, sem consultar gabarito.
 
-**Estado final deste arquivo:** rascunho autoral substancial, **não certificado e não publicado na LURIA**.
+**Estado final deste arquivo:** rascunho autoral substancial, **não certificado e não publicado na TRAUBE**.

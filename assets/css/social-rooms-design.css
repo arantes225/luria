@@ -363,7 +363,7 @@ body[data-page="amigos"] #social-rooms .sl-room-card [data-room-enter]:hover {
   box-shadow: 0 6px 18px rgba(24, 72, 136, 0.28) !important;
 }
 
-/* LURIA Design System spotlight & controls for Amigos Rooms Hall */
+/* TRAUBE Design System spotlight & controls for Amigos Rooms Hall */
 body[data-page="amigos"] #community-rooms > .social-card-head {
   position: relative !important;
   display: flex !important;

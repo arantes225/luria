@@ -1,4 +1,4 @@
-# LURIA — painéis internos e chat das salas
+# TRAUBE — painéis internos e chat das salas
 
 Branch: codex/social-reference-composition. Checkpoint: 012aa843.
 

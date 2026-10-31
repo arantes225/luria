@@ -216,7 +216,7 @@ export function saveBook(book, { overwrite = false } = {}) {
   // Reutilizar o leitor e os recursos que já existem no projeto.
   const template = fs.readFileSync(path.join(REPO_ROOT, 'apostilas/sindromes-coronarianas-agudas/index.html'), 'utf8');
   const esc = text => String(text).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const html = template.replace(/<title>[\s\S]*?<\/title>/, '<title>' + esc(title) + ' · LURIA</title>')
+  const html = template.replace(/<title>[\s\S]*?<\/title>/, '<title>' + esc(title) + ' · TRAUBE</title>')
     .replaceAll('/apostilas/sindromes-coronarianas-agudas/', '/apostilas/' + slug + '/')
     .replace('data-apostila-slug="sindromes-coronarianas-agudas"', 'data-apostila-slug="' + slug + '"');
   fs.mkdirSync(dir, { recursive: true });

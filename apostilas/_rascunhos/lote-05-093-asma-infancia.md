@@ -1,4 +1,4 @@
-# LURIA — Apostila 093: Asma na infância
+# TRAUBE — Apostila 093: Asma na infância
 **Estado:** produção editorial em andamento; NÃO APROVADA para publicação clínica.
 **Lote:** 5 (093–115) · **Consulta:** 14/10/2026.
 **Nota:** texto original de desenvolvimento; não confundir este arquivo com a versão completa, que exige autossuficiência e revisão de ≥60 mil caracteres úteis.
@@ -8,7 +8,7 @@ Foram abertos e lidos os PDFs privados do Drive intitulados **Asma.pdf** e **Cri
 
 **Fonte primária de confronto:** GINA 2026, *Global Strategy for Asthma Management and Prevention*, seções de diagnóstico pediátrico, tratamento de 6–11 anos e exacerbações; https://ginasthma.org/reports/ e https://ginasthma.org/2026-gina-summary-guide/. Os arquivos da GINA são protegidos por direitos autorais: nenhuma figura ou tabela é reproduzida aqui.
 
-**Modelo LURIA inspecionado:** `apostilas/amniorrexe-prematura/index.html` para orientação de identidade visual, navegação, sequência didática, recursos de raciocínio e leitura no PWA. O HTML da apostila pré-existente não foi alterado.
+**Modelo TRAUBE inspecionado:** `apostilas/amniorrexe-prematura/index.html` para orientação de identidade visual, navegação, sequência didática, recursos de raciocínio e leitura no PWA. O HTML da apostila pré-existente não foi alterado.
 
 ### Matriz inicial de cobertura e lacunas
 | Núcleo | PDFs do Drive | Este rascunho | Pendente para versão final |
@@ -426,7 +426,7 @@ E. Solicitar IgE sérica para decidir a urgência.
 
 **Fonte internacional primária:** GINA, *Strategy Report 2026* (https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf), capítulos 10–12 sobre pré-escolares; e *Summary Guide 2026* (https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf), páginas referentes a diagnóstico por variabilidade, tratamento dos 6–11 anos, exacerbação e alta. Nenhum fluxograma, tabela ou imagem da GINA foi reproduzido.
 
-**Pendências que permanecem:** revisar a seleção final de medicamentos e disponibilidade regulatória brasileira, ampliar quadro de CI por apresentação, integrar prevenção de exposições segundo evidência, criar figuras autorais e fila de imagens clínicas licenciadas, revisar doses por especialista e farmacêutico, transformar rascunho em formato de apostila LURIA, assegurar pelo menos 60 mil caracteres didáticos úteis, rodar testes de conteúdo e inspeção desktop/PWA. **Não classificar como aprovada.**
+**Pendências que permanecem:** revisar a seleção final de medicamentos e disponibilidade regulatória brasileira, ampliar quadro de CI por apresentação, integrar prevenção de exposições segundo evidência, criar figuras autorais e fila de imagens clínicas licenciadas, revisar doses por especialista e farmacêutico, transformar rascunho em formato de apostila TRAUBE, assegurar pelo menos 60 mil caracteres didáticos úteis, rodar testes de conteúdo e inspeção desktop/PWA. **Não classificar como aprovada.**
 
 
 ## 18. Vigilância longitudinal: transformar controle em decisões mensuráveis

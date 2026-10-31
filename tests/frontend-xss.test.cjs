@@ -193,7 +193,7 @@ function mockTables(w,tables){
 test('Protocol full load, source links, image dialog and clinical bridge keep their rendering contracts',async t=>{
   const {w,errors}=fixture(t,'<input id="protocol-search"><select id="protocol-category"></select><div id="protocol-list"></div><div id="protocol-detail"></div><span id="protocol-count"></span><p id="protocol-empty"></p>');
   const sent=[];
-  w.LuriaClinicalBridge={toQuickChart:value=>sent.push(value)};
+  w.TraubeClinicalBridge={toQuickChart:value=>sent.push(value)};
   w.HTMLDialogElement.prototype.showModal=function(){this.open=true;};
   w.HTMLDialogElement.prototype.close=function(){this.open=false;this.dispatchEvent(new w.Event('close'));};
   const row={id:1,title:'Título <literal>',category:'Clínica',setting:'Ambulatório',summary:'Texto & çã',status:'verified',source_refs:[{url:'javascript:window.auditExecuted=1',label:'Hostil'},{url:'https://example.org/reference?a=1&b=2',label:'Fonte'}],image_assets:[{src:'/assets/img/demo.webp',caption:'Imagem & explicação',alt:'" onerror="window.auditExecuted=1'}]};
@@ -300,7 +300,7 @@ test('Recipe full mocked load preserves list selection and rejects executable so
   const ids=['recipe-list','recipe-detail','recipe-empty','recipe-count-all','recipe-count-verified','recipe-count-review','recipe-count-protocol'];
   const {w,errors}=fixture(t,'<input id="recipe-search"><select id="recipe-status-filter"></select><select id="recipe-category-filter"></select>'+ids.map(id=>'<div id="'+id+'"></div>').join(''));
   const sent=[],row={id:1,slug:'synthetic',title:'Receita <literal>',category:'Clínica',status:'verified',data:{copy_ready:true,references:[{url:'javascript:window.auditExecuted=1',label:'Hostil'},{url:'https://example.org/reference',label:'Fonte'}]}};
-  w.LuriaClinicalBridge={toQuickChart:value=>sent.push(value)};mockTables(w,{recipe_bank:[row]});
+  w.TraubeClinicalBridge={toQuickChart:value=>sent.push(value)};mockTables(w,{recipe_bank:[row]});
   w.eval(read('assets/js/trabalho-receitas.js'));await tick();
   w.document.querySelector('#recipe-list [data-recipe-id]').click();const detail=w.document.getElementById('recipe-detail');
   assertSafe(detail);assert.equal(detail.querySelector('a').getAttribute('href'),'#');assert.equal(detail.querySelectorAll('a')[1].href,row.data.references[1].url);

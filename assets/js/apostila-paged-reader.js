@@ -1,17 +1,17 @@
-/* LURIA: leitura por páginas sem duplicar nem alterar o conteúdo das apostilas. */
+/* TRAUBE: leitura por páginas sem duplicar nem alterar o conteúdo das apostilas. */
 (() => {
   "use strict";
-  if (window.LuriaPagedReader) return;
+  if (window.TraubePagedReader) return;
   const main = document.querySelector(".book-page .book-main");
   const bookPage = main?.closest(".book-page");
   if (!main || !bookPage || !document.querySelector(".book-hero, .book-section")) return;
-  window.LuriaPagedReader = true;
+  window.TraubePagedReader = true;
 
   const stylesheet = document.createElement("link");
   stylesheet.rel = "stylesheet";
   stylesheet.href = "/assets/css/apostila-paged-reader.css?v=20261028-reader1";
   stylesheet.addEventListener("load", init, {once:true});
-  stylesheet.addEventListener("error", () => { window.LuriaPagedReader = false; }, {once:true});
+  stylesheet.addEventListener("error", () => { window.TraubePagedReader = false; }, {once:true});
   document.head.appendChild(stylesheet);
 
   function init() {

@@ -34,7 +34,7 @@ async function captureOne(browser, scene, formatName, opts) {
     serviceWorkers: 'block', locale: 'pt-BR', timezoneId: 'America/Sao_Paulo', colorScheme: 'light', reducedMotion: 'no-preference'
   });
   await context.addInitScript(({ scenario, pointer }) => {
-    window.__LURIA_MARKETING_SCENARIO = scenario;
+    window.__TRAUBE_MARKETING_SCENARIO = scenario;
     window.__MK_POINTER = pointer;
     try { localStorage.setItem('luria:onboarding:done', '1'); } catch {}
   }, { scenario: scene.scenario || {}, pointer: fmt.pointer });

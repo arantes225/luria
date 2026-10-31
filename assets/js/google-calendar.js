@@ -115,7 +115,7 @@
     card.innerHTML = `
       <div class="settings-reference-head">
         <span class="settings-reference-icon" aria-hidden="true">G</span>
-        <div><h2>Google Agenda</h2><p>Sincronize compromissos externos com o Cronograma da LURIA.</p></div>
+        <div><h2>Google Agenda</h2><p>Sincronize compromissos externos com o Cronograma da TRAUBE.</p></div>
       </div>
       ${cardHtml()}
     `;
@@ -142,7 +142,7 @@
       if (!result?.url) throw new Error("Não foi possível iniciar a conexão.");
       window.location.assign(result.url);
     }catch(error){
-      window.LuriaDialog?.alert?.(error?.message || "Não foi possível conectar o Google Agenda.");
+      window.TraubeDialog?.alert?.(error?.message || "Não foi possível conectar o Google Agenda.");
     }
   }
 
@@ -153,11 +153,11 @@
       const result = await invoke("google-calendar-api",{ action:"sync" });
       if (typeof window.loadTopics === "function") await window.loadTopics();
       if (!options.silent) {
-        window.LuriaDialog?.alert?.(`Google Agenda sincronizado: ${Number(result.pushed||0)} evento(s) enviado(s) e ${Number(result.pulled||0)} recebido(s).`);
+        window.TraubeDialog?.alert?.(`Google Agenda sincronizado: ${Number(result.pushed||0)} evento(s) enviado(s) e ${Number(result.pulled||0)} recebido(s).`);
       }
       return result;
     }catch(error){
-      if (!options.silent) window.LuriaDialog?.alert?.(error?.message || "Não foi possível sincronizar o Google Agenda.");
+      if (!options.silent) window.TraubeDialog?.alert?.(error?.message || "Não foi possível sincronizar o Google Agenda.");
       throw error;
     }finally{
       state.syncing = false; render();
@@ -165,14 +165,14 @@
   }
 
   async function disconnect(){
-    const ok = await window.LuriaDialog?.confirm?.("Desconectar o Google Agenda desta conta?");
+    const ok = await window.TraubeDialog?.confirm?.("Desconectar o Google Agenda desta conta?");
     if (ok === false) return;
     try{
       await invoke("google-calendar-api",{ action:"disconnect" });
       state.connected = false;
       render();
     }catch(error){
-      window.LuriaDialog?.alert?.(error?.message || "Não foi possível desconectar o Google Agenda.");
+      window.TraubeDialog?.alert?.(error?.message || "Não foi possível desconectar o Google Agenda.");
     }
   }
 
@@ -224,7 +224,7 @@
     }
   }
 
-  window.LuriaGoogleCalendar = { state, refreshStatus, sync, pushEvent, deleteLinkedEvent };
+  window.TraubeGoogleCalendar = { state, refreshStatus, sync, pushEvent, deleteLinkedEvent };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded",init,{once:true});
   else init();
 })();

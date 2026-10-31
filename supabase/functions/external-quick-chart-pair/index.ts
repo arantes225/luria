@@ -24,7 +24,7 @@ const constantEqual=(a:string,b:string)=>{
   return sum===0;
 };
 async function pinHash(owner:string,pin:string,salt:string){
-  const pepper=Deno.env.get("LURIA_QUICK_CHART_PAIR_SECRET")||Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")||"";
+  const pepper=Deno.env.get("TRAUBE_QUICK_CHART_PAIR_SECRET")||Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")||"";
   if(pepper.length<32)throw Error("PIN secret unavailable");
   const key=await crypto.subtle.importKey("raw",enc.encode(owner+"|"+pin+"|"+pepper),"PBKDF2",false,["deriveBits"]);
   const data=await crypto.subtle.deriveBits({name:"PBKDF2",salt:unhex(salt),iterations:120000,hash:"SHA-256"},key,256);

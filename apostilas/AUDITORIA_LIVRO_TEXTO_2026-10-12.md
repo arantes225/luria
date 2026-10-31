@@ -1,4 +1,4 @@
-# Auditoria inicial — conversão integral das Apostilas LURIA para livro-texto (12/10/2026)
+# Auditoria inicial — conversão integral das Apostilas TRAUBE para livro-texto (12/10/2026)
 
 ## Escopo e situação verificada
 - Repositório canônico identificado: \`arantes225/luria\` (antigo \`arantes225/studyos\`).
@@ -97,7 +97,7 @@
 - Arquivo \`apostilas/cancer-de-mama/index.html\` atualizado na branch \`main\`, commit \`bbb1ded8899f2d99032c768b4376b720aa0590b6\`.
 - Novo módulo integrador com oito seções didáticas: unidade ductolobular e invasão, receptores hormonais/HER2, concordância tripla, diferença entre rastreamento e diagnóstico, conservação da mama e radioterapia, avaliação axilar, neoadjuvância/adjuvância e caso comparativo.
 - Atualizado e reforçado o **rastreamento bienal de 50 a 74 anos** conforme Ministério da Saúde (2025), com referência ao **PCDT de câncer de mama atualizado em maio de 2026**.
-- Mantida a formatação LURIA e acrescentado item de navegação; nenhuma imagem previamente aprovada foi removida.
+- Mantida a formatação TRAUBE e acrescentado item de navegação; nenhuma imagem previamente aprovada foi removida.
 - Estimativa de texto visível do artigo: **38.579 → 53.170 caracteres**, ainda sujeita a validação estrita, conferência científica e testes PWA. Registro inicialmente não localizado na tabela \`public.apostilas\`; atualização no GitHub não garante visibilidade no catálogo.
 
 
@@ -147,14 +147,14 @@
 
 ## Atualização do método — referência do Drive e piloto visual
 
-Em 12/10/2026, após orientação de evitar “textões”, foram inspecionados visualmente dois PDFs do Drive para identificar padrões editoriais genéricos de material de estudo: \`02 - CORRIMENTOS VAGINAIS .pdf\` (**10 páginas**) e \`02 - ASSISTENCIA AO PRE-NATAL.pdf\` (**8 páginas**). Ambos combinam duas colunas por página, grande densidade didática, figuras de exame/ilustrações, diagramas, tabelas e blocos pequenos com títulos fortes. Outros exemplos inspecionados tinham 4–10 páginas; não se deve atribuir 40 páginas a esses arquivos, embora **40–60 páginas A4 relevantes** seja um objetivo desejado para cadernos completos da LURIA, conforme complexidade.
+Em 12/10/2026, após orientação de evitar “textões”, foram inspecionados visualmente dois PDFs do Drive para identificar padrões editoriais genéricos de material de estudo: \`02 - CORRIMENTOS VAGINAIS .pdf\` (**10 páginas**) e \`02 - ASSISTENCIA AO PRE-NATAL.pdf\` (**8 páginas**). Ambos combinam duas colunas por página, grande densidade didática, figuras de exame/ilustrações, diagramas, tabelas e blocos pequenos com títulos fortes. Outros exemplos inspecionados tinham 4–10 páginas; não se deve atribuir 40 páginas a esses arquivos, embora **40–60 páginas A4 relevantes** seja um objetivo desejado para cadernos completos da TRAUBE, conforme complexidade.
 
 **Correção da abordagem:** não aumentar o tamanho por meio de muitos parágrafos consecutivos ou apêndices massivos. Preservar e aprofundar visualmente todo mapa mental, fluxo, callout, gráfico e tabela existente; acrescentar, onde houver benefício, cartões comparativos, quadros de tomada de decisão, pequenos textos de interpretação e diagramas originais. Alvo de 40.000 caracteres didáticos **distribuídos ao longo dos capítulos**, sem conversão a longos blocos de prosa. O modelo do material de estudo serve de inspiração estrutural, sem reprodução literal de textos/arte/propriedade intelectual de terceiros.
 
 ### Piloto implementado em Vulvovaginites
 - Arquivo \`apostilas/vulvovaginites/index.html\` atualizado no GitHub em \`main\`, commit \`928dd59d0ebde1ff8f72530cea596cc7e592892b\`.
 - Acrescentado quadro visual original, com **dois roteiros de quatro etapas** (raciocínio diagnóstico e fisiologia do pH), **três cards comparativos** (candidíase, vaginose, tricomoníase) e bloco interpretativo clínico.
-- CSS adicional usa as cores do próprio tema LURIA, com layout de **duas colunas em telas amplas e uma coluna no PWA**, além de regras básicas para impressão, sem substituir layout geral existente.
+- CSS adicional usa as cores do próprio tema TRAUBE, com layout de **duas colunas em telas amplas e uma coluna no PWA**, além de regras básicas para impressão, sem substituir layout geral existente.
 - Contagem de elementos visuais antes e depois: **4 figuras/imagens, 9 tabelas, 9 callouts e 1 mapa mental** preservados integralmente; nova seção e link de sumário confirmados na leitura pós-escrita.
 - O piloto **não** é a conclusão da expansão para >= 40.000 caracteres, nem uma validação final de 40–60 páginas impressas. Falta testar a renderização visual desktop/PWA e expandir o restante do tema conforme a nova orientação.
 
@@ -195,7 +195,7 @@ Após rejeição da repetição de figuras, mosaicos de quatro imagens e blocos 
 - **Commit \`ca4fcb3e9f50c0dcbd09a3f4b4febebd5e2760fe\`**: sub-blocos reorganizados por doença em conceito/epidemiologia → fisiopatologia → quadro clínico → diagnóstico → tratamento → prevenção/seguimento; removidos trechos diagnósticos transversais repetidos.
 - **Commit \`ef8df6d8a5e1bd87a8168854128f41447ab45cc4\`**: cada fotomicrografia fixa transferida para perto do bloco de diagnóstico, mantendo 4 imagens inline únicas no arquivo e 1 para cada etiologia.
 - **JS de curadoria, commits \`ca43117537f1ad8191b2a7fb52f695b3bf0937a9\` e \`318ed7cee99e08905569b0d69fe08959598fac65\`**: imagens clínicas aprovadas inseridas perto de quadro clínico; images de microscopia perto de diagnóstico; fallback de origem para assets inacessíveis. Correção extra no script global de fallback \`93c4cddbae8fc41b126efea3dac8d13d99dc1698\`.
-- **Imagens clínicas #13 (DermNet candidíase), #15 (DermNet vaginose), #17 (Scientific Archives colo em morango)**: as URLs diretas de imagem não foram acessíveis/estáveis. Os registros **continuam aprovados**, mas o JSONB \`render_mode\` passou a \`source_link\`: o usuário vê descrição didática e link explícito à fonte original, sem imagem quebrada. O #17 passou a apontar diretamente para PDF oficial CC BY na página que contém a figura. **Não declarar que as fotografias estejam hospedadas inline na LURIA**; isso requer cópia local autorizada e realmente verificada.
+- **Imagens clínicas #13 (DermNet candidíase), #15 (DermNet vaginose), #17 (Scientific Archives colo em morango)**: as URLs diretas de imagem não foram acessíveis/estáveis. Os registros **continuam aprovados**, mas o JSONB \`render_mode\` passou a \`source_link\`: o usuário vê descrição didática e link explícito à fonte original, sem imagem quebrada. O #17 passou a apontar diretamente para PDF oficial CC BY na página que contém a figura. **Não declarar que as fotografias estejam hospedadas inline na TRAUBE**; isso requer cópia local autorizada e realmente verificada.
 - QA estrutural pós-edição: 3 doenças, cada uma com exatamente seis unidades editoriais, índice sem links quebrados/IDs duplicados, 4 imagens HTML distintas, referências no final, extração de texto aproximada em 42.500 caracteres no artigo. Código JavaScript compartilhado e fallback passaram em avaliação sintática; **teste renderizado no desktop/PWA ainda não realizado**.
 
 

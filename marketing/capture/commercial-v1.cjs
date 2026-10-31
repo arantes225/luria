@@ -3,7 +3,7 @@
  * Captura para o comercial cinematográfico V1.
  *   node capture/commercial-v1.cjs
  *
- * Em vez de gravar vídeo, extrai da LURIA REAL (HTML/CSS originais, backend
+ * Em vez de gravar vídeo, extrai da TRAUBE REAL (HTML/CSS originais, backend
  * fictício, rede isolada) camadas em resolução retina (430x932 @3x) que o Three.js
  * mapeia na tela do smartphone 3D:
  *   - <pagina>-content.png : conteúdo rolável inteiro (.main) em uma imagem alta
@@ -100,7 +100,7 @@ async function newContext(browser, report, scenario) {
     serviceWorkers: 'block', locale: 'pt-BR', timezoneId: 'America/Sao_Paulo', colorScheme: 'light', reducedMotion: 'no-preference'
   });
   await context.addInitScript(({ scenario }) => {
-    window.__LURIA_MARKETING_SCENARIO = scenario;
+    window.__TRAUBE_MARKETING_SCENARIO = scenario;
     window.__MK_POINTER = 'touch';
     // PWA instalado: o app já possui o modo "standalone" (barra inferior, área segura).
     try { Object.defineProperty(navigator, 'standalone', { value: true }); } catch {}

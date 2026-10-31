@@ -26,11 +26,11 @@ function game(t, id) {
   };
   w.clearTimeout = (id) => timeouts.delete(id);
   w.docmapUser = { id: "a" };
-  w.LuriaLocalOwnerStore = {
+  w.TraubeLocalOwnerStore = {
     ownerId: "a",
-    read: (k) => storage.get(w.LuriaLocalOwnerStore.ownerId + ":" + k),
+    read: (k) => storage.get(w.TraubeLocalOwnerStore.ownerId + ":" + k),
     write: (k, v) => {
-      storage.set(w.LuriaLocalOwnerStore.ownerId + ":" + k, v);
+      storage.set(w.TraubeLocalOwnerStore.ownerId + ":" + k, v);
       return true;
     },
   };
@@ -62,7 +62,7 @@ function game(t, id) {
 test("initial content has unique IDs, referenced sources, four distinct options and valid order permutations", () => {
   const ctx = { window: {} };
   vm.runInNewContext(read("assets/js/games/content/initial.js"), ctx);
-  const c = ctx.window.LuriaGameContent;
+  const c = ctx.window.TraubeGameContent;
   const all = [...c.questions, ...c.sequences, ...c.adventure];
   assert.equal(new Set(all.map((q) => q.id)).size, all.length);
   assert.equal(c.questions.length, 30);
@@ -96,7 +96,7 @@ test("timed game locks duplicate answers and cancels stale callbacks when restar
   const g = game(t, "relampago");
   g.submit();
   const prompt = g.d.querySelector("h2.g-case").textContent;
-  const q = g.w.LuriaGameContent.questions.find((x) => x.prompt === prompt);
+  const q = g.w.TraubeGameContent.questions.find((x) => x.prompt === prompt);
   g.click(`[data-answer="${q.answer}"]`);
   const score = g.d.querySelector("#r-score").textContent;
   g.click(`[data-answer="${q.answer}"]`);
@@ -123,7 +123,7 @@ test("finite timed pool ends once and records precision and review without recyc
   g.d.querySelector('[name="specialty"]').value = "Clínica Médica";
   g.submit();
   for (let i = 0; i < 2; i++) {
-    const q = g.w.LuriaGameContent.questions.find(
+    const q = g.w.TraubeGameContent.questions.find(
       (q) => q.prompt === g.d.querySelector("h2.g-case").textContent,
     );
     g.click(`[data-answer="${i === 0 ? q.answer : (q.answer + 1) % 4}"]`);
@@ -193,7 +193,7 @@ test("adventure mixes mechanics, retries failed decisions, animates its scene pa
   assert.ok(!g.d.querySelector('[data-action="next"]'));
   assert.ok(!g.d.querySelector(".e-journey-running"));
   for (let i = 0; i < 9; i++) {
-    const s = g.w.LuriaGameContent.adventure[i];
+    const s = g.w.TraubeGameContent.adventure[i];
     if (s.type === "sort") solve(g);
     else if (s.type === "select")
       s.answers.forEach((answer) => g.click(`[data-option="${answer}"]`));
@@ -206,7 +206,7 @@ test("adventure mixes mechanics, retries failed decisions, animates its scene pa
     assert.equal(g.d.querySelector(".e-journey-from").textContent, s.room);
     assert.equal(
       g.d.querySelector(".e-journey-to").textContent,
-      g.w.LuriaGameContent.adventure[i + 1]?.room || "Fim do plantão",
+      g.w.TraubeGameContent.adventure[i + 1]?.room || "Fim do plantão",
     );
     if (i < 8)
       assert.match(g.d.querySelector(".e-journey-contact").textContent, /Paciente|Profissional/);
@@ -225,7 +225,7 @@ test("adventure mixes mechanics, retries failed decisions, animates its scene pa
 test("owner changes discard active rounds instead of assigning them to the next account", (t) => {
   const g = game(t, "relampago");
   g.submit();
-  g.w.LuriaLocalOwnerStore.ownerId = "b";
+  g.w.TraubeLocalOwnerStore.ownerId = "b";
   g.w.dispatchEvent(new g.w.CustomEvent("luria:owner-changed"));
   g.tick(100000);
   assert.ok(g.d.querySelector("form"));
@@ -233,7 +233,7 @@ test("owner changes discard active rounds instead of assigning them to the next 
 });
 test("storage failure leaves timed results playable and clearly unsaved", (t) => {
   const g = game(t, "relampago");
-  g.w.LuriaLocalOwnerStore.write = () => {
+  g.w.TraubeLocalOwnerStore.write = () => {
     throw Error("quota");
   };
   g.submit();

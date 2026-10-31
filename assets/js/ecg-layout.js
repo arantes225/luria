@@ -44,5 +44,5 @@
   }
   const api = { detect };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
-  if (typeof window !== "undefined") window.LuriaEcgLayout = api;
+  if (typeof window !== "undefined") window.TraubeEcgLayout = api;
 })();

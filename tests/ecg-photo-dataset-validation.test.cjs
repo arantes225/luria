@@ -1,6 +1,6 @@
 /**
  * tests/ecg-photo-dataset-validation.test.cjs
- * Suíte de Validação Fotográfica e Indicadores de Desempenho do ECG LURIA.
+ * Suíte de Validação Fotográfica e Indicadores de Desempenho do ECG TRAUBE.
  * 
  * ATENÇÃO METODOLÓGICA OBRIGATÓRIA:
  * Este teste utiliza simulações controladas em bancada óptica digital
@@ -68,7 +68,7 @@ function createPhotographicTestEnv() {
 
 test("Indicadores Fotográficos: Detecção de Documento e Rejeição Estrita de Objetos Externos", () => {
   const env = createPhotographicTestEnv();
-  const cvEngine = env.LuriaEcgCvEngine.createEngine();
+  const cvEngine = env.TraubeEcgCvEngine.createEngine();
 
   const metrics = {
     totalDocumentsTested: 0,
@@ -157,7 +157,7 @@ test("Indicadores Fotográficos: Detecção de Documento e Rejeição Estrita de
 
 test("Enquadramento Adaptativo: Suporte a múltiplos formatos (A4 vertical, horizontal, panorâmico/tira)", () => {
   const env = createPhotographicTestEnv();
-  const cvEngine = env.LuriaEcgCvEngine.createEngine();
+  const cvEngine = env.TraubeEcgCvEngine.createEngine();
 
   // Testar 3 formatos reais:
   // 1. A4 Vertical (proporção ~1:1.41)
@@ -192,7 +192,7 @@ test("Enquadramento Adaptativo: Suporte a múltiplos formatos (A4 vertical, hori
 
 test("Latência e Desempenho em Celulares Intermediários", () => {
   const env = createPhotographicTestEnv();
-  const cvEngine = env.LuriaEcgCvEngine.createEngine();
+  const cvEngine = env.TraubeEcgCvEngine.createEngine();
 
   const width = 640, height = 480;
   const imgData = { width, height, data: new Uint8ClampedArray(width * height * 4) };

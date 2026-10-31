@@ -35,7 +35,7 @@ function fixture(theme = 'light', saved = null, mobile = false) {
   w.matchMedia = query => ({matches:query.includes('980') ? mobile : false, addEventListener(){}});
   let owner = 'A'; const storage = new Map();
   if (saved) storage.set('luria:dashboard-ui:v2:A', JSON.stringify(saved));
-  w.LuriaLocalOwnerStore = {
+  w.TraubeLocalOwnerStore = {
     key:base => owner ? base+':'+owner : null,
     read:base => storage.get(base+':'+owner),
     write:(base,value) => {if (!owner) return false; storage.set(base+':'+owner,value);return true;}
@@ -76,7 +76,7 @@ test('four combinations preserve nodes, study handlers and legacy theme; restore
 test('corrupt or unavailable storage keeps themes usable and reports unsaved preference', async () => {
   const f=fixture('leila-mood',{appearance:'broken',identity:'pink'});await settle();
   assert.equal(f.w.document.body.dataset.uiAppearance,'light');
-  f.w.LuriaLocalOwnerStore.write=()=>{throw Error('quota');};f.click('appearance','dark');
+  f.w.TraubeLocalOwnerStore.write=()=>{throw Error('quota');};f.click('appearance','dark');
   assert.equal(f.w.document.body.dataset.uiAppearance,'dark');assert.match(f.w.document.getElementById('ui-theme-status').textContent,/Não foi possível salvar/);
   f.dom.window.close();
 });
@@ -280,7 +280,7 @@ test('all new style rules are opt-in, including media queries; protected entries
       for(let i=0;i<text.length;i++){if('(['.includes(text[i]))depth++;else if(')]'.includes(text[i]))depth--;else if(text[i]===','&&depth===0){result.push(text.slice(start,i));start=i+1;}}
       return [...result,text.slice(start)];
     };
-    const inspect=list=>{for(const rule of list){if(rule.selectorText){rules++;for(const selector of selectors(rule.selectorText))assert.ok(/\[data-ui(?:-shell|-nav|-work|-admin|-pcr)?="v2"\]/.test(selector),selector);}else if(rule.cssRules)inspect(rule.cssRules);else if(rule.style?.getPropertyValue('font-family'))assert.equal(rule.style.getPropertyValue('font-family'),'"Luria Inter"');}};
+    const inspect=list=>{for(const rule of list){if(rule.selectorText){rules++;for(const selector of selectors(rule.selectorText))assert.ok(/\[data-ui(?:-shell|-nav|-work|-admin|-pcr)?="v2"\]/.test(selector),selector);}else if(rule.cssRules)inspect(rule.cssRules);else if(rule.style?.getPropertyValue('font-family'))assert.equal(rule.style.getPropertyValue('font-family'),'"Traube Inter"');}};
     inspect(style.sheet.cssRules);assert.ok(rules>0);
   }
   for(const file of ['index.html','login/index.html','trabalho/prontuario/index.html']) {

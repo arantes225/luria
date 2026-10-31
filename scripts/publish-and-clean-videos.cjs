@@ -1,5 +1,5 @@
 /**
- * LURIA Automated Daily Video Publisher & Storage Auto-Cleaner
+ * TRAUBE Automated Daily Video Publisher & Storage Auto-Cleaner
  * ------------------------------------------------------------
  * 1. Verifica na tabela `marketing_post_assets` quais posts estão com status `pronto_para_postar`
  *    cuja data programada (`scheduled_date`) corresponde ao dia atual (ou foi solicitada via dispatch).
@@ -16,7 +16,7 @@ const META_IG_USER_ID = process.env.META_IG_USER_ID || '';
 const TARGET_POST_ID = process.env.TARGET_POST_ID || '';
 
 async function main() {
-  console.log('🚀 [LURIA Auto-Publisher & Cleaner] Iniciando verificação diária...');
+  console.log('🚀 [TRAUBE Auto-Publisher & Cleaner] Iniciando verificação diária...');
 
   if (!SUPABASE_KEY) {
     console.log('ℹ️ SUPABASE_SERVICE_ROLE_KEY não definida no ambiente; rotina pronta para execução autenticada.');

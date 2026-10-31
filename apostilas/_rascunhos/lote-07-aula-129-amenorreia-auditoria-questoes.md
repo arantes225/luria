@@ -1,4 +1,4 @@
-# LURIA — LOTE 07 | AULA 129
+# TRAUBE — LOTE 07 | AULA 129
 # Amenorreia — auditoria de cobertura e complemento de questões
 
 **Situação:** COMPLEMENTO EM RASCUNHO, NÃO INCORPORADO AO HTML PUBLICADO.  
@@ -17,7 +17,7 @@ Cobertura detectada: fisiologia do eixo hipotálamo-hipófise-ovários; amenorre
 - “02 - HIPERPROLACTINEMIA.pdf” (~9,2 mil caracteres) lido no Drive: secreção e controle dopaminérgico, causas fisiológicas/medicamentosas/neoplásicas e exames.
 - “01 - RESUMO - SINDROME DOS OVARIOS POLICISTICOS.pdf” (~10,5 mil caracteres) lido no Drive: anovulação, hiperandrogenismo, exclusões etiológicas, proteção endometrial e tratamento de infertilidade.
 
-Ambos são documentos **de subtema**, não equivalentes à amenorreia integral. Nenhum teve autoria da material de referência comprovada. **Não copiar figuras, frases ou tabelas do Drive.** A comparação específica permanece parcial. O conteúdo LURIA já excede em escopo ambos os resumos em grande parte dos temas, mas não se certifica qualidade só pelo volume.
+Ambos são documentos **de subtema**, não equivalentes à amenorreia integral. Nenhum teve autoria da material de referência comprovada. **Não copiar figuras, frases ou tabelas do Drive.** A comparação específica permanece parcial. O conteúdo TRAUBE já excede em escopo ambos os resumos em grande parte dos temas, mas não se certifica qualidade só pelo volume.
 
 ## 3. Ajustes clínicos prioritários à luz da ASRM 2024
 
@@ -109,7 +109,7 @@ D. Hirsutismo exclui hiperprolactinemia e tireoidopatia.
 1. **Não substituir \`index.html\` sem revisão e teste.** Preservar índice, capítulos, figuras já validadas e os casos.
 2. Inserir questões comentadas em seção após os casos ou antes da Fixação, com âncoras acessíveis e alinhamento visual ao padrão do site.
 3. Conferir se cada gabarito pode ser deduzido do corpo do texto; enriquecer capítulo onde faltarem detalhes.
-4. Confirmar alteração de termos “SOP/SOMP/PMOS” conforme decisão editorial LURIA sem mudar automaticamente siglas nas citações das fontes.
+4. Confirmar alteração de termos “SOP/SOMP/PMOS” conforme decisão editorial TRAUBE sem mudar automaticamente siglas nas citações das fontes.
 5. Revisar imagens de hímen imperfurado e outras figuras: procedência, consentimento/licença comercial, legibilidade, tamanho WebP e aprovação Admin.
 6. Auditar redundâncias/contagem de texto útil, testes de sintaxe e visual desktop/PWA.
 
@@ -117,7 +117,7 @@ D. Hirsutismo exclui hiperprolactinemia e tireoidopatia.
 - ASRM. *Current evaluation of amenorrhea: a committee opinion*. Fertil Steril. 2024;122:52–61. https://www.asrm.org/practice-guidance/practice-committee-documents/current-evaluation-of-amenorrhea/
 - ASRM/ESHRE/IMS. *Evidence-based guideline: Premature Ovarian Insufficiency*. 2024/2025. Verificar edição específica antes de inserir ponto de corte.
 - Endocrine Society. *Functional Hypothalamic Amenorrhea: An Endocrine Society Clinical Practice Guideline*. 2017, referência fisiopatológica; verificar atualizações.
-- Apostila LURIA \`apostilas/amenorreia/index.html\` (fonte interna auditada).
+- Apostila TRAUBE \`apostilas/amenorreia/index.html\` (fonte interna auditada).
 - Comparativos Drive: “02 - HIPERPROLACTINEMIA.pdf” e “01 - RESUMO - SINDROME DOS OVARIOS POLICISTICOS.pdf”; **somente benchmark, sem autoria material de referência verificada**.
 
 **Status final:** complemento com 8 questões para revisão editorial, sem modificação da apostila publicada e sem certificação final.

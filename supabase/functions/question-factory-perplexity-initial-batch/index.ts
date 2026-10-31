@@ -463,7 +463,7 @@ function auditPrompt(q: any, blind: any, profile: any) {
     scientific_source_strategy: profile?.scientific_source_strategy || "",
   };
   return [
-    "CONTRATO LURIA 3.4 — AUDITORIA CIENTÍFICA/EDITORIAL INDEPENDENTE.",
+    "CONTRATO TRAUBE 3.4 — AUDITORIA CIENTÍFICA/EDITORIAL INDEPENDENTE.",
     "A resposta cega abaixo é IMUTÁVEL. Não a altere para coincidir com o gabarito.",
     "Use pesquisa web e leitura/fetch das fontes. Fonte apenas citada pela questão NÃO conta como verificada.",
     "Só marque source_verification_status=VERIFIED quando localizar fonte autoritativa/primária, confirmar documento/ano/seção e verificar que a recomendação sustenta exatamente a decisão/gabarito.",
@@ -839,7 +839,7 @@ async function generateOneInitialReview(apiKey:string,item:any,styleProfile:any)
     apiKey,
     prompt: blindPrompt(item),
     instructions: "Você é um médico revisor independente. Resolva somente a questão recebida, sem gabarito, explicações ou fontes. Se houver ambiguidade real, use UNRESOLVED. Retorne exatamente o JSON do schema.",
-    schemaName: "LuriaBlindResolution",
+    schemaName: "TraubeBlindResolution",
     schema: BLIND_SCHEMA,
     useWeb: false,
   });
@@ -868,7 +868,7 @@ async function generateOneInitialReview(apiKey:string,item:any,styleProfile:any)
       + "\n\nREVISÃO CHATGPT INITIAL DA MESMA VERSÃO (CONTEXTO, NÃO GABARITO):\n"
       + JSON.stringify(priorReview),
     instructions: "Você é um auditor médico adversarial e editorial. Audite independentemente a questão atual. Use pesquisa web e fetch de fontes autoritativas. A revisão ChatGPT anterior é apenas contexto de risco e não substitui sua avaliação. Produza exatamente um parecer completo no schema.",
-    schemaName:"LuriaPerplexityInitialAudit",
+    schemaName:"TraubePerplexityInitialAudit",
     schema:AUDIT_SCHEMA,
     useWeb:true,
   });

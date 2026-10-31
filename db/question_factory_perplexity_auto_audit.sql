@@ -1,4 +1,4 @@
--- Question Factory: automatic Perplexity audit pipeline (LURIA 3.4)
+-- Question Factory: automatic Perplexity audit pipeline (TRAUBE 3.4)
 -- Mirrors the live Studyos Supabase deployment as of 2026-09-24.
 -- Reviews are persisted only through controlled SECURITY DEFINER importers.
 

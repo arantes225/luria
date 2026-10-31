@@ -13,7 +13,7 @@
   const retake = el("ecg-camera-map-retake");
   const leadField = el("ecg-camera-lead-field"), lead = el("ecg-camera-lead");
   const captures = el("ecg-camera-captures");
-  if (!video || !sample || !cameraPage || !window.LuriaEcgLayout || !window.LuriaEcgFrameGuide) return;
+  if (!video || !sample || !cameraPage || !window.TraubeEcgLayout || !window.TraubeEcgFrameGuide) return;
   document.body.appendChild(cameraPage);
   const ctx = sample.getContext("2d", { willReadFrequently: true });
   let stream, track, timer, mapUrl, previous, phase = "map";
@@ -70,7 +70,7 @@
     quality.className = `ecg-status${resolutionOk ? "" : " error"}`;
     let direction;
     if (phase !== "review" && !portrait() && resolutionOk && brightness > 40 && !glare && texture > 3)
-      direction = window.LuriaEcgFrameGuide.locate(frameImage, phase);
+      direction = window.TraubeEcgFrameGuide.locate(frameImage, phase);
     if (portrait()) tell("Gire o celular para a horizontal.");
     else if (!resolutionOk) tell("Resolução insuficiente. Tente a câmera principal ou uma foto de alta qualidade.");
     else if (brightness <= 40) tell("Aumente a iluminação.");
@@ -157,7 +157,7 @@
       phase = "review";
       if (mapUrl) URL.revokeObjectURL(mapUrl);
       mapUrl = URL.createObjectURL(blob); preview.src = mapUrl;
-      const estimate = window.LuriaEcgLayout.detect(ctx.getImageData(0, 0, sample.width, sample.height));
+      const estimate = window.TraubeEcgLayout.detect(ctx.getImageData(0, 0, sample.width, sample.height));
       layoutSelect.value = estimate.kind;
       layoutResult.textContent = estimate.kind === "stacked"
         ? `Possível formato: derivações longas empilhadas (${estimate.rows} faixas). Confirme abaixo.`

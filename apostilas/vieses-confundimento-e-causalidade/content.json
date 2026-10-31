@@ -7,7 +7,7 @@
   "a": "Medicina Preventiva",
   "m": "Epidemiologia Geral e Inferência Causal Avançada",
   "h": [
-    "Apostila LURIA",
+    "Apostila TRAUBE",
     "Vieses, Confundimento e Causalidade",
     "Tratado completo de Vieses, Confundimento e Causalidade em Epidemiologia para residência médica e ENAMED: taxonomia dos erros aleatórios e sistemáticos; o espectro completo dos vieses de seleção (viés de admissão hospitalar de Berkson, viés do trabalhador sadio, viés de autoseleção do voluntário, perdas de seguimento/atrição e viés de detecção); vieses de aferição e informação (viés de memória/recordatório, viés do observador/entrevistador, o Efeito Hawthorne e erros de classificação diferencial versus não diferencial); Fator de Confundimento: critérios diagnósticos epidemiológicos clássicos de Rothman, métodos de controle no desenho (randomização, restrição, pareamento/matching) e na análise (estratificação de Mantel-Haenszel e modelagem multivariada); Modificação de Efeito (interação biológica) versus confundimento e o algoritmo diagnóstico da estratificação passo a passo; os nove critérios de causalidade de Sir Austin Bradford Hill detalhados um a um, com destaque para a soberania e primazia inegociável da temporalidade; inferência causal contemporânea: Gráficos Acíclicos Direcionados (DAGs de Judea Pearl), cadeias causais e mediadores, causas comuns (backdoor paths), efeito comum e o perigo do viés de colisor (collider stratification bias); o Paradoxo de Simpson; análise de sensibilidade para confundimento residual, o E-Value de VanderWeele e a triangulação metodológica em epidemiologia etiológica; guia prático de identificação de vieses em provas e o modelo contrafatual de Rubin com variáveis instrumentais (two-stage least squares); vieses cognitivos na decisão médica (teoria dual de Kahneman: disponibilidade, ancoragem, confirmação e encerramento prematuro) e vieses algorítmicos em inteligência artificial na saúde; crônicas metodológicas: falhas epidemiológicas históricas (o desastre da TRH desmascarado pelo ensaio WHI e o paradoxo dos betacarotenos no CARET); casos clínicos estruturados e bateria de questões comentadas com análise minuciosa de distratores.",
     [
@@ -644,7 +644,7 @@
         ],
         [
           "p",
-          "<em>Justificativa:</em> Observe os três passos do algoritmo LURIA: (1) As medidas específicas por estrato são praticamente idênticas entre si ($3,6 \\approx 3,4$), logo <em>não há modificação de efeito</em>; (2) A medida ajustada de Mantel-Haenszel ($3,5$) é absolutamente idêntica à medida bruta original ($3,5$), logo <em>não há confundimento</em>! A presença de <em>H. pylori</em> é independente do uso de AINEs nessa população e não distorceu a associação. A resposta é a Letra C."
+          "<em>Justificativa:</em> Observe os três passos do algoritmo TRAUBE: (1) As medidas específicas por estrato são praticamente idênticas entre si ($3,6 \\approx 3,4$), logo <em>não há modificação de efeito</em>; (2) A medida ajustada de Mantel-Haenszel ($3,5$) é absolutamente idêntica à medida bruta original ($3,5$), logo <em>não há confundimento</em>! A presença de <em>H. pylori</em> é independente do uso de AINEs nessa população e não distorceu a associação. A resposta é a Letra C."
         ],
         [
           "4",
@@ -871,7 +871,7 @@
         ],
         [
           "p",
-          "As questões de Medicina Preventiva sobre vieses e causalidade costumam ser as mais temidas pelos candidatos devido à aparente subjetividade dos cenários apresentados. Contudo, cada viés epidemiológico possui <strong>\"palavras-chave patognomônicas\" e gatilhos de enunciado</strong> que revelam imediatamente o erro metodológico embutido. Observe a matriz diagnóstica LURIA:"
+          "As questões de Medicina Preventiva sobre vieses e causalidade costumam ser as mais temidas pelos candidatos devido à aparente subjetividade dos cenários apresentados. Contudo, cada viés epidemiológico possui <strong>\"palavras-chave patognomônicas\" e gatilhos de enunciado</strong> que revelam imediatamente o erro metodológico embutido. Observe a matriz diagnóstica TRAUBE:"
         ],
         [
           "t",
@@ -931,7 +931,7 @@
         ],
         [
           "3",
-          "A Árvore de Decisão LURIA para Confundimento versus Modificação de Efeito"
+          "A Árvore de Decisão TRAUBE para Confundimento versus Modificação de Efeito"
         ],
         [
           "p",

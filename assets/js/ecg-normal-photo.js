@@ -1,4 +1,4 @@
-/* LURIA ECG — original photo + user-controlled paper boundaries.
+/* TRAUBE ECG — original photo + user-controlled paper boundaries.
    Keeps original file unchanged and passes optional four corners to shared
    extraction. No upload, no automatic image filters. */
 (function (global) {
@@ -24,7 +24,7 @@
   const rotateRight = byId("ecg-normal-photo-rotate-right");
   const cornersButtons = Array.from(doc.querySelectorAll("[data-ecg-corner]"));
   const selectionRadios = Array.from(doc.querySelectorAll('input[name="ecg-photo-selection"]'));
-  const perspective = global.LuriaEcgPhotoPerspective;
+  const perspective = global.TraubeEcgPhotoPerspective;
   if (![openButton, input, page, preview, details, error, btnClose, btnRetake, btnProcess, frame,
          outline, dim, help, resetButton, rotateLeft, rotateRight, perspective].every(Boolean) ||
       cornersButtons.length !== 4 || selectionRadios.length !== 2) return;
@@ -53,7 +53,7 @@
     page.hidden = false;
     if (typeof page.showModal === "function" && !page.open) {
       try { page.showModal(); }
-      catch (exception) { console.warn("[LURIA ECG] Modal nativo indisponível, usando fallback.", exception); }
+      catch (exception) { console.warn("[TRAUBE ECG] Modal nativo indisponível, usando fallback.", exception); }
     }
   }
   function deactivatePhotoSurface() {
@@ -217,7 +217,7 @@
   }
   function choosePhoto() {
     if (working) return;
-    global.LuriaEcgStopScanner?.();
+    global.TraubeEcgStopScanner?.();
     input.value = "";
     // The iOS/Android camera app handles focus, exposure and full-resolution
     // capture. Desktop/browser fallback opens the standard image picker.
@@ -298,7 +298,7 @@
 
   btnProcess.addEventListener("click", async () => {
     if (!sourceFile || working) return;
-    if (typeof global.LuriaEcgProcessPhoto !== "function") {
+    if (typeof global.TraubeEcgProcessPhoto !== "function") {
       showError("O processamento está indisponível. Recarregue a página e tente novamente.");
       return;
     }
@@ -316,7 +316,7 @@
         ? { corners: perspective.cloneCorners(corners), paperSelection: "manual_four_corners", rotationDeg: rotationQuarterTurns * 90 }
         : { corners: null, paperSelection: "full_photo", rotationDeg: rotationQuarterTurns * 90 };
       selectionOptions.layoutHint = byId("ecg-photo-layout")?.value || "auto";
-      const result = await global.LuriaEcgProcessPhoto(sourceFile, "normal_photo", selectionOptions);
+      const result = await global.TraubeEcgProcessPhoto(sourceFile, "normal_photo", selectionOptions);
       if (!result?.ok) {
         showError(result?.reason || "Não foi possível extrair o ECG. Confira a folha e tente novamente.");
         details.textContent = "Foto preservada nesta tela. Você pode tentar novamente ou tirar outra.";
@@ -330,7 +330,7 @@
     } catch (exception) {
       showError("Falha ao processar a foto. Experimente outra captura.");
       details.textContent = "A foto original não foi alterada.";
-      console.warn("[LURIA ECG] Foto normal: falha local", exception);
+      console.warn("[TRAUBE ECG] Foto normal: falha local", exception);
     } finally {
       working = false;
       btnProcess.disabled = !sourceFile;

@@ -2,14 +2,14 @@
   "v": 2,
   "s": "doencas-exantematicas",
   "t": "Doenças Exantemáticas na Infância",
-  "p": "Tratado Completo de Infectologia e Dermatologia Pediátrica: Diagnóstico Diferencial Semiológico, Sarampo (Koplik e Vitamina A), Rubéola (Linfonodos e SRC), Eritema Infeccioso (Parvovírus B19 e Crise Aplásica), Exantema Súbito (HHV-6), Escarlatina (Filatov, Pastia e Penicilina), Varicela (Polimorfismo e Bloqueio Pós-Exposição), Mão-Pé-Boca, Doença de Kawasaki, Mononucleose por EBV, Farmacodermias Graves (SSJ, NET, DRESS), Tabela Mestre LURIA e Calendário Vacinal do PNI Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
-  "d": "Tratado Completo de Infectologia e Dermatologia Pediátrica: Diagnóstico Diferencial Semiológico, Sarampo (Koplik e Vitamina A), Rubéola (Linfonodos e SRC), Eritema Infeccioso (Parvovírus B19 e Crise Aplásica), Exantema Súbito (HHV-6), Escarlatina (Filatov, Pastia e Penicilina), Varicela (Polimorfismo e Bloqueio Pós-Exposição), Mão-Pé-Boca, Doença de Kawasaki, Mononucleose por EBV, Farmacodermias Graves (SSJ, NET, DRESS), Tabela Mestre LURIA e Calendário Vacinal do PNI Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "p": "Tratado Completo de Infectologia e Dermatologia Pediátrica: Diagnóstico Diferencial Semiológico, Sarampo (Koplik e Vitamina A), Rubéola (Linfonodos e SRC), Eritema Infeccioso (Parvovírus B19 e Crise Aplásica), Exantema Súbito (HHV-6), Escarlatina (Filatov, Pastia e Penicilina), Varicela (Polimorfismo e Bloqueio Pós-Exposição), Mão-Pé-Boca, Doença de Kawasaki, Mononucleose por EBV, Farmacodermias Graves (SSJ, NET, DRESS), Tabela Mestre TRAUBE e Calendário Vacinal do PNI Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
+  "d": "Tratado Completo de Infectologia e Dermatologia Pediátrica: Diagnóstico Diferencial Semiológico, Sarampo (Koplik e Vitamina A), Rubéola (Linfonodos e SRC), Eritema Infeccioso (Parvovírus B19 e Crise Aplásica), Exantema Súbito (HHV-6), Escarlatina (Filatov, Pastia e Penicilina), Varicela (Polimorfismo e Bloqueio Pós-Exposição), Mão-Pé-Boca, Doença de Kawasaki, Mononucleose por EBV, Farmacodermias Graves (SSJ, NET, DRESS), Tabela Mestre TRAUBE e Calendário Vacinal do PNI Estruturado sob o Padrão de Clareza Aeroespacial (ASD-STE100 adaptado à Medicina).",
   "a": "Pediatria",
   "m": "Pediatria",
   "h": [
-    "Apostila LURIA",
+    "Apostila TRAUBE",
     "Doenças Exantemáticas na Infância",
-    "Tratado Completo de Infectologia e Dermatologia Pediátrica: Diagnóstico Diferencial Semiológico, Sarampo (Koplik e Vitamina A), Rubéola (Linfonodos e SRC), Eritema Infeccioso (Parvovírus B19 e Crise Aplásica), Exantema Súbito (HHV-6), Escarlatina (Filatov, Pastia e Penicilina), Varicela (Polimorfismo e Bloqueio Pós-Exposição), Mão-Pé-Boca, Doença de Kawasaki, Mononucleose por EBV, Farmacodermias Graves (SSJ, NET, DRESS), Tabela Mestre LURIA e Calendário Vacinal do PNI",
+    "Tratado Completo de Infectologia e Dermatologia Pediátrica: Diagnóstico Diferencial Semiológico, Sarampo (Koplik e Vitamina A), Rubéola (Linfonodos e SRC), Eritema Infeccioso (Parvovírus B19 e Crise Aplásica), Exantema Súbito (HHV-6), Escarlatina (Filatov, Pastia e Penicilina), Varicela (Polimorfismo e Bloqueio Pós-Exposição), Mão-Pé-Boca, Doença de Kawasaki, Mononucleose por EBV, Farmacodermias Graves (SSJ, NET, DRESS), Tabela Mestre TRAUBE e Calendário Vacinal do PNI",
     [
       "Área: Pediatria",
       "Matéria: Pediatria",
@@ -732,7 +732,7 @@
         ],
         [
           "p",
-          "Para consolidar definitivamente o domínio sobre todas as doenças exantemáticas pediátricas e garantir o acerto imediato de qualquer questão de prova de Residência Médica ou Revalida, apresentamos a <strong>Tabela Sinóptica Mestre LURIA</strong> confrontando todas as variáveis essenciais lado a lado:"
+          "Para consolidar definitivamente o domínio sobre todas as doenças exantemáticas pediátricas e garantir o acerto imediato de qualquer questão de prova de Residência Médica ou Revalida, apresentamos a <strong>Tabela Sinóptica Mestre TRAUBE</strong> confrontando todas as variáveis essenciais lado a lado:"
         ],
         [
           "t",
@@ -823,7 +823,7 @@
         ],
         [
           "4",
-          "Checklist Mnemônico LURIA: Os Sinais Patognomônicos em uma Linha"
+          "Checklist Mnemônico TRAUBE: Os Sinais Patognomônicos em uma Linha"
         ],
         [
           "u",

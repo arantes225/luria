@@ -1,12 +1,12 @@
-# LURIA — Lote 7 · Aula 140
+# TRAUBE — Lote 7 · Aula 140
 # Saúde da criança na Atenção Primária: puericultura, desenvolvimento e cuidado integral
 
 **Área:** Medicina Preventiva / Pediatria / Estratégia Saúde da Família. **Estado:** rascunho original em revisão, **NÃO PUBLICADO**. **Data:** 14/10/2026.  
 **Norma brasileira:** Ministério da Saúde, Política Nacional de Atenção Integral à Saúde da Criança (PNAISC); *Caderneta da Criança* (física e digital); Linha de Cuidado de Puericultura; Calendário Nacional de Vacinação 2026. O presente capítulo integra cuidado longitudinal e evita duplicar a aula 135 (imunizações), a aula 123 (febre sem sinais localizatórios) e a disciplina pediátrica de emergências.
 
-## 0. Etapa zero — acervo LURIA e comparativos do Drive
+## 0. Etapa zero — acervo TRAUBE e comparativos do Drive
 
-**Inventário LURIA:** não foi identificado diretório de “saúde-da-crianca-aps” no índice principal. A LURIA já possui \`violencia-maus-tratos-criancas-adolescentes\`, apostilas de infecções na gestação e a aula 135 de imunização, que devem ser preservadas e articuladas. A nova apostila aborda **consulta de puericultura**, crescimento, desenvolvimento, família, aleitamento, alimentação complementar, saúde mental, prevenção de acidentes, sinais de alarme e rede.
+**Inventário TRAUBE:** não foi identificado diretório de “saúde-da-crianca-aps” no índice principal. A TRAUBE já possui \`violencia-maus-tratos-criancas-adolescentes\`, apostilas de infecções na gestação e a aula 135 de imunização, que devem ser preservadas e articuladas. A nova apostila aborda **consulta de puericultura**, crescimento, desenvolvimento, família, aleitamento, alimentação complementar, saúde mental, prevenção de acidentes, sinais de alarme e rede.
 
 **Drive — materiais efetivamente abertos e lidos:**
 1. “01 - PUERICULTURA - CRESCIMENTO E BAIXA ESTATURA.pdf” (~8.323 caracteres). Explica fases do crescimento, ganho ponderal, velocidade, perímetro cefálico, estatura-alvo, variantes normais e causas patológicas. Algumas frases absolutas como “a velocidade de crescimento nunca é menor que 5 cm/ano” são simplificações que **não devem ser transcritas como lei universal** — interpretar idade, estágio puberal, contexto e medida seriada.
@@ -130,7 +130,7 @@ O PNI 2026 está detalhado na aula 135. Na puericultura, cabe **checar históric
 
 **Prevenção de acidentes por idade:** quedas e sufocação nos primeiros meses, engasgos/intoxicações/queimaduras em lactentes móveis e pré-escolares, trânsito/afogamento/esporte em crianças maiores. Perguntar sobre ambiente de sono, dispositivos de retenção no carro conforme legislação, armazenamento de medicamentos/produtos tóxicos, proteção de janelas, água/piscina e exposição a armas. Não prescrever “capacete/cadeirinha” sem adaptar a idade e normas nacionais.
 
-**Violência e negligência:** lesões incompatíveis com desenvolvimento ou com relato, repetição de traumas, atraso injustificado de cuidado, sinais emocionais e privação importante demandam avaliação protegida, documentação objetiva e notificação/fluxo da rede conforme Estatuto da Criança e do Adolescente, SUS e normas locais. **Não confrontar suposto agressor de modo a aumentar risco**; manter atendimento da criança e coordenação com assistência social/Conselho Tutelar e outros órgãos quando indicado. A LURIA possui apostila específica \`violencia-maus-tratos-criancas-adolescentes\`, a ser preservada.
+**Violência e negligência:** lesões incompatíveis com desenvolvimento ou com relato, repetição de traumas, atraso injustificado de cuidado, sinais emocionais e privação importante demandam avaliação protegida, documentação objetiva e notificação/fluxo da rede conforme Estatuto da Criança e do Adolescente, SUS e normas locais. **Não confrontar suposto agressor de modo a aumentar risco**; manter atendimento da criança e coordenação com assistência social/Conselho Tutelar e outros órgãos quando indicado. A TRAUBE possui apostila específica \`violencia-maus-tratos-criancas-adolescentes\`, a ser preservada.
 
 ## 11. Triagens neonatais e doenças prevalentes
 **Triagem metabólica (“teste do pezinho”):** realização nos primeiros dias conforme norma nacional; teste positivo é **triagem**, exigindo confirmação oportuna e tratamento precoce em condições rastreadas. A lista de doenças pode variar conforme expansão do PNTN e rede; não prometer que todas as dezenas previstas na legislação já estão incluídas no painel de cada local.
@@ -258,7 +258,7 @@ Proibida reprodução de figuras de material de estudo; imagens comerciais preci
 - [ ] Completar doses nacionais de ferro, vitamina D e imunobiológicos apenas após verificar documentos oficiais aplicáveis.
 - [ ] Ampliar saúde bucal, visão, audição, puberdade, saúde mental, violência e crianças com deficiência.
 - [ ] Robustez ≥60K caracteres didáticos úteis sem repetição, avaliação independente de autossuficiência.
-- [ ] Imagens reais licenciadas e figuras próprias, revisão médico-editorial, integração ao HTML LURIA e PWA.
+- [ ] Imagens reais licenciadas e figuras próprias, revisão médico-editorial, integração ao HTML TRAUBE e PWA.
 **Situação:** rascunho parcial; não publicar como apostila certificada.
 
 ---

@@ -1,6 +1,6 @@
 
 /* =========================================================
-   LURIA — BRAND FIX V5
+   TRAUBE — BRAND FIX V5
    ========================================================= */
 
 .brand {
@@ -96,7 +96,7 @@
   }
 }
 
-/* LURIA — uppercase + 15% */
+/* TRAUBE — uppercase + 15% */
 .brand .brand-copy strong {
   text-transform: uppercase !important;
   font-size: 20.7px !important; /* 18px + 15% */
@@ -109,7 +109,7 @@
 
 
 
-/* LURIA v57 — posição global estável dos controles superiores */
+/* TRAUBE v57 — posição global estável dos controles superiores */
 :root{
   --luria-top-controls-top:10px;
   --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
@@ -132,7 +132,7 @@
 }
 
 
-/* LURIA v58 — topbar estático e uniforme */
+/* TRAUBE v58 — topbar estático e uniforme */
 @media (min-width:981px){
   body:not([data-page="dashboard"]) .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     min-height:60px!important;
@@ -216,7 +216,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar:where(:not(bo
 }
 
 
-/* LURIA v59 — alinhamento global definitivo dos controles do topo */
+/* TRAUBE v59 — alinhamento global definitivo dos controles do topo */
 @media (min-width:981px){
   body:not([data-page="dashboard"]) .topbar .luria-notifications{
     top:var(--luria-top-controls-top,0px)!important;
@@ -236,7 +236,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar:where(:not(bo
 }
 
 
-/* LURIA v60 — controles alinhados à largura real de 1320px da página */
+/* TRAUBE v60 — controles alinhados à largura real de 1320px da página */
 @media (min-width:981px){
   :root{
     --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
@@ -247,7 +247,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar:where(:not(bo
 }
 
 
-/* LURIA v61 — restaura altura anterior e mantém deslocamento à esquerda */
+/* TRAUBE v61 — restaura altura anterior e mantém deslocamento à esquerda */
 @media (min-width:981px){
   :root{
     --luria-top-controls-top:10px;
@@ -260,7 +260,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar:where(:not(bo
 }
 
 
-/* LURIA v62 — deslocamento horizontal real dos controles do topo */
+/* TRAUBE v62 — deslocamento horizontal real dos controles do topo */
 @media (min-width:981px){
   :root{
     --luria-top-controls-top:10px;
@@ -273,7 +273,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar:where(:not(bo
 }
 
 
-/* LURIA v64 — controles ancorados pela direita na borda real do card de conteúdo */
+/* TRAUBE v64 — controles ancorados pela direita na borda real do card de conteúdo */
 @media (min-width:981px){
   :root{
     --luria-top-controls-top:10px;
@@ -287,7 +287,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar:where(:not(bo
 
 
 /* =========================================================
-   LURIA v65 — Timer + Notificações + Perfil integrados ao topo
+   TRAUBE v65 — Timer + Notificações + Perfil integrados ao topo
    Sem modo edição, sem drag e sem bloco flutuante.
    ========================================================= */
 
@@ -385,7 +385,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 
 /* =========================================================
-   LURIA v66 — restaura a posição visual anterior do bloco
+   TRAUBE v66 — restaura a posição visual anterior do bloco
    Mantém Timer + Notificações + Perfil travados, sem drag.
    ========================================================= */
 @media(min-width:981px){
@@ -424,7 +424,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 
 /* =========================================================
-   LURIA v67 — controles fixos no topo das páginas
+   TRAUBE v67 — controles fixos no topo das páginas
    Timer + notificações + perfil permanecem presos ao cabeçalho.
    ========================================================= */
 @media(min-width:981px){
@@ -461,7 +461,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 
 /* =========================================================
-   LURIA v68 — posição única dos controles, baseada no Cronograma
+   TRAUBE v68 — posição única dos controles, baseada no Cronograma
    Aplica também ao Dashboard.
    ========================================================= */
 @media(min-width:981px){
@@ -503,7 +503,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 
 /* =========================================================
-   LURIA v67 — POSIÇÃO DO TIMER = RÉGUA DO DASHBOARD
+   TRAUBE v67 — POSIÇÃO DO TIMER = RÉGUA DO DASHBOARD
    Alinhamento pela margem de 28px da área útil do Dashboard.
    ========================================================= */
 @media(min-width:981px){
@@ -537,7 +537,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 
 /* =========================================================
-   LURIA v68 — MESMO VÃO DASHBOARD: TIMER -> CARD DE TÍTULO
+   TRAUBE v68 — MESMO VÃO DASHBOARD: TIMER -> CARD DE TÍTULO
    Timer: top 28px / altura 48px
    Gap aprovado: 14px
    Card começa em 90px (28 + 48 + 14)
@@ -559,7 +559,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 
 /* =========================================================
-   LURIA v69 — distância visual Dashboard: controles -> título
+   TRAUBE v69 — distância visual Dashboard: controles -> título
    Timer top 28px / altura 48px / respiro 28px
    Card inicia a 104px do topo da área principal.
    ========================================================= */
@@ -590,7 +590,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 
 /* =========================================================
-   LURIA v71 — REGRA AUTORITATIVA DO TOPO
+   TRAUBE v71 — REGRA AUTORITATIVA DO TOPO
    Dashboard como referência:
    controles: top 28px / h 48px
    card: 14px abaixo => início em 90px
@@ -652,7 +652,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 
 /* =========================================================
-   LURIA v72 — topo final conforme referência visual enviada
+   TRAUBE v72 — topo final conforme referência visual enviada
    Controles no fluxo, acima do card, sem flutuar.
    ========================================================= */
 @media(min-width:981px){
@@ -745,7 +745,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 
 /* =========================================================
-   LURIA v73 — ALINHAMENTO VERTICAL GLOBAL PELO DASHBOARD
+   TRAUBE v73 — ALINHAMENTO VERTICAL GLOBAL PELO DASHBOARD
    Mesma régua vertical do Dashboard no desktop:
    main 18px / topbar 60px / -6px no topo / 10px até o card.
    Mantém tamanhos e alinhamento horizontal já aprovados.
@@ -805,7 +805,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 
 /* =========================================================
-   LURIA v76 — CRONOGRAMA = RÉGUA EXATA DO DASHBOARD
+   TRAUBE v76 — CRONOGRAMA = RÉGUA EXATA DO DASHBOARD
    Corrige X/Y do Timer + sino + perfil sem alterar dimensões.
    Remove superfícies brancas estruturais para revelar o pattern global.
    ========================================================= */
@@ -846,7 +846,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
   }
 }
 
-/* O Cronograma não cria uma folha branca sobre o fundo global da LURIA. */
+/* O Cronograma não cria uma folha branca sobre o fundo global da TRAUBE. */
 body[data-page="cronograma"]:not(.schedule-settings-embed),
 body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
 body[data-page="cronograma"]:not(.schedule-settings-embed) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
@@ -866,7 +866,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .page:where(:not(body
   background:transparent!important;
 }
 
-/* Replica no shell do Cronograma o MESMO pattern global da LURIA.
+/* Replica no shell do Cronograma o MESMO pattern global da TRAUBE.
    Necessário porque o app-shell fica acima dos pseudo-elementos do body. */
 body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
 body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
@@ -891,7 +891,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA HOSTINGER-LIKE SHELL v1 — 2026-10-04 */
+/* TRAUBE HOSTINGER-LIKE SHELL v1 — 2026-10-04 */
 :root{
   --luria-shell-blue:#184888;
   --luria-shell-blue-2:#184888;
@@ -1121,7 +1121,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 
 
 
-/* LURIA HOSTINGER SHELL — EXTERNAL BLUE FILL v3 — 2026-10-04 */
+/* TRAUBE HOSTINGER SHELL — EXTERNAL BLUE FILL v3 — 2026-10-04 */
 @media (min-width:981px){
   body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     overflow:hidden!important;
@@ -1146,7 +1146,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA SHELL — THEME COLORS v4 — 2026-10-04 */
+/* TRAUBE SHELL — THEME COLORS v4 — 2026-10-04 */
 :root,
 :root[data-theme="light"]{
   --luria-shell-theme:#184888;
@@ -1171,7 +1171,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA SHELL — EXACT COLOR MATCH v5 — 2026-10-04 */
+/* TRAUBE SHELL — EXACT COLOR MATCH v5 — 2026-10-04 */
 :root,
 :root[data-theme="light"]{
   --luria-shell-theme:#184888;
@@ -1195,7 +1195,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA SHELL — SOLID COLOR NO GRADIENT v6 — 2026-10-04 */
+/* TRAUBE SHELL — SOLID COLOR NO GRADIENT v6 — 2026-10-04 */
 :root,
 :root[data-theme="light"]{
   --luria-shell-theme:#184888;
@@ -1218,7 +1218,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA TOPBAR — CONTROLS ON SHELL BLUE v7 — 2026-10-04 */
+/* TRAUBE TOPBAR — CONTROLS ON SHELL BLUE v7 — 2026-10-04 */
 @media (min-width:981px){
   body .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background:transparent!important;
@@ -1253,7 +1253,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA SHELL — AUTHORITATIVE SAME-COLOR OVERRIDE v10 — 2026-10-04 */
+/* TRAUBE SHELL — AUTHORITATIVE SAME-COLOR OVERRIDE v10 — 2026-10-04 */
 :root,
 :root[data-theme="light"]{
   --luria-shell-theme:#184888;
@@ -1280,7 +1280,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA TIMER PANEL — CLEAN LAYOUT v11 — 2026-10-04 */
+/* TRAUBE TIMER PANEL — CLEAN LAYOUT v11 — 2026-10-04 */
 @media (min-width:981px){
   /* Ajuste visual isolado do painel aberto do Timer/Pomodoro. */
   body .luria-pomodoro-panel{
@@ -1463,7 +1463,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA TOPBAR — SEARCH ICON + ALEX v12 — 2026-10-04 */
+/* TRAUBE TOPBAR — SEARCH ICON + ALEX v12 — 2026-10-04 */
 @media (min-width:981px){
   body .topbar #luria-global-search.luria-search-icon-only{
     display:grid!important;
@@ -1544,7 +1544,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA GLOBAL HEADER — DASHBOARD SETTINGS EVERYWHERE v68 — 2026-10-04 */
+/* TRAUBE GLOBAL HEADER — DASHBOARD SETTINGS EVERYWHERE v68 — 2026-10-04 */
 @media (min-width:981px){
   /* Mesma escala de logo aprovada no Dashboard. */
   body #sidebar.sidebar .brand .luria-theme-logo,
@@ -1634,7 +1634,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA GLOBAL MASTER SHELL v69 — 2026-10-04 */
+/* TRAUBE GLOBAL MASTER SHELL v69 — 2026-10-04 */
 :root,
 :root[data-theme="light"]{--luria-master-shell:#184888}
 :root[data-theme="dark"]{--luria-master-shell:#142A44}
@@ -1993,7 +1993,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA GLOBAL SCROLL — INSET THUMB ONLY v70 — 2026-10-04 */
+/* TRAUBE GLOBAL SCROLL — INSET THUMB ONLY v70 — 2026-10-04 */
 @media (min-width:981px){
   /* A borda branca externa não rola. O scroll acontece dentro da página,
      recuado da curva direita, igual ao padrão aprovado no Dashboard. */
@@ -2071,7 +2071,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA GLOBAL SHELL — APPROVED SIZE + WHITE BRAND v72 — 2026-10-04 */
+/* TRAUBE GLOBAL SHELL — APPROVED SIZE + WHITE BRAND v72 — 2026-10-04 */
 @media (min-width:981px){
   /* Tamanho aprovado do container: topo 10px, laterais/base 5px. */
   body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
@@ -2113,7 +2113,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     box-sizing:border-box!important;
   }
 
-  /* Marca correta na faixa azul: ícone LURIA branco + wordmark branco. */
+  /* Marca correta na faixa azul: ícone TRAUBE branco + wordmark branco. */
   body #sidebar.sidebar .sidebar-top{
     position:absolute!important;
     top:-58px!important;
@@ -2171,7 +2171,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA HEADER — WHITE LOGO + ALL-WHITE TIMER v73 — 2026-10-04 */
+/* TRAUBE HEADER — WHITE LOGO + ALL-WHITE TIMER v73 — 2026-10-04 */
 @media (min-width:981px){
   /* Logo sempre branca na faixa superior. */
   body #sidebar.sidebar .brand .luria-theme-logo,
@@ -2229,7 +2229,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA GLOBAL SHELL HARD LOCK v75 — 2026-10-04 */
+/* TRAUBE GLOBAL SHELL HARD LOCK v75 — 2026-10-04 */
 @media (min-width:981px){
   body.luria-global-shell-mounted{
     overflow:hidden!important;
@@ -2448,7 +2448,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA TIMER — WHITE OUTSIDE, READABLE PANEL v76 — 2026-10-04 */
+/* TRAUBE TIMER — WHITE OUTSIDE, READABLE PANEL v76 — 2026-10-04 */
 @media (min-width:981px){
   /* Botão fechado do Timer: absolutamente tudo branco sobre a faixa azul. */
   body .topbar .luria-pomodoro-toggle,
@@ -2517,7 +2517,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA DARK SHELL — STATIC EDGES + INNER LOGO PATTERN v77 — 2026-10-04 */
+/* TRAUBE DARK SHELL — STATIC EDGES + INNER LOGO PATTERN v77 — 2026-10-04 */
 @media (min-width:981px){
   /* A moldura externa deve ser totalmente estática. */
   body.luria-global-shell-mounted,
@@ -2607,7 +2607,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA GLOBAL CONTENT PATTERN — EXACT DASHBOARD v78 — 2026-10-04 */
+/* TRAUBE GLOBAL CONTENT PATTERN — EXACT DASHBOARD v78 — 2026-10-04 */
 @media (min-width:981px){
   /* Fora do Dashboard, replica EXATAMENTE o pattern aprovado da página inicial. */
   body.luria-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
@@ -2666,7 +2666,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 
 
 
-/* LURIA v80 — conteúdo sempre acima da camada de pattern/logos */
+/* TRAUBE v80 — conteúdo sempre acima da camada de pattern/logos */
 @media (min-width:981px){
   body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
@@ -2692,7 +2692,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA v81 — corrige a fita inferior global do shell.
+/* TRAUBE v81 — corrige a fita inferior global do shell.
    O painel principal agora ocupa a base inteira; a borda azul não corta o último callout. */
 @media (min-width:981px){
   body.luria-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
@@ -2730,7 +2730,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA v82 — correção estrutural da base global.
+/* TRAUBE v82 — correção estrutural da base global.
    A faixa azul inferior deixa de recortar o conteúdo: o painel branco cobre a base
    e a rolagem acontece dentro da página, acima do fundo decorativo. */
 @media (min-width:981px){
@@ -2787,7 +2787,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA v83 — scrollport global sem faixas superior/inferior.
+/* TRAUBE v83 — scrollport global sem faixas superior/inferior.
    O recorte vinha do padding vertical do .main: a .page rolava dentro de uma
    janela menor, deixando uma faixa fixa acima e abaixo. O scrollport agora
    ocupa 100% da altura; o respiro passa para dentro da própria página. */
@@ -2831,7 +2831,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA v84 — replica no site normal a lógica que resolveu o Dashboard 1.
+/* TRAUBE v84 — replica no site normal a lógica que resolveu o Dashboard 1.
    A .page deixa de ser uma "janela" recortada; o scroll sobe um nível para .main.
    Assim não existe faixa fixa superior/inferior atravessando os callouts. */
 @media (min-width:981px){
@@ -2929,7 +2929,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA v85 — restaura a moldura aprovada do site.
+/* TRAUBE v85 — restaura a moldura aprovada do site.
    O azul é a janela fixa externa; o painel branco fica parado e SOMENTE
    o conteúdo da .page rola por dentro. O pattern pertence ao painel,
    não a uma segunda janela de conteúdo. */
@@ -3056,7 +3056,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
 }
 
 
-/* LURIA SCROLLBAR — NO ARROW BUTTONS HARD LOCK v2026.10.05
+/* TRAUBE SCROLLBAR — NO ARROW BUTTONS HARD LOCK v2026.10.05
    Remove qualquer botão/seta nativa de scrollbar em TODA área rolável. */
 html::-webkit-scrollbar-button,
 body::-webkit-scrollbar-button,
@@ -3111,7 +3111,7 @@ body *::-webkit-scrollbar-button:end{
 }
 
 
-/* LURIA v86 — scrollbar embutida no painel branco
+/* TRAUBE v86 — scrollbar embutida no painel branco
    Mantém a barra dentro do callout/painel branco, sem tocar a moldura azul.
    O trilho fica totalmente transparente para não deformar a borda direita. */
 @media (min-width:981px){
@@ -3151,7 +3151,7 @@ body *::-webkit-scrollbar-button:end{
 }
 
 
-/* LURIA v86 — scrollbar interna ao painel branco
+/* TRAUBE v86 — scrollbar interna ao painel branco
    A barra fica alguns pixels para dentro da borda arredondada, nunca sobre o filete azul.
    Trilho/canto continuam totalmente transparentes. */
 @media (min-width:981px){
@@ -3195,7 +3195,7 @@ body *::-webkit-scrollbar-button:end{
 }
 
 
-/* LURIA v87 — logo única e compacta em todas as páginas */
+/* TRAUBE v87 — logo única e compacta em todas as páginas */
 body #sidebar.sidebar .brand .luria-theme-logo,
 body #sidebar.sidebar .brand #luria-brand-logo,
 body #sidebar.sidebar #luria-brand-logo{
@@ -3210,7 +3210,7 @@ body #sidebar.sidebar #luria-brand-logo{
 }
 
 
-/* LURIA v88 — rodapé da sidebar: geometria autoritativa */
+/* TRAUBE v88 — rodapé da sidebar: geometria autoritativa */
 @media (min-width:981px){
   body #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:sticky!important;
@@ -3348,7 +3348,7 @@ body #sidebar.sidebar #luria-brand-logo{
 }
 
 
-/* LURIA v89 — remove setas/botões das scrollbars em todo o site */
+/* TRAUBE v89 — remove setas/botões das scrollbars em todo o site */
 html::-webkit-scrollbar-button,
 body::-webkit-scrollbar-button,
 body *::-webkit-scrollbar-button,
@@ -3402,7 +3402,7 @@ body *::-webkit-scrollbar-button:end{
 }
 
 
-/* LURIA v90 — dashboard sidebar stable + cronograma shell parity — 2026-10-05 */
+/* TRAUBE v90 — dashboard sidebar stable + cronograma shell parity — 2026-10-05 */
 @media (min-width:981px){
   /* Dashboard: a sidebar deve medir o painel branco real, não 100dvh.
      Isso impede Ofensiva + botão Estudos de descerem quando o chrome global monta. */
@@ -3481,7 +3481,7 @@ body *::-webkit-scrollbar-button:end{
 
 
 /* =========================================================
-   LURIA v90 — TÍTULOS GLOBAIS IDÊNTICOS AO ESTATÍSTICAS
+   TRAUBE v90 — TÍTULOS GLOBAIS IDÊNTICOS AO ESTATÍSTICAS
    Estatísticas é a única régua visual dos cabeçalhos de página.
    ========================================================= */
 :root{
@@ -3680,7 +3680,7 @@ body[data-page="aprender"] .book-hero .book-badge{
 }
 
 
-/* LURIA apostilas: mobile overflow repair 2026-10-08 */
+/* TRAUBE apostilas: mobile overflow repair 2026-10-08 */
 @media (max-width: 900px) {
   body[data-page="aprender"]:has(.book-page) {
     max-width: 100%;

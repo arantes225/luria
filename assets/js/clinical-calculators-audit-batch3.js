@@ -1,4 +1,4 @@
-/* LURIA — Auditoria das calculadoras 61–71, 2026-10-24.
+/* TRAUBE — Auditoria das calculadoras 61–71, 2026-10-24.
  * Apoio matemático apenas. Revisão assistencial externa pendente.
  */
 (() => {

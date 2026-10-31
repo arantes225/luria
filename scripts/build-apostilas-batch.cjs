@@ -71,13 +71,13 @@ function buildBook(template,entry){
   const nav=entry.sections.map(section=>'<a class="book-outline-link" href="#'+esc(section.id)+'">'+esc(section.title)+'</a>').join("")+
     '<a class="book-outline-link" href="#referencias">Referências</a>';
   const intro='<section class="book-hero apostila-identity" aria-label="Identificação da apostila">'+
-    '<span class="book-badge">Apostila LURIA</span><h1>'+esc(entry.title)+'</h1>'+
+    '<span class="book-badge">Apostila TRAUBE</span><h1>'+esc(entry.title)+'</h1>'+
     '<p>'+esc(entry.description||"Material completo de estudo e preparação para residência médica")+'</p>'+
     '<div class="book-meta-row"><span>Área: '+esc(entry.area)+'</span><span>Matéria: '+esc(entry.materia)+
     '</span><span>Tema: '+esc(entry.title)+'</span></div></section>';
   let html=template;
   const edits=[
-    [/<title>[\s\S]*?<\/title>/i,'<title>'+esc(entry.title)+' · LURIA</title>'],
+    [/<title>[\s\S]*?<\/title>/i,'<title>'+esc(entry.title)+' · TRAUBE</title>'],
     [/<link rel="canonical" href="[^"]+">/i,'<link rel="canonical" href="/apostilas/'+slug+'/">'],
     [/<nav class="book-outline-nav">[\s\S]*?<\/nav>/i,'<nav class="book-outline-nav">'+nav+'</nav>'],
     [/<article class="book-main">[\s\S]*?<\/article>/i,'<article class="book-main">'+intro+sections.join("\n")+'</article>'],

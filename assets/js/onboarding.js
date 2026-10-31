@@ -17,13 +17,13 @@
   };
 
   const STEPS = [
-    {page:"configuracoes", target:".settings-page, .page", title:"Prepare o seu LURIA", transparent:true, text:"Começamos pelas configurações. Ajuste nome, especialidade, sexo, dias de estudo e preferências. Depois de ler, clique em Explorar para deixar a tela livre e configurar enquanto este texto continua visível.", top:true},
+    {page:"configuracoes", target:".settings-page, .page", title:"Prepare o seu TRAUBE", transparent:true, text:"Começamos pelas configurações. Ajuste nome, especialidade, sexo, dias de estudo e preferências. Depois de ler, clique em Explorar para deixar a tela livre e configurar enquanto este texto continua visível.", top:true},
     {page:"configuracoes", target:".setting-row", title:"Seu perfil", transparent:true, text:"Preencha seus dados principais. No modo Explorar o fundo fica transparente e os campos continuam totalmente utilizáveis."},
     {page:"configuracoes", target:"[data-weekday], .weekday-grid, .study-days, .setting-row:nth-of-type(2)", title:"Dias de estudo", transparent:true, text:"Escolha em quais dias você quer estudar. O cronograma e as revisões respeitam essa disponibilidade."},
-    {page:"configuracoes", target:".interval-editor, [data-interval-field]", title:"Revisões", text:"Defina os intervalos de revisão. O LURIA distribui as revisões dentro dos dias permitidos."},
+    {page:"configuracoes", target:".interval-editor, [data-interval-field]", title:"Revisões", text:"Defina os intervalos de revisão. O TRAUBE distribui as revisões dentro dos dias permitidos."},
 
-    {page:"cronograma", target:".topbar, .page-heading", title:"Seu cronograma", text:"O cronograma é a base da organização do LURIA. Você pode importar o seu material de estudo por PDF ou Excel, ou montar tudo manualmente.", top:true, demo:"schedule"},
-    {page:"cronograma", target:"#file-drop, #schedule-file", title:"PDF, Excel ou manual", text:"PDF: envie o seu cronograma. Excel: importe uma planilha estruturada. Manual: cadastre área, matéria, tema e data diretamente no LURIA.", top:true, noScroll:true, demo:"schedule"},
+    {page:"cronograma", target:".topbar, .page-heading", title:"Seu cronograma", text:"O cronograma é a base da organização do TRAUBE. Você pode importar o seu material de estudo por PDF ou Excel, ou montar tudo manualmente.", top:true, demo:"schedule"},
+    {page:"cronograma", target:"#file-drop, #schedule-file", title:"PDF, Excel ou manual", text:"PDF: envie o seu cronograma. Excel: importe uma planilha estruturada. Manual: cadastre área, matéria, tema e data diretamente no TRAUBE.", top:true, noScroll:true, demo:"schedule"},
     {page:"cronograma", target:".import-mode, [name=import-mode], #manual-topic-form", title:"Como importar", transparent:true, text:"Você decide se as aulas entram já programadas ou no Deck. O cadastro manual serve para inserir uma aula por vez sem arquivo.", demo:"schedule"},
     {page:"cronograma", target:"#deck-panel, #deck-list", title:"Deck", text:"O Deck é a área de espera das aulas ainda não programadas. Deixamos duas atividades simuladas aqui para você visualizar como funciona.", demo:"schedule"},
     {page:"cronograma", target:"#week-planner", title:"Semana", text:"As aulas programadas aparecem distribuídas na semana. Deixamos cinco atividades simuladas para mostrar a organização visual.", demo:"schedule"},
@@ -45,19 +45,19 @@
     {page:"erros", target:"#new-error-image, #extract-error-image-text", title:"Extrair texto de um print", text:"Ao adicionar a imagem da questão, o botão Extrair texto pode transformar o conteúdo do print em texto para acelerar o registro do erro.", demo:"errors", action:"error-create"},
     {page:"erros", target:"[data-error-section=library], #error-library", title:"Biblioteca do Caderno de Erros", text:"Todos os erros ficam reunidos na Biblioteca, com busca, filtros, seleção e exportação.", demo:"errors", action:"error-library"},
 
-    {page:"questoes", target:".qs-mode-tabs, .qs-tabs, .page-heading", title:"Questões e Simulados", text:"Esta é uma das áreas mais importantes do LURIA. Você pode criar um simulado manualmente ou enviar um PDF para o sistema separar as questões, montar o gabarito e organizar seus erros.", demo:"questions", action:"questions-mine", top:true},
+    {page:"questoes", target:".qs-mode-tabs, .qs-tabs, .page-heading", title:"Questões e Simulados", text:"Esta é uma das áreas mais importantes do TRAUBE. Você pode criar um simulado manualmente ou enviar um PDF para o sistema separar as questões, montar o gabarito e organizar seus erros.", demo:"questions", action:"questions-mine", top:true},
     {page:"questoes", target:"#qs-history", title:"Meus simulados", text:"Aqui ficam os simulados que você criou ou importou. Durante o onboarding deixamos três simulados fictícios para você visualizar como aparecem os resultados, acertos, erros e aproveitamento sem alterar seus dados reais.", demo:"questions", action:"questions-mine"},
-    {page:"questoes", target:".qs-add-mode-tabs", title:"Automático ou manual", text:"A partir daqui o passeio acontece dentro de Adicionar simulado. Automaticamente, você envia um PDF e o LURIA identifica as questões. Manualmente, você informa o nome e a quantidade de questões e usa somente o gabarito e as estatísticas.", demo:"questions", action:"questions-create", transparent:true},
-    {page:"questoes", target:"label[for='qs-file']", title:"Selecionar arquivo", text:"No modo automático, clique em Escolher PDF. Para o onboarding, o LURIA já separou um Simulado Onbording de Eletrocardiograma para demonstrar o fluxo sem usar nenhum arquivo seu.", action:"questions-file", transparent:true},
+    {page:"questoes", target:".qs-add-mode-tabs", title:"Automático ou manual", text:"A partir daqui o passeio acontece dentro de Adicionar simulado. Automaticamente, você envia um PDF e o TRAUBE identifica as questões. Manualmente, você informa o nome e a quantidade de questões e usa somente o gabarito e as estatísticas.", demo:"questions", action:"questions-create", transparent:true},
+    {page:"questoes", target:"label[for='qs-file']", title:"Selecionar arquivo", text:"No modo automático, clique em Escolher PDF. Para o onboarding, o TRAUBE já separou um Simulado Onbording de Eletrocardiograma para demonstrar o fluxo sem usar nenhum arquivo seu.", action:"questions-file", transparent:true},
     {page:"questoes", target:"#qs-onboarding-pdf-preview", title:"Visualizando o PDF", text:"Antes de extrair, você consegue conferir o material. Durante esta etapa o PDF de demonstração percorre as páginas apenas para você visualizar como um arquivo real entra no fluxo.", action:"questions-pdf", transparent:true, forceCardTop:true},
     {page:"questoes", target:"#qs-extraction-mode", title:"Tipo de extração", text:"Extração rápida prioriza velocidade. Extração detalhada cruza mais estratégias e tenta preservar melhor questões, textos e imagens. Se o PDF for complexo, prefira a detalhada.", action:"questions-create", transparent:true},
     {page:"questoes", target:"#qs-source-profile", title:"Formato do PDF", text:"Escolha a estrutura do PDF para adaptar a leitura do documento. Neste exemplo usamos Geral.", action:"questions-create", transparent:true},
     {page:"questoes", target:"#qs-import", title:"Extrair questões", text:"Com o arquivo, o tipo de extração e a origem definidos, clique em Extrair questões. No onboarding simulamos o processamento local sem gravar nada no banco.", action:"questions-extract", transparent:true},
-    {page:"questoes", target:"#qs-answer-panel, #qs-question-list", title:"Questões extraídas", text:"O LURIA separou as 10 questões do PDF. Aqui você confere cada questão individualmente antes de trabalhar com o gabarito.", action:"questions-answer", transparent:true},
+    {page:"questoes", target:"#qs-answer-panel, #qs-question-list", title:"Questões extraídas", text:"O TRAUBE separou as 10 questões do PDF. Aqui você confere cada questão individualmente antes de trabalhar com o gabarito.", action:"questions-answer", transparent:true},
     {page:"questoes", target:"#qs-open-answer-import", title:"Leitor de gabarito", text:"Depois das questões extraídas, você pode importar um print do resultado. O leitor identifica as questões corretas e erradas e prepara o preenchimento do gabarito.", action:"questions-reader", transparent:true},
     {page:"questoes", target:"#qs-onboarding-answer-key", title:"Gabarito reconhecido", text:"Este é o gabarito de demonstração: as questões 2 e 5 foram erradas e aparecem em vermelho; as demais aparecem em verde.", action:"questions-answerkey", transparent:true},
-    {page:"questoes", target:"#qs-apply-answer-import", title:"Introduzir gabarito", text:"Ao aplicar os resultados, o LURIA transfere essas marcações para o simulado. No onboarding fazemos isso apenas visualmente, sem salvar nenhum dado real.", action:"questions-applykey", transparent:true},
-    {page:"questoes", target:"#qs-question-list", title:"Gabarito aplicado", text:"Pronto: o simulado agora mostra 8 acertos, 2 erros e 80% de aproveitamento. Nas questões 2 e 5, o LURIA abre o cadastro detalhado do erro para você preencher Área, Matéria, Resposta correta, Pulo do Gato e, se quiser, registrar o que pensou antes de enviar ao Caderno de Erros.", action:"questions-applied", transparent:true},
+    {page:"questoes", target:"#qs-apply-answer-import", title:"Introduzir gabarito", text:"Ao aplicar os resultados, o TRAUBE transfere essas marcações para o simulado. No onboarding fazemos isso apenas visualmente, sem salvar nenhum dado real.", action:"questions-applykey", transparent:true},
+    {page:"questoes", target:"#qs-question-list", title:"Gabarito aplicado", text:"Pronto: o simulado agora mostra 8 acertos, 2 erros e 80% de aproveitamento. Nas questões 2 e 5, o TRAUBE abre o cadastro detalhado do erro para você preencher Área, Matéria, Resposta correta, Pulo do Gato e, se quiser, registrar o que pensou antes de enviar ao Caderno de Erros.", action:"questions-applied", transparent:true},
     {page:"questoes", target:"#qs-send-errors, .qs-error-fields", title:"Enviar erros ao Caderno de Erros", text:"As questões erradas podem virar Pulos do Gato. Você pode ajustar Área, Matéria, Tema e explicação antes de enviar, ou escolher não mandar uma questão ao Caderno de Erros.", action:"questions-applied", transparent:true},
 
     {page:"dashboard", target:".topbar, .page-heading", title:"Dashboard", text:"O Dashboard reúne agenda, revisões, métricas, Pulo do Gato e progresso. Ele é o ponto de partida depois da configuração.", top:true},
@@ -65,7 +65,7 @@
     {page:"dashboard", target:"#dashboard-streak-card, [data-sidebar-streak-card]", title:"Ofensiva", text:"A ofensiva aparece tanto no Dashboard quanto no menu lateral. Ela registra sua sequência de dias de estudo; um dia pulado reinicia a sequência.", action:"streak"},
 
     {page:"estatisticas", target:".topbar, .page-heading", title:"Estatísticas", text:"Esta área transforma sua atividade em indicadores de desempenho, retenção, volume e pontos de atenção.", top:true},
-    {page:"estatisticas", target:".stats-tabs", title:"Visões por recurso", text:"Este menu fica no topo. Durante a apresentação o LURIA percorre Geral, Aulas, Flashcards, Caderno de Erros e Questões para você visualizar cada painel.", action:"stats-tabs", top:true},
+    {page:"estatisticas", target:".stats-tabs", title:"Visões por recurso", text:"Este menu fica no topo. Durante a apresentação o TRAUBE percorre Geral, Aulas, Flashcards, Caderno de Erros e Questões para você visualizar cada painel.", action:"stats-tabs", top:true},
 
     {page:"editais", target:".editais-source-tabs, #editais-own-content", title:"Editais e Provas", text:"Começamos em Minhas provas. Aqui você acompanha as provas que adicionou, inscrições, resultados e notas de corte.", action:"exam-mine", top:true},
     {page:"editais", target:"#editais-own-content .exam-mode-tabs, #editais-own-content", title:"Minhas provas", text:"Esta é a sua área pessoal de provas. Você pode consultar suas provas cadastradas e abrir o formulário para adicionar uma nova.", action:"exam-mine"},
@@ -75,10 +75,10 @@
     {page:"editais", target:"#exam-dialog, #exam-form", title:"Cadastro da prova", text:"Cadastre instituição, banca, status, datas, taxa, sua nota e a última nota de corte. Nada desta demonstração será salvo.", action:"exam-dialog"},
     {page:"editais", target:"#exam-score, #exam-cutoff", title:"Cores da nota", text:"A comparação usa a nota de corte como referência: vermelho quando sua nota fica mais de 2 pontos abaixo; amarelo quando fica na faixa de ±2 pontos; verde quando fica mais de 2 pontos acima.", action:"exam-dialog", forceCardTop:true, scrollPageDown:true},
 
-    {page:"amigos", target:".friends-card:first-of-type", title:"Amigos", text:"Cada usuário possui um ID LURIA. Adicione amigos pelo código e compartilhe materiais diretamente com eles.", top:true},
+    {page:"amigos", target:".friends-card:first-of-type", title:"Amigos", text:"Cada usuário possui um ID TRAUBE. Adicione amigos pelo código e compartilhe materiais diretamente com eles.", top:true},
     {page:"amigos", target:".friends-card:last-of-type", title:"Materiais recebidos", text:"Decks de flashcards e cadernos enviados por amigos ficam reunidos aqui."},
 
-    {page:"dashboard", target:".topbar, .page-heading", title:"Seu LURIA está pronto", text:"O tour terminou. Agora começa Conheça o LURIA: seis desafios para transformar o tutorial em uso real.", finish:true, top:true}
+    {page:"dashboard", target:".topbar, .page-heading", title:"Seu TRAUBE está pronto", text:"O tour terminou. Agora começa Conheça o TRAUBE: seis desafios para transformar o tutorial em uso real.", finish:true, top:true}
   ];
 
   function userId(){ return window.docmapUser?.id || "guest"; }
@@ -90,12 +90,12 @@
   function status(){ return readState() || {started:false, completed:false, skipped:false, step:0}; }
 
   const SUMMARY_TITLES = new Set([
-    "Prepare o seu LURIA","Seu cronograma","PDF, Excel ou manual","Flashcards",
+    "Prepare o seu TRAUBE","Seu cronograma","PDF, Excel ou manual","Flashcards",
     "Caderno de Erros","Questões e Simulados","Automático ou manual","Selecionar arquivo",
     "Visualizando o PDF","Tipo de extração","Formato do PDF","Questões extraídas",
     "Leitor de gabarito","Gabarito reconhecido","Introduzir gabarito","Gabarito aplicado",
     "Enviar erros ao Caderno de Erros","Meus simulados","Dashboard","Estatísticas","Editais e Provas",
-    "Amigos","Seu LURIA está pronto"
+    "Amigos","Seu TRAUBE está pronto"
   ]);
 
   function activeSteps(s=status()){
@@ -138,7 +138,7 @@
       <div class="luria-onboarding-dim"></div>
       <section class="luria-onboarding-card luria-onboarding-mode-card" role="dialog" aria-label="Escolher onboarding">
         <span class="eyebrow">Primeiros passos</span>
-        <h2>Como você quer conhecer o LURIA?</h2>
+        <h2>Como você quer conhecer o TRAUBE?</h2>
         <p>Você pode fazer o tour completo ou uma versão resumida. O guia de Questões e Simulados continuará disponível dentro da própria página.</p>
         <div class="luria-onboarding-mode-grid">
           <button type="button" data-mode="full"><strong>Onboarding completo</strong><small>Passa por todas as áreas, botões principais e fluxos.</small></button>
@@ -551,7 +551,7 @@
           area:"Pediatria",
           materia:"Imunizações",
           theme:"Vacinação",
-          ccq:"Qual é a lógica de revisar um erro no LURIA?",
+          ccq:"Qual é a lógica de revisar um erro no TRAUBE?",
           answer:"Recuperar ativamente a informação antes de conferir a resposta."
         },
         {
@@ -1298,8 +1298,8 @@
       if(own) own.hidden=true;
       if(catalog) catalog.hidden=false;
 
-      if(typeof window.loadLuriaExamCatalog==="function"){
-        window.loadLuriaExamCatalog().catch(()=>{});
+      if(typeof window.loadTraubeExamCatalog==="function"){
+        window.loadTraubeExamCatalog().catch(()=>{});
       }
     }
 
@@ -1332,7 +1332,7 @@
       const inst=document.getElementById("exam-institution");
       if(inst && !inst.dataset.onboardingOriginalValue){
         inst.dataset.onboardingOriginalValue=inst.value || "";
-        inst.value="Hospital LURIA — demonstração";
+        inst.value="Hospital TRAUBE — demonstração";
       }
 
       const board=document.getElementById("exam-board");
@@ -1540,8 +1540,8 @@
     overlay.classList.remove("card-top");
     overlay.innerHTML=`
       ${liberated ? "" : '<div class="luria-onboarding-dim"></div>'}
-      <section class="luria-onboarding-card" role="dialog" aria-label="Onboarding LURIA">
-        <div class="luria-onboarding-progress"><span>Conhecendo o LURIA</span><strong>${s.step+1} de ${steps.length}</strong></div>
+      <section class="luria-onboarding-card" role="dialog" aria-label="Onboarding TRAUBE">
+        <div class="luria-onboarding-progress"><span>Conhecendo o TRAUBE</span><strong>${s.step+1} de ${steps.length}</strong></div>
         <div class="luria-onboarding-bar"><i style="width:${((s.step+1)/steps.length)*100}%"></i></div>
         <h2>${step.title}</h2>
         <p>${step.text}</p>
@@ -1729,7 +1729,7 @@
     const count=items.filter(([k])=>done[k]).length;
     const card=document.createElement("section");
     card.id="luria-discover-card"; card.className="panel luria-discover-card";
-    card.innerHTML='<div class="luria-discover-head"><div><span class="eyebrow">Primeiros passos</span><h2>Conheça o LURIA</h2><p>Complete os desafios usando sua própria conta.</p></div><strong>'+count+' de 6</strong></div><div class="luria-discover-progress"><i style="width:'+(count/6*100)+'%"></i></div><div class="luria-discover-list">'+items.map(([k,l])=>'<div class="'+(done[k]?'done':'')+'"><span>'+(done[k]?'✓':'○')+'</span><span>'+l+'</span></div>').join("")+'</div>';
+    card.innerHTML='<div class="luria-discover-head"><div><span class="eyebrow">Primeiros passos</span><h2>Conheça o TRAUBE</h2><p>Complete os desafios usando sua própria conta.</p></div><strong>'+count+' de 6</strong></div><div class="luria-discover-progress"><i style="width:'+(count/6*100)+'%"></i></div><div class="luria-discover-list">'+items.map(([k,l])=>'<div class="'+(done[k]?'done':'')+'"><span>'+(done[k]?'✓':'○')+'</span><span>'+l+'</span></div>').join("")+'</div>';
     const target=document.querySelector(".dashboard-page, .page");
     target?.insertBefore(card,target.children[1]||null);
   }
@@ -1737,15 +1737,15 @@
   const QUESTIONS_GUIDE = [
     {target:".qs-mode-tabs, .page-heading",title:"Visão geral",text:"Aqui você alterna entre o painel, adicionar simulado, seus simulados e a biblioteca.",action:"questions-mine"},
     {target:".qs-add-mode-tabs",title:"Automático ou manual",text:"Agora entramos em Adicionar simulado. Automático usa um PDF; Manual cria apenas a estrutura do simulado e o gabarito.",action:"questions-create"},
-    {target:"label[for='qs-file']",title:"Selecionar PDF",text:"No modo automático, escolha o PDF do simulado. Para este guia, o LURIA carrega o mesmo PDF de demonstração usado no onboarding.",action:"questions-file"},
+    {target:"label[for='qs-file']",title:"Selecionar PDF",text:"No modo automático, escolha o PDF do simulado. Para este guia, o TRAUBE carrega o mesmo PDF de demonstração usado no onboarding.",action:"questions-file"},
     {target:"#qs-onboarding-pdf-preview",title:"Visualizar o PDF",text:"O PDF-guia aparece aqui para você conferir o material antes da extração. Esta demonstração não grava nenhum arquivo novo na sua conta.",action:"questions-pdf"},
     {target:"#qs-extraction-mode",title:"Tipo de extração",text:"Rápida é mais ágil. Detalhada usa mais estratégias e é indicada quando o PDF tem imagens, colunas ou diagramação complexa.",action:"questions-create"},
     {target:"#qs-source-profile",title:"Formato do PDF",text:"Escolha a origem do material para adaptar o extrator ao padrão visual mais provável do PDF.",action:"questions-create"},
-    {target:"#qs-import",title:"Extrair questões",text:"Aqui o LURIA extrai as questões do PDF de demonstração. No guia, usamos a mesma simulação segura do onboarding.",action:"questions-extract"},
+    {target:"#qs-import",title:"Extrair questões",text:"Aqui o TRAUBE extrai as questões do PDF de demonstração. No guia, usamos a mesma simulação segura do onboarding.",action:"questions-extract"},
     {target:"#qs-question-list",title:"Questões extraídas",text:"Depois da extração, as questões aparecem separadas e prontas para receber o resultado do gabarito.",action:"questions-answer"},
     {target:"#qs-open-answer-import",title:"Adicionar gabarito",text:"Agora abrimos o leitor de gabarito. O guia carrega o gabarito de demonstração que já existe no site, igual ao onboarding.",action:"questions-reader"},
     {target:"#qs-answer-import-dialog",title:"Gabarito de demonstração",text:"A imagem do gabarito já está carregada. A próxima etapa simula a leitura automática das marcações.",action:"questions-reader"},
-    {target:"#qs-onboarding-answer-key",title:"Extrair gabarito",text:"O LURIA extrai o gabarito da imagem e reconhece as questões corretas e erradas. Nesta demonstração: 8 acertos e 2 erros.",action:"questions-answerkey"},
+    {target:"#qs-onboarding-answer-key",title:"Extrair gabarito",text:"O TRAUBE extrai o gabarito da imagem e reconhece as questões corretas e erradas. Nesta demonstração: 8 acertos e 2 erros.",action:"questions-answerkey"},
     {target:"#qs-apply-answer-import",title:"Aplicar gabarito",text:"Depois de conferir o reconhecimento, aplique o gabarito ao simulado para preencher os resultados das questões.",action:"questions-applykey"},
     {target:"#qs-question-list",title:"Gabarito aplicado",text:"Pronto. O resultado fica aplicado às questões e os erros podem ser enviados ao Caderno de Erros.",action:"questions-applied"},
     {target:"#qs-send-errors",title:"Caderno de Erros",text:"Envie somente os erros que você quer revisar. Antes do envio, você pode ajustar Área, Matéria, Tema e Pulo do Gato.",action:"questions-applied"}
@@ -1831,7 +1831,7 @@
     restart(event);
   });
 
-  window.LuriaOnboarding={restart,startQuestionsGuide:()=>{questionsGuideIndex=0;renderQuestionsGuide();}};
+  window.TraubeOnboarding={restart,startQuestionsGuide:()=>{questionsGuideIndex=0;renderQuestionsGuide();}};
 
   function syncStateFromUrl(){
     const params=new URLSearchParams(location.search);

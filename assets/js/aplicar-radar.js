@@ -1,7 +1,7 @@
 /* ==============================================================================
-   LURIA — Módulo RADAR DE PROVAS (Inteligência de Incidência de Temas)
+   TRAUBE — Módulo RADAR DE PROVAS (Inteligência de Incidência de Temas)
    Análise estatística de provas de residência médica e ENAMED, matriz de incidência,
-   heatmap interativo, comparação de bancas e deep links com o banco de questões LURIA.
+   heatmap interativo, comparação de bancas e deep links com o banco de questões TRAUBE.
    ============================================================================== */
 
 (() => {
@@ -609,7 +609,7 @@
     grid.innerHTML = AREAS.map(area => {
       const count = counts[area] || 0;
       const pct = totalQuestions > 0 ? Math.round((count / totalQuestions) * 100) : 0;
-      const iconHtml = window.LuriaMedicalIcons?.svg ? window.LuriaMedicalIcons.svg(area.toLowerCase()) : (window.LuriaMedicalIcons?.icon ? window.LuriaMedicalIcons.icon(area.toLowerCase()) : "✚");
+      const iconHtml = window.TraubeMedicalIcons?.svg ? window.TraubeMedicalIcons.svg(area.toLowerCase()) : (window.TraubeMedicalIcons?.icon ? window.TraubeMedicalIcons.icon(area.toLowerCase()) : "✚");
 
       return `
         <div class="radar-area-stat">
@@ -630,7 +630,7 @@
     }).join("");
   }
 
-  // Ranking de Incidência dos Temas (com deep links LURIA)
+  // Ranking de Incidência dos Temas (com deep links TRAUBE)
   function renderTopicsRanking(data) {
     const tbody = document.getElementById("radar-ranking-tbody");
     const countLabel = document.getElementById("radar-ranking-count-label");
@@ -685,7 +685,7 @@
               <a href="${practiceUrl}" class="radar-action-btn" title="Resolver questões deste tema">
                 <span>Resolver</span> ↗
               </a>
-              <a href="${studyUrl}" class="radar-action-btn" title="Estudar este tema na LURIA">
+              <a href="${studyUrl}" class="radar-action-btn" title="Estudar este tema na TRAUBE">
                 <span>Estudar</span> ↗
               </a>
             </div>
@@ -868,7 +868,7 @@
     }
   });
 
-  window.LuriaRadar = Object.freeze({
+  window.TraubeRadar = Object.freeze({
     getData: () => [...EXAM_DATASET],
     refresh: renderRadar
   });

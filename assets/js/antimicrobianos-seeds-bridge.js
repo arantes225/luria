@@ -1,7 +1,7 @@
 (function () {
   "use strict";
   // Enriches window.supabaseClient for bulario_catalog on /trabalho/antimicrobianos/
-  // so that window.LURIA_BULARIO_SEEDS are merged with any Supabase rows.
+  // so that window.TRAUBE_BULARIO_SEEDS are merged with any Supabase rows.
   function installBridge() {
     if (!window.supabaseClient || typeof window.supabaseClient.from !== "function") return;
     const origFrom = window.supabaseClient.from.bind(window.supabaseClient);
@@ -18,7 +18,7 @@
             if (o && typeof o.limit === "function") {
               const origLimit = o.limit.bind(o);
               o.limit = async function () {
-                const seeds = Array.isArray(window.LURIA_BULARIO_SEEDS) ? window.LURIA_BULARIO_SEEDS : [];
+                const seeds = Array.isArray(window.TRAUBE_BULARIO_SEEDS) ? window.TRAUBE_BULARIO_SEEDS : [];
                 try {
                   const res = await origLimit.apply(this, arguments);
                   const rows = Array.isArray(res && res.data) ? res.data.slice() : [];

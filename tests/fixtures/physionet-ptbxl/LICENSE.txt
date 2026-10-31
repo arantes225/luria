@@ -17,7 +17,7 @@
    PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals.
    Circulation [Online]. 101 (23), pp. e215–e220.
 
-   Usage in LURIA:
+   Usage in TRAUBE:
    Sample records 00001_lr (Patient 15709) and 00002_lr (Patient 13243) are utilized strictly for offline
    automated benchmark validation of the signal digitizer against ground-truth raw ADC waveforms.
 */

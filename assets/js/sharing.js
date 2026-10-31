@@ -84,11 +84,11 @@
                     type="button"
                     class="luria-share-friend"
                     data-friend-id="${esc(friend.user_id)}"
-                    title="Enviar para ${esc(friend.display_name || "Usuário LURIA")}"
+                    title="Enviar para ${esc(friend.display_name || "Usuário TRAUBE")}"
                   >
                     <span class="luria-share-avatar">${esc((friend.display_name || "U").charAt(0).toUpperCase())}</span>
                     <span class="luria-share-friend-copy">
-                      <strong>${esc(friend.display_name || "Usuário LURIA")}</strong>
+                      <strong>${esc(friend.display_name || "Usuário TRAUBE")}</strong>
                       <small>ID ${esc(friend.luria_id || "")}</small>
                     </span>
                     <span class="luria-share-send">Enviar</span>
@@ -102,13 +102,13 @@
         <div class="luria-share-options luria-share-secondary-options">
           <button type="button" class="luria-share-option" data-share-action="link">
             <strong>Gerar link</strong>
-            <span>Compartilhe com qualquer pessoa que tenha conta no LURIA.</span>
+            <span>Compartilhe com qualquer pessoa que tenha conta no TRAUBE.</span>
           </button>
 
           ${allowExport ? `
             <button type="button" class="luria-share-option" data-share-action="export">
               <strong>Exportar PDF</strong>
-              <span>Baixe o material para fora do LURIA.</span>
+              <span>Baixe o material para fora do TRAUBE.</span>
             </button>
           ` : ""}
         </div>
@@ -211,7 +211,7 @@
               button.dataset.friendId,
               selectedMode()
             );
-          }, "Material enviado dentro do LURIA.");
+          }, "Material enviado dentro do TRAUBE.");
         } catch {}
       });
     });
@@ -220,5 +220,5 @@
     dialog.showModal();
   }
 
-  window.LuriaSharing = { open, loadFriends };
+  window.TraubeSharing = { open, loadFriends };
 })();

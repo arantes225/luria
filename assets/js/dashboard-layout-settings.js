@@ -5,7 +5,7 @@
   if (!options) return;
 
   function load() {
-    const selected = window.LuriaDashboardPreference?.read() || "classic";
+    const selected = window.TraubeDashboardPreference?.read() || "classic";
     const input = options.querySelector(`input[value="${selected}"]`);
     if (input) input.checked = true;
   }
@@ -13,7 +13,7 @@
   options.addEventListener("change", (event) => {
     const value = event.target?.value;
     if (!allowed.has(value)) return;
-    const saved = window.LuriaDashboardPreference?.write(value) === true;
+    const saved = window.TraubeDashboardPreference?.write(value) === true;
     if (!saved) load();
     if (status) status.textContent = saved ? "Layout selecionado. Abra o dashboard para visualizar."
       : "Não foi possível salvar a escolha neste dispositivo.";
@@ -25,9 +25,9 @@
   window.addEventListener("luria:dashboard-layout-changed", load);
   window.addEventListener("pageshow", load);
   window.addEventListener("storage", event => {
-    if (event.key === null || event.key === window.LuriaDashboardPreference?.key()) load();
+    if (event.key === null || event.key === window.TraubeDashboardPreference?.key()) load();
   });
-  window.LuriaLocalOwnerStore?.ready?.then(load);
+  window.TraubeLocalOwnerStore?.ready?.then(load);
 })();
 
 

@@ -1,6 +1,6 @@
 'use strict';
 /*
- * Rotina de Automação Semanal do LURIA Marketing Studio.
+ * Rotina de Automação Semanal do TRAUBE Marketing Studio.
  *
  * Executa o ciclo semanal de produção de conteúdo:
  *   1. Identifica postagens planejadas para a semana no calendário.
@@ -24,7 +24,7 @@ const { main: runRender } = require('../scripts/render.cjs');
 async function runWeeklyAutomation() {
   const startedAt = new Date();
   const reportDate = startedAt.toISOString().slice(0, 10);
-  console.log(`=== LURIA MARKETING STUDIO — CICLO SEMANAL DE PRODUÇÃO (${reportDate}) ===\n`);
+  console.log(`=== TRAUBE MARKETING STUDIO — CICLO SEMANAL DE PRODUÇÃO (${reportDate}) ===\n`);
 
   const summary = {
     date: reportDate,
@@ -120,7 +120,7 @@ async function runWeeklyAutomation() {
   fs.mkdirSync(reportsDir, { recursive: true });
   const reportFile = path.join(reportsDir, `relatorio-semanal-${reportDate}.md`);
 
-  const md = `# RELATÓRIO EXECUTIVO SEMANAL — LURIA MARKETING STUDIO
+  const md = `# RELATÓRIO EXECUTIVO SEMANAL — TRAUBE MARKETING STUDIO
 **Data de Execução:** ${new Date().toLocaleString('pt-BR')}
 **Ambiente:** Local isolado (branch: marketing/studio-pipeline)
 **Custo Operacional Total:** $0,00 (100% execução local, sem APIs pagas)
@@ -141,7 +141,7 @@ async function runWeeklyAutomation() {
 | :--- | :--- | :--- | :--- | :--- |
 ${cal.posts.map(p => `| ${p.plannedDate.slice(0, 10)} | ${p.theme} | ${p.contentType} | **${p.status.toUpperCase()}** | \`${p.visualAssets.finalReel || '—'}\` |`).join('\n')}
 
-> **Nota de Segurança:** Conforme as diretrizes da LURIA, nenhuma publicação é enviada para o Instagram ou Metricool sem autorização e aprovação humana prévia.
+> **Nota de Segurança:** Conforme as diretrizes da TRAUBE, nenhuma publicação é enviada para o Instagram ou Metricool sem autorização e aprovação humana prévia.
 
 ---
 

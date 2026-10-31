@@ -1,4 +1,4 @@
--- Importadores por etapa da Fábrica de Questões LURIA 3.1
+-- Importadores por etapa da Fábrica de Questões TRAUBE 3.1
 -- Aplicado ao Supabase em 2026-09-24.
 -- Mantém RPCs específicos por etapa e um roteador único para o Admin.
 -- Todos exigem sessão Admin; anon/PUBLIC não recebem EXECUTE.

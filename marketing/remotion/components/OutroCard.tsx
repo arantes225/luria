@@ -68,7 +68,7 @@ export const OutroCard: React.FC<OutroCardProps> = ({ startFrame = 795 }) => {
               color: THEME.colors.primaryDark
             }}
           >
-            LURIA
+            TRAUBE
           </span>
         </div>
 

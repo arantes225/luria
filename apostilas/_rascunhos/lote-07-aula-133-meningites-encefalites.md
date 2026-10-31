@@ -1,10 +1,10 @@
-# LURIA — Lote 7 · Aula 133
+# TRAUBE — Lote 7 · Aula 133
 # Meningites e encefalites na infância: uma emergência sindrômica
 **Área:** Pediatria, Neurologia e Infectologia. **Status:** RASCUNHO EDITORIAL; NÃO PUBLICADO. **Data:** 14/10/2026.
 **Fontes contemporâneas:** OMS *Guidelines on meningitis diagnosis, treatment and care* (2025); OMS *Practical manual on meningitis* (26/05/2026); NICE NG240 (2024); Ministério da Saúde, *Guia de Vigilância em Saúde* e notas técnicas de meningites 2024–2026. Para encefalite, a diretriz IDSA de 2008 é **referência histórica** com recomendação importante de investigar HSV; verificar atualizações antes de publicar doses.
 
 ## 0. Inventário e comparação efetiva
-Não foi encontrada pasta de título próprio “meningites-encefalites” no repo de apostilas LURIA; há conteúdo correlato em “Febre sem sinais localizatórios” (aula 123) e “Sepse pediátrica” (aula 128). Neste livro a ênfase é **doença infecciosa/inflamatória do sistema nervoso central**, punção lombar, decisão de tomografia, antimicrobianos iniciais, meningococcemia, HSV e monitorização de sequelas.
+Não foi encontrada pasta de título próprio “meningites-encefalites” no repo de apostilas TRAUBE; há conteúdo correlato em “Febre sem sinais localizatórios” (aula 123) e “Sepse pediátrica” (aula 128). Neste livro a ênfase é **doença infecciosa/inflamatória do sistema nervoso central**, punção lombar, decisão de tomografia, antimicrobianos iniciais, meningococcemia, HSV e monitorização de sequelas.
 
 No Google Drive a pesquisa por meningite/encefalite não localizou tratado completo. Foram **abertos e lidos** “02 - TUBERCULOSE EXTRA PULMONAR.pdf” (~3,9 mil caracteres), com quadro de meningite tuberculosa subaguda, vasculite basal, sinais de pares cranianos e hidrocefalia, e “05 - NEUROSSIFILIS.pdf” (~3,5 mil caracteres), descrevendo acometimento neurológico por sífilis. São **benchmarks parciais**, não equivalem a meningite bacteriana/encefalite pediátrica e não comprovam autoria material de referência. Não copiar imagens nem porcentagens sem verificação. A diretriz OMS de 2026 e o MS, separadamente identificados, orientam a construção original.
 
@@ -207,7 +207,7 @@ A. Descartar HSV com certeza. B. Parar todo tratamento mesmo com RM temporal e c
 
 ---
 
-# CAMADA DE APROFUNDAMENTO LURIA — RACIOCÍNIO E TESTES DE MENINGITE
+# CAMADA DE APROFUNDAMENTO TRAUBE — RACIOCÍNIO E TESTES DE MENINGITE
 **Revisão científica editorial de 14/10/2026.** Ampliação original de capítulos 18–24, com conteúdo independente dos resumos do Drive, confrontado com OMS 2025/2026, NICE NG240 2024 e Nota Técnica Conjunta MS 154/2024 (a nota 97/2024 está revogada, a 154/2024 não foi identificada como revogada no portal de 12/02/2026). Material de estudo, não prescrição ou substituto de protocolo assistencial. **Alerta bibliográfico:** existem discordâncias entre duração de antibiótico de meningite bacteriana sem agente identificado na OMS 2025 e na NICE 2024. Registrar a divergência, não escolher um número universal sem contexto.
 
 ## 18. Da anatomia meníngea à doença invasiva: por que o caso piora tão rápido?
@@ -345,7 +345,7 @@ A barreira hematoencefálica restringe moléculas por tamanho, polaridade, trans
 
 **GBS e bacilos Gram-negativos neonatais:** geralmente durações maiores que meningococo, com avaliação de foco e complicações. A NICE descreve **14 dias** em GBS e **21 dias** em bacilos Gram-negativos em recuperação, em determinados perfis; não usar essa duração sem ajuste neonatal local.
 
-**Agente não identificado:** **divergência de diretriz verificável** — OMS 2025 considera suspensão de tratamento empírico após **7 dias** em cenário não epidêmico com recuperação clínica sustentada (incluindo parâmetros de normalidade por ≥48 h), enquanto NICE 2024 sugere **10 dias** quando padrão de LCR é bacteriano, culturas/PCR negativas e pessoa se recuperou, com avaliação especializada caso contrário. A LURIA precisa mostrar essa diferença e orientar decisão pelo especialista, microbiologia, situação local e evolução, **não escolher “7 dias sempre” ou “10 dias sempre”**.
+**Agente não identificado:** **divergência de diretriz verificável** — OMS 2025 considera suspensão de tratamento empírico após **7 dias** em cenário não epidêmico com recuperação clínica sustentada (incluindo parâmetros de normalidade por ≥48 h), enquanto NICE 2024 sugere **10 dias** quando padrão de LCR é bacteriano, culturas/PCR negativas e pessoa se recuperou, com avaliação especializada caso contrário. A TRAUBE precisa mostrar essa diferença e orientar decisão pelo especialista, microbiologia, situação local e evolução, **não escolher “7 dias sempre” ou “10 dias sempre”**.
 
 ### 21.5. Dexametasona: quando considerar e quando reavaliar
 A NICE NG240 recomenda dexametasona IV para **forte suspeita ou confirmação de meningite bacteriana em maiores de 3 meses**, idealmente **antes/com a primeira dose de antibiótico**, sem atrasar o antibiótico caso indisponível. Em lactentes de 28 dias a 3 meses, obter parecer especializado. Após identificação, prosseguir especialmente em **pneumococo ou Hib** e suspender em outros agentes segundo diretriz NICE; discutir quando agente permanece desconhecido. Essa recomendação tem contexto britânico e evidência variável por população; protocolo brasileiro deve orientar aplicação/dose final. Corticoide de rotina **não** é indicado apenas por meningococcemia, salvo situações específicas como choque refratário com indicação intensiva.

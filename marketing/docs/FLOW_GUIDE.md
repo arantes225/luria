@@ -1,12 +1,12 @@
 # GUIA DE INTEGRAÇÃO COM O GOOGLE FLOW (VEO)
 
-Este guia orienta a utilização do **Google Flow** de forma semiautomática para gerar cenas complementares cinematográficas para os Reels da **LURIA**, com custo zero de API.
+Este guia orienta a utilização do **Google Flow** de forma semiautomática para gerar cenas complementares cinematográficas para os Reels da **TRAUBE**, com custo zero de API.
 
 ---
 
-## 1. Princípios de Direção e Estética LURIA
+## 1. Princípios de Direção e Estética TRAUBE
 
-Para manter a consistência com a identidade institucional da LURIA:
+Para manter a consistência com a identidade institucional da TRAUBE:
 * **Paleta:** Branco predominante, azul institucional `#184888`, tons de ardósia e azul petróleo.
 * **Estética Médica Premium:** Iluminação cinematográfica, foco nítido, profundidade de campo rasa (bokeh suave), ambiente de hospital ou biblioteca médica de excelência.
 * **Profissionalismo:** Médicos e residentes portando jalecos impecáveis ou scrubs azuis-marinho, postura focada, atitude colaborativa.
@@ -53,4 +53,4 @@ Os clipes registrados no `manifest.json` são lidos automaticamente pelas compos
 ## 3. Segurança e Política de Custos
 
 * **Custo $0,00:** Todo o processo utiliza a interface interativa do Google Flow, sem consumo de chamadas pagas da API do Veo.
-* **Sem dependência externa bloqueante:** Se nenhum clipe generativo for gerado, o pipeline utiliza as gravações reais da interface da LURIA e transições dinâmicas nativas em Remotion, garantindo entrega autônoma e contínua.
+* **Sem dependência externa bloqueante:** Se nenhum clipe generativo for gerado, o pipeline utiliza as gravações reais da interface da TRAUBE e transições dinâmicas nativas em Remotion, garantindo entrega autônoma e contínua.

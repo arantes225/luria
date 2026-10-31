@@ -1,4 +1,4 @@
-# LURIA | Aula 165 — Saúde do trabalhador e da trabalhadora
+# TRAUBE | Aula 165 — Saúde do trabalhador e da trabalhadora
 
 **Área do cronograma:** Medicina Preventiva  
 **Interfaces:** Medicina de Família, Clínica Médica, Pneumologia, Dermatologia, Ortopedia, Psiquiatria, Infectologia, Medicina Legal, Medicina do Trabalho e Urgência  
@@ -7,7 +7,7 @@
 **Público:** estudantes em internato, ENAMED, residência médica e profissionais em atenção inicial  
 **Status:** material em expansão e revisão, não publicado como apostila final.
 
-> **Pulo do Gato LURIA** — A pergunta “com o que você trabalha e a que está exposto?” pode mudar completamente um diagnóstico. A saúde do trabalhador não se limita a exame admissional, emissão de atestados ou benefício previdenciário. O raciocínio integra pessoa, condições de produção, causalidade clínica, prevenção e vigilância coletiva.
+> **Pulo do Gato TRAUBE** — A pergunta “com o que você trabalha e a que está exposto?” pode mudar completamente um diagnóstico. A saúde do trabalhador não se limita a exame admissional, emissão de atestados ou benefício previdenciário. O raciocínio integra pessoa, condições de produção, causalidade clínica, prevenção e vigilância coletiva.
 
 ## 1. Objetivos e mapa de aprendizagem
 
@@ -554,7 +554,7 @@ A condição de trabalhador também afeta renda, vínculos e saúde mental. Doen
 
 **Não confundir prognóstico clínico com concessão de aposentadoria, auxílio ou indenização.** São dimensões diferentes, embora possam compartilhar informações médicas.
 
-## 24. Algoritmo integrado LURIA: suspeita de agravo relacionado ao trabalho
+## 24. Algoritmo integrado TRAUBE: suspeita de agravo relacionado ao trabalho
 
 **Etapa 1 — Há risco iminente?**
 - Instabilidade, trauma grave, intoxicação aguda, insuficiência respiratória, exposição biológica com janela de PEP ou risco suicida → atender imediatamente segundo protocolo de urgência.
@@ -649,7 +649,7 @@ A condição de trabalhador também afeta renda, vínculos e saúde mental. Doen
 
 ### Nota de hierarquia de evidência
 
-Esta apostila prioriza **documentos brasileiros oficiais** para normas, vigilância e diretrizes de cuidado no SUS. Casos, exemplos e explicações clínicas são elaboração editorial original da LURIA, construída a partir dessas fontes; não representam transcrição literal de normas. Antes de publicação, verificar versão vigente de NRs, portarias e protocolos de medicamentos e classificação de notificações.
+Esta apostila prioriza **documentos brasileiros oficiais** para normas, vigilância e diretrizes de cuidado no SUS. Casos, exemplos e explicações clínicas são elaboração editorial original da TRAUBE, construída a partir dessas fontes; não representam transcrição literal de normas. Antes de publicação, verificar versão vigente de NRs, portarias e protocolos de medicamentos e classificação de notificações.
 
 ## 28. Checklist editorial inicial
 
@@ -664,13 +664,13 @@ Esta apostila prioriza **documentos brasileiros oficiais** para normas, vigilân
 - [x] Questões de prova com comentários individuais das alternativas, seção 30.
 - [x] Planejamento de pelo menos dez imagens candidatas, seção 31; aprovação de licenças ainda pendente.
 - [ ] Revisão científica e editorial por responsável qualificado.
-- [ ] Integração ao formato nativo do renderizador LURIA e teste desktop/PWA.
+- [ ] Integração ao formato nativo do renderizador TRAUBE e teste desktop/PWA.
 - [ ] Auditoria dos prazos e normas imediatamente antes da publicação.
 
 **Status do arquivo:** rascunho editorial fundamentado; não marcar como apostila final/validada sem passar pelas etapas pendentes.
 
 
-## 29. Casos clínicos integradores LURIA — comentários passo a passo
+## 29. Casos clínicos integradores TRAUBE — comentários passo a passo
 
 Os cenários são fictícios, autorais e destinados ao treino clínico. Nenhum representa prontuário real. Cada um integra diagnóstico, diferenciais, exames, conduta clínica e consequências para a vigilância coletiva.
 
@@ -844,7 +844,7 @@ Os cenários são fictícios, autorais e destinados ao treino clínico. Nenhum r
 
 
 
-## 30. Questões autorais LURIA — gabaritos e comentários por alternativa
+## 30. Questões autorais TRAUBE — gabaritos e comentários por alternativa
 
 Estas 18 questões são inéditas e didáticas; não são reproduções de provas de residência. Cada alternativa recebeu comentário separado, seguido de minirrevisão.
 
@@ -1234,7 +1234,7 @@ As 12 propostas abaixo ainda são **candidatas**, não imagens selecionadas ou i
 
 | Nº | Candidata | Função didática | Fonte/critério |
 |---|---|---|---|
-| 1 | Mapa causal ocupacional | Diagrama autoral de agente → dose → órgão-alvo → síndrome → intervenção na fonte. | Arte médica original LURIA; mostrar que fatores individuais e organizacionais interferem na relação. |
+| 1 | Mapa causal ocupacional | Diagrama autoral de agente → dose → órgão-alvo → síndrome → intervenção na fonte. | Arte médica original TRAUBE; mostrar que fatores individuais e organizacionais interferem na relação. |
 | 2 | História ocupacional ao longo da vida | Linha do tempo visual de exposições presentes e remotas, com latência de neoplasias/pneumoconioses. | Diagrama autoral; sem referência a pessoa real. |
 | 3 | Síndrome do túnel do carpo | Desenho anatômico do túnel carpal, nervo mediano e distribuição sensitiva. | Atlas anatômico institucional licenciado ou ilustração original, validar com especialista. |
 | 4 | Audiograma didático de PAIR | Audiograma schematic demonstrando alta frequência/entalhe típico, com comparador normal. | Gráfico autoral usando valores simulados e legenda dizendo que não é diagnóstico isolado. |
@@ -1251,7 +1251,7 @@ As 12 propostas abaixo ainda são **candidatas**, não imagens selecionadas ou i
 
 - Verificar indicação explícita de origem e condições de reutilização; páginas oficiais podem conter imagens com direitos de terceiros.
 - Obter aprovação da imagem e legenda antes de referenciá-la no conteúdo renderizado.
-- Converter para WebP, preservar legibilidade de traçados de audiometria, espirometria e imagens radiológicas; respeitar o orçamento de mídia da LURIA.
+- Converter para WebP, preservar legibilidade de traçados de audiometria, espirometria e imagens radiológicas; respeitar o orçamento de mídia da TRAUBE.
 - Fornecer descrição alternativa útil a usuários de tecnologias assistivas.
 - Não gerar imagem que se apresente como radiografia, TC ou exame de pessoa real; usar simulações claramente identificadas se necessário.
 - Evitar imagens com marcas d'água, baixa resolução, sem contexto clínico ou de origem duvidosa.
@@ -1291,7 +1291,7 @@ As 12 propostas abaixo ainda são **candidatas**, não imagens selecionadas ou i
 - [ ] Revisão científica por profissionais de Saúde do Trabalhador, Medicina do Trabalho, Infectologia e Toxicologia.
 - [ ] Confirmação final dos protocolos, de doses e de fichas de notificação vigentes.
 - [ ] Curadoria de imagens e autorização de uso editorial.
-- [ ] Adequação ao content.json/renderer da LURIA com índices, blocos e navegação.
+- [ ] Adequação ao content.json/renderer da TRAUBE com índices, blocos e navegação.
 - [ ] Verificação manual de responsividade, acessibilidade e imagens no PWA e desktop.
 - [ ] Revisão de língua, coesão, normalização bibliográfica e atualização da data de consulta.
 

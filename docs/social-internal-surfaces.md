@@ -1,4 +1,4 @@
-# LURIA — acabamento das superfícies internas
+# TRAUBE — acabamento das superfícies internas
 
 Branch: codex/social-reference-composition. Checkpoint anterior: 18174184.
 

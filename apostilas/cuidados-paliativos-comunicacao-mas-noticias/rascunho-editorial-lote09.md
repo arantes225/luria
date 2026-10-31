@@ -1,11 +1,11 @@
-# LURIA — Aula 180 | Cuidados paliativos e comunicação de más notícias
+# TRAUBE — Aula 180 | Cuidados paliativos e comunicação de más notícias
 
 **Medicina Preventiva · Clínica Médica · Bioética · Cuidados Paliativos**
 **Lote 09 — Aula 180/180, versão editorial 15/10/2026**
 
 Esta apostila aborda a Política Nacional de Cuidados Paliativos do SUS, atualizada em 2026; comunicação de notícias difíceis, manejo de sintomas, planejamento antecipado de cuidados, bioética e cuidado no fim de vida.
 
-**Status:** produção editorial em etapas, para revisão científica independente e futura integração nativa da LURIA.
+**Status:** produção editorial em etapas, para revisão científica independente e futura integração nativa da TRAUBE.
 
 ## 1. Introdução e conceito
 
@@ -618,7 +618,7 @@ Os cenários são fictícios e voltados ao raciocínio clínico; cada decisão d
 
 
 
-## 27. Questões autorais LURIA — gabarito e todas as alternativas comentadas
+## 27. Questões autorais TRAUBE — gabarito e todas as alternativas comentadas
 
 Os exercícios são inéditos, para ENAMED e residência, com situações fictícias e interpretação por diretrizes brasileiras.
 
@@ -1081,11 +1081,11 @@ Neste tema, a visualização é majoritariamente composta por **diagramas clíni
 - As figuras de SPIKES, NURSE, ortotanásia e PAC devem mostrar etapas reais, incluindo escuta e documentação.
 - Diagramas farmacológicos não devem trazer dose isolada de opioide/sedativo que possa ser copiada por leigo como prescrição.
 - Não usar foto de paciente real agonizante, familiares em luto ou criança sem consentimento/licença adequada.
-- Diagrama autoral pode ser desenhado em vetor; se convertido a WebP para a LURIA, preservar texto legível e alt text descritivo.
+- Diagrama autoral pode ser desenhado em vetor; se convertido a WebP para a TRAUBE, preservar texto legível e alt text descritivo.
 - Integrar no capítulo pertinente, sem agrupar os 22 desenhos em uma galeria desconectada do texto.
 - Aprovar em Admin cada arquivo com fonte, revisão de especialista e teste desktop/PWA.
 
-## 29. Integração LURIA: flashcards, questões e ensino longitudinal
+## 29. Integração TRAUBE: flashcards, questões e ensino longitudinal
 
 Esta apostila complementa as aulas 170 (Ética/sigilo/prontuário), 175 (Declaração de óbito), 161 (Sepse), 177 (Complicações pós-operatórias), 179 (Câncer de endométrio) e a base de oncologia. Ela deve ser etiquetada **Preventiva / Bioética / Cuidados Paliativos / Comunicação de más notícias**, com casos de clínica e pediatria cruzados por área, evitando classificar automaticamente cada questão como Oncologia.
 

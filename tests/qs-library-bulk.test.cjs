@@ -21,7 +21,7 @@ function libraryHarness(t,{sets=[],selected=[],deleted,deleteError,queryError,co
   },
   storage:{from:()=>({remove:async paths=>{calls.storagePaths=paths;return{error:null}}})}
  };
- w.LuriaDialog={confirm:async()=>{calls.confirm++;return typeof confirm==='function'?confirm():confirm}};
+ w.TraubeDialog={confirm:async()=>{calls.confirm++;return typeof confirm==='function'?confirm():confirm}};
  w.accuracy=()=> '0%';w.qsEscape=String;w.closeSimulationLibraryMenus=()=>{};w.closeCurrentSet=()=>{};
  w.loadSets=async()=>true;w.renderSimulationLibrary=()=>{};
  const source=read('assets/js/questoes-simulados.js');

@@ -1,4 +1,4 @@
-/* LURIA — expansão auditável das calculadoras, 24/10/2026.
+/* TRAUBE — expansão auditável das calculadoras, 24/10/2026.
  * Executar após o catálogo original. Nenhuma função substitui prescrição clínica.
  */
 (() => {

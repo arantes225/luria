@@ -1,5 +1,5 @@
 /*
-  LURIA Storage Router
+  TRAUBE Storage Router
   -----------------------------------------------------------
   Centraliza upload, leitura e remoção de arquivos.
   Hoje todas as rotas apontam para o Supabase principal.
@@ -206,7 +206,7 @@
     });
   }
 
-  window.LuriaStorage = {
+  window.TraubeStorage = {
     upload,
     download,
     remove,
