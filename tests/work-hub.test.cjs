@@ -73,7 +73,7 @@ test('Work Dashboard groups thirteen real routes, provides PCR, and ignores reti
 test('all authenticated Work pages share the hub adapter and preserve the public access page',()=>{
  const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(dir+'/'+e.name):[dir+'/'+e.name]);
  const paths=walk('trabalho').filter(p=>p.endsWith('.html')&&fs.readFileSync(p,'utf8').includes('data-ui-work="v2"'));
- assert.equal(paths.length,23);
+ assert.equal(paths.length,24);
  for(const path of paths) {
   const html=fs.readFileSync(path,'utf8');
   assert.match(html,/data-ui-work-navigation="hub"/);
