@@ -103,6 +103,7 @@ async function findAlexSiteContext(query) {
 let isLiveActive = false;
 let liveRecognition = null;
 let startLiveListening = null;
+let stopLiveListening = null;
 
 const ERROR_MESSAGES = {
   invalid_request_id: "Atualize a página para continuar a conversa.",
@@ -353,6 +354,7 @@ function isStudyPlanningRequest(value) {
 }
 
 function renderStudyAction(plan) {
+  const feed = document.getElementById("alex-chat-feed");
   if (!feed || !plan || !["schedule_focus", "topic_bundle"].includes(plan.type)) return;
   const card = document.createElement("section");
   card.className = "alex-message alex-message--assistant alex-study-action";
@@ -361,7 +363,7 @@ function renderStudyAction(plan) {
   const summary = document.createElement("p");
   const count = Number(plan.preview?.planned_count || 0);
   summary.textContent = plan.type === "schedule_focus"
-    ? `${plan.topic}: ${count} aula${count === 1 ? "" : "s"} entre ${plan.start_date} e ${plan.end_date}, ${plan.lessons_per_day || 1} por dia de estudo.`
+    ? `${plan.topic}: ${count} aula${count === 1 ? "" : "s"} entre ${plan.start_date} e ${plan.end_date}, ${plan.lessons_per_day || 1} por dia de estudo. ${Number(plan.preview?.displaced_count || 0)} aula(s) atualmente agendada(s) poderão mudar de data.`
     : `${plan.topic}: ${plan.question_count || 0} questões e ${plan.flashcard_count || 0} flashcards, além de uma apostila compatível quando disponível.`;
   const actions = document.createElement("div");
   actions.className = "alex-study-action-buttons";
@@ -453,6 +455,7 @@ if (form) {
     const messageInput = document.getElementById("alex-prompt")?.value.trim() || "";
     if (!topicInput && !messageInput) return;
     const turn = newConversationTurn();
+    if (isLiveActive) stopLiveListening?.();
     const isCurrentTurn = () => turn === conversationTurn;
     // Keep typed/recognized questions usable while the previous reply is in flight.
     if (submit) submit.disabled = false;
@@ -1044,102 +1047,159 @@ function speakText(text, onComplete) {
 function initLiveVoiceMode() {
   if (!liveCallBtn) return;
   const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
-  // The companion's "Falar ao vivo" shortcut navigates here with ?voice=1.
-  // A new page cannot inherit the tap's playback permission on iOS, so prompt
-  // for a real tap instead of silently behaving like text-only chat.
+  const interruptBtn = document.getElementById("alex-interrupt-and-talk");
+  const isIOSPwa = /iPad|iPhone|iPod/.test(window.navigator?.userAgent || "") &&
+    (window.navigator?.standalone === true || window.matchMedia?.("(display-mode: standalone)")?.matches);
+  let retryTimer = null;
+  let retryDelay = 500;
+  const setInterruptVisible = active => {
+    if (!interruptBtn) return;
+    interruptBtn.hidden = !active;
+    interruptBtn.style.display = active ? "inline-flex" : "none";
+  };
+  function stopListening() {
+    clearTimeout(retryTimer);
+    retryTimer = null;
+    if (liveRecognition) {
+      const recognition = liveRecognition;
+      liveRecognition = null;
+      try { recognition.abort(); } catch {}
+    }
+  }
+  stopLiveListening = stopListening;
+
+  function interruptAndListen() {
+    if (!isLiveActive) return;
+    newConversationTurn();
+    stopListening();
+    if (submit) { submit.disabled = false; submit.textContent = "Perguntar"; }
+    microphonePermissionDenied = false;
+    liveStatus("🎙️ Interrompido. Pode falar sua nova pergunta.");
+    startListening();
+  }
+  interruptBtn?.addEventListener("click", interruptAndListen);
+  stopResponseBtn?.addEventListener("click", () => {
+    if (!isLiveActive) return;
+    newConversationTurn();
+    if (submit) { submit.disabled = false; submit.textContent = "Perguntar"; }
+    liveStatus("🎙️ Interrompido. Pode falar novamente.");
+    startListening();
+  });
+
+  // A new page opened from "Falar ao vivo" requires a user gesture for audio on iOS.
   if (new URLSearchParams(window.location.search).get("voice") === "1") {
-    const status = document.getElementById("alex-status-text");
-    if (status) status.textContent = "🔊 Toque em Conversar ao Vivo por Voz para liberar o áudio no PWA.";
+    liveStatus("🔊 Toque em Conversar ao Vivo por Voz para liberar o áudio.");
     liveCallBtn.setAttribute("aria-describedby", "alex-status-text");
     liveCallBtn.style.boxShadow = "0 0 0 3px var(--accent-soft)";
     liveCallBtn.addEventListener("click", () => { liveCallBtn.style.boxShadow = ""; }, { once: true });
   }
-  if (!SpeechRec) {
-    // iOS installed PWAs may lack SpeechRecognition while playback still works.
-    // Keep live voice output available when questions are typed.
-    liveCallBtn.title = "Ativar respostas em voz alta. O microfone contínuo não está disponível neste navegador.";
-  }
+  if (!SpeechRec) liveCallBtn.title = "O microfone contínuo não está disponível. Você pode digitar e ouvir as respostas.";
 
   liveCallBtn.addEventListener("click", () => {
     if (isLiveActive) stopLiveMode();
     else startLiveMode();
   });
-
   function startLiveMode() {
-    // Acionado diretamente pelo clique, antes do primeiro reconhecimento.
-    unlockLiveAudio();
+    unlockLiveAudio(); // synchronous user gesture for Safari and standalone PWAs
     isLiveActive = true;
+    microphonePermissionDenied = false;
     liveCallBtn.classList.add("is-active");
     if (liveCallText) liveCallText.textContent = "Encerrar Conversa ao Vivo";
-    const statusText = document.getElementById("alex-status-text");
-    if (statusText) statusText.textContent = SpeechRec
-      ? "🔊 Ativando voz do Leco..." : "🔊 Voz ativa! Digite uma pergunta para ouvir a resposta.";
-    const mascot = document.getElementById("alex-mascot");
-    if (mascot && typeof mascot.playAnimation === "function") {
-      mascot.expression = "attentive";
-      mascot.playAnimation("listening");
-    }
-    // First utterance must originate in the click gesture on mobile Safari.
-    // Do not listen until the greeting finishes (avoids recording Leco's voice).
-    speakText(SpeechRec ? "Pronto! Pode perguntar." : "Voz ativada. Digite sua pergunta.", () => {
-      if (isLiveActive && SpeechRec) startListening();
-    });
+    setInterruptVisible(true);
+    liveStatus(SpeechRec
+      ? "🎙️ Ouvindo. Fale a qualquer momento; use Interromper e falar se necessário."
+      : "🔊 Voz ativada. Digite para receber respostas faladas.");
+    // No spoken greeting: it used to block first microphone activation on iOS.
+    startListening();
   }
-
   function stopLiveMode() {
     isLiveActive = false;
-    if (liveRecognition) {
-      try { liveRecognition.abort(); } catch {}
-      liveRecognition = null;
-    }
-    stopCurrentVoicePlayback();
-    const mascot = document.getElementById("alex-mascot");
-    if (mascot) {
-      mascot.speaking = false;
-      if (typeof mascot.playAnimation === "function") {
-        mascot.expression = "happy";
-        mascot.playAnimation("wave");
-      }
-    }
+    newConversationTurn();
+    stopListening();
+    setInterruptVisible(false);
+    microphonePermissionDenied = false;
+    if (submit) { submit.disabled = false; submit.textContent = "Perguntar"; }
     liveCallBtn.classList.remove("is-active");
     if (liveCallText) liveCallText.textContent = "Conversar ao Vivo por Voz";
-    const statusText = document.getElementById("alex-status-text");
-    if (statusText) statusText.textContent = "Leco online e pronto para ensinar";
+    liveStatus("Leco online e pronto para ensinar");
   }
-
   startLiveListening = startListening;
+
   function startListening() {
-    if (!SpeechRec || !isLiveActive || liveRecognition || audioPlaybackPending || currentPuckSource || currentPuckAudio || submit?.disabled) return;
+    if (!SpeechRec || !isLiveActive || liveRecognition || microphonePermissionDenied) return;
+    // iOS standalone Safari cannot reliably do speech recognition while TTS plays.
+    // The explicit interrupt button always stops playback and reopens the mic.
+    if (isIOSPwa && (audioPlaybackPending || currentPuckSource || currentPuckAudio)) return;
     try {
-      liveRecognition = new SpeechRec();
-      const recognition = liveRecognition;
-      liveRecognition.lang = "pt-BR";
-      liveRecognition.continuous = false;
-      liveRecognition.interimResults = false;
-      liveRecognition.onresult = event => {
+      const recognition = new SpeechRec();
+      liveRecognition = recognition;
+      recognition.lang = "pt-BR";
+      recognition.continuous = false;
+      recognition.interimResults = true;
+      let submitted = false;
+      let interrupted = false;
+      recognition.onstart = () => { retryDelay = 500; };
+      recognition.onresult = event => {
+        if (!isLiveActive || recognition !== liveRecognition || submitted) return;
+        let finalText = "";
+        let partialText = "";
+        let confidence = null;
+        for (let i = event.resultIndex || 0; i < (event.results?.length || 0); i++) {
+          const result = event.results[i];
+          const phrase = result?.[0]?.transcript?.trim() || "";
+          if (result.isFinal) {
+            finalText += (finalText ? " " : "") + phrase;
+            confidence = Number(result?.[0]?.confidence);
+          } else partialText += (partialText ? " " : "") + phrase;
+        }
+        const candidate = (finalText || partialText).trim();
+        if (!candidate) return;
+        const normalize = value => String(value || "").toLocaleLowerCase("pt-BR")
+          .normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+        const heard = normalize(candidate);
+        const leco = normalize(lastSpokenAnswer);
+        // Avoid a feedback loop where recognition hears the assistant's own speech.
+        if (leco && (heard.length >= 4) &&
+            (leco.includes(heard) || (heard.length > 15 && heard.includes(leco.slice(0, 15))))) return;
+        if (!interrupted && (audioPlaybackPending || currentPuckAudio || currentPuckSource)) {
+          interrupted = true;
+          newConversationTurn(); // barge-in: cancel playback and pending requests
+          liveStatus("🎙️ Estou ouvindo sua nova pergunta...");
+          if (submit) { submit.disabled = false; submit.textContent = "Perguntar"; }
+        }
+        if (finalText) {
+          submitted = true;
+          liveTranscriptConfidence = Number.isFinite(confidence) ? confidence : null;
+          liveRecognition = null;
+          try { recognition.abort(); } catch {}
+          const input = document.getElementById("alex-prompt");
+          if (input) input.value = finalText;
+          if (form) form.dispatchEvent(new Event("submit", { cancelable: true, bubbles: true }));
+        }
+      };
+      recognition.onerror = error => {
         if (!isLiveActive || recognition !== liveRecognition) return;
-        const query = event.results?.[0]?.[0]?.transcript?.trim();
-        if (query) {
-          liveTranscriptConfidence = Number(event.results?.[0]?.[0]?.confidence);
-          const promptInput = document.getElementById("alex-prompt");
-          if (promptInput) promptInput.value = query;
-          if (form) form.dispatchEvent(new Event("submit", { cancelable: true }));
+        if (error?.error === "not-allowed" || error?.error === "service-not-allowed") {
+          microphonePermissionDenied = true;
+          liveStatus("⚠️ Microfone bloqueado pelo sistema. Permita o acesso ou digite sua pergunta.");
+        } else if (error?.error && error.error !== "no-speech" && error.error !== "aborted") {
+          console.warn("[Leco Voice] Falha no reconhecimento:", error.error);
+          liveStatus("⚠️ Não consegui ouvir. Tentando reabrir o microfone...");
+          retryDelay = Math.min(4000, retryDelay * 2);
         }
       };
-      liveRecognition.onerror = err => {
-        if (isLiveActive && err.error !== "no-speech") console.warn("[Live Alex]", err);
-      };
-      liveRecognition.onend = () => {
+      recognition.onend = () => {
         if (recognition === liveRecognition) liveRecognition = null;
-        if (isLiveActive && !window.speechSynthesis?.speaking && !currentPuckAudio && !currentPuckSource && !audioPlaybackPending && !submit?.disabled) {
-          setTimeout(startListening, 600);
-        }
+        if (!isLiveActive || submitted || microphonePermissionDenied || liveRecognition) return;
+        clearTimeout(retryTimer);
+        retryTimer = setTimeout(() => { if (isLiveActive) startListening(); }, retryDelay);
       };
-      liveRecognition.start();
-    } catch (e) {
-      console.warn("[Live Speech Error]", e);
+      recognition.start();
+    } catch (error) {
+      if (liveRecognition) liveRecognition = null;
+      console.warn("[Leco Voice] Não foi possível abrir o microfone:", error?.name || "recognition_error");
+      liveStatus("⚠️ Não foi possível abrir o microfone. Toque em Interromper e falar para tentar novamente.");
     }
   }
 }
-
 initLiveVoiceMode();
