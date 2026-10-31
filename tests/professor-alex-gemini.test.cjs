@@ -51,7 +51,8 @@ test("Live conversation auto-plays audio and has no manual replay control", () =
   assert.match(client, /playGeminiPuckAudio\(data\.audio/);
   assert.match(client, /speakText\(data\.answer, onFinishedSpeaking\)/);
   assert.match(client, /if \(!isLiveActive\) return;/);
-  assert.match(client, /!currentPuckSource && !audioPlaybackPending/);
+  assert.match(client, /function newConversationTurn\(\)/);
+  assert.match(client, /function interruptAndListen\(\)/);
   assert.match(client, /stopCurrentVoicePlayback\(\)/);
 });
 
