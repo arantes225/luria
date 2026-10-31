@@ -1371,8 +1371,8 @@ const PAGE_INFO = {
   aplicar: { title: "Aplicar", eyebrow: "Carreira & Provas", helper: "Planeje sua especialidade, acompanhe editais e analise a incidência de provas." },
   editais: { title: "Editais / Provas", eyebrow: "Provas e editais", helper: "Centralize datas, provas e informações importantes." },
   amigos: { title: "Amigos", eyebrow: "Rede de estudos", helper: "Estude junto, compartilhe e acompanhe sua rede." },
-  configuracoes: { title: "Configurações", eyebrow: "Sua conta", helper: "Personalize sua experiência no LURIA." },
-  admin: { title: "Admin", eyebrow: "Gestão LURIA", helper: "Gerencie conteúdo, acessos e operação da plataforma." },
+  configuracoes: { title: "Configurações", eyebrow: "Sua conta", helper: "Personalize sua experiência na Traube." },
+  admin: { title: "Admin", eyebrow: "Gestão Traube", helper: "Gerencie conteúdo, acessos e operação da plataforma." },
   beta_testers: { title: "Beta Testers", eyebrow: "Feedback beta", helper: "Acompanhe sugestões e pontos de melhoria." },
   trabalho_dashboard: { title: "Dashboard", eyebrow: "Rotina clínica", helper: "Acesse rapidamente as ferramentas do seu dia." },
   trabalho_anamnese: { title: "Organizador de Anamnese", eyebrow: "IA Clínica", helper: "Estruture dados soltos e transcrições em anamnese médica completa." },
@@ -1619,11 +1619,11 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           id="luria-brand-logo"
           class="brand-logo-single luria-theme-logo"
           src="${luriaLogoSourceForTheme(document.documentElement.dataset.theme || "light")}"
-          alt="Logo LURIA"
+          alt="Logo Traube"
         >
 
         <span class="brand-copy">
-          <strong>LURIA</strong>
+          <strong>TRAUBE</strong>
           <small>Aprenda. Conecte. Consolide.</small>
         </span>
       </a>
@@ -3851,7 +3851,7 @@ function ensureNotificationCenter() {
         <div>
           <strong>Notificações</strong>
           <small id="luria-notification-subtitle">
-            Novidades do LURIA
+            Novidades da Traube
           </small>
         </div>
 
@@ -5634,7 +5634,7 @@ function ensureLuriaDialog() {
         <img class="luria-global-dialog-logo" src="/assets/img/logos/logo-icone-original.png?v=luria10" alt="">
       </div>
       <div class="luria-global-dialog-copy">
-        <span class="luria-global-dialog-eyebrow">LURIA</span>
+        <span class="luria-global-dialog-eyebrow">TRAUBE</span>
         <h2 class="luria-global-dialog-title">Confirmar ação</h2>
         <p class="luria-global-dialog-message"></p>
       </div>
@@ -7345,8 +7345,8 @@ iniciarApp();
     overlay.innerHTML = `
       <form class="luria-beta-feedback-card" id="luria-beta-feedback-form">
         <span class="luria-beta-feedback-kicker">Beta Tester</span>
-        <h2 id="luria-beta-feedback-title">Como está sua experiência com o LURIA?</h2>
-        <p>Seu feedback periódico ajuda a definir os próximos ajustes. Para continuar usando o LURIA, responda os dois campos abaixo.</p>
+        <h2 id="luria-beta-feedback-title">Como está sua experiência com a Traube?</h2>
+        <p>Seu feedback periódico ajuda a definir os próximos ajustes. Para continuar usando a Traube, responda os dois campos abaixo.</p>
         <div class="luria-beta-feedback-fields">
           <label class="luria-beta-feedback-field">
             <span>O que já está bom?</span>
