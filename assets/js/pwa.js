@@ -31,7 +31,7 @@
   if (new URL(document.baseURI).pathname !== "/") return;
 
 
-  const release = "20261030-gestor-dashboard-v5";
+  const release = "20261030-leco-stt-v1";
 
   
 
