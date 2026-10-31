@@ -223,7 +223,10 @@ function parseModelPhoneticCorrection(answer: string, transcript: string): Phone
   if (!normal(transcript).includes(normal(recognized))) return null;
   if (!normal(correctedPrompt).includes(normal(correctedTerm))) return null;
   if (normal(recognized) === normal(correctedTerm)) return null;
-  return makePhoneticCorrection(recognized, correctedTerm, correctedPrompt);
+  // The model may suggest a clinical term, but it cannot choose an arbitrary
+  // command to be executed by the one-tap confirmation button.
+  if (!/^[\\p{L}\\p{M}\\p{N}\\s-]{3,70}$/u.test(correctedTerm) || !/\\p{L}/u.test(correctedTerm)) return null;
+  return makePhoneticCorrection(recognized, correctedTerm, "Me explica sobre " + correctedTerm);
 }
 
 Deno.serve(async (req: Request) => {
