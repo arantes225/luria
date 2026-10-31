@@ -69,7 +69,6 @@
             <div class="gm-radar-progress-fill" style="width: ${pct}%"></div>
           </div>
           <div class="gm-radar-actions">
-            <a href="/trabalho/divisor-descanso/" class="gm-radar-btn primary">Organizar Descanso da Equipe →</a>
             <a href="/trabalho/passometro/" class="gm-radar-btn secondary">Passagem de Plantão / Leitos</a>
           </div>
         </div>
@@ -102,7 +101,6 @@
           </div>
           <div class="gm-radar-actions">
             <button type="button" class="gm-radar-btn secondary" onclick="document.getElementById('shift-calendar')?.scrollIntoView({behavior:'smooth'})">Ver Escala Semanal</button>
-            <a href="/trabalho/divisor-descanso/" class="gm-radar-btn secondary">Planejar Descanso</a>
           </div>
         </div>
       `;

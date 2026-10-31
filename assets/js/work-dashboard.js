@@ -38,6 +38,7 @@
     ]],
     ['Rotina e acompanhamento', [
       ['users', 'Passômetro', 'Organize a passagem de casos.', 'passometro/', 'rose'],
+      ['clock', 'Organizador de Descanso', 'Distribua turnos e descansos da equipe de forma igualitária.', 'divisor-descanso/', 'indigo'],
       ['calendar', 'Gestor de Plantões', 'Gerencie sua rotina de plantões.', 'gestor-plantoes/', 'amber'],
       ['clock', 'Histórico de PCR', 'Consulte registros de atendimentos.', 'pcr/historico/', 'slate']
     ]]
