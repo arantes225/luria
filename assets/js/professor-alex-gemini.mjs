@@ -18,6 +18,27 @@ let renderedHistoryUser = null;
 let alexSiteIndexPromise = null;
 let liveTranscriptConfidence = null;
 let speechGeneration = 0;
+let conversationTurn = 0;
+let activeResponseController = null;
+let lastSpokenAnswer = "";
+let microphonePermissionDenied = false;
+
+// All asynchronous responses belong to a turn; an interrupted turn must never
+// overwrite the newer message, disable its composer, or start speaking later.
+function newConversationTurn() {
+  conversationTurn += 1;
+  if (activeResponseController) {
+    try { activeResponseController.abort(); } catch {}
+  }
+  activeResponseController = null;
+  stopCurrentVoicePlayback();
+  return conversationTurn;
+}
+
+function liveStatus(text) {
+  const status = document.getElementById("alex-status-text");
+  if (status) status.textContent = text;
+}
 
 function normalizeAlexSearch(value) {
   return String(value || "").toLocaleLowerCase("pt-BR")
@@ -427,8 +448,14 @@ if (form) {
   form.addEventListener("submit", async event => {
     event.preventDefault();
     event.stopImmediatePropagation();
-    if (submit?.disabled) return;
-
+    if (submit?.disabled && !isLiveActive) return;
+    const topicInput = document.getElementById("alex-topic")?.value.trim() || "";
+    const messageInput = document.getElementById("alex-prompt")?.value.trim() || "";
+    if (!topicInput && !messageInput) return;
+    const turn = newConversationTurn();
+    const isCurrentTurn = () => turn === conversationTurn;
+    // Keep typed/recognized questions usable while the previous reply is in flight.
+    if (submit) submit.disabled = false;
     const client = window.supabaseClient;
     if (!client?.functions) {
       display("Não foi possível iniciar a conexão com o Supabase.", "Conexão indisponível", true);
@@ -448,6 +475,7 @@ if (form) {
       display(ERROR_MESSAGES.unauthorized, "Faça login", true);
       return;
     }
+    if (!isCurrentTurn()) return;
     restoreConversationView(session.user.id);
     sessionHistory.splice(0, sessionHistory.length, ...getAlexConversation(session.user.id));
 
@@ -492,8 +520,9 @@ if (form) {
       if (isLiveActive) {
         const statusText = document.getElementById("alex-status-text");
         if (statusText) statusText.textContent = "🔊 Leco respondendo...";
+        lastSpokenAnswer = answer;
         speakText(answer, () => {
-          if (!isLiveActive) return;
+          if (!isLiveActive || !isCurrentTurn()) return;
           const currentStatus = document.getElementById("alex-status-text");
           if (currentStatus) currentStatus.textContent = "🎙️ Ouvindo... Pode perguntar mais!";
           setTimeout(() => startLiveListening?.(), 250);
@@ -509,10 +538,10 @@ if (form) {
       ? findAlexSiteContext([topic, prompt].filter(Boolean).join(" "))
       : Promise.resolve(null);
 
-    const oldText = submit?.textContent || "Perguntar";
     if (submit) {
-      submit.disabled = true;
-      submit.textContent = isLiveActive ? "Respondendo…" : (payload.depth === "aula" ? "Preparando aula…" : "Respondendo…");
+      // In voice mode the composer is always interruptible.
+      submit.disabled = !isLiveActive;
+      submit.textContent = payload.depth === "aula" ? "Preparando aula…" : "Respondendo…";
     }
 
     if (isLiveActive) {
@@ -538,12 +567,20 @@ if (form) {
       const [material, siteContext] = await Promise.all([
         prepareFile(fileInput?.files?.[0]), siteContextPromise
       ]);
+      if (!isCurrentTurn()) return;
       if (material) payload.file = material;
       if (siteContext && material) {
         payload.site_context = siteContext.context;
         payload.site_sources = siteContext.sources;
       }
-      const { data, error } = await client.functions.invoke("professor-alex-gemini", { body: payload });
+      const controller = new AbortController();
+      activeResponseController = controller;
+      const { data, error } = await client.functions.invoke("professor-alex-gemini", {
+        body: payload,
+        signal: controller.signal,
+      });
+      if (!isCurrentTurn()) return;
+      activeResponseController = null;
       if (error) throw error;
       if (data?.usage) renderUsage(data.usage);
       if (data?.accounting_pending) {
@@ -553,7 +590,12 @@ if (form) {
       }
       if (typeof data?.clarification === "string" && data.clarification.trim()) {
         if (!isLiveActive) display(data.clarification, "Confirme a transcrição");
-        else speakText(data.clarification);
+        else {
+          liveStatus("🎙️ Pode esclarecer ou repetir sua pergunta.");
+          speakText(data.clarification, () => {
+            if (isCurrentTurn()) startLiveListening?.();
+          });
+        }
         return;
       }
       if (typeof data?.answer !== "string" || !data.answer.trim()) throw Error("empty_response");
@@ -575,12 +617,13 @@ if (form) {
       } else {
         const statusText = document.getElementById("alex-status-text");
         if (statusText) statusText.textContent = "🔊 Leco respondendo por voz (Puck)...";
+        lastSpokenAnswer = data.answer;
         const onFinishedSpeaking = () => {
-          if (isLiveActive) {
+          if (isLiveActive && isCurrentTurn()) {
             const currentStatus = document.getElementById("alex-status-text");
             if (currentStatus) currentStatus.textContent = "🎙️ Ouvindo... Pode perguntar mais!";
             setTimeout(() => {
-              if (isLiveActive && !window.speechSynthesis?.speaking && !currentPuckAudio && !currentPuckSource && !audioPlaybackPending) {
+              if (isLiveActive && isCurrentTurn()) {
                 if (typeof startLiveListening === "function") startLiveListening();
               }
             }, 400);
@@ -597,6 +640,8 @@ if (form) {
         }
       }
     } catch (error) {
+      if (!isCurrentTurn()) return;
+      activeResponseController = null;
       const message = error?.message === "empty_response"
         ? ERROR_MESSAGES.empty_response
         : (error instanceof Error && /PDF acima|arquivo de texto|anexe um PDF/.test(error.message)
@@ -612,9 +657,16 @@ if (form) {
       }
       if (mascot?.playAnimation) mascot.playAnimation("confused");
     } finally {
-      if (submit) {
-        submit.disabled = false;
-        submit.textContent = oldText;
+      if (isCurrentTurn()) {
+        activeResponseController = null;
+        if (submit) {
+          submit.disabled = false;
+          submit.textContent = "Perguntar";
+        }
+        if (isLiveActive && !microphonePermissionDenied) {
+          // Listening is independent of voice playback completion or TTS errors.
+          setTimeout(() => { if (isCurrentTurn()) startLiveListening?.(); }, 220);
+        }
       }
     }
   }, true);
