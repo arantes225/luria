@@ -94,3 +94,23 @@
 @media(max-width:1100px){.dm-grid.four{grid-template-columns:repeat(2,minmax(0,1fr))}.dm-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:750px){.diabetes-app{gap:13px}.dm-hero{padding:18px;display:grid}.dm-hero-actions{justify-content:flex-start}.dm-grid,.dm-grid.two,.dm-grid.four,.dm-pharm-grid,.dm-topics,.dm-form-grid,.dm-metric-grid{grid-template-columns:1fr}.dm-med-picker{grid-template-columns:1fr}.dm-panel{padding:16px}.dm-nav{margin-right:-12px;padding-right:12px}.dm-selected-item{align-items:flex-start}.dm-pharm-card dl{grid-template-columns:90px 1fr}.dm-table th,.dm-table td{font-size:.74rem;padding:8px 5px}}
 @media(prefers-reduced-motion:reduce){.diabetes-app *{transition:none!important;scroll-behavior:auto!important}}
+
+
+/* Printed diary + clinician transcription grid */
+.dm-paper-panel .dm-section-head h4{margin:0 0 7px}
+.dm-paper-panel .dm-section-head p{margin:0}
+.dm-paper-panel .dm-btn{white-space:normal}
+.dm-paper-controls{display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap}
+.dm-paper-controls .dm-field{min-width:190px}
+.dm-paper-controls .dm-btn{min-height:43px}
+.dm-paper-panel button:disabled{opacity:.55;cursor:not-allowed}
+.dm-paper-scroll{max-width:100%;overflow-x:auto;scrollbar-width:thin;border:1px solid var(--border);border-radius:12px}
+.dm-paper-table{border-collapse:separate;border-spacing:0;min-width:1050px;width:100%;margin:0}
+.dm-paper-table th,.dm-paper-table td{white-space:nowrap;text-align:center;padding:6px;border-bottom:1px solid var(--border);border-right:1px solid var(--border);background:var(--surface)}
+.dm-paper-table thead th{position:sticky;top:0;z-index:1;background:var(--surface-2);color:var(--muted);font-weight:750}
+.dm-paper-table th:first-child{position:sticky;left:0;z-index:2;background:var(--surface-2);min-width:92px}
+.dm-paper-table thead th:first-child{z-index:3}
+.dm-paper-table input{border:1px solid var(--border);border-radius:8px;background:var(--surface-2);color:var(--text);width:75px;min-height:38px;text-align:center;padding:5px}
+.dm-paper-table input[data-field="notes"]{width:200px;text-align:left}
+.dm-paper-table input:focus{border-color:var(--dm-accent);outline:2px solid color-mix(in srgb,var(--dm-accent) 25%,transparent)}
+@media(max-width:750px){.dm-paper-panel .dm-section-head{display:grid}.dm-paper-panel .dm-section-head .dm-btn{width:100%}.dm-paper-controls{display:grid}.dm-paper-controls .dm-field{min-width:0}.dm-paper-table th:first-child{min-width:84px}}
